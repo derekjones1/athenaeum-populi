@@ -49,9 +49,9 @@ represents $10$. Let's model the expression we just considered, $7 - 3$. We
 start with $7$ ones blocks, circle $3$ of them to show we are taking them
 away, and count what remains:
 
-<svg viewBox="0 0 560 60" role="img" aria-label="Seven small squares in a row. The first three are circled to show they are taken away, leaving four squares." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
-  <rect x="20" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="470" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <ellipse cx="110" cy="30" rx="105" ry="26" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+<svg viewBox="0 0 560 70" role="img" aria-label="Seven small squares in a row. The first three are circled to show they are taken away, leaving four squares." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="20" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="470" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="110" cy="35" rx="108" ry="31" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
 
 There are $4$ ones blocks left. We have shown that $7 - 3 = 4$.
@@ -68,10 +68,10 @@ giving $3$ tens and $13$ ones. Taking away $2$ tens and $6$ ones leaves $1$
 ten and $7$ ones: $43 - 26 = 17$.
 
 {{< fillin
-  question="To model $12 - 7$, you exchange the 1 tens rod for 10 ones, making 12 ones. How many ones blocks remain after you take 7 away?"
+  question="Model $12 - 7$ with base-10 blocks, starting from 1 tens rod and 2 ones blocks. After you take 7 ones away, how many ones blocks remain?"
   answer="5"
   answerForm="decimal"
-  hint="Start with 12 ones and take away 7 of them."
+  hint="If there are not enough ones to take away, exchange the tens rod for ones first, then take away and count what is left."
 >}}
 
 ## Subtract whole numbers
@@ -132,7 +132,7 @@ $2{,}162 - 479 = 1{,}683$. Check: $1{,}683 + 479 = 2{,}162$. ✓
   question="Subtract: $93 - 58$."
   answer="35"
   answerForm="decimal"
-  hint="Borrow 1 ten so the ones place becomes $13 - 8$. Check your result by adding it to 58."
+  hint="Subtract the ones, then the tens. When a top digit is smaller than the digit below it, borrow 1 from the place to its left. Check by adding your answer to 58."
 >}}
 
 {{< fillin
@@ -165,13 +165,15 @@ which is $19$.
 {{< fillin
   question="Translate and simplify: the difference of 14 and 9."
   answer="5"
+  answerForm="decimal"
   hint="Difference means subtract, keeping the numbers in the same order as the phrase."
 >}}
 
 {{< fillin
   question="Translate and simplify: 18 less than 67."
   answer="49"
-  hint="Less than reverses the order: start from 67 and take 18 away."
+  answerForm="decimal"
+  hint="The words 'less than' reverse the order: start from the number that follows 'less than'."
 >}}
 
 ## Subtract whole numbers in applications
@@ -202,7 +204,8 @@ price and the sale price is \$189.
 {{< fillin
   question="The high temperature in Boston one day was 77 degrees Fahrenheit and the low was 58 degrees Fahrenheit. What was the difference, in degrees, between the high and low temperatures?"
   answer="19"
-  hint="Write the phrase: the difference of 77 and 58. Translate it to subtraction and simplify."
+  answerForm="decimal"
+  hint="Write a phrase for the difference of the high and low temperatures, translate it to math notation, and subtract."
 >}}
 
 ## Key terms
@@ -252,9 +255,9 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
 
 ### Model subtraction of whole numbers
 
-<svg viewBox="0 0 445 60" role="img" aria-label="Six single base-10 blocks in a row. The first three are circled to show that they are being taken away." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
-  <rect x="20" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <ellipse cx="110" cy="30" rx="105" ry="26" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+<svg viewBox="0 0 445 70" role="img" aria-label="Six single base-10 blocks in a row. The first three are circled to show that they are being taken away." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="20" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="110" cy="35" rx="108" ry="31" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
 
 {{< fillin
@@ -264,7 +267,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
   hint="Count the blocks that are not circled."
 >}}
 
-<svg viewBox="0 0 510 70" role="img" aria-label="Base-10 blocks: one rod of ten blocks and eight single blocks. Five of the single blocks are circled to show that they are being taken away." style="max-width: 510px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 530 70" role="img" aria-label="Base-10 blocks: one rod of ten blocks and eight single blocks. Five of the single blocks are circled to show that they are being taken away." style="max-width: 530px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-sub-rod-b" fill="none" stroke="currentColor" stroke-width="0.6">
     <line x1="20" y1="0" x2="20" y2="20" />
@@ -283,22 +286,22 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
   <rect x="260" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="290" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="320" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="350" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="380" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="410" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="440" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="470" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <ellipse cx="420" cy="35" rx="78" ry="22" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+  <rect x="360" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="390" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="420" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="450" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="480" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="430" cy="35" rx="82" ry="24" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
 
 {{< fillin
   question="The base-10 blocks above model $18 - 5$. What number is left after the circled blocks are taken away?"
   answer="13"
   answerForm="decimal"
-  hint="One whole rod is still there, worth 10, plus the single blocks that were not circled."
+  hint="Count each rod that is not circled as 10 and each single block that is not circled as 1."
 >}}
 
-<svg viewBox="0 0 450 125" role="img" aria-label="Base-10 blocks: three rods of ten blocks each and five single blocks. The bottom rod and three of the single blocks are circled to show that they are being taken away." style="max-width: 450px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 450 140" role="img" aria-label="Base-10 blocks: three rods of ten blocks each and five single blocks. The bottom rod and three of the single blocks are circled to show that they are being taken away." style="max-width: 450px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-sub-rod-c" fill="none" stroke="currentColor" stroke-width="0.6">
     <line x1="20" y1="0" x2="20" y2="20" />
@@ -314,15 +317,15 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
     </g>
   </defs>
   <use href="#ap-sub-rod-c" x="20" y="15" />
-  <use href="#ap-sub-rod-c" x="20" y="50" />
-  <use href="#ap-sub-rod-c" x="20" y="85" />
-  <rect x="280" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="310" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="340" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="370" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="400" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <ellipse cx="120" cy="95" rx="110" ry="20" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
-  <ellipse cx="380" cy="60" rx="52" ry="20" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+  <use href="#ap-sub-rod-c" x="20" y="55" />
+  <use href="#ap-sub-rod-c" x="20" y="95" />
+  <rect x="280" y="55" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="310" y="55" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="350" y="55" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="380" y="55" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="410" y="55" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="120" cy="105" rx="115" ry="24" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+  <ellipse cx="390" cy="65" rx="50" ry="22" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
 
 {{< fillin
@@ -345,7 +348,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
   question="Subtract, then check by adding: $75 - 47$."
   answer="28"
   answerForm="decimal"
-  hint="You cannot take 7 from 5, so borrow 1 ten and make the ones $15 - 7$."
+  hint="Subtract the ones first. If the top digit is smaller than the digit below it, borrow 1 ten. Check by adding your answer to 47."
 >}}
 
 {{< fillin
@@ -361,7 +364,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
   answer="34668"
   answerForm="decimal"
   answerDisplay="$34{,}668$"
-  hint="Line up the place values first — 8,982 has no ten-thousands digit. Borrow from left to right as each column needs it."
+  hint="Line up the place values first — 8,982 has no ten-thousands digit. Work from right to left, borrowing whenever a column needs it."
 >}}
 
 ### Translate word phrases to math notation
@@ -369,6 +372,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
 {{< fillin
   question="Translate and simplify: the difference of 15 and 4."
   answer="11"
+  answerForm="decimal"
   answerDisplay="$15 - 4 = 11$"
   hint="Difference keeps the numbers in the order the phrase gives them."
 >}}
@@ -376,22 +380,25 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
 {{< fillin
   question="Translate and simplify: subtract 28 from 75."
   answer="47"
+  answerForm="decimal"
   answerDisplay="$75 - 28 = 47$"
-  hint="Subtract from reverses the order — you are taking 28 away from 75, not 75 away from 28."
+  hint="The words 'subtract from' reverse the order: start from the number that follows 'from'."
 >}}
 
 {{< fillin
   question="Translate and simplify: 92 decreased by 67."
   answer="25"
+  answerForm="decimal"
   answerDisplay="$92 - 67 = 25$"
-  hint="Decreased by keeps the order of the phrase: start at 92 and take 67 away."
+  hint="The words 'decreased by' keep the numbers in the order the phrase gives them."
 >}}
 
 {{< fillin
   question="Translate and simplify: 38 less than 61."
   answer="23"
+  answerForm="decimal"
   answerDisplay="$61 - 38 = 23$"
-  hint="Less than reverses the order, just like subtract from — start from 61."
+  hint="The words 'less than' reverse the order, just like 'subtract from'."
 >}}
 
 ### Subtract whole numbers in applications
@@ -399,27 +406,31 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
 {{< fillin
   question="The high temperature on June 2 in Las Vegas was 80 degrees and the low temperature was 63 degrees. What was the difference, in degrees, between the high and low temperatures?"
   answer="17"
-  hint="Write the phrase first: the difference of 80 and 63. Then translate it to subtraction."
+  answerForm="decimal"
+  hint="Write a phrase for the difference of the high and low temperatures, then translate it to math notation and subtract."
 >}}
 
 {{< fillin
   question="Olivia's third grade class has 35 children. Last year, her second grade class had 22 children. What is the difference between the number of children in Olivia's third grade class and her second grade class?"
   answer="13"
+  answerForm="decimal"
   hint="Difference means subtract, and the larger class comes first."
 >}}
 
 {{< fillin
   question="A mountain bike is on sale for \$399. Its regular price is \$650. What is the difference, in dollars, between the regular price and the sale price?"
   answer="251"
+  answerForm="decimal"
   hint="Subtract the sale price from the regular price. You will need to borrow twice."
 >}}
 
 {{< fillin
   question="John wants to buy a laptop that costs \$840. He has \$685 in his savings account. How much more, in dollars, does he need to save in order to buy the laptop?"
   answer="155"
+  answerForm="decimal"
   hint="What he still needs is the difference between the cost and what he already has."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.3: Subtract Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-3-subtract-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the base-10 block models as accessible inline graphics and described the remaining models in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with the base-10 modeling exercises restated to ask for the number the model leaves.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.3: Subtract Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-3-subtract-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the base-10 block models as accessible inline graphics and described the remaining models in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with the base-10 modeling Try It and exercises restated to ask for the number the model leaves.</small>

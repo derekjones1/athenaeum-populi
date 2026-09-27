@@ -52,11 +52,13 @@ Figure and alt work runs on Opus, never Sonnet.
    September 22 full-scope brief, updated). A knowledge-check row uses it
    with `docs/re-review/brief-knowledge-check.md` (the nearby-leak read,
    keys, accept lists, reverse recall; checks carry no hints; its parent
-   duties add a second checker on replacements). Math: `docs/re-review/brief-math.md` does not exist yet — the
-   first math row writes it from `docs/subjects/math.md`, the
-   life-sciences brief's shape, and the standard above, and shows Derek
-   before fanning out. That row is the pilot: record its cost in Notes and
-   tune the brief before the next. The life-sciences rows cost about
+   duties add a second checker on replacements). Math: `docs/re-review/brief-math.md` (written and piloted on Prealgebra
+   chapter 1, September 26, 2026); before launch the parent extracts each
+   module's source images to `$SP/media/<mid>/` as the brief's header says,
+   and fixers render figures and display math with
+   `tools/figures/render-page-figures.mjs`. A math section costs about
+   140–160k Opus fixer tokens — about double a life-sciences section — and
+   the pilot chapter averaged 25 fixes a section. The life-sciences rows cost about
    60–80k Opus fixer tokens per section, a shared Fable solve of 50–150k
    per batch of rows, and about 5k per knowledge-check item.
 1. **Snapshot** before any edit: `npm run ledger:carry -- snapshot content
@@ -88,7 +90,12 @@ Figure and alt work runs on Opus, never Sonnet.
    solve:compare`; the re-solved items' records come from the solve
    alone, so after merging it run `npm run ledger:provenance -- <book dir>
    --out $SP/prov` and merge that, which restores their provenance notes
-   (read its `low-confidence.json`). Adjudicate against the source; a flag on an item with a
+   (read its `low-confidence.json`). **Math rows skip `ledger:provenance`:** its
+   sentence matcher cannot read an exercise whose numbers are MathML, so
+   it labels source exercises "author-built" (all 46 of Prealgebra
+   chapter 1's low-confidence notes were wrong that way), and math records
+   never carried provenance notes to restore. Carry any derivation `note`
+   a re-solved item's old record held onto its new hash by hand. Adjudicate against the source; a flag on an item with a
    `DISCLOSED_DEVIATIONS` entry or a "Reviewed and *not* errata" ruling
    re-raises a recorded decision. Read every answer's `note`, not only the
    disagreements: solvers have found source defects outside their own item.

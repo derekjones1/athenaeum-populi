@@ -34,6 +34,10 @@ section.
 - **Worked-example step tables:** align relations with `\begin{array}{lrcl}`,
   rows `explanation & LHS &=& RHS \\[4pt]`. Separate steps with `\\[4pt]` (the
   lint rejects bare `\\` in `{lrcl}` arrays).
+- **Carries and borrows sit on their digit:** `\overset{1}{3}\overset{1}{2}4`
+  in a `{r}` array. A separate row of `{}^{1}` marks is right-aligned against
+  the row below and lands over the wrong columns without an error (the lint
+  rejects it).
 - **Prose inside math needs TeX spacing:** ordinary spaces outside
   `\text{...}` disappear. Write `\text{If }n^2=m` or
   `\text{If}\ n^2=m`, and use `\ ` between adjacent text commands. Never rely
@@ -171,6 +175,14 @@ The lint rejects a re-expression prompt with no `answerForm`, and
 `verify-section` rejects an answer that does not satisfy the form it declares.
 Where the response is not a re-expression at all, use `multiplechoice`: the
 learner picks among forms.
+
+**A word problem is a re-expression ask too.** "Translate and simplify: 29
+increased by 76" and "Mark rode 18, 15, 26, 49, and 32 miles — how many in
+all?" accept the typed unevaluated `29+76` or `18+15+26+49+32`, and the lint
+cannot see it because the numbers are in words or prose. Every fill-in whose
+key is a computed number declares `decimal` (or the form its key needs).
+The math re-review adds it chapter by chapter (Prealgebra 1, September 26,
+2026: 47 items).
 
 Retyping a printed *expression* ("Add: $3+5$", "Simplify: $b^9\cdot b^8$")
 grades correct too, and is flagged the same way: the lint grades every printed

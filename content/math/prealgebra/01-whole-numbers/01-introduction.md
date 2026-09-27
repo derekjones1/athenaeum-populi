@@ -91,9 +91,19 @@ The numbers $\tfrac{1}{4}$ and $5.2$ are neither counting numbers nor whole
 numbers — they belong to families of numbers we will meet later.
 
 {{< fillin
-  question="What is the smallest whole number?"
-  answer="0"
-  hint="Whole numbers are the counting numbers plus one extra number — the one at the origin of the number line."
+  question="Which of the numbers 0, $\tfrac{2}{3}$, 2, 9, 11.8, 241, 376 are counting numbers? Enter them separated by commas."
+  answer="2,9,241,376"
+  answerMode="unordered"
+  answerDisplay="2, 9, 241, and 376"
+  hint="Test each number against the definition: counting numbers are the numbers used to count objects, starting at 1."
+>}}
+
+{{< fillin
+  question="Which of the numbers 0, $\tfrac{2}{3}$, 2, 9, 11.8, 241, 376 are whole numbers? Enter them separated by commas."
+  answer="0,2,9,241,376"
+  answerMode="unordered"
+  answerDisplay="0, 2, 9, 241, and 376"
+  hint="Test each number against the definition of the whole numbers given above."
 >}}
 
 ## Model whole numbers
@@ -133,9 +143,10 @@ there are $5$ ones, which is $5$. In place value notation:
 $$200 + 10 + 5 = 215$$
 
 {{< fillin
-  question="Base-10 blocks show 1 hundreds squares, 7 tens rods, and 6 ones blocks. What number is modeled?"
+  question="Base-10 blocks show 1 hundreds square, 7 tens rods, and 6 ones blocks. What number is modeled?"
   answer="176"
-  hint="Write it in place value notation: $100 + 70 + 6$."
+  answerForm="decimal"
+  hint="Find the value of each kind of block — hundreds, tens, ones — then add the three values."
 >}}
 
 ## Identify the place value of a digit
@@ -173,7 +184,7 @@ these digits:
   question="In the number 27,493,615 — what is the value of the digit 4?"
   answer="400000"
   answerDisplay="400,000 — the 4 is in the hundred thousands place"
-  hint="Write the number in a place value chart, starting from the ones place on the right: 5 ones, 1 ten, 6 hundreds, 3 thousands, 9 ten thousands, 4 …"
+  hint="Write the number in a place value chart, starting from the ones place on the right, to find the 4's place; its value is 4 times that place's value."
 >}}
 
 ## Use place value to name whole numbers
@@ -233,7 +244,7 @@ filled, using zeros as needed.
   answer="53809051"
   answerForm="decimal"
   answerDisplay="53,809,051"
-  hint="Three periods: millions 53, thousands 809, ones 051 — keep three places per period, padding with zeros."
+  hint="Find the words that name periods, give every period after the first three places, and fill any empty place with a zero."
 >}}
 
 ## Round whole numbers
@@ -318,14 +329,14 @@ the $1$ carries: $3{,}978$ rounds to $4{,}000$.
 {{< fillin
   question="Round 157 to the nearest ten."
   answer="160"
-  hint="The digit to the right of the tens place is 7. Is it 5 or more?"
+  hint="Underline the digit to the right of the tens place and compare it with 5, then replace every digit right of the tens place with zero."
 >}}
 
 {{< fillin
   question="Round 4,951 to the nearest hundred."
   answer="5000"
   answerDisplay="5,000"
-  hint="The hundreds digit is 9 and the digit to its right is 5 — rounding up carries all the way over."
+  hint="Compare the digit to the right of the hundreds place with 5. If you round up a 9, it becomes 0 and 1 is added to the digit on its left."
 >}}
 
 ## Key terms
@@ -348,7 +359,7 @@ the process of approximating a number to a given place value.
   answer="5,125"
   answerMode="unordered"
   answerDisplay="5 and 125"
-  hint="The counting numbers start at 1, so zero is not one of them — and neither is a fraction or a decimal."
+  hint="Test each number against the definition: counting numbers are the numbers used to count objects, starting at 1."
 >}}
 
 {{< fillin
@@ -372,7 +383,7 @@ the process of approximating a number to a given place value.
   answer="0,50,221"
   answerMode="unordered"
   answerDisplay="0, 50, and 221"
-  hint="Add zero to the counting numbers from the previous question."
+  hint="The whole numbers are the counting numbers together with zero."
 >}}
 
 ### Model whole numbers
@@ -430,6 +441,7 @@ the process of approximating a number to a given place value.
 {{< fillin
   question="Use place value notation to find the value of the number modeled by the base-10 blocks above."
   answer="561"
+  answerForm="decimal"
   hint="Each large square is worth 100, each rod is worth 10, and each small block is worth 1 — total the three kinds, then add."
 >}}
 
@@ -473,7 +485,8 @@ the process of approximating a number to a given place value.
 {{< fillin
   question="Use place value notation to find the value of the number modeled by the base-10 blocks above."
   answer="407"
-  hint="There are no rods at all, so the tens place needs a zero to hold it."
+  answerForm="decimal"
+  hint="Count each kind of block and write one digit per place; a place with no blocks still needs a digit."
 >}}
 
 ### Identify the place value of a digit
@@ -492,7 +505,7 @@ millions
 {{< multiplechoice
   question="In the number 56,804,379 — what is the place value of the digit 6?"
   answer="millions"
-  hint="The 6 sits just left of the second comma from the right."
+  hint="Write the number in a place value chart, starting from the ones place on the right, and read off the column the 6 lands in."
 >}}
 hundred millions
 ten millions
@@ -503,7 +516,7 @@ millions
 {{< multiplechoice
   question="In the number 56,804,379 — what is the place value of the digit 4?"
   answer="thousands"
-  hint="The 4 is the last digit of the thousands period, just left of a comma."
+  hint="Each comma separates a period of three places; find the 4's period, then its place within that period."
 >}}
 ten thousands
 thousands
@@ -514,7 +527,7 @@ hundred thousands
 {{< multiplechoice
   question="In the number 56,804,379 — what is the place value of the digit 7?"
   answer="tens"
-  hint="Count in from the right-hand end: ones, then tens."
+  hint="Name the places from the right-hand end, one per digit, until you reach the 7."
 >}}
 hundreds
 ones
@@ -525,7 +538,7 @@ thousands
 {{< multiplechoice
   question="In the number 56,804,379 — what is the place value of the digit 0?"
   answer="ten thousands"
-  hint="A zero still occupies a place; it sits between the 8 and the 4."
+  hint="A zero still occupies a place: name the places from the right, one per digit, counting the zero too."
 >}}
 millions
 ten thousands
@@ -571,7 +584,7 @@ Fourteen thousand, forty-one
   answer="11044167"
   answerForm="decimal"
   answerDisplay="11,044,167"
-  hint="Three periods: millions 11, thousands 044, ones 167 — keep three places per period, padding with zeros."
+  hint="Find the words that name periods, give every period after the first three places, and fill any empty place with a zero."
 >}}
 
 ### Round whole numbers
@@ -586,7 +599,7 @@ Fourteen thousand, forty-one
   question="Round 2,931 to the nearest ten."
   answer="2930"
   answerDisplay="2,930"
-  hint="The digit to the right of the tens place is 1, which is less than 5."
+  hint="Compare the digit to the right of the tens place with 5, then replace every digit right of the tens place with zero."
 >}}
 
 {{< fillin
@@ -600,9 +613,9 @@ Fourteen thousand, forty-one
   question="Round 391,794 to the nearest hundred."
   answer="391800"
   answerDisplay="391,800"
-  hint="The hundreds digit is 7 and the digit to its right is 9, so the hundreds digit goes up."
+  hint="Compare the digit to the right of the hundreds place with 5, then replace every digit right of the hundreds place with zero."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew figures as accessible tables and inline graphics, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew figures as accessible tables and inline graphics, converted practice problems ("Try Its") into interactive exercises with instant feedback (a counting-and-whole-numbers Try It as one question per part, a base-10 block Try It that states its block counts in place of the source figure, and a place-value Try It that asks for the value of one listed digit rather than the place of each), and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

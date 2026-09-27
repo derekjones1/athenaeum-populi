@@ -61,21 +61,43 @@ $17$ is $1$ ten and $7$ ones; $26$ is $2$ tens and $6$ ones. Combined, that's
 $3$ tens and $13$ ones. Exchange $10$ of those ones for another ten, leaving
 $4$ tens and $3$ ones — that is, $40 + 3 = 43$. So $17 + 26 = 43$.
 
-<svg viewBox="0 0 560 130" role="img" aria-label="Two groups of base-10 blocks being combined. The left group shows 17 as one tens rod and seven ones blocks, plus 26 as two tens rods and six ones blocks. The right group shows the combined result: four tens rods and three ones blocks, after exchanging ten of the thirteen ones blocks for one more tens rod, giving the sum 43." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
-  <text x="10" y="20" font-size="14" fill="currentColor">17 + 26 =</text>
-  <rect x="10" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="24" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="38" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <rect x="70" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="84" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="98" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="112" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="126" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="140" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="154" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <text x="230" y="60" font-size="16" fill="currentColor">=</text>
-  <text x="260" y="20" font-size="14" fill="currentColor">43</text>
-  <rect x="260" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="274" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="288" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="302" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <rect x="330" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="344" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="358" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" />
+<svg viewBox="0 0 530 104" role="img" aria-label="Base-10 blocks for 17 + 26. The first group, labeled 17, is one tens rod and seven ones blocks. A plus sign joins it to the second group, labeled 26: two tens rods and six ones blocks. An equals sign leads to the result, labeled 43: four tens rods and three ones blocks, the combined 3 tens and 13 ones after ten of the ones are exchanged for one more tens rod." style="max-width: 530px; width: 100%; display: block; margin: 1.5rem auto">
+  <defs>
+    <g id="ap-rod-0102-ex" fill="none" stroke="currentColor" stroke-width="0.6">
+      <line x1="12" y1="0" x2="12" y2="12" />
+      <line x1="24" y1="0" x2="24" y2="12" />
+      <line x1="36" y1="0" x2="36" y2="12" />
+      <line x1="48" y1="0" x2="48" y2="12" />
+      <line x1="60" y1="0" x2="60" y2="12" />
+      <line x1="72" y1="0" x2="72" y2="12" />
+      <line x1="84" y1="0" x2="84" y2="12" />
+      <line x1="96" y1="0" x2="96" y2="12" />
+      <line x1="108" y1="0" x2="108" y2="12" />
+      <rect x="0" y="0" width="120" height="12" stroke-width="1.4" />
+    </g>
+  </defs>
+  <text x="10" y="16" font-size="14" fill="currentColor">17</text>
+  <use href="#ap-rod-0102-ex" x="10" y="28" />
+  <rect x="10" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="26" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="42" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="58" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="74" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="90" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="106" y="48" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <text x="150" y="52" text-anchor="middle" font-size="18" fill="currentColor">+</text>
+  <text x="170" y="16" font-size="14" fill="currentColor">26</text>
+  <use href="#ap-rod-0102-ex" x="170" y="28" />
+  <use href="#ap-rod-0102-ex" x="170" y="44" />
+  <rect x="170" y="64" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="186" y="64" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="202" y="64" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="218" y="64" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="234" y="64" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="250" y="64" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <text x="310" y="52" text-anchor="middle" font-size="18" fill="currentColor">=</text>
+  <text x="330" y="16" font-size="14" fill="currentColor">43</text>
+  <use href="#ap-rod-0102-ex" x="330" y="28" />
+  <use href="#ap-rod-0102-ex" x="330" y="44" />
+  <use href="#ap-rod-0102-ex" x="330" y="60" />
+  <use href="#ap-rod-0102-ex" x="330" y="76" />
+  <rect x="466" y="76" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="482" y="76" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" /><rect x="498" y="76" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
 </svg>
 
 {{< fillin
   question="Base-10 blocks model 15 as 1 tens rod and 5 ones, combined with 27 as 2 tens rods and 7 ones. What is $15 + 27$?"
   answer="42"
   answerForm="decimal"
-  hint="Combine the tens and ones separately first: 3 tens and 12 ones. Then exchange 10 of the ones for 1 more ten."
+  hint="Count the tens rods together and the ones blocks together. If there are 10 or more ones, exchange 10 of them for 1 more ten."
 >}}
 
 ## Add whole numbers without models
@@ -91,6 +113,13 @@ $$a + 0 = a \qquad 0 + a = a$$
 This is the **Identity Property of Addition**; zero is called the
 *additive identity*.
 
+{{< fillin
+  question="Add: $0 + 19$"
+  answer="19"
+  answerForm="decimal"
+  hint="Use the Identity Property of Addition: what does adding zero do to a number?"
+>}}
+
 Reversing the order of the addends never changes the sum — $2 + 3 = 5$ and
 $3 + 2 = 5$; $8 + 9 = 17$ and $9 + 8 = 17$. This is the **Commutative
 Property of Addition**:
@@ -98,10 +127,17 @@ Property of Addition**:
 $$a + b = b + a$$
 
 {{< fillin
-  question="Using the Commutative Property of Addition, if $8 + 7 = 15$, what is $7 + 8$?"
-  answer="15"
+  question="Add: $9 + 7$"
+  answer="16"
   answerForm="decimal"
-  hint="Changing the order of the addends does not change the sum."
+  hint="This is a one-digit addition fact: count on 7 from 9."
+>}}
+
+{{< fillin
+  question="Add: $7 + 9$"
+  answer="16"
+  answerForm="decimal"
+  hint="Compare these addends with the previous question's, and apply the Commutative Property of Addition."
 >}}
 
 ## Add whole numbers with the column algorithm
@@ -125,7 +161,7 @@ Add the ones ($8 + 1 = 9$), then the tens ($2 + 6 = 8$). Neither column sums
 to $10$ or more, so no carrying is needed.
 
 But what happens when a column's sum is $10$ or more? Going back to the
-base-10 blocks, adding $17 + 26$: the ones columns give $7 + 6 = 13$ ones —
+base-10 blocks, adding $17 + 26$: the ones give $7 + 6 = 13$ ones —
 more than $10$, so exchange $10$ of them for $1$ ten. Without the blocks,
 that exchange is written as a small carried $1$ above the tens column.
 
@@ -151,8 +187,7 @@ Add the tens: $1 + 4 + 6 = 11$.
 
 $$
 \begin{array}{r}
-{}^{1} \\
-43 \\
+\overset{1}{4}3 \\
 +69 \\
 \hline
 112
@@ -168,8 +203,7 @@ $1 + 2 + 8 = 11$ — write $1$, carry $1$. Add the hundreds: $1 + 3 + 5 = 9$.
 
 $$
 \begin{array}{r}
-{}^{1}{}^{1} \\
-324 \\
+\overset{1}{3}\overset{1}{2}4 \\
 +586 \\
 \hline
 910
@@ -186,8 +220,7 @@ $1 + 6 + 4 = 11$ — write $1$, carry $1$. Add the thousands: $1 + 1 = 2$.
 
 $$
 \begin{array}{r}
-{}^{1}{}^{1}{}^{1} \\
-1{,}683 \\
+\overset{1}{1}{,}\overset{1}{6}\overset{1}{8}3 \\
 +479 \\
 \hline
 2{,}162
@@ -204,7 +237,7 @@ up the leftmost digits.
   question="Add: $456 + 376$"
   answer="832"
   answerForm="decimal"
-  hint="Add the ones ($6 + 6 = 12$, write 2 carry 1), then the tens ($1 + 5 + 7 = 13$, write 3 carry 1), then the hundreds."
+  hint="Line up the place values and add each column from the ones place leftward, carrying whenever a column sums to 10 or more."
 >}}
 
 {{< fillin
@@ -219,10 +252,11 @@ More than two numbers can be added the same way — add straight down each
 column, carrying whenever a column's total reaches $10$ or more.
 
 {{< fillin
-  question="Add: $213 + 145 + 322$"
-  answer="680"
+  question="Add: $46{,}195 + 397 + 6{,}281$"
+  answer="52873"
   answerForm="decimal"
-  hint="Add the ones column first ($3 + 5 + 2$), then the tens, then the hundreds — carry if any column sums to 10 or more."
+  answerDisplay="52,873"
+  hint="Stack all three numbers with the ones places lined up, then add straight down each column from right to left, carrying whenever a column totals 10 or more."
 >}}
 
 ## Translate word phrases to math notation
@@ -257,15 +291,17 @@ $$37 \text{ increased by } 26 \;\to\; 37 + 26 = 63$$
 So $37$ increased by $26$ is $63$.
 
 {{< fillin
-  question="Translate and simplify: the sum of 18 and 45."
-  answer="63"
-  hint="'Sum' means add the two numbers named: $18 + 45$."
+  question="Translate and simplify: the sum of 28 and 14."
+  answer="42"
+  answerForm="decimal"
+  hint="The word 'sum' tells you to add; the two numbers after 'of' are the addends. Then simplify."
 >}}
 
 {{< fillin
-  question="Translate and simplify: 29 increased by 34."
-  answer="63"
-  hint="'Increased by' means add: $29 + 34$."
+  question="Translate and simplify: 29 increased by 76."
+  answer="105"
+  answerForm="decimal"
+  hint="The words 'increased by' tell you to add; the two numbers given are the addends. Then simplify."
 >}}
 
 ## Add whole numbers in applications
@@ -297,15 +333,17 @@ $$14 + 9 + 14 + 9 = 46$$
 The perimeter of the patio is $46$ feet.
 
 {{< fillin
-  question="Mark rode his bicycle 18 miles on Monday, 25 miles on Wednesday, 12 miles on Friday, 34 miles on Saturday, and 21 miles on Sunday. What is the total number of miles he rode last week?"
-  answer="110"
+  question="Mark is training for a bicycle race. Last week he rode 18 miles on Monday, 15 miles on Wednesday, 26 miles on Friday, 49 miles on Saturday, and 32 miles on Sunday. What is the total number of miles he rode last week?"
+  answer="140"
+  answerForm="decimal"
   hint="Add all five distances: the sum of the miles is the total miles."
 >}}
 
 {{< fillin
   question="A garden shaped like a rectangle has sides of length 22 feet, 15 feet, 22 feet, and 15 feet. Find its perimeter, in feet."
   answer="74"
-  hint="Perimeter is the sum of the lengths of all the sides: $22 + 15 + 22 + 15$."
+  answerForm="decimal"
+  hint="Perimeter is the sum of the lengths of all four sides."
 >}}
 
 ## Key terms
@@ -328,7 +366,7 @@ lengths of its sides.
 {{< multiplechoice
   question="Translate from math notation to words: $5 + 2$"
   answer="five plus two; the sum of 5 and 2"
-  hint="Read the expression left to right — first addend, operation, second addend. The result of addition is called the sum."
+  hint="Read the expression left to right: the first addend, then the operation symbol, then the second addend."
 >}}
 two plus five; the sum of 2 and 5
 five minus two; the difference of 5 and 2
@@ -379,7 +417,8 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="What sum do the base-10 blocks above model?"
   answer="12"
-  hint="Count all the blocks. There are more than 10, so exchange 10 ones for 1 tens rod and read off the tens and the ones."
+  answerForm="decimal"
+  hint="Count all the blocks. If there are 10 or more, exchange 10 ones for 1 tens rod, then read off the tens and the ones."
 >}}
 
 <svg viewBox="0 0 500 70" role="img" aria-label="Base-10 blocks modeling an addition: a group of one tens rod and six ones blocks, a plus sign, and a group of two tens rods and five ones blocks." style="max-width: 500px; width: 100%; display: block; margin: 1.5rem auto">
@@ -417,7 +456,8 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="What sum do the base-10 blocks above model?"
   answer="41"
-  hint="Combine the rods and the loose blocks separately: 3 tens and 11 ones. Then exchange 10 of those ones for 1 more ten."
+  answerForm="decimal"
+  hint="Count the rods together and the ones blocks together. If there are 10 or more ones, exchange 10 of them for 1 more ten."
 >}}
 
 ### Add whole numbers without models
@@ -441,7 +481,7 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
   answer="1031"
   answerForm="decimal"
   answerDisplay="1,031"
-  hint="Ones: $2 + 9 = 11$, so write 1 and carry 1. Tens: $1 + 3 + 9 = 13$, so write 3 and carry 1. Then the hundreds."
+  hint="Line up the place values and add each column from the ones place leftward, carrying whenever a column sums to 10 or more."
 >}}
 
 {{< fillin
@@ -465,29 +505,33 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="Translate and simplify: the sum of 90 and 65."
   answer="155"
+  answerForm="decimal"
   answerDisplay="$90 + 65 = 155$"
-  hint="'The sum of' names the two addends in order: $90 + 65$."
+  hint="The words 'the sum of' tell you to add the two numbers that follow. Then simplify."
 >}}
 
 {{< fillin
   question="Translate and simplify: 33 increased by 49."
   answer="82"
+  answerForm="decimal"
   answerDisplay="$33 + 49 = 82$"
-  hint="'Increased by' means add the second number to the first: $33 + 49$."
+  hint="The words 'increased by' mean add the second number to the first. Then simplify."
 >}}
 
 {{< fillin
   question="Translate and simplify: 250 more than 599."
   answer="849"
+  answerForm="decimal"
   answerDisplay="$599 + 250 = 849$"
-  hint="'More than' reverses the order you read it in — the amount added is 250, and it is added to 599."
+  hint="'More than' reverses the reading order: the number after 'more than' comes first, and the first number is added to it. Then simplify."
 >}}
 
 {{< fillin
   question="Translate and simplify: 1,482 added to 915."
   answer="2397"
+  answerForm="decimal"
   answerDisplay="$915 + 1{,}482 = 2{,}397$"
-  hint="'Added to' also reverses the reading order: start with 915 and add 1,482 to it."
+  hint="'Added to' also reverses the reading order: start with the number after 'added to', add the first number to it, then simplify."
 >}}
 
 ### Add whole numbers in applications
@@ -495,12 +539,14 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="Ethan rode his bike 14 miles on Monday, 19 miles on Tuesday, 12 miles on Wednesday, 25 miles on Friday, and 68 miles on Saturday. What was the total number of miles Ethan rode?"
   answer="138"
+  answerForm="decimal"
   hint="'Total' means add — find the sum of all five daily distances."
 >}}
 
 {{< fillin
   question="Jackson lives in a 7 room apartment. The number of square feet in each room is 238, 120, 156, 196, 100, 132, and 225. What is the total number of square feet in all 7 rooms?"
   answer="1167"
+  answerForm="decimal"
   answerDisplay="1,167"
   hint="Stack all seven room sizes in a column by place value and add straight down, carrying as needed."
 >}}
@@ -508,10 +554,11 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="Last year Natalie's salary was \$82,572. Two years ago, her salary was \$79,316, and three years ago it was \$75,298. What is the total amount of Natalie's salary for the past three years, in dollars?"
   answer="237186"
+  answerForm="decimal"
   answerDisplay="\$237,186"
   hint="Add the three yearly salaries, lining up the ones places and carrying whenever a column reaches 10."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.2: Add Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-2-add-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, omitted the addition facts table (0–9) as redundant with earlier material, redrew the base-10 block figures as accessible inline SVGs and the column-addition figures as aligned math blocks, used new example numbers for the word-phrase and applications examples, converted "Try It" practice problems into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.2: Add Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-2-add-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, omitted the addition facts table (0–9) as redundant with earlier material, redrew the base-10 block figures as accessible inline SVGs and the column-addition figures as aligned math blocks, used new example numbers for the word-phrase and applications examples and for one perimeter exercise, which states its side lengths in place of the source figure, converted "Try It" practice problems into interactive exercises with instant feedback (a Try It asking for two sums as one question per sum), and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

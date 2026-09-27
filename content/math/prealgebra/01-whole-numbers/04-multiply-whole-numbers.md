@@ -66,9 +66,10 @@ look at the rows sideways, you'll see $8$ rows of $3$ counters — the product
 is the same either way. We'll return to that idea shortly.
 
 {{< fillin
-  question="A model shows 4 rows of counters with 6 counters in each row. How many counters are there in all?"
-  answer="24"
-  hint="The model represents the product $4 \times 6$ — add 6 four times if you're unsure."
+  question="Model $5 \times 7$ with counters: make 5 rows with 7 counters in each row. How many counters are there in all?"
+  answer="35"
+  answerForm="decimal"
+  hint="Add the number of counters in one row once for each row, or multiply the number of rows by the number in each row."
 >}}
 
 ## Multiply whole numbers
@@ -92,19 +93,19 @@ $$1 \cdot a = a \qquad a \cdot 1 = a$$
 For example, $0 \cdot 11 = 0$, $(42)0 = 0$, $(11)1 = 11$, and
 $1 \cdot 42 = 42$.
 
-Just as with addition, the order of the factors does not matter:
-$4 \cdot 7 = 28$ and $7 \cdot 4 = 28$; $8 \cdot 9 = 72$ and $9 \cdot 8 = 72$.
-This is the **Commutative Property of Multiplication**: changing the order
-of the factors does not change their product.
-
-$$a \cdot b = b \cdot a$$
-
 {{< fillin
   question="Find the product: $0 \cdot 19$."
   answer="0"
   answerForm="decimal"
   hint="What does the Multiplication Property of Zero say about any number times zero?"
 >}}
+
+Just as with addition, the order of the factors does not matter:
+$4 \cdot 7 = 28$ and $7 \cdot 4 = 28$; $8 \cdot 9 = 72$ and $9 \cdot 8 = 72$.
+This is the **Commutative Property of Multiplication**: changing the order
+of the factors does not change their product.
+
+$$a \cdot b = b \cdot a$$
 
 To multiply numbers with more than one digit, write the numbers vertically
 in columns, as with addition and subtraction. To multiply $27$ by $3$: first
@@ -128,8 +129,8 @@ To multiply two whole numbers:
 partial product, $434$ ($7 \cdot 2 = 14$, write the $4$ and carry the $1$;
 $7 \cdot 6 = 42$, plus the carried $1$ is $43$). Next multiply the $8$ —
 which is $8$ tens — by $62$: write a $0$ placeholder in the ones place, then
-$8 \cdot 2 = 16$ and $8 \cdot 6 = 48$ plus the carry gives the second partial
-product, $4{,}960$. Adding the partial products, $434 + 4{,}960 = 5{,}394$,
+$8 \cdot 2 = 16$ (write the $6$, carry the $1$) and $8 \cdot 6 = 48$, plus the
+carried $1$ is $49$, giving the second partial product, $4{,}960$. Adding the partial products, $434 + 4{,}960 = 5{,}394$,
 so $62(87) = 5{,}394$.
 
 **Example.** Multiply $(354)(438)$. There are three partial products — from
@@ -149,7 +150,7 @@ multiply $8 \cdot 3 = 24$, then multiply $24 \cdot 2 = 48$.
   question="Multiply: $64 \cdot 8$."
   answer="512"
   answerForm="decimal"
-  hint="8 times 4 is 32 — write the 2, carry the 3, and remember to add it after multiplying 8 by 6."
+  hint="Write the numbers vertically. Multiply 8 by the ones digit, then by the tens digit, adding any tens you carried."
 >}}
 
 {{< fillin
@@ -188,7 +189,8 @@ Some of the words that indicate multiplication:
 {{< fillin
   question="Translate and simplify: the product of 13 and 28."
   answer="364"
-  hint="Product means multiply. Write $13 \times 28$ vertically and add the two partial products."
+  answerForm="decimal"
+  hint="The word product tells you to multiply the two numbers it names. Then multiply them vertically and add the partial products."
 >}}
 
 ## Multiply whole numbers in applications
@@ -223,12 +225,14 @@ area of the ceiling is $108$ square feet.
 {{< fillin
   question="Valia donated water for her son's baseball game: 6 cases of water bottles with 24 bottles in each case. How many bottles did Valia donate?"
   answer="144"
+  answerForm="decimal"
   hint="The total is the product of the number of cases and the bottles per case."
 >}}
 
 {{< fillin
   question="Zoila bought a rectangular rug 8 feet long by 5 feet wide. What is the area of the rug in square feet?"
   answer="40"
+  answerForm="decimal"
   hint="The area of a rectangle is the product of its length and its width."
 >}}
 
@@ -251,7 +255,7 @@ the product of length and width.
 {{< multiplechoice
   question="Translate $4 \times 7$ from math notation to words."
   answer="four times seven; the product of four and seven"
-  hint="Read the left factor first. The result of a multiplication is called the product, not the sum."
+  hint="Compare with the multiplication notation table: how is $3 \times 8$ read, and what is its result called?"
 >}}
 four times seven; the product of four and seven
 seven times four; the product of seven and four
@@ -262,7 +266,7 @@ four plus seven; the sum of four and seven
 {{< multiplechoice
   question="Translate $5 \cdot 12$ from math notation to words."
   answer="five times twelve; the product of five and twelve"
-  hint="A centered dot is one of the multiplication symbols. Read the factors in the order they are written."
+  hint="A centered dot is one of the multiplication symbols. Read it the way the notation table reads $3 \cdot 8$."
 >}}
 five times twelve; the product of five and twelve
 five times twelve; the sum of five and twelve
@@ -318,7 +322,7 @@ forty-two times thirty-three; the product of forty-two and thirty-three
   question="Multiply: $6 \cdot 7$."
   answer="42"
   answerForm="decimal"
-  hint="Compare this with the previous product: the Commutative Property says changing the order of the factors does not change their product."
+  hint="This is a one-digit multiplication fact — six groups of seven."
 >}}
 
 {{< fillin
@@ -326,7 +330,7 @@ forty-two times thirty-three; the product of forty-two and thirty-three
   answer="88000"
   answerForm="decimal"
   answerDisplay="$88{,}000$"
-  hint="$1{,}000$ has three zeros, so attach three zeros to the other factor."
+  hint="Count the zeros in $1{,}000$, then use the pattern for multiplying by a number that ends in zeros."
 >}}
 
 {{< fillin
@@ -342,6 +346,7 @@ forty-two times thirty-three; the product of forty-two and thirty-three
 {{< fillin
   question="Translate and simplify: the product of 18 and 33."
   answer="594"
+  answerForm="decimal"
   answerDisplay="$18 \cdot 33 = 594$"
   hint="The word product tells you to multiply. Write the two numbers as factors, then multiply."
 >}}
@@ -349,6 +354,7 @@ forty-two times thirty-three; the product of forty-two and thirty-three
 {{< fillin
   question="Translate and simplify: twice 249."
   answer="498"
+  answerForm="decimal"
   answerDisplay="$2(249) = 498$"
   hint="Twice a number means two times that number."
 >}}
@@ -356,6 +362,7 @@ forty-two times thirty-three; the product of forty-two and thirty-three
 {{< fillin
   question="Translate and simplify: ten times three hundred seventy-five."
   answer="3750"
+  answerForm="decimal"
   answerDisplay="$10(375) = 3{,}750$"
   hint="Write the words as digits first, then use the pattern for multiplying by a number that ends in zeros."
 >}}
@@ -365,29 +372,33 @@ forty-two times thirty-three; the product of forty-two and thirty-three
 {{< fillin
   question="Tim brought 9 six-packs of soda to a club party. How many cans of soda did Tim bring?"
   answer="54"
+  answerForm="decimal"
   hint="A six-pack holds 6 cans — the total is the product of the number of packs and the cans in each pack."
 >}}
 
 {{< fillin
   question="Jane is painting one wall of her living room. The wall is rectangular, 13 feet wide by 9 feet high. What is the area of the wall in square feet?"
   answer="117"
+  answerForm="decimal"
   hint="The area of a rectangle is the product of its length and its width."
 >}}
 
 {{< fillin
   question="According to NCAA regulations, a rectangular basketball court must be 94 feet by 50 feet. What is the area of the court in square feet?"
   answer="4700"
+  answerForm="decimal"
   answerDisplay="$4{,}700$ square feet"
-  hint="Multiply the two dimensions. Since 50 is half of 100, the product is half of $94 \times 100$."
+  hint="The area of a rectangle is the product of its two dimensions. Write them vertically and multiply digit by digit."
 >}}
 
 {{< fillin
   question="Javier owns 300 shares of stock in one company. On Tuesday, the stock price rose \$12 per share. How much money did Javier's portfolio gain, in dollars?"
   answer="3600"
+  answerForm="decimal"
   answerDisplay="\$3,600"
   hint="Multiply the number of shares by the amount each share gained."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.4: Multiply Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-4-multiply-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the counters models as accessible inline graphics and summarized the multiplication-facts table and worked columns in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.4: Multiply Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-4-multiply-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, omitted the pennies photograph, the multiplication facts table (0–9), and the square-unit and rug area figures (the rug is described in prose), redrew the counters models as accessible inline graphics and summarized the worked columns in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

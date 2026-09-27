@@ -186,7 +186,7 @@ in without exceeding them.
   question="Divide: $2{,}636 \div 4$."
   answer="659"
   answerForm="decimal"
-  hint="4 goes into 26 six times. Work digit by digit, and check by multiplying your quotient by 4."
+  hint="4 does not go into 2, so start with the first two digits of the dividend. Work digit by digit, and check by multiplying your quotient by 4."
 >}}
 
 {{< fillin
@@ -197,9 +197,11 @@ in without exceeding them.
 >}}
 
 {{< fillin
-  question="What is the remainder when 3,812 is divided by 8?"
-  answer="4"
-  hint="The quotient is 476. What is left over — that is, what must you add to $476 \times 8$ to get 3,812?"
+  question="Divide: $3{,}812 \div 8$. Enter the quotient and the remainder, separated by a comma."
+  answer="476,4"
+  answerForm="decimal"
+  answerDisplay="$476$ R$4$"
+  hint="Divide digit by digit; the remainder is what is left after the last subtraction. Check: the quotient times 8, plus the remainder, should be 3,812."
 >}}
 
 ## Translate word phrases to math notation
@@ -219,7 +221,9 @@ have written it $17\overline{)51}$ or $\frac{51}{17}$.
 {{< fillin
   question="Translate and simplify: the quotient of 91 and 13."
   answer="7"
-  hint="Quotient means divide: how many thirteens are in 91?"
+  answerForm="decimal"
+  answerDisplay="$91 \div 13 = 7$"
+  hint="The word *quotient* tells you to divide, and the first number named is the dividend."
 >}}
 
 ## Divide whole numbers in applications
@@ -237,7 +241,8 @@ Cecelia will get $20$ servings from the big box.
 {{< fillin
   question="Marcus is setting out animal crackers for snacks at the preschool. He puts 9 crackers in each cup, and one box contains 135 crackers. How many cups can he fill from one box?"
   answer="15"
-  hint="The number of cups is 135 divided by 9 — long division, or count how many nines fit."
+  answerForm="decimal"
+  hint="Divide the total number of crackers by the number of crackers in each cup."
 >}}
 
 ## Key terms
@@ -256,7 +261,7 @@ the bracket notation.
 {{< multiplechoice
   question="Translate from math notation to words: $54 \div 9$"
   answer="fifty-four divided by nine; the quotient of fifty-four and nine"
-  hint="Read the dividend first, then the divisor — the division sign is read as *divided by*."
+  hint="Name the operation the sign stands for, and read the two numbers in the order they are written."
 >}}
 fifty-four minus nine; the difference of fifty-four and nine
 nine divided by fifty-four; the quotient of nine and fifty-four
@@ -288,7 +293,7 @@ sixty-three times seven; the product of sixty-three and seven
 
 ### Model division of whole numbers
 
-<svg viewBox="0 0 560 130" role="img" aria-label="Fifteen round counters separated into three groups, with five counters in each group." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 560 130" role="img" aria-label="Fifteen round counters separated into groups of five, each group enclosed in its own outline." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="25" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="200" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="375" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -309,7 +314,7 @@ sixty-three times seven; the product of sixty-three and seven
   hint="The divisor tells you how many counters go in each group; the quotient is the number of groups you can count."
 >}}
 
-<svg viewBox="0 0 560 230" role="img" aria-label="Twenty round counters separated into five groups, with four counters in each group." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 560 230" role="img" aria-label="Twenty round counters separated into groups of four, each group enclosed in its own outline." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="25" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="200" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="375" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -332,6 +337,7 @@ sixty-three times seven; the product of sixty-three and seven
 {{< fillin
   question="The counters above model $4\overline{)20}$ — twenty counters separated into groups of four. What is the quotient?"
   answer="5"
+  answerForm="decimal"
   hint="Twenty is the dividend and four is the divisor, so count how many groups of four the twenty counters make."
 >}}
 
@@ -341,7 +347,7 @@ sixty-three times seven; the product of sixty-three and seven
   question="Divide, then check by multiplying: $43 \div 43$"
   answer="1"
   answerForm="decimal"
-  hint="Use a Division Property of One — any number except zero divided by itself has the same quotient."
+  hint="Ask what number times 43 gives 43, or use a Division Property of One."
 >}}
 
 {{< multiplechoice
@@ -359,7 +365,7 @@ undefined
   question="Divide, then check by multiplying: $72 \div 3$"
   answer="24"
   answerForm="decimal"
-  hint="3 goes into 7 twice with 1 left over; bring down the 2. Then check that your quotient times 3 is 72."
+  hint="Divide 3 into the first digit, then bring down the next digit and divide again. Check that your quotient times 3 is 72."
 >}}
 
 {{< fillin
@@ -367,7 +373,7 @@ undefined
   answer="10209"
   answerForm="decimal"
   answerDisplay="$10{,}209$"
-  hint="After the first step, 9 goes into 1 zero times — write that zero in the quotient and keep bringing digits down."
+  hint="Whenever 9 does not go into the number you have after bringing down a digit, write a 0 in the quotient before bringing down the next digit."
 >}}
 
 {{< multiplechoice
@@ -375,7 +381,7 @@ undefined
   answer="352 R6"
   hint="To check a division with a remainder, multiply the quotient by the divisor and then add the remainder."
 >}}
-353 R1
+35 R2
 351 R6
 352 R4
 352 R6
@@ -393,6 +399,7 @@ undefined
 {{< fillin
   question="Translate and simplify: the quotient of 45 and 15."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$45 \div 15 = 3$"
   hint="*Quotient of* means divide, and the first number named is the dividend."
 >}}
@@ -400,8 +407,9 @@ undefined
 {{< fillin
   question="Translate and simplify: the quotient of 288 and 24."
   answer="12"
+  answerForm="decimal"
   answerDisplay="$288 \div 24 = 12$"
-  hint="Write $288 \div 24$, then divide — how many 24s fit in 288?"
+  hint="*Quotient of* means divide: the first number named is the dividend and the second is the divisor."
 >}}
 
 ### Divide whole numbers in applications
@@ -409,21 +417,24 @@ undefined
 {{< fillin
   question="Ric bought 64 ounces of trail mix. He wants to divide it into small bags, with 2 ounces of trail mix in each bag. How many bags can Ric fill?"
   answer="32"
+  answerForm="decimal"
   hint="Divide the total number of ounces by the number of ounces in each bag."
 >}}
 
 {{< fillin
   question="There are 125 students in an astronomy class. The professor assigns them into groups of 5. How many groups of students are there?"
   answer="25"
+  answerForm="decimal"
   hint="The number of groups is the total number of students divided by the number in each group."
 >}}
 
 {{< fillin
   question="Jenna puts in a new pair of contact lenses every 14 days. How many pairs of contact lenses does she need for 365 days?"
   answer="27"
-  hint="Divide 365 by 14, then decide what the leftover day means — a partly used period still needs a whole pair."
+  answerForm="decimal"
+  hint="Divide the number of days by the number of days one pair lasts, then decide what any leftover days mean — a partly used period still needs a whole pair."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.5: Divide Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, described the cookie and counter models and the long-division worked columns in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, redrawing the answer-key counter models as accessible inline graphics.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.5: Divide Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, described the cookie and counter models and the long-division worked columns in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback (the modeling Try It asking for the number of groups), and adapted selected end-of-section exercises into the interactive Practice block, redrawing the answer-key counter models as accessible inline graphics.</small>

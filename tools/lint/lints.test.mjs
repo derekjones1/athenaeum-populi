@@ -3236,3 +3236,11 @@ test('the attribution footer must be the last thing on the page, and there is on
   const twice = `# T\n\n${footer}\n\nProse.\n\n${footer}\n`;
   assert.ok(lintHugo(twice, 'content/x/y/01-a/01-b.md').errors.some((e) => e.includes('second attribution footer')));
 });
+
+// Carries set as their own right-aligned row sit over the wrong columns.
+test('a carry row in a display array is an error; \\overset carries are not', () => {
+  const lint = (src) => lintHugo(src, 'content/math/book/01-chapter/01-section.md').errors
+    .filter((e) => e.includes('carry/borrow'));
+  assert.equal(lint('$$\n\\begin{array}{r}\n{}^{1}{}^{1} \\\\\n324 \\\\\n+586 \\\\\n\\hline\n910\n\\end{array}\n$$').length, 1);
+  assert.equal(lint('$$\n\\begin{array}{r}\n\\overset{1}{3}\\overset{1}{2}4 \\\\\n+586 \\\\\n\\hline\n910\n\\end{array}\n$$').length, 0);
+});

@@ -1235,6 +1235,15 @@ export function lintHugo(src, filename = '', options = {}) {
   for (const m of src.matchAll(/\\begin\{array\}\{[^}]*@[^}]*\}/g)) {
     err(m.index, 'array column spec uses @{…} — KaTeX does not support it; use a plain spec like {rl} or {rrl}');
   }
+  // A carry or borrow set as its own array row (`{}^{1}{}^{1} \\`) is
+  // right-aligned against the row below it, so each digit lands over the
+  // wrong column (Prealgebra 1.2 shipped three; the math re-review pilot,
+  // September 26, 2026). Write the carry on its digit: `\overset{1}{3}24`.
+  for (const m of src.matchAll(/\\begin\{array\}[\s\S]*?\\end\{array\}/g)) {
+    for (const r of m[0].matchAll(/(^|\\\\|\})\s*((?:\{\}\^\{[^}]*\}\s*)+)\\\\/g)) {
+      err(m.index + r.index, 'carry/borrow digits set as their own array row land over the wrong column — write each on its digit with \\overset{1}{d}');
+    }
+  }
   // {lrcl} step arrays need \\[4pt]+ between steps.
   for (const m of src.matchAll(/\\begin\{array\}\{lrcl\}([\s\S]*?)\\end\{array\}/g)) {
     for (const s of m[1].matchAll(/\\\\(\[([\d.]+)pt\])?/g)) {
