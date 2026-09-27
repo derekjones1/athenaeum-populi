@@ -23,9 +23,7 @@ weight: 9
 Think about adding two numbers, say $5$ and $3$. The order we add them
 doesn't affect the result, does it?
 
-$$5 + 3 \qquad 3 + 5$$
-
-$$8 \qquad\qquad 8$$
+$$\begin{array}{ccc} 5 + 3 & \qquad & 3 + 5 \\[4pt] 8 & & 8 \end{array}$$
 
 $$5 + 3 = 3 + 5$$
 
@@ -34,9 +32,7 @@ matter!
 
 What about multiplying $5$ and $3$?
 
-$$5 \cdot 3 \qquad 3 \cdot 5$$
-
-$$15 \qquad\qquad 15$$
+$$\begin{array}{ccc} 5 \cdot 3 & \qquad & 3 \cdot 5 \\[4pt] 15 & & 15 \end{array}$$
 
 $$5 \cdot 3 = 3 \cdot 5$$
 
@@ -62,9 +58,7 @@ the numbers when adding or multiplying, the result is the same.
 What about subtraction? Does order matter when we subtract numbers? Does
 $7 - 3$ give the same result as $3 - 7$?
 
-$$7 - 3 \qquad 3 - 7$$
-
-$$4 \qquad\qquad -4$$
+$$\begin{array}{ccc} 7 - 3 & \qquad & 3 - 7 \\[4pt] 4 & & {-4} \end{array}$$
 
 $$4 \neq -4 \qquad\qquad 7 - 3 \neq 3 - 7$$
 
@@ -73,13 +67,9 @@ did not give the same result, we know that *subtraction is not commutative*.
 
 Let's see what happens when we divide two numbers. Is division commutative?
 
-$$12 \div 4 \qquad 4 \div 12$$
+$$\begin{array}{ccc} 12 \div 4 & \qquad & 4 \div 12 \\[4pt] \tfrac{12}{4} & & \tfrac{4}{12} \\[4pt] 3 & & \tfrac{1}{3} \end{array}$$
 
-$$\frac{12}{4} \qquad\qquad \frac{4}{12}$$
-
-$$3 \qquad\qquad \frac{1}{3}$$
-
-$$3 \neq \frac{1}{3} \qquad\qquad 12 \div 4 \neq 4 \div 12$$
+$$3 \neq \tfrac{1}{3} \qquad\qquad 12 \div 4 \neq 4 \div 12$$
 
 The results are not the same. Since changing the order of the division did
 not give the same result, *division is not commutative*. The commutative
@@ -106,8 +96,7 @@ symbols to indicate which operation should be done first.
 | | $(7 + 8) + 2 = 7 + (8 + 2)$ |
 
 When adding three numbers, changing the grouping of the numbers gives the
-same result. This is true for multiplication, too. Let's think again about
-multiplying $5 \cdot \tfrac{1}{3} \cdot 3$.
+same result. This is true for multiplication, too.
 
 | | |
 | :--- | :--- |
@@ -129,9 +118,10 @@ you. These examples illustrate the **associative property**.
   When adding or multiplying, changing the *grouping* gives the same result.
 {{< /callout >}}
 
-We got the same result both ways, but which way was easier? Multiplying
-$\tfrac{1}{3}$ and $3$ first, as shown on the right side above, eliminates
-the fraction in the first step. Using the associative property can make the
+Let's think again about multiplying $5 \cdot \tfrac{1}{3} \cdot 3$. We got
+the same result both ways, but which way was easier? Multiplying
+$\tfrac{1}{3}$ and $3$ first, as shown in the second row of the table above,
+eliminates the fraction in the first step. Using the associative property can make the
 math easier!
 
 The associative property has to do with grouping. If we change how the
@@ -184,19 +174,19 @@ fractions, combine those with a common denominator first.
 | Convert to an improper fraction. | $\tfrac{18}{13}$ |
 
 {{< fillin
-  question="Simplify: $(\tfrac{7}{15} + \tfrac{5}{8}) + \tfrac{3}{8}$."
+  question="Simplify: $(\tfrac{7}{15} + \tfrac{5}{8}) + \tfrac{3}{8}$. Enter a fraction or a mixed number."
   answer="\frac{22}{15}"
-  answerForm="fraction lowest-terms"
-  answerDisplay="$\tfrac{22}{15}$"
-  hint="The last two terms share a denominator of $8$ — regroup so you add those first, then add the result to $\tfrac{7}{15}$ and convert to an improper fraction."
+  answerForm="fraction-or-mixed-number lowest-terms"
+  answerDisplay="$\tfrac{22}{15}$, or $1\tfrac{7}{15}$"
+  hint="Look for two terms with a common denominator, change the grouping so you add those first, then add the remaining fraction."
 >}}
 
 {{< fillin
-  question="Simplify: $(\tfrac{2}{9} + \tfrac{7}{12}) + \tfrac{5}{12}$."
+  question="Simplify: $(\tfrac{2}{9} + \tfrac{7}{12}) + \tfrac{5}{12}$. Enter a fraction or a mixed number."
   answer="\frac{11}{9}"
-  answerForm="fraction lowest-terms"
-  answerDisplay="$\tfrac{11}{9}$"
-  hint="Regroup so the two terms with denominator $12$ are added first, then add the result to $\tfrac{2}{9}$ and convert to an improper fraction."
+  answerForm="fraction-or-mixed-number lowest-terms"
+  answerDisplay="$\tfrac{11}{9}$, or $1\tfrac{2}{9}$"
+  hint="Look for two terms with a common denominator, change the grouping so you add those first, then add the remaining fraction."
 >}}
 
 **Example.** Use the associative property to simplify $6(3x)$.
@@ -213,14 +203,14 @@ without having a value for $x$.
 {{< fillin
   question="Use the associative property to simplify $8(4x)$."
   answer="32x"
-  answerForm="distributed"
+  answerForm="single-term"
   hint="Regroup so the two numbers multiply first, then attach the variable."
 >}}
 
 {{< fillin
   question="Use the associative property to simplify $-9(7y)$."
   answer="-63y"
-  answerForm="distributed"
+  answerForm="single-term"
   hint="Regroup so the two numbers multiply first, then attach the variable."
 >}}
 
@@ -229,9 +219,7 @@ without having a value for $x$.
 What happens when we add $0$ to any number? Adding $0$ doesn't change the
 value. For this reason, we call $0$ the **additive identity**. For example,
 
-$$13 + 0 \qquad -14 + 0 \qquad 0 + (-8)$$
-
-$$13 \qquad\qquad -14 \qquad\qquad -8$$
+$$\begin{array}{ccccc} 13 + 0 & \qquad & {-14} + 0 & \qquad & 0 + (-8) \\[4pt] 13 & & {-14} & & {-8} \end{array}$$
 
 These examples illustrate the **Identity Property of Addition** that states
 that for any real number $a$, $a + 0 = a$ and $0 + a = a$.
@@ -240,9 +228,7 @@ What happens when we multiply any number by one? Multiplying by $1$ doesn't
 change the value. So we call $1$ the **multiplicative identity**. For
 example,
 
-$$43 \cdot 1 \qquad -27 \cdot 1 \qquad 1 \cdot \tfrac{3}{5}$$
-
-$$43 \qquad\qquad -27 \qquad\qquad \tfrac{3}{5}$$
+$$\begin{array}{ccccc} 43 \cdot 1 & \qquad & {-27} \cdot 1 & \qquad & 1 \cdot \tfrac{3}{5} \\[4pt] 43 & & {-27} & & \tfrac{3}{5} \end{array}$$
 
 These examples illustrate the **Identity Property of Multiplication** that
 states that for any real number $a$, $a \cdot 1 = a$ and $1 \cdot a = a$.
@@ -314,6 +300,7 @@ $\tfrac{4}{3}$.
 {{< fillin
   question="Find the additive inverse of $\tfrac{7}{9}$."
   answer="-\frac{7}{9}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{7}{9}$"
   hint="The additive inverse is the opposite — same size, other sign."
 >}}
@@ -321,12 +308,14 @@ $\tfrac{4}{3}$.
 {{< fillin
   question="Find the additive inverse of $1.2$."
   answer="-1.2"
+  answerForm="decimal"
   hint="The additive inverse is the opposite — same size, other sign."
 >}}
 
 {{< fillin
   question="Find the additive inverse of $-14$."
   answer="14"
+  answerForm="decimal"
   hint="The opposite of a negative number is positive."
 >}}
 
@@ -349,8 +338,9 @@ reciprocal of $\tfrac{9}{10}$ is $\tfrac{10}{9}$. So the multiplicative
 inverse of $0.9$ is $\tfrac{10}{9}$.
 
 {{< fillin
-  question="Find the multiplicative inverse of $4$."
+  question="Find the multiplicative inverse of $4$. Enter a fraction."
   answer="\frac{1}{4}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{4}$"
   hint="The multiplicative inverse is the reciprocal."
 >}}
@@ -358,14 +348,16 @@ inverse of $0.9$ is $\tfrac{10}{9}$.
 {{< fillin
   question="Find the multiplicative inverse of $-\tfrac{1}{7}$."
   answer="-7"
+  answerForm="decimal"
   hint="Flip the fraction to get its reciprocal, keeping the sign."
 >}}
 
 {{< fillin
-  question="Find the multiplicative inverse of $0.3$."
+  question="Find the multiplicative inverse of $0.3$. Enter a fraction."
   answer="\frac{10}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{3}$"
-  hint="Convert $0.3$ to the fraction $\tfrac{3}{10}$ first, then flip it to find the reciprocal."
+  hint="Write the decimal as a fraction first, then find the reciprocal of that fraction."
 >}}
 
 ## Use the Properties of Zero
@@ -424,7 +416,7 @@ $\tfrac{-32}{0}$.
 
 (a) The product of any real number and $0$ is $0$: $-8 \cdot 0 = 0$.
 
-(b) The product of any real number and $0$ is $0$:
+(b) Zero divided by any real number except zero is zero:
 $\tfrac{0}{-2} = 0$.
 
 (c) Division by $0$ is undefined: $\tfrac{-32}{0}$ is undefined.
@@ -437,7 +429,7 @@ $\tfrac{0}{-2} = 0$.
 >}}
 
 {{< fillin
-  question="Simplify: $0 \div (-6)$."
+  question="Simplify: $\tfrac{0}{-6}$."
   answer="0"
   answerForm="decimal"
   hint="Zero divided by any nonzero real number is zero."
@@ -454,11 +446,20 @@ $\tfrac{0}{n+5} = 0$.
 
 (b) Division by $0$ is undefined: $\tfrac{10-3p}{0}$ is undefined.
 
+**Example.** Simplify: $-84n + (-73n) + 84n$.
+
+| | |
+| :--- | :--- |
+| | $-84n + (-73n) + 84n$ |
+| Notice that the first and third terms are opposites; use the commutative property of addition to re-order the terms. | $-84n + 84n + (-73n)$ |
+| Add left to right. | $0 + (-73n)$ |
+| Add. | $-73n$ |
+
 {{< fillin
-  question="Simplify: $-84n + (-73n) + 84n$."
-  answer="-73n"
-  answerForm="no-like-terms"
-  hint="The first and third terms are opposites — use the commutative property to bring them together so they cancel, then add what's left."
+  question="Simplify: $-27a + (-48a) + 27a$."
+  answer="-48a"
+  answerForm="single-term"
+  hint="Look for two terms that are opposites; use the commutative property of addition to put them together, then add left to right."
 >}}
 
 Now we will see how recognizing reciprocals is helpful. Before multiplying
@@ -478,7 +479,7 @@ left to right, look for reciprocals — their product is $1$.
   answer="\frac{5}{49}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{49}$"
-  hint="The first and third factors, $\tfrac{9}{16}$ and $\tfrac{16}{9}$, are reciprocals — reorder so they multiply to $1$ first."
+  hint="Look for two factors that are reciprocals, and use the commutative property of multiplication to multiply them first."
 >}}
 
 {{< fillin
@@ -486,13 +487,13 @@ left to right, look for reciprocals — their product is $1$.
   answer="\frac{11}{25}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{25}$"
-  hint="The first and third factors, $\tfrac{6}{17}$ and $\tfrac{17}{6}$, are reciprocals — reorder so they multiply to $1$ first."
+  hint="Look for two factors that are reciprocals, and use the commutative property of multiplication to multiply them first."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{0}{m+7}$, where $m \ne -7$."
   answer="0"
-  answerForm="polynomial"
+  answerForm="decimal"
   hint="Zero divided by any nonzero real number is zero."
 >}}
 
@@ -507,15 +508,15 @@ left to right, look for reciprocals — their product is $1$.
 {{< fillin
   question="Simplify: $\tfrac{2}{5} \cdot \tfrac{5}{2} (20y + 50)$."
   answer="20y + 50"
-  answerForm="polynomial"
-  hint="The two fractions in front are reciprocals and multiply to 1, so the multiplicative identity leaves the parentheses unchanged."
+  answerForm="polynomial distributed"
+  hint="There is nothing to do in the parentheses, so multiply the two fractions in front first, then use the multiplicative identity."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{3}{8} \cdot \tfrac{8}{3} (12z + 16)$."
   answer="12z + 16"
-  answerForm="polynomial"
-  hint="The two fractions in front are reciprocals and multiply to 1, so the multiplicative identity leaves the parentheses unchanged."
+  answerForm="polynomial distributed"
+  hint="There is nothing to do in the parentheses, so multiply the two fractions in front first, then use the multiplicative identity."
 >}}
 
 ## Simplify Expressions Using the Distributive Property
@@ -579,7 +580,9 @@ terms. So we use the distributive property, as shown next.
 >}}
 
 Some students find it helpful to draw in arrows to remind them how to use
-the distributive property.
+the distributive property. Then the first step in the example above would look
+like this — an arrow from the $3$ to the $x$ and an arrow from the $3$ to the
+$4$ in $3(x + 4)$.
 
 **Example.** Simplify: $8\left(\tfrac{3}{8}x + \tfrac{1}{4}\right)$.
 
@@ -643,14 +646,14 @@ the signs correct!
   question="Simplify: $-3(6m + 5)$."
   answer="-18m - 15"
   answerForm="expanded"
-  hint="Distribute -3 to each term, keeping careful track of the signs."
+  hint="Distribute $-3$ to each term, keeping careful track of the signs."
 >}}
 
 {{< fillin
   question="Simplify: $-6(8n + 11)$."
   answer="-48n - 66"
   answerForm="expanded"
-  hint="Distribute -6 to each term, keeping careful track of the signs."
+  hint="Distribute $-6$ to each term, keeping careful track of the signs."
 >}}
 
 **Example.** Simplify: $-11(4 - 3a)$.
@@ -667,15 +670,15 @@ Notice that you could also write the result as $33a - 44$. Do you know why?
 {{< fillin
   question="Simplify: $-5(2 - 3a)$."
   answer="-10 + 15a"
-  answerForm="expanded"
-  hint="Distribute -5 to each term inside the parentheses, keeping careful track of the signs, then simplify the double negative."
+  answerForm="expanded distributed"
+  hint="Distribute $-5$ to each term inside the parentheses, keeping careful track of the signs, then simplify the double negative."
 >}}
 
 {{< fillin
   question="Simplify: $-7(8 - 15y)$."
   answer="-56 + 105y"
-  answerForm="expanded"
-  hint="Distribute -7 to each term inside the parentheses, keeping careful track of the signs, then simplify the double negative."
+  answerForm="expanded distributed"
+  hint="Distribute $-7$ to each term inside the parentheses, keeping careful track of the signs, then simplify the double negative."
 >}}
 
 The next example will show how to use the distributive property to find the
@@ -694,15 +697,15 @@ opposite of an expression.
 {{< fillin
   question="Simplify: $-(z - 11)$."
   answer="-z + 11"
-  answerForm="expanded"
-  hint="Multiplying by -1 gives the opposite of each term inside the parentheses."
+  answerForm="expanded distributed"
+  hint="Multiplying by $-1$ gives the opposite of each term inside the parentheses."
 >}}
 
 {{< fillin
   question="Simplify: $-(x - 4)$."
   answer="-x + 4"
-  answerForm="expanded"
-  hint="Multiplying by -1 gives the opposite of each term inside the parentheses."
+  answerForm="expanded distributed"
+  hint="Multiplying by $-1$ gives the opposite of each term inside the parentheses."
 >}}
 
 There will be times when we'll need to use the distributive property as
@@ -726,15 +729,15 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $9 - 3(x + 2)$."
   answer="-3x + 3"
-  answerForm="distributed"
-  hint="Distribute the -3 first, then combine the constant terms."
+  answerForm="distributed no-like-terms"
+  hint="Distribute the $-3$ first, then combine the constant terms."
 >}}
 
 {{< fillin
   question="Simplify: $7x - 5(x + 4)$."
   answer="2x - 20"
-  answerForm="distributed"
-  hint="Distribute the -5 first, then combine like terms with 7x."
+  answerForm="distributed no-like-terms"
+  hint="Distribute the $-5$ first, then combine like terms with $7x$."
 >}}
 
 **Example.** Simplify: $4(x - 8) - (x + 3)$.
@@ -748,15 +751,15 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $6(x - 9) - (x + 12)$."
   answer="5x - 66"
-  answerForm="distributed"
-  hint="Distribute the 6 across the first parentheses, and distribute -1 across the second, then combine like terms."
+  answerForm="distributed no-like-terms"
+  hint="Distribute the 6 across the first parentheses, and distribute $-1$ across the second, then combine like terms."
 >}}
 
 {{< fillin
   question="Simplify: $8(x - 1) - (x + 5)$."
   answer="7x - 13"
-  answerForm="distributed"
-  hint="Distribute the 8 across the first parentheses, and distribute -1 across the second, then combine like terms."
+  answerForm="distributed no-like-terms"
+  hint="Distribute the 8 across the first parentheses, and distribute $-1$ across the second, then combine like terms."
 >}}
 
 ## Key terms
@@ -787,7 +790,7 @@ when simplifying expressions.
 {{< fillin
   question="Simplify: $(y + 12) + 28$."
   answer="y + 40"
-  answerForm="distributed"
+  answerForm="no-like-terms distributed"
   hint="Regroup using the associative property so the two constants add first, then combine with the variable term."
 >}}
 
@@ -804,14 +807,14 @@ when simplifying expressions.
   question="Simplify: $19a + 44 - 19a$."
   answer="44"
   answerForm="no-like-terms"
-  hint="The $19a$ and $-19a$ terms are additive inverses — once they cancel, the identity property tells you what's left."
+  hint="Use the commutative property of addition to bring the opposite terms together, then apply the inverse and identity properties of addition."
 >}}
 
 {{< fillin
   question="Simplify: $10(0.1d)$."
   answer="d"
   answerForm="single-term"
-  hint="$10$ and $0.1$ are multiplicative inverses — multiply them first to apply the identity property."
+  hint="Use the associative property to multiply the two numbers first, then apply the identity property of multiplication."
 >}}
 
 ### Use the properties of zero
@@ -819,7 +822,7 @@ when simplifying expressions.
 {{< fillin
   question="Simplify: $\tfrac{0}{6}$."
   answer="0"
-  answerForm="single-power"
+  answerForm="decimal"
   hint="Zero divided by any nonzero real number is zero."
 >}}
 
@@ -833,11 +836,11 @@ when simplifying expressions.
 {{< multiplechoice
   question="Simplify $\tfrac{32-5a}{0}$, where $32-5a \neq 0$."
   answer="undefined"
-  hint="Think about what number times $0$ could produce a nonzero numerator — is there one?"
+  hint="Use the related multiplication fact: what number times $0$ would give the numerator?"
 >}}
-32-5a
+$32-5a$
 undefined
-0
+$0$
 {{< /multiplechoice >}}
 
 ### Simplify expressions using the distributive property
@@ -867,10 +870,10 @@ undefined
 {{< fillin
   question="Simplify: $5(2n + 9) + 12(n - 3)$."
   answer="22n + 9"
-  answerForm="distributed"
+  answerForm="distributed no-like-terms"
   hint="Distribute both terms first, then combine like terms."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.9: Properties of Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-9-properties-of-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the addition/multiplication grouping comparisons and worked-example steps as tables; omitted the Self Check checklist, Be Prepared callout, and media links; adapted selected end-of-section exercises (Practice Makes Perfect) into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.9: Properties of Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-9-properties-of-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the addition/multiplication grouping comparisons and worked-example steps as tables; described the distributive-property arrow drawings in words; omitted the Self Check checklist, Be Prepared callout, media links, the closing summary table of properties, and the Key Concepts list (the property callouts state the same rules); in the properties-of-zero example, gave the division-of-zero reason for $\tfrac{0}{-2} = 0$ where the source repeats the multiplication-by-zero reason; adapted selected end-of-section exercises (Practice Makes Perfect) into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

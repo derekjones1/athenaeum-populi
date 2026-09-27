@@ -571,8 +571,14 @@ function fractionTimesSymbolQuotient(expr) {
  * - arithmetic inside an exponent: `x^{8-(-3)}`, `\frac{1}{y^{7-2}}`;
  * - a numeral raised to a power (not for `single-power`, whose base may be
  *   a numeral): `(-14)^2x^2` for `196x^2`.
+ *
+ * A numeral fraction counts as a numeral on either side of the product:
+ * `\frac{1}{4}\cdot3q+\frac{1}{4}\cdot12` for `\frac{3}{4}q+3` and
+ * `\frac{2}{5}\cdot\frac{5}{2}(20y+50)` (found by the Elementary Algebra
+ * chapter 1 re-review, September 2026).
  */
 const NUMERAL_PRODUCT = /\d\s*(?:\\cdot|\\times|\*)\s*\(?\s*-?\s*\d/;
+const NUMERAL_FRACTION = /\\[tdc]?frac\s*\{\s*-?\s*\d+(?:\.\d+)?\s*\}\s*\{\s*\d+(?:\.\d+)?\s*\}/g;
 const EXPONENT_ARITHMETIC = /\^\s*\{[^{}]*\d\s*(?:[-+*]|\\cdot|\\times)\s*\(?\s*-?\s*\d[^{}]*\}/;
 const NUMERAL_POWER = /(?:^|[^\w\\}])(?:\(\s*-?\s*\d+(?:\.\d+)?\s*\)|\d+(?:\.\d+)?)\s*\^(?!\s*\{?\s*\\circ)/;
 /** The braced numerator and denominator of a leading `\frac{…}{…}`, or []. */
@@ -596,7 +602,7 @@ function fracHalves(bare) {
   }
   return halves;
 }
-const writesNumeralProduct = (bare) => NUMERAL_PRODUCT.test(bare);
+const writesNumeralProduct = (bare) => NUMERAL_PRODUCT.test(bare.replace(NUMERAL_FRACTION, '1'));
 const writesExponentArithmetic = (bare) => EXPONENT_ARITHMETIC.test(bare);
 const writesNumeralPower = (bare) => NUMERAL_POWER.test(bare);
 

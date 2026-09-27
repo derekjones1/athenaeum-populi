@@ -40,10 +40,10 @@ which leaves $15$ positives, so $(-5)(-3) = 15$.
 In summary:
 
 $$
-\begin{align}
-5 \cdot 3 &= 15 & -5(3) &= -15 \\
-5(-3) &= -15 & (-5)(-3) &= 15
-\end{align}
+\begin{aligned}
+5 \cdot 3 &= 15 &\qquad -5(3) &= -15 \\[4pt]
+5(-3) &= -15 &\qquad (-5)(-3) &= 15
+\end{aligned}
 $$
 
 Notice that for multiplication of two signed numbers, when the signs are the
@@ -75,28 +75,28 @@ product is *negative*. We'll put this all together in the chart below.
   question="Multiply: $-6 \cdot 8$"
   answer="-48"
   answerForm="decimal"
-  hint="The signs are different, so the product is negative."
+  hint="Multiply the absolute values, then decide the sign: same signs give a positive product, different signs a negative one."
 >}}
 
 {{< fillin
   question="Multiply: $-4(-7)$"
   answer="28"
   answerForm="decimal"
-  hint="The signs are the same, so the product is positive."
+  hint="Multiply the absolute values, then decide the sign: same signs give a positive product, different signs a negative one."
 >}}
 
 {{< fillin
   question="Multiply: $9(-7)$"
   answer="-63"
   answerForm="decimal"
-  hint="The signs are different, so the product is negative."
+  hint="Multiply the absolute values, then decide the sign: same signs give a positive product, different signs a negative one."
 >}}
 
 When we multiply a number by $1$, the result is the same number. What
 happens when we multiply a number by $-1$? Let's multiply a positive number
 and then a negative number by $-1$ to see what we get.
 
-$$-1 \cdot 4 = -4 \qquad\qquad -1(-3) = 3$$
+$$-1 \cdot 4 = -4 \qquad\qquad {-1(-3) = 3}$$
 
 Here $-4$ is the opposite of $4$, and $3$ is the opposite of $-3$. Each time
 we multiply a number by $-1$, we get its opposite!
@@ -136,9 +136,14 @@ divided into three groups of five each, because adding five three times
 gives $15$. Look at some examples of multiplying integers to figure out the
 rules for dividing integers.
 
-$$5 \cdot 3 = 15 \ \text{so}\ 15 \div 3 = 5 \qquad\qquad -5(3) = -15 \ \text{so}\ -15 \div 3 = -5$$
-
-$$(-5)(-3) = 15 \ \text{so}\ 15 \div (-3) = -5 \qquad\qquad 5(-3) = -15 \ \text{so}\ -15 \div (-3) = 5$$
+$$
+\begin{array}{rcl}
+5 \cdot 3 = 15 & \text{so} & 15 \div 3 = 5 \\[4pt]
+-5(3) = -15 & \text{so} & -15 \div 3 = -5 \\[4pt]
+(-5)(-3) = 15 & \text{so} & 15 \div (-3) = -5 \\[4pt]
+5(-3) = -15 & \text{so} & -15 \div (-3) = 5
+\end{array}
+$$
 
 Division follows the same rules as multiplication! For division of two
 signed numbers, when the signs are the *same*, the quotient is *positive*,
@@ -163,14 +168,14 @@ $-100 \div (-4) = 25$.
   question="Divide: $-42 \div 6$"
   answer="-7"
   answerForm="decimal"
-  hint="The signs are different, so the quotient is negative."
+  hint="Divide the absolute values, then decide the sign: same signs give a positive quotient, different signs a negative one."
 >}}
 
 {{< fillin
   question="Divide: $-117 \div (-3)$"
   answer="39"
   answerForm="decimal"
-  hint="The signs are the same, so the quotient is positive."
+  hint="Divide the absolute values, then decide the sign: same signs give a positive quotient, different signs a negative one."
 >}}
 
 ## Simplify expressions with integers
@@ -281,13 +286,15 @@ positive numbers.
 {{< fillin
   question="When $n = -8$, evaluate: $n + 2$"
   answer="-6"
+  answerForm="decimal"
   hint="Substitute $-8$ for $n$, then add."
 >}}
 
 {{< fillin
   question="When $n = -8$, evaluate: $-n + 2$"
   answer="10"
-  hint="Substitute $-8$ for $n$. The opposite of $-8$ is $8$, then add $2$."
+  answerForm="decimal"
+  hint="Substitute $-8$ for $n$; $-n$ means the opposite of $n$. Then add."
 >}}
 
 **Example.** Evaluate $(x + y)^2$ when $x = -18$ and $y = 24$.
@@ -298,6 +305,7 @@ inside the parenthesis: $(6)^2$. Simplify: $36$.
 {{< fillin
   question="Evaluate $(x + y)^2$ when $x = -15$ and $y = 29$"
   answer="196"
+  answerForm="decimal"
   hint="Add inside the parentheses first, then square the result."
 >}}
 
@@ -310,12 +318,14 @@ inside the parenthesis: $(6)^2$. Simplify: $36$.
 {{< fillin
   question="Evaluate: $17 - k$ when $k = 19$"
   answer="-2"
+  answerForm="decimal"
   hint="Substitute $19$ for $k$, then subtract."
 >}}
 
 {{< fillin
   question="Evaluate: $17 - k$ when $k = -19$"
   answer="36"
+  answerForm="decimal"
   hint="Substitute $-19$ for $k$. Subtracting a negative is the same as adding its opposite."
 >}}
 
@@ -328,6 +338,7 @@ $2(16) + 3(4) + 8$. Multiply: $32 + 12 + 8$. Add: $52$.
 {{< fillin
   question="Evaluate $3x^2 - 2x + 6$ when $x = -3$"
   answer="39"
+  answerForm="decimal"
   hint="Substitute $-3$ for $x$, evaluate the exponent first, then multiply, then add and subtract left to right."
 >}}
 
@@ -346,7 +357,9 @@ the brackets with an absolute value sign: $(-4) + 3$. Add: $-1$.
 {{< fillin
   question="Translate and simplify: the sum of $9$ and $-16$, increased by $4$."
   answer="-3"
-  hint="Add $9$ and $-16$ first, then add $4$ to that result."
+  answerForm="decimal"
+  answerDisplay="$(9+(-16))+4=-3$"
+  hint="'The sum of $a$ and $b$' is $a+b$; 'increased by' adds to that whole sum. Group the sum, then simplify inside the grouping first."
 >}}
 
 When we first introduced the operation symbols, we saw that the expression
@@ -365,13 +378,17 @@ simplify: $-19 - 24 = -43$.
 {{< fillin
   question="Translate and simplify: the difference of $14$ and $-23$"
   answer="37"
-  hint="The difference of $a$ and $b$ translates to $a$ minus $b$: $14 - (-23)$."
+  answerForm="decimal"
+  answerDisplay="$14-(-23)=37$"
+  hint="'The difference of $a$ and $b$' translates to $a-b$, in the order named. Subtracting a negative is adding its opposite."
 >}}
 
 {{< fillin
-  question="Translate and simplify: subtract 21 from -17"
+  question="Translate and simplify: subtract $21$ from $-17$"
   answer="-38"
-  hint="Subtract $b$ from $a$ means $a$ minus $b$, so start with $-17$ and subtract $21$."
+  answerForm="decimal"
+  answerDisplay="$-17-21=-38$"
+  hint="'Subtract $b$ from $a$' translates to $a-b$: the number after 'from' comes first."
 >}}
 
 Once again, our prior work translating English to algebra transfers to
@@ -387,6 +404,8 @@ Translate "the **product** of $-2$ and $14$": $(-2)(14)$. Simplify: $-28$.
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the product of $-5$ and $12$."
   answer="-60"
+  answerForm="decimal"
+  answerDisplay="$-5(12)=-60$"
   hint="Product means multiply the two numbers."
 >}}
 
@@ -399,6 +418,8 @@ $8$.
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the quotient of $-63$ and $-9$."
   answer="7"
+  answerForm="decimal"
+  answerDisplay="$-63\div(-9)=7$"
   hint="Quotient means divide the first number by the second."
 >}}
 
@@ -434,15 +455,17 @@ $11 - (-9)$. Simplify: $20$. The difference in temperatures was $20$
 degrees.
 
 {{< fillin
-  question="In the morning, the temperature in Anchorage, Alaska was 15 degrees. By mid-afternoon the temperature had dropped to 30 degrees below zero. What was the difference in the morning and afternoon temperatures?"
+  question="In the morning, the temperature in Anchorage, Alaska was 15 degrees. By mid-afternoon the temperature had dropped to 30 degrees below zero. What was the difference in the morning and afternoon temperatures, in degrees?"
   answer="45"
-  hint="Write the phrase as the difference of $15$ and $-30$, then translate and simplify."
+  answerForm="decimal"
+  hint="A temperature below zero is a negative number. Write a phrase for the difference of the morning and afternoon temperatures, translate it, and simplify."
 >}}
 
 {{< fillin
-  question="The temperature in Denver was -6 degrees at lunchtime. By sunset the temperature had dropped to -15 degrees. What was the difference in the lunchtime and sunset temperatures?"
+  question="The temperature in Denver was $-6$ degrees at lunchtime. By sunset the temperature had dropped to $-15$ degrees. What was the difference in the lunchtime and sunset temperatures, in degrees?"
   answer="9"
-  hint="Write the phrase as the difference of $-6$ and $-15$, then translate and simplify."
+  answerForm="decimal"
+  hint="Write a phrase for the difference of the lunchtime and sunset temperatures, in that order, translate it, and simplify."
 >}}
 
 **Example.** The Mustangs football team received three penalties in the
@@ -457,13 +480,15 @@ yards.
 {{< fillin
   question="The Bears played poorly and had seven penalties in the game. Each penalty resulted in a loss of 15 yards. What is the number of yards lost due to penalties?"
   answer="105"
-  hint="Translate 'seven times a $15$-yard penalty' to an expression and simplify."
+  answerForm="decimal"
+  hint="Write a phrase for the total loss (the number of penalties times the yards lost per penalty), translate it, and simplify. Then answer with the number of yards lost."
 >}}
 
 {{< fillin
-  question="Bill uses the ATM on campus because it is convenient. However, each time he uses it he is charged a \$2 fee. Last month he used the ATM eight times. How much was his total fee for using the ATM?"
+  question="Bill uses the ATM on campus because it is convenient. However, each time he uses it he is charged a \$2 fee. Last month he used the ATM eight times. How much was his total fee for using the ATM, in dollars?"
   answer="16"
-  hint="Translate 'eight times a \$2 fee' to an expression and simplify."
+  answerForm="decimal"
+  hint="Write a phrase for the total fee (the number of uses times the fee per use), translate it, and simplify."
 >}}
 
 ## Key terms
@@ -483,7 +508,7 @@ and subtraction left to right (Please Excuse My Dear Aunt Sally).
   question="Multiply: $-4 \cdot 8$"
   answer="-32"
   answerForm="decimal"
-  hint="The signs are different, so the product is negative."
+  hint="Multiply the absolute values, then decide the sign: same signs give a positive product, different signs a negative one."
 >}}
 
 {{< fillin
@@ -499,14 +524,14 @@ and subtraction left to right (Please Excuse My Dear Aunt Sally).
   question="Divide: $-24 \div 6$"
   answer="-4"
   answerForm="decimal"
-  hint="The signs are different, so the quotient is negative."
+  hint="Divide the absolute values, then decide the sign: same signs give a positive quotient, different signs a negative one."
 >}}
 
 {{< fillin
   question="Divide: $-52 \div (-4)$"
   answer="13"
   answerForm="decimal"
-  hint="The signs are the same, so the quotient is positive."
+  hint="Divide the absolute values, then decide the sign: same signs give a positive quotient, different signs a negative one."
 >}}
 
 ### Simplify expressions with integers
@@ -535,6 +560,7 @@ and subtraction left to right (Please Excuse My Dear Aunt Sally).
 {{< fillin
   question="Simplify: $9 - 2[3 - 8(-2)]$"
   answer="-29"
+  answerForm="decimal"
   hint="Work inside the brackets first — multiply, then subtract — before applying the outer subtraction."
 >}}
 
@@ -543,24 +569,28 @@ and subtraction left to right (Please Excuse My Dear Aunt Sally).
 {{< fillin
   question="Evaluate $a + 3$ when $a = -7$"
   answer="-4"
+  answerForm="decimal"
   hint="Substitute $-7$ for $a$, then add."
 >}}
 
 {{< fillin
   question="Evaluate $-a + 3$ when $a = -7$"
   answer="10"
-  hint="Substitute $-7$ for $a$. The opposite of $-7$ is $7$, then add $3$."
+  answerForm="decimal"
+  hint="Substitute $-7$ for $a$; $-a$ means the opposite of $a$. Then add."
 >}}
 
 {{< fillin
   question="Evaluate $m + n$ when $m = -15$ and $n = 7$"
   answer="-8"
+  answerForm="decimal"
   hint="Substitute the given values for $m$ and $n$, then add."
 >}}
 
 {{< fillin
   question="Evaluate $2w^2 - 3w + 7$ when $w = -2$"
   answer="21"
+  answerForm="decimal"
   hint="Substitute $-2$ for $w$, evaluate the exponent first, then multiply, then add."
 >}}
 
@@ -569,35 +599,42 @@ and subtraction left to right (Please Excuse My Dear Aunt Sally).
 {{< fillin
   question="Translate and simplify: the sum of $3$ and $-15$, increased by $7$"
   answer="-5"
-  hint="Add $3$ and $-15$ first, then add $7$ to that result."
+  answerForm="decimal"
+  answerDisplay="$(3+(-15))+7=-5$"
+  hint="'The sum of $a$ and $b$' is $a+b$; 'increased by' adds to that whole sum. Group the sum, then simplify inside the grouping first."
 >}}
 
 {{< fillin
   question="Translate and simplify: the difference of $-5$ and $-30$"
   answer="25"
-  hint="The difference of $a$ and $b$ translates to $a$ minus $b$: $-5 - (-30)$."
+  answerForm="decimal"
+  answerDisplay="$-5-(-30)=25$"
+  hint="'The difference of $a$ and $b$' translates to $a-b$, in the order named. Subtracting a negative is adding its opposite."
 >}}
 
 ### Use integers in applications
 
 {{< fillin
-  question="On January 15, the high temperature in Anaheim, California was 84 degrees. That same day, the high temperature in Embarrass, Minnesota was 12 degrees below zero. What was the difference between the two temperatures?"
+  question="On January 15, the high temperature in Anaheim, California, was $84^\circ$. That same day, the high temperature in Embarrass, Minnesota was $-12^\circ$. What was the difference between the temperature in Anaheim and the temperature in Embarrass, in degrees?"
   answer="96"
-  hint="Write the phrase as the difference of $84$ and $-12$, then translate and simplify."
+  answerForm="decimal"
+  hint="Write a phrase for the difference of the two temperatures, in the order the question names them, translate it, and simplify."
 >}}
 
 {{< fillin
-  question="On first down, the Chargers had the ball on their 25-yard line. They lost 6 yards on the first-down play, gained 10 yards on the second-down play, and lost 8 yards on the third-down play. What was the yard line at the end of the third-down play?"
+  question="On the first down, the Chargers had the ball on their 25-yard line. They lost 6 yards on the first-down play, gained 10 yards on the second-down play, and lost 8 yards on the third-down play. What was the yard line at the end of the third-down play?"
   answer="21"
+  answerForm="decimal"
   hint="Start at the 25-yard line and add or subtract each play's yardage in order."
 >}}
 
 {{< fillin
-  question="Diontre has a balance of negative \$38 in his checking account. He deposits \$225 to the account. What is the new balance?"
+  question="Diontre has a balance of negative \$38 in his checking account. He deposits \$225 to the account. What is the new balance, in dollars?"
   answer="187"
+  answerForm="decimal"
   hint="Add the deposit to the starting balance."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.4: Multiply and Divide Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-4-multiply-and-divide-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the colored-counter multiplication model as narrated prose instead of a hotlinked figure; omitted the Be Prepared callout and the Self Check checklist; adapted selected Section 1.4 Exercises ("Practice Makes Perfect") into the section-final interactive Practice block and omitted the remaining Section 1.4 Exercises (Everyday Math, Writing Exercises); and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.4: Multiply and Divide Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-4-multiply-and-divide-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the colored-counter multiplication model as narrated prose instead of a hotlinked figure; omitted the Be Prepared callout, the Key Concepts summary, and the Self Check checklist; adapted selected Section 1.4 Exercises ("Practice Makes Perfect") into the section-final interactive Practice block and omitted the remaining Section 1.4 Exercises (Everyday Math, Writing Exercises); converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, one part per question (not every part carried); and named the unit to enter in the application questions.</small>

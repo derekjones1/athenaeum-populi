@@ -33,7 +33,7 @@ the pattern continues endlessly.
 We can visualize counting numbers and whole numbers on a **number line**,
 which gets larger from left to right and smaller from right to left:
 
-<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 6, marked at every whole number. An arrow labeled smaller points left from around 2; an arrow labeled larger points right from around 4." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 6, marked at every whole number. Above it, an arrow labeled smaller runs left from 3 toward 0, and an arrow labeled larger runs right from just past 3 to 6." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <text x="140" y="16" text-anchor="middle" font-size="14" fill="currentColor">smaller</text>
   <line x1="270" y1="20" x2="60" y2="20" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowLeft)" />
   <text x="440" y="16" text-anchor="middle" font-size="14" fill="currentColor">larger</text>
@@ -80,13 +80,18 @@ into groups of three, which are called *periods*. The periods are *ones,
 thousands, millions, billions, trillions*, and so on. In a written number,
 commas separate the periods.
 
-The table below shows the place values for the number $5{,}278{,}194$:
+Each period has a hundreds, a tens, and a ones place: in the thousands
+period these are the hundred-thousands, ten-thousands, and thousands places.
+The table below shows the place values for the number $5{,}278{,}194$, one
+period to a row:
 
-| Period | Trillions | Billions | Millions | Thousands | Ones |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Hundred | | | | | |
-| Ten | | | | | |
-| Digit | | | $5$ | $278$ | $194$ |
+| Period | Hundreds | Tens | Ones |
+| :--- | :---: | :---: | :---: |
+| Trillions | | | |
+| Billions | | | |
+| Millions | | | $5$ |
+| Thousands | $2$ | $7$ | $8$ |
+| Ones | $1$ | $9$ | $4$ |
 
 The digit $5$ is in the millions place. The digit $2$ is in the
 hundred-thousands place. The digit $7$ is in the ten-thousands place. The
@@ -98,20 +103,35 @@ digit: (a) $7$ (b) $0$ (c) $1$ (d) $6$ (e) $3$
 
 Placing the number in the place value chart:
 
-| Millions | Hundred-thousands | Ten-thousands | Thousands | Hundreds | Tens | Ones |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $63$ | $4$ | $0$ | $7$ | $2$ | $1$ | $8$ |
+| Ten-millions | Millions | Hundred-thousands | Ten-thousands | Thousands | Hundreds | Tens | Ones |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $6$ | $3$ | $4$ | $0$ | $7$ | $2$ | $1$ | $8$ |
 
 (a) The $7$ is in the thousands place. (b) The $0$ is in the
 ten-thousands place. (c) The $1$ is in the tens place. (d) The $6$ is in the
 ten-millions place. (e) The $3$ is in the millions place.
 
-{{< fillin
-  question="In the number 27,493,615, the digit $9$ sits in the ten-thousands place. What value does that digit contribute to the number (the digit times its place value)?"
-  answer="90000"
-  answerDisplay="90,000"
-  hint="Line the digits up in periods of three from the right: 27,493,615 → 27 | 493 | 615. Multiply the digit by the place value it occupies."
+{{< multiplechoice
+  question="In the number $27{,}493{,}615$, what is the place value of the digit $4$?"
+  answer="hundred thousands"
+  hint="Write the number in a place value chart, filling the places from the ones place on the right, and read off the column the digit lands in."
 >}}
+ten thousands
+hundred thousands
+millions
+thousands
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In the number $27{,}493{,}615$, what is the place value of the digit $7$?"
+  answer="millions"
+  hint="Split the number into periods of three digits from the right, then find which period the digit sits in and which place it holds within that period."
+>}}
+ten millions
+hundred thousands
+millions
+billions
+{{< /multiplechoice >}}
 
 When you write a check, you write out the number in words as well as in
 digits. To write a number in words, write the number in each period,
@@ -223,6 +243,7 @@ zeros, $103{,}978$ rounded to the nearest ten thousand is $100{,}000$.
 {{< fillin
   question="Round 206,981 to the nearest ten thousand."
   answer="210000"
+  answerForm="decimal"
   answerDisplay="210,000"
   hint="Locate the ten-thousands place, then look at the digit just to its right to decide whether to round up or leave it."
 >}}
@@ -230,6 +251,7 @@ zeros, $103{,}978$ rounded to the nearest ten thousand is $100{,}000$.
 {{< fillin
   question="Round 784,951 to the nearest thousand."
   answer="785000"
+  answerForm="decimal"
   answerDisplay="785,000"
   hint="Locate the thousands place, then look at the digit just to its right to decide whether to round up or leave it."
 >}}
@@ -243,18 +265,28 @@ x$, and $y$.
 The numbers $2, 4, 6, 8, 10$, and $12$ are called **multiples** of $2$. A
 multiple of $2$ can be written as the product of $2$ and a counting number:
 
-$$2, \quad 4, \quad 6, \quad 8, \quad 10, \quad 12, \dots$$
-
-$$2 \cdot 1, \quad 2 \cdot 2, \quad 2 \cdot 3, \quad 2 \cdot 4, \quad 2 \cdot 5, \quad 2 \cdot 6$$
+$$\begin{array}{cccccc} 2, & 4, & 6, & 8, & 10, & 12, \dots \\[4pt] 2 \cdot 1, & 2 \cdot 2, & 2 \cdot 3, & 2 \cdot 4, & 2 \cdot 5, & 2 \cdot 6 \end{array}$$
 
 Similarly, a multiple of $3$ would be the product of a counting number and
 $3$:
 
-$$3, \quad 6, \quad 9, \quad 12, \quad 15, \quad 18, \dots$$
+$$\begin{array}{cccccc} 3, & 6, & 9, & 12, & 15, & 18, \dots \\[4pt] 3 \cdot 1, & 3 \cdot 2, & 3 \cdot 3, & 3 \cdot 4, & 3 \cdot 5, & 3 \cdot 6 \end{array}$$
 
-$$3 \cdot 1, \quad 3 \cdot 2, \quad 3 \cdot 3, \quad 3 \cdot 4, \quad 3 \cdot 5, \quad 3 \cdot 6$$
+We could find the multiples of any number by continuing this process. The
+table below shows the multiples of $2$ through $10$ for the first $12$
+counting numbers.
 
-We could find the multiples of any number by continuing this process.
+| Counting number | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ | $9$ | $10$ | $11$ | $12$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Multiples of $2$** | $2$ | $4$ | $6$ | $8$ | $10$ | $12$ | $14$ | $16$ | $18$ | $20$ | $22$ | $24$ |
+| **Multiples of $3$** | $3$ | $6$ | $9$ | $12$ | $15$ | $18$ | $21$ | $24$ | $27$ | $30$ | $33$ | $36$ |
+| **Multiples of $4$** | $4$ | $8$ | $12$ | $16$ | $20$ | $24$ | $28$ | $32$ | $36$ | $40$ | $44$ | $48$ |
+| **Multiples of $5$** | $5$ | $10$ | $15$ | $20$ | $25$ | $30$ | $35$ | $40$ | $45$ | $50$ | $55$ | $60$ |
+| **Multiples of $6$** | $6$ | $12$ | $18$ | $24$ | $30$ | $36$ | $42$ | $48$ | $54$ | $60$ | $66$ | $72$ |
+| **Multiples of $7$** | $7$ | $14$ | $21$ | $28$ | $35$ | $42$ | $49$ | $56$ | $63$ | $70$ | $77$ | $84$ |
+| **Multiples of $8$** | $8$ | $16$ | $24$ | $32$ | $40$ | $48$ | $56$ | $64$ | $72$ | $80$ | $88$ | $96$ |
+| **Multiples of $9$** | $9$ | $18$ | $27$ | $36$ | $45$ | $54$ | $63$ | $72$ | $81$ | $90$ | $99$ | $108$ |
+| **Multiples of $10$** | $10$ | $20$ | $30$ | $40$ | $50$ | $60$ | $70$ | $80$ | $90$ | $100$ | $110$ | $120$ |
 
 {{< callout type="info" >}}
   **Multiple of a number.** A number is a **multiple** of $n$ if it is the
@@ -270,9 +302,10 @@ counting number. In fact, $15 \div 3$ is $5$, so $15$ is $5 \cdot 3$.
   is **divisible** by $n$.
 {{< /callout >}}
 
-Look at the multiples of $5$: they all end in $5$ or $0$. Numbers with a
-last digit of $5$ or $0$ are divisible by $5$. Looking for other patterns in
-the multiples of the numbers $2$ through $9$, we can discover the following
+Look at the multiples of $5$ in the table: they all end in $5$ or $0$.
+Numbers with a last digit of $5$ or $0$ are divisible by $5$. Looking for
+other patterns in the table's multiples of the numbers $2$ through $10$, we
+can discover the following
 divisibility tests:
 
 {{< callout type="info" >}}
@@ -299,17 +332,27 @@ is divisible by $5$ but not by $10$.
 Is $5{,}625$ divisible by $6$? It is not divisible by both $2$ and $3$
 (it fails $2$), so $5{,}625$ is not divisible by $6$.
 
-{{< fillin
-  question="4,962 passes the divisibility test for $2$ and the divisibility test for $3$. What is the smallest whole number, other than $1$, that 4,962 is guaranteed to be divisible by as a result of passing both tests?"
-  answer="6"
-  hint="A number that is divisible by both $2$ and $3$ is always divisible by their product, $6$."
+{{< multiplechoice
+  question="Determine whether $4{,}962$ is divisible by $2$, by $3$, by $5$, by $6$, and by $10$. Which choice lists every one of these numbers that $4{,}962$ is divisible by?"
+  answer="divisible by 2, 3, and 6"
+  hint="Apply each test in turn: the last digit settles $2$, $5$, and $10$; the sum of the digits settles $3$; and $6$ needs both $2$ and $3$."
 >}}
+divisible by 2 only
+divisible by 2 and 3
+divisible by 2, 3, and 6
+divisible by 2, 3, 6, and 10
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="3,765 is divisible by $5$ but not by $2$. Divide 3,765 by $5$ to find the counting number that makes $5$ a factor of 3,765."
-  answer="753"
-  hint="A number is divisible by $5$ when its last digit is $5$ or $0$. Since 3,765 passes that test, dividing by $5$ gives a whole number."
+{{< multiplechoice
+  question="Determine whether $3{,}765$ is divisible by $2$, by $3$, by $5$, by $6$, and by $10$. Which choice lists every one of these numbers that $3{,}765$ is divisible by?"
+  answer="divisible by 3 and 5"
+  hint="Apply each test in turn: the last digit settles $2$, $5$, and $10$; the sum of the digits settles $3$; and $6$ needs both $2$ and $3$."
 >}}
+divisible by 5 only
+divisible by 3 and 5
+divisible by 3, 5, and 6
+divisible by 5 and 10
+{{< /multiplechoice >}}
 
 ## Find prime factorizations and least common multiples
 
@@ -440,18 +483,18 @@ If we first factored $48$ in a different way — for example, as $6 \cdot
 8$ — the result would still be the same.
 
 {{< fillin
-  question="Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
-  answer="2^4 \cdot 5"
+  question="Find the prime factorization of $80$ using the factor tree method. Enter it as a product of primes, such as $2 \cdot 2 \cdot 11$."
+  answer="2 \cdot 2 \cdot 2 \cdot 2 \cdot 5"
   answerForm="prime-product"
-  answerDisplay="$2^4 \cdot 5$"
+  answerDisplay="$2 \cdot 2 \cdot 2 \cdot 2 \cdot 5$"
   hint="Start with a factor pair like $8$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
 
 {{< fillin
-  question="Find the prime factorization of 60 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
-  answer="2^2 \cdot 3 \cdot 5"
+  question="Find the prime factorization of $60$ using the factor tree method. Enter it as a product of primes, such as $2 \cdot 2 \cdot 11$."
+  answer="2 \cdot 2 \cdot 3 \cdot 5"
   answerForm="prime-product"
-  answerDisplay="$2^2 \cdot 3 \cdot 5$"
+  answerDisplay="$2 \cdot 2 \cdot 3 \cdot 5$"
   hint="Try the factor pair $6$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
 
@@ -491,19 +534,19 @@ Writing $252$ as the product of all the circled primes:
 $$252 = 2 \cdot 2 \cdot 3 \cdot 3 \cdot 7$$
 
 {{< fillin
-  question="Find the prime factorization of 126. Enter the answer in exponential form, e.g. $2^2 \cdot 3$."
-  answer="2 \cdot 3^2 \cdot 7"
+  question="Find the prime factorization of $126$. Enter it as a product of primes, such as $2 \cdot 2 \cdot 11$."
+  answer="2 \cdot 3 \cdot 3 \cdot 7"
   answerForm="prime-product"
-  answerDisplay="$2 \cdot 3^2 \cdot 7$"
-  hint="Try the factor pair $2$ and $63$, then keep factoring the composite branch ($63 = 9 \times 7$) until every branch ends in a prime."
+  answerDisplay="$2 \cdot 3 \cdot 3 \cdot 7$"
+  hint="$126$ is even, so start with the factor pair $2$ and $63$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
 
 {{< fillin
-  question="Find the prime factorization of 294. Enter the answer in exponential form, e.g. $2 \cdot 3^2$."
-  answer="2 \cdot 3 \cdot 7^2"
+  question="Find the prime factorization of $294$. Enter it as a product of primes, such as $2 \cdot 2 \cdot 11$."
+  answer="2 \cdot 3 \cdot 7 \cdot 7"
   answerForm="prime-product"
-  answerDisplay="$2 \cdot 3 \cdot 7^2$"
-  hint="294 is even, so start by dividing off a factor of $2$. The remaining factor is $147 = 3 \times 49$."
+  answerDisplay="$2 \cdot 3 \cdot 7 \cdot 7$"
+  hint="$294$ is even, so start with the factor pair $2$ and $147$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
 
 One of the reasons we look at multiples and primes is to use these
@@ -555,12 +598,14 @@ not the *least* common multiple.
 {{< fillin
   question="Find the LCM of $9$ and $12$ by listing multiples."
   answer="36"
+  answerForm="decimal"
   hint="List multiples of $9$ and of $12$ until a number appears in both lists."
 >}}
 
 {{< fillin
   question="Find the LCM of $18$ and $24$ by listing multiples."
   answer="72"
+  answerForm="decimal"
   hint="List multiples of $18$ and of $24$ until the smallest common one appears."
 >}}
 
@@ -614,13 +659,15 @@ Multiplying the factors: $\text{LCM}(24, 36) = 2 \cdot 2 \cdot 2 \cdot 3
 {{< fillin
   question="Find the LCM of $21$ and $28$ using the prime factors method."
   answer="84"
-  hint="$21 = 3 \cdot 7$ and $28 = 2 \cdot 2 \cdot 7$. Match the common $7$ in one column, then bring down every column."
+  answerForm="decimal"
+  hint="Write each number as a product of primes, line up any prime they share in one column, then bring down every column and multiply."
 >}}
 
 {{< fillin
   question="Find the LCM of $24$ and $32$ using the prime factors method."
   answer="96"
-  hint="$24 = 2 \cdot 2 \cdot 2 \cdot 3$ and $32 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$. Match as many common factors of $2$ as both numbers share, then bring down every column."
+  answerForm="decimal"
+  hint="Write each number as a product of primes and match as many factors of $2$ as the two numbers share, one column each; then bring down every column and multiply."
 >}}
 
 ## Key terms
@@ -628,8 +675,8 @@ Multiplying the factors: $\text{LCM}(24, 36) = 2 \cdot 2 \cdot 2 \cdot 3
 **counting numbers** — the numbers $1, 2, 3, \dots$, also called natural
 numbers. **whole numbers** — the counting numbers together with $0$.
 **rounding** — approximating a number to a specific place value.
-**multiple of a number** — a number that is the product of a counting
-number and $n$. **divisible** — $m$ is divisible by $n$ if $m$ is a
+**multiple of a number** — a number is a multiple of $n$ if it is the
+product of a counting number and $n$. **divisible** — $m$ is divisible by $n$ if $m$ is a
 multiple of $n$. **factors** — numbers whose product is a given number.
 **prime number** — a counting number greater than $1$ whose only factors
 are $1$ and itself. **composite number** — a counting number that is not
@@ -663,9 +710,9 @@ ten thousand, seventy-eight
 ### Identify multiples and apply divisibility tests
 
 {{< multiplechoice
-  question="Apply the divisibility tests to $84$. Which of these is $84$ divisible by?"
+  question="Use the divisibility tests to determine whether $84$ is divisible by $2$, $3$, $5$, $6$, and $10$. Which choice lists every one of these numbers that $84$ is divisible by?"
   answer="divisible by 2, 3, and 6"
-  hint="Check the last digit for the test for $2$, add the digits for the test for $3$, and remember that passing both means it also passes the test for $6$."
+  hint="Apply each test in turn: the last digit settles $2$, $5$, and $10$; the sum of the digits settles $3$; and $6$ needs both $2$ and $3$."
 >}}
 divisible by 3 and 6
 divisible by 2 and 3
@@ -674,9 +721,9 @@ divisible by 2, 3, 5, and 6
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Apply the divisibility tests to $22{,}335$. Which of these is $22{,}335$ divisible by?"
+  question="Use the divisibility tests to determine whether $22{,}335$ is divisible by $2$, $3$, $5$, $6$, and $10$. Which choice lists every one of these numbers that $22{,}335$ is divisible by?"
   answer="divisible by 3 and 5"
-  hint="The last digit settles the tests for $2$, $5$, and $10$ right away; add the digits separately to check the test for $3$."
+  hint="Apply each test in turn: the last digit settles $2$, $5$, and $10$; the sum of the digits settles $3$; and $6$ needs both $2$ and $3$."
 >}}
 divisible by 3 and 5
 divisible by 5 only
@@ -697,15 +744,17 @@ divisible by 2, 3, and 5
 {{< fillin
   question="Find the LCM of $12$ and $16$ by listing multiples."
   answer="48"
+  answerForm="decimal"
   hint="List multiples of $12$ and of $16$ until the smallest common one appears."
 >}}
 
 {{< fillin
   question="Find the LCM of $55$ and $88$ using the prime factors method."
   answer="440"
-  hint="$55 = 5 \cdot 11$ and $88 = 2 \cdot 2 \cdot 2 \cdot 11$. Match the common $11$ in one column, then bring down every column."
+  answerForm="decimal"
+  hint="Write each number as a product of primes, line up any prime they share in one column, then bring down every column and multiply."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart, factor-tree diagrams, and prime-factor column alignments as tables and accessible inline graphics; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number line, place-value charts, table of multiples, factor-tree diagrams, and prime-factor column alignments as tables and accessible inline graphics, and the step-by-step solution tables as prose; listed $24$ among the factors of $72$, which the source's list omits; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check checklist; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, asking two parts of the place-value Try It and one part of each three-part rounding Try It; and adapted selected end-of-section exercises into an interactive Practice block.</small>

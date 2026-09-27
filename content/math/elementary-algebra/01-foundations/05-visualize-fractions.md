@@ -97,9 +97,9 @@ How can we use mathematics to change $\tfrac{1}{2}$ into $\tfrac{4}{8}$? How
 could we take a pizza that is cut into $2$ pieces and cut it into $8$ pieces?
 We could cut each of the $2$ larger pieces into $4$ smaller pieces! The whole
 pizza would then be cut into $8$ pieces instead of just $2$. Mathematically,
-what we've described could be written as $\tfrac{1 \cdot 4}{2 \cdot 4} = \tfrac{4}{8}$
-— cutting each half of a circle into $4$ pieces gives a circle cut into $8$
-pieces, so $\tfrac{1 \cdot 4}{2 \cdot 4} = \tfrac{4}{8}$.
+what we've described could be written as $\tfrac{1 \cdot 4}{2 \cdot 4} = \tfrac{4}{8}$:
+cutting each half of the pizza into $4$ pieces gives a pizza cut into $8$
+pieces.
 
 This model leads to the following property.
 
@@ -221,7 +221,7 @@ the common factors $5$ and $7$: $-\tfrac{2 \cdot 3}{11}$.
   question="Simplify: $-\tfrac{69}{120}$."
   answer="-\frac{23}{40}"
   answerForm="lowest-terms"
-  hint="Factor $69$ and $120$ into primes ($69 = 3 \cdot 23$), then divide out any common factor."
+  hint="Factor the numerator and the denominator into primes, then divide out every common factor."
 >}}
 
 {{< fillin
@@ -249,17 +249,17 @@ Rewrite showing the common factors, then divide out the common factors:
 $\tfrac{5 \cdot x}{5 \cdot y} = \tfrac{x}{y}$. Simplify: $\tfrac{x}{y}$.
 
 {{< fillin
-  question="Simplify: $\tfrac{7x}{7y}$. Use $x$ and $y$ in your answer."
-  answer="\frac{x}{y}"
+  question="Simplify: $-\tfrac{3x}{12y}$. Use $x$ and $y$ in your answer."
+  answer="-\frac{x}{4y}"
   answerForm="single-fraction"
-  hint="The factor $7$ appears in both the numerator and denominator — divide it out."
+  hint="Rewrite the numerator and denominator to show their common factor, then divide it out."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{3a}{3b}$. Use $a$ and $b$ in your answer."
   answer="\frac{a}{b}"
   answerForm="single-fraction"
-  hint="The factor $3$ appears in both the numerator and denominator — divide it out."
+  hint="Rewrite the numerator and denominator to show their common factor, then divide it out."
 >}}
 
 ## Multiply fractions
@@ -267,9 +267,9 @@ $\tfrac{5 \cdot x}{5 \cdot y} = \tfrac{x}{y}$. Simplify: $\tfrac{x}{y}$.
 Many people find multiplying and dividing fractions easier than adding and
 subtracting fractions. Consider a model of $\tfrac{3}{4}$: a rectangle
 divided into $4$ equal columns with $3$ of them shaded. Now take $\tfrac{1}{2}$
-of $\tfrac{3}{4}$: shading half of each of those $3$ shaded columns leaves
-the whole divided into $8$ equal parts, with $3$ of the $8$ shaded. Notice
-that now the whole is divided into $8$ equal parts. So
+of $\tfrac{3}{4}$: cut every column in half across the rectangle and mark
+the lower half of each of the $3$ shaded columns. Notice that now the whole
+is divided into $8$ equal parts, and $3$ of the $8$ are marked. So
 $\tfrac{1}{2} \cdot \tfrac{3}{4} = \tfrac{3}{8}$.
 
 To multiply fractions, we multiply the numerators and multiply the
@@ -301,14 +301,14 @@ simplified.
   question="Multiply: $-\tfrac{10}{28} \cdot \tfrac{8}{15}$."
   answer="-\frac{4}{21}"
   answerForm="fraction lowest-terms"
-  hint="Determine the sign first (different signs give a negative product), then multiply numerators and denominators and simplify."
+  hint="Determine the sign of the product first, then multiply the numerators and the denominators and simplify."
 >}}
 
 {{< fillin
   question="Multiply: $-\tfrac{9}{20} \cdot \tfrac{5}{12}$."
   answer="-\frac{3}{16}"
   answerForm="fraction lowest-terms"
-  hint="Determine the sign first (different signs give a negative product), then multiply numerators and denominators and simplify."
+  hint="Determine the sign of the product first, then multiply the numerators and the denominators and simplify."
 >}}
 
 When multiplying a fraction by an integer, it may be helpful to write the
@@ -318,7 +318,7 @@ So, for example, $3 = \tfrac{3}{1}$.
 **Example.** Multiply: $-\tfrac{12}{5}(-20x)$.
 
 Determine the sign of the product — the signs are the same, so the product
-is positive. Write $-20x$ as a fraction: $\tfrac{12}{5}\left(\tfrac{20x}{1}\right)$.
+is positive. Write $20x$ as a fraction: $\tfrac{12}{5}\left(\tfrac{20x}{1}\right)$.
 Multiply, rewrite $20$ to show the common factor $5$, and divide it out:
 $\tfrac{12 \cdot 4 \cdot 5x}{5 \cdot 1}$. Simplify: $48x$.
 
@@ -326,14 +326,14 @@ $\tfrac{12 \cdot 4 \cdot 5x}{5 \cdot 1}$. Simplify: $48x$.
   question="Multiply: $\tfrac{11}{3}(-9a)$. Use $a$ in your answer."
   answer="-33a"
   answerForm="single-term"
-  hint="Write $-9a$ as a fraction over $1$, multiply, then divide out the common factor of $3$."
+  hint="Write $-9a$ as a fraction over $1$, multiply, then divide out the common factor."
 >}}
 
 {{< fillin
   question="Multiply: $\tfrac{13}{7}(-14b)$. Use $b$ in your answer."
   answer="-26b"
   answerForm="single-term"
-  hint="Write $-14b$ as a fraction over $1$, multiply, then divide out the common factor of $7$."
+  hint="Write $-14b$ as a fraction over $1$, multiply, then divide out the common factor."
 >}}
 
 ## Divide fractions
@@ -407,14 +407,14 @@ Remove common factors: $\tfrac{3}{2 \cdot 2}$. Simplify: $\tfrac{3}{4}$.
   question="Find the quotient: $-\tfrac{7}{27} \div \left(-\tfrac{35}{36}\right)$."
   answer="\frac{4}{15}"
   answerForm="fraction lowest-terms"
-  hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
+  hint="Determine the sign of the quotient, then multiply the first fraction by the reciprocal of the second and simplify."
 >}}
 
 {{< fillin
   question="Find the quotient: $-\tfrac{5}{14} \div \left(-\tfrac{15}{28}\right)$."
   answer="\frac{2}{3}"
   answerForm="fraction lowest-terms"
-  hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
+  hint="Determine the sign of the quotient, then multiply the first fraction by the reciprocal of the second and simplify."
 >}}
 
 There are several ways to remember which steps to take to multiply or divide
@@ -462,12 +462,14 @@ factors and simplify: $\tfrac{6}{5}$.
 {{< fillin
   question="Simplify the complex fraction: $\tfrac{2}{3}$ over $\tfrac{5}{6}$."
   answer="\frac{4}{5}"
+  answerForm="fraction lowest-terms"
   hint="Rewrite the complex fraction as division, multiply by the reciprocal of the bottom fraction, then simplify."
 >}}
 
 {{< fillin
   question="Simplify the complex fraction: $\tfrac{3}{7}$ over $\tfrac{6}{11}$."
   answer="\frac{11}{14}"
+  answerForm="fraction lowest-terms"
   hint="Rewrite the complex fraction as division, multiply by the reciprocal of the bottom fraction, then simplify."
 >}}
 
@@ -484,13 +486,15 @@ common factors and simplify: $\tfrac{3}{y}$.
 {{< fillin
   question="Simplify the complex fraction: $\tfrac{a}{8}$ over $\tfrac{ab}{6}$. Use $a$ and $b$ in your answer."
   answer="\frac{3}{4b}"
-  hint="Rewrite as division and multiply by the reciprocal, then divide out the common factor of $a$."
+  answerForm="single-fraction"
+  hint="Rewrite as division and multiply by the reciprocal, then divide out the common factors."
 >}}
 
 {{< fillin
   question="Simplify the complex fraction: $\tfrac{p}{2}$ over $\tfrac{pq}{8}$. Use $p$ and $q$ in your answer."
   answer="\frac{4}{q}"
-  hint="Rewrite as division and multiply by the reciprocal, then divide out the common factor of $p$."
+  answerForm="single-fraction"
+  hint="Rewrite as division and multiply by the reciprocal, then divide out the common factors."
 >}}
 
 ## Simplify expressions with a fraction bar
@@ -598,13 +602,13 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Translate to an algebraic expression: the quotient of the difference of $a$ and $b$, and $cd$. Use $a$, $b$, $c$, and $d$ in your answer."
   answer="\frac{a-b}{cd}"
-  hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the difference of $a$ and $b$, and $Y$ is the product $cd$."
+  hint="The quotient of $X$ and $Y$ is $X$ divided by $Y$: find the two quantities the phrase names, then write the first over the second."
 >}}
 
 {{< fillin
   question="Translate to an algebraic expression: the quotient of the sum of $p$ and $q$, and $r$. Use $p$, $q$, and $r$ in your answer."
   answer="\frac{p+q}{r}"
-  hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the sum of $p$ and $q$, and $Y$ is $r$."
+  hint="The quotient of $X$ and $Y$ is $X$ divided by $Y$: find the two quantities the phrase names, then write the first over the second."
 >}}
 
 ## Key terms
@@ -626,6 +630,7 @@ numerator from the denominator, which acts as a grouping symbol.
 {{< fillin
   question="Write the fraction equivalent to $\tfrac{3}{8}$ whose denominator is $16$. Enter its numerator."
   answer="6"
+  answerForm="decimal"
   answerDisplay="$\tfrac{6}{16}$"
   hint="Ask what $8$ was multiplied by to reach $16$, then multiply the numerator by that same number."
 >}}
@@ -633,6 +638,7 @@ numerator from the denominator, which acts as a grouping symbol.
 {{< fillin
   question="Write the fraction equivalent to $\tfrac{5}{9}$ whose denominator is $18$. Enter its numerator."
   answer="10"
+  answerForm="decimal"
   answerDisplay="$\tfrac{10}{18}$"
   hint="Ask what $9$ was multiplied by to reach $18$, then multiply the numerator by that same number."
 >}}
@@ -670,7 +676,7 @@ numerator from the denominator, which acts as a grouping symbol.
   answer="\frac{1}{4}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
-  hint="The two negative factors give a positive product; multiply numerators and denominators, then simplify."
+  hint="Determine the sign of the product first, then multiply the numerators and the denominators and simplify."
 >}}
 
 ### Divide fractions
@@ -688,7 +694,7 @@ numerator from the denominator, which acts as a grouping symbol.
   answer="\frac{4}{9}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{9}$"
-  hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
+  hint="Determine the sign of the quotient, then multiply the first fraction by the reciprocal of the second and simplify."
 >}}
 
 ### Simplify expressions written with a fraction bar
@@ -715,16 +721,16 @@ numerator from the denominator, which acts as a grouping symbol.
   question="Translate to an algebraic expression: the quotient of $r$ and the sum of $s$ and $10$. Use $r$ and $s$ in your answer."
   answer="\frac{r}{s+10}"
   answerDisplay="$\tfrac{r}{s+10}$"
-  hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $Y$ is the sum $s+10$."
+  hint="The quotient of $X$ and $Y$ is $X$ divided by $Y$: find the two quantities the phrase names, then write the first over the second."
 >}}
 
 {{< fillin
   question="Translate to an algebraic expression: the quotient of the difference of $x$ and $y$, and $-3$. Use $x$ and $y$ in your answer."
   answer="\frac{x-y}{-3}"
   answerDisplay="$\tfrac{x-y}{-3}$"
-  hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the difference of $x$ and $y$, and $Y$ is $-3$."
+  hint="The quotient of $X$ and $Y$ is $X$ divided by $Y$: find the two quantities the phrase names, then write the first over the second."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.5: Visualize Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-5-visualize-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the fraction-circle figure as an accessible inline graphic and described the pizza and quarters figures in prose; omitted the Be Prepared checklist, Manipulative Mathematics callouts, and media links; adapted selected end-of-section exercises into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.5: Visualize Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-5-visualize-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the fraction-circle figure as an accessible inline graphic and described the pie, pizza, fraction-multiplication model, and quarters figures in prose; omitted the Be Prepared checklist, Manipulative Mathematics callouts, and media links; adapted selected end-of-section exercises into interactive practice; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and replaced one Try It ($\tfrac{7x}{7y}$), whose answer the worked example above it prints, with an end-of-section exercise.</small>

@@ -116,11 +116,14 @@ complete sentence.
 sign. (d) is an *equation* — two expressions are connected with an equal
 sign.
 
-{{< fillin
-  question="$y + 9 = 40$ is an equation because it has an equal sign connecting two expressions. What value of $y$ makes it true?"
-  answer="31"
-  hint="Subtract 9 from both sides."
+{{< multiplechoice
+  question="Is $5(4y - 2) - 7$ an expression or an equation?"
+  answer="expression"
+  hint="Check whether an equal sign connects two expressions."
 >}}
+equation
+expression
+{{< /multiplechoice >}}
 
 Suppose we need to multiply $2$ by itself nine times. Writing
 $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ is
@@ -198,6 +201,13 @@ Parentheses first: $18 \div 6 + 4(3)$. No exponents. Multiplication and
 division, left to right — divide first since it comes first: $3 + 4(3)$,
 then multiply: $3 + 12$. Finally add: $15$.
 
+{{< fillin
+  question="Simplify: $30 \div 5 + 10(3-2)$."
+  answer="16"
+  answerForm="decimal"
+  hint="Simplify the parentheses first, then divide and multiply left to right before adding."
+>}}
+
 **Example.** Simplify $5 + 2^3 + 3[6 - 3(4-2)]$.
 
 When there are multiple grouping symbols, simplify the innermost first and
@@ -213,13 +223,6 @@ $13 + 0 = 13$.
   answer="86"
   answerForm="decimal"
   hint="Work the innermost parentheses first ($9+3$), then the brackets, then the exponent, then add and subtract left to right."
->}}
-
-{{< fillin
-  question="Simplify: $30 \div 5 + 10(3-2)$."
-  answer="16"
-  answerForm="decimal"
-  hint="Simplify the parentheses first, then divide and multiply left to right before adding."
 >}}
 
 ## Evaluate an Expression
@@ -238,6 +241,13 @@ follow the order of operations to simplify.
 
 (b) Replace $x$ with $4$: $3^4 = 3 \cdot 3 \cdot 3 \cdot 3 = 81$.
 
+{{< fillin
+  question="Evaluate $x^3$ when $x = 6$."
+  answer="216"
+  answerForm="decimal"
+  hint="Replace $x$ with $6$, then use the definition of an exponent."
+>}}
+
 **Example.** Evaluate $2x^2 + 3x + 8$ when $x = 4$.
 
 Substitute $x = 4$: $2(4)^2 + 3(4) + 8$. Follow the order of operations —
@@ -246,13 +256,8 @@ exponent first: $2(16) + 3(4) + 8$. Multiply: $32 + 12 + 8$. Add: $52$.
 {{< fillin
   question="Evaluate $3x^2 + 4x + 1$ when $x = 3$."
   answer="40"
+  answerForm="decimal"
   hint="Substitute $x = 3$, simplify the exponent first, then multiply before adding."
->}}
-
-{{< fillin
-  question="Evaluate $x^3$ when $x = 5$."
-  answer="125"
-  hint="Substitute and multiply $x$ by itself three times."
 >}}
 
 ## Identify and Combine Like Terms
@@ -382,26 +387,26 @@ and "and" to see what's being added: $5m + n$. Notice how the parentheses
 in (a) change the meaning.
 
 {{< fillin
-  question="Translate into an algebraic expression: fourteen more than $x$."
-  answer="x + 14"
-  hint="'More than' means addition — the number is added to $x$."
+  question="Translate into an algebraic expression: eleven more than $x$."
+  answer="x + 11"
+  hint="Find the key words and the operation they name, then write the phrase in symbols."
 >}}
 
 {{< fillin
-  question="Translate into an algebraic expression: eight times the sum of $p$ and $q$."
-  answer="8(p+q)"
-  hint="Multiplying by the whole sum means the sum needs parentheses around it first."
+  question="Translate into an algebraic expression: four times the sum of $p$ and $q$."
+  answer="4(p+q)"
+  hint="Decide what the four multiplies: a single letter, or the whole sum?"
 >}}
 
 Later in this course, we'll apply algebra to solving applications, and the
 first step is translating an English phrase into an algebraic expression.
 
-**Example.** The length of a rectangle is $6$ less than the width. Let $w$
-represent the width. Write an expression for the length.
+**Example.** The width of a rectangle is $6$ less than the length. Let $l$
+represent the length. Write an expression for the width.
 
-A phrase about the length: "$6$ less than the width." Substitute $w$ for
-"the width": "$6$ less than $w$." Rewrite "less than" as "subtracted
-from": "$6$ subtracted from $w$." Translate: $w - 6$.
+A phrase about the width: "$6$ less than the length." Substitute $l$ for
+"the length": "$6$ less than $l$." Rewrite "less than" as "subtracted
+from": "$6$ subtracted from $l$." Translate: $l - 6$.
 
 **Example.** June has dimes and quarters in her purse. The number of dimes
 is three less than four times the number of quarters. Let $q$ represent
@@ -447,7 +452,7 @@ expression
 {{< multiplechoice
   question="Which sentence correctly translates $36 \ge 19$ into English?"
   answer="Thirty-six is greater than or equal to nineteen."
-  hint="The symbol $\ge$ combines 'greater than' with 'equal to.'"
+  hint="Read the symbol from left to right, and match it to its words in the inequality-symbols table."
 >}}
 Thirty-six is less than or equal to nineteen.
 Thirty-six is greater than or equal to nineteen.
@@ -471,10 +476,10 @@ Thirty-six is not equal to nineteen.
 >}}
 
 {{< fillin
-  question="Simplify: $5^3$."
-  answer="125"
+  question="Simplify: $2^8$."
+  answer="256"
   answerForm="decimal"
-  hint="Expand as $5 \cdot 5 \cdot 5$ and multiply left to right."
+  hint="Write the base as a factor as many times as the exponent says, then multiply left to right."
 >}}
 
 ### Evaluate an expression
@@ -482,12 +487,14 @@ Thirty-six is not equal to nineteen.
 {{< fillin
   question="Evaluate $7x + 8$ when $x = 2$."
   answer="22"
+  answerForm="decimal"
   hint="Substitute $x = 2$, then follow the order of operations."
 >}}
 
 {{< fillin
   question="Evaluate $(x - y)^2$ when $x = 10$ and $y = 7$."
   answer="9"
+  answerForm="decimal"
   hint="Substitute the values, simplify inside the parentheses first, then square the result."
 >}}
 
@@ -511,13 +518,13 @@ Thirty-six is not equal to nineteen.
 {{< fillin
   question="Translate into an algebraic expression: eight times the difference of $y$ and nine."
   answer="8(y-9)"
-  hint="'Difference' means subtraction; multiplying by the whole difference needs parentheses around it."
+  hint="'Difference' means subtraction. Decide what the eight multiplies: a single letter, or the whole difference?"
 >}}
 
 {{< fillin
   question="Eric has rock and classical CDs in his car. The number of rock CDs is 3 more than the number of classical CDs. Let $c$ represent the number of classical CDs. Write an expression for the number of rock CDs."
   answer="c + 3"
-  hint="'More than' means addition — add 3 to the number of classical CDs."
+  hint="Write a phrase about the number of rock CDs, substitute $c$ for the number of classical CDs, then translate the key words."
 >}}
 
 ---

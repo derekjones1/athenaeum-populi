@@ -76,7 +76,7 @@ Consider how numbers are ordered on the number line. Going from left to
 right, the numbers increase in value. Going from right to left, the numbers
 decrease in value.
 
-<svg viewBox="0 0 460 100" role="img" aria-label="A number line from -4 to 4. A red arrow labeled smaller points left below the line; a blue arrow labeled larger points right above the line, starting at -1." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 460 100" role="img" aria-label="A number line from -4 to 4. Above the line, a blue arrow labeled larger starts at -1 and points right, past 4. Below the line, a red arrow labeled smaller starts at 1 and points left, past -4." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="40" x2="440" y2="40" stroke="currentColor" stroke-width="1.5" />
   <path d="M20 40 L28 35 L28 45 Z" fill="currentColor" />
   <path d="M440 40 L432 35 L432 45 Z" fill="currentColor" />
@@ -111,9 +111,9 @@ decrease in value.
   <line x1="184" y1="20" x2="430" y2="20" stroke="#2b8fd6" stroke-width="2" />
   <path d="M430 20 L420 15 L420 25 Z" fill="#2b8fd6" />
   <text x="307" y="12" text-anchor="middle" font-size="13" fill="#2b8fd6">larger</text>
-  <line x1="184" y1="80" x2="30" y2="80" stroke="#d6522b" stroke-width="2" />
+  <line x1="276" y1="80" x2="30" y2="80" stroke="#d6522b" stroke-width="2" />
   <path d="M30 80 L40 75 L40 85 Z" fill="#d6522b" />
-  <text x="107" y="94" text-anchor="middle" font-size="13" fill="#d6522b">smaller</text>
+  <text x="153" y="94" text-anchor="middle" font-size="13" fill="#d6522b">smaller</text>
 </svg>
 
 Remember that we use the notation $a < b$ (read "$a$ is less than $b$") when
@@ -121,8 +121,12 @@ $a$ is to the left of $b$ on the number line, and $a > b$ (read "$a$ is
 greater than $b$") when $a$ is to the right of $b$ on the number line.
 
 Now we need to extend the number line to include negative numbers, too. The
-numbers marked by points on this extended line are called the **integers**.
-The integers are the numbers $\dots -3, -2, -1, 0, 1, 2, 3 \dots$
+numbers marked by points on the number line below are called the
+**integers**. The integers are the numbers $\dots -3, -2, -1, 0, 1, 2, 3 \dots$
+
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 4 with a dot on every integer: −4, −3, −2, −1, 0, 1, 2, 3, and 4.","min":-4,"max":4,"points":[{"at":-4},{"at":-3},{"at":-2},{"at":-1},{"at":0},{"at":1},{"at":2},{"at":3},{"at":4}]}
+{{< /apfigure >}}
 
 {{< callout type="info" >}}
   **Integers.** The whole numbers and their opposites are called the
@@ -144,7 +148,7 @@ It may be helpful to refer to a number line.
 
 {{< multiplechoice
   question="Order the pair using < or >:  $15 \_\_\_ 7$"
-  hint="On the number line $15$ is to the right of $7$, and numbers increase to the right."
+  hint="Locate both numbers on the number line. The number farther to the right is the greater one."
   answer="$>$"
 >}}
 $>$
@@ -153,7 +157,7 @@ $<$
 
 {{< multiplechoice
   question="Order the pair using < or >:  $-2 \_\_\_ 5$"
-  hint="Every negative number is to the left of every positive number on the number line."
+  hint="Locate both numbers on the number line. The number farther to the left is the smaller one."
   answer="$<$"
 >}}
 $>$
@@ -162,7 +166,7 @@ $<$
 
 {{< multiplechoice
   question="Order the pair using < or >:  $-3 \_\_\_ -7$"
-  hint="$-3$ sits to the right of $-7$, since it is closer to zero going in the positive direction."
+  hint="Locate both negative numbers on the number line, then compare their positions: numbers increase from left to right."
   answer="$>$"
 >}}
 $>$
@@ -179,7 +183,7 @@ numbers $2$ and $-2$ are the same distance from zero, they are called
   distance from zero on the number line, but on the opposite side of zero.
 {{< /callout >}}
 
-<svg viewBox="0 0 460 80" role="img" aria-label="A number line from -4 to 4. Two braces of equal length 3 span from 0 to -3 and from 0 to 3, illustrating that the opposite of 3 is -3." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 460 80" role="img" aria-label="A number line from -4 to 4 with dots at -3 and 3. Two arcs above the line, each labeled 3, span from -3 to 0 and from 0 to 3, illustrating that the opposite of 3 is -3." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="45" x2="440" y2="45" stroke="currentColor" stroke-width="1.5" />
   <path d="M20 45 L28 40 L28 50 Z" fill="currentColor" />
   <path d="M440 45 L432 40 L432 50 Z" fill="currentColor" />
@@ -215,6 +219,8 @@ numbers $2$ and $-2$ are the same distance from zero, they are called
   <text x="161" y="10" text-anchor="middle" font-size="13" fill="currentColor">3</text>
   <path d="M230 25 Q 299 12 368 25" stroke="currentColor" stroke-width="1.5" fill="none" />
   <text x="299" y="10" text-anchor="middle" font-size="13" fill="currentColor">3</text>
+  <circle cx="92" cy="45" r="5" fill="currentColor" />
+  <circle cx="368" cy="45" r="5" fill="currentColor" />
 </svg>
 
 Sometimes in algebra the same symbol has different meanings. Just like some
@@ -245,6 +251,7 @@ $0$. The opposite of $-10$ is $10$.
 {{< fillin
   question="Find the opposite of $-3$."
   answer="3"
+  answerForm="decimal"
   hint="The opposite of a number is the same distance from zero, but on the other side."
 >}}
 
@@ -270,13 +277,15 @@ the opposite: $-x = -(-8) = 8$.
 {{< fillin
   question="Evaluate $-n$, when $n = 4$."
   answer="-4"
+  answerForm="decimal"
   hint="Substitute $4$ for $n$, then take the opposite of the result."
 >}}
 
 {{< fillin
   question="Evaluate $-n$, when $n = -4$."
   answer="4"
-  hint="Substitute $-4$ for $n$. The opposite of a negative number is positive."
+  answerForm="decimal"
+  hint="Substitute $-4$ for $n$, then take the opposite of the result."
 >}}
 
 ## Simplify Expressions with Absolute Value
@@ -295,24 +304,28 @@ The distance between $0$ and any number on the number line is called the
 For example, $-5$ is $5$ units away from $0$, so $|-5| = 5$. And $5$ is $5$
 units away from $0$, so $|5| = 5$.
 
-<svg viewBox="0 0 460 100" role="img" aria-label="A number line from -5 to 5. A brace spans from -5 to 0 labeled 5 units, and another brace spans from 0 to 5 labeled 5 units, illustrating that both -5 and 5 are 5 units from zero." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 460 100" role="img" aria-label="A number line from -5 to 5 with a tick at every integer and labels at -5, 0, and 5. One arc above the line spans from -5 to 0 and another from 0 to 5; each arc is labeled 5 units, showing that both -5 and 5 are 5 units from zero." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="55" x2="440" y2="55" stroke="currentColor" stroke-width="1.5" />
   <path d="M20 55 L28 50 L28 60 Z" fill="currentColor" />
   <path d="M440 55 L432 50 L432 60 Z" fill="currentColor" />
-  <g>
-      <line x1="45" y1="49" x2="45" y2="61" stroke="currentColor" stroke-width="1.5" />
-      <text x="45" y="79" text-anchor="middle" font-size="15" fill="currentColor">-5</text>
-    </g><g>
-      <line x1="230" y1="49" x2="230" y2="61" stroke="currentColor" stroke-width="1.5" />
-      <text x="230" y="79" text-anchor="middle" font-size="15" fill="currentColor">0</text>
-    </g><g>
-      <line x1="415" y1="49" x2="415" y2="61" stroke="currentColor" stroke-width="1.5" />
-      <text x="415" y="79" text-anchor="middle" font-size="15" fill="currentColor">5</text>
-    </g>
-  <path d="M60 35 Q 145 22 230 35" stroke="#d6522b" stroke-width="1.5" fill="none" />
-  <text x="145" y="20" text-anchor="middle" font-size="12" fill="#d6522b">5 units</text>
-  <path d="M230 35 Q 315 22 400 35" stroke="#2b8fd6" stroke-width="1.5" fill="none" />
-  <text x="315" y="20" text-anchor="middle" font-size="12" fill="#2b8fd6">5 units</text>
+  <line x1="45" y1="49" x2="45" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <text x="45" y="79" text-anchor="middle" font-size="15" fill="currentColor">-5</text>
+  <line x1="82" y1="49" x2="82" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="119" y1="49" x2="119" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="156" y1="49" x2="156" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="193" y1="49" x2="193" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="230" y1="49" x2="230" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <text x="230" y="79" text-anchor="middle" font-size="15" fill="currentColor">0</text>
+  <line x1="267" y1="49" x2="267" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="304" y1="49" x2="304" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="341" y1="49" x2="341" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="378" y1="49" x2="378" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="415" y1="49" x2="415" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <text x="415" y="79" text-anchor="middle" font-size="15" fill="currentColor">5</text>
+  <path d="M45 38 Q 137.5 24 230 38" stroke="#d6522b" stroke-width="1.5" fill="none" />
+  <text x="137.5" y="22" text-anchor="middle" font-size="12" fill="#d6522b">5 units</text>
+  <path d="M230 38 Q 322.5 24 415 38" stroke="#2b8fd6" stroke-width="1.5" fill="none" />
+  <text x="322.5" y="22" text-anchor="middle" font-size="12" fill="#2b8fd6">5 units</text>
 </svg>
 
 The absolute value of a number is never negative (because distance cannot
@@ -347,7 +360,7 @@ Distance is never negative, so absolute value is never negative.
   question="Simplify: $|47|$."
   answer="47"
   answerForm="decimal"
-  hint="The absolute value of a positive number is the number itself."
+  hint="The absolute value of a number is its distance from zero on the number line."
 >}}
 
 In the next example, we'll order expressions with absolute values. Remember,
@@ -372,7 +385,7 @@ $-(-16) > -|-16|$.
 {{< fillin
   question="Fill in <, >, or = for the following pair of numbers, entering the full comparison: $-8 \_\_\_ |-8|$."
   answer="-8<|-8|"
-  hint="$|-8|$ simplifies to $8$ first. Compare $-8$ with $8$."
+  hint="Simplify the absolute value first, then compare the two numbers on the number line."
 >}}
 
 {{< fillin
@@ -417,31 +430,33 @@ $$
 
 Next we evaluate absolute value expressions with a variable.
 
-**Example.** Evaluate: (a) $|x|$ when $x = -35$ (b) $-|y|$ when $y = -20$
+**Example.** Evaluate: (a) $|x|$ when $x = -35$ (b) $|-y|$ when $y = -20$
 (c) $-|u|$ when $u = 12$ (d) $-|p|$ when $p = -14$.
 
 (a) Substitute $-35$ for $x$, then take the absolute value:
 $|x| = |-35| = 35$.
 
-(b) Substitute $-20$ for $y$. Simplify inside the bars first, then negate:
-$-|y| = -|-20| = -(20) = -20$.
+(b) Substitute $-20$ for $y$. Simplify inside the bars first, then take the
+absolute value: $|-y| = |-(-20)| = |20| = 20$.
 
 (c) Substitute $12$ for $u$, take the absolute value, then negate:
 $-|u| = -|12| = -12$.
 
-(d) Substitute $-14$ for $p$, simplify inside the bars, then negate:
+(d) Substitute $-14$ for $p$, take the absolute value, then negate:
 $-|p| = -|-14| = -14$.
 
 {{< fillin
   question="Evaluate: $|x|$ when $x = -17$."
   answer="17"
+  answerForm="decimal"
   hint="Substitute $-17$ for $x$, then take the absolute value of the result."
 >}}
 
 {{< fillin
   question="Evaluate: $-|m|$ when $m = 22$."
   answer="-22"
-  hint="Take the absolute value of $22$ first, then apply the outer negative sign."
+  answerForm="decimal"
+  hint="Substitute $22$ for $m$, take the absolute value, then apply the outer negative sign."
 >}}
 
 ## Add Integers
@@ -483,6 +498,12 @@ giving $8$ negatives.
 In each case, when the signs were the same, the counters were all the same
 color, and so we added them.
 
+**Example.** Add: (a) $1+4$ (b) $-1+(-4)$.
+
+(a) $1$ positive plus $4$ positives is $5$ positives: $1+4=5$.
+
+(b) $1$ negative plus $4$ negatives is $5$ negatives: $-1+(-4)=-5$.
+
 {{< fillin
   question="Add: $2 + 4$."
   answer="6"
@@ -507,7 +528,7 @@ Now add the last combination, $5 + (-3)$. Start with $5$ positive counters,
 then add $3$ negative counters. Three neutral pairs form and are removed,
 leaving $2$ positives, so $5 + (-3) = 2$.
 
-<svg viewBox="0 0 460 135" role="img" aria-label="Left: -5 + 3. Five red counters and three blue counters; three red-blue pairs are circled as neutral pairs and removed, leaving 2 red counters. More negatives, so the sum is negative. Right: 5 + (-3). Five blue counters and three red counters; three pairs are circled and removed, leaving 2 blue counters. More positives, so the sum is positive." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 460 135" role="img" aria-label="Left: -5 + 3. Five red counters and three blue counters; three red-blue pairs are circled as neutral pairs to remove, and 2 red counters stand outside the circles. Captions: more negatives — sum is negative; -5 + 3 = -2. Right: 5 + (-3). Five blue counters and three red counters; three blue-red pairs are circled to remove, and 2 blue counters stand outside the circles. Captions: more positives — sum is positive; 5 + (-3) = 2." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <text x="108" y="14" text-anchor="middle" font-size="13" fill="currentColor">-5 + 3</text>
   <g>
       <ellipse cx="34" cy="55" rx="19" ry="30" fill="none" stroke="#b03060" stroke-width="1.3" />
@@ -547,18 +568,30 @@ leaving $2$ positives, so $5 + (-3) = 2$.
   <text x="356" y="123" text-anchor="middle" font-size="13" fill="currentColor">5 + (-3) = 2</text>
 </svg>
 
+When we use counters to model addition of positive and negative integers, it
+is easy to see whether there are more positive or more negative counters. So
+we know whether the sum will be positive or negative.
+
+**Example.** Add: (a) $-1+5$ (b) $1+(-5)$.
+
+(a) One negative and five positives make one neutral pair, leaving $4$
+positives. There are more positives, so the sum is positive: $-1+5=4$.
+
+(b) One positive and five negatives make one neutral pair, leaving $4$
+negatives. There are more negatives, so the sum is negative: $1+(-5)=-4$.
+
 {{< fillin
   question="Add: $-2 + 4$."
   answer="2"
   answerForm="decimal"
-  hint="There are more positive counters than negative ones after the neutral pairs are removed."
+  hint="Start with $2$ negative counters and $4$ positive counters, remove the neutral pairs, and count the counters left."
 >}}
 
 {{< fillin
   question="Add: $2 + (-4)$."
   answer="-2"
   answerForm="decimal"
-  hint="There are more negative counters than positive ones after the neutral pairs are removed."
+  hint="Start with $2$ positive counters and $4$ negative counters, remove the neutral pairs, and count the counters left."
 >}}
 
 Now that we have added small positive and negative integers with a model,
@@ -656,7 +689,7 @@ To subtract $-5-(-3)$, restate it as "$-5$ take away $-3$": start with $5$
 negative counters, take away $3$ negative counters, and $2$ negatives are
 left. The difference of $-5$ and $-3$ is $-2$.
 
-<svg viewBox="0 0 460 130" role="img" aria-label="Left: 5-3=2. Five blue counters, three circled and crossed out with an arrow labeled take away, leaving 2 positives. Right: -5-(-3)=-2. Five red counters, three circled and crossed out with an arrow labeled take away, leaving 2 negatives." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 460 130" role="img" aria-label="Left: 5 - 3 = 2. Five blue counters in a row; the first three are circled, with a curved arrow below showing them taken away, and the caption reads 2 positives left. Right: -5 - (-3) = -2. Five red counters in a row; the first three are circled, with a curved arrow below showing them taken away, and the caption reads 2 negatives left." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <text x="112" y="16" text-anchor="middle" font-size="13" fill="currentColor">5 - 3 = 2</text>
   <circle cx="30" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="56" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="82" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="108" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="134" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" />
   <ellipse cx="56" cy="45" rx="41" ry="18" fill="none" stroke="#b03060" stroke-width="1.3" />
@@ -677,6 +710,13 @@ positives from $5$ positives and end up with $2$ positives. In the second,
 we subtract $3$ negatives from $5$ negatives and end up with $2$ negatives.
 Each example used counters of only one color, and the "take away" model of
 subtraction was easy to apply.
+
+**Example.** Subtract: (a) $7-5$ (b) $-7-(-5)$.
+
+(a) Take $5$ positives from $7$ positives and get $2$ positives: $7-5=2$.
+
+(b) Take $5$ negatives from $7$ negatives and get $2$ negatives:
+$-7-(-5)=-2$.
 
 {{< fillin
   question="Subtract: $6 - 4$."
@@ -709,42 +749,22 @@ with $5$ positives. We need to take away $3$ negatives, but there are no
 negatives to take away, so we add $3$ neutral pairs, giving us $3$ negatives
 to take away. Removing them leaves $8$ positives: $5-(-3) = 8$.
 
-<svg viewBox="0 0 460 170" role="img" aria-label="Left: -5-3=-8. Five red counters plus 3 neutral pairs added; the 3 blue counters from the pairs are circled and removed, leaving 8 red counters. Right: 5-(-3)=8. Five blue counters plus 3 neutral pairs added; the 3 red counters from the pairs are circled and removed, leaving 8 blue counters." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 460 140" role="img" aria-label="Left: -5 - 3 = -8. Five red counters, then 3 neutral pairs added beside them, each pair a red counter above a blue counter. The 3 blue counters are circled to be removed; the caption reads removing the 3 positives leaves 8 negatives. Right: 5 - (-3) = 8. Five blue counters, then 3 neutral pairs added beside them, each pair a blue counter above a red counter. The 3 red counters are circled to be removed; the caption reads removing the 3 negatives leaves 8 positives." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <text x="112" y="14" text-anchor="middle" font-size="13" fill="currentColor">-5 - 3 = -8</text>
   <circle cx="26" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="48" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="70" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="92" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="114" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-  <g>
-      <ellipse cx="148" cy="55" rx="10" ry="30" fill="none" stroke="#b03060" stroke-width="1.2" />
-      <circle cx="148" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-      <circle cx="148" cy="70" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-    </g><g>
-      <ellipse cx="172" cy="55" rx="10" ry="30" fill="none" stroke="#b03060" stroke-width="1.2" />
-      <circle cx="172" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-      <circle cx="172" cy="70" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-    </g><g>
-      <ellipse cx="196" cy="55" rx="10" ry="30" fill="none" stroke="#b03060" stroke-width="1.2" />
-      <circle cx="196" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-      <circle cx="196" cy="70" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-    </g>
+  <circle cx="148" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="172" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="196" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
+  <circle cx="148" cy="70" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="172" cy="70" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="196" cy="70" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
+  <ellipse cx="172" cy="70" rx="38" ry="15" fill="none" stroke="#b03060" stroke-width="1.3" />
   <text x="112" y="110" text-anchor="middle" font-size="12" fill="currentColor">removing the 3 positives leaves</text>
   <text x="112" y="128" text-anchor="middle" font-size="12" fill="currentColor">8 negatives</text>
 
-  <text x="360" y="14" text-anchor="middle" font-size="13" fill="currentColor">5 - (-3) = 8</text>
-  <circle cx="274" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="296" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="318" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="340" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="362" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-  <g>
-      <ellipse cx="396" cy="55" rx="10" ry="30" fill="none" stroke="#b03060" stroke-width="1.2" />
-      <circle cx="396" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-      <circle cx="396" cy="70" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-    </g><g>
-      <ellipse cx="420" cy="55" rx="10" ry="30" fill="none" stroke="#b03060" stroke-width="1.2" />
-      <circle cx="420" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-      <circle cx="420" cy="70" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-    </g><g>
-      <ellipse cx="444" cy="55" rx="10" ry="30" fill="none" stroke="#b03060" stroke-width="1.2" />
-      <circle cx="444" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
-      <circle cx="444" cy="70" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
-    </g>
-  <text x="360" y="110" text-anchor="middle" font-size="12" fill="currentColor">removing the 3 negatives leaves</text>
-  <text x="360" y="128" text-anchor="middle" font-size="12" fill="currentColor">8 positives</text>
+  <text x="356" y="14" text-anchor="middle" font-size="13" fill="currentColor">5 - (-3) = 8</text>
+  <circle cx="266" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="288" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="310" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="332" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="354" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
+  <circle cx="392" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="416" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" /><circle cx="440" cy="40" r="10" fill="#bfe3f0" stroke="currentColor" stroke-width="1.1" />
+  <circle cx="392" cy="70" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="416" cy="70" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="440" cy="70" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
+  <ellipse cx="416" cy="70" rx="38" ry="15" fill="none" stroke="#b03060" stroke-width="1.3" />
+  <text x="356" y="110" text-anchor="middle" font-size="12" fill="currentColor">removing the 3 negatives leaves</text>
+  <text x="356" y="128" text-anchor="middle" font-size="12" fill="currentColor">8 positives</text>
 </svg>
 
 **Example.** Subtract: (a) $-3-1$ (b) $3-(-1)$.
@@ -795,7 +815,7 @@ negative numbers.
   question="Simplify: $-11 - 7$."
   answer="-18"
   answerForm="decimal"
-  hint="This is the same as $-11 + (-7)$ — add the absolute values and keep the negative sign."
+  hint="Subtracting a number is the same as adding its opposite: rewrite as an addition, then add."
 >}}
 
 {{< fillin
@@ -820,14 +840,14 @@ $a - (-b) = a + b$.
   question="Simplify: $-5 - (-1)$."
   answer="-4"
   answerForm="decimal"
-  hint="Subtracting a negative is the same as adding its positive opposite: $-5 + 1$."
+  hint="Subtracting a negative is the same as adding its opposite: rewrite as an addition, then add."
 >}}
 
 {{< fillin
   question="Simplify: $4 - (-19)$."
   answer="23"
   answerForm="decimal"
-  hint="Subtracting a negative is the same as adding a positive: $4 + 19$."
+  hint="Subtracting a negative is the same as adding its opposite: rewrite as an addition, then add."
 >}}
 
 Let's look again at the results of subtracting the different combinations
@@ -893,13 +913,29 @@ number is the same as adding its opposite.
 {{< fillin
   question="Find the opposite of $2$."
   answer="-2"
-  hint="The opposite of a positive number is the same distance from zero, but negative."
+  answerForm="decimal"
+  hint="Find the number the same distance from zero on the other side of zero."
 >}}
 
 {{< fillin
   question="Find the opposite of $-6$."
   answer="6"
-  hint="The opposite of a negative number is the same distance from zero, but positive."
+  answerForm="decimal"
+  hint="Find the number the same distance from zero on the other side of zero."
+>}}
+
+{{< fillin
+  question="Evaluate $-c$ when $c = 12$."
+  answer="-12"
+  answerForm="decimal"
+  hint="Substitute $12$ for $c$, then take the opposite of the result."
+>}}
+
+{{< fillin
+  question="Evaluate $-c$ when $c = -12$."
+  answer="12"
+  answerForm="decimal"
+  hint="Substitute $-12$ for $c$, then take the opposite of the result."
 >}}
 
 ### Simplify expressions with absolute value
@@ -960,14 +996,14 @@ $>$
   question="Subtract: $-5 - 4$."
   answer="-9"
   answerForm="decimal"
-  hint="Restate as adding the opposite: $-5 + (-4)$."
+  hint="Subtracting a number is the same as adding its opposite: rewrite as an addition, then add."
 >}}
 
 {{< fillin
   question="Subtract: $8 - (-4)$."
   answer="12"
   answerForm="decimal"
-  hint="Subtracting a negative is the same as adding a positive: $8 + 4$."
+  hint="Subtracting a negative is the same as adding its opposite: rewrite as an addition, then add."
 >}}
 
 {{< fillin
@@ -986,4 +1022,4 @@ $>$
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.3: Add and Subtract Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-3-add-and-subtract-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line and positive/negative-counters figures as accessible inline graphics, and the grouping-symbols list as a table; omitted the Manipulative Mathematics callouts, media links, and Self Check checklist; adapted selected end-of-section exercises into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.3: Add and Subtract Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-3-add-and-subtract-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line and positive/negative-counters figures as accessible inline graphics (condensing the step-by-step counter tables into one figure per pair of cases), and the grouping-symbols list as a table; omitted the number line beside the ordering example, the Be Prepared note, the Manipulative Mathematics callouts, media links, Key Concepts summary, and Self Check checklist; adapted selected end-of-section exercises into interactive practice; and converted selected practice problems ("Try Its") into interactive exercises with instant feedback.</small>

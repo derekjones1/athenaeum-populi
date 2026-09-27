@@ -1322,14 +1322,16 @@ export function textNumbers(text) {
 }
 
 /** A mixed-unit measurement's total in the smaller unit: "4 lbs. 8 oz." is
- * 72 ounces, "9 ft 2 in" is 110 inches — the form a page keys so the value is
- * gradable as one number. */
+ * 72 ounces, "9 ft 2 in" is 110 inches, "11 gal. 2 qt." is 46 quarts — the
+ * form a page keys so the value is gradable as one number. The CNXML may set
+ * the abbreviation's period apart ("8 lbs . 15 oz", Elementary Algebra 1.10). */
 export function unitTotals(text) {
   const totals = [];
   const plain = String(text).replace(/[\u2212\u2013]/g, '-');
-  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:lbs?|pounds?)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:oz|ounces?)\b/gi)) totals.push(16 * Number(m[1]) + Number(m[2]));
-  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:ft|feet|foot)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:in|inches|inch)\b/gi)) totals.push(12 * Number(m[1]) + Number(m[2]));
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:lbs?|pounds?)\s*\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:oz|ounces?)\b/gi)) totals.push(16 * Number(m[1]) + Number(m[2]));
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:ft|feet|foot)\s*\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:in|inches|inch)\b/gi)) totals.push(12 * Number(m[1]) + Number(m[2]));
   for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:yd|yards?)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:ft|feet|foot)\b/gi)) totals.push(3 * Number(m[1]) + Number(m[2]));
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:gal|gallons?)\s*\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:qt|quarts?)\b/gi)) totals.push(4 * Number(m[1]) + Number(m[2]));
   for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:hours?|hr|h)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:minutes?|min)\b/gi)) totals.push(60 * Number(m[1]) + Number(m[2]));
   return totals;
 }

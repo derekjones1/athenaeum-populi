@@ -44,7 +44,7 @@ $$\frac{x}{3} + \frac{2}{3} = \frac{x+2}{3}$$
 {{< fillin
   question="Find the sum: $\tfrac{x}{4} + \tfrac{3}{4}$."
   answer="\frac{x+3}{4}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+3}{4}$"
   hint="The denominators already match — add the numerators and keep the common denominator."
 >}}
@@ -52,7 +52,7 @@ $$\frac{x}{3} + \frac{2}{3} = \frac{x+2}{3}$$
 {{< fillin
   question="Find the sum: $\tfrac{y}{8} + \tfrac{5}{8}$."
   answer="\frac{y+5}{8}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y+5}{8}$"
   hint="The denominators already match — add the numerators and keep the common denominator."
 >}}
@@ -192,7 +192,7 @@ the answer is already simplified.
   answer="\frac{79}{60}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{79}{60}$"
-  hint="$12 = 2 \cdot 2 \cdot 3$ and $15 = 3 \cdot 5$, so the LCD is $60$. Rewrite both fractions over $60$ before adding."
+  hint="Factor $12$ and $15$ into primes to find the LCD, then rewrite both fractions over it before adding."
 >}}
 
 {{< fillin
@@ -200,7 +200,7 @@ the answer is already simplified.
   answer="\frac{103}{60}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{103}{60}$"
-  hint="$15 = 3 \cdot 5$ and $20 = 2 \cdot 2 \cdot 5$, so the LCD is $60$. Rewrite both fractions over $60$ before adding."
+  hint="Factor $15$ and $20$ into primes to find the LCD, then rewrite both fractions over it before adding."
 >}}
 
 When finding the equivalent fractions needed to create the common
@@ -246,7 +246,7 @@ $$-\frac{39}{120} = -\frac{13 \cdot 3}{40 \cdot 3} = -\frac{13}{40}$$
   answer="\frac{1}{96}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{96}$"
-  hint="$24 = 2 \cdot 2 \cdot 2 \cdot 3$ and $32 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$, so the LCD is $96$. Rewrite both fractions over $96$ before subtracting."
+  hint="Factor $24$ and $32$ into primes to find the LCD, then rewrite both fractions over it before subtracting."
 >}}
 
 {{< fillin
@@ -254,7 +254,7 @@ $$-\frac{39}{120} = -\frac{13 \cdot 3}{40 \cdot 3} = -\frac{13}{40}$$
   answer="\frac{75}{224}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{75}{224}$"
-  hint="$32 = 2^5$ and $28 = 2 \cdot 2 \cdot 7$, so the LCD is $224$. Rewrite both fractions over $224$ before subtracting."
+  hint="Factor $32$ and $28$ into primes to find the LCD, then rewrite both fractions over it before subtracting."
 >}}
 
 In the next example, one of the fractions has a variable in its numerator.
@@ -278,17 +278,17 @@ the numerator is left as a sum.
 {{< fillin
   question="Add: $\tfrac{y}{6} + \tfrac{7}{9}$."
   answer="\frac{3y+14}{18}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3y+14}{18}$"
-  hint="$6 = 2 \cdot 3$ and $9 = 3 \cdot 3$, so the LCD is $18$. Rewrite each fraction over $18$, then add the numerators — $3y$ and $14$ aren't like terms, so leave the sum as is."
+  hint="Find the LCD of $6$ and $9$, rewrite each fraction over it, then add the numerators — combine only like terms."
 >}}
 
 {{< fillin
   question="Add: $\tfrac{x}{6} + \tfrac{7}{15}$."
   answer="\frac{5x+14}{30}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5x+14}{30}$"
-  hint="$6 = 2 \cdot 3$ and $15 = 3 \cdot 5$, so the LCD is $30$. Rewrite each fraction over $30$, then add the numerators."
+  hint="Find the LCD of $6$ and $15$, rewrite each fraction over it, then add the numerators — combine only like terms."
 >}}
 
 We now have all four operations for fractions. The table below summarizes
@@ -305,8 +305,8 @@ fractions, an LCD IS needed.
 
 **Example.** Simplify: (a) $\tfrac{5x}{6} - \tfrac{3}{10}$ (b) $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 
-First ask, "What is the operation?" Once we identify the operation that
-determines whether we need a common denominator. Remember, we need a
+First ask, "What is the operation?" Identifying the operation tells us
+whether we need a common denominator. Remember, we need a
 common denominator to add or subtract, but not to multiply or divide.
 
 (a) The operation is subtraction. The fractions do not have a common
@@ -327,9 +327,9 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{3a}{4} - \tfrac{8}{9}$."
   answer="\frac{27a-32}{36}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{27a-32}{36}$"
-  hint="This is subtraction, so find the LCD of $4$ and $9$ (which is $36$) and rewrite both fractions over it before subtracting."
+  hint="This is subtraction, so find the LCD of $4$ and $9$ and rewrite both fractions over it before subtracting."
 >}}
 
 {{< fillin
@@ -374,30 +374,30 @@ Simplify the numerator: $\left(\tfrac{1}{2}\right)^2$ means
 $\tfrac{1}{2} \cdot \tfrac{1}{2}$, which is $\tfrac{1}{4}$. The complex
 fraction becomes:
 
-$$\frac{\frac{1}{4}}{4+3^2}$$
+$$\cfrac{\frac{1}{4}}{4+3^2}$$
 
 Simplify the denominator: $4 + 3^2 = 4 + 9 = 13$. The complex fraction
 becomes:
 
-$$\frac{\frac{1}{4}}{13}$$
+$$\cfrac{\frac{1}{4}}{13}$$
 
 Divide the numerator by the denominator, remembering $13 = \tfrac{13}{1}$:
 
 $$\frac{1}{4} \div 13 = \frac{1}{4} \cdot \frac{1}{13} = \frac{1}{52}$$
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{1}{3}\right)^2 \div \left(2^3+2\right)$."
+  question="Simplify: $\cfrac{\left(\frac{1}{3}\right)^2}{2^3+2}$."
   answer="\frac{1}{90}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{90}$"
-  hint="Simplify the numerator $\left(\tfrac{1}{3}\right)^2 = \tfrac{1}{9}$ and the denominator $2^3+2 = 10$ separately, then divide."
+  hint="Simplify the numerator and the denominator separately, then divide the numerator by the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(1+4^2\right) \div \left(\tfrac{1}{4}\right)^2$."
+  question="Simplify: $\cfrac{1+4^2}{\left(\frac{1}{4}\right)^2}$."
   answer="272"
   answerForm="decimal"
-  hint="Simplify the numerator $1+4^2 = 17$ and the denominator $\left(\tfrac{1}{4}\right)^2 = \tfrac{1}{16}$ separately, then divide $17$ by $\tfrac{1}{16}$."
+  hint="Simplify the numerator and the denominator separately, then multiply the numerator by the reciprocal of the denominator."
 >}}
 
 **Example.** Simplify:
@@ -415,19 +415,19 @@ Divide the numerator by the denominator, then divide out common factors:
 $$\frac{7}{6} \div \frac{7}{12} = \frac{7}{6} \cdot \frac{12}{7} = \frac{7 \cdot 6 \cdot 2}{6 \cdot 7} = 2$$
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{1}{3}+\tfrac{1}{2}\right) \div \left(\tfrac{3}{4}-\tfrac{1}{3}\right)$."
+  question="Simplify: $\cfrac{\frac{1}{3}+\frac{1}{2}}{\frac{3}{4}-\frac{1}{3}}$."
   answer="2"
   answerForm="decimal"
   answerDisplay="$2$"
-  hint="Simplify the numerator $\tfrac{1}{3}+\tfrac{1}{2} = \tfrac{5}{6}$ and the denominator $\tfrac{3}{4}-\tfrac{1}{3} = \tfrac{5}{12}$ separately, then divide."
+  hint="Combine the numerator over its LCD and the denominator over its LCD, then divide the numerator by the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{2}{3}-\tfrac{1}{2}\right) \div \left(\tfrac{1}{4}+\tfrac{1}{3}\right)$."
+  question="Simplify: $\cfrac{\frac{2}{3}-\frac{1}{2}}{\frac{1}{4}+\frac{1}{3}}$."
   answer="\frac{2}{7}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{7}$"
-  hint="Simplify the numerator $\tfrac{2}{3}-\tfrac{1}{2} = \tfrac{1}{6}$ and the denominator $\tfrac{1}{4}+\tfrac{1}{3} = \tfrac{7}{12}$ separately, then divide."
+  hint="Combine the numerator over its LCD and the denominator over its LCD, then divide the numerator by the denominator."
 >}}
 
 ## Evaluate Variable Expressions with Fractions
@@ -450,12 +450,14 @@ $$x + \frac{1}{3} = -\frac{3}{4} + \frac{1}{3} = -\frac{3 \cdot 3}{4 \cdot 3} + 
 {{< fillin
   question="Evaluate $x + \tfrac{3}{4}$ when $x = -\tfrac{7}{4}$."
   answer="-1"
+  answerForm="decimal"
   hint="Substitute $-\tfrac{7}{4}$ for $x$ — the denominators already match, so add the numerators directly."
 >}}
 
 {{< fillin
   question="Evaluate $x + \tfrac{3}{4}$ when $x = -\tfrac{5}{4}$."
   answer="-\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{2}$"
   hint="Substitute $-\tfrac{5}{4}$ for $x$ — the denominators already match, so add the numerators directly, then simplify."
 >}}
@@ -468,15 +470,17 @@ the LCD, $6$, and subtract:
 $$-\frac{5}{6} - y = -\frac{5}{6} - \left(-\frac{2}{3}\right) = -\frac{5}{6} - \left(-\frac{4}{6}\right) = \frac{-5-(-4)}{6} = -\frac{1}{6}$$
 
 {{< fillin
-  question="Evaluate $-\tfrac{1}{2} - y$ when $y = -\tfrac{3}{4}$."
-  answer="\frac{1}{4}"
-  answerDisplay="$\tfrac{1}{4}$"
-  hint="Substitute $-\tfrac{3}{4}$ for $y$, rewrite $-\tfrac{1}{2}$ as an equivalent fraction with denominator $4$, and subtract."
+  question="Evaluate $-\tfrac{1}{2} - y$ when $y = -\tfrac{1}{4}$."
+  answer="-\frac{1}{4}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{1}{4}$"
+  hint="Substitute $-\tfrac{1}{4}$ for $y$, rewrite $-\tfrac{1}{2}$ as an equivalent fraction with denominator $4$, and subtract."
 >}}
 
 {{< fillin
   question="Evaluate $-\tfrac{3}{8} - y$ when $y = -\tfrac{5}{2}$."
   answer="\frac{17}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{17}{8}$"
   hint="Substitute $-\tfrac{5}{2}$ for $y$, rewrite it as an equivalent fraction with denominator $8$, and subtract."
 >}}
@@ -489,15 +493,17 @@ then multiply and divide out the common factors:
 $$2x^2 y = 2\left(\frac{1}{4}\right)^2\left(-\frac{2}{3}\right) = 2\left(\frac{1}{16}\right)\left(-\frac{2}{3}\right) = -\frac{2 \cdot 1 \cdot 2}{16 \cdot 3} = -\frac{1}{12}$$
 
 {{< fillin
-  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{3}$."
-  answer="-\frac{2}{9}"
-  answerDisplay="$-\tfrac{2}{9}$"
+  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{2}$."
+  answer="-\frac{1}{2}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{1}{2}$"
   hint="Square $b$ first, then multiply the three factors together, dividing out common factors."
 >}}
 
 {{< fillin
   question="Evaluate $4c^3 d$ when $c = -\tfrac{1}{2}$ and $d = -\tfrac{4}{3}$."
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Cube $c$ first, then multiply the remaining factors together, dividing out common factors."
 >}}
@@ -514,6 +520,7 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Evaluate $\tfrac{a+b}{c}$ when $a = -8$, $b = -7$, and $c = 6$."
   answer="-\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{2}$"
   hint="Add $a$ and $b$ in the numerator first, then divide by $c$ and simplify."
 >}}
@@ -521,6 +528,7 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Evaluate $\tfrac{x+y}{z}$ when $x = 9$, $y = -18$, and $z = -6$."
   answer="\frac{3}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{2}$"
   hint="Add $x$ and $y$ in the numerator first, then divide by $z$ and simplify."
 >}}
@@ -549,9 +557,9 @@ contain a fraction; the fraction bar indicates division.
 {{< fillin
   question="Subtract: $\tfrac{5y}{8} - \tfrac{7}{8}$."
   answer="\frac{5y-7}{8}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5y-7}{8}$"
-  hint="The denominators already match — subtract the numerators over the common denominator; $5y$ and $7$ aren't like terms, so leave the numerator as a difference."
+  hint="The denominators already match — subtract the numerators over the common denominator, combining only like terms."
 >}}
 
 ### Add or subtract fractions with different denominators
@@ -561,31 +569,31 @@ contain a fraction; the fraction bar indicates division.
   answer="\frac{37}{120}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{37}{120}$"
-  hint="$30 = 2 \cdot 3 \cdot 5$ and $40 = 2 \cdot 2 \cdot 2 \cdot 5$, so the LCD is $120$. Rewrite both fractions over $120$ before adding."
+  hint="Factor $30$ and $40$ into primes to find the LCD, then rewrite both fractions over it before adding."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{y}{4} - \tfrac{3}{5}$."
   answer="\frac{5y-12}{20}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5y-12}{20}$"
-  hint="$4$ and $5$ share no common factors, so the LCD is $20$. Rewrite each fraction over $20$, then subtract the numerators."
+  hint="Find the LCD of $4$ and $5$, rewrite each fraction over it, then subtract the numerators — combine only like terms."
 >}}
 
 ### Use the order of operations to simplify complex fractions
 
 {{< fillin
-  question="Simplify: $\left(2^3+4^2\right) \div \left(\tfrac{2}{3}\right)^2$."
+  question="Simplify: $\cfrac{2^3+4^2}{\left(\frac{2}{3}\right)^2}$."
   answer="54"
   answerForm="decimal"
-  hint="Simplify the numerator $2^3+4^2=24$ and the denominator $\left(\tfrac{2}{3}\right)^2=\tfrac{4}{9}$ separately, then divide."
+  hint="Simplify the numerator and the denominator separately, then multiply the numerator by the reciprocal of the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{5}{8}+\tfrac{1}{6}\right) \div \tfrac{19}{24}$."
+  question="Simplify: $\cfrac{\frac{5}{8}+\frac{1}{6}}{\frac{19}{24}}$."
   answer="1"
   answerForm="decimal"
-  hint="Add the fractions in parentheses over their LCD $24$ first, then divide by $\tfrac{19}{24}$."
+  hint="Add the fractions in the numerator over their LCD first, then divide the numerator by the denominator."
 >}}
 
 ### Evaluate variable expressions with fractions
@@ -593,6 +601,7 @@ contain a fraction; the fraction bar indicates division.
 {{< fillin
   question="Evaluate $2x^2y^3$ when $x = -\tfrac{2}{3}$ and $y = -\tfrac{1}{2}$."
   answer="-\frac{1}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{9}$"
   hint="Square $x$ and cube $y$ first, then multiply the three factors together, dividing out common factors."
 >}}
@@ -600,10 +609,11 @@ contain a fraction; the fraction bar indicates division.
 {{< fillin
   question="Evaluate $\tfrac{a+b}{a-b}$ when $a = -3$ and $b = 8$."
   answer="-\frac{5}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{11}$"
   hint="Add $a$ and $b$ in the numerator and subtract them in the denominator first, then divide."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.6: Add and Subtract Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-6-add-and-subtract-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the LCD prime-factorization tables and stacked addition/subtraction as typeset math, recast the fraction-operations summary table as a compact two-column table, and omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check; converted the practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.6: Add and Subtract Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-6-add-and-subtract-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the worked-example step tables, including the LCD prime-factorization tables, as typeset math with narrative steps; recast the fraction-operations summary table as a compact two-column table; omitted the Be Prepared note, Manipulative Mathematics callouts, Key Concepts summary, and Self Check checklist; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, one part per question; adapted selected end-of-section exercises into the section-final interactive Practice block; and keyed two Try Its to their correct values where the source prints a wrong answer ($-\tfrac{2}{9}+\left(-\tfrac{4}{9}\right)-\tfrac{7}{9}$ is $-\tfrac{13}{9}$, not $-1$; $-\tfrac{3}{8}-y$ when $y=-\tfrac{5}{2}$ is $\tfrac{17}{8}$, not $-\tfrac{17}{8}$).</small>

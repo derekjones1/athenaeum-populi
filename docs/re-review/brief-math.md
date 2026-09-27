@@ -87,7 +87,16 @@ arithmetic (`6\cdot x+6\cdot8`, `(-14)^2x^2`, `\frac{1}{y^{7-2}}`), and
 parse invalid, so a percent key never needs rounding to dodge it. Same run:
 `single-fraction` refuses a numeral power or a negative exponent
 (`\frac{1}{2^3y^3}`, `\frac{1}{8}y^{-3}`), and `single-power` refuses the
-reciprocal of a negative power (`\frac{1}{x^{-9}}`). A one-letter unit
+reciprocal of a negative power (`\frac{1}{x^{-9}}`). Since the
+Elementary Algebra chapter 1 re-review (September 27, 2026): a numeral
+fraction counts as a numeral in a written product, so `expanded`
+refuses `\frac{1}{4}\cdot3q+\frac{1}{4}\cdot12`. `single-fraction` alone
+does NOT refuse an unreduced fraction with a sum in either half
+(`\frac{6y+28}{36}` for `\frac{3y+14}{18}`, the printed
+`\frac{x^2+3x+2}{x^2-x-6}` for `\frac{x+1}{x-3}`): a Simplify ask whose key
+is such a fraction takes `single-fraction reduced-fraction` (72 keys across
+the math books lacked it on September 27, 2026, most in the rational-expression
+chapters). A one-letter unit
 (`62 m`) still reads as a variable and grades `incorrect`, not `unit`.
 
 Figures and display math: `node tools/figures/render-page-figures.mjs

@@ -79,8 +79,8 @@ import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 // file (repo-relative) + a question prefix that names ONE fillin + the exact
 // printed SPAN that coincides + why that coincidence is sound.
 export const SOUND_COINCIDENCES = [
-  ['content/math/elementary-algebra/01-foundations/08-the-real-numbers.md', 'For each number given, id', '\\sqrt{81}', 'selection prompt'],
-  ['content/math/elementary-algebra/01-foundations/08-the-real-numbers.md', 'For the given numbers $-3$, $-\\sqrt{2}$, $0.3$ repeating, $\\tfrac{9}{5}$, $4$, $\\sqrt{49}$, l', '-\\sqrt{2}', 'selection prompt: the answer is one of the printed numbers'],
+  ['content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md', 'Evaluate $-\\tfrac{1}{2} - y$ when $y = -\\tfrac{1}{4}$', 'y = -\\tfrac{1}{4}', 'the source values make -1/2 - y = y: -1/2 - (-1/4) = -1/4, a coincidence of the numbers, not a retype'],
+  ['content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md', 'Evaluate $3ab^2$ when $a = -\\tfrac{2}{3}$ and $b = -\\tfrac{1}{2}$', 'b = -\\tfrac{1}{2}', 'the source values make 3ab^2 = b: 3(-2/3)(1/4) = -1/2, a coincidence of the numbers, not a retype'],
   ['content/math/elementary-algebra/01-foundations/08-the-real-numbers.md', 'Locate the following on a', '-\\tfrac{8}{3}', 'selection prompt'],
   ['content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md', 'Translate and solve: The difference of 4', '14', 'x = 14 by design'],
   ['content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md', 'Translate and solve: The difference of 7', '-8', 'a = -8 by design'],

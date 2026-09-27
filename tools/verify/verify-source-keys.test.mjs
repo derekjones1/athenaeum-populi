@@ -365,6 +365,8 @@ test('numbers are read from prose, number words, grouped figures, and dashes ali
   assert.deepEqual(textNumbers('207,500 to 2,225,000; 8,22; −3.2; .6 seconds; –68 ft/sec; $40'), [207500, 2225000, 8, 22, -3.2, 0.6, -68, 40]);
   assert.deepEqual(numberWords('thirty-two 49-cent stamps and twelve, one-fourth, ten-thousands, twice, negative twenty-three'), [32, 12, 2, 23]);
   assert.deepEqual(unitTotals('4 lbs. 8 oz.; 9 ft 2 in; 2 hours 15 minutes'), [72, 110, 135]);
+  // The CNXML can set an abbreviation's period apart, and gallons carry quarts.
+  assert.deepEqual(unitTotals('8 lbs . 15 oz; 11 gal. 2 qt.'), [143, 46]);
 });
 
 test('MathML values: fractions are quotients, a minus sign is a sign, a mixed number is a sum, and "3,333.33" is one number', () => {

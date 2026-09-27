@@ -36,7 +36,7 @@ squares of negative numbers? We know that when the signs of two numbers are
 the same, their product is positive. So the square of any negative number is
 also positive.
 
-$$(-3)^2 = 9 \qquad (-8)^2 = 64 \qquad (-11)^2 = 121 \qquad (-15)^2 = 225$$
+$$(-3)^2 = 9 \quad\ (-8)^2 = 64 \quad\ (-11)^2 = 121 \quad\ (-15)^2 = 225$$
 
 Did you notice that these squares are the same as the squares of the
 positive numbers?
@@ -166,7 +166,7 @@ $\tfrac{3}{1}, \tfrac{6}{2}, \tfrac{9}{3}, \tfrac{12}{4}, \tfrac{15}{5} \dots$
 An easy way to write an integer as a ratio of integers is to write it as a
 fraction with denominator one.
 
-$$3 = \frac{3}{1} \qquad -8 = -\frac{8}{1} \qquad 0 = \frac{0}{1}$$
+$$3 = \frac{3}{1} \qquad {-8} = -\frac{8}{1} \qquad 0 = \frac{0}{1}$$
 
 Since any integer can be written as the ratio of two integers, *all integers
 are rational numbers*! Remember that the counting numbers and the whole
@@ -210,7 +210,7 @@ written as the ratio of two integers.
   answer="\frac{357}{100}"
   answerForm="fraction"
   answerDisplay="$\tfrac{357}{100}$"
-  hint="Write $3.57$ as a mixed number, $3$ and $57$ hundredths, then convert it to an improper fraction."
+  hint="Write the decimal as a mixed number, then convert the mixed number to an improper fraction, as in part (b) of the example above."
 >}}
 
 {{< fillin
@@ -226,16 +226,18 @@ seen that *every integer is a rational number*, since $a = \tfrac{a}{1}$ for
 any integer $a$. We can also change any integer to a decimal by adding a
 decimal point and a zero.
 
-$$-2 = -2.0 \qquad -1 = -1.0 \qquad 0 = 0.0 \qquad 1 = 1.0 \qquad 2 = 2.0 \qquad 3 = 3.0$$
+$$\begin{array}{lrrrrrr} \text{Integer} & -2 & -1 & 0 & 1 & 2 & 3 \\[4pt] \text{Decimal form} & -2.0 & -1.0 & 0.0 & 1.0 & 2.0 & 3.0 \end{array}$$
 
-These decimal numbers stop, which is why we call them *stopping decimals*.
+These decimal numbers stop.
 
 We have also seen that *every fraction is a rational number*. Look at the
 decimal form of the fractions we considered above.
 
 $$
-\frac{4}{5} = 0.8 \qquad -\frac{7}{8} = -0.875 \qquad \frac{13}{4} = 3.25
-\qquad -\frac{20}{3} = -6.666\ldots = -6.\overline{6}
+\begin{array}{lrrrr}
+\text{Ratio of integers} & \tfrac{4}{5} & -\tfrac{7}{8} & \tfrac{13}{4} & -\tfrac{20}{3} \\[4pt]
+\text{Decimal form} & 0.8 & -0.875 & 3.25 & -6.666\ldots = -6.\overline{6}
+\end{array}
 $$
 
 These decimals either stop or repeat. What do these examples tell us? Every
@@ -289,21 +291,24 @@ and $0.47$ are rational.
 no repeating block of digits and it does not stop. So $3.605551275\ldots$
 is irrational.
 
-{{< fillin
-  question="Among the numbers $0.29$, $0.8$ with a repeating $6$, and $2.515115111\ldots$, which one has a decimal form that repeats forever? Give that number."
-  answer="0.8\overline{6}"
-  answerDisplay="$0.8\overline{6}$"
-  hint="Look for the number whose digits settle into an endlessly repeating block, rather than stopping outright."
+{{< multiplechoice
+  question="Which of these numbers are irrational: $0.29$, $0.81\overline{6}$, $2.515115111\ldots$?"
+  answer="$2.515115111\ldots$ only"
+  hint="A number is irrational when its decimal form neither stops nor repeats; read what the bar and the ellipsis each mean."
 >}}
+none of the three
+$2.515115111\ldots$ only
+$0.81\overline{6}$ and $2.515115111\ldots$
+{{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Among these numbers, which one is irrational?"
-  answer="$2.515115111\ldots$"
-  hint="Irrational decimals never settle into a stopping point or a repeating block — $2.515115111\ldots$ keeps adding one more $1$ each time."
+  question="Which of these numbers are rational: $2.6\overline{3}$, $0.125$, $0.418302\ldots$?"
+  answer="$2.6\overline{3}$ and $0.125$"
+  hint="A rational number's decimal form stops or repeats; check each number for a last digit or a repeating block."
 >}}
-$0.29$
-$0.8\overline{6}$
-$2.515115111\ldots$
+$0.125$ only
+$2.6\overline{3}$ and $0.125$
+$2.6\overline{3}$, $0.125$, and $0.418302\ldots$
 {{< /multiplechoice >}}
 
 **Example.** For each number given, identify whether it is rational or
@@ -316,16 +321,19 @@ $\sqrt{36} = 6$, therefore $\sqrt{36}$ is rational.
 square. Therefore, the decimal form of $\sqrt{44}$ will never repeat and
 never stop, so $\sqrt{44}$ is irrational.
 
-{{< fillin
-  question="For each number given, identify whether it is rational or irrational, by giving its simplified value if rational: $\sqrt{81}$"
-  answer="9"
-  hint="$81$ is a perfect square ($9^2 = 81$), so its square root is a whole number and therefore rational."
+{{< multiplechoice
+  question="Is $\sqrt{81}$ rational or irrational?"
+  answer="rational"
+  hint="Decide whether $81$ is a perfect square, as the example above does for $36$ and $44$."
 >}}
+rational
+irrational
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Is $\sqrt{17}$ rational or irrational?"
   answer="irrational"
-  hint="$17$ is not a perfect square ($4^2 = 16$ and $5^2 = 25$), so its decimal form never stops or repeats."
+  hint="Decide whether $17$ is a perfect square by comparing it with the squares of the counting numbers."
 >}}
 rational
 irrational
@@ -386,18 +394,20 @@ Since $-8$ is a real number, $-\sqrt{64}$ is a real number.
 {{< multiplechoice
   question="Is $\sqrt{-196}$ a real number?"
   answer="not a real number"
-  hint="No real number, positive or negative, squares to a negative result."
+  hint="Ask what sign the square of any real number has, positive or negative, as the example above does for $-169$."
 >}}
 a real number
 not a real number
 {{< /multiplechoice >}}
 
-{{< fillin
-  question="Simplify $-\sqrt{81}$, and note that this value is a real number."
-  answer="-9"
-  answerForm="simplified-radical"
-  hint="First simplify $\sqrt{81}$, then apply the negative sign in front of the radical."
+{{< multiplechoice
+  question="Is $-\sqrt{81}$ a real number?"
+  answer="a real number"
+  hint="Notice whether the negative sign is under the radical or in front of it, then simplify what you can, as in part (b) of the example above."
 >}}
+a real number
+not a real number
+{{< /multiplechoice >}}
 
 Given the numbers $-7, \tfrac{14}{5}, 8, \sqrt{5}, 5.9, -\sqrt{64}$: the
 whole numbers are the counting numbers, plus zero — so $8$ is the only
@@ -414,18 +424,25 @@ numbers is $-7, \tfrac{14}{5}, 8, 5.9, -\sqrt{64}$.
 Remember that $5$ is not a perfect square, so $\sqrt{5}$ is irrational.
 All the numbers listed are real numbers.
 
-{{< fillin
-  question="For the given numbers $-3$, $-\sqrt{2}$, $0.3$ repeating, $\tfrac{9}{5}$, $4$, $\sqrt{49}$, list the one irrational number."
-  answer="-\sqrt{2}"
-  answerDisplay="$-\sqrt{2}$"
-  hint="$2$ is not a perfect square, so its square root's decimal form never stops or repeats."
+{{< multiplechoice
+  question="Which of these numbers are whole numbers: $-3$, $-\sqrt{2}$, $0.\overline{3}$, $\tfrac{9}{5}$, $4$, $\sqrt{49}$?"
+  answer="$4$ and $\sqrt{49}$"
+  hint="Simplify any square root you can, then test each number against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
+$4$ only
+$4$ and $\sqrt{49}$
+$-3$, $4$, and $\sqrt{49}$
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="For the given numbers $-3$, $-\sqrt{2}$, $0.3$ repeating, $\tfrac{9}{5}$, $4$, $\sqrt{49}$, two of the numbers are whole numbers. Find their sum."
-  answer="11"
-  hint="$4$ is already a whole number. Simplify $\sqrt{49}$ to find the other one, then add the two together."
+{{< multiplechoice
+  question="Which of these numbers are irrational: $-3$, $-\sqrt{2}$, $0.\overline{3}$, $\tfrac{9}{5}$, $4$, $\sqrt{49}$?"
+  answer="$-\sqrt{2}$ only"
+  hint="Simplify any square root you can, then apply the stop-or-repeat test to each number's decimal form."
 >}}
+$-\sqrt{2}$ only
+$-\sqrt{2}$ and $0.\overline{3}$
+$-\sqrt{2}$ and $\sqrt{49}$
+{{< /multiplechoice >}}
 
 ## Locate fractions on the number line
 
@@ -450,12 +467,12 @@ Finally, look at the improper fractions $\tfrac{7}{4}, -\tfrac{9}{2},
 the denominator. Locating these points may be easier if you change each of
 them to a mixed number:
 
-$$\frac{7}{4} = 1\frac{3}{4} \qquad -\frac{9}{2} = -4\frac{1}{2} \qquad \frac{8}{3} = 2\frac{2}{3}$$
+$$\frac{7}{4} = 1\frac{3}{4} \qquad {-\frac{9}{2}} = -4\frac{1}{2} \qquad \frac{8}{3} = 2\frac{2}{3}$$
 
 The figure below shows the number line with all the points plotted.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -6 to 6 with points plotted at -9/2 (between -5 and -4), -4/5 (between -1 and 0), 1/5 (between 0 and 1), 7/4 (between 1 and 2), 8/3 (between 2 and 3), and 3." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="45" x2="600" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-frac1)" marker-start="url(#arrow-frac1-start)" />
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -6 to 6 with points plotted at -5, -9/2 (halfway between -5 and -4), -4/5 (between -1 and 0), 1/5 (between 0 and 1), 7/4 (between 1 and 2), 8/3 (between 2 and 3), and 3." style="max-width: 620px; display: block; margin: 1.5rem auto">
+  <line x1="8" y1="45" x2="612" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-frac1)" marker-start="url(#arrow-frac1-start)" />
   <defs>
     <marker id="arrow-frac1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-frac1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
@@ -500,16 +517,17 @@ The figure below shows the number line with all the points plotted.
       <line x1="599.5999999999999" y1="38" x2="599.5999999999999" y2="52" stroke="currentColor" stroke-width="1.5" />
       <text x="599.5999999999999" y="70" text-anchor="middle" font-size="14" fill="currentColor">6</text>
     </g>
-  <circle cx="92.44999999999999" cy="45" r="5" fill="currentColor" />
-  <text x="92.44999999999999" y="20" text-anchor="middle" font-size="13" fill="currentColor">-9/2</text>
+  <circle cx="68.3" cy="45" r="5" fill="currentColor" />
+  <circle cx="92.45" cy="45" r="5" fill="currentColor" />
+  <text x="92.45" y="20" text-anchor="middle" font-size="13" fill="currentColor">-9/2</text>
   <circle cx="271.15999999999997" cy="45" r="5" fill="currentColor" />
   <text x="271.15999999999997" y="20" text-anchor="middle" font-size="13" fill="currentColor">-4/5</text>
   <circle cx="319.46" cy="45" r="5" fill="currentColor" />
   <text x="319.46" y="20" text-anchor="middle" font-size="13" fill="currentColor">1/5</text>
   <circle cx="394.325" cy="45" r="5" fill="currentColor" />
   <text x="394.325" y="20" text-anchor="middle" font-size="13" fill="currentColor">7/4</text>
-  <circle cx="438.76099999999997" cy="45" r="5" fill="currentColor" />
-  <text x="438.76099999999997" y="20" text-anchor="middle" font-size="13" fill="currentColor">8/3</text>
+  <circle cx="438.6" cy="45" r="5" fill="currentColor" />
+  <text x="438.6" y="20" text-anchor="middle" font-size="13" fill="currentColor">8/3</text>
   <circle cx="454.7" cy="45" r="5" fill="currentColor" />
 </svg>
 
@@ -530,7 +548,7 @@ $\tfrac{6}{5} = 1\tfrac{1}{5}, -\tfrac{5}{2} = -2\tfrac{1}{2},
 \tfrac{7}{3} = 2\tfrac{1}{3}$.
 
 <svg viewBox="0 0 620 90" role="img" aria-label="A number line from -6 to 6 with points plotted at -3, -5/2 (between -3 and -2), -1/4 (between -1 and 0), 3/4 (between 0 and 1), 6/5 (between 1 and 2), 7/3 (between 2 and 3), and 4." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="45" x2="600" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-frac2)" marker-start="url(#arrow-frac2-start)" />
+  <line x1="8" y1="45" x2="612" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-frac2)" marker-start="url(#arrow-frac2-start)" />
   <defs>
     <marker id="arrow-frac2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-frac2-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
@@ -581,11 +599,11 @@ $\tfrac{6}{5} = 1\tfrac{1}{5}, -\tfrac{5}{2} = -2\tfrac{1}{2},
   <circle cx="297.72499999999997" cy="45" r="5" fill="currentColor" />
   <text x="297.72499999999997" y="20" text-anchor="middle" font-size="13" fill="currentColor">-1/4</text>
   <circle cx="346.025" cy="45" r="5" fill="currentColor" />
-  <text x="346.025" y="20" text-anchor="middle" font-size="13" fill="currentColor">3/4</text>
+  <text x="341" y="20" text-anchor="middle" font-size="13" fill="currentColor">3/4</text>
   <circle cx="367.76" cy="45" r="5" fill="currentColor" />
-  <text x="367.76" y="20" text-anchor="middle" font-size="13" fill="currentColor">6/5</text>
-  <circle cx="422.339" cy="45" r="5" fill="currentColor" />
-  <text x="422.339" y="20" text-anchor="middle" font-size="13" fill="currentColor">7/3</text>
+  <text x="373" y="20" text-anchor="middle" font-size="13" fill="currentColor">6/5</text>
+  <circle cx="422.5" cy="45" r="5" fill="currentColor" />
+  <text x="422.5" y="20" text-anchor="middle" font-size="13" fill="currentColor">7/3</text>
   <circle cx="503" cy="45" r="5" fill="currentColor" />
 </svg>
 
@@ -609,6 +627,43 @@ As we move from left to right on a number line, the values increase.
 **Example.** Order each of the following pairs of numbers, using $<$ or
 $>$: (a) $-\tfrac{2}{3}\ \_\_\_\ -1$ (b) $-3\tfrac{1}{2}\ \_\_\_\ -3$
 (c) $-\tfrac{3}{4}\ \_\_\_\ -\tfrac{1}{4}$ (d) $-2\ \_\_\_\ -\tfrac{8}{3}$.
+It may help to refer to the number line below, which plots all of these
+numbers.
+
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -4 to 1 with points plotted at -3 1/2 (halfway between -4 and -3), -3, -8/3 (between -3 and -2, closer to -3), -2, -1, -3/4, -2/3, and -1/4 (the last three between -1 and 0, in that order from left to right)." style="max-width: 620px; display: block; margin: 1.5rem auto">
+  <line x1="18" y1="45" x2="612" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-ord1)" marker-start="url(#arrow-ord1-start)" />
+  <defs>
+    <marker id="arrow-ord1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
+    <marker id="arrow-ord1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
+  </defs>
+  <line x1="40" y1="38" x2="40" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <text x="40" y="70" text-anchor="middle" font-size="14" fill="currentColor">-4</text>
+  <line x1="150" y1="38" x2="150" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <text x="150" y="70" text-anchor="middle" font-size="14" fill="currentColor">-3</text>
+  <line x1="260" y1="38" x2="260" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <text x="260" y="70" text-anchor="middle" font-size="14" fill="currentColor">-2</text>
+  <line x1="370" y1="38" x2="370" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <text x="370" y="70" text-anchor="middle" font-size="14" fill="currentColor">-1</text>
+  <line x1="480" y1="38" x2="480" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <text x="480" y="70" text-anchor="middle" font-size="14" fill="currentColor">0</text>
+  <line x1="590" y1="38" x2="590" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <text x="590" y="70" text-anchor="middle" font-size="14" fill="currentColor">1</text>
+  <circle cx="95" cy="45" r="4" fill="currentColor" />
+  <text x="95" y="20" text-anchor="middle" font-size="13" fill="currentColor">-3 1/2</text>
+  <circle cx="150" cy="45" r="4" fill="currentColor" />
+  <circle cx="186.67" cy="45" r="4" fill="currentColor" />
+  <text x="186.67" y="20" text-anchor="middle" font-size="13" fill="currentColor">-8/3</text>
+  <circle cx="260" cy="45" r="4" fill="currentColor" />
+  <circle cx="370" cy="45" r="4" fill="currentColor" />
+  <circle cx="397.5" cy="45" r="4" fill="currentColor" />
+  <text x="385" y="20" text-anchor="middle" font-size="13" fill="currentColor">-3/4</text>
+  <line x1="385" y1="25" x2="397.5" y2="39" stroke="currentColor" stroke-width="1" />
+  <circle cx="406.67" cy="45" r="4" fill="currentColor" />
+  <text x="419" y="20" text-anchor="middle" font-size="13" fill="currentColor">-2/3</text>
+  <line x1="419" y1="25" x2="406.67" y2="39" stroke="currentColor" stroke-width="1" />
+  <circle cx="452.5" cy="45" r="4" fill="currentColor" />
+  <text x="452.5" y="20" text-anchor="middle" font-size="13" fill="currentColor">-1/4</text>
+</svg>
 
 (a) $-\tfrac{2}{3}$ is to the right of $-1$ on the number line, so
 $-\tfrac{2}{3} > -1$.
@@ -623,21 +678,21 @@ $-\tfrac{3}{4} < -\tfrac{1}{4}$.
 $-2 > -\tfrac{8}{3}$.
 
 {{< fillin
-  question="Order the following pair of numbers, using the complete inequality: $-\tfrac{1}{3}$ or $-1$"
+  question="Order the following pair of numbers, giving the complete inequality: $-\tfrac{1}{3}$ versus $-1$"
   answer="-\frac{1}{3}>-1"
   answerDisplay="$-\tfrac{1}{3} > -1$"
   hint="Compare their positions on the number line — the value farther to the right is greater."
 >}}
 
 {{< fillin
-  question="Order the following pair of numbers, using the complete inequality: $-1\tfrac{1}{2}$ or $-2$"
+  question="Order the following pair of numbers, giving the complete inequality: $-1\tfrac{1}{2}$ versus $-2$"
   answer="-1\frac{1}{2}>-2"
   answerDisplay="$-1\tfrac{1}{2} > -2$"
   hint="Compare their positions on the number line — the value farther to the right is greater."
 >}}
 
 {{< fillin
-  question="Order the following pair of numbers, using the complete inequality: $-\tfrac{2}{3}$ or $-\tfrac{1}{3}$"
+  question="Order the following pair of numbers, giving the complete inequality: $-\tfrac{2}{3}$ versus $-\tfrac{1}{3}$"
   answer="-\frac{2}{3}<-\frac{1}{3}"
   answerDisplay="$-\tfrac{2}{3} < -\tfrac{1}{3}$"
   hint="Compare their positions on the number line — the value farther to the left is smaller."
@@ -657,7 +712,7 @@ $1$ into $10$ equal parts. Now label the parts $0.1, 0.2, 0.3, 0.4, 0.5,
 0.6, 0.7, 0.8, 0.9, 1.0$. We write $0$ as $0.0$ and $1$ as $1.0$, so that the
 numbers are consistently in tenths. Finally, mark $0.4$ on the number line.
 
-<svg viewBox="0 0 620 80" role="img" aria-label="A number line from 0.0 to 1.0, divided into tenths, with a point plotted at 0.4." style="max-width: 620px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 620 80" role="img" aria-label="A number line from 0.0 to 1.0, divided into tenths, each tick labeled, with a point plotted on the 0.4 mark." style="max-width: 620px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-dec1)" marker-start="url(#arrow-dec1-start)" />
   <defs>
     <marker id="arrow-dec1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
@@ -695,25 +750,25 @@ numbers are consistently in tenths. Finally, mark $0.4$ on the number line.
       <text x="517" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.9</text>
     </g><g>
       <line x1="570" y1="28" x2="570" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="570" y="60" text-anchor="middle" font-size="13" fill="currentColor">1</text>
+      <text x="570" y="60" text-anchor="middle" font-size="13" fill="currentColor">1.0</text>
     </g>
   <circle cx="252" cy="35" r="5" fill="currentColor" />
 </svg>
 
 {{< fillin
-  question="Locate $0.6$ on the number line by giving its equivalent tenths fraction with denominator $10$."
+  question="Locate $0.6$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."
   answer="\frac{6}{10}"
   answerForm="denominator:10"
   answerDisplay="$\tfrac{6}{10}$"
-  hint="$0.6$ means $6$ tenths."
+  hint="Divide the interval from $0$ to $1$ into ten equal parts; the tenths digit counts how many parts the point lies from $0$."
 >}}
 
 {{< fillin
-  question="Locate $0.9$ on the number line by giving its equivalent tenths fraction with denominator $10$."
+  question="Locate $0.9$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."
   answer="\frac{9}{10}"
   answerForm="denominator:10"
   answerDisplay="$\tfrac{9}{10}$"
-  hint="$0.9$ means $9$ tenths."
+  hint="Divide the interval from $0$ to $1$ into ten equal parts; the tenths digit counts how many parts the point lies from $0$."
 >}}
 
 **Example.** Locate $-0.74$ on the number line.
@@ -722,12 +777,13 @@ The decimal $-0.74$ is equivalent to $-\tfrac{74}{100}$, so it is located
 between $0$ and $-1$. On a number line, mark off and label the hundredths in
 the interval between $0$ and $-1$.
 
-<svg viewBox="0 0 620 80" role="img" aria-label="A number line from -1.00 to 0.00, marked in tenths, with a point plotted at -0.74, located between -0.70 and -0.80." style="max-width: 620px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 620 80" role="img" aria-label="A number line from -1.00 to 0.00 with a tick mark at every hundredth and a label at every tenth, and a point plotted and labeled at -0.74, between -0.80 and -0.70." style="max-width: 620px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-dec2)" marker-start="url(#arrow-dec2-start)" />
   <defs>
     <marker id="arrow-dec2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-dec2-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
   </defs>
+  <path d="M45.3 31 V39 M50.6 31 V39 M55.9 31 V39 M61.2 31 V39 M66.5 31 V39 M71.8 31 V39 M77.1 31 V39 M82.4 31 V39 M87.7 31 V39 M98.3 31 V39 M103.6 31 V39 M108.9 31 V39 M114.2 31 V39 M119.5 31 V39 M124.8 31 V39 M130.1 31 V39 M135.4 31 V39 M140.7 31 V39 M151.3 31 V39 M156.6 31 V39 M161.9 31 V39 M167.2 31 V39 M172.5 31 V39 M177.8 31 V39 M183.1 31 V39 M188.4 31 V39 M193.7 31 V39 M204.3 31 V39 M209.6 31 V39 M214.9 31 V39 M220.2 31 V39 M225.5 31 V39 M230.8 31 V39 M236.1 31 V39 M241.4 31 V39 M246.7 31 V39 M257.3 31 V39 M262.6 31 V39 M267.9 31 V39 M273.2 31 V39 M278.5 31 V39 M283.8 31 V39 M289.1 31 V39 M294.4 31 V39 M299.7 31 V39 M310.3 31 V39 M315.6 31 V39 M320.9 31 V39 M326.2 31 V39 M331.5 31 V39 M336.8 31 V39 M342.1 31 V39 M347.4 31 V39 M352.7 31 V39 M363.3 31 V39 M368.6 31 V39 M373.9 31 V39 M379.2 31 V39 M384.5 31 V39 M389.8 31 V39 M395.1 31 V39 M400.4 31 V39 M405.7 31 V39 M416.3 31 V39 M421.6 31 V39 M426.9 31 V39 M432.2 31 V39 M437.5 31 V39 M442.8 31 V39 M448.1 31 V39 M453.4 31 V39 M458.7 31 V39 M469.3 31 V39 M474.6 31 V39 M479.9 31 V39 M485.2 31 V39 M490.5 31 V39 M495.8 31 V39 M501.1 31 V39 M506.4 31 V39 M511.7 31 V39 M522.3 31 V39 M527.6 31 V39 M532.9 31 V39 M538.2 31 V39 M543.5 31 V39 M548.8 31 V39 M554.1 31 V39 M559.4 31 V39 M564.7 31 V39" stroke="currentColor" stroke-width="1" fill="none" />
   <g>
       <line x1="40" y1="28" x2="40" y2="42" stroke="currentColor" stroke-width="1.5" />
       <text x="40" y="60" text-anchor="middle" font-size="12" fill="currentColor">-1.00</text>
@@ -767,17 +823,19 @@ the interval between $0$ and $-1$.
 </svg>
 
 {{< fillin
-  question="Locate $-0.6$ on the number line: is it to the left or to the right of $-0.7$? Give the complete inequality comparing $-0.6$ to $-0.7$."
-  answer="-0.6>-0.7"
-  answerDisplay="$-0.6 > -0.7$"
-  hint="Larger (less negative) decimals sit to the right on the number line."
+  question="Locate $-0.6$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."
+  answer="-\frac{6}{10}"
+  answerForm="denominator:10"
+  answerDisplay="$-\tfrac{6}{10}$"
+  hint="The point lies between $0$ and $-1$. Divide that interval into ten equal parts; the tenths digit counts how many parts the point lies from $0$, and the sign stays negative."
 >}}
 
 {{< fillin
-  question="Locate $-0.7$ on the number line: is it to the left or to the right of $-0.6$? Give the complete inequality comparing $-0.7$ to $-0.6$."
-  answer="-0.7<-0.6"
-  answerDisplay="$-0.7 < -0.6$"
-  hint="Smaller (more negative) decimals sit to the left on the number line."
+  question="Locate $-0.7$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."
+  answer="-\frac{7}{10}"
+  answerForm="denominator:10"
+  answerDisplay="$-\tfrac{7}{10}$"
+  hint="The point lies between $0$ and $-1$. Divide that interval into ten equal parts; the tenths digit counts how many parts the point lies from $0$, and the sign stays negative."
 >}}
 
 Which is larger, $0.04$ or $0.40$? If you think of this as money, you know
@@ -786,9 +844,45 @@ that \$0.40 (forty cents) is greater than \$0.04 (four cents). So,
 $$0.40 > 0.04$$
 
 Again, we can use the number line to order numbers. Where are $0.04$ and
-$0.40$ located on the number line? We see that $0.40$ is to the right of
-$0.04$ on the number line. This is another way to demonstrate that
-$0.40 > 0.04$.
+$0.40$ located on the number line?
+
+<svg viewBox="0 0 620 80" role="img" aria-label="A number line from 0.0 to 1.0 with a tick mark at every hundredth and a label at every tenth, and points plotted and labeled at 0.04, between 0.0 and 0.1, and at 0.40, on the 0.4 mark." style="max-width: 620px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-dec3)" marker-start="url(#arrow-dec3-start)" />
+  <defs>
+    <marker id="arrow-dec3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
+    <marker id="arrow-dec3-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
+  </defs>
+  <path d="M45.3 31 V39 M50.6 31 V39 M55.9 31 V39 M61.2 31 V39 M66.5 31 V39 M71.8 31 V39 M77.1 31 V39 M82.4 31 V39 M87.7 31 V39 M98.3 31 V39 M103.6 31 V39 M108.9 31 V39 M114.2 31 V39 M119.5 31 V39 M124.8 31 V39 M130.1 31 V39 M135.4 31 V39 M140.7 31 V39 M151.3 31 V39 M156.6 31 V39 M161.9 31 V39 M167.2 31 V39 M172.5 31 V39 M177.8 31 V39 M183.1 31 V39 M188.4 31 V39 M193.7 31 V39 M204.3 31 V39 M209.6 31 V39 M214.9 31 V39 M220.2 31 V39 M225.5 31 V39 M230.8 31 V39 M236.1 31 V39 M241.4 31 V39 M246.7 31 V39 M257.3 31 V39 M262.6 31 V39 M267.9 31 V39 M273.2 31 V39 M278.5 31 V39 M283.8 31 V39 M289.1 31 V39 M294.4 31 V39 M299.7 31 V39 M310.3 31 V39 M315.6 31 V39 M320.9 31 V39 M326.2 31 V39 M331.5 31 V39 M336.8 31 V39 M342.1 31 V39 M347.4 31 V39 M352.7 31 V39 M363.3 31 V39 M368.6 31 V39 M373.9 31 V39 M379.2 31 V39 M384.5 31 V39 M389.8 31 V39 M395.1 31 V39 M400.4 31 V39 M405.7 31 V39 M416.3 31 V39 M421.6 31 V39 M426.9 31 V39 M432.2 31 V39 M437.5 31 V39 M442.8 31 V39 M448.1 31 V39 M453.4 31 V39 M458.7 31 V39 M469.3 31 V39 M474.6 31 V39 M479.9 31 V39 M485.2 31 V39 M490.5 31 V39 M495.8 31 V39 M501.1 31 V39 M506.4 31 V39 M511.7 31 V39 M522.3 31 V39 M527.6 31 V39 M532.9 31 V39 M538.2 31 V39 M543.5 31 V39 M548.8 31 V39 M554.1 31 V39 M559.4 31 V39 M564.7 31 V39" stroke="currentColor" stroke-width="1" fill="none" />
+  <line x1="40" y1="28" x2="40" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="40" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.0</text>
+  <line x1="93" y1="28" x2="93" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="93" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.1</text>
+  <line x1="146" y1="28" x2="146" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="146" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
+  <line x1="199" y1="28" x2="199" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="199" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.3</text>
+  <line x1="252" y1="28" x2="252" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="252" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.4</text>
+  <line x1="305" y1="28" x2="305" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="305" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.5</text>
+  <line x1="358" y1="28" x2="358" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="358" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.6</text>
+  <line x1="411" y1="28" x2="411" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="411" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.7</text>
+  <line x1="464" y1="28" x2="464" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="464" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.8</text>
+  <line x1="517" y1="28" x2="517" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="517" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.9</text>
+  <line x1="570" y1="28" x2="570" y2="42" stroke="currentColor" stroke-width="1.5" />
+  <text x="570" y="60" text-anchor="middle" font-size="13" fill="currentColor">1.0</text>
+  <circle cx="61.2" cy="35" r="5" fill="currentColor" />
+  <text x="61.2" y="16" text-anchor="middle" font-size="12" fill="currentColor">0.04</text>
+  <circle cx="252" cy="35" r="5" fill="currentColor" />
+  <text x="252" y="16" text-anchor="middle" font-size="12" fill="currentColor">0.40</text>
+</svg>
+
+We see that $0.40$ is to the right of $0.04$ on the number line. This is
+another way to demonstrate that $0.40 > 0.04$.
 
 How does $0.31$ compare to $0.308$? This doesn't translate into money to
 make it easy to compare. But if we convert $0.31$ and $0.308$ into
@@ -846,14 +940,14 @@ therefore $0.64 > 0.6$.
   question="Order the following pair of numbers, giving the complete inequality: $0.42$ versus $0.4$"
   answer="0.42>0.4"
   answerDisplay="$0.42 > 0.4$"
-  hint="Write $0.4$ as $0.40$ so both numbers have the same number of digits, then compare as whole numbers."
+  hint="Write zeros at the end of the decimal with fewer digits until both have the same number of digits, then compare them as whole numbers."
 >}}
 
 {{< fillin
   question="Order the following pair of numbers, giving the complete inequality: $0.18$ versus $0.1$"
   answer="0.18>0.1"
   answerDisplay="$0.18 > 0.1$"
-  hint="Write $0.1$ as $0.10$ so both numbers have the same number of digits, then compare as whole numbers."
+  hint="Write zeros at the end of the decimal with fewer digits until both have the same number of digits, then compare them as whole numbers."
 >}}
 
 **Example.** Order $0.83\ \_\_\_\ 0.803$ using $<$ or $>$.
@@ -871,14 +965,14 @@ $0.830 > 0.803$, and therefore $0.83 > 0.803$.
   question="Order the following pair of numbers, giving the complete inequality: $0.76$ versus $0.706$"
   answer="0.76>0.706"
   answerDisplay="$0.76 > 0.706$"
-  hint="Write $0.76$ as $0.760$ so both numbers have three decimal digits, then compare as whole numbers."
+  hint="Write zeros at the end of the decimal with fewer digits until both have the same number of digits, then compare them as whole numbers."
 >}}
 
 {{< fillin
   question="Order the following pair of numbers, giving the complete inequality: $0.305$ versus $0.35$"
   answer="0.305<0.35"
   answerDisplay="$0.305 < 0.35$"
-  hint="Write $0.35$ as $0.350$ so both numbers have three decimal digits, then compare as whole numbers."
+  hint="Write zeros at the end of the decimal with fewer digits until both have the same number of digits, then compare them as whole numbers."
 >}}
 
 When we order negative decimals, it is important to remember how to order
@@ -919,6 +1013,8 @@ $-0.1 > -0.8$.
 **square root** — a number whose square is $m$; every positive number has a
 positive and a negative square root. **principal square root** — the
 positive square root of a number, denoted by the radical sign $\sqrt{m}$.
+**radical sign** — the symbol $\sqrt{m}$, which denotes the positive square
+root.
 **rational number** — a number of the form $\tfrac{p}{q}$, where $p$ and $q$
 are integers and $q \neq 0$; its decimal form stops or repeats. **irrational
 number** — a number that cannot be written as the ratio of two integers; its
@@ -938,10 +1034,10 @@ decimals that convert to equivalent fractions.
 >}}
 
 {{< fillin
-  question="Simplify: $\sqrt{100}$"
-  answer="10"
+  question="Simplify: $-\sqrt{1}$"
+  answer="-1"
   answerForm="simplified-radical"
-  hint="Ask yourself what positive number, squared, gives $100$."
+  hint="First simplify the square root, then apply the negative sign in front of the radical."
 >}}
 
 ### Identify integers, rational numbers, irrational numbers, real numbers
@@ -964,25 +1060,29 @@ irrational
 rational
 {{< /multiplechoice >}}
 
-{{< fillin
-  question="For the numbers $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$, how many are whole numbers?"
-  answer="3"
-  hint="A whole number is $0, 1, 2, 3, \ldots$ — simplify $\sqrt{36}$ first, then check each number against that list."
+{{< multiplechoice
+  question="Which of these numbers are whole numbers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="$0$, $\sqrt{36}$, and $9$"
+  hint="Simplify any square root you can, then test each number against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
+$0$ and $9$
+$0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\sqrt{36}$, and $9$
+{{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is $-\sqrt{81}$ a real number or not a real number?"
-  answer="real number"
-  hint="Simplify the square root first, then decide whether the resulting signed number is real."
+  question="Is $\sqrt{-36}$ a real number or not a real number?"
+  answer="not a real number"
+  hint="Ask whether any real number, squared, could produce a negative result."
 >}}
 real number
 not a real number
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is $\sqrt{-121}$ a real number or not a real number?"
-  answer="not a real number"
-  hint="Ask whether any real number, squared, could produce a negative result."
+  question="Is $-\sqrt{144}$ a real number or not a real number?"
+  answer="real number"
+  hint="Notice whether the negative sign is under the radical or in front of it, then simplify what you can."
 >}}
 real number
 not a real number
@@ -1015,7 +1115,7 @@ not a real number
 {{< fillin
   question="On the number line, $-1.6$ falls between two consecutive integers. Give the smaller one first, then the larger, separated by a comma."
   answer="-2,-1"
-  hint="Think about which integer $-1.6$ sits closer to, and which is farther from zero."
+  hint="Find the integers on either side of $-1.6$; on the negative side of the number line, the integer farther from zero is the smaller one."
 >}}
 
 {{< fillin
@@ -1029,9 +1129,9 @@ not a real number
   question="Order the following pair of numbers, giving the complete inequality: $0.91$ versus $0.901$"
   answer="0.91>0.901"
   answerDisplay="$0.91 > 0.901$"
-  hint="Write $0.91$ as $0.910$ so both numbers have three decimal digits, then compare as whole numbers."
+  hint="Write zeros at the end of the decimal with fewer digits until both have the same number of digits, then compare them as whole numbers."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.8: The Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-8-the-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-set diagram and the number-line figures as accessible inline graphics; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check checklist; adapted selected end-of-section exercises into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.8: The Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-8-the-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-set diagram and six of the number-line figures as accessible inline graphics, leaving out the point $\tfrac{4}{5}$ that the source's first fraction number line plots although it is not among the numbers being located; corrected parts (b) and (c) of the fraction-ordering example, where the source says $-3\tfrac{1}{2}$ is to the right of $-3$ and $-\tfrac{3}{4}$ is to the right of $-\tfrac{1}{4}$ (each is to the left); omitted the Be Prepared note, the Manipulative Mathematics callouts, the squares and square-roots tables to complete, the summary table of ratios and decimal forms, the unlabeled number line from $-10$ to $0$, the Key Concepts summary (its two boxes appear in the body), and the Self Check checklist; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, posing the list and classification parts as multiple-choice questions and the locate-on-a-number-line problems as questions about where the points fall; and adapted selected end-of-section exercises into interactive practice, posing the locate-on-a-number-line exercises as between-which-integers questions and the whole-numbers list as a multiple-choice question.</small>

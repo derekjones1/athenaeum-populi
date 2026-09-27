@@ -100,12 +100,15 @@ out, so it will not help us.
   question="Lexie is 30 inches tall. Convert her height to feet. Give the answer as a decimal."
   answer="2.5"
   answerForm="decimal"
+  answerDisplay="2.5 feet"
   hint="Multiply 30 inches by the fraction (1 foot)/(12 inches) so the inches divide out."
 >}}
 
 {{< fillin
   question="Rene bought a hose that is 18 yards long. Convert the length to feet."
   answer="54"
+  answerForm="decimal"
+  answerDisplay="54 feet"
   hint="Multiply 18 yards by the fraction (3 feet)/(1 yard) so the yards divide out."
 >}}
 
@@ -143,12 +146,16 @@ Ndula weighs almost $6{,}400$ pounds.
 {{< fillin
   question="Arnold's SUV weighs about 4.3 tons. Convert the weight to pounds."
   answer="8600"
+  answerForm="decimal"
+  answerDisplay="8,600 pounds"
   hint="Multiply 4.3 tons by the fraction (2,000 pounds)/(1 ton)."
 >}}
 
 {{< fillin
   question="The Carnival Destiny cruise ship weighs 51,000 tons. Convert the weight to pounds."
   answer="102000000"
+  answerForm="decimal"
+  answerDisplay="102,000,000 pounds"
   hint="Multiply 51,000 tons by the fraction (2,000 pounds)/(1 ton)."
 >}}
 
@@ -162,12 +169,12 @@ To convert weeks into minutes we will convert weeks into days, days into
 hours, and then hours into minutes. To do this we multiply by conversion
 factors of $1$.
 
-$$9\ \text{wk} \cdot \frac{7\ \text{days}}{1\ \text{wk}} \cdot \frac{24\ \text{hr}}{1\ \text{day}} \cdot \frac{60\ \text{min}}{1\ \text{hr}}$$
+$$\frac{9\ \text{wk}}{1} \cdot \frac{7\ \text{days}}{1\ \text{wk}} \cdot \frac{24\ \text{hr}}{1\ \text{day}} \cdot \frac{60\ \text{min}}{1\ \text{hr}}$$
 
 The weeks divide out with the "per week," the days divide out with the "per
 day," and the hours divide out with the "per hour," leaving only minutes:
 
-$$\frac{9 \cdot 7 \cdot 24 \cdot 60\ \text{min}}{1 \cdot 1 \cdot 1} = 90{,}720\ \text{min}$$
+$$\frac{9 \cdot 7 \cdot 24 \cdot 60\ \text{min}}{1 \cdot 1 \cdot 1 \cdot 1} = 90{,}720\ \text{min}$$
 
 Juliet and her boyfriend will be apart for $90{,}720$ minutes (although it
 may seem like an eternity)!
@@ -175,12 +182,16 @@ may seem like an eternity)!
 {{< fillin
   question="The distance between the earth and the moon is about 250,000 miles. Convert this length to yards. (There are 5,280 feet in a mile and 3 feet in a yard.)"
   answer="440000000"
+  answerForm="decimal"
+  answerDisplay="440,000,000 yards"
   hint="Convert miles to feet first (multiply by 5,280 feet per mile), then feet to yards (divide by 3 feet per yard)."
 >}}
 
 {{< fillin
   question="The astronauts of Expedition 28 on the International Space Station spend 15 weeks in space. Convert the time to minutes."
   answer="151200"
+  answerForm="decimal"
+  answerDisplay="151,200 minutes"
   hint="Chain the conversions: weeks to days ($\times 7$), days to hours ($\times 24$), hours to minutes ($\times 60$)."
 >}}
 
@@ -190,7 +201,7 @@ We will convert gallons to ounces by multiplying by several conversion
 factors, chaining gallons to quarts, quarts to pints, pints to cups, and
 cups to ounces:
 
-$$1\ \text{gallon} \cdot \frac{4\ \text{quarts}}{1\ \text{gallon}} \cdot \frac{2\ \text{pints}}{1\ \text{quart}} \cdot \frac{2\ \text{cups}}{1\ \text{pint}} \cdot \frac{8\ \text{ounces}}{1\ \text{cup}}$$
+$$\frac{1\ \text{gallon}}{1} \cdot \frac{4\ \text{quarts}}{1\ \text{gallon}} \cdot \frac{2\ \text{pints}}{1\ \text{quart}} \cdot \frac{2\ \text{cups}}{1\ \text{pint}} \cdot \frac{8\ \text{ounces}}{1\ \text{cup}}$$
 
 Each unit divides out with the matching unit in the next fraction, leaving
 only ounces:
@@ -202,12 +213,16 @@ There are $128$ ounces in a gallon.
 {{< fillin
   question="How many cups are in 1 gallon?"
   answer="16"
+  answerForm="decimal"
+  answerDisplay="16 cups"
   hint="Chain the conversions: gallons to quarts ($\times 4$), quarts to pints ($\times 2$), pints to cups ($\times 2$)."
 >}}
 
 {{< fillin
   question="How many teaspoons are in 1 cup?"
   answer="48"
+  answerForm="decimal"
+  answerDisplay="48 teaspoons"
   hint="1 cup = 16 tablespoons, and 1 tablespoon = 3 teaspoons."
 >}}
 
@@ -228,25 +243,29 @@ pounds of steak did he buy?
 We will add the weights of the steaks to find the total weight. First add
 the ounces column, then the pounds column:
 
-$$\begin{array}{r} 14\ \text{ounces} \\ 1\ \text{pound}\ \ 2\ \text{ounces} \\ + \; 1\ \text{pound}\ \ 6\ \text{ounces} \\ \hline 2\ \text{pounds}\ \ 22\ \text{ounces} \end{array}$$
+$$\begin{array}{rr} & 14\ \text{ounces} \\ 1\ \text{pound} & 2\ \text{ounces} \\ + \; 1\ \text{pound} & 6\ \text{ounces} \\ \hline 2\ \text{pounds} & 22\ \text{ounces} \end{array}$$
 
 Since $22$ ounces is more than a pound, we convert it to $1$ pound $6$
 ounces and add the pounds:
 
-$$2\ \text{pounds} + 1\ \text{pound}, 6\ \text{ounces} = 3\ \text{pounds},\ 6\ \text{ounces}$$
+$$2\ \text{pounds} + 1\ \text{pound},\ 6\ \text{ounces} = 3\ \text{pounds},\ 6\ \text{ounces}$$
 
 Seymour bought $3$ pounds $6$ ounces of steak.
 
 {{< fillin
-  question="Laura gave birth to triplets weighing 3 pounds 3 ounces, 3 pounds 3 ounces, and 2 pounds 9 ounces. The total birth weight of the three babies works out to a whole number of pounds plus some leftover ounces. What is that whole number of pounds?"
-  answer="8"
-  hint="Add the ounces first (3 + 3 + 9 = 15 ounces, less than a pound), then add the pounds $(3 + 3 + 2)$."
+  question="Laura gave birth to triplets weighing 3 pounds 3 ounces, 3 pounds 3 ounces, and 2 pounds 9 ounces. What was the total birth weight of the three babies, in ounces?"
+  answer="143"
+  answerForm="decimal"
+  answerDisplay="143 ounces, or 8 pounds 15 ounces"
+  hint="Convert each weight to ounces first (1 pound = 16 ounces), then add."
 >}}
 
 {{< fillin
-  question="Stan cut two pieces of crown molding for his family room that were 8 feet 7 inches and 12 feet 11 inches. The total length works out to a whole number of feet plus some leftover inches. What is that whole number of feet?"
-  answer="21"
-  hint="Add the inches first (7 + 11 = 18 inches, which is more than a foot), convert the extra foot, then add the feet."
+  question="Stan cut two pieces of crown molding for his family room that were 8 feet 7 inches and 12 feet 11 inches. What was the total length of the molding, in inches?"
+  answer="258"
+  answerForm="decimal"
+  answerDisplay="258 inches, or 21 feet 6 inches"
+  hint="Convert each length to inches first (1 foot = 12 inches), then add."
 >}}
 
 **Example.** Anthony bought four planks of wood that were each $6$ feet $4$
@@ -264,15 +283,19 @@ $$24\ \text{feet} + 1\ \text{foot},\ 4\ \text{inches} = 25\ \text{feet},\ 4\ \te
 Anthony bought $25$ feet and $4$ inches of wood.
 
 {{< fillin
-  question="Henri wants to triple his spaghetti sauce recipe that uses 1 pound 8 ounces of ground turkey. The tripled amount works out to a whole number of pounds plus some leftover ounces. What is that whole number of pounds?"
-  answer="4"
-  hint="Multiply the ounces by 3 ($8 \times 3 = 24$ ounces, more than a pound), convert, then multiply and add the pounds."
+  question="Henri wants to triple his spaghetti sauce recipe that uses 1 pound 8 ounces of ground turkey. How many ounces of ground turkey will he need?"
+  answer="72"
+  answerForm="decimal"
+  answerDisplay="72 ounces, or 4 pounds 8 ounces"
+  hint="Convert 1 pound 8 ounces to ounces first (1 pound = 16 ounces), then triple it."
 >}}
 
 {{< fillin
-  question="Joellen wants to double a solution of 5 gallons 3 quarts. The doubled amount works out to a whole number of gallons plus some leftover quarts. What is that whole number of gallons?"
-  answer="11"
-  hint="Multiply the quarts by 2 ($3 \times 2 = 6$ quarts, more than a gallon), convert, then multiply and add the gallons."
+  question="Joellen wants to double a solution of 5 gallons 3 quarts. How many quarts of solution will she have in all?"
+  answer="46"
+  answerForm="decimal"
+  answerDisplay="46 quarts, or 11 gallons 2 quarts"
+  hint="Convert 5 gallons 3 quarts to quarts first (1 gallon = 4 quarts), then double it."
 >}}
 
 ## Make unit conversions in the metric system
@@ -325,12 +348,16 @@ Nick ran $10{,}000$ meters.
 {{< fillin
   question="Sandy completed her first 5K race! How many meters did she run?"
   answer="5000"
+  answerForm="decimal"
+  answerDisplay="5,000 meters"
   hint="Multiply 5 kilometers by 1,000 meters per kilometer."
 >}}
 
 {{< fillin
   question="Herman bought a rug 2.5 meters in length. How many centimeters is the length?"
   answer="250"
+  answerForm="decimal"
+  answerDisplay="250 centimeters"
   hint="1 meter = 100 centimeters, so multiply 2.5 by 100."
 >}}
 
@@ -351,12 +378,16 @@ The baby weighed $3.2$ kilograms.
 {{< fillin
   question="Kari's newborn baby weighed 2,800 grams. How many kilograms did the baby weigh?"
   answer="2.8"
+  answerForm="decimal"
+  answerDisplay="2.8 kilograms"
   hint="Divide 2,800 by 1,000 to convert grams to kilograms."
 >}}
 
 {{< fillin
   question="Anderson received a package that was marked 4,500 grams. How many kilograms did this package weigh?"
   answer="4.5"
+  answerForm="decimal"
+  answerDisplay="4.5 kilograms"
   hint="Divide 4,500 by 1,000 to convert grams to kilograms."
 >}}
 
@@ -397,18 +428,24 @@ $1\ \text{liter} = 1{,}000\ \text{milliliters}$.
 {{< fillin
   question="Convert 725 L to kiloliters."
   answer="0.725"
+  answerForm="decimal"
+  answerDisplay="0.725 kiloliters"
   hint="Move the decimal three places to the left (divide by 1,000)."
 >}}
 
 {{< fillin
   question="Convert 6.3 L to milliliters."
   answer="6300"
+  answerForm="decimal"
+  answerDisplay="6,300 milliliters"
   hint="Move the decimal three places to the right (multiply by 1,000)."
 >}}
 
 {{< fillin
   question="Convert 350 hL to liters."
   answer="35000"
+  answerForm="decimal"
+  answerDisplay="35,000 liters"
   hint="1 hectoliter = 100 liters, so multiply 350 by 100."
 >}}
 
@@ -434,13 +471,17 @@ Ryland is $0.75$ m taller than his brother.
 {{< fillin
   question="Mariella is 1.58 meters tall. Her daughter is 75 centimeters tall. How much taller, in centimeters, is Mariella than her daughter?"
   answer="83"
-  hint="Convert 1.58 meters to centimeters (158 cm), then subtract 75 cm."
+  answerForm="decimal"
+  answerDisplay="83 centimeters"
+  hint="Convert the meters to centimeters first (1 meter = 100 centimeters), then subtract like units."
 >}}
 
 {{< fillin
   question="The fence around Hank's yard is 2 meters high. Hank is 96 centimeters tall. How much shorter, in meters, than the fence is Hank?"
   answer="1.04"
-  hint="Convert 96 centimeters to meters (0.96 m), then subtract from 2 meters."
+  answerForm="decimal"
+  answerDisplay="1.04 meters"
+  hint="Convert the centimeters to meters first (1 centimeter = 0.01 meter), then subtract like units."
 >}}
 
 **Example.** Dena's recipe for lentil soup calls for $150$ milliliters of
@@ -462,12 +503,16 @@ Dena needs $0.45$ liters of olive oil.
 {{< fillin
   question="A recipe for Alfredo sauce calls for 250 milliliters of milk. Renata is making pasta with Alfredo sauce for a big party and needs to multiply the recipe amounts by 8. How many liters of milk will she need?"
   answer="2"
+  answerForm="decimal"
+  answerDisplay="2 liters"
   hint="Multiply 250 mL by 8, then convert the result to liters by dividing by 1,000."
 >}}
 
 {{< fillin
   question="To make one pan of baklava, Dorothea needs 400 grams of filo pastry. If Dorothea plans to make 6 pans of baklava, how many kilograms of filo pastry will she need?"
   answer="2.4"
+  answerForm="decimal"
+  answerDisplay="2.4 kilograms"
   hint="Multiply 400 grams by 6, then convert the result to kilograms by dividing by 1,000."
 >}}
 
@@ -509,14 +554,18 @@ are in the bottle? Round to the nearest tenth of an ounce.
 The water bottle has $16.7$ ounces.
 
 {{< fillin
-  question="How many quarts of soda are in a 2-liter bottle? Round to the nearest tenth."
-  answer="2.1"
-  hint="Multiply 2 liters by the conversion factor 1.06 quarts per liter."
+  question="How many quarts of soda are in a 2-liter bottle? Use 1 liter = 1.06 quarts."
+  answer="2.12"
+  answerForm="decimal"
+  answerDisplay="2.12 quarts"
+  hint="Multiply by a conversion factor with liters in the denominator, so the liters divide out."
 >}}
 
 {{< fillin
   question="How many liters are in 4 quarts of milk? Round to the nearest tenth."
   answer="3.8"
+  answerForm="decimal"
+  answerDisplay="3.8 liters"
   hint="Multiply 4 quarts by the conversion factor 0.95 liters per quart."
 >}}
 
@@ -532,15 +581,19 @@ rest stop was in $100$ kilometers. How many miles until the next rest stop?
 Soleil will travel $62$ miles.
 
 {{< fillin
-  question="The height of Mount Kilimanjaro is 5,895 meters. Convert the height to feet. Round to the nearest whole foot."
+  question="The height of Mount Kilimanjaro is 5,895 meters. Convert the height to feet, using 1 meter = 3.28 feet. Round to the nearest whole foot."
   answer="19336"
-  hint="1 meter = 3.28 feet, so multiply 5,895 by 3.28."
+  answerForm="decimal"
+  answerDisplay="19,336 feet"
+  hint="Multiply by a conversion factor with meters in the denominator, so the meters divide out; then round."
 >}}
 
 {{< fillin
-  question="The flight distance from New York City to London is 5,586 kilometers. Convert the distance to miles. Round to the nearest whole mile."
-  answer="3470"
-  hint="Divide 5,586 kilometers by 1.61 kilometers per mile."
+  question="The flight distance from New York City to London is 5,586 kilometers. Convert the distance to miles. Round to the nearest hundredth of a mile."
+  answer="3469.57"
+  answerForm="decimal"
+  answerDisplay="3,469.57 miles"
+  hint="Divide by 1.61 kilometers per mile, so the kilometers divide out; then round."
 >}}
 
 ## Convert between Fahrenheit and Celsius temperatures
@@ -585,12 +638,16 @@ So $50\degree\text{F}$ is equivalent to $10\degree\text{C}$.
 {{< fillin
   question="Convert the Fahrenheit temperature to degrees Celsius: 59 degrees Fahrenheit."
   answer="15"
+  answerForm="decimal"
+  answerDisplay="$15\degree\text{C}$"
   hint="Substitute $59$ for $F$ in $C = \tfrac{5}{9}(F - 32)$."
 >}}
 
 {{< fillin
   question="Convert the Fahrenheit temperature to degrees Celsius: 41 degrees Fahrenheit."
   answer="5"
+  answerForm="decimal"
+  answerDisplay="$5\degree\text{C}$"
   hint="Substitute $41$ for $F$ in $C = \tfrac{5}{9}(F - 32)$."
 >}}
 
@@ -610,15 +667,19 @@ $$F = 68$$
 So $20\degree\text{C}$ is equivalent to $68\degree\text{F}$.
 
 {{< fillin
-  question="Convert the Celsius temperature to degrees Fahrenheit: the temperature in Helsinki, Finland, was 15 degrees Celsius."
-  answer="59"
-  hint="Substitute $15$ for $C$ in $F = \tfrac{9}{5}C + 32$."
+  question="What is $-10$ degrees Celsius in degrees Fahrenheit?"
+  answer="14"
+  answerForm="decimal"
+  answerDisplay="$14\degree\text{F}$"
+  hint="Substitute $-10$ for $C$ in $F = \tfrac{9}{5}C + 32$; multiply before adding."
 >}}
 
 {{< fillin
-  question="Convert the Celsius temperature to degrees Fahrenheit: the temperature in Sydney, Australia, was 10 degrees Celsius."
-  answer="50"
-  hint="Substitute $10$ for $C$ in $F = \tfrac{9}{5}C + 32$."
+  question="Convert the Celsius temperature to degrees Fahrenheit: 22 degrees Celsius."
+  answer="71.6"
+  answerForm="decimal"
+  answerDisplay="$71.6\degree\text{F}$"
+  hint="Substitute $22$ for $C$ in $F = \tfrac{9}{5}C + 32$; multiply before adding."
 >}}
 
 ## Key terms
@@ -643,12 +704,16 @@ freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 {{< fillin
   question="A park bench is 6 feet long. How many inches long is the bench?"
   answer="72"
+  answerForm="decimal"
+  answerDisplay="72 inches"
   hint="Multiply 6 feet by the conversion factor 12 inches per foot."
 >}}
 
 {{< fillin
   question="A killer whale weighs 4.6 tons. How many pounds does the killer whale weigh?"
   answer="9200"
+  answerForm="decimal"
+  answerDisplay="9,200 pounds"
   hint="Multiply 4.6 tons by the conversion factor 2,000 pounds per ton."
 >}}
 
@@ -657,26 +722,34 @@ freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 {{< fillin
   question="One day Anya kept track of the number of minutes she spent driving: 45, 10, 8, 65, 20, and 35. How many hours did Anya spend driving that day?"
   answer="3.05"
+  answerForm="decimal"
+  answerDisplay="3.05 hours"
   hint="Add the minutes together, then divide the total by 60 to convert to hours."
 >}}
 
 {{< fillin
   question="Leilani wants to make 8 placemats. Each placemat needs 18 inches of fabric. How many yards of fabric will she need for all 8 placemats?"
   answer="4"
+  answerForm="decimal"
+  answerDisplay="4 yards"
   hint="Multiply 18 inches by 8 to find the total inches, then convert inches to yards (36 inches per yard)."
 >}}
 
 ### Make unit conversions in the metric system
 
 {{< fillin
-  question="Ghalib ran 5 kilometers. How many meters did he run?"
-  answer="5000"
-  hint="Multiply 5 kilometers by 1,000 meters per kilometer."
+  question="Mount Whitney is 3,072 meters tall. Convert the height to kilometers."
+  answer="3.072"
+  answerForm="decimal"
+  answerDisplay="3.072 kilometers"
+  hint="Multiply by 1 kilometer per 1,000 meters, the same as moving the decimal three places to the left."
 >}}
 
 {{< fillin
   question="June's multivitamin contains 1,500 milligrams of calcium. How many grams of calcium is that?"
   answer="1.5"
+  answerForm="decimal"
+  answerDisplay="1.5 grams"
   hint="Divide 1,500 by 1,000 to convert milligrams to grams."
 >}}
 
@@ -685,12 +758,16 @@ freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 {{< fillin
   question="Matthias is 1.8 meters tall. His son is 89 centimeters tall. How much taller, in centimeters, is Matthias than his son?"
   answer="91"
-  hint="Convert 1.8 meters to centimeters (180 cm), then subtract 89 cm."
+  answerForm="decimal"
+  answerDisplay="91 centimeters"
+  hint="Convert the meters to centimeters first (1 meter = 100 centimeters), then subtract like units."
 >}}
 
 {{< fillin
   question="Harry mailed 5 packages that each weighed 420 grams. What was the total weight of the packages in kilograms?"
   answer="2.1"
+  answerForm="decimal"
+  answerDisplay="2.1 kilograms"
   hint="Multiply 420 grams by 5, then convert the total to kilograms by dividing by 1,000."
 >}}
 
@@ -699,12 +776,16 @@ freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 {{< fillin
   question="A 5K run is 5 kilometers long. Convert this length to miles. Round to the nearest tenth."
   answer="3.1"
+  answerForm="decimal"
+  answerDisplay="3.1 miles"
   hint="Divide 5 kilometers by 1.61 kilometers per mile."
 >}}
 
 {{< fillin
-  question="Ozzie put 14 gallons of gas in his truck. How many liters is that? Round to the nearest tenth."
+  question="Ozzie put 14 gallons of gas in his truck. How many liters is that? Use 1 quart = 0.95 liters, and round to the nearest tenth."
   answer="53.2"
+  answerForm="decimal"
+  answerDisplay="53.2 liters"
   hint="Convert gallons to quarts (multiply by 4), then quarts to liters (multiply by 0.95 liters per quart)."
 >}}
 
@@ -713,15 +794,19 @@ freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 {{< fillin
   question="Convert the Fahrenheit temperature to degrees Celsius: 86 degrees Fahrenheit."
   answer="30"
+  answerForm="decimal"
+  answerDisplay="$30\degree\text{C}$"
   hint="Substitute $86$ for $F$ in $C = \tfrac{5}{9}(F - 32)$."
 >}}
 
 {{< fillin
-  question="Convert the Celsius temperature to degrees Fahrenheit: 5 degrees Celsius."
-  answer="41"
-  hint="Substitute $5$ for $C$ in $F = \tfrac{9}{5}C + 32$."
+  question="Convert the Celsius temperature to degrees Fahrenheit: 43 degrees Celsius."
+  answer="109.4"
+  answerForm="decimal"
+  answerDisplay="$109.4\degree\text{F}$"
+  hint="Substitute $43$ for $C$ in $F = \tfrac{9}{5}C + 32$; multiply before adding."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.10: Systems of Measurement](https://openstax.org/books/elementary-algebra-2e/pages/1-10-systems-of-measurement) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the U.S.-system, metric-system, and U.S.-to-metric conversion-factor tables as markdown tables; omitted the Be Prepared quiz, figure images (ruler, measuring cup, and scale), and Self Check checklist; and converted the practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.10: Systems of Measurement](https://openstax.org/books/elementary-algebra-2e/pages/1-10-systems-of-measurement) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the U.S.-system, metric-system, and U.S.-to-metric conversion-factor tables as markdown tables; omitted the Be Prepared quiz, figure images (ruler, measuring cup, and scale), the thermometer figure (its reference temperatures are given in prose instead), the Key Concepts summary, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback, keeping one part of the two-part hectoliter Try It and replacing the two Celsius-to-Fahrenheit Try Its, whose answers the page already prints in the Fahrenheit-to-Celsius example and Try It, with end-of-section exercises; restated the four mixed-unit U.S.-system Try It answers as single-unit quantities; named the conversion factor in the soda, Kilimanjaro, and gasoline questions, whose answers depend on which of the table's two factors is used; and adapted selected end-of-section exercises into the interactive Practice block.</small>

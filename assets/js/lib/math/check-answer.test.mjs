@@ -888,6 +888,10 @@ const formCases = [
   ['(-14)^2x^2', '196x^2', 'single-term', 'form'],
   ['6\\cdot x+6\\cdot8', '6x+48', 'expanded', 'form'],
   ['6\\cdot x+48', '6x+48', 'expanded', 'correct'],
+  // A numeral fraction is a numeral on either side of the written product.
+  ['\\frac{1}{4}\\cdot3q+\\frac{1}{4}\\cdot12', '\\frac{3}{4}q+3', 'expanded distributed', 'form'],
+  ['\\frac{2}{5}\\cdot\\frac{5}{2}(20y+50)', '20y+50', 'expanded', 'form'],
+  ['\\frac{3}{4}q+3', '\\frac{3}{4}q+3', 'expanded distributed', 'correct'],
   ['\\frac{1}{y^{7-2}}', '\\frac{1}{y^5}', 'single-fraction', 'form'],
   ['\\frac{3p+6p}{8}', '\\frac{9p}{8}', 'single-fraction', 'form'],
   ['\\frac{-7+8}{d}', '\\frac{1}{d}', 'single-fraction', 'form'],

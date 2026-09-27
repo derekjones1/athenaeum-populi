@@ -23,7 +23,14 @@ weight: 7
 **Decimals** are another way of writing fractions whose denominators are
 powers of $10$.
 
-$$0.1 = \tfrac{1}{10} \qquad 0.01 = \tfrac{1}{100} \qquad 0.001 = \tfrac{1}{1{,}000} \qquad 0.0001 = \tfrac{1}{10{,}000}$$
+$$
+\begin{array}{rcl}
+0.1 &=& \tfrac{1}{10} \\[4pt]
+0.01 &=& \tfrac{1}{100} \\[4pt]
+0.001 &=& \tfrac{1}{1{,}000} \\[4pt]
+0.0001 &=& \tfrac{1}{10{,}000}
+\end{array}
+$$
 
 So $0.1$ is "one tenth," $0.01$ is "one hundredth," $0.001$ is "one
 thousandth," and $0.0001$ is "one ten-thousandth." Notice that "ten
@@ -86,11 +93,11 @@ number. Let's see how to write a decimal from its name.
 
 The word "and" locates the decimal point — place a decimal point under the
 word "and," and translate the words before "and" into the whole number
-placed to its left: $14.\underline{\ \ }\underline{\ \ }\underline{\ \ }$.
+placed to its left: $14.\underline{\ \phantom{0}\ }\;\underline{\ \phantom{0}\ }\;\underline{\ \phantom{0}\ }$.
 The last word is "thousandths," so we need three decimal places to the
 right of the decimal point. Translate the words after "and" into the
 number to the right of the decimal point, putting the final digit in the
-last place: $14.\ \_2\ \_4$, filling in a zero for the empty tenths place:
+last place: $14.\underline{\ \phantom{0}\ }\;\underline{\ 2\ }\;\underline{\ 4\ }$, filling in a zero for the empty tenths place:
 $14.024$. So "fourteen and twenty-four thousandths" is written $14.024$.
 
 {{< callout type="info" >}}
@@ -151,13 +158,15 @@ is $18.38$.
 {{< fillin
   question="Round to the nearest hundredth: 1.047."
   answer="1.05"
-  hint="The digit right after the hundredths place is 7, which is greater than or equal to 5."
+  answerForm="decimal"
+  hint="Underline the digit just to the right of the hundredths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round to the nearest hundredth: 9.173."
   answer="9.17"
-  hint="The digit right after the hundredths place is 3, which is less than 5."
+  answerForm="decimal"
+  hint="Underline the digit just to the right of the hundredths place and compare it with $5$."
 >}}
 
 **Example.** Round $18.379$ to (a) the nearest tenth (b) the nearest whole
@@ -177,13 +186,15 @@ $18$. So $18.379$ rounded to the nearest whole number is $18$.
 {{< fillin
   question="Round 6.582 to the nearest tenth."
   answer="6.6"
-  hint="The digit right after the tenths place is 8, which is greater than or equal to 5, so round the tenths digit up."
+  answerForm="decimal"
+  hint="Underline the digit just to the right of the tenths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round 15.2175 to the nearest thousandth."
   answer="15.218"
-  hint="The digit right after the thousandths place is 5, so round the thousandths digit up."
+  answerForm="decimal"
+  hint="Underline the digit just to the right of the thousandths place and compare it with $5$."
 >}}
 
 ## Add and subtract decimals
@@ -299,14 +310,14 @@ product is negative: $(-3.9)(4.075) = -15.8925$.
   question="Multiply: $-4.5(6.107)$."
   answer="-27.4815"
   answerForm="decimal"
-  hint="Multiply $45$ by $6{,}107$ as whole numbers, then place the decimal point so the product has $1 + 3 = 4$ decimal places. The signs are different, so the product is negative."
+  hint="Determine the sign of the product first. Then multiply as whole numbers and place the decimal point so the product has as many decimal places as the two factors together."
 >}}
 
 {{< fillin
   question="Multiply: $-10.79(8.12)$."
   answer="-87.6148"
   answerForm="decimal"
-  hint="Multiply $1079$ by $812$ as whole numbers, then place the decimal point so the product has $2 + 2 = 4$ decimal places. The signs are different, so the product is negative."
+  hint="Determine the sign of the product first. Then multiply as whole numbers and place the decimal point so the product has as many decimal places as the two factors together."
 >}}
 
 In many of your other classes, especially in the sciences, you will
@@ -338,14 +349,16 @@ after the decimal point: $5.63(1{,}000) = 5{,}630$.
 {{< fillin
   question="Multiply $2.58$ by $1{,}000$."
   answer="2580"
-  answerDisplay="2,580"
+  answerForm="decimal"
+  answerDisplay="$2{,}580$"
   hint="Move the decimal point right by the number of zeros in the power of $10$ (three zeros), adding zeros at the end of the number as needed."
 >}}
 
 {{< fillin
   question="Multiply $14.2$ by $100$."
   answer="1420"
-  answerDisplay="1,420"
+  answerForm="decimal"
+  answerDisplay="$1{,}420$"
   hint="Move the decimal point right by the number of zeros in the power of $10$ (two zeros), adding zeros at the end of the number as needed."
 >}}
 
@@ -393,14 +406,14 @@ sign: $-25.65 \div (-0.06) = 427.5$.
   question="Divide: $-23.492 \div (-0.04)$."
   answer="587.3"
   answerForm="decimal"
-  hint="The signs are the same, so the quotient is positive. Move both decimal points $2$ places to the right, then divide $2349.2$ by $4$."
+  hint="Determine the sign of the quotient first. Then move both decimal points right until the divisor is a whole number, and divide."
 >}}
 
 {{< fillin
   question="Divide: $-4.11 \div (-0.12)$."
   answer="34.25"
   answerForm="decimal"
-  hint="The signs are the same, so the quotient is positive. Move both decimal points $2$ places to the right, then divide $411$ by $12$."
+  hint="Determine the sign of the quotient first. Then move both decimal points right until the divisor is a whole number, and divide."
 >}}
 
 A common application of dividing whole numbers into decimals is when we
@@ -422,6 +435,7 @@ $\text{\textdollar}3.99 \div 24 \approx \text{\textdollar}0.17$.
 {{< fillin
   question="Divide: \$6.99 divided by 36. Round to the nearest cent."
   answer="0.19"
+  answerForm="decimal"
   answerDisplay="\$0.19"
   hint="Carry the division to the thousandths place, then round the quotient to the nearest hundredth (cent)."
 >}}
@@ -429,6 +443,7 @@ $\text{\textdollar}3.99 \div 24 \approx \text{\textdollar}0.17$.
 {{< fillin
   question="Divide: \$4.99 divided by 12. Round to the nearest cent."
   answer="0.42"
+  answerForm="decimal"
   answerDisplay="\$0.42"
   hint="Carry the division to the thousandths place, then round the quotient to the nearest hundredth (cent)."
 >}}
@@ -464,14 +479,14 @@ places in $0.374$?
   question="Write 0.234 as a fraction in simplest form."
   answer="\frac{117}{500}"
   answerForm="fraction lowest-terms"
-  hint="$0.234 = \tfrac{234}{1{,}000}$. Divide the numerator and denominator by their common factors until no more common factors remain."
+  hint="Write the digits after the decimal point over the place value of the last digit, then divide out common factors until none remain."
 >}}
 
 {{< fillin
   question="Write 0.024 as a fraction in simplest form."
   answer="\frac{3}{125}"
   answerForm="fraction lowest-terms"
-  hint="$0.024 = \tfrac{24}{1{,}000}$. Divide the numerator and denominator by their common factors until no more common factors remain."
+  hint="Write the digits after the decimal point over the place value of the last digit, then divide out common factors until none remain."
 >}}
 
 We've learned to convert decimals to fractions. Now we will do the
@@ -520,7 +535,7 @@ $\tfrac{43}{22} = 1.9\overline{54}$.
 
 {{< multiplechoice
   question="Write $\tfrac{27}{11}$ as a repeating decimal. Which is correct?"
-  hint="Divide 27 by 11. The block of digits after the decimal point repeats immediately, right from the tenths place."
+  hint="Divide 27 by 11 and keep dividing until a remainder repeats; the digits between the two matching remainders form the repeating block."
   answer="2.4545... (the block 45 repeats forever)"
 >}}
 2.4555... (only the 5 repeats forever)
@@ -531,7 +546,7 @@ $\tfrac{43}{22} = 1.9\overline{54}$.
 
 {{< multiplechoice
   question="Write $\tfrac{51}{22}$ as a repeating decimal. Which is correct?"
-  hint="Divide 51 by 22. The first digit past the decimal point does not repeat, but the pair after it does."
+  hint="Divide 51 by 22 and keep dividing until a remainder repeats; the digits between the two matching remainders form the repeating block."
   answer="2.31818... (the 3 does not repeat, then the block 18 repeats forever)"
 >}}
 2.318 (a terminating decimal)
@@ -592,12 +607,14 @@ $35.7\%$.
 {{< fillin
   question="Convert to a decimal: 3.9%."
   answer="0.039"
+  answerForm="decimal"
   hint="Move the decimal point two places to the left, dropping the % sign and adding a leading zero as a placeholder."
 >}}
 
 {{< fillin
   question="Convert to a decimal: 8.3%."
   answer="0.083"
+  answerForm="decimal"
   hint="Move the decimal point two places to the left, dropping the % sign and adding a leading zero as a placeholder."
 >}}
 
@@ -620,15 +637,17 @@ $0.093$.
 (c) Moving the decimal point two places to the right: $0.093 = 9.3\%$.
 
 {{< fillin
-  question="Convert to a percent: 0.0825. Enter just the number, without the % sign."
-  answer="8.25"
-  hint="Move the decimal point two places to the right."
+  question="Convert to a percent, including the $\%$ sign: $0.0825$."
+  answer="8.25\%"
+  answerForm="percent"
+  hint="Move the decimal point two places to the right and add the % sign."
 >}}
 
 {{< fillin
-  question="Convert to a percent: 0.0925. Enter just the number, without the % sign."
-  answer="9.25"
-  hint="Move the decimal point two places to the right."
+  question="Convert to a percent, including the $\%$ sign: $0.0925$."
+  answer="9.25\%"
+  answerForm="percent"
+  hint="Move the decimal point two places to the right and add the % sign."
 >}}
 
 ## Key terms
@@ -658,7 +677,7 @@ repeating block. **percent** — a ratio whose denominator is $100$.
 eight and seventy-one thousandths
 eight and seventy-one tenths
 eight and seventy-one hundredths
-negative eight and seventy-one hundredths
+eight and seventy-one hundreds
 {{< /multiplechoice >}}
 
 ### Round decimals
@@ -666,13 +685,15 @@ negative eight and seventy-one hundredths
 {{< fillin
   question="Round 0.845 to the nearest hundredth."
   answer="0.85"
-  hint="The digit right after the hundredths place is 5, which is greater than or equal to 5, so round the hundredths digit up."
+  answerForm="decimal"
+  hint="Underline the digit just to the right of the hundredths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round 2.84 to the nearest tenth."
   answer="2.8"
-  hint="The digit right after the tenths place is 4, which is less than 5."
+  answerForm="decimal"
+  hint="Underline the digit just to the right of the tenths place and compare it with $5$."
 >}}
 
 ### Add and subtract decimals
@@ -697,19 +718,21 @@ negative eight and seventy-one hundredths
   question="Multiply: $(-5.18)(-65.23)$."
   answer="337.8914"
   answerForm="decimal"
-  hint="Multiply $518$ by $6{,}523$ as whole numbers, then place the decimal point so the product has $2 + 2 = 4$ decimal places. The signs are the same, so the product is positive."
+  hint="Determine the sign of the product first. Then multiply as whole numbers and place the decimal point so the product has as many decimal places as the two factors together."
 >}}
 
 {{< fillin
   question="Multiply $55.2$ by $1{,}000$."
   answer="55200"
-  answerDisplay="55,200"
+  answerForm="decimal"
+  answerDisplay="$55{,}200$"
   hint="Move the decimal point right by the number of zeros in the power of $10$ (three zeros), adding zeros at the end of the number as needed."
 >}}
 
 {{< fillin
   question="Divide: \$117.25 divided by 48. Round to the nearest cent."
   answer="2.44"
+  answerForm="decimal"
   answerDisplay="\$2.44"
   hint="Carry the division to the thousandths place, then round the quotient to the nearest hundredth (cent)."
 >}}
@@ -718,7 +741,7 @@ negative eight and seventy-one hundredths
   question="Divide: $1.44 \div (-0.3)$."
   answer="-4.8"
   answerForm="decimal"
-  hint="The signs are different, so the quotient is negative. Divide $1.44$ by $0.3$ as if both were positive, then attach the sign."
+  hint="Determine the sign of the quotient first. Then move both decimal points right until the divisor is a whole number, and divide."
 >}}
 
 ### Convert decimals, fractions, percents
@@ -727,7 +750,7 @@ negative eight and seventy-one hundredths
   question="Write 0.375 as a fraction in simplest form."
   answer="\frac{3}{8}"
   answerForm="fraction lowest-terms"
-  hint="$0.375 = \tfrac{375}{1{,}000}$. Divide the numerator and denominator by their common factors until no more common factors remain."
+  hint="Write the digits after the decimal point over the place value of the last digit, then divide out common factors until none remain."
 >}}
 
 {{< fillin
@@ -740,18 +763,20 @@ negative eight and seventy-one hundredths
 {{< fillin
   question="Convert to a decimal: 7.8%."
   answer="0.078"
+  answerForm="decimal"
   hint="Move the decimal point two places to the left, dropping the % sign and adding a leading zero as a placeholder."
 >}}
 
 {{< fillin
-  question="Convert to a percent: 0.0875. Enter just the number, without the % sign."
-  answer="8.75"
-  hint="Move the decimal point two places to the right."
+  question="Convert to a percent, including the $\%$ sign: $0.0875$."
+  answer="8.75\%"
+  answerForm="percent"
+  hint="Move the decimal point two places to the right and add the % sign."
 >}}
 
 {{< multiplechoice
   question="Write $\tfrac{15}{11}$ as a repeating decimal. Which is correct?"
-  hint="Divide 15 by 11. The pair of digits after the decimal point repeats immediately, right from the tenths place."
+  hint="Divide 15 by 11 and keep dividing until a remainder repeats; the digits between the two matching remainders form the repeating block."
   answer="1.3636... (the block 36 repeats forever)"
 >}}
 1.3666... (only the 6 repeats forever)
@@ -762,4 +787,4 @@ negative eight and seventy-one hundredths
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.7: Decimals](https://openstax.org/books/elementary-algebra-2e/pages/1-7-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart as a table, condensed the worked examples and How To boxes into narrative prose, omitted the Be Prepared quiz, Manipulative Mathematics callouts, and media links, adapted selected end-of-section exercises into interactive practice, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.7: Decimals](https://openstax.org/books/elementary-algebra-2e/pages/1-7-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart as a table; condensed the worked examples' step tables and images into narrative prose with typeset math; omitted the Be Prepared note, the Key Concepts summary, and the Self Check checklist; converted 31 of the 34 practice problems ("Try Its") into interactive exercises with instant feedback, one part per question (not every part carried); adapted selected end-of-section exercises into the section-final interactive Practice block and omitted the Everyday Math and Writing Exercises; posed the decimal-naming and repeating-decimal items as multiple choice; and asked for the decimal-to-fraction conversions in simplest form.</small>
