@@ -60,10 +60,12 @@ Grader (the real one — every fill-in grades through it):
 `node -e "import('./assets/js/lib/math/check-answer.mjs').then(m=>console.log(m.checkAnswer('<typed>','<answer>',{form:'<answerForm>',mode:'<answerMode>'})))"`
 → `correct` / `incorrect` / `form` / `invalid`. Text items:
 `assets/js/lib/text/check-text.mjs` `checkText(typed, key, {accept})`.
-Known grader-wide behaviour, not a page defect (do not report it): a typed
-unit word (`140 miles`) grades `incorrect` and a typed `\$` grades
-`invalid` — so a question with units names them ("in dollars", "in
-feet") and the learner enters the number.
+Grader behaviour on a key that is one bare number (since September 26,
+2026): a leading `\$` is dropped (`\$237,186` grades `correct`), and a
+right number with a unit word typed after it (`140 miles`) reports `unit`
+— "Right number — enter it without the unit" — never `correct`; a wrong
+number with a unit is `incorrect`. So a question with units still names
+them ("in dollars", "in feet"), and neither is a page defect.
 
 Figures and display math: `node tools/figures/render-page-figures.mjs
 <page> SP/render/<page-stem>` renders every inline `<svg>` to

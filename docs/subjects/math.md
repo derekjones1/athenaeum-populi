@@ -606,6 +606,14 @@ Each explains a lint error or a grader behavior an author will still meet:
   behind "write the solution in interval notation" marks `(10,\infty)`
   incorrect. The lint requires an interval-shaped answer (every `\cup`-joined
   part opens with `[` or `(`) behind any interval-notation ask.
+- **Money and units on a bare-number key** *(September 26, 2026)*. When
+  `answer` is one bare number, `checkAnswer` drops a leading `\$` (the
+  learner typing the price the page prints grades `correct`) and reports a
+  right number followed by unit words (`140 miles`, `74\text{ ft}`,
+  `36ft^2`) as `unit` — the fill-in says "Right number — enter it without
+  the unit" — never `correct`, since a rule that took "140 miles" would take
+  "140 feet". One trailing letter stays a variable (`140x` is `incorrect`),
+  and percent is untouched. The question still names the unit.
 - **A written function label is stripped before grading.** `f(x)` boxes as
   `Multiply(f, x)`, so `checkAnswer` strips a written
   one-letter-applied-to-one-letter label — only when no further `=` remains —

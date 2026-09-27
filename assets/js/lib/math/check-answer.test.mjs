@@ -1595,3 +1595,32 @@ test('a primed variable folds onto one symbol in every spelling', () => {
   assert.equal(checkAnswer("(2\\sqrt{3},-1)", "(2\\sqrt{3},-1)"), 'correct');
   assert.equal(checkAnswer("x'=2", "x'=3"), 'incorrect');
 });
+
+// A money or count answer: a leading dollar sign is the same number; a unit
+// word is reported as 'unit' (right number, drop the unit) and never graded
+// correct, and none of it reaches a key that is not one bare number.
+const labelled = [
+  ['\\$237{,}186', '237186', 'correct'],
+  ['\\$237,186', '237186', 'correct'],
+  ['-\\$5', '-5', 'correct'],
+  ['\\$-5', '-5', 'correct'],
+  ['\\$237{,}187', '237186', 'incorrect'],
+  ['140\\text{ miles}', '140', 'unit'],
+  ['140 miles', '140', 'unit'],
+  ['140\\mathrm{mi}', '140', 'unit'],
+  ['36ft^2', '36', 'unit'],
+  ['141\\text{ miles}', '140', 'incorrect'], // a wrong number stays wrong
+  ['140x', '140', 'incorrect'], // one letter is a variable, never a unit
+  ['62\\%', '0.62', 'correct'], // percent is value grading, untouched
+  ['x\\text{ miles}', 'x', 'incorrect'], // a symbolic key gets no unit reading
+];
+test('currency signs and unit words on a bare-number key', async (t) => {
+  for (const [student, answer, expected] of labelled) {
+    await t.test(`${student}  vs  ${answer}`, () => {
+      assert.equal(checkAnswer(student, answer), expected);
+    });
+  }
+  await t.test('a unit on a right number under a form still reports unit', () => {
+    assert.equal(checkAnswer('140\\text{ miles}', '140', { form: 'decimal' }), 'unit');
+  });
+});

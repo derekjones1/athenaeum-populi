@@ -34,12 +34,10 @@
  *               the two engines got wrong once, or a guard against a class it
  *               could get wrong.
  *
- * ONE KNOWN, DELIBERATE DIVERGENCE, recorded here rather than asserted:
- * `checkAnswer('\\$5', '5')` is `invalid` while the oracle reads it as 5. That
- * is correct in both roles — a money glyph is not a well-formed learner
- * response, and `parseMath` strips `\$` because printed prompts are full of
- * prices. The operands mean different things to the two tools, so the pair is
- * not a differential fixture.
+ * The one former divergence is closed: `checkAnswer('\\$5', '5')` was
+ * `invalid` while the oracle read 5. Since September 26, 2026 the grader
+ * drops a leading `\$` when the answer is one bare number (a learner typing
+ * the price the page prints), so the pair is a fixture below.
  */
 
 export const EQUIVALENCE_FIXTURES = Object.freeze([
@@ -58,6 +56,8 @@ export const EQUIVALENCE_FIXTURES = Object.freeze([
   { a: '400,000', b: '400000', equivalent: true, note: 'digit-grouping commas are stripped by the shared preprocess, not by either comparator' },
   { a: '400{,}000', b: '400000', equivalent: true, note: 'the LaTeX grouping spelling of the same number' },
   { a: '53,809,051', b: '53809051', equivalent: true, note: 'multiple grouped runs' },
+  { a: '\\$237{,}186', b: '237186', equivalent: true, note: 'a leading dollar sign on a money answer — the grader drops it when the key is one bare number; the oracle strips it from printed prices' },
+  { a: '\\$237{,}187', b: '237186', equivalent: false, note: 'the dollar-sign strip must not loosen the value check' },
 
   /* ---- radicals ------------------------------------------------------ */
   { a: '\\sqrt{9}', b: '3', equivalent: true, note: 'principal root' },

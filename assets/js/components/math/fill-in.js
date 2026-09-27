@@ -36,6 +36,9 @@ const MESSAGES = {
   // describeAnswerForm(), so it names the shape the exercise actually asks for.
   form: '',
   incorrect: 'Not quite — try again.',
+  // A right number with a unit word typed after it (checkAnswer 'unit'): the
+  // question names the unit, so the learner enters the number alone.
+  unit: 'Right number — enter it without the unit.',
   // `correct` is built per-instance (may include the answerDisplay).
 };
 
@@ -45,6 +48,7 @@ const COLOR = {
   incorrect: TONE.error,
   invalid: TONE.error,
   form: TONE.warning,
+  unit: TONE.warning,
   empty: TONE.muted,
 };
 

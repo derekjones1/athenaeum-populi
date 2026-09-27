@@ -3398,7 +3398,46 @@ const withListForm = (result, studentRaw, spec) => (
     : result.verdict
 );
 
+// A key that is one bare number — the answer to a word problem, a count, a
+// money amount — is the only place a currency sign or a unit word can mean
+// "the same number, labelled". Anywhere else a letter is a variable.
+const PLAIN_NUMBER_KEY = /^-?(?:\d+(?:\.\d*)?|\.\d+)$/;
+
+// A leading dollar sign, before or after a minus: `\$237,186`, `-\$5`.
+const CURRENCY_PREFIX = /^\s*(-?)\s*\\\$\s*/;
+
+// A number followed only by unit words: `140 miles`, `140\text{ miles}`,
+// `74\mathrm{ft}`, `36ft^2`. Bare letters must run to two or more, so a
+// single trailing letter (`140x`) is never read as a unit.
+const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|[A-Za-z]{2,}|\^\{?[23]\}?|\s)+)$/;
+
+/**
+ * Grade a response against the authored answer.
+ *
+ * Returns 'correct', 'incorrect', 'invalid', 'empty', 'form' (right value,
+ * wrong shape), or 'unit' (right number with a unit word attached).
+ *
+ * On an answer that is a single bare number, a leading `\$` is dropped
+ * before grading: `\$237,186` is the number the question asks for, and the
+ * page's own answerDisplay prints it that way. A trailing unit word is NOT
+ * accepted — any rule loose enough to take "140 miles" takes "140 feet", and
+ * MathLive delivers typed letters as variables — but when removing it leaves
+ * the right number the learner hears 'unit' ("enter it without the unit")
+ * instead of 'incorrect'. A wrong number with a unit is still 'incorrect'.
+ * (Prealgebra re-review, September 26, 2026.) Percent is untouched: `62\%`
+ * and `0.62` are different values, and the `percent` form owns that ask.
+ */
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  if (!PLAIN_NUMBER_KEY.test(preprocess(answerRaw ?? ''))) return gradeResponse(studentRaw, answerRaw, options);
+  const unpriced = (studentRaw ?? '').replace(CURRENCY_PREFIX, '$1');
+  const verdict = gradeResponse(unpriced, answerRaw, options);
+  if (verdict !== 'incorrect' && verdict !== 'invalid') return verdict;
+  const tail = preprocess(unpriced).match(UNIT_TAIL);
+  if (tail && gradeResponse(tail[1], answerRaw, options) === 'correct') return 'unit';
+  return verdict;
+}
+
+function gradeResponse(studentRaw, answerRaw, options = {}) {
   let student = preprocess(studentRaw);
   if (!student) return 'empty';
 
