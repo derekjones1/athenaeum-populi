@@ -35,7 +35,14 @@ If you think about doing the math this way, you are using the
 Back to our friends at the movies, we could show the math steps we take to
 find the total amount of money they need like this:
 
-$$3(9.25) = 3(9 + 0.25) = 3(9) + 3(0.25) = 27 + 0.75 = 27.75$$
+$$
+\begin{aligned}
+3(9.25) &= 3(9 + 0.25) \\[4pt]
+&= 3(9) + 3(0.25) \\[4pt]
+&= 27 + 0.75 \\[4pt]
+&= 27.75
+\end{aligned}
+$$
 
 In algebra, we use the Distributive Property to remove parentheses as we
 simplify expressions. For example, if we are asked to simplify the
@@ -100,7 +107,7 @@ $$
   answer="\frac{2}{5}p + 4"
   answerForm="expanded"
   answerDisplay="$\tfrac{2}{5}p + 4$"
-  hint="Distribute $\tfrac{2}{5}$ to both $p$ and $10$; $\tfrac{2}{5}$ of $10$ is $4$."
+  hint="Distribute $\tfrac{2}{5}$ to both $p$ and $10$; to multiply a fraction by a whole number, multiply the numerator by it and simplify."
 >}}
 
 **Example.** Simplify: $8\left(\tfrac{3}{8}x + \tfrac{1}{4}\right)$.
@@ -142,7 +149,7 @@ number and a variable, we write the number first.
   question="Simplify: $r(s - 2)$."
   answer="rs - 2r"
   answerForm="expanded"
-  hint="Distribute $r$ to both $s$ and $2$, then write the number first in the second term ($2r$, not $r2$)."
+  hint="Distribute $r$ to both $s$ and $2$; in a product of a number and a variable, write the number first."
 >}}
 
 The next example uses the "backwards" form of the Distributive Property,
@@ -158,7 +165,7 @@ $$(x + 8)p = px + 8p$$
   question="Simplify: $(y + 4)q$."
   answer="qy + 4q"
   answerForm="expanded"
-  hint="Distribute $q$ to both $y$ and $4$, writing the number first in the constant term."
+  hint="Use the backwards form $(b + c)a = ba + ca$: multiply each term inside the parentheses by $q$, writing any number before the variable."
 >}}
 
 When you distribute a negative number, you need to be extra careful to get
@@ -181,7 +188,13 @@ $$-2 \cdot 4y + (-2) \cdot 1 = -8y - 2$$
 
 Distribute, then simplify:
 
-$$-11 \cdot 4 - (-11) \cdot 3a = -44 - (-33a) = -44 + 33a$$
+$$
+\begin{aligned}
+-11(4 - 3a) &= -11 \cdot 4 - (-11) \cdot 3a \\[4pt]
+&= -44 - (-33a) \\[4pt]
+&= -44 + 33a
+\end{aligned}
+$$
 
 You could also write the result as $33a - 44$. Do you know why?
 
@@ -199,7 +212,14 @@ find the opposite of an expression. Remember, $-a = -1 \cdot a$.
 
 Multiplying by $-1$ results in the opposite, then distribute:
 
-$$-1(y + 5) = -1 \cdot y + (-1) \cdot 5 = -y + (-5) = -y - 5$$
+$$
+\begin{aligned}
+-(y + 5) &= -1(y + 5) \\[4pt]
+&= -1 \cdot y + (-1) \cdot 5 \\[4pt]
+&= -y + (-5) \\[4pt]
+&= -y - 5
+\end{aligned}
+$$
 
 {{< fillin
   question="Simplify: $-(z - 11)$."
@@ -222,7 +242,7 @@ $$8 - 2 \cdot x - 2 \cdot 3 = 8 - 2x - 6 = -2x + 2$$
 {{< fillin
   question="Simplify: $9 - 3(x + 2)$."
   answer="-3x + 3"
-  answerForm="distributed"
+  answerForm="distributed no-like-terms"
   hint="Distribute the $-3$ across $(x + 2)$ first, then combine the constant terms."
 >}}
 
@@ -235,7 +255,7 @@ $$4x - 32 - x - 3 = 3x - 35$$
 {{< fillin
   question="Simplify: $6(x - 9) - (x + 12)$."
   answer="5x - 66"
-  answerForm="distributed"
+  answerForm="distributed no-like-terms"
   hint="Distribute the $6$ across $(x - 9)$ and the implied $-1$ across $(x + 12)$, then combine like terms."
 >}}
 
@@ -265,7 +285,8 @@ Notice that the answers are the same: when $y = 10$, $6(5y + 1) = 6 \cdot
 {{< fillin
   question="Evaluate $5(5w + 9)$ when $w = 3$."
   answer="120"
-  hint="Simplify inside the parentheses first: $5(3) + 9 = 24$, then multiply by $5$."
+  answerForm="decimal"
+  hint="Substitute $3$ for $w$, simplify inside the parentheses first, then multiply by $5$."
 >}}
 
 **Example.** When $y = 3$, evaluate: (a) $-2(4y + 1)$ (b) $-2 \cdot 4y +
@@ -277,7 +298,8 @@ $y = 3$.
 {{< fillin
   question="Evaluate $-6(8n + 11)$ when $n = -2$."
   answer="30"
-  hint="Simplify inside the parentheses first: $8(-2) + 11 = -5$, then multiply by $-6$."
+  answerForm="decimal"
+  hint="Substitute $-2$ for $n$, simplify inside the parentheses first, then multiply by $-6$, minding the signs."
 >}}
 
 **Example.** When $y = 35$, evaluate (a) $-(y + 5)$ and (b) $-y - 5$, to
@@ -293,7 +315,8 @@ The answers are the same when $y = 35$, demonstrating that $-(y + 5) = -y -
 {{< fillin
   question="Evaluate $-(x - 4)$ when $x = 36$."
   answer="-32"
-  hint="Simplify inside the parentheses first: $36 - 4 = 32$, then take the opposite."
+  answerForm="decimal"
+  hint="Substitute $36$ for $x$, simplify inside the parentheses first, then take the opposite."
 >}}
 
 ## Key terms
@@ -347,7 +370,7 @@ term by that number and then adding (or subtracting) the products.
   question="Simplify: $-9(9a + 4)$."
   answer="-81a - 36"
   answerForm="expanded"
-  hint="Distributing a negative number makes both products negative."
+  hint="Multiply $-9$ by each term inside the parentheses, using the sign rules for multiplying integers."
 >}}
 
 {{< fillin
@@ -360,7 +383,7 @@ term by that number and then adding (or subtracting) the products.
 {{< fillin
   question="Simplify: $7(3n + 9) - (4n - 13)$."
   answer="17n + 76"
-  answerForm="distributed"
+  answerForm="distributed no-like-terms"
   hint="Distribute the $7$ across the first parentheses and the implied $-1$ across the second, then combine like terms."
 >}}
 
@@ -369,41 +392,47 @@ term by that number and then adding (or subtracting) the products.
 {{< fillin
   question="Evaluate $8(5u + 12)$ when $u = -1$."
   answer="56"
+  answerForm="decimal"
   hint="Substitute $-1$ for $u$ and simplify inside the parentheses before multiplying."
 >}}
 
 {{< fillin
   question="Evaluate $8 \cdot 5u + 8 \cdot 12$ when $u = -1$."
   answer="56"
-  hint="This is the distributed form of the previous expression, so the value should match: multiply first, then add."
+  answerForm="decimal"
+  hint="Substitute $-1$ for $u$, do both multiplications first, then add the products."
 >}}
 
 {{< fillin
-  question="Evaluate $4\left(y + \tfrac{3}{8}\right)$ when $y = \tfrac{3}{4}$."
+  question="Evaluate $4\left(y + \tfrac{3}{8}\right)$ when $y = \tfrac{3}{4}$. Enter the answer as a fraction in lowest terms."
   answer="\frac{9}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{9}{2}$"
   hint="Add inside the parentheses first, using a common denominator of $8$, then multiply by $4$."
 >}}
 
 {{< fillin
-  question="Evaluate $4 \cdot y + 4 \cdot \tfrac{3}{8}$ when $y = \tfrac{3}{4}$."
+  question="Evaluate $4 \cdot y + 4 \cdot \tfrac{3}{8}$ when $y = \tfrac{3}{4}$. Enter the answer as a fraction in lowest terms."
   answer="\frac{9}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{9}{2}$"
-  hint="Multiply each term first, then add the two products; the result should match the undistributed form."
+  hint="Multiply each term first, then add the two products using a common denominator."
 >}}
 
 {{< fillin
   question="Evaluate $-(w - 80)$ when $w = -80$."
   answer="160"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first — subtracting $80$ from $-80$ — then take the opposite."
 >}}
 
 {{< fillin
   question="Evaluate $-w + 80$ when $w = -80$."
   answer="160"
-  hint="The opposite of $-80$ is positive, so both terms are positive here."
+  answerForm="decimal"
+  hint="Substitute $-80$ for $w$, take the opposite of that value, then add $80$."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.3: Distributive Property](https://openstax.org/books/prealgebra-2e/pages/7-3-distributive-property) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the opening bills-and-coins illustration in prose instead of recreating it as a graphic; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding each multipart evaluation item into one exercise per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.3: Distributive Property](https://openstax.org/books/prealgebra-2e/pages/7-3-distributive-property) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the opening bills-and-coins illustration and the distribution-arrow diagrams in prose instead of recreating them as graphics; condensed the worked-example step tables into math blocks; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, posing each two-part evaluation Try It by its first part only; and adapted selected end-of-section exercises into the interactive Practice block, expanding each multipart evaluation item into one exercise per part.</small>

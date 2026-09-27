@@ -37,7 +37,7 @@ Simplifying a fraction is often called *reducing* it. We use the
 Equivalent Fractions Property in reverse to simplify: rewriting both
 forms together,
 
-$$\frac{a \cdot c}{b \cdot c} = \frac{a}{b} \qquad (b \neq 0,\ c \neq 0)$$
+$$\frac{a}{b} = \frac{a \cdot c}{b \cdot c} \quad \text{and} \quad \frac{a \cdot c}{b \cdot c} = \frac{a}{b} \qquad (b \neq 0,\ c \neq 0)$$
 
 Since $c$ is a common factor of the numerator and denominator, it can be
 removed.
@@ -62,9 +62,9 @@ $$\frac{10}{15} = \frac{2}{3}$$
 {{< fillin
   question="Simplify: $\tfrac{8}{12}$"
   answer="\frac{2}{3}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
-  hint="Factor out the common factor of $4$ from both numerator and denominator."
+  hint="Find the largest factor that the numerator and denominator share, rewrite each as a product that shows it, and remove it."
 >}}
 
 To simplify a negative fraction, use the same process and keep the
@@ -89,9 +89,9 @@ $-\tfrac{7}{4}$.
 {{< fillin
   question="Simplify: $-\tfrac{54}{42}$"
   answer="-\frac{9}{7}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{9}{7}$"
-  hint="Find the largest common factor of $54$ and $42$ (it's $6$), then remove it."
+  hint="Find the largest factor that $54$ and $42$ share, remove it from both, and keep the negative sign."
 >}}
 
 Sometimes it isn't easy to spot common factors of the numerator and
@@ -110,11 +110,11 @@ Remove the common factors of $5$ and $7$:
 $$\frac{210}{385} = \frac{2 \cdot 3}{11} = \frac{6}{11}$$
 
 {{< fillin
-  question="Simplify: $\tfrac{120}{192}$. Factor each into primes first if it helps."
+  question="Simplify: $\tfrac{120}{192}$"
   answer="\frac{5}{8}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{8}$"
-  hint="$120 = 2\cdot2\cdot2\cdot3\cdot5$ and $192 = 2\cdot2\cdot2\cdot2\cdot2\cdot2\cdot3$. Remove the common factors of $2$ (three of them) and $3$."
+  hint="Factor the numerator and denominator into primes, remove every prime factor they share, and multiply what remains."
 >}}
 
 We can also simplify fractions containing variables the same way,
@@ -133,7 +133,7 @@ $$\frac{5xy}{15x} = \frac{y}{3}$$
   answer="\frac{a}{b}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{a}{b}$"
-  hint="$9$ is a common factor of the numerator and denominator — remove it."
+  hint="Rewrite the numerator and denominator to show their factors, then remove any factor they share."
 >}}
 
 ## Multiply fractions
@@ -191,7 +191,7 @@ than after — same result either way.
   answer="\frac{5}{14}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{14}$"
-  hint="Same signs give a positive product. Look for a common factor of $4$ before multiplying."
+  hint="Determine the sign of the product first, then remove any factor a numerator shares with a denominator before multiplying."
 >}}
 
 **Example.** Multiply, and write the answer in simplified form:
@@ -218,15 +218,15 @@ fraction — any integer $a$ can be written as $\tfrac{a}{1}$.
 $\tfrac{12}{5}(-20x)$.
 
 Write $-20x$ as $\tfrac{-20x}{1}$. The product is negative. Multiplying
-and removing common factors of $4$ and $5$:
+and removing the common factor of $5$:
 
 $$\frac{12}{5}(-20x) = -48x$$
 
 {{< fillin
-  question="Multiply, and write the answer in simplified form: $\tfrac{1}{7} \cdot 56$"
-  answer="8"
+  question="Multiply, and write the answer in simplified form: $\tfrac{1}{8} \cdot 72$"
+  answer="9"
   answerForm="decimal"
-  hint="Write $56$ as $\tfrac{56}{1}$, then multiply and simplify."
+  hint="Write the integer as a fraction with denominator $1$, then multiply and simplify."
 >}}
 
 ## Find reciprocals
@@ -268,6 +268,7 @@ $7 \cdot \tfrac{1}{7} = 1$.
 {{< fillin
   question="Find the reciprocal of $-\tfrac{11}{4}$."
   answer="-\frac{4}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{4}{11}$"
   hint="Keep the same sign and invert the fraction."
 >}}
@@ -275,6 +276,7 @@ $7 \cdot \tfrac{1}{7} = 1$.
 {{< fillin
   question="Find the reciprocal of $14$."
   answer="\frac{1}{14}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{14}$"
   hint="Write $14$ as $\tfrac{14}{1}$ first, then invert."
 >}}
@@ -285,11 +287,11 @@ absolute value is never negative, and the reciprocal keeps the same sign
 but inverts the fraction.
 
 {{< fillin
-  question="What is the absolute value of $-\tfrac{9}{5}$? Enter as a fraction."
-  answer="\frac{9}{5}"
+  question="What is the absolute value of $-\tfrac{5}{8}$? Enter as a fraction."
+  answer="\frac{5}{8}"
   answerForm="fraction"
-  answerDisplay="$\tfrac{9}{5}$"
-  hint="Absolute value is never negative — drop the sign."
+  answerDisplay="$\tfrac{5}{8}$"
+  hint="Absolute value is a number's distance from $0$ on the number line."
 >}}
 
 ## Divide fractions
@@ -345,14 +347,14 @@ $$-\frac{3}{4} \div \left(-\frac{7}{8}\right) = \frac{6}{7}$$
   answer="\frac{4}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{5}$"
-  hint="Multiply by the reciprocal of the second fraction. Both are negative, so the result is positive."
+  hint="Multiply the first fraction by the reciprocal of the second; determine the sign first, and remove common factors before multiplying."
 >}}
 
 **Example.** Divide, and write the answer in simplified form:
 $\tfrac{7}{18} \div \tfrac{14}{27}$.
 
 Multiply by the reciprocal: $\tfrac{7}{18} \cdot \tfrac{27}{14}$.
-Rewriting to show common factors of $7$, $9$, and $2$ and removing them:
+Rewriting to show the common factors of $7$ and $9$ and removing them:
 
 $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 
@@ -361,7 +363,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
   answer="\frac{4}{15}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{15}$"
-  hint="Multiply by the reciprocal of $\tfrac{35}{36}$, then look for common factors of $7$ and $9$ before finishing."
+  hint="Multiply the first fraction by the reciprocal of the second, then remove every factor a numerator shares with a denominator before multiplying."
 >}}
 
 ## Key terms
@@ -383,9 +385,9 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
 {{< fillin
   question="Simplify: $-\tfrac{40}{88}$"
   answer="-\frac{5}{11}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{11}$"
-  hint="Both $40$ and $88$ are divisible by $8$ — rewrite each as a product with $8$ and remove the common factor. The negative sign stays."
+  hint="Find the largest factor that $40$ and $88$ share, rewrite each as a product that shows it, and remove it. Keep the negative sign."
 >}}
 
 {{< fillin
@@ -393,15 +395,15 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="-\frac{12}{7}"
   answerForm="improper-fraction lowest-terms"
   answerDisplay="$-\tfrac{12}{7}$"
-  hint="$108 = 12 \cdot 9$ and $63 = 7 \cdot 9$, so $9$ is the common factor. An improper fraction can be simplified without rewriting it as a mixed number."
+  hint="Find the largest factor that $108$ and $63$ share and remove it from both. An improper fraction can be simplified without rewriting it as a mixed number."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{120}{252}$"
   answer="\frac{10}{21}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{21}$"
-  hint="Factor both into primes: $120 = 2\cdot2\cdot2\cdot3\cdot5$ and $252 = 2\cdot2\cdot3\cdot3\cdot7$. Remove the two $2$s and the $3$ they share."
+  hint="Factor the numerator and denominator into primes, remove every prime factor they share, and multiply what remains."
 >}}
 
 {{< fillin
@@ -409,7 +411,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="-\frac{x}{4y}"
   answerForm="single-fraction"
   answerDisplay="$-\tfrac{x}{4y}$"
-  hint="$3$ is a common factor of $3x$ and $12y$; the variables $x$ and $y$ are different, so neither one can be removed."
+  hint="Rewrite $3x$ and $12y$ to show their factors, numbers and variables alike, and remove only the factors that appear in both. Keep the negative sign."
 >}}
 
 ### Multiply fractions
@@ -419,7 +421,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="\frac{27}{40}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{27}{40}$"
-  hint="Multiply the numerators and multiply the denominators, then check whether $27$ and $40$ share a factor."
+  hint="Multiply the numerators and multiply the denominators, then check that the result has no common factor left."
 >}}
 
 {{< fillin
@@ -427,15 +429,15 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="-\frac{2}{9}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{2}{9}$"
-  hint="Opposite signs give a negative product. Remove the common factor of $7$ from $7$ and $21$, and the common factor of $4$ from $8$ and $12$, before multiplying."
+  hint="Determine the sign of the product first, then remove any factor a numerator shares with a denominator before multiplying."
 >}}
 
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\tfrac{3}{7} \cdot 21n$"
   answer="9n"
-  answerForm="single-term"
+  answerForm="single-term polynomial"
   answerDisplay="$9n$"
-  hint="Write $21n$ as $\tfrac{21n}{1}$, then remove the common factor of $7$ before multiplying."
+  hint="Write $21n$ as $\tfrac{21n}{1}$, then remove any factor a numerator shares with a denominator before multiplying."
 >}}
 
 {{< fillin
@@ -451,6 +453,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
 {{< fillin
   question="Find the reciprocal of $-\tfrac{5}{17}$."
   answer="-\frac{17}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{17}{5}$"
   hint="Invert the fraction and keep the same sign — a number and its reciprocal must multiply to a positive $1$."
 >}}
@@ -458,6 +461,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
 {{< fillin
   question="Find the reciprocal of $\tfrac{11}{8}$."
   answer="\frac{8}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{11}$"
   hint="Swap the numerator and denominator; check by confirming the product with the original is $1$."
 >}}
@@ -465,6 +469,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
 {{< fillin
   question="Find the reciprocal of $-19$."
   answer="-\frac{1}{19}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{19}$"
   hint="Write $-19$ as $-\tfrac{19}{1}$ first, then invert and keep the negative sign."
 >}}
@@ -476,7 +481,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="\frac{16}{15}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{16}{15}$"
-  hint="Multiply $\tfrac{4}{5}$ by the reciprocal of $\tfrac{3}{4}$. The answer is an improper fraction — leave it that way."
+  hint="Multiply the first fraction by the reciprocal of the second, then check that the result has no common factor left."
 >}}
 
 {{< fillin
@@ -484,7 +489,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="-\frac{5}{4}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{4}$"
-  hint="Multiply by the reciprocal $\tfrac{5}{3}$. Opposite signs make the quotient negative, and the $3$s cancel."
+  hint="Multiply the first fraction by the reciprocal of the second; determine the sign first, and remove common factors before multiplying."
 >}}
 
 {{< fillin
@@ -492,7 +497,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="\frac{18}{5y}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{18}{5y}$"
-  hint="The reciprocal of $\tfrac{y}{9}$ is $\tfrac{9}{y}$ — multiply, and leave the variable in the denominator."
+  hint="Multiply the first fraction by the reciprocal of the second, then multiply the numerators and the denominators."
 >}}
 
 {{< fillin
@@ -500,7 +505,7 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="-\frac{1}{25}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{25}$"
-  hint="Write $-10$ as $-\tfrac{10}{1}$; its reciprocal is $-\tfrac{1}{10}$. Then remove the common factor of $2$."
+  hint="Write the integer as a fraction with denominator $1$, multiply by its reciprocal, and remove common factors before multiplying."
 >}}
 
 {{< fillin
@@ -508,9 +513,9 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
   answer="\frac{8}{7}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{7}$"
-  hint="Division and multiplication are done left to right. Replace the division by multiplying by $\tfrac{8}{7}$, then remove the common factors of $11$ and $2$."
+  hint="Work left to right: replace the division by multiplication by the reciprocal of the divisor, then remove common factors before multiplying."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.2: Multiply and Divide Fractions](https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the fraction-tile and shaded-rectangle multiplication models as prose walkthroughs and the factor-tree simplification as typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callouts, the opposite/absolute value/reciprocal comparison chart's fill-in-the-blank format, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.2: Multiply and Divide Fractions](https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose; recreated the shaded-rectangle multiplication model and the fraction-tile division model as prose walkthroughs and the factor-tree simplification as typeset math; omitted the Be Prepared quiz, the fraction-tile multiplication model, the "use a diagram to model" and fraction-division modeling examples and their Try Its, the quarter photo, part (a) of the multiply-by-an-integer example, the variable-divisor division example, Manipulative Mathematics callouts, the opposite/absolute value/reciprocal comparison chart's fill-in-the-blank format, and media links; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, one question per part (a chart Try It as a single absolute-value question); and adapted selected end-of-section exercises into the interactive Practice block.</small>

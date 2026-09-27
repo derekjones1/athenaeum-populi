@@ -75,10 +75,12 @@ $\tfrac{x^2}{x^3} = \tfrac{1}{x^{3-2}} = \tfrac{1}{x}$.
   $$\frac{a^m}{a^n} = a^{m-n}, \quad m > n \qquad\qquad \text{and} \qquad\qquad \frac{a^m}{a^n} = \frac{1}{a^{n-m}}, \quad n > m$$
 {{< /callout >}}
 
-A couple of examples with numbers may help to verify this property. Since
-$3^4 / 3^2 \stackrel{?}{=} 3^{4-2}$, checking: $81/9 \stackrel{?}{=} 3^2$,
-and indeed $9 = 9$. Since $5^2 / 5^3 \stackrel{?}{=} 1/5^{3-2}$, checking:
-$25/125 \stackrel{?}{=} 1/5$, and indeed $\tfrac{1}{5} = \tfrac{1}{5}$. When
+A couple of examples with numbers may help to verify this property. To
+check $\tfrac{3^4}{3^2} \stackrel{?}{=} 3^{4-2}$, evaluate both sides:
+$\tfrac{81}{9} \stackrel{?}{=} 3^2$, and indeed $9 = 9$. To check
+$\tfrac{5^2}{5^3} \stackrel{?}{=} \tfrac{1}{5^{3-2}}$, evaluate both sides:
+$\tfrac{25}{125} \stackrel{?}{=} \tfrac{1}{5^1}$, and indeed
+$\tfrac{1}{5} = \tfrac{1}{5}$. When
 we work with numbers and the exponent is less than or equal to $3$, we will
 apply the exponent. When the exponent is greater than $3$, we leave the
 answer in exponential form.
@@ -99,7 +101,7 @@ factors in the numerator.
 {{< fillin
   question="Simplify: $\tfrac{x^{12}}{x^9}$"
   answer="x^3"
-  answerForm="polynomial"
+  answerForm="single-power"
   hint="Since the numerator's exponent is larger, subtract the denominator's exponent from the numerator's exponent."
 >}}
 
@@ -124,7 +126,7 @@ with factors in the denominator and $1$ in the numerator.
 {{< fillin
   question="Simplify: $\tfrac{x^8}{x^{15}}$"
   answer="\frac{1}{x^7}"
-  answerForm="single-fraction"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{x^7}$"
   hint="The denominator's exponent is larger, so the result has a $1$ in the numerator and $x$ raised to the difference of exponents in the denominator."
 >}}
@@ -149,15 +151,15 @@ $\tfrac{x^{11}}{x^7} = x^{11-7} = x^4$.
 {{< fillin
   question="Simplify: $\tfrac{b^{19}}{b^{11}}$"
   answer="b^8"
-  answerForm="polynomial"
+  answerForm="single-power"
   hint="Compare the exponents — the larger one is in the numerator here."
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{m^9}{m^{17}}$"
-  answer="\frac{1}{m^8}"
-  answerForm="single-fraction"
-  answerDisplay="$\tfrac{1}{m^8}$"
+  question="Simplify: $\tfrac{p^9}{p^{17}}$"
+  answer="\frac{1}{p^8}"
+  answerForm="single-fraction single-power"
+  answerDisplay="$\tfrac{1}{p^8}$"
   hint="Compare the exponents — the larger one is in the denominator here."
 >}}
 
@@ -171,7 +173,7 @@ words, a number divided by itself is $1$. So $\tfrac{x}{x} = 1$, for any
 $x$ ($x \neq 0$), since any number divided by itself is $1$.
 
 The Quotient Property of Exponents shows us how to simplify
-$\tfrac{a^m}{a^n}$ when $m > n$ and when $n < m$. What if $m = n$?
+$\tfrac{a^m}{a^n}$ when $m > n$ and when $n > m$. What if $m = n$?
 
 Now we will simplify $\tfrac{a^m}{a^m}$ in two ways to lead us to the
 definition of the **zero exponent**. Consider first $\tfrac{8}{8}$, which we
@@ -201,14 +203,14 @@ So $12^0 = 1$ and $y^0 = 1$.
   question="Simplify: $17^0$"
   answer="1"
   answerForm="decimal"
-  hint="Any nonzero number raised to the zero power is $1$."
+  hint="Use the definition of the zero exponent."
 >}}
 
 {{< fillin
   question="Simplify: $k^0$"
   answer="1"
   answerForm="decimal"
-  hint="Any nonzero number (or variable) raised to the zero power is $1$."
+  hint="Use the definition of the zero exponent; in this text a variable raised to the zero power is assumed nonzero."
 >}}
 
 Now that we have defined the zero exponent, we can expand all the
@@ -227,14 +229,14 @@ Using the definition of the zero exponent, $(7z)^0 = 1$.
 {{< fillin
   question="Simplify: $(-4y)^0$"
   answer="1"
-  answerForm="single-power"
+  answerForm="decimal"
   hint="The whole expression in parentheses is raised to the zero power."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{3} \cdot x\right)^0$"
   answer="1"
-  answerForm="polynomial"
+  answerForm="decimal"
   hint="The whole expression in parentheses is raised to the zero power, and it is not zero."
 >}}
 
@@ -251,7 +253,7 @@ $-3x^2 y^0 = -3x^2 \cdot 1 = -3x^2$.
 {{< fillin
   question="Simplify: $(7x^2 y)^0$"
   answer="1"
-  answerForm="single-power"
+  answerForm="decimal"
   hint="Parentheses group the whole expression under the zero exponent."
 >}}
 
@@ -260,7 +262,7 @@ $-3x^2 y^0 = -3x^2 \cdot 1 = -3x^2$.
   answer="7x^2"
   answerForm="single-term"
   answerDisplay="$7x^2$"
-  hint="Only the $y$ is raised to the zero power here, since there are no parentheses grouping the rest with it."
+  hint="Without parentheses, an exponent applies only to the base written directly in front of it."
 >}}
 
 ## Simplify expressions using the Quotient to a Power Property
@@ -303,7 +305,7 @@ $\left(\tfrac{x}{3}\right)^4 = \tfrac{x^4}{3^4} = \tfrac{x^4}{81}$.
 $\left(\tfrac{y}{m}\right)^3 = \tfrac{y^3}{m^3}$.
 
 {{< fillin
-  question="Simplify: $(7/9)^2$"
+  question="Simplify: $\left(\tfrac{7}{9}\right)^2$"
   answer="\frac{49}{81}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{49}{81}$"
@@ -311,7 +313,7 @@ $\left(\tfrac{y}{m}\right)^3 = \tfrac{y^3}{m^3}$.
 >}}
 
 {{< fillin
-  question="Simplify: $(y/8)^3$"
+  question="Simplify: $\left(\tfrac{y}{8}\right)^3$"
   answer="\frac{y^3}{512}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{y^3}{512}$"
@@ -319,7 +321,7 @@ $\left(\tfrac{y}{m}\right)^3 = \tfrac{y^3}{m^3}$.
 >}}
 
 {{< fillin
-  question="Simplify: $(p/q)^6$"
+  question="Simplify: $\left(\tfrac{p}{q}\right)^6$"
   answer="\frac{p^6}{q^6}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{p^6}{q^6}$"
@@ -341,7 +343,8 @@ Notice that they are now defined for whole number exponents.
   \text{Product Property} & a^m \cdot a^n = a^{m+n} \\[4pt]
   \text{Power Property} & (a^m)^n = a^{m \cdot n} \\[4pt]
   \text{Product to a Power Property} & (ab)^m = a^m b^m \\[4pt]
-  \text{Quotient Property} & \tfrac{a^m}{a^n} = a^{m-n},\ a \neq 0,\ m > n \qquad \tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}},\ a \neq 0,\ n > m \\[8pt]
+  \text{Quotient Property} & \tfrac{a^m}{a^n} = a^{m-n},\ a \neq 0,\ m > n \\[8pt]
+  & \tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}},\ a \neq 0,\ n > m \\[8pt]
   \text{Zero Exponent Definition} & a^0 = 1,\ a \neq 0 \\[4pt]
   \text{Quotient to a Power Property} & \left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m},\ b \neq 0
   \end{array}
@@ -356,14 +359,14 @@ $\tfrac{x^6}{x^5}$. Subtracting the exponents gives $x$.
 {{< fillin
   question="Simplify: $\tfrac{(a^4)^5}{a^9}$"
   answer="a^{11}"
-  answerForm="polynomial"
+  answerForm="single-power"
   hint="Apply the Power Property in the numerator first, then subtract exponents using the Quotient Property."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{(b^5)^6}{b^{11}}$"
   answer="b^{19}"
-  answerForm="polynomial"
+  answerForm="single-power"
   hint="Apply the Power Property in the numerator first, then subtract exponents using the Quotient Property."
 >}}
 
@@ -376,15 +379,15 @@ zero power property gives $1$.
 {{< fillin
   question="Simplify: $\tfrac{k^{11}}{(k^3)^3}$"
   answer="k^2"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$k^2$"
-  hint="Apply the Power Property in the denominator first: $(k^3)^3 = k^9$. Then divide $k^{11}$ by $k^9$."
+  hint="Apply the Power Property in the denominator first, then subtract exponents using the Quotient Property."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{d^{23}}{(d^4)^6}$"
   answer="\frac{1}{d}"
-  answerForm="single-fraction"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{d}$"
   hint="Apply the Power Property in the denominator first, then subtract exponents. Simplify all the way."
 >}}
@@ -397,16 +400,16 @@ gives $(x^{7-3})^2$. Simplifying gives $(x^4)^2$. Multiplying the exponents
 gives $x^8$.
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{r^{14}}{r^8}\right)^2$"
-  answer="r^{12}"
-  answerForm="polynomial"
+  question="Simplify: $\left(\tfrac{f^{14}}{f^8}\right)^2$"
+  answer="f^{12}"
+  answerForm="single-power"
   hint="Simplify inside the parentheses first (same base, so subtract exponents), then apply the outer power."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{b^6}{b^{11}}\right)^2$"
   answer="\frac{1}{b^{10}}"
-  answerForm="single-fraction"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{b^{10}}$"
   hint="Simplify inside the parentheses first — the denominator's exponent is larger there — then apply the outer power."
 >}}
@@ -469,7 +472,7 @@ Property gives $\tfrac{1}{y^6}$.
 {{< fillin
   question="Simplify: $\tfrac{(y^4)^4 \cdot (y^3)^5}{(y^7)^6}$"
   answer="\frac{1}{y^{11}}"
-  answerForm="single-fraction"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{y^{11}}$"
   hint="Apply the Power Property to each factor first, then combine the numerator with the Product Property, then apply the Quotient Property."
 >}}
@@ -477,7 +480,7 @@ Property gives $\tfrac{1}{y^6}$.
 {{< fillin
   question="Simplify: $\tfrac{(3x^4)^2 \cdot (x^3)^4}{(x^5)^3}$"
   answer="9x^5"
-  answerForm="polynomial"
+  answerForm="single-term"
   answerDisplay="$9x^5$"
   hint="Apply the Power Property to each factor (don't forget the constant $3$ squared), combine the numerator, then apply the Quotient Property."
 >}}
@@ -495,7 +498,7 @@ $\tfrac{56}{7} \cdot \tfrac{x^5}{x^2}$. Using the Quotient Property gives
 $8x^3$.
 
 {{< fillin
-  question="Find the quotient: $\tfrac{63x^8}{9x^4}$"
+  question="Find the quotient: $63x^8 \div 9x^4$"
   answer="7x^4"
   answerForm="single-term"
   answerDisplay="$7x^4$"
@@ -503,12 +506,15 @@ $8x^3$.
 >}}
 
 {{< fillin
-  question="Find the quotient: $\tfrac{96y^{11}}{6y^8}$"
+  question="Find the quotient: $96y^{11} \div 6y^8$"
   answer="16y^3"
   answerForm="single-term"
   answerDisplay="$16y^3$"
   hint="Separate the numeric coefficients from the variable factors, then divide each part on its own."
 >}}
+
+When we divide monomials with more than one variable, we write one
+fraction for each variable.
 
 **Example.** Find the quotient: $\tfrac{42x^2y^3}{-7xy^5}$.
 
@@ -529,7 +535,7 @@ $-6 \cdot x \cdot \tfrac{1}{y^2}$. Multiplying gives $-\tfrac{6x}{y^2}$.
   answer="\frac{9}{a^5}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{9}{a^5}$"
-  hint="Split into a fraction for the coefficients and one fraction for each variable — the $b$'s cancel completely."
+  hint="Split into a fraction for the coefficients and one fraction for each variable, simplify each, then multiply the results together."
 >}}
 
 **Example.** Find the quotient: $\tfrac{24a^5b^3}{48ab^4}$.
@@ -634,7 +640,7 @@ properties one variable at a time.
 {{< fillin
   question="Simplify: $\tfrac{x^{12}}{x^3}$"
   answer="x^9"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$x^9$"
   hint="Same base, larger exponent on top — subtract the denominator's exponent from the numerator's."
 >}}
@@ -642,7 +648,7 @@ properties one variable at a time.
 {{< fillin
   question="Simplify: $\tfrac{y^4}{y^{20}}$"
   answer="\frac{1}{y^{16}}"
-  answerForm="single-fraction"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{y^{16}}$"
   hint="The larger exponent is in the denominator, so the result is $1$ over $y$ raised to the difference of the exponents."
 >}}
@@ -653,28 +659,28 @@ properties one variable at a time.
   question="Simplify: $5^0$"
   answer="1"
   answerForm="decimal"
-  hint="Any nonzero number raised to the zero power is $1$."
+  hint="Use the definition of the zero exponent."
 >}}
 
 {{< fillin
   question="Simplify: $-7^0$"
   answer="-1"
   answerForm="decimal"
-  hint="The exponent applies only to the $7$, not to the negative sign, so evaluate $7^0$ first and keep the sign."
+  hint="Use the order of operations: decide which base the exponent is attached to before applying the definition of the zero exponent."
 >}}
 
 {{< fillin
   question="Simplify: $(10p)^0$"
   answer="1"
-  answerForm="single-power"
+  answerForm="decimal"
   hint="The parentheses put the entire product under the zero exponent."
 >}}
 
 {{< fillin
   question="Simplify: $10p^0$"
   answer="10"
-  answerForm="single-power"
-  hint="With no parentheses, only $p$ carries the zero exponent; the factor $10$ stays."
+  answerForm="decimal"
+  hint="Without parentheses, an exponent applies only to the base written directly in front of it."
 >}}
 
 ### Simplify expressions using the Quotient to a Power Property
@@ -708,7 +714,7 @@ properties one variable at a time.
 {{< fillin
   question="Simplify: $\tfrac{(x^2)^4}{x^5}$"
   answer="x^3"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$x^3$"
   hint="Use the Power Property on the numerator first, then subtract exponents with the Quotient Property."
 >}}
@@ -716,7 +722,7 @@ properties one variable at a time.
 {{< fillin
   question="Simplify: $\left(\tfrac{x^2}{x^8}\right)^3$"
   answer="\frac{1}{x^{18}}"
-  answerForm="single-fraction"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{x^{18}}$"
   hint="The bases inside the parentheses match, so simplify there first, then apply the outer exponent."
 >}}
@@ -765,4 +771,4 @@ properties one variable at a time.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.4: Divide Monomials](https://openstax.org/books/prealgebra-2e/pages/10-4-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.4: Divide Monomials](https://openstax.org/books/prealgebra-2e/pages/10-4-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and Media links; condensed prose and wrote the worked examples' step tables as sentences; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

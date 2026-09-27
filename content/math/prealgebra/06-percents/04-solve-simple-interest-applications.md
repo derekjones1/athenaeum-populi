@@ -56,17 +56,19 @@ $500(0.20)$, or $\text{\textdollar}100$, so $\text{\textdollar}90$ is
 reasonable. The simple interest is $\text{\textdollar}90$.
 
 {{< fillin
-  question="Find the simple interest earned after 4 years on \$800 at an interest rate of 5%."
+  question="Find the simple interest, in dollars, earned after 4 years on \$800 at an interest rate of 5%."
   answer="160"
+  answerForm="decimal"
   answerDisplay="\$160"
-  hint="Use $I = Prt$ with $P = 800$, $r = 0.05$, $t = 4$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
-  question="Find the simple interest earned after 2 years on \$700 at an interest rate of 4%."
+  question="Find the simple interest, in dollars, earned after 2 years on \$700 at an interest rate of 4%."
   answer="56"
+  answerForm="decimal"
   answerDisplay="\$56"
-  hint="Use $I = Prt$ with $P = 700$, $r = 0.04$, $t = 2$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 In the next example, we will use the simple interest formula to find the
@@ -83,17 +85,19 @@ given information: $178 = P(0.04)(2)$. Divide: $\tfrac{178}{0.08} =
 $\text{\textdollar}2{,}225$.
 
 {{< fillin
-  question="Find the principal invested if \$495 interest was earned in 3 years at an interest rate of 6%."
+  question="Find the principal, in dollars, invested if \$495 interest was earned in 3 years at an interest rate of 6%."
   answer="2750"
+  answerForm="decimal"
   answerDisplay="\$2,750"
-  hint="Substitute into $I = Prt$ to get $495 = P(0.06)(3)$, then divide."
+  hint="Substitute the known values into $I = Prt$ with the rate as a decimal, multiply the rate by the time, then divide the interest by that product."
 >}}
 
 {{< fillin
-  question="Find the principal invested if \$1,246 interest was earned in 5 years at an interest rate of 7%."
+  question="Find the principal, in dollars, invested if \$1,246 interest was earned in 5 years at an interest rate of 7%."
   answer="3560"
+  answerForm="decimal"
   answerDisplay="\$3,560"
-  hint="Substitute into $I = Prt$ to get $1{,}246 = P(0.07)(5)$, then divide."
+  hint="Substitute the known values into $I = Prt$ with the rate as a decimal, multiply the rate by the time, then divide the interest by that product."
 >}}
 
 Now we will solve for the rate of interest.
@@ -111,19 +115,19 @@ $3{,}772 \overset{?}{=} 8{,}200(0.115)(4)$; $3{,}772 = 3{,}772\ \checkmark$.
 The rate was $11.5\%$.
 
 {{< fillin
-  question="Find the rate if a principal of \$5,000 earned \$1,350 interest in 6 years."
+  question="Find the rate if a principal of \$5,000 earned \$1,350 interest in 6 years. Enter the rate as a percent, including the % sign."
   answer="4.5\%"
   answerForm="percent"
   answerDisplay="4.5%"
-  hint="Substitute into $I = Prt$ to get $1{,}350 = 5{,}000 \cdot r \cdot 6$, then divide and convert to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Find the rate if a principal of \$9,000 earned \$1,755 interest in 3 years."
+  question="Find the rate if a principal of \$9,000 earned \$1,755 interest in 3 years. Enter the rate as a percent, including the % sign."
   answer="6.5\%"
   answerForm="percent"
   answerDisplay="6.5%"
-  hint="Substitute into $I = Prt$ to get $1{,}755 = 9{,}000 \cdot r \cdot 3$, then divide and convert to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 ## Solve simple interest applications
@@ -151,17 +155,19 @@ $\text{\textdollar}2{,}500$, so this checks out. The interest is
 $\text{\textdollar}2{,}500$.
 
 {{< fillin
-  question="Areli invested a principal of \$950 in her bank account with interest rate 3%. How much interest did she earn in 5 years?"
+  question="Areli invested a principal of \$950 in her bank account with interest rate 3%. How much interest, in dollars, did she earn in 5 years?"
   answer="142.50"
+  answerForm="decimal"
   answerDisplay="\$142.50"
-  hint="Use $I = Prt$ with $P = 950$, $r = 0.03$, $t = 5$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
-  question="Susana invested a principal of \$36,000 in her bank account with interest rate 6.5%. How much interest did she earn in 3 years?"
+  question="Susana invested a principal of \$36,000 in her bank account with interest rate 6.5%. How much interest, in dollars, did she earn in 3 years?"
   answer="7020"
+  answerForm="decimal"
   answerDisplay="\$7,020"
-  hint="Use $I = Prt$ with $P = 36{,}000$, $r = 0.065$, $t = 3$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 There may be times when you know the amount of interest earned on a given
@@ -184,19 +190,19 @@ $660 \overset{?}{=} (3{,}000)(0.055)(4)$; $660 = 660\ \checkmark$. The
 rate of interest was $5.5\%$.
 
 {{< fillin
-  question="Jim lent his sister \$5,000 to help her buy a house. In 3 years, she paid him the \$5,000, plus \$900 interest. What was the rate of interest?"
+  question="Jim lent his sister \$5,000 to help her buy a house. In 3 years, she paid him the \$5,000, plus \$900 interest. What was the rate of interest? Enter the rate as a percent, including the % sign."
   answer="6\%"
   answerForm="percent"
   answerDisplay="6%"
-  hint="Substitute into $I = Prt$ to get $900 = 5{,}000 \cdot r \cdot 3$, then divide and convert to a percent."
+  hint="The extra amount paid back is the interest and the amount lent is the principal; solve $I = Prt$ for $r$, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Hang borrowed \$7,500 from her parents to pay her tuition. In 5 years, she paid them \$1,500 interest in addition to the \$7,500 she borrowed. What was the rate of interest?"
+  question="Hang borrowed \$7,500 from her parents to pay her tuition. In 5 years, she paid them \$1,500 interest in addition to the \$7,500 she borrowed. What was the rate of interest? Enter the rate as a percent, including the % sign."
   answer="4\%"
   answerForm="percent"
   answerDisplay="4%"
-  hint="Substitute into $I = Prt$ to get $1{,}500 = 7{,}500 \cdot r \cdot 5$, then divide and convert to a percent."
+  hint="The amount paid in addition to the loan is the interest and the amount borrowed is the principal; solve $I = Prt$ for $r$, then write the decimal as a percent."
 >}}
 
 There may be times when you take a loan for a large purchase and the
@@ -217,17 +223,19 @@ $6{,}596.25 = 6{,}596.25\ \checkmark$. The amount borrowed was
 $\text{\textdollar}17{,}590$.
 
 {{< fillin
-  question="Sean's new car loan statement said he would pay \$4,866.25 in interest from an interest rate of 8.5% over 5 years. How much did he borrow to buy his new car?"
+  question="Sean's new car loan statement said he would pay \$4,866.25 in interest from an interest rate of 8.5% over 5 years. How much, in dollars, did he borrow to buy his new car?"
   answer="11450"
+  answerForm="decimal"
   answerDisplay="\$11,450"
-  hint="Substitute into $I = Prt$ to get $4{,}866.25 = P(0.085)(5)$, then divide."
+  hint="The amount borrowed is the principal: divide the interest by the product of the rate (as a decimal) and the time."
 >}}
 
 {{< fillin
-  question="In 5 years, Gloria's bank account earned \$2,400 interest at 5%. How much had she deposited in the account?"
+  question="In 5 years, Gloria's bank account earned \$2,400 interest at 5%. How much, in dollars, had she deposited in the account?"
   answer="9600"
+  answerForm="decimal"
   answerDisplay="\$9,600"
-  hint="Substitute into $I = Prt$ to get $2{,}400 = P(0.05)(5)$, then divide."
+  hint="The amount deposited is the principal: divide the interest by the product of the rate (as a decimal) and the time."
 >}}
 
 In the simple interest formula, the rate of interest is given as an
@@ -249,17 +257,19 @@ $\text{\textdollar}15.75$ for $10$ months is reasonable. The interest
 earned was $\text{\textdollar}15.75$.
 
 {{< fillin
-  question="Adriana invested \$4,500 for 8 months in an account that paid 1.9% interest. How much interest did she earn?"
+  question="Adriana invested \$4,500 for 8 months in an account that paid 1.9% interest. How much interest, in dollars, did she earn?"
   answer="57"
+  answerForm="decimal"
   answerDisplay="\$57.00"
-  hint="Convert 8 months to $\tfrac{8}{12}$ of a year, then use $I = Prt$ with $P = 4{,}500$, $r = 0.019$."
+  hint="The rate is annual, so write the months as a fraction of a year (months over $12$), then multiply the principal, the rate as a decimal, and that time."
 >}}
 
 {{< fillin
-  question="Milton invested \$2,460 for 20 months in an account that paid 3.5% interest. How much interest did he earn?"
+  question="Milton invested \$2,460 for 20 months in an account that paid 3.5% interest. How much interest, in dollars, did he earn?"
   answer="143.50"
+  answerForm="decimal"
   answerDisplay="\$143.50"
-  hint="Convert 20 months to $\tfrac{20}{12}$ of a year, then use $I = Prt$ with $P = 2{,}460$, $r = 0.035$."
+  hint="The rate is annual, so write the months as a fraction of a year (months over $12$), then multiply the principal, the rate as a decimal, and that time."
 >}}
 
 ## Key terms
@@ -278,45 +288,49 @@ years.
 {{< fillin
   question="Use the simple interest formula to fill in the missing value. The principal is \$1,200, the rate is 3%, and the time is 5 years. What is the interest, in dollars?"
   answer="180"
+  answerForm="decimal"
   answerDisplay="\$180"
-  hint="Substitute into $I = Prt$ with the rate in decimal form: $I = 1{,}200(0.03)(5)$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
   question="Use the simple interest formula to fill in the missing value. The interest is \$4,410, the rate is 4.5%, and the time is 7 years. What is the principal, in dollars?"
   answer="14000"
+  answerForm="decimal"
   answerDisplay="\$14,000"
-  hint="Substitute into $I = Prt$ to get $4{,}410 = P(0.045)(7)$, then divide both sides by the product of the rate and the time."
+  hint="Substitute the known values into $I = Prt$ with the rate as a decimal, multiply the rate by the time, then divide the interest by that product."
 >}}
 
 {{< fillin
-  question="Use the simple interest formula to fill in the missing value. The interest is \$577.08, the principal is \$4,580, and the time is 2 years. What is the rate, as a percent?"
+  question="Use the simple interest formula to fill in the missing value. The interest is \$577.08, the principal is \$4,580, and the time is 2 years. What is the rate? Enter the rate as a percent, including the % sign."
   answer="6.3\%"
   answerForm="percent"
   answerDisplay="6.3%"
-  hint="Substitute into $I = Prt$ to get $577.08 = 4{,}580 \cdot r \cdot 2$, then divide and change the decimal to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 {{< fillin
   question="Find the simple interest earned after 2 years on \$8,950 at an interest rate of 3.24%. Give the interest in dollars."
   answer="579.96"
+  answerForm="decimal"
   answerDisplay="\$579.96"
-  hint="Use $I = Prt$ with $P = 8{,}950$, $r = 0.0324$, and $t = 2$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
   question="Find the principal invested if \$70.95 interest was earned in 3 years at an interest rate of 2.75%. Give the principal in dollars."
   answer="860"
+  answerForm="decimal"
   answerDisplay="\$860"
-  hint="Substitute into $I = Prt$ to get $70.95 = P(0.0275)(3)$, then divide by $0.0825$."
+  hint="Substitute the known values into $I = Prt$ with the rate as a decimal, multiply the rate by the time, then divide the interest by that product."
 >}}
 
 {{< fillin
-  question="Find the rate if a principal of \$11,000 earned \$1,815 interest in 3 years. Give the rate as a percent."
+  question="Find the rate if a principal of \$11,000 earned \$1,815 interest in 3 years. Enter the rate as a percent, including the % sign."
   answer="5.5\%"
   answerForm="percent"
   answerDisplay="5.5%"
-  hint="Substitute into $I = Prt$ to get $1{,}815 = 11{,}000 \cdot r \cdot 3$, then divide and change the decimal to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 ### Solve simple interest applications
@@ -324,46 +338,51 @@ years.
 {{< fillin
   question="Casey deposited \$1,450 in a bank account with interest rate 4%. How much interest, in dollars, was earned in 2 years?"
   answer="116"
+  answerForm="decimal"
   answerDisplay="\$116"
-  hint="The interest is the unknown, so use $I = Prt$ with $P = 1{,}450$, $r = 0.04$, and $t = 2$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
   question="Robin deposited \$31,000 in a bank account with interest rate 5.2%. How much interest, in dollars, was earned in 3 years?"
   answer="4836"
+  answerForm="decimal"
   answerDisplay="\$4,836"
-  hint="Write $5.2\%$ as $0.052$, then multiply by the principal and the number of years."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
-  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest, as a percent?"
+  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest? Enter the rate as a percent, including the % sign."
   answer="3\%"
   answerForm="percent"
   answerDisplay="3%"
-  hint="The amount repaid is the principal and the extra amount is the interest, so solve $1{,}200 = 8{,}000 \cdot r \cdot 5$."
+  hint="The extra amount paid back is the interest and the amount borrowed is the principal; solve $I = Prt$ for $r$, then write the decimal as a percent."
 >}}
 
 {{< fillin
   question="In 10 years, a bank account that paid 5.25% earned \$18,375 interest. What was the principal of the account, in dollars?"
   answer="35000"
+  answerForm="decimal"
   answerDisplay="\$35,000"
-  hint="Substitute into $I = Prt$ to get $18{,}375 = P(0.0525)(10)$, then divide by $0.525$."
+  hint="Substitute the known values into $I = Prt$ with the rate as a decimal, multiply the rate by the time, then divide the interest by that product."
 >}}
 
 {{< fillin
   question="Joshua's computer loan statement said he would pay \$1,244.34 in interest for a 3 year loan at 12.4%. How much, in dollars, did Joshua borrow to buy the computer?"
   answer="3345"
+  answerForm="decimal"
   answerDisplay="\$3,345"
-  hint="The amount borrowed is the principal, so solve $1{,}244.34 = P(0.124)(3)$."
+  hint="The amount borrowed is the principal: divide the interest by the product of the rate (as a decimal) and the time."
 >}}
 
 {{< fillin
   question="Caitlin invested \$8,200 in an 18-month certificate of deposit paying 2.7% interest. How much interest, in dollars, did she earn from this investment?"
   answer="332.10"
+  answerForm="decimal"
   answerDisplay="\$332.10"
-  hint="The rate is annual, so first write 18 months as $\tfrac{18}{12}$ of a year, then use $I = Prt$ with $P = 8{,}200$ and $r = 0.027$."
+  hint="The rate is annual, so write the months as a fraction of a year (months over $12$), then multiply the principal, the rate as a decimal, and that time."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.4: Solve Simple Interest Applications](https://openstax.org/books/prealgebra-2e/pages/6-4-solve-simple-interest-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating the missing-value tables as prose prompts.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.4: Solve Simple Interest Applications](https://openstax.org/books/prealgebra-2e/pages/6-4-solve-simple-interest-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recast the step-by-step solution tables as prose with typeset math; omitted the Be Prepared quiz, Key Concepts list, and Self Check checklist; added principal and rate of interest to the Key terms; converted the practice problems ("Try Its") into interactive exercises with instant feedback, supplying the period missing from one Try It; and adapted selected end-of-section exercises into the interactive Practice block, restating the missing-value tables as prose prompts and correcting "form" to "from" in one exercise.</small>

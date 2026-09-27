@@ -33,10 +33,10 @@ $-5-3$, and $5-(-3)$.
 **Example.** Model $5 - 3$. Start with $5$ positives. Take away $3$
 positives. There are $2$ positives left, so $5 - 3 = 2$.
 
-<svg viewBox="0 0 220 70" role="img" aria-label="Five blue positive counters with three circled in red and removed, leaving two positives." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <ellipse cx="52" cy="35" rx="50" ry="22" fill="none" stroke="#c0392b" stroke-width="1.5" />
-  <circle cx="20" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="84" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
-  <circle cx="148" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="180" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+<svg viewBox="0 0 220 70" role="img" aria-label="Five blue positive counters in a row; the first three are circled to show they are taken away, and the last two are set apart." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <ellipse cx="58" cy="35" rx="55" ry="24" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="26" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="58" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="90" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+  <circle cx="154" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="186" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
 </svg>
 
 {{< fillin
@@ -78,7 +78,7 @@ $-5 - 3 = -8$.
   question="Model the expression, then simplify: $-6 - 4$"
   answer="-10"
   answerForm="decimal"
-  hint="Start with $6$ negatives. There are no positives to take away, so add $4$ neutral pairs, then remove the $4$ positives — leaving the original negatives plus $4$ more."
+  hint="Start with $6$ negatives. There are no positives to take away, so add neutral pairs until there are $4$ positives, take them away, and count the counters that are left."
 >}}
 
 **Example.** Model $5 - (-3)$. Start with $5$ positives. We need to take
@@ -91,7 +91,7 @@ $5 - (-3) = 8$.
   question="Model the expression, then simplify: $7 - (-4)$"
   answer="11"
   answerForm="decimal"
-  hint="Start with $7$ positives. Add $4$ neutral pairs to get $4$ negatives to remove — that leaves $7 + 4$ positives."
+  hint="Start with $7$ positives. There are no negatives to take away, so add neutral pairs until there are $4$ negatives, take them away, and count the counters that are left."
 >}}
 
 ## Simplify expressions with integers
@@ -157,14 +157,14 @@ the same as adding $4$ to $-7$.
   question="Simplify: $6 - (-13)$"
   answer="19"
   answerForm="decimal"
-  hint="Subtracting $-13$ is the same as adding $13$."
+  hint="Subtracting a negative number is the same as adding its opposite."
 >}}
 
 {{< fillin
-  question="Simplify: $-5 - (-1)$"
-  answer="-4"
+  question="Simplify: $-4 - (-7)$"
+  answer="3"
   answerForm="decimal"
-  hint="Subtracting $-1$ is the same as adding $1$."
+  hint="Subtracting a negative number is the same as adding its opposite."
 >}}
 
 Here's a summary of the pattern, based on the results from the earlier
@@ -204,7 +204,7 @@ $5$.
   question="Simplify: $8 - (-3 - 1) - 9$"
   answer="3"
   answerForm="decimal"
-  hint="Simplify inside the parentheses first ($-3 - 1 = -4$), then subtract left to right."
+  hint="Simplify inside the parentheses first, then subtract from left to right."
 >}}
 
 **Example.** Simplify $3 \cdot 7 - 4 \cdot 7 - 5 \cdot 8$. Multiply first:
@@ -214,7 +214,7 @@ $21 - 28 - 40$. Subtract from left to right: $-7-40$. Subtract: $-47$.
   question="Simplify: $6 \cdot 2 - 9 \cdot 1 - 8 \cdot 9$"
   answer="-69"
   answerForm="decimal"
-  hint="Multiply first ($12$, $9$, and $72$), then subtract left to right."
+  hint="Multiply first, then subtract from left to right."
 >}}
 
 ## Evaluate variable expressions with integers
@@ -230,12 +230,14 @@ negative numbers as well as positive numbers.
 {{< fillin
   question="Evaluate each expression: $y - 7$ when $y = 5$."
   answer="-2"
+  answerForm="decimal"
   hint="Substitute $5$ for $y$, then subtract."
 >}}
 
 {{< fillin
   question="Evaluate each expression: $y - 7$ when $y = -8$."
   answer="-15"
+  answerForm="decimal"
   hint="Substitute $-8$ for $y$, then subtract."
 >}}
 
@@ -247,13 +249,15 @@ negative numbers as well as positive numbers.
 {{< fillin
   question="Evaluate each expression: $17 - k$ when $k = 19$."
   answer="-2"
+  answerForm="decimal"
   hint="Substitute $19$ for $k$, then subtract."
 >}}
 
 {{< fillin
   question="Evaluate each expression: $17 - k$ when $k = -19$."
   answer="36"
-  hint="Substitute $-19$ for $k$: $17 - (-19)$, which is the same as adding $19$."
+  answerForm="decimal"
+  hint="Substitute $-19$ for $k$. Subtracting a negative number is the same as adding its opposite."
 >}}
 
 ## Translate word phrases to algebraic expressions
@@ -273,13 +277,15 @@ $-19-24 = -43$.
 {{< fillin
   question="Translate and simplify: the difference of $14$ and $-23$"
   answer="37"
-  hint="'Difference' means subtract, in the order given: $14 - (-23)$."
+  answerForm="decimal"
+  hint="'Difference' means subtraction, with the numbers in the order they are given."
 >}}
 
 {{< fillin
   question="Translate and simplify: subtract $21$ from $-17$"
   answer="-38"
-  hint="This means take $21$ away from $-17$: $-17 - 21$."
+  answerForm="decimal"
+  hint="'Subtract $a$ from $b$' means $b - a$: the number after 'from' comes first."
 >}}
 
 ## Subtract integers in applications
@@ -299,7 +305,8 @@ temperature was $20$ degrees Fahrenheit.
 {{< fillin
   question="In the morning, the temperature in Anchorage, Alaska was 15 degrees Fahrenheit. By mid-afternoon the temperature had dropped to 30 degrees below zero. What was the difference between the morning and afternoon temperatures (in degrees)?"
   answer="45"
-  hint="Find the difference of $15$ and $-30$: $15 - (-30)$."
+  answerForm="decimal"
+  hint="Write 30 degrees below zero as a negative number, then subtract the afternoon temperature from the morning temperature."
 >}}
 
 Geography gives another application, comparing elevations above and
@@ -317,8 +324,9 @@ $14{,}779$ feet.
 {{< fillin
   question="One day, John hiked to the 10,023-foot summit of Haleakala volcano in Hawaii. The next day, while scuba diving, he dove to a cave 80 feet below sea level. What is the difference between the elevation of the summit and the depth of the cave (in feet)?"
   answer="10103"
+  answerForm="decimal"
   answerDisplay="10,103"
-  hint="Subtract the cave's elevation ($-80$) from the summit's elevation ($10{,}023$): $10{,}023 - (-80)$."
+  hint="Write the depth below sea level as a negative elevation, then subtract it from the summit's elevation."
 >}}
 
 Checking accounts with overdraft protection combine both positive and
@@ -336,10 +344,11 @@ withdrawn, so it's added back: $-\text{\textdollar}3 + \text{\textdollar}10 = \t
 $\text{\textdollar}7$.
 
 {{< fillin
-  question="Araceli has \$75 in her checking account and writes a check for \$27. What is the balance after she writes the check?"
+  question="Araceli has \$75 in her checking account and writes a check for \$27. What is the balance after she writes the check, in dollars?"
   answer="48"
+  answerForm="decimal"
   answerDisplay="\$48"
-  hint="Subtract the check amount from the starting balance: $75 - 27$."
+  hint="A check is taken out of the account: subtract its amount from the starting balance."
 >}}
 
 ## Key terms
@@ -351,8 +360,8 @@ the same as adding its opposite.
 
 ### Model subtraction of integers
 
-<svg viewBox="0 0 264 70" role="img" aria-label="A row of eight blue positive counters. The first two are circled to show that they are being taken away." style="max-width: 264px; width: 100%; display: block; margin: 1.5rem auto">
-  <circle cx="20" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="84" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="116" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="148" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="180" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="212" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="244" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+<svg viewBox="0 0 280 70" role="img" aria-label="A row of eight blue positive counters. The first two are circled to show that they are being taken away, and are set apart from the rest." style="max-width: 280px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="100" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="132" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="164" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="196" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="228" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="260" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <ellipse cx="36" cy="35" rx="34" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
@@ -363,44 +372,44 @@ the same as adding its opposite.
   hint="Take the two circled positives away and count the positives that are left."
 >}}
 
-<svg viewBox="0 0 168 70" role="img" aria-label="A row of five red negative counters. The first one is circled to show that it is being taken away." style="max-width: 168px; width: 100%; display: block; margin: 1.5rem auto">
-  <circle cx="20" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="52" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="84" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="116" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="148" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
-  <ellipse cx="20" cy="35" rx="19" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
+<svg viewBox="0 0 180 70" role="img" aria-label="A row of five red negative counters. The first one is circled to show that it is being taken away, and is set apart from the rest." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="21" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="64" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="96" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="128" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="160" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
+  <ellipse cx="21" cy="35" rx="19" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 {{< fillin
   question="The counters above model $-5 - (-1)$. What is the value of the counters that remain?"
   answer="-4"
   answerForm="decimal"
-  hint="One negative is taken away from five negatives, so only negatives are left."
+  hint="Take the circled negative away, then count the negatives that are left."
 >}}
 
-<svg viewBox="0 0 316 110" role="img" aria-label="A row of nine red negative counters, the first five set apart from the last four. Below the last four is a row of four blue positive counters, circled to show that they are being taken away." style="max-width: 316px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 324 110" role="img" aria-label="Five red negative counters, and beside them four added neutral pairs: four red negative counters above four blue positive counters. The four blue counters are circled to show that they are being taken away." style="max-width: 324px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="52" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="84" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="116" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="148" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="200" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="232" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="264" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="296" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="200" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="232" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="264" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="296" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
-  <ellipse cx="248" cy="78" rx="66" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="248" cy="78" rx="70" ry="24" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 {{< fillin
   question="The counters above model $-5 - 4$. Four neutral pairs were added so that four positives could be taken away. What is the value of the counters that remain?"
   answer="-9"
   answerForm="decimal"
-  hint="Removing the four circled positives leaves the original five negatives plus the four negatives from the neutral pairs."
+  hint="Take the circled positives away, then count the counters that are left and note their color."
 >}}
 
-<svg viewBox="0 0 412 110" role="img" aria-label="A row of twelve blue positive counters, the first eight set apart from the last four. Below the last four is a row of four red negative counters, circled to show that they are being taken away." style="max-width: 412px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 420 110" role="img" aria-label="Eight blue positive counters, and beside them four added neutral pairs: four blue positive counters above four red negative counters. The four red counters are circled to show that they are being taken away." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="84" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="116" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="148" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="180" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="212" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="244" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="296" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="328" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="360" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="392" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="296" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="328" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="360" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="392" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
-  <ellipse cx="344" cy="78" rx="66" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="344" cy="78" rx="70" ry="24" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 {{< fillin
   question="The counters above model $8 - (-4)$. Four neutral pairs were added so that four negatives could be taken away. What is the value of the counters that remain?"
   answer="12"
   answerForm="decimal"
-  hint="Removing the four circled negatives leaves the original eight positives plus the four positives from the neutral pairs."
+  hint="Take the circled negatives away, then count the counters that are left and note their color."
 >}}
 
 ### Simplify expressions with integers
@@ -416,28 +425,28 @@ the same as adding its opposite.
   question="Simplify: $15 + (-6)$"
   answer="9"
   answerForm="decimal"
-  hint="Compare this with $15 - 6$ — subtracting $6$ and adding $-6$ do the same thing."
+  hint="The signs differ: subtract the absolute values and keep the sign of the number with the larger absolute value."
 >}}
 
 {{< fillin
   question="Simplify: $8 - (-9)$"
   answer="17"
   answerForm="decimal"
-  hint="Subtracting a negative is the same as adding its opposite: $8 + 9$."
+  hint="Subtracting a negative number is the same as adding its opposite."
 >}}
 
 {{< fillin
   question="Simplify: $8 + 9$"
   answer="17"
   answerForm="decimal"
-  hint="Compare this with $8 - (-9)$ — the two expressions must agree."
+  hint="Both numbers are positive, so add as usual."
 >}}
 
 {{< fillin
   question="Simplify: $48 - 87$"
   answer="-39"
   answerForm="decimal"
-  hint="Rewrite as $48 + (-87)$. The negative counter wins, so the result is negative."
+  hint="Rewrite the subtraction as adding the opposite, then add the two numbers with different signs."
 >}}
 
 {{< fillin
@@ -452,36 +461,42 @@ the same as adding its opposite.
 {{< fillin
   question="Evaluate $x - 6$ when $x = 3$."
   answer="-3"
-  hint="Substitute $3$ for $x$, then subtract $6$ from $3$."
+  answerForm="decimal"
+  hint="Substitute $3$ for $x$, then subtract."
 >}}
 
 {{< fillin
   question="Evaluate $x - 6$ when $x = -3$."
   answer="-9"
-  hint="Substitute $-3$ for $x$: $-3 - 6$ adds $6$ more negatives."
+  answerForm="decimal"
+  hint="Substitute $-3$ for $x$, then subtract."
 >}}
 
 {{< fillin
   question="Evaluate $5 - y$ when $y = 2$."
   answer="3"
+  answerForm="decimal"
   hint="Substitute $2$ for $y$, then subtract."
 >}}
 
 {{< fillin
   question="Evaluate $5 - y$ when $y = -2$."
   answer="7"
-  hint="Substitute $-2$ for $y$: $5 - (-2)$ is the same as $5 + 2$."
+  answerForm="decimal"
+  hint="Substitute $-2$ for $y$. Subtracting a negative number is the same as adding its opposite."
 >}}
 
 {{< fillin
   question="Evaluate $4x^2 - 15x + 1$ when $x = 3$."
   answer="-8"
+  answerForm="decimal"
   hint="Square first, then multiply, then subtract and add from left to right."
 >}}
 
 {{< fillin
   question="Evaluate $-12 - 5x^2$ when $x = 6$."
   answer="-192"
+  answerForm="decimal"
   hint="Follow the order of operations: square $6$ before multiplying by $5$, and only then subtract."
 >}}
 
@@ -490,29 +505,33 @@ the same as adding its opposite.
 {{< fillin
   question="Translate and simplify: the difference of $3$ and $-10$"
   answer="13"
+  answerForm="decimal"
   answerDisplay="$3 - (-10) = 13$"
-  hint="'Difference' means subtraction in the order given, so $-10$ is the number being subtracted."
+  hint="'Difference' means subtraction, with the numbers in the order they are given."
 >}}
 
 {{< fillin
   question="Translate and simplify: subtract $-20$ from $45$"
   answer="65"
+  answerForm="decimal"
   answerDisplay="$45 - (-20) = 65$"
-  hint="'Subtract from' reverses the order — start at $45$ and take $-20$ away."
+  hint="'Subtract $a$ from $b$' means $b - a$: the number after 'from' comes first."
 >}}
 
 {{< fillin
   question="Translate and simplify: $21$ less than $6$"
   answer="-15"
+  answerForm="decimal"
   answerDisplay="$6 - 21 = -15$"
-  hint="'Less than' reverses the order: start at $6$ and take $21$ away."
+  hint="'$a$ less than $b$' means $b - a$: the order is reversed."
 >}}
 
 {{< fillin
   question="Translate and simplify: $31$ subtracted from $-19$"
   answer="-50"
+  answerForm="decimal"
   answerDisplay="$-19 - 31 = -50$"
-  hint="'Subtracted from' also reverses the order — $-19$ comes first."
+  hint="'$a$ subtracted from $b$' means $b - a$: the order is reversed."
 >}}
 
 ### Subtract integers in applications
@@ -520,34 +539,39 @@ the same as adding its opposite.
 {{< fillin
   question="One morning, the temperature in Urbana, Illinois was 28 degrees Fahrenheit. By evening, the temperature had dropped 38 degrees. What was the temperature that evening, in degrees Fahrenheit?"
   answer="-10"
-  hint="A drop means subtraction: $28 - 38$. The drop is larger than the starting temperature, so the answer is below zero."
+  answerForm="decimal"
+  hint="A drop in temperature means subtraction: take the drop away from the morning temperature."
 >}}
 
 {{< fillin
-  question="On January 15, the high temperature in Anaheim, California was 84 degrees Fahrenheit. That same day, the high temperature in Embarrass, Minnesota was 12 degrees below zero. What was the difference between the two temperatures, in degrees Fahrenheit?"
+  question="On January 15, the high temperature in Anaheim, California was 84 degrees Fahrenheit. That same day, the high temperature in Embarrass, Minnesota was $-12$ degrees Fahrenheit. What was the difference between the temperature in Anaheim and the temperature in Embarrass, in degrees Fahrenheit?"
   answer="96"
-  hint="Find the difference of $84$ and $-12$: subtracting $-12$ is the same as adding $12$."
+  answerForm="decimal"
+  hint="Subtract the Embarrass temperature from the Anaheim temperature, in that order."
 >}}
 
 {{< fillin
   question="At the first down, the Warriors football team had the ball on their 30-yard line. On the next three downs, they gained 2 yards, lost 7 yards, and lost 4 yards. What yard line were they on at the end of the third down?"
   answer="21"
-  hint="Start at $30$, add the gain, and subtract each loss: $30 + 2 - 7 - 4$."
+  answerForm="decimal"
+  hint="Start at the $30$-yard line, add each gain, and subtract each loss."
 >}}
 
 {{< fillin
   question="Gina has \$210 in her checking account. She writes a check for \$250. What is the new balance in her checking account, in dollars?"
   answer="-40"
+  answerForm="decimal"
   answerDisplay="$-40$ dollars — the account is overdrawn by \$40."
-  hint="Subtract the check from the balance: $210 - 250$. The check is larger, so the balance goes below zero."
+  hint="A check is taken out of the account: subtract its amount from the balance."
 >}}
 
 {{< fillin
   question="Bill has a balance of negative \$14 in his checking account. He deposits \$40 to the account. What is the new balance, in dollars?"
   answer="26"
-  hint="A deposit is added: $-14 + 40$. The deposit covers the overdraft with some left over."
+  answerForm="decimal"
+  hint="A deposit is added to the balance: add the deposit to the negative balance."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.3: Subtract Integers](https://openstax.org/books/prealgebra-2e/pages/3-3-subtract-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the two-color-counter models as accessible inline graphics and the subtraction-pattern summary as a table; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding multipart items into one exercise per part and redrawing the counter models as accessible inline graphics that ask for the value the model leaves.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.3: Subtract Integers](https://openstax.org/books/prealgebra-2e/pages/3-3-subtract-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the first two-color-counter model as an accessible inline graphic, described the other models in prose, and set out the subtraction-pattern summary as a table; condensed prose; omitted the Be Prepared quiz, the "Model each subtraction" and "Model each subtraction expression" examples and their Try Its, the Manipulative Mathematics and Links to Literacy callouts, and media links; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, one expression or part per question (not every part carried), with the modeling Try Its asking for the value; named the unit to enter in the application questions; and adapted selected end-of-section exercises into the interactive Practice block, expanding multipart items into one exercise per part and redrawing the counter models as accessible inline graphics that ask for the value the model leaves.</small>

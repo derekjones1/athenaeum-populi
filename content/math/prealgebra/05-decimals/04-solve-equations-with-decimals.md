@@ -57,12 +57,14 @@ is a solution to the equation.
 {{< fillin
   question="Determine which value is a solution of the equation $x - 0.6 = 1.3$: $x = 0.7$, $x = 1.9$, or $x = -0.7$? Enter only the value that is a solution."
   answer="1.9"
+  answerForm="decimal"
   hint="Substitute each value for $x$ and see which one makes $x - 0.6 = 1.3$ a true statement."
 >}}
 
 {{< fillin
   question="Determine which value is a solution of the equation $y - 0.4 = 1.7$: $y = 2.1$, $y = 1.3$, or $y = -1.3$? Enter only the value that is a solution."
   answer="2.1"
+  answerForm="decimal"
   hint="Substitute each value for $y$ and see which one makes $y - 0.4 = 1.7$ a true statement."
 >}}
 
@@ -100,12 +102,14 @@ statement, we know we have found a solution to this equation.
 {{< fillin
   question="Solve: $y + 2.7 = -5.3$"
   answer="-8"
+  answerForm="decimal"
   hint="Subtract $2.7$ from each side to isolate $y$."
 >}}
 
 {{< fillin
   question="Solve: $y + 3.6 = -4.8$"
   answer="-8.4"
+  answerForm="decimal"
   hint="Subtract $3.6$ from each side to isolate $y$."
 >}}
 
@@ -122,12 +126,14 @@ $a = 3.36$ is a solution to the equation.
 {{< fillin
   question="Solve: $a - 3.93 = -2.86$"
   answer="1.07"
+  answerForm="decimal"
   hint="Add $3.93$ to each side to isolate $a$."
 >}}
 
 {{< fillin
   question="Solve: $n - 3.47 = -2.64$"
   answer="0.83"
+  answerForm="decimal"
   hint="Add $3.47$ to each side to isolate $n$."
 >}}
 
@@ -144,12 +150,14 @@ statement, we know we have a solution.
 {{< fillin
   question="Solve: $-8.4 = 0.7b$"
   answer="-12"
+  answerForm="decimal"
   hint="Divide both sides by $0.7$ to isolate $b$."
 >}}
 
 {{< fillin
   question="Solve: $-5.6 = 0.7c$"
   answer="-8"
+  answerForm="decimal"
   hint="Divide both sides by $0.7$ to isolate $c$."
 >}}
 
@@ -166,12 +174,14 @@ is $p = 11.7$.
 {{< fillin
   question="Solve: $\tfrac{c}{-2.6} = -4.5$"
   answer="11.7"
+  answerForm="decimal"
   hint="Multiply both sides by $-2.6$ to isolate $c$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{b}{-1.2} = -5.4$"
   answer="6.48"
+  answerForm="decimal"
   hint="Multiply both sides by $-1.2$ to isolate $b$."
 >}}
 
@@ -193,13 +203,15 @@ $6.4 - 4.3 \stackrel{?}{=} 2.1$. Simplify: $2.1 = 2.1\ \checkmark$.
 {{< fillin
   question="Translate and solve: The difference of $y$ and $4.9$ is $2.8$."
   answer="7.7"
-  hint="Translate to $y - 4.9 = 2.8$, then add $4.9$ to both sides."
+  answerForm="decimal"
+  hint="*Difference* means subtract, and the first number named is written first; then undo the subtraction with the Addition Property of Equality."
 >}}
 
 {{< fillin
   question="Translate and solve: The difference of $z$ and $5.7$ is $3.4$."
   answer="9.1"
-  hint="Translate to $z - 5.7 = 3.4$, then add $5.7$ to both sides."
+  answerForm="decimal"
+  hint="*Difference* means subtract, and the first number named is written first; then undo the subtraction with the Addition Property of Equality."
 >}}
 
 **Example.** Translate and solve: The product of $-3.1$ and $x$ is $5.27$.
@@ -214,13 +226,15 @@ $-3.1(-1.7) \stackrel{?}{=} 5.27$. Simplify: $5.27 = 5.27\ \checkmark$.
 {{< fillin
   question="Translate and solve: The product of $-4.3$ and $x$ is $12.04$."
   answer="-2.8"
-  hint="Translate to $-4.3x = 12.04$, then divide both sides by $-4.3$."
+  answerForm="decimal"
+  hint="*Product* means multiply; write the equation, then undo the multiplication with the Division Property of Equality."
 >}}
 
 {{< fillin
   question="Translate and solve: The product of $-3.1$ and $m$ is $26.66$."
   answer="-8.6"
-  hint="Translate to $-3.1m = 26.66$, then divide both sides by $-3.1$."
+  answerForm="decimal"
+  hint="*Product* means multiply; write the equation, then undo the multiplication with the Division Property of Equality."
 >}}
 
 **Example.** Translate and solve: The quotient of $p$ and $-2.4$ is $6.5$.
@@ -235,13 +249,15 @@ $\tfrac{-15.6}{-2.4} \stackrel{?}{=} 6.5$. Simplify: $6.5 = 6.5\ \checkmark$.
 {{< fillin
   question="Translate and solve: The quotient of $q$ and $-3.4$ is $4.5$."
   answer="-15.3"
-  hint="Translate to $\tfrac{q}{-3.4} = 4.5$, then multiply both sides by $-3.4$."
+  answerForm="decimal"
+  hint="*Quotient* means divide, and the first number named is the dividend; then undo the division with the Multiplication Property of Equality."
 >}}
 
 {{< fillin
   question="Translate and solve: The quotient of $r$ and $-2.6$ is $2.5$."
   answer="-6.5"
-  hint="Translate to $\tfrac{r}{-2.6} = 2.5$, then multiply both sides by $-2.6$."
+  answerForm="decimal"
+  hint="*Quotient* means divide, and the first number named is the dividend; then undo the division with the Multiplication Property of Equality."
 >}}
 
 **Example.** Translate and solve: The sum of $n$ and $2.9$ is $1.7$.
@@ -256,13 +272,15 @@ Simplify: $1.7 = 1.7\ \checkmark$.
 {{< fillin
   question="Translate and solve: The sum of $j$ and $3.8$ is $2.6$."
   answer="-1.2"
-  hint="Translate to $j + 3.8 = 2.6$, then subtract $3.8$ from each side."
+  answerForm="decimal"
+  hint="*Sum* means add; write the equation, then undo the addition with the Subtraction Property of Equality."
 >}}
 
 {{< fillin
   question="Translate and solve: The sum of $k$ and $4.7$ is $0.3$."
   answer="-4.4"
-  hint="Translate to $k + 4.7 = 0.3$, then subtract $4.7$ from each side."
+  answerForm="decimal"
+  hint="*Sum* means add; write the equation, then undo the addition with the Subtraction Property of Equality."
 >}}
 
 ## Key terms
@@ -280,7 +298,7 @@ lets us isolate a variable and solve for it.
 {{< multiplechoice
   question="Is $x = 2$ a solution of $x - 0.8 = 2.3$?"
   answer="no"
-  hint="Substitute $2$ for $x$, simplify the left side, and see whether the result really is $2.3$."
+  hint="Substitute $2$ for $x$, simplify the left side, and compare the result with $2.3$."
 >}}
 no
 yes
@@ -289,7 +307,7 @@ yes
 {{< multiplechoice
   question="Is $x = -1.5$ a solution of $x - 0.8 = 2.3$?"
   answer="no"
-  hint="Substituting a negative number leaves a negative left side, so compare its sign with $2.3$ before you even finish subtracting."
+  hint="Substitute $-1.5$ for $x$, subtract, and compare the result with $2.3$."
 >}}
 yes
 no
@@ -307,7 +325,7 @@ yes
 {{< multiplechoice
   question="Is $h = 6.45$ a solution of $\tfrac{h}{1.5} = -4.3$?"
   answer="no"
-  hint="A positive number divided by a positive number is positive, so check the sign against $-4.3$."
+  hint="Substitute $6.45$ for $h$, divide by $1.5$, and compare the quotient with $-4.3$."
 >}}
 no
 yes
@@ -325,7 +343,7 @@ yes
 {{< multiplechoice
   question="Is $h = -2.1$ a solution of $\tfrac{h}{1.5} = -4.3$?"
   answer="no"
-  hint="Dividing by $1.5$ makes a number smaller in size, so $-2.1$ cannot produce a quotient as large in size as $-4.3$."
+  hint="Substitute $-2.1$ for $h$, divide by $1.5$, and compare the quotient with $-4.3$."
 >}}
 no
 yes
@@ -336,42 +354,49 @@ yes
 {{< fillin
   question="Solve: $c + 1.15 = -3.5$"
   answer="-4.65"
+  answerForm="decimal"
   hint="Undo the addition with the Subtraction Property of Equality: subtract $1.15$ from each side."
 >}}
 
 {{< fillin
   question="Solve: $j - 1.82 = -6.5$"
   answer="-4.68"
+  answerForm="decimal"
   hint="Undo the subtraction with the Addition Property of Equality: add $1.82$ to each side."
 >}}
 
 {{< fillin
   question="Solve: $-1.7c = 8.5$"
   answer="-5"
+  answerForm="decimal"
   hint="The variable is multiplied by $-1.7$, so divide both sides by $-1.7$. A positive divided by a negative is negative."
 >}}
 
 {{< fillin
   question="Solve: $0.24x = 4.8$"
   answer="20"
-  hint="Divide both sides by $0.24$. Moving the decimal point two places in both numbers turns it into $480 \div 24$."
+  answerForm="decimal"
+  hint="Divide both sides by $0.24$; move the decimal point in the divisor and the dividend two places to the right before you divide."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{x}{0.7} = -0.4$"
   answer="-0.28"
+  answerForm="decimal"
   hint="The variable is divided by $0.7$, so multiply both sides by $0.7$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{p}{-5} = -1.65$"
   answer="8.25"
+  answerForm="decimal"
   hint="Multiply both sides by $-5$; a negative times a negative is positive."
 >}}
 
 {{< fillin
   question="Shawn bought a pair of shoes on sale for \$78. Solve the equation $0.75p = 78$ to find the original price of the shoes, $p$. Give the price in dollars."
   answer="104"
+  answerForm="decimal"
   answerDisplay="\$104"
   hint="The sale price is $0.75$ times the original price, so divide both sides by $0.75$."
 >}}
@@ -381,6 +406,7 @@ yes
 {{< fillin
   question="Translate and solve: The difference of $n$ and $1.9$ is $3.4$."
   answer="5.3"
+  answerForm="decimal"
   answerDisplay="$n - 1.9 = 3.4$, so $n = 5.3$"
   hint="*Difference* means subtract, and the first number named is written first; then add $1.9$ to both sides."
 >}}
@@ -388,13 +414,15 @@ yes
 {{< fillin
   question="Translate and solve: The product of $-6.2$ and $x$ is $-4.96$."
   answer="0.8"
+  answerForm="decimal"
   answerDisplay="$-6.2x = -4.96$, so $x = 0.8$"
-  hint="*Product* means multiply, so the equation is $-6.2x = -4.96$; divide both sides by $-6.2$."
+  hint="*Product* means multiply; write the equation, then undo the multiplication with the Division Property of Equality."
 >}}
 
 {{< fillin
   question="Translate and solve: The quotient of $y$ and $-1.7$ is $-5$."
   answer="8.5"
+  answerForm="decimal"
   answerDisplay="$\tfrac{y}{-1.7} = -5$, so $y = 8.5$"
   hint="*Quotient* means divide, and the first number named is the dividend; then multiply both sides by $-1.7$."
 >}}
@@ -402,8 +430,9 @@ yes
 {{< fillin
   question="Translate and solve: The sum of $n$ and $-7.3$ is $2.4$."
   answer="9.7"
+  answerForm="decimal"
   answerDisplay="$n + (-7.3) = 2.4$, so $n = 9.7$"
-  hint="*Sum* means add, so the equation is $n + (-7.3) = 2.4$; adding $-7.3$ is the same as subtracting $7.3$, so undo it by adding $7.3$ to both sides."
+  hint="*Sum* means add; write the equation, then undo adding a negative number by adding its opposite to both sides."
 >}}
 
 ---

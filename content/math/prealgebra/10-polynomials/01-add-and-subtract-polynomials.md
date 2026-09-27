@@ -65,17 +65,27 @@ $x^4 - 7x^3 - 6x^2 + 5x + 2$ (d) $11 - 4y^3$ (e) $n$
 | (d) | $11 - 4y^3$ | 2 | Binomial |
 | (e) | $n$ | 1 | Monomial |
 
-{{< fillin
-  question="Classify $2x^3 - 4x^2 - x - 8$ as a monomial, binomial, trinomial, or other polynomial. Enter the number of terms it has."
-  answer="4"
-  hint="Count the terms separated by addition or subtraction signs."
+{{< multiplechoice
+  question="Determine whether $2x^3 - 4x^2 - x - 8$ is a monomial, binomial, trinomial, or other polynomial."
+  answer="other polynomial"
+  hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
 >}}
+binomial
+trinomial
+monomial
+other polynomial
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="Classify $9x^3 - 5x^2 - x$ as a monomial, binomial, trinomial, or other polynomial. Enter the number of terms it has."
-  answer="3"
-  hint="Count the terms separated by addition or subtraction signs."
+{{< multiplechoice
+  question="Determine whether $9x^3 - 5x^2 - x$ is a monomial, binomial, trinomial, or other polynomial."
+  answer="trinomial"
+  hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
 >}}
+monomial
+other polynomial
+trinomial
+binomial
+{{< /multiplechoice >}}
 
 ## Determine the degree of polynomials
 
@@ -103,28 +113,35 @@ polynomials with more terms.
 | Monomial | $5$ | $4b^2$ | $-9x^3$ | $-18$ |
 | Degree | $0$ | $2$ | $3$ | $0$ |
 | Binomial | $b+1$ | $3a-7$ | $y^2-9$ | $17x^3+14x^2$ |
-| Degree | $1$ | $1$ | $2$ | $3$ |
+| Degree of each term | $1,\ 0$ | $1,\ 0$ | $2,\ 0$ | $3,\ 2$ |
+| Degree of polynomial | $1$ | $1$ | $2$ | $3$ |
 | Trinomial | $x^2-5x+6$ | $4y^2-7y+2$ | $5a^4-3a^3+a$ | $x^4+2x^2-5$ |
-| Degree | $2$ | $2$ | $4$ | $4$ |
+| Degree of each term | $2,\ 1,\ 0$ | $2,\ 1,\ 0$ | $4,\ 3,\ 1$ | $4,\ 2,\ 0$ |
+| Degree of polynomial | $2$ | $2$ | $4$ | $4$ |
+| Polynomial | $b+1$ | $4y^2-7y+2$ | $4x^4+x^3+8x^2-9x+1$ | |
+| Degree of each term | $1,\ 0$ | $2,\ 1,\ 0$ | $4,\ 3,\ 2,\ 1,\ 0$ | |
+| Degree of polynomial | $1$ | $2$ | $4$ | |
 
 **Example.** Find the degree of the following polynomials: (a) $4x$ (b)
 $3x^3 - 5x + 7$ (c) $-11$ (d) $-6x^2 + 9x - 3$ (e) $8x + 2$
 
-(a) The exponent of $x$ is one ($x = x^1$), so the degree is $1$.
-(b) The highest degree of all the terms is $3$, so the degree is $3$.
-(c) The degree of a constant is $0$, so the degree is $0$.
-(d) The highest degree of all the terms is $2$, so the degree is $2$.
-(e) The highest degree of all the terms is $1$, so the degree is $1$.
+- (a) The exponent of $x$ is one ($x = x^1$), so the degree is $1$.
+- (b) The highest degree of all the terms is $3$, so the degree is $3$.
+- (c) The degree of a constant is $0$, so the degree is $0$.
+- (d) The highest degree of all the terms is $2$, so the degree is $2$.
+- (e) The highest degree of all the terms is $1$, so the degree is $1$.
 
 {{< fillin
   question="Find the degree of the polynomial $3x^4 + 4x^2 - 8$."
   answer="4"
+  answerForm="decimal"
   hint="The degree of a polynomial is the highest exponent among all its terms."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $y^5 - 5y^3 + y$."
   answer="5"
+  answerForm="decimal"
   hint="The degree of a polynomial is the highest exponent among all its terms."
 >}}
 
@@ -281,7 +298,7 @@ $$8m^2 - 4m - 4$$
   answer="4n^2 + 12n"
   answerForm="no-like-terms"
   answerDisplay="$4n^2 + 12n$"
-  hint="Write it as $(8n^2 + 5n - 3) - (4n^2 - 7n - 3)$, distribute the minus sign, then combine like terms."
+  hint="Start with the polynomial that follows “from” and subtract the other one: distribute the minus sign, then combine like terms."
 >}}
 
 {{< fillin
@@ -289,7 +306,7 @@ $$8m^2 - 4m - 4$$
   answer="5a^2 + 8a + 8"
   answerForm="no-like-terms"
   answerDisplay="$5a^2 + 8a + 8$"
-  hint="Write it as $(6a^2 + 4a - 1) - (a^2 - 4a - 9)$, distribute the minus sign, then combine like terms."
+  hint="Start with the polynomial that follows “from” and subtract the other one: distribute the minus sign, then combine like terms."
 >}}
 
 ## Evaluate a polynomial for a given value
@@ -335,12 +352,14 @@ $$19$$
 {{< fillin
   question="Evaluate $2x^2 + 4x - 3$ when $x = 2$."
   answer="13"
+  answerForm="decimal"
   hint="Substitute $2$ for $x$, simplify the exponent first, then multiply and add."
 >}}
 
 {{< fillin
   question="Evaluate $2x^2 + 4x - 3$ when $x = -3$."
   answer="3"
+  answerForm="decimal"
   hint="Substitute $-3$ for $x$, simplify the exponent first, then multiply and add."
 >}}
 
@@ -367,14 +386,18 @@ $$156$$
 The height of the object is $156$ feet after $t = 3$ seconds.
 
 {{< fillin
-  question="The polynomial $-8t^2 + 24t + 4$ gives the height, in feet, of a ball $t$ seconds after it is tossed into the air from an initial height of 4 feet. Find the height after $t = 3$ seconds."
+  question="The polynomial $-8t^2 + 24t + 4$ gives the height, in feet, of a ball $t$ seconds after it is tossed into the air from an initial height of $4$ feet. Find the height after $t = 3$ seconds."
   answer="4"
+  answerForm="decimal"
+  answerDisplay="$4$ feet"
   hint="Substitute $3$ for $t$ into $-8t^2 + 24t + 4$, simplify the exponent first, then multiply and add."
 >}}
 
 {{< fillin
-  question="The polynomial $-8t^2 + 24t + 4$ gives the height, in feet, of a ball $t$ seconds after it is tossed into the air from an initial height of 4 feet. Find the height after $t = 2$ seconds."
+  question="The polynomial $-8t^2 + 24t + 4$ gives the height, in feet, of a ball $t$ seconds after it is tossed into the air from an initial height of $4$ feet. Find the height after $t = 2$ seconds."
   answer="20"
+  answerForm="decimal"
+  answerDisplay="$20$ feet"
   hint="Substitute $2$ for $t$ into $-8t^2 + 24t + 4$, simplify the exponent first, then multiply and add."
 >}}
 
@@ -417,7 +440,7 @@ monomial
 {{< multiplechoice
   question="Determine whether $23y^2$ is a monomial, binomial, trinomial, or other polynomial."
   answer="monomial"
-  hint="A single term of the form $ax^m$ has its own special name."
+  hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
 >}}
 trinomial
 binomial
@@ -428,7 +451,7 @@ monomial
 {{< multiplechoice
   question="Determine whether $y^3 - 8y^2 + 2y - 16$ is a monomial, binomial, trinomial, or other polynomial."
   answer="other polynomial"
-  hint="Only one-, two-, and three-term polynomials get a special name; anything with more terms is just called a polynomial."
+  hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
 >}}
 monomial
 trinomial
@@ -441,19 +464,22 @@ binomial
 {{< fillin
   question="Determine the degree of $8a^5 - 2a^3 + 1$."
   answer="5"
+  answerForm="decimal"
   hint="The degree of a polynomial is the highest exponent among all of its terms."
 >}}
 
 {{< fillin
   question="Determine the degree of $3x - 12$."
   answer="1"
-  hint="A variable written without an exponent has an implied exponent of $1$, and a constant has degree $0$."
+  answerForm="decimal"
+  hint="Find the degree of each term (a variable written without an exponent has an implied one), then take the highest."
 >}}
 
 {{< fillin
   question="Determine the degree of $-13$."
   answer="0"
-  hint="This polynomial has no variable at all."
+  answerForm="decimal"
+  hint="Use the rule in the Degree of a polynomial box for a term with no variable."
 >}}
 
 ### Add and subtract monomials
@@ -475,10 +501,11 @@ binomial
 >}}
 
 {{< fillin
-  question="Add: $5a + 7b$."
-  answer="5a + 7b"
-  answerDisplay="$5a + 7b$"
-  hint="Check whether the two terms have the same variable before combining anything."
+  question="Add: $4a$, $-3b$, and $-8a$."
+  answer="-4a - 3b"
+  answerForm="no-like-terms"
+  answerDisplay="$-4a - 3b$"
+  hint="Combine only the terms that have the same variable; a term with no like term stays as it is."
 >}}
 
 {{< fillin
@@ -486,7 +513,7 @@ binomial
   answer="-17x^6"
   answerForm="no-like-terms"
   answerDisplay="$-17x^6$"
-  hint="Write it as $-12x^6 - 5x^6$, then combine the coefficients."
+  hint="Start with the monomial that follows “from” and subtract the other one by combining the coefficients."
 >}}
 
 ### Add and subtract polynomials
@@ -520,7 +547,7 @@ binomial
   answer="x^2 + 3x + 4"
   answerForm="no-like-terms"
   answerDisplay="$x^2 + 3x + 4$"
-  hint="Write it as $(8x^2 - x + 6) - (7x^2 - 4x + 2)$, distribute the minus sign, then combine like terms."
+  hint="Start with the polynomial that follows “from” and subtract the other one: distribute the minus sign, then combine like terms."
 >}}
 
 ### Evaluate a polynomial for a given value
@@ -528,28 +555,32 @@ binomial
 {{< fillin
   question="Evaluate $8y^2 - 3y + 2$ when $y = 5$."
   answer="187"
+  answerForm="decimal"
   hint="Substitute $5$ for $y$, square first, then multiply and combine."
 >}}
 
 {{< fillin
   question="Evaluate $8y^2 - 3y + 2$ when $y = -2$."
   answer="40"
+  answerForm="decimal"
   hint="A negative number squared is positive, and $-3(-2)$ is positive as well."
 >}}
 
 {{< fillin
   question="Evaluate $8y^2 - 3y + 2$ when $y = 0$."
   answer="2"
-  hint="Every term with a $y$ in it becomes $0$, so only the constant is left."
+  answerForm="decimal"
+  hint="Substitute $0$ for $y$ in every term, then simplify."
 >}}
 
 {{< fillin
   question="A window washer drops a squeegee from a platform $275$ feet high. The polynomial $-16t^2 + 275$ gives the height, in feet, of the squeegee $t$ seconds after it was dropped. Find the height after $t = 4$ seconds."
   answer="19"
+  answerForm="decimal"
   answerDisplay="$19$ feet"
   hint="Substitute $4$ for $t$, simplify $-16(4)^2$ first, then add $275$."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.1: Add and Subtract Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the polynomial-classification and degree tables as markdown tables; omitted the Be Prepared quiz, Media callout, Self Check checklist, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating the classification prompts as multiple-choice questions and expanding the multipart evaluation item into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.1: Add and Subtract Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the polynomial-classification and degree tables as markdown tables; omitted the Be Prepared quiz, Media callout, Self Check checklist, and Writing Exercises; converted selected parts of the practice problems ("Try Its") into interactive exercises with instant feedback, posing the classification parts as multiple-choice questions and correcting one height problem's stem, which named the time variable $x$ instead of $t$; and adapted selected end-of-section exercises into the interactive Practice block, restating the classification prompts as multiple-choice questions and expanding the multipart evaluation item into one question per part.</small>

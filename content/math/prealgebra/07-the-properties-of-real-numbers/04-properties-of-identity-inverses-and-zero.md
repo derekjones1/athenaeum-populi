@@ -24,14 +24,14 @@ weight: 4
 What happens when we add zero to any number? Adding zero doesn't change the
 value. For this reason, we call $0$ the **additive identity**. For example,
 
-$$13 + 0 = 13 \qquad -14 + 0 = -14 \qquad 0 + (-3x) = -3x$$
+$$13 + 0 = 13, \;\; {-14} + 0 = -14, \;\; 0 + (-3x) = -3x$$
 
 What happens when you multiply any number by one? Multiplying by one
 doesn't change the value. So we call $1$ the **multiplicative identity**.
 For example,
 
 $$
-43 \cdot 1 = 43 \qquad -27 \cdot 1 = -27 \qquad 1 \cdot \tfrac{6y}{5} =
+43 \cdot 1 = 43, \;\; {-27} \cdot 1 = -27, \;\; 1 \cdot \tfrac{6y}{5} =
 \tfrac{6y}{5}
 $$
 
@@ -60,11 +60,23 @@ property of addition or multiplication: (a) $7 + 0 = 7$ (b) $-16(1) =
 (b) We are multiplying by $1$, so this uses the identity property of
 multiplication.
 
-{{< fillin
-  question="How many of these two equations demonstrate the identity property of addition (rather than multiplication): $23 + 0 = 23$, and $-37(1) = -37$?"
-  answer="1"
-  hint="Adding $0$ is the identity property of addition; multiplying by $1$ is the identity property of multiplication."
+{{< multiplechoice
+  question="Identify whether this equation demonstrates the identity property of addition or multiplication: $23 + 0 = 23$"
+  answer="identity property of addition"
+  hint="Find the operation and the number it combines with, then match them to the identity properties above."
 >}}
+identity property of multiplication
+identity property of addition
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify whether this equation demonstrates the identity property of addition or multiplication: $-37(1) = -37$"
+  answer="identity property of multiplication"
+  hint="Find the operation and the number it combines with, then match them to the identity properties above."
+>}}
+identity property of addition
+identity property of multiplication
+{{< /multiplechoice >}}
 
 ## Use the inverse properties of addition and multiplication
 
@@ -112,12 +124,14 @@ $\tfrac{5}{8}$ (c) the additive inverse of $0.6$ is $-0.6$.
 {{< fillin
   question="Find the additive inverse of $18$."
   answer="-18"
+  answerForm="decimal"
   hint="The additive inverse is the opposite of the number."
 >}}
 
 {{< fillin
   question="Find the additive inverse of $1.2$."
   answer="-1.2"
+  answerForm="decimal"
   hint="The additive inverse is the opposite of the number."
 >}}
 
@@ -131,17 +145,19 @@ of $0.9$, we first convert it to a fraction, $\tfrac{9}{10}$, then find the
 reciprocal, $\tfrac{10}{9}$.
 
 {{< fillin
-  question="Find the multiplicative inverse of $5$."
+  question="Find the multiplicative inverse of $5$. Enter it as a fraction."
   answer="\frac{1}{5}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{5}$"
   hint="The multiplicative inverse is the reciprocal of the number."
 >}}
 
 {{< fillin
-  question="Find the multiplicative inverse of $0.3$."
+  question="Find the multiplicative inverse of $0.3$. Enter it as a fraction."
   answer="\frac{10}{3}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{10}{3}$"
-  hint="Convert $0.3$ to a fraction first ($\tfrac{3}{10}$), then find its reciprocal."
+  hint="Convert the decimal to a fraction first, then find its reciprocal."
 >}}
 
 ## Use the properties of zero
@@ -172,7 +188,7 @@ simplify to $0$.
   question="Simplify: $-14 \cdot 0$."
   answer="0"
   answerForm="decimal"
-  hint="The product of any real number and $0$ is $0$."
+  hint="Use the multiplication-by-zero property."
 >}}
 
 ### Dividing with zero
@@ -201,7 +217,7 @@ expressions simplify to $0$.
   question="Simplify: $0 \div 11$."
   answer="0"
   answerForm="decimal"
-  hint="Zero divided by any nonzero number is zero."
+  hint="Decide whether $0$ is the dividend or the divisor, then apply the matching property of zero."
 >}}
 
 Now let's think about dividing a number *by* zero. What is the result of
@@ -223,11 +239,25 @@ $\tfrac{4}{9} \div 0$.
 
 Division by zero is undefined, so all three expressions are undefined.
 
-{{< fillin
-  question="How many of these four expressions are undefined: $0 \div 11$, $16.4 \div 0$, $\tfrac{-2}{0}$, and $\tfrac{0}{-6}$?"
-  answer="2"
-  hint="Zero divided by a nonzero number equals $0$ (defined). Any nonzero number divided by zero is undefined."
+{{< multiplechoice
+  question="Simplify: $16.4 \div 0$"
+  answer="undefined"
+  hint="Ask whether any number multiplied by $0$ could give $16.4$."
 >}}
+$0$
+undefined
+$16.4$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Simplify: $\tfrac{-2}{0}$"
+  answer="undefined"
+  hint="Decide whether $0$ is the dividend or the divisor, then apply the matching property of zero."
+>}}
+$-2$
+$0$
+undefined
+{{< /multiplechoice >}}
 
 We summarize the properties of zero:
 
@@ -249,8 +279,8 @@ zero to simplify expressions.
 
 **Example.** Simplify: $3x + 15 - 3x$.
 
-Notice the additive inverses, $3x$ and $-3x$; they combine to $0$, leaving
-the identity:
+Notice the additive inverses, $3x$ and $-3x$; they combine to $0$, and
+adding $0$ leaves $15$ unchanged:
 
 $$3x + 15 - 3x = (3x - 3x) + 15 = 0 + 15 = 15$$
 
@@ -258,7 +288,7 @@ $$3x + 15 - 3x = (3x - 3x) + 15 = 0 + 15 = 15$$
   question="Simplify: $-12z + 9 + 12z$."
   answer="9"
   answerForm="no-like-terms"
-  hint="$-12z$ and $12z$ are additive inverses — they combine to $0$, leaving the identity property."
+  hint="Look for a term and its opposite, group them, and combine them first."
 >}}
 
 **Example.** Simplify: $4(0.25q)$.
@@ -272,7 +302,7 @@ $$4(0.25q) = [4(0.25)]q = 1.00q = q$$
   question="Simplify: $2(0.5p)$."
   answer="p"
   answerForm="single-term"
-  hint="$2$ and $0.5$ are reciprocals — regroup and multiply them first; the result is the multiplicative identity."
+  hint="Regroup with the associative property and multiply the two numbers first."
 >}}
 
 **Example.** Simplify: $\tfrac{0}{n+5}$, where $n \neq -5$.
@@ -285,7 +315,7 @@ $$\tfrac{0}{n+5} = 0$$
   question="Simplify: $\tfrac{0}{m + 7}$, where $m \ne -7$."
   answer="0"
   answerForm="polynomial"
-  hint="Zero divided by any nonzero expression is zero."
+  hint="Decide whether $0$ is the dividend or the divisor, then apply the matching property of zero."
 >}}
 
 **Example.** Simplify: $\tfrac{10 - 3p}{0}$.
@@ -304,8 +334,8 @@ $$\tfrac{3}{4} \cdot \tfrac{4}{3}(6x + 12) = 1(6x + 12) = 6x + 12$$
 {{< fillin
   question="Simplify: $\tfrac{2}{5} \cdot \tfrac{5}{2}(20y + 50)$."
   answer="20y + 50"
-  answerForm="polynomial"
-  hint="$\tfrac{2}{5}$ and $\tfrac{5}{2}$ are reciprocals — their product is $1$, the multiplicative identity."
+  answerForm="polynomial distributed"
+  hint="The terms in parentheses cannot be combined, so multiply the two fractions first."
 >}}
 
 All the properties of real numbers used in this chapter are summarized
@@ -317,10 +347,13 @@ below:
 | **Associative Property** — if $a$, $b$, $c$ are real numbers, then... | $(a + b) + c = a + (b + c)$ | $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ |
 | **Identity Property** | $0$ is the additive identity: $a + 0 = a$, $0 + a = a$ | $1$ is the multiplicative identity: $a \cdot 1 = a$, $1 \cdot a = a$ |
 | **Inverse Property** | $-a$ is the additive inverse of $a$: $a + (-a) = 0$ | for $a \neq 0$, $\tfrac{1}{a}$ is the multiplicative inverse of $a$: $a \cdot \tfrac{1}{a} = 1$ |
-| **Properties of Zero** | $a \cdot 0 = 0$, $0 \cdot a = 0$ | for $a \neq 0$: $\tfrac{0}{a} = 0$; $\tfrac{a}{0}$ is undefined |
 
 **Distributive Property:** if $a$, $b$, $c$ are real numbers, then $a(b +
 c) = ab + ac$.
+
+**Properties of Zero:** for any real number $a$, $a \cdot 0 = 0$ and $0
+\cdot a = 0$; for any real number $a \neq 0$, $\tfrac{0}{a} = 0$ and
+$\tfrac{a}{0}$ is undefined.
 
 ## Key terms
 
@@ -339,7 +372,7 @@ nonzero number is $0$; but division *by* zero is undefined.
 {{< multiplechoice
   question="Identify whether this example uses the identity property of addition or of multiplication: $\tfrac{3}{5}(1) = \tfrac{3}{5}$"
   answer="identity property of multiplication"
-  hint="Look at what is being combined with the number: adding $0$ signals the additive identity, multiplying by $1$ signals the multiplicative identity."
+  hint="Find the operation and the number it combines with, then match them to the identity properties in the section."
 >}}
 identity property of multiplication
 identity property of addition
@@ -348,7 +381,7 @@ identity property of addition
 {{< multiplechoice
   question="Identify whether this example uses the identity property of addition or of multiplication: $0 + 64 = 64$"
   answer="identity property of addition"
-  hint="Look at what is being combined with the number: adding $0$ signals the additive identity, multiplying by $1$ signals the multiplicative identity."
+  hint="Find the operation and the number it combines with, then match them to the identity properties in the section."
 >}}
 identity property of addition
 identity property of multiplication
@@ -357,24 +390,27 @@ identity property of multiplication
 ### Use the inverse properties of addition and multiplication
 
 {{< fillin
-  question="Find the multiplicative inverse of $14$."
+  question="Find the multiplicative inverse of $14$. Enter it as a fraction."
   answer="\frac{1}{14}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{14}$"
   hint="The multiplicative inverse is the reciprocal — write the number as a fraction and swap the numerator and denominator."
 >}}
 
 {{< fillin
-  question="Find the multiplicative inverse of $-\tfrac{5}{12}$."
+  question="Find the multiplicative inverse of $-\tfrac{5}{12}$. Enter it as a fraction."
   answer="-\frac{12}{5}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{12}{5}$"
   hint="Invert the fraction and keep the sign: a negative number and its reciprocal must multiply to $1$."
 >}}
 
 {{< fillin
-  question="Find the multiplicative inverse of $0.4$."
+  question="Find the multiplicative inverse of $0.4$. Enter it as a fraction."
   answer="\frac{5}{2}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{5}{2}$"
-  hint="Rewrite the decimal as a fraction ($\tfrac{2}{5}$) first, then take its reciprocal."
+  hint="Rewrite the decimal as a fraction in lowest terms first, then take its reciprocal."
 >}}
 
 ### Use the properties of zero
@@ -383,14 +419,14 @@ identity property of multiplication
   question="Simplify: $22 \cdot 0$."
   answer="0"
   answerForm="decimal"
-  hint="The product of any real number and $0$ is $0$."
+  hint="Use the multiplication-by-zero property."
 >}}
 
 {{< fillin
   question="Simplify: $0 \div \tfrac{7}{15}$."
   answer="0"
   answerForm="decimal"
-  hint="Zero divided by any nonzero number is $0$ — the divisor being a fraction changes nothing."
+  hint="Decide whether $0$ is the dividend or the divisor, then apply the matching property of zero."
 >}}
 
 {{< multiplechoice
@@ -409,7 +445,7 @@ $6$
   question="Simplify: $92 + 31s - 92$."
   answer="31s"
   answerForm="single-term"
-  hint="Reorder so the additive inverses $92$ and $-92$ sit together; they combine to $0$, the additive identity."
+  hint="Reorder the terms so a number and its opposite sit together, then combine them."
 >}}
 
 {{< fillin
@@ -420,9 +456,9 @@ $6$
 >}}
 
 {{< multiplechoice
-  question="Simplify: $\tfrac{28 - 9b}{0}$"
+  question="Simplify: $\tfrac{28 - 9b}{0}$, where $28 - 9b \ne 0$"
   answer="undefined"
-  hint="Check whether the zero is in the numerator or the denominator — only one of those positions gives an answer."
+  hint="Check whether the zero is in the numerator or the denominator, then apply the matching property of zero."
 >}}
 $0$
 undefined
@@ -432,10 +468,10 @@ $28 - 9b$
 {{< fillin
   question="Simplify: $18 \cdot \tfrac{5}{6}(15h + 24)$."
   answer="225h + 360"
-  answerForm="polynomial"
+  answerForm="polynomial distributed"
   hint="The terms in parentheses cannot be combined, so multiply $18$ and $\tfrac{5}{6}$ first, then distribute."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.4: Properties of Identity, Inverses, and Zero](https://openstax.org/books/prealgebra-2e/pages/7-4-properties-of-identity-inverses-and-zero) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the chapter-wide properties summary (Table 7.1) as a markdown table; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the identity-property classification problem and one division-by-zero problem as counting questions so they can be graded as math expressions; and adapted selected end-of-section exercises into the interactive Practice block, presenting the property-classification and "undefined" items as multiple choice.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.4: Properties of Identity, Inverses, and Zero](https://openstax.org/books/prealgebra-2e/pages/7-4-properties-of-identity-inverses-and-zero) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the chapter-wide properties summary (Table 7.1) as a markdown table, with the distributive property and the properties of zero stated below it; omitted the Be Prepared quiz, Self Check checklist, media links, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, presenting the identity-property classification and division-by-zero problems as multiple choice, one item per part; and adapted selected end-of-section exercises into the interactive Practice block, presenting the property-classification and "undefined" items as multiple choice.</small>

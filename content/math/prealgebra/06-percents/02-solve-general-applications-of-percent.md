@@ -47,13 +47,15 @@ Multiply: $n = 31.5$. So $31.5$ is $35\%$ of $90$.
 {{< fillin
   question="What number is 45% of 80?"
   answer="36"
-  hint="Translate into an equation: $n = 0.45 \cdot 80$."
+  answerForm="decimal"
+  hint="Change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 {{< fillin
   question="What number is 55% of 60?"
   answer="33"
-  hint="Translate into an equation: $n = 0.55 \cdot 60$."
+  answerForm="decimal"
+  hint="Change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 **Example.** $125\%$ of $28$ is what number?
@@ -67,13 +69,15 @@ that $125\%$ of $28$ is $35$, which is greater than $28$.
 {{< fillin
   question="150% of 78 is what number?"
   answer="117"
-  hint="Translate into an equation: $1.5 \cdot 78 = a$."
+  answerForm="decimal"
+  hint="Change the percent to a decimal (a percent over $100\%$ is a decimal greater than $1$), translate *of* as multiplication and *is* as $=$, then multiply."
 >}}
 
 {{< fillin
   question="175% of 72 is what number?"
   answer="126"
-  hint="Translate into an equation: $1.75 \cdot 72 = a$."
+  answerForm="decimal"
+  hint="Change the percent to a decimal (a percent over $100\%$ is a decimal greater than $1$), translate *of* as multiplication and *is* as $=$, then multiply."
 >}}
 
 In the next examples, we are asked to find the base.
@@ -87,13 +91,15 @@ $48 = b$. So $36$ is $75\%$ of $48$.
 {{< fillin
   question="17 is 25% of what number?"
   answer="68"
-  hint="Translate to $17 = 0.25b$, then divide both sides by $0.25$."
+  answerForm="decimal"
+  hint="Let $b$ be the number, translate *is* as $=$ and *of* as multiplication, then divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="40 is 62.5% of what number?"
   answer="64"
-  hint="Translate to $40 = 0.625b$, then divide both sides by $0.625$."
+  answerForm="decimal"
+  hint="Let $b$ be the number, translate *is* as $=$ and *of* as multiplication, then divide both sides by the percent written as a decimal."
 >}}
 
 **Example.** $6.5\%$ of what number is $\text{\textdollar}1.17$?
@@ -105,15 +111,17 @@ $b = 18$. So $6.5\%$ of $\text{\textdollar}18$ is $\text{\textdollar}1.17$.
 {{< fillin
   question="7.5% of what number is \$1.95?"
   answer="26"
+  answerForm="decimal"
   answerDisplay="\$26"
-  hint="Translate to $0.075b = 1.95$, then divide both sides by $0.075$."
+  hint="Let $b$ be the number, translate *of* as multiplication and *is* as $=$, then divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="8.5% of what number is \$3.06?"
   answer="36"
+  answerForm="decimal"
   answerDisplay="\$36"
-  hint="Translate to $0.085b = 3.06$, then divide both sides by $0.085$."
+  hint="Let $b$ be the number, translate *of* as multiplication and *is* as $=$, then divide both sides by the percent written as a decimal."
 >}}
 
 In the next examples, we will solve for the percent.
@@ -126,19 +134,19 @@ $p = \tfrac{1}{4}$. Convert to decimal form: $p = 0.25$. Convert to
 percent: $p = 25\%$. So $25\%$ of $36$ is $9$.
 
 {{< fillin
-  question="What percent of 76 is 57?"
+  question="What percent of 76 is 57? Enter the percent, including the $\%$ sign."
   answer="75\%"
   answerForm="percent"
   answerDisplay="75%"
-  hint="Translate to $p \cdot 76 = 57$, then divide both sides by $76$ and convert the decimal to a percent."
+  hint="Let $p$ be the percent, translate *of* as multiplication and *is* as $=$, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="What percent of 120 is 96?"
+  question="What percent of 120 is 96? Enter the percent, including the $\%$ sign."
   answer="80\%"
   answerForm="percent"
   answerDisplay="80%"
-  hint="Translate to $p \cdot 120 = 96$, then divide both sides by $120$ and convert the decimal to a percent."
+  hint="Let $p$ be the percent, translate *of* as multiplication and *is* as $=$, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 **Example.** $144$ is what percent of $96$?
@@ -148,19 +156,19 @@ $\tfrac{144}{96} = \tfrac{96p}{96}$. Simplify: $1.5 = p$. Convert to
 percent: $150\% = p$. So $144$ is $150\%$ of $96$.
 
 {{< fillin
-  question="110 is what percent of 88?"
+  question="110 is what percent of 88? Enter the percent, including the $\%$ sign."
   answer="125\%"
   answerForm="percent"
   answerDisplay="125%"
-  hint="Translate to $110 = p \cdot 88$, then divide both sides by $88$ and convert to a percent. The result is over 100%."
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="126 is what percent of 72?"
+  question="126 is what percent of 72? Enter the percent, including the $\%$ sign."
   answer="175\%"
   answerForm="percent"
   answerDisplay="175%"
-  hint="Translate to $126 = p \cdot 72$, then divide both sides by $72$ and convert to a percent. The result is over 100%."
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 ## Solve applications of percent
@@ -202,17 +210,19 @@ seems reasonable. The couple should leave a tip of
 $\text{\textdollar}12.33$.
 
 {{< fillin
-  question="Cierra and her sister enjoyed a special dinner in a restaurant, and the bill was \$81.50. If she wants to leave 18% of the total bill as her tip, how much should she leave?"
+  question="Cierra and her sister enjoyed a special dinner in a restaurant, and the bill was \$81.50. If she wants to leave 18% of the total bill as her tip, how much should she leave, in dollars?"
   answer="14.67"
+  answerForm="decimal"
   answerDisplay="\$14.67"
-  hint="The tip is 18% of the bill: $t = 0.18 \cdot 81.50$."
+  hint="Write a sentence saying the tip is a percent of the bill, translate it, and multiply the bill by the percent written as a decimal."
 >}}
 
 {{< fillin
-  question="Kimngoc had lunch at her favorite restaurant. She wants to leave 15% of the total bill as her tip. If her bill was \$14.40, how much will she leave for the tip?"
+  question="Kimngoc had lunch at her favorite restaurant. She wants to leave 15% of the total bill as her tip. If her bill was \$14.40, how much will she leave for the tip, in dollars?"
   answer="2.16"
+  answerForm="decimal"
   answerDisplay="\$2.16"
-  hint="The tip is 15% of the bill: $t = 0.15 \cdot 14.40$."
+  hint="Write a sentence saying the tip is a percent of the bill, translate it, and multiply the bill by the percent written as a decimal."
 >}}
 
 **Example.** The label on Masao's breakfast cereal said that one serving
@@ -227,17 +237,19 @@ $2\%$ is a small percent and $85$ is a small part of $4{,}250$, so this is
 reasonable. The amount of potassium that is recommended is $4{,}250$ mg.
 
 {{< fillin
-  question="One serving of wheat square cereal has 7 grams of fiber, which is 29% of the recommended daily amount. What is the total recommended daily amount of fiber?"
+  question="One serving of wheat square cereal has 7 grams of fiber, which is 29% of the recommended daily amount. What is the total recommended daily amount of fiber, in grams? Round to the nearest tenth of a gram."
   answer="24.1"
+  answerForm="decimal"
   answerDisplay="24.1 grams"
-  hint="Translate to $7 = 0.29 \cdot a$, then divide both sides by $0.29$."
+  hint="Write a sentence saying the amount in one serving is a percent of the total amount, translate it with the total as the unknown, and divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
-  question="One serving of rice cereal has 190 mg of sodium, which is 8% of the recommended daily amount. What is the total recommended daily amount of sodium?"
+  question="One serving of rice cereal has 190 mg of sodium, which is 8% of the recommended daily amount. What is the total recommended daily amount of sodium, in milligrams?"
   answer="2375"
+  answerForm="decimal"
   answerDisplay="2,375 mg"
-  hint="Translate to $190 = 0.08 \cdot a$, then divide both sides by $0.08$."
+  hint="Write a sentence saying the amount in one serving is a percent of the total amount, translate it with the total as the unknown, and divide both sides by the percent written as a decimal."
 >}}
 
 **Example.** Mitzi received some gourmet brownies as a gift. The wrapper
@@ -251,19 +263,19 @@ Convert to percent form: $p = 50\%$. Check: $240$ is half of $480$, so
 $50\%$ makes sense. Of the total calories in each brownie, $50\%$ is fat.
 
 {{< fillin
-  question="Veronica is planning to make muffins from a mix. The package says each muffin will be 230 calories and 60 calories will be from fat. What percent of the total calories is from fat? Round to the nearest whole percent."
+  question="Veronica is planning to make muffins from a mix. The package says each muffin will be 230 calories and 60 calories will be from fat. What percent of the total calories is from fat? Round to the nearest whole percent, and enter the percent, including the $\%$ sign."
   answer="26\%"
   answerForm="percent"
   answerDisplay="26%"
-  hint="Translate to $p \cdot 230 = 60$, then divide both sides by $230$ and round the percent to the nearest whole number."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, write the decimal as a percent, and round."
 >}}
 
 {{< fillin
-  question="The brownie mix Ricardo plans to use says that each brownie will be 190 calories, and 70 calories are from fat. What percent of the total calories are from fat? Round to the nearest whole percent."
+  question="The brownie mix Ricardo plans to use says that each brownie will be 190 calories, and 70 calories are from fat. What percent of the total calories are from fat? Round to the nearest whole percent, and enter the percent, including the $\%$ sign."
   answer="37\%"
   answerForm="percent"
   answerDisplay="37%"
-  hint="Translate to $p \cdot 190 = 70$, then divide both sides by $190$ and round the percent to the nearest whole number."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, write the decimal as a percent, and round."
 >}}
 
 ## Find percent increase and percent decrease
@@ -298,19 +310,19 @@ to percent form: $38.5\% = p$. The new fees represent a $38.5\%$ increase
 over the old fees.
 
 {{< fillin
-  question="In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents. Find the percent increase. Round to the nearest tenth of a percent."
+  question="In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents. Find the percent increase. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="8.8\%"
   answerForm="percent"
   answerDisplay="8.8%"
-  hint="Find the increase ($55.5 - 51 = 4.5$), then find what percent $4.5$ is of $51$."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount."
 >}}
 
 {{< fillin
-  question="In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25. Find the percent increase. Round to the nearest tenth of a percent."
+  question="In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25. Find the percent increase. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="50\%"
   answerForm="percent"
   answerDisplay="50%"
-  hint="Find the increase ($2.25 - 1.50 = 0.75$), then find what percent $0.75$ is of $1.50$."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount."
 >}}
 
 Finding the **percent decrease** is very similar to finding the percent
@@ -338,19 +350,19 @@ thousandth: $0.019 = p$. Convert to percent form: $1.9\% = p$. The price
 of gas decreased $1.9\%$.
 
 {{< fillin
-  question="The population of one city was about 672,000 in 2010. The population of the city is projected to be about 630,000 in 2020. Find the percent decrease. Round to the nearest tenth of a percent."
+  question="The population of one city was about 672,000 in 2010. The population of the city is projected to be about 630,000 in 2020. Find the percent decrease. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="6.3\%"
   answerForm="percent"
   answerDisplay="6.3%"
-  hint="Find the decrease ($672{,}000 - 630{,}000 = 42{,}000$), then find what percent $42{,}000$ is of $672{,}000$."
+  hint="Subtract the new amount from the original amount, then find what percent that decrease is of the original amount."
 >}}
 
 {{< fillin
-  question="Last year Sheila's salary was \$42,000. Because of furlough days, this year her salary was \$37,800. Find the percent decrease."
+  question="Last year Sheila's salary was \$42,000. Because of furlough days, this year her salary was \$37,800. Find the percent decrease. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="10\%"
   answerForm="percent"
   answerDisplay="10%"
-  hint="Find the decrease ($42{,}000 - 37{,}800 = 4{,}200$), then find what percent $4{,}200$ is of $42{,}000$."
+  hint="Subtract the new amount from the original amount, then find what percent that decrease is of the original amount."
 >}}
 
 ## Key terms
@@ -367,43 +379,47 @@ expressed as a percent of the original amount.
 {{< fillin
   question="What number is 24% of 112?"
   answer="26.88"
-  hint="Translate into an equation: $n = 0.24 \cdot 112$."
+  answerForm="decimal"
+  hint="Change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 {{< fillin
   question="800% of 2,250 is what number?"
   answer="18000"
+  answerForm="decimal"
   answerDisplay="$18{,}000$"
-  hint="Write 800% as the decimal $8$, then multiply $8 \cdot 2{,}250$."
+  hint="Change the percent to a decimal by moving the decimal point two places to the left, translate *of* as multiplication, then multiply."
 >}}
 
 {{< fillin
   question="81 is 75% of what number?"
   answer="108"
-  hint="Translate to $81 = 0.75b$, then divide both sides by $0.75$."
+  answerForm="decimal"
+  hint="Let $b$ be the number, translate *is* as $=$ and *of* as multiplication, then divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="8.2% of what number is \$2.87?"
   answer="35"
+  answerForm="decimal"
   answerDisplay="\$35"
-  hint="Translate to $0.082b = 2.87$, then divide both sides by $0.082$."
+  hint="Let $b$ be the number, translate *of* as multiplication and *is* as $=$, then divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
-  question="What percent of 1,500 is 540?"
+  question="What percent of 1,500 is 540? Enter the percent, including the $\%$ sign."
   answer="36\%"
   answerForm="percent"
   answerDisplay="36%"
-  hint="Translate to $p \cdot 1{,}500 = 540$, then divide both sides by $1{,}500$ and convert the decimal to a percent."
+  hint="Let $p$ be the percent, translate *of* as multiplication and *is* as $=$, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="840 is what percent of 480?"
+  question="840 is what percent of 480? Enter the percent, including the $\%$ sign."
   answer="175\%"
   answerForm="percent"
   answerDisplay="175%"
-  hint="Translate to $840 = p \cdot 480$, then divide both sides by $480$. The quotient is greater than $1$, so the percent is over 100%."
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 ### Solve applications of percent
@@ -411,82 +427,85 @@ expressed as a percent of the original amount.
 {{< fillin
   question="Geneva treated her parents to dinner at their favorite restaurant. The bill was \$74.25. She wants to leave 16% of the total bill as a tip. How much should the tip be, in dollars?"
   answer="11.88"
+  answerForm="decimal"
   answerDisplay="\$11.88"
-  hint="The tip is 16% of the bill: $t = 0.16 \cdot 74.25$."
+  hint="Write a sentence saying the tip is a percent of the bill, translate it, and multiply the bill by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="Trong has 12% of each paycheck automatically deposited to his savings account. His last paycheck was \$2,165. How much money was deposited to Trong's savings account, in dollars?"
   answer="259.80"
+  answerForm="decimal"
   answerDisplay="\$259.80"
-  hint="The deposit is 12% of the paycheck: $d = 0.12 \cdot 2{,}165$."
+  hint="Write a sentence saying the deposit is a percent of the paycheck, translate it, and multiply the paycheck by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="A bacon cheeseburger at a popular fast food restaurant contains 2,070 milligrams (mg) of sodium, which is 86% of the recommended daily amount. What is the total recommended daily amount of sodium, in milligrams? Round to the nearest whole milligram."
   answer="2407"
+  answerForm="decimal"
   answerDisplay="2,407 mg"
-  hint="Translate to $2{,}070 = 0.86 \cdot a$, then divide both sides by $0.86$."
+  hint="Write a sentence saying the sodium in the burger is a percent of the total amount, translate it with the total as the unknown, and divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
-  question="The nutrition fact sheet at a fast food restaurant says the fish sandwich has 380 calories, and 171 calories are from fat. What percent of the total calories is from fat?"
+  question="The nutrition fact sheet at a fast food restaurant says the fish sandwich has 380 calories, and 171 calories are from fat. What percent of the total calories is from fat? Enter the percent, including the $\%$ sign."
   answer="45\%"
   answerForm="percent"
   answerDisplay="45%"
-  hint="Translate to $p \cdot 380 = 171$, then divide both sides by $380$ and convert the decimal to a percent."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, and write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Emma gets paid \$3,000 per month. She pays \$750 a month for rent. What percent of her monthly pay goes to rent?"
+  question="Emma gets paid \$3,000 per month. She pays \$750 a month for rent. What percent of her monthly pay goes to rent? Enter the percent, including the $\%$ sign."
   answer="25\%"
   answerForm="percent"
   answerDisplay="25%"
-  hint="Translate to $p \cdot 3{,}000 = 750$, then divide both sides by $3{,}000$ and convert the decimal to a percent."
+  hint="Ask what percent of her monthly pay the rent is: translate, divide both sides by the monthly pay, and write the decimal as a percent."
 >}}
 
 ### Find percent increase and percent decrease
 
 {{< fillin
-  question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.55. Find the percent increase. Round to the nearest tenth of a percent."
+  question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.55. Find the percent increase. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="13.2\%"
   answerForm="percent"
   answerDisplay="13.2%"
-  hint="Find the amount of increase ($17.55 - 15.50 = 2.05$), then find what percent $2.05$ is of the original $15.50$."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount."
 >}}
 
 {{< fillin
-  question="Annual student fees at the University of California rose from about \$4,000 in 2000 to about \$9,000 in 2014. Find the percent increase."
+  question="Annual student fees at the University of California rose from about \$4,000 in 2000 to about \$9,000 in 2014. Find the percent increase. Enter the percent, including the $\%$ sign."
   answer="125\%"
   answerForm="percent"
   answerDisplay="125%"
-  hint="Find the increase ($9{,}000 - 4{,}000 = 5{,}000$), then find what percent $5{,}000$ is of the original $4{,}000$."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount."
 >}}
 
 {{< fillin
-  question="According to Time magazine (7/19/2011), annual global seafood consumption rose from 22 pounds per person in 1960 to 38 pounds per person today. Find the percent increase. Round to the nearest tenth of a percent."
+  question="According to Time magazine (7/19/2011), annual global seafood consumption rose from 22 pounds per person in 1960 to 38 pounds per person today. Find the percent increase. Round to the nearest tenth of a percent, and enter the percent, including the $\%$ sign."
   answer="72.7\%"
   answerForm="percent"
   answerDisplay="72.7%"
-  hint="Find the increase ($38 - 22 = 16$), then find what percent $16$ is of the original $22$."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount."
 >}}
 
 {{< fillin
-  question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease."
+  question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease. Enter the percent, including the $\%$ sign."
   answer="2.5\%"
   answerForm="percent"
   answerDisplay="2.5%"
-  hint="Find the amount of decrease ($2.80 - 2.73 = 0.07$), then find what percent $0.07$ is of the original $2.80$."
+  hint="Subtract the new amount from the original amount, then find what percent that decrease is of the original amount."
 >}}
 
 {{< fillin
-  question="Hernando's salary was \$49,500 last year. This year his salary was cut to \$44,055. Find the percent decrease."
+  question="Hernando's salary was \$49,500 last year. This year his salary was cut to \$44,055. Find the percent decrease. Enter the percent, including the $\%$ sign."
   answer="11\%"
   answerForm="percent"
   answerDisplay="11%"
-  hint="Find the decrease ($49{,}500 - 44{,}055 = 5{,}445$), then find what percent $5{,}445$ is of the original $49{,}500$."
+  hint="Subtract the new amount from the original amount, then find what percent that decrease is of the original amount."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.2: Solve General Applications of Percent](https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, the restaurant-receipt and nutrition-label photos, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.2: Solve General Applications of Percent](https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the step-by-step solution layouts as prose with typeset math, keeping the variable b through every step of the "6.5% of what number" example, where the source's later steps switch to n; omitted the Be Prepared quiz, the restaurant-receipt and nutrition-label photos, the Key Concepts summary (its three procedures appear as callouts in the body), the Self Check checklist, and media links; added a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback; adapted selected end-of-section exercises into the interactive Practice block; and added the unit, a rounding instruction, or "enter the percent, including the % sign" to the questions whose answers need one.</small>

@@ -482,6 +482,15 @@ const LOG_EXPANSION_PROMPT_RE = /\bas a sum\b[^.?!]*\blogarithms\b/i;
  */
 export const NAMED_FORM_ASKS = [
   {
+    // "Translate into an algebraic equation: The sum of 7 and 6 gives 13":
+    // every true equation (`13=13`, the solved `y=12`) grades equal in value,
+    // so only the writing can be graded. "Translate and solve" asks for the
+    // value and is not this ask.
+    ask: /\btranslate\b(?![^:]*\bsolve\b)[^:.?!]*\b(?:equation|proportion)\b/i,
+    name: 'the translated equation as written',
+    tokens: ['translation'],
+  },
+  {
     ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*\bpoint-slope form\b|\bequation\b[^.?!]*\b(?:in|to) (?:the )?point-slope form\b/i,
     name: 'point-slope form',
     tokens: ['point-slope-form'],
@@ -2199,7 +2208,7 @@ export function lintHugo(src, filename = '', options = {}) {
       // form check, and a pre-filter reading the raw span would disagree
       // with it on every function-shaped candidate.
       const printed = candidates
-        .find((value) => checkFormAsGraded(value, params.answerForm)
+        .find((value) => checkFormAsGraded(value, params.answerForm, params.answer)
           && checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
       if (printed !== undefined) {
         const remedy = parseAnswerForm(params.answerForm).valid

@@ -73,14 +73,14 @@ product is negative.
   question="Multiply: $-6 \cdot 8$"
   answer="-48"
   answerForm="decimal"
-  hint="Different signs, so the product is negative."
+  hint="Multiply the absolute values, then compare the signs of the factors to choose the sign of the product."
 >}}
 
 {{< fillin
   question="Multiply: $-4(-7)$"
   answer="28"
   answerForm="decimal"
-  hint="Same signs, so the product is positive."
+  hint="Multiply the absolute values, then compare the signs of the factors to choose the sign of the product."
 >}}
 
 When we multiply a number by $1$, the result is the same number. What
@@ -124,8 +124,8 @@ $$
 \begin{array}{l}
 5 \cdot 3 = 15 \text{ so } 15 \div 3 = 5 \\
 (-5)(-3) = 15 \text{ so } 15 \div (-3) = -5 \\
--5(3) = -15 \text{ so } -15 \div 3 = -5 \\
-5(-3) = -15 \text{ so } -15 \div (-3) = 5
+-5(3) = -15 \text{ so } {-15} \div 3 = -5 \\
+5(-3) = -15 \text{ so } {-15} \div (-3) = 5
 \end{array}
 $$
 
@@ -149,14 +149,14 @@ Remember that you can always check a division answer by multiplying.
   question="Divide: $-42 \div 6$"
   answer="-7"
   answerForm="decimal"
-  hint="Different signs, so the quotient is negative."
+  hint="Divide the absolute values, then compare the signs of the two numbers to choose the sign of the quotient."
 >}}
 
 {{< fillin
   question="Divide: $-117 \div (-3)$"
   answer="39"
   answerForm="decimal"
-  hint="Same signs, so the quotient is positive."
+  hint="Divide the absolute values, then compare the signs of the two numbers to choose the sign of the quotient."
 >}}
 
 Just as with multiplication, dividing a number by $1$ leaves it
@@ -203,7 +203,7 @@ $-14 + (-28) - 6$. Add: $-42-6$. Subtract: $-48$.
   question="Simplify: $8(-3) + 5(-7) - 4$"
   answer="-63"
   answerForm="decimal"
-  hint="Multiply first ($8 \cdot -3$ and $5 \cdot -7$), then add and subtract left to right."
+  hint="Multiply first, then add and subtract from left to right."
 >}}
 
 **Example.** Simplify (a) $(-2)^4$, (b) $-2^4$.
@@ -235,7 +235,7 @@ first: $12-3(-3)$. Multiply: $12-(-9)$. Subtract: $21$.
   question="Simplify: $17 - 4(8 - 11)$"
   answer="29"
   answerForm="decimal"
-  hint="Simplify inside the parentheses first ($8 - 11 = -3$), then multiply, then subtract."
+  hint="Simplify inside the parentheses first, then multiply, then subtract."
 >}}
 
 **Example.** Simplify $8(-9) \div (-2)^3$. Simplify the exponent first:
@@ -245,7 +245,7 @@ $8(-9) \div (-8)$. Multiply: $-72 \div (-8)$. Divide: $9$.
   question="Simplify: $12(-9) \div (-3)^3$"
   answer="4"
   answerForm="decimal"
-  hint="Simplify the exponent first ($(-3)^3 = -27$), then multiply, then divide."
+  hint="Simplify the exponent first, then multiply, then divide."
 >}}
 
 **Example.** Simplify $-30 \div 2 + (-3)(-7)$. Divide first (left to
@@ -275,7 +275,8 @@ ambiguous.)
 {{< fillin
   question="Evaluate: $3x^2 - 2x + 6$ when $x = -3$"
   answer="39"
-  hint="Substitute $-3$ for $x$, using parentheses: $3(-3)^2 - 2(-3) + 6$."
+  answerForm="decimal"
+  hint="Substitute $-3$ for $x$ inside parentheses, then simplify the exponent, multiply, and add and subtract from left to right."
 >}}
 
 **Example.** Evaluate $3x + 4y - 6$ when $x = -1$ and $y = 2$.
@@ -284,7 +285,8 @@ Substitute: $3(-1) + 4(2) - 6$. Multiply: $-3 + 8 - 6$. Simplify: $-1$.
 {{< fillin
   question="Evaluate: $7x + 6y - 12$ when $x = -2$ and $y = 3$"
   answer="-8"
-  hint="Substitute $-2$ for $x$ and $3$ for $y$, then simplify: $7(-2) + 6(3) - 12$."
+  answerForm="decimal"
+  hint="Substitute each value inside parentheses, multiply, then add and subtract from left to right."
 >}}
 
 ## Translate word phrases to algebraic expressions
@@ -300,7 +302,8 @@ $-28$.
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the product of $-5$ and $12$"
   answer="-60"
-  hint="'Product' means multiply: $(-5)(12)$."
+  answerForm="decimal"
+  hint="The word 'product' tells you to multiply the two numbers that follow. Then simplify."
 >}}
 
 **Example.** Translate to an algebraic expression and simplify if
@@ -310,7 +313,8 @@ Simplify: $8$.
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the quotient of $-63$ and $-9$"
   answer="7"
-  hint="'Quotient' means divide: $-63 \div (-9)$."
+  answerForm="decimal"
+  hint="The word 'quotient' tells you to divide, with the first number named as the dividend. Then simplify."
 >}}
 
 ## Key terms
@@ -328,14 +332,14 @@ multiplying or dividing a number by $-1$ gives its opposite.
   question="Multiply: $-4 \cdot 8$"
   answer="-32"
   answerForm="decimal"
-  hint="The signs are different, so the product is negative. Multiply $4 \cdot 8$ and attach the sign."
+  hint="Multiply the absolute values, then compare the signs of the factors to choose the sign of the product."
 >}}
 
 {{< fillin
   question="Multiply: $-18(-2)$"
   answer="36"
   answerForm="decimal"
-  hint="Both factors are negative — same signs, so the product is positive."
+  hint="Multiply the absolute values, then compare the signs of the factors to choose the sign of the product."
 >}}
 
 {{< fillin
@@ -351,14 +355,14 @@ multiplying or dividing a number by $-1$ gives its opposite.
   question="Divide: $-24 \div 6$"
   answer="-4"
   answerForm="decimal"
-  hint="Different signs, so the quotient is negative. Check by multiplying your answer by $6$."
+  hint="Divide the absolute values and use the sign rule for division. Check by multiplying your answer by $6$."
 >}}
 
 {{< fillin
   question="Divide: $-52 \div (-4)$"
   answer="13"
   answerForm="decimal"
-  hint="Same signs, so the quotient is positive. Check by multiplying your answer by $-4$."
+  hint="Divide the absolute values and use the sign rule for division. Check by multiplying your answer by $-4$."
 >}}
 
 {{< fillin
@@ -381,7 +385,7 @@ multiplying or dividing a number by $-1$ gives its opposite.
   question="Simplify: $(-5)^3$"
   answer="-125"
   answerForm="decimal"
-  hint="The parentheses put the base at $-5$ — multiply three factors of $-5$. An odd number of negative factors gives a negative product."
+  hint="The parentheses make the base $-5$: write three factors of $-5$ and multiply from left to right."
 >}}
 
 {{< fillin
@@ -394,6 +398,7 @@ multiplying or dividing a number by $-1$ gives its opposite.
 {{< fillin
   question="Simplify: $9 - 2[3 - 8(-2)]$"
   answer="-29"
+  answerForm="decimal"
   hint="Work from the inside out — multiply inside the brackets first, then simplify the bracket, then multiply by $2$."
 >}}
 
@@ -409,24 +414,28 @@ multiplying or dividing a number by $-1$ gives its opposite.
 {{< fillin
   question="Evaluate $-2x + 17$ when $x = 8$"
   answer="1"
+  answerForm="decimal"
   hint="Substitute $8$ for $x$, multiply, then add."
 >}}
 
 {{< fillin
   question="Evaluate $-2x + 17$ when $x = -8$"
   answer="33"
-  hint="Substitute $-8$ for $x$ in parentheses: $-2(-8)$ has same signs, so that product is positive."
+  answerForm="decimal"
+  hint="Substitute $-8$ for $x$ inside parentheses, use the sign rule to multiply, then add."
 >}}
 
 {{< fillin
   question="Evaluate $2w^2 - 3w + 7$ when $w = -2$"
   answer="21"
-  hint="Substitute with parentheses, $2(-2)^2 - 3(-2) + 7$, and square before you multiply."
+  answerForm="decimal"
+  hint="Substitute $-2$ for $w$ inside parentheses, and square before you multiply."
 >}}
 
 {{< fillin
   question="Evaluate $9a - 2b - 8$ when $a = -6$ and $b = -3$"
   answer="-56"
+  answerForm="decimal"
   hint="Substitute both values in parentheses, multiply each term, then subtract left to right — watch the double negative in $-2(-3)$."
 >}}
 
@@ -435,22 +444,24 @@ multiplying or dividing a number by $-1$ gives its opposite.
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the product of $-3$ and $15$"
   answer="-45"
+  answerForm="decimal"
   answerDisplay="$-3 \cdot 15 = -45$"
-  hint="'Product' means multiply; different signs give a negative product."
+  hint="The word 'product' tells you to multiply the two numbers that follow; then use the sign rule to simplify."
 >}}
 
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the quotient of $-60$ and $-20$"
   answer="3"
+  answerForm="decimal"
   answerDisplay="$-60 \div (-20) = 3$"
-  hint="'Quotient' means divide, and the dividend is named first; same signs give a positive quotient."
+  hint="The word 'quotient' tells you to divide, and the dividend is named first; then use the sign rule to simplify."
 >}}
 
 {{< fillin
   question="Translate to an algebraic expression and simplify if possible: the quotient of $-6$ and the sum of $a$ and $b$"
   answer="\frac{-6}{a+b}"
   answerDisplay="$\tfrac{-6}{a+b}$"
-  hint="Divide $-6$ by the whole sum — write the sum as the denominator. Nothing simplifies further."
+  hint="The word 'quotient' tells you to divide, with the first quantity named as the dividend. Treat the sum as one quantity. Nothing simplifies further."
 >}}
 
 {{< fillin

@@ -40,9 +40,9 @@ discover how to find the slope of a line.
 We start by stretching a rubber band between two pegs to make a line, as
 shown below.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="A geoboard with a rubber band stretched diagonally from the bottom-left peg to a peg up and to the right, forming a line." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 160 160" role="img" aria-label="A geoboard of five rows of five pegs, with a rubber band stretched diagonally from a peg on the left to a peg up and to the right, forming a line." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="140" r="3" fill="currentColor" opacity="0.5" />
-  <line x1="20" y1="140" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="110" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
 </svg>
 
 Does it look like a line? Now we stretch one part of the rubber band straight
@@ -50,11 +50,11 @@ up from the left peg and around a third peg to make the sides of a right
 triangle. We carefully make a $90^\circ$ angle around the third peg, so that one
 side is vertical and the other is horizontal.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the bottom-left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="140" r="3" fill="currentColor" opacity="0.5" />
-  <line x1="20" y1="140" x2="20" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="110" x2="20" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="50" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
-  <line x1="20" y1="140" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="110" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
 </svg>
 
 To find the slope of the line, we measure the distance along the vertical
@@ -62,13 +62,13 @@ and horizontal legs of the triangle. The vertical distance is called the
 **rise** and the horizontal distance is called the **run**, as shown below.
 
 <svg viewBox="-20 0 220 110" role="img" aria-label="A right angle with an upward arrow labeled rise on the vertical side and a rightward arrow labeled run on the horizontal side, meeting at the corner." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <line x1="30" y1="90" x2="30" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrow1)" />
+  <line x1="30" y1="90" x2="30" y2="26" stroke="currentColor" stroke-width="2" marker-end="url(#arrow1)" />
   <line x1="30" y1="20" x2="160" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)" />
   <text x="20" y="60" text-anchor="end" font-size="15" fill="currentColor">rise</text>
   <text x="95" y="12" text-anchor="middle" font-size="15" fill="currentColor">run</text>
   <defs>
-    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto">
-      <path d="M0,8 L4,0 L8,8 Z" fill="currentColor" />
+    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
     </marker>
     <marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
@@ -87,11 +87,11 @@ the horizontal leg, so the run is $3$ units.
 
 <svg viewBox="0 0 160 170" role="img" aria-label="The geoboard triangle with the horizontal leg labeled 3 above it and the vertical leg labeled 2 to its left." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
-  <line x1="20" y1="150" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="120" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="60" x2="110" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
-  <line x1="20" y1="150" x2="110" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="120" x2="110" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <text x="65" y="48" text-anchor="middle" font-size="14" fill="currentColor">3</text>
-  <text x="8" y="108" text-anchor="middle" font-size="14" fill="currentColor">2</text>
+  <text x="8" y="95" text-anchor="middle" font-size="14" fill="currentColor">2</text>
 </svg>
 
 The slope of a line is the ratio of the rise to the run. So the slope of our
@@ -116,13 +116,13 @@ rise first and then the run.
 
 **Example.** What is the slope of the line on the geoboard shown?
 
-<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: horizontal leg of 4 units on top and vertical leg of 3 units on the left, with the diagonal hypotenuse connecting the bottom-left peg to the top-right peg." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: horizontal leg of 4 units on top and vertical leg of 3 units on the left, with the diagonal hypotenuse connecting the bottom-left peg to the peg 4 spaces right and 3 spaces up." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
-  <line x1="20" y1="150" x2="20" y2="30" stroke="currentColor" stroke-width="4" opacity="0.7" />
-  <line x1="20" y1="30" x2="140" y2="30" stroke="currentColor" stroke-width="4" opacity="0.7" />
-  <line x1="20" y1="150" x2="140" y2="30" stroke="currentColor" stroke-width="4" opacity="0.7" />
-  <text x="80" y="18" text-anchor="middle" font-size="14" fill="currentColor">4</text>
-  <text x="8" y="92" text-anchor="middle" font-size="14" fill="currentColor">3</text>
+  <line x1="20" y1="150" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="60" x2="140" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="150" x2="140" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <text x="80" y="48" text-anchor="middle" font-size="14" fill="currentColor">4</text>
+  <text x="8" y="110" text-anchor="middle" font-size="14" fill="currentColor">3</text>
 </svg>
 
 Use the definition of slope, $m = \tfrac{\text{rise}}{\text{run}}$. Start at
@@ -135,24 +135,26 @@ $$m = \frac{3}{\text{run}} = \frac{3}{4}$$
 The slope is $\tfrac{3}{4}$.
 
 {{< fillin
-  question="A geoboard triangle has a rise of $5$ units and a run of $2$ units, both counted left to right and going up. What is the slope of the line?"
-  answer="\frac{5}{2}"
-  answerDisplay="$\tfrac{5}{2}$"
+  question="A geoboard triangle has a rise of $4$ units and a run of $3$ units, both counted left to right and going up. What is the slope of the line, as a fraction?"
+  answer="\frac{4}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{4}{3}$"
   hint="Slope is rise over run."
->}}
-
-{{< fillin
-  question="A geoboard triangle has a rise of $2$ units and a run of $4$ units, both counted left to right and going up. What is the slope of the line, written in simplest form?"
-  answer="\frac{1}{2}"
-  answerForm="lowest-terms"
-  answerDisplay="$\tfrac{1}{2}$"
-  hint="Slope is rise over run. Simplify the fraction $\tfrac{2}{4}$."
 >}}
 
 What is the slope of a line that goes down instead of up? Start at the left
 peg and make a right triangle by stretching the rubber band to the peg on
 the right. This time we need to stretch the rubber band down to make the
 vertical leg, so the rise is negative.
+
+<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: from a peg on the left, the rubber band goes down 1 space, then 3 spaces to the right, with the diagonal hypotenuse sloping down from the starting peg to the peg on the right." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="90" x2="20" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="120" x2="110" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="90" x2="110" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <text x="65" y="140" text-anchor="middle" font-size="14" fill="currentColor">3</text>
+  <text x="8" y="110" text-anchor="middle" font-size="14" fill="currentColor">1</text>
+</svg>
 
 The rise is $-1$ and the run is $3$, so
 
@@ -180,10 +182,11 @@ is going up, and a line with negative slope is going down.
 </svg>
 
 {{< fillin
-  question="A geoboard triangle has a rise of $-2$ units and a run of $5$ units, counted left to right with the vertical leg stretched down. What is the slope of the line?"
-  answer="-\frac{2}{5}"
-  answerDisplay="$-\tfrac{2}{5}$"
-  hint="A downward rise counted left to right is negative, so the slope is negative."
+  question="A geoboard triangle has a rise of $-2$ units and a run of $3$ units, counted left to right with the vertical leg stretched down. What is the slope of the line, as a fraction?"
+  answer="-\frac{2}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{2}{3}$"
+  hint="Slope is rise over run; keep the sign of the rise."
 >}}
 
 **Example.** Use a geoboard to model a line with slope $\tfrac{1}{2}$.
@@ -212,6 +215,7 @@ line with a slope of $\tfrac{1}{2}$.
 {{< fillin
   question="Use the rise-over-run definition of slope: what run pairs with a rise of $1$ to model a line with slope $\tfrac{1}{3}$?"
   answer="3"
+  answerForm="decimal"
   hint="Set $\tfrac{1}{3}$ equal to $\tfrac{\text{rise}}{\text{run}}$ with rise $= 1$, and solve for the run."
 >}}
 
@@ -236,9 +240,10 @@ The hypotenuse of the right triangle formed by the rubber band represents a
 line whose slope is $-\tfrac{1}{4}$.
 
 {{< fillin
-  question="Use a geoboard model: what is the slope of a line with rise $-2$ and run $1$?"
+  question="Use the rise-over-run definition of slope: what rise pairs with a run of $1$ to model a line with slope $m = \tfrac{-2}{1}$?"
   answer="-2"
-  hint="Slope is rise over run; a run of $1$ means the slope equals the rise."
+  answerForm="decimal"
+  hint="Set $\tfrac{-2}{1}$ equal to $\tfrac{\text{rise}}{\text{run}}$ with run $= 1$, and solve for the rise. A rise stretched down is negative."
 >}}
 
 ## Find the slope of a line from its graph
@@ -307,63 +312,28 @@ $$m = \frac{\text{rise}}{\text{run}} = \frac{4}{5}$$
 The slope of the line is $\tfrac{4}{5}$. Notice that the slope is positive
 since the line slants upward from left to right.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with a line through (-8, -1) and (0, 4), slanting upward. A right triangle is sketched from (-8, -1) up to (-8, 4) and across to (0, 4), showing a rise of 5 and a run of 8." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 232" width="312" height="232" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="206" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="206" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="206" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="206" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="206" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="206" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="206" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="206" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="206" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="206" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="206" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="206" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="206" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="286" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="286" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="286" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="286" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="286" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="286" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="286" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="286" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="288" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="226" y1="24" x2="226" y2="208" stroke="currentColor" stroke-width="1"/>
-  <polygon points="298,146 288,151 288,141" fill="currentColor"/>
-  <polygon points="226,14 231,24 221,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="226,218 221,208 231,208" fill="currentColor"/>
-  <text x="296" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="234" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.5" y1="189.5" x2="283.5" y2="30" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="292,24.8 286.2,34.3 280.9,25.8" fill="currentColor"/>
-  <polygon points="20,194.8 25.8,185.2 31.1,193.7" fill="currentColor"/>
-  <line x1="66" y1="166" x2="66" y2="66" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="66" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="66" cy="166" r="4" fill="currentColor"/>
-  <circle cx="226" cy="66" r="4" fill="currentColor"/>
-  <text x="77.2" y="186.2" font-size="13" fill="currentColor" text-anchor="start">(−8, −1)</text>
-  <text x="237.2" y="86.2" font-size="13" fill="currentColor" text-anchor="start">(0, 4)</text>
-  <text x="52" y="120" font-size="13" fill="currentColor" text-anchor="end">rise 5</text>
-  <text x="146" y="89" font-size="13" fill="currentColor" text-anchor="middle">run 8</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −8 to 2 and y from −2 to 5. A line rises from left to right through the points (−5, 1) and (0, 3).","xMin":-8,"xMax":2,"yMin":-2,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"through":[[-5,1],[0,3]]}]}
+{{< /apfigure >}}
 
 {{< fillin
-  question="Find the slope of the line shown, which passes through $(-8, -1)$ and $(0, 4)$. Read the rise and run off the slope triangle."
-  answer="\frac{5}{8}"
-  answerDisplay="$\tfrac{5}{8}$"
-  hint="Take the ratio of the rise to the run, $m = \tfrac{\text{rise}}{\text{run}}$."
+  question="Find the slope of the line shown above, as a fraction."
+  answer="\frac{2}{5}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{2}{5}$"
+  hint="Locate two points on the line with integer coordinates, sketch a right triangle from the point on the left, and count the rise and the run."
 >}}
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −2 to 6 and y from −2 to 4. A line rises from left to right through the points (0, −1) and (4, 2).","xMin":-2,"xMax":6,"yMin":-2,"yMax":4,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-1],[4,2]]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="Find the slope of the line through the points $(0, -1)$ and $(2, 3)$."
-  answer="2"
-  hint="Start at the point on the left. The rise is $4$ and the run is $2$."
+  question="Find the slope of the line shown above, as a fraction."
+  answer="\frac{3}{4}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{3}{4}$"
+  hint="Locate two points on the line with integer coordinates, sketch a right triangle from the point on the left, and count the rise and the run."
 >}}
 
 {{< callout type="info" >}}
@@ -437,53 +407,16 @@ $$m = \frac{\text{rise}}{\text{run}} = \frac{-6}{9} = -\frac{2}{3}$$
 It does not matter which points you use — the slope of the line is always
 the same. The slope of a line is constant!
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with a line through (0, -1) and (4, -3), slanting downward. A right triangle is sketched from (0, -1) down to (0, -3) and across to (4, -3), showing a rise of negative 2 and a run of 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 212" width="252" height="212" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="186" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="186" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="186" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="186" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="186" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="186" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="186" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="186" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="186" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="186" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="226" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="226" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="226" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="226" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="86" x2="228" y2="86" stroke="currentColor" stroke-width="1"/>
-  <line x1="86" y1="24" x2="86" y2="188" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,86 228,91 228,81" fill="currentColor"/>
-  <polygon points="86,14 91,24 81,24" fill="currentColor"/>
-  <polygon points="14,86 24,81 24,91" fill="currentColor"/>
-  <polygon points="86,198 81,188 91,188" fill="currentColor"/>
-  <text x="236" y="78" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="94" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.9" y1="77.5" x2="223.1" y2="174.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="232,179 220.8,179 225.3,170.1" fill="currentColor"/>
-  <polygon points="20,73 31.2,73 26.7,81.9" fill="currentColor"/>
-  <line x1="86" y1="106" x2="86" y2="146" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="86" y1="146" x2="166" y2="146" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="86" cy="106" r="4" fill="currentColor"/>
-  <circle cx="166" cy="146" r="4" fill="currentColor"/>
-  <text x="74.8" y="126.2" font-size="13" fill="currentColor" text-anchor="end">(0, −1)</text>
-  <text x="177.2" y="134.8" font-size="13" fill="currentColor" text-anchor="start">(4, −3)</text>
-  <text x="74.8" y="146.2" font-size="13" fill="currentColor" text-anchor="end">rise −2</text>
-  <text x="126" y="169" font-size="13" fill="currentColor" text-anchor="middle">run 4</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −2 to 5 and y from −7 to 2. A line falls from left to right through the points (0, −2) and (3, −6).","xMin":-2,"xMax":5,"yMin":-7,"yMax":2,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-2],[3,-6]]}]}
+{{< /apfigure >}}
 
 {{< fillin
-  question="Find the slope of the line shown, which passes through $(0, -1)$ and $(4, -3)$. Read the rise and run off the slope triangle, then simplify."
-  answer="-\frac{1}{2}"
-  answerDisplay="$-\tfrac{1}{2}$"
-  hint="Take the ratio $m = \tfrac{\text{rise}}{\text{run}} = \tfrac{-2}{4}$ and simplify."
+  question="Find the slope of the line shown above, as a fraction."
+  answer="-\frac{4}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{4}{3}$"
+  hint="Locate two points on the line with integer coordinates, then count the rise from the left point to the right one; a rise counted down is negative."
 >}}
 
 The lines in the previous examples had $y\text{-intercepts}$ with integer
@@ -492,19 +425,30 @@ points we used to find the slope. In the next example, the
 $y\text{-intercept}$ is a fraction. The calculations are easier if we use two
 points with integer coordinates.
 
-**Example.** Find the slope of the line through $(2, 3)$ and $(7, 6)$.
+**Example.** Find the slope of the line shown.
 
-Starting at the point on the left, $(2, 3)$, sketch a right triangle to
-$(7, 6)$. The rise is $3$ units and the run is $5$ units.
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −1 to 8 and y from −1 to 8. A line rises through the labeled points (2, 3) and (7, 6), crossing the y-axis between 1 and 2. A right triangle is sketched from (2, 3) up to (2, 6) and across to (7, 6), with the vertical leg labeled rise 3 and the horizontal leg labeled run 5.","xMin":-1,"xMax":8,"yMin":-1,"yMax":8,"tickLabels":true,"tickStep":1,"lines":[{"through":[[2,3],[7,6]]}],"points":[{"at":[2,3],"label":"(2, 3)"},{"at":[7,6],"label":"(7, 6)"}],"slopeTriangles":[{"from":[2,3],"to":[7,6],"riseLabel":"rise 3","runLabel":"run 5","riseNudge":[10,0],"runNudge":[0,-44]}]}
+{{< /apfigure >}}
+
+Locate two points on the graph whose coordinates are integers: $(2, 3)$ and
+$(7, 6)$. Starting at the point on the left, $(2, 3)$, sketch a right
+triangle to $(7, 6)$. The rise is $3$ units and the run is $5$ units.
 
 $$m = \frac{\text{rise}}{\text{run}} = \frac{3}{5}$$
 
 The slope of the line is $\tfrac{3}{5}$.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −3 to 5 and y from −5 to 5. A line rises from left to right through the points (1, −1) and (3, 2).","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"through":[[1,-1],[3,2]]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="Find the slope of the line through the points $(1, -1)$ and $(4, 5)$."
-  answer="2"
-  hint="The rise is $6$ and the run is $3$."
+  question="Find the slope of the line shown above, as a fraction."
+  answer="\frac{3}{2}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{3}{2}$"
+  hint="The line crosses the $y$-axis between grid points, so choose two other points on it whose coordinates are integers, then count the rise and the run."
 >}}
 
 ## Find the slope of horizontal and vertical lines
@@ -512,21 +456,16 @@ The slope of the line is $\tfrac{3}{5}$.
 Do you remember what was special about horizontal and vertical lines? Their
 equations had just one variable:
 
-$$\text{horizontal line } y = b \text{; all the } y\text{-coordinates are the same}$$
-$$\text{vertical line } x = a \text{; all the } x\text{-coordinates are the same}$$
+- horizontal line $y = b$; all the $y\text{-coordinates}$ are the same.
+- vertical line $x = a$; all the $x\text{-coordinates}$ are the same.
 
 So how do we find the slope of the horizontal line $y = 4$? We graph the
 line, find two points on it, and count the rise and the run. We'll use the
 points $(0, 4)$ and $(3, 4)$.
 
-<svg viewBox="0 0 260 140" role="img" aria-label="A horizontal line at y equals 4, passing through the points (0, 4) and (3, 4)." style="max-width: 300px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="10" x2="20" y2="130" stroke="currentColor" stroke-width="1" opacity="0.5" />
-  <line x1="10" y1="70" x2="250" y2="70" stroke="currentColor" stroke-width="2.5" />
-  <circle cx="20" cy="70" r="4" fill="currentColor" />
-  <circle cx="140" cy="70" r="4" fill="currentColor" />
-  <text x="20" y="55" text-anchor="middle" font-size="13" fill="currentColor">(0, 4)</text>
-  <text x="140" y="55" text-anchor="middle" font-size="13" fill="currentColor">(3, 4)</text>
-</svg>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −1 to 5 and y from −1 to 7. A horizontal line crosses the y-axis at 4 and passes through the labeled points (0, 4) and (3, 4).","xMin":-1,"xMax":5,"yMin":-1,"yMax":7,"tickLabels":true,"tickStep":1,"lines":[{"y":4}],"points":[{"at":[0,4],"label":"(0, 4)"},{"at":[3,4],"label":"(3, 4)"}]}
+{{< /apfigure >}}
 
 The rise is $0$ (the $y\text{-coordinates}$ don't change) and the run is
 $3$.
@@ -546,15 +485,9 @@ same, the rise is $0$.
 Now we'll consider a vertical line, such as the line $x = 3$. We'll use the
 points $(3, 0)$ and $(3, 2)$ to count the rise and run.
 
-<svg viewBox="0 0 200 200" role="img" aria-label="A vertical line at x equals 3, passing through the points (3, 0) and (3, 2)." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="10" x2="20" y2="190" stroke="currentColor" stroke-width="1" opacity="0.5" />
-  <line x1="10" y1="150" x2="180" y2="150" stroke="currentColor" stroke-width="1" opacity="0.5" />
-  <line x1="110" y1="20" x2="110" y2="180" stroke="currentColor" stroke-width="2.5" />
-  <circle cx="110" cy="150" r="4" fill="currentColor" />
-  <circle cx="110" cy="90" r="4" fill="currentColor" />
-  <text x="140" y="145" text-anchor="middle" font-size="13" fill="currentColor">(3, 0)</text>
-  <text x="140" y="86" text-anchor="middle" font-size="13" fill="currentColor">(3, 2)</text>
-</svg>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes from −5 to 5. A vertical line crosses the x-axis at 3 and passes through the labeled points (3, 0) and (3, 2).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"x":3}],"points":[{"at":[3,0],"label":"(3, 0)"},{"at":[3,2],"label":"(3, 2)"}]}
+{{< /apfigure >}}
 
 The rise is $2$ and the run is $0$ (the $x\text{-coordinates}$ don't
 change).
@@ -576,16 +509,21 @@ lines is undefined, because the run is $0$.
 
 (b) $y = -5$ is a horizontal line, so its slope is $0$.
 
-{{< fillin
-  question="For the vertical line $x = -4$, any two points have the same $x$-coordinate, so the run is always this value. What is the run?"
-  answer="0"
-  hint="On a vertical line, the $x$-coordinate never changes between points, so $x_2 - x_1$ is always $0$ — that's why the slope is undefined."
+{{< multiplechoice
+  question="Find the slope of the line $x = -4$."
+  answer="undefined"
+  hint="Decide whether the line is horizontal or vertical, then pick two points on it and find the rise and the run between them."
 >}}
+$-4$
+$0$
+undefined
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Find the slope of the line $y = 7$."
   answer="0"
-  hint="Every horizontal line $y = b$ has the same slope."
+  answerForm="decimal"
+  hint="Decide whether the line is horizontal or vertical, then pick two points on it and find the rise and the run between them."
 >}}
 
 Here's a quick way to remember the four slope types: a line that rises to
@@ -669,13 +607,15 @@ and the run is $3$, so $m = \tfrac{3}{3} = 1$.
 {{< fillin
   question="Find the slope of the line through the given points: $(8, 5)$ and $(6, 3)$."
   answer="1"
+  answerForm="decimal"
   hint="$m = \tfrac{y_2 - y_1}{x_2 - x_1}$. Substitute $(8, 5)$ as point 1 and $(6, 3)$ as point 2."
 >}}
 
 {{< fillin
   question="Find the slope of the line through the given points: $(1, 5)$ and $(5, 9)$."
   answer="1"
-  hint="$m = \tfrac{y_2 - y_1}{x_2 - x_1}$."
+  answerForm="decimal"
+  hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$, subtracting in the same order in the numerator and the denominator."
 >}}
 
 How do we know which point to call #1 and which to call #2? Let's find the
@@ -737,13 +677,15 @@ $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{4 - (-3)}{-7 - (-2)} = \frac{7}{-5} = 
 {{< fillin
   question="Find the slope of the line through the pair of points: $(-3, 4)$ and $(2, -1)$."
   answer="-1"
-  hint="$m = \tfrac{y_2 - y_1}{x_2 - x_1}$. The rise is $-5$ and the run is $5$."
+  answerForm="decimal"
+  hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$ and put parentheses around each negative coordinate you subtract."
 >}}
 
 {{< fillin
   question="Find the slope of the line through the pair of points: $(-2, 6)$ and $(-3, -4)$."
   answer="10"
-  hint="$m = \tfrac{y_2 - y_1}{x_2 - x_1}$. Watch the signs: $-4 - 6 = -10$ and $-3 - (-2) = -1$."
+  answerForm="decimal"
+  hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$ and put parentheses around each negative coordinate you subtract."
 >}}
 
 ## Graph a line given a point and the slope
@@ -820,9 +762,10 @@ We can check this line by starting at any point on it and counting up $3$
 and to the right $4$ — we should get to another point on the line.
 
 {{< fillin
-  question="A line passes through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting out the rise and run, what point do you land on?"
+  question="A line passes through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting out the rise and run, what point do you land on? Enter it as an ordered pair."
   answer="(5, 2)"
-  hint="The rise is $4$ and the run is $3$. Add the rise to the $y$-coordinate and the run to the $x$-coordinate."
+  answerDisplay="$(5, 2)$"
+  hint="Read the rise and the run from the slope, then add the rise to the $y$-coordinate and the run to the $x$-coordinate."
 >}}
 
 **Example.** Graph the line with $y\text{-intercept}$ $(0, 2)$ and slope
@@ -879,7 +822,7 @@ point, $(3, 0)$. Connect the points with a line.
   question="Which graph shows the line with $y$-intercept $4$ and slope $m = -\tfrac{5}{2}$?"
   mode="graph"
   answerIndex="1"
-  hint="The slope $-\tfrac{5}{2}$ is negative, so the line falls from left to right, and it falls steeply — down $5$ for every $2$ across. Rule out any line that rises, and any line that falls only gently."
+  hint="Start at $(0, 4)$, count out the rise and the run from the slope, and check which line passes through the point you reach."
 >}}
 {"ariaLabel":"A line marked at (0, 4) that rises steeply from left to right, climbing about 5 units for every 2 it moves right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":2.5,"intercept":4}],"points":[{"at":[0,4]}]}
 ===OPT===
@@ -897,11 +840,10 @@ $(-1, -3)$, count up $4$ and to the right $1$ to mark the second point.
 Connect the two points with a line.
 
 {{< fillin
-  question="Graph the line passing through the point $(-2, 1)$ with slope $m = 3$. Write $3$ as a fraction first: what are the rise and run?"
-  answer="\frac{3}{1}"
-  answerForm="fraction denominator:1"
-  answerDisplay="$\tfrac{3}{1}$"
-  hint="Any whole number can be written as a fraction over $1$."
+  question="A line passes through the point $(-2, 1)$ with slope $m = 3$. Starting at $(-2, 1)$ and counting out the rise and run, what point do you land on? Enter it as an ordered pair."
+  answer="(-1, 4)"
+  answerDisplay="$(-1, 4)$"
+  hint="Write $3$ as a fraction to read the rise and the run, then add the rise to the $y$-coordinate and the run to the $x$-coordinate."
 >}}
 
 ## Solve slope applications
@@ -919,17 +861,19 @@ $$m = \frac{\text{rise}}{\text{run}} = \frac{9\text{ ft}}{18\text{ ft}} = \frac{
 The slope of the roof is $\tfrac{1}{2}$.
 
 {{< fillin
-  question="Find the slope given the rise and run: a roof with a rise $= 14$ and a run $= 24$."
+  question="Find the slope given the rise and run: a roof with a rise $= 14$ and a run $= 24$. Write your answer as a simplified fraction."
   answer="\frac{7}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{12}$"
-  hint="Slope is rise over run. Simplify $\tfrac{14}{24}$."
+  hint="Write the rise over the run, then divide out the common factor."
 >}}
 
 {{< fillin
-  question="Find the slope given the rise and run: a roof with a rise $= 15$ and a run $= 36$."
+  question="Find the slope given the rise and run: a roof with a rise $= 15$ and a run $= 36$. Write your answer as a simplified fraction."
   answer="\frac{5}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{12}$"
-  hint="Slope is rise over run. Simplify $\tfrac{15}{36}$."
+  hint="Write the rise over the run, then divide out the common factor."
 >}}
 
 Have you ever thought about the sewage pipes going from your house to the
@@ -946,17 +890,19 @@ $$m = \frac{-\tfrac{1}{4}\text{ in.}}{1\text{ ft}} = \frac{-\tfrac{1}{4}\text{ i
 The slope of the pipe is $-\tfrac{1}{48}$.
 
 {{< fillin
-  question="Find the slope of a pipe that slopes down $\tfrac{1}{3}$ inch per foot. Convert the foot to inches first."
+  question="Find the slope of a pipe that slopes down $\tfrac{1}{3}$ inch per foot. Convert the foot to inches first. Write your answer as a simplified fraction."
   answer="-\frac{1}{36}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{36}$"
-  hint="The rise is $-\tfrac{1}{3}$ inch and the run is $1$ foot $= 12$ inches. Simplify the fraction."
+  hint="A pipe that slopes down has a negative rise. Put the rise over the run with both in inches, then simplify the complex fraction."
 >}}
 
 {{< fillin
-  question="Find the slope of a pipe that slopes down $\tfrac{3}{4}$ inch per yard. Convert the yard to inches first ($1$ yard $= 36$ inches)."
+  question="Find the slope of a pipe that slopes down $\tfrac{3}{4}$ inch per yard. Convert the yard to inches first ($1$ yard $= 36$ inches). Write your answer as a simplified fraction."
   answer="-\frac{1}{48}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{48}$"
-  hint="The rise is $-\tfrac{3}{4}$ inch and the run is $1$ yard $= 36$ inches. Simplify the fraction."
+  hint="A pipe that slopes down has a negative rise. Put the rise over the run with both in inches, then simplify the complex fraction."
 >}}
 
 ## Key terms
@@ -973,17 +919,19 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 ### Use geoboards to model slope
 
 {{< fillin
-  question="On a geoboard, a rubber band connects one peg to a second peg that is $4$ columns to the right and $1$ row up. What is the slope of the segment it models?"
+  question="On a geoboard, a rubber band connects one peg to a second peg that is $4$ columns to the right and $1$ row up. What is the slope of the segment it models, as a fraction?"
   answer="\frac{1}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
   hint="Slope is $\tfrac{\text{rise}}{\text{run}}$ — the rise is the vertical change, the run is the horizontal change."
 >}}
 
 {{< fillin
-  question="On a geoboard, a rubber band connects one peg to a second peg that is $2$ columns to the right and $3$ rows down. What is the slope of the segment it models?"
+  question="On a geoboard, a rubber band connects one peg to a second peg that is $2$ columns to the right and $3$ rows down. What is the slope of the segment it models, as a fraction?"
   answer="-\frac{3}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{2}$"
-  hint="Going down makes the rise negative, so the slope is negative."
+  hint="Slope is $\tfrac{\text{rise}}{\text{run}}$; a rise stretched down is negative."
 >}}
 
 ### Find the slope of a line from its graph
@@ -1085,10 +1033,11 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 </div>
 
 {{< fillin
-  question="Find the slope of the line shown."
+  question="Find the slope of the line shown above, as a fraction."
   answer="\frac{2}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
-  hint="Pick the two labelled points, count the rise from one to the other, then the run, and simplify $\tfrac{\text{rise}}{\text{run}}$."
+  hint="Pick two points where the line crosses grid intersections, count the rise and the run from the left point to the right one, and simplify $\tfrac{\text{rise}}{\text{run}}$."
 >}}
 
 <div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 2) and (6, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,2],[6,0]]}]}'>
@@ -1188,10 +1137,11 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 </div>
 
 {{< fillin
-  question="Find the slope of the line shown."
+  question="Find the slope of the line shown above, as a fraction."
   answer="-\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{3}$"
-  hint="The line falls from left to right, so the slope is negative."
+  hint="Pick two points where the line crosses grid intersections, count the rise and the run from the left point to the right one, and simplify $\tfrac{\text{rise}}{\text{run}}$."
 >}}
 
 <div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 6) and (8, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,6],[8,0]]}]}'>
@@ -1291,8 +1241,9 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 </div>
 
 {{< fillin
-  question="Find the slope of the line shown."
+  question="Find the slope of the line shown above, as a fraction."
   answer="-\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{4}$"
   hint="Count the rise and run between the two intercepts, then reduce the fraction."
 >}}
@@ -1302,19 +1253,21 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 {{< fillin
   question="Find the slope of the line $y = 3$."
   answer="0"
-  hint="Every point on this line has the same $y$-value, so the rise between any two points is $0$."
+  answerForm="decimal"
+  hint="Decide whether the line is horizontal or vertical, then pick two points on it and find the rise and the run between them."
 >}}
 
 {{< fillin
   question="Find the slope of the line $y = -2$."
   answer="0"
-  hint="This is a horizontal line — there is no vertical change at all."
+  answerForm="decimal"
+  hint="Decide whether the line is horizontal or vertical, then pick two points on it and find the rise and the run between them."
 >}}
 
 {{< multiplechoice
   question="Find the slope of the line $x = 4$."
   answer="undefined"
-  hint="Every point has the same $x$-value, so the run between any two points is $0$ — and you cannot divide by $0$."
+  hint="Decide whether the line is horizontal or vertical, then pick two points on it and find the rise and the run between them."
 >}}
 undefined
 $0$
@@ -1324,7 +1277,7 @@ $4$
 {{< multiplechoice
   question="Find the slope of the line $x = -5$."
   answer="undefined"
-  hint="This is a vertical line; think about what the denominator of $\tfrac{\text{rise}}{\text{run}}$ becomes."
+  hint="Decide whether the line is horizontal or vertical, then pick two points on it and find the rise and the run between them."
 >}}
 $-5$
 $0$
@@ -1336,6 +1289,7 @@ undefined
 {{< fillin
   question="Use the slope formula to find the slope of the line between $(1, 4)$ and $(3, 9)$."
   answer="\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{2}$"
   hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$, subtracting in the same order in both the numerator and the denominator."
 >}}
@@ -1343,21 +1297,24 @@ undefined
 {{< fillin
   question="Use the slope formula to find the slope of the line between $(2, 5)$ and $(4, 0)$."
   answer="-\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{2}$"
-  hint="The $y$-value drops from $5$ to $0$ while $x$ increases, so expect a negative slope."
+  hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$, subtracting in the same order in both the numerator and the denominator."
 >}}
 
 {{< fillin
   question="Use the slope formula to find the slope of the line between $(-3, 3)$ and $(2, -5)$."
   answer="-\frac{8}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{8}{5}$"
-  hint="Watch the signs: $2 - (-3)$ is $5$, not $-1$."
+  hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$ and put parentheses around each negative coordinate you subtract."
 >}}
 
 {{< fillin
   question="Use the slope formula to find the slope of the line between $(4, -5)$ and $(1, -2)$."
   answer="-1"
-  hint="Both differences come out to $3$ in size but with opposite signs."
+  answerForm="decimal"
+  hint="Use $m = \tfrac{y_2 - y_1}{x_2 - x_1}$ and put parentheses around each negative coordinate you subtract."
 >}}
 
 ### Graph a line given a point and the slope
@@ -1366,7 +1323,7 @@ undefined
   question="Graph the line that passes through $(0, 3)$ with slope $m = -\tfrac{2}{5}$ by placing three points on it."
   answerDisplay="The line through $(0, 3)$ and $(5, 1)$"
   ariaLabel="A blank grid from -14 to 14 on both axes."
-  hint="Start at $(0, 3)$, then count the run of $5$ to the right and the rise of $2$ down to reach a second point — and $5$ left with $2$ up for a third."
+  hint="Plot $(0, 3)$, read the rise and the run from the slope, and count them out from that point; count them the opposite way for a third point."
 >}}
 {"answer": {"slope": -0.4, "intercept": 3, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
 {{< /graphplot >}}
@@ -1375,7 +1332,7 @@ undefined
   question="Graph the line that passes through $(1, -2)$ with slope $m = \tfrac{3}{4}$ by placing three points on it."
   answerDisplay="The line through $(1, -2)$ and $(5, 1)$"
   ariaLabel="A blank grid from -14 to 14 on both axes."
-  hint="Start at $(1, -2)$, then count the run of $4$ to the right and the rise of $3$ up to reach a second point — and $4$ left with $3$ down for a third."
+  hint="Plot $(1, -2)$, read the rise and the run from the slope, and count them out from that point; count them the opposite way for a third point."
 >}}
 {"answer": {"slope": 0.75, "intercept": -2.75, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
 {{< /graphplot >}}
@@ -1384,7 +1341,7 @@ undefined
   question="Graph the line that passes through $(2, 5)$ with slope $m = -\tfrac{1}{3}$ by placing three points on it."
   answerDisplay="The line through $(2, 5)$ and $(5, 4)$"
   ariaLabel="A blank grid from -7 to 7 on both axes."
-  hint="Start at $(2, 5)$, then count the run of $3$ to the right and the rise of $1$ down to reach a second point — and $3$ left with $1$ up for a third."
+  hint="Plot $(2, 5)$, read the rise and the run from the slope, and count them out from that point; count them the opposite way for a third point."
 >}}
 {"answer": {"slope": -0.3333333333333333, "intercept": 5.666666666666667, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
 {{< /graphplot >}}
@@ -1392,10 +1349,11 @@ undefined
 ### Solve slope applications
 
 {{< fillin
-  question="One way to find the slope of a roof is to set a 12-inch level on the roof surface and measure from the free end of the level down to the roof. For one roof, that vertical measurement is $4$ inches. What is the slope of the roof?"
+  question="One way to find the slope of a roof is to set a 12-inch level on the roof surface and measure from the free end of the level down to the roof. For one roof, that vertical measurement is $4$ inches. What is the slope of the roof? Write your answer as a simplified fraction."
   answer="\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{3}$"
-  hint="The level gives the run of $12$ inches and the measurement gives the rise of $4$ inches; simplify $\tfrac{\text{rise}}{\text{run}}$."
+  hint="Decide which measurement is the horizontal change and which is the vertical change, then simplify $\tfrac{\text{rise}}{\text{run}}$."
 >}}
 
 {{< fillin
@@ -1403,16 +1361,17 @@ undefined
   answer="\frac{3}{50}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{50}$"
-  hint="A grade of 6% means $\tfrac{6}{100}$ — reduce that fraction."
+  hint="A percent is a number of hundredths: write the grade as a fraction, then simplify."
 >}}
 
 {{< fillin
-  question="A local road has a grade of 6%, so its slope is $\tfrac{3}{50}$. What rise, in feet, would reflect this slope over a run of $50$ feet?"
+  question="A local road has a grade of 6%. What rise, in feet, would reflect this grade over a run of $50$ feet?"
   answer="3"
+  answerForm="decimal"
   answerDisplay="a rise of $3$ feet"
-  hint="Read the simplified fraction directly: the numerator is the rise that matches a run equal to the denominator."
+  hint="Set the road's slope equal to $\tfrac{\text{rise}}{50}$ and solve for the rise."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.4: Understand Slope of a Line](https://openstax.org/books/prealgebra-2e/pages/11-4-understand-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the geoboard rubber-band diagrams and coordinate-plane line graphs as accessible inline graphics; omitted the Self Check checklist, Be Prepared quiz, Manipulative Mathematics callouts, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, recreating three exercise graphs as accessible inline graphics, restating the geoboard and "model each slope" prompts as rise-and-run questions, and restating the roof-slope measurement from its figure.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.4: Understand Slope of a Line](https://openstax.org/books/prealgebra-2e/pages/11-4-understand-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the geoboard rubber-band diagrams and coordinate-plane line graphs as accessible graphics; omitted the Self Check checklist, Be Prepared quiz, Manipulative Mathematics callouts, and media links; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, restating the geoboard and "model a line with the given slope" Try Its as rise-and-run questions, two "graph the line" Try Its as questions about the point reached by counting out the rise and run, and one as a choice among graphs; and adapted selected end-of-section exercises into the interactive Practice block, recreating three exercise graphs as accessible graphics, restating the geoboard exercises as rise-and-run questions, restating the roof-slope measurement from its figure, and splitting the road-grade exercise into its two parts, with the run given in the second.</small>

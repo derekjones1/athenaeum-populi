@@ -60,24 +60,27 @@ $\tfrac{\text{\textdollar}}{\text{ounces}} = \tfrac{\text{\textdollar}}{\text{ou
 so $\tfrac{1.50}{6} = \tfrac{2.25}{9}$.
 
 {{< fillin
-  question="Write as a proportion: 5 is to 9 as 20 is to 36."
+  question="Write as a proportion, keeping the numbers in the order the sentence gives them: 5 is to 9 as 20 is to 36."
   answer="\frac{5}{9}=\frac{20}{36}"
+  answerForm="translation"
   answerDisplay="$\tfrac{5}{9} = \tfrac{20}{36}$"
-  hint="Write the first ratio over the second, in the same order the sentence gives them."
+  hint="“$a$ is to $b$” is the ratio $\tfrac{a}{b}$; set the two ratios equal."
 >}}
 
 {{< fillin
-  question="Write as a proportion: \$2.50 for 8 ounces is equivalent to \$3.75 for 12 ounces."
+  question="Write as a proportion, with dollars over ounces and the prices entered as printed (no dollar signs): \$2.50 for 8 ounces is equivalent to \$3.75 for 12 ounces."
   answer="\frac{2.50}{8}=\frac{3.75}{12}"
+  answerForm="translation"
   answerDisplay="$\tfrac{2.50}{8} = \tfrac{3.75}{12}$"
-  hint="Put dollars in the numerators and ounces in the denominators."
+  hint="Write each purchase as one ratio of its price to its weight, then set the two ratios equal."
 >}}
 
 {{< fillin
-  question="Write as a proportion: 6 is to 7 as 36 is to 42."
+  question="Write as a proportion, keeping the numbers in the order the sentence gives them: 6 is to 7 as 36 is to 42."
   answer="\frac{6}{7}=\frac{36}{42}"
+  answerForm="translation"
   answerDisplay="$\tfrac{6}{7} = \tfrac{36}{42}$"
-  hint="Write the first ratio over the second, in the same order the sentence gives them."
+  hint="“$a$ is to $b$” is the ratio $\tfrac{a}{b}$; set the two ratios equal."
 >}}
 
 Look at the proportions $\tfrac{1}{2} = \tfrac{4}{8}$ and
@@ -118,14 +121,14 @@ $15 \cdot 17.5 = 37.5 \cdot 7$, the equation is a proportion.
   question="Test whether $\tfrac{24.5}{45.5} = \tfrac{7}{13}$ is a proportion. Enter the cross product $45.5 \times 7$."
   answer="318.5"
   answerForm="decimal"
-  hint="If this cross product equals $13 \times 24.5$, the equation is a proportion."
+  hint="Multiply as if $45.5$ were a whole number, then place the decimal point one digit from the right."
 >}}
 
 {{< fillin
   question="Test whether $\tfrac{8}{9} = \tfrac{56}{73}$ is a proportion. Enter the cross product $9 \times 56$."
   answer="504"
   answerForm="decimal"
-  hint="If this cross product equals $8 \times 73$, the equation is a proportion. Compute $8 \times 73$ to compare — they're not equal here."
+  hint="Split $56$ into tens and ones, multiply each part by $9$, and add the two products."
 >}}
 
 ## Solve proportions
@@ -149,12 +152,14 @@ $\tfrac{4}{7} = \tfrac{4}{7}\ \checkmark$.
 {{< fillin
   question="Solve the proportion: $\tfrac{n}{84} = \tfrac{11}{12}$"
   answer="77"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, 84."
 >}}
 
 {{< fillin
   question="Solve the proportion: $\tfrac{y}{96} = \tfrac{13}{12}$"
   answer="104"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, 96."
 >}}
 
@@ -175,13 +180,15 @@ $\tfrac{9}{4} = \tfrac{9}{4}\ \checkmark$.
 {{< fillin
   question="Solve the proportion: $\tfrac{91}{b} = \tfrac{7}{5}$"
   answer="65"
-  hint="Find the cross products and set them equal: $5 \cdot 91 = b \cdot 7$."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, then divide both sides by the number multiplying the variable."
 >}}
 
 {{< fillin
   question="Solve the proportion: $\tfrac{39}{c} = \tfrac{13}{8}$"
   answer="24"
-  hint="Find the cross products and set them equal: $8 \cdot 39 = c \cdot 13$."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, then divide both sides by the number multiplying the variable."
 >}}
 
 **Example.** Solve: $\tfrac{52}{91} = \tfrac{-4}{y}$.
@@ -196,13 +203,15 @@ $\tfrac{4}{7} = \tfrac{4}{7}\ \checkmark$.
 {{< fillin
   question="Solve the proportion: $\tfrac{84}{98} = \tfrac{-6}{x}$"
   answer="-7"
-  hint="Find the cross products and set them equal: $x \cdot 84 = 98(-6)$."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, divide, and watch the sign of the result."
 >}}
 
 {{< fillin
   question="Solve the proportion: $\tfrac{-7}{y} = \tfrac{105}{135}$"
   answer="-9"
-  hint="Find the cross products and set them equal: $105y = -7(135)$."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, divide, and watch the sign of the result."
 >}}
 
 ## Solve applications using proportions
@@ -231,15 +240,17 @@ pediatrician would prescribe $16$ ml of acetaminophen to Zoe.
 {{< fillin
   question="Pediatricians prescribe 5 milliliters (ml) of acetaminophen for every 25 pounds of a child's weight. How many milliliters of acetaminophen will the doctor prescribe for Emilia, who weighs 60 pounds?"
   answer="12"
+  answerForm="decimal"
   answerDisplay="12 ml"
-  hint="Set up the proportion $\tfrac{5}{25} = \tfrac{a}{60}$, then multiply both sides by 60."
+  hint="Write milliliters over pounds on both sides of the proportion, then multiply both sides by Emilia's weight."
 >}}
 
 {{< fillin
   question="For every 1 kilogram (kg) of a child's weight, pediatricians prescribe 15 milligrams (mg) of a fever reducer. If Isabella weighs 12 kg, how many milligrams of the fever reducer will the pediatrician prescribe?"
   answer="180"
+  answerForm="decimal"
   answerDisplay="180 mg"
-  hint="Set up the proportion $\tfrac{15}{1} = \tfrac{a}{12}$."
+  hint="Write milligrams over kilograms on both sides of the proportion, then multiply both sides by Isabella's weight."
 >}}
 
 **Example.** One brand of microwave popcorn has $120$ calories per
@@ -258,15 +269,17 @@ $420$ calories.
 {{< fillin
   question="Marissa loves the Caramel Macchiato at the coffee shop. The 16 oz. medium size has 240 calories. How many calories will she get if she drinks the large 20 oz. size?"
   answer="300"
+  answerForm="decimal"
   answerDisplay="300 calories"
-  hint="Set up the proportion $\tfrac{240}{16} = \tfrac{c}{20}$."
+  hint="Write calories over ounces on both sides of the proportion, then multiply both sides by the large size in ounces."
 >}}
 
 {{< fillin
   question="Yaneli loves Starburst candies, but wants to keep her snacks to 100 calories. If the candies have 160 calories for 8 pieces, how many pieces can she have in her snack?"
   answer="5"
+  answerForm="decimal"
   answerDisplay="5 pieces"
-  hint="Set up the proportion $\tfrac{160}{8} = \tfrac{100}{p}$, and solve for the number of pieces $p$."
+  hint="Write calories over pieces on both sides; the unknown number of pieces is in a denominator, so set the cross products equal."
 >}}
 
 **Example.** Josiah went to Mexico for spring break and changed
@@ -286,15 +299,17 @@ has $4{,}075.5$ pesos for his spring break trip.
 {{< fillin
   question="Yurianna is going to Europe and wants to change \$800 dollars into Euros. At the current exchange rate, \$1 US is equal to 0.738 Euro. How many Euros will she have for her trip? Round to the nearest whole Euro."
   answer="590"
+  answerForm="decimal"
   answerDisplay="590 Euros"
-  hint="Set up the proportion $\tfrac{1}{0.738} = \tfrac{800}{e}$, then solve for $e$ and round."
+  hint="Write dollars over Euros on both sides; the unknown is in a denominator, so set the cross products equal, then round."
 >}}
 
 {{< fillin
   question="Corey and Nicole are traveling to Japan and need to exchange \$600 into Japanese yen. If each dollar is 94.1 yen, how many yen will they get?"
   answer="56460"
+  answerForm="decimal"
   answerDisplay="56,460 yen"
-  hint="Multiply $600$ by $94.1$ yen per dollar."
+  hint="Write dollars over yen on both sides; the unknown is in a denominator, so set the cross products equal."
 >}}
 
 ## Write percent equations as proportions
@@ -338,17 +353,19 @@ of $100$? Set up the proportion, letting $n =$ number: $\tfrac{n}{90} =
 \tfrac{75}{100}$.
 
 {{< fillin
-  question="Translate to a proportion: What number is 60% of 105?"
+  question="Translate to a percent proportion, amount over base equals percent over 100, using $n$ for the unknown number: What number is 60% of 105?"
   answer="\frac{n}{105}=\frac{60}{100}"
+  answerForm="translation"
   answerDisplay="$\tfrac{n}{105} = \tfrac{60}{100}$"
-  hint="The amount goes over the base, following the word 'of'; the percent goes over 100."
+  hint="The base is the quantity that follows the word “of”."
 >}}
 
 {{< fillin
-  question="Translate to a proportion: What number is 40% of 85?"
+  question="Translate to a percent proportion, amount over base equals percent over 100, using $n$ for the unknown number: What number is 40% of 85?"
   answer="\frac{n}{85}=\frac{40}{100}"
+  answerForm="translation"
   answerDisplay="$\tfrac{n}{85} = \tfrac{40}{100}$"
-  hint="The amount goes over the base, following the word 'of'; the percent goes over 100."
+  hint="The base is the quantity that follows the word “of”."
 >}}
 
 **Example.** Translate to a proportion: $19$ is $25\%$ of what number?
@@ -359,17 +376,19 @@ $19$ out of what number is the same as $25$ out of $100$? Set up the
 proportion, letting $n =$ number: $\tfrac{19}{n} = \tfrac{25}{100}$.
 
 {{< fillin
-  question="Translate to a proportion: 36 is 25% of what number?"
+  question="Translate to a percent proportion, amount over base equals percent over 100, using $n$ for the unknown number: 36 is 25% of what number?"
   answer="\frac{36}{n}=\frac{25}{100}"
+  answerForm="translation"
   answerDisplay="$\tfrac{36}{n} = \tfrac{25}{100}$"
-  hint="The amount, 36, goes over the unknown base; the percent goes over 100."
+  hint="The base is the quantity that follows the word “of”."
 >}}
 
 {{< fillin
-  question="Translate to a proportion: 27 is 36% of what number?"
+  question="Translate to a percent proportion, amount over base equals percent over 100, using $n$ for the unknown number: 27 is 36% of what number?"
   answer="\frac{27}{n}=\frac{36}{100}"
+  answerForm="translation"
   answerDisplay="$\tfrac{27}{n} = \tfrac{36}{100}$"
-  hint="The amount, 27, goes over the unknown base; the percent goes over 100."
+  hint="The base is the quantity that follows the word “of”."
 >}}
 
 **Example.** Translate to a proportion: What percent of $27$ is $9$?
@@ -381,17 +400,19 @@ $100$? Set up the proportion, letting $p =$ percent: $\tfrac{9}{27} =
 \tfrac{p}{100}$.
 
 {{< fillin
-  question="Translate to a proportion: What percent of 52 is 39?"
+  question="Translate to a percent proportion, amount over base equals percent over 100, using $p$ for the unknown percent: What percent of 52 is 39?"
   answer="\frac{39}{52}=\frac{p}{100}"
+  answerForm="translation"
   answerDisplay="$\tfrac{39}{52} = \tfrac{p}{100}$"
-  hint="The amount goes over the base, following the word 'of'; the unknown percent goes over 100."
+  hint="The base is the quantity that follows the word “of”."
 >}}
 
 {{< fillin
-  question="Translate to a proportion: What percent of 92 is 23?"
+  question="Translate to a percent proportion, amount over base equals percent over 100, using $p$ for the unknown percent: What percent of 92 is 23?"
   answer="\frac{23}{92}=\frac{p}{100}"
+  answerForm="translation"
   answerDisplay="$\tfrac{23}{92} = \tfrac{p}{100}$"
-  hint="The amount goes over the base, following the word 'of'; the unknown percent goes over 100."
+  hint="The base is the quantity that follows the word “of”."
 >}}
 
 ## Translate and solve percent proportions
@@ -414,13 +435,15 @@ half of $80$, so this is reasonable. $36$ is $45\%$ of $80$.
 {{< fillin
   question="Translate and solve using proportions: What number is 65% of 40?"
   answer="26"
-  hint="Set up $\tfrac{n}{40} = \tfrac{65}{100}$, then find the cross products and solve."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 {{< fillin
   question="Translate and solve using proportions: What number is 85% of 40?"
   answer="34"
-  hint="Set up $\tfrac{n}{40} = \tfrac{85}{100}$, then find the cross products and solve."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 In the next example, the percent is more than $100$, which is more than
@@ -441,13 +464,15 @@ $125\%$ of $25$ is $31.25$.
 {{< fillin
   question="Translate and solve using proportions: 125% of 64 is what number?"
   answer="80"
-  hint="Set up $\tfrac{n}{64} = \tfrac{125}{100}$, then find the cross products and solve."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 {{< fillin
   question="Translate and solve using proportions: 175% of 84 is what number?"
   answer="147"
-  hint="Set up $\tfrac{n}{84} = \tfrac{175}{100}$, then find the cross products and solve."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 Percents with decimals and money are also used in proportions.
@@ -467,15 +492,17 @@ much less than $\text{\textdollar}24$, so this is reasonable. $6.5\%$ of
 $\text{\textdollar}24$ is $\text{\textdollar}1.56$.
 
 {{< fillin
-  question="Translate and solve using proportions: 8.5% of what number is \$3.23?"
+  question="Translate and solve using proportions: 8.5% of what number is \$3.23? Enter the number of dollars."
   answer="38"
-  hint="Set up $\tfrac{3.23}{n} = \tfrac{8.5}{100}$, then find the cross products and solve."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 {{< fillin
-  question="Translate and solve using proportions: 7.25% of what number is \$4.64?"
+  question="Translate and solve using proportions: 7.25% of what number is \$4.64? Enter the number of dollars."
   answer="64"
-  hint="Set up $\tfrac{4.64}{n} = \tfrac{7.25}{100}$, then find the cross products and solve."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 **Example.** Translate and solve using proportions: What percent of $72$
@@ -491,19 +518,19 @@ is $\tfrac{1}{8}$ of $72$, and $\tfrac{1}{8}$ is $12.5\%$, so this checks
 out. $12.5\%$ of $72$ is $9$.
 
 {{< fillin
-  question="Translate and solve using proportions: What percent of 72 is 27?"
+  question="Translate and solve using proportions: What percent of 72 is 27? Enter the percent, including the % sign."
   answer="37.5\%"
   answerForm="percent"
   answerDisplay="37.5%"
-  hint="Set up $\tfrac{27}{72} = \tfrac{n}{100}$, then find the cross products and solve."
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 {{< fillin
-  question="Translate and solve using proportions: What percent of 92 is 23?"
+  question="Translate and solve using proportions: What percent of 92 is 23? Enter the percent, including the % sign."
   answer="25\%"
   answerForm="percent"
   answerDisplay="25%"
-  hint="Set up $\tfrac{23}{92} = \tfrac{n}{100}$, then find the cross products and solve."
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 ## Key terms
@@ -564,25 +591,29 @@ no
 {{< fillin
   question="Solve the proportion: $\tfrac{x}{56} = \tfrac{7}{8}$"
   answer="49"
+  answerForm="decimal"
   hint="The variable is in a numerator, so multiply both sides by the LCD, 56."
 >}}
 
 {{< fillin
   question="Solve the proportion: $\tfrac{5}{a} = \tfrac{65}{117}$"
   answer="9"
-  hint="The variable is in a denominator, so set the cross products equal: $5 \cdot 117 = 65a$."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, then divide both sides by the number multiplying the variable."
 >}}
 
 {{< fillin
   question="Solve the proportion: $\tfrac{98}{154} = \tfrac{-7}{p}$"
   answer="-11"
-  hint="Set the cross products equal: $98p = 154(-7)$, then divide by 98 and keep the sign."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, divide, and watch the sign of the result."
 >}}
 
 {{< fillin
   question="Solve the proportion: $\tfrac{2.7}{j} = \tfrac{0.9}{0.2}$"
   answer="0.6"
-  hint="Set the cross products equal: $2.7(0.2) = 0.9j$, then divide both sides by $0.9$."
+  answerForm="decimal"
+  hint="The variable is in a denominator, so set the cross products equal, then divide both sides by the number multiplying the variable."
 >}}
 
 ### Solve applications using proportions
@@ -590,29 +621,33 @@ no
 {{< fillin
   question="Pediatricians prescribe 5 milliliters (ml) of acetaminophen for every 25 pounds of a child's weight. How many milliliters of acetaminophen will the doctor prescribe for Jocelyn, who weighs 45 pounds?"
   answer="9"
+  answerForm="decimal"
   answerDisplay="9 ml"
-  hint="Put milliliters over pounds in both ratios: $\tfrac{5}{25} = \tfrac{a}{45}$."
+  hint="Write milliliters over pounds on both sides of the proportion, then multiply both sides by Jocelyn's weight."
 >}}
 
 {{< fillin
-  question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for 2 points on her weight loss program. Her husband, Joe, can have 3 points of oatmeal for breakfast. How much oatmeal can he have? Give your answer in cups."
+  question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for 2 points on her weight loss program. Her husband, Joe, can have 3 points of oatmeal for breakfast. How much oatmeal can he have? Give your answer in cups, as a fraction."
   answer="\frac{3}{4}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{3}{4}$ cup"
-  hint="Put cups over points in both ratios, then cross-multiply: $2c = 3 \cdot \tfrac{1}{2}$."
+  hint="Write cups over points on both sides of the proportion, then multiply both sides by Joe's points."
 >}}
 
 {{< fillin
   question="At the laundromat, Lucy changed \$12.00 into quarters. How many quarters did she get?"
   answer="48"
+  answerForm="decimal"
   answerDisplay="48 quarters"
-  hint="One dollar is 4 quarters, so put quarters over dollars: $\tfrac{4}{1} = \tfrac{q}{12}$."
+  hint="One dollar is 4 quarters; write quarters over dollars on both sides of the proportion and solve."
 >}}
 
 {{< fillin
-  question="Phil wants to fertilize his lawn. Each bag of fertilizer covers about 4,000 square feet of lawn. Phil's lawn is approximately 13,500 square feet. How many bags of fertilizer will he have to buy?"
+  question="Phil wants to fertilize his lawn. Each bag of fertilizer covers about 4,000 square feet of lawn. Phil's lawn is approximately 13,500 square feet. How many bags of fertilizer will he have to buy? Enter a whole number of bags."
   answer="4"
+  answerForm="decimal"
   answerDisplay="4 bags"
-  hint="Set up $\tfrac{1}{4{,}000} = \tfrac{b}{13{,}500}$. He cannot buy part of a bag, so round up to the next whole bag."
+  hint="Write bags over square feet on both sides and solve. He cannot buy part of a bag, so round up to the next whole bag."
 >}}
 
 ### Write percent equations as proportions
@@ -620,7 +655,7 @@ no
 {{< multiplechoice
   question="Translate to a proportion: What number is 35% of 250?"
   answer="$\tfrac{n}{250} = \tfrac{35}{100}$"
-  hint="The amount goes over the base — the number following the word 'of' — and the percent goes over 100."
+  hint="The base is the quantity that follows the word “of”; the amount goes over the base and the percent over 100."
 >}}
 $\tfrac{n}{250} = \tfrac{100}{35}$
 $\tfrac{n}{250} = \tfrac{35}{100}$
@@ -631,7 +666,7 @@ $\tfrac{250}{n} = \tfrac{35}{100}$
 {{< multiplechoice
   question="Translate to a proportion: 45 is 30% of what number?"
   answer="$\tfrac{45}{n} = \tfrac{30}{100}$"
-  hint="Here 45 is the amount and 'what number' is the base, so the unknown belongs in the first denominator."
+  hint="The base is the quantity that follows the word “of”; the amount goes over the base and the percent over 100."
 >}}
 $\tfrac{n}{45} = \tfrac{30}{100}$
 $\tfrac{45}{n} = \tfrac{100}{30}$
@@ -642,7 +677,7 @@ $\tfrac{45}{n} = \tfrac{30}{100}$
 {{< multiplechoice
   question="Translate to a proportion: What percent of 85 is 17?"
   answer="$\tfrac{17}{85} = \tfrac{p}{100}$"
-  hint="'What percent' is the unknown, 85 follows 'of' so it is the base, and 17 is the amount."
+  hint="The base is the quantity that follows the word “of”; the amount goes over the base and the percent over 100."
 >}}
 $\tfrac{17}{85} = \tfrac{100}{p}$
 $\tfrac{85}{17} = \tfrac{p}{100}$
@@ -655,29 +690,32 @@ $\tfrac{17}{85} = \tfrac{p}{100}$
 {{< fillin
   question="Translate and solve using proportions: What number is 65% of 180?"
   answer="117"
-  hint="Set up $\tfrac{n}{180} = \tfrac{65}{100}$, then find the cross products and divide by 100."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 {{< fillin
   question="Translate and solve using proportions: 175% of 26 is what number?"
   answer="45.5"
-  hint="Set up $\tfrac{n}{26} = \tfrac{175}{100}$. The percent is more than 100, so expect an answer larger than 26."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, and solve. The percent is more than 100, so expect an answer larger than the base."
 >}}
 
 {{< fillin
-  question="Translate and solve using proportions: 17% of what number is \$7.65?"
+  question="Translate and solve using proportions: 17% of what number is \$7.65? Enter the number of dollars."
   answer="45"
-  hint="The unknown is the base, so set up $\tfrac{7.65}{n} = \tfrac{17}{100}$ and find the cross products."
+  answerForm="decimal"
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 {{< fillin
-  question="Translate and solve using proportions: What percent of 96 is 12?"
+  question="Translate and solve using proportions: What percent of 96 is 12? Enter the percent, including the % sign."
   answer="12.5\%"
   answerForm="percent"
   answerDisplay="12.5%"
-  hint="Set up $\tfrac{12}{96} = \tfrac{p}{100}$, then find the cross products and divide by 96."
+  hint="Find the base after the word “of”, write amount over base equals percent over 100, then set the cross products equal and solve."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.5: Solve Proportions and their Applications](https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Writing Exercises, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, including entering proportion setups directly as equations; and adapted selected end-of-section exercises into the interactive Practice block, presenting the proportion-setup and is-it-a-proportion items as multiple choice.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.5: Solve Proportions and their Applications](https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recast the step-by-step solution tables as prose with typeset math, writing the peso example's result as p = 4,075.5 where the source's last step switches to c; omitted the Be Prepared quiz, the Key Concepts list (its three definitions appear as callouts in the body), the Everyday Math and Writing Exercises, and the Self Check checklist; added a Key terms list; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, one part per question, entering proportion setups directly as equations with the letter and the percent-proportion form named in the question, asking for one cross product where a Try It asks whether an equation is a proportion, naming the unit to enter (dollars or a percent), and asking for the Euro exchange rounded to the nearest whole Euro; and adapted selected end-of-section exercises into the interactive Practice block, presenting the proportion-setup and is-it-a-proportion items as multiple choice.</small>

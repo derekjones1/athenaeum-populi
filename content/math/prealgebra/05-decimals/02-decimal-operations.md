@@ -138,7 +138,7 @@ converting them to fractions first, comparing two examples side by side.
 | | $(0.3)(0.7)$ | $(0.2)(0.46)$ |
 | :--- | :---: | :---: |
 | Convert to fractions. | $\left(\tfrac{3}{10}\right)\left(\tfrac{7}{10}\right)$ | $\left(\tfrac{2}{10}\right)\left(\tfrac{46}{100}\right)$ |
-| Multiply. | $\tfrac{21}{100}$ | $\tfrac{92}{1000}$ |
+| Multiply. | $\tfrac{21}{100}$ | $\tfrac{92}{1{,}000}$ |
 | Convert back to decimals. | $0.21$ | $0.092$ |
 
 There is a pattern that we can use. In the first case, we multiplied two
@@ -155,7 +155,7 @@ places in the product — in this case five.
 
 $$\underbrace{(0.01)}_{2 \text{ places}}\underbrace{(0.004)}_{3 \text{ places}} = \underbrace{0.00004}_{5 \text{ places}}$$
 
-$$\left(\frac{1}{100}\right)\left(\frac{4}{1000}\right) = \frac{4}{100{,}000}$$
+$$\left(\frac{1}{100}\right)\left(\frac{4}{1{,}000}\right) = \frac{4}{100{,}000}$$
 
 Once we know how to determine the number of digits after the decimal
 point, we can multiply decimal numbers without converting them to
@@ -215,7 +215,7 @@ $$(3.9)(4.075) = 15.8925$$
 The signs are different, so the product will be negative. Write in
 vertical format, lining up the numbers on the right, and multiply:
 
-$$\begin{array}{r} 5.19 \\ \times\ 8.2\phantom{0} \\ \hline 1038\phantom{0} \\ 4{,}152\phantom{00} \\ \hline 42{,}558 \end{array}$$
+$$\begin{array}{r} 5.19 \\ \times\ 8.2 \\ \hline 1{,}038 \\ 4{,}152\phantom{0} \\ \hline 42{,}558 \end{array}$$
 
 Place the decimal point $3$ places from the right ($1 + 2$ places). The
 product is negative:
@@ -267,7 +267,7 @@ In many fields, especially in the sciences, it is common to multiply
 decimals by powers of $10$. Let's see what happens when we multiply
 $1.9436$ by some powers of $10$:
 
-$$1.9436(10) = 19.436 \qquad 1.9436(100) = 194.36 \qquad 1.9436(1000) = 1943.6$$
+$$1.9436(10) = 19.436 \qquad 1.9436(100) = 194.36 \qquad 1.9436(1{,}000) = 1{,}943.6$$
 
 The number of places that the decimal point moved is the same as the
 number of zeros in the power of ten:
@@ -301,7 +301,7 @@ $$2.4 \times 100 = 240$$
   2. Write zeros at the end of the number as placeholders if needed.
 {{< /callout >}}
 
-**Example.** Multiply $5.63$ by factors of (a) $10$ (b) $100$ (c) $1000$.
+**Example.** Multiply $5.63$ by factors of (a) $10$ (b) $100$ (c) $1{,}000$.
 
 By looking at the number of zeros in the multiple of ten, we see the
 number of places we need to move the decimal to the right.
@@ -312,25 +312,29 @@ right: $5.63(10) = 56.3$.
 (b) There are $2$ zeros in $100$, so move the decimal point $2$ places to
 the right: $5.63(100) = 563$.
 
-(c) There are $3$ zeros in $1000$, so move the decimal point $3$ places to
-the right. A zero must be added at the end: $5.63(1000) = 5{,}630$.
+(c) There are $3$ zeros in $1{,}000$, so move the decimal point $3$ places to
+the right. A zero must be added at the end: $5.63(1{,}000) = 5{,}630$.
 
 {{< fillin
-  question="Multiply 2.58 by 10."
+  question="Multiply $2.58$ by $10$."
   answer="25.8"
-  hint="10 has one zero, so move the decimal point one place to the right."
+  answerForm="decimal"
+  hint="Count the zeros in $10$ and move the decimal point that many places to the right."
 >}}
 
 {{< fillin
-  question="Multiply 2.58 by 100."
+  question="Multiply $2.58$ by $100$."
   answer="258"
-  hint="100 has two zeros, so move the decimal point two places to the right."
+  answerForm="decimal"
+  hint="Count the zeros in $100$ and move the decimal point that many places to the right."
 >}}
 
 {{< fillin
-  question="Multiply 2.58 by 1000."
+  question="Multiply $2.58$ by $1{,}000$."
   answer="2580"
-  hint="1000 has three zeros, so move the decimal point three places to the right, adding a zero as a placeholder."
+  answerForm="decimal"
+  answerDisplay="$2{,}580$"
+  hint="Count the zeros in $1{,}000$ and move the decimal point that many places to the right, writing placeholder zeros if you run out of digits."
 >}}
 
 ## Divide decimals
@@ -421,20 +425,22 @@ dividend. Divide as usual. Since this division involves money, we round it
 to the nearest cent (hundredth), so we must carry the division to the
 thousandths place:
 
-$$\$3.99 \div 24 = \$0.166 \approx \$0.17$$
+$$\$3.99 \div 24 = \$0.166\ldots \approx \$0.17$$
 
 This means the price per bottle is $17$ cents.
 
 {{< fillin
-  question="Divide \$6.99 $\div$ 36, rounded to the nearest cent."
+  question="Divide \$6.99 $\div$ 36. Give the answer in dollars, rounded to the nearest cent."
   answer="0.19"
+  answerForm="decimal"
   answerDisplay="\$0.19"
   hint="Carry the division to the thousandths place before rounding to the nearest cent."
 >}}
 
 {{< fillin
-  question="Divide \$4.99 $\div$ 12, rounded to the nearest cent."
+  question="Divide \$4.99 $\div$ 12. Give the answer in dollars, rounded to the nearest cent."
   answer="0.42"
+  answerForm="decimal"
   answerDisplay="\$0.42"
   hint="Carry the division to the thousandths place before rounding to the nearest cent."
 >}}
@@ -494,14 +500,14 @@ $$-2.89 \div (3.4) = -0.85$$
   question="Divide: $-1.989 \div 5.1$"
   answer="-0.39"
   answerForm="decimal"
-  hint="Move the decimal point one place in both numbers ($5.1$ becomes $51$, $-1.989$ becomes $-19.89$), then divide."
+  hint="The quotient is negative. Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number, then divide."
 >}}
 
 {{< fillin
   question="Divide: $-2.04 \div 5.1$"
   answer="-0.4"
   answerForm="decimal"
-  hint="Move the decimal point one place in both numbers ($5.1$ becomes $51$, $-2.04$ becomes $-20.4$), then divide."
+  hint="The quotient is negative. Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number, then divide, adding zeros as needed."
 >}}
 
 **Example.** Divide: $-25.65 \div (-0.06)$.
@@ -518,14 +524,14 @@ $$-25.65 \div (-0.06) = 427.5$$
   question="Divide: $-23.492 \div (-0.04)$"
   answer="587.3"
   answerForm="decimal"
-  hint="Move the decimal point two places in both numbers ($-0.04$ becomes $-4$, $-23.492$ becomes $-2349.2$), then divide."
+  hint="The signs are the same, so the quotient is positive. Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number, then divide."
 >}}
 
 {{< fillin
   question="Divide: $-4.11 \div (-0.12)$"
   answer="34.25"
   answerForm="decimal"
-  hint="Move the decimal point two places in both numbers ($-0.12$ becomes $-12$, $-4.11$ becomes $-411$), then divide."
+  hint="The signs are the same, so the quotient is positive. Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number, then divide, adding zeros as needed."
 >}}
 
 Now we will divide a whole number by a decimal number.
@@ -547,14 +553,14 @@ dollars? Because $4 \div 0.05 = 80$, there are $80$ nickels in \$4.
   question="Divide: $6 \div 0.03$"
   answer="200"
   answerForm="decimal"
-  hint="Move the decimal point two places in both numbers ($0.03$ becomes $3$, $6$ becomes $600$), then divide."
+  hint="Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number — write zeros after the whole-number dividend as needed — then divide."
 >}}
 
 {{< fillin
   question="Divide: $7 \div 0.02$"
   answer="350"
   answerForm="decimal"
-  hint="Move the decimal point two places in both numbers ($0.02$ becomes $2$, $7$ becomes $700$), then divide."
+  hint="Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number — write zeros after the whole-number dividend as needed — then divide."
 >}}
 
 ## Use decimals in money applications
@@ -577,15 +583,17 @@ What are you asked to find? How much did Paul have left? Write a phrase:
 sentence: Paul has \$18.36 left.
 
 {{< fillin
-  question="Nicole earned \$35 for babysitting her cousins, then went to the bookstore and spent \$18.48 on books and coffee. How much of her babysitting money was left?"
+  question="Nicole earned \$35 for babysitting her cousins, then went to the bookstore and spent \$18.48 on books and coffee. How much of her babysitting money was left, in dollars?"
   answer="16.52"
+  answerForm="decimal"
   answerDisplay="\$16.52"
-  hint="Subtract the amount spent from the amount earned: $35 - 18.48$."
+  hint="Subtract the amount spent from the amount earned, writing placeholder zeros so both amounts have two decimal places."
 >}}
 
 {{< fillin
-  question="Amber bought a pair of shoes for \$24.75 and a purse for \$36.90. The sales tax was \$4.32. How much did Amber spend in total?"
+  question="Amber bought a pair of shoes for \$24.75 and a purse for \$36.90. The sales tax was \$4.32. How much did Amber spend in total, in dollars?"
   answer="65.97"
+  answerForm="decimal"
   answerDisplay="\$65.97"
   hint="Add all three amounts: the shoes, the purse, and the sales tax."
 >}}
@@ -600,15 +608,17 @@ Simplify: $\text{\textdollar}28.232$. Round to the nearest cent: $\text{\textdol
 sentence: Jessie owes \$28.23 for her gas purchase.
 
 {{< fillin
-  question="Hector put 13 gallons of gas into his car. One gallon of gas costs \$3.175. How much did Hector owe for the gas? Round to the nearest cent."
+  question="Hector put 13 gallons of gas into his car. One gallon of gas costs \$3.175. How much did Hector owe for the gas, in dollars? Round to the nearest cent."
   answer="41.28"
+  answerForm="decimal"
   answerDisplay="\$41.28"
-  hint="Multiply 13 by 3.175, then round the product to the nearest cent."
+  hint="Multiply the number of gallons by the price of one gallon, then round the product to the nearest cent."
 >}}
 
 {{< fillin
-  question="Christopher bought 5 pizzas for the team. Each pizza cost \$9.75. How much did all the pizzas cost?"
+  question="Christopher bought 5 pizzas for the team. Each pizza cost \$9.75. How much did all the pizzas cost, in dollars?"
   answer="48.75"
+  answerForm="decimal"
   answerDisplay="\$48.75"
   hint="Multiply the number of pizzas by the cost of each pizza."
 >}}
@@ -623,15 +633,17 @@ $\text{\textdollar}31.76 \div 4$. Simplify: $\text{\textdollar}7.94$. Write a se
 pay \$7.94 for their share of the dinner.
 
 {{< fillin
-  question="Six friends went out for dinner. The total cost of their dinner was \$92.82. If they divide the bill equally, how much should each friend pay?"
+  question="Six friends went out for dinner. The total cost of their dinner was \$92.82. If they divide the bill equally, how much should each friend pay, in dollars?"
   answer="15.47"
+  answerForm="decimal"
   answerDisplay="\$15.47"
   hint="Divide the total cost by the number of friends."
 >}}
 
 {{< fillin
-  question="Chad worked 40 hours last week and his paycheck was \$570. How much does he earn per hour?"
+  question="Chad worked 40 hours last week and his paycheck was \$570. How much does he earn per hour, in dollars?"
   answer="14.25"
+  answerForm="decimal"
   answerDisplay="\$14.25"
   hint="Divide the total paycheck by the number of hours worked."
 >}}
@@ -649,15 +661,17 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
 \$3.28.
 
 {{< fillin
-  question="Suzanne buys 3 cans of beans that cost \$0.75 each and 6 cans of corn that cost \$0.62 each. How much is the total cost of these groceries?"
+  question="Suzanne buys 3 cans of beans that cost \$0.75 each and 6 cans of corn that cost \$0.62 each. How much is the total cost of these groceries, in dollars?"
   answer="5.97"
+  answerForm="decimal"
   answerDisplay="\$5.97"
   hint="Multiply each item's price by its quantity, then add the two products — multiply before you add."
 >}}
 
 {{< fillin
-  question="Lydia bought movie tickets for the family. She bought two adult tickets for \$9.50 each and four children's tickets for \$6.00 each. How much did the tickets cost Lydia in all?"
+  question="Lydia bought movie tickets for the family. She bought two adult tickets for \$9.50 each and four children's tickets for \$6.00 each. How much did the tickets cost Lydia in all, in dollars?"
   answer="43.00"
+  answerForm="decimal"
   answerDisplay="\$43.00"
   hint="Multiply each ticket price by its quantity, then add the two products — multiply before you add."
 >}}
@@ -666,10 +680,11 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
 
 **decimal point** — the point that separates the whole-number part of a
 decimal from its fractional part; when adding or subtracting decimals, the
-decimal points must line up. **placeholder zero** — a zero written at the
-end of a decimal's fractional part, or between the decimal point and a
-nonzero digit, so two decimals can be compared or combined digit by digit
-without changing either number's value.
+decimal points must line up. **placeholder zero** — a zero written to fill
+an empty decimal place: at the end of a decimal, so that numbers being added
+or subtracted have the same number of decimal places without changing
+either number's value, or in front of the digits of a product or quotient,
+so that the decimal point lands in the right place.
 
 ## Practice
 
@@ -679,7 +694,7 @@ without changing either number's value.
   question="Subtract: $256.37 - 85.49$"
   answer="170.88"
   answerForm="decimal"
-  hint="Line up the decimal points and subtract as whole numbers — you will need to regroup twice."
+  hint="Line up the decimal points and subtract as if they were whole numbers, borrowing wherever a column needs it."
 >}}
 
 {{< fillin
@@ -709,7 +724,7 @@ without changing either number's value.
   question="Multiply: $(0.24)(0.6)$"
   answer="0.144"
   answerForm="decimal"
-  hint="Multiply $24 \times 6$ as whole numbers, then place the decimal point three places from the right ($2 + 1$ places)."
+  hint="Multiply as if the factors were whole numbers, then count the decimal places in both factors to place the decimal point, writing placeholder zeros if needed."
 >}}
 
 {{< fillin
@@ -729,6 +744,7 @@ without changing either number's value.
 {{< fillin
   question="Multiply: $(55.2)(1{,}000)$"
   answer="55200"
+  answerForm="decimal"
   answerDisplay="$55{,}200$"
   hint="There are three zeros in $1{,}000$, so move the decimal point three places to the right, writing placeholder zeros as needed."
 >}}
@@ -746,21 +762,21 @@ without changing either number's value.
   question="Divide: $1.44 \div (-0.3)$"
   answer="-4.8"
   answerForm="decimal"
-  hint="The signs are different, so the quotient is negative. Move the decimal point one place in both numbers, making the divisor $3$ and the dividend $14.4$."
+  hint="Decide the sign of the quotient first. Then move the decimal point in both numbers the same number of places to the right to make the divisor a whole number, and divide."
 >}}
 
 {{< fillin
   question="Divide: $5.2 \div 2.5$"
   answer="2.08"
   answerForm="decimal"
-  hint="Move the decimal point one place in both numbers ($2.5$ becomes $25$, $5.2$ becomes $52$), then divide, adding zeros until the remainder is zero."
+  hint="Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number, then divide, adding zeros until the remainder is zero."
 >}}
 
 {{< fillin
   question="Divide: $12 \div 0.08$"
   answer="150"
   answerForm="decimal"
-  hint="Move the decimal point two places in both numbers ($0.08$ becomes $8$, $12$ becomes $1{,}200$), then divide."
+  hint="Move the decimal point in both numbers the same number of places to the right to make the divisor a whole number — write zeros after the whole-number dividend as needed — then divide."
 >}}
 
 ### Use decimals in money applications
@@ -768,6 +784,7 @@ without changing either number's value.
 {{< fillin
   question="Brenda got \$40 from the ATM. She spent \$15.11 on a pair of earrings. How much money did she have left, in dollars?"
   answer="24.89"
+  answerForm="decimal"
   answerDisplay="\$24.89"
   hint="Subtract what she spent from what she withdrew — write $40$ as $40.00$ before subtracting."
 >}}
@@ -775,6 +792,7 @@ without changing either number's value.
 {{< fillin
   question="Emily bought a box of cereal that cost \$4.29. She had a coupon for \$0.55 off, and the store doubled the coupon. How much did she pay for the box of cereal, in dollars?"
   answer="3.19"
+  answerForm="decimal"
   answerDisplay="\$3.19"
   hint="Double the coupon first, then subtract that discount from the price of the cereal."
 >}}
@@ -782,6 +800,7 @@ without changing either number's value.
 {{< fillin
   question="Leo took part in a diet program. He weighed 190 pounds at the start of the program. During the first week, he lost 4.3 pounds. During the second week, he lost 2.8 pounds. The third week, he gained 0.7 pounds. The fourth week, he lost 1.9 pounds. What did Leo weigh, in pounds, at the end of the fourth week?"
   answer="181.7"
+  answerForm="decimal"
   answerDisplay="181.7 pounds"
   hint="Start from 190 and work through the weeks in order — subtract each loss and add the gain."
 >}}
@@ -789,6 +808,7 @@ without changing either number's value.
 {{< fillin
   question="Alan got his first paycheck from his new job. He worked 30 hours and earned \$382.50. How much does he earn per hour, in dollars?"
   answer="12.75"
+  answerForm="decimal"
   answerDisplay="\$12.75"
   hint="Divide the total earnings by the number of hours worked."
 >}}
@@ -796,10 +816,11 @@ without changing either number's value.
 {{< fillin
   question="The Lewis and Chousmith families are planning to go to the zoo together. Adult tickets cost \$29.95 and children's tickets cost \$19.95. What will the total cost be, in dollars, for 4 adults and 7 children?"
   answer="259.45"
+  answerForm="decimal"
   answerDisplay="\$259.45"
   hint="Multiply each ticket price by the number of those tickets, then add the two products — multiply before you add."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.2: Decimal Operations](https://openstax.org/books/prealgebra-2e/pages/5-2-decimal-operations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the vertical addition/subtraction/multiplication/long-division layouts and the multiply-by-powers-of-ten table as typeset math and markdown tables, and the number-line jump diagram as an accessible inline graphic; omitted the Be Prepared quiz, Links to Literacy callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.2: Decimal Operations](https://openstax.org/books/prealgebra-2e/pages/5-2-decimal-operations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the vertical addition, subtraction, and multiplication layouts and the multiply-by-powers-of-ten table as typeset math and markdown tables, summarized the long-division steps and the remaining step tables in prose, and redrew the number-line jump diagram as an accessible inline graphic; omitted the Be Prepared quiz, Links to Literacy callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback (the multiply-by-powers-of-ten Try It as one question per factor); and adapted selected end-of-section exercises into the interactive Practice block.</small>

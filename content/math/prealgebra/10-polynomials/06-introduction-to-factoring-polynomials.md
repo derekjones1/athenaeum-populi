@@ -42,18 +42,23 @@ First we will find the greatest common factor of two numbers.
 
 **Example.** Find the greatest common factor of $24$ and $36$.
 
-Factor each number into primes, writing all variables with exponents in
-expanded form:
+Factor each number into primes:
 
 $$24 = 2 \cdot 2 \cdot 2 \cdot 3 \qquad\qquad 36 = 2 \cdot 2 \cdot 3 \cdot 3$$
 
 List all the factors, matching common factors in a column, and circle the
-factors that are shared by both numbers — here, two $2\text{s}$ and one
-$3$:
+factors that are shared by both numbers (boxed here) — two $2\text{s}$ and
+one $3$. Then bring down the common factors that both numbers share:
 
-$$24 = 2 \cdot 2 \cdot \phantom{3 \cdot {}} 2 \cdot 3 \qquad\qquad 36 = 2 \cdot 2 \cdot 3 \cdot 3$$
+$$
+\begin{array}{rcccccc}
+24 &=& \boxed{2}\cdot & \boxed{2}\cdot & 2\cdot & \boxed{3}\phantom{\cdot} & \\[4pt]
+36 &=& \boxed{2}\cdot & \boxed{2}\cdot & & \boxed{3}\cdot & 3\phantom{\cdot} \\[4pt] \hline
+\text{GCF} &=& 2\cdot & 2\cdot & & 3\phantom{\cdot} &
+\end{array}
+$$
 
-Bring down the common factors and multiply them:
+Multiply the factors:
 
 $$\text{GCF} = 2 \cdot 2 \cdot 3 = 12$$
 
@@ -65,12 +70,14 @@ $$24 = 12 \cdot 2 \qquad\qquad 36 = 12 \cdot 3$$
 {{< fillin
   question="Find the greatest common factor of $54$ and $36$."
   answer="18"
+  answerForm="decimal"
   hint="Factor each number into primes, then multiply the primes that appear in both factorizations."
 >}}
 
 {{< fillin
   question="Find the greatest common factor of $48$ and $80$."
   answer="16"
+  answerForm="decimal"
   hint="Factor each number into primes, then multiply the primes that appear in both factorizations."
 >}}
 
@@ -92,24 +99,32 @@ find the greatest common factor.
 
 **Example.** Find the greatest common factor of $5x$ and $15$.
 
-Factor each number into primes, and circle the common factors in each
-column:
+Factor each number into primes, matching common factors in a column, and
+circle the common factors in each column (boxed here). Then bring down the
+common factors:
 
-$$5x = 5 \cdot x \qquad\qquad 15 = 3 \cdot 5$$
+$$
+\begin{array}{rcccc}
+5x &=& & \boxed{5}\cdot & x\phantom{\cdot} \\[4pt]
+15 &=& 3\cdot & \boxed{5}\phantom{\cdot} & \\[4pt] \hline
+\text{GCF} &=& & 5\phantom{\cdot} &
+\end{array}
+$$
 
-Bring down the common factor: $\text{GCF} = 5$. The GCF of $5x$ and $15$ is
-$5$.
+The GCF of $5x$ and $15$ is $5$.
 
 {{< fillin
   question="Find the greatest common factor of $7y$ and $14$."
   answer="7"
-  hint="Factor $14$ into primes and compare with the factor $7$ already in $7y$."
+  answerForm="decimal"
+  hint="Factor each expression into primes, then bring down and multiply the factors that both expressions share."
 >}}
 
 {{< fillin
   question="Find the greatest common factor of $22$ and $11m$."
   answer="11"
-  hint="Factor $22$ into primes and compare with the factor $11$ already in $11m$."
+  answerForm="decimal"
+  hint="Factor each expression into primes, then bring down and multiply the factors that both expressions share."
 >}}
 
 In the examples so far, the greatest common factor was a constant. In the
@@ -118,11 +133,18 @@ next two examples we will get variables in the greatest common factor.
 **Example.** Find the greatest common factor of $12x^2$ and $18x^3$.
 
 Factor each coefficient into primes and write the variables with exponents
-in expanded form, then circle the common factors in each column:
+in expanded form, matching common factors in a column. Circle the common
+factors in each column (boxed here) and bring them down:
 
-$$12x^2 = 2 \cdot 2 \cdot 3 \cdot x \cdot x \qquad\qquad 18x^3 = 2 \cdot 3 \cdot 3 \cdot x \cdot x \cdot x$$
+$$
+\begin{array}{rcccccccc}
+12x^2 &=& \boxed{2}\cdot & 2\cdot & \boxed{3}\cdot & & \boxed{x}\cdot & \boxed{x}\phantom{\cdot} & \\[4pt]
+18x^3 &=& \boxed{2}\cdot & & \boxed{3}\cdot & 3\cdot & \boxed{x}\cdot & \boxed{x}\cdot & x\phantom{\cdot} \\[4pt] \hline
+\text{GCF} &=& 2\cdot & & 3\cdot & & x\cdot & x\phantom{\cdot} &
+\end{array}
+$$
 
-Bring down the common factors and multiply:
+Multiply the factors:
 
 $$\text{GCF} = 2 \cdot 3 \cdot x \cdot x = 6x^2$$
 
@@ -131,6 +153,7 @@ The GCF of $12x^2$ and $18x^3$ is $6x^2$.
 {{< fillin
   question="Find the greatest common factor of $16x^2$ and $24x^3$."
   answer="8x^2"
+  answerForm="single-term"
   answerDisplay="$8x^2$"
   hint="Factor each coefficient into primes and expand the powers of $x$, then bring down what both expressions share."
 >}}
@@ -138,6 +161,7 @@ The GCF of $12x^2$ and $18x^3$ is $6x^2$.
 {{< fillin
   question="Find the greatest common factor of $27y^3$ and $18y^4$."
   answer="9y^3"
+  answerForm="single-term"
   answerDisplay="$9y^3$"
   hint="Factor each coefficient into primes and expand the powers of $y$, then bring down what both expressions share."
 >}}
@@ -145,11 +169,20 @@ The GCF of $12x^2$ and $18x^3$ is $6x^2$.
 **Example.** Find the greatest common factor of $14x^3$, $8x^2$, and $10x$.
 
 Factor each coefficient into primes and write the variables with exponents
-in expanded form, then circle the common factors:
+in expanded form, matching common factors in a column. Circle the common
+factors in each column (boxed here) and bring them down:
 
-$$14x^3 = 2 \cdot 7 \cdot x \cdot x \cdot x \qquad 8x^2 = 2 \cdot 2 \cdot 2 \cdot x \cdot x \qquad 10x = 2 \cdot 5 \cdot x$$
+$$
+\begin{array}{rcccccccccc}
+14x^3 &=& \boxed{2}\cdot & & & & 7\cdot & \boxed{x}\cdot & x\cdot & x\phantom{\cdot} \\[4pt]
+8x^2 &=& \boxed{2}\cdot & 2\cdot & 2\cdot & & & \boxed{x}\cdot & x\phantom{\cdot} & \\[4pt]
+10x &=& \boxed{2}\cdot & & & 5\cdot & & \boxed{x}\phantom{\cdot} & & \\[4pt] \hline
+\text{GCF} &=& 2\cdot & & & & & x\phantom{\cdot} & &
+\end{array}
+$$
 
-All three share one factor of $2$ and one factor of $x$:
+All three share one factor of $2$ and one factor of $x$. Multiply the
+factors:
 
 $$\text{GCF} = 2 \cdot x = 2x$$
 
@@ -158,12 +191,14 @@ The GCF of $14x^3$, $8x^2$, and $10x$ is $2x$.
 {{< fillin
   question="Find the greatest common factor of $21x^3$, $9x^2$, and $15x$."
   answer="3x"
+  answerForm="single-term"
   hint="Factor each coefficient into primes and expand the powers of $x$, then find what all three expressions share."
 >}}
 
 {{< fillin
   question="Find the greatest common factor of $25m^4$, $35m^3$, and $20m^2$."
   answer="5m^2"
+  answerForm="single-term"
   answerDisplay="$5m^2$"
   hint="Factor each coefficient into primes and expand the powers of $m$, then find what all three expressions share."
 >}}
@@ -322,8 +357,8 @@ In the next example, we factor a variable from a binomial.
 
 **Example.** Factor: $6x^2 + 5x$.
 
-Find the GCF of $6x^2$ and $5x$ and the math that goes with it: it is $x$.
-Rewrite each term as a product, then factor:
+Find the GCF of $6x^2$ and $5x$: since $6x^2 = 2 \cdot 3 \cdot x \cdot x$ and
+$5x = 5 \cdot x$, the GCF is $x$. Rewrite each term as a product, then factor:
 
 $$6x^2 + 5x = x \cdot 6x + x \cdot 5 = x(6x + 5)$$
 
@@ -334,7 +369,7 @@ Check: $x(6x + 5) = x \cdot 6x + x \cdot 5 = 6x^2 + 5x$. ✓
   answer="x(9x+7)"
   answerForm="factored"
   answerDisplay="$x(9x+7)$"
-  hint="Find the GCF of the two terms — it will include a variable factor, not just a number."
+  hint="Factor each term into primes and write the powers of the variable in expanded form, then bring down every factor the two terms share."
 >}}
 
 {{< fillin
@@ -342,7 +377,7 @@ Check: $x(6x + 5) = x \cdot 6x + x \cdot 5 = 6x^2 + 5x$. ✓
   answer="a(5a-12)"
   answerForm="factored"
   answerDisplay="$a(5a-12)$"
-  hint="Find the GCF of the two terms — it will include a variable factor, not just a number."
+  hint="Factor each term into primes and write the powers of the variable in expanded form, then bring down every factor the two terms share."
 >}}
 
 When there are several common factors, as we'll see in the next two
@@ -429,8 +464,8 @@ negative, we factor the negative out as part of the GCF.
 **Example.** Factor: $-9y - 27$.
 
 When the leading coefficient is negative, the GCF will be negative.
-Ignoring the signs of the terms, we first find the GCF of $9y$ and $27$ is
-$9$. Since the expression $-9y - 27$ has a negative leading coefficient, we
+Ignoring the signs of the terms, we first find that the GCF of $9y$ and $27$
+is $9$. Since the expression $-9y - 27$ has a negative leading coefficient, we
 use $-9$ as the GCF. Rewrite each term using the GCF, then factor:
 
 $$-9y - 27 = -9 \cdot y + (-9) \cdot 3 = -9(y + 3)$$
@@ -470,7 +505,7 @@ Check on your own by multiplying the factors.
   answer="-7a(a-3)"
   answerForm="factored"
   answerDisplay="$-7a(a-3)$"
-  hint="The leading coefficient is negative, so pull a negative variable factor out as the GCF."
+  hint="The leading coefficient is negative, so the GCF is negative. Ignoring signs, find the GCF of the coefficients and of the powers of $a$."
 >}}
 
 {{< fillin
@@ -478,7 +513,7 @@ Check on your own by multiplying the factors.
   answer="-x(6x-1)"
   answerForm="factored"
   answerDisplay="$-x(6x-1)$"
-  hint="The leading coefficient is negative, so pull a negative variable factor out as the GCF. Remember $x$ = $x$ times $1$."
+  hint="The leading coefficient is negative, so the GCF is negative. When the GCF uses up a whole term, write the $1$ that is left in its place."
 >}}
 
 ## Key terms
@@ -494,18 +529,21 @@ more expressions, the largest expression that is a factor of all of them.
 {{< fillin
   question="Find the greatest common factor of $45$ and $75$."
   answer="15"
+  answerForm="decimal"
   hint="Factor each number into primes, then multiply the primes that appear in both columns."
 >}}
 
 {{< fillin
   question="Find the greatest common factor of $4y$ and $28$."
   answer="4"
-  hint="Factor $28$ into primes and compare with the factors of $4y$; the variable $y$ appears in only one expression, so it cannot be part of the GCF."
+  answerForm="decimal"
+  hint="Factor each expression into primes, then bring down only the factors that both expressions share and multiply them."
 >}}
 
 {{< fillin
   question="Find the greatest common factor of $9x$ and $15x^2$."
   answer="3x"
+  answerForm="single-term"
   answerDisplay="$3x$"
   hint="Factor each coefficient into primes and write the powers of $x$ in expanded form, then bring down every factor the two expressions share."
 >}}
@@ -513,6 +551,7 @@ more expressions, the largest expression that is a factor of all of them.
 {{< fillin
   question="Find the greatest common factor of $12p^4$ and $48p^3$."
   answer="12p^3"
+  answerForm="single-term"
   answerDisplay="$12p^3$"
   hint="The GCF takes the lowest power of $p$ that both terms contain, along with the greatest common factor of $12$ and $48$."
 >}}
@@ -520,6 +559,7 @@ more expressions, the largest expression that is a factor of all of them.
 {{< fillin
   question="Find the greatest common factor of $14b^2$, $35b^3$, and $63b^4$."
   answer="7b^2"
+  answerForm="single-term"
   answerDisplay="$7b^2$"
   hint="A factor must be shared by all three expressions. Look for the prime common to $14$, $35$, and $63$, then the lowest power of $b$."
 >}}
@@ -547,7 +587,7 @@ more expressions, the largest expression that is a factor of all of them.
   answer="3(n^2+7n+4)"
   answerForm="factored"
   answerDisplay="$3(n^2+7n+4)$"
-  hint="Check all three terms for a common factor. The GCF here is a constant, so the polynomial left inside the parentheses is still a trinomial."
+  hint="Find the GCF of all three terms — check whether every term contains the variable — then rewrite each term as a product of that GCF."
 >}}
 
 {{< fillin
@@ -555,7 +595,7 @@ more expressions, the largest expression that is a factor of all of them.
   answer="c(9c+22)"
   answerForm="factored"
   answerDisplay="$c(9c+22)$"
-  hint="$9$ and $22$ share no prime factor, so the GCF is a variable only."
+  hint="Factor $9$ and $22$ into primes to see what they share, then find the lowest power of $c$ in both terms."
 >}}
 
 {{< fillin
@@ -592,4 +632,4 @@ more expressions, the largest expression that is a factor of all of them.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.6: Introduction to Factoring Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factoring/multiplying diagram as typeset math and the factor-column work as inline math; omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.6: Introduction to Factoring Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factoring/multiplying diagram as typeset math, the factor-column work as aligned columns with the circled common factors shown boxed, and the step-by-step solution tables as prose with typeset math; replaced the $6x^2+5x$ solution's pointer to its image ("and the math that goes with it") with the factorizations themselves and mended the grammar of "we first find the GCF of $9y$ and $27$ is $9$"; omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

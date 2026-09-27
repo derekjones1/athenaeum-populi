@@ -66,17 +66,35 @@ the curtain rod — linear measure. (e) You are measuring the volume of the
 flour — cubic measure. (f) You are measuring the area of the roof —
 square measure.
 
-{{< fillin
-  question="It takes 2 cans of paint to cover a wall with an area of 200 square feet. How many square feet does 1 can cover?"
-  answer="100"
-  hint="Divide the total area by the number of cans: $200 / 2$."
+{{< multiplechoice
+  question="Would you use linear, square, or cubic measure for the amount of paint in a can?"
+  answer="cubic"
+  hint="Decide whether you are measuring a length, a surface, or the space something fills."
 >}}
+linear
+square
+cubic
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="A rectangular bedroom floor measures 12 feet by 10 feet. How many square feet of floor space does it have?"
-  answer="120"
-  hint="Floor space is an area measurement: multiply length times width, $12 \cdot 10$."
+{{< multiplechoice
+  question="Would you use linear, square, or cubic measure for the height of a tree?"
+  answer="linear"
+  hint="Decide whether you are measuring a length, a surface, or the space something fills."
 >}}
+square
+linear
+cubic
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Would you use linear, square, or cubic measure for the floor of your bedroom?"
+  answer="square"
+  hint="Decide whether you are measuring a length, a surface, or the space something fills."
+>}}
+square
+cubic
+linear
+{{< /multiplechoice >}}
 
 Many geometry applications involve finding the perimeter or the area of a
 figure, and it's important to understand what each means. Picture a room
@@ -107,14 +125,16 @@ $6$ inches. (b) The area is the surface covered by the figure. There are
 $2$ square-inch tiles, so the area is $2$ square inches.
 
 {{< fillin
-  question="Each box in a figure is 1 square inch. The figure is a row of 3 such boxes side by side (a 3 by 1 rectangle of unit squares). Find the perimeter of the figure."
+  question="Each box in a figure is 1 square inch. The figure is a row of 3 such boxes side by side (a 3 by 1 rectangle of unit squares). Find the perimeter of the figure, in inches."
   answer="8"
+  answerForm="decimal"
   hint="Walk around the outside edge of the 3-by-1 row of unit squares and count the inches."
 >}}
 
 {{< fillin
-  question="Each box in a figure is 1 square inch. The figure is a 2 by 2 block of such boxes (four unit squares arranged in a square). Find the area of the figure."
+  question="Each box in a figure is 1 square inch. The figure is a square made of such boxes, 2 boxes across and 2 boxes down. Find the area of the figure, in square inches."
   answer="4"
+  answerForm="decimal"
   hint="Count how many 1-square-inch boxes make up the figure."
 >}}
 
@@ -170,8 +190,11 @@ $20$ meters. Find (a) the perimeter, and (b) the area.
 (a) Let $P =$ the perimeter. Substituting into $P = 2L + 2W$:
 
 $$
-P = 2(32) + 2(20) \qquad\Rightarrow\qquad P = 64 + 40
-\qquad\Rightarrow\qquad P = 104
+\begin{array}{rcl}
+P &=& 2(32) + 2(20) \\[4pt]
+P &=& 64 + 40 \\[4pt]
+P &=& 104
+\end{array}
 $$
 
 Checking: $20 + 32 + 20 + 32 = 104$. The perimeter of the rectangle is
@@ -185,15 +208,17 @@ Checking: $32 \cdot 20 = 640$. The area of the rectangle is $640$ square
 meters.
 
 {{< fillin
-  question="The length of a rectangle is 120 yards and the width is 50 yards. Find the perimeter."
+  question="The length of a rectangle is 120 yards and the width is 50 yards. Find the perimeter, in yards."
   answer="340"
-  hint="Substitute into $P = 2L + 2W$: $P = 2(120) + 2(50)$."
+  answerForm="decimal"
+  hint="Substitute the length and width into $P = 2L + 2W$ and simplify."
 >}}
 
 {{< fillin
-  question="The length of a rectangle is 120 yards and the width is 50 yards. Find the area."
+  question="The length of a rectangle is 120 yards and the width is 50 yards. Find the area, in square yards."
   answer="6000"
-  hint="Substitute into $A = L \cdot W$: $A = 120 \cdot 50$."
+  answerForm="decimal"
+  hint="Multiply the length by the width: $A = L \cdot W$."
 >}}
 
 In the next example, the width is defined in terms of the length, so we
@@ -205,11 +230,14 @@ The perimeter is $52$ inches. Find the length and width.
 Let $L =$ length, so the width is $L - 2$. Substituting into
 $P = 2L + 2W$ with $P = 52$:
 
-$$52 = 2L + 2(L - 2) \qquad\Rightarrow\qquad 52 = 2L + 2L - 4$$
-
 $$
-52 = 4L - 4 \qquad\Rightarrow\qquad 56 = 4L \qquad\Rightarrow\qquad
-14 = L
+\begin{array}{rcl}
+52 &=& 2L + 2(L - 2) \\[4pt]
+52 &=& 2L + 2L - 4 \\[4pt]
+52 &=& 4L - 4 \\[4pt]
+56 &=& 4L \\[4pt]
+14 &=& L
+\end{array}
 $$
 
 The length is $14$ inches. The width is $L - 2 = 12$ inches. Checking:
@@ -217,15 +245,17 @@ $14 + 12 + 14 + 12 = 52$. The length is $14$ inches and the width is $12$
 inches.
 
 {{< fillin
-  question="The width of a rectangle is seven meters less than the length. The perimeter is 58 meters. Find the length."
+  question="The width of a rectangle is seven meters less than the length. The perimeter is 58 meters. Find the length, in meters."
   answer="18"
-  hint="Let $L =$ length, so $L - 7$ is the width. Translate as $58 = 2L + 2(L - 7)$, then solve for $L$."
+  answerForm="decimal"
+  hint="Let $L$ be the length and write the width in terms of $L$. Substitute both into $P = 2L + 2W$ and solve for $L$."
 >}}
 
 {{< fillin
-  question="The length of a rectangle is eight feet more than the width. The perimeter is 60 feet. Find the width."
+  question="The length of a rectangle is eight feet more than the width. The perimeter is 60 feet. Find the width, in feet."
   answer="11"
-  hint="Let $W =$ width, so $W + 8$ is the length. Translate as $60 = 2(W + 8) + 2W$, then solve for $W$."
+  answerForm="decimal"
+  hint="Let $W$ be the width and write the length in terms of $W$. Substitute both into $P = 2L + 2W$ and solve for $W$."
 >}}
 
 **Example.** The length of a rectangle is four centimeters more than
@@ -235,26 +265,31 @@ width.
 Let $w =$ width, so $2w + 4 =$ length. Substituting into $P = 2L + 2W$
 with $P = 32$:
 
-$$32 = 2(2w + 4) + 2w \qquad\Rightarrow\qquad 32 = 4w + 8 + 2w$$
-
 $$
-32 = 6w + 8 \qquad\Rightarrow\qquad 24 = 6w \qquad\Rightarrow\qquad
-4 = w
+\begin{array}{rcl}
+32 &=& 2(2w + 4) + 2w \\[4pt]
+32 &=& 4w + 8 + 2w \\[4pt]
+32 &=& 6w + 8 \\[4pt]
+24 &=& 6w \\[4pt]
+4 &=& w
+\end{array}
 $$
 
 The width is $4$ cm. The length is $2w + 4 = 2(4) + 4 = 12$ cm. Checking:
 $P = 2(12) + 2(4) = 32$. The length is $12$ cm and the width is $4$ cm.
 
 {{< fillin
-  question="The length of a rectangle is eight more than twice the width. The perimeter is 64 feet. Find the width."
+  question="The length of a rectangle is eight more than twice the width. The perimeter is 64 feet. Find the width, in feet."
   answer="8"
-  hint="Let $w =$ width, so $2w + 8$ is the length. Translate as $64 = 2(2w + 8) + 2w$, then solve for $w$."
+  answerForm="decimal"
+  hint="Let $w$ be the width and write the length in terms of $w$. Substitute both into $P = 2L + 2W$ and solve for $w$."
 >}}
 
 {{< fillin
-  question="The width of a rectangle is six less than twice the length. The perimeter is 18 centimeters. Find the length."
+  question="The width of a rectangle is six less than twice the length. The perimeter is 18 centimeters. Find the length, in centimeters."
   answer="5"
-  hint="Let $L =$ length, so $2L - 6$ is the width. Translate as $18 = 2L + 2(2L - 6)$, then solve for $L$."
+  answerForm="decimal"
+  hint="Let $L$ be the length and write the width in terms of $L$. Substitute both into $P = 2L + 2W$ and solve for $L$."
 >}}
 
 **Example.** The area of a rectangular room is $168$ square feet. The
@@ -265,15 +300,17 @@ sides by $14$ gives $W = 12$. Checking: $14 \cdot 12 = 168$. The width of
 the room is $12$ feet.
 
 {{< fillin
-  question="The area of a rectangle is 598 square feet. The length is 23 feet. What is the width?"
+  question="The area of a rectangle is 598 square feet. The length is 23 feet. What is the width, in feet?"
   answer="26"
-  hint="Substitute into $A = LW$: $598 = 23W$, then divide both sides by 23."
+  answerForm="decimal"
+  hint="Substitute the area and the length into $A = LW$, then divide both sides by the length."
 >}}
 
 {{< fillin
-  question="The width of a rectangle is 21 meters. The area is 609 square meters. What is the length?"
+  question="The width of a rectangle is 21 meters. The area is 609 square meters. What is the length, in meters?"
   answer="29"
-  hint="Substitute into $A = LW$: $609 = 21L$, then divide both sides by 21."
+  answerForm="decimal"
+  hint="Substitute the area and the width into $A = LW$, then divide both sides by the width."
 >}}
 
 **Example.** The perimeter of a rectangular swimming pool is $150$ feet.
@@ -282,11 +319,14 @@ The length is $15$ feet more than the width. Find the length and width.
 Let $w =$ width, so $w + 15 =$ length. Substituting into $P = 2L + 2W$
 with $P = 150$:
 
-$$150 = 2(w + 15) + 2w \qquad\Rightarrow\qquad 150 = 2w + 30 + 2w$$
-
 $$
-150 = 4w + 30 \qquad\Rightarrow\qquad 120 = 4w \qquad\Rightarrow\qquad
-30 = w
+\begin{array}{rcl}
+150 &=& 2(w + 15) + 2w \\[4pt]
+150 &=& 2w + 30 + 2w \\[4pt]
+150 &=& 4w + 30 \\[4pt]
+120 &=& 4w \\[4pt]
+30 &=& w
+\end{array}
 $$
 
 The width of the pool is $30$ feet, and the length is $w + 15 = 45$ feet.
@@ -294,15 +334,17 @@ Checking: $150 = 2(45) + 2(30)$. The length of the pool is $45$ feet and
 the width is $30$ feet.
 
 {{< fillin
-  question="The perimeter of a rectangular swimming pool is 200 feet. The length is 40 feet more than the width. Find the width."
+  question="The perimeter of a rectangular swimming pool is 200 feet. The length is 40 feet more than the width. Find the width, in feet."
   answer="30"
-  hint="Let $w =$ width, so $w + 40$ is the length. Translate as $200 = 2(w + 40) + 2w$, then solve for $w$."
+  answerForm="decimal"
+  hint="Let $w$ be the width and write the length in terms of $w$. Substitute both into $P = 2L + 2W$ and solve for $w$."
 >}}
 
 {{< fillin
-  question="The length of a rectangular garden is 30 yards more than the width. The perimeter is 300 yards. Find the width."
+  question="The length of a rectangular garden is 30 yards more than the width. The perimeter is 300 yards. Find the width, in yards."
   answer="60"
-  hint="Let $w =$ width, so $w + 30$ is the length. Translate as $300 = 2(w + 30) + 2w$, then solve for $w$."
+  answerForm="decimal"
+  hint="Let $w$ be the width and write the length in terms of $w$. Substitute both into $P = 2L + 2W$ and solve for $w$."
 >}}
 
 ## Use the properties of triangles
@@ -342,23 +384,27 @@ whose height is $8$ inches.
 Let $A =$ the area. Substituting into $A = \tfrac{1}{2}bh$:
 
 $$
-A = \tfrac{1}{2} \cdot 11 \cdot 8 \qquad\Rightarrow\qquad A = 44
-\text{ square inches}
+\begin{array}{rcl}
+A &=& \tfrac{1}{2} \cdot 11 \cdot 8 \\[4pt]
+A &=& 44 \text{ square inches}
+\end{array}
 $$
 
 Checking: $44 \overset{?}{=} \tfrac{1}{2}(11)(8)$, and $44 = 44$. The area
 is $44$ square inches.
 
 {{< fillin
-  question="Find the area of a triangle with base 13 inches and height 2 inches."
+  question="Find the area of a triangle with base 13 inches and height 2 inches. Give the area in square inches."
   answer="13"
-  hint="Substitute into $A = \tfrac{1}{2}bh$: $A = \tfrac{1}{2}(13)(2)$."
+  answerForm="decimal"
+  hint="Substitute the base and the height into $A = \tfrac{1}{2}bh$ and multiply."
 >}}
 
 {{< fillin
-  question="Find the area of a triangle with base 14 inches and height 7 inches."
+  question="Find the area of a triangle with base 14 inches and height 7 inches. Give the area in square inches."
   answer="49"
-  hint="Substitute into $A = \tfrac{1}{2}bh$: $A = \tfrac{1}{2}(14)(7)$."
+  answerForm="decimal"
+  hint="Substitute the base and the height into $A = \tfrac{1}{2}bh$ and multiply."
 >}}
 
 **Example.** The perimeter of a triangular garden is $24$ feet. The
@@ -369,22 +415,27 @@ Let $c =$ the third side. Substituting into $P = a + b + c$ with $P = 24$,
 $a = 4$, $b = 9$:
 
 $$
-24 = 4 + 9 + c \qquad\Rightarrow\qquad 24 = 13 + c
-\qquad\Rightarrow\qquad 11 = c
+\begin{array}{rcl}
+24 &=& 4 + 9 + c \\[4pt]
+24 &=& 13 + c \\[4pt]
+11 &=& c
+\end{array}
 $$
 
 Checking: $4 + 9 + 11 = 24$. The third side is $11$ feet long.
 
 {{< fillin
-  question="The perimeter of a triangular garden is 48 feet. The lengths of two sides are 18 feet and 22 feet. How long is the third side?"
+  question="The perimeter of a triangular garden is 48 feet. The lengths of two sides are 18 feet and 22 feet. How long is the third side, in feet?"
   answer="8"
-  hint="Substitute into $P = a + b + c$: $48 = 18 + 22 + c$, then solve for $c$."
+  answerForm="decimal"
+  hint="Substitute the perimeter and the two known sides into $P = a + b + c$, then solve for $c$."
 >}}
 
 {{< fillin
-  question="The lengths of two sides of a triangular window are 7 feet and 5 feet. The perimeter is 18 feet. How long is the third side?"
+  question="The lengths of two sides of a triangular window are 7 feet and 5 feet. The perimeter is 18 feet. How long is the third side, in feet?"
   answer="6"
-  hint="Substitute into $P = a + b + c$: $18 = 7 + 5 + c$, then solve for $c$."
+  answerForm="decimal"
+  hint="Substitute the perimeter and the two known sides into $P = a + b + c$, then solve for $c$."
 >}}
 
 **Example.** The area of a triangular church window is $90$ square
@@ -395,23 +446,28 @@ Let $h =$ the height. Substituting into $A = \tfrac{1}{2}bh$ with
 $A = 90$, $b = 15$:
 
 $$
-90 = \tfrac{1}{2} \cdot 15 \cdot h \qquad\Rightarrow\qquad
-90 = \tfrac{15}{2}h \qquad\Rightarrow\qquad 12 = h
+\begin{array}{rcl}
+90 &=& \tfrac{1}{2} \cdot 15 \cdot h \\[4pt]
+90 &=& \tfrac{15}{2}h \\[4pt]
+12 &=& h
+\end{array}
 $$
 
 Checking: $90 \overset{?}{=} \tfrac{1}{2} \cdot 15 \cdot 12$, and
 $90 = 90$. The height of the triangle is $12$ meters.
 
 {{< fillin
-  question="The area of a triangular painting is 126 square inches. The base is 18 inches. What is the height?"
+  question="The area of a triangular painting is 126 square inches. The base is 18 inches. What is the height, in inches?"
   answer="14"
-  hint="Substitute into $A = \tfrac{1}{2}bh$: $126 = \tfrac{1}{2}(18)h$, then solve for $h$."
+  answerForm="decimal"
+  hint="Substitute the area and the base into $A = \tfrac{1}{2}bh$, simplify the right side, then solve for $h$."
 >}}
 
 {{< fillin
-  question="A triangular tent door has an area of 15 square feet. The height is 5 feet. What is the base?"
+  question="A triangular tent door has an area of 15 square feet. The height is 5 feet. What is the base, in feet?"
   answer="6"
-  hint="Substitute into $A = \tfrac{1}{2}bh$: $15 = \tfrac{1}{2}b(5)$, then solve for $b$."
+  answerForm="decimal"
+  hint="Substitute the area and the height into $A = \tfrac{1}{2}bh$, simplify the right side, then solve for $b$."
 >}}
 
 ### Isosceles and equilateral triangles
@@ -434,22 +490,27 @@ Let $s =$ length of each side. Substituting into $P = a + b + c$, with
 all three sides equal to $s$:
 
 $$
-93 = s + s + s \qquad\Rightarrow\qquad 93 = 3s \qquad\Rightarrow\qquad
-31 = s
+\begin{array}{rcl}
+93 &=& s + s + s \\[4pt]
+93 &=& 3s \\[4pt]
+31 &=& s
+\end{array}
 $$
 
 Checking: $31 + 31 + 31 = 93$. Each side is $31$ inches.
 
 {{< fillin
-  question="Find the length of each side of an equilateral triangle with perimeter 39 inches."
+  question="Find the length of each side of an equilateral triangle with perimeter 39 inches. Give the length in inches."
   answer="13"
-  hint="Substitute into $P = 3s$: $39 = 3s$, then solve for $s$."
+  answerForm="decimal"
+  hint="All three sides equal $s$, so the perimeter is $3s$. Set it equal to the perimeter and solve for $s$."
 >}}
 
 {{< fillin
-  question="Find the length of each side of an equilateral triangle with perimeter 51 centimeters."
+  question="Find the length of each side of an equilateral triangle with perimeter 51 centimeters. Give the length in centimeters."
   answer="17"
-  hint="Substitute into $P = 3s$: $51 = 3s$, then solve for $s$."
+  answerForm="decimal"
+  hint="All three sides equal $s$, so the perimeter is $3s$. Set it equal to the perimeter and solve for $s$."
 >}}
 
 **Example.** Arianna has $156$ inches of beading to use as trim around a
@@ -459,23 +520,30 @@ How long can she make the two equal sides?
 Let $s =$ the length of each equal side. Substituting into
 $P = a + b + c$ with $P = 156$ and base $60$:
 
-$$156 = s + 60 + s \qquad\Rightarrow\qquad 156 = 2s + 60$$
-
-$$96 = 2s \qquad\Rightarrow\qquad 48 = s$$
+$$
+\begin{array}{rcl}
+156 &=& s + 60 + s \\[4pt]
+156 &=& 2s + 60 \\[4pt]
+96 &=& 2s \\[4pt]
+48 &=& s
+\end{array}
+$$
 
 Checking: $48 + 60 + 48 = 156$. Arianna can make each of the two equal
 sides $48$ inches long.
 
 {{< fillin
-  question="A backyard deck is in the shape of an isosceles triangle with a base of 20 feet. The perimeter of the deck is 48 feet. How long is each of the equal sides of the deck?"
+  question="A backyard deck is in the shape of an isosceles triangle with a base of 20 feet. The perimeter of the deck is 48 feet. How long is each of the equal sides of the deck, in feet?"
   answer="14"
-  hint="Let $s =$ length of each equal side. Translate as $48 = s + 20 + s$, then solve for $s$."
+  answerForm="decimal"
+  hint="Let $s$ be each equal side. The perimeter is the two equal sides plus the base; set that sum equal to the perimeter and solve for $s$."
 >}}
 
 {{< fillin
-  question="A boat's sail is an isosceles triangle with base of 8 meters. The perimeter is 22 meters. How long is each of the equal sides of the sail?"
+  question="A boat's sail is an isosceles triangle with base of 8 meters. The perimeter is 22 meters. How long is each of the equal sides of the sail, in meters?"
   answer="7"
-  hint="Let $s =$ length of each equal side. Translate as $22 = s + 8 + s$, then solve for $s$."
+  answerForm="decimal"
+  hint="Let $s$ be each equal side. The perimeter is the two equal sides plus the base; set that sum equal to the perimeter and solve for $s$."
 >}}
 
 ## Use the properties of trapezoids
@@ -521,9 +589,12 @@ Let $A =$ the area. Substituting into $A = \tfrac{1}{2}h(b + B)$ with
 $h = 6$, $b = 11$, $B = 14$:
 
 $$
-A = \tfrac{1}{2} \cdot 6 \cdot (11 + 14) \qquad\Rightarrow\qquad
-A = \tfrac{1}{2} \cdot 6(25) \qquad\Rightarrow\qquad A = 3(25)
-\qquad\Rightarrow\qquad A = 75 \text{ square inches}
+\begin{array}{rcl}
+A &=& \tfrac{1}{2} \cdot 6 \cdot (11 + 14) \\[4pt]
+A &=& \tfrac{1}{2} \cdot 6(25) \\[4pt]
+A &=& 3(25) \\[4pt]
+A &=& 75 \text{ square inches}
+\end{array}
 $$
 
 Checking: this should be reasonable — a rectangle with the same big base
@@ -533,24 +604,29 @@ so the trapezoid's area should be between $66$ and $84$. Indeed
 $66 < 75 < 84$. The area of the trapezoid is $75$ square inches.
 
 {{< fillin
-  question="The height of a trapezoid is 14 yards and the bases are 7 and 16 yards. What is the area?"
+  question="The height of a trapezoid is 14 yards and the bases are 7 and 16 yards. What is the area, in square yards?"
   answer="161"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(14)(7 + 16)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 {{< fillin
-  question="The height of a trapezoid is 18 centimeters and the bases are 17 and 8 centimeters. What is the area?"
+  question="The height of a trapezoid is 18 centimeters and the bases are 17 and 8 centimeters. What is the area, in square centimeters?"
   answer="225"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(18)(17 + 8)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 **Example.** Find the area of a trapezoid whose height is $5$ feet and
 whose bases are $10.3$ and $13.7$ feet.
 
 $$
-A = \tfrac{1}{2} \cdot 5 \cdot (10.3 + 13.7) \qquad\Rightarrow\qquad
-A = \tfrac{1}{2} \cdot 5(24) \qquad\Rightarrow\qquad A = 12 \cdot 5
-\qquad\Rightarrow\qquad A = 60 \text{ square feet}
+\begin{array}{rcl}
+A &=& \tfrac{1}{2} \cdot 5 \cdot (10.3 + 13.7) \\[4pt]
+A &=& \tfrac{1}{2} \cdot 5(24) \\[4pt]
+A &=& 12 \cdot 5 \\[4pt]
+A &=& 60 \text{ square feet}
+\end{array}
 $$
 
 Checking: this is reasonable since it's less than a rectangle with base
@@ -559,15 +635,17 @@ $10.3$ and height $5$ ($51.5$ sq ft). The area of the trapezoid is $60$
 square feet.
 
 {{< fillin
-  question="The height of a trapezoid is 7 centimeters and the bases are 4.6 and 7.4 centimeters. What is the area?"
+  question="The height of a trapezoid is 7 centimeters and the bases are 4.6 and 7.4 centimeters. What is the area, in square centimeters?"
   answer="42"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(7)(4.6 + 7.4)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 {{< fillin
-  question="The height of a trapezoid is 9 meters and the bases are 6.2 and 7.8 meters. What is the area?"
+  question="The height of a trapezoid is 9 meters and the bases are 6.2 and 7.8 meters. What is the area, in square meters?"
   answer="63"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(9)(6.2 + 7.8)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 **Example.** Vinny has a garden shaped like a trapezoid, with a height of
@@ -575,9 +653,11 @@ $3.4$ yards and bases of $8.2$ and $5.6$ yards. How many square yards will
 be available to plant?
 
 $$
-A = \tfrac{1}{2} \cdot 3.4 \cdot (5.6 + 8.2) \qquad\Rightarrow\qquad
-A = \tfrac{1}{2}(3.4)(13.8) \qquad\Rightarrow\qquad
-A = 23.46 \text{ square yards}
+\begin{array}{rcl}
+A &=& \tfrac{1}{2} \cdot 3.4 \cdot (5.6 + 8.2) \\[4pt]
+A &=& \tfrac{1}{2}(3.4)(13.8) \\[4pt]
+A &=& 23.46 \text{ square yards}
+\end{array}
 $$
 
 Checking: this is reasonable — less than a rectangle with base $8.2$ and
@@ -588,13 +668,15 @@ he can plant.
 {{< fillin
   question="Lin wants to sod his lawn, which is shaped like a trapezoid. The bases are 10.8 yards and 6.7 yards, and the height is 4.6 yards. How many square yards of sod does he need?"
   answer="40.25"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(4.6)(6.7 + 10.8)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 {{< fillin
   question="Kira wants to cover her patio with concrete pavers. The patio is shaped like a trapezoid whose bases are 18 feet and 14 feet and whose height is 15 feet. How many square feet of pavers will she need?"
   answer="240"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(15)(14 + 18)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 ## Key terms
@@ -619,7 +701,7 @@ parallel sides (the bases).
 {{< multiplechoice
   question="Would you measure the amount of water in a fish tank using linear, square, or cubic units?"
   answer="cubic"
-  hint="Water fills the inside of the tank. Decide first whether you are measuring a length, a surface, or the space filled."
+  hint="Decide whether you are measuring a length, a surface, or the space something fills."
 >}}
 cubic
 square
@@ -629,7 +711,7 @@ linear
 {{< multiplechoice
   question="Would you measure the living area of an apartment using linear, square, or cubic units?"
   answer="square"
-  hint="Living area is the amount of floor surface covered, and surface is measured in square units."
+  hint="Decide whether you are measuring a length, a surface, or the space something fills."
 >}}
 linear
 cubic
@@ -639,7 +721,7 @@ square
 {{< multiplechoice
   question="Would you measure the height of a doorway using linear, square, or cubic units?"
   answer="linear"
-  hint="A height is a single distance you could measure with a tape measure."
+  hint="Decide whether you are measuring a length, a surface, or the space something fills."
 >}}
 square
 cubic
@@ -652,42 +734,48 @@ linear
   question="The length of a rectangle is 85 feet and the width is 45 feet. Find the perimeter, in feet."
   answer="260"
   answerDisplay="260 feet"
-  hint="Substitute into $P = 2L + 2W$: $P = 2(85) + 2(45)$."
+  answerForm="decimal"
+  hint="Substitute the length and width into $P = 2L + 2W$ and simplify."
 >}}
 
 {{< fillin
   question="The length of a rectangle is 85 feet and the width is 45 feet. Find the area, in square feet."
   answer="3825"
   answerDisplay="3,825 square feet"
-  hint="Substitute into $A = L \cdot W$: $A = 85 \cdot 45$."
+  answerForm="decimal"
+  hint="Multiply the length by the width: $A = L \cdot W$."
 >}}
 
 {{< fillin
   question="Find the length of a rectangle with perimeter 124 inches and width 38 inches. Give the length in inches."
   answer="24"
   answerDisplay="24 inches"
-  hint="Substitute into $P = 2L + 2W$: $124 = 2L + 2(38)$, then solve for $L$."
+  answerForm="decimal"
+  hint="Substitute the perimeter and the width into $P = 2L + 2W$, then solve for $L$."
 >}}
 
 {{< fillin
   question="The area of a rectangle is 414 square meters. The length is 18 meters. What is the width, in meters?"
   answer="23"
   answerDisplay="23 meters"
-  hint="Substitute into $A = LW$: $414 = 18W$, then divide both sides by 18."
+  answerForm="decimal"
+  hint="Substitute the area and the length into $A = LW$, then divide both sides by the length."
 >}}
 
 {{< fillin
   question="The length of a rectangle is 9 inches more than the width. The perimeter is 46 inches. Find the width, in inches."
   answer="7"
   answerDisplay="7 inches"
-  hint="Let $W =$ width, so $W + 9$ is the length. Translate as $46 = 2(W + 9) + 2W$, then solve for $W$."
+  answerForm="decimal"
+  hint="Let $W$ be the width and write the length in terms of $W$. Substitute both into $P = 2L + 2W$ and solve for $W$."
 >}}
 
 {{< fillin
   question="The length of a rectangle is 9 inches more than the width. The perimeter is 46 inches. Find the length, in inches."
   answer="16"
   answerDisplay="16 inches"
-  hint="The width works out to $7$ inches, and the length is $9$ inches more than the width."
+  answerForm="decimal"
+  hint="Solve for the width first, then use the fact that the length is 9 inches more than the width."
 >}}
 
 ### Use properties of triangles
@@ -696,35 +784,40 @@ linear
   question="Find the area of a triangle with base 12 inches and height 5 inches. Give the area in square inches."
   answer="30"
   answerDisplay="30 square inches"
-  hint="Substitute into $A = \tfrac{1}{2}bh$: $A = \tfrac{1}{2}(12)(5)$."
+  answerForm="decimal"
+  hint="Substitute the base and the height into $A = \tfrac{1}{2}bh$ and multiply."
 >}}
 
 {{< fillin
   question="If a triangle has sides of 6 feet and 9 feet and the perimeter is 23 feet, how long is the third side, in feet?"
   answer="8"
   answerDisplay="8 feet"
-  hint="Substitute into $P = a + b + c$: $23 = 6 + 9 + c$, then solve for $c$."
+  answerForm="decimal"
+  hint="Substitute the perimeter and the two known sides into $P = a + b + c$, then solve for $c$."
 >}}
 
 {{< fillin
   question="What is the base of a triangle with an area of 207 square inches and height of 18 inches? Give the base in inches."
   answer="23"
   answerDisplay="23 inches"
-  hint="Substitute into $A = \tfrac{1}{2}bh$: $207 = \tfrac{1}{2}b(18)$, so $207 = 9b$."
+  answerForm="decimal"
+  hint="Substitute the area and the height into $A = \tfrac{1}{2}bh$, simplify the right side, then solve for $b$."
 >}}
 
 {{< fillin
   question="An isosceles triangle has a base of 20 centimeters. If the perimeter is 76 centimeters, find the length of each of the other sides, in centimeters."
   answer="28"
   answerDisplay="28 centimeters"
-  hint="The two other sides are equal, so let $s$ be each of them and translate as $76 = s + 20 + s$."
+  answerForm="decimal"
+  hint="Let $s$ be each equal side. The perimeter is the two equal sides plus the base; set that sum equal to the perimeter and solve for $s$."
 >}}
 
 {{< fillin
-  question="Find the length of each side of an equilateral triangle with a perimeter of 51 yards. Give the length in yards."
-  answer="17"
-  answerDisplay="17 yards"
-  hint="All three sides are equal, so $51 = 3s$."
+  question="The perimeter of an equilateral triangle is 18 meters. Find the length of each side, in meters."
+  answer="6"
+  answerDisplay="6 meters"
+  answerForm="decimal"
+  hint="All three sides equal $s$, so the perimeter is $3s$. Set it equal to the perimeter and solve for $s$."
 >}}
 
 ### Use properties of trapezoids
@@ -733,30 +826,34 @@ linear
   question="The height of a trapezoid is 12 feet and the bases are 9 and 15 feet. What is the area, in square feet?"
   answer="144"
   answerDisplay="144 square feet"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(12)(9 + 15)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 {{< fillin
   question="The height of a trapezoid is 15 centimeters and the bases are 12.5 and 18.3 centimeters. What is the area, in square centimeters?"
   answer="231"
   answerDisplay="231 square centimeters"
-  hint="Add the bases first, then multiply by half the height: $A = \tfrac{1}{2}(15)(12.5 + 18.3)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 {{< fillin
   question="Find the area of a trapezoid with a height of 4.2 meters and bases of 8.1 and 5.5 meters. Give the area in square meters."
   answer="28.56"
   answerDisplay="28.56 square meters"
-  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(4.2)(5.5 + 8.1)$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 {{< fillin
   question="Laurel is making a banner shaped like a trapezoid. The height of the banner is 3 feet and the bases are 4 and 5 feet. What is the area of the banner, in square feet?"
   answer="13.5"
   answerDisplay="13.5 square feet"
-  hint="The banner's area is $A = \tfrac{1}{2}h(b + B)$ with $h = 3$, $b = 4$, and $B = 5$."
+  answerForm="decimal"
+  hint="Substitute the height and the two bases into $A = \tfrac{1}{2}h(b + B)$: add the bases first, then multiply by half the height."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.4: Use Properties of Rectangles, Triangles, and Trapezoids](https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the trapezoid figure as an accessible inline graphic and described other figures (tape measures, cubes, tile grids) in prose instead of hotlinking images; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating multi-answer prompts as one question per requested measurement.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.4: Use Properties of Rectangles, Triangles, and Trapezoids](https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the trapezoid figure as an accessible inline graphic and described other figures (tape measures, cubes, tile grids) in prose instead of hotlinking images; omitted the Be Prepared quiz, the worked example that finds a rectangle's length from its perimeter and width, the Manipulative Mathematics and Links to Literacy callouts, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating multi-answer prompts as one question per requested measurement.</small>

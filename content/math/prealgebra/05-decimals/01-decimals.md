@@ -47,7 +47,7 @@ numbers.
 | $1$ | One |
 | $10 = 10$ | Ten |
 | $10 \cdot 10 = 100$ | One hundred |
-| $10 \cdot 10 \cdot 10 = 1000$ | One thousand |
+| $10 \cdot 10 \cdot 10 = 1{,}000$ | One thousand |
 | $10 \cdot 10 \cdot 10 \cdot 10 = 10{,}000$ | Ten thousand |
 
 How are decimals related to fractions? The table below shows the relation.
@@ -134,7 +134,8 @@ graded automatically here, try the reverse: what decimal number is named
 {{< fillin
   question="What decimal is 'negative two and fifty-three thousandths'?"
   answer="-2.053"
-  hint="The whole number before 'and' goes to the left of the decimal point; the three-digit number after it fills the next three places, since 'thousandths' means three decimal places."
+  answerForm="decimal"
+  hint="The words before 'and' give the whole-number part, sign included. 'Thousandths' means three decimal places, so write the number after 'and' with its last digit in the third place and fill any empty place with a zero."
 >}}
 
 ## Write decimals
@@ -274,23 +275,23 @@ $$3.7 = 3\frac{7}{10}$$
 
 (c) There is a $0$ to the left of the decimal point, so write a negative
 sign before the fraction. The final digit, $6$, is in the thousandths
-place. Write $286$ in the numerator and $1000$ in the denominator, then
+place. Write $286$ in the numerator and $1{,}000$ in the denominator, then
 remove a common factor of $2$ to simplify:
 
-$$-0.286 = -\frac{286}{1000} = -\frac{143}{500}$$
+$$-0.286 = -\frac{286}{1{,}000} = -\frac{143}{500}$$
 
 {{< fillin
   question="Write 6.07 as a fraction or mixed number. Simplify if possible."
   answer="6\frac{7}{100}"
   answerForm="fraction-or-mixed-number lowest-terms"
-  hint="The final digit, $7$, is in the hundredths place, so the denominator is $100$."
+  hint="Keep the whole number in front of the fraction. The place value of the final digit gives the denominator."
 >}}
 
 {{< fillin
   question="Write -0.024 as a fraction or mixed number. Simplify if possible."
   answer="-\frac{3}{125}"
   answerForm="fraction-or-mixed-number lowest-terms"
-  hint="The final digit is in the thousandths place, so start with a denominator of $1000$, then simplify the fraction."
+  hint="Use the place value of the final digit as the denominator, keep the negative sign, then divide out the common factors."
 >}}
 
 ## Locate decimals on the number line
@@ -307,7 +308,7 @@ marks $0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0$. We write $0$ as
 $0.0$ and $1$ as $1.0$, so that the numbers are consistently in tenths.
 Finally, mark $0.4$ on the number line.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked in tenths, with 0.4 highlighted." style="max-width: 560px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked and labeled in tenths, with a point plotted at 0.4." style="max-width: 560px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
   <polygon points="600,40 590,34 590,46" fill="currentColor" />
   <polygon points="20,40 30,34 30,46" fill="currentColor" />
@@ -329,7 +330,7 @@ Finally, mark $0.4$ on the number line.
   answer="\frac{6}{10}"
   answerForm="denominator:10"
   answerDisplay="$\tfrac{6}{10}$"
-  hint="Divide the interval from 0 to 1 into ten equal parts; 0.6 is six of those parts from 0."
+  hint="Divide the interval from $0$ to $1$ into ten equal parts; the tenths digit counts how many parts the point lies from $0$."
 >}}
 
 **Example.** Locate $-0.74$ on a number line.
@@ -339,45 +340,46 @@ between $0$ and $-1$. On a number line, mark off and label the multiples of
 $-0.10$ in the interval between $0$ and $-1$ ($-0.10, -0.20$, etc.) and
 mark $-0.74$ between $-0.70$ and $-0.80$, a little closer to $-0.70$.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -1.00 to 0.00 marked in tenths, with -0.74 highlighted between -0.70 and -0.80." style="max-width: 560px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −1.00 to 0.00 marked and labeled in tenths, with a point labeled −0.74 plotted between −0.80 and −0.70, a little closer to −0.70." style="max-width: 560px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
   <polygon points="600,40 590,34 590,46" fill="currentColor" />
   <polygon points="20,40 30,34 30,46" fill="currentColor" />
   <g>
         <line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">-1.00</text>
+        <text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">−1.00</text>
       </g><g>
         <line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.90</text>
+        <text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.90</text>
       </g><g>
         <line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.80</text>
+        <text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.80</text>
       </g><g>
         <line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.70</text>
+        <text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.70</text>
       </g><g>
         <line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.60</text>
+        <text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.60</text>
       </g><g>
         <line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.50</text>
+        <text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.50</text>
       </g><g>
         <line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.40</text>
+        <text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.40</text>
       </g><g>
         <line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.30</text>
+        <text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.30</text>
       </g><g>
         <line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.20</text>
+        <text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.20</text>
       </g><g>
         <line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.10</text>
+        <text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.10</text>
       </g><g>
         <line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" />
         <text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.00</text>
       </g>
   <circle cx="170.4" cy="40" r="6" fill="currentColor" />
+  <text x="170.4" y="22" text-anchor="middle" font-size="15" fill="currentColor">−0.74</text>
 </svg>
 
 {{< fillin
@@ -385,7 +387,7 @@ mark $-0.74$ between $-0.70$ and $-0.80$, a little closer to $-0.70$.
   answer="-\frac{25}{100}"
   answerForm="denominator:100"
   answerDisplay="$-\tfrac{25}{100}$"
-  hint="It's between 0 and -1, a quarter of the way from 0 toward -1."
+  hint="The point lies between $0$ and $-1$. Its last digit is in the hundredths place, so the digits after the decimal point count hundredths from $0$; keep the negative sign."
 >}}
 
 ## Order decimals
@@ -398,22 +400,44 @@ $$0.40 > 0.04$$
 In previous chapters, we used the number line to order numbers: $a < b$
 means "$a$ is less than $b$" when $a$ is to the left of $b$ on the number
 line, and $a > b$ means "$a$ is greater than $b$" when $a$ is to the right
-of $b$ on the number line. Since $0.40$ is to the right of $0.04$ on the
-number line, $0.40 > 0.04$.
+of $b$ on the number line. Where are $0.04$ and $0.40$ located on the
+number line?
+
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked and labeled in tenths, with a point labeled 0.04 plotted between 0.0 and 0.1, close to 0.0, and a second point plotted at 0.4." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.0</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.1</text></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.2</text></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.3</text></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.4</text></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.6</text></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.7</text></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.8</text></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.9</text></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">1.0</text></g>
+  <circle cx="51.6" cy="40" r="6" fill="currentColor" />
+  <text x="51.6" y="22" text-anchor="middle" font-size="15" fill="currentColor">0.04</text>
+  <circle cx="246" cy="40" r="6" fill="currentColor" />
+</svg>
+
+We see that $0.40$ is to the right of $0.04$, so we know $0.40 > 0.04$.
 
 How does $0.31$ compare to $0.308$? This doesn't translate into money to
 make the comparison easy. But if we convert $0.31$ and $0.308$ to
 fractions, we can tell which is larger. We need a common denominator to
 compare them:
 
-$$0.31 = \frac{31}{100} = \frac{310}{1000} \qquad\qquad 0.308 = \frac{308}{1000}$$
+$$0.31 = \frac{31}{100} = \frac{310}{1{,}000} \qquad\qquad 0.308 = \frac{308}{1{,}000}$$
 
-Because $310 > 308$, we know that $\tfrac{310}{1000} > \tfrac{308}{1000}$.
+Because $310 > 308$, we know that $\tfrac{310}{1{,}000} > \tfrac{308}{1{,}000}$.
 Therefore, $0.31 > 0.308$.
 
 Notice what we did in converting $0.31$ to a fraction — we started with the
 fraction $\tfrac{31}{100}$ and ended with the equivalent fraction
-$\tfrac{310}{1000}$. Converting $\tfrac{310}{1000}$ back to a decimal gives
+$\tfrac{310}{1{,}000}$. Converting $\tfrac{310}{1{,}000}$ back to a decimal gives
 $0.310$. So $0.31$ is equivalent to $0.310$. Writing zeros at the end of a
 decimal does not change its value.
 
@@ -448,15 +472,15 @@ So $0.64 > 0.60$, which means $0.64 > 0.6$.
 $830 > 803$. So $0.830 > 0.803$, which means $0.83 > 0.803$.
 
 {{< fillin
-  question="Order using $<$ or $>$: $0.42$ __ $0.4$"
+  question="Order using $<$ or $>$. Enter the full inequality: $0.42$ __ $0.4$"
   answer="0.42 > 0.4"
-  hint="Write $0.4$ as $0.40$ so both numbers have two decimal places, then compare $42$ and $40$."
+  hint="Write zeros at the end of the decimal with fewer places until both have the same number of decimal places, then compare the digits after the points as whole numbers."
 >}}
 
 {{< fillin
-  question="Order using $<$ or $>$: $0.1$ __ $0.18$"
+  question="Order using $<$ or $>$. Enter the full inequality: $0.1$ __ $0.18$"
   answer="0.1 < 0.18"
-  hint="Write $0.1$ as $0.10$ so both numbers have two decimal places, then compare $10$ and $18$."
+  hint="Write zeros at the end of the decimal with fewer places until both have the same number of decimal places, then compare the digits after the points as whole numbers."
 >}}
 
 When we order negative decimals, it is important to remember how to order
@@ -464,7 +488,30 @@ negative integers. Recall that larger numbers are to the right on the
 number line. For example, because $-2$ lies to the right of $-3$ on the
 number line, we know that $-2 > -3$. Similarly, smaller numbers lie to the
 left on the number line. For example, because $-9$ lies to the left of
-$-6$ on the number line, we know that $-9 < -6$. If we zoomed in on the
+$-6$ on the number line, we know that $-9 < -6$.
+
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −10 to 0 marked and labeled at every integer, with points plotted at −9, −6, −3, and −2." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">−10</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">−9</text></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">−8</text></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">−7</text></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">−6</text></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">−5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">−4</text></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">−3</text></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">−2</text></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">−1</text></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">0</text></g>
+  <circle cx="84" cy="40" r="6" fill="currentColor" />
+  <circle cx="246" cy="40" r="6" fill="currentColor" />
+  <circle cx="408" cy="40" r="6" fill="currentColor" />
+  <circle cx="462" cy="40" r="6" fill="currentColor" />
+</svg>
+
+If we zoomed in on the
 interval between $0$ and $-1$, we would see in the same way that
 $-0.2 > -0.3$ and $-0.9 < -0.6$.
 
@@ -477,15 +524,15 @@ $-8$ tenths:
 $$-0.1 > -0.8$$
 
 {{< fillin
-  question="Order using $<$ or $>$: $-0.3$ __ $-0.5$"
+  question="Order using $<$ or $>$. Enter the full inequality: $-0.3$ __ $-0.5$"
   answer="-0.3 > -0.5"
-  hint="Compare the digits after the decimal point as if they were negative whole numbers: $-3$ is greater than $-5$."
+  hint="Compare the tenths as negative whole numbers, the way you order negative integers: the one farther right on the number line is greater."
 >}}
 
 {{< fillin
-  question="Order using $<$ or $>$: $-0.6$ __ $-0.7$"
+  question="Order using $<$ or $>$. Enter the full inequality: $-0.6$ __ $-0.7$"
   answer="-0.6 > -0.7"
-  hint="Compare the digits after the decimal point as if they were negative whole numbers: $-6$ is greater than $-7$."
+  hint="Compare the tenths as negative whole numbers, the way you order negative integers: the one farther right on the number line is greater."
 >}}
 
 ## Round decimals
@@ -497,11 +544,53 @@ one gallon of gas at this price, you would pay \$3.28, because the final
 price would be rounded to the nearest cent. We saw in an earlier chapter
 that we round numbers to get an approximate value when the exact value is
 not needed. Suppose we wanted to round \$2.72 to the nearest dollar — is it
-closer to \$2 or to \$3? We see that $2.72$ is closer to $3$ than to $2$,
-so $2.72$ rounded to the nearest whole number is $3$. What if we wanted to
-round \$2.72 to the nearest ten cents — is it closer to \$2.70 or to
-\$2.80? We see that $2.72$ is closer to $2.70$ than $2.80$, so $2.72$
-rounded to the nearest tenth is $2.7$.
+closer to \$2 or to \$3? What if we wanted to round \$2.72 to the nearest
+ten cents — is it closer to \$2.70 or to \$2.80? The number lines below can
+help us answer those questions.
+
+<svg viewBox="0 0 620 100" role="img" aria-label="Number line (a): from 2 to 3, marked and labeled in tenths, with a point labeled 2.72 plotted between 2.7 and 2.8, a little closer to 2.7." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">2</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.1</text></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.2</text></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.3</text></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.4</text></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.6</text></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.7</text></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.8</text></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.9</text></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">3</text></g>
+  <circle cx="418.8" cy="40" r="6" fill="currentColor" />
+  <text x="418.8" y="22" text-anchor="middle" font-size="15" fill="currentColor">2.72</text>
+  <text x="310" y="92" text-anchor="middle" font-size="15" fill="currentColor">(a)</text>
+</svg>
+
+<svg viewBox="0 0 620 100" role="img" aria-label="Number line (b): from 2.70 to 2.80, marked and labeled in hundredths, with a point plotted at 2.72." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.70</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.71</text></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.72</text></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.73</text></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.74</text></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.75</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.76</text></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.77</text></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.78</text></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.79</text></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.80</text></g>
+  <circle cx="138" cy="40" r="6" fill="currentColor" />
+  <text x="310" y="92" text-anchor="middle" font-size="15" fill="currentColor">(b)</text>
+</svg>
+
+On number line (a), we see that $2.72$ is closer to $3$ than to $2$, so
+$2.72$ rounded to the nearest whole number is $3$. On number line (b), we
+see that $2.72$ is closer to $2.70$ than to $2.80$, so $2.72$ rounded to the
+nearest tenth is $2.7$.
 
 Can we round decimals without number lines? Yes! We use a method based on
 the one we used to round whole numbers.
@@ -559,19 +648,19 @@ So $18.379$ rounded to the nearest whole number is $18$.
 {{< fillin
   question="Round 6.582 to the nearest hundredth."
   answer="6.58"
-  hint="Look at the thousandths digit, 2, to decide whether the hundredths digit rounds up."
+  hint="Underline the digit just to the right of the hundredths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round 6.582 to the nearest tenth."
   answer="6.6"
-  hint="Look at the hundredths digit, 8, to decide whether the tenths digit rounds up."
+  hint="Start again from $6.582$, not your rounded answer: underline the digit just to the right of the tenths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round 6.582 to the nearest whole number."
   answer="7"
-  hint="Look at the tenths digit, 5, to decide whether the ones digit rounds up."
+  hint="Underline the digit just to the right of the ones place and compare it with $5$."
 >}}
 
 ## Key terms
@@ -600,7 +689,7 @@ five and one hundredth
 {{< multiplechoice
   question="Name the decimal: $0.381$"
   answer="three hundred eighty-one thousandths"
-  hint="A zero to the left of the decimal point is not named, so there is no 'and'. The last digit sits three places to the right of the point."
+  hint="A zero to the left of the decimal point is not named, so there is no 'and'. Count the digits after the point to find the place value of the last one."
 >}}
 three hundred eighty-one hundredths
 three hundred eighty-one thousandths
@@ -624,45 +713,48 @@ negative seventy-one and nine tenths
 {{< fillin
   question="Translate the name into a decimal number: eight and three hundredths."
   answer="8.03"
-  hint="'And' locates the decimal point. 'Hundredths' means two places to the right, so the 3 must land in the second one — fill the first with a placeholder zero."
+  answerForm="decimal"
+  hint="'And' locates the decimal point. The last word names the place of the final digit; fill any empty place before it with a zero."
 >}}
 
 {{< fillin
   question="Translate the name into a decimal number: twenty-nine thousandths."
   answer="0.029"
-  hint="There is no 'and', so there is no whole-number part — start with 0. and mark three places for thousandths, putting the 9 in the last one."
+  answerForm="decimal"
+  hint="There is no 'and', so start with $0.$ and mark as many places as the last word calls for; the final digit goes in the last place and zeros fill the rest."
 >}}
 
 {{< fillin
   question="Translate the name into a decimal number: negative eleven and nine ten-thousandths."
   answer="-11.0009"
-  hint="Write the whole number 11 with its negative sign, then mark four places for ten-thousandths and put the 9 in the fourth place, filling the rest with zeros."
+  answerForm="decimal"
+  hint="Write the whole-number part with its sign to the left of the point. Count how many places 'ten-thousandths' needs, put the final digit in the last one, and fill the rest with zeros."
 >}}
 
 ### Convert decimals to fractions or mixed numbers
 
 {{< fillin
-  question="Convert to a fraction or mixed number: $1.99$"
+  question="Convert to a fraction or mixed number: $1.99$. Simplify if possible."
   answer="1\frac{99}{100}"
-  answerForm="fraction-or-mixed-number"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$1\tfrac{99}{100}$"
-  hint="The digit to the left of the point is not zero, so the result is a mixed number. The final digit is in the hundredths place."
+  hint="The digit to the left of the point is not zero, so the result is a mixed number. The place value of the final digit gives the denominator."
 >}}
 
 {{< fillin
-  question="Convert to a fraction or mixed number: $6.4$"
+  question="Convert to a fraction or mixed number: $6.4$. Simplify if possible."
   answer="6\frac{2}{5}"
-  answerForm="fraction-or-mixed-number"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$6\tfrac{2}{5}$"
   hint="The final digit is in the tenths place, so start with a denominator of $10$ — then remove the common factor."
 >}}
 
 {{< fillin
-  question="Convert to a fraction or mixed number: $14.125$"
+  question="Convert to a fraction or mixed number: $14.125$. Simplify if possible."
   answer="14\frac{1}{8}"
-  answerForm="fraction-or-mixed-number"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$14\tfrac{1}{8}$"
-  hint="Three decimal places means a denominator of $1000$. Divide numerator and denominator by their greatest common factor, $125$."
+  hint="The place value of the final digit gives the denominator. Then divide the numerator and denominator by their greatest common factor."
 >}}
 
 ### Locate decimals on the number line
@@ -687,19 +779,20 @@ negative seventy-one and nine tenths
 {{< fillin
   question="What decimal is plotted on the number line above?"
   answer="0.8"
+  answerForm="decimal"
   hint="The interval from 0 to 1 is divided into ten equal parts, so each tick is one tenth. Count the ticks from 0."
 >}}
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -1.0 to 0.0 marked in tenths, with a point plotted at the second mark to the left of 0.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −1.0 to 0.0 marked in tenths, with a point plotted at the second mark to the left of 0.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
   <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
   <polygon points="600,40 590,34 590,46" fill="currentColor" />
   <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">-1.0</text></g>
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">−1.0</text></g>
   <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
   <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
   <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
   <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.5</text></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.5</text></g>
   <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
   <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
   <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="462" cy="40" r="6" fill="currentColor" /></g>
@@ -710,6 +803,7 @@ negative seventy-one and nine tenths
 {{< fillin
   question="What decimal is plotted on the number line above?"
   answer="-0.2"
+  answerForm="decimal"
   hint="Each tick is one tenth. The point is to the left of 0, so the value is negative — count the ticks back from 0."
 >}}
 
@@ -733,33 +827,34 @@ negative seventy-one and nine tenths
 {{< fillin
   question="What decimal is plotted on the number line above?"
   answer="3.1"
+  answerForm="decimal"
   hint="The point lies between two whole numbers, so the whole-number part is the label to its left; each tick past it adds one tenth."
 >}}
 
 ### Order decimals
 
 {{< fillin
-  question="Order using $<$ or $>$: $0.37$ __ $0.63$"
+  question="Order using $<$ or $>$. Enter the full inequality: $0.37$ __ $0.63$"
   answer="0.37 < 0.63"
-  hint="Both numbers already have two decimal places, so compare $37$ and $63$ as whole numbers."
+  hint="Check that both numbers have the same number of decimal places, then compare the digits after the points as whole numbers."
 >}}
 
 {{< fillin
-  question="Order using $<$ or $>$: $0.6$ __ $0.59$"
+  question="Order using $<$ or $>$. Enter the full inequality: $0.6$ __ $0.59$"
   answer="0.6 > 0.59"
-  hint="Write $0.6$ as $0.60$ so both have two decimal places, then compare $60$ and $59$."
+  hint="Write zeros at the end of the decimal with fewer places until both have the same number of decimal places, then compare the digits after the points as whole numbers."
 >}}
 
 {{< fillin
-  question="Order using $<$ or $>$: $-0.5$ __ $-0.3$"
+  question="Order using $<$ or $>$. Enter the full inequality: $-0.5$ __ $-0.3$"
   answer="-0.5 < -0.3"
-  hint="On the number line $-0.5$ lies farther left than $-0.3$, and numbers to the left are smaller."
+  hint="Picture both numbers on the number line between $-1$ and $0$: the one farther left is smaller."
 >}}
 
 {{< fillin
-  question="Order using $<$ or $>$: $-0.62$ __ $-0.619$"
+  question="Order using $<$ or $>$. Enter the full inequality: $-0.62$ __ $-0.619$"
   answer="-0.62 < -0.619"
-  hint="Write $-0.62$ as $-0.620$ so both have three decimal places. Since $620 > 619$, the number $-0.620$ lies farther left."
+  hint="Write zeros so both have the same number of decimal places. For negative numbers, the one farther from $0$ lies farther left and is smaller."
 >}}
 
 ### Round decimals
@@ -773,25 +868,25 @@ negative seventy-one and nine tenths
 {{< fillin
   question="Round to the nearest hundredth: $0.845$"
   answer="0.85"
-  hint="The hundredths digit is $4$; the thousandths digit to its right is $5$, which is enough to round up."
+  hint="The hundredths digit is $4$; underline the digit to its right and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round to the nearest hundredth: $63.479$"
   answer="63.48"
-  hint="Underline the thousandths digit, $9$. Because it is $5$ or more, add $1$ to the hundredths digit and drop everything after it."
+  hint="Underline the digit just to the right of the hundredths place and compare it with $5$, then drop every digit after the hundredths place."
 >}}
 
 {{< fillin
   question="Round to the nearest tenth: $63.479$"
   answer="63.5"
-  hint="Go back to the original number, not your rounded answer. Underline the hundredths digit, $7$, to decide the tenths place."
+  hint="Go back to the original number, not your rounded answer. Underline the digit just to the right of the tenths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round to the nearest whole number: $63.479$"
   answer="63"
-  hint="Underline the tenths digit, $4$. It is less than $5$, so the ones digit stays as it is."
+  hint="Underline the digit just to the right of the ones place and compare it with $5$."
 >}}
 
 {{< fillin
@@ -810,4 +905,4 @@ negative seventy-one and nine tenths
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.1: Decimals](https://openstax.org/books/prealgebra-2e/pages/5-1-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the place-value chart and decimal/fraction tables as markdown tables, the number lines as accessible inline graphics, and the step-by-step translation tables as simplified prose and tables; omitted the Be Prepared quiz, Figure 5.3 (a check image), and the Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, redrawing the number-line answer figures as accessible inline graphics and expanding each multipart exercise into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.1: Decimals](https://openstax.org/books/prealgebra-2e/pages/5-1-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the place-value chart and decimal/fraction tables as markdown tables, the number lines as accessible inline graphics (the "Locate 0.4" figure without the extra 0.04 point its source image carries), and the step-by-step solution tables as simplified prose and tables; omitted the Be Prepared quiz, Figure 5.3 (a check image), and the Media links; added decimal notation to the Key terms; converted the practice problems ("Try Its") into interactive exercises with instant feedback, posing the naming Try It in reverse (write the decimal from its name) and the two locate Try Its as the fraction that marks the point; and adapted selected end-of-section exercises into the interactive Practice block, posing the locate exercises as reading a plotted point on a number line marked in tenths, adding "Simplify if possible" to the conversion exercises, and expanding each multipart exercise into one question per part.</small>

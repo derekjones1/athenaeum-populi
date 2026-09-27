@@ -15,7 +15,7 @@ weight: 2
 - Model addition of integers
 - Simplify expressions with integers
 - Evaluate variable expressions with integers
-- Translate word phrases to expressions with integers
+- Translate word phrases to algebraic expressions
 - Add integers in applications
 {{< /callout >}}
 
@@ -54,7 +54,7 @@ positives. So $5 + 3 = 8$.
   question="Model the expression, then simplify: $2 + 4$"
   answer="6"
   answerForm="decimal"
-  hint="Both addends are positive, so combine $2$ positives with $4$ more positives."
+  hint="Both addends are positive, so every counter is the same color: count them all."
 >}}
 
 **Example.** Model $-5 + (-3)$.
@@ -71,10 +71,10 @@ negatives. So $-5 + (-3) = -8$.
   question="Model the expression, then simplify: $-2 + (-4)$"
   answer="-6"
   answerForm="decimal"
-  hint="Both addends are negative, so combine $2$ negatives with $4$ more negatives."
+  hint="Both addends are negative, so every counter is the same color: count them all and keep the negative sign."
 >}}
 
-Example 3.14 and Example 3.15 both add two numbers with the *same*
+The last two examples both add two numbers with the *same*
 sign — both positive, or both negative — and in each case the counters
 are all the same color, so we simply add. Now let's see what happens
 when the signs are different.
@@ -86,7 +86,7 @@ negative to form a neutral pair, which we remove. Two negatives are left
 over, so $-5 + 3 = -2$. Notice there were more negatives than positives,
 so the result is negative.
 
-<svg viewBox="0 0 340 100" role="img" aria-label="Five red negative counters and three blue positive counters. Three neutral pairs are removed, leaving two negative counters." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 340 100" role="img" aria-label="Five red negative counters and three blue positive counters. Three red-and-blue neutral pairs are circled with dashed outlines, and two red negative counters stand apart unpaired." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <g>
       <ellipse cx="20" cy="45" rx="17" ry="35" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" />
       <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
@@ -108,7 +108,7 @@ so the result is negative.
   question="Model the expression, then simplify: $2 + (-4)$"
   answer="-2"
   answerForm="decimal"
-  hint="Pair up the $2$ positives with $2$ of the $4$ negatives as neutral pairs, then count what's left."
+  hint="Match each positive counter with a negative one to form neutral pairs, remove the pairs, and count the counters left over."
 >}}
 
 **Example.** Model $5 + (-3)$.
@@ -116,7 +116,7 @@ so the result is negative.
 Start with $5$ positives. Add $3$ negatives. Three neutral pairs form
 and are removed, leaving $2$ positives. So $5 + (-3) = 2$.
 
-<svg viewBox="0 0 340 100" role="img" aria-label="Five blue positive counters and three red negative counters. Three neutral pairs are removed, leaving two positive counters." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 340 100" role="img" aria-label="Five blue positive counters and three red negative counters. Three blue-and-red neutral pairs are circled with dashed outlines, and two blue positive counters stand apart unpaired." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <g>
       <ellipse cx="20" cy="45" rx="17" ry="35" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" />
       <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
@@ -138,7 +138,7 @@ and are removed, leaving $2$ positives. So $5 + (-3) = 2$.
   question="Model the expression, then simplify: $(-2) + 4$"
   answer="2"
   answerForm="decimal"
-  hint="Pair up $2$ of the positives with the $2$ negatives as neutral pairs, then count what's left."
+  hint="Match each negative counter with a positive one to form neutral pairs, remove the pairs, and count the counters left over."
 >}}
 
 ## Simplify expressions with integers
@@ -181,14 +181,14 @@ $-32 + 40 = 8$.
   question="Simplify: $15 + (-32)$"
   answer="-17"
   answerForm="decimal"
-  hint="Signs are different — subtract $15$ from $32$, and keep the sign of the number with the larger absolute value ($-32$)."
+  hint="The signs are different: subtract the smaller absolute value from the larger, and keep the sign of the number with the larger absolute value."
 >}}
 
 {{< fillin
   question="Simplify: $-19 + 76$"
   answer="57"
   answerForm="decimal"
-  hint="Signs are different — subtract $19$ from $76$, and keep the sign of the number with the larger absolute value ($76$)."
+  hint="Compare the absolute values: the sum takes the sign of the addend farther from zero, and its size is the difference of the absolute values."
 >}}
 
 **Example.** Simplify $-14 + (-36)$. The signs are the same, so add; the
@@ -211,7 +211,7 @@ first: $-5 + 3(5)$. Multiply: $-5 + 15$. Add left to right: $10$.
   question="Simplify: $-2 + 5(-4 + 7)$"
   answer="13"
   answerForm="decimal"
-  hint="Simplify inside the parentheses first ($-4 + 7 = 3$), then multiply, then add."
+  hint="Follow the order of operations: simplify inside the parentheses first, then multiply, then add."
 >}}
 
 ## Evaluate variable expressions with integers
@@ -227,12 +227,14 @@ in the expression, then simplify.
 {{< fillin
   question="Evaluate $x + 5$ when $x = -3$."
   answer="2"
+  answerForm="decimal"
   hint="Substitute $-3$ for $x$, then add."
 >}}
 
 {{< fillin
   question="Evaluate $x + 5$ when $x = -17$."
   answer="-12"
+  answerForm="decimal"
   hint="Substitute $-17$ for $x$, then add."
 >}}
 
@@ -247,13 +249,15 @@ front of it.
 {{< fillin
   question="When $n = -8$, evaluate: $n + 2$"
   answer="-6"
+  answerForm="decimal"
   hint="Substitute $-8$ for $n$, then add."
 >}}
 
 {{< fillin
   question="When $n = -8$, evaluate: $-n + 2$"
   answer="10"
-  hint="Substitute $-8$ for $n$: $-n$ becomes $-(-8)$, which is $8$. Then add $2$."
+  answerForm="decimal"
+  hint="$-n$ means the opposite of $n$: substitute $-8$ for $n$, take its opposite, then add."
 >}}
 
 Expressions with two variables work the same way — substitute both
@@ -265,7 +269,8 @@ $3(12) + (-30)$. Multiply: $36 + (-30)$. Add: $6$.
 {{< fillin
   question="Evaluate the expression: $a + 2b$ when $a = -19$ and $b = 14$."
   answer="9"
-  hint="Substitute $-19$ for $a$ and $14$ for $b$, then simplify: $-19 + 2(14)$."
+  answerForm="decimal"
+  hint="Substitute both values, then multiply before you add."
 >}}
 
 **Example.** Evaluate $(x+y)^2$ when $x = -18$ and $y = 24$. Substitute:
@@ -274,10 +279,11 @@ $(-18+24)^2$. Add inside the parentheses: $(6)^2$. Simplify: $36$.
 {{< fillin
   question="Evaluate: $(x + y)^2$ when $x = -15$ and $y = 29$."
   answer="196"
-  hint="Add inside the parentheses first ($-15 + 29 = 14$), then square the result."
+  answerForm="decimal"
+  hint="Substitute both values, add inside the parentheses first, then square the result."
 >}}
 
-## Translate word phrases and applications to expressions with integers
+## Translate word phrases to algebraic expressions
 
 All our earlier work translating word phrases to algebra also applies to
 expressions with both positive and negative numbers. Remember that *the
@@ -289,13 +295,15 @@ Translate: $-9 + 5$. Simplify: $-4$.
 {{< fillin
   question="Translate and simplify: the sum of $-7$ and $4$"
   answer="-3"
-  hint="'Sum' means add: $-7 + 4$."
+  answerForm="decimal"
+  hint="'The sum of' means add the two numbers that follow, in the order they are named. Then simplify."
 >}}
 
 {{< fillin
   question="Translate and simplify: the sum of $-8$ and $-6$"
   answer="-14"
-  hint="'Sum' means add: $-8 + (-6)$."
+  answerForm="decimal"
+  hint="'The sum of' means add the two numbers that follow; put a negative second addend in parentheses. Then simplify."
 >}}
 
 **Example.** Translate and simplify: the sum of $8$ and $-12$, increased
@@ -304,8 +312,11 @@ by $3$. Translate: $[8+(-12)]+3$. Simplify: $-4+3$. Add: $-1$.
 {{< fillin
   question="Translate and simplify: the sum of $9$ and $-16$, increased by $4$"
   answer="-3"
-  hint="Translate as $[9 + (-16)] + 4$, then simplify left to right."
+  answerForm="decimal"
+  hint="'Increased by' means add. Group the sum in brackets, simplify it, then add the last number."
 >}}
+
+## Add integers in applications
 
 Positive and negative numbers show up often in everyday situations —
 temperatures, banking, and sports, for example. Solving these
@@ -323,7 +334,8 @@ $-7 + 12 = 5$. The temperature at noon was $5$ degrees Fahrenheit.
 {{< fillin
   question="The temperature in Chicago at 5 A.M. was 10 degrees below zero Celsius. Six hours later, it had warmed up 14 degrees Celsius. What is the temperature at 11 A.M. (in degrees Celsius)?"
   answer="4"
-  hint="Start at -10 and add the 14-degree warm-up: $-10 + 14$."
+  answerForm="decimal"
+  hint="Write a temperature below zero as a negative integer and a warm-up as a positive one, then add."
 >}}
 
 **Example.** A football team took possession of the ball on their
@@ -337,7 +349,8 @@ end of the three plays, the ball is on the $32$-yard line.
 {{< fillin
   question="The Bears took possession of the football on their 20-yard line. In the next three plays, they lost 9 yards, gained 7 yards, then lost 4 yards. On what yard line was the ball at the end of those three plays?"
   answer="14"
-  hint="Start at 20, then apply each play in order: $20 - 9 + 7 - 4$."
+  answerForm="decimal"
+  hint="Start at the first yard line, then subtract each loss and add each gain, in order."
 >}}
 
 ## Key terms
@@ -353,7 +366,7 @@ of the number with the larger absolute value.
 
 ### Model addition of integers
 
-<svg viewBox="0 0 360 60" role="img" aria-label="A row of eleven blue positive counters, separated into a group of seven and a group of four." style="max-width: 360px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 360 60" role="img" aria-label="A row of blue positive counters, separated into a group of seven and a group of four." style="max-width: 360px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="170" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="200" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="250" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="280" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="310" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="340" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
 </svg>
@@ -365,7 +378,7 @@ of the number with the larger absolute value.
   hint="All the counters are positive, so no neutral pairs form — just count the whole row."
 >}}
 
-<svg viewBox="0 0 300 60" role="img" aria-label="A row of nine red negative counters, separated into a group of six and a group of three." style="max-width: 300px; width: 100%; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 300 60" role="img" aria-label="A row of red negative counters, separated into a group of six and a group of three." style="max-width: 300px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="220" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="250" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="280" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
 </svg>
@@ -398,7 +411,7 @@ of the number with the larger absolute value.
   question="The counters above model $8 + (-7)$. Simplify the expression."
   answer="1"
   answerForm="decimal"
-  hint="Seven neutral pairs form and are removed. There were more positives than negatives, so the sign of what remains is positive."
+  hint="Each column holding one blue and one red counter is a neutral pair worth $0$. Remove the pairs; the color left over gives the sign of the sum."
 >}}
 
 ### Simplify expressions with integers
@@ -414,7 +427,7 @@ of the number with the larger absolute value.
   question="Simplify: $-200 + 65$"
   answer="-135"
   answerForm="decimal"
-  hint="The signs are different — subtract $65$ from $200$ and keep the sign of the number with the larger absolute value."
+  hint="The signs are different: subtract the smaller absolute value from the larger, and keep the sign of the number with the larger absolute value."
 >}}
 
 {{< fillin
@@ -436,38 +449,44 @@ of the number with the larger absolute value.
 {{< fillin
   question="When $a = -7$, evaluate: $a + 3$"
   answer="-4"
+  answerForm="decimal"
   hint="Substitute $-7$ for $a$. The signs are different, so subtract and keep the sign of the larger absolute value."
 >}}
 
 {{< fillin
   question="When $a = -7$, evaluate: $-a + 3$"
   answer="10"
-  hint="Substitute carefully: $-a$ becomes $-(-7)$, the opposite of $-7$."
+  answerForm="decimal"
+  hint="$-a$ means the opposite of $a$: substitute $-7$ for $a$, take its opposite, then add."
 >}}
 
 {{< fillin
   question="Evaluate $m + n$ when $m = -15$ and $n = 7$."
   answer="-8"
+  answerForm="decimal"
   hint="Substitute both values, then add integers with different signs."
 >}}
 
 {{< fillin
   question="Evaluate $(a + b)^2$ when $a = -7$ and $b = 15$."
   answer="64"
+  answerForm="decimal"
   hint="Add inside the parentheses first, then square that single number."
 >}}
 
 {{< fillin
   question="Evaluate $(x + y)^2$ when $x = -3$ and $y = 14$."
   answer="121"
+  answerForm="decimal"
   hint="Simplify the sum in the parentheses before applying the exponent — the exponent belongs to the whole quantity."
 >}}
 
-### Translate word phrases to expressions with integers
+### Translate word phrases to algebraic expressions
 
 {{< fillin
   question="Translate the phrase into an expression and simplify: the sum of $-14$ and $5$"
   answer="-9"
+  answerForm="decimal"
   answerDisplay="$-14 + 5 = -9$"
   hint="'The sum of' means add, in the order the two numbers are named."
 >}}
@@ -475,13 +494,15 @@ of the number with the larger absolute value.
 {{< fillin
   question="Translate the phrase into an expression and simplify: $-10$ added to $-15$"
   answer="-25"
+  answerForm="decimal"
   answerDisplay="$-15 + (-10) = -25$"
-  hint="'Added to' names the second addend first, so start from $-15$. Both signs are the same, so add the absolute values."
+  hint="'Added to' reverses the reading order: the number after 'added to' comes first. Both signs are the same, so add the absolute values."
 >}}
 
 {{< fillin
   question="Translate the phrase into an expression and simplify: $6$ more than the sum of $-1$ and $-12$"
   answer="-7"
+  answerForm="decimal"
   answerDisplay="$[-1 + (-12)] + 6 = -7$"
   hint="Group the inner sum in brackets first, then add $6$ to it."
 >}}
@@ -489,6 +510,7 @@ of the number with the larger absolute value.
 {{< fillin
   question="Translate the phrase into an expression and simplify: the sum of $10$ and $-19$, increased by $4$"
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$[10 + (-19)] + 4 = -5$"
   hint="'Increased by' means add. Simplify the bracketed sum, then add $4$."
 >}}
@@ -498,12 +520,14 @@ of the number with the larger absolute value.
 {{< fillin
   question="The temperature in St. Paul, Minnesota, was $-19$ degrees Fahrenheit at sunrise. By noon the temperature had risen $26$ degrees Fahrenheit. What was the temperature at noon, in degrees Fahrenheit?"
   answer="7"
-  hint="A rise is a positive change — start at $-19$ and add $26$."
+  answerForm="decimal"
+  hint="Write the sunrise temperature as an integer and the rise as a positive change, then add."
 >}}
 
 {{< fillin
   question="Lupe owes \$73 on her credit card. Then she charges \$45 more. Represent the new balance as an integer number of dollars."
   answer="-118"
+  answerForm="decimal"
   answerDisplay="−\$118 (a balance of \$118 owed)"
   hint="Money owed is negative, and a new charge makes the debt larger. Both addends carry the same sign."
 >}}
@@ -511,6 +535,7 @@ of the number with the larger absolute value.
 {{< fillin
   question="A football team lost $3$ yards on the first play. Then they lost $2$ yards, gained $1$ yard, and then lost $4$ yards. What was the change in overall yardage over the four plays, in yards?"
   answer="-8"
+  answerForm="decimal"
   answerDisplay="$-8$ yards"
   hint="Write each loss as a negative integer and each gain as a positive one, then add all four."
 >}}
@@ -518,17 +543,19 @@ of the number with the larger absolute value.
 {{< fillin
   question="The Rams took possession of the football on their own $35$-yard line. In the next three plays, they lost $12$ yards, gained $8$ yards, then lost $6$ yards. On what yard line was the ball at the end of those three plays?"
   answer="25"
+  answerForm="decimal"
   answerDisplay="the $25$-yard line"
   hint="Start at $35$ and add the three signed changes in order."
 >}}
 
 {{< fillin
-  question="A scuba diver swimming $8$ feet below the surface dove $17$ feet deeper; the pressure got to them and they rose five feet. What is their new depth, in feet below the surface?"
+  question="A scuba diver swimming $8$ feet below the surface dove $17$ feet deeper; the pressure got to them and they rose five feet. How many feet below the surface are they now? Enter a positive number of feet."
   answer="20"
+  answerForm="decimal"
   answerDisplay="$20$ feet below the surface"
-  hint="Take depths below the surface as negative: start at $-8$, add $-17$ for diving deeper, then add $5$ for rising. The depth is the absolute value of the result."
+  hint="Write depths below the surface as negative integers, a dive deeper as a negative change and a rise as a positive one, and add. The depth below the surface is the absolute value of the sum."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.2: Add Integers](https://openstax.org/books/prealgebra-2e/pages/3-2-add-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the two-color-counter models as accessible inline graphics and the same-signs/different-signs summary as a table; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part and the counter-model answers redrawn as accessible inline graphics.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.2: Add Integers](https://openstax.org/books/prealgebra-2e/pages/3-2-add-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the two-color-counter models as accessible inline graphics and the same-signs/different-signs summary as a table; stated the same-signs and different-signs rules in a callout and in the key terms; condensed prose; omitted the Be Prepared quiz, the four-part "Modeling Addition of Positive and Negative Integers" example and its Try Its, the Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, a two-part Try It as one question per part; named the unit or sign convention to enter in the application questions; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part and the counter-model answers redrawn as accessible inline graphics.</small>

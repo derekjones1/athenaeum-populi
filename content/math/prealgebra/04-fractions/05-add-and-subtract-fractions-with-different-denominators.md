@@ -35,9 +35,10 @@ Using fraction tiles to find a common denominator for $\tfrac{1}{2}$ and
 $\tfrac{1}{3}$: fourths don't exactly cover both a half-tile and a
 third-tile; fifths don't either; but sixths do — exactly three
 $\tfrac{1}{6}$ tiles cover the $\tfrac{1}{2}$ tile, and exactly two cover
-the $\tfrac{1}{3}$ tile. Twelfths would also work, since even smaller
-tiles can always cover both. The denominator of the *smallest* piece that
-covers both fractions is called the **least common denominator (LCD)**.
+the $\tfrac{1}{3}$ tile. Twelfths would also work, and so would even
+smaller tiles such as twenty-fourths. The denominator of the *largest*
+piece that covers both fractions is called the **least common denominator
+(LCD)**.
 So the LCD of $\tfrac{1}{2}$ and $\tfrac{1}{3}$ is $6$ — the least common
 multiple of the denominators $2$ and $3$.
 
@@ -74,19 +75,21 @@ $\tfrac{5}{18}$ is $36$.
 {{< fillin
   question="Find the least common denominator for the fractions $\tfrac{13}{24}$ and $\tfrac{17}{32}$."
   answer="96"
+  answerForm="decimal"
   hint="Factor $24$ and $32$ into primes, match up common columns, then multiply every column down."
 >}}
 
 {{< fillin
   question="Find the least common denominator for the fractions $\tfrac{8}{15}$ and $\tfrac{11}{24}$."
   answer="120"
-  hint="$15 = 3\cdot5$ and $24 = 2\cdot2\cdot2\cdot3$. Bring down every prime column, matching where possible."
+  answerForm="decimal"
+  hint="Factor each denominator into primes, line up matching primes in columns, then multiply one factor from every column."
 >}}
 
 ## Convert fractions to equivalent fractions with the LCD
 
-Earlier we saw that the LCD of $\tfrac{1}{4}$ and $\tfrac{1}{6}$ is $12$
-— three $\tfrac{1}{12}$ pieces exactly cover $\tfrac{1}{4}$, and two cover
+Fraction tiles show that the LCD of $\tfrac{1}{4}$ and $\tfrac{1}{6}$ is
+$12$ — three $\tfrac{1}{12}$ pieces exactly cover $\tfrac{1}{4}$, and two cover
 $\tfrac{1}{6}$, so $\tfrac{1}{4} = \tfrac{3}{12}$ and
 $\tfrac{1}{6} = \tfrac{2}{12}$. We can find this algebraically using the
 Equivalent Fractions Property, without models.
@@ -261,7 +264,7 @@ fully simplified.
 {{< fillin
   question="Add: $\tfrac{x}{6} + \tfrac{7}{15}$"
   answer="\frac{5x+14}{30}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5x+14}{30}$"
   hint="The LCD of $6$ and $15$ is $30$. Convert each fraction to that denominator, then add the numerators."
 >}}
@@ -301,19 +304,19 @@ by the reciprocal of the second fraction:
 $-\tfrac{1}{4} \cdot \tfrac{6}{1} = -\tfrac{6}{4} = -\tfrac{3}{2}$.
 
 {{< fillin
-  question="Simplify: $-\tfrac{3}{4} - \tfrac{1}{6}$ (this is subtraction, not division)"
+  question="Simplify: $-\tfrac{3}{4} - \tfrac{1}{6}$"
   answer="-\frac{11}{12}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{11}{12}$"
-  hint="The LCD of $4$ and $6$ is $12$. Convert each fraction, then subtract the numerators."
+  hint="Ask first whether this operation needs a common denominator (adding and subtracting do; multiplying and dividing do not), then carry it out and simplify."
 >}}
 
 {{< fillin
-  question="Simplify: $-\tfrac{3}{4} \cdot \tfrac{1}{6}$ (this is multiplication)"
+  question="Simplify: $-\tfrac{3}{4} \cdot \tfrac{1}{6}$"
   answer="-\frac{1}{8}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{8}$"
-  hint="No common denominator is needed for multiplication — just multiply straight across."
+  hint="Ask first whether this operation needs a common denominator (adding and subtracting do; multiplying and dividing do not), then carry it out and simplify."
 >}}
 
 **Example.** Simplify: (a) $\tfrac{5x}{6} - \tfrac{3}{10}$; (b)
@@ -324,22 +327,23 @@ denominator. The LCD of $6$ and $10$ is $30$. Rewriting:
 $\tfrac{25x}{30} - \tfrac{9}{30} = \tfrac{25x-9}{30}$.
 
 (b) The operation is multiplication — no common denominator needed.
-Multiplying and removing common factors of $2$ and $3$:
+Multiplying and removing the common factors $3$ and $5$:
 $\tfrac{5x \cdot 3}{6 \cdot 10} = \tfrac{x}{4}$.
 
 {{< fillin
-  question="Simplify: $\tfrac{2a}{3} \cdot \tfrac{5}{9}$ (multiplication — answer in terms of $a$)"
-  answer="\frac{10a}{27}"
+  question="Simplify: $\tfrac{3a}{4} \cdot \tfrac{8}{9}$"
+  answer="\frac{2a}{3}"
   answerForm="single-fraction"
-  answerDisplay="$\tfrac{10a}{27}$"
-  hint="No common denominator needed — multiply the numerators and multiply the denominators."
+  answerDisplay="$\tfrac{2a}{3}$"
+  hint="Ask first whether this operation needs a common denominator, then carry it out and remove any common factors."
 >}}
 
 ## Use the order of operations to simplify complex fractions
 
 A complex fraction is a fraction in which the numerator or denominator
-contains a fraction — we saw this in the previous section, where we
-rewrote such fractions as division problems. Now consider complex
+contains a fraction — we saw this in [Multiply and Divide Mixed Numbers
+and Complex Fractions](/math/prealgebra/04-fractions/03-multiply-and-divide-mixed-numbers-and-complex-fractions),
+where we rewrote such fractions as division problems. Now consider complex
 fractions where the numerator or denominator itself needs to be
 simplified first. Following the order of operations, we simplify the
 numerator and denominator separately, then divide.
@@ -402,6 +406,7 @@ $-\tfrac{9}{12} + \tfrac{4}{12} = -\tfrac{5}{12}$.
 {{< fillin
   question="Evaluate $y - \tfrac{5}{6}$ when $y = -\tfrac{2}{3}$"
   answer="-\frac{3}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{2}$"
   hint="Substitute $-\tfrac{2}{3}$ for $y$, then rewrite both fractions with the LCD of $6$ before subtracting."
 >}}
@@ -417,9 +422,10 @@ Multiplying and removing common factors:
 $$2x^2y = -\frac{1}{12}$$
 
 {{< fillin
-  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{3}$"
-  answer="-\frac{2}{9}"
-  answerDisplay="$-\tfrac{2}{9}$"
+  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{2}$"
+  answer="-\frac{1}{2}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{1}{2}$"
   hint="The exponent applies only to $b$. Simplify $b$ squared first, then multiply by $3$ and $a$."
 >}}
 
@@ -434,6 +440,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Evaluate $\tfrac{a+b}{c}$ when $a = -8$, $b = -7$, and $c = 6$"
   answer="-\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{2}$"
   hint="Add $a$ and $b$ first (the numerator), then divide by $c$."
 >}}
@@ -453,18 +460,21 @@ denominator next, then divide.
 {{< fillin
   question="Find the least common denominator (LCD) for $\tfrac{3}{4}$ and $\tfrac{2}{5}$."
   answer="20"
-  hint="Factor $4$ and $5$ into primes. They share no prime factor, so no column matches up and the LCM is the product of all of them."
+  answerForm="decimal"
+  hint="Factor $4$ and $5$ into primes, line up any matching primes in columns, then multiply one factor from every column."
 >}}
 
 {{< fillin
   question="Find the least common denominator (LCD) for $\tfrac{18}{35}$ and $\tfrac{33}{49}$."
   answer="245"
-  hint="$35 = 5 \cdot 7$ and $49 = 7 \cdot 7$. Line up the one shared $7$ in a column, then bring down every column and multiply."
+  answerForm="decimal"
+  hint="Factor $35$ and $49$ into primes, line up matching primes in columns, then bring down every column and multiply."
 >}}
 
 {{< fillin
   question="Find the least common denominator (LCD) for $\tfrac{2}{3}$, $\tfrac{1}{4}$, and $\tfrac{3}{5}$."
   answer="60"
+  answerForm="decimal"
   hint="Use only the denominators, even with three fractions: find the least common multiple of $3$, $4$, and $5$."
 >}}
 
@@ -531,9 +541,9 @@ denominator next, then divide.
 {{< fillin
   question="Add: $\tfrac{y}{2} + \tfrac{2}{3}$"
   answer="\frac{3y+4}{6}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3y+4}{6}$"
-  hint="The LCD of $2$ and $3$ is $6$. Convert each fraction, then add the numerators — $3y$ and $4$ are not like terms, so leave them as a sum."
+  hint="Find the LCD of $2$ and $3$, convert each fraction, then add the numerators over it. Terms that are not like terms stay as a sum."
 >}}
 
 ### Identify and use fraction operations
@@ -543,14 +553,14 @@ denominator next, then divide.
   answer="\frac{5}{6}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
-  hint="The operation is addition, so you need a common denominator. The LCD of $3$ and $6$ is $6$."
+  hint="Ask first whether this operation needs a common denominator (adding and subtracting do; multiplying and dividing do not), then carry it out and simplify."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{2}{3} \div \tfrac{1}{6}$"
   answer="4"
   answerForm="decimal"
-  hint="The operation is division, so no common denominator is needed — multiply by the reciprocal of the second fraction."
+  hint="Ask first whether this operation needs a common denominator, then carry it out: to divide, multiply by the reciprocal of the second fraction."
 >}}
 
 {{< fillin
@@ -558,7 +568,7 @@ denominator next, then divide.
   answer="\frac{11}{24}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{24}$"
-  hint="Addition again, so find the LCD of $8$ and $12$ first, then combine the signed numerators."
+  hint="Ask first whether this operation needs a common denominator, then carry it out, keeping each numerator's sign."
 >}}
 
 ### Use the order of operations to simplify complex fractions
@@ -591,6 +601,7 @@ denominator next, then divide.
 {{< fillin
   question="Evaluate $x + \tfrac{2}{3}$ when $x = -\tfrac{1}{6}$"
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="Substitute $-\tfrac{1}{6}$ for $x$, rewrite both fractions with the LCD $6$, then add and simplify."
 >}}
@@ -598,16 +609,18 @@ denominator next, then divide.
 {{< fillin
   question="Evaluate $x + \tfrac{2}{3}$ when $x = -\tfrac{5}{3}$"
   answer="-1"
-  hint="Both fractions already have denominator $3$, so just add the numerators."
+  answerForm="decimal"
+  hint="Both fractions already have denominator $3$, so add the numerators, then simplify."
 >}}
 
 {{< fillin
   question="Evaluate $8u^2v^3$ when $u = -\tfrac{3}{4}$ and $v = -\tfrac{1}{2}$"
   answer="-\frac{9}{16}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{9}{16}$"
   hint="Apply each exponent first — an even power of a negative is positive, an odd power stays negative — then multiply the three factors."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.5: Add and Subtract Fractions with Different Denominators](https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the coin and fraction-tile models for the LCD in prose instead of reproducing the diagrams, and presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.5: Add and Subtract Fractions with Different Denominators](https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the coin and fraction-tile models for the LCD in prose instead of reproducing the diagrams, and presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, and posed two worked examples (the LCD of $\tfrac{8}{15}$ and $\tfrac{11}{24}$, and $y-\tfrac{5}{6}$ at $y=-\tfrac{2}{3}$) as exercises; posed the Try It after the $\tfrac{5x}{6}$ example, whose source prints its answers in place of its problems, as $\tfrac{3a}{4}\cdot\tfrac{8}{9}$, the product those answers imply; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

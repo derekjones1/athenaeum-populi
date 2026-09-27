@@ -355,6 +355,8 @@ test('a prompt asking for a named form requires its answerForm token', () => {
     ['Condense $\\log_2 5+\\log_2x-\\log_2y$ to one logarithm.', '\\log_2\\frac{5x}{y}', 'condense-to-one-logarithm ask'],
     ['Write the percent as a ratio: 89% of college students have a smartphone.', '\\frac{89}{100}', 'percent-as-ratio ask'],
     ['In response to a survey, 41 out of 100 students expressed a goal of transferring. Enter the ratio.', '\\frac{41}{100}', 'enter-the-ratio ask'],
+    ['Translate into an algebraic equation: The sum of $7$ and $6$ gives $13$.', '7+6=13', 'translate-to-an-equation ask'],
+    ['Translate to a proportion: What number is 60% of 105?', '\\frac{n}{105}=\\frac{60}{100}', 'translate-to-a-proportion ask'],
   ]) {
     assert(lint(fillin(question, answer)).some(named), reason);
   }

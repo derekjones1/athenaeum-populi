@@ -74,7 +74,7 @@ Multiplying a monomial by a trinomial works in much the same way.
 
 **Example.** Multiply: $-2x(5x^2 + 7x - 3)$.
 
-$$-2x(5x^2 + 7x - 3) = (-2x) \cdot 5x^2 + (-2x) \cdot 7x - (-2x) \cdot 3 = -10x^3 - 14x^2 + 6x$$
+$$\begin{aligned} & {-2x}(5x^2 + 7x - 3) \\ &= (-2x) \cdot 5x^2 + (-2x) \cdot 7x - (-2x) \cdot 3 \\ &= -10x^3 - 14x^2 + 6x \end{aligned}$$
 
 {{< fillin
   question="Multiply: $-4y(8y^2 + 5y - 9)$."
@@ -83,6 +83,10 @@ $$-2x(5x^2 + 7x - 3) = (-2x) \cdot 5x^2 + (-2x) \cdot 7x - (-2x) \cdot 3 = -10x^
   answerDisplay="$-32y^3 - 20y^2 + 36y$"
   hint="Distribute $-4y$ to each of the three terms; watch the sign on each product."
 >}}
+
+**Example.** Multiply: $4y^3(y^2 - 8y + 1)$.
+
+$$\begin{aligned} & 4y^3(y^2 - 8y + 1) \\ &= 4y^3 \cdot y^2 - 4y^3 \cdot 8y + 4y^3 \cdot 1 \\ &= 4y^5 - 32y^4 + 4y^3 \end{aligned}$$
 
 {{< fillin
   question="Multiply: $3x^2(4x^2 - 3x + 9)$."
@@ -157,7 +161,7 @@ $$x^2 + 14x + 48$$
 {{< fillin
   question="Multiply using the Distributive Property: $(x + 8)(x + 9)$."
   answer="x^2 + 17x + 72"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2 + 17x + 72$"
   hint="Distribute $(x + 9)$ across both terms of $(x + 8)$, then combine like terms."
 >}}
@@ -177,7 +181,7 @@ $$6x^2 + 8x + 27x + 36 = 6x^2 + 35x + 36$$
 {{< fillin
   question="Multiply using the Distributive Property: $(5x + 9)(4x + 3)$."
   answer="20x^2 + 51x + 27"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$20x^2 + 51x + 27$"
   hint="Distribute $(4x + 3)$ across both terms of $(5x + 9)$, then combine the two middle terms."
 >}}
@@ -199,7 +203,7 @@ $$24y^2 - 20y + 18y - 15 = 24y^2 - 2y - 15$$
 {{< fillin
   question="Multiply using the Distributive Property: $(7y + 1)(8y - 3)$."
   answer="56y^2 - 13y - 3"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$56y^2 - 13y - 3$"
   hint="Distribute $(8y - 3)$ across both terms of $(7y + 1)$; combine the middle terms carefully with their signs."
 >}}
@@ -222,7 +226,7 @@ There are no like terms to combine, so this is the simplified product.
 {{< fillin
   question="Multiply using the Distributive Property: $(x + 5)(x - y)$."
   answer="x^2 - xy + 5x - 5y"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2 - xy + 5x - 5y$"
   hint="Distribute $(x - y)$ across both terms of $(x + 5)$; there will be no like terms to combine."
 >}}
@@ -250,7 +254,10 @@ And the last term, $-2y$, came from multiplying the two **last** terms.
 We abbreviate "First, Outer, Inner, Last" as **FOIL**. The word FOIL is easy
 to remember and ensures we find all four products.
 
-$$\underbrace{(a + b)}_{\text{first}}\ \underbrace{(c + d)}_{\text{first}}$$
+In $(a + b)(c + d)$, the first terms are $a$ and $c$, the outer terms are $a$
+and $d$, the inner terms are $b$ and $c$, and the last terms are $b$ and $d$:
+
+$$(a + b)(c + d) = \underbrace{ac}_{\text{First}} + \underbrace{ad}_{\text{Outer}} + \underbrace{bc}_{\text{Inner}} + \underbrace{bd}_{\text{Last}}$$
 
 The letters remind us of the pattern: first terms, outer terms, inner
 terms, last terms.
@@ -268,7 +275,7 @@ terms, last terms.
 {{< fillin
   question="Multiply using the FOIL method: $(x + 7)(x + 8)$."
   answer="x^2 + 15x + 56"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2 + 15x + 56$"
   hint="Find the First, Outer, Inner, and Last products, then combine the two middle (like) terms."
 >}}
@@ -276,7 +283,7 @@ terms, last terms.
 {{< fillin
   question="Multiply using the FOIL method: $(y + 14)(y + 2)$."
   answer="y^2 + 16y + 28"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^2 + 16y + 28$"
   hint="Find the First, Outer, Inner, and Last products, then combine the two middle (like) terms."
 >}}
@@ -307,7 +314,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(y - 3)(y + 8)$."
   answer="y^2 + 5y - 24"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^2 + 5y - 24$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -315,7 +322,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(q - 4)(q + 5)$."
   answer="q^2 + q - 20"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$q^2 + q - 20$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -333,7 +340,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(4a + 9)(5a - 2)$."
   answer="20a^2 + 37a - 18"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$20a^2 + 37a - 18$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -341,7 +348,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(7x + 4)(7x - 8)$."
   answer="49x^2 - 28x - 32"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$49x^2 - 28x - 32$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -359,7 +366,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(12x - y)(x - 5)$."
   answer="12x^2 - 60x - xy + 5y"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$12x^2 - 60x - xy + 5y$"
   hint="Use FOIL. The Inner and Outer terms here are not like terms, so all four terms remain."
 >}}
@@ -367,7 +374,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(6a - b)(2a - 9)$."
   answer="12a^2 - 54a - 2ab + 9b"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$12a^2 - 54a - 2ab + 9b$"
   hint="Use FOIL. The Inner and Outer terms here are not like terms, so all four terms remain."
 >}}
@@ -381,7 +388,7 @@ works for all polynomials is the **Vertical Method**. It is very much like
 the method you use to multiply whole numbers. Look carefully at this
 example of multiplying two-digit numbers:
 
-$$\begin{array}{r} 23 \\ \times 46 \\ \hline 138 \\ 92\phantom{0} \\ \hline 1058 \end{array}$$
+$$\begin{array}{r} 23 \\ \times 46 \\ \hline 138 \\ 92\phantom{0} \\ \hline 1{,}058 \end{array}$$
 
 You start by multiplying $23$ by $6$ to get $138$, a partial product. Then
 you multiply $23$ by $4$, lining up the second partial product, $92$, in
@@ -394,7 +401,7 @@ Now we'll apply this same method to multiply two binomials.
 It does not matter which binomial goes on top. Line up the columns when you
 multiply, just as when multiplying $23(46)$:
 
-$$\begin{array}{r} 2x - 7 \\ \times\ \ 5x - 1 \\ \hline -2x + 7 \\ 10x^2 - 35x\phantom{00} \\ \hline 10x^2 - 37x + 7 \end{array}$$
+$$\begin{array}{rrr} & 2x & {}-7 \\ \times & 5x & {}-1 \\ \hline & -2x & {}+7 \\ 10x^2 & {}-35x & \\ \hline 10x^2 & {}-37x & {}+7 \end{array}$$
 
 First, multiply $2x - 7$ by $-1$ to get the partial product $-2x + 7$. Then
 multiply $2x - 7$ by $5x$ to get the partial product $10x^2 - 35x$, lining
@@ -407,7 +414,7 @@ from FOIL.
 {{< fillin
   question="Multiply using the Vertical Method: $(4m - 9)(3m - 7)$."
   answer="12m^2 - 55m + 63"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$12m^2 - 55m + 63$"
   hint="Multiply the top binomial by each term of the bottom binomial separately, lining up like terms, then add the partial products."
 >}}
@@ -415,7 +422,7 @@ from FOIL.
 {{< fillin
   question="Multiply using the Vertical Method: $(6n - 5)(7n - 2)$."
   answer="42n^2 - 47n + 10"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$42n^2 - 47n + 10$"
   hint="Multiply the top binomial by each term of the bottom binomial separately, lining up like terms, then add the partial products."
 >}}
@@ -459,7 +466,7 @@ $$2x^3 + x^2 - 7x + 24$$
 {{< fillin
   question="Multiply using the Distributive Property: $(y - 1)(y^2 - 7y + 2)$."
   answer="y^3 - 8y^2 + 9y - 2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^3 - 8y^2 + 9y - 2$"
   hint="Distribute $(y^2 - 7y + 2)$ across both terms of $(y - 1)$, then combine like terms."
 >}}
@@ -467,7 +474,7 @@ $$2x^3 + x^2 - 7x + 24$$
 {{< fillin
   question="Multiply using the Distributive Property: $(x + 2)(3x^2 - 4x + 5)$."
   answer="3x^3 + 2x^2 - 3x + 10"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3x^3 + 2x^2 - 3x + 10$"
   hint="Distribute $(3x^2 - 4x + 5)$ across both terms of $(x + 2)$, then combine like terms."
 >}}
@@ -479,7 +486,7 @@ Now let's do this same multiplication using the Vertical Method.
 It is easier to put the polynomial with fewer terms on the bottom, because
 we get fewer partial products this way:
 
-$$\begin{array}{r} 2x^2 - 5x + 8 \\ \times\phantom{00} x + 3 \\ \hline 6x^2 - 15x + 24 \\ 2x^3 - 5x^2 + 8x\phantom{00000} \\ \hline 2x^3 + x^2 - 7x + 24 \end{array}$$
+$$\begin{array}{rrrr} & 2x^2 & {}-5x & {}+8 \\ \times & & x & {}+3 \\ \hline & 6x^2 & {}-15x & {}+24 \\ 2x^3 & {}-5x^2 & {}+8x & \\ \hline 2x^3 & {}+x^2 & {}-7x & {}+24 \end{array}$$
 
 First multiply $2x^2 - 5x + 8$ by $3$ to get $6x^2 - 15x + 24$. Then
 multiply $2x^2 - 5x + 8$ by $x$ to get $2x^3 - 5x^2 + 8x$, lining it up one
@@ -488,7 +495,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply using the Vertical Method: $(y - 1)(y^2 - 7y + 2)$."
   answer="y^3 - 8y^2 + 9y - 2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^3 - 8y^2 + 9y - 2$"
   hint="Put the trinomial on top, multiply it by each term of the binomial separately lining up like terms, then add the partial products."
 >}}
@@ -496,7 +503,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply using the Vertical Method: $(x + 2)(3x^2 - 4x + 5)$."
   answer="3x^3 + 2x^2 - 3x + 10"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3x^3 + 2x^2 - 3x + 10$"
   hint="Put the trinomial on top, multiply it by each term of the binomial separately lining up like terms, then add the partial products."
 >}}
@@ -519,7 +526,7 @@ just binomials.
   answer="-8z + 40"
   answerForm="expanded"
   answerDisplay="$-8z + 40$"
-  hint="Distribute $-8$ to both terms. A negative times a negative gives a positive second term."
+  hint="Distribute $-8$ to both terms inside the parentheses, using the sign rules for multiplying integers."
 >}}
 
 {{< fillin
@@ -551,15 +558,15 @@ just binomials.
 {{< fillin
   question="Multiply: $(z - 10)(z - 22)$."
   answer="z^2 - 32z + 220"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$z^2 - 32z + 220$"
-  hint="Use any method. Both last terms are negative, so their product is positive and both middle terms are negative."
+  hint="Use any method. Track the sign of each of the four products, then combine the Outer and Inner products."
 >}}
 
 {{< fillin
   question="Multiply: $(2m - 9)(10m + 1)$."
   answer="20m^2 - 88m - 9"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$20m^2 - 88m - 9$"
   hint="Use any method. Track the signs on the Outer and Inner products before combining them."
 >}}
@@ -567,15 +574,15 @@ just binomials.
 {{< fillin
   question="Multiply: $(4c - 1)(4c + 1)$."
   answer="16c^2 - 1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$16c^2 - 1$"
-  hint="Use any method. The Outer and Inner products are opposites here, so they add to zero."
+  hint="Use any method, then combine the Outer and Inner products."
 >}}
 
 {{< fillin
   question="Multiply: $(5x - y)(x - 4)$."
   answer="5x^2 - 20x - xy + 4y"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$5x^2 - 20x - xy + 4y$"
   hint="Use any method. With two different variables the four products are not like terms, so none of them combine."
 >}}
@@ -585,7 +592,7 @@ just binomials.
 {{< fillin
   question="Multiply using the Distributive Property: $(a + 10)(3a^2 + a - 5)$."
   answer="3a^3 + 31a^2 + 5a - 50"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3a^3 + 31a^2 + 5a - 50$"
   hint="Distribute $(3a^2 + a - 5)$ across both terms of $(a + 10)$, then combine like terms."
 >}}
@@ -593,7 +600,7 @@ just binomials.
 {{< fillin
   question="Multiply using the Vertical Method: $(a + 10)(3a^2 + a - 5)$."
   answer="3a^3 + 31a^2 + 5a - 50"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3a^3 + 31a^2 + 5a - 50$"
   hint="Put the trinomial on top, multiply it by $10$ and then by $a$, lining up like terms, and add the partial products."
 >}}
@@ -601,7 +608,7 @@ just binomials.
 {{< fillin
   question="Multiply: $(y - 6)(y^2 - 10y + 9)$."
   answer="y^3 - 16y^2 + 69y - 54"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^3 - 16y^2 + 69y - 54$"
   hint="Use either method. FOIL does not apply — there are six products to find before combining like terms."
 >}}
@@ -609,11 +616,11 @@ just binomials.
 {{< fillin
   question="Multiply: $(2x + 1)(x^2 - 5x - 6)$."
   answer="2x^3 - 9x^2 - 17x - 6"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$2x^3 - 9x^2 - 17x - 6$"
   hint="Use either method. Multiply the trinomial by $2x$ and by $1$, then combine the like terms."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.3: Multiply Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the FOIL step-by-step worked examples and the vertical (columnar) multiplication layouts as tables and typeset math instead of colored annotated equations; omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.3: Multiply Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose; recreated the FOIL step-by-step worked examples and the vertical (columnar) multiplication layouts as tables and typeset math instead of colored annotated equations, and the labeled FOIL diagram as a typeset product of (a + b)(c + d); omitted the Be Prepared quiz, the figure comparing the Distributive Property and FOIL on (x + 3)(x + 7), Media links, and Self Check checklist; replaced the Key Concepts list with a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

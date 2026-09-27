@@ -44,7 +44,7 @@ So $2\tfrac{1}{3} + 1\tfrac{2}{3} = 4$.
   question="Use the same idea to add: $1\tfrac{2}{5} + 3\tfrac{3}{5}$"
   answer="5"
   answerForm="decimal"
-  hint="Add the wholes and add the fifths separately, then simplify since the fraction part equals a whole."
+  hint="Add the wholes and add the fifths separately. If the fifths make a whole, move it into the whole-number total."
 >}}
 
 **Example.** Model $1\tfrac{3}{5} + 2\tfrac{3}{5}$ and give the sum as a
@@ -57,9 +57,9 @@ to $1\tfrac{1}{5}$, we add that whole to the $3$ to get $4\tfrac{1}{5}$.
 {{< fillin
   question="Using the same idea, add and give the sum as a mixed number: $2\tfrac{5}{6} + 1\tfrac{5}{6}$"
   answer="4\frac{2}{3}"
-  answerForm="mixed-number"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$4\tfrac{2}{3}$"
-  hint="Add the wholes and add the sixths; the fraction part will be an improper fraction — convert it and add the extra whole in."
+  hint="Add the wholes and add the sixths. If the sixths make more than a whole, trade six of them for one whole, then simplify the fraction part."
 >}}
 
 ## Add mixed numbers with a common denominator
@@ -107,7 +107,7 @@ $$9\frac{5}{9} + 5\frac{7}{9} = 15\frac{1}{3}$$
 {{< fillin
   question="Find the sum: $8\tfrac{7}{8} + 7\tfrac{5}{8}$"
   answer="16\frac{1}{2}"
-  answerForm="mixed-number"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$16\tfrac{1}{2}$"
   hint="Add the whole numbers and the fractions separately. The fraction sum will be improper — convert it and add the extra whole in, then simplify."
 >}}
@@ -129,9 +129,9 @@ mixed number too.
 {{< fillin
   question="Add by converting the mixed numbers to improper fractions: $5\tfrac{5}{9} + 3\tfrac{7}{9}$"
   answer="9\frac{1}{3}"
-  answerForm="mixed-number"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$9\tfrac{1}{3}$"
-  hint="Convert both to improper fractions ($\tfrac{50}{9}$ and $\tfrac{34}{9}$), add, then convert back to a mixed number and simplify."
+  hint="For each mixed number, multiply the whole number by $9$ and add the numerator to get an improper fraction. Add the numerators, then convert back to a mixed number and simplify."
 >}}
 
 ## Model subtraction of mixed numbers
@@ -174,7 +174,7 @@ $$2 - 1\frac{2}{5} = \frac{3}{5}$$
   answer="\frac{3}{4}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{4}$"
-  hint="Rewrite $2$ as $1\tfrac{4}{4}$, then take away $1\tfrac{1}{4}$."
+  hint="Cut one of the two wholes into fourths, then take away one whole and one fourth and count what is left."
 >}}
 
 What if you start with a mixed number and need to subtract a fraction
@@ -197,7 +197,7 @@ $$1\frac{1}{4} - \frac{3}{4} = \frac{1}{2}$$
   answer="\frac{2}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
-  hint="Rewrite $1\tfrac{1}{3}$ as $\tfrac{4}{3}$ (borrowing one whole as three more thirds), then subtract."
+  hint="Cut the whole into thirds and put them with the third you already have, then take away two thirds and count what is left."
 >}}
 
 ## Subtract mixed numbers with a common denominator
@@ -233,7 +233,7 @@ $$5\frac{3}{5} - 2\frac{4}{5} = 2\frac{4}{5}$$
   answer="2\frac{2}{3}"
   answerForm="mixed-number lowest-terms"
   answerDisplay="$2\tfrac{2}{3}$"
-  hint="Since $\tfrac{4}{9}$ is less than $\tfrac{7}{9}$, borrow one whole from $6$ and add it to $\tfrac{4}{9}$ to make $\tfrac{13}{9}$, then subtract."
+  hint="Compare the fractions. If the top one is smaller, take one whole from the $6$ as nine ninths and add it to the top fraction; then subtract the fractions, subtract the whole numbers, and simplify."
 >}}
 
 Just as with addition, we can also subtract mixed numbers by converting
@@ -258,11 +258,11 @@ $\tfrac{18}{11}$. Rewrite as a mixed number:
 $$9\frac{6}{11} - 7\frac{10}{11} = 1\frac{7}{11}$$
 
 {{< fillin
-  question="Find the difference by converting to improper fractions: $6\tfrac{4}{9} - 3\tfrac{7}{9}$"
-  answer="2\frac{2}{3}"
+  question="Find the difference by converting to improper fractions: $4\tfrac{4}{7} - 2\tfrac{6}{7}$"
+  answer="1\frac{5}{7}"
   answerForm="mixed-number lowest-terms"
-  answerDisplay="$2\tfrac{2}{3}$"
-  hint="Convert both mixed numbers to improper fractions first ($\tfrac{58}{9}$ and $\tfrac{34}{9}$), subtract, then convert back."
+  answerDisplay="$1\tfrac{5}{7}$"
+  hint="For each mixed number, multiply the whole number by $7$ and add the numerator. Subtract the numerators over $7$, then write the result as a mixed number."
 >}}
 
 When the answer will clearly be negative — because the second mixed
@@ -279,7 +279,7 @@ Subtract:
 $$3\frac{5}{11} - 4\frac{3}{4} = -1\frac{13}{44}$$
 
 {{< fillin
-  question="Subtract: $1\tfrac{3}{4} - 6\tfrac{7}{8}$"
+  question="Subtract, and write the answer as a mixed number: $1\tfrac{3}{4} - 6\tfrac{7}{8}$"
   answer="-5\frac{1}{8}"
   answerForm="mixed-number"
   answerDisplay="$-5\tfrac{1}{8}$"
@@ -352,7 +352,7 @@ subtracting.
   answer="3\frac{2}{3}"
   answerForm="mixed-number lowest-terms"
   answerDisplay="$3\tfrac{2}{3}$"
-  hint="Ten sixths is more than one whole circle. Trade six of them for a whole, then simplify what is left."
+  hint="Count the whole circles and the $\tfrac{1}{6}$ pieces separately. Trade any six sixths for one whole circle, then simplify the fraction part."
 >}}
 
 ### Add mixed numbers with a common denominator
@@ -369,13 +369,13 @@ subtracting.
   question="Add: $7\tfrac{9}{10} + 3\tfrac{1}{10}$"
   answer="11"
   answerForm="decimal"
-  hint="The tenths add to a full whole, so the fraction part disappears — add that whole to the whole-number total."
+  hint="Add the whole numbers and add the tenths. If the tenths make a whole, move it into the whole-number total."
 >}}
 
 {{< fillin
   question="Add: $8\tfrac{4}{9} + 2\tfrac{8}{9}$"
   answer="11\frac{1}{3}"
-  answerForm="mixed-number"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$11\tfrac{1}{3}$"
   hint="The ninths add to an improper fraction. Rewrite it as a mixed number, add the extra whole in, then simplify."
 >}}
@@ -387,7 +387,7 @@ subtracting.
   answer="\frac{1}{2}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
-  hint="Cut the whole into eighths so you have $\tfrac{9}{8}$ in all, then take away $\tfrac{5}{8}$ and simplify."
+  hint="Cut the whole into eighths and put them with the eighth you already have, then take away five eighths and simplify what is left."
 >}}
 
 {{< fillin
@@ -395,7 +395,7 @@ subtracting.
   answer="5\frac{3}{5}"
   answerForm="mixed-number lowest-terms"
   answerDisplay="$5\tfrac{3}{5}$"
-  hint="Cut one of the six wholes into fifths, so $6$ becomes $5\tfrac{5}{5}$, then take away $\tfrac{2}{5}$."
+  hint="Cut one of the six wholes into fifths, then take away two fifths and count the wholes and fifths that are left."
 >}}
 
 ### Subtract mixed numbers with a common denominator
@@ -403,9 +403,9 @@ subtracting.
 {{< fillin
   question="Find the difference: $2\tfrac{7}{12} - 1\tfrac{5}{12}$"
   answer="1\frac{1}{6}"
-  answerForm="mixed-number"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$1\tfrac{1}{6}$"
-  hint="The top fraction is larger, so no borrowing is needed. Subtract the fractions, subtract the whole numbers, then simplify."
+  hint="Compare the two fractions to decide whether you need to borrow. Then subtract the fractions, subtract the whole numbers, and simplify."
 >}}
 
 {{< fillin
@@ -413,7 +413,7 @@ subtracting.
   answer="1\frac{7}{9}"
   answerForm="mixed-number"
   answerDisplay="$1\tfrac{7}{9}$"
-  hint="Since $\tfrac{2}{9}$ is smaller than $\tfrac{4}{9}$, take one whole from the $5$ to make $4\tfrac{11}{9}$ before subtracting."
+  hint="Compare the fractions. If the top one is smaller, take one whole from the $5$ as nine ninths and add it to the top fraction before subtracting."
 >}}
 
 {{< fillin
@@ -421,7 +421,7 @@ subtracting.
   answer="\frac{5}{6}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
-  hint="Borrow one whole to make $1\tfrac{17}{12}$. The whole numbers then subtract to $0$, so the answer is just a fraction — simplify it."
+  hint="Compare the fractions and borrow one whole as twelve twelfths if the top one is smaller. Subtract the fractions and the whole numbers, then simplify."
 >}}
 
 ### Add and subtract mixed numbers with different denominators
@@ -447,7 +447,7 @@ subtracting.
   answer="5\frac{11}{20}"
   answerForm="mixed-number lowest-terms"
   answerDisplay="$5\tfrac{11}{20}$"
-  hint="The LCD of $5$ and $4$ is $20$. Once both fractions are in twentieths, the top one is larger, so no borrowing is needed."
+  hint="The LCD of $5$ and $4$ is $20$. Rewrite both fractions in twentieths, compare them to decide whether to borrow, then subtract."
 >}}
 
 {{< fillin
@@ -460,4 +460,4 @@ subtracting.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.6: Add and Subtract Mixed Numbers](https://openstax.org/books/prealgebra-2e/pages/4-6-add-and-subtract-mixed-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the fraction-circle, dollar/quarter, and parking-meter models in prose instead of reproducing the diagrams and three-column model/notation tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with the modeling exercises restated to ask for the value the model gives rather than for a drawing.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.6: Add and Subtract Mixed Numbers](https://openstax.org/books/prealgebra-2e/pages/4-6-add-and-subtract-mixed-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the fraction-circle, dollar/quarter, and parking-meter models in prose instead of reproducing the diagrams and three-column model/notation tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with the modeling exercises restated to ask for the value the model gives rather than for a drawing, and one Mixed Practice exercise ($6-\tfrac{2}{5}$) posed as a modeling exercise.</small>

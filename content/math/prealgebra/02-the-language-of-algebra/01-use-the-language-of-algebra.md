@@ -68,9 +68,10 @@ which we write as $4 \cdot 8$.
 (c) the quotient of sixty-four and eight; (d) the difference of $x$ and $y$.
 
 {{< fillin
-  question="The product of $30$ and $5$ is what number?"
-  answer="150"
-  hint="'Product' means multiply: work out $30$ times $5$."
+  question="The product of $27$ and $9$ is what number?"
+  answer="243"
+  answerForm="decimal"
+  hint="Recall which operation's result is called a product, then apply it to the two numbers."
 >}}
 
 When two quantities have the same value, we say they are **equal** and connect
@@ -104,17 +105,19 @@ side faces the smaller number, and the larger side faces the larger number.
 | Mini Cooper  | $27$ |
 | Corolla      | $28$ |
 | Versa        | $26$ |
-| Fit          | $33$ |
+| Fit          | $27$ |
 
-Translate each comparison into algebraic notation: the Prius's MPG is
-greater than the Mini Cooper's, $48 > 27$; the Corolla's MPG is greater
-than the Versa's, $28 > 26$; the Fit's MPG is less than the Prius's,
-$33 < 48$; the Mini Cooper's MPG is not equal to the Fit's, $27 \ne 33$.
+Write the appropriate symbol, $=$, $<$, or $>$, to compare each pair. Find
+the values in the table, then compare: MPG of Prius $>$ MPG of Mini Cooper,
+since $48 > 27$; MPG of Versa $<$ MPG of Fit, since $26 < 27$; MPG of Mini
+Cooper $=$ MPG of Fit, since $27 = 27$; MPG of Corolla $>$ MPG of Versa,
+since $28 > 26$; and MPG of Corolla $<$ MPG of Prius, since $28 < 48$.
 
 {{< fillin
-  question="Using the table above, which car has the greater MPG: the Corolla ($28$) or the Fit ($33$)? Enter its MPG value."
-  answer="33"
-  hint="Compare the two numbers — the greater MPG belongs to the car that goes farther per gallon."
+  question="Using the table above, which car has the greater MPG: the Corolla or the Fit? Enter that car's MPG."
+  answer="28"
+  answerForm="decimal"
+  hint="Look up each car's MPG in the table and compare the two numbers."
 >}}
 
 **Grouping symbols** — parentheses $(\ )$, brackets $[\ ]$, and braces
@@ -138,12 +141,23 @@ $16 - 6 = 10$ is an **equation** (two expressions joined by an equal sign);
 $4 \cdot 2 + 1$ is an **expression** (no equal sign); $x \div 25$ is an
 **expression**; $y + 8 = 40$ is an **equation**.
 
-{{< fillin
-  question="An equation is two expressions joined by an equal sign. In the equation $4 + 3 = 7$, what number does the left side, $4 + 3$, equal?"
-  answer="7"
-  answerForm="decimal"
-  hint="Simplify the expression on the left side of the equal sign."
+{{< multiplechoice
+  question="Determine whether $23 + 6 = 29$ is an expression or an equation."
+  answer="equation"
+  hint="Check whether an equal sign connects two expressions."
 >}}
+expression
+equation
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $7 \cdot 3 - 7$ is an expression or an equation."
+  answer="expression"
+  hint="Check whether an equal sign connects two expressions."
+>}}
+expression
+equation
+{{< /multiplechoice >}}
 
 ## Simplify expressions with exponents
 
@@ -176,17 +190,17 @@ form and multiply the factors. For example, $3^4 = 3 \cdot 3 \cdot 3 \cdot 3 =
 81$.
 
 {{< fillin
-  question="Simplify: $3^4$"
-  answer="81"
+  question="Simplify: $7^2$"
+  answer="49"
   answerForm="decimal"
-  hint="Write it in expanded form, $3 \cdot 3 \cdot 3 \cdot 3$, then multiply the factors."
+  hint="Write the power in expanded form, then multiply the factors."
 >}}
 
 {{< fillin
-  question="Simplify: $2^5$"
-  answer="32"
+  question="Simplify: $0^5$"
+  answer="0"
   answerForm="decimal"
-  hint="$2^5$ means $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ — multiply five factors of $2$."
+  hint="The exponent counts the factors of the base: write them out, then multiply."
 >}}
 
 ## Simplify expressions using the order of operations
@@ -217,16 +231,15 @@ multiply first: $4 + 21$, then add: $25$.
 7$, then multiply: $49$. The grouping symbols change the result.
 
 {{< fillin
-  question="Simplify: $4 + 3 \cdot 7$"
-  answer="25"
+  question="Simplify: $12 - 5 \cdot 2$"
+  answer="2"
   answerForm="decimal"
-  answerDisplay="25"
-  hint="No parentheses and no exponents, so do the multiplication before the addition."
+  hint="No parentheses and no exponents, so do the multiplication before the subtraction."
 >}}
 
 {{< fillin
-  question="Simplify: $(4 + 3) \cdot 7$"
-  answer="49"
+  question="Simplify: $(12 - 5) \cdot 2$"
+  answer="14"
   answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply."
 >}}
@@ -241,9 +254,6 @@ $162 \div 2 = 81$. Even though the same numbers and operations appear in a
 different order, left-to-right order gives two different — and correct —
 results.
 
-**Example.** Simplify $42 \div 7 \cdot 3$. Working left to right, divide first:
-$6 \cdot 3$, then multiply: $18$.
-
 {{< fillin
   question="Simplify: $42 \div 7 \cdot 3$"
   answer="18"
@@ -256,8 +266,8 @@ $18 \div 6 + 4(3)$. Then multiplication and division left to right:
 $3 + 4(3) = 3 + 12$. Finally add: $15$.
 
 {{< fillin
-  question="Simplify: $18 \div 6 + 4(5 - 2)$"
-  answer="15"
+  question="Simplify: $30 \div 5 + 10(3 - 2)$"
+  answer="16"
   answerForm="decimal"
   hint="Start inside the parentheses, then do division and multiplication left to right, and add last."
 >}}
@@ -277,7 +287,7 @@ $3 \cdot 0 = 0$. Finally add left to right: $5 + 8 + 0 = 13$.
   question="Simplify: $9 + 5^3 - [4(9 + 3)]$"
   answer="86"
   answerForm="decimal"
-  hint="Innermost parentheses first ($9 + 3 = 12$), then the bracket ($4 \cdot 12 = 48$), then the exponent ($5^3 = 125$), then add and subtract left to right."
+  hint="Work from the innermost parentheses outward through the brackets, then simplify the exponent, then add and subtract from left to right."
 >}}
 
 When several exponents appear, they may be simplified in the same step.
@@ -287,11 +297,10 @@ $8 + 81 \div 3 - 25$. Then divide: $8 + 27 - 25$. Then add and subtract left to
 right: $35 - 25 = 10$.
 
 {{< fillin
-  question="Simplify: $2^3 + 3^4 \div 3 - 5^2$"
-  answer="10"
+  question="Simplify: $3^2 + 2^4 \div 2 + 4^3$"
+  answer="81"
   answerForm="decimal"
-  answerDisplay="10"
-  hint="Simplify the exponents first, then divide, then add and subtract from left to right."
+  hint="Simplify the exponents first, then divide, then add from left to right."
 >}}
 
 ## Key terms
@@ -323,7 +332,7 @@ addition and subtraction (left to right).
 {{< multiplechoice
   question="Translate $28 \div 4$ from algebraic notation to words."
   answer="28 divided by 4, the quotient of twenty-eight and four"
-  hint="The number under the division is read second, and the result of a division is called the quotient."
+  hint="Read the numbers in the order they are written, and check the operations table for the name of a division's result."
 >}}
 28 divided by 4, the product of twenty-eight and four
 4 divided by 28, the quotient of four and twenty-eight
@@ -481,9 +490,10 @@ $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
 {{< fillin
   question="Simplify: $2[1 + 3(10 - 2)]$"
   answer="50"
+  answerForm="decimal"
   hint="Start with the innermost grouping symbol and move outward, doing multiplication before addition inside the brackets."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.1: Use the Language of Algebra](https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.1: Use the Language of Algebra](https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated the tables and the fuel-economy figure (without its car photographs) in accessible Markdown, converted practice problems ("Try Its") into interactive exercises with instant feedback (a translate-to-words Try It asking for the value of one product, a fuel-economy Try It asking for the greater car's MPG rather than the comparison symbol, and multipart Try Its as one question per part), and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

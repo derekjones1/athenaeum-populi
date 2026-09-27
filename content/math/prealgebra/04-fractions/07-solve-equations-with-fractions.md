@@ -89,6 +89,7 @@ Checking by substituting $-\tfrac{1}{4}$ back in confirms the solution.
 {{< fillin
   question="Solve: $y + \tfrac{11}{12} = \tfrac{5}{12}$"
   answer="-\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{2}$"
   hint="Subtract $\tfrac{11}{12}$ from both sides to isolate $y$."
 >}}
@@ -103,6 +104,7 @@ $$a = -\frac{1}{3}$$
 {{< fillin
   question="Solve: $a - \tfrac{3}{5} = -\tfrac{8}{5}$"
   answer="-1"
+  answerForm="decimal"
   hint="Add $\tfrac{3}{5}$ to both sides to isolate $a$."
 >}}
 
@@ -116,12 +118,13 @@ Simplify:
 
 $$q = \frac{22}{5}$$
 
-The solution is a fraction — we leave it in that form rather than
-converting to a mixed number, since it came from solving an equation.
+The solution is the fraction $\tfrac{22}{5}$. We leave it as an improper
+fraction.
 
 {{< fillin
   question="Solve: $12u = -76$"
   answer="-\frac{19}{3}"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$-\tfrac{19}{3}$"
   hint="Divide both sides by $12$ to isolate $u$, then simplify the fraction."
 >}}
@@ -149,6 +152,7 @@ $$x = -63$$
 {{< fillin
   question="Solve: $\tfrac{f}{5} = -25$"
   answer="-125"
+  answerForm="decimal"
   hint="Multiply both sides by $5$ to isolate $f$."
 >}}
 
@@ -162,6 +166,7 @@ $$p = 320$$
 {{< fillin
   question="Solve: $\tfrac{c}{-7} = -35$"
   answer="245"
+  answerForm="decimal"
   hint="Multiply both sides by $-7$ to isolate $c$."
 >}}
 
@@ -183,6 +188,7 @@ answer.)
 {{< fillin
   question="Solve: $-c = -23$"
   answer="23"
+  answerForm="decimal"
   hint="What number has $-23$ as its opposite?"
 >}}
 
@@ -207,6 +213,7 @@ its reciprocal — but multiplying by the reciprocal is usually easier.
 {{< fillin
   question="Solve: $\tfrac{2}{5} n = 14$"
   answer="35"
+  answerForm="decimal"
   hint="Multiply both sides by the reciprocal of $\tfrac{2}{5}$, which is $\tfrac{5}{2}$."
 >}}
 
@@ -221,6 +228,7 @@ $$w = -192$$
 {{< fillin
   question="Solve: $-\tfrac{4}{7} a = 52$"
   answer="-91"
+  answerForm="decimal"
   hint="Multiply both sides by the reciprocal of $-\tfrac{4}{7}$, which is $-\tfrac{7}{4}$."
 >}}
 
@@ -241,9 +249,11 @@ $$n = -144$$
 Checking: is $-144$ divided by $6$ equal to $-24$? Yes.
 
 {{< fillin
-  question="Translate and solve: $n$ divided by 7 is equal to -21."
+  question="Translate and solve: $n$ divided by $7$ is equal to $-21$."
   answer="-147"
-  hint="Translate to $\tfrac{n}{7} = -21$, then multiply both sides by $7$."
+  answerForm="decimal"
+  answerDisplay="$\tfrac{n}{7} = -21$; $n = -147$"
+  hint="Translate 'divided by' as a fraction bar and 'is equal to' as $=$, then multiply both sides by the divisor."
 >}}
 
 **Example.** Translate and solve: "The quotient of $q$ and $-5$ is $70$."
@@ -254,9 +264,11 @@ $q = -5(70)$. Simplify:
 $$q = -350$$
 
 {{< fillin
-  question="Translate and solve: The quotient of $q$ and -8 is 72."
+  question="Translate and solve: The quotient of $q$ and $-8$ is $72$."
   answer="-576"
-  hint="Translate to $\tfrac{q}{-8} = 72$, then multiply both sides by $-8$."
+  answerForm="decimal"
+  answerDisplay="$\tfrac{q}{-8} = 72$; $q = -576$"
+  hint="A quotient keeps the order of the phrase, the first quantity on top. Translate, then multiply both sides by the divisor."
 >}}
 
 **Example.** Translate and solve: "Two-thirds of $f$ is $18$."
@@ -267,9 +279,11 @@ $\tfrac{3}{2}$: $f = \tfrac{3}{2} \cdot 18$. Simplify:
 $$f = 27$$
 
 {{< fillin
-  question="Translate and solve: Two-fifths of $f$ is 16."
+  question="Translate and solve: Two-fifths of $f$ is $16$."
   answer="40"
-  hint="Translate to $\tfrac{2}{5}f = 16$, then multiply both sides by the reciprocal, $\tfrac{5}{2}$."
+  answerForm="decimal"
+  answerDisplay="$\tfrac{2}{5}f = 16$; $f = 40$"
+  hint="Of means multiply. Translate, then multiply both sides by the reciprocal of the fraction coefficient."
 >}}
 
 **Example.** Translate and solve: "The quotient of $m$ and $\tfrac{5}{6}$
@@ -284,8 +298,9 @@ $$m = \frac{5}{8}$$
 {{< fillin
   question="Translate and solve: The quotient of $n$ and $\tfrac{2}{3}$ is $\tfrac{5}{12}$."
   answer="\frac{5}{18}"
-  answerDisplay="$\tfrac{5}{18}$"
-  hint="Translate to $n / \left(\tfrac{2}{3}\right) = \tfrac{5}{12}$, then multiply both sides by $\tfrac{2}{3}$."
+  answerForm="fraction lowest-terms"
+  answerDisplay="$n / \left(\tfrac{2}{3}\right) = \tfrac{5}{12}$; $n = \tfrac{5}{18}$"
+  hint="A quotient keeps the order of the phrase, the first quantity on top. Translate, then multiply both sides by the divisor and remove common factors."
 >}}
 
 **Example.** Translate and solve: "The sum of three-eighths and $x$ is
@@ -304,8 +319,9 @@ mixed number.
 {{< fillin
   question="Translate and solve: The sum of five-eighths and $x$ is one-fourth."
   answer="-\frac{3}{8}"
-  answerDisplay="$-\tfrac{3}{8}$"
-  hint="Translate to $\tfrac{5}{8} + x = \tfrac{1}{4}$, then subtract $\tfrac{5}{8}$ from both sides using a common denominator."
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{5}{8} + x = \tfrac{1}{4}$; $x = -\tfrac{3}{8}$"
+  hint="Translate 'the sum of' as addition, then subtract the fraction from both sides using the LCD."
 >}}
 
 ## Key terms
@@ -339,7 +355,7 @@ yes
 {{< multiplechoice
   question="Is $y = -\tfrac{3}{4}$ a solution of $y - \tfrac{1}{3} = \tfrac{5}{12}$?"
   answer="no"
-  hint="A negative value minus a positive value cannot equal a positive result — but check it with the LCD 12 to be sure."
+  hint="Substitute $-\tfrac{3}{4}$ for $y$, rewrite both fractions with the LCD 12, and compare the result with $\tfrac{5}{12}$."
 >}}
 yes
 no
@@ -348,7 +364,7 @@ no
 {{< multiplechoice
   question="Is $k = 1$ a solution of $k + \tfrac{2}{5} = \tfrac{5}{6}$?"
   answer="no"
-  hint="Substitute $1$ for $k$; the left side is more than 1, so compare it with $\tfrac{5}{6}$."
+  hint="Substitute $1$ for $k$, rewrite every term with the LCD 30, and compare the two sides."
 >}}
 yes
 no
@@ -377,6 +393,7 @@ yes
 {{< fillin
   question="Solve: $h + \tfrac{5}{6} = \tfrac{1}{6}$"
   answer="-\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{2}{3}$"
   hint="Subtract $\tfrac{5}{6}$ from both sides, then simplify the resulting fraction."
 >}}
@@ -384,12 +401,14 @@ yes
 {{< fillin
   question="Solve: $z - \left(-\tfrac{5}{12}\right) = -\tfrac{7}{12}$"
   answer="-1"
+  answerForm="decimal"
   hint="Subtracting a negative is adding, so the equation is $z + \tfrac{5}{12} = -\tfrac{7}{12}$."
 >}}
 
 {{< fillin
   question="Solve: $p - \tfrac{3}{10} = \tfrac{5}{8}$"
   answer="\frac{37}{40}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{37}{40}$"
   hint="Add $\tfrac{3}{10}$ to both sides, then rewrite both fractions with the LCD 40."
 >}}
@@ -397,6 +416,7 @@ yes
 {{< fillin
   question="Solve: $-9v = 33$"
   answer="-\frac{11}{3}"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$-\tfrac{11}{3}$"
   hint="Divide both sides by $-9$ and simplify; the solution stays a fraction."
 >}}
@@ -406,46 +426,53 @@ yes
 {{< fillin
   question="Solve: $\tfrac{b}{3} = -9$"
   answer="-27"
+  answerForm="decimal"
   hint="Multiply both sides by $3$ to undo the division."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{q}{-4} = -40$"
   answer="160"
-  hint="Multiply both sides by $-4$; a negative times a negative is positive."
+  answerForm="decimal"
+  hint="Multiply both sides by $-4$ to undo the division."
 >}}
 
 {{< fillin
   question="Solve: $-y = 42$"
   answer="-42"
+  answerForm="decimal"
   hint="What number has $42$ as its opposite?"
 >}}
 
 {{< fillin
   question="Solve: $-\tfrac{3}{7}b = 9$"
   answer="-21"
+  answerForm="decimal"
   hint="Multiply both sides by the reciprocal of $-\tfrac{3}{7}$, which is $-\tfrac{7}{3}$."
 >}}
 
 ### Translate sentences to equations and solve
 
 {{< fillin
-  question="Translate and solve: $m$ divided by -7 is -8."
+  question="Translate and solve: $m$ divided by $-7$ is $-8$."
   answer="56"
+  answerForm="decimal"
   answerDisplay="$\tfrac{m}{-7} = -8$; $m = 56$"
   hint="Divided by becomes a fraction bar, so multiply both sides by $-7$."
 >}}
 
 {{< fillin
-  question="Translate and solve: Two-fifths of $q$ is 20."
+  question="Translate and solve: Two-fifths of $q$ is $20$."
   answer="50"
+  answerForm="decimal"
   answerDisplay="$\tfrac{2}{5}q = 20$; $q = 50$"
-  hint="Of means multiply — write $\tfrac{2}{5}q$, then multiply both sides by $\tfrac{5}{2}$."
+  hint="Of means multiply. Translate, then multiply both sides by the reciprocal of the fraction coefficient."
 >}}
 
 {{< fillin
   question="Translate and solve: The quotient of $a$ and $\tfrac{2}{3}$ is $\tfrac{3}{4}$."
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$a / \left(\tfrac{2}{3}\right) = \tfrac{3}{4}$; $a = \tfrac{1}{2}$"
   hint="Quotient keeps the order of the phrase, so multiply both sides by $\tfrac{2}{3}$."
 >}}
@@ -453,10 +480,11 @@ yes
 {{< fillin
   question="Translate and solve: The difference of $y$ and one-third is $-\tfrac{1}{6}$."
   answer="\frac{1}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$y - \tfrac{1}{3} = -\tfrac{1}{6}$; $y = \tfrac{1}{6}$"
   hint="Difference keeps the order given, so add $\tfrac{1}{3}$ to both sides using the LCD 6."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.7: Solve Equations with Fractions](https://openstax.org/books/prealgebra-2e/pages/4-7-solve-equations-with-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding each multipart item into one exercise per part and restating the yes/no solution checks as multiple-choice questions.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.7: Solve Equations with Fractions](https://openstax.org/books/prealgebra-2e/pages/4-7-solve-equations-with-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, posing the first Try It as one yes/no question about one of its three values; and adapted selected end-of-section exercises into the interactive Practice block, expanding each multipart item into one exercise per part and restating the yes/no solution checks as multiple-choice questions.</small>

@@ -41,7 +41,7 @@ then included all the fractions? The numbers you would have form the set of
 All fractions, both positive and negative, are rational numbers. A few
 examples are
 
-$$\tfrac{4}{5}, -\tfrac{7}{8}, \tfrac{13}{4}, \text{ and } -\tfrac{20}{3}$$
+$$\tfrac{4}{5},\ {-\tfrac{7}{8}},\ \tfrac{13}{4},\ \text{and}\ {-\tfrac{20}{3}}$$
 
 Each numerator and each denominator is an integer.
 
@@ -54,7 +54,7 @@ Are integers rational numbers? To decide, we try to write each one as a
 ratio of two integers. An easy way to do this is to write it as a fraction
 with denominator one.
 
-$$3 = \tfrac{3}{1} \qquad -8 = \tfrac{-8}{1} \qquad 0 = \tfrac{0}{1}$$
+$$3 = \tfrac{3}{1} \qquad {-8} = \tfrac{-8}{1} \qquad 0 = \tfrac{0}{1}$$
 
 Since any integer can be written as the ratio of two integers, all integers
 are rational numbers. Remember that all the counting numbers and all the
@@ -72,14 +72,7 @@ $10$. It is a rational number.
 
 In general, any decimal that ends after a number of digits (such as $7.3$
 or $-1.2684$) is a rational number. We simply write it as a mixed number
-and then convert it to an improper fraction. Every one of the numbers we
-have used so far can be summarized this way:
-
-| | Fractions | Integers |
-| :--- | :--- | :--- |
-| Number | $\tfrac{4}{5}, -\tfrac{7}{8}, \tfrac{13}{4}, -\tfrac{20}{3}$ | $-2, -1, 0, 1, 2, 3$ |
-| Ratio of integers | $\tfrac{4}{5}, \tfrac{-7}{8}, \tfrac{13}{4}, \tfrac{-20}{3}$ | $\tfrac{-2}{1}, \tfrac{-1}{1}, \tfrac{0}{1}, \tfrac{1}{1}, \tfrac{2}{1}, \tfrac{3}{1}$ |
-| Decimal number | $0.8, -0.875, 3.25, -6.\overline{6}$ | $-2.0, -1.0, 0.0, 1.0, 2.0, 3.0$ |
+and then convert it to an improper fraction.
 
 **Example.** Write each as the ratio of two integers: (a) $-15$ (b) $6.81$
 (c) $-3\tfrac{6}{7}$.
@@ -102,7 +95,7 @@ $$-3\tfrac{6}{7} = -\tfrac{27}{7}$$
   answer="\frac{357}{100}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{357}{100}$"
-  hint="3.57 means 3 and 57 hundredths — write it as a mixed number, then convert to an improper fraction."
+  hint="Write the decimal as a mixed number, then convert the mixed number to an improper fraction, as in part (b) of the example above."
 >}}
 
 {{< fillin
@@ -110,7 +103,7 @@ $$-3\tfrac{6}{7} = -\tfrac{27}{7}$$
   answer="\frac{841}{100}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{841}{100}$"
-  hint="8.41 means 8 and 41 hundredths — write it as a mixed number, then convert to an improper fraction."
+  hint="Write the decimal as a mixed number, then convert the mixed number to an improper fraction."
 >}}
 
 Let's look at the decimal form of the numbers we know are rational. We have
@@ -123,13 +116,24 @@ We have also seen that every fraction is a rational number. Look at the
 decimal form of the fractions we just considered:
 
 $$
-\tfrac{4}{5} = 0.8 \qquad -\tfrac{7}{8} = -0.875 \qquad \tfrac{13}{4} =
-3.25 \qquad -\tfrac{20}{3} = -6.\overline{6}
+\begin{array}{rcl}
+\tfrac{4}{5} &=& 0.8 \\[4pt]
+-\tfrac{7}{8} &=& -0.875 \\[4pt]
+\tfrac{13}{4} &=& 3.25 \\[4pt]
+-\tfrac{20}{3} &=& -6.\overline{6}
+\end{array}
 $$
 
 These decimals either stop, or they repeat. What do these examples tell us?
 Every rational number can be written both as a ratio of integers and as a
-decimal that either stops or repeats.
+decimal that either stops or repeats. The table below shows the rational
+numbers we looked at expressed as a ratio of integers and as a decimal.
+
+| | Fractions | Integers |
+| :--- | :--- | :--- |
+| Number | $\tfrac{4}{5}, -\tfrac{7}{8}, \tfrac{13}{4}, -\tfrac{20}{3}$ | $-2, -1, 0, 1, 2, 3$ |
+| Ratio of integers | $\tfrac{4}{5}, \tfrac{-7}{8}, \tfrac{13}{4}, \tfrac{-20}{3}$ | $\tfrac{-2}{1}, \tfrac{-1}{1}, \tfrac{0}{1}, \tfrac{1}{1}, \tfrac{2}{1}, \tfrac{3}{1}$ |
+| Decimal number | $0.8, -0.875, 3.25, -6.\overline{6}$ | $-2.0, -1.0, 0.0, 1.0, 2.0, 3.0$ |
 
 ### Irrational numbers
 
@@ -172,15 +176,17 @@ no repeating pattern of digits. Since the number doesn't stop and doesn't
 repeat, it is irrational.
 
 {{< fillin
-  question="How many of these three numbers are irrational: $0.29$, $0.816666\ldots$ (the 6 repeats forever), and $2.515115111\ldots$?"
+  question="How many of these three numbers are irrational: $0.29$, $0.81\overline{6}$, and $2.515115111\ldots$?"
   answer="1"
-  hint="$0.29$ stops. $0.816666\ldots$ repeats. Only $2.515115111\ldots$ neither stops nor settles into a repeating pattern."
+  answerForm="decimal"
+  hint="Test each decimal: one that stops or repeats is rational, and one that does neither is irrational."
 >}}
 
 {{< fillin
-  question="How many of these three numbers are irrational: $0.233333\ldots$ (the 3 repeats forever), $0.125$, and $0.418302\ldots$?"
+  question="How many of these three numbers are irrational: $0.2\overline{3}$, $0.125$, and $0.418302\ldots$?"
   answer="1"
-  hint="$0.233333\ldots$ repeats and $0.125$ stops, so both are rational. Only $0.418302\ldots$ neither stops nor repeats."
+  answerForm="decimal"
+  hint="Apply the stop-or-repeat test to each number, reading the bar and the ellipsis as the example above does."
 >}}
 
 Let's think about square roots now. Square roots of perfect squares are
@@ -198,16 +204,17 @@ $\sqrt{36}$ (b) $\sqrt{44}$.
 square. This means $\sqrt{44}$ is irrational.
 
 {{< fillin
-  question="Evaluate $\sqrt{81}$."
-  answer="9"
+  question="How many of these two square roots are rational: $\sqrt{81}$ and $\sqrt{17}$?"
+  answer="1"
   answerForm="decimal"
-  hint="$81$ is a perfect square: $9 \cdot 9 = 81$."
+  hint="A square root of a whole number is rational only when the number under the radical is a perfect square — check each one."
 >}}
 
 {{< fillin
   question="How many of these two square roots are irrational: $\sqrt{116}$ and $\sqrt{121}$?"
   answer="1"
-  hint="$121 = 11^2$, a perfect square, so $\sqrt{121}$ is rational. $116$ is not a perfect square ($10^2 = 100$ and $11^2 = 121$)."
+  answerForm="decimal"
+  hint="Compare each number under the radical with the perfect squares near it."
 >}}
 
 ## Classify real numbers
@@ -284,15 +291,17 @@ We can summarize the results in a table:
 | $-\sqrt{64}$ | | ✓ | ✓ | | ✓ |
 
 {{< fillin
-  question="How many of these numbers are integers: $-3$, $-\sqrt{2}$, $0.3333\ldots$ (repeating), $\tfrac{9}{5}$, $4$, $\sqrt{49}$?"
+  question="How many of these numbers are integers: $-3$, $-\sqrt{2}$, $0.\overline{3}$, $\tfrac{9}{5}$, $4$, $\sqrt{49}$?"
   answer="3"
-  hint="$\sqrt{49} = 7$. Together with $-3$ and $4$, that's every integer in the list — the rest are irrational or non-integer fractions."
+  answerForm="decimal"
+  hint="Simplify any square root you can, then test each entry: the integers are the whole numbers, their opposites, and $0$."
 >}}
 
 {{< fillin
   question="How many of these numbers are whole numbers: $-\sqrt{25}$, $-\tfrac{3}{8}$, $-1$, $6$, $\sqrt{121}$, $2.041975\ldots$?"
   answer="2"
-  hint="Whole numbers are non-negative integers. $\sqrt{121} = 11$ and $6$ both qualify; $-\sqrt{25} = -5$ and $-1$ are negative."
+  answerForm="decimal"
+  hint="Simplify any square root you can, then test each entry against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
 
 ## Key terms
@@ -312,7 +321,7 @@ number that is either rational or irrational.
   answer="\frac{5}{1}"
   answerForm="fraction"
   answerDisplay="$\tfrac{5}{1}$"
-  hint="Any integer is already a ratio of integers — write it as a fraction with denominator $1$."
+  hint="Look back at how the section writes the integers $3$, $-8$, and $0$ as ratios of two integers."
 >}}
 
 {{< fillin
@@ -320,7 +329,7 @@ number that is either rational or irrational.
   answer="\frac{319}{100}"
   answerForm="fraction"
   answerDisplay="$\tfrac{319}{100}$"
-  hint="$3.19$ means $3$ and $19$ hundredths — write it as a mixed number, then convert to an improper fraction."
+  hint="Write the decimal as a mixed number, then convert the mixed number to an improper fraction."
 >}}
 
 {{< multiplechoice
@@ -335,7 +344,7 @@ rational
 {{< multiplechoice
   question="Is $0.22\overline{3}$ rational or irrational?"
   answer="rational"
-  hint="The bar over the $3$ says that digit repeats forever, so the decimal never stops but does settle into a pattern."
+  hint="Apply the stop-or-repeat test, and read what the bar over a digit means."
 >}}
 irrational
 rational
@@ -344,7 +353,7 @@ rational
 {{< multiplechoice
   question="Is $1.39174\ldots$ rational or irrational?"
   answer="irrational"
-  hint="The ellipsis says the decimal keeps going, and no block of digits repeats."
+  hint="Apply the stop-or-repeat test: read what the ellipsis means, and look for a block of digits that repeats."
 >}}
 irrational
 rational
@@ -362,7 +371,7 @@ irrational
 {{< multiplechoice
   question="Is $\sqrt{30}$ rational or irrational?"
   answer="irrational"
-  hint="$5^2 = 25$ and $6^2 = 36$, so check whether $30$ lands on a perfect square."
+  hint="List the perfect squares near $30$ and check whether $30$ is one of them."
 >}}
 irrational
 rational
@@ -373,39 +382,45 @@ rational
 {{< fillin
   question="How many of these numbers are whole numbers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
   answer="3"
+  answerForm="decimal"
   hint="Whole numbers are $0, 1, 2, 3, \ldots$ — simplify $\sqrt{36}$ before you decide."
 >}}
 
 {{< fillin
   question="How many of these numbers are integers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
   answer="4"
-  hint="The integers are the whole numbers together with their opposites, so the negative entry counts too."
+  answerForm="decimal"
+  hint="The integers are the whole numbers together with their opposites; simplify $\sqrt{36}$, then test each entry."
 >}}
 
 {{< fillin
   question="How many of these numbers are irrational: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
   answer="1"
-  hint="Only a decimal that neither stops nor repeats is irrational; every fraction and every perfect-square root here is rational."
+  answerForm="decimal"
+  hint="A number is irrational when its decimal form neither stops nor repeats; simplify any square root before you test it."
 >}}
 
 {{< fillin
   question="How many of these numbers are integers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
   answer="3"
+  answerForm="decimal"
   hint="Simplify $-\sqrt{100}$ first; then look for the entries with no fractional part."
 >}}
 
 {{< fillin
   question="How many of these numbers are whole numbers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
   answer="0"
-  hint="Whole numbers start at $0$ and go up, so nothing negative or fractional qualifies."
+  answerForm="decimal"
+  hint="Simplify $-\sqrt{100}$, then test each entry against the whole numbers $0, 1, 2, 3, \ldots$"
 >}}
 
 {{< fillin
   question="How many of these numbers are rational: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
   answer="6"
+  answerForm="decimal"
   hint="Check each one for a decimal that stops or repeats, or for a way to write it as a ratio of two integers."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.1: Rational and Irrational Numbers](https://openstax.org/books/prealgebra-2e/pages/7-1-rational-and-irrational-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the nested real-number-sets diagram as an accessible inline graphic; omitted the Be Prepared quiz, Self Check checklist, media links, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the rational-vs-irrational classification problems as counting questions so they can be graded as math expressions; and adapted selected end-of-section exercises into the interactive Practice block, restating the number-classification tables as counting prompts.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.1: Rational and Irrational Numbers](https://openstax.org/books/prealgebra-2e/pages/7-1-rational-and-irrational-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the nested real-number-sets diagram as an accessible inline graphic; omitted the chapter-opening review paragraphs, the Be Prepared quiz, Self Check checklist, media links, Everyday Math exercises, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the rational-vs-irrational classification problems as counting questions so they can be graded as math expressions; and adapted selected end-of-section exercises into the interactive Practice block, restating the number-classification tables as counting prompts.</small>

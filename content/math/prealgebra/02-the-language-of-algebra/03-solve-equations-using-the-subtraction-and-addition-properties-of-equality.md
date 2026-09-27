@@ -52,22 +52,28 @@ Substitute $5$ for $x$: $6(5) - 17 = 16$. Multiply: $30 - 17 = 16$. Subtract:
 $13 \ne 16$. Since the resulting statement is false, $x = 5$ is *not* a
 solution.
 
-{{< fillin
-  question="Is $x = 2$ a solution of $6x - 2 = 10$? Enter the value of the left side, $6x - 2$, when $x = 2$."
-  answer="10"
-  hint="Substitute $2$ for $x$: $6(2) - 2$."
+{{< multiplechoice
+  question="Is $x = 2$ a solution of $6x - 2 = 10$?"
+  answer="yes"
+  hint="Substitute $2$ for $x$, multiply before you subtract, and compare the result with the right side."
 >}}
+no
+yes
+{{< /multiplechoice >}}
 
 **Example.** Determine whether $y = 2$ is a solution of $6y - 4 = 5y - 2$.
 Here the variable appears on both sides, so substitute $2$ for each $y$:
 $6(2) - 4 = 5(2) - 2$. Multiply: $12 - 4 = 10 - 2$. Subtract: $8 = 8$, a true
 statement — so $y = 2$ is a solution.
 
-{{< fillin
-  question="Is $y = 3$ a solution of $9y - 2 = 8y + 1$? Enter the common value of both sides when $y = 3$, if they are equal — otherwise enter $0$."
-  answer="25"
-  hint="Left side: $9(3) - 2$. Right side: $8(3) + 1$. Are they equal?"
+{{< multiplechoice
+  question="Is $y = 3$ a solution of $9y - 2 = 8y + 1$?"
+  answer="yes"
+  hint="The variable appears on both sides, so substitute $3$ for every $y$, simplify each side separately, and compare."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 ## Solve equations using the Subtraction Property of Equality
 
@@ -100,14 +106,16 @@ is on — subtract $74$ from both sides: $100 - 74 = y + 74 - 74$. Simplify:
 $26 = y$. **Check:** $100 = 26 + 74$. ✓
 
 {{< fillin
-  question="Solve: $x + 6 = 19$"
+  question="Solve: $x + 6 = 19$. Enter the value of $x$."
   answer="13"
+  answerForm="decimal"
   hint="Subtract $6$ from both sides to isolate $x$."
 >}}
 
 {{< fillin
-  question="Solve: $95 = y + 67$"
+  question="Solve: $95 = y + 67$. Enter the value of $y$."
   answer="28"
+  answerForm="decimal"
   hint="Subtract $67$ from both sides. It doesn't matter that the variable is on the right."
 >}}
 
@@ -141,14 +149,16 @@ $x - 5 + 5 = 8 + 5$. Simplify: $x = 13$. **Check:** $13 - 5 = 8$. ✓
 $27 + 16 = a - 16 + 16$. Simplify: $43 = a$. **Check:** $27 = 43 - 16$. ✓
 
 {{< fillin
-  question="Solve: $x - 9 = 13$"
+  question="Solve: $x - 9 = 13$. Enter the value of $x$."
   answer="22"
+  answerForm="decimal"
   hint="Add $9$ to both sides to isolate $x$."
 >}}
 
 {{< fillin
-  question="Solve: $19 = a - 18$"
+  question="Solve: $19 = a - 18$. Enter the value of $a$."
   answer="37"
+  answerForm="decimal"
   hint="Add $18$ to both sides."
 >}}
 
@@ -169,6 +179,7 @@ marks the equal sign: $6 + 9 = 15$.
   question="Translate into an algebraic equation: The sum of $7$ and $6$ gives $13$."
   answer="7 + 6 = 13"
   answerDisplay="$7 + 6 = 13$"
+  answerForm="translation"
   hint="'Gives' marks the equal sign."
 >}}
 
@@ -179,6 +190,7 @@ $8 \cdot 7 = 56$.
   question="Translate into an algebraic equation: The product of $6$ and $9$ is $54$."
   answer="6 \cdot 9 = 54"
   answerDisplay="$6 \cdot 9 = 54$"
+  answerForm="translation"
   hint="'Product' means multiplication."
 >}}
 
@@ -190,7 +202,8 @@ difference is doubled, so it needs parentheses: $2(x - 3) = 18$.
   question="Translate into an algebraic equation: Twice the difference of $y$ and $4$ gives $16$."
   answer="2(y - 4) = 16"
   answerDisplay="$2(y - 4) = 16$"
-  hint="The whole difference $y - 4$ is doubled, so it needs parentheses."
+  answerForm="translation"
+  hint="'Twice' multiplies the whole difference by $2$, so put the difference in parentheses before you multiply."
 >}}
 
 ## Translate to an equation and solve
@@ -207,15 +220,17 @@ Translate: $y - 14 = 18$. Add $14$ to both sides: $y - 14 + 14 = 18 + 14$.
 Simplify: $y = 32$. **Check:** $32 - 14 = 18$. ✓
 
 {{< fillin
-  question="Translate and solve: Seven more than $x$ is equal to $37$."
+  question="Translate and solve: Seven more than $x$ is equal to $37$. Enter the value of $x$."
   answer="30"
-  hint="Translate to $x + 7 = 37$, then subtract $7$ from both sides."
+  answerForm="decimal"
+  hint="'More than' means add to $x$, and 'is equal to' marks the equal sign. Write the equation, then use the Subtraction Property of Equality to isolate $x$."
 >}}
 
 {{< fillin
-  question="Translate and solve: The difference of $z$ and $17$ is equal to $37$."
+  question="Translate and solve: The difference of $z$ and $17$ is equal to $37$. Enter the value of $z$."
   answer="54"
-  hint="Translate to $z - 17 = 37$, then add $17$ to both sides."
+  answerForm="decimal"
+  hint="'Difference of' means subtract, in the order the sentence names the two quantities. Write the equation, then use the Addition Property of Equality to isolate $z$."
 >}}
 
 ## Key terms
@@ -261,7 +276,7 @@ no
 {{< multiplechoice
   question="Is $p = 7$ a solution of $3p + 6 = 15$?"
   answer="no"
-  hint="Substitute $7$ for $p$ and simplify $3(7) + 6$. Compare that value with $15$."
+  hint="Substitute $7$ for $p$, simplify the left side, and compare the result with $15$."
 >}}
 yes
 no
@@ -279,7 +294,7 @@ no
 {{< multiplechoice
   question="Is $u = 11$ a solution of $8u - 4 = 4u + 40$?"
   answer="yes"
-  hint="Substitute $11$ for every $u$, simplify $8(11) - 4$ and $4(11) + 40$, then compare the two results."
+  hint="Substitute $11$ for every $u$, simplify each side separately, then compare the two results."
 >}}
 no
 yes
@@ -288,40 +303,46 @@ yes
 ### Solve equations using the Subtraction Property of Equality
 
 {{< fillin
-  question="Solve using the Subtraction Property of Equality: $p + 18 = 23$"
+  question="Solve using the Subtraction Property of Equality: $p + 18 = 23$. Enter the value of $p$."
   answer="5"
+  answerForm="decimal"
   hint="Subtract $18$ from both sides. Check that your value plus $18$ gives $23$."
 >}}
 
 {{< fillin
-  question="Solve using the Subtraction Property of Equality: $93 = p + 24$"
+  question="Solve using the Subtraction Property of Equality: $93 = p + 24$. Enter the value of $p$."
   answer="69"
+  answerForm="decimal"
   hint="The variable is on the right, which changes nothing — subtract $24$ from both sides, then check by adding $24$ back."
 >}}
 
 {{< fillin
-  question="Solve using the Subtraction Property of Equality: $465 = d + 398$"
+  question="Solve using the Subtraction Property of Equality: $465 = d + 398$. Enter the value of $d$."
   answer="67"
+  answerForm="decimal"
   hint="Subtract $398$ from both sides. Check that your value plus $398$ gives $465$."
 >}}
 
 ### Solve equations using the Addition Property of Equality
 
 {{< fillin
-  question="Solve using the Addition Property of Equality: $f - 55 = 123$"
+  question="Solve using the Addition Property of Equality: $f - 55 = 123$. Enter the value of $f$."
   answer="178"
+  answerForm="decimal"
   hint="Add $55$ to both sides to undo the subtraction. Check by subtracting $55$ from your value."
 >}}
 
 {{< fillin
-  question="Solve using the Addition Property of Equality: $10 = p - 38$"
+  question="Solve using the Addition Property of Equality: $10 = p - 38$. Enter the value of $p$."
   answer="48"
+  answerForm="decimal"
   hint="The variable is on the right; add $38$ to both sides. Check that your value minus $38$ gives $10$."
 >}}
 
 {{< fillin
-  question="Solve using the Addition Property of Equality: $268 = y - 199$"
+  question="Solve using the Addition Property of Equality: $268 = y - 199$. Enter the value of $y$."
   answer="467"
+  answerForm="decimal"
   hint="Add $199$ to both sides. Check that your value minus $199$ gives $268$."
 >}}
 
@@ -331,6 +352,7 @@ yes
   question="Translate into an algebraic equation: The difference of $23$ and $19$ is equal to $4$."
   answer="23 - 19 = 4"
   answerDisplay="$23 - 19 = 4$"
+  answerForm="translation"
   hint="'Difference' means subtraction, and it keeps the numbers in the order the sentence names them."
 >}}
 
@@ -338,6 +360,7 @@ yes
   question="Translate into an algebraic equation: The quotient of $54$ and $6$ is equal to $9$."
   answer="54 \div 6 = 9"
   answerDisplay="$54 \div 6 = 9$"
+  answerForm="translation"
   hint="'Quotient' means division, and the first number named is the one being divided."
 >}}
 
@@ -345,6 +368,7 @@ yes
   question="Translate into an algebraic equation: Twice the difference of $n$ and $10$ gives $52$."
   answer="2(n - 10) = 52"
   answerDisplay="$2(n - 10) = 52$"
+  answerForm="translation"
   hint="'Twice' doubles the entire difference, so the difference needs parentheses around it."
 >}}
 
@@ -352,32 +376,36 @@ yes
   question="Translate into an algebraic equation: The sum of three times $y$ and $10$ is $100$."
   answer="3y + 10 = 100"
   answerDisplay="$3y + 10 = 100$"
-  hint="'Three times $y$' is $3y$; the sum adds $10$ to it, and 'is' marks the equal sign."
+  answerForm="translation"
+  hint="Translate one phrase at a time: 'times' means multiply, 'the sum of … and …' means add, and 'is' marks the equal sign."
 >}}
 
 ### Translate to an equation and solve
 
 {{< fillin
-  question="Translate into an algebraic equation and solve: The sum of $r$ and $18$ is $73$."
+  question="Translate into an algebraic equation and solve: The sum of $r$ and $18$ is $73$. Enter the value of $r$."
   answer="55"
+  answerForm="decimal"
   answerDisplay="$r + 18 = 73$, so $r = 55$"
-  hint="'The sum of $r$ and $18$' is $r + 18$. Once you have the equation, subtract $18$ from both sides."
+  hint="'Sum' means add, and 'is' marks the equal sign. Write the equation, then use the Subtraction Property of Equality to isolate $r$."
 >}}
 
 {{< fillin
-  question="Translate into an algebraic equation and solve: $12$ less than $u$ is $89$."
+  question="Translate into an algebraic equation and solve: $12$ less than $u$ is $89$. Enter the value of $u$."
   answer="101"
+  answerForm="decimal"
   answerDisplay="$u - 12 = 89$, so $u = 101$"
-  hint="'Less than' reverses the order — $12$ less than $u$ is $u - 12$. Then add $12$ to both sides."
+  hint="'Less than' reverses the order: the number named first is subtracted from the quantity named second. Write the equation, then use the Addition Property of Equality to isolate $u$."
 >}}
 
 {{< fillin
-  question="Translate into an algebraic equation and solve: $325$ less than $c$ gives $799$."
+  question="Translate into an algebraic equation and solve: $325$ less than $c$ gives $799$. Enter the value of $c$."
   answer="1124"
+  answerForm="decimal"
   answerDisplay="$c - 325 = 799$, so $c = 1{,}124$"
-  hint="The equation is $c - 325 = 799$. Add $325$ to both sides, then check by subtracting $325$ from your value."
+  hint="'Less than' reverses the order of the subtraction, and 'gives' marks the equal sign. Write the equation, then use the Addition Property of Equality to isolate $c$."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.3: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/2-3-solving-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, replaced the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.3: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/2-3-solving-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose; omitted the Be Prepared quiz and the "Model the Subtraction Property of Equality" objective — its envelope-and-counters figures, example, Try Its, and exercises — introducing the Subtraction Property of Equality directly instead; converted practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

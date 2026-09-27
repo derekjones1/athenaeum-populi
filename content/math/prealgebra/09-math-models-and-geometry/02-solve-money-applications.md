@@ -78,7 +78,12 @@ $$0.10d + 0.05(d + 9) = 2.25$$
 
 Distributing and combining like terms:
 
-$$0.10d + 0.05d + 0.45 = 2.25 \qquad\Rightarrow\qquad 0.15d + 0.45 = 2.25$$
+$$
+\begin{array}{rcl}
+0.10d + 0.05d + 0.45 &=& 2.25 \\[4pt]
+0.15d + 0.45 &=& 2.25
+\end{array}
+$$
 
 Subtracting $0.45$ from each side and dividing by $0.15$ gives $d = 12$
 dimes, so the number of nickels is $d + 9 = 21$. Checking: $12$ dimes is
@@ -110,13 +115,15 @@ nickels.
 {{< fillin
   question="Michaela has \$2.05 in dimes and nickels in her change purse. She has seven more dimes than nickels. How many nickels does she have?"
   answer="9"
-  hint="Let $n =$ number of nickels, so $n + 7$ is the number of dimes. Translate as $0.05n + 0.10(n + 7) = 2.05$, then solve for $n$."
+  answerForm="decimal"
+  hint="Let $n$ be the number of nickels and write the number of dimes in terms of $n$. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 {{< fillin
   question="Liliana has \$2.10 in nickels and quarters in her backpack. She has 12 more nickels than quarters. How many quarters does she have?"
   answer="5"
-  hint="Let $q =$ number of quarters, so $q + 12$ is the number of nickels. Translate as $0.25q + 0.05(q + 12) = 2.10$, then solve for $q$."
+  answerForm="decimal"
+  hint="Let $q$ be the number of quarters and write the number of nickels in terms of $q$. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 Sometimes the relationship between the two types of coins involves a
@@ -135,8 +142,11 @@ Let $q =$ the number of quarters, so the number of pennies is $2q$.
 | | | | $2.43$ |
 
 $$
-0.25q + 0.01(2q) = 2.43 \qquad\Rightarrow\qquad 0.25q + 0.02q = 2.43
-\qquad\Rightarrow\qquad 0.27q = 2.43
+\begin{array}{rcl}
+0.25q + 0.01(2q) &=& 2.43 \\[4pt]
+0.25q + 0.02q &=& 2.43 \\[4pt]
+0.27q &=& 2.43
+\end{array}
 $$
 
 Dividing by $0.27$ gives $q = 9$ quarters, so the number of pennies is
@@ -148,13 +158,15 @@ $\text{\textdollar}2.43$. Maria has nine quarters and eighteen pennies.
 {{< fillin
   question="Sumanta has \$4.20 in nickels and dimes in her desk drawer. She has twice as many nickels as dimes. How many dimes does she have?"
   answer="21"
-  hint="Let $d =$ number of dimes, so $2d$ is the number of nickels. Translate as $0.10d + 0.05(2d) = 4.20$, then solve for $d$."
+  answerForm="decimal"
+  hint="Let $d$ be the number of dimes and write the number of nickels as a multiple of $d$. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 {{< fillin
   question="Alison has three times as many dimes as quarters in her purse. She has \$9.35 altogether. How many quarters does she have?"
   answer="17"
-  hint="Let $q =$ number of quarters, so $3q$ is the number of dimes. Translate as $0.25q + 0.10(3q) = 9.35$, then solve for $q$."
+  answerForm="decimal"
+  hint="Let $q$ be the number of quarters and write the number of dimes as a multiple of $q$. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 In the next example, the number of nickels is described as "two more than
@@ -175,13 +187,13 @@ Let $p =$ number of pennies, so $10p + 2 =$ number of nickels.
 | | | | $2.14$ |
 
 $$
-0.01p + 0.05(10p + 2) = 2.14 \qquad\Rightarrow\qquad 0.01p + 0.50p + 0.10
-= 2.14
-$$
-
-$$
-0.51p + 0.10 = 2.14 \qquad\Rightarrow\qquad 0.51p = 2.04
-\qquad\Rightarrow\qquad p = 4 \text{ pennies}
+\begin{array}{rcl}
+0.01p + 0.05(10p + 2) &=& 2.14 \\[4pt]
+0.01p + 0.50p + 0.10 &=& 2.14 \\[4pt]
+0.51p + 0.10 &=& 2.14 \\[4pt]
+0.51p &=& 2.04 \\[4pt]
+p &=& 4 \text{ pennies}
+\end{array}
 $$
 
 The number of nickels is $10(4) + 2 = 42$. Checking:
@@ -191,13 +203,15 @@ nickels.
 {{< fillin
   question="Jesse has \$6.55 worth of quarters and nickels in his pocket. The number of nickels is five more than two times the number of quarters. How many quarters does he have?"
   answer="18"
-  hint="Let $q =$ number of quarters, so $2q + 5$ is the number of nickels. Translate as $0.25q + 0.05(2q + 5) = 6.55$, then solve for $q$."
+  answerForm="decimal"
+  hint="The nickels are described in terms of the quarters, so let $q$ be the number of quarters and translate the clue into an expression for the nickels. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 {{< fillin
   question="Elaine has \$7.00 in dimes and nickels in her coin jar. The number of dimes she has is seven less than three times the number of nickels. How many nickels does she have?"
   answer="22"
-  hint="Let $n =$ number of nickels, so $3n - 7$ is the number of dimes. Translate as $0.10(3n - 7) + 0.05n = 7.00$, then solve for $n$."
+  answerForm="decimal"
+  hint="The dimes are described in terms of the nickels, so let $n$ be the number of nickels and translate the clue into an expression for the dimes. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 ## Solve ticket and stamp word problems
@@ -223,11 +237,14 @@ tickets.
 | Adult | $3s - 5$ | $9$ | $9(3s - 5)$ |
 | | | | $1{,}506$ |
 
-$$6s + 9(3s - 5) = 1506 \qquad\Rightarrow\qquad 6s + 27s - 45 = 1506$$
-
 $$
-33s - 45 = 1506 \qquad\Rightarrow\qquad 33s = 1551
-\qquad\Rightarrow\qquad s = 47 \text{ students}
+\begin{array}{rcl}
+6s + 9(3s - 5) &=& 1{,}506 \\[4pt]
+6s + 27s - 45 &=& 1{,}506 \\[4pt]
+33s - 45 &=& 1{,}506 \\[4pt]
+33s &=& 1{,}551 \\[4pt]
+s &=& 47 \text{ students}
+\end{array}
 $$
 
 Substituting to find the number of adults: $3(47) - 5 = 136$ adults.
@@ -240,13 +257,15 @@ tickets.
 {{< fillin
   question="The first day of a water polo tournament, the total value of tickets sold was \$17,610. One-day passes sold for \$20 and tournament passes sold for \$30. The number of tournament passes sold was 37 more than the number of day passes sold. How many day passes were sold?"
   answer="330"
-  hint="Let $d =$ number of day passes, so $d + 37$ is the number of tournament passes. Translate as $20d + 30(d + 37) = 17{,}610$, then solve for $d$."
+  answerForm="decimal"
+  hint="Let $d$ be the number of day passes and write the number of tournament passes in terms of $d$. Multiply each number by its price, set the sum equal to the total value, and solve."
 >}}
 
 {{< fillin
   question="At the movie theater, the total value of tickets sold was \$2,612.50. Adult tickets sold for \$10 each and senior/child tickets sold for \$7.50 each. The number of senior/child tickets sold was 25 less than twice the number of adult tickets sold. How many adult tickets were sold?"
   answer="112"
-  hint="Let $a =$ number of adult tickets, so $2a - 25$ is the number of senior/child tickets. Translate as $10a + 7.5(2a - 25) = 2612.50$, then solve for $a$."
+  answerForm="decimal"
+  hint="The senior/child tickets are described in terms of the adult tickets, so let $a$ be the number of adult tickets and translate the clue into an expression for the others. Multiply each number by its price, set the sum equal to the total value, and solve."
 >}}
 
 Stamp problems work exactly like coin and ticket problems.
@@ -266,13 +285,13 @@ stamps.
 | | | | $10.44$ |
 
 $$
-0.49(2x + 4) + 0.08x = 10.44 \qquad\Rightarrow\qquad 0.98x + 1.96 + 0.08x
-= 10.44
-$$
-
-$$
-1.06x + 1.96 = 10.44 \qquad\Rightarrow\qquad 1.06x = 8.48
-\qquad\Rightarrow\qquad x = 8
+\begin{array}{rcl}
+0.49(2x + 4) + 0.08x &=& 10.44 \\[4pt]
+0.98x + 1.96 + 0.08x &=& 10.44 \\[4pt]
+1.06x + 1.96 &=& 10.44 \\[4pt]
+1.06x &=& 8.48 \\[4pt]
+x &=& 8
+\end{array}
 $$
 
 Monica bought $8$ eight-cent stamps. The number of $49$-cent stamps is
@@ -282,13 +301,15 @@ Monica bought eight $8$-cent stamps and twenty $49$-cent stamps.
 {{< fillin
   question="Eric paid \$16.64 for stamps so he could mail thank you notes for his wedding gifts. The number of 49-cent stamps was eight more than twice the number of 8-cent stamps. How many 8-cent stamps did Eric buy?"
   answer="12"
-  hint="Let $x =$ number of 8-cent stamps, so $2x + 8$ is the number of 49-cent stamps. Translate as $0.49(2x + 8) + 0.08x = 16.64$, then solve for $x$."
+  answerForm="decimal"
+  hint="The 49-cent stamps are described in terms of the 8-cent stamps, so let $x$ be the number of 8-cent stamps and translate the clue into an expression for the 49-cent stamps. Multiply each number by its value in dollars, set the sum equal to the total, and solve."
 >}}
 
 {{< fillin
   question="Kailee paid \$14.84 for stamps. The number of 49-cent stamps was four less than three times the number of 21-cent stamps. How many 21-cent stamps did Kailee buy?"
   answer="10"
-  hint="Let $x =$ number of 21-cent stamps, so $3x - 4$ is the number of 49-cent stamps. Translate as $0.49(3x - 4) + 0.21x = 14.84$, then solve for $x$."
+  answerForm="decimal"
+  hint="The 49-cent stamps are described in terms of the 21-cent stamps, so let $x$ be the number of 21-cent stamps and translate the clue into an expression for the 49-cent stamps. Multiply each number by its value in dollars, set the sum equal to the total, and solve."
 >}}
 
 ## Key terms
@@ -306,29 +327,33 @@ coin word problem, with ticket or stamp prices in place of coin values.
 {{< fillin
   question="Jaime has \$2.60 in dimes and nickels. The number of dimes is 14 more than the number of nickels. How many of each coin does he have? Enter the number of nickels and the number of dimes, separated by a comma."
   answer="8,22"
+  answerForm="decimal"
   answerDisplay="8 nickels, 22 dimes"
-  hint="Let $n =$ number of nickels, so $n + 14$ is the number of dimes. Translate as $0.05n + 0.10(n + 14) = 2.60$."
+  hint="Let $n$ be the number of nickels and write the number of dimes in terms of $n$. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 {{< fillin
   question="Carolyn has \$2.55 in her purse in nickels and dimes. The number of nickels is 9 less than three times the number of dimes. Find the number of each type of coin. Enter the number of dimes and the number of nickels, separated by a comma."
   answer="12,27"
+  answerForm="decimal"
   answerDisplay="12 dimes, 27 nickels"
-  hint="Let $d =$ number of dimes, so $3d - 9$ is the number of nickels. Translate as $0.10d + 0.05(3d - 9) = 2.55$."
+  hint="The nickels are described in terms of the dimes, so let $d$ be the number of dimes and translate the clue into an expression for the nickels. Multiply each number by its coin's value, set the sum equal to the total value, and solve."
 >}}
 
 {{< fillin
   question="A cash box of \$1 and \$5 bills is worth \$45. The number of \$1 bills is 3 more than the number of \$5 bills. How many of each bill does it contain? Enter the number of \$1 bills and the number of \$5 bills, separated by a comma."
   answer="10,7"
+  answerForm="decimal"
   answerDisplay="10 of the \$1 bills, 7 of the \$5 bills"
-  hint="Let $f =$ number of five-dollar bills, so $f + 3$ is the number of one-dollar bills. Each bill's value is its own face value, so translate as $1(f + 3) + 5f = 45$."
+  hint="Treat bills like coins: each bill's value is its face value. Let $f$ be the number of five-dollar bills, write the number of one-dollar bills in terms of $f$, and set the sum of the total values equal to the box's worth."
 >}}
 
 {{< fillin
   question="Mukul has \$3.75 in quarters, dimes, and nickels in his pocket. He has five more dimes than quarters and nine more nickels than quarters. How many of each coin are in his pocket? Enter the number of quarters, the number of dimes, and the number of nickels, separated by commas."
   answer="7,12,16"
+  answerForm="decimal"
   answerDisplay="7 quarters, 12 dimes, 16 nickels"
-  hint="Both clues compare to the quarters, so let $q =$ number of quarters, $q + 5 =$ number of dimes, and $q + 9 =$ number of nickels. Translate as $0.25q + 0.10(q + 5) + 0.05(q + 9) = 3.75$."
+  hint="Both clues compare to the quarters, so let $q$ be the number of quarters and write the dimes and the nickels in terms of $q$. Add the three total values, set the sum equal to the total, and solve."
 >}}
 
 ### Solve ticket and stamp word problems
@@ -336,38 +361,43 @@ coin word problem, with ticket or stamp prices in place of coin values.
 {{< fillin
   question="The play took in \$550 one night. The number of \$8 adult tickets was 10 less than twice the number of \$5 child tickets. How many of each ticket were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
   answer="30,50"
+  answerForm="decimal"
   answerDisplay="30 child tickets, 50 adult tickets"
-  hint="The adult count is described in terms of the child count, so let $c =$ number of child tickets and $2c - 10 =$ number of adult tickets. Translate as $5c + 8(2c - 10) = 550$."
+  hint="The adult count is described in terms of the child count, so let $c$ be the number of child tickets and translate the clue into an expression for the adult tickets. Multiply each number by its price, set the sum equal to the night's take, and solve."
 >}}
 
 {{< fillin
   question="The movie theater took in \$1,220 one Monday night. The number of \$7 child tickets was ten more than twice the number of \$9 adult tickets. How many of each were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
   answer="110,50"
+  answerForm="decimal"
   answerDisplay="110 child tickets, 50 adult tickets"
-  hint="Let $a =$ number of adult tickets, so $2a + 10$ is the number of child tickets. Translate as $7(2a + 10) + 9a = 1{,}220$."
+  hint="The child count is described in terms of the adult count, so let $a$ be the number of adult tickets and translate the clue into an expression for the child tickets. Multiply each number by its price, set the sum equal to the night's take, and solve."
 >}}
 
 {{< fillin
-  question="Julie went to the post office and bought both \$0.49 stamps and \$0.34 postcards for her office's bills. She spent \$62.60. The number of stamps was 20 more than twice the number of postcards. How many postcards did she buy?"
-  answer="40"
-  answerDisplay="40 postcards"
-  hint="Let $p =$ number of postcards, so $2p + 20$ is the number of stamps. Translate as $0.34p + 0.49(2p + 20) = 62.60$."
->}}
-
-{{< fillin
-  question="Julie went to the post office and bought both \$0.49 stamps and \$0.34 postcards for her office's bills. She spent \$62.60. The number of stamps was 20 more than twice the number of postcards. How many stamps did she buy?"
-  answer="100"
-  answerDisplay="100 stamps"
-  hint="Once you know the number of postcards, the number of stamps is $20$ more than twice that."
+  question="Julie went to the post office and bought both \$0.49 stamps and \$0.34 postcards for her office's bills. She spent \$62.60. The number of stamps was 20 more than twice the number of postcards. How many of each did she buy? Enter the number of stamps and the number of postcards, separated by a comma."
+  answer="100,40"
+  answerForm="decimal"
+  answerDisplay="100 stamps, 40 postcards"
+  hint="The stamps are described in terms of the postcards, so let $p$ be the number of postcards and translate the clue into an expression for the stamps. Multiply each number by its price, set the sum equal to what she spent, and solve."
 >}}
 
 {{< fillin
   question="Maria spent \$16.80 at the post office. She bought three times as many \$0.49 stamps as \$0.21 stamps. How many of each did she buy? Enter the number of 49-cent stamps and the number of 21-cent stamps, separated by a comma."
   answer="30,10"
+  answerForm="decimal"
   answerDisplay="30 at 49 cents, 10 at 21 cents"
-  hint="Name the smaller group first: let $x =$ number of 21-cent stamps, so $3x$ is the number of 49-cent stamps. Translate as $0.21x + 0.49(3x) = 16.80$."
+  hint="The 49-cent stamps are described as a multiple of the 21-cent stamps, so let $x$ be the number of 21-cent stamps and write the 49-cent count in terms of $x$. Multiply each number by its price, set the sum equal to what she spent, and solve."
+>}}
+
+{{< fillin
+  question="Hilda has \$210 worth of \$10 and \$12 stock shares. The number of \$10 shares is 5 more than twice the number of \$12 shares. How many of each does she have? Enter the number of \$10 shares and the number of \$12 shares, separated by a comma."
+  answer="15,5"
+  answerForm="decimal"
+  answerDisplay="15 of the \$10 shares, 5 of the \$12 shares"
+  hint="Shares work like tickets: each share's value is its price. The \$10 shares are described in terms of the \$12 shares, so let $x$ be the number of \$12 shares and translate the clue into an expression for the \$10 shares; then add the total values."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.2: Solve Money Applications](https://openstax.org/books/prealgebra-2e/pages/9-2-solve-money-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the number/value/total-value worksheets as tables; omitted the Be Prepared quiz and the coin photograph; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating each "how many of each" answer as a single comma-separated response in a stated order.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.2: Solve Money Applications](https://openstax.org/books/prealgebra-2e/pages/9-2-solve-money-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose and the worked examples' step-by-step solutions; recreated the number/value/total-value worksheets as tables; added a short Key terms list, which the module does not have; omitted the Be Prepared quiz, the coin photograph, the Key Concepts summary (its two procedures appear in the body's callouts), and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback, each asking for one of the two counts; and adapted selected end-of-section exercises into the interactive Practice block, restating each "how many of each" answer as a single comma-separated response in a stated order, adding a missing period to the Julie exercise, and correcting "The numbers of \$10 shares is" to "The number of \$10 shares is" in the Hilda exercise.</small>

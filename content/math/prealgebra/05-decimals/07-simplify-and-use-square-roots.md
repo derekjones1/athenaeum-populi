@@ -157,19 +157,21 @@ is not a real number.
 of the square root of $121$: $-\sqrt{121} = -11$.
 
 {{< multiplechoice
-  question="Is there a real number whose square is $-49$ (in other words, is $\sqrt{-49}$ a real number)?"
-  answer="no"
-  hint="Any real number's square is always positive or zero, so no real number squared can equal a negative number."
+  question="Simplify: $\sqrt{-196}$"
+  answer="not a real number"
+  hint="Square a positive number and a negative number, and compare the sign of each result with the sign of the radicand."
 >}}
-no
-yes
+$14$
+$-14$
+$\pm 14$
+not a real number
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Simplify: $-\sqrt{121}$"
-  answer="-11"
+  question="Simplify: $-\sqrt{81}$"
+  answer="-9"
   answerForm="simplified-radical"
-  hint="Find the positive square root of $121$, then place a negative sign in front."
+  hint="Find the positive square root of $81$, then place a negative sign in front."
 >}}
 
 ### Square roots and the order of operations
@@ -190,15 +192,15 @@ order of operations correctly.
 {{< fillin
   question="Simplify: $\sqrt{9} + \sqrt{16}$"
   answer="7"
-  answerForm="simplified-radical"
-  hint="Take each square root first, then add: $3 + 4$."
+  answerForm="decimal"
+  hint="Take each square root first, then add the two results."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{9 + 16}$"
   answer="5"
   answerForm="decimal"
-  hint="Add under the radical sign first ($9 + 16 = 25$), then take the square root."
+  hint="Treat the radical sign as a grouping symbol: add under it first, then take the square root of the sum."
 >}}
 
 ## Estimate square roots
@@ -219,13 +221,15 @@ their square roots: $7 < \sqrt{60} < 8$.
 {{< fillin
   question="Estimate $\sqrt{38}$ between two consecutive whole numbers. Enter the smaller of the two."
   answer="6"
-  hint="$38$ is between the perfect squares $36$ and $49$, so its square root is between their square roots."
+  answerForm="decimal"
+  hint="Find the perfect squares just below and just above $38$; the square root lies between their square roots."
 >}}
 
 {{< fillin
   question="Estimate $\sqrt{84}$ between two consecutive whole numbers. Enter the smaller of the two."
   answer="9"
-  hint="$84$ is between the perfect squares $81$ and $100$, so its square root is between their square roots."
+  answerForm="decimal"
+  hint="Find the perfect squares just below and just above $84$; the square root lies between their square roots."
 >}}
 
 ## Approximate square roots with a calculator
@@ -240,14 +244,14 @@ The symbol for an approximation is $\approx$ and it is read *approximately*.
 Suppose your calculator has a $10$-digit display. Using it to find the
 square root of $5$ will give $2.236067977$. This is the approximate square
 root of $5$. When we report the answer, we should use the "approximately
-equal to" sign instead of an equal sign: $\sqrt{5} \approx 2.236067978$.
+equal to" sign instead of an equal sign: $\sqrt{5} \approx 2.236067977$.
 
 You will seldom use this many digits for applications in algebra. So, if
 you wanted to round $\sqrt{5}$ to two decimal places, you would write
 $\sqrt{5} \approx 2.24$.
 
 How do we know these values are approximations and not the exact values?
-Look at what happens when we square them: $2.236067978^2 = 5.000000002$ and
+Look at what happens when we square them: $2.236067977^2 \approx 4.999999998$ and
 $2.24^2 = 5.0176$. The squares are close, but not exactly equal, to $5$.
 
 **Example.** Round $\sqrt{17}$ to two decimal places using a calculator.
@@ -258,12 +262,14 @@ places: $\sqrt{17} \approx 4.12$.
 {{< fillin
   question="Round $\sqrt{11}$ to two decimal places."
   answer="3.32"
+  answerForm="decimal"
   hint="Use a calculator to find the square root of $11$, then round to two decimal places."
 >}}
 
 {{< fillin
   question="Round $\sqrt{13}$ to two decimal places."
   answer="3.61"
+  answerForm="decimal"
   hint="Use a calculator to find the square root of $13$, then round to two decimal places."
 >}}
 
@@ -396,13 +402,15 @@ patio should be $14.1$ feet.
   question="Katie wants to plant a square lawn in her front yard. She has enough sod to cover an area of 370 square feet. To the nearest tenth of a foot, how long can a side of her square lawn be?"
   answer="19.2"
   answerDisplay="19.2 ft"
+  answerForm="decimal"
   hint="Take the square root of $370$ and round to one decimal place."
 >}}
 
 {{< fillin
-  question="Sergio wants to make a square mosaic as an inlay for a table he is building. He has enough tile to cover an area of 2704 square centimeters. How long can a side of his mosaic be?"
+  question="Sergio wants to make a square mosaic as an inlay for a table he is building. He has enough tile to cover an area of 2,704 square centimeters. How long, in centimeters, can a side of his mosaic be?"
   answer="52"
   answerDisplay="52 cm"
+  answerForm="decimal"
   hint="Take the square root of $2{,}704$ — it happens to be a perfect square."
 >}}
 
@@ -427,16 +435,18 @@ square root of $400$: $\tfrac{20}{4}$. Simplify: $5$. It will take $5$
 seconds for the sunglasses to reach the river.
 
 {{< fillin
-  question="A helicopter drops a rescue package from a height of 1296 feet. How many seconds does it take for the package to reach the ground?"
+  question="A helicopter drops a rescue package from a height of 1,296 feet. How many seconds does it take for the package to reach the ground?"
   answer="9"
   answerDisplay="9 seconds"
-  hint="Evaluate $\tfrac{\sqrt{h}}{4}$ with $h = 1296$. The square root of $1296$ is a whole number."
+  answerForm="decimal"
+  hint="Evaluate $\tfrac{\sqrt{h}}{4}$ with $h = 1{,}296$. The square root of $1{,}296$ is a whole number."
 >}}
 
 {{< fillin
-  question="A window washer drops a squeegee from a platform 196 feet above the sidewalk. How many seconds does it take for the squeegee to reach the sidewalk?"
+  question="A window washer drops a squeegee from a platform 196 feet above the sidewalk. How many seconds does it take for the squeegee to reach the sidewalk? Enter your answer as a decimal."
   answer="3.5"
   answerDisplay="3.5 seconds"
+  answerForm="decimal"
   hint="Evaluate $\tfrac{\sqrt{h}}{4}$ with $h = 196$."
 >}}
 
@@ -458,16 +468,18 @@ $67.527772\ldots$. Round to tenths: $67.5$. The speed of the car was
 approximately $67.5$ miles per hour.
 
 {{< fillin
-  question="An accident investigator measured the skid marks of a car and found their length was 76 feet. To the nearest tenth, what was the speed of the car before the brakes were applied?"
+  question="An accident investigator measured the skid marks of a car and found their length was 76 feet. To the nearest tenth, what was the speed of the car, in miles per hour, before the brakes were applied?"
   answer="42.7"
   answerDisplay="42.7 mph"
+  answerForm="decimal"
   hint="Evaluate $\sqrt{24d}$ with $d = 76$, then round to the nearest tenth."
 >}}
 
 {{< fillin
-  question="The skid marks of a vehicle involved in an accident were 122 feet long. To the nearest tenth, how fast had the vehicle been going before the brakes were applied?"
+  question="The skid marks of a vehicle involved in an accident were 122 feet long. To the nearest tenth, how fast, in miles per hour, had the vehicle been going before the brakes were applied?"
   answer="54.1"
   answerDisplay="54.1 mph"
+  answerForm="decimal"
   hint="Evaluate $\sqrt{24d}$ with $d = 122$, then round to the nearest tenth."
 >}}
 
@@ -525,7 +537,7 @@ $8 < \sqrt{70} < 9$
 {{< multiplechoice
   question="Estimate $\sqrt{200}$ between two consecutive whole numbers."
   answer="$14 < \sqrt{200} < 15$"
-  hint="The perfect squares $196$ and $225$ bracket $200$."
+  hint="Find the perfect squares just below and just above $200$, then take their square roots."
 >}}
 $13 < \sqrt{200} < 14$
 $99 < \sqrt{200} < 101$
@@ -538,12 +550,14 @@ $14 < \sqrt{200} < 15$
 {{< fillin
   question="Use a calculator to approximate $\sqrt{19}$, rounded to two decimal places."
   answer="4.36"
+  answerForm="decimal"
   hint="$\sqrt{19}$ lies between $4$ and $5$; round the calculator display to the hundredths place."
 >}}
 
 {{< fillin
   question="Use a calculator to approximate $\sqrt{53}$, rounded to two decimal places."
   answer="7.28"
+  answerForm="decimal"
   hint="$\sqrt{53}$ lies between $7$ and $8$; round the calculator display to the hundredths place."
 >}}
 
@@ -576,6 +590,7 @@ $14 < \sqrt{200} < 15$
   question="Reed wants to have a square garden plot in his backyard. He has enough compost to cover an area of 75 square feet. To the nearest tenth of a foot, how long can a side of his garden be?"
   answer="8.7"
   answerDisplay="8.7 feet"
+  answerForm="decimal"
   hint="A square of area $A$ has sides of length $\sqrt{A}$, so evaluate $\sqrt{75}$ and round to one decimal place."
 >}}
 
@@ -583,6 +598,7 @@ $14 < \sqrt{200} < 15$
   question="An airplane dropped a flare from a height of 1,024 feet above a lake. How many seconds did it take for the flare to reach the water?"
   answer="8"
   answerDisplay="8 seconds"
+  answerForm="decimal"
   hint="Evaluate $\tfrac{\sqrt{h}}{4}$ with $h = 1{,}024$ — that square root is a whole number."
 >}}
 
@@ -590,9 +606,10 @@ $14 < \sqrt{200} < 15$
   question="The skid marks from a car involved in an accident measured 216 feet. What was the speed of the car, in miles per hour, before the brakes were applied?"
   answer="72"
   answerDisplay="72 mph"
+  answerForm="decimal"
   hint="Evaluate $\sqrt{24d}$ with $d = 216$ — the product under the radical is a perfect square."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.7: Simplify and Use Square Roots](https://openstax.org/books/prealgebra-2e/pages/5-7-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the perfect-square and square-root charts, the area/side-length table, and the tile-diagram concept as markdown tables and prose; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.7: Simplify and Use Square Roots](https://openstax.org/books/prealgebra-2e/pages/5-7-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the perfect-square and square-root charts, the area/side-length table, the labeled-radical diagram, and the tile-diagram concept as markdown tables and prose; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, and Media links; reported the square root of 5 as 2.236067977, the ten-digit display value (the source rounds it to 2.236067978, which contradicts that display), and squared that value; converted selected practice problems ("Try Its") into interactive exercises with instant feedback (a Try It asking for two simplifications as one question per part, and each estimate Try It asking for the smaller of the two whole numbers); and adapted selected end-of-section exercises into the interactive Practice block.</small>

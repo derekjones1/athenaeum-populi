@@ -68,7 +68,7 @@ $$2\frac{4}{5}\left(-1\frac{7}{8}\right) = -\frac{21}{4}$$
   answer="-\frac{85}{6}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{85}{6}$"
-  hint="Convert both mixed numbers to improper fractions first: $-\tfrac{17}{5}$ and $\tfrac{25}{6}$."
+  hint="Convert both mixed numbers to improper fractions, decide the sign of the product, then remove common factors before multiplying."
 >}}
 
 **Example.** Divide, and write the answer in simplified form:
@@ -85,7 +85,7 @@ $$3\frac{4}{7} \div 5 = \frac{5}{7}$$
   answer="\frac{7}{8}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{8}$"
-  hint="Convert $2\tfrac{5}{8}$ to the improper fraction $\tfrac{21}{8}$, write $3$ as $\tfrac{3}{1}$, then multiply by its reciprocal."
+  hint="Convert the mixed number to an improper fraction, write $3$ as $\tfrac{3}{1}$, then multiply by its reciprocal."
 >}}
 
 **Example.** Divide: $2\tfrac{1}{2} \div 1\tfrac{1}{4}$.
@@ -101,7 +101,7 @@ $$2\frac{1}{2} \div 1\frac{1}{4} = 2$$
   answer="\frac{5}{2}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{2}$"
-  hint="Convert both mixed numbers to improper fractions ($\tfrac{15}{4}$ and $\tfrac{3}{2}$), then multiply by the reciprocal of the second."
+  hint="Convert both mixed numbers to improper fractions, then multiply the first by the reciprocal of the second."
 >}}
 
 ## Translate phrases to expressions with fractions
@@ -147,7 +147,7 @@ fractions, and mixed numbers. Another kind of fraction is called a
 **complex fraction** — a fraction in which the numerator or the
 denominator contains a fraction. Some examples of complex fractions are
 
-$$\frac{\tfrac{6}{7}}{3}, \qquad \frac{\tfrac{3}{4}}{\tfrac{5}{8}}, \qquad \frac{\tfrac{x}{2}}{\tfrac{xy}{6}}$$
+$$\frac{\tfrac{6}{7}}{3}, \qquad \frac{\tfrac{3}{4}}{\tfrac{5}{8}}, \qquad \frac{\tfrac{x}{2}}{\tfrac{5}{6}}$$
 
 To simplify a complex fraction, remember that the fraction bar means
 division. So the complex fraction
@@ -175,11 +175,11 @@ Removing the common factor of $4$:
 $$\frac{\tfrac{3}{4}}{\tfrac{5}{8}} = \frac{6}{5}$$
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{2}{3}\right) / \left(\tfrac{5}{6}\right)$"
+  question="Simplify: $\cfrac{\tfrac{2}{3}}{\tfrac{5}{6}}$"
   answer="\frac{4}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{5}$"
-  hint="Rewrite the complex fraction as $\tfrac{2}{3} \div \tfrac{5}{6}$, then multiply by the reciprocal of the second fraction."
+  hint="Rewrite the complex fraction as a division problem, then multiply the first fraction by the reciprocal of the second."
 >}}
 
 **Example.** Simplify:
@@ -193,11 +193,11 @@ the common factor of $3$:
 $$\frac{-\tfrac{6}{7}}{3} = -\frac{2}{7}$$
 
 {{< fillin
-  question="Simplify: $\left(-\tfrac{8}{7}\right) / 4$"
+  question="Simplify: $\cfrac{-\tfrac{8}{7}}{4}$"
   answer="-\frac{2}{7}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{2}{7}$"
-  hint="Rewrite as $-\tfrac{8}{7} \div 4$, write $4$ as $\tfrac{4}{1}$, then multiply by its reciprocal and simplify."
+  hint="Rewrite the complex fraction as a division problem, write $4$ as $\tfrac{4}{1}$, then multiply by its reciprocal and simplify."
 >}}
 
 **Example.** Simplify:
@@ -211,11 +211,11 @@ factors of $x$ and $2$:
 $$\frac{\tfrac{x}{2}}{\tfrac{xy}{6}} = \frac{3}{y}$$
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{p}{2}\right) / \left(\tfrac{pq}{8}\right)$. Answer in terms of $q$."
+  question="Simplify: $\cfrac{\tfrac{p}{2}}{\tfrac{pq}{8}}$"
   answer="\frac{4}{q}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{4}{q}$"
-  hint="Rewrite as $\tfrac{p}{2} \div \tfrac{pq}{8}$, multiply by the reciprocal, then remove the common factor of $p$."
+  hint="Rewrite the complex fraction as a division problem, multiply by the reciprocal, then remove the common factors."
 >}}
 
 **Example.** Simplify:
@@ -230,11 +230,11 @@ the common factor of $4$:
 $$\frac{2\tfrac{3}{4}}{\tfrac{1}{8}} = 22$$
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{8}{3}\right) / \left(3\tfrac{1}{5}\right)$"
-  answer="\frac{5}{6}"
+  question="Simplify: $\cfrac{\tfrac{8}{5}}{3\tfrac{1}{5}}$"
+  answer="\frac{1}{2}"
   answerForm="fraction lowest-terms"
-  answerDisplay="$\tfrac{5}{6}$"
-  hint="Convert $3\tfrac{1}{5}$ to the improper fraction $\tfrac{16}{5}$, rewrite as division, then multiply by the reciprocal."
+  answerDisplay="$\tfrac{1}{2}$"
+  hint="Rewrite as division, convert the mixed number to an improper fraction, then multiply by its reciprocal."
 >}}
 
 ## Simplify expressions with a fraction bar
@@ -267,14 +267,16 @@ are also negative, so those are equivalent to $\tfrac{7}{-8}$.
 {{< multiplechoice
   question="Is $-\tfrac{3}{5}$ equivalent to $\tfrac{3}{-5}$?"
   answer="yes"
-  hint="A negative divided by a positive equals a positive divided by a negative — both give the same negative value."
+  hint="Work out the sign of each fraction from the signs of its numerator and denominator."
 >}}
 yes
 no
 {{< /multiplechoice >}}
 
 Fraction bars act as grouping symbols — the expressions above and below
-the bar should be treated as if they were in parentheses. For example,
+the bar should be treated as if they were in parentheses. That adds the
+fraction bar to the grouping symbols we already use: parentheses, brackets,
+braces, and absolute value bars. For example,
 $\tfrac{4+8}{5-3}$ means $(4+8) \div (5-3)$: the order of operations tells
 us to simplify the numerator and the denominator first, as if each were
 in its own parentheses, before dividing.
@@ -326,7 +328,7 @@ $\tfrac{4^2}{64-16} = \tfrac{16}{48}$. Simplify the fraction:
 $$\frac{(8-4)^2}{8^2-4^2} = \frac{1}{3}$$
 
 {{< fillin
-  question="Simplify: $(11-7)^2 / (11^2-7^2)$"
+  question="Simplify: $\tfrac{(11-7)^2}{11^2-7^2}$"
   answer="\frac{2}{9}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{9}$"
@@ -364,15 +366,15 @@ dividing.
   answer="\frac{44}{21}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{44}{21}$"
-  hint="Rewrite $2\tfrac{4}{9}$ as $\tfrac{22}{9}$, then remove the common factor of $2$ before multiplying."
+  hint="Convert the mixed number to an improper fraction, then remove common factors before multiplying."
 >}}
 
 {{< fillin
   question="Multiply, and write the answer in simplified form: $2\tfrac{2}{5}\left(-2\tfrac{2}{9}\right)$"
   answer="-\frac{16}{3}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{16}{3}$"
-  hint="Both mixed numbers become improper fractions, $\tfrac{12}{5}$ and $-\tfrac{20}{9}$. One factor is negative, so the product is negative."
+  hint="Convert both mixed numbers to improper fractions and decide the sign of the product before removing common factors."
 >}}
 
 {{< fillin
@@ -380,30 +382,30 @@ dividing.
   answer="-\frac{4}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{4}{3}$"
-  hint="Write $-7$ as $-\tfrac{7}{1}$ and $5\tfrac{1}{4}$ as $\tfrac{21}{4}$, then multiply by the reciprocal of the divisor."
+  hint="Write $-7$ as a fraction over $1$ and convert the mixed number to an improper fraction, then multiply by the reciprocal of the divisor."
 >}}
 
 {{< fillin
   question="Divide, and write the answer in simplified form: $-18\tfrac{3}{4} \div \left(-3\tfrac{3}{4}\right)$"
   answer="5"
   answerForm="decimal"
-  hint="The improper fractions are $-\tfrac{75}{4}$ and $-\tfrac{15}{4}$. A negative divided by a negative is positive."
+  hint="Convert both mixed numbers to improper fractions, decide the sign of the quotient, then multiply by the reciprocal of the divisor."
 >}}
 
 {{< fillin
-  question="A county fair booth sells fudge that contains $2\tfrac{2}{3}$ cups of chocolate chips per pound. How many cups of chocolate chips are in a half-pound of the fudge? Write your answer as an improper fraction."
+  question="A county fair booth sells fudge that contains $2\tfrac{2}{3}$ cups of chocolate chips per pound. How many cups of chocolate chips are in a half-pound of the fudge? Write your answer as an improper fraction in simplified form."
   answer="\frac{4}{3}"
-  answerForm="improper-fraction"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{4}{3} = 1\tfrac{1}{3}$ cups"
   hint="Half a pound means multiplying the cups per pound by $\tfrac{1}{2}$."
 >}}
 
 {{< fillin
-  question="That same fudge contains $2\tfrac{2}{3}$ cups of chocolate chips per pound, and the owners make it in $10$-pound batches. How many cups of chocolate chips does one batch need? Write your answer as an improper fraction."
+  question="That same fudge contains $2\tfrac{2}{3}$ cups of chocolate chips per pound, and the owners make it in $10$-pound batches. How many cups of chocolate chips does one batch need? Write your answer as an improper fraction in simplified form."
   answer="\frac{80}{3}"
-  answerForm="improper-fraction"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{80}{3} = 26\tfrac{2}{3}$ cups"
-  hint="Multiply $\tfrac{8}{3}$ by $\tfrac{10}{1}$, and leave the result as an improper fraction."
+  hint="Convert the cups per pound to an improper fraction and multiply by the number of pounds in a batch."
 >}}
 
 ### Translate phrases to expressions with fractions
@@ -432,42 +434,42 @@ dividing.
 ### Simplify complex fractions
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{4}{5}\right) / \left(\tfrac{8}{15}\right)$"
+  question="Simplify: $\cfrac{\tfrac{4}{5}}{\tfrac{8}{15}}$"
   answer="\frac{3}{2}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{2}$"
-  hint="Rewrite as $\tfrac{4}{5} \div \tfrac{8}{15}$, then multiply by the reciprocal of the second fraction."
+  hint="Rewrite the complex fraction as a division problem, then multiply by the reciprocal of the second fraction."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(-\tfrac{9}{10}\right) / 3$"
+  question="Simplify: $\cfrac{-\tfrac{9}{10}}{3}$"
   answer="-\frac{3}{10}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{10}$"
-  hint="Write $3$ as $\tfrac{3}{1}$, multiply by its reciprocal, then remove the common factor of $3$."
+  hint="Rewrite as division, write the whole number as a fraction over $1$, then multiply by its reciprocal and remove common factors."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{r}{5}\right) / \left(\tfrac{s}{3}\right)$"
+  question="Simplify: $\cfrac{\tfrac{r}{5}}{\tfrac{s}{3}}$"
   answer="\frac{3r}{5s}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3r}{5s}$"
-  hint="Multiply $\tfrac{r}{5}$ by the reciprocal $\tfrac{3}{s}$; there are no common factors to remove here."
+  hint="Rewrite the complex fraction as a division problem, then multiply the first fraction by the reciprocal of the second."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(4\tfrac{2}{3}\right) / \left(\tfrac{1}{6}\right)$"
+  question="Simplify: $\cfrac{4\tfrac{2}{3}}{\tfrac{1}{6}}$"
   answer="28"
   answerForm="decimal"
-  hint="Convert $4\tfrac{2}{3}$ to $\tfrac{14}{3}$, then multiply by the reciprocal $\tfrac{6}{1}$."
+  hint="Rewrite as division, convert the mixed number to an improper fraction, then multiply by the reciprocal of the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{3}{8}\right) / \left(-6\tfrac{3}{4}\right)$"
+  question="Simplify: $\cfrac{\tfrac{3}{8}}{-6\tfrac{3}{4}}$"
   answer="-\frac{1}{18}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{18}$"
-  hint="The divisor $-6\tfrac{3}{4}$ becomes $-\tfrac{27}{4}$; multiplying by its reciprocal gives a negative result."
+  hint="Rewrite as division, convert the mixed number to an improper fraction, then multiply by its reciprocal and decide the sign."
 >}}
 
 ### Simplify expressions written with a fraction bar
@@ -507,7 +509,7 @@ $\tfrac{13}{6}$ and $\tfrac{-13}{-6}$
   answer="\frac{5}{6}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
-  hint="Apply the exponent in the numerator before adding, then remove the common factor of $10$."
+  hint="Apply the exponent in the numerator before adding, then simplify the fraction."
 >}}
 
 {{< fillin
@@ -527,4 +529,4 @@ $\tfrac{13}{6}$ and $\tfrac{-13}{-6}$
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.3: Multiply and Divide Mixed Numbers and Complex Fractions](https://openstax.org/books/prealgebra-2e/pages/4-3-multiply-and-divide-mixed-numbers-and-complex-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the worked examples as prose walkthroughs with typeset math instead of the source's two-column table format; omitted the Be Prepared quiz, the "which fractions are equivalent" multi-answer Try Its (folded their idea into a single check question), and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding a multipart Everyday Math item into one exercise per part and presenting the multi-answer "which fractions are equivalent" exercises as single-select multiple choice.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.3: Multiply and Divide Mixed Numbers and Complex Fractions](https://openstax.org/books/prealgebra-2e/pages/4-3-multiply-and-divide-mixed-numbers-and-complex-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the worked examples as prose walkthroughs with typeset math instead of the source's two-column table format; stated the sign-placement and grouping-symbols figures in prose; omitted the Be Prepared quiz, the "which fractions are equivalent" multi-answer Try Its (folded their idea into a single check question), and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding a multipart Everyday Math item into one exercise per part and presenting the multi-answer "which fractions are equivalent" exercises as single-select multiple choice.</small>

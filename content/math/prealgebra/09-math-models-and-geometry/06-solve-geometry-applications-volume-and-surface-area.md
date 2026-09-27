@@ -77,15 +77,19 @@ $$
 The surface area is $1{,}034$ square centimeters.
 
 {{< fillin
-  question="Find the volume of a rectangular solid with length 8 feet, width 9 feet, and height 11 feet."
+  question="Find the volume of a rectangular solid with length 8 feet, width 9 feet, and height 11 feet, in cubic feet."
   answer="792"
-  hint="Substitute into $V = LWH$: $V = 8 \cdot 9 \cdot 11$."
+  answerForm="decimal"
+  answerDisplay="792 cubic feet"
+  hint="Use $V = LWH$: multiply the length, width, and height."
 >}}
 
 {{< fillin
-  question="Find the surface area of a rectangular solid with length 8 feet, width 9 feet, and height 11 feet."
+  question="Find the surface area of a rectangular solid with length 8 feet, width 9 feet, and height 11 feet, in square feet."
   answer="518"
-  hint="Substitute into $S = 2LH + 2LW + 2WH$: $S = 2(8 \cdot 11) + 2(8 \cdot 9) + 2(9 \cdot 11)$."
+  answerForm="decimal"
+  answerDisplay="518 square feet"
+  hint="Use $S = 2LH + 2LW + 2WH$: find the area of each of the three different faces, double each, and add."
 >}}
 
 **Example.** A rectangular crate has a length of $30$ inches, width of
@@ -99,15 +103,19 @@ cubic inches.
 = 3{,}700$. The surface area is $3{,}700$ square inches.
 
 {{< fillin
-  question="Find the volume of a rectangular box with length 9 feet, width 4 feet, and height 6 feet."
+  question="A rectangular box has length 9 feet, width 4 feet, and height 6 feet. Find its volume, in cubic feet."
   answer="216"
-  hint="Substitute into $V = LWH$: $V = 9 \cdot 4 \cdot 6$."
+  answerForm="decimal"
+  answerDisplay="216 cubic feet"
+  hint="Use $V = LWH$: multiply the length, width, and height."
 >}}
 
 {{< fillin
-  question="Find the surface area of a rectangular box with length 9 feet, width 4 feet, and height 6 feet."
+  question="A rectangular box has length 9 feet, width 4 feet, and height 6 feet. Find its surface area, in square feet."
   answer="228"
-  hint="Substitute into $S = 2LH + 2LW + 2WH$: $S = 2(9 \cdot 6) + 2(9 \cdot 4) + 2(4 \cdot 6)$."
+  answerForm="decimal"
+  answerDisplay="228 square feet"
+  hint="Use $S = 2LH + 2LW + 2WH$: find the area of each of the three different faces, double each, and add."
 >}}
 
 ### Volume and surface area of a cube
@@ -132,15 +140,19 @@ rectangular solid formulas gives $V = s^3$ and $S = 6s^2$.
 square inches.
 
 {{< fillin
-  question="For a cube with side 4.5 meters, find the volume."
+  question="For a cube with side 4.5 meters, find the volume, in cubic meters."
   answer="91.125"
-  hint="Substitute into $V = s^3$: $V = (4.5)^3$."
+  answerForm="decimal"
+  answerDisplay="91.125 cubic meters"
+  hint="Use $V = s^3$: multiply the side length by itself three times."
 >}}
 
 {{< fillin
-  question="For a cube with side 4.5 meters, find the surface area."
+  question="For a cube with side 4.5 meters, find the surface area, in square meters."
   answer="121.5"
-  hint="Substitute into $S = 6s^2$: $S = 6 \cdot (4.5)^2$."
+  answerForm="decimal"
+  answerDisplay="121.5 square meters"
+  hint="Use $S = 6s^2$: find the area of one square face, then multiply by the number of faces."
 >}}
 
 **Example.** A notepad cube measures $2$ inches on each side. Find its
@@ -151,15 +163,19 @@ square inches.
 (b) $S = 6 \cdot 2^2 = 24$. The surface area is $24$ square inches.
 
 {{< fillin
-  question="A packing box is a cube measuring 4 feet on each side. Find its volume."
+  question="A packing box is a cube measuring 4 feet on each side. Find its volume, in cubic feet."
   answer="64"
-  hint="Substitute into $V = s^3$: $V = 4^3$."
+  answerForm="decimal"
+  answerDisplay="64 cubic feet"
+  hint="Use $V = s^3$: multiply the side length by itself three times."
 >}}
 
 {{< fillin
-  question="A packing box is a cube measuring 4 feet on each side. Find its surface area."
+  question="A packing box is a cube measuring 4 feet on each side. Find its surface area, in square feet."
   answer="96"
-  hint="Substitute into $S = 6s^2$: $S = 6 \cdot 4^2$."
+  answerForm="decimal"
+  answerDisplay="96 square feet"
+  hint="Use $S = 6s^2$: find the area of one square face, then multiply by the number of faces."
 >}}
 
 ## Find the volume and surface area of spheres
@@ -188,15 +204,19 @@ The volume is approximately $904.32$ cubic inches.
 approximately $452.16$ square inches.
 
 {{< fillin
-  question="Find the volume of a sphere with radius 3 centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the volume of a sphere with radius 3 centimeters, in cubic centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="113.04"
-  hint="Substitute into $V = \tfrac{4}{3}\pi r^3$: $V = \tfrac{4}{3}(3.14)(3)^3$."
+  answerForm="decimal"
+  answerDisplay="113.04 cubic centimeters"
+  hint="Use $V = \tfrac{4}{3}\pi r^3$ with $3.14$ for $\pi$; cube the radius first."
 >}}
 
 {{< fillin
-  question="Find the surface area of a sphere with radius 3 centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the surface area of a sphere with radius 3 centimeters, in square centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="113.04"
-  hint="Substitute into $S = 4\pi r^2$: $S = 4(3.14)(3)^2$."
+  answerForm="decimal"
+  answerDisplay="113.04 square centimeters"
+  hint="Use $S = 4\pi r^2$ with $3.14$ for $\pi$; square the radius first."
 >}}
 
 **Example.** A globe of Earth is in the shape of a sphere with radius
@@ -206,19 +226,23 @@ nearest hundredth.
 (a) $V \approx \tfrac{4}{3}(3.14)(14)^3 \approx 11{,}488.21$. The volume
 is approximately $11{,}488.21$ cubic inches.
 
-(b) $S \approx 4(3.14)(14)^2 \approx 2461.76$. The surface area is
-approximately $2461.76$ square inches.
+(b) $S \approx 4(3.14)(14)^2 \approx 2{,}461.76$. The surface area is
+approximately $2{,}461.76$ square inches.
 
 {{< fillin
-  question="A beach ball is in the shape of a sphere with radius of 9 inches. Find its volume. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="A beach ball is in the shape of a sphere with radius of 9 inches. Find its volume, in cubic inches. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="3052.08"
-  hint="Substitute into $V = \tfrac{4}{3}\pi r^3$: $V = \tfrac{4}{3}(3.14)(9)^3$."
+  answerForm="decimal"
+  answerDisplay="3,052.08 cubic inches"
+  hint="Use $V = \tfrac{4}{3}\pi r^3$ with $3.14$ for $\pi$; cube the radius first."
 >}}
 
 {{< fillin
-  question="A beach ball is in the shape of a sphere with radius of 9 inches. Find its surface area. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="A beach ball is in the shape of a sphere with radius of 9 inches. Find its surface area, in square inches. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="1017.36"
-  hint="Substitute into $S = 4\pi r^2$: $S = 4(3.14)(9)^2$."
+  answerForm="decimal"
+  answerDisplay="1,017.36 square inches"
+  hint="Use $S = 4\pi r^2$ with $3.14$ for $\pi$; square the radius first."
 >}}
 
 ## Find the volume and surface area of a cylinder
@@ -270,15 +294,19 @@ approximately $141.3$ cubic inches.
 150.72$. The surface area is approximately $150.72$ square inches.
 
 {{< fillin
-  question="Find the volume of a cylinder with radius 4 cm and height 7 cm. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the volume of a cylinder with radius 4 cm and height 7 cm, in cubic centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="351.68"
-  hint="Substitute into $V = \pi r^2 h$: $V = (3.14)(4)^2(7)$."
+  answerForm="decimal"
+  answerDisplay="351.68 cubic centimeters"
+  hint="Use $V = \pi r^2 h$ with $3.14$ for $\pi$: the area of the circular base times the height."
 >}}
 
 {{< fillin
-  question="Find the surface area of a cylinder with radius 4 cm and height 7 cm. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the surface area of a cylinder with radius 4 cm and height 7 cm, in square centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="276.32"
-  hint="Substitute into $S = 2\pi r^2 + 2\pi rh$: $S = 2(3.14)(4)^2 + 2(3.14)(4)(7)$."
+  answerForm="decimal"
+  answerDisplay="276.32 square centimeters"
+  hint="Use $S = 2\pi r^2 + 2\pi rh$ with $3.14$ for $\pi$: add the areas of the two circular bases to the area of the side."
 >}}
 
 **Example.** Find the (a) volume and (b) surface area of a can of soda.
@@ -292,15 +320,19 @@ approximately $653.12$ cubic centimeters.
 area is approximately $427.04$ square centimeters.
 
 {{< fillin
-  question="Find the volume of a can of paint with radius 8 centimeters and height 19 centimeters. Assume the can is shaped exactly like a cylinder. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the volume of a can of paint with radius 8 centimeters and height 19 centimeters, in cubic centimeters. Assume the can is shaped exactly like a cylinder. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="3818.24"
-  hint="Substitute into $V = \pi r^2 h$: $V = (3.14)(8)^2(19)$."
+  answerForm="decimal"
+  answerDisplay="3,818.24 cubic centimeters"
+  hint="Use $V = \pi r^2 h$ with $3.14$ for $\pi$: the area of the circular base times the height."
 >}}
 
 {{< fillin
-  question="Find the surface area of a can of paint with radius 8 centimeters and height 19 centimeters. Assume the can is shaped exactly like a cylinder. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the surface area of a can of paint with radius 8 centimeters and height 19 centimeters, in square centimeters. Assume the can is shaped exactly like a cylinder. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="1356.48"
-  hint="Substitute into $S = 2\pi r^2 + 2\pi rh$: $S = 2(3.14)(8)^2 + 2(3.14)(8)(19)$."
+  answerForm="decimal"
+  answerDisplay="1,356.48 square centimeters"
+  hint="Use $S = 2\pi r^2 + 2\pi rh$ with $3.14$ for $\pi$: add the areas of the two circular bases to the area of the side."
 >}}
 
 ## Find the volume of cones
@@ -342,15 +374,19 @@ $$
 The volume is approximately $25.12$ cubic inches.
 
 {{< fillin
-  question="Find the volume of a cone with height 7 inches and radius 3 inches. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the volume of a cone with height 7 inches and radius 3 inches, in cubic inches. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="65.94"
-  hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(3)^2(7)$."
+  answerForm="decimal"
+  answerDisplay="65.94 cubic inches"
+  hint="Use $V = \tfrac{1}{3}\pi r^2 h$ with $3.14$ for $\pi$: one-third of the base area times the height."
 >}}
 
 {{< fillin
-  question="Find the volume of a cone with height 9 centimeters and radius 5 centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
+  question="Find the volume of a cone with height 9 centimeters and radius 5 centimeters, in cubic centimeters. Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="235.5"
-  hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(5)^2(9)$."
+  answerForm="decimal"
+  answerDisplay="235.5 cubic centimeters"
+  hint="Use $V = \tfrac{1}{3}\pi r^2 h$ with $3.14$ for $\pi$: one-third of the base area times the height."
 >}}
 
 **Example.** Marty's favorite gastro pub serves french fries in a paper
@@ -364,15 +400,19 @@ $$V \approx \tfrac{1}{3}(3.14)(2.5)^2(8) \approx 52.33$$
 The volume of the wrap is approximately $52.33$ cubic inches.
 
 {{< fillin
-  question="How many cubic inches of candy will fit in a cone-shaped pinata that is 18 inches long and 12 inches across its base? Round to the nearest hundredth. (The base diameter is 12 inches, so the radius is 6 inches.)"
+  question="How many cubic inches of candy will fit in a cone-shaped piñata that is 18 inches long and 12 inches across its base? Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="678.24"
-  hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(6)^2(18)$."
+  answerForm="decimal"
+  answerDisplay="678.24 cubic inches"
+  hint="The distance across the base is its diameter; halve it to get the radius, then use $V = \tfrac{1}{3}\pi r^2 h$."
 >}}
 
 {{< fillin
-  question="What is the volume of a cone-shaped party hat that is 10 inches tall and 7 inches across at the base? Round to the nearest hundredth. (The base diameter is 7 inches, so the radius is 3.5 inches.)"
+  question="What is the volume, in cubic inches, of a cone-shaped party hat that is 10 inches tall and 7 inches across at the base? Use 3.14 for $\pi$. Round to the nearest hundredth."
   answer="128.22"
-  hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(3.5)^2(10)$."
+  answerForm="decimal"
+  answerDisplay="128.22 cubic inches"
+  hint="The distance across the base is its diameter; halve it to get the radius, then use $V = \tfrac{1}{3}\pi r^2 h$."
 >}}
 
 ## Key terms
@@ -383,8 +423,8 @@ total area of all the faces of a solid. **volume** — a cubic measure of
 the space enclosed by a solid. **cube** — a rectangular solid whose
 length, width, and height are all equal. **sphere** — a three-dimensional
 figure where every point on the surface is the same distance (the radius)
-from the center. **cylinder** — a solid figure with two parallel congruent
-circular bases connected by a curved surface perpendicular to the bases.
+from the center. **cylinder** — a solid figure with two parallel circles
+of the same size at the top and bottom, called the bases.
 **cone** — a solid figure with one circular base tapering to a single
 vertex.
 
@@ -395,43 +435,49 @@ vertex.
 {{< fillin
   question="A rectangular moving van has length 16 feet, width 8 feet, and height 8 feet. Find its volume, in cubic feet."
   answer="1024"
+  answerForm="decimal"
   answerDisplay="1,024 cubic feet"
-  hint="Substitute into $V = LWH$: $V = 16 \cdot 8 \cdot 8$."
+  hint="Use $V = LWH$: multiply the length, width, and height."
 >}}
 
 {{< fillin
   question="A rectangular moving van has length 16 feet, width 8 feet, and height 8 feet. Find its surface area, in square feet."
   answer="640"
+  answerForm="decimal"
   answerDisplay="640 square feet"
-  hint="Substitute into $S = 2LH + 2LW + 2WH$: $S = 2(16 \cdot 8) + 2(16 \cdot 8) + 2(8 \cdot 8)$."
+  hint="Use $S = 2LH + 2LW + 2WH$: find the area of each of the three different faces, double each, and add."
 >}}
 
 {{< fillin
   question="A rectangular carton has length 21.3 cm, width 24.2 cm, and height 6.5 cm. Find its volume, in cubic centimeters."
   answer="3350.49"
+  answerForm="decimal"
   answerDisplay="3,350.49 cubic centimeters"
-  hint="Substitute into $V = LWH$: $V = 21.3 \cdot 24.2 \cdot 6.5$."
+  hint="Use $V = LWH$: multiply the length, width, and height."
 >}}
 
 {{< fillin
   question="A rectangular carton has length 21.3 cm, width 24.2 cm, and height 6.5 cm. Find its surface area, in square centimeters."
   answer="1622.42"
+  answerForm="decimal"
   answerDisplay="1,622.42 square centimeters"
-  hint="Substitute into $S = 2LH + 2LW + 2WH$: $S = 2(21.3 \cdot 6.5) + 2(21.3 \cdot 24.2) + 2(24.2 \cdot 6.5)$."
+  hint="Use $S = 2LH + 2LW + 2WH$: find the area of each of the three different faces, double each, and add."
 >}}
 
 {{< fillin
   question="Each side of the cube at the Discovery Science Center in Santa Ana is 64 feet long. Find its volume, in cubic feet."
   answer="262144"
+  answerForm="decimal"
   answerDisplay="262,144 cubic feet"
-  hint="All three dimensions are equal, so use the cube formula $V = s^3$ with $s = 64$."
+  hint="All three dimensions are equal, so use the cube formula $V = s^3$."
 >}}
 
 {{< fillin
   question="Each side of the cube at the Discovery Science Center in Santa Ana is 64 feet long. Find its surface area, in square feet."
   answer="24576"
+  answerForm="decimal"
   answerDisplay="24,576 square feet"
-  hint="A cube has six identical square faces, so $S = 6s^2 = 6 \cdot 64^2$."
+  hint="A cube has six identical square faces, so use $S = 6s^2$."
 >}}
 
 ### Find the volume and surface area of spheres
@@ -439,29 +485,33 @@ vertex.
 {{< fillin
   question="An exercise ball has a radius of 15 inches. Find its volume, in cubic inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="14130"
+  answerForm="decimal"
   answerDisplay="14,130 cubic inches"
-  hint="Substitute into $V = \tfrac{4}{3}\pi r^3$: $V = \tfrac{4}{3}(3.14)(15)^3$. Cube the radius first."
+  hint="Use $V = \tfrac{4}{3}\pi r^3$ with $3.14$ for $\pi$; cube the radius first."
 >}}
 
 {{< fillin
   question="An exercise ball has a radius of 15 inches. Find its surface area, in square inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="2826"
+  answerForm="decimal"
   answerDisplay="2,826 square inches"
-  hint="Substitute into $S = 4\pi r^2$: $S = 4(3.14)(15)^2$."
+  hint="Use $S = 4\pi r^2$ with $3.14$ for $\pi$; square the radius first."
 >}}
 
 {{< fillin
   question="A golf ball has a radius of 4.5 centimeters. Find its volume, in cubic centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="381.51"
+  answerForm="decimal"
   answerDisplay="381.51 cubic centimeters"
-  hint="Substitute into $V = \tfrac{4}{3}\pi r^3$: $V = \tfrac{4}{3}(3.14)(4.5)^3$."
+  hint="Use $V = \tfrac{4}{3}\pi r^3$ with $3.14$ for $\pi$; cube the radius first."
 >}}
 
 {{< fillin
   question="A golf ball has a radius of 4.5 centimeters. Find its surface area, in square centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="254.34"
+  answerForm="decimal"
   answerDisplay="254.34 square centimeters"
-  hint="Substitute into $S = 4\pi r^2$: $S = 4(3.14)(4.5)^2$."
+  hint="Use $S = 4\pi r^2$ with $3.14$ for $\pi$; square the radius first."
 >}}
 
 ### Find the volume and surface area of cylinders
@@ -469,29 +519,33 @@ vertex.
 {{< fillin
   question="A can of coffee has a radius of 5 cm and a height of 13 cm. Find its volume, in cubic centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="1020.5"
+  answerForm="decimal"
   answerDisplay="1,020.5 cubic centimeters"
-  hint="Substitute into $V = \pi r^2 h$: $V = (3.14)(5)^2(13)$."
+  hint="Use $V = \pi r^2 h$ with $3.14$ for $\pi$: the area of the circular base times the height."
 >}}
 
 {{< fillin
   question="A can of coffee has a radius of 5 cm and a height of 13 cm. Find its surface area, in square centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="565.2"
+  answerForm="decimal"
   answerDisplay="565.2 square centimeters"
-  hint="Substitute into $S = 2\pi r^2 + 2\pi rh$: $S = 2(3.14)(5)^2 + 2(3.14)(5)(13)$."
+  hint="Use $S = 2\pi r^2 + 2\pi rh$ with $3.14$ for $\pi$: add the areas of the two circular bases to the area of the side."
 >}}
 
 {{< fillin
   question="A cylindrical barber shop pole has a diameter of 6 inches and a height of 24 inches. Find its volume, in cubic inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="678.24"
+  answerForm="decimal"
   answerDisplay="678.24 cubic inches"
-  hint="The diameter is 6 inches, so the radius is 3 inches. Then substitute into $V = \pi r^2 h$: $V = (3.14)(3)^2(24)$."
+  hint="The radius is half the diameter; then use $V = \pi r^2 h$ with $3.14$ for $\pi$."
 >}}
 
 {{< fillin
   question="A cylindrical barber shop pole has a diameter of 6 inches and a height of 24 inches. Find its surface area, in square inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="508.68"
+  answerForm="decimal"
   answerDisplay="508.68 square inches"
-  hint="Halve the diameter to get $r = 3$, then substitute into $S = 2\pi r^2 + 2\pi rh$: $S = 2(3.14)(3)^2 + 2(3.14)(3)(24)$."
+  hint="The radius is half the diameter; then use $S = 2\pi r^2 + 2\pi rh$ with $3.14$ for $\pi$."
 >}}
 
 ### Find the volume of cones
@@ -499,24 +553,27 @@ vertex.
 {{< fillin
   question="Find the volume, in cubic feet, of a cone with height 9 feet and radius 2 feet. Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="37.68"
+  answerForm="decimal"
   answerDisplay="37.68 cubic feet"
-  hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(2)^2(9)$."
+  hint="Use $V = \tfrac{1}{3}\pi r^2 h$ with $3.14$ for $\pi$: one-third of the base area times the height."
 >}}
 
 {{< fillin
   question="What is the volume, in cubic feet, of a cone-shaped teepee tent that is 10 feet tall and 10 feet across at the base? Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="261.67"
+  answerForm="decimal"
   answerDisplay="261.67 cubic feet"
-  hint="The distance across the base is the diameter, so the radius is 5 feet. Then use $V = \tfrac{1}{3}\pi r^2 h$ with $h = 10$."
+  hint="The distance across the base is its diameter; halve it to get the radius, then use $V = \tfrac{1}{3}\pi r^2 h$."
 >}}
 
 {{< fillin
   question="What is the volume, in cubic feet, of a cone-shaped silo that is 50 feet tall and 70 feet across at the base? Use 3.14 for $\pi$ and round to the nearest hundredth."
   answer="64108.33"
+  answerForm="decimal"
   answerDisplay="64,108.33 cubic feet"
-  hint="The base diameter is 70 feet, so $r = 35$. Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(35)^2(50)$."
+  hint="The distance across the base is its diameter; halve it to get the radius, then use $V = \tfrac{1}{3}\pi r^2 h$."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.6: Solve Geometry Applications: Volume and Surface Area](https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the crate, globe, soda can, and french-fry-wrap illustrations in prose instead of hotlinking images, and omitted the end-of-chapter geometry formula summary chart (each formula already appears inline where it's introduced); omitted the Be Prepared quiz, Manipulative Mathematics callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating the multipart volume-and-surface-area items as separate prompts.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.6: Solve Geometry Applications: Volume and Surface Area](https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed the prose and the worked examples' step tables; described the layered rectangular solid, the unrolled can label, and the cone inside a cylinder in prose instead of hotlinking images, and omitted the section's other images (the crate photo, the labeled solids, and each example's drawn figure) and the Summary of Geometry Formulas charts (each formula already appears inline where it's introduced); omitted the Be Prepared quiz, Manipulative Mathematics callout, Media links, Key Concepts formula list, and Self Check checklist; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, one question per part, each naming the unit and the value to use for π, and keyed the party-hat Try It to the nearest hundredth (128.22), as its prompt asks, where the source answer gives 128.2; and adapted selected end-of-section exercises into the interactive Practice block, restating the multipart volume-and-surface-area items as separate prompts.</small>

@@ -88,7 +88,7 @@ than $1$, so the equivalent decimal will also be greater than $1$.
 
 We divide $4$ by $3$:
 
-$$\begin{array}{r} \phantom{3\,\overline{\smash{)}\,}}1.333\ldots \\ 3\,\overline{\smash{)}\,4.000} \\ \phantom{3\,\overline{\smash{)}\,}}\underline{3}\phantom{.000} \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{0}10 \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{0}\underline{9}\phantom{0} \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{00}10 \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{00}\underline{9}\phantom{0} \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{000}10 \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{000}\underline{9}\phantom{0} \\ \phantom{3\,\overline{\smash{)}\,}}\phantom{0000}1 \end{array}$$
+$$\begin{array}{r} 1.333\mathrlap{\ldots} \\ 3\,\overline{\smash{)}\,4.000} \\ \underline{3}\phantom{.000} \\ 10\phantom{00} \\ \underline{9}\phantom{00} \\ 10\phantom{0} \\ \underline{9}\phantom{0} \\ 10 \\ \underline{9} \\ 1 \end{array}$$
 
 No matter how many more zeros we write, there will always be a remainder of
 $1$, and the threes in the quotient will go on forever. The number
@@ -120,7 +120,7 @@ some more examples of repeating decimals.
 
 Divide $43$ by $22$:
 
-$$\begin{array}{r} \phantom{22\,\overline{\smash{)}\,}}1.95454\ldots \\ 22\,\overline{\smash{)}\,43.00000} \\ \phantom{22\,\overline{\smash{)}\,}}\underline{22}\phantom{.00000} \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{0}210 \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{0}\underline{198}\phantom{00} \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{00}120 \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{00}\underline{110}\phantom{0} \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{000}100 \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{000}\underline{88}\phantom{0} \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{0000}120 \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{0000}\underline{110}\phantom{0} \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{00000}100 \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{00000}\underline{88} \\ \phantom{22\,\overline{\smash{)}\,}}\phantom{000000}\ldots \end{array}$$
+$$\begin{array}{r} 1.95454\mathrlap{\ldots} \\ 22\,\overline{\smash{)}\,43.00000} \\ \underline{22}\phantom{.00000} \\ 210\phantom{0000} \\ \underline{198}\phantom{0000} \\ 120\phantom{000} \\ \underline{110}\phantom{000} \\ 100\phantom{00} \\ \underline{88}\phantom{00} \\ 120\phantom{0} \\ \underline{110}\phantom{0} \\ 100 \\ \underline{88} \\ \ldots \end{array}$$
 
 Notice that the differences of $120$ and $100$ repeat, so there is a repeat
 in the digits of the quotient — $54$ will repeat endlessly. The first
@@ -133,7 +133,7 @@ $$\frac{43}{22} = 1.9\overline{54}$$
   answer="2.4545"
   answerForm="decimal"
   answerDisplay="$2.\overline{45} \approx 2.4545$"
-  hint="Divide $27$ by $11$ — a two-digit block starts repeating endlessly right after the decimal point."
+  hint="Divide $27$ by $11$, writing zeros after the decimal point until a remainder repeats. Carry the division to five decimal places so you can round at the fourth."
 >}}
 
 {{< fillin
@@ -141,7 +141,7 @@ $$\frac{43}{22} = 1.9\overline{54}$$
   answer="2.3182"
   answerForm="decimal"
   answerDisplay="$2.3\overline{18} \approx 2.3182$"
-  hint="Divide $51$ by $22$ — the digit $3$ shows once before a two-digit block starts repeating endlessly."
+  hint="Divide $51$ by $22$, writing zeros after the decimal point until a remainder repeats. Carry the division to five decimal places so you can round at the fourth."
 >}}
 
 It is useful to convert between fractions and decimals when we need to add
@@ -160,14 +160,14 @@ $$0.875 + 6.4 = 7.275$$
   question="Simplify: $\tfrac{3}{8} + 4.9$"
   answer="5.275"
   answerForm="decimal"
-  hint="Convert $\tfrac{3}{8}$ to a decimal ($0.375$), then add."
+  hint="Convert $\tfrac{3}{8}$ to a decimal by dividing $3$ by $8$, then line up the decimal points and add."
 >}}
 
 {{< fillin
   question="Simplify: $5.7 + \tfrac{13}{20}$"
   answer="6.35"
   answerForm="decimal"
-  hint="Convert $\tfrac{13}{20}$ to a decimal ($0.65$), then add."
+  hint="Convert $\tfrac{13}{20}$ to a decimal by dividing $13$ by $20$, then line up the decimal points and add."
 >}}
 
 ## Order decimals and fractions
@@ -187,14 +187,14 @@ $$\frac{3}{8} < 0.4$$
   question="Order each of the following pairs of numbers, using $<$ or $>$: $\tfrac{17}{20}$ __ $0.82$. Enter the full inequality, e.g. $\tfrac{1}{2}<0.6$."
   answer="\frac{17}{20}>0.82"
   answerDisplay="$\tfrac{17}{20} > 0.82$"
-  hint="Convert $\tfrac{17}{20}$ to a decimal ($0.85$), then compare it to $0.82$."
+  hint="Convert $\tfrac{17}{20}$ to a decimal, then compare it to $0.82$ place value by place value."
 >}}
 
 {{< fillin
   question="Order each of the following pairs of numbers, using $<$ or $>$: $\tfrac{3}{4}$ __ $0.785$. Enter the full inequality, e.g. $\tfrac{1}{2}<0.6$."
   answer="\frac{3}{4}<0.785"
   answerDisplay="$\tfrac{3}{4} < 0.785$"
-  hint="Convert $\tfrac{3}{4}$ to a decimal ($0.75$), then compare it to $0.785$."
+  hint="Convert $\tfrac{3}{4}$ to a decimal, then compare it to $0.785$ place value by place value."
 >}}
 
 When ordering negative numbers, remember that larger numbers are to the
@@ -212,14 +212,14 @@ $$-0.5 > -\frac{3}{4}$$
   question="Order each of the following pairs of numbers, using $<$ or $>$: $-\tfrac{5}{8}$ __ $-0.58$. Enter the full inequality, e.g. $-\tfrac{1}{2}<-0.4$."
   answer="-\frac{5}{8}<-0.58"
   answerDisplay="$-\tfrac{5}{8} < -0.58$"
-  hint="Convert $-\tfrac{5}{8}$ to a decimal ($-0.625$). Remember larger numbers are to the right on the number line, even when negative."
+  hint="Convert $-\tfrac{5}{8}$ to a decimal, then compare. Remember larger numbers are to the right on the number line, even when negative."
 >}}
 
 {{< fillin
   question="Order each of the following pairs of numbers, using $<$ or $>$: $-0.53$ __ $-\tfrac{11}{20}$. Enter the full inequality, e.g. $-\tfrac{1}{2}<-0.4$."
   answer="-0.53>-\frac{11}{20}"
   answerDisplay="$-0.53 > -\tfrac{11}{20}$"
-  hint="Convert $-\tfrac{11}{20}$ to a decimal ($-0.55$), then compare. Remember larger numbers are to the right on the number line, even when negative."
+  hint="Convert $-\tfrac{11}{20}$ to a decimal, then compare. Remember larger numbers are to the right on the number line, even when negative."
 >}}
 
 **Example.** Write the numbers $\tfrac{13}{20}, 0.61, \tfrac{11}{16}$ in
@@ -235,14 +235,14 @@ $$0.61, \frac{13}{20}, \frac{11}{16}$$
   question="Write each set of numbers in order from smallest to largest: $\tfrac{7}{8}, \tfrac{4}{5}, 0.82$"
   answer="0.8, 0.82, 0.875"
   answerDisplay="$\tfrac{4}{5}, 0.82, \tfrac{7}{8}$"
-  hint="Convert both fractions to decimals ($\tfrac{4}{5} = 0.8$, $\tfrac{7}{8} = 0.875$), then order all three decimals from smallest to largest."
+  hint="Convert both fractions to decimals, then order all three decimals from smallest to largest."
 >}}
 
 {{< fillin
   question="Write each set of numbers in order from smallest to largest: $0.835, \tfrac{13}{16}, \tfrac{3}{4}$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
   answer="0.75, 0.8125, 0.835"
   answerDisplay="$\tfrac{3}{4}, \tfrac{13}{16}, 0.835$"
-  hint="Convert both fractions to decimals ($\tfrac{3}{4} = 0.75$, $\tfrac{13}{16} = 0.8125$), then order all three decimals from smallest to largest."
+  hint="Convert both fractions to decimals, then order all three decimals from smallest to largest."
 >}}
 
 ## Simplify expressions using the order of operations
@@ -268,10 +268,10 @@ Simplify: $3$.
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{3}{5}\right)(9.6 - 2.1)$"
+  question="Simplify: $\tfrac{3}{5}(9.6 - 2.1)$"
   answer="4.5"
   answerForm="decimal"
-  hint="Simplify inside the parentheses first ($9.6 - 2.1 = 7.5$), then multiply by $\tfrac{3}{5}$."
+  hint="Simplify inside the parentheses first, then multiply by $\tfrac{3}{5}$ — write the difference as a fraction over $1$ if that helps."
 >}}
 
 **Example.** Simplify each expression: (a)
@@ -296,7 +296,7 @@ $0.01 + 3.15$. Add: $3.16$.
   question="Simplify: $\left(\tfrac{1}{2}\right)^2 + (0.3)(4.2)$"
   answer="1.51"
   answerForm="decimal"
-  hint="Simplify the exponent first ($\tfrac{1}{2}$ squared $= \tfrac{1}{4} = 0.25$), then multiply $0.3$ by $4.2$, then add."
+  hint="Simplify the exponent first and convert that fraction to a decimal, then multiply $0.3$ by $4.2$, then add."
 >}}
 
 ## Find the circumference and area of circles
@@ -309,7 +309,7 @@ points on the circle is called a **diameter**. The diameter is twice as long
 as the radius.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A circle with its radius drawn from the center to a point on the circle, its diameter drawn as a horizontal dashed line through the center, and its circumference labeled as the distance around the circle." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 296" width="252" height="296" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A circle with its radius drawn from the center to a point on the circle, its diameter drawn as a horizontal dashed line through the center, and its circumference labeled as the distance around the circle." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 262" width="252" height="262" font-family="Helvetica, Arial, sans-serif">
   <circle cx="126" cy="126" r="90" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <line x1="126" y1="126" x2="196.9" y2="70.6" stroke="currentColor" stroke-width="1.5"/>
   <text x="154.7" y="87.6" text-anchor="end" font-size="13" fill="currentColor">radius</text>
@@ -368,22 +368,25 @@ area.
 (b) $A = \pi r^2 \approx (3.14)(10)^2 \approx 314$ square centimeters.
 
 {{< fillin
-  question="A circle has radius $50$ inches. Approximate its circumference. Use $3.14$ for $\pi$."
+  question="A circle has radius $50$ inches. Approximate its circumference, in inches. Use $3.14$ for $\pi$."
   answer="314"
+  answerForm="decimal"
   answerDisplay="314 in."
   hint="Use $C = 2\pi r$ with $\pi \approx 3.14$ and $r = 50$."
 >}}
 
 {{< fillin
-  question="A circle has radius $50$ inches. Approximate its area. Use $3.14$ for $\pi$."
+  question="A circle has radius $50$ inches. Approximate its area, in square inches. Use $3.14$ for $\pi$."
   answer="7850"
+  answerForm="decimal"
   answerDisplay="7,850 sq. in."
   hint="Use $A = \pi r^2$ with $\pi \approx 3.14$ and $r = 50$."
 >}}
 
 {{< fillin
-  question="A circle has radius $100$ feet. Approximate its circumference. Use $3.14$ for $\pi$."
+  question="A circle has radius $100$ feet. Approximate its circumference, in feet. Use $3.14$ for $\pi$."
   answer="628"
+  answerForm="decimal"
   answerDisplay="628 ft"
   hint="Use $C = 2\pi r$ with $\pi \approx 3.14$ and $r = 100$."
 >}}
@@ -393,18 +396,20 @@ area.
 
 (a) $C = 2\pi r \approx 2(3.14)(42.5) \approx 266.9$ centimeters.
 
-(b) $A = \pi r^2 \approx (3.14)(42.5)^2 \approx 5671.625$ square centimeters.
+(b) $A = \pi r^2 \approx (3.14)(42.5)^2 \approx 5{,}671.625$ square centimeters.
 
 {{< fillin
-  question="A circle has radius $51.8$ centimeters. Approximate its circumference. Use $3.14$ for $\pi$. Round to two decimal places."
-  answer="325.30"
-  answerDisplay="325.30 cm"
+  question="A circle has radius $51.8$ centimeters. Approximate its circumference, in centimeters. Use $3.14$ for $\pi$."
+  answer="325.304"
+  answerForm="decimal"
+  answerDisplay="325.304 cm"
   hint="Use $C = 2\pi r$ with $\pi \approx 3.14$ and $r = 51.8$."
 >}}
 
 {{< fillin
-  question="A circle has radius $26.4$ meters. Approximate its area. Use $3.14$ for $\pi$. Round to four decimal places."
+  question="A circle has radius $26.4$ meters. Approximate its area, in square meters. Use $3.14$ for $\pi$."
   answer="2188.4544"
+  answerForm="decimal"
   answerDisplay="2,188.4544 sq. m"
   hint="Use $A = \pi r^2$ with $\pi \approx 3.14$ and $r = 26.4$."
 >}}
@@ -430,15 +435,17 @@ value.
 \approx \tfrac{616}{225}$ square meters.
 
 {{< fillin
-  question="A circle has radius $\tfrac{5}{21}$ meters. Approximate its circumference. Use $\tfrac{22}{7}$ for $\pi$."
+  question="A circle has radius $\tfrac{5}{21}$ meters. Approximate its circumference, in meters. Use $\tfrac{22}{7}$ for $\pi$ and leave the answer as a fraction in lowest terms."
   answer="\frac{220}{147}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{220}{147}$ m"
-  hint="Use $C = 2\pi r$ with $\pi \approx \tfrac{22}{7}$ and $r = \tfrac{5}{21}$: multiply $2 \cdot \tfrac{22}{7} \cdot \tfrac{5}{21} = \tfrac{220}{147}$."
+  hint="Use $C = 2\pi r$ with $\pi \approx \tfrac{22}{7}$ and $r = \tfrac{5}{21}$: multiply the numerators, multiply the denominators, and simplify."
 >}}
 
 {{< fillin
-  question="A circle has radius $\tfrac{10}{33}$ inches. Approximate its area. Use $\tfrac{22}{7}$ for $\pi$."
+  question="A circle has radius $\tfrac{10}{33}$ inches. Approximate its area, in square inches. Use $\tfrac{22}{7}$ for $\pi$ and leave the answer as a fraction in lowest terms."
   answer="\frac{200}{693}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{200}{693}$ sq. in."
   hint="Use $A = \pi r^2$ with $\pi \approx \tfrac{22}{7}$ and $r = \tfrac{10}{33}$ — square the radius first, then multiply by $\tfrac{22}{7}$."
 >}}
@@ -477,7 +484,7 @@ diameter, approximately $3.14$ or $\tfrac{22}{7}$.
   hint="Divide $5$ by $9$. The remainder never becomes zero, so use the overbar to mark the digits that repeat."
 >}}
 $0.\overline{45}$
-$0.\overline{9}$
+$1.8$
 $0.5$
 $0.\overline{5}$
 {{< /multiplechoice >}}
@@ -495,7 +502,7 @@ $0.\overline{5}$
   question="Order the pair of numbers, using $<$ or $>$: $\tfrac{1}{8}$ __ $0.8$. Enter the full inequality, e.g. $\tfrac{1}{2}<0.6$."
   answer="\frac{1}{8}<0.8"
   answerDisplay="$\tfrac{1}{8} < 0.8$"
-  hint="Convert $\tfrac{1}{8}$ to a decimal first — one eighth is much smaller than eight tenths."
+  hint="Convert $\tfrac{1}{8}$ to a decimal by dividing $1$ by $8$, then compare it to $0.8$ place value by place value."
 >}}
 
 {{< fillin
@@ -509,14 +516,14 @@ $0.\overline{5}$
   question="Write the set of numbers in order from least to greatest: $\tfrac{3}{5}, \tfrac{9}{16}, 0.55$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
   answer="0.55, 0.5625, 0.6"
   answerDisplay="$0.55, \tfrac{9}{16}, \tfrac{3}{5}$"
-  hint="Convert both fractions to decimals ($\tfrac{3}{5} = 0.6$, $\tfrac{9}{16} = 0.5625$), then order all three decimals."
+  hint="Convert both fractions to decimals, then order all three decimals from least to greatest."
 >}}
 
 {{< fillin
   question="Write the set of numbers in order from least to greatest: $0.702, \tfrac{13}{20}, \tfrac{5}{8}$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
   answer="0.625, 0.65, 0.702"
   answerDisplay="$\tfrac{5}{8}, \tfrac{13}{20}, 0.702$"
-  hint="Convert both fractions to decimals ($\tfrac{13}{20} = 0.65$, $\tfrac{5}{8} = 0.625$), then order all three decimals."
+  hint="Convert both fractions to decimals, then order all three decimals from least to greatest."
 >}}
 
 ### Simplify expressions using the order of operations
@@ -552,33 +559,37 @@ $0.\overline{5}$
 ### Find the circumference and area of circles
 
 {{< fillin
-  question="A circle has radius $5$ inches. Approximate its circumference. Use $3.14$ for $\pi$."
+  question="A circle has radius $5$ inches. Approximate its circumference, in inches. Use $3.14$ for $\pi$."
   answer="31.4"
+  answerForm="decimal"
   answerDisplay="31.4 in."
   hint="Use $C = 2\pi r$ with $\pi \approx 3.14$ and $r = 5$."
 >}}
 
 {{< fillin
-  question="A circle has radius $5$ inches. Approximate its area. Use $3.14$ for $\pi$."
+  question="A circle has radius $5$ inches. Approximate its area, in square inches. Use $3.14$ for $\pi$."
   answer="78.5"
+  answerForm="decimal"
   answerDisplay="78.5 sq. in."
   hint="Use $A = \pi r^2$ with $\pi \approx 3.14$ and $r = 5$ — square the radius before multiplying."
 >}}
 
 {{< fillin
-  question="A circle has diameter $\tfrac{5}{6}$ meter. Approximate its circumference. The measurement is a fraction, so use $\tfrac{22}{7}$ for $\pi$ and leave the answer in fraction form."
+  question="A circle has diameter $\tfrac{5}{6}$ meter. Approximate its circumference, in meters. The measurement is a fraction, so use $\tfrac{22}{7}$ for $\pi$ and leave the answer as a fraction in lowest terms."
   answer="\frac{55}{21}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{55}{21}$ m"
   hint="The diameter is given, so use $C = \pi d$: multiply $\tfrac{22}{7} \cdot \tfrac{5}{6}$ and simplify."
 >}}
 
 {{< fillin
-  question="A circle has diameter $\tfrac{5}{6}$ meter. Approximate its area. The measurement is a fraction, so use $\tfrac{22}{7}$ for $\pi$ and leave the answer in fraction form."
+  question="A circle has diameter $\tfrac{5}{6}$ meter. Approximate its area, in square meters. The measurement is a fraction, so use $\tfrac{22}{7}$ for $\pi$ and leave the answer as a fraction in lowest terms."
   answer="\frac{275}{504}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{275}{504}$ sq. m"
   hint="The area formula needs the radius, so halve the diameter first, then use $A = \pi r^2$ with $\pi \approx \tfrac{22}{7}$."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.3: Decimals and Fractions](https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the long-division layouts as typeset math and the circle diagram as an accessible inline graphic; omitted the Be Prepared quiz, Manipulative Mathematics callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises whose answers appear in the official Answer Key into the interactive Practice block, expanding multipart items into one exercise per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.3: Decimals and Fractions](https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the long-division layouts as typeset math and the circle diagram as an accessible inline graphic; omitted the Be Prepared quiz, Manipulative Mathematics callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking the two repeating-decimal Try Its for the decimal rounded to four places and posing the exercise that converts 5/9 as a multiple choice (the answer checker cannot take bar notation), and asking each pair-ordering item for the full inequality; and adapted selected end-of-section exercises whose answers appear in the official Answer Key into the interactive Practice block, expanding multipart items into one exercise per part.</small>

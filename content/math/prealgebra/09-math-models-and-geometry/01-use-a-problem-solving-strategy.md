@@ -39,7 +39,7 @@ and word sentences into algebraic equations, and solved word problems as
 long as the situation was familiar and the math was not too complicated.
 Now we'll develop a strategy you can use to solve *any* word problem.
 
-**Example.** Pete bought a shirt on sale for $18, which is one-half the
+**Example.** Pete bought a shirt on sale for \$18, which is one-half the
 original price. What was the original price of the shirt?
 
 Step 1. **Read** the problem. Make sure you understand all the words and
@@ -88,13 +88,16 @@ price of the shirt was $\text{\textdollar}36$.
 {{< fillin
   question="Joaquin bought a bookcase on sale for \$120, which was two-thirds the original price. What was the original price of the bookcase? (Enter just the number of dollars.)"
   answer="180"
-  hint="Let $p =$ the original price. Translate 'the sale price is two-thirds of the original price' as $120 = \tfrac{2}{3}p$, then solve for $p$."
+  answerForm="decimal"
+  answerDisplay="\$180"
+  hint="Let $p =$ the original price. Restate the problem as one sentence saying what fraction of the original price the sale price is, translate it into an equation, and multiply both sides by the reciprocal of the fraction."
 >}}
 
 {{< fillin
   question="Two-fifths of the people in the senior center dining room are men. If there are 16 men, what is the total number of people in the dining room?"
   answer="40"
-  hint="Let $t =$ the total number of people. Translate as $16 = \tfrac{2}{5}t$, then solve for $t$."
+  answerForm="decimal"
+  hint="Let $t =$ the total number of people. The men are a fraction of the total: translate that sentence into an equation, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 Let's use the strategy on a problem with more than one unknown quantity.
@@ -117,7 +120,8 @@ to the picnic.
 {{< fillin
   question="Guillermo bought textbooks and notebooks at the bookstore. The number of textbooks was 3 more than the number of notebooks. He bought 5 textbooks. How many notebooks did he buy?"
   answer="2"
-  hint="Let $n =$ the number of notebooks. Translate as $5 = n + 3$, then solve for $n$."
+  answerForm="decimal"
+  hint="Let $n =$ the number of notebooks. Write the number of textbooks in terms of $n$, set it equal to the number he bought, and solve."
 >}}
 
 In [Solve Sales Tax, Commission, and Discount
@@ -138,7 +142,9 @@ $\text{\textdollar}750$.
 {{< fillin
   question="Pilar's rent increased by 4%. The increase was \$38. What was the original amount of Pilar's rent? (Enter just the number of dollars.)"
   answer="950"
-  hint="Let $r =$ the original rent. Translate as $38 = 0.04r$, then solve for $r$."
+  answerForm="decimal"
+  answerDisplay="\$950"
+  hint="Let $r =$ the original rent. The increase is a percent of the original rent: write the percent as a decimal, translate the sentence into an equation, and divide both sides by that decimal."
 >}}
 
 ## Solve number problems
@@ -159,7 +165,8 @@ $19$.
 {{< fillin
   question="The difference of a number and eight is 17. Find the number."
   answer="25"
-  hint="Translate as $n - 8 = 17$, then solve for $n$."
+  answerForm="decimal"
+  hint="Name the number with a variable, translate the sentence into an equation as in the example above, and undo the subtraction."
 >}}
 
 **Example.** The sum of twice a number and seven is $15$. Find the number.
@@ -172,7 +179,8 @@ is $8$, and $8 + 7 = 15$. The number is $4$.
 {{< fillin
   question="The sum of four times a number and two is 14. Find the number."
   answer="3"
-  hint="Translate as $4n + 2 = 14$, then solve for $n$."
+  answerForm="decimal"
+  hint="Name the number with a variable and translate the sentence into an equation; then undo the addition before the multiplication."
 >}}
 
 Some number problems ask you to find two or more numbers. It's tempting to
@@ -195,15 +203,17 @@ the second. Checking: is $13$ five more than $8$? Yes. Is their sum $21$?
 Yes, $8 + 13 = 21$. The numbers are $8$ and $13$.
 
 {{< fillin
-  question="One number is six more than another. The sum of the numbers is twenty-four. Find the smaller number."
-  answer="9"
-  hint="Let $n =$ the smaller number, so $n + 6$ is the larger. Translate as $n + (n + 6) = 24$, then solve for $n$."
+  question="One number is six more than another. The sum of the numbers is twenty-four. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="9, 15"
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the other in terms of $n$. Set the sum of the two expressions equal to twenty-four, solve for $n$, then find the other number."
 >}}
 
 {{< fillin
-  question="The sum of two numbers is fifty-eight. One number is four more than the other. Find the smaller number."
-  answer="27"
-  hint="Let $n =$ the smaller number, so $n + 4$ is the larger. Translate as $n + (n + 4) = 58$, then solve for $n$."
+  question="The sum of two numbers is fifty-eight. One number is four more than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="27, 31"
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the other in terms of $n$. Set the sum of the two expressions equal to fifty-eight, solve for $n$, then find the other number."
 >}}
 
 Some pairs of numbers are related by subtraction instead of addition, and
@@ -223,9 +233,10 @@ is $-9$ four less than $-5$? Yes. Is their sum $-14$? Yes,
 $-5 + (-9) = -14$. The numbers are $-5$ and $-9$.
 
 {{< fillin
-  question="The sum of two numbers is negative twenty-three. One number is 7 less than the other. Find the smaller number."
-  answer="-15"
-  hint="Let $n =$ the larger number, so $n - 7$ is the smaller. Translate as $n + (n - 7) = -23$, then solve for the smaller number."
+  question="The sum of two numbers is negative twenty-three. One number is 7 less than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-15, -8"
+  answerForm="decimal"
+  hint="Let $n =$ the first number and write the one that is less in terms of $n$. Set the sum of the two expressions equal to negative twenty-three, solve for $n$, then find the second number."
 >}}
 
 Number problems can also relate one number to *twice* another.
@@ -245,9 +256,10 @@ $2(-3) + 10 = 4$. Is their sum $1$? Yes, $-3 + 4 = 1$. The numbers are $-3$
 and $4$.
 
 {{< fillin
-  question="One number is eight more than twice another. Their sum is negative four. Find the smaller number."
-  answer="-4"
-  hint="Let $x =$ the smaller number, so $2x + 8$ is the larger. Translate as $x + (2x + 8) = -4$, then solve for $x$."
+  question="One number is eight more than twice another. Their sum is negative four. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-4, 0"
+  answerForm="decimal"
+  hint="Let $x =$ the other number and write the number that is eight more than twice it in terms of $x$. Set the sum of the two expressions equal to negative four, solve for $x$, then substitute to find the second number."
 >}}
 
 **Consecutive integers** are integers that immediately follow each other,
@@ -265,15 +277,17 @@ second. Checking: $23 + 24 = 47$. The two consecutive integers are $23$ and
 $24$.
 
 {{< fillin
-  question="The sum of two consecutive integers is 95. Find the smaller integer."
-  answer="47"
-  hint="Let $n =$ the smaller integer, so $n + 1$ is the next. Translate as $n + (n + 1) = 95$, then solve for $n$."
+  question="The sum of two consecutive integers is 95. Find the numbers. Enter both integers separated by a comma, smaller first."
+  answer="47, 48"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next consecutive integer in terms of $n$. Set their sum equal to $95$, solve for $n$, then find the second integer."
 >}}
 
 {{< fillin
-  question="The sum of two consecutive integers is -31. Find the smaller integer."
-  answer="-16"
-  hint="Let $n =$ the smaller integer, so $n + 1$ is the next. Translate as $n + (n + 1) = -31$, then solve for $n$."
+  question="The sum of two consecutive integers is $-31$. Find the numbers. Enter both integers separated by a comma, smaller first."
+  answer="-16, -15"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next consecutive integer in terms of $n$. Set their sum equal to $-31$, solve for $n$, then find the second integer."
 >}}
 
 **Example.** Find three consecutive integers whose sum is $42$.
@@ -290,15 +304,17 @@ second, and $n + 2 = 15$ is the third. Checking: $13 + 14 + 15 = 42$. The
 three consecutive integers are $13$, $14$, and $15$.
 
 {{< fillin
-  question="Find three consecutive integers whose sum is 96. Enter the smallest of the three."
-  answer="31"
-  hint="Let $n =$ the first integer. Translate as $n + (n + 1) + (n + 2) = 96$, then solve for $n$."
+  question="Find three consecutive integers whose sum is 96. Enter all three separated by commas, smallest first."
+  answer="31, 32, 33"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $96$, solve for $n$, then find the other two."
 >}}
 
 {{< fillin
-  question="Find three consecutive integers whose sum is -36. Enter the smallest of the three."
-  answer="-13"
-  hint="Let $n =$ the first integer. Translate as $n + (n + 1) + (n + 2) = -36$, then solve for $n$."
+  question="Find three consecutive integers whose sum is $-36$. Enter all three separated by commas, smallest first."
+  answer="-13, -12, -11"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $-36$, solve for $n$, then find the other two."
 >}}
 
 ## Key terms
@@ -317,22 +333,25 @@ immediately follow each other, each one more than the number before it.
 {{< fillin
   question="Patty paid \$35 for a purse on sale for \$10 off the original price. What was the original price of the purse, in dollars?"
   answer="45"
+  answerForm="decimal"
   answerDisplay="\$45"
-  hint="Let $p =$ the original price. The sale took ten dollars off that price, so translate as $p - 10 = 35$ and solve for $p$."
+  hint="Let $p =$ the original price. Restate the problem as one sentence relating the price Patty paid, the discount, and the original price; translate it into an equation and solve for $p$."
 >}}
 
 {{< fillin
   question="Minh spent \$6.25 on 5 sticker books to give his nephews. Find the cost of each sticker book, in dollars."
   answer="1.25"
+  answerForm="decimal"
   answerDisplay="\$1.25"
-  hint="Let $c =$ the cost of one book. Five books at the same price cost $5c$, so solve $5c = 6.25$."
+  hint="Let $c =$ the cost of one book. The amount spent is the number of books times the cost of each: translate that sentence into an equation and undo the multiplication."
 >}}
 
 {{< fillin
   question="Tom paid \$1,166.40 for a new refrigerator, including \$86.40 tax. What was the price of the refrigerator before tax, in dollars?"
   answer="1080"
+  answerForm="decimal"
   answerDisplay="\$1,080"
-  hint="Let $p =$ the price before tax. The total is the price plus the tax, so solve $p + 86.40 = 1{,}166.40$."
+  hint="Let $p =$ the price before tax. The amount paid is the price plus the tax: translate that sentence into an equation and undo the addition."
 >}}
 
 ### Use a problem-solving strategy for word problems
@@ -340,40 +359,46 @@ immediately follow each other, each one more than the number before it.
 {{< fillin
   question="Zachary has 25 country music CDs, which is one-fifth of his CD collection. How many CDs does Zachary have?"
   answer="125"
-  hint="Let $c =$ the number of CDs in the collection. Translate as $25 = \tfrac{1}{5}c$, then multiply both sides by $5$."
+  answerForm="decimal"
+  hint="Let $c =$ the number of CDs in the collection. The country CDs are a fraction of the whole collection: translate that sentence into an equation, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 {{< fillin
   question="There are 16 girls in a school club. The number of girls is 4 more than twice the number of boys. Find the number of boys in the club."
   answer="6"
-  hint="Let $b =$ the number of boys. 'Four more than twice the number of boys' is $2b + 4$, so solve $16 = 2b + 4$."
+  answerForm="decimal"
+  hint="Let $b =$ the number of boys. Write 'four more than twice the number of boys' in terms of $b$, set it equal to the number of girls, and solve."
 >}}
 
 {{< fillin
   question="Lee is emptying dishes and glasses from the dishwasher. The number of dishes is 8 less than the number of glasses. If there are 9 dishes, what is the number of glasses?"
   answer="17"
-  hint="Let $g =$ the number of glasses. 'Eight less than the number of glasses' is $g - 8$, so solve $9 = g - 8$."
+  answerForm="decimal"
+  hint="Let $g =$ the number of glasses. Write 'eight less than the number of glasses' in terms of $g$, set it equal to the number of dishes, and solve."
 >}}
 
 {{< fillin
   question="After 3 months on a diet, Lisa had lost 12% of her original weight. She lost 21 pounds. What was Lisa's original weight, in pounds?"
   answer="175"
+  answerForm="decimal"
   answerDisplay="175 pounds"
-  hint="Let $w =$ the original weight. Write $12\%$ as $0.12$ and solve $21 = 0.12w$."
+  hint="Let $w =$ the original weight. The weight lost is a percent of the original weight: write the percent as a decimal, translate the sentence into an equation, and divide both sides by that decimal."
 >}}
 
 {{< fillin
   question="Yuki bought a dress on sale for \$72. The sale price was 60% of the original price. What was the original price of the dress, in dollars?"
   answer="120"
+  answerForm="decimal"
   answerDisplay="\$120"
-  hint="Let $p =$ the original price. Write $60\%$ as $0.6$ and solve $72 = 0.6p$."
+  hint="Let $p =$ the original price. The sale price is a percent of the original price: write the percent as a decimal, translate the sentence into an equation, and divide both sides by that decimal."
 >}}
 
 {{< fillin
-  question="Tim left a \$9 tip for a \$50 restaurant bill. What percent tip did he leave? Enter just the number of percent."
-  answer="18"
+  question="Tim left a \$9 tip for a \$50 restaurant bill. What percent tip did he leave? Enter the percent, including the $\%$ sign."
+  answer="18\%"
+  answerForm="percent"
   answerDisplay="18%"
-  hint="Let $p =$ the percent written as a decimal. Translate 'nine is what percent of fifty' as $9 = 50p$, then change the decimal to a percent."
+  hint="Let $p =$ the unknown percent. Restate the problem as 'the tip is what percent of the bill?', translate it into an equation, solve for $p$, and write the decimal as a percent."
 >}}
 
 ### Solve number problems
@@ -381,33 +406,38 @@ immediately follow each other, each one more than the number before it.
 {{< fillin
   question="The difference of twice a number and seven is 17. Find the number."
   answer="12"
-  hint="Let $n =$ the number. 'The difference of twice a number and seven' is $2n - 7$, so solve $2n - 7 = 17$."
+  answerForm="decimal"
+  hint="Let $n =$ the number. Translate the sentence into an equation, taking 'twice a number' before the difference, then undo the subtraction before the multiplication."
 >}}
 
 {{< fillin
   question="Three times the sum of a number and nine is 12. Find the number."
   answer="-5"
-  hint="Let $n =$ the number. The sum is formed first, so translate as $3(n + 9) = 12$ and divide both sides by $3$ before subtracting."
+  answerForm="decimal"
+  hint="Let $n =$ the number. The sum is formed first, so it goes in parentheses before it is tripled; translate the sentence, then divide both sides by $3$ before subtracting."
 >}}
 
 {{< fillin
   question="The sum of two numbers is fourteen. One number is two less than three times the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
   answer="4, 10"
-  hint="Let $n =$ the first number, so $3n - 2$ is the other. Solve $n + (3n - 2) = 14$, then use $n$ to find the second number."
+  answerForm="decimal"
+  hint="Let $n =$ the first number and write the other in terms of $n$. Set the sum of the two expressions equal to fourteen, solve for $n$, then find the second number."
 >}}
 
 {{< fillin
   question="One number is fourteen less than another. If their sum is increased by seven, the result is 85. Find the numbers. Enter both numbers separated by a comma, smaller first."
   answer="32, 46"
-  hint="Let $n =$ the larger number, so $n - 14$ is the other. 'Their sum increased by seven' is $n + (n - 14) + 7$, so solve $n + (n - 14) + 7 = 85$."
+  answerForm="decimal"
+  hint="Let $n =$ the larger number and write the other in terms of $n$. Add the two expressions, increase the sum by seven, set the result equal to $85$, and solve; then find the second number."
 >}}
 
 {{< fillin
   question="The sum of three consecutive integers is 78. Find the integers. Enter all three separated by commas, smallest first."
   answer="25, 26, 27"
-  hint="Let $n =$ the smallest integer, so the next two are $n + 1$ and $n + 2$. Solve $n + (n + 1) + (n + 2) = 78$."
+  answerForm="decimal"
+  hint="Let $n =$ the smallest integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $78$, solve for $n$, then find the other two."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.1: Use a Problem Solving Strategy](https://openstax.org/books/prealgebra-2e/pages/9-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, the illustrative figures of a student's negative and positive thoughts, and the Links to Literacy callout; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing on the Everyday Math exercises for the objective that has no exercise group of its own.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.1: Use a Problem Solving Strategy](https://openstax.org/books/prealgebra-2e/pages/9-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose and retold the worked examples' step tables in prose; omitted the Be Prepared quiz, the illustrative figures of a student's negative and positive thoughts, the handwritten homework-solution figure, and the Links to Literacy callout; added a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing on the Everyday Math exercises for the objective that has no exercise group of its own.</small>

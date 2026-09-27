@@ -49,19 +49,19 @@ $\tfrac{5}{9}$.
 leave the ratio in (b) as an improper fraction.
 
 {{< fillin
-  question="Write each ratio as a fraction, fully simplified: 21 to 56"
+  question="Write the ratio as a fraction, fully simplified: 21 to 56"
   answer="\frac{3}{8}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{8}$"
-  hint="Write $\tfrac{21}{56}$ and divide the numerator and denominator by their greatest common factor, $7$."
+  hint="Put the first number in the numerator and the second in the denominator, then divide both by their greatest common factor."
 >}}
 
 {{< fillin
-  question="Write each ratio as a fraction, fully simplified: 48 to 32"
+  question="Write the ratio as a fraction, fully simplified: 48 to 32"
   answer="\frac{3}{2}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{2}$"
-  hint="Write $\tfrac{48}{32}$ and divide the numerator and denominator by their greatest common factor, $16$. Leave the result as an improper fraction."
+  hint="Put the first number in the numerator and the second in the denominator, then divide both by their greatest common factor. Leave an improper fraction as it is."
 >}}
 
 ### Ratios involving decimals
@@ -104,27 +104,27 @@ $\tfrac{2.7}{0.54} = \tfrac{270}{54}$. Simplify: $\tfrac{5}{1}$. So $2.7$ to
 $0.54$ is equivalent to $\tfrac{5}{1}$.
 
 {{< fillin
-  question="Write each ratio as a fraction of whole numbers, fully simplified: 4.6 to 11.5"
+  question="Write the ratio as a fraction of whole numbers, fully simplified: 4.6 to 11.5"
   answer="\frac{2}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
-  hint="Move both decimal points 1 place to the right ($46$ to $115$), then simplify."
+  hint="Move both decimal points the same number of places to the right, enough to clear every decimal, then simplify."
 >}}
 
 {{< fillin
-  question="Write each ratio as a fraction of whole numbers, fully simplified: 2.3 to 0.69"
+  question="Write the ratio as a fraction of whole numbers, fully simplified: 2.3 to 0.69"
   answer="\frac{10}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{3}$"
-  hint="Move both decimal points 2 places to the right ($230$ to $69$), then simplify."
+  hint="The two numbers have different numbers of decimal places: move both decimal points far enough to clear the longer decimal, then simplify."
 >}}
 
 {{< fillin
-  question="Write each ratio as a fraction of whole numbers, fully simplified: 3.4 to 15.3"
+  question="Write the ratio as a fraction of whole numbers, fully simplified: 3.4 to 15.3"
   answer="\frac{2}{9}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{9}$"
-  hint="Move both decimal points 1 place to the right ($34$ to $153$), then simplify."
+  hint="Move both decimal points the same number of places to the right, enough to clear every decimal, then simplify."
 >}}
 
 Some ratios compare two mixed numbers. Remember that to divide mixed
@@ -140,19 +140,19 @@ divisor and multiply: $\tfrac{5}{4} \cdot \tfrac{8}{19}$. Simplify:
 $\tfrac{10}{19}$.
 
 {{< fillin
-  question="Write each ratio as a fraction: $1\tfrac{3}{4}$ to $2\tfrac{5}{8}$"
+  question="Write the ratio as a fraction, fully simplified: $1\tfrac{3}{4}$ to $2\tfrac{5}{8}$"
   answer="\frac{2}{3}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
-  hint="Convert both mixed numbers to improper fractions ($\tfrac{7}{4}$ and $\tfrac{21}{8}$), then divide by inverting and multiplying."
+  hint="Rewrite both mixed numbers as improper fractions, then divide: invert the divisor, multiply, and simplify."
 >}}
 
 {{< fillin
-  question="Write each ratio as a fraction: $1\tfrac{1}{8}$ to $2\tfrac{3}{4}$"
+  question="Write the ratio as a fraction, fully simplified: $1\tfrac{1}{8}$ to $2\tfrac{3}{4}$"
   answer="\frac{9}{22}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{9}{22}$"
-  hint="Convert both mixed numbers to improper fractions ($\tfrac{9}{8}$ and $\tfrac{11}{4}$), then divide by inverting and multiplying."
+  hint="Rewrite both mixed numbers as improper fractions, then divide: invert the divisor, multiply, and simplify."
 >}}
 
 ### Applications of ratios
@@ -181,7 +181,7 @@ or raise his HDL cholesterol.
   answer="\frac{37}{8}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{37}{8}$"
-  hint="Write the ratio as $\tfrac{\text{total}}{\text{HDL}} = \tfrac{185}{40}$, then simplify by dividing both by $5$."
+  hint="Put the total cholesterol in the numerator and the HDL cholesterol in the denominator, then divide out their common factor."
 >}}
 
 {{< fillin
@@ -189,7 +189,7 @@ or raise his HDL cholesterol.
   answer="\frac{102}{19}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{102}{19}$"
-  hint="Write the ratio as $\tfrac{\text{total}}{\text{HDL}} = \tfrac{204}{38}$, then simplify by dividing both by $2$."
+  hint="Put the total cholesterol in the numerator and the HDL cholesterol in the denominator, then divide out their common factor."
 >}}
 
 ### Ratios of two measurements in different units
@@ -219,17 +219,17 @@ guidelines.
 {{< fillin
   question="Find the ratio of the first length to the second length, fully simplified: 32 inches to 1 foot"
   answer="\frac{8}{3}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{3}$"
-  hint="Convert $1$ foot to $12$ inches, then simplify $\tfrac{32}{12}$ by dividing out the common factor $4$."
+  hint="Write both lengths in inches ($1$ foot $= 12$ inches), put the first over the second, and simplify. Leave an improper fraction as it is."
 >}}
 
 {{< fillin
   question="Find the ratio of the first length to the second length, fully simplified: 1 foot to 54 inches"
   answer="\frac{2}{9}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{9}$"
-  hint="Convert $1$ foot to $12$ inches, then simplify $\tfrac{12}{54}$ by dividing out the common factor $6$."
+  hint="Write both lengths in inches ($1$ foot $= 12$ inches), put the first over the second, and simplify."
 >}}
 
 ## Write a rate as a fraction
@@ -237,7 +237,7 @@ guidelines.
 Frequently we want to compare two different types of measurements, such as
 miles to gallons. To make this comparison, we use a **rate**. Examples of
 rates are $120$ miles in $2$ hours, $160$ words in $4$ minutes, and
-$\text{\textdollar}5$ dollars per $64$ ounces.
+$\text{\textdollar}5$ per $64$ ounces.
 
 {{< callout type="info" >}}
   **Rate.** A rate compares two quantities of different units. A rate is
@@ -262,7 +262,7 @@ equivalent to $\tfrac{175\text{ miles}}{3\text{ hours}}$.
   answer="\frac{123}{2}"
   answerForm="fraction lowest-terms"
   answerDisplay="123 miles $/ 2$ hours"
-  hint="Simplify $\tfrac{492}{8}$ by dividing both by their greatest common factor, $4$."
+  hint="Put the miles in the numerator and the hours in the denominator, then divide both numbers by their greatest common factor."
 >}}
 
 {{< fillin
@@ -270,7 +270,7 @@ equivalent to $\tfrac{175\text{ miles}}{3\text{ hours}}$.
   answer="\frac{121}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="121 miles $/ 3$ hours"
-  hint="Simplify $\tfrac{242}{6}$ by dividing both by their greatest common factor, $2$."
+  hint="Put the miles in the numerator and the hours in the denominator, then divide both numbers by their greatest common factor."
 >}}
 
 ## Find unit rates
@@ -320,15 +320,17 @@ $$\frac{\$12}{1\text{ hour}}$$
 Rewrite as a rate: $\text{\textdollar}12$/hour. Anita's hourly pay rate is $\text{\textdollar}12$ per hour.
 
 {{< fillin
-  question="Find the unit rate: \$630 for 35 hours"
+  question="Find the unit rate, in dollars per hour: \$630 for 35 hours"
   answer="18"
+  answerForm="decimal"
   answerDisplay="\$18/hour"
   hint="Divide the total pay by the number of hours."
 >}}
 
 {{< fillin
-  question="Find the unit rate: \$684 for 36 hours"
+  question="Find the unit rate, in dollars per hour: \$684 for 36 hours"
   answer="19"
+  answerForm="decimal"
   answerDisplay="\$19/hour"
   hint="Divide the total pay by the number of hours."
 >}}
@@ -342,15 +344,17 @@ the unit rate, $\tfrac{32.5\text{ miles}}{1\text{ gallon}}$. Sven's car gets
 $32.5$ miles/gallon, or $32.5$ mpg.
 
 {{< fillin
-  question="Find the unit rate: 423 miles to 18 gallons of gas"
+  question="Find the unit rate, in miles per gallon: 423 miles to 18 gallons of gas"
   answer="23.5"
+  answerForm="decimal"
   answerDisplay="23.5 mpg"
   hint="Divide the number of miles by the number of gallons."
 >}}
 
 {{< fillin
-  question="Find the unit rate: 406 miles to 14.5 gallons of gas"
+  question="Find the unit rate, in miles per gallon: 406 miles to 14.5 gallons of gas"
   answer="28"
+  answerForm="decimal"
   answerDisplay="28 mpg"
   hint="Divide the number of miles by the number of gallons."
 >}}
@@ -387,15 +391,17 @@ $$\frac{\$0.17}{1\text{ bottle}}$$
 The unit price is approximately $\text{\textdollar}0.17$ per bottle.
 
 {{< fillin
-  question="Find the unit price. Round your answer to the nearest cent if necessary. 24-pack of juice boxes for \$6.99"
+  question="Find the unit price, in dollars. Round your answer to the nearest cent if necessary. 24-pack of juice boxes for \$6.99"
   answer="0.29"
+  answerForm="decimal"
   answerDisplay="\$0.29 per box"
   hint="Divide the total price by 24, then round to the nearest cent."
 >}}
 
 {{< fillin
-  question="Find the unit price. Round your answer to the nearest cent if necessary. 24-pack of bottles of iced tea for \$12.72"
+  question="Find the unit price, in dollars. Round your answer to the nearest cent if necessary. 24-pack of bottles of ice tea for \$12.72"
   answer="0.53"
+  answerForm="decimal"
   answerDisplay="\$0.53 per bottle"
   hint="Divide the total price by 24, then round to the nearest cent."
 >}}
@@ -423,17 +429,19 @@ about \$0.23 per load and the unit price of the powder detergent is about
 \$0.20 per load. The powder is the better buy.
 
 {{< fillin
-  question="Brand A Storage Bags cost \$4.59 for 40 count, and Brand B Storage Bags cost \$3.99 for 30 count. Find the lower of the two unit prices (the better buy), rounded to the nearest cent."
+  question="Brand A Storage Bags cost \$4.59 for 40 count, and Brand B Storage Bags cost \$3.99 for 30 count. Find the lower of the two unit prices (the better buy), in dollars, rounded to the nearest cent."
   answer="0.11"
+  answerForm="decimal"
   answerDisplay="\$0.11/bag (Brand A)"
-  hint="Divide each price by its count — Brand A costs about \$0.11/bag and Brand B costs about \$0.13/bag. Enter the smaller of the two."
+  hint="Divide each price by its count, round each unit price to the nearest cent, and enter the smaller one."
 >}}
 
 {{< fillin
-  question="Brand C Chicken Noodle Soup costs \$1.89 for 26 ounces, and Brand D Chicken Noodle Soup costs \$0.95 for 10.75 ounces. Find the lower of the two unit prices (the better buy), rounded to the nearest cent."
+  question="Brand C Chicken Noodle Soup costs \$1.89 for 26 ounces, and Brand D Chicken Noodle Soup costs \$0.95 for 10.75 ounces. Find the lower of the two unit prices (the better buy), in dollars, rounded to the nearest cent."
   answer="0.07"
+  answerForm="decimal"
   answerDisplay="\$0.07/oz (Brand C)"
-  hint="Divide each price by its ounces — Brand C costs about \$0.07/oz and Brand D costs about \$0.09/oz. Enter the smaller of the two."
+  hint="Divide each price by its number of ounces, round each unit price to the nearest cent, and enter the smaller one."
 >}}
 
 Notice that we rounded the unit price to the nearest cent. Sometimes we may
@@ -463,21 +471,21 @@ for $18$ hours.
   question="Translate the word phrase into an algebraic expression: $689$ miles per $h$ hours. Use $h$ as the variable."
   answer="\frac{689}{h}"
   answerDisplay="689 miles $/ h$ hours"
-  hint="Put the given number in the numerator and the variable with its units in the denominator."
+  hint="*Per* signals a rate: the first quantity named goes in the numerator and the second in the denominator."
 >}}
 
 {{< fillin
   question="Translate the word phrase into an algebraic expression: $y$ parents to $22$ students. Use $y$ as the variable."
   answer="\frac{y}{22}"
   answerDisplay="y parents $/ 22$ students"
-  hint="Put the variable in the numerator and the given number in the denominator, since this is a ratio of parents to students."
+  hint="*To* signals a comparison: the first quantity named goes in the numerator and the second in the denominator."
 >}}
 
 {{< fillin
   question="Translate the word phrase into an algebraic expression: $d$ dollars for $9$ minutes. Use $d$ as the variable."
   answer="\frac{d}{9}"
   answerDisplay="d dollars $/ 9$ minutes"
-  hint="Put the variable in the numerator and the given number in the denominator."
+  hint="*For* signals a rate: the first quantity named goes in the numerator and the second in the denominator."
 >}}
 
 ## Key terms
@@ -497,7 +505,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{5}{9}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{9}$"
-  hint="Write $\tfrac{20}{36}$, then divide the numerator and denominator by their greatest common factor, $4$."
+  hint="Put the first number in the numerator and the second in the denominator, then divide both by their greatest common factor."
 >}}
 
 {{< fillin
@@ -505,7 +513,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{1}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{5}$"
-  hint="The numerator has two decimal places, so move both decimal points 2 places to the right ($56$ to $280$), then simplify."
+  hint="Move both decimal points far enough to the right to clear the number with more decimal places, then simplify."
 >}}
 
 {{< fillin
@@ -513,7 +521,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{10}{17}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{17}$"
-  hint="Rewrite both mixed numbers as improper fractions ($\tfrac{5}{3}$ and $\tfrac{17}{6}$), then divide by inverting the divisor and multiplying."
+  hint="Rewrite both mixed numbers as improper fractions, then divide: invert the divisor, multiply, and simplify."
 >}}
 
 {{< fillin
@@ -521,7 +529,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{35}{9}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{35}{9}$"
-  hint="Put the total cholesterol in the numerator and the HDL cholesterol in the denominator, then divide both by $5$. Leave the result as an improper fraction."
+  hint="Put the total cholesterol in the numerator and the HDL cholesterol in the denominator, then divide out their common factor. Leave an improper fraction as it is."
 >}}
 
 {{< fillin
@@ -529,7 +537,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{9}{4}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{9}{4}$"
-  hint="Both quantities must be measured in the same unit — convert $1$ foot to $12$ inches, then simplify $\tfrac{27}{12}$."
+  hint="Both quantities must be measured in the same unit: write both in inches ($1$ foot $= 12$ inches), then simplify. Leave an improper fraction as it is."
 >}}
 
 ### Write a rate as a fraction
@@ -539,7 +547,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{35}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="35 calories $/ 3$ ounces"
-  hint="Put the calories in the numerator and the ounces in the denominator, then divide both by $4$."
+  hint="Put the calories in the numerator and the ounces in the denominator, then divide both by their greatest common factor."
 >}}
 
 {{< fillin
@@ -547,7 +555,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   answer="\frac{41}{15}"
   answerForm="fraction lowest-terms"
   answerDisplay="41 lbs. $/ 15$ sq. in."
-  hint="Clear the decimal first by moving both decimal points 1 place to the right ($82$ over $30$), then simplify."
+  hint="Clear the decimal first by multiplying the numerator and the denominator by the same power of ten, then simplify."
 >}}
 
 {{< fillin
@@ -561,29 +569,33 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 ### Find unit rates
 
 {{< fillin
-  question="Find the unit rate: 576 miles on 18 gallons of gas"
+  question="Find the unit rate, in miles per gallon: 576 miles on 18 gallons of gas"
   answer="32"
+  answerForm="decimal"
   answerDisplay="32 mpg"
   hint="Divide the number of miles by the number of gallons to get a denominator of $1$ gallon."
 >}}
 
 {{< fillin
-  question="Find the unit rate: 46 beats in 0.5 minute"
+  question="Find the unit rate, in beats per minute: 46 beats in 0.5 minute"
   answer="92"
+  answerForm="decimal"
   answerDisplay="92 beats/minute"
-  hint="Divide $46$ by $0.5$ — dividing by one half doubles the number of beats."
+  hint="Divide the number of beats by the number of minutes to get a denominator of $1$ minute."
 >}}
 
 {{< fillin
-  question="Find the unit rate. Round to two decimal places. \$595 for 40 hours"
+  question="Find the unit rate, in dollars per hour. Round to two decimal places. \$595 for 40 hours"
   answer="14.88"
+  answerForm="decimal"
   answerDisplay="\$14.88/hour"
-  hint="Divide the total pay by the number of hours, then round the quotient $14.875$ to the nearest cent."
+  hint="Divide the total pay by the number of hours, carrying the division one place past the cents, then round to the nearest cent."
 >}}
 
 {{< fillin
   question="The bindery at a printing plant assembles 96,000 magazines in 12 hours. How many magazines are assembled in one hour?"
   answer="8000"
+  answerForm="decimal"
   answerDisplay="$8{,}000$ magazines per hour"
   hint="The unit rate has a denominator of $1$ hour, so divide the number of magazines by the number of hours."
 >}}
@@ -591,31 +603,35 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 ### Find unit price
 
 {{< fillin
-  question="Find the unit price. Round to the nearest cent. Soap bars at 8 for \$8.69"
+  question="Find the unit price, in dollars. Round to the nearest cent. Soap bars at 8 for \$8.69"
   answer="1.09"
+  answerForm="decimal"
   answerDisplay="\$1.09/bar"
-  hint="Divide the total price by the number of bars, then round $1.08625$ to the nearest cent."
+  hint="Divide the total price by the number of bars, then round to the nearest cent."
 >}}
 
 {{< fillin
-  question="Find the unit price. Round to the nearest cent. Snack packs of cookies at 12 for \$5.79"
+  question="Find the unit price, in dollars. Round to the nearest cent. Snack packs of cookies at 12 for \$5.79"
   answer="0.48"
+  answerForm="decimal"
   answerDisplay="\$0.48/pack"
   hint="Divide the total price by $12$, then round to the nearest cent."
 >}}
 
 {{< fillin
-  question="The grocery store has a special on macaroni and cheese. The price is \$3.87 for 3 boxes. How much does each box cost? Round to the nearest cent."
+  question="The grocery store has a special on macaroni and cheese. The price is \$3.87 for 3 boxes. How much does each box cost, in dollars? Round to the nearest cent."
   answer="1.29"
+  answerForm="decimal"
   answerDisplay="\$1.29/box"
   hint="The unit price is the total price divided by the number of boxes."
 >}}
 
 {{< fillin
-  question="Ketchup comes in a 40-ounce regular bottle for \$2.99 or a 64-ounce squeeze bottle for \$4.39. Find each unit price, rounded to three decimal places, then enter the unit price of the better buy."
+  question="Ketchup comes in a 40-ounce regular bottle for \$2.99 or a 64-ounce squeeze bottle for \$4.39. Find each unit price, rounded to three decimal places, then enter the unit price of the better buy, in dollars per ounce."
   answer="0.069"
+  answerForm="decimal"
   answerDisplay="\$0.069 per ounce — the 64-ounce squeeze bottle is the better buy"
-  hint="Divide each price by its number of ounces: the regular bottle costs about \$0.075 per ounce. The better buy is the one with the *lower* unit price."
+  hint="Divide each price by its number of ounces and round each to three decimal places. The better buy is the one with the *lower* unit price."
 >}}
 
 ### Translate phrases to expressions with fractions
@@ -631,16 +647,16 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
   question="Translate the English phrase into an algebraic expression: $105$ calories in $x$ ounces. Use $x$ as the variable."
   answer="\frac{105}{x}"
   answerDisplay="105 calories $/ x$ ounces"
-  hint="Calories and ounces are different units, so this is a rate — write the calories over the ounces."
+  hint="Calories and ounces are different units, so this is a rate: the first quantity named goes in the numerator and the second in the denominator."
 >}}
 
 {{< fillin
   question="Translate the English phrase into an algebraic expression: the ratio of $y$ and $5x$."
   answer="\frac{y}{5x}"
   answerDisplay="$\tfrac{y}{5x}$"
-  hint="*The ratio of* names the numerator first, so $y$ goes on top and the whole quantity $5x$ goes on the bottom."
+  hint="In *the ratio of* $a$ and $b$, the first quantity named is the numerator and the second is the whole denominator."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.6: Ratios and Rate](https://openstax.org/books/prealgebra-2e/pages/5-6-ratios-and-rate) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the driving-rate and detergent-comparison tables as markdown tables; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.6: Ratios and Rate](https://openstax.org/books/prealgebra-2e/pages/5-6-ratios-and-rate) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose and wrote most worked-example step tables as sentences; recreated the driving-rate and detergent-comparison tables as markdown tables and the decimal-ratio step image as a math block; corrected two wording slips ("\$5 dollars per 64 ounces" now reads "\$5 per 64 ounces", and "wheel chair" reads "wheelchair"); omitted the Be Prepared quiz, the Media links, and the Self Check checklist; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, each Try It with several parts as one question per part and the two better-buy Try Its as a request for the lower unit price; and adapted selected end-of-section exercises into the interactive Practice block, the ketchup better-buy exercise asking for the unit price of the better buy. Rates are entered as their simplified numeric fractions, without units.</small>

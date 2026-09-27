@@ -51,24 +51,24 @@ negative numbers, we extend the number line to the left of zero, marking
 off intervals the same width as those on the positive side, and label
 them $-1, -2, -3,$ and so on:
 
-<svg viewBox="0 0 460 70" role="img" aria-label="A number line from -4 to 4 with zero in the middle. Negative numbers are labeled to the left of zero; positive numbers to the right." style="max-width: 460px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="35" x2="440" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-intro)" marker-start="url(#arrow-intro-start)" />
+<svg viewBox="-10 0 460 70" role="img" aria-label="A number line from −4 to 4 with zero in the middle. Negative numbers are labeled to the left of zero; positive numbers to the right." style="max-width: 460px; display: block; margin: 1.5rem auto">
+  <line x1="0" y1="35" x2="440" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-intro)" marker-start="url(#arrow-intro-start)" />
   <defs>
     <marker id="arrow-intro" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-intro-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
   </defs>
   <g>
       <line x1="20" y1="28" x2="20" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="20" y="60" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
+      <text x="20" y="60" text-anchor="middle" font-size="15" fill="currentColor">−4</text>
     </g><g>
       <line x1="70" y1="28" x2="70" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="70" y="60" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
+      <text x="70" y="60" text-anchor="middle" font-size="15" fill="currentColor">−3</text>
     </g><g>
       <line x1="120" y1="28" x2="120" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="120" y="60" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
+      <text x="120" y="60" text-anchor="middle" font-size="15" fill="currentColor">−2</text>
     </g><g>
       <line x1="170" y1="28" x2="170" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="170" y="60" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
+      <text x="170" y="60" text-anchor="middle" font-size="15" fill="currentColor">−1</text>
     </g><g>
       <line x1="220" y1="28" x2="220" y2="42" stroke="currentColor" stroke-width="1.5" />
       <text x="220" y="60" text-anchor="middle" font-size="15" fill="currentColor">0</text>
@@ -97,24 +97,24 @@ To plot $3$, start at $0$ and count three units to the right. To plot
 $-3$, start at $0$ and count three units to the left. To plot $-2$, start
 at $0$ and count two units to the left.
 
-<svg viewBox="0 0 460 60" role="img" aria-label="A number line from -4 to 4 with points plotted at 3, -3, and -2." style="max-width: 460px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="30" x2="440" y2="30" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-ex1)" marker-start="url(#arrow-ex1-start)" />
+<svg viewBox="-10 0 460 60" role="img" aria-label="A number line from −4 to 4 with points plotted at 3, −3, and −2." style="max-width: 460px; display: block; margin: 1.5rem auto">
+  <line x1="0" y1="30" x2="440" y2="30" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-ex1)" marker-start="url(#arrow-ex1-start)" />
   <defs>
     <marker id="arrow-ex1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-ex1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
   </defs>
   <g>
       <line x1="20" y1="23" x2="20" y2="37" stroke="currentColor" stroke-width="1.5" />
-      <text x="20" y="55" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
+      <text x="20" y="55" text-anchor="middle" font-size="15" fill="currentColor">−4</text>
     </g><g>
       <line x1="70" y1="23" x2="70" y2="37" stroke="currentColor" stroke-width="1.5" />
-      <text x="70" y="55" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
+      <text x="70" y="55" text-anchor="middle" font-size="15" fill="currentColor">−3</text>
     </g><g>
       <line x1="120" y1="23" x2="120" y2="37" stroke="currentColor" stroke-width="1.5" />
-      <text x="120" y="55" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
+      <text x="120" y="55" text-anchor="middle" font-size="15" fill="currentColor">−2</text>
     </g><g>
       <line x1="170" y1="23" x2="170" y2="37" stroke="currentColor" stroke-width="1.5" />
-      <text x="170" y="55" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
+      <text x="170" y="55" text-anchor="middle" font-size="15" fill="currentColor">−1</text>
     </g><g>
       <line x1="220" y1="23" x2="220" y2="37" stroke="currentColor" stroke-width="1.5" />
       <text x="220" y="55" text-anchor="middle" font-size="15" fill="currentColor">0</text>
@@ -137,9 +137,10 @@ at $0$ and count two units to the left.
 </svg>
 
 {{< fillin
-  question="Plot the number $-1$ on a number line: how many units, and in which direction from $0$, do you count? Enter the number of units (just the digit, no sign)."
+  question="To plot $-1$ on a number line, you start at $0$ and count units to the left. How many units do you count? Enter a whole number."
   answer="1"
-  hint="The number $-1$ is $1$ unit to the left of $0$."
+  answerForm="decimal"
+  hint="Count tick marks from $0$ to the point: the number without its sign is its distance from $0$."
 >}}
 
 ## Order positive and negative numbers
@@ -172,7 +173,7 @@ $-1 > -4$; (d) $2$ is to the right of $-20$, so $2 > -20$.
 {{< fillin
   question="Fill in < or > to make a true statement: $5 \_\_ -17$. Enter the full inequality, e.g. $2 > 1$."
   answer="5>-17"
-  hint="Every positive number is to the right of every negative number on the number line."
+  hint="Locate both numbers on a number line and compare their positions: numbers increase from left to right."
 >}}
 
 ## Find opposites
@@ -210,7 +211,7 @@ $-(-6) = 6$.
   question="Simplify: $-(-1)$"
   answer="1"
   answerForm="decimal"
-  hint="The opposite of a negative number is its positive counterpart."
+  hint="Read $-(-1)$ as the opposite of $-1$: the number the same distance from $0$ on the other side of zero."
 >}}
 
 The set of counting numbers, their opposites, and $0$ is the set of
@@ -232,13 +233,15 @@ We must be careful with signs when evaluating the opposite of a variable.
 {{< fillin
   question="Evaluate $-n$ when $n = 4$."
   answer="-4"
+  answerForm="decimal"
   hint="Substitute $4$ for $n$, then take the opposite."
 >}}
 
 {{< fillin
   question="Evaluate $-n$ when $n = -4$."
   answer="4"
-  hint="Substitute $-4$ for $n$: $-n$ becomes $-(-4)$. The opposite of a negative is positive."
+  answerForm="decimal"
+  hint="Substitute $-4$ for $n$ inside parentheses, then take the opposite of that value."
 >}}
 
 ## Simplify expressions with absolute value
@@ -270,7 +273,7 @@ $|5| = 5$ and $|-5| = 5$.
   question="Simplify: $|12|$"
   answer="12"
   answerForm="decimal"
-  hint="How many units is $12$ from zero?"
+  hint="Absolute value is a number's distance from $0$ on the number line."
 >}}
 
 {{< fillin
@@ -317,7 +320,7 @@ $24 - |7|$. Take the absolute value: $24 - 7$. Subtract: $17$.
   question="Simplify: $19 - |11 - 4(3 - 1)|$"
   answer="16"
   answerForm="decimal"
-  hint="Innermost parentheses first ($3 - 1 = 2$), then multiply ($4 \cdot 2 = 8$), then subtract inside the bars ($11 - 8 = 3$), then take the absolute value and subtract from $19$."
+  hint="Treat the bars as grouping symbols: work from the innermost parentheses outward, take the absolute value, and only then subtract from $19$."
 >}}
 
 ## Translate word phrases into expressions with integers
@@ -335,14 +338,20 @@ signal one.
 {{< fillin
   question="Translate into an expression with integers: the opposite of negative nineteen. Give the simplified value."
   answer="19"
-  hint="The opposite of a negative number is $-(-19)$, which simplifies to a positive number."
+  answerForm="decimal"
+  hint="*Opposite* and *negative* each signal a minus sign: write the expression, then simplify the opposite of a negative number."
 >}}
 
-{{< fillin
-  question="Translate into an expression with integers: negative eight minus negative five. Give the simplified value."
-  answer="-3"
-  hint="Write it as $-8 - (-5)$, then simplify — subtracting a negative is the same as adding its opposite."
+{{< multiplechoice
+  question="Translate into an expression with integers, without simplifying: negative eight minus negative five."
+  answer="$-8-(-5)$"
+  hint="Translate word by word, keeping the order: *minus* is the operation of subtraction, and *negative* is the sign of a number."
 >}}
+$-8-5$
+$8-(-5)$
+$-8-(-5)$
+$-5-(-8)$
+{{< /multiplechoice >}}
 
 Negative numbers describe many real-world situations. Look for key
 phrases, then look for words that indicate a negative sign, and don't
@@ -359,15 +368,19 @@ negative number: $-1{,}302$ feet. (d) *Overdrawn* signals a negative
 number: $-\text{\textdollar}40$.
 
 {{< fillin
-  question="Translate into an expression with integers: the football team had a gain of 5 yards."
+  question="Translate into an expression with integers: the football team had a gain of 5 yards. Give the number of yards as a signed integer."
   answer="5"
-  hint="'Gain' signals a positive number."
+  answerForm="decimal"
+  answerDisplay="$5$ yards"
+  hint="Decide whether a gain signals a positive or a negative number."
 >}}
 
 {{< fillin
   question="Translate into an expression with integers: the scuba diver was 30 feet below the surface of the water. Give the number of feet as a signed integer."
   answer="-30"
-  hint="'Below the surface' signals a negative number."
+  answerForm="decimal"
+  answerDisplay="$-30$ feet"
+  hint="Decide whether *below the surface* signals a positive or a negative number."
 >}}
 
 ## Key terms
@@ -382,8 +395,8 @@ $0$ on the number line, written $|n|$.
 
 ### Locate positive and negative numbers on the number line
 
-<div class="ap-figure" data-spec='{"type":"numberline","ariaLabel":"A number line from -6 to 6. Three points are plotted: point A at 2, point B at -2, and point C at -5.","min":-6,"max":6,"points":[{"at":2,"label":"A"},{"at":-2,"label":"B"},{"at":-5,"label":"C"}]}'>
-<svg role="img" aria-label="A number line from -6 to 6. Three points are plotted: point A at 2, point B at -2, and point C at -5." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 76" width="320" height="76" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure" data-spec='{"type":"numberline","ariaLabel":"A number line from −6 to 6 with three points plotted and labeled, from left to right, C, B, and A.","min":-6,"max":6,"points":[{"at":2,"label":"A"},{"at":-2,"label":"B"},{"at":-5,"label":"C"}]}'>
+<svg role="img" aria-label="A number line from −6 to 6 with three points plotted and labeled, from left to right, C, B, and A." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 76" width="320" height="76" font-family="Helvetica, Arial, sans-serif">
   <line x1="16" y1="30" x2="304" y2="30" stroke="currentColor" stroke-width="1.5"/>
   <path d="M 24 23 L 16 30 L 24 37" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <path d="M 296 23 L 304 30 L 296 37" fill="none" stroke="currentColor" stroke-width="1.5"/>
@@ -425,18 +438,21 @@ $0$ on the number line, written $|n|$.
 {{< fillin
   question="The number line above locates and labels three points. What number is plotted at point A?"
   answer="2"
+  answerForm="decimal"
   hint="Point A is to the right of $0$, so it is positive. Count the tick marks from $0$."
 >}}
 
 {{< fillin
   question="The number line above locates and labels three points. What number is plotted at point B?"
   answer="-2"
+  answerForm="decimal"
   hint="Point B is to the left of $0$, so it is negative. Count the tick marks from $0$ and write a minus sign in front."
 >}}
 
 {{< fillin
   question="The number line above locates and labels three points. What number is plotted at point C?"
   answer="-5"
+  answerForm="decimal"
   hint="Point C sits farther to the left than point B — count units from $0$ and keep the negative sign."
 >}}
 
@@ -445,7 +461,7 @@ $0$ on the number line, written $|n|$.
 {{< multiplechoice
   question="Order the pair of numbers using $<$ or $>$: $9 \_\_ 4$"
   answer="$>$"
-  hint="On the number line $9$ is to the right of $4$, and the number farther right is the greater one."
+  hint="Locate both numbers on a number line: the number farther to the right is the greater one."
 >}}
 $>$
 $<$
@@ -454,7 +470,7 @@ $<$
 {{< multiplechoice
   question="Order the pair of numbers using $<$ or $>$: $-3 \_\_ 6$"
   answer="$<$"
-  hint="Every negative number lies to the left of every positive number."
+  hint="Locate both numbers on a number line and compare their positions: numbers increase from left to right."
 >}}
 $>$
 $<$
@@ -463,7 +479,7 @@ $<$
 {{< multiplechoice
   question="Order the pair of numbers using $<$ or $>$: $-8 \_\_ -2$"
   answer="$<$"
-  hint="Both numbers are negative. The one farther from zero on the left is the smaller one."
+  hint="Locate both numbers on a number line: the number farther to the left is the lesser one."
 >}}
 $>$
 $<$
@@ -472,7 +488,7 @@ $<$
 {{< multiplechoice
   question="Order the pair of numbers using $<$ or $>$: $1 \_\_ -10$"
   answer="$>$"
-  hint="A positive number is always to the right of a negative number, no matter how large the negative number looks."
+  hint="Compare positions on the number line, not the digits: the number farther to the right is the greater one."
 >}}
 $>$
 $<$
@@ -481,15 +497,17 @@ $<$
 ### Find opposites
 
 {{< fillin
-  question="Find the opposite of $2$."
-  answer="-2"
-  hint="The opposite is the same distance from zero, on the other side of zero."
+  question="Find the opposite of $-8$."
+  answer="8"
+  answerForm="decimal"
+  hint="Locate $-8$ on the number line, then find the number the same distance from $0$ on the other side of zero."
 >}}
 
 {{< fillin
-  question="Find the opposite of $-6$."
-  answer="6"
-  hint="The opposite of a negative number lies the same distance to the right of zero, so it is positive."
+  question="Find the opposite of $1$."
+  answer="-1"
+  answerForm="decimal"
+  hint="The opposite is the same distance from zero, on the other side of zero."
 >}}
 
 {{< fillin
@@ -502,13 +520,15 @@ $<$
 {{< fillin
   question="Evaluate $-m$ when $m = 3$."
   answer="-3"
+  answerForm="decimal"
   hint="Substitute $3$ for $m$, then take the opposite of that value."
 >}}
 
 {{< fillin
   question="Evaluate $-m$ when $m = -3$."
   answer="3"
-  hint="Substituting gives $-(-3)$ — the opposite of a negative number is positive."
+  answerForm="decimal"
+  hint="Substitute $-3$ for $m$ inside parentheses, then take the opposite of that value."
 >}}
 
 ### Simplify expressions with absolute value
@@ -517,33 +537,35 @@ $<$
   question="Simplify: $|7|$"
   answer="7"
   answerForm="decimal"
-  hint="Absolute value is distance from zero, and $7$ is $7$ units from zero."
+  hint="Absolute value is a number's distance from $0$ on the number line."
 >}}
 
 {{< fillin
   question="Simplify: $|-25|$"
   answer="25"
   answerForm="decimal"
-  hint="Distance is never negative — how many units is $-25$ from zero?"
+  hint="Count how far $-25$ is from $0$; a distance is never negative."
 >}}
 
 {{< fillin
   question="Simplify: $|0|$"
   answer="0"
   answerForm="decimal"
-  hint="Zero is already at zero, so its distance from zero is nothing at all."
+  hint="Absolute value is a number's distance from $0$: count the units between this number and $0$."
 >}}
 
 {{< fillin
   question="Evaluate $-|p|$ when $p = 19$."
   answer="-19"
+  answerForm="decimal"
   hint="Take the absolute value first, then apply the minus sign that sits outside the bars."
 >}}
 
 {{< fillin
   question="Evaluate $-|q|$ when $q = -33$."
   answer="-33"
-  hint="Simplify $-|-33|$: the bars give $33$, and the sign in front then takes its opposite."
+  answerForm="decimal"
+  hint="Substitute $-33$ for $q$, take the absolute value first, then apply the minus sign outside the bars."
 >}}
 
 {{< fillin
@@ -572,7 +594,7 @@ $<$
   question="Translate into an expression with integers: the opposite of $-6$. Enter its value."
   answer="6"
   answerDisplay="$-(-6)$, or $6$"
-  hint="Write the phrase as $-(-6)$ first, then simplify: the opposite of a negative number is positive."
+  hint="*The opposite of* signals a minus sign in front of the number; write the expression, then simplify it."
 >}}
 
 {{< fillin
@@ -584,7 +606,7 @@ $<$
 {{< multiplechoice
   question="Translate into an expression with integers, without simplifying: $4$ minus negative $3$."
   answer="$4-(-3)$"
-  hint="Write the first number, then the subtraction sign, then the second number with its own negative sign in parentheses."
+  hint="Translate word by word, keeping the order: *minus* is the operation of subtraction, and *negative* is the sign of a number."
 >}}
 $-4-3$
 $4-(-3)$
@@ -593,7 +615,7 @@ $4+(-3)$
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Translate into an expression with integers: a temperature of $6$ degrees below zero. Give the number of degrees as a signed integer."
+  question="Translate into an expression with integers: a temperature of $6$ degrees below zero. Give the number of degrees as a signed integer, without the degree sign."
   answer="-6"
   answerDisplay="$-6$ degrees"
   hint="*Below zero* signals a negative number."
@@ -615,4 +637,4 @@ $4+(-3)$
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.1: Introduction to Integers](https://openstax.org/books/prealgebra-2e/pages/3-1-introduction-to-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the number-line figures as accessible inline graphics; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.1: Introduction to Integers](https://openstax.org/books/prealgebra-2e/pages/3-1-introduction-to-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated two of the number-line figures as accessible inline graphics (the plotting example's three number lines as one) and omitted the thermometer, elevation, submarine, and remaining number-line figures; condensed prose and omitted four worked examples (finding opposites, evaluating absolute values of variables, comparing absolute values, and a difference of absolute values) with their Try Its; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, a plotting Try It as a count of units from zero and a translation Try It as a choice among expressions; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part and the point-plotting exercise posed as reading the labeled points from a drawn number line.</small>

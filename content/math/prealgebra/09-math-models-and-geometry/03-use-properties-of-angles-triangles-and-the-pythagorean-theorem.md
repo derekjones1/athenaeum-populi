@@ -27,8 +27,11 @@ Are you familiar with the phrase "do a $180$"? It means to turn so that you
 face the opposite direction — it comes from the fact that the measure of an
 angle that makes a straight line is $180$ degrees.
 
-<svg viewBox="0 0 260 90" role="img" aria-label="A straight line with an arc marking the 180 degree angle it forms." style="max-width: 260px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="70" x2="240" y2="70" stroke="currentColor" stroke-width="1.5" />
+<svg viewBox="0 0 260 90" role="img" aria-label="A straight line with an arrow at each end and a point marked in the middle. An arc from one side of the point to the other is labeled 180 degrees." style="max-width: 260px; display: block; margin: 1.5rem auto">
+  <line x1="28" y1="70" x2="232" y2="70" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="20,70 30,65 30,75" fill="currentColor" />
+  <polygon points="240,70 230,65 230,75" fill="currentColor" />
+  <circle cx="130" cy="70" r="3" fill="currentColor" />
   <path d="M 70 70 A 60 60 0 0 1 190 70" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="130" y="35" text-anchor="middle" font-size="15" fill="currentColor">180°</text>
 </svg>
@@ -40,8 +43,10 @@ $\angle A$ is the angle with vertex at point $A$. The measure of $\angle A$
 is written $m\angle A$.
 
 <svg viewBox="0 0 220 100" role="img" aria-label="Angle A: two rays sharing vertex A, one horizontal and one sloping upward." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <line x1="30" y1="80" x2="200" y2="80" stroke="currentColor" stroke-width="1.5" />
-  <line x1="30" y1="80" x2="190" y2="20" stroke="currentColor" stroke-width="1.5" />
+  <line x1="30" y1="80" x2="192" y2="80" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="200,80 190,75 190,85" fill="currentColor" />
+  <line x1="30" y1="80" x2="182" y2="23" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="190,20 182.4,28.2 178.9,18.8" fill="currentColor" />
   <text x="20" y="90" text-anchor="middle" font-size="15" fill="currentColor">A</text>
 </svg>
 
@@ -96,15 +101,19 @@ to $90^\circ$: $c + 40 = 90$, so $c = 50$. Checking: $50 + 40 = 90$. The
 complement of the $40^\circ$ angle is $50^\circ$.
 
 {{< fillin
-  question="An angle measures $25^\circ$. Find its supplement."
+  question="An angle measures $25^\circ$. Find its supplement, in degrees."
   answer="155"
-  hint="Let $s =$ the measure of the supplement. Translate as $s + 25 = 180$, then solve for $s$."
+  answerForm="decimal"
+  answerDisplay="$155^\circ$"
+  hint="Supplementary angles add to $180^\circ$. Name the supplement with a variable, write that sum as an equation, and solve."
 >}}
 
 {{< fillin
-  question="An angle measures $77^\circ$. Find its complement."
+  question="An angle measures $77^\circ$. Find its complement, in degrees."
   answer="13"
-  hint="Let $c =$ the measure of the complement. Translate as $c + 77 = 90$, then solve for $c$."
+  answerForm="decimal"
+  answerDisplay="$13^\circ$"
+  hint="Complementary angles add to $90^\circ$. Name the complement with a variable, write that sum as an equation, and solve."
 >}}
 
 Did you notice that the words *complementary* and *supplementary* are in
@@ -123,15 +132,19 @@ smaller angle). The larger angle is $a + 30 = 105$. Checking:
 $75 + 105 = 180$. The measures of the angles are $75^\circ$ and $105^\circ$.
 
 {{< fillin
-  question="Two angles are supplementary. The larger angle is $100^\circ$ more than the smaller angle. Find the measure of the smaller angle."
+  question="Two angles are supplementary. The larger angle is $100^\circ$ more than the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="40"
-  hint="Let $a =$ measure of the smaller angle, so $a + 100$ is the larger. Translate as $(a + 100) + a = 180$, then solve for $a$."
+  answerForm="decimal"
+  answerDisplay="$40^\circ$"
+  hint="Let $a$ be the smaller angle and write the larger angle in terms of $a$. Supplementary angles add to $180^\circ$, so set up that equation and solve for $a$."
 >}}
 
 {{< fillin
-  question="Two angles are complementary. The larger angle is $40^\circ$ more than the smaller angle. Find the measure of the smaller angle."
+  question="Two angles are complementary. The larger angle is $40^\circ$ more than the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="25"
-  hint="Let $a =$ measure of the smaller angle, so $a + 40$ is the larger. Translate as $(a + 40) + a = 90$, then solve for $a$."
+  answerForm="decimal"
+  answerDisplay="$25^\circ$"
+  hint="Let $a$ be the smaller angle and write the larger angle in terms of $a$. Complementary angles add to $90^\circ$, so set up that equation and solve for $a$."
 >}}
 
 ## Use the properties of triangles
@@ -168,23 +181,30 @@ Let $x =$ the measure of the third angle. Substituting into the angle-sum
 formula:
 
 $$
-55 + 82 + x = 180 \qquad\Rightarrow\qquad 137 + x = 180
-\qquad\Rightarrow\qquad x = 43
+\begin{array}{rcl}
+55 + 82 + x &=& 180 \\[4pt]
+137 + x &=& 180 \\[4pt]
+x &=& 43
+\end{array}
 $$
 
 Checking: $55 + 82 + 43 = 180$. The measure of the third angle is $43$
 degrees.
 
 {{< fillin
-  question="The measures of two angles of a triangle are $31^\circ$ and $128^\circ$. Find the measure of the third angle."
+  question="The measures of two angles of a triangle are $31^\circ$ and $128^\circ$. Find the measure of the third angle, in degrees."
   answer="21"
-  hint="Translate as $31 + 128 + x = 180$, then solve for $x$."
+  answerForm="decimal"
+  answerDisplay="$21^\circ$"
+  hint="The three angle measures of a triangle add to $180^\circ$. Substitute the two known angles into that sum and solve for the third."
 >}}
 
 {{< fillin
-  question="A triangle has angles of $49^\circ$ and $75^\circ$. Find the measure of the third angle."
+  question="A triangle has angles of $49^\circ$ and $75^\circ$. Find the measure of the third angle, in degrees."
   answer="56"
-  hint="Translate as $49 + 75 + x = 180$, then solve for $x$."
+  answerForm="decimal"
+  answerDisplay="$56^\circ$"
+  hint="Use the angle-sum property: substitute the two known angles into $m\angle A + m\angle B + m\angle C = 180$ and solve."
 >}}
 
 ### Right triangles
@@ -207,22 +227,29 @@ measure of the third angle?
 Let $x =$ the measure of the third angle:
 
 $$
-x + 90 + 28 = 180 \qquad\Rightarrow\qquad x + 118 = 180
-\qquad\Rightarrow\qquad x = 62
+\begin{array}{rcl}
+x + 90 + 28 &=& 180 \\[4pt]
+x + 118 &=& 180 \\[4pt]
+x &=& 62
+\end{array}
 $$
 
 Checking: $90 + 28 + 62 = 180$. The measure of the third angle is $62^\circ$.
 
 {{< fillin
-  question="One angle of a right triangle measures $56^\circ$. What is the measure of the other angle?"
+  question="One angle of a right triangle measures $56^\circ$. What is the measure of the other angle, in degrees?"
   answer="34"
-  hint="Translate as $x + 90 + 56 = 180$, then solve for $x$."
+  answerForm="decimal"
+  answerDisplay="$34^\circ$"
+  hint="A right triangle's third angle is $90^\circ$. Put all three angles into the $180^\circ$ angle sum and solve for the unknown one."
 >}}
 
 {{< fillin
-  question="One angle of a right triangle measures $45^\circ$. What is the measure of the other angle?"
+  question="One angle of a right triangle measures $45^\circ$. What is the measure of the other angle, in degrees?"
   answer="45"
-  hint="Translate as $x + 90 + 45 = 180$, then solve for $x$."
+  answerForm="decimal"
+  answerDisplay="$45^\circ$"
+  hint="Remember the right angle: the three angles, one of them $90^\circ$, add to $180^\circ$. Write the equation and solve."
 >}}
 
 When one angle is defined in terms of another, it helps to write
@@ -236,23 +263,32 @@ Let $a =$ the first (smallest) angle, so $a + 20 =$ the second angle, and
 $90 =$ the third angle (the right angle). Substituting into the angle-sum
 formula:
 
-$$a + (a + 20) + 90 = 180 \qquad\Rightarrow\qquad 2a + 110 = 180$$
-
-$$2a = 70 \qquad\Rightarrow\qquad a = 35 \text{ (first angle)}$$
+$$
+\begin{array}{rcl}
+a + (a + 20) + 90 &=& 180 \\[4pt]
+2a + 110 &=& 180 \\[4pt]
+2a &=& 70 \\[4pt]
+a &=& 35 \text{ (first angle)}
+\end{array}
+$$
 
 The second angle is $a + 20 = 55$, and the third angle is $90$. Checking:
 $35 + 55 + 90 = 180$. The three angles measure $35^\circ$, $55^\circ$, and $90^\circ$.
 
 {{< fillin
-  question="The measure of one angle of a right triangle is $50^\circ$ more than the measure of the smallest angle. Find the measure of the smallest angle."
+  question="The measure of one angle of a right triangle is $50^\circ$ more than the measure of the smallest angle. Find the measure of the smallest angle, in degrees."
   answer="20"
-  hint="Let $a =$ the smallest angle, so $a + 50$ is the second and $90$ is the third. Translate as $a + (a + 50) + 90 = 180$, then solve for $a$."
+  answerForm="decimal"
+  answerDisplay="$20^\circ$"
+  hint="Let $a$ be the smallest angle, write the second angle in terms of $a$, and remember the right angle. The three add to $180^\circ$; solve for $a$."
 >}}
 
 {{< fillin
-  question="The measure of one angle of a right triangle is $30^\circ$ more than the measure of the smallest angle. Find the measure of the smallest angle."
+  question="The measure of one angle of a right triangle is $30^\circ$ more than the measure of the smallest angle. Find the measure of the smallest angle, in degrees."
   answer="30"
-  hint="Let $a =$ the smallest angle, so $a + 30$ is the second and $90$ is the third. Translate as $a + (a + 30) + 90 = 180$, then solve for $a$."
+  answerForm="decimal"
+  answerDisplay="$30^\circ$"
+  hint="Name the smallest angle, write the other two angles as expressions (one of them is the right angle), set their sum equal to $180$, and solve."
 >}}
 
 ### Similar triangles
@@ -270,7 +306,13 @@ corresponding angles have the same measures.
   lengths are in the same ratio. For $\Delta ABC$ similar to
   $\Delta XYZ$:
 
-  $$m\angle A = m\angle X, \quad m\angle B = m\angle Y, \quad m\angle C = m\angle Z$$
+  $$
+  \begin{array}{rcl}
+  m\angle A &=& m\angle X \\[4pt]
+  m\angle B &=& m\angle Y \\[4pt]
+  m\angle C &=& m\angle Z
+  \end{array}
+  $$
 
   $$\frac{a}{x} = \frac{b}{y} = \frac{c}{z}$$
 {{< /callout >}}
@@ -282,10 +324,9 @@ $AC$, and the length $c$ can also be written $AB$. This notation helps
 match up corresponding side lengths when solving similar triangles.
 
 **Example.** $\Delta ABC$ and $\Delta XYZ$ are similar triangles. In
-$\Delta ABC$, side $AB = 4$ and side $AC = 3.2$; in $\Delta XYZ$, the
-corresponding side $XY = 3$. Find the length of the third side of each
-triangle (side $BC = a$ in $\Delta ABC$, and side $XZ = y$ in
-$\Delta XYZ$), given that side $YZ = 4.5$.
+$\Delta ABC$, $AB = 4$, $AC = 3.2$, and the third side is $BC = a$. In
+$\Delta XYZ$, $XY = 3$, $YZ = 4.5$, and the third side is $XZ = y$. Find the
+length of the third side of each triangle.
 
 Since the triangles are similar, corresponding sides are in the same
 ratio:
@@ -293,18 +334,26 @@ ratio:
 $$\frac{AB}{XY} = \frac{BC}{YZ} = \frac{AC}{XZ}$$
 
 Since $AB = 4$ corresponds to $XY = 3$, we use the ratio
-$\frac{AB}{XY} = \frac{4}{3}$ to find the other sides. To find $a$:
+$\tfrac{AB}{XY} = \tfrac{4}{3}$ to find the other sides. To find $a$:
 
 $$
-\frac{4}{3} = \frac{a}{4.5} \qquad\Rightarrow\qquad 3a = 4(4.5)
-\qquad\Rightarrow\qquad 3a = 18 \qquad\Rightarrow\qquad a = 6
+\begin{array}{rcl}
+\tfrac{4}{3} &=& \tfrac{a}{4.5} \\[4pt]
+3a &=& 4(4.5) \\[4pt]
+3a &=& 18 \\[4pt]
+a &=& 6
+\end{array}
 $$
 
 To find $y$:
 
 $$
-\frac{4}{3} = \frac{3.2}{y} \qquad\Rightarrow\qquad 4y = 3(3.2)
-\qquad\Rightarrow\qquad 4y = 9.6 \qquad\Rightarrow\qquad y = 2.4
+\begin{array}{rcl}
+\tfrac{4}{3} &=& \tfrac{3.2}{y} \\[4pt]
+4y &=& 3(3.2) \\[4pt]
+4y &=& 9.6 \\[4pt]
+y &=& 2.4
+\end{array}
 $$
 
 Checking: $4(4.5) = 6(3)$ gives $18 = 18$, and $4(2.4) = 3.2(3)$ gives
@@ -312,15 +361,17 @@ $9.6 = 9.6$. The third side of $\Delta ABC$ is $6$, and the third side of
 $\Delta XYZ$ is $2.4$.
 
 {{< fillin
-  question="Triangle ABC is similar to triangle XYZ. Side $AB = 17$ corresponds to side $XY = 25.5$, and side $BC = a$ corresponds to side $YZ = 12$. Find $a$."
+  question="$\Delta ABC$ is similar to $\Delta XYZ$. Side $AB = 17$ corresponds to side $XY = 25.5$, and side $BC = a$ corresponds to side $YZ = 12$. Find $a$."
   answer="8"
-  hint="Set up the proportion $\tfrac{AB}{XY} = \tfrac{BC}{YZ}$, i.e. $\tfrac{17}{25.5} = \tfrac{a}{12}$, and solve for $a$."
+  answerForm="decimal"
+  hint="Corresponding sides are in the same ratio. Write the ratio of the pair you know fully equal to the ratio of the pair holding $a$, then solve the proportion."
 >}}
 
 {{< fillin
-  question="Using the same similar triangles ($AB = 17$ corresponds to $XY = 25.5$), side $AC = 15$ corresponds to side $XZ = y$. Find $y$."
+  question="In the same similar triangles ($AB = 17$ corresponds to $XY = 25.5$), side $AC = 15$ corresponds to side $XZ = y$. Find $y$."
   answer="22.5"
-  hint="Set up the proportion $\tfrac{AB}{XY} = \tfrac{AC}{XZ}$, i.e. $\tfrac{17}{25.5} = \tfrac{15}{y}$, and solve for $y$."
+  answerForm="decimal"
+  hint="Keep each ratio in the same order, $\Delta ABC$ over $\Delta XYZ$: set the known ratio equal to the ratio holding $y$, cross-multiply, and solve."
 >}}
 
 ## Use the Pythagorean Theorem
@@ -361,11 +412,15 @@ hypotenuse of a right triangle whose legs measure $3$ and $4$.
 
 Let $c =$ the length of the hypotenuse:
 
-$$a^2 + b^2 = c^2 \qquad\Rightarrow\qquad 3^2 + 4^2 = c^2$$
-
 $$
-9 + 16 = c^2 \qquad\Rightarrow\qquad 25 = c^2 \qquad\Rightarrow\qquad
-\sqrt{25} = c \qquad\Rightarrow\qquad 5 = c
+\begin{array}{rcl}
+a^2 + b^2 &=& c^2 \\[4pt]
+3^2 + 4^2 &=& c^2 \\[4pt]
+9 + 16 &=& c^2 \\[4pt]
+25 &=& c^2 \\[4pt]
+\sqrt{25} &=& c \\[4pt]
+5 &=& c
+\end{array}
 $$
 
 Checking: $3^2 + 4^2 = 5^2$ gives $9 + 16 = 25$. The length of the
@@ -374,13 +429,15 @@ hypotenuse is $5$.
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the hypotenuse of a right triangle whose legs measure 6 and 8."
   answer="10"
-  hint="Substitute into $a^2 + b^2 = c^2$: $6^2 + 8^2 = c^2$, then take the square root."
+  answerForm="decimal"
+  hint="Substitute the two legs for $a$ and $b$ in $a^2 + b^2 = c^2$, add the squares, and take the square root."
 >}}
 
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the hypotenuse of a right triangle whose legs measure 15 and 8."
   answer="17"
-  hint="Substitute into $a^2 + b^2 = c^2$: $15^2 + 8^2 = c^2$, then take the square root."
+  answerForm="decimal"
+  hint="Substitute the legs into $a^2 + b^2 = c^2$, simplify, and use the definition of the square root to find $c$."
 >}}
 
 **Example.** Use the Pythagorean Theorem to find the length of the longer
@@ -389,11 +446,15 @@ $5$.
 
 Let $b =$ the unknown leg:
 
-$$a^2 + b^2 = c^2 \qquad\Rightarrow\qquad 5^2 + b^2 = 13^2$$
-
 $$
-25 + b^2 = 169 \qquad\Rightarrow\qquad b^2 = 144
-\qquad\Rightarrow\qquad b = \sqrt{144} \qquad\Rightarrow\qquad b = 12
+\begin{array}{rcl}
+a^2 + b^2 &=& c^2 \\[4pt]
+5^2 + b^2 &=& 13^2 \\[4pt]
+25 + b^2 &=& 169 \\[4pt]
+b^2 &=& 144 \\[4pt]
+b &=& \sqrt{144} \\[4pt]
+b &=& 12
+\end{array}
 $$
 
 Checking: $5^2 + 12^2 = 13^2$ gives $25 + 144 = 169$. The length of the leg
@@ -402,13 +463,15 @@ is $12$.
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the leg of a right triangle whose hypotenuse is 17 and whose other leg is 15."
   answer="8"
-  hint="Substitute into $a^2 + b^2 = c^2$: $15^2 + b^2 = 17^2$, then solve for $b$."
+  answerForm="decimal"
+  hint="The hypotenuse is $c$. Substitute the known leg and the hypotenuse into $a^2 + b^2 = c^2$, isolate $b^2$, and take the square root."
 >}}
 
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the leg of a right triangle whose hypotenuse is 15 and whose other leg is 9."
   answer="12"
-  hint="Substitute into $a^2 + b^2 = c^2$: $9^2 + b^2 = 15^2$, then solve for $b$."
+  answerForm="decimal"
+  hint="Put the hypotenuse in for $c$ and the known leg for $a$ in $a^2 + b^2 = c^2$, subtract to isolate $b^2$, then take the square root."
 >}}
 
 **Example.** Kelvin is building a gazebo and wants to brace each corner by
@@ -417,38 +480,46 @@ distances from the corner to each end of the bracket are equal. How far
 below the corner should he fasten the bracket? Approximate to the nearest
 tenth of an inch.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="A right angle at a gazebo corner with two equal legs labeled x meeting a 10-inch diagonal brace." style="max-width: 160px; display: block; margin: 1.5rem auto">
-  <polyline points="30,20 30,140 150,140" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <line x1="30" y1="20" x2="150" y2="140" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,4" />
-  <rect x="30" y="127" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <text x="14" y="82" text-anchor="middle" font-size="14" fill="currentColor">x</text>
-  <text x="90" y="156" text-anchor="middle" font-size="14" fill="currentColor">x</text>
-  <text x="105" y="72" text-anchor="middle" font-size="14" fill="currentColor">10 in</text>
+<svg viewBox="0 0 180 165" role="img" aria-label="The top corner of a gazebo frame, where a horizontal beam meets a vertical post at a right angle. A diagonal brace labeled 10 in joins the post and the beam; its ends are a distance x below the corner on the post and a distance x from the corner along the beam." style="max-width: 180px; display: block; margin: 1.5rem auto">
+  <polyline points="165,25 30,25 30,155" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="30" y1="125" x2="130" y2="25" stroke="currentColor" stroke-width="2.5" />
+  <rect x="30" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <text x="18" y="80" text-anchor="middle" font-size="14" fill="currentColor">x</text>
+  <text x="80" y="17" text-anchor="middle" font-size="14" fill="currentColor">x</text>
+  <text x="92" y="98" text-anchor="start" font-size="14" fill="currentColor">10 in</text>
 </svg>
 
 Let $x =$ the distance from the corner along each side. Since both legs are
 equal:
 
-$$a^2 + b^2 = c^2 \qquad\Rightarrow\qquad x^2 + x^2 = 10^2$$
-
 $$
-2x^2 = 100 \qquad\Rightarrow\qquad x^2 = 50 \qquad\Rightarrow\qquad
-x = \sqrt{50} \approx 7.1
+\begin{array}{rcl}
+a^2 + b^2 &=& c^2 \\[4pt]
+x^2 + x^2 &=& 10^2 \\[4pt]
+2x^2 &=& 100 \\[4pt]
+x^2 &=& 50 \\[4pt]
+x &=& \sqrt{50} \\[4pt]
+x &\approx& 7.1
+\end{array}
 $$
 
 Checking: $(7.1)^2 + (7.1)^2 \approx 10^2$. Kelvin should fasten each piece
 of wood approximately $7.1$ inches from the corner.
 
 {{< fillin
-  question="John puts the base of a 13-ft ladder 5 feet from the wall of his house. How far up the wall does the ladder reach?"
+  question="John puts the base of a 13-ft ladder 5 feet from the wall of his house. How far up the wall does the ladder reach, in feet?"
   answer="12"
-  hint="The ladder, wall, and ground form a right triangle with hypotenuse 13 and one leg 5. Substitute into $a^2 + b^2 = c^2$ and solve for the other leg."
+  answerForm="decimal"
+  answerDisplay="12 feet"
+  hint="The wall meets the ground at a right angle, so the ladder is the hypotenuse. Solve $a^2 + b^2 = c^2$ for the missing leg."
 >}}
 
 {{< fillin
-  question="Randy wants to attach a 17-ft string of lights to the top of the 15-ft mast of his sailboat, running down to the deck. How far from the base of the mast should he attach the end of the light string?"
+  question="Randy wants to attach a 17-ft string of lights to the top of the 15-ft mast of his sailboat, running down to the deck. How far from the base of the mast should he attach the end of the light string, in feet?"
   answer="8"
-  hint="The mast, deck, and light string form a right triangle with hypotenuse 17 and one leg 15. Substitute into $a^2 + b^2 = c^2$ and solve for the other leg."
+  answerForm="decimal"
+  answerDisplay="8 feet"
+  hint="The mast stands at a right angle to the deck, so the light string is the hypotenuse. Solve $a^2 + b^2 = c^2$ for the missing leg."
 >}}
 
 ## Key terms
@@ -471,20 +542,23 @@ where $c$ is the hypotenuse and $a, b$ are the legs.
 {{< fillin
   question="Find the supplement of a $53^\circ$ angle. Give the measure in degrees."
   answer="127"
+  answerForm="decimal"
   answerDisplay="$127^\circ$"
-  hint="Supplementary angles add to $180^\circ$. Let $s$ be the supplement and solve $s + 53 = 180$."
+  hint="Supplementary angles add to $180^\circ$. Let $s$ be the supplement, write that sum as an equation, and solve."
 >}}
 
 {{< fillin
   question="Find the complement of a $53^\circ$ angle. Give the measure in degrees."
   answer="37"
+  answerForm="decimal"
   answerDisplay="$37^\circ$"
-  hint="Complementary angles add to $90^\circ$. Let $c$ be the complement and solve $c + 53 = 90$."
+  hint="Complementary angles add to $90^\circ$. Let $c$ be the complement, write that sum as an equation, and solve."
 >}}
 
 {{< fillin
   question="Find the supplement of a $135^\circ$ angle. Give the measure in degrees."
   answer="45"
+  answerForm="decimal"
   answerDisplay="$45^\circ$"
   hint="Subtract the given measure from $180^\circ$."
 >}}
@@ -492,6 +566,7 @@ where $c$ is the hypotenuse and $a, b$ are the legs.
 {{< fillin
   question="Find the complement of a $27.5^\circ$ angle. Give the measure in degrees."
   answer="62.5"
+  answerForm="decimal"
   answerDisplay="$62.5^\circ$"
   hint="Subtract the given measure from $90^\circ$; the decimal part carries through the subtraction."
 >}}
@@ -499,15 +574,17 @@ where $c$ is the hypotenuse and $a, b$ are the legs.
 {{< fillin
   question="Two angles are supplementary. The larger angle is $56^\circ$ more than the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="62"
+  answerForm="decimal"
   answerDisplay="$62^\circ$"
-  hint="Let $a$ be the smaller angle, so $a + 56$ is the larger. Translate as $a + (a + 56) = 180$ and solve for $a$."
+  hint="Let $a$ be the smaller angle and write the larger angle in terms of $a$. The two add to $180^\circ$; solve for $a$."
 >}}
 
 {{< fillin
-  question="Two angles are supplementary. The larger angle is $56^\circ$ more than the smaller angle. Find the measure of the larger angle, in degrees."
-  answer="118"
-  answerDisplay="$118^\circ$"
-  hint="Once you know the smaller angle, add $56$ to it — or subtract the smaller angle from $180$."
+  question="Two angles are complementary. The smaller angle is $34^\circ$ less than the larger angle. Find the measure of the smaller angle, in degrees."
+  answer="28"
+  answerForm="decimal"
+  answerDisplay="$28^\circ$"
+  hint="Let $x$ be the larger angle and write the smaller angle in terms of $x$. The two add to $90^\circ$; solve for $x$, then find the smaller angle."
 >}}
 
 ### Use the properties of triangles
@@ -515,50 +592,57 @@ where $c$ is the hypotenuse and $a, b$ are the legs.
 {{< fillin
   question="The measures of two angles of a triangle are $26^\circ$ and $98^\circ$. Find the measure of the third angle, in degrees."
   answer="56"
+  answerForm="decimal"
   answerDisplay="$56^\circ$"
-  hint="The three angle measures add to $180$. Translate as $26 + 98 + x = 180$ and solve for $x$."
+  hint="The three angle measures of a triangle add to $180^\circ$. Let $x$ be the third angle, write that sum as an equation, and solve."
 >}}
 
 {{< fillin
   question="The measures of two angles of a triangle are $105^\circ$ and $31^\circ$. Find the measure of the third angle, in degrees."
   answer="44"
+  answerForm="decimal"
   answerDisplay="$44^\circ$"
-  hint="Translate as $105 + 31 + x = 180$, then solve for $x$."
+  hint="Substitute the two known angles into $m\angle A + m\angle B + m\angle C = 180$ and solve for the third."
 >}}
 
 {{< fillin
   question="One angle of a right triangle measures $33^\circ$. What is the measure of the other angle, in degrees?"
   answer="57"
+  answerForm="decimal"
   answerDisplay="$57^\circ$"
-  hint="A right triangle already uses $90^\circ$ of the $180^\circ$ total, so solve $x + 90 + 33 = 180$."
+  hint="One angle of a right triangle is $90^\circ$. Put all three angles into the $180^\circ$ angle sum and solve for the unknown one."
 >}}
 
 {{< fillin
   question="One angle of a right triangle measures $22.5^\circ$. What is the measure of the other angle, in degrees?"
   answer="67.5"
+  answerForm="decimal"
   answerDisplay="$67.5^\circ$"
-  hint="Solve $x + 90 + 22.5 = 180$; the two acute angles of a right triangle add to $90^\circ$."
+  hint="Include the right angle: the three angles add to $180^\circ$. Write the equation and solve; the decimal part carries through."
 >}}
 
 {{< fillin
   question="$\Delta ABC$ is similar to $\Delta XYZ$. In $\Delta ABC$, side $AB = 15$, side $BC = 9$, and side $AC = b$. In $\Delta XYZ$, side $XY = 10$, side $YZ = x$, and side $XZ = 8$. Find the length of side $b$."
   answer="12"
+  answerForm="decimal"
   answerDisplay="$b = 12$"
-  hint="Corresponding sides are in the same ratio. Match $AC$ with $XZ$ and $AB$ with $XY$, then solve $\tfrac{b}{8} = \tfrac{15}{10}$."
+  hint="Match sides by their vertex letters ($AC$ goes with $XZ$), choose a pair whose lengths you both know for the ratio, and solve the proportion."
 >}}
 
 {{< fillin
   question="On a map, San Francisco, Las Vegas, and Los Angeles form a triangle. On the map, Los Angeles to Las Vegas measures 1 inch, Los Angeles to San Francisco measures 1.3 inches, and San Francisco to Las Vegas measures 2.1 inches. The actual distance from Los Angeles to Las Vegas is 270 miles. Find the actual distance from Los Angeles to San Francisco, in miles."
   answer="351"
+  answerForm="decimal"
   answerDisplay="351 miles"
-  hint="The map triangle and the real triangle are similar, so set up $\tfrac{1.3}{1} = \tfrac{d}{270}$ and solve for $d$."
+  hint="The map triangle and the real triangle are similar. Write a proportion that compares the map lengths with the actual distances, keeping the same order on both sides, and solve."
 >}}
 
 {{< fillin
   question="Joe wants to build a doll house for his daughter that looks just like his house. His house is 30 feet wide and 35 feet tall at the highest point of the roof. If the doll house will be 2.5 feet wide, how tall will its highest point be, in feet? Round to the nearest tenth."
   answer="2.9"
+  answerForm="decimal"
   answerDisplay="2.9 feet"
-  hint="The doll house and the house are similar figures, so solve the proportion $\tfrac{30}{2.5} = \tfrac{35}{h}$."
+  hint="The doll house and the house are similar figures. Set up a proportion with widths in one ratio and heights in the other, in the same order, then solve and round."
 >}}
 
 ### Use the Pythagorean Theorem
@@ -566,38 +650,43 @@ where $c$ is the hypotenuse and $a, b$ are the legs.
 {{< fillin
   question="A right triangle has legs measuring 9 and 12. Use the Pythagorean Theorem to find the length of the hypotenuse."
   answer="15"
+  answerForm="decimal"
   answerDisplay="$c = 15$"
-  hint="Substitute the legs into $a^2 + b^2 = c^2$: $9^2 + 12^2 = c^2$, then take the square root."
+  hint="Substitute the legs for $a$ and $b$ in $a^2 + b^2 = c^2$, add the squares, and take the square root."
 >}}
 
 {{< fillin
   question="In a right triangle, the hypotenuse measures 10 and one leg measures 6. Use the Pythagorean Theorem to find the length of the other leg."
   answer="8"
+  answerForm="decimal"
   answerDisplay="$b = 8$"
-  hint="The hypotenuse is $c$, so substitute into $6^2 + b^2 = 10^2$ and solve for $b^2$ first."
+  hint="The hypotenuse is $c$. Substitute into $a^2 + b^2 = c^2$, isolate $b^2$ first, then take the square root."
 >}}
 
 {{< fillin
   question="In a right triangle, the hypotenuse measures 13 and one leg measures 8. Use the Pythagorean Theorem to find the length of the other leg. Round to the nearest tenth."
   answer="10.2"
+  answerForm="decimal"
   answerDisplay="$b \approx 10.2$"
-  hint="Substitute into $8^2 + b^2 = 13^2$ to get $b^2 = 105$; the square root is not a whole number, so round it."
+  hint="Substitute into $a^2 + b^2 = c^2$ with the hypotenuse as $c$ and isolate $b^2$. Its square root is not a whole number, so approximate it and round."
 >}}
 
 {{< fillin
   question="A 13-foot string of lights will be attached to the top of a 12-foot pole for a holiday display. How far from the base of the pole, in feet, should the end of the string of lights be anchored?"
   answer="5"
+  answerForm="decimal"
   answerDisplay="5 feet"
-  hint="The pole, the ground, and the string form a right triangle whose hypotenuse is the 13-foot string. Solve $a^2 + 12^2 = 13^2$."
+  hint="The pole stands at a right angle to the ground, so the string of lights is the hypotenuse. Solve $a^2 + b^2 = c^2$ for the missing leg."
 >}}
 
 {{< fillin
   question="Chi is planning to put a path of paving stones through her flower garden, running diagonally from one corner to the opposite corner. The flower garden is a square with sides of 10 feet. What will the length of the path be, in feet? Round to the nearest tenth."
   answer="14.1"
+  answerForm="decimal"
   answerDisplay="14.1 feet"
-  hint="The diagonal is the hypotenuse of a right triangle whose legs are both sides of the square, so solve $10^2 + 10^2 = c^2$."
+  hint="The diagonal cuts the square into two right triangles; the path is the hypotenuse and two sides of the square are the legs. Use $a^2 + b^2 = c^2$, then round."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.3: Use Properties of Angles, Triangles, and the Pythagorean Theorem](https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the angle, triangle, and Pythagorean Theorem figures as accessible inline graphics; omitted the Be Prepared quiz, the Media callout, and the house and sailboat illustrations; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating their diagrams as prose prompts.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.3: Use Properties of Angles, Triangles, and the Pythagorean Theorem](https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the straight-angle, angle, triangle, right-triangle, and Pythagorean Theorem figures and the gazebo brace as accessible inline graphics, and omitted the other figures (the supplementary and complementary angle pairs, the similar-triangle pair with sides 16, 20, 12 and 4, 5, 3, the three leg-and-hypotenuse triangles, and the gazebo, house, and sailboat pictures); omitted the Be Prepared quiz and the Media callout; condensed the seven-step worked-example tables into prose and stacked equations, and added the angle and side-ratio equations to the similar-triangles box; replaced the Key Concepts list with a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback, restating their diagrams as prose, asking one part of each two-part angle Try It, and asking for the smaller or smallest angle where the source asks for every measure; and adapted selected end-of-section exercises into the interactive Practice block, restating their diagrams as prose prompts, splitting the supplement-and-complement exercise into two items, and asking for one angle where the source asks for both.</small>

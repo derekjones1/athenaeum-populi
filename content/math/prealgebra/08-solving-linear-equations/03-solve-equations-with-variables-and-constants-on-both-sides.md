@@ -63,17 +63,25 @@ $$x = -5$$
 
 Check: substitute $x = -5$ into $4x + 6 = -14$:
 
-$$4(-5) + 6 \stackrel{?}{=} -14 \qquad -20 + 6 \stackrel{?}{=} -14 \qquad -14 = -14 \checkmark$$
+$$
+\begin{array}{rcl}
+4(-5) + 6 &\stackrel{?}{=}& -14 \\[4pt]
+-20 + 6 &\stackrel{?}{=}& -14 \\[4pt]
+-14 &=& -14 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $3x + 4 = -8$."
   answer="-4"
+  answerForm="decimal"
   hint="Subtract $4$ from both sides, then divide both sides by $3$."
 >}}
 
 {{< fillin
   question="Solve: $5a + 3 = -37$."
   answer="-8"
+  answerForm="decimal"
   hint="Subtract $3$ from both sides, then divide both sides by $5$."
 >}}
 
@@ -104,11 +112,18 @@ have solved the equation.
 
 Check: substitute $7$ for $x$ into $5x = 4x + 7$:
 
-$$5(7) \stackrel{?}{=} 4(7) + 7 \qquad 35 \stackrel{?}{=} 28 + 7 \qquad 35 = 35 \checkmark$$
+$$
+\begin{array}{rcl}
+5(7) &\stackrel{?}{=}& 4(7) + 7 \\[4pt]
+35 &\stackrel{?}{=}& 28 + 7 \\[4pt]
+35 &=& 35 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $6n = 5n + 10$."
   answer="10"
+  answerForm="decimal"
   hint="Subtract $5n$ from both sides to leave the variable alone."
 >}}
 
@@ -144,11 +159,18 @@ $$y = -4$$
 
 Check: substitute $y = -4$ into $5y - 8 = 7y$:
 
-$$5(-4) - 8 \stackrel{?}{=} 7(-4) \qquad -20 - 8 \stackrel{?}{=} -28 \qquad -28 = -28 \checkmark$$
+$$
+\begin{array}{rcl}
+5(-4) - 8 &\stackrel{?}{=}& 7(-4) \\[4pt]
+-20 - 8 &\stackrel{?}{=}& -28 \\[4pt]
+-28 &=& -28 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $3p - 14 = 5p$."
   answer="-7"
+  answerForm="decimal"
   hint="Subtract $3p$ from both sides, then divide both sides by $2$."
 >}}
 
@@ -176,11 +198,17 @@ $$x = 3$$
 
 Check: substitute $x = 3$ into $7x = -x + 24$:
 
-$$7(3) \stackrel{?}{=} -(3) + 24 \qquad 21 = 21 \checkmark$$
+$$
+\begin{array}{rcl}
+7(3) &\stackrel{?}{=}& -(3) + 24 \\[4pt]
+21 &=& 21 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $12j = -4j + 32$."
   answer="2"
+  answerForm="decimal"
   hint="Add $4j$ to both sides, then divide both sides by $16$."
 >}}
 
@@ -217,7 +245,13 @@ $$x = -3$$
 
 Check: substitute $x = -3$ into $7x + 5 = 6x + 2$:
 
-$$7(-3) + 5 \stackrel{?}{=} 6(-3) + 2 \qquad -21 + 5 \stackrel{?}{=} -18 + 2 \qquad -16 = -16 \checkmark$$
+$$
+\begin{array}{rcl}
+7(-3) + 5 &\stackrel{?}{=}& 6(-3) + 2 \\[4pt]
+-21 + 5 &\stackrel{?}{=}& -18 + 2 \\[4pt]
+-16 &=& -16 \checkmark
+\end{array}
+$$
 
 {{< callout type="info" >}}
   **Solve an equation with variables and constants on both sides.**
@@ -269,17 +303,24 @@ $$n = 1$$
 
 Check: substitute $1$ for $n$ into $6n - 2 = -3n + 7$:
 
-$$6(1) - 2 \stackrel{?}{=} -3(1) + 7 \qquad 4 = 4 \checkmark$$
+$$
+\begin{array}{rcl}
+6(1) - 2 &\stackrel{?}{=}& -3(1) + 7 \\[4pt]
+4 &=& 4 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $8q - 5 = -4q + 7$."
   answer="1"
+  answerForm="decimal"
   hint="Add $4q$ to both sides, then add $5$ to both sides, then divide by $12$."
 >}}
 
 {{< fillin
   question="Solve: $7n - 3 = n + 3$."
   answer="1"
+  answerForm="decimal"
   hint="Subtract $n$ from both sides, then add $3$ to both sides, then divide by $6$."
 >}}
 
@@ -314,7 +355,13 @@ $$-5 = a$$
 
 Check: substitute $a = -5$ into $2a - 7 = 5a + 8$:
 
-$$2(-5) - 7 \stackrel{?}{=} 5(-5) + 8 \qquad -10 - 7 \stackrel{?}{=} -25 + 8 \qquad -17 = -17 \checkmark$$
+$$
+\begin{array}{rcl}
+2(-5) - 7 &\stackrel{?}{=}& 5(-5) + 8 \\[4pt]
+-10 - 7 &\stackrel{?}{=}& -25 + 8 \\[4pt]
+-17 &=& -17 \checkmark
+\end{array}
+$$
 
 Note that we could have made the left side the variable side instead of the
 right side, but it would have led to a negative coefficient on the variable
@@ -325,6 +372,7 @@ as the variable side helps avoid the negatives.
 {{< fillin
   question="Solve: $2a - 2 = 6a + 18$."
   answer="-5"
+  answerForm="decimal"
   hint="Subtract $2a$ from both sides, then subtract $18$ from both sides, then divide by $4$."
 >}}
 
@@ -354,12 +402,19 @@ $$x = -8$$
 
 Check: substitute $x = -8$ into $\tfrac{3}{2}x + 5 = \tfrac{1}{2}x - 3$:
 
-$$\tfrac{3}{2}(-8) + 5 \stackrel{?}{=} \tfrac{1}{2}(-8) - 3 \qquad -12 + 5 \stackrel{?}{=} -4 - 3 \qquad -7 = -7 \checkmark$$
+$$
+\begin{array}{rcl}
+\tfrac{3}{2}(-8) + 5 &\stackrel{?}{=}& \tfrac{1}{2}(-8) - 3 \\[4pt]
+-12 + 5 &\stackrel{?}{=}& -4 - 3 \\[4pt]
+-7 &=& -7 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $\tfrac{7}{8}x - 12 = -\tfrac{1}{8}x - 2$."
   answer="10"
-  hint="Add $\tfrac{1}{8}x$ to both sides to combine the $x$-terms, then add $12$ to both sides, then divide by $1$."
+  answerForm="decimal"
+  hint="Add $\tfrac{1}{8}x$ to both sides to combine the $x$-terms, then add $12$ to both sides."
 >}}
 
 We follow the same steps when the equation has decimals, too.
@@ -395,11 +450,18 @@ $$x = -5$$
 
 Check: substitute $x = -5$ into $3.4x + 4 = 1.6x - 5$:
 
-$$3.4(-5) + 4 \stackrel{?}{=} 1.6(-5) - 5 \qquad -17 + 4 \stackrel{?}{=} -8 - 5 \qquad -13 = -13 \checkmark$$
+$$
+\begin{array}{rcl}
+3.4(-5) + 4 &\stackrel{?}{=}& 1.6(-5) - 5 \\[4pt]
+-17 + 4 &\stackrel{?}{=}& -8 - 5 \\[4pt]
+-13 &=& -13 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $2.8x + 12 = -1.4x - 9$."
   answer="-5"
+  answerForm="decimal"
   hint="Add $1.4x$ to both sides, then subtract $12$ from both sides, then divide by $4.2$."
 >}}
 
@@ -457,17 +519,25 @@ $$x = 4$$
 
 Check: substitute $x = 4$ into $3(x + 2) = 18$:
 
-$$3(4 + 2) \stackrel{?}{=} 18 \qquad 3(6) \stackrel{?}{=} 18 \qquad 18 = 18 \checkmark$$
+$$
+\begin{array}{rcl}
+3(4 + 2) &\stackrel{?}{=}& 18 \\[4pt]
+3(6) &\stackrel{?}{=}& 18 \\[4pt]
+18 &=& 18 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $5(x + 3) = 35$."
   answer="4"
+  answerForm="decimal"
   hint="Distribute the $5$, then subtract $15$ from both sides, then divide by $5$."
 >}}
 
 {{< fillin
   question="Solve: $6(y - 4) = -18$."
   answer="1"
+  answerForm="decimal"
   hint="Distribute the $6$, then add $24$ to both sides, then divide by $6$."
 >}}
 
@@ -499,11 +569,18 @@ $$x = -12$$
 
 Check: substitute $x = -12$ into $-(x + 5) = 7$:
 
-$$-(-12 + 5) \stackrel{?}{=} 7 \qquad -(-7) \stackrel{?}{=} 7 \qquad 7 = 7 \checkmark$$
+$$
+\begin{array}{rcl}
+-(-12 + 5) &\stackrel{?}{=}& 7 \\[4pt]
+-(-7) &\stackrel{?}{=}& 7 \\[4pt]
+7 &=& 7 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $-(y + 8) = -2$."
   answer="-6"
+  answerForm="decimal"
   hint="Distribute the negative sign, then add $8$ to both sides, then multiply both sides by $-1$."
 >}}
 
@@ -537,11 +614,19 @@ $$x = 0$$
 
 Check: substitute $x = 0$ into $4(x - 2) + 5 = -3$:
 
-$$4(0 - 2) + 5 \stackrel{?}{=} -3 \qquad 4(-2) + 5 \stackrel{?}{=} -3 \qquad -8 + 5 \stackrel{?}{=} -3 \qquad -3 = -3 \checkmark$$
+$$
+\begin{array}{rcl}
+4(0 - 2) + 5 &\stackrel{?}{=}& -3 \\[4pt]
+4(-2) + 5 &\stackrel{?}{=}& -3 \\[4pt]
+-8 + 5 &\stackrel{?}{=}& -3 \\[4pt]
+-3 &=& -3 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $2(a - 4) + 3 = -1$."
   answer="2"
+  answerForm="decimal"
   hint="Distribute the $2$, combine like terms, then add $5$ to both sides, then divide by $2$."
 >}}
 
@@ -575,11 +660,20 @@ $$y = -\tfrac{1}{3}$$
 
 Check: substitute $y = -\tfrac{1}{3}$ into $8 - 2(3y + 5) = 0$:
 
-$$8 - 2\left[3\left(-\tfrac{1}{3}\right) + 5\right] \stackrel{?}{=} 0 \qquad 8 - 2(-1 + 5) \stackrel{?}{=} 0 \qquad 8 - 2(4) \stackrel{?}{=} 0 \qquad 8 - 8 = 0 \checkmark$$
+$$
+\begin{array}{rcl}
+8 - 2\left[3\left(-\tfrac{1}{3}\right) + 5\right] &\stackrel{?}{=}& 0 \\[4pt]
+8 - 2(-1 + 5) &\stackrel{?}{=}& 0 \\[4pt]
+8 - 2(4) &\stackrel{?}{=}& 0 \\[4pt]
+8 - 8 &=& 0 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $12 - 3(4j + 3) = -17$."
-  answer="5/3"
+  answer="\frac{5}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{5}{3}$"
   hint="Distribute the $-3$, combine like terms, then isolate the $j$-term, then divide by $-12$."
 >}}
 
@@ -619,18 +713,27 @@ $$-4 = x$$
 
 Check: substitute $x = -4$ into $3(x - 2) - 5 = 4(2x + 1) + 5$:
 
-$$3(-4 - 2) - 5 \stackrel{?}{=} 4[2(-4) + 1] + 5 \qquad 3(-6) - 5 \stackrel{?}{=} 4(-7) + 5 \qquad -23 \stackrel{?}{=} -28 + 5 \qquad -23 = -23 \checkmark$$
+$$
+\begin{array}{rcl}
+3(-4 - 2) - 5 &\stackrel{?}{=}& 4[2(-4) + 1] + 5 \\[4pt]
+3(-6) - 5 &\stackrel{?}{=}& 4(-7) + 5 \\[4pt]
+-23 &\stackrel{?}{=}& -28 + 5 \\[4pt]
+-23 &=& -23 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $6(p - 3) - 7 = 5(4p + 3) - 12$."
   answer="-2"
+  answerForm="decimal"
   hint="Distribute on both sides, combine like terms, collect the variable terms on the side with the larger coefficient, then isolate $p$."
 >}}
 
 {{< fillin
-  question="Solve: $\tfrac{1}{2}(6x - 2) = 5 - x$."
-  answer="3/2"
-  hint="Distribute the $\tfrac{1}{2}$, add $x$ to both sides, then add $1$ to both sides, then divide by $4$."
+  question="Solve: $\tfrac{1}{3}(6u + 3) = 7 - u$."
+  answer="2"
+  answerForm="decimal"
+  hint="Distribute the $\tfrac{1}{3}$, collect the $u$-terms on the left and the constants on the right, then divide by the coefficient of $u$."
 >}}
 
 In many applications, we will have to solve equations with decimals. The
@@ -668,11 +771,18 @@ $$x = 0.4$$
 
 Check: substitute $x = 0.4$ into $0.24(100x + 5) = 0.4(30x + 15)$:
 
-$$0.24(100(0.4) + 5) \stackrel{?}{=} 0.4(30(0.4) + 15) \qquad 0.24(45) \stackrel{?}{=} 0.4(27) \qquad 10.8 = 10.8 \checkmark$$
+$$
+\begin{array}{rcl}
+0.24(100(0.4) + 5) &\stackrel{?}{=}& 0.4(30(0.4) + 15) \\[4pt]
+0.24(45) &\stackrel{?}{=}& 0.4(27) \\[4pt]
+10.8 &=& 10.8 \checkmark
+\end{array}
+$$
 
 {{< fillin
   question="Solve: $0.55(100n + 8) = 0.6(85n + 14)$."
   answer="1"
+  answerForm="decimal"
   hint="Distribute both sides first, then collect the $n$-terms on one side and the constants on the other."
 >}}
 
@@ -692,18 +802,21 @@ its starting form.
 {{< fillin
   question="Solve: $7x - 8 = 34$."
   answer="6"
+  answerForm="decimal"
   hint="The variable is only on the left, so make the left the variable side: add $8$ to both sides, then divide by $7$."
 >}}
 
 {{< fillin
   question="Solve: $4m + 9 = -23$."
   answer="-8"
+  answerForm="decimal"
   hint="Undo the addition first — subtract $9$ from both sides — then divide both sides by $4$."
 >}}
 
 {{< fillin
   question="Solve: $29 = -8x - 3$."
   answer="-4"
+  answerForm="decimal"
   hint="Here the variable side is the right side. Add $3$ to both sides, then divide both sides by $-8$."
 >}}
 
@@ -712,20 +825,23 @@ its starting form.
 {{< fillin
   question="Solve: $9k = 8k - 11$."
   answer="-11"
+  answerForm="decimal"
   hint="The only constant is on the right, so make the left the variable side: subtract $8k$ from both sides."
 >}}
 
 {{< fillin
   question="Solve: $6x + 27 = 9x$."
   answer="9"
+  answerForm="decimal"
   hint="Since $9 > 6$, collect the variables on the right: subtract $6x$ from both sides, then divide by $3$."
 >}}
 
 {{< fillin
   question="Solve: $8x + \tfrac{3}{4} = 7x$."
   answerDisplay="$-\tfrac{3}{4}$"
-  answer="-3/4"
-  hint="Subtract $7x$ from both sides; the fraction stays put as the constant term."
+  answer="-\frac{3}{4}"
+  answerForm="fraction lowest-terms"
+  hint="Subtract $7x$ from both sides to collect the variable on the left, then subtract the fraction from both sides."
 >}}
 
 ### Solve an equation with variables and constants on both sides
@@ -733,24 +849,28 @@ its starting form.
 {{< fillin
   question="Solve: $4x - 17 = 3x + 2$."
   answer="19"
+  answerForm="decimal"
   hint="Since $4 > 3$, make the left the variable side: subtract $3x$ from both sides, then add $17$ to both sides."
 >}}
 
 {{< fillin
   question="Solve: $9c + 7 = -2c - 37$."
   answer="-4"
+  answerForm="decimal"
   hint="Add $2c$ to both sides to collect the variables on the left, subtract $7$ from both sides, then divide by $11$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{4}{3}m - 7 = \tfrac{1}{3}m - 13$."
   answer="-6"
+  answerForm="decimal"
   hint="Subtract $\tfrac{1}{3}m$ from both sides — the $m$-terms have the same denominator — then add $7$ to both sides."
 >}}
 
 {{< fillin
   question="Solve: $2.7w - 80 = 1.2w + 10$."
   answer="60"
+  answerForm="decimal"
   hint="Subtract $1.2w$ from both sides, add $80$ to both sides, then divide both sides by $1.5$."
 >}}
 
@@ -759,27 +879,31 @@ its starting form.
 {{< fillin
   question="Solve: $4(y + 7) = 64$."
   answer="9"
+  answerForm="decimal"
   hint="Simplify first with the Distributive Property, then subtract $28$ from both sides and divide by $4$."
 >}}
 
 {{< fillin
   question="Solve: $-(t - 8) = 17$."
   answer="-9"
-  hint="Distributing the negative sign gives $-t + 8$. Subtract $8$ from both sides, then multiply both sides by $-1$."
+  answerForm="decimal"
+  hint="Distribute the negative sign over the parentheses, then subtract $8$ from both sides and multiply both sides by $-1$."
 >}}
 
 {{< fillin
   question="Solve: $18 - 2(y - 3) = 32$."
   answer="-4"
-  hint="Distribute the $-2$ before combining like terms — the left side becomes $24 - 2y$."
+  answerForm="decimal"
+  hint="Distribute the $-2$ to both terms in the parentheses (watch the sign of the constant), combine the constants on the left, then isolate $y$."
 >}}
 
 {{< fillin
   question="Solve: $5 + 6(3s - 5) = -3 + 2(8s - 1)$."
   answer="10"
+  answerForm="decimal"
   hint="Distribute and combine like terms on each side first, then collect the variable terms on the side with the larger coefficient."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 8.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/prealgebra-2e/pages/8-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 8.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/prealgebra-2e/pages/8-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the two-column worked examples as prose walkthroughs with typeset math, omitting two of them (2y − 7 = 15 and ½(6x − 2) = 5 − x); omitted the Be Prepared quiz, Media links, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

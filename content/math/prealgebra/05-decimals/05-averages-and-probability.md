@@ -74,12 +74,14 @@ greater than $15$. The mean is $10$.
 {{< fillin
   question="Find the mean of the numbers: 8, 9, 7, 12, 10, 5"
   answer="8.5"
+  answerForm="decimal"
   hint="Add all six numbers together, then divide by 6."
 >}}
 
 {{< fillin
   question="Find the mean of the numbers: 9, 13, 11, 7, 5"
   answer="9"
+  answerForm="decimal"
   hint="Add all five numbers together, then divide by 5."
 >}}
 
@@ -98,12 +100,14 @@ $97$. The mean age is $59.5$ years.
 {{< fillin
   question="The ages of the four students in Ben's carpool are 25, 18, 21, and 22. Find the mean age of the students."
   answer="21.5"
+  answerForm="decimal"
   hint="Add all four ages together, then divide by 4."
 >}}
 
 {{< fillin
   question="Yen counted the number of emails she received last week. The numbers were 4, 9, 15, 12, 10, 12, and 8. Find the mean number of emails."
   answer="10"
+  answerForm="decimal"
   hint="Add all seven numbers together, then divide by 7."
 >}}
 
@@ -129,6 +133,7 @@ phone bill was $\text{\textdollar}45.64$.
 {{< fillin
   question="Last week Ray recorded how much he spent for lunch each workday. He spent \$6.50, \$7.25, \$4.90, \$5.30, and \$12.00. Find the mean of how much he spent each day."
   answer="7.19"
+  answerForm="decimal"
   answerDisplay="\$7.19"
   hint="Add all five amounts together, then divide by 5."
 >}}
@@ -136,6 +141,7 @@ phone bill was $\text{\textdollar}45.64$.
 {{< fillin
   question="Lisa has kept the receipts from the past four trips to the gas station. The receipts show the following amounts: \$34.87, \$42.31, \$38.04, and \$43.26. Find the mean."
   answer="39.62"
+  answerForm="decimal"
   answerDisplay="\$39.62"
   hint="Add all four amounts together, then divide by 4."
 >}}
@@ -194,12 +200,14 @@ so the median of the data is $13$.
 {{< fillin
   question="Find the median of the data set: 43, 38, 51, 40, 46"
   answer="43"
+  answerForm="decimal"
   hint="List the numbers from smallest to largest, then find the value in the middle position."
 >}}
 
 {{< fillin
   question="Find the median of the data set: 15, 35, 20, 45, 50, 25, 30"
   answer="30"
+  answerForm="decimal"
   hint="List the numbers from smallest to largest, then find the value in the middle position."
 >}}
 
@@ -219,12 +227,14 @@ Kristen's median score is $85.5$.
 {{< fillin
   question="Find the median of the data set: 8, 7, 5, 10, 9, 12"
   answer="8.5"
+  answerForm="decimal"
   hint="List the numbers from smallest to largest — with 6 values, the median is the mean of the two middle numbers."
 >}}
 
 {{< fillin
   question="Find the median of the data set: 21, 25, 19, 17, 22, 18, 20, 24"
   answer="20.5"
+  answerForm="decimal"
   hint="List the numbers from smallest to largest — with 8 values, the median is the mean of the two middle numbers."
 >}}
 
@@ -265,8 +275,11 @@ once. So the mode of the data is $8$ miles.
 Identify the mode.
 
 $$
-18, 18, 18, 18, 19, 19, 19, 20, 20, 20, 20, 20, 20, 20, 21, 21, 22, 22,
-22, 22, 22, 23, 24, 24, 25, 29, 30, 40, 44
+\begin{gathered}
+18, 18, 18, 18, 19, 19, 19, 20, 20, 20, \\
+20, 20, 20, 20, 21, 21, 22, 22, 22, 22, \\
+22, 23, 24, 24, 25, 29, 30, 40, 44
+\end{gathered}
 $$
 
 The ages are already listed in order. Make a table of frequencies to help
@@ -283,17 +296,30 @@ years.
 {{< fillin
   question="The number of sick days employees used last year: 3, 6, 2, 3, 7, 5, 6, 2, 4, 2. Identify the mode."
   answer="2"
-  hint="Count how many times each value appears — one number appears three times, more than any other."
+  answerForm="decimal"
+  hint="List the values in numerical order, then count how many times each one appears."
 >}}
 
 {{< fillin
   question="The number of handbags owned by women in a book club: 5, 6, 3, 1, 5, 8, 1, 5, 8, 5. Identify the mode."
   answer="5"
-  hint="Count how many times each value appears — one number appears four times, more than any other."
+  answerForm="decimal"
+  hint="Tally how often each number appears; the mode is the one with the highest frequency."
 >}}
 
 **Example.** The data lists the heights, in inches, of $31$ students in a
 statistics class. Identify the mode.
+
+$$
+\begin{array}{cccccccc}
+56 & 61 & 63 & 64 & 65 & 66 & 67 & 67 \\
+60 & 62 & 63 & 64 & 65 & 66 & 67 & 70 \\
+60 & 63 & 63 & 64 & 66 & 66 & 67 & 74 \\
+61 & 63 & 64 & 65 & 66 & 67 & 67 &
+\end{array}
+$$
+
+List each number with its frequency:
 
 | Height | $56$ | $60$ | $61$ | $62$ | $63$ | $64$ | $65$ | $66$ | $67$ | $70$ | $74$ |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -311,13 +337,15 @@ modes.
 {{< fillin
   question="The ages of the students in a statistics class are: 19, 20, 23, 23, 38, 21, 19, 21, 19, 21, 20, 43, 20, 23, 17, 21, 21, 20, 29, 18, 28. What is the mode?"
   answer="21"
-  hint="Count how many times each age appears — one age appears five times, more than any other."
+  answerForm="decimal"
+  hint="Put the ages in numerical order, then count how many times each age appears."
 >}}
 
 {{< fillin
   question="Students listed the number of members in their household: 6, 2, 5, 6, 3, 7, 5, 6, 5, 3, 4, 4, 5, 7, 6, 4, 5, 2, 1, 5. What is the mode?"
   answer="5"
-  hint="Count how many times each value appears — one number appears six times, more than any other."
+  answerForm="decimal"
+  hint="Tally how often each household size appears; the mode is the size with the highest frequency."
 >}}
 
 ## Use the basic definition of probability
@@ -365,13 +393,14 @@ $$\text{Probability Cherie wins} = \frac{1}{100}$$
   answer="\frac{1}{10}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{10}$"
-  hint="There is $1$ favorable outcome (Ignaly) out of $10$ people at her table."
+  hint="Write the number of favorable outcomes over the total number of outcomes; each guest at her table is equally likely to be chosen."
 >}}
 
 {{< fillin
   question="Hoang is among 20 people available to sit on a jury. One person will be chosen at random from the 20. Convert the probability that Hoang will be chosen to a decimal."
   answer="0.05"
-  hint="There is $1$ favorable outcome out of $20$ total people — write that as a fraction, then convert to a decimal."
+  answerForm="decimal"
+  hint="Write the probability as favorable outcomes over total outcomes, then divide the numerator by the denominator."
 >}}
 
 **Example.** Three women and five men interviewed for a job. One of the
@@ -390,13 +419,14 @@ $$\text{Probability} = \frac{3}{8}$$
   answer="\frac{5}{8}"
   answerForm="fraction"
   answerDisplay="$\tfrac{5}{8}$"
-  hint="There are $5$ chocolate candies out of $8$ total pieces of candy."
+  hint="Put the number of chocolate candies over the total number of candies in the bowl."
 >}}
 
 {{< fillin
   question="Dan has 2 pairs of black socks and 6 pairs of blue socks. He will choose one pair at random to wear tomorrow. Convert the probability Dan will choose a pair of black socks to a decimal."
   answer="0.25"
-  hint="There are $2$ pairs of black socks out of $8$ total pairs — write that as a fraction, then convert to a decimal."
+  answerForm="decimal"
+  hint="Put the pairs of black socks over the total number of pairs, then divide the numerator by the denominator."
 >}}
 
 ## Key terms
@@ -416,12 +446,14 @@ total number of possible outcomes.
 {{< fillin
   question="Find the mean of the numbers: 65, 13, 48, 32, 19, 33"
   answer="35"
+  answerForm="decimal"
   hint="Add all six numbers, then divide the sum by 6."
 >}}
 
 {{< fillin
   question="Four girls leaving a mall were asked how much money they had just spent. The amounts were \$0, \$14.95, \$35.25, and \$25.16. Find the mean amount of money spent, in dollars."
   answer="18.84"
+  answerForm="decimal"
   answerDisplay="\$18.84"
   hint="Include the amount of zero dollars as one of the four values, then divide the sum by 4."
 >}}
@@ -429,6 +461,7 @@ total number of possible outcomes.
 {{< fillin
   question="The top eight hitters in a softball league have batting averages of .373, .360, .321, .321, .320, .312, .311, and .311. Find the mean of the batting averages. Round your answer to the nearest thousandth."
   answer="0.329"
+  answerForm="decimal"
   hint="Add all eight averages, divide by 8, then round the quotient to three decimal places."
 >}}
 
@@ -437,18 +470,21 @@ total number of possible outcomes.
 {{< fillin
   question="Find the median of the data set: 65, 56, 35, 34, 44, 39, 55, 52, 45"
   answer="45"
+  answerForm="decimal"
   hint="Order the nine values from smallest to largest — an odd count means the median is the middle value."
 >}}
 
 {{< fillin
   question="Find the median of the data set: 4, 8, 1, 5, 14, 3, 1, 12"
   answer="4.5"
+  answerForm="decimal"
   hint="Order the eight values from smallest to largest — an even count means the median is the mean of the two middle values."
 >}}
 
 {{< fillin
   question="Brian is teaching a swim class for 6 three-year olds. Their ages, in months, are 38, 41, 45, 36, 40, and 42. Find the median age, in months."
   answer="40.5"
+  answerForm="decimal"
   answerDisplay="$40.5$ months"
   hint="Put the six ages in order, then average the third and fourth values."
 >}}
@@ -458,19 +494,22 @@ total number of possible outcomes.
 {{< fillin
   question="Identify the mode of the data set: 2, 5, 1, 5, 2, 1, 2, 3, 2, 3, 1"
   answer="2"
+  answerForm="decimal"
   hint="Tally how often each value appears — the mode is the value with the highest frequency."
 >}}
 
 {{< fillin
   question="Identify the mode of the data set: 18, 22, 17, 20, 19, 20, 22, 19, 29, 18, 23, 25, 22, 24, 23, 22, 18, 20, 22, 20"
   answer="22"
+  answerForm="decimal"
   hint="Listing the values in numerical order first makes the repeats easier to count."
 >}}
 
 {{< fillin
   question="The number of units being taken by students in one class: 12, 5, 11, 10, 10, 11, 5, 11, 11, 11, 10, 12. Identify the mode."
   answer="11"
-  hint="Count the frequency of each unit load — one of them occurs five times."
+  answerForm="decimal"
+  hint="Count the frequency of each unit load; the mode is the load that occurs most often."
 >}}
 
 ### Apply the basic definition of probability
@@ -480,13 +519,14 @@ total number of possible outcomes.
   answer="\frac{1}{24}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{24}$"
-  hint="Dane is $1$ favorable outcome out of the $24$ people who could be chosen."
+  hint="Write the number of favorable outcomes over the number of people who could be selected."
 >}}
 
 {{< fillin
   question="There are 24 people who work in Dane's department, and one will be selected at random. Convert the probability that Dane will be selected to a decimal, rounded to the nearest thousandth."
   answer="0.042"
-  hint="Divide $1$ by $24$, then round the repeating decimal to three places."
+  answerForm="decimal"
+  hint="Divide the favorable outcomes by the total outcomes, then round the quotient to three decimal places."
 >}}
 
 {{< fillin
@@ -494,12 +534,13 @@ total number of possible outcomes.
   answer="\frac{2}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
-  hint="There are $4$ rock CDs out of $10$ CDs in all — then simplify the fraction."
+  hint="Put the number of rock CDs over the total number of CDs, then simplify the fraction."
 >}}
 
 {{< fillin
   question="Michel has four rock CDs and six country CDs in his car and will pick one at random. Convert the probability Michel will pick a rock CD to a decimal."
   answer="0.4"
+  answerForm="decimal"
   hint="Write the favorable outcomes over the total outcomes, then divide."
 >}}
 
@@ -514,9 +555,10 @@ total number of possible outcomes.
 {{< fillin
   question="Donovan is choosing at random among 10 out-of-state colleges and 4 colleges in his state. Convert the probability that he will choose an out-of-state college to a decimal, rounded to the nearest thousandth."
   answer="0.714"
+  answerForm="decimal"
   hint="Divide the number of out-of-state colleges by the total, then round to three decimal places."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.5: Averages and Probability](https://openstax.org/books/prealgebra-2e/pages/5-5-averages-and-probability) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the calendar figure as a plain list of running distances and the frequency tables as markdown tables; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each probability exercise expanded into one question per requested form (fraction and decimal).</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.5: Averages and Probability](https://openstax.org/books/prealgebra-2e/pages/5-5-averages-and-probability) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the calendar figure and the singers' height table as plain lists of values, the class-heights data table as a typeset array, the frequency tables as markdown tables, and the median diagrams and the annotated banana-probability equation as prose and plain display math; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, each two-part probability Try It as one question on one of its parts (the fraction or the decimal); and adapted selected end-of-section exercises into the interactive Practice block, with each probability exercise expanded into one question per requested form (fraction and decimal).</small>

@@ -126,6 +126,26 @@ terminology may be new to you.
   $$(a \cdot b) \cdot c = a \cdot (b \cdot c)$$
 {{< /callout >}}
 
+**Example.** Use the associative properties to rewrite the following:
+(a) $(3 + 0.6) + 0.4$ (b) $\left(-4 \cdot \tfrac{2}{5}\right) \cdot 15$.
+
+(a) Change the grouping:
+
+$$(3 + 0.6) + 0.4 = 3 + (0.6 + 0.4)$$
+
+Notice that $0.6 + 0.4$ is $1$, so the addition will be easier if we group
+as shown on the right.
+
+(b) Change the grouping:
+
+$$\left(-4 \cdot \tfrac{2}{5}\right) \cdot 15 = -4 \cdot \left(\tfrac{2}{5} \cdot 15\right)$$
+
+Notice that $\tfrac{2}{5} \cdot 15$ is $6$. The multiplication will be
+easier if we group as shown on the right.
+
+Besides using the associative properties to make calculations easier, we
+will often use them to simplify expressions with variables.
+
 **Example.** Use the Associative Property of Multiplication to simplify:
 $6(3x)$.
 
@@ -140,15 +160,15 @@ x$ without having a value for $x$.
 {{< fillin
   question="Use the Associative Property of Multiplication to simplify: $8(4x)$."
   answer="32x"
-  answerForm="distributed"
-  hint="Regroup as $(8 \cdot 4)x$, then multiply the numbers first."
+  answerForm="distributed single-term"
+  hint="Change the grouping so the two numbers are multiplied together first; the variable waits outside."
 >}}
 
 {{< fillin
   question="Use the Associative Property of Multiplication to simplify: $-9(7y)$."
   answer="-63y"
-  answerForm="distributed"
-  hint="Regroup as $(-9 \cdot 7)y$, then multiply the numbers first."
+  answerForm="distributed single-term"
+  hint="Change the grouping so the two numbers are multiplied together first; watch the sign of their product."
 >}}
 
 ## Evaluate expressions using the commutative and associative properties
@@ -177,14 +197,14 @@ changed — by the Commutative Property of Addition, $x + 0.37 + (-x) = x +
   question="Evaluate $y + 0.84 + (-y)$ when $y = \tfrac{3}{8}$."
   answer="0.84"
   answerForm="decimal"
-  hint="By the commutative property this equals $y + (-y) + 0.84$ — the opposites cancel first, leaving $0.84$."
+  hint="Use the commutative property to move $y$ and $-y$ next to each other; opposites add to $0$."
 >}}
 
 {{< fillin
   question="Evaluate $f + 0.975 + (-f)$ when $f = \tfrac{17}{20}$."
   answer="0.975"
   answerForm="decimal"
-  hint="Reorder so $f$ and $-f$ are together; they cancel, leaving $0.975$."
+  hint="Reorder so $f$ and $-f$ are next to each other and add the opposites first."
 >}}
 
 Let's do one more, this time with multiplication. **Example.** Evaluate
@@ -221,12 +241,18 @@ these properties to make our work easier.
 Notice the first and third terms are opposites, so we can use the
 commutative property of addition to reorder the terms:
 
-$$-84n + (-73n) + 84n = -84n + 84n + (-73n) = 0 + (-73n) = -73n$$
+$$
+\begin{aligned}
+-84n + (-73n) + 84n &= -84n + 84n + (-73n) \\[4pt]
+&= 0 + (-73n) \\[4pt]
+&= -73n
+\end{aligned}
+$$
 
 {{< fillin
   question="Simplify: $-27a + (-48a) + 27a$."
   answer="-48a"
-  answerForm="no-like-terms"
+  answerForm="single-term"
   hint="The first and third terms are opposites — reorder so they're together and cancel first."
 >}}
 
@@ -265,11 +291,11 @@ $$
 $$
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{7}{15} + \tfrac{5}{8}\right) + \tfrac{3}{8}$."
+  question="Simplify: $\left(\tfrac{7}{15} + \tfrac{5}{8}\right) + \tfrac{3}{8}$. Write the answer as an improper fraction."
   answer="\frac{22}{15}"
-  answerForm="fraction lowest-terms"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{22}{15}$"
-  hint="The second and third terms already share a denominator of 8 — regroup them together first; $\tfrac{5}{8} + \tfrac{3}{8} = 1$."
+  hint="The second and third terms share a denominator — change the grouping so they are added first."
 >}}
 
 When adding and subtracting three or more terms involving decimals, look
@@ -280,7 +306,14 @@ for terms that combine to give whole numbers.
 Notice that the sum of the second and third coefficients is a whole number,
 so change the grouping:
 
-$$6.47q + (9.99q + 1.01q) = 6.47q + (11.00q) = 17.47q$$
+$$
+\begin{aligned}
+& (6.47q + 9.99q) + 1.01q \\[4pt]
+&= 6.47q + (9.99q + 1.01q) \\[4pt]
+&= 6.47q + (11.00q) \\[4pt]
+&= 17.47q
+\end{aligned}
+$$
 
 Many people have good number sense when they deal with money. Think about
 adding $99$ cents and $1$ cent — do you see how this applies to adding
@@ -290,7 +323,7 @@ $9.99 + 1.01$?
   question="Simplify: $(5.58c + 8.75c) + 1.25c$."
   answer="15.58c"
   answerForm="no-like-terms"
-  hint="$8.75$ and $1.25$ combine to a whole number, $10$ — regroup those two terms together first."
+  hint="Look for the two coefficients whose sum is a whole number, and change the grouping so they are added first."
 >}}
 
 No matter what you are doing, it is always a good idea to think ahead. When
@@ -308,7 +341,7 @@ $$1.67[(8)(0.25)] = 1.67[2] = 3.34$$
   question="Simplify the expression: $[1.17(4)](2.25)$."
   answer="10.53"
   answerForm="decimal"
-  hint="Regroup so $4$ and $2.25$ multiply first — $4 \times 2.25 = 9$, a much friendlier number to multiply by $1.17$."
+  hint="Look for the two factors whose product is a whole number, and regroup so they are multiplied first."
 >}}
 
 When simplifying expressions that contain variables, we can use the
@@ -324,8 +357,8 @@ $$6(9x) = (6 \cdot 9)x = 54x$$
 {{< fillin
   question="Simplify: $8(3y)$."
   answer="24y"
-  answerForm="single-term"
-  hint="Regroup as $(8 \cdot 3)y$, then multiply the numbers first."
+  answerForm="distributed single-term"
+  hint="Use the associative property so the two numbers are multiplied together first."
 >}}
 
 In [The Language of Algebra](/math/prealgebra/02-the-language-of-algebra),
@@ -376,7 +409,7 @@ $6 + 7$
 {{< multiplechoice
   question="Use the commutative property to rewrite $-3m$."
   answer="$m(-3)$"
-  hint="This is a product of $-3$ and $m$, so swap the two factors and keep both signs as they are."
+  hint="The commutative property of multiplication changes only the order of the factors — never a sign or the operation."
 >}}
 $-\tfrac{m}{3}$
 $m(-3)$
@@ -398,7 +431,7 @@ $(14 + 21) + 9$
 {{< multiplechoice
   question="Use the associative property to rewrite $4(7x)$."
   answer="$(4 \cdot 7)x$"
-  hint="Regroup so the two numbers are inside the parentheses together; the factors stay in the order $4$, $7$, $x$."
+  hint="The associative property changes only the grouping — the order of the factors and the operation stay the same."
 >}}
 $4(x \cdot 7)$
 $(4 + 7)x$
@@ -425,12 +458,14 @@ $7(4x)$
 {{< fillin
   question="Evaluate $-\tfrac{5}{21}\left(\tfrac{21}{5}n\right)$ when $n = -8$."
   answer="8"
-  hint="Substitute $-8$ for $n$, or regroup first — $-\tfrac{5}{21}$ and $\tfrac{21}{5}$ are opposite reciprocals whose product is $-1$."
+  answerForm="decimal"
+  hint="Substitute $-8$ for $n$, or first regroup so the two fractions multiply together — watch the signs."
 >}}
 
 {{< fillin
   question="Evaluate $\left(-\tfrac{5}{21} \cdot \tfrac{21}{5}\right)n$ when $n = -8$."
   answer="8"
+  answerForm="decimal"
   hint="The grouping already pairs the two fractions; multiply them first, then multiply that result by $-8$."
 >}}
 
@@ -444,9 +479,9 @@ $7(4x)$
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{13}{18} \cdot \tfrac{25}{7} \cdot \tfrac{18}{13}$."
+  question="Simplify: $\tfrac{13}{18} \cdot \tfrac{25}{7} \cdot \tfrac{18}{13}$. Write the answer as an improper fraction."
   answer="\frac{25}{7}"
-  answerForm="fraction lowest-terms"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{25}{7}$"
   hint="The first and third factors are reciprocals — reorder to group them together so they multiply to $1$."
 >}}
@@ -459,18 +494,18 @@ $7(4x)$
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{1}{12} + \tfrac{4}{9}\right) + \tfrac{5}{9}$."
+  question="Simplify: $\left(\tfrac{1}{12} + \tfrac{4}{9}\right) + \tfrac{5}{9}$. Write the answer as an improper fraction."
   answer="\frac{13}{12}"
-  answerForm="fraction lowest-terms"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{13}{12}$"
-  hint="The second and third terms already share a denominator of $9$ — regroup them together first; $\tfrac{4}{9} + \tfrac{5}{9} = 1$."
+  hint="The second and third terms share a denominator — change the grouping so they are added first."
 >}}
 
 {{< fillin
   question="Simplify: $(5.89d + 2.75d) + 1.25d$."
   answer="9.89d"
   answerForm="no-like-terms"
-  hint="Change the grouping so $2.75d$ and $1.25d$ combine first — their coefficients add to the whole number $4$."
+  hint="Look for the two terms whose coefficients add to a whole number, and change the grouping so they combine first."
 >}}
 
 {{< fillin
@@ -482,4 +517,4 @@ $7(4x)$
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.2: Commutative and Associative Properties](https://openstax.org/books/prealgebra-2e/pages/7-2-commutative-and-associative-properties) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the boxed regrouping comparisons (Figures 7.3 and 7.4) as tables; omitted the Be Prepared quiz, Links to Literacy activity, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.2: Commutative and Associative Properties](https://openstax.org/books/prealgebra-2e/pages/7-2-commutative-and-associative-properties) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, set the worked-example step tables as equation chains, and recreated the boxed regrouping comparisons (Figures 7.3 and 7.4) as tables; omitted the Be Prepared quiz, Links to Literacy activity, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback (each two-part evaluate Try It asking its first part); and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

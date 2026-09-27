@@ -106,9 +106,9 @@ export const SOUND_COINCIDENCES = [
   ['content/math/intermediate-algebra/03-graphs-and-functions/06-graphs-of-functions.md', 'Graph: $f(x)=3$. Enter th', 'f(x)=3', 'constant function: every point on its graph has the printed y-coordinate'],
   ['content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/01-add-and-subtract-polynomials.md', 'The polynomial function $h(t)=-16t^2+15', '150', 'h(0) reads the printed constant off the formula, by design'],
   ['content/math/intermediate-algebra/08-roots-and-radicals/04-add-subtract-and-multiply-radical-expressions.md', 'Simplify: $3 \\sqrt[4]{x} ', '3 \\sqrt[4]{x} - 5 \\sqrt[4]{y}', 'unlike radicals do not combine: retyping the prompt IS the correct response (tools/lint/lints.mjs carves the same case out by name)'],
-  ['content/math/prealgebra/02-the-language-of-algebra/01-use-the-language-of-algebra.md', 'Using the table above, wh', '33', 'selection prompt: the MPG value is printed beside the car'],
   ['content/math/prealgebra/03-integers/01-introduction-to-integers.md', 'Evaluate $-|q|$ when $q =', 'q = -33', 'identity, not coincidence: -|q| = q whenever q <= 0; the page carries the positive-input twin that discriminates'],
   ['content/math/prealgebra/03-integers/01-introduction-to-integers.md', 'Translate into an expression with integers: the f', '5', 'the answer coincides with a printed number'],
+  ['content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md', 'Evaluate $3ab^2$ when $a = -\\tfrac{2}{3}$ and $b = -\\tfrac{1}{2}$', 'b = -\\tfrac{1}{2}', 'the source values make 3ab^2 = b: 3(-2/3)(1/4) = -1/2, a coincidence of the numbers, not a retype'],
   ['content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md', 'Determine which value is a solution of the equation $x', 'x = 1.9', 'selection prompt: the answer is one of the printed candidates, and the distractors grade incorrect'],
   ['content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md', 'Determine which value is a solution of the equation $y', 'y = 2.1', 'selection prompt: the answer is one of the printed candidates, and the distractors grade incorrect'],
   ['content/math/prealgebra/05-decimals/05-averages-and-probability.md', 'Find the mean of the numbers: 9', '9', 'the mean equals a printed datum'],
@@ -127,12 +127,8 @@ export const SOUND_COINCIDENCES = [
   ['content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md', 'Translate and solve: The difference of $4', '14', 'x = 14 by design; the printed constant IS the solution'],
   ['content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md', 'Translate and solve: The difference of $7', '-8', 'a = -8 by design'],
   ['content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md', 'Find the area of a triangle with base 13', '13', 'the area coincides with the printed base'],
-  ['content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md', 'Add: $5a + 7b$.', '5a + 7b', 'unlike terms do not combine: retyping the prompt IS the correct response (tools/lint/lints.mjs carves the same case out by name)'],
-  ['content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md', 'The polynomial $-8t^2 + 24t + 4$ gives the height, in feet, of a ball $t$ seconds after it is tossed into the air from an initial height of 4 feet. Find the height after $t = 3', '4', 'h(3)=4 coincides with the printed initial height, by design'],
-  ['content/math/prealgebra/11-graphs/01-use-the-rectangular-coordinate-system.md', 'Determine which ordered p', '(1, 1)', 'selection prompt: the answer is one of the printed pairs, and the distractor grades incorrect'],
-  ['content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md', 'The equation $x = -7$ has', 'x = -7', 'vertical line x = a: it crosses the x-axis at that same a'],
-  ['content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md', 'Use a geoboard model: wha', '-2', 'the slope coincides with a printed rise/run'],
   ['content/math/prealgebra/knowledge-check-01-06.md', 'The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mo', '55', 'the mode IS a printed datum'],
+  ['content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md', 'The polynomial $-8t^2 + 24t + 4$ gives the height, in feet, of a ball $t$ seconds after it is tossed into the air from an initial height of $4$ feet. Find the height after $t = 3', '4', 'h(3)=4 coincides with the printed initial height, by design'],
   ['content/math/precalculus/knowledge-check-07-12.md', 'How many ways are there to choose a number from the set', '6', 'the count of qualifying set members (−6, 4, 12, 18, 24, 32) coincides with the printed divisor 6'],
   ['content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md', 'A certain angle $t$ corresponds to a point on the unit circle at', '\\left(-\\tfrac{\\sqrt2}{2},\\tfrac{\\sqrt2}{2}\\right)', 'the unit-circle identification itself: $(\\cos t,\\sin t)$ IS the point, so on the unit circle the printed point states its own answer and copying it is the correct response. The source Try It (m49372, after Example 1) is written this way deliberately — it follows the example that establishes $\\cos t=x$ and $\\sin t=y$ — and no answerForm can separate the two, because the response and the printed span are the same value in the same shape'],
 ];
@@ -207,7 +203,7 @@ function replayFile(file) {
       for (const spelling of spellings) {
         let admitted;
         try {
-          admitted = checkFormAsGraded(spelling, sc.params.answerForm);
+          admitted = checkFormAsGraded(spelling, sc.params.answerForm, sc.params.answer);
         } catch {
           // Defensive only: measured 0 throws across all 11,221 spellings the
           // corpus prints. A spelling the form check cannot read is not one a

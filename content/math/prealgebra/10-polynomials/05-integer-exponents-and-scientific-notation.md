@@ -28,7 +28,12 @@ exponent in the numerator or denominator was larger:
   **Quotient Property of Exponents.** If $a$ is a real number, $a \neq 0$,
   and $m, n$ are whole numbers, then
 
-  $$\frac{a^m}{a^n} = a^{m-n}, \quad m > n \qquad\text{and}\qquad \frac{a^m}{a^n} = \frac{1}{a^{n-m}}, \quad n > m$$
+  $$
+  \begin{aligned}
+  \frac{a^m}{a^n} &= a^{m-n}, \quad m > n \qquad\text{and} \\[10pt]
+  \frac{a^m}{a^n} &= \frac{1}{a^{n-m}}, \quad n > m
+  \end{aligned}
+  $$
 {{< /callout >}}
 
 What if we just subtract exponents, regardless of which is larger? Let's
@@ -64,7 +69,7 @@ $$4^{-2} = \frac{1}{4^2} = \frac{1}{16}$$
 
 (b) Use the same definition:
 
-$$10^{-3} = \frac{1}{10^3} = \frac{1}{1000}$$
+$$10^{-3} = \frac{1}{10^3} = \frac{1}{1{,}000}$$
 
 {{< fillin
   question="Simplify: $2^{-3}$."
@@ -254,7 +259,7 @@ $$z^{-5} \cdot z^{-3} = z^{-5-3} = z^{-8} = \frac{1}{z^8}$$
 {{< fillin
   question="Simplify: $x^{-3} \cdot x^7$."
   answer="x^4"
-  answerForm="single-term"
+  answerForm="single-power"
   hint="Add the exponents, since the bases are the same: $-3 + 7$."
 >}}
 
@@ -275,14 +280,21 @@ like bases before using the Product Property of Exponents.
 Use the Commutative Property to get like bases together, then add the
 exponents for each base:
 
-$$(m^4 n^{-3})(m^{-5} n^{-2}) = m^4 m^{-5} \cdot n^{-3} n^{-2} = m^{-1} \cdot n^{-5} = \frac{1}{m^1} \cdot \frac{1}{n^5} = \frac{1}{mn^5}$$
+$$
+\begin{aligned}
+(m^4 n^{-3})(m^{-5} n^{-2}) &= m^4 m^{-5} \cdot n^{-3} n^{-2} \\[4pt]
+&= m^{-1} \cdot n^{-5} \\[4pt]
+&= \frac{1}{m^1} \cdot \frac{1}{n^5} \\[4pt]
+&= \frac{1}{mn^5}
+\end{aligned}
+$$
 
 {{< fillin
   question="Simplify: $(p^6 q^{-2})(p^{-9} q^{-1})$."
   answer="\frac{1}{p^3 q^3}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{p^3 q^3}$"
-  hint="Group the like bases together and add exponents: $p^{6-9}$ and $q^{-2-1}$. Then rewrite both negative exponents as reciprocals."
+  hint="Use the Commutative Property to group the like bases, add the exponents for each base, then rewrite any negative exponent as a reciprocal."
 >}}
 
 If the monomials have numerical coefficients, we multiply the coefficients,
@@ -293,14 +305,21 @@ just as we did earlier in the chapter.
 Rewrite with the like bases together, multiply the coefficients, add the
 exponents for each base, and rewrite with only positive exponents:
 
-$$(2x^{-6} y^8)(-5x^5 y^{-3}) = 2(-5) \cdot (x^{-6} x^5) \cdot (y^8 y^{-3}) = -10 \cdot x^{-1} \cdot y^5 = -10 \cdot \frac{1}{x^1} \cdot y^5 = \frac{-10y^5}{x}$$
+$$
+\begin{aligned}
+(2x^{-6} y^8)(-5x^5 y^{-3}) &= 2(-5) \cdot (x^{-6} x^5) \cdot (y^8 y^{-3}) \\[4pt]
+&= -10 \cdot x^{-1} \cdot y^5 \\[4pt]
+&= -10 \cdot \frac{1}{x^1} \cdot y^5 \\[4pt]
+&= \frac{-10y^5}{x}
+\end{aligned}
+$$
 
 {{< fillin
   question="Simplify: $(3u^{-5} v^7)(-4u^4 v^{-2})$."
   answer="-\frac{12 v^5}{u}"
   answerForm="single-fraction"
   answerDisplay="$-\tfrac{12v^5}{u}$"
-  hint="Multiply the coefficients ($3$ times $-4$), then add exponents for $u$ ($-5+4$) and for $v$ ($7-2$). Rewrite the negative exponent on $u$ as a reciprocal."
+  hint="Multiply the coefficients, add the exponents for each variable, then rewrite any negative exponent as a reciprocal."
 >}}
 
 In the next two examples, we use the Power Property and the Product to a
@@ -349,7 +368,7 @@ $$\frac{r^5}{r^{-4}} = r^{5-(-4)} = r^9$$
 {{< fillin
   question="Simplify: $\tfrac{x^8}{x^{-3}}$."
   answer="x^{11}"
-  answerForm="polynomial"
+  answerForm="single-power"
   hint="Subtract the exponents, numerator minus denominator: $8 - (-3)$."
 >}}
 
@@ -360,11 +379,16 @@ thousands, and so on. Our decimal numbers are also based on powers of
 ten — tenths, hundredths, thousandths, and so on.
 
 Consider the numbers $4{,}000$ and $0.004$. We know that $4{,}000$ means
-$4 \times 1000$ and $0.004$ means $4 \times \tfrac{1}{1000}$. If we write the
-$1000$ as a power of ten in exponential form, we can rewrite these numbers
+$4 \times 1{,}000$ and $0.004$ means $4 \times \tfrac{1}{1{,}000}$. If we write the
+$1{,}000$ as a power of ten in exponential form, we can rewrite these numbers
 this way:
 
-$$4{,}000 = 4 \times 1000 = 4 \times 10^3 \qquad\qquad 0.004 = 4 \times \frac{1}{1000} = 4 \times 10^{-3}$$
+$$
+\begin{aligned}
+4{,}000 &= 4 \times 1{,}000 = 4 \times 10^3 \\[4pt]
+0.004 &= 4 \times \frac{1}{1{,}000} = 4 \times 10^{-3}
+\end{aligned}
+$$
 
 When a number is written as a product of two numbers, where the first
 factor is a number greater than or equal to one but less than $10$, and the
@@ -391,7 +415,7 @@ easily convert from decimal notation to scientific notation. Moving the
 decimal point three places to the left in $4{,}000$, and three places to the
 right in $0.004$, gets the first factor, $4$, by itself in both cases:
 
-$$4000. = 4 \times 10^3 \qquad\qquad 0.004 = 4 \times 10^{-3}$$
+$$4{,}000. = 4 \times 10^3 \qquad\qquad 0.004 = 4 \times 10^{-3}$$
 
 In both cases, the decimal was moved three places to get the first factor by
 itself.
@@ -442,7 +466,7 @@ negative:
 
 $$0.0052 = 5.2 \times 10^{-3}$$
 
-Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0052$. ✓
+Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1{,}000} = 5.2 \times 0.001 = 0.0052$. ✓
 
 {{< fillin
   question="Write in scientific notation: 0.0078."
@@ -457,7 +481,12 @@ Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0
 To convert scientific notation to decimal form, look at two numbers written
 in scientific notation and see what happens to the decimal point:
 
-$$9.12 \times 10^4 = 91{,}200 \qquad\qquad 9.12 \times 10^{-4} = 0.000912$$
+$$
+\begin{aligned}
+9.12 \times 10^4 &= 91{,}200 \\[4pt]
+9.12 \times 10^{-4} &= 0.000912
+\end{aligned}
+$$
 
 In both cases the decimal point moved $4$ places. When the exponent was
 positive, the decimal moved to the right. When the exponent was negative,
@@ -479,7 +508,7 @@ adding zeros if needed:
 
 $$6.2 \times 10^3 = 6{,}200$$
 
-Check: $10^3$ is $1000$, and $1000$ times $6.2$ is $6{,}200$. ✓
+Check: $10^3$ is $1{,}000$, and $1{,}000$ times $6.2$ is $6{,}200$. ✓
 
 {{< fillin
   question="Convert to decimal form: $1.3 \times 10^3$."
@@ -515,7 +544,13 @@ Use the Commutative Property to rearrange the factors, multiply $4$ by $2$
 and use the Product Property to multiply $10^5$ by $10^{-7}$, then change to
 decimal form by moving the decimal two places left:
 
-$$(4 \times 10^5)(2 \times 10^{-7}) = 4 \cdot 2 \cdot 10^5 \cdot 10^{-7} = 8 \times 10^{-2} = 0.08$$
+$$
+\begin{aligned}
+(4 \times 10^5)(2 \times 10^{-7}) &= 4 \cdot 2 \cdot 10^5 \cdot 10^{-7} \\[4pt]
+&= 8 \times 10^{-2} \\[4pt]
+&= 0.08
+\end{aligned}
+$$
 
 {{< fillin
   question="Multiply. Write the answer in decimal form: $(3 \times 10^6)(2 \times 10^{-8})$."
@@ -558,7 +593,7 @@ integer, used to conveniently express very large or very small numbers.
   answer="\frac{1}{64}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{64}$"
-  hint="Use $a^{-n} = \tfrac{1}{a^n}$: put $8^2$ in the denominator of a fraction with numerator $1$."
+  hint="Use $a^{-n} = \tfrac{1}{a^n}$, then evaluate the power in the denominator."
 >}}
 
 {{< fillin
@@ -566,7 +601,7 @@ integer, used to conveniently express very large or very small numbers.
   answer="\frac{4}{9}"
   answerForm="fraction"
   answerDisplay="$\tfrac{4}{9}$"
-  hint="Rewrite each term as a fraction first, then add using a common denominator of $9$."
+  hint="Rewrite each term as a fraction first, then add using the least common denominator."
 >}}
 
 {{< fillin
@@ -608,7 +643,7 @@ integer, used to conveniently express very large or very small numbers.
   answer="-\frac{21 q^5}{p^3}"
   answerForm="single-fraction"
   answerDisplay="$-\tfrac{21q^5}{p^3}$"
-  hint="Multiply the coefficients ($-3$ times $7$), then add exponents for $p$ ($-5+2$) and for $q$ ($8-3$). Move the factor with the negative exponent into the denominator."
+  hint="Multiply the coefficients, add the exponents for each variable, then rewrite any negative exponent as a reciprocal."
 >}}
 
 {{< fillin
@@ -616,13 +651,13 @@ integer, used to conveniently express very large or very small numbers.
   answer="\frac{n^{18}}{64}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{n^{18}}{64}$"
-  hint="Raise each factor to the power $-6$: the coefficient becomes $2^{-6}$, which goes in the denominator, and the exponents on $n$ multiply."
+  hint="Use the Product to a Power Property to raise each factor to the power $-6$, multiply the exponents on $n$, then rewrite any negative exponent as a reciprocal."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{m^5}{m^{-2}}$."
   answer="m^7"
-  answerForm="polynomial"
+  answerForm="single-power"
   hint="Use the Quotient Property and subtract carefully: $5 - (-2)$."
 >}}
 
@@ -649,7 +684,7 @@ integer, used to conveniently express very large or very small numbers.
   answer="6.85 \times 10^{9}"
   answerForm="scientific-notation"
   answerDisplay="$6.85 \times 10^9$"
-  hint="Count how many places the decimal point moves left to reach 6.85; that count is the exponent on $10$."
+  hint="Move the decimal point left until exactly one nonzero digit stands in front of it; the number of places it moved is the exponent on $10$."
 >}}
 
 ### Convert scientific notation to decimal form
@@ -689,7 +724,7 @@ integer, used to conveniently express very large or very small numbers.
   question="Multiply. Write the answer in decimal form: $(2.1 \times 10^{-4})(3.5 \times 10^{-2})$."
   answer="0.00000735"
   answerForm="decimal"
-  hint="Multiply $2.1$ by $3.5$ and add the exponents ($-4 + (-2)$). The coefficient $7.35$ is still between $1$ and $10$, so just shift its decimal point six places left."
+  hint="Multiply the coefficients and add the exponents on $10$, then move the decimal point of the product as many places left as the exponent says."
 >}}
 
 {{< fillin
@@ -702,4 +737,4 @@ integer, used to conveniently express very large or very small numbers.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.5: Integer Exponents and Scientific Notation](https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.5: Integer Exponents and Scientific Notation](https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, and Self Check checklist; wrote the worked examples' step tables as sentences and typeset equation chains; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

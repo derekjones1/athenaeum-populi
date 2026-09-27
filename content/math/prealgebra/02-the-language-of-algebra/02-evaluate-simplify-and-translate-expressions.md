@@ -35,9 +35,10 @@ $9x$ means $9$ times $x$. For (a): $9 \cdot 5 - 2 = 45 - 2 = 43$. For (b):
 $9(1) - 2 = 9 - 2 = 7$. Both the dot and the parentheses tell us to multiply.
 
 {{< fillin
-  question="Evaluate $9x - 2$ when $x = 5$."
-  answer="43"
-  hint="Substitute $5$ for $x$ to get $9 \cdot 5 - 2$, then follow the order of operations: multiply before you subtract."
+  question="Evaluate $8x - 3$ when $x = 2$."
+  answer="13"
+  answerForm="decimal"
+  hint="Substitute the given value for $x$, then follow the order of operations: multiply before you subtract."
 >}}
 
 When an expression contains a variable with an exponent, substitute carefully.
@@ -55,9 +56,10 @@ substitution.
 $3(10) + 4(2) - 6$. Multiply: $30 + 8 - 6$. Add and subtract left to right: $32$.
 
 {{< fillin
-  question="Evaluate $3x + 4y - 6$ when $x = 10$ and $y = 2$."
-  answer="32"
-  hint="Substitute $10$ for $x$ and $2$ for $y$: $3(10) + 4(2) - 6$. Multiply first, then add and subtract left to right."
+  question="Evaluate $2x + 5y - 4$ when $x = 11$ and $y = 3$."
+  answer="33"
+  answerForm="decimal"
+  hint="Make both substitutions, one for each variable. Multiply first, then add and subtract from left to right."
 >}}
 
 **Example.** Evaluate $2x^2 + 3x + 8$ when $x = 4$. Be careful: $2x^2$ means
@@ -66,9 +68,10 @@ $x$: $2(4)^2 + 3(4) + 8$. Simplify the exponent: $2(16) + 3(4) + 8$. Multiply:
 $32 + 12 + 8$. Add: $52$.
 
 {{< fillin
-  question="Evaluate $2x^2 + 3x + 8$ when $x = 4$."
-  answer="52"
-  hint="Substitute $4$ for each $x$, simplify the exponent first ($4^2 = 16$), then multiply, then add."
+  question="Evaluate $3x^2 + 4x + 1$ when $x = 3$."
+  answer="40"
+  answerForm="decimal"
+  hint="Substitute the value for every $x$. Simplify the exponent first, then multiply, then add. The exponent applies only to $x$, not to the coefficient."
 >}}
 
 ## Identify terms, coefficients, and like terms
@@ -98,9 +101,10 @@ $1$ (no number written means $1$), and $6$ (the coefficient of a constant is the
 constant itself).
 
 {{< fillin
-  question="What is the coefficient of the term $15x^2$?"
-  answer="15"
-  hint="The coefficient is the number in front of the variable part of the term."
+  question="Give the coefficient of each term of $9a + 13a^2 + a^3$, in the order the terms appear, separated by commas."
+  answer="9,13,1"
+  answerDisplay="$9$, $13$, $1$"
+  hint="The coefficient is the constant that multiplies the variable part of each term. A term with no number written in front of its variable still has a coefficient."
 >}}
 
 Some terms share the same variables and exponents. **Like terms** are terms that
@@ -108,11 +112,16 @@ are either constants or have the same variables raised to the same powers. Among
 the terms $5x$, $7$, $n^2$, $4$, $3x$, $9n^2$: the constants $7$ and $4$ are like
 terms; $5x$ and $3x$ are like terms; and $n^2$ and $9n^2$ are like terms.
 
-{{< fillin
-  question="The terms $5x$ and $3x$ are like terms. Combine them: what is the coefficient of $5x + 3x$?"
-  answer="8"
-  hint="Like terms combine by adding their coefficients: $5 + 3$."
+{{< multiplechoice
+  question="Identify the like terms in the list $9$, $2x^3$, $y^2$, $8x^3$, $15$, $9y$, $11y^2$."
+  answer="$9$ and $15$; $2x^3$ and $8x^3$; $y^2$ and $11y^2$"
+  hint="Apply the definition above to each pair: compare the variable parts and their exponents, not the coefficients."
 >}}
+$9$ and $15$; $2x^3$ and $8x^3$; $y^2$ and $11y^2$
+$9$ and $15$; $2x^3$ and $8x^3$; $y^2$, $9y$, and $11y^2$
+$9$, $15$, and $9y$; $2x^3$ and $8x^3$; $y^2$ and $11y^2$
+$2x^3$ and $8x^3$; $y^2$ and $11y^2$
+{{< /multiplechoice >}}
 
 ## Simplify expressions by combining like terms
 
@@ -134,11 +143,11 @@ the constants $7$ and $5$. Rearranged: $3x + 4x + 7 + 5$. Combine:
 $7x + 12$.
 
 {{< fillin
-  question="Simplify by combining like terms: $3x + 7 + 4x + 5$"
-  answer="7x + 12"
-  answerDisplay="$7x + 12$"
+  question="Simplify by combining like terms: $7x + 9 + 9x + 8$"
+  answer="16x + 17"
+  answerDisplay="$16x + 17$"
   answerForm="no-like-terms"
-  hint="Add the $x$-terms together ($3x + 4x$) and the constants together ($7 + 5$)."
+  hint="Rearrange so the $x$-terms sit together and the constants sit together, then add the coefficients within each group."
 >}}
 
 When a term has a negative coefficient, the procedure is the same — you subtract
@@ -149,11 +158,11 @@ $-x^2$, and $8x$ and $-4x$. Rearranged: $7x^2 - x^2 + 8x - 4x$. Combine:
 $6x^2 + 4x$. Since $6x^2$ and $4x$ are not like terms, this is in simplest form.
 
 {{< fillin
-  question="Simplify by combining like terms: $7x^2 + 8x - x^2 - 4x$"
-  answer="6x^2 + 4x"
-  answerDisplay="$6x^2 + 4x$"
+  question="Simplify by combining like terms: $3x^2 + 9x + x^2 + 5x$"
+  answer="4x^2 + 14x"
+  answerDisplay="$4x^2 + 14x$"
   answerForm="no-like-terms"
-  hint="Combine the $x^2$ terms ($7x^2 - x^2$) and the $x$ terms ($8x - 4x$) separately; they cannot be combined with each other."
+  hint="Combine the $x^2$ terms with each other and the $x$ terms with each other; an $x^2$ term and an $x$ term are not like terms. A term written with no number in front has coefficient $1$."
 >}}
 
 ## Translate word phrases to algebraic expressions
@@ -183,17 +192,17 @@ $9z$. For (a), "more than" means added to $y$: $y + 8$. For (b), "less than"
 means subtracted from $9z$: $9z - 7$.
 
 {{< fillin
-  question="Translate into an algebraic expression: eight more than $y$"
-  answer="y + 8"
-  answerDisplay="$y + 8$"
-  hint="'More than' means added to. Add $8$ to $y$."
+  question="Translate into an algebraic expression: eleven more than $x$"
+  answer="x + 11"
+  answerDisplay="$x + 11$"
+  hint="'More than' means 'added to': the number is added to the quantity named after 'than'."
 >}}
 
 {{< fillin
-  question="Translate into an algebraic expression: seven less than $9z$"
-  answer="9z - 7"
-  answerDisplay="$9z - 7$"
-  hint="'Less than' means subtracted from — start with $9z$ and subtract $7$. Watch the order."
+  question="Translate into an algebraic expression: fourteen less than $11a$"
+  answer="11a - 14"
+  answerDisplay="$11a - 14$"
+  hint="'Less than' means 'subtracted from': start with the quantity named after 'than' and take the number away from it. Watch the order."
 >}}
 
 Parentheses matter when a phrase combines operations.
@@ -204,10 +213,10 @@ parentheses: $5(m + n)$. In (b) we add $n$ to five times $m$: $5m + n$. The
 parentheses change the result.
 
 {{< fillin
-  question="Translate into an algebraic expression: five times the sum of $m$ and $n$"
-  answer="5(m + n)"
-  answerDisplay="$5(m + n)$"
-  hint="Add $m$ and $n$ first (that is the sum), then multiply the whole sum by $5$ — so it needs parentheses."
+  question="Translate into an algebraic expression: four times the sum of $p$ and $q$"
+  answer="4(p + q)"
+  answerDisplay="$4(p + q)$"
+  hint="'Times the sum' multiplies the whole sum, not just its first term, so the sum needs grouping symbols."
 >}}
 
 ## Key terms
@@ -226,24 +235,28 @@ terms** — simplifying by adding the coefficients of like terms.
 {{< fillin
   question="Evaluate $7x + 8$ when $x = 2$."
   answer="22"
-  hint="Substitute $2$ for $x$, then follow the order of operations — multiply before you add."
+  answerForm="decimal"
+  hint="Substitute the given value for $x$, then follow the order of operations — multiply before you add."
 >}}
 
 {{< fillin
   question="Evaluate $x^2$ when $x = 12$."
   answer="144"
-  hint="The exponent applies to the number you substitute, so $x^2$ becomes $12 \cdot 12$."
+  answerForm="decimal"
+  hint="Substitute the given value for $x$; the exponent $2$ means use that number as a factor two times."
 >}}
 
 {{< fillin
   question="Evaluate $3^x$ when $x = 3$."
   answer="27"
-  hint="Here the variable is the exponent, not the base — substituting gives $3^3$, which is $3 \cdot 3 \cdot 3$."
+  answerForm="decimal"
+  hint="Here the variable is the exponent, not the base: substitute its value, then use the base as a factor that many times."
 >}}
 
 {{< fillin
   question="Evaluate $(x - y)^2$ when $x = 10$ and $y = 7$."
   answer="9"
+  answerForm="decimal"
   hint="Grouping symbols come first: subtract inside the parentheses, then square that single result."
 >}}
 
@@ -277,7 +290,7 @@ $x^3$ and $8x$; $14$ and $5$
 {{< multiplechoice
   question="Identify all sets of like terms in $9a$, $a^2$, $16ab$, $16b^2$, $4ab$, $9b^2$."
   answer="$16ab$ and $4ab$; $16b^2$ and $9b^2$"
-  hint="Compare only the variable parts. $a$ and $a^2$ are different powers, and $ab$ is not the same variable part as $b^2$ — so two of these terms have no partner."
+  hint="Compare only the variable parts: like terms have exactly the same variables raised to exactly the same powers. A shared coefficient does not make two terms alike."
 >}}
 $9a$ and $9b^2$; $16ab$ and $16b^2$
 $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
@@ -308,7 +321,7 @@ $9a$ and $a^2$; $16ab$ and $16b^2$
   answer="22a + 1"
   answerDisplay="$22a + 1$"
   answerForm="no-like-terms"
-  hint="Add the three $a$-coefficients, then combine the constants $7 - 2 - 4$. Keep each sign with the term that follows it."
+  hint="Rearrange so the $a$-terms sit together and the constants sit together, keeping each sign with the term that follows it; then combine each group."
 >}}
 
 {{< fillin
@@ -339,16 +352,16 @@ $9a$ and $a^2$; $16ab$ and $16b^2$
   question="Translate into an algebraic expression: eight times the difference of $y$ and nine"
   answer="8(y - 9)"
   answerDisplay="$8(y - 9)$"
-  hint="Build the difference first, then multiply that whole difference by $8$ — which is why it needs parentheses."
+  hint="'Times the difference' multiplies the whole difference, not just its first term, so the difference needs grouping symbols."
 >}}
 
 {{< fillin
   question="Greg has nickels and pennies in his pocket. The number of pennies is seven less than twice the number of nickels. Let $n$ represent the number of nickels. Write an expression for the number of pennies."
   answer="2n - 7"
   answerDisplay="$2n - 7$"
-  hint="Twice the number of nickels is $2n$; 'seven less than' that amount means subtract $7$ from it."
+  hint="Write a phrase for the pennies in terms of $n$, then translate it piece by piece. 'Twice' means two times, and 'less than' means subtracted from the amount named after it."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.2: Evaluate, Simplify, and Translate Expressions](https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.2: Evaluate, Simplify, and Translate Expressions](https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, converted practice problems ("Try Its") into interactive exercises with instant feedback, with the terms-and-coefficients Try It asking for the coefficients only, and adapted selected end-of-section exercises into the interactive Practice block.</small>

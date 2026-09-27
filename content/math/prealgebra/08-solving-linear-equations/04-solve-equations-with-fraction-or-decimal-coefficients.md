@@ -85,7 +85,7 @@ $$x = -2$$
 
 Check: substitute $x = -2$ into $\tfrac{1}{8}x + \tfrac{1}{2} = \tfrac{1}{4}$:
 
-$$\tfrac{1}{8}(-2) + \tfrac{1}{2} \stackrel{?}{=} \tfrac{1}{4} \qquad -\tfrac{2}{8} + \tfrac{4}{8} \stackrel{?}{=} \tfrac{1}{4} \qquad \tfrac{2}{4} \stackrel{?}{=} \tfrac{1}{4} \qquad \tfrac{1}{4} = \tfrac{1}{4} \checkmark$$
+$$\tfrac{1}{8}(-2) + \tfrac{1}{2} \stackrel{?}{=} \tfrac{1}{4} \qquad -\tfrac{2}{8} + \tfrac{4}{8} \stackrel{?}{=} \tfrac{1}{4} \qquad \tfrac{2}{8} \stackrel{?}{=} \tfrac{1}{4} \qquad \tfrac{1}{4} = \tfrac{1}{4} \checkmark$$
 
 Notice in this example that once we cleared the equation of fractions, the
 equation was like those we solved earlier in this chapter. We changed the
@@ -104,13 +104,15 @@ Strategy for Solving Linear Equations.
 
 {{< fillin
   question="Solve: $\tfrac{1}{4}x + \tfrac{1}{2} = \tfrac{5}{8}$."
-  answer="1/2"
+  answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   hint="Multiply both sides by the LCD, $8$, to clear the fractions, then solve the resulting equation."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{1}{6}y - \tfrac{1}{3} = \tfrac{1}{6}$."
   answer="3"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, $6$, to clear the fractions, then solve the resulting equation."
 >}}
 
@@ -153,6 +155,7 @@ $$7 \stackrel{?}{=} \tfrac{1}{2}(12) + \tfrac{3}{4}(12) - \tfrac{2}{3}(12) \qqua
 {{< fillin
   question="Solve: $6 = \tfrac{1}{2}v + \tfrac{2}{5}v - \tfrac{3}{4}v$."
   answer="40"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, $20$, to clear the fractions, combine like terms, then divide."
 >}}
 
@@ -206,12 +209,14 @@ $$(-1) + \tfrac{1}{3} \stackrel{?}{=} \tfrac{1}{6}(-1) - \tfrac{1}{2} \qquad -\t
 {{< fillin
   question="Solve: $a + \tfrac{3}{4} = \tfrac{3}{8}a - \tfrac{1}{2}$."
   answer="-2"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, $8$, to clear the fractions, then collect the $a$-terms on one side."
 >}}
 
 {{< fillin
   question="Solve: $c + \tfrac{3}{4} = \tfrac{1}{2}c - \tfrac{1}{4}$."
   answer="-2"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, $4$, to clear the fractions, then collect the $c$-terms on one side."
 >}}
 
@@ -251,6 +256,7 @@ $$1 \stackrel{?}{=} \tfrac{1}{2}(4(0) + 2) \qquad 1 \stackrel{?}{=} \tfrac{1}{2}
 {{< fillin
   question="Solve: $-11 = \tfrac{1}{2}(6p + 2)$."
   answer="-4"
+  answerForm="decimal"
   hint="Distribute the $\tfrac{1}{2}$ first — this clears the fraction right away — then solve for $p$."
 >}}
 
@@ -301,6 +307,7 @@ $$\tfrac{1}{2}(9 - 5) \stackrel{?}{=} \tfrac{1}{4}(9 - 1) \qquad \tfrac{1}{2}(4)
 {{< fillin
   question="Solve: $\tfrac{1}{5}(n + 3) = \tfrac{1}{4}(n + 2)$."
   answer="2"
+  answerForm="decimal"
   hint="Distribute both sides, then multiply by the LCD, $20$, to clear the remaining fractions."
 >}}
 
@@ -353,6 +360,7 @@ $$0.8(15) - 5 \stackrel{?}{=} 7 \qquad 12 - 5 \stackrel{?}{=} 7 \qquad 7 = 7 \ch
 {{< fillin
   question="Solve: $0.6x - 1 = 11$."
   answer="20"
+  answerForm="decimal"
   hint="Multiply both sides by $10$ to clear the decimal, then solve for $x$."
 >}}
 
@@ -406,6 +414,7 @@ $$0.06(8) + 0.02 \stackrel{?}{=} 0.25(8) - 1.5 \qquad 0.48 + 0.02 \stackrel{?}{=
 {{< fillin
   question="Solve: $0.14h + 0.12 = 0.35h - 2.4$."
   answer="12"
+  answerForm="decimal"
   hint="Multiply both sides by $100$ to clear the decimals, then collect the $h$-terms on one side."
 >}}
 
@@ -454,12 +463,14 @@ $$0.25(9) + 0.05(9 + 3) \stackrel{?}{=} 2.85 \qquad 2.25 + 0.05(12) \stackrel{?}
 {{< fillin
   question="Solve: $0.25n + 0.05(n + 5) = 2.95$."
   answer="9"
+  answerForm="decimal"
   hint="Distribute the $0.05$ first, combine like terms, then multiply by $100$ to clear the decimals."
 >}}
 
 {{< fillin
   question="Solve: $0.10d + 0.05(d - 5) = 2.15$."
   answer="16"
+  answerForm="decimal"
   hint="Distribute the $0.05$ first, combine like terms, then multiply by $100$ to clear the decimals."
 >}}
 
@@ -479,13 +490,15 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the fractions: $\tfrac{1}{4}x - \tfrac{1}{2} = -\tfrac{3}{4}$."
   answer="-1"
+  answerForm="decimal"
   answerDisplay="$x = -1$"
   hint="The LCD of $4$ and $2$ is $4$. Multiply both sides by $4$, then solve the resulting equation."
 >}}
 
 {{< fillin
   question="Solve the equation by clearing the fractions: $\tfrac{1}{2}a + \tfrac{3}{8} = \tfrac{3}{4}$."
-  answer="3/4"
+  answer="\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$a = \tfrac{3}{4}$"
   hint="The LCD of $2$, $8$, and $4$ is $8$. Multiply both sides by $8$, then divide by the coefficient of $a$."
 >}}
@@ -493,13 +506,15 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the fractions: $2 = \tfrac{1}{3}x - \tfrac{1}{2}x + \tfrac{2}{3}x$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$x = 4$"
   hint="Multiply both sides by the LCD, $6$, distribute, then combine the like terms before dividing."
 >}}
 
 {{< fillin
   question="Solve the equation by clearing the fractions: $\tfrac{1}{3}w + \tfrac{5}{4} = w - \tfrac{1}{4}$."
-  answer="9/4"
+  answer="\frac{9}{4}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$w = \tfrac{9}{4}$"
   hint="Multiply both sides by the LCD, $12$, then collect the $w$-terms on one side and the constants on the other."
 >}}
@@ -507,6 +522,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation: $1 = \tfrac{1}{6}(12x - 6)$."
   answer="1"
+  answerForm="decimal"
   answerDisplay="$x = 1$"
   hint="Distribute the $\tfrac{1}{6}$ first — that clears the fraction right away — then solve for $x$."
 >}}
@@ -514,6 +530,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation: $\tfrac{1}{4}(p - 7) = \tfrac{1}{3}(p + 5)$."
   answer="-41"
+  answerForm="decimal"
   answerDisplay="$p = -41$"
   hint="Distribute on both sides, then multiply by the LCD, $12$, to clear the fractions that remain."
 >}}
@@ -523,6 +540,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the decimals: $0.6y + 3 = 9$."
   answer="10"
+  answerForm="decimal"
   answerDisplay="$y = 10$"
   hint="Since $0.6 = \tfrac{6}{10}$, multiply both sides by $10$, then solve for $y$."
 >}}
@@ -530,6 +548,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the decimals: $3.6j - 2 = 5.2$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$j = 2$"
   hint="The decimals go to the tenths place, so multiply both sides by $10$ before solving."
 >}}
@@ -537,6 +556,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the decimals: $0.4x + 0.6 = 0.5x - 1.2$."
   answer="18"
+  answerForm="decimal"
   answerDisplay="$x = 18$"
   hint="Multiply both sides by $10$, then collect the $x$-terms on one side and the constants on the other."
 >}}
@@ -544,6 +564,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the decimals: $0.23x + 1.47 = 0.37x - 1.05$."
   answer="18"
+  answerForm="decimal"
   answerDisplay="$x = 18$"
   hint="These decimals go to the hundredths place, so the LCD is $100$. Multiply both sides by $100$ first."
 >}}
@@ -551,6 +572,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the decimals: $0.05n + 0.10(n + 8) = 2.15$."
   answer="9"
+  answerForm="decimal"
   answerDisplay="$n = 9$"
   hint="Distribute the $0.10$ and combine like terms, then multiply both sides by $100$."
 >}}
@@ -558,6 +580,7 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Solve the equation by clearing the decimals: $0.05(q - 5) + 0.25q = 3.05$."
   answer="11"
+  answerForm="decimal"
   answerDisplay="$q = 11$"
   hint="Distribute the $0.05$ and combine like terms, then multiply both sides by $100$."
 >}}
@@ -565,10 +588,11 @@ the decimals' equivalent fractions removes the decimal points.
 {{< fillin
   question="Taylor has \$2.00 in dimes and pennies. The number of pennies is $2$ more than the number of dimes. Solve the equation $0.10d + 0.01(d + 2) = 2$ for $d$, the number of dimes."
   answer="18"
+  answerForm="decimal"
   answerDisplay="$d = 18$ dimes"
   hint="Distribute the $0.01$ and combine like terms, then multiply both sides by $100$ to clear the decimals."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 8.4: Solve Equations with Fraction or Decimal Coefficients](https://openstax.org/books/prealgebra-2e/pages/8-4-solve-equations-with-fraction-or-decimal-coefficients) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 8.4: Solve Equations with Fraction or Decimal Coefficients](https://openstax.org/books/prealgebra-2e/pages/8-4-solve-equations-with-fraction-or-decimal-coefficients) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the two-column worked examples as prose walkthroughs with typeset math, correcting one line of the first example's check (the source prints $\tfrac{2}{4}$ where $-\tfrac{2}{8}+\tfrac{4}{8}$ gives $\tfrac{2}{8}$); omitted the Be Prepared quiz, Media links, the Key Concepts list (it repeats the in-text procedure), Writing Exercises, and Self Check checklist; added a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing one item from Everyday Math.</small>

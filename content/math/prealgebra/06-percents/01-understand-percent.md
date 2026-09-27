@@ -178,7 +178,7 @@ $\tfrac{21}{100}$. Converting $21$ per $100$ to percent gives $21\%$.
   answer="62\%"
   answerForm="percent"
   answerDisplay="$62\%$"
-  hint="21 out of 100 becomes 21%, so 62 out of 100 becomes 62%."
+  hint="A count out of 100 is a ratio with denominator 100, and a ratio per 100 is read directly as a percent."
 >}}
 
 {{< fillin
@@ -215,15 +215,17 @@ $\tfrac{125}{100}$, or $\tfrac{5}{4}$. This is an improper fraction, and its
 value is greater than one.
 
 {{< fillin
-  question="Convert each percent to a fraction, simplified: 48%"
+  question="Convert the percent to a fraction and simplify: $48\%$"
   answer="\frac{12}{25}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{12}{25}$"
   hint="Write $\tfrac{48}{100}$, then divide the numerator and denominator by their common factors."
 >}}
 
 {{< fillin
-  question="Convert each percent to a fraction, simplified: 110%"
+  question="Convert the percent to a fraction and simplify: $110\%$"
   answer="\frac{11}{10}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{10}$"
   hint="Write $\tfrac{110}{100}$, then simplify — the result is an improper fraction greater than 1."
 >}}
@@ -243,15 +245,17 @@ with $\tfrac{100}{1}$: $\tfrac{100}{3} \div \tfrac{100}{1}$. Multiply by the
 reciprocal: $\tfrac{100}{3} \cdot \tfrac{1}{100}$. Simplify: $\tfrac{1}{3}$.
 
 {{< fillin
-  question="Convert each percent to a fraction, simplified: 64.4%"
+  question="Convert the percent to a fraction and simplify: $64.4\%$"
   answer="\frac{161}{250}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{161}{250}$"
-  hint="Write $64.4/100$, multiply numerator and denominator by 10 to clear the decimal $\tfrac{644}{1000}$, then simplify."
+  hint="Write $\tfrac{64.4}{100}$, multiply the numerator and denominator by $10$ to clear the decimal, then divide out the common factors."
 >}}
 
 {{< fillin
-  question="Convert each percent to a fraction, simplified: $66\tfrac{2}{3}\%$"
+  question="Convert the percent to a fraction and simplify: $66\tfrac{2}{3}\%$"
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Write the mixed number as an improper fraction over 100, then rewrite as fraction division and multiply by the reciprocal."
 >}}
@@ -278,14 +282,16 @@ denominator $100$ instead of removing common factors.
 (b) Write $78\%$ as $\tfrac{78}{100}$. Divide $78$ by $100$: $0.78$.
 
 {{< fillin
-  question="Convert each percent to a decimal: 3%"
+  question="Convert the percent to a decimal: $3\%$"
   answer="0.03"
+  answerForm="decimal"
   hint="Write $\tfrac{3}{100}$, then divide 3 by 100."
 >}}
 
 {{< fillin
-  question="Convert each percent to a decimal: 91%"
+  question="Convert the percent to a decimal: $91\%$"
   answer="0.91"
+  answerForm="decimal"
   hint="Write $\tfrac{91}{100}$, then divide 91 by 100."
 >}}
 
@@ -313,14 +319,16 @@ as $6.0\%$.) Notice that we may need to add zeros in front of the number
 when moving the decimal to the left.
 
 {{< fillin
-  question="Convert each percent to a decimal: 115%"
+  question="Convert the percent to a decimal: $115\%$"
   answer="1.15"
-  hint="Move the decimal point two places to the left and drop the % sign: 115.% becomes 1.15."
+  answerForm="decimal"
+  hint="Think of $115\%$ as $115.0\%$, then move the decimal point two places to the left and drop the % sign."
 >}}
 
 {{< fillin
-  question="Convert each percent to a decimal: 23.5%"
+  question="Convert the percent to a decimal: $23.5\%$"
   answer="0.235"
+  answerForm="decimal"
   hint="Move the decimal point two places to the left and drop the % sign."
 >}}
 
@@ -348,7 +356,7 @@ percent: $5\%$.
 percent: $83\%$.
 
 {{< fillin
-  question="Convert each decimal to a percent: 0.01"
+  question="Convert the decimal to a percent, including the $\%$ sign: $0.01$"
   answer="1\%"
   answerForm="percent"
   answerDisplay="1%"
@@ -356,7 +364,7 @@ percent: $83\%$.
 >}}
 
 {{< fillin
-  question="Convert each decimal to a percent: 0.17"
+  question="Convert the decimal to a percent, including the $\%$ sign: $0.17$"
   answer="17\%"
   answerForm="percent"
   answerDisplay="17%"
@@ -378,7 +386,7 @@ numerator and denominator by $10$, so that the denominator is $100$:
 $\tfrac{7.5}{100}$. Write this ratio as a percent: $7.5\%$.
 
 {{< fillin
-  question="Convert each decimal to a percent: 1.75"
+  question="Convert the decimal to a percent, including the $\%$ sign: $1.75$"
   answer="175\%"
   answerForm="percent"
   answerDisplay="175%"
@@ -386,12 +394,21 @@ $\tfrac{7.5}{100}$. Write this ratio as a percent: $7.5\%$.
 >}}
 
 {{< fillin
-  question="Convert each decimal to a percent: 0.0825"
+  question="Convert the decimal to a percent, including the $\%$ sign: $0.0825$"
   answer="8.25\%"
   answerForm="percent"
   answerDisplay="8.25%"
   hint="Move the decimal point two places to the right and add the % sign."
 >}}
+
+Let's summarize the results so we can look for a pattern.
+
+| Decimal | Percent |
+| :---: | :---: |
+| $0.05$ | $5\%$ |
+| $0.83$ | $83\%$ |
+| $1.05$ | $105\%$ |
+| $0.075$ | $7.5\%$ |
 
 Do you see the pattern? To convert a decimal to a percent, we move the
 decimal point two places to the right and then add the percent sign.
@@ -426,7 +443,7 @@ Notice that we needed to add zeros at the end of the number when moving
 the decimal two places to the right.
 
 {{< fillin
-  question="Convert each fraction or mixed number to a percent: $\tfrac{5}{8}$"
+  question="Convert the fraction to a percent, including the $\%$ sign: $\tfrac{5}{8}$"
   answer="62.5\%"
   answerForm="percent"
   answerDisplay="62.5%"
@@ -434,11 +451,11 @@ the decimal two places to the right.
 >}}
 
 {{< fillin
-  question="Convert each fraction or mixed number to a percent: $3\tfrac{2}{5}$"
+  question="Convert the mixed number to a percent, including the $\%$ sign: $3\tfrac{2}{5}$"
   answer="340\%"
   answerForm="percent"
   answerDisplay="340%"
-  hint="Write $3\tfrac{2}{5}$ as an improper fraction ($\tfrac{17}{5}$), convert to a decimal (3.4), then move the decimal point two places to the right."
+  hint="Write the mixed number as an improper fraction, divide the numerator by the denominator, then move the decimal point two places to the right."
 >}}
 
 Sometimes when changing a fraction to a decimal, the division continues
@@ -454,7 +471,7 @@ Change $\tfrac{5}{7}$ to a decimal, rounding to the nearest thousandth:
 $0.714$. Write as a percent: $71.4\%$.
 
 {{< fillin
-  question="Convert the fraction to a percent, rounded to the nearest tenth of a percent: $\tfrac{3}{7}$"
+  question="Convert the fraction to a percent, rounded to the nearest tenth of a percent, including the $\%$ sign: $\tfrac{3}{7}$"
   answer="42.9\%"
   answerForm="percent"
   answerDisplay="42.9%"
@@ -475,7 +492,7 @@ a repeating decimal. Write as a percent: $33\tfrac{1}{3}\%$. We could also
 write the percent as $33.\overline{3}\%$.
 
 {{< fillin
-  question="Convert the fraction to a percent: according to the U.S. Census Bureau, about $\tfrac{1}{9}$ of United States housing units have just 1 bedroom. Round to the nearest tenth of a percent."
+  question="Convert the fraction to a percent: according to the U.S. Census Bureau, about $\tfrac{1}{9}$ of United States housing units have just 1 bedroom. Round to the nearest tenth of a percent and include the $\%$ sign."
   answer="11.1\%"
   answerForm="percent"
   answerDisplay="11.1%"
@@ -534,28 +551,32 @@ write the percent as $33.\overline{3}\%$.
 ### Convert percents to fractions and decimals
 
 {{< fillin
-  question="Convert the percent to a fraction and simplify: 125%"
-  answer="\frac{5}{4}"
-  answerDisplay="$\tfrac{5}{4}$"
-  hint="Write $\tfrac{125}{100}$, then divide the numerator and denominator by 25 — the result is an improper fraction."
+  question="Convert the percent to a fraction and simplify: $37.5\%$"
+  answer="\frac{3}{8}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{3}{8}$"
+  hint="Write $\tfrac{37.5}{100}$, multiply the numerator and denominator by $10$ to clear the decimal, then divide out the common factors."
 >}}
 
 {{< fillin
   question="Convert the percent to a fraction and simplify: $9\tfrac{1}{2}\%$"
   answer="\frac{19}{200}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{19}{200}$"
-  hint="Rewrite the mixed number as $\tfrac{19}{2}$, put it over 100, then divide by 100 by multiplying by $\tfrac{1}{100}$."
+  hint="Write the mixed number as an improper fraction over 100, rewrite as fraction division, and multiply by the reciprocal."
 >}}
 
 {{< fillin
-  question="Convert the percent to a decimal: 63%"
+  question="Convert the percent to a decimal: $63\%$"
   answer="0.63"
+  answerForm="decimal"
   hint="Write $\tfrac{63}{100}$, then divide 63 by 100."
 >}}
 
 {{< fillin
-  question="Convert the percent to a decimal: 21.4%"
+  question="Convert the percent to a decimal: $21.4\%$"
   answer="0.214"
+  answerForm="decimal"
   hint="Move the decimal point two places to the left and drop the % sign."
 >}}
 
@@ -570,13 +591,14 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="A couple plans to have two children. The probability they will have two girls is 25%. Convert the percent to a decimal."
   answer="0.25"
+  answerForm="decimal"
   hint="Divide 25 by 100 — the decimal point moves two places to the left."
 >}}
 
 ### Convert decimals and fractions to percents
 
 {{< fillin
-  question="Convert the decimal to a percent: 3"
+  question="Convert the decimal to a percent, including the $\%$ sign: $3$"
   answer="300\%"
   answerForm="percent"
   answerDisplay="300%"
@@ -584,7 +606,7 @@ write the percent as $33.\overline{3}\%$.
 >}}
 
 {{< fillin
-  question="Convert the decimal to a percent: 0.0875"
+  question="Convert the decimal to a percent, including the $\%$ sign: $0.0875$"
   answer="8.75\%"
   answerForm="percent"
   answerDisplay="8.75%"
@@ -592,11 +614,11 @@ write the percent as $33.\overline{3}\%$.
 >}}
 
 {{< fillin
-  question="Convert the mixed number to a percent: $6\tfrac{4}{5}$"
+  question="Convert the mixed number to a percent, including the $\%$ sign: $6\tfrac{4}{5}$"
   answer="680\%"
   answerForm="percent"
   answerDisplay="680%"
-  hint="Write $6\tfrac{4}{5}$ as $\tfrac{34}{5}$, divide to get the decimal, then move the decimal point two places to the right."
+  hint="Write the mixed number as an improper fraction, divide the numerator by the denominator, then move the decimal point two places to the right."
 >}}
 
 {{< fillin
@@ -604,11 +626,11 @@ write the percent as $33.\overline{3}\%$.
   answer="41\frac{2}{3}"
   answerForm="mixed-number"
   answerDisplay="$41\tfrac{2}{3}\%$"
-  hint="Divide 5 by 12 to get the repeating decimal $0.41\overline{6}$, then write the exact value as a mixed-number percent."
+  hint="Divide 5 by 12 — the decimal repeats. Move the decimal point two places to the right and write the repeating part as a fraction, the way $\tfrac{1}{3}$ becomes $33\tfrac{1}{3}\%$."
 >}}
 
 {{< fillin
-  question="Convert the fraction to a percent: according to the National Center for Health Statistics, in 2012 about $\tfrac{7}{20}$ of American adults were obese."
+  question="Convert the fraction to a percent: according to the National Center for Health Statistics, in 2012 about $\tfrac{7}{20}$ of American adults were obese. Include the $\%$ sign."
   answer="35\%"
   answerForm="percent"
   answerDisplay="35%"
@@ -617,4 +639,4 @@ write the percent as $33.\overline{3}\%$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.1: Understand Percent](https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the percent grid as an accessible inline graphic and the percent/decimal pattern table as a markdown table; omitted the Be Prepared quiz, the playing-card photo, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.1: Understand Percent](https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the percent grid as an accessible inline graphic and the two percent/decimal pattern tables as markdown tables; omitted the Be Prepared quiz, the 77% and playing-card worked examples with their Try Its, the two decimal-point-shift figures, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking one part of each two-part ratio-and-percent Try It and asking for the 1/9 Try It rounded to the nearest tenth of a percent (the source gives the exact repeating percent); and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

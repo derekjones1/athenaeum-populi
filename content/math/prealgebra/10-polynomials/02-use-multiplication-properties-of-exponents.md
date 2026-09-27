@@ -39,7 +39,9 @@ notation**.
 In the expression $a^m$, the exponent tells us how many times we use the
 base $a$ as a factor.
 
-$$7^3 = \underbrace{7 \cdot 7 \cdot 7}_{3 \text{ factors}} \qquad\qquad (-8)^5 = \underbrace{(-8)(-8)(-8)(-8)(-8)}_{5 \text{ factors}}$$
+$$7^3 = \underbrace{7 \cdot 7 \cdot 7}_{3 \text{ factors}}$$
+
+$$(-8)^5 = \underbrace{(-8)(-8)(-8)(-8)(-8)}_{5 \text{ factors}}$$
 
 Before we begin working with variable expressions containing exponents,
 let's simplify a few expressions involving only numbers.
@@ -71,7 +73,7 @@ let's simplify a few expressions involving only numbers.
 (b) Multiply two factors: $(0.74)^2 = (0.74)(0.74) = 0.5476$.
 
 {{< fillin
-  question="Simplify: $(5/8)^2$."
+  question="Simplify: $\left(\tfrac{5}{8}\right)^2$."
   answer="\frac{25}{64}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{25}{64}$"
@@ -98,11 +100,18 @@ the $4$th power. In part (b) we raise only the $3$ to the $4$th power and
 then find the opposite.
 
 {{< fillin
-  question="Simplify: $(2/5)^3$."
+  question="Simplify: $(-2)^4$."
+  answer="16"
+  answerForm="decimal"
+  hint="The parentheses mean the negative sign is part of the base, so all four factors are $-2$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{2}{5}\right)^3$."
   answer="\frac{8}{125}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{125}$"
-  hint="Multiply the fraction by itself three times."
+  hint="Multiply three factors of the fraction: numerators together, denominators together."
 >}}
 
 {{< fillin
@@ -110,13 +119,6 @@ then find the opposite.
   answer="0.016129"
   answerForm="decimal"
   hint="Multiply $0.127$ by itself."
->}}
-
-{{< fillin
-  question="Simplify: $(-2)^4$."
-  answer="16"
-  answerForm="decimal"
-  hint="The parentheses mean the negative sign is part of the base, so all four factors are $-2$."
 >}}
 
 ## Simplify expressions using the Product Property of Exponents
@@ -150,7 +152,13 @@ Product Property for Exponents.
 
 An example with numbers helps to verify this property:
 
-$$2^2 \cdot 2^3 \overset{?}{=} 2^{2+3} \qquad\qquad 4 \cdot 8 \overset{?}{=} 2^5 \qquad\qquad 32 = 32 \checkmark$$
+$$
+\begin{array}{rcl}
+2^2 \cdot 2^3 &\overset{?}{=}& 2^{2+3} \\[4pt]
+4 \cdot 8 &\overset{?}{=}& 2^5 \\[4pt]
+32 &=& 32 \checkmark
+\end{array}
+$$
 
 **Example.** Simplify: $x^5 \cdot x^7$.
 
@@ -278,7 +286,13 @@ Power Property for Exponents.
 
 An example with numbers helps to verify this property:
 
-$$(5^2)^3 \overset{?}{=} 5^{2 \cdot 3} \qquad\qquad (25)^3 \overset{?}{=} 5^6 \qquad\qquad 15{,}625 = 15{,}625 \checkmark$$
+$$
+\begin{array}{rcl}
+(5^2)^3 &\overset{?}{=}& 5^{2 \cdot 3} \\[4pt]
+(25)^3 &\overset{?}{=}& 5^6 \\[4pt]
+15{,}625 &=& 15{,}625 \checkmark
+\end{array}
+$$
 
 **Example.** Simplify: (a) $(x^5)^7$ (b) $(3^6)^8$.
 
@@ -330,7 +344,13 @@ Power Property for Exponents.
 
 An example with numbers helps to verify this property:
 
-$$(2 \cdot 3)^2 \overset{?}{=} 2^2 \cdot 3^2 \qquad\qquad 6^2 \overset{?}{=} 4 \cdot 9 \qquad\qquad 36 = 36 \checkmark$$
+$$
+\begin{array}{rcl}
+(2 \cdot 3)^2 &\overset{?}{=}& 2^2 \cdot 3^2 \\[4pt]
+6^2 &\overset{?}{=}& 4 \cdot 9 \\[4pt]
+36 &=& 36 \checkmark
+\end{array}
+$$
 
 **Example.** Simplify: $(-11x)^2$.
 
@@ -386,11 +406,7 @@ the properties.
   **Properties of Exponents.** If $a, b$ are real numbers and $m, n$ are
   whole numbers, then
 
-  $$\text{Product Property} \qquad a^m \cdot a^n = a^{m+n}$$
-
-  $$\text{Power Property} \qquad (a^m)^n = a^{m \cdot n}$$
-
-  $$\text{Product to a Power Property} \qquad (ab)^m = a^m b^m$$
+  $$\begin{array}{ll} \text{Product Property} & a^m \cdot a^n = a^{m+n} \\[4pt] \text{Power Property} & (a^m)^n = a^{m \cdot n} \\[4pt] \text{Product to a Power Property} & (ab)^m = a^m b^m \end{array}$$
 {{< /callout >}}
 
 **Example.** Simplify: $(x^2)^6 (x^5)^4$.
@@ -441,7 +457,14 @@ Raise $6n$ to the second power, simplify, then use the Commutative Property
 to group the constants and like bases together, and finally multiply the
 constants and add the exponents:
 
-$$(6n)^2(4n^3) = 6^2 n^2 \cdot 4n^3 = 36n^2 \cdot 4n^3 = 36 \cdot 4 \cdot n^2 \cdot n^3 = 144n^5$$
+$$
+\begin{array}{rcl}
+(6n)^2(4n^3) &=& 6^2 n^2 \cdot 4n^3 \\[4pt]
+&=& 36n^2 \cdot 4n^3 \\[4pt]
+&=& 36 \cdot 4 \cdot n^2 \cdot n^3 \\[4pt]
+&=& 144n^5
+\end{array}
+$$
 
 Notice that in the first monomial, the exponent was outside the parentheses
 and it applied to both factors inside. In the second monomial, the exponent
@@ -469,7 +492,14 @@ Use the Power of a Product Property on each factor, then the Commutative
 Property to group like bases, and finally multiply the constants and add
 the exponents for each variable:
 
-$$(3p^2q)^4(2pq^2)^3 = 3^4(p^2)^4 q^4 \cdot 2^3 p^3 (q^2)^3 = 81p^8q^4 \cdot 8p^3q^6 = 81 \cdot 8 \cdot p^8 \cdot p^3 \cdot q^4 \cdot q^6 = 648p^{11}q^{10}$$
+$$
+\begin{array}{rcl}
+(3p^2q)^4(2pq^2)^3 &=& 3^4(p^2)^4 q^4 \cdot 2^3 p^3 (q^2)^3 \\[4pt]
+&=& 81p^8q^4 \cdot 8p^3q^6 \\[4pt]
+&=& 81 \cdot 8 \cdot p^8 \cdot p^3 \cdot q^4 \cdot q^6 \\[4pt]
+&=& 648p^{11}q^{10}
+\end{array}
+$$
 
 {{< fillin
   question="Simplify: $(u^3v^2)^5 (4uv^4)^3$."
@@ -575,7 +605,7 @@ variables with whole-number exponents.
 >}}
 
 {{< fillin
-  question="Simplify: $(-\tfrac{2}{3})^3$."
+  question="Simplify: $\left(-\tfrac{2}{3}\right)^3$."
   answer="-\frac{8}{27}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{8}{27}$"
@@ -707,4 +737,4 @@ variables with whole-number exponents.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.2: Use Multiplication Properties of Exponents](https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Media links, and Writing Exercises; condensed the pattern-building tables that derive each property into short prose descriptions; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.2: Use Multiplication Properties of Exponents](https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Media links, Everyday Math exercises, and Writing Exercises; condensed the pattern-building tables that derive each property, and the worked-example step tables, into short prose descriptions with typeset math; converted the practice problems ("Try Its") into interactive exercises with instant feedback, one question per part; and adapted selected end-of-section exercises into the interactive Practice block.</small>

@@ -257,15 +257,17 @@ Now let's look at the points where these lines cross the $y$-axis:
 </svg>
 </div>
   <div class="ap-figure">
-<svg role="img" aria-label="The line 3x - y = 6 crosses the x-axis at (2, 0) and the y-axis at (0, -6)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 183" width="148" height="183" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="161" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="161" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="48" y1="161" x2="48" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="161" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="161" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="161" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="161" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="161" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+<svg role="img" aria-label="The line 3x - y = 6 crosses the x-axis at (2, 0) and the y-axis at (0, -6)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 209" width="148" height="209" font-family="Helvetica, Arial, sans-serif">
+  <line x1="22" y1="187" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="35" y1="187" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="48" y1="187" x2="48" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="187" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="87" y1="187" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="100" y1="187" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="113" y1="187" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="187" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="22" y1="187" x2="126" y2="187" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="22" y1="174" x2="126" y2="174" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="22" y1="161" x2="126" y2="161" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="22" y1="148" x2="126" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="22" y1="135" x2="126" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -277,19 +279,19 @@ Now let's look at the points where these lines cross the $y$-axis:
   <line x1="22" y1="44" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <text x="74" y="14" font-size="13" fill="currentColor" text-anchor="middle">b) 3x − y = 6</text>
   <line x1="20" y1="70" x2="128" y2="70" stroke="currentColor" stroke-width="1"/>
-  <line x1="61" y1="42" x2="61" y2="163" stroke="currentColor" stroke-width="1"/>
+  <line x1="61" y1="42" x2="61" y2="189" stroke="currentColor" stroke-width="1"/>
   <polygon points="138,70 128,75 128,65" fill="currentColor"/>
   <polygon points="61,32 66,42 56,42" fill="currentColor"/>
   <polygon points="10,70 20,65 20,75" fill="currentColor"/>
-  <polygon points="61,173 56,163 66,163" fill="currentColor"/>
+  <polygon points="61,199 56,189 66,189" fill="currentColor"/>
   <text x="136" y="62" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
   <text x="69" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="94.5" y1="47.5" x2="57.8" y2="157.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="54.7,167 53.1,155.9 62.6,159.1" fill="currentColor"/>
+  <line x1="94.5" y1="47.5" x2="51.47" y2="176.6" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="48.3,186.1 46.73,175.02 56.21,178.18" fill="currentColor"/>
   <polygon points="97.7,38 99.2,49.1 89.8,45.9" fill="currentColor"/>
   <circle cx="87" cy="70" r="4" fill="currentColor"/>
   <circle cx="61" cy="148" r="4" fill="currentColor"/>
-  <text x="75.8" y="58.8" font-size="13" fill="currentColor" text-anchor="end">(2, 0)</text>
+  <text x="93" y="88" font-size="13" fill="currentColor" text-anchor="start">(2, 0)</text>
   <text x="75" y="152" font-size="13" fill="currentColor" text-anchor="start">(0, −6)</text>
 </svg>
 </div>
@@ -345,20 +347,32 @@ $(0, -6)$, so the $y$-intercept is $(0, -6)$.
 $x$-intercept is $(-5, 0)$. The graph crosses the $y$-axis at the point
 $(0, -5)$, so the $y$-intercept is $(0, -5)$.
 
+The graph of $x - y = 2$:
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from negative 10 to 10, showing a line rising from lower left to upper right through the points (−6, −8) and (8, 6).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"tickLabels":true,"tickStep":2,"lines":[{"through":[[-6,-8],[8,6]]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="Find the $x$-intercept of the graph of $x - y = 2$."
+  question="Find the $x$-intercept of the graph of $x - y = 2$ shown above. Give it as an ordered pair."
   answer="(2,0)"
   hint="The $x$-intercept is the point where the graph crosses the $x$-axis — the $y$-coordinate there is $0$."
 >}}
 
 {{< fillin
-  question="Find the $y$-intercept of the graph of $x - y = 2$."
+  question="Find the $y$-intercept of the graph of $x - y = 2$ shown above. Give it as an ordered pair."
   answer="(0,-2)"
   hint="The $y$-intercept is the point where the graph crosses the $y$-axis — the $x$-coordinate there is $0$."
 >}}
 
+The graph of $2x + 3y = 6$:
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from negative 10 to 10, showing a line falling from upper left to lower right through the points (−6, 6) and (9, −4).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"tickLabels":true,"tickStep":2,"lines":[{"through":[[-6,6],[9,-4]]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="Find the $x$-intercept of the graph of $2x + 3y = 6$."
+  question="Find the $x$-intercept of the graph of $2x + 3y = 6$ shown above. Give it as an ordered pair."
   answer="(3,0)"
   hint="Look for the point on the line whose $y$-coordinate is $0$."
 >}}
@@ -601,7 +615,7 @@ Plot the three points, check that they line up, and draw the line:
   question="Graph the line $x - 2y = 4$ using its intercepts."
   ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
   answerDisplay="$x - 2y = 4$"
-  hint="Let $y = 0$ to find the $x$-intercept and $x = 0$ to find the $y$-intercept, then plot a third point as a check, such as $(2, -1)$."
+  hint="Let $y = 0$ to find the $x$-intercept and $x = 0$ to find the $y$-intercept, then choose another value of $x$ to find a third point as a check."
 >}}
 {"answer":{"slope":0.5,"intercept":-2,"plotPoints":3},"grid":{}}
 {{< /graphplot >}}
@@ -677,13 +691,13 @@ $4x = 24$, and $x = 6$. A third solution is $(6, 4)$.
 </div>
 
 {{< fillin
-  question="Graph the line using the intercepts: $5x - 2y = 10$. What is the $x$-intercept?"
+  question="Graph the line using the intercepts: $5x - 2y = 10$. What is the $x$-intercept? Give it as an ordered pair."
   answer="(2,0)"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
 {{< fillin
-  question="Graph the line using the intercepts: $5x - 2y = 10$. What is the $y$-intercept?"
+  question="Graph the line using the intercepts: $5x - 2y = 10$. What is the $y$-intercept? Give it as an ordered pair."
   answer="(0,-5)"
   hint="Let $x = 0$ and solve for $y$."
 >}}
@@ -692,7 +706,7 @@ $4x = 24$, and $x = 6$. A third solution is $(6, 4)$.
   question="Which graph shows $5x - 2y = 10$?"
   mode="graph"
   answerIndex="1"
-  hint="Use the intercepts you just found: the $x$-intercept is $(2, 0)$ and the $y$-intercept is $(0, -5)$. Rule out any graph that crosses the axes at those two points in the wrong place, or that leans the wrong way."
+  hint="Use the two intercepts you just found: the correct graph crosses each axis exactly where they say."
 >}}
 {"ariaLabel":"A line marked at (−2, 0) and (0, −5) that falls steeply from left to right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-2.5,"intercept":-5}],"points":[{"at":[-2,0]},{"at":[0,-5]}]}
 ===OPT===
@@ -781,7 +795,7 @@ Plot the three points, check that they line up, and draw the line:
   question="Graph the line $y = 4x$ using its intercepts."
   ariaLabel="A blank coordinate grid from −14 to 14 on both axes."
   answerDisplay="$y = 4x$"
-  hint="Both intercepts are the origin, so pick more points by choosing other values of $x$, such as $x = 1$ and $x = -1$."
+  hint="Find both intercepts first. If they are the same point, choose two other values of $x$, such as $1$ and $-1$, to get more points."
 >}}
 {"answer":{"slope":4,"intercept":0,"plotPoints":3},"grid":{"xMin":-14,"xMax":14,"yMin":-14,"yMax":14}}
 {{< /graphplot >}}
@@ -851,23 +865,38 @@ crossing the $x$-axis at $2$.
 (d) $y = \tfrac{2}{5}x - 1$ has $y$ isolated on the left side of the
 equation, so it will be easiest to graph this line by plotting three points.
 
-{{< fillin
-  question="The line $3x + 2y = 12$ is of the form $Ax + By = C$, so the most convenient method is to find its intercepts. What is its $x$-intercept?"
-  answer="(4,0)"
-  hint="Both $x$ and $y$ appear on the same side with nonzero coefficients. Let $y = 0$ and solve for $x$."
+{{< multiplechoice
+  question="Identify the most convenient method to graph the line $3x + 2y = 12$."
+  answer="intercepts"
+  hint="Check the form of the equation against the three cases in the strategy above."
 >}}
+plotting points
+vertical line
+intercepts
+horizontal line
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="The equation $x = -7$ has only one variable, so its graph is a vertical line. At what $x$-value does that vertical line cross the $x$-axis?"
-  answer="-7"
-  hint="A vertical line $x = a$ crosses the $x$-axis at $a$."
+{{< multiplechoice
+  question="Identify the most convenient method to graph the line $x = 6$."
+  answer="vertical line"
+  hint="Count the variables in the equation, then match it to a case in the strategy above."
 >}}
+horizontal line
+intercepts
+plotting points
+vertical line
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="For $y = -\tfrac{3}{4}x + 1$, $y$ is already isolated, so the most convenient method is plotting points. Using $x = 4$, what is the corresponding $y$-value?"
-  answer="-2"
-  hint="Substitute $x = 4$ into $y = -\tfrac{3}{4}x + 1$ and simplify."
+{{< multiplechoice
+  question="Identify the most convenient method to graph the line $y = -\tfrac{3}{4}x + 1$."
+  answer="plotting points"
+  hint="Look at which side of the equation each variable is on, then match it to a case in the strategy above."
 >}}
+intercepts
+plotting points
+horizontal line
+vertical line
+{{< /multiplechoice >}}
 
 ## Key terms
 
@@ -882,101 +911,9 @@ $y$-axis; it occurs when $x$ is zero.
 
 Use this graph for the next two exercises.
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid with both axes numbered from negative 10 to 10, showing a line that passes through the points (0, 3) and (3, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,3],[3,0]]}]}'>
-<svg role="img" aria-label="A coordinate grid with both axes numbered from negative 10 to 10, showing a line that passes through the points (0, 3) and (3, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="40" y1="306" x2="40" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="54" y1="306" x2="54" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="68" y1="306" x2="68" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="82" y1="306" x2="82" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="96" y1="306" x2="96" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="110" y1="306" x2="110" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="124" y1="306" x2="124" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="138" y1="306" x2="138" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="152" y1="306" x2="152" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="180" y1="306" x2="180" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="194" y1="306" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="208" y1="306" x2="208" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="222" y1="306" x2="222" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="236" y1="306" x2="236" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="250" y1="306" x2="250" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="264" y1="306" x2="264" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="278" y1="306" x2="278" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="292" y1="306" x2="292" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="292" x2="306" y2="292" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="278" x2="306" y2="278" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="264" x2="306" y2="264" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="250" x2="306" y2="250" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="236" x2="306" y2="236" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="222" x2="306" y2="222" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="208" x2="306" y2="208" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="194" x2="306" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="180" x2="306" y2="180" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="152" x2="306" y2="152" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="138" x2="306" y2="138" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="124" x2="306" y2="124" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="110" x2="306" y2="110" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="96" x2="306" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="82" x2="306" y2="82" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="68" x2="306" y2="68" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="54" x2="306" y2="54" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="40" x2="306" y2="40" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="163" x2="26" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="181" font-size="11" fill="currentColor" text-anchor="middle">−10</text>
-  <line x1="54" y1="163" x2="54" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="54" y="181" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="82" y1="163" x2="82" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="82" y="181" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="110" y1="163" x2="110" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="110" y="181" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="138" y1="163" x2="138" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="138" y="181" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="194" y1="163" x2="194" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="194" y="181" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="222" y1="163" x2="222" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="222" y="181" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="250" y1="163" x2="250" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="250" y="181" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="278" y1="163" x2="278" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="278" y="181" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="306" y1="163" x2="306" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="181" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="163" y1="306" x2="169" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="310" font-size="11" fill="currentColor" text-anchor="end">−10</text>
-  <line x1="163" y1="278" x2="169" y2="278" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="282" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="163" y1="250" x2="169" y2="250" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="254" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="163" y1="222" x2="169" y2="222" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="226" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="163" y1="194" x2="169" y2="194" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="163" y1="138" x2="169" y2="138" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="142" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="163" y1="110" x2="169" y2="110" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="114" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="163" y1="82" x2="169" y2="82" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="86" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="163" y1="54" x2="169" y2="54" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="58" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="163" y1="26" x2="169" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <line x1="69.1" y1="27.1" x2="304.9" y2="262.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,270 301.4,266.5 308.5,259.4" fill="currentColor"/>
-  <polygon points="62,20 72.6,23.5 65.5,30.6" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from negative 10 to 10, showing a line falling from upper left to lower right through the points (−4, 7) and (6, −3).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,3],[3,0]]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the $x$-intercept of the line shown in the graph above. Give it as an ordered pair."
@@ -990,78 +927,22 @@ Use this graph for the next two exercises.
   hint="Read up to where the line crosses the vertical axis; the $x$-coordinate there is $0$."
 >}}
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid with both axes numbered from negative 7 to 7, showing a line that passes through the points (0, 0) and (4, 2).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,0],[4,2]]}]}'>
-<svg role="img" aria-label="A coordinate grid with both axes numbered from negative 7 to 7, showing a line that passes through the points (0, 0) and (4, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 304" width="304" height="304" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="278" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="278" x2="44" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="62" y1="278" x2="62" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="80" y1="278" x2="80" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="98" y1="278" x2="98" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="116" y1="278" x2="116" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="134" y1="278" x2="134" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="170" y1="278" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="188" y1="278" x2="188" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="278" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="224" y1="278" x2="224" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="242" y1="278" x2="242" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="260" y1="278" x2="260" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="278" y1="278" x2="278" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="278" x2="278" y2="278" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="260" x2="278" y2="260" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="242" x2="278" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="224" x2="278" y2="224" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="278" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="188" x2="278" y2="188" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="170" x2="278" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="134" x2="278" y2="134" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="116" x2="278" y2="116" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="98" x2="278" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="80" x2="278" y2="80" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="62" x2="278" y2="62" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="44" x2="278" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="278" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="152" x2="280" y2="152" stroke="currentColor" stroke-width="1"/>
-  <line x1="152" y1="24" x2="152" y2="280" stroke="currentColor" stroke-width="1"/>
-  <polygon points="290,152 280,157 280,147" fill="currentColor"/>
-  <polygon points="152,14 157,24 147,24" fill="currentColor"/>
-  <polygon points="14,152 24,147 24,157" fill="currentColor"/>
-  <polygon points="152,290 147,280 157,280" fill="currentColor"/>
-  <text x="288" y="144" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="160" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="44" y1="149" x2="44" y2="155" stroke="currentColor" stroke-width="1"/>
-  <text x="44" y="167" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="80" y1="149" x2="80" y2="155" stroke="currentColor" stroke-width="1"/>
-  <text x="80" y="167" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="116" y1="149" x2="116" y2="155" stroke="currentColor" stroke-width="1"/>
-  <text x="116" y="167" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="188" y1="149" x2="188" y2="155" stroke="currentColor" stroke-width="1"/>
-  <text x="188" y="167" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="224" y1="149" x2="224" y2="155" stroke="currentColor" stroke-width="1"/>
-  <text x="224" y="167" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="260" y1="149" x2="260" y2="155" stroke="currentColor" stroke-width="1"/>
-  <text x="260" y="167" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="149" y1="260" x2="155" y2="260" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="264" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="149" y1="224" x2="155" y2="224" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="228" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="149" y1="188" x2="155" y2="188" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="192" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="149" y1="116" x2="155" y2="116" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="120" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="149" y1="80" x2="155" y2="80" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="84" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="149" y1="44" x2="155" y2="44" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="48" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="28.9" y1="213.5" x2="275.1" y2="90.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="284,86 277.3,94.9 272.8,86" fill="currentColor"/>
-  <polygon points="20,218 26.7,209.1 31.2,218" fill="currentColor"/>
-</svg>
-</div>
+Use this graph for the next two exercises.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from negative 7 to 7, showing a line rising from lower left to upper right through the points (−6, −3) and (4, 2).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,0],[4,2]]}]}
+{{< /apfigure >}}
 
 {{< fillin
-  question="The line in the graph above crosses the $x$-axis and the $y$-axis at the same point, so it has only one intercept. Give that point as an ordered pair."
+  question="Find the $x$-intercept of the line shown in the graph above. Give it as an ordered pair."
   answer="(0,0)"
-  hint="A line through the origin meets both axes at the same place."
+  hint="Read across to where the line crosses the horizontal axis; the $y$-coordinate there is $0$."
+>}}
+
+{{< fillin
+  question="Find the $y$-intercept of the line shown in the graph above. Give it as an ordered pair."
+  answer="(0,0)"
+  hint="Read up to where the line crosses the vertical axis; the $x$-coordinate there is $0$."
 >}}
 
 ### Find the intercepts from an equation of a line
@@ -1069,13 +950,13 @@ Use this graph for the next two exercises.
 {{< fillin
   question="Find the $x$-intercept of $x - 3y = 12$. Give it as an ordered pair."
   answer="(12,0)"
-  hint="Let $y = 0$, so the equation becomes $x - 3(0) = 12$, and solve for $x$."
+  hint="Let $y = 0$ and solve for $x$."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of $x - 3y = 12$. Give it as an ordered pair."
   answer="(0,-4)"
-  hint="Let $x = 0$, so the equation becomes $-3y = 12$, and divide both sides by $-3$."
+  hint="Let $x = 0$ and solve for $y$."
 >}}
 
 {{< fillin
@@ -1087,7 +968,7 @@ Use this graph for the next two exercises.
 {{< fillin
   question="Find the $y$-intercept of $y = \tfrac{1}{5}x + 2$. Give it as an ordered pair."
   answer="(0,2)"
-  hint="Let $x = 0$; the term with $x$ drops out and $y$ is what is left."
+  hint="Let $x = 0$ and simplify the right side."
 >}}
 
 ### Graph a line using the intercepts
@@ -1096,7 +977,7 @@ Use this graph for the next two exercises.
   question="Graph the line $x + 2y = 4$ using its intercepts."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes."
   answerDisplay="$x + 2y = 4$"
-  hint="Let $y = 0$ to get the $x$-intercept $(4, 0)$, then let $x = 0$ to get the $y$-intercept, and draw the line through both points."
+  hint="Let $y = 0$ and solve for $x$ to find the $x$-intercept, let $x = 0$ and solve for $y$ to find the $y$-intercept, then find a third point as a check."
 >}}
 {"answer":{"slope":-0.5,"intercept":2,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1105,7 +986,7 @@ Use this graph for the next two exercises.
   question="Graph the line $3x - 2y = 6$ using its intercepts."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes."
   answerDisplay="$3x - 2y = 6$"
-  hint="Letting $y = 0$ gives $3x = 6$; letting $x = 0$ gives $-2y = 6$. Plot both intercepts and connect them."
+  hint="Let $y = 0$ and solve for $x$, then let $x = 0$ and solve for $y$; plot both intercepts and a third point as a check."
 >}}
 {"answer":{"slope":1.5,"intercept":-3,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1114,7 +995,7 @@ Use this graph for the next two exercises.
   question="Graph the line $y = x$ using its intercepts."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes."
   answerDisplay="$y = x$"
-  hint="Both intercepts are the origin, so pick more points by choosing other values of $x$, such as $x = 3$ and $x = -2$."
+  hint="Find both intercepts first. If they are the same point, choose two other values of $x$ to get more points."
 >}}
 {"answer":{"slope":1,"intercept":0,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1135,7 +1016,7 @@ horizontal line
 {{< multiplechoice
   question="Identify the most convenient method to graph the line $y = 5$."
   answer="horizontal line"
-  hint="The equation has only $y$ in it, so $y$ never changes."
+  hint="Count the variables in the equation first."
 >}}
 plotting points
 intercepts
@@ -1146,7 +1027,7 @@ horizontal line
 {{< multiplechoice
   question="Identify the most convenient method to graph the line $y = -3x + 4$."
   answer="plotting points"
-  hint="Here $y$ is already alone on one side, so substituting values for $x$ is quick."
+  hint="Check whether the equation has one variable or two, and where each variable sits."
 >}}
 plotting points
 horizontal line
@@ -1157,7 +1038,7 @@ vertical line
 {{< multiplechoice
   question="Identify the most convenient method to graph the line $3x - 2y = -12$."
   answer="intercepts"
-  hint="Both variables sit on the same side, in the form $Ax + By = C$."
+  hint="Check whether the equation has one variable or two, and where each variable sits."
 >}}
 vertical line
 intercepts
@@ -1167,4 +1048,4 @@ plotting points
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.3: Graphing with Intercepts](https://openstax.org/books/prealgebra-2e/pages/11-3-graphing-with-intercepts) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the labeled coordinate-grid figures as accessible inline graphics and the intercept summaries as tables; omitted the Be Prepared quiz, Self Check checklist, Manipulative Mathematics and media links, and the Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, including a graph-it-yourself exercise and a match-the-graph multiple-choice question; and adapted selected end-of-section exercises into the interactive Practice block, recreating two of their graphs as accessible inline figures and restating each two-intercept prompt as separate ordered-pair questions.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.3: Graphing with Intercepts](https://openstax.org/books/prealgebra-2e/pages/11-3-graphing-with-intercepts) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the labeled coordinate-grid figures and the two Try It graphs as accessible inline graphics and the intercept summaries as tables; corrected the summary of the $4x - 3y = 12$ example, which the source prints as $(-3, 0)$ and $(0, -4)$, to $(3, 0)$ and $(0, -4)$; omitted the Be Prepared quiz, Self Check checklist, media links, and the Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking for each intercept as its own ordered-pair question, including two graph-it-yourself exercises, a match-the-graph multiple-choice question, and one multiple-choice question per equation for choosing a graphing method; and adapted selected end-of-section exercises into the interactive Practice block, recreating two of their graphs as accessible inline figures and restating each two-intercept prompt as separate ordered-pair questions.</small>

@@ -35,7 +35,7 @@ Notice how the points line up perfectly? We connect the points with a
 straight line to get the graph of the equation $3x + 2y = 6$.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Coordinate grid. The line 3x + 2y = 6 passes through (−2, 6), (0, 3), (1, 1.5), and (2, 0), with arrows on both ends." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 292" width="332" height="292" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="Coordinate grid. The points (0, 3), (1, 1.5), (2, 0), and (4, −3) are plotted, and the line 3x + 2y = 6 is drawn through them with arrows on both ends." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 292" width="332" height="292" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -73,11 +73,11 @@ straight line to get the graph of the equation $3x + 2y = 6$.
   <line x1="114.2" y1="28.3" x2="271.1" y2="263.7" stroke="currentColor" stroke-width="1.8"/>
   <polygon points="276.7,272 267,266.5 275.3,260.9" fill="currentColor"/>
   <polygon points="108.7,20 118.4,25.5 110.1,31.1" fill="currentColor"/>
-  <circle cx="126" cy="46" r="4" fill="currentColor"/>
   <circle cx="166" cy="106" r="4" fill="currentColor"/>
   <circle cx="186" cy="136" r="4" fill="currentColor"/>
   <circle cx="206" cy="166" r="4" fill="currentColor"/>
-  <text x="114.8" y="66.2" font-size="13" fill="currentColor" text-anchor="end">(−2, 6)</text>
+  <circle cx="246" cy="226" r="4" fill="currentColor"/>
+  <text x="256" y="222" font-size="13" fill="currentColor" text-anchor="start">(4, −3)</text>
   <text x="154.8" y="126.2" font-size="13" fill="currentColor" text-anchor="end">(0, 3)</text>
   <text x="197.2" y="124.8" font-size="13" fill="currentColor" text-anchor="start">(1, 1.5)</text>
   <text x="217.2" y="154.8" font-size="13" fill="currentColor" text-anchor="start">(2, 0)</text>
@@ -187,10 +187,10 @@ ordered pair is a solution.
 
 $$
 \begin{aligned}
-(0, -3)&: & y &= 2x - 3 & -3 &\stackrel{?}{=} 2(0) - 3 & -3 &= -3\ \checkmark \\
-(3, 3)&: & y &= 2x - 3 & 3 &\stackrel{?}{=} 2(3) - 3 & 3 &= 3\ \checkmark \\
-(2, -3)&: & y &= 2x - 3 & -3 &\stackrel{?}{=} 2(2) - 3 & -3 &\neq 1 \\
-(-1, -5)&: & y &= 2x - 3 & -5 &\stackrel{?}{=} 2(-1) - 3 & -5 &= -5\ \checkmark
+(0, -3)&: & -3 &\stackrel{?}{=} 2(0) - 3 & -3 &= -3\ \checkmark \\
+(3, 3)&: & 3 &\stackrel{?}{=} 2(3) - 3 & 3 &= 3\ \checkmark \\
+(2, -3)&: & -3 &\stackrel{?}{=} 2(2) - 3 & -3 &\neq 1 \\
+(-1, -5)&: & -5 &\stackrel{?}{=} 2(-1) - 3 & -5 &= -5\ \checkmark
 \end{aligned}
 $$
 
@@ -199,15 +199,17 @@ $(2, -3)$ is not a solution. Plotting the points confirms it: $(0, -3)$,
 $(3, 3)$, and $(-1, -5)$ are on the line, and $(2, -3)$ is not on the line.
 
 {{< fillin
-  question="The graph of $y = 3x - 1$ passes through $(0, -1)$, $(2, 5)$, and $(1, 2)$. Is the ordered pair $(2, 2)$ a solution to the equation? Enter the $y$-value that $y = 3x - 1$ actually gives when $x = 2$."
+  question="To decide whether the ordered pair $(2, 2)$ is a solution to $y = 3x - 1$, find the $y$-value the equation gives when $x = 2$. Enter that $y$-value."
   answer="5"
-  hint="Substitute $x = 2$ into $y = 3x - 1$ and simplify. Compare the result to the $y$-value of $2$ given in the ordered pair."
+  answerForm="decimal"
+  hint="Substitute $x = 2$ into $y = 3x - 1$ and simplify. Then compare the result with the $y$-value in the ordered pair."
 >}}
 
 {{< fillin
-  question="Using the same equation $y = 3x - 1$, what is the $y$-value when $x = -1$? (Check whether the point $(-1, -4)$ is a solution.)"
-  answer="-4"
-  hint="Substitute $x = -1$ into $y = 3x - 1$ and simplify."
+  question="To decide whether the ordered pair $(3, -1)$ is a solution to $y = 3x - 1$, find the $y$-value the equation gives when $x = 3$. Enter that $y$-value."
+  answer="8"
+  answerForm="decimal"
+  hint="Substitute $x = 3$ into $y = 3x - 1$ and simplify. Then compare the result with the $y$-value in the ordered pair."
 >}}
 
 ## Graph a linear equation by plotting points
@@ -381,7 +383,7 @@ Plot the points, check that they line up, and draw the line.
   question="Graph the line $y = -4x$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −14 to 14 on both axes, with tick marks every 2 units."
   answerDisplay="$y = -4x$"
-  hint="The line passes through the origin $(0, 0)$. The slope $-4$ means from there, go down $4$ and right $1$ to reach a second point — and up $4$ and left $1$ for a third."
+  hint="Make a table: choose three small values for $x$, substitute each into $y = -4x$, and plot the ordered pairs you get."
 >}}
 {"answer":{"slope":-4,"intercept":0,"plotPoints":3},"grid":{"xMin":-14,"xMax":14,"yMin":-14,"yMax":14}}
 {{< /graphplot >}}
@@ -390,7 +392,7 @@ Plot the points, check that they line up, and draw the line.
   question="Graph the line $y = x$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = x$"
-  hint="Make a small table: when $x = 1$, $y = 1$; when $x = -2$, $y = -2$. The $y$-value always equals the $x$-value."
+  hint="Make a table: choose three values for $x$, substitute each into $y = x$, and plot the ordered pairs you get."
 >}}
 {"answer":{"slope":1,"intercept":0,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -422,58 +424,14 @@ $$
 
 Plot the points, check that they line up, and draw the line.
 
-The graph of $y = \tfrac{1}{3}x - 1$ is shown below. Use it to answer the
-question that follows.
-
-<div class="ap-figure">
-<svg role="img" aria-label="Coordinate grid. The line y = (1/3)x − 1 rises gently to the right, crossing the y-axis at (0, −1) and passing through (3, 0) and (−3, −2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="126" x2="308" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,126 308,131 308,121" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="29.5" y1="191.5" x2="302.5" y2="100.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,97.3 304.1,105.2 300.9,95.8" fill="currentColor"/>
-  <polygon points="20,194.7 27.9,186.8 31.1,196.2" fill="currentColor"/>
-  <circle cx="166" cy="146" r="4" fill="currentColor"/>
-  <circle cx="226" cy="126" r="4" fill="currentColor"/>
-  <text x="177.2" y="166.2" font-size="13" fill="currentColor" text-anchor="start">(0, −1)</text>
-  <text x="237.2" y="146.2" font-size="13" fill="currentColor" text-anchor="start">(3, 0)</text>
-</svg>
-</div>
-
-{{< fillin
-  question="Reading the graph of $y = \tfrac{1}{3}x - 1$ above, what is the $y$-value where the line crosses the $y$-axis (that is, when $x = 0$)?"
-  answer="-1"
-  hint="The line crosses the $y$-axis where $x = 0$. Read the $y$-coordinate of that point straight off the graph."
+{{< graphplot
+  question="Graph $y = \tfrac{1}{3}x - 1$ by placing three points on it."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$y = \tfrac{1}{3}x - 1$"
+  hint="The coefficient of $x$ is a fraction with denominator $3$, so choose $0$ and multiples of $3$ for $x$ to avoid fraction answers."
 >}}
+{"answer":{"slope":0.3333333333333333,"intercept":-1,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
 
 {{< graphplot
   question="Graph $y = \tfrac{1}{4}x + 2$ by placing three points on it."
@@ -512,7 +470,7 @@ Then plot the points, check that they line up, and draw the line.
   question="Graph $x + y = -2$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x + y = -2$"
-  hint="Solve for $y$ to get $y = -x - 2$. Substitute values like $x = 0$, $1$, and $-2$ to find three points."
+  hint="Choose three values for $x$, substitute each into $x + y = -2$, and solve for $y$."
 >}}
 {"answer":{"slope":-1,"intercept":-2,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -521,7 +479,7 @@ Then plot the points, check that they line up, and draw the line.
   question="Graph $x - y = 6$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x - y = 6$"
-  hint="Solve for $y$ to get $y = x - 6$. Substitute values like $x = 0$, $6$, and $-1$ to find three points."
+  hint="Choose three values for $x$, substitute each into $x - y = 6$, and solve for $y$ — or solve the equation for $y$ first."
 >}}
 {"answer":{"slope":1,"intercept":-6,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -580,8 +538,8 @@ where the graphs cross the $x$- and $y$-axes are the same, the graphs
 match.
 
 {{< multiplechoice
-  question="Solving $2x + y = 2$ for $y$ gives $y = -2x + 2$. Which graph shows this equation?"
-  hint="Solved for $y$, the equation is $y = -2x + 2$: it crosses the $y$-axis at $(0, 2)$ and falls as $x$ increases."
+  question="Which graph shows the equation $2x + y = 2$?"
+  hint="Solve the equation for $y$, find the points where $x = 0$ and $x = 1$, and pick the graph that passes through both."
   mode="graph"
   answerIndex="0"
 >}}
@@ -596,7 +554,7 @@ match.
   question="Graph $4x + y = -3$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$4x + y = -3$"
-  hint="Solve for $y$ to get $y = -4x - 3$. Substitute values like $x = 0$, $-1$, and $-2$ to find three points."
+  hint="Solve the equation for $y$ first, as in the example above, then substitute three values for $x$."
 >}}
 {"answer":{"slope":-4,"intercept":-3,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -696,7 +654,7 @@ through the $x$-axis at $2$.
   question="Graph the equation $x = 5$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x = 5$"
-  hint="Every point on this line has $x = 5$, no matter what $y$ is. Place three points that all sit at $x = 5$, such as $(5, 1)$, $(5, -2)$, and $(5, 3)$ — they make a vertical line."
+  hint="Make a table: the equation fixes the $x$-value of every point, so write that value in each row and choose any three values for $y$."
 >}}
 {"answer":{"x":5,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -705,7 +663,7 @@ through the $x$-axis at $2$.
   question="Graph $x = -2$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x = -2$"
-  hint="Every point on this line has $x = -2$, no matter what $y$ is. Place three points that all sit at $x = -2$, such as $(-2, 1)$, $(-2, -2)$, and $(-2, 3)$ — they make a vertical line."
+  hint="Make a table: the equation fixes the $x$-value of every point, so write that value in each row and choose any three values for $y$."
 >}}
 {"answer":{"x":-2,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -798,7 +756,7 @@ The graph is a horizontal line passing through the $y$-axis at $-1$.
   question="Graph the line $y = -4$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = -4$"
-  hint="There is no $x$ in the equation, so $y$ is always $-4$. Place three points with $y = -4$, such as $(0, -4)$, $(2, -4)$, and $(-3, -4)$ — they make a horizontal line."
+  hint="Make a table: the equation fixes the $y$-value of every point, so write that value in each row and choose any three values for $x$."
 >}}
 {"answer":{"y":-4,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -807,7 +765,7 @@ The graph is a horizontal line passing through the $y$-axis at $-1$.
   question="Graph $y = 3$ by placing three points on it."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = 3$"
-  hint="A horizontal line $y = b$ has the same $y$-coordinate, $b$, for every point on it. Place three points with $y = 3$, such as $(0, 3)$, $(2, 3)$, and $(-3, 3)$."
+  hint="Make a table: the equation fixes the $y$-value of every point, so write that value in each row and choose any three values for $x$."
 >}}
 {"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -856,23 +814,23 @@ the variable $x$, while the second does not.
 | $1$ | $-3$ | $(1, -3)$ |
 | $2$ | $-3$ | $(2, -3)$ |
 
-The graph shows both equations: the slanted line $y = -3x$ and the
+Plotting both sets of points gives the slanted line $y = -3x$ and the
 horizontal line $y = -3$.
 
 {{< graphplot
-  question="Graph $y = -4x$ and $y = -4$ in the same coordinate system. Place two points on each line."
+  question="Graph $y = -4x$ and $y = -4$ in the same rectangular coordinate system."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = -4x$ and $y = -4$"
-  hint="$y = -4x$ has both $x$ and $y$, so it is a slanted line through the origin. $y = -4$ has only $y$, so it is a horizontal line at $-4$. The two lines meet at $(1, -4)$."
+  hint="Make a table of solutions for each equation. The equation with no $x$ has the same $y$-value in every row."
 >}}
 {"answer":{"system":[{"slope":-4,"intercept":0},{"y":-4}]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
 
 {{< graphplot
-  question="Graph $y = 3$ and $y = 3x$ in the same coordinate system. Place two points on each line."
+  question="Graph $y = 3$ and $y = 3x$ in the same rectangular coordinate system."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = 3$ and $y = 3x$"
-  hint="One equation has no $x$, so its graph is horizontal; the other has an $x$, so its graph is slanted through the origin. The two lines meet at $(1, 3)$."
+  hint="Make a table of solutions for each equation. The equation with no $x$ has the same $y$-value in every row."
 >}}
 {"answer":{"system":[{"y":3},{"slope":3,"intercept":0}]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -897,8 +855,8 @@ The graph of $y = x + 2$ is shown below. For each ordered pair, decide
 whether it is a solution to the equation and whether the point is on the
 line.
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Coordinate grid from −8 to 8 on both axes. A line rises to the right, crossing the x-axis at (−2, 0) and the y-axis at (0, 2).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":16,"tickLabels":true,"tickStep":2,"lines":[{"slope":1,"intercept":2}]}'>
-<svg role="img" aria-label="Coordinate grid from −8 to 8 on both axes. A line rises to the right, crossing the x-axis at (−2, 0) and the y-axis at (0, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Coordinate grid from −8 to 8 on both axes, with tick labels every 2 units, showing the graph of y = x + 2: a straight line rising to the right.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":16,"tickLabels":true,"tickStep":2,"lines":[{"slope":1,"intercept":2}]}'>
+<svg role="img" aria-label="Coordinate grid from −8 to 8 on both axes, with tick labels every 2 units, showing the graph of y = x + 2: a straight line rising to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="282" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="42" y1="282" x2="42" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="58" y1="282" x2="58" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -989,7 +947,7 @@ no
 {{< multiplechoice
   question="For $y = x + 2$, is the ordered pair $(1, 2)$ a solution to the equation, and is the point on the line?"
   answer="no"
-  hint="Substitute $x = 1$: the equation gives $y = 3$, not $2$. A pair that fails the equation is not a solution, so the point is off the line."
+  hint="Substitute $x = 1$ into $y = x + 2$ and compare the result with the $y$-value $2$ in the pair."
 >}}
 no
 yes
@@ -1016,8 +974,8 @@ yes
 The graph of $y = \tfrac{1}{2}x - 3$ is shown below. Again decide, for each
 ordered pair, whether it is a solution and whether the point is on the line.
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Coordinate grid from −8 to 8 on both axes. A line rises gently to the right, crossing the y-axis at (0, −3) and the x-axis at (6, 0).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":16,"tickLabels":true,"tickStep":2,"lines":[{"slope":0.5,"intercept":-3}]}'>
-<svg role="img" aria-label="Coordinate grid from −8 to 8 on both axes. A line rises gently to the right, crossing the y-axis at (0, −3) and the x-axis at (6, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Coordinate grid from −8 to 8 on both axes, with tick labels every 2 units, showing the graph of y = (1/2)x − 3: a straight line rising gently to the right.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":16,"tickLabels":true,"tickStep":2,"lines":[{"slope":0.5,"intercept":-3}]}'>
+<svg role="img" aria-label="Coordinate grid from −8 to 8 on both axes, with tick labels every 2 units, showing the graph of y = (1/2)x − 3: a straight line rising gently to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="282" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="42" y1="282" x2="42" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="58" y1="282" x2="58" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -1099,7 +1057,7 @@ ordered pair, whether it is a solution and whether the point is on the line.
 {{< multiplechoice
   question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(0, -3)$ a solution to the equation, and is the point on the line?"
   answer="yes"
-  hint="Substitute $x = 0$ into $y = \tfrac{1}{2}x - 3$. The result is the $y$-intercept, and the graph crosses the $y$-axis there."
+  hint="Substitute $x = 0$ into $y = \tfrac{1}{2}x - 3$ and compare the result with the $y$-value $-3$ in the pair."
 >}}
 yes
 no
@@ -1108,7 +1066,7 @@ no
 {{< multiplechoice
   question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(2, -2)$ a solution to the equation, and is the point on the line?"
   answer="yes"
-  hint="Substitute $x = 2$: half of $2$ is $1$, then subtract $3$. Compare with the $y$-value $-2$."
+  hint="Substitute $x = 2$ into $y = \tfrac{1}{2}x - 3$ and compare the result with the $y$-value $-2$ in the pair."
 >}}
 no
 yes
@@ -1117,7 +1075,7 @@ yes
 {{< multiplechoice
   question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(-2, -4)$ a solution to the equation, and is the point on the line?"
   answer="yes"
-  hint="Substitute $x = -2$: half of $-2$ is $-1$, then subtract $3$. Compare with the $y$-value $-4$."
+  hint="Substitute $x = -2$ into $y = \tfrac{1}{2}x - 3$ and compare the result with the $y$-value $-4$ in the pair."
 >}}
 no
 yes
@@ -1126,7 +1084,7 @@ yes
 {{< multiplechoice
   question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(4, 1)$ a solution to the equation, and is the point on the line?"
   answer="no"
-  hint="Substitute $x = 4$ and simplify. The equation gives $y = -1$, so check whether that matches the $y$-value $1$ in the pair."
+  hint="Substitute $x = 4$ into $y = \tfrac{1}{2}x - 3$ and compare the result with the $y$-value $1$ in the pair."
 >}}
 no
 yes
@@ -1138,7 +1096,7 @@ yes
   question="Graph $y = 3x - 1$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = 3x - 1$"
-  hint="Make a table of solutions: when $x = 0$, $y = -1$; when $x = 1$, $y = 2$; when $x = 2$, $y = 5$. Plot those three points — the line through them is the graph."
+  hint="Make a table: choose three values for $x$, substitute each into $y = 3x - 1$, and plot the ordered pairs you get."
 >}}
 {"answer":{"slope":3,"intercept":-1,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1147,7 +1105,7 @@ yes
   question="Graph $y = \tfrac{1}{2}x + 2$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = \tfrac{1}{2}x + 2$"
-  hint="Choose $x$-values that are multiples of $2$ so the fraction divides evenly: $x = 0$ gives $y = 2$, and $x = 2$ gives $y = 3$."
+  hint="The coefficient of $x$ is a fraction with denominator $2$, so choose $0$ and multiples of $2$ for $x$ to avoid fraction answers."
 >}}
 {"answer":{"slope":0.5,"intercept":2,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1156,7 +1114,7 @@ yes
   question="Graph $x - y = 2$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x - y = 2$"
-  hint="Solve for $y$ first: $y = x - 2$. Then pick two easy $x$-values, such as $x = 0$ and $x = 2$."
+  hint="Choose three values for $x$, substitute each into $x - y = 2$, and solve for $y$ — or solve the equation for $y$ first."
 >}}
 {"answer":{"slope":1,"intercept":-2,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1165,7 +1123,7 @@ yes
   question="Graph $x + y = 6$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x + y = 6$"
-  hint="Solve for $y$ to get $y = -x + 6$, or just find the intercepts: $x = 0$ gives $y = 6$, and $y = 0$ gives $x = 6$."
+  hint="Choose three values for $x$, substitute each into $x + y = 6$, and solve for $y$."
 >}}
 {"answer":{"slope":-1,"intercept":6,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1176,7 +1134,7 @@ yes
   question="Graph $x = 4$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$x = 4$"
-  hint="Every point on this line has $x = 4$, whatever $y$ is. Place three points with the same $x$-coordinate, such as $(4, 0)$, $(4, 3)$, and $(4, -2)$."
+  hint="Make a table: the equation fixes the $x$-value of every point, so write that value in each row and choose any three values for $y$."
 >}}
 {"answer":{"x":4,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -1185,20 +1143,20 @@ yes
   question="Graph $y = -5$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = -5$"
-  hint="There is no $x$ in the equation, so $y$ is always $-5$. Place three points with $y = -5$, such as $(0, -5)$, $(2, -5)$, and $(-3, -5)$ — they make a horizontal line."
+  hint="Make a table: the equation fixes the $y$-value of every point, so write that value in each row and choose any three values for $x$."
 >}}
 {"answer":{"y":-5,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
 
 {{< graphplot
-  question="Graph $y = 2x$ and $y = 2$ in the same rectangular coordinate system. Place two points on each line."
+  question="Graph $y = 2x$ and $y = 2$ in the same rectangular coordinate system."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = 2x$ and $y = 2$"
-  hint="One equation has an $x$, so its graph is slanted through the origin; the other has no $x$, so its graph is horizontal. The two lines meet at $(1, 2)$."
+  hint="Make a table of solutions for each equation. The equation with no $x$ has the same $y$-value in every row."
 >}}
 {"answer":{"system":[{"slope":2,"intercept":0},{"y":2}]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.2: Graphing Linear Equations](https://openstax.org/books/prealgebra-2e/pages/11-2-graphing-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid line graphs as accessible inline graphics; omitted the Be Prepared quiz and Media links; adapted selected end-of-section exercises into the interactive Practice block, restating the multipart "is the ordered pair a solution / is the point on the line" items as one graded question per ordered pair; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, adapting the "graph the following" Try Its into a mix of graph-production exercises, "which graph" recognition questions, and gradable questions about specific coordinate values.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.2: Graphing Linear Equations](https://openstax.org/books/prealgebra-2e/pages/11-2-graphing-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated eight of the coordinate-grid graphs as accessible inline graphics and set the substitution checks and solution steps as displayed equations and markdown tables, omitting the other example graphs (their tables list the points) and the figure contrasting three lined-up points with three that are not; omitted the Be Prepared quiz, Media links, Key Concepts summary (its boxes appear in the body), Everyday Math, Writing Exercises, and Self Check; converted the practice problems ("Try Its") into interactive exercises with instant feedback — the "is the ordered pair a solution" Try It as two fill-ins asking for the y-value the equation gives at a pair's x-value, the 2x + y = 2 Try It as a "which graph" recognition question, and the other "graph the equation" Try Its as graph-production exercises; and adapted selected end-of-section exercises into the interactive Practice block, restating the multipart "is the ordered pair a solution / is the point on the line" items as one graded question per ordered pair.</small>

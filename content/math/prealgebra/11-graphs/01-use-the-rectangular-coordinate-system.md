@@ -39,47 +39,9 @@ Now make a vertical number line passing through the $x$-axis at $0$. Put the
 positive numbers above $0$ and the negative numbers below $0$. This vertical
 line is called the **$y$-axis**.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The rectangular coordinate system: a horizontal x-axis and a vertical y-axis crossing at the origin, both scaled from -7 to 7, forming a grid." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <text x="154" y="182" font-size="13" fill="currentColor">0</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The rectangular coordinate system: a horizontal x-axis and a vertical y-axis, each numbered from −7 to 7, crossing at 0, with grid lines through every integer.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"tickStep":1}
+{{< /apfigure >}}
 
 The $x$-axis and the $y$-axis form the rectangular coordinate system. These
 axes divide a plane into four areas, called **quadrants**. The quadrants are
@@ -149,16 +111,9 @@ line through $x = 2$. Then locate the $y$ value, $5$, on the $y$-axis, and
 sketch a horizontal line through $y = 5$. The point where these two lines
 meet is the point with coordinates $(2, 5)$.
 
-<svg viewBox="0 0 320 320" role="img" aria-label="A dashed vertical line at x = 2 and a dashed horizontal line at y = 5 meet at the point (2, 5), plotted and labeled." style="max-width: 320px; display: block; margin: 1.5rem auto">
-  <line x1="10" y1="160" x2="310" y2="160" stroke="currentColor" stroke-width="1.5" />
-  <line x1="160" y1="10" x2="160" y2="310" stroke="currentColor" stroke-width="1.5" />
-  <text x="300" y="152" font-size="14" fill="currentColor">x</text>
-  <text x="168" y="20" font-size="14" fill="currentColor">y</text>
-  <line x1="200" y1="80" x2="200" y2="160" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" />
-  <line x1="160" y1="80" x2="200" y2="80" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" />
-  <circle cx="200" cy="80" r="4" fill="currentColor" />
-  <text x="212" y="76" font-size="13" fill="currentColor">(2, 5)</text>
-</svg>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid numbered from −6 to 6 on both axes. A dashed vertical line up from 2 on the x-axis and a dashed horizontal line across from 5 on the y-axis meet at a point labeled (2, 5).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":1,"guides":[[2,5]],"points":[{"at":[2,5],"label":"(2, 5)"}]}
+{{< /apfigure >}}
 
 **Example.** Plot $(1, 3)$ and $(3, 1)$ in the same rectangular coordinate
 system.
@@ -222,7 +177,7 @@ same point as $(3, 1)$.
   question="Plot the point $(5, 2)$ on the grid."
   answerDisplay="$(5, 2)$"
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes."
-  hint="Go right to $x = 5$ first, then up to $y = 2$ — the first number is always the $x$-coordinate."
+  hint="Start at the origin: move along the $x$-axis by the first number, then up or down by the second number."
 >}}
 {"answer":{"points":[[5,2]]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
@@ -244,6 +199,17 @@ second number is the $y$-coordinate.
 is in Quadrant I. It may be helpful to write $\tfrac{5}{2}$ as the mixed
 number $2\tfrac{1}{2}$, or decimal $2.5$. Then we know that the point is
 halfway between $2$ and $3$ on the $y$-axis.
+
+{{< multiplechoice
+  question="In which quadrant does the point $\left(-4, \tfrac{3}{2}\right)$ lie?"
+  answer="Quadrant II"
+  hint="Note the sign of each coordinate: the first tells you left or right of the $y$-axis, the second above or below the $x$-axis."
+>}}
+Quadrant I
+Quadrant III
+Quadrant II
+Quadrant IV
+{{< /multiplechoice >}}
 
 We can summarize the sign patterns of the quadrants as follows.
 
@@ -297,21 +263,15 @@ is on the $x$-axis. (d) Since $x = 0$ and $y = 0$, the point whose
 coordinates are $(0, 0)$ is the origin. (e) Since $x = 0$, the point whose
 coordinates are $(0, -1)$ is on the $y$-axis.
 
-{{< fillin
-  question="A point has coordinates $(0, -3)$. Which axis does it lie on? Enter x or y."
-  answer="y"
-  hint="If the $x$-coordinate is $0$, the point lies straight up or down from the origin."
->}}
-
 {{< multiplechoice
-  question="In which quadrant does the point $(-4, 6)$ lie?"
-  answer="Quadrant II"
-  hint="A negative $x$-coordinate paired with a positive $y$-coordinate places the point to the left of the $y$-axis and above the $x$-axis."
+  question="Where does the point $(0, -3)$ lie?"
+  answer="on the $y$-axis"
+  hint="Check which coordinate is $0$, then apply the rule for points on the axes."
 >}}
-Quadrant I
-Quadrant III
-Quadrant II
-Quadrant IV
+on the $x$-axis
+on the $y$-axis
+in Quadrant III
+in Quadrant IV
 {{< /multiplechoice >}}
 
 ## Identify points on a graph
@@ -326,7 +286,7 @@ point. Remember to write the ordered pair using the correct order $(x, y)$.
 **Example.** Name the ordered pair of each point shown on the graph.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Four labeled points: A above -3 and left of 3, B below -1 and left of -3, C above 2 and right of 4, and D below 4 and right of -4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 452" width="452" height="452" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A coordinate grid from −10 to 10 on both axes, numbered every 2 units, with four labeled points: A above −3 on the x-axis and left of 3 on the y-axis, B below −1 on the x-axis and left of −3 on the y-axis, C above 2 on the x-axis and right of 4 on the y-axis, and D below 4 on the x-axis and right of −4 on the y-axis." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 452" width="452" height="452" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="426" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="46" y1="426" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="66" y1="426" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -446,129 +406,37 @@ is $4$. The point is to the right of $-4$ on the $y$-axis, so the
 $y$-coordinate of the point is $-4$. The coordinates of the point are
 $(4, -4)$.
 
-**Example.** Name the ordered pair of each point shown, where points $A, B,
-C, D$ lie on the axes: $A$ is on the $x$-axis at $x = -4$; $B$ is on the
-$y$-axis at $y = -2$; $C$ is on the $x$-axis at $x = 3$; $D$ is on the
-$y$-axis at $y = 1$.
+Use the graph below for the next two questions.
 
-Point $A$ is on the $x$-axis at $x = -4$, so the coordinates of point $A$
-are $(-4, 0)$. Point $B$ is on the $y$-axis at $y = -2$, so the coordinates
-of point $B$ are $(0, -2)$. Point $C$ is on the $x$-axis at $x = 3$, so the
-coordinates of point $C$ are $(3, 0)$. Point $D$ is on the $y$-axis at
-$y = 1$, so the coordinates of point $D$ are $(0, 1)$.
-
-<div class="ap-figure">
-<svg role="img" aria-label="Four labeled points on a grid: A above 4 and right of 1, B above -2 and right of 5, C below -5 and left of -2, and D below 3 and right of -2." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 452" width="452" height="452" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="426" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="426" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="426" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="426" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="426" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="426" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="426" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="426" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="426" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="426" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="426" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="426" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="426" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="426" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="426" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="426" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="366" y1="426" x2="366" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="386" y1="426" x2="386" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="406" y1="426" x2="406" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="426" y1="426" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="426" x2="426" y2="426" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="406" x2="426" y2="406" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="386" x2="426" y2="386" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="366" x2="426" y2="366" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="426" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="426" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="426" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="426" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="426" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="426" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="426" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="426" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="426" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="426" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="426" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="426" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="426" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="426" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="426" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="226" x2="428" y2="226" stroke="currentColor" stroke-width="1"/>
-  <line x1="226" y1="24" x2="226" y2="428" stroke="currentColor" stroke-width="1"/>
-  <polygon points="438,226 428,231 428,221" fill="currentColor"/>
-  <polygon points="226,14 231,24 221,24" fill="currentColor"/>
-  <polygon points="14,226 24,221 24,231" fill="currentColor"/>
-  <polygon points="226,438 221,428 231,428" fill="currentColor"/>
-  <text x="436" y="218" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="234" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="223" x2="26" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="241" font-size="11" fill="currentColor" text-anchor="middle">−10</text>
-  <line x1="66" y1="223" x2="66" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="241" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="106" y1="223" x2="106" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="241" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="146" y1="223" x2="146" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="241" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="186" y1="223" x2="186" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="241" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="266" y1="223" x2="266" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="241" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="306" y1="223" x2="306" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="241" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="346" y1="223" x2="346" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="241" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="386" y1="223" x2="386" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="386" y="241" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="426" y1="223" x2="426" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="426" y="241" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="223" y1="426" x2="229" y2="426" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="430" font-size="11" fill="currentColor" text-anchor="end">−10</text>
-  <line x1="223" y1="386" x2="229" y2="386" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="390" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="223" y1="346" x2="229" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="350" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="223" y1="306" x2="229" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="310" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="223" y1="266" x2="229" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="270" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="223" y1="186" x2="229" y2="186" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="190" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="223" y1="146" x2="229" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="150" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="223" y1="106" x2="229" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="110" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="223" y1="66" x2="229" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="70" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="223" y1="26" x2="229" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <circle cx="306" cy="206" r="4" fill="currentColor"/>
-  <circle cx="186" cy="126" r="4" fill="currentColor"/>
-  <circle cx="126" cy="266" r="4" fill="currentColor"/>
-  <circle cx="286" cy="266" r="4" fill="currentColor"/>
-  <text x="317.2" y="194.8" font-size="13" fill="currentColor" text-anchor="start">A</text>
-  <text x="174.8" y="114.8" font-size="13" fill="currentColor" text-anchor="end">B</text>
-  <text x="114.8" y="286.2" font-size="13" fill="currentColor" text-anchor="end">C</text>
-  <text x="297.2" y="286.2" font-size="13" fill="currentColor" text-anchor="start">D</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from −10 to 10 on both axes, numbered every 2 units, with four labeled points: A in Quadrant I, B in Quadrant II, C in Quadrant III, and D in Quadrant IV.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"points":[{"at":[5,1],"label":"A"},{"at":[-2,4],"label":"B"},{"at":[-5,-1],"label":"C"},{"at":[3,-2],"label":"D"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Read the coordinates of point $B$ from the graph above. Enter them as an ordered pair $(x, y)$."
-  answer="(-2,5)"
+  answer="(-2,4)"
+  answerDisplay="$(-2, 4)$"
   hint="Read the $x$-value straight down from $B$ to the $x$-axis, and the $y$-value straight across to the $y$-axis."
 >}}
 
 {{< fillin
   question="Read the coordinates of point $D$ from the graph above. Enter them as an ordered pair $(x, y)$."
   answer="(3,-2)"
-  hint="Point $D$ sits below the $x$-axis, so its $y$-coordinate is negative."
+  answerDisplay="$(3, -2)$"
+  hint="Read straight up or down from $D$ to the $x$-axis for the first number, then straight across to the $y$-axis for the second."
 >}}
+
+**Example.** Name the ordered pair of each point shown.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid numbered from −7 to 7 on both axes with four labeled points on the axes: A on the x-axis at −4, B on the y-axis at −2, C on the x-axis at 3, and D on the y-axis at 1.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"tickStep":1,"points":[{"at":[-4,0],"label":"A"},{"at":[0,-2],"label":"B"},{"at":[3,0],"label":"C"},{"at":[0,1],"label":"D"}]}
+{{< /apfigure >}}
+
+Point $A$ is on the $x$-axis at $x = -4$, so the coordinates of point $A$
+are $(-4, 0)$. Point $B$ is on the $y$-axis at $y = -2$, so the coordinates
+of point $B$ are $(0, -2)$. Point $C$ is on the $x$-axis at $x = 3$, so the
+coordinates of point $C$ are $(3, 0)$. Point $D$ is on the $y$-axis at
+$y = 1$, so the coordinates of point $D$ are $(0, 1)$.
 
 ## Verify solutions to an equation in two variables
 
@@ -645,14 +513,19 @@ solution.
 {{< fillin
   question="Substitute $x = 3, y = 0$ into $2x + 3y = 6$. What number does the left side, $2x + 3y$, simplify to?"
   answer="6"
-  hint="$2(3) + 3(0)$ — if it equals $6$, the ordered pair is a solution."
+  answerForm="decimal"
+  hint="Multiply each coefficient by the value of its variable, then add the two products."
 >}}
 
-{{< fillin
-  question="Determine which ordered pair is a solution to $y = 4x - 3$: $(0, 3)$ or $(1, 1)$? Enter your answer as an ordered pair $(x, y)$."
-  answer="(1,1)"
+{{< multiplechoice
+  question="Which ordered pair is a solution to $y = 4x - 3$?"
+  answer="$(1, 1)$"
   hint="Substitute each pair's $x$-value into $4x - 3$ and see which one produces the matching $y$-value."
 >}}
+$(0, 3)$
+$(1, 1)$
+$(1, 0)$
+{{< /multiplechoice >}}
 
 ## Complete a table of solutions to a linear equation
 
@@ -712,12 +585,14 @@ The results are summarized in the table.
 {{< fillin
   question="Complete this solution to $y = 3x - 1$: when $x = 2$, what is $y$?"
   answer="5"
+  answerForm="decimal"
   hint="Substitute $x = 2$ into $3x - 1$ and simplify."
 >}}
 
 {{< fillin
   question="Complete this solution to $2x - 5y = 20$: when $y = 0$, what is $x$?"
   answer="10"
+  answerForm="decimal"
   hint="Substitute $y = 0$ into $2x - 5y = 20$ and solve for $x$."
 >}}
 
@@ -803,12 +678,14 @@ true.
 {{< fillin
   question="Find a solution to $4x + y = 8$ by letting $x = 0$. What is the ordered pair $(x, y)$?"
   answer="(0,8)"
+  answerForm="decimal"
   hint="Substitute $x = 0$ into the equation and solve for $y$."
 >}}
 
 {{< fillin
   question="Find a solution to $x + 5y = 10$ by letting $y = 0$. What is the ordered pair $(x, y)$?"
   answer="(10,0)"
+  answerForm="decimal"
   hint="Substitute $y = 0$ into the equation and solve for $x$."
 >}}
 
@@ -824,7 +701,9 @@ system. **origin** — the point $(0, 0)$, where the $x$-axis and $y$-axis
 intersect. **linear equation** — an equation of the form $Ax + By = C$,
 where $A$ and $B$ are not both zero. **solution to a linear equation in
 two variables** — an ordered pair $(x, y)$ that makes the equation a true
-statement when substituted in for $x$ and $y$.
+statement when substituted in for $x$ and $y$. **$x$-axis** — the
+horizontal axis in a rectangular coordinate system. **$y$-axis** — the
+vertical axis in a rectangular coordinate system.
 
 ## Practice
 
@@ -833,7 +712,7 @@ statement when substituted in for $x$ and $y$.
 {{< multiplechoice
   question="In which quadrant does the point $(3, -2)$ lie?"
   answer="Quadrant IV"
-  hint="The $x$-coordinate is positive and the $y$-coordinate is negative — go right, then down."
+  hint="Use the sign of each coordinate: the $x$-coordinate says left or right of the $y$-axis, the $y$-coordinate says above or below the $x$-axis."
 >}}
 Quadrant II
 Quadrant I
@@ -844,7 +723,7 @@ Quadrant IV
 {{< multiplechoice
   question="In which quadrant does the point $(-3, 2)$ lie?"
   answer="Quadrant II"
-  hint="A negative $x$-coordinate moves left of the $y$-axis; a positive $y$-coordinate moves above the $x$-axis."
+  hint="Match the signs of the two coordinates to the sign pattern of each quadrant."
 >}}
 Quadrant II
 Quadrant I
@@ -855,7 +734,7 @@ Quadrant IV
 {{< multiplechoice
   question="In which quadrant does the point $(-3, -2)$ lie?"
   answer="Quadrant III"
-  hint="Both coordinates are negative, so the point is left of and below the origin."
+  hint="Decide which side of the $y$-axis the $x$-coordinate puts the point on, then which side of the $x$-axis the $y$-coordinate puts it on."
 >}}
 Quadrant IV
 Quadrant III
@@ -866,7 +745,7 @@ Quadrant I
 {{< multiplechoice
   question="In which quadrant does the point $(3, 2)$ lie?"
   answer="Quadrant I"
-  hint="Both coordinates are positive, so the point is right of and above the origin."
+  hint="Quadrants are numbered counterclockwise from the upper right; find the region the signs of the coordinates point to."
 >}}
 Quadrant I
 Quadrant III
@@ -876,8 +755,8 @@ Quadrant II
 
 ### Identify points on a graph
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -6 to 6. Point C is plotted at (1, -3) and point D is plotted at (4, 3).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"points":[{"at":[1,-3],"label":"C"},{"at":[4,3],"label":"D"}]}'>
-<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -6 to 6. Point C is plotted at (1, -3) and point D is plotted at (4, 3)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from −6 to 6, numbered every 2 units, with two labeled points: C in Quadrant IV and D in Quadrant I.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"points":[{"at":[1,-3],"label":"C"},{"at":[4,3],"label":"D"}]}'>
+<svg role="img" aria-label="A rectangular coordinate plane with both axes running from −6 to 6, numbered every 2 units, with two labeled points: C in Quadrant IV and D in Quadrant I." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -944,19 +823,19 @@ Quadrant II
 {{< fillin
   question="Name the ordered pair of point $C$ shown on the graph. Write it in the form $(x, y)$."
   answer="(1,-3)"
-  answerDisplay="$C(1, -3)$"
-  hint="Read across to the $x$-axis first, then down to the $y$-axis — the $x$-coordinate always comes first."
+  answerDisplay="$(1, -3)$"
+  hint="Follow a vertical grid line from $C$ to the $x$-axis for the $x$-coordinate, then a horizontal grid line to the $y$-axis for the $y$-coordinate."
 >}}
 
 {{< fillin
   question="Name the ordered pair of point $D$ shown on the graph. Write it in the form $(x, y)$."
   answer="(4,3)"
-  answerDisplay="$D(4, 3)$"
-  hint="Count right from the origin for $x$, then up for $y$."
+  answerDisplay="$(4, 3)$"
+  hint="Read the $x$-axis number directly above or below $D$ first, then the $y$-axis number directly beside it."
 >}}
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -6 to 6. Point S is plotted at (-2, 4) and point T is plotted at (-4, -2).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"points":[{"at":[-2,4],"label":"S"},{"at":[-4,-2],"label":"T"}]}'>
-<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -6 to 6. Point S is plotted at (-2, 4) and point T is plotted at (-4, -2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from −6 to 6, numbered every 2 units, with two labeled points: S in Quadrant II and T in Quadrant III.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"points":[{"at":[-2,4],"label":"S"},{"at":[-4,-2],"label":"T"}]}'>
+<svg role="img" aria-label="A rectangular coordinate plane with both axes running from −6 to 6, numbered every 2 units, with two labeled points: S in Quadrant II and T in Quadrant III." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -1023,15 +902,15 @@ Quadrant II
 {{< fillin
   question="Name the ordered pair of point $S$ shown on the graph. Write it in the form $(x, y)$."
   answer="(-2,4)"
-  answerDisplay="$S(-2, 4)$"
-  hint="The point sits left of the $y$-axis, so its $x$-coordinate is negative."
+  answerDisplay="$(-2, 4)$"
+  hint="Follow a vertical grid line from $S$ to the $x$-axis for the $x$-coordinate, then a horizontal grid line to the $y$-axis for the $y$-coordinate."
 >}}
 
 {{< fillin
   question="Name the ordered pair of point $T$ shown on the graph. Write it in the form $(x, y)$."
   answer="(-4,-2)"
-  answerDisplay="$T(-4, -2)$"
-  hint="Both coordinates are negative here — count left for $x$, then down for $y$."
+  answerDisplay="$(-4, -2)$"
+  hint="Read the $x$-axis number directly above or below $T$ first, then the $y$-axis number directly beside it, keeping each sign."
 >}}
 
 ### Verify solutions to an equation in two variables
@@ -1075,7 +954,7 @@ yes
 {{< multiplechoice
   question="Is $(-6, -4)$ a solution to $y = \tfrac{1}{2}x - 1$?"
   answer="yes"
-  hint="Half of $-6$ is $-3$; now subtract $1$ and compare with the given $y$-value."
+  hint="Substitute $x = -6$ into the right side, take half first, then subtract $1$ and compare with the given $y$-value."
 >}}
 yes
 no
@@ -1095,22 +974,25 @@ no
 {{< fillin
   question="Complete the table for $y = 2x - 4$: find the solution when $x = -1$. Write it in the form $(x, y)$."
   answer="(-1,-6)"
+  answerForm="decimal"
   answerDisplay="$(-1, -6)$"
-  hint="Substitute $-1$ for $x$: $2(-1) - 4$."
+  hint="Substitute the given $x$-value into $2x - 4$: multiply first, then subtract."
 >}}
 
 {{< fillin
   question="Complete the table for $y = 2x - 4$: find the solution when $x = 0$. Write it in the form $(x, y)$."
   answer="(0,-4)"
+  answerForm="decimal"
   answerDisplay="$(0, -4)$"
-  hint="With $x = 0$ the first term drops out, leaving just the constant."
+  hint="Substitute $x = 0$ into $2x - 4$ and simplify."
 >}}
 
 {{< fillin
   question="Complete the table for $y = 2x - 4$: find the solution when $x = 2$. Write it in the form $(x, y)$."
   answer="(2,0)"
+  answerForm="decimal"
   answerDisplay="$(2, 0)$"
-  hint="Substitute $2$ for $x$: $2(2) - 4$."
+  hint="Substitute the given $x$-value into the equation and simplify to find $y$."
 >}}
 
 ### Find solutions to linear equations in two variables
@@ -1118,24 +1000,27 @@ no
 {{< fillin
   question="Find a solution to $y = -x + 5$ by letting $x = -2$. Write it in the form $(x, y)$."
   answer="(-2,7)"
+  answerForm="decimal"
   answerDisplay="$(-2, 7)$"
-  hint="The opposite of $-2$ is $2$, so add $5$ to that."
+  hint="Substitute the given $x$-value into $-x + 5$; the opposite of a negative number is positive."
 >}}
 
 {{< fillin
   question="Find a solution to $y = -x + 5$ by letting $x = 0$. Write it in the form $(x, y)$."
   answer="(0,5)"
+  answerForm="decimal"
   answerDisplay="$(0, 5)$"
-  hint="Choosing $x = 0$ is usually the easiest value — the variable term disappears."
+  hint="Substitute $x = 0$ into the equation and simplify to find $y$."
 >}}
 
 {{< fillin
   question="Find a solution to $y = -x + 5$ by letting $x = 3$. Write it in the form $(x, y)$."
   answer="(3,2)"
+  answerForm="decimal"
   answerDisplay="$(3, 2)$"
-  hint="Substitute $3$ for $x$: $-3 + 5$."
+  hint="Replace $x$ with the given value, take its opposite, then add $5$."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.1: Use the Rectangular Coordinate System](https://openstax.org/books/prealgebra-2e/pages/11-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid and quadrant figures as accessible inline graphics and the solution tables as markdown tables; omitted the Be Prepared quiz, campus-map figure, Media links, Everyday Math, Writing Exercises, and Self Check blocks; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, recreating two exercise graphs as accessible inline graphics, expanding multipart items part by part, and restating the "plot each point" and "which ordered pairs are solutions" prompts as gradable quadrant and yes/no questions.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.1: Use the Rectangular Coordinate System](https://openstax.org/books/prealgebra-2e/pages/11-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid and quadrant figures as accessible inline graphics and the solution tables as markdown tables; printed the third point of the quadrant example as (2, −1), the point its solution and figure use (the source problem lists (2, −3)); omitted the Be Prepared quiz, the campus-map figure with its example and Try Its, Media links, the Key Concepts summary (its sign table and axis rules appear in the body), Everyday Math, Writing Exercises, and Self Check blocks; added a key-terms entry for the rectangular coordinate system; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, recreating two exercise graphs as accessible inline graphics, expanding multipart items part by part, and restating the "plot each point" and "which ordered pairs are solutions" prompts as gradable quadrant and yes/no questions.</small>

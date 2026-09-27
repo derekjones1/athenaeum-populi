@@ -54,20 +54,19 @@ For example, let's find the prime factorization of $36$. We can start with
 any factor pair, such as $12$ and $3$. We write $12$ and $3$ below $36$ with
 branches connecting them.
 
-<svg viewBox="0 0 240 110" role="img" aria-label="A factor tree. 36 branches into 12 and 3. The 3 is circled because it is prime." style="max-width: 240px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 240 110" role="img" aria-label="A factor tree. 36 branches into 12 and 3. Neither factor is circled yet." style="max-width: 240px; display: block; margin: 1.5rem auto">
   <text x="120" y="25" text-anchor="middle" font-size="16" fill="currentColor">36</text>
   <line x1="110" y1="32" x2="72" y2="60" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="32" x2="168" y2="60" stroke="currentColor" stroke-width="1.5" />
   <text x="66" y="80" text-anchor="middle" font-size="16" fill="currentColor">12</text>
   <text x="174" y="80" text-anchor="middle" font-size="16" fill="currentColor">3</text>
-  <circle cx="174" cy="74" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 The factor $3$ is prime, so we circle it. The factor $12$ is composite, so we
 need to find its factors. Let's use $3$ and $4$. We write these factors on
 the tree under the $12$.
 
-<svg viewBox="0 0 240 160" role="img" aria-label="The factor tree grows. 36 branches into 12 and 3; the 3 is circled. 12 branches into 3 and 4; the new 3 is circled." style="max-width: 240px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 240 160" role="img" aria-label="The factor tree grows. 36 branches into 12 and 3; the 3 is circled. 12 branches into 3 and 4; neither new factor is circled yet." style="max-width: 240px; display: block; margin: 1.5rem auto">
   <text x="120" y="25" text-anchor="middle" font-size="16" fill="currentColor">36</text>
   <line x1="110" y1="32" x2="72" y2="60" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="32" x2="168" y2="60" stroke="currentColor" stroke-width="1.5" />
@@ -77,7 +76,6 @@ the tree under the $12$.
   <line x1="56" y1="87" x2="30" y2="112" stroke="currentColor" stroke-width="1.5" />
   <line x1="76" y1="87" x2="102" y2="112" stroke="currentColor" stroke-width="1.5" />
   <text x="26" y="132" text-anchor="middle" font-size="16" fill="currentColor">3</text>
-  <circle cx="26" cy="126" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="106" y="132" text-anchor="middle" font-size="16" fill="currentColor">4</text>
 </svg>
 
@@ -169,26 +167,26 @@ a prime.
 <svg viewBox="0 0 340 210" role="img" aria-label="The completed factor tree. 48 branches into 2 and 24; the 2 is circled. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <text x="160" y="25" text-anchor="middle" font-size="16" fill="currentColor">48</text>
   <line x1="150" y1="32" x2="106" y2="60" stroke="currentColor" stroke-width="1.5" />
-  <line x1="170" y1="32" x2="214" y2="60" stroke="currentColor" stroke-width="1.5" />
+  <line x1="170" y1="32" x2="218" y2="60" stroke="currentColor" stroke-width="1.5" />
   <text x="100" y="80" text-anchor="middle" font-size="16" fill="currentColor">2</text>
   <circle cx="100" cy="74" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="220" y="80" text-anchor="middle" font-size="16" fill="currentColor">24</text>
-  <line x1="205" y1="87" x2="177" y2="112" stroke="currentColor" stroke-width="1.5" />
-  <line x1="230" y1="87" x2="258" y2="112" stroke="currentColor" stroke-width="1.5" />
+  <text x="225" y="80" text-anchor="middle" font-size="16" fill="currentColor">24</text>
+  <line x1="210" y1="87" x2="182" y2="112" stroke="currentColor" stroke-width="1.5" />
+  <line x1="240" y1="87" x2="268" y2="112" stroke="currentColor" stroke-width="1.5" />
   <text x="170" y="132" text-anchor="middle" font-size="16" fill="currentColor">4</text>
-  <text x="264" y="132" text-anchor="middle" font-size="16" fill="currentColor">6</text>
+  <text x="280" y="132" text-anchor="middle" font-size="16" fill="currentColor">6</text>
   <line x1="160" y1="139" x2="142" y2="162" stroke="currentColor" stroke-width="1.5" />
   <line x1="180" y1="139" x2="198" y2="162" stroke="currentColor" stroke-width="1.5" />
   <text x="138" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
   <circle cx="138" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="202" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
   <circle cx="202" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <line x1="254" y1="139" x2="236" y2="162" stroke="currentColor" stroke-width="1.5" />
-  <line x1="274" y1="139" x2="292" y2="162" stroke="currentColor" stroke-width="1.5" />
-  <text x="232" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
-  <circle cx="232" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="296" y="182" text-anchor="middle" font-size="16" fill="currentColor">3</text>
-  <circle cx="296" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="270" y1="139" x2="252" y2="162" stroke="currentColor" stroke-width="1.5" />
+  <line x1="290" y1="139" x2="308" y2="162" stroke="currentColor" stroke-width="1.5" />
+  <text x="248" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="248" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="312" y="182" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+  <circle cx="312" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 We write the product of the circled numbers, then write it in exponential
@@ -200,7 +198,7 @@ Check this on your own by multiplying all the factors together. The result
 should be $48$.
 
 {{< fillin
-  question="Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
+  question="Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^2 \cdot 13$."
   answer="2^4 \cdot 5"
   answerForm="prime-product"
   answerDisplay="$2^4 \cdot 5$"
@@ -261,7 +259,7 @@ $$84 = 2 \cdot 2 \cdot 3 \cdot 7 = 2^2 \cdot 3 \cdot 7$$
   answer="2 \cdot 3^2 \cdot 7"
   answerForm="prime-product"
   answerDisplay="$2 \cdot 3^2 \cdot 7$"
-  hint="Try the factor pair $2$ and $63$, then keep factoring the composite branch ($63 = 9 \times 7$) until every branch ends in a prime."
+  hint="Try the factor pair $2$ and $63$, then keep factoring the composite branch until every branch ends in a prime."
 >}}
 
 {{< fillin
@@ -269,7 +267,7 @@ $$84 = 2 \cdot 2 \cdot 3 \cdot 7 = 2^2 \cdot 3 \cdot 7$$
   answer="2 \cdot 3 \cdot 7^2"
   answerForm="prime-product"
   answerDisplay="$2 \cdot 3 \cdot 7^2$"
-  hint="294 is even, so start by dividing off a factor of $2$. The remaining factor is $147 = 3 \times 49$."
+  hint="294 is even, so start with a factor pair that uses $2$; then use the divisibility tests to split the other branch, and keep going until every branch ends in a prime."
 >}}
 
 ### Prime factorization using the ladder method
@@ -340,7 +338,7 @@ $$120 = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 5 = 2^3 \cdot 3 \cdot 5$$
 Check this yourself by multiplying the factors. The result should be $120$.
 
 {{< fillin
-  question="Find the prime factorization of 80 using the ladder method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
+  question="Find the prime factorization of 80 using the ladder method. Enter the answer in exponential form, e.g. $2^2 \cdot 13$."
   answer="2^4 \cdot 5"
   answerForm="prime-product"
   answerDisplay="$2^4 \cdot 5$"
@@ -378,7 +376,7 @@ you use doesn't change the answer.
   answer="2 \cdot 3^2 \cdot 7"
   answerForm="prime-product"
   answerDisplay="$2 \cdot 3^2 \cdot 7$"
-  hint="Divide by $2$ once, then by $3$ until it no longer divides evenly, then check whether the quotient is prime."
+  hint="Divide by the smallest prime that divides evenly, repeat while it still does, then move up to the next prime; stop when the quotient is prime."
 >}}
 
 {{< fillin
@@ -386,7 +384,7 @@ you use doesn't change the answer.
   answer="2 \cdot 3 \cdot 7^2"
   answerForm="prime-product"
   answerDisplay="$2 \cdot 3 \cdot 7^2$"
-  hint="Divide by $2$ once, then by $3$ once, then check whether the remaining quotient is prime."
+  hint="Divide by each prime in turn, starting with $2$, for as long as it divides evenly; stop when the quotient is prime."
 >}}
 
 ## Find the least common multiple (LCM) of two numbers
@@ -443,12 +441,14 @@ not the *least* common multiple.
 {{< fillin
   question="Find the LCM of 9 and 12 by listing multiples."
   answer="36"
+  answerForm="decimal"
   hint="List multiples of 9 and of 12 until a number appears in both lists."
 >}}
 
 {{< fillin
   question="Find the LCM of 18 and 24 by listing multiples."
   answer="72"
+  answerForm="decimal"
   hint="List multiples of 18 and of 24 until the smallest common one appears."
 >}}
 
@@ -509,13 +509,15 @@ The LCM of $15$ and $18$ is $90$.
 {{< fillin
   question="Find the LCM of 15 and 20 using the prime factors method."
   answer="60"
-  hint="$15 = 3 \cdot 5$ and $20 = 2 \cdot 2 \cdot 5$. Match the common $5$ in one column, then bring down every column."
+  answerForm="decimal"
+  hint="Factor $15$ and $20$ into primes, line up the prime they share in one column, then multiply one prime from every column."
 >}}
 
 {{< fillin
   question="Find the LCM of 15 and 35 using the prime factors method."
   answer="105"
-  hint="$15 = 3 \cdot 5$ and $35 = 5 \cdot 7$. Match the common $5$ in one column, then bring down every column."
+  answerForm="decimal"
+  hint="Factor $15$ and $35$ into primes, line up the prime they share in one column, then multiply one prime from every column."
 >}}
 
 **Example.** Find the LCM of $50$ and $100$ using the prime factors method.
@@ -538,13 +540,15 @@ The LCM of $50$ and $100$ is $100$.
 {{< fillin
   question="Find the LCM of 55 and 88 using the prime factors method."
   answer="440"
-  hint="$55 = 5 \cdot 11$ and $88 = 2 \cdot 2 \cdot 2 \cdot 11$. Match the common $11$ in one column, then bring down every column."
+  answerForm="decimal"
+  hint="Factor $55$ and $88$ into primes, line up the prime they share in one column, then multiply one prime from every column."
 >}}
 
 {{< fillin
   question="Find the LCM of 60 and 72 using the prime factors method."
   answer="360"
-  hint="$60 = 2 \cdot 2 \cdot 3 \cdot 5$ and $72 = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3$. Match the common primes column by column, then bring every column down."
+  answerForm="decimal"
+  hint="Factor $60$ and $72$ into primes, line up every prime they share in its own column, then multiply one prime from every column."
 >}}
 
 ## Key terms
@@ -574,7 +578,7 @@ two given numbers.
   answer="2^4 \cdot 3^3"
   answerForm="prime-product"
   answerDisplay="$2 \cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \cdot 3 = 2^4 \cdot 3^3$"
-  hint="Divide by $2$ until it no longer divides evenly, then keep dividing by $3$ until the quotient is prime."
+  hint="Divide by $2$ until it no longer divides evenly, then move to the next prime that divides the quotient; stop when the quotient is prime."
 >}}
 
 {{< fillin
@@ -590,21 +594,24 @@ two given numbers.
 {{< fillin
   question="Find the LCM of 6 and 15 by listing multiples."
   answer="30"
+  answerForm="decimal"
   hint="List multiples of 6 and of 15 until a number appears in both lists; the first one you reach is the LCM."
 >}}
 
 {{< fillin
   question="Find the LCM of 70 and 84 using the prime factors method."
   answer="420"
-  hint="$70 = 2 \cdot 5 \cdot 7$ and $84 = 2 \cdot 2 \cdot 3 \cdot 7$. Match the common $2$ and $7$ in their own columns, then bring down every column."
+  answerForm="decimal"
+  hint="Factor $70$ and $84$ into primes, line up every prime they share in its own column, then multiply one prime from every column."
 >}}
 
 {{< fillin
-  question="Hot dogs are sold in packages of ten, but hot dog buns come in packs of eight. What is the smallest number of hot dogs and buns that can be purchased if you want to have the same number of hot dogs and buns?"
+  question="Hot dogs are sold in packages of ten, but hot dog buns come in packs of eight. What is the smallest number of hot dogs and buns that can be purchased if you want to have the same number of hot dogs and buns? Enter the number of hot dogs (the same as the number of buns)."
   answer="40"
+  answerForm="decimal"
   hint="The smallest count that both package sizes divide into evenly is the LCM of 10 and 8."
 >}}
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.5: Prime Factorization and the Least Common Multiple](https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factor-tree diagrams as accessible inline graphics, the ladder (stacked division) diagrams as typeset math, and the prime-factor column alignments as tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, stating each prime-factorization answer in exponential form alongside the answer key's product of primes.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.5: Prime Factorization and the Least Common Multiple](https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factor-tree diagrams as accessible inline graphics, the ladder (stacked division) diagrams as typeset math, and the prime-factor column alignments as tables; fixed two wording slips in the source prose ("the least LCM of 10 and 25" and "the same result would have been the same"); omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, stating each prime-factorization answer in exponential form alongside the answer key's product of primes, and with the hot-dog exercise's parenthetical hint moved into its hint and its question asking for the number of hot dogs (the same as the number of buns).</small>
