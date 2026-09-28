@@ -862,7 +862,12 @@ const formCases = [
   ['\\frac{\\sqrt{12r^3}}{\\sqrt{6r}}', 'r\\sqrt{2}', 'simplified-radical', 'form'],
   // The guarded path must not touch what already worked: a correct answer
   // with its radicals in the NUMERATOR takes the unguarded ladder as before.
-  ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
+  // (Its value is still right; since the Elementary Algebra 8–9 re-review the
+  // uncombined `\sqrt{10}\sqrt{y}` below the bar is `form` — the Product
+  // Property left unapplied — and the combined `\sqrt{10y}` is the correct
+  // writing.)
+  ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{10y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
   ['\\frac{\\sqrt{2}(\\sqrt{x}+3)}{x-3}', '\\frac{\\sqrt{2}(\\sqrt{x}+\\sqrt{3})}{x-3}', 'simplified-radical', 'incorrect'],
   // Sampling also decides where the engine merely false-negatived, so a
   // pasted higher-roots prompt is now recognized as value-equal — `form`,
@@ -1099,7 +1104,9 @@ const formCases = [
   ['3x+y=10', 'y=(10-3x)/4', 'solved:y', 'incorrect'], // wrong value stays wrong, not 'form'
   ['x=5y-10', 'y=\\frac{x+10}{5}', 'solved:y', 'form'], // solved for x is not solved for y
   ['t=\\frac{d}{r}', 't=\\frac{d}{r}', 'solved:t', 'correct'],
-  ['d=rt', 't=\\frac{d}{r}', 'solved:t', 'incorrect'], // not proportional — value check already rejects
+  // the same relation with the denominator cleared (Elementary Algebra 8.9) —
+  // value-equal, so the retyped formula is refused by the shape, not the value
+  ['d=rt', 't=\\frac{d}{r}', 'solved:t', 'form'],
   ['-\\frac{1}{20}(x-20)^2+20', '-\\frac{1}{20}(x-20)^2+20', 'vertex-form', 'correct'],
   // a half-completed square is not vertex form, and neither is the expansion
   // of a vertex-from-a-point answer
@@ -1307,9 +1314,11 @@ const formCases = [
   ['6 \\sqrt{2} i', '6 \\sqrt{2} i', 'simplified-radical', 'correct'],
   ['-\\sqrt{1}', '-1', 'decimal', 'form'],
   ['\\tfrac{\\sqrt[3]{90}}{6}', '\\tfrac{\\sqrt[3]{90}}{6}', 'simplified-radical', 'correct'],
-  // …while the numeral-only scoping keeps the corpus's own worked shapes
-  // correct: a variable radicand never counts toward the product pair
-  ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
+  // …and a variable radicand counts toward the product pair too, below a
+  // fraction bar as well as above it (Elementary Algebra 8–9 re-review): the
+  // Product Property combines `\sqrt{10}\sqrt{y}` into `\sqrt{10y}`
+  ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{10y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
   // no answerForm — grading is exactly what it was
   ['0.5', '\\frac{1}{2}', undefined, 'correct'],
   ['\\frac{2}{4}', '\\frac{1}{2}', undefined, 'correct'],
@@ -2003,6 +2012,237 @@ const remainderTerms = [
 test('term fractions are reduced under distributed and no-like-terms', async (t) => {
   for (const [typed, key, form, expected] of remainderTerms) {
     await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// The Elementary Algebra 8–9 re-review (September 27, 2026). Each `form` row
+// is value-equal to its key and was graded `correct` before; each `correct`
+// row is the simplified writing that must keep passing.
+const radicalWriting = [
+  // `simplified-radical`: a fraction's numeric content is reduced
+  ['\\frac{6\\sqrt{2}}{4}', '\\frac{3\\sqrt{2}}{2}', 'simplified-radical', 'form'],
+  ['\\frac{3\\sqrt{2}}{2}', '\\frac{3\\sqrt{2}}{2}', 'simplified-radical', 'correct'],
+  ['\\frac{2\\sqrt{3}}{6}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['\\frac{4+2\\sqrt{5}}{2}', '2+\\sqrt{5}', 'simplified-radical', 'form'], // the printed prompt
+  ['2+\\sqrt{5}', '2+\\sqrt{5}', 'simplified-radical', 'correct'],
+  ['\\frac{4-2\\sqrt{3}}{8}', '\\frac{2-\\sqrt{3}}{4}', 'simplified-radical', 'form'],
+  ['\\frac{2-\\sqrt{3}}{4}', '\\frac{2-\\sqrt{3}}{4}', 'simplified-radical', 'correct'],
+  ['\\frac{6(5-\\sqrt{5})}{40}', '\\frac{3(5-\\sqrt{5})}{20}', 'simplified-radical', 'form'],
+  ['\\frac{3(5-\\sqrt{5})}{20}', '\\frac{3(5-\\sqrt{5})}{20}', 'simplified-radical', 'correct'],
+  ['\\frac{15-3\\sqrt{5}}{20}', '\\frac{3(5-\\sqrt{5})}{20}', 'simplified-radical', 'correct'],
+  ['\\frac{6}{4}\\sqrt{2}', '\\frac{3\\sqrt{2}}{2}', 'simplified-radical', 'form'],
+  ['\\frac{3}{2}\\sqrt{2}', '\\frac{3\\sqrt{2}}{2}', 'simplified-radical', 'correct'],
+  ['\\frac{2\\sqrt[3]{4}}{4}', '\\frac{\\sqrt[3]{4}}{2}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt[3]{4}}{2}', '\\frac{\\sqrt[3]{4}}{2}', 'simplified-radical', 'correct'],
+  // …a sign-only difference is not a defect
+  ['-\\frac{\\sqrt{3}}{3}', '\\frac{-\\sqrt{3}}{3}', 'simplified-radical', 'correct'],
+  ['\\frac{-\\sqrt{3}}{3}', '-\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'correct'],
+  // …and a fraction over 1 is the division by nothing left written
+  ['\\frac{5(2+\\sqrt{3})}{1}', '10+5\\sqrt{3}', 'simplified-radical', 'form'],
+  ['\\frac{10+5\\sqrt{3}}{1}', '10+5\\sqrt{3}', 'simplified-radical', 'form'],
+  ['5(2+\\sqrt{3})', '10+5\\sqrt{3}', 'simplified-radical', 'correct'],
+  ['10+5\\sqrt{3}', '10+5\\sqrt{3}', 'simplified-radical', 'correct'],
+  // an uncombined radical product below the bar, and a numeral product
+  ['\\frac{\\sqrt{3}\\sqrt{5}}{5}', '\\frac{\\sqrt{15}}{5}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{15}}{5}', '\\frac{\\sqrt{15}}{5}', 'simplified-radical', 'correct'],
+  ['2\\sqrt{2}\\cdot3', '6\\sqrt{2}', 'simplified-radical', 'form'],
+  ['2(3\\sqrt{2})', '6\\sqrt{2}', 'simplified-radical', 'form'],
+  ['6\\sqrt{2}', '6\\sqrt{2}', 'simplified-radical', 'correct'],
+  // the monomial and bare-number keys of 9.1–9.8: written arithmetic, an
+  // unmerged variable, a power of a power, like numbers left uncombined
+  ['3\\cdot5', '15', 'simplified-radical', 'form'],
+  ['3+4', '7', 'simplified-radical', 'form'],
+  ['4\\cdot2x', '8x', 'simplified-radical', 'form'],
+  ['z^3z^3', 'z^6', 'simplified-radical', 'form'],
+  ['z^3\\cdot z^3', 'z^6', 'simplified-radical', 'form'],
+  ['(z^3)^2', 'z^6', 'simplified-radical', 'form'],
+  ['z^6', 'z^6', 'simplified-radical', 'correct'],
+  ['15', '15', 'simplified-radical', 'correct'],
+  ['1+2\\sqrt{2}+2', '3+2\\sqrt{2}', 'simplified-radical', 'form'],
+  ['\\frac{2\\sqrt{3}+\\sqrt{3}}{4}', '\\frac{3\\sqrt{3}}{4}', 'simplified-radical', 'form'],
+  ['2xy\\sqrt[3]{y^2}', '2xy\\sqrt[3]{y^2}', 'simplified-radical', 'correct'],
+  ['x\\sqrt{x}', 'x\\sqrt{x}', 'simplified-radical', 'correct'],
+  // higher roots and variables under the radical (probed, unchanged)
+  ['\\sqrt[3]{16}', '2\\sqrt[3]{2}', 'simplified-radical', 'form'],
+  ['2\\sqrt[3]{2}', '2\\sqrt[3]{2}', 'simplified-radical', 'correct'],
+  ['\\sqrt{50x^2}', '5x\\sqrt{2}', 'simplified-radical', 'form'],
+  ['5x\\sqrt{2}', '5x\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['\\sqrt{\\frac{3}{4}}', '\\frac{\\sqrt{3}}{2}', 'simplified-radical', 'form'],
+  // `no-like-terms`: a constant and a radical term are unlike
+  ['3+2\\sqrt{2}', '3+2\\sqrt{2}', 'no-like-terms', 'correct'],
+  ['3+2\\sqrt{2}', '3+2\\sqrt{2}', 'simplified-radical no-like-terms', 'correct'],
+  ['3+2\\sqrt{2}', '3+2\\sqrt{2}', 'simplified-radical distributed no-like-terms', 'correct'],
+  ['3+2\\sqrt{2}', '3+2\\sqrt{2}', 'expanded simplified-radical no-like-terms', 'correct'],
+  ['1+2\\sqrt{2}+2', '3+2\\sqrt{2}', 'no-like-terms', 'form'],
+  ['1+2\\sqrt{2}+2', '3+2\\sqrt{2}', 'expanded simplified-radical no-like-terms', 'form'],
+  ['3+\\sqrt{2}+\\sqrt{2}', '3+2\\sqrt{2}', 'no-like-terms', 'form'],
+  ['2\\sqrt{3}+5\\sqrt{3}', '7\\sqrt{3}', 'no-like-terms', 'form'],
+  ['2\\sqrt[3]{2}+5\\sqrt[3]{2}', '7\\sqrt[3]{2}', 'no-like-terms', 'form'],
+  ['\\frac{\\sqrt{2}}{2}+\\frac{3\\sqrt{2}}{4}', '\\frac{5\\sqrt{2}}{4}', 'no-like-terms', 'form'],
+  ['2x\\sqrt{3}+\\sqrt{3}x', '3x\\sqrt{3}', 'no-like-terms', 'form'],
+  ['3+2\\sqrt{2}+5\\sqrt{3}+x\\sqrt{2}', '3+2\\sqrt{2}+5\\sqrt{3}+x\\sqrt{2}', 'no-like-terms', 'correct'],
+  ['x\\sqrt{2}+3x', 'x\\sqrt{2}+3x', 'no-like-terms', 'correct'],
+  ['\\sqrt{2}+\\sqrt[3]{2}', '\\sqrt{2}+\\sqrt[3]{2}', 'no-like-terms', 'correct'],
+  ['2+3i', '2+3i', 'no-like-terms', 'correct'],
+  // `distributed` never confused the two
+  ['3+2\\sqrt{2}', '3+2\\sqrt{2}', 'distributed', 'correct'],
+  // `rational-exponent`: the exponent fraction is in lowest terms
+  ['x^{\\frac{2}{4}}', 'x^{\\frac12}', 'rational-exponent', 'form'],
+  ['x^{2/4}', 'x^{\\frac12}', 'rational-exponent', 'form'],
+  ['x^{-\\frac{2}{4}}', 'x^{-\\frac12}', 'rational-exponent', 'form'],
+  ['x^{\\frac{6}{4}}', 'x^{\\frac32}', 'rational-exponent', 'form'],
+  ['x^{\\frac{1}{2}}', 'x^{\\frac12}', 'rational-exponent', 'correct'],
+  ['x^{\\frac{3}{2}}', 'x^{\\frac32}', 'rational-exponent', 'correct'],
+];
+test('radical writing: reduced fractions, combined products, unlike constants, reduced exponents', async (t) => {
+  for (const [typed, key, form, expected] of radicalWriting) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// The pinned engine's N() drops a square root over a symbol (`\sqrt{x}` →
+// `x`), and isEqual numericizes first — so a response that dropped the
+// radical graded `correct` (Elementary Algebra 9 re-review, September 27,
+// 2026). Radicals over symbols are decided by sampling alone.
+const droppedRadicals = [
+  ['9x', '9\\sqrt{x}', 'simplified-radical', 'incorrect'],
+  ['9x', '9\\sqrt{x}', undefined, 'incorrect'],
+  ['x', '\\sqrt{x}', undefined, 'incorrect'],
+  ['x', 'x^{\\frac12}', undefined, 'incorrect'],
+  ['\\sqrt{x}+1', 'x+1', undefined, 'incorrect'],
+  ['-p^2\\sqrt{3}', '-p\\sqrt{3p}', 'simplified-radical', 'incorrect'],
+  ['x^2', 'x', undefined, 'incorrect'],
+  ['2x', 'x', undefined, 'incorrect'],
+  ['x^3', '\\sqrt{x}', undefined, 'incorrect'],
+  ['x,1', '\\sqrt{x},1', undefined, 'incorrect'],
+  ['(x,1)', '(\\sqrt{x},1)', undefined, 'incorrect'],
+  ['y=x', 'y=\\sqrt{x}', undefined, 'incorrect'],
+  // the chapter assumes variables are nonnegative, so these are the same value
+  ['\\sqrt{x^2}', 'x', undefined, 'correct'],
+  ['|x|', '\\sqrt{x^2}', undefined, 'correct'],
+  ['-x', '\\sqrt{x^2}', undefined, 'incorrect'],
+  // …and every true radical identity still grades
+  ['-p\\sqrt{3p}', '-p\\sqrt{3p}', 'simplified-radical', 'correct'],
+  ['\\sqrt{x}', 'x^{1/2}', undefined, 'correct'],
+  ['\\sqrt{64x^2}', '8x', undefined, 'correct'],
+  ['\\sqrt{12x}', '2\\sqrt{3x}', undefined, 'correct'],
+  ['\\sqrt{x}\\sqrt{y}', '\\sqrt{xy}', undefined, 'correct'],
+  ['x\\sqrt{x}', 'x^{3/2}', undefined, 'correct'],
+  ['\\frac{\\sqrt{x}}{x}', '\\frac{1}{\\sqrt{x}}', undefined, 'correct'],
+  ['5x\\sqrt{2}', '\\sqrt{50x^2}', undefined, 'correct'],
+];
+test('a response that drops a radical over a variable is not its value', async (t) => {
+  for (const [typed, key, form, expected] of droppedRadicals) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// Clearing a variable denominator restates the same relation (Elementary
+// Algebra 8.9's inverse-variation keys) — but only a CONSTANT multiple of the
+// cleared form is the same relation: an extra variable factor admits new
+// solutions.
+const clearedDenominators = [
+  ['xy=16', 'y=\\frac{16}{x}', 'correct'],
+  ['vw=3', 'w=\\frac{3}{v}', 'correct'],
+  ['y=\\frac{16}{x}', 'xy=16', 'correct'],
+  ['2xy=32', 'y=\\frac{16}{x}', 'correct'],
+  ['yx^2=4', 'y=\\frac{4}{x^2}', 'correct'],
+  ['10y=3x', 'y=\\frac{3}{10}x', 'correct'],
+  ['xy=17', 'y=\\frac{16}{x}', 'incorrect'],
+  ['x^2y=16', 'y=\\frac{16}{x}', 'incorrect'],
+  ['x^2y=16x', 'y=\\frac{16}{x}', 'incorrect'],
+  ['xy=4', 'y=\\frac{4}{x^2}', 'incorrect'],
+  ['x^2-3x=0', 'x-3=0', 'incorrect'],
+  ['xy=x^2+x', 'y=x+1', 'incorrect'],
+];
+test('an equation with its variable denominator cleared is the same relation', async (t) => {
+  for (const [typed, key, expected] of clearedDenominators) {
+    await t.test(`${typed}  vs  ${key}`, () => {
+      assert.equal(checkAnswer(typed, key), expected);
+    });
+  }
+});
+
+// Each half of a single fraction is finished: one product, or a sum of plain
+// terms — never a sum still holding a grouped product (Elementary Algebra 8.5).
+const finishedHalves = [
+  ['\\frac{2(x-5)}{3(x+5)+1}', '\\frac{2(x-5)}{3x+16}', 'single-fraction reduced-fraction', 'form'],
+  ['\\frac{2(x-5)}{3x+16}', '\\frac{2(x-5)}{3x+16}', 'single-fraction reduced-fraction', 'correct'],
+  ['\\frac{2x-10}{3x+16}', '\\frac{2(x-5)}{3x+16}', 'single-fraction reduced-fraction', 'correct'],
+  ['\\frac{(x+1)^2+3}{x}', '\\frac{x^2+2x+4}{x}', 'single-fraction', 'form'],
+  ['\\frac{3x-6}{5x+10-3}', '\\frac{3x-6}{5x+7}', 'single-fraction', 'form'],
+  ['\\frac{(x+1)(x+2)}{x-3}', '\\frac{(x+1)(x+2)}{x-3}', 'single-fraction', 'correct'],
+];
+test('each half of a single fraction is finished', async (t) => {
+  for (const [typed, key, form, expected] of finishedHalves) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// An exponent fraction is finished under every simplify-shape token: in lowest
+// terms, and never a whole number wearing a fraction bar (Elementary Algebra
+// 9.8, September 27, 2026).
+const exponentFractions = [
+  ['x^{6/3}', 'x^2', 'single-term', 'form'],
+  ['x^{\\frac{6}{3}}', 'x^2', 'single-term', 'form'],
+  ['x^{2/1}', 'x^2', 'single-term', 'form'],
+  ['x^{2/4}', 'x^{1/2}', 'single-term', 'form'],
+  ['x^2', 'x^2', 'single-term', 'correct'],
+  ['8x^{\\frac{3}{2}}', '8x^{\\frac{3}{2}}', 'single-term', 'correct'],
+  ['\\frac{1}{z^{6/3}}', '\\frac{1}{z^2}', 'single-fraction', 'form'],
+  ['\\frac{1}{z^{\\frac{6}{3}}}', '\\frac{1}{z^2}', 'single-fraction', 'form'],
+  ['\\frac{x^{2/4}}{y}', '\\frac{x^{1/2}}{y}', 'single-fraction', 'form'],
+  ['\\frac{1}{z^2}', '\\frac{1}{z^2}', 'single-fraction', 'correct'],
+  ['\\frac{x^{1/2}}{y^{3/4}}', '\\frac{x^{1/2}}{y^{3/4}}', 'single-fraction', 'correct'],
+  ['\\frac{1}{z^{6/3}}', '\\frac{1}{z^2}', 'single-fraction reduced-fraction', 'form'],
+  ['\\frac{1}{z^{6/3}}', '\\frac{1}{z^2}', 'reduced-fraction', 'form'],
+  ['x^{6/3}', 'x^2', 'single-power', 'form'],
+  ['x^{6/3}', 'x^2', 'rational-exponent', 'form'],
+];
+test('an exponent fraction is reduced under the simplify-shape tokens', async (t) => {
+  for (const [typed, key, form, expected] of exponentFractions) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// Higher roots (Elementary Algebra 9.7, September 27, 2026): a key with an
+// absolute value or an odd root over a variable puts negative values in
+// scope, so a dropped or invented absolute value is a wrong value — while the
+// square-root sections keep their nonnegative convention. A perfect power
+// left in either half of a fraction radicand still comes out.
+const higherRoots = [
+  ['2y\\sqrt[4]{3y^2}', '2|y|\\sqrt[4]{3y^2}', 'simplified-radical', 'incorrect'],
+  ['2|y|\\sqrt[4]{3y^2}', '2|y|\\sqrt[4]{3y^2}', 'simplified-radical', 'correct'],
+  ['\\sqrt[4]{48y^6}', '2|y|\\sqrt[4]{3y^2}', 'simplified-radical', 'form'],
+  ['3|p^3|\\sqrt[3]{2p}', '3p^3\\sqrt[3]{2p}', 'simplified-radical', 'incorrect'],
+  ['3p^3\\sqrt[3]{2p}', '3p^3\\sqrt[3]{2p}', 'simplified-radical', 'correct'],
+  ['\\sqrt[3]{54p^{10}}', '3p^3\\sqrt[3]{2p}', 'simplified-radical', 'form'],
+  ['|z|\\sqrt[3]{z^2}', 'z\\sqrt[3]{z^2}', 'simplified-radical', 'incorrect'],
+  ['\\tfrac{3|c^3|\\sqrt[3]{4c}}{d^2}', '\\tfrac{3c^3\\sqrt[3]{4c}}{d^2}', 'simplified-radical', 'incorrect'],
+  ['\\tfrac{3c^3\\sqrt[3]{4c}}{d^2}', '\\tfrac{3c^3\\sqrt[3]{4c}}{d^2}', 'simplified-radical', 'correct'],
+  ['2u\\sqrt[6]{\\frac{2u}{v^3}}', '2|u|\\sqrt[6]{\\tfrac{2u}{v^3}}', 'simplified-radical', 'incorrect'],
+  ['|u|\\sqrt[6]{\\frac{128u}{v^3}}', '2|u|\\sqrt[6]{\\tfrac{2u}{v^3}}', 'simplified-radical', 'form'],
+  ['\\sqrt[6]{\\tfrac{128u^7}{v^3}}', '2|u|\\sqrt[6]{\\tfrac{2u}{v^3}}', 'simplified-radical', 'form'],
+  ['2|u|\\sqrt[6]{\\tfrac{2u}{v^3}}', '2|u|\\sqrt[6]{\\tfrac{2u}{v^3}}', 'simplified-radical', 'correct'],
+  // the square-root convention does not flip
+  ['\\sqrt{x^2}', 'x', undefined, 'correct'],
+  ['x', '\\sqrt{x^2}', undefined, 'correct'],
+  ['5x\\sqrt{2}', '\\sqrt{50x^2}', undefined, 'correct'],
+  ['x^{1/3}', '\\sqrt[3]{x}', undefined, 'correct'],
+];
+test('higher roots: negative values in scope, fraction radicands read per half', async (t) => {
+  for (const [typed, key, form, expected] of higherRoots) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
       assert.equal(checkAnswer(typed, key, { form }), expected);
     });
   }

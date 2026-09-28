@@ -137,6 +137,23 @@ Since the Elementary Algebra chapter 7 re-review (September 27, 2026):
 completely" ask whose key is complete takes `factored-completely` — every
 polynomial factor primitive over the integers and the key's factor count
 reached — and a GCF-only ask keeps `factored`.
+Since the Elementary Algebra chapters 8–9 re-review (September 27, 2026):
+a response that drops a radical over a variable (`9x` for `9\sqrt{x}`) grades
+`incorrect` — radicals over variables are decided by sampling at positive
+points, never by the engine's `isEqual`, and also at negative points when
+the key writes an absolute value or an odd root over a variable, so a
+dropped or invented `|y|` in a 9.7-style key grades `incorrect` — a perfect
+power left in a fraction radicand's half fails, `simplified-radical` refuses
+numeric work left written at any level (`\frac{6\sqrt2}{4}`,
+`\frac{4+2\sqrt5}{2}`, a fraction over 1, `\frac{\sqrt3\sqrt5}{5}`,
+`2\sqrt2\cdot3`, `3\cdot5`, `3+4`, `z^3z^3`, `(z^3)^2`), `no-like-terms`
+reads a constant and a radical term as unlike (`3+2\sqrt2` passes,
+`1+2\sqrt2+2` fails), an exponent fraction left unreduced or whole
+(`x^{2/4}`, `x^{6/3}`, `\frac{1}{z^{6/3}}`) fails `rational-exponent`,
+`single-term` and `single-fraction`, a `single-fraction` half that is a sum
+still holding a grouped product (`\frac{2(x-5)}{3(x+5)+1}`) fails, and an
+equation with a variable denominator cleared (`xy=16` for `y=\frac{16}{x}`)
+grades `correct` — so a "solve the formula" key keeps its `solved:` form.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
@@ -211,6 +228,10 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      `factored`. On September 27, 2026, 292 factoring asks declared
      `factored` (Elementary Algebra ch7 and KC 6–10, Intermediate Algebra
      ch6 and KC 1–6, Prealgebra ch10).
+     A radical sum key (Multiply, Add, Subtract, or Simplify — `3+2\sqrt2`,
+     `2\sqrt3-3\sqrt6`) takes `no-like-terms` with `simplified-radical`
+     (`expanded simplified-radical no-like-terms` for a Multiply); run the
+     grader on the uncombined line (`1+2\sqrt2+2`) and expect `form`.
    - **grader reach:** run the grader on the forms a learner would
      naturally type (with and without digit-grouping commas, `x=5` vs
      `5`, an equivalent fraction or decimal, a unit word) and on a common

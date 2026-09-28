@@ -675,7 +675,62 @@ function numericallyEquivalent(studentExpr, answerExpr) {
     }
     agreed += 1;
   }
-  return agreed >= SAMPLES_REQUIRED;
+  if (agreed < SAMPLES_REQUIRED) return false;
+  return !negativesInScope(answerExpr) || agreesAtNegativePoints(vars, studentExpr, answerExpr);
+}
+
+const containsOperator = (expr, operator) => expr.operator === operator
+  || (expr.ops ?? []).some((op) => containsOperator(op, operator));
+const oddRootOverSymbol = (expr) => (expr.operator === 'Root' && expr.ops[1]?.isNumberLiteral
+  && Math.abs(expr.ops[1].re % 2) === 1 && containsSymbol(expr.ops[0]))
+  || (expr.ops ?? []).some(oddRootOverSymbol);
+
+/**
+ * Does the KEY put negative variable values in scope? The square-root
+ * sections assume every variable is nonnegative ("we will assume that each
+ * variable in a square-root expression represents a non-negative number"),
+ * so `\sqrt{x^2}` IS `x` there and the positive sample points decide. The
+ * higher-roots section lifts that: "We must use the absolute value signs when
+ * we take an even root of an expression with a variable in the radical", and
+ * an odd root is real for every variable value. So a key that writes an
+ * absolute value, or an odd root over a variable, is also sampled at
+ * negative points — `2y\sqrt[4]{3y^2}` against `2|y|\sqrt[4]{3y^2}` and
+ * `3|p^3|\sqrt[3]{2p}` against `3p^3\sqrt[3]{2p}` graded `correct` on the
+ * positive points alone (Elementary Algebra 9.7, September 27, 2026). Read
+ * off the key only, so a learner's `|x|` against a square-root key `x` keeps
+ * the nonnegative convention.
+ */
+function negativesInScope(answerExpr) {
+  return containsOperator(answerExpr, 'Abs') || oddRootOverSymbol(answerExpr);
+}
+
+/**
+ * The negative-point half of numericallyEquivalent(): every point with at
+ * least one variable negative where BOTH sides are real must agree; a point
+ * where either side is non-real (an even root of a negative) is outside the
+ * common domain and skipped. No minimum count — the positive points already
+ * proved agreement; these can only refute it.
+ */
+function agreesAtNegativePoints(vars, studentExpr, answerExpr) {
+  const patterns = 2 ** Math.min(vars.length, 3);
+  for (let i = 0; i < SAMPLE_POINTS.length; i += 1) {
+    for (let signs = 1; signs < patterns; signs += 1) {
+      const assignment = {};
+      vars.forEach((name, j) => {
+        const negative = j < 3 && ((signs >> j) & 1) === 1;
+        assignment[name] = (negative ? -1 : 1) * SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length];
+      });
+      // Each side is evaluated on its own: the engine may fold the
+      // difference into one fractional power (`c^3\sqrt[3]{c}` → `c^{10/3}`)
+      // that is non-real at a negative point where both sides are real.
+      const values = [studentExpr, answerExpr].map((side) => side.subs(assignment).N());
+      if (!values.every((v) => Number.isFinite(v.re) && Number.isFinite(v.im)
+        && Math.abs(v.im) <= SAMPLE_TOLERANCE)) continue;
+      const [student, answer] = values.map((v) => v.re);
+      if (Math.abs(student - answer) > SAMPLE_TOLERANCE * Math.max(1, Math.abs(student), Math.abs(answer))) return false;
+    }
+  }
+  return true;
 }
 
 /**
@@ -775,6 +830,49 @@ function equationsEquivalent(studentExpr, answerExpr) {
     return (same(student[0], answer[0]) && same(student[1], answer[1]))
       || (same(student[0], answer[1]) && same(student[1], answer[0]));
   }
+  if (proportionalSides(sides, vars)) return true;
+  // Clearing a variable denominator restates the same relation: `xy=16` IS
+  // `y=\frac{16}{x}` (Elementary Algebra 8.9's inverse-variation keys, which
+  // graded the learner's `xy=16` and `vw=3` incorrect, September 27, 2026).
+  // Only a side's OWN variable denominators are multiplied through — where
+  // one vanishes the uncleared side is undefined, so no solution is gained —
+  // and the result must still be a CONSTANT multiple of the other side, so
+  // `x^2y=16x` (the extra factor x admits the whole line x=0) and a solve
+  // step multiplied by a variable (`x^2-3x=0` for `x-3=0`) stay refused.
+  const cleared = sides.map((side) => {
+    const denominators = variableDenominators(side);
+    return denominators.length ? ce.box(['Multiply', side, ...denominators]) : null;
+  });
+  return (cleared[0] !== null && proportionalSides([cleared[0], sides[1]], vars))
+    || (cleared[1] !== null && proportionalSides([sides[0], cleared[1]], vars))
+    || (cleared[0] !== null && cleared[1] !== null && proportionalSides(cleared, vars));
+}
+
+/**
+ * The distinct denominators holding an unknown that an expression divides
+ * by — a `Divide`'s divisor, or the base of a negative power (raised to the
+ * matching positive power) — read off the boxed expression.
+ */
+function variableDenominators(expr) {
+  const found = new Map();
+  const visit = (e) => {
+    if (e.operator === 'Divide' && e.ops[1].unknowns.length) {
+      found.set(e.ops[1].toString(), e.ops[1]);
+    } else if (e.operator === 'Power' && e.ops[1].isNumberLiteral && e.ops[1].re < 0 && e.ops[0].unknowns.length) {
+      const denominator = ce.box(['Power', e.ops[0], -e.ops[1].re]);
+      found.set(denominator.toString(), denominator);
+    }
+    (e.ops ?? []).forEach(visit);
+  };
+  visit(expr);
+  return [...found.values()];
+}
+
+/**
+ * Are two moved-to-one-side equation forms nonzero CONSTANT multiples of
+ * each other? Decided by sampling; see equationsEquivalent().
+ */
+function proportionalSides(sides, vars) {
   const samples = [];
   let bothVanished = 0;
   for (let i = 0; i < SAMPLE_POINTS.length && samples.length < SAMPLES_REQUIRED; i += 1) {
@@ -866,19 +964,31 @@ function equivalent(studentExpr, answerExpr) {
       || fractionTimesSymbolQuotient(answerExpr)) {
       return numericallyEquivalent(studentExpr, answerExpr);
     }
-    if (studentExpr.isEqual(answerExpr) === true) return true;
-    // `simplify` has its own hang class — differences of variable-radical
-    // expressions — so any radical over a symbol takes sampling instead. The
-    // step is load-bearing: `isEqual` misses identities `simplify` catches
-    // (`\sqrt{64x^2}` vs `8x`), so the replacement must decide, not just
-    // fail closed. Sampling is also more complete than the engine was — it
-    // proves equalities `isEqual` false-negatives on (a retyped
-    // `\sqrt[3]{32y^5}-\sqrt[3]{-108y^8}` prompt) — which is why every
-    // radical re-expression exercise MUST carry an answerForm: the lint's
-    // passable-by-retyping rule now sees those pastes grade as value-equal.
+    // A radical (or fractional power) over a symbol is decided by sampling
+    // ALONE, and before `isEqual` is ever asked. The pinned engine's `N()`
+    // drops a square root over a symbol — `\sqrt{x}` numericizes to `x`,
+    // `\sqrt{3p}` to `1.732p` — and `isEqual` numericizes both sides first,
+    // so it returned TRUE for `9x` against `9\sqrt{x}`, `x` against
+    // `\sqrt{x}`, `\sqrt{x}+1` against `x+1`, and `-p^2\sqrt3` against
+    // `-p\sqrt{3p}` (Elementary Algebra 9 re-review, September 27, 2026): a
+    // learner who dropped the radical was marked right. Sampling substitutes
+    // BEFORE numericizing (`subs().N()`), which that bug cannot reach, at
+    // positive points away from 0 and 1 — the radicals chapters assume
+    // variables are nonnegative, so `\sqrt{x^2}` and `x` agree there.
+    //
+    // `simplify` has its own hang class too — differences of
+    // variable-radical expressions — and the step is load-bearing: `isEqual`
+    // misses identities `simplify` catches (`\sqrt{64x^2}` vs `8x`), so the
+    // replacement must decide, not just fail closed. Sampling is also more
+    // complete than the engine was — it proves equalities `isEqual`
+    // false-negatives on (a retyped `\sqrt[3]{32y^5}-\sqrt[3]{-108y^8}`
+    // prompt) — which is why every radical re-expression exercise MUST carry
+    // an answerForm: the lint's passable-by-retyping rule now sees those
+    // pastes grade as value-equal.
     if (radicalOverSymbol(studentExpr) || radicalOverSymbol(answerExpr)) {
       return numericallyEquivalent(studentExpr, answerExpr);
     }
+    if (studentExpr.isEqual(answerExpr) === true) return true;
     const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
     return diff.isSame(ce.number(0));
   } catch {
@@ -2624,6 +2734,263 @@ function termFractionsReduced(latex) {
   return true;
 }
 
+/**
+ * One additive term of a radical expression, read factor by factor off the
+ * writing (the engine folds `\frac{6\sqrt2}{4}` and `\sqrt3\sqrt5` before any
+ * parse could show them). Returns
+ *   numerals  — how many numeral factors the term writes (a numeric
+ *               `\frac{3}{2}` coefficient counts as one);
+ *   indices   — the root index of every radical written at the term's own
+ *               level;
+ *   fractions — each `\frac`'s two halves, read at their own level later;
+ *   nested    — each group holding a sum, likewise;
+ *   content   — the term's integer content: the product of its numerals and
+ *               of its groups' contents, or null when a factor's content is
+ *               not an integer the writing states (a decimal, a fraction).
+ * A parenthesized factor holding ONE term is the same product, so it is read
+ * into the term (`2(3\sqrt2)` writes two numerals, `\sqrt3(\sqrt5)` two
+ * radicals). Anything unrecognised — a letter, `|u|`, a command — counts as
+ * content 1: underestimating content can only let a fraction pass, never
+ * refuse one. null when the writing cannot be read at all.
+ */
+function readRadicalTerm(term) {
+  const read = {
+    numerals: 0, indices: [], fractions: [], nested: [], content: 1, letters: new Map(), unmerged: false,
+  };
+  const times = (content) => {
+    read.content = read.content === null || content === null ? null : read.content * content;
+  };
+  let i = 0;
+  while (i < term.length) {
+    const rest = term.slice(i);
+    const char = term[i];
+    const numeral = rest.match(/^(?:\d+(?:\.\d+)?|\.\d+)/);
+    if (numeral) {
+      read.numerals += 1;
+      times(numeral[0].includes('.') ? null : Number(numeral[0]));
+      i += numeral[0].length;
+      continue;
+    }
+    if (char === '^' || char === '_') {
+      const argument = readTexArgument(term, i + 1);
+      i = argument ? argument[1] : term.length;
+      continue;
+    }
+    const radical = rest.match(/^\\sqrt\s*(?:\[\s*([^\]]*?)\s*\])?/);
+    if (radical) {
+      const radicand = readTexArgument(term, i + radical[0].length);
+      if (!radicand) return null;
+      read.indices.push(radical[1] || '2');
+      i = radicand[1];
+      continue;
+    }
+    const fraction = rest.match(/^\\[tdc]?frac(?![a-zA-Z])/);
+    if (fraction) {
+      const numerator = readTexArgument(term, i + fraction[0].length);
+      const denominator = numerator && readTexArgument(term, numerator[1]);
+      if (!denominator) return null;
+      const halves = [numerator[0], denominator[0]];
+      if (halves.every((half) => /^\s*[+-]?\s*\d+\s*$/.test(half))) read.numerals += 1;
+      read.fractions.push(halves);
+      times(null);
+      i = denominator[1];
+      continue;
+    }
+    if (char === '(' || char === '{') {
+      const group = readDelimitedGroup(term, i);
+      if (!group) return null;
+      i = group[1];
+      const single = splitTopLevelTerms(group[0]).filter((piece) => piece.trim()).length === 1;
+      // A powered group is read inside, at its own level. Powering ONE term
+      // is a power of a power or of a product left unmerged — `(z^3)^2` for
+      // `z^6`; a powered SUM is a product still to expand, which the
+      // top-level rules and `expanded` own.
+      if (/^\s*\^/.test(term.slice(i))) {
+        if (single) read.unmerged = true;
+        read.nested.push(group[0]);
+        continue;
+      }
+      if (single) {
+        const inner = readRadicalTerm(group[0]);
+        if (!inner) return null;
+        read.numerals += inner.numerals;
+        read.indices.push(...inner.indices);
+        read.fractions.push(...inner.fractions);
+        read.nested.push(...inner.nested);
+        for (const [letter, count] of inner.letters) read.letters.set(letter, (read.letters.get(letter) ?? 0) + count);
+        read.unmerged ||= inner.unmerged;
+        times(inner.content);
+      } else {
+        read.nested.push(group[0]);
+        times(integerContent(group[0]));
+      }
+      continue;
+    }
+    if (char === '|') {
+      const close = term.indexOf('|', i + 1);
+      i = close === -1 ? term.length : close + 1;
+      continue;
+    }
+    if (/[a-zA-Z]/.test(char)) {
+      read.letters.set(char, (read.letters.get(char) ?? 0) + 1);
+      i += 1;
+      continue;
+    }
+    const command = rest.match(/^\\(?:[a-zA-Z]+|[\s\S])?/);
+    i += command ? command[0].length : 1;
+  }
+  return read;
+}
+
+/**
+ * Every radical a term writes, anywhere in it, as `index|radicand` with the
+ * radicand's spaces removed — the radical part of a variable-free term.
+ */
+function writtenRadicals(term) {
+  const radicals = [];
+  for (const opener of term.matchAll(/\\sqrt\s*(?:\[\s*([^\]]*?)\s*\])?/g)) {
+    const radicand = readTexArgument(term, opener.index + opener[0].length);
+    if (radicand) radicals.push(`${opener[1] || '2'}|${radicand[0].replace(/\s+/g, '')}`);
+  }
+  return radicals.sort();
+}
+
+/**
+ * The like-term signature of a VARIABLE-FREE term — `rational` for a plain
+ * number (`3`, `\frac{3}{4}`), else its written radicals (`2|2` for
+ * `2\sqrt2` and `\frac{\sqrt2}{2}` alike) — or null for a term that holds a
+ * variable, whose likeness the engine's parse decides.
+ */
+function numericTermSignature(term) {
+  if (/[a-zA-Z]/.test(term.replace(/\\[a-zA-Z]+/g, ' '))) return null;
+  return writtenRadicals(term).join('*') || 'rational';
+}
+
+/**
+ * The integer content of a written sum — the gcd of its terms' contents
+ * (readRadicalTerm) — or null when some term's content cannot be read. The
+ * sign never counts: `-\sqrt3` has content 1, `4+2\sqrt5` content 2.
+ */
+function integerContent(text) {
+  let content = 0;
+  for (const term of splitTopLevelTerms(text)) {
+    if (!term.trim()) continue;
+    const read = readRadicalTerm(term);
+    if (!read || read.content === null) return null;
+    content = gcd(content, read.content);
+  }
+  return content;
+}
+
+/**
+ * Does a radical expression leave numeric work written out — at the top level
+ * AND inside every fraction half and every sum-valued group, since a
+ * rationalized key keeps its work below a fraction bar? Three defects, each
+ * value-equal to its simplified form (Elementary Algebra 9, September 27,
+ * 2026):
+ *   - a fraction whose numerator's integer content shares a factor with its
+ *     denominator's: `\frac{6\sqrt2}{4}`, `\frac{2\sqrt3}{6}`, and
+ *     `\frac{4+2\sqrt5}{2}` — the printed prompt of a "simplify" ask — or a
+ *     fraction over 1, the division by nothing left written;
+ *   - two same-index radicals multiplied in one term, the Product Property
+ *     left unapplied: `\frac{\sqrt3\sqrt5}{5}` for `\frac{\sqrt{15}}{5}`;
+ *   - two numerals multiplied in one term (`2\sqrt2\cdot3` for `6\sqrt2`,
+ *     `3\cdot5` for 15, `4\cdot2x` for `8x`), a variable written twice in
+ *     one term (`z^3z^3` for `z^6`), or a powered single-term group
+ *     (`(z^3)^2`) — the monomial and bare-number keys of 9.1–9.8 declare
+ *     `simplified-radical` alone. A bare numeral power (`3^2`, `12^{-15}`)
+ *     stays legal: the token's integer-exponent contract predates this;
+ *   - two variable-free like terms side by side: `3+4` for 7, and
+ *     `\frac{2\sqrt3+\sqrt3}{4}` below a bar the top-level like-radicals
+ *     scan cannot see.
+ * A sign is never a defect (`\frac{-\sqrt3}{3}` = `-\frac{\sqrt3}{3}`), and a
+ * term or half the reader cannot state an integer content for fails open.
+ */
+function radicalWritingDefect(text) {
+  const numericTerms = new Set();
+  for (const term of splitTopLevelTerms(text)) {
+    if (!term.trim()) continue;
+    const signature = numericTermSignature(term);
+    if (signature !== null) {
+      if (numericTerms.has(signature)) return true;
+      numericTerms.add(signature);
+    }
+    const read = readRadicalTerm(term);
+    if (!read) continue;
+    if (read.numerals > 1 || read.unmerged) return true;
+    if ([...read.letters.values()].some((count) => count > 1)) return true;
+    if (read.indices.length > new Set(read.indices).size) return true;
+    for (const [numerator, denominator] of read.fractions) {
+      if (/^\s*[+-]?\s*1\s*$/.test(denominator)) return true;
+      const top = integerContent(numerator);
+      const bottom = integerContent(denominator);
+      if (top !== null && bottom !== null && gcd(top, bottom) > 1) return true;
+      if (radicalWritingDefect(numerator) || radicalWritingDefect(denominator)) return true;
+    }
+    if (read.nested.some(radicalWritingDefect)) return true;
+  }
+  return false;
+}
+
+/**
+ * Is a written numeral-fraction exponent in lowest terms? `x^{\frac{2}{4}}`
+ * is `x^{\frac12}` with the exponent left unreduced — value-equal, so only
+ * the writing can refuse it. An exponent that is not a numeral fraction has
+ * nothing to reduce.
+ */
+function exponentInLowestTerms(written) {
+  const text = String(written ?? '').replace(/\s+/g, '');
+  const fraction = text.match(EXPONENT_FRACTION);
+  const ratio = text.match(/^[+-]?(\d+)\/[+-]?(\d+)$/);
+  const halves = fraction ? [fraction[2] ?? fraction[3], fraction[4] ?? fraction[5]]
+    : ratio ? [ratio[1], ratio[2]] : null;
+  if (!halves || !halves.every((half) => /^[+-]?\d+$/.test(half))) return true;
+  return gcd(Math.abs(Number(halves[0])), Math.abs(Number(halves[1]))) === 1;
+}
+
+/**
+ * The radical factors of a number literal's MathJSON, one signature each:
+ * `["Multiply",2,["Sqrt",2]]` → `Sqrt(2)`. A rational literal has none, so
+ * every plain number shares the empty radical part; a complex literal is
+ * marked imaginary, so it is never mistaken for a plain number.
+ */
+function radicalParts(json) {
+  const parts = [];
+  const visit = (node) => {
+    if (!Array.isArray(node)) return;
+    if (node[0] === 'Sqrt' || node[0] === 'Root') {
+      parts.push(`${node[0]}(${JSON.stringify(node.slice(1))})`);
+      return;
+    }
+    node.slice(1).forEach(visit);
+  };
+  visit(json);
+  if (Array.isArray(json) && json[0] === 'Complex') parts.push('ImaginaryUnit');
+  return parts;
+}
+
+/**
+ * Does the writing carry an exponent fraction left unfinished — not in lowest
+ * terms (`x^{2/4}`), or a whole number wearing a fraction bar (`x^{6/3}`,
+ * `\frac{1}{z^{6/3}}`)? The engine folds both before a parse could show them,
+ * so `single-term` and `single-fraction` passed them against `x^{1/2}`,
+ * `x^2` and `\frac{1}{z^2}` (Elementary Algebra 9.8, September 27, 2026).
+ * `single-power`, `reduced-fraction` and `rational-exponent` already refuse
+ * both by their own grammar.
+ */
+function writesUnreducedExponent(bare) {
+  for (const caret of bare.matchAll(/\^/g)) {
+    const argument = readTexArgument(bare, caret.index + 1);
+    if (!argument) continue;
+    const written = argument[0].replace(/\s+/g, '');
+    const value = exponentValue(written);
+    const isFraction = EXPONENT_FRACTION.test(written) || /^[+-]?\d+\/[+-]?\d+$/.test(written);
+    if (!isFraction || value === null) continue;
+    if (Number.isInteger(value) || !exponentInLowestTerms(written)) return true;
+  }
+  return false;
+}
+
 const FORM_PREDICATES = {
   fraction: (latex) => asFraction(latex) !== null,
   // An ordered pair keyed with numbers — "(-1,-6)" — is a decimal in each
@@ -2677,6 +3044,9 @@ const FORM_PREDICATES = {
     if (!factor || factor.exponent === null) return false;
     const value = exponentValue(factor.exponent);
     if (value === null || Number.isInteger(value)) return false;
+    // `x^{\frac{2}{4}}` is `x^{\frac12}` with the exponent left unreduced
+    // (Elementary Algebra 9.8, September 27, 2026).
+    if (!exponentInLowestTerms(factor.exponent)) return false;
     if (factor.atom.kind === 'symbol') return true;
     return factor.atom.kind === 'group' && hasVariableLetter(factor.atom.text);
   },
@@ -2877,13 +3247,19 @@ const FORM_PREDICATES = {
   // parsing radicals is also where the Compute Engine is slow enough to stall a
   // corpus-wide check.
   //
-  // A radical response is simplified when three things hold — the three steps
-  // the source teaches:
+  // A radical response is simplified when four things hold — the steps the
+  // source teaches:
   //   1. no radicand keeps a perfect-square (or perfect-nth-power) factor,
   //      so `\sqrt{32}` and `\sqrt{64x^2}` are not simplified;
   //   2. no two top-level terms share a radicand, so `8\sqrt2-9\sqrt2` is not
-  //      combined yet; and
-  //   3. no radical is left in a denominator — the rationalizing step.
+  //      combined yet;
+  //   3. no radical is left in a denominator — the rationalizing step; and
+  //   4. no numeric work is left written, at any level: a fraction's numeric
+  //      content is reduced (`\frac{6\sqrt2}{4}`, `\frac{4+2\sqrt5}{2}`), no
+  //      fraction stands over 1, and no term multiplies two same-index
+  //      radicals (`\frac{\sqrt3\sqrt5}{5}`) or two numerals (`2\sqrt2\cdot3`)
+  //      — radicalWritingDefect(), added by the Elementary Algebra 8–9
+  //      re-review (September 27, 2026).
   'simplified-radical': (latex) => {
     // TeX's `\sqrt` takes one token, so a hand-typed `\sqrt2` carries no
     // braces — and every pattern below reads a braced radicand. Brace the
@@ -2911,8 +3287,8 @@ const FORM_PREDICATES = {
     // "multiply radicals" exercise (`(\sqrt[3]{9y^2})(\sqrt[3]{6y})`, or the
     // same with \cdot) must not pass the form its own answer declares.
     // Scoped to explicit products (\cdot, \times, or parenthesized radical
-    // factors): the corpus legitimately writes rationalized numerators as
-    // bare juxtapositions like `\sqrt{10}\sqrt{y}`, which stay accepted.
+    // factors); a bare juxtaposition anywhere, top level or inside a
+    // fraction, is radicalWritingDefect()'s.
     for (const term of splitTopLevelTerms(bare)) {
       const flat = term.replace(/\\left\s*/g, '').replace(/\\right\s*/g, '');
       const indices = [...flat.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/g)].map((m) => m[1] ?? '2');
@@ -2964,16 +3340,23 @@ const FORM_PREDICATES = {
       // The sign is carried by the root (or by `i`), not by the factor test:
       // `\sqrt[3]{-108}` still holds the perfect cube 27, and `\sqrt{-8}`
       // still holds the perfect square 4.
-      const numeral = radicand.match(/^\s*-?\s*(\d+)/);
-      if (numeral) {
-        const value = Number(numeral[1]);
-        for (let factor = 2; factor ** root <= value; factor += 1) {
-          if (value % factor ** root === 0) return false;
+      // A fraction radicand over a variable (`\sqrt[6]{\tfrac{2u}{v^3}}`, a
+      // 9.7 key) is legal, but each half is read like a whole radicand: a
+      // perfect power left in either (`\sqrt[6]{\frac{128u}{v^3}}`, 128 =
+      // 2^6·2) still comes out (Elementary Algebra 9.7, September 27, 2026).
+      const halves = fracHalves(radicand.trim());
+      for (const piece of halves.length === 2 ? halves : [radicand]) {
+        const numeral = piece.match(/^\s*-?\s*(\d+)/);
+        if (numeral) {
+          const value = Number(numeral[1]);
+          for (let factor = 2; factor ** root <= value; factor += 1) {
+            if (value % factor ** root === 0) return false;
+          }
         }
-      }
-      // A variable power at or above the root index still comes out: \sqrt{x^2}.
-      for (const [, exponent] of radicand.matchAll(/\^\s*\{?\s*(\d+)\s*\}?/g)) {
-        if (Number(exponent) >= root) return false;
+        // A variable power at or above the root index still comes out: \sqrt{x^2}.
+        for (const [, exponent] of piece.matchAll(/\^\s*\{?\s*(\d+)\s*\}?/g)) {
+          if (Number(exponent) >= root) return false;
+        }
       }
     }
     // A radical below a fraction bar has not been rationalized. The denominator
@@ -2991,9 +3374,9 @@ const FORM_PREDICATES = {
     // juxtaposition spells the same product — `4\sqrt[4]{12y^3}\sqrt[4]{8y^3}`
     // is the multiplication exercise's own prompt, not its answer. Variable
     // radicands count toward the pair too: the Product Property combines them
-    // just as readily. The corpus's legitimate `\sqrt{10}\sqrt{y}` products
-    // live inside rationalized-fraction numerators, whose brace groups sit
-    // below the top level this scan reads — so they stay accepted.
+    // just as readily. The same product inside a rationalized-fraction
+    // numerator (`\frac{\sqrt{10}\sqrt{y}+\sqrt{30}}{y-3}`) sits below the top
+    // level this scan reads; radicalWritingDefect() refuses it there.
     for (const piece of splitTopLevelTerms(bare)) {
       const countByIndex = new Map();
       for (const opener of piece.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/g)) {
@@ -3013,6 +3396,7 @@ const FORM_PREDICATES = {
         if (countByIndex.get(index) >= 2) return false;
       }
     }
+    if (radicalWritingDefect(bare)) return false;
     // Like radicals must already be combined: split the top level on + and -
     // and require each (index, radicand, coefficient-shape) to appear once.
     // The coefficient's variable signature is part of the key because the
@@ -3102,10 +3486,29 @@ const FORM_PREDICATES = {
   // `7x^2` as distinct terms of the sum, which is what makes this checkable.
   // It does fold bare constants — `16x+9+8` parses to `16x+17`, its own
   // answer — so two written constant terms are read off the LaTeX instead.
+  //
+  // A term's signature is its variable monomial AND its radical part: the
+  // engine boxes `2\sqrt2` as a number literal, and reading every literal as
+  // "constant" made the simplified `3+2\sqrt2` two like terms of itself
+  // (Elementary Algebra 9.4, September 27, 2026). `3`, `2\sqrt2`, `5\sqrt3`
+  // and `x\sqrt2` are pairwise unlike; the radicand is compared as written
+  // (the engine keeps `\sqrt8` apart from `\sqrt2`), since reducing it is
+  // `simplified-radical`'s rule, not this one's.
   'no-like-terms': (latex) => {
     const constants = splitTopLevelTerms(bareLatex(latex))
       .filter((term) => term.trim() && isConstantTerm(term.trim().replace(/^[+-]\s*/, '')));
     if (constants.length > 1) return false;
+    // …and so does a sum of like radical constants (`\sqrt2+\sqrt2` parses to
+    // `2\sqrt2`, `2\sqrt3+5\sqrt3` to `7\sqrt3`), so a variable-free term's
+    // radical part is read off the LaTeX too.
+    const radicalConstants = new Set();
+    for (const term of splitTopLevelTerms(bareLatex(latex))) {
+      const body = term.trim().replace(/^[+-]\s*/, '');
+      const signature = body && /\\sqrt/.test(body) ? numericTermSignature(body) : null;
+      if (signature === null) continue;
+      if (radicalConstants.has(signature)) return false;
+      radicalConstants.add(signature);
+    }
     if (!termFractionsReduced(latex)) return false;
     let expr;
     try {
@@ -3121,7 +3524,12 @@ const FORM_PREDICATES = {
       const walk = (e) => {
         if (e.operator === 'Multiply') e.ops.forEach(walk);
         else if (e.operator === 'Negate') walk(e.ops[0]);
-        else if (!e.isNumberLiteral) {
+        else if (e.isNumberLiteral) parts.push(...radicalParts(e.json));
+        else if (e.operator === 'Divide' && e.ops[1].isNumberLiteral && radicalParts(e.ops[1].json).length === 0) {
+          // A numeral denominator is part of the coefficient:
+          // `\frac{\sqrt2}{2}` and `\frac{3\sqrt2}{4}` are like terms.
+          walk(e.ops[0]);
+        } else {
           const base = e.operator === 'Power' ? e.ops[0] : e;
           const power = e.operator === 'Power' ? e.ops[1].toString() : '1';
           parts.push(`${base.toString()}^${power}`);
@@ -3192,6 +3600,7 @@ const FORM_PREDICATES = {
     // it too has to be caught on the LaTeX.
     if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
+    if (writesUnreducedExponent(bare)) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
       if (bare[i] === '{' || bare[i] === '(') depth += 1;
@@ -3220,6 +3629,7 @@ const FORM_PREDICATES = {
     const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
     if (/\\div/.test(bare) || !/^\\[tdc]?frac/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare)) return false;
+    if (writesUnreducedExponent(bare)) return false;
     // A numeral power (`\frac{1}{2^3y^3}`) is arithmetic left undone, and a
     // negative exponent (`\frac{1}{8}y^{-3}`) is the reciprocal the fraction
     // exists to write — neither is the one simplified fraction the ask names.
@@ -3229,6 +3639,15 @@ const FORM_PREDICATES = {
     // Each half has its like terms combined: `\frac{3p+6p}{8}` is the
     // half-worked `\frac{9p}{8}` (the engine folds the numerator first).
     if (fracHalves(bare).some((half) => !FORM_PREDICATES['no-like-terms'](half))) return false;
+    // Each half is finished: one product of factors (`2(x-5)`, fully
+    // factored) or a sum of plain terms (`3x+16`) — never a sum still holding
+    // a grouped product, `3(x+5)+1` for `3x+16` (Elementary Algebra 8.5,
+    // September 27, 2026), which the engine distributes before any parse
+    // could show it.
+    if (fracHalves(bare).some((half) => {
+      const terms = splitTopLevelTerms(half).filter((term) => term.trim());
+      return terms.length > 1 && terms.some((term) => /[()]/.test(term));
+    })) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
       if (bare[i] === '{') depth += 1;
@@ -3814,7 +4233,7 @@ const FORM_PHRASES = {
   fraction: 'as a fraction',
   decimal: 'as a decimal',
   percent: 'as a percent, with the % sign',
-  'rational-exponent': 'with a rational exponent, not a radical',
+  'rational-exponent': 'with a rational exponent in lowest terms, not a radical',
   radical: 'as a radical expression',
   'exact-log': 'in exact logarithmic form, not a decimal approximation',
   'exact-radical': 'in exact form, as a simplified radical rather than a decimal approximation',
@@ -3832,7 +4251,7 @@ const FORM_PHRASES = {
   'no-like-terms': 'with like terms combined',
   polynomial: 'as a polynomial, with no fraction bar',
   distributed: 'with the parentheses multiplied out',
-  'simplified-radical': 'as a simplified radical',
+  'simplified-radical': 'as a simplified radical, with every product multiplied out and any fraction reduced',
   'single-term': 'as a single term',
   'single-fraction': 'as a single fraction',
   'reduced-fraction': 'as a single fraction with all common factors cancelled',
