@@ -54,6 +54,8 @@ key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt
 (`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
 here on September 27: chapter 8 (20 items) and both knowledge checks (1 and 4).
+Factoring asks take `factored-completely` (chapter 7 swept); knowledge
+check 6–10 has 11 left.
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -63,7 +65,7 @@ here on September 27: chapter 8 (20 items) and both knowledge checks (1 and 4).
 | [x] | 4. Graphs | 7 | 205 | 1295–1320 | 6eb6e75 | 4.4's omitted geoboard objective restored (16 geoboards, 4 graded items; parent decision on the Prealgebra 2.3 precedent). Hand SVGs without axis numbers redrawn spec-first (4.1, 4.5, 4.7); source Try It graphs restored (4.3, 4.4, 4.6); 4.1's source figure plots (0, −1) for (−2, 3) (erratum 1295, disclosed). The 4.4 figure checker wrongly called source Try It 049 invented and swapped in 051; both are source, parent kept 050/051 in source order. |
 | [x] | 5. Systems of Linear Equations | 6 | 193 | 1321–1342 | 6eb6e75 | Ordered-pair keys now take pairs and forms (`(6,9)`, `x=6, y=1` both grade). 5.1's (1, −3) and (0, 0) checks are yes/no multiple choice (source asks yes/no). 5.6 Christy restored to the source's own parts (erratum 1340). 5.5 Rosie's source answer swaps the principals (erratum 1337). |
 | [x] | 6. Polynomials | 7 | 433 | 1343–1364 | 6eb6e75 | Polynomial products moved from plain `expanded` to `expanded distributed no-like-terms` (6.3, 6.4, 6.6); `expanded` itself now refuses written products and powers of groups, `single-fraction` refuses `(2x^4)^5`, and reduced monomial terms are required under `distributed` (6.6 remainders). 286 plain-`expanded` items remain across the math books — swept row by row (brief-math step 3). 6.4 replaced three renamed duplicate Practice items with source exercises. Floors: replayed −319, exercises −4 (named in 6eb6e75). |
-| [ ] | 7. Factoring | 6 | | | | |
+| [x] | 7. Factoring | 6 | 394 | 1365–1377 | 4b90cb3 | One Opus fixer per section (132–178k tokens each, ~933k); one Opus grader agent (145k) added `factored-completely`: `factored` is shape-only, so "Factor completely" accepted `(2x+4)(x+2)` and `2(x^2+4x+4)` for `2(x+2)^2` (parent find). All 142 of the chapter's factoring asks now take it (101 swapped by the parent, 41 by the 7.4 fixer). Three Fable solvers (~250k) for 180 items, 180/180 agree. Hint leaks (the GCF, the factor pair, the sign conclusion, the trinomial left inside) and retype are the top classes. 7.4 keyed a Try It `(12p-3q)(12p+3q)`, which is not factored completely (source `9(4p-q)(4p+q)`). The source's 9x²+50x+25 non-example with its two Try Its (7.4, parent) and 10x²−34x−24 example (7.5) were restored. 7.3 prints the source's 15y² GCF step as 5y² (erratum 1367). Open: `2(-x-2)` grades correct against `-2(x+2)` (sign convention, not completeness). Floors: replayed −19 (answerForm sweep). |
 | [ ] | 8. Rational Expressions and Equations | 9 | | | | |
 | [ ] | 9. Roots and Radicals | 8 | | | | |
 | [ ] | 10. Quadratic Equations | 5 | | | | |
@@ -84,6 +86,9 @@ key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt
 (`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
 here on September 27: chapter 1 (2 items) and chapter 7 (38).
+The sweep also swaps `factored` for `factored-completely` on every factoring
+ask whose key is complete (Elementary Algebra chapter 7, September 27,
+2026): chapter 6 (105 items) and knowledge check 1–6 (7).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
