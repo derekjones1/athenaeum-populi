@@ -131,6 +131,12 @@ monomial halves to be reduced with integer halves: `3c+1-\frac{9}{6c}`,
 `\frac{18c^2}{6c}+\frac{6c}{6c}-\frac{9}{6c}`, and `\frac{2}{72}xy+1` grade
 `form` (`expanded` and `single-term` alone still pass an unreduced
 coefficient).
+Since the Elementary Algebra chapter 7 re-review (September 27, 2026):
+`factored` is a shape check and passes an unfinished factorization
+(`(2x+4)(x+2)`, `2(x^2+4x+4)`, `x(xy+y^2)`), so a "Factor" / "Factor
+completely" ask whose key is complete takes `factored-completely` — every
+polynomial factor primitive over the integers and the key's factor count
+reached — and a GCF-only ask keeps `factored`.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
@@ -197,6 +203,14 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      plain `expanded`, which accepts the FOIL line before combining
      (`x^2+9x+9x+81`); 286 items declared plain `expanded` on September 27,
      2026 (Elementary Algebra 6.3 and 6.4 swept theirs).
+     Every factoring fill-in ("Factor", "Factor completely", factor by
+     grouping or by a pattern) whose key is a complete factorization takes
+     `factored-completely` in place of `factored`; run the grader on a
+     half-finished product (the GCF left inside, `(x^2+4)(x^2-4)` for a
+     nested difference of squares) and expect `form`. A GCF-only ask keeps
+     `factored`. On September 27, 2026, 292 factoring asks declared
+     `factored` (Elementary Algebra ch7 and KC 6–10, Intermediate Algebra
+     ch6 and KC 1–6, Prealgebra ch10).
    - **grader reach:** run the grader on the forms a learner would
      naturally type (with and without digit-grouping commas, `x=5` vs
      `5`, an equivalent fraction or decimal, a unit word) and on a common

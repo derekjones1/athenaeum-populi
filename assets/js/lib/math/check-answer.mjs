@@ -1855,6 +1855,205 @@ function asFactoredProduct(latex) {
   return expr.isValid ? factorCounts(expr) : null;
 }
 
+// --------------------------------------------------------------------------
+// Complete factorization, for `factored-completely`. `factored` reads only
+// the shape, so on a "Factor completely" ask the half-finished `(2x+4)(x+2)`,
+// `2(x^2+4x+4)` and `x(xy+y^2)` passed against `2(x+2)^2` and `xy(x+y)`.
+//
+// The response is read as a product over the integers: numeric constants,
+// variable powers, and polynomial factors, each with a multiplicity. It is
+// complete when
+//   (a) every polynomial factor is PRIMITIVE — integer coefficients with gcd
+//       1 and no variable common to all its terms — and
+//   (b) the number of non-constant factors, counted with multiplicity (`x^3`
+//       is 3, `(x+2)^2` is 2), is at least the key's count.
+// Value equality is already established and the key is complete, so by
+// unique factorization in Z[x,y,…] the two together say every factor is
+// irreducible: a primitive factor carries no integer prime, each non-constant
+// factor holds at least one irreducible, and the key's count IS the number of
+// irreducibles — a response that reaches it with no factor left reducible
+// has split every one. No polynomial factoring is needed, only counting.
+//
+// Constants are free: `2(x+2)^2`, `-2(x+2)^2`, `2\cdot1(x+2)^2` all pass,
+// because with every polynomial factor primitive the constant can only be
+// the content (Gauss's lemma). A sign-flipped factor, `-(2-x)` for `(x-2)`,
+// is the same primitive up to a unit, so sign and order never matter.
+//
+// A factor with rational but non-integer coefficients — `4(\tfrac12x+1)(x+2)`,
+// `(0.5x+1)` — is NOT primitive: the book factors over the integers, and the
+// `\tfrac12` is exactly the common factor 2 left inside `(x+2)` unfactored
+// (`4(\tfrac12x+1)` is `2x+4`). A factor the reader cannot read at all (a
+// radical of a variable, an absolute value, a variable denominator) makes
+// the profile null: the KEY then falls back to the shape check, the response
+// fails (see the predicate for why the two directions differ). Constants
+// inside a factor are EVALUATED, so `(2x+\sqrt{16})` reads as `(2x+4)` and
+// an irrational constant (`x-\sqrt2`) makes the factor unreadable.
+// --------------------------------------------------------------------------
+
+/** A finite real value as an exact small-denominator fraction, or null. */
+function rationalOfValue(value) {
+  if (value?.isNumberLiteral !== true || value.im !== 0 || !Number.isFinite(value.re)
+    || Math.abs(value.re) > Number.MAX_SAFE_INTEGER) return null;
+  for (let d = 1; d <= 1000; d += 1) {
+    const scaled = value.re * d;
+    const rounded = Math.round(scaled);
+    if (Math.abs(scaled - rounded) < 1e-9 * Math.max(1, Math.abs(scaled))) {
+      const g = bigintGcd(BigInt(rounded), BigInt(d)) || 1n;
+      return [BigInt(rounded) / g, BigInt(d) / g];
+    }
+  }
+  return null;
+}
+
+const ratNormalize = ([n, d]) => {
+  const g = bigintGcd(n, d) || 1n;
+  const sign = d < 0n ? -1n : 1n;
+  return [(sign * n) / g, (sign * d) / g];
+};
+const ratAdd = (a, b) => ratNormalize([a[0] * b[1] + b[0] * a[1], a[1] * b[1]]);
+const ratMul = (a, b) => ratNormalize([a[0] * b[0], a[1] * b[1]]);
+
+/**
+ * A factor as a sparse rational-coefficient polynomial — a Map from the
+ * exponent vector (joined) to a [numerator, denominator] BigInt pair — or null
+ * when it is not a polynomial in `vars` with rational coefficients.
+ */
+function exprToRationalTerms(expr, vars) {
+  const zeroKey = vars.map(() => 0).join(',');
+  const constant = (rational) => (rational[0] === 0n ? new Map() : new Map([[zeroKey, rational]]));
+  const add = (left, right) => {
+    const sum = new Map(left);
+    for (const [key, coefficient] of right) {
+      const next = sum.has(key) ? ratAdd(sum.get(key), coefficient) : coefficient;
+      if (next[0] === 0n) sum.delete(key);
+      else sum.set(key, next);
+    }
+    return sum;
+  };
+  const mul = (left, right) => {
+    let product = new Map();
+    for (const [leftKey, leftCoefficient] of left) {
+      const leftExponents = leftKey.split(',').map(Number);
+      for (const [rightKey, rightCoefficient] of right) {
+        const exponents = rightKey.split(',').map((e, i) => Number(e) + leftExponents[i]);
+        product = add(product, new Map([[exponents.join(','), ratMul(leftCoefficient, rightCoefficient)]]));
+      }
+    }
+    return product;
+  };
+  const convert = (e) => {
+    if (e.symbol && vars.includes(e.symbol)) {
+      return new Map([[vars.map((v) => (v === e.symbol ? 1 : 0)).join(','), [1n, 1n]]]);
+    }
+    if (isConstantExpr(e)) {
+      let rational;
+      try {
+        rational = rationalOfValue(e.isNumberLiteral ? e : e.N());
+      } catch {
+        return null;
+      }
+      return rational === null ? null : constant(rational);
+    }
+    const ops = e.ops ?? [];
+    if (e.operator === 'Negate') {
+      const operand = convert(ops[0]);
+      return operand === null ? null : mul(operand, constant([-1n, 1n]));
+    }
+    if (e.operator === 'Add' || e.operator === 'Subtract') {
+      let sum = new Map();
+      for (const [i, op] of ops.entries()) {
+        let term = convert(op);
+        if (term === null) return null;
+        if (e.operator === 'Subtract' && i > 0) term = mul(term, constant([-1n, 1n]));
+        sum = add(sum, term);
+      }
+      return sum;
+    }
+    if (e.operator === 'Multiply') {
+      let product = constant([1n, 1n]);
+      for (const op of ops) {
+        const factor = convert(op);
+        if (factor === null) return null;
+        product = mul(product, factor);
+      }
+      return product;
+    }
+    if (e.operator === 'Divide' && isConstantExpr(ops[1])) {
+      const numerator = convert(ops[0]);
+      const denominator = convert(ops[1]);
+      if (numerator === null || denominator === null || denominator.size !== 1) return null;
+      const [n, d] = denominator.get(zeroKey) ?? [0n, 1n];
+      return n === 0n ? null : mul(numerator, constant(ratNormalize([d, n])));
+    }
+    if (e.operator === 'Power') {
+      const exponent = ops[1];
+      if (!exponent?.isNumberLiteral || exponent.im !== 0 || !Number.isInteger(exponent.re)
+        || exponent.re < 0 || exponent.re > 12) return null;
+      const base = convert(ops[0]);
+      if (base === null) return null;
+      let power = constant([1n, 1n]);
+      for (let i = 0; i < exponent.re; i += 1) power = mul(power, base);
+      return power;
+    }
+    return null;
+  };
+  return convert(expr);
+}
+
+/**
+ * The factor profile of a written product: how many non-constant factors it
+ * has with multiplicity, whether every polynomial factor is primitive over
+ * the integers, and whether every coefficient it wrote was an integer — or
+ * null when some factor cannot be read as a rational-coefficient polynomial.
+ */
+function factorProfile(latex) {
+  let expr;
+  try {
+    expr = parseLatex(preprocess(latex));
+  } catch {
+    return null;
+  }
+  if (!expr.isValid) return null;
+  const symbols = new Set();
+  collectSymbols(expr, symbols);
+  const vars = [...symbols].sort();
+  const profile = { count: 0, primitive: true, integral: true };
+  const walk = (e, multiplicity) => {
+    if (isConstantExpr(e)) return true;
+    const ops = e.ops ?? [];
+    if (e.operator === 'Negate') return walk(ops[0], multiplicity);
+    if (e.operator === 'Multiply') return ops.every((op) => walk(op, multiplicity));
+    if (e.operator === 'Divide' && isConstantExpr(ops[1])) return walk(ops[0], multiplicity);
+    if (e.operator === 'Power') {
+      const exponent = ops[1];
+      if (!exponent?.isNumberLiteral || exponent.im !== 0 || !Number.isInteger(exponent.re)
+        || exponent.re < 0 || exponent.re > 12) return false;
+      return exponent.re === 0 || walk(ops[0], multiplicity * exponent.re);
+    }
+    if (e.symbol) {
+      profile.count += multiplicity;
+      return true;
+    }
+    const terms = exprToRationalTerms(e, vars);
+    if (terms === null || terms.size === 0) return false;
+    const entries = [...terms].map(([key, coefficient]) => [key.split(',').map(Number), coefficient]);
+    if (entries.some(([, [, d]]) => d !== 1n)) profile.integral = false;
+    if (entries.length === 1) {
+      // A single term that stayed a sum in the parse (`(x+x)`): its constant
+      // is free and its variables count like written powers.
+      profile.count += multiplicity * entries[0][0].reduce((sum, e) => sum + e, 0);
+      return true;
+    }
+    const content = entries.reduce((g, [, [n]]) => bigintGcd(g, n), 0n);
+    const integerCoefficients = entries.every(([, [, d]]) => d === 1n);
+    const commonVariable = vars.some((_, i) => entries.every(([exponents]) => exponents[i] > 0));
+    if (!integerCoefficients || content !== 1n || commonVariable) profile.primitive = false;
+    profile.count += multiplicity;
+    return true;
+  };
+  return walk(expr, 1) ? profile : null;
+}
+
 /**
  * One requirement each. A token holds when the response is written that way;
  * `lowest-terms` also holds for a response with no fraction to reduce, so it
@@ -3135,6 +3334,27 @@ const FORM_PREDICATES = {
     const product = asFactoredProduct(latex);
     return product !== null && product.compound >= 1 && product.count >= 2;
   },
+  // "Factor completely: $2x^2+8x+8$" answers `2(x+2)^2`, and `factored`
+  // passes the half-done `(2x+4)(x+2)` and `2(x^2+4x+4)` too. This token is
+  // `factored` plus completeness, read against the key (see factorProfile):
+  // every polynomial factor primitive over the integers, and at least as many
+  // non-constant factors, with multiplicity, as the key has. A key the reader
+  // cannot take as an integer-coefficient product (a radical, a fraction
+  // coefficient, a list) falls back to the shape check alone — the
+  // `reduced-fraction` spirit. A RESPONSE factor it cannot read fails
+  // instead: against an integer-coefficient key every correct complete
+  // factorization is readable, and failing open let a cancelling pair
+  // (`\cdot x\cdot\frac1x`, `(x+1)(x+1)^{-1}`, `|x|\frac{1}{|x|}`) buy the
+  // unfinished `(x^2+4)(x^2-4)` the factor count it lacked.
+  // Use it where the ask is "Factor" / "Factor completely" and the key is
+  // complete; a GCF-only ask keeps `factored` (see the ruling above).
+  'factored-completely': (latex, answer) => {
+    if (!FORM_PREDICATES.factored(latex)) return false;
+    const key = answer ? factorProfile(answer) : null;
+    if (key === null || !key.integral) return true;
+    const response = factorProfile(latex);
+    return response !== null && response.primitive && response.count >= key.count;
+  },
   // "Write $y=-x^2+2x-4$ in standard form" answers $y=-(x-1)^2-3$ — completing
   // the square changes the shape, not the value, so the printed general form
   // grades `correct` by construction. The §6 "standard form" class, vertex
@@ -3617,6 +3837,7 @@ const FORM_PHRASES = {
   'single-fraction': 'as a single fraction',
   'reduced-fraction': 'as a single fraction with all common factors cancelled',
   factored: 'in factored form',
+  'factored-completely': 'factored completely, with no factor that can be factored further',
   'point-slope-form': 'in point-slope form, y − y₁ = m(x − x₁), with the slope multiplying the parenthesized difference',
   'slope-intercept-form': 'in slope-intercept form, y = mx + b',
   'vertex-form': 'in vertex form, with the square completed',
@@ -3669,6 +3890,12 @@ export function describeFormFeedback(studentRaw, spec) {
   const { tokens, valid } = parseAnswerForm(spec);
   const general = describeAnswerForm(spec);
   if (!valid || !tokens.length) return general;
+  // A response already in factored form that missed only completeness is
+  // told to keep going — "now write it factored completely" would read as
+  // if the factoring it did had not registered.
+  if (tokens.length === 1 && tokens[0] === 'factored-completely' && checkFormAsGraded(studentRaw, 'factored')) {
+    return 'That value is right and it is factored — now keep factoring: one of its factors can still be factored further.';
+  }
   if (!tokens.every((token) => NUMBER_SHAPE_TOKENS.has(token) || DENOMINATOR_TOKEN.test(token))) return general;
   const unworked = (piece) => {
     const written = bareLatex(bracketsAsParentheses(piece)).replace(/^[a-zA-Z]\s*=\s*/, '');

@@ -455,6 +455,11 @@ test('a factoring prompt is trivially satisfiable without answerForm', () => {
     0,
     'answerForm="factored" rules the printed polynomial out',
   );
+  assert.equal(
+    lint(factorFillin('Factor completely: $4m^2-4m-8$.', '4(m+1)(m-2)', 'factored-completely')).filter(trivial).length,
+    0,
+    'answerForm="factored-completely" rules it out too',
+  );
   // The "declared form too weak to rule the printed value out" failure mode has
   // no instance here, unlike the numeral prompts: every numeral token rejects a
   // polynomial outright, so any mistagged form silences this rule. What catches

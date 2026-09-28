@@ -137,6 +137,7 @@ names):
 | `distributed` | no parentheses left to multiply out. Each term's numeral fraction over monomial halves is reduced with integer halves, as under `no-like-terms` |
 | `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), no same-index product of radicals in one top-level term, explicit ($\sqrt{3}\cdot\sqrt{6}$) or juxtaposed ($\sqrt[4]{12y^3}\sqrt[4]{8y^3}$ — rationalized-fraction numerators keep theirs), and no fractional/decimal exponents or decimal literals (radical notation is the form) |
 | `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
+| `factored-completely` | `factored`, and complete: every polynomial factor primitive over the integers (coefficient gcd 1, no variable common to all its terms, no fraction or decimal coefficient) and at least as many non-constant factors, with multiplicity, as the key (`x^3` counts 3, `(x+2)^2` counts 2) — for "Factor completely: $2x^2+8x+8$", where `(2x+4)(x+2)`, `2(x^2+4x+4)` and `4(\tfrac12x+1)(x+2)` fail against `2(x+2)^2`. Order, signs (`-(2-x)` for `x-2`), and how the constant is split are free. A key the checker cannot read as an integer-coefficient product passes on value and `factored` alone; a response factor it cannot read (`\frac1x`, `|x|`) fails |
 | `point-slope-form` | one equation, one side the bare output variable plus at most a constant, the other a single $m(x-x_1)$ term (either orientation) — for "Write the point-slope form…", where the engine grades the distributed and scaled restatements equal; the collapsed origin case $y=mx$ passes |
 | `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$. A one-letter label other than `y` (or the key's own label letter) fails: `x=-\tfrac23y-\tfrac23` is the line solved for $x$ |
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
@@ -184,7 +185,12 @@ and `2^4\cdot5` to `80`. A **symbolic** form is checked against the parse —
 `factored` is a shape check, not a completeness check: `2(2x^2+8x+8)` satisfies
 it, deliberately — a GCF-only exercise correctly answers `-7a(a^2-3a+2)`, and
 demanding full factorization would fire on sound content (core §5). Ruling
-out the printed polynomial is the whole job.
+out the printed polynomial is the whole job. Which to declare: a GCF-only ask
+("Factor … by taking out the greatest common factor", "Factor the greatest
+common factor from …") keeps `factored`; a "Factor" / "Factor completely" ask
+whose key is a complete factorization takes `factored-completely`, which also
+refuses a half-finished product (`(2x+4)(x+2)` for `2(x+2)^2`) (Elementary
+Algebra chapter 7 re-review, September 27, 2026).
 
 The lint rejects a re-expression prompt with no `answerForm`, and
 `verify-section` rejects an answer that does not satisfy the form it declares.

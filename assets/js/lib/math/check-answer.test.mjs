@@ -1004,6 +1004,75 @@ const formCases = [
   // a wrong value is wrong, not a form complaint
   ['(x+2)(x+5)', '(x+2)(x+4)', 'factored', 'incorrect'],
   ['(x+1)(x+8)', '(x+2)(x+4)', 'factored', 'incorrect'],
+  // `factored` is a shape check, so a half-finished factorization of a
+  // "Factor completely" ask passed it (Elementary Algebra 7, September 27,
+  // 2026) — kept that way for the GCF-only asks …
+  ['(2x+4)(x+2)', '2(x+2)^2', 'factored', 'correct'],
+  ['2(x^2+4x+4)', '2(x+2)^2', 'factored', 'correct'],
+  // … while factored-completely also demands every polynomial factor be
+  // primitive and the key's factor count (with multiplicity) be reached.
+  ['2(x+2)^2', '2(x+2)^2', 'factored-completely', 'correct'],
+  ['2(x+2)(x+2)', '2(x+2)^2', 'factored-completely', 'correct'],
+  ['(x+2)^2\\cdot2', '2(x+2)^2', 'factored-completely', 'correct'],
+  ['2(-x-2)^2', '2(x+2)^2', 'factored-completely', 'correct'],
+  ['(2x+4)(x+2)', '2(x+2)^2', 'factored-completely', 'form'],
+  ['(x+2)(2x+4)', '2(x+2)^2', 'factored-completely', 'form'],
+  ['2(x^2+4x+4)', '2(x+2)^2', 'factored-completely', 'form'],
+  ['2x^2+8x+8', '2(x+2)^2', 'factored-completely', 'form'],
+  ['2(x+3)^2', '2(x+2)^2', 'factored-completely', 'incorrect'],
+  // a factor with a fraction (or decimal) coefficient hides integer content:
+  // `4(\frac12x+1)` is `2x+4`, so the 2 in it was never factored out
+  ['4(\\frac12x+1)(x+2)', '2(x+2)^2', 'factored-completely', 'form'],
+  ['(0.5x+1)(4x+8)', '2(x+2)^2', 'factored-completely', 'form'],
+  // constants inside a factor are evaluated, not waved through
+  ['(2x+\\sqrt{16})(x+2)', '2(x+2)^2', 'factored-completely', 'form'],
+  // constants are free: the content may be split or signed
+  ['4(m+1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'correct'],
+  ['2\\cdot2(m+1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'correct'],
+  ['-4(-m-1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'correct'],
+  ['(2m+2)(2m-4)', '4(m+1)(m-2)', 'factored-completely', 'form'],
+  ['2(m+1)(2m-4)', '4(m+1)(m-2)', 'factored-completely', 'form'],
+  // sign-flipped factors, a leading −1, any order
+  ['-(2-x)(x+3)', '(x-2)(x+3)', 'factored-completely', 'correct'],
+  ['(2-x)(x+3)', '-(x-2)(x+3)', 'factored-completely', 'correct'],
+  ['-1(x-2)(x+3)', '-(x-2)(x+3)', 'factored-completely', 'correct'],
+  ['(x+3)(x-2)', '(x-2)(x+3)', 'factored-completely', 'correct'],
+  ['-(x^2+x-6)', '-(x-2)(x+3)', 'factored-completely', 'form'],
+  // a repeated variable counts like its power
+  ['x\\cdot x(x+1)', 'x^2(x+1)', 'factored-completely', 'correct'],
+  ['x^2(x+1)', 'x^2(x+1)', 'factored-completely', 'correct'],
+  ['x(x^2+x)', 'x^2(x+1)', 'factored-completely', 'form'],
+  // a sum or difference of cubes is complete at binomial × trinomial
+  ['(x-2)(x^2+2x+4)', '(x-2)(x^2+2x+4)', 'factored-completely', 'correct'],
+  ['(x^2+2x+4)(x-2)', '(x-2)(x^2+2x+4)', 'factored-completely', 'correct'],
+  // a nested difference of squares must be split all the way
+  ['(x^2+4)(x+2)(x-2)', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'correct'],
+  ['(x-2)(x+2)(x^2+4)', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'correct'],
+  ['(x^2+4)(x^2-4)', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
+  // a cancelling pair cannot buy the missing factor count
+  ['(x^2+4)(x^2-4)x\\cdot x^{-1}', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
+  ['(x^2+4)(x^2-4)(x+1)(x+1)^{-1}', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
+  ['(x^2+4)(x^2-4)|x|\\frac{1}{|x|}', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
+  ['(x^2+4)(x^2-4)x^0', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
+  // multivariate: a variable common to every term of a factor is unfinished
+  ['(3a-2b)(a+5b)', '(3a-2b)(a+5b)', 'factored-completely', 'correct'],
+  ['(a+5b)(3a-2b)', '(3a-2b)(a+5b)', 'factored-completely', 'correct'],
+  ['xy(x+y)', 'xy(x+y)', 'factored-completely', 'correct'],
+  ['x(xy+y^2)', 'xy(x+y)', 'factored-completely', 'form'],
+  ['y(x^2+xy)', 'xy(x+y)', 'factored-completely', 'form'],
+  ['3u{(5u - v)}^2', '3u(5u-v)^2', 'factored-completely', 'correct'],
+  // the GCF step alone is not complete when the key goes further
+  ['-7a(a^2-3a+2)', '-7a(a-1)(a-2)', 'factored-completely', 'form'],
+  ['-7a(a-1)(a-2)', '-7a(a-1)(a-2)', 'factored-completely', 'correct'],
+  // a key the reader cannot take as an integer-coefficient product grades
+  // on value and shape alone
+  ['(x-\\sqrt2)(x+\\sqrt2)', '(x-\\sqrt2)(x+\\sqrt2)', 'factored-completely', 'correct'],
+  ['(x+\\sqrt2)(x-\\sqrt2)', '(x-\\sqrt2)(x+\\sqrt2)', 'factored-completely', 'correct'],
+  ['\\frac12(x+2)(x+2)', '(\\frac12x+1)(x+2)', 'factored-completely', 'correct'],
+  ['x^2-2', '(x-\\sqrt2)(x+\\sqrt2)', 'factored-completely', 'form'],
+  // the printed polynomial still fails the shape half
+  ['x^2+6x+8', '(x+2)(x+4)', 'factored-completely', 'form'],
+  ['1(x^2+6x+8)', '(x+2)(x+4)', 'factored-completely', 'form'],
   // vertex-form — the §6 "standard form" class, parabola half. Completing the
   // square changes the shape, not the value, so the printed general form
   // grades equal to the answer and only the squared-binomial test separates
@@ -1569,6 +1638,17 @@ test('answerForm parsing and feedback wording', async (t) => {
     assert.equal(describeFormFeedback('\\frac{6}{8}', 'fraction lowest-terms'), describeAnswerForm('fraction lowest-terms'));
     assert.equal(describeFormFeedback('4.5', 'percent'), describeAnswerForm('percent'));
     assert.equal(describeFormFeedback('6\\cdot x+6\\cdot8', 'expanded'), describeAnswerForm('expanded'));
+  });
+
+  // factored-completely: a response already factored that stopped short is
+  // told to keep factoring; the printed polynomial gets the token sentence.
+  await t.test('an unfinished factorization is told to keep factoring', () => {
+    const keepGoing = 'now keep factoring: one of its factors can still be factored further';
+    for (const typed of ['(2x+4)(x+2)', '2(x^2+4x+4)', 'x(xy+y^2)', '(x^2+4)(x^2-4)']) {
+      assert.ok(describeFormFeedback(typed, 'factored-completely').includes(keepGoing), typed);
+    }
+    assert.equal(describeFormFeedback('2x^2+8x+8', 'factored-completely'), describeAnswerForm('factored-completely'));
+    assert.ok(describeAnswerForm('factored-completely').includes('factored completely'));
   });
 
   await t.test('grouping brackets read as parentheses; intervals, lists and root indices keep theirs', () => {

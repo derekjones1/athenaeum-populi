@@ -566,7 +566,7 @@ export const NAMED_FORM_ASKS = [
   {
     ask: /\b(?:leave|write|give|enter)\b[^.?!]*\bin factored form\b/i,
     name: 'factored form',
-    tokens: ['factored'],
+    tokens: ['factored', 'factored-completely'],
   },
   {
     ask: /\bas a mixed number\b/i,
