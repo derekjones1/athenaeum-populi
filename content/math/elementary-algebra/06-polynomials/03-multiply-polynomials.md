@@ -38,7 +38,7 @@ $$
   question="Multiply: $5(x + 7)$."
   answer="5x + 35"
   answerForm="expanded"
-  hint="Distribute the 5 to each term inside the parentheses: $5\cdot x$ and $5\cdot 7$."
+  hint="Multiply each term inside the parentheses by $5$."
 >}}
 
 **Example.** Multiply: $y(y-2)$.
@@ -54,7 +54,7 @@ $$
   question="Multiply: $x(x - 7)$."
   answer="x^2 - 7x"
   answerForm="expanded"
-  hint="Distribute the x: $x\cdot x$ gives $x^2$, and $x\cdot 7$ gives 7x."
+  hint="Multiply each term inside the parentheses by $x$, adding exponents when the bases match."
 >}}
 
 **Example.** Multiply: $7x(2x+y)$.
@@ -70,7 +70,7 @@ $$
   question="Multiply: $5x(x + 4y)$."
   answer="5x^2 + 20xy"
   answerForm="expanded"
-  hint="Distribute the 5x: $5x\cdot x$ gives $5x^2$, and $5x\cdot 4y$ gives 20xy."
+  hint="Multiply each term inside the parentheses by $5x$: multiply the coefficients, then the variables."
 >}}
 
 **Example.** Multiply: $-2y\left(4y^2+3y-5\right)$.
@@ -102,7 +102,7 @@ $$
   question="Multiply: $4x(3x^2 - 5x + 3)$."
   answer="12x^3 - 20x^2 + 12x"
   answerForm="expanded"
-  hint="Distribute 4x to each term, adding exponents when multiplying the variable parts."
+  hint="Distribute $4x$ to each term, adding exponents when multiplying the variable parts."
 >}}
 
 When the monomial is the second factor, we use the Distributive Property to
@@ -121,7 +121,7 @@ $$
   question="Multiply: $(x + 8)p$."
   answer="xp + 8p"
   answerForm="expanded"
-  hint="The monomial p is the second factor. Distribute it to each term of the binomial."
+  hint="The monomial $p$ is the second factor. Distribute it to each term of the binomial."
 >}}
 
 ## Multiply a Binomial by a Binomial
@@ -161,7 +161,7 @@ $$
 {{< fillin
   question="Multiply: $(x + 8)(x + 9)$."
   answer="x^2 + 17x + 72"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   hint="Distribute $(x + 9)$ to each term of the first binomial, then combine the two middle terms."
 >}}
 
@@ -178,8 +178,8 @@ $$
 {{< fillin
   question="Multiply: $(3b + 5)(4b + 6)$."
   answer="12b^2 + 38b + 30"
-  answerForm="expanded"
-  hint="Distribute $(4b + 6)$, then combine the two middle terms 18b and 20b."
+  answerForm="expanded distributed no-like-terms"
+  hint="Distribute $(4b + 6)$ to each term of the first binomial, then combine the two middle terms."
 >}}
 
 **Example.** Multiply: $(4y+3)(2y-5)$.
@@ -195,8 +195,8 @@ $$
 {{< fillin
   question="Multiply: $(5y + 2)(6y - 3)$."
   answer="30y^2 - 3y - 6"
-  answerForm="expanded"
-  hint="Distribute, then combine the two middle terms $-15y$ and 12y."
+  answerForm="expanded distributed no-like-terms"
+  hint="Distribute $(6y - 3)$ to each term of the first binomial, then combine the two middle terms, keeping each sign with its term."
 >}}
 
 **Example.** Multiply: $(x-2)(x-y)$.
@@ -213,7 +213,7 @@ There are no like terms to combine.
 {{< fillin
   question="Multiply: $(a + 7)(a - b)$."
   answer="a^2 - ab + 7a - 7b"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   hint="Distribute $(a - b)$ to each term. There are no like terms to combine."
 >}}
 
@@ -254,8 +254,8 @@ $$
 {{< fillin
   question="Multiply using the FOIL method: $(x + 6)(x + 8)$."
   answer="x^2 + 14x + 48"
-  answerForm="expanded"
-  hint="First $x^2$, Outer 8x, Inner 6x, Last 48; then combine the middle terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Multiply the First, Outer, Inner, and Last pairs of terms, then combine the two middle terms."
 >}}
 
 {{< callout type="info" >}}
@@ -285,8 +285,8 @@ $$
 {{< fillin
   question="Multiply: $(x - 7)(x + 5)$."
   answer="x^2 - 2x - 35"
-  answerForm="expanded"
-  hint="First $x^2$, Outer 5x, Inner $-7x$, Last -35; combine 5x and $-7x$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use FOIL, keeping the sign of $-7$ with it in the Inner and Last products, then combine the two middle terms."
 >}}
 
 **Example.** Multiply: $(4x+3)(2x-5)$.
@@ -294,9 +294,9 @@ $$
 $$
 \begin{array}{lrcl}
 \text{First } (4x \cdot 2x): & & & 8x^2 \\[4pt]
-\text{Outer } (4x \cdot -5): & & & 8x^2 - 20x \\[4pt]
+\text{Outer } (4x \cdot (-5)): & & & 8x^2 - 20x \\[4pt]
 \text{Inner } (3 \cdot 2x):  & & & 8x^2 - 20x + 6x \\[4pt]
-\text{Last } (3 \cdot -5):   & & & 8x^2 - 20x + 6x - 15 \\[4pt]
+\text{Last } (3 \cdot (-5)):   & & & 8x^2 - 20x + 6x - 15 \\[4pt]
 \text{Combine like terms.}   & & & 8x^2 - 14x - 15
 \end{array}
 $$
@@ -304,12 +304,12 @@ $$
 {{< fillin
   question="Multiply: $(3x + 7)(5x - 2)$."
   answer="15x^2 + 29x - 14"
-  answerForm="expanded"
-  hint="First $15x^2$, Outer $-6x$, Inner 35x, Last -14; combine $-6x$ and 35x."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use FOIL, multiplying coefficients in each pair and keeping the sign of $-2$ with it, then combine the two middle terms."
 >}}
 
-The final products in the last examples were trinomials because we could
-combine the two middle terms. This is not always the case.
+The final products in the last three examples were trinomials because we
+could combine the two middle terms. This is not always the case.
 
 **Example.** Multiply: $(3x-y)(2x-5)$.
 
@@ -327,8 +327,8 @@ There are no like terms to combine.
 {{< fillin
   question="Multiply: $(7x - y)(2x - 5)$."
   answer="14x^2 - 35x - 2xy + 5y"
-  answerForm="expanded"
-  hint="First $14x^2$, Outer $-35x$, Inner $-2xy$, Last 5y. There are no like terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use FOIL, keeping the signs of $-y$ and $-5$ with their terms, then check whether any two of the four products are like terms."
 >}}
 
 Be careful of the exponents in the next example.
@@ -349,8 +349,8 @@ There are no like terms to combine.
 {{< fillin
   question="Multiply: $(x^2 + 6)(x - 8)$."
   answer="x^3 - 8x^2 + 6x - 48"
-  answerForm="expanded"
-  hint="First $x^3$, Outer $-8x^2$, Inner 6x, Last -48. Watch the exponent on the First term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use FOIL, adding exponents when you multiply $x^2$ by $x$, then check for like terms."
 >}}
 
 **Example.** Multiply: $(3pq+5)(6pq-11)$.
@@ -368,8 +368,8 @@ $$
 {{< fillin
   question="Multiply: $(2ab + 5)(4ab - 4)$."
   answer="8a^2b^2 + 12ab - 20"
-  answerForm="expanded"
-  hint="First $8a^2b^2$, Outer $-8ab$, Inner 20ab, Last -20; combine $-8ab$ and 20ab."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use FOIL: in each pair multiply the coefficients and add the exponents on $a$ and on $b$, then combine the two $ab$ terms."
 >}}
 
 ### Using the Vertical Method
@@ -404,14 +404,14 @@ then multiply $3y-1$ by $2y$, lining up like terms in columns. Finally, add
 the like terms.
 
 $$
-\begin{array}{r}
-3y - 1 \\
-\times\ 2y - 6 \\
+\begin{array}{rrr}
+ & 3y & {}-1 \\
+\times & 2y & {}-6 \\
 \hline
--18y + 6 \\
-6y^2 - 2y\phantom{{}+6} \\
+ & -18y & {}+6 \\
+6y^2 & {}-2y & \\
 \hline
-6y^2 - 20y + 6
+6y^2 & {}-20y & {}+6
 \end{array}
 $$
 
@@ -420,8 +420,8 @@ Notice the partial products are the same as the terms in the FOIL method.
 {{< fillin
   question="Multiply using the Vertical Method: $(5m - 7)(3m - 6)$."
   answer="15m^2 - 51m + 42"
-  answerForm="expanded"
-  hint="Partial products: $-6(5m - 7) = -30m + 42$ and $3m(5m - 7) = 15m^2 - 21m$. Add like terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Multiply $5m - 7$ by $-6$, then by $3m$, lining up like terms in columns, and add the partial products."
 >}}
 
 We have now used three methods for multiplying binomials. Be sure to
@@ -459,8 +459,8 @@ $$
 {{< fillin
   question="Multiply using the Distributive Property: $(y - 3)(y^2 - 5y + 2)$."
   answer="y^3 - 8y^2 + 17y - 6"
-  answerForm="expanded"
-  hint="Distribute y and then -3 across the trinomial, then combine like terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Distribute $y$ and then $-3$ across the trinomial, then combine like terms."
 >}}
 
 Now let's do this same multiplication using the Vertical Method.
@@ -473,21 +473,21 @@ get fewer partial products this way. Multiply $2b^2-5b+8$ by $3$, then
 multiply $2b^2-5b+8$ by $b$, lining up like terms, and add.
 
 $$
-\begin{array}{r}
-2b^2 - 5b + 8 \\
-\times\phantom{2b^2 - 5}\ b + 3 \\
+\begin{array}{rrrr}
+ & 2b^2 & {}-5b & {}+8 \\
+\times & & b & {}+3 \\
 \hline
-6b^2 - 15b + 24 \\
-2b^3 - 5b^2 + 8b\phantom{{}+24} \\
+ & 6b^2 & {}-15b & {}+24 \\
+2b^3 & {}-5b^2 & {}+8b & \\
 \hline
-2b^3 + b^2 - 7b + 24
+2b^3 & {}+b^2 & {}-7b & {}+24
 \end{array}
 $$
 
 {{< fillin
   question="Multiply using the Vertical Method: $(x + 4)(2x^2 - 3x + 5)$."
   answer="2x^3 + 5x^2 - 7x + 20"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   hint="Partial products: $4(2x^2 - 3x + 5)$ and $x(2x^2 - 3x + 5)$. Line up like terms and add."
 >}}
 
@@ -501,12 +501,14 @@ $$
 
 ## Key terms
 
-**FOIL method** — a shortcut for multiplying two binomials by adding the
-products of the **F**irst, **O**uter, **I**nner, and **L**ast pairs of
-terms. **Vertical Method** — a way to multiply any two polynomials by
-stacking them and adding partial products, just like multiplying whole
-numbers. Both the FOIL and Vertical methods are organized applications of
-the Distributive Property.
+- **FOIL method** — a shortcut for multiplying two binomials by adding the
+  products of the **F**irst, **O**uter, **I**nner, and **L**ast pairs of
+  terms.
+- **Vertical Method** — a way to multiply any two polynomials by stacking
+  them and adding partial products, just like multiplying whole numbers.
+
+Both the FOIL and Vertical methods are organized applications of the
+Distributive Property.
 
 ## Practice
 
@@ -516,7 +518,7 @@ the Distributive Property.
   question="Multiply: $4(w + 10)$."
   answer="4w + 40"
   answerForm="expanded"
-  hint="Distribute the 4 to each term inside the parentheses."
+  hint="Distribute the $4$ to each term inside the parentheses."
 >}}
 
 {{< fillin
@@ -530,7 +532,7 @@ the Distributive Property.
   question="Multiply: $(w - 6) \cdot 8$."
   answer="8w - 48"
   answerForm="expanded"
-  hint="The monomial 8 is the second factor here. Distribute it to each term of the binomial."
+  hint="The monomial $8$ is the second factor here. Distribute it to each term of the binomial."
 >}}
 
 ### Multiply a binomial by a binomial
@@ -538,22 +540,22 @@ the Distributive Property.
 {{< fillin
   question="Multiply: $(w + 5)(w + 7)$."
   answer="w^2 + 12w + 35"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   hint="Use FOIL or the Distributive Property to find the four products, then combine the two middle terms."
 >}}
 
 {{< fillin
   question="Multiply: $(5x - y)(3x - 6)$."
   answer="15x^2 - 3xy - 30x + 6y"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   hint="Multiply each term of the first binomial by each term of the second. There are no like terms to combine here."
 >}}
 
 {{< fillin
   question="Multiply: $(x^2 + 8)(x^2 - 5)$."
   answer="x^4 + 3x^2 - 40"
-  answerForm="expanded"
-  hint="Multiply the First terms carefully — $x^2\cdot x^2$ adds exponents to give $x^4$ — then combine the two middle terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Multiply the First terms carefully — $x^2\cdot x^2$ adds the exponents — then combine the two middle terms."
 >}}
 
 ### Multiply a trinomial by a binomial
@@ -561,24 +563,24 @@ the Distributive Property.
 {{< fillin
   question="Multiply: $(x + 5)(x^2 + 4x + 3)$."
   answer="x^3 + 9x^2 + 23x + 15"
-  answerForm="expanded"
-  hint="Distribute both x and 5 across the trinomial, then combine like terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Distribute both $x$ and $5$ across the trinomial, then combine like terms."
 >}}
 
 {{< fillin
   question="Multiply: $(y + 8)(4y^2 + y - 7)$."
   answer="4y^3 + 33y^2 + y - 56"
-  answerForm="expanded"
-  hint="Distribute y and 8 across the trinomial. Only the two $y^2$-terms combine."
+  answerForm="expanded distributed no-like-terms"
+  hint="Distribute $y$ and $8$ across the trinomial, then combine like terms, checking each power of $y$."
 >}}
 
 {{< fillin
   question="Multiply: $(3q + 1)(q^2 - 4q - 5)$."
   answer="3q^3 - 11q^2 - 19q - 5"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   hint="Distribute $3q$ and $1$ across the trinomial, watching signs, then combine like terms."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.3: Multiply Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the Vertical Method partial-product work as stacked-multiplication arrays; described the FOIL first/outer/inner/last diagrams in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.3: Multiply Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the Vertical Method partial-product work as stacked-multiplication arrays; described the FOIL first/outer/inner/last diagrams in prose; omitted the Be Prepared quiz, the table comparing the Distributive Property and FOIL on (x + 3)(x + 7), Self Check checklist, media links, and unselected end-of-section exercises; replaced the Key Concepts list with a Key terms list; said "the last three examples" where the source says "the last four examples" (the fourth, (x − 2)(x − y), has no like terms to combine); adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

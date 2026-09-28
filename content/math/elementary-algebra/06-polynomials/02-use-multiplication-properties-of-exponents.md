@@ -65,7 +65,7 @@ $(0.63)(0.63) = 0.3969$.
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{2}{5}^3$."
+  question="Simplify: $\left(\tfrac{2}{5}\right)^3$."
   answer="\frac{8}{125}"
   answerDisplay="$\tfrac{8}{125}$"
   answerForm="fraction lowest-terms"
@@ -90,14 +90,14 @@ opposite.
   question="Simplify: $(-3)^4$."
   answer="81"
   answerForm="decimal"
-  hint="The parentheses mean the base is -3. Multiply four factors of -3; an even number of negative factors gives a positive result."
+  hint="The parentheses make $-3$ the base: multiply four factors of $-3$."
 >}}
 
 {{< fillin
   question="Simplify: $-3^4$."
   answer="-81"
   answerForm="decimal"
-  hint="Without parentheses around the -3, this means the opposite of $3^4$. Raise 3 to the fourth power first, then take the opposite."
+  hint="With no parentheses, the exponent applies only to the $3$, not to the negative sign. Follow the order of operations."
 >}}
 
 ## Simplify Expressions Using the Product Property for Exponents
@@ -142,7 +142,7 @@ $y^5 \cdot y^6 = y^{5+6} = y^{11}$.
   answer="b^{17}"
   answerForm="single-term"
   answerDisplay="$b^{17}$"
-  hint="The bases are the same, so add the exponents: $9 + 8$."
+  hint="The bases are the same, so add the exponents."
 >}}
 
 **Example.** Simplify: (a) $2^5 \cdot 2^9$ (b) $3 \cdot 3^4$.
@@ -166,7 +166,7 @@ $3 \cdot 3^4 = 3^1 \cdot 3^4 = 3^{1+4} = 3^5$.
   answer="7^{14}"
   answerForm="single-power"
   answerDisplay="$7^{14}$"
-  hint="The bases are the same, so add the exponents: $6 + 8$."
+  hint="The bases are the same, so add the exponents."
 >}}
 
 **Example.** Simplify: (a) $a^7 \cdot a$ (b) $x^{27} \cdot x^{13}$.
@@ -178,19 +178,19 @@ $a^7 \cdot a = a^7 \cdot a^1 = a^{7+1} = a^8$.
 $x^{27} \cdot x^{13} = x^{27+13} = x^{40}$.
 
 {{< fillin
-  question="Simplify: $p^5 \cdot p$. Write the answer as a power of p."
+  question="Simplify: $p^5 \cdot p$. Write the answer as a power of $p$."
   answer="p^6"
   answerForm="single-term"
   answerDisplay="$p^6$"
-  hint="Rewrite p as $p^1$, then add the exponents."
+  hint="Rewrite $p$ as $p^1$, then add the exponents."
 >}}
 
 {{< fillin
-  question="Simplify: $y^{14} \cdot y^{29}$. Write the answer as a power of y."
+  question="Simplify: $y^{14} \cdot y^{29}$. Write the answer as a power of $y$."
   answer="y^{43}"
   answerForm="single-term"
   answerDisplay="$y^{43}$"
-  hint="The bases are the same, so add the exponents: $14 + 29$."
+  hint="The bases are the same, so add the exponents."
 >}}
 
 We can extend the Product Property for Exponents to more than two factors.
@@ -201,11 +201,11 @@ Add the exponents, since the bases are the same:
 $d^4 \cdot d^5 \cdot d^2 = d^{4+5+2} = d^{11}$.
 
 {{< fillin
-  question="Simplify: $x^6 \cdot x^4 \cdot x^8$. Write the answer as a power of x."
+  question="Simplify: $x^6 \cdot x^4 \cdot x^8$. Write the answer as a power of $x$."
   answer="x^{18}"
   answerForm="single-term"
   answerDisplay="$x^{18}$"
-  hint="Add all three exponents: $6 + 4 + 8$."
+  hint="All three bases are the same, so add all three exponents."
 >}}
 
 ## Simplify Expressions Using the Power Property for Exponents
@@ -242,19 +242,19 @@ the exponents: $\left(y^5\right)^9 = y^{5 \cdot 9} = y^{45}$.
 $\left(4^4\right)^7 = 4^{4 \cdot 7} = 4^{28}$.
 
 {{< fillin
-  question="Simplify: $(b^7)^5$. Write the answer as a power of b."
+  question="Simplify: $(b^7)^5$. Write the answer as a power of $b$."
   answer="b^{35}"
   answerForm="single-power"
   answerDisplay="$b^{35}$"
-  hint="To raise a power to a power, multiply the exponents: $7 \cdot 5$."
+  hint="To raise a power to a power, multiply the exponents."
 >}}
 
 {{< fillin
-  question="Simplify: $(z^6)^9$. Write the answer as a power of z."
+  question="Simplify: $(z^6)^9$. Write the answer as a power of $z$."
   answer="z^{54}"
   answerForm="single-power"
   answerDisplay="$z^{54}$"
-  hint="To raise a power to a power, multiply the exponents: $6 \cdot 9$."
+  hint="To raise a power to a power, multiply the exponents."
 >}}
 
 ## Simplify Expressions Using the Product to a Power Property
@@ -263,7 +263,11 @@ We will now look at an expression containing a product that is raised to a
 power. Consider $(2x)^3$. What does this mean?
 
 $$
-(2x)^3 = (2x)(2x)(2x) = \underbrace{(2 \cdot 2 \cdot 2)}_{3 \text{ factors of } 2} \cdot \underbrace{(x \cdot x \cdot x)}_{3 \text{ factors of } x} = 2^3 \cdot x^3
+\begin{aligned}
+(2x)^3 &= (2x)(2x)(2x) \\
+&= \underbrace{(2 \cdot 2 \cdot 2)}_{3 \text{ factors of } 2} \cdot \underbrace{(x \cdot x \cdot x)}_{3 \text{ factors of } x} \\
+&= 2^3 \cdot x^3
+\end{aligned}
 $$
 
 Notice that each factor was raised to the power, so $(2x)^3$ is
@@ -296,14 +300,15 @@ $(3mn)^3 = (3)^3 m^3 n^3 = 27m^3 n^3$.
   answer="144y^2"
   answerForm="single-term"
   answerDisplay="$144y^2$"
-  hint="Raise each factor to the second power: square the -12 and square the y."
+  hint="Raise each factor to the second power: square the $-12$ and square the $y$."
 >}}
 
 {{< fillin
-  question="Simplify: (2wx)^5."
+  question="Simplify: $(2wx)^5$."
   answer="32w^5 x^5"
+  answerForm="single-term"
   answerDisplay="$32w^5 x^5$"
-  hint="Raise each factor to the fifth power: $2^5$, $w^5$, and $x^5$."
+  hint="Raise each factor inside the parentheses to the fifth power, then simplify the number."
 >}}
 
 ## Simplify Expressions by Applying Several Properties
@@ -338,11 +343,11 @@ $$
 $$
 
 {{< fillin
-  question="Simplify: $(a^4)^5 (a^7)^4$. Write the answer as a power of a."
+  question="Simplify: $(a^4)^5 (a^7)^4$. Write the answer as a power of $a$."
   answer="a^{48}"
   answerForm="single-term"
   answerDisplay="$a^{48}$"
-  hint="Use the Power Property on each factor (multiply exponents), then add: $(4\cdot 5) + (7\cdot 4)$."
+  hint="Apply the Power Property to each factor first, then add the resulting exponents."
 >}}
 
 {{< fillin
@@ -350,7 +355,7 @@ $$
   answer="-8c^{12} d^6"
   answerForm="single-term"
   answerDisplay="$-8c^{12} d^6$"
-  hint="Raise each factor to the third power: cube the -2, and multiply each variable's exponent by 3."
+  hint="Raise each factor to the third power: cube the $-2$, and multiply each variable's exponent by $3$."
 >}}
 
 **Example.** Simplify: (a) $(5m)^2 \left(3m^3\right)$
@@ -360,14 +365,22 @@ $$
 constants while adding the exponents:
 
 $$
-(5m)^2 \left(3m^3\right) = 25m^2 \cdot 3m^3 = 25 \cdot 3 \cdot m^2 \cdot m^3 = 75m^5
+\begin{aligned}
+(5m)^2 \left(3m^3\right) &= 25m^2 \cdot 3m^3 \\
+&= 25 \cdot 3 \cdot m^2 \cdot m^3 \\
+&= 75m^5
+\end{aligned}
 $$
 
 (b) Use the Product to a Power Property on each factor, then rearrange and
 combine:
 
 $$
-\left(3x^2 y\right)^4 \left(2xy^2\right)^3 = \left(81x^8 y^4\right)\left(8x^3 y^6\right) = 81 \cdot 8 \cdot x^8 \cdot x^3 \cdot y^4 \cdot y^6 = 648 x^{11} y^{10}
+\begin{aligned}
+\left(3x^2 y\right)^4 \left(2xy^2\right)^3 &= \left(81x^8 y^4\right)\left(8x^3 y^6\right) \\
+&= 81 \cdot 8 \cdot x^8 \cdot x^3 \cdot y^4 \cdot y^6 \\
+&= 648 x^{11} y^{10}
+\end{aligned}
 $$
 
 {{< fillin
@@ -375,12 +388,13 @@ $$
   answer="75n^{12}"
   answerForm="single-term"
   answerDisplay="$75n^{12}$"
-  hint="Square 5n to get $25n^2$, then multiply the constants $(25 \cdot 3)$ and add the exponents on n."
+  hint="Raise $5n$ to the second power first, then multiply the constants and add the exponents on $n$."
 >}}
 
 {{< fillin
-  question="Simplify: (c^4 d^2)^5 (3cd^5)^4."
+  question="Simplify: $(c^4 d^2)^5 (3cd^5)^4$."
   answer="81c^{24} d^{30}"
+  answerForm="single-term"
   answerDisplay="$81c^{24} d^{30}$"
   hint="Apply the Product to a Power Property to each factor, then multiply the constants and add matching exponents."
 >}}
@@ -403,7 +417,7 @@ $$
   answer="-35y^{11}"
   answerForm="single-term"
   answerDisplay="$-35y^{11}$"
-  hint="Multiply the coefficients $(5 \cdot -7)$ and add the exponents on $y (7 + 4)$."
+  hint="Multiply the coefficients, then add the exponents on $y$."
 >}}
 
 {{< fillin
@@ -411,7 +425,7 @@ $$
   answer="54b^9"
   answerForm="single-term"
   answerDisplay="$54b^9$"
-  hint="Multiply the coefficients $(-6 \cdot -9)$ and add the exponents on $b (4 + 5)$."
+  hint="Multiply the coefficients, then add the exponents on $b$."
 >}}
 
 **Example.** Multiply: $\left(\tfrac{5}{6}x^3 y\right)\left(12xy^2\right)$.
@@ -427,7 +441,7 @@ $$
   answer="6a^5 b^6"
   answerForm="single-term"
   answerDisplay="$6a^5 b^6$"
-  hint="Multiply the coefficients $(\tfrac{2}{5} \cdot 15 = 6)$ and add the exponents on each variable."
+  hint="Multiply the fraction by the whole-number coefficient, then add the exponents on each matching base."
 >}}
 
 {{< fillin
@@ -435,7 +449,7 @@ $$
   answer="8r^{11} s^8"
   answerForm="single-term"
   answerDisplay="$8r^{11} s^8$"
-  hint="Multiply the coefficients $(\tfrac{2}{3} \cdot 12 = 8)$ and add the exponents on $r (5 + 6)$ and $s (1 + 7)$."
+  hint="Multiply the fraction by the whole-number coefficient, then add the exponents on each matching base; $s$ is $s^1$."
 >}}
 
 ## Key terms
@@ -458,14 +472,14 @@ properties of exponents.
   question="Simplify: $(-2)^6$."
   answer="64"
   answerForm="decimal"
-  hint="Multiply six factors of $-2$; an even number of negative factors gives a positive result."
+  hint="The parentheses make $-2$ the base: multiply six factors of $-2$."
 >}}
 
 {{< fillin
   question="Simplify: $-2^6$."
   answer="-64"
   answerForm="decimal"
-  hint="Without parentheses, this means the opposite of $2^6$. Raise 2 to the sixth power first, then take the opposite."
+  hint="With no parentheses, the exponent applies only to the $2$, not to the negative sign. Follow the order of operations."
 >}}
 
 ### Simplify expressions using the Product Property for Exponents
@@ -475,33 +489,33 @@ properties of exponents.
   answer="x^6"
   answerForm="single-term"
   answerDisplay="$x^6$"
-  hint="The bases are the same, so add the exponents: $4 + 2$."
+  hint="The bases are the same, so add the exponents."
 >}}
 
 {{< fillin
-  question="Simplify: $q^{27} \cdot q^{15}$. Write the answer as a power of q."
+  question="Simplify: $q^{27} \cdot q^{15}$. Write the answer as a power of $q$."
   answer="q^{42}"
   answerForm="single-term"
   answerDisplay="$q^{42}$"
-  hint="The bases are the same, so add the exponents: $27 + 15$."
+  hint="The bases are the same, so add the exponents."
 >}}
 
 {{< fillin
-  question="Simplify: $y \cdot y^3 \cdot y^5$. Write the answer as a power of y."
+  question="Simplify: $y \cdot y^3 \cdot y^5$. Write the answer as a power of $y$."
   answer="y^9"
   answerForm="single-term"
   answerDisplay="$y^9$"
-  hint="Rewrite y as $y^1$, then add all three exponents: $1 + 3 + 5$."
+  hint="Rewrite $y$ as $y^1$, then add all three exponents."
 >}}
 
 ### Simplify expressions using the Power Property for Exponents
 
 {{< fillin
-  question="Simplify: $(b^2)^7$. Write the answer as a power of b."
+  question="Simplify: $(b^2)^7$. Write the answer as a power of $b$."
   answer="b^{14}"
   answerForm="single-power"
   answerDisplay="$b^{14}$"
-  hint="To raise a power to a power, multiply the exponents: $2 \cdot 7$."
+  hint="To raise a power to a power, multiply the exponents."
 >}}
 
 {{< fillin
@@ -509,7 +523,7 @@ properties of exponents.
   answer="3^{16}"
   answerDisplay="$3^{16}$"
   answerForm="single-power"
-  hint="To raise a power to a power, multiply the exponents: $8 \cdot 2$."
+  hint="To raise a power to a power, multiply the exponents."
 >}}
 
 ### Simplify expressions using the Product to a Power Property
@@ -519,7 +533,7 @@ properties of exponents.
   answer="25x^2"
   answerForm="single-term"
   answerDisplay="$25x^2$"
-  hint="Raise each factor to the second power: square the 5 and square the x."
+  hint="Raise each factor to the second power: square the $5$ and square the $x$."
 >}}
 
 {{< fillin
@@ -527,17 +541,17 @@ properties of exponents.
   answer="16a^2 b^2"
   answerForm="single-term"
   answerDisplay="$16a^2 b^2$"
-  hint="Raise each factor to the second power: square the 4, the a, and the b."
+  hint="Raise each factor to the second power: square the $4$, the $a$, and the $b$."
 >}}
 
 ### Simplify expressions by applying several properties
 
 {{< fillin
-  question="Simplify: $(w^4)^3 \cdot (w^5)^2$. Write the answer as a power of w."
+  question="Simplify: $(w^4)^3 \cdot (w^5)^2$. Write the answer as a power of $w$."
   answer="w^{22}"
   answerForm="single-term"
   answerDisplay="$w^{22}$"
-  hint="Use the Power Property on each factor (multiply exponents), then add: $(4\cdot 3) + (5\cdot 2)$."
+  hint="Apply the Power Property to each factor first, then add the resulting exponents."
 >}}
 
 {{< fillin
@@ -545,7 +559,7 @@ properties of exponents.
   answer="32x^5 y^{20}"
   answerForm="single-term"
   answerDisplay="$32x^5 y^{20}$"
-  hint="Raise each factor to the fifth power: $2^5$, $x^5$, and $(y^4)^5$."
+  hint="Raise each factor inside the parentheses to the fifth power, using the Power Property on $y^4$, then simplify the number."
 >}}
 
 {{< fillin
@@ -553,7 +567,7 @@ properties of exponents.
   answer="128r^8"
   answerForm="single-term"
   answerDisplay="$128r^8$"
-  hint="Raise each factor to its outer power first ($2^3, r^6$ and $4^2, r^2$), then multiply the constants and add the exponents on r."
+  hint="Raise each product to its outer power first, then multiply the constants and add the exponents on $r$."
 >}}
 
 {{< fillin
@@ -561,7 +575,7 @@ properties of exponents.
   answer="27x^{29}"
   answerForm="single-term"
   answerDisplay="$27x^{29}$"
-  hint="Apply the Power Property to each factor ($3^3, x^9$ and $x^{20}$), then multiply the constants and add the exponents on x."
+  hint="Raise each factor to its outer power first, then multiply the constants and add the exponents on $x$."
 >}}
 
 ### Multiply monomials
@@ -571,7 +585,7 @@ properties of exponents.
   answer="-18y^{11}"
   answerForm="single-term"
   answerDisplay="$-18y^{11}$"
-  hint="Multiply the coefficients $(6 \cdot -3)$ and add the exponents on $y (7 + 4)$."
+  hint="Multiply the coefficients, then add the exponents on $y$."
 >}}
 
 {{< fillin
@@ -579,7 +593,7 @@ properties of exponents.
   answer="72u^7"
   answerForm="single-term"
   answerDisplay="$72u^7$"
-  hint="Multiply the coefficients $(-8 \cdot -9)$ and add the exponents on $u (6 + 1)$."
+  hint="Multiply the coefficients, then add the exponents on $u$; $u$ is $u^1$."
 >}}
 
 {{< fillin
@@ -587,7 +601,7 @@ properties of exponents.
   answer="36a^5 b^7"
   answerForm="single-term"
   answerDisplay="$36a^5 b^7$"
-  hint="Multiply the coefficients $(4 \cdot 9)$ and add the exponents on each variable: a ($3 + 2$) and b ($1 + 6$)."
+  hint="Multiply the coefficients, then add the exponents on each matching base; $b$ is $b^1$."
 >}}
 
 {{< fillin
@@ -595,9 +609,9 @@ properties of exponents.
   answer="\frac{1}{2}x^3 y^3"
   answerForm="single-term"
   answerDisplay="$\tfrac{1}{2}x^3 y^3$"
-  hint="Multiply the coefficients $(\tfrac{2}{3} \cdot \tfrac{3}{4} = \tfrac{1}{2})$ and add the exponents on each variable."
+  hint="Multiply the fraction coefficients, simplifying the product, then add the exponents on each matching base."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.2: Use Multiplication Properties of Exponents](https://openstax.org/books/elementary-algebra-2e/pages/6-2-use-multiplication-properties-of-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.2: Use Multiplication Properties of Exponents](https://openstax.org/books/elementary-algebra-2e/pages/6-2-use-multiplication-properties-of-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the pattern-building tables that derive each property, and the worked-example step tables, as prose and typeset equations; omitted the Be Prepared quiz, Key Concepts summary, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, one part per question (not every part carried); and asked for each single-power answer to be written as a power of its base.</small>

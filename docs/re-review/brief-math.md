@@ -103,6 +103,41 @@ types as grouping (`[9+(-16)]+4`) grade like parentheses, and a right value
 typed as the unworked calculation is told "finish the calculation and enter
 just the result" rather than the token's shape sentence. A one-letter unit
 (`62 m`) still reads as a variable and grades `incorrect`, not `unit`.
+Since the Elementary Algebra chapter 2–5 re-review (September 27, 2026): a
+value form (`decimal`, `fraction`, `lowest-terms`, …) on an inequality,
+interval, or ordered-pair key is required of each numeric side, finite
+endpoint, or coordinate — the variable side is not checked, `\pm\infty`
+passes — so these keys now take a form like any computed key
+(`p\ge\frac34+\frac16` is `form` under `fraction lowest-terms`,
+`(-\infty,62+45]` under `decimal`, `(2,1+\frac12)` under `lowest-terms`; `2`
+fails `fraction`, so a mixed integer/fraction pair declares `lowest-terms`).
+The `\$`/unit rules hold per list member and per pair coordinate
+(`\$8,000, \$17,000` `correct`, `75 mph, 60 mph` and `(22^\circ,68^\circ)`
+`unit`), a `\$` on an inequality bound is dropped, `5{,}250` is grouping
+inside a pair, labelled coordinates `x=6, y=1` grade against `(6,1)`, and
+`slope-intercept-form` refuses a response solved for another letter
+(`x=-\frac23y-\frac23`). `expanded` refuses a term still written as a
+product of factors, numeral or variable (`5x\cdot x+5x\cdot4y`,
+`(5x)(x)+20xy`), and a power of a parenthesized group (`(6x)^2-25`,
+`(x+5)^2-3`); it still passes uncombined like terms (declare `no-like-terms`)
+and an unreduced coefficient (`\frac{2}{72}xy`, which `single-term` and
+`no-like-terms` pass too). `single-fraction` and `reduced-fraction` refuse a
+parenthesized monomial with a numeral raised to a power (`(2x^4)^5`,
+`\frac{(3y)^2}{…}`), so a Simplify-a-quotient-of-powers key no longer needs
+`distributed` added as a workaround; `(x^3)^5` with no numeral is still passed.
+`distributed` and `no-like-terms` require each term's numeral fraction over
+monomial halves to be reduced with integer halves: `3c+1-\frac{9}{6c}`,
+`3c+1-\frac{1.5}{c}`, the split-but-undivided
+`\frac{18c^2}{6c}+\frac{6c}{6c}-\frac{9}{6c}`, and `\frac{2}{72}xy+1` grade
+`form` (`expanded` and `single-term` alone still pass an unreduced
+coefficient).
+
+Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
+matcher in `verify-section` compares magnitudes, so an item whose stem prints
+`$-10$` in the wording of a +10 source item pairs with it and fails
+key-differs — keep a source item's own sign and wording. "Convert $-10$ …
+to …" trips the answer check's re-expression rule; ask "What is $-10$ … in
+…?". Do not widen a matcher or checker to pass your page; report the case.
 
 Figures and display math: `node tools/figures/render-page-figures.mjs
 <page> SP/render/<page-stem>` renders every inline `<svg>` to
@@ -152,6 +187,16 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      In the same sweep, add `reduced-fraction` to every Simplify fill-in
      keyed `single-fraction` whose key has a sum or difference in either
      half, and check the grader returns `form` on the unreduced fraction.
+     The sweep also covers every inequality, interval, and ordered-pair key
+     (a value form now applies to each bound, endpoint, and coordinate —
+     grader paragraph above): 214 inequality or interval fill-ins had none on
+     September 27, 2026. Run the grader on the bound left unworked
+     (`x\ge\frac34+\frac16`, `(-\infty,62+45]`) and expect `form`.
+     A Multiply or Simplify fill-in keyed a combined polynomial takes
+     `expanded distributed no-like-terms` (the Prealgebra 10.3 form), not
+     plain `expanded`, which accepts the FOIL line before combining
+     (`x^2+9x+9x+81`); 286 items declared plain `expanded` on September 27,
+     2026 (Elementary Algebra 6.3 and 6.4 swept theirs).
    - **grader reach:** run the grader on the forms a learner would
      naturally type (with and without digit-grouping commas, `x=5` vs
      `5`, an equivalent fraction or decimal, a unit word) and on a common
@@ -164,7 +209,10 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      is 3 remainder …", the column-by-column carries). A hint never
      performs the section's objective for the learner: on a "translate"
      item it does not print the translated expression, on a "model" item
-     it does not state the regrouped count. Never "not X" of the key. A hint that restates
+     it does not state the regrouped count, on a sign-rules item it does not
+     state the result's sign ("the signs differ, so the product is
+     negative" — the parent rewrote 12 such hints in Elementary Algebra
+     chapter 1). Never "not X" of the key. A hint that restates
      the question adds nothing: give the method. Keep it short. A hint's
      arithmetic, when it has any, must be right.
    - **nearby leaks:** a worked example, Try It, figure, or `aria-label`

@@ -37,7 +37,7 @@ $$
 \begin{array}{lrcl}
 & \text{What number is } 35\% \text{ of } 90? && \\[4pt]
 \text{Translate into algebra. Let } n = \text{the number.} & n &=& 0.35 \cdot 90 \\[4pt]
-\text{Remember "of" means multiply, "is" means equals.} & & & \\[4pt]
+\text{Remember ``of'' means multiply, ``is'' means equals.} & & & \\[4pt]
 \text{Multiply.} & n &=& 31.5
 \end{array}
 $$
@@ -47,13 +47,15 @@ $31.5$ is $35\%$ of $90$.
 {{< fillin
   question="Translate and solve: What number is 45% of 80?"
   answer="36"
-  hint="Let n = the number. Translate to $n = 0.45 \cdot 80$, then multiply."
+  answerForm="decimal"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 {{< fillin
   question="Translate and solve: What number is 55% of 60?"
   answer="33"
-  hint="Let n = the number. Translate to $n = 0.55 \cdot 60$, then multiply."
+  answerForm="decimal"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 We must be very careful when we translate the words in the next example. The
@@ -74,15 +76,19 @@ $$
 $6.5\%$ of \$18 is \$1.17.
 
 {{< fillin
-  question="Translate and solve: 7.5% of what number is \$1.95?"
+  question="Translate and solve: 7.5% of what number is \$1.95? Give the answer in dollars."
   answer="26"
-  hint="Let n = the number. Translate to $0.075n = 1.95$, then divide both sides by 0.075."
+  answerForm="decimal"
+  answerDisplay="\$26"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *of* as multiplication and *is* as $=$, then divide both sides by the decimal."
 >}}
 
 {{< fillin
-  question="Translate and solve: 8.5% of what number is \$3.06?"
+  question="Translate and solve: 8.5% of what number is \$3.06? Give the answer in dollars."
   answer="36"
-  hint="Let n = the number. Translate to $0.085n = 3.06$, then divide both sides by 0.085."
+  answerForm="decimal"
+  answerDisplay="\$36"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *of* as multiplication and *is* as $=$, then divide both sides by the decimal."
 >}}
 
 In the next example, we are looking for the percent.
@@ -103,17 +109,19 @@ $144$ is $150\%$ of $96$. Note that we are asked to find percent, so we must
 have our final result in percent form.
 
 {{< fillin
-  question="Translate and solve: 110 is what percent of 88? Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="125"
+  question="Translate and solve: 110 is what percent of 88? Enter the percent, including the $\%$ sign."
+  answer="125\%"
+  answerForm="percent"
   answerDisplay="125%"
-  hint="Let p = the percent (as a decimal). Translate to $110 = 88p$, divide by 88, then convert the decimal to a percent."
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Translate and solve: 126 is what percent of 72? Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="175"
+  question="Translate and solve: 126 is what percent of 72? Enter the percent, including the $\%$ sign."
+  answer="175\%"
+  answerForm="percent"
   answerDisplay="175%"
-  hint="Let p = the percent (as a decimal). Translate to $126 = 72p$, divide by 72, then convert the decimal to a percent."
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the base, then write the decimal as a percent."
 >}}
 
 ## Solve Applications of Percent
@@ -160,19 +168,19 @@ If the tip will be $18\%$ of the total bill, how much tip should he leave?
 | Answer the question with a complete sentence. | Dezohn should leave a tip of $\text{\textdollar}12.33$. |
 
 {{< fillin
-  question="Cierra and her sister enjoyed a dinner in a restaurant and the bill was \$81.50. If she wants to leave 18% of the total bill as her tip, how much should she leave?"
+  question="Cierra and her sister enjoyed a dinner in a restaurant and the bill was \$81.50. If she wants to leave 18% of the total bill as her tip, how much should she leave, in dollars?"
   answer="14.67"
   answerForm="decimal"
   answerDisplay="\$14.67"
-  hint="Let t = the tip amount. Translate to $t = 0.18 \cdot 81.50$, then multiply."
+  hint="Write a sentence saying the tip is a percent of the bill, translate it, and multiply the bill by the percent written as a decimal."
 >}}
 
 {{< fillin
-  question="Kimngoc had lunch at her favorite restaurant. She wants to leave 15% of the total bill as her tip. If her bill was \$14.40, how much will she leave for the tip?"
+  question="Kimngoc had lunch at her favorite restaurant. She wants to leave 15% of the total bill as her tip. If her bill was \$14.40, how much will she leave for the tip, in dollars?"
   answer="2.16"
   answerForm="decimal"
   answerDisplay="\$2.16"
-  hint="Let t = the tip amount. Translate to $t = 0.15 \cdot 14.40$, then multiply."
+  hint="Write a sentence saying the tip is a percent of the bill, translate it, and multiply the bill by the percent written as a decimal."
 >}}
 
 **Example.** The label on Masao's breakfast cereal said that one serving of
@@ -192,14 +200,17 @@ potassium?
 {{< fillin
   question="One serving of wheat square cereal has seven grams of fiber, which is 28% of the recommended daily amount. What is the total recommended daily amount of fiber, in grams?"
   answer="25"
-  hint="Let a = the total recommended amount. Translate to $7 = 0.28a$, then divide."
+  answerForm="decimal"
+  answerDisplay="25 grams"
+  hint="Write a sentence saying the amount in one serving is a percent of the total amount, translate it with the total as the unknown, and divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="One serving of rice cereal has 190 mg of sodium, which is 8% of the recommended daily amount. What is the total recommended daily amount of sodium, in mg?"
   answer="2375"
-  answerDisplay="2,375"
-  hint="Let a = the total recommended amount. Translate to $190 = 0.08a$, then divide."
+  answerForm="decimal"
+  answerDisplay="2,375 mg"
+  hint="Write a sentence saying the amount in one serving is a percent of the total amount, translate it with the total as the unknown, and divide both sides by the percent written as a decimal."
 >}}
 
 **Example.** Mitzi received some gourmet brownies as a gift. The wrapper said
@@ -216,17 +227,19 @@ of the total calories in each brownie comes from fat?
 | Answer the question with a complete sentence. | Of the total calories in each brownie, $50\%$ is fat. |
 
 {{< fillin
-  question="Solve. Round to the nearest whole percent. Veronica is planning to make muffins from a mix. The package says each muffin will be 230 calories and 60 calories will be from fat. What percent of the total calories is from fat? Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="26"
+  question="Solve. Round to the nearest whole percent. Veronica is planning to make muffins from a mix. The package says each muffin will be 230 calories and 60 calories will be from fat. What percent of the total calories is from fat? Enter the percent, including the $\%$ sign."
+  answer="26\%"
+  answerForm="percent"
   answerDisplay="26%"
-  hint="Let p = the percent (as a decimal). Translate to $p \cdot 230 = 60$, divide, then convert to a percent and round."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, write the decimal as a percent, and round."
 >}}
 
 {{< fillin
-  question="Solve. The mix Ricardo plans to use to make brownies says that each brownie will be 190 calories, and 76 calories are from fat. What percent of the total calories are from fat? Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="40"
+  question="Solve. Round to the nearest whole percent. The mix Ricardo plans to use to make brownies says that each brownie will be 190 calories, and 76 calories are from fat. What percent of the total calories are from fat? Enter the percent, including the $\%$ sign."
+  answer="40\%"
+  answerForm="percent"
   answerDisplay="40%"
-  hint="Let p = the percent (as a decimal). Translate to $p \cdot 190 = 76$, divide, then convert to a percent."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, write the decimal as a percent, and round."
 >}}
 
 ## Find Percent Increase and Percent Decrease
@@ -267,17 +280,19 @@ Notice that we rounded the division to the nearest thousandth in order to
 round the percent to the nearest tenth.
 
 {{< fillin
-  question="Find the percent increase. Round to the nearest tenth of a percent. In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents. Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="8.8"
+  question="Find the percent increase. Round to the nearest tenth of a percent. In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents. Enter the percent, including the $\%$ sign."
+  answer="8.8\%"
+  answerForm="percent"
   answerDisplay="8.8%"
-  hint="First find the amount of increase (55.5 minus 51). Then find what percent that increase is of the original 51, and round to the nearest tenth."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount, and round to the nearest tenth of a percent."
 >}}
 
 {{< fillin
-  question="Find the percent increase. In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25. Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="50"
+  question="Find the percent increase. In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25. Enter the percent, including the $\%$ sign."
+  answer="50\%"
+  answerForm="percent"
   answerDisplay="50%"
-  hint="First find the amount of increase. Then find what percent that increase is of the original fare of 1.50."
+  hint="Subtract the original amount from the new amount, then find what percent that increase is of the original amount."
 >}}
 
 Finding the percent decrease is very similar to finding the percent increase,
@@ -310,17 +325,19 @@ $\text{\textdollar}3.64$. Find the percent decrease.
 | Answer the question with a complete sentence. | The price of gas decreased $1.9\%$. |
 
 {{< fillin
-  question="Find the percent decrease. Round to the nearest tenth of a percent. The population of North Dakota was about 672,000 in 2010. The population is projected to be about 630,000 in 2020. Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="6.3"
+  question="Find the percent decrease. Round to the nearest tenth of a percent. The population of North Dakota was about 672,000 in 2010. The population is projected to be about 630,000 in 2020. Enter the percent, including the $\%$ sign."
+  answer="6.3\%"
+  answerForm="percent"
   answerDisplay="6.3%"
-  hint="First find the amount of decrease. Then find what percent that decrease is of the original population, and round to the nearest tenth."
+  hint="Subtract the new amount from the original amount, then find what percent that decrease is of the original amount, and round to the nearest tenth of a percent."
 >}}
 
 {{< fillin
-  question="Find the percent decrease. Last year, Sheila's salary was \$42,000. Because of furlough days, this year, her salary was \$37,800. Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="10"
+  question="Find the percent decrease. Last year, Sheila's salary was \$42,000. Because of furlough days, this year, her salary was \$37,800. Enter the percent, including the $\%$ sign."
+  answer="10\%"
+  answerForm="percent"
   answerDisplay="10%"
-  hint="First find the amount of decrease. Then find what percent that decrease is of the original salary."
+  hint="Subtract the new amount from the original amount, then find what percent that decrease is of the original amount."
 >}}
 
 ## Solve Simple Interest Applications
@@ -358,7 +375,7 @@ information in a chart.
 account where it will earn $4\%$ interest. How much interest will Nathaly
 earn in $5$ years?
 
-$$I = ? \qquad P = \text{\textdollar}12{,}500 \qquad r = 4\% \qquad t = 5 \text{ years}$$
+$$I = \text{?} \qquad P = \text{\textdollar}12{,}500 \qquad r = 4\% \qquad t = 5 \text{ years}$$
 
 | Step | |
 | :--- | :--- |
@@ -370,19 +387,19 @@ $$I = ? \qquad P = \text{\textdollar}12{,}500 \qquad r = 4\% \qquad t = 5 \text{
 | Answer the question with a complete sentence. | The interest is $\text{\textdollar}2{,}500$. |
 
 {{< fillin
-  question="Areli invested a principal of \$950 in her bank account with interest rate 3%. How much interest did she earn in 5 years?"
+  question="Areli invested a principal of \$950 in her bank account with interest rate 3%. How much interest did she earn in 5 years, in dollars?"
   answer="142.50"
   answerForm="decimal"
   answerDisplay="\$142.50"
-  hint="Use I = Prt with $P = 950$, $r = 0.03$, and $t = 5$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
-  question="Susana invested a principal of \$36,000 in her bank account with interest rate 6.5%. How much interest did she earn in 3 years?"
+  question="Susana invested a principal of \$36,000 in her bank account with interest rate 6.5%. How much interest did she earn in 3 years, in dollars?"
   answer="7020"
   answerForm="decimal"
   answerDisplay="\$7,020"
-  hint="Use I = Prt with $P = 36{,}000$, $r = 0.065$, and $t = 3$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 There may be times when we know the amount of interest earned on a given
@@ -394,7 +411,7 @@ for the principal and time, and then solve for the rate.
 buy a car. In $4$ years his brother paid him back the $\text{\textdollar}3{,}000$
 plus $\text{\textdollar}660$ in interest. What was the rate of interest?
 
-$$I = \text{\textdollar}660 \qquad P = \text{\textdollar}3{,}000 \qquad r = ? \qquad t = 4 \text{ years}$$
+$$I = \text{\textdollar}660 \qquad P = \text{\textdollar}3{,}000 \qquad r = \text{?} \qquad t = 4 \text{ years}$$
 
 | Step | |
 | :--- | :--- |
@@ -409,17 +426,19 @@ Notice that in this example, Loren's brother paid Loren interest, just like a
 bank would have paid interest if Loren invested his money there.
 
 {{< fillin
-  question="Jim loaned his sister \$5,000 to help her buy a house. In 3 years, she paid him the \$5,000, plus \$900 interest. What was the rate of interest? Give the percent as a number (e.g. enter 4 for 4%)."
-  answer="6"
+  question="Jim loaned his sister \$5,000 to help her buy a house. In 3 years, she paid him the \$5,000, plus \$900 interest. What was the rate of interest? Enter the percent, including the $\%$ sign."
+  answer="6\%"
+  answerForm="percent"
   answerDisplay="6%"
-  hint="Use I = Prt with $I = 900$, $P = 5{,}000$, and $t = 3$, then solve for r and convert to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Hang borrowed \$7,500 from her parents to pay her tuition. In 5 years, she paid them \$1,500 interest in addition to the \$7,500 she borrowed. What was the rate of interest? Give the percent as a number (e.g. enter 4 for 4%)."
-  answer="4"
+  question="Hang borrowed \$7,500 from her parents to pay her tuition. In 5 years, she paid them \$1,500 interest in addition to the \$7,500 she borrowed. What was the rate of interest? Enter the percent, including the $\%$ sign."
+  answer="4\%"
+  answerForm="percent"
   answerDisplay="4%"
-  hint="Use I = Prt with $I = 1{,}500$, $P = 7{,}500$, and $t = 5$, then solve for r and convert to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 **Example.** Eduardo noticed that his new car loan papers stated that with a
@@ -436,17 +455,19 @@ interest over $5$ years. How much did he borrow to pay for his car?
 | Answer the question with a complete sentence. | The principal was $\text{\textdollar}17{,}590$. |
 
 {{< fillin
-  question="Sean's new car loan statement said he would pay \$4,866.25 in interest from an interest rate of 8.5% over 5 years. How much did he borrow to buy his new car?"
+  question="Sean's new car loan statement said he would pay \$4,866.25 in interest from an interest rate of 8.5% over 5 years. How much did he borrow to buy his new car, in dollars?"
   answer="11450"
+  answerForm="decimal"
   answerDisplay="\$11,450"
-  hint="Use I = Prt with $I = 4{,}866.25$, $r = 0.085$, and $t = 5$, then solve for the principal P."
+  hint="The amount borrowed is the principal: divide the interest by the product of the rate (as a decimal) and the time."
 >}}
 
 {{< fillin
-  question="In 5 years, Gloria's bank account earned \$2,400 interest at 5%. How much had she deposited in the account?"
+  question="In 5 years, Gloria's bank account earned \$2,400 interest at 5%. How much had she deposited in the account, in dollars?"
   answer="9600"
+  answerForm="decimal"
   answerDisplay="\$9,600"
-  hint="Use I = Prt with $I = 2{,}400$, $r = 0.05$, and $t = 5$, then solve for the principal P."
+  hint="The amount deposited is the principal: divide the interest by the product of the rate (as a decimal) and the time."
 >}}
 
 ## Solve Applications with Discount or Mark-up
@@ -494,24 +515,27 @@ discount and (b) the sale price of the dress?
 | Answer with a complete sentence. | The sale price of the dress was $\text{\textdollar}91$. |
 
 {{< fillin
-  question="Sergio bought a belt that was discounted 40% from an original price of \$29. Find the amount of discount."
+  question="Sergio bought a belt that was discounted 40% from an original price of \$29. Find the amount of discount, in dollars."
   answer="11.60"
+  answerForm="decimal"
   answerDisplay="\$11.60"
-  hint="The discount is 40% of the original \$29 price — multiply the rate by the original price."
+  hint="Write the discount rate as a decimal, then multiply it by the original price."
 >}}
 
 {{< fillin
-  question="Sergio bought a belt that was discounted 40% from an original price of \$29. Find the sale price."
+  question="Sergio bought a belt that was discounted 40% from an original price of \$29. Find the sale price, in dollars."
   answer="17.40"
+  answerForm="decimal"
   answerDisplay="\$17.40"
-  hint="The sale price is the original price minus the amount of discount: 29 minus 40% of 29."
+  hint="Subtract the amount of discount from the original price."
 >}}
 
 {{< fillin
-  question="Oscar bought a barbecue that was discounted 65% from an original price of \$395. Find the amount of discount."
+  question="Oscar bought a barbecue that was discounted 65% from an original price of \$395. Find the amount of discount, in dollars."
   answer="256.75"
+  answerForm="decimal"
   answerDisplay="\$256.75"
-  hint="The discount is 65% of the original \$395 price — multiply the rate by the original price."
+  hint="Write the discount rate as a decimal, then multiply it by the original price."
 >}}
 
 There may be times when we know the original price and the sale price, and
@@ -547,23 +571,27 @@ rate.
 | Answer with a complete sentence. | The rate of discount was $55\%$. |
 
 {{< fillin
-  question="Lena bought a kitchen table at the sale price of \$375.20. The original price of the table was \$560. Find the amount of discount."
+  question="Lena bought a kitchen table at the sale price of \$375.20. The original price of the table was \$560. Find the amount of discount, in dollars."
   answer="184.80"
+  answerForm="decimal"
   answerDisplay="\$184.80"
-  hint="The discount is the original price minus the sale price: 560 minus 375.20."
+  hint="Both prices are known, so subtract the sale price from the original price."
 >}}
 
 {{< fillin
-  question="Lena bought a kitchen table at the sale price of \$375.20. The original price of the table was \$560. Find the discount rate. Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="33"
+  question="Lena bought a kitchen table at the sale price of \$375.20. The original price of the table was \$560. Find the discount rate. Enter the percent, including the $\%$ sign."
+  answer="33\%"
+  answerForm="percent"
   answerDisplay="33%"
-  hint="First find the discount (original minus sale price). Then find what percent that discount is of the original price."
+  hint="The discount is what percent of the original price? Find the amount of discount first, then divide it by the original price and write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Nick bought a multi-room air conditioner at a sale price of \$340. The original price of the air conditioner was \$400. Find the amount of discount."
+  question="Nick bought a multi-room air conditioner at a sale price of \$340. The original price of the air conditioner was \$400. Find the amount of discount, in dollars."
   answer="60"
-  hint="The discount is the original price minus the sale price: 400 minus 340."
+  answerForm="decimal"
+  answerDisplay="\$60"
+  hint="Both prices are known, so subtract the sale price from the original price."
 >}}
 
 Applications of mark-up are very common in retail settings. The price a
@@ -610,23 +638,27 @@ amount of mark-up and (b) the list price of the photograph.
 | Answer with a complete sentence. | The list price of the photograph was $\text{\textdollar}350$. |
 
 {{< fillin
-  question="Jim's music store bought a guitar at original cost \$1,200. Jim marked the price up 50%. Find the amount of mark-up."
+  question="Jim's music store bought a guitar at original cost \$1,200. Jim marked the price up 50%. Find the amount of mark-up, in dollars."
   answer="600"
-  hint="The mark-up is 50% of the original \$1,200 cost — multiply the rate by the original cost."
+  answerForm="decimal"
+  answerDisplay="\$600"
+  hint="Write the mark-up rate as a decimal, then multiply it by the original cost."
 >}}
 
 {{< fillin
-  question="Jim's music store bought a guitar at original cost \$1,200. Jim marked the price up 50%. Find the list price."
+  question="Jim's music store bought a guitar at original cost \$1,200. Jim marked the price up 50%. Find the list price, in dollars."
   answer="1800"
+  answerForm="decimal"
   answerDisplay="\$1,800"
-  hint="The list price is the original cost plus the mark-up: 1,200 plus 50% of 1,200."
+  hint="Add the amount of mark-up to the original cost."
 >}}
 
 {{< fillin
-  question="The Auto Resale Store bought Pablo's Toyota for \$8,500. They marked the price up 35%. Find the amount of mark-up."
+  question="The Auto Resale Store bought Pablo's Toyota for \$8,500. They marked the price up 35%. Find the amount of mark-up, in dollars."
   answer="2975"
+  answerForm="decimal"
   answerDisplay="\$2,975"
-  hint="The mark-up is 35% of the original \$8,500 cost — multiply the rate by the original cost."
+  hint="Write the mark-up rate as a decimal, then multiply it by the original cost."
 >}}
 
 ## Key terms
@@ -641,9 +673,13 @@ amount minus new amount), expressed as a percent of the original amount.
 money paid on a principal, computed as a percent of the principal. **rate of
 interest** — the percent used to compute interest, usually stated per year.
 **simple interest** — interest computed using the formula $I = Prt$.
-**discount rate** — the percent of the original price that is subtracted to
-give the sale price. **mark-up** — the amount added to a retailer's original
-cost, usually calculated as a percent of that cost, to get the list price.
+**discount rate** — the percent of the original price used to determine the
+amount of discount. **amount of discount** — the discount rate multiplied by
+the original price; subtracting it from the original price gives the sale
+price. **original cost** — in a retail setting, the price a retailer pays for
+an item. **mark-up** — the amount added to a retailer's original cost,
+usually calculated as a percent of that cost, to get the list price. **list
+price** — the price a retailer sells an item for.
 
 ## Practice
 
@@ -652,14 +688,16 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="What number is $45\%$ of $120$?"
   answer="54"
-  hint="Write $45\%$ as $0.45$ and multiply it by $120$."
+  answerForm="decimal"
+  hint="Change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 {{< fillin
   question="$8.2\%$ of what number is \$2.87? Give the answer in dollars."
   answer="35"
+  answerForm="decimal"
   answerDisplay="\$35"
-  hint="Let $n$ be the number, write $8.2\%$ as $0.082$, and solve $0.082n = 2.87$."
+  hint="Let $n$ be the number, change the percent to a decimal, translate *of* as multiplication and *is* as $=$, then divide both sides by the decimal."
 >}}
 
 ### Solve percent applications
@@ -667,6 +705,7 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="Geneva treated her parents to dinner at their favorite restaurant. The bill was \$74.25. Geneva wants to leave 16% of the total bill as a tip. How much should the tip be, in dollars?"
   answer="11.88"
+  answerForm="decimal"
   answerDisplay="\$11.88"
   hint="Write $16\%$ as $0.16$ and multiply it by the total bill."
 >}}
@@ -674,22 +713,25 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="After 3 months on a diet, Lisa had lost 12% of her original weight. She lost 21 pounds. What was Lisa's original weight, in pounds?"
   answer="175"
+  answerForm="decimal"
   answerDisplay="175 lb."
-  hint="Let $w$ be the original weight, write $12\%$ as $0.12$, and solve $21 = 0.12w$."
+  hint="Write a sentence saying the weight lost is a percent of the original weight, translate it with the original weight as the unknown, and divide both sides by the percent written as a decimal."
 >}}
 
 ### Find percent increase and percent decrease
 
 {{< fillin
-  question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent increase. Enter the percent as a number."
-  answer="12"
+  question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent increase. Enter the percent, including the $\%$ sign."
+  answer="12\%"
+  answerForm="percent"
   answerDisplay="12%"
   hint="Subtract the original pay from the new pay, divide the increase by the original pay, and convert to a percent."
 >}}
 
 {{< fillin
-  question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease. Enter the percent as a number."
-  answer="2.5"
+  question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease. Enter the percent, including the $\%$ sign."
+  answer="2.5\%"
+  answerForm="percent"
   answerDisplay="2.5%"
   hint="Subtract the new price from the original price, divide the decrease by the original price, and convert to a percent."
 >}}
@@ -699,15 +741,17 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="Casey deposited \$1,450 in a bank account with interest rate 4%. How much interest was earned in two years, in dollars?"
   answer="116"
+  answerForm="decimal"
   answerDisplay="\$116"
-  hint="Use $I = Prt$ with $P = 1{,}450$, $r = 0.04$, and $t = 2$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I = Prt$."
 >}}
 
 {{< fillin
-  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest? Enter the percent as a number."
-  answer="3"
+  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest? Enter the percent, including the $\%$ sign."
+  answer="3\%"
+  answerForm="percent"
   answerDisplay="3%"
-  hint="Substitute $I = 1{,}200$, $P = 8{,}000$, and $t = 5$ into $I = Prt$, then solve for $r$ and convert to a percent."
+  hint="Substitute the known values into $I = Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 ### Solve applications with discount or mark-up
@@ -715,6 +759,7 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="Perla bought a cell phone that was on sale for \$50 off. The original price of the cell phone was \$189. Find the sale price, in dollars."
   answer="139"
+  answerForm="decimal"
   answerDisplay="\$139"
   hint="Subtract the amount off from the original price."
 >}}
@@ -722,6 +767,7 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="Daria bought a bracelet at original cost \$16 to sell in her handicraft store. She marked the price up 45%. Find the amount of the mark-up, in dollars."
   answer="7.20"
+  answerForm="decimal"
   answerDisplay="\$7.20"
   hint="Write $45\%$ as $0.45$ and multiply it by the original cost."
 >}}
@@ -729,10 +775,11 @@ cost, usually calculated as a percent of that cost, to get the list price.
 {{< fillin
   question="Daria bought a bracelet at original cost \$16 to sell in her handicraft store. She marked the price up 45%. Find the list price, in dollars."
   answer="23.20"
+  answerForm="decimal"
   answerDisplay="\$23.20"
   hint="Add the amount of the mark-up to the original cost."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.2: Solve Percent Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the step-by-step solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.2: Solve Percent Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the step-by-step solution tables as typeset step arrays and Markdown tables; printed $38.5\%$ in the community-college-fees example's check, where the source prints $38.4\%$ against its own $38.5\%$ answer; omitted the Be Prepared quiz, the Key Concepts summary (its procedures appear as callouts in the body), the Self Check checklist, media links, and the remaining end-of-section exercises; added a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback, one part per question, leaving out the sale price for Oscar's barbecue, the discount rate for Nick's air conditioner, and the list price for Pablo's Toyota; adapted selected end-of-section exercises into the section-final interactive Practice block; and added the unit or "enter the percent, including the % sign" to the questions whose answers need one.</small>

@@ -29,7 +29,7 @@ and $11z^7$.
 
 {{< callout type="info" >}}
   **Monomial.** A monomial is a term of the form $ax^m$, where $a$ is a
-  constant and $m$ is a positive whole number.
+  constant and $m$ is a whole number.
 {{< /callout >}}
 
 A monomial, or two or more monomials combined by addition or subtraction, is a
@@ -80,7 +80,7 @@ other polynomial
 
 {{< multiplechoice
   question="How would you classify the polynomial $12m^3 - 5m^2 - 2m$?"
-  hint="Count the terms: a trinomial has exactly three."
+  hint="Count the terms, then match the count to monomial (one), binomial (two), trinomial (three), or other polynomial (four or more)."
   answer="trinomial"
 >}}
 binomial
@@ -103,8 +103,8 @@ is a special case: the degree of a constant is $0$ — it has no variable.
   - The **degree of a polynomial** is the highest degree of all its terms.
 {{< /callout >}}
 
-For example, the monomial $-9x^4 y^6$ has degree $4 + 6 = 10$. In the binomial
-$3n^3 - 9n$, the terms have degrees $3$ and $1$, so the polynomial has degree
+For example, the monomial $-9x^3 y^5$ has degree $3 + 5 = 8$. In the binomial
+$3n^3 - 9n^2$, the terms have degrees $3$ and $2$, so the polynomial has degree
 $3$. In the trinomial $6m^4 - m^3 n^2 + 8mn^5$, the terms have degrees $4$,
 $5$, and $6$, so the polynomial has degree $6$.
 
@@ -130,13 +130,15 @@ $3$.
 {{< fillin
   question="Find the degree of the polynomial $10z^4 + 4z^2 - 5$."
   answer="4"
-  hint="The degree of a polynomial is the highest degree among its terms; the term with the largest exponent is $10z^4$."
+  answerForm="decimal"
+  hint="The degree of a polynomial is the highest degree among its terms: find each term's exponent and take the largest."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $3x^2y - 4x$."
   answer="3"
-  hint="The degree of a term with several variables is the sum of their exponents; $3x^2y$ has degree $2 + 1$."
+  answerForm="decimal"
+  hint="The degree of a term with several variables is the sum of their exponents; find each term's degree and take the highest."
 >}}
 
 ## Add and subtract monomials
@@ -176,14 +178,14 @@ $$u^2 v + 5u^2 - 3v^2$$
   answer="21q^2"
   answerForm="no-like-terms"
   answerDisplay="$21q^2$"
-  hint="These are like terms; add the coefficients 12 and 9 and keep the $q^2$."
+  hint="These are like terms: add the coefficients and keep the variable part unchanged."
 >}}
 
 {{< fillin
   question="Subtract: $8m - (-5m)$."
   answer="13m"
   answerForm="no-like-terms"
-  hint="Subtracting a negative is the same as adding, so combine $8m$ and $5m$."
+  hint="Subtracting a negative is the same as adding its opposite; then combine the coefficients."
 >}}
 
 {{< fillin
@@ -191,7 +193,7 @@ $$u^2 v + 5u^2 - 3v^2$$
   answer="5y^2 + 3z^2"
   answerForm="no-like-terms"
   answerDisplay="$5y^2 + 3z^2$"
-  hint="Only $8y^2$ and $-3y^2$ are like terms; the $z^2$ term has no partner to combine with."
+  hint="Combine only the terms with the same variable and exponent; a term with no partner stays as it is."
 >}}
 
 ## Add and subtract polynomials
@@ -275,7 +277,7 @@ $$
   answer="x^2 + 3x - 5"
   answerForm="no-like-terms"
   answerDisplay="$x^2 + 3x - 5$"
-  hint="Distribute the minus sign across the second polynomial first: $-(7x^2 - 14)$ becomes $-7x^2 + 14$."
+  hint="Distribute the minus sign to every term of the second polynomial, then combine like terms."
 >}}
 
 {{< fillin
@@ -283,7 +285,7 @@ $$
   answer="2z^2 + 12z - 2"
   answerForm="no-like-terms"
   answerDisplay="$2z^2 + 12z - 2$"
-  hint="Subtract $A$ from $B$ means $B - A$, so compute $(7z^2 + 6z - 4) - (5z^2 - 6z - 2)$."
+  hint="Subtracting $A$ from $B$ means $B - A$: start with the second polynomial, subtract every term of the first, then combine like terms."
 >}}
 
 ## Evaluate a polynomial for a given value
@@ -310,13 +312,15 @@ $$5(0)^2 - 8(0) + 4 = 0 - 0 + 4 = 4$$
 {{< fillin
   question="Evaluate $3x^2 + 2x - 15$ when $x = 3$."
   answer="18"
-  hint="Substitute $3$ for $x$: $3(3)^2 + 2(3) - 15$, then simplify with the order of operations."
+  answerForm="decimal"
+  hint="Substitute $3$ for every $x$, then simplify using the order of operations."
 >}}
 
 {{< fillin
   question="Evaluate $3x^2 + 2x - 15$ when $x = -5$."
   answer="50"
-  hint="Substitute $-5$ for $x$: $3(-5)^2 + 2(-5) - 15$. Remember $(-5)^2 = 25$."
+  answerForm="decimal"
+  hint="Substitute $-5$ for every $x$, keeping it in parentheses, and square before you multiply."
 >}}
 
 **Example.** The polynomial $-16t^2 + 250$ gives the height (in feet) of a
@@ -332,8 +336,9 @@ After $2$ seconds the height of the ball is $186$ feet.
 {{< fillin
   question="The polynomial $-16t^2 + 250$ gives the height in feet of a ball $t$ seconds after it is dropped from a 250-foot tall building. Find the height (in feet) after $t = 3$ seconds."
   answer="106"
+  answerForm="decimal"
   answerDisplay="106 feet"
-  hint="Substitute $t = 3$: $-16(3)^2 + 250 = -16 \cdot 9 + 250$."
+  hint="Substitute $3$ for $t$, then simplify: square first, then multiply, then add."
 >}}
 
 **Example.** The polynomial $6x^2 + 15xy$ gives the cost (in dollars) of
@@ -350,14 +355,15 @@ The cost of producing the box is $\text{\textdollar}456$.
 {{< fillin
   question="The polynomial $6x^2 + 15xy$ gives the cost in dollars of producing a rectangular container whose top and bottom are squares with side $x$ feet and sides of height $y$ feet. Find the cost (in dollars) of producing a box with $x = 6$ feet and $y = 4$ feet."
   answer="576"
+  answerForm="decimal"
   answerDisplay="\$576"
-  hint="Substitute $x = 6$ and $y = 4$: $6(6)^2 + 15(6)(4) = 216 + 360$."
+  hint="Substitute $6$ for $x$ and $4$ for $y$, then simplify each term with the order of operations before adding."
 >}}
 
 ## Key terms
 
 **monomial** — a term of the form $ax^m$, where $a$ is a constant and $m$ is a
-positive whole number. **polynomial** — a monomial, or two or more monomials
+whole number. **polynomial** — a monomial, or two or more monomials
 combined by addition or subtraction. **binomial** — a polynomial with exactly
 two terms. **trinomial** — a polynomial with exactly three terms. **coefficient**
 — the constant factor in a term. **degree of a term** — the sum of the
@@ -382,7 +388,7 @@ monomial
 
 {{< multiplechoice
   question="How would you classify the polynomial $5c^3 + 11c^2 - c - 8$?"
-  hint="Count the terms; four or more terms has no special name of its own."
+  hint="Count the terms joined by $+$ or $-$ signs, then match the count to its name."
   answer="other polynomial"
 >}}
 monomial
@@ -393,7 +399,7 @@ binomial
 
 {{< multiplechoice
   question="How would you classify the polynomial $\tfrac{14}{15}y + \tfrac{1}{7}$?"
-  hint="Rewrite the expression as separate terms joined by $+$, then count them."
+  hint="Count the terms joined by $+$ or $-$; a fraction coefficient belongs to its term."
   answer="binomial"
 >}}
 monomial
@@ -404,7 +410,7 @@ trinomial
 
 {{< multiplechoice
   question="How would you classify the polynomial $5$?"
-  hint="A single number with no variable is still exactly one term."
+  hint="Count the terms, remembering that a constant counts as a term, then match the count to its name."
   answer="monomial"
 >}}
 monomial
@@ -429,30 +435,35 @@ other polynomial
 {{< fillin
   question="Find the degree of the polynomial $6a^2 + 12a + 14$."
   answer="2"
+  answerForm="decimal"
   hint="The degree of a term is the exponent on its variable; the degree of the polynomial is the largest one among its terms."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $18xy^2z$."
   answer="4"
+  answerForm="decimal"
   hint="When a term has more than one variable, add the exponents of all its variables to find that term's degree."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $5x + 2$."
   answer="1"
-  hint="Remember that $x$ means $x^1$."
+  answerForm="decimal"
+  hint="Find the degree of each term, then take the highest."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $y^3 - 8y^2 + 2y - 16$."
   answer="3"
+  answerForm="decimal"
   hint="Compare the exponents on each term and take the largest."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $-24$."
   answer="0"
+  answerForm="decimal"
   hint="A polynomial with no variable is a constant; recall the degree assigned to a constant."
 >}}
 
@@ -512,28 +523,32 @@ other polynomial
 {{< fillin
   question="Evaluate $8y^2 - 3y + 2$ when $y = 5$."
   answer="187"
+  answerForm="decimal"
   hint="Substitute $5$ for $y$ and simplify using the order of operations."
 >}}
 
 {{< fillin
   question="Evaluate $8y^2 - 3y + 2$ when $y = -2$."
   answer="40"
+  answerForm="decimal"
   hint="Substitute $-2$ for $y$; remember $(-2)^2 = 4$, a positive number."
 >}}
 
 {{< fillin
   question="Evaluate $8y^2 - 3y + 2$ when $y = 0$."
   answer="2"
-  hint="Substitute $0$ for $y$; every term containing $y$ becomes $0$."
+  answerForm="decimal"
+  hint="Substitute $0$ for $y$, then simplify using the order of operations."
 >}}
 
 {{< fillin
   question="A manufacturer of stereo speakers finds that the revenue received from selling the speakers at a price of $p$ dollars each is given by the polynomial $-4p^2 + 420p$. Find the revenue (in dollars) when $p = 60$."
   answer="10800"
+  answerForm="decimal"
   answerDisplay="\$10,800"
   hint="Substitute $60$ for $p$ in $-4p^2 + 420p$ and simplify with the order of operations."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.1: Add and Subtract Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the polynomial-classification and degree examples as prose with (a)/(b)/(c) enumerations and a summary table, and the worked add/subtract examples as display equality chains; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — using multiple-choice for the "name the type of polynomial" Try Its, since a word answer can't be graded by the math checker.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.1: Add and Subtract Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the polynomial-classification and degree examples as prose with (a)/(b)/(c) enumerations and a summary table, and the worked add/subtract examples as display equality chains; summarized the degree-table figure in a sentence on three of its examples; printed "whole number" in the Monomial definition box, where the source prints "positive whole number" against its own prose, Key Concepts, glossary, and constant examples such as 8; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — using multiple-choice for the "name the type of polynomial" Try Its, since a word answer can't be graded by the math checker.</small>

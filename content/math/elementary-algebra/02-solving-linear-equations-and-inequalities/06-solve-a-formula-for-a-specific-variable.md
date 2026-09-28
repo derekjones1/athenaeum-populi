@@ -66,13 +66,15 @@ for $3\tfrac{1}{2}$ hours. What distance has he traveled?
 | Step 4. Translate. Write the formula, with $r = 12$ mph, $t = 3\tfrac{1}{2}$ hours. | $d = rt$ |
 | Substitute in the given information. | $d = 12 \cdot 3\tfrac{1}{2}$ |
 | Step 5. Solve the equation. | $d = 42$ miles |
-| Step 6. Check. Does $42$ miles make sense? Jamal rides $12$ miles in $1$ hour, $24$ miles in $2$ hours, $36$ miles in $3$ hours — so $42$ miles in $3\tfrac{1}{2}$ hours is reasonable. | |
+| Step 6. Check. Does $42$ miles make sense? Jamal rides $12$ miles in $1$ hour, $24$ miles in $2$ hours, $36$ miles in $3$ hours, and $48$ miles in $4$ hours — so $42$ miles in $3\tfrac{1}{2}$ hours is reasonable. | |
 | Step 7. Answer the question with a complete sentence. | Jamal rode $42$ miles. |
 
 {{< fillin
-  question="Lindsay drove for $5 \tfrac{1}{2}$ hours at 60 miles per hour. How much distance did she travel?"
+  question="Lindsay drove for $5 \tfrac{1}{2}$ hours at 60 miles per hour. How much distance did she travel, in miles?"
   answer="330"
-  hint="Use $d = rt$ with $r = 60$ and $t = 5.5$."
+  answerForm="decimal"
+  answerDisplay="$330$ miles"
+  hint="Multiply the rate by the time, as in $d = rt$; write the mixed number as a decimal or an improper fraction first."
 >}}
 
 **Example.** Rey is planning to drive from his house in San Diego to visit
@@ -91,13 +93,17 @@ $520 = 520$. ✓ Rey's trip will take $8$ hours.
 {{< fillin
   question="Lee wants to drive from Phoenix to his brother's apartment in San Francisco, a distance of 770 miles. If he drives at a steady rate of 70 miles per hour, how many hours will the trip take?"
   answer="11"
-  hint="Substitute $d = 770$ and $r = 70$ into $d = rt$, then solve for t."
+  answerForm="decimal"
+  answerDisplay="$11$ hours"
+  hint="Substitute the distance and the rate into $d = rt$, then divide both sides by the rate."
 >}}
 
 {{< fillin
-  question="Yesenia is 168 miles from Chicago. If she needs to be in Chicago in 3 hours, at what rate does she need to drive?"
+  question="Yesenia is 168 miles from Chicago. If she needs to be in Chicago in 3 hours, at what rate does she need to drive, in miles per hour?"
   answer="56"
-  hint="Substitute $d = 168$ and $t = 3$ into $d = rt$, then solve for r."
+  answerForm="decimal"
+  answerDisplay="$56$ miles per hour"
+  hint="The rate is the unknown: substitute the distance and the time into $d = rt$, then divide both sides by the time."
 >}}
 
 ## Solve a Formula for a Specific Variable
@@ -141,9 +147,11 @@ in general uses the same steps as when we have numbers to substitute.
 We say the formula $t = \tfrac{d}{r}$ is solved for $t$.
 
 {{< fillin
-  question="A truck driver travels 315 miles in 6.3 hours. Solve the formula $d = rt$ for r to find the rate, in miles per hour."
-  answer="50"
-  hint="Substitute $d = 315$ and $t = 6.3$ into $d = rt$, then divide both sides by t to isolate r."
+  question="Solve the formula $d = rt$ for $r$ when $d = 180$ and $t = 4$."
+  answer="45"
+  answerForm="decimal"
+  answerDisplay="$r = 45$"
+  hint="Substitute the given values into $d = rt$, then divide both sides by the number multiplying $r$."
 >}}
 
 **Example.** Solve the formula $A = \tfrac{1}{2}bh$ for $h$:
@@ -161,15 +169,19 @@ We can now find the height of a triangle, if we know the area and the base,
 by using the formula $h = \tfrac{2A}{b}$.
 
 {{< fillin
-  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for h, in general."
-  answer="\frac{2A}{b}"
-  hint="Multiply both sides by 2 first to clear the fraction, then divide by b."
+  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for $h$ when $A = 170$ and $b = 17$."
+  answer="20"
+  answerForm="decimal"
+  answerDisplay="$h = 20$"
+  hint="Substitute the given values and clear the fraction, then divide both sides by the number that multiplies $h$."
 >}}
 
 {{< fillin
-  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for b, in general."
-  answer="\frac{2A}{h}"
-  hint="Multiply both sides by 2 first to clear the fraction, then divide by h."
+  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for $b$, in general. Enter your answer as b = ___ (an expression in $A$ and $h$)."
+  answer="b=\frac{2A}{h}"
+  answerForm="solved:b"
+  answerDisplay="$b = \tfrac{2A}{h}$"
+  hint="Clear the fraction first, then divide both sides by the other variable multiplying $b$."
 >}}
 
 The formula $I = Prt$ is used to calculate simple interest, $I$, for a
@@ -189,9 +201,11 @@ principal, $P$, invested at rate, $r$, for $t$ years.
 The principal is $\text{\textdollar}20{,}000$.
 
 {{< fillin
-  question="Use the formula I = Prt to find the principal, P, in general."
-  answer="\frac{I}{rt}"
-  hint="Simplify the right side to P(rt), then divide both sides by rt."
+  question="Use the formula $I = Prt$ to find the principal, $P$, in dollars, when $I = \text{\textdollar}2{,}160$, $r = 6\%$, and $t = 3$ years."
+  answer="12000"
+  answerForm="decimal"
+  answerDisplay="$\text{\textdollar}12{,}000$"
+  hint="Write the rate as a decimal and substitute; multiply the known factors on the right, then divide both sides by their product."
 >}}
 
 Later in this class, and in future algebra classes, you'll encounter
@@ -208,13 +222,15 @@ and $y$ on the same side and we'll solve it for $y$.
 | | $3x + 2y = 18$ | $3x + 2y = 18$ |
 | Substitute. | $3(4) + 2y = 18$ | |
 | Subtract to isolate the $y$-term. | $12 - 12 + 2y = 18 - 12$ | $3x - 3x + 2y = 18 - 3x$ |
-| Divide. | $\tfrac{2y}{2} = \tfrac{6}{2}$ | $\tfrac{2y}{2} = \tfrac{18 - 3x}{2}$ |
+| Divide. | $\tfrac{2y}{2} = \tfrac{6}{2}$ | $\tfrac{2y}{2} = \tfrac{18}{2} - \tfrac{3x}{2}$ |
 | Simplify. | $y = 3$ | $y = -\tfrac{3x}{2} + 9$ |
 
 {{< fillin
-  question="Solve the formula $3x + 4y = 10$ for y, in general."
-  answer="\frac{10 - 3x}{4}"
-  hint="Subtract 3x from both sides first, then divide every term by 4."
+  question="Solve the formula $3x + 4y = 10$ for $y$, in general. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{10 - 3x}{4}"
+  answerForm="solved:y"
+  answerDisplay="$y = \tfrac{10 - 3x}{4}$"
+  hint="Take the same steps as in the example, keeping the $x$-term as a term: isolate the $y$-term, then divide both sides by its coefficient."
 >}}
 
 In the examples above, we used the numbers in part (a) as a guide to
@@ -232,9 +248,11 @@ $$P - b - c = a$$
 $$a = P - b - c$$
 
 {{< fillin
-  question="Solve the formula $P = a + b + c$ for b."
-  answer="P - a - c"
-  hint="Subtract a and c from both sides to isolate b."
+  question="Solve the formula $P = a + b + c$ for $b$. Enter your answer as b = ___ (an expression in $P$, $a$, and $c$)."
+  answer="b=P - a - c"
+  answerForm="solved:b"
+  answerDisplay="$b = P - a - c$"
+  hint="Isolate $b$ by subtracting each of the other terms on its side from both sides."
 >}}
 
 **Example.** Solve the formula $6x + 5y = 13$ for $y$.
@@ -255,38 +273,19 @@ The fraction is already simplified — we cannot divide $13 - 6x$ by $5$,
 since $5$ does not divide evenly into both terms of the numerator.
 
 {{< fillin
-  question="Solve the formula $4x + 7y = 9$ for y."
-  answer="\frac{9 - 4x}{7}"
-  hint="Subtract 4x from both sides first, then divide every term by 7."
+  question="Solve the formula $4x + 7y = 9$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{9 - 4x}{7}"
+  answerForm="solved:y"
+  answerDisplay="$y = \tfrac{9 - 4x}{7}$"
+  hint="Isolate the $y$-term first, then divide both sides by its coefficient."
 >}}
 
 {{< fillin
-  question="Solve the formula $5x + 8y = 1$ for y."
-  answer="\frac{1 - 5x}{8}"
-  hint="Subtract 5x from both sides first, then divide every term by 8."
->}}
-
-Formulas from geometry can be solved for a specific variable the same way.
-Some familiar ones are the perimeter of a rectangle, $P = 2L + 2W$, the
-circumference of a circle, $C = \pi d$, and the volume of a rectangular
-solid, $V = LWH$.
-
-{{< fillin
-  question="Solve the formula $P = 2L + 2W$ for L."
-  answer="\frac{P - 2W}{2}"
-  hint="Subtract 2W from both sides first, then divide both sides by 2."
->}}
-
-{{< fillin
-  question="Solve the formula $P = 2L + 2W$ for W."
-  answer="\frac{P - 2L}{2}"
-  hint="Subtract 2L from both sides first, then divide both sides by 2."
->}}
-
-{{< fillin
-  question="Solve the formula C = pi · d for d."
-  answer="\frac{C}{\pi}"
-  hint="Divide both sides by pi to isolate d."
+  question="Solve the formula $5x + 8y = 1$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{1 - 5x}{8}"
+  answerForm="solved:y"
+  answerDisplay="$y = \tfrac{1 - 5x}{8}$"
+  hint="Isolate the $y$-term first, then divide both sides by its coefficient."
 >}}
 
 ## Key terms
@@ -303,6 +302,7 @@ all other variables and constants are on the other side.
 {{< fillin
   question="Socorro drove for $4\tfrac{5}{6}$ hours at $60$ miles per hour. How much distance did she travel, in miles?"
   answer="290"
+  answerForm="decimal"
   answerDisplay="$290$ miles"
   hint="Use $d = rt$ with $r = 60$ and $t = 4\tfrac{5}{6}$."
 >}}
@@ -310,6 +310,7 @@ all other variables and constants are on the other side.
 {{< fillin
   question="Megan is taking the bus from New York City to Montreal. The distance is $380$ miles and the bus travels at a steady rate of $76$ miles per hour. How long will the bus ride be, in hours?"
   answer="5"
+  answerForm="decimal"
   answerDisplay="$5$ hours"
   hint="Substitute $d = 380$ and $r = 76$ into $d = rt$, then divide by $76$."
 >}}
@@ -317,6 +318,7 @@ all other variables and constants are on the other side.
 {{< fillin
   question="Alejandra is driving to Cincinnati, $450$ miles away. If she wants to be there in $6$ hours, at what rate does she need to drive, in miles per hour?"
   answer="75"
+  answerForm="decimal"
   answerDisplay="$75$ miles per hour"
   hint="Substitute $d = 450$ and $t = 6$ into $d = rt$, then solve for $r$."
 >}}
@@ -324,19 +326,45 @@ all other variables and constants are on the other side.
 ### Solve a formula for a specific variable
 
 {{< fillin
-  question="Solve $a + b = 90$ for $a$."
-  answer="90-b"
+  question="Solve $a + b = 90$ for $a$. Enter your answer as a = ___ (an expression in $b$)."
+  answer="a=90-b"
+  answerForm="solved:a"
   answerDisplay="$a = 90 - b$"
-  hint="Subtract $b$ from both sides to isolate $a$."
+  hint="Isolate $a$ by subtracting the other term on its side from both sides."
 >}}
 
 {{< fillin
-  question="Solve the formula $V = LWH$ for $H$."
-  answer="\frac{V}{LW}"
+  question="Solve the formula $P = 2L + 2W$ for $L$. Enter your answer as L = ___ (an expression in $P$ and $W$)."
+  answer="L=\frac{P - 2W}{2}"
+  answerForm="solved:L"
+  answerDisplay="$L = \tfrac{P - 2W}{2}$"
+  hint="Isolate the $L$-term first, then divide both sides by its coefficient."
+>}}
+
+{{< fillin
+  question="Solve the formula $P = 2L + 2W$ for $W$. Enter your answer as W = ___ (an expression in $P$ and $L$)."
+  answer="W=\frac{P - 2L}{2}"
+  answerForm="solved:W"
+  answerDisplay="$W = \tfrac{P - 2L}{2}$"
+  hint="Isolate the $W$-term first, then divide both sides by its coefficient."
+>}}
+
+{{< fillin
+  question="Solve the formula $C = \pi d$ for $d$. Enter your answer as d = ___ (an expression in $C$)."
+  answer="d=\frac{C}{\pi}"
+  answerForm="solved:d"
+  answerDisplay="$d = \tfrac{C}{\pi}$"
+  hint="Treat $\pi$ like any other coefficient."
+>}}
+
+{{< fillin
+  question="Solve the formula $V = LWH$ for $H$. Enter your answer as H = ___ (an expression in $V$, $L$, and $W$)."
+  answer="H=\frac{V}{LW}"
+  answerForm="solved:H"
   answerDisplay="$H = \tfrac{V}{LW}$"
-  hint="$H$ is multiplied by $LW$, so divide both sides by $LW$."
+  hint="Divide both sides by everything that multiplies $H$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.6: Solve a Formula for a Specific Variable](https://openstax.org/books/elementary-algebra-2e/pages/2-6-solve-a-formula-for-a-specific-variable) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.6: Solve a Formula for a Specific Variable](https://openstax.org/books/elementary-algebra-2e/pages/2-6-solve-a-formula-for-a-specific-variable) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking one part of each of five two-part Try Its.</small>

@@ -60,7 +60,7 @@ $$
 $$
 
 $$
-14 \geq 10 \ \text{true} \qquad -14 < 12 \ \text{true}
+14 \geq 10 \ \text{true} \qquad {-14} < 12 \ \text{true}
 $$
 
 Both inequalities are true, so $(-2, 4)$ is a solution to the system.
@@ -80,7 +80,7 @@ it is *not* a solution to the system.
 
 {{< multiplechoice
   question="Is the ordered pair $(3, -1)$ a solution to the system: $x - 5y > 10$ and $2x + 3y > -2$?"
-  hint="Substitute $x = 3$, $y = -1$ into both inequalities. If even one comes out false, the pair is not a solution."
+  hint="Substitute $x = 3$, $y = -1$ into both inequalities. The pair is a solution only if both statements are true."
   answer="no"
 >}}
 no
@@ -89,7 +89,7 @@ yes
 
 {{< multiplechoice
   question="Is the ordered pair $(6, -3)$ a solution to the system: $x - 5y > 10$ and $2x + 3y > -2$?"
-  hint="Substitute $x = 6$, $y = -3$ into both inequalities and check that both come out true."
+  hint="Substitute $x = 6$, $y = -3$ into both inequalities. The pair is a solution only if both statements are true."
   answer="yes"
 >}}
 no
@@ -179,7 +179,7 @@ right of this line.
   <polygon points="20,292 23.5,281.4 30.6,288.5" fill="currentColor"/>
   <text x="76" y="66" font-size="13" fill="currentColor" text-anchor="middle">y ≥ 2x − 1</text>
   <text x="246" y="246" font-size="13" fill="currentColor" text-anchor="middle">y &lt; x + 1</text>
-  <text x="126" y="222" font-size="13" fill="currentColor" text-anchor="middle">solution</text>
+  <text x="96" y="258" font-size="13" fill="currentColor" text-anchor="middle">solution</text>
 </svg>
 </div>
 
@@ -191,10 +191,11 @@ crossing point.
 We check by choosing a test point in that wedge, such as $(-1, -1)$:
 
 {{< fillin
-  question="Solve the system $y >= 2x - 1$ and $y < x + 1$ by graphing, then test the point $(-1, -1)$. Substitute it into $y < x + 1$, simplify the right side, and write the resulting statement."
+  question="The point $(-1, -1)$ lies in the doubly shaded wedge. Substitute it into $y < x + 1$, simplify the right side, and write the resulting inequality."
   answer="-1<0"
+  answerForm="decimal"
   answerDisplay="$-1 < 0$, true"
-  hint="Substitute $x = -1$ into $x + 1$: $-1 + 1$ simplifies to 0."
+  hint="Replace $x$ and $y$ with the point's coordinates, then add the two numbers on the right side."
 >}}
 
 Sometimes the boundary lines of a system are parallel. Depending on the
@@ -266,10 +267,11 @@ There is no point in both shaded regions, so this system has **no
 solution**.
 
 {{< fillin
-  question="For the system $4x + 3y >= 12$ and $y < -\tfrac{4}{3} x + 1$, substitute $x = 0$, $y = 0$ into $4x + 3y >= 12$, simplify the left side, and write the resulting statement."
-  answer="0>=12"
-  answerDisplay="$0 >= 12$, false"
-  hint="$4(0) + 3(0)$ simplifies to 0, so the inequality becomes $0 >= 12$."
+  question="The point $(3, 1)$ lies in the shaded region of $4x + 3y \geq 12$. Substitute it into $y < -\tfrac{4}{3}x + 1$, simplify the right side, and write the resulting inequality."
+  answer="1<-3"
+  answerForm="decimal"
+  answerDisplay="$1 < -3$, false"
+  hint="Multiply $-\tfrac{4}{3}$ by the $x$-coordinate, then add $1$."
 >}}
 
 ## Solve Applications of Systems of Inequalities
@@ -301,7 +303,7 @@ $4x + 10y = 200$ as a solid line and shade the side containing the origin
 situation, we only graph Quadrant I, where $x \geq 0$ and $y \geq 0$.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Quadrant I only, axes labeled x for small photos and y for large photos. The solid boundary line x plus y equals 25 has the region above and to the right shaded. The solid boundary line 4x plus 10y equals 200 has the region below and to the left shaded. The two shadings overlap in a region bounded by the two lines and the axes, which is the solution to the system." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 327" width="327" height="327" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="Quadrant I only, x from 0 to 55 and y from 0 to 55, with ticks labeled every 10. The solid boundary line x plus y equals 25 runs from (0, 25) to (25, 0), with the region above and to the right shaded. The solid boundary line 4x plus 10y equals 200 runs from (0, 20) to (50, 0), with the region below and to the left shaded. The lines cross at about (8.3, 16.7). The two shadings overlap in the triangle with corners at that crossing point, (25, 0), and (50, 0), bounded by the two lines and the x-axis, which is the solution to the system." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 327" width="327" height="327" font-family="Helvetica, Arial, sans-serif">
   <line x1="51" y1="301" x2="51" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="76" y1="301" x2="76" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="101" y1="301" x2="101" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -332,14 +334,10 @@ situation, we only graph Quadrant I, where $x \geq 0$ and $y \geq 0$.
   <polygon points="26,14 31,24 21,24" fill="currentColor"/>
   <text x="311" y="293" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
   <text x="34" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="27.1" y1="177.1" x2="149.9" y2="299.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="157,307 146.4,303.5 153.5,296.4" fill="currentColor"/>
-  <polygon points="20,170 30.6,173.5 23.5,180.6" fill="currentColor"/>
-  <line x1="29.3" y1="202.3" x2="281.7" y2="303.3" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="291,307 279.9,307.9 283.6,298.6" fill="currentColor"/>
-  <polygon points="20,198.6 31.1,197.7 27.4,207" fill="currentColor"/>
+  <line x1="26" y1="176" x2="151" y2="301" stroke="currentColor" stroke-width="1.8"/>
+  <line x1="26" y1="201" x2="276" y2="301" stroke="currentColor" stroke-width="1.8"/>
   <text x="181" y="146" font-size="13" fill="currentColor" text-anchor="middle">x + y ≥ 25</text>
-  <text x="76" y="281" font-size="13" fill="currentColor" text-anchor="middle">4x + 10y ≤ 200</text>
+  <text x="31" y="291" font-size="13" fill="currentColor" text-anchor="start">4x + 10y ≤ 200</text>
   <text x="76" y="316" font-size="13" fill="currentColor" text-anchor="middle">10</text>
   <text x="126" y="316" font-size="13" fill="currentColor" text-anchor="middle">20</text>
   <text x="176" y="316" font-size="13" fill="currentColor" text-anchor="middle">30</text>
@@ -354,7 +352,7 @@ situation, we only graph Quadrant I, where $x \geq 0$ and $y \geq 0$.
 </div>
 
 The solution is the darker, doubly-shaded region bounded by the two lines
-and the axes.
+and the $x$-axis.
 
 (c) Could she display 10 small and 20 large photos? Testing $(10, 20)$:
 $10 + 20 = 30 \geq 25$ is true, but
@@ -368,18 +366,18 @@ $4(20) + 10(10) = 80 + 100 = 180 \leq 200$ is also true. Since $(20, 10)$ is
 in the solution region, she *could* display 20 small and 10 large photos.
 
 {{< multiplechoice
-  question="For Christy's system $x + y >= 25$ and $4x + 10y <= 200$, could she display 30 small and 5 large photos?"
-  hint="Check both inequalities: $30 + 5 = 35$, and $4(30) + 10(5) = 170$."
-  answer="yes"
+  question="For Christy's system $x + y \geq 25$ and $4x + 10y \leq 200$, could she display 15 small and 5 large photos?"
+  hint="Substitute $x = 15$, $y = 5$ into both inequalities. She can display them only if both statements are true."
+  answer="no"
 >}}
 yes
 no
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="For Christy's system $x + y >= 25$ and $4x + 10y <= 200$, could she display 5 small and 15 large photos?"
-  hint="Check the first inequality first: is $5 + 15 >= 25$ true or false?"
-  answer="no"
+  question="For Christy's system $x + y \geq 25$ and $4x + 10y \leq 200$, could she display 3 large and 22 small photos?"
+  hint="Let $x$ be the number of small photos and $y$ the number of large ones, and substitute into both inequalities. She can display them only if both statements are true."
+  answer="yes"
 >}}
 yes
 no
@@ -409,7 +407,7 @@ yes
 {{< multiplechoice
   question="Is $(7,1)$ a solution of the system $3x+y>5$ and $2x-y\leq 10$?"
   answer="no"
-  hint="Substitute $x=7$ and $y=1$ into both inequalities. One false statement is enough to rule out the pair."
+  hint="Substitute $x=7$ and $y=1$ into both inequalities. The pair is a solution only if both statements are true."
 >}}
 no
 yes
@@ -420,7 +418,7 @@ yes
 {{< multiplechoice
   question="Solve the system $2x+4y>4$ and $y\leq-\tfrac{1}{2}x-2$ by graphing. Which solution classification does the graph show?"
   answer="no solution"
-  hint="Graph the parallel boundary lines, using a dashed line for the strict inequality and a solid line for the inclusive inequality, then check whether the shaded half-planes overlap."
+  hint="Graph each boundary line, dashed for a strict inequality and solid for an inclusive one, shade each side with a test point, then check whether the shaded half-planes overlap."
 >}}
 a nonempty overlapping region
 no solution
@@ -429,7 +427,7 @@ no solution
 {{< multiplechoice
   question="Solve the system $-2x+6y<0$ and $6y>2x+4$ by graphing. Which solution classification does the graph show?"
   answer="no solution"
-  hint="Graph both dashed boundary lines. They are parallel, so compare the directions of the two shaded half-planes."
+  hint="Graph each boundary line, dashed for a strict inequality and solid for an inclusive one, shade each side with a test point, then check whether the shaded half-planes overlap."
 >}}
 no solution
 a nonempty overlapping region
@@ -440,7 +438,7 @@ a nonempty overlapping region
 {{< multiplechoice
   question="Caitlyn sells portraits for \$15 and landscapes for \$10 at the county fair. She wants to sell at least 60 drawings and needs to sell at least \$800 worth to earn a profit. If $p$ is the number of portraits and $l$ is the number of landscapes, which system models this situation?"
   answer="$p+l\geq 60$ and $15p+10l\geq 800$"
-  hint="Translate each 'at least' statement with $\geq$: one inequality counts drawings and the other totals their dollar value."
+  hint="Write one inequality for the number of drawings and one for their total dollar value, and choose each inequality symbol from the wording of its condition."
 >}}
 $p+l\geq 60$ and $15p+10l\geq 800$
 $p+l\leq 60$ and $15p+10l\leq 800$
@@ -450,7 +448,7 @@ $p+l\geq 60$ and $15p+10l\leq 800$
 {{< multiplechoice
   question="For Caitlyn's system $p+l\geq 60$ and $15p+10l\geq 800$, which description gives the graph of the solution?"
   answer="Both boundary lines are solid, and the region above both lines is shaded."
-  hint="Equality is included in both inequalities. Solve each inequality for $l$ to determine which side of each boundary to shade."
+  hint="Decide solid or dashed from each inequality symbol, then solve each inequality for $l$ to see which side of its boundary to shade."
 >}}
 Both boundary lines are dashed, and the region above both lines is shaded.
 Both boundary lines are solid, and the region above both lines is shaded.
@@ -477,4 +475,4 @@ yes
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.6: Graphing Systems of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/5-6-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the overlapping shaded-region figures as accessible inline SVGs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.6: Graphing Systems of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/5-6-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the overlapping shaded-region figures as accessible inline SVGs, drawing the photo-display graph in Quadrant I only, as the text describes; condensed the worked examples and omitted four of them (the $x-y>3$, $x-2y<5$, and $y>\tfrac{1}{2}x-4$ graphing examples and the hamburger-and-cookie application); gave the second parallel boundary line's slope as $-\tfrac{4}{3}$, where the source prints $\tfrac{4}{3}$, and said the origin satisfies $4x+10y\leq200$ in the photo-display graph, where the source says it does not; worked parts (c) and (d) of the photo-display example with the points its solution checks, 10 small and 20 large and 20 small and 10 large, and asked the problem statement's own questions (15 small and 5 large, 3 large and 22 small) as the two exercises after it; omitted the Be Prepared quiz, Media links, Key Concepts summary (it repeats the how-to box), Self Check checklist, and unselected Section Exercises; converted one practice problem ("Try It") into interactive exercises with instant feedback and added test-point checks on two worked examples' systems, the second using a new point, $(3,1)$; wrote the Key terms list from the module's glossary and definition boxes; and adapted selected end-of-section exercises into the interactive Practice block.</small>

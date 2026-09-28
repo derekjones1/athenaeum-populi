@@ -72,7 +72,7 @@ both sides by $5$ to "undo" the multiplication.
 $$
 \begin{array}{lrcl}
 & 5x &=& -27 \\[4pt]
-\text{Divide to "undo" the multiplication.} & \tfrac{5x}{5} &=& \tfrac{-27}{5} \\[4pt]
+\text{Divide to ``undo'' the multiplication.} & \tfrac{5x}{5} &=& \tfrac{-27}{5} \\[4pt]
 \text{Simplify.} & x &=& -\tfrac{27}{5}
 \end{array}
 $$
@@ -85,6 +85,7 @@ solution.
 {{< fillin
   question="Solve: $3y = -41$."
   answer="-\frac{41}{3}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$-\tfrac{41}{3}$"
   hint="Divide both sides by 3 to undo the multiplication, then simplify."
 >}}
@@ -92,6 +93,7 @@ solution.
 {{< fillin
   question="Solve: $4z = -55$."
   answer="-\frac{55}{4}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$-\tfrac{55}{4}$"
   hint="Divide both sides by 4 to undo the multiplication, then simplify."
 >}}
@@ -115,7 +117,7 @@ Here $y$ is divided by $-7$. We must multiply by $-7$ to isolate $y$.
 $$
 \begin{array}{lrcl}
 & \tfrac{y}{-7} &=& -14 \\[4pt]
-\text{Multiply both sides by } -7. & -7\left(\tfrac{y}{-7}\right) &=& -7(-14) \\[4pt]
+\text{Multiply both sides by } {-7}. & -7\left(\tfrac{y}{-7}\right) &=& -7(-14) \\[4pt]
 \text{Multiply.} & \tfrac{-7y}{-7} &=& 98 \\[4pt]
 \text{Simplify.} & y &=& 98
 \end{array}
@@ -127,13 +129,15 @@ $-14 = -14$. ✓
 {{< fillin
   question="Solve: $\tfrac{a}{-7} = -42$."
   answer="294"
-  hint="Multiply both sides by -7 to undo the division."
+  answerForm="decimal"
+  hint="Multiply both sides by $-7$ to undo the division."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{b}{-6} = -24$."
   answer="144"
-  hint="Multiply both sides by -6 to undo the division."
+  answerForm="decimal"
+  hint="Multiply both sides by $-6$ to undo the division."
 >}}
 
 **Example.** Solve: $-n = 9$.
@@ -141,8 +145,8 @@ $-14 = -14$. ✓
 $$
 \begin{array}{lrcl}
 & -n &=& 9 \\[4pt]
-\text{Remember } -n \text{ is equivalent to } -1n. & -1n &=& 9 \\[4pt]
-\text{Divide both sides by } -1. & \tfrac{-1n}{-1} &=& \tfrac{9}{-1} \\[4pt]
+\text{Remember } {-n} \text{ is equivalent to } {-1n}. & -1n &=& 9 \\[4pt]
+\text{Divide both sides by } {-1}. & \tfrac{-1n}{-1} &=& \tfrac{9}{-1} \\[4pt]
 \text{Divide.} & n &=& -9
 \end{array}
 $$
@@ -155,13 +159,15 @@ of both sides.
 {{< fillin
   question="Solve: $-k = 8$."
   answer="-8"
-  hint="Rewrite -k as $-1k$, then divide (or multiply) both sides by -1."
+  answerForm="decimal"
+  hint="Rewrite $-k$ as $-1k$, then divide (or multiply) both sides by $-1$."
 >}}
 
 {{< fillin
   question="Solve: $-g = 3$."
   answer="-3"
-  hint="Rewrite -g as $-1g$, then divide (or multiply) both sides by -1."
+  answerForm="decimal"
+  hint="Rewrite $-g$ as $-1g$, then divide (or multiply) both sides by $-1$."
 >}}
 
 **Example.** Solve: $\tfrac{3}{4}x = 12$.
@@ -188,12 +194,14 @@ $12 = 12$. ✓
 {{< fillin
   question="Solve: $\tfrac{2}{5}n = 14$."
   answer="35"
+  answerForm="decimal"
   hint="Multiply both sides by the reciprocal of $\tfrac{2}{5}$, which is $\tfrac{5}{2}$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{5}{6}y = 15$."
   answer="18"
+  answerForm="decimal"
   hint="Multiply both sides by the reciprocal of $\tfrac{5}{6}$, which is $\tfrac{6}{5}$."
 >}}
 
@@ -206,7 +214,7 @@ variable.
 $$
 \begin{array}{lrcl}
 & \tfrac{8}{15} &=& -\tfrac{4}{5}x \\[6pt]
-\text{Multiply by the reciprocal of } -\tfrac{4}{5}. & \left(-\tfrac{5}{4}\right)\left(\tfrac{8}{15}\right) &=& \left(-\tfrac{5}{4}\right)\left(-\tfrac{4}{5}x\right) \\[6pt]
+\text{Multiply by the reciprocal of } {-\tfrac{4}{5}}. & \left(-\tfrac{5}{4}\right)\left(\tfrac{8}{15}\right) &=& \left(-\tfrac{5}{4}\right)\left(-\tfrac{4}{5}x\right) \\[6pt]
 \text{Reciprocals multiply to 1.} & -\tfrac{5 \cdot 4 \cdot 2}{4 \cdot 3 \cdot 5} &=& 1x \\[6pt]
 \text{Multiply.} & -\tfrac{2}{3} &=& x
 \end{array}
@@ -219,6 +227,7 @@ $\tfrac{8}{15} = \tfrac{8}{15}$. ✓
 {{< fillin
   question="Solve: $\tfrac{9}{25} = -\tfrac{4}{5}z$."
   answer="-\frac{9}{20}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{9}{20}$"
   hint="Multiply both sides by the reciprocal of $-\tfrac{4}{5}$, which is $-\tfrac{5}{4}$."
 >}}
@@ -226,6 +235,7 @@ $\tfrac{8}{15} = \tfrac{8}{15}$. ✓
 {{< fillin
   question="Solve: $\tfrac{5}{6} = -\tfrac{8}{3}r$."
   answer="-\frac{5}{16}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{16}$"
   hint="Multiply both sides by the reciprocal of $-\tfrac{8}{3}$, which is $-\tfrac{3}{8}$."
 >}}
@@ -256,12 +266,14 @@ $-9 = -9$. ✓
 {{< fillin
   question="Solve: $18 - 27 = 15c - 9c - 3c$."
   answer="-3"
+  answerForm="decimal"
   hint="Simplify each side first — combine the constants on the left and the like terms on the right — then divide."
 >}}
 
 {{< fillin
   question="Solve: $18 - 22 = 12x - x - 4x$."
   answer="-\frac{4}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{4}{7}$"
   hint="Simplify each side first — combine the constants on the left and the like terms on the right — then divide."
 >}}
@@ -277,7 +289,7 @@ $$
 \text{Distribute.} & -4a + 12 - 7 &=& 25 \\[4pt]
 \text{Simplify.} & -4a + 5 &=& 25 \\[4pt]
 \text{Simplify.} & -4a &=& 20 \\[4pt]
-\text{Divide both sides by } -4 \text{ to isolate } a. & \tfrac{-4a}{-4} &=& \tfrac{20}{-4} \\[4pt]
+\text{Divide both sides by } {-4} \text{ to isolate } a. & \tfrac{-4a}{-4} &=& \tfrac{20}{-4} \\[4pt]
 \text{Divide.} & a &=& -5
 \end{array}
 $$
@@ -289,13 +301,15 @@ simplifies to $-4(-8) - 7 \stackrel{?}{=} 25$, then $32 - 7 \stackrel{?}{=}
 {{< fillin
   question="Solve: $-4(q - 2) - 8 = 24$."
   answer="-6"
-  hint="Distribute the -4 first, then combine constants, then divide."
+  answerForm="decimal"
+  hint="Distribute the $-4$ first, then combine constants, then divide."
 >}}
 
 {{< fillin
   question="Solve: $-6(r - 2) - 12 = 30$."
   answer="-5"
-  hint="Distribute the -6 first, then combine constants, then divide."
+  answerForm="decimal"
+  hint="Distribute the $-6$ first, then combine constants, then divide."
 >}}
 
 Now we have covered all four properties of equality — subtraction,
@@ -326,7 +340,7 @@ and $y$.
 $$
 \begin{array}{lrcl}
 \text{Translate.} & 143 &=& -11y \\[4pt]
-\text{Divide by } -11. & \tfrac{143}{-11} &=& \tfrac{-11y}{-11} \\[4pt]
+\text{Divide by } {-11}. & \tfrac{143}{-11} &=& \tfrac{-11y}{-11} \\[4pt]
 \text{Simplify.} & -13 &=& y
 \end{array}
 $$
@@ -335,15 +349,17 @@ $$
 $143 = 143$. ✓
 
 {{< fillin
-  question="Translate and solve: The number 132 is the product of -12 and y."
+  question="Translate and solve: The number $132$ is the product of $-12$ and $y$."
   answer="-11"
-  hint="Translate to $132 = -12y$, then divide both sides by -12."
+  answerForm="decimal"
+  hint="Translate “is” as $=$ and “the product of” as multiplication, then divide both sides by the number multiplying the variable."
 >}}
 
 {{< fillin
-  question="Translate and solve: The number 117 is the product of -13 and z."
+  question="Translate and solve: The number $117$ is the product of $-13$ and $z$."
   answer="-9"
-  hint="Translate to $117 = -13z$, then divide both sides by -13."
+  answerForm="decimal"
+  hint="Translate “is” as $=$ and “the product of” as multiplication, then divide both sides by the number multiplying the variable."
 >}}
 
 **Example.** Translate and solve: $n$ divided by $8$ is $-32$.
@@ -360,15 +376,17 @@ $$
 \stackrel{?}{=} -32$, which simplifies to $-32 = -32$. ✓
 
 {{< fillin
-  question="Translate and solve: n divided by 7 is equal to -21."
+  question="Translate and solve: $n$ divided by $7$ is equal to $-21$."
   answer="-147"
-  hint="Translate to $\tfrac{n}{7} = -21$, then multiply both sides by 7."
+  answerForm="decimal"
+  hint="Translate “divided by” as a fraction bar and “is equal to” as $=$, then multiply both sides by the divisor to undo the division."
 >}}
 
 {{< fillin
-  question="Translate and solve: n divided by 8 is equal to -56."
+  question="Translate and solve: $n$ divided by $8$ is equal to $-56$."
   answer="-448"
-  hint="Translate to $\tfrac{n}{8} = -56$, then multiply both sides by 8."
+  answerForm="decimal"
+  hint="Translate “divided by” as a fraction bar and “is equal to” as $=$, then multiply both sides by the divisor to undo the division."
 >}}
 
 **Example.** Translate and solve: The quotient of $y$ and $-4$ is $68$.
@@ -376,7 +394,7 @@ $$
 $$
 \begin{array}{lrcl}
 \text{Translate.} & \tfrac{y}{-4} &=& 68 \\[4pt]
-\text{Multiply both sides by } -4. & -4\left(\tfrac{y}{-4}\right) &=& -4(68) \\[4pt]
+\text{Multiply both sides by } {-4}. & -4\left(\tfrac{y}{-4}\right) &=& -4(68) \\[4pt]
 \text{Simplify.} & y &=& -272
 \end{array}
 $$
@@ -385,15 +403,17 @@ $$
 $\tfrac{-272}{-4} \stackrel{?}{=} 68$, which simplifies to $68 = 68$. ✓
 
 {{< fillin
-  question="Translate and solve: The quotient of q and -8 is 72."
+  question="Translate and solve: The quotient of $q$ and $-8$ is $72$."
   answer="-576"
-  hint="Translate to $\tfrac{q}{-8} = 72$, then multiply both sides by -8."
+  answerForm="decimal"
+  hint="Translate “the quotient of” as a fraction with the first quantity on top and “is” as $=$, then multiply both sides by the denominator."
 >}}
 
 {{< fillin
-  question="Translate and solve: The quotient of p and -9 is 81."
+  question="Translate and solve: The quotient of $p$ and $-9$ is $81$."
   answer="-729"
-  hint="Translate to $\tfrac{p}{-9} = 81$, then multiply both sides by -9."
+  answerForm="decimal"
+  hint="Translate “the quotient of” as a fraction with the first quantity on top and “is” as $=$, then multiply both sides by the denominator."
 >}}
 
 **Example.** Translate and solve: Three-fourths of $p$ is $18$.
@@ -412,15 +432,17 @@ $$
 \stackrel{?}{=} 18$, which simplifies to $18 = 18$. ✓
 
 {{< fillin
-  question="Translate and solve: Two-fifths of f is 16."
+  question="Translate and solve: Two-fifths of $f$ is $16$."
   answer="40"
-  hint="Translate to $\tfrac{2}{5}f = 16$, then multiply both sides by the reciprocal $\tfrac{5}{2}$."
+  answerForm="decimal"
+  hint="Translate “of” as multiplication and “is” as $=$, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 {{< fillin
-  question="Translate and solve: Three-fourths of f is 21."
+  question="Translate and solve: Three-fourths of $f$ is $21$."
   answer="28"
-  hint="Translate to $\tfrac{3}{4}f = 21$, then multiply both sides by the reciprocal $\tfrac{4}{3}$."
+  answerForm="decimal"
+  hint="Translate “of” as multiplication and “is” as $=$, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 **Example.** Translate and solve: The sum of three-eighths and $x$ is
@@ -430,7 +452,7 @@ $$
 \begin{array}{lrcl}
 \text{Translate.} & \tfrac{3}{8} + x &=& \tfrac{1}{2} \\[4pt]
 \text{Subtract } \tfrac{3}{8} \text{ from each side.} & \tfrac{3}{8} - \tfrac{3}{8} + x &=& \tfrac{1}{2} - \tfrac{3}{8} \\[4pt]
-\text{Rewrite with a common denominator.} & x &=& \tfrac{4}{8} - \tfrac{3}{8} \\[4pt]
+\text{Simplify and rewrite with a common denominator.} & x &=& \tfrac{4}{8} - \tfrac{3}{8} \\[4pt]
 \text{Simplify.} & x &=& \tfrac{1}{8}
 \end{array}
 $$
@@ -441,17 +463,19 @@ to $\tfrac{4}{8} \stackrel{?}{=} \tfrac{1}{2}$, then $\tfrac{1}{2} =
 \tfrac{1}{2}$. ✓
 
 {{< fillin
-  question="Translate and solve: The sum of five-eighths and x is one-fourth."
+  question="Translate and solve: The sum of five-eighths and $x$ is one-fourth."
   answer="-\frac{3}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{8}$"
-  hint="Translate to $\tfrac{5}{8} + x = \tfrac{1}{4}$, then subtract $\tfrac{5}{8}$ from both sides and use a common denominator."
+  hint="Translate “the sum of” as addition and “is” as $=$, then subtract the fraction from both sides, using a common denominator."
 >}}
 
 {{< fillin
-  question="Translate and solve: The sum of three-fourths and x is five-sixths."
+  question="Translate and solve: The sum of three-fourths and $x$ is five-sixths."
   answer="\frac{1}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{12}$"
-  hint="Translate to $\tfrac{3}{4} + x = \tfrac{5}{6}$, then subtract $\tfrac{3}{4}$ from both sides and use a common denominator."
+  hint="Translate “the sum of” as addition and “is” as $=$, then subtract the fraction from both sides, using a common denominator."
 >}}
 
 ## Translate and Solve Applications
@@ -479,15 +503,19 @@ $\text{\textdollar}10.74$? $6(1.79) \stackrel{?}{=} 10.74$, and
 $10.74 = 10.74$. ✓
 
 {{< fillin
-  question="Translate and solve: Arianna bought a 24-pack of water bottles for \$9.36. What was the cost of one water bottle?"
+  question="Translate and solve: Arianna bought a 24-pack of water bottles for \$9.36. What was the cost of one water bottle, in dollars?"
   answer="0.39"
-  hint="Let c be the cost of one bottle. The cost of 24 bottles is 9.36 — translate to an equation and divide."
+  answerForm="decimal"
+  answerDisplay="\$0.39"
+  hint="Let $c$ be the cost of one bottle. Write an equation for the cost of the whole pack, then divide both sides by the number of bottles."
 >}}
 
 {{< fillin
-  question="Translate and solve: At JB's Bowling Alley, 6 people can play on one lane for \$34.98. What is the cost for each person?"
+  question="Translate and solve: At JB's Bowling Alley, 6 people can play on one lane for \$34.98. What is the cost for each person, in dollars?"
   answer="5.83"
-  hint="Let c be the cost for one person. The cost for 6 people is 34.98 — translate to an equation and divide."
+  answerForm="decimal"
+  answerDisplay="\$5.83"
+  hint="Let $c$ be the cost for one person. Write an equation for the cost of the lane for all the players, then divide both sides by the number of people."
 >}}
 
 **Example.** Andreas bought a used car for $\text{\textdollar}12{,}000$.
@@ -510,16 +538,18 @@ $\text{\textdollar}12{,}000$? $\tfrac{3}{4} \cdot 16{,}000
 \stackrel{?}{=} 12{,}000$, and $12{,}000 = 12{,}000$. ✓
 
 {{< fillin
-  question="Translate and solve: The annual property tax on the Mehta's house is \$1,800, calculated as 15/1000 of the assessed value of the house. What is the assessed value of the house?"
+  question="Translate and solve: The annual property tax on the Mehta's house is \$1,800, calculated as $\tfrac{15}{1{,}000}$ of the assessed value of the house. What is the assessed value of the Mehta's house, in dollars?"
   answer="120000"
-  answerDisplay="120,000"
-  hint="Let v be the assessed value. Translate to $1800 = \tfrac{15}{1000}v$, then multiply both sides by the reciprocal of $\tfrac{15}{1000}$."
+  answerForm="decimal"
+  answerDisplay="\$120,000"
+  hint="Let $v$ be the assessed value. Write an equation saying the tax is that fraction of $v$, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 {{< fillin
   question="Translate and solve: Stella planted 14 flats of flowers in $\tfrac{2}{3}$ of her garden. How many flats of flowers would she need to fill the whole garden?"
   answer="21"
-  hint="Let f be the number of flats to fill the whole garden. Translate to $14 = \tfrac{2}{3}f$, then multiply both sides by the reciprocal of $\tfrac{2}{3}$."
+  answerForm="decimal"
+  hint="Let $f$ be the number of flats to fill the whole garden. Write an equation saying the flats she planted are that fraction of $f$, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 ## Key terms
@@ -536,12 +566,14 @@ $ac = bc$.
 {{< fillin
   question="Solve: $8x = 56$."
   answer="7"
+  answerForm="decimal"
   hint="Divide both sides by $8$ to undo the multiplication, then check by substituting the result."
 >}}
 
 {{< fillin
   question="Solve: $-\tfrac{5}{8}w = 40$."
   answer="-64"
+  answerForm="decimal"
   hint="Multiply both sides by $-\tfrac{8}{5}$, the reciprocal of $-\tfrac{5}{8}$."
 >}}
 
@@ -550,12 +582,14 @@ $ac = bc$.
 {{< fillin
   question="Solve: $100 - 16 = 4p - 10p - p$."
   answer="-12"
-  hint="Simplify both sides first to get $84 = -7p$, then divide both sides by $-7$."
+  answerForm="decimal"
+  hint="Combine the constants on the left and the like terms on the right, then divide both sides by the coefficient of $p$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{7}{8}n - \tfrac{3}{4}n = 9 + 2$."
   answer="88"
+  answerForm="decimal"
   hint="Rewrite $\tfrac{3}{4}$ as $\tfrac{6}{8}$ and combine the like terms before isolating $n$."
 >}}
 
@@ -564,14 +598,16 @@ $ac = bc$.
 {{< fillin
   question="Translate and solve: 133 is the product of $-19$ and $n$. Enter the value of $n$."
   answer="-7"
-  hint="Translate the product statement as $133 = -19n$, then divide both sides by $-19$."
+  answerForm="decimal"
+  hint="Translate “is” as $=$ and “the product of” as multiplication, then divide both sides by the number multiplying the variable."
 >}}
 
 {{< fillin
   question="Translate and solve: The sum of two-fifths and $f$ is one-half. Enter the value of $f$."
   answer="\frac{1}{10}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{10}$"
-  hint="Translate to $\tfrac{2}{5} + f = \tfrac{1}{2}$, then subtract $\tfrac{2}{5}$ from both sides using a common denominator."
+  hint="Translate “the sum of” as addition and “is” as $=$, then subtract the fraction from both sides, using a common denominator."
 >}}
 
 ### Translate and solve applications
@@ -579,17 +615,19 @@ $ac = bc$.
 {{< fillin
   question="Ramona bought 18 balloons for a party. She wants to make 3 equal bunches. How many balloons did she use in each bunch?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="6 balloons"
-  hint="Let $b$ be the number of balloons in each bunch. Translate to $3b = 18$, then divide both sides by $3$."
+  hint="Let $b$ be the number of balloons in each bunch. Write an equation for the total number of balloons in all the bunches, then divide both sides by the number of bunches."
 >}}
 
 {{< fillin
-  question="Bea earned \$11,700 commission for selling a house, calculated as $\tfrac{6}{100}$ of the selling price. What was the selling price of the house?"
+  question="Bea earned \$11,700 commission for selling a house, calculated as $\tfrac{6}{100}$ of the selling price. What was the selling price of the house, in dollars?"
   answer="195000"
+  answerForm="decimal"
   answerDisplay="\$195,000"
-  hint="Let $s$ be the selling price. Translate to $\tfrac{6}{100}s = 11{,}700$, then multiply both sides by $\tfrac{100}{6}$."
+  hint="Let $s$ be the selling price. Write an equation saying the commission is that fraction of $s$, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.2: Solve Equations using the Division and Multiplication Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-2-solve-equations-using-the-division-and-multiplication-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelopes-and-counters figure as a table and the application step-by-step tables as markdown tables; omitted the Manipulative Mathematics callouts, media links, and Self Check checklist; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.2: Solve Equations using the Division and Multiplication Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-2-solve-equations-using-the-division-and-multiplication-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelopes-and-counters figure as a table, the worked-example step images as aligned equations, and the application step-by-step tables as markdown tables; omitted the Be Prepared quiz, the Manipulative Mathematics callout, and the Self Check checklist; adapted selected end-of-section exercises into the interactive Practice block and omitted the rest (including Everyday Math and Writing Exercises); converted the practice problems ("Try Its") into interactive exercises with instant feedback; and named the unit to enter in the money application questions.</small>

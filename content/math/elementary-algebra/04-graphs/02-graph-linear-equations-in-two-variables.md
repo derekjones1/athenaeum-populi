@@ -128,7 +128,7 @@ directions.
   <circle cx="166" cy="106" r="4" fill="currentColor"/>
   <circle cx="186" cy="136" r="4" fill="currentColor"/>
   <circle cx="206" cy="166" r="4" fill="currentColor"/>
-  <text x="216" y="213.9" font-size="13" fill="currentColor" text-anchor="end">3x + 2y = 6</text>
+  <text x="104" y="90" font-size="13" fill="currentColor" text-anchor="end">3x + 2y = 6</text>
 </svg>
 </div>
 
@@ -138,20 +138,77 @@ solutions.
 
 Notice that the point $(-2, 6)$ is on the line shown below. If you substitute
 $x = -2$ and $y = 6$ into the equation, you find that it is a solution to the
-equation:
+equation.
 
-$$3x + 2y = 6$$
-$$3(-2) + 2(6) = 6$$
-$$-6 + 12 = 6$$
-$$6 = 6 \checkmark$$
+<div class="ap-figure">
+<svg role="img" aria-label="The line 3x plus 2y equals 6 on a coordinate grid, with two labeled points. The point (−2, 6) lies on the line. The point (4, 1) lies above the line, off it." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
+  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
+  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
+  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
+  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
+  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
+  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="114.2" y1="28.3" x2="297.8" y2="303.7" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="303.3,312 293.6,306.5 301.9,300.9" fill="currentColor"/>
+  <polygon points="108.7,20 118.4,25.5 110.1,31.1" fill="currentColor"/>
+  <circle cx="126" cy="46" r="4" fill="currentColor"/>
+  <circle cx="246" cy="146" r="4" fill="currentColor"/>
+  <text x="112" y="50" font-size="13" fill="currentColor" text-anchor="end">(−2, 6)</text>
+  <text x="246" y="134" font-size="13" fill="currentColor" text-anchor="middle">(4, 1)</text>
+  <text x="104" y="90" font-size="13" fill="currentColor" text-anchor="end">3x + 2y = 6</text>
+</svg>
+</div>
+
+$$
+\begin{aligned}
+3x + 2y &= 6 \\
+3(-2) + 2(6) &\stackrel{?}{=} 6 \\
+-6 + 12 &\stackrel{?}{=} 6 \\
+6 &= 6 \ \checkmark
+\end{aligned}
+$$
 
 So the point $(-2, 6)$ is a solution to the equation $3x + 2y = 6$. What
 about $(4, 1)$?
 
-$$3x + 2y = 6$$
-$$3(4) + 2(1) = 6$$
-$$12 + 2 \stackrel{?}{=} 6$$
-$$14 \neq 6$$
+$$
+\begin{aligned}
+3x + 2y &= 6 \\
+3(4) + 2(1) &\stackrel{?}{=} 6 \\
+12 + 2 &\stackrel{?}{=} 6 \\
+14 &\neq 6
+\end{aligned}
+$$
 
 So $(4, 1)$ is *not* a solution to the equation $3x + 2y = 6$. Therefore, the
 point $(4, 1)$ is not on the line. This is an example of the saying, "A
@@ -238,22 +295,82 @@ $$
 So $(0, -3)$, $(3, 3)$, and $(-1, -5)$ are solutions, while $(2, -3)$ is not
 a solution.
 
-(b) Plotting the four points confirms it: $(0, -3)$, $(3, 3)$, and $(-1,
--5)$ fall on the line $y = 2x - 3$, but $(2, -3)$ does not. The points that
-are solutions to $y = 2x - 3$ are on the line, and the point that is not a
-solution is not on the line.
+(b) Plot the four points. The points $(0, -3)$, $(3, 3)$, and $(-1, -5)$
+fall on the line $y = 2x - 3$, but $(2, -3)$ does not.
 
-{{< fillin
-  question="The line $y = 3x - 1$ passes through the point $(2, 5)$. Is $(2, 5)$ a solution to the equation? Enter the value of $3x - 1$ when $x = 2$."
-  answer="5"
-  hint="Substitute $x = 2$ into $3x - 1$ and simplify; compare the result to the y-coordinate 5."
->}}
+<div class="ap-figure">
+<svg role="img" aria-label="The line y equals 2x minus 3 with four labeled points. The points (0, −3), (3, 3), and (−1, −5) lie on the line. The point (2, −3) lies below and to the right of the line, off it." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
+  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
+  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
+  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
+  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
+  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
+  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="127.5" y1="303.1" x2="264.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="269,20 269,31.2 260.1,26.7" fill="currentColor"/>
+  <polygon points="123,312 123,300.8 131.9,305.3" fill="currentColor"/>
+  <circle cx="166" cy="226" r="4" fill="currentColor"/>
+  <circle cx="226" cy="106" r="4" fill="currentColor"/>
+  <circle cx="206" cy="226" r="4" fill="currentColor"/>
+  <circle cx="146" cy="266" r="4" fill="currentColor"/>
+  <text x="156" y="222" font-size="13" fill="currentColor" text-anchor="end">(0, −3)</text>
+  <text x="234" y="112" font-size="13" fill="currentColor" text-anchor="start">(3, 3)</text>
+  <text x="214" y="240" font-size="13" fill="currentColor" text-anchor="start">(2, −3)</text>
+  <text x="136" y="270" font-size="13" fill="currentColor" text-anchor="end">(−1, −5)</text>
+  <text x="240" y="50" font-size="13" fill="currentColor" text-anchor="end">y = 2x − 3</text>
+</svg>
+</div>
 
-{{< fillin
-  question="For the equation $y = 3x - 1$, substitute $x = -1$ to find the y-coordinate of the point on the line."
-  answer="-4"
-  hint="$y = 3(-1) - 1$."
+The points that are solutions to $y = 2x - 3$ are on the line, and the point
+that is not a solution is not on the line.
+
+{{< multiplechoice
+  question="For $y = 3x - 1$, consider the ordered pair $(2, 5)$. Is the ordered pair a solution to the equation, and is the point on the line?"
+  answer="Yes; it is a solution and the point is on the line."
+  hint="Substitute $x = 2$ and $y = 5$ into $y = 3x - 1$ and compare the two sides."
 >}}
+Yes; it is a solution and the point is on the line.
+No; it is not a solution and the point is not on the line.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = 3x - 1$, consider the ordered pair $(3, -1)$. Is the ordered pair a solution to the equation, and is the point on the line?"
+  answer="No; it is not a solution and the point is not on the line."
+  hint="Substitute $x = 3$ and $y = -1$ into $y = 3x - 1$ and compare the two sides."
+>}}
+Yes; it is a solution and the point is on the line.
+No; it is not a solution and the point is not on the line.
+{{< /multiplechoice >}}
 
 ## Graph a linear equation by plotting points
 
@@ -270,7 +387,13 @@ Point-Plotting Method.
   $y$ is isolated on the left side of the equation, it is easier to choose
   values for $x$.
 
-  $$x = 0: \quad y = 2(0) + 1 = 1 \qquad\qquad x = 1: \quad y = 2(1) + 1 = 3 \qquad\qquad x = -2: \quad y = 2(-2) + 1 = -3$$
+  $$
+  \begin{aligned}
+  x = 0&: & y &= 2(0) + 1 = 1 \\
+  x = 1&: & y &= 2(1) + 1 = 3 \\
+  x = -2&: & y &= 2(-2) + 1 = -3
+  \end{aligned}
+  $$
 
   **Organize the solutions in a table:**
 
@@ -346,12 +469,12 @@ you use three points and one is incorrect, the points will not line up —
 this tells you something is wrong and you need to check your work.
 
 {{< graphplot
-  question="Graph $y = -3x$ by plotting points."
-  answerDisplay="$y = -3x$"
+  question="Graph $y = -2x + 4$ by plotting points."
+  answerDisplay="$y = -2x + 4$"
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
-  hint="Choose several $x$-values, compute $y = -3x$, plot the ordered pairs, and draw the line through them."
+  hint="Choose several $x$-values, compute $y = -2x + 4$, plot the ordered pairs, and draw the line through them."
 >}}
-{"answer":{"slope":-3,"intercept":0,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":-2,"intercept":4,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 When an equation includes a fraction as the coefficient of $x$, we can still
@@ -366,7 +489,13 @@ we choose values of $x$ carefully. We use zero as one choice and multiples
 of $2$ for the other choices, so that $\tfrac{1}{2}x$ comes out even each
 time.
 
-$$x = 0: \quad y = \tfrac{1}{2}(0) + 3 = 3 \qquad x = 2: \quad y = \tfrac{1}{2}(2) + 3 = 4 \qquad x = 4: \quad y = \tfrac{1}{2}(4) + 3 = 5$$
+$$
+\begin{aligned}
+x = 0&: & y &= \tfrac{1}{2}(0) + 3 = 3 \\
+x = 2&: & y &= \tfrac{1}{2}(2) + 3 = 4 \\
+x = 4&: & y &= \tfrac{1}{2}(4) + 3 = 5
+\end{aligned}
+$$
 
 | $y = \tfrac{1}{2}x + 3$ | | |
 | :---: | :---: | :---: |
@@ -388,14 +517,16 @@ the graph of $y = \tfrac{1}{2}x + 3$.
 {{< /graphplot >}}
 
 So far, all the equations we graphed had $y$ given in terms of $x$. Now
-we'll graph an equation with $x$ and $y$ on the same side, such as $2x + y =
-3$. When an equation is in this form, it is often easier to find the
-intercepts than to pick three arbitrary values — first solve the equation
-for $y$ so it is easier to find points, or find one point by letting $x = 0$
-and another by letting $y = 0$.
+we'll graph an equation with $x$ and $y$ on the same side, such as
+$2x + y = 3$. If we let $y = 0$, then $2x = 3$ and $x = \tfrac{3}{2}$. The
+point $\left(\tfrac{3}{2}, 0\right)$ has a fraction for its $x$-coordinate,
+and while we could graph it, it is hard to be precise graphing fractions. If
+we solve the equation $2x + y = 3$ for $y$, it will be easier to find three
+solutions to the equation:
 
-If we solve $2x + y = 3$ for $y$, we get $y = -2x + 3$. The solutions for
-$x = 0$, $x = 1$, and $x = -1$ are shown below.
+$$2x + y = 3 \qquad\Longrightarrow\qquad y = -2x + 3$$
+
+The solutions for $x = 0$, $x = 1$, and $x = -1$ are shown below.
 
 | $2x + y = 3$ | | |
 | :---: | :---: | :---: |
@@ -406,16 +537,28 @@ $x = 0$, $x = 1$, and $x = -1$ are shown below.
 
 **Example.** Graph the equation $2x - 3y = 6$.
 
-Since both $x$ and $y$ are on the same side, it is not that easy to solve
-for $y$ in one step, so we leave the equation in standard form and find a
+This equation is in standard form too, but unlike $2x + y = 3$ it is not that
+easy to solve for $y$ in one step, so we leave the equation in standard form and find a
 first point by letting $x = 0$, a second point by letting $y = 0$, and a
 third point by choosing some other value.
 
-$$x = 0: \quad 2(0) - 3y = 6 \implies y = -2 \qquad\qquad y = 0: \quad 2x - 3(0) = 6 \implies x = 3$$
+$$
+\begin{aligned}
+x = 0&: & 2(0) - 3y &= 6, & y &= -2 \\
+y = 0&: & 2x - 3(0) &= 6, & x &= 3
+\end{aligned}
+$$
 
 We need a third point. We'll let $x = 6$:
 
-$$2(6) - 3y = 6 \implies 12 - 3y = 6 \implies -3y = -6 \implies y = 2$$
+$$
+\begin{aligned}
+2(6) - 3y &= 6 \\
+12 - 3y &= 6 \\
+-3y &= -6 \\
+y &= 2
+\end{aligned}
+$$
 
 | $2x - 3y = 6$ | | |
 | :---: | :---: | :---: |
@@ -520,11 +663,18 @@ The equation has only one variable, $x$, and $x$ is always equal to $2$. We
 create a table where $x$ is always $2$, then put in any values for $y$. The
 graph is a vertical line passing through the $x$-axis at $2$.
 
+| $x = 2$ | | |
+| :---: | :---: | :---: |
+| $x$ | $y$ | $(x, y)$ |
+| $2$ | $1$ | $(2, 1)$ |
+| $2$ | $2$ | $(2, 2)$ |
+| $2$ | $3$ | $(2, 3)$ |
+
 {{< multiplechoice
   question="Which graph shows $x = 5$?"
   mode="graph"
   answerIndex="1"
-  hint="A vertical line has the same $x$-value at every point on it. Find where each line crosses the $x$-axis, not the $y$-axis."
+  hint="Every point on the graph of $x = 5$ has first coordinate $5$. Pick a point on each line and read its $x$-coordinate."
 >}}
 {"ariaLabel":"A vertical line crossing the x-axis at negative 5.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"x":-5}]}
 ===OPT===
@@ -537,7 +687,7 @@ graph is a vertical line passing through the $x$-axis at $2$.
   question="Graph the equation $x = -2$."
   answerDisplay="$x = -2$"
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
-  hint="A vertical line $x = a$ passes through every point whose first coordinate is $a$."
+  hint="Make a table: write $-2$ for $x$ in every row, choose any three values for $y$, and plot the ordered pairs."
 >}}
 {"answer":{"x":-2,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
@@ -617,11 +767,18 @@ The equation $y = -1$ has only one variable, $y$. The value of $y$ is
 constant. All the ordered pairs in its table have the same $y$-coordinate.
 The graph is a horizontal line passing through the $y$-axis at $-1$.
 
+| $y = -1$ | | |
+| :---: | :---: | :---: |
+| $x$ | $y$ | $(x, y)$ |
+| $0$ | $-1$ | $(0, -1)$ |
+| $3$ | $-1$ | $(3, -1)$ |
+| $-3$ | $-1$ | $(-3, -1)$ |
+
 {{< graphplot
   question="Graph the equation $y = -4$."
   answerDisplay="$y = -4$"
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
-  hint="The equation $y = -4$ says $y$ is always $-4$, no matter what $x$ is."
+  hint="Make a table: write $-4$ for $y$ in every row, choose any three values for $x$, and plot the ordered pairs."
 >}}
 {"answer":{"y":-4,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
@@ -630,7 +787,7 @@ The graph is a horizontal line passing through the $y$-axis at $-1$.
   question="Graph the equation $y = 3$."
   answerDisplay="$y = 3$"
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
-  hint="A horizontal line $y = b$ passes through every point whose second coordinate is $b$."
+  hint="Make a table: write $3$ for $y$ in every row, choose any three values for $x$, and plot the ordered pairs."
 >}}
 {"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
@@ -705,15 +862,17 @@ $y = 4$ gives a horizontal line.
 </div>
 
 {{< fillin
-  question="Compare $y = -3x$ and $y = -3$. When $x = 2$, what is y for the equation $y = -3x$?"
+  question="Compare $y = -3x$ and $y = -3$. When $x = 2$, what is $y$ for the equation $y = -3x$?"
   answer="-6"
-  hint="$y = -3(2)$."
+  answerForm="decimal"
+  hint="Substitute the $x$-value into $y = -3x$ and multiply."
 >}}
 
 {{< fillin
-  question="For the equation y = -3 (not y = -3x), what is y when $x = 2$?"
+  question="For the equation $y = -3$, what is $y$ when $x = 2$?"
   answer="-3"
-  hint="$y = -3$ has only one variable — y never changes, no matter what x is."
+  answerForm="decimal"
+  hint="Make the table row for $x = 2$ the way the $y = 4$ table above was made."
 >}}
 
 ## Key terms
@@ -795,20 +954,20 @@ No; it is not a solution and the point is not on the line.
   question="Graph $x=4$."
   answerDisplay="$x=4$"
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
-  hint="Every point has first coordinate $4$, so draw a vertical line through $x=4$."
+  hint="Make a table: write $4$ for $x$ in every row, choose any three values for $y$, and plot the ordered pairs."
 >}}
 {"answer":{"x":4,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 {{< graphplot
-  question="Graph $y=3$."
-  answerDisplay="$y=3$"
+  question="Graph $y=-5$."
+  answerDisplay="$y=-5$"
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
-  hint="Every point has second coordinate $3$, so draw a horizontal line through $y=3$."
+  hint="Make a table: write $-5$ for $y$ in every row, choose any three values for $x$, and plot the ordered pairs."
 >}}
-{"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"y":-5,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.2: Graph Linear Equations in Two Variables](https://openstax.org/books/elementary-algebra-2e/pages/4-2-graph-linear-equations-in-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coordinate-plane graphs (points, lines, vertical and horizontal lines, and the paired $y = 4x$ vs. $y = 4$ comparison) as accessible inline SVGs and the solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.2: Graph Linear Equations in Two Variables](https://openstax.org/books/elementary-algebra-2e/pages/4-2-graph-linear-equations-in-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coordinate-plane graphs (points, lines, vertical and horizontal lines, and the paired $y = 4x$ vs. $y = 4$ comparison) as accessible inline SVGs and the solution tables as markdown tables; condensed the worked examples, omitting the $y = -3x$ and $3x + y = -1$ examples, the graphs of the $2x + y = 3$, $2x - 3y = 6$, $x = 2$, and $y = -1$ examples, the figure contrasting three points that line up with three that do not, and the Key Concepts list, which repeats the How To steps; posed the $y = -3x$ and $y = -3$ example as two fill-ins; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, the ordered-pair checks as categorical choices; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

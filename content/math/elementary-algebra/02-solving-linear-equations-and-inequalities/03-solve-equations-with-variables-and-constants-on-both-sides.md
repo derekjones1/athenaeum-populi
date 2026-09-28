@@ -61,13 +61,15 @@ Check: let $x = -3$. $7(-3) + 8 \overset{?}{=} -13$, so $-21 + 8
 {{< fillin
   question="Solve: $3x + 4 = -8$."
   answer="-4"
-  hint="Subtract 4 from both sides to isolate the variable term, then divide."
+  answerForm="decimal"
+  hint="Subtract $4$ from both sides to isolate the variable term, then divide."
 >}}
 
 {{< fillin
   question="Solve: $5a + 3 = -37$."
   answer="-8"
-  hint="Subtract 3 from both sides to isolate the variable term, then divide."
+  answerForm="decimal"
+  hint="Subtract $3$ from both sides to isolate the variable term, then divide."
 >}}
 
 **Example.** Solve: $8y - 9 = 31$.
@@ -93,13 +95,15 @@ Check: let $y = 5$. $8(5) - 9 \overset{?}{=} 31$, so $40 - 9
 {{< fillin
   question="Solve: $5y - 9 = 16$."
   answer="5"
-  hint="Add 9 to both sides to isolate the variable term, then divide."
+  answerForm="decimal"
+  hint="Add $9$ to both sides to isolate the variable term, then divide."
 >}}
 
 {{< fillin
   question="Solve: $3m - 8 = 19$."
   answer="9"
-  hint="Add 8 to both sides to isolate the variable term, then divide."
+  answerForm="decimal"
+  hint="Add $8$ to both sides to isolate the variable term, then divide."
 >}}
 
 ## Solve Equations with Variables on Both Sides
@@ -114,13 +118,13 @@ other side.
 
 Here the variable is on both sides, but the constants only appear on the
 right side, so let's make the right side the "constant" side. Then the
-left side will be the "variable" side. We don't want any $x\text{s}$ on
+left side will be the "variable" side. We don't want any $x$'s on
 the right, so subtract $8x$ from both sides.
 
 $$
 \begin{array}{lrcl}
 & 9x &=& 8x - 6 \\[4pt]
-\text{Subtract 8x from both sides.} & 9x - 8x &=& 8x - 8x - 6 \\[4pt]
+\text{Subtract } 8x \text{ from both sides.} & 9x - 8x &=& 8x - 8x - 6 \\[4pt]
 \text{Simplify.} & x &=& -6
 \end{array}
 $$
@@ -134,27 +138,29 @@ Check: let $x = -6$. $9(-6) \overset{?}{=} 8(-6) - 6$, so $-54
 {{< fillin
   question="Solve: $6n = 5n - 10$."
   answer="-10"
-  hint="Subtract 5n from both sides to leave the variable alone on one side."
+  answerForm="decimal"
+  hint="Subtract $5n$ from both sides to leave the variable alone on one side."
 >}}
 
 {{< fillin
   question="Solve: $-6c = -7c - 1$."
   answer="-1"
-  hint="Add 7c to both sides to collect the variable terms on one side."
+  answerForm="decimal"
+  hint="Add $7c$ to both sides to collect the variable terms on one side."
 >}}
 
 **Example.** Solve: $5y - 9 = 8y$.
 
-The only constant is on the left and the $y\text{s}$ are on both sides.
+The only constant is on the left and the $y$'s are on both sides.
 Let's leave the constant on the left and get the variables to the right.
 Subtract $5y$ from both sides.
 
 $$
 \begin{array}{lrcl}
 & 5y - 9 &=& 8y \\[4pt]
-\text{Subtract 5y from both sides.} & 5y - 5y - 9 &=& 8y - 5y \\[4pt]
+\text{Subtract } 5y \text{ from both sides.} & 5y - 5y - 9 &=& 8y - 5y \\[4pt]
 \text{Simplify.} & -9 &=& 3y \\[4pt]
-\text{We have the y's on the right and the constants on the} & & & \\[4pt]
+\text{We have the } y\text{'s on the right and the constants on the} & & & \\[4pt]
 \text{left. Divide both sides by 3.} & \tfrac{-9}{3} &=& \tfrac{3y}{3} \\[4pt]
 \text{Simplify.} & -3 &=& y
 \end{array}
@@ -166,13 +172,15 @@ Check: let $y = -3$. $5(-3) - 9 \overset{?}{=} 8(-3)$, so $-15 - 9
 {{< fillin
   question="Solve: $3p - 14 = 5p$."
   answer="-7"
-  hint="Subtract 3p from both sides so the variable terms collect on the right, then divide."
+  answerForm="decimal"
+  hint="Subtract $3p$ from both sides so the variable terms collect on the right, then divide."
 >}}
 
 {{< fillin
   question="Solve: $8m + 9 = 5m$."
   answer="-3"
-  hint="Subtract 5m from both sides so the variable terms collect on the left, then divide."
+  answerForm="decimal"
+  hint="Subtract $5m$ from both sides so the variable terms collect on the left, then move the constant to the right and divide."
 >}}
 
 **Example.** Solve: $12x = -x + 26$.
@@ -183,9 +191,9 @@ side. Remove the $-x$ from the right side by adding $x$ to both sides.
 $$
 \begin{array}{lrcl}
 & 12x &=& -x + 26 \\[4pt]
-\text{Add x to both sides.} & 12x + x &=& -x + x + 26 \\[4pt]
+\text{Add } x \text{ to both sides.} & 12x + x &=& -x + x + 26 \\[4pt]
 \text{Simplify.} & 13x &=& 26 \\[4pt]
-\text{All the x's are on the left and the constants are on} & & & \\[4pt]
+\text{All the } x\text{'s are on the left and the constants are on} & & & \\[4pt]
 \text{the right. Divide both sides by 13.} & \tfrac{13x}{13} &=& \tfrac{26}{13} \\[4pt]
 \text{Simplify.} & x &=& 2
 \end{array}
@@ -194,13 +202,15 @@ $$
 {{< fillin
   question="Solve: $12j = -4j + 32$."
   answer="2"
-  hint="Add 4j to both sides so all the variable terms collect on the left, then divide."
+  answerForm="decimal"
+  hint="Add $4j$ to both sides so all the variable terms collect on the left, then divide."
 >}}
 
 {{< fillin
   question="Solve: $8h = -4h + 12$."
   answer="1"
-  hint="Add 4h to both sides so all the variable terms collect on the left, then divide."
+  answerForm="decimal"
+  hint="Add $4h$ to both sides so all the variable terms collect on the left, then divide."
 >}}
 
 ## Solve Equations with Variables and Constants on Both Sides
@@ -236,7 +246,7 @@ only on the left side.
 $$
 \begin{array}{lrcl}
 & 7x + 5 &=& 6x + 2 \\[4pt]
-\text{Subtract 6x from both sides.} & 7x - 6x + 5 &=& 6x - 6x + 2 \\[4pt]
+\text{Subtract } 6x \text{ from both sides.} & 7x - 6x + 5 &=& 6x - 6x + 2 \\[4pt]
 \text{Combine like terms.} & x + 5 &=& 2
 \end{array}
 $$
@@ -259,16 +269,18 @@ Check: let $x = -3$. $7x + 5 = 6x + 2$ becomes $7(-3) + 5 \overset{?}{=}
 {{< fillin
   question="Solve: $12x + 8 = 6x + 2$."
   answer="-1"
-  hint="Choose the side with the larger coefficient (12x) as the variable side, subtract 6x from both sides, then isolate x."
+  answerForm="decimal"
+  hint="Choose the side with the larger coefficient ($12x$) as the variable side, subtract $6x$ from both sides, then isolate $x$."
 >}}
 
 {{< fillin
   question="Solve: $9y + 4 = 7y + 12$."
   answer="4"
-  hint="Choose the side with the larger coefficient (9y) as the variable side, subtract 7y from both sides, then isolate y."
+  answerForm="decimal"
+  hint="Choose the side with the larger coefficient ($9y$) as the variable side, subtract $7y$ from both sides, then isolate $y$."
 >}}
 
-We'll list the steps above so you can easily refer to them, calling this
+The steps are listed above so you can easily refer to them. We call this list
 the "Beginning Strategy" because we'll be adding some steps to it later in
 this chapter. In Step 1, a helpful approach is to make the "variable" side
 the side that has the variable with the larger coefficient. This usually
@@ -284,7 +296,7 @@ $2n$ to both sides to leave only constants on the right.
 $$
 \begin{array}{lrcl}
 & 8n - 4 &=& -2n + 6 \\[4pt]
-\text{Add 2n to both sides.} & 8n + 2n - 4 &=& -2n + 2n + 6 \\[4pt]
+\text{Add } 2n \text{ to both sides.} & 8n + 2n - 4 &=& -2n + 2n + 6 \\[4pt]
 \text{Combine like terms.} & 10n - 4 &=& 6 \\[4pt]
 \text{We don't want any constants on the left side, so add} & & & \\[4pt]
 \text{4 to both sides.} & 10n - 4 + 4 &=& 6 + 4 \\[4pt]
@@ -300,13 +312,15 @@ Check: let $n = 1$. $8(1) - 4 \overset{?}{=} -2(1) + 6$, so $8 - 4
 {{< fillin
   question="Solve: $8q - 5 = -4q + 7$."
   answer="1"
-  hint="Add 4q to both sides so the variable terms collect on the left, then move the constants and divide."
+  answerForm="decimal"
+  hint="Add $4q$ to both sides so the variable terms collect on the left, then move the constants and divide."
 >}}
 
 {{< fillin
   question="Solve: $7n - 3 = n + 3$."
   answer="1"
-  hint="Subtract n from both sides so the variable terms collect on the left, then move the constants and divide."
+  answerForm="decimal"
+  hint="Subtract $n$ from both sides so the variable terms collect on the left, then move the constants and divide."
 >}}
 
 **Example.** Solve: $7a - 3 = 13a + 7$.
@@ -318,13 +332,13 @@ of the variables on each side. Since $13 > 7$, make the right side the
 $$
 \begin{array}{lrcl}
 & 7a - 3 &=& 13a + 7 \\[4pt]
-\text{Subtract 7a from both sides to remove the variable} & & & \\[4pt]
+\text{Subtract } 7a \text{ from both sides to remove the variable} & & & \\[4pt]
 \text{term from the left.} & 7a - 7a - 3 &=& 13a - 7a + 7 \\[4pt]
 \text{Combine like terms.} & -3 &=& 6a + 7 \\[4pt]
 \text{Subtract 7 from both sides to remove the constant} & & & \\[4pt]
 \text{from the right.} & -3 - 7 &=& 6a + 7 - 7 \\[4pt]
 \text{Simplify.} & -10 &=& 6a \\[4pt]
-\text{Divide both sides by 6 to make 1 the coefficient of a.} & \tfrac{-10}{6} &=& \tfrac{6a}{6} \\[4pt]
+\text{Divide both sides by 6 to make 1 the coefficient of } a\text{.} & \tfrac{-10}{6} &=& \tfrac{6a}{6} \\[4pt]
 \text{Simplify.} & -\tfrac{5}{3} &=& a
 \end{array}
 $$
@@ -337,13 +351,15 @@ $-\tfrac{35}{3} - \tfrac{9}{3} \overset{?}{=} -\tfrac{65}{3} +
 {{< fillin
   question="Solve: $2a - 2 = 6a + 18$."
   answer="-5"
-  hint="Choose the side with the larger coefficient (6a) as the variable side, subtract 2a from both sides, then move the constants and divide."
+  answerForm="decimal"
+  hint="Choose the side with the larger coefficient ($6a$) as the variable side, subtract $2a$ from both sides, then move the constants and divide."
 >}}
 
 {{< fillin
   question="Solve: $4k - 1 = 7k + 17$."
   answer="-6"
-  hint="Choose the side with the larger coefficient (7k) as the variable side, subtract 4k from both sides, then move the constants and divide."
+  answerForm="decimal"
+  hint="Choose the side with the larger coefficient ($7k$) as the variable side, subtract $4k$ from both sides, then move the constants and divide."
 >}}
 
 In the last example, we could have made the left side the "variable"
@@ -376,13 +392,15 @@ Check: let $x = -8$. $\tfrac{5}{4}(-8) + 6 \overset{?}{=} \tfrac{1}{4}(-8) -
 {{< fillin
   question="Solve: $\tfrac{7}{8} x - 12 = -\tfrac{1}{8} x - 2$."
   answer="10"
-  hint="Add $\tfrac{1}{8} x$ to both sides so the variable terms collect on the left, then move the constants and divide."
+  answerForm="decimal"
+  hint="Add $\tfrac{1}{8} x$ to both sides so the variable terms collect on the left, then move the constant to the right."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{7}{6} y + 11 = \tfrac{1}{6} y + 8$."
   answer="-3"
-  hint="Subtract $\tfrac{1}{6} y$ from both sides so the variable terms collect on the left, then move the constants and divide."
+  answerForm="decimal"
+  hint="Subtract $\tfrac{1}{6} y$ from both sides so the variable terms collect on the left, then move the constant to the right."
 >}}
 
 We will use the same strategy to find the solution for an equation with
@@ -396,7 +414,7 @@ side the "constant" side.
 $$
 \begin{array}{lrcl}
 & 7.8x + 4 &=& 5.4x - 8 \\[4pt]
-\text{Subtract 5.4x from both sides.} & 7.8x - 5.4x + 4 &=& 5.4x - 5.4x - 8 \\[4pt]
+\text{Subtract } 5.4x \text{ from both sides.} & 7.8x - 5.4x + 4 &=& 5.4x - 5.4x - 8 \\[4pt]
 \text{Combine like terms.} & 2.4x + 4 &=& -8 \\[4pt]
 \text{Subtract 4 from both sides.} & 2.4x + 4 - 4 &=& -8 - 4 \\[4pt]
 \text{Simplify.} & 2.4x &=& -12 \\[4pt]
@@ -411,13 +429,15 @@ $-39 + 4 \overset{?}{=} -27 - 8$, and $-35 = -35$. ✓
 {{< fillin
   question="Solve: $2.8x + 12 = -1.4x - 9$."
   answer="-5"
-  hint="Add 1.4x to both sides so the variable terms collect on the left, then move the constants and divide."
+  answerForm="decimal"
+  hint="Add $1.4x$ to both sides so the variable terms collect on the left, then move the constants and divide."
 >}}
 
 {{< fillin
   question="Solve: $3.6y + 8 = 1.2y - 4$."
   answer="-5"
-  hint="Subtract 1.2y from both sides so the variable terms collect on the left, then move the constants and divide."
+  answerForm="decimal"
+  hint="Subtract $1.2y$ from both sides so the variable terms collect on the left, then move the constants and divide."
 >}}
 
 ## Key terms
@@ -438,12 +458,14 @@ coefficient of the variable equal to $1$; check the solution.
 {{< fillin
   question="Solve: $12x - 8 = 64$."
   answer="6"
+  answerForm="decimal"
   hint="Add $8$ to both sides to isolate the variable term, then divide both sides by $12$."
 >}}
 
 {{< fillin
   question="Solve: $-77 = 9b - 5$."
   answer="-8"
+  answerForm="decimal"
   hint="Add $5$ to both sides to isolate $9b$, then divide both sides by $9$."
 >}}
 
@@ -452,12 +474,14 @@ coefficient of the variable equal to $1$; check the solution.
 {{< fillin
   question="Solve: $21k = 20k - 11$."
   answer="-11"
+  answerForm="decimal"
   hint="Subtract $20k$ from both sides to collect the variable terms on the left."
 >}}
 
 {{< fillin
   question="Solve: $4x + \tfrac{3}{4} = 3x$."
-  answer="-3/4"
+  answer="-\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{4}$"
   hint="Subtract $3x$ from both sides, then subtract $\tfrac{3}{4}$ to isolate $x$."
 >}}
@@ -467,15 +491,17 @@ coefficient of the variable equal to $1$; check the solution.
 {{< fillin
   question="Solve: $6x - 17 = 5x + 2$."
   answer="19"
+  answerForm="decimal"
   hint="Subtract $5x$ from both sides to collect the variables on the left, then add $17$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{7}{4}m - 7 = \tfrac{3}{4}m - 13$."
   answer="-6"
+  answerForm="decimal"
   hint="Subtract $\tfrac{3}{4}m$ from both sides; the remaining variable coefficient is $1$, so then isolate $m$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/elementary-algebra-2e/pages/2-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the labeled variable/constant side worked-example tables as prose with typeset math steps; omitted the Manipulative Mathematics callouts, media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/elementary-algebra-2e/pages/2-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the labeled variable/constant side worked-example tables as prose with typeset math steps, listing the Beginning Strategy ahead of the step-by-step example that walks through it; omitted the Be Prepared quiz, the Everyday Math and Writing Exercises, and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

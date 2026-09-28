@@ -33,55 +33,9 @@ Earlier we graphed the line of the equation $y = \tfrac{1}{2}x + 3$ by plotting 
 Let's find the slope of this line the way we did in the previous section — using two
 points from the graph.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A line through the points (0, 3), (2, 4), and (4, 5). A rise of 1 and a run of 2 are marked between (2, 4) and (4, 5). The line crosses the y-axis at (0, 3)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.9" y1="174.5" x2="303.1" y2="37.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,33 305.3,41.9 300.8,33" fill="currentColor"/>
-  <polygon points="20,179 26.7,170.1 31.2,179" fill="currentColor"/>
-  <line x1="206" y1="86" x2="206" y2="66" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="206" y1="66" x2="246" y2="66" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="166" cy="106" r="4" fill="currentColor"/>
-  <circle cx="206" cy="86" r="4" fill="currentColor"/>
-  <circle cx="246" cy="66" r="4" fill="currentColor"/>
-  <text x="177.2" y="126.2" font-size="13" fill="currentColor" text-anchor="start">(0, 3)</text>
-  <text x="217.2" y="106.2" font-size="13" fill="currentColor" text-anchor="start">(2, 4)</text>
-  <text x="257.2" y="86.2" font-size="13" fill="currentColor" text-anchor="start">(4, 5)</text>
-  <text x="192" y="80" font-size="13" fill="currentColor" text-anchor="end">rise = 1</text>
-  <text x="226" y="52" font-size="13" fill="currentColor" text-anchor="middle">run = 2</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The line y = one half x plus 3 on a grid from negative 6 to 6 on both axes, passing through the marked points (0, 3), (2, 4), and (4, 5). A dashed run of 2 goes right from (2, 4) to (4, 4), and a dashed rise of 1 goes up from there to (4, 5).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"lines":[{"slope":0.5,"intercept":3,"label":"y = ½x + 3","labelAt":0.2}],"points":[{"at":[0,3],"label":"(0, 3)","labelSide":"se"},{"at":[2,4],"label":"(2, 4)","labelSide":"n"},{"at":[4,5],"label":"(4, 5)","labelSide":"nw"}],"segments":[{"from":[2,4],"to":[4,4],"dashed":true,"label":"Run = 2","labelSide":"s"},{"from":[4,4],"to":[4,5],"dashed":true,"label":"Rise = 1","labelSide":"e"}]}
+{{< /apfigure >}}
 
 The rise is $1$ and the run is $2$. Substituting into the slope formula:
 
@@ -106,6 +60,10 @@ equation $y = \tfrac{1}{2}x + 3$ is in **slope-intercept form**.
 **Example.** Use the graph to find the slope and $y$-intercept of the line
 $y = 2x + 1$, and compare these values to the equation $y = mx + b$.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The line y = 2x + 1 on a grid from negative 4 to 4 on both axes, passing through the marked points (0, 1) and (1, 3).","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"tickLabels":true,"lines":[{"slope":2,"intercept":1}],"points":[{"at":[0,1],"label":"(0, 1)","labelSide":"e"},{"at":[1,3],"label":"(1, 3)","labelSide":"e"}]}
+{{< /apfigure >}}
+
 To find the slope of the line, we choose two points on the line, $(0, 1)$ and
 $(1, 3)$. The rise is $2$ and the run is $1$, so:
 
@@ -116,11 +74,16 @@ $(0, 1)$, matching the equation $y = 2x + 1$: the slope is the same as the
 coefficient of $x$, and the $y$-coordinate of the $y$-intercept is the same as the
 constant term.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A line on a grid from negative 6 to 6 on both axes, rising from lower left to upper right and passing through the points (0, −1) and (6, 3).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"lines":[{"through":[[0,-1],[6,3]]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="Use the graph to find the slope and y-intercept of the line $y = \tfrac{2}{3}x - 1$. What is the slope?"
+  question="Use the graph above to find the slope and $y$-intercept of the line $y = \tfrac{2}{3}x - 1$. What is the slope? Enter it as a fraction."
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
-  hint="In slope-intercept form y = mx + b, the slope is the coefficient of x."
+  hint="Find two points where the line crosses grid corners, then count the rise and the run from one to the other."
 >}}
 
 ## Identify the slope and $y$-intercept from an equation of a line
@@ -136,8 +99,9 @@ We compare the equation to the slope-intercept form $y = mx + b$: the slope is
 $m = -3$, and the $y$-intercept is $(0, 5)$.
 
 {{< fillin
-  question="Identify the slope of the line $y = \tfrac{2}{5}x - 1$."
+  question="Identify the slope of the line $y = \tfrac{2}{5}x - 1$. Enter it as a fraction."
   answer="\frac{2}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
   hint="Compare the equation to y = mx + b — the slope is the coefficient of x."
 >}}
@@ -152,20 +116,21 @@ This equation is not in slope-intercept form. To compare it to the slope-interce
 form, we first solve the equation for $y$:
 
 $$
-\begin{align}
-x + 2y &= 6 \\
-2y &= -x + 6 \\
-\frac{2y}{2} &= \frac{-x + 6}{2} \\
-y &= -\frac{1}{2}x + 3
-\end{align}
+\begin{aligned}
+x + 2y &= 6 \\[4pt]
+2y &= -x + 6 \\[4pt]
+\frac{2y}{2} &= \frac{-x + 6}{2} \\[4pt]
+y &= -\tfrac{1}{2}x + 3
+\end{aligned}
 $$
 
 Now the equation is in slope-intercept form $y = mx + b$, so we can identify the
 slope, $m = -\tfrac{1}{2}$, and the $y$-intercept, $(0, 3)$.
 
 {{< fillin
-  question="Identify the slope of the line $x + 4y = 8$. (Hint: solve for y first.)"
+  question="Identify the slope of the line $x + 4y = 8$. Enter it as a fraction."
   answer="-\frac{1}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{4}$"
   hint="Subtract x from both sides, then divide every term by 4 to solve for y."
 >}}
@@ -198,9 +163,9 @@ the rise is $4$ and the run is $1$. Starting at $(0, -2)$, we count up $4$ and r
 $1$ to mark the second point, $(1, 2)$, then connect the two points with a line.
 
 To check our work, we can find another point on the line and make sure it is a
-solution of the equation. The graph also passes through $(4, 0)$: substituting into
-$y = -x + 4$ — wait, let's check $(1,2)$ in $y = 4x - 2$ instead: $2 \stackrel{?}{=}
-4(1) - 2$, so $2 = 2$. ✓
+solution of the equation. Counting up $4$ and right $1$ once more, from $(1, 2)$, gives
+the point $(2, 6)$. Substituting it into $y = 4x - 2$: $6 \stackrel{?}{=} 4(2) - 2$, so
+$6 = 6$. ✓
 
 {{< multiplechoice
   question="Which graph shows $y = -x - 3$?"
@@ -270,7 +235,7 @@ line by using the slope and $y$-intercept.
 
 {{< multiplechoice
   question="Which method is most convenient for graphing the line $y = \tfrac{1}{5}x - 4$?"
-  hint="The equation already has y isolated on one side, in the form y = mx + b."
+  hint="Look at which variables the equation has and which side each is on, then match that form to the strategy above."
   answer="slope-intercept"
 >}}
 vertical line
@@ -281,7 +246,7 @@ intercepts
 
 {{< multiplechoice
   question="Which method is most convenient for graphing the line $4x - 3y = -1$?"
-  hint="Both x and y appear on the same side of the equation, in the form Ax + By = C."
+  hint="Look at which variables the equation has and which side each is on, then match that form to the strategy above."
   answer="intercepts"
 >}}
 intercepts
@@ -340,8 +305,9 @@ for the week are $\text{\textdollar}25$.
 rise of $4$ and the run of $1$ to get a second point.
 
 {{< fillin
-  question="Sam drives a delivery van. The equation $C = 0.5m + 60$ models the relation between his weekly cost, C, in dollars, and the number of miles, m, that he drives. Find Sam's cost for a week when he drives 250 miles."
+  question="Sam drives a delivery van. The equation $C = 0.5m + 60$ models the relation between his weekly cost, $C$, in dollars, and the number of miles, $m$, that he drives. Find Sam's cost for a week when he drives $250$ miles. Enter the amount in dollars."
   answer="185"
+  answerForm="decimal"
   answerDisplay="\$185"
   hint="Substitute $m = 250$ into $C = 0.5m + 60$ and simplify."
 >}}
@@ -352,50 +318,12 @@ The slope of a line indicates how steep the line is and whether it rises or fall
 we read it from left to right. Two lines that have the same slope are called
 **parallel lines**. Parallel lines never intersect.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Two parallel lines with the same slope of two-fifths but different y-intercepts, one passing through (0, 2) and the other through (0, -2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 212" width="332" height="212" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="186" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="186" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="186" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="186" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="186" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="186" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="186" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="186" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="186" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="186" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="186" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="186" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="186" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="186" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="106" x2="308" y2="106" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="188" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,106 308,111 308,101" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,106 24,101 24,111" fill="currentColor"/>
-  <polygon points="166,198 161,188 171,188" fill="currentColor"/>
-  <text x="316" y="98" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="29.3" y1="120.7" x2="271.7" y2="23.7" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="281,20 273.6,28.4 269.9,19.1" fill="currentColor"/>
-  <polygon points="20,124.4 27.4,116 31.1,125.3" fill="currentColor"/>
-  <line x1="60.3" y1="188.3" x2="302.7" y2="91.3" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,87.6 304.6,96 300.9,86.7" fill="currentColor"/>
-  <polygon points="51,192 58.4,183.6 62.1,192.9" fill="currentColor"/>
-  <circle cx="166" cy="66" r="4" fill="currentColor"/>
-  <circle cx="166" cy="146" r="4" fill="currentColor"/>
-  <text x="177.2" y="86.2" font-size="13" fill="currentColor" text-anchor="start">(0, 2)</text>
-  <text x="177.2" y="166.2" font-size="13" fill="currentColor" text-anchor="start">(0, −2)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Two parallel lines on a grid from negative 8 to 8 on both axes. One passes through (−5, 1), (0, 3), and (5, 5); the other passes through (−5, −4), (0, −2), and (5, 0).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"lines":[{"slope":0.4,"intercept":3},{"slope":0.4,"intercept":-2}]}
+{{< /apfigure >}}
+
+Verify that both lines have the same slope, $m = \tfrac{2}{5}$, and different
+$y$-intercepts.
 
 We say this more formally in terms of the rectangular coordinate system: two lines
 that have the same slope and different $y$-intercepts are called parallel lines.
@@ -423,12 +351,12 @@ $y = \tfrac{3}{2}x + 1$ are parallel.
 We solve the first equation for $y$:
 
 $$
-\begin{align}
-3x - 2y &= 6 \\
--2y &= -3x + 6 \\
-\frac{-2y}{-2} &= \frac{-3x + 6}{-2} \\
-y &= \frac{3}{2}x - 3
-\end{align}
+\begin{aligned}
+3x - 2y &= 6 \\[4pt]
+-2y &= -3x + 6 \\[4pt]
+\frac{-2y}{-2} &= \frac{-3x + 6}{-2} \\[4pt]
+y &= \tfrac{3}{2}x - 3
+\end{aligned}
 $$
 
 The second equation, $y = \tfrac{3}{2}x + 1$, is already in slope-intercept form. Both
@@ -459,12 +387,12 @@ The first equation is already in slope-intercept form: $y = 2x - 3$. We solve th
 second equation for $y$:
 
 $$
-\begin{align}
--6x + 3y &= -9 \\
-3y &= 6x - 9 \\
-\frac{3y}{3} &= \frac{6x - 9}{3} \\
+\begin{aligned}
+-6x + 3y &= -9 \\[4pt]
+3y &= 6x - 9 \\[4pt]
+\frac{3y}{3} &= \frac{6x - 9}{3} \\[4pt]
 y &= 2x - 3
-\end{align}
+\end{aligned}
 $$
 
 The lines have the same slope, but they also have the same $y$-intercept, $(0, -3)$.
@@ -483,7 +411,7 @@ neither
 
 {{< multiplechoice
   question="Use slopes and y-intercepts to determine whether the lines $y = 8$ and $y = -6$ are parallel, perpendicular, or neither."
-  hint="Both are horizontal lines. Horizontal lines always have slope 0."
+  hint="Write each equation in the form $y = mx + b$ (with $0x$ where there is no $x$-term), then compare the slopes and the $y$-intercepts."
   answer="parallel"
 >}}
 parallel
@@ -496,50 +424,9 @@ perpendicular
 Let's look at the lines whose equations are $y = \tfrac{1}{4}x - 1$ and
 $y = -4x + 2$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Two perpendicular lines crossing at right angles near the point (1, negative 0.75). One line has slope one-fourth and the other has slope negative four." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="126" x2="308" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,126 308,131 308,121" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="29.7" y1="180.1" x2="302.3" y2="111.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,109.5 303.5,116.8 301.1,107.1" fill="currentColor"/>
-  <polygon points="20,182.5 28.5,175.2 30.9,184.9" fill="currentColor"/>
-  <line x1="151.9" y1="29.7" x2="200.1" y2="222.3" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="202.5,232 195.2,223.5 204.9,221.1" fill="currentColor"/>
-  <polygon points="149.5,20 156.8,28.5 147.1,30.9" fill="currentColor"/>
-  <text x="253.1" y="150.9" font-size="13" fill="currentColor" text-anchor="middle">y = ¼x − 1</text>
-  <text x="175.3" y="193.2" font-size="13" fill="currentColor" text-anchor="end">y = −4x + 2</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Two lines on a grid from negative 8 to 8 on both axes, crossing at a right angle. The line y = −4x + 2 falls steeply through (0, 2) and (1, −2); the line y = one fourth x minus 1 rises gently through (0, −1) and (4, 0).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"lines":[{"slope":-4,"intercept":2,"label":"y = −4x + 2","labelAt":0.1},{"slope":0.25,"intercept":-1,"label":"y = ¼x − 1","labelAt":0.2}]}
+{{< /apfigure >}}
 
 These lines lie in the same plane and intersect in right angles. We call these lines
 **perpendicular**.
@@ -575,12 +462,12 @@ The first equation is already in slope-intercept form: $m_1 = -5$. We solve the
 second equation for $y$:
 
 $$
-\begin{align}
-x - 5y &= 5 \\
--5y &= -x + 5 \\
-\frac{-5y}{-5} &= \frac{-x + 5}{-5} \\
-y &= \frac{1}{5}x - 1
-\end{align}
+\begin{aligned}
+x - 5y &= 5 \\[4pt]
+-5y &= -x + 5 \\[4pt]
+\frac{-5y}{-5} &= \frac{-x + 5}{-5} \\[4pt]
+y &= \tfrac{1}{5}x - 1
+\end{aligned}
 $$
 
 so $m_2 = \tfrac{1}{5}$. The slopes are negative reciprocals of each other, so the
@@ -606,7 +493,7 @@ parallel
 
 {{< multiplechoice
   question="Use slopes to determine whether the lines $5x + 4y = 1$ and $4x + 5y = 3$ are parallel, perpendicular, or neither."
-  hint="Solve both equations for y and compare the slopes — they are reciprocals, but check whether they have opposite signs."
+  hint="Solve both equations for $y$. Compare the slopes: parallel lines have equal slopes, and perpendicular lines have slopes whose product is $-1$."
   answer="neither"
 >}}
 neither
@@ -718,7 +605,7 @@ slopes are negative reciprocals of each other.
 {{< multiplechoice
   question="Use the graph above to find the slope and $y$-intercept of the line $y = 4x - 2$. Which statement is correct?"
   answer="The slope is $4$ and the $y$-intercept is $(0, -2)$."
-  hint="From $(0, -2)$ to $(1, 2)$, compare the rise with the run; the point where the line crosses the $y$-axis is the $y$-intercept."
+  hint="Pick two points where the line crosses grid corners and count the rise and the run between them; then read where the line crosses the $y$-axis."
 >}}
 The slope is $-4$ and the $y$-intercept is $(0, 2)$.
 The slope is $4$ and the $y$-intercept is $(0, -2)$.
@@ -816,7 +703,7 @@ The slope is $2$ and the $y$-intercept is $(0, 4)$.
 {{< multiplechoice
   question="Use the graph above to find the slope and $y$-intercept of the line $y = -3x + 1$. Which statement is correct?"
   answer="The slope is $-3$ and the $y$-intercept is $(0, 1)$."
-  hint="From $(0, 1)$ to $(1, -2)$, compare the change in $y$ with the change in $x$; then identify where the line crosses the $y$-axis."
+  hint="Pick two points where the line crosses grid corners and count the rise and the run between them; then read where the line crosses the $y$-axis."
 >}}
 The slope is $-1$ and the $y$-intercept is $(0, 3)$.
 The slope is $3$ and the $y$-intercept is $(0, -1)$.
@@ -828,6 +715,7 @@ The slope is $-3$ and the $y$-intercept is $(0, 1)$.
 {{< fillin
   question="Identify the slope of the line $y = -9x + 7$."
   answer="-9"
+  answerForm="decimal"
   answerDisplay="$-9$"
   hint="Compare the equation with $y = mx + b$; the coefficient of $x$ is $m$."
 >}}
@@ -835,6 +723,7 @@ The slope is $-3$ and the $y$-intercept is $(0, 1)$.
 {{< fillin
   question="Identify the $y$-intercept of the line $y = -9x + 7$. Give the intercept as an ordered pair."
   answer="(0,7)"
+  answerForm="decimal"
   answerDisplay="$(0, 7)$"
   hint="In $y = mx + b$, the line crosses the $y$-axis at $(0, b)$."
 >}}
@@ -844,6 +733,7 @@ Now repeat the identification directly from a second equation in slope-intercept
 {{< fillin
   question="Identify the slope of the line $y = 4x - 10$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$4$"
   hint="Compare the equation with $y = mx + b$; the coefficient of $x$ is the slope."
 >}}
@@ -851,6 +741,7 @@ Now repeat the identification directly from a second equation in slope-intercept
 {{< fillin
   question="Identify the $y$-intercept of the line $y = 4x - 10$. Give the intercept as an ordered pair."
   answer="(0,-10)"
+  answerForm="decimal"
   answerDisplay="$(0, -10)$"
   hint="Read the constant term as $b$, then write the intercept in the form $(0, b)$."
 >}}
@@ -861,7 +752,7 @@ Now repeat the identification directly from a second equation in slope-intercept
   question="Graph the line $y = x + 4$ using its slope and $y$-intercept by placing three points on it."
   answerDisplay="$y = x + 4$"
   ariaLabel="A blank coordinate grid from negative ten to ten on both axes."
-  hint="Plot the $y$-intercept $(0, 4)$ first, then use slope $1 = \tfrac{1}{1}$ to move up $1$ and right $1$."
+  hint="Plot the $y$-intercept first, then write the slope as $\tfrac{\text{rise}}{\text{run}}$ and count it out from there to mark the next point."
 >}}
 {"answer":{"slope":1,"intercept":4,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
@@ -870,7 +761,7 @@ Now repeat the identification directly from a second equation in slope-intercept
   question="Graph the line $y = 2x - 3$ using its slope and $y$-intercept by placing three points on it."
   answerDisplay="$y = 2x - 3$"
   ariaLabel="A blank coordinate grid from negative ten to ten on both axes."
-  hint="Plot the $y$-intercept $(0, -3)$ first, then use slope $2 = \tfrac{2}{1}$ to move up $2$ and right $1$."
+  hint="Plot the $y$-intercept first, then write the slope as $\tfrac{\text{rise}}{\text{run}}$ and count it out from there to mark the next point."
 >}}
 {"answer":{"slope":2,"intercept":-3,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
@@ -880,7 +771,7 @@ Now repeat the identification directly from a second equation in slope-intercept
 {{< multiplechoice
   question="Identify the most convenient method to graph the line $y = 4$."
   answer="Recognize it as a horizontal line."
-  hint="An equation of the form $y = b$ fixes the $y$-coordinate while $x$ may be any value."
+  hint="Count the variables in the equation, then use the strategy for choosing the most convenient method."
 >}}
 Recognize it as a horizontal line.
 Recognize it as a vertical line.
@@ -891,7 +782,7 @@ Use the intercepts.
 {{< multiplechoice
   question="Identify the most convenient method to graph the line $x = -3$."
   answer="Recognize it as a vertical line."
-  hint="An equation of the form $x = a$ fixes the $x$-coordinate while $y$ may be any value."
+  hint="Count the variables in the equation, then use the strategy for choosing the most convenient method."
 >}}
 Recognize it as a vertical line.
 Use the slope-intercept form.
@@ -908,6 +799,7 @@ and the number of miles, $m$, she drives in one day.
 {{< fillin
   question="Find the cost if Janelle drives the car $0$ miles one day. Enter the amount in dollars."
   answer="15"
+  answerForm="decimal"
   answerDisplay="\$15"
   hint="Substitute $m = 0$ into $C = 0.32m + 15$."
 >}}
@@ -915,16 +807,17 @@ and the number of miles, $m$, she drives in one day.
 {{< fillin
   question="Find the cost on a day when Janelle drives the car $400$ miles. Enter the amount in dollars."
   answer="143"
+  answerForm="decimal"
   answerDisplay="\$143"
-  hint="Substitute $m = 400$ and compute $0.32(400) + 15$."
+  hint="Substitute $m = 400$ into $C = 0.32m + 15$ and simplify."
 >}}
 
-Use those two values to interpret and graph the same source model.
+Now interpret the equation and graph it.
 
 {{< multiplechoice
   question="Interpret the slope and $C$-intercept of $C = 0.32m + 15$."
   answer="The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles, the cost is \$15."
-  hint="In $C = 0.32m + 15$, the coefficient of $m$ is the change in daily cost per mile, and the constant is the cost at $m = 0$."
+  hint="Compare the equation with $y = mx + b$, then read each part in the units of the problem, as in the Stella example."
 >}}
 The cost increases by \$15 when the miles driven increase by $1$; at $0$ miles, the cost is \$0.32.
 The cost increases by \$0.32 when the miles driven increase by $15$; at $0$ miles, the cost is \$1.
@@ -935,7 +828,7 @@ The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles
   question="Graph the equation $C = 0.32m + 15$ by placing three points on the line."
   answerDisplay="$C = 0.32m + 15$"
   ariaLabel="A blank coordinate grid with miles m from negative one to five hundred on the horizontal axis and cost C from negative one to one hundred eighty dollars on the vertical axis."
-  hint="Start with the $C$-intercept $(0, 15)$. The calculated point $(400, 143)$ gives another point on the line — then find one more the same way."
+  hint="Plot the points you found for $0$ miles and $400$ miles, then substitute one more number of miles to find a third point."
 >}}
 {"answer":{"slope":0.32,"intercept":15,"plotPoints":3},"grid":{"xMin":-1,"xMax":500,"yMin":-1,"yMax":180}}
 {{< /graphplot >}}
@@ -983,4 +876,4 @@ not perpendicular
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.5: Use the Slope-Intercept Form of an Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-5-use-the-slope-intercept-form-of-an-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the slope-intercept, parallel-lines, and perpendicular-lines graphs as accessible inline graphics; condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and remaining end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises, including graphing exercises, into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.5: Use the Slope-Intercept Form of an Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-5-use-the-slope-intercept-form-of-an-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the rise-and-run, parallel-lines, and perpendicular-lines graphs, the graphs for the first worked example and the first Try It, and two exercise graphs as accessible graphics; condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and remaining end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking for one part of each multi-part Try It; and adapted selected end-of-section exercises, including graphing exercises, into the section-final interactive Practice block.</small>

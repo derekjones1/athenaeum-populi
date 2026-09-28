@@ -81,7 +81,8 @@ that's $462 + 840 = 1{,}302$ dollars. ✓ The theater sold 42 adult tickets and
 {{< fillin
   question="A science center sold 1,363 tickets on a busy weekend. The receipts totaled \$12,146. Adult tickets cost \$12 each and child tickets cost \$7 each. How many adult tickets were sold?"
   answer="521"
-  hint="Let a be the number of adult tickets and c the number of child tickets, so $a + c = 1{,}363$. Set $12a + 7c$ equal to 12,146, then solve the system for a."
+  answerForm="decimal"
+  hint="Let $a$ and $c$ be the numbers of adult and child tickets. The Number column gives one equation and the Total Value column (count times price) gives the other; eliminate $c$ and solve for $a$."
 >}}
 
 In the next example we solve a coin problem. Now that we can work with
@@ -133,7 +134,8 @@ that's $4.75 + 2.55 = 7.30$ dollars. Also $3 \cdot 19 - 6 = 51$. ✓ Priam has
 {{< fillin
   question="Juan has a pocketful of nickels and dimes with a total value of \$8.10. The number of dimes is nine less than twice the number of nickels. How many nickels does Juan have?"
   answer="36"
-  hint="Let n be the number of nickels and d the number of dimes, so $d = 2n - 9$. Set $0.05n + 0.10d$ equal to 8.10, then substitute for d and solve for n."
+  answerForm="decimal"
+  hint="Let $n$ and $d$ be the numbers of nickels and dimes. Translate the sentence comparing the counts into one equation and the total value into the other, then substitute for $d$ and solve for $n$."
 >}}
 
 Some mixture applications involve combining foods or drinks rather than
@@ -182,7 +184,8 @@ Carson should mix 16 pounds of nuts with 4 pounds of chocolate chips.
 {{< fillin
   question="Greta wants to make 5 pounds of a nut mix using peanuts and cashews. Her budget requires the mixture to cost her \$6 a pound. Peanuts are \$4 a pound and cashews are \$9 a pound. How many pounds of cashews should she use?"
   answer="2"
-  hint="Let p be the pounds of peanuts and c the pounds of cashews, so $p + c = 5$. Set $4p + 9c$ equal to 5(6), then solve the system for c."
+  answerForm="decimal"
+  hint="Let $p$ and $c$ be the pounds of peanuts and cashews. The pounds give one equation; for the other, the value of the peanuts plus the value of the cashews equals the value of the whole mix. Eliminate $p$ and solve for $c$."
 >}}
 
 Another mixture application relates to concentrated cleaning supplies and
@@ -236,9 +239,10 @@ matches $0.40(200) = 80$. ✓ Sasheena should mix 80 ml of the 25% solution
 with 120 ml of the 50% solution.
 
 {{< fillin
-  question="LeBron needs 150 milliliters of a 30% solution of sulfuric acid for a lab experiment but only has access to a 25% solution and a 50% solution. How much of the 50% solution should he use to make the 30% solution?"
+  question="LeBron needs 150 milliliters of a 30% solution of sulfuric acid for a lab experiment but only has access to a 25% solution and a 50% solution. How many milliliters of the 50% solution should he use to make the 30% solution?"
   answer="30"
-  hint="Let x be the ml of the 25% solution and y the ml of the 50% solution, so $x + y = 150$. Set $0.25x + 0.50y$ equal to 0.30(150), then solve the system for y."
+  answerForm="decimal"
+  hint="Let $x$ and $y$ be the milliliters of the 25% and 50% solutions. The volumes give one equation; for the other, the acid in each solution (volume times concentration) adds up to the acid in the mixture. Eliminate $x$ and solve for $y$."
 >}}
 
 ## Solve Interest Applications
@@ -294,9 +298,11 @@ which matches $0.071(40{,}000) = 2{,}840$. ✓ Adnan should invest \$32,800 in
 the stock fund and \$7,200 in bonds.
 
 {{< fillin
-  question="Julius invested \$7,000 into two stock investments. One stock paid 11% interest and the other stock paid 13% interest. He earned 12.5% interest on the total investment. How much did he invest in the stock that paid 13% interest?"
+  question="Julius invested \$7,000 into two stock investments. One stock paid 11% interest and the other stock paid 13% interest. He earned 12.5% interest on the total investment. How much, in dollars, did he invest in the stock that paid 13% interest?"
   answer="5250"
-  hint="Let x be the amount invested at 11%, so $7{,}000 - x$ is invested at 13%. Set $0.11x + 0.13(7{,}000 - x)$ equal to 0.125$(7,000)$, then solve for the amount at 13%."
+  answerForm="decimal"
+  answerDisplay="\$5,250"
+  hint="Let $x$ and $y$ be the amounts invested at 11% and 13%. The amounts add to the total investment, and the interest from each stock (principal times rate) adds to the interest on the total. Eliminate $x$ and solve for $y$."
 >}}
 
 **Example.** Rosie owes \$21,540 on two student loans. The interest rate on
@@ -343,9 +349,11 @@ Rosie's bank loan is \$8,670 and the principal for her federal loan is
 \$12,870.
 
 {{< fillin
-  question="Laura owes \$18,000 on her student loans. The interest rate on the bank loan is 2.5% and the interest rate on the federal loan is 6.9%. The total amount of interest she paid last year was \$1,066. What was the principal for the federal loan?"
+  question="Laura owes \$18,000 on her student loans. The interest rate on the bank loan is 2.5% and the interest rate on the federal loan is 6.9%. The total amount of interest she paid last year was \$1,066. What was the principal for the federal loan, in dollars?"
   answer="14000"
-  hint="Let b be the principal for the bank loan and f the principal for the federal loan, so $b + f = 18{,}000$. Set $0.025b + 0.069f$ equal to 1,066, then solve the system for f."
+  answerForm="decimal"
+  answerDisplay="\$14,000"
+  hint="Let $b$ and $f$ be the principals of the bank and federal loans. The principals add to the total owed, and the interest on each loan (principal times rate) adds to the total interest. Eliminate $b$ and solve for $f$."
 >}}
 
 ## Key terms
@@ -367,40 +375,45 @@ investment or loan mixture problem, the Principal column gives one equation
 {{< fillin
   question="Tickets to a Broadway show cost \$35 for adults and \$15 for children. The total receipts for 1,650 tickets at one performance were \$47,150. How many adult and how many child tickets were sold? Enter the adult count first and the child count second as an ordered pair."
   answer="(1120,530)"
+  answerForm="decimal"
   answerDisplay="$1{,}120$ adult tickets and $530$ child tickets"
-  hint="Let $a$ and $c$ be the adult and child counts. Use $a+c=1{,}650$ with the total-value equation $35a+15c=47{,}150$."
+  hint="Let $a$ and $c$ be the adult and child counts. Write one equation from the number of tickets and one from the receipts (count times price), then eliminate a variable."
 >}}
 
 {{< fillin
   question="Brandon has a cup of quarters and dimes with a total value of \$3.80. The number of quarters is four less than twice the number of dimes. How many quarters and how many dimes does Brandon have? Enter the quarter count first and the dime count second as an ordered pair."
   answer="(12,8)"
+  answerForm="decimal"
   answerDisplay="$12$ quarters and $8$ dimes"
-  hint="Let $q$ and $d$ be the numbers of quarters and dimes. Use $0.25q+0.10d=3.80$ and translate the relationship as $q=2d-4$."
+  hint="Let $q$ and $d$ be the numbers of quarters and dimes. Translate the sentence comparing the counts into one equation and the total value into the other, then substitute."
 >}}
 
 {{< fillin
   question="Marissa wants to blend candy selling for \$1.80 per pound with candy costing \$1.20 per pound to get a mixture that costs her \$1.40 per pound to make. She wants to make 90 pounds of the candy blend. How many pounds of each type of candy should she use? Enter the pounds of the \$1.20 candy first and the pounds of the \$1.80 candy second as an ordered pair."
   answer="(60,30)"
+  answerForm="decimal"
   answerDisplay="$60$ pounds of the \$1.20-per-pound candy and $30$ pounds of the \$1.80-per-pound candy"
-  hint="Let $x$ and $y$ be the pounds of the \$1.20 and \$1.80 candies. Use $x+y=90$ and set the blend's total cost equal to $1.40(90)$."
+  hint="Let $x$ and $y$ be the pounds of the \$1.20 and \$1.80 candies. The pounds give one equation; for the other, the cost of each candy adds up to the cost of the whole blend."
 >}}
 
 ### Solve interest applications using systems of equations
 
 {{< fillin
-  question="Hattie had \$3,000 to invest and wants to earn 10.6% interest per year. She will put some of the money into an account that earns 12% per year and the rest into an account that earns 10% per year. How much money should she put into each account? Enter the dollars at 12% first and the dollars at 10% second as an ordered pair."
+  question="Hattie had \$3,000 to invest and wants to earn 10.6% interest per year. She will put some of the money into an account that earns 12% per year and the rest into an account that earns 10% per year. How much money should she put into each account? Enter the dollars at 12% first and the dollars at 10% second, without dollar signs, as an ordered pair."
   answer="(900,2100)"
+  answerForm="decimal"
   answerDisplay="\$900 at 12% and \$2,100 at 10%"
-  hint="Let $x$ and $y$ be the amounts at 12% and 10%. Use $x+y=3{,}000$ and set the total interest equal to $0.106(3{,}000)$."
+  hint="Let $x$ and $y$ be the amounts at 12% and 10%. The amounts add to the total invested, and the interest from each account (principal times rate) adds to the interest on the total."
 >}}
 
 {{< fillin
-  question="Sam invested \$48,000, some at 6% interest and the rest at 10%. How much did he invest at each rate if he received \$4,000 in interest in one year? Enter the dollars at 6% first and the dollars at 10% second as an ordered pair."
+  question="Sam invested \$48,000, some at 6% interest and the rest at 10%. How much did he invest at each rate if he received \$4,000 in interest in one year? Enter the dollars at 6% first and the dollars at 10% second, without dollar signs, as an ordered pair."
   answer="(20000,28000)"
+  answerForm="decimal"
   answerDisplay="\$20,000 at 6% and \$28,000 at 10%"
-  hint="Let $x$ and $y$ be the amounts at 6% and 10%. Use $x+y=48{,}000$ and $0.06x+0.10y=4{,}000$."
+  hint="Let $x$ and $y$ be the amounts at 6% and 10%. The amounts add to the total invested, and the interest from each amount (principal times rate) adds to the interest he received."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.5: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-5-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/mixture/investment/loan tables as markdown tables; wrote each system of equations and its elimination or substitution steps as display-math blocks; omitted the "Be Prepared" readiness quiz, the Media links block, the unselected Section 5.5 exercises, and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.5: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-5-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the ticket/coin/mixture/concentration/investment/loan tables as markdown tables, dropping the Time column (always 1) from the two interest tables, and described the opening nickel-and-dime table in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks, and wrote out the checks the two interest examples leave to the reader; corrected three slips in the worked examples: the coin example's check (3 · 19 − 6 = 51, printed with 16), the acid example's check (80 + 120 = 200, printed as 120), and the loan example's answer, which swaps the two principals; omitted the "Be Prepared" readiness quiz, the solution-mixing diagram, the Media links block, the Key Concepts summary tables, the unselected Section 5.5 exercises (including the Everyday Math and Writing Exercises), and the Self Check checklist; added a Key terms list written for this page (the module has no glossary); converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, each asking for one of the two quantities; and adapted selected end-of-section exercises into the interactive Practice block, each asking for both quantities as an ordered pair in a stated order.</small>

@@ -39,12 +39,14 @@ easier.
 {{< fillin
   question="Solve: $5(x + 3) = 35$."
   answer="4"
+  answerForm="decimal"
   hint="Distribute the 5 first, then collect constants on the right and divide."
 >}}
 
 {{< fillin
   question="Solve: $6(y - 4) = -18$."
   answer="1"
+  answerForm="decimal"
   hint="Distribute the 6 first, then collect constants on the right and divide."
 >}}
 
@@ -79,13 +81,15 @@ Check: let $y = -17$. Then $-(-17+9) \overset{?}{=} 8$, so $-(-8)
 {{< fillin
   question="Solve: $-(y + 8) = -2$."
   answer="-6"
-  hint="Distribute the negative sign first: $-y - 8 = -2$. Then isolate y."
+  answerForm="decimal"
+  hint="Distribute the negative sign first, then isolate $y$."
 >}}
 
 {{< fillin
   question="Solve: $-(z + 4) = -12$."
   answer="8"
-  hint="Distribute the negative sign first: $-z - 4 = -12$. Then isolate z."
+  answerForm="decimal"
+  hint="Distribute the negative sign first, then isolate $z$."
 >}}
 
 **Example.** Solve: $5(a-3)+5 = -10$.
@@ -102,13 +106,15 @@ Check: let $a=0$. Then $5(0-3)+5 \overset{?}{=} -10$, so $5(-3)+5
 {{< fillin
   question="Solve: $2(m - 4) + 3 = -1$."
   answer="2"
+  answerForm="decimal"
   hint="Distribute first, combine like terms, then collect the variable terms on one side and constants on the other."
 >}}
 
 {{< fillin
   question="Solve: $7(n - 3) - 8 = -15$."
   answer="2"
-  hint="Distribute first, combine like terms, then isolate n."
+  answerForm="decimal"
+  hint="Distribute first, combine like terms, then isolate $n$."
 >}}
 
 **Example.** Solve: $\tfrac{2}{3}(6m - 3) = 8 - m$.
@@ -123,13 +129,15 @@ $\tfrac{2}{3}(9) \overset{?}{=} 6$, and $6 = 6$. ✓
 {{< fillin
   question="Solve: $\tfrac{1}{3}(6u + 3) = 7 - u$."
   answer="2"
-  hint="Distribute the $\tfrac{1}{3}$ first, then get all the u terms on one side."
+  answerForm="decimal"
+  hint="Distribute the $\tfrac{1}{3}$ first, then get all the $u$ terms on one side."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{2}{3}(9x - 12) = 8 + 2x$."
   answer="4"
-  hint="Distribute the $\tfrac{2}{3}$ first, then get all the x terms on one side."
+  answerForm="decimal"
+  hint="Distribute the $\tfrac{2}{3}$ first, then get all the $x$ terms on one side."
 >}}
 
 **Example.** Solve: $8 - 2(3y+5) = 0$.
@@ -144,17 +152,19 @@ $8 - 2(-1+5) \overset{?}{=} 0$, so $8 - 2(4) \overset{?}{=} 0$, so
 $8 - 8 \overset{?}{=} 0$, and $0 = 0$. ✓
 
 {{< fillin
-  question="Solve: $12 - 3(4j + 3) = -17$."
+  question="Solve: $12 - 3(4j + 3) = -17$. Enter the solution as a fraction in lowest terms."
   answer="\frac{5}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{3}$"
   hint="Distribute first, combine like terms, then collect the variable terms on one side and constants on the other."
 >}}
 
 {{< fillin
-  question="Solve: $-6 - 8(k - 2) = -10$."
+  question="Solve: $-6 - 8(k - 2) = -10$. Enter the solution as a fraction in lowest terms."
   answer="\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{2}$"
-  hint="Distribute first, combine like terms, then isolate k."
+  hint="Distribute first, combine like terms, then isolate $k$."
 >}}
 
 **Example.** Solve: $4(x-1) - 2 = 5(2x+3) + 6$.
@@ -170,12 +180,14 @@ original equation gives $-24 = -24$. ✓
 {{< fillin
   question="Solve: $6(p - 3) - 7 = 5(4p + 3) - 12$."
   answer="-2"
+  answerForm="decimal"
   hint="Distribute both sides, combine like terms, then move all the variable terms to whichever side keeps their coefficient positive."
 >}}
 
 {{< fillin
   question="Solve: $8(q + 1) - 5 = 3(2q - 4) - 1$."
   answer="-8"
+  answerForm="decimal"
   hint="Distribute both sides, combine like terms, then collect variables on one side and constants on the other."
 >}}
 
@@ -190,15 +202,17 @@ $-170 = 85s$. Divide: $-2 = s$.
 Check: let $s=-2$. Substituting back into both sides gives $750 = 750$. ✓
 
 {{< fillin
-  question="Solve: 6[$4 - 2(7y - 1)$] = 8(13 - 8y)."
+  question="Solve: $6[4 - 2(7y - 1)] = 8(13 - 8y)$. Enter the solution as a fraction in lowest terms."
   answer="-\frac{17}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{17}{5}$"
   hint="Work from the innermost parentheses outward: distribute the $-2(7y-1)$ first, then the outer 6, then collect variable and constant terms."
 >}}
 
 {{< fillin
-  question="Solve: 12[$1 - 5(4z - 1)$] = 3(24 + 11z)."
+  question="Solve: $12[1 - 5(4z - 1)] = 3(24 + 11z)$."
   answer="0"
+  answerForm="decimal"
   hint="Work from the innermost parentheses outward, then collect variable and constant terms on opposite sides."
 >}}
 
@@ -214,12 +228,14 @@ Check: let $n = 0.4$. Substituting back into both sides gives $16.2 = 16.2$.
 {{< fillin
   question="Solve: $0.55(100n + 8) = 0.6(85n + 14)$."
   answer="1"
+  answerForm="decimal"
   hint="Distribute the decimals first, then collect the variable terms on one side and the constants on the other."
 >}}
 
 {{< fillin
   question="Solve: $0.15(40m - 120) = 0.5(60m + 12)$."
   answer="-1"
+  answerForm="decimal"
   hint="Distribute the decimals first, then collect the variable terms on one side and the constants on the other."
 >}}
 
@@ -287,17 +303,25 @@ Distribute: $12n-6+3=2n-8+10n+5$. Combine like terms: $12n-3=12n-3$. Subtract
 $12n$ to get the $n$'s to one side: $-3=-3$. This is a true statement. The
 equation is an identity. The solution is all real numbers.
 
-{{< fillin
-  question="Consider the equation $4 + 9(3x - 7) = -42x - 13 + 23(3x - 2)$. Distribute and combine like terms on each side, then subtract the matching variable term from both sides. The variable terms cancel, leaving a true statement $c=c$. Enter the constant $c$."
-  answer="-59"
-  hint="After distributing and combining like terms, both sides simplify to the same expression in x. Subtracting that expression from both sides leaves only constants."
+{{< multiplechoice
+  question="Classify the equation $4 + 9(3x - 7) = -42x - 13 + 23(3x - 2)$ as a conditional equation, an identity, or a contradiction."
+  hint="Distribute and combine like terms on each side, then collect the variable terms on one side and look at the statement that remains."
+  answer="identity"
 >}}
+identity
+contradiction
+conditional equation
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="Consider the equation $8(1 - 3x) + 15(2x + 7) = 2(x + 50) + 4(x + 3) + 1$. Distribute and combine like terms on each side, then subtract the matching variable term from both sides. The variable terms cancel, leaving a true statement $c=c$. Enter the constant $c$."
-  answer="113"
-  hint="After distributing and combining like terms, both sides simplify to the same expression in x. Subtracting that expression from both sides leaves only constants."
+{{< multiplechoice
+  question="Classify the equation $8(1 - 3x) + 15(2x + 7) = 2(x + 50) + 4(x + 3) + 1$ as a conditional equation, an identity, or a contradiction."
+  hint="Distribute and combine like terms on each side, then collect the variable terms on one side and look at the statement that remains."
+  answer="identity"
 >}}
+conditional equation
+contradiction
+identity
+{{< /multiplechoice >}}
 
 **Example.** Classify the equation as a conditional equation, an identity, or
 a contradiction. Then state the solution.
@@ -310,17 +334,19 @@ $p=\tfrac{5}{2}$. This is a conditional equation. The solution is
 $p=\tfrac{5}{2}$.
 
 {{< fillin
-  question="Classify the equation as a conditional equation, an identity, or a contradiction, then solve it: $11(q + 3) - 5 = 19$."
+  question="Classify the equation as a conditional equation, an identity, or a contradiction and then state the solution: $11(q + 3) - 5 = 19$. Enter the solution as a fraction in lowest terms."
   answer="-\frac{9}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{9}{11}$"
-  hint="Distribute, combine like terms, then isolate q. If exactly one value of q makes it true, it's conditional."
+  hint="Distribute, combine like terms, then isolate $q$. If exactly one value of $q$ makes it true, it's conditional."
 >}}
 
 {{< fillin
-  question="Classify the equation as a conditional equation, an identity, or a contradiction, then solve it: $6 + 14(k - 8) = 95$."
+  question="Classify the equation as a conditional equation, an identity, or a contradiction and then state the solution: $6 + 14(k - 8) = 95$. Enter the solution as a fraction in lowest terms."
   answer="\frac{201}{14}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{201}{14}$"
-  hint="Distribute, combine like terms, then isolate k. If exactly one value of k makes it true, it's conditional."
+  hint="Distribute, combine like terms, then isolate $k$. If exactly one value of $k$ makes it true, it's conditional."
 >}}
 
 **Example.** Classify the equation as a conditional equation, an identity, or
@@ -334,7 +360,7 @@ contradiction. It has no solution.
 
 {{< multiplechoice
   question="Classify the equation $12c + 5(5 + 3c) = 3(9c - 4)$ as a conditional equation, an identity, or a contradiction."
-  hint="Distribute and combine like terms on each side, then subtract the matching variable term from both sides. Both sides have the same coefficient on the variable term but different constants ($25 \ne -12$)."
+  hint="Distribute and combine like terms on each side, then collect the variable terms on one side and look at the statement that remains."
   answer="contradiction"
 >}}
 identity
@@ -344,7 +370,7 @@ conditional equation
 
 {{< multiplechoice
   question="Classify the equation $4(7d + 18) = 13(3d - 2) - 11d$ as a conditional equation, an identity, or a contradiction."
-  hint="Distribute and combine like terms on each side, then subtract the matching variable term from both sides. Both sides have the same coefficient on the variable term but different constants ($72 \ne -26$)."
+  hint="Distribute and combine like terms on each side, then collect the variable terms on one side and look at the statement that remains."
   answer="contradiction"
 >}}
 conditional equation
@@ -373,13 +399,15 @@ variable; it has no solution.
 {{< fillin
   question="Solve: $5(x - 4) - 4x = 14$."
   answer="34"
-  hint="Distribute $5$, combine the $x$-terms, then add $20$ to isolate $x$."
+  answerForm="decimal"
+  hint="Distribute, combine like terms on the left, then isolate $x$."
 >}}
 
 {{< fillin
   question="Solve: $4(2.5v - 0.6) = 7.6$."
   answer="1"
-  hint="Distribute $4$, add $2.4$ to both sides, then divide by $10$."
+  answerForm="decimal"
+  hint="Distribute the $4$, collect the constants on the right, then make the coefficient of $v$ equal to $1$."
 >}}
 
 ### Classify equations
@@ -397,17 +425,18 @@ conditional equation; one solution
 {{< multiplechoice
   question="Classify $24(3d - 4) + 100 = 52$ as a conditional equation, an identity, or a contradiction, and state the solution."
   answer="conditional equation; $d = \tfrac{2}{3}$"
-  hint="Distribute $24$, combine the constants, and solve the resulting one-variable equation."
+  hint="Distribute, combine like terms, then try to isolate $d$ and look at the statement that results."
 >}}
 contradiction; no solution
 conditional equation; $d = \tfrac{2}{3}$
+conditional equation; $d = \tfrac{3}{2}$
 identity; all real numbers
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Classify $18u - 51 = 9(4u + 5) - 6(3u - 10)$ as a conditional equation, an identity, or a contradiction, and state the solution."
   answer="contradiction; no solution"
-  hint="Distribute and combine like terms on the right; then subtract the matching variable term from both sides."
+  hint="Distribute and combine like terms on the right, then collect the variable terms on one side and look at the statement that remains."
 >}}
 contradiction; no solution
 identity; all real numbers
@@ -416,4 +445,4 @@ conditional equation; one solution
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.4: Use a General Strategy to Solve Linear Equations](https://openstax.org/books/elementary-algebra-2e/pages/2-4-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including flipping the identity/contradiction classification Try Its into requests for the specific numerical statement each equation reduces to, since a word answer like "identity" can't be graded by the math checker.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.4: Use a General Strategy to Solve Linear Equations](https://openstax.org/books/elementary-algebra-2e/pages/2-4-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the first worked example's step table as a markdown table and the other worked examples' steps as prose; omitted the Be Prepared quiz, Key Concepts summary (it repeats the general-strategy box), Self Check checklist, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — the identity and contradiction Try Its ask for the classification only, and the conditional-equation Try Its grade the solution.</small>

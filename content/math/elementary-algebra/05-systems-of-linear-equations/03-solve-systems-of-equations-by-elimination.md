@@ -40,7 +40,7 @@ together:
 $$
 \begin{array}{rcl}
 3x + y &=& 5 \\
-2x - y &=& 0 \\
+2x - y &=& 0 \\ \hline
 5x &=& 5
 \end{array}
 $$
@@ -63,7 +63,7 @@ the same. Adding the new first equation to the second eliminates $x$:
 $$
 \begin{array}{rcl}
 -2x - 8y &=& -4 \\
-2x + 5y &=& -2 \\
+2x + 5y &=& -2 \\ \hline
 -3y &=& -6
 \end{array}
 $$
@@ -125,9 +125,10 @@ $$
 {{< /callout >}}
 
 {{< fillin
-  question="Solve the system by elimination: $2x + y = 5$ and $x - y = 4$. What is x?"
+  question="Solve the system by elimination: $2x + y = 5$ and $x - y = 4$. What is $x$?"
   answer="3"
-  hint="The y-coefficients are already opposites (1 and -1), so add the equations directly to eliminate y."
+  answerForm="decimal"
+  hint="Check which variable already has opposite coefficients, add the two equations to eliminate it, and solve what remains for $x$."
 >}}
 
 Now let's look at a system where multiplying just one equation makes a pair
@@ -150,7 +151,7 @@ equation:
 $$
 \begin{array}{rcl}
 -9x + 6y &=& 6 \\
-5x - 6y &=& 10 \\
+5x - 6y &=& 10 \\ \hline
 -4x &=& 16
 \end{array}
 $$
@@ -160,9 +161,10 @@ so $-12 - 2y = -2$, and $-2y = 10$, so $y = -5$. The solution is $(-4,-5)$.
 Check: $3(-4)-2(-5) = -12+10=-2$ ✓ and $5(-4)-6(-5)=-20+30=10$ ✓.
 
 {{< fillin
-  question="Solve the system by elimination: $4x - 3y = 1$ and $5x - 9y = -4$. What is y?"
+  question="Solve the system by elimination: $4x - 3y = 1$ and $5x - 9y = -4$. What is $y$?"
   answer="1"
-  hint="Multiply the first equation by -3 so its y-coefficient becomes opposite the second equation's y-coefficient, then add."
+  answerForm="decimal"
+  hint="Multiply the first equation by $-3$ so the $y$-coefficients become opposites, add to find $x$, then substitute back to find $y$."
 >}}
 
 Sometimes we must multiply *both* equations by constants to make a pair of
@@ -186,7 +188,11 @@ $$
 2(4x-3y) = 2(9) \\
 3(7x+2y) = 3(-6)
 \end{array}\right.
-\quad\Longrightarrow\quad
+$$
+
+Simplifying gives
+
+$$
 \left\{\begin{array}{l}
 8x - 6y = 18 \\
 21x + 6y = -18
@@ -197,9 +203,10 @@ Adding these equations eliminates $y$: $29x = 0$, so $x=0$. Substituting
 $x=0$ into $7x+2y=-6$ gives $2y=-6$, so $y=-3$. The solution is $(0,-3)$.
 
 {{< fillin
-  question="Solve the system by elimination: $3x - 4y = -9$ and $5x + 3y = 14$. What is y?"
+  question="Solve the system by elimination: $3x - 4y = -9$ and $5x + 3y = 14$. What is $y$?"
   answer="3"
-  hint="Multiply the first equation by 3 and the second by 4 so the y-coefficients become opposites, then add and solve for x first, then substitute back to find y."
+  answerForm="decimal"
+  hint="Multiply the first equation by $3$ and the second by $4$ so the $y$-coefficients become opposites, add to find $x$, then substitute back to find $y$."
 >}}
 
 When a system has fractions, clear them first by multiplying each equation
@@ -235,7 +242,7 @@ solutions.
 
 {{< multiplechoice
   question="Solve the system by elimination: $5x - 3y = 15$ and $y = -5 + \tfrac{5}{3}x$. How many solutions does the system have?"
-  hint="Rewrite the second equation in standard form and compare it to the first - do they describe the same line?"
+  hint="Write the second equation in standard form and clear its fraction, then eliminate a variable and read the statement that is left."
   answer="infinitely many solutions"
 >}}
 exactly one solution
@@ -259,7 +266,7 @@ describe parallel lines, so the system has no solution.
 
 {{< multiplechoice
   question="Solve the system by elimination: $-3x + 2y = 8$ and $9x - 6y = 13$. How many solutions does the system have?"
-  hint="Multiply the first equation by 3 and add it to the second. If the variables cancel and leave a false statement, the lines are parallel."
+  hint="Multiply the first equation by $3$, add it to the second, and read the statement that is left."
   answer="no solution"
 >}}
 exactly one solution
@@ -295,7 +302,8 @@ $m=15$. Check: $24+15=39$ and $24-15=9$. The numbers are 24 and 15.
 {{< fillin
   question="The sum of two numbers is 42. Their difference is 8. What is the larger of the two numbers?"
   answer="25"
-  hint="Let n and m be the numbers, with $n + m = 42$ and $n - m = 8$. Add the equations to eliminate m."
+  answerForm="decimal"
+  hint="Name the two numbers, write one equation for their sum and one for their difference, then add the equations to eliminate one variable."
 >}}
 
 **Example.** Joe stops at a burger restaurant every day on his way to work.
@@ -324,8 +332,9 @@ $s=140$ into $f+2s=620$ gives $f + 280 = 620$, so $f = 340$. The fries have
 {{< fillin
   question="Malik buys a bag of diapers and 2 cans of formula for a total of \$37. The next week he buys 2 bags of diapers and 5 cans of formula for a total of \$87. How much does one bag of diapers cost, in dollars?"
   answer="11"
+  answerForm="decimal"
   answerDisplay="\$11"
-  hint="Let d = the cost of a bag of diapers and c = the cost of a can of formula. Then $d + 2c = 37$ and $2d + 5c = 87$. Multiply the first equation by -2 and add to eliminate d."
+  hint="Name the two prices, write one equation for each week's purchase, then multiply the first equation by $-2$ and add to eliminate the diaper price."
 >}}
 
 ## Choose the Most Convenient Method to Solve a System of Linear Equations
@@ -349,8 +358,8 @@ form, so elimination will be most convenient.
 solved for $y$, so substitution will be most convenient.
 
 {{< multiplechoice
-  question="For the system $4x - 5y = -32$ and $3x + 2y = -1$, both equations are in standard form. Which method is more convenient?"
-  hint="Neither equation is already solved for a variable, but both are in standard form ready for adding."
+  question="For the system $4x - 5y = -32$ and $3x + 2y = -1$, which method would be more convenient: substitution or elimination?"
+  hint="Look at the form each equation is written in and compare it with the table of methods."
   answer="elimination"
 >}}
 elimination
@@ -374,14 +383,16 @@ leaves a false statement like $0=-5$.
 
 {{< fillin
   question="Solve by elimination: $-3x+y=-9$ and $x-2y=-12$. Enter $x$ first and $y$ second, separated by a comma."
-  answer="6,9"
+  answer="(6,9)"
+  answerForm="decimal"
   answerDisplay="$(6,9)$"
   hint="Double the first equation so the $y$-coefficients are opposites, then add the equations and solve for $x$."
 >}}
 
 {{< fillin
   question="Solve by elimination: $2x-5y=7$ and $3x-y=17$. Enter $x$ first and $y$ second, separated by a comma."
-  answer="6,1"
+  answer="(6,1)"
+  answerForm="decimal"
   answerDisplay="$(6,1)$"
   hint="Multiply the second equation by $-5$, then add it to the first equation to eliminate $y$."
 >}}
@@ -392,15 +403,17 @@ leaves a false statement like $0=-5$.
   question="Translate to a system of equations and solve: The sum of two numbers is $65$. Their difference is $25$. Find the numbers. Enter both numbers, separated by a comma."
   answer="20,45"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$20$ and $45$"
-  hint="Let the larger number be $L$ and the smaller be $S$. Write $L+S=65$ and $L-S=25$, then add the equations."
+  hint="Name the two numbers, write one equation for their sum and one for their difference, then add the equations to eliminate one variable."
 >}}
 
 {{< fillin
-  question="Translate to a system of equations and solve: Andrea is buying some new shirts and sweaters. She is able to buy $3$ shirts and $2$ sweaters for \$114, or she is able to buy $2$ shirts and $4$ sweaters for \$164. How much does a shirt cost? How much does a sweater cost? Enter the shirt cost first and the sweater cost second, separated by a comma."
+  question="Translate to a system of equations and solve: Andrea is buying some new shirts and sweaters. She is able to buy $3$ shirts and $2$ sweaters for \$114, or she is able to buy $2$ shirts and $4$ sweaters for \$164. How much does a shirt cost? How much does a sweater cost? Enter the shirt cost first and the sweater cost second, in dollars, separated by a comma."
   answer="16,33"
+  answerForm="decimal"
   answerDisplay="\$16 for a shirt; \$33 for a sweater"
-  hint="Let $s$ be the shirt cost and $w$ the sweater cost. Double $3s+2w=114$, then subtract $2s+4w=164$ to eliminate $w$."
+  hint="Name the two prices, write one equation for each purchase, then multiply the first equation by $-2$ and add it to the second to eliminate the sweater price."
 >}}
 
 ### Choose the most convenient method to solve a system of linear equations
@@ -408,7 +421,7 @@ leaves a false statement like $0=-5$.
 {{< multiplechoice
   question="For the system $8x-15y=-32$ and $6x+3y=-5$, which method would be more convenient: substitution or elimination?"
   answer="elimination"
-  hint="Both equations are already in standard form, and integer multiples can make one pair of coefficients opposites."
+  hint="Look at the form each equation is written in and compare it with the table of methods in this section."
 >}}
 elimination
 substitution
@@ -417,7 +430,7 @@ substitution
 {{< multiplechoice
   question="For the system $x=4y-3$ and $4x-2y=-6$, which method would be more convenient: substitution or elimination?"
   answer="substitution"
-  hint="One equation already has $x$ isolated, so its expression can replace $x$ directly in the other equation."
+  hint="Look at the form each equation is written in and compare it with the table of methods in this section."
 >}}
 substitution
 elimination
@@ -425,4 +438,4 @@ elimination
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.3: Solve Systems of Equations by Elimination](https://openstax.org/books/elementary-algebra-2e/pages/5-3-solve-systems-of-equations-by-elimination) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the seven-step worked example and the Choose-the-Method comparison as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and remaining end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the consistent/inconsistent Try Its into multiple-choice questions about the number of solutions, since a word answer like "no solution" can't be graded by the math checker; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.3: Solve Systems of Equations by Elimination](https://openstax.org/books/elementary-algebra-2e/pages/5-3-solve-systems-of-equations-by-elimination) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the seven-step worked example and the Choose-the-Method comparison as markdown tables; condensed the remaining worked examples into prose and display math, and omitted the worked example that adds $x+y=10$ and $x-y=12$ directly; corrected two misprints in the source's check of the $(-4,-5)$ example (its last line reads $-2y=-2$ for $-2=-2$, and its second check prints $3(-4)$ for $5(-4)$); omitted the Be Prepared quiz, Self Check checklist, media links, and remaining end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback — asking for just one of the two unknowns in five of them, and including turning the consistent/inconsistent Try Its into multiple-choice questions about the number of solutions, since a word answer like "no solution" can't be graded by the math checker; and adapted selected end-of-section exercises into the interactive Practice block.</small>

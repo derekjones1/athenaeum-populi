@@ -58,8 +58,9 @@ x-2y=6 \end{cases}$.
 Both equations are true, so $(4,-1)$ is the solution to the system.
 
 {{< fillin
-  question="Solve the system by substitution: $-2x + y = -11$ and $x + 3y = 9$."
+  question="Solve the system by substitution: $-2x + y = -11$ and $x + 3y = 9$. Enter the solution as an ordered pair $(x, y)$."
   answer="(6,1)"
+  answerForm="decimal"
   hint="Solve the first equation for y, then substitute that expression for y in the second equation."
 >}}
 
@@ -90,8 +91,9 @@ Check: let $x=-3$ and $y=2$. Then $-3+2\overset{?}{=}-1$, so $-1=-1\
 are true, so $(-3,2)$ is the solution to the system.
 
 {{< fillin
-  question="Solve the system by substitution: $x + y = 6$ and $y = 3x - 2$."
+  question="Solve the system by substitution: $x + y = 6$ and $y = 3x - 2$. Enter the solution as an ordered pair $(x, y)$."
   answer="(2,4)"
+  answerForm="decimal"
   hint="The second equation is already solved for y — substitute $3x - 2$ for y in the first equation."
 >}}
 
@@ -104,8 +106,8 @@ for one of the variables.
 We need to solve one equation for one variable. Solving the first equation
 for $y$ gives $y=-3x+5$. Substitute $-3x+5$ for $y$ in the second equation:
 $2x+4(-3x+5)=-10$, so $2x-12x+20=-10$, so $-10x=-30$, and $x=3$. Substitute
-$x=3$ into $y=-3x+5$ to find $y$: $y=-3(3)+5=-4$. The ordered pair is
-$(3,-4)$.
+$x=3$ into $3x+y=5$ to find $y$: $3(3)+y=5$, so $9+y=5$, and $y=-4$. The
+ordered pair is $(3,-4)$.
 
 Check: let $x=3$ and $y=-4$. Then $3(3)+(-4)\overset{?}{=}5$, so
 $9-4\overset{?}{=}5$, and $5=5\ \checkmark$; and
@@ -113,8 +115,9 @@ $2(3)+4(-4)\overset{?}{=}-10$, so $6-16\overset{?}{=}-10$, and
 $-10=-10\ \checkmark$. The solution is $(3,-4)$.
 
 {{< fillin
-  question="Solve the system by substitution: $4x + y = 2$ and $3x + 2y = -1$."
+  question="Solve the system by substitution: $4x + y = 2$ and $3x + 2y = -1$. Enter the solution as an ordered pair $(x, y)$."
   answer="(1,-2)"
+  answerForm="decimal"
   hint="Solve the first equation for y, then substitute that expression into the second equation."
 >}}
 
@@ -127,8 +130,8 @@ variable whose coefficient is $1$.
 We will solve the first equation for $x$ and then substitute the expression
 into the second equation. Solving for $x$ gives $x=2y-2$. Substitute
 $2y-2$ for $x$ in the second equation: $3(2y-2)+2y=34$, so $6y-6+2y=34$, so
-$8y=40$, and $y=5$. Substitute $y=5$ into $x=2y-2$ to find $x$: $x=2(5)-2=8$.
-The ordered pair is $(8,5)$.
+$8y=40$, and $y=5$. Substitute $y=5$ into $x-2y=-2$ to find $x$:
+$x-2(5)=-2$, so $x-10=-2$, and $x=8$. The ordered pair is $(8,5)$.
 
 Check: let $x=8$ and $y=5$. Then $8-2(5)\overset{?}{=}-2$, so
 $8-10\overset{?}{=}-2$, and $-2=-2\ \checkmark$; and
@@ -136,8 +139,9 @@ $3(8)+2(5)\overset{?}{=}34$, so $24+10\overset{?}{=}34$, and $34=34\
 \checkmark$. The solution is $(8,5)$.
 
 {{< fillin
-  question="Solve the system by substitution: $x - 5y = 13$ and $4x - 3y = 1$."
+  question="Solve the system by substitution: $x - 5y = 13$ and $4x - 3y = 1$. Enter the solution as an ordered pair $(x, y)$."
   answer="(-2,-3)"
+  answerForm="decimal"
   hint="Solve the first equation for x, since its coefficient is already 1."
 >}}
 
@@ -158,8 +162,9 @@ $1=1\ \checkmark$; and $1\overset{?}{=}-2(2)+5$, so $1\overset{?}{=}-4+5$,
 and $1=1\ \checkmark$. The solution is $(2,1)$.
 
 {{< fillin
-  question="Solve the system by substitution: $y = 3x - 16$ and $y = \tfrac{1}{3}x$."
+  question="Solve the system by substitution: $y = 3x - 16$ and $y = \tfrac{1}{3}x$. Enter the solution as an ordered pair $(x, y)$."
   answer="(6,2)"
+  answerForm="decimal"
   hint="Both equations are already solved for y — set the two expressions equal, clear the fraction, and solve for x."
 >}}
 
@@ -180,8 +185,9 @@ both original equations gives $4=4\ \checkmark$ and $8=8\ \checkmark$. The
 solution is $\left(\tfrac{5}{4},-\tfrac{1}{2}\right)$.
 
 {{< fillin
-  question="Solve the system by substitution: $x - 4y = -4$ and $-3x + 4y = 0$."
+  question="Solve the system by substitution: $x - 4y = -4$ and $-3x + 4y = 0$. Enter the solution as an ordered pair $(x, y)$."
   answer="(2,\frac{3}{2})"
+  answerForm="lowest-terms"
   answerDisplay="$(2, \tfrac{3}{2})$"
   hint="Solve the first equation for x, substitute into the second, and be careful with the negative signs."
 >}}
@@ -196,15 +202,15 @@ We need to solve one equation for one variable. Solving the first equation
 for $x$ gives $x=\tfrac{3}{4}y+\tfrac{3}{2}$. Substitute this expression
 into the second equation:
 $15y-20\left(\tfrac{3}{4}y+\tfrac{3}{2}\right)=-30$, so
-$15y-15y-30=-30$, so $-30=-30$.
+$15y-15y-30=-30$, so $0-30=-30$, so $0=0$.
 
-Since $-30=-30$ is a true statement, the system is **consistent**. The
+Since $0=0$ is a true statement, the system is **consistent**. The
 equations are **dependent**. The graphs of these two equations would give
 the same line. The system has infinitely many solutions.
 
 {{< multiplechoice
-  question="Solve the system by substitution: $2x - 3y = 12$ and $-12y + 8x = 48$. What kind of system is this?"
-  hint="Solve the first equation for x and substitute into the second. If the variable terms cancel out leaving a true numeric statement, the equations are dependent."
+  question="Solve the system by substitution: $2x - 3y = 12$ and $-12y + 8x = 48$. How many solutions does the system have?"
+  hint="Solve the first equation for x, substitute into the second, and simplify. Then read the result: a single value for the variable, a true numeric statement, or a false one."
   answer="infinitely many solutions"
 >}}
 infinitely many solutions
@@ -228,8 +234,8 @@ graphs of the two equations would be parallel lines. The system has no
 solution.
 
 {{< multiplechoice
-  question="Solve the system by substitution: $3x + 2y = 9$ and $y = -\tfrac{3}{2}x + 1$. What kind of system is this?"
-  hint="Substitute the expression for y into the first equation. If the variable terms cancel out leaving a false numeric statement, the system has no solution."
+  question="Solve the system by substitution: $3x + 2y = 9$ and $y = -\tfrac{3}{2}x + 1$. How many solutions does the system have?"
+  hint="Substitute the expression for y into the first equation and simplify. Then read the result: a single value for x, a true numeric statement, or a false one."
   answer="no solution"
 >}}
 infinitely many solutions
@@ -272,7 +278,8 @@ The numbers are $\tfrac{9}{2}$ and $-\tfrac{9}{2}$.
 {{< fillin
   question="The sum of two numbers is 10. One number is 4 less than the other. Find the numbers, entering the smaller number first, as an ordered pair (smaller, larger)."
   answer="(3,7)"
-  hint="Let n and m be the two numbers: $n + m = 10$ and $n = m - 4$. Substitute and solve for m first."
+  answerForm="decimal"
+  hint="Name the two numbers, write one equation for their sum and one for how they compare, then substitute the expression from the second equation into the first."
 >}}
 
 **Example.** The perimeter of a rectangle is $88$. The length is five more
@@ -292,7 +299,8 @@ The length is $31$ and the width is $13$.
 {{< fillin
   question="The perimeter of a rectangle is 40. The length is 4 more than the width. Find the length and width as an ordered pair (length, width)."
   answer="(12,8)"
-  hint="Let L be the length and W the width: $2L + 2W = 40$ and $L = W + 4$."
+  answerForm="decimal"
+  hint="Write one equation from the perimeter formula $P = 2L + 2W$ and one relating the length to the width, then substitute the second into the first."
 >}}
 
 **Example.** The measure of one of the small angles of a right triangle is
@@ -313,9 +321,10 @@ find $a$: $a=3(20)+10=70$.
 The measures of the small angles are $20^\circ$ and $70^\circ$.
 
 {{< fillin
-  question="The measure of one of the small angles of a right triangle is 2 more than 3 times the measure of the other small angle. Find the measures of both angles as an ordered pair (smaller angle, larger angle)."
+  question="The measure of one of the small angles of a right triangle is 2 more than 3 times the measure of the other small angle. Find the measures of both angles in degrees, and enter them without the degree sign as an ordered pair (smaller angle, larger angle)."
   answer="(22,68)"
-  hint="Let $a = 3b + 2$ and $a + b + 90 = 180$. Substitute and solve for b first."
+  answerForm="decimal"
+  hint="The two small angles and the right angle sum to $180$ degrees; write that equation and one for how the two small angles compare, then substitute."
 >}}
 
 **Example.** Heather has been offered two options for her salary as a
@@ -340,7 +349,8 @@ sessions.
 {{< fillin
   question="Geraldine has been offered positions by two insurance companies. The first pays a salary of \$12,000 plus a commission of \$100 for each policy sold. The second pays a salary of \$20,000 plus a commission of \$50 for each policy sold. How many policies would need to be sold to make the total pay the same?"
   answer="160"
-  hint="Let s = Geraldine's salary and n = the number of policies sold: $s = 12{,}000 + 100n$ and $s = 20{,}000 + 50n$."
+  answerForm="decimal"
+  hint="Write the total pay from each company as salary plus commission times the number of policies, then set the two expressions equal and solve."
 >}}
 
 ## Key terms
@@ -349,7 +359,7 @@ sessions.
 then replacing that variable with the resulting expression in the other
 equation so it becomes an equation in one variable. **consistent, dependent
 system** — a system whose equations, after substitution, reduce to a true
-numeric statement (like $-30=-30$); the two equations describe the same
+numeric statement (like $0=0$); the two equations describe the same
 line and the system has infinitely many solutions. **inconsistent system**
 — a system whose equations, after substitution, reduce to a false numeric
 statement (like $0=-10$); the two equations describe parallel lines and the
@@ -360,19 +370,21 @@ system has no solution.
 ### Solve a system of equations by substitution
 
 {{< fillin
-  question="Solve by substitution: $\begin{cases}2x+y=-4 \\ 3x-2y=-6\end{cases}$"
+  question="Solve by substitution: $\begin{cases}2x+y=-4 \\ 3x-2y=-6\end{cases}$ Enter the solution as an ordered pair $(x, y)$."
   answer="(-2,0)"
+  answerForm="decimal"
   hint="Solve the first equation for $y$, substitute that expression into the second equation, and then find the other coordinate."
 >}}
 
 {{< fillin
-  question="Solve by substitution: $\begin{cases}x-2y=-5 \\ 2x-3y=-4\end{cases}$"
+  question="Solve by substitution: $\begin{cases}x-2y=-5 \\ 2x-3y=-4\end{cases}$ Enter the solution as an ordered pair $(x, y)$."
   answer="(7,6)"
+  answerForm="decimal"
   hint="Solve the first equation for $x$, then substitute the resulting expression into the second equation."
 >}}
 
 {{< multiplechoice
-  question="Solve by substitution: $\begin{cases}y=-4x \\ 4x+y=1\end{cases}$"
+  question="Solve by substitution: $\begin{cases}y=-4x \\ 4x+y=1\end{cases}$ How many solutions does the system have?"
   answer="no solution"
   hint="Substitute $-4x$ for $y$ in the second equation and interpret the resulting statement."
 >}}
@@ -384,18 +396,20 @@ infinitely many solutions
 ### Solve applications of systems of equations by substitution
 
 {{< fillin
-  question="The sum of two numbers is 15. One number is 3 less than the other. Find the numbers, entering the smaller number first and the larger number second, separated by a comma."
-  answer="6,9"
-  hint="Let $n$ be the smaller number and $m$ the larger number; substitute $n=m-3$ into $n+m=15$."
+  question="The sum of two numbers is 15. One number is 3 less than the other. Find the numbers, entering them as an ordered pair (smaller, larger)."
+  answer="(6,9)"
+  answerForm="decimal"
+  hint="Name the two numbers, write one equation for their sum and one for how they compare, then substitute the expression from the second equation into the first."
 >}}
 
 {{< fillin
-  question="The perimeter of a rectangle is 60. The length is 10 more than the width. Find the length and width, entering the length first and the width second, separated by a comma."
-  answer="20,10"
+  question="The perimeter of a rectangle is 60. The length is 10 more than the width. Find the length and width, entering them as an ordered pair (length, width)."
+  answer="(20,10)"
+  answerForm="decimal"
   answerDisplay="length $20$, width $10$"
-  hint="Substitute $L=W+10$ into the perimeter equation $2L+2W=60$."
+  hint="Write one equation from the perimeter formula $P=2L+2W$ and one relating the length to the width, then substitute the second into the first."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.2: Solving Systems of Equations by Substitution](https://openstax.org/books/elementary-algebra-2e/pages/5-2-solving-systems-of-equations-by-substitution) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the first worked example's step-by-step breakdown as a markdown table and condensed the remaining worked examples into prose with inline checks; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the dependent/inconsistent-system Try Its into a multiple-choice classification, since the math checker cannot reliably grade a bare true/false numeric statement as an answer.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.2: Solving Systems of Equations by Substitution](https://openstax.org/books/elementary-algebra-2e/pages/5-2-solving-systems-of-equations-by-substitution) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the first worked example's step-by-step breakdown as a markdown table and condensed the remaining worked examples into prose with inline checks; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the dependent/inconsistent-system Try Its into a multiple-choice question on the number of solutions, since their answers ("infinitely many solutions," "no solution") are categories rather than numbers.</small>

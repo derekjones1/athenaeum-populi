@@ -88,17 +88,10 @@ and double their product:
 $$(x+5)^2 = x^2 + 2 \cdot x \cdot 5 + 5^2 = x^2 + 10x + 25$$
 
 {{< fillin
-  question="Multiply using the Binomial Squares Pattern: $(x + 9)^2$"
-  answer="x^2 + 18x + 81"
-  answerForm="expanded"
-  hint="Square the first term to get $x^2$, square the last term to get 81, and double their product for the middle term: $2 \cdot x \cdot 9$."
->}}
-
-{{< fillin
   question="Multiply using the Binomial Squares Pattern: $(y + 11)^2$"
   answer="y^2 + 22y + 121"
-  answerForm="expanded"
-  hint="Square y, square 11, and double the product $2 \cdot y \cdot 11$ for the middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square the first term, square the last term, and double the product of the two terms for the middle term."
 >}}
 
 **Example.** Multiply: $(y-3)^2$.
@@ -111,15 +104,15 @@ $$(y-3)^2 = y^2 - 2 \cdot y \cdot 3 + 3^2 = y^2 - 6y + 9$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(x - 9)^2$"
   answer="x^2 - 18x + 81"
-  answerForm="expanded"
-  hint="This is a difference, so the middle term is subtracted: $-2 \cdot x \cdot 9$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use the $(a-b)^2$ form of the pattern: square each term, and double their product for the middle term."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(p - 13)^2$"
   answer="p^2 - 26p + 169"
-  answerForm="expanded"
-  hint="Square p, square 13, and subtract twice their product for the middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = p$ and $b = 13$ in $(a-b)^2 = a^2 - 2ab + b^2$."
 >}}
 
 **Example.** Multiply: $(4x+6)^2$.
@@ -131,15 +124,15 @@ $$(4x+6)^2 = (4x)^2 + 2 \cdot 4x \cdot 6 + 6^2 = 16x^2 + 48x + 36$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(6x + 3)^2$"
   answer="36x^2 + 36x + 9"
-  answerForm="expanded"
-  hint="The first term is $(6x)^2 = 36x^2$. The middle term is $2 \cdot 6x \cdot 3$."
+  answerForm="expanded distributed no-like-terms"
+  hint="The first term is $6x$: square its coefficient and its variable. Then square the last term and double the product of the two terms."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(4x + 9)^2$"
   answer="16x^2 + 72x + 81"
-  answerForm="expanded"
-  hint="Square 4x to get $16x^2$, then double the product $2 \cdot 4x \cdot 9$ for the middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 4x$ and $b = 9$ in $(a+b)^2 = a^2 + 2ab + b^2$."
 >}}
 
 **Example.** Multiply: $(2x-3y)^2$.
@@ -151,15 +144,15 @@ $$(2x-3y)^2 = (2x)^2 - 2 \cdot 2x \cdot 3y + (3y)^2 = 4x^2 - 12xy + 9y^2$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(2c - d)^2$"
   answer="4c^2 - 4cd + d^2"
-  answerForm="expanded"
-  hint="Here $a = 2c$ and $b = d$. Square each term and subtract twice their product $2 \cdot 2c \cdot d$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 2c$ and $b = d$ in $(a-b)^2 = a^2 - 2ab + b^2$."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(4x - 5y)^2$"
   answer="16x^2 - 40xy + 25y^2"
-  answerForm="expanded"
-  hint="Square 4x and 5y, then subtract the middle term $2 \cdot 4x \cdot 5y$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Both terms carry a variable: square each whole term, coefficient included, and double their product for the middle term."
 >}}
 
 **Example.** Multiply: $\left(4u^3 + 1\right)^2$.
@@ -172,15 +165,15 @@ $$\left(4u^3 + 1\right)^2 = \left(4u^3\right)^2 + 2 \cdot 4u^3 \cdot 1 + 1^2 = 1
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(2x^2 + 1)^2$"
   answer="4x^4 + 4x^2 + 1"
-  answerForm="expanded"
-  hint="Square $2x^2$ to get 4x^4 (multiply exponents), then double the product $2 \cdot 2x^2 \cdot 1$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square $2x^2$ with the Product to a Power Property (square the coefficient, multiply the exponents), then square the last term and double the product."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(3y^3 + 2)^2$"
   answer="9y^6 + 12y^3 + 4"
-  answerForm="expanded"
-  hint="Square $3y^3$ to get $9y^6$, square 2 to get 4, and the middle term is $2 \cdot 3y^3 \cdot 2$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 3y^3$ and $b = 2$; square $3y^3$ with the Product to a Power Property."
 >}}
 
 ## Multiply Conjugates Using the Product of Conjugates Pattern
@@ -260,15 +253,15 @@ $$(x-8)(x+8) = x^2 - 8^2 = x^2 - 64$$
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(x - 5)(x + 5)$"
   answer="x^2 - 25"
-  answerForm="expanded"
-  hint="Square the first term x and square the last term 5, then write the difference of squares."
+  answerForm="expanded distributed no-like-terms"
+  hint="The binomials are conjugates: square the first term, square the last term, and write the difference of squares."
 >}}
 
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(w - 3)(w + 3)$"
   answer="w^2 - 9"
-  answerForm="expanded"
-  hint="Square w and square 3, then subtract: a difference of squares has no middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = w$ and $b = 3$ in $(a-b)(a+b) = a^2 - b^2$."
 >}}
 
 **Example.** Multiply: $(2x+5)(2x-5)$.
@@ -281,15 +274,15 @@ $$(2x+5)(2x-5) = (2x)^2 - 5^2 = 4x^2 - 25$$
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(6x + 5)(6x - 5)$"
   answer="36x^2 - 25"
-  answerForm="expanded"
-  hint="Square 6x to get $36x^2$ and square 5 to get 25."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square the whole first term, coefficient included, then square the last term and write the difference of squares."
 >}}
 
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(2x + 7)(2x - 7)$"
   answer="4x^2 - 49"
-  answerForm="expanded"
-  hint="Square 2x and square 7, then write the difference of squares."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 2x$ and $b = 7$ in $(a+b)(a-b) = a^2 - b^2$."
 >}}
 
 The binomials in the next example may look backwards — the variable is in
@@ -306,15 +299,15 @@ $$(3+5x)(3-5x) = 3^2 - (5x)^2 = 9 - 25x^2$$
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(7 + 4x)(7 - 4x)$"
   answer="49 - 16x^2"
-  answerForm="expanded"
-  hint="Square 7 to get 49 and square 4x to get $16x^2$, then write the difference."
+  answerForm="expanded distributed no-like-terms"
+  hint="The variable is in the last term, but the pattern is the same: square the first term, square the last term, and keep that order in the difference."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(9 - 2y)(9 + 2y)$"
   answer="81 - 4y^2"
-  answerForm="expanded"
-  hint="Square 9 to get 81 and square 2y to get $4y^2$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 9$ and $b = 2y$ in $(a-b)(a+b) = a^2 - b^2$."
 >}}
 
 Now we'll multiply conjugates that have two variables.
@@ -328,15 +321,15 @@ $$(5m-9n)(5m+9n) = (5m)^2 - (9n)^2 = 25m^2 - 81n^2$$
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(4p - 7q)(4p + 7q)$"
   answer="16p^2 - 49q^2"
-  answerForm="expanded"
-  hint="Square 4p to get $16p^2$ and square 7q to get $49q^2$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square each whole term, coefficient and variable together, and write the difference of squares."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(3x - y)(3x + y)$"
   answer="9x^2 - y^2"
-  answerForm="expanded"
-  hint="Square 3x to get $9x^2$ and square y to get $y^2$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 3x$ and $b = y$ in $(a-b)(a+b) = a^2 - b^2$."
 >}}
 
 **Example.** Find the product: $(cd-8)(cd+8)$.
@@ -348,15 +341,15 @@ $$(cd-8)(cd+8) = (cd)^2 - 8^2 = c^2d^2 - 64$$
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(xy - 6)(xy + 6)$"
   answer="x^2 y^2 - 36"
-  answerForm="expanded"
-  hint="Square xy to get $x^2 y^2$ and square 6 to get 36."
+  answerForm="expanded distributed no-like-terms"
+  hint="The first term is the product $xy$; squaring a product squares each factor."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(ab - 9)(ab + 9)$"
   answer="a^2 b^2 - 81"
-  answerForm="expanded"
-  hint="Square ab to get $a^2 b^2$ and square 9 to get 81."
+  answerForm="expanded distributed no-like-terms"
+  hint="Treat the product $ab$ as the first term; squaring a product squares each factor."
 >}}
 
 **Example.** Find the product: $\left(6u^2 - 11v^5\right)\left(6u^2 + 11v^5\right)$.
@@ -368,15 +361,15 @@ $$\left(6u^2 - 11v^5\right)\left(6u^2 + 11v^5\right) = \left(6u^2\right)^2 - \le
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(3x^2 - 4y^3)(3x^2 + 4y^3)$"
   answer="9x^4 - 16y^6"
-  answerForm="expanded"
-  hint="Square $3x^2$ to get $9x^4$ and square $4y^3$ to get 16y^6 (multiply exponents by 2)."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square each term with the Product to a Power Property: square the coefficient and multiply the exponent by 2."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(2m^2 - 5n^3)(2m^2 + 5n^3)$"
   answer="4m^4 - 25n^6"
-  answerForm="expanded"
-  hint="Square $2m^2$ to get $4m^4$ and square $5n^3$ to get $25n^6$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 2m^2$ and $b = 5n^3$ in $(a-b)(a+b) = a^2 - b^2$."
 >}}
 
 ## Recognize and Use the Appropriate Special Product Pattern
@@ -420,22 +413,22 @@ $$(5x-6)(6x+5) = 30x^2 + 25x - 36x - 30 = 30x^2 - 11x - 30$$
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9b - 2)(2b + 9)$"
   answer="18b^2 + 77b - 18"
-  answerForm="expanded"
-  hint="These binomials are neither identical nor conjugates, so use FOIL."
+  answerForm="expanded distributed no-like-terms"
+  hint="Compare the first terms and the last terms: identical binomials make a square, the same terms with one sum and one difference are conjugates, and anything else takes FOIL."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9p - 4)^2$"
   answer="81p^2 - 72p + 16"
-  answerForm="expanded"
-  hint="This is a binomial square: square 9p, square 4, and subtract twice their product $2 \cdot 9p \cdot 4$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Decide whether this is a binomial squared, a product of conjugates, or neither, then multiply with that pattern (or FOIL)."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(7y + 1)^2$"
   answer="49y^2 + 14y + 1"
-  answerForm="expanded"
-  hint="This is a binomial square: square 7y, square 1, and add twice their product $2 \cdot 7y \cdot 1$."
+  answerForm="expanded distributed no-like-terms"
+  hint="Match the product to a column of the comparison table above, then apply that pattern."
 >}}
 
 ## Key terms
@@ -454,45 +447,46 @@ Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(q + 12)^2$"
   answer="q^2 + 24q + 144"
-  answerForm="expanded"
-  hint="Square q, square 12, and double their product $2 \cdot q \cdot 12$ for the middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square the first term, square the last term, and double their product for the middle term."
 >}}
 
 {{< fillin
-  question="Multiply using the Binomial Squares Pattern: $(y - 6)^2$"
-  answer="y^2 - 12y + 36"
-  answerForm="expanded"
-  hint="This is a difference, so subtract twice the product $2 \cdot y \cdot 6$ for the middle term."
+  question="Multiply using the Binomial Squares Pattern: $\left(\tfrac{1}{8}x - \tfrac{1}{9}y\right)^2$"
+  answer="\frac{1}{64}x^2 - \frac{1}{36}xy + \frac{1}{81}y^2"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$\tfrac{1}{64}x^2 - \tfrac{1}{36}xy + \tfrac{1}{81}y^2$"
+  hint="Take $a = \tfrac{1}{8}x$ and $b = \tfrac{1}{9}y$ in $(a-b)^2 = a^2 - 2ab + b^2$; multiply the fractions and simplify each coefficient."
 >}}
 
 {{< fillin
-  question="Multiply using the Binomial Squares Pattern: $(2y - 3z)^2$"
-  answer="4y^2 - 12yz + 9z^2"
-  answerForm="expanded"
-  hint="Square 2y and 3z, then subtract twice their product $2 \cdot 2y \cdot 3z$ for the middle term."
+  question="Multiply using the Binomial Squares Pattern: $(8p^3 - 3)^2$"
+  answer="64p^6 - 48p^3 + 9"
+  answerForm="expanded distributed no-like-terms"
+  hint="Square $8p^3$ with the Product to a Power Property, square the last term, and double the product of the two terms for the middle term."
 >}}
 
 ### Multiply conjugates using the Product of Conjugates Pattern
 
 {{< fillin
-  question="Multiply using the Product of Conjugates Pattern: $(c - 5)(c + 5)$"
-  answer="c^2 - 25"
-  answerForm="expanded"
-  hint="Square c and square 5, then write the difference of squares."
+  question="Multiply using the Product of Conjugates Pattern: $(13 - q)(13 + q)$"
+  answer="169 - q^2"
+  answerForm="expanded distributed no-like-terms"
+  hint="The variable is the last term here: square each term and write the difference of squares in the same order."
 >}}
 
 {{< fillin
-  question="Multiply using the Product of Conjugates Pattern: $(13 - q)(13 + q)$"
-  answer="169 - q^2"
-  answerForm="expanded"
-  hint="Square 13 to get 169 and square q to get $q^2$, then write the difference."
+  question="Multiply using the Product of Conjugates Pattern: $(7w + 10x)(7w - 10x)$"
+  answer="49w^2 - 100x^2"
+  answerForm="expanded distributed no-like-terms"
+  hint="Take $a = 7w$ and $b = 10x$ in $(a+b)(a-b) = a^2 - b^2$."
 >}}
 
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(6m^3 - 4n^5)(6m^3 + 4n^5)$"
   answer="36m^6 - 16n^{10}"
-  answerForm="expanded"
-  hint="Square $6m^3$ to get $36m^6$ and square $4n^5$ to get $16n^{10}$ (multiply each exponent by 2)."
+  answerForm="expanded distributed no-like-terms"
+  hint="Square each term with the Product to a Power Property: square the coefficient and multiply the exponent by 2."
 >}}
 
 ### Recognize and use the appropriate special product pattern
@@ -510,8 +504,8 @@ Binomial Squares Pattern
 {{< fillin
   question="Multiply: $(2r + 12)^2$"
   answer="4r^2 + 48r + 144"
-  answerForm="expanded"
-  hint="This is a binomial square: square 2r, square 12, and double their product $2 \cdot 2r \cdot 12$ for the middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use the pattern you chose above, taking the whole term $2r$ as the first term."
 >}}
 
 {{< multiplechoice
@@ -527,8 +521,8 @@ Product of Conjugates Pattern
 {{< fillin
   question="Multiply: $(3p + 8)(3p - 8)$"
   answer="9p^2 - 64"
-  answerForm="expanded"
-  hint="This is a product of conjugates: square 3p, square 8, and write the difference of squares."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use the pattern you chose above, and check the product by multiplying with FOIL."
 >}}
 
 {{< multiplechoice
@@ -544,8 +538,8 @@ Product of Conjugates Pattern
 {{< fillin
   question="Multiply: $(7a + b)(a - 7b)$"
   answer="7a^2 - 48ab - 7b^2"
-  answerForm="expanded"
-  hint="Neither pattern fits, so use FOIL: multiply the first, outer, inner, and last terms, then combine like terms."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use the method you chose above, and combine any like terms."
 >}}
 
 {{< multiplechoice
@@ -561,10 +555,10 @@ Product of Conjugates Pattern
 {{< fillin
   question="Multiply: $(k - 6)^2$"
   answer="k^2 - 12k + 36"
-  answerForm="expanded"
-  hint="This is a binomial square: square k, square 6, and subtract twice their product $2 \cdot k \cdot 6$ for the middle term."
+  answerForm="expanded distributed no-like-terms"
+  hint="Use the pattern you chose above, keeping the sign of each term."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.4: Special Products](https://openstax.org/books/elementary-algebra-2e/pages/6-4-special-products) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the pattern-derivation walkthroughs and worked-example step tables as typeset display equations and a comparison table; kept the Binomial Squares, Conjugate Pair, and Product of Conjugates patterns as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.4: Special Products](https://openstax.org/books/elementary-algebra-2e/pages/6-4-special-products) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the pattern-derivation walkthroughs and worked-example step tables as typeset display equations and a comparison table; kept the Binomial Squares, Conjugate Pair, and Product of Conjugates patterns as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted selected practice problems ("Try Its") into interactive exercises with instant feedback.</small>

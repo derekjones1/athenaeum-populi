@@ -105,7 +105,8 @@ twenty-one nickels.
 {{< fillin
   question="Michaela has \$2.05 in dimes and nickels in her change purse. She has seven more dimes than nickels. How many nickels does she have?"
   answer="9"
-  hint="Let n be the number of nickels, so the number of dimes is $n + 7$. Multiply each count by its coin value, add the two total values, and set the sum equal to 2.05."
+  answerForm="decimal"
+  hint="Let $n$ be the number of nickels and write the number of dimes in terms of $n$. Then the total value of the nickels plus the total value of the dimes equals the total value in the purse."
 >}}
 
 {{< callout type="info" >}}
@@ -161,7 +162,8 @@ worth $18(0.01) = 0.18$ dollars; the total is $2.25 + 0.18 = 2.43$ dollars.
 {{< fillin
   question="Sumanta has \$4.20 in nickels and dimes in her piggy bank. She has twice as many nickels as dimes. How many dimes does she have?"
   answer="21"
-  hint="Let d be the number of dimes, so the number of nickels is 2d. Multiply each count by its coin value, add the total values, and set the sum equal to 4.20."
+  answerForm="decimal"
+  hint="Let $d$ be the number of dimes and write the number of nickels in terms of $d$. The value of the dimes plus the value of the nickels equals the total in the piggy bank."
 >}}
 
 **Example.** Danny has \$2.14 worth of pennies and nickels in his piggy
@@ -194,7 +196,8 @@ pennies and 42 nickels.
 {{< fillin
   question="Elane has \$7.00 total in dimes and nickels in her coin jar. The number of dimes that Elane has is seven less than three times the number of nickels. How many nickels does Elane have?"
   answer="22"
-  hint="Let n be the number of nickels, so the number of dimes is $3n - 7$. Multiply each count by its coin value, add the total values, and set the sum equal to 7.00."
+  answerForm="decimal"
+  hint="Name the number of nickels with a variable, since the dimes are described in terms of the nickels, and write the number of dimes in terms of it. The value of the nickels plus the value of the dimes equals the total in the jar."
 >}}
 
 ## Solve ticket and stamp word problems
@@ -238,7 +241,8 @@ adult tickets.
 {{< fillin
   question="The first day of a water polo tournament the total value of tickets sold was \$17,610. One-day passes sold for \$20 and tournament passes sold for \$30. The number of tournament passes sold was 37 more than the number of day passes sold. How many day passes were sold?"
   answer="330"
-  hint="Let d be the number of day passes, so the number of tournament passes is $d + 37$. Multiply each count by its price, add the totals, and set the sum equal to 17,610."
+  answerForm="decimal"
+  hint="Let $d$ be the number of day passes and write the number of tournament passes in terms of $d$. The receipts from each kind of pass add up to the day's total."
 >}}
 
 Sometimes we know the total number of tickets and need to work out how the
@@ -264,7 +268,8 @@ $$
 \begin{array}{lrcl}
 & 3c + 5(810 - c) &=& 2{,}820 \\[4pt]
 \text{Distribute.} & 3c + 4{,}050 - 5c &=& 2{,}820 \\[4pt]
-\text{Combine like terms.} & -2c &=& -1{,}230 \\[4pt]
+\text{Combine like terms.} & -2c + 4{,}050 &=& 2{,}820 \\[4pt]
+\text{Subtract 4,050.} & -2c &=& -1{,}230 \\[4pt]
 \text{Divide.} & c &=& 615
 \end{array}
 $$
@@ -279,7 +284,8 @@ $1{,}845 + 975 = 2{,}820$ dollars. ✓ Galen sold 615 children's tickets and
 {{< fillin
   question="During her shift at the museum ticket booth, Leah sold 115 tickets for a total of \$1,163. Adult tickets cost \$12 and student tickets cost \$5. How many adult tickets did Leah sell?"
   answer="84"
-  hint="Let a be the number of adult tickets, so the number of student tickets is $115 - a$. Multiply each count by its price, add the totals, and set the sum equal to 1,163."
+  answerForm="decimal"
+  hint="Let $a$ be the number of adult tickets; since the total number of tickets is known, write the number of student tickets in terms of $a$. The adult receipts plus the student receipts equal the total collected."
 >}}
 
 **Example.** Monica paid \$8.36 for stamps. The number of 41-cent stamps
@@ -315,7 +321,8 @@ eight two-cent stamps and 20 forty-one-cent stamps.
 {{< fillin
   question="Eric paid \$13.36 for stamps. The number of 41-cent stamps was eight more than twice the number of two-cent stamps. How many two-cent stamps did Eric buy?"
   answer="12"
-  hint="Let x be the number of two-cent stamps, so the number of 41-cent stamps is $2x + 8$. Multiply each count by its value, add the totals, and set the sum equal to 13.36."
+  answerForm="decimal"
+  hint="Let $x$ be the number of two-cent stamps and write the number of 41-cent stamps in terms of $x$. The value of each kind of stamp adds up to what Eric paid."
 >}}
 
 ## Solve mixture word problems
@@ -365,13 +372,15 @@ Henning mixed two pounds of raisins with eight pounds of nuts.
 {{< fillin
   question="Orlando is mixing nuts and cereal squares to make a party mix. Nuts sell for \$7 a pound and cereal squares sell for \$4 a pound. Orlando wants to make 30 pounds of party mix at a cost of \$6.50 a pound. How many pounds of nuts should he use?"
   answer="25"
-  hint="Let x be the pounds of nuts, so the pounds of cereal squares is $30 - x$. Set the value of the nuts plus the value of the cereal squares equal to 30(6.50)."
+  answerForm="decimal"
+  hint="Let $x$ be the pounds of nuts and write the pounds of cereal squares in terms of $x$, using the total weight. The value of the nuts plus the value of the cereal squares equals the value of the party mix."
 >}}
 
 {{< fillin
   question="Becca wants to mix fruit juice and soda to make a punch. She can buy fruit juice for \$3 a gallon and soda for \$4 a gallon. If she wants to make 28 gallons of punch at a cost of \$3.25 a gallon, how many gallons of soda should she buy?"
   answer="7"
-  hint="Let x be the gallons of soda, so the gallons of fruit juice is $28 - x$. Set the value of the fruit juice plus the value of the soda equal to 28(3.25)."
+  answerForm="decimal"
+  hint="Let $x$ be the gallons of soda and write the gallons of fruit juice in terms of $x$, using the total amount of punch. The cost of the juice plus the cost of the soda equals the cost of the punch."
 >}}
 
 We can also use the mixture model to solve investment problems using
@@ -418,15 +427,19 @@ $0.045(20{,}000) = 900$. ✓ Stacey should invest \$5,000 in the account
 that earns 3% and \$15,000 in the account that earns 5%.
 
 {{< fillin
-  question="Remy has \$14,000 to invest in two mutual funds. One fund pays interest at 4% per year and the other fund pays interest at 7% per year. How much should she invest in the fund that pays 4% if she wants to earn 6.1% interest on the total amount?"
+  question="Remy has \$14,000 to invest in two mutual funds. One fund pays interest at 4% per year and the other fund pays interest at 7% per year. How much should she invest in the fund that pays 4% if she wants to earn 6.1% interest on the total amount? Enter the amount in dollars."
   answer="4200"
-  hint="Let x be the amount invested at 4%, so $14{,}000 - x$ is invested at 7%. Set the interest from both accounts equal to 0.061$(14,000)$."
+  answerForm="decimal"
+  answerDisplay="\$4,200"
+  hint="Let $x$ be the amount invested at 4% and write the amount at 7% in terms of $x$, using the total. The interest from each fund adds up to the interest on the whole amount at 6.1%."
 >}}
 
 {{< fillin
-  question="Marco has \$8,000 to save for his daughter's college education. He wants to divide it between one account that pays 3.2% interest per year and another account that pays 8% interest per year. How much should he invest in the account that pays 8% if he wants the interest on the total investment to be 6.5%?"
+  question="Marco has \$8,000 to save for his daughter's college education. He wants to divide it between one account that pays 3.2% interest per year and another account that pays 8% interest per year. How much should he invest in the account that pays 8% if he wants the interest on the total investment to be 6.5%? Enter the amount in dollars."
   answer="5500"
-  hint="Let x be the amount invested at 3.2%, so $8{,}000 - x$ is invested at 8%. Set the interest from both accounts equal to 0.065$(8,000)$, then solve for the amount at 8%."
+  answerForm="decimal"
+  answerDisplay="\$5,500"
+  hint="Let $x$ be the amount invested at 3.2% and write the amount at 8% in terms of $x$, using the total. The interest from the two accounts adds up to the interest on the whole amount at 6.5%; answer with the amount at 8%."
 >}}
 
 ## Key terms
@@ -447,15 +460,17 @@ interest rate and the "total value" is the interest earned.
 {{< fillin
   question="Jaime has \$2.60 in dimes and nickels. The number of dimes is 14 more than the number of nickels. How many of each coin does he have? Enter the number of nickels and the number of dimes, separated by a comma."
   answer="8,22"
+  answerForm="decimal"
   answerDisplay="8 nickels, 22 dimes"
-  hint="Let $n$ be the number of nickels, so $n + 14$ is the number of dimes. Add the values with $0.05n + 0.10(n + 14) = 2.60$."
+  hint="Name the number of nickels with a variable and write the number of dimes in terms of it. The total value of the nickels plus the total value of the dimes equals the total value."
 >}}
 
 {{< fillin
   question="Ngo has a collection of dimes and quarters with a total value of \$3.50. The number of dimes is seven more than the number of quarters. How many of each coin does he have? Enter the number of dimes and the number of quarters, separated by a comma."
   answer="15,8"
+  answerForm="decimal"
   answerDisplay="15 dimes, 8 quarters"
-  hint="Let $q$ be the number of quarters, so $q + 7$ is the number of dimes. Add the values with $0.10(q + 7) + 0.25q = 3.50$."
+  hint="Let $q$ be the number of quarters and write the number of dimes in terms of $q$. Add the value of each kind of coin and set the sum equal to the total value of the collection."
 >}}
 
 ### Solve ticket and stamp word problems
@@ -463,56 +478,63 @@ interest rate and the "total value" is the interest earned.
 {{< fillin
   question="The school play sold \$550 in tickets one night. The number of \$8 adult tickets was 10 less than twice the number of \$5 child tickets. How many of each ticket were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
   answer="30,50"
+  answerForm="decimal"
   answerDisplay="30 child tickets, 50 adult tickets"
-  hint="Let $c$ be the number of child tickets, so $2c - 10$ is the number of adult tickets. Add the receipts with $5c + 8(2c - 10) = 550$."
+  hint="Let $c$ be the number of child tickets and write the number of adult tickets in terms of $c$. The child-ticket receipts plus the adult-ticket receipts equal the night's total."
 >}}
 
 {{< fillin
   question="The movie theater took in \$1,220 one Monday night. The number of \$7 child tickets was ten more than twice the number of \$9 adult tickets. How many of each were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
   answer="110,50"
+  answerForm="decimal"
   answerDisplay="110 child tickets, 50 adult tickets"
-  hint="Let $a$ be the number of adult tickets, so $2a + 10$ is the number of child tickets. Add the receipts with $7(2a + 10) + 9a = 1{,}220$."
+  hint="Name the number of adult tickets first, since the child tickets are described in terms of it, and write the number of child tickets in terms of that variable. The receipts from each kind of ticket add up to the night's total."
 >}}
 
 ### Solve mixture word problems
 
 {{< fillin
-  question="Kaapo is mixing Kona beans and Maui beans to make 25 pounds of coffee blend. Kona beans cost Kaapo \$15 per pound and Maui beans cost \$24 per pound. How many pounds of each coffee bean should Kaapo use for his blend to cost him \$17.70 per pound? Enter the pounds of Maui beans and the pounds of Kona beans, separated by a comma."
+  question="Kaapo is mixing Kona beans and Maui beans to make 25 pounds of coffee blend. Kona beans cost Kaapo \$15 per pound and Maui beans cost \$24 per pound. How many pounds of each coffee bean should Kaapo use for his blend to cost him \$17.70 per pound? Enter the pounds of Maui beans and the pounds of Kona beans as decimals, separated by a comma."
   answer="7.5,17.5"
+  answerForm="decimal"
   answerDisplay="7.5 pounds of Maui beans, 17.5 pounds of Kona beans"
-  hint="Let $m$ be the pounds of Maui beans, so $25 - m$ is the pounds of Kona beans. Set the ingredient cost equal to the blend cost with $24m + 15(25 - m) = 17.70(25)$."
+  hint="Let $m$ be the pounds of Maui beans and write the pounds of Kona beans in terms of $m$, using the total weight. The cost of each kind of bean adds up to the cost of the whole blend."
 >}}
 
 {{< fillin
   question="Carmen wants to tile the floor of his house. He will need 1,000 square feet of tile. He will do most of the floor with a tile that costs \$1.50 per square foot, but also wants to use an accent tile that costs \$9.00 per square foot. If he wants the overall cost to be \$3 per square foot, how many square feet of the \$1.50 tile should he plan to use?"
   answer="800"
+  answerForm="decimal"
   answerDisplay="800 square feet at \$1.50"
-  hint="Let $a$ be the square feet of accent tile, so $1{,}000 - a$ is the square feet of the other tile. Set the tile cost equal to the overall cost with $9a + 1.50(1{,}000 - a) = 3(1{,}000)$."
+  hint="Let $x$ be the square feet of the \$1.50 tile and write the square feet of accent tile in terms of $x$, using the total area. The cost of each tile adds up to the cost of the whole floor at the overall rate."
 >}}
 
 {{< fillin
-  question="Carmen wants to tile the floor of his house. He will need 1,000 square feet of tile. He will do most of the floor with a tile that costs \$1.50 per square foot, but also wants to use an accent tile that costs \$9.00 per square foot. If he wants the overall cost to be \$3 per square foot, how many square feet of the \$9.00 accent tile should he plan to use?"
-  answer="200"
-  answerDisplay="200 square feet at \$9.00"
-  hint="Subtract the square feet of the \$1.50 tile from the 1,000-square-foot total, or solve the same value equation for the accent-tile amount."
+  question="Lauren is making 15 liters of mimosas for a brunch banquet. Orange juice costs her \$1.50 per liter and champagne costs her \$12 per liter. How many liters of orange juice and how many liters of champagne should she use for the mimosas to cost Lauren \$5 per liter? Enter the liters of orange juice and the liters of champagne, separated by a comma."
+  answer="10,5"
+  answerForm="decimal"
+  answerDisplay="10 liters of orange juice, 5 liters of champagne"
+  hint="Let $j$ be the liters of orange juice and write the liters of champagne in terms of $j$, using the total volume. The cost of the orange juice plus the cost of the champagne equals the cost of the mimosas."
 >}}
 
 ### Use the mixture model to solve investment problems using simple interest
 
 {{< fillin
-  question="Vartan was paid \$25,000 for a cell phone app that he wrote and wants to invest it to save for his son’s education. He wants to put some of the money into a bond that pays 4% annual interest and the rest into stocks that pay 9% annual interest. If he wants to earn 7.4% annual interest on the total amount, how much money should he invest in each account? Enter the dollars invested at 4% and the dollars invested at 9%, separated by a comma."
+  question="Vartan was paid \$25,000 for a cell phone app that he wrote and wants to invest it to save for his son’s education. He wants to put some of the money into a bond that pays 4% annual interest and the rest into stocks that pay 9% annual interest. If he wants to earn 7.4% annual interest on the total amount, how much money should he invest in each account? Enter the dollars invested at 4% and the dollars invested at 9%, without dollar signs, separated by a comma."
   answer="8000,17000"
+  answerForm="decimal"
   answerDisplay="\$8,000 at 4%, \$17,000 at 9%"
-  hint="Let $b$ be the amount invested at 4%, so $25{,}000 - b$ is invested at 9%. Set the two accounts’ interest equal to the target interest with $0.04b + 0.09(25{,}000 - b) = 0.074(25{,}000)$."
+  hint="Let $b$ be the amount invested at 4% and write the amount in stocks in terms of $b$, using the total. The interest from the bond plus the interest from the stocks equals the interest on the whole amount at the target rate."
 >}}
 
 {{< fillin
-  question="Stephanie inherited \$40,000. She wants to put some of the money in a certificate of deposit that pays 2.1% interest per year and the rest in a mutual fund account that pays 6.5% per year. How much should she invest in each account if she wants to earn 5.4% interest per year on the total amount? Enter the dollars invested in the certificate of deposit and the dollars invested in the mutual fund, separated by a comma."
+  question="Stephanie inherited \$40,000. She wants to put some of the money in a certificate of deposit that pays 2.1% interest per year and the rest in a mutual fund account that pays 6.5% per year. How much should she invest in each account if she wants to earn 5.4% interest per year on the total amount? Enter the dollars invested in the certificate of deposit and the dollars invested in the mutual fund, without dollar signs, separated by a comma."
   answer="10000,30000"
+  answerForm="decimal"
   answerDisplay="\$10,000 in the certificate of deposit, \$30,000 in the mutual fund"
-  hint="Let $c$ be the amount invested in the certificate of deposit, so $40{,}000 - c$ is invested in the mutual fund. Set the two accounts’ interest equal to the target interest with $0.021c + 0.065(40{,}000 - c) = 0.054(40{,}000)$."
+  hint="Let $c$ be the amount in the certificate of deposit and write the amount in the mutual fund in terms of $c$, using the total. The interest from each account adds up to the interest on the whole inheritance at the target rate."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.3: Solve Mixture Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-3-solve-mixture-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/stamp/mixture/investment tables as markdown tables; omitted the Manipulative Mathematics callout, the ticket-relationship summary table's illustrative rows (kept as prose), and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating list answers in an explicit response order and splitting one two-quantity response into adjacent components.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.3: Solve Mixture Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-3-solve-mixture-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/stamp/mixture/investment tables as markdown tables; omitted the Be Prepared quiz, the coin photograph, the Manipulative Mathematics callout, the ticket-relationship summary table's illustrative rows (kept as prose), the Everyday Math and Writing Exercises, and the Self Check checklist; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, each asking for one of the two quantities; adapted selected end-of-section exercises into the interactive Practice block, restating list answers in an explicit response order, asking for one quantity where the two-number answer would read as a single grouped number, and correcting a typo ("in making") in one exercise; and named the unit to enter in the investment questions.</small>

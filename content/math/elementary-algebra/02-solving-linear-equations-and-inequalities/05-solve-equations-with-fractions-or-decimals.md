@@ -66,14 +66,16 @@ we already knew how to solve! We then used the General Strategy for Solving
 Linear Equations.
 
 {{< fillin
-  question="Solve: $\tfrac{1}{4} x + \tfrac{1}{2} = \tfrac{5}{8}$."
+  question="Solve: $\tfrac{1}{4} x + \tfrac{1}{2} = \tfrac{5}{8}$. Enter the solution as a fraction."
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   hint="Find the LCD of all the fractions, then multiply both sides of the equation by it to clear the fractions before solving."
 >}}
 
 {{< fillin
-  question="Solve: $\tfrac{1}{8} x + \tfrac{1}{2} = \tfrac{1}{4}$."
-  answer="-2"
+  question="Solve: $\tfrac{5}{6}y - \tfrac{1}{3} = -\tfrac{7}{6}$."
+  answer="-1"
+  answerForm="decimal"
   hint="Find the LCD of all the fractions, then multiply both sides of the equation by it to clear the fractions before solving."
 >}}
 
@@ -100,12 +102,14 @@ Check by substituting $v = 40$ into the original equation: $6 = \tfrac{1}{2}(40)
 {{< fillin
   question="Solve: $7 = \tfrac{1}{2} x + \tfrac{3}{4} x - \tfrac{2}{3} x$."
   answer="12"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD of $\tfrac{1}{2}$, $\tfrac{3}{4}$, and $\tfrac{2}{3}$ to clear every fraction at once, then combine like terms."
 >}}
 
 {{< fillin
   question="Solve: $-1 = \tfrac{1}{2} u + \tfrac{1}{4} u - \tfrac{2}{3} u$."
   answer="-12"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD of $\tfrac{1}{2}$, $\tfrac{1}{4}$, and $\tfrac{2}{3}$ to clear every fraction at once, then combine like terms."
 >}}
 
@@ -133,12 +137,14 @@ $$
 {{< fillin
   question="Solve: $x + \tfrac{1}{3} = \tfrac{1}{6} x - \tfrac{1}{2}$."
   answer="-1"
+  answerForm="decimal"
   hint="Clear the fractions first by multiplying both sides by the LCD, then collect the variable terms on one side."
 >}}
 
 {{< fillin
   question="Solve: $c + \tfrac{3}{4} = \tfrac{1}{2} c - \tfrac{1}{4}$."
   answer="-2"
+  answerForm="decimal"
   hint="Clear the fractions first by multiplying both sides by the LCD, then collect the variable terms on one side."
 >}}
 
@@ -162,12 +168,14 @@ $$
 {{< fillin
   question="Solve: $-11 = \tfrac{1}{2} (6p + 2)$."
   answer="-4"
+  answerForm="decimal"
   hint="Distribute the fraction across the parentheses first — this clears the fraction immediately."
 >}}
 
 {{< fillin
   question="Solve: $8 = \tfrac{1}{3} (9q + 6)$."
   answer="2"
+  answerForm="decimal"
   hint="Distribute the fraction across the parentheses first — this clears the fraction immediately."
 >}}
 
@@ -193,12 +201,14 @@ $$
 {{< fillin
   question="Solve: $\tfrac{1}{5} (n + 3) = \tfrac{1}{4} (n + 2)$."
   answer="2"
+  answerForm="decimal"
   hint="Distribute both sides first, then clear the remaining fractions by multiplying by the LCD."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{1}{2} (m - 3) = \tfrac{1}{4} (m - 7)$."
   answer="-1"
+  answerForm="decimal"
   hint="Distribute both sides first, then clear the remaining fractions by multiplying by the LCD."
 >}}
 
@@ -223,12 +233,14 @@ $$
 {{< fillin
   question="Solve: $\tfrac{4y - 7}{3} = \tfrac{y}{6}$."
   answer="2"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, 6, treating the whole numerator as if it were in parentheses."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{-2z - 5}{4} = \tfrac{z}{8}$."
   answer="-2"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, 8, treating the whole numerator as if it were in parentheses."
 >}}
 
@@ -250,12 +262,14 @@ $$
 {{< fillin
   question="Solve: $\tfrac{b}{10} + 2 = \tfrac{b}{4} + 5$."
   answer="-20"
+  answerForm="decimal"
   hint="Multiply every term by the LCD to clear all the fractions at once before collecting terms."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{c}{6} + 3 = \tfrac{c}{3} + 4$."
   answer="-6"
+  answerForm="decimal"
   hint="Multiply every term by the LCD to clear all the fractions at once before collecting terms."
 >}}
 
@@ -281,12 +295,14 @@ $$
 {{< fillin
   question="Solve: $\tfrac{3r + 5}{6} + 1 = \tfrac{4r + 3}{3}$."
   answer="1"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, treating each numerator as if it were in parentheses when you distribute."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{2s + 3}{2} + 1 = \tfrac{3s + 2}{4}$."
   answer="-8"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, treating each numerator as if it were in parentheses when you distribute."
 >}}
 
@@ -326,12 +342,14 @@ $0.25(8) - 1.5 = 2.00 - 1.5 = 0.50$. Both sides equal $0.50$. ✓
 {{< fillin
   question="Solve: $0.14h + 0.12 = 0.35h - 2.4$."
   answer="12"
+  answerForm="decimal"
   hint="Multiply both sides by 100 to clear every decimal at once, then solve as usual."
 >}}
 
 {{< fillin
   question="Solve: $0.65k - 0.1 = 0.4k - 0.35$."
   answer="-1"
+  answerForm="decimal"
   hint="Multiply both sides by 100 to clear every decimal at once, then solve as usual."
 >}}
 
@@ -360,12 +378,14 @@ Check this yourself by substituting $x = 9$ into the original equation.
 {{< fillin
   question="Solve: $0.25n + 0.05(n + 5) = 2.95$."
   answer="9"
+  answerForm="decimal"
   hint="Distribute the decimal across the parentheses and combine like terms first, then clear the decimals by multiplying by 100."
 >}}
 
 {{< fillin
   question="Solve: $0.10d + 0.05(d - 5) = 2.15$."
   answer="16"
+  answerForm="decimal"
   hint="Distribute the decimal across the parentheses and combine like terms first, then clear the decimals by multiplying by 100."
 >}}
 
@@ -384,18 +404,21 @@ of ten so the resulting equivalent equation has no decimals.
 {{< fillin
   question="Solve: $\tfrac{3}{4}x - \tfrac{1}{2} = \tfrac{1}{4}$."
   answer="1"
+  answerForm="decimal"
   hint="Multiply every term by the LCD, $4$, to clear the fractions, then isolate $x$."
 >}}
 
 {{< fillin
   question="Solve: $x + \tfrac{3}{4} = \tfrac{1}{2}x - \tfrac{5}{4}$."
   answer="-4"
+  answerForm="decimal"
   hint="Multiply every term by the LCD, $4$, then collect the variable terms on one side and the constants on the other."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{4m + 2}{6} = \tfrac{m}{3}$."
   answer="-1"
+  answerForm="decimal"
   hint="Multiply both sides by the LCD, $6$, treating $4m + 2$ as one grouped numerator."
 >}}
 
@@ -404,15 +427,17 @@ of ten so the resulting equivalent equation has no decimals.
 {{< fillin
   question="Solve: $0.48x + 1.56 = 0.58x - 0.64$."
   answer="22"
+  answerForm="decimal"
   hint="Multiply every term by $100$ to clear the decimals, then collect variables and constants on opposite sides."
 >}}
 
 {{< fillin
   question="Solve: $0.05n + 0.10(n + 7) = 3.55$."
   answer="19"
+  answerForm="decimal"
   hint="Distribute $0.10$ first, combine the variable terms, and then isolate $n$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.5: Solve Equations with Fractions or Decimals](https://openstax.org/books/elementary-algebra-2e/pages/2-5-solve-equations-with-fractions-or-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked-example step tables into annotated derivation displays; omitted the Be Prepared quiz, media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.5: Solve Equations with Fractions or Decimals](https://openstax.org/books/elementary-algebra-2e/pages/2-5-solve-equations-with-fractions-or-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked-example step tables into annotated derivation displays, keeping the check as a sentence after three of them; omitted the Be Prepared quiz, the Key Concepts list (it repeats the strategy callout), the Everyday Math and Writing Exercises, and the Self Check checklist; added a Key terms list (the module has no glossary); converted the practice problems ("Try Its") into interactive exercises with instant feedback, replacing the Try It that re-solves the opening equation $\tfrac{1}{8}x+\tfrac{1}{2}=\tfrac{1}{4}$ (its solution is worked in the first paragraph) with the end-of-section exercise $\tfrac{5}{6}y-\tfrac{1}{3}=-\tfrac{7}{6}$; and adapted selected end-of-section exercises into an interactive Practice block.</small>

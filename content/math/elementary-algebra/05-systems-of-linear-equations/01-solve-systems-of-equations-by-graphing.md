@@ -85,17 +85,23 @@ $$
 The ordered pair makes both equations true, so $(-4, -3)$ *is* a solution
 to the system.
 
-{{< fillin
-  question="For the system $\{3x + y = 0,\ x + 2y = -5\}$, substitute $x = 1$ and $y = -3$ into $x + 2y$ and simplify."
-  answer="-5"
-  hint="Multiply -3 by 2 first, then add x."
+{{< multiplechoice
+  question="Is $(1, -3)$ a solution to the system $\left\{\begin{array}{l} 3x + y = 0 \\ x + 2y = -5 \end{array}\right.$?"
+  answer="yes"
+  hint="Substitute $x = 1$ and $y = -3$ into both equations; the pair is a solution only if both statements are true."
 >}}
+no
+yes
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="For the same system, substitute $x = 2$ and $y = -6$ into $x + 2y$ and simplify. (Compare the result to -5 — does it make the equation true?)"
-  answer="-10"
-  hint="Multiply -6 by 2 first, then add x."
+{{< multiplechoice
+  question="Is $(0, 0)$ a solution to the system $\left\{\begin{array}{l} 3x + y = 0 \\ x + 2y = -5 \end{array}\right.$?"
+  answer="no"
+  hint="Substitute $x = 0$ and $y = 0$ into both equations; the pair is a solution only if both statements are true."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 ## Solve a system of linear equations by graphing
 
@@ -134,56 +140,9 @@ $$y = 4x - 1 \qquad m = 4, \ b = -1$$
 We graph both lines on the same coordinate plane using their slopes and
 $y$-intercepts.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with two lines, y equals 2x plus 1 and y equals 4x minus 1, crossing at the point (1, 3)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="87.5" y1="303.1" x2="224.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="229,20 229,31.2 220.1,26.7" fill="currentColor"/>
-  <polygon points="83,312 83,300.8 91.9,305.3" fill="currentColor"/>
-  <line x1="136.9" y1="302.3" x2="205.1" y2="29.7" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="207.5,20 209.9,30.9 200.2,28.5" fill="currentColor"/>
-  <polygon points="134.5,312 132.1,301.1 141.8,303.5" fill="currentColor"/>
-  <circle cx="186" cy="106" r="4" fill="currentColor"/>
-  <text x="197.2" y="126.2" font-size="13" fill="currentColor" text-anchor="start">(1, 3)</text>
-  <text x="211.2" y="95.4" font-size="13" fill="currentColor" text-anchor="start">y = 2x + 1</text>
-  <text x="175.9" y="84.4" font-size="13" fill="currentColor" text-anchor="end">y = 4x − 1</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −7 to 7, showing the lines y = 2x + 1 and y = 4x − 1 crossing at the point (1, 3).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"slope":2,"intercept":1},{"slope":4,"intercept":-1}],"points":[{"at":[1,3],"label":"(1, 3)","labelSide":"e"}],"texts":[{"at":[2.7,4.8],"text":"y = 2x + 1"},{"at":[0.4,-2.8],"text":"y = 4x − 1"}]}
+{{< /apfigure >}}
 
 The lines intersect at $(1, 3)$. Check the solution in both equations:
 
@@ -203,64 +162,17 @@ graph them using their $x$- and $y$-intercepts.
 
 **Example.** Solve the system by graphing: $\left\{\begin{array}{l} x + y = 2 \\ x - y = 4 \end{array}\right.$
 
-We find the $x$- and $y$-intercepts of each line.
+We find the $x$- and $y$-intercepts of each line: let $x = 0$ and solve
+for $y$, then let $y = 0$ and solve for $x$.
 
-| $x + y = 2$ | | | | $x - y = 4$ | | |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $x$ | $y$ | | | $x$ | $y$ | |
-| $0$ | $2$ | | | $0$ | $-4$ | |
-| $2$ | $0$ | | | $4$ | $0$ | |
+| | $x + y = 2$ | $x - y = 4$ |
+| :--- | :---: | :---: |
+| $y$-intercept (let $x = 0$) | $(0, 2)$ | $(0, -4)$ |
+| $x$-intercept (let $y = 0$) | $(2, 0)$ | $(4, 0)$ |
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with two lines, x plus y equals 2 and x minus y equals 4, crossing at the point (3, -1)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="67.1" y1="27.1" x2="304.9" y2="264.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,272 301.4,268.5 308.5,261.4" fill="currentColor"/>
-  <polygon points="60,20 70.6,23.5 63.5,30.6" fill="currentColor"/>
-  <line x1="107.1" y1="304.9" x2="304.9" y2="107.1" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,100 308.5,110.6 301.4,103.5" fill="currentColor"/>
-  <polygon points="100,312 103.5,301.4 110.6,308.5" fill="currentColor"/>
-  <circle cx="226" cy="186" r="4" fill="currentColor"/>
-  <text x="240" y="190" font-size="13" fill="currentColor" text-anchor="start">(3, −1)</text>
-  <text x="265.4" y="252" font-size="13" fill="currentColor" text-anchor="end">x + y = 2</text>
-  <text x="271" y="122.4" font-size="13" fill="currentColor" text-anchor="end">x − y = 4</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −7 to 7, showing the line x + y = 2 through (0, 2) and (2, 0) and the line x − y = 4 through (0, −4) and (4, 0), crossing at the point (3, −1).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"slope":-1,"intercept":2},{"slope":1,"intercept":-4}],"points":[{"at":[3,-1]}],"texts":[{"at":[3.9,-1.3],"text":"(3, −1)"},{"at":[5.6,-4.6],"text":"x + y = 2","anchor":"end"},{"at":[5.5,2],"text":"x − y = 4","anchor":"end"}]}
+{{< /apfigure >}}
 
 The lines intersect at $(3, -1)$. Check the solution in both equations:
 
@@ -275,19 +187,19 @@ $$
 
 The solution is $(3, -1)$.
 
+{{< graphplot
+  question="Solve the system by graphing: $\left\{\begin{array}{l} x - 3y = -3 \\ x + y = 5 \end{array}\right.$"
+  answerDisplay="The lines $x - 3y = -3$ and $x + y = 5$, which cross at $(3, 2)$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
+  hint="For each equation, find two points on its line — its intercepts, or its slope and $y$-intercept after solving for $y$ — and draw the line through them."
+>}}
+{"answer":{"system":[{"slope":0.3333333333333333,"intercept":1},{"slope":-1,"intercept":5}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
+
 If one of the equations in a system has only one variable — like $x = 4$ or
 $y = 6$ — its graph is a vertical or horizontal line. You can still graph it
 on the same plane and find where it crosses the other line exactly the way
 we've been doing.
-
-{{< graphplot
-  question="Solve the system by graphing: $\{x - 3y = -3,\ x + y = 5\}$."
-  answerDisplay="$x - 3y = -3$ and $x + y = 5$"
-  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
-  hint="Solve each equation for $y$: $x - 3y = -3$ becomes $y = \tfrac{1}{3}x + 1$, and $x + y = 5$ becomes $y = -x + 5$. Use each line's slope and $y$-intercept to place two points on it."
->}}
-{"answer":{"system":[{"slope":0.3333333333333333,"intercept":1},{"slope":-1,"intercept":5}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
-{{< /graphplot >}}
 
 ## Determine the number of solutions of a linear system
 
@@ -300,6 +212,14 @@ solution, no solution, or infinitely many solutions.
 | 2 intersecting lines | $1$ |
 | Parallel lines | None |
 | Same line | Infinitely many |
+
+When both equations of a system give the same line, we say the two lines
+are **coincident**.
+
+{{< callout type="info" >}}
+  **Coincident lines.** Coincident lines have the same slope and same
+  $y$-intercept.
+{{< /callout >}}
 
 We can tell which case we're in *without graphing*, just by comparing the
 slopes and intercepts of the two lines. Write each equation in
@@ -480,9 +400,14 @@ classify the system of equations: $\left\{\begin{array}{l} 2x + y = -3 \\ x - 5y
 We compare the slope and intercept of each line by writing both equations
 in slope–intercept form. The first equation is already close to that form:
 
-$$2x + y = -3 \implies y = -2x - 3 \qquad m = -2, \ b = -3$$
+$$
+\begin{array}{rcl}
+2x + y &=& -3 \\
+y &=& -2x - 3
+\end{array}
+$$
 
-Solve the second equation for $y$:
+so $m = -2$, $b = -3$. Solve the second equation for $y$:
 
 $$
 \begin{array}{rcl}
@@ -497,19 +422,20 @@ intersect. A system of equations whose graphs intersect has one solution
 and is consistent and independent.
 
 {{< fillin
-  question="Without graphing, compare the system $\{y = -2x - 4,\ 4x + 2y = 9\}$. Solve the second equation for y. What is its slope?"
+  question="Consider the system $\left\{\begin{array}{l} y = -2x - 4 \\ 4x + 2y = 9 \end{array}\right.$ Solve the second equation for $y$. What is the slope of its line?"
   answer="-2"
-  hint="Subtract 4x from both sides, then divide every term by 2."
+  answerForm="decimal"
+  hint="Subtract $4x$ from both sides, then divide every term by $2$; the slope is the coefficient of $x$."
 >}}
 
 {{< multiplechoice
-  question="The system $\{y = -2x - 4,\ 4x + 2y = 9\}$ has two lines with the same slope but different y-intercepts. How many solutions does the system have?"
-  hint="Same slope with different intercepts means the lines are parallel — they never meet."
-  answer="no solution"
+  question="Without graphing, determine the number of solutions and then classify the system $\left\{\begin{array}{l} y = -2x - 4 \\ 4x + 2y = 9 \end{array}\right.$"
+  hint="Write both equations in slope–intercept form, compare their slopes and $y$-intercepts, then match the case to its classification."
+  answer="no solution, inconsistent, independent"
 >}}
-no solution
-infinitely many solutions
-one solution
+one solution, consistent, independent
+no solution, inconsistent, independent
+infinitely many solutions, consistent, dependent
 {{< /multiplechoice >}}
 
 ## Solve applications of systems of equations by graphing
@@ -547,53 +473,9 @@ $$\left\{\begin{array}{l} f + c = 10 \\ f = 4c \end{array}\right.$$
 Graphing both equations (with $c$ on the horizontal axis and $f$ on the
 vertical axis) shows where they intersect:
 
-<div class="ap-figure">
-<svg role="img" aria-label="A graph with club soda quarts on the horizontal axis and fruit juice quarts on the vertical axis. The line f plus c equals 10 and the line f equals 4c cross at the point (2, 8)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 244" width="244" height="244" font-family="Helvetica, Arial, sans-serif">
-  <line x1="42" y1="218" x2="42" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="58" y1="218" x2="58" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="218" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="90" y1="218" x2="90" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="218" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="122" y1="218" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="138" y1="218" x2="138" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="154" y1="218" x2="154" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="170" y1="218" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="218" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="202" y1="218" x2="202" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="218" y1="218" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="202" x2="218" y2="202" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="218" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="170" x2="218" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="154" x2="218" y2="154" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="138" x2="218" y2="138" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="122" x2="218" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="218" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="90" x2="218" y2="90" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="74" x2="218" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="58" x2="218" y2="58" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="42" x2="218" y2="42" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="218" x2="220" y2="218" stroke="currentColor" stroke-width="1"/>
-  <line x1="26" y1="24" x2="26" y2="218" stroke="currentColor" stroke-width="1"/>
-  <polygon points="230,218 220,223 220,213" fill="currentColor"/>
-  <polygon points="26,14 31,24 21,24" fill="currentColor"/>
-  <text x="228" y="210" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">c</text>
-  <text x="34" y="24" font-size="13" fill="currentColor" font-style="italic">f</text>
-  <line x1="27.1" y1="59.1" x2="184.9" y2="216.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="192,224 181.4,220.5 188.5,213.4" fill="currentColor"/>
-  <polygon points="20,52 30.6,55.5 23.5,62.6" fill="currentColor"/>
-  <line x1="26.9" y1="214.3" x2="73.1" y2="29.7" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="75.5,20 77.9,30.9 68.2,28.5" fill="currentColor"/>
-  <polygon points="24.5,224 22.1,213.1 31.8,215.5" fill="currentColor"/>
-  <circle cx="58" cy="90" r="4" fill="currentColor"/>
-  <text x="69.2" y="78.8" font-size="13" fill="currentColor" text-anchor="start">(2, 8)</text>
-  <text x="142.8" y="201.5" font-size="13" fill="currentColor" text-anchor="end">f + c = 10</text>
-  <text x="83.9" y="56.4" font-size="13" fill="currentColor" text-anchor="start">f = 4c</text>
-  <text x="186" y="234" font-size="13" fill="currentColor" text-anchor="middle">10</text>
-  <text x="20" y="62" font-size="13" fill="currentColor" text-anchor="end">10</text>
-  <text x="12" y="234" font-size="13" fill="currentColor">0</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A graph with quarts of club soda, c, on the horizontal axis and quarts of fruit juice, f, on the vertical axis, both numbered from 1 to 11. The line f + c = 10 runs from (0, 10) down to (10, 0), and the line f = 4c rises from the origin; they cross at the point (2, 8).","xMin":0,"xMax":11,"yMin":0,"yMax":11,"unit":22,"tickLabels":true,"tickStep":1,"xLabel":"c","yLabel":"f","segments":[{"from":[0,10],"to":[10,0]},{"from":[0,0],"to":[2.75,11]}],"points":[{"at":[2,8],"label":"(2, 8)","labelSide":"e"}],"texts":[{"at":[3,10],"text":"f = 4c"},{"at":[6.4,4.2],"text":"f + c = 10"}]}
+{{< /apfigure >}}
 
 The point of intersection is $(2, 8)$ — that is, $c = 2$ and $f = 8$. Check:
 the fruit juice amount, $8$, is indeed $4$ times the club soda amount, $2$;
@@ -603,13 +485,15 @@ fruit juice and $2$ quarts of club soda.
 {{< fillin
   question="Manny is making 12 quarts of orange juice from concentrate and water. The number of quarts of water is 3 times the number of quarts of concentrate. How many quarts of concentrate does Manny need?"
   answer="3"
-  hint="Let c = quarts of concentrate and w = quarts of water. Then $c + w = 12$ and $w = 3c$."
+  answerForm="decimal"
+  hint="Name the two amounts with variables, write one equation for the total and one for the 'times' relationship, then graph both and read where the lines cross."
 >}}
 
 {{< fillin
   question="For the same orange juice mixture, how many quarts of water does Manny need?"
   answer="9"
-  hint="Water is 3 times the concentrate amount you just found."
+  answerForm="decimal"
+  hint="Read the other coordinate of the intersection point, then check it in both equations of your system."
 >}}
 
 ## Key terms
@@ -621,7 +505,8 @@ system of equations with at least one solution. **inconsistent system** —
 a system of equations with no solution. **independent equations** — two
 equations with different solutions (intersecting or parallel lines).
 **dependent equations** — two equations whose solutions are identical
-(coincident lines).
+(coincident lines). **coincident lines** — lines that have the same slope
+and same $y$-intercept.
 
 ## Practice
 
@@ -649,9 +534,9 @@ no
 
 {{< graphplot
   question="Solve by graphing: $\left\{\begin{array}{l}3x+y=-3 \\ 2x+3y=5\end{array}\right.$"
-  answerDisplay="$3x + y = -3$ and $2x + 3y = 5$"
+  answerDisplay="The lines $3x + y = -3$ and $2x + 3y = 5$, which cross at $(-2, 3)$"
   ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
-  hint="Solve each equation for $y$: $3x + y = -3$ becomes $y = -3x - 3$, and $2x + 3y = 5$ becomes $y = -\tfrac{2}{3}x + \tfrac{5}{3}$. Use each line's slope and $y$-intercept to place two points on it."
+  hint="For each equation, find two points on its line — its intercepts, or its slope and $y$-intercept after solving for $y$ — and draw the line through them."
 >}}
 {"answer":{"system":[{"slope":-3,"intercept":-3},{"slope":-0.6666666666666666,"intercept":1.6666666666666667}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
 {{< /graphplot >}}
@@ -660,34 +545,34 @@ no
   question="Which graph shows the solution of the system $\left\{\begin{array}{l}-3x+y=-1 \\ 2x+y=4\end{array}\right.$?"
   mode="graph"
   answerIndex="1"
-  hint="Solve each equation for $y$: $-3x + y = -1$ becomes $y = 3x - 1$, and $2x + y = 4$ becomes $y = -2x + 4$. Look for the option whose two lines have those slopes and $y$-intercepts and cross at the point that satisfies both equations."
+  hint="Write each equation in slope–intercept form, then look for the option whose two lines have those slopes and $y$-intercepts."
 >}}
-{"ariaLabel":"A line descending steeply through the y-axis just below zero and a line rising steeply through the y-axis well above zero, crossing to the left of the y-axis.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-2,"intercept":-1},{"slope":3,"intercept":4}],"points":[{"at":[-1,1]}]}
+{"ariaLabel":"A line falling steeply through (0, −1) and a line rising steeply through (0, 4), crossing at the marked point (−1, 1).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-2,"intercept":-1},{"slope":3,"intercept":4}],"points":[{"at":[-1,1]}]}
 ===OPT===
-{"ariaLabel":"A line rising steeply through the y-axis just below zero and a line falling through the y-axis well above zero, crossing to the right of the y-axis above the x-axis.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":3,"intercept":-1},{"slope":-2,"intercept":4}],"points":[{"at":[1,2]}]}
+{"ariaLabel":"A line rising steeply through (0, −1) and a line falling through (0, 4), crossing at the marked point (1, 2).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":3,"intercept":-1},{"slope":-2,"intercept":4}],"points":[{"at":[1,2]}]}
 ===OPT===
-{"ariaLabel":"Two parallel lines with the same upward slope, one crossing below the x-axis and the other crossing above it, never meeting.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":-2},{"slope":1,"intercept":3}]}
+{"ariaLabel":"Two parallel lines rising at the same slope, one through (0, −2) and one through (0, 3), never meeting.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":-2},{"slope":1,"intercept":3}]}
 {{< /multiplechoice >}}
 
 ### Determine the number of solutions of a linear system
 
 {{< multiplechoice
   question="Without graphing, determine the number of solutions and classify the system $\left\{\begin{array}{l}y=\tfrac{2}{3}x+1 \\ 2x-3y=7\end{array}\right.$"
-  answer="no solutions, inconsistent, independent"
+  answer="no solution, inconsistent, independent"
   hint="Write both equations in slope–intercept form and compare their slopes and $y$-intercepts."
 >}}
-no solutions, inconsistent, independent
-consistent, 1 solution
+no solution, inconsistent, independent
+one solution, consistent, independent
 infinitely many solutions, consistent, dependent
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Without graphing, determine the number of solutions and classify the system $\left\{\begin{array}{l}4x+2y=10 \\ 4x-2y=-6\end{array}\right.$"
-  answer="consistent, 1 solution"
-  hint="Rewrite both equations in slope–intercept form and compare their slopes."
+  answer="one solution, consistent, independent"
+  hint="Rewrite both equations in slope–intercept form and compare their slopes and $y$-intercepts."
 >}}
-no solutions, inconsistent, independent
-consistent, 1 solution
+no solution, inconsistent, independent
+one solution, consistent, independent
 infinitely many solutions, consistent, dependent
 {{< /multiplechoice >}}
 
@@ -696,17 +581,19 @@ infinitely many solutions, consistent, dependent
 {{< fillin
   question="Molly is making strawberry infused water. For each ounce of strawberry juice, she uses three times as many ounces of water. How many ounces of strawberry juice and how many ounces of water does she need to make 64 ounces of strawberry infused water? Enter the ounces of strawberry juice first and water second, separated by a comma."
   answer="16,48"
+  answerForm="decimal"
   answerDisplay="$16$ ounces of strawberry juice and $48$ ounces of water"
-  hint="Let $s$ be the ounces of strawberry juice and $w$ the ounces of water; graph $s+w=64$ and $w=3s$, then read their intersection."
+  hint="Name the two amounts with variables, write one equation for the total and one for the 'three times as many' relationship, then graph both and read where the lines cross."
 >}}
 
 {{< fillin
   question="Leo is planning his spring flower garden. He wants to plant tulip and daffodil bulbs. He will plant 6 times as many daffodil bulbs as tulip bulbs. If he wants to plant 350 bulbs, how many tulip bulbs and how many daffodil bulbs should he plant? Enter the result as an ordered pair (tulips, daffodils)."
   answer="(50,300)"
+  answerForm="decimal"
   answerDisplay="$50$ tulips and $300$ daffodils"
-  hint="Let $t$ be the number of tulips and $d$ the number of daffodils; graph $t+d=350$ and $d=6t$, then read their intersection."
+  hint="Name the two counts with variables, write one equation for the total and one for the '6 times as many' relationship, then graph both and read where the lines cross."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.1: Solve Systems of Equations by Graphing](https://openstax.org/books/elementary-algebra-2e/pages/5-1-solve-systems-of-equations-by-graphing) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the two-line coordinate-plane graphs (intersecting, parallel, and coincident cases, and the punch-mixture application) as accessible inline SVGs and the slope/intercept comparisons as markdown tables; omitted the Be Prepared quiz, Media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.1: Solve Systems of Equations by Graphing](https://openstax.org/books/elementary-algebra-2e/pages/5-1-solve-systems-of-equations-by-graphing) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coordinate-plane graphs (the three worked graphing examples, the punch-mixture application, and the intersecting, parallel, and coincident cases) as accessible inline graphics, the number-of-solutions and slope/intercept comparison figures and the intercept work as markdown tables, and the step-by-step solution tables as check arrays; omitted the Be Prepared quiz, the opening "How to" example, the worked examples graphing $3x + y = -1$, $y = 6$, and the parallel and coincident systems, two of the three classification examples, the summary graphs and classification table, Media links, the Key Concepts summary, the Writing Exercises and Self Check, and unselected end-of-section exercises; added a key-terms list from the module glossary; adapted selected end-of-section exercises into the interactive Practice block, posing the yes/no and classification questions as multiple choice with the classification options worded alike (so the $4x + 2y = 10$ answer names "independent", which the source answer leaves out) and one solve-by-graphing exercise as a choice among graphs; and converted selected practice problems ("Try Its") into interactive exercises with instant feedback — adding the slope of $4x + 2y = 9$ as a step before its classification question, and splitting the orange-juice question into its two amounts.</small>

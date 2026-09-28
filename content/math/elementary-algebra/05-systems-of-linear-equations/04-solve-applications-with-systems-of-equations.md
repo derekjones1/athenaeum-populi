@@ -67,7 +67,8 @@ $$
 {{< fillin
   question="Translate to a system of equations and then solve: the sum of two numbers is negative twenty-three. One number is 7 less than the other. Find the smaller number."
   answer="-15"
-  hint="Let n = the larger number, so $n - 7$ = the smaller number. The system is $n + (n - 7) = -23$. Solve for n, then find $n - 7$."
+  answerForm="decimal"
+  hint="Name the two numbers with two variables. Write one equation for their sum and one for “7 less than,” then substitute and solve."
 >}}
 
 **Example.** Translate to a system of equations: a married couple together
@@ -91,8 +92,9 @@ $$
 {{< fillin
   question="Translate to a system of equations and then solve: a couple has a total household income of \$84,000. The husband earns \$18,000 less than twice what the wife earns. How much does the wife earn, in dollars?"
   answer="34000"
+  answerForm="decimal"
   answerDisplay="\$34,000"
-  hint="Let h = the husband's earnings and w = the wife's earnings. The system is $h + w = 84{,}000$ and $h = 2w - 18{,}000$. Substitute and solve for w."
+  hint="Name the two incomes with two variables. Write one equation for the total and one for the husband's earnings, then substitute into the total equation."
 >}}
 
 ## Solve Direct Translation Applications
@@ -136,9 +138,10 @@ their ages 50? $38 + 12 = 50$. ✓ Devon is 38 years old and Cooper is 12
 years old.
 
 {{< fillin
-  question="Ali is 12 years older than his youngest sister, Jameela. The sum of their ages is 40. Find Jameela's age."
+  question="Translate to a system of equations and then solve: Ali is 12 years older than his youngest sister, Jameela. The sum of their ages is 40. Find Jameela's age, in years."
   answer="14"
-  hint="Let a = Ali's age and j = Jameela's age. The system is $a = j + 12$ and $a + j = 40$. Substitute and solve for j."
+  answerForm="decimal"
+  hint="Name both ages. Write one equation from “12 years older” and one from the sum, then substitute."
 >}}
 
 **Example.** When Jenna spent 10 minutes on the elliptical trainer and then
@@ -191,9 +194,10 @@ minute on the elliptical trainer and 8.3 calories per minute of circuit
 training.
 
 {{< fillin
-  question="Mark went to the gym and did 40 minutes of Bikram hot yoga and 10 minutes of jumping jacks. He burned 510 calories. The next time he went to the gym, he did 30 minutes of Bikram hot yoga and 20 minutes of jumping jacks, burning 470 calories. How many calories were burned for each minute of jumping jacks?"
+  question="Translate to a system of equations and then solve: Mark went to the gym and did 40 minutes of Bikram hot yoga and 10 minutes of jumping jacks. He burned 510 calories. The next time he went to the gym, he did 30 minutes of Bikram hot yoga and 20 minutes of jumping jacks, burning 470 calories. How many calories were burned for each minute of jumping jacks?"
   answer="7"
-  hint="Let y = calories burned per minute of yoga and j = calories burned per minute of jumping jacks. Set up $40y + 10j = 510$ and $30y + 20j = 470$, then solve the system for j."
+  answerForm="decimal"
+  hint="Name the two per-minute rates. Each visit gives one equation (minutes times rate for each activity, added), then eliminate one variable."
 >}}
 
 ## Solve Geometry Applications
@@ -250,9 +254,10 @@ $58 - 32 \overset{?}{=} 26$, and indeed $26 = 26$. ✓ The angle measures are
 58 degrees and 32 degrees.
 
 {{< fillin
-  question="The difference of two complementary angles is 20 degrees. Find the measure of the larger angle."
+  question="Translate to a system of equations and then solve: The difference of two complementary angles is 20 degrees. Find the measure of the larger angle, in degrees."
   answer="55"
-  hint="Let x and y be the two angle measures. The system is $x + y = 90$ and $x - y = 20$. Add the equations to solve for x."
+  answerForm="decimal"
+  hint="Write one equation for the sum of complementary angles and one for the difference, then add the equations to eliminate a variable."
 >}}
 
 **Example.** Two angles are supplementary. The measure of the larger angle
@@ -293,9 +298,10 @@ $5(32) - 12 \overset{?}{=} 148$, and indeed $148 = 148$. ✓ The angle
 measures are 32 degrees and 148 degrees.
 
 {{< fillin
-  question="Two angles are supplementary. The measure of the larger angle is 12 degrees more than three times the measure of the smaller angle. Find the measure of the smaller angle."
+  question="Translate to a system of equations and then solve: Two angles are supplementary. The measure of the larger angle is 12 degrees more than three times the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="42"
-  hint="Let x = the smaller angle and y = the larger angle. The system is $x + y = 180$ and $y = 3x + 12$. Substitute and solve for x."
+  answerForm="decimal"
+  hint="Write one equation for the sum of supplementary angles and one for the larger angle in terms of the smaller, then substitute."
 >}}
 
 **Example.** Randall has 125 feet of fencing to enclose the rectangular
@@ -306,12 +312,13 @@ feet more than four times as long as the width. Find the length and the
 width.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A rectangle representing the fenced yard. The top side, along the house wall, is dashed and labeled L for length. The bottom side and the two vertical sides, which are the fenced sides, are solid and the vertical sides are each labeled W for width." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 168" width="252" height="168" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A rectangle representing the fenced yard. The top side is dashed and labeled house wall. The other three sides are solid, for the fence: the bottom side, parallel to the house wall, is labeled L for length, and the two vertical sides are each labeled W for width." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 168" width="252" height="168" font-family="Helvetica, Arial, sans-serif">
   <line x1="36" y1="132" x2="216" y2="132" stroke="currentColor" stroke-width="1.5"/>
+  <text x="126" y="152" text-anchor="middle" font-size="13" fill="currentColor">L</text>
   <line x1="216" y1="132" x2="216" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <text x="228" y="88" text-anchor="start" font-size="13" fill="currentColor">W</text>
   <line x1="216" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">L (house wall)</text>
+  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">house wall</text>
   <line x1="36" y1="36" x2="36" y2="132" stroke="currentColor" stroke-width="1.5"/>
   <text x="24" y="88" text-anchor="end" font-size="13" fill="currentColor">W</text>
 </svg>
@@ -351,9 +358,10 @@ $85 + 20 + 20 \overset{?}{=} 125$, and indeed $125 = 125$. ✓ Is the length
 $85 = 85$. ✓ The length is 85 feet and the width is 20 feet.
 
 {{< fillin
-  question="Mario wants to put a rectangular fence around the pool in his backyard. Since one side is adjacent to the house, he will only need to fence three sides — two long sides and the one shorter side parallel to the house. He needs 155 feet of fencing to enclose the pool. The length of the long side is 10 feet less than twice the width. Find the width of the pool area, in feet."
+  question="Translate to a system of equations and then solve: Mario wants to put a rectangular fence around the pool in his backyard. Since one side is adjacent to the house, he will only need to fence three sides — two long sides and the one shorter side parallel to the house. He needs 155 feet of fencing to enclose the pool. The length of the long side is 10 feet less than twice the width. Find the width of the pool area, in feet."
   answer="35"
-  hint="Let L = the length and W = the width. Two long sides and one short side gives $2L + W = 155$, with $L = 2W - 10$. Substitute and solve for W."
+  answerForm="decimal"
+  hint="Name the length and width. Write one equation for the fencing (count only the fenced sides) and one for the long side in terms of the width, then substitute."
 >}}
 
 ## Solve Uniform Motion Applications
@@ -361,9 +369,9 @@ $85 = 85$. ✓ The length is 85 feet and the width is 20 feet.
 We used a table to organize the information in uniform motion problems when
 we introduced them earlier. We'll continue using that table here. The basic
 equation is $D = rt$, where $D$ is the distance traveled, $r$ is the rate,
-and $t$ is the time. Now that we can use two variables and two equations,
-we no longer need to write one person's time or rate in terms of the
-other's.
+and $t$ is the time. Our first example is similar to uniform motion
+problems we have already solved, but now we can use two variables and two
+equations.
 
 **Example.** Joni left St. Louis on the interstate, driving west towards
 Denver at a speed of 65 miles per hour. Half an hour later, Kelly left St.
@@ -398,8 +406,8 @@ $$
 \begin{array}{lrcl}
 & 65j &=& 78\left(j - \tfrac{1}{2}\right) \\[4pt]
 \text{Distribute.} & 65j &=& 78j - 39 \\[4pt]
-\text{Subtract 78j from each side.} & -13j &=& -39 \\[4pt]
-\text{Divide each side by} -13. & j &=& 3
+\text{Subtract }78j\text{ from each side.} & -13j &=& -39 \\[4pt]
+\text{Divide each side by }{-13}. & j &=& 3
 \end{array}
 $$
 
@@ -412,9 +420,10 @@ distance. ✓ Kelly will catch up to Joni in $2\tfrac{1}{2}$ hours; by then,
 Joni will have traveled 3 hours.
 
 {{< fillin
-  question="Mitchell left Detroit on the interstate driving south towards Orlando at a speed of 60 miles per hour. Clark left Detroit 1 hour later, traveling at a speed of 75 miles per hour, following the same route as Mitchell. How long will it take Clark to catch Mitchell? Enter the time in hours."
+  question="Translate to a system of equations and then solve: Mitchell left Detroit on the interstate driving south towards Orlando at a speed of 60 miles per hour. Clark left Detroit 1 hour later, traveling at a speed of 75 miles per hour, following the same route as Mitchell. How long will it take Clark to catch Mitchell? Enter the time in hours."
   answer="4"
-  hint="Let t be Clark's driving time, so Mitchell's time is $t + 1$. Both travel the same distance: $60(t + 1) = 75t$. Solve for t."
+  answerForm="decimal"
+  hint="Name each driver's time and write one equation relating the two times. Clark catches up when the distances are equal: use $D = rt$, then substitute."
 >}}
 
 Many real-world uniform motion applications arise because of the effect of
@@ -482,9 +491,10 @@ $13.5 - 1.5 = 12$ mph, and in 5 hours it travels $12 \cdot 5 = 60$ miles. ✓
 The rate of the ship is 13.5 mph and the rate of the current is 1.5 mph.
 
 {{< fillin
-  question="A Mississippi river boat cruise sailed 120 miles upstream for 12 hours and then took 10 hours to return to the dock. Find the speed of the river boat in still water, in mph."
+  question="Translate to a system of equations and then solve: A Mississippi river boat cruise sailed 120 miles upstream for 12 hours and then took 10 hours to return to the dock. Find the speed of the river boat in still water, in mph."
   answer="11"
-  hint="Let s = the boat's speed in still water and c = the current's speed. The system is $12(s - c) = 120$ and $10(s + c) = 120$. Solve for s."
+  answerForm="decimal"
+  hint="Upstream the actual rate is the still-water speed minus the current; on the return it is their sum. Write rate times time equals distance for each trip, then eliminate the current."
 >}}
 
 **Example.** A private jet can fly 1,095 miles in three hours with a
@@ -530,9 +540,10 @@ $329 \cdot 3 = 987$ miles. ✓ The rate of the jet is 347 mph and the rate of
 the wind is 18 mph.
 
 {{< fillin
-  question="A small jet can fly 1,325 miles in 5 hours with a tailwind but only 1,035 miles in 5 hours into a headwind. Find the speed of the wind, in mph."
+  question="Translate to a system of equations and then solve: A small jet can fly 1,325 miles in 5 hours with a tailwind but only 1,035 miles in 5 hours into a headwind. Find the speed of the wind, in mph."
   answer="29"
-  hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}325$ and $5(j - w) = 1{,}035$. Solve for w."
+  answerForm="decimal"
+  hint="With a tailwind the actual rate is the jet's speed plus the wind's; into a headwind it is the difference. Write rate times time equals distance for each flight, then eliminate the jet's speed."
 >}}
 
 ## Key terms
@@ -552,16 +563,18 @@ plane is flying, so it decreases the plane's actual speed to $j - w$.
 {{< fillin
   question="Translate to a system of equations and solve the system: Twice a number plus three times a second number is twenty-two. Three times the first number plus four times the second is thirty-one. Find the numbers. Enter the first number and then the second number, separated by a comma."
   answer="5,4"
+  answerForm="decimal"
   answerDisplay="$5$ and $4$"
-  hint="Let $x$ be the first number and $y$ the second. Translate as $2x+3y=22$ and $3x+4y=31$, then solve by elimination."
+  hint="Name the two numbers, translate each sentence into one equation, then eliminate one variable."
 >}}
 
 {{< fillin
   question="Translate to a system of equations and solve the system: The sum of two numbers is negative thirty. One number is five times the other. Find the numbers. Enter both numbers, separated by a comma."
   answer="-5,-25"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$-5$ and $-25$"
-  hint="Let the numbers be $x$ and $y$. Use $x+y=-30$ and choose $x=5y$, then substitute."
+  hint="Name the two numbers. Translate the sum sentence and the “five times” sentence into equations, then substitute."
 >}}
 
 ### Solve direct translation applications
@@ -569,31 +582,35 @@ plane is flying, so it decreases the plane's actual speed to $j - w$.
 {{< fillin
   question="Translate to a system of equations and solve: Alyssa is twelve years older than her sister, Bethany. The sum of their ages is forty-four. Find their ages. Enter Bethany's age first and Alyssa's age second, separated by a comma."
   answer="16,28"
+  answerForm="decimal"
   answerDisplay="Bethany is $16$ years old; Alyssa is $28$ years old"
-  hint="Let $A$ be Alyssa's age and $B$ Bethany's age. Translate as $A=B+12$ and $A+B=44$, then substitute."
+  hint="Name both ages. Translate “twelve years older” and the sum into equations, then substitute."
 >}}
 
 {{< fillin
   question="Translate to a system of equations and solve: Two containers of gasoline hold a total of fifty gallons. The big container can hold ten gallons less than twice the small container. How many gallons does each container hold? Enter the small container's capacity first and the big container's capacity second, separated by a comma."
   answer="20,30"
+  answerForm="decimal"
   answerDisplay="$20$ gallons in the small container; $30$ gallons in the big container"
-  hint="Let $s$ and $b$ be the small and big capacities. Use $s+b=50$ and $b=2s-10$, then substitute."
+  hint="Name the two capacities. Translate the total and the “ten gallons less than twice” sentence into equations, then substitute."
 >}}
 
 ### Solve geometry applications
 
 {{< fillin
-  question="Translate to a system of equations and solve: The difference of two complementary angles is 30 degrees. Find the measures of the angles. Enter both measures, separated by a comma."
+  question="Translate to a system of equations and solve: The difference of two complementary angles is 30 degrees. Find the measures of the angles. Enter both measures in degrees, separated by a comma."
   answer="60,30"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$60^\circ$ and $30^\circ$"
   hint="Complementary angles add to $90^\circ$. Combine that sum equation with a difference equation and add them."
 >}}
 
 {{< fillin
-  question="Translate to a system of equations and solve: The difference of two supplementary angles is 70 degrees. Find the measures of the angles. Enter both measures, separated by a comma."
+  question="Translate to a system of equations and solve: The difference of two supplementary angles is 70 degrees. Find the measures of the angles. Enter both measures in degrees, separated by a comma."
   answer="125,55"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$125^\circ$ and $55^\circ$"
   hint="Supplementary angles add to $180^\circ$. Combine that sum equation with a difference equation and add them."
 >}}
@@ -601,19 +618,21 @@ plane is flying, so it decreases the plane's actual speed to $j - w$.
 ### Solve uniform motion applications
 
 {{< fillin
-  question="Translate to a system of equations and solve: Sarah left Minneapolis heading east on the interstate at a speed of 60 mph. Her sister followed her on the same route, leaving two hours later and driving at a rate of 70 mph. How long will it take for Sarah’s sister to catch up to Sarah?"
+  question="Translate to a system of equations and solve: Sarah left Minneapolis heading east on the interstate at a speed of 60 mph. Her sister followed her on the same route, leaving two hours later and driving at a rate of 70 mph. How long will it take for Sarah’s sister to catch up to Sarah? Enter the time in hours."
   answer="12"
+  answerForm="decimal"
   answerDisplay="$12$ hours"
-  hint="If Sarah's sister drives for $t$ hours, Sarah drives for $t+2$ hours. Set their distances equal using $d=rt$."
+  hint="Name each driver's time and write one equation relating the two times. The sister catches up when the distances are equal: use $D=rt$, then substitute."
 >}}
 
 {{< fillin
   question="Translate to a system of equations and solve: A small jet can fly $1{,}072$ miles in 4 hours with a tailwind but only 848 miles in 4 hours into a headwind. Find the speed of the jet in still air and the speed of the wind. Enter the jet's speed first and the wind's speed second, separated by a comma."
   answer="240,28"
+  answerForm="decimal"
   answerDisplay="$240$ mph for the jet; $28$ mph for the wind"
-  hint="Let $j$ be the jet's speed and $w$ the wind's speed. Use $4(j+w)=1{,}072$ and $4(j-w)=848$, then add the equations."
+  hint="With a tailwind the rate is the sum of the two speeds; into a headwind it is the difference. Write rate times time equals distance for each flight, then add the equations."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.4: Solve Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-4-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated Randall's fenced-yard figure as an accessible inline graphic and described the river-current and wind-current figures in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks; corrected an arithmetic slip in the source's own worked solution for the supplementary-angle example (the check step's $5(32) - 12$ was printed as 147 instead of 148); omitted the "Be Prepared" readiness quiz, the Media links block, the remaining Section 5.4 Exercises ("Practice Makes Perfect"), and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.4: Solve Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-4-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated Randall's fenced-yard figure as an accessible inline graphic, described the two river-current figures in prose, and omitted the trip diagrams in the three uniform-motion examples, whose facts the rate tables carry; wrote each system of equations and its elimination or substitution steps as display-math blocks, simplifying the river-cruise system by dividing each equation by its common factor rather than multiplying to match coefficients; corrected two checks in the source's worked solutions (the supplementary-angle check prints $32+158$ and $5\cdot32-12=147$ where $y=148$, and the fenced-yard check prints $20+28+20$ for $85+20+20$); omitted the "Be Prepared" readiness quiz, the Media links block, the remaining Section 5.4 Exercises ("Practice Makes Perfect"), and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback, each asking for one of the two unknowns and the two translate-only Try Its also asking for the solved value; and adapted selected end-of-section exercises into the interactive Practice block.</small>

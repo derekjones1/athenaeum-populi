@@ -41,27 +41,33 @@ We substitute $m = -7$ and $b = -1$ into $y = mx + b$:
 
 $$y = -7x + (-1) = -7x - 1$$
 
-**Example.** Find the equation of the line shown, whose $y$-intercept is
-$(0, -4)$ and which also passes through $(3, -2)$.
+Sometimes the slope and $y$-intercept need to be read from a graph.
 
-We find the slope by counting the rise and run between the two points:
+**Example.** Find the equation of the line shown.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from negative 7 to 7. A rising line crosses the y-axis at (0, negative 4), passes through the marked point (3, negative 2), and crosses the x-axis at (6, 0).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"lines":[{"through":[[0,-4],[3,-2]]}],"points":[{"at":[3,-2]}]}
+{{< /apfigure >}}
+
+The $y$-intercept is $(0, -4)$, and the line passes through $(3, -2)$. We
+find the slope by counting the rise and run between these two points:
 $m = \tfrac{2}{3}$. Substituting $m = \tfrac{2}{3}$ and $b = -4$ into
 $y = mx + b$:
 
 $$y = \frac{2}{3}x - 4$$
 
 {{< fillin
-  question="Find an equation of a line with slope $\tfrac{2}{5}$ and y-intercept $(0, 4)$."
-  answer="\frac{2}{5}x+4"
+  question="Find an equation of a line with slope $\tfrac{2}{5}$ and $y$-intercept $(0, 4)$."
+  answer="y=\frac{2}{5}x+4"
   answerDisplay="$y = \tfrac{2}{5}x + 4$"
-  hint="Substitute the slope for m and the y-intercept's y-value for b into y = mx + b."
+  hint="Substitute the slope for $m$ and the $y$-intercept's $y$-value for $b$ into $y = mx + b$."
 >}}
 
 {{< fillin
-  question="Find an equation of a line with slope -1 and y-intercept (0, -3)."
-  answer="-x-3"
+  question="Find an equation of a line with slope $-1$ and $y$-intercept $(0, -3)$."
+  answer="y=-x-3"
   answerDisplay="$y = -x - 3$"
-  hint="Substitute the slope for m and the y-intercept's y-value for b into y = mx + b."
+  hint="Substitute the slope for $m$ and the $y$-intercept's $y$-value for $b$ into $y = mx + b$."
 >}}
 
 ## Find an equation of the line given the slope and a point
@@ -102,12 +108,12 @@ Substituting $m = \tfrac{2}{5}$ and $(x_1, y_1) = (10, 3)$ into the point-slope
 form:
 
 $$
-\begin{align}
-y - y_1 &= m(x - x_1) \\
-y - 3 &= \frac{2}{5}(x - 10) \\
-y - 3 &= \frac{2}{5}x - 4 \\
-y &= \frac{2}{5}x - 1
-\end{align}
+\begin{aligned}
+y - y_1 &= m(x - x_1) \\[4pt]
+y - 3 &= \tfrac{2}{5}(x - 10) \\[4pt]
+y - 3 &= \tfrac{2}{5}x - 4 \\[4pt]
+y &= \tfrac{2}{5}x - 1
+\end{aligned}
 $$
 
 **Example.** Find an equation of a horizontal line that contains the point
@@ -117,22 +123,22 @@ Every horizontal line has slope $0$. Substituting $m = 0$ and
 $(x_1, y_1) = (-1, 2)$:
 
 $$
-\begin{align}
-y - y_1 &= m(x - x_1) \\
-y - 2 &= 0(x - (-1)) \\
-y - 2 &= 0 \\
+\begin{aligned}
+y - y_1 &= m(x - x_1) \\[4pt]
+y - 2 &= 0(x - (-1)) \\[4pt]
+y - 2 &= 0 \\[4pt]
 y &= 2
-\end{align}
+\end{aligned}
 $$
 
 This is the equation of the horizontal line $y = 2$.
 
 {{< fillin
   question="Find an equation of a line with slope $m = -\tfrac{1}{3}$ that contains the point $(6, -4)$. Write the equation in slope-intercept form."
-  answer="-\frac{1}{3}x-2"
+  answer="y=-\frac{1}{3}x-2"
   answerForm="slope-intercept-form"
   answerDisplay="$y = -\tfrac{1}{3}x - 2$"
-  hint="Substitute m and the point into $y - y_1 = m(x - x_1)$, then simplify and solve for y."
+  hint="Substitute $m$ and the point into $y - y_1 = m(x - x_1)$, then simplify and solve for $y$."
 >}}
 
 ## Find an equation of the line given two points
@@ -162,12 +168,12 @@ $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{6 - 4}{3 - 5} = \frac{2}{-2} = -1$$
 Choosing the point $(5, 4)$ and substituting into the point-slope form:
 
 $$
-\begin{align}
-y - y_1 &= m(x - x_1) \\
-y - 4 &= -1(x - 5) \\
-y - 4 &= -x + 5 \\
+\begin{aligned}
+y - y_1 &= m(x - x_1) \\[4pt]
+y - 4 &= -1(x - 5) \\[4pt]
+y - 4 &= -x + 5 \\[4pt]
 y &= -x + 9
-\end{align}
+\end{aligned}
 $$
 
 Using the other point, $(3, 6)$, gives the same equation.
@@ -194,11 +200,11 @@ no $y$, we cannot write it in slope-intercept form.
 {{< /callout >}}
 
 {{< fillin
-  question="Find an equation of a line that contains the points (3, 1) and (5, 6). Write the equation in slope-intercept form."
-  answer="\frac{5}{2}x-\frac{13}{2}"
+  question="Find an equation of a line that contains the points $(3, 1)$ and $(5, 6)$. Write the equation in slope-intercept form."
+  answer="y=\frac{5}{2}x-\frac{13}{2}"
   answerForm="slope-intercept-form"
   answerDisplay="$y = \tfrac{5}{2}x - \tfrac{13}{2}$"
-  hint="Find the slope from the two points first, then substitute one point into $y - y_1 = m(x - x_1)$ and solve for y."
+  hint="Find the slope from the two points first, then substitute one point into $y - y_1 = m(x - x_1)$ and solve for $y$."
 >}}
 
 ## Find an equation of a line parallel to a given line
@@ -228,20 +234,20 @@ have the same slope, $m_\parallel = 2$. Substituting $m = 2$ and
 $(x_1, y_1) = (-2, 1)$ into the point-slope form:
 
 $$
-\begin{align}
-y - y_1 &= m(x - x_1) \\
-y - 1 &= 2(x - (-2)) \\
-y - 1 &= 2x + 4 \\
+\begin{aligned}
+y - y_1 &= m(x - x_1) \\[4pt]
+y - 1 &= 2(x - (-2)) \\[4pt]
+y - 1 &= 2x + 4 \\[4pt]
 y &= 2x + 5
-\end{align}
+\end{aligned}
 $$
 
 {{< fillin
   question="Find an equation of a line parallel to the line $y = 3x + 1$ that contains the point $(4, 2)$. Write the equation in slope-intercept form."
-  answer="3x-10"
+  answer="y=3x-10"
   answerForm="slope-intercept-form"
   answerDisplay="$y = 3x - 10$"
-  hint="Parallel lines share the same slope. Substitute $m = 3$ and the point into $y - y_1 = m(x - x_1)$, then solve for y."
+  hint="Parallel lines share the same slope, so read the slope off the given line. Substitute it and the point into $y - y_1 = m(x - x_1)$, then solve for $y$."
 >}}
 
 ## Find an equation of a line perpendicular to a given line
@@ -271,12 +277,12 @@ reciprocal, $m_\perp = -\tfrac{1}{2}$. Substituting $m = -\tfrac{1}{2}$ and
 $(x_1, y_1) = (-2, 1)$:
 
 $$
-\begin{align}
-y - y_1 &= m(x - x_1) \\
-y - 1 &= -\frac{1}{2}(x - (-2)) \\
-y - 1 &= -\frac{1}{2}x - 1 \\
-y &= -\frac{1}{2}x
-\end{align}
+\begin{aligned}
+y - y_1 &= m(x - x_1) \\[4pt]
+y - 1 &= -\tfrac{1}{2}(x - (-2)) \\[4pt]
+y - 1 &= -\tfrac{1}{2}x - 1 \\[4pt]
+y &= -\tfrac{1}{2}x
+\end{aligned}
 $$
 
 **Example.** Find an equation of a line perpendicular to $x = 5$ that
@@ -287,12 +293,12 @@ horizontal, with slope $0$. Substituting $m_\perp = 0$ and
 $(x_1, y_1) = (3, -2)$:
 
 $$
-\begin{align}
-y - y_1 &= m(x - x_1) \\
-y - (-2) &= 0(x - 3) \\
-y + 2 &= 0 \\
+\begin{aligned}
+y - y_1 &= m(x - x_1) \\[4pt]
+y - (-2) &= 0(x - 3) \\[4pt]
+y + 2 &= 0 \\[4pt]
 y &= -2
-\end{align}
+\end{aligned}
 $$
 
 **Example.** Find an equation of a line perpendicular to $y = -4$ that
@@ -305,15 +311,15 @@ perpendicular line is $x = -4$.
 
 {{< fillin
   question="Find an equation of a line perpendicular to the line $y = \tfrac{1}{2} x - 3$ that contains the point $(6, 4)$. Write the equation in slope-intercept form."
-  answer="-2x+16"
+  answer="y=-2x+16"
   answerForm="slope-intercept-form"
   answerDisplay="$y = -2x + 16$"
-  hint="The perpendicular slope is the negative reciprocal of $\tfrac{1}{2}$. Substitute that slope and the point into $y - y_1 = m(x - x_1)$, then solve for y."
+  hint="The perpendicular slope is the negative reciprocal of the given line's slope. Substitute that slope and the point into $y - y_1 = m(x - x_1)$, then solve for $y$."
 >}}
 
 {{< multiplechoice
   question="A line is perpendicular to $x = 4$. What form must its equation take?"
-  hint="A line perpendicular to a vertical line is horizontal, and every horizontal line has slope 0."
+  hint="Decide whether the graph of $x = 4$ is vertical or horizontal, then picture a line crossing it at a right angle."
   answer="$y = mx + b$ with $m = 0$"
 >}}
 it cannot be written as an equation
@@ -334,52 +340,52 @@ when two points are known and the slope is found first.
 ### Find an equation of the line given the slope and $y$-intercept
 
 {{< fillin
-  question="Find the equation of a line with slope $4$ and $y$-intercept $(0,1)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="4x+1"
+  question="Find the equation of a line with slope $4$ and $y$-intercept $(0,1)$. Write it in slope-intercept form."
+  answer="y=4x+1"
   answerForm="slope-intercept-form"
   answerDisplay="$y=4x+1$"
-  hint="Substitute $m=4$ and $b=1$ directly into $y=mx+b$."
+  hint="Read $b$ from the $y$-intercept $(0,b)$, then substitute the slope and $b$ into $y=mx+b$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line with slope $8$ and $y$-intercept $(0,-6)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="8x-6"
+  question="Find the equation of a line with slope $8$ and $y$-intercept $(0,-6)$. Write it in slope-intercept form."
+  answer="y=8x-6"
   answerForm="slope-intercept-form"
   answerDisplay="$y=8x-6$"
-  hint="Substitute $m=8$ and $b=-6$ directly into $y=mx+b$."
+  hint="Read $b$ from the $y$-intercept $(0,b)$, then substitute the slope and $b$ into $y=mx+b$."
 >}}
 
 ### Find an equation of the line given the slope and a point
 
 {{< fillin
-  question="Find the equation of a line with $m=\tfrac{3}{8}$ that contains $(8,2)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="\frac{3}{8}x-1"
+  question="Find the equation of a line with $m=\tfrac{3}{8}$ that contains $(8,2)$. Write it in slope-intercept form."
+  answer="y=\frac{3}{8}x-1"
   answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{3}{8}x-1$"
   hint="Put the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line with $m=\tfrac{5}{6}$ that contains $(6,7)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="\frac{5}{6}x+2"
+  question="Find the equation of a line with $m=\tfrac{5}{6}$ that contains $(6,7)$. Write it in slope-intercept form."
+  answer="y=\frac{5}{6}x+2"
   answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{5}{6}x+2$"
-  hint="Use $y-7=\tfrac{5}{6}(x-6)$, then isolate $y$."
+  hint="Substitute the slope and the point into $y-y_1=m(x-x_1)$, then distribute and isolate $y$."
 >}}
 
 ### Find an equation of the line given two points
 
 {{< fillin
-  question="Find the equation of a line containing $(3,1)$ and $(2,5)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="-4x+13"
+  question="Find the equation of a line containing $(3,1)$ and $(2,5)$. Write it in slope-intercept form."
+  answer="y=-4x+13"
   answerForm="slope-intercept-form"
   answerDisplay="$y=-4x+13$"
-  hint="First compute $m=\tfrac{5-1}{2-3}$, then use either point in point-slope form and solve for $y$."
+  hint="Find the slope with $m=\tfrac{y_2-y_1}{x_2-x_1}$, then use either point in point-slope form and solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line containing $(2,7)$ and $(3,8)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="x+5"
+  question="Find the equation of a line containing $(2,7)$ and $(3,8)$. Write it in slope-intercept form."
+  answer="y=x+5"
   answerForm="slope-intercept-form"
   answerDisplay="$y=x+5$"
   hint="Find the slope from the two points, then substitute one point into $y=mx+b$ to find $b$."
@@ -388,39 +394,39 @@ when two points are known and the slope is found first.
 ### Find an equation of a line parallel to a given line
 
 {{< fillin
-  question="Find the equation of a line parallel to $y=3x+4$ that contains $(2,5)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="3x-1"
+  question="Find the equation of a line parallel to $y=3x+4$ that contains $(2,5)$. Write it in slope-intercept form."
+  answer="y=3x-1"
   answerForm="slope-intercept-form"
   answerDisplay="$y=3x-1$"
-  hint="A parallel line has slope $3$. Substitute the slope and $(2,5)$ into point-slope form, then solve for $y$."
+  hint="A parallel line has the same slope as the given line. Substitute that slope and the point into point-slope form, then solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line parallel to $y=-3x-1$ that contains $(2,-3)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="-3x+3"
+  question="Find the equation of a line parallel to $y=-3x-1$ that contains $(2,-3)$. Write it in slope-intercept form."
+  answer="y=-3x+3"
   answerForm="slope-intercept-form"
   answerDisplay="$y=-3x+3$"
-  hint="Keep the parallel slope $-3$, use the given point, and solve $y+3=-3(x-2)$ for $y$."
+  hint="Use the given line's slope for the parallel line, substitute it and the point into $y-y_1=m(x-x_1)$, and solve for $y$."
 >}}
 
 ### Find an equation of a line perpendicular to a given line
 
 {{< fillin
-  question="Find the equation of a line perpendicular to $y=-x+5$ that contains $(3,3)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="x"
+  question="Find the equation of a line perpendicular to $y=-x+5$ that contains $(3,3)$. Write it in slope-intercept form."
+  answer="y=x"
   answerForm="slope-intercept-form"
   answerDisplay="$y=x$"
-  hint="The negative reciprocal of $-1$ is $1$. Use slope $1$ and the given point in point-slope form."
+  hint="Take the negative reciprocal of the given line's slope, then use that slope and the point in point-slope form and solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line perpendicular to $y=\tfrac{2}{3}x-4$ that contains $(2,-4)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
-  answer="-\frac{3}{2}x-1"
+  question="Find the equation of a line perpendicular to $y=\tfrac{2}{3}x-4$ that contains $(2,-4)$. Write it in slope-intercept form."
+  answer="y=-\frac{3}{2}x-1"
   answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{3}{2}x-1$"
-  hint="Use the negative-reciprocal slope $-\tfrac{3}{2}$, substitute $(2,-4)$, and solve for $y$."
+  hint="Flip the given slope and change its sign to get the perpendicular slope, substitute it and the point into point-slope form, and solve for $y$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.6: Find the Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-6-find-the-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.6: Find the Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-6-find-the-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples and tables, and recreated the graph for the find-the-equation-from-a-graph example as an accessible figure; omitted the Be Prepared quiz, Media links, Key Concepts summary, Self Check checklist, and unselected Section Exercises; converted selected practice problems ("Try Its"), and the worked example with slope $-\tfrac{1}{3}$ through $(6, -4)$, into interactive exercises with instant feedback, and added one multiple-choice check on perpendicular lines; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

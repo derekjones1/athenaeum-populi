@@ -128,14 +128,18 @@ We check: $55 + 82 + 43 \overset{?}{=} 180$, and indeed
 $180 = 180$. ✓ The measure of the third angle is $43$ degrees.
 
 {{< fillin
-  question="The measures of two angles of a triangle are 31 and 128 degrees. Find the measure of the third angle."
+  question="The measures of two angles of a triangle are 31 and 128 degrees. Find the measure of the third angle, in degrees."
   answer="21"
+  answerForm="decimal"
+  answerDisplay="$21\degree$"
   hint="The three angle measures of a triangle add to 180 degrees."
 >}}
 
 {{< fillin
-  question="The measures of two angles of a triangle are 49 and 75 degrees. Find the measure of the third angle."
+  question="The measures of two angles of a triangle are 49 and 75 degrees. Find the measure of the third angle, in degrees."
   answer="56"
+  answerForm="decimal"
+  answerDisplay="$56\degree$"
   hint="The three angle measures of a triangle add to 180 degrees."
 >}}
 
@@ -153,14 +157,18 @@ We check: $24 \overset{?}{=} 4 + 9 + 11$, and indeed $24 = 24$. ✓ The third
 side is $11$ feet long.
 
 {{< fillin
-  question="The perimeter of a triangular garden is 48 feet. The lengths of two sides are 18 feet and 22 feet. How long is the third side?"
+  question="The perimeter of a triangular garden is 48 feet. The lengths of two sides are 18 feet and 22 feet. How long is the third side, in feet?"
   answer="8"
+  answerForm="decimal"
+  answerDisplay="$8$ feet"
   hint="Substitute the perimeter and the two known sides into $P = a + b + c$, then solve for the third side."
 >}}
 
 {{< fillin
-  question="The lengths of two sides of a triangular window are seven feet and five feet. The perimeter is 18 feet. How long is the third side?"
+  question="The lengths of two sides of a triangular window are seven feet and five feet. The perimeter is 18 feet. How long is the third side, in feet?"
   answer="6"
+  answerForm="decimal"
+  answerDisplay="$6$ feet"
   hint="Substitute the perimeter and the two known sides into $P = a + b + c$, then solve for the third side."
 >}}
 
@@ -178,15 +186,19 @@ We check: $90 \overset{?}{=} \tfrac{1}{2} \cdot 15 \cdot 12$, and indeed
 $90 = 90$. ✓ The height of the triangle is $12$ meters.
 
 {{< fillin
-  question="The area of a triangular painting is 126 square inches. The base is 18 inches. What is the height?"
+  question="The area of a triangular painting is 126 square inches. The base is 18 inches. What is the height, in inches?"
   answer="14"
-  hint="Substitute the area and the base into $A = \tfrac{1}{2}bh$, then solve for h."
+  answerForm="decimal"
+  answerDisplay="$14$ inches"
+  hint="Substitute the area and the base into $A = \tfrac{1}{2}bh$, then solve for $h$."
 >}}
 
 {{< fillin
-  question="A triangular tent door has an area of 15 square feet. The height is five feet. What is the base?"
+  question="A triangular tent door has an area of 15 square feet. The height is five feet. What is the base, in feet?"
   answer="6"
-  hint="Substitute the area and the height into $A = \tfrac{1}{2}bh$, then solve for b."
+  answerForm="decimal"
+  answerDisplay="$6$ feet"
+  hint="Substitute the area and the height into $A = \tfrac{1}{2}bh$, then solve for $b$."
 >}}
 
 The triangle properties above apply to all triangles. Now we look at one
@@ -207,14 +219,18 @@ We check: $180 \overset{?}{=} 90 + 28 + 62$, and indeed $180 = 180$. ✓ The
 measure of the third angle is $62\degree$.
 
 {{< fillin
-  question="One angle of a right triangle measures 56 degrees. What is the measure of the other small angle?"
+  question="One angle of a right triangle measures 56 degrees. What is the measure of the other small angle, in degrees?"
   answer="34"
+  answerForm="decimal"
+  answerDisplay="$34\degree$"
   hint="A right triangle's angles add to 180 degrees, and one of them is already 90 degrees."
 >}}
 
 {{< fillin
-  question="One angle of a right triangle measures 45 degrees. What is the measure of the other small angle?"
+  question="One angle of a right triangle measures 45 degrees. What is the measure of the other small angle, in degrees?"
   answer="45"
+  answerForm="decimal"
+  answerDisplay="$45\degree$"
   hint="A right triangle's angles add to 180 degrees, and one of them is already 90 degrees."
 >}}
 
@@ -236,15 +252,19 @@ $35 + 55 + 90 \overset{?}{=} 180$, and indeed $180 = 180$. ✓ The three
 angles measure $35\degree$, $55\degree$, and $90\degree$.
 
 {{< fillin
-  question="The measure of one angle of a right triangle is 50 degrees more than the measure of the smallest angle. Find the measure of the smallest angle."
+  question="The measure of one angle of a right triangle is 50 degrees more than the measure of the smallest angle. Find the measure of the smallest angle, in degrees."
   answer="20"
-  hint="Let a be the smallest angle. Then $a + (a + 50) + 90 = 180$. Solve for a."
+  answerForm="decimal"
+  answerDisplay="$20\degree$"
+  hint="Let $a$ be the smallest angle and write the other two angles in terms of $a$ (one of them is the right angle). The three add to $180\degree$; solve for $a$."
 >}}
 
 {{< fillin
-  question="The measure of one angle of a right triangle is 30 degrees more than the measure of the smallest angle. Find the measure of the smallest angle."
+  question="The measure of one angle of a right triangle is 30 degrees more than the measure of the smallest angle. Find the measure of the smallest angle, in degrees."
   answer="30"
-  hint="Let a be the smallest angle. Then $a + (a + 30) + 90 = 180$. Solve for a."
+  answerForm="decimal"
+  answerDisplay="$30\degree$"
+  hint="Name the smallest angle, write the other two angles as expressions (one of them is the right angle), set their sum equal to $180$, and solve."
 >}}
 
 ## Use the Pythagorean Theorem
@@ -323,12 +343,14 @@ hypotenuse is $5$.
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the hypotenuse of a right triangle whose legs are 6 and 8."
   answer="10"
+  answerForm="decimal"
   hint="Substitute $a = 6$ and $b = 8$ into $a^2 + b^2 = c^2$, then take the square root of both sides."
 >}}
 
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the hypotenuse of a right triangle whose legs are 12 and 5."
   answer="13"
+  answerForm="decimal"
   hint="Substitute $a = 12$ and $b = 5$ into $a^2 + b^2 = c^2$, then take the square root of both sides."
 >}}
 
@@ -341,7 +363,7 @@ $$a^2 + b^2 = c^2$$
 $$5^2 + b^2 = 13^2$$
 $$25 + b^2 = 169$$
 $$b^2 = 144$$
-$$b^2 = \sqrt{144}$$
+$$b = \sqrt{144}$$
 $$b = 12$$
 
 We check: $5^2 + 12^2 \overset{?}{=} 13^2$, that is,
@@ -351,13 +373,15 @@ leg is $12$.
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the leg of a right triangle whose other leg is 15 and whose hypotenuse is 17."
   answer="8"
+  answerForm="decimal"
   hint="Substitute $a = 15$ and $c = 17$ into $a^2 + b^2 = c^2$, then isolate $b^2$ and take the square root."
 >}}
 
 {{< fillin
   question="Use the Pythagorean Theorem to find the length of the leg of a right triangle whose other leg is 9 and whose hypotenuse is 15."
   answer="12"
-  hint="Substitute $a = 9$ and $c = 15$ into $a^2 + b^2 = c^2$, then isolate $b^2$ and take the square root. (This is a multiple of the $3-4-5$ triangle.)"
+  answerForm="decimal"
+  hint="Substitute $a = 9$ and $c = 15$ into $a^2 + b^2 = c^2$, then isolate $b^2$ and take the square root."
 >}}
 
 **Example.** Kelvin is building a gazebo and wants to brace each corner by
@@ -391,14 +415,18 @@ We check: $(7.1)^2 + (7.1)^2 \approx 10^2$. Yes. ✓ Kelvin should fasten each
 piece of wood approximately $7.1$ inches from the corner.
 
 {{< fillin
-  question="John puts the base of a 13-foot ladder five feet from the wall of his house. How far up the wall does the ladder reach?"
+  question="John puts the base of a 13-foot ladder five feet from the wall of his house. How far up the wall does the ladder reach, in feet?"
   answer="12"
+  answerForm="decimal"
+  answerDisplay="$12$ feet"
   hint="The ladder is the hypotenuse (13) and the ground distance is one leg (5). Solve $a^2 + b^2 = c^2$ for the other leg."
 >}}
 
 {{< fillin
-  question="Randy wants to attach a 17-foot string of lights to the top of the 15-foot mast of his sailboat. How far from the base of the mast should he attach the end of the light string?"
+  question="Randy wants to attach a 17-foot string of lights to the top of the 15-foot mast of his sailboat, running down to the deck. How far from the base of the mast should he attach the end of the light string, in feet?"
   answer="8"
+  answerForm="decimal"
+  answerDisplay="$8$ feet"
   hint="The mast is one leg (15) and the string of lights is the hypotenuse (17). Solve $a^2 + b^2 = c^2$ for the other leg."
 >}}
 
@@ -463,14 +491,18 @@ We check: $20 + 32 + 20 + 32 \overset{?}{=} 104$, and indeed
 $104 = 104$. ✓ The perimeter of the rectangle is $104$ meters.
 
 {{< fillin
-  question="The length of a rectangle is 120 yards and the width is 50 yards. What is the perimeter?"
+  question="The length of a rectangle is 120 yards and the width is 50 yards. What is the perimeter, in yards?"
   answer="340"
+  answerForm="decimal"
+  answerDisplay="$340$ yards"
   hint="Substitute $L = 120$ and $W = 50$ into $P = 2L + 2W$."
 >}}
 
 {{< fillin
-  question="The length of a rectangle is 62 feet and the width is 48 feet. What is the perimeter?"
+  question="The length of a rectangle is 62 feet and the width is 48 feet. What is the perimeter, in feet?"
   answer="220"
+  answerForm="decimal"
+  answerDisplay="$220$ feet"
   hint="Substitute $L = 62$ and $W = 48$ into $P = 2L + 2W$."
 >}}
 
@@ -487,15 +519,19 @@ We check: $168 \overset{?}{=} 14 \cdot 12$, and indeed $168 = 168$. ✓ The
 width of the room is $12$ feet.
 
 {{< fillin
-  question="The area of a rectangle is 598 square feet. The length is 23 feet. What is the width?"
+  question="The area of a rectangle is 598 square feet. The length is 23 feet. What is the width, in feet?"
   answer="26"
-  hint="Substitute $A = 598$ and $L = 23$ into A = LW, then divide both sides by L."
+  answerForm="decimal"
+  answerDisplay="$26$ feet"
+  hint="Substitute $A = 598$ and $L = 23$ into $A = LW$, then divide both sides by $L$."
 >}}
 
 {{< fillin
-  question="The width of a rectangle is 21 meters. The area is 609 square meters. What is the length?"
+  question="The width of a rectangle is 21 meters. The area is 609 square meters. What is the length, in meters?"
   answer="29"
-  hint="Substitute $A = 609$ and $W = 21$ into A = LW, then divide both sides by W."
+  answerForm="decimal"
+  answerDisplay="$29$ meters"
+  hint="Substitute $A = 609$ and $W = 21$ into $A = LW$, then divide both sides by $W$."
 >}}
 
 **Example.** Find the length of a rectangle with perimeter $50$ inches and
@@ -514,13 +550,15 @@ $50 = 50$. ✓ The length is $15$ inches.
 {{< fillin
   question="Find the length of a rectangle with perimeter 80 and width 25."
   answer="15"
-  hint="Substitute $P = 80$ and $W = 25$ into $P = 2L + 2W$, then solve for L."
+  answerForm="decimal"
+  hint="Substitute $P = 80$ and $W = 25$ into $P = 2L + 2W$, then solve for $L$."
 >}}
 
 {{< fillin
   question="Find the length of a rectangle with perimeter 30 and width 6."
   answer="9"
-  hint="Substitute $P = 30$ and $W = 6$ into $P = 2L + 2W$, then solve for L."
+  answerForm="decimal"
+  hint="Substitute $P = 30$ and $W = 6$ into $P = 2L + 2W$, then solve for $L$."
 >}}
 
 We have solved problems where either the length or the width was given,
@@ -548,15 +586,19 @@ $14 + 12 + 14 + 12 = 52$, this checks. ✓ The length is $14$ feet and the
 width is $12$ feet.
 
 {{< fillin
-  question="The width of a rectangle is seven meters less than the length. The perimeter is 58 meters. Find the length."
+  question="The width of a rectangle is seven meters less than the length. The perimeter is 58 meters. Find the length, in meters."
   answer="18"
-  hint="Let L = length and $W = L - 7$. Substitute into $P = 2L + 2W$ with $P = 58$, then solve for L."
+  answerForm="decimal"
+  answerDisplay="$18$ meters"
+  hint="Let $L$ be the length and write the width in terms of $L$. Substitute both into $P = 2L + 2W$ with $P = 58$, then solve for $L$."
 >}}
 
 {{< fillin
-  question="The length of a rectangle is eight feet more than the width. The perimeter is 60 feet. Find the width."
+  question="The length of a rectangle is eight feet more than the width. The perimeter is 60 feet. Find the width, in feet."
   answer="11"
-  hint="Let W = width and $L = W + 8$. Substitute into $P = 2L + 2W$ with $P = 60$, then solve for W."
+  answerForm="decimal"
+  answerDisplay="$11$ feet"
+  hint="Let $W$ be the width and write the length in terms of $W$. Substitute both into $P = 2L + 2W$ with $P = 60$, then solve for $W$."
 >}}
 
 **Example.** The length of a rectangle is four centimeters more than twice
@@ -580,13 +622,15 @@ $32 = 32$. ✓ The length is $12$ cm and the width is $4$ cm.
 {{< fillin
   question="The length of a rectangle is eight more than twice the width. The perimeter is 64. Find the width."
   answer="8"
-  hint="Let W = width and $L = 2W + 8$. Substitute into $P = 2L + 2W$ with $P = 64$, then solve for W."
+  answerForm="decimal"
+  hint="Let $W$ be the width and write the length in terms of $W$. Substitute both into $P = 2L + 2W$ with $P = 64$, then solve for $W$."
 >}}
 
 {{< fillin
   question="The width of a rectangle is six less than twice the length. The perimeter is 18. Find the length."
   answer="5"
-  hint="Let L = length and $W = 2L - 6$. Substitute into $P = 2L + 2W$ with $P = 18$, then solve for L."
+  answerForm="decimal"
+  hint="Let $L$ be the length and write the width in terms of $L$. Substitute both into $P = 2L + 2W$ with $P = 18$, then solve for $L$."
 >}}
 
 **Example.** The perimeter of a rectangular swimming pool is $150$ feet. The
@@ -609,15 +653,19 @@ $150 = 150$. ✓ The length of the pool is $45$ feet and the width is $30$
 feet.
 
 {{< fillin
-  question="The perimeter of a rectangular swimming pool is 200 feet. The length is 40 feet more than the width. Find the width."
+  question="The perimeter of a rectangular swimming pool is 200 feet. The length is 40 feet more than the width. Find the width, in feet."
   answer="30"
-  hint="Let W = width and $L = W + 40$. Substitute into $P = 2L + 2W$ with $P = 200$, then solve for W."
+  answerForm="decimal"
+  answerDisplay="$30$ feet"
+  hint="Let $W$ be the width and write the length in terms of $W$. Substitute both into $P = 2L + 2W$ with $P = 200$, then solve for $W$."
 >}}
 
 {{< fillin
-  question="The length of a rectangular garden is 30 yards more than the width. The perimeter is 300 yards. Find the width."
+  question="The length of a rectangular garden is 30 yards more than the width. The perimeter is 300 yards. Find the width, in yards."
   answer="60"
-  hint="Let W = width and $L = W + 30$. Substitute into $P = 2L + 2W$ with $P = 300$, then solve for W."
+  answerForm="decimal"
+  answerDisplay="$60$ yards"
+  hint="Let $W$ be the width and write the length in terms of $W$. Substitute both into $P = 2L + 2W$ with $P = 300$, then solve for $W$."
 >}}
 
 ## Key terms
@@ -638,15 +686,17 @@ the lengths of the legs and $c$ is the length of the hypotenuse.
 ### Solve applications using properties of triangles
 
 {{< fillin
-  question="The measures of two angles of a triangle are 26 and 98 degrees. Find the measure of the third angle."
+  question="The measures of two angles of a triangle are 26 and 98 degrees. Find the measure of the third angle, in degrees."
   answer="56"
+  answerForm="decimal"
   answerDisplay="$56\degree$"
   hint="The three angle measures of a triangle add to $180\degree$. Subtract the two known measures from $180\degree$."
 >}}
 
 {{< fillin
-  question="If a triangle has sides 6 feet and 9 feet and the perimeter is 23 feet, how long is the third side?"
+  question="If a triangle has sides 6 feet and 9 feet and the perimeter is 23 feet, how long is the third side, in feet?"
   answer="8"
+  answerForm="decimal"
   answerDisplay="$8$ feet"
   hint="The perimeter is the sum of all three side lengths. Subtract the two known lengths from $23$ feet."
 >}}
@@ -666,10 +716,11 @@ the lengths of the legs and $c$ is the length of the hypotenuse.
 </div>
 
 {{< fillin
-  question="A 13-foot string of lights will be attached to the top of a 12-foot pole for a holiday display, as shown. How far from the base of the pole should the end of the string of lights be anchored?"
+  question="A 13-foot string of lights will be attached to the top of a 12-foot pole for a holiday display, as shown. How far from the base of the pole should the end of the string of lights be anchored, in feet?"
   answer="5"
+  answerForm="decimal"
   answerDisplay="$5$ feet"
-  hint="Treat the string as the hypotenuse. In $a^2 + 12^2 = 13^2$, solve for the horizontal leg $a$."
+  hint="The pole meets the ground at a right angle, so the string is the hypotenuse. Solve $a^2 + b^2 = c^2$ for the missing leg."
 >}}
 
 <div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A square flower garden with side length 10 feet and a diagonal path from one corner to the opposite corner.","unit":22,"padding":38,"polygons":[{"points":[[0,0],[10,0],[10,10],[0,10]],"edgeLabels":["10 ft",null,null,null]}],"segments":[{"from":[0,0],"to":[10,10],"label":"path"}]}'>
@@ -685,28 +736,31 @@ the lengths of the legs and $c$ is the length of the hypotenuse.
 </div>
 
 {{< fillin
-  question="Chi is planning to put a path of paving stones through her flower garden, as shown. The flower garden is a square with side 10 feet. What will the length of the path be? Round to the nearest tenth of a foot."
+  question="Chi is planning to put a path of paving stones through her flower garden, as shown. The flower garden is a square with side 10 feet. What will the length of the path be, in feet? Round to the nearest tenth."
   answer="14.1"
+  answerForm="decimal"
   answerDisplay="$14.1$ feet"
-  hint="The path is the hypotenuse of a right triangle whose legs are both $10$ feet. Compute $\sqrt{10^2+10^2}$ and round to the nearest tenth."
+  hint="The diagonal path and two sides of the square form a right triangle, with the path as its hypotenuse. Use the Pythagorean Theorem, then round to the nearest tenth."
 >}}
 
 ### Solve applications using rectangle properties
 
 {{< fillin
-  question="The length of a rectangle is 85 feet and the width is 45 feet. What is the perimeter?"
+  question="The length of a rectangle is 85 feet and the width is 45 feet. What is the perimeter, in feet?"
   answer="260"
+  answerForm="decimal"
   answerDisplay="$260$ feet"
   hint="Use $P=2L+2W$ and substitute $L=85$ and $W=45$."
 >}}
 
 {{< fillin
-  question="The area of a rectangle is 414 square meters. The length is 18 meters. What is the width?"
+  question="The area of a rectangle is 414 square meters. The length is 18 meters. What is the width, in meters?"
   answer="23"
+  answerForm="decimal"
   answerDisplay="$23$ meters"
-  hint="Substitute into $A=LW$ to get $414=18W$, then divide by $18$."
+  hint="Substitute the area and the length into $A=LW$, then divide both sides by the length."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.4: Solve Geometry Applications: Triangles, Rectangles, and the Pythagorean Theorem](https://openstax.org/books/elementary-algebra-2e/pages/3-4-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the triangle, right-triangle, and rectangle diagrams as accessible inline graphics; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.4: Solve Geometry Applications: Triangles, Rectangles, and the Pythagorean Theorem](https://openstax.org/books/elementary-algebra-2e/pages/3-4-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the triangle, triangle-height, right-triangle, gazebo-brace, and rectangle diagrams as accessible inline graphics, and omitted the other figures (the worked-example step drawings, the right-triangle box figure, the rug grid, the Try It triangles, and the ladder and sailboat pictures); condensed the seven-step worked-example tables into prose and stacked equations, and corrected the leg example's square-root step, which the source prints as $b^2=\sqrt{144}$, to $b=\sqrt{144}$; replaced the Key Concepts list with a Key terms list; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, restating their diagrams as prose and asking for the smallest angle or one dimension where the source asks for all three angles or both dimensions; and adapted selected end-of-section exercises into the section-final interactive Practice block, redrawing the string-of-lights and garden-path pictures as labeled diagrams.</small>

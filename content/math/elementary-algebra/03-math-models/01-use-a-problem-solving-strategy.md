@@ -125,14 +125,16 @@ price of the purse was \$36.
 {{< fillin
   question="Joaquin bought a bookcase on sale for \$120, which was two-thirds of the original price. What was the original price of the bookcase, in dollars?"
   answer="180"
+  answerForm="decimal"
   answerDisplay="\$180"
-  hint="Let p = the original price. 120 is two-thirds of p, so $120 = \tfrac{2}{3}p$. Multiply both sides by $\tfrac{3}{2}$."
+  hint="Let $p =$ the original price. Restate the problem as one sentence saying what fraction of the original price the sale price is, translate it into an equation, and multiply both sides by the reciprocal of the fraction."
 >}}
 
 {{< fillin
   question="Two-fifths of the songs in Mariel's playlist are country. If there are 16 country songs, what is the total number of songs in the playlist?"
   answer="40"
-  hint="Let s = the total number of songs. 16 is two-fifths of s, so $16 = \tfrac{2}{5}s$."
+  answerForm="decimal"
+  hint="Let $s =$ the total number of songs. The country songs are a fraction of the total: translate that sentence into an equation, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 Let's try this approach with another example, where the given quantities
@@ -178,13 +180,15 @@ eleven girls? Twice 4 boys is 8; three more than 8 is 11. It checks!
 {{< fillin
   question="Guillermo bought textbooks and notebooks at the bookstore. The number of textbooks was 3 more than twice the number of notebooks. He bought 7 textbooks. How many notebooks did he buy?"
   answer="2"
-  hint="Let n = the number of notebooks. The number of textbooks (7) is three more than twice n, so $7 = 2n + 3$."
+  answerForm="decimal"
+  hint="Let $n =$ the number of notebooks. Write 'three more than twice the number of notebooks' in terms of $n$, set it equal to the number of textbooks, and solve."
 >}}
 
 {{< fillin
   question="Gerry worked Sudoku puzzles and crossword puzzles this week. The number of Sudoku puzzles he completed is eight more than twice the number of crossword puzzles. He completed 22 Sudoku puzzles. How many crossword puzzles did he do?"
   answer="7"
-  hint="Let c = the number of crossword puzzles. The number of Sudoku puzzles (22) is eight more than twice c, so $22 = 2c + 8$."
+  answerForm="decimal"
+  hint="Let $c =$ the number of crossword puzzles. Write 'eight more than twice the number of crossword puzzles' in terms of $c$, set it equal to the number of Sudoku puzzles, and solve."
 >}}
 
 ## Solve Number Problems
@@ -217,13 +221,15 @@ $$n - 6 = 13$$
 {{< fillin
   question="The difference of a number and eight is 17. Find the number."
   answer="25"
-  hint="Translate the difference of the number and 8 is 17 as $n - 8 = 17$."
+  answerForm="decimal"
+  hint="Name the number with a variable, translate the sentence into an equation as in the example above, and undo the subtraction."
 >}}
 
 {{< fillin
-  question="The difference of a number and eleven is -7. Find the number."
+  question="The difference of a number and eleven is $-7$. Find the number."
   answer="4"
-  hint="Translate the difference of the number and 11 is -7 as $n - 11 = -7$."
+  answerForm="decimal"
+  hint="Name the number with a variable, translate the sentence into an equation as in the example above, and undo the subtraction."
 >}}
 
 **Example.** The sum of twice a number and seven is 15. Find the number.
@@ -256,13 +262,15 @@ many as you need.
 {{< fillin
   question="The sum of four times a number and two is 14. Find the number."
   answer="3"
-  hint="Translate as $4n + 2 = 14$, then isolate n."
+  answerForm="decimal"
+  hint="Name the number with a variable and translate the sentence into an equation; then undo the addition before the multiplication."
 >}}
 
 {{< fillin
   question="The sum of three times a number and seven is 25. Find the number."
   answer="6"
-  hint="Translate as $3n + 7 = 25$, then isolate n."
+  answerForm="decimal"
+  hint="Name the number with a variable and translate the sentence into an equation; then undo the addition before the multiplication."
 >}}
 
 Some number word problems ask us to find two or more numbers. It may be
@@ -307,15 +315,17 @@ checks!
 **Step 7. Answer.** The numbers are 8 and 13.
 
 {{< fillin
-  question="One number is six more than another. The sum of the numbers is twenty-four. Find the smaller of the two numbers."
-  answer="9"
-  hint="Let n = the smaller number and $n + 6$ = the larger. Their sum is $n + (n + 6) = 24$."
+  question="One number is six more than another. The sum of the numbers is twenty-four. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="9, 15"
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the other in terms of $n$. Set the sum of the two expressions equal to twenty-four, solve for $n$, then find the other number."
 >}}
 
 {{< fillin
-  question="The sum of two numbers is fifty-eight. One number is four more than the other. Find the smaller of the two numbers."
-  answer="27"
-  hint="Let n = the smaller number and $n + 4$ = the larger. Their sum is $n + (n + 4) = 58$."
+  question="The sum of two numbers is fifty-eight. One number is four more than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="27, 31"
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the other in terms of $n$. Set the sum of the two expressions equal to fifty-eight, solve for $n$, then find the other number."
 >}}
 
 **Example.** The sum of two numbers is negative fourteen. One number is
@@ -335,7 +345,7 @@ $$
 & n + n - 4 &=& -14 \\[4pt]
 \text{Combine like terms.} & 2n - 4 &=& -14 \\[4pt]
 \text{Add 4 to each side and simplify.} & 2n &=& -10 \\[4pt]
-\text{Simplify.} & n &=& -5 \quad \text{(1st number)}
+\text{Divide each side by 2.} & n &=& -5 \quad \text{(1st number)}
 \end{array}
 $$
 
@@ -347,15 +357,17 @@ $-14$? $-5 + (-9) = -14$. Yes, it checks!
 **Answer.** The numbers are $-5$ and $-9$.
 
 {{< fillin
-  question="The sum of two numbers is negative twenty-three. One number is seven less than the other. Find the smaller of the two numbers."
-  answer="-15"
-  hint="Let n = the larger number and $n - 7$ = the smaller. Their sum is $n + (n - 7) = -23$."
+  question="The sum of two numbers is negative twenty-three. One number is seven less than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-15, -8"
+  answerForm="decimal"
+  hint="Let $n =$ the first number and write the one that is seven less in terms of $n$. Set the sum of the two expressions equal to negative twenty-three, solve for $n$, then find the second number."
 >}}
 
 {{< fillin
-  question="The sum of two numbers is -18. One number is 40 more than the other. Find the smaller of the two numbers."
-  answer="-29"
-  hint="Let n = the larger number and $n - 40$ = the smaller. Their sum is $n + (n - 40) = -18$."
+  question="The sum of two numbers is $-18$. One number is 40 more than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-29, 11"
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the one that is 40 more in terms of $n$. Set the sum of the two expressions equal to $-18$, solve for $n$, then find the other number."
 >}}
 
 **Example.** One number is ten more than twice another. Their sum is one.
@@ -387,15 +399,17 @@ Is their sum 1? $-3 + 4 = 1$. Yes, it checks!
 **Answer.** The numbers are $-3$ and $4$.
 
 {{< fillin
-  question="One number is eight more than twice another. Their sum is negative four. Find the smaller of the two numbers."
-  answer="-4"
-  hint="Let x = the first number and $2x + 8$ = the second. Their sum is $x + (2x + 8) = -4$."
+  question="One number is eight more than twice another. Their sum is negative four. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-4, 0"
+  answerForm="decimal"
+  hint="Let $x =$ the other number and write the number that is eight more than twice it in terms of $x$. Set the sum of the two expressions equal to negative four, solve for $x$, then substitute to find the second number."
 >}}
 
 {{< fillin
-  question="One number is three more than three times another. Their sum is -5. Find the smaller of the two numbers."
-  answer="-3"
-  hint="Let x = the first number and $3x + 3$ = the second. Their sum is $x + (3x + 3) = -5$."
+  question="One number is three more than three times another. Their sum is $-5$. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-3, -2"
+  answerForm="decimal"
+  hint="Let $x =$ the other number and write the number that is three more than three times it in terms of $x$. Set the sum of the two expressions equal to $-5$, solve for $x$, then substitute to find the second number."
 >}}
 
 ### Consecutive Integers
@@ -404,14 +418,26 @@ Some number problems involve **consecutive integers**. Consecutive
 integers are integers that immediately follow each other. Examples of
 consecutive integers are:
 
-$$1, 2, 3, 4 \qquad\qquad -10, -9, -8, -7 \qquad\qquad 150, 151, 152, 153$$
+$$
+\begin{array}{l}
+1, 2, 3, 4 \\[4pt]
+-10, -9, -8, -7 \\[4pt]
+150, 151, 152, 153
+\end{array}
+$$
 
 Notice that each number is one more than the number preceding it. So if we
 define the first integer as $n$, the next consecutive integer is $n + 1$.
 The one after that is one more than $n + 1$, so it is $n + 1 + 1$, which is
 $n + 2$:
 
-$$n = \text{1st integer} \qquad n + 1 = \text{2nd consecutive integer} \qquad n + 2 = \text{3rd consecutive integer} \ldots$$
+$$
+\begin{array}{rcl}
+n &=& \text{1st integer} \\[4pt]
+n + 1 &=& \text{2nd consecutive integer} \\[4pt]
+n + 2 &=& \text{3rd consecutive integer} \ldots
+\end{array}
+$$
 
 **Example.** The sum of two consecutive integers is 47. Find the numbers.
 
@@ -442,15 +468,17 @@ The next consecutive integer is $n + 1 = 23 + 1 = 24$.
 **Step 7. Answer.** The two consecutive integers are 23 and 24.
 
 {{< fillin
-  question="The sum of two consecutive integers is 95. Find the smaller of the two integers."
-  answer="47"
-  hint="Let n = the first integer and $n + 1$ = the next. Their sum is $n + (n + 1) = 95$."
+  question="The sum of two consecutive integers is 95. Find the numbers. Enter both integers separated by a comma, smaller first."
+  answer="47, 48"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next consecutive integer in terms of $n$. Set their sum equal to $95$, solve for $n$, then find the second integer."
 >}}
 
 {{< fillin
-  question="The sum of two consecutive integers is -31. Find the smaller of the two integers."
-  answer="-16"
-  hint="Let n = the first integer and $n + 1$ = the next. Their sum is $n + (n + 1) = -31$."
+  question="The sum of two consecutive integers is $-31$. Find the numbers. Enter both integers separated by a comma, smaller first."
+  answer="-16, -15"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next consecutive integer in terms of $n$. Set their sum equal to $-31$, solve for $n$, then find the second integer."
 >}}
 
 **Example.** Find three consecutive integers whose sum is $-42$.
@@ -481,15 +509,17 @@ $n + 2 = -15 + 2 = -13$.
 **Answer.** The three consecutive integers are $-13$, $-14$, and $-15$.
 
 {{< fillin
-  question="Find three consecutive integers whose sum is -96. Enter the smallest of the three."
-  answer="-33"
-  hint="Let n, $n+1$, $n+2$ be the three integers. Their sum is $3n + 3 = -96$."
+  question="Find three consecutive integers whose sum is $-96$. Enter all three separated by commas, smallest first."
+  answer="-33, -32, -31"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $-96$, solve for $n$, then find the other two."
 >}}
 
 {{< fillin
-  question="Find three consecutive integers whose sum is -36. Enter the smallest of the three."
-  answer="-13"
-  hint="Let n, $n+1$, $n+2$ be the three integers. Their sum is $3n + 3 = -36$."
+  question="Find three consecutive integers whose sum is $-36$. Enter all three separated by commas, smallest first."
+  answer="-13, -12, -11"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $-36$, solve for $n$, then find the other two."
 >}}
 
 ### Consecutive Even and Odd Integers
@@ -499,18 +529,43 @@ to include **consecutive even integers** and **consecutive odd integers**.
 Consecutive even integers are even integers that immediately follow one
 another. Examples of consecutive even integers are:
 
-$$18, 20, 22 \qquad\qquad 64, 66, 68 \qquad\qquad -12, -10, -8$$
+$$
+\begin{array}{l}
+18, 20, 22 \\[4pt]
+64, 66, 68 \\[4pt]
+-12, -10, -8
+\end{array}
+$$
 
 Notice each integer is 2 more than the number preceding it. If we call the
 first one $n$, then the next one is $n + 2$. The next one would be
 $n + 2 + 2$, or $n + 4$:
 
-$$n = \text{1st even integer} \qquad n + 2 = \text{2nd consecutive even integer} \qquad n + 4 = \text{3rd consecutive even integer} \ldots$$
+$$
+\begin{array}{rcl}
+n &=& \text{1st even integer} \\[4pt]
+n + 2 &=& \text{2nd consecutive even integer} \\[4pt]
+n + 4 &=& \text{3rd consecutive even integer} \ldots
+\end{array}
+$$
 
 Consecutive odd integers are odd integers that immediately follow one
 another. Consider the consecutive odd integers 77, 79, and 81:
 
-$$n, \; n + 2, \; n + 4 \qquad n = \text{1st odd integer} \qquad n + 2 = \text{2nd consecutive odd integer} \qquad n + 4 = \text{3rd consecutive odd integer} \ldots$$
+$$
+\begin{array}{ccc}
+77, & 79, & 81 \\[4pt]
+n, & n + 2, & n + 4
+\end{array}
+$$
+
+$$
+\begin{array}{rcl}
+n &=& \text{1st odd integer} \\[4pt]
+n + 2 &=& \text{2nd consecutive odd integer} \\[4pt]
+n + 4 &=& \text{3rd consecutive odd integer} \ldots
+\end{array}
+$$
 
 Does it seem strange to add 2 (an even number) to get from one odd integer
 to the next? Whether the problem asks for consecutive even numbers or odd
@@ -545,15 +600,17 @@ $n + 4 = 26 + 4 = 30$.
 **Answer.** The three consecutive integers are 26, 28, and 30.
 
 {{< fillin
-  question="Find three consecutive even integers whose sum is 102. Enter the smallest of the three."
-  answer="32"
-  hint="Let n, $n+2$, $n+4$ be the three even integers. Their sum is $3n + 6 = 102$."
+  question="Find three consecutive even integers whose sum is 102. Enter all three separated by commas, smallest first."
+  answer="32, 34, 36"
+  answerForm="decimal"
+  hint="Let $n =$ the first even integer and write the next two consecutive even integers in terms of $n$. Set the sum of all three equal to $102$, solve for $n$, then find the other two."
 >}}
 
 {{< fillin
-  question="Find three consecutive even integers whose sum is -24. Enter the smallest of the three."
-  answer="-10"
-  hint="Let n, $n+2$, $n+4$ be the three even integers. Their sum is $3n + 6 = -24$."
+  question="Find three consecutive even integers whose sum is $-24$. Enter all three separated by commas, smallest first."
+  answer="-10, -8, -6"
+  answerForm="decimal"
+  hint="Let $n =$ the first even integer and write the next two consecutive even integers in terms of $n$. Set the sum of all three equal to $-24$, solve for $n$, then find the other two."
 >}}
 
 **Example.** A married couple together earns \$110,000 a year. The wife
@@ -593,21 +650,22 @@ The amount the wife earns is $2h - 16{,}000 = 2(42{,}000) - 16{,}000 =
 {{< fillin
   question="According to the National Automobile Dealers Association, the average cost of a car in 2014 was \$28,500. This was \$1,500 less than 6 times the cost in 1975. What was the average cost of a car in 1975, in dollars?"
   answer="5000"
+  answerForm="decimal"
   answerDisplay="\$5,000"
-  hint="Let c = the cost in 1975. The 2014 cost $(28,500)$ is 1,500 less than 6 times c, so $28{,}500 = 6c - 1{,}500$."
+  hint="Let $c =$ the cost in 1975. Write '\$1,500 less than 6 times the cost in 1975' in terms of $c$, set it equal to the 2014 cost, and solve."
 >}}
 
 {{< fillin
   question="U.S. Census data shows that the median price of a new home in the United States in November 2014 was \$280,900. This was \$10,700 more than 14 times the price in November 1964. What was the median price of a new home in November 1964, in dollars?"
   answer="19300"
+  answerForm="decimal"
   answerDisplay="\$19,300"
-  hint="Let p = the median price in 1964. The 2014 price $(280,900)$ is 10,700 more than 14 times p, so $280{,}900 = 14p + 10{,}700$."
+  hint="Let $p =$ the median price in November 1964. Write '\$10,700 more than 14 times the price in November 1964' in terms of $p$, set it equal to the 2014 price, and solve."
 >}}
 
 ## Key terms
 
-**solution of an equation** — a value of a variable that makes a true
-statement when substituted into the equation. **consecutive integers** —
+**consecutive integers** —
 integers that immediately follow each other, each one more than the
 previous ($n$, $n+1$, $n+2$, ...). **consecutive even integers** — even
 integers that immediately follow each other, each two more than the
@@ -622,22 +680,25 @@ pattern as consecutive even integers.
 {{< fillin
   question="Patty paid \$35 for a purse on sale for \$10 off the original price. What was the original price of the purse, in dollars?"
   answer="45"
+  answerForm="decimal"
   answerDisplay="\$45"
-  hint="Let $p =$ the original price. The sale took ten dollars off that price, so translate as $p - 10 = 35$ and solve for $p$."
+  hint="Let $p =$ the original price. Restate the problem as one sentence relating the price Patty paid, the discount, and the original price; translate it into an equation and solve for $p$."
 >}}
 
 {{< fillin
   question="Minh spent \$6.25 on five sticker books to give his nephews. Find the cost of each sticker book, in dollars."
   answer="1.25"
+  answerForm="decimal"
   answerDisplay="\$1.25"
-  hint="Let $c =$ the cost of one sticker book. Five books at the same price cost $5c$, so solve $5c = 6.25$."
+  hint="Let $c =$ the cost of one sticker book. The amount spent is the number of books times the cost of each: translate that sentence into an equation and undo the multiplication."
 >}}
 
 {{< fillin
   question="Tom paid \$1,166.40 for a new refrigerator, including \$86.40 tax. What was the price of the refrigerator before tax, in dollars?"
   answer="1080"
+  answerForm="decimal"
   answerDisplay="\$1,080"
-  hint="Let $p =$ the price before tax. The total is the price plus the tax, so solve $p + 86.40 = 1{,}166.40$."
+  hint="Let $p =$ the price before tax. The amount paid is the price plus the tax: translate that sentence into an equation and undo the addition."
 >}}
 
 ### Use a problem-solving strategy for word problems
@@ -645,19 +706,22 @@ pattern as consecutive even integers.
 {{< fillin
   question="Two-thirds of the children in the fourth-grade class are girls. If there are 20 girls, what is the total number of children in the class?"
   answer="30"
-  hint="Let $c =$ the total number of children. Translate as $20 = \tfrac{2}{3}c$, then multiply both sides by $\tfrac{3}{2}$."
+  answerForm="decimal"
+  hint="Let $c =$ the total number of children. The girls are a fraction of the total: translate that sentence into an equation, then multiply both sides by the reciprocal of the fraction."
 >}}
 
 {{< fillin
   question="There are 16 girls in a school club. The number of girls is four more than twice the number of boys. Find the number of boys."
   answer="6"
-  hint="Let $b =$ the number of boys. Translate 'four more than twice the number of boys' as $2b + 4$, then solve $16 = 2b + 4$."
+  answerForm="decimal"
+  hint="Let $b =$ the number of boys. Write 'four more than twice the number of boys' in terms of $b$, set it equal to the number of girls, and solve."
 >}}
 
 {{< fillin
   question="Huong is organizing paperback and hardback books for her club's used book sale. The number of paperbacks is 12 less than three times the number of hardbacks. Huong had 162 paperbacks. How many hardback books were there?"
   answer="58"
-  hint="Let $h =$ the number of hardback books. Translate '12 less than three times the number of hardbacks' as $3h - 12$, then solve $162 = 3h - 12$."
+  answerForm="decimal"
+  hint="Let $h =$ the number of hardback books. Write '12 less than three times the number of hardbacks' in terms of $h$, set it equal to the number of paperbacks, and solve."
 >}}
 
 ### Solve number problems
@@ -665,33 +729,38 @@ pattern as consecutive even integers.
 {{< fillin
   question="The difference of twice a number and seven is 17. Find the number."
   answer="12"
-  hint="Let $n =$ the number. Translate the difference as $2n - 7$, then solve $2n - 7 = 17$."
+  answerForm="decimal"
+  hint="Let $n =$ the number. Write 'the difference of twice a number and seven' in terms of $n$, set it equal to 17, and undo the subtraction before the multiplication."
 >}}
 
 {{< fillin
   question="Three times the sum of a number and nine is 12. Find the number."
   answer="-5"
-  hint="Let $n =$ the number. The sum is formed first, so translate as $3(n + 9) = 12$ and divide by $3$ before subtracting."
+  answerForm="decimal"
+  hint="Let $n =$ the number. 'Three times the sum' multiplies the whole sum by 3, so keep the sum in parentheses when you translate; then undo the multiplication before the addition."
 >}}
 
 {{< fillin
   question="One number is 14 less than another. If their sum is increased by seven, the result is 85. Find the numbers. Enter both numbers separated by a comma, smaller first."
   answer="32, 46"
-  hint="Let $n =$ the larger number, so $n - 14$ is the smaller. Solve $n + (n - 14) + 7 = 85$, then find both numbers."
+  answerForm="decimal"
+  hint="Let $n =$ the larger number and write the one that is 14 less in terms of $n$. Add the two expressions, increase the sum by seven, set the result equal to 85, solve for $n$, then find the other number."
 >}}
 
 {{< fillin
   question="The sum of two numbers is 14. One number is two less than three times the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
   answer="4, 10"
-  hint="Let $n =$ the first number, so $3n - 2$ is the other. Solve $n + (3n - 2) = 14$, then use $n$ to find the second number."
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the number that is two less than three times it in terms of $n$. Set the sum of the two expressions equal to 14, solve for $n$, then substitute to find the second number."
 >}}
 
 {{< fillin
   question="The sum of three consecutive integers is 78. Find the integers. Enter all three separated by commas, smallest first."
   answer="25, 26, 27"
-  hint="Let $n =$ the smallest integer, so the next two are $n + 1$ and $n + 2$. Solve $n + (n + 1) + (n + 2) = 78$."
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to 78, solve for $n$, then find the other two."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.1: Use a Problem-Solving Strategy](https://openstax.org/books/elementary-algebra-2e/pages/3-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the negative/positive self-talk thought-bubble figures as prose, condensed the seven-step worked examples' two-column tables into labeled steps, and omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing on the Everyday Math exercises for the positive-attitude objective's thin exercise group.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.1: Use a Problem-Solving Strategy](https://openstax.org/books/elementary-algebra-2e/pages/3-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the negative/positive self-talk thought-bubble figures as prose, condensed the seven-step worked examples' two-column tables into labeled steps, and omitted the Be Prepared quiz, the handwritten homework-solution figure, the Key Concepts summary, and the Self Check checklist; added a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing on the Everyday Math exercises for the positive-attitude objective's thin exercise group.</small>

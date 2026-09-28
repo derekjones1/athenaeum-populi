@@ -60,14 +60,14 @@ $$
 Since $x = \tfrac{3}{2}$ results in a true equation ($4$ is in fact equal to
 $4$), $\tfrac{3}{2}$ is a solution to the equation $4x - 2 = 2x + 1$.
 
-{{< fillin
-  question="Substitute $y = \tfrac{4}{3}$ into both sides of $9y + 2 = 6y + 3$ and simplify. What value does the left side, $9y + 2$, come out to?"
-  answer="14"
-  hint="9 times $\tfrac{4}{3}$ is $\tfrac{36}{3}$, which simplifies to 12. Then add 2."
+{{< multiplechoice
+  question="Is $y = \tfrac{4}{3}$ a solution of $9y + 2 = 6y + 3$?"
+  answer="no"
+  hint="Substitute $\tfrac{4}{3}$ for $y$ on both sides and simplify each side separately; it is a solution only if the two sides come out equal."
 >}}
-
-Since the left side simplifies to the same value as the right side ($6$),
-$y = \tfrac{4}{3}$ is a solution of $9y + 2 = 6y + 3$.
+yes
+no
+{{< /multiplechoice >}}
 
 ## Solve Equations Using the Subtraction and Addition Properties of Equality
 
@@ -78,8 +78,8 @@ number of counters, but some counters are "hidden" in the envelope on the
 left, alongside three loose counters, while the right side shows eight
 loose counters. Can you tell how many counters are in the envelope?
 
-Perhaps you are thinking: "I need to remove the three counters at the
-bottom left to get the envelope by itself. The three counters on the left
+Perhaps you are thinking: "I need to remove the three loose counters on
+the left to get the envelope by itself. The three counters on the left
 can be matched with three on the right, so I can take them away from both
 sides. That leaves five on the right — so there must be five counters in
 the envelope."
@@ -125,7 +125,7 @@ Subtraction Property of Equality.
 $$
 \begin{array}{lrcl}
 & y + 37 &=& -13 \\[4pt]
-\text{Subtract 37 from each side to 'undo' the addition.} & y + 37 - 37 &=& -13 - 37 \\[4pt]
+\text{Subtract 37 from each side to ‘undo’ the addition.} & y + 37 - 37 &=& -13 - 37 \\[4pt]
 \text{Simplify.} & y &=& -50
 \end{array}
 $$
@@ -146,12 +146,14 @@ to this equation.
 {{< fillin
   question="Solve: $x + 19 = -27$."
   answer="-46"
+  answerForm="decimal"
   hint="Subtract 19 from both sides to undo the addition."
 >}}
 
 {{< fillin
   question="Solve: $x + 16 = -34$."
   answer="-50"
+  answerForm="decimal"
   hint="Subtract 16 from both sides to undo the addition."
 >}}
 
@@ -176,7 +178,7 @@ by using the Addition Property of Equality.
 $$
 \begin{array}{lrcl}
 & a - 28 &=& -37 \\[4pt]
-\text{Add 28 to each side to 'undo' the subtraction.} & a - 28 + 28 &=& -37 + 28 \\[4pt]
+\text{Add 28 to each side to ‘undo’ the subtraction.} & a - 28 + 28 &=& -37 + 28 \\[4pt]
 \text{Simplify.} & a &=& -9
 \end{array}
 $$
@@ -196,12 +198,14 @@ The solution to $a - 28 = -37$ is $a = -9$.
 {{< fillin
   question="Solve: $n - 61 = -75$."
   answer="-14"
+  answerForm="decimal"
   hint="Add 61 to both sides to undo the subtraction."
 >}}
 
 {{< fillin
   question="Solve: $p - 41 = -73$."
   answer="-32"
+  answerForm="decimal"
   hint="Add 41 to both sides to undo the subtraction."
 >}}
 
@@ -232,12 +236,14 @@ The solution to $x - \tfrac{5}{8} = \tfrac{3}{4}$ is $x = \tfrac{11}{8}$.
 {{< fillin
   question="Solve: $p - \tfrac{2}{3} = \tfrac{5}{6}$."
   answer="\frac{3}{2}"
+  answerForm="improper-fraction lowest-terms"
   hint="Add $\tfrac{2}{3}$ to both sides, then find a common denominator to add the fractions."
 >}}
 
 {{< fillin
   question="Solve: $q - \tfrac{1}{2} = \tfrac{5}{6}$."
   answer="\frac{4}{3}"
+  answerForm="improper-fraction lowest-terms"
   hint="Add $\tfrac{1}{2}$ to both sides, then find a common denominator to add the fractions."
 >}}
 
@@ -266,12 +272,14 @@ $$
 {{< fillin
   question="Solve: $b - 0.47 = -2.1$."
   answer="-1.63"
+  answerForm="decimal"
   hint="Add 0.47 to both sides."
 >}}
 
 {{< fillin
   question="Solve: $c - 0.93 = -4.6$."
   answer="-3.67"
+  answerForm="decimal"
   hint="Add 0.93 to both sides."
 >}}
 
@@ -323,12 +331,14 @@ The solution to $9x - 5 - 8x - 6 = 7$ is $x = 18$.
 {{< fillin
   question="Solve: $8y - 4 - 7y - 7 = 4$."
   answer="15"
+  answerForm="decimal"
   hint="Combine like terms on the left first, then isolate the variable."
 >}}
 
 {{< fillin
   question="Solve: $6z + 5 - 5z - 4 = 3$."
   answer="2"
+  answerForm="decimal"
   hint="Combine like terms on the left first, then isolate the variable."
 >}}
 
@@ -365,12 +375,14 @@ The solution to $5(n - 4) - 4n = -8$ is $n = 12$.
 {{< fillin
   question="Solve: $5(p - 3) - 4p = -10$."
   answer="5"
+  answerForm="decimal"
   hint="Distribute first, combine like terms, then isolate the variable."
 >}}
 
 {{< fillin
   question="Solve: $4(q + 2) - 3q = -8$."
   answer="-16"
+  answerForm="decimal"
   hint="Distribute first, combine like terms, then isolate the variable."
 >}}
 
@@ -407,12 +419,14 @@ The solution to $3(2y - 1) - 5y = 2(y + 1) - 2(y + 3)$ is $y = -1$.
 {{< fillin
   question="Solve: $4(2h - 3) - 7h = 6(h - 2) - 6(h - 1)$."
   answer="6"
+  answerForm="decimal"
   hint="Distribute on both sides, combine like terms on each side, then isolate the variable."
 >}}
 
 {{< fillin
   question="Solve: $2(5x + 2) - 9x = 3(x - 2) - 3(x - 4)$."
   answer="2"
+  answerForm="decimal"
   hint="Distribute on both sides, combine like terms on each side, then isolate the variable."
 >}}
 
@@ -449,15 +463,19 @@ Check: is $54$ eleven more than $43$?
 $$43 + 11 \overset{?}{=} 54 \qquad 54 = 54 \; \checkmark$$
 
 {{< fillin
-  question="Translate and solve: Ten more than x is equal to 41."
+  question="Translate and solve: Ten more than $x$ is equal to $41$. Enter the value of $x$."
   answer="31"
-  hint="Ten more than x translates to $x + 10 = 41$."
+  answerForm="decimal"
+  answerDisplay="$x + 10 = 41$; $x = 31$"
+  hint="Translate “more than” as addition and “is equal to” as an equal sign, then undo the addition."
 >}}
 
 {{< fillin
-  question="Translate and solve: Twelve less than x is equal to 51."
+  question="Translate and solve: Twelve less than $x$ is equal to $51$. Enter the value of $x$."
   answer="63"
-  hint="Twelve less than x translates to $x - 12 = 51$."
+  answerForm="decimal"
+  answerDisplay="$x - 12 = 51$; $x = 63$"
+  hint="In “twelve less than $x$,” twelve is taken away from $x$. Write the equation, then undo the subtraction."
 >}}
 
 **Example.** Translate and solve: The difference of $12t$ and $11t$ is
@@ -472,18 +490,28 @@ $$
 
 Check: substitute $t = -14$.
 
-$$12(-14) - 11(-14) \overset{?}{=} -14 \qquad -168 + 154 \overset{?}{=} -14 \qquad -14 = -14 \; \checkmark$$
+$$
+\begin{array}{rcl}
+12(-14) - 11(-14) &\overset{?}{=}& -14 \\
+-168 + 154 &\overset{?}{=}& -14 \\
+-14 &=& -14 \; \checkmark
+\end{array}
+$$
 
 {{< fillin
-  question="Translate and solve: The difference of 4x and 3x is 14."
+  question="Translate and solve: The difference of $4x$ and $3x$ is $14$. Enter the value of $x$."
   answer="14"
-  hint="The difference of 4x and 3x translates to $4x - 3x = 14$."
+  answerForm="decimal"
+  answerDisplay="$4x - 3x = 14$; $x = 14$"
+  hint="Translate “the difference of” as subtraction, in the order the terms are named, then combine the like terms."
 >}}
 
 {{< fillin
-  question="Translate and solve: The difference of 7a and 6a is -8."
+  question="Translate and solve: The difference of $7a$ and $6a$ is $-8$. Enter the value of $a$."
   answer="-8"
-  hint="The difference of 7a and 6a translates to $7a - 6a = -8$."
+  answerForm="decimal"
+  answerDisplay="$7a - 6a = -8$; $a = -8$"
+  hint="Translate “the difference of” as subtraction, in the order the terms are named, then combine the like terms."
 >}}
 
 ## Translate and Solve Applications
@@ -545,13 +573,15 @@ newspapers weighed $29$ pounds.
 {{< fillin
   question="Translate into an algebraic equation and solve: The Pappas family has two cats, Zeus and Athena. Together, they weigh 23 pounds. Zeus weighs 16 pounds. How much does Athena weigh, in pounds?"
   answer="7"
-  hint="Let a = Athena's weight. Zeus's weight plus Athena's weight equals 23: $16 + a = 23$."
+  answerForm="decimal"
+  hint="Let $a$ be Athena's weight. Write an equation that adds the two cats' weights to get their total, then isolate $a$."
 >}}
 
 {{< fillin
   question="Translate into an algebraic equation and solve: Sam and Henry are roommates. Together, they have 68 books. Sam has 26 books. How many books does Henry have?"
   answer="42"
-  hint="Let h = Henry's books. Sam's books plus Henry's books equals 68: $26 + h = 68$."
+  answerForm="decimal"
+  hint="Let $h$ be the number of Henry's books. Write an equation that adds the two roommates' books to get their total, then isolate $h$."
 >}}
 
 **Example.** Randell paid \$28,675 for his new car. This was \$875 less
@@ -578,15 +608,17 @@ The sticker price of the car was \$29,550.
 {{< fillin
   question="Translate into an algebraic equation and solve: Eddie paid \$19,875 for his new car. This was \$1,025 less than the sticker price. What was the sticker price of the car, in dollars?"
   answer="20900"
+  answerForm="decimal"
   answerDisplay="\$20,900"
-  hint="Let s = the sticker price. \$19,875 is \$1,025 less than s, so 19,875 = s - 1,025."
+  hint="Let $s$ be the sticker price. Translate “less than the sticker price” as a subtraction from $s$, set it equal to what Eddie paid, then undo the subtraction."
 >}}
 
 {{< fillin
   question="Translate into an algebraic equation and solve: The admission price for the movies during the day is \$7.75. This is \$3.25 less than the price at night. How much does the movie cost at night, in dollars?"
   answer="11"
+  answerForm="decimal"
   answerDisplay="\$11.00"
-  hint="Let n = the night price. \$7.75 is \$3.25 less than n, so 7.75 = n - 3.25."
+  hint="Let $n$ be the nighttime price. Translate “less than the price at night” as a subtraction from $n$, set it equal to the daytime price, then undo the subtraction."
 >}}
 
 ## Key terms
@@ -625,6 +657,7 @@ no
 {{< fillin
   question="Solve: $x + 24 = 35$"
   answer="11"
+  answerForm="decimal"
   answerDisplay="$x = 11$"
   hint="Subtract $24$ from both sides to isolate $x$."
 >}}
@@ -632,6 +665,7 @@ no
 {{< fillin
   question="Solve: $b + \tfrac{1}{4} = \tfrac{3}{4}$"
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$b = \tfrac{1}{2}$"
   hint="Subtract $\tfrac{1}{4}$ from both sides, then simplify the resulting fraction."
 >}}
@@ -641,6 +675,7 @@ no
 {{< fillin
   question="Solve: $c + 31 - 10 = 46$"
   answer="25"
+  answerForm="decimal"
   answerDisplay="$c = 25$"
   hint="Combine the constants on the left before isolating $c$."
 >}}
@@ -648,6 +683,7 @@ no
 {{< fillin
   question="Solve: $5(y - 6) - 4y = -6$"
   answer="24"
+  answerForm="decimal"
   answerDisplay="$y = 24$"
   hint="Distribute $5$, combine the like terms, and then use the Addition Property of Equality."
 >}}
@@ -655,17 +691,19 @@ no
 ### Translate to an equation and solve
 
 {{< fillin
-  question="Translate to an equation and solve: Nine more than $x$ is equal to $52$."
+  question="Translate to an equation and solve: Nine more than $x$ is equal to $52$. Enter the value of $x$."
   answer="43"
+  answerForm="decimal"
   answerDisplay="$x + 9 = 52$; $x = 43$"
-  hint="Translate 'nine more than $x$' as $x + 9$, then subtract $9$ from both sides."
+  hint="Translate “more than” as addition and “is equal to” as an equal sign, then undo the addition."
 >}}
 
 {{< fillin
-  question="Translate to an equation and solve: Ten less than $m$ is $-14$."
+  question="Translate to an equation and solve: Ten less than $m$ is $-14$. Enter the value of $m$."
   answer="-4"
+  answerForm="decimal"
   answerDisplay="$m - 10 = -14$; $m = -4$"
-  hint="Translate 'ten less than $m$' as $m - 10$, then add $10$ to both sides."
+  hint="In “ten less than $m$,” ten is taken away from $m$. Write the equation, then undo the subtraction."
 >}}
 
 ### Translate and solve applications
@@ -673,17 +711,19 @@ no
 {{< fillin
   question="Avril rode her bike a total of $18$ miles, from home to the library and then to the beach. The distance from Avril’s house to the library is $7$ miles. What is the distance from the library to the beach, in miles?"
   answer="11"
+  answerForm="decimal"
   answerDisplay="$11$ miles"
-  hint="Let $d$ be the remaining distance and solve $7 + d = 18$."
+  hint="Let $d$ be the distance from the library to the beach. The two parts of the ride add up to the total; write that equation, then isolate $d$."
 >}}
 
 {{< fillin
   question="Connor’s temperature was $0.7$ degrees higher this morning than it had been last night. His temperature this morning was $101.2$ degrees. What was his temperature last night, in degrees?"
   answer="100.5"
+  answerForm="decimal"
   answerDisplay="$100.5$ degrees"
-  hint="Let $t$ be last night's temperature and solve $t + 0.7 = 101.2$."
+  hint="Let $t$ be last night's temperature. This morning's temperature is $0.7$ degrees more than $t$; write that equation, then undo the addition."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.1: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-1-solve-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelope-and-counters figures as prose descriptions and the "Equals" word list and Step tables as prose/Callouts; omitted the Manipulative Mathematics callout, Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.1: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-1-solve-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: presented the worked-example step tables as typeset math with narrative steps; described the envelope-and-counters figures and the "Equals" word list in prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, Key Concepts list (it repeats the in-text procedures), Everyday Math and Writing Exercises, Self Check checklist, and unselected end-of-section exercises; added the two properties of equality to the glossary's one term as a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block.</small>

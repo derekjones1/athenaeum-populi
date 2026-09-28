@@ -29,7 +29,7 @@ denominator.
   **Quotient Property for Exponents.** If $a$ is a real number, $a \neq 0$,
   and $m$ and $n$ are whole numbers, then
 
-  $$\frac{a^m}{a^n} = a^{m-n},\ m > n \qquad \text{and} \qquad \frac{a^m}{a^n} = \frac{1}{a^{n-m}},\ n > m$$
+  $$\begin{aligned} \frac{a^m}{a^n} &= a^{m-n},\ m > n \qquad \text{and} \\[8pt] \frac{a^m}{a^n} &= \frac{1}{a^{n-m}},\ n > m \end{aligned}$$
 {{< /callout >}}
 
 What if we just subtract exponents regardless of which is larger? Let's
@@ -67,14 +67,14 @@ be in simplest form when it has only positive exponents.
 $4^{-2} = \tfrac{1}{4^2} = \tfrac{1}{16}$.
 
 (b) Use the definition of a negative exponent:
-$10^{-3} = \tfrac{1}{10^3} = \tfrac{1}{1000}$.
+$10^{-3} = \tfrac{1}{10^3} = \tfrac{1}{1{,}000}$.
 
 {{< fillin
   question="Simplify: $2^{-3}$."
   answer="\frac{1}{8}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{8}$"
-  hint="A negative exponent means take the reciprocal: $2^{-3} = 1/2^3$."
+  hint="Use the definition of a negative exponent, $a^{-n} = \tfrac{1}{a^n}$, then evaluate the power."
 >}}
 
 {{< fillin
@@ -82,11 +82,12 @@ $10^{-3} = \tfrac{1}{10^3} = \tfrac{1}{1000}$.
   answer="\frac{1}{9}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{9}$"
-  hint="A negative exponent means take the reciprocal: $3^{-2} = 1/3^2$."
+  hint="Take the reciprocal of the base and change the sign of the exponent, then evaluate the power."
 >}}
 
-When we raised a fraction whose numerator is one and whose denominator is an
-integer to a negative exponent, we found:
+Now look at a fraction whose numerator is one and whose denominator is a
+number raised to a negative exponent. Using the definition of a negative
+exponent:
 
 $$\frac{1}{a^{-n}} = \frac{1}{\tfrac{1}{a^n}} = 1 \cdot \frac{a^n}{1} = a^n$$
 
@@ -108,9 +109,9 @@ $\tfrac{1}{y^{-4}} = y^4$.
 $\tfrac{1}{3^{-2}} = 3^2 = 9$.
 
 {{< fillin
-  question="Simplify: $\tfrac{1}{p^{-8}}$. Write the answer as a power of p."
+  question="Simplify: $\tfrac{1}{p^{-8}}$. Write the answer as a power of $p$."
   answer="p^8"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$p^8$"
   hint="Use the Property of Negative Exponents: $\tfrac{1}{a^{-n}} = a^n$."
 >}}
@@ -120,7 +121,7 @@ $\tfrac{1}{3^{-2}} = 3^2 = 9$.
   answer="64"
   answerForm="decimal"
   answerDisplay="64"
-  hint="$\tfrac{1}{4^{-3}} = 4^3$. Then compute $4 \cdot 4 \cdot 4$."
+  hint="Use the Property of Negative Exponents, $\tfrac{1}{a^{-n}} = a^n$, then evaluate the power."
 >}}
 
 Suppose now we have a fraction raised to a negative exponent. Using the
@@ -150,19 +151,19 @@ then simplify:
 $$\left(-\frac{2x}{y}\right)^{-3} = \left(-\frac{y}{2x}\right)^3 = -\frac{y^3}{8x^3}$$
 
 {{< fillin
-  question="Simplify: $\tfrac{2}{3}^{-4}$."
+  question="Simplify: $\left(\tfrac{2}{3}\right)^{-4}$."
   answer="\frac{81}{16}"
   answerForm="fraction"
   answerDisplay="$\tfrac{81}{16}$"
-  hint="Take the reciprocal and change the sign of the exponent: $\tfrac{3}{2}^4$."
+  hint="Use the Quotient to a Negative Exponent Property: take the reciprocal of the fraction and change the sign of the exponent, then simplify."
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{3}{5}^{-3}$."
+  question="Simplify: $\left(\tfrac{3}{5}\right)^{-3}$."
   answer="\frac{125}{27}"
   answerForm="fraction"
   answerDisplay="$\tfrac{125}{27}$"
-  hint="Take the reciprocal and change the sign of the exponent: $\tfrac{5}{3}^3$."
+  hint="Take the reciprocal of the fraction and change the sign of the exponent, then raise the numerator and the denominator to that power."
 >}}
 
 When simplifying an expression with exponents, we must be careful to correctly
@@ -192,7 +193,7 @@ $-\left(\tfrac{1}{3}\right)^{-2} = -1 \cdot \left(\tfrac{3}{1}\right)^2 = -9$.
   answer="\frac{1}{25}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{25}$"
-  hint="The base is -5. Take the reciprocal and change the sign of the exponent: $1/(-5)^2$."
+  hint="Identify the base: parentheses make everything inside them the base. Take the reciprocal of the base and change the sign of the exponent, then simplify."
 >}}
 
 {{< fillin
@@ -200,7 +201,7 @@ $-\left(\tfrac{1}{3}\right)^{-2} = -1 \cdot \left(\tfrac{3}{1}\right)^2 = -9$.
   answer="-\frac{1}{25}"
   answerForm="fraction"
   answerDisplay="$-\tfrac{1}{25}$"
-  hint="This means the opposite of $5^{-2}$, so first find $1/5^2$, then take the opposite."
+  hint="Identify the base: with no parentheses, the exponent applies only to the number it is written on. Then use the definition of a negative exponent."
 >}}
 
 We must be careful to follow the Order of Operations. In the next example,
@@ -220,7 +221,7 @@ $(4 \cdot 2)^{-1} = (8)^{-1} = \tfrac{1}{8^1} = \tfrac{1}{8}$.
   answer="2"
   answerForm="decimal"
   answerDisplay="2"
-  hint="Apply the exponent before multiplying: $6 \cdot \tfrac{1}{3}$."
+  hint="Follow the Order of Operations: rewrite the power with the definition of a negative exponent before you multiply."
 >}}
 
 {{< fillin
@@ -228,7 +229,7 @@ $(4 \cdot 2)^{-1} = (8)^{-1} = \tfrac{1}{8^1} = \tfrac{1}{8}$.
   answer="\frac{1}{18}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{18}$"
-  hint="Simplify inside the parentheses first $(6 \cdot 3 = 18)$, then apply the negative exponent."
+  hint="Follow the Order of Operations: simplify inside the parentheses first, then use the definition of a negative exponent."
 >}}
 
 When a variable is raised to a negative exponent, we apply the definition the
@@ -246,16 +247,16 @@ $\left(u^4\right)^{-3} = \tfrac{1}{\left(u^4\right)^3} = \tfrac{1}{u^{12}}$.
   question="Simplify: $y^{-7}$. Write the answer with a positive exponent."
   answer="\frac{1}{y^7}"
   answerForm="single-fraction"
-  answerDisplay="$1/y^7$"
-  hint="Use the definition of a negative exponent: $y^{-7} = 1/y^7$."
+  answerDisplay="$\tfrac{1}{y^7}$"
+  hint="Use the definition of a negative exponent, $a^{-n} = \tfrac{1}{a^n}$."
 >}}
 
 {{< fillin
   question="Simplify: $(z^3)^{-5}$. Write the answer with a positive exponent."
   answer="\frac{1}{z^{15}}"
-  answerForm="single-fraction"
-  answerDisplay="$1/z^{15}$"
-  hint="First multiply the exponents $(3 \cdot 5 = 15)$, then apply the negative exponent."
+  answerForm="single-fraction distributed"
+  answerDisplay="$\tfrac{1}{z^{15}}$"
+  hint="Use the definition of a negative exponent, then the Power Property to multiply the exponents."
 >}}
 
 When there is a product and an exponent, we have to be careful to apply the
@@ -281,7 +282,7 @@ $(-5y)^{-1} = \tfrac{1}{(-5y)^1} = \tfrac{1}{-5y} = -\tfrac{1}{5y}$.
   answer="\frac{8}{p}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{8}{p}$"
-  hint="The exponent applies only to p, so $8p^{-1} = 8 \cdot \tfrac{1}{p}$."
+  hint="Identify the base: with no parentheses, the exponent applies only to the factor it is written on. Rewrite that factor with the definition of a negative exponent."
 >}}
 
 {{< fillin
@@ -289,7 +290,7 @@ $(-5y)^{-1} = \tfrac{1}{(-5y)^1} = \tfrac{1}{-5y} = -\tfrac{1}{5y}$.
   answer="\frac{1}{8p}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{8p}$"
-  hint="The parentheses make the exponent apply to the whole base 8p, so $(8p)^{-1} = \tfrac{1}{8p}$."
+  hint="Identify the base: the parentheses make the whole product the base. Take the reciprocal of the base and change the sign of the exponent."
 >}}
 
 With negative exponents, the Quotient Rule needs only one form
@@ -330,19 +331,19 @@ $y^{-6} \cdot y^4 = y^{-6+4} = y^{-2} = \tfrac{1}{y^2}$.
 $z^{-5} \cdot z^{-3} = z^{-5-3} = z^{-8} = \tfrac{1}{z^8}$.
 
 {{< fillin
-  question="Simplify: $x^{-3} \cdot x^7$. Write the answer as a power of x."
+  question="Simplify: $x^{-3} \cdot x^7$. Write the answer as a power of $x$."
   answer="x^4"
-  answerForm="single-term"
+  answerForm="single-power"
   answerDisplay="$x^4$"
-  hint="The bases are the same, so add the exponents: $-3 + 7$."
+  hint="The bases are the same, so use the Product Property: add the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $y^{-7} \cdot y^2$. Write the answer with a positive exponent."
   answer="\frac{1}{y^5}"
   answerForm="single-fraction"
-  answerDisplay="$1/y^5$"
-  hint="Add the exponents $(-7 + 2 = -5)$, then apply the definition of a negative exponent."
+  answerDisplay="$\tfrac{1}{y^5}$"
+  hint="Use the Product Property to add the exponents, then rewrite a negative exponent with the definition of a negative exponent."
 >}}
 
 In the next two examples, we'll start by using the Commutative Property to
@@ -355,7 +356,12 @@ Use the Commutative Property to get like bases together, add the exponents for
 each base, then take reciprocals and change the signs of the exponents:
 
 $$
-\left(m^4 n^{-3}\right)\left(m^{-5} n^{-2}\right) = m^4 m^{-5} \cdot n^{-2} n^{-3} = m^{-1} \cdot n^{-5} = \frac{1}{m^1} \cdot \frac{1}{n^5} = \frac{1}{mn^5}
+\begin{aligned}
+\left(m^4 n^{-3}\right)\left(m^{-5} n^{-2}\right) &= m^4 m^{-5} \cdot n^{-2} n^{-3} \\[4pt]
+&= m^{-1} \cdot n^{-5} \\[4pt]
+&= \frac{1}{m^1} \cdot \frac{1}{n^5} \\[8pt]
+&= \frac{1}{mn^5}
+\end{aligned}
 $$
 
 {{< fillin
@@ -363,7 +369,7 @@ $$
   answer="\frac{1}{p^3 q^3}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{p^3 q^3}$"
-  hint="Group like bases and add exponents: $p^{6-9} = p^{-3}$ and $q^{-2-1} = q^{-3}$, then apply the definition of a negative exponent."
+  hint="Use the Commutative Property to get like bases together, add the exponents for each base, then rewrite negative exponents with the definition of a negative exponent."
 >}}
 
 {{< fillin
@@ -371,7 +377,7 @@ $$
   answer="\frac{1}{r^2 s^8}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{r^2 s^8}$"
-  hint="Group like bases and add exponents: $r^{5-7} = r^{-2}$ and $s^{-3-5} = s^{-8}$, then apply the definition of a negative exponent."
+  hint="Group the powers of each variable together and add their exponents, then take reciprocals to make every exponent positive."
 >}}
 
 In the next two examples, we'll use the Power Property and the Product to a
@@ -383,15 +389,20 @@ Use the Product to a Power Property, then the Power Property, then the
 definition of a negative exponent, then simplify:
 
 $$
-\left(6k^3\right)^{-2} = (6)^{-2}\left(k^3\right)^{-2} = 6^{-2} k^{-6} = \frac{1}{6^2} \cdot \frac{1}{k^6} = \frac{1}{36k^6}
+\begin{aligned}
+\left(6k^3\right)^{-2} &= (6)^{-2}\left(k^3\right)^{-2} \\[4pt]
+&= 6^{-2} k^{-6} \\[4pt]
+&= \frac{1}{6^2} \cdot \frac{1}{k^6} \\[8pt]
+&= \frac{1}{36k^6}
+\end{aligned}
 $$
 
 {{< fillin
   question="Simplify: $(-4x^4)^{-2}$. Write the answer with positive exponents."
   answer="\frac{1}{16x^8}"
-  answerForm="single-fraction"
+  answerForm="single-fraction distributed"
   answerDisplay="$\tfrac{1}{16x^8}$"
-  hint="Raise each factor to the -2 power: $(-4)^{-2} = \tfrac{1}{16}$ and $(x^4)^{-2} = x^{-8}$."
+  hint="Use the Product to a Power Property, then the Power Property, then the definition of a negative exponent."
 >}}
 
 **Example.** Simplify: $\left(5x^{-3}\right)^2$.
@@ -407,9 +418,9 @@ $$
 {{< fillin
   question="Simplify: $(8a^{-4})^2$. Write the answer with positive exponents."
   answer="\frac{64}{a^8}"
-  answerForm="single-fraction"
-  answerDisplay="$64/a^8$"
-  hint="Square each factor: $8^2 = 64$ and $(a^{-4})^2 = a^{-8} = 1/a^8$."
+  answerForm="single-fraction distributed"
+  answerDisplay="$\tfrac{64}{a^8}$"
+  hint="Use the Product to a Power Property to raise each factor to the power, multiply the exponents with the Power Property, then rewrite the negative exponent."
 >}}
 
 To simplify a fraction, we use the Quotient Property and subtract the
@@ -422,19 +433,19 @@ Use the Quotient Property, $\tfrac{a^m}{a^n} = a^{m-n}$, then simplify:
 $$\frac{r^5}{r^{-4}} = r^{5-(-4)} = r^9$$
 
 {{< fillin
-  question="Simplify: $x^8 / x^{-3}$. Write the answer as a power of x."
+  question="Simplify: $\tfrac{x^8}{x^{-3}}$. Write the answer as a power of $x$."
   answer="x^{11}"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$x^{11}$"
-  hint="Subtract the exponents: 8 - (-3)."
+  hint="Use the Quotient Property: subtract the exponent in the denominator from the exponent in the numerator."
 >}}
 
 {{< fillin
-  question="Simplify: $y^8 / y^{-6}$. Write the answer as a power of y."
+  question="Simplify: $\tfrac{y^8}{y^{-6}}$. Write the answer as a power of $y$."
   answer="y^{14}"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$y^{14}$"
-  hint="Subtract the exponents: 8 - (-6)."
+  hint="Use the Quotient Property, $\tfrac{a^m}{a^n} = a^{m-n}$; watch the sign when you subtract a negative exponent."
 >}}
 
 ## Convert from Decimal Notation to Scientific Notation
@@ -498,7 +509,7 @@ Check: $10^4$ is $10{,}000$, and $10{,}000$ times $3.7$ is $37{,}000$. ✓
   answer="9.6 \times 10^{4}"
   answerForm="scientific-notation"
   answerDisplay="$9.6 \times 10^4$"
-  hint="Move the decimal after the 9 to get 9.6, then count the places moved (4). The number is greater than 1, so the exponent is positive."
+  hint="Move the decimal point so the first factor is at least 1 but less than 10, and count the places it moved. Whether the number is greater than 1 or between 0 and 1 decides the sign of the exponent."
 >}}
 
 {{< fillin
@@ -506,7 +517,7 @@ Check: $10^4$ is $10{,}000$, and $10{,}000$ times $3.7$ is $37{,}000$. ✓
   answer="4.83 \times 10^{4}"
   answerForm="scientific-notation"
   answerDisplay="$4.83 \times 10^4$"
-  hint="Move the decimal after the 4 to get 4.83, then count the places moved (4). The number is greater than 1, so the exponent is positive."
+  hint="Remember the decimal point at the end of a whole number. Move it so the first factor is between 1 and 10, and use the number of places moved as the exponent on 10."
 >}}
 
 **Example.** Write in scientific notation: $0.0052$.
@@ -517,14 +528,14 @@ $1$ and $10$. The decimal point was moved $3$ places to the right:
 
 $$0.0052 = 5.2 \times 10^{-3}$$
 
-Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0052$. ✓
+Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1{,}000} = 5.2 \times 0.001 = 0.0052$. ✓
 
 {{< fillin
   question="Write in scientific notation: 0.0078."
   answer="7.8 \times 10^{-3}"
   answerForm="scientific-notation"
   answerDisplay="$7.8 \times 10^{-3}$"
-  hint="Move the decimal to get 7.8, then count the places moved (3). The number is between 0 and 1, so the exponent is negative."
+  hint="Move the decimal point so the first factor is at least 1 but less than 10, and count the places it moved. Whether the number is greater than 1 or between 0 and 1 decides the sign of the exponent."
 >}}
 
 {{< fillin
@@ -532,7 +543,7 @@ Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0
   answer="1.29 \times 10^{-2}"
   answerForm="scientific-notation"
   answerDisplay="$1.29 \times 10^{-2}$"
-  hint="Move the decimal to get 1.29, then count the places moved (2). The number is between 0 and 1, so the exponent is negative."
+  hint="Move the decimal point until exactly one nonzero digit is to its left, count the places it moved, and check your answer by multiplying back out."
 >}}
 
 ## Convert Scientific Notation to Decimal Form
@@ -565,14 +576,14 @@ to the right. We need to add $2$ zeros as placeholders:
 
 $$6.2 \times 10^3 = 6{,}200$$
 
-Check: $10^3$ is $1000$, and $1000$ times $6.2$ will be $6{,}200$. ✓
+Check: $10^3$ is $1{,}000$, and $1{,}000$ times $6.2$ will be $6{,}200$. ✓
 
 {{< fillin
   question="Convert to decimal form: $1.3 \times 10^3$."
   answer="1300"
   answerForm="decimal"
   answerDisplay="1,300"
-  hint="The exponent is 3, so move the decimal 3 places to the right, adding zeros as placeholders."
+  hint="Move the decimal point as many places as the exponent on 10 — right for a positive exponent, left for a negative one — adding zeros as placeholders."
 >}}
 
 {{< fillin
@@ -580,7 +591,7 @@ Check: $10^3$ is $1000$, and $1000$ times $6.2$ will be $6{,}200$. ✓
   answer="92500"
   answerForm="decimal"
   answerDisplay="92,500"
-  hint="The exponent is 4, so move the decimal 4 places to the right, adding zeros as placeholders."
+  hint="Read the exponent on 10: its sign gives the direction to move the decimal point and its size the number of places. Add zeros as placeholders."
 >}}
 
 **Example.** Convert to decimal form: $8.9 \times 10^{-2}$.
@@ -595,7 +606,7 @@ $$8.9 \times 10^{-2} = 0.089$$
   answer="0.00012"
   answerForm="decimal"
   answerDisplay="0.00012"
-  hint="The exponent is -4, so move the decimal 4 places to the left, adding zeros as placeholders."
+  hint="Move the decimal point as many places as the exponent on 10 — right for a positive exponent, left for a negative one — adding zeros as placeholders."
 >}}
 
 {{< fillin
@@ -603,7 +614,7 @@ $$8.9 \times 10^{-2} = 0.089$$
   answer="0.075"
   answerForm="decimal"
   answerDisplay="0.075"
-  hint="The exponent is -2, so move the decimal 2 places to the left, adding a zero as a placeholder."
+  hint="Read the exponent on 10: its sign gives the direction to move the decimal point and its size the number of places. Add zeros as placeholders."
 >}}
 
 ## Multiply and Divide Using Scientific Notation
@@ -631,7 +642,7 @@ $$
   answer="0.06"
   answerForm="decimal"
   answerDisplay="0.06"
-  hint="Multiply the first factors $(3 \cdot 2 = 6)$ and add the exponents on $10 (6 + -8 = -2)$, then convert $6 \times 10^{-2}$ to decimal form."
+  hint="Use the Commutative Property to group the first factors and the powers of 10. Multiply the first factors, add the exponents on 10, then change to decimal form."
 >}}
 
 {{< fillin
@@ -639,7 +650,7 @@ $$
   answer="0.009"
   answerForm="decimal"
   answerDisplay="0.009"
-  hint="Multiply the first factors $(3 \cdot 3 = 9)$ and add the exponents on $10 (-2 + -1 = -3)$, then convert $9 \times 10^{-3}$ to decimal form."
+  hint="Multiply the first factors and use the Product Property on the powers of 10, then move the decimal point to write the result in decimal form."
 >}}
 
 **Example.** Divide. Write answers in decimal form:
@@ -657,7 +668,7 @@ $$
   answer="400000"
   answerForm="decimal"
   answerDisplay="400,000"
-  hint="Divide the first factors $(\tfrac{8}{2} = 4)$ and subtract the exponents on $10 (4 - -1 = 5)$, then convert $4 \times 10^5$ to decimal form."
+  hint="Separate the factors into two fractions. Divide the first factors, use the Quotient Property on the powers of 10, then change to decimal form."
 >}}
 
 {{< fillin
@@ -665,7 +676,7 @@ $$
   answer="20000"
   answerForm="decimal"
   answerDisplay="20,000"
-  hint="Divide the first factors $(\tfrac{8}{4} = 2)$ and subtract the exponents on $10 (2 - -2 = 4)$, then convert $2 \times 10^4$ to decimal form."
+  hint="Divide the first factors and subtract the exponents on 10 (watch the sign when the exponent you subtract is negative), then move the decimal point to write the result in decimal form."
 >}}
 
 ## Key terms
@@ -688,7 +699,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="\frac{1}{81}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{81}$"
-  hint="Use the definition of a negative exponent: $3^{-4} = 1/3^4$."
+  hint="Use the definition of a negative exponent, $a^{-n} = \tfrac{1}{a^n}$, then evaluate the power."
 >}}
 
 {{< fillin
@@ -696,13 +707,13 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="\frac{1}{100}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{100}$"
-  hint="Use the definition of a negative exponent: $10^{-2} = 1/10^2$."
+  hint="Take the reciprocal of the base and change the sign of the exponent, then evaluate the power of 10."
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{1}{c^{-5}}$. Write the answer as a power of c."
+  question="Simplify: $\tfrac{1}{c^{-5}}$. Write the answer as a power of $c$."
   answer="c^5"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$c^5$"
   hint="Use the Property of Negative Exponents: $\tfrac{1}{a^{-n}} = a^n$."
 >}}
@@ -712,7 +723,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="25"
   answerForm="decimal"
   answerDisplay="25"
-  hint="Use the Property of Negative Exponents: $\tfrac{1}{5^{-2}} = 5^2$. Then compute $5 \cdot 5$."
+  hint="Use the Property of Negative Exponents, $\tfrac{1}{a^{-n}} = a^n$, then evaluate the power."
 >}}
 
 ### Simplify Expressions with Integer Exponents
@@ -722,7 +733,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="\frac{1}{x}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{x}$"
-  hint="The bases are the same, so add all three exponents: $4 + (-2) + (-3)$."
+  hint="The bases are the same, so add all three exponents; then rewrite a negative exponent with the definition of a negative exponent."
 >}}
 
 {{< fillin
@@ -730,15 +741,15 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="\frac{1}{m^2 n^4}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{m^2 n^4}$"
-  hint="Group like bases and add exponents: $m^{3-5} = m^{-2}$ and $n^{-3-1} = n^{-4}$, then apply the definition of a negative exponent."
+  hint="Use the Commutative Property to get like bases together, add the exponents for each base, then rewrite negative exponents with the definition of a negative exponent."
 >}}
 
 {{< fillin
-  question="Simplify: $n^5 / n^{-2}$. Write the answer as a power of n."
+  question="Simplify: $\tfrac{n^5}{n^{-2}}$. Write the answer as a power of $n$."
   answer="n^7"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$n^7$"
-  hint="Subtract the exponents: 5 - (-2)."
+  hint="Use the Quotient Property: subtract the exponent in the denominator from the exponent in the numerator."
 >}}
 
 ### Convert from Decimal Notation to Scientific Notation
@@ -748,7 +759,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="3.4 \times 10^{5}"
   answerForm="scientific-notation"
   answerDisplay="$3.4 \times 10^5$"
-  hint="Move the decimal after the 3 to get 3.4, then count the places moved (5). The number is greater than 1, so the exponent is positive."
+  hint="Move the decimal point so the first factor is at least 1 but less than 10, and count the places it moved. Whether the number is greater than 1 or between 0 and 1 decides the sign of the exponent."
 >}}
 
 {{< fillin
@@ -756,7 +767,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="4.1 \times 10^{-2}"
   answerForm="scientific-notation"
   answerDisplay="$4.1 \times 10^{-2}$"
-  hint="Move the decimal to get 4.1, then count the places moved (2). The number is between 0 and 1, so the exponent is negative."
+  hint="Move the decimal point until exactly one nonzero digit is to its left, count the places it moved, and check your answer by multiplying back out."
 >}}
 
 ### Convert Scientific Notation to Decimal Form
@@ -766,7 +777,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="830"
   answerForm="decimal"
   answerDisplay="830"
-  hint="The exponent is 2, so move the decimal 2 places to the right, adding a zero as a placeholder."
+  hint="Move the decimal point as many places as the exponent on 10 — right for a positive exponent, left for a negative one — adding zeros as placeholders."
 >}}
 
 {{< fillin
@@ -774,7 +785,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="0.038"
   answerForm="decimal"
   answerDisplay="0.038"
-  hint="The exponent is -2, so move the decimal 2 places to the left, adding a zero as a placeholder."
+  hint="Read the exponent on 10: its sign gives the direction to move the decimal point and its size the number of places. Add zeros as placeholders."
 >}}
 
 ### Multiply and Divide Using Scientific Notation
@@ -784,7 +795,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="0.02"
   answerForm="decimal"
   answerDisplay="0.02"
-  hint="Multiply the first factors $(2 \cdot 1 = 2)$ and add the exponents on $10 (2 + -4 = -2)$, then convert $2 \times 10^{-2}$ to decimal form."
+  hint="Use the Commutative Property to group the first factors and the powers of 10. Multiply the first factors, add the exponents on 10, then change to decimal form."
 >}}
 
 {{< fillin
@@ -792,7 +803,7 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
   answer="20000000"
   answerForm="decimal"
   answerDisplay="20,000,000"
-  hint="Divide the first factors $(\tfrac{8}{4} = 2)$ and subtract the exponents on $10 (6 - -1 = 7)$, then convert $2 \times 10^7$ to decimal form."
+  hint="Separate the factors into two fractions. Divide the first factors, use the Quotient Property on the powers of 10, then change to decimal form."
 >}}
 
 ---

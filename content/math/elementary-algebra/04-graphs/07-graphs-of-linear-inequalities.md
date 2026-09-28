@@ -33,7 +33,7 @@ costs — so that your business would make a profit.
 
 An inequality in one variable, like $x > 3$, has many solutions — any number
 greater than $3$ — shown on the number line by shading to the right of $3$
-with an open circle at $3$. Similarly, an inequality in two variables has
+with a parenthesis at $3$. Similarly, an inequality in two variables has
 many solutions: any ordered pair $(x, y)$ that makes the inequality true when
 substituted in is a **solution of the inequality**.
 
@@ -72,8 +72,8 @@ no
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is the ordered pair $(-2, -1)$ a solution to the inequality $y > x - 3$?"
-  hint="Substitute $x = -2$ and $y = -1$ into $y > x - 3$ and check whether the resulting statement is true."
+  question="Is the ordered pair $(-2, 1)$ a solution to the inequality $y > x - 3$?"
+  hint="Substitute $x = -2$ and $y = 1$ into $y > x - 3$ and check whether the resulting statement is true."
   answer="yes"
 >}}
 yes
@@ -114,62 +114,31 @@ Any point on the boundary line itself, where $y = x + 4$, is not a solution
 to $y > x + 4$, so the boundary line is not part of the solution — we draw
 it dashed. The shaded region shows the solutions to $y > x + 4$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A dashed boundary line y equals x plus 4, with the region above and to the left of the line shaded to show the solutions to y greater than x plus 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 186,26 26,186" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="126" x2="308" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,126 308,131 308,121" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="27.1" y1="184.9" x2="184.9" y2="27.1" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="192,20 188.5,30.6 181.4,23.5" fill="currentColor"/>
-  <polygon points="20,192 23.5,181.4 30.6,188.5" fill="currentColor"/>
-  <text x="76" y="62" font-size="13" fill="currentColor" text-anchor="middle">y &gt; x + 4</text>
-  <text x="216" y="176" font-size="13" fill="currentColor" text-anchor="middle">y &lt; x + 4</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes. The dashed boundary line y equals x plus 4 passes through (negative 4, 0) and (0, 4). The region above and to the left of the line is shaded and labeled y greater than x plus 4; the region below and to the right is labeled y less than x plus 4.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":1,"intercept":4},"side":[-6,4],"dashed":true}],"texts":[{"at":[-5,6],"text":"y > x + 4"},{"at":[4,-3],"text":"y < x + 4"}]}
+{{< /apfigure >}}
 
 **Example.** The boundary line shown is $y = 2x - 1$, drawn as a solid line.
 Write the inequality shown by the graph.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes. The solid boundary line y equals 2x minus 1 passes through (0, negative 1) and (2, 3). The region above and to the left of the line, which contains (0, 0), is shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":2,"intercept":-1},"side":[0,0]}]}
+{{< /apfigure >}}
+
 We test the point $(0, 0)$: is $0 > 2(0) - 1$, or is $0 < 2(0) - 1$?
 Since $0 > -1$ is true, $(0, 0)$ is on the side of the line where
-$y > 2x - 1$. Since the boundary line is solid, the inequality includes the
-equal sign, so the graph shows $y \geq 2x - 1$.
+$y > 2x - 1$ — the shaded side. Since the boundary line is solid, the
+inequality includes the equal sign, so the graph shows $y \geq 2x - 1$.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes. The solid boundary line y equals negative 2x plus 3 passes through (0, 3) and (2, negative 1). The region above and to the right of the line is shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":-2,"intercept":3},"side":[4,4]}]}
+{{< /apfigure >}}
 
 {{< fillin
-  question="A dashed boundary line $y = -2x + 3$ is graphed, and the region below and to the left of the line is shaded (this region contains the point $(0, 0)$). Write the complete inequality shown by the graph, solved for y."
-  answer="y<-2x+3"
-  answerDisplay="$y < -2x + 3$"
-  hint="Test the point $(0, 0)$ in both $y > -2x + 3$ and $y < -2x + 3$ to see which is true, then use > or < depending on whether the line is dashed or solid."
+  question="Write the inequality shown by the graph with the boundary line $y = -2x + 3$. Enter it solved for $y$, as the boundary line is written."
+  answer="y\geq-2x+3"
+  answerDisplay="$y \geq -2x + 3$"
+  hint="Test a point that is not on the line, such as $(0, 0)$, to see which inequality describes the shaded side; then use the line's style — solid or dashed — to decide whether the equal sign is included."
 >}}
 
 ## Graph linear inequalities
@@ -197,46 +166,9 @@ $\geq$, we draw a solid line. We test $(0, 0)$: is
 $0 \geq \tfrac{3}{4}(0) - 2$? Since $0 \geq -2$ is true, $(0, 0)$ is a
 solution, so we shade the side of the boundary line that includes $(0, 0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A solid boundary line y equals three-fourths x minus 2, with the region above and to the left of the line shaded, including the point (0, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 306,26 306,61 86,226 26,226" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="126" x2="308" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,126 308,131 308,121" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="86" y1="226" x2="304" y2="62.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,56.5 307,66.5 301,58.5" fill="currentColor"/>
-  <polygon points="78,232 83,222 89,230" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 6 to 6 on both axes. The solid boundary line y equals three-fourths x minus 2 passes through (0, negative 2) and (4, 1). The region above and to the left of the line, which contains (0, 0), is shaded.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":0.75,"intercept":-2},"side":[0,0]}]}
+{{< /apfigure >}}
 
 **Example.** Graph the linear inequality $x - 2y < 5$.
 
@@ -257,10 +189,11 @@ solution, so we shade the side of the boundary line that does *not* include
 $(1, 0)$.
 
 {{< fillin
-  question="Graph the linear inequality $y > -3x$ by testing the point $(1, 0)$. Substitute the point into the inequality and write the resulting statement (a true statement means the point is a solution)."
+  question="To graph the linear inequality $y > -3x$, test the point $(1, 0)$: substitute it into the inequality, simplify each side to a single number, and enter the resulting statement (a true statement means the point is a solution)."
   answer="0>-3"
+  answerForm="decimal"
   answerDisplay="$0 > -3$, true"
-  hint="Substitute $x = 1$, $y = 0$ into $y > -3x$ and simplify."
+  hint="Replace $x$ and $y$ with the point's coordinates, multiply on the right side, and keep the inequality symbol as it is."
 >}}
 
 Some linear inequalities have only one variable — an $x$ but no $y$, or a $y$
@@ -274,51 +207,14 @@ $>$. Testing $(0, 0)$: is $0 > 3$? Since this is false, $(0, 0)$ is not a
 solution, so we shade the side that does not include $(0, 0)$ — the region
 above the line.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A dashed horizontal boundary line y equals 3, with the region above the line shaded." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 232" width="332" height="232" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="206" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="206" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="206" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="206" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="206" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="206" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="206" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="206" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="206" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="206" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="206" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="206" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="206" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="206" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 306,26 306,86 26,86" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="146" x2="308" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="208" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,146 308,151 308,141" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="166,218 161,208 171,208" fill="currentColor"/>
-  <text x="316" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="30" y1="86" x2="302" y2="86" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="312,86 302,91 302,81" fill="currentColor"/>
-  <polygon points="20,86 30,81 30,91" fill="currentColor"/>
-  <text x="268.2" y="106" font-size="13" fill="currentColor" text-anchor="middle">y = 3</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes. The dashed horizontal boundary line y equals 3 is drawn, and the region above the line is shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":0,"intercept":3},"side":[0,5],"dashed":true,"label":"y = 3"}]}
+{{< /apfigure >}}
 
 {{< multiplechoice
   question="Graph the linear inequality $y \le -1$. Is the boundary line solid or dashed?"
   answer="solid"
-  hint="The inequality symbol is $\le$, which includes equality, so the boundary line is solid."
+  hint="Decide whether the inequality symbol includes equality, then use the boundary-line table above."
 >}}
 dashed
 solid
@@ -401,10 +297,10 @@ no
 </div>
 
 {{< fillin
-  question="Write the inequality shown by the graph with the boundary line $y=-\tfrac{1}{3}x-2$."
+  question="Write the inequality shown by the graph with the boundary line $y=-\tfrac{1}{3}x-2$. Enter it solved for $y$, as the boundary line is written."
   answer="y\leq-\frac{1}{3}x-2"
   answerDisplay="$y\leq-\tfrac{1}{3}x-2$"
-  hint="The solid boundary includes equality, and the shaded region is below the line."
+  hint="Test a point in the shaded region to choose the inequality direction, then use the line's style — solid or dashed — to decide whether the equal sign is included."
 >}}
 
 <div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid from negative 10 to 10 on both axes. A solid boundary line x plus y equals 3 is drawn, and the region above the line is shaded.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":-1,"intercept":3},"side":[0,5],"dashed":false,"label":"x + y = 3"}]}'>
@@ -422,10 +318,10 @@ no
 </div>
 
 {{< fillin
-  question="Write the inequality shown by the shaded region in the graph with the boundary line $x+y=3$."
+  question="Write the inequality shown by the shaded region in the graph with the boundary line $x+y=3$. Keep $x+y$ on the left side, as the boundary line is written."
   answer="x+y\geq3"
   answerDisplay="$x+y\geq3$"
-  hint="The solid boundary includes equality. Test a point in the shaded region, such as $(0,5)$, to choose the inequality direction."
+  hint="Test a point in the shaded region to choose the inequality direction, then use the line's style — solid or dashed — to decide whether the equal sign is included."
 >}}
 
 ### Graph linear inequalities
@@ -433,7 +329,7 @@ no
 {{< multiplechoice
   question="Graph the linear inequality $y<\tfrac{3}{5}x+2$. Which description matches the graph?"
   answer="a dashed boundary line with the region below the line shaded"
-  hint="A strict inequality uses a dashed boundary; a test point below the boundary satisfies $y<\tfrac{3}{5}x+2$."
+  hint="Decide solid or dashed from the inequality symbol, then test $(0,0)$ in $y<\tfrac{3}{5}x+2$ and find which side of the line the point lies on."
 >}}
 a solid boundary line with the region above the line shaded
 a dashed boundary line with the region below the line shaded
@@ -444,7 +340,7 @@ a solid boundary line with the region below the line shaded
 {{< multiplechoice
   question="Graph the linear inequality $4x+2y\geq-8$. Which description matches the graph?"
   answer="a solid boundary line with the side containing the origin shaded"
-  hint="Equality is included, so the boundary is solid. Test $(0,0)$ in $4x+2y\geq-8$ to choose the shaded side."
+  hint="Decide solid or dashed from the inequality symbol, then test $(0,0)$ in $4x+2y\geq-8$ to choose the shaded side."
 >}}
 a dashed boundary line with the side containing the origin shaded
 a solid boundary line with the side not containing the origin shaded
@@ -454,4 +350,4 @@ a solid boundary line with the side containing the origin shaded
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.7: Graphs of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/4-7-graphs-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the boundary-line and shaded-region figures as accessible inline SVGs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block, using categorical graph descriptions where the interactive graph component cannot represent shaded half-planes.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.7: Graphs of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/4-7-graphs-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the boundary-line and shaded-region figures as accessible graphs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking about one step of the graph (the test-point statement, the boundary line's style) where a Try It asks for a whole graph; and adapted selected end-of-section exercises into the section-final interactive Practice block, using categorical graph descriptions where the interactive graph component cannot represent shaded half-planes.</small>

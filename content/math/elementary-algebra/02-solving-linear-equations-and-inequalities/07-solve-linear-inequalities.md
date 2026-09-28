@@ -126,7 +126,7 @@ $x = -1$ to show it is not included.
 
 {{< multiplechoice
   question="Graph on the number line: $x > 2$. Which symbol goes at the endpoint?"
-  hint="Ask whether the number 2 itself makes the inequality true. Since 2 > 2 is false, 2 is not a solution."
+  hint="Substitute 2 itself into the inequality: an endpoint that is a solution takes a bracket, one that is not takes a parenthesis."
   answer="parenthesis"
 >}}
 bracket
@@ -153,9 +153,9 @@ as $(-\infty, 1]$. The symbol $-\infty$ is read as "negative infinity."
 
 Did you notice how the parenthesis or bracket in the interval notation
 matches the symbol at the endpoint of the shading? A parenthesis in
-interval notation matches an endpoint that is *not* included (graphed with
-an open circle or unfilled endpoint), and a bracket in interval notation
-matches an endpoint that *is* included (graphed with a filled endpoint).
+interval notation matches an endpoint that is *not* included (graphed with a
+parenthesis), and a bracket in interval notation matches an endpoint that
+*is* included (graphed with a bracket).
 
 **Example.** Graph on the number line and write in interval notation:
 (a) $x \geq -3$ (b) $x < 2.5$ (c) $x \leq -\tfrac{3}{5}$.
@@ -173,7 +173,8 @@ $-\tfrac{3}{5}$. In interval notation, this is $\left(-\infty,
 {{< fillin
   question="Graph $x \ge 0.5$ on the number line and write the solution in interval notation."
   answer="[0.5,\infty)"
-  hint="Since the inequality includes equality, the endpoint is included — use a bracket, and shade toward the numbers greater than 0.5."
+  answerForm="decimal"
+  hint="Decide whether $0.5$ itself is a solution, which picks a bracket or a parenthesis, and which way from $0.5$ the solutions run."
 >}}
 
 ## Solve Inequalities Using the Subtraction and Addition Properties of Inequality
@@ -233,8 +234,9 @@ $$n \leq \frac{9}{8}$$
 The solution in interval notation is $\left(-\infty, \tfrac{9}{8}\right]$.
 
 {{< fillin
-  question="Solve the inequality $p - \tfrac{3}{4} \ge \tfrac{1}{6}$."
+  question="Solve the inequality $p - \tfrac{3}{4} \ge \tfrac{1}{6}$. Enter the solution as an inequality."
   answer="p\geq\frac{11}{12}"
+  answerForm="fraction lowest-terms"
   hint="Add $\tfrac{3}{4}$ to both sides to isolate p, then combine the fractions using a common denominator of 12."
 >}}
 
@@ -287,9 +289,10 @@ $$y < 6$$
 The solution in interval notation is $(-\infty, 6)$.
 
 {{< fillin
-  question="Solve the inequality $12d \le 60$."
+  question="Solve the inequality $12d \le 60$. Enter the solution as an inequality."
   answer="d\leq5"
-  hint="Divide both sides by 12. Since 12 is positive, the inequality symbol does not change direction."
+  answerForm="decimal"
+  hint="Divide both sides by the coefficient of $d$; the sign of the number you divide by decides whether the inequality symbol reverses."
 >}}
 
 **Example.** Solve the inequality $-10a \geq 50$, graph the solution on the
@@ -328,10 +331,11 @@ The solution in interval notation is $(-\infty, -5]$.
 </div>
 
 {{< fillin
-  question="Solve the inequality $-8q < 32$."
+  question="Solve the inequality $-8q < 32$. Enter the solution as an inequality."
   answer="q>-4"
+  answerForm="decimal"
   answerDisplay="$q > -4$"
-  hint="Divide both sides by -8. Since you are dividing by a negative number, reverse the inequality symbol."
+  hint="Divide both sides by the coefficient of $q$; the sign of the number you divide by decides whether the inequality symbol reverses."
 >}}
 
 Sometimes when solving an inequality, the variable ends up on the right. We
@@ -358,9 +362,10 @@ $$u > -25$$
 The solution in interval notation is $(-25, \infty)$.
 
 {{< fillin
-  question="Solve the inequality $\tfrac{t}{-2} \ge 8$."
+  question="Solve the inequality $\tfrac{t}{-2} \ge 8$. Enter the solution as an inequality."
   answer="t\leq-16"
-  hint="Multiply both sides by -2 to isolate t. Since you are multiplying by a negative number, reverse the inequality symbol."
+  answerForm="decimal"
+  hint="Multiply both sides by the denominator under $t$ to isolate $t$; the sign of the number you multiply by decides whether the inequality symbol reverses."
 >}}
 
 ## Solve Inequalities That Require Simplification
@@ -418,8 +423,9 @@ $$p > 2$$
 The solution in interval notation is $(2, \infty)$.
 
 {{< fillin
-  question="Solve the inequality $6u + 8(u - 1) > 10u + 32$, graph the solution on the number line, and write the solution in interval notation."
+  question="Solve the inequality $6u + 8(u - 1) > 10u + 32$, then enter the solution in interval notation."
   answer="(10,\infty)"
+  answerForm="decimal"
   answerDisplay="$(10, \infty)$"
   hint="Distribute the 8, combine like terms on the left, then collect the u-terms on one side and the constants on the other."
 >}}
@@ -484,12 +490,12 @@ The statement is false! The inequality is a contradiction — there is no
 solution.
 
 {{< multiplechoice
-  question="Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Which describes its solution?"
-  answer="a contradiction — no solution"
-  hint="Multiply both sides by the LCD, 15, to clear the fractions, then combine like terms. The variable terms cancel, leaving a comparison of two constants."
+  question="Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z + \tfrac{3}{5}$. Which describes its solution?"
+  answer="an identity — every real number is a solution"
+  hint="Multiply both sides by the LCD, 15, to clear the fractions, then combine like terms and collect the variable terms on one side."
 >}}
-a specific solution, $z < -9$
-a specific solution, $z > -9$
+a specific solution, $z < 9$
+a specific solution, $z > 9$
 an identity — every real number is a solution
 a contradiction — no solution
 {{< /multiplechoice >}}
@@ -506,8 +512,8 @@ more. The phrase "at least" is the same as "greater than or equal to."
 | :---: | :--- |
 | $>$ | is greater than, is more than, is larger than, exceeds |
 | $\geq$ | is greater than or equal to, is at least, is no less than, is the minimum |
-| $<$ | is less than, is smaller than, is lower than |
-| $\leq$ | is less than or equal to, is at most, has fewer than, is no more than, is the maximum |
+| $<$ | is less than, is smaller than, has fewer than, is lower than |
+| $\leq$ | is less than or equal to, is at most, is no more than, is the maximum |
 
 **Example.** Translate and solve. Then write the solution in interval
 notation and graph on the number line: "Twelve times $c$ is no more than
@@ -546,15 +552,17 @@ $$x \geq 75$$
 The solution in interval notation is $[75, \infty)$.
 
 {{< fillin
-  question="Translate and solve: 'Nineteen less than p is no less than 47.' Write the solution as an inequality."
+  question="Translate and solve: Nineteen less than $p$ is no less than 47. Enter the solution as an inequality."
   answer="p\geq66"
-  hint="'Nineteen less than p' translates to $p - 19$. 'Is no less than' means the same as $\ge$. Then add 19 to both sides."
+  answerForm="decimal"
+  hint="Translate each phrase using the phrase table above (mind which quantity is subtracted from which), then isolate $p$."
 >}}
 
 {{< fillin
-  question="Translate and solve: 'Four more than a is at most 15.' Write the solution as an inequality."
+  question="Translate and solve: Four more than $a$ is at most 15. Enter the solution as an inequality."
   answer="a\leq11"
-  hint="'Four more than a' translates to $a + 4$. 'Is at most' means the same as $\le$. Then subtract 4 from both sides."
+  answerForm="decimal"
+  hint="Translate each phrase using the phrase table above, then isolate $a$."
 >}}
 
 ## Key terms
@@ -588,36 +596,41 @@ $(-\infty, 3)$
 {{< fillin
   question="Graph $x \le -0.5$ on a number line. Enter the resulting set in interval notation."
   answer="(-\infty,-0.5]"
+  answerForm="decimal"
   answerDisplay="$(-\infty, -0.5]$"
-  hint="The endpoint $-0.5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+  hint="Decide whether $-0.5$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x \ge \tfrac{1}{3}$ on a number line. Enter the resulting set in interval notation."
   answer="[\frac{1}{3},\infty)"
+  answerForm="fraction lowest-terms"
   answerDisplay="$[\tfrac{1}{3}, \infty)$"
-  hint="The endpoint $\tfrac{1}{3}$ is included, so use a bracket there and extend the interval toward larger numbers."
+  hint="Decide whether $\tfrac{1}{3}$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x \le 5$ on a number line. Enter the resulting set in interval notation."
   answer="(-\infty,5]"
+  answerForm="decimal"
   answerDisplay="$(-\infty, 5]$"
-  hint="The endpoint $5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+  hint="Decide whether $5$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x \ge -1.5$ on a number line. Enter the resulting set in interval notation."
   answer="[-1.5,\infty)"
+  answerForm="decimal"
   answerDisplay="$[-1.5, \infty)$"
-  hint="The endpoint $-1.5$ is included, so use a bracket there and extend the interval toward larger numbers."
+  hint="Decide whether $-1.5$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x < -\tfrac{7}{3}$ on a number line. Enter the resulting set in interval notation."
   answer="(-\infty,-\frac{7}{3})"
+  answerForm="fraction lowest-terms"
   answerDisplay="$(-\infty, -\tfrac{7}{3})$"
-  hint="The endpoint $-\tfrac{7}{3}$ is excluded, so use a parenthesis there and extend the interval toward smaller numbers."
+  hint="Decide whether $-\tfrac{7}{3}$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 ### Solve inequalities using the Subtraction and Addition Properties of inequality
@@ -625,15 +638,17 @@ $(-\infty, 3)$
 {{< fillin
   question="Solve $m - 45 \le 62$, then represent its number-line graph in interval notation."
   answer="(-\infty,107]"
+  answerForm="decimal"
   answerDisplay="$(-\infty, 107]$"
-  hint="Add $45$ to both sides. The endpoint is included because the inequality uses $\le$."
+  hint="Undo the subtraction on both sides to isolate $m$, then check whether the inequality symbol includes the endpoint."
 >}}
 
 {{< fillin
   question="Solve $v + 12 > 3$, then represent its number-line graph in interval notation."
   answer="(-9,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-9, \infty)$"
-  hint="Subtract $12$ from both sides. The endpoint is excluded because the inequality uses $>$."
+  hint="Undo the addition on both sides to isolate $v$, then check whether the inequality symbol includes the endpoint."
 >}}
 
 ### Solve inequalities using the Division and Multiplication Properties of inequality
@@ -641,15 +656,17 @@ $(-\infty, 3)$
 {{< fillin
   question="Solve $6y < 48$, then represent its number-line graph in interval notation."
   answer="(-\infty,8)"
+  answerForm="decimal"
   answerDisplay="$(-\infty, 8)$"
-  hint="Divide both sides by positive $6$, so the inequality direction stays the same."
+  hint="Divide both sides by the coefficient of $y$; the sign of that number decides whether the inequality symbol reverses."
 >}}
 
 {{< fillin
   question="Solve $-8v \le 96$, then represent its number-line graph in interval notation."
   answer="[-12,\infty)"
+  answerForm="decimal"
   answerDisplay="$[-12, \infty)$"
-  hint="Divide both sides by $-8$ and reverse the inequality direction; equality includes the endpoint."
+  hint="Divide both sides by the coefficient of $v$; the sign of that number decides whether the inequality symbol reverses."
 >}}
 
 ### Solve inequalities that require simplification
@@ -657,15 +674,17 @@ $(-\infty, 3)$
 {{< fillin
   question="Solve $5u \le 8u - 21$, then represent its number-line graph in interval notation."
   answer="[7,\infty)"
+  answerForm="decimal"
   answerDisplay="$[7, \infty)$"
-  hint="Collect the variable terms to get $-3u \le -21$, then divide by $-3$ and reverse the inequality direction."
+  hint="Collect the $u$-terms on one side, then divide by the coefficient of $u$, watching its sign."
 >}}
 
 {{< fillin
   question="Solve $9y + 5(y + 3) < 4y - 35$, then represent its number-line graph in interval notation."
   answer="(-\infty,-5)"
+  answerForm="decimal"
   answerDisplay="$(-\infty, -5)$"
-  hint="Distribute and combine like terms to get $10y < -50$, then divide by positive $10$."
+  hint="Distribute the $5$, combine like terms, collect the $y$-terms on one side and the constants on the other, then divide by the coefficient of $y$, watching its sign."
 >}}
 
 ### Translate to an inequality and solve
@@ -673,17 +692,19 @@ $(-\infty, 3)$
 {{< fillin
   question="Translate and solve: Ninety times $c$ is less than 450. Enter the solution in interval notation."
   answer="(-\infty,5)"
+  answerForm="decimal"
   answerDisplay="$(-\infty, 5)$"
-  hint="Translate to $90c < 450$, then divide both sides by positive $90$."
+  hint="Find the inequality symbol for 'is less than' in the phrase table, write the inequality, then divide by the coefficient of $c$, watching its sign."
 >}}
 
 {{< fillin
   question="Translate and solve: Negative two times $s$ is lower than 56. Enter the solution in interval notation."
   answer="(-28,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-28, \infty)$"
-  hint="Translate to $-2s < 56$, then divide by $-2$ and reverse the inequality direction."
+  hint="Find the inequality symbol for 'is lower than' in the phrase table, write the inequality, then divide by the coefficient of $s$, watching its sign."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.7: Solve Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/2-7-solve-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics and the phrase-to-symbol reference as a markdown table; omitted the Be Prepared quiz and Self Check checklist; adapted selected end-of-section exercises into the interactive Practice block, presenting one graph-and-write-interval-notation exercise as a multiple choice among interval forms because its written answer appears in the lesson text above; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.7: Solve Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/2-7-solve-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated three of the number-line figures as accessible inline graphics (the other worked examples describe the graph in words or give its interval notation) and the phrase-to-symbol reference as a markdown table; omitted the Be Prepared quiz, Key Concepts summary (its properties appear in the body callouts), and Self Check checklist; adapted selected end-of-section exercises into the interactive Practice block, presenting one graph-and-write-interval-notation exercise as a multiple choice among interval forms because its written answer appears in the lesson text above; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, and posed the worked example $\tfrac{t}{-2}\ge8$ as an exercise; and keyed the Try It $\tfrac{2}{5}z-\tfrac{1}{3}z<\tfrac{1}{15}z+\tfrac{3}{5}$ as an identity (every real number is a solution) where the source's solution calls it a contradiction with no solution.</small>

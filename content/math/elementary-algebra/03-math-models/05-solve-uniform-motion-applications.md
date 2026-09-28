@@ -96,13 +96,17 @@ is $60$ mph.
 {{< fillin
   question="Wayne and Dennis like to ride the bike path from Riverside Park to the beach. Dennis's speed is seven miles per hour faster than Wayne's speed, so it takes Wayne 2 hours to ride to the beach while it takes Dennis 1.5 hours for the ride. Find the speed of both bikers. Enter Wayne's speed, in mph."
   answer="21"
-  hint="Both riders cover the same distance. Let w be Wayne's speed; Dennis's speed is $w + 7$. Set 2w equal to $1.5(w + 7)$ and solve for w."
+  answerForm="decimal"
+  answerDisplay="$21$ mph"
+  hint="Let $w$ be Wayne's speed and write Dennis's speed in terms of $w$. Both ride the same distance, so set the two rate-times-time expressions equal and solve."
 >}}
 
 {{< fillin
   question="Jeromy can drive from his house in Cleveland to his college in Chicago in 4.5 hours. It takes his mother 6 hours to make the same drive. Jeromy drives 20 miles per hour faster than his mother. Find his mother's speed, in mph."
   answer="60"
-  hint="Both drivers cover the same distance. Let m be his mother's speed; Jeromy's speed is $m + 20$. Set $4.5(m + 20)$ equal to 6m and solve for m."
+  answerForm="decimal"
+  answerDisplay="$60$ mph"
+  hint="Let $m$ be his mother's speed and write Jeromy's speed in terms of $m$. Both drive the same distance, so set the two rate-times-time expressions equal and solve."
 >}}
 
 In the last example, we had two trains traveling the same distance. The
@@ -150,13 +154,17 @@ Christopher's speed was $50$ mph, and his parents' speed was $40$ mph.
 {{< fillin
   question="Carina is driving from her home in Anaheim to Berkeley on the same day her brother is driving from Berkeley to Anaheim, so they decide to meet for lunch along the way in Buttonwillow. The distance from Anaheim to Berkeley is 410 miles. It takes Carina 3 hours to get to Buttonwillow, while her brother drives 4 hours to get there. The average speed Carina's brother drove was 15 miles per hour faster than Carina's average speed. Find Carina's average speed, in mph."
   answer="50"
-  hint="The two driving distances add up to 410 miles. Let c be Carina's speed; her brother's speed is $c + 15$. Set $3c + 4(c + 15)$ equal to 410 and solve for c."
+  answerForm="decimal"
+  answerDisplay="$50$ mph"
+  hint="Let $c$ be Carina's speed and write her brother's speed in terms of $c$. They drive toward each other, so the two rate-times-time distances add up to the distance between the cities."
 >}}
 
 {{< fillin
   question="Ashley goes to college in Minneapolis, 234 miles from her home in Sioux Falls. She wants her parents to bring her more winter clothes, so they agree to meet at a restaurant on the road between Minneapolis and Sioux Falls. Ashley and her parents both drove 2 hours to the restaurant. Ashley's average speed was seven miles per hour faster than her parents' average speed. Find her parents' average speed, in mph."
   answer="55"
-  hint="The two driving distances add up to 234 miles. Let a be the parents' speed; Ashley's speed is $a + 7$. Set $2(a + 7) + 2a$ equal to 234 and solve for a."
+  answerForm="decimal"
+  answerDisplay="$55$ mph"
+  hint="Let $p$ be the parents' speed and write Ashley's speed in terms of $p$. They drive toward each other, so the two rate-times-time distances add up to the distance between the cities."
 >}}
 
 **Example.** Two truck drivers leave a rest area on the interstate at the
@@ -194,15 +202,17 @@ It will take the trucks $2.5$ hours to be $325$ miles apart.
 {{< fillin
   question="Pierre and Monique leave their home in Portland at the same time. Pierre drives north on the turnpike at a speed of 75 miles per hour while Monique drives south at a speed of 68 miles per hour. How long will it take them to be 429 miles apart? Enter the time in hours."
   answer="3"
-  hint="They travel in opposite directions for the same amount of time t. Set $75t + 68t$ equal to 429 and solve for t."
+  answerForm="decimal"
+  answerDisplay="$3$ hours"
+  hint="Both drive for the same time $t$. They head in opposite directions, so the two rate-times-time distances add up to the distance between them."
 >}}
 
 {{< fillin
-  question="Thanh and Nhat leave their office in Sacramento at the same time. Thanh drives north on $I-5$ at a speed of 72 miles per hour. Nhat drives south on $I-5$ at a speed of 76 miles per hour. How long will it take them to be 330 miles apart? Enter the time in hours as a fraction."
-  answer="\frac{165}{74}"
-  answerForm="fraction"
-  answerDisplay="$\tfrac{165}{74}$"
-  hint="They travel in opposite directions for the same amount of time t. Set $72t + 76t$ equal to 330 and solve for t."
+  question="Thanh and Nhat leave their office in Sacramento at the same time. Thanh drives north on I-5 at a speed of 72 miles per hour. Nhat drives south on I-5 at a speed of 76 miles per hour. How long will it take them to be 330 miles apart? Enter the time in hours, rounded to the nearest tenth."
+  answer="2.2"
+  answerForm="decimal"
+  answerDisplay="$2.2$ hours"
+  hint="Both drive for the same time $t$. They head in opposite directions, so the two rate-times-time distances add up to the distance between them. Solve, then round."
 >}}
 
 {{< callout type="info" >}}
@@ -220,7 +230,7 @@ Let $r$ represent Katie Mae's walking speed, so $r + 3$ represents her
 biking speed. The speed is in miles per hour, so we need to express the
 times in hours, too, since one hour is 60 minutes:
 
-$$30 \text{ minutes is } \tfrac{30}{60} \text{ or } \tfrac{1}{2} \text{ hour} \qquad\qquad 15 \text{ minutes is } \tfrac{15}{60} \text{ or } \tfrac{1}{4} \text{ hour}$$
+$$\begin{array}{l} 30 \text{ minutes is } \tfrac{30}{60} \text{ or } \tfrac{1}{2} \text{ hour} \\[4pt] 15 \text{ minutes is } \tfrac{15}{60} \text{ or } \tfrac{1}{4} \text{ hour} \end{array}$$
 
 | | Rate (mph) | Time (hrs) | Distance (miles) |
 | :--- | :---: | :---: | :---: |
@@ -253,13 +263,17 @@ mph.
 {{< fillin
   question="Suzy takes 50 minutes to hike uphill from the parking lot to the lookout tower. It takes her 30 minutes to hike back down to the parking lot. Her speed going downhill is 1.2 miles per hour faster than her speed going uphill. Find Suzy's uphill speed, in mph."
   answer="1.8"
-  hint="Convert both times to hours (50 min = 5/6 hr, 30 min = 1/2 hr). Let u be the uphill speed; the downhill speed is $u + 1.2$. The distance is the same both ways."
+  answerForm="decimal"
+  answerDisplay="$1.8$ mph"
+  hint="First convert both times from minutes to hours. Let $u$ be the uphill speed and write the downhill speed in terms of $u$; the distance is the same both ways, so set the two rate-times-time expressions equal."
 >}}
 
 {{< fillin
   question="Llewyn takes 45 minutes to drive his boat upstream from the dock to his favorite fishing spot. It takes him 30 minutes to drive the boat back downstream to the dock. The boat's speed going downstream is four miles per hour faster than its speed going upstream. Find the boat's upstream speed, in mph."
   answer="8"
-  hint="Convert both times to hours (45 min = 3/4 hr, 30 min = 1/2 hr). Let u be the upstream speed; the downstream speed is $u + 4$. The distance is the same both ways."
+  answerForm="decimal"
+  answerDisplay="$8$ mph"
+  hint="First convert both times from minutes to hours. Let $u$ be the upstream speed and write the downstream speed in terms of $u$; the distance is the same both ways, so set the two rate-times-time expressions equal."
 >}}
 
 In the distance, rate, and time formula, time represents the actual amount
@@ -312,13 +326,17 @@ Hamilton drove 40 mph in the city and 70 mph in the desert.
 {{< fillin
   question="Cruz is training to compete in a triathlon. He left his house at 6:00 and ran until 7:30. Then he rode his bike until 9:45. He covered a total distance of 51 miles. His speed when biking was 1.6 times his speed when running. Find Cruz's running speed, in mph."
   answer="10"
-  hint="He ran for 1.5 hours and biked for 2.25 hours. Let r be his running speed; his biking speed is 1.6r. Set $1.5r + 2.25(1.6r)$ equal to 51 and solve for r."
+  answerForm="decimal"
+  answerDisplay="$10$ mph"
+  hint="Subtract clock times to find how many hours he ran and how many he biked. Let $r$ be his running speed and write his biking speed in terms of $r$; the two rate-times-time distances add up to the total distance."
 >}}
 
 {{< fillin
   question="Phuong left home on his bicycle at 10:00. He rode on the flat street until 11:15, then rode uphill until 11:45. He rode a total of 31 miles. His speed riding uphill was 0.6 times his speed on the flat street. Find his speed on the flat street, in mph."
   answer="20"
-  hint="He rode on the flat street for 1.25 hours and uphill for 0.5 hour. Let f be his flat-street speed; his uphill speed is 0.6f. Set $1.25f + 0.5(0.6f)$ equal to 31 and solve for f."
+  answerForm="decimal"
+  answerDisplay="$20$ mph"
+  hint="Subtract clock times to find how many hours he rode on each part. Let $f$ be his flat-street speed and write his uphill speed in terms of $f$; the two rate-times-time distances add up to the total distance."
 >}}
 
 ## Key terms
@@ -334,40 +352,45 @@ find the elapsed time before using $D = rt$.
 ### Solve uniform motion applications
 
 {{< fillin
-  question="Lilah is moving from Portland to Seattle. It takes her three hours to go by train. Mason leaves the train station in Portland and drives to the train station in Seattle with all Lilah's boxes in his car. It takes him 2.4 hours to get to Seattle, driving at 15 miles per hour faster than the speed of the train. Find Mason's speed and the speed of the train. Enter Mason's speed first and the train's speed second, separated by a comma."
+  question="Lilah is moving from Portland to Seattle. It takes her three hours to go by train. Mason leaves the train station in Portland and drives to the train station in Seattle with all Lilah's boxes in his car. It takes him 2.4 hours to get to Seattle, driving at 15 miles per hour faster than the speed of the train. Find Mason's speed and the speed of the train. Enter Mason's speed first and the train's speed second, in mph, separated by a comma."
   answer="75,60"
+  answerForm="decimal"
   answerDisplay="Mason: $75$ mph; train: $60$ mph"
-  hint="Both travel the same distance. If the train's speed is $r$, compare $3r$ with $2.4(r+15)$."
+  hint="Let $r$ be the train's speed and write Mason's speed in terms of $r$. Both make the same trip, so set the two rate-times-time expressions equal."
 >}}
 
 {{< fillin
-  question="Saul drove his truck 3 hours from Dallas towards Kansas City and stopped at a truck stop to get dinner. At the truck stop he met Erwin, who had driven 4 hours from Kansas City towards Dallas. The distance between Dallas and Kansas City is 542 miles, and Erwin's speed was eight miles per hour slower than Saul's speed. Find the speed of the two truckers. Enter Saul's speed first and Erwin's speed second, separated by a comma."
+  question="Saul drove his truck 3 hours from Dallas towards Kansas City and stopped at a truck stop to get dinner. At the truck stop he met Erwin, who had driven 4 hours from Kansas City towards Dallas. The distance between Dallas and Kansas City is 542 miles, and Erwin's speed was eight miles per hour slower than Saul's speed. Find the speed of the two truckers. Enter Saul's speed first and Erwin's speed second, in mph, separated by a comma."
   answer="82,74"
+  answerForm="decimal"
   answerDisplay="Saul: $82$ mph; Erwin: $74$ mph"
-  hint="Their distances add to $542$ miles. If Saul's speed is $r$, write $3r+4(r-8)=542$."
+  hint="Let $r$ be Saul's speed and write Erwin's speed in terms of $r$. They drove toward each other, so the two rate-times-time distances add up to the distance between the cities."
 >}}
 
 {{< fillin
-  question="Cindy and Richard leave their dorm in Charleston at the same time. Cindy rides her bicycle north at a speed of 18 miles per hour. Richard rides his bicycle south at a speed of 14 miles per hour. How long will it take them to be 96 miles apart?"
+  question="Cindy and Richard leave their dorm in Charleston at the same time. Cindy rides her bicycle north at a speed of 18 miles per hour. Richard rides his bicycle south at a speed of 14 miles per hour. How long will it take them to be 96 miles apart? Enter the time in hours."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$3$ hours"
-  hint="Because they travel in opposite directions, their distances add. Use $18t+14t=96$."
+  hint="Both ride for the same time $t$. They head in opposite directions, so the two rate-times-time distances add up to the distance between them."
 >}}
 
 {{< fillin
-  question="Lorena walks the path around the park in 30 minutes. If she jogs, it takes her 20 minutes. Her jogging speed is 1.5 miles per hour faster than her walking speed. Find Lorena's walking speed and jogging speed. Enter the walking speed first and the jogging speed second, separated by a comma."
+  question="Lorena walks the path around the park in 30 minutes. If she jogs, it takes her 20 minutes. Her jogging speed is 1.5 miles per hour faster than her walking speed. Find Lorena's walking speed and jogging speed. Enter the walking speed first and the jogging speed second, in mph, separated by a comma."
   answer="3,4.5"
+  answerForm="decimal"
   answerDisplay="walking: $3$ mph; jogging: $4.5$ mph"
-  hint="Convert the times to $\tfrac{1}{2}$ hour and $\tfrac{1}{3}$ hour. The two distances are equal, so set $\tfrac{1}{2}r=\tfrac{1}{3}(r+1.5)$."
+  hint="First convert both times from minutes to hours. Let $r$ be the walking speed and write the jogging speed in terms of $r$; the path is the same either way, so set the two rate-times-time expressions equal."
 >}}
 
 {{< fillin
-  question="Marisol left Los Angeles at 2:30 to drive to Santa Barbara, a distance of 95 miles. The traffic was heavy until 3:20. She drove the rest of the way in very light traffic and arrived at 4:20. Her speed in heavy traffic was 40 miles per hour slower than her speed in light traffic. Find her speed in heavy traffic and in light traffic. Enter the heavy-traffic speed first and the light-traffic speed second, separated by a comma."
+  question="Marisol left Los Angeles at 2:30 to drive to Santa Barbara, a distance of 95 miles. The traffic was heavy until 3:20. She drove the rest of the way in very light traffic and arrived at 4:20. Her speed in heavy traffic was 40 miles per hour slower than her speed in light traffic. Find her speed in heavy traffic and in light traffic. Enter the heavy-traffic speed first and the light-traffic speed second, in mph, separated by a comma."
   answer="30,70"
+  answerForm="decimal"
   answerDisplay="heavy traffic: $30$ mph; light traffic: $70$ mph"
-  hint="She drove in heavy traffic for $\tfrac{5}{6}$ hour and in light traffic for $1$ hour. If the light-traffic speed is $r$, use $\tfrac{5}{6}(r-40)+r=95$."
+  hint="Subtract clock times to find how many hours she drove in each kind of traffic. Let $r$ be the light-traffic speed and write the heavy-traffic speed in terms of $r$; the two rate-times-time distances add up to the total distance."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.5: Solve Uniform Motion Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-5-solve-uniform-motion-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the rate/time/distance charts as markdown tables and the diagrams as prose descriptions; corrected an inconsistency in the source's clock-time example (the worked solution used a 4:00 pm changeover, matching its diagram and 2-hour/2.5-hour split, though the prose read "4:30 pm"); omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.5: Solve Uniform Motion Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-5-solve-uniform-motion-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the rate/time/distance charts as markdown tables and the diagrams as prose descriptions; corrected an inconsistency in the source's clock-time example (the worked solution used a 4:00 pm changeover, matching its diagram and 2-hour/2.5-hour split, though the prose read "4:30 pm"); added "rounded to the nearest tenth" to the Thanh and Nhat Try It, whose source answer, 2.2 hours, rounds the exact time without saying so; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
