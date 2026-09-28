@@ -71,10 +71,10 @@ $$
 {{< /callout >}}
 
 {{< fillin
-  question="If $y$ varies directly with $x$ and $y = 3$ when $x = 10$, find the constant of variation $k$. (Enter its value.)"
-  answer="0.3"
-  answerDisplay="$k = 0.3$, so $y = 0.3x$"
-  hint="Substitute into $y = kx$: $3 = k \cdot 10$. Divide both sides by $10$."
+  question="If $y$ varies directly as $x$ and $y = 3$ when $x = 10$, find the equation that relates $x$ and $y$."
+  answer="y=\frac{3}{10}x"
+  answerDisplay="$y = \tfrac{3}{10}x$"
+  hint="Substitute the given values into $y = kx$, divide to solve for $k$, then write $y = kx$ with that value of $k$."
 >}}
 
 Now we'll solve a few applications of direct variation.
@@ -111,7 +111,7 @@ example as part of the solution, just like we do in most applied problems.
 with the number of miles she drives. Last week she drove $469.8$ miles and used
 $14.5$ gallons of gas. (a) Write the equation that relates the number of
 gallons of gas used to the number of miles driven. (b) How many gallons of gas
-would Eunice's car use if she drove $1000$ miles?
+would Eunice's car use if she drove $1{,}000$ miles?
 
 (a) Let $g$ be the number of gallons of gas and $m$ be the number of miles
 driven. Using $g = km$:
@@ -125,11 +125,14 @@ $$
 \end{array}
 $$
 
-(b) Find $g$ when $m = 1000$:
+(b) Find $g$ when $m = 1{,}000$:
 
-$$g = 0.031(1000) = 31$$
+$$g = 0.031(1{,}000) = 31$$
 
-Eunice's car would use $31$ gallons of gas if she drove $1000$ miles.
+Eunice's car would use $31$ gallons of gas if she drove $1{,}000$ miles.
+
+Notice that in this example, the units on the constant of variation are
+gallons/mile. In everyday life, we usually talk about miles/gallon.
 
 In some situations, one variable varies directly with the *square* of the
 other variable. When that happens, the equation of direct variation is
@@ -204,10 +207,10 @@ $$
 $$
 
 {{< fillin
-  question="If $y$ varies inversely with $x$ and $y = 8$ when $x = 2$, find the constant of variation $k$. (Enter its value.)"
-  answer="16"
-  answerDisplay="$k = 16$, so $y = \tfrac{16}{x}$"
-  hint="Substitute into $y = \tfrac{k}{x}$: $8 = \tfrac{k}{2}$. Multiply both sides by $2$."
+  question="If $y$ varies inversely with $x$ and $y = 8$ when $x = 2$, find the equation that relates $x$ and $y$."
+  answer="y=\frac{16}{x}"
+  answerDisplay="$y = \tfrac{16}{x}$"
+  hint="Substitute the given values into $y = \tfrac{k}{x}$, multiply both sides by the value of $x$ to solve for $k$, then write $y = \tfrac{k}{x}$ with that value of $k$."
 >}}
 
 **Example.** The fuel consumption (mpg) of a car varies inversely with its
@@ -229,7 +232,7 @@ $$
 
 (b) Find $f$ when $w = 4{,}030$:
 
-$$f = \frac{80{,}600}{4030} = 20$$
+$$f = \frac{80{,}600}{4{,}030} = 20$$
 
 A car that weighs $4{,}030$ pounds would have fuel consumption of $20$ mpg.
 
@@ -259,7 +262,7 @@ A $20''$ guitar string has frequency $572$ vibrations per second.
 ## Key terms
 
 **direct variation** — a relationship in which $y = kx$: one variable is a
-constant multiple of the other, so as $x$ grows, $y$ grows in proportion.
+constant multiple of the other.
 **inverse variation** — a relationship in which $y = \tfrac{k}{x}$: as one
 variable increases, the other decreases. **constant of variation** — the
 nonzero constant $k$ in a variation equation, found by substituting a known
@@ -273,21 +276,22 @@ pair of values and solving.
   question="If $v$ varies directly as $w$ and $v = 24$ when $w = 8$, find the equation that relates $v$ and $w$."
   answer="v=3w"
   answerDisplay="$v = 3w$"
-  hint="Substitute into $v = kw$: $24 = k \cdot 8$. Divide both sides by $8$."
+  hint="Substitute the given values into $v = kw$, divide to solve for $k$, then write $v = kw$ with that value of $k$."
 >}}
 
 {{< fillin
   question="The number of apples, $a$, Terri needs for her fundraiser pies varies directly with the number of pies, $p$, she makes. It takes nine apples to make two pies. Write the equation that relates $a$ and $p$."
   answer="a=4.5p"
   answerDisplay="$a = 4.5p$"
-  hint="Substitute into $a = kp$: $9 = k \cdot 2$. Divide both sides by $2$."
+  hint="Substitute the numbers of apples and pies into $a = kp$, divide to solve for $k$, then write $a = kp$ with that value of $k$."
 >}}
 
 {{< fillin
   question="Using Terri's equation from the previous exercise, how many apples would she need to make six pies?"
   answer="27"
+  answerForm="decimal"
   answerDisplay="27 apples"
-  hint="Substitute $p = 6$ into $a = 4.5p$ and simplify."
+  hint="Substitute the number of pies into the equation you wrote in the previous exercise and simplify."
 >}}
 
 ### Solve inverse variation problems
@@ -296,16 +300,16 @@ pair of values and solving.
   question="If $y$ varies inversely with $x$ and $y = 5$ when $x = 4$, find the equation that relates $x$ and $y$."
   answer="y=\frac{20}{x}"
   answerDisplay="$y = \tfrac{20}{x}$"
-  hint="Substitute into $y = \tfrac{k}{x}$: $5 = \tfrac{k}{4}$. Multiply both sides by $4$."
+  hint="Substitute the given values into $y = \tfrac{k}{x}$, multiply both sides by the value of $x$ to solve for $k$, then write $y = \tfrac{k}{x}$ with that value of $k$."
 >}}
 
 {{< fillin
   question="If $v$ varies inversely with $w$ and $v = 6$ when $w = \tfrac{1}{2}$, find the equation that relates $v$ and $w$."
   answer="v=\frac{3}{w}"
   answerDisplay="$v = \tfrac{3}{w}$"
-  hint="Substitute $w = \tfrac{1}{2}$ into $v = \tfrac{k}{w}$, then multiply both sides by $\tfrac{1}{2}$ to solve for $k$."
+  hint="Substitute the given values into $v = \tfrac{k}{w}$, multiply both sides by the value of $w$ to solve for $k$, then write $v = \tfrac{k}{w}$ with that value of $k$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.9: Use Direct and Inverse Variation](https://openstax.org/books/elementary-algebra-2e/pages/8-9-use-direct-and-inverse-variation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.9: Use Direct and Inverse Variation](https://openstax.org/books/elementary-algebra-2e/pages/8-9-use-direct-and-inverse-variation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts; added a Key terms list (the module has no glossary); omitted the Be Prepared quiz, Self Check checklist, the other twelve practice problems ("Try Its"), and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted two of the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

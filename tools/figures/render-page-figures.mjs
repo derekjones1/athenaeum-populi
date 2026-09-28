@@ -109,9 +109,13 @@ async function main() {
         continue;
       }
       const html = join(out, `B${line}.html`);
-      writeFileSync(html, `<!doctype html><html><head><link rel="stylesheet" href="${css}"></head><body style="${BODY};font-size:24px;width:600px">${body}</body></html>`);
+      writeFileSync(html, `<!doctype html><html><head><link rel="stylesheet" href="${css}"></head><body style="${BODY};font-size:24px;width:max-content;min-width:600px">${body}</body></html>`);
       const rows = (tex.match(/\\\\/g) || []).length + 1;
-      shoot(html, join(out, `B${line}.png`), 620, 60 + rows * 44);
+      // A wide step table overflows a 600px column and the screenshot crops
+      // it (three fixers re-shot at 1,500px in the EA chapter 8–9 re-review):
+      // the body grows to the block's own width and the window leaves room;
+      // a row of stacked fractions is about twice a plain row's height.
+      shoot(html, join(out, `B${line}.png`), 1600, 80 + rows * (/\\[dt]?frac/.test(tex) ? 110 : 50));
       console.log(`B${line} ${tex.split('\n').find((l) => l.trim() && !l.includes('\\begin')) || tex}`.slice(0, 120));
     }
   }

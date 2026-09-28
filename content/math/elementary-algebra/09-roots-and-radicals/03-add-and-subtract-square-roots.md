@@ -63,7 +63,7 @@ $$
   answer="-\sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$-\sqrt{2}$"
-  hint="The radicals are like, so subtract the coefficients: $8 - 9$."
+  hint="The radicals are like, so subtract the coefficients and keep the common radical."
 >}}
 
 **Example.** Simplify $3\sqrt{y} + 4\sqrt{y}$.
@@ -88,7 +88,7 @@ $$4\sqrt{x} - 2\sqrt{y}$$
   answer="9\sqrt{x}"
   answerForm="simplified-radical"
   answerDisplay="$9\sqrt{x}$"
-  hint="The radicands are the same, so add the coefficients $2$ and $7$ and keep $\sqrt{x}$."
+  hint="The radicands are the same, so add the coefficients and keep the common radical."
 >}}
 
 When there are three or more radicals, combine the like ones the same way.
@@ -147,7 +147,7 @@ $$
   answer="-2\sqrt{5xy}"
   answerForm="simplified-radical"
   answerDisplay="$-2\sqrt{5xy}$"
-  hint="All three radicands are $5xy$, so combine the coefficients: $1 + 4 - 7$."
+  hint="All three radicands match, so combine the coefficients; a radical written with no coefficient has coefficient $1$."
 >}}
 
 ## Add and subtract square roots that need simplification
@@ -187,7 +187,7 @@ $$
   answer="\sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$\sqrt{2}$"
-  hint="Write $\sqrt{32} = 4\sqrt{2}$ and $\sqrt{18} = 3\sqrt{2}$, then subtract the coefficients."
+  hint="Simplify each radical by removing its largest perfect-square factor, then combine the like radicals."
 >}}
 
 Just like we use the Associative Property of Multiplication to simplify
@@ -213,7 +213,7 @@ $$
   answer="6\sqrt{3}"
   answerForm="simplified-radical"
   answerDisplay="$6\sqrt{3}$"
-  hint="Simplify to $12\sqrt{3} - 6\sqrt{3}$, then subtract the coefficients."
+  hint="Simplify each radical by removing its largest perfect-square factor, multiply by the coefficients, then combine the like radicals."
 >}}
 
 When the coefficients are fractions, simplify the radicals first, then find a
@@ -302,7 +302,7 @@ $$
   answer="\frac{14}{15}\sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{14}{15}\sqrt{2}$"
-  hint="Simplify to $\tfrac{8}{5}\sqrt{2} - \tfrac{2}{3}\sqrt{2}$, then use a common denominator of $15$."
+  hint="Simplify each radical, multiply by its fraction coefficient, then subtract the coefficients over a common denominator."
 >}}
 
 {{< fillin
@@ -310,7 +310,7 @@ $$
   answer="-p\sqrt{3p}"
   answerForm="simplified-radical"
   answerDisplay="$-p\sqrt{3p}$"
-  hint="Each radical simplifies to a multiple of $\sqrt{3p}$: $3p\sqrt{3p} - 4p\sqrt{3p}$."
+  hint="Remove the largest perfect-square factor from each radical, including the even power of $p$, then combine the like radicals."
 >}}
 
 ## Key terms
@@ -330,23 +330,23 @@ square roots are combined when adding or subtracting.
   answer="3\sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$3\sqrt{2}$"
-  hint="The radicals are like, so subtract the coefficients: $8 - 5$."
+  hint="The radicals are like, so subtract the coefficients and keep the common radical."
 >}}
 
 {{< fillin
-  question="Simplify: $7\sqrt{y} + 2\sqrt{y}$."
-  answer="9\sqrt{y}"
+  question="Simplify: $\sqrt{a} - 4\sqrt{a}$."
+  answer="-3\sqrt{a}"
   answerForm="simplified-radical"
-  answerDisplay="$9\sqrt{y}$"
-  hint="The radicands are the same, so add the coefficients $7$ and $2$."
+  answerDisplay="$-3\sqrt{a}$"
+  hint="The radicals are like, so subtract the coefficients; a radical written with no coefficient has coefficient $1$."
 >}}
 
 {{< fillin
   question="Simplify: $3\sqrt{3} - 8\sqrt{3} + 7\sqrt{5}$."
   answer="-5\sqrt{3}+7\sqrt{5}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$-5\sqrt{3} + 7\sqrt{5}$"
-  hint="Combine the two $\sqrt{3}$ terms first; $\sqrt{5}$ is not like them and stays separate."
+  hint="Combine only the terms whose radicands match; a term with a different radicand stays as it is."
 >}}
 
 ### Add and subtract square roots that need simplification
@@ -356,7 +356,7 @@ square roots are combined when adding or subtracting.
   answer="-2\sqrt{3}"
   answerForm="simplified-radical"
   answerDisplay="$-2\sqrt{3}$"
-  hint="Write $\sqrt{27} = 3\sqrt{3}$ and $\sqrt{75} = 5\sqrt{3}$, then subtract the coefficients."
+  hint="Simplify each radical by removing its largest perfect-square factor, then combine the like radicals."
 >}}
 
 {{< fillin
@@ -364,7 +364,7 @@ square roots are combined when adding or subtracting.
   answer="-\sqrt{5}"
   answerForm="simplified-radical"
   answerDisplay="$-\sqrt{5}$"
-  hint="Simplify each radical first: $\tfrac{1}{2}\sqrt{20} = \sqrt{5}$ and $\tfrac{2}{3}\sqrt{45} = 2\sqrt{5}$."
+  hint="Simplify each radical, multiply by its fraction coefficient, then combine the like radicals."
 >}}
 
 {{< fillin
@@ -372,7 +372,7 @@ square roots are combined when adding or subtracting.
   answer="14x\sqrt{5}"
   answerForm="simplified-radical"
   answerDisplay="$14x\sqrt{5}$"
-  hint="Each radical simplifies to a multiple of $x\sqrt{5}$: $6x\sqrt{5} - 12x\sqrt{5} + 20x\sqrt{5}$."
+  hint="Remove the largest perfect-square factor from each radical, including $x^2$, multiply by the coefficients, then combine the like radicals."
 >}}
 
 ---

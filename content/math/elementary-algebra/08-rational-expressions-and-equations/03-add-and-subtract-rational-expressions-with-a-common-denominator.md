@@ -69,9 +69,9 @@ makes $4y - 3$ equal to zero.
 {{< fillin
   question="Add: $\tfrac{5x}{2x + 3} + \tfrac{2}{2x + 3}$."
   answer="\frac{5x+2}{2x+3}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5x + 2}{2x + 3}$"
-  hint="The denominators match, so add the numerators $5x$ and $2$ over the common denominator $2x + 3$; the result does not factor."
+  hint="The denominators match: add the numerators and place the sum over the common denominator, then check whether the numerator and denominator share a factor."
 >}}
 
 When we add rational expressions, the sum often factors, letting us simplify.
@@ -152,7 +152,7 @@ that step is the most common mistake when subtracting rational expressions.
   answer="n+3"
   answerForm="polynomial"
   answerDisplay="$n + 3$"
-  hint="Distribute the subtraction sign: $n^2 - (n + 12) = n^2 - n - 12$. Factor the numerator and cancel the common factor with $n - 4$."
+  hint="Subtract the numerators over the common denominator, distributing the minus sign to every term of the second numerator; then factor the numerator and remove the common factor."
 >}}
 
 The numerators can be larger polynomials, but the process is the same:
@@ -234,9 +234,9 @@ $$
 {{< fillin
   question="Subtract: $\tfrac{y^2 - 5y}{y^2 - 4} - \tfrac{6y - 6}{4 - y^2}$."
   answer="\frac{y+3}{y+2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y + 3}{y + 2}$"
-  hint="The denominators $y^2 - 4$ and $4 - y^2$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $y^2 - 4$, then subtract, factor, and simplify."
+  hint="The denominators are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ to make them match, then subtract the numerators, factor, and remove common factors."
 >}}
 
 ## Key terms
@@ -256,7 +256,7 @@ them into a common denominator.
   answer="\frac{3}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{5}$"
-  hint="The denominators match, so add the numerators over the common denominator $15$, then simplify by removing the common factor of $3$."
+  hint="The denominators match: add the numerators over the common denominator, then simplify by removing common factors."
 >}}
 
 {{< fillin
@@ -264,15 +264,15 @@ them into a common denominator.
   answer="r+8"
   answerForm="polynomial"
   answerDisplay="$r + 8$"
-  hint="Add the numerators over the common denominator $2r - 1$, then factor $2r^2 + 15r - 8$ and cancel the common factor with the denominator."
+  hint="Add the numerators over the common denominator, then factor the numerator and remove the common factor."
 >}}
 
 {{< fillin
   question="Add: $\tfrac{2w^2}{w^2 - 16} + \tfrac{8w}{w^2 - 16}$."
   answer="\frac{2w}{w-4}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2w}{w - 4}$"
-  hint="Add the numerators over the common denominator, factor $2w^2 + 8w$ and $w^2 - 16$, then cancel the shared factor of $w + 4$."
+  hint="Add the numerators over the common denominator, then factor the numerator and the denominator completely and remove the common factor."
 >}}
 
 ### Subtract rational expressions with a common denominator
@@ -282,7 +282,7 @@ them into a common denominator.
   answer="y-8"
   answerForm="polynomial"
   answerDisplay="$y - 8$"
-  hint="Subtract the numerators over the common denominator, then factor the difference of squares $y^2 - 64$ and cancel the common factor with $y + 8$."
+  hint="Subtract the numerators over the common denominator, then factor the numerator as a difference of squares and remove the common factor."
 >}}
 
 {{< fillin
@@ -290,15 +290,15 @@ them into a common denominator.
   answer="c+2"
   answerForm="polynomial"
   answerDisplay="$c + 2$"
-  hint="Distribute the subtraction sign: $c^2 - (6c + 16) = c^2 - 6c - 16$. Factor the numerator and cancel the common factor with $c - 8$."
+  hint="Subtract the numerators over the common denominator, distributing the minus sign to both terms of the second numerator; then factor the numerator and remove the common factor."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{5r^2 + 7r - 33}{r^2 - 49} - \tfrac{4r^2 + 5r + 30}{r^2 - 49}$."
   answer="\frac{r+9}{r+7}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{r + 9}{r + 7}$"
-  hint="Distribute the subtraction sign, combine like terms to get $r^2 + 2r - 63$, then factor both the numerator and the denominator $r^2 - 49$ and cancel the shared factor."
+  hint="Subtract the numerators over the common denominator, distribute the minus sign, and combine like terms; then factor the numerator and the denominator and remove the common factor."
 >}}
 
 ### Add and subtract rational expressions whose denominators are opposites
@@ -306,8 +306,9 @@ them into a common denominator.
 {{< fillin
   question="Add: $\tfrac{10v}{2v - 1} + \tfrac{2v + 4}{1 - 2v}$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$4$"
-  hint="The denominators $2v - 1$ and $1 - 2v$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $2v - 1$, then add and simplify."
+  hint="The denominators are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ to make them match, then add the numerators and simplify."
 >}}
 
 {{< fillin
@@ -315,17 +316,17 @@ them into a common denominator.
   answer="x+2"
   answerForm="polynomial"
   answerDisplay="$x + 2$"
-  hint="The denominators $8x - 3$ and $3 - 8x$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $8x - 3$, then add, factor, and simplify."
+  hint="The denominators are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ to make them match, then add the numerators, factor, and remove the common factor."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{z^2 + 6z}{z^2 - 25} - \tfrac{3z + 20}{25 - z^2}$."
   answer="\frac{z+4}{z-5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{z + 4}{z - 5}$"
-  hint="The denominators $z^2 - 25$ and $25 - z^2$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $z^2 - 25$, then subtract, factor, and simplify."
+  hint="The denominators are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ to make them match, then subtract the numerators, factor, and remove common factors."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.3: Add and Subtract Rational Expressions with a Common Denominator](https://openstax.org/books/elementary-algebra-2e/pages/8-3-add-and-subtract-rational-expressions-with-a-common-denominator) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with display equality chains, condensed the numerical warm-up into the addition rule, and folded the excluded-value discussion into the addition example; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.3: Add and Subtract Rational Expressions with a Common Denominator](https://openstax.org/books/elementary-algebra-2e/pages/8-3-add-and-subtract-rational-expressions-with-a-common-denominator) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with display equality chains, and folded the excluded-value discussion into the addition example; replaced the Key Concepts summary (its two rules stand in the callouts) with a Key terms list (the module has no glossary); omitted the Be Prepared quiz, Self Check checklist, unselected practice problems, and unselected end-of-section exercises; converted three of the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

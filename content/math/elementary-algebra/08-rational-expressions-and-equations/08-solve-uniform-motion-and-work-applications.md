@@ -68,15 +68,17 @@ headwind speed is $120$ mph and $\tfrac{200}{120} = \tfrac{5}{3}$ hours. The
 times are equal, so it checks. The plane was traveling $150$ mph.
 
 {{< fillin
-  question="An airplane can fly $200$ miles into a $30$ mph headwind in the same time it takes to fly $300$ miles with a $30$ mph tailwind. Find the speed of the airplane in still air, in mph (enter the number)."
-  answer="150"
-  hint="Both legs take the same time: $\tfrac{200}{r-30} = \tfrac{300}{r+30}$. Cross-multiply and solve for $r$."
+  question="Link has an electric bike which runs at a constant speed. That speed is reduced by the amount of any headwind and increased by the amount of any tailwind. Link can ride his bike $20$ miles into a $3$ mph headwind in the same amount of time he can ride $30$ miles with a $3$ mph tailwind. What is Link's biking speed, in mph (enter the number)?"
+  answer="15"
+  answerForm="decimal"
+  hint="Let $r$ be his speed with no wind. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 {{< fillin
   question="Mary takes a helicopter tour that flies $450$ miles against a $35$ mph headwind in the same time it flies $702$ miles with a $35$ mph tailwind. Find the speed of the helicopter in still air, in mph (enter the number)."
   answer="160"
-  hint="Set the times equal: $\tfrac{450}{r-35} = \tfrac{702}{r+35}$, then $450(r+35) = 702(r-35)$."
+  answerForm="decimal"
+  hint="Let $r$ be the speed in still air; the headwind subtracts from it and the tailwind adds to it. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 ### A total time from two legs
@@ -115,9 +117,10 @@ $12$ mph biking takes $\tfrac{24}{12} = 2$ hours, a total of $3$ hours.
 Jazmine's running speed is $8$ mph.
 
 {{< fillin
-  question="Jazmine trained for $3$ hours total. She ran $8$ miles and biked $24$ miles, biking $4$ mph faster than she ran. Find her running speed, in mph (enter the number)."
-  answer="8"
-  hint="Running time plus biking time is $3$ hours: $\tfrac{8}{r} + \tfrac{24}{r+4} = 3$. Discard the negative root."
+  question="Tony drove $4$ hours to his home, driving $208$ miles on the interstate and $40$ miles on country roads. If he drove $15$ mph faster on the interstate than on the country roads, what was his rate on the country roads, in mph (enter the number)?"
+  answer="50"
+  answerForm="decimal"
+  hint="Let $r$ be his country-road rate. Write each leg's time as distance over rate, set their sum equal to the total time, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 ### One leg takes longer than the other
@@ -157,9 +160,10 @@ $12 - 8 = 4$ mph takes $\tfrac{12}{4} = 3$ hours, which is $2$ hours more.
 Hamilton's downhill speed is $12$ mph.
 
 {{< fillin
-  question="Hamilton rode $12$ miles downhill to the ocean, then $12$ miles uphill home at a speed $8$ mph slower. The uphill trip took $2$ hours longer. Find his downhill speed, in mph (enter the number)."
-  answer="12"
-  hint="Uphill time is $2$ more than downhill time: $\tfrac{12}{r-8} = \tfrac{12}{r} + 2$. Discard the negative root."
+  question="Kayla rode her bike $75$ miles home from college one weekend and then rode the bus back to college. It took her $2$ hours less to ride back to college on the bus than it took her to ride home on her bike, and the average speed of the bus was $10$ miles per hour faster than Kayla's biking speed. Find Kayla's biking speed, in mph (enter the number)."
+  answer="15"
+  answerForm="decimal"
+  hint="Let $r$ be her biking speed. Write each time as distance over rate, write the equation that relates the two times, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 ## Solve work applications
@@ -193,11 +197,11 @@ hours and $27$ minutes to paint the room together. Notice it takes *less* time
 together than either person alone, as it should.
 
 {{< fillin
-  question="Pete paints a room in $10$ hours and Alicia in $8$ hours. Working together, they finish in $t$ hours, where $\tfrac{1}{10} + \tfrac{1}{8} = \tfrac{1}{t}$. Find $t$ (enter it as a fraction of hours)."
-  answer="\frac{40}{9}"
-  answerForm="fraction"
-  answerDisplay="$t = \tfrac{40}{9}$ hours (about $4$ hours $27$ minutes)"
-  hint="Multiply both sides by $40t$ to get $4t + 5t = 40$, then solve for $t$."
+  question="One gardener can mow a golf course in $4$ hours, while another gardener can mow the same golf course in $6$ hours. How long would it take if the two gardeners worked together to mow the golf course? Enter the time in hours, as a decimal."
+  answer="2.4"
+  answerForm="decimal"
+  answerDisplay="$2.4$ hours ($2$ hours and $24$ minutes)"
+  hint="Let $t$ be the time together. Add the part of the course each gardener mows in one hour, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 {{< callout type="info" >}}
@@ -240,9 +244,11 @@ $$
 When both presses run together it takes $4$ hours to do the job.
 
 {{< fillin
-  question="Press #1 prints a magazine in $6$ hours and Press #2 in $12$ hours. Running together they finish in $t$ hours, where $\tfrac{1}{6} + \tfrac{1}{12} = \tfrac{1}{t}$. Find $t$, in hours (enter the number)."
-  answer="4"
-  hint="Multiply both sides by $12t$ to get $2t + t = 12$, then solve for $t$."
+  question="Carrie can weed the garden in $7$ hours, while her mother can do it in $3$. How long will it take the two of them working together? Enter the time in hours, as a decimal."
+  answer="2.1"
+  answerForm="decimal"
+  answerDisplay="$2.1$ hours ($2$ hours and $6$ minutes)"
+  hint="Let $t$ be the time together. Add the part of the garden each person weeds in one hour, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 Some work problems give the *together* time and one worker's time, and ask for
@@ -274,9 +280,11 @@ $$
 It would take Casey $4$ hours to do the job alone.
 
 {{< fillin
-  question="Corey shovels the snow in $4$ hours; with his twin Casey they finish in $2$ hours. Casey alone needs $t$ hours, where $\tfrac{1}{4} + \tfrac{1}{t} = \tfrac{1}{2}$. Find $t$, in hours (enter the number)."
-  answer="4"
-  hint="Multiply both sides by $4t$ to get $t + 4 = 2t$, then solve for $t$."
+  question="Two hoses can fill a swimming pool in $10$ hours. It would take one hose $26$ hours to fill the pool by itself. How long would it take for the other hose, working alone, to fill the pool? Enter the time in hours, as a decimal."
+  answer="16.25"
+  answerForm="decimal"
+  answerDisplay="$16.25$ hours"
+  hint="Let $t$ be the other hose's time alone. The parts of the pool the two hoses fill in one hour add up to the part they fill together in one hour; clear the fractions and solve for $t$."
 >}}
 
 ## Key terms
@@ -296,35 +304,40 @@ together rate.
 {{< fillin
   question="A boat travels $140$ miles downstream in the same time it travels $92$ miles upstream, and the speed of the current is $6$ mph. Find the speed of the boat in still water, in mph (enter the number)."
   answer="29"
-  hint="Let $b$ be the speed of the boat in still water: downstream rate is $b+6$, upstream rate is $b-6$. Set the two times equal and cross-multiply."
+  answerForm="decimal"
+  hint="Let $b$ be the speed of the boat in still water; the current adds to it downstream and subtracts from it upstream. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 {{< fillin
   question="Jane spent $2$ hours exploring a mountain on a dirt bike. She rode $40$ miles uphill at a rate $5$ mph slower than the rate at which she then rode $12$ miles along the summit. Find her rate along the summit, in mph (enter the number)."
   answer="30"
-  hint="Let $s$ be her summit rate, so her uphill rate is $s-5$. The uphill time plus the summit time is $2$ hours: $\tfrac{40}{s-5} + \tfrac{12}{s} = 2$. Solve the resulting quadratic and discard the root that makes the uphill rate negative."
+  answerForm="decimal"
+  hint="Let $s$ be her summit rate. Write each leg's time as distance over rate, set their sum equal to the total time, clear the fractions, and keep the root that gives both rates positive."
 >}}
 
 {{< fillin
   question="Chester rode his bike $24$ miles uphill, then rode back downhill at a rate $2$ mph faster than his uphill rate. The uphill ride took $2$ hours longer than the downhill ride. Find his uphill rate, in mph (enter the number)."
   answer="4"
-  hint="Let $u$ be his uphill rate, so his downhill rate is $u+2$. Uphill time is $2$ more than downhill time: $\tfrac{24}{u} = \tfrac{24}{u+2} + 2$. Discard the negative root."
+  answerForm="decimal"
+  hint="Let $u$ be his uphill rate. Write each time as distance over rate, write the equation that relates the two times, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 ### Solve work applications
 
 {{< fillin
-  question="Mike can build a wall in $3$ hours, while his son takes $6$ hours. Working together, they finish in $t$ hours, where $\tfrac{1}{3} + \tfrac{1}{6} = \tfrac{1}{t}$. Find $t$, in hours (enter the number)."
+  question="Mike, an experienced bricklayer, can build a wall in $3$ hours, while his son, who is learning, can do the job in $6$ hours. How long does it take for them to build a wall together, in hours (enter the number)?"
   answer="2"
-  hint="Multiply both sides by the LCD $6t$ to get $2t + t = 6$, then solve for $t$."
+  answerForm="decimal"
+  hint="Let $t$ be the time together. Add the part of the wall each builds in one hour, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 {{< fillin
-  question="Leeson can proofread a newspaper copy in $4$ hours alone. If Ryan helps, they finish in $3$ hours. Ryan alone would need $t$ hours, where $\tfrac{1}{4} + \tfrac{1}{t} = \tfrac{1}{3}$. Find $t$, in hours (enter the number)."
+  question="Leeson can proofread a newspaper copy in $4$ hours. If Ryan helps, they can do the job in $3$ hours. How long would it take for Ryan to do the job alone, in hours (enter the number)?"
   answer="12"
-  hint="Multiply both sides by the LCD $12t$ to get $3t + 12 = 4t$, then solve for $t$."
+  answerForm="decimal"
+  hint="Let $t$ be Ryan's time alone. The parts Leeson and Ryan each do in one hour add up to the part they do together in one hour; clear the fractions and solve for $t$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.8: Solve Uniform Motion and Work Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-8-solve-uniform-motion-and-work-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into rate/work tables and aligned step tables, recast the "How To" procedure as a callout, and grouped the uniform motion examples by the relationship used (equal times, total time, and a time difference); omitted the Be Prepared quiz, the diagrams, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") and representative exercises into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.8: Solve Uniform Motion and Work Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-8-solve-uniform-motion-and-work-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into rate/work tables and aligned step tables, added a callout summarizing the steps of a work application, and grouped the uniform motion examples by the relationship used (equal times, total time, and a time difference); added a Key terms list; omitted the Be Prepared quiz, the diagrams, the Self Check checklist, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") and representative exercises into interactive exercises with instant feedback.</small>

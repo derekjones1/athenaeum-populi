@@ -102,7 +102,8 @@ The solution is $x = 25$.
 {{< fillin
   question="Solve: $\sqrt{3x-5} = 5$. (Enter the value of $x$.)"
   answer="10"
-  hint="The radical is already isolated. Square both sides to get $3x - 5 = 25$, then solve for $x$."
+  answerForm="decimal"
+  hint="The radical is already isolated. Square both sides, solve the new equation, and check the result in the original equation."
 >}}
 
 When the radical is not alone, isolate it first, then square.
@@ -126,8 +127,9 @@ The solution is $n = 17$.
 {{< fillin
   question="Solve: $\sqrt{3m+2} - 5 = 0$. (Enter the value of $m$.)"
   answer="\frac{23}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$m = \tfrac{23}{3}$"
-  hint="Add $5$ to isolate the radical, giving $\sqrt{3m+2} = 5$. Square both sides, then solve $3m + 2 = 25$."
+  hint="Isolate the radical first, then square both sides, solve the new equation, and check."
 >}}
 
 ### When there is no solution
@@ -148,8 +150,8 @@ Since a principal square root can never equal a negative number, the equation
 has **no solution**.
 
 {{< multiplechoice
-  question="Solve: $\sqrt{2r-3} + 5 = 0$. After isolating the radical, you get $\sqrt{2r-3} = -5$. Which is correct?"
-  hint="A principal square root is never negative. What does an isolated radical equal to a negative number tell you?"
+  question="Solve: $\sqrt{2r-3} + 5 = 0$."
+  hint="Isolate the radical before you square, and recall which values a principal square root can take."
   answer="No solution"
 >}}
 $r = -11$
@@ -177,7 +179,8 @@ $$
 & \sqrt{p-1} + 1 &=& p \\[4pt]
 \text{Subtract } 1 \text{ to isolate the radical.} & \sqrt{p-1} &=& p - 1 \\[4pt]
 \text{Square both sides.} & \left(\sqrt{p-1}\right)^2 &=& (p-1)^2 \\[4pt]
-\text{Simplify — a quadratic. Get zero on one side.} & 0 &=& p^2 - 3p + 2 \\[4pt]
+\text{Simplify.} & p-1 &=& p^2 - 2p + 1 \\[4pt]
+\text{A quadratic — get zero on one side.} & 0 &=& p^2 - 3p + 2 \\[4pt]
 \text{Factor.} & 0 &=& (p-1)(p-2) \\[4pt]
 \text{Zero product property.} & p = 1 &\text{or}& p = 2
 \end{array}
@@ -196,7 +199,8 @@ $$
 & \sqrt{r+4} - r + 2 &=& 0 \\[4pt]
 \text{Isolate the radical.} & \sqrt{r+4} &=& r - 2 \\[4pt]
 \text{Square both sides.} & \left(\sqrt{r+4}\right)^2 &=& (r-2)^2 \\[4pt]
-\text{Simplify — a quadratic. Get zero on one side.} & 0 &=& r^2 - 5r \\[4pt]
+\text{Simplify.} & r+4 &=& r^2 - 4r + 4 \\[4pt]
+\text{A quadratic — get zero on one side.} & 0 &=& r^2 - 5r \\[4pt]
 \text{Factor.} & 0 &=& r(r-5) \\[4pt]
 \text{Zero product property.} & r = 0 &\text{or}& r = 5
 \end{array}
@@ -209,7 +213,8 @@ solution**. The only solution is $r = 5$.
 {{< fillin
   question="Solve: $\sqrt{m+9} - m + 3 = 0$. It has two algebraic solutions but only one checks. (Enter the valid value of $m$.)"
   answer="7"
-  hint="Isolate the radical: $\sqrt{m+9} = m - 3$. Square both sides to get $m + 9 = m^2 - 6m + 9$, so $0 = m^2 - 7m$. Factor, then check each of $m = 0$ and $m = 7$ — only one satisfies the original."
+  answerForm="decimal"
+  hint="Isolate the radical, square both sides (the other side is a binomial — keep the middle term), solve the quadratic by factoring, and check each solution in the original equation."
 >}}
 
 ### A coefficient in front of the radical
@@ -237,8 +242,9 @@ is $x = 7$.
 {{< fillin
   question="Solve: $2\sqrt{4a+2} - 16 = 16$. (Enter the value of $a$.)"
   answer="\frac{127}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$a = \tfrac{127}{2}$"
-  hint="Isolate the radical term: $2\sqrt{4a+2} = 32$, so $\sqrt{4a+2} = 16$. Square both sides to get $4a + 2 = 256$, then solve."
+  hint="Isolate the radical term, then square both sides — the coefficient is squared too. Solve the new equation and check."
 >}}
 
 ### A radical on each side
@@ -286,11 +292,16 @@ $$
 Checking $m = 16$ gives $\sqrt{16} + 1 = 5 = \sqrt{25}\ \checkmark$. The solution
 is $m = 16$.
 
-{{< fillin
-  question="Solve: $\sqrt{x} + 2 = \sqrt{x+16}$. (Enter the value of $x$.)"
-  answer="9"
-  hint="Square both sides to get $x + 4\sqrt{x} + 4 = x + 16$. Isolate the remaining radical: $4\sqrt{x} = 12$, so $\sqrt{x} = 3$. Square again to find $x$."
+{{< multiplechoice
+  question="Solve: $\sqrt{x} + 3 = \sqrt{x+5}$."
+  hint="Square both sides, keeping the middle term of the binomial square. Isolate the radical that remains before squaring again, and check any value you find in the original equation."
+  answer="No solution"
 >}}
+$x = \tfrac{4}{9}$
+$x = \tfrac{16}{9}$
+$x = \tfrac{8}{3}$
+No solution
+{{< /multiplechoice >}}
 
 ## Use Square Roots in Applications
 
@@ -325,7 +336,8 @@ side of the patio should be about $14.1$ feet.
 {{< fillin
   question="Katie wants a square lawn with an area of $370$ square feet. Use $s = \sqrt{A}$ to find the side length, rounded to the nearest tenth of a foot."
   answer="19.2"
-  hint="Substitute $A = 370$ and evaluate $\sqrt{370}$, then round to one decimal place."
+  answerForm="decimal"
+  hint="Substitute the given area for $A$ in the formula, evaluate the square root, and round to one decimal place."
 >}}
 
 ### Falling objects
@@ -354,7 +366,8 @@ seconds for the sunglasses to reach the water.
 {{< fillin
   question="A helicopter dropped a rescue package from a height of $1{,}296$ feet. Use $t = \tfrac{\sqrt{h}}{4}$ to find the number of seconds it took the package to reach the ground."
   answer="9"
-  hint="Substitute $h = 1296$. Since $\sqrt{1296} = 36$, compute $\tfrac{36}{4}$."
+  answerForm="decimal"
+  hint="Substitute the given height for $h$ in the formula, take the square root, then divide by $4$."
 >}}
 
 ### Skid marks and speed
@@ -384,7 +397,8 @@ $67.5$ miles per hour.
 {{< fillin
   question="The skid marks of a car measured $76$ feet. Use $s = \sqrt{24d}$ to find the speed of the car before braking, rounded to the nearest tenth of a mile per hour."
   answer="42.7"
-  hint="Substitute $d = 76$ and evaluate $\sqrt{24 \cdot 76} = \sqrt{1824}$, then round to one decimal place."
+  answerForm="decimal"
+  hint="Substitute the skid-mark length for $d$ in the formula, multiply under the radical, take the square root, and round to one decimal place."
 >}}
 
 ## Key terms
@@ -403,33 +417,36 @@ discarded, which is why every solution of a radical equation must be checked.
 {{< fillin
   question="Solve: $\sqrt{5q+3} - 4 = 0$. (Enter the value of $q$.)"
   answer="\frac{13}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$q = \tfrac{13}{5}$"
-  hint="Add $4$ to both sides to isolate the radical, giving $\sqrt{5q+3} = 4$. Square both sides to get $5q + 3 = 16$, then solve for $q$."
+  hint="Isolate the radical first, then square both sides, solve the new equation, and check."
 >}}
 
 {{< multiplechoice
-  question="Solve: $\sqrt{2m+1} + 4 = 0$. After isolating the radical, you get $\sqrt{2m+1} = -4$. Which is correct?"
-  hint="A principal square root is never negative. What does an isolated radical equal to a negative number tell you?"
+  question="Solve: $\sqrt{2m+1} + 4 = 0$."
+  hint="Isolate the radical before you square, and recall which values a principal square root can take."
   answer="No solution"
 >}}
 $m = 8$
 $m = \tfrac{15}{2}$
 No solution
-$m = -\tfrac{1}{2}$
+$m = -\tfrac{17}{2}$
 {{< /multiplechoice >}}
 
 {{< fillin
   question="Solve: $\sqrt{v-10} + 10 = v$. It has two solutions that both check. Enter both, separated by a comma."
   answer="10,11"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$v = 10$ or $v = 11$"
-  hint="Isolate the radical: $\sqrt{v-10} = v - 10$. Square both sides to get $v - 10 = v^2 - 20v + 100$, so $0 = v^2 - 21v + 110 = (v-10)(v-11)$. Check both solutions in the original equation."
+  hint="Isolate the radical, square both sides (the other side is a binomial — keep the middle term), solve the quadratic by factoring, and check each solution in the original equation."
 >}}
 
 {{< fillin
-  question="Solve: $\sqrt{y+4} - y + 2 = 0$. It has two algebraic solutions but only one checks. (Enter the valid value of $y$.)"
-  answer="5"
-  hint="Isolate the radical: $\sqrt{y+4} = y - 2$. Square both sides to get $y + 4 = y^2 - 4y + 4$, so $0 = y^2 - 5y = y(y-5)$. Check $y = 0$ and $y = 5$ in the original equation — only one satisfies it."
+  question="Solve: $\sqrt{w+25} - w + 5 = 0$. It has two algebraic solutions but only one checks. (Enter the valid value of $w$.)"
+  answer="11"
+  answerForm="decimal"
+  hint="Isolate the radical, square both sides (the other side is a binomial — keep the middle term), solve the quadratic by factoring, and check each solution in the original equation."
 >}}
 
 ### Use square roots in applications
@@ -438,23 +455,23 @@ $m = -\tfrac{1}{2}$
   question="Vince wants to make a square patio with an area of $130$ square feet. Use $s = \sqrt{A}$ to find the length of each side, rounded to the nearest tenth of a foot."
   answer="11.4"
   answerForm="decimal"
-  hint="Substitute $A = 130$ and evaluate $\sqrt{130}$, then round to one decimal place."
+  hint="Substitute the given area for $A$ in the formula, evaluate the square root, and round to one decimal place."
 >}}
 
 {{< fillin
   question="A construction worker dropped a hammer while building the Grand Canyon skywalk, $4{,}000$ feet above the Colorado River. Use $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took the hammer to reach the river, rounded to the nearest tenth."
   answer="15.8"
   answerForm="decimal"
-  hint="Substitute $h = 4{,}000$ and evaluate $\tfrac{\sqrt{4{,}000}}{4}$, then round to one decimal place."
+  hint="Substitute the given height for $h$ in the formula, take the square root, divide by $4$, and round to one decimal place."
 >}}
 
 {{< fillin
   question="An accident investigator measured the skid marks of a vehicle at $117$ feet. Use $s = \sqrt{24d}$ to find the speed of the vehicle before the brakes were applied, rounded to the nearest tenth of a mile per hour."
   answer="53.0"
   answerForm="decimal"
-  hint="Substitute $d = 117$ and evaluate $\sqrt{24 \cdot 117} = \sqrt{2{,}808}$, then round to one decimal place."
+  hint="Substitute the skid-mark length for $d$ in the formula, multiply under the radical, take the square root, and round to one decimal place."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.6 Solve Equations with Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-6-solve-equations-with-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the no-solution and discarded-root cases into subsections, and summarized the seven-step application solutions; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.6 Solve Equations with Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-6-solve-equations-with-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedure for radical equations as a callout and the one for applications as a strategy sentence, folded the no-solution and discarded-root cases into subsections, stated the area-of-a-square figure's formulas in the text, and summarized the seven-step application solutions; omitted two of the fourteen worked examples ($\sqrt{3y+5}+2=5$ and $\sqrt{q-2}+3=\sqrt{4q+1}$) and the $64$-foot falling-object illustration; added key terms for principal square root and extraneous solution; omitted the Be Prepared quiz, Key Concepts summary, Self Check checklist, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

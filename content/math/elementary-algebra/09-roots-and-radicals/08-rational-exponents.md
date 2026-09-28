@@ -122,11 +122,11 @@ $$
 $$
 
 {{< fillin
-  question="Write $\sqrt[3]{3n}$ with a rational exponent."
-  answer="(3n)^{1/3}"
+  question="Write $\sqrt[5]{3n}$ with a rational exponent."
+  answer="(3n)^{1/5}"
   answerForm="rational-exponent"
-  answerDisplay="$(3n)^{1/3}$"
-  hint="The whole radicand $3n$ is the base; the index $3$ is the denominator of the exponent."
+  answerDisplay="$(3n)^{1/5}$"
+  hint="The entire radicand becomes the base, in parentheses, and the index becomes the denominator of the exponent."
 >}}
 
 In the next example, you may find it easier to simplify the expressions if you
@@ -148,14 +148,14 @@ $$
   question="Simplify: $36^{1/2}$."
   answer="6"
   answerForm="decimal"
-  hint="Rewrite as a square root: $36^{1/2} = \sqrt{36}$."
+  hint="Rewrite as a square root, then simplify."
 >}}
 
 {{< fillin
   question="Simplify: $8^{1/3}$."
   answer="2"
   answerForm="decimal"
-  hint="Rewrite as a cube root and look for a perfect cube: $8 = 2^3$."
+  hint="Rewrite as a cube root, then write the radicand as a perfect cube."
 >}}
 
 Be careful of the placement of the negative signs in the next example. We will
@@ -165,7 +165,7 @@ need to use the property $a^{-n} = \tfrac{1}{a^n}$ in one case.
 
 $$
 \begin{array}{lrcl}
-\text{(a) Rewrite } -64 = (-4)^3, \text{ then simplify.} & (-64)^{1/3} &=& \sqrt[3]{(-4)^3} = -4 \\[4pt]
+\text{(a) Rewrite } {-64} = (-4)^3, \text{ then simplify.} & (-64)^{1/3} &=& \sqrt[3]{(-4)^3} = -4 \\[4pt]
 \text{(b) The exponent applies only to the } 64. & -64^{1/3} &=& -\sqrt[3]{4^3} = -4 \\[4pt]
 \text{(c) Rewrite with a positive exponent, } a^{-n} = \tfrac{1}{a^n}. & (64)^{-1/3} &=& \tfrac{1}{\sqrt[3]{4^3}} = \tfrac{1}{4}
 \end{array}
@@ -175,7 +175,7 @@ $$
   question="Simplify: $(-125)^{1/3}$."
   answer="-5"
   answerForm="decimal"
-  hint="$-125 = (-5)^3$, so take the cube root of a perfect cube."
+  hint="Rewrite as a cube root, then write the radicand as a perfect cube."
 >}}
 
 {{< fillin
@@ -190,17 +190,17 @@ $$
 
 $$
 \begin{array}{lrcl}
-\text{(a) There is no real number whose fourth power is } -16. & (-16)^{1/4} & & \text{not a real number} \\[4pt]
+\text{(a) There is no real number whose fourth power is } {-16}. & (-16)^{1/4} & & \text{not a real number} \\[4pt]
 \text{(b) The exponent applies only to the } 16. & -16^{1/4} &=& -\sqrt[4]{2^4} = -2 \\[4pt]
 \text{(c) Rewrite with a positive exponent, then simplify.} & (16)^{-1/4} &=& \tfrac{1}{\sqrt[4]{2^4}} = \tfrac{1}{2}
 \end{array}
 $$
 
 {{< fillin
-  question="Simplify: $-16^{1/2}$."
-  answer="-4"
+  question="Simplify: $-64^{1/2}$."
+  answer="-8"
   answerForm="decimal"
-  hint="The exponent applies only to the $16$; the negative sign stays out front. $\sqrt{16} = 4$."
+  hint="Decide what the exponent applies to, then rewrite that part as a square root."
 >}}
 
 {{< fillin
@@ -254,11 +254,11 @@ $$
 $$
 
 {{< fillin
-  question="Write $\sqrt[4]{z^3}$ with a rational exponent."
-  answer="z^{3/4}"
+  question="Write $\sqrt[5]{y^2}$ with a rational exponent."
+  answer="y^{2/5}"
   answerForm="rational-exponent"
-  answerDisplay="$z^{3/4}$"
-  hint="The exponent in the radicand $(3)$ is the numerator; the index $(4)$ is the denominator."
+  answerDisplay="$y^{2/5}$"
+  hint="The exponent in the radicand becomes the numerator of the rational exponent, and the index becomes the denominator."
 >}}
 
 **Example.** Simplify: (a) $9^{3/2}$, (b) $125^{2/3}$, (c) $81^{3/4}$.
@@ -279,14 +279,14 @@ $$
   question="Simplify: $4^{3/2}$."
   answer="8"
   answerForm="decimal"
-  hint="Take the root first: $\left(\sqrt{4}\right)^3 = 2^3$."
+  hint="Rewrite in radical form and take the square root first, then raise it to the power in the numerator."
 >}}
 
 {{< fillin
   question="Simplify: $27^{2/3}$."
   answer="9"
   answerForm="decimal"
-  hint="Take the cube root first: $\left(\sqrt[3]{27}\right)^2 = 3^2$."
+  hint="Rewrite in radical form and take the cube root first, then raise it to the power in the numerator."
 >}}
 
 Remember that $b^{-p} = \tfrac{1}{b^p}$. The negative sign in the exponent does
@@ -310,7 +310,7 @@ $$
   answer="\frac{1}{8}"
   answerDisplay="$\frac{1}{8}$"
   answerForm="fraction lowest-terms"
-  hint="Rewrite with a positive exponent, then take the fourth root first: $\tfrac{1}{\left(\sqrt[4]{16}\right)^3}$."
+  hint="Rewrite with a positive exponent using $b^{-p} = \tfrac{1}{b^p}$, then change to radical form and take the root first."
 >}}
 
 **Example.** Simplify: (a) $-25^{3/2}$, (b) $-25^{-3/2}$, (c) $(-25)^{3/2}$.
@@ -319,7 +319,7 @@ $$
 \begin{array}{lrcl}
 \text{(a) The exponent applies only to } 25. & -25^{3/2} &=& -\left(\sqrt{25}\right)^3 = -(5)^3 = -125 \\[10pt]
 \text{(b) Rewrite with a positive exponent first.} & -25^{-3/2} &=& -\tfrac{1}{\left(\sqrt{25}\right)^3} = -\tfrac{1}{125} \\[10pt]
-\text{(c) There is no real number whose square root is } -25. & (-25)^{3/2} & & \text{not a real number}
+\text{(c) There is no real number whose square is } {-25}. & (-25)^{3/2} & & \text{not a real number}
 \end{array}
 $$
 
@@ -327,7 +327,7 @@ $$
   question="Simplify: $-81^{3/2}$."
   answer="-729"
   answerForm="decimal"
-  hint="The exponent applies only to $81$. Take the root first: $-\left(\sqrt{81}\right)^3 = -(9)^3$."
+  hint="Decide what the exponent applies to, then rewrite that part in radical form and take the root first."
 >}}
 
 ## Use the laws of exponents to simplify expressions with rational exponents
@@ -368,7 +368,7 @@ $$
   answer="y^3"
   answerForm="polynomial"
   answerDisplay="$y^3$"
-  hint="The bases match, so add the exponents: $\tfrac{1}{3} + \tfrac{8}{3}$."
+  hint="The bases are the same, so add the exponents, then simplify the exponent."
 >}}
 
 We will use the Power Property in the next example.
@@ -391,7 +391,7 @@ $$
   answer="p^2"
   answerForm="polynomial"
   answerDisplay="$p^2$"
-  hint="Multiply the exponents: $10 \cdot \tfrac{1}{5}$."
+  hint="To raise a power to a power, multiply the exponents."
 >}}
 
 The Quotient Property tells us that when we divide with the same base, we
@@ -414,7 +414,7 @@ $$
   question="Simplify: $\tfrac{u^{5/4}}{u^{1/4}}$. Write the answer with a rational or whole exponent."
   answer="u"
   answerForm="polynomial"
-  hint="Subtract the exponents: $\tfrac{5}{4} - \tfrac{1}{4} = \tfrac{4}{4} = 1$."
+  hint="To divide with the same base, subtract the exponents, then simplify the exponent."
 >}}
 
 Sometimes we need to use more than one property. In the next examples, we will
@@ -433,11 +433,11 @@ $$
 $$
 
 {{< fillin
-  question="Simplify: $\left(32x^{1/3}\right)^{3/5}$."
+  question="Simplify: $\left(32x^{1/3}\right)^{3/5}$. Write the answer with a rational exponent."
   answer="8x^{1/5}"
-  answerForm="distributed"
+  answerForm="single-term rational-exponent"
   answerDisplay="$8x^{1/5}$"
-  hint="Apply the exponent to each factor. $32 = 2^5$, so $(2^5)^{3/5} = 2^3$; and $\left(x^{1/3}\right)^{3/5} = x^{1/5}$."
+  hint="Use the Product to a Power Property, write the number as a power of a prime, then multiply the exponents."
 >}}
 
 **Example.** Simplify: (a) $\left(m^3 n^9\right)^{1/3}$, (b)
@@ -453,11 +453,11 @@ $$
 $$
 
 {{< fillin
-  question="Simplify: $\left(m^3 n^9\right)^{1/3}$."
-  answer="mn^3"
+  question="Simplify: $\left(u^{15} v^{20}\right)^{1/5}$."
+  answer="u^3v^4"
   answerForm="polynomial"
-  answerDisplay="$mn^3$"
-  hint="Apply the exponent to each factor: $\left(m^3\right)^{1/3}$ and $\left(n^9\right)^{1/3}$."
+  answerDisplay="$u^3v^4$"
+  hint="Use the Product to a Power Property, then multiply the exponents."
 >}}
 
 We will use both the Product and Quotient Properties in the next example.
@@ -480,13 +480,14 @@ $$
   answer="m^2"
   answerForm="polynomial"
   answerDisplay="$m^2$"
-  hint="Add the exponents in the numerator $\left(\tfrac{2}{3} - \tfrac{1}{3} = \tfrac{1}{3}\right)$, then subtract the denominator's exponent: $\tfrac{1}{3} - \left(-\tfrac{5}{3}\right)$."
+  hint="Use the Product Property in the numerator (add the exponents), then the Quotient Property (subtract the exponents)."
 >}}
 
 ## Key terms
 
-**rational exponent** — an exponent that is a fraction; $a^{1/n} = \sqrt[n]{a}$
-and $a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$, connecting exponent
+**rational exponent** — an exponent that is a fraction; when $\sqrt[n]{a}$ is
+a real number, $a^{1/n} = \sqrt[n]{a}$ and
+$a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$, connecting exponent
 notation to radical notation. **negative rational exponent** — a negative
 fractional exponent, rewritten with a positive exponent using
 $a^{-m/n} = \tfrac{1}{a^{m/n}}$.
@@ -495,21 +496,11 @@ $a^{-m/n} = \tfrac{1}{a^{m/n}}$.
 
 ### Simplify expressions with $a^{1/n}$
 
-{{< multiplechoice
-  question="Simplify: $(-49)^{1/2}$."
-  answer="not a real number"
-  hint="An even root of a negative number is not a real number."
->}}
--7
-not a real number
-7
-{{< /multiplechoice >}}
-
 {{< fillin
   question="Simplify: $-49^{1/2}$."
   answer="-7"
   answerForm="decimal"
-  hint="The exponent applies only to the $49$; the negative sign stays out front. $\sqrt{49} = 7$."
+  hint="Decide what the exponent applies to, then rewrite that part as a square root."
 >}}
 
 {{< fillin
@@ -517,8 +508,18 @@ not a real number
   answer="\frac{1}{7}"
   answerDisplay="$\tfrac{1}{7}$"
   answerForm="fraction lowest-terms"
-  hint="Rewrite with a positive exponent using $a^{-n} = \tfrac{1}{a^n}$, then take the square root of $49$."
+  hint="Rewrite with a positive exponent using $a^{-n} = \tfrac{1}{a^n}$, then rewrite as a square root."
 >}}
+
+{{< multiplechoice
+  question="Simplify: $(-49)^{1/2}$."
+  answer="not a real number"
+  hint="Rewrite as a square root and look at the sign of the radicand."
+>}}
+-7
+not a real number
+7
+{{< /multiplechoice >}}
 
 ### Simplify expressions with $a^{m/n}$
 
@@ -527,7 +528,7 @@ not a real number
   answer="1000"
   answerDisplay="$1{,}000$"
   answerForm="decimal"
-  hint="Take the square root of $100$ first, then cube the result: $\left(\sqrt{100}\right)^3$."
+  hint="Rewrite in radical form and take the root first, then raise it to the power in the numerator."
 >}}
 
 {{< fillin
@@ -535,13 +536,13 @@ not a real number
   answer="\frac{1}{16807}"
   answerDisplay="$\tfrac{1}{16{,}807}$"
   answerForm="fraction lowest-terms"
-  hint="Rewrite with a positive exponent, then take the square root of $49$ first: $\tfrac{1}{\left(\sqrt{49}\right)^5}$."
+  hint="Rewrite with a positive exponent using $b^{-p} = \tfrac{1}{b^p}$, then change to radical form and take the root first."
 >}}
 
 {{< multiplechoice
   question="Simplify: $(-100)^{3/2}$."
   answer="not a real number"
-  hint="The exponent's denominator is $2$, so this requires the square root of a negative number."
+  hint="Rewrite in radical form, noting the index the exponent's denominator gives, and look at the sign of the radicand."
 >}}
 1000
 -1000
@@ -554,7 +555,7 @@ not a real number
   question="Simplify: $n^{2/6} \cdot n^{4/6}$. Write the answer with a whole-number exponent."
   answer="n"
   answerForm="polynomial"
-  hint="The bases match, so add the exponents: $\tfrac{2}{6} + \tfrac{4}{6} = \tfrac{6}{6} = 1$."
+  hint="The bases are the same, so add the exponents, then simplify the exponent."
 >}}
 
 {{< fillin
@@ -562,17 +563,17 @@ not a real number
   answer="b^6"
   answerDisplay="$b^6$"
   answerForm="polynomial"
-  hint="Multiply the exponents: $10 \cdot \tfrac{3}{5}$."
+  hint="To raise a power to a power, multiply the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{z^{2/3}}{z^{8/3}}$."
   answer="\frac{1}{z^2}"
   answerDisplay="$\tfrac{1}{z^2}$"
-  answerForm="single-fraction"
-  hint="Subtract the exponents: $\tfrac{2}{3} - \tfrac{8}{3} = -\tfrac{6}{3} = -2$. A negative exponent moves the power to the denominator."
+  answerForm="single-fraction reduced-fraction"
+  hint="To divide with the same base, subtract the exponents, then rewrite without a negative exponent."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.8 Rational Exponents](https://openstax.org/books/elementary-algebra-2e/pages/9-8-rational-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset math, condensed the multi-part "Try It" problems into single-part interactive exercises with instant feedback; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.8 Rational Exponents](https://openstax.org/books/elementary-algebra-2e/pages/9-8-rational-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset math, condensed the multi-part "Try It" problems into single-part interactive exercises with instant feedback; corrected the reason given for $(-25)^{3/2}$, which the source states as "no real number whose square root is $-25$", to "no real number whose square is $-25$"; omitted the Be Prepared quiz, the Key Concepts list (it repeats the Summary of Exponent Properties callout), Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into interactive exercises, one after the Product to a Power example and the rest in the section-final Practice block.</small>

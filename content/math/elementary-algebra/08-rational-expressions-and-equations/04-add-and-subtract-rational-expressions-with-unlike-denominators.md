@@ -76,9 +76,9 @@ The LCD is $(x + 1)(x - 3)(x + 3)$.
 {{< fillin
   question="Find the LCD for $\tfrac{2}{x^2 - x - 12}$ and $\tfrac{1}{x^2 - 16}$. Leave your answer in factored form."
   answer="(x-4)(x+4)(x+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x - 4)(x + 4)(x + 3)$"
-  hint="Factor: $x^2 - x - 12 = (x - 4)(x + 3)$ and $x^2 - 16 = (x - 4)(x + 4)$. Line up the shared factor $(x - 4)$ and bring down one factor from each column."
+  hint="Factor each denominator completely, line up the factors they share in columns, bring down one factor from each column, and multiply."
 >}}
 
 ## Find equivalent rational expressions
@@ -115,10 +115,11 @@ $$
 $$
 
 {{< fillin
-  question="Rewrite $\tfrac{5}{x^2 - 2x - 8}$ with the LCD $(x - 4)(x + 2)(x + 3)$. Enter just the new numerator."
-  answer="5x+15"
-  answerDisplay="$5x + 15$ (from $5(x + 3)$)"
-  hint="Factor $x^2 - 2x - 8 = (x - 4)(x + 2)$. The LCD adds the factor $(x + 3)$, so multiply the numerator $5$ by $(x + 3)$."
+  question="Rewrite $\tfrac{x}{x^2 + 8x + 15}$ as an equivalent rational expression with denominator $(x + 3)(x + 5)(x + 6)$. Enter the new numerator, multiplied out."
+  answer="x^2+6x"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$x^2 + 6x$ (from $x(x + 6)$)"
+  hint="Factor the denominator, find the factor of the new denominator that it is missing, multiply the numerator by that factor, and multiply out."
 >}}
 
 ## Add rational expressions with different denominators
@@ -190,9 +191,9 @@ Because $5x - 12$ cannot be factored, the answer is simplified.
 {{< fillin
   question="Add: $\tfrac{2}{x - 2} + \tfrac{5}{x + 3}$."
   answer="\frac{7x-4}{(x+3)(x-2)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{7x - 4}{(x + 3)(x - 2)}$"
-  hint="The LCD is $(x - 2)(x + 3)$. Rewrite each fraction: $2(x + 3) = 2x + 6$ and $5(x - 2) = 5x - 10$; add the numerators to get $7x - 4$."
+  hint="Find the LCD of the two denominators, rewrite each fraction as an equivalent one over the LCD, add the numerators, and check for common factors."
 >}}
 
 The next example has polynomial denominators that factor. Factor first, find the
@@ -295,9 +296,9 @@ There are no common factors, so the rational expression is simplified.
 {{< fillin
   question="Subtract: $\tfrac{2x}{x^2 - 4} - \tfrac{1}{x + 2}$."
   answer="\frac{1}{x-2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{1}{x - 2}$"
-  hint="Factor $x^2 - 4 = (x - 2)(x + 2)$; the LCD is $(x - 2)(x + 2)$. After subtracting, the numerator becomes $2x - (x - 2) = x + 2$, which cancels with the $(x + 2)$ in the denominator."
+  hint="Factor the first denominator to find the LCD, rewrite the second fraction over it, and subtract the whole second numerator in parentheses. Then factor the numerator and remove any common factors."
 >}}
 
 ## Key terms
@@ -314,33 +315,37 @@ numerator and denominator by the same nonzero factor, so its value is unchanged.
 ### Find the least common denominator of rational expressions
 
 {{< fillin
-  question="Find the LCD for $\tfrac{5}{x^2 - 2x - 8}$ and $\tfrac{2x}{x^2 - x - 12}$."
+  question="Find the LCD for $\tfrac{5}{x^2 - 2x - 8}$ and $\tfrac{2x}{x^2 - x - 12}$. Leave your answer in factored form."
   answer="(x-4)(x+2)(x+3)"
+  answerForm="factored-completely"
   answerDisplay="$(x - 4)(x + 2)(x + 3)$"
-  hint="Factor $x^2 - 2x - 8 = (x - 4)(x + 2)$ and $x^2 - x - 12 = (x - 4)(x + 3)$. Line up the shared factor $(x - 4)$ and bring down one factor from each column."
+  hint="Factor each denominator completely, line up the factors they share in columns, bring down one factor from each column, and multiply."
 >}}
 
 {{< fillin
-  question="Find the LCD for $\tfrac{4}{b^2 + 6b + 9}$ and $\tfrac{2b}{b^2 - 2b - 15}$."
+  question="Find the LCD for $\tfrac{4}{b^2 + 6b + 9}$ and $\tfrac{2b}{b^2 - 2b - 15}$. Leave your answer in factored form."
   answer="(b+3)(b+3)(b-5)"
+  answerForm="factored-completely"
   answerDisplay="$(b + 3)(b + 3)(b - 5)$"
-  hint="Factor $b^2 + 6b + 9 = (b + 3)^2$ and $b^2 - 2b - 15 = (b - 5)(b + 3)$. Because $(b + 3)$ appears squared in the first denominator, bring down two factors of $(b + 3)$ plus one factor of $(b - 5)$."
+  hint="Factor each denominator completely and list every factor, repeats included. Line up shared factors in columns, bring down each column, and multiply."
 >}}
 
 ### Find equivalent rational expressions
 
 {{< fillin
-  question="Rewrite $\tfrac{9}{z^2 + 2z - 8}$ with the LCD $(z - 2)(z + 4)(z + 2)$. Enter just the new numerator."
+  question="Rewrite $\tfrac{9}{z^2 + 2z - 8}$ with the LCD $(z - 2)(z + 4)(z + 2)$. Enter the new numerator, multiplied out."
   answer="9z+18"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$9z + 18$ (from $9(z + 2)$)"
-  hint="Factor $z^2 + 2z - 8 = (z + 4)(z - 2)$. The LCD adds the factor $(z + 2)$, so multiply the numerator $9$ by $(z + 2)$."
+  hint="Factor the denominator, find the factor of the LCD that it is missing, multiply the numerator by that factor, and multiply out."
 >}}
 
 {{< fillin
-  question="Rewrite $\tfrac{4z}{z^2 - 4}$ with the LCD $(z - 2)(z + 4)(z + 2)$. Enter just the new numerator."
+  question="Rewrite $\tfrac{4z}{z^2 - 4}$ with the LCD $(z - 2)(z + 4)(z + 2)$. Enter the new numerator, multiplied out."
   answer="4z^2+16z"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$4z^2 + 16z$ (from $4z(z + 4)$)"
-  hint="Factor $z^2 - 4 = (z - 2)(z + 2)$. The LCD adds the factor $(z + 4)$, so multiply the numerator $4z$ by $(z + 4)$."
+  hint="Factor the denominator, find the factor of the LCD that it is missing, multiply the numerator by that factor, and multiply out."
 >}}
 
 ### Add rational expressions with different denominators
@@ -348,25 +353,25 @@ numerator and denominator by the same nonzero factor, so its value is unchanged.
 {{< fillin
   question="Add: $\tfrac{7}{10x^2 y} + \tfrac{4}{15xy^2}$."
   answer="\frac{21y+8x}{30x^2y^2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{21y + 8x}{30x^2 y^2}$"
-  hint="Find the LCD $30x^2y^2$ (the least common multiple of $10x^2y$ and $15xy^2$); rewrite each fraction over it and add the numerators."
+  hint="Factor each monomial denominator into primes and variables to find the LCD, rewrite each fraction over it, and add the numerators."
 >}}
 
 {{< fillin
   question="Add: $\tfrac{3}{r + 4} + \tfrac{2}{r - 5}$."
   answer="\frac{5r-7}{(r+4)(r-5)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5r - 7}{(r + 4)(r - 5)}$"
-  hint="The LCD is $(r + 4)(r - 5)$. Rewrite each fraction over it — $3(r - 5)$ and $2(r + 4)$ — then add the numerators and simplify."
+  hint="Find the LCD of the two denominators, rewrite each fraction as an equivalent one over the LCD, add the numerators, and check for common factors."
 >}}
 
 {{< fillin
   question="Add: $\tfrac{3}{n^2 + 3n - 18} + \tfrac{4n}{n^2 + 8n + 12}$."
   answer="\frac{4n^2-9n+6}{(n-3)(n+6)(n+2)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{4n^2 - 9n + 6}{(n - 3)(n + 6)(n + 2)}$"
-  hint="Factor $n^2 + 3n - 18 = (n + 6)(n - 3)$ and $n^2 + 8n + 12 = (n + 6)(n + 2)$; the LCD is $(n + 6)(n - 3)(n + 2)$. Rewrite each fraction with the LCD and add the numerators."
+  hint="Factor both denominators to find the LCD, rewrite each fraction over it, add the numerators, and check whether the numerator factors."
 >}}
 
 ### Subtract rational expressions with different denominators
@@ -374,27 +379,27 @@ numerator and denominator by the same nonzero factor, so its value is unchanged.
 {{< fillin
   question="Subtract: $\tfrac{t}{t - 6} - \tfrac{t - 2}{t + 6}$."
   answer="\frac{2(7t-6)}{(t-6)(t+6)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2(7t - 6)}{(t - 6)(t + 6)}$"
-  hint="The LCD is $(t - 6)(t + 6)$. Rewrite each fraction — $t(t + 6)$ and $(t - 2)(t - 6)$ — then subtract the numerators, distributing the sign, and factor the result."
+  hint="Find the LCD, rewrite each fraction over it, and subtract the whole second numerator in parentheses so the sign reaches every term. Then factor the numerator to check for common factors."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{6c}{c^2 - 25} - \tfrac{3}{c + 5}$."
   answer="\frac{3}{c-5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3}{c - 5}$"
-  hint="Factor $c^2 - 25 = (c - 5)(c + 5)$; the LCD is $(c - 5)(c + 5)$. After subtracting, the numerator becomes $6c - 3(c - 5)$, which shares a factor of $(c + 5)$ with the denominator."
+  hint="Factor the first denominator to find the LCD, rewrite the second fraction over it, and subtract. Then factor the numerator and remove any common factors."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{5v - 2}{v + 3} - 4$."
   answer="\frac{v-14}{v+3}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{v - 14}{v + 3}$"
-  hint="Write $4$ as $\tfrac{4}{1}$ and rewrite it with denominator $v + 3$: $\tfrac{4(v + 3)}{v + 3} = \tfrac{4v + 12}{v + 3}$. Then subtract the numerators."
+  hint="Write the whole number as a fraction with denominator $1$ and rewrite it over the LCD. Then subtract the numerators, distributing the sign, and check for common factors."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.4: Add and Subtract Rational Expressions with Unlike Denominators](https://openstax.org/books/elementary-algebra-2e/pages/8-4-add-and-subtract-rational-expressions-with-unlike-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with display equality chains, condensed the numerical warm-ups and the "How To" procedures, and merged the separate add/subtract procedure boxes into one; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.4: Add and Subtract Rational Expressions with Unlike Denominators](https://openstax.org/books/elementary-algebra-2e/pages/8-4-add-and-subtract-rational-expressions-with-unlike-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with display equality chains, condensed the numerical warm-ups and the "How To" procedures, and merged the subtract and add-or-subtract procedure boxes into one; omitted the Be Prepared quiz, three worked examples (adding $\tfrac{2a}{2ab+b^2}+\tfrac{3a}{4a^2-b^2}$, subtracting $\tfrac{-3n-9}{n^2+n-6}-\tfrac{n+3}{2-n}$, and simplifying the three-term $\tfrac{2u}{u-1}+\tfrac{1}{u}-\tfrac{2u-1}{u^2-u}$), the Key Concepts summary (its procedures appear as callouts in the body), the Self Check checklist, media links, and unselected end-of-section exercises; added a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback; adapted selected end-of-section exercises into the interactive Practice block; posed each equivalent-expression exercise one fraction at a time, asking for its new numerator multiplied out; and asked for the LCDs in factored form.</small>

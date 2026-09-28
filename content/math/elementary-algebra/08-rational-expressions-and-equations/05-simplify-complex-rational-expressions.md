@@ -78,9 +78,9 @@ undefined if $y = 3$ or $y = -3$.
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{\frac{2}{x^2 - 1}}{\frac{3}{x + 1}}$."
   answer="\tfrac{2}{3(x - 1)}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2}{3(x - 1)}$"
-  hint="Rewrite as $\tfrac{2}{x^2 - 1} \div \tfrac{3}{x + 1}$, multiply by the reciprocal, and factor $x^2 - 1 = (x - 1)(x + 1)$."
+  hint="Rewrite the complex fraction as division, multiply by the reciprocal of the second fraction, then factor the denominators and remove common factors."
 >}}
 
 Fraction bars act as grouping symbols. So, to follow the order of operations,
@@ -159,9 +159,9 @@ $$
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{\frac{1}{x}+\frac{1}{y}}{\frac{1}{x}-\frac{1}{y}}$."
   answer="\tfrac{y + x}{y - x}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y + x}{y - x}$"
-  hint="Combine the numerator into $\tfrac{y + x}{xy}$ and the denominator into $\tfrac{y - x}{xy}$, then divide the top by the bottom."
+  hint="Write the numerator and the denominator each as a single fraction over a common denominator, then multiply the numerator by the reciprocal of the denominator."
 >}}
 
 ## Simplify a complex rational expression by using the LCD
@@ -194,7 +194,7 @@ $$\frac{6 \cdot \frac{1}{3}+6 \cdot \frac{1}{6}}{6 \cdot \frac{1}{2}-6 \cdot \fr
   answer="\tfrac{7}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{3}$"
-  hint="The LCD of all four fractions is $10$. Multiply the numerator and denominator by $10$, distribute, and simplify."
+  hint="Find the LCD of all four fractions, multiply the numerator and denominator by it, distribute, and simplify."
 >}}
 
 Now we'll use the LCD method to simplify a complex rational expression with
@@ -242,6 +242,7 @@ $$
 \begin{array}{lrcl}
 \text{Distribute and remove common factors.} &&& \tfrac{2(x-6)}{4(x+6)-4} \\[10pt]
 \text{Distribute and combine like terms in the denominator.} && & \tfrac{2(x-6)}{4x+20} \\[10pt]
+\text{Factor the denominator.} && & \tfrac{2(x-6)}{2(2x+10)} \\[10pt]
 \text{Remove common factors and simplify.} && & \tfrac{x-6}{2x+10}
 \end{array}
 $$
@@ -266,9 +267,9 @@ $$
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{3}{x + 2}}{\frac{5}{x - 2}-\frac{3}{x^2 - 4}}$."
   answer="\tfrac{3x - 6}{5x + 7}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3x - 6}{5x + 7}$"
-  hint="Factor $x^2 - 4 = (x + 2)(x - 2)$, so the LCD is $(x + 2)(x - 2)$. Multiply the numerator and denominator by it and simplify."
+  hint="Factor every denominator to find the LCD of all the fractions, multiply the numerator and denominator by it, then distribute and combine like terms."
 >}}
 
 **Example.** Simplify the complex rational expression
@@ -290,9 +291,9 @@ $$
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{x}{x + 3}}{1+\frac{1}{x + 3}}$."
   answer="\tfrac{x}{x + 4}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x}{x + 4}$"
-  hint="The LCD is $x + 3$. Multiply the numerator and denominator by $x + 3$; the denominator becomes $(x + 3) + 1 = x + 4$."
+  hint="Multiply the numerator and denominator by the LCD of all the fractions, distribute in the denominator, and simplify."
 >}}
 
 ## Key terms
@@ -310,9 +311,9 @@ its bottom.
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{\frac{2a}{a+4}}{\frac{4a^2}{a^2-16}}$."
   answer="\tfrac{a - 4}{2a}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{a - 4}{2a}$"
-  hint="Rewrite as $\tfrac{2a}{a+4}\div\tfrac{4a^2}{a^2-16}$, multiply by the reciprocal, and factor $a^2-16=(a-4)(a+4)$."
+  hint="Rewrite the complex fraction as division, multiply by the reciprocal of the second fraction, then factor and remove common factors."
 >}}
 
 {{< fillin
@@ -326,9 +327,9 @@ its bottom.
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{x-\frac{2x}{x+3}}{\frac{1}{x+3}+\frac{1}{x-3}}$."
   answer="\tfrac{(x + 1)(x - 3)}{2}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{(x + 1)(x - 3)}{2}$"
-  hint="Combine the numerator over $x+3$ and the denominator over $(x+3)(x-3)$, then divide the top by the bottom and simplify."
+  hint="Write the numerator and the denominator each as a single fraction over its own common denominator, then multiply by the reciprocal, factor, and remove common factors."
 >}}
 
 ### Simplify a complex rational expression by using the LCD
@@ -338,17 +339,17 @@ its bottom.
   answer="\tfrac{11}{8}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{8}$"
-  hint="The LCD of all four fractions is $24$. Multiply the numerator and denominator by $24$, distribute, and simplify."
+  hint="Find the LCD of all four fractions, multiply the numerator and denominator by it, distribute, and simplify."
 >}}
 
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{2}{x+5}}{\frac{3}{x-5}+\frac{1}{x^2-25}}$."
   answer="\tfrac{2x - 10}{3x + 16}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2x - 10}{3x + 16}$"
-  hint="Factor $x^2-25=(x+5)(x-5)$, so the LCD is $(x+5)(x-5)$. Multiply the numerator and denominator by it and simplify."
+  hint="Factor every denominator to find the LCD of all the fractions, multiply the numerator and denominator by it, then distribute and combine like terms."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.5: Simplify Complex Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-5-simplify-complex-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and typeset every complex fraction as a \cfrac display block; omitted the Be Prepared quiz, Self Check checklist, media links, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.5: Simplify Complex Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-5-simplify-complex-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and typeset every complex fraction as a stacked display; omitted the Be Prepared quiz, the Key Concepts summary (its two procedures appear as callouts in the body), the Self Check checklist, media links, and the remaining end-of-section exercises; added a Key terms list drawn from the module's glossary and opening paragraph; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted selected practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -82,7 +82,7 @@ the square root.
   answer="4\sqrt{3}"
   answerForm="simplified-radical"
   answerDisplay="$4\sqrt{3}$"
-  hint="The largest perfect square factor of $48$ is $16$."
+  hint="Find the largest perfect square factor of the radicand, rewrite the radicand as a product using it, and split the radical with the Product Property."
 >}}
 
 **Example.** Simplify $\sqrt{500}$.
@@ -98,7 +98,8 @@ $$
 $$
 
 We could use the simplified form $10\sqrt{5}$ to estimate $\sqrt{500}$. We know
-$5$ is between $2$ and $3$, so $\sqrt{500}$ is between $20$ and $30$.
+$\sqrt{5}$ is between $2$ and $3$, and $\sqrt{500}$ is $10\sqrt{5}$. So $\sqrt{500}$
+is between $20$ and $30$.
 
 The next example is much like the previous ones, but with variables.
 
@@ -120,7 +121,7 @@ $$
   answer="b^2\sqrt{b}"
   answerForm="simplified-radical"
   answerDisplay="$b^2\sqrt{b}$"
-  hint="The largest perfect square factor of $b^5$ is $b^4$, and $\sqrt{b^4} = b^2$."
+  hint="Rewrite $b^5$ as its largest perfect square factor (the largest even power of $b$) times what is left, then take the square root of the perfect square."
 >}}
 
 We follow the same procedure when there is a coefficient in the radical, too.
@@ -142,7 +143,7 @@ $$
   answer="4x^3\sqrt{x}"
   answerForm="simplified-radical"
   answerDisplay="$4x^3\sqrt{x}$"
-  hint="The largest perfect square factor is $16x^6$; $\sqrt{16x^6} = 4x^3$."
+  hint="Rewrite the radicand as its largest perfect square factor (the coefficient and the largest even power of $x$) times what is left, then take the square root of the perfect square."
 >}}
 
 In the next example both the constant and the variable have perfect square
@@ -166,7 +167,7 @@ $$
   answer="4y^2\sqrt{2y}"
   answerForm="simplified-radical"
   answerDisplay="$4y^2\sqrt{2y}$"
-  hint="The largest perfect square factor is $16y^4$, leaving $2y$ under the radical."
+  hint="Find the largest perfect square factor of the coefficient and the largest even power of $y$; take their square root and leave the rest under the radical."
 >}}
 
 **Example.** Simplify $\sqrt{63u^3 v^5}$.
@@ -187,7 +188,7 @@ $$
   answer="7a^3 b^2\sqrt{2ab}"
   answerForm="simplified-radical"
   answerDisplay="$7a^3 b^2\sqrt{2ab}$"
-  hint="The largest perfect square factor is $49a^6 b^4$, leaving $2ab$ under the radical."
+  hint="Find the largest perfect square factor of the coefficient and the largest even power of each variable; take their square root and leave the rest under the radical."
 >}}
 
 We have seen how to use the Order of Operations to simplify some expressions
@@ -218,9 +219,9 @@ terms!
 {{< fillin
   question="Simplify: $5 + \sqrt{75}$."
   answer="5 + 5\sqrt{3}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$5 + 5\sqrt{3}$"
-  hint="Simplify $\sqrt{75}$ using its largest perfect square factor $25$. The integer and the radical are not like terms, so leave them as a sum."
+  hint="Simplify the square root using its largest perfect square factor. The integer and the radical are not like terms, so leave them as a sum."
 >}}
 
 The next example includes a fraction with a radical in the numerator. Remember
@@ -245,9 +246,9 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{10 - \sqrt{75}}{5}$."
   answer="2 - \sqrt{3}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$2 - \sqrt{3}$"
-  hint="Simplify $\sqrt{75} = 5\sqrt{3}$, factor $5$ from the numerator, then remove the common factor of $5$."
+  hint="Simplify the radical, factor the common factor out of the numerator, then remove the common factor from the numerator and denominator."
 >}}
 
 ## Use the Quotient Property to simplify square roots
@@ -320,9 +321,9 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{75x^5}{3x}}$."
   answer="5x^2"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-term"
   answerDisplay="$5x^2$"
-  hint="Divide inside the radical first: $\tfrac{75x^5}{3x} = 25x^4$, a perfect square."
+  hint="Simplify the fraction inside the radical first, then take the square root of what remains."
 >}}
 
 Remember the Quotient to a Power Property? It said we could raise a fraction to a
@@ -357,7 +358,7 @@ $$
   answer="\tfrac{\sqrt{19}}{7}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{19}}{7}$"
-  hint="The fraction has no common factors and $19$ has no perfect square factor. Use the Quotient Property and simplify $\sqrt{49}$."
+  hint="Check the fraction for common factors, then use the Quotient Property and simplify the radicals in the numerator and denominator separately."
 >}}
 
 **Example.** Use the Quotient Property to simplify $\sqrt{\tfrac{27m^3}{196}}$.
@@ -401,7 +402,7 @@ $$
   answer="\tfrac{4m\sqrt{5m}}{n^3}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{4m\sqrt{5m}}{n^3}$"
-  hint="Rewrite with the Quotient Property. The largest perfect square factor of $80m^3$ is $16m^2$, and $\sqrt{n^6} = n^3$."
+  hint="Rewrite with the Quotient Property, then simplify the numerator using its largest perfect square factor and take the square root of the denominator."
 >}}
 
 Be sure to simplify the fraction in the radicand first, if possible.
@@ -439,7 +440,7 @@ $$
   answer="\tfrac{5y\sqrt{x}}{6}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{5y\sqrt{x}}{6}$"
-  hint="Simplify the fraction in the radicand first: $\tfrac{50x^5 y^3}{72x^4 y} = \tfrac{25xy^2}{36}$. Then use the Quotient Property."
+  hint="Simplify the fraction in the radicand first by removing common factors and dividing like bases. Then use the Quotient Property."
 >}}
 
 ## Key terms
@@ -468,13 +469,13 @@ $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
   answer="m^6\sqrt{m}"
   answerForm="simplified-radical"
   answerDisplay="$m^6\sqrt{m}$"
-  hint="The largest perfect square factor of $m^{13}$ is $m^{12}$, and $\sqrt{m^{12}} = m^6$."
+  hint="Rewrite $m^{13}$ as its largest perfect square factor (the largest even power of $m$) times what is left, then take the square root of the perfect square."
 >}}
 
 {{< fillin
   question="Simplify: $5 + \sqrt{12}$."
   answer="5+2\sqrt{3}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$5+2\sqrt{3}$"
   hint="Simplify $\sqrt{12}$ first. The integer and the radical are not like terms, so leave them as a sum."
 >}}
@@ -484,7 +485,7 @@ $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{49}{64}}$."
   answer="\tfrac{7}{8}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{8}$"
   hint="Check whether both $49$ and $64$ are perfect squares."
 >}}
@@ -492,7 +493,7 @@ $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{x^{10}}{x^6}}$."
   answer="x^2"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-term"
   answerDisplay="$x^2$"
   hint="Divide the like bases inside the radical first by subtracting exponents, then take the square root."
 >}}
@@ -502,9 +503,9 @@ $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
   answer="\tfrac{4x^3\sqrt{6x}}{11}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{4x^3\sqrt{6x}}{11}$"
-  hint="$121$ is already a perfect square. Rewrite $96x^7$ using its largest perfect square factor $16x^6$."
+  hint="Use the Quotient Property, then simplify the numerator using its largest perfect square factor and take the square root of the denominator."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.2 Simplify Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.2 Simplify Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; corrected the $\sqrt{500}$ estimate, which the source states as "5 is between 2 and 3", to $\sqrt{5}$; replaced the Key Concepts summary (the module has no glossary) with a Key terms list; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

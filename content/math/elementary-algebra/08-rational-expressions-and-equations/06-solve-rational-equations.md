@@ -103,15 +103,15 @@ The solution is $x = 2$.
 {{< /callout >}}
 
 {{< fillin
-  question="Solve: $\tfrac{1}{y} + \tfrac{2}{3} = \tfrac{1}{5}$."
+  question="Solve: $\tfrac{1}{y} + \tfrac{2}{3} = \tfrac{1}{5}$. Enter the solution as a fraction in lowest terms."
   answer="-\frac{15}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{15}{7}$"
-  hint="The LCD of $y$, $3$, and $5$ is $15y$; note $y \neq 0$. Multiply both sides by $15y$ to clear the fractions, then solve."
+  hint="Note the value that makes a denominator zero, find the LCD of all the denominators, and multiply both sides by it to clear the fractions. Then solve and check."
 >}}
 
 We always start by noting the values that would cause any denominators to be
-zero. When one of the denominators is a quadratic, remember to factor it
-first to find the LCD.
+zero.
 
 **Example.** Solve: $1 - \tfrac{5}{y} = -\tfrac{6}{y^2}$.
 
@@ -152,7 +152,8 @@ is a valid solution. Checking it gives $-\tfrac{1}{4} = -\tfrac{1}{4}$.
 {{< fillin
   question="Solve: $\tfrac{1}{x-1} = \tfrac{2}{3x}$. (Enter the value of $x$.)"
   answer="-2"
-  hint="Note $x \neq 1$ and $x \neq 0$. The LCD is $3x(x-1)$. Cross-multiply: $3x = 2(x-1)$, then solve."
+  answerForm="decimal"
+  hint="Note the values that make a denominator zero, multiply both sides by the LCD and remove common factors, then solve the resulting equation and check it against the excluded values."
 >}}
 
 ### Extraneous solutions
@@ -161,6 +162,9 @@ Sometimes an algebraic solution turns out to be a value we already excluded —
 one that makes a denominator zero. That value is an **extraneous solution**
 and must be discarded. If it was the *only* algebraic solution, the equation
 has **no solution**.
+
+When one of the denominators is a quadratic, remember to factor it first to
+find the LCD.
 
 **Example.** Solve: $\tfrac{m+11}{m^2-5m+4} = \tfrac{5}{m-4} - \tfrac{3}{m-1}$.
 
@@ -171,9 +175,9 @@ $$
 \begin{array}{lrcl}
 & \tfrac{m+11}{(m-4)(m-1)} &=& \tfrac{5}{m-4} - \tfrac{3}{m-1}, \; m \neq 4,\ m \neq 1 \\[4pt]
 \text{Clear the fractions and remove common factors.} & m + 11 &=& 5(m-1) - 3(m-4) \\[4pt]
-\text{Solve the resulting equation.} & m + 11 &=& 5m - 5 - 3m + 12 \\[4pt]
-& m + 11 &=& 2m + 7 \\[4pt]
-& 4 &=& m
+\text{Distribute.} & m + 11 &=& 5m - 5 - 3m + 12 \\[4pt]
+\text{Combine like terms.} & m + 11 &=& 2m + 7 \\[4pt]
+\text{Solve the resulting equation.} & 4 &=& m
 \end{array}
 $$
 
@@ -185,8 +189,8 @@ For a no-solution case like this one, the check step is what catches the
 trap: the excluded value and the algebraic solution are the same number.
 
 {{< multiplechoice
-  question="Solve: $\tfrac{x}{2x-2} - \tfrac{2}{3x+3} = \tfrac{5x^2-2x+9}{12x^2-12}$. After clearing fractions, the equation simplifies to $x^2 - 1 = 0$, giving $x = 1$ or $x = -1$. What is the solution set?"
-  hint="Factor the denominators: $2(x-1)$, $3(x+1)$, and $12(x-1)(x+1)$. Which values are excluded? Compare them to the algebraic solutions."
+  question="Solve: $\tfrac{x}{2x-2} - \tfrac{2}{3x+3} = \tfrac{5x^2-2x+9}{12x^2-12}$."
+  hint="Factor every denominator and note the excluded values, clear the fractions with the LCD, and solve. Then check each algebraic solution against the excluded values."
   answer="No solution"
 >}}
 $x = 1$ and $x = -1$
@@ -210,7 +214,8 @@ what tells us which algebraic solutions to keep.
 {{< fillin
   question="For the equation $\tfrac{4}{q-4} - \tfrac{3}{q-3} = 1$, before solving you note the values that make a denominator zero. One of them is $q = 4$. What is the other excluded value of $q$?"
   answer="3"
-  hint="A denominator is zero when $q - 3 = 0$."
+  answerForm="decimal"
+  hint="Set each denominator equal to zero and solve for $q$."
 >}}
 
 ## Solve a Rational Equation for a Specific Variable
@@ -237,7 +242,7 @@ $$
   question="Solve $\tfrac{A}{L} = W$ for $L$. Enter the expression that $L$ equals."
   answer="\frac{A}{W}"
   answerDisplay="$L = \tfrac{A}{W}$"
-  hint="Multiply both sides by $L$ to get $A = W \cdot L$, then divide both sides by $W$."
+  hint="Clear the fraction by multiplying both sides by the LCD, then divide both sides to isolate $L$."
 >}}
 
 **Example.** Solve $m = \tfrac{x-2}{y-3}$ for $y$.
@@ -278,7 +283,7 @@ equation, we must also now state that $m \neq 1$.
   question="Solve $\tfrac{y-2}{x+1} = \tfrac{2}{3}$ for $x$. Enter the expression that $x$ equals."
   answer="\frac{3y-8}{2}"
   answerDisplay="$x = \tfrac{3y-8}{2}$"
-  hint="Cross-multiply to get $3(y-2) = 2(x+1)$, then isolate $x$: $3y - 6 = 2x + 2$."
+  hint="Note the excluded value, multiply both sides by the LCD to clear the fractions, distribute, then collect the terms with $x$ on one side and divide to isolate $x$."
 >}}
 
 ## Key terms
@@ -296,25 +301,27 @@ a denominator equal to zero, so the rational expression is undefined there.
 {{< fillin
   question="Solve: $\tfrac{1}{a} + \tfrac{2}{5} = \tfrac{1}{2}$."
   answer="10"
-  hint="Note $a \neq 0$. The LCD is $10a$; multiply both sides by it to clear the fractions, then solve for $a$."
+  answerForm="decimal"
+  hint="Note the value that makes a denominator zero, multiply both sides by the LCD of all the denominators to clear the fractions, then solve and check."
 >}}
 
 {{< fillin
   question="Solve: $1 - \tfrac{2}{m} = \tfrac{8}{m^2}$. Enter both solutions, separated by a comma."
   answer="-2,4"
   answerMode="unordered"
-  hint="Note $m \neq 0$. Multiply both sides by $m^2$ to get a quadratic equation, then factor."
+  answerForm="decimal"
+  hint="Note the value that makes a denominator zero and clear the fractions with the LCD. Write the resulting quadratic equation in standard form, factor, and use the Zero Product Property."
 >}}
 
 {{< multiplechoice
-  question="Solve: $\tfrac{v-10}{v^2-5v+4} = \tfrac{3}{v-1} - \tfrac{6}{v-4}$. After clearing fractions, the equation simplifies to $v = 1$. What is the solution set?"
-  hint="Factor the first denominator: $(v-4)(v-1)$. Which values does that exclude? Compare them to the algebraic solution."
+  question="Solve: $\tfrac{v-10}{v^2-5v+4} = \tfrac{3}{v-1} - \tfrac{6}{v-4}$."
+  hint="Factor every denominator and note the excluded values, clear the fractions with the LCD, and solve. Then check each algebraic solution against the excluded values."
   answer="No solution"
 >}}
-v = 1
-v = 4
+$v = 1$
+$v = 4$
 No solution
-v = 1 and v = 4
+$v = 1$ and $v = 4$
 {{< /multiplechoice >}}
 
 ### Solve a rational equation for a specific variable
@@ -323,16 +330,16 @@ v = 1 and v = 4
   question="Solve $\tfrac{C}{r} = 2\pi$ for $r$. Enter the expression that $r$ equals."
   answer="\frac{C}{2\pi}"
   answerDisplay="$r = \tfrac{C}{2\pi}$"
-  hint="Multiply both sides by $r$ to get $C = 2\pi r$, then divide both sides by $2\pi$."
+  hint="Clear the fraction by multiplying both sides by the LCD, then divide both sides to isolate $r$."
 >}}
 
 {{< fillin
   question="Solve $\tfrac{m+3}{n-2} = \tfrac{4}{5}$ for $n$. Enter the expression that $n$ equals."
   answer="\frac{5m+23}{4}"
   answerDisplay="$n = \tfrac{5m+23}{4}$"
-  hint="Cross-multiply to get $5(m+3) = 4(n-2)$, then isolate $n$."
+  hint="Note the excluded value, multiply both sides by the LCD to clear the fractions, distribute, then collect the terms with $n$ on one side and divide to isolate $n$."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.6: Solve Rational Equations](https://openstax.org/books/elementary-algebra-2e/pages/8-6-solve-rational-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the extraneous-solution cases (no-solution and discarded-root) into a single subsection; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.6: Solve Rational Equations](https://openstax.org/books/elementary-algebra-2e/pages/8-6-solve-rational-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the extraneous-solution cases (no-solution and discarded-root) into a single subsection; omitted four of the twelve worked examples, posing one of them as an in-page multiple-choice question; added a key term for excluded value; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -79,26 +79,27 @@ is not a real number. Contrast this with $-\sqrt{64} = -8$, where the negative
 sits outside the radical.
 
 {{< fillin
-  question="Simplify $\sqrt{225}$."
-  answer="15"
-  answerForm="simplified-radical"
-  hint="What number, multiplied by itself, gives $225$?"
+  question="Simplify $-\sqrt{49}$."
+  answer="-7"
+  answerForm="decimal"
+  hint="Check whether the negative sign is inside or outside the radical, then take the square root."
+  answerDisplay="$-7$"
 >}}
 
 {{< fillin
   question="Simplify $-\sqrt{121}$."
   answer="-11"
-  answerForm="simplified-radical"
-  hint="The negative sign is in front of the radical, so simplify the root first, then apply the negative."
+  answerForm="decimal"
+  hint="Check whether the negative sign is inside or outside the radical, then take the square root."
   answerDisplay="$-11$"
 >}}
 
 {{< multiplechoice
   question="Which is true of $\sqrt{-196}$?"
-  hint="Can any real number, squared, produce a negative result?"
+  hint="Look for a real number whose square is the radicand, $-196$."
   answer="It is not a real number"
 >}}
-It equals $0$
+It equals $\pm 14$
 It is not a real number
 It equals $-14$
 It equals $14$
@@ -123,7 +124,7 @@ Notice the different answers in parts (a) and (b)!
 {{< fillin
   question="Simplify $\sqrt{9} + \sqrt{16}$."
   answer="7"
-  answerForm="simplified-radical"
+  answerForm="decimal"
   hint="Take each square root separately, then add."
 >}}
 
@@ -161,12 +162,14 @@ $$
 {{< fillin
   question="Estimate $\sqrt{38}$: it lies between two consecutive whole numbers. Enter the smaller whole number."
   answer="6"
+  answerForm="decimal"
   hint="Which perfect square is just below $38$?"
 >}}
 
 {{< fillin
   question="Estimate $\sqrt{84}$: it lies between two consecutive whole numbers. Enter the larger whole number."
   answer="10"
+  answerForm="decimal"
   hint="Which perfect square is just above $84$?"
 >}}
 
@@ -210,13 +213,15 @@ $$
 {{< fillin
   question="Round $\sqrt{11}$ to two decimal places."
   answer="3.32"
-  hint="Use a calculator's square root key, then keep two digits after the decimal point."
+  answerForm="decimal"
+  hint="Use a calculator's square root key, then round to the hundredths place."
 >}}
 
 {{< fillin
   question="Round $\sqrt{13}$ to two decimal places."
   answer="3.61"
-  hint="Use a calculator's square root key, then keep two digits after the decimal point."
+  answerForm="decimal"
+  hint="Use a calculator's square root key, then round to the hundredths place."
 >}}
 
 ## Simplify Variable Expressions with Square Roots
@@ -295,15 +300,15 @@ $$
 {{< fillin
   question="Simplify $\sqrt{z^{12}}$."
   answer="z^6"
-  answerForm="simplified-radical"
-  hint="Half the exponent under an even-powered square root."
+  answerForm="simplified-radical single-power"
+  hint="Find the power whose square is the radicand: squaring a power doubles its exponent."
   answerDisplay="$z^6$"
 >}}
 
 {{< fillin
   question="Simplify $\sqrt{64x^2}$."
   answer="8x"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-term"
   hint="Take the square root of the coefficient and of the variable factor separately."
   answerDisplay="$8x$"
 >}}
@@ -311,8 +316,8 @@ $$
 {{< fillin
   question="Simplify $-\sqrt{100p^2}$."
   answer="-10p"
-  answerForm="simplified-radical"
-  hint="The negative sign stays in front; simplify the radical, then apply it."
+  answerForm="simplified-radical single-term"
+  hint="Check whether the negative sign is inside or outside the radical, then take the square root of the coefficient and of the variable factor."
   answerDisplay="$-10p$"
 >}}
 
@@ -332,24 +337,24 @@ written with $\approx$, accurate to the number of digits displayed.
 ### Simplify expressions with square roots
 
 {{< fillin
-  question="Simplify $\sqrt{36}$."
-  answer="6"
-  answerForm="simplified-radical"
-  hint="Ask what whole number, multiplied by itself, gives $36$."
+  question="Simplify $\sqrt{100}$."
+  answer="10"
+  answerForm="decimal"
+  hint="Ask what whole number, multiplied by itself, gives $100$."
 >}}
 
 {{< fillin
   question="Simplify $-\sqrt{4}$."
   answer="-2"
-  answerForm="simplified-radical"
+  answerForm="decimal"
   answerDisplay="$-2$"
-  hint="Simplify the radical first, then apply the negative sign in front of it."
+  hint="Check whether the negative sign is inside or outside the radical, then take the square root."
 >}}
 
 {{< multiplechoice
   question="Simplify $\sqrt{-9}$."
   answer="not a real number"
-  hint="Can any real number, squared, produce a negative result?"
+  hint="Look for a real number whose square is the radicand, $-9$."
 >}}
 not a real number
 -3
@@ -396,14 +401,14 @@ not a real number
   question="Approximate $\sqrt{19}$ with a calculator's square root key. Round to two decimal places."
   answer="4.36"
   answerForm="decimal"
-  hint="Take the square root, then keep two digits after the decimal point."
+  hint="Take the square root, then round to the hundredths place."
 >}}
 
 {{< fillin
   question="Approximate $\sqrt{53}$ with a calculator's square root key. Round to two decimal places."
   answer="7.28"
   answerForm="decimal"
-  hint="Take the square root, then keep two digits after the decimal point."
+  hint="Take the square root, then round to the hundredths place."
 >}}
 
 ### Simplify variable expressions with square roots
@@ -411,23 +416,23 @@ not a real number
 {{< fillin
   question="Simplify $\sqrt{a^{14}}$."
   answer="a^7"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-power"
   answerDisplay="$a^7$"
-  hint="Halve the exponent: $(a^7)^2 = a^{14}$."
+  hint="Find the power whose square is the radicand: squaring a power doubles its exponent."
 >}}
 
 {{< fillin
   question="Simplify $-\sqrt{81x^{18}}$."
   answer="-9x^9"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-term"
   answerDisplay="$-9x^9$"
-  hint="The negative sign stays in front; simplify the radical, then apply it."
+  hint="Check whether the negative sign is inside or outside the radical, then take the square root of the coefficient and of the variable factor."
 >}}
 
 {{< fillin
   question="Simplify $\sqrt{121m^{20}}$."
   answer="11m^{10}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-term"
   answerDisplay="$11m^{10}$"
   hint="Take the square root of the coefficient, then halve the exponent of $m$."
 >}}
@@ -435,11 +440,11 @@ not a real number
 {{< fillin
   question="Simplify $\sqrt{9c^{8}d^{12}}$."
   answer="3c^4d^6"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-term"
   answerDisplay="$3c^4d^6$"
   hint="Take the square root of the coefficient, then halve the exponent of each variable factor."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.1 Simplify and Use Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-1-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as aligned step tables; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.1 Simplify and Use Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-1-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as aligned step tables and worked the $\sqrt{-169}$ and $-\sqrt{64}$ example into the prose; summarized the table of the square roots of $4$ through $9$ in prose; omitted the fill-in table of square roots, the table of calculator approximations, the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

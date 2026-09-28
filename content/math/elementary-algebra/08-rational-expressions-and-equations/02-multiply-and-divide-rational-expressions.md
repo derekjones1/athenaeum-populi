@@ -123,9 +123,9 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{5x}{x^2 + 5x + 6} \cdot \tfrac{x^2 - 4}{10x}$."
   answer="\tfrac{x - 2}{2(x + 3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x - 2}{2(x + 3)}$"
-  hint="Factor each part: $x^2 + 5x + 6 = (x + 2)(x + 3)$ and $x^2 - 4 = (x - 2)(x + 2)$. Then divide out the common factors."
+  hint="Factor each numerator and denominator completely, multiply, then divide out the common factors."
 >}}
 
 When one of the factors is the opposite of a factor in the other fraction, a
@@ -141,16 +141,16 @@ $$
 \begin{array}{lrcl}
 \text{Factor.} &&& \tfrac{4(4 - x)}{2(x - 6)} \cdot \tfrac{(x - 6)(x + 1)}{(x - 4)(x + 4)} \\[10pt]
 \text{Multiply.} && & \tfrac{4(4 - x)(x - 6)(x + 1)}{2(x - 6)(x - 4)(x + 4)} \\[10pt]
-\text{Simplify (opposites divide to } -1\text{).} && & -\tfrac{2(x + 1)}{x + 4}
+\text{Simplify (opposites divide to }{-1}\text{).} && & -\tfrac{2(x + 1)}{x + 4}
 \end{array}
 $$
 
 {{< fillin
-  question="Multiply: $\tfrac{12x - 6x^2}{x^2 + 8x} \cdot \tfrac{x^2 + 11x + 24}{x^2 - 4}$. (A factor of $-1$ appears from opposite binomials.)"
+  question="Multiply: $\tfrac{12x - 6x^2}{x^2 + 8x} \cdot \tfrac{x^2 + 11x + 24}{x^2 - 4}$."
   answer="-\tfrac{6(x + 3)}{x + 2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{6(x + 3)}{x + 2}$"
-  hint="Factor $12x - 6x^2 = 6x(2 - x)$; the $2 - x$ and $x - 2$ are opposites, so they divide to $-1$."
+  hint="Factor each numerator and denominator completely, then divide out common factors; remember that a binomial and its opposite divide to $-1$."
 >}}
 
 ## Divide rational expressions
@@ -181,7 +181,7 @@ $$
 \text{Multiply by the reciprocal.} &&& \tfrac{x + 9}{6 - x} \cdot \tfrac{x - 6}{x^2 - 81} \\[10pt]
 \text{Factor.} && & \tfrac{x + 9}{6 - x} \cdot \tfrac{x - 6}{(x - 9)(x + 9)} \\[10pt]
 \text{Multiply.} && & \tfrac{(x + 9)(x - 6)}{(6 - x)(x - 9)(x + 9)} \\[10pt]
-\text{Simplify (opposites divide to } -1\text{).} && & -\tfrac{1}{x - 9}
+\text{Simplify (opposites divide to }{-1}\text{).} && & -\tfrac{1}{x - 9}
 \end{array}
 $$
 
@@ -209,19 +209,19 @@ $$
 $$
 
 {{< fillin
-  question="Divide: $\tfrac{c + 3}{5 - c} \div \tfrac{c^2 - 9}{c - 5}$. (A factor of $-1$ appears from opposite binomials.)"
+  question="Divide: $\tfrac{c + 3}{5 - c} \div \tfrac{c^2 - 9}{c - 5}$."
   answer="-\tfrac{1}{c - 3}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{1}{c - 3}$"
-  hint="Multiply by the reciprocal $\tfrac{c - 5}{c^2 - 9}$; factor $c^2 - 9 = (c - 3)(c + 3)$. The $5 - c$ and $c - 5$ are opposites."
+  hint="Multiply the first fraction by the reciprocal of the second, factor completely, and divide out common factors; remember that a binomial and its opposite divide to $-1$."
 >}}
 
 {{< fillin
   question="Divide: $\tfrac{2m^2}{m^2 - 8m} \div \tfrac{8m^2 + 24m}{m^2 + m - 6}$."
   answer="\tfrac{m - 2}{4(m - 8)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{m - 2}{4(m - 8)}$"
-  hint="Multiply by the reciprocal, then factor: $m^2 - 8m = m(m - 8)$, $8m^2 + 24m = 8m(m + 3)$, $m^2 + m - 6 = (m + 3)(m - 2)$."
+  hint="Multiply the first fraction by the reciprocal of the second, factor each numerator and denominator completely, then divide out common factors."
 >}}
 
 Sometimes we divide a rational expression by a polynomial. Remember that a
@@ -247,9 +247,9 @@ $$
 {{< fillin
   question="Divide: $\tfrac{2x^2 - 14x - 16}{4} \div (x^2 + 2x + 1)$."
   answer="\tfrac{x - 8}{2(x + 1)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x - 8}{2(x + 1)}$"
-  hint="Write the polynomial over $1$ and multiply by its reciprocal. Factor $2x^2 - 14x - 16 = 2(x - 8)(x + 1)$ and $x^2 + 2x + 1 = (x + 1)^2$."
+  hint="Write the polynomial as a fraction over $1$ and multiply by its reciprocal, then factor completely and divide out common factors."
 >}}
 
 A complex fraction is another way of writing division of two fractions — the
@@ -293,9 +293,9 @@ $$
 {{< fillin
   question="Perform the indicated operations: $\tfrac{4m + 4}{3m - 15} \cdot \tfrac{m^2 - 3m - 10}{m^2 - 4m - 32} \div \tfrac{12m - 36}{6m - 48}$."
   answer="\tfrac{2(m + 1)(m + 2)}{3(m + 4)(m - 3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2(m + 1)(m + 2)}{3(m + 4)(m - 3)}$"
-  hint="Rewrite the division as multiplication by the reciprocal $\tfrac{6m - 48}{12m - 36}$, then factor every part completely before dividing out common factors."
+  hint="Rewrite the division as multiplication by the reciprocal of the last fraction, then factor every numerator and denominator completely before dividing out common factors."
 >}}
 
 ## Key terms
@@ -330,9 +330,9 @@ by its bottom.
 {{< fillin
   question="Multiply: $\tfrac{5p^2}{p^2 - 5p - 36} \cdot \tfrac{p^2 - 16}{10p}$."
   answer="\tfrac{p(p - 4)}{2(p - 9)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{p(p - 4)}{2(p - 9)}$"
-  hint="Factor $p^2 - 5p - 36 = (p - 9)(p + 4)$ and $p^2 - 16 = (p - 4)(p + 4)$, then divide out the common factors."
+  hint="Factor each numerator and denominator completely, multiply, then divide out the common factors."
 >}}
 
 ### Divide rational expressions
@@ -340,19 +340,19 @@ by its bottom.
 {{< fillin
   question="Divide: $\tfrac{16a^2}{4a + 36} \div \tfrac{4a^2 - 24a}{a^2 + 4a - 45}$."
   answer="\tfrac{a(a - 5)}{a - 6}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{a(a - 5)}{a - 6}$"
-  hint="Multiply by the reciprocal, then factor: $4a + 36 = 4(a + 9)$, $4a^2 - 24a = 4a(a - 6)$, and $a^2 + 4a - 45 = (a + 9)(a - 5)$."
+  hint="Multiply the first fraction by the reciprocal of the second, factor each numerator and denominator completely, then divide out common factors."
 >}}
 
 {{< fillin
   question="Divide: $\tfrac{t^2 - 9}{2t} \div (t^2 - 6t + 9)$."
   answer="\tfrac{t + 3}{2t(t - 3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{t + 3}{2t(t - 3)}$"
-  hint="Write the polynomial over $1$ and multiply by its reciprocal. Factor $t^2 - 9 = (t - 3)(t + 3)$ and $t^2 - 6t + 9 = (t - 3)^2$."
+  hint="Write the polynomial as a fraction over $1$ and multiply by its reciprocal, then factor completely and divide out common factors."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.2: Multiply and Divide Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-2-multiply-and-divide-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and stated each simplification as a divide-out of common factors; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.2: Multiply and Divide Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-2-multiply-and-divide-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and stated each simplification as a divide-out of common factors; asked the two problems that mix multiplication and division to "perform the indicated operations" (the source says "Divide"); replaced the Key Concepts summary (its rules stand in the callouts) with a Key terms list (the module has no glossary); omitted the Be Prepared quiz, three of the thirteen worked examples, the Self Check checklist, unselected practice problems, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted eight of the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -93,7 +93,7 @@ simplified.
   answer="3\sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$3\sqrt{2}$"
-  hint="Multiply under one radical: $\sqrt{3 \cdot 6} = \sqrt{18}$, then remove the perfect-square factor."
+  hint="Multiply the radicands under one square root with the Product Property, then remove the largest perfect-square factor."
 >}}
 
 {{< fillin
@@ -101,7 +101,7 @@ simplified.
   answer="90\sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$90\sqrt{2}$"
-  hint="Multiply the coefficients ($6 \cdot 5$) and the radicals ($\sqrt{3} \cdot \sqrt{6} = \sqrt{18}$), then simplify $\sqrt{18}$."
+  hint="Multiply the coefficients, multiply the radicands under one square root, then remove the largest perfect-square factor."
 >}}
 
 When we have to multiply square roots, we first find the product and then
@@ -146,7 +146,7 @@ $$
   answer="2x^3\sqrt{3}"
   answerForm="simplified-radical"
   answerDisplay="$2x^3\sqrt{3}$"
-  hint="Multiply under one radical to get $\sqrt{12x^6}$, then pull out the perfect-square factor $4x^6$."
+  hint="Multiply the radicands under one square root, then take the largest perfect-square factor, variables included, out of the radical."
 >}}
 
 **Example.** Simplify: $\left(10\sqrt{6p^3}\right)\left(3\sqrt{18p}\right)$.
@@ -167,11 +167,8 @@ $$
   answer="144x^3\sqrt{10}"
   answerForm="simplified-radical"
   answerDisplay="$144x^3\sqrt{10}$"
-  hint="Multiply coefficients ($6 \cdot 8 = 48$) and radicals ($\sqrt{2x^2} \cdot \sqrt{45x^4} = \sqrt{90x^6}$), then simplify: $\sqrt{90x^6} = 3x^3\sqrt{10}$."
+  hint="Multiply the coefficients and the radicands, then remove the largest perfect-square factor, variables included, from the radical."
 >}}
-
-When we multiply two like square roots, it is the same as squaring a single
-square root.
 
 **Example.** Simplify: (a) $\left(\sqrt{2}\right)^2$ and (b) $\left(-\sqrt{11}\right)^2$.
 
@@ -204,7 +201,9 @@ The results of the previous example lead us to this property.
 {{< /callout >}}
 
 By realizing that squaring and taking a square root are "opposite" operations,
-we can simplify $\left(\sqrt{2}\right)^2$ and get $2$ right away.
+we can simplify $\left(\sqrt{2}\right)^2$ and get $2$ right away. When we multiply
+the two like square roots in part (a) of the next example, it is the same as
+squaring.
 
 **Example.** Simplify: (a) $\left(2\sqrt{3}\right)\left(8\sqrt{3}\right)$ and (b) $\left(3\sqrt{6}\right)^2$.
 
@@ -230,7 +229,7 @@ $$
   question="Simplify: $\left(6\sqrt{11}\right)\left(5\sqrt{11}\right)$."
   answer="330"
   answerForm="decimal"
-  hint="Multiply the coefficients, then use $\left(\sqrt{11}\right)^2 = 11$."
+  hint="Multiply the coefficients and the square roots; squaring a square root gives back its radicand."
 >}}
 
 ## Use polynomial multiplication to multiply square roots
@@ -261,9 +260,9 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{3}\left(2 - \sqrt{18}\right)$."
   answer="2\sqrt{3} - 3\sqrt{6}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical expanded distributed no-like-terms"
   answerDisplay="$2\sqrt{3} - 3\sqrt{6}$"
-  hint="Distribute the $\sqrt{3}$: the second term is $\sqrt{3} \cdot \sqrt{18} = \sqrt{54}$, which simplifies to $3\sqrt{6}$."
+  hint="Distribute the $\sqrt{3}$ to each term, multiply the square roots with the Product Property, then simplify any radical that has a perfect-square factor."
 >}}
 
 **Example.** Simplify: (a) $\sqrt{5}\left(7 + 2\sqrt{5}\right)$ and (b) $\sqrt{6}\left(\sqrt{2} + \sqrt{18}\right)$.
@@ -291,10 +290,10 @@ $$
 
 {{< fillin
   question="Simplify: $\sqrt{6}\left(1 + 3\sqrt{6}\right)$."
-  answer="\sqrt{6} + 18"
-  answerForm="simplified-radical"
-  answerDisplay="$\sqrt{6} + 18$"
-  hint="Distribute: the second term is $3 \cdot \sqrt{6} \cdot \sqrt{6} = 3 \cdot 6$."
+  answer="18 + \sqrt{6}"
+  answerForm="simplified-radical expanded distributed no-like-terms"
+  answerDisplay="$18 + \sqrt{6}$"
+  hint="Distribute the $\sqrt{6}$ to each term; a square root times itself is its radicand."
 >}}
 
 When we worked with polynomials, we multiplied binomials by binomials.
@@ -316,9 +315,9 @@ $$
 {{< fillin
   question="Simplify: $\left(1 + \sqrt{6}\right)\left(3 - \sqrt{6}\right)$."
   answer="-3 + 2\sqrt{6}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical expanded distributed no-like-terms"
   answerDisplay="$-3 + 2\sqrt{6}$"
-  hint="FOIL gives $3 - \sqrt{6} + 3\sqrt{6} - 6$; then combine the constant terms and the radical terms."
+  hint="Multiply with FOIL, then combine the constant terms and the like square roots."
 >}}
 
 **Example.** Simplify: $\left(3 - 2\sqrt{7}\right)\left(4 - 2\sqrt{7}\right)$.
@@ -337,9 +336,9 @@ $$
 {{< fillin
   question="Simplify: $\left(6 - 3\sqrt{7}\right)\left(3 + 4\sqrt{7}\right)$."
   answer="-66 + 15\sqrt{7}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical expanded distributed no-like-terms"
   answerDisplay="$-66 + 15\sqrt{7}$"
-  hint="FOIL gives $18 + 24\sqrt{7} - 9\sqrt{7} - 12 \cdot 7$; combine the constants and the radical terms."
+  hint="Multiply with FOIL — a square root times itself is its radicand — then combine the constant terms and the like square roots."
 >}}
 
 **Example.** Simplify: $\left(3\sqrt{2} - \sqrt{5}\right)\left(\sqrt{2} + 4\sqrt{5}\right)$.
@@ -357,9 +356,9 @@ $$
 {{< fillin
   question="Simplify: $\left(5\sqrt{3} - \sqrt{7}\right)\left(\sqrt{3} + 2\sqrt{7}\right)$."
   answer="1 + 9\sqrt{21}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical expanded distributed no-like-terms"
   answerDisplay="$1 + 9\sqrt{21}$"
-  hint="FOIL gives $5 \cdot 3 + 10\sqrt{21} - \sqrt{21} - 2 \cdot 7$; combine the constants ($15 - 14$) and the $\sqrt{21}$ terms."
+  hint="Multiply with FOIL, using the Product Property on each product of square roots, then combine the constant terms and the like square roots."
 >}}
 
 **Example.** Simplify: $\left(4 - 2\sqrt{x}\right)\left(1 + 3\sqrt{x}\right)$.
@@ -426,9 +425,9 @@ $$
 {{< fillin
   question="Simplify: $\left(6 - \sqrt{5}\right)^2$."
   answer="41 - 12\sqrt{5}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical expanded distributed no-like-terms"
   answerDisplay="$41 - 12\sqrt{5}$"
-  hint="Use $(a - b)^2 = a^2 - 2ab + b^2$ with $a = 6$, $b = \sqrt{5}$; the middle term is $2 \cdot 6 \cdot \sqrt{5}$ and $\left(\sqrt{5}\right)^2 = 5$."
+  hint="Use the binomial-square pattern $(a - b)^2 = a^2 - 2ab + b^2$, keeping the middle term, then combine the constant terms."
 >}}
 
 **Example.** Simplify: $\left(1 + 3\sqrt{x}\right)^2$.
@@ -445,9 +444,9 @@ $$
 {{< fillin
   question="Simplify: $\left(2 + 5\sqrt{m}\right)^2$."
   answer="4 + 20\sqrt{m} + 25m"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical expanded distributed no-like-terms"
   answerDisplay="$4 + 20\sqrt{m} + 25m$"
-  hint="Use $(a + b)^2 = a^2 + 2ab + b^2$ with $a = 2$, $b = 5\sqrt{m}$; note $\left(5\sqrt{m}\right)^2 = 25m$."
+  hint="Use the binomial-square pattern $(a + b)^2 = a^2 + 2ab + b^2$; in the last term, square both the coefficient and the square root."
 >}}
 
 In the next two examples, we will find the product of conjugates.
@@ -477,15 +476,15 @@ $$
 $$
 
 Notice that the product of conjugates always gives a result with no radical —
-the middle terms of the FOIL cancel and the outer squares leave a rational
-number. This idea, expressed by $\left(\sqrt{a} + \sqrt{b}\right)\left(\sqrt{a} - \sqrt{b}\right) = a - b$,
+the middle terms of the FOIL cancel, and squaring each term clears its square
+root. This idea, expressed by $\left(\sqrt{a} + \sqrt{b}\right)\left(\sqrt{a} - \sqrt{b}\right) = a - b$,
 becomes very useful in the next section when we divide square roots.
 
 {{< fillin
   question="Simplify: $\left(3 - 2\sqrt{5}\right)\left(3 + 2\sqrt{5}\right)$."
   answer="-11"
   answerForm="decimal"
-  hint="Use $(a - b)(a + b) = a^2 - b^2$: compute $3^2 - \left(2\sqrt{5}\right)^2 = 9 - 4 \cdot 5$."
+  hint="Use the product-of-conjugates pattern $(a - b)(a + b) = a^2 - b^2$; in $b^2$, square both the coefficient and the square root."
 >}}
 
 ## Key terms
@@ -506,7 +505,7 @@ $a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
   answer="30\sqrt{3}"
   answerForm="simplified-radical distributed"
   answerDisplay="$30\sqrt{3}$"
-  hint="Multiply the coefficients ($5 \cdot 3$) and the radicals ($\sqrt{2} \cdot \sqrt{6} = \sqrt{12}$), then simplify $\sqrt{12}$."
+  hint="Multiply the coefficients and multiply the radicands under one square root, then remove the largest perfect-square factor."
 >}}
 
 {{< fillin
@@ -514,7 +513,7 @@ $a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
   answer="28\sqrt{2}"
   answerForm="simplified-radical distributed"
   answerDisplay="$28\sqrt{2}$"
-  hint="Multiply the coefficients — two negatives make a positive product — and multiply the radicals ($\sqrt{7} \cdot \sqrt{14} = \sqrt{98}$), then simplify $\sqrt{98}$."
+  hint="Multiply the coefficients, watching their signs, and multiply the radicands under one square root; then remove the largest perfect-square factor."
 >}}
 
 {{< fillin
@@ -522,7 +521,7 @@ $a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
   answer="40b^2\sqrt{3}"
   answerForm="simplified-radical distributed"
   answerDisplay="$40b^2\sqrt{3}$"
-  hint="Multiply the coefficients and combine under one radical to get $\sqrt{75b^4}$, then pull out the perfect-square factor $25b^4$."
+  hint="Multiply the coefficients and the radicands, then remove the largest perfect-square factor, variables included, from the radical."
 >}}
 
 ### Use polynomial multiplication to multiply square roots
@@ -530,27 +529,27 @@ $a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
 {{< fillin
   question="Simplify: $\left(7 + \sqrt{3}\right)\left(9 - \sqrt{3}\right)$."
   answer="60+2\sqrt{3}"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded distributed simplified-radical no-like-terms"
   answerDisplay="$60 + 2\sqrt{3}$"
-  hint="Use FOIL: the outer and inner products combine to $2\sqrt{3}$, and the last product $\sqrt{3} \cdot \left(-\sqrt{3}\right) = -3$ combines with $63$."
+  hint="Multiply with FOIL — a square root times itself is its radicand — then combine the constant terms and the like square roots."
 >}}
 
 {{< fillin
   question="Simplify: $\left(5 - \sqrt{7}\right)\left(4 - \sqrt{7}\right)$."
   answer="27-9\sqrt{7}"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded distributed simplified-radical no-like-terms"
   answerDisplay="$27 - 9\sqrt{7}$"
-  hint="FOIL gives $20 - 5\sqrt{7} - 4\sqrt{7} + 7$; combine the constant terms and the $\sqrt{7}$ terms."
+  hint="Multiply with FOIL, watching the sign of each product, then combine the constant terms and the like square roots."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\sqrt{11} + \sqrt{5}\right)\left(\sqrt{11} + 6\sqrt{5}\right)$."
   answer="41+7\sqrt{55}"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded distributed simplified-radical no-like-terms"
   answerDisplay="$41 + 7\sqrt{55}$"
-  hint="FOIL gives $11 + 6\sqrt{55} + \sqrt{55} + 30$; combine the constants and the $\sqrt{55}$ terms."
+  hint="Multiply with FOIL, using the Product Property on each product of square roots, then combine the constant terms and the like square roots."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.4 Multiply Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-4-multiply-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.4 Multiply Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-4-multiply-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; added a note after the product-of-conjugates examples that such a product has no radical; replaced the Key Concepts summary (its formulas stand in the callouts) with a Key terms list (the module has no glossary); omitted the Be Prepared quiz, Self Check checklist, media links, unselected practice problems, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

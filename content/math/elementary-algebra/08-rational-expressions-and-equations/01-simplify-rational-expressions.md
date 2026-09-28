@@ -101,12 +101,14 @@ writing the phrase "void where prohibited" in contest rules.
 {{< fillin
   question="Determine the value for which $\frac{3y}{x}$ is undefined."
   answer="0"
+  answerForm="decimal"
   hint="Set the denominator equal to zero and solve for $x$."
 >}}
 
 {{< fillin
   question="Determine the value for which $\frac{8n-5}{3n+1}$ is undefined. Enter the value of $n$."
   answer="-\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$n = -\frac{1}{3}$"
   hint="Set $3n + 1 = 0$ and solve for $n$."
 >}}
@@ -114,8 +116,9 @@ writing the phrase "void where prohibited" in contest rules.
 {{< fillin
   question="Determine the values for which $\frac{a+10}{a^2+4a+3}$ is undefined. Enter the values of $a$ from least to greatest, separated by commas."
   answer="-3, -1"
+  answerForm="decimal"
   answerDisplay="$a = -3,\ a = -1$"
-  hint="Factor $a^2 + 4a + 3 = (a+1)(a+3)$, set it equal to zero, and solve."
+  hint="Factor the denominator, set each factor equal to zero, and solve for $a$."
 >}}
 
 ## Evaluate rational expressions
@@ -142,6 +145,7 @@ $$\frac{2(-3)+3}{3(-3)-5} = \frac{-6+3}{-9-5} = \frac{-3}{-14} = \frac{3}{14}$$
 {{< fillin
   question="Evaluate $\frac{5x-1}{2x+1}$ for $x = 1$."
   answer="\frac{4}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\frac{4}{3}$"
   hint="Substitute $1$ for $x$ in both the numerator and the denominator, then simplify."
 >}}
@@ -149,7 +153,8 @@ $$\frac{2(-3)+3}{3(-3)-5} = \frac{-6+3}{-9-5} = \frac{-3}{-14} = \frac{3}{14}$$
 {{< fillin
   question="Evaluate $\frac{5x-1}{2x+1}$ for $x = 0$."
   answer="-1"
-  hint="Substitute $0$ for $x$: the numerator becomes $-1$ and the denominator becomes $1$."
+  answerForm="decimal"
+  hint="Substitute $0$ for $x$ in both the numerator and the denominator, then simplify."
 >}}
 
 Remember that a fraction is simplified when it has no common factors, other
@@ -174,16 +179,18 @@ This rational expression is undefined for $x = 2$.
 $$\frac{(-1)^2+8(-1)+7}{(-1)^2-4} = \frac{1-8+7}{1-4} = \frac{-7+7}{-3} = \frac{0}{-3} = 0$$
 
 {{< fillin
-  question="Evaluate $\frac{y^2+1}{2y-3}$ for $y = 1$."
+  question="Evaluate $\frac{y+1}{2y-3}$ for $y = 1$."
   answer="-2"
-  hint="Substitute $1$ for $y$: the numerator is $2$ and the denominator is $-1$."
+  answerForm="decimal"
+  hint="Substitute $1$ for $y$ in both the numerator and the denominator, then simplify."
 >}}
 
 {{< fillin
   question="Evaluate $\frac{a^2+2ab+b^2}{3ab^2}$ for $a = 1$ and $b = 2$."
   answer="\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\frac{3}{4}$"
-  hint="The numerator is $1 + 4 + 4 = 9$ and the denominator is $3(1)(4) = 12$; simplify $\frac{9}{12}$."
+  hint="Substitute $1$ for $a$ and $2$ for $b$ in both the numerator and the denominator, then simplify the resulting fraction."
 >}}
 
 ## Simplify rational expressions
@@ -277,7 +284,7 @@ $$\frac{2x+8}{5x+20} = \frac{2(x+4)}{5(x+4)} = \frac{2}{5}$$
   answer="\frac{3}{2}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\frac{3}{2}$"
-  hint="Factor $2$ from the numerator and $2$ from the denominator; the binomial $x - 2$ divides out."
+  hint="Factor the greatest common factor out of the numerator and out of the denominator, then divide out the common binomial factor."
 >}}
 
 **Example.** Simplify $\tfrac{x^2+5x+6}{x^2+8x+12}$.
@@ -289,9 +296,9 @@ $$\frac{x^2+5x+6}{x^2+8x+12} = \frac{(x+2)(x+3)}{(x+2)(x+6)} = \frac{x+3}{x+6}$$
 {{< fillin
   question="Simplify: $\frac{x^2-x-2}{x^2-3x+2}$."
   answer="\frac{x+1}{x-1}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\frac{x+1}{x-1}$"
-  hint="Factor both: $(x-2)(x+1)$ over $(x-2)(x-1)$; the common factor $x - 2$ divides out."
+  hint="Factor the numerator and the denominator into products of binomials, then divide out the common factor."
 >}}
 
 **Example.** Simplify $\tfrac{y^2+y-42}{y^2-36}$.
@@ -304,9 +311,9 @@ $$\frac{y^2+y-42}{y^2-36} = \frac{(y+7)(y-6)}{(y+6)(y-6)} = \frac{y+7}{y+6}$$
 {{< fillin
   question="Simplify: $\frac{x^2+x-6}{x^2-4}$."
   answer="\frac{x+3}{x+2}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\frac{x+3}{x+2}$"
-  hint="Factor $(x+3)(x-2)$ over $(x+2)(x-2)$; the common factor $x - 2$ divides out."
+  hint="Factor the numerator as a trinomial and the denominator as a difference of squares, then divide out the common factor."
 >}}
 
 **Example.** Simplify $\tfrac{p^3-2p^2+2p-4}{p^2-7p+10}$.
@@ -319,9 +326,9 @@ $$\frac{p^3-2p^2+2p-4}{p^2-7p+10} = \frac{p^2(p-2)+2(p-2)}{(p-5)(p-2)} = \frac{(
 {{< fillin
   question="Simplify: $\frac{p^3-p^2+2p-2}{p^2+4p-5}$."
   answer="\frac{p^2+2}{p+5}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\frac{p^2+2}{p+5}$"
-  hint="Factor the numerator by grouping into $(p^2+2)(p-1)$ and the denominator into $(p+5)(p-1)$."
+  hint="Factor the numerator by grouping and the denominator as a trinomial, then divide out the common factor."
 >}}
 
 When the numerator and denominator share a greatest common factor, factor it
@@ -337,9 +344,9 @@ $$\frac{2n^2-14n}{4n^2-16n-48} = \frac{2n(n-7)}{4(n-6)(n+2)} = \frac{n(n-7)}{2(n
 {{< fillin
   question="Simplify: $\frac{2n^2-10n}{4n^2-16n-20}$."
   answer="\frac{n}{2(n+1)}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\frac{n}{2(n+1)}$"
-  hint="Factor out the GCFs: $2n(n-5)$ over $4(n-5)(n+1)$, then divide out the common $n-5$ and the factor $2$."
+  hint="Factor out the GCF of the numerator and of the denominator, factor the remaining trinomial, then divide out every common factor."
 >}}
 
 **Example.** Simplify $\tfrac{m^3+8}{m^2-4}$.
@@ -350,11 +357,11 @@ difference of squares, then remove the common factor $m + 2$:
 $$\frac{m^3+8}{m^2-4} = \frac{(m+2)(m^2-2m+4)}{(m+2)(m-2)} = \frac{m^2-2m+4}{m-2}$$
 
 {{< fillin
-  question="Simplify: $\frac{x^3+8}{x^2-4}$."
-  answer="\frac{x^2-2x+4}{x-2}"
-  answerForm="reduced-fraction"
-  answerDisplay="$\frac{x^2-2x+4}{x-2}$"
-  hint="Use the sum of cubes on the numerator and the difference of squares on the denominator; the common factor $x + 2$ divides out."
+  question="Simplify: $\frac{p^3-64}{p^2-16}$."
+  answer="\frac{p^2+4p+16}{p+4}"
+  answerForm="single-fraction reduced-fraction"
+  answerDisplay="$\frac{p^2+4p+16}{p+4}$"
+  hint="Factor the numerator as a difference of cubes and the denominator as a difference of squares, then divide out the common factor."
 >}}
 
 ## Simplify rational expressions with opposite factors
@@ -393,7 +400,7 @@ $$\frac{x-8}{8-x} = -1$$
   question="Simplify: $\frac{y-2}{2-y}$."
   answer="-1"
   answerForm="polynomial"
-  hint="The numerator $y - 2$ and the denominator $2 - y$ are opposites."
+  hint="Compare the numerator and the denominator term by term, then use the property of opposites in a rational expression."
 >}}
 
 Remember, the first step in simplifying a rational expression is to factor the
@@ -411,9 +418,9 @@ The factor $\tfrac{7-x}{x-7}$ divides to $-1$, leaving $-\tfrac{2}{x+7}$.
 {{< fillin
   question="Simplify: $\frac{10-2y}{y^2-25}$."
   answer="-\frac{2}{y+5}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\frac{2}{y+5}$"
-  hint="Factor: $\frac{2(5-y)}{(y+5)(y-5)}$; the opposites $5 - y$ and $y - 5$ divide to $-1$."
+  hint="Factor the numerator and the denominator completely, then look for a pair of opposite factors."
 >}}
 
 **Example.** Simplify $\tfrac{x^2-4x-32}{64-x^2}$.
@@ -428,9 +435,9 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 {{< fillin
   question="Simplify: $\frac{x^2-4x-5}{25-x^2}$."
   answer="-\frac{x+1}{x+5}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\frac{x+1}{x+5}$"
-  hint="Factor $\frac{(x-5)(x+1)}{(5-x)(5+x)}$; the opposites $x - 5$ and $5 - x$ divide to $-1$."
+  hint="Factor the numerator and the denominator completely, then look for a pair of opposite factors."
 >}}
 
 ## Key terms
@@ -450,6 +457,7 @@ to $-1$.
 {{< fillin
   question="Determine the value for which $\frac{2x}{z}$ is undefined. Enter the value of $z$."
   answer="0"
+  answerForm="decimal"
   answerDisplay="$z = 0$"
   hint="Set the denominator $z$ equal to zero."
 >}}
@@ -457,16 +465,18 @@ to $-1$.
 {{< fillin
   question="Determine the value for which $\frac{4p-1}{6p-5}$ is undefined. Enter the value of $p$."
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$p = \frac{5}{6}$"
   hint="Set $6p - 5 = 0$ and solve for $p$."
 >}}
 
 {{< fillin
-  question="Determine the values for which $\frac{n-3}{n^2+2n-8}$ is undefined."
+  question="Determine the values for which $\frac{n-3}{n^2+2n-8}$ is undefined. Enter both values of $n$, separated by a comma."
   answer="n = -4 , n = 2"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$n = -4 , n = 2$"
-  hint="Factor $n^2 + 2n - 8 = (n+4)(n-2)$, set it equal to zero, and solve for $n$."
+  hint="Factor the denominator, set each factor equal to zero, and solve for $n$."
 >}}
 
 ### Evaluate rational expressions
@@ -474,19 +484,23 @@ to $-1$.
 {{< fillin
   question="Evaluate $\frac{2x}{x-1}$ for $x = -1$."
   answer="1"
-  hint="Substitute $-1$ for $x$: the numerator becomes $-2$ and the denominator becomes $-2$."
+  answerForm="decimal"
+  hint="Substitute $-1$ for $x$ in both the numerator and the denominator, then simplify."
 >}}
 
 {{< fillin
   question="Evaluate $\frac{2x}{x-1}$ for $x = 2$."
   answer="4"
-  hint="Substitute $2$ for $x$: the numerator becomes $4$ and the denominator becomes $1$."
+  answerForm="decimal"
+  hint="Substitute $2$ for $x$ in both the numerator and the denominator, then simplify."
 >}}
 
 {{< fillin
-  question="Evaluate $\frac{2x}{x-1}$ for $x = -1$."
-  answer="1"
-  hint="Substitute $-1$ for $x$: the numerator and denominator both become $-2$."
+  question="Evaluate $\frac{y^2+5y+6}{y^2-1}$ for $y = 2$."
+  answer="\frac{20}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\frac{20}{3}$"
+  hint="Substitute $2$ for $y$ in both the numerator and the denominator, then simplify."
 >}}
 
 ### Simplify rational expressions
@@ -496,23 +510,23 @@ to $-1$.
   answer="\frac{3}{5}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\frac{3}{5}$"
-  hint="Factor $3$ from the numerator and $5$ from the denominator; the binomial $c - 3$ divides out."
+  hint="Factor the greatest common factor out of the numerator and out of the denominator, then divide out the common binomial factor."
 >}}
 
 {{< fillin
   question="Simplify: $\frac{x^2-25}{x^2+2x-15}$."
   answer="\frac{x-5}{x-3}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\frac{x-5}{x-3}$"
-  hint="Factor $(x-5)(x+5)$ over $(x+5)(x-3)$; the common factor $x + 5$ divides out."
+  hint="Factor the numerator as a difference of squares and the denominator as a trinomial, then divide out the common factor."
 >}}
 
 {{< fillin
   question="Simplify: $\frac{t^3-27}{t^2-9}$."
   answer="\frac{t^2+3t+9}{t+3}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\frac{t^2+3t+9}{t+3}$"
-  hint="Use the difference of cubes on the numerator and the difference of squares on the denominator; the common factor $t - 3$ divides out."
+  hint="Factor the numerator as a difference of cubes and the denominator as a difference of squares, then divide out the common factor."
 >}}
 
 ### Simplify rational expressions with opposite factors
@@ -521,25 +535,25 @@ to $-1$.
   question="Simplify: $\frac{a-5}{5-a}$."
   answer="-1"
   answerForm="polynomial"
-  hint="Recognize that $a - 5$ and $5 - a$ are opposites."
+  hint="Compare the numerator and the denominator term by term, then use the property of opposites in a rational expression."
 >}}
 
 {{< fillin
   question="Simplify: $\frac{12-2x}{x^2-36}$."
   answer="-\frac{2}{x+6}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\frac{2}{x+6}$"
-  hint="Factor $\frac{2(6-x)}{(x-6)(x+6)}$; the opposites $6 - x$ and $x - 6$ divide to $-1$."
+  hint="Factor the numerator and the denominator completely, then look for a pair of opposite factors."
 >}}
 
 {{< fillin
   question="Simplify: $\frac{a^2-5a-36}{81-a^2}$."
   answer="-\frac{a+4}{9+a}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\frac{a+4}{9+a}$"
-  hint="Factor $\frac{(a-9)(a+4)}{(9-a)(9+a)}$; the opposites $a - 9$ and $9 - a$ divide to $-1$."
+  hint="Factor the numerator and the denominator completely, then look for a pair of opposite factors."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.1: Simplify Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-1-simplify-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as prose with display equality chains; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.1: Simplify Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-1-simplify-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as prose with display equality chains; omitted the worked examples evaluating $\tfrac{a^2+2ab+b^2}{3ab^2}$ (its first part is kept as an exercise) and simplifying $\tfrac{3b^2-12b+12}{6b^2-24}$; added key-term entries for undefined, simplified rational expression, and opposites, drawn from the section text; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

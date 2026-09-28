@@ -13,7 +13,7 @@ weight: 7
 **By the end of this section, you will be able to:**
 
 - Solve proportions
-- Solve applications using proportions, solve similar figure applications
+- Solve similar figure applications
 {{< /callout >}}
 
 ## Solve proportions
@@ -72,7 +72,8 @@ $$\frac{36}{63} \overset{?}{=} \frac{4}{7}, \qquad \frac{4 \cdot 9}{7 \cdot 9} \
 {{< fillin
   question="Solve the proportion $\tfrac{n}{84} = \tfrac{11}{12}$."
   answer="77"
-  hint="Multiply both sides by $84$ to clear the fraction, then simplify."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD to clear the fractions, then simplify."
 >}}
 
 When we work with proportions, we exclude values that would make either
@@ -97,11 +98,34 @@ You can check that $\tfrac{144}{64} = \tfrac{9}{4}$.
 {{< fillin
   question="Solve the proportion $\tfrac{91}{b} = \tfrac{7}{5}$."
   answer="65"
-  hint="Multiply both sides by the LCD $5b$, remove the common factors, then solve for $b$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD, remove the common factors, then solve for $b$."
 >}}
 
-When a variable appears in a sum inside a denominator, we clear the fraction
-the same way and then distribute.
+When the variable appears in a sum inside a denominator, we clear the
+fractions the same way and then distribute.
+
+**Example.** Solve the proportion $\tfrac{n}{n+14} = \tfrac{5}{7}$.
+
+The value $n = -14$ is excluded. Multiply both sides by the LCD, $7(n+14)$:
+
+$$
+\begin{array}{lrcl}
+& \tfrac{n}{n+14} &=& \tfrac{5}{7} \\[6pt]
+\text{Multiply both sides by the LCD.} & 7(n+14)\!\left(\tfrac{n}{n+14}\right) &=& 7(n+14)\!\left(\tfrac{5}{7}\right) \\[6pt]
+\text{Remove common factors.} & 7n &=& 5(n+14) \\[4pt]
+\text{Simplify.} & 7n &=& 5n + 70 \\[4pt]
+\text{Solve for } n. & 2n &=& 70 \\[4pt]
+& n &=& 35
+\end{array}
+$$
+
+**Check.** Substitute $n = 35$:
+
+$$\frac{35}{35+14} \overset{?}{=} \frac{5}{7}, \qquad \frac{35}{49} \overset{?}{=} \frac{5}{7}, \qquad \frac{5 \cdot 7}{7 \cdot 7} \overset{?}{=} \frac{5}{7}, \qquad \frac{5}{7} = \frac{5}{7}\ \checkmark$$
+
+When the numerators are sums or differences, we clear the fractions the same
+way and distribute.
 
 **Example.** Solve the proportion $\tfrac{p+12}{9} = \tfrac{p-12}{6}$.
 
@@ -122,7 +146,8 @@ You can check that both sides equal $8$ when $p = 60$.
 {{< fillin
   question="Solve the proportion $\tfrac{v+30}{8} = \tfrac{v+66}{12}$."
   answer="42"
-  hint="Multiply both sides by the LCD $24$, distribute, then collect the $v$ terms."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD, distribute, then collect the $v$ terms on one side."
 >}}
 
 ## Solve applications using proportions
@@ -154,7 +179,8 @@ acetaminophen to Zoe.
 {{< fillin
   question="Pediatricians prescribe $5$ milliliters (ml) of acetaminophen for every $25$ pounds of a child's weight. How many milliliters will the doctor prescribe for Emilia, who weighs $60$ pounds? Enter the number of milliliters."
   answer="12"
-  hint="Set up $\tfrac{5}{25} = \tfrac{a}{60}$ with ml on top and pounds on the bottom, then solve for $a$."
+  answerForm="decimal"
+  hint="Write a proportion with milliliters in both numerators and pounds in both denominators, then clear the fractions and solve."
 >}}
 
 **Example.** A $16$-ounce iced caramel macchiato has $230$ calories. How many
@@ -179,7 +205,8 @@ $24$-ounce iced caramel macchiato.
 {{< fillin
   question="At a fast-food restaurant, a $22$-ounce chocolate shake has $850$ calories. How many calories are in their $12$-ounce chocolate shake? Round to the nearest whole number and enter the number of calories."
   answer="464"
-  hint="Set up $\tfrac{850}{22} = \tfrac{c}{12}$ with calories on top and ounces on the bottom, then solve for $c$."
+  answerForm="decimal"
+  hint="Write a proportion with calories in both numerators and ounces in both denominators, then clear the fractions, solve, and round."
 >}}
 
 **Example.** Josiah went to Mexico for spring break and changed \$325 into
@@ -193,18 +220,19 @@ $$
 \begin{array}{lrcl}
 \text{Translate.} & \tfrac{1}{12.54} &=& \tfrac{325}{p} \\[6pt]
 \text{Multiply both sides by the LCD, } 12.54p. & 12.54p\!\left(\tfrac{1}{12.54}\right) &=& 12.54p\!\left(\tfrac{325}{p}\right) \\[6pt]
-\text{Simplify.} & p &=& 4075.5
+\text{Simplify.} & p &=& 4{,}075.5
 \end{array}
 $$
 
-Since \$100 would be about $1{,}254$ pesos and \$325 is a little more than
-$3$ times that, the answer is reasonable. Josiah got $4075.5$ pesos for his
+Since \$100 would be $1{,}254$ pesos and \$325 is a little more than
+$3$ times that, the answer is reasonable. Josiah got $4{,}075.5$ pesos for his
 trip.
 
 {{< fillin
   question="Yurianna is going to Europe and wants to change \$800 into Euros. At the current exchange rate, \$1 US is equal to $0.738$ Euro. How many Euros will she have for her trip? Enter the number of Euros."
   answer="590.4"
-  hint="Set up $\tfrac{1}{0.738} = \tfrac{800}{e}$ with dollars on top and Euros on the bottom, then solve for $e$."
+  answerForm="decimal"
+  hint="Write a proportion with dollars in both numerators and Euros in both denominators, then clear the fractions and solve."
 >}}
 
 In this example we related the number of pesos to the number of dollars using
@@ -233,30 +261,25 @@ $\triangle XYZ$:
 $$\frac{16}{4} = \frac{20}{5} = \frac{12}{3} = 4$$
 
 <div class="ap-figure">
-<svg role="img" aria-label="Two similar triangles. Triangle ABC is the larger triangle with vertex A at bottom left, C at bottom right, and B at the top; side AB is 12, side BC is 16, and side AC is 20. Triangle XYZ is the smaller triangle with the same shape, with vertex X at bottom left, Z at bottom right, and Y at the top; side XY is 3, side YZ is 4, and side XZ is 5." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 162" width="222" height="162" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="126" x2="186" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="111" y="148" text-anchor="middle" font-size="13" fill="currentColor">20</text>
-  <line x1="186" y1="126" x2="144" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="175.9" y="73.9" text-anchor="start" font-size="13" fill="currentColor">16</text>
-  <line x1="144" y1="36" x2="36" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="82.3" y="69.8" text-anchor="end" font-size="13" fill="currentColor">12</text>
-  <text x="23.7" y="134.3" text-anchor="end" font-size="13" fill="currentColor">A</text>
-  <text x="197.8" y="141.5" text-anchor="start" font-size="13" fill="currentColor">C</text>
-  <text x="148.5" y="21.8" text-anchor="middle" font-size="13" fill="currentColor">B</text>
-</svg>
-</div>
-
-<div class="ap-figure">
-<svg role="img" aria-label="The smaller similar triangle XYZ, one quarter the size of triangle ABC, with vertex X at bottom left, Z at bottom right, and Y at the top; side XZ is 5, side YZ is 4, and side XY is 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 95" width="110" height="95" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="58.5" x2="73.5" y2="58.5" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.8" y="80.5" text-anchor="middle" font-size="13" fill="currentColor">5</text>
-  <line x1="73.5" y1="58.5" x2="63" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="79.1" y="40.2" text-anchor="start" font-size="13" fill="currentColor">4</text>
-  <line x1="63" y1="36" x2="36" y2="58.5" stroke="currentColor" stroke-width="1.5"/>
-  <text x="41.8" y="36" text-anchor="end" font-size="13" fill="currentColor">3</text>
-  <text x="23.7" y="66.8" text-anchor="end" font-size="13" fill="currentColor">X</text>
-  <text x="85.3" y="74" text-anchor="start" font-size="13" fill="currentColor">Z</text>
-  <text x="67.5" y="21.8" text-anchor="middle" font-size="13" fill="currentColor">Y</text>
+<svg role="img" aria-label="Two similar triangles side by side. The larger triangle ABC has vertex A at bottom left, C at bottom right, and B at the top; side AB is 12, side BC is 16, and side AC is 20. The smaller triangle XYZ, one quarter the size and the same shape, has vertex X at bottom left, Z at bottom right, and Y at the top; side XY is 3, side YZ is 4, and side XZ is 5." xmlns="http://www.w3.org/2000/svg" viewBox="0 30 334 132" width="334" height="132" font-family="Helvetica, Arial, sans-serif">
+  <line x1="36" y1="130" x2="90" y2="58" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="90" y1="58" x2="186" y2="130" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="186" y1="130" x2="36" y2="130" stroke="currentColor" stroke-width="1.5"/>
+  <text x="55" y="92.5" text-anchor="end" font-size="13" fill="currentColor">12</text>
+  <text x="144" y="90.5" text-anchor="start" font-size="13" fill="currentColor">16</text>
+  <text x="111" y="150.5" text-anchor="middle" font-size="13" fill="currentColor">20</text>
+  <text x="25.6" y="138.2" text-anchor="end" font-size="13" fill="currentColor">A</text>
+  <text x="86.9" y="51.9" text-anchor="middle" font-size="13" fill="currentColor">B</text>
+  <text x="196.6" y="137.6" text-anchor="start" font-size="13" fill="currentColor">C</text>
+  <line x1="258" y1="130" x2="271.5" y2="112" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="271.5" y1="112" x2="295.5" y2="130" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="295.5" y1="130" x2="258" y2="130" stroke="currentColor" stroke-width="1.5"/>
+  <text x="256.8" y="119.5" text-anchor="end" font-size="13" fill="currentColor">3</text>
+  <text x="289.5" y="117.5" text-anchor="start" font-size="13" fill="currentColor">4</text>
+  <text x="276.8" y="150.5" text-anchor="middle" font-size="13" fill="currentColor">5</text>
+  <text x="247.6" y="138.2" text-anchor="end" font-size="13" fill="currentColor">X</text>
+  <text x="268.4" y="105.9" text-anchor="middle" font-size="13" fill="currentColor">Y</text>
+  <text x="306.1" y="137.6" text-anchor="start" font-size="13" fill="currentColor">Z</text>
 </svg>
 </div>
 
@@ -268,6 +291,10 @@ $$\frac{16}{4} = \frac{20}{5} = \frac{12}{3} = 4$$
   $$m\angle A = m\angle X, \quad m\angle B = m\angle Y, \quad m\angle C = m\angle Z$$
 
   $$\frac{a}{x} = \frac{b}{y} = \frac{c}{z}$$
+
+  Here $a$, $b$, and $c$ are the lengths of the sides opposite angles $A$,
+  $B$, and $C$, and $x$, $y$, and $z$ are the lengths of the sides opposite
+  angles $X$, $Y$, and $Z$.
 {{< /callout >}}
 
 To solve applications with similar figures, we follow the same
@@ -280,30 +307,25 @@ sentence.
 two sides of each triangle are given. Find the lengths of the third sides.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Two similar triangles. In the larger triangle ABC, side AB is 4, side BC is a (the unknown third side), and side AC is 3.2. In the smaller triangle XYZ, side XY is y (the unknown third side), side YZ is 3, and side XZ is 4.5." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 138" width="192" height="138" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="102" x2="156" y2="102" stroke="currentColor" stroke-width="1.5"/>
-  <text x="96" y="124" text-anchor="middle" font-size="13" fill="currentColor">a</text>
-  <line x1="156" y1="102" x2="72" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="121.4" y="57.6" text-anchor="start" font-size="13" fill="currentColor">4</text>
-  <line x1="72" y1="36" x2="36" y2="102" stroke="currentColor" stroke-width="1.5"/>
-  <text x="43.5" y="61.3" text-anchor="end" font-size="13" fill="currentColor">3.2</text>
-  <text x="24" y="117.1" text-anchor="end" font-size="13" fill="currentColor">C</text>
-  <text x="168.4" y="110" text-anchor="start" font-size="13" fill="currentColor">B</text>
-  <text x="67.6" y="21.8" text-anchor="middle" font-size="13" fill="currentColor">A</text>
-</svg>
-</div>
-
-<div class="ap-figure">
-<svg role="img" aria-label="The smaller similar triangle XYZ, with side XZ 4.5, side YZ 3, and the unknown side XY labeled y." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 115" width="150" height="115" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="78.9" x2="114" y2="78.9" stroke="currentColor" stroke-width="1.5"/>
-  <text x="75" y="100.9" text-anchor="middle" font-size="13" fill="currentColor">4.5</text>
-  <line x1="114" y1="78.9" x2="59.4" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="94.1" y="46" text-anchor="start" font-size="13" fill="currentColor">3</text>
-  <line x1="59.4" y1="36" x2="36" y2="78.9" stroke="currentColor" stroke-width="1.5"/>
-  <text x="37.2" y="49.7" text-anchor="end" font-size="13" fill="currentColor">y</text>
-  <text x="24" y="94" text-anchor="end" font-size="13" fill="currentColor">Z</text>
-  <text x="126.4" y="86.9" text-anchor="start" font-size="13" fill="currentColor">Y</text>
-  <text x="55" y="21.8" text-anchor="middle" font-size="13" fill="currentColor">X</text>
+<svg role="img" aria-label="Two similar triangles side by side. The larger triangle ABC has vertex C at bottom left, B at bottom right, and A at the top; side AB is 4, side AC is 3.2, and the third side BC is labeled a. The smaller triangle XYZ has vertex Z at bottom left, Y at bottom right, and X at the top; side XY is 3, side YZ is 4.5, and the third side XZ is labeled y." xmlns="http://www.w3.org/2000/svg" viewBox="0 58 344 92" width="344" height="92" font-family="Helvetica, Arial, sans-serif">
+  <line x1="86.4" y1="80.6" x2="156" y2="120" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="156" y1="120" x2="36" y2="120" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="36" y1="120" x2="86.4" y2="80.6" stroke="currentColor" stroke-width="1.5"/>
+  <text x="126.1" y="96.1" text-anchor="start" font-size="13" fill="currentColor">4</text>
+  <text x="96" y="140.5" text-anchor="middle" font-size="13" font-style="italic" fill="currentColor">a</text>
+  <text x="55" y="96.9" text-anchor="end" font-size="13" fill="currentColor">3.2</text>
+  <text x="83.8" y="74.4" text-anchor="middle" font-size="13" fill="currentColor">A</text>
+  <text x="166.8" y="126.7" text-anchor="start" font-size="13" fill="currentColor">B</text>
+  <text x="25.3" y="127" text-anchor="end" font-size="13" fill="currentColor">C</text>
+  <line x1="253.8" y1="90.4" x2="306" y2="120" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="306" y1="120" x2="216" y2="120" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="216" y1="120" x2="253.8" y2="90.4" stroke="currentColor" stroke-width="1.5"/>
+  <text x="284.8" y="101" text-anchor="start" font-size="13" fill="currentColor">3</text>
+  <text x="261" y="140.5" text-anchor="middle" font-size="13" fill="currentColor">4.5</text>
+  <text x="228.7" y="101.8" text-anchor="end" font-size="13" font-style="italic" fill="currentColor">y</text>
+  <text x="251.2" y="84.2" text-anchor="middle" font-size="13" fill="currentColor">X</text>
+  <text x="316.8" y="126.7" text-anchor="start" font-size="13" fill="currentColor">Y</text>
+  <text x="205.3" y="127" text-anchor="end" font-size="13" fill="currentColor">Z</text>
 </svg>
 </div>
 
@@ -329,9 +351,10 @@ $4(2.4) = 3.2(3)$ gives $9.6 = 9.6\ \checkmark$. The third side of
 $\triangle ABC$ is $6$ and the third side of $\triangle XYZ$ is $2.4$.
 
 {{< fillin
-  question="$\triangle ABC$ is similar to $\triangle XYZ$. In the smaller triangle $AB = 17$ and the unknown side $BC = a$; in the larger triangle the corresponding sides are $XY = 25.5$ and $YZ = 12$. Using $\tfrac{17}{25.5} = \tfrac{a}{12}$, find the length of side $a$."
+  question="$\triangle ABC$ is similar to $\triangle XYZ$. In the smaller triangle $AB = 17$ and the unknown side $BC = a$; in the larger triangle the corresponding sides are $XY = 25.5$ and $YZ = 12$. Find the length of side $a$."
   answer="8"
-  hint="Cross-multiply: $25.5\,a = 17 \cdot 12$, then divide both sides by $25.5$."
+  answerForm="decimal"
+  hint="Write a proportion of corresponding sides, pairing $AB$ with $XY$ and $BC$ with $YZ$, then clear the fractions and solve."
 >}}
 
 The next example shows how similar triangles are used with maps.
@@ -363,7 +386,8 @@ $351$ miles.
 {{< fillin
   question="On a map, Seattle, Portland, and Boise form a triangle. The map distance from Seattle to Boise is $4$ inches and from Seattle to Portland is $1.5$ inches. If the actual distance from Seattle to Boise is $400$ miles, find the distance from Seattle to Portland. Enter the number of miles."
   answer="150"
-  hint="Set up $\tfrac{x}{1.5} = \tfrac{400}{4}$ with miles on top and inches on the bottom, then solve for $x$."
+  answerForm="decimal"
+  hint="Write a proportion with miles in both numerators and inches in both denominators, then clear the fractions and solve."
 >}}
 
 We can also use similar figures to find heights that we cannot directly
@@ -392,7 +416,8 @@ tall.
 {{< fillin
   question="A telephone pole casts a shadow that is $50$ feet long. Nearby, an $8$-foot tall traffic sign casts a shadow that is $10$ feet long. How tall is the telephone pole? Enter the height in feet."
   answer="40"
-  hint="Set up $\tfrac{h}{50} = \tfrac{8}{10}$ (height over shadow for each object), then solve for $h$."
+  answerForm="decimal"
+  hint="The pole and its shadow form a triangle similar to the sign and its shadow: write a proportion of height over shadow length for each, then solve."
 >}}
 
 ## Key terms
@@ -411,40 +436,51 @@ equal and their corresponding sides are in the same ratio.
 {{< fillin
   question="Solve the proportion $\tfrac{x}{56} = \tfrac{7}{8}$."
   answer="49"
-  hint="Multiply both sides by $56$, the LCD, then simplify $56 \cdot \tfrac{7}{8}$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD to isolate $x$, then simplify."
 >}}
 
 {{< fillin
   question="Solve the proportion $\tfrac{98}{154} = \tfrac{-7}{p}$."
   answer="-11"
-  hint="Cross-multiply: $98p = 154 \cdot (-7)$, then divide both sides by $98$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD, remove the common factors, then solve for $p$."
 >}}
-
-### Solve applications using proportions, solve similar figure applications
 
 {{< fillin
   question="Janice is traveling to Canada and will change \$250 US dollars into Canadian dollars. At the current exchange rate, \$1 US is equal to $1.01$ Canadian dollars. How many Canadian dollars will she get for her trip? Enter the number of Canadian dollars."
   answer="252.5"
-  answerDisplay="\$252.50"
-  hint="Set up $\tfrac{1}{1.01} = \tfrac{250}{c}$ with dollars on top and Canadian dollars on the bottom, then solve for $c$."
+  answerForm="decimal"
+  answerDisplay="$252.50$ Canadian dollars"
+  hint="Write a proportion with US dollars in both numerators and Canadian dollars in both denominators, then clear the fractions and solve."
 >}}
 
 {{< fillin
-  question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for $2$ points on her weight-loss program. Her husband, Joe, can have $3$ points of oatmeal for breakfast. How much oatmeal can he have? Enter the amount in cups as a fraction."
+  question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for $2$ points on her weight-loss program. Her husband, Joe, can have $3$ points of oatmeal for breakfast. How much oatmeal can he have? Enter the amount in cups as a fraction in lowest terms."
   answer="\tfrac{3}{4}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{4}$ cup"
-  hint="Find cups per point first: $\tfrac{1}{2} \div 2$, then multiply by $3$ points."
+  hint="Write a proportion with cups in both numerators and points in both denominators, then clear the fractions and solve."
+>}}
+
+### Solve similar figure applications
+
+{{< fillin
+  question="A $2$-foot-tall dog casts a $3$-foot shadow at the same time a cat casts a $1$-foot shadow. How tall is the cat? Enter the height in feet as a fraction in lowest terms."
+  answer="\tfrac{2}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{2}{3}$ foot (8 inches)"
+  hint="The two animals and their shadows form similar triangles: write a proportion of height over shadow length for each, then solve."
 >}}
 
 {{< fillin
-  question="A $2$-foot-tall dog casts a $3$-foot shadow at the same time a cat casts a $1$-foot shadow. How tall is the cat? Enter the height in feet as a fraction."
-  answer="\tfrac{2}{3}"
-  answerForm="fraction"
-  answerDisplay="$\tfrac{2}{3}$ foot (8 inches)"
-  hint="Set up $\tfrac{2}{3} = \tfrac{h}{1}$ (height over shadow for each animal), then solve for $h$."
+  question="The tower portion of a windmill is $212$ feet tall. A six foot tall person standing next to the tower casts a seven foot shadow. How long is the windmill's shadow? Round to the nearest tenth and enter the length in feet."
+  answer="247.3"
+  answerForm="decimal"
+  answerDisplay="$247.3$ feet"
+  hint="The tower and the person, with their shadows, form similar triangles: write a proportion of height over shadow length for each, then solve and round."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.7: Solve Proportion and Similar Figure Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-7-solve-proportion-and-similar-figure-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedure as a proportion strategy paragraph, recreated the similar-triangle and map figures with the accessible `<Figure />` component; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.7: Solve Proportion and Similar Figure Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-7-solve-proportion-and-similar-figure-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, stated the "Solve geometry applications" procedure as a strategy sentence, redrew the two pairs of similar triangles as accessible inline figures, and gave the measurements of the map, shadow, and similar-triangle Try It figures in the text in place of those figures; omitted the Be Prepared quiz, Key Concepts summary, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted selected practice problems ("Try Its") into interactive exercises with instant feedback.</small>

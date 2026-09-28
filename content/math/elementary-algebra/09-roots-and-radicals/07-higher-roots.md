@@ -28,6 +28,32 @@ $n^3$ and say "$n$ cubed," $n^4$ and say "$n$ to the fourth," and $n^5$ and say
 "$n$ to the fifth." The terms "squared" and "cubed" come from the formulas for
 the area of a square and the volume of a cube.
 
+It will be helpful to have a table of the powers of the integers from $-5$ to $5$.
+
+| Number | Square | Cube | Fourth power | Fifth power |
+| --- | --- | --- | --- | --- |
+| $n$ | $n^2$ | $n^3$ | $n^4$ | $n^5$ |
+| $1$ | $1$ | $1$ | $1$ | $1$ |
+| $2$ | $4$ | $8$ | $16$ | $32$ |
+| $3$ | $9$ | $27$ | $81$ | $243$ |
+| $4$ | $16$ | $64$ | $256$ | $1{,}024$ |
+| $5$ | $25$ | $125$ | $625$ | $3{,}125$ |
+| $x$ | $x^2$ | $x^3$ | $x^4$ | $x^5$ |
+| $x^2$ | $x^4$ | $x^6$ | $x^8$ | $x^{10}$ |
+
+| Number | Square | Cube | Fourth power | Fifth power |
+| --- | --- | --- | --- | --- |
+| $n$ | $n^2$ | $n^3$ | $n^4$ | $n^5$ |
+| $-1$ | $1$ | $-1$ | $1$ | $-1$ |
+| $-2$ | $4$ | $-8$ | $16$ | $-32$ |
+| $-3$ | $9$ | $-27$ | $81$ | $-243$ |
+| $-4$ | $16$ | $-64$ | $256$ | $-1{,}024$ |
+| $-5$ | $25$ | $-125$ | $625$ | $-3{,}125$ |
+
+Notice the signs in the tables. All powers of positive numbers are positive, of
+course. But when we have a negative number, the even powers are positive and the
+odd powers are negative.
+
 Earlier in this chapter we defined the square root of a number: if $n^2 = m$,
 then $n$ is a square root of $m$. And we used the notation $\sqrt{m}$ to denote
 the **principal square root**. So $\sqrt{m} \ge 0$ always. We will now extend the
@@ -40,7 +66,8 @@ definition to higher roots.
 {{< /callout >}}
 
 We do not write the index for a square root. Just like we use the word "cubed"
-for $b^3$, we use the term "cube root" for $\sqrt[3]{a}$. For example:
+for $b^3$, we use the term "cube root" for $\sqrt[3]{a}$. We refer to the table
+of powers to help us find higher roots:
 
 $$
 \begin{array}{lrcl}
@@ -83,7 +110,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{27}$."
   answer="3"
-  answerForm="simplified-radical"
+  answerForm="decimal"
   answerDisplay="$3$"
   hint="What number cubed equals $27$?"
 >}}
@@ -98,7 +125,7 @@ For (c), the index is odd again:
 $$
 \begin{array}{lrcl}
 \text{Since } (-4)^3 = -64. & \sqrt[3]{-64} &=& -4 \\[4pt]
-\text{No real number to the fourth power is } -16. & \sqrt[4]{-16} && \text{is not a real number.} \\[4pt]
+\text{No real number to the fourth power is } {-16}. & \sqrt[4]{-16} && \text{is not a real number.} \\[4pt]
 \text{Since } (-3)^5 = -243. & \sqrt[5]{-243} &=& -3
 \end{array}
 $$
@@ -154,7 +181,7 @@ $$
   answer="|m|"
   answerForm="simplified-radical"
   answerDisplay="$|m|$"
-  hint="The index is even, so use absolute value signs to guarantee the positive root."
+  hint="Use the rule for $\sqrt[n]{a^n}$, and check whether the index is odd or even."
 >}}
 
 **Example.** Simplify: (a) $\sqrt[3]{y^{18}}$, (b) $\sqrt[4]{z^8}$.
@@ -173,7 +200,7 @@ $$
   answer="|u^3|"
   answerForm="simplified-radical"
   answerDisplay="$|u^3|$"
-  hint="Write $u^{12}$ as $(u^3)^4$. The index is even, so use an absolute value sign."
+  hint="Write the radicand as a fourth power, then use the rule for $\sqrt[n]{a^n}$; check whether the index is odd or even."
 >}}
 
 **Example.** Simplify: (a) $\sqrt[3]{64p^6}$, (b) $\sqrt[4]{16q^{12}}$.
@@ -192,7 +219,7 @@ $$
   answer="3x^9"
   answerForm="simplified-radical"
   answerDisplay="$3x^9$"
-  hint="Write $27x^{27}$ as $(3x^9)^3$. The index is odd, so no absolute value is needed."
+  hint="Write the radicand as a perfect cube, then take the cube root."
 >}}
 
 ## Use the Product Property to simplify expressions with higher roots
@@ -230,11 +257,11 @@ $$
 $$
 
 {{< fillin
-  question="Simplify: $\sqrt[3]{y^6}$."
-  answer="y^2"
+  question="Simplify: $\sqrt[3]{z^5}$."
+  answer="z\sqrt[3]{z^2}"
   answerForm="simplified-radical"
-  answerDisplay="$y^2$"
-  hint="Write $y^6$ as $(y^2)^3$; the index is odd."
+  answerDisplay="$z\sqrt[3]{z^2}$"
+  hint="Rewrite the radicand using its largest perfect cube factor, then use the Product Property."
 >}}
 
 **Example.** Simplify: (a) $\sqrt[3]{16}$, (b) $\sqrt[4]{243}$.
@@ -258,7 +285,7 @@ $$
   answer="3\sqrt[3]{3}"
   answerForm="simplified-radical"
   answerDisplay="$3\sqrt[3]{3}$"
-  hint="The largest perfect cube factor of $81$ is $27 = 3^3$."
+  hint="Rewrite $81$ using its largest perfect cube factor, then use the Product Property."
 >}}
 
 Don't forget to use the absolute value signs when taking an even root of an
@@ -284,7 +311,7 @@ $$
   answer="3p^3\sqrt[3]{2p}"
   answerForm="simplified-radical"
   answerDisplay="$3p^3\sqrt[3]{2p}$"
-  hint="Write $54p^{10}$ as $3^3 p^9 \cdot 2p$; the index is odd, so no absolute value is needed."
+  hint="Rewrite the radicand using its largest perfect cube factors, number and variable, then use the Product Property."
 >}}
 
 **Example.** Simplify: (a) $\sqrt[3]{-27}$, (b) $\sqrt[4]{-16}$.
@@ -302,7 +329,7 @@ $$
   answer="-3\sqrt[3]{4}"
   answerForm="simplified-radical"
   answerDisplay="$-3\sqrt[3]{4}$"
-  hint="Write $-108$ as $(-3)^3 \cdot 4$. The index is odd, so the root is real."
+  hint="Rewrite the radicand as a product using its largest perfect cube factor, then use the Product Property."
 >}}
 
 ## Use the Quotient Property to simplify expressions with higher roots
@@ -328,7 +355,7 @@ $$
   answer="|x|"
   answerForm="simplified-radical"
   answerDisplay="$|x|$"
-  hint="Divide inside the radical first: $\tfrac{x^7}{x^3} = x^4$. The index is even, so use an absolute value."
+  hint="Simplify the fraction under the radical first, then take the fourth root; check whether the index is odd or even."
 >}}
 
 Previously, we used the Quotient Property "in reverse" to simplify square roots.
@@ -372,7 +399,7 @@ $$
   answer="-\sqrt[3]{266}"
   answerForm="simplified-radical"
   answerDisplay="$-\sqrt[3]{266}$"
-  hint="Write as one radical and divide: $\tfrac{-532}{2} = -266$. It has no perfect cube factor."
+  hint="Use the Quotient Property to write one radical, simplify the fraction, then look for a perfect cube factor."
 >}}
 
 If the fraction inside the radical cannot be simplified, we use the first form of
@@ -404,7 +431,7 @@ $$
   answer="\tfrac{3c^3\sqrt[3]{4c}}{d^2}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{3c^3\sqrt[3]{4c}}{d^2}$"
-  hint="Use the Quotient Property. Write $108c^{10}$ as $27c^9 \cdot 4c$ and $d^6$ as $(d^2)^3$."
+  hint="The fraction cannot be simplified, so use the Quotient Property to write two radicals, then simplify each using perfect cube factors."
 >}}
 
 ## Add and subtract higher roots
@@ -438,7 +465,7 @@ $$
   answer="2\sqrt[5]{3x}"
   answerForm="simplified-radical"
   answerDisplay="$2\sqrt[5]{3x}$"
-  hint="The radicals are like, so add the coefficients $1 + 1$."
+  hint="The radicals are like: combine them the way you combine like terms."
 >}}
 
 When an expression does not appear to have like radicals, we will simplify each
@@ -467,30 +494,40 @@ $$
   answer="\sqrt[3]{3}"
   answerForm="simplified-radical"
   answerDisplay="$\sqrt[3]{3}$"
-  hint="Simplify each: $\sqrt[3]{192} = 4\sqrt[3]{3}$ and $\sqrt[3]{81} = 3\sqrt[3]{3}$, then combine."
+  hint="Simplify each radical using its largest perfect cube factor, then combine like radicals."
 >}}
 
-**Example.** Simplify: $\sqrt[3]{24x^4} - \sqrt[3]{-81x^7}$.
+**Example.** Simplify: (a) $\sqrt[3]{24x^4} - \sqrt[3]{-81x^7}$,
+(b) $\sqrt[4]{162y^9} + \sqrt[4]{512y^5}$.
 
 $$
 \begin{array}{lrcl}
 \text{Rewrite each radicand using perfect cube factors.} & \sqrt[3]{24x^4} - \sqrt[3]{-81x^7} &=& \sqrt[3]{8x^3} \cdot \sqrt[3]{3x} - \sqrt[3]{-27x^6} \cdot \sqrt[3]{3x} \\[4pt]
 \text{Rewrite the perfect cubes.} &&& \sqrt[3]{(2x)^3} \sqrt[3]{3x} - \sqrt[3]{(-3x^2)^3} \sqrt[3]{3x} \\[4pt]
 \text{Simplify the radicals where possible.} &&& 2x\sqrt[3]{3x} - \left(-3x^2\sqrt[3]{3x}\right) \\[4pt]
-\text{Combine like radicals.} &&& 2x\sqrt[3]{3x} + 3x^2\sqrt[3]{3x}
+\text{Simplify.} &&& 2x\sqrt[3]{3x} + 3x^2\sqrt[3]{3x}
+\end{array}
+$$
+
+$$
+\begin{array}{lrcl}
+\text{Rewrite each radicand using perfect fourth power factors.} & \sqrt[4]{162y^9} + \sqrt[4]{512y^5} &=& \sqrt[4]{81y^8} \cdot \sqrt[4]{2y} + \sqrt[4]{256y^4} \cdot \sqrt[4]{2y} \\[4pt]
+\text{Rewrite the perfect fourth powers.} &&& \sqrt[4]{(3y^2)^4} \cdot \sqrt[4]{2y} + \sqrt[4]{(4y)^4} \cdot \sqrt[4]{2y} \\[4pt]
+\text{Simplify the radicals where possible.} &&& 3y^2\sqrt[4]{2y} + 4|y|\sqrt[4]{2y}
 \end{array}
 $$
 
 {{< fillin
   question="Simplify: $\sqrt[3]{32y^5} - \sqrt[3]{-108y^8}$."
   answer="2y\sqrt[3]{4y^2} + 3y^2\sqrt[3]{4y^2}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical distributed no-like-terms"
   answerDisplay="$2y\sqrt[3]{4y^2} + 3y^2\sqrt[3]{4y^2}$"
-  hint="Simplify each radical: $\sqrt[3]{32y^5} = 2y\sqrt[3]{4y^2}$ and $\sqrt[3]{-108y^8} = -3y^2\sqrt[3]{4y^2}$."
+  hint="Rewrite each radicand using perfect cube factors, simplify each radical, then simplify the subtraction."
 >}}
 
 ## Key terms
 
+**$n$th root of a number** — if $b^n = a$, then $b$ is an $n$th root of $a$.
 **index** — the number $n$ in the radical $\sqrt[n]{a}$ that tells which root is
 being taken; for a square root the index $2$ is not written. **principal $n$th
 root** — the value $\sqrt[n]{a}$, which is non-negative when the index is even.
@@ -508,7 +545,7 @@ $\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
 {{< fillin
   question="Simplify: $\sqrt[6]{64}$."
   answer="2"
-  answerForm="simplified-radical"
+  answerForm="decimal"
   answerDisplay="$2$"
   hint="Find the number whose sixth power is $64$."
 >}}
@@ -516,7 +553,7 @@ $\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
 {{< multiplechoice
   question="Simplify: $\sqrt[6]{-64}$."
   answer="not a real number"
-  hint="The index is even. Can a real number raised to the sixth power be negative?"
+  hint="Compare the index and the sign of the radicand with the Properties of $\sqrt[n]{a}$."
 >}}
 not a real number
 -2
@@ -528,7 +565,7 @@ not a real number
   answer="|k|"
   answerForm="simplified-radical"
   answerDisplay="$|k|$"
-  hint="The index is even, so use an absolute value sign to guarantee the positive root."
+  hint="Use the rule for $\sqrt[n]{a^n}$, and check whether the index is odd or even."
 >}}
 
 {{< fillin
@@ -536,7 +573,7 @@ not a real number
   answer="|p|"
   answerForm="simplified-radical"
   answerDisplay="$|p|$"
-  hint="The index is even, so use an absolute value sign to guarantee the positive root."
+  hint="Use the rule for $\sqrt[n]{a^n}$, and check whether the index is odd or even."
 >}}
 
 ### Use the Product Property to simplify expressions with higher roots
@@ -546,7 +583,7 @@ not a real number
   answer="s^2\sqrt[4]{s^2}"
   answerForm="simplified-radical"
   answerDisplay="$s^2\sqrt[4]{s^2}$"
-  hint="Write $s^{10}$ as $(s^2)^4 \cdot s^2$, then take the fourth root of the perfect fourth power."
+  hint="Rewrite the radicand using its greatest perfect fourth power factor, then use the Product Property."
 >}}
 
 {{< fillin
@@ -554,7 +591,7 @@ not a real number
   answer="2|y|\sqrt[4]{3y^2}"
   answerForm="simplified-radical"
   answerDisplay="$2|y|\sqrt[4]{3y^2}$"
-  hint="Write $48y^6$ as $(2y)^4 \cdot 3y^2$; the index is even, so use an absolute value sign."
+  hint="Rewrite the radicand using its greatest perfect fourth power factors, then use the Product Property; check whether the index is odd or even."
 >}}
 
 {{< fillin
@@ -562,7 +599,7 @@ not a real number
   answer="5\sqrt[3]{5}"
   answerForm="simplified-radical"
   answerDisplay="$5\sqrt[3]{5}$"
-  hint="Write $625$ as $5^3 \cdot 5$, the greatest perfect cube factor."
+  hint="Rewrite $625$ using its greatest perfect cube factor, then use the Product Property."
 >}}
 
 {{< fillin
@@ -570,7 +607,7 @@ not a real number
   answer="2\sqrt[6]{2}"
   answerForm="simplified-radical"
   answerDisplay="$2\sqrt[6]{2}$"
-  hint="Write $128$ as $2^6 \cdot 2$, the greatest perfect sixth-power factor."
+  hint="Rewrite $128$ using its greatest perfect sixth power factor, then use the Product Property."
 >}}
 
 ### Use the Quotient Property to simplify expressions with higher roots
@@ -580,7 +617,7 @@ not a real number
   answer="2x\sqrt[5]{2x}"
   answerForm="simplified-radical"
   answerDisplay="$2x\sqrt[5]{2x}$"
-  hint="Write as one radical and divide: $\tfrac{128x^8}{2x^2}=64x^6$. Then factor out the perfect fifth power."
+  hint="Use the Quotient Property to write one radical, simplify the fraction, then remove the perfect fifth power factors."
 >}}
 
 {{< fillin
@@ -588,7 +625,7 @@ not a real number
   answer="2|u|\sqrt[6]{\tfrac{2u}{v^3}}"
   answerForm="simplified-radical"
   answerDisplay="$2|u|\sqrt[6]{\tfrac{2u}{v^3}}$"
-  hint="The fraction under the radical will not reduce, and $v^3$ is not a perfect sixth power — so keep it under one radical. Rewrite $128u^7$ as $(2u)^6 \cdot 2u$ and use the Product Property to bring $2u$ out."
+  hint="The fraction under the radical cannot be reduced, so keep it under one radical and use the Product Property to remove the perfect sixth power factors of its numerator."
 >}}
 
 {{< fillin
@@ -596,7 +633,7 @@ not a real number
   answer="d"
   answerForm="simplified-radical"
   answerDisplay="$d$"
-  hint="Simplify the fraction under the radical first: $\tfrac{d^{12}}{d^7}=d^5$."
+  hint="Simplify the fraction under the radical first, then take the fifth root."
 >}}
 
 {{< fillin
@@ -604,7 +641,7 @@ not a real number
   answer="|m|"
   answerForm="simplified-radical"
   answerDisplay="$|m|$"
-  hint="Simplify the fraction under the radical first: $\tfrac{m^{12}}{m^4}=m^8$. The index is even, so use an absolute value sign."
+  hint="Simplify the fraction under the radical first, then take the eighth root; check whether the index is odd or even."
 >}}
 
 ### Add and subtract higher roots
@@ -614,15 +651,15 @@ not a real number
   answer="2\sqrt[4]{2}"
   answerForm="simplified-radical"
   answerDisplay="$2\sqrt[4]{2}$"
-  hint="Simplify each radical first: $\sqrt[4]{512}=4\sqrt[4]{2}$ and $\sqrt[4]{32}=2\sqrt[4]{2}$, then combine."
+  hint="Simplify each radical using its greatest perfect fourth power factor, then combine like radicals."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt[4]{486u^7} + \sqrt[4]{768u^3}$."
   answer="3|u|\sqrt[4]{6u^3} + 4\sqrt[4]{3u^3}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$3|u|\sqrt[4]{6u^3} + 4\sqrt[4]{3u^3}$"
-  hint="Rewrite each radicand using perfect fourth power factors; the resulting radicals are not like, so leave them as a sum."
+  hint="Simplify each radical using its greatest perfect fourth power factors, then combine only like radicals."
 >}}
 
 {{< fillin
@@ -630,7 +667,7 @@ not a real number
   answer="2\sqrt[3]{15q}"
   answerForm="simplified-radical"
   answerDisplay="$2\sqrt[3]{15q}$"
-  hint="The radicals are already like, so add the coefficients $1+1$."
+  hint="The radicals are like: combine them the way you combine like terms."
 >}}
 
 {{< fillin
@@ -638,9 +675,9 @@ not a real number
   answer="-4\sqrt[4]{27}"
   answerForm="simplified-radical"
   answerDisplay="$-4\sqrt[4]{27}$"
-  hint="The radicals are like, so subtract the coefficients $2-6$."
+  hint="The radicals are like: combine them the way you combine like terms."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.7 Higher Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-7-higher-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.7 Higher Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-7-higher-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; set the figure of first through fifth powers of the integers from $-5$ to $5$ as two text tables; replaced the Key Concepts summary (its properties stand in the callouts) with a Key terms list drawn from the module glossary and the Product and Quotient Properties; omitted the repeated row of powers of $-2$, the Be Prepared quiz, Self Check checklist, media links, unselected practice problems, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
