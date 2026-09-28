@@ -54,8 +54,8 @@ key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt
 (`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
 here on September 27: both knowledge checks (1 and 4); chapter 8 swept.
-Factoring asks take `factored-completely` (chapter 7 swept); knowledge
-check 6–10 has 11 left.
+Factoring asks take `factored-completely` (chapter 7 and knowledge check
+6–10 swept).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -68,9 +68,9 @@ check 6–10 has 11 left.
 | [x] | 7. Factoring | 6 | 394 | 1365–1377 | 4b90cb3 | One Opus fixer per section (132–178k tokens each, ~933k); one Opus grader agent (145k) added `factored-completely`: `factored` is shape-only, so "Factor completely" accepted `(2x+4)(x+2)` and `2(x^2+4x+4)` for `2(x+2)^2` (parent find). All 142 of the chapter's factoring asks now take it (101 swapped by the parent, 41 by the 7.4 fixer). Three Fable solvers (~250k) for 180 items, 180/180 agree. Hint leaks (the GCF, the factor pair, the sign conclusion, the trinomial left inside) and retype are the top classes. 7.4 keyed a Try It `(12p-3q)(12p+3q)`, which is not factored completely (source `9(4p-q)(4p+q)`). The source's 9x²+50x+25 non-example with its two Try Its (7.4, parent) and 10x²−34x−24 example (7.5) were restored. 7.3 prints the source's 15y² GCF step as 5y² (erratum 1367). Open: `2(-x-2)` grades correct against `-2(x+2)` (sign convention, not completeness). Floors: replayed −19 (answerForm sweep). |
 | [x] | 8. Rational Expressions and Equations | 9 | 241 | 1378–1390 | bfebd95 | Run with chapter 9 (September 27, 2026): one Opus fixer per section, all 17 in a rolling window of about 12 (112–225k tokens each, ~2.6M for the 17); one Opus grader agent (~277k) took the parent's pre-launch probes and six fixer relays (35483b2); three Fable solvers (~330k) for 166 items, 166/166 agree. Hint leaks (printing the factorization, the LCD, the cleared equation) and the `reduced-fraction` sweep are the top classes; no wrong keys. 8.8's six body fill-ins re-asked the worked example above them and are now its source Try Its; 8.7's similar triangles are redrawn to scale with the source's labels and its "Solve similar figure applications" objective is restored; 8.9's Try Its ask for the equation again (`xy=16` now grades equal to `y=\frac{16}{x}`); 8.6's no-solution MCs no longer print the cleared equation. Floors: replayed −82 across both chapters (answerForm sweep). |
 | [x] | 9. Roots and Radicals | 8 | 263 | 1391–1404 | bfebd95 | Run with chapter 8. Parent probe before launch: `simplified-radical` passed unreduced fractions (the printed `\frac{4+2\sqrt5}{2}` for `2+\sqrt5`) and `no-like-terms` failed the key `3+2\sqrt2` against itself. The 9.3 fixer found a pre-existing false positive across all four math books: the engine's N() drops a square root over a variable, so `9x` graded correct for `9\sqrt{x}`; the 9.7 fixer found dropped absolute values passing. All fixed in 35483b2; the parent then added `no-like-terms` to the 17 radical-sum keys. Hint leaks (the perfect-square factor, the conjugate product) were 151 of the fixes. 9.6's source Try It √x+3=√(x+5) is restored as a multiple choice (answer "no solution"). Source keys wrong: ∛(162/6) keyed 3∛6 (1399), 6p√102/q² for 6p/q² (1397), four conjugate quotients squared as a whole fraction (1396). |
-| [ ] | 10. Quadratic Equations | 5 | | | | |
-| [ ] | KC `knowledge-check-01-05` | — | | | | |
-| [ ] | KC `knowledge-check-06-10` | — | | | | |
+| [x] | 10. Quadratic Equations | 5 | 133 | 1405–1415 | a424eab | Run with both knowledge checks and Intermediate Algebra chapters 1–2 (September 28, 2026): one Opus fixer per section (158–238k tokens each), one Opus grader agent (~540k over two rounds) fed by parent probes and fixer relays (bed8a48), two Opus figure checkers (~390k), six Fable solvers (~515k) for 471 items, 471/471 agree after realigning a two-item hash swap. Grader: `\pm` answers grade as their branches, unions reach the value forms, the other solution-set notation is `form`, and a `(6u)^{-3}` input that froze the engine is fixed. Solution lists with a radical take `simplified-radical` (alone on a radical-fraction key; `lowest-terms` fails it against itself). 10.4 rounds each length from its exact solution where the source rounds first (20.6, 18.9; erratum 1411, stems pinned). 10.3's 14m²+3m=11 keeps the source's Quadratic Formula key (the worked example above argues it). 10.5's Practice parabola, drawn three times in the body, became source y=−x²−4x+2. |
+| [x] | KC `knowledge-check-01-05` | — | 94 | 1416–1420 | a424eab | Four Opus fixers by chapter block (122–189k), one Opus second checker for both checks (141k). Retype was the top class; keys all right. Chapter 2's replacement x−2y=5 exposed a wrong source key ((5−x)/2; erratum 1416): keyed (x−5)/2 and disclosed in footer and callout. 4.2's "which pair is not on the line" re-asked the pairs above it and was removed; the 4.7 boundary-line asks take `solved:y` / the new `line-standard-form`. Footer and callout now say Review Exercises are used where a section's Practice Test is thin or repeats the section page. |
+| [x] | KC `knowledge-check-06-10` | — | 63 | 1421 | a424eab | Three Opus fixers (138–173k). All 11 remaining factoring asks now `factored-completely`, and the two GCF asks too (their keys are complete; `2(7y-21)` used to pass). Duplicates of section items replaced by keyed Review Exercises ((2q³)⁴(3q)², (−5)⁻³, √57 ≈ 7.55). 10.5's rendered-graph MC printed the vertex the fill-ins above ask for and became up/down. The fixer's `(6u)^{-3}` probe found the engine hang. Floor: min-verified −1 (√57 rounding ask). Elementary Algebra 2e COMPLETE. |
 
 ## Intermediate Algebra 2e
 
@@ -85,15 +85,15 @@ closes, promote the check to a lint error). The same sweep adds
 key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt
 (`brief-math.md`, grader paragraph; Derek, September 27, 2026). Exposed
-here on September 27: chapter 1 (2 items) and chapter 7 (38).
+here on September 27: chapter 7 (38); chapter 1's 2 were swept on September 28.
 The sweep also swaps `factored` for `factored-completely` on every factoring
 ask whose key is complete (Elementary Algebra chapter 7, September 27,
 2026): chapter 6 (105 items) and knowledge check 1–6 (7).
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
-| [ ] | 1. Foundations | 5 | | | | |
-| [ ] | 2. Solving Linear Equations | 7 | | | | |
+| [x] | 1. Foundations | 5 | 227 | 1422–1426 | a424eab | Run with Elementary Algebra chapter 10 and its checks. One Opus fixer per section (171–214k). Hint leaks (122: signs, LCDs, intermediate values) and retype are the top classes; no wrong keys. 1.1's factor tree printed 48 = 2·2·2·3 (fixed to five primes, redrawn). 1.2's absolute values rendered their minus as subtraction (KaTeX spacing), as on 9 other math pages: new lint (error), 52 spans fixed. 1.3 restores the source 3ab² Try It (b = −1/2 = key; replay allowlisted, reconciliation records reworded for EA 1.6, IA 1.3 and Prealgebra 4.5). 1.5 takes `fraction-or-mixed-number` on the mixed-number Try Its (the EA 1.9 shape). |
+| [x] | 2. Solving Linear Equations | 7 | 468 | 1427–1449 | a424eab | One Opus fixer per section (165–215k). Retype (170) and hint leaks (137: translated equations, case equations, the reversal) top. 2.2 restored six omitted Try-It parts and the full "find the numbers" lists; 2.3's solve-for items are `v=…` with `solved:v`; 2.4 disclosed three silent source corrections; 2.5's digit-coded "no solution" fill-ins became multiple choice; 2.6 and 2.7 gained ten number lines the prose describes (figure-checked against the source images). Floors: min-exercises −2 (nine items now match their EA twins word for word), min-confirmed −7 (pinned stems unpair the matcher). |
 | [ ] | 3. Graphs and Functions | 6 | | | | |
 | [ ] | 4. Systems of Linear Equations | 7 | | | | |
 | [ ] | 5. Polynomials and Polynomial Functions | 4 | | | | |
