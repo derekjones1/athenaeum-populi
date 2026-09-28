@@ -55,71 +55,28 @@ $$
 $$
 
 {{< fillin
-  question="Find the equation of a line with slope $\tfrac{2}{5}$ and $y$-intercept $(0,4)$."
+  question="Find the equation of a line with slope $\tfrac{2}{5}$ and $y$-intercept $(0,4)$. Write the equation in slope-intercept form."
   answer="y = \frac{2}{5}x + 4"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = \tfrac{2}{5}x + 4$"
-  hint="Substitute $m=\tfrac{2}{5}$ and $b=4$ into $y=mx+b$."
+  hint="Read $m$ from the slope and $b$ from the $y$-intercept $(0,b)$, then substitute both into $y=mx+b$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line with slope $-1$ and $y$-intercept $(0,-3)$."
+  question="Find the equation of a line with slope $-1$ and $y$-intercept $(0,-3)$. Write the equation in slope-intercept form."
   answer="y = -x - 3"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-x-3$"
-  hint="Substitute $m=-1$ and $b=-3$ into $y=mx+b$."
+  hint="Read $m$ from the slope and $b$ from the $y$-intercept $(0,b)$, then substitute both into $y=mx+b$."
 >}}
 
 Sometimes, the slope and intercept need to be determined from the graph.
 
 **Example.** Find the equation of the line shown in the graph.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with a line through the y-intercept (0, -4) and the point (3, -2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="65.3" y1="346.5" x2="343.7" y2="160.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="352,155.3 346.5,165 340.9,156.7" fill="currentColor"/>
-  <polygon points="57,352 62.5,342.3 68.1,350.6" fill="currentColor"/>
-  <circle cx="246" cy="226" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −8 to 8, showing a line rising from lower left to upper right that crosses the y-axis at (0, −4) and passes through the marked point (3, −2).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,-4],[3,-2]]}],"points":[{"at":[3,-2]}]}
+{{< /apfigure >}}
 
 We need to find the slope and $y$-intercept of the line from the graph so we
 can substitute the needed values into the slope-intercept form, $y=mx+b$.
@@ -135,114 +92,26 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid for Try It 3.49 with a line through (0, 1) and (5, 4)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.6" y1="260.5" x2="343.4" y2="71.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="352,66.4 346,75.8 340.9,67.3" fill="currentColor"/>
-  <polygon points="20,265.6 26,256.2 31.1,264.7" fill="currentColor"/>
-  <circle cx="286" cy="106" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −8 to 8, showing a line rising from lower left to upper right through the points (0, 1) and (5, 4), with (5, 4) marked.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,1],[5,4]]}],"points":[{"at":[5,4]}]}
+{{< /apfigure >}}
 
 {{< fillin
-  question="Find the equation of the line shown in the graph immediately above."
+  question="Find the equation of the line shown in the graph immediately above. Write the equation in slope-intercept form."
   answer="y = \frac{3}{5}x + 1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{3}{5}x+1$"
   hint="Read the $y$-intercept, then use the marked point to count the rise and run."
 >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid for Try It 3.50 with a line through (0, -5) and (3, -1)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="142.5" y1="344" x2="346" y2="72.7" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="352,64.7 350,75.7 342,69.7" fill="currentColor"/>
-  <polygon points="136.5,352 138.5,341 146.5,347" fill="currentColor"/>
-  <circle cx="246" cy="206" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −8 to 8, showing a line rising from lower left to upper right through the points (0, −5) and (3, −1), with (3, −1) marked.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-5],[3,-1]]}],"points":[{"at":[3,-1]}]}
+{{< /apfigure >}}
 
 {{< fillin
-  question="Find the equation of the line shown in the graph immediately above."
+  question="Find the equation of the line shown in the graph immediately above. Write the equation in slope-intercept form."
   answer="y = \frac{4}{3}x - 5"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{4}{3}x-5$"
   hint="Read the $y$-intercept, then use the marked point to count the rise and run."
 >}}
@@ -262,10 +131,10 @@ form.
 
 $$
 \begin{array}{lrcl}
-&& m &= \tfrac{y-y_1}{x-x_1} \\[10pt]
-\text{Multiply both sides of the equation by }x-x_1. && m(x-x_1) &= \left(\tfrac{y-y_1}{x-x_1}\right)(x-x_1) \\[10pt]
-\text{Simplify.} && m(x-x_1) &= y-y_1 \\[4pt]
-\text{Rewrite the equation with the }y\text{ terms on the left.} && y-y_1 &= m(x-x_1)
+& m &=& \tfrac{y-y_1}{x-x_1} \\[10pt]
+\text{Multiply both sides of the equation by }x-x_1. & m(x-x_1) &=& \left(\tfrac{y-y_1}{x-x_1}\right)(x-x_1) \\[10pt]
+\text{Simplify.} & m(x-x_1) &=& y-y_1 \\[4pt]
+\text{Rewrite the equation with the }y\text{ terms on the left.} & y-y_1 &=& m(x-x_1)
 \end{array}
 $$
 
@@ -296,15 +165,17 @@ $$
 $$
 
 {{< fillin
-  question="Find the equation of a line with slope $m=-\tfrac{2}{5}$ and containing the point $(10,-5)$."
+  question="Find the equation of a line with slope $m=-\tfrac{2}{5}$ and containing the point $(10,-5)$. Write the equation in slope-intercept form."
   answer="y = -\frac{2}{5}x - 1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{2}{5}x-1$"
   hint="Substitute the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line with slope $m=-\tfrac{3}{4}$ and containing the point $(4,-7)$."
+  question="Find the equation of a line with slope $m=-\tfrac{3}{4}$ and containing the point $(4,-7)$. Write the equation in slope-intercept form."
   answer="y = -\frac{3}{4}x - 4"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{3}{4}x-4$"
   hint="Substitute the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
@@ -332,7 +203,7 @@ $$
 \text{Identify the point.} & (x_1,y_1) &=& (-2,-6) \\[4pt]
 \text{Substitute the values.} & y-(-6) &=& 0(x-(-2)) \\[4pt]
 \text{Simplify.} & y+6 &=& 0 \\[4pt]
-&& y &= -6
+& y &=& -6
 \end{array}
 $$
 
@@ -340,15 +211,17 @@ It is in $y$-form, but could be written $y=0x-6$. Did we end up with the
 form of a horizontal line, $y=b$?
 
 {{< fillin
-  question="Find the equation of a horizontal line containing the point $(-3,8)$."
+  question="Find the equation of a horizontal line containing the point $(-3,8)$. Write the equation in slope-intercept form."
   answer="y=8"
-  hint="Every horizontal line has slope $0$ and keeps the same $y$-coordinate."
+  answerForm="slope-intercept-form"
+  hint="A horizontal line has slope $0$. Substitute that slope and the point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a horizontal line containing the point $(-1,4)$."
+  question="Find the equation of a horizontal line containing the point $(-1,4)$. Write the equation in slope-intercept form."
   answer="y=4"
-  hint="Every horizontal line has slope $0$ and keeps the same $y$-coordinate."
+  answerForm="slope-intercept-form"
+  hint="A horizontal line has slope $0$. Substitute that slope and the point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
 
 ## Find an equation of the line given two points
@@ -381,15 +254,17 @@ $$
 $$
 
 {{< fillin
-  question="Find the equation of a line containing the points $(-2,-4)$ and $(1,-3)$."
+  question="Find the equation of a line containing the points $(-2,-4)$ and $(1,-3)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="y = \frac{1}{3}x - \frac{10}{3}"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{1}{3}x-\tfrac{10}{3}$"
   hint="First use the two points to find the slope, then use either point in point-slope form."
 >}}
 
 {{< fillin
-  question="Find the equation of a line containing the points $(-4,-3)$ and $(1,-5)$."
+  question="Find the equation of a line containing the points $(-4,-3)$ and $(1,-5)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="y = -\frac{2}{5}x - \frac{23}{5}"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{2}{5}x-\tfrac{23}{5}$"
   hint="First use the two points to find the slope, then use either point in point-slope form."
 >}}
@@ -426,15 +301,17 @@ You may want to sketch a graph using the two given points. Does your graph
 agree with our conclusion that this is a vertical line?
 
 {{< fillin
-  question="Find the equation of a line containing the points $(5,1)$ and $(5,-4)$."
+  question="Find the equation of a line containing the points $(5,1)$ and $(5,-4)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="x=5"
-  hint="The two points have the same $x$-coordinate, so the line is vertical."
+  answerForm="slope-intercept-form"
+  hint="Compute the slope from the two points first; its value tells you what kind of line passes through them."
 >}}
 
 {{< fillin
-  question="Find the equation of a line containing the points $(-4,4)$ and $(-4,3)$."
+  question="Find the equation of a line containing the points $(-4,4)$ and $(-4,3)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="x=-4"
-  hint="The two points have the same $x$-coordinate, so the line is vertical."
+  answerForm="slope-intercept-form"
+  hint="Compute the slope from the two points first; its value tells you what kind of line passes through them."
 >}}
 
 We have seen that we can use either the slope-intercept form or the
@@ -457,46 +334,9 @@ need to use the point-slope equation.
 First, let’s look at this graphically. This graph shows $y=2x-3$. We want to
 graph a line parallel to this line and passing through the point $(-2,1)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the line y equals 2x minus 3 and the point (-2, 1)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
-  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
-  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
-  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="117.5" y1="263.1" x2="234.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="239,20 239,31.2 230.1,26.7" fill="currentColor"/>
-  <polygon points="113,272 113,260.8 121.9,265.3" fill="currentColor"/>
-  <circle cx="106" cy="126" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −6 to 6, showing the line y = 2x − 3 and the marked point (−2, 1), which is not on the line.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":1,"lines":[{"slope":2,"intercept":-3}],"points":[{"at":[-2,1]}]}
+{{< /apfigure >}}
 
 We know that parallel lines have the same slope. So the second line will
 have the same slope as $y=2x-3$. That slope is $m_{\parallel}=2$. We’ll use
@@ -509,50 +349,9 @@ we start at $(-2,1)$ and count out the rise and run. With $m=2$ (or
 $m=\tfrac{2}{1}$), we count out the rise $2$ and the run $1$. We draw the
 line, as shown in the graph.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing two parallel lines, y equals 2x minus 3 and a second line through (-2, 1), with rise 2 and run 1 marked by points." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
-  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
-  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
-  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="138" y="24" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">y</text>
-  <line x1="117.5" y1="263.1" x2="234.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="239,20 239,31.2 230.1,26.7" fill="currentColor"/>
-  <polygon points="113,272 113,260.8 121.9,265.3" fill="currentColor"/>
-  <line x1="37.5" y1="263.1" x2="154.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="159,20 159,31.2 150.1,26.7" fill="currentColor"/>
-  <polygon points="33,272 33,260.8 41.9,265.3" fill="currentColor"/>
-  <circle cx="106" cy="126" r="4" fill="currentColor"/>
-  <circle cx="126" cy="86" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with the x-axis numbered from −6 to 6 and the y-axis from −6 to 7, showing the line y = 2x − 3 and a second line parallel to it through the marked points (−2, 1) and (−1, 3).","xMin":-6,"xMax":6,"yMin":-6,"yMax":7,"tickLabels":true,"tickStep":1,"lines":[{"slope":2,"intercept":-3},{"through":[[-2,1],[-1,3]]}],"points":[{"at":[-2,1]},{"at":[-1,3]}]}
+{{< /apfigure >}}
 
 Do the lines appear parallel? Does the second line pass through $(-2,1)$?
 We were asked to graph the line; now let’s see how to do this algebraically.
@@ -580,14 +379,16 @@ equation make sense? What is the $y$-intercept of the line? What is the
 slope?
 
 {{< fillin
-  question="Find an equation of a line parallel to $y=3x+1$ that contains the point $(4,2)$."
+  question="Find an equation of a line parallel to $y=3x+1$ that contains the point $(4,2)$. Write the equation in slope-intercept form."
   answer="y=3x-10"
+  answerForm="slope-intercept-form"
   hint="A parallel line has the same slope. Use that slope and the given point in point-slope form."
 >}}
 
 {{< fillin
-  question="Find an equation of a line parallel to $y=\tfrac{1}{2}x-3$ that contains the point $(6,4)$."
+  question="Find an equation of a line parallel to $y=\tfrac{1}{2}x-3$ that contains the point $(6,4)$. Write the equation in slope-intercept form."
   answer="y = \frac{1}{2}x + 1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{1}{2}x+1$"
   hint="A parallel line has the same slope. Use that slope and the given point in point-slope form."
 >}}
@@ -613,46 +414,9 @@ parallel lines.
 This graph shows $y=2x-3$. Now, we want to graph a line perpendicular to this
 line and passing through $(-2,1)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the line y equals 2x minus 3 and the point (-2, 1), through which a perpendicular line will be drawn." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
-  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
-  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
-  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="117.5" y1="263.1" x2="234.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="239,20 239,31.2 230.1,26.7" fill="currentColor"/>
-  <polygon points="113,272 113,260.8 121.9,265.3" fill="currentColor"/>
-  <circle cx="106" cy="126" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −6 to 6, showing the line y = 2x − 3 and the marked point (−2, 1), which is not on the line.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":1,"lines":[{"slope":2,"intercept":-3}],"points":[{"at":[-2,1]}]}
+{{< /apfigure >}}
 
 We know that perpendicular lines have slopes that are negative reciprocals.
 We’ll use the notation $m_{\perp}$ to
@@ -672,50 +436,9 @@ We now know the perpendicular line will pass through $(-2,1)$ with
 $m_{\perp}=-\tfrac{1}{2}$. To graph the line, we will start at $(-2,1)$ and
 count out the rise $-1$ and the run $2$. Then we draw the line.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing y equals 2x minus 3 and a perpendicular line of slope negative one-half through (-2, 1)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
-  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
-  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
-  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="117.5" y1="263.1" x2="234.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="239,20 239,31.2 230.1,26.7" fill="currentColor"/>
-  <polygon points="113,272 113,260.8 121.9,265.3" fill="currentColor"/>
-  <line x1="28.9" y1="87.5" x2="263.1" y2="204.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="272,209 260.8,209 265.3,200.1" fill="currentColor"/>
-  <polygon points="20,83 31.2,83 26.7,91.9" fill="currentColor"/>
-  <circle cx="106" cy="126" r="4" fill="currentColor"/>
-  <circle cx="146" cy="146" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered from −6 to 6, showing the line y = 2x − 3 and a second line perpendicular to it through the marked points (−2, 1) and (0, 0), with a dashed right triangle from (−2, 1) down to (−2, 0) and across to (0, 0).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":1,"lines":[{"slope":2,"intercept":-3},{"through":[[-2,1],[0,0]]}],"slopeTriangles":[{"from":[-2,1],"to":[0,0]}],"points":[{"at":[-2,1]},{"at":[0,0]}]}
+{{< /apfigure >}}
 
 Do the lines appear perpendicular? Does the second line pass through
 $(-2,1)$? We were asked to graph the line; now, let’s see how to do this
@@ -741,15 +464,17 @@ $$
 $$
 
 {{< fillin
-  question="Find an equation of a line perpendicular to $y=3x+1$ that contains the point $(4,2)$."
+  question="Find an equation of a line perpendicular to $y=3x+1$ that contains the point $(4,2)$. Write the equation in slope-intercept form."
   answer="y = -\frac{1}{3}x + \frac{10}{3}"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{1}{3}x+\tfrac{10}{3}$"
   hint="The perpendicular slope is the negative reciprocal of $3$. Use it with the point in point-slope form."
 >}}
 
 {{< fillin
-  question="Find an equation of a line perpendicular to $y=\tfrac{1}{2}x-3$ that contains the point $(6,4)$."
+  question="Find an equation of a line perpendicular to $y=\tfrac{1}{2}x-3$ that contains the point $(6,4)$. Write the equation in slope-intercept form."
   answer="y=-2x+16"
+  answerForm="slope-intercept-form"
   hint="The perpendicular slope is the negative reciprocal of $\tfrac{1}{2}$. Use it with the point in point-slope form."
 >}}
 
@@ -777,7 +502,7 @@ $$
 \text{Identify the slope of the perpendicular line.} & m_{\perp} &=& 0 \\[4pt]
 \text{Substitute the values.} & y-(-2) &=& 0(x-3) \\[4pt]
 \text{Simplify.} & y+2 &=& 0 \\[4pt]
-&& y &= -2
+& y &=& -2
 \end{array}
 $$
 
@@ -785,15 +510,17 @@ Sketch the graph of both lines. On your graph, do the lines appear to be
 perpendicular?
 
 {{< fillin
-  question="Find an equation of a line that is perpendicular to $x=4$ and contains the point $(4,-5)$."
+  question="Find an equation of a line that is perpendicular to $x=4$ and contains the point $(4,-5)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="y=-5"
-  hint="A line perpendicular to a vertical line is horizontal and keeps the point’s $y$-coordinate."
+  answerForm="slope-intercept-form"
+  hint="Decide what kind of line the given line is and what kind of line meets it at a right angle, then use the given point."
 >}}
 
 {{< fillin
-  question="Find an equation of a line that is perpendicular to $x=2$ and contains the point $(2,-1)$."
+  question="Find an equation of a line that is perpendicular to $x=2$ and contains the point $(2,-1)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="y=-1"
-  hint="A line perpendicular to a vertical line is horizontal and keeps the point’s $y$-coordinate."
+  answerForm="slope-intercept-form"
+  hint="Decide what kind of line the given line is and what kind of line meets it at a right angle, then use the given point."
 >}}
 
 In the preceding example, we used the point-slope form to find the equation.
@@ -801,112 +528,16 @@ We could have looked at this in a different way. We want to find a line that
 is perpendicular to $x=5$ that contains the point $(3,-2)$. The first graph
 shows us the line $x=5$ and the point $(3,-2)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the vertical line x equals 5 and the point (3, -2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="286" y1="342" x2="286" y2="30" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="286,20 291,30 281,30" fill="currentColor"/>
-  <polygon points="286,352 281,342 291,342" fill="currentColor"/>
-  <circle cx="246" cy="226" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from −8 to 8 on both axes, the x-axis numbered by twos and the y-axis by fours, showing the vertical line x = 5 and the marked point (3, −2).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":4,"lines":[{"x":5}],"points":[{"at":[3,-2]}]}
+{{< /apfigure >}}
 
 We know every line perpendicular to a vertical line is horizontal, so we
 will sketch the horizontal line through $(3,-2)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the perpendicular lines x equals 5 and y equals negative 2, with points along the horizontal line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="286" y1="342" x2="286" y2="30" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="286,20 291,30 281,30" fill="currentColor"/>
-  <polygon points="286,352 281,342 291,342" fill="currentColor"/>
-  <line x1="30" y1="226" x2="342" y2="226" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="352,226 342,231 342,221" fill="currentColor"/>
-  <polygon points="20,226 30,221 30,231" fill="currentColor"/>
-  <circle cx="146" cy="226" r="4" fill="currentColor"/>
-  <circle cx="186" cy="226" r="4" fill="currentColor"/>
-  <circle cx="246" cy="226" r="4" fill="currentColor"/>
-  <circle cx="306" cy="226" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from −8 to 8 on both axes, the x-axis numbered by twos and the y-axis by fours, showing the vertical line x = 5 and a horizontal line through the marked points (−2, −2), (0, −2), (3, −2), and (6, −2).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":4,"lines":[{"x":5},{"y":-2}],"points":[{"at":[-2,-2]},{"at":[0,-2]},{"at":[3,-2]},{"at":[6,-2]}]}
+{{< /apfigure >}}
 
 Do the lines appear perpendicular? If we look at a few points on this
 horizontal line, we notice they all have $y$-coordinates of $-2$. So, the
@@ -922,15 +553,17 @@ The equation of the perpendicular line is $x=-3$. You may want to sketch the
 lines. Do they appear perpendicular?
 
 {{< fillin
-  question="Find an equation of a line that is perpendicular to $y=1$ and contains the point $(-5,1)$."
+  question="Find an equation of a line that is perpendicular to $y=1$ and contains the point $(-5,1)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="x=-5"
-  hint="A line perpendicular to a horizontal line is vertical and keeps the point’s $x$-coordinate."
+  answerForm="slope-intercept-form"
+  hint="Decide what kind of line the given line is and what kind of line meets it at a right angle, then use the given point."
 >}}
 
 {{< fillin
-  question="Find an equation of a line that is perpendicular to $y=-5$ and contains the point $(-4,-5)$."
+  question="Find an equation of a line that is perpendicular to $y=-5$ and contains the point $(-4,-5)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="x=-4"
-  hint="A line perpendicular to a horizontal line is vertical and keeps the point’s $x$-coordinate."
+  answerForm="slope-intercept-form"
+  hint="Decide what kind of line the given line is and what kind of line meets it at a right angle, then use the given point."
 >}}
 
 ## Key terms
@@ -946,31 +579,35 @@ slopes are negative reciprocals.
 ### Find an equation of the line given the slope and $y$-intercept
 
 {{< fillin
-  question="Find the equation of a line with slope $3$ and $y$-intercept $(0,5)$."
+  question="Find the equation of a line with slope $3$ and $y$-intercept $(0,5)$. Write the equation in slope-intercept form."
   answer="y = 3x + 5"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=3x+5$"
-  hint="Substitute $m=3$ and $b=5$ into $y=mx+b$."
+  hint="Read $m$ from the slope and $b$ from the $y$-intercept $(0,b)$, then substitute both into $y=mx+b$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line with slope $\tfrac{1}{5}$ and $y$-intercept $(0,-5)$."
+  question="Find the equation of a line with slope $\tfrac{1}{5}$ and $y$-intercept $(0,-5)$. Write the equation in slope-intercept form."
   answer="y = \frac{1}{5}x - 5"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{1}{5}x-5$"
-  hint="Substitute $m=\tfrac{1}{5}$ and $b=-5$ into $y=mx+b$."
+  hint="Read $m$ from the slope and $b$ from the $y$-intercept $(0,b)$, then substitute both into $y=mx+b$."
 >}}
 
 ### Find an equation of the line given the slope and a point
 
 {{< fillin
-  question="Find the equation of a line with slope $m=\tfrac{5}{8}$ and containing the point $(8,3)$."
+  question="Find the equation of a line with slope $m=\tfrac{5}{8}$ and containing the point $(8,3)$. Write the equation in slope-intercept form."
   answer="y = \frac{5}{8}x - 2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{5}{8}x-2$"
   hint="Substitute the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
 
 {{< fillin
-  question="Find the equation of a line with slope $m=-\tfrac{3}{5}$ and containing the point $(10,-5)$."
+  question="Find the equation of a line with slope $m=-\tfrac{3}{5}$ and containing the point $(10,-5)$. Write the equation in slope-intercept form."
   answer="y = -\frac{3}{5}x + 1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{3}{5}x+1$"
   hint="Substitute the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
@@ -978,15 +615,17 @@ slopes are negative reciprocals.
 ### Find an equation of the line given two points
 
 {{< fillin
-  question="Find the equation of a line containing the points $(2,6)$ and $(5,3)$."
+  question="Find the equation of a line containing the points $(2,6)$ and $(5,3)$. Write the equation in slope-intercept form."
   answer="y = -x + 8"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-x+8$"
   hint="First use the two points to find the slope, then use either point in point-slope form."
 >}}
 
 {{< fillin
-  question="Find the equation of a line containing the points $(-3,-4)$ and $(5,-2)$."
+  question="Find the equation of a line containing the points $(-3,-4)$ and $(5,-2)$. Write the equation in slope-intercept form."
   answer="y = \frac{1}{4}x - \frac{13}{4}"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{1}{4}x-\tfrac{13}{4}$"
   hint="First use the two points to find the slope, then use either point in point-slope form."
 >}}
@@ -994,35 +633,39 @@ slopes are negative reciprocals.
 ### Find an equation of a line parallel to a given line
 
 {{< fillin
-  question="Find an equation of a line parallel to $y=4x+2$ that contains the point $(1,2)$."
+  question="Find an equation of a line parallel to $y=4x+2$ that contains the point $(1,2)$. Write the equation in slope-intercept form."
   answer="y = 4x - 2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=4x-2$"
   hint="A parallel line has the same slope. Use that slope and the given point in point-slope form."
 >}}
 
 {{< fillin
-  question="Find an equation of a line parallel to the line $2x-y=6$ that contains the point $(3,1)$."
-  answer="y = 2x - 5"
-  answerDisplay="$y=2x-5$"
-  hint="First solve the given line for $y$ to find its slope. A parallel line has that same slope; use it with the given point in point-slope form."
+  question="Find an equation of a line parallel to the line $y=5$ that contains the point $(2,-2)$. Write the equation in slope-intercept form."
+  answer="y = -2"
+  answerForm="slope-intercept-form"
+  answerDisplay="$y=-2$"
+  hint="Find the slope of the given line first. A parallel line has that same slope; use it with the given point in point-slope form."
 >}}
 
 ### Find an equation of a line perpendicular to a given line
 
 {{< fillin
-  question="Find an equation of a line perpendicular to the line $2x-3y=8$ that contains the point $(4,-1)$."
+  question="Find an equation of a line perpendicular to the line $2x-3y=8$ that contains the point $(4,-1)$. Write the equation in slope-intercept form."
   answer="y = -\frac{3}{2}x + 5"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{3}{2}x+5$"
   hint="First solve the given line for $y$ to find its slope. The perpendicular slope is the negative reciprocal of that slope; use it with the point in point-slope form."
 >}}
 
 {{< fillin
-  question="Find an equation of a line perpendicular to $y=\tfrac{3}{4}x-2$ that contains the point $(-3,4)$."
+  question="Find an equation of a line perpendicular to $y=\tfrac{3}{4}x-2$ that contains the point $(-3,4)$. Write the equation in slope-intercept form."
   answer="y = -\frac{4}{3}x"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{4}{3}x$"
   hint="The perpendicular slope is the negative reciprocal of $\tfrac{3}{4}$. Use it with the point in point-slope form."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.3: Find the Equation of a Line](https://openstax.org/books/intermediate-algebra-2e/pages/3-3-find-the-equation-of-a-line) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.3: Find the Equation of a Line](https://openstax.org/books/intermediate-algebra-2e/pages/3-3-find-the-equation-of-a-line) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible graphs; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; added "Write the equation in slope-intercept form" to the exercises whose answer takes that form, with "or as $x=a$ if the line is vertical" where the line could be vertical; dropped a doubled "the" from the paragraph introducing point-slope form; and adapted selected end-of-section exercises into a section-final interactive practice block.</small>

@@ -987,3 +987,26 @@ test('a gapTexts segment passes behind text entries instead of striking through 
   });
   assert.equal(solid.els.filter((e) => e.tag === 'line').length, 1);
 });
+
+test('an arrowless line stops at the grid edge — a first-quadrant boundary never crosses an axis', () => {
+  // A region boundary drawn with arrows:false once overshot the grid by the
+  // 6 px meant for arrowed lines, so on a first-quadrant application graph
+  // (Intermediate Algebra 3.4) it poked past both axes toward the tick labels.
+  const Q1 = { xMin: 0, xMax: 30, yMin: 0, yMax: 30, unit: 10 };
+  const shaft = (out) => out.els.filter((e) => e.tag === 'line' && e.attrs.strokeWidth === '1.8')
+    .map((e) => e.attrs);
+  const axes = buildGraph(Q1).els.filter((e) => e.tag === 'line' && e.attrs.strokeWidth === '1').map((e) => e.attrs);
+  const axisX = Math.min(...axes.map((a) => Math.min(a.x1, a.x2)));
+  const axisY = Math.max(...axes.map((a) => Math.max(a.y1, a.y2)));
+  for (const spec of [
+    { ...Q1, lines: [{ through: [[0, 16], [24, 0]], arrows: false }] },
+    { ...Q1, regions: [{ line: { through: [[0, 16], [24, 0]], arrows: false }, side: [30, 30] }] },
+  ]) {
+    const [l] = shaft(buildGraph(spec));
+    assert.ok(l, 'the boundary line is drawn');
+    for (const [x, y] of [[l.x1, l.y1], [l.x2, l.y2]]) {
+      assert.ok(x >= axisX - 0.01, `line end x=${x} crosses the y-axis at ${axisX}`);
+      assert.ok(y <= axisY + 0.01, `line end y=${y} crosses the x-axis at ${axisY}`);
+    }
+  }
+});

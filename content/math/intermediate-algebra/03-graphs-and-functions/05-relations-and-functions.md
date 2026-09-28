@@ -99,8 +99,8 @@ range of the relation.
 | Liz | August 2 |
 | Danny | July 24 |
 
-**Solution.** (a) The arrow shows the matching of the person to their
-birthday. We create ordered pairs with the person's name as the $x$-value
+**Solution.** (a) Each row of the table matches a person to their
+birthday, as each arrow of the mapping does. We create ordered pairs with the person's name as the $x$-value
 and their birthday as the $y$-value:
 
 $\{(\text{Alison},\text{April 25}),(\text{Penelope},\text{May 23}),
@@ -118,26 +118,43 @@ $\{\text{Alison},\text{Penelope},\text{June},\text{Gregory},
 $\{\text{January 12},\text{February 3},\text{April 25},\text{May 10},
 \text{May 23},\text{July 24},\text{August 2},\text{September 15}\}$.
 
-{{< multiplechoice
-  question="In the mapping above, Stephen is paired with which birthday?"
-  answer="July 24"
-  hint="Trace the arrow from the named input to the one output paired with it."
->}}
-July 24
-August 2
-May 23
-February 3
-{{< /multiplechoice >}}
+A mapping pairs each student with a student ID number:
+
+| Name | Student ID # |
+| :--- | :--- |
+| Khanh Nguyen | kn68413 |
+| Abigail Brown | ab56781 |
+| Sumantha Mishal | sm32479 |
+| Jose Hernandez | jh47983 |
 
 {{< multiplechoice
-  question="In the mapping above, Penelope is paired with which birthday?"
-  answer="May 23"
-  hint="Trace the arrow from the named input to the one output paired with it."
+  question="Which ordered pair belongs to the relation in the student ID mapping directly above?"
+  answer="(Khanh Nguyen, kn68413)"
+  hint="An ordered pair lists the $x$-value, the element of the domain, first and the element it is mapped to second."
 >}}
-April 25
-May 23
-May 10
-August 2
+(kn68413, Khanh Nguyen)
+(Khanh Nguyen, kn68413)
+(Khanh Nguyen, ab56781)
+{{< /multiplechoice >}}
+
+A mapping pairs each person with a birthday:
+
+| Name | Birthday |
+| :--- | :--- |
+| Maria | November 6 |
+| Armando | January 18 |
+| Cynthia | December 8 |
+| Kelly | March 15 |
+| Rachel | November 6 |
+
+{{< multiplechoice
+  question="Which set is the range of the relation in the birthday mapping directly above?"
+  answer="{January 18, March 15, November 6, December 8}"
+  hint="The range is the set of all $y$-values: the second entry of every pair, each value listed once."
+>}}
+{Maria, Armando, Cynthia, Kelly, Rachel}
+{January 18, March 15, November 6, December 8}
+{January 18, March 15, December 8}
 {{< /multiplechoice >}}
 
 A graph is yet another way that a relation can be represented. The set of
@@ -150,48 +167,9 @@ order for both the domain and range.
 the relation, (b) find the domain of the relation, and (c) find the range of
 the relation.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Coordinate plane with points at 1 comma 5; negative 3 comma negative 1; 4 comma negative 2; 0 comma 3; 2 comma negative 2; and negative 3 comma 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
-  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
-  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
-  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <circle cx="166" cy="46" r="4" fill="currentColor"/>
-  <circle cx="86" cy="166" r="4" fill="currentColor"/>
-  <circle cx="226" cy="186" r="4" fill="currentColor"/>
-  <circle cx="146" cy="86" r="4" fill="currentColor"/>
-  <circle cx="186" cy="186" r="4" fill="currentColor"/>
-  <circle cx="86" cy="66" r="4" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid numbered from −6 to 6 on each axis with six points plotted: (1, 5), (−3, −1), (4, −2), (0, 3), (2, −2), and (−3, 4).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"points":[{"at":[1,5]},{"at":[-3,-1]},{"at":[4,-2]},{"at":[0,3]},{"at":[2,-2]},{"at":[-3,4]}]}
+{{< /apfigure >}}
 
 **Solution.** (a) The ordered pairs of the relation are
 $\{(1,5),(-3,-1),(4,-2),(0,3),(2,-2),(-3,4)\}$.
@@ -202,16 +180,24 @@ $\{-3,0,1,2,4\}$. Notice that while $-3$ repeats, it is only listed once.
 (c) The range is the set of all $y$-values of the relation:
 $\{-2,-1,3,4,5\}$. Notice that while $-2$ repeats, it is only listed once.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid numbered from −6 to 6 on each axis with six points plotted: (−3, 3), (−2, 2), (−1, 0), (0, −1), (2, −2), and (4, −4).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"points":[{"at":[-3,3]},{"at":[-2,2]},{"at":[-1,0]},{"at":[0,-1]},{"at":[2,-2]},{"at":[4,-4]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="For the graph with points $(-3,3),(-2,2),(-1,0),(0,-1),(2,-2),(4,-4)$, enter the domain as a comma-separated list."
+  question="Use the graph of the relation directly above. Enter the domain of the relation as a comma-separated list."
   answer="-3,-2,-1,0,2,4"
   answerMode="unordered"
   answerDisplay="$-3,-2,-1,0,2,4$"
   hint="List each distinct $x$-coordinate once."
 >}}
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid numbered from −6 to 6 on each axis with six points plotted: (−3, 5), (−3, 0), (−3, −6), (−1, −2), (1, 2), and (4, −4).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"points":[{"at":[-3,5]},{"at":[-3,0]},{"at":[-3,-6]},{"at":[-1,-2]},{"at":[1,2]},{"at":[4,-4]}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="For the graph with points $(-3,0),(-3,5),(-3,-6),(-1,-2),(1,2),(4,-4)$, enter the range as a comma-separated list."
+  question="Use the graph of the relation directly above. Enter the range of the relation as a comma-separated list."
   answer="-6,-4,-2,0,2,5"
   answerMode="unordered"
   answerDisplay="$-6,-4,-2,0,2,5$"
@@ -295,18 +281,18 @@ function.
 798\text{-}367\text{-}8541\}$.
 
 {{< multiplechoice
-  question="A mapping pairs NBC with three programs, HGTV with three programs, and HBO with three programs. Is the relation a function?"
+  question="A mapping pairs NBC with Ellen Degeneres Show, Law and Order, and Tonight Show; HGTV with Property Brothers, House Hunters, and Love It or List It; and HBO with Game of Thrones, True Detective, and Sesame Street. Is the relation a function?"
   answer="No"
-  hint="Trace the arrow from the named input to the one output paired with it."
+  hint="Check whether any element of the domain is paired with more than one element of the range."
 >}}
 No
 Yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In a phone-number mapping, Neal, Krystal, Kelvin, George, Christa, and Mike are each paired with exactly one number. Is the relation a function?"
-  answer="Yes"
-  hint="Trace the arrow from the named input to the one output paired with it."
+  question="A mapping pairs Neal with 753-469-9731 cell; Krystal with 684-369-7231 cell; Kelvin with 231-378-5941 cell; George with 123-567-4839 work and 639-847-6971 cell; Christa with 567-534-2970 work; and Mike with 567-534-2970 work and 798-367-8541 cell. Is the relation a function?"
+  answer="No"
+  hint="Check whether any element of the domain is paired with more than one element of the range."
 >}}
 Yes
 No
@@ -463,7 +449,7 @@ $$
 $$
 \begin{array}{lrcl}
 & f(x) &=& 2x^2+3x-1 \\[4pt]
-\text{To evaluate }f(-2),\text{ substitute }-2\text{ for }x. & f(-2) &=& 2(-2)^2+3(-2)-1 \\[4pt]
+\text{To evaluate }f(-2),\text{ substitute }{-2}\text{ for }x. & f(-2) &=& 2(-2)^2+3(-2)-1 \\[4pt]
 \text{Simplify.} & f(-2) &=& 2\cdot4+(-6)-1 \\[4pt]
 & f(-2) &=& 8+(-6)-1 \\[4pt]
 & f(-2) &=& 1
@@ -481,12 +467,14 @@ $$
 {{< fillin
   question="For $f(x)=3x^2-2x+1$, evaluate $f(3)$."
   answer="22"
+  answerForm="decimal"
   hint="Substitute $3$ for every $x$, then simplify."
 >}}
 
 {{< fillin
   question="For $f(x)=2x^2+4x-3$, evaluate $f(-3)$."
   answer="3"
+  answerForm="decimal"
   hint="Substitute $-3$ for every $x$; remember to square the entire negative number."
 >}}
 
@@ -533,12 +521,14 @@ $g(x)+g(2)=3x-4$. So we see that $g(x+2)\ne g(x)+g(2)$.
 {{< fillin
   question="For $g(x)=4x-7$, evaluate $g(m^2)$."
   answer="4m^2-7"
+  answerForm="expanded distributed no-like-terms"
   hint="Substitute $m^2$ for $x$."
 >}}
 
 {{< fillin
   question="For $h(x)=2x+1$, evaluate $h(x)+h(1)$."
   answer="2x+4"
+  answerForm="expanded distributed no-like-terms"
   hint="First find $h(1)$, then add it to $h(x)$."
 >}}
 
@@ -575,12 +565,14 @@ $5$ days. After $5$ days, there are $125$ unread emails in the account.
 {{< fillin
   question="Bryan's account has 100 unread emails and gains 15 a day, so $N(t)=100+15t$. Find $N(7)$."
   answer="205"
+  answerForm="decimal"
   hint="Substitute $7$ for $t$ and simplify."
 >}}
 
 {{< fillin
   question="Anthony's account has 110 unread emails and gains 25 a day, so $N(t)=110+25t$. Find $N(14)$."
   answer="460"
+  answerForm="decimal"
   hint="Substitute $14$ for $t$ and simplify."
 >}}
 
@@ -622,7 +614,7 @@ whose value depends on the independent variable.
   answer="1,5,7,-2"
   answerMode="unordered"
   answerDisplay="$1,5,7,-2$"
-  hint="List each distinct $x$-value only once, even though $-2$ appears twice in the relation."
+  hint="List each distinct $x$-value once, even when it appears in more than one pair."
 >}}
 
 {{< fillin
@@ -692,18 +684,21 @@ Yes
 {{< fillin
   question="For $f(x)=5x-3$, evaluate $f(2)$."
   answer="7"
+  answerForm="decimal"
   hint="Substitute $2$ for $x$, then simplify."
 >}}
 
 {{< fillin
   question="For $f(x)=5x-3$, evaluate $f(-1)$."
   answer="-8"
+  answerForm="decimal"
   hint="Substitute $-1$ for $x$, then simplify."
 >}}
 
 {{< fillin
   question="For $f(x)=5x-3$, evaluate $f(a)$."
   answer="5a-3"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$5a-3$"
   hint="Substitute $a$ for every $x$."
 >}}
@@ -720,6 +715,7 @@ C
 {{< fillin
   question="For the printing company's cost function $C(x)=3.25x+1{,}500$, find $C(0)$."
   answer="1500"
+  answerForm="decimal"
   answerDisplay="$1{,}500$"
   hint="Substitute $0$ for $x$, then simplify."
 >}}
@@ -727,10 +723,11 @@ C
 {{< fillin
   question="For the printing company's cost function $C(x)=3.25x+1{,}500$, find $C(1{,}000)$."
   answer="4750"
+  answerForm="decimal"
   answerDisplay="$4{,}750$"
-  hint="Substitute $1000$ for $x$, then simplify."
+  hint="Substitute $1{,}000$ for $x$, then simplify."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.5: Relations and Functions](https://openstax.org/books/intermediate-algebra-2e/pages/3-5-relations-and-functions) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figure as an accessible interactive graph; represented mapping figures as accessible tables or complete prose; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.5: Relations and Functions](https://openstax.org/books/intermediate-algebra-2e/pages/3-5-relations-and-functions) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: redrew the three coordinate-plane graphs as accessible figures with every unit numbered on both axes; represented mapping figures as accessible tables or complete prose, spelling two names as the figures print them (Armando and Jose Hernandez, which the source text renders "Arm and o" and "Jose Hern and ez"), and one as the source text spells it (Khanh Nguyen, which the student ID figure prints "Khan Nguyen"); omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive Practice block.</small>

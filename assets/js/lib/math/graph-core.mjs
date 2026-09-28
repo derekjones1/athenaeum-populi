@@ -344,7 +344,7 @@ export function buildGraph(props) {
   /** clip infinite line through math points A,B to the grid rect (px);
       returns [P0, P1] px endpoints ordered along (B-A) direction.
       over=6 lets drawn lines overshoot the last gridline like the axes do;
-      regions pass over=0 so shading stays flush with the grid. */
+      regions and arrowless lines pass over=0 so they stay flush with the grid. */
   function clipLine(A, B, over = 6) {
     const a = px(A), b = px(B)
     const d = sub(b, a)
@@ -665,7 +665,9 @@ export function buildGraph(props) {
   const deferredLineStrokes = []
   for (const l of allLines) {
     const [A, B] = lineAnchors(l)
-    const clipped = clipLine(A, B)
+    // an arrowless line (a segment, or a first-quadrant region boundary) stops
+    // at the grid edge — past it lies the axis, which the line must not cross
+    const clipped = clipLine(A, B, l.arrows === false ? 0 : 6)
     if (!clipped) continue
     const [P0, P1] = clipped
     const dir = norm(sub(P1, P0))
