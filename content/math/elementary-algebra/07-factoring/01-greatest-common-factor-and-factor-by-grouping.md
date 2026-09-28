@@ -45,7 +45,8 @@ First we'll find the GCF of two numbers.
 **Example.** Find the GCF of $54$ and $36$.
 
 Factor each coefficient into primes, and line up the common factors in
-columns. We circle the $2$, $3$, and $3$ that are shared by both numbers:
+columns. The $2$, $3$, and $3$ in the shared columns are the factors both
+numbers have in common:
 
 $$
 \begin{array}{rcl}
@@ -67,13 +68,15 @@ $$54 = 18 \cdot 3 \qquad 36 = 18 \cdot 2$$
 {{< fillin
   question="Find the GCF of 48 and 80."
   answer="16"
+  answerForm="decimal"
   hint="Factor each number into primes, line up the shared primes in columns, and multiply the common ones."
 >}}
 
 {{< fillin
   question="Find the GCF of 18 and 40."
   answer="2"
-  hint="Factor $18 = 2 \cdot 3 \cdot 3$ and $40 = 2 \cdot 2 \cdot 2 \cdot 5$; only one prime is shared."
+  answerForm="decimal"
+  hint="Factor each number into primes, then multiply only the primes that appear in both factorizations."
 >}}
 
 We summarize the steps we use to find the GCF below.
@@ -113,13 +116,15 @@ The GCF of $27x^3$ and $18x^4$ is $9x^3$.
 {{< fillin
   question="Find the GCF of $12x^2$ and $18x^3$."
   answer="6x^2"
+  answerForm="single-term"
   answerDisplay="$6x^2$"
-  hint="The GCF of the coefficients $12$ and $18$ is $6$; for the variable, take the smaller power of $x$."
+  hint="Factor each coefficient into primes and expand the powers of $x$, then bring down and multiply what both expressions share."
 >}}
 
 {{< fillin
   question="Find the GCF of $16y^2$ and $24y^3$."
   answer="8y^2"
+  answerForm="single-term"
   answerDisplay="$8y^2$"
   hint="Find the GCF of $16$ and $24$, then take the smaller power of $y$."
 >}}
@@ -143,15 +148,17 @@ The GCF of $4x^2 y$ and $6xy^3$ is $2xy$.
 {{< fillin
   question="Find the GCF of $6ab^4$ and $8a^2 b$."
   answer="2ab"
+  answerForm="single-term"
   answerDisplay="$2ab$"
-  hint="The GCF of $6$ and $8$ is $2$; for each variable take the smaller power that appears in both."
+  hint="Find the GCF of the coefficients, then for each variable take the smaller power that appears in both."
 >}}
 
 {{< fillin
   question="Find the GCF of $9m^5 n^2$ and $12m^3 n$."
   answer="3m^3 n"
+  answerForm="single-term"
   answerDisplay="$3m^3 n$"
-  hint="The GCF of $9$ and $12$ is $3$; take the smaller power of $m$ and of $n$."
+  hint="Find the GCF of the coefficients, then take the smaller power of $m$ and of $n$."
 >}}
 
 We can also find the greatest common factor of more than two expressions.
@@ -176,6 +183,7 @@ The GCF of $21x^3$, $9x^2$, and $15x$ is $3x$.
 {{< fillin
   question="Find the greatest common factor of $25m^4$, $35m^3$, and $20m^2$."
   answer="5m^2"
+  answerForm="single-term"
   answerDisplay="$5m^2$"
   hint="Find the GCF of $25$, $35$, and $20$, then take the smallest power of $m$ that appears in every term."
 >}}
@@ -183,8 +191,9 @@ The GCF of $21x^3$, $9x^2$, and $15x$ is $3x$.
 {{< fillin
   question="Find the greatest common factor of $14x^3$, $70x^2$, and $105x$."
   answer="7x"
+  answerForm="single-term"
   answerDisplay="$7x$"
-  hint="The GCF of $14$, $70$, and $105$ is $7$; the smallest power of $x$ is $x^1$."
+  hint="A factor must be shared by all three terms: factor each coefficient into primes, then take the smallest power of $x$ that appears in every term."
 >}}
 
 ## Factor the greatest common factor from a polynomial
@@ -235,17 +244,17 @@ Check by multiplying: $4(x + 3) = 4 \cdot x + 4 \cdot 3 = 4x + 12$. ✓
 {{< fillin
   question="Factor: $6a + 24$."
   answer="6(a + 4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$6(a + 4)$"
-  hint="The GCF of $6a$ and $24$ is $6$; write each term as $6$ times something."
+  hint="Find the GCF of $6a$ and $24$, rewrite each term as a product using it, then use the Distributive Property in reverse."
 >}}
 
 {{< fillin
   question="Factor: $2b + 14$."
   answer="2(b + 7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2(b + 7)$"
-  hint="The GCF of $2b$ and $14$ is $2$."
+  hint="Find the GCF of $2b$ and $14$, then rewrite each term as a product of that GCF."
 >}}
 
 {{< callout type="info" >}}
@@ -277,17 +286,17 @@ Check by multiplying: $5(a + 1) = 5 \cdot a + 5 \cdot 1 = 5a + 5$. ✓
 {{< fillin
   question="Factor: $14x + 14$."
   answer="14(x + 1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$14(x + 1)$"
-  hint="The GCF of $14x$ and $14$ is $14$; remember $14 = 14 \cdot 1$."
+  hint="Find the GCF of the two terms. When the GCF uses up a whole term, write the $1$ that is left in its place."
 >}}
 
 {{< fillin
   question="Factor: $12p + 12$."
   answer="12(p + 1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$12(p + 1)$"
-  hint="The GCF of $12p$ and $12$ is $12$."
+  hint="Find the GCF of $12p$ and $12$. Remember every term has a factor of $1$ hiding inside it."
 >}}
 
 The expressions in the next example have several factors in common. Remember to
@@ -310,17 +319,17 @@ Check by multiplying: $12(x - 5) = 12 \cdot x - 12 \cdot 5 = 12x - 60$. ✓
 {{< fillin
   question="Factor: $18u - 36$."
   answer="18(u - 2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$18(u - 2)$"
-  hint="The GCF of $18u$ and $36$ is $18$; note $36 = 18 \cdot 2$."
+  hint="Factor $18u$ and $36$ into primes and multiply every factor they share, then rewrite each term as a product of that GCF."
 >}}
 
 {{< fillin
   question="Factor: $30y - 60$."
   answer="30(y - 2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$30(y - 2)$"
-  hint="The GCF of $30y$ and $60$ is $30$."
+  hint="Write the GCF as the product of all the common factors of $30y$ and $60$, then use the Distributive Property in reverse."
 >}}
 
 Now we'll factor the greatest common factor from a trinomial. We start by
@@ -344,17 +353,17 @@ Check by multiplying: $4(y^2 + 6y + 7) = 4y^2 + 24y + 28$. ✓
 {{< fillin
   question="Factor: $5x^2 - 25x + 15$."
   answer="5(x^2 - 5x + 3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$5(x^2 - 5x + 3)$"
-  hint="The GCF of $5x^2$, $25x$, and $15$ is $5$; divide each term by $5$."
+  hint="Find the GCF of all three terms — check whether every term contains the variable — then rewrite each term as a product of that GCF."
 >}}
 
 {{< fillin
   question="Factor: $3y^2 - 12y + 27$."
   answer="3(y^2 - 4y + 9)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3(y^2 - 4y + 9)$"
-  hint="The GCF of the three terms is $3$; divide each term by $3$."
+  hint="Find the GCF of all three terms, then rewrite each term as a product of that GCF."
 >}}
 
 **Example.** Factor $5x^3 - 25x^2$.
@@ -373,17 +382,17 @@ Check by multiplying: $5x^2(x - 5) = 5x^2 \cdot x - 5x^2 \cdot 5 = 5x^3 - 25x^2$
 {{< fillin
   question="Factor: $2x^3 + 12x^2$."
   answer="2x^2(x + 6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2x^2(x + 6)$"
-  hint="The GCF of $2x^3$ and $12x^2$ is $2x^2$; take the smaller power of $x$."
+  hint="Find the GCF of the two terms, including the highest power of $x$ that both contain."
 >}}
 
 {{< fillin
   question="Factor: $6y^3 - 15y^2$."
   answer="3y^2(2y - 5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3y^2(2y - 5)$"
-  hint="The GCF of $6y^3$ and $15y^2$ is $3y^2$."
+  hint="Find the GCF of the coefficients and the highest power of $y$ that both terms contain, then rewrite each term as a product of that GCF."
 >}}
 
 **Example.** Factor $21x^3 - 9x^2 + 15x$.
@@ -403,17 +412,17 @@ Check by multiplying: $3x(7x^2 - 3x + 5) = 21x^3 - 9x^2 + 15x$. ✓
 {{< fillin
   question="Factor: $20x^3 - 10x^2 + 14x$."
   answer="2x(10x^2 - 5x + 7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2x(10x^2 - 5x + 7)$"
-  hint="The GCF of the three terms is $2x$; divide each term by $2x$."
+  hint="Find the GCF of all three terms, coefficients and powers of $x$ together, then rewrite each term as a product of that GCF."
 >}}
 
 {{< fillin
   question="Factor: $24y^3 - 12y^2 - 20y$."
   answer="4y(6y^2 - 3y - 5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4y(6y^2 - 3y - 5)$"
-  hint="The GCF of $24y^3$, $12y^2$, and $20y$ is $4y$."
+  hint="Factor each term into primes and expand the powers of $y$, then bring down every factor all three terms share."
 >}}
 
 **Example.** Factor $8m^3 - 12m^2 n + 20mn^2$.
@@ -435,17 +444,17 @@ Check by multiplying: $4m(2m^2 - 3mn + 5n^2) = 8m^3 - 12m^2 n + 20mn^2$. ✓
 {{< fillin
   question="Factor: $9xy^2 + 6x^2 y^2 + 21y^3$."
   answer="3y^2(3x + 2x^2 + 7y)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3y^2(3x + 2x^2 + 7y)$"
-  hint="The GCF of the three terms is $3y^2$; divide each term by $3y^2$."
+  hint="Find the GCF of the coefficients, then check each variable: include it only if every term contains it, at its smallest power."
 >}}
 
 {{< fillin
   question="Factor: $3p^3 - 6p^2 q + 9pq^3$."
   answer="3p(p^2 - 2pq + 3q^3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3p(p^2 - 2pq + 3q^3)$"
-  hint="The GCF of the three terms is $3p$; divide each term by $3p$."
+  hint="Find the GCF of the coefficients, then check each variable: include it only if every term contains it, at its smallest power."
 >}}
 
 When the leading coefficient is negative, we factor the negative out as part of
@@ -470,17 +479,17 @@ Check by multiplying: $-8(y + 3) = -8 \cdot y + (-8) \cdot 3 = -8y - 24$. ✓
 {{< fillin
   question="Factor: $-16z - 64$."
   answer="-16(z + 4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$-16(z + 4)$"
-  hint="The leading coefficient is negative, so use $-16$ as the GCF; watch the sign on the second term."
+  hint="The leading coefficient is negative, so pull the negative sign out along with the GCF of $16z$ and $64$."
 >}}
 
 {{< fillin
   question="Factor: $-9y - 27$."
   answer="-9(y + 3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$-9(y + 3)$"
-  hint="Use $-9$ as the GCF; factoring $-9$ from $-27$ leaves $+3$."
+  hint="The leading coefficient is negative, so make the GCF negative too — and watch how that changes the sign of the second term inside the parentheses."
 >}}
 
 **Example.** Factor $-6a^2 + 36a$.
@@ -500,17 +509,17 @@ Check by multiplying: $-6a(a - 6) = -6a \cdot a + (-6a)(-6) = -6a^2 + 36a$. ✓
 {{< fillin
   question="Factor: $-4b^2 + 16b$."
   answer="-4b(b - 4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$-4b(b - 4)$"
-  hint="Use $-4b$ as the GCF; factoring $-4b$ from $+16b$ leaves $-4$."
+  hint="The leading coefficient is negative, so the GCF is negative. Ignoring signs, find the GCF of the coefficients and of the powers of $b$."
 >}}
 
 {{< fillin
   question="Factor: $-7a^2 + 21a$."
   answer="-7a(a - 3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$-7a(a - 3)$"
-  hint="Use $-7a$ as the GCF; watch the sign on the second term."
+  hint="The leading coefficient is negative, so make the GCF negative, including the variable both terms share; then check the sign of each term inside the parentheses."
 >}}
 
 The greatest common factor doesn't have to be a monomial — it can be a
@@ -527,17 +536,17 @@ Check on your own by multiplying.
 {{< fillin
   question="Factor: $4m(m + 3) - 7(m + 3)$."
   answer="(m + 3)(4m - 7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(m + 3)(4m - 7)$"
-  hint="The common factor is the binomial $m + 3$; pull it out, and what remains from each term forms the other factor."
+  hint="Look for the binomial that both terms share and factor it out; what remains from each term, with its sign, forms the other factor."
 >}}
 
 {{< fillin
   question="Factor: $8n(n - 4) + 5(n - 4)$."
   answer="(n - 4)(8n + 5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(n - 4)(8n + 5)$"
-  hint="The common factor is the binomial $n - 4$; the leftover pieces $8n$ and $+5$ form the other factor."
+  hint="The GCF here is a binomial, not a monomial. Factor it out of both terms; what remains from each term, with its sign, forms the other factor."
 >}}
 
 ## Factor by grouping
@@ -570,17 +579,17 @@ out. Check by multiplying: $(x + 3)(y + 2) = xy + 2x + 3y + 6$. ✓
 {{< fillin
   question="Factor: $xy + 8y + 3x + 24$."
   answer="(x + 8)(y + 3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x + 8)(y + 3)$"
-  hint="Group the first two terms and the last two: factor $y$ from $xy + 8y$ and $3$ from $3x + 24$; a common binomial should appear."
+  hint="Group the first two terms and the last two, factor the GCF from each group, then factor out the binomial the two groups share."
 >}}
 
 {{< fillin
   question="Factor: $ab + 7b + 8a + 56$."
   answer="(a + 7)(b + 8)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a + 7)(b + 8)$"
-  hint="Factor $b$ from $ab + 7b$ and $8$ from $8a + 56$; the two groups should share a binomial factor."
+  hint="Split the polynomial into two pairs of terms and factor the GCF from each pair; if it factors, a common binomial emerges from both."
 >}}
 
 {{< callout type="info" >}}
@@ -610,17 +619,17 @@ Check on your own by multiplying.
 {{< fillin
   question="Factor: $x^2 + 2x - 5x - 10$."
   answer="(x - 5)(x + 2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x - 5)(x + 2)$"
-  hint="Factor $x$ from $x^2 + 2x$ and $-5$ from $-5x - 10$; watch the sign, and a common binomial appears."
+  hint="Group the terms in pairs and factor the GCF from each pair. The third term is negative, so factor a negative GCF from the last two terms, then factor out the common binomial."
 >}}
 
 {{< fillin
   question="Factor: $y^2 + 4y - 7y - 28$."
   answer="(y + 4)(y - 7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(y + 4)(y - 7)$"
-  hint="Factor $y$ from $y^2 + 4y$ and $-7$ from $-7y - 28$; the two groups share a binomial factor."
+  hint="Group the terms in pairs and factor the GCF from each pair, being careful with the signs when factoring the last two terms; then factor out the common binomial."
 >}}
 
 ## Key terms
@@ -638,12 +647,14 @@ factoring the GCF from each group, and then factoring out the common binomial.
 {{< fillin
   question="Find the GCF of 8 and 18."
   answer="2"
+  answerForm="decimal"
   hint="Factor each number into primes, line up the shared primes in columns, and multiply the common ones."
 >}}
 
 {{< fillin
   question="Find the GCF of $8w^2$ and $24w^3$."
   answer="8w^2"
+  answerForm="single-term"
   answerDisplay="$8w^2$"
   hint="Find the GCF of $8$ and $24$, then take the smaller power of $w$."
 >}}
@@ -651,8 +662,9 @@ factoring the GCF from each group, and then factoring out the common binomial.
 {{< fillin
   question="Find the greatest common factor of $10a^3$, $12a^2$, and $14a$."
   answer="2a"
+  answerForm="single-term"
   answerDisplay="$2a$"
-  hint="The GCF of $10$, $12$, and $14$ is $2$; the smallest power of $a$ is $a^1$."
+  hint="Factor each coefficient into primes and expand the powers of $a$, then bring down only what all three terms share."
 >}}
 
 ### Factor the greatest common factor from a polynomial
@@ -660,51 +672,51 @@ factoring the GCF from each group, and then factoring out the common binomial.
 {{< fillin
   question="Factor: $4x + 20$."
   answer="4(x + 5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4(x + 5)$"
-  hint="The GCF of $4x$ and $20$ is $4$; write each term as $4$ times something."
+  hint="Find the GCF of $4x$ and $20$, rewrite each term as a product using it, then use the Distributive Property in reverse."
 >}}
 
 {{< fillin
   question="Factor: $-2x - 4$."
   answer="-2(x + 2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$-2(x + 2)$"
-  hint="The leading coefficient is negative, so use $-2$ as the GCF; watch the sign on the second term."
+  hint="The leading coefficient is negative, so pull the negative sign out along with the GCF of $2x$ and $4$."
 >}}
 
 {{< fillin
   question="Factor: $5x(x + 1) + 3(x + 1)$."
   answer="(x + 1)(5x + 3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x + 1)(5x + 3)$"
-  hint="The common factor is the binomial $x + 1$; pull it out, and what remains from each term forms the other factor."
+  hint="Look for the binomial that both terms share and factor it out; what remains from each term, with its sign, forms the other factor."
 >}}
 
 ### Factor by grouping
 
 {{< fillin
   question="Factor: $xy + 2y + 3x + 6$."
-  answer="(x + 2)(y + 3)"
-  answerForm="factored"
-  answerDisplay="$(x + 2)(y + 3)$"
-  hint="Group the first two terms and the last two: factor $y$ from $xy + 2y$ and $3$ from $3x + 6$; a common binomial should appear."
+  answer="(y + 3)(x + 2)"
+  answerForm="factored-completely"
+  answerDisplay="$(y + 3)(x + 2)$"
+  hint="Group the first two terms and the last two, factor the GCF from each group, then factor out the binomial the two groups share."
 >}}
 
 {{< fillin
   question="Factor: $uv - 9u + 2v - 18$."
-  answer="(v - 9)(u + 2)"
-  answerForm="factored"
-  answerDisplay="$(v - 9)(u + 2)$"
-  hint="Factor $u$ from $uv - 9u$ and $2$ from $2v - 18$; the two groups should share a binomial factor."
+  answer="(u + 2)(v - 9)"
+  answerForm="factored-completely"
+  answerDisplay="$(u + 2)(v - 9)$"
+  hint="Split the polynomial into two pairs of terms and factor the GCF from each pair; if it factors, a common binomial emerges from both."
 >}}
 
 {{< fillin
   question="Factor: $b^2 + 5b - 4b - 20$."
-  answer="(b + 5)(b - 4)"
-  answerForm="factored"
-  answerDisplay="$(b + 5)(b - 4)$"
-  hint="Factor $b$ from $b^2 + 5b$ and $-4$ from $-4b - 20$; the two groups share a binomial factor."
+  answer="(b - 4)(b + 5)"
+  answerForm="factored-completely"
+  answerDisplay="$(b - 4)(b + 5)$"
+  hint="Group the terms in pairs and factor the GCF from each pair. The third term is negative, so factor a negative GCF from the last two terms, then factor out the common binomial."
 >}}
 
 ---

@@ -136,17 +136,17 @@ $$
 {{< fillin
   question="Factor completely: $4m^2-4m-8$."
   answer="4(m+1)(m-2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4(m+1)(m-2)$"
-  hint="Factor out the GCF of $4$ first, then undo FOIL on the trinomial $m^2-m-2$."
+  hint="Factor out the GCF first, then undo FOIL on the trinomial left inside the parentheses."
 >}}
 
 {{< fillin
   question="Factor completely: $5k^2-15k-50$."
   answer="5(k+2)(k-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$5(k+2)(k-5)$"
-  hint="Factor out the GCF of $5$ first, then undo FOIL on $k^2-3k-10$."
+  hint="Factor out the GCF first, then undo FOIL on the trinomial left inside the parentheses."
 >}}
 
 **Example.** Factor completely: $4y^2-36y+56$.
@@ -169,17 +169,17 @@ $$
 {{< fillin
   question="Factor completely: $3r^2-9r+6$."
   answer="3(r-1)(r-2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3(r-1)(r-2)$"
-  hint="Factor out the GCF of $3$, then find two negative numbers that multiply to $2$ and add to $-3$."
+  hint="Factor out the GCF first, then look for two numbers whose product is the trinomial's last term and whose sum is its middle coefficient."
 >}}
 
 {{< fillin
   question="Factor completely: $2t^2-10t+12$."
   answer="2(t-2)(t-3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2(t-2)(t-3)$"
-  hint="Factor out the GCF of $2$, then find two negative numbers that multiply to $6$ and add to $-5$."
+  hint="Factor out the GCF first, then look for two numbers whose product is the trinomial's last term and whose sum is its middle coefficient."
 >}}
 
 In the next example the GCF will include a variable.
@@ -203,17 +203,17 @@ $$
 {{< fillin
   question="Factor completely: $5x^3+15x^2-20x$."
   answer="5x(x-1)(x+4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$5x(x-1)(x+4)$"
-  hint="Factor out the GCF of $5x$, then undo FOIL on $x^2+3x-4$."
+  hint="Factor out the GCF, variable part included, then undo FOIL on the trinomial left inside the parentheses."
 >}}
 
 {{< fillin
   question="Factor completely: $6y^3+18y^2-60y$."
   answer="6y(y-2)(y+5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$6y(y-2)(y+5)$"
-  hint="Factor out the GCF of $6y$, then undo FOIL on $y^2+3y-10$."
+  hint="Factor out the GCF, variable part included, then undo FOIL on the trinomial left inside the parentheses."
 >}}
 
 ## Factor trinomials using trial and error
@@ -282,17 +282,17 @@ $$3y^2+22y+7 = (y+7)(3y+1)$$
 {{< fillin
   question="Factor completely: $2a^2+5a+3$."
   answer="(a+1)(2a+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a+1)(2a+3)$"
-  hint="The first term factors as $a,\ 2a$ and the last term $3$ factors as $1,\ 3$. Test the combinations until the middle term is $5a$."
+  hint="List the factor pairs of the first term and of the last term, then test the combinations until the outer and inner products add to the middle term."
 >}}
 
 {{< fillin
   question="Factor completely: $4b^2+5b+1$."
   answer="(b+1)(4b+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(b+1)(4b+1)$"
-  hint="The first term factors as $b,\ 4b$ and the last term $1$ factors as $1,\ 1$. Test the combinations until the middle term is $5b$."
+  hint="List the factor pairs of the first term and of the last term, then test the combinations until the outer and inner products add to the middle term."
 >}}
 
 When the middle term is negative and the last term is positive, the signs in
@@ -320,17 +320,17 @@ $$6b^2-13b+5 = (2b-1)(3b-5)$$
 {{< fillin
   question="Factor completely: $8x^2-14x+3$."
   answer="(2x-3)(4x-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2x-3)(4x-1)$"
-  hint="The middle term is negative and the last term is positive, so both binomials use minus signs."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 {{< fillin
   question="Factor completely: $10y^2-37y+7$."
   answer="(2y-7)(5y-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2y-7)(5y-1)$"
-  hint="Both binomial signs are negative. Try the factor pair $2y,\ 5y$ for the first term."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 When we factor an expression, we always look for a greatest common factor
@@ -352,17 +352,17 @@ $$14x^2-47x-7 = (2x-7)(7x+1)$$
 {{< fillin
   question="Factor completely: $8a^2-3a-5$."
   answer="(a-1)(8a+5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a-1)(8a+5)$"
-  hint="The last term is negative, so one binomial has a plus sign and the other a minus sign. Try $a,\ 8a$ for the first term."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 {{< fillin
   question="Factor completely: $6b^2-b-15$."
   answer="(2b+3)(3b-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2b+3)(3b-5)$"
-  hint="The last term is negative, so the binomials take opposite signs. Try the first-term pair $2b,\ 3b$."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 **Example.** Factor completely using trial and error: $18n^2-37n+15$.
@@ -377,17 +377,17 @@ $$18n^2-37n+15 = (2n-3)(9n-5)$$
 {{< fillin
   question="Factor completely: $18x^2-3x-10$."
   answer="(3x+2)(6x-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3x+2)(6x-5)$"
-  hint="The last term is negative, so the binomials take opposite signs. Try the first-term pair $3x,\ 6x$."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 {{< fillin
   question="Factor completely: $30y^2-53y-21$."
   answer="(3y+1)(10y-21)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3y+1)(10y-21)$"
-  hint="The last term is negative, so the binomials take opposite signs. Try the first-term pair $3y,\ 10y$."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 Don't forget to look for a GCF first.
@@ -407,17 +407,17 @@ $$10y^4+55y^3+60y^2 = 5y^2(y+4)(2y+3)$$
 {{< fillin
   question="Factor completely: $15n^3-85n^2+100n$."
   answer="5n(n-4)(3n-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$5n(n-4)(3n-5)$"
-  hint="Factor out the GCF of $5n$ first, then factor $3n^2-17n+20$ by trial and error."
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses by trial and error."
 >}}
 
 {{< fillin
   question="Factor completely: $56q^3+320q^2-96q$."
   answer="8q(q+6)(7q-2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$8q(q+6)(7q-2)$"
-  hint="Factor out the GCF of $8q$ first, then factor $7q^2+40q-12$ by trial and error."
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses by trial and error."
 >}}
 
 ## Factor trinomials using the "ac" method
@@ -475,17 +475,17 @@ $$
 {{< fillin
   question="Factor completely using the ac method: $6x^2+13x+2$."
   answer="(x+2)(6x+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+2)(6x+1)$"
-  hint="Here $ac=12$. Find two numbers that multiply to $12$ and add to $13$, then split the middle term and group."
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< fillin
   question="Factor completely using the ac method: $4y^2+8y+3$."
   answer="(2y+1)(2y+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2y+1)(2y+3)$"
-  hint="Here $ac=12$. Find two numbers that multiply to $12$ and add to $8$, then split the middle term and group."
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 When the third term of the trinomial is negative, the factors of the third
@@ -516,17 +516,17 @@ $$
 {{< fillin
   question="Factor completely using the ac method: $20h^2+13h-15$."
   answer="(4h+5)(5h-3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(4h+5)(5h-3)$"
-  hint="Here $ac=-300$. Find two numbers that multiply to $-300$ and add to $13$, then split the middle term and group."
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< fillin
   question="Factor completely using the ac method: $6g^2+19g-20$."
   answer="(g+4)(6g-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(g+4)(6g-5)$"
-  hint="Here $ac=-120$. Find two numbers that multiply to $-120$ and add to $19$, then split the middle term and group."
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 **Example.** Factor using the "ac" method: $2x^2+6x+5$.
@@ -547,7 +547,7 @@ There are no factors that multiply to $10$ and add to $6$. The polynomial is
 
 {{< multiplechoice
   question="Factor completely: $10t^2+19t-15$."
-  hint="Here $ac=-150$. Are there two numbers that multiply to $-150$ and add to $19$? If so, it factors; if not, it is prime."
+  hint="Look for two numbers whose product is $ac$ and whose sum is $b$. If they exist, split the middle term and factor by grouping; if not, the trinomial is prime."
   answer="$(2t+5)(5t-3)$"
 >}}
 It is prime
@@ -557,7 +557,7 @@ $(2t+5)(5t-3)$
 
 {{< multiplechoice
   question="Is $3u^2+8u+5$ factorable, and if so into what?"
-  hint="Here $ac=15$. Look for two numbers that multiply to $15$ and add to $8$."
+  hint="Look for two numbers whose product is $ac$ and whose sum is $b$. If they exist, split the middle term and factor by grouping; if not, the trinomial is prime."
   answer="$(u+1)(3u+5)$"
 >}}
 $(3u+1)(u+5)$
@@ -582,18 +582,37 @@ $$10y^2-55y+70 = 5(y-2)(2y-7)$$
 {{< fillin
   question="Factor completely: $16x^2-32x+12$."
   answer="4(2x-3)(2x-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4(2x-3)(2x-1)$"
-  hint="Factor out the GCF of $4$ first, then factor $4x^2-8x+3$."
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses — look for two numbers whose product is $ac$ and whose sum is $b$."
 >}}
 
 {{< fillin
   question="Factor completely: $18w^2-39w+18$."
   answer="3(3w-2)(2w-3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3(3w-2)(2w-3)$"
-  hint="Factor out the GCF of $3$ first, then factor $6w^2-13w+6$."
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses — look for two numbers whose product is $ac$ and whose sum is $b$."
 >}}
+
+We can now update the preliminary factoring strategy to include trinomials of
+the form $ax^2+bx+c$. Remember, some polynomials are prime and so they cannot
+be factored.
+
+{{< callout type="info" >}}
+  **Choose a strategy to factor polynomials completely (updated).**
+
+  1. Is there a greatest common factor? Factor it.
+  2. Is the polynomial a binomial, trinomial, or are there more than three
+     terms?
+     - If it is a binomial, right now we have no method to factor it.
+     - If it is a trinomial of the form $x^2+bx+c$: Undo FOIL,
+       $(x\ \ )(x\ \ )$.
+     - If it is a trinomial of the form $ax^2+bx+c$: Use trial and error or
+       the "ac" method.
+     - If it has more than three terms: Use the grouping method.
+  3. Check by multiplying the factors.
+{{< /callout >}}
 
 ## Key terms
 
@@ -603,7 +622,7 @@ combinations until the product matches the trinomial. **"ac" method** — a
 structured method of factoring $ax^2+bx+c$ by finding two numbers that
 multiply to $ac$ and add to $b$, splitting the middle term with them, and
 factoring by grouping. **prime polynomial** — a polynomial that cannot be
-factored (other than monomial factors).
+factored.
 
 ## Practice
 
@@ -644,25 +663,25 @@ It has more than three terms: factor by grouping
 {{< fillin
   question="Factor completely: $5x^2+35x+30$."
   answer="5(x+1)(x+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$5(x+1)(x+6)$"
-  hint="Factor out the GCF of $5$ first, then undo FOIL on $x^2+7x+6$."
+  hint="Factor out the GCF first, then undo FOIL on the trinomial left inside the parentheses."
 >}}
 
 {{< fillin
   question="Factor completely: $2z^2-2z-24$."
   answer="2(z-4)(z+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2(z-4)(z+3)$"
-  hint="Factor out the GCF of $2$ first, then find two numbers that multiply to $-12$ and add to $-1$."
+  hint="Factor out the GCF first, then look for two numbers whose product is the trinomial's last term and whose sum is its middle coefficient."
 >}}
 
 {{< fillin
   question="Factor completely: $p^3-8p^2-20p$."
   answer="p(p-10)(p+2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$p(p-10)(p+2)$"
-  hint="Factor out the GCF of $p$ first, then find two numbers that multiply to $-20$ and add to $-8$."
+  hint="Factor out the GCF, variable part included, then undo FOIL on the trinomial left inside the parentheses."
 >}}
 
 ### Factor trinomials using trial and error
@@ -670,25 +689,25 @@ It has more than three terms: factor by grouping
 {{< fillin
   question="Factor completely using trial and error: $2t^2+7t+5$."
   answer="(2t+5)(t+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2t+5)(t+1)$"
-  hint="The first term factors as $t,\ 2t$ and the last term $5$ factors as $1,\ 5$. Test combinations until the middle term is $7t$."
+  hint="List the factor pairs of the first term and of the last term, then test the combinations until the outer and inner products add to the middle term."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $6p^2-19p+10$."
   answer="(3p-2)(2p-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3p-2)(2p-5)$"
-  hint="The last term is positive and the middle term is negative, so both binomial signs are negative. Try the first-term pair $2p,\ 3p$."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $4q^2-7q-2$."
   answer="(4q+1)(q-2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(4q+1)(q-2)$"
-  hint="The last term is negative, so the binomials take opposite signs. Try the first-term pair $q,\ 4q$."
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 ### Factor trinomials using the "ac" method
@@ -696,22 +715,22 @@ It has more than three terms: factor by grouping
 {{< fillin
   question="Factor completely using the ac method: $5n^2+21n+4$."
   answer="(5n+1)(n+4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(5n+1)(n+4)$"
-  hint="Here $ac=20$. Find two numbers that multiply to $20$ and add to $21$, then split the middle term and group."
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< fillin
   question="Factor completely using the ac method: $2n^2-27n-45$."
   answer="(2n+3)(n-15)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2n+3)(n-15)$"
-  hint="Here $ac=-90$. Find two numbers that multiply to $-90$ and add to $-27$, then split the middle term and group."
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< multiplechoice
   question="Factor completely: $3x^2+5x+4$."
-  hint="Here $ac=12$. Is there a pair of numbers that multiply to $12$ and add to $5$? If not, the trinomial is prime."
+  hint="Look for two numbers whose product is $ac$ and whose sum is $b$. If they exist, split the middle term and factor by grouping; if not, the trinomial is prime."
   answer="It is prime"
 >}}
 $(x+1)(3x+4)$
@@ -721,4 +740,4 @@ It is prime
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.3: Factor Trinomials of the Form ax²+bx+c](https://openstax.org/books/elementary-algebra-2e/pages/7-3-factor-trinomials-of-the-form-ax-2-bx-c) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose with typeset display arrays and the trial-and-error "possible factors" work as markdown tables; described the factoring-strategy flowchart in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.3: Factor Trinomials of the Form ax²+bx+c](https://openstax.org/books/elementary-algebra-2e/pages/7-3-factor-trinomials-of-the-form-ax-2-bx-c) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose with typeset display arrays and the trial-and-error "possible factors" work as markdown tables; described the preliminary and updated factoring-strategy flowcharts in prose; corrected the factoring step of the $10y^4+55y^3+60y^2$ example, which the source prints as $15y^2(2y^2+11y+12)$, to $5y^2(2y^2+11y+12)$; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

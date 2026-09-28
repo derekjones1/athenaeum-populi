@@ -87,13 +87,15 @@ The solutions are $x = -1$ and $x = 4$.
 {{< fillin
   question="Solve: $(x - 3)(x + 5) = 0$. Enter the two solutions from least to greatest, separated by commas."
   answer="-5, 3"
-  hint="Set each factor equal to zero: $x - 3 = 0$ or $x + 5 = 0$, then solve each."
+  answerForm="decimal"
+  hint="Set each factor equal to zero, then solve each linear equation."
 >}}
 
 {{< fillin
   question="Solve: $(y - 6)(y + 9) = 0$. Enter the two solutions from least to greatest, separated by commas."
   answer="-9, 6"
-  hint="Set each factor equal to zero: $y - 6 = 0$ or $y + 9 = 0$, then solve each."
+  answerForm="decimal"
+  hint="Use the Zero Product Property: set each factor equal to zero and solve."
 >}}
 
 We usually will do a little more work than we did in this last example to
@@ -118,7 +120,8 @@ $n = \tfrac{1}{6}$.
 {{< fillin
   question="Solve: $(3m - 2)(2m + 1) = 0$. Enter the two solutions from least to greatest, separated by commas."
   answer="-\frac{1}{2}, \frac{2}{3}"
-  hint="Set $3m - 2 = 0$ and $2m + 1 = 0$, then solve each for $m$."
+  answerForm="fraction lowest-terms"
+  hint="Set each factor equal to zero. In each equation, isolate the $m$ term, then divide by its coefficient."
 >}}
 
 **Example.** Solve: $3p(10p + 7) = 0$.
@@ -138,7 +141,8 @@ The solutions are $p = 0$ and $p = -\tfrac{7}{10}$.
 {{< fillin
   question="Solve: $2u(5u - 1) = 0$. Enter the two solutions from least to greatest, separated by commas."
   answer="0, \frac{1}{5}"
-  hint="Set $2u = 0$ and $5u - 1 = 0$. Note $2u = 0$ gives $u = 0$."
+  answerForm="lowest-terms"
+  hint="Set each factor equal to zero — the monomial factor as well as the binomial — then solve each equation."
 >}}
 
 It may appear that there is only one factor in the next example. Remember,
@@ -164,7 +168,8 @@ $y = 8$.
 {{< fillin
   question="Solve: $(x + 1)^2 = 0$. This has a double root — enter the single solution."
   answer="-1"
-  hint="Rewrite as $(x + 1)(x + 1) = 0$. Both factors give the same equation."
+  answerForm="decimal"
+  hint="Write the square as a product of two equal factors, then use the Zero Product Property."
 >}}
 
 ## Solve Quadratic Equations by Factoring
@@ -213,13 +218,15 @@ The solutions are $x = -4$ and $x = 2$.
 {{< fillin
   question="Solve: $x^2 - x - 12 = 0$. Enter the two solutions from least to greatest, separated by commas."
   answer="-3, 4"
-  hint="Factor into $(x - 4)(x + 3) = 0$, then set each factor to zero."
+  answerForm="decimal"
+  hint="Factor the trinomial — look for two numbers whose product is the constant term and whose sum is the middle coefficient — then set each factor equal to zero."
 >}}
 
 {{< fillin
   question="Solve: $b^2 + 9b + 14 = 0$. Enter the two solutions from least to greatest, separated by commas."
   answer="-7, -2"
-  hint="Factor into $(b + 7)(b + 2) = 0$, then set each factor to zero."
+  answerForm="decimal"
+  hint="Factor the trinomial into two binomials, then use the Zero Product Property and solve each equation."
 >}}
 
 {{< callout type="info" >}}
@@ -252,7 +259,8 @@ Both answers check. The solutions are $y = -\tfrac{5}{2}$ and $y = 9$.
 {{< fillin
   question="Solve: $3c^2 = 10c - 8$. Enter the two solutions from least to greatest, separated by commas."
   answer="\frac{4}{3}, 2"
-  hint="Write as $3c^2 - 10c + 8 = 0$, then factor into $(3c - 4)(c - 2) = 0$."
+  answerForm="lowest-terms"
+  hint="Write the equation in standard form, factor the trinomial — look for two numbers whose product is the leading coefficient times the constant term and whose sum is the middle coefficient — then set each factor equal to zero."
 >}}
 
 **Example.** Solve: $5x^2 - 13x = 7x$.
@@ -272,7 +280,8 @@ Both answers check. The solutions are $x = 0$ and $x = 4$.
 {{< fillin
   question="Solve: $6a^2 + 9a = 3a$. Enter the two solutions from least to greatest, separated by commas."
   answer="-1, 0"
-  hint="Write as $6a^2 + 6a = 0$, then factor out the greatest common factor $6a$."
+  answerForm="decimal"
+  hint="Write the equation in standard form, factor out the greatest common factor, then set each factor equal to zero."
 >}}
 
 Do you recognize the special product pattern in the next example?
@@ -294,7 +303,8 @@ The solutions are $q = \tfrac{5}{12}$ and $q = -\tfrac{5}{12}$.
 {{< fillin
   question="Solve: $25p^2 = 49$. Enter the two solutions from least to greatest, separated by commas."
   answer="-\frac{7}{5}, \frac{7}{5}"
-  hint="Write as $25p^2 - 49 = 0$, a difference of squares: $(5p - 7)(5p + 7) = 0$."
+  answerForm="fraction lowest-terms"
+  hint="Get zero on one side and look for a special product pattern. Factor, then set each factor equal to zero."
 >}}
 
 The left side in the next example is factored, but the right side is not
@@ -320,7 +330,8 @@ The solutions are $x = \tfrac{2}{3}$ and $x = 4$.
 {{< fillin
   question="Solve: $(2m + 1)(m + 3) = 12m$. Enter the two solutions from least to greatest, separated by commas."
   answer="1, \frac{3}{2}"
-  hint="Multiply out to $2m^2 + 7m + 3 = 12m$, get standard form $2m^2 - 5m + 3 = 0$, then factor into $(2m - 3)(m - 1) = 0$."
+  answerForm="lowest-terms"
+  hint="The right side is not zero: multiply the binomials, write the equation in standard form, then factor and set each factor equal to zero."
 >}}
 
 The Zero Product Property also applies to the product of three or more
@@ -346,7 +357,8 @@ The solutions are $m = 0$ and $m = \tfrac{10}{3}$.
 {{< fillin
   question="Solve: $8x^3 = 24x^2 - 18x$. Enter the two distinct solutions from least to greatest, separated by commas."
   answer="0, \frac{3}{2}"
-  hint="Get standard form $8x^3 - 24x^2 + 18x = 0$, factor out $2x$, then factor the perfect-square trinomial."
+  answerForm="lowest-terms"
+  hint="Bring all terms to one side, factor out the greatest common factor first, then factor the trinomial that remains and set each factor equal to zero."
 >}}
 
 When we factor the quadratic equation in the next example we will get three
@@ -372,7 +384,8 @@ are $x = 7$ and $x = -3$.
 {{< fillin
   question="Solve: $18a^2 - 30 = -33a$. Enter the two solutions from least to greatest, separated by commas."
   answer="-\frac{5}{2}, \frac{2}{3}"
-  hint="Get standard form $18a^2 + 33a - 30 = 0$, factor out $3$, then factor $(3a - 2)(2a + 5) = 0$."
+  answerForm="fraction lowest-terms"
+  hint="Write the equation in standard form and factor out the greatest common factor first. Factor the trinomial, then set each factor that contains the variable equal to zero."
 >}}
 
 Solving quadratic equations by factoring will make use of all the factoring
@@ -430,7 +443,8 @@ $(-11)(-12) = 132$. The consecutive integers are $11, 12$ and $-11, -12$.
 {{< fillin
   question="The product of two consecutive integers is 240. Find the two positive integers, entered from least to greatest, separated by commas."
   answer="15, 16"
-  hint="Let $n$ be the first integer. Then $n(n + 1) = 240$; write $n^2 + n - 240 = 0$ and factor."
+  answerForm="decimal"
+  hint="Let $n$ be the first integer and $n + 1$ the next. Write an equation for their product, put it in standard form, and factor. Keep the positive solution."
 >}}
 
 Were you surprised by the pair of negative integers that is one of the
@@ -464,9 +478,10 @@ $W + 2 = 3 + 2 = 5$. The width of the garden is $3$ feet and the length is
 $5$ feet.
 
 {{< fillin
-  question="A rectangular sign has an area of 30 square feet. The length of the sign is one foot more than the width. Find the width of the sign, in feet."
-  answer="5"
-  hint="Let $W$ be the width. Then $W(W + 1) = 30$; write $W^2 + W - 30 = 0$ and factor. Keep the positive solution."
+  question="A rectangular sign has an area of 30 square feet. The length of the sign is one foot more than the width. Find the length and width of the sign. Enter the width and then the length, in feet, separated by a comma."
+  answer="5,6"
+  answerForm="decimal"
+  hint="Let $W$ be the width and write the length in terms of $W$. Use $A = L \cdot W$, put the equation in standard form, and factor. A width cannot be negative."
 >}}
 
 In an earlier chapter, we used the **Pythagorean Theorem** ($a^2 + b^2 = c^2$).
@@ -515,7 +530,8 @@ sides of the deck are $8$, $15$, and $17$ feet.
 {{< fillin
   question="A boat's sail is a right triangle. The length of one side of the sail is 7 feet more than the other side. The hypotenuse is 13 feet. Enter the lengths of the two sides (the legs) from least to greatest, separated by commas."
   answer="5, 12"
-  hint="Let $x$ be the shorter side. Then $x^2 + (x + 7)^2 = 13^2$; simplify to $2x^2 + 14x - 120 = 0$ and factor. Keep the positive solution, then add 7."
+  answerForm="decimal"
+  hint="Let $x$ be the shorter side and write the longer side in terms of $x$. Use the Pythagorean Theorem, get zero on one side, factor out the greatest common factor, and factor. A length cannot be negative."
 >}}
 
 ## Key terms
@@ -536,20 +552,23 @@ hypotenuse $c$, $a^2 + b^2 = c^2$.
   question="Solve: $(x - 3)(x + 7) = 0$. Enter both solutions, separated by a comma."
   answer="3,-7"
   answerMode="unordered"
-  hint="Set each factor equal to zero: $x - 3 = 0$ or $x + 7 = 0$, then solve each equation for $x$."
+  answerForm="decimal"
+  hint="Set each factor equal to zero, then solve each linear equation."
 >}}
 
 {{< fillin
   question="Solve: $(3a - 10)(2a - 7) = 0$. Enter both solutions, separated by a comma."
   answer="\frac{10}{3},\frac{7}{2}"
   answerMode="unordered"
-  hint="Set each factor equal to zero: $3a - 10 = 0$ or $2a - 7 = 0$, then solve each for $a$."
+  answerForm="fraction lowest-terms"
+  hint="Set each factor equal to zero. In each equation, isolate the $a$ term, then divide by its coefficient."
 >}}
 
 {{< fillin
   question="Solve: $(2x - 1)^2 = 0$. This has a double root — enter the single solution."
   answer="\frac{1}{2}"
-  hint="Rewrite as $(2x - 1)(2x - 1) = 0$. Both factors give the same equation."
+  answerForm="fraction lowest-terms"
+  hint="Write the square as a product of two equal factors, then use the Zero Product Property."
 >}}
 
 ### Solve quadratic equations by factoring
@@ -558,6 +577,7 @@ hypotenuse $c$, $a^2 + b^2 = c^2$.
   question="Solve: $x^2 + 7x + 12 = 0$. Enter both solutions, separated by a comma."
   answer="-3,-4"
   answerMode="unordered"
+  answerForm="decimal"
   hint="Factor the trinomial into two binomials, then use the Zero Product Property."
 >}}
 
@@ -565,13 +585,15 @@ hypotenuse $c$, $a^2 + b^2 = c^2$.
   question="Solve: $49m^2 = 144$. Enter both solutions, separated by a comma."
   answer="\frac{12}{7},-\frac{12}{7}"
   answerMode="unordered"
-  hint="Write in standard form $49m^2 - 144 = 0$, then factor as a difference of squares."
+  answerForm="fraction lowest-terms"
+  hint="Get zero on one side, factor the difference of squares, then set each factor equal to zero."
 >}}
 
 {{< fillin
   question="Solve: $20x^2 - 60x = -45$. This has a double root — enter the single solution."
   answer="\frac{3}{2}"
-  hint="Divide out the common factor of $5$, then factor the resulting perfect-square trinomial."
+  answerForm="fraction lowest-terms"
+  hint="Write the equation in standard form, factor out the greatest common factor, then factor the trinomial that remains."
 >}}
 
 ### Solve applications modeled by quadratic equations
@@ -579,21 +601,24 @@ hypotenuse $c$, $a^2 + b^2 = c^2$.
 {{< fillin
   question="The product of two consecutive integers is 56. Find the two positive integers, entered from least to greatest, separated by a comma."
   answer="7,8"
-  hint="Let $n$ be the first integer, so $n + 1$ is the next. Translate to $n(n + 1) = 56$, write in standard form, and factor. Keep the positive solution."
+  answerForm="decimal"
+  hint="Let $n$ be the first integer, so $n + 1$ is the next. Write an equation for their product, put it in standard form, and factor. Keep the positive solution."
 >}}
 
 {{< fillin
   question="The area of a rectangular carpet is 28 square feet. The length is three feet more than the width. Enter the width and then the length, separated by a comma."
   answer="4,7"
-  hint="Let $W$ be the width, so $W + 3$ is the length. Use $A = L \cdot W$ to write $W(W + 3) = 28$, then factor. Keep the positive solution."
+  answerForm="decimal"
+  hint="Let $W$ be the width and write the length in terms of $W$. Use $A = L \cdot W$, put the equation in standard form, and factor. A width cannot be negative."
 >}}
 
 {{< fillin
   question="A pennant is shaped like a right triangle, with hypotenuse 10 feet. The length of one side is two feet longer than the length of the other side. Enter the lengths of the two sides from least to greatest, separated by a comma."
   answer="6,8"
-  hint="Let $x$ be the shorter side, so $x + 2$ is the longer side. Use the Pythagorean Theorem: $x^2 + (x + 2)^2 = 10^2$, then factor. Keep the positive solution."
+  answerForm="decimal"
+  hint="Let $x$ be the shorter side and write the longer side in terms of $x$. Use the Pythagorean Theorem, get zero on one side, and factor. A length cannot be negative."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.6: Quadratic Equations](https://openstax.org/books/elementary-algebra-2e/pages/7-6-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the Example step tables as prose/typeset math, recreated the right-triangle deck figure with the accessible Figure component, and described the garden sketch in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.6: Quadratic Equations](https://openstax.org/books/elementary-algebra-2e/pages/7-6-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the Example step tables as prose/typeset math, recreated the right-triangle deck figure with the accessible Figure component, and described the garden sketch in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; asked only for the positive pair in the two consecutive-integer exercises, whose source answers also list the negative pair; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

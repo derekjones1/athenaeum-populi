@@ -79,15 +79,10 @@ product is $c$ and sum is $b$.
 
 **Example.** Factor: $x^2+7x+12$.
 
-$$
-\begin{array}{lrcl}
-\text{Write the factors as two binomials with first terms } x. & & & (x\ \ \ )(x\ \ \ ) \\[4pt]
-\text{Find two numbers } m \text{ and } n \text{ that multiply to } 12 \text{ and add to } 7. & & & \\[4pt]
-\text{Use } 3 \text{ and } 4 \text{ as the last terms.} & & & (x+3)(x+4)
-\end{array}
-$$
+**Step 1.** Write the factors as two binomials with first terms $x$:
+$(x\ \ \ )(x\ \ \ )$.
 
-Find two numbers that multiply to $12$ and add to $7$:
+**Step 2.** Find two numbers $m$ and $n$ that multiply to $12$ and add to $7$:
 
 | Factors of $12$ | Sum of factors |
 | :---: | :---: |
@@ -95,7 +90,9 @@ Find two numbers that multiply to $12$ and add to $7$:
 | $2, 6$ | $2+6=8$ |
 | $3, 4$ | $3+4=7$ |
 
-Check by multiplying the factors:
+**Step 3.** Use $3$ and $4$ as the last terms of the binomials: $(x+3)(x+4)$.
+
+**Step 4.** Check by multiplying the factors:
 
 $$
 \begin{array}{rcl}
@@ -108,17 +105,17 @@ $$
 {{< fillin
   question="Factor: $x^2 + 6x + 8$."
   answer="(x+2)(x+4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+2)(x+4)$"
-  hint="Find two numbers that multiply to $8$ and add to $6$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $y^2 + 8y + 15$."
   answer="(y+3)(y+5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(y+3)(y+5)$"
-  hint="Find two numbers that multiply to $15$ and add to $8$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< callout type="info" >}}
@@ -158,17 +155,17 @@ $$
 {{< fillin
   question="Factor: $q^2 + 10q + 24$."
   answer="(q+4)(q+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(q+4)(q+6)$"
-  hint="Find two numbers that multiply to $24$ and add to $10$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $t^2 + 14t + 24$."
   answer="(t+2)(t+12)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(t+2)(t+12)$"
-  hint="Find two numbers that multiply to $24$ and add to $14$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 **Example.** Factor: $y^2+17y+60$.
@@ -198,17 +195,17 @@ $$
 {{< fillin
   question="Factor: $x^2 + 19x + 60$."
   answer="(x+4)(x+15)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+4)(x+15)$"
-  hint="Find two numbers that multiply to $60$ and add to $19$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $v^2 + 23v + 60$."
   answer="(v+3)(v+20)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(v+3)(v+20)$"
-  hint="Find two numbers that multiply to $60$ and add to $23$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 ### Factor trinomials with $b$ negative, $c$ positive
@@ -246,17 +243,17 @@ $$
 {{< fillin
   question="Factor: $u^2 - 9u + 18$."
   answer="(u-3)(u-6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(u-3)(u-6)$"
-  hint="The last term is positive and the middle term is negative, so both numbers are negative. They multiply to $18$ and add to $-9$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $y^2 - 16y + 63$."
   answer="(y-7)(y-9)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(y-7)(y-9)$"
-  hint="Both numbers are negative: they multiply to $63$ and add to $-16$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 ### Factor trinomials with $c$ negative
@@ -294,17 +291,17 @@ $$
 {{< fillin
   question="Factor: $h^2 + 4h - 12$."
   answer="(h-2)(h+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(h-2)(h+6)$"
-  hint="The last term is negative, so the two numbers have different signs. They multiply to $-12$ and add to $4$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $k^2 + k - 20$."
   answer="(k-4)(k+5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(k-4)(k+5)$"
-  hint="The two numbers have different signs; they multiply to $-20$ and add to $1$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 Let's make a minor change to the last trinomial and see what effect it has on
@@ -337,17 +334,17 @@ results in the correct sign of the middle term.
 {{< fillin
   question="Factor: $x^2 - 4x - 12$."
   answer="(x+2)(x-6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+2)(x-6)$"
-  hint="The two numbers have different signs; they multiply to $-12$ and add to $-4$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $y^2 - y - 20$."
   answer="(y+4)(y-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(y+4)(y-5)$"
-  hint="The two numbers have different signs; they multiply to $-20$ and add to $-1$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 **Example.** Factor: $q^2-2q-15$.
@@ -375,17 +372,17 @@ $$
 {{< fillin
   question="Factor: $r^2 - 3r - 40$."
   answer="(r+5)(r-8)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(r+5)(r-8)$"
-  hint="The two numbers have different signs; they multiply to $-40$ and add to $-3$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $s^2 - 3s - 10$."
   answer="(s+2)(s-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(s+2)(s-5)$"
-  hint="The two numbers have different signs; they multiply to $-10$ and add to $-3$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 ### When a trinomial is prime
@@ -408,10 +405,10 @@ As shown in the table, none of the factors add to $-6$; therefore, the
 expression is **prime.**
 
 {{< callout type="info" >}}
-  A trinomial answer of "Prime" cannot be typed into the answer box, so the two
-  drills below both factor. Reason through $m^2+4m+18$ and $n^2-10n+12$ on
-  paper: list the factor pairs of the last term and confirm that none of them
-  sum to the middle coefficient — both are prime.
+  A trinomial answer of "Prime" cannot be typed into the answer box, so this
+  example's two practice problems are left for paper. Reason through
+  $m^2+4m+18$ and $n^2-10n+12$: list the factor pairs of the last term and
+  confirm that none of them sum to the middle coefficient — both are prime.
 {{< /callout >}}
 
 ### Putting it together
@@ -444,17 +441,17 @@ $$
 {{< fillin
   question="Factor: $9m + m^2 + 18$. Write the trinomial in decreasing degree order first."
   answer="(m+3)(m+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(m+3)(m+6)$"
-  hint="Rewrite as $m^2 + 9m + 18$, then find two numbers that multiply to $18$ and add to $9$."
+  hint="Put the terms in decreasing degree order first, then find two numbers whose product is the constant term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $-7n + 12 + n^2$. Write the trinomial in decreasing degree order first."
   answer="(n-3)(n-4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(n-3)(n-4)$"
-  hint="Rewrite as $n^2 - 7n + 12$. Both numbers are negative: they multiply to $12$ and add to $-7$."
+  hint="Put the terms in decreasing degree order first. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the constant term and their sum to the middle coefficient."
 >}}
 
 Let's summarize the method we just developed to factor trinomials of the form
@@ -529,17 +526,17 @@ $$
 {{< fillin
   question="Factor: $u^2 + 11uv + 28v^2$."
   answer="(u+4v)(u+7v)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(u+4v)(u+7v)$"
-  hint="The first terms are $u$ and the last terms contain $v$. Find two numbers that multiply to $28$ and add to $11$."
+  hint="Put the first variable first in each binomial and the second variable in each last term, then find two numbers whose product is the last coefficient and whose sum is the middle coefficient."
 >}}
 
 {{< fillin
   question="Factor: $x^2 + 13xy + 42y^2$."
   answer="(x+6y)(x+7y)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+6y)(x+7y)$"
-  hint="Find two numbers that multiply to $42$ and add to $13$; each last term carries a $y$."
+  hint="Put the first variable first in each binomial and the second variable in each last term, then find two numbers whose product is the last coefficient and whose sum is the middle coefficient."
 >}}
 
 **Example.** Factor: $r^2-8rs-9s^2$.
@@ -568,17 +565,17 @@ $$
 {{< fillin
   question="Factor: $a^2 - 11ab + 10b^2$."
   answer="(a-b)(a-10b)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a-b)(a-10b)$"
-  hint="The last term is positive and the middle term is negative, so both numbers are negative. They multiply to $10$ and add to $-11$; each last term carries a $b$."
+  hint="Put the first variable first in each binomial and the second variable in each last term. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the last coefficient and their sum to the middle coefficient."
 >}}
 
 {{< fillin
   question="Factor: $m^2 - 13mn + 12n^2$."
   answer="(m-n)(m-12n)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(m-n)(m-12n)$"
-  hint="Both numbers are negative: they multiply to $12$ and add to $-13$; each last term carries an $n$."
+  hint="Put the first variable first in each binomial and the second variable in each last term. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the last coefficient and their sum to the middle coefficient."
 >}}
 
 **Example.** Factor: $u^2-9uv-12v^2$.
@@ -600,19 +597,19 @@ Note there are no factor pairs that give us $-9$ as a sum. The trinomial is
 **prime.**
 
 {{< callout type="info" >}}
-  As before, a "Prime" answer can't be typed into the box. Two source problems,
-  $x^2-7xy-10y^2$ and $p^2+15pq+20q^2$, are both prime — verify on paper that no
-  factor pair of the last coefficient sums to the middle one ($-10$ never sums
-  to $-7$; $20$ never sums to $15$). The drill below is a closely related
-  trinomial that *does* factor.
+  As before, a "Prime" answer can't be typed into the box. This example's two
+  practice problems, $x^2-7xy-10y^2$ and $p^2+15pq+20q^2$, are both prime —
+  verify on paper that no factor pair of $-10$ sums to $-7$ and no factor pair
+  of $20$ sums to $15$. The drill below, taken from the section's exercises,
+  *does* factor.
 {{< /callout >}}
 
 {{< fillin
-  question="Factor: $x^2 - 3xy - 10y^2$."
-  answer="(x+2y)(x-5y)"
-  answerForm="factored"
-  answerDisplay="$(x+2y)(x-5y)$"
-  hint="The last term is negative, so the two numbers have different signs. They multiply to $-10$ and add to $-3$; each last term carries a $y$."
+  question="Factor: $x^2 - 2xy - 80y^2$."
+  answer="(x+8y)(x-10y)"
+  answerForm="factored-completely"
+  answerDisplay="$(x+8y)(x-10y)$"
+  hint="Put the first variable first in each binomial and the second variable in each last term. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the last coefficient and their sum to the middle coefficient."
 >}}
 
 ## Key terms
@@ -629,22 +626,22 @@ binomials with integer coefficients (no factor pair of $c$ adds to $b$).
 {{< fillin
   question="Factor: $x^2+4x+3$."
   answer="(x+1)(x+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+1)(x+3)$"
-  hint="Find two numbers that multiply to $3$ and add to $4$."
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor: $a^2-3a-28$."
   answer="(a-7)(a+4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a-7)(a+4)$"
-  hint="The two numbers have different signs; they multiply to $-28$ and add to $-3$."
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< multiplechoice
   question="Factor $x^2+x+5$, or identify that it cannot be factored."
-  hint="Look for two integers that multiply to $5$ and add to $1$. Check every factor pair of $5$, including the negative pair."
+  hint="List every factor pair of the last term, including the negative pairs, and check whether any pair sums to the coefficient of the middle term."
   answer="It is prime"
 >}}
 $(x-1)(x-5)$
@@ -657,19 +654,19 @@ $(x+1)(x+5)$
 {{< fillin
   question="Factor: $p^2+3pq+2q^2$."
   answer="(p+q)(p+2q)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(p+q)(p+2q)$"
-  hint="The first terms are $p$ and the last terms contain $q$. Find two numbers that multiply to $2$ and add to $3$."
+  hint="Put the first variable first in each binomial and the second variable in each last term, then find two numbers whose product is the last coefficient and whose sum is the middle coefficient."
 >}}
 
 {{< fillin
   question="Factor: $a^2+5ab-24b^2$."
   answer="(a+8b)(a-3b)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a+8b)(a-3b)$"
-  hint="The last term is negative, so the two numbers have different signs. They multiply to $-24$ and add to $5$; each last term carries a $b$."
+  hint="Put the first variable first in each binomial and the second variable in each last term. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the last coefficient and their sum to the middle coefficient."
 >}}
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.2: Factor Trinomials of the Form $x^2+bx+c$](https://openstax.org/books/elementary-algebra-2e/pages/7-2-factor-trinomials-of-the-form-x-2-bx-c) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the factor-pair searches as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, replacing the two prime-trinomial "Try Its" (which cannot be typed into the answer box) with factorable drills plus a note to reason the prime cases through by hand.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.2: Factor Trinomials of the Form $x^2+bx+c$](https://openstax.org/books/elementary-algebra-2e/pages/7-2-factor-trinomials-of-the-form-x-2-bx-c) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as numbered steps or typeset display arrays and the factor-pair searches as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, except the four prime-trinomial "Try Its" (a "Prime" answer cannot be typed into the answer box), which are left as notes to reason through by hand, with one end-of-section exercise added as a drill after the second pair.</small>
