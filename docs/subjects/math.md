@@ -128,17 +128,17 @@ names):
 | `scientific-notation` | $a \times 10^{n}$ with $1 \le \lvert a\rvert < 10$ |
 | `prime-product` | a product of prime powers |
 | `single-power` | one $a^{n}$, not a product or nested power — for "Simplify $(3^8)^2$, write the answer as a power of 3" |
-| `expanded` | a sum of terms, not a product/power/quotient — for "Multiply: $(w+5)(w+7)$"; still allows a remainder term |
+| `expanded` | a sum of terms, not a product/power/quotient — for "Multiply: $(w+5)(w+7)$"; still allows a remainder term. No term may still write a product of factors (`5x\cdot x`, `(5x)(x)`, `5x(x)`) or a power of a parenthesized group (`(6x)^2`, `(x+5)^2`); uncombined like terms and an unreduced coefficient still pass (`no-like-terms` owns the former) |
 | `single-term` | one monomial: one coefficient, each variable once, no written $\cdot$, no top-level $+$, no $\,^0$ factor |
-| `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials |
+| `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials; no numeral power (`\frac{1}{2^3y^3}`) and no parenthesized monomial with a numeral raised to a power (`(2x^4)^5`, `(3y)^2` — `reduced-fraction` refuses these too) |
 | `reduced-fraction` | exactly one $\tfrac{a}{b}$ with no common polynomial or integer factor across the bar — for "Simplify $\frac{x^2-x-2}{x^2-3x+2}$"; a half the checker cannot read as an integer-coefficient polynomial passes on its value alone |
-| `no-like-terms` | a sum in which no two terms share a variable-and-power signature, and at most one written constant term (`16x+9+8` is not combined) |
+| `no-like-terms` | a sum in which no two terms share a variable-and-power signature, and at most one written constant term (`16x+9+8` is not combined). Each term's numeral fraction over monomial halves is reduced with integer halves (`\frac{9}{6c}`, `\frac{1.5}{c}` fail) |
 | `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
-| `distributed` | no parentheses left to multiply out |
+| `distributed` | no parentheses left to multiply out. Each term's numeral fraction over monomial halves is reduced with integer halves, as under `no-like-terms` |
 | `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), no same-index product of radicals in one top-level term, explicit ($\sqrt{3}\cdot\sqrt{6}$) or juxtaposed ($\sqrt[4]{12y^3}\sqrt[4]{8y^3}$ — rationalized-fraction numerators keep theirs), and no fractional/decimal exponents or decimal literals (radical notation is the form) |
 | `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
 | `point-slope-form` | one equation, one side the bare output variable plus at most a constant, the other a single $m(x-x_1)$ term (either orientation) — for "Write the point-slope form…", where the engine grades the distributed and scaled restatements equal; the collapsed origin case $y=mx$ passes |
-| `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$ |
+| `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$. A one-letter label other than `y` (or the key's own label letter) fails: `x=-\tfrac23y-\tfrac23` is the line solved for $x$ |
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
 | `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer (a bare squared term counts as over the unwritten $1$, so $(y-1)^2-\tfrac{x^2}{4}=1$ passes) — for ellipse/hyperbola "write in standard form". Primed variables ($x'$, $y'$) are folded onto one symbol first, so $\tfrac{x'^2}{4}+\tfrac{y'^2}{9}=1$ is keyable |
 | `parabola-standard-form` | an equation with one side a single coefficient-1 squared unit ($x^2$, $y^2$, $(x-h)^2$, $(y-k)^2$) and the other ONE term in the other variable — an optional numeric coefficient (the $4p$: integer, decimal, or written fraction) on the bare variable or its shifted binomial, or that variable/binomial over an integer — for "write the parabola in standard form" $(x-h)^2=4p(y-k)$ asks, which `vertex-form` cannot serve (it wants $y=a(x-h)^2+k$) and which the general form, $x=\tfrac{y^2}{8}$, and the distributed $(x-2)^2=-8y-8$ otherwise pass on value |
@@ -162,6 +162,18 @@ write it in lowest terms"; a wrong value is still just wrong.
 top-level comma (`"\frac{\sqrt3}{2},\frac12"`, or any `answerMode="unordered"`
 key) is graded member by member, and the declared form is required of each
 member in turn. *(August 16, 2026)*
+
+**A value form applies to every number an inequality, interval, or ordered
+pair writes.** The one-number tokens (`decimal`, `fraction`, `lowest-terms`,
+`mixed-number`, `improper-fraction`, `fraction-or-mixed-number`, `percent`,
+`scientific-notation`, `denominator:<n>`) are required of each numeric side
+of an inequality (`x<5`, `-2\le x<7`; the variable side is not checked), each
+finite endpoint of an interval or `\cup` of intervals (`\pm\infty` always
+passes), and each coordinate of a pair or triple — so `p\ge\frac34+\frac16`
+grades `form` under `fraction lowest-terms`, `(-\infty,62+45]` under
+`decimal`, and `(2,1+\frac12)` under `lowest-terms`. A coordinate meets a
+form exactly as a bare number would: `2` fails `fraction`, so a pair mixing
+an integer and a fraction declares `lowest-terms`. *(September 27, 2026)*
 
 Which evidence the requirement is checked against depends on what it separates.
 A **numeral** form is checked against the LaTeX, because the Compute Engine
@@ -616,7 +628,16 @@ Each explains a lint error or a grader behavior an author will still meet:
   `36ft^2`) as `unit` — the fill-in says "Right number — enter it without
   the unit" — never `correct`, since a rule that took "140 miles" would take
   "140 feet". One trailing letter stays a variable (`140x` is `incorrect`),
-  and percent is untouched. The question still names the unit.
+  and percent is untouched. The question still names the unit. The same
+  rules hold per member of a list of bare numbers (`\$8,000, \$17,000` is
+  `correct` against `8000,17000`; `75 mph, 60 mph` is `unit` against `75,60`)
+  and per coordinate of a pair of bare numbers (`(22^\circ,68^\circ)` is
+  `unit`), and a `\$` before a number in an inequality or interval is dropped
+  (`s\geq\$4,000,000`). A braced comma (`5{,}250`) is digit grouping even
+  inside a pair or interval. A pair key also accepts its coordinates typed
+  as labelled equations (`x=6, y=1` for `(6,1)`): distinct one-letter labels,
+  read in the order typed except that `x`, `y`, `z` always go in that order.
+  *(September 27, 2026)*
 - **A written function label is stripped before grading.** `f(x)` boxes as
   `Multiply(f, x)`, so `checkAnswer` strips a written
   one-letter-applied-to-one-letter label — only when no further `=` remains —

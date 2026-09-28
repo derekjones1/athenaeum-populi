@@ -139,8 +139,16 @@ function insideTupleDelimiter(source, offset) {
   return stack.length > 0;
 }
 
+// A BRACED comma between digits, `5{,}250`, is TeX's digit-grouping spelling
+// and never a separator — a separator is a bare comma — so it is grouping
+// even inside a pair or interval, where a bare comma is not assumed to be:
+// `(5{,}250,14{,}000)` parsed 'invalid' against `(5250,14000)` (Elementary
+// Algebra 5.5, September 27, 2026). Only before exactly three digits, and
+// never in a decimal tail.
+const BRACED_GROUPING_COMMA = /(?<!\.\d*)(\d)\{,\}(?=\d{3}(?!\d))/g;
+
 export function stripGroupingCommas(value) {
-  return value.replace(/\d+(?:(?:,|\{,\})\d+)*/g, (token, offset, source) => {
+  return value.replace(BRACED_GROUPING_COMMA, '$1').replace(/\d+(?:(?:,|\{,\})\d+)*/g, (token, offset, source) => {
     if (!/^\d{1,3}(?:(?:,|\{,\})\d{3})+$/.test(token)) return token;
     // A grouped integer never starts right after a decimal point: in
     // "1.5,300" the "5,300" is a decimal tail followed by a list comma.
@@ -1095,21 +1103,71 @@ function checkOrderedList(studentRaw, answerRaw) {
   // answerDisplay often shows exactly that form. A split that already
   // matches the count is never re-read.
   const rawParts = splitTopLevelCommas(studentRaw ?? '');
-  const readings = rawParts.length === answerParts.length
+  const plain = plainNumberMembers(answerParts);
+  const readings = (rawParts.length === answerParts.length
     ? [rawParts]
-    : groupedReadings(rawParts, answerParts.length);
+    : groupedReadings(rawParts, answerParts.length)).map((reading) => unpricedMembers(reading, plain));
   if (readings.length === 0) return { verdict: 'incorrect', members: null };
 
+  const matches = (students) => students.every((student, i) => equivalentAllowingVariableEquation(student, answers[i]));
   let sawParseable = false;
   for (const reading of readings) {
     const students = reading.map(parseValid);
     if (students.some((part) => !part)) continue;
     sawParseable = true;
-    if (students.every((student, i) => equivalentAllowingVariableEquation(student, answers[i]))) {
-      return { verdict: 'correct', members: reading };
-    }
+    if (matches(students)) return { verdict: 'correct', members: reading };
+  }
+  if (plain && unitlessReadings(readings).some((reading) => matchesParsed(reading, matches))) {
+    return { verdict: 'unit', members: null };
   }
   return { verdict: sawParseable ? 'incorrect' : 'invalid', members: null };
+}
+
+/**
+ * Money and unit words on a LIST of bare numbers, read the way checkAnswer()
+ * reads them on one bare number.
+ *
+ * Both list paths graded each member as written, so a leading `\$` — the
+ * money sign the page itself prints — made `\$8000, \$17000` against the key
+ * `8000,17000` `invalid` where `\$237,186` against `237186` grades `correct`,
+ * and `75 mph, 60 mph` against `75,60` graded `incorrect` where `140 miles`
+ * against `140` reports `unit` (Elementary Algebra 3, September 27, 2026).
+ * The same rules now hold per member, and only when EVERY key member is one
+ * bare number — anywhere else a letter is a variable:
+ *
+ * - a leading `\$` (before or after a minus) is dropped from each member,
+ *   after the digit-group reconciliation, so `\$8,000, \$17,000` is still
+ *   read as the two grouped amounts it is;
+ * - when no reading is correct as typed, a reading with the unit words
+ *   removed from the members that carry them is tried, and a match reports
+ *   `unit` ("enter it without the unit"). Every member's NUMBER must be
+ *   right: a wrong member keeps the verdict `incorrect`.
+ */
+function plainNumberMembers(answerParts) {
+  return answerParts.every((part) => PLAIN_NUMBER_KEY.test(preprocess(part)));
+}
+
+function unpricedMembers(reading, plain) {
+  return plain ? reading.map((member) => member.replace(CURRENCY_PREFIX, '$1')) : reading;
+}
+
+/** Each reading with its unit-carrying members cut to the number, if any carried one. */
+function unitlessReadings(readings) {
+  return readings.flatMap((reading) => {
+    let stripped = false;
+    const members = reading.map((member) => {
+      const tail = preprocess(member).match(UNIT_TAIL);
+      if (!tail) return member;
+      stripped = true;
+      return tail[1];
+    });
+    return stripped ? [members] : [];
+  });
+}
+
+function matchesParsed(reading, matches) {
+  const students = reading.map(parseValid);
+  return !students.some((part) => !part) && matches(students);
 }
 
 function checkUnordered(studentRaw, answerRaw) {
@@ -1124,10 +1182,20 @@ function checkUnordered(studentRaw, answerRaw) {
   // inside members must not count as extra members, and every reading that
   // could mean what the learner typed is graded.
   const rawParts = splitTopLevelCommas(studentRaw);
-  const readings = rawParts.length === answerParts.length
+  const plain = plainNumberMembers(answerParts);
+  const readings = (rawParts.length === answerParts.length
     ? [rawParts]
-    : groupedReadings(rawParts, answerParts.length);
+    : groupedReadings(rawParts, answerParts.length)).map((reading) => unpricedMembers(reading, plain));
 
+  const matches = (students) => {
+    const unused = [...students];
+    for (const expected of answers) {
+      const match = unused.findIndex((candidate) => equivalentAllowingVariableEquation(candidate, expected));
+      if (match === -1) return false;
+      unused.splice(match, 1);
+    }
+    return true;
+  };
   let sawParseable = false;
   let sawCountable = false;
   for (const reading of readings) {
@@ -1136,14 +1204,11 @@ function checkUnordered(studentRaw, answerRaw) {
     const students = reading.map(parseValid);
     if (students.some((part) => !part)) continue;
     sawParseable = true;
-    const unused = [...students];
-    let matched = true;
-    for (const expected of answers) {
-      const match = unused.findIndex((candidate) => equivalentAllowingVariableEquation(candidate, expected));
-      if (match === -1) { matched = false; break; }
-      unused.splice(match, 1);
-    }
-    if (matched) return { verdict: 'correct', members: reading };
+    if (matches(students)) return { verdict: 'correct', members: reading };
+  }
+  if (plain && unitlessReadings(readings.filter((reading) => reading.length >= 2))
+    .some((reading) => matchesParsed(reading, matches))) {
+    return { verdict: 'unit', members: null };
   }
   if (!sawCountable) return { verdict: 'incorrect', members: null };
   return { verdict: sawParseable ? 'incorrect' : 'invalid', members: null };
@@ -1925,6 +1990,83 @@ function isZeroTerm(term) {
  * (MathLive's `\left(`/`\right)` are already gone by way of `bareLatex`), and
  * a leading sign stays with the first term rather than opening an empty one.
  */
+/**
+ * Does one additive term write a multiplication out between factors? An
+ * explicit `\cdot`/`\times`/`*` outside every group, two parenthesized groups
+ * side by side (`(5x)(x)`), or a parenthesized group holding no sum next to
+ * other ink (`5x(x)`, `(5x)x`) — a factor that could have been folded into
+ * the monomial — or a parenthesized group raised to a power: the
+ * special-products pattern step left unfinished, `(6x)^2-25` and
+ * `(3x^2)^2-(4y^3)^2` for `36x^2-25` and `9x^4-16y^6` (Elementary Algebra
+ * 6.4, September 27, 2026), and a binomial power `(x+5)^2` likewise. A
+ * group holding a sum with no power (`x(x+5)`) is a binomial factor, not
+ * this; a function's argument is not a factor; and the term's own leading
+ * sign is not one either.
+ */
+function writesFactorProduct(term) {
+  const text = term.trim().replace(/^[-+]\s*/, '');
+  let depth = 0;
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    if (char === '\\') {
+      const command = text.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0];
+      if (depth === 0 && /^\\(?:cdot|times)$/.test(command)) {
+        // A lone numeral coefficient dotted onto a numeral-free monomial,
+        // `6\cdot x`, has nothing left to fold — the dot is only notation
+        // (the Prealgebra fixture `6\cdot x+48` stays correct). Anything else
+        // written around the dot is a product still to be multiplied out.
+        const coefficient = /^(?:\d+(?:\.\d+)?|\\[tdc]?frac\s*\{\s*\d+\s*\}\s*\{\s*\d+\s*\})\s*$/.test(text.slice(0, i));
+        const rest = text.slice(i + command.length).replace(/\^\s*(?:\{[^{}]*\}|\S)/g, '');
+        return !(coefficient && /^[\s\\a-zA-Z{}]+$/.test(rest) && !/\\(?:cdot|times|[tdc]?frac|sqrt)/.test(rest));
+      }
+      i += command.length - 1;
+      continue;
+    }
+    if (char === '{' || char === '[') depth += 1;
+    else if (char === '}' || char === ']') depth -= 1;
+    else if (depth === 0 && char === '*') return true;
+    else if (char === '(' && depth === 0) {
+      const group = readDelimitedGroup(text, i);
+      if (!group) return false;
+      const [inner, after] = group;
+      const rest = text.slice(after);
+      // A function's argument, `\cos(6\theta)` or `\sin^2(x)`, is not a factor.
+      if (/\\[a-zA-Z]+\s*(?:\^\s*(?:\{[^{}]*\}|\S))?\s*$/.test(text.slice(0, i))) {
+        i = after - 1;
+        continue;
+      }
+      if (/^\s*\(/.test(rest)) return true;
+      if (/^\s*\^/.test(rest)) return true;
+      const holdsSum = splitTopLevelTerms(inner.trim()).length > 1;
+      if (!holdsSum && (i > 0 || rest.trim())) return true;
+      i = after - 1;
+    }
+  }
+  return false;
+}
+
+/**
+ * A parenthesized MONOMIAL with a numeral coefficient, raised to a power —
+ * `(2x^4)^5`, `(3y)^2`: the Power of a Product step left undone. The retyped
+ * prompt of Elementary Algebra 6.5's `\frac{(2x^4)^5}{(4x^3)^2(x^3)^5}` graded
+ * correct under `single-fraction` (September 27, 2026), which already refused
+ * the numeral power `\frac{1}{2^3y^3}`. A group holding a sum (`(x+1)^2`) is
+ * a factor a simplified rational expression keeps, and is not this.
+ */
+function writesNumeralGroupPower(bare) {
+  for (let i = 0; i < bare.length; i += 1) {
+    if (bare[i] === '\\') { i += 1; continue; }
+    if (bare[i] !== '(') continue;
+    const group = readDelimitedGroup(bare, i);
+    if (!group) return false;
+    const [inner, after] = group;
+    if (!/^\s*\^/.test(bare.slice(after))) continue;
+    const monomial = splitTopLevelTerms(inner.trim().replace(/^[-+]\s*/, '')).length === 1;
+    if (monomial && /\d/.test(inner.replace(/\^\s*(?:\{[^{}]*\}|\S)/g, ''))) return true;
+  }
+  return false;
+}
+
 function loadBearingTerms(bare) {
   const terms = splitTopLevelTerms(bare);
   const carrying = terms.filter((term) => !isZeroTerm(term));
@@ -2231,6 +2373,57 @@ function loneFactor(text) {
 
 /** A decimal point between digits, or opening/closing a numeral — anywhere at all. */
 const WRITES_A_DECIMAL = /\d\s*\.|\.\s*\d/;
+
+/**
+ * Is every numeral-coefficient fraction the response writes in lowest terms,
+ * with integer halves? Read per top-level term, on each `\frac{A}{B}` outside
+ * every group whose halves are both monomials: no decimal point in either
+ * half, and reducedMonomialQuotient() — no shared variable, no common
+ * integer factor. A half that is not a monomial (`\frac{3}{x-2}`) is a
+ * rational-expression remainder and is not read here.
+ *
+ * Elementary Algebra 6.6's quotient-with-remainder keys (`3c+1-\frac{3}{2c}`,
+ * declared `expanded distributed no-like-terms`) accepted the unreduced
+ * `3c+1-\frac{9}{6c}`, the decimal `3c+1-\frac{1.5}{c}`, and the split but
+ * undivided `\frac{18c^2}{6c}+\frac{6c}{6c}-\frac{9}{6c}` (September 27,
+ * 2026): none of those tokens looked inside a term's fraction. Required under
+ * `distributed` and `no-like-terms`, the tokens those asks declare.
+ */
+function termFractionsReduced(latex) {
+  for (const term of splitTopLevelTerms(bareLatex(latex))) {
+    let depth = 0;
+    for (let i = 0; i < term.length; i += 1) {
+      const char = term[i];
+      if (char === '{' || char === '(') { depth += 1; continue; }
+      if (char === '}' || char === ')') { depth -= 1; continue; }
+      if (char !== '\\') continue;
+      const command = term.slice(i).match(/^\\[tdc]?frac(?![a-zA-Z])/);
+      if (!command) {
+        i += (term.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1);
+        continue;
+      }
+      if (depth !== 0) continue;
+      const numerator = readTexArgument(term, i + command[0].length);
+      const denominator = numerator && readTexArgument(term, numerator[1]);
+      if (!denominator) return true;
+      const halves = [numerator[0], denominator[0]];
+      const magnitudes = halves.map((half) => {
+        try {
+          const expr = parseLatex(preprocess(half));
+          return expr.isValid ? monomialMagnitude(expr) : null;
+        } catch {
+          return null;
+        }
+      });
+      if (magnitudes.every(Boolean)) {
+        if (halves.some((half) => WRITES_A_DECIMAL.test(half))) return false;
+        if (!reducedMonomialQuotient(magnitudes[0], magnitudes[1])) return false;
+      }
+      i = denominator[1] - 1;
+    }
+  }
+  return true;
+}
 
 const FORM_PREDICATES = {
   fraction: (latex) => asFraction(latex) !== null,
@@ -2670,6 +2863,7 @@ const FORM_PREDICATES = {
     // flattens `(y+12)+28` to `y+40`, its own answer, so the parenthesis has
     // to be read off the LaTeX rather than the parse.
     if (/[()]/.test(bareLatex(latex))) return false;
+    if (!termFractionsReduced(latex)) return false;
     let expr;
     try {
       expr = parseLatex(preprocess(latex));
@@ -2713,6 +2907,7 @@ const FORM_PREDICATES = {
     const constants = splitTopLevelTerms(bareLatex(latex))
       .filter((term) => term.trim() && isConstantTerm(term.trim().replace(/^[+-]\s*/, '')));
     if (constants.length > 1) return false;
+    if (!termFractionsReduced(latex)) return false;
     let expr;
     try {
       expr = parseLatex(preprocess(latex));
@@ -2755,10 +2950,23 @@ const FORM_PREDICATES = {
   // Add. A padded response is judged on the term that carries it — and only
   // when stripping actually removed something, so an honest response is
   // parsed exactly as it was written.
+  //
+  // A term still written as a product of factors is not expanded either,
+  // whatever the factors are: the worked example's own "Distribute." row,
+  // `5x\cdot x+5x\cdot4y`, and `(5x)(x)+20xy` graded correct against
+  // `5x^2+20xy` (Elementary Algebra 6.3, September 27, 2026) — the numeral
+  // refusal (`6\cdot x+6\cdot8`) only saw numerals — and so is a power of a
+  // parenthesized group, `(6x)^2-25` (6.4). writesFactorProduct reads each
+  // load-bearing term; a plain monomial (`-\frac{1}{2}x^3y`) passes, and so
+  // does a sum still holding a binomial factor (`x(x+5)+2(x+5)`), which
+  // `distributed` owns. Uncombined like terms stay legal (`no-like-terms`
+  // owns them), and so does an unreduced coefficient (`\frac{2}{72}xy`), as
+  // under `single-term` and `no-like-terms`.
   expanded: (latex) => {
     const bare = bareLatex(latex);
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     const terms = loadBearingTerms(bare);
+    if (terms.length > 1 && terms.some(writesFactorProduct)) return false;
     const written = terms.length === 1 && terms[0] !== bare ? terms[0] : latex;
     try {
       const expr = parseLatex(preprocess(written));
@@ -2817,6 +3025,8 @@ const FORM_PREDICATES = {
     // negative exponent (`\frac{1}{8}y^{-3}`) is the reciprocal the fraction
     // exists to write — neither is the one simplified fraction the ask names.
     if (writesNumeralPower(bare) || /\^\s*\{?\s*-/.test(bare)) return false;
+    // `(2x^4)^5` is the same undone arithmetic behind a group.
+    if (writesNumeralGroupPower(bare)) return false;
     // Each half has its like terms combined: `\frac{3p+6p}{8}` is the
     // half-worked `\frac{9p}{8}` (the engine folds the numerator first).
     if (fracHalves(bare).some((half) => !FORM_PREDICATES['no-like-terms'](half))) return false;
@@ -2895,6 +3105,9 @@ const FORM_PREDICATES = {
     // complex fraction however its inner quotients are written.
     if (!halves) return !/\\[tdc]?frac|\\div|\//.test(bare);
     if (halves.some((half) => /\\[tdc]?frac|\\div|\//.test(half))) return false;
+    // `\frac{(2x^4)^5}{(4x^3)^2}` folds to a reduced quotient in the parse;
+    // the powered numeral group is read off the writing (writesNumeralGroupPower).
+    if (writesNumeralGroupPower(bare)) return false;
     const numeral = asFraction(latex);
     if (numeral) return gcd(numeral.numerator, numeral.denominator) === 1;
     const parsed = halves.map((half) => {
@@ -3114,7 +3327,17 @@ const FORM_PREDICATES = {
   // constant coefficient on the bare input variable, nothing left to
   // distribute, no variable under a shared fraction bar — plus at most a
   // constant. A leftover non-label `=` (a point-slope response) fails.
-  'slope-intercept-form': (latex) => {
+  //
+  // A one-letter label must be `y` (or the key's own label letter): the
+  // label strip took any letter, so the line solved for x,
+  // `x=-\frac{2}{3}y-\frac{2}{3}` — an equation the engine grades equal to
+  // `y=-\frac{3}{2}x-1` — passed as slope-intercept form, which is y alone
+  // on the left (Elementary Algebra 5, September 27, 2026). A function label
+  // (`f(x)=`) still passes.
+  'slope-intercept-form': (latex, answer) => {
+    const letterLabel = (text) => bareLatex(text).match(/^([a-zA-Z])\s*=(?![=<>])/)?.[1];
+    const label = letterLabel(latex);
+    if (label !== undefined && label !== 'y' && label !== (answer ? letterLabel(answer) : undefined)) return false;
     const bare = stripWrittenLabel(bareLatex(latex));
     if (bare.includes('=')) return false;
     let expr;
@@ -3435,18 +3658,27 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'fraction', 'percent', 'lowest-t
  * is told to finish the calculation ("enter just the result"), not to "write
  * it as a decimal", which reads as if the number were already there in the
  * wrong notation. Every other shape miss gets describeAnswerForm's sentence.
+ *
+ * On an inequality or interval the numbers read are its bounds
+ * (boundNumbers), the same ones checkForm read: `p\ge\frac34+\frac16` and
+ * `(-\infty,62+45]` are told to finish the calculation, while
+ * `(-\infty,-\frac12]` against a `decimal` key is one number in the wrong
+ * notation and keeps the token's sentence.
  */
 export function describeFormFeedback(studentRaw, spec) {
   const { tokens, valid } = parseAnswerForm(spec);
   const general = describeAnswerForm(spec);
   if (!valid || !tokens.length) return general;
   if (!tokens.every((token) => NUMBER_SHAPE_TOKENS.has(token) || DENOMINATOR_TOKEN.test(token))) return general;
-  const written = bareLatex(bracketsAsParentheses(studentRaw)).replace(/^[a-zA-Z]\s*=\s*/, '');
-  const ink = written.replace(/\\(?:[tdc]?frac|cdot|times|div|sqrt|%)/g, ' ');
-  if (/[a-zA-Z]/.test(ink)) return general;
-  const oneNumber = asDecimal(written) !== null || asFraction(written) !== null || asMixedNumber(written) !== null
-    || /^[+-]?(?:\d+(?:\.\d+)?|\.\d+)\s*\\%$/.test(written);
-  if (oneNumber) return general;
+  const unworked = (piece) => {
+    const written = bareLatex(bracketsAsParentheses(piece)).replace(/^[a-zA-Z]\s*=\s*/, '');
+    const ink = written.replace(/\\(?:[tdc]?frac|cdot|times|div|sqrt|%)/g, ' ');
+    if (/[a-zA-Z]/.test(ink)) return false;
+    return !(asDecimal(written) !== null || asFraction(written) !== null || asMixedNumber(written) !== null
+      || /^[+-]?(?:\d+(?:\.\d+)?|\.\d+)\s*\\%$/.test(written));
+  };
+  const numbers = labelledCoordinates(studentRaw) ?? boundNumbers(studentRaw) ?? [studentRaw];
+  if (!numbers.some(unworked)) return general;
   const rest = tokens.filter((token) => token !== 'decimal').map((token) => {
     const denominator = token.match(DENOMINATOR_TOKEN);
     return denominator ? `with a denominator of ${denominator[1]}` : FORM_PHRASES[token];
@@ -3455,22 +3687,177 @@ export function describeFormFeedback(studentRaw, spec) {
 }
 
 /**
+ * The tokens that describe how ONE number is written, and so distribute over
+ * the bounds of an inequality or interval (boundNumbers) the way a list form
+ * distributes over members.
+ */
+const BOUND_FORM_TOKENS = new Set([...NUMBER_SHAPE_TOKENS, 'scientific-notation']);
+const distributesOverBounds = (token) => BOUND_FORM_TOKENS.has(token) || DENOMINATOR_TOKEN.test(token);
+
+// A written order relation, in every spelling MathLive or a keyboard gives.
+// The letter boundary keeps `\left` and `\leftarrow` from reading as `\le`.
+const ORDER_RELATION = /^(?:\\(?:leqslant|geqslant|leq|geq|le|ge|lt|gt)(?![a-zA-Z])|<=|>=|[<>≤≥])/;
+const INFINITE_BOUND = /^[+-]?\s*\\infty$/;
+
+/**
+ * Split `text` wherever `separator` (a `^`-anchored regex) matches outside
+ * every `{}`/`()`/`[]` group. A control word is stepped over whole, so a
+ * separator can match one (`\le`, `\cup`) but never the tail of another.
+ */
+function splitAtTopLevel(text, separator) {
+  const parts = [];
+  let depth = 0;
+  let start = 0;
+  let i = 0;
+  while (i < text.length) {
+    if (depth === 0) {
+      const match = text.slice(i).match(separator);
+      if (match) {
+        parts.push(text.slice(start, i).trim());
+        i += match[0].length;
+        start = i;
+        continue;
+      }
+    }
+    const char = text[i];
+    if (char === '\\') {
+      i += text.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length;
+      continue;
+    }
+    if (char === '{' || char === '(' || char === '[') depth += 1;
+    else if (char === '}' || char === ')' || char === ']') depth -= 1;
+    i += 1;
+  }
+  parts.push(text.slice(start).trim());
+  return parts;
+}
+
+/**
+ * `(a,b]`-shaped: one bracket pair enclosing everything, holding two or more
+ * top-level members — an interval's endpoints, or an ordered pair's or
+ * triple's coordinates. null for anything else.
+ */
+function delimitedMembers(piece) {
+  if (!/^[([]/.test(piece) || !/[)\]]$/.test(piece)) return null;
+  let depth = 0;
+  for (let i = 0; i < piece.length; i += 1) {
+    const char = piece[i];
+    if (char === '\\') { i += 1; continue; }
+    if (char === '{' || char === '(' || char === '[') depth += 1;
+    else if (char === '}' || char === ')' || char === ']') {
+      depth -= 1;
+      if (depth === 0 && i < piece.length - 1) return null;
+    }
+  }
+  if (depth !== 0) return null;
+  const members = splitAtTopLevel(piece.slice(1, -1), /^,/);
+  return members.length >= 2 && members.every(Boolean) ? members : null;
+}
+
+/**
+ * The NUMBERS an inequality or interval response writes, or null when it is
+ * neither.
+ *
+ * A value form was checked against the whole response, so on an inequality
+ * or interval key it could not be declared at all — `decimal` read
+ * `(-\infty,107]` as no decimal and failed the key itself — and without one
+ * the retype hole the value forms close for a bare-number key stayed open:
+ * Elementary Algebra 2.7's `p\ge\frac{11}{12}` accepted `p\ge\frac34+\frac16`
+ * and `(-\infty,107]` accepted `(-\infty,62+45]`, and EA 3.6's `s\ge4000000`
+ * accepted the unworked `s\ge\frac{80000}{0.02}` (September 27, 2026). A value
+ * form describes how ONE number is written, so — like a list form over its
+ * members (listFormAccepted) — it distributes over the numbers written:
+ *
+ * - an INEQUALITY (`x<5`, `5>x`, `-2\le x<7`, `0.42>0.4`): every side with no
+ *   variable letter. The variable side is not a number and is not checked.
+ * - an INTERVAL, or a `\cup` of them: every finite endpoint. `\infty` and
+ *   `-\infty` always pass; an endpoint is checked even when it holds a
+ *   letter.
+ * - an ORDERED PAIR or triple, the same shape: every coordinate. `decimal`
+ *   always read a pair this way (`(-1,2(-1)-4)` is unworked); now every value
+ *   form does, so EA 5.2's `(2,\frac{3}{2})` can declare `lowest-terms` and
+ *   refuse `(2,1+\frac12)`. A coordinate meets a form exactly as a bare
+ *   number would: `2` fails `fraction` as it always has, so a pair mixing an
+ *   integer and a fraction declares `lowest-terms`, not `fraction`.
+ *
+ * An inequality or interval with no finite numeric bound (`y<-2x+3`,
+ * `(-\infty,\infty)`) passes a value form vacuously.
+ */
+function boundNumbers(latex) {
+  const text = preprocess(latex ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  const sides = splitAtTopLevel(text, ORDER_RELATION);
+  if (sides.length >= 2) {
+    if (sides.some((side) => !side)) return null;
+    return sides.filter((side) => !hasVariableLetter(side) && !INFINITE_BOUND.test(side));
+  }
+  const endpoints = splitAtTopLevel(text, /^\\cup(?![a-zA-Z])/).map(delimitedMembers);
+  if (endpoints.some((pair) => pair === null)) return null;
+  return endpoints.flat().filter((bound) => !INFINITE_BOUND.test(bound));
+}
+
+const LABELLED_MEMBER = /^([a-zA-Z])\s*=(?![=<>])\s*([\s\S]+)$/;
+
+/**
+ * The coordinates of a solution typed as labelled equations — `x=6, y=1`, or
+ * `(x=6, y=1)` — or null. A system's solution is keyed as the ordered pair
+ * `(6,1)`, and the labelled spelling, the one a learner naturally types,
+ * graded 'incorrect' (Elementary Algebra 5.2, September 27, 2026).
+ *
+ * The grader is not told the system's variables, so any distinct single
+ * letters are accepted and read in the order typed — except that `x`, `y`,
+ * `z` are always put in that order, the order every Cartesian pair is keyed
+ * in, so `y=1, x=6` is the same pair. A repeated letter (`x=2, x=3`, a
+ * solution SET) is never a pair. `arity`, when known, reconciles
+ * digit-grouping commas the way the list graders do (`x=1,500, y=2`).
+ */
+function labelledCoordinates(raw, arity) {
+  const text = String(raw ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  if (!text.includes('=')) return null;
+  const parts = (text.startsWith('(') && delimitedMembers(text)) || splitTopLevelCommas(text);
+  const readings = arity === undefined || parts.length === arity ? [parts] : groupedReadings(parts, arity);
+  for (const reading of readings) {
+    const labelled = reading.map((part) => part.trim().match(LABELLED_MEMBER));
+    if (reading.length < 2 || labelled.some((match) => !match)) continue;
+    const letters = labelled.map((match) => match[1]);
+    if (new Set(letters).size !== letters.length) continue;
+    const ordered = letters.every((letter) => 'xyz'.includes(letter))
+      ? [...labelled].sort((a, b) => a[1].localeCompare(b[1]))
+      : labelled;
+    return ordered.map((match) => stripGroupingCommas(match[2].trim()));
+  }
+  return null;
+}
+
+/** The members of a key written as one parenthesized tuple, `(6,1)`, or null. */
+function tupleKeyMembers(answerRaw) {
+  const text = preprocess(answerRaw ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  return text.startsWith('(') && text.endsWith(')') ? delimitedMembers(text) : null;
+}
+
+function checkFormToken(studentRaw, token, answerRaw) {
+  const denominator = token.match(DENOMINATOR_TOKEN);
+  if (denominator) {
+    const fraction = asFraction(studentRaw);
+    return fraction !== null && fraction.denominator === Number(denominator[1]);
+  }
+  const solved = token.match(SOLVED_TOKEN);
+  if (solved) return writtenSolvedFor(studentRaw, solved[1]);
+  return FORM_PREDICATES[token](studentRaw, answerRaw);
+}
+
+/**
  * Is `studentRaw` written in every form its exercise requires? Value equality
- * is checked separately — this only reads the shape.
+ * is checked separately — this only reads the shape. A value form on an
+ * inequality or interval is required of each number it bounds with
+ * (boundNumbers); every other token reads the whole response.
  */
 export function checkForm(studentRaw, spec, answerRaw) {
   const { tokens, valid } = parseAnswerForm(spec);
   if (!valid) return true;
-  return tokens.every((token) => {
-    const denominator = token.match(DENOMINATOR_TOKEN);
-    if (denominator) {
-      const fraction = asFraction(studentRaw);
-      return fraction !== null && fraction.denominator === Number(denominator[1]);
-    }
-    const solved = token.match(SOLVED_TOKEN);
-    if (solved) return writtenSolvedFor(studentRaw, solved[1]);
-    return FORM_PREDICATES[token](studentRaw, answerRaw);
-  });
+  const bounds = tokens.some(distributesOverBounds) ? boundNumbers(studentRaw) : null;
+  return tokens.every((token) => (bounds !== null && distributesOverBounds(token)
+    ? bounds.every((bound) => checkFormToken(bound, token, answerRaw))
+    : checkFormToken(studentRaw, token, answerRaw)));
 }
 
 /**
@@ -3583,13 +3970,21 @@ const EQUATION_FORM_TOKENS = new Set([
  * value. The value grader already reads `x=13` as 13, so a Solve item keyed
  * `13` with `decimal` declared graded the learner's natural `x=13` as `form`
  * ("now write it as a decimal") — the form check read the raw writing. Only
- * the label is stripped: `x=7+6` is still the unevaluated `7+6`. null when
- * there is no label, a further `=` follows, or the form reads equations.
+ * the label is stripped: `x=7+6` is still the unevaluated `7+6`. The label
+ * may trail, `-7=p`, the way the book's own worked examples end ("−3 = y").
+ * null when there is no label, a further `=` follows, or the form reads
+ * equations.
  */
 function variableLabelValue(preprocessed, spec) {
+  let rest;
   const label = preprocessed.match(/^\s*[a-zA-Z]\s*=(?![=<>])/);
-  if (!label) return null;
-  const rest = preprocessed.slice(label[0].length);
+  if (label) {
+    rest = preprocessed.slice(label[0].length);
+  } else {
+    const trailing = preprocessed.match(/(?<![=<>!])=\s*[a-zA-Z]\s*$/);
+    if (!trailing) return null;
+    rest = preprocessed.slice(0, trailing.index);
+  }
   if (!rest.trim() || rest.includes('=')) return null;
   const { tokens, valid } = parseAnswerForm(spec);
   if (!valid || tokens.some((token) => EQUATION_FORM_TOKENS.has(token) || SOLVED_TOKEN.test(token))) return null;
@@ -3653,6 +4048,9 @@ const PLAIN_NUMBER_KEY = /^-?(?:\d+(?:\.\d*)?|\.\d+)$/;
 
 // A leading dollar sign, before or after a minus: `\$237,186`, `-\$5`.
 const CURRENCY_PREFIX = /^\s*(-?)\s*\\\$\s*/;
+// A dollar sign directly before a numeral (or a minus and a numeral) anywhere
+// in an inequality or interval response: `s\geq\$4,000,000`, `(-\infty,\$5]`.
+const BOUND_CURRENCY = /\\\$\s*(?=-?\s*(?:\d|\.\d))/g;
 
 // A number followed only by unit words: `140 miles`, `140\text{ miles}`,
 // `74\mathrm{ft}`, `36ft^2`. Bare letters must run to two or more, so a
@@ -3660,6 +4058,31 @@ const CURRENCY_PREFIX = /^\s*(-?)\s*\\\$\s*/;
 // (`^\circ`, `°`, or MathLive's degree key `\degree`) counts too, with an optional `F`/`C` after it: `-6^\circ` or `96^\circ F`
 // on a temperature key is the right number labelled, not a wrong one.
 const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|[A-Za-z]{2,}|\^\{?[23]\}?|(?:\^\s*\{?\s*\\circ\s*\}?|\\degree\b|°)(?:\s*[CF](?![A-Za-z]))?|\s)+)$/;
+
+/**
+ * A pair or interval of bare numbers with unit marks on its coordinates —
+ * `(22^\circ,68^\circ)` against `(22,68)`, the two angles of a system
+ * (Elementary Algebra 5.2, September 27, 2026). True when the key's members
+ * are all bare numbers, at least one typed member carries a unit, and the
+ * response with the units cut away grades 'correct': the scalar 'unit' rule,
+ * per coordinate. A wrong coordinate keeps the response 'incorrect'.
+ */
+function unitCoordinates(studentRaw, answerRaw, options) {
+  const keyText = preprocess(answerRaw ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  const keyMembers = delimitedMembers(keyText);
+  if (!keyMembers || !keyMembers.every((member) => PLAIN_NUMBER_KEY.test(member))) return false;
+  const text = String(studentRaw ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  const members = delimitedMembers(text);
+  if (!members || members.length !== keyMembers.length) return false;
+  let stripped = false;
+  const numbers = members.map((member) => {
+    const tail = preprocess(member).match(UNIT_TAIL);
+    if (!tail) return member;
+    stripped = true;
+    return tail[1];
+  });
+  return stripped && gradeResponse(`${text[0]}${numbers.join(',')}${text.at(-1)}`, answerRaw, options) === 'correct';
+}
 
 /**
  * Grade a response against the authored answer.
@@ -3676,6 +4099,9 @@ const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|op
  * instead of 'incorrect'. A wrong number with a unit is still 'incorrect'.
  * (Prealgebra re-review, September 26, 2026.) Percent is untouched: `62\%`
  * and `0.62` are different values, and the `percent` form owns that ask.
+ * The same rules reach list members (plainNumberMembers), pair coordinates
+ * (unitCoordinates), and inequality bounds (BOUND_CURRENCY); a pair key also
+ * reads labelled coordinates, `x=6, y=1` (labelledCoordinates).
  */
 /**
  * Square brackets a learner types as grouping — `[9+(-16)]+4`,
@@ -3722,6 +4148,19 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
     const verdict = gradeResponse(studentRaw, answerRaw, options);
     if (verdict !== 'incorrect') return verdict;
     return gradeResponse(studentRaw, percentKey[1], {}) === 'correct' ? 'form' : verdict;
+  }
+  const keyMembers = tupleKeyMembers(answerRaw);
+  const coordinates = keyMembers && labelledCoordinates(studentRaw, keyMembers.length);
+  if (coordinates) return checkAnswer(`(${coordinates.join(',')})`, answerRaw, options);
+  if (boundNumbers(answerRaw) !== null) {
+    // A money bound, `s\geq\$4,000,000` against `s\ge4000000` (Elementary
+    // Algebra 3.6): the `\$` in front of a number in an inequality or interval
+    // is the same currency label a bare-number key drops, and it parsed
+    // 'invalid'. Only a `\$` directly before a numeral goes.
+    const unpriced = String(studentRaw ?? '').replace(BOUND_CURRENCY, '');
+    const verdict = gradeResponse(unpriced, answerRaw, options);
+    if (verdict !== 'incorrect' && verdict !== 'invalid') return verdict;
+    return unitCoordinates(unpriced, answerRaw, options) ? 'unit' : verdict;
   }
   if (!PLAIN_NUMBER_KEY.test(preprocess(answerRaw ?? ''))) return gradeResponse(studentRaw, answerRaw, options);
   const unpriced = (studentRaw ?? '').replace(CURRENCY_PREFIX, '$1');

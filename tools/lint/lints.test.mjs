@@ -1059,9 +1059,13 @@ test('a composition ask with page-context definitions is trivially satisfiable',
     lint(fillin(NESTED, '18x^2+60x+51')).some(restated),
     'the nested-application phrasing builds the substituted-but-unexpanded candidate',
   );
-  assert(
-    lint(fillin(NESTED, '18x^2+60x+51', 'expanded')).some(restated),
-    '"expanded" alone does not rule it out — 2(3x+5)^2+1 is already a top-level sum',
+  // Since the Elementary Algebra chapter 2–6 re-review (September 27, 2026)
+  // `expanded` refuses a power of a parenthesised group, so the
+  // substituted-but-unexpanded 2(3x+5)^2+1 no longer passes it.
+  assert.equal(
+    lint(fillin(NESTED, '18x^2+60x+51', 'expanded')).filter(restated).length,
+    0,
+    '"expanded" alone now rules it out — 2(3x+5)^2+1 keeps a power of a group',
   );
   assert.equal(
     lint(fillin(NESTED, '18x^2+60x+51', 'expanded distributed')).filter(restated).length,

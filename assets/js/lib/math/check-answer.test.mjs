@@ -930,6 +930,10 @@ const formCases = [
   ['y = -4', '-4', 'decimal', 'correct'],
   ['x=7+6', '13', 'decimal', 'form'],
   ['x=\\frac{3}{4}', '\\frac{3}{4}', 'fraction', 'correct'],
+  // …and a trailing one, the way the book's worked examples end ("−3 = y").
+  ['-7=p', '-7', 'decimal', 'correct'],
+  ['6+7=x', '13', 'decimal', 'form'],
+  ['-\\frac{6}{8}=x', '-\\frac{3}{4}', 'fraction lowest-terms', 'form'],
   // Two written constants: the engine folds them to the key before parsing.
   ['16x+9+8', '16x+17', 'no-like-terms', 'form'],
   ['22a+7-2-4', '22a+1', 'no-like-terms', 'form'],
@@ -1721,4 +1725,205 @@ test('currency signs and unit words on a bare-number key', async (t) => {
   await t.test('a unit on a right number under a form still reports unit', () => {
     assert.equal(checkAnswer('140\\text{ miles}', '140', { form: 'decimal' }), 'unit');
   });
+});
+
+// A value form on an inequality or interval key is required of each number it
+// bounds — the numeric side(s) of an inequality, the finite endpoints of an
+// interval or union — so the unworked bound is refused the way an unworked
+// bare number is (Elementary Algebra 2.7 and 3.6, September 27, 2026). The key
+// passes its own form, a right bound in the wrong notation is 'form', a wrong
+// value stays 'incorrect', and the variable side is never read as a number.
+const boundForms = [
+  // [typed, key, answerForm, verdict]
+  ['p\\geq\\frac{11}{12}', 'p\\geq\\frac{11}{12}', 'fraction lowest-terms', 'correct'],
+  ['\\frac{11}{12}\\le p', 'p\\geq\\frac{11}{12}', 'fraction lowest-terms', 'correct'],
+  ['p\\ge\\frac34+\\frac16', 'p\\geq\\frac{11}{12}', 'fraction lowest-terms', 'form'],
+  ['p\\ge\\frac{22}{24}', 'p\\geq\\frac{11}{12}', 'fraction lowest-terms', 'form'],
+  ['p\\ge0.9', 'p\\geq\\frac{11}{12}', 'fraction lowest-terms', 'incorrect'],
+  ['(-\\infty,107]', '(-\\infty,107]', 'decimal', 'correct'],
+  ['\\left(-\\infty,107\\right]', '(-\\infty,107]', 'decimal', 'correct'],
+  ['(-\\infty,62+45]', '(-\\infty,107]', 'decimal', 'form'],
+  ['(-\\infty,-\\frac12]', '(-\\infty,-0.5]', 'decimal', 'form'],
+  ['(-\\infty,108]', '(-\\infty,107]', 'decimal', 'incorrect'],
+  ['(-\\infty,-1]\\cup[2,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', 'decimal', 'correct'],
+  ['(-\\infty,\\frac{4}{6})\\cup(1,\\infty)', '(-\\infty,\\frac{2}{3})\\cup(1,\\infty)', 'lowest-terms', 'form'],
+  ['(-\\infty,\\infty)', '(-\\infty,\\infty)', 'decimal', 'correct'],
+  ['-2\\le x<7', '-2\\le x<7', 'decimal', 'correct'],
+  ['7>x\\ge-2', '-2\\le x<7', 'decimal', 'correct'],
+  ['-2\\le x<3+4', '-2\\le x<7', 'decimal', 'form'],
+  ['5>x', 'x<5', 'decimal', 'correct'],
+  ['s\\ge\\frac{80000}{0.02}', 's\\ge4000000', 'decimal', 'form'],
+  ['y<-2x+3', 'y<-2x+3', 'decimal', 'correct'], // no numeric side: nothing to check
+  ['(0,\\infty),(-\\infty,\\infty)', '(0,\\infty),(-\\infty,\\infty)', 'decimal', 'correct'],
+  ['(-1,2(-1)-4)', '(-1,-6)', 'decimal', 'form'], // a pair reads as it always did
+];
+test('a value form distributes over the bounds of an inequality or interval', async (t) => {
+  for (const [typed, key, form, expected] of boundForms) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+  await t.test('an unworked bound is told to finish the calculation', () => {
+    const finish = 'finish the calculation and enter just the result';
+    assert.ok(describeFormFeedback('(-\\infty,62+45]', 'decimal').includes(finish));
+    assert.ok(describeFormFeedback('p\\ge\\frac34+\\frac16', 'fraction lowest-terms')
+      .endsWith(`${finish} as a fraction in lowest terms.`));
+    assert.ok(describeFormFeedback('s\\ge\\frac{80000}{0.02}', 'decimal').includes(finish));
+    assert.equal(describeFormFeedback('(-\\infty,-\\frac12]', 'decimal'), describeAnswerForm('decimal'));
+    assert.equal(describeFormFeedback('p\\ge\\frac{22}{24}', 'fraction lowest-terms'),
+      describeAnswerForm('fraction lowest-terms'));
+  });
+});
+
+// The bare-number key's money and unit rules, per member of a list of bare
+// numbers and per bound of an inequality or interval (Elementary Algebra 3,
+// September 27, 2026).
+const labelledMembers = [
+  // [typed, key, options, verdict]
+  ['\\$8000, \\$17000', '8000,17000', {}, 'correct'],
+  ['\\$8,000, \\$17,000', '8000,17000', {}, 'correct'], // grouping survives the sign
+  ['\\$8{,}000, \\$17{,}000', '8000,17000', {}, 'correct'],
+  ['-\\$5, \\$-7', '-5,-7', {}, 'correct'],
+  ['\\$8000, \\$17000', '8000,17000', { form: 'decimal' }, 'correct'],
+  ['\\$17,000, \\$8,000', '8000,17000', { mode: 'unordered' }, 'correct'],
+  ['\\$17,000, \\$8,000', '8000,17000', {}, 'incorrect'], // ordered: still in order
+  ['\\$8001, \\$17000', '8000,17000', {}, 'incorrect'],
+  ['75 mph, 60 mph', '75,60', {}, 'unit'],
+  ['75\\text{ mph}, 60', '75,60', {}, 'unit'],
+  ['60 mph, 75 mph', '75,60', { mode: 'unordered' }, 'unit'],
+  ['\\$8,000, 17,000\\text{ dollars}', '8000,17000', {}, 'unit'],
+  ['75 mph, 61 mph', '75,60', {}, 'incorrect'], // a wrong member stays wrong
+  ['60 mph, 74 mph', '75,60', { mode: 'unordered' }, 'incorrect'],
+  ['75 mph, 60 mph', '75,x', {}, 'incorrect'], // a symbolic member: no unit reading
+  ['s\\geq\\$4,000,000', 's\\ge4000000', {}, 'correct'],
+  ['s\\geq\\$4,000,000', 's\\ge4000000', { form: 'decimal' }, 'correct'],
+  ['(-\\infty,\\$107]', '(-\\infty,107]', { form: 'decimal' }, 'correct'],
+  ['s\\geq\\$4,000,001', 's\\ge4000000', {}, 'incorrect'],
+];
+test('currency signs and unit words on list members and inequality bounds', async (t) => {
+  for (const [typed, key, options, expected] of labelledMembers) {
+    await t.test(`${typed}  vs  ${key}  ${JSON.stringify(options)}`, () => {
+      assert.equal(checkAnswer(typed, key, options), expected);
+    });
+  }
+});
+
+// A system's solution keyed as an ordered pair (Elementary Algebra 5,
+// September 27, 2026): a value form reads each coordinate as it would a bare
+// number, labelled coordinates are the pair, a unit mark on a right
+// coordinate is 'unit', and slope-intercept form means y alone on the left.
+const pairKeys = [
+  // [typed, key, options, verdict]
+  ['(2,\\frac{3}{2})', '(2,\\frac{3}{2})', { form: 'lowest-terms' }, 'correct'],
+  ['(2,1+\\frac12)', '(2,\\frac{3}{2})', { form: 'lowest-terms' }, 'form'],
+  ['(2,\\frac{6}{4})', '(2,\\frac{3}{2})', { form: 'lowest-terms' }, 'form'],
+  ['(2,\\frac{3}{2})', '(2,\\frac{3}{2})', { form: 'fraction lowest-terms' }, 'form'], // `2` fails `fraction`, as a bare 2 does
+  ['2', '2', { form: 'fraction lowest-terms' }, 'form'],
+  ['(1,2,1+2)', '(1,2,3)', { form: 'lowest-terms' }, 'form'],
+  ['x=6, y=1', '(6,1)', {}, 'correct'],
+  ['y=1, x=6', '(6,1)', {}, 'correct'], // x, y, z always in that order
+  ['(x=6, y=1)', '(6,1)', {}, 'correct'],
+  ['\\left(x=6,y=1\\right)', '(6,1)', {}, 'correct'],
+  ['a=6, b=1', '(6,1)', {}, 'correct'], // other letters: the order typed
+  ['x=6, y=1, z=2', '(6,1,2)', { form: 'decimal' }, 'correct'],
+  ['x=1,500, y=2', '(1500,2)', { form: 'decimal' }, 'correct'],
+  ['x=1, y=6', '(6,1)', {}, 'incorrect'],
+  ['x=6, x=1', '(6,1)', {}, 'incorrect'], // a repeated letter is a set, not a pair
+  ['x=2+4, y=1', '(6,1)', { form: 'decimal' }, 'form'],
+  ['(22^\\circ,68^\\circ)', '(22,68)', {}, 'unit'],
+  ['(22^\\circ,68)', '(22,68)', { form: 'decimal' }, 'unit'],
+  ['x=22^\\circ, y=68^\\circ', '(22,68)', {}, 'unit'],
+  ['(22^\\circ,67^\\circ)', '(22,68)', {}, 'incorrect'],
+  ['(\\$5,\\$7)', '(5,7)', {}, 'correct'],
+  ['(\\$5,250, \\$14,000)', '(5250,14000)', { form: 'decimal' }, 'correct'],
+  ['(\\$5{,}250,\\$14{,}000)', '(5250,14000)', { form: 'decimal' }, 'correct'],
+  ['(5{,}250,14{,}000)', '(5250,14000)', { form: 'decimal' }, 'correct'], // a braced comma is never a separator
+  ['(5{,}250,14{,}001)', '(5250,14000)', {}, 'incorrect'],
+  ['(-\\infty,1{,}000]', '(-\\infty,1000]', { form: 'decimal' }, 'correct'],
+  ['x=-\\frac{2}{3}y-\\frac{2}{3}', 'y=-\\frac{3}{2}x-1', { form: 'slope-intercept-form' }, 'form'],
+  ['y=-\\frac{3}{2}x-1', 'y=-\\frac{3}{2}x-1', { form: 'slope-intercept-form' }, 'correct'],
+  ['f(x)=-\\frac{3}{2}x-1', 'y=-\\frac{3}{2}x-1', { form: 'slope-intercept-form' }, 'correct'],
+  ['C=2m+5', 'C=2m+5', { form: 'slope-intercept-form' }, 'correct'], // the key's own label letter
+];
+test('ordered-pair keys: forms per coordinate, labelled coordinates, units', async (t) => {
+  for (const [typed, key, options, expected] of pairKeys) {
+    await t.test(`${typed}  vs  ${key}  ${JSON.stringify(options)}`, () => {
+      assert.equal(checkAnswer(typed, key, options), expected);
+    });
+  }
+  await t.test('an unworked labelled coordinate is told to finish the calculation', () => {
+    assert.ok(describeFormFeedback('x=2+4, y=1', 'decimal').includes('finish the calculation'));
+    assert.ok(describeFormFeedback('(2,1+\\frac12)', 'lowest-terms').includes('finish the calculation'));
+  });
+});
+
+// `expanded` refuses a term still written as a product of factors, numeral or
+// variable, and a power of a parenthesized group — the Distribute and
+// special-products steps left unfinished (Elementary Algebra 6.3–6.4,
+// September 27, 2026). Plain monomials, binomial factors in a sum, function
+// arguments, and uncombined like terms keep passing.
+const expandedShapes = [
+  ['5x\\cdot x+5x\\cdot4y', '5x^2+20xy', 'expanded', 'form'],
+  ['(5x)(x)+20xy', '5x^2+20xy', 'expanded', 'form'],
+  ['5x(x)+20xy', '5x^2+20xy', 'expanded', 'form'],
+  ['(5x)x+20xy', '5x^2+20xy', 'expanded', 'form'],
+  ['5x\\times x+20xy', '5x^2+20xy', 'expanded distributed no-like-terms', 'form'],
+  ['(6x)^2-25', '36x^2-25', 'expanded', 'form'],
+  ['(3x^2)^2-(4y^3)^2', '9x^4-16y^6', 'expanded', 'form'],
+  ['(x+5)^2-3', 'x^2+10x+22', 'expanded', 'form'],
+  ['5x^2+20xy', '5x^2+20xy', 'expanded distributed no-like-terms', 'correct'],
+  ['-\\frac{1}{2}x^3y+2', '-\\frac{1}{2}x^3y+2', 'expanded', 'correct'],
+  ['x(x+5)+2(x+5)', 'x^2+7x+10', 'expanded', 'correct'], // `distributed` owns this
+  ['x^2+9x+9x+81', 'x^2+18x+81', 'expanded', 'correct'], // `no-like-terms` owns this
+  ['\\frac{1}{2}\\cos(6\\theta)+\\frac{1}{2}\\cos(2\\theta)', '\\frac{1}{2}\\cos(6\\theta)+\\frac{1}{2}\\cos(2\\theta)', 'expanded', 'correct'],
+  ['5x\\cdot x', '5x^2', 'single-term', 'form'],
+  ['(5x)(x)', '5x^2', 'single-term', 'form'],
+];
+test('expanded refuses written-out products and group powers', async (t) => {
+  for (const [typed, key, form, expected] of expandedShapes) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A parenthesized monomial with a numeral coefficient raised to a power is
+// the Power of a Product step undone — refused under `single-fraction` and
+// `reduced-fraction` like `\frac{1}{2^3y^3}` (Elementary Algebra 6.5,
+// September 27, 2026). A powered binomial factor is a simplified answer.
+const groupPowers = [
+  ['\\tfrac{\\left(2x^4\\right)^5}{\\left(4x^3\\right)^2 \\left(x^3\\right)^5}', '\\frac{2}{x}', 'single-fraction', 'form'],
+  ['\\tfrac{\\left(2x^4\\right)^5}{\\left(4x^3\\right)^2 \\left(x^3\\right)^5}', '\\frac{2}{x}', 'reduced-fraction', 'form'],
+  ['\\frac{(3y)^2}{3y}', '3y', 'single-fraction', 'form'],
+  ['\\frac{2}{x}', '\\frac{2}{x}', 'single-fraction', 'correct'],
+  ['\\frac{49x^6}{81y^2}', '\\frac{49x^6}{81y^2}', 'single-fraction distributed', 'correct'],
+  ['\\frac{1}{(x+1)^2}', '\\frac{1}{(x+1)^2}', 'single-fraction reduced-fraction', 'correct'],
+];
+test('a powered numeral group is unfinished arithmetic under the fraction forms', async (t) => {
+  for (const [typed, key, form, expected] of groupPowers) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// Under `distributed` and `no-like-terms`, a term's numeral fraction with
+// monomial halves is reduced and has integer halves — the quotient-with-
+// remainder keys of Elementary Algebra 6.6 (September 27, 2026).
+const remainderTerms = [
+  ['3c + 1 - \\frac{3}{2c}', '3c + 1 - \\frac{3}{2c}', 'expanded distributed no-like-terms', 'correct'],
+  ['3c+1-\\frac{9}{6c}', '3c + 1 - \\frac{3}{2c}', 'expanded distributed no-like-terms', 'form'],
+  ['3c+1-\\frac{1.5}{c}', '3c + 1 - \\frac{3}{2c}', 'expanded distributed no-like-terms', 'form'],
+  ['\\frac{18c^2}{6c}+\\frac{6c}{6c}-\\frac{9}{6c}', '3c + 1 - \\frac{3}{2c}', 'expanded distributed no-like-terms', 'form'],
+  ['\\frac{2}{72}xy+1', '\\frac{1}{36}xy+1', 'no-like-terms', 'form'],
+  ['\\frac{2}{72}xy+1', '\\frac{1}{36}xy+1', 'distributed', 'form'],
+  ['\\frac{1}{36}xy+1', '\\frac{1}{36}xy+1', 'no-like-terms', 'correct'],
+  ['x+5+\\frac{3}{x-2}', 'x+5+\\frac{3}{x-2}', 'no-like-terms', 'correct'], // a rational remainder is not read
+];
+test('term fractions are reduced under distributed and no-like-terms', async (t) => {
+  for (const [typed, key, form, expected] of remainderTerms) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
 });
