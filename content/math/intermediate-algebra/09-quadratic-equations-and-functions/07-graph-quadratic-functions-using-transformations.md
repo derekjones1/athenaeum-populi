@@ -87,7 +87,7 @@ functions on the same rectangular coordinate system.
   <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="86" y1="183" x2="86" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="86" y="201" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <text x="84" y="182" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
   <line x1="126" y1="183" x2="126" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="126" y="201" font-size="11" fill="currentColor" text-anchor="middle">1</text>
   <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
@@ -300,7 +300,7 @@ and can sketch the graph from there.
   <text x="52" y="250" font-size="13" fill="currentColor" text-anchor="end">(−3, 9)</text>
   <text x="72" y="350" font-size="13" fill="currentColor" text-anchor="end">(−2, 4)</text>
   <text x="92" y="410" font-size="13" fill="currentColor" text-anchor="end">(−1, 1)</text>
-  <text x="137.2" y="446.2" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
+  <text x="131" y="459" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
   <text x="160" y="410" font-size="13" fill="currentColor" text-anchor="start">(1, 1)</text>
   <text x="180" y="350" font-size="13" fill="currentColor" text-anchor="start">(2, 4)</text>
   <text x="200" y="250" font-size="13" fill="currentColor" text-anchor="start">(3, 9)</text>
@@ -726,8 +726,8 @@ Shift the graph $f(x)=x^2$ to the right 5 units.
   <polygon points="295.3,26.2 298.8,36.8 288.9,35.4" fill="currentColor"/>
   <circle cx="126" cy="266" r="4" fill="currentColor"/>
   <circle cx="226" cy="266" r="4" fill="currentColor"/>
-  <text x="137.2" y="286.2" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
-  <text x="226" y="289" font-size="13" fill="currentColor" text-anchor="middle">(5, 0)</text>
+  <text x="131" y="299" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
+  <text x="226" y="299" font-size="13" fill="currentColor" text-anchor="middle">(5, 0)</text>
 </svg>
 </div>
 
@@ -813,7 +813,7 @@ $f(x)=(x+1)^2-2$, shift the graph $f(x)=(x+1)^2$ down 2 units.
   <line x1="66" y1="163" x2="66" y2="169" stroke="currentColor" stroke-width="1"/>
   <text x="66" y="181" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
   <line x1="86" y1="163" x2="86" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="86" y="181" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <text x="85.5" y="163" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="106" y1="163" x2="106" y2="169" stroke="currentColor" stroke-width="1"/>
   <text x="106" y="181" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
   <line x1="146" y1="163" x2="146" y2="169" stroke="currentColor" stroke-width="1"/>
@@ -831,7 +831,7 @@ $f(x)=(x+1)^2-2$, shift the graph $f(x)=(x+1)^2$ down 2 units.
   <line x1="123" y1="226" x2="129" y2="226" stroke="currentColor" stroke-width="1"/>
   <text x="120" y="230" font-size="11" fill="currentColor" text-anchor="end">−3</text>
   <line x1="123" y1="206" x2="129" y2="206" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="210" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <text x="132" y="210" font-size="11" fill="currentColor" text-anchor="start">−2</text>
   <line x1="123" y1="186" x2="129" y2="186" stroke="currentColor" stroke-width="1"/>
   <text x="120" y="190" font-size="11" fill="currentColor" text-anchor="end">−1</text>
   <line x1="123" y1="146" x2="129" y2="146" stroke="currentColor" stroke-width="1"/>
@@ -858,7 +858,7 @@ $f(x)=(x+1)^2-2$, shift the graph $f(x)=(x+1)^2$ down 2 units.
   <polygon points="46,26 52.6,35 42.7,36.7" fill="currentColor"/>
   <polygon points="166,26 169.3,36.7 159.4,35" fill="currentColor"/>
   <circle cx="106" cy="206" r="4" fill="currentColor"/>
-  <text x="106" y="192" font-size="13" fill="currentColor" text-anchor="middle">vertex (−1, −2)</text>
+  <text x="99" y="220" font-size="13" fill="currentColor" text-anchor="end">vertex (−1, −2)</text>
 </svg>
 </div>
 
@@ -1128,14 +1128,14 @@ to get the points for $g(x)=3x^2$.
   <circle cx="166" cy="226" r="4" fill="currentColor"/>
   <circle cx="166" cy="66" r="4" fill="currentColor"/>
   <text x="72" y="230" font-size="13" fill="currentColor" text-anchor="end">(−2, 4)</text>
-  <text x="72" y="70" font-size="13" fill="currentColor" text-anchor="end">(−2, 12)</text>
+  <text x="52" y="70" font-size="13" fill="currentColor" text-anchor="end">(−2, 12)</text>
   <text x="92" y="290" font-size="13" fill="currentColor" text-anchor="end">(−1, 1)</text>
-  <text x="106" y="269" font-size="13" fill="currentColor" text-anchor="middle">(−1, 3)</text>
-  <text x="137.2" y="326.2" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
+  <text x="86" y="250" font-size="13" fill="currentColor" text-anchor="end">(−1, 3)</text>
+  <text x="131" y="339" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
   <text x="160" y="290" font-size="13" fill="currentColor" text-anchor="start">(1, 1)</text>
-  <text x="157.2" y="234.8" font-size="13" fill="currentColor" text-anchor="start">(1, 3)</text>
+  <text x="166" y="250" font-size="13" fill="currentColor" text-anchor="start">(1, 3)</text>
   <text x="177.2" y="214.8" font-size="13" fill="currentColor" text-anchor="start">(2, 4)</text>
-  <text x="180" y="70" font-size="13" fill="currentColor" text-anchor="start">(2, 12)</text>
+  <text x="200" y="70" font-size="13" fill="currentColor" text-anchor="start">(2, 12)</text>
 </svg>
 </div>
 
@@ -1292,7 +1292,7 @@ $f(x)=(x+3)^2-4$, shift the graph $f(x)=(x+3)^2$ down 4 units.
   <line x1="46" y1="143" x2="46" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="46" y="161" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
   <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <text x="75" y="143" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
   <line x1="86" y1="143" x2="86" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="86" y="161" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
   <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
@@ -1300,7 +1300,7 @@ $f(x)=(x+3)^2-4$, shift the graph $f(x)=(x+3)^2$ down 4 units.
   <line x1="126" y1="143" x2="126" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="126" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="146" y1="143" x2="146" y2="149" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <text x="137" y="143" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
   <line x1="186" y1="143" x2="186" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="186" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
   <line x1="206" y1="143" x2="206" y2="149" stroke="currentColor" stroke-width="1"/>
@@ -1345,7 +1345,7 @@ $f(x)=(x+3)^2-4$, shift the graph $f(x)=(x+3)^2$ down 4 units.
   <polygon points="43,27.6 49.5,36.6 39.6,38.2" fill="currentColor"/>
   <polygon points="169,27.5 172.4,38.2 162.5,36.6" fill="currentColor"/>
   <circle cx="106" cy="226" r="4" fill="currentColor"/>
-  <text x="106" y="212" font-size="13" fill="currentColor" text-anchor="middle">vertex (−3, −4)</text>
+  <text x="100" y="245" font-size="13" fill="currentColor" text-anchor="middle">vertex (−3, −4)</text>
 </svg>
 </div>
 
@@ -1400,101 +1400,9 @@ multiply the $y$-values in the parabola of $f(x)=x^2$ by $-2$. To graph
 $f(x)=-2(x+1)^2$, shift the graph $f(x)=-2x^2$ to the left 1 unit. To graph
 $f(x)=-2(x+1)^2+4$, shift the graph $f(x)=-2(x+1)^2$ up 4 units.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Successive transformations from x squared to negative 2x squared, then left 1 unit, then up 4 units." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 312" width="252" height="312" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="286" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="286" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="286" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="286" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="286" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="286" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="286" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="286" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="286" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="286" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="226" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="226" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="226" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="226" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="226" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="226" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="226" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="226" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="226" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="228" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="126" y1="24" x2="126" y2="288" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,166 228,171 228,161" fill="currentColor"/>
-  <polygon points="126,14 131,24 121,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="126,298 121,288 131,288" fill="currentColor"/>
-  <text x="236" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="134" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="163" x2="26" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="181" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
-  <line x1="46" y1="163" x2="46" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="46" y="181" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="66" y1="163" x2="66" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="181" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
-  <line x1="86" y1="163" x2="86" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="86" y="181" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="106" y1="163" x2="106" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="181" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
-  <line x1="146" y1="163" x2="146" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="181" font-size="11" fill="currentColor" text-anchor="middle">1</text>
-  <line x1="166" y1="163" x2="166" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="166" y="181" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="186" y1="163" x2="186" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="181" font-size="11" fill="currentColor" text-anchor="middle">3</text>
-  <line x1="206" y1="163" x2="206" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="206" y="181" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="226" y1="163" x2="226" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="181" font-size="11" fill="currentColor" text-anchor="middle">5</text>
-  <line x1="123" y1="286" x2="129" y2="286" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="290" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="123" y1="266" x2="129" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="270" font-size="11" fill="currentColor" text-anchor="end">−5</text>
-  <line x1="123" y1="246" x2="129" y2="246" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="250" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="123" y1="226" x2="129" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="230" font-size="11" fill="currentColor" text-anchor="end">−3</text>
-  <line x1="123" y1="206" x2="129" y2="206" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="210" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="123" y1="186" x2="129" y2="186" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="190" font-size="11" fill="currentColor" text-anchor="end">−1</text>
-  <line x1="123" y1="146" x2="129" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="150" font-size="11" fill="currentColor" text-anchor="end">1</text>
-  <line x1="123" y1="126" x2="129" y2="126" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="130" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="123" y1="106" x2="129" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="110" font-size="11" fill="currentColor" text-anchor="end">3</text>
-  <line x1="123" y1="86" x2="129" y2="86" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="90" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="123" y1="66" x2="129" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="70" font-size="11" fill="currentColor" text-anchor="end">5</text>
-  <line x1="123" y1="46" x2="129" y2="46" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="50" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="123" y1="26" x2="129" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="120" y="30" font-size="11" fill="currentColor" text-anchor="end">7</text>
-  <polyline points="73.3,26.9 73.5,28.2 73.8,29.5 74,30.8 74.3,32.1 74.5,33.4 74.8,34.7 75,36 75.3,37.2 75.5,38.5 75.8,39.7 76,41 76.3,42.2 76.5,43.5 76.8,44.7 77,45.9 77.3,47.2 77.5,48.4 77.8,49.6 78,50.8 78.3,52 78.5,53.2 78.8,54.4 79,55.5 79.3,56.7 79.5,57.9 79.8,59 80,60.2 80.3,61.3 80.5,62.5 80.8,63.6 81,64.8 81.3,65.9 81.5,67 81.8,68.1 82,69.2 82.3,70.3 82.5,71.4 82.8,72.5 83,73.6 83.3,74.6 83.5,75.7 83.8,76.7 84,77.8 84.3,78.8 84.5,79.9 84.8,80.9 85,82 85.3,83 85.5,84 85.8,85 86,86 86.3,87 86.5,88 86.8,89 87,89.9 87.3,90.9 87.5,91.9 87.8,92.8 88,93.8 88.3,94.7 88.5,95.7 88.8,96.6 89,97.5 89.3,98.5 89.5,99.4 89.8,100.3 90,101.2 90.3,102.1 90.5,103 90.8,103.9 91,104.8 91.3,105.6 91.5,106.5 91.8,107.3 92,108.2 92.3,109 92.5,109.9 92.8,110.7 93,111.6 93.3,112.4 93.5,113.2 93.8,114 94,114.8 94.3,115.6 94.5,116.4 94.8,117.2 95,118 95.3,118.7 95.5,119.5 95.8,120.2 96,121 96.3,121.7 96.5,122.5 96.8,123.2 97,123.9 97.3,124.7 97.5,125.4 97.8,126.1 98,126.8 98.3,127.5 98.5,128.2 98.8,128.9 99,129.6 99.3,130.2 99.5,130.9 99.8,131.5 100,132.2 100.3,132.8 100.5,133.5 100.8,134.1 101,134.8 101.3,135.4 101.5,136 101.8,136.6 102,137.2 102.3,137.8 102.5,138.4 102.8,139 103,139.6 103.3,140.1 103.5,140.7 103.8,141.2 104,141.8 104.3,142.3 104.5,142.9 104.8,143.4 105,144 105.3,144.5 105.5,145 105.8,145.5 106,146 106.3,146.5 106.5,147 106.8,147.5 107,147.9 107.3,148.4 107.5,148.9 107.8,149.3 108,149.8 108.3,150.2 108.5,150.7 108.8,151.1 109,151.6 109.3,152 109.5,152.4 109.8,152.8 110,153.2 110.3,153.6 110.5,154 110.8,154.4 111,154.8 111.3,155.1 111.5,155.5 111.8,155.8 112,156.2 112.3,156.5 112.5,156.9 112.8,157.2 113,157.5 113.3,157.9 113.5,158.2 113.8,158.5 114,158.8 114.3,159.1 114.5,159.4 114.8,159.7 115,160 115.3,160.2 115.5,160.5 115.8,160.7 116,161 116.3,161.2 116.5,161.5 116.8,161.7 117,161.9 117.3,162.2 117.5,162.4 117.8,162.6 118,162.8 118.3,163 118.5,163.2 118.8,163.4 119,163.6 119.3,163.7 119.5,163.9 119.8,164 120,164.2 120.3,164.3 120.5,164.5 120.8,164.6 121,164.8 121.3,164.9 121.5,165 121.8,165.1 122,165.2 122.3,165.3 122.5,165.4 122.8,165.5 123,165.6 123.3,165.6 123.5,165.7 123.8,165.7 124,165.8 124.3,165.8 124.5,165.9 124.8,165.9 125,165.9 125.3,166 125.5,166 125.8,166 126,166 126.3,166 126.5,166 126.8,166 127,165.9 127.3,165.9 127.5,165.9 127.8,165.8 128,165.8 128.3,165.7 128.5,165.7 128.8,165.6 129,165.6 129.3,165.5 129.5,165.4 129.8,165.3 130,165.2 130.3,165.1 130.5,165 130.8,164.9 131,164.8 131.3,164.6 131.5,164.5 131.8,164.3 132,164.2 132.3,164 132.5,163.9 132.8,163.7 133,163.6 133.3,163.4 133.5,163.2 133.8,163 134,162.8 134.3,162.6 134.5,162.4 134.8,162.2 135,161.9 135.3,161.7 135.5,161.5 135.8,161.2 136,161 136.3,160.7 136.5,160.5 136.8,160.2 137,160 137.3,159.7 137.5,159.4 137.8,159.1 138,158.8 138.3,158.5 138.5,158.2 138.8,157.9 139,157.5 139.3,157.2 139.5,156.9 139.8,156.5 140,156.2 140.3,155.8 140.5,155.5 140.8,155.1 141,154.8 141.3,154.4 141.5,154 141.8,153.6 142,153.2 142.3,152.8 142.5,152.4 142.8,152 143,151.6 143.3,151.1 143.5,150.7 143.8,150.2 144,149.8 144.3,149.3 144.5,148.9 144.8,148.4 145,147.9 145.3,147.5 145.5,147 145.8,146.5 146,146 146.3,145.5 146.5,145 146.8,144.5 147,144 147.3,143.4 147.5,142.9 147.8,142.3 148,141.8 148.3,141.2 148.5,140.7 148.8,140.1 149,139.5 149.3,139 149.5,138.4 149.8,137.8 150,137.2 150.3,136.6 150.5,136 150.8,135.4 151,134.8 151.3,134.1 151.5,133.5 151.8,132.8 152,132.2 152.3,131.5 152.5,130.9 152.8,130.2 153,129.6 153.3,128.9 153.5,128.2 153.8,127.5 154,126.8 154.3,126.1 154.5,125.4 154.8,124.7 155,123.9 155.3,123.2 155.5,122.5 155.8,121.7 156,121 156.3,120.2 156.5,119.5 156.8,118.7 157,118 157.3,117.2 157.5,116.4 157.8,115.6 158,114.8 158.3,114 158.5,113.2 158.8,112.4 159,111.5 159.3,110.7 159.5,109.9 159.8,109 160,108.2 160.3,107.3 160.5,106.5 160.8,105.6 161,104.8 161.3,103.9 161.5,103 161.8,102.1 162,101.2 162.3,100.3 162.5,99.4 162.8,98.5 163,97.6 163.3,96.6 163.5,95.7 163.8,94.7 164,93.8 164.3,92.8 164.5,91.9 164.8,90.9 165,89.9 165.3,89 165.5,88 165.8,87 166,86 166.3,85 166.5,84 166.8,83 167,82 167.3,80.9 167.5,79.9 167.8,78.8 168,77.8 168.3,76.7 168.5,75.7 168.8,74.6 169,73.5 169.3,72.5 169.5,71.4 169.8,70.3 170,69.2 170.3,68.1 170.5,67 170.8,65.9 171,64.8 171.3,63.6 171.5,62.5 171.8,61.3 172,60.2 172.3,59 172.5,57.9 172.8,56.7 173,55.6 173.3,54.4 173.5,53.2 173.8,52 174,50.8 174.3,49.6 174.5,48.4 174.8,47.2 175,45.9 175.3,44.7 175.5,43.5 175.8,42.2 176,41 176.3,39.7 176.5,38.5 176.8,37.2 177,36 177.3,34.7 177.5,33.4 177.8,32.1 178,30.8 178.3,29.5 178.5,28.2 178.8,26.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <polygon points="73.3,26.9 80,35.8 70.2,37.6" fill="currentColor"/>
-  <polygon points="178.8,26.9 181.8,37.6 172,35.8" fill="currentColor"/>
-  <polyline points="91.5,285 91.8,283.3 92,281.6 92.3,279.9 92.5,278.2 92.8,276.6 93,274.9 93.3,273.3 93.5,271.6 93.8,270 94,268.4 94.3,266.8 94.5,265.2 94.8,263.7 95,262.1 95.3,260.6 95.5,259 95.8,257.5 96,256 96.3,254.5 96.5,253 96.8,251.6 97,250.1 97.3,248.7 97.5,247.2 97.8,245.8 98,244.4 98.3,243 98.5,241.6 98.8,240.3 99,238.9 99.3,237.6 99.5,236.2 99.8,234.9 100,233.6 100.3,232.3 100.5,231 100.8,229.8 101,228.5 101.3,227.3 101.5,226 101.8,224.8 102,223.6 102.3,222.4 102.5,221.2 102.8,220.1 103,218.9 103.3,217.8 103.5,216.6 103.8,215.5 104,214.4 104.3,213.3 104.5,212.2 104.8,211.2 105,210.1 105.3,209.1 105.5,208 105.8,207 106,206 106.3,205 106.5,204 106.8,203.1 107,202.1 107.3,201.2 107.5,200.2 107.8,199.3 108,198.4 108.3,197.5 108.5,196.6 108.8,195.8 109,194.9 109.3,194.1 109.5,193.2 109.8,192.4 110,191.6 110.3,190.8 110.5,190 110.8,189.3 111,188.5 111.3,187.8 111.5,187 111.8,186.3 112,185.6 112.3,184.9 112.5,184.2 112.8,183.6 113,182.9 113.3,182.3 113.5,181.6 113.8,181 114,180.4 114.3,179.8 114.5,179.2 114.8,178.7 115,178.1 115.3,177.6 115.5,177 115.8,176.5 116,176 116.3,175.5 116.5,175 116.8,174.6 117,174.1 117.3,173.7 117.5,173.2 117.8,172.8 118,172.4 118.3,172 118.5,171.6 118.8,171.3 119,170.9 119.3,170.6 119.5,170.2 119.8,169.9 120,169.6 120.3,169.3 120.5,169 120.8,168.8 121,168.5 121.3,168.3 121.5,168 121.8,167.8 122,167.6 122.3,167.4 122.5,167.2 122.8,167.1 123,166.9 123.3,166.8 123.5,166.6 123.8,166.5 124,166.4 124.3,166.3 124.5,166.2 124.8,166.2 125,166.1 125.3,166.1 125.5,166 125.8,166 126,166 126.3,166 126.5,166 126.8,166.1 127,166.1 127.3,166.2 127.5,166.2 127.8,166.3 128,166.4 128.3,166.5 128.5,166.6 128.8,166.8 129,166.9 129.3,167.1 129.5,167.2 129.8,167.4 130,167.6 130.3,167.8 130.5,168 130.8,168.3 131,168.5 131.3,168.8 131.5,169 131.8,169.3 132,169.6 132.3,169.9 132.5,170.2 132.8,170.6 133,170.9 133.3,171.3 133.5,171.6 133.8,172 134,172.4 134.3,172.8 134.5,173.2 134.8,173.7 135,174.1 135.3,174.6 135.5,175 135.8,175.5 136,176 136.3,176.5 136.5,177 136.8,177.6 137,178.1 137.3,178.7 137.5,179.2 137.8,179.8 138,180.4 138.3,181 138.5,181.6 138.8,182.3 139,182.9 139.3,183.6 139.5,184.2 139.8,184.9 140,185.6 140.3,186.3 140.5,187 140.8,187.8 141,188.5 141.3,189.3 141.5,190 141.8,190.8 142,191.6 142.3,192.4 142.5,193.2 142.8,194.1 143,194.9 143.3,195.8 143.5,196.6 143.8,197.5 144,198.4 144.3,199.3 144.5,200.2 144.8,201.2 145,202.1 145.3,203.1 145.5,204 145.8,205 146,206 146.3,207 146.5,208 146.8,209.1 147,210.1 147.3,211.2 147.5,212.2 147.8,213.3 148,214.4 148.3,215.5 148.5,216.6 148.8,217.8 149,218.9 149.3,220.1 149.5,221.2 149.8,222.4 150,223.6 150.3,224.8 150.5,226 150.8,227.3 151,228.5 151.3,229.8 151.5,231 151.8,232.3 152,233.6 152.3,234.9 152.5,236.2 152.8,237.6 153,238.9 153.3,240.3 153.5,241.6 153.8,243 154,244.4 154.3,245.8 154.5,247.2 154.8,248.7 155,250.1 155.3,251.6 155.5,253 155.8,254.5 156,256 156.3,257.5 156.5,259 156.8,260.6 157,262.1 157.3,263.7 157.5,265.2 157.8,266.8 158,268.4 158.3,270 158.5,271.6 158.8,273.3 159,274.9 159.3,276.6 159.5,278.2 159.8,279.9 160,281.6 160.3,283.3 160.5,285" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <polygon points="91.5,285 88,274.4 97.9,275.8" fill="currentColor"/>
-  <polygon points="160.5,285 154.1,275.8 164,274.4" fill="currentColor"/>
-  <polyline points="71.5,285 71.8,283.3 72,281.6 72.3,279.9 72.5,278.2 72.8,276.6 73,274.9 73.3,273.3 73.5,271.6 73.8,270 74,268.4 74.3,266.8 74.5,265.2 74.8,263.7 75,262.1 75.3,260.6 75.5,259 75.8,257.5 76,256 76.3,254.5 76.5,253 76.8,251.6 77,250.1 77.3,248.7 77.5,247.2 77.8,245.8 78,244.4 78.3,243 78.5,241.6 78.8,240.3 79,238.9 79.3,237.6 79.5,236.2 79.8,234.9 80,233.6 80.3,232.3 80.5,231 80.8,229.8 81,228.5 81.3,227.3 81.5,226 81.8,224.8 82,223.6 82.3,222.4 82.5,221.2 82.8,220.1 83,218.9 83.3,217.8 83.5,216.6 83.8,215.5 84,214.4 84.3,213.3 84.5,212.2 84.8,211.2 85,210.1 85.3,209.1 85.5,208 85.8,207 86,206 86.3,205 86.5,204 86.8,203.1 87,202.1 87.3,201.2 87.5,200.2 87.8,199.3 88,198.4 88.3,197.5 88.5,196.6 88.8,195.8 89,194.9 89.3,194.1 89.5,193.2 89.8,192.4 90,191.6 90.3,190.8 90.5,190 90.8,189.3 91,188.5 91.3,187.8 91.5,187 91.8,186.3 92,185.6 92.3,184.9 92.5,184.2 92.8,183.6 93,182.9 93.3,182.3 93.5,181.6 93.8,181 94,180.4 94.3,179.8 94.5,179.2 94.8,178.7 95,178.1 95.3,177.6 95.5,177 95.8,176.5 96,176 96.3,175.5 96.5,175 96.8,174.6 97,174.1 97.3,173.7 97.5,173.2 97.8,172.8 98,172.4 98.3,172 98.5,171.6 98.8,171.3 99,170.9 99.3,170.6 99.5,170.2 99.8,169.9 100,169.6 100.3,169.3 100.5,169 100.8,168.8 101,168.5 101.3,168.3 101.5,168 101.8,167.8 102,167.6 102.3,167.4 102.5,167.2 102.8,167.1 103,166.9 103.3,166.8 103.5,166.6 103.8,166.5 104,166.4 104.3,166.3 104.5,166.2 104.8,166.2 105,166.1 105.3,166.1 105.5,166 105.8,166 106,166 106.3,166 106.5,166 106.8,166.1 107,166.1 107.3,166.2 107.5,166.2 107.8,166.3 108,166.4 108.3,166.5 108.5,166.6 108.8,166.8 109,166.9 109.3,167.1 109.5,167.2 109.8,167.4 110,167.6 110.3,167.8 110.5,168 110.8,168.3 111,168.5 111.3,168.8 111.5,169 111.8,169.3 112,169.6 112.3,169.9 112.5,170.2 112.8,170.6 113,170.9 113.3,171.3 113.5,171.6 113.8,172 114,172.4 114.3,172.8 114.5,173.2 114.8,173.7 115,174.1 115.3,174.6 115.5,175 115.8,175.5 116,176 116.3,176.5 116.5,177 116.8,177.6 117,178.1 117.3,178.7 117.5,179.2 117.8,179.8 118,180.4 118.3,181 118.5,181.6 118.8,182.3 119,182.9 119.3,183.6 119.5,184.2 119.8,184.9 120,185.6 120.3,186.3 120.5,187 120.8,187.8 121,188.5 121.3,189.3 121.5,190 121.8,190.8 122,191.6 122.3,192.4 122.5,193.2 122.8,194.1 123,194.9 123.3,195.8 123.5,196.6 123.8,197.5 124,198.4 124.3,199.3 124.5,200.2 124.8,201.2 125,202.1 125.3,203.1 125.5,204 125.8,205 126,206 126.3,207 126.5,208 126.8,209.1 127,210.1 127.3,211.2 127.5,212.2 127.8,213.3 128,214.4 128.3,215.5 128.5,216.6 128.8,217.8 129,218.9 129.3,220.1 129.5,221.2 129.8,222.4 130,223.6 130.3,224.8 130.5,226 130.8,227.3 131,228.5 131.3,229.8 131.5,231 131.8,232.3 132,233.6 132.3,234.9 132.5,236.2 132.8,237.6 133,238.9 133.3,240.3 133.5,241.6 133.8,243 134,244.4 134.3,245.8 134.5,247.2 134.8,248.7 135,250.1 135.3,251.6 135.5,253 135.8,254.5 136,256 136.3,257.5 136.5,259 136.8,260.6 137,262.1 137.3,263.7 137.5,265.2 137.8,266.8 138,268.4 138.3,270 138.5,271.6 138.8,273.3 139,274.9 139.3,276.6 139.5,278.2 139.8,279.9 140,281.6 140.3,283.3 140.5,285" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <polygon points="71.5,285 68,274.4 77.9,275.8" fill="currentColor"/>
-  <polygon points="140.5,285 134.1,275.8 144,274.4" fill="currentColor"/>
-  <polyline points="61.5,284 61.8,281.8 62,279.6 62.3,277.4 62.5,275.2 62.8,273.1 63,270.9 63.3,268.8 63.5,266.6 63.8,264.5 64,262.4 64.3,260.3 64.5,258.2 64.8,256.2 65,254.1 65.3,252.1 65.5,250 65.8,248 66,246 66.3,244 66.5,242 66.8,240.1 67,238.1 67.3,236.2 67.5,234.2 67.8,232.3 68,230.4 68.3,228.5 68.5,226.6 68.8,224.8 69,222.9 69.3,221.1 69.5,219.2 69.8,217.4 70,215.6 70.3,213.8 70.5,212 70.8,210.3 71,208.5 71.3,206.8 71.5,205 71.8,203.3 72,201.6 72.3,199.9 72.5,198.2 72.8,196.6 73,194.9 73.3,193.3 73.5,191.6 73.8,190 74,188.4 74.3,186.8 74.5,185.2 74.8,183.7 75,182.1 75.3,180.6 75.5,179 75.8,177.5 76,176 76.3,174.5 76.5,173 76.8,171.6 77,170.1 77.3,168.7 77.5,167.2 77.8,165.8 78,164.4 78.3,163 78.5,161.6 78.8,160.3 79,158.9 79.3,157.6 79.5,156.2 79.8,154.9 80,153.6 80.3,152.3 80.5,151 80.8,149.8 81,148.5 81.3,147.3 81.5,146 81.8,144.8 82,143.6 82.3,142.4 82.5,141.2 82.8,140.1 83,138.9 83.3,137.8 83.5,136.6 83.8,135.5 84,134.4 84.3,133.3 84.5,132.2 84.8,131.2 85,130.1 85.3,129.1 85.5,128 85.8,127 86,126 86.3,125 86.5,124 86.8,123.1 87,122.1 87.3,121.2 87.5,120.2 87.8,119.3 88,118.4 88.3,117.5 88.5,116.6 88.8,115.8 89,114.9 89.3,114.1 89.5,113.2 89.8,112.4 90,111.6 90.3,110.8 90.5,110 90.8,109.3 91,108.5 91.3,107.8 91.5,107 91.8,106.3 92,105.6 92.3,104.9 92.5,104.2 92.8,103.6 93,102.9 93.3,102.3 93.5,101.6 93.8,101 94,100.4 94.3,99.8 94.5,99.2 94.8,98.7 95,98.1 95.3,97.6 95.5,97 95.8,96.5 96,96 96.3,95.5 96.5,95 96.8,94.6 97,94.1 97.3,93.7 97.5,93.2 97.8,92.8 98,92.4 98.3,92 98.5,91.6 98.8,91.3 99,90.9 99.3,90.6 99.5,90.2 99.8,89.9 100,89.6 100.3,89.3 100.5,89 100.8,88.8 101,88.5 101.3,88.3 101.5,88 101.8,87.8 102,87.6 102.3,87.4 102.5,87.2 102.8,87.1 103,86.9 103.3,86.8 103.5,86.6 103.8,86.5 104,86.4 104.3,86.3 104.5,86.2 104.8,86.2 105,86.1 105.3,86.1 105.5,86 105.8,86 106,86 106.3,86 106.5,86 106.8,86.1 107,86.1 107.3,86.2 107.5,86.2 107.8,86.3 108,86.4 108.3,86.5 108.5,86.6 108.8,86.8 109,86.9 109.3,87.1 109.5,87.2 109.8,87.4 110,87.6 110.3,87.8 110.5,88 110.8,88.3 111,88.5 111.3,88.8 111.5,89 111.8,89.3 112,89.6 112.3,89.9 112.5,90.2 112.8,90.6 113,90.9 113.3,91.3 113.5,91.6 113.8,92 114,92.4 114.3,92.8 114.5,93.2 114.8,93.7 115,94.1 115.3,94.6 115.5,95 115.8,95.5 116,96 116.3,96.5 116.5,97 116.8,97.6 117,98.1 117.3,98.7 117.5,99.2 117.8,99.8 118,100.4 118.3,101 118.5,101.6 118.8,102.3 119,102.9 119.3,103.6 119.5,104.2 119.8,104.9 120,105.6 120.3,106.3 120.5,107 120.8,107.8 121,108.5 121.3,109.3 121.5,110 121.8,110.8 122,111.6 122.3,112.4 122.5,113.2 122.8,114.1 123,114.9 123.3,115.8 123.5,116.6 123.8,117.5 124,118.4 124.3,119.3 124.5,120.2 124.8,121.2 125,122.1 125.3,123.1 125.5,124 125.8,125 126,126 126.3,127 126.5,128 126.8,129.1 127,130.1 127.3,131.2 127.5,132.2 127.8,133.3 128,134.4 128.3,135.5 128.5,136.6 128.8,137.8 129,138.9 129.3,140.1 129.5,141.2 129.8,142.4 130,143.6 130.3,144.8 130.5,146 130.8,147.3 131,148.5 131.3,149.8 131.5,151 131.8,152.3 132,153.6 132.3,154.9 132.5,156.2 132.8,157.6 133,158.9 133.3,160.3 133.5,161.6 133.8,163 134,164.4 134.3,165.8 134.5,167.2 134.8,168.7 135,170.1 135.3,171.6 135.5,173 135.8,174.5 136,176 136.3,177.5 136.5,179 136.8,180.6 137,182.1 137.3,183.7 137.5,185.2 137.8,186.8 138,188.4 138.3,190 138.5,191.6 138.8,193.3 139,194.9 139.3,196.6 139.5,198.2 139.8,199.9 140,201.6 140.3,203.3 140.5,205 140.8,206.8 141,208.5 141.3,210.3 141.5,212 141.8,213.8 142,215.6 142.3,217.4 142.5,219.2 142.8,221.1 143,222.9 143.3,224.8 143.5,226.6 143.8,228.5 144,230.4 144.3,232.3 144.5,234.2 144.8,236.2 145,238.1 145.3,240.1 145.5,242 145.8,244 146,246 146.3,248 146.5,250 146.8,252.1 147,254.1 147.3,256.2 147.5,258.2 147.8,260.3 148,262.4 148.3,264.5 148.5,266.6 148.8,268.8 149,270.9 149.3,273.1 149.5,275.2 149.8,277.4 150,279.6 150.3,281.8 150.5,284" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <polygon points="61.5,284 57.7,273.5 67.6,274.6" fill="currentColor"/>
-  <polygon points="150.5,284 144.4,274.6 154.3,273.5" fill="currentColor"/>
-  <circle cx="106" cy="86" r="4" fill="currentColor"/>
-  <text x="106" y="72" font-size="13" fill="currentColor" text-anchor="middle">vertex (−1, 4)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Successive transformations from x squared to negative 2x squared, then left 1 unit, then up 4 units.","xMin":-5,"xMax":5,"yMin":-6,"yMax":7,"unit":24,"tickLabels":true,"quadratics":[{"a":1},{"a":-2},{"a":-2,"b":-4,"c":-2},{"a":-2,"b":-4,"c":2}],"points":[{"at":[-1,4],"label":"vertex (−1, 4)","labelSide":"w","labelNudge":[-16,0]}]}
+{{< /apfigure >}}
 
 {{< graphplot
   question="Graph $f(x)=-3x^2+12x-4$ by using transformations."
@@ -1566,7 +1474,7 @@ the constants $h$ and $k$.
   <line x1="86" y1="163" x2="86" y2="169" stroke="currentColor" stroke-width="1"/>
   <text x="86" y="181" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
   <line x1="106" y1="163" x2="106" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="181" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <text x="115" y="163" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
   <line x1="126" y1="163" x2="126" y2="169" stroke="currentColor" stroke-width="1"/>
   <text x="126" y="181" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
   <line x1="146" y1="163" x2="146" y2="169" stroke="currentColor" stroke-width="1"/>
@@ -1574,7 +1482,7 @@ the constants $h$ and $k$.
   <line x1="166" y1="163" x2="166" y2="169" stroke="currentColor" stroke-width="1"/>
   <text x="166" y="181" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="186" y1="163" x2="186" y2="169" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="181" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <text x="177" y="163" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
   <line x1="226" y1="163" x2="226" y2="169" stroke="currentColor" stroke-width="1"/>
   <text x="226" y="181" font-size="11" fill="currentColor" text-anchor="middle">1</text>
   <line x1="246" y1="163" x2="246" y2="169" stroke="currentColor" stroke-width="1"/>

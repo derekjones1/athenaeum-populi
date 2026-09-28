@@ -387,10 +387,10 @@ by graphing the line $y=x+4$, and then we'll plot the five points we tested.
   <circle cx="242" cy="146" r="4" fill="currentColor"/>
   <circle cx="158" cy="398" r="4" fill="currentColor"/>
   <circle cx="122" cy="74" r="4" fill="currentColor"/>
-  <text x="229.2" y="238.2" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
-  <text x="241.2" y="166.2" font-size="13" fill="currentColor" text-anchor="start">(1, 6)</text>
-  <text x="230.8" y="134.8" font-size="13" fill="currentColor" text-anchor="end">(2, 6)</text>
-  <text x="172" y="402" font-size="13" fill="currentColor" text-anchor="start">(−5, −15)</text>
+  <text x="223" y="206" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
+  <text x="223" y="125" font-size="13" fill="currentColor" text-anchor="start">(1, 6)</text>
+  <text x="247" y="166" font-size="13" fill="currentColor" text-anchor="start">(2, 6)</text>
+  <text x="148" y="402" font-size="13" fill="currentColor" text-anchor="end">(−5, −15)</text>
   <text x="136" y="78" font-size="13" fill="currentColor" text-anchor="start">(−8, 12)</text>
 </svg>
 </div>
@@ -580,7 +580,7 @@ containing $(0,0)$ is shaded.
   <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
   <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
   <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <text x="192" y="230" font-size="11" fill="currentColor" text-anchor="start">−2</text>
   <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
   <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
   <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
@@ -695,7 +695,7 @@ containing $(0,0)$ is shaded.
   <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
   <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <text x="266" y="178" font-size="11" fill="currentColor" text-anchor="middle">4</text>
   <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
   <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>

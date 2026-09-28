@@ -542,7 +542,7 @@ line, as shown in the graph.
   <polygon points="14,146 24,141 24,151" fill="currentColor"/>
   <polygon points="146,278 141,268 151,268" fill="currentColor"/>
   <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <text x="138" y="24" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">y</text>
   <line x1="117.5" y1="263.1" x2="234.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
   <polygon points="239,20 239,31.2 230.1,26.7" fill="currentColor"/>
   <polygon points="113,272 113,260.8 121.9,265.3" fill="currentColor"/>

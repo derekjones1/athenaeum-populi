@@ -195,7 +195,7 @@ this boundary line that also contains $(0,0)$.
   <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
   <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <text x="146" y="179" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
   <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
@@ -211,7 +211,7 @@ this boundary line that also contains $(0,0)$.
   <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
   <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
   <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <text x="192" y="230" font-size="11" fill="currentColor" text-anchor="start">−2</text>
   <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
   <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
   <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
@@ -427,7 +427,7 @@ $(0,0)$.
   <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
   <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <text x="266" y="179" font-size="11" fill="currentColor" text-anchor="middle">4</text>
   <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
   <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>
@@ -437,7 +437,7 @@ $(0,0)$.
   <line x1="183" y1="306" x2="189" y2="306" stroke="currentColor" stroke-width="1"/>
   <text x="180" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
   <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <text x="180" y="261" font-size="11" fill="currentColor" text-anchor="end">−4</text>
   <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
   <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
   <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>

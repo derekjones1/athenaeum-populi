@@ -468,6 +468,19 @@ crossing a tick digit is reported but never gated; a dashed stroke crossing
 one IS gated, because the engine gaps dashes behind digits. The same run
 previews every legacy `data-spec` figure as its spec-first re-render and
 reports, without gating, the ones that will need label work at conversion.
+Hand-written inline `<svg>` figures are read from the markup itself (lines,
+polylines, polygons, rects, circles, ellipses, paths with their curves and
+arcs flattened, `<g>` styles and transforms, `<text>` with `<tspan>`) and
+checked the same way — label over label, label over ink, label past the
+viewBox — each finding named `page:line`, the same `L<line>` that
+`tools/figures/render-page-figures.mjs` names its render. Grid hairlines and
+translucent shading are background; the only exemptions are a `(` `)` `[` `]`
+endpoint glyph drawn on its number-line axis and tick, and a tick label on
+its own tick. Inline-SVG overlaps fail `npm test` (since September 28, 2026,
+when the 39 flagged figures were fixed; `INLINE_SVG_GATES` in the tool) and
+ride in `--json` under `inline`. Fix a finding by moving the label, never the
+mathematics, and never gap a curve at a vertex, intercept, or plotted point;
+a figure no placement can clear is redrawn spec-first.
 What the machines cannot check is FIDELITY, so the visual comparison against
 the PDF remains part of authoring (below).
 
@@ -541,7 +554,8 @@ mapping arrows), extend `graph-core` with one rather than hand-assembling
 the picture out of `polygons` and `texts`.
 
 Then gate the page before moving on: `npm run verify-section -- <page>`,
-`node tools/figures/check-figure-overlaps.mjs <page>`, `npm test`, and the
+`node tools/figures/check-figure-overlaps.mjs <page>` (it also reports the
+page's remaining hand-written inline SVG), `npm test`, and the
 visual comparison of each converted figure against the PDF, which no gate
 replaces.
 

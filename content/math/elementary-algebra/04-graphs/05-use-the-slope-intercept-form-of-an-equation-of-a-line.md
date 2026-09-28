@@ -573,13 +573,13 @@ slopes are negative reciprocals of each other.
   <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="266" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
   <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <text x="152" y="270" font-size="11" fill="currentColor" text-anchor="start">−6</text>
   <line x1="143" y1="246" x2="149" y2="246" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <text x="152" y="250" font-size="11" fill="currentColor" text-anchor="start">−5</text>
   <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <text x="152" y="230" font-size="11" fill="currentColor" text-anchor="start">−4</text>
   <line x1="143" y1="206" x2="149" y2="206" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="210" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <text x="152" y="210" font-size="11" fill="currentColor" text-anchor="start">−3</text>
   <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
   <text x="140" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
   <line x1="143" y1="166" x2="149" y2="166" stroke="currentColor" stroke-width="1"/>

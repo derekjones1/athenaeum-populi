@@ -81,7 +81,7 @@ $y$-value, as shown in the accompanying table.
   <line x1="66" y1="223" x2="66" y2="229" stroke="currentColor" stroke-width="1"/>
   <text x="66" y="241" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
   <line x1="106" y1="223" x2="106" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="241" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <text x="106" y="218" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="186" y1="223" x2="186" y2="229" stroke="currentColor" stroke-width="1"/>
   <text x="186" y="241" font-size="11" fill="currentColor" text-anchor="middle">2</text>
   <line x1="226" y1="223" x2="226" y2="229" stroke="currentColor" stroke-width="1"/>
@@ -95,7 +95,7 @@ $y$-value, as shown in the accompanying table.
   <line x1="143" y1="346" x2="149" y2="346" stroke="currentColor" stroke-width="1"/>
   <text x="140" y="350" font-size="11" fill="currentColor" text-anchor="end">−6</text>
   <line x1="143" y1="306" x2="149" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="310" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <text x="152" y="310" font-size="11" fill="currentColor" text-anchor="start">−4</text>
   <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
   <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−2</text>
   <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
@@ -121,7 +121,7 @@ $y$-value, as shown in the accompanying table.
   <line x1="77.5" y1="423.1" x2="267.5" y2="42.9" stroke="currentColor" stroke-width="1.8"/>
   <polygon points="272,34 272,45.2 263.1,40.7" fill="currentColor"/>
   <polygon points="73,432 73,420.8 81.9,425.3" fill="currentColor"/>
-  <text x="216.1" y="199.1" font-size="13" fill="currentColor" text-anchor="start">y = 2x − 3</text>
+  <text x="242" y="86" font-size="13" fill="currentColor" text-anchor="end">y = 2x − 3</text>
 </svg>
 </div>
 
@@ -212,7 +212,7 @@ more than one point, the graph does not represent a function.
   <line x1="206" y1="143" x2="206" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="206" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
   <line x1="226" y1="143" x2="226" y2="149" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <text x="226" y="138" font-size="11" fill="currentColor" text-anchor="middle">4</text>
   <line x1="246" y1="143" x2="246" y2="149" stroke="currentColor" stroke-width="1"/>
   <text x="246" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
   <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
@@ -604,7 +604,7 @@ through $(0,4)$.
   <line x1="163" y1="186" x2="169" y2="186" stroke="currentColor" stroke-width="1"/>
   <text x="160" y="190" font-size="11" fill="currentColor" text-anchor="end">2</text>
   <line x1="163" y1="146" x2="169" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="160" y="150" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <text x="160" y="141" font-size="11" fill="currentColor" text-anchor="end">4</text>
   <line x1="163" y1="106" x2="169" y2="106" stroke="currentColor" stroke-width="1"/>
   <text x="160" y="110" font-size="11" fill="currentColor" text-anchor="end">6</text>
   <line x1="163" y1="66" x2="169" y2="66" stroke="currentColor" stroke-width="1"/>
@@ -818,7 +818,7 @@ We choose $x$-values. We substitute them in and then create a chart.
   <line x1="46" y1="183" x2="46" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="46" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
   <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <text x="66" y="179" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
   <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
   <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">1</text>
   <line x1="126" y1="183" x2="126" y2="189" stroke="currentColor" stroke-width="1"/>

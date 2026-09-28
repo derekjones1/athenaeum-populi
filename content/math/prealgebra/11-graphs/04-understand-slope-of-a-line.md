@@ -1107,7 +1107,7 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
   <line x1="346" y1="223" x2="346" y2="229" stroke="currentColor" stroke-width="1"/>
   <text x="346" y="241" font-size="11" fill="currentColor" text-anchor="middle">6</text>
   <line x1="386" y1="223" x2="386" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="386" y="241" font-size="11" fill="currentColor" text-anchor="middle">8</text>
+  <text x="386" y="219" font-size="11" fill="currentColor" text-anchor="middle">8</text>
   <line x1="426" y1="223" x2="426" y2="229" stroke="currentColor" stroke-width="1"/>
   <text x="426" y="241" font-size="11" fill="currentColor" text-anchor="middle">10</text>
   <line x1="223" y1="426" x2="229" y2="426" stroke="currentColor" stroke-width="1"/>

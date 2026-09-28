@@ -978,7 +978,7 @@ the lines.
   <line x1="30" y1="226" x2="302" y2="226" stroke="currentColor" stroke-width="1.8"/>
   <polygon points="312,226 302,231 302,221" fill="currentColor"/>
   <polygon points="20,226 30,221 30,231" fill="currentColor"/>
-  <text x="178.1" y="256.8" font-size="13" fill="currentColor" text-anchor="end">y = −3x</text>
+  <text x="122" y="62" font-size="13" fill="currentColor" text-anchor="end">y = −3x</text>
   <text x="247.8" y="246" font-size="13" fill="currentColor" text-anchor="middle">y = −3</text>
 </svg>
 </div>
@@ -1096,7 +1096,7 @@ occurs when $x$ is zero.
   <polygon points="97.7,38 99.2,49.1 89.8,45.9" fill="currentColor"/>
   <circle cx="87" cy="70" r="4" fill="currentColor"/>
   <circle cx="61" cy="148" r="4" fill="currentColor"/>
-  <text x="75.8" y="58.8" font-size="13" fill="currentColor" text-anchor="end">(2, 0)</text>
+  <text x="94" y="86" font-size="13" fill="currentColor" text-anchor="start">(2, 0)</text>
   <text x="75" y="152" font-size="13" fill="currentColor" text-anchor="start">(0, −6)</text>
 </svg>
 </div>

@@ -313,9 +313,9 @@ on the same rectangular coordinate system, then look for where they cross.
   <polygon points="272,203 265.3,211.9 260.8,203" fill="currentColor"/>
   <polygon points="20,329 26.7,320.1 31.2,329" fill="currentColor"/>
   <circle cx="186" cy="246" r="4" fill="currentColor"/>
-  <text x="197.2" y="234.8" font-size="13" fill="currentColor" text-anchor="start">(4, −1)</text>
+  <text x="174" y="243" font-size="13" fill="currentColor" text-anchor="end">(4, −1)</text>
   <text x="216.8" y="275.8" font-size="13" fill="currentColor" text-anchor="start">2x + y = 7</text>
-  <text x="90.2" y="315.8" font-size="13" fill="currentColor" text-anchor="start">x − 2y = 6</text>
+  <text x="30" y="284" font-size="13" fill="currentColor" text-anchor="start">x − 2y = 6</text>
 </svg>
 </div>
 
@@ -419,7 +419,7 @@ $$
   <polygon points="23,20 31.9,26.7 23,31.2" fill="currentColor"/>
   <circle cx="86" cy="146" r="4" fill="currentColor"/>
   <text x="74.8" y="166.2" font-size="13" fill="currentColor" text-anchor="end">(−1, 2)</text>
-  <text x="115.1" y="288" font-size="13" fill="currentColor" text-anchor="end">y = −3x − 1</text>
+  <text x="101" y="252" font-size="13" fill="currentColor" text-anchor="end">y = −3x − 1</text>
   <text x="140.2" y="222.7" font-size="13" fill="currentColor" text-anchor="start">y = −2x</text>
 </svg>
 </div>

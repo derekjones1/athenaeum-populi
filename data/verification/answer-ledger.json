@@ -11106,6 +11106,14 @@
     "result": "agrees"
    }
   },
+  "1c8b3f9811e03d56": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1c93f15d1c98d702": {
    "verdict": "ok",
    "solved": {
@@ -31642,14 +31650,6 @@
   },
   "561d3f58c6e336f9": {
    "verdict": "ok"
-  },
-  "561fcec3f9397e33": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "5620e17b3e55fc75": {
    "verdict": "ok",
@@ -63958,6 +63958,14 @@
     "result": "agrees"
    }
   },
+  "b360a7e2503fa0a7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b36523553d023b71": {
    "verdict": "ok"
   },
@@ -67523,10 +67531,6 @@
   },
   "bd3e00759a6e48bd": {
    "verdict": "ok"
-  },
-  "bd42e53ea4b74998": {
-   "verdict": "ok",
-   "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "bd449eac9808ffd0": {
    "verdict": "ok",

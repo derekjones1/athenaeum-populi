@@ -17,6 +17,10 @@
  *   - {{< apfigure kind="…" >}} spec bodies
  *   - {{< multiplechoice mode="graph" >}} option specs (kind rides in JSON)
  *   - legacy prerendered <div class="ap-figure" data-spec="…"> figures
+ *   - hand-written inline <svg> figures, read from the markup itself
+ *     (svg-geometry.mjs) and named page:line — the L<line> that
+ *     render-page-figures.mjs names its PNG. Their overlaps fail the run
+ *     (INLINE_SVG_GATES, promoted September 28, 2026).
  *
  * `--status` skips the geometry entirely and prints the figure-engine
  * CONVERSION QUEUE instead: per page, whether its figures are all
@@ -32,7 +36,8 @@
  */
 import { readFileSync } from 'node:fs'
 import { buildGraph, buildNumberLine, buildFigure } from '../../assets/js/lib/math/graph-core.mjs'
-import { measureTextWidth } from '../../assets/js/lib/math/text-metrics.mjs'
+import { textBox, arcPoints, svgInk, apply, invert } from './svg-geometry.mjs'
+import { extractRenderables } from './render-page-figures.mjs'
 import { parseCliArgs } from '../lib/cli.mjs'
 import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs'
 import { decodeHtmlEntities, openTagRe, htmlAttribute } from '../lib/html.mjs'
@@ -54,17 +59,12 @@ const BUILDERS = { graph: buildGraph, numberline: buildNumberLine, figure: build
 
 // ---------------------------------------------------------------------------
 // geometry: tight text boxes + segment/rect intersection
-const FONT_ASCENT = 0.72 // em above the baseline actually inked by this stack
-const FONT_DESCENT = 0.2
 
-function textBox(el) {
-  const size = Number(el.attrs.fontSize || 13)
-  const w = measureTextWidth(el.text, size, { italic: el.attrs.fontStyle === 'italic' })
-  const X = Number(el.attrs.x), Y = Number(el.attrs.y)
-  const anchor = el.attrs.textAnchor
-  const x0 = anchor === 'middle' ? X - w / 2 : anchor === 'end' ? X - w : X
-  return [x0, Y - FONT_ASCENT * size, x0 + w, Y + FONT_DESCENT * size]
-}
+/** a graph-core text element's tight box (see svg-geometry textBox) */
+const specTextBox = (el) => textBox({
+  text: el.text, size: Number(el.attrs.fontSize || 13), x: Number(el.attrs.x), y: Number(el.attrs.y),
+  anchor: el.attrs.textAnchor, italic: el.attrs.fontStyle === 'italic',
+})
 
 const grow = ([a, b, c, d], p) => [a - p, b - p, c + p, d + p]
 const boxesOverlap = (p, q) => p[0] < q[2] && q[0] < p[2] && p[1] < q[3] && q[1] < p[3]
@@ -124,38 +124,13 @@ function strokeSegments(els) {
       const arcRe = /M ([\d.-]+) ([\d.-]+) A ([\d.-]+) ([\d.-]+) 0 ([01]) ([01]) ([\d.-]+) ([\d.-]+)/g
       for (const m of String(attrs.d).matchAll(arcRe)) {
         const [x0, y0, rx, ry, large, sweep, x1, y1] = m.slice(1).map(Number)
-        segs.push(...arcSegments(x0, y0, rx, ry, large, sweep, x1, y1))
+        let prev = [x0, y0]
+        for (const q of arcPoints(x0, y0, rx, ry, 0, large, sweep, x1, y1)) {
+          segs.push({ seg: [prev, q], kind: 'circle' })
+          prev = q
+        }
       }
     }
-  }
-  return segs
-}
-
-/** sample an SVG elliptical arc (rotation 0) into short segments */
-function arcSegments(x0, y0, rx, ry, large, sweep, x1, y1) {
-  // endpoint → center parameterization, SVG spec B.2.4 (phi = 0)
-  const dx = (x0 - x1) / 2, dy = (y0 - y1) / 2
-  const L = (dx * dx) / (rx * rx) + (dy * dy) / (ry * ry)
-  if (L > 1) { const s = Math.sqrt(L); rx *= s; ry *= s }
-  const sign = large === sweep ? -1 : 1
-  const num = rx * rx * ry * ry - rx * rx * dy * dy - ry * ry * dx * dx
-  const den = rx * rx * dy * dy + ry * ry * dx * dx
-  const co = sign * Math.sqrt(Math.max(0, num / den))
-  const cxp = co * (rx * dy) / ry, cyp = co * (-ry * dx) / rx
-  const cx = cxp + (x0 + x1) / 2, cy = cyp + (y0 + y1) / 2
-  const angleOf = (px, py) => Math.atan2((py - cyp) / ry, (px - cxp) / rx)
-  const th0 = angleOf(dx, dy)
-  let dTh = angleOf(-dx, -dy) - th0
-  if (sweep === 0 && dTh > 0) dTh -= 2 * Math.PI
-  if (sweep === 1 && dTh < 0) dTh += 2 * Math.PI
-  const segs = []
-  const n = Math.max(4, Math.ceil(Math.abs(dTh) / (Math.PI / 36)))
-  let prev = null
-  for (let i = 0; i <= n; i++) {
-    const th = th0 + (dTh * i) / n
-    const q = [cx + rx * Math.cos(th), cy + ry * Math.sin(th)]
-    if (prev) segs.push({ seg: [prev, q], kind: 'circle' })
-    prev = q
   }
   return segs
 }
@@ -177,6 +152,32 @@ function segDepth(a, b, bb) {
   return Math.max(0, Math.min(m[0] - bb[0], bb[2] - m[0], m[1] - bb[1], bb[3] - m[1]))
 }
 
+/** a text's box corners in root space (its box is local when it carries a rotation m) */
+const corners = ({ bb, m }) => [[bb[0], bb[1]], [bb[2], bb[1]], [bb[2], bb[3]], [bb[0], bb[3]]].map((q) => (m ? apply(m, q) : q))
+
+/** penetration depth of two text boxes (0 = apart); separating axes when either is rotated */
+function boxDepth(p, q) {
+  if (!p.m && !q.m) {
+    if (!boxesOverlap(p.bb, q.bb)) return 0
+    return Math.min(Math.min(p.bb[2], q.bb[2]) - Math.max(p.bb[0], q.bb[0]), Math.min(p.bb[3], q.bb[3]) - Math.max(p.bb[1], q.bb[1]))
+  }
+  const P = corners(p), Q = corners(q)
+  let depth = Infinity
+  for (const poly of [P, Q]) {
+    for (let i = 0; i < 2; i++) {
+      const e = [poly[i + 1][0] - poly[i][0], poly[i + 1][1] - poly[i][1]]
+      const len = Math.hypot(...e) || 1
+      const ax = [-e[1] / len, e[0] / len]
+      const proj = (pts) => pts.map(([x, y]) => x * ax[0] + y * ax[1])
+      const a = proj(P), b = proj(Q)
+      const o = Math.min(Math.max(...a), Math.max(...b)) - Math.max(Math.min(...a), Math.min(...b))
+      if (o <= 0) return 0
+      depth = Math.min(depth, o)
+    }
+  }
+  return depth
+}
+
 // Cuts at or under 3px are cosmetic: the tight box already over-reserves a
 // digit's real ink (0.72em ascent covers the tallest glyph, not the average),
 // so a ≤3px cut clips a box corner without touching a stroke of the glyph —
@@ -188,41 +189,132 @@ function segDepth(a, b, bb) {
 // digits in the engine, so a dashed crossing IS a defect and stays gated.
 const GRAZE = 3
 
+/**
+ * Every overlap on one figure — the core both passes share.
+ *   texts: [{ text, bb, m?, id? }]  bb in root space, or local to rotation m
+ *   segs:  [{ seg, kind }]           root space
+ * `tolerate(t, kind)` marks a stroke crossing as print-tolerated;
+ * `exempt(t, s)` returns the name of an exemption that clears one segment.
+ * Both stay in the report (JSON) but never count as an overlap.
+ */
+function overlaps(texts, segs, { tolerate = () => false, exempt = () => null } = {}) {
+  const found = []
+  for (let i = 0; i < texts.length; i++) {
+    for (let j = i + 1; j < texts.length; j++) {
+      if (texts[i].id !== undefined && texts[i].id === texts[j].id) continue // chunks of one <text>
+      const depth = boxDepth(texts[i], texts[j])
+      if (depth > 0) found.push({ kind: 'text-text', a: texts[i].text, b: texts[j].text, depth })
+    }
+  }
+  for (const t of texts) {
+    const inv = t.m ? invert(t.m) : null
+    const deepest = new Map()
+    for (const s of segs) {
+      const [a, b] = inv ? s.seg.map((q) => apply(inv, q)) : s.seg
+      if (!segHitsBox(a, b, t.bb)) continue
+      const depth = segDepth(a, b, t.bb)
+      const why = exempt(t, s)
+      const key = `${s.kind}\u0000${why ?? ''}`
+      if (depth > (deepest.get(key)?.depth ?? 0)) deepest.set(key, { kind: s.kind, why, depth })
+    }
+    for (const { kind, why, depth } of deepest.values()) {
+      const c = { kind: `text-${kind}`, a: t.text, depth, tolerated: !why && tolerate(t, kind) }
+      if (why) c.exempt = why
+      found.push(c)
+    }
+  }
+  return found.map((c) => ({ ...c, graze: c.depth < GRAZE || !!c.tolerated || !!c.exempt }))
+}
+
 function collisions(built) {
   const texts = built.els.filter((e) => e.tag === 'text')
-  const found = []
   // Tick digits are the smallest font on the board; labels and axis letters
   // run at the base size. On a digit-only board every text is a "digit",
   // which is exactly right — there are no labels to protect.
   const sizes = texts.map((t) => Number(t.attrs.fontSize))
   const maxSize = Math.max(...sizes, 0)
-  const isDigit = (t) => Number(t.attrs.fontSize) < maxSize
-  const boxes = texts.map((t) => ({ t, bb: grow(textBox(t), NEAR) }))
-  for (let i = 0; i < boxes.length; i++) {
-    for (let j = i + 1; j < boxes.length; j++) {
-      const p = boxes[i].bb, q = boxes[j].bb
-      if (!boxesOverlap(p, q)) continue
-      const depth = Math.min(
-        Math.min(p[2], q[2]) - Math.max(p[0], q[0]),
-        Math.min(p[3], q[3]) - Math.max(p[1], q[1]),
-      )
-      found.push({ kind: 'text-text', a: boxes[i].t.text, b: boxes[j].t.text, depth })
+  const boxes = texts.map((t) => ({ text: t.text, bb: grow(specTextBox(t), NEAR), digit: Number(t.attrs.fontSize) < maxSize }))
+  return overlaps(boxes, strokeSegments(built.els), { tolerate: (t, kind) => t.digit && kind !== 'dashed line' })
+}
+
+// ---------------------------------------------------------------------------
+// inline SVG: hand-written figures, read from the markup itself
+//
+// Gating since September 28, 2026, when the corpus was cleared (39 figures
+// fixed). Setting this false makes inline findings report-only again.
+const INLINE_SVG_GATES = true
+
+/** a tick label: a bare number, fraction, or π multiple */
+const TICK_LABEL = /^[−–+-]?(?:\d+(?:[.,]\d+)?|\d+\/\d+|\d*π(?:\/\d+)?|[½⅓⅔¼¾])$/
+/** the number-line endpoint glyphs */
+const BRACKET = /^[()[\]]$/
+
+/**
+ * The narrow exemptions, each drawn from a rendered corpus figure:
+ *   - 'bracket on axis': a lone ( ) [ ] glyph straddling a horizontal solid
+ *     line, and the short tick that line carries under the glyph — the
+ *     book's number-line endpoint convention draws the glyph ON the axis,
+ *     over the endpoint's own tick (IA 2.5–2.7, IA 7.6, EA 2.7);
+ *   - 'own tick': a tick label crossed by its own tick mark — a short,
+ *     solid, axis-aligned line through the label's own centre line (the
+ *     spec checker's digit-on-its-tick tolerance; no corpus figure needs it
+ *     today, so a label that starts touching its tick is not reported).
+ * Nothing else is exempt: a curve or plotted line through a tick digit, two
+ * tick labels crowding the origin, or a label on a plotted point is a
+ * reported finding.
+ */
+function inlineExemption(t, s) {
+  if (s.tag !== 'line' || s.dashed || !s.axisAligned) return null
+  const [[x1, y1], [x2, y2]] = s.seg
+  const len = Math.hypot(x2 - x1, y2 - y1)
+  if (t.axisY !== undefined) {
+    if (s.axisAligned === 'h' && Math.abs(y1 - t.axisY) < 0.5) return 'bracket on axis'
+    if (s.axisAligned === 'v' && len <= TICK_MAX && Math.min(y1, y2) <= t.axisY && Math.max(y1, y2) >= t.axisY) return 'bracket on axis'
+  }
+  if (TICK_LABEL.test(t.text) && len <= TICK_MAX) {
+    const cx = (t.bb[0] + t.bb[2]) / 2, cy = (t.bb[1] + t.bb[3]) / 2
+    if (s.axisAligned === 'v' && Math.abs(x1 - cx) <= (t.bb[2] - t.bb[0]) / 2) return 'own tick'
+    if (s.axisAligned === 'h' && Math.abs(y1 - cy) <= (t.bb[3] - t.bb[1]) / 2) return 'own tick'
+  }
+  return null
+}
+/** longest line that still reads as a tick mark (corpus ticks: 6–12 px) */
+const TICK_MAX = 12
+
+/**
+ * The axis a bracket glyph sits on: a solid horizontal line running
+ * through the glyph's body (not along its top or bottom edge) and past
+ * both of its sides.
+ */
+function bracketAxis(t, ink) {
+  if (t.m || !BRACKET.test(t.text)) return undefined
+  const [x0, y0, x1, y1] = t.bb
+  for (const s of ink) {
+    if (s.tag !== 'line' || s.dashed || s.axisAligned !== 'h') continue
+    const y = s.seg[0][1]
+    const lo = Math.min(s.seg[0][0], s.seg[1][0]), hi = Math.max(s.seg[0][0], s.seg[1][0])
+    if (y > y0 + 1 && y < y1 - 1 && lo <= x0 && hi >= x1) return y
+  }
+  return undefined
+}
+
+function inlineCollisions(svgText) {
+  const { viewBox, texts, strokes } = svgInk(svgText)
+  const boxes = texts.map((t) => ({ text: t.text, bb: grow(t.box, NEAR), m: t.m, id: t.id }))
+  const ink = strokes.filter((s) => !s.faint)
+  for (const t of boxes) t.axisY = bracketAxis(t, ink)
+  const found = overlaps(boxes, ink, { exempt: inlineExemption })
+  if (viewBox) {
+    // an inline <svg> clips to its viewport: text past the edge is cut off
+    const [vx, vy, vw, vh] = viewBox
+    for (const t of boxes) {
+      const pts = corners(t)
+      const xs = pts.map((q) => q[0]), ys = pts.map((q) => q[1])
+      const out = Math.max(vx - Math.min(...xs), vy - Math.min(...ys), Math.max(...xs) - (vx + vw), Math.max(...ys) - (vy + vh))
+      if (out > 0) found.push({ kind: 'outside viewBox', a: t.text, depth: out, graze: out < GRAZE })
     }
   }
-  const segs = strokeSegments(built.els)
-  for (const { t, bb } of boxes) {
-    const deepest = new Map()
-    for (const { seg, kind } of segs) {
-      if (!segHitsBox(seg[0], seg[1], bb)) continue
-      const depth = segDepth(seg[0], seg[1], bb)
-      if (depth > (deepest.get(kind) ?? 0)) deepest.set(kind, depth)
-    }
-    for (const [kind, depth] of deepest) {
-      const tolerated = isDigit(t) && kind !== 'dashed line'
-      found.push({ kind: `text-${kind}`, a: t.text, depth, tolerated })
-    }
-  }
-  return found.map((c) => ({ ...c, graze: c.depth < GRAZE || !!c.tolerated }))
+  return found
 }
 
 // ---------------------------------------------------------------------------
@@ -300,10 +392,30 @@ if (statusMode) {
 
 let figures = 0, dirty = 0, grazeOnly = 0, failed = 0
 let legacyFigures = 0, legacyDirty = 0
+let inlineFigures = 0, inlineDirty = 0, inlineGrazeOnly = 0
 const report = []
+const inlineReport = []
 for (const file of roots.flatMap((root) => walkMarkdown(root))) {
   const src = maskCode(readFileSync(file, 'utf8'))
   const { specs } = figureSpecs(src)
+  // Hand-written inline SVG, numbered by the line its <svg> opens on — the
+  // same L<line> render-page-figures.mjs names its PNG, so a finding opens
+  // straight onto its picture.
+  for (const { line, text } of extractRenderables(src).svgs) {
+    inlineFigures++
+    let found
+    try {
+      found = inlineCollisions(text)
+    } catch (e) {
+      inlineDirty++
+      inlineReport.push({ file, line, error: e.message })
+      continue
+    }
+    if (!found.length) continue
+    if (found.every((c) => c.graze)) inlineGrazeOnly++
+    else inlineDirty++
+    inlineReport.push({ file, line, aria: ((text.match(/aria-label="([^"]*)"/) || [])[1] || '').slice(0, 70), found })
+  }
   for (const { kind, json, where, legacy } of specs) {
     if (legacy) legacyFigures++
     else figures++
@@ -328,8 +440,20 @@ for (const file of roots.flatMap((root) => walkMarkdown(root))) {
 }
 
 if (asJson) {
-  console.log(JSON.stringify({ figures, dirty, grazeOnly, legacyFigures, legacyDirty, failed, report }, null, 2))
+  console.log(JSON.stringify({
+    figures, dirty, grazeOnly, legacyFigures, legacyDirty, failed, report,
+    inline: { gates: INLINE_SVG_GATES, figures: inlineFigures, dirty: inlineDirty, grazeOnly: inlineGrazeOnly, report: inlineReport },
+  }, null, 2))
 } else {
+  for (const r of inlineReport) {
+    if (!r.error && r.found.every((c) => c.graze)) continue
+    console.log(`\n${r.file}:${r.line} (inline svg)`)
+    if (r.error) { console.log(`  ⚠ failed to read: ${r.error}`); continue }
+    console.log(`  aria: ${r.aria}…`)
+    for (const c of r.found.filter((c) => !c.graze)) {
+      console.log(`  ${INLINE_SVG_GATES ? '✗' : '⚠'} ${c.kind} (${c.depth.toFixed(1)}px): ${JSON.stringify(c.a)}${c.b ? ` ⟷ ${JSON.stringify(c.b)}` : ''}`)
+    }
+  }
   for (const r of report) {
     if (!r.error && r.found.every((c) => c.graze)) continue // grazes stay out of the console noise
     console.log(`\n${r.file} (${r.where}${r.legacy ? ', re-render preview' : ''})`)
@@ -343,6 +467,9 @@ if (asJson) {
     + `${dirty} with real overlaps, ${grazeOnly} with only ≤${GRAZE}px grazes or print-tolerated digit crossings.`)
   console.log(`${legacyFigures} legacy figure(s) previewed as spec-first re-renders: `
     + `${legacyDirty} would need label work at conversion (⚠, non-gating).`)
+  console.log(`${inlineFigures} inline SVG figure(s) checked: ${inlineFigures - inlineDirty - inlineGrazeOnly} clean, `
+    + `${inlineDirty} with overlaps, ${inlineGrazeOnly} with only ≤${GRAZE}px grazes or exempt crossings`
+    + `${INLINE_SVG_GATES ? '.' : ' (⚠ report-only: not yet gating).'}`)
   if (failed) console.log(`${failed} spec(s) failed to build.`)
 }
-process.exit(failed || dirty ? 1 : 0)
+process.exit(failed || dirty || (INLINE_SVG_GATES && inlineDirty) ? 1 : 0)

@@ -842,7 +842,7 @@ $$m_1\cdot m_2=\frac{1}{4}(-4)=-1.$$
   <polygon points="237.5,352 230.2,343.5 239.9,341.1" fill="currentColor"/>
   <polygon points="154.5,20 161.8,28.5 152.1,30.9" fill="currentColor"/>
   <text x="273.6" y="165.4" font-size="13" fill="currentColor" text-anchor="middle">y = ¼x − 1</text>
-  <text x="203.7" y="286.8" font-size="13" fill="currentColor" text-anchor="end">y = −4x + 2</text>
+  <text x="228" y="290" font-size="13" fill="currentColor" text-anchor="start">y = −4x + 2</text>
 </svg>
 </div>
 
