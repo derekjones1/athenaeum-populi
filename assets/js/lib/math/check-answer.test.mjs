@@ -1203,6 +1203,12 @@ const formCases = [
   // grade equal to the authored answer, equation and bare-expression alike
   ['y=-2x-2', 'y=-2x-2', 'slope-intercept-form', 'correct'],
   ['y=-2(x+2)+2', 'y=-2x-2', 'slope-intercept-form', 'form'],
+  // line-standard-form: the boundary kept as written (Elementary Algebra 4.7)
+  ['y\\ge3-x', 'x+y\\geq3', 'line-standard-form', 'form'],
+  ['x+y-3\\ge0', 'x+y\\geq3', 'line-standard-form', 'form'],
+  ['x+y\\ge3', 'x+y\\geq3', 'line-standard-form', 'correct'],
+  ['y=2x-3', '2x-y=3', 'line-standard-form', 'form'],
+  ['y=\\frac{1}{2}x+1-5', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'form'],
   ['-2x-2', 'y=-2x-2', 'slope-intercept-form', 'correct'],
   ['-\\frac{1}{3}(x-6)-4', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'form'],
   ['\\frac{-x-6}{3}', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'form'],
@@ -2243,6 +2249,334 @@ const higherRoots = [
 test('higher roots: negative values in scope, fraction radicands read per half', async (t) => {
   for (const [typed, key, form, expected] of higherRoots) {
     await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A ± response is the set of its two branches (Elementary Algebra 10,
+// September 27, 2026): graded against a list key of the same size as a set,
+// the key's answerForm required of each branch; any other key is incorrect.
+const plusMinus = [
+  ['\\pm4', '-4,4', undefined, undefined, 'correct'],
+  ['\\pm4', '-4,4', undefined, 'unordered', 'correct'],
+  ['x=\\pm4', '-4,4', undefined, undefined, 'correct'],
+  ['\\mp4', '-4,4', undefined, undefined, 'correct'],
+  ['±4', '-4,4', undefined, undefined, 'correct'],
+  ['\\pm{}4', '-4,4', undefined, undefined, 'correct'],
+  ['4\\pm2', '2,6', undefined, undefined, 'correct'],
+  ['\\pm5', '-4,4', undefined, undefined, 'incorrect'],
+  ['4\\pm1', '2,6', undefined, undefined, 'incorrect'],
+  ['-4\\pm3\\sqrt{3}', '-4-3\\sqrt{3}, -4+3\\sqrt{3}', undefined, undefined, 'correct'],
+  ['-4\\pm3\\sqrt{3}', '-4-3\\sqrt{3}, -4+3\\sqrt{3}', 'simplified-radical', 'unordered', 'correct'],
+  ['-4\\pm\\sqrt{27}', '-4-3\\sqrt{3}, -4+3\\sqrt{3}', 'simplified-radical', 'unordered', 'form'],
+  ['-4\\pm\\sqrt{27}', '-4-3\\sqrt{3}, -4+3\\sqrt{3}', undefined, 'unordered', 'correct'],
+  ['-4\\pm2\\sqrt{3}', '-4-3\\sqrt{3}, -4+3\\sqrt{3}', undefined, 'unordered', 'incorrect'],
+  ['\\frac{-3\\pm\\sqrt{201}}{8}', '(-3-\\sqrt{201})/8, (-3+\\sqrt{201})/8', undefined, undefined, 'correct'],
+  ['\\frac{-3\\pm\\sqrt{201}}{8}', '(-3-\\sqrt{201})/8, (-3+\\sqrt{201})/8', 'simplified-radical', 'unordered', 'correct'],
+  ['\\frac{-6\\pm\\sqrt{804}}{16}', '\\frac{-3-\\sqrt{201}}{8}, \\frac{-3+\\sqrt{201}}{8}', 'simplified-radical', 'unordered', 'form'],
+  ['\\frac{-3\\pm\\sqrt{201}}{8}', '\\frac{-3-\\sqrt{201}}{8}, \\frac{-3+\\sqrt{201}}{8}', 'simplified-radical', 'unordered', 'correct'],
+  ['\\frac{-3\\pm\\sqrt{202}}{8}', '\\frac{-3-\\sqrt{201}}{8}, \\frac{-3+\\sqrt{201}}{8}', 'simplified-radical', 'unordered', 'incorrect'],
+  ['x=\\pm 5\\sqrt{2}', '-5\\sqrt{2}, 5\\sqrt{2}', 'simplified-radical', 'unordered', 'correct'],
+  ['\\pm\\sqrt{50}', '-5\\sqrt{2}, 5\\sqrt{2}', 'simplified-radical', 'unordered', 'form'],
+  ['\\pm\\sqrt{50}', '-5\\sqrt{2}, 5\\sqrt{2}', undefined, 'unordered', 'correct'],
+  ['\\pm\\frac{4}{6}', '-\\frac{2}{3}, \\frac{2}{3}', 'lowest-terms', 'unordered', 'form'],
+  ['\\pm\\frac{2}{3}', '-\\frac{2}{3}, \\frac{2}{3}', 'lowest-terms', 'unordered', 'correct'],
+  // labelled keys, several ± members, ± inside a pair
+  ['\\pm4', 'x=-4, x=4', undefined, 'unordered', 'correct'],
+  ['x=\\pm4', 'x=-4, x=4', undefined, 'unordered', 'correct'],
+  ['y=\\pm4', 'x=-4, x=4', undefined, 'unordered', 'incorrect'],
+  ['\\pm2, \\pm3', '-3,-2,2,3', undefined, 'unordered', 'correct'],
+  ['0, \\pm4', '-4,0,4', undefined, 'unordered', 'correct'],
+  ['(\\pm4,0)', '(-4,0),(4,0)', undefined, 'unordered', 'correct'],
+  // not a list of the expanded size: incorrect as before
+  ['\\pm4', '4', undefined, undefined, 'incorrect'],
+  ['\\pm4', '-4,0,4', undefined, 'unordered', 'incorrect'],
+  ['\\pm4', '[-4,4]', undefined, undefined, 'incorrect'],
+  ['\\pm4', '(-4,4)', undefined, undefined, 'incorrect'],
+  ['\\frac{-3\\pm\\sqrt{201}}{8}', '\\frac{-3-\\sqrt{201}}{8}', 'simplified-radical', undefined, 'incorrect'],
+  ['\\pm\\pm4', '-4,4', undefined, undefined, 'incorrect'],
+  // the typed lists these keys already graded
+  ['\\frac{4}{6}, 1', '2/3, 1', 'lowest-terms', undefined, 'form'],
+  ['\\frac{-3-\\sqrt{201}}{8}, \\frac{-3+\\sqrt{201}}{8}', '(-3-\\sqrt{201})/8, (-3+\\sqrt{201})/8', 'simplified-radical', undefined, 'correct'],
+  ['x=-4, x=4', '-4,4', undefined, 'unordered', 'correct'],
+];
+test('a ± response grades as the set of its two branches', async (t) => {
+  for (const [typed, key, form, mode, expected] of plusMinus) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}${mode ? ` ${mode}` : ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form, mode }), expected);
+    });
+  }
+});
+
+// A `\cup` of intervals compares interval by interval, so the per-endpoint
+// value forms reach a union exactly as they reach one interval, beside a
+// bracket or a parenthesis (Intermediate Algebra 2.6, September 27, 2026).
+const unionEndpoints = [
+  ['(-\\infty,-\\frac{2}{2}]\\cup[2,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', 'decimal', 'form'],
+  ['(-\\infty,-\\frac{2}{2}]\\cup[2,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'correct'],
+  ['(-\\infty,-1]\\cup[\\frac42,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', 'decimal', 'form'],
+  ['(-\\infty,-1]\\cup(\\frac42,\\infty)', '(-\\infty,-1]\\cup(2,\\infty)', 'decimal', 'form'],
+  ['(-\\infty,-\\frac{2}{2}]\\cup[2,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', 'lowest-terms', 'form'],
+  ['(-\\infty,-\\frac{1}{2}]\\cup[2,\\infty)', '(-\\infty,-0.5]\\cup[2,\\infty)', 'decimal', 'form'],
+  ['[2,\\infty)\\cup(-\\infty,-1]', '(-\\infty,-1]\\cup[2,\\infty)', 'decimal', 'correct'],
+  ['(-\\infty,-1]\\cup[2,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', 'decimal', 'correct'],
+  ['(-\\infty,-1]\\cup[3,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'incorrect'],
+  ['(-\\infty,-1)\\cup[2,\\infty)', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'incorrect'],
+  ['(-\\infty,-1]', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'incorrect'],
+  ['[\\frac{4}{2},\\infty)', '[2,\\infty)', 'decimal', 'form'],
+  ['(-\\infty,\\frac{4}{2}]', '(-\\infty,2]', 'decimal', 'form'],
+];
+test('a union of intervals grades endpoint by endpoint', async (t) => {
+  for (const [typed, key, form, expected] of unionEndpoints) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// The right solution set in the other notation is 'form'; a wrong set stays
+// incorrect; an inequality key is compared by its set, so a chain's lower
+// bound counts (Intermediate Algebra 2.5–2.7, September 27, 2026).
+const solutionSets = [
+  ['x\\le-0.5', '(-\\infty,-0.5]', undefined, 'form'],
+  ['x\\le-0.5', '(-\\infty,-0.5]', 'decimal', 'form'],
+  ['-0.5\\ge x', '(-\\infty,-0.5]', undefined, 'form'],
+  ['y\\le-\\frac12', '(-\\infty,-0.5]', undefined, 'form'],
+  ['x<-0.5', '(-\\infty,-0.5]', undefined, 'incorrect'],
+  ['x\\le-0.4', '(-\\infty,-0.5]', undefined, 'incorrect'],
+  ['x\\ge-0.5', '(-\\infty,-0.5]', undefined, 'incorrect'],
+  ['-1\\le x<4', '[-1,4)', undefined, 'form'],
+  ['4>x\\geq-1', '[-1,4)', undefined, 'form'],
+  ['x\\ge-1\\land x<4', '[-1,4)', undefined, 'form'],
+  ['x\\ge-1\\text{ and }x<4', '[-1,4)', undefined, 'form'],
+  ['-1<x<4', '[-1,4)', undefined, 'incorrect'],
+  ['-1\\le x>4', '[-1,4)', undefined, 'incorrect'],
+  ['2<x<5', '(2,5)', undefined, 'form'],
+  ['x\\le-1\\lor x\\ge2', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'form'],
+  ['x\\ge2\\text{ or }x\\le-1', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'form'],
+  ['x<-1\\text{ or }x\\ge2', '(-\\infty,-1]\\cup[2,\\infty)', undefined, 'incorrect'],
+  ['x<4-\\sqrt{2}\\lor x>4+\\sqrt{2}', '(-\\infty,4-\\sqrt{2})\\cup(4+\\sqrt{2},\\infty)', undefined, 'form'],
+  ['x<2.586\\lor x>5.414', '(-\\infty,4-\\sqrt{2})\\cup(4+\\sqrt{2},\\infty)', undefined, 'incorrect'],
+  // the converse: an interval typed for an inequality key
+  ['(-\\infty,-0.5]', 'x\\le-0.5', undefined, 'form'],
+  ['[-1,4)', '-1\\le x<4', undefined, 'form'],
+  ['(-\\infty,-0.5)', 'x\\le-0.5', undefined, 'incorrect'],
+  // inequality keys decided by the set
+  ['-2\\le x<4', '-1\\le x<4', undefined, 'incorrect'],
+  ['-1\\le x<4', '-1\\le x<4', undefined, 'correct'],
+  ['4>x\\ge-1', '-1\\le x<4', undefined, 'correct'],
+  ['x\\ge-1\\land x<4', '-1\\le x<4', undefined, 'correct'],
+  ['-4<q', 'q>-4', 'decimal', 'correct'],
+  ['q>-\\frac{8}{2}', 'q>-4', 'decimal', 'form'],
+  ['p>-4', 'q>-4', 'decimal', 'incorrect'],
+  ['s\\geq\\$4,000,000', 's\\geq4000000', 'decimal', 'correct'],
+  // outside the reading: graded as before
+  ['y\\ge-2x+3', 'y\\geq-2x+3', undefined, 'correct'],
+  ['6 < \\sqrt{38} < 7', '6 < \\sqrt{38} < 7', undefined, 'correct'],
+  ['1<x<6', '(6,1)', undefined, 'incorrect'],
+  ['x=6, y=1', '(6,1)', undefined, 'correct'],
+  ['\\mathbb{R}', '(-\\infty,\\infty)', undefined, 'incorrect'],
+];
+test('a solution set is read in inequality and interval notation alike', async (t) => {
+  for (const [typed, key, form, expected] of solutionSets) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+test('the notation miss is named in the feedback', () => {
+  assert.equal(describeFormFeedback('x\\le-0.5', '', '(-\\infty,-0.5]'), 'That solution set is right — now write it in interval notation.');
+  assert.equal(describeFormFeedback('x\\le-\\frac12', 'decimal', '(-\\infty,-0.5]'), 'That solution set is right — now write it in interval notation.');
+  assert.equal(describeFormFeedback('[-1,4)', undefined, '-1\\le x<4'), 'That solution set is right — now write it as an inequality.');
+  // a list's members and a ± response's branches are each one number
+  assert.equal(describeFormFeedback('\\frac{4}{6}, 1', 'lowest-terms', '2/3, 1'), describeAnswerForm('lowest-terms'));
+  assert.equal(describeFormFeedback('\\pm\\frac{4}{6}', 'lowest-terms', '-2/3, 2/3'), describeAnswerForm('lowest-terms'));
+  assert.ok(describeFormFeedback('1+1, 3', 'decimal', '2,3').includes('finish the calculation'));
+  assert.equal(describeFormFeedback('(p-\\frac{2}{12})^2', 'factored'), 'That value is right and it is factored — now reduce each fraction in it to lowest terms.');
+});
+
+// `factored` requires a numeral fraction inside a factor to be reduced
+// (Elementary Algebra 10.2, September 27, 2026).
+const factoredFractions = [
+  ['(p-\\frac{2}{12})^2', '(p-\\frac{1}{6})^2', 'factored', 'form'],
+  ['(p-\\frac{2}{12})^2', '(p-\\frac{1}{6})^2', 'factored-completely', 'form'],
+  ['(p-\\frac{1}{6})^2', '(p-\\frac{1}{6})^2', 'factored', 'correct'],
+  ['\\left(p-\\frac16\\right)^2', '(p-\\frac{1}{6})^2', 'factored', 'correct'],
+  ['(p-\\frac{6}{1})^2', '(p-6)^2', 'factored', 'form'],
+  ['\\frac{2}{4}(x+4)', '\\frac{1}{2}(x+4)', 'factored', 'form'],
+  ['\\frac{1}{2}(x+4)', '\\frac{1}{2}(x+4)', 'factored', 'correct'],
+  ['(x+\\frac{3}{2})^2', '(x+\\frac{3}{2})^2', 'factored', 'correct'],
+  ['p^2-\\frac{1}{3}p+\\frac{1}{36}', '(p-\\frac{1}{6})^2', 'factored', 'form'],
+];
+test('a numeral fraction inside a factor is reduced', async (t) => {
+  for (const [typed, key, form, expected] of factoredFractions) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// `lowest-terms` reduces the sign too: at most one minus, never in the
+// denominator — on a bare fraction, an inequality bound, an interval
+// endpoint, a list member alike (Intermediate Algebra 2.5, September 27, 2026).
+const reducedSigns = [
+  ['\\frac{-23}{-4}', '\\frac{23}{4}', 'lowest-terms', 'form'],
+  ['-\\frac{-23}{4}', '\\frac{23}{4}', 'lowest-terms', 'form'],
+  ['\\frac{23}{-4}', '-\\frac{23}{4}', 'lowest-terms', 'form'],
+  ['\\frac{23}{-4}', '-\\frac{23}{4}', 'fraction lowest-terms', 'form'],
+  ['\\frac{-23}{4}', '-\\frac{23}{4}', 'lowest-terms', 'correct'],
+  ['-\\frac{23}{4}', '-\\frac{23}{4}', 'lowest-terms', 'correct'],
+  ['\\frac{23}{4}', '\\frac{23}{4}', 'lowest-terms', 'correct'],
+  ['\\frac{-23}{-4}', '\\frac{23}{4}', 'fraction', 'correct'],
+  ['q\\le\\frac{-23}{-4}', 'q\\leq\\frac{23}{4}', 'lowest-terms', 'form'],
+  ['q\\le\\frac{-23}{-4}', 'q\\leq\\frac{23}{4}', 'fraction lowest-terms', 'form'],
+  ['q\\le\\frac{23}{4}', 'q\\leq\\frac{23}{4}', 'fraction lowest-terms', 'correct'],
+  ['(-\\infty,\\frac{-23}{-4}]', '(-\\infty,\\frac{23}{4}]', 'lowest-terms', 'form'],
+  ['\\frac{-23}{-4}, 1', '\\frac{23}{4}, 1', 'lowest-terms', 'form'],
+  // the converse notation miss on a value-form key
+  ['(-4,\\infty)', 'q>-4', 'decimal', 'form'],
+];
+test('lowest terms reduces the sign as well as the halves', async (t) => {
+  for (const [typed, key, form, expected] of reducedSigns) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A key that is one numeral fraction or mixed number takes the unit rule a
+// bare-number key does (Elementary Algebra knowledge check 1–5, September 27,
+// 2026): the right value with a unit word is 'unit', a wrong one 'incorrect'.
+const fractionUnits = [
+  ['\\frac{1}{6}\\text{ hours}', '\\frac{1}{6}', 'fraction lowest-terms', 'unit'],
+  ['\\frac{1}{6}\\text{ hours}', '\\tfrac{1}{6}', undefined, 'unit'],
+  ['\\frac{1}{6}hours', '\\frac{1}{6}', undefined, 'unit'],
+  ['-\\frac{3}{4}\\text{ feet}', '-\\frac{3}{4}', undefined, 'unit'],
+  ['2\\frac{1}{2}\\text{ hours}', '2\\frac{1}{2}', undefined, 'unit'],
+  ['2\\frac{1}{2}\\text{ hours}', '2\\frac{1}{2}', 'mixed-number', 'unit'],
+  ['\\frac{1}{5}\\text{ hours}', '\\frac{1}{6}', 'fraction lowest-terms', 'incorrect'],
+  ['2\\frac{1}{3}\\text{ hours}', '2\\frac{1}{2}', undefined, 'incorrect'],
+  ['\\frac{1}{6}x', '\\frac{1}{6}', undefined, 'incorrect'],
+  ['\\frac{1}{6}', '\\frac{1}{6}', 'fraction lowest-terms', 'correct'],
+  ['0.5\\text{ hours}', '0.5', 'decimal', 'unit'],
+];
+test('a fraction or mixed-number key reports a unit word as unit', async (t) => {
+  for (const [typed, key, form, expected] of fractionUnits) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// `slope-intercept-form` is finished writing: one constant term, no numeral
+// work, every fraction reduced (Elementary Algebra knowledge check 1–5,
+// September 27, 2026).
+const slopeInterceptFinished = [
+  ['y=\\frac{1}{2}x+1-5', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'form'],
+  ['\\frac{1}{2}x+1-5', '\\frac{1}{2}x-4', 'slope-intercept-form no-like-terms', 'form'],
+  ['y=\\frac{2}{4}x-4', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'form'],
+  ['y=\\frac{2x}{4}-4', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'form'],
+  ['y=2\\cdot3x-1', 'y=6x-1', 'slope-intercept-form', 'form'],
+  ['y=\\frac{1}{2}x-\\frac{8}{2}', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'form'],
+  ['y=\\frac{1}{2}x-4', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'correct'],
+  ['y=-4+\\frac12x', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'correct'],
+  ['y=\\frac{x}{2}-4', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'correct'],
+  ['y=0.5x-4', 'y=\\frac{1}{2}x-4', 'slope-intercept-form', 'correct'],
+  ['y=\\frac{5}{2}x-\\frac{13}{2}', 'y=\\frac{5}{2}x-\\frac{13}{2}', 'slope-intercept-form', 'correct'],
+  ['y=x', 'y=x', 'slope-intercept-form', 'correct'],
+  ['y=-3x', 'y=-3x', 'slope-intercept-form', 'correct'],
+];
+test('slope-intercept form is one constant term with reduced numerals', async (t) => {
+  for (const [typed, key, form, expected] of slopeInterceptFinished) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// An inequality in two or more variables is its half-plane: the same when one
+// difference is a positive multiple of the other with the same strictness
+// (Elementary Algebra knowledge check 1–5, September 27, 2026). A pinned
+// writing is the answerForm's: `solved:y`, `line-standard-form`.
+const halfPlanes = [
+  ['x\\ge2y+6', 'x-2y\\geq6', undefined, 'correct'],
+  ['3y\\ge2x-9', 'y\\geq\\frac{2}{3}x-3', undefined, 'correct'],
+  ['-2x+3\\le y', 'y\\geq-2x+3', undefined, 'correct'],
+  ['2y\\ge-4x+6', 'y\\geq-2x+3', undefined, 'correct'],
+  ['-y\\le2x-3', 'y\\geq-2x+3', undefined, 'correct'],
+  ['13y+10x\\ge260', '10x+13y\\geq260', undefined, 'correct'],
+  ['-10x-13y\\le-260', '10x+13y\\geq260', undefined, 'correct'],
+  ['y\\ge20-\\frac{10}{13}x', '10x+13y\\geq260', undefined, 'correct'],
+  ['y\\ge-2x+4', 'y\\geq-2x+3', undefined, 'incorrect'],
+  ['y>-2x+3', 'y\\geq-2x+3', undefined, 'incorrect'],
+  ['y\\le-2x+3', 'y\\geq-2x+3', undefined, 'incorrect'],
+  ['-10x-13y\\ge-260', '10x+13y\\geq260', undefined, 'incorrect'],
+  ['10a+13b\\ge260', '10x+13y\\geq260', undefined, 'incorrect'],
+  ['x-2y\\ge\\frac{12}{2}', 'x-2y\\geq6', 'decimal', 'form'],
+  // a one-variable key is a solution set, never a scaled half-line
+  ['2q>-8', 'q>-4', undefined, 'incorrect'],
+  // the pinned writings
+  ['2x+y\\ge3', 'y\\geq-2x+3', 'solved:y', 'form'],
+  ['y\\ge-2x+3', 'y\\geq-2x+3', 'solved:y', 'correct'],
+  ['-2x+3\\le y', 'y\\geq-2x+3', 'solved:y', 'correct'],
+  ['y\\ge3-x', 'x+y\\geq3', 'line-standard-form', 'form'],
+  ['x+y\\ge3', 'x+y\\geq3', 'line-standard-form', 'correct'],
+  ['3\\le y+x', 'x+y\\geq3', 'line-standard-form', 'correct'],
+  ['x-2y\\geq6', 'x-2y\\geq6', 'line-standard-form decimal', 'correct'],
+  ['10x+17.5y\\geq280', '10x+17.5y\\geq280', 'line-standard-form', 'correct'],
+  ['2x-3=y', '2x-y=3', 'line-standard-form', 'form'],
+  ['2x-y=3', '2x-y=3', 'line-standard-form', 'correct'],
+];
+test('a two-variable inequality grades as its half-plane', async (t) => {
+  for (const [typed, key, form, expected] of halfPlanes) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A negative power over a symbol times a non-terminating rational hung the
+// engine's isEqual against ANY comparand (Elementary Algebra knowledge check
+// 6–10, September 27, 2026); it is decided by sampling. Each row runs in a
+// child process with a timeout, so a regression fails instead of freezing.
+const negativePowerHangs = [
+  ['(6u)^{-3}', '\\frac{1}{216u^3}', 'single-fraction', 'form'],
+  ['(6u)^{-3}', '\\frac{1}{216u^3}', undefined, 'correct'],
+  ['(6x)^{-3}', '\\frac{1}{216x^3}', undefined, 'correct'],
+  ['(6u)^{-2}', '\\frac{1}{36u^2}', undefined, 'correct'],
+  ['(3u)^{-2}', '\\frac{1}{9u^2}', 'single-fraction', 'form'],
+  ['6^{-3}u^{-3}', '\\frac{1}{216u^3}', undefined, 'correct'],
+  ['\\frac{1}{216u^3}', '(6u)^{-3}', undefined, 'correct'],
+  ['(6u)^{-3}', '\\frac{1}{216u^4}', undefined, 'incorrect'],
+  ['(6u)^{-3}', 'x', undefined, 'incorrect'],
+];
+test('a negative power over a symbol terminates with the right verdict', async (t) => {
+  const { spawnSync } = await import('node:child_process');
+  const module = new URL('./check-answer.mjs', import.meta.url).href;
+  for (const [typed, key, form, expected] of negativePowerHangs) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      const script = `import(${JSON.stringify(module)}).then((m) => process.stdout.write(m.checkAnswer(${JSON.stringify(typed)}, ${JSON.stringify(key)}, { form: ${JSON.stringify(form ?? '')} })))`;
+      const run = spawnSync(process.execPath, ['-e', script], { encoding: 'utf8', timeout: 20000 });
+      assert.equal(run.signal, null, 'grading did not finish within 20 s');
+      assert.equal(run.stdout, expected);
+    });
+  }
+});
+
+// `single-fraction` writes each variable once per term of each half
+// (Elementary Algebra knowledge check 6–10, September 27, 2026).
+const repeatedBases = [
+  ['\\frac{1}{q^4q^5}', '\\frac{1}{q^9}', 'single-fraction', 'form'],
+  ['\\frac{q^2q}{3}', '\\frac{q^3}{3}', 'single-fraction', 'form'],
+  ['\\frac{1}{q^9}', '\\frac{1}{q^9}', 'single-fraction', 'correct'],
+  ['\\frac{x(x+2)}{x-3}', '\\frac{x(x+2)}{x-3}', 'single-fraction', 'correct'],
+  ['\\frac{3xy^2}{5z}', '\\frac{3xy^2}{5z}', 'single-fraction', 'correct'],
+];
+test('a single fraction writes each variable once per term', async (t) => {
+  for (const [typed, key, form, expected] of repeatedBases) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
       assert.equal(checkAnswer(typed, key, { form }), expected);
     });
   }

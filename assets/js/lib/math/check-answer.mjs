@@ -492,6 +492,13 @@ const containsSymbol = (expr) => (
   expr.symbol ? true : (expr.ops ?? []).some(containsSymbol)
 );
 
+/** A power with a negative numeric exponent over a base holding a symbol, anywhere in the tree. */
+function negativePowerOverSymbol(expr) {
+  if (expr.operator === 'Power' && expr.ops?.[1]?.isNumberLiteral && expr.ops[1].re < 0
+    && containsSymbol(expr.ops[0])) return true;
+  return (expr.ops ?? []).some(negativePowerOverSymbol);
+}
+
 /** A square/nth root (or fractional power) with a symbol in its radicand. */
 function radicalOverSymbol(expr) {
   if ((expr.operator === 'Sqrt' || expr.operator === 'Root') && containsSymbol(expr.ops[0])) {
@@ -937,6 +944,25 @@ function equivalent(studentExpr, answerExpr) {
     // A container against a non-container is never equivalent: a pair is not
     // a scalar, and the bare-list reading of `a,b` belongs to the list graders
     // above, which split before anything is parsed.
+    // A `\cup` of intervals compares interval by interval, in any order — the
+    // same recursion, so an endpoint the engine did not fold
+    // (`(-\infty,-\frac{2}{2}]\cup[2,\infty)` against `(-\infty,-1]\cup…`)
+    // is compared by value and then reaches the per-endpoint value forms,
+    // exactly as it does in a lone interval. `isSame` alone decided a union,
+    // so a right set with an unreduced endpoint graded `incorrect` where the
+    // same endpoint in one interval graded `form` (Intermediate Algebra 2.6,
+    // September 27, 2026).
+    if (studentExpr.operator === 'Union' || answerExpr.operator === 'Union') {
+      if (studentExpr.operator !== answerExpr.operator) return false;
+      const unused = [...(answerExpr.ops ?? [])];
+      if ((studentExpr.ops ?? []).length !== unused.length) return false;
+      return studentExpr.ops.every((member) => {
+        const match = unused.findIndex((candidate) => equivalent(member, candidate));
+        if (match === -1) return false;
+        unused.splice(match, 1);
+        return true;
+      });
+    }
     const studentMembers = orderedContainer(studentExpr);
     const answerMembers = orderedContainer(answerExpr);
     if (studentMembers || answerMembers) {
@@ -986,6 +1012,18 @@ function equivalent(studentExpr, answerExpr) {
     // an answerForm: the lint's passable-by-retyping rule now sees those
     // pastes grade as value-equal.
     if (radicalOverSymbol(studentExpr) || radicalOverSymbol(answerExpr)) {
+      return numericallyEquivalent(studentExpr, answerExpr);
+    }
+    // A third `isEqual` hang class (Elementary Algebra knowledge check 6–10,
+    // September 27, 2026): a negative power over a symbol times a rational
+    // with no terminating decimal — `(6u)^{-3}` (canonically
+    // `\frac{1}{216}u^{-3}`), `(3u)^{-2}`, `\frac13u^{-1}` — never returns,
+    // against ANY comparand, so a learner typing the unworked negative
+    // exponent froze the page. `(2u)^{-3}` and `0.5u^{-3}` return, but the
+    // class is decided by sampling whole: termination is the point, and
+    // sampling (`subs().N()`, measured terminating on every shape) decides
+    // these value-equalities as well as the engine did.
+    if (negativePowerOverSymbol(studentExpr) || negativePowerOverSymbol(answerExpr)) {
       return numericallyEquivalent(studentExpr, answerExpr);
     }
     if (studentExpr.isEqual(answerExpr) === true) return true;
@@ -1449,7 +1487,14 @@ function asFraction(latex) {
   const denominator = argValue(match[4], match[5]);
   if (!denominator) return null;
   const negative = (match[1] === '-') !== (numerator < 0) !== (denominator < 0);
-  return { numerator: Math.abs(numerator), denominator: Math.abs(denominator), negative };
+  // How many minus signs the writing spends on the one sign it states:
+  // `\frac{-23}{-4}` and `-\frac{-23}{4}` write two, `\frac{23}{-4}` puts its
+  // one in the denominator — sign work `lowest-terms` refuses.
+  const signs = (match[1] === '-') + (numerator < 0) + (denominator < 0);
+  return {
+    numerator: Math.abs(numerator), denominator: Math.abs(denominator), negative, signs,
+    negativeDenominator: denominator < 0,
+  };
 }
 
 /** An integer followed by a fraction: `2\frac{2}{3}`. */
@@ -2735,6 +2780,41 @@ function termFractionsReduced(latex) {
 }
 
 /**
+ * Is every numeral fraction the response writes — at ANY depth, inside a
+ * factor or an exponent's base — reduced: integer halves sharing no factor,
+ * and no denominator of 1? A half that is not an integer numeral is not read.
+ *
+ * `factored` is a shape check, and a binomial square with its constant left
+ * unreduced passed it: `(p-\frac{2}{12})^2` graded `correct` against the
+ * completed square `(p-\frac{1}{6})^2` (Elementary Algebra 10.2, September
+ * 27, 2026), while no other token could refuse it — `reduced-fraction`
+ * rejects the key itself, which is no fraction. A factor's numeral work is
+ * part of writing it factored, so `factored` (and `factored-completely`,
+ * which requires `factored`) requires it finished.
+ */
+function numeralFractionsReduced(latex) {
+  const text = bareLatex(latex);
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] !== '\\') continue;
+    const command = text.slice(i).match(/^\\[tdc]?frac(?![a-zA-Z])/);
+    if (!command) {
+      i += text.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1;
+      continue;
+    }
+    const numerator = readTexArgument(text, i + command[0].length);
+    const denominator = numerator && readTexArgument(text, numerator[1]);
+    if (!denominator) return true;
+    const [top, bottom] = [numerator[0].trim(), denominator[0].trim()];
+    if (/^[+-]?\d+$/.test(top) && /^\d+$/.test(bottom)) {
+      const [a, b] = [Math.abs(Number(top)), Number(bottom)];
+      if (b === 1 || (a !== 0 && gcd(a, b) !== 1)) return false;
+    }
+    i += command[0].length - 1;
+  }
+  return true;
+}
+
+/**
  * One additive term of a radical expression, read factor by factor off the
  * writing (the engine folds `\frac{6\sqrt2}{4}` and `\sqrt3\sqrt5` before any
  * parse could show them). Returns
@@ -3200,9 +3280,14 @@ const FORM_PREDICATES = {
   // "Write 6.07 as a fraction or mixed number" — the source offers the choice,
   // so the only thing to rule out is the decimal the question already prints.
   'fraction-or-mixed-number': (latex) => asFraction(latex) !== null || asMixedNumber(latex) !== null,
+  // Lowest terms is also the sign reduced: at most one minus, never in the
+  // denominator — `\frac{-23}{-4}` and `\frac{23}{-4}` are unfinished
+  // (Intermediate Algebra 2.5, September 27, 2026), `\frac{-23}{4}` and
+  // `-\frac{23}{4}` are not.
   'lowest-terms': (latex) => {
     const fraction = asFraction(latex) ?? asMixedNumber(latex);
     if (!fraction) return asDecimal(latex) !== null || asProductOfPowers(latex) !== null;
+    if (fraction.negativeDenominator || fraction.signs > 1) return false;
     return gcd(fraction.numerator, fraction.denominator) === 1;
   },
   'scientific-notation': (latex) => {
@@ -3639,6 +3724,14 @@ const FORM_PREDICATES = {
     // Each half has its like terms combined: `\frac{3p+6p}{8}` is the
     // half-worked `\frac{9p}{8}` (the engine folds the numerator first).
     if (fracHalves(bare).some((half) => !FORM_PREDICATES['no-like-terms'](half))) return false;
+    // Each term of each half writes a variable once: `\frac{1}{q^4q^5}` is
+    // the Product Property left unapplied to `\frac{1}{q^9}` (Elementary
+    // Algebra knowledge check 6–10, September 27, 2026) — the refusal
+    // `simplified-radical` makes of `z^3z^3`.
+    if (fracHalves(bare).some((half) => splitTopLevelTerms(half).some((term) => {
+      const read = term.trim() ? readRadicalTerm(term) : null;
+      return Boolean(read) && [...read.letters.values()].some((count) => count > 1);
+    }))) return false;
     // Each half is finished: one product of factors (`2(x-5)`, fully
     // factored) or a sum of plain terms (`3x+16`) — never a sum still holding
     // a grouped product, `3(x+5)+1` for `3x+16` (Elementary Algebra 8.5,
@@ -3749,9 +3842,12 @@ const FORM_PREDICATES = {
   // common factor" legitimately answer `-7a(a^2-3a+2)` — and a rule that fires
   // on correct content is a bug in the rule. Ruling out the printed polynomial
   // is the whole job here.
+  // It does read one thing inside the factors: a numeral fraction left
+  // unreduced (`(p-\frac{2}{12})^2`) is unfinished writing, not a shape
+  // choice (numeralFractionsReduced).
   factored: (latex) => {
     const product = asFactoredProduct(latex);
-    return product !== null && product.compound >= 1 && product.count >= 2;
+    return product !== null && product.compound >= 1 && product.count >= 2 && numeralFractionsReduced(latex);
   },
   // "Factor completely: $2x^2+8x+8$" answers `2(x+2)^2`, and `factored`
   // passes the half-done `(2x+4)(x+2)` and `2(x^2+4x+4)` too. This token is
@@ -3999,14 +4095,50 @@ const FORM_PREDICATES = {
       return false;
     };
     const terms = expr.operator === 'Add' ? expr.ops : [expr];
-    return terms.length <= 2
+    if (!(terms.length <= 2
       && terms.filter((term) => isLinearMonomial(term)).length <= 1
-      && terms.every((term) => isLinearMonomial(term) || isConstantExpr(term));
+      && terms.every((term) => isLinearMonomial(term) || isConstantExpr(term)))) return false;
+    // The parse has already combined `1-5` and reduced `\frac{2}{4}`, so the
+    // finished writing is read off the LaTeX: at most one written constant
+    // term, at most two terms, no numeral product or power left, and every
+    // fraction reduced — `y=\frac12x+1-5` and `y=\frac{2}{4}x-4` graded
+    // `correct` (Elementary Algebra knowledge check 1–5, September 27, 2026).
+    const written = splitTopLevelTerms(bare.replace(/\\left\s*|\\right\s*/g, ''))
+      .map((term) => term.trim()).filter(Boolean);
+    return written.length <= 2
+      && written.filter((term) => !hasVariableLetter(term)).length <= 1
+      && !written.some((term) => NUMERAL_PRODUCT.test(term) || NUMERAL_POWER.test(term))
+      && numeralFractionsReduced(bare) && termFractionsReduced(bare);
   },
   // "Convert the equation from logarithmic to exponential form: $3=\log_7
   // 343$" answers $343=7^3$ — two true statements the engine grades equal, so
   // only the written notation separates them. The conversion is complete
   // exactly when no logarithm is left.
+  // "Write the inequality … with the boundary line $x+y=3$. Keep $x+y$ on the
+  // left side, as the boundary line is written": every half-plane restatement
+  // (`y\ge3-x`) grades equal in value, so the standard-form writing is a
+  // shape — every variable term on one side (a numeral coefficient at most,
+  // each letter once), one numeral on the other, either orientation, an `=`
+  // or one order relation between them, fractions reduced.
+  'line-standard-form': (latex) => {
+    const text = bareLatex(latex).replace(/\\left\s*|\\right\s*/g, '');
+    let sides = splitAtTopLevel(text, ORDER_RELATION);
+    if (sides.length === 1) sides = splitAtTopLevel(text, /^=(?![=<>])/);
+    if (sides.length !== 2 || sides.some((side) => !side)) return false;
+    const at = sides.findIndex(hasVariableLetter);
+    if (at === -1 || hasVariableLetter(sides[1 - at])) return false;
+    const constant = sides[1 - at].trim();
+    if (asDecimal(constant) === null && asFraction(constant) === null) return false;
+    const letters = [];
+    for (const term of splitTopLevelTerms(sides[at]).map((t) => t.trim()).filter(Boolean)) {
+      const match = term.replace(/^[+-]\s*/, '').match(
+        /^(?:(?:\d+(?:\.\d+)?|\\[tdc]?frac\s*(?:\{\s*\d+\s*\}|\d)\s*(?:\{\s*\d+\s*\}|\d))\s*(?:\\cdot\s*)?)?([a-zA-Z])$/,
+      );
+      if (!match) return false;
+      letters.push(match[1]);
+    }
+    return letters.length >= 1 && new Set(letters).size === letters.length && numeralFractionsReduced(text);
+  },
   'exponential-form': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
   // "Change the function $y=3(0.5)^x$ to one having $e$ as the base" answers
   // $3e^{(\ln 0.5)x}$ — the SAME function, so the printed subject grades
@@ -4168,7 +4300,12 @@ const FORM_PREDICATES = {
  * guard reads its remainder.
  */
 function writtenSolvedFor(latex, variable) {
-  const sides = splitEquationSides(latex);
+  // An inequality solved for the variable counts too — `y\ge-2x+3` for an
+  // ask that pins "solved for y" (Elementary Algebra 4.7, September 27, 2026).
+  const relationSides = splitAtTopLevel(bareLatex(latex).replace(/\\left\s*|\\right\s*/g, ''), ORDER_RELATION)
+    .map((side) => side.replace(/\s+/g, ''));
+  const sides = splitEquationSides(latex)
+    ?? (relationSides.length === 2 && relationSides.every(Boolean) ? relationSides : null);
   if (!sides) return false;
   const isolated = (lone, rest) => lone === variable
     && !rest.replace(/\\[a-zA-Z]+/g, ' ').includes(variable);
@@ -4258,7 +4395,8 @@ const FORM_PHRASES = {
   factored: 'in factored form',
   'factored-completely': 'factored completely, with no factor that can be factored further',
   'point-slope-form': 'in point-slope form, y − y₁ = m(x − x₁), with the slope multiplying the parenthesized difference',
-  'slope-intercept-form': 'in slope-intercept form, y = mx + b',
+  'slope-intercept-form': 'in slope-intercept form, y = mx + b, with one constant term and every fraction reduced',
+  'line-standard-form': 'in standard form, with the variable terms on one side and one number on the other',
   'vertex-form': 'in vertex form, with the square completed',
   'conic-standard-form': 'in standard form, with each squared term over its denominator and the right side equal to 1',
   'parabola-standard-form': 'in standard form, with the squared term alone on one side and a single multiple of the other variable (or its shifted binomial) on the other',
@@ -4287,6 +4425,13 @@ export function describeAnswerForm(spec) {
   return `That value is right — now write it ${phrases.join(' ')}.`;
 }
 
+// The sentence for the right solution set written in the other notation
+// (notationMismatch), in the style of describeAnswerForm's.
+const NOTATION_FEEDBACK = {
+  interval: 'That solution set is right — now write it in interval notation.',
+  inequality: 'That solution set is right — now write it as an inequality.',
+};
+
 // The tokens whose shape is a number: a response refused under only these,
 // written with no letter in it, is arithmetic the learner left undone.
 const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'fraction', 'percent', 'lowest-terms', 'mixed-number',
@@ -4305,13 +4450,27 @@ const NUMBER_SHAPE_TOKENS = new Set(['decimal', 'fraction', 'percent', 'lowest-t
  * `(-\infty,-\frac12]` against a `decimal` key is one number in the wrong
  * notation and keeps the token's sentence.
  */
-export function describeFormFeedback(studentRaw, spec) {
+export function describeFormFeedback(studentRaw, spec, answerRaw) {
+  // The right solution set in the other notation is told which notation the
+  // key uses, before any token's sentence: with no answerForm declared this
+  // is the only 'form' a response can earn.
+  const notation = answerRaw === undefined ? null : notationMismatch(studentRaw, answerRaw);
+  if (notation) return NOTATION_FEEDBACK[notation];
   const { tokens, valid } = parseAnswerForm(spec);
   const general = describeAnswerForm(spec);
   if (!valid || !tokens.length) return general;
   // A response already in factored form that missed only completeness is
   // told to keep going — "now write it factored completely" would read as
   // if the factoring it did had not registered.
+  // A factored response whose only miss is a numeral fraction left unreduced
+  // inside a factor is told exactly that.
+  if (tokens.every((token) => token === 'factored' || token === 'factored-completely')
+    && !numeralFractionsReduced(studentRaw)) {
+    const product = asFactoredProduct(studentRaw);
+    if (product !== null && product.compound >= 1 && product.count >= 2) {
+      return 'That value is right and it is factored — now reduce each fraction in it to lowest terms.';
+    }
+  }
   if (tokens.length === 1 && tokens[0] === 'factored-completely' && checkFormAsGraded(studentRaw, 'factored')) {
     return 'That value is right and it is factored — now keep factoring: one of its factors can still be factored further.';
   }
@@ -4323,7 +4482,9 @@ export function describeFormFeedback(studentRaw, spec) {
     return !(asDecimal(written) !== null || asFraction(written) !== null || asMixedNumber(written) !== null
       || /^[+-]?(?:\d+(?:\.\d+)?|\.\d+)\s*\\%$/.test(written));
   };
-  const numbers = labelledCoordinates(studentRaw) ?? boundNumbers(studentRaw) ?? [studentRaw];
+  // A list's members, and a ± response's branches, are each one number.
+  const numbers = labelledCoordinates(studentRaw) ?? boundNumbers(studentRaw) ?? plusMinusExpansion(studentRaw)
+    ?? (commasAreAllGrouping(studentRaw) ? [studentRaw] : splitTopLevelCommas(studentRaw));
   if (!numbers.some(unworked)) return general;
   const rest = tokens.filter((token) => token !== 'decimal').map((token) => {
     const denominator = token.match(DENOMINATOR_TOKEN);
@@ -4350,7 +4511,7 @@ const INFINITE_BOUND = /^[+-]?\s*\\infty$/;
  * every `{}`/`()`/`[]` group. A control word is stepped over whole, so a
  * separator can match one (`\le`, `\cup`) but never the tail of another.
  */
-function splitAtTopLevel(text, separator) {
+function splitAtTopLevel(text, separator, separators = null) {
   const parts = [];
   let depth = 0;
   let start = 0;
@@ -4359,6 +4520,7 @@ function splitAtTopLevel(text, separator) {
     if (depth === 0) {
       const match = text.slice(i).match(separator);
       if (match) {
+        separators?.push(match[0]);
         parts.push(text.slice(start, i).trim());
         i += match[0].length;
         start = i;
@@ -4478,6 +4640,313 @@ function labelledCoordinates(raw, arity) {
 function tupleKeyMembers(answerRaw) {
   const text = preprocess(answerRaw ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
   return text.startsWith('(') && text.endsWith(')') ? delimitedMembers(text) : null;
+}
+
+/* ---------------------------------------------------------------------------
+ * Solution SETS in inequality and interval notation
+ *
+ * Intermediate Algebra 2.5–2.7 ask for a solution "in interval notation", and
+ * a learner who typed the right set as an inequality — `x\le-0.5` for
+ * `(-\infty,-0.5]`, `-1\le x<4` for `[-1,4)` — was told `incorrect`: the
+ * engine compares an inequality and an interval as two unrelated objects
+ * (September 27, 2026). Both notations are read here into the same set — a
+ * list of intervals, each endpoint a value (±Infinity) and a closedness — so
+ * the right set in the other notation grades `form` ("now write it in
+ * interval notation" / "as an inequality") and a wrong set stays `incorrect`.
+ *
+ * The same reading decides an inequality against an inequality key. The
+ * engine drops the variable from the first link of a chain — `-1\le x<4`
+ * boxes as `And(LessEqual(-1,4), Less(x,4))` — so `-2\le x<4` graded
+ * `correct` against `-1\le x<4`; the set comparison sees the lower bound.
+ *
+ * Only the writing the sections teach is read: ONE variable letter standing
+ * alone on its side, every other side a number with no letter in it (so
+ * `y\ge-2x+3` and `x+y\ge3` keep the engine's equation-style comparison), a
+ * simple (`x<5`, `5>x`) or chained (`-2\le x<7`, `7>x\ge-2`, one direction)
+ * inequality, `\lor`/`\text{or}` joining pieces into a union and
+ * `\land`/`\text{and}` intersecting them. MathLive's inline shortcuts type
+ * "or" and "and" as `\lor` and `\land`. Anything else returns null and grades
+ * exactly as before.
+ * ------------------------------------------------------------------------ */
+
+const OR_CONNECTIVE = /^(?:\\(?:lor|vee)(?![a-zA-Z])|\\(?:text|textrm|mathrm|operatorname)\s*\{\s*or\s*\})/;
+const AND_CONNECTIVE = /^(?:\\(?:land|wedge)(?![a-zA-Z])|\\(?:text|textrm|mathrm|operatorname)\s*\{\s*and\s*\})/;
+const NEGATIVE_INFINITY = /^-\s*\\infty$/;
+const POSITIVE_INFINITY = /^\+?\s*\\infty$/;
+
+function relationKind(written) {
+  if (/^(?:<|\\lt)$/.test(written)) return 'lt';
+  if (/^(?:>|\\gt)$/.test(written)) return 'gt';
+  if (/^(?:<=|≤|\\leq?|\\leqslant)$/.test(written)) return 'le';
+  if (/^(?:>=|≥|\\geq?|\\geqslant)$/.test(written)) return 'ge';
+  return null;
+}
+const FLIPPED_RELATION = { lt: 'gt', le: 'ge', gt: 'lt', ge: 'le' };
+
+function setWriting(latex) {
+  return preprocess(String(latex ?? '').replace(BOUND_CURRENCY, '')).replace(/\\left\s*|\\right\s*/g, '').trim();
+}
+
+/** A finite numeric endpoint, `{ text, value }`, or null. */
+function finiteBound(text) {
+  if (!text || hasVariableLetter(text) || /\\infty/.test(text)) return null;
+  try {
+    const expr = parseLatex(text);
+    if (!expr.isValid) return null;
+    const value = expr.N();
+    if (!Number.isFinite(value.re) || Math.abs(value.im ?? 0) > SAMPLE_TOLERANCE) return null;
+    return { text, value: value.re };
+  } catch {
+    return null;
+  }
+}
+
+/** The intervals an interval-notation response writes (`(a,b]`, `\cup` of them), or null. */
+function intervalNotationSet(latex) {
+  const text = setWriting(latex);
+  if (!text) return null;
+  const intervals = [];
+  for (const piece of splitAtTopLevel(text, /^\\cup(?![a-zA-Z])/)) {
+    const members = delimitedMembers(piece);
+    if (!members || members.length !== 2) return null;
+    const lo = NEGATIVE_INFINITY.test(members[0]) ? { value: -Infinity } : finiteBound(members[0]);
+    const hi = POSITIVE_INFINITY.test(members[1]) ? { value: Infinity } : finiteBound(members[1]);
+    // An ordered pair `(6,1)` is not an interval: an interval's ends ascend.
+    if (!lo || !hi || !(lo.value < hi.value)) return null;
+    intervals.push({ lo, hi, loClosed: piece[0] === '[', hiClosed: piece.at(-1) === ']' });
+  }
+  return intervals;
+}
+
+/** `{ variable, intervals }` for a one-variable inequality response, or null. */
+function inequalitySet(latex) {
+  const text = setWriting(latex);
+  if (!text) return null;
+  let variable = null;
+  const intervals = [];
+  for (const disjunct of splitAtTopLevel(text, OR_CONNECTIVE)) {
+    let lo = { value: -Infinity };
+    let hi = { value: Infinity };
+    let loClosed = false;
+    let hiClosed = false;
+    for (const conjunct of splitAtTopLevel(disjunct, AND_CONNECTIVE)) {
+      const relations = [];
+      const sides = splitAtTopLevel(conjunct, ORDER_RELATION, relations);
+      if (sides.length < 2 || sides.length > 3 || sides.some((side) => !side)) return null;
+      const at = sides.findIndex((side) => /^[a-zA-Z]$/.test(side));
+      if (at === -1 || (sides.length === 3 && at !== 1)) return null;
+      if (variable !== null && sides[at] !== variable) return null;
+      variable = sides[at];
+      const kinds = relations.map(relationKind);
+      if (kinds.some((kind) => kind === null)) return null;
+      if (kinds.length === 2 && (kinds[0] === 'lt' || kinds[0] === 'le') !== (kinds[1] === 'lt' || kinds[1] === 'le')) {
+        return null; // `-1\le x>4` states no interval
+      }
+      for (let r = 0; r < kinds.length; r += 1) {
+        const variableOnLeft = r === at;
+        const bound = finiteBound(variableOnLeft ? sides[r + 1] : sides[r]);
+        if (!bound) return null;
+        const kind = variableOnLeft ? kinds[r] : FLIPPED_RELATION[kinds[r]];
+        if (kind === 'lt' || kind === 'le') {
+          if (bound.value < hi.value) { hi = bound; hiClosed = kind === 'le'; } else if (bound.value === hi.value) hiClosed &&= kind === 'le';
+        } else if (bound.value > lo.value) {
+          lo = bound; loClosed = kind === 'ge';
+        } else if (bound.value === lo.value) loClosed &&= kind === 'ge';
+      }
+    }
+    if (!(lo.value < hi.value)) return null;
+    intervals.push({ lo, hi, loClosed, hiClosed });
+  }
+  return variable === null ? null : { variable, intervals };
+}
+
+function sameEndpoint(a, b) {
+  if (!Number.isFinite(a.value) || !Number.isFinite(b.value)) return a.value === b.value;
+  if (Math.abs(a.value - b.value) > 1e-9 * Math.max(1, Math.abs(a.value))) return false;
+  return equivalent(parseLatex(a.text), parseLatex(b.text));
+}
+
+/** Do two interval lists describe the same set? Pieces match in any order. */
+function sameSolutionSet(left, right) {
+  if (left.length !== right.length) return false;
+  const unused = [...right];
+  return left.every((interval) => {
+    const match = unused.findIndex((other) => sameEndpoint(interval.lo, other.lo)
+      && sameEndpoint(interval.hi, other.hi)
+      && (!Number.isFinite(interval.lo.value) || interval.loClosed === other.loClosed)
+      && (!Number.isFinite(interval.hi.value) || interval.hiClosed === other.hiClosed));
+    if (match === -1) return false;
+    unused.splice(match, 1);
+    return true;
+  });
+}
+
+/**
+ * 'interval' when the response writes the key's interval-notation set as an
+ * inequality, 'inequality' when it writes the key's inequality as intervals,
+ * else null. describeFormFeedback names the notation from this.
+ */
+function notationMismatch(studentRaw, answerRaw) {
+  const keyInequality = inequalitySet(answerRaw);
+  if (keyInequality) {
+    const typed = intervalNotationSet(studentRaw);
+    return typed && sameSolutionSet(typed, keyInequality.intervals) ? 'inequality' : null;
+  }
+  const keyIntervals = intervalNotationSet(answerRaw);
+  if (!keyIntervals) return null;
+  const typed = inequalitySet(bracketsAsParentheses(studentRaw));
+  return typed && sameSolutionSet(typed.intervals, keyIntervals) ? 'interval' : null;
+}
+
+/**
+ * The verdict on a solution-set response, or null to grade as before: an
+ * inequality against an inequality key is decided by its set (the variable
+ * must match), then by the declared form; the right set in the other
+ * notation is 'form'.
+ */
+function solutionSetVerdict(studentRaw, answerRaw, options) {
+  const keyInequality = inequalitySet(answerRaw);
+  if (keyInequality) {
+    const typed = inequalitySet(bracketsAsParentheses(studentRaw));
+    if (typed) {
+      if (typed.variable !== keyInequality.variable || !sameSolutionSet(typed.intervals, keyInequality.intervals)) {
+        return 'incorrect';
+      }
+      return checkFormAsGraded(bracketsAsParentheses(studentRaw), options.form, answerRaw) ? 'correct' : 'form';
+    }
+  }
+  return notationMismatch(studentRaw, answerRaw) ? 'form' : null;
+}
+
+/* ---------------------------------------------------------------------------
+ * Inequalities in two or more variables: the same HALF-PLANE
+ *
+ * `x\ge2y+6` against `x-2y\geq6` and `3y\ge2x-9` against
+ * `y\geq\frac{2}{3}x-3` graded `incorrect` (Elementary Algebra knowledge check
+ * 1–5, September 27, 2026): the engine compares two inequalities only when
+ * they are written alike. Each side pair is read as `D > 0` or `D \ge 0`
+ * (a `<`/`\le` relation negates its difference), and two inequalities are the
+ * same when they share the strictness and one D is a POSITIVE constant
+ * multiple of the other — sampled at points as numericallyEquivalent does, so
+ * scaling both sides by a negative number must flip the relation to count.
+ *
+ * Only a key naming two or more variable letters is read this way: a
+ * one-variable key is a solution set (inequalitySet), and reading `2q>-8` as
+ * the half-line `q>-4` would let a "Solve" prompt be retyped as its answer.
+ * The written shape an ask pins ("solved for y", "keep x+y on the left") is
+ * the answerForm's to grade: `solved:y`, `line-standard-form`.
+ * ------------------------------------------------------------------------ */
+
+function linearRelation(latex) {
+  const text = setWriting(latex);
+  const relations = [];
+  const sides = splitAtTopLevel(text, ORDER_RELATION, relations);
+  if (sides.length !== 2 || sides.some((side) => !side)) return null;
+  const kind = relationKind(relations[0]);
+  if (!kind) return null;
+  let left;
+  let right;
+  try {
+    left = parseLatex(sides[0]);
+    right = parseLatex(sides[1]);
+  } catch {
+    return null;
+  }
+  if (!left.isValid || !right.isValid) return null;
+  const greater = kind === 'gt' || kind === 'ge';
+  const letters = new Set(text.replace(/\\[a-zA-Z]+/g, ' ').match(/[a-zA-Z]/g) ?? []);
+  return {
+    difference: ce.box(['Subtract', greater ? left : right, greater ? right : left]),
+    strict: kind === 'gt' || kind === 'lt',
+    letters,
+  };
+}
+
+function positiveMultiple(student, key) {
+  const vars = [...new Set([...student.unknowns, ...key.unknowns])];
+  let ratio = null;
+  let agreed = 0;
+  for (let i = 0; i < SAMPLE_POINTS.length && agreed < 5; i += 1) {
+    const assignment = {};
+    vars.forEach((name, j) => { assignment[name] = SAMPLE_POINTS[(i + 3 * j) % SAMPLE_POINTS.length] - 3; });
+    const s = student.subs(assignment).N();
+    const k = key.subs(assignment).N();
+    if (![s.re, s.im, k.re, k.im].every(Number.isFinite) || Math.abs(s.im) > SAMPLE_TOLERANCE
+      || Math.abs(k.im) > SAMPLE_TOLERANCE) continue;
+    if (Math.abs(k.re) < 1e-9) {
+      if (Math.abs(s.re) > 1e-9) return false;
+      continue;
+    }
+    const r = s.re / k.re;
+    if (ratio === null) ratio = r;
+    else if (Math.abs(r - ratio) > 1e-9 * Math.max(1, Math.abs(ratio))) return false;
+    agreed += 1;
+  }
+  return agreed >= 3 && ratio > 0;
+}
+
+/** The verdict on an inequality against a two-or-more-variable inequality key, or null. */
+function halfPlaneVerdict(studentRaw, answerRaw, options) {
+  const key = linearRelation(answerRaw);
+  if (!key || key.letters.size < 2) return null;
+  const typed = linearRelation(bracketsAsParentheses(studentRaw));
+  if (!typed) return null;
+  let same;
+  try {
+    same = typed.strict === key.strict && positiveMultiple(typed.difference, key.difference);
+  } catch {
+    same = false;
+  }
+  if (!same) return 'incorrect';
+  return checkFormAsGraded(bracketsAsParentheses(studentRaw), options.form, answerRaw) ? 'correct' : 'form';
+}
+
+/* ---------------------------------------------------------------------------
+ * Plus-or-minus responses
+ *
+ * Chapter 10 of Elementary Algebra solves quadratics by the Square Root
+ * Property, completing the square, and the Quadratic Formula, and writes
+ * every pair of solutions with ±: `x=\pm4`, `x=-4\pm3\sqrt{3}`,
+ * `x=\frac{-3\pm\sqrt{201}}{8}`. A learner who types them that way meant the
+ * two-member set the key lists, and graded `incorrect` (the engine reads
+ * `\pm4` as `PlusMinus(0,4)` and a ± inside a fraction as a parse error).
+ * MathLive types ± as `\pm` (inline shortcut `+-`, the shifted minus key of
+ * the virtual keyboard); `\mp`, `±`, `∓` are read the same way.
+ *
+ * Each comma-separated member holding exactly one ± becomes its minus and
+ * plus branches (a `+` left unary — after `=`, an opening bracket, or at the
+ * start — is dropped, so `x=\pm4` reads `x=-4` and `x=4`), and the expanded
+ * list is graded against a list key of the same size AS A SET: the ± states
+ * no order, so an ordered key's order is not required of it. The key's
+ * answerForm reaches each expanded member exactly as it would a typed list.
+ * A member with two ± is not expanded; a ± response against any other key is
+ * 'incorrect'.
+ * ------------------------------------------------------------------------ */
+
+const PLUS_MINUS = /\\pm(?![a-zA-Z])|\\mp(?![a-zA-Z])|±|∓/g;
+
+function plusMinusBranches(member) {
+  const marks = member.match(PLUS_MINUS) ?? [];
+  if (marks.length === 0) return [member];
+  if (marks.length > 1) return null;
+  const at = member.search(PLUS_MINUS);
+  const before = member.slice(0, at);
+  const after = member.slice(at + marks[0].length).replace(/^\s*\{\s*\}/, '');
+  const plus = /(?:^|[=({[,<>])\s*$/.test(before) ? '' : '+';
+  return [`${before}-${after}`, `${before}${plus}${after}`];
+}
+
+/** The members a response with a ± in it stands for, or null when it has none (or two in one member). */
+function plusMinusExpansion(raw) {
+  const text = String(raw ?? '');
+  if (!text.match(PLUS_MINUS)) return null;
+  const expanded = [];
+  for (const member of splitTopLevelCommas(text)) {
+    const branches = plusMinusBranches(member);
+    if (!branches) return null;
+    expanded.push(...branches);
+  }
+  return expanded;
 }
 
 function checkFormToken(studentRaw, token, answerRaw) {
@@ -4608,7 +5077,7 @@ function formAcceptedAsWritten(preprocessed, spec, answerRaw) {
 // they read, never a label to strip.
 const EQUATION_FORM_TOKENS = new Set([
   'point-slope-form', 'slope-intercept-form', 'vertex-form', 'conic-standard-form',
-  'parabola-standard-form', 'circle-standard-form', 'exponential-form', 'translation',
+  'parabola-standard-form', 'circle-standard-form', 'line-standard-form', 'exponential-form', 'translation',
 ]);
 
 /**
@@ -4703,7 +5172,17 @@ const BOUND_CURRENCY = /\\\$\s*(?=-?\s*(?:\d|\.\d))/g;
 // single trailing letter (`140x`) is never read as a unit. A degree mark
 // (`^\circ`, `°`, or MathLive's degree key `\degree`) counts too, with an optional `F`/`C` after it: `-6^\circ` or `96^\circ F`
 // on a temperature key is the right number labelled, not a wrong one.
-const UNIT_TAIL = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*((?:\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|[A-Za-z]{2,}|\^\{?[23]\}?|(?:\^\s*\{?\s*\\circ\s*\}?|\\degree\b|°)(?:\s*[CF](?![A-Za-z]))?|\s)+)$/;
+const UNIT_WORDS = String.raw`((?:\\(?:text|textrm|mathrm|operatorname)\s*\{[^{}]*\}|[A-Za-z]{2,}|\^\{?[23]\}?|(?:\^\s*\{?\s*\\circ\s*\}?|\\degree\b|°)(?:\s*[CF](?![A-Za-z]))?|\s)+)$`;
+const UNIT_TAIL = new RegExp(String.raw`^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*${UNIT_WORDS}`);
+
+// The same unit words after a numeral fraction or mixed number, `\frac{1}{6}
+// \text{ hours}`, `2\frac{1}{2}\text{ hours}` — read off the writing before
+// preprocess() groups a mixed number that a letter follows. A key that is one
+// numeral fraction or mixed number is a quantity exactly as a bare-number key
+// is, and its right value with a unit graded 'incorrect' where `0.5\text{
+// hours}` reported 'unit' (Elementary Algebra knowledge check 1–5, September
+// 27, 2026).
+const FRACTION_UNIT_TAIL = new RegExp(String.raw`^(-?\s*(?:\d+\s*)?\\[tdc]?frac\s*(?:\{\s*\d+\s*\}|\d)\s*(?:\{\s*\d+\s*\}|\d))\s*${UNIT_WORDS}`);
 
 /**
  * A pair or interval of bare numbers with unit marks on its coordinates —
@@ -4786,6 +5265,16 @@ export function bracketsAsParentheses(latex) {
 const PERCENT_KEY = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*\\%$/;
 
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  // A ± response is the set of its two branches (plusMinusExpansion). A key
+  // written with ± itself is not read this way — none is authored.
+  const branches = plusMinusExpansion(studentRaw);
+  if (branches && !String(answerRaw ?? '').match(PLUS_MINUS)) {
+    const keyMembers = splitTopLevelCommas(answerRaw ?? '');
+    if (keyMembers.length < 2 || keyMembers.length !== branches.length || commasAreAllGrouping(answerRaw)) {
+      return 'incorrect';
+    }
+    return checkAnswer(branches.join(', '), answerRaw, { ...options, mode: 'unordered' });
+  }
   const percentKey = preprocess(answerRaw ?? '').match(PERCENT_KEY);
   if (percentKey && parseAnswerForm(options.form).tokens.includes('percent')) {
     // Under `percent`, `4.5` against `4.5\%` is the form the ask names with
@@ -4804,11 +5293,20 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
     // is the same currency label a bare-number key drops, and it parsed
     // 'invalid'. Only a `\$` directly before a numeral goes.
     const unpriced = String(studentRaw ?? '').replace(BOUND_CURRENCY, '');
+    const setVerdict = solutionSetVerdict(unpriced, answerRaw, options) ?? halfPlaneVerdict(unpriced, answerRaw, options);
+    if (setVerdict !== null) return setVerdict;
     const verdict = gradeResponse(unpriced, answerRaw, options);
     if (verdict !== 'incorrect' && verdict !== 'invalid') return verdict;
     return unitCoordinates(unpriced, answerRaw, options) ? 'unit' : verdict;
   }
-  if (!PLAIN_NUMBER_KEY.test(preprocess(answerRaw ?? ''))) return gradeResponse(studentRaw, answerRaw, options);
+  const keyText = preprocess(answerRaw ?? '');
+  if (!PLAIN_NUMBER_KEY.test(keyText)) {
+    const verdict = gradeResponse(studentRaw, answerRaw, options);
+    if ((verdict !== 'incorrect' && verdict !== 'invalid')
+      || (asFraction(keyText) === null && asMixedNumber(keyText) === null)) return verdict;
+    const tail = String(studentRaw ?? '').trim().match(FRACTION_UNIT_TAIL);
+    return tail && gradeResponse(tail[1], answerRaw, options) === 'correct' ? 'unit' : verdict;
+  }
   const unpriced = (studentRaw ?? '').replace(CURRENCY_PREFIX, '$1');
   const verdict = gradeResponse(unpriced, answerRaw, options);
   if (verdict !== 'incorrect' && verdict !== 'invalid') return verdict;

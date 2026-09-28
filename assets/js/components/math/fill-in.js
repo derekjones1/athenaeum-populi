@@ -198,10 +198,13 @@ class FillInElement extends HTMLElement {
     // parentheses was told "That value is right". Keep the ordering in one
     // place.
     const status = this._check(latex, this.answer, { mode: this.answerMode, form: this.answerForm });
+    // The key goes along too: a right solution set typed in the other
+    // notation earns 'form' with no answerForm declared, and its sentence
+    // ("now write it in interval notation") is read off the key.
     this._setStatus(
       status,
-      status === 'form' && this.answerForm && this._describeForm
-        ? this._describeForm(latex, this.answerForm) || this._formMessage
+      status === 'form' && this._describeForm
+        ? this._describeForm(latex, this.answerForm, this.answer) || this._formMessage
         : this._formMessage,
     );
   }
