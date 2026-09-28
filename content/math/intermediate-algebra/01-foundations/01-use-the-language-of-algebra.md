@@ -201,34 +201,34 @@ $6$. Neither $4$ nor $6$ is prime, so we break each into two factors: $4$ into
 $2$ and $2$, and $6$ into $2$ and $3$. Now $2$, $2$, $2$, and $3$ are all
 prime, so we circle them.
 
-<svg viewBox="0 0 300 210" role="img" aria-label="A factor tree for 48. 48 branches into 2 and 24; the 2 is circled because it is prime. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 300px; display: block; margin: 1.5rem auto">
-  <text x="150" y="25" text-anchor="middle" font-size="16" fill="currentColor">48</text>
-  <line x1="140" y1="32" x2="96" y2="60" stroke="currentColor" stroke-width="1.5" />
-  <line x1="160" y1="32" x2="204" y2="60" stroke="currentColor" stroke-width="1.5" />
-  <text x="90" y="80" text-anchor="middle" font-size="16" fill="currentColor">2</text>
-  <circle cx="90" cy="74" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="210" y="80" text-anchor="middle" font-size="16" fill="currentColor">24</text>
-  <line x1="195" y1="87" x2="167" y2="112" stroke="currentColor" stroke-width="1.5" />
-  <line x1="220" y1="87" x2="248" y2="112" stroke="currentColor" stroke-width="1.5" />
-  <text x="160" y="132" text-anchor="middle" font-size="16" fill="currentColor">4</text>
-  <text x="254" y="132" text-anchor="middle" font-size="16" fill="currentColor">6</text>
-  <line x1="150" y1="139" x2="132" y2="162" stroke="currentColor" stroke-width="1.5" />
-  <line x1="170" y1="139" x2="188" y2="162" stroke="currentColor" stroke-width="1.5" />
-  <text x="128" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
-  <circle cx="128" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="192" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
-  <circle cx="192" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <line x1="244" y1="139" x2="226" y2="162" stroke="currentColor" stroke-width="1.5" />
-  <line x1="264" y1="139" x2="282" y2="162" stroke="currentColor" stroke-width="1.5" />
-  <text x="222" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
-  <circle cx="222" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="286" y="182" text-anchor="middle" font-size="16" fill="currentColor">3</text>
-  <circle cx="286" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+<svg viewBox="0 0 320 210" role="img" aria-label="A factor tree for 48. 48 branches into 2 and 24; the 2 is circled because it is prime. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 320px; display: block; margin: 1.5rem auto">
+  <text x="160" y="25" text-anchor="middle" font-size="16" fill="currentColor">48</text>
+  <line x1="150" y1="32" x2="110" y2="61" stroke="currentColor" stroke-width="1.5" />
+  <line x1="170" y1="32" x2="210" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="100" y="80" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="100" cy="74" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="220" y="80" text-anchor="middle" font-size="16" fill="currentColor">24</text>
+  <line x1="210" y1="88" x2="180" y2="114" stroke="currentColor" stroke-width="1.5" />
+  <line x1="230" y1="88" x2="260" y2="114" stroke="currentColor" stroke-width="1.5" />
+  <text x="170" y="132" text-anchor="middle" font-size="16" fill="currentColor">4</text>
+  <text x="270" y="132" text-anchor="middle" font-size="16" fill="currentColor">6</text>
+  <line x1="162" y1="139" x2="148" y2="163" stroke="currentColor" stroke-width="1.5" />
+  <line x1="178" y1="139" x2="192" y2="163" stroke="currentColor" stroke-width="1.5" />
+  <text x="140" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="140" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="200" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="200" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="262" y1="139" x2="252" y2="163" stroke="currentColor" stroke-width="1.5" />
+  <line x1="278" y1="139" x2="288" y2="163" stroke="currentColor" stroke-width="1.5" />
+  <text x="245" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="245" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="295" y="182" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+  <circle cx="295" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 We write the composite number as the product of all the circled primes:
 
-$$48 = 2 \cdot 2 \cdot 2 \cdot 3$$
+$$48 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 3$$
 
 We generally write the primes in ascending order. Be sure to multiply the
 factors to verify your answer. If we first factored $48$ in a different way,
@@ -312,13 +312,15 @@ once. This way you are sure that $36$ is the *least* common multiple.
 {{< fillin
   question="Find the LCM of 9 and 12 using the prime factors method."
   answer="36"
-  hint="$9 = 3 \cdot 3$ and $12 = 2 \cdot 2 \cdot 3$. Match the common $3$ in one column, then bring down every column."
+  answerForm="decimal"
+  hint="Write each number as a product of primes, line up any prime they share in one column, then bring down every column and multiply."
 >}}
 
 {{< fillin
   question="Find the LCM of 18 and 24 using the prime factors method."
   answer="72"
-  hint="$18 = 2 \cdot 3 \cdot 3$ and $24 = 2 \cdot 2 \cdot 2 \cdot 3$. Match the common primes column by column, then bring every column down."
+  answerForm="decimal"
+  hint="Write each number as a product of primes, match the primes they share column by column, then bring down every column and multiply."
 >}}
 
 ## Use variables and algebraic symbols
@@ -606,14 +608,14 @@ $$
   question="Simplify: $9 + 5^3 - [4(9 + 3)]$."
   answer="86"
   answerForm="decimal"
-  hint="Simplify inside the brackets first, then the exponent, then subtract."
+  hint="Work inside the parentheses, then the brackets; then simplify the exponent and add and subtract from left to right."
 >}}
 
 {{< fillin
   question="Simplify: $7^2 - 2[4(5 + 1)]$."
   answer="1"
   answerForm="decimal"
-  hint="Simplify inside the brackets first, then the exponent, then subtract."
+  hint="Work inside the parentheses, then the brackets; then simplify the exponent, multiply, and subtract."
 >}}
 
 ## Evaluate an expression
@@ -667,19 +669,22 @@ $$
 {{< fillin
   question="Evaluate $x^2$ when $x = 3$."
   answer="9"
-  hint="Replace $x$ with $3$ and use the definition of exponent: $3^2 = 3 \cdot 3$."
+  answerForm="decimal"
+  hint="Replace $x$ with $3$, then use the definition of exponent."
 >}}
 
 {{< fillin
   question="Evaluate $4^x$ when $x = 3$."
   answer="64"
-  hint="Replace $x$ with $3$: $4^3 = 4 \cdot 4 \cdot 4$."
+  answerForm="decimal"
+  hint="Replace $x$ with $3$, then use the definition of exponent."
 >}}
 
 {{< fillin
   question="Evaluate $3x^2 + 4x + 1$ when $x = 3$."
   answer="40"
-  hint="Substitute $3$ for each $x$, simplify the exponent first, then multiply, then add: $3(9) + 4(3) + 1$."
+  answerForm="decimal"
+  hint="Substitute $3$ for each $x$, simplify the exponent first, then multiply, then add."
 >}}
 
 ## Identify and combine like terms
@@ -830,7 +835,7 @@ which is $49x^2 - 7$.
   question="Translate into an algebraic expression: 18 less than $8x$."
   answer="8x - 18"
   answerDisplay="$8x - 18$"
-  hint="*Less than* means subtracted from — the amount comes off $8x$."
+  hint="*Less than* means subtracted from: decide which quantity the amount is taken from."
 >}}
 
 We look carefully at the words to help us distinguish between multiplying a sum
@@ -855,42 +860,42 @@ eight times $x$ and $y$ is $8x + y$.
   question="Translate into an algebraic expression: four times the sum of $p$ and $q$."
   answer="4(p + q)"
   answerDisplay="$4(p + q)$"
-  hint="We multiply $4$ times a sum, so the sum needs parentheses."
+  hint="Decide what the four multiplies: a single letter, or the whole sum?"
 >}}
 
 {{< fillin
   question="Translate into an algebraic expression: the sum of four times $p$ and $q$."
   answer="4p + q"
   answerDisplay="$4p + q$"
-  hint="Here the sum is *of* four times $p$ *and* $q$ — add those two quantities."
+  hint="Look for the words *of* and *and* to see what is being added."
 >}}
 
 Later in this course, we'll apply our skills in algebra to solving
 applications. The first step will be to translate an English phrase to an
 algebraic expression. We'll see how to do this in the next two examples.
 
-**Example.** The length of a rectangle is $14$ less than the width. Let $w$
-represent the width of the rectangle. Write an expression for the length of the
+**Example.** The width of a rectangle is $14$ less than the length. Let $l$
+represent the length of the rectangle. Write an expression for the width of the
 rectangle.
 
-Write a phrase about the length: "$14$ less than the width." Substitute $w$ for
-"the width." Rewrite *less than* as *subtracted from*: "$14$ subtracted from
-$w$." Translate the phrase into algebra:
+Write a phrase about the width: "$14$ less than the length." Substitute $l$ for
+"the length." Rewrite *less than* as *subtracted from*: "$14$ subtracted from
+$l$." Translate the phrase into algebra:
 
-$$w - 14$$
+$$l - 14$$
 
 {{< fillin
   question="The length of a rectangle is 7 less than the width. Let $w$ represent the width. Write an expression for the length."
   answer="w - 7"
   answerDisplay="$w - 7$"
-  hint="*Less than* means subtracted from the width $w$."
+  hint="Write a phrase about the length, substitute $w$ for the width, then rewrite *less than* as *subtracted from*."
 >}}
 
 {{< fillin
   question="The width of a rectangle is 6 less than the length. Let $l$ represent the length. Write an expression for the width."
   answer="l - 6"
   answerDisplay="$l - 6$"
-  hint="*Less than* means subtracted from the length $l$."
+  hint="Write a phrase about the width, substitute $l$ for the length, then rewrite *less than* as *subtracted from*."
 >}}
 
 **Example.** June has dimes and quarters in her purse. The number of dimes is
@@ -908,14 +913,14 @@ $$4q - 7$$
   question="Geoffrey has dimes and quarters. The number of dimes is eight less than four times the number of quarters. Let $q$ represent the number of quarters. Write an expression for the number of dimes."
   answer="4q - 8"
   answerDisplay="$4q - 8$"
-  hint="Four times the quarters is $4q$; *eight less than* that subtracts $8$."
+  hint="Write a phrase about the number of dimes, substitute $q$ for the number of quarters, then rewrite *less than* as *subtracted from*."
 >}}
 
 {{< fillin
   question="Lauren has dimes and nickels. The number of dimes is three more than seven times the number of nickels. Let $n$ represent the number of nickels. Write an expression for the number of dimes."
   answer="7n + 3"
   answerDisplay="$7n + 3$"
-  hint="Seven times the nickels is $7n$; *three more than* that adds $3$."
+  hint="Write a phrase about the number of dimes, substitute $n$ for the number of nickels, then rewrite *more than* as *added to*."
 >}}
 
 ## Key terms
@@ -958,12 +963,13 @@ raised to the same powers.
   answer="2 \cdot 43"
   answerDisplay="$2 \cdot 43$"
   answerForm="prime-product"
-  hint="$86$ is even, so first divide by $2$; then check whether the remaining factor is prime."
+  hint="Find two factors whose product is $86$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
 
 {{< fillin
   question="Find the least common multiple of $8$ and $12$ using the prime factors method."
   answer="24"
+  answerForm="decimal"
   hint="Write $8$ and $12$ as products of primes, then use each prime factor the greatest number of times it occurs in either factorization."
 >}}
 
@@ -987,14 +993,14 @@ raised to the same powers.
   question="Translate into an algebraic expression: twenty-one more than $y^2$."
   answer="y^2 + 21"
   answerDisplay="$y^2 + 21$"
-  hint="'More than' means add $21$ to the quantity named after it."
+  hint="*More than* means added to."
 >}}
 
 {{< fillin
   question="Translate into an algebraic expression: $6x$ less than $81x^2$."
   answer="81x^2 - 6x"
   answerDisplay="$81x^2 - 6x$"
-  hint="'Less than' means subtracted from, so start with $81x^2$."
+  hint="*Less than* means subtracted from: decide which quantity the $6x$ is taken from."
 >}}
 
 ### Simplify expressions using the order of operations
@@ -1018,18 +1024,21 @@ raised to the same powers.
 {{< fillin
   question="When $x = 2$, evaluate $x^6$."
   answer="64"
-  hint="Substitute $2$ for $x$, then multiply $2$ by itself six times."
+  answerForm="decimal"
+  hint="Substitute $2$ for $x$, then use the definition of exponent."
 >}}
 
 {{< fillin
   question="When $x = 2$, evaluate $4^x$."
   answer="16"
+  answerForm="decimal"
   hint="Substitute $2$ for the exponent, then evaluate the power."
 >}}
 
 {{< fillin
   question="When $x = 2$, evaluate $2x^2 + 3x - 7$."
   answer="7"
+  answerForm="decimal"
   hint="Substitute $2$ for each $x$, evaluate the exponent, then multiply before adding and subtracting."
 >}}
 
@@ -1057,16 +1066,16 @@ raised to the same powers.
   question="Translate into an algebraic expression: eight times the difference of $y$ and nine."
   answer="8(y - 9)"
   answerDisplay="$8(y - 9)$"
-  hint="Find the difference first; the parentheses show that $8$ multiplies the entire difference."
+  hint="*Difference* means subtraction. Decide what the eight multiplies: a single letter, or the whole difference?"
 >}}
 
 {{< fillin
   question="Translate into an algebraic expression: the difference of eight times $y$ and $9$."
   answer="8y - 9"
   answerDisplay="$8y - 9$"
-  hint="First write eight times $y$, then subtract $9$."
+  hint="Look for the words *of* and *and* to find the two quantities in the difference."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.1: Use the Language of Algebra](https://openstax.org/books/intermediate-algebra-2e/pages/1-1-use-the-language-of-algebra) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the multiples and factor tables as accessible markdown tables, the factor-tree diagram as an accessible inline graphic, and the operation/inequality/exponent references as tables and typeset math; omitted the Be Prepared quiz and media links; and converted the practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.1: Use the Language of Algebra](https://openstax.org/books/intermediate-algebra-2e/pages/1-1-use-the-language-of-algebra) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the multiples and factor tables as accessible markdown tables, the factor-tree diagram as an accessible inline graphic, and the operation/inequality/exponent references as tables and typeset math; set the inequality number-line figure as a text list; omitted the chapter's opening review note, the writing exercises, and the Self Check checklist; and converted selected practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>

@@ -25,7 +25,7 @@ numbers?
 | :--- | :--- |
 | counting numbers | $1, 2, 3, 4\ldots$ |
 | whole numbers | $0, 1, 2, 3, 4\ldots$ |
-| integers | $\ldots -3, -2, -1, 0, 1, 2, 3, 4\ldots$ |
+| integers | $\ldots {-3}, -2, -1, 0, 1, 2, 3, 4\ldots$ |
 
 ### Rational numbers
 

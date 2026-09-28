@@ -128,7 +128,7 @@ Then, write the result as a binomial squared: $m^2-26m$.
 
 $$
 \begin{array}{lrcl}
-\text{The coefficient of }m\text{ is }-26. &&& m^2-26m \\[4pt]
+\text{The coefficient of }m\text{ is }{-26}. &&& m^2-26m \\[4pt]
 \text{Find }\left(\tfrac{1}{2}b\right)^2. &&&
 \left(\tfrac{1}{2}\cdot(-26)\right)^2=(-13)^2=169 \\[10pt]
 \text{Add }169\text{ to the binomial to complete the square.} &&&
@@ -142,7 +142,7 @@ Then, write the result as a binomial squared: $u^2-9u$.
 
 $$
 \begin{array}{lrcl}
-\text{The coefficient of }u\text{ is }-9. &&& u^2-9u \\[4pt]
+\text{The coefficient of }u\text{ is }{-9}. &&& u^2-9u \\[4pt]
 \text{Find }\left(\tfrac{1}{2}b\right)^2. &&&
 \left(\tfrac{1}{2}\cdot(-9)\right)^2=\left(-\tfrac{9}{2}\right)^2=\tfrac{81}{4} \\[10pt]
 \text{Add }\tfrac{81}{4}\text{ to the binomial to complete the square.} &&&
@@ -172,6 +172,7 @@ $$
 {{< fillin
   question="Complete the square to make a perfect square trinomial. Enter the result as a binomial square: $a^2-20a$."
   answer="(a-10)^2"
+  answerForm="factored"
   answerDisplay="$(a-10)^2$"
   hint="Find $\left(\tfrac{1}{2}b\right)^2$, add it to the binomial, and factor."
 >}}
@@ -255,7 +256,7 @@ $$
 $$
 \begin{array}{lrcl}
 \text{The variable terms are on the left side.} & y^2-6y &=& 16 \\[4pt]
-\text{Take half of }-6\text{ and square it.} &
+\text{Take half of }{-6}\text{ and square it.} &
 \left(\tfrac{1}{2}\cdot(-6)\right)^2 &=& 9 \\[10pt]
 \text{Add }9\text{ to both sides.} & y^2-6y+9 &=& 16+9 \\[4pt]
 \text{Factor the perfect square trinomial as a binomial square.} &
@@ -309,7 +310,7 @@ equal to a negative number.
 $$
 \begin{array}{lrcl}
 \text{The variable terms are on the left side.} & p^2-18p &=& -6 \\[4pt]
-\text{Take half of }-18\text{ and square it.} &
+\text{Take half of }{-18}\text{ and square it.} &
 \left(\tfrac{1}{2}\cdot(-18)\right)^2 &=& 81 \\[10pt]
 \text{Add }81\text{ to both sides.} & p^2-18p+81 &=& -6+81 \\[4pt]
 \text{Factor the perfect square trinomial as a binomial square.} &
@@ -344,8 +345,9 @@ for both of the solutions. The answer should be $-6$.
 {{< fillin
   question="Solve $y^2+8y=11$ by completing the square. Enter both solutions separated by commas, least to greatest."
   answer="-4-3\sqrt{3}, -4+3\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$-4-3\sqrt{3},\ -4+3\sqrt{3}$"
-  hint="Add $16$ to both sides, factor the perfect square trinomial, and use the Square Root Property."
+  hint="Take half the coefficient of $y$ and square it, add that number to both sides, factor the perfect square trinomial, and use the Square Root Property."
 >}}
 
 We will start the next example by isolating the variable terms on the left
@@ -398,7 +400,7 @@ $$
 & n^2 &=& 3n+11 \\[4pt]
 \text{Subtract }3n\text{ to get the variable terms on the left side.} &
 n^2-3n &=& 11 \\[4pt]
-\text{Take half of }-3\text{ and square it.} &
+\text{Take half of }{-3}\text{ and square it.} &
 \left(\tfrac{1}{2}\cdot(-3)\right)^2 &=& \tfrac{9}{4} \\[10pt]
 \text{Add }\tfrac{9}{4}\text{ to both sides.} &
 n^2-3n+\tfrac{9}{4} &=& 11+\tfrac{9}{4} \\[10pt]
@@ -431,7 +433,7 @@ $$
 \begin{array}{lrcl}
 & (x-3)(x+5) &=& 9 \\[4pt]
 \text{We multiply binomials on the left.} & x^2+2x-15 &=& 9 \\[4pt]
-\text{Add }15\text{ to get the variable terms on the left side.} &
+\text{Add }15\text{ to get the constant terms on the right side.} &
 x^2+2x &=& 24 \\[4pt]
 \text{Take half of }2\text{ and square it.} &
 \left(\tfrac{1}{2}\cdot2\right)^2 &=& 1 \\[10pt]
@@ -472,13 +474,13 @@ $$
 \text{Simplify.} & x^2-4x-5 &=& 0 \\[4pt]
 \text{Subtract }5\text{ to get the constant terms on the right.} &
 x^2-4x &=& 5 \\[4pt]
-\text{Take half of }-4\text{ and square it.} &
+\text{Take half of }{-4}\text{ and square it.} &
 \left(\tfrac{1}{2}\cdot(-4)\right)^2 &=& 4 \\[10pt]
 \text{Add }4\text{ to both sides.} & x^2-4x+4 &=& 5+4 \\[4pt]
 \text{Factor the perfect square trinomial as a binomial square.} &
 (x-2)^2 &=& 9 \\[4pt]
 \text{Use the Square Root Property.} & x-2 &=& \pm\sqrt{9} \\[4pt]
-\text{Solve for }x. & x-2 &=& \pm3 \\[4pt]
+\text{Simplify the radical.} & x-2 &=& \pm3 \\[4pt]
 \text{Rewrite to show two solutions.} & x &=& 2+3,\ 2-3 \\[4pt]
 \text{Simplify.} & x &=& 5,\ -1
 \end{array}
@@ -518,8 +520,8 @@ $$
 \text{Divide both sides by }2\text{ to get the coefficient of }x^2\text{ to be }1. &
 \tfrac{2x^2-3x}{2} &=& \tfrac{20}{2} \\[10pt]
 \text{Simplify.} & x^2-\tfrac{3}{2}x &=& 10 \\[10pt]
-\text{Take half of }-\tfrac{3}{2}\text{ and square it.} &
-\left(\tfrac{1}{2}\cdot-\tfrac{3}{2}\right)^2 &=& \tfrac{9}{16} \\[10pt]
+\text{Take half of }{-\tfrac{3}{2}}\text{ and square it.} &
+\left(\tfrac{1}{2}\cdot\left(-\tfrac{3}{2}\right)\right)^2 &=& \tfrac{9}{16} \\[10pt]
 \text{Add }\tfrac{9}{16}\text{ to both sides.} &
 x^2-\tfrac{3}{2}x+\tfrac{9}{16} &=& 10+\tfrac{9}{16} \\[10pt]
 \text{Factor the perfect square trinomial as a binomial square.} &
@@ -571,7 +573,8 @@ Check. We leave the check for you.
 
 {{< fillin
   question="Solve $4x^2+3x=12$ by completing the square. Enter both solutions separated by commas, least to greatest."
-  answer="(-3-\sqrt{201})/8, (-3+\sqrt{201})/8"
+  answer="\frac{-3-\sqrt{201}}{8}, \frac{-3+\sqrt{201}}{8}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{-3-\sqrt{201}}{8},\ \tfrac{-3+\sqrt{201}}{8}$"
   hint="Divide both sides by $4$, complete the square, and use both signs from the Square Root Property."
 >}}
@@ -593,31 +596,33 @@ $x=-\sqrt{k}$.
 {{< fillin
   question="What constant completes the square for $a^{2}+10a$?"
   answer="25"
+  answerForm="decimal"
   answerDisplay="$25$"
   hint="Take half of the coefficient of $a$, then square the result."
 >}}
 
 {{< fillin
-  question="Now write $a^{2}+10a+25$ as a binomial square."
+  question="Complete the square for $a^{2}+10a$, then write the result as a binomial square."
   answer="(a+5)^2"
   answerForm="factored"
   answerDisplay="$(a+5)^2$"
-  hint="Take the square roots of the first and last terms to build the binomial, matching the sign of the middle term."
+  hint="Add the number that completes the square, then factor the perfect square trinomial as a binomial square."
 >}}
 
 {{< fillin
   question="What constant completes the square for $p^{2}-\tfrac{1}{3}p$?"
   answer="\frac{1}{36}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{36}$"
   hint="Take half of $-\tfrac{1}{3}$, then square the result."
 >}}
 
 {{< fillin
-  question="Now write $p^{2}-\tfrac{1}{3}p+\tfrac{1}{36}$ as a binomial square."
+  question="Complete the square for $p^{2}-\tfrac{1}{3}p$, then write the result as a binomial square."
   answer="(p-\frac{1}{6})^2"
   answerForm="factored"
   answerDisplay="$(p-\tfrac{1}{6})^2$"
-  hint="The square root of $\tfrac{1}{36}$ is $\tfrac{1}{6}$; use it as the second term of the binomial, keeping the sign of the middle term."
+  hint="Add the number that completes the square, then factor the perfect square trinomial as a binomial square."
 >}}
 
 ### Solve quadratic equations of the form $x^2+bx+c=0$ by completing the square
@@ -626,17 +631,18 @@ $x=-\sqrt{k}$.
   question="Solve $u^{2}+2u=3$ by completing the square. Enter both solutions, separated by a comma."
   answer="-3,1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$u=-3$ or $u=1$"
-  hint="Add $1$ to both sides to complete the square, factor the perfect square trinomial, and use the Square Root Property."
+  hint="Take half the coefficient of $u$ and square it, add that number to both sides, factor the perfect square trinomial, and use the Square Root Property."
 >}}
 
 {{< multiplechoice
   question="Solve $m^{2}+4m=-44$ by completing the square."
   answer="No real solution"
-  hint="Complete the square, then check the sign of the number on the right side before applying the Square Root Property."
+  hint="Take half the coefficient of $m$ and square it, add that number to both sides, factor the perfect square trinomial, and apply the Square Root Property."
 >}}
 No real solution
-$m=-22$ or $m=2$
+$m=-2+4\sqrt{3}$ or $m=-2-4\sqrt{3}$
 $m=-2+2\sqrt{10}$ or $m=-2-2\sqrt{10}$
 {{< /multiplechoice >}}
 
@@ -644,8 +650,9 @@ $m=-2+2\sqrt{10}$ or $m=-2-2\sqrt{10}$
   question="Solve $a^{2}-10a=-5$ by completing the square. Enter both solutions, separated by a comma."
   answer="5-2\sqrt{5},5+2\sqrt{5}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$a=5-2\sqrt{5}$ or $a=5+2\sqrt{5}$"
-  hint="Complete the square, use the Square Root Property, then simplify $\sqrt{20}$ to $2\sqrt{5}$."
+  hint="Complete the square, use the Square Root Property, then take the largest perfect-square factor out of the radical."
 >}}
 
 ### Solve quadratic equations of the form $ax^2+bx+c=0$ by completing the square
@@ -654,6 +661,7 @@ $m=-2+2\sqrt{10}$ or $m=-2-2\sqrt{10}$
   question="Solve $3m^{2}+30m-27=6$ by completing the square. Enter both solutions, separated by a comma."
   answer="-11,1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$m=-11$ or $m=1$"
   hint="Move every term to one side, divide out the common factor of $3$, and then complete the square."
 >}}
@@ -662,10 +670,11 @@ $m=-2+2\sqrt{10}$ or $m=-2-2\sqrt{10}$
   question="Solve $2c^{2}+c=6$ by completing the square. Enter both solutions, separated by a comma."
   answer="-2,\frac{3}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$c=-2$ or $c=\tfrac{3}{2}$"
   hint="Divide both sides by $2$ so the coefficient of $c^2$ is $1$, then complete the square as usual."
 >}}
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.2](https://openstax.org/books/elementary-algebra-2e/pages/10-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.2](https://openstax.org/books/elementary-algebra-2e/pages/10-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; corrected three worked-example step labels: in Example 10.24 "Add 15 to get the constant terms on the right side" (the source says "the variable terms on the left side"), and in Example 10.25 "Take half of $-4$" (the source says "4") and "Simplify the radical" beside $x-2=\pm3$ (the source says "Solve for $x$").</small>

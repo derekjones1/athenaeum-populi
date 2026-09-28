@@ -100,7 +100,7 @@ See the graph below.
 
 ⓑ $y=-3\sin\left(2x+\tfrac{\pi}{2}\right)$ involves sine, so we use the form $y=A\sin(Bt-C)+D$.
 
-Amplitude is $|A|$, so the amplitude is $|-3|=3$. Since $A$ is negative, the graph is reflected over the $x$-axis. Period is $\tfrac{2\pi}{B}$, so the period is
+Amplitude is $|A|$, so the amplitude is $\lvert -3\rvert=3$. Since $A$ is negative, the graph is reflected over the $x$-axis. Period is $\tfrac{2\pi}{B}$, so the period is
 
 $$\tfrac{2\pi}{B}=\tfrac{2\pi}{2}=\pi$$
 
@@ -141,7 +141,7 @@ Starting with $\theta=0$, we calculate the first $y$-value, add the length of th
 
 **Example.** Graph the function $y=-4\cos(\pi x)$ using amplitude, period, and key points.
 
-**Solution.** The amplitude is $|-4|=4$. The period is $\tfrac{2\pi}{\omega}=\tfrac{2\pi}{\pi}=2$. (Recall that we sometimes refer to $B$ as $\omega$.) One cycle of the graph can be drawn over the interval $[0,2]$. To find the key points, we divide the period by $4$. Make a table similar to the one below, starting with $x=0$ and then adding $\tfrac12$ successively to $x$ and calculate $y$. See the graph after it.
+**Solution.** The amplitude is $\lvert -4\rvert=4$. The period is $\tfrac{2\pi}{\omega}=\tfrac{2\pi}{\pi}=2$. (Recall that we sometimes refer to $B$ as $\omega$.) One cycle of the graph can be drawn over the interval $[0,2]$. To find the key points, we divide the period by $4$. Make a table similar to the one below, starting with $x=0$ and then adding $\tfrac12$ successively to $x$ and calculate $y$. See the graph after it.
 
 | $x$ | $0$ | $\tfrac12$ | $1$ | $\tfrac32$ | $2$ |
 | :--- | ---: | ---: | ---: | ---: | ---: |

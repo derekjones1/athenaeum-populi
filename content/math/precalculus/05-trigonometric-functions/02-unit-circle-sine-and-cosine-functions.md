@@ -449,7 +449,7 @@ Recall that an angle's **reference angle** is the acute angle, $t'$, formed by t
 
 **Solution.** Because $225^\circ$ is in the third quadrant, the reference angle is
 
-$$|(180^\circ-225^\circ)|=|-45^\circ|=45^\circ$$
+$$|(180^\circ-225^\circ)|=\lvert -45^\circ\rvert=45^\circ$$
 
 {{< fillin
   question="Find the reference angle of $\tfrac{5\pi}{3}$."

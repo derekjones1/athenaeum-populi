@@ -136,7 +136,10 @@ Since the Elementary Algebra chapter 7 re-review (September 27, 2026):
 (`(2x+4)(x+2)`, `2(x^2+4x+4)`, `x(xy+y^2)`), so a "Factor" / "Factor
 completely" ask whose key is complete takes `factored-completely` — every
 polynomial factor primitive over the integers and the key's factor count
-reached — and a GCF-only ask keeps `factored`.
+reached — and a GCF-only ask keeps `factored` only when its key is not itself
+complete (a complete GCF key such as `14(y-3)` takes `factored-completely`,
+which refuses `2(7y-21)`; Elementary Algebra knowledge check 6–10, September
+28, 2026).
 Since the Elementary Algebra chapters 8–9 re-review (September 27, 2026):
 a response that drops a radical over a variable (`9x` for `9\sqrt{x}`) grades
 `incorrect` — radicals over variables are decided by sampling at positive
@@ -154,6 +157,35 @@ reads a constant and a radical term as unlike (`3+2\sqrt2` passes,
 still holding a grouped product (`\frac{2(x-5)}{3(x+5)+1}`) fails, and an
 equation with a variable denominator cleared (`xy=16` for `y=\frac{16}{x}`)
 grades `correct` — so a "solve the formula" key keeps its `solved:` form.
+Since the Elementary Algebra chapter 10 re-review (September 28, 2026): a
+response with one `\pm` per member (`\pm4`, `x=-4\pm3\sqrt3`,
+`\frac{-3\pm\sqrt{201}}{8}`) grades as the set of its branches against a list
+key of that size, the key's form applied per branch, any other key
+`incorrect`; a `\cup` compares interval by interval, so unworked endpoints in
+a union reach the value forms; the right solution set in the other notation
+(`x\le-0.5` for `(-\infty,-0.5]`, `(-4,\infty)` for `q>-4`) is `form`
+("now write it in interval notation" / "as an inequality") and an inequality
+key is compared by its set (`-2\le x<4` no longer passes `-1\le x<4`);
+`lowest-terms` refuses unreduced signs (`\frac{-23}{-4}`, `\frac{23}{-4}`);
+`factored` refuses an unreduced numeral fraction in a factor
+(`(p-\frac{2}{12})^2`); and a fraction or mixed-number key reports a unit
+word as `unit` (`\frac16\text{ hours}`). Same run: an inequality in two or
+more variables grades as its half-plane (`x\ge2y+6` is `x-2y\ge6`), and an
+ask that pins the writing declares `solved:y` (now read on inequalities) or
+the new `line-standard-form` ("keep $x+y$ on the left side");
+`slope-intercept-form` refuses uncombined constants and unreduced numerals
+(`y=\frac12x+1-5`, `y=\frac{2}{4}x-4`); `single-fraction` refuses a variable
+written twice in a term (`\frac{1}{q^4q^5}`); and `(6u)^{-3}`-shaped
+negative powers, which froze the engine, are decided by sampling. Solution
+lists with a radical take `simplified-radical` (`-\sqrt{50},\sqrt{50}` passes
+without it); a rationalized radical-fraction key (`\frac{6\sqrt5}{5}`) takes
+`simplified-radical` alone, because `lowest-terms` grades it `form` against
+itself; `lowest-terms` stays for rational lists. A rounded application whose
+second quantity the source computes from the first rounded value (Elementary
+Algebra 10.4: 3(7.2)−1 = 20.6, 3(6.3) = 18.9) is a convention finding: the
+page rounds each quantity from its exact value and pins "Compute each length
+from the exact solution, then round it" in the stem (ruling, September 28,
+2026).
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
@@ -225,7 +257,7 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      `factored-completely` in place of `factored`; run the grader on a
      half-finished product (the GCF left inside, `(x^2+4)(x^2-4)` for a
      nested difference of squares) and expect `form`. A GCF-only ask keeps
-     `factored`. On September 27, 2026, 292 factoring asks declared
+     `factored` only when its key is not complete. On September 27, 2026, 292 factoring asks declared
      `factored` (Elementary Algebra ch7 and KC 6–10, Intermediate Algebra
      ch6 and KC 1–6, Prealgebra ch10).
      A radical sum key (Multiply, Add, Subtract, or Simplify — `3+2\sqrt2`,

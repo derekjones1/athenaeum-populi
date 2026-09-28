@@ -113,9 +113,9 @@ $7(n-3)-8=-15$.
 
 $$
 \begin{array}{lrcl}
-\text{Use the Distributive Property.} & 7(n-3)-8 &=& -15 \\[4pt]
-\text{Simplify the left side.} & 7n-21-8 &=& -15 \\[4pt]
-& 7n-29 &=& -15 \\[4pt]
+& 7(n-3)-8 &=& -15 \\[4pt]
+\text{Use the Distributive Property.} & 7n-21-8 &=& -15 \\[4pt]
+\text{Simplify the left side.} & 7n-29 &=& -15 \\[4pt]
 \text{Add 29 to each side.} & 7n-29+29 &=& -15+29 \\[4pt]
 \text{Simplify.} & 7n &=& 14 \\[4pt]
 \text{Divide each side by 7.} & \tfrac{7n}{7} &=& \tfrac{14}{7} \\[10pt]
@@ -130,6 +130,7 @@ $$7(2-3)-8=-7-8=-15\ \checkmark$$
 {{< fillin
   question="Solve: $2(m-4)+3=-1$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$m=2$"
   hint="Distribute, combine like terms, and isolate $m$."
 >}}
@@ -137,6 +138,7 @@ $$7(2-3)-8=-7-8=-15\ \checkmark$$
 {{< fillin
   question="Solve: $5(a-3)+5=-10$."
   answer="0"
+  answerForm="decimal"
   answerDisplay="$a=0$"
   hint="Distribute, combine like terms, and isolate $a$."
 >}}
@@ -190,6 +192,7 @@ $$
 {{< fillin
   question="Solve: $\tfrac13(6u+3)=7-u$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$u=2$"
   hint="Distribute first, then collect the variable terms."
 >}}
@@ -197,6 +200,7 @@ $$
 {{< fillin
   question="Solve: $\tfrac23(9x-12)=8+2x$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$x=4$"
   hint="Distribute first, then collect the variable terms."
 >}}
@@ -237,6 +241,7 @@ $$
 {{< fillin
   question="Solve: $6(p-3)-7=5(4p+3)-12$."
   answer="-2"
+  answerForm="decimal"
   answerDisplay="$p=-2$"
   hint="Collect variable terms on the side with the larger coefficient."
 >}}
@@ -244,6 +249,7 @@ $$
 {{< fillin
   question="Solve: $8(q+1)-5=3(2q-4)-1$."
   answer="-8"
+  answerForm="decimal"
   answerDisplay="$q=-8$"
   hint="Distribute and combine like terms first."
 >}}
@@ -278,8 +284,9 @@ $$
 $$
 
 {{< fillin
-  question="Solve: $6[4-2(7y-1)]=8(13-8y)$."
+  question="Solve: $6[4-2(7y-1)]=8(13-8y)$. Enter the solution as a fraction in lowest terms."
   answer="-\frac{17}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$y=-\tfrac{17}{5}$"
   hint="Simplify the innermost parentheses first."
 >}}
@@ -287,6 +294,7 @@ $$
 {{< fillin
   question="Solve: $12[1-5(4z-1)]=3(24+11z)$."
   answer="0"
+  answerForm="decimal"
   answerDisplay="$z=0$"
   hint="Simplify the innermost parentheses first."
 >}}
@@ -402,15 +410,17 @@ The equation is true when $a=\tfrac43$. This is a conditional equation. The
 solution is $a=\tfrac43$.
 
 {{< fillin
-  question="Solve the conditional equation $11(q+3)-5=19$."
+  question="Solve the conditional equation $11(q+3)-5=19$. Enter the solution as a fraction in lowest terms."
   answer="-\frac{9}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$q=-\tfrac{9}{11}$"
   hint="Distribute and isolate $q$."
 >}}
 
 {{< fillin
-  question="Solve the conditional equation $6+14(k-8)=95$."
+  question="Solve the conditional equation $6+14(k-8)=95$. Enter the solution as a fraction in lowest terms."
   answer="\frac{201}{14}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$k=\tfrac{201}{14}$"
   hint="Distribute and isolate $k$."
 >}}
@@ -499,17 +509,19 @@ $$
 $$
 
 {{< fillin
-  question="Solve: $\tfrac14x+\tfrac12=\tfrac58$."
+  question="Solve: $\tfrac14x+\tfrac12=\tfrac58$. Enter the solution as a fraction in lowest terms."
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$x=\tfrac12$"
-  hint="Multiply both sides by the LCD, 8."
+  hint="Find the LCD of all the fractions, then multiply both sides by it."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac18x+\tfrac12=\tfrac14$."
   answer="-2"
+  answerForm="decimal"
   answerDisplay="$x=-2$"
-  hint="Multiply both sides by the LCD, 8."
+  hint="Find the LCD of all the fractions, then multiply both sides by it."
 >}}
 
 Notice in the previous example, once we cleared the equation of fractions,
@@ -550,15 +562,17 @@ $$5=\tfrac12(12)+\tfrac23(12)-\tfrac34(12)=6+8-9=5\ \checkmark$$
 {{< fillin
   question="Solve: $7=\tfrac12x+\tfrac34x-\tfrac23x$."
   answer="12"
+  answerForm="decimal"
   answerDisplay="$x=12$"
-  hint="Multiply both sides by the LCD, 12."
+  hint="Find the LCD of all the fractions, then multiply both sides by it."
 >}}
 
 {{< fillin
   question="Solve: $-1=\tfrac12u+\tfrac14u-\tfrac23u$."
   answer="-12"
+  answerForm="decimal"
   answerDisplay="$u=-12$"
-  hint="Multiply both sides by the LCD, 12."
+  hint="Find the LCD of all the fractions, then multiply both sides by it."
 >}}
 
 In the next example, we'll distribute before we clear the fractions.
@@ -601,15 +615,17 @@ the check on your own.
 {{< fillin
   question="Solve: $\tfrac15(n+3)=\tfrac14(n+2)$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$n=2$"
-  hint="Clear the fractions by multiplying both sides by 20."
+  hint="Clear the fractions by multiplying both sides by the LCD of $\tfrac15$ and $\tfrac14$."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac12(m-3)=\tfrac14(m-7)$."
   answer="-1"
+  answerForm="decimal"
   answerDisplay="$m=-1$"
-  hint="Clear the fractions by multiplying both sides by 4."
+  hint="Clear the fractions by multiplying both sides by the LCD of $\tfrac12$ and $\tfrac14$."
 >}}
 
 When you multiply both sides of an equation by the LCD of the fractions, make
@@ -639,15 +655,17 @@ on your own.
 {{< fillin
   question="Solve: $\tfrac{3r+5}{6}+1=\tfrac{4r+3}{3}$."
   answer="1"
+  answerForm="decimal"
   answerDisplay="$r=1$"
-  hint="Multiply every term by the LCD, 6."
+  hint="Multiply every term, including the constant, by the LCD of the denominators."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{2s+3}{2}+1=\tfrac{3s+2}{4}$."
   answer="-8"
+  answerForm="decimal"
   answerDisplay="$s=-8$"
-  hint="Multiply every term by the LCD, 4."
+  hint="Multiply every term, including the constant, by the LCD of the denominators."
 >}}
 
 Some equations have decimals in them. This kind of equation may occur when
@@ -688,6 +706,7 @@ Check it yourself by substituting $x=9$ into the original equation.
 {{< fillin
   question="Solve: $0.25n+0.05(n+5)=2.95$."
   answer="9"
+  answerForm="decimal"
   answerDisplay="$n=9$"
   hint="Distribute, combine like terms, and multiply by 100."
 >}}
@@ -695,6 +714,7 @@ Check it yourself by substituting $x=9$ into the original equation.
 {{< fillin
   question="Solve: $0.10d+0.05(d-5)=2.15$."
   answer="16"
+  answerForm="decimal"
   answerDisplay="$d=16$"
   hint="Distribute, combine like terms, and multiply by 100."
 >}}
@@ -735,6 +755,7 @@ Yes
 {{< fillin
   question="Solve: $-(w-12)=30$."
   answer="-18"
+  answerForm="decimal"
   answerDisplay="$w=-18$"
   hint="Distribute the negative sign, then isolate $w$."
 >}}
@@ -742,6 +763,7 @@ Yes
 {{< fillin
   question="Solve: $4(p-4)-(p+7)=5(p-3)$."
   answer="-4"
+  answerForm="decimal"
   answerDisplay="$p=-4$"
   hint="Distribute, combine like terms, then collect the variable terms on one side."
 >}}
@@ -779,8 +801,9 @@ contradiction
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Solve: $18(5j-1)+29=47$."
+  question="Solve: $18(5j-1)+29=47$. Enter the solution as a fraction in lowest terms."
   answer="\frac{2}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$j=\tfrac{2}{5}$"
   hint="Distribute, then isolate $j$."
 >}}
@@ -790,20 +813,23 @@ contradiction
 {{< fillin
   question="Solve: $\tfrac14x-\tfrac12=-\tfrac34$."
   answer="-1"
+  answerForm="decimal"
   answerDisplay="$x=-1$"
-  hint="Multiply both sides by the LCD, 4, to clear the fractions."
+  hint="Multiply both sides by the LCD of all the fractions to clear them."
 >}}
 
 {{< fillin
   question="Solve: $\tfrac14(p-7)=\tfrac13(p+5)$."
   answer="-41"
+  answerForm="decimal"
   answerDisplay="$p=-41$"
-  hint="Multiply both sides by the LCD, 12, to clear the fractions."
+  hint="Multiply both sides by the LCD of $\tfrac14$ and $\tfrac13$ to clear the fractions."
 >}}
 
 {{< fillin
   question="Solve: $0.4x+0.6=0.5x-1.2$."
   answer="18"
+  answerForm="decimal"
   answerDisplay="$x=18$"
   hint="Collect the variable terms to one side and the constant terms to the other, then divide."
 >}}

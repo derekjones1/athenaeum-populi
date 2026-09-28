@@ -38,7 +38,7 @@ same absolute value. For example:
 
 $$
 \begin{array}{l}
--5\text{ is 5 units away from 0, so }|-5|=5. \\[4pt]
+-5\text{ is 5 units away from 0, so }\lvert-5\rvert=5. \\[4pt]
 5\text{ is 5 units away from 0, so }|5|=5.
 \end{array}
 $$
@@ -126,8 +126,8 @@ $$
 \begin{array}{rcl}
 |5x-4|-3 &\overset{?}{=}& 8 \\[10pt]
 \left|5\left(-\tfrac{7}{5}\right)-4\right|-3 &\overset{?}{=}& 8 \\[10pt]
-|-7-4|-3 &\overset{?}{=}& 8 \\[4pt]
-|-11|-3 &\overset{?}{=}& 8 \\[4pt]
+\lvert-7-4\rvert-3 &\overset{?}{=}& 8 \\[4pt]
+\lvert-11\rvert-3 &\overset{?}{=}& 8 \\[4pt]
 11-3 &\overset{?}{=}& 8 \\[4pt]
 8 &=& 8\ \checkmark
 \end{array}
@@ -137,6 +137,7 @@ $$
   question="Solve $|3x-5|-1=6$. Enter the two solutions separated by commas."
   answer="-\frac{2}{3},4"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{2}{3}, 4$"
   hint="First add 1 to isolate the absolute value expression, and then write the two equivalent equations."
 >}}
@@ -167,7 +168,7 @@ Check:
 $$
 \begin{array}{rclcrcl}
 2|5-7|+5&\overset{?}{=}&9 && 2|9-7|+5&\overset{?}{=}&9 \\[4pt]
-2|-2|+5&\overset{?}{=}&9 && 2|2|+5&\overset{?}{=}&9 \\[4pt]
+2\lvert-2\rvert+5&\overset{?}{=}&9 && 2|2|+5&\overset{?}{=}&9 \\[4pt]
 2\cdot2+5&\overset{?}{=}&9 && 2\cdot2+5&\overset{?}{=}&9 \\[4pt]
 9&=&9\ \checkmark && 9&=&9\ \checkmark
 \end{array}
@@ -236,6 +237,44 @@ the numbers between $-5$ and 5 are less than five units from zero.
 On the number line, the solution is the segment from $-5$ through 5, with a
 closed bracket at each endpoint. This shows $-5\leq x\leq5$.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative six to six shaded between a closed bracket at negative five and a closed bracket at five." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="50" y1="45" x2="270" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
+  <line x1="50" y1="39" x2="50" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="50" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="72" y1="39" x2="72" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="72" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="138" y1="39" x2="138" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="138" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="182" y1="39" x2="182" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="182" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="248" y1="39" x2="248" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="248" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="270" y1="39" x2="270" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="270" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <text x="50" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="270" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">−5 ≤ x ≤ 5</text>
+</svg>
+</div>
+
 In a more general way, we can see that if $|u|\leq a$, then
 $-a\leq u\leq a$.
 
@@ -262,12 +301,56 @@ Write the equivalent inequality: $-7<x<7$.
 On the number line, shade the segment between $-7$ and 7 and place an open
 parenthesis at each endpoint.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative eight to eight shaded between an open parenthesis at negative seven and an open parenthesis at seven." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="44.5" y1="45" x2="275.5" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="11" fill="currentColor">−8</text>
+  <text x="44.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">−7</text>
+  <line x1="61" y1="39" x2="61" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="61" y="70" text-anchor="middle" font-size="11" fill="currentColor">−6</text>
+  <line x1="77.5" y1="39" x2="77.5" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="77.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">−5</text>
+  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94" y="70" text-anchor="middle" font-size="11" fill="currentColor">−4</text>
+  <line x1="110.5" y1="39" x2="110.5" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="110.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">−3</text>
+  <line x1="127" y1="39" x2="127" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="127" y="70" text-anchor="middle" font-size="11" fill="currentColor">−2</text>
+  <line x1="143.5" y1="39" x2="143.5" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="143.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="11" fill="currentColor">0</text>
+  <line x1="176.5" y1="39" x2="176.5" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="176.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">1</text>
+  <line x1="193" y1="39" x2="193" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="193" y="70" text-anchor="middle" font-size="11" fill="currentColor">2</text>
+  <line x1="209.5" y1="39" x2="209.5" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="209.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">3</text>
+  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="226" y="70" text-anchor="middle" font-size="11" fill="currentColor">4</text>
+  <line x1="242.5" y1="39" x2="242.5" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="242.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">5</text>
+  <line x1="259" y1="39" x2="259" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="259" y="70" text-anchor="middle" font-size="11" fill="currentColor">6</text>
+  <text x="275.5" y="70" text-anchor="middle" font-size="11" fill="currentColor">7</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="11" fill="currentColor">8</text>
+  <text x="44.5" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
+  <text x="275.5" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">−7 &lt; x &lt; 7</text>
+</svg>
+</div>
+
 The solution in interval notation is $(-7,7)$.
 
 Check: To verify, check a value in each section of the number line showing the
 solution. Choose numbers such as $-8$, 1, and 9.
 
-$$|-8|<7\text{ is false},\qquad |1|<7\text{ is true},\qquad |9|<7\text{ is false}.$$
+$$\lvert-8\rvert<7\text{ is false},\qquad |1|<7\text{ is true},\qquad |9|<7\text{ is false}.$$
 
 **Example 2.74.** Solve $|5x-6|\leq4$. Graph the solution and write the
 solution in interval notation.
@@ -284,14 +367,38 @@ $$
 On the number line, shade the segment from $\tfrac{2}{5}$ through 2 and place
 a closed bracket at each endpoint.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative one to three shaded between a closed bracket at two fifths, labeled 2/5, and a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="120.4" y1="45" x2="226" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <text x="120.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="226" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
+  <text x="120.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">2/5</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">2/5 ≤ x ≤ 2</text>
+</svg>
+</div>
+
 The solution using interval notation is $\left[\tfrac{2}{5},2\right]$.
 Check: The check is left to you.
 
 {{< fillin
   question="Solve $|2x-1|\leq5$. Enter the solution in interval notation."
   answer="[-2,3]"
+  answerForm="decimal"
   answerDisplay="$[-2,3]$"
-  hint="Write the equivalent compound inequality $-5\leq2x-1\leq5$, and solve all three parts together."
+  hint="The absolute value is already isolated. Write the equivalent compound inequality, and solve all three parts together."
 >}}
 
 {{< callout type="info" >}}
@@ -325,6 +432,45 @@ be less than $-5$ and greater than 5 on the number line.
 On the number line, place closed brackets at $-5$ and 5. Shade to the left of
 $-5$ and to the right of 5. This shows $x\leq-5$ or $x\geq5$.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative six to six shaded left from a closed bracket at negative five and right from a closed bracket at five." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="16" y1="45" x2="50" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="270" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
+  <line x1="50" y1="39" x2="50" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="50" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="72" y1="39" x2="72" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="72" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="138" y1="39" x2="138" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="138" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="182" y1="39" x2="182" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="182" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="248" y1="39" x2="248" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="248" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="270" y1="39" x2="270" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="270" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <text x="50" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
+  <text x="270" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −5 or x ≥ 5</text>
+</svg>
+</div>
+
 In a more general way, we can see that if $|u|\geq a$, then $u\leq-a$ or
 $u\geq a$.
 
@@ -345,11 +491,48 @@ Write the equivalent inequality: $x<-4$ or $x>4$.
 On the number line, place open parentheses at $-4$ and 4. Shade to the left
 of $-4$ and to the right of 4.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative six to six shaded left from an open parenthesis at negative four and right from an open parenthesis at four." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="16" y1="45" x2="72" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="248" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
+  <line x1="50" y1="39" x2="50" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="50" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <text x="72" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="138" y1="39" x2="138" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="138" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="182" y1="39" x2="182" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="182" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <text x="248" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="270" y1="39" x2="270" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="270" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <text x="72" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
+  <text x="248" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; −4 or x &gt; 4</text>
+</svg>
+</div>
+
 The solution using interval notation is
 $(-\infty,-4)\cup(4,\infty)$.
 
 Check: To verify, check a value in each section of the number line showing the
-solution. Choose numbers such as $-6$, 0, and 7. Then $|-6|>4$ is true,
+solution. Choose numbers such as $-6$, 0, and 7. Then $\lvert-6\rvert>4$ is true,
 $|0|>4$ is false, and $|7|>4$ is true.
 
 **Example 2.76.** Solve $|2x-3|\geq5$. Graph the solution and write the
@@ -367,14 +550,48 @@ $$
 On the number line, place closed brackets at $-1$ and 4. Shade to the left of
 $-1$ and to the right of 4.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative three to six shaded left from a closed bracket at negative one and right from a closed bracket at four." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="16" y1="45" x2="86.7" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="233.3" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="57.3" y1="39" x2="57.3" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="57.3" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="86.7" y1="39" x2="86.7" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="86.7" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="145.3" y1="39" x2="145.3" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="145.3" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="174.7" y1="39" x2="174.7" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="174.7" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="233.3" y1="39" x2="233.3" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="233.3" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="262.7" y1="39" x2="262.7" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="262.7" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <text x="86.7" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
+  <text x="233.3" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −1 or x ≥ 4</text>
+</svg>
+</div>
+
 The solution using interval notation is
 $(-\infty,-1]\cup[4,\infty)$. Check: The check is left to you.
 
 {{< fillin
   question="Solve $|4x-3|\geq5$. Enter the solution in interval notation."
   answer="(-\infty,-\frac{1}{2}]\cup[2,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-\tfrac{1}{2}]\cup[2,\infty)$"
-  hint="Write $4x-3\leq-5$ or $4x-3\geq5$, then solve both inequalities."
+  hint="The absolute value is already isolated. Split it into the two inequalities joined by “or”, and solve each one."
 >}}
 
 {{< callout type="info" >}}
@@ -408,7 +625,7 @@ Let $x=$ the actual measurement.
 $$
 \begin{array}{lrcl}
 \text{Use an absolute value inequality to express this situation.}&|\text{actual}-\text{ideal}|&\leq&\text{tolerance} \\[4pt]
-&&|x-60|\leq0.075& \\[4pt]
+&|x-60|&\leq&0.075 \\[4pt]
 \text{Rewrite as a compound inequality.}&-0.075&\leq&x-60\leq0.075 \\[4pt]
 \text{Solve the inequality.}&59.925&\leq&x\leq60.075
 \end{array}
@@ -417,10 +634,11 @@ $$
 The diameter of the rod can be between 59.925 mm and 60.075 mm.
 
 {{< fillin
-  question="The ideal diameter of a rod needed for a machine is 80 mm. The actual diameter can vary from the ideal diameter by 0.009 mm. Enter the acceptable range in interval notation."
+  question="The ideal diameter of a rod needed for a machine is 80 mm. The actual diameter can vary from the ideal diameter by 0.009 mm. Enter the acceptable range of diameters, in millimeters, in interval notation."
   answer="[79.991,80.009]"
+  answerForm="decimal"
   answerDisplay="$[79.991,80.009]$ mm"
-  hint="Use $|x-80|\leq0.009$, and rewrite it as a compound inequality."
+  hint="Write an absolute value inequality comparing the actual diameter with the ideal one, rewrite it as a compound inequality, and solve."
 >}}
 
 ## Key terms
@@ -436,14 +654,15 @@ the number line. **Tolerance** is the allowed difference from a specification.
   question="Solve $|x|=4$. Enter both solutions, separated by a comma."
   answer="-4,4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-4$ or $x=4$"
-  hint="An absolute value equal to $4$ means the expression is either $4$ units to the right of zero or $4$ units to the left."
+  hint="Absolute value is distance from zero: find every number that is that distance from zero."
 >}}
 
 {{< multiplechoice
   question="Solve $|y|=-5$."
   answer="No solution"
-  hint="An absolute value can never equal a negative number."
+  hint="Before writing equivalent equations, compare the right side with the values an absolute value can take."
 >}}
 $y=-5$
 No solution
@@ -454,16 +673,18 @@ $y=0$
 {{< fillin
   question="Solve $|z|=0$."
   answer="0"
+  answerForm="decimal"
   answerDisplay="$z=0$"
-  hint="The only number that is zero units from zero is zero itself."
+  hint="Write the two equivalent equations, and see how many different numbers they give."
 >}}
 
 {{< fillin
   question="Solve $|4x+3|=|2x+1|$. Enter both solutions, separated by a comma."
   answer="-1,-\frac{2}{3}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-1$ or $x=-\tfrac{2}{3}$"
-  hint="Since the two absolute values are equal, the expressions inside are equal or opposites: solve both $4x+3=2x+1$ and $4x+3=-(2x+1)$."
+  hint="Two equal absolute values mean the expressions inside are equal or opposites. Write both equations, putting parentheses around the opposite, and solve each."
 >}}
 
 ### Solve absolute value inequalities with “less than”
@@ -471,21 +692,23 @@ $y=0$
 {{< fillin
   question="Solve $|2x-5|\le3$. Enter the solution in interval notation."
   answer="[1,4]"
+  answerForm="decimal"
   answerDisplay="$[1,4]$"
-  hint="Write the equivalent compound inequality $-3\le2x-5\le3$, and solve all three parts together."
+  hint="The absolute value is already isolated. Write the equivalent compound inequality, and solve all three parts together."
 >}}
 
 {{< fillin
   question="Solve $|6x-5|<7$. Enter the solution in interval notation."
   answer="(-\frac{1}{3},2)"
+  answerForm="lowest-terms"
   answerDisplay="$\left(-\tfrac{1}{3},2\right)$"
-  hint="Write the equivalent compound inequality $-7<6x-5<7$, and solve all three parts together."
+  hint="Write the equivalent compound inequality for a “less than” absolute value, and solve all three parts together."
 >}}
 
 {{< multiplechoice
   question="Solve $|5x+1|\le-2$."
   answer="No solution"
-  hint="An absolute value is never less than a negative number, so no value of $x$ can make this true."
+  hint="Before writing a compound inequality, compare the right side with the smallest value an absolute value can take."
 >}}
 $x=-\tfrac{1}{5}$
 All real numbers
@@ -498,22 +721,24 @@ $\left[-\tfrac{3}{5},\tfrac{1}{5}\right]$
 {{< fillin
   question="Solve $|2x-1|>5$. Enter the solution in interval notation."
   answer="(-\infty,-2)\cup(3,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-2)\cup(3,\infty)$"
-  hint="Write $2x-1<-5$ or $2x-1>5$, then solve both inequalities."
+  hint="Split the absolute value inequality into the two inequalities joined by “or”, and solve each one."
 >}}
 
 {{< fillin
   question="Solve $|x-7|\ge1$. Enter the solution in interval notation."
   answer="(-\infty,6]\cup[8,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,6]\cup[8,\infty)$"
-  hint="Write $x-7\le-1$ or $x-7\ge1$, then solve both inequalities."
+  hint="Split the absolute value inequality into the two inequalities joined by “or”, and solve each one."
 >}}
 
 {{< fillin
   question="Solve $5|x|+6\ge1$. Enter the solution in interval notation."
   answer="(-\infty,\infty)"
   answerDisplay="$(-\infty,\infty)$"
-  hint="Isolate the absolute value to get $|x|\ge-1$. Since an absolute value is always at least zero, the inequality holds for every real number."
+  hint="Isolate the absolute value first, then compare the right side with the smallest value an absolute value can take."
 >}}
 
 ### Solve applications with absolute value
@@ -521,17 +746,19 @@ $\left[-\tfrac{3}{5},\tfrac{1}{5}\right]$
 {{< fillin
   question="An organic juice bottler ideally produces 215,000 bottles per day, but this total can vary by as much as 7,500 bottles. Enter the minimum and maximum expected daily production, in bottles, separated by a comma."
   answer="207500,222500"
+  answerForm="decimal"
   answerDisplay="207,500 to 222,500 bottles"
-  hint="Set up $|x-215{,}000|\le7{,}500$, rewrite it as a compound inequality, and solve for $x$."
+  hint="Write an absolute value inequality comparing the actual production with the ideal, rewrite it as a compound inequality, and solve."
 >}}
 
 {{< fillin
   question="At Lilly’s Bakery, the ideal weight of a loaf of bread is 24 ounces. By law, the actual weight can vary from the ideal by 1.5 ounces. Enter the minimum and maximum acceptable weight, in ounces, separated by a comma."
   answer="22.5,25.5"
+  answerForm="decimal"
   answerDisplay="22.5 to 25.5 ounces"
-  hint="Set up $|x-24|\le1.5$, rewrite it as a compound inequality, and solve for $x$."
+  hint="Write an absolute value inequality comparing the actual weight with the ideal, rewrite it as a compound inequality, and solve."
 >}}
 
 ---
 
-<small>Adapted from [*Intermediate Algebra 2e*, Section 2.7](https://openstax.org/books/intermediate-algebra-2e/pages/2-7-solve-absolute-value-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source text and examples for web presentation, converted selected Try It exercises into interactive checks, and adapted selected end-of-section exercises into an interactive practice block. One correction: the source’s answer to the juice-bottler exercise prints the maximum production as 2,225,000 bottles; $215{,}000+7{,}500=222{,}500$, and the exercise here keys 207,500 and 222,500.</small>
+<small>Adapted from [*Intermediate Algebra 2e*, Section 2.7](https://openstax.org/books/intermediate-algebra-2e/pages/2-7-solve-absolute-value-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source text and examples for web presentation, converted selected Try It exercises into interactive checks, and adapted selected end-of-section exercises into an interactive practice block. Two corrections: the source’s answer to the juice-bottler exercise prints the maximum production as 2,225,000 bottles; $215{,}000+7{,}500=222{,}500$, and the exercise here keys 207,500 and 222,500; the same exercise’s stem reads “215,000 bottles” where the source prints “215,000 bottle”.</small>

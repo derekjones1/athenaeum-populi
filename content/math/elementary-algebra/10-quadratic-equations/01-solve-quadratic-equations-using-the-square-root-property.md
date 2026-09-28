@@ -100,6 +100,7 @@ $$
 {{< fillin
   question="Solve $x^2=81$. Enter both solutions separated by commas, least to greatest."
   answer="-9, 9"
+  answerForm="decimal"
   answerDisplay="$-9,\ 9$"
   hint="Use the Square Root Property and remember both square roots."
 >}}
@@ -137,6 +138,7 @@ $$
 {{< fillin
   question="Solve $x^2-50=0$. Enter both solutions separated by commas, least to greatest."
   answer="-5\sqrt{2}, 5\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$-5\sqrt{2},\ 5\sqrt{2}$"
   hint="Isolate $x^2$, use the Square Root Property, and simplify the radical."
 >}}
@@ -270,6 +272,7 @@ Check. We leave the check for you.
 {{< fillin
   question="Solve $5r^2-2=34$. Enter both solutions separated by commas, least to greatest."
   answer="-\frac{6\sqrt{5}}{5}, \frac{6\sqrt{5}}{5}"
+  answerForm="simplified-radical"
   answerDisplay="$-\tfrac{6\sqrt{5}}{5},\ \tfrac{6\sqrt{5}}{5}$"
   hint="Isolate $r^2$, use the Square Root Property, and rationalize the denominator."
 >}}
@@ -311,6 +314,7 @@ $$
 {{< fillin
   question="Solve $(q+5)^2=1$. Enter both solutions separated by commas, least to greatest."
   answer="-6, -4"
+  answerForm="decimal"
   answerDisplay="$-6,\ -4$"
   hint="Use the Square Root Property, write two equations, and solve."
 >}}
@@ -427,6 +431,7 @@ Check. We leave the check for you.
 {{< fillin
   question="Solve $x^2-6x+9=12$. Enter both solutions separated by commas, least to greatest."
   answer="3-2\sqrt{3}, 3+2\sqrt{3}"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$3-2\sqrt{3},\ 3+2\sqrt{3}$"
   hint="Factor the perfect square trinomial, then use the Square Root Property."
 >}}
@@ -483,6 +488,7 @@ form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
   question="Solve $4m^2=36$. Enter both solutions, separated by a comma."
   answer="-3,3"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$-3,\ 3$"
   hint="Divide both sides by $4$ to isolate $m^2$, then use the Square Root Property."
 >}}
@@ -491,6 +497,7 @@ form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
   question="Solve $7p^2+10=26$. Enter both solutions, separated by a comma."
   answer="-\frac{4\sqrt{7}}{7},\frac{4\sqrt{7}}{7}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$-\tfrac{4\sqrt{7}}{7},\ \tfrac{4\sqrt{7}}{7}$"
   hint="Isolate $p^2$, use the Square Root Property, then rationalize the denominator."
 >}}
@@ -498,7 +505,7 @@ form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
 {{< multiplechoice
   question="Solve $x^2+20=0$."
   answer="No real solution"
-  hint="Isolate $x^2$ and decide whether a real number can square to a negative value."
+  hint="Isolate $x^2$, then decide whether any real number squares to the value on the right side."
 >}}
 $x=20$ or $x=-20$
 $x=2\sqrt{5}$ or $x=-2\sqrt{5}$
@@ -511,14 +518,16 @@ No real solution
   question="Solve $(x+2)^2=9$. Enter both solutions, separated by a comma."
   answer="-5,1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$-5,\ 1$"
-  hint="Use the Square Root Property to get $x+2=\pm3$, then solve each equation for $x$."
+  hint="Use the Square Root Property on the squared binomial, then solve each of the two equations for $x$."
 >}}
 
 {{< fillin
   question="Solve $(a-7)^2+5=55$. Enter both solutions, separated by a comma."
   answer="7-5\sqrt{2},7+5\sqrt{2}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$7-5\sqrt{2},\ 7+5\sqrt{2}$"
   hint="Isolate the binomial term first, then use the Square Root Property and simplify the radical."
 >}}

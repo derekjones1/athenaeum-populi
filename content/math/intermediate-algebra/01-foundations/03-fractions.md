@@ -93,17 +93,17 @@ $$
 {{< fillin
   question="Simplify: $-\tfrac{69}{120}$."
   answer="-\frac{23}{40}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{23}{40}$"
-  hint="Factor $69 = 3 \cdot 23$ and $120 = 2^3 \cdot 3 \cdot 5$, then divide out the common factor of $3$."
+  hint="Factor the numerator and the denominator into primes, then divide out the common factors."
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{120}{192}$."
   answer="-\frac{5}{8}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{8}$"
-  hint="The greatest common factor of $120$ and $192$ is $24$."
+  hint="Rewrite $120$ and $192$ to show their common factors, and divide out every one of them."
 >}}
 
 We now summarize the steps you should follow to simplify fractions.
@@ -152,7 +152,8 @@ same, the product is positive.
 
 $$
 \begin{array}{lrcl}
-\text{Determine the sign of the product; the product is positive.} && & \tfrac{12}{5}(20x) \\[4pt]
+&& & -\tfrac{12}{5}(-20x) \\[10pt]
+\text{Determine the sign of the product; the product is positive.} && =& \tfrac{12}{5}(20x) \\[10pt]
 \text{Write } 20x \text{ as a fraction.} && =& \tfrac{12}{5}\left(\tfrac{20x}{1}\right) \\[10pt]
 \text{Multiply.} && =& \tfrac{12 \cdot 20x}{5 \cdot 1} \\[10pt]
 \text{Rewrite } 20 \text{ to show the common factor } 5 \text{ and divide it out.} && =& \tfrac{12 \cdot 4 \cdot 5 \cdot x}{5 \cdot 1} \\[10pt]
@@ -163,17 +164,17 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{11}{3}(-9a)$."
   answer="-33a"
-  answerForm="single-term"
+  answerForm="single-term polynomial"
   answerDisplay="$-33a$"
-  hint="The signs are different, so the product is negative. Write $-9a$ as a fraction and divide out the common factor of $3$."
+  hint="Determine the sign of the product first, write $-9a$ as a fraction over $1$, then divide out the common factor before multiplying."
 >}}
 
 {{< fillin
   question="Multiply: $\tfrac{13}{7}(-14b)$."
   answer="-26b"
-  answerForm="single-term"
+  answerForm="single-term polynomial"
   answerDisplay="$-26b$"
-  hint="The signs are different, so the product is negative. Divide out the common factor of $7$."
+  hint="Determine the sign of the product first, write $-14b$ as a fraction over $1$, then divide out the common factor before multiplying."
 >}}
 
 Now that we know how to multiply fractions, we are almost ready to divide.
@@ -216,7 +217,7 @@ $$
   answer="\frac{4}{15}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{15}$"
-  hint="The signs are the same, so the quotient is positive. Multiply $\tfrac{7}{27}$ by the reciprocal $\tfrac{36}{35}$ and divide out common factors."
+  hint="Multiply the first fraction by the reciprocal of the second, determine the sign, and divide out common factors."
 >}}
 
 {{< fillin
@@ -224,7 +225,7 @@ $$
   answer="\frac{2}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
-  hint="The signs are the same, so the quotient is positive. Multiply $\tfrac{5}{14}$ by the reciprocal $\tfrac{28}{15}$."
+  hint="Rewrite the division as multiplication by the reciprocal of the divisor, determine the sign, then rewrite to show common factors and divide them out."
 >}}
 
 The numerators or denominators of some fractions contain fractions
@@ -340,7 +341,7 @@ $1$ and $31$. Since $31$ does not go into $36$, the answer is simplified.
   answer="\frac{79}{60}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{79}{60}$"
-  hint="The LCD of $12$ and $15$ is $60$. Rewrite each fraction with denominator $60$, then add the numerators."
+  hint="Factor $12$ and $15$ into primes to find the LCD, rewrite each fraction with the LCD, then add the numerators."
 >}}
 
 {{< fillin
@@ -348,7 +349,7 @@ $1$ and $31$. Since $31$ does not go into $36$, the answer is simplified.
   answer="\frac{103}{60}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{103}{60}$"
-  hint="The LCD of $15$ and $20$ is $60$. Rewrite each fraction with denominator $60$, then add the numerators."
+  hint="Factor $15$ and $20$ into primes to find the LCD, rewrite each fraction with the LCD, then add the numerators and simplify if possible."
 >}}
 
 {{< callout type="info" >}}
@@ -431,9 +432,9 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{3a}{4} - \tfrac{8}{9}$."
   answer="\frac{27a-32}{36}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{27a - 32}{36}$"
-  hint="This is subtraction, so find the LCD of $4$ and $9$, which is $36$. Rewrite each fraction with denominator $36$."
+  hint="The operation is subtraction, so find the LCD of $4$ and $9$, rewrite each fraction with it, and subtract the numerators."
 >}}
 
 {{< fillin
@@ -447,9 +448,9 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{4k}{5} - \tfrac{1}{6}$."
   answer="\frac{24k-5}{30}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{24k - 5}{30}$"
-  hint="This is subtraction, so find the LCD of $5$ and $6$, which is $30$."
+  hint="Identify the operation first; for subtraction, rewrite both fractions with the LCD of $5$ and $6$, then subtract the numerators."
 >}}
 
 ## Use the order of operations to simplify fractions
@@ -504,14 +505,14 @@ $$
   question="Simplify: $\tfrac{8(-2) + 4(-3)}{-5(2) + 3}$."
   answer="4"
   answerForm="decimal"
-  hint="Simplify the numerator and denominator separately. Numerator: $-16 - 12$. Denominator: $-10 + 3$."
+  hint="The fraction bar is a grouping symbol: multiply first, simplify the numerator and the denominator separately, then divide."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{7(-1) + 9(-3)}{-5(3) - 2}$."
   answer="2"
   answerForm="decimal"
-  hint="Simplify the numerator and denominator separately. Numerator: $-7 - 27$. Denominator: $-15 - 2$."
+  hint="Use the order of operations in the numerator and in the denominator separately, then divide the numerator by the denominator."
 >}}
 
 Now we'll look at complex fractions where the numerator or denominator
@@ -539,14 +540,14 @@ $$\cfrac{\frac{1}{4}}{13} = \tfrac{1}{4} \div \tfrac{13}{1} = \tfrac{1}{4} \cdot
   answer="\frac{1}{90}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{90}$"
-  hint="Numerator: $\left(\tfrac{1}{3}\right)^2 = \tfrac{1}{9}$. Denominator: $2^3 + 2 = 10$. Then divide $\tfrac{1}{9}$ by $10$."
+  hint="Simplify the numerator, then the denominator (exponents before addition), then divide the numerator by the denominator."
 >}}
 
 {{< fillin
   question="Simplify: $\cfrac{1 + 4^2}{\left(\frac{1}{4}\right)^2}$."
   answer="272"
   answerForm="decimal"
-  hint="Numerator: $1 + 16 = 17$. Denominator: $\left(\tfrac{1}{4}\right)^2 = \tfrac{1}{16}$. Then divide $17$ by $\tfrac{1}{16}$."
+  hint="Simplify the numerator and the denominator separately, then divide by multiplying by the reciprocal of the denominator."
 >}}
 
 {{< callout type="info" >}}
@@ -574,18 +575,18 @@ simplify:
 $$\cfrac{\frac{7}{6}}{\frac{7}{12}} = \tfrac{7}{6} \div \tfrac{7}{12} = \tfrac{7}{6} \cdot \tfrac{12}{7} = \tfrac{7 \cdot 6 \cdot 2}{6 \cdot 7 \cdot 1} = 2$$
 
 {{< fillin
-  question="Simplify: $\cfrac{\frac{1}{3} + \frac{1}{2}}{\frac{3}{4} - \frac{2}{3}}$."
-  answer="10"
+  question="Simplify: $\cfrac{\frac{1}{3} + \frac{1}{2}}{\frac{3}{4} - \frac{1}{3}}$."
+  answer="2"
   answerForm="decimal"
-  hint="Numerator: $\tfrac{1}{3} + \tfrac{1}{2} = \tfrac{5}{6}$. Denominator: $\tfrac{3}{4} - \tfrac{2}{3} = \tfrac{1}{12}$. Then divide."
+  hint="Use an LCD to simplify the numerator, then another to simplify the denominator, then divide the numerator by the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\cfrac{\frac{2}{3} - \frac{1}{6}}{\frac{1}{4} + \frac{1}{3}}$."
-  answer="\frac{6}{7}"
+  question="Simplify: $\cfrac{\frac{2}{3} - \frac{1}{2}}{\frac{1}{4} + \frac{1}{3}}$."
+  answer="\frac{2}{7}"
   answerForm="fraction lowest-terms"
-  answerDisplay="$\tfrac{6}{7}$"
-  hint="Numerator: $\tfrac{2}{3} - \tfrac{1}{6} = \tfrac{1}{2}$. Denominator: $\tfrac{1}{4} + \tfrac{1}{3} = \tfrac{7}{12}$. Then divide."
+  answerDisplay="$\tfrac{2}{7}$"
+  hint="Simplify the numerator and the denominator separately, each with its own LCD, then multiply the numerator by the reciprocal of the denominator."
 >}}
 
 ## Evaluate variable expressions with fractions
@@ -600,7 +601,7 @@ Substitute the values into the expression.
 
 $$
 \begin{array}{lrcl}
-\text{Substitute } \tfrac{1}{4} \text{ for } x \text{ and } -\tfrac{2}{3} \text{ for } y. && & 2\left(\tfrac{1}{4}\right)^2\left(-\tfrac{2}{3}\right) \\[10pt]
+\text{Substitute } \tfrac{1}{4} \text{ for } x \text{ and } {-\tfrac{2}{3}} \text{ for } y. && & 2\left(\tfrac{1}{4}\right)^2\left(-\tfrac{2}{3}\right) \\[10pt]
 \text{Simplify exponents first.} && =& 2\left(\tfrac{1}{16}\right)\left(-\tfrac{2}{3}\right) \\[10pt]
 \text{Multiply; divide out the common factors.} && =& -\tfrac{2 \cdot 1 \cdot 2}{2 \cdot 2 \cdot 4 \cdot 3} \\[10pt]
 \text{Simplify.} && =& -\tfrac{1}{12}
@@ -608,17 +609,19 @@ $$
 $$
 
 {{< fillin
-  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{3}$."
-  answer="-\frac{2}{9}"
-  answerDisplay="$-\tfrac{2}{9}$"
-  hint="Simplify the exponent first: $b^2 = \tfrac{1}{9}$. Then multiply $3 \cdot \left(-\tfrac{2}{3}\right) \cdot \tfrac{1}{9}$."
+  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{2}$."
+  answer="-\frac{1}{2}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{1}{2}$"
+  hint="Substitute, simplify the exponent first (it applies only to $b$), then multiply and divide out common factors."
 >}}
 
 {{< fillin
   question="Evaluate $4c^3 d$ when $c = -\tfrac{1}{2}$ and $d = -\tfrac{4}{3}$."
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
-  hint="Simplify the exponent first: $c^3 = -\tfrac{1}{8}$. Then multiply $4 \cdot \left(-\tfrac{1}{8}\right) \cdot \left(-\tfrac{4}{3}\right)$."
+  hint="Substitute, simplify the power of $c$ first, then multiply the factors and divide out common factors."
 >}}
 
 ## Key terms
@@ -643,7 +646,7 @@ fractions, used as their common denominator.
   answer="-\frac{12}{7}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{12}{7}$"
-  hint="Divide the numerator and denominator by their greatest common factor, $9$."
+  hint="Factor the numerator and denominator into primes and divide out all the common factors."
 >}}
 
 {{< fillin
@@ -651,7 +654,7 @@ fractions, used as their common denominator.
   answer="\frac{10}{21}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{21}$"
-  hint="Both $120$ and $252$ are divisible by $12$; then check that no common factor remains."
+  hint="Rewrite $120$ and $252$ as products of primes, divide out the common factors, and multiply what remains."
 >}}
 
 ### Multiply and divide fractions
@@ -661,7 +664,7 @@ fractions, used as their common denominator.
   answer="\frac{1}{3}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{3}$"
-  hint="The product is positive. Multiply across, then cancel common factors before or after multiplying."
+  hint="Determine the sign of the product first, then multiply across and divide out common factors."
 >}}
 
 {{< fillin
@@ -669,7 +672,7 @@ fractions, used as their common denominator.
   answer="-\frac{21}{50}"
   answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{21}{50}$"
-  hint="The product is negative. Cancel common factors between $14$ and $20$, and between $9$ and $15$, before multiplying."
+  hint="Determine the sign first, then rewrite the numerators and denominators to show common factors and divide them out before multiplying."
 >}}
 
 ### Add and subtract fractions
@@ -679,7 +682,7 @@ fractions, used as their common denominator.
   answer="\frac{29}{24}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{29}{24}$"
-  hint="Use the LCD $24$ to rewrite both fractions before adding their numerators."
+  hint="Find the LCD of $12$ and $8$, rewrite both fractions with it, then add the numerators."
 >}}
 
 {{< fillin
@@ -687,7 +690,7 @@ fractions, used as their common denominator.
   answer="\frac{1}{48}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{48}$"
-  hint="Use the LCD $48$, then subtract the new numerators."
+  hint="Factor $12$ and $16$ into primes to find the LCD, rewrite both fractions with it, then subtract the numerators."
 >}}
 
 ### Use the order of operations to simplify fractions
@@ -712,17 +715,19 @@ fractions, used as their common denominator.
 {{< fillin
   question="Evaluate $\tfrac{7}{10} - w$ when $w = \tfrac{1}{2}$."
   answer="\frac{1}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{5}$"
-  hint="Rewrite $\tfrac{1}{2}$ with denominator $10$ before subtracting."
+  hint="Substitute, rewrite both fractions with a common denominator, subtract, and simplify."
 >}}
 
 {{< fillin
   question="Evaluate $\tfrac{7}{10} - w$ when $w = -\tfrac{1}{2}$."
   answer="\frac{6}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{6}{5}$"
   hint="Substituting a negative value changes subtraction to addition; then use a common denominator."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.3: Fractions](https://openstax.org/books/intermediate-algebra-2e/pages/1-3-fractions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the shaded-circle figure as an accessible inline graphic and the worked-example step tables as typeset math; omitted the Be Prepared quiz and the media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.3: Fractions](https://openstax.org/books/intermediate-algebra-2e/pages/1-3-fractions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the shaded-circle figure as an accessible inline graphic, the worked-example step tables as typeset math, and the fraction-operations summary table as two tables with its closing LCD note moved into the text; omitted the Be Prepared note, the media link, the Key Concepts summary, the Writing Exercises, and the Self Check checklist; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, one part per question; and adapted selected end-of-section exercises into an interactive Practice block.</small>

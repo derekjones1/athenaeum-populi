@@ -48,17 +48,19 @@ we know the volume and the radius of the base, by using the formula
 $h = \tfrac{3V}{\pi r^2}$.
 
 {{< fillin
-  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for $b$."
-  answer="\frac{2A}{h}"
+  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for $b$. Enter your answer as b = ___ (an expression in $A$ and $h$)."
+  answer="b=\frac{2A}{h}"
+  answerForm="solved:b"
   answerDisplay="$b = \tfrac{2A}{h}$"
-  hint="Multiply both sides by 2, and then divide by $h$."
+  hint="Clear the fraction first, then divide both sides by the other variable multiplying $b$."
 >}}
 
 {{< fillin
-  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for $h$."
-  answer="\frac{2A}{b}"
+  question="Use the formula $A = \tfrac{1}{2}bh$ to solve for $h$. Enter your answer as h = ___ (an expression in $A$ and $b$)."
+  answer="h=\frac{2A}{b}"
+  answerForm="solved:h"
   answerDisplay="$h = \tfrac{2A}{b}$"
-  hint="Multiply both sides by 2, and then divide by $b$."
+  hint="Clear the fraction first, then divide both sides by the other variable multiplying $h$."
 >}}
 
 In the sciences, we often need to change temperature from Fahrenheit to
@@ -80,17 +82,19 @@ We can now use the formula $F = \tfrac{9}{5}C+32$ to find the Fahrenheit
 temperature when we know the Celsius temperature.
 
 {{< fillin
-  question="Solve the formula $F = \tfrac{9}{5}C + 32$ for $C$."
-  answer="\frac{5}{9}(F-32)"
+  question="Solve the formula $F = \tfrac{9}{5}C + 32$ for $C$. Enter your answer as C = ___ (an expression in $F$)."
+  answer="C=\frac{5}{9}(F-32)"
+  answerForm="solved:C"
   answerDisplay="$C = \tfrac{5}{9}(F-32)$"
-  hint="Subtract 32 from both sides, then multiply by $\tfrac{5}{9}$."
+  hint="Isolate the $C$-term first, then clear its fraction coefficient by multiplying both sides by its reciprocal."
 >}}
 
 {{< fillin
-  question="Solve the formula $A = \tfrac{1}{2}h(b+B)$ for $b$."
-  answer="\frac{2A}{h}-B"
-  answerDisplay="$b = \tfrac{2A}{h}-B$"
-  hint="Multiply by 2, divide by $h$, and then subtract $B$."
+  question="Solve the formula $A = \tfrac{1}{2}h(b+B)$ for $b$. Enter your answer as b = ___ (an expression in $A$, $h$, and $B$)."
+  answer="b=\frac{2A-Bh}{h}"
+  answerForm="solved:b"
+  answerDisplay="$b = \tfrac{2A-Bh}{h}$"
+  hint="Clear the fraction, divide both sides by the factor outside the parentheses, and then isolate $b$."
 >}}
 
 The next example uses the formula for the surface area of a right cylinder.
@@ -100,24 +104,27 @@ The next example uses the formula for the surface area of a right cylinder.
 $$
 \begin{array}{lrcl}
 \text{Write the formula.} & S &=& 2\pi r^2+2\pi rh \\[10pt]
-\text{Isolate the }h\text{ term by subtracting }2\pi r^2\text{ from each side.} & S-2\pi r^2 &=& 2\pi rh \\[10pt]
+\text{Isolate the }h\text{ term by subtracting }2\pi r^2\text{ from each side.} & S-2\pi r^2 &=& 2\pi r^2-2\pi r^2+2\pi rh \\[10pt]
+\text{Simplify.} & S-2\pi r^2 &=& 2\pi rh \\[10pt]
 \text{Solve for }h\text{ by dividing both sides by }2\pi r. & \tfrac{S-2\pi r^2}{2\pi r} &=& \tfrac{2\pi rh}{2\pi r} \\[10pt]
 \text{Simplify.} & \tfrac{S-2\pi r^2}{2\pi r} &=& h
 \end{array}
 $$
 
 {{< fillin
-  question="Solve the formula $A=P+Prt$ for $t$."
-  answer="\frac{A-P}{Pr}"
+  question="Solve the formula $A=P+Prt$ for $t$. Enter your answer as t = ___ (an expression in $A$, $P$, and $r$)."
+  answer="t=\frac{A-P}{Pr}"
+  answerForm="solved:t"
   answerDisplay="$t = \tfrac{A-P}{Pr}$"
-  hint="Subtract $P$, then divide by $Pr$."
+  hint="Isolate the term containing $t$, then divide both sides by everything that multiplies $t$."
 >}}
 
 {{< fillin
-  question="Solve the formula $A=P+Prt$ for $r$."
-  answer="\frac{A-P}{Pt}"
+  question="Solve the formula $A=P+Prt$ for $r$. Enter your answer as r = ___ (an expression in $A$, $P$, and $t$)."
+  answer="r=\frac{A-P}{Pt}"
+  answerForm="solved:r"
   answerDisplay="$r = \tfrac{A-P}{Pt}$"
-  hint="Subtract $P$, then divide by $Pt$."
+  hint="Isolate the term containing $r$, then divide both sides by everything that multiplies $r$."
 >}}
 
 Sometimes we might be given an equation that is solved for $y$ and need to
@@ -137,17 +144,19 @@ $$
 $$
 
 {{< fillin
-  question="Solve the formula $4x+7y=9$ for $y$."
-  answer="\frac{9-4x}{7}"
+  question="Solve the formula $4x+7y=9$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{9-4x}{7}"
+  answerForm="solved:y"
   answerDisplay="$y = \tfrac{9-4x}{7}$"
-  hint="Subtract $4x$, then divide by 7."
+  hint="Isolate the $y$-term first, then divide both sides by its coefficient."
 >}}
 
 {{< fillin
-  question="Solve the formula $5x+8y=1$ for $y$."
-  answer="\frac{1-5x}{8}"
+  question="Solve the formula $5x+8y=1$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{1-5x}{8}"
+  answerForm="solved:y"
   answerDisplay="$y = \tfrac{1-5x}{8}$"
-  hint="Subtract $5x$, then divide by 8."
+  hint="Isolate the $y$-term first, then divide both sides by its coefficient."
 >}}
 
 ## Use formulas to solve geometry applications
@@ -183,12 +192,12 @@ one-half the base times the height. We can write this as
 $A=\tfrac{1}{2}bh$, where $b=$ length of the base and $h=$ height.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A triangle with horizontal base b and a perpendicular height h drawn from the top vertex to the base." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 177" width="252" height="177" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A triangle with horizontal base b and a dashed perpendicular height h drawn from the top vertex to the base." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 177" width="252" height="177" font-family="Helvetica, Arial, sans-serif">
   <line x1="36" y1="141" x2="216" y2="141" stroke="currentColor" stroke-width="1.5"/>
   <text x="126" y="163" text-anchor="middle" font-size="13" fill="currentColor">b</text>
   <line x1="216" y1="141" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <line x1="156" y1="36" x2="36" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="156" y2="141" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="156" y1="36" x2="156" y2="141" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
   <text x="168" y="92.5" text-anchor="start" font-size="13" fill="currentColor">h</text>
   <path d="M 146 141 L 146 131 L 156 131" fill="none" stroke="currentColor" stroke-width="1.2"/>
 </svg>
@@ -210,17 +219,19 @@ is 18 inches. What is the height?
 7. **Answer:** The height of the triangle is 14 inches.
 
 {{< fillin
-  question="The area of a triangular church window is 90 square meters. The base of the window is 15 meters. What is the window's height?"
+  question="The area of a triangular church window is 90 square meters. The base of the window is 15 meters. What is the window's height, in meters?"
   answer="12"
+  answerForm="decimal"
   answerDisplay="12 meters"
-  hint="Use $A=\tfrac{1}{2}bh$ and substitute $A=90$ and $b=15$."
+  hint="Substitute the area and the base into $A=\tfrac{1}{2}bh$, then solve for $h$."
 >}}
 
 {{< fillin
-  question="A triangular tent door has an area of 15 square feet. The height is five feet. What is the length of the base?"
+  question="A triangular tent door has an area of 15 square feet. The height is five feet. What is the length of the base, in feet?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="6 feet"
-  hint="Use $A=\tfrac{1}{2}bh$ and substitute $A=15$ and $h=5$."
+  hint="Substitute the area and the height into $A=\tfrac{1}{2}bh$, then solve for $b$."
 >}}
 
 In the next example, we will work with a right triangle. To solve for the
@@ -249,17 +260,19 @@ than the measure of the smallest angle. Find the measures of all three angles.
    $90^\circ$.
 
 {{< fillin
-  question="The measure of one angle of a right triangle is 50 more than the measure of the smallest angle. Find the measures of all three angles, separated by commas from least to greatest."
+  question="The measure of one angle of a right triangle is 50 more than the measure of the smallest angle. Find the measures of all three angles, in degrees, separated by commas from least to greatest."
   answer="20,70,90"
+  answerForm="decimal"
   answerDisplay="$20^\circ, 70^\circ, 90^\circ$"
-  hint="Let the smallest angle be $a$. Then $a+(a+50)+90=180$."
+  hint="Name the smallest angle, write the other two angles in terms of it, and use the fact that the angles of a triangle sum to $180^\circ$."
 >}}
 
 {{< fillin
-  question="The measure of one angle of a right triangle is 30 more than the measure of the smallest angle. Find the measures of all three angles, separated by commas from least to greatest."
+  question="The measure of one angle of a right triangle is 30 more than the measure of the smallest angle. Find the measures of all three angles, in degrees, separated by commas from least to greatest."
   answer="30,60,90"
+  answerForm="decimal"
   answerDisplay="$30^\circ, 60^\circ, 90^\circ$"
-  hint="Let the smallest angle be $a$. Then $a+(a+30)+90=180$."
+  hint="Name the smallest angle, write the other two angles in terms of it, and use the fact that the angles of a triangle sum to $180^\circ$."
 >}}
 
 The next example uses another important geometry formula. The **Pythagorean
@@ -280,13 +293,13 @@ We will use the Pythagorean Theorem in the next example.
 the right triangle whose leg is 12 and whose hypotenuse is 13.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A right triangle with one leg 12, the hypotenuse 13, and the other leg a." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 222" width="282" height="222" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="186" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="115" text-anchor="end" font-size="13" fill="currentColor">a</text>
+<svg role="img" aria-label="A right triangle with one leg 12, the hypotenuse 13, and the other leg a." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 160" width="282" height="160" font-family="Helvetica, Arial, sans-serif">
+  <line x1="36" y1="123.5" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="24" y="84" text-anchor="end" font-size="13" fill="currentColor">a</text>
   <line x1="36" y1="36" x2="246" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <text x="141" y="22" text-anchor="middle" font-size="13" fill="currentColor">12</text>
-  <line x1="246" y1="36" x2="36" y2="186" stroke="currentColor" stroke-width="1.5"/>
-  <text x="148" y="130.8" text-anchor="start" font-size="13" fill="currentColor">13</text>
+  <line x1="246" y1="36" x2="36" y2="123.5" stroke="currentColor" stroke-width="1.5"/>
+  <text x="146" y="101" text-anchor="start" font-size="13" fill="currentColor">13</text>
   <path d="M 36 46 L 46 46 L 46 36" fill="none" stroke="currentColor" stroke-width="1.2"/>
 </svg>
 </div>
@@ -316,17 +329,19 @@ $$
 7. **Answer:** The length of the leg is 5.
 
 {{< fillin
-  question="Use the Pythagorean Theorem to find the length of the leg of a right triangle with one leg 15 and hypotenuse 17."
+  question="Use the Pythagorean Theorem to find the length of the other leg of a right triangle with one leg 15 and hypotenuse 17."
   answer="8"
+  answerForm="decimal"
   answerDisplay="8"
-  hint="Let the missing leg be $b$ and solve $15^2+b^2=17^2$."
+  hint="Substitute the known leg and the hypotenuse into $a^2+b^2=c^2$, then solve for the missing leg."
 >}}
 
 {{< fillin
-  question="Use the Pythagorean Theorem to find the length of the leg of a right triangle with one leg 9 and hypotenuse 15."
+  question="Use the Pythagorean Theorem to find the length of the other leg of a right triangle with one leg 9 and hypotenuse 15."
   answer="12"
+  answerForm="decimal"
   answerDisplay="12"
-  hint="Let the missing leg be $b$ and solve $b^2+9^2=15^2$."
+  hint="Substitute the known leg and the hypotenuse into $a^2+b^2=c^2$, then solve for the missing leg."
 >}}
 
 The next example is about the perimeter of a rectangle. Since the perimeter is
@@ -365,17 +380,19 @@ $$
 7. **Answer:** The length is 34 cm and the width is 14 cm.
 
 {{< fillin
-  question="The length of a rectangle is seven more than twice the width. The perimeter is 110 inches. Find the length and width, separated by commas."
+  question="The length of a rectangle is seven more than twice the width. The perimeter is 110 inches. Find the length and width, in inches. Enter the length first, then the width, separated by a comma."
   answer="39,16"
+  answerForm="decimal"
   answerDisplay="39 inches, 16 inches"
-  hint="Let $W$ be the width, so $L=2W+7$, and substitute into $110=2L+2W$."
+  hint="Write the length in terms of the width, substitute into $P=2L+2W$, and solve for the width first."
 >}}
 
 {{< fillin
-  question="The width of a rectangle is eight yards less than twice the length. The perimeter is 86 yards. Find the length and width, separated by commas."
+  question="The width of a rectangle is eight yards less than twice the length. The perimeter is 86 yards. Find the length and width, in yards. Enter the length first, then the width, separated by a comma."
   answer="17,26"
+  answerForm="decimal"
   answerDisplay="17 yards, 26 yards"
-  hint="Let $L$ be the length, so $W=2L-8$, and substitute into $86=2L+2W$."
+  hint="Write the width in terms of the length, substitute into $P=2L+2W$, and solve for the length first."
 >}}
 
 The next example is about the perimeter of a triangle. Since the perimeter is
@@ -405,17 +422,19 @@ inches. Find the length of the three sides of the triangle.
    inches.
 
 {{< fillin
-  question="One side of a triangle is seven inches more than the first side. The third side is four inches less than three times the first. The perimeter is 28 inches. Find the lengths of the three sides, separated by commas from least to greatest."
+  question="One side of a triangle is seven inches more than the first side. The third side is four inches less than three times the first. The perimeter is 28 inches. Find the lengths of the three sides, in inches, separated by commas from least to greatest."
   answer="5,11,12"
+  answerForm="decimal"
   answerDisplay="5 inches, 11 inches, 12 inches"
-  hint="Let the first side be $x$. Solve $x+(x+7)+(3x-4)=28$."
+  hint="Write the second and third sides in terms of the first side, then set the sum of the three sides equal to the perimeter."
 >}}
 
 {{< fillin
-  question="One side of a triangle is three feet less than the first side. The third side is five feet less than twice the first. The perimeter is 20 feet. Find the lengths of the three sides, separated by commas from least to greatest."
+  question="One side of a triangle is three feet less than the first side. The third side is five feet less than twice the first. The perimeter is 20 feet. Find the lengths of the three sides, in feet, separated by commas from least to greatest."
   answer="4,7,9"
+  answerForm="decimal"
   answerDisplay="4 feet, 7 feet, 9 feet"
-  hint="Let the first side be $x$. Solve $x+(x-3)+(2x-5)=20$."
+  hint="Write the second and third sides in terms of the first side, then set the sum of the three sides equal to the perimeter."
 >}}
 
 **Example.** The perimeter of a rectangular soccer field is 360 feet. The
@@ -429,6 +448,21 @@ length is 40 feet more than the width. Find the length and width.
 3. **Name.** Choose a variable to represent it. The length is 40 feet more than
    the width. Draw the figure and label it with the given information. Let
    $w=$ width and $w+40=$ length; perimeter $=360$ feet.
+
+<div class="ap-figure">
+<svg role="img" aria-label="A rectangle for the soccer field with each width labeled w, each length labeled w plus 40, and the words Perimeter = 360 feet inside." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 192" width="282" height="192" font-family="Helvetica, Arial, sans-serif">
+  <line x1="36" y1="156" x2="246" y2="156" stroke="currentColor" stroke-width="1.5"/>
+  <text x="141" y="178" text-anchor="middle" font-size="13" fill="currentColor">w+40</text>
+  <line x1="246" y1="156" x2="246" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="258" y="100" text-anchor="start" font-size="13" fill="currentColor">w</text>
+  <line x1="246" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="141" y="22" text-anchor="middle" font-size="13" fill="currentColor">w+40</text>
+  <line x1="36" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
+  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">w</text>
+  <text x="141" y="100" text-anchor="middle" font-size="13" fill="currentColor">Perimeter = 360 feet</text>
+</svg>
+</div>
+
 4. **Translate.** Write the appropriate formula and substitute:
    $P=2L+2W$ and $360=2(w+40)+2w$.
 5. **Solve** the equation: $360=2w+80+2w$, $360=4w+80$, $280=4w$, and
@@ -438,31 +472,20 @@ length is 40 feet more than the width. Find the length and width.
 7. **Answer:** The length of the soccer field is 110 feet and the width is 70
    feet.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangular soccer field with width w, length w plus 40, and perimeter 360 feet." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 192" width="282" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="246" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="178" text-anchor="middle" font-size="13" fill="currentColor">w+40</text>
-  <line x1="246" y1="156" x2="246" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="258" y="100" text-anchor="start" font-size="13" fill="currentColor">w</text>
-  <line x1="246" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="22" text-anchor="middle" font-size="13" fill="currentColor">w+40</text>
-  <line x1="36" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">w</text>
-</svg>
-</div>
-
 {{< fillin
-  question="The perimeter of a rectangular swimming pool is 200 feet. The length is 40 feet more than the width. Find the length and width, separated by commas."
+  question="The perimeter of a rectangular swimming pool is 200 feet. The length is 40 feet more than the width. Find the length and width, in feet. Enter the length first, then the width, separated by a comma."
   answer="70,30"
+  answerForm="decimal"
   answerDisplay="70 feet, 30 feet"
-  hint="Let $w$ be the width, so the length is $w+40$. Substitute into $200=2L+2W$."
+  hint="Write the length in terms of the width, substitute into $P=2L+2W$, and solve for the width first."
 >}}
 
 {{< fillin
-  question="The length of a rectangular garden is 30 yards more than the width. The perimeter is 300 yards. Find the length and width, separated by commas."
+  question="The length of a rectangular garden is 30 yards more than the width. The perimeter is 300 yards. Find the length and width, in yards. Enter the length first, then the width, separated by a comma."
   answer="90,60"
+  answerForm="decimal"
   answerDisplay="90 yards, 60 yards"
-  hint="Let $w$ be the width, so the length is $w+30$. Substitute into $300=2L+2W$."
+  hint="Write the length in terms of the width, substitute into $P=2L+2W$, and solve for the width first."
 >}}
 
 Applications of these geometric properties can be found in many everyday
@@ -513,17 +536,19 @@ $$
    from the corner.
 
 {{< fillin
-  question="John puts the base of a 13-foot ladder five feet from the wall of his house. How far up the wall does the ladder reach?"
+  question="John puts the base of a 13-foot ladder five feet from the wall of his house. How far up the wall does the ladder reach, in feet?"
   answer="12"
+  answerForm="decimal"
   answerDisplay="12 feet"
-  hint="The ladder is the hypotenuse. Solve $5^2+h^2=13^2$."
+  hint="The ladder is the hypotenuse; substitute into $a^2+b^2=c^2$ and solve for the missing leg."
 >}}
 
 {{< fillin
-  question="Randy wants to attach a 17-foot string of lights to the top of the 15-foot mast of his sailboat. How far from the base of the mast should he attach the end of the light string?"
+  question="Randy wants to attach a 17-foot string of lights to the top of the 15-foot mast of his sailboat. How far from the base of the mast should he attach the end of the light string, in feet?"
   answer="8"
+  answerForm="decimal"
   answerDisplay="8 feet"
-  hint="The string is the hypotenuse. Solve $15^2+b^2=17^2$."
+  hint="The string of lights is the hypotenuse; substitute into $a^2+b^2=c^2$ and solve for the missing leg."
 >}}
 
 ## Key terms
@@ -535,63 +560,71 @@ Pythagorean Theorem.
 ### Solve a formula for a specific variable
 
 {{< fillin
-  question="Solve the formula $C=\pi d$ for $d$."
-  answer="\frac{C}{\pi}"
+  question="Solve the formula $C=\pi d$ for $d$. Enter your answer as d = ___ (an expression in $C$)."
+  answer="d=\frac{C}{\pi}"
+  answerForm="solved:d"
   answerDisplay="$d = \tfrac{C}{\pi}$"
-  hint="Divide both sides by $\pi$."
+  hint="Treat $\pi$ like any other coefficient of $d$."
 >}}
 
 {{< fillin
-  question="Solve the formula $V=LWH$ for $L$."
-  answer="\frac{V}{WH}"
+  question="Solve the formula $V=LWH$ for $L$. Enter your answer as L = ___ (an expression in $V$, $W$, and $H$)."
+  answer="L=\frac{V}{WH}"
+  answerForm="solved:L"
   answerDisplay="$L = \tfrac{V}{WH}$"
-  hint="Divide both sides by $WH$."
+  hint="Divide both sides by everything that multiplies $L$."
 >}}
 
 {{< fillin
-  question="Solve the formula $A=\tfrac{1}{2}pl+B$ for $p$."
-  answer="\frac{2A-2B}{l}"
+  question="Solve the formula $A=\tfrac{1}{2}pl+B$ for $p$. Enter your answer as p = ___ (an expression in $A$, $B$, and $l$)."
+  answer="p=\frac{2A-2B}{l}"
+  answerForm="solved:p"
   answerDisplay="$p = \tfrac{2A-2B}{l}$"
-  hint="Subtract $B$ from both sides, multiply by 2, and then divide by $l$."
+  hint="Isolate the $p$-term first, clear its fraction, then divide both sides by the other variable multiplying $p$."
 >}}
 
 {{< fillin
-  question="Solve the formula $4x+3y=7$ for $y$."
-  answer="\frac{7-4x}{3}"
+  question="Solve the formula $4x+3y=7$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{7-4x}{3}"
+  answerForm="solved:y"
   answerDisplay="$y = \tfrac{7-4x}{3}$"
-  hint="Subtract $4x$ from both sides, then divide by 3."
+  hint="Isolate the $y$-term first, then divide both sides by its coefficient."
 >}}
 
 ### Use formulas to solve geometry applications
 
 {{< fillin
-  question="A triangular flag has an area of 0.75 square feet and a height of 1.5 feet. What is its base?"
+  question="A triangular flag has an area of 0.75 square feet and a height of 1.5 feet. What is its base, in feet?"
   answer="1"
+  answerForm="decimal"
   answerDisplay="1 foot"
-  hint="Use $A=\tfrac{1}{2}bh$ and substitute $A=0.75$ and $h=1.5$."
+  hint="Substitute the area and the height into $A=\tfrac{1}{2}bh$, then solve for $b$."
 >}}
 
 {{< fillin
-  question="The two smaller angles of a right triangle have equal measures. Find the measures of all three angles, separated by commas from least to greatest."
+  question="The two smaller angles of a right triangle have equal measures. Find the measures of all three angles, in degrees, separated by commas from least to greatest."
   answer="45,45,90"
+  answerForm="decimal"
   answerDisplay="$45^\circ, 45^\circ, 90^\circ$"
-  hint="A right angle is $90^\circ$; the other two angles are equal and sum to $90^\circ$."
+  hint="Name one of the equal angles, write all three angles in terms of it, and use the fact that the angles of a triangle sum to $180^\circ$."
 >}}
 
 {{< fillin
-  question="The width of a rectangle is 0.7 meters less than the length. The perimeter of the rectangle is 52.6 meters. Find the length and width, separated by commas."
+  question="The width of a rectangle is 0.7 meters less than the length. The perimeter of the rectangle is 52.6 meters. Find the length and width, in meters. Enter the length first, then the width, separated by a comma."
   answer="13.5,12.8"
+  answerForm="decimal"
   answerDisplay="13.5 meters, 12.8 meters"
-  hint="Let $L$ be the length and $W=L-0.7$. Substitute into $52.6=2L+2W$."
+  hint="Write the width in terms of the length, substitute into $P=2L+2W$, and solve for the length first."
 >}}
 
 {{< fillin
-  question="A 13-foot string of lights is attached to the top of a 12-foot pole. How far from the base of the pole should the end of the string be anchored?"
-  answer="5"
-  answerDisplay="5 feet"
-  hint="The string of lights is the hypotenuse. Solve $12^2+d^2=13^2$."
+  question="Chi is planning to put a diagonal path of paving stones through her flower garden. The flower garden is a square with side 10 feet. What will the length of the path be, in feet, to the nearest tenth of a foot?"
+  answer="14.1"
+  answerForm="decimal"
+  answerDisplay="14.1 feet"
+  hint="The path is the hypotenuse of a right triangle whose legs are two sides of the square; use $a^2+b^2=c^2$, then round the square root."
 >}}
 
 ---
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.3](https://openstax.org/books/intermediate-algebra-2e/pages/2-3-solve-a-formula-for-a-specific-variable), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the section to this site's format, converted Try It exercises into interactive checks, and added a section-final Practice block adapted from selected end-of-section exercises.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.3](https://openstax.org/books/intermediate-algebra-2e/pages/2-3-solve-a-formula-for-a-specific-variable), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the section to this site's format, converted Try It exercises into interactive checks, stated in the question the side lengths the source shows in the figures of the two "find the length of the leg" Try Its, corrected three slips in the source wording ("write is as," "if wants," "1.5 foot"), and added a section-final Practice block adapted from selected end-of-section exercises.</small>

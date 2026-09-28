@@ -83,13 +83,15 @@ than twice the number of last season. Twice 25 is 50 and 12 more than that is
 {{< fillin
   question="Guillermo bought textbooks and notebooks at the bookstore. The number of textbooks was three more than twice the number of notebooks. He bought seven textbooks. How many notebooks did he buy?"
   answer="2"
-  hint="Let n be the number of notebooks. Translate the information as $7=2n+3$."
+  answerForm="decimal"
+  hint="Let $n =$ the number of notebooks. Write 'three more than twice the number of notebooks' in terms of $n$, set it equal to the number of textbooks, and solve."
 >}}
 
 {{< fillin
   question="Gerry worked Sudoku puzzles and crossword puzzles this week. The number of Sudoku puzzles he completed is eight more than twice the number of crossword puzzles. He completed 22 Sudoku puzzles. How many crossword puzzles did he do?"
   answer="7"
-  hint="Let c be the number of crossword puzzles. Translate the information as $22=2c+8$."
+  answerForm="decimal"
+  hint="Let $c =$ the number of crossword puzzles. Write 'eight more than twice the number of crossword puzzles' in terms of $c$, set it equal to the number of Sudoku puzzles, and solve."
 >}}
 
 We summarize an effective strategy for problem solving.
@@ -151,13 +153,15 @@ need.
 {{< fillin
   question="The sum of four times a number and two is fourteen. Find the number."
   answer="3"
-  hint="Translate the sentence as $4n+2=14$."
+  answerForm="decimal"
+  hint="Let $n =$ the number. Write 'the sum of four times a number and two' in terms of $n$, set it equal to fourteen, and undo the addition before the multiplication."
 >}}
 
 {{< fillin
   question="The sum of three times a number and seven is twenty-five. Find the number."
   answer="6"
-  hint="Translate the sentence as $3n+7=25$."
+  answerForm="decimal"
+  hint="Let $n =$ the number. Write 'the sum of three times a number and seven' in terms of $n$, set it equal to twenty-five, and undo the addition before the multiplication."
 >}}
 
 Some number word problems ask us to find two or more numbers. It may be
@@ -184,7 +188,7 @@ $$
 & n+n-9 &=& -15 \\[4pt]
 \text{Combine like terms.} & 2n-9 &=& -15 \\[4pt]
 \text{Add nine to each side and simplify.} & 2n &=& -6 \\[4pt]
-\text{Simplify.} & n &=& -3 \quad \text{1st number} \\[4pt]
+\text{Divide each side by two.} & n &=& -3 \quad \text{1st number} \\[4pt]
 &&& n-9 \quad \text{2nd number} \\[4pt]
 &&& -3-9 \\[4pt]
 &&& -12
@@ -197,15 +201,17 @@ Is their sum $-15$? $-3+(-12)=-15\checkmark$.
 **Step 7. Answer the question.** The numbers are $-3$ and $-12$.
 
 {{< fillin
-  question="The sum of two numbers is negative twenty-three. One number is seven less than the other. Find the smaller number."
-  answer="-15"
-  hint="Let n be the larger number and $n-7$ the smaller number. Their sum is $n+n-7=-23$."
+  question="The sum of two numbers is negative twenty-three. One number is seven less than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-15,-8"
+  answerForm="decimal"
+  hint="Let $n =$ the first number and write the one that is seven less in terms of $n$. Set the sum of the two expressions equal to negative twenty-three, solve for $n$, then find the second number."
 >}}
 
 {{< fillin
-  question="The sum of two numbers is negative eighteen. One number is forty more than the other. Find the smaller number."
-  answer="-29"
-  hint="Let n be the smaller number and $n+40$ the larger number. Their sum is $n+n+40=-18$."
+  question="The sum of two numbers is negative eighteen. One number is forty more than the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="-29,11"
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the one that is forty more in terms of $n$. Set the sum of the two expressions equal to negative eighteen, solve for $n$, then find the other number."
 >}}
 
 Some number problems involve **consecutive integers**. Consecutive integers
@@ -264,15 +270,17 @@ $$
 $-18$, and $-19$.
 
 {{< fillin
-  question="Find three consecutive integers whose sum is -96. Enter the smallest integer."
-  answer="-33"
-  hint="Let the integers be n, $n+1$, and $n+2$."
+  question="Find three consecutive integers whose sum is $-96$. Enter all three separated by commas, smallest first."
+  answer="-33,-32,-31"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $-96$, solve for $n$, then find the other two."
 >}}
 
 {{< fillin
-  question="Find three consecutive integers whose sum is -36. Enter the smallest integer."
-  answer="-13"
-  hint="Let the integers be n, $n+1$, and $n+2$."
+  question="Find three consecutive integers whose sum is $-36$. Enter all three separated by commas, smallest first."
+  answer="-13,-12,-11"
+  answerForm="decimal"
+  hint="Let $n =$ the first integer and write the next two consecutive integers in terms of $n$. Set the sum of all three equal to $-36$, solve for $n$, then find the other two."
 >}}
 
 Now that we have worked with consecutive integers, we will expand our work to
@@ -348,15 +356,17 @@ $$
 and 42.
 
 {{< fillin
-  question="Find three consecutive even integers whose sum is 102. Enter the smallest integer."
-  answer="32"
-  hint="Let the integers be n, $n+2$, and $n+4$."
+  question="Find three consecutive even integers whose sum is 102. Enter all three separated by commas, smallest first."
+  answer="32,34,36"
+  answerForm="decimal"
+  hint="Let $n =$ the first even integer and write the next two consecutive even integers in terms of $n$. Set the sum of all three equal to 102, solve for $n$, then find the other two."
 >}}
 
 {{< fillin
-  question="Find three consecutive even integers whose sum is -24. Enter the smallest integer."
-  answer="-10"
-  hint="Let the integers be n, $n+2$, and $n+4$."
+  question="Find three consecutive even integers whose sum is $-24$. Enter all three separated by commas, smallest first."
+  answer="-10,-8,-6"
+  answerForm="decimal"
+  hint="Let $n =$ the first even integer and write the next two consecutive even integers in terms of $n$. Set the sum of all three equal to $-24$, solve for $n$, then find the other two."
 >}}
 
 When a number problem is in a real life context, we still use the same
@@ -395,15 +405,17 @@ is that \$110,000? Yes!
 {{< fillin
   question="According to the National Automobile Dealers Association, the average cost of a car in 2014 was \$28,400. This was \$1,600 less than six times the cost in 1975. What was the average cost of a car in 1975, in dollars?"
   answer="5000"
+  answerForm="decimal"
   answerDisplay="\$5,000"
-  hint="Let c be the 1975 cost. Translate the information as $28{,}400=6c-1{,}600$."
+  hint="Let $c =$ the cost in 1975. Write '\$1,600 less than six times the cost in 1975' in terms of $c$, set it equal to the 2014 cost, and solve."
 >}}
 
 {{< fillin
   question="US Census data shows that the median price of new home in the U.S. in November 2014 was \$280,900. This was \$10,700 more than 14 times the price in November 1964. What was the median price of a new home in November 1964, in dollars?"
   answer="19300"
+  answerForm="decimal"
   answerDisplay="\$19,300"
-  hint="Let p be the 1964 price. Translate the information as $280{,}900=14p+10{,}700$."
+  hint="Let $p =$ the median price in November 1964. Write '\$10,700 more than 14 times the price in November 1964' in terms of $p$, set it equal to the 2014 price, and solve."
 >}}
 
 ## Solve Percent Applications
@@ -422,6 +434,20 @@ $$n=0.45\cdot84=37.8$$
 
 37.8 is 45% of 84.
 
+{{< fillin
+  question="Translate and solve: What number is 45% of 80?"
+  answer="36"
+  answerForm="decimal"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
+>}}
+
+{{< fillin
+  question="Translate and solve: What number is 55% of 60?"
+  answer="33"
+  answerForm="decimal"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
+>}}
+
 **(b)** 8.5% of what amount is \$4.76? Translate. Let $n =$ the amount.
 
 $$
@@ -432,6 +458,22 @@ n &=& 56
 $$
 
 8.5% of \$56 is \$4.76.
+
+{{< fillin
+  question="Translate and solve: 7.5% of what amount is \$1.95? Give the amount in dollars."
+  answer="26"
+  answerForm="decimal"
+  answerDisplay="\$26"
+  hint="Let $n$ be the amount, change the percent to a decimal, translate *of* as multiplication and *is* as $=$, then divide both sides by the decimal."
+>}}
+
+{{< fillin
+  question="Translate and solve: 8.5% of what amount is \$3.06? Give the amount in dollars."
+  answer="36"
+  answerForm="decimal"
+  answerDisplay="\$36"
+  hint="Let $n$ be the amount, change the percent to a decimal, translate *of* as multiplication and *is* as $=$, then divide both sides by the decimal."
+>}}
 
 **(c)** 168 is what percent of 112? We are asked to find percent, so we must
 have our result in percent form. Translate into algebra. Let $p =$ the
@@ -449,15 +491,19 @@ $$
 168 is 150% of 112.
 
 {{< fillin
-  question="What number is 45% of 80?"
-  answer="36"
-  hint="Change 45% to 0.45 and multiply it by 80."
+  question="Translate and solve: 110 is what percent of 88? Enter the percent, including the $\%$ sign."
+  answer="125\%"
+  answerForm="percent"
+  answerDisplay="125%"
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the number after *of*, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="What number is 55% of 60?"
-  answer="33"
-  hint="Change 55% to 0.55 and multiply it by 60."
+  question="Translate and solve: 126 is what percent of 72? Enter the percent, including the $\%$ sign."
+  answer="175\%"
+  answerForm="percent"
+  answerDisplay="175%"
+  hint="Let $p$ be the percent, translate *is* as $=$ and *of* as multiplication, divide both sides by the number after *of*, then write the decimal as a percent."
 >}}
 
 Now that we have a problem solving strategy to refer to, and have practiced
@@ -483,13 +529,17 @@ is about $\tfrac14$ of 50. The amount of protein that is recommended is 50 g.
 {{< fillin
   question="One serving of wheat square cereal has 7 grams of fiber, which is 28% of the recommended daily amount. What is the total recommended daily amount of fiber, in grams?"
   answer="25"
-  hint="Let a be the total amount. Translate the information as $7=0.28a$."
+  answerForm="decimal"
+  answerDisplay="25 grams"
+  hint="Let $a =$ the total amount. Write a sentence saying the amount in one serving is a percent of the total amount, translate it, and divide both sides by the percent written as a decimal."
 >}}
 
 {{< fillin
   question="One serving of rice cereal has 190 mg of sodium, which is 8% of the recommended daily amount. What is the total recommended daily amount of sodium, in milligrams?"
   answer="2375"
-  hint="Let a be the total amount. Translate the information as $190=0.08a$."
+  answerForm="decimal"
+  answerDisplay="2,375 mg"
+  hint="Let $a =$ the total amount. Write a sentence saying the amount in one serving is a percent of the total amount, translate it, and divide both sides by the percent written as a decimal."
 >}}
 
 Remember to put the answer in the form requested. In the next example we are
@@ -510,19 +560,19 @@ Check: does this make sense? Yes, 25% is one-fourth; 60 is one-fourth of 240.
 So, 25% makes sense. Of the total calories in each muffin, 25% is fat.
 
 {{< fillin
-  question="Mitzi received some gourmet brownies as a gift. The wrapper said each brownie was 480 calories, and had 240 calories of fat. What percent of the total calories in each brownie comes from fat? Round the answer to the nearest whole percent."
+  question="Mitzi received some gourmet brownies as a gift. The wrapper said each brownie was 480 calories, and had 240 calories of fat. What percent of the total calories in each brownie comes from fat? Round the answer to the nearest whole percent. Enter the percent, including the $\%$ sign."
   answer="50\%"
   answerForm="percent"
   answerDisplay="50%"
-  hint="Divide the calories from fat by the total calories, then change the decimal to a percent."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, write the decimal as a percent, and round."
 >}}
 
 {{< fillin
-  question="The mix Ricardo plans to use to make brownies says that each brownie will be 190 calories, and 76 calories are from fat. What percent of the total calories are from fat? Round the answer to the nearest whole percent."
+  question="The mix Ricardo plans to use to make brownies says that each brownie will be 190 calories, and 76 calories are from fat. What percent of the total calories are from fat? Round the answer to the nearest whole percent. Enter the percent, including the $\%$ sign."
   answer="40\%"
   answerForm="percent"
   answerDisplay="40%"
-  hint="Divide the calories from fat by the total calories, then change the decimal to a percent."
+  hint="Ask what percent of the total calories the fat calories are: translate, divide both sides by the total calories, write the decimal as a percent, and round."
 >}}
 
 It is often important in many fields—business, sciences, pop culture—to talk
@@ -557,19 +607,19 @@ to round the division to the nearest thousandth in order to round the percent
 to the nearest tenth.
 
 {{< fillin
-  question="Find the percent change. Round to the nearest tenth of a percent. In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents."
+  question="Find the percent change. Round to the nearest tenth of a percent. In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents. Enter the percent, including the $\%$ sign."
   answer="8.8\%"
   answerForm="percent"
   answerDisplay="8.8%"
-  hint="Find the increase, then divide it by the original cost of 51 cents and change the result to a percent."
+  hint="Subtract the original amount from the new amount, then find what percent that change is of the original amount, rounding the division to the nearest thousandth."
 >}}
 
 {{< fillin
-  question="Find the percent change. Round to the nearest tenth of a percent. In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25."
+  question="Find the percent change. Round to the nearest tenth of a percent. In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25. Enter the percent, including the $\%$ sign."
   answer="50\%"
   answerForm="percent"
   answerDisplay="50%"
-  hint="Find the increase, then divide it by the original fare of 1.50 and change the result to a percent."
+  hint="Subtract the original amount from the new amount, then find what percent that change is of the original amount."
 >}}
 
 Applications of discount and mark-up are very common in retail settings.
@@ -590,7 +640,7 @@ multiply the mark-up rate by the original cost.
 
   $$\text{amount of discount}=\text{discount rate}\cdot\text{original price}$$
 
-  $$\text{sale price}=\text{original amount}-\text{discount price}$$
+  $$\text{sale price}=\text{original price}-\text{amount of discount}$$
 
   The sale price should always be less than the original price.
 {{< /callout >}}
@@ -598,7 +648,7 @@ multiply the mark-up rate by the original cost.
 {{< callout type="info" >}}
   **Mark-up.**
 
-  $$\text{amount of mark-up}=\text{mark-up rate}\cdot\text{original price}$$
+  $$\text{amount of mark-up}=\text{mark-up rate}\cdot\text{original cost}$$
 
   $$\text{list price}=\text{original cost}+\text{mark-up}$$
 
@@ -627,15 +677,36 @@ Check: Is the list price more than the original cost? Is \$1,050 more than
 {{< fillin
   question="Jim’s music store bought a guitar at original cost \$1,200. Jim marked the price up 50%. Find the amount of mark-up, in dollars."
   answer="600"
+  answerForm="decimal"
   answerDisplay="\$600"
-  hint="Multiply the original cost by the mark-up rate written as a decimal."
+  hint="Write the mark-up rate as a decimal, then multiply it by the original cost."
 >}}
+
+{{< fillin
+  question="Jim’s music store bought a guitar at original cost \$1,200. Jim marked the price up 50%. Find the list price, in dollars."
+  answer="1800"
+  answerForm="decimal"
+  answerDisplay="\$1,800"
+  hint="Find the amount of mark-up first, then add it to the original cost."
+>}}
+
+The steps are the same for any retailer: find the amount of mark-up first,
+then the list price.
 
 {{< fillin
   question="The Auto Resale Store bought Pablo’s Toyota for \$8,500. They marked the price up 35%. Find the amount of mark-up, in dollars."
   answer="2975"
+  answerForm="decimal"
   answerDisplay="\$2,975"
-  hint="Multiply the original cost by the mark-up rate written as a decimal."
+  hint="Write the mark-up rate as a decimal, then multiply it by the original cost."
+>}}
+
+{{< fillin
+  question="The Auto Resale Store bought Pablo’s Toyota for \$8,500. They marked the price up 35%. Find the list price, in dollars."
+  answer="11475"
+  answerForm="decimal"
+  answerDisplay="\$11,475"
+  hint="Find the amount of mark-up first, then add it to the original cost."
 >}}
 
 ## Solve Simple Interest Applications
@@ -687,15 +758,17 @@ interest is \$142.50.
 {{< fillin
   question="Nathaly deposited \$12,500 in her bank account where it will earn 4% simple interest. How much interest will Nathaly earn in five years, in dollars?"
   answer="2500"
+  answerForm="decimal"
   answerDisplay="\$2,500"
-  hint="Use $I=Prt$ with $P=12{,}500$, $r=0.04$, and $t=5$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I=Prt$."
 >}}
 
 {{< fillin
   question="Susana invested a principal of \$36,000 in her bank account that earned simple interest at an interest rate of 6.5%. How much interest did she earn in three years, in dollars?"
   answer="7020"
+  answerForm="decimal"
   answerDisplay="\$7,020"
-  hint="Use $I=Prt$ with $P=36{,}000$, $r=0.065$, and $t=3$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I=Prt$."
 >}}
 
 There may be times when we know the amount of interest earned on a given
@@ -723,19 +796,19 @@ Check: $I=Prt=(7{,}500)(0.04)(5)=1{,}500\checkmark$. The rate of interest
 was 4%.
 
 {{< fillin
-  question="Jim lent his sister \$5,000 to help her buy a house. In three years, she paid him the \$5,000, plus \$900 interest. What was the rate of simple interest, as a percent?"
+  question="Jim lent his sister \$5,000 to help her buy a house. In three years, she paid him the \$5,000, plus \$900 interest. What was the rate of simple interest? Enter the percent, including the $\%$ sign."
   answer="6\%"
   answerForm="percent"
   answerDisplay="6%"
-  hint="Use $I=Prt$ and solve $900=(5{,}000)r(3)$ for r, then change the decimal to a percent."
+  hint="Substitute the known values into $I=Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Loren lent his brother \$3,000 to help him buy a car. In four years, his brother paid him back the \$3,000 plus \$660 in interest. What was the rate of simple interest, as a percent?"
+  question="Loren lent his brother \$3,000 to help him buy a car. In four years, his brother paid him back the \$3,000 plus \$660 in interest. What was the rate of simple interest? Enter the percent, including the $\%$ sign."
   answer="5.5\%"
   answerForm="percent"
   answerDisplay="5.5%"
-  hint="Use $I=Prt$ and solve $660=(3{,}000)r(4)$ for r, then change the decimal to a percent."
+  hint="Substitute the known values into $I=Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 In the next example, we are asked to find the principal—the amount borrowed.
@@ -762,15 +835,17 @@ was \$11,450.
 {{< fillin
   question="Eduardo noticed that his new car loan papers stated that with a 7.5% simple interest rate, he would pay \$6,596.25 in interest over five years. How much did he borrow to pay for his car, in dollars?"
   answer="17590"
+  answerForm="decimal"
   answerDisplay="\$17,590"
-  hint="Use $I=Prt$ with $I=6{,}596.25$, $r=0.075$, and $t=5$, then solve for P."
+  hint="Substitute the interest, the rate as a decimal, and the time into $I=Prt$, multiply the rate by the time, and divide the interest by that product."
 >}}
 
 {{< fillin
   question="In five years, Gloria’s bank account earned \$2,400 interest at 5% simple interest. How much had she deposited in the account, in dollars?"
   answer="9600"
+  answerForm="decimal"
   answerDisplay="\$9,600"
-  hint="Use $I=Prt$ with $I=2{,}400$, $r=0.05$, and $t=5$, then solve for P."
+  hint="The amount deposited is the principal: substitute into $I=Prt$ and divide the interest by the product of the rate (as a decimal) and the time."
 >}}
 
 ## Key terms
@@ -793,15 +868,17 @@ interest** — interest computed according to $I=Prt$.
 ### Use a problem solving strategy for word problems
 
 {{< fillin
-  question="There are 16 girls in a school club. The number of girls is four more than twice the number of boys. How many boys are in the club?"
+  question="There are 16 girls in a school club. The number of girls is four more than twice the number of boys. Find the number of boys."
   answer="6"
-  hint="Let b be the number of boys. Translate the information as $16=2b+4$."
+  answerForm="decimal"
+  hint="Let $b =$ the number of boys. Write 'four more than twice the number of boys' in terms of $b$, set it equal to the number of girls, and solve."
 >}}
 
 {{< fillin
   question="Huong is organizing paperback and hardback books for her club’s used book sale. The number of paperbacks is 12 less than three times the number of hardbacks. Huong had 162 paperbacks. How many hardback books were there?"
   answer="58"
-  hint="Let h be the number of hardback books. Translate the information as $162=3h-12$."
+  answerForm="decimal"
+  hint="Let $h =$ the number of hardback books. Write '12 less than three times the number of hardbacks' in terms of $h$, set it equal to the number of paperbacks, and solve."
 >}}
 
 ### Solve number word problems
@@ -809,64 +886,71 @@ interest** — interest computed according to $I=Prt$.
 {{< fillin
   question="The difference of a number and 12 is three. Find the number."
   answer="15"
-  hint="Translate the sentence as $n-12=3$."
+  answerForm="decimal"
+  hint="Let $n =$ the number. Write 'the difference of a number and 12' in terms of $n$, set it equal to three, and undo the subtraction."
 >}}
 
 {{< fillin
   question="The sum of two numbers is 20. One number is four less than the other. Enter the smaller number, then the larger number, separated by a comma."
   answer="8,12"
-  hint="Let n be the larger number and $n-4$ the smaller number. Their sum is $n+n-4=20$."
+  answerForm="decimal"
+  hint="Let $n =$ one number and write the one that is four less in terms of $n$. Set the sum of the two expressions equal to 20, solve for $n$, then find the other number."
 >}}
 
 {{< fillin
-  question="Philip pays \$1,620 in rent every month. This amount is \$120 more than twice what his brother Paul pays for rent. How many dollars does Paul pay for rent?"
+  question="Philip pays \$1,620 in rent every month. This amount is \$120 more than twice what his brother Paul pays for rent. How much does Paul pay for rent, in dollars?"
   answer="750"
-  hint="Let p be Paul's rent. Translate the information as $1{,}620=2p+120$."
+  answerForm="decimal"
+  answerDisplay="\$750"
+  hint="Let $p =$ Paul's rent. Write '\$120 more than twice what Paul pays' in terms of $p$, set it equal to Philip's rent, and solve."
 >}}
 
 ### Solve percent applications
 
 {{< fillin
-  question="What number is 45% of 120?"
+  question="Translate and solve: What number is 45% of 120?"
   answer="54"
-  hint="Change 45% to 0.45 and multiply it by 120."
+  answerForm="decimal"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then multiply."
 >}}
 
 {{< fillin
-  question="81 is 75% of what number?"
+  question="Translate and solve: 81 is 75% of what number?"
   answer="108"
-  hint="Change 75% to 0.75 and divide 81 by it."
+  answerForm="decimal"
+  hint="Let $n$ be the number, change the percent to a decimal, translate *is* as $=$ and *of* as multiplication, then divide both sides by the decimal."
 >}}
 
 {{< fillin
-  question="What percent of 260 is 78?"
+  question="Translate and solve: What percent of 260 is 78? Enter the percent, including the $\%$ sign."
   answer="30\%"
   answerForm="percent"
   answerDisplay="30%"
-  hint="Divide 78 by 260, then change the decimal to a percent."
+  hint="Let $p$ be the percent, translate *of* as multiplication and *is* as $=$, divide both sides by the number after *of*, then write the decimal as a percent."
 >}}
 
 {{< fillin
-  question="Tamanika received a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent change."
+  question="Tamanika received a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent change. Enter the percent, including the $\%$ sign."
   answer="12\%"
   answerForm="percent"
   answerDisplay="12%"
-  hint="Find the increase, then divide it by the original wage of \$15.50 and change the result to a percent."
+  hint="Subtract the original amount from the new amount, then find what percent that change is of the original amount."
 >}}
 
 {{< fillin
   question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. Find the amount of discount, in dollars."
   answer="576"
+  answerForm="decimal"
   answerDisplay="\$576"
-  hint="Subtract the sale price from the original price."
+  hint="The discount is the part of the original price the buyer did not pay: compare the two prices."
 >}}
 
 {{< fillin
-  question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. Find the discount rate."
+  question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. Find the discount rate. Enter the percent, including the $\%$ sign."
   answer="30\%"
   answerForm="percent"
   answerDisplay="30%"
-  hint="Divide the amount of discount by the original price, then change the decimal to a percent."
+  hint="Find what percent the amount of discount is of the original price, then write the decimal as a percent."
 >}}
 
 ### Solve simple interest applications
@@ -874,25 +958,27 @@ interest** — interest computed according to $I=Prt$.
 {{< fillin
   question="Casey deposited \$1,450 in a bank account that earned simple interest at an interest rate of 4%. How much interest was earned in two years, in dollars?"
   answer="116"
+  answerForm="decimal"
   answerDisplay="\$116"
-  hint="Use $I=Prt$ with $P=1{,}450$, $r=0.04$, and $t=2$."
+  hint="Write the rate as a decimal, then multiply the principal, the rate, and the time in years: $I=Prt$."
 >}}
 
 {{< fillin
-  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of simple interest, as a percent?"
+  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of simple interest? Enter the percent, including the $\%$ sign."
   answer="3\%"
   answerForm="percent"
   answerDisplay="3%"
-  hint="Use $I=Prt$ and solve $1{,}200=(8{,}000)r(5)$ for r, then change the decimal to a percent."
+  hint="Substitute the known values into $I=Prt$, multiply the principal by the time, divide the interest by that product, and write the decimal as a percent."
 >}}
 
 {{< fillin
   question="Joshua’s computer loan statement said he would pay \$1,244.34 in simple interest for a three-year loan at 12.4%. How much did Joshua borrow to buy the computer, in dollars?"
   answer="3345"
+  answerForm="decimal"
   answerDisplay="\$3,345"
-  hint="Use $I=Prt$ with $I=1{,}244.34$, $r=0.124$, and $t=3$, then solve for P."
+  hint="Substitute the interest, the rate as a decimal, and the time into $I=Prt$, multiply the rate by the time, and divide the interest by that product."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 2.2: Use a Problem Solving Strategy](https://openstax.org/books/intermediate-algebra-2e/pages/2-2-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the source’s two-column worked-example tables as labeled steps, omitted the Be Prepared quiz, media link, and Self Check, converted the Try It problems into interactive exercises with instant feedback, and adapted selected end-of-section exercises into a section-final interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 2.2: Use a Problem Solving Strategy](https://openstax.org/books/intermediate-algebra-2e/pages/2-2-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the source’s two-column worked-example tables as labeled steps; labeled the division step of the two-numbers example “Divide each side by two” where the source prints “Simplify”; wrote the Discount box’s second formula as original price minus amount of discount (the source prints “original amount – discount price”) and the Mark-up box’s first formula with the original cost (the source prints “original price”, where its own prose and Key Concepts use original cost); omitted the Be Prepared quiz, media link, Key Concepts summary, and Self Check; added a Key terms list; converted the Try It problems into interactive exercises with instant feedback, one exercise per part of each multipart Try It, placing each part of the two percent-equation Try Its after the matching part of the worked example, and added the dollar sign the source omits from the 2008 bus fare; and adapted selected end-of-section exercises into a section-final interactive Practice block.</small>

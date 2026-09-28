@@ -47,7 +47,7 @@ $$
 \text{Combine to one fraction.} & (x+\tfrac{b}{2a})^2 &=& \tfrac{b^2-4ac}{4a^2} \\[10pt]
 \text{Use the square root property.} & x+\tfrac{b}{2a} &=& \pm\sqrt{\tfrac{b^2-4ac}{4a^2}} \\[10pt]
 \text{Simplify.} & x+\tfrac{b}{2a} &=& \pm\tfrac{\sqrt{b^2-4ac}}{2a} \\[10pt]
-\text{Add }-\tfrac{b}{2a}\text{ to both sides.} & x &=& -\tfrac{b}{2a}\pm\tfrac{\sqrt{b^2-4ac}}{2a} \\[10pt]
+\text{Add }{-\tfrac{b}{2a}}\text{ to both sides.} & x &=& -\tfrac{b}{2a}\pm\tfrac{\sqrt{b^2-4ac}}{2a} \\[10pt]
 \text{Combine the terms on the right side.} & x &=& \tfrac{-b\pm\sqrt{b^2-4ac}}{2a}
 \end{array}
 $$
@@ -85,7 +85,7 @@ $2(-5)^2+9(-5)-5=0\ \checkmark$.
 {{< callout type="info" >}}
   **Solve a quadratic equation using the Quadratic Formula.**
 
-  1. Write the Quadratic Formula in standard form. Identify the $a$, $b$, and $c$ values.
+  1. Write the quadratic equation in standard form. Identify the $a$, $b$, and $c$ values.
   2. Write the Quadratic Formula. Then substitute in the values of $a$, $b$, and $c$.
   3. Simplify.
   4. Check the solutions.
@@ -97,9 +97,10 @@ start with “$x=$.”
 
 {{< fillin
   question="Solve $3y^2-5y+2=0$ by using the Quadratic Formula. Enter both solutions separated by commas, least to greatest."
-  answer="2/3, 1"
+  answer="\frac{2}{3},1"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac23,\ 1$"
-  hint="Identify $a=3$, $b=-5$, and $c=2$, then substitute into the formula."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify."
 >}}
 
 **Example 10.29.** Solve $x^2-6x+5=0$ by using the Quadratic Formula.
@@ -144,9 +145,10 @@ Check. We leave the check to you.
 
 {{< fillin
   question="Solve $2p^2+8p+5=0$ by using the Quadratic Formula. Enter both solutions separated by commas, least to greatest."
-  answer="(-4-\sqrt{6})/2, (-4+\sqrt{6})/2"
+  answer="\frac{-4-\sqrt{6}}{2},\frac{-4+\sqrt{6}}{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{-4-\sqrt6}{2},\ \tfrac{-4+\sqrt6}{2}$"
-  hint="Use $a=2$, $b=8$, and $c=5$ and simplify the radical."
+  hint="Identify $a$, $b$, and $c$ and substitute them into the Quadratic Formula; then simplify the radical and remove any common factor."
 >}}
 
 **Example 10.31.** Solve $2x^2+10x+11=0$ by using the Quadratic Formula.
@@ -188,10 +190,10 @@ $$
   hint="Evaluate $b^2-4ac$."
   answer="No real solution"
 >}}
-$a=2$
+$a=\tfrac{3\pm\sqrt{137}}{8}$
 No real solution
-$a=-2$
-Two real solutions
+$a=\tfrac{-3\pm\sqrt{137}}{8}$
+$a=\tfrac38$
 {{< /multiplechoice >}}
 
 The quadratic equations we have solved so far in this section were all written
@@ -219,7 +221,8 @@ Check. We leave the check to you.
 
 {{< fillin
   question="Solve $x(x+2)-5=0$ by using the Quadratic Formula. Enter both solutions separated by commas, least to greatest."
-  answer="-1-\sqrt{6}, -1+\sqrt{6}"
+  answer="-1-\sqrt{6},-1+\sqrt{6}"
+  answerForm="simplified-radical"
   answerDisplay="$-1-\sqrt6,\ -1+\sqrt6$"
   hint="First distribute and write the equation in standard form."
 >}}
@@ -253,7 +256,8 @@ Check. We leave the check to you.
 
 {{< fillin
   question="Solve $\tfrac14c^2-\tfrac13c=\tfrac1{12}$ by using the Quadratic Formula. Enter both solutions separated by commas, least to greatest."
-  answer="(2-\sqrt{7})/3, (2+\sqrt{7})/3"
+  answer="\frac{2-\sqrt{7}}{3},\frac{2+\sqrt{7}}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2-\sqrt7}{3},\ \tfrac{2+\sqrt7}{3}$"
   hint="Multiply both sides by the LCD, $12$, to clear the fractions."
 >}}
@@ -285,8 +289,9 @@ perfect square?
 {{< fillin
   question="Solve $r^2+10r+25=0$ by using the Quadratic Formula."
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$r=-5$"
-  hint="The discriminant is zero, so there is only one solution."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify."
 >}}
 
 ## Use the Discriminant to Predict the Number of Solutions of a Quadratic Equation
@@ -442,16 +447,18 @@ solutions.
   question="Solve $p^2-6p-27=0$ by using the Quadratic Formula. Enter both solutions, separated by a comma."
   answer="-3,9"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$p=-3$ or $p=9$"
-  hint="Identify $a=1$, $b=-6$, $c=-27$, then substitute into the Quadratic Formula."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify."
 >}}
 
 {{< fillin
   question="Solve $3u^2+7u-2=0$ by using the Quadratic Formula. Enter both solutions, separated by a comma."
-  answer="(-7-\sqrt{73})/6, (-7+\sqrt{73})/6"
+  answer="\frac{-7-\sqrt{73}}{6},\frac{-7+\sqrt{73}}{6}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{-7-\sqrt{73}}{6},\ \tfrac{-7+\sqrt{73}}{6}$"
-  hint="Substitute $a=3$, $b=7$, $c=-2$ into the formula; the discriminant, $73$, does not simplify."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify the radical if you can."
 >}}
 
 {{< multiplechoice
@@ -460,16 +467,17 @@ solutions.
   answer="No real solution"
 >}}
 $x=-\tfrac{3}{2}$
-$x=\tfrac{3}{2}$
-Two real solutions
+$x=-3,\ x=\tfrac{3}{2}$
+$x=3,\ x=-\tfrac{3}{2}$
 No real solution
 {{< /multiplechoice >}}
 
 {{< fillin
   question="Solve $16c^2+24c+9=0$ by using the Quadratic Formula."
-  answer="-3/4"
+  answer="-\frac{3}{4}"
+  answerForm="lowest-terms"
   answerDisplay="$c=-\tfrac{3}{4}$"
-  hint="This trinomial is a perfect square, so the discriminant is $0$ and there is only one solution."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify the fraction."
 >}}
 
 ### Use the discriminant to predict the number of solutions of a quadratic equation
@@ -538,7 +546,7 @@ Square Root Property
 
 {{< multiplechoice
   question="Identify the most appropriate method to use to solve $(y+5)^2=12$."
-  hint="The equation is already written as a squared quantity equal to a constant."
+  hint="Test the methods in order: does it factor easily, does it fit $ax^2=k$ or $a(x-h)^2=k$, and otherwise use the Quadratic Formula."
   answer="Square Root Property"
 >}}
 Quadratic Formula
@@ -548,7 +556,7 @@ Factoring
 
 {{< multiplechoice
   question="Identify the most appropriate method to use to solve $14m^2+3m=11$."
-  hint="Put the equation in standard form first; the coefficients make factoring impractical to spot quickly."
+  hint="Put the equation in standard form, then test the methods in order: does it factor easily, does it fit $ax^2=k$ or $a(x-h)^2=k$, and otherwise use the Quadratic Formula."
   answer="Quadratic Formula"
 >}}
 Factoring
@@ -558,4 +566,4 @@ Quadratic Formula
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.3](https://openstax.org/books/elementary-algebra-2e/pages/10-3-solve-quadratic-equations-using-the-quadratic-formula) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.3](https://openstax.org/books/elementary-algebra-2e/pages/10-3-solve-quadratic-equations-using-the-quadratic-formula) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; corrected the first step of the Quadratic Formula procedure to “Write the quadratic equation in standard form” (the source prints “Write the Quadratic Formula in standard form”); and wrote the substitution in Example 10.36(a) as (−3)², where the source prints (3)² for b = −3.</small>

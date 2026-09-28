@@ -137,6 +137,7 @@ inequality includes the equal sign, so the graph shows $y \geq 2x - 1$.
 {{< fillin
   question="Write the inequality shown by the graph with the boundary line $y = -2x + 3$. Enter it solved for $y$, as the boundary line is written."
   answer="y\geq-2x+3"
+  answerForm="solved:y"
   answerDisplay="$y \geq -2x + 3$"
   hint="Test a point that is not on the line, such as $(0, 0)$, to see which inequality describes the shaded side; then use the line's style — solid or dashed — to decide whether the equal sign is included."
 >}}
@@ -299,6 +300,7 @@ no
 {{< fillin
   question="Write the inequality shown by the graph with the boundary line $y=-\tfrac{1}{3}x-2$. Enter it solved for $y$, as the boundary line is written."
   answer="y\leq-\frac{1}{3}x-2"
+  answerForm="solved:y"
   answerDisplay="$y\leq-\tfrac{1}{3}x-2$"
   hint="Test a point in the shaded region to choose the inequality direction, then use the line's style — solid or dashed — to decide whether the equal sign is included."
 >}}
@@ -320,6 +322,7 @@ no
 {{< fillin
   question="Write the inequality shown by the shaded region in the graph with the boundary line $x+y=3$. Keep $x+y$ on the left side, as the boundary line is written."
   answer="x+y\geq3"
+  answerForm="line-standard-form"
   answerDisplay="$x+y\geq3$"
   hint="Test a point in the shaded region to choose the inequality direction, then use the line's style — solid or dashed — to decide whether the equal sign is included."
 >}}

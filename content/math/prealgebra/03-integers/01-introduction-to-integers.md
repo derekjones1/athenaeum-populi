@@ -254,8 +254,8 @@ negative, the absolute value of any number is never negative.
 
 The symbol for absolute value is two vertical bars around a number:
 the absolute value of $5$ is written $|5|$, and the absolute value of
-$-5$ is written $|-5|$. Since both are five units from $0$,
-$|5| = 5$ and $|-5| = 5$.
+$-5$ is written $\lvert -5\rvert$. Since both are five units from $0$,
+$|5| = 5$ and $\lvert -5\rvert = 5$.
 
 {{< callout type="info" >}}
   **Absolute value.** The absolute value of a number is its distance
@@ -263,10 +263,10 @@ $|5| = 5$ and $|-5| = 5$.
   written $|n|$, and $|n| \ge 0$ for all numbers.
 {{< /callout >}}
 
-**Example.** Simplify: (a) $|3|$, (b) $|-44|$, (c) $|0|$.
+**Example.** Simplify: (a) $|3|$, (b) $\lvert -44\rvert$, (c) $|0|$.
 
 (a) $3$ is $3$ units from zero, so $|3| = 3$.
-(b) $-44$ is $44$ units from zero, so $|-44| = 44$.
+(b) $-44$ is $44$ units from zero, so $\lvert -44\rvert = 44$.
 (c) $0$ is already at zero, so $|0| = 0$.
 
 {{< fillin
@@ -277,7 +277,7 @@ $|5| = 5$ and $|-5| = 5$.
 >}}
 
 {{< fillin
-  question="Simplify: $-|-28|$"
+  question="Simplify: $-\lvert -28\rvert$"
   answer="-28"
   answerForm="decimal"
   hint="First take the absolute value of $-28$ (a positive result), then apply the negative sign in front."
@@ -287,12 +287,12 @@ Absolute value bars act like grouping symbols. First simplify inside the
 bars as much as possible; then take the absolute value; then continue
 with any operations outside the bars.
 
-**Example.** Simplify $|9-3|$ and $4|-2|$.
+**Example.** Simplify $|9-3|$ and $4\lvert -2\rvert$.
 
 For $|9-3|$: simplify inside the bars first, $|9-3| = |6|$, then take
 the absolute value: $6$.
 
-For $4|-2|$: take the absolute value first, $|-2| = 2$, then multiply:
+For $4\lvert -2\rvert$: take the absolute value first, $\lvert -2\rvert = 2$, then multiply:
 $4 \cdot 2 = 8$.
 
 {{< fillin
@@ -303,7 +303,7 @@ $4 \cdot 2 = 8$.
 >}}
 
 {{< fillin
-  question="Simplify: $3|-6|$"
+  question="Simplify: $3\lvert -6\rvert$"
   answer="18"
   answerForm="decimal"
   hint="Take the absolute value of $-6$ first, then multiply by $3$."
@@ -541,7 +541,7 @@ $<$
 >}}
 
 {{< fillin
-  question="Simplify: $|-25|$"
+  question="Simplify: $\lvert -25\rvert$"
   answer="25"
   answerForm="decimal"
   hint="Count how far $-25$ is from $0$; a distance is never negative."
@@ -569,7 +569,7 @@ $<$
 >}}
 
 {{< fillin
-  question="Simplify: $8|-7|$"
+  question="Simplify: $8\lvert -7\rvert$"
   answer="56"
   answerForm="decimal"
   hint="Take the absolute value of $-7$ first, then multiply by $8$."

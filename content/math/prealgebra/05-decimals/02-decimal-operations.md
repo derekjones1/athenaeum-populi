@@ -189,7 +189,7 @@ The signs are the same, so the product will be positive. Write the numbers
 in vertical format, lining up the numbers on the right, and multiply as if
 they were whole numbers:
 
-$$\begin{array}{r} 4.075 \\ \times\ \ 3.9 \\ \hline 36{,}675 \\ 12{,}225\phantom{0} \\ \hline 158{,}925 \end{array}$$
+$$\begin{array}{r} 4.075 \\ \times\ \ 3.9 \\ \hline 36{,}675 \\ 122{,}250 \\ \hline 158{,}925 \end{array}$$
 
 Place the decimal point. Add the number of decimal places in the factors
 ($3 + 1$); place the decimal point $4$ places from the right:
@@ -215,7 +215,7 @@ $$(3.9)(4.075) = 15.8925$$
 The signs are different, so the product will be negative. Write in
 vertical format, lining up the numbers on the right, and multiply:
 
-$$\begin{array}{r} 5.19 \\ \times\ 8.2 \\ \hline 1{,}038 \\ 4{,}152\phantom{0} \\ \hline 42{,}558 \end{array}$$
+$$\begin{array}{r} 5.19 \\ \times\ 8.2 \\ \hline 1{,}038 \\ 41{,}520 \\ \hline 42{,}558 \end{array}$$
 
 Place the decimal point $3$ places from the right ($1 + 2$ places). The
 product is negative:

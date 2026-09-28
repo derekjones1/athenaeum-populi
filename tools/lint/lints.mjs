@@ -1045,6 +1045,99 @@ function withoutFigureSpecs(src, blank) {
   return out;
 }
 
+// Control words after which the next atom starts a new operand: a bar there
+// OPENS an absolute value even inside another one (`|5 - |x||`, `|a \cdot |b||`).
+const BAR_OPENING_WORDS = new Set([
+  'cdot', 'times', 'div', 'pm', 'mp', 'le', 'leq', 'ge', 'geq', 'lt', 'gt',
+  'ne', 'neq', 'approx', 'quad', 'qquad', 'to', 'implies', 'Rightarrow',
+  'lvert', 'left', 'bigl', 'Bigl', 'biggl', 'Biggl', 'frac', 'dfrac', 'tfrac',
+  'sqrt', 'lbrace', 'langle', 'lfloor', 'lceil', 'colon', 'in', '{',
+]);
+const SIZED_DELIMITER_WORDS = new Set([
+  'left', 'right', 'middle', 'big', 'Big', 'bigg', 'Bigg', 'bigl', 'Bigl',
+  'biggl', 'Biggl', 'bigr', 'Bigr', 'biggr', 'Biggr', 'bigm', 'Bigm', 'biggm', 'Biggm',
+]);
+
+/**
+ * Offsets (into `tex`) of every minus KaTeX will space as BINARY subtraction
+ * although it is the sign of a number: the minus right after the bar that
+ * OPENS an absolute value (`|-5|` renders "| − 5|", because `|` is an
+ * ordinary symbol and TeX spaces a `-` after an ordinary as an operator), and
+ * the minus after `\ldots`/`\dots` in front of a digit (`\ldots -3` renders
+ * "… − 3"; `\ldots` is an inner atom, same outcome).
+ *
+ * Opening vs closing is decided by pairing bars left to right: outside any
+ * open absolute value a bar opens one; inside one, a bar opens a NESTED one
+ * only after an operator, a relation, an opening bracket, or another opening
+ * bar, and otherwise closes. So `|a|-|b|` (the minus follows a CLOSING bar)
+ * is correct subtraction and is not reported. `\left|…\right|`, sized
+ * delimiters and `\lvert…\rvert` are already delimiters and are skipped;
+ * `\vert` is the same ordinary symbol as `|` and is paired with it. Text
+ * groups and array column specs (`{r|l}`) are blanked first, and a cell
+ * (`&`) or row (`\\`) boundary closes whatever is open.
+ */
+function binarySignMinuses(tex, blank) {
+  // A text group is one OPERAND (`|\text{actual}-\text{ideal}|` subtracts),
+  // so it is blanked to a single ordinary character, not to nothing.
+  const operand = (group) => `x${blank(group.slice(1))}`;
+  let s = blankBalancedMacro(tex, /\\(?:text|textrm|textbf|textit|mbox|operatorname|mathrm)\s*\{/, operand);
+  s = s.replace(/(\\begin\{(?:array|tabular)\}\s*\{)([^{}]*)\}/g, (m, head, spec) => head + blank(spec) + '}');
+  const hits = [];
+  let depth = 0;
+  let prev = 'open';
+  const nextIsMinus = (from) => /^\s*-/.test(s.slice(from)) && !/^\s*-\s*[>-]/.test(s.slice(from));
+  for (let i = 0; i < s.length;) {
+    const c = s[i];
+    if (/\s/.test(c)) { i += 1; continue; }
+    let bar = false;
+    let barEnd = i + 1;
+    if (c === '\\') {
+      if (s[i + 1] === '\\') { depth = 0; prev = 'open'; i += 2; continue; }
+      const word = /^\\([A-Za-z]+|[\s\S])?/.exec(s.slice(i));
+      const name = word[1] ?? '';
+      i += word[0].length;
+      if (SIZED_DELIMITER_WORDS.has(name)) {
+        // Consume the delimiter the size applies to: `\left|`, `\bigl\vert`.
+        while (/\s/.test(s[i] ?? '')) i += 1;
+        const delim = /^(?:\\[A-Za-z]+|\\[\s\S]|[\s\S])/.exec(s.slice(i));
+        if (delim) i += delim[0].length;
+        prev = /^(?:right|big+r|Big+r)$/.test(name) ? 'operand' : 'open';
+        continue;
+      }
+      if (name === 'vert') { bar = true; barEnd = i; i -= word[0].length; }
+      else {
+        if (name === 'ldots' || name === 'dots') {
+          const after = /^\s*-\s*\d/.exec(s.slice(i));
+          if (after) hits.push(i + after[0].indexOf('-'));
+        }
+        // Spacing commands (`\,` `\;` `\!` `\ `) change no atom's class.
+        if (!/^[,;:!\s]$/.test(name)) prev = BAR_OPENING_WORDS.has(name) ? 'open' : 'operand';
+        continue;
+      }
+    } else if (c === '|') {
+      bar = true;
+    }
+    if (bar) {
+      const opens = depth === 0 || prev === 'open' || prev === 'openbar';
+      if (opens) {
+        depth += 1;
+        prev = 'openbar';
+        if (nextIsMinus(barEnd)) hits.push(barEnd + s.slice(barEnd).indexOf('-'));
+      } else {
+        depth -= 1;
+        prev = 'closebar';
+      }
+      i = barEnd;
+      continue;
+    }
+    if (c === '&') { depth = 0; prev = 'open'; }
+    else if ('([{+-=<>,;:*/'.includes(c)) prev = 'open';
+    else prev = 'operand';
+    i += 1;
+  }
+  return hits;
+}
+
 /**
  * `source` with every math span's contents blanked, offsets preserved, so a
  * prose-only rule cannot fire on a symbol that IS typeset. The `$` delimiters
@@ -1463,6 +1556,22 @@ export function lintHugo(src, filename = '', options = {}) {
   for (const span of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
     for (const m of span.tex.matchAll(/°/g)) {
       err(span.index + m.index, 'degree glyph inside math — write ^\\circ, the spelling KaTeX sets and the `degrees` answerForm reads');
+    }
+  }
+  // A sign spaced as subtraction. KaTeX's `|` is an ORDINARY symbol, so the
+  // minus after the bar that opens an absolute value is set as a binary
+  // operator: `$|-5|$` renders "| − 5|" and `$-|-9|$` "−| − 9|". It never
+  // throws, so no build or render gate sees it; the re-review found it by eye
+  // on Intermediate Algebra 1.2 and 2.7 and on a dozen more pages after that.
+  // `\lvert … \rvert` is an opening delimiter, after which the minus is unary.
+  // `\ldots -3` is the same defect after an inner atom; `\ldots {-3}` (or a
+  // comma) sets the sign. Whole page, every math span — question, hint,
+  // answerDisplay, and multiple-choice options/answer all carry their TeX in
+  // `$…$`. A fillin `answer=` key is bare TeX but is only ever GRADED, never
+  // typeset, so it is outside this rule.
+  for (const span of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
+    for (const at of binarySignMinuses(span.tex, blank)) {
+      err(span.index + (span.display ? 2 : 1) + at, 'a sign minus KaTeX spaces as subtraction — after the bar that opens an absolute value (`|-5|` renders "| − 5|"; write `\\lvert -5\\rvert`) or after `\\ldots` (`\\ldots -3`; write `\\ldots {-3}`)');
     }
   }
   // Digit grouping. The corpus groups every number of four or more digits as
@@ -2118,11 +2227,14 @@ export function lintHugo(src, filename = '', options = {}) {
       }
     }
     // ---- prompt asks for interval notation: the authored answer must BE one.
-    // The engine grades an inequality and an interval unequal in BOTH
-    // directions, so "write the solution in interval notation" answered by
-    // `u>10` marks the learner who does exactly what the prompt says and
-    // types `(10,\infty)` incorrect. Self-grading cannot catch it: the
-    // authored inequality is only ever compared against itself.
+    // The grader reads the right set in the OTHER notation as 'form' and
+    // names the key's notation ("now write it as an inequality" / "in
+    // interval notation", since the Elementary Algebra chapter 10 re-review,
+    // September 27, 2026), so "write the solution in interval notation"
+    // answered by `u>10` tells the learner who does exactly what the prompt
+    // says and types `(10,\infty)` to rewrite it as an inequality. Self-grading
+    // cannot catch it: the authored inequality is only ever compared against
+    // itself.
     if (/\binterval notation\b/i.test(q) && (params.answer || '').trim()) {
       // No filter(Boolean): an empty part IS the defect — a truncated union
       // (`(-\infty,3)\cup`) or a bare `\cup` splits into empty halves, and

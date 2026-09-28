@@ -8,6 +8,7 @@ document adds KaTeX notation, the `answerForm` grading vocabulary, and the
 section.
 
 Prealgebra 2e re-reviewed to the A&P standard, completed September 27, 2026.
+Elementary Algebra 2e re-reviewed to the A&P standard, completed September 28, 2026.
 
 ## 2. Writing patterns
 
@@ -33,6 +34,10 @@ Prealgebra 2e re-reviewed to the A&P standard, completed September 27, 2026.
   raw pipes. Write `$f(x)=\lvert x\rvert$` and
   `$6\left\lvert xy\right\rvert$`. The lint enforces this on any line that
   begins a table row.
+- **A sign after an opening bar or `\ldots`: `\lvert -5\rvert`, `\ldots {-3}`**
+  — KaTeX's `|` is an ordinary symbol, so `$|-5|$` renders "| − 5|" with the
+  sign spaced as subtraction (`$|a|-|b|$`, a minus after a CLOSING bar, is
+  correct and stays). The lint rejects both shapes in every math span.
 - **Worked-example step tables:** align relations with `\begin{array}{lrcl}`,
   rows `explanation & LHS &=& RHS \\[4pt]`. Separate steps with `\\[4pt]` (the
   lint rejects bare `\\` in `{lrcl}` arrays).
@@ -88,6 +93,18 @@ comma-separated answer:
   the grouped form in `answerDisplay`.
 - Inside any list answer, write members without digit-grouping commas
   (`1536`, not `1,536`); learners may still type either form.
+- **A ± response is the set of its two branches** *(Elementary Algebra
+  chapter 10 re-review, September 27, 2026)*. Each comma-separated member
+  holding exactly one `\pm` (or `\mp`, `±`) is read as its minus and plus
+  branches — `\pm4`, `x=\pm4` (the label stripped as usual),
+  `-4\pm3\sqrt{3}`, `\frac{-3\pm\sqrt{201}}{8}`, `(\pm4,0)`, `\pm2,\pm3` —
+  and graded against a list key with that many members AS A SET, whatever
+  the `answerMode`: the ± states no order. The key's `answerForm` applies to
+  each branch as to a typed member (`-4\pm\sqrt{27}` and `\pm\sqrt{50}` are
+  `form` under `simplified-radical`). A ± response against any other key (one
+  value, a list of another size, an interval) is `incorrect`; a member with
+  two ± is not expanded. Key the pair as the two members (`-4,4`), never with
+  `\pm`. MathLive types ± as `\pm` (inline `+-`, shifted minus key).
 
 **Re-expression prompts need `answerForm`.** Value grading accepts any input
 mathematically equal to `answer`, so a prompt that asks the learner to restate
@@ -124,22 +141,23 @@ names):
 | `mixed-number` | a whole number and a proper fraction |
 | `improper-fraction` | $\tfrac{a}{b}$ with $\lvert a\rvert \ge \lvert b\rvert$ |
 | `fraction-or-mixed-number` | either shape — for a source ask that offers the choice |
-| `lowest-terms` | numerator and denominator share no factor |
+| `lowest-terms` | numerator and denominator share no factor, and the sign is reduced: at most one minus, never in the denominator ($\tfrac{-23}{-4}$, $\tfrac{23}{-4}$, $-\tfrac{-23}{4}$ fail; $\tfrac{-23}{4}$ and $-\tfrac{23}{4}$ pass) |
 | `scientific-notation` | $a \times 10^{n}$ with $1 \le \lvert a\rvert < 10$ |
 | `prime-product` | a product of prime powers |
 | `single-power` | one $a^{n}$, not a product or nested power — for "Simplify $(3^8)^2$, write the answer as a power of 3" |
 | `expanded` | a sum of terms, not a product/power/quotient — for "Multiply: $(w+5)(w+7)$"; still allows a remainder term. No term may still write a product of factors (`5x\cdot x`, `(5x)(x)`, `5x(x)`) or a power of a parenthesized group (`(6x)^2`, `(x+5)^2`); uncombined like terms and an unreduced coefficient still pass (`no-like-terms` owns the former) |
 | `single-term` | one monomial: one coefficient, each variable once, no written $\cdot$, no top-level $+$, no $\,^0$ factor, no exponent fraction left unreduced or whole ($x^{2/4}$, $x^{6/3}$) |
-| `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials; no numeral power (`\frac{1}{2^3y^3}`) and no parenthesized monomial with a numeral raised to a power (`(2x^4)^5`, `(3y)^2` — `reduced-fraction` refuses these too); no exponent fraction left unreduced or whole (`\frac{1}{z^{6/3}}`); each half is one product or a sum of plain terms — never a sum still holding a grouped product (`\frac{2(x-5)}{3(x+5)+1}`) |
+| `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials; no numeral power (`\frac{1}{2^3y^3}`) and no parenthesized monomial with a numeral raised to a power (`(2x^4)^5`, `(3y)^2` — `reduced-fraction` refuses these too); no exponent fraction left unreduced or whole (`\frac{1}{z^{6/3}}`); each half is one product or a sum of plain terms — never a sum still holding a grouped product (`\frac{2(x-5)}{3(x+5)+1}`); each variable written once per term of each half (`\tfrac{1}{q^4q^5}` fails against `\tfrac{1}{q^9}`) |
 | `reduced-fraction` | exactly one $\tfrac{a}{b}$ with no common polynomial or integer factor across the bar — for "Simplify $\frac{x^2-x-2}{x^2-3x+2}$"; a half the checker cannot read as an integer-coefficient polynomial passes on its value alone |
 | `no-like-terms` | a sum in which no two terms share a like-term signature — the variable monomial AND the radical part as written (same index and radicand), so `3`, `2\sqrt2`, `5\sqrt3` and `x\sqrt2` are pairwise unlike and `3+2\sqrt2` passes — and at most one written constant term per radical part (`16x+9+8`, `1+2\sqrt2+2`, `\sqrt2+\sqrt2` are not combined). Each term's numeral fraction over monomial halves is reduced with integer halves (`\frac{9}{6c}`, `\frac{1.5}{c}` fail) |
 | `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
 | `distributed` | no parentheses left to multiply out. Each term's numeral fraction over monomial halves is reduced with integer halves, as under `no-like-terms` |
 | `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), no same-index product of radicals in one top-level term, explicit ($\sqrt{3}\cdot\sqrt{6}$) or juxtaposed ($\sqrt[4]{12y^3}\sqrt[4]{8y^3}$ — rationalized-fraction numerators keep theirs), and no fractional/decimal exponents or decimal literals (radical notation is the form). Since the Elementary Algebra 8–9 re-review, no numeric work is left written at ANY level (top, each fraction half, each sum group): a fraction's numeric content is reduced — the gcd of the numerator terms' integer contents and the denominator's is 1, sign ignored ($\tfrac{6\sqrt2}{4}$, $\tfrac{4+2\sqrt5}{2}$ fail; $\tfrac32\sqrt2$ and $\tfrac{-\sqrt3}{3}$ pass) — no fraction stands over 1, no term multiplies two same-index radicals ($\tfrac{\sqrt3\sqrt5}{5}$, $\tfrac{\sqrt{10}\sqrt y+\sqrt{30}}{y-3}$) or two numerals ($2\sqrt2\cdot3$, $3\cdot5$, $4\cdot2x$), writes a variable twice ($z^3z^3$) or powers a single-term group ($(z^3)^2$), and no two variable-free like terms stand side by side ($3+4$, $1+2\sqrt2+2$). A radicand fraction over a variable ($\sqrt[6]{\tfrac{2u}{v^3}}$) and a bare numeral power ($3^2$) still pass, but each half of such a radicand is read like a whole radicand ($\sqrt[6]{\tfrac{128u}{v^3}}$ fails on its $2^6$). Value grading: a radical over a variable is decided by sampling, never by the engine's `isEqual` (`9x` against `9\sqrt{x}` is `incorrect`); positive points only (the square-root sections assume variables nonnegative, so $\sqrt{x^2}$ is $x$), plus negative points where both sides are real when the KEY writes an absolute value or an odd root over a variable (9.7's even-root keys use $\lvert y\rvert$: `2y\sqrt[4]{3y^2}` against `2|y|\sqrt[4]{3y^2}` is `incorrect`). A radical sum key still declares `no-like-terms` with it, which reads variable terms too |
-| `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
+| `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$". Every numeral fraction written inside it, at any depth, is reduced with a denominator other than 1 (`(p-\tfrac{2}{12})^2` fails against `(p-\tfrac16)^2`) |
 | `factored-completely` | `factored`, and complete: every polynomial factor primitive over the integers (coefficient gcd 1, no variable common to all its terms, no fraction or decimal coefficient) and at least as many non-constant factors, with multiplicity, as the key (`x^3` counts 3, `(x+2)^2` counts 2) — for "Factor completely: $2x^2+8x+8$", where `(2x+4)(x+2)`, `2(x^2+4x+4)` and `4(\tfrac12x+1)(x+2)` fail against `2(x+2)^2`. Order, signs (`-(2-x)` for `x-2`), and how the constant is split are free. A key the checker cannot read as an integer-coefficient product passes on value and `factored` alone; a response factor it cannot read (`\frac1x`, `|x|`) fails |
 | `point-slope-form` | one equation, one side the bare output variable plus at most a constant, the other a single $m(x-x_1)$ term (either orientation) — for "Write the point-slope form…", where the engine grades the distributed and scaled restatements equal; the collapsed origin case $y=mx$ passes |
-| `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$. A one-letter label other than `y` (or the key's own label letter) fails: `x=-\tfrac23y-\tfrac23` is the line solved for $x$ |
+| `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$. A one-letter label other than `y` (or the key's own label letter) fails: `x=-\tfrac23y-\tfrac23` is the line solved for $x$. The writing is finished too: at most one written constant term, no numeral product or power left, every fraction reduced (`y=\tfrac12x+1-5`, `y=\tfrac{2}{4}x-4`, `y=\tfrac{2x}{4}-4` fail) |
+| `line-standard-form` | an equation or ONE order relation with every variable term on one side — each a letter with at most a numeral coefficient, each letter once, no constant — and one numeral on the other, either orientation, fractions reduced — for "keep $x+y$ on the left side, as the boundary line is written" inequality asks and $Ax+By=C$ standard-form asks, where every half-plane or line restatement ($y\ge3-x$) grades equal in value |
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
 | `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer (a bare squared term counts as over the unwritten $1$, so $(y-1)^2-\tfrac{x^2}{4}=1$ passes) — for ellipse/hyperbola "write in standard form". Primed variables ($x'$, $y'$) are folded onto one symbol first, so $\tfrac{x'^2}{4}+\tfrac{y'^2}{9}=1$ is keyable |
 | `parabola-standard-form` | an equation with one side a single coefficient-1 squared unit ($x^2$, $y^2$, $(x-h)^2$, $(y-k)^2$) and the other ONE term in the other variable — an optional numeric coefficient (the $4p$: integer, decimal, or written fraction) on the bare variable or its shifted binomial, or that variable/binomial over an integer — for "write the parabola in standard form" $(x-h)^2=4p(y-k)$ asks, which `vertex-form` cannot serve (it wants $y=a(x-h)^2+k$) and which the general form, $x=\tfrac{y^2}{8}$, and the distributed $(x-2)^2=-8y-8$ otherwise pass on value |
@@ -154,7 +172,7 @@ names):
 | `degrees` | one term, ending in $^\circ$, on a plain numeric head — for "convert $\tfrac{5\pi}{4}$ radians to degrees", where the engine grades the two spellings equal |
 | `radians` | no degree symbol anywhere — the mirror ask |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
-| `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped; the variable is named because a formula can arrive solved for the *other* side ($x=5y-10$) |
+| `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped; the variable is named because a formula can arrive solved for the *other* side ($x=5y-10$). An inequality counts the same way (`y\ge-2x+3` is solved for $y$; `2x+y\ge3` is not) |
 
 A right value in the wrong shape reports back as "That value is right — now
 write it in lowest terms"; a wrong value is still just wrong.
@@ -175,6 +193,40 @@ grades `form` under `fraction lowest-terms`, `(-\infty,62+45]` under
 `decimal`, and `(2,1+\frac12)` under `lowest-terms`. A coordinate meets a
 form exactly as a bare number would: `2` fails `fraction`, so a pair mixing
 an integer and a fraction declares `lowest-terms`. *(September 27, 2026)*
+A `\cup` of intervals is compared interval by interval in any order, so an
+unworked endpoint in a union (`(-\infty,-1]\cup[\frac42,\infty)` under
+`decimal`) is `form` exactly as in one interval, beside a bracket or a
+parenthesis. *(Elementary Algebra chapter 10 re-review, September 27, 2026)*
+
+**A solution set is read in both notations.** An inequality in ONE variable
+standing alone on its side, every other side a number — simple (`x\le-0.5`,
+`-0.5\ge x`), chained in one direction (`-1\le x<4`, `4>x\ge-1`), joined by
+`\lor`/`\text{or}` into a union or `\land`/`\text{and}` into an intersection
+(MathLive's inline "or"/"and") — and an interval or `\cup` of intervals are
+both read as the set they describe. Against an interval key, an inequality
+naming the same set grades `form` with "That solution set is right — now
+write it in interval notation."; against an inequality key, an interval
+naming the same set grades `form` with "… — now write it as an inequality.";
+a different set is `incorrect`. An inequality typed against an inequality key
+is decided by its set (and its variable letter): the engine drops the variable
+from a chain's first link, so `-2\le x<4` used to grade `correct` against
+`-1\le x<4`. Two-variable inequalities (`y\ge-2x+3`), numeric statements
+(`6<\sqrt{38}<7`) and `\mathbb{R}` are not read this way and grade as before;
+a key `(a,b)` with $a<b$ reads as an interval here, so `2<x<5` against `(2,5)`
+is `form`. *(Elementary Algebra chapter 10 re-review, September 27, 2026)*
+
+**An inequality in two or more variables is its half-plane.** Each side pair
+is read as $D>0$ or $D\ge0$ (a $<$/$\le$ relation negates the difference), and
+a response is the key's half-plane when it has the same strictness and its
+$D$ is a POSITIVE constant multiple of the key's — so `x\ge2y+6` and
+`-x+2y\le-6` are `x-2y\ge6`, `3y\ge2x-9` is `y\ge\tfrac23x-3`, while
+`x-2y>6`, `x-2y\le6` and a different boundary are `incorrect`. Only a key
+naming two or more letters is read this way; a one-variable key stays a
+solution set (`2q>-8` is not `q>-4`). An ask that pins the writing ("enter it
+solved for $y$", "keep $x+y$ on the left side, as the boundary line is
+written") declares `solved:y` or `line-standard-form`; a word-problem
+"write an inequality that models …" ask declares nothing. *(Elementary Algebra
+chapter 10 re-review, September 27, 2026)*
 
 Which evidence the requirement is checked against depends on what it separates.
 A **numeral** form is checked against the LaTeX, because the Compute Engine
@@ -622,10 +674,10 @@ Each explains a lint error or a grader behavior an author will still meet:
   intended answer (MathLive turns `/` into a real `\frac`) is marked wrong.
   The lint rejects any answer matching a slash quotient followed by a
   juxtaposed letter, parenthesis, or macro.
-- **An interval-notation ask needs an interval-shaped answer.** The engine
-  grades an inequality and an interval unequal in both directions, so `u>10`
-  behind "write the solution in interval notation" marks `(10,\infty)`
-  incorrect. The lint requires an interval-shaped answer (every `\cup`-joined
+- **An interval-notation ask needs an interval-shaped answer.** The grader
+  reads the right set in the other notation as `form` and names the KEY's
+  notation, so `u>10` behind "write the solution in interval notation" tells
+  the learner who types `(10,\infty)` to write it as an inequality. The lint requires an interval-shaped answer (every `\cup`-joined
   part opens with `[` or `(`) behind any interval-notation ask.
 - **Money and units on a bare-number key** *(September 26, 2026)*. When
   `answer` is one bare number, `checkAnswer` drops a leading `\$` (the
@@ -643,7 +695,11 @@ Each explains a lint error or a grader behavior an author will still meet:
   inside a pair or interval. A pair key also accepts its coordinates typed
   as labelled equations (`x=6, y=1` for `(6,1)`): distinct one-letter labels,
   read in the order typed except that `x`, `y`, `z` always go in that order.
-  *(September 27, 2026)*
+  *(September 27, 2026)* A key that is one numeral fraction or mixed number
+  takes the unit rule too: `\frac{1}{6}\text{ hours}` and
+  `2\frac{1}{2}\text{ hours}` are `unit` against `\frac{1}{6}` and
+  `2\frac{1}{2}`; a wrong value with a unit stays `incorrect`. *(Elementary
+  Algebra chapter 10 re-review, September 27, 2026)*
 - **A written function label is stripped before grading.** `f(x)` boxes as
   `Multiply(f, x)`, so `checkAnswer` strips a written
   one-letter-applied-to-one-letter label — only when no further `=` remains —
@@ -660,7 +716,11 @@ Each explains a lint error or a grader behavior an author will still meet:
   ($\tfrac{\sqrt{2}}{\sqrt{x}-\sqrt{3}}$ — against *any* comparand), and
   `simplify()` never returns on some differences of variable-radical
   expressions. `equivalent()` in `lib/check-answer.mjs` routes both classes
-  to bounded numeric sampling (see the guard banner there).
+  to bounded numeric sampling (see the guard banner there). A third
+  `isEqual()` hang: a negative power over a symbol times a rational with no
+  terminating decimal — `(6u)^{-3}`, `(3u)^{-2}`, `\tfrac13u^{-1}`, against
+  any comparand; every negative power over a symbol is now sampled too
+  *(Elementary Algebra chapter 10 re-review, September 27, 2026)*.
 - **Complex arithmetic: author the answer in $a+bi$ form.** The pinned engine
   has two silent defects: it divides by the denominator's modulus rather than
   its square, so $\tfrac{2+5i}{4-i}$ evaluates wrong; and a coefficient times

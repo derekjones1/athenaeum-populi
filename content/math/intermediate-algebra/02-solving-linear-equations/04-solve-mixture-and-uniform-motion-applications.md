@@ -125,15 +125,17 @@ and 59 nickels.
 {{< fillin
   question="Jesse has \$6.55 worth of quarters and nickels in his pocket. The number of nickels is five more than two times the number of quarters. How many nickels and how many quarters does Jesse have? Enter the numbers of nickels and quarters, separated by commas."
   answer="41, 18"
+  answerForm="decimal"
   answerDisplay="$41$ nickels and $18$ quarters"
-  hint="Let $q$ be the number of quarters, so the number of nickels is $2q+5$. Use the total-value equation."
+  hint="Let $q$ be the number of quarters and write the number of nickels in terms of $q$. The value of the quarters plus the value of the nickels equals the total value."
 >}}
 
 {{< fillin
   question="Elane has \$7.00 total in dimes and nickels in her coin jar. The number of dimes that Elane has is seven less than three times the number of nickels. How many of each coin does Elane have? Enter the numbers of nickels and dimes, separated by commas."
   answer="22, 59"
+  answerForm="decimal"
   answerDisplay="$22$ nickels and $59$ dimes"
-  hint="Let $n$ be the number of nickels, so the number of dimes is $3n-7$."
+  hint="Let $n$ be the number of nickels and write the number of dimes in terms of $n$. The value of the nickels plus the value of the dimes equals the total in the jar."
 >}}
 
 The steps for solving a coin word problem are summarized below.
@@ -225,15 +227,17 @@ $$
 {{< fillin
   question="Eric paid \$19.88 for stamps. The number of 49-cent stamps was eight more than twice the number of 35-cent stamps. How many 49-cent stamps and how many 35-cent stamps did Eric buy? Enter the numbers of 49-cent and 35-cent stamps, separated by commas."
   answer="32, 12"
+  answerForm="decimal"
   answerDisplay="$32$ 49-cent stamps and $12$ 35-cent stamps"
-  hint="Let $x$ be the number of 35-cent stamps. Then the number of 49-cent stamps is $2x+8$."
+  hint="Let $x$ be the number of 35-cent stamps and write the number of 49-cent stamps in terms of $x$. The value of each kind of stamp adds up to what Eric paid."
 >}}
 
 {{< fillin
   question="Kailee paid \$14.74 for stamps. The number of 49-cent stamps was four less than three times the number of 20-cent stamps. How many 49-cent stamps and how many 20-cent stamps did Kailee buy? Enter the numbers of 49-cent and 20-cent stamps, separated by commas."
   answer="26, 10"
+  answerForm="decimal"
   answerDisplay="$26$ 49-cent stamps and $10$ 20-cent stamps"
-  hint="Let $x$ be the number of 20-cent stamps. Then the number of 49-cent stamps is $3x-4$."
+  hint="Let $x$ be the number of 20-cent stamps and write the number of 49-cent stamps in terms of $x$. The value of each kind of stamp adds up to what Kailee paid."
 >}}
 
 In most of our examples so far, we have been told that one quantity is four
@@ -327,15 +331,17 @@ tickets.
 {{< fillin
   question="During her shift at the museum ticket booth, Leah sold 115 tickets for a total of \$1,163. Adult tickets cost \$12 and student tickets cost \$5. How many adult tickets and how many student tickets did Leah sell? Enter the numbers of adult and student tickets, separated by commas."
   answer="84, 31"
+  answerForm="decimal"
   answerDisplay="$84$ adult tickets and $31$ student tickets"
-  hint="Let $a$ be the number of adult tickets. The number of student tickets is $115-a$."
+  hint="Let $a$ be the number of adult tickets; since the total number of tickets is known, write the number of student tickets in terms of $a$. The adult receipts plus the student receipts equal the total collected."
 >}}
 
 {{< fillin
   question="Galen sold 810 tickets for his church’s carnival for a total revenue of \$2,820. Children’s tickets cost \$3 each and adult tickets cost \$5 each. How many children’s tickets and how many adult tickets did he sell? Enter the numbers of children’s and adult tickets, separated by commas."
   answer="615, 195"
+  answerForm="decimal"
   answerDisplay="$615$ children’s tickets and $195$ adult tickets"
-  hint="Let $a$ be the number of adult tickets. The number of children’s tickets is $810-a$."
+  hint="Let $a$ be the number of adult tickets; since the total number of tickets is known, write the number of children’s tickets in terms of $a$. The receipts from each kind of ticket add up to the total revenue."
 >}}
 
 ## Solve mixture word problems
@@ -358,7 +364,7 @@ come from mixing raisins and nuts.
 **Step 2. Identify** what we are looking for: the number of pounds of raisins
 and nuts.
 
-**Step 3.** Represent the number of each type of ticket using variables. Let
+**Step 3.** Represent the number of pounds of each item using variables. Let
 $x=$ number of pounds of raisins. $25-x=$ number of pounds of nuts. As before,
 we fill in a chart to organize our information. We enter the price per pound
 for each item. We multiply the number times the value to get the total value.
@@ -404,17 +410,19 @@ $$
 pounds of nuts.
 
 {{< fillin
-  question="Orlando is mixing nuts and cereal squares to make a party mix. Nuts sell for \$7 a pound and cereal squares sell for \$4 a pound. Orlando wants to make 30 pounds of party mix at a cost of \$6.50 a pound. How many pounds of cereal squares and how many pounds of nuts should he use? Enter the numbers of pounds of cereal squares and nuts, separated by commas."
-  answer="5, 25"
-  answerDisplay="$5$ pounds of cereal squares and $25$ pounds of nuts"
-  hint="Let $n$ be the pounds of nuts. Then the pounds of cereal squares is $30-n$."
+  question="Orlando is mixing nuts and cereal squares to make a party mix. Nuts sell for \$7 a pound and cereal squares sell for \$4 a pound. Orlando wants to make 30 pounds of party mix at a cost of \$6.50 a pound. How many pounds of nuts and how many pounds of cereal squares should he use? Enter the numbers of pounds of nuts and cereal squares, separated by commas."
+  answer="25, 5"
+  answerForm="decimal"
+  answerDisplay="$25$ pounds of nuts and $5$ pounds of cereal squares"
+  hint="Let $n$ be the pounds of nuts and write the pounds of cereal squares in terms of $n$, using the total weight. The value of the nuts plus the value of the cereal squares equals the value of the party mix."
 >}}
 
 {{< fillin
   question="Becca wants to mix fruit juice and soda to make a punch. She can buy fruit juice for \$3 a gallon and soda for \$4 a gallon. If she wants to make 28 gallons of punch at a cost of \$3.25 a gallon, how many gallons of fruit juice and how many gallons of soda should she buy? Enter the numbers of gallons of fruit juice and soda, separated by commas."
   answer="21, 7"
+  answerForm="decimal"
   answerDisplay="$21$ gallons of fruit juice and $7$ gallons of soda"
-  hint="Let $s$ be the gallons of soda. Then the gallons of fruit juice is $28-s$."
+  hint="Let $s$ be the gallons of soda and write the gallons of fruit juice in terms of $s$, using the total amount of punch. The cost of the juice plus the cost of the soda equals the cost of the punch."
 >}}
 
 ## Solve uniform motion applications
@@ -513,17 +521,19 @@ $$
 mph and Dennis rode at 28 mph.
 
 {{< fillin
-  question="An express train and a local train leave Pittsburgh to travel to Washington, D.C. The express train can make the trip in four hours and the local train takes five hours for the trip. The speed of the express train is 12 miles per hour faster than the speed of the local train. Enter the speeds of the local and express trains, separated by commas."
+  question="An express train and a local train leave Pittsburgh to travel to Washington, D.C. The express train can make the trip in four hours and the local train takes five hours for the trip. The speed of the express train is 12 miles per hour faster than the speed of the local train. Find the speed of both trains, in miles per hour. Enter the local train’s speed and then the express train’s speed, separated by a comma."
   answer="48, 60"
+  answerForm="decimal"
   answerDisplay="$48$ mph and $60$ mph"
-  hint="The trains travel the same distance, so set $5r=4(r+12)$."
+  hint="Let $r$ be the local train’s speed and write the express train’s speed in terms of $r$. Both trains make the same trip, so set the two rate-times-time distances equal and solve."
 >}}
 
 {{< fillin
-  question="Jeromy can drive from his house in Cleveland to his college in Chicago in 4.5 hours. It takes his mother six hours to make the same drive. Jeromy drives 20 miles per hour faster than his mother. Enter Jeromy’s speed and his mother’s speed, separated by commas."
+  question="Jeromy can drive from his house in Cleveland to his college in Chicago in 4.5 hours. It takes his mother six hours to make the same drive. Jeromy drives 20 miles per hour faster than his mother. Find Jeromy’s speed and his mother’s speed, in miles per hour. Enter Jeromy’s speed and then his mother’s, separated by a comma."
   answer="80, 60"
+  answerForm="decimal"
   answerDisplay="$80$ mph and $60$ mph"
-  hint="They travel the same distance. Let $r$ be his mother’s speed."
+  hint="Let $r$ be his mother’s speed and write Jeromy’s speed in terms of $r$. Both drive the same distance, so set the two rate-times-time distances equal and solve."
 >}}
 
 In Example 2.43, we had two bikers traveling the same distance. In the next
@@ -591,17 +601,19 @@ $$
 and her brother 50 mph.
 
 {{< fillin
-  question="Christopher and his parents live 115 miles apart. They met at a restaurant between their homes. Christopher drove one and a half hours while his parents drove one hour. Christopher’s average speed was ten miles per hour faster than his parents’ average speed. Enter Christopher’s and his parents’ average speeds, separated by commas."
+  question="Christopher and his parents live 115 miles apart. They met at a restaurant between their homes. Christopher drove one and a half hours while his parents drove one hour. Christopher’s average speed was ten miles per hour faster than his parents’ average speed. Find the average speeds of Christopher and of his parents, in miles per hour. Enter Christopher’s speed and then his parents’, separated by a comma."
   answer="50, 40"
+  answerForm="decimal"
   answerDisplay="$50$ mph and $40$ mph"
-  hint="Their distances add to $115$. Let $r$ be the parents’ speed."
+  hint="Let $r$ be the parents’ speed and write Christopher’s speed in terms of $r$. They drive toward each other, so the two rate-times-time distances add up to the distance between their homes."
 >}}
 
 {{< fillin
-  question="Ashley goes to college in Minneapolis, 234 miles from her home in Sioux Falls. Ashley and her parents both drove two hours to a restaurant between the cities. Ashley’s average speed was seven miles per hour faster than her parents’ average speed. Enter Ashley’s and her parents’ average speeds, separated by commas."
+  question="Ashley goes to college in Minneapolis, 234 miles from her home in Sioux Falls. Ashley and her parents both drove two hours to a restaurant between the cities. Ashley’s average speed was seven miles per hour faster than her parents’ average speed. Find Ashley’s and her parents’ average speeds, in miles per hour. Enter Ashley’s speed and then her parents’, separated by a comma."
   answer="62, 55"
+  answerForm="decimal"
   answerDisplay="$62$ mph and $55$ mph"
-  hint="Their distances add to $234$. Let $r$ be the parents’ speed."
+  hint="Let $r$ be the parents’ speed and write Ashley’s speed in terms of $r$. They drive toward each other, so the two rate-times-time distances add up to the distance between the cities."
 >}}
 
 As you read the next example, think about the relationship of the distances
@@ -663,10 +675,11 @@ $$
 trucks 2.5 hours to be 325 miles apart.
 
 {{< fillin
-  question="Pierre and Monique leave their home in Portland at the same time. Pierre drives north at 75 miles per hour while Monique drives south at 68 miles per hour. How long will it take them to be 429 miles apart?"
+  question="Pierre and Monique leave their home in Portland at the same time. Pierre drives north at 75 miles per hour while Monique drives south at 68 miles per hour. How long will it take them to be 429 miles apart? Enter the time in hours."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$3$ hours"
-  hint="Their distances add to $429$, and they travel for the same time $t$."
+  hint="Both drive for the same time $t$. They head in opposite directions, so the two rate-times-time distances add up to the distance between them."
 >}}
 
 {{< fillin
@@ -674,7 +687,7 @@ trucks 2.5 hours to be 325 miles apart.
   answer="2.2"
   answerForm="decimal"
   answerDisplay="$2.2$ hours"
-  hint="Use $72t+76t=330$."
+  hint="Both drive for the same time $t$. They head in opposite directions, so the two rate-times-time distances add up to the distance between them. Solve, then round."
 >}}
 
 It is important to make sure that the units match when we use the distance
@@ -748,17 +761,19 @@ Yes, either way Naoko travels 1.5 miles to school. Naoko’s walking speed is 3
 mph and her speed riding her bike is 6 mph.
 
 {{< fillin
-  question="Suzy takes 50 minutes to hike uphill from the parking lot to the lookout tower. It takes her 30 minutes to hike back down to the parking lot. Her speed going downhill is 1.2 miles per hour faster than her speed going uphill. Enter Suzy’s uphill and downhill speeds, separated by commas."
+  question="Suzy takes 50 minutes to hike uphill from the parking lot to the lookout tower. It takes her 30 minutes to hike back down to the parking lot. Her speed going downhill is 1.2 miles per hour faster than her speed going uphill. Find Suzy’s uphill and downhill speeds, in miles per hour. Enter the uphill speed and then the downhill speed, as decimals, separated by a comma."
   answer="1.8, 3"
+  answerForm="decimal"
   answerDisplay="$1.8$ mph uphill and $3$ mph downhill"
-  hint="Convert both times to hours and equate the uphill and downhill distances."
+  hint="First convert both times from minutes to hours. Let $u$ be the uphill speed and write the downhill speed in terms of $u$; the distance is the same both ways, so set the two rate-times-time distances equal."
 >}}
 
 {{< fillin
-  question="Llewyn takes 45 minutes to drive his boat upstream from the dock to his favorite fishing spot. It takes him 30 minutes to drive the boat back downstream to the dock. The boat’s speed going downstream is four miles per hour faster than its speed going upstream. Enter the boat’s upstream and downstream speeds, separated by commas."
+  question="Llewyn takes 45 minutes to drive his boat upstream from the dock to his favorite fishing spot. It takes him 30 minutes to drive the boat back downstream to the dock. The boat’s speed going downstream is four miles per hour faster than its speed going upstream. Find the boat’s upstream and downstream speeds, in miles per hour. Enter the upstream speed and then the downstream speed, separated by a comma."
   answer="8, 12"
+  answerForm="decimal"
   answerDisplay="$8$ mph upstream and $12$ mph downstream"
-  hint="Convert the times to hours and set the two distances equal."
+  hint="First convert both times from minutes to hours. Let $u$ be the upstream speed and write the downstream speed in terms of $u$; the distance is the same both ways, so set the two rate-times-time distances equal."
 >}}
 
 In the distance, rate and time formula, time represents the actual amount of
@@ -819,17 +834,19 @@ $$
 $$
 
 {{< fillin
-  question="Hamilton loves to travel to Las Vegas, 255 miles from his home in Orange County. On his last trip, he left his house at 2:00 p.m. The first part of his trip was on congested city freeways. At 4:00 p.m. the traffic cleared and he drove through the desert at a speed 1.75 times as fast as when he drove in the congested area. He arrived in Las Vegas at 6:30 p.m. Enter his city and desert speeds, separated by commas."
+  question="Hamilton loves to travel to Las Vegas, 255 miles from his home in Orange County. On his last trip, he left his house at 2:00 p.m. The first part of his trip was on congested city freeways. At 4:00 p.m. the traffic cleared and he drove through the desert at a speed 1.75 times as fast as when he drove in the congested area. He arrived in Las Vegas at 6:30 p.m. How fast was he driving during each part of his trip, in miles per hour? Enter his city speed and then his desert speed, separated by a comma."
   answer="40, 70"
+  answerForm="decimal"
   answerDisplay="$40$ mph in the city and $70$ mph in the desert"
-  hint="He drove 2 hours in the city and 2.5 hours in the desert."
+  hint="Subtract clock times to find how many hours he drove in the city and how many in the desert. Let $r$ be his city speed and write his desert speed in terms of $r$; the two rate-times-time distances add up to the total distance."
 >}}
 
 {{< fillin
-  question="Phuong left home on his bicycle at 10:00. He rode on the flat street until 11:15, then rode uphill until 11:45. He rode a total of 31 miles. His speed riding uphill was 0.6 times his speed on the flat street. Enter his uphill and flat-street speeds, separated by commas."
+  question="Phuong left home on his bicycle at 10:00. He rode on the flat street until 11:15, then rode uphill until 11:45. He rode a total of 31 miles. His speed riding uphill was 0.6 times his speed on the flat street. Find his speed biking uphill and on the flat street, in miles per hour. Enter the uphill speed and then the flat-street speed, separated by a comma."
   answer="12, 20"
+  answerForm="decimal"
   answerDisplay="$12$ mph uphill and $20$ mph on the flat street"
-  hint="He rode $1.25$ hours on the flat street and $0.5$ hour uphill."
+  hint="Subtract clock times to find how many hours he rode on the flat street and how many uphill. Let $f$ be his flat-street speed and write his uphill speed in terms of $f$; the two rate-times-time distances add up to the total distance."
 >}}
 
 ## Key terms
@@ -845,22 +862,25 @@ $\textit{number}\cdot\textit{value}=\textit{total value}$.
 {{< fillin
   question="Michaela has \$2.05 in dimes and nickels in her change purse. She has seven more dimes than nickels. How many nickels and how many dimes does she have? Enter the number of nickels and the number of dimes, separated by a comma."
   answer="9, 16"
+  answerForm="decimal"
   answerDisplay="$9$ nickels and $16$ dimes"
-  hint="Let $n$ be the number of nickels, so the number of dimes is $n+7$. Use $0.05n+0.10(n+7)=2.05$."
+  hint="Let $n$ be the number of nickels and write the number of dimes in terms of $n$. The value of the nickels plus the value of the dimes equals the total in the purse."
 >}}
 
 {{< fillin
   question="A cash drawer has \$125 total in five-dollar bills and ten-dollar bills. The number of ten-dollar bills is twice the number of five-dollar bills. How many five-dollar bills and how many ten-dollar bills are in the drawer? Enter the number of five-dollar bills and the number of ten-dollar bills, separated by a comma."
   answer="5, 10"
+  answerForm="decimal"
   answerDisplay="$5$ five-dollar bills and $10$ ten-dollar bills"
-  hint="Let $f$ be the number of five-dollar bills, so the number of ten-dollar bills is $2f$. Use $5f+10(2f)=125$."
+  hint="Let $f$ be the number of five-dollar bills and write the number of ten-dollar bills in terms of $f$. The value of each kind of bill adds up to the total in the drawer."
 >}}
 
 {{< fillin
   question="Chi has \$11.30 in dimes and quarters. The number of dimes is three more than three times the number of quarters. How many quarters and how many dimes does Chi have? Enter the number of quarters and the number of dimes, separated by a comma."
   answer="20, 63"
+  answerForm="decimal"
   answerDisplay="$20$ quarters and $63$ dimes"
-  hint="Let $q$ be the number of quarters, so the number of dimes is $3q+3$. Use $0.25q+0.10(3q+3)=11.30$."
+  hint="Let $q$ be the number of quarters and write the number of dimes in terms of $q$. The value of the quarters plus the value of the dimes equals the total."
 >}}
 
 ### Solve ticket and stamp word problems
@@ -868,22 +888,25 @@ $\textit{number}\cdot\textit{value}=\textit{total value}$.
 {{< fillin
   question="The first day of a water polo tournament, the total value of tickets sold was \$17,610. One-day passes sold for \$20 and tournament passes sold for \$30. The number of tournament passes sold was 37 more than the number of day passes sold. How many day passes and how many tournament passes were sold? Enter the number of day passes and the number of tournament passes, separated by a comma."
   answer="330, 367"
+  answerForm="decimal"
   answerDisplay="$330$ day passes and $367$ tournament passes"
-  hint="Let $d$ be the number of day passes, so the number of tournament passes is $d+37$. Use $20d+30(d+37)=17{,}610$."
+  hint="Let $d$ be the number of day passes and write the number of tournament passes in terms of $d$. The receipts from each kind of pass add up to the day’s total."
 >}}
 
 {{< fillin
   question="Julie went to the post office and bought some \$0.41 stamps and some \$0.26 postcards. She spent \$51.40 in total. The number of stamps was 20 more than twice the number of postcards. How many postcards and how many stamps did she buy? Enter the number of postcards and the number of stamps, separated by a comma."
   answer="40, 100"
+  answerForm="decimal"
   answerDisplay="$40$ postcards and $100$ stamps"
-  hint="Let $p$ be the number of postcards, so the number of stamps is $2p+20$. Use $0.41(2p+20)+0.26p=51.40$."
+  hint="Let $p$ be the number of postcards and write the number of stamps in terms of $p$. The cost of the stamps plus the cost of the postcards equals what she spent."
 >}}
 
 {{< fillin
   question="The ice rink sold 95 tickets for the afternoon skating session, for a total of \$828. General admission tickets cost \$10 each and youth tickets cost \$8 each. How many general admission tickets and how many youth tickets were sold? Enter the number of general admission tickets and the number of youth tickets, separated by a comma."
   answer="34, 61"
+  answerForm="decimal"
   answerDisplay="$34$ general admission tickets and $61$ youth tickets"
-  hint="Let $g$ be the number of general admission tickets, so the number of youth tickets is $95-g$. Use $10g+8(95-g)=828$."
+  hint="Let $g$ be the number of general admission tickets; since the total number of tickets is known, write the number of youth tickets in terms of $g$. The receipts from each kind of ticket add up to the total."
 >}}
 
 ### Solve mixture word problems
@@ -891,22 +914,25 @@ $\textit{number}\cdot\textit{value}=\textit{total value}$.
 {{< fillin
   question="Macario is making 12 pounds of nut mixture with macadamia nuts and almonds. Macadamia nuts cost \$9 per pound and almonds cost \$5.25 per pound. How many pounds of macadamia nuts and how many pounds of almonds should Macario use for the mixture to cost \$6.50 per pound? Enter the pounds of macadamia nuts and the pounds of almonds, separated by a comma."
   answer="4, 8"
+  answerForm="decimal"
   answerDisplay="$4$ pounds of macadamia nuts and $8$ pounds of almonds"
-  hint="Let $m$ be the pounds of macadamia nuts, so the pounds of almonds is $12-m$. Use $9m+5.25(12-m)=6.50(12)$."
+  hint="Let $m$ be the pounds of macadamia nuts and write the pounds of almonds in terms of $m$, using the total weight. The cost of each kind of nut adds up to the cost of the whole mixture at the target price."
 >}}
 
 {{< fillin
-  question="Riley is planning to plant a lawn and needs nine pounds of grass seed. He wants to mix Bermuda seed, which costs \$4.80 per pound, with Fescue seed, which costs \$3.50 per pound, so that the overall cost is \$4.02 per pound. How many pounds of Bermuda seed and how many pounds of Fescue seed should he buy? Enter the pounds of Bermuda seed and the pounds of Fescue seed, separated by a comma."
+  question="Riley is planning to plant a lawn and needs nine pounds of grass seed. He wants to mix Bermuda seed, which costs \$4.80 per pound, with Fescue seed, which costs \$3.50 per pound, so that the overall cost is \$4.02 per pound. How many pounds of Bermuda seed and how many pounds of Fescue seed should he buy? Enter the pounds of Bermuda seed and the pounds of Fescue seed, as decimals, separated by a comma."
   answer="3.6, 5.4"
+  answerForm="decimal"
   answerDisplay="$3.6$ pounds of Bermuda seed and $5.4$ pounds of Fescue seed"
-  hint="Let $b$ be the pounds of Bermuda seed, so the pounds of Fescue seed is $9-b$. Use $4.80b+3.50(9-b)=4.02(9)$."
+  hint="Let $b$ be the pounds of Bermuda seed and write the pounds of Fescue seed in terms of $b$, using the total weight. The cost of each seed adds up to the cost of the whole mix at the overall price."
 >}}
 
 {{< fillin
   question="Vern sold his 1964 Ford Mustang for \$55,000 and wants to invest the money to earn 5.8% interest per year. He will put some of the money into Fund A, which earns 3% per year, and the rest into Fund B, which earns 10% per year. How much should he invest in each fund, in dollars, to earn 5.8% interest per year on the total amount? Enter the amount invested in Fund A and the amount invested in Fund B, separated by a comma."
   answer="33000, 22000"
+  answerForm="decimal"
   answerDisplay="\$33,000 in Fund A and \$22,000 in Fund B"
-  hint="Let $a$ be the amount invested in Fund A, so the amount in Fund B is $55{,}000-a$. Use $0.03a+0.10(55{,}000-a)=0.058(55{,}000)$."
+  hint="Let $a$ be the amount invested in Fund A and write the amount in Fund B in terms of $a$, using the total. The interest from each fund adds up to the interest on the whole amount at the target rate."
 >}}
 
 ### Solve uniform motion applications
@@ -914,31 +940,35 @@ $\textit{number}\cdot\textit{value}=\textit{total value}$.
 {{< fillin
   question="Kathy and Cheryl are walking in a fundraiser. Kathy completes the course in 4.8 hours and Cheryl completes the course in eight hours. Kathy walks two miles per hour faster than Cheryl. Find Kathy’s speed and Cheryl’s speed, in miles per hour. Enter Kathy’s speed and Cheryl’s speed, separated by a comma."
   answer="5, 3"
+  answerForm="decimal"
   answerDisplay="$5$ mph and $3$ mph"
-  hint="They cover the same distance. If Cheryl's speed is $r$, set $8r=4.8(r+2)$."
+  hint="Let $r$ be Cheryl’s speed and write Kathy’s speed in terms of $r$. They walk the same course, so set the two rate-times-time distances equal and solve."
 >}}
 
 {{< fillin
   question="Matt and Chris leave their uncle’s house in Phoenix at the same time. Matt drives west at 76 miles per hour and Chris drives east at 82 miles per hour. How many hours will it take them to be 632 miles apart?"
   answer="4"
+  answerForm="decimal"
   answerDisplay="$4$ hours"
-  hint="Their distances add to the total gap between them. Use $76t+82t=632$."
+  hint="Both drive for the same time $t$. They head in opposite directions, so the two rate-times-time distances add up to the distance between them."
 >}}
 
 {{< fillin
-  question="Julian rides his bike uphill for 45 minutes, then turns around and rides back downhill, taking 15 minutes to return to where he started. His uphill speed is 3.2 miles per hour slower than his downhill speed. Find Julian’s uphill speed and his downhill speed, in miles per hour. Enter the uphill speed and the downhill speed, separated by a comma."
+  question="Julian rides his bike uphill for 45 minutes, then turns around and rides back downhill, taking 15 minutes to return to where he started. His uphill speed is 3.2 miles per hour slower than his downhill speed. Find Julian’s uphill speed and his downhill speed, in miles per hour. Enter the uphill speed and the downhill speed, as decimals, separated by a comma."
   answer="1.6, 4.8"
+  answerForm="decimal"
   answerDisplay="$1.6$ mph uphill and $4.8$ mph downhill"
-  hint="Convert both times to hours ($\tfrac34$ and $\tfrac14$) and set the two distances equal: $\tfrac34u=\tfrac14(u+3.2)$."
+  hint="First convert both times from minutes to hours. Let $u$ be the uphill speed and write the downhill speed in terms of $u$; the distance is the same both ways, so set the two rate-times-time distances equal."
 >}}
 
 {{< fillin
   question="Lizette is training for a marathon. At 7:00 she left her house and ran until 8:15, then walked until 11:15. She covered a total distance of 19 miles. Her running speed was five miles per hour faster than her walking speed. Find Lizette’s running speed and her walking speed, in miles per hour. Enter the running speed and the walking speed, separated by a comma."
   answer="8, 3"
+  answerForm="decimal"
   answerDisplay="$8$ mph and $3$ mph"
-  hint="She ran $1.25$ hours and walked $3$ hours. If her walking speed is $w$, use $1.25(w+5)+3w=19$."
+  hint="Subtract clock times to find how many hours she ran and how many she walked. Let $w$ be her walking speed and write her running speed in terms of $w$; the two rate-times-time distances add up to the total distance."
 >}}
 
 ---
 
-<small>This page adapts [Intermediate Algebra 2e, Section 2.4](https://openstax.org/books/intermediate-algebra-2e/pages/2-4-solve-mixture-and-uniform-motion-applications), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section to this site’s interactive format, converted Try It exercises to interactive questions, and added a Practice block adapting selected end-of-section exercises confirmed against the printed Answer Key.</small>
+<small>This page adapts [Intermediate Algebra 2e, Section 2.4](https://openstax.org/books/intermediate-algebra-2e/pages/2-4-solve-mixture-and-uniform-motion-applications), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section to this site’s interactive format, converted Try It exercises to interactive questions, and added a Practice block adapting selected end-of-section exercises confirmed against the printed Answer Key; corrected four slips in the worked examples (the whale-watching check asks whether the total is \$1,196, not “\$116”; the Buttonwillow distances add up to 395 miles, not “410 miles”; the triathlon distances add up to 51 miles, not “255 miles”; the trail-mix example represents the pounds of each item, not “each type of ticket”); and added a round-to-the-nearest-tenth instruction to the Thanh and Nhat Try It, whose printed 2.2 hours is rounded.</small>

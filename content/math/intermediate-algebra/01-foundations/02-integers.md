@@ -26,25 +26,29 @@ weight: 2
 A **negative number** is a number less than $0$. The negative numbers are to
 the left of zero on the number line. See the figure below.
 
-<svg viewBox="0 0 440 90" role="img" aria-label="A number line from negative 4 to 4 with 0 in the middle. The numbers to the left of zero are labeled negative numbers; the numbers to the right of zero are labeled positive numbers; zero is labeled in the middle." style="max-width: 440px; display: block; margin: 1.5rem auto">
-  <line x1="40" y1="35" x2="360" y2="35" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="40,35 50,31 50,39" fill="currentColor" />
-  <polygon points="360,35 350,31 350,39" fill="currentColor" />
+<svg viewBox="0 0 440 100" role="img" aria-label="A number line from negative 4 to 4 with 0 in the middle. A bracket under negative 4 through negative 1 is labeled Negative numbers, a bracket under 1 through 4 is labeled Positive numbers, and an arrow points up to 0, labeled Zero." style="max-width: 440px; display: block; margin: 1.5rem auto">
+  <line x1="45" y1="35" x2="395" y2="35" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="45,35 55,31 55,39" fill="currentColor" />
+  <polygon points="395,35 385,31 385,39" fill="currentColor" />
   <g fill="currentColor" font-size="13" text-anchor="middle">
-    <line x1="80" y1="30" x2="80" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="80" y="55">-4</text>
-    <line x1="115" y1="30" x2="115" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="115" y="55">-3</text>
-    <line x1="150" y1="30" x2="150" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="150" y="55">-2</text>
-    <line x1="185" y1="30" x2="185" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="185" y="55">-1</text>
+    <line x1="80" y1="30" x2="80" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="80" y="55">−4</text>
+    <line x1="115" y1="30" x2="115" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="115" y="55">−3</text>
+    <line x1="150" y1="30" x2="150" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="150" y="55">−2</text>
+    <line x1="185" y1="30" x2="185" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="185" y="55">−1</text>
     <line x1="220" y1="30" x2="220" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="220" y="55">0</text>
     <line x1="255" y1="30" x2="255" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="255" y="55">1</text>
     <line x1="290" y1="30" x2="290" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="290" y="55">2</text>
     <line x1="325" y1="30" x2="325" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="325" y="55">3</text>
-    <line x1="350" y1="30" x2="350" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="350" y="55">4</text>
+    <line x1="360" y1="30" x2="360" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="360" y="55">4</text>
   </g>
+  <path d="M80,63 v4 h105 v-4" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <path d="M255,63 v4 h105 v-4" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <line x1="220" y1="76" x2="220" y2="66" stroke="currentColor" stroke-width="1.2" />
+  <polygon points="220,61 216.5,68 223.5,68" fill="currentColor" />
   <g fill="currentColor" font-size="11" text-anchor="middle">
-    <text x="130" y="80">Negative numbers</text>
-    <text x="220" y="80">Zero</text>
-    <text x="310" y="80">Positive numbers</text>
+    <text x="132.5" y="86">Negative numbers</text>
+    <text x="220" y="89">Zero</text>
+    <text x="307.5" y="86">Positive numbers</text>
   </g>
 </svg>
 
@@ -61,26 +65,26 @@ $-2$ is $2$.
 
 The figure below illustrates the definition.
 
-<svg viewBox="0 0 360 90" role="img" aria-label="A number line from negative 4 to 4. Points are marked at negative 3 and at 3. A bracket labeled 3 spans from negative 3 to 0, and another bracket labeled 3 spans from 0 to 3, showing that negative 3 and 3 are each three units from zero." style="max-width: 360px; display: block; margin: 1.5rem auto">
+<svg viewBox="0 0 400 80" role="img" aria-label="A number line from negative 4 to 4. Points are marked at negative 3 and at 3. A bracket labeled 3 spans from negative 3 to 0, and another bracket labeled 3 spans from 0 to 3, showing that negative 3 and 3 are each three units from zero." style="max-width: 400px; display: block; margin: 1.5rem auto">
   <g fill="currentColor" font-size="13" text-anchor="middle">
-    <text x="128" y="20">3</text>
-    <text x="272" y="20">3</text>
+    <text x="147.5" y="18">3</text>
+    <text x="252.5" y="18">3</text>
   </g>
   <path d="M95,28 v-4 h105 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
   <path d="M200,28 v-4 h105 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <line x1="20" y1="45" x2="340" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,45 30,41 30,49" fill="currentColor" />
-  <polygon points="340,45 330,41 330,49" fill="currentColor" />
+  <line x1="25" y1="45" x2="375" y2="45" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="25,45 35,41 35,49" fill="currentColor" />
+  <polygon points="375,45 365,41 365,49" fill="currentColor" />
   <g fill="currentColor" font-size="13" text-anchor="middle">
-    <line x1="60" y1="40" x2="60" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="60" y="65">-4</text>
-    <line x1="95" y1="40" x2="95" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="95" y="65">-3</text>
-    <line x1="130" y1="40" x2="130" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="130" y="65">-2</text>
-    <line x1="165" y1="40" x2="165" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="165" y="65">-1</text>
+    <line x1="60" y1="40" x2="60" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="60" y="65">−4</text>
+    <line x1="95" y1="40" x2="95" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="95" y="65">−3</text>
+    <line x1="130" y1="40" x2="130" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="130" y="65">−2</text>
+    <line x1="165" y1="40" x2="165" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="165" y="65">−1</text>
     <line x1="200" y1="40" x2="200" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="200" y="65">0</text>
     <line x1="235" y1="40" x2="235" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="235" y="65">1</text>
     <line x1="270" y1="40" x2="270" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="270" y="65">2</text>
     <line x1="305" y1="40" x2="305" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="305" y="65">3</text>
-    <line x1="330" y1="40" x2="330" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="330" y="65">4</text>
+    <line x1="340" y1="40" x2="340" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="340" y="65">4</text>
   </g>
   <circle cx="95" cy="45" r="3.5" fill="currentColor" />
   <circle cx="305" cy="45" r="3.5" fill="currentColor" />
@@ -113,14 +117,14 @@ The distance between $0$ and any number on the number line is called the
 
 For example,
 
-$$\begin{array}{l} -5 \text{ is } 5 \text{ units away from } 0, \text{ so } |-5| = 5. \\[4pt] 5 \text{ is } 5 \text{ units away from } 0, \text{ so } |5| = 5. \end{array}$$
+$$\begin{array}{l} -5 \text{ is } 5 \text{ units away from } 0, \text{ so } \lvert -5\rvert = 5. \\[4pt] 5 \text{ is } 5 \text{ units away from } 0, \text{ so } |5| = 5. \end{array}$$
 
 The figure below illustrates this idea.
 
 <svg viewBox="0 0 360 90" role="img" aria-label="A number line with points marked at negative 5 and 5. A bracket labeled 5 units spans from negative 5 to 0, and another bracket labeled 5 units spans from 0 to 5, showing that 5 and negative 5 are each five units from zero." style="max-width: 360px; display: block; margin: 1.5rem auto">
   <g fill="currentColor" font-size="12" text-anchor="middle">
-    <text x="110" y="20">5 units</text>
-    <text x="250" y="20">5 units</text>
+    <text x="115" y="20">5 units</text>
+    <text x="245" y="20">5 units</text>
   </g>
   <path d="M50,28 v-4 h130 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
   <path d="M180,28 v-4 h130 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
@@ -128,7 +132,7 @@ The figure below illustrates this idea.
   <polygon points="20,45 30,41 30,49" fill="currentColor" />
   <polygon points="340,45 330,41 330,49" fill="currentColor" />
   <g fill="currentColor" font-size="13" text-anchor="middle">
-    <line x1="50" y1="40" x2="50" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="50" y="65">-5</text>
+    <line x1="50" y1="40" x2="50" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="50" y="65">−5</text>
     <line x1="180" y1="40" x2="180" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="180" y="65">0</text>
     <line x1="310" y1="40" x2="310" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="310" y="65">5</text>
   </g>
@@ -143,27 +147,27 @@ itself, because the distance from $0$ to $0$ on the number line is zero units.
 In the next example, we'll order expressions with absolute values.
 
 **Example.** Fill in $<$, $>$, or $=$ for each of the following pairs of
-numbers: (a) $|-5| \,\rule{1.5em}{0.4pt}\, -|-5|$; (b) $8 \,\rule{1.5em}{0.4pt}\, -|-8|$; (c) $-9 \,\rule{1.5em}{0.4pt}\, -|-9|$; (d) $-(-16) \,\rule{1.5em}{0.4pt}\, |-16|$.
+numbers: (a) $\lvert -5\rvert \,\rule{1.5em}{0.4pt}\, -\lvert -5\rvert$; (b) $8 \,\rule{1.5em}{0.4pt}\, -\lvert -8\rvert$; (c) $-9 \,\rule{1.5em}{0.4pt}\, -\lvert -9\rvert$; (d) $-(-16) \,\rule{1.5em}{0.4pt}\, \lvert -16\rvert$.
 
 (a) Simplify each side, then order:
 
-$$\begin{array}{lrcl} & |-5| &\rule{1.5em}{0.4pt}& -|-5| \\[4pt] \text{Simplify.} & 5 &\rule{1.5em}{0.4pt}& -5 \\[4pt] \text{Order.} & 5 &>& -5 \\[4pt] & |-5| &>& -|-5| \end{array}$$
+$$\begin{array}{lrcl} & \lvert -5\rvert &\rule{1.5em}{0.4pt}& -\lvert -5\rvert \\[4pt] \text{Simplify.} & 5 &\rule{1.5em}{0.4pt}& -5 \\[4pt] \text{Order.} & 5 &>& -5 \\[4pt] & \lvert -5\rvert &>& -\lvert -5\rvert \end{array}$$
 
 (b) Simplify each side, then order:
 
-$$\begin{array}{lrcl} & 8 &\rule{1.5em}{0.4pt}& -|-8| \\[4pt] \text{Simplify.} & 8 &\rule{1.5em}{0.4pt}& -8 \\[4pt] \text{Order.} & 8 &>& -8 \\[4pt] & 8 &>& -|-8| \end{array}$$
+$$\begin{array}{lrcl} & 8 &\rule{1.5em}{0.4pt}& -\lvert -8\rvert \\[4pt] \text{Simplify.} & 8 &\rule{1.5em}{0.4pt}& -8 \\[4pt] \text{Order.} & 8 &>& -8 \\[4pt] & 8 &>& -\lvert -8\rvert \end{array}$$
 
 (c) Simplify each side, then order:
 
-$$\begin{array}{lrcl} & -9 &\rule{1.5em}{0.4pt}& -|-9| \\[4pt] \text{Simplify.} & -9 &\rule{1.5em}{0.4pt}& -9 \\[4pt] \text{Order.} & -9 &=& -9 \\[4pt] & -9 &=& -|-9| \end{array}$$
+$$\begin{array}{lrcl} & -9 &\rule{1.5em}{0.4pt}& -\lvert -9\rvert \\[4pt] \text{Simplify.} & -9 &\rule{1.5em}{0.4pt}& -9 \\[4pt] \text{Order.} & -9 &=& -9 \\[4pt] & -9 &=& -\lvert -9\rvert \end{array}$$
 
 (d) Simplify each side, then order:
 
-$$\begin{array}{lrcl} & -(-16) &\rule{1.5em}{0.4pt}& |-16| \\[4pt] \text{Simplify.} & 16 &\rule{1.5em}{0.4pt}& 16 \\[4pt] \text{Order.} & 16 &=& 16 \\[4pt] & -(-16) &=& |-16| \end{array}$$
+$$\begin{array}{lrcl} & -(-16) &\rule{1.5em}{0.4pt}& \lvert -16\rvert \\[4pt] \text{Simplify.} & 16 &\rule{1.5em}{0.4pt}& 16 \\[4pt] \text{Order.} & 16 &=& 16 \\[4pt] & -(-16) &=& \lvert -16\rvert \end{array}$$
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $-9 \_\_\_ -|-9|$"
-  hint="Simplify the right side: $-|-9| = -9$. Then compare the two values."
+  question="Fill in the blank with $<$, $>$, or $=$: $-(-9) \_\_\_ \lvert -9\rvert$"
+  hint="Simplify each side on its own, then compare the two numbers on the number line."
   answer="$=$"
 >}}
 $=$
@@ -172,8 +176,8 @@ $<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $2 \_\_\_ -|-2|$"
-  hint="Simplify the right side: $-|-2| = -2$. Then compare $2$ with $-2$."
+  question="Fill in the blank with $<$, $>$, or $=$: $2 \_\_\_ -\lvert -2\rvert$"
+  hint="Take the absolute value inside the bars first, then apply the negative sign in front of them, then compare."
   answer="$>$"
 >}}
 $>$
@@ -182,8 +186,8 @@ $=$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $-1 \_\_\_ |-1|$"
-  hint="Simplify the right side: $|-1| = 1$. Then compare $-1$ with $1$."
+  question="Fill in the blank with $<$, $>$, or $=$: $-1 \_\_\_ \lvert -1\rvert$"
+  hint="An absolute value is a distance from $0$. Simplify the right side, then compare the two numbers on the number line."
   answer="$<$"
 >}}
 $<$
@@ -219,7 +223,7 @@ $$\begin{array}{lrcl} & && 24 - |19 - 3(6 - 2)| \\[4pt] \text{Work inside parent
   question="Simplify: $9 - |8 - 4(7 - 5)|$."
   answer="9"
   answerForm="decimal"
-  hint="Work inside the parentheses first, then multiply. Inside the bars you should reach $|8 - 8| = 0$."
+  hint="Work inside the parentheses first, then multiply, then subtract inside the bars, then take the absolute value."
 >}}
 
 ## Add and subtract integers
@@ -230,7 +234,7 @@ $$\begin{array}{ll} \text{Counting numbers} & 1, 2, 3 \ldots \\[4pt] \text{Whole
 
 Our work with opposites gives us a way to define the **integers**. The whole
 numbers and their opposites are called the integers. The integers are the
-numbers $\ldots -3, -2, -1, 0, 1, 2, 3 \ldots$
+numbers $\ldots {-3}, -2, -1, 0, 1, 2, 3 \ldots$
 
 {{< callout type="info" >}}
   **Integers.** The whole numbers and their opposites are called the
@@ -238,7 +242,7 @@ numbers $\ldots -3, -2, -1, 0, 1, 2, 3 \ldots$
 
   The integers are the numbers
 
-  $$\ldots -3, -2, -1, 0, 1, 2, 3 \ldots$$
+  $$\ldots {-3}, -2, -1, 0, 1, 2, 3 \ldots$$
 {{< /callout >}}
 
 Most students are comfortable with the addition and subtraction facts for
@@ -290,21 +294,21 @@ $$1 + (-5) = -4$$
   question="Add: $-2 + (-4)$."
   answer="-6"
   answerForm="decimal"
-  hint="Both signs are the same (both negative), so add and keep the negative sign."
+  hint="Model each number with counters of its color, then count the counters you have in all."
 >}}
 
 {{< fillin
   question="Add: $-2 + 4$."
   answer="2"
   answerForm="decimal"
-  hint="The signs are different; there are more positives, so the sum is positive."
+  hint="Model both numbers with counters, remove the neutral pairs, and count what is left and its color."
 >}}
 
 {{< fillin
   question="Add: $2 + (-4)$."
   answer="-2"
   answerForm="decimal"
-  hint="The signs are different; there are more negatives, so the sum is negative."
+  hint="Pair each positive counter with a negative counter; the counters left unpaired, and their color, give the sum."
 >}}
 
 We will continue to use counters to model the subtraction. Perhaps when you
@@ -371,7 +375,7 @@ $$3 - (-1) = 4$$
   question="Subtract: $-6 - 4$."
   answer="-10"
   answerForm="decimal"
-  hint="Model 6 negatives, add 4 neutral pairs, then take away 4 positives."
+  hint="Model the first number, add neutral pairs until there are enough counters to take away, then take away the second number and count what is left."
 >}}
 
 Have you noticed that *subtraction of signed numbers can be done by adding the
@@ -410,21 +414,21 @@ $$\begin{array}{rcl} -7 - (-4) &=& -3 \\[4pt] -7 + 4 &=& -3 \end{array}$$
   question="Simplify: $21 - 13$ (which equals $21 + (-13)$)."
   answer="8"
   answerForm="decimal"
-  hint="Subtract, or add the opposite: $21 + (-13)$."
+  hint="Subtract directly, or use the Subtraction Property and add the opposite of the number being subtracted; both give the same result."
 >}}
 
 {{< fillin
   question="Simplify: $-11 - 7$ (which equals $-11 + (-7)$)."
   answer="-18"
   answerForm="decimal"
-  hint="Adding two negatives: $-11 + (-7)$."
+  hint="Use the addition form: add two numbers with the same sign by adding their absolute values and keeping their common sign."
 >}}
 
 {{< fillin
   question="Simplify: $6 - (-13)$ (which equals $6 + 13$)."
   answer="19"
   answerForm="decimal"
-  hint="Subtracting a negative is the same as adding its opposite: $6 + 13$."
+  hint="Use the Subtraction Property: subtracting a number is the same as adding its opposite."
 >}}
 
 What happens when there are more than three integers? We just use the order of
@@ -438,14 +442,14 @@ $$\begin{array}{lrcl} & && 7 - (-4 - 3) - 9 \\[4pt] \text{Simplify inside the pa
   question="Simplify: $8 - (-3 - 1) - 9$."
   answer="3"
   answerForm="decimal"
-  hint="Simplify inside the parentheses first: $-3 - 1 = -4$. Then work left to right."
+  hint="Simplify inside the parentheses first, then subtract from left to right."
 >}}
 
 {{< fillin
   question="Simplify: $12 - (-9 - 6) - 14$."
   answer="13"
   answerForm="decimal"
-  hint="Simplify inside the parentheses first: $-9 - 6 = -15$. Then work left to right."
+  hint="Simplify inside the parentheses first, then subtract from left to right, adding the opposite where it helps."
 >}}
 
 ## Multiply and divide integers
@@ -511,21 +515,21 @@ $$\begin{array}{lrcl} \text{(a) Divide, with signs that are the same the quotien
   question="Simplify: $-115 \div (-5)$."
   answer="23"
   answerForm="decimal"
-  hint="Same signs, so the quotient is positive."
+  hint="Divide the absolute values, then apply the sign rule for dividing two signed numbers."
 >}}
 
 {{< fillin
   question="Simplify: $5 \cdot 12$."
   answer="60"
   answerForm="decimal"
-  hint="Same signs, so the product is positive."
+  hint="Multiply the absolute values, then apply the sign rule for multiplying two signed numbers."
 >}}
 
 {{< fillin
   question="Simplify: $9(-7)$."
   answer="-63"
   answerForm="decimal"
-  hint="Different signs, so the product is negative."
+  hint="Multiply the absolute values, then decide the sign from whether the factors' signs are the same or different."
 >}}
 
 When we multiply a number by $1$, the result is the same number. Each time we
@@ -582,7 +586,7 @@ $$\begin{array}{lrcl} & -2^4 &=& -(2 \cdot 2 \cdot 2 \cdot 2) \\[4pt] \text{Mult
   question="Simplify: $(-7)^2$."
   answer="49"
   answerForm="decimal"
-  hint="The base in parentheses is $-7$; a negative squared is positive."
+  hint="The parentheses make $-7$ the base; write the power as a product of that base and multiply."
 >}}
 
 The last example showed us the difference between $(-2)^4$ and $-2^4$. This
@@ -603,21 +607,14 @@ $$\begin{array}{lrcl} & && -30 \div 2 + (-3)(-7) \\[4pt] \text{Multiply and divi
   question="Simplify: $12(-9) \div (-3)^3$."
   answer="4"
   answerForm="decimal"
-  hint="Exponents first: $(-3)^3 = -27$. Then multiply and divide left to right."
+  hint="Evaluate the power first, then multiply and divide from left to right."
 >}}
 
 {{< fillin
   question="Simplify: $-27 \div 3 + (-5)(-6)$."
   answer="21"
   answerForm="decimal"
-  hint="Divide and multiply before adding: $-9 + 30$."
->}}
-
-{{< fillin
-  question="Simplify: $18(-4) \div (-2)^3$."
-  answer="9"
-  answerForm="decimal"
-  hint="Exponents first: $(-2)^3 = -8$. Then multiply and divide left to right."
+  hint="Multiply and divide from left to right before you add."
 >}}
 
 ## Evaluate variable expressions with integers
@@ -633,12 +630,14 @@ $$\begin{array}{lrcl} & && 4x^2 - 2xy + 3y^2 \\[4pt] \text{Substitute } x = 2, y
 {{< fillin
   question="Evaluate $3x^2 - 2xy + 6y^2$ when $x = 1$, $y = -2$."
   answer="31"
+  answerForm="decimal"
   hint="Substitute with parentheses, simplify the exponents, then follow the order of operations."
 >}}
 
 {{< fillin
   question="Evaluate $4x^2 - xy + 5y^2$ when $x = -2$, $y = 3$."
   answer="67"
+  answerForm="decimal"
   hint="Substitute with parentheses, simplify the exponents, then follow the order of operations."
 >}}
 
@@ -653,15 +652,17 @@ $3$.
 $$\begin{array}{lrcl} \text{Translate.} & && [8 + (-12)] + 3 \\[4pt] \text{Simplify. Be careful not to confuse the brackets with an absolute value sign.} &&& (-4) + 3 \\[4pt] \text{Add.} & && -1 \end{array}$$
 
 {{< fillin
-  question="Translate and simplify the sum of $9$ and $-16$, increased by $4$."
+  question="Translate and simplify the sum of $9$ and $-16$, increased by $4$. Enter the simplified value."
   answer="-3"
-  hint="Translate to $[9 + (-16)] + 4$, then simplify inside the brackets first."
+  answerForm="decimal"
+  hint="Write the sum of the two numbers inside brackets, then add the amount it is increased by; simplify inside the brackets first."
 >}}
 
 {{< fillin
-  question="Translate and simplify the sum of $-8$ and $-12$, increased by $7$."
+  question="Translate and simplify the sum of $-8$ and $-12$, increased by $7$. Enter the simplified value."
   answer="-13"
-  hint="Translate to $[-8 + (-12)] + 7$, then simplify inside the brackets first."
+  answerForm="decimal"
+  hint="Group the sum of the first two numbers in brackets, then add the amount it is increased by; simplify inside the brackets first."
 >}}
 
 ## Use integers in applications
@@ -690,13 +691,15 @@ was the difference in the morning and afternoon temperatures?
 {{< fillin
   question="In the morning, the temperature in Anchorage, Alaska was $15$ degrees. By mid-afternoon the temperature had dropped to $30$ degrees below zero. What was the difference, in degrees, in the morning and afternoon temperatures? Enter just the number."
   answer="45"
-  hint="Find the difference of $15$ and $-30$: translate to $15 - (-30)$."
+  answerForm="decimal"
+  hint="Write '30 degrees below zero' as a negative integer, then subtract the afternoon temperature from the morning temperature."
 >}}
 
 {{< fillin
   question="The temperature in Denver was $-6$ degrees at lunchtime. By sunset the temperature had dropped to $-15$ degrees. What was the difference, in degrees, in the lunchtime and sunset temperatures? Enter just the number."
   answer="9"
-  hint="Find the difference of $-6$ and $-15$: translate to $-6 - (-15)$."
+  answerForm="decimal"
+  hint="Subtract the sunset temperature from the lunchtime temperature, then use the Subtraction Property."
 >}}
 
 {{< callout type="info" >}}
@@ -718,7 +721,7 @@ distance from zero on the number line but on the opposite side of zero; the
 opposite of $a$ is written $-a$. **absolute value** — the distance of a number
 from $0$ on the number line, written $|n|$; it is always greater than or equal
 to zero. **integers** — the whole numbers and their opposites:
-$\ldots -3, -2, -1, 0, 1, 2, 3 \ldots$ **neutral pair** — a positive counter
+$\ldots {-3}, -2, -1, 0, 1, 2, 3 \ldots$ **neutral pair** — a positive counter
 paired with a negative counter, whose value is zero.
 
 ## Practice
@@ -726,7 +729,7 @@ paired with a negative counter, whose value is zero.
 ### Simplify expressions with absolute value
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $|-7| \_\_\_ -|-7|$."
+  question="Fill in the blank with $<$, $>$, or $=$: $\lvert -7\rvert \_\_\_ -\lvert -7\rvert$."
   answer="$>$"
   hint="Evaluate each absolute value before comparing the two resulting integers."
 >}}
@@ -736,7 +739,7 @@ $<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $6 \_\_\_ -|-6|$."
+  question="Fill in the blank with $<$, $>$, or $=$: $6 \_\_\_ -\lvert -6\rvert$."
   answer="$>$"
   hint="The absolute value is positive; then apply the negative sign outside the bars."
 >}}
@@ -746,9 +749,9 @@ $>$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $|-11| \_\_\_ -11$."
+  question="Fill in the blank with $<$, $>$, or $=$: $\lvert -11\rvert \_\_\_ -11$."
   answer="$>$"
-  hint="Find the absolute value first, then compare a positive number with a negative number."
+  hint="Simplify the absolute value first, then compare the two numbers on the number line."
 >}}
 $<$
 $=$
@@ -756,9 +759,9 @@ $>$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $-(-13) \_\_\_ -|-13|$."
+  question="Fill in the blank with $<$, $>$, or $=$: $-(-13) \_\_\_ -\lvert -13\rvert$."
   answer="$>$"
-  hint="A double negative is positive, while the negative outside the absolute value makes the right side negative."
+  hint="Simplify each side on its own: the opposite of a number on the left, the opposite of an absolute value on the right. Then compare."
 >}}
 $=$
 $>$
@@ -771,21 +774,28 @@ $<$
   question="Simplify: $-7 + (-4)$."
   answer="-11"
   answerForm="decimal"
-  hint="The addends have the same sign, so add their absolute values and keep the negative sign."
+  hint="Compare the signs of the addends, then apply the rule for adding integers with those signs."
 >}}
 
 {{< fillin
   question="Simplify: $-7 + 4$."
   answer="-3"
   answerForm="decimal"
-  hint="The addends have different signs, so subtract the smaller absolute value from the larger one and use the sign of $-7$."
+  hint="The addends have different signs: subtract the smaller absolute value from the larger one and keep the sign of the addend with the larger absolute value."
 >}}
 
 {{< fillin
   question="Simplify: $7 + (-4)$."
   answer="3"
   answerForm="decimal"
-  hint="The addends have different signs, so subtract the smaller absolute value from the larger one and use the sign of $7$."
+  hint="Model the addends with counters, remove the neutral pairs, and count what is left and its color."
+>}}
+
+{{< fillin
+  question="Simplify: $-14 - (-27) + 9$."
+  answer="22"
+  answerForm="decimal"
+  hint="Rewrite the subtraction as adding the opposite, then add from left to right."
 >}}
 
 ### Multiply and divide integers
@@ -794,28 +804,28 @@ $<$
   question="Multiply: $-4 \cdot 8$."
   answer="-32"
   answerForm="decimal"
-  hint="The factors have different signs, so the product is negative."
+  hint="Multiply the absolute values, then apply the sign rule for multiplying two signed numbers."
 >}}
 
 {{< fillin
   question="Multiply: $13(-5)$."
   answer="-65"
   answerForm="decimal"
-  hint="The factors have different signs, so multiply the absolute values and make the product negative."
+  hint="Multiply the absolute values, then decide the sign from whether the factors' signs are the same or different."
 >}}
 
 {{< fillin
   question="Divide: $-24 \div 6$."
   answer="-4"
   answerForm="decimal"
-  hint="The dividend and divisor have different signs, so the quotient is negative."
+  hint="Divide the absolute values, then apply the sign rule for dividing two signed numbers."
 >}}
 
 {{< fillin
   question="Divide: $-52 \div (-4)$."
   answer="13"
   answerForm="decimal"
-  hint="The dividend and divisor have the same sign, so the quotient is positive."
+  hint="Divide the absolute values, then decide the sign from whether the dividend and divisor have the same or different signs."
 >}}
 
 ### Simplify expressions with integers
@@ -824,7 +834,7 @@ $<$
   question="Simplify: $(-2)^6$."
   answer="64"
   answerForm="decimal"
-  hint="The parentheses make $-2$ the base. An even number of negative factors gives a positive result."
+  hint="The parentheses make $-2$ the base; write the power as a product of six factors of that base and multiply."
 >}}
 
 {{< fillin
@@ -839,12 +849,14 @@ $<$
 {{< fillin
   question="Evaluate $y + (-14)$ when $y = -33$."
   answer="-47"
+  answerForm="decimal"
   hint="Substitute $-33$ for $y$, using parentheses if they help you keep the signs clear."
 >}}
 
 {{< fillin
   question="Evaluate $y + (-14)$ when $y = 30$."
   answer="16"
+  answerForm="decimal"
   hint="Substitute $30$ for $y$, then add a negative number."
 >}}
 
@@ -853,7 +865,7 @@ $<$
 {{< multiplechoice
   question="Which expression correctly translates the difference of $10$ and $-18$, and what is its simplified value?"
   answer="$10-(-18)=28$"
-  hint="The difference of the first number and the second means subtract $-18$ from $10$."
+  hint="'The difference of $a$ and $b$' keeps the order the numbers are named: the first minus the second."
 >}}
 $-18-10=-28$
 $10-(-18)=28$
@@ -864,7 +876,7 @@ $10+(-18)=-8$
 {{< multiplechoice
   question="Which expression correctly translates 'subtract $11$ from $-25$,' and what is its simplified value?"
   answer="$-25-11=-36$"
-  hint="The word 'from' reverses the order: begin with $-25$, then subtract $11$."
+  hint="'Subtract $a$ from $b$' starts with $b$, the number named after 'from', and takes $a$ away from it."
 >}}
 $-25-11=-36$
 $11-(-25)=36$
@@ -875,17 +887,19 @@ $11-25=-14$
 ### Use integers in applications
 
 {{< fillin
-  question="On January 15, the high temperature in Anaheim, California, was $84$ degrees. That same day, the high temperature in Embarrass, Minnesota, was $-12$ degrees. What was the difference between the temperature in Anaheim and the temperature in Embarrass? Enter just the number."
+  question="On January 15, the high temperature in Anaheim, California, was $84$ degrees. That same day, the high temperature in Embarrass, Minnesota, was $-12$ degrees. What was the difference, in degrees, between the temperature in Anaheim and the temperature in Embarrass? Enter just the number."
   answer="96"
-  hint="Find the difference by subtracting the negative temperature: $84 - (-12)$."
+  answerForm="decimal"
+  hint="Subtract the Embarrass temperature from the Anaheim temperature, then use the Subtraction Property."
 >}}
 
 {{< fillin
   question="On the first down, the Chargers had the ball on their $25$-yard line. They lost $6$ yards on the first-down play, gained $10$ yards on the second-down play, and lost $8$ yards on the third-down play. What was the yard line at the end of the third-down play? Enter just the number."
   answer="21"
-  hint="Start at $25$ and add each gain or loss: $25 + (-6) + 10 + (-8)$."
+  answerForm="decimal"
+  hint="Begin with the starting yard line, write each gain as a positive integer and each loss as a negative integer, and add them in order."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.2: Integers](https://openstax.org/books/intermediate-algebra-2e/pages/1-2-integers) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics, rendered the two-color-counter models and step tables as typeset math, and presented the multiplication/division sign rules as tables; omitted the Be Prepared note and media link; converted the "Try It" practice problems into interactive exercises with instant feedback; and adapted selected answered end-of-section exercises into interactive practice.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.2: Integers](https://openstax.org/books/intermediate-algebra-2e/pages/1-2-integers) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics, rendered the two-color-counter models and step tables as typeset math, and presented the multiplication/division sign rules as tables; corrected two captions in the subtraction counter example, which read "Take 1 negative from 3 negatives and get 2 negatives positives" for $3 - 1$ and "Take 1 positive from 3 negatives" for $-3 - (-1)$; omitted the Be Prepared note and media link; converted the "Try It" practice problems into interactive exercises with instant feedback; and adapted selected answered end-of-section exercises into interactive practice.</small>

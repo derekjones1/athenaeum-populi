@@ -24,7 +24,7 @@ following are compound inequalities.
 
 $$
 \begin{array}{c}
-x+3>-4\quad\text{and}\quad4x-5<3 \\
+x+3>-4\quad\text{and}\quad4x-5\leq3 \\
 2(y+1)<0\quad\text{or}\quad y-5\geq-2
 \end{array}
 $$
@@ -124,6 +124,40 @@ graphs will be shaded on the graph of the solution of the compound inequality.
 
 The overlap is $-3<x\leq2$, or $(-3,2]$ in interval notation.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line shaded between an open parenthesis at negative three and a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="80.8" y1="45" x2="212.8" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; −3 and x ≤ 2</text>
+</svg>
+</div>
+
 We can see that the numbers between $-3$ and $2$ are shaded on both of the
 first two graphs. They will then be shaded on the solution graph.
 
@@ -219,12 +253,47 @@ numbers shaded on *both* of the first two graphs.
 
 The overlap is $-3\leq x<2$, or $[-3,2)$ in interval notation.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line shaded between a closed bracket at negative three and an open parenthesis at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="80.8" y1="45" x2="212.8" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2 and x ≥ −3</text>
+</svg>
+</div>
+
 All the numbers that make both inequalities true are the solution to the
 compound inequality.
 
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $4x-7<9$ and $5x+8\geq3$."
   answer="[-1,4)"
+  answerForm="decimal"
   answerDisplay="$[-1,4)$"
   hint="Solve each inequality separately, then keep the numbers common to both solutions."
 >}}
@@ -281,9 +350,11 @@ $$
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
   <text x="173.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="173.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 1/2</text>
+  <text x="173.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 1/2 and x &lt; 4</text>
 </svg>
 </div>
+
+In interval notation, the solution is $(-\infty,\tfrac12]$.
 
 **Example 2.63.** Solve $\tfrac13x-4\geq-2$ and $-2(x-3)\geq4$. Graph the
 solution and write the solution in interval notation.
@@ -341,6 +412,40 @@ $$
 
 The graph is shaded from a closed bracket at $1$ to an open parenthesis at
 $5$. In interval notation, the solution is $[1,5)$.
+
+<div class="ap-figure">
+<svg role="img" aria-label="A number line from negative two to eight shaded between a closed bracket at one and an open parenthesis at five." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="107.2" y1="45" x2="212.8" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">7</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">8</text>
+  <text x="107.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">1 ≤ x &lt; 5</text>
+</svg>
+</div>
 
 When written as a double inequality, $1\leq x<5$, it is easy to see that the
 solutions are the numbers caught between one and five, including one, but not
@@ -455,9 +560,45 @@ $$
 
 Together the graphs give $(-\infty,-\tfrac32]\cup[2,\infty)$.
 
+<div class="ap-figure">
+<svg role="img" aria-label="A number line shaded left from a closed bracket at negative three halves and right from a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="120.4" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="212.8" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <text x="120.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −3/2 or x ≥ 2</text>
+</svg>
+</div>
+
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $1-2x\leq-3$ or $7+3x\leq4$."
   answer="(-\infty,-1]\cup[2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-1]\cup[2,\infty)$"
   hint="Solve each inequality, remembering to reverse the inequality when dividing by a negative number, then take the union."
 >}}
@@ -477,24 +618,30 @@ $$
 \end{array}
 $$
 
-The solution covers all real numbers.
+The solution covers all real numbers, so in interval notation it is
+$(-\infty,\infty)$.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A number line representing all real numbers, from negative infinity to infinity." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A number line from negative twelve to twelve shaded along its entire length, with arrows at both ends." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
   <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
   <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="304" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
   <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−12</text>
+  <line x1="72" y1="39" x2="72" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="72" y="70" text-anchor="middle" font-size="12" fill="currentColor">−8</text>
+  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
   <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="248" y1="39" x2="248" y2="51" stroke="currentColor" stroke-width="1.5"/>
+  <text x="248" y="70" text-anchor="middle" font-size="12" fill="currentColor">8</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">All real numbers</text>
+  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">12</text>
+  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 21/2 or x ≥ −12</text>
 </svg>
 </div>
 
@@ -530,7 +677,7 @@ hcf he uses or $24.72+1.54x$.
 
 $$
 \begin{array}{rcl}
-57.06&\leq&24.74+1.54x\leq171.02\\[4pt]
+57.06&\leq&24.72+1.54x\leq171.02\\[4pt]
 57.06-24.72&\leq&24.72-24.72+1.54x\leq171.02-24.72\\[4pt]
 32.34&\leq&1.54x\leq146.3\\[10pt]
 \tfrac{32.34}{1.54}&\leq&\tfrac{1.54x}{1.54}\leq\tfrac{146.3}{1.54}\\[10pt]
@@ -542,10 +689,11 @@ The property owner can use 21–95 hcf and still fall within the “normal usage
 billing range.
 
 {{< fillin
-  question="Due to the drought in California, many communities now have tiered water rates. There are different rates for Conservation Usage, Normal Usage and Excessive Usage. The usage is measured in the number of hundred cubic feet (hcf) the property owner uses. During the summer, a property owner will pay \$24.72 plus \$1.32 per hcf for Conservation Usage. The bill for Conservation Usage would be between or equal to \$31.32 and \$51.12. How many hcf can the owner use if she wants her usage to stay in the conservation range? Enter the least and greatest hcf, separated by commas."
+  question="Due to the drought in California, many communities now have tiered water rates. There are different rates for Conservation Usage, Normal Usage and Excessive Usage. The usage is measured in the number of hundred cubic feet (hcf) the property owner uses. During the summer, a property owner will pay \$24.72 plus \$1.32 per hcf for Conservation Usage. The bill for Conservation Usage would be between or equal to \$31.32 and \$51.12. How many hcf can the owner use if she wants her usage to stay in the conservation range? Enter the least and greatest hcf, separated by a comma."
   answer="5,20"
+  answerForm="decimal"
   answerDisplay="$5,20$ hcf"
-  hint="Write $31.32\leq24.72+1.32x\leq51.12$, then isolate $x$ in all three parts."
+  hint="Let $x$ be the number of hcf, write the bill as a double inequality between the two bill amounts, then isolate $x$ in all three parts."
 >}}
 
 {{< callout type="info" >}}
@@ -571,6 +719,7 @@ such as $a<x<b$, equivalent to $a<x$ and $x<b$.
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $x\le4$ and $x>-2$."
   answer="(-2,4]"
+  answerForm="decimal"
   answerDisplay="$(-2,4]$"
   hint="Graph each inequality, then keep only the numbers shaded on both graphs."
 >}}
@@ -578,6 +727,7 @@ such as $a<x<b$, equivalent to $a<x$ and $x<b$.
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $-3<2x-5\le1$."
   answer="(1,3]"
+  answerForm="decimal"
   answerDisplay="$(1,3]$"
   hint="Add $5$ to all three parts of the double inequality, then divide each part by $2$."
 >}}
@@ -585,10 +735,11 @@ such as $a<x<b$, equivalent to $a<x$ and $x<b$.
 {{< multiplechoice
   question="Solve the compound inequality. Which describes the solution? $\tfrac34x-5\ge-2$ and $-3(x+1)\ge6$"
   answer="no solution"
-  hint="Solve each inequality separately. If the two resulting intervals never overlap, there is no solution."
+  hint="Solve each inequality separately, remembering to reverse the inequality when dividing by a negative number, then look for the numbers that make both true."
 >}}
 $[4,\infty)$
 $(-\infty,-3]$
+$(-\infty,-3]\cup[4,\infty)$
 no solution
 {{< /multiplechoice >}}
 
@@ -597,6 +748,7 @@ no solution
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $x\le-4$ or $x>-3$."
   answer="(-\infty,-4]\cup(-3,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-4]\cup(-3,\infty)$"
   hint="Graph each inequality, then combine every number shaded on either graph."
 >}}
@@ -604,6 +756,7 @@ no solution
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $4-3x\le-2$ or $2x-1\le-5$."
   answer="(-\infty,-2]\cup[2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-2]\cup[2,\infty)$"
   hint="Solve each inequality, remembering to reverse the inequality when dividing by a negative number, then take the union of the two solution sets."
 >}}
@@ -611,6 +764,7 @@ no solution
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $3(2x-3)<-5$ or $4x-1>3$."
   answer="(-\infty,\frac{2}{3})\cup(1,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,\tfrac{2}{3})\cup(1,\infty)$"
   hint="Distribute and solve each inequality separately, then take the union of the two solution sets."
 >}}
@@ -618,19 +772,21 @@ no solution
 ### Solve applications with compound inequalities
 
 {{< fillin
-  question="Gregory is thinking of a number and wants his sister Lauren to guess it. His first clue is that six less than twice his number is between four and forty-two. Enter the least and greatest numbers Gregory might be thinking of, separated by a comma."
+  question="Gregory is thinking of a number and he wants his sister Lauren to guess the number. His first clue is that six less than twice his number is between four and forty-two. Treat “between” as including four and forty-two. Enter the least and greatest numbers Gregory might be thinking of, separated by a comma."
   answer="5,24"
+  answerForm="decimal"
   answerDisplay="$5,24$"
-  hint="Write $4\le2n-6\le42$, then isolate $n$ in all three parts."
+  hint="Let $n$ be the number, translate the clue into a double inequality, then isolate $n$ in all three parts."
 >}}
 
 {{< fillin
   question="Elouise is creating a rectangular garden in her back yard. The length of the garden is 12 feet. The perimeter of the garden must be at least 36 feet and no more than 48 feet. Enter the least and greatest width of the garden in feet, separated by a comma."
   answer="6,12"
+  answerForm="decimal"
   answerDisplay="$6,12$ feet"
-  hint="Write $36\le2(12+w)\le48$, then isolate $w$ in all three parts."
+  hint="Let $w$ be the width, write the perimeter formula with the known length between the two perimeter limits, then isolate $w$ in all three parts."
 >}}
 
 ---
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.6](https://openstax.org/books/intermediate-algebra-2e/pages/2-6-solve-compound-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the text and examples for web presentation, converted selected Try It exercises to interactive answer checks, and adapted selected end-of-section exercises into the section-final interactive Practice block. One correction: the source prints the Conservation Usage bill ceiling as \$52.12, which gives $(52.12-24.72)/1.32=20.76$ hcf rather than the 20 hcf its own Answer Key states; this page prints \$51.12, the bill at exactly 20 hcf, so the printed answer follows from the printed question. The parallel Normal Usage example is exact as printed and is left alone.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.6](https://openstax.org/books/intermediate-algebra-2e/pages/2-6-solve-compound-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the text and examples for web presentation, converted selected Try It exercises to interactive answer checks, and adapted selected end-of-section exercises into the section-final interactive Practice block (the number-game exercise also says that “between” includes its two bounds, as the source's answer does). Three corrections: the source prints the Conservation Usage bill ceiling as \$52.12, which gives $(52.12-24.72)/1.32=20.76$ hcf rather than the 20 hcf its own Answer Key states; this page prints \$51.12, the bill at exactly 20 hcf, so the printed answer follows from the printed question. The parallel Normal Usage example is exact as printed and is left alone, except that its first solution line reads $24.72+1.54x$ where the source image prints $24.74$, against the \$24.72 the problem and the next line use. The source's graph for $3(2x+5)\leq18$ and $2(x-7)<-6$ draws a parenthesis at $\tfrac12$ and labels it $x<\tfrac12$; this page's graph shows the bracket that $x\leq\tfrac12$ requires.</small>

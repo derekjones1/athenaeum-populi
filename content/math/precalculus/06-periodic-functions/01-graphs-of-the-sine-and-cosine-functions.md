@@ -152,7 +152,7 @@ Returning to the general formula for a sinusoidal function, we have analyzed how
 
 **Solution.** Let's begin by comparing the function to the simplified form $y=A\sin(Bx)$.
 
-In the given function, $A=-4$, so the amplitude is $|A|=|-4|=4$. The function is stretched.
+In the given function, $A=-4$, so the amplitude is $|A|=\lvert -4\rvert=4$. The function is stretched.
 
 **Analysis.** The negative value of $A$ results in a reflection across the $x$-axis of the sine function, as shown below.
 

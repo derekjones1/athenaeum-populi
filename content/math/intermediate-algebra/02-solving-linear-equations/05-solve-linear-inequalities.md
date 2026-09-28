@@ -30,7 +30,7 @@ solution, we put an open parenthesis at three.
 
 We can also represent inequalities using **interval notation**. There is no
 upper end to the solution to this inequality. In interval notation, we
-express $x>3$ as $(3,infty)$. The symbol $infty$ is read as **“infinity.”**
+express $x>3$ as $(3,\infty)$. The symbol $\infty$ is read as **“infinity.”**
 It is not an actual number.
 
 <div class="ap-figure">
@@ -141,6 +141,8 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
 </svg>
 </div>
 
+In interval notation, the solution is $[-3,\infty)$.
+
 (b) Shade to the left of $2.5$ and put a parenthesis at $2.5$.
 
 <div class="ap-figure">
@@ -161,6 +163,8 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
   <text x="248" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2.5</text>
 </svg>
 </div>
+
+In interval notation, the solution is $(-\infty,2.5)$.
 
 (c) Shade to the left of $-\tfrac35$, and put a bracket at $-\tfrac35$.
 
@@ -183,11 +187,14 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
 </svg>
 </div>
 
+In interval notation, the solution is $\left(-\infty,-\tfrac35\right]$.
+
 {{< fillin
   question="Graph $x>2$ mentally and write its solution in interval notation."
   answer="(2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(2,\infty)$"
-  hint="The endpoint is not included, and the solutions extend to the right."
+  hint="Decide whether $2$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 What numbers are greater than two but less than five? Are you thinking say,
@@ -223,8 +230,9 @@ endpoint. The interval notation is $[0,2.5]$.
 {{< fillin
   question="Graph $-2<x<1$ mentally and write its solution in interval notation."
   answer="(-2,1)"
+  answerForm="decimal"
   answerDisplay="$(-2,1)$"
-  hint="Neither endpoint is included."
+  hint="Decide whether each endpoint is itself a solution (bracket or parenthesis)."
 >}}
 
 ## Solve linear inequalities
@@ -318,7 +326,7 @@ stays the same. When we divide or multiply an inequality by a negative
 number, the inequality reverses.
 
 Sometimes when solving an inequality, as in the next example, the variable
-ends upon the right. We can rewrite the inequality in reverse to get the
+ends up on the right. We can rewrite the inequality in reverse to get the
 variable to the left. $x>a$ has the same meaning as $a<x$. Think about it as
 “If Xander is taller than Andy, then Andy is shorter than Xander.”
 
@@ -332,7 +340,7 @@ and write the solution in interval notation: (a) $x-\tfrac38\leq\tfrac34$
 
 $$
 \begin{array}{lrcl}
-&&x-\tfrac38&\leq\tfrac34\\[4pt]
+&x-\tfrac38&\leq&\tfrac34\\[4pt]
 \text{Add }\tfrac38\text{ to both sides of the inequality.}&x-\tfrac38+\tfrac38&\leq&\tfrac34+\tfrac38\\[4pt]
 \text{Simplify.}&x&\leq&\tfrac98
 \end{array}
@@ -357,11 +365,13 @@ $$
 </svg>
 </div>
 
+In interval notation, the solution is $\left(-\infty,\tfrac98\right]$.
+
 (b)
 
 $$
 \begin{array}{lrcl}
-&&9y&<54\\[4pt]
+&9y&<&54\\[4pt]
 \text{Divide both sides by }9\text{; the inequality stays the same.}&\tfrac{9y}{9}&<&\tfrac{54}{9}\\[4pt]
 \text{Simplify.}&y&<&6
 \end{array}
@@ -386,11 +396,13 @@ $$
 </svg>
 </div>
 
+In interval notation, the solution is $(-\infty,6)$.
+
 (c)
 
 $$
 \begin{array}{lrcl}
-&&-15&<\tfrac35z\\[4pt]
+&-15&<&\tfrac35z\\[4pt]
 \text{Multiply both sides by }\tfrac53\text{; the inequality stays the same.}&\tfrac53(-15)&<&\tfrac53(\tfrac35z)\\[4pt]
 \text{Simplify.}&-25&<&z\\[4pt]
 \text{Rewrite with the variable on the left.}&z&>&-25
@@ -416,11 +428,14 @@ $$
 </svg>
 </div>
 
+In interval notation, the solution is $(-25,\infty)$.
+
 {{< fillin
-  question="Solve $p-\tfrac34\geq\tfrac16$. Enter the value at the endpoint."
-  answer="\frac{11}{12}"
-  answerDisplay="$\tfrac{11}{12}$"
-  hint="Add $\tfrac34$ to both sides."
+  question="Solve $p-\tfrac34\geq\tfrac16$. Enter the solution as an inequality."
+  answer="p\geq\frac{11}{12}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$p\geq\tfrac{11}{12}$"
+  hint="Add $\tfrac34$ to both sides, then combine the fractions over a common denominator."
 >}}
 
 Be careful when you multiply or divide by a negative number—remember to
@@ -456,6 +471,8 @@ $$\frac{-13m}{-13}\leq\frac{65}{-13},\qquad m\leq-5.$$
 </svg>
 </div>
 
+In interval notation, the solution is $(-\infty,-5]$.
+
 (b) Multiply both sides of the inequality by $-2$. Since $-2$ is a negative,
 the inequality reverses.
 
@@ -480,11 +497,14 @@ $$-2\left(\frac n{-2}\right)\leq-2(8),\qquad n\leq-16.$$
 </svg>
 </div>
 
+In interval notation, the solution is $(-\infty,-16]$.
+
 {{< fillin
-  question="Solve $-8q<32$."
+  question="Solve $-8q<32$. Enter the solution as an inequality."
   answer="q>-4"
+  answerForm="decimal"
   answerDisplay="$q>-4$"
-  hint="Divide by $-8$ and reverse the inequality."
+  hint="Divide both sides by the coefficient of $q$; the sign of the number you divide by decides whether the inequality symbol reverses."
 >}}
 
 Most inequalities will take more than one step to solve. We follow the same
@@ -499,10 +519,10 @@ number line, and write the solution in interval notation.
 
 $$
 \begin{array}{lrcl}
-&&6y&\leq11y+17\\[4pt]
+&6y&\leq&11y+17\\[4pt]
 \text{Subtract }11y\text{ from both sides.}&6y-11y&\leq&11y-11y+17\\[4pt]
 \text{Simplify.}&-5y&\leq&17\\[4pt]
-\text{Divide by }-5\text{ and reverse the inequality.}&\tfrac{-5y}{-5}&\geq&\tfrac{17}{-5}\\[4pt]
+\text{Divide by }{-5}\text{ and reverse the inequality.}&\tfrac{-5y}{-5}&\geq&\tfrac{17}{-5}\\[4pt]
 \text{Simplify.}&y&\geq&-\tfrac{17}{5}
 \end{array}
 $$
@@ -526,11 +546,14 @@ $$
 </svg>
 </div>
 
+In interval notation, the solution is $\left[-\tfrac{17}{5},\infty\right)$.
+
 {{< fillin
-  question="Solve $3q\geq7q-23$."
+  question="Solve $3q\geq7q-23$. Enter the solution as an inequality."
   answer="q\leq\frac{23}{4}"
+  answerForm="lowest-terms"
   answerDisplay="$q\leq\tfrac{23}{4}$"
-  hint="Subtract $7q$, then divide by $-4$ and reverse the inequality."
+  hint="Collect the $q$-terms on one side and the constants on the other, then divide by the coefficient of $q$, watching its sign."
 >}}
 
 When solving inequalities, it is usually easiest to collect the variables on
@@ -546,7 +569,7 @@ the number line, and write the solution in interval notation.
 
 $$
 \begin{array}{lrcl}
-&&8p+3(p-12)&>7p-28\\[4pt]
+&8p+3(p-12)&>&7p-28\\[4pt]
 \text{Distribute.}&8p+3p-36&>&7p-28\\[4pt]
 \text{Combine like terms.}&11p-36&>&7p-28\\[4pt]
 \text{Subtract }7p\text{ from both sides.}&11p-36-7p&>&7p-28-7p\\[4pt]
@@ -577,11 +600,14 @@ $$
 </svg>
 </div>
 
+In interval notation, the solution is $(2,\infty)$.
+
 {{< fillin
-  question="Solve $9y+2(y+6)>5y-24$."
+  question="Solve $9y+2(y+6)>5y-24$. Enter the solution as an inequality."
   answer="y>-6"
+  answerForm="decimal"
   answerDisplay="$y>-6$"
-  hint="Distribute, combine like terms, and collect the variable terms."
+  hint="Distribute, combine like terms, and collect the variable terms on one side and the constants on the other."
 >}}
 
 Just like some equations are identities and some are contradictions,
@@ -597,7 +623,7 @@ on the number line, and write the solution in interval notation.
 
 $$
 \begin{array}{lrcl}
-&&8x-2(5-x)&<4(x+9)+6x\\[4pt]
+&8x-2(5-x)&<&4(x+9)+6x\\[4pt]
 \text{Distribute.}&8x-10+2x&<&4x+36+6x\\[4pt]
 \text{Combine like terms.}&10x-10&<&10x+36\\[4pt]
 \text{Subtract }10x\text{ from both sides.}&10x-10-10x&<&10x+36-10x\\[4pt]
@@ -612,8 +638,9 @@ solution is $(-\infty,\infty)$.
 {{< fillin
   question="Solve $4b-3(3-b)>5(b-6)+2b$. Enter the solution set in interval notation."
   answer="(-\infty,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,\infty)$"
-  hint="Distribute and combine like terms. The variable terms cancel."
+  hint="Distribute and combine like terms on each side, then collect the variable terms on one side and read what is left."
 >}}
 
 We can clear fractions in inequalities much as we did in equations. Again,
@@ -627,7 +654,7 @@ notation.
 
 $$
 \begin{array}{lrcl}
-&&\tfrac13a-\tfrac18a&>\tfrac5{24}a+\tfrac34\\[4pt]
+&\tfrac13a-\tfrac18a&>&\tfrac5{24}a+\tfrac34\\[4pt]
 \text{Multiply both sides by the LCD, }24.&24(\tfrac13a-\tfrac18a)&>&24(\tfrac5{24}a+\tfrac34)\\[4pt]
 \text{Simplify.}&8a-3a&>&5a+18\\[4pt]
 \text{Combine like terms.}&5a&>&5a+18\\[4pt]
@@ -639,12 +666,16 @@ $$
 The statement is false. The inequality is a contradiction. There is no
 solution.
 
-{{< fillin
-  question="Solve $\tfrac14x-\tfrac1{12}x>\tfrac16x+\tfrac78$. How many solutions are there?"
-  answer="0"
-  answerDisplay="No solution"
-  hint="Clear fractions and simplify; the variable terms cancel."
+{{< multiplechoice
+  question="Solve the inequality $\tfrac14x-\tfrac1{12}x>\tfrac16x+\tfrac78$. Which describes its solution?"
+  answer="a contradiction — no solution"
+  hint="Clear the fractions by multiplying both sides by the LCD of the denominators, then combine like terms and collect the variable terms on one side."
 >}}
+a specific solution, $x>\tfrac{21}{8}$
+a specific solution, $x<-21$
+an identity — every real number is a solution
+a contradiction — no solution
+{{< /multiplechoice >}}
 
 ## Translate to an inequality and solve
 
@@ -690,11 +721,14 @@ $$x-27+27\geq48+27,\qquad x\geq75.$$
 </svg>
 </div>
 
+In interval notation, the solution is $[75,\infty)$.
+
 {{< fillin
-  question="Translate and solve: Nineteen less than $p$ is no less than 47."
+  question="Translate and solve: Nineteen less than $p$ is no less than 47. Enter the solution as an inequality."
   answer="p\geq66"
+  answerForm="decimal"
   answerDisplay="$p\geq66$"
-  hint="‘No less than’ means greater than or equal to."
+  hint="Translate each phrase using the phrase table above (mind which quantity is subtracted from which), then isolate $p$."
 >}}
 
 ## Solve applications with linear inequalities
@@ -745,8 +779,9 @@ maximum of $15$ tablets.
 {{< fillin
   question="Angie has \$20 to spend on juice boxes for her son’s preschool picnic. Each pack costs \$2.63. What is the maximum number of packs she can buy?"
   answer="7"
+  answerForm="decimal"
   answerDisplay="7 packs"
-  hint="Solve $2.63p\leq20$, then use the largest whole-number solution."
+  hint="Write an inequality for the cost of the packs against the \$20 she has, solve it, and take the largest whole number that satisfies it."
 >}}
 
 **Example.** Taleisha’s phone plan costs her \$28.80 a month plus \$0.20 per
@@ -779,10 +814,11 @@ send/receive no more than $106$ text messages to keep her bill no more than
 \$50.
 
 {{< fillin
-  question="Sergio and Lizeth plan to rent a car for \$75 a week plus \$0.25 a mile. How many miles can they travel and keep within their \$200 budget?"
+  question="Sergio and Lizeth plan to rent a car for \$75 a week plus \$0.25 a mile. What is the maximum number of miles they can travel during the week and keep within their \$200 budget?"
   answer="500"
+  answerForm="decimal"
   answerDisplay="500 miles"
-  hint="Solve $75+0.25m\leq200$."
+  hint="Write an inequality: the weekly charge plus the mileage charge is at most the budget. Then solve for the number of miles."
 >}}
 
 Profit is the money that remains when the costs have been subtracted from the
@@ -814,17 +850,18 @@ $$2.50j-650\geq2{,}800.$$
 $j\geq1{,}380$ invitations.
 
 **Step 6. Check** the answer in the problem and make sure it makes sense. If
-Felicity wrote $1400$ invitations, her profit would be $2.50(1400)-650$, or
+Felicity wrote $1{,}400$ invitations, her profit would be $2.50(1{,}400)-650$, or
 \$2,850. This is more than \$2,800.
 
 **Step 7. Write** a sentence that answers the question. Felicity must write
 at least $1{,}380$ invitations.
 
 {{< fillin
-  question="Caleb charges \$32 per hour for pet sitting. His monthly expenses are \$2,272. How many hours must he work to earn a profit of at least \$800 per month?"
+  question="Caleb charges \$32 per hour for pet sitting. His monthly expenses are \$2,272. What is the minimum number of hours he must work to earn a profit of at least \$800 per month?"
   answer="96"
+  answerForm="decimal"
   answerDisplay="96 hours"
-  hint="Solve $32h-2{,}272\geq800$."
+  hint="Profit is revenue minus expenses: write an inequality for a profit of at least \$800, then solve for the hours."
 >}}
 
 There are many situations in which several quantities contribute to the
@@ -880,10 +917,11 @@ $$
 least $23$ hours.
 
 {{< fillin
-  question="Brenda has \$500 in savings and can earn \$15 an hour babysitting. She expects to pay \$350 airfare, \$375 for food and entertainment, and \$60 a night for 3 nights. How many hours must she babysit to pay for the trip?"
+  question="Brenda has \$500 in savings and can earn \$15 an hour babysitting. She expects to pay \$350 airfare, \$375 for food and entertainment, and \$60 a night for 3 nights. What is the minimum number of hours she must babysit to pay for the trip?"
   answer="27"
+  answerForm="decimal"
   answerDisplay="27 hours"
-  hint="Set total expenses less than or equal to $500+15h$."
+  hint="Add up the trip’s expenses and require them to be no more than her savings plus her babysitting earnings, then solve for the hours."
 >}}
 
 ## Key terms
@@ -897,45 +935,51 @@ $ax+b\geq c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
 ### Graph inequalities on the number line
 
 {{< fillin
-  question="Graph $x > 3$ on a number line. Enter the resulting set in interval notation."
-  answer="(3,\infty)"
-  answerDisplay="$(3, \infty)$"
-  hint="The endpoint $3$ is excluded, so use a parenthesis there and extend the interval toward larger numbers."
+  question="Graph $-5 \le x < -3$ on a number line. Enter the resulting set in interval notation."
+  answer="[-5,-3)"
+  answerForm="decimal"
+  answerDisplay="$[-5, -3)$"
+  hint="Decide whether each endpoint is itself a solution (bracket or parenthesis)."
 >}}
 
 {{< fillin
   question="Graph $x \le -0.5$ on a number line. Enter the resulting set in interval notation."
   answer="(-\infty,-0.5]"
+  answerForm="decimal"
   answerDisplay="$(-\infty, -0.5]$"
-  hint="The endpoint $-0.5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+  hint="Decide whether $-0.5$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x \ge \tfrac{1}{3}$ on a number line. Enter the resulting set in interval notation."
   answer="[\frac{1}{3},\infty)"
+  answerForm="fraction lowest-terms"
   answerDisplay="$[\tfrac{1}{3}, \infty)$"
-  hint="The endpoint $\tfrac{1}{3}$ is included, so use a bracket there and extend the interval toward larger numbers."
+  hint="Decide whether $\tfrac{1}{3}$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x \le 5$ on a number line. Enter the resulting set in interval notation."
   answer="(-\infty,5]"
+  answerForm="decimal"
   answerDisplay="$(-\infty, 5]$"
-  hint="The endpoint $5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+  hint="Decide whether $5$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x \ge -1.5$ on a number line. Enter the resulting set in interval notation."
   answer="[-1.5,\infty)"
+  answerForm="decimal"
   answerDisplay="$[-1.5, \infty)$"
-  hint="The endpoint $-1.5$ is included, so use a bracket there and extend the interval toward larger numbers."
+  hint="Decide whether $-1.5$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 {{< fillin
   question="Graph $x < -\tfrac{7}{3}$ on a number line. Enter the resulting set in interval notation."
   answer="(-\infty,-\frac{7}{3})"
+  answerForm="fraction lowest-terms"
   answerDisplay="$(-\infty, -\tfrac{7}{3})$"
-  hint="The endpoint $-\tfrac{7}{3}$ is excluded, so use a parenthesis there and extend the interval toward smaller numbers."
+  hint="Decide whether $-\tfrac{7}{3}$ itself is a solution (bracket or parenthesis), then which way from it the solutions run."
 >}}
 
 ### Solve linear inequalities
@@ -943,66 +987,78 @@ $ax+b\geq c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
 {{< fillin
   question="Solve $5u \le 8u - 21$, then write the solution in interval notation."
   answer="[7,\infty)"
+  answerForm="decimal"
   answerDisplay="$[7, \infty)$"
-  hint="Subtract $8u$ from both sides to get $-3u\le-21$, then divide by $-3$ and reverse the inequality."
+  hint="Collect the $u$-terms on one side and the constants on the other, then divide by the coefficient of $u$, watching its sign."
 >}}
 
 {{< fillin
   question="Solve $9y + 5(y+3) < 4y - 35$, then write the solution in interval notation."
   answer="(-\infty,-5)"
+  answerForm="decimal"
   answerDisplay="$(-\infty, -5)$"
-  hint="Distribute and combine like terms to get $10y<-50$, then divide by positive $10$."
+  hint="Distribute the $5$, combine like terms, collect the $y$-terms on one side and the constants on the other, then divide by the coefficient of $y$, watching its sign."
 >}}
 
 {{< fillin
   question="Solve $4k - (k-2) \ge 7k - 26$, then write the solution in interval notation."
   answer="(-\infty,7]"
+  answerForm="decimal"
   answerDisplay="$(-\infty, 7]$"
-  hint="Distribute the negative sign and combine like terms to get $-4k\ge-28$, then divide by $-4$ and reverse the inequality."
+  hint="Distribute the negative sign, combine like terms, collect the $k$-terms on one side and the constants on the other, then divide by the coefficient of $k$, watching its sign."
 >}}
 
 {{< fillin
   question="Solve $-\tfrac{21}{8}y \le -\tfrac{15}{28}$, then write the solution in interval notation."
   answer="[\frac{10}{49},\infty)"
+  answerForm="fraction lowest-terms"
   answerDisplay="$[\tfrac{10}{49}, \infty)$"
-  hint="Multiply both sides by $-\tfrac{8}{21}$ and reverse the inequality."
+  hint="Multiply both sides by the reciprocal of the coefficient of $y$; the sign of that number decides whether the inequality symbol reverses."
 >}}
 
-{{< fillin
-  question="Solve $18q - 4(10-3q) < 5(6q-8)$. How many solutions are there?"
-  answer="0"
-  answerDisplay="No solution"
-  hint="Distribute and combine like terms; the variable terms cancel and leave a false statement."
+{{< multiplechoice
+  question="Solve the inequality $18q - 4(10-3q) < 5(6q-8)$. Which describes its solution?"
+  answer="a contradiction — no solution"
+  hint="Distribute on both sides, combine like terms, then collect the variable terms on one side and read what is left."
 >}}
+a specific solution, $q>0$
+a contradiction — no solution
+an identity — every real number is a solution
+a specific solution, $q<0$
+{{< /multiplechoice >}}
 
 ### Translate words to an inequality and solve
 
 {{< fillin
-  question="Translate and solve: Six more than $k$ exceeds $25$."
+  question="Translate and solve: Six more than $k$ exceeds $25$. Enter the solution as an inequality."
   answer="k>19"
+  answerForm="decimal"
   answerDisplay="$k>19$"
-  hint="Translate to $k+6>25$, then subtract $6$ from both sides."
+  hint="Translate each phrase using the phrase table above, then isolate $k$."
 >}}
 
 {{< fillin
-  question="Translate and solve: Twelve less than $x$ is no less than $21$."
+  question="Translate and solve: Twelve less than $x$ is no less than $21$. Enter the solution as an inequality."
   answer="x\geq33"
+  answerForm="decimal"
   answerDisplay="$x\geq33$"
-  hint="‘No less than’ means greater than or equal to; translate to $x-12\geq21$."
+  hint="Translate each phrase using the phrase table above (mind which quantity is subtracted from which), then isolate $x$."
 >}}
 
 {{< fillin
-  question="Translate and solve: Negative two times $s$ is lower than $56$."
+  question="Translate and solve: Negative two times $s$ is lower than $56$. Enter the solution as an inequality."
   answer="s>-28"
+  answerForm="decimal"
   answerDisplay="$s>-28$"
-  hint="Translate to $-2s<56$, then divide by $-2$ and reverse the inequality."
+  hint="Translate each phrase using the phrase table above, then divide by the coefficient of $s$, watching its sign."
 >}}
 
 {{< fillin
-  question="Translate and solve: Fifteen less than $a$ is at least $-7$."
+  question="Translate and solve: Fifteen less than $a$ is at least $-7$. Enter the solution as an inequality."
   answer="a\geq8"
+  answerForm="decimal"
   answerDisplay="$a\geq8$"
-  hint="Translate to $a-15\geq-7$, then add $15$ to both sides."
+  hint="Translate each phrase using the phrase table above (mind which quantity is subtracted from which), then isolate $a$."
 >}}
 
 ### Solve applications with linear inequalities
@@ -1010,31 +1066,35 @@ $ax+b\geq c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
 {{< fillin
   question="The elevator in an apartment building has a sign that says the maximum weight is 2,100 pounds. If the average weight of one person is 150 pounds, what is the maximum number of people who can safely ride the elevator?"
   answer="14"
+  answerForm="decimal"
   answerDisplay="14 people"
-  hint="Solve $150p\le2{,}100$, then use the largest whole-number solution."
+  hint="Write an inequality for the total weight of the riders against the posted maximum, solve it, and take the largest whole number that satisfies it."
 >}}
 
 {{< fillin
   question="Kimuyen needs to earn \$4,150 per month to pay all her expenses. Her job pays her \$3,475 per month plus 4% of her total sales. What is the minimum total sales, in dollars, Kimuyen needs?"
   answer="16875"
+  answerForm="decimal"
   answerDisplay="\$16,875"
-  hint="Solve $3{,}475+0.04s\geq4{,}150$."
+  hint="Her pay is the monthly base plus 4% of her sales; require it to be at least her expenses and solve for the sales."
 >}}
 
 {{< fillin
   question="Kiyoshi's phone plan costs \$17.50 per month plus \$0.15 per text message. What is the maximum number of text messages Kiyoshi can send so the phone bill is no more than \$56.60?"
   answer="260"
+  answerForm="decimal"
   answerDisplay="260 messages"
-  hint="Solve $17.50+0.15t\leq56.60$."
+  hint="Write an inequality: the monthly charge plus the message charges is at most the budget. Solve it and take the largest whole number that satisfies it."
 >}}
 
 {{< fillin
-  question="Noe installs and configures software on home computers. He charges \$125 per job. His monthly expenses are \$1,600. How many jobs must he work to make a profit of at least \$2,400?"
+  question="Noe installs and configures software on home computers. He charges \$125 per job. His monthly expenses are \$1,600. What is the minimum number of jobs he must work to make a profit of at least \$2,400?"
   answer="32"
+  answerForm="decimal"
   answerDisplay="32 jobs"
-  hint="Solve $125j-1{,}600\geq2{,}400$."
+  hint="Profit is revenue minus expenses: write an inequality for a profit of at least \$2,400, then solve for the number of jobs."
 >}}
 
 ---
 
-<small>Adapted from [Intermediate Algebra 2e, Section 2.5](https://openstax.org/books/intermediate-algebra-2e/pages/2-5-solve-linear-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source into an interactive web section, converted selected Try It exercises into answer-checked activities, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>Adapted from [Intermediate Algebra 2e, Section 2.5](https://openstax.org/books/intermediate-algebra-2e/pages/2-5-solve-linear-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source into an interactive web section; recreated the single-bound number-line figures as accessible inline graphics (the bounded intervals of the second example and the identity’s graph are described in words), drawing a parenthesis at 2 for $p>2$ where the source figure draws a bracket; set the phrase-to-symbol reference as a markdown table; corrected “ends upon the right” to “ends up on the right”; omitted the Be Prepared quiz, the number-line summary figure, the Key Concepts summary (its properties appear in the body callouts), and the Self Check checklist; converted selected Try It exercises into answer-checked activities, posing the contradiction Try It as a multiple choice among descriptions of the solution; and adapted selected end-of-section exercises into an interactive Practice block, posing the contradiction exercise $18q-4(10-3q)<5(6q-8)$ the same way.</small>

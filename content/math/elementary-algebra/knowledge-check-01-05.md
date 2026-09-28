@@ -11,9 +11,9 @@ weight: 6
 
 {{< callout type="info" >}}
   **Test yourself on Chapters 1–5.** Every question comes from the source
-  textbook's chapter Practice Tests (with a few drawn from its Review
-  Exercises), and every answer is graded against the book's official
-  Answer Key. There are no hints — treat it like a test. Questions are
+  textbook's chapter Practice Tests and Review Exercises, and every
+  answer is graded against the book's official Answer Key (one sign
+  error in it is corrected and noted at the foot of the page). There are no hints — treat it like a test. Questions are
   grouped by the section they cover, so a miss tells you exactly which
   section to review.
 {{< /callout >}}
@@ -30,8 +30,9 @@ weight: 6
 >}}
 
 {{< fillin
-  question="Find the Least Common Multiple of 18 and 24."
-  answer="72"
+  question="Find the least common multiple of $24$ and $30$ using the prime factors method."
+  answer="120"
+  answerForm="decimal"
 >}}
 
 ### 1.2 Use the Language of Algebra
@@ -39,12 +40,13 @@ weight: 6
 {{< fillin
   question="Evaluate $9x + 7$ when $x = 3$."
   answer="34"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify by combining like terms: $17a + 9a$."
   answer="26a"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
 >}}
 
 {{< fillin
@@ -58,11 +60,13 @@ weight: 6
 {{< fillin
   question="Evaluate $-|x|$ when $x = -2$."
   answer="-2"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Translate to an algebraic expression and simplify: twenty less than negative 7. Give the simplified value."
   answer="-27"
+  answerForm="decimal"
   answerDisplay="$-7 - 20$; $-27$"
 >}}
 
@@ -134,7 +138,7 @@ weight: 6
 {{< fillin
   question="Simplify: $\tfrac{m}{7} + \tfrac{10}{7}$."
   answer="\frac{m+10}{7}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{m + 10}{7}$"
 >}}
 
@@ -143,6 +147,7 @@ weight: 6
 {{< fillin
   question="Round $677.1348$ to the nearest hundredth."
   answer="677.13"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -167,9 +172,9 @@ weight: 6
 ### 1.8 The Real Numbers
 
 {{< fillin
-  question="Simplify: $\sqrt{64}$."
-  answer="8"
-  answerForm="simplified-radical"
+  question="Simplify: $-\sqrt{25}$."
+  answer="-5"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -182,6 +187,7 @@ weight: 6
 {{< fillin
   question="Order using < or >. Enter the full inequality: $-1 \_\_ -\tfrac{1}{8}$"
   answer="-1<-\frac{1}{8}"
+  answerForm="lowest-terms"
   answerDisplay="$-1 < -\tfrac{1}{8}$"
 >}}
 
@@ -190,13 +196,13 @@ weight: 6
 {{< fillin
   question="Simplify: $-14\left(\tfrac{5}{7}p\right)$."
   answer="-10p"
-  answerForm="polynomial"
+  answerForm="single-term polynomial"
 >}}
 
 {{< fillin
   question="Simplify: $6x + (-4y) + 9x + 8y$."
   answer="15x+4y"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$15x + 4y$"
 >}}
 
@@ -205,12 +211,14 @@ weight: 6
 {{< fillin
   question="A movie lasted $1\tfrac{2}{3}$ hours. How many minutes did it last? (1 hour = 60 minutes)"
   answer="100"
+  answerForm="decimal"
   answerDisplay="100 minutes"
 >}}
 
 {{< fillin
   question="Jennifer ran 2.8 miles. Convert this length to kilometers. (1 mile = 1.61 kilometers)"
   answer="4.508"
+  answerForm="decimal"
   answerDisplay="4.508 kilometers"
 >}}
 
@@ -221,18 +229,21 @@ weight: 6
 {{< fillin
   question="Solve: $-8x - 15 + 9x - 1 = -21$."
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$x = -5$"
 >}}
 
 {{< fillin
   question="Solve: $x - 9 = -4$."
   answer="5"
+  answerForm="decimal"
   answerDisplay="$x = 5$"
 >}}
 
 {{< fillin
   question="Translate into an algebraic equation and then solve: four less than $n$ is 13. Enter the value of $n$."
   answer="17"
+  answerForm="decimal"
   answerDisplay="$n - 4 = 13$; $n = 17$"
 >}}
 
@@ -241,18 +252,21 @@ weight: 6
 {{< fillin
   question="Solve: $\tfrac{9}{2}c = 144$."
   answer="32"
+  answerForm="decimal"
   answerDisplay="$c = 32$"
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{2}{3}x = 6$."
   answer="9"
+  answerForm="decimal"
   answerDisplay="$x = 9$"
 >}}
 
 {{< fillin
   question="Jenna bought a coat on sale for \$120, which was $\tfrac{2}{3}$ of the original price. What was the original price of the coat, in dollars?"
   answer="180"
+  answerForm="decimal"
   answerDisplay="\$180"
 >}}
 
@@ -261,18 +275,21 @@ weight: 6
 {{< fillin
   question="Solve: $10y = -5y - 60$."
   answer="-4"
+  answerForm="decimal"
   answerDisplay="$y = -4$"
 >}}
 
 {{< fillin
   question="Solve: $9m - 2 - 4m - m = 42 - 8$."
   answer="9"
+  answerForm="decimal"
   answerDisplay="$m = 9$"
 >}}
 
 {{< fillin
   question="Solve: $5n - 20 = -7n - 80$."
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$n = -5$"
 >}}
 
@@ -281,12 +298,14 @@ weight: 6
 {{< fillin
   question="Solve: $-(d - 9) = 23$."
   answer="-14"
+  answerForm="decimal"
   answerDisplay="$d = -14$"
 >}}
 
 {{< fillin
   question="Solve: $2(6x - 5) - 8 = -22$."
   answer="-\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$x = -\tfrac{1}{3}$"
 >}}
 
@@ -295,18 +314,21 @@ weight: 6
 {{< fillin
   question="Solve: $\tfrac{1}{4}p - \tfrac{1}{3} = \tfrac{1}{2}$."
   answer="\frac{10}{3}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$p = \tfrac{10}{3}$"
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{1}{2}(k - 3) = \tfrac{1}{3}(k + 16)$."
   answer="41"
+  answerForm="decimal"
   answerDisplay="$k = 41$"
 >}}
 
 {{< fillin
   question="Solve: $0.36u + 2.55 = 0.41u + 6.8$."
   answer="-85"
+  answerForm="decimal"
   answerDisplay="$u = -85$"
 >}}
 
@@ -315,12 +337,14 @@ weight: 6
 {{< fillin
   question="Link rode his bike at a steady rate of 15 miles per hour for $2\tfrac{1}{2}$ hours. How much distance did he travel, in miles?"
   answer="37.5"
+  answerForm="decimal"
   answerDisplay="37.5 miles"
 >}}
 
 {{< fillin
   question="Use the formula $A = \tfrac{1}{2}bh$ to find $h$ when $A = 153$ and $b = 18$."
   answer="17"
+  answerForm="decimal"
   answerDisplay="$h = 17$"
 >}}
 
@@ -331,9 +355,10 @@ weight: 6
 >}}
 
 {{< fillin
-  question="Solve the formula $V = LWH$ for $H$."
-  answer="\frac{V}{LW}"
-  answerDisplay="$H = \tfrac{V}{LW}$"
+  question="Solve the formula $x - 2y = 5$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
+  answer="y=\frac{x-5}{2}"
+  answerForm="solved:y"
+  answerDisplay="$y = \tfrac{x-5}{2}$"
 >}}
 
 ### 2.7 Solve Linear Inequalities
@@ -341,18 +366,21 @@ weight: 6
 {{< fillin
   question="Solve the inequality $m + 14 \leq 56$. Enter the solution as a full inequality, e.g. $x > 2$."
   answer="m\leq42"
+  answerForm="decimal"
   answerDisplay="$m \leq 42$"
 >}}
 
 {{< fillin
   question="Solve the inequality $3c - 10(c - 2) < 5c + 16$. Enter the solution as a full inequality, e.g. $x > 2$."
   answer="c>\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$c > \tfrac{1}{3}$"
 >}}
 
 {{< fillin
   question="Translate to an inequality and solve: fifteen more than $n$ is at least 48. Enter the solution as a full inequality for $n$."
   answer="n\geq33"
+  answerForm="decimal"
   answerDisplay="$n + 15 \geq 48$; $n \geq 33$"
 >}}
 
@@ -363,12 +391,14 @@ weight: 6
 {{< fillin
   question="Four-fifths of the people on a hike are children. If there are 12 children, what is the total number of people on the hike?"
   answer="15"
+  answerForm="decimal"
   answerDisplay="15 people"
 >}}
 
 {{< fillin
   question="The sum of two consecutive odd integers is $-96$. Find the numbers. Enter them from smallest to largest, separated by commas."
   answer="-49, -47"
+  answerForm="decimal"
 >}}
 
 ### 3.2 Solve Percent Applications
@@ -381,8 +411,9 @@ weight: 6
 >}}
 
 {{< fillin
-  question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. Find the amount of discount."
+  question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. Find the amount of discount, in dollars."
   answer="208.50"
+  answerForm="decimal"
   answerDisplay="\$208.50"
 >}}
 
@@ -398,24 +429,28 @@ weight: 6
 {{< fillin
   question="Francie has \$4.35 in dimes and quarters. The number of dimes is five more than the number of quarters. How many dimes does she have?"
   answer="16"
+  answerForm="decimal"
   answerDisplay="16 dimes"
 >}}
 
 {{< fillin
   question="Francie has \$4.35 in dimes and quarters. The number of dimes is five more than the number of quarters. How many quarters does she have?"
   answer="11"
+  answerForm="decimal"
   answerDisplay="11 quarters"
 >}}
 
 {{< fillin
   question="At a concert, \$1,600 in tickets were sold. Adult tickets were \$9 each and children's tickets were \$4 each. If the number of adult tickets was 30 less than twice the number of children's tickets, how many adult tickets were sold?"
   answer="140"
+  answerForm="decimal"
   answerDisplay="140 adult tickets"
 >}}
 
 {{< fillin
   question="At a concert, \$1,600 in tickets were sold. Adult tickets were \$9 each and children's tickets were \$4 each. If the number of adult tickets was 30 less than twice the number of children's tickets, how many children's tickets were sold?"
   answer="85"
+  answerForm="decimal"
   answerDisplay="85 children's tickets"
 >}}
 
@@ -424,12 +459,14 @@ weight: 6
 {{< fillin
   question="The measure of one angle of a triangle is twice the measure of the smallest angle. The measure of the third angle is 14 more than the measure of the smallest angle. Find the measures of all three angles, in degrees, from smallest to largest, separated by commas."
   answer="41.5, 55.5, 83"
+  answerForm="decimal"
   answerDisplay="$41.5^\circ$, $55.5^\circ$, $83^\circ$"
 >}}
 
 {{< fillin
   question="A baseball diamond is really a square with sides of 90 feet. How far is it from home plate to second base? Round to the nearest tenth of a foot."
   answer="127.3"
+  answerForm="decimal"
   answerDisplay="127.3 feet"
 >}}
 
@@ -438,32 +475,37 @@ weight: 6
 {{< fillin
   question="When Gabe drives from Sacramento to Redding it takes him 2.2 hours. It takes Elsa 2 hours to drive the same distance. Elsa's speed is seven miles per hour faster than Gabe's speed. Find Gabe's speed, in miles per hour."
   answer="70"
+  answerForm="decimal"
   answerDisplay="Gabe 70 mph"
 >}}
 
 {{< fillin
   question="When Gabe drives from Sacramento to Redding it takes him 2.2 hours. It takes Elsa 2 hours to drive the same distance. Elsa's speed is seven miles per hour faster than Gabe's speed. Find Elsa's speed, in miles per hour."
   answer="77"
+  answerForm="decimal"
   answerDisplay="Elsa 77 mph"
 >}}
 
 {{< fillin
   question="Two planes leave Dallas at the same time. One heads east at a speed of 428 miles per hour. The other plane heads west at a speed of 382 miles per hour. How many hours will it take them to be 2,025 miles apart?"
   answer="2.5"
+  answerForm="decimal"
   answerDisplay="2.5 hours"
 >}}
 
 ### 3.6 Solve Applications with Linear Inequalities
 
 {{< fillin
-  question="Julianne has a weekly food budget of \$231 for her family. If she plans to budget the same amount for each of the seven days of the week, what is the maximum amount she can spend on food each day?"
+  question="Julianne has a weekly food budget of \$231 for her family. If she plans to budget the same amount for each of the seven days of the week, what is the maximum amount she can spend on food each day, in dollars?"
   answer="33"
+  answerForm="decimal"
   answerDisplay="\$33 per day"
 >}}
 
 {{< fillin
-  question="Chloe has a budget of \$800 for costumes for the 18 members of her musical theater group. If all the costumes are the same price, what is the maximum she can spend for each costume?"
+  question="Chloe has a budget of \$800 for costumes for the 18 members of her musical theater group. If all the costumes are the same price, what is the maximum she can spend for each costume, in dollars rounded to the nearest cent?"
   answer="44.44"
+  answerForm="decimal"
   answerDisplay="at most \$44.44 per costume"
 >}}
 
@@ -474,11 +516,13 @@ weight: 6
 {{< fillin
   question="Find the ordered pair $(x, y)$ solution to the equation $y = -\tfrac{1}{2}x + 3$ when $x = 4$."
   answer="(4, 1)"
+  answerForm="decimal"
 >}}
 
 {{< fillin
-  question="Find the ordered pair $(x, y)$ solution to the equation $3x + 2y = 6$ when $y = 0$."
-  answer="(2, 0)"
+  question="Find the ordered pair $(x, y)$ solution to the equation $3x + 2y = 6$ when $x = -2$."
+  answer="(-2, 6)"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -491,15 +535,6 @@ weight: 6
 {{< fillin
   question="Which of the ordered pairs $(0, -1)$, $(3, 1)$, $(-3, -3)$, $(6, 4)$ are solutions to the equation $y = \tfrac{2}{3}x - 1$? Enter the solutions separated by commas, in the order given."
   answer="(0, -1), (3, 1), (-3, -3)"
->}}
-
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"A line on a coordinate grid from negative 7 to 7 on both axes. The line passes through the points (0, negative 1) and (3, 1), rising from lower left to upper right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"lines":[{"slope":0.6666666666666666,"intercept":-1}]}
-{{< /apfigure >}}
-
-{{< fillin
-  question="The graph of $y = \tfrac{2}{3}x - 1$ is shown above. One of the ordered pairs $(0, -1)$, $(3, 1)$, $(-3, -3)$, $(6, 4)$ is not a point on the line. Which one?"
-  answer="(6, 4)"
 >}}
 
 {{< graphplot
@@ -523,16 +558,19 @@ weight: 6
 {{< fillin
   question="Find the $x$- and $y$-intercepts of the line $x - y = -1$. Enter them as ordered pairs separated by commas, $x$-intercept first."
   answer="(-1, 0), (0, 1)"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Find the $x$-intercept of the graph of the equation $4x - 3y = 12$. Enter it as an ordered pair."
   answer="(3, 0)"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of the graph of the equation $4x - 3y = 12$. Enter it as an ordered pair."
   answer="(0, -4)"
+  answerForm="decimal"
 >}}
 
 {{< graphplot
@@ -548,47 +586,55 @@ weight: 6
 {{< fillin
   question="Find the slope of the line $y = -1$."
   answer="0"
+  answerForm="decimal"
 >}}
 
 {{< fillin
-  question="A mountain road rises 50 feet for a 500-foot run. What is its slope?"
+  question="A mountain road rises 50 feet for a 500-foot run. What is its slope? Enter it as a fraction."
   answer="\frac{1}{10}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{10}$"
 >}}
 
 {{< fillin
   question="Find the slope of the line between the points $(5, 2)$ and $(-1, -4)$."
   answer="1"
+  answerForm="decimal"
 >}}
 
 ### 4.5 Use the Slope-Intercept Form of an Equation of a Line
 
 {{< fillin
-  question="Identify the slope of the line $y = \tfrac{5}{3}x - 6$."
+  question="Identify the slope of the line $y = \tfrac{5}{3}x - 6$. Enter it as a fraction."
   answer="\frac{5}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{3}$"
 >}}
 
 {{< fillin
   question="Identify the $y$-intercept of the line $y = \tfrac{5}{3}x - 6$. Enter it as an ordered pair."
   answer="(0, -6)"
+  answerForm="decimal"
 >}}
 
 {{< fillin
-  question="Identify the slope of the line $4x - 5y = 8$."
+  question="Identify the slope of the line $4x - 5y = 8$. Enter it as a fraction."
   answer="\frac{4}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{5}$"
 >}}
 
 {{< fillin
   question="Identify the $y$-intercept of the line $4x - 5y = 8$. Enter it as an ordered pair."
   answer="(0, -\frac{8}{5})"
+  answerForm="lowest-terms"
   answerDisplay="$(0, -\tfrac{8}{5})$"
 >}}
 
 {{< fillin
   question="Marjorie teaches piano. The equation $P = 35s - 250$ models the relation between her weekly profit, $P$, in dollars, and the number of student lessons, $s$, that she teaches. Find Marjorie's profit for a week when she teaches 20 student lessons."
   answer="450"
+  answerForm="decimal"
   answerDisplay="\$450"
 >}}
 
@@ -597,43 +643,45 @@ weight: 6
 {{< fillin
   question="Find the equation of the line with slope $-\tfrac{3}{4}$ and $y$-intercept $(0, -2)$. Write the equation in slope-intercept form."
   answer="-\frac{3}{4}x-2"
-  answerForm="slope-intercept-form"
+  answerForm="slope-intercept-form no-like-terms"
   answerDisplay="$y = -\tfrac{3}{4}x - 2$"
 >}}
 
 {{< fillin
   question="Find the equation of the line containing the points $(10, 1)$ and $(6, -1)$. Write the equation in slope-intercept form."
   answer="\frac{1}{2}x-4"
-  answerForm="slope-intercept-form"
+  answerForm="slope-intercept-form no-like-terms"
   answerDisplay="$y = \tfrac{1}{2}x - 4$"
 >}}
 
 {{< fillin
   question="Find the equation of the line perpendicular to the line $y = \tfrac{5}{4}x + 2$, containing the point $(-10, 3)$. Write the equation in slope-intercept form."
   answer="-\frac{4}{5}x-5"
-  answerForm="slope-intercept-form"
+  answerForm="slope-intercept-form no-like-terms"
   answerDisplay="$y = -\tfrac{4}{5}x - 5$"
 >}}
 
 ### 4.7 Graphs of Linear Inequalities
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A coordinate grid from negative 7 to 7 on both axes. The solid boundary line y equals two-thirds x minus 3 passes through (0, negative 3) and (6, 1). The region above and to the left of the line is shaded.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"regions":[{"line":{"slope":0.6666666666666666,"intercept":-3},"side":[0,0]}]}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes, labeled every 2 units. The solid boundary line y equals two-thirds x minus 3 passes through (0, negative 3) and (6, 1). The region above and to the left of the line is shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":0.6666666666666666,"intercept":-3},"side":[0,0]}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Write the inequality shown by the graph above, with the boundary line $y = \tfrac{2}{3}x - 3$. Enter the full inequality."
+  question="Write the inequality shown by the graph above, with the boundary line $y = \tfrac{2}{3}x - 3$. Enter the full inequality, using the boundary line as given."
   answer="y\geq\frac{2}{3}x-3"
+  answerForm="solved:y"
   answerDisplay="$y \geq \tfrac{2}{3}x - 3$"
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A coordinate grid running from negative 7 to 8 across and negative 7 to 7 up. The solid boundary line x minus 2y equals 6 passes through (0, negative 3) and (6, 0). The region below and to the right of the line is shaded.","xMin":-7,"xMax":8,"yMin":-7,"yMax":7,"regions":[{"line":{"slope":0.5,"intercept":-3},"side":[0,-6]}]}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes, labeled every 2 units. The solid boundary line x minus 2y equals 6 passes through (0, negative 3) and (6, 0). The region below and to the right of the line is shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":0.5,"intercept":-3},"side":[0,-6]}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write the inequality shown by the shaded region in the graph above, with the boundary line $x - 2y = 6$. Enter the full inequality, using the boundary line as given."
   answer="x-2y\geq6"
+  answerForm="line-standard-form"
   answerDisplay="$x - 2y \geq 6$"
 >}}
 
@@ -660,12 +708,14 @@ weight: 6
 {{< fillin
   question="LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of chocolate syrup does she need to make 48 ounces of caffe mocha?"
   answer="8"
+  answerForm="decimal"
   answerDisplay="8 ounces of chocolate syrup"
 >}}
 
 {{< fillin
   question="LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of coffee does she need to make 48 ounces of caffe mocha?"
   answer="40"
+  answerForm="decimal"
   answerDisplay="40 ounces of coffee"
 >}}
 
@@ -674,24 +724,28 @@ weight: 6
 {{< fillin
   question="Solve the system of equations by substitution: $3x - y = -5$ and $y = 2x + 4$. Write the solution as an ordered pair $(x, y)$."
   answer="(-1, 2)"
+  answerForm="decimal"
   answerDisplay="$(-1, 2)$"
 >}}
 
 {{< fillin
   question="Solve the system of equations by substitution: $x - y = 0$ and $2x + 5y = -14$. Write the solution as an ordered pair $(x, y)$."
   answer="(-2, -2)"
+  answerForm="decimal"
   answerDisplay="$(-2, -2)$"
 >}}
 
 {{< fillin
   question="The sum of two numbers is 55. One number is 11 less than the other. Find the numbers. Enter them separated by commas, smaller first."
   answer="22, 33"
+  answerForm="decimal"
   answerDisplay="$22$ and $33$"
 >}}
 
 {{< fillin
   question="Solve the system of equations: $x + y = -3$ and $x - y = 11$. Write the solution as an ordered pair $(x, y)$."
   answer="(4, -7)"
+  answerForm="decimal"
   answerDisplay="$(4, -7)$"
 >}}
 
@@ -700,18 +754,21 @@ weight: 6
 {{< fillin
   question="Solve the system of equations by elimination: $x + y = 12$ and $x - y = -10$. Write the solution as an ordered pair $(x, y)$."
   answer="(1, 11)"
+  answerForm="decimal"
   answerDisplay="$(1, 11)$"
 >}}
 
 {{< fillin
   question="Solve the system of equations by elimination: $3x - 8y = 20$ and $x + 3y = 1$. Write the solution as an ordered pair $(x, y)$."
   answer="(4, -1)"
+  answerForm="decimal"
   answerDisplay="$(4, -1)$"
 >}}
 
 {{< fillin
   question="The sum of two numbers is $-90$. Their difference is 16. Find the numbers. Enter them separated by commas, larger first."
   answer="-37, -53"
+  answerForm="decimal"
   answerDisplay="$-37$ and $-53$"
 >}}
 
@@ -720,24 +777,28 @@ weight: 6
 {{< fillin
   question="The sum of two numbers is $-24$. One number is 104 less than the other. Find the numbers. Enter them separated by commas, larger first."
   answer="40, -64"
+  answerForm="decimal"
   answerDisplay="$40$ and $-64$"
 >}}
 
 {{< fillin
   question="Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="28"
+  answerForm="decimal"
   answerDisplay="28 degrees"
 >}}
 
 {{< fillin
   question="Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the larger angle, in degrees."
   answer="62"
+  answerForm="decimal"
   answerDisplay="62 degrees"
 >}}
 
 {{< fillin
-  question="Kathy left home to walk to the mall, walking quickly at a rate of 4 miles per hour. Her sister Abby left home 15 minutes later and rode her bike to the mall at a rate of 10 miles per hour. How long will it take Abby to catch up to Kathy? Give the time in hours."
+  question="Kathy left home to walk to the mall, walking quickly at a rate of 4 miles per hour. Her sister Abby left home 15 minutes later and rode her bike to the mall at a rate of 10 miles per hour. How long will it take Abby to catch up to Kathy? Enter the time in hours, as a fraction."
   answer="\frac{1}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{6}$ of an hour (10 minutes)"
 >}}
 
@@ -746,24 +807,28 @@ weight: 6
 {{< fillin
   question="Jack has \$12,000 to invest and wants to earn 7.5% interest per year. He will put some of the money into a savings account that earns 4% per year and the rest into a CD account that earns 9% per year. How much money, in dollars, should he put into the savings account?"
   answer="3600"
+  answerForm="decimal"
   answerDisplay="\$3,600 into savings"
 >}}
 
 {{< fillin
   question="Jack has \$12,000 to invest and wants to earn 7.5% interest per year. He will put some of the money into a savings account that earns 4% per year and the rest into a CD account that earns 9% per year. How much money, in dollars, should he put into the CD account?"
   answer="8400"
+  answerForm="decimal"
   answerDisplay="\$8,400 into the CD"
 >}}
 
 {{< fillin
   question="Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many children's tickets did Liz buy?"
   answer="23"
+  answerForm="decimal"
   answerDisplay="23 children's tickets"
 >}}
 
 {{< fillin
   question="Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many adult tickets did Liz buy?"
   answer="5"
+  answerForm="decimal"
   answerDisplay="5 adult tickets"
 >}}
 
@@ -801,4 +866,4 @@ no
 yes
 {{< /multiplechoice >}}
 
-<small>This knowledge check is adapted from the Chapter 1–5 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/1-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer, graph-reading, and fill-in-the-symbol questions as value, list, and full-inequality questions, kept the two “solve the system by graphing” questions as graphing questions the reader draws on an interactive grid, recreated needed figures as accessible inline graphs, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 1–5 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/1-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test, adding keyed Review Exercises where a section's Practice Test questions were too few, unkeyed, or repeated an exercise on the section page, converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and fill-in-the-symbol questions as value, list, and full-inequality questions, kept the two “solve the system by graphing” questions as graphing questions the reader draws on an interactive grid, recreated needed figures as accessible inline graphs, and took all answers from the book's Answer Key except one: the Chapter 2 formula x − 2y = 5 solved for y is keyed y = (x − 5)/2, where the key prints y = (5 − x)/2.</small>

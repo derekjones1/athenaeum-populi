@@ -285,7 +285,7 @@ Because $y=-2,-2<0$, so we know there is a subtraction sign in the denominator. 
 
 $$r=\tfrac{ep}{1-e\sin\theta}$$
 
-and $e=3$ and $|-2|=2=p$.
+and $e=3$ and $\lvert -2\rvert=2=p$.
 
 Therefore,
 

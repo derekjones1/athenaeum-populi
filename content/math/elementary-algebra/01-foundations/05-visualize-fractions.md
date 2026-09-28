@@ -325,7 +325,7 @@ $\tfrac{12 \cdot 4 \cdot 5x}{5 \cdot 1}$. Simplify: $48x$.
 {{< fillin
   question="Multiply: $\tfrac{11}{3}(-9a)$. Use $a$ in your answer."
   answer="-33a"
-  answerForm="single-term"
+  answerForm="single-term polynomial"
   hint="Write $-9a$ as a fraction over $1$, multiply, then divide out the common factor."
 >}}
 

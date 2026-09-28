@@ -1074,7 +1074,7 @@ We choose $x$-values. We substitute them in and then create a chart.
   question="Graph: $f(x)=-|x|$. Find $f(-3)$."
   answer="-3"
   answerDisplay="$-3$"
-  hint="First find $|-3|$, and then take its opposite."
+  hint="First find $\lvert -3\rvert$, and then take its opposite."
 >}}
 
 {{< callout type="info" >}}

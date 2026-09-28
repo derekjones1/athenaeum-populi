@@ -122,7 +122,7 @@ greater than $b$") when $a$ is to the right of $b$ on the number line.
 
 Now we need to extend the number line to include negative numbers, too. The
 numbers marked by points on the number line below are called the
-**integers**. The integers are the numbers $\dots -3, -2, -1, 0, 1, 2, 3 \dots$
+**integers**. The integers are the numbers $\dots {-3}, -2, -1, 0, 1, 2, 3 \dots$
 
 {{< apfigure kind="numberline" >}}
 {"ariaLabel":"A number line from −4 to 4 with a dot on every integer: −4, −3, −2, −1, 0, 1, 2, 3, and 4.","min":-4,"max":4,"points":[{"at":-4},{"at":-3},{"at":-2},{"at":-1},{"at":0},{"at":1},{"at":2},{"at":3},{"at":4}]}
@@ -130,7 +130,7 @@ numbers marked by points on the number line below are called the
 
 {{< callout type="info" >}}
   **Integers.** The whole numbers and their opposites are called the
-  integers. The integers are the numbers $\dots -3, -2, -1, 0, 1, 2, 3\dots$
+  integers. The integers are the numbers $\dots {-3}, -2, -1, 0, 1, 2, 3\dots$
 {{< /callout >}}
 
 **Example.** Order each of the following pairs of numbers, using $<$ or $>$:
@@ -301,7 +301,7 @@ The distance between $0$ and any number on the number line is called the
   $|n|$.
 {{< /callout >}}
 
-For example, $-5$ is $5$ units away from $0$, so $|-5| = 5$. And $5$ is $5$
+For example, $-5$ is $5$ units away from $0$, so $\lvert -5\rvert = 5$. And $5$ is $5$
 units away from $0$, so $|5| = 5$.
 
 <svg viewBox="0 0 460 100" role="img" aria-label="A number line from -5 to 5 with a tick at every integer and labels at -5, 0, and 5. One arc above the line spans from -5 to 0 and another from 0 to 5; each arc is labeled 5 units, showing that both -5 and 5 are 5 units from zero." style="max-width: 460px; display: block; margin: 1.5rem auto">
@@ -338,19 +338,19 @@ is zero units.
   values are always greater than or equal to zero!
 {{< /callout >}}
 
-**Example.** Simplify: (a) $|3|$ (b) $|-44|$ (c) $|0|$.
+**Example.** Simplify: (a) $|3|$ (b) $\lvert -44\rvert$ (c) $|0|$.
 
 The absolute value of a number is the distance between the number and zero.
 Distance is never negative, so absolute value is never negative.
 
 (a) $|3| = 3$
 
-(b) $|-44| = 44$
+(b) $\lvert -44\rvert = 44$
 
 (c) $|0| = 0$
 
 {{< fillin
-  question="Simplify: $|-28|$."
+  question="Simplify: $\lvert -28\rvert$."
   answer="28"
   answerForm="decimal"
   hint="Absolute value is the distance from zero, and distance is always non-negative."
@@ -367,29 +367,29 @@ In the next example, we'll order expressions with absolute values. Remember,
 positive numbers are always greater than negative numbers.
 
 **Example.** Fill in $<, >,$ or $=$ for each of the following pairs of
-numbers: (a) $|-5| \_\_\_ -|-5|$ (b) $8 \_\_\_ -|-8|$ (c) $-9 \_\_\_ -|-9|$
-(d) $-(-16) \_\_\_ -|-16|$.
+numbers: (a) $\lvert -5\rvert \_\_\_ -\lvert -5\rvert$ (b) $8 \_\_\_ -\lvert -8\rvert$ (c) $-9 \_\_\_ -\lvert -9\rvert$
+(d) $-(-16) \_\_\_ -\lvert -16\rvert$.
 
-(a) Simplify each side: $|-5| = 5$ and $-|-5| = -5$. Since $5 > -5$,
-$|-5| > -|-5|$.
+(a) Simplify each side: $\lvert -5\rvert = 5$ and $-\lvert -5\rvert = -5$. Since $5 > -5$,
+$\lvert -5\rvert > -\lvert -5\rvert$.
 
-(b) Simplify: $8$ stays $8$, and $-|-8| = -8$. Since $8 > -8$,
-$8 > -|-8|$.
+(b) Simplify: $8$ stays $8$, and $-\lvert -8\rvert = -8$. Since $8 > -8$,
+$8 > -\lvert -8\rvert$.
 
-(c) Simplify: $-9$ stays $-9$, and $-|-9| = -9$. Since $-9 = -9$,
-$-9 = -|-9|$.
+(c) Simplify: $-9$ stays $-9$, and $-\lvert -9\rvert = -9$. Since $-9 = -9$,
+$-9 = -\lvert -9\rvert$.
 
-(d) Simplify: $-(-16) = 16$, and $-|-16| = -16$. Since $16 > -16$,
-$-(-16) > -|-16|$.
+(d) Simplify: $-(-16) = 16$, and $-\lvert -16\rvert = -16$. Since $16 > -16$,
+$-(-16) > -\lvert -16\rvert$.
 
 {{< fillin
-  question="Fill in <, >, or = for the following pair of numbers, entering the full comparison: $-8 \_\_\_ |-8|$."
+  question="Fill in <, >, or = for the following pair of numbers, entering the full comparison: $-8 \_\_\_ \lvert -8\rvert$."
   answer="-8<|-8|"
   hint="Simplify the absolute value first, then compare the two numbers on the number line."
 >}}
 
 {{< fillin
-  question="Fill in <, >, or = for the following pair of numbers, entering the full comparison: $-1 \_\_\_ |-1|$."
+  question="Fill in <, >, or = for the following pair of numbers, entering the full comparison: $-1 \_\_\_ \lvert -1\rvert$."
   answer="-1<|-1|"
   hint="Simplify the absolute value on the right before comparing."
 >}}
@@ -430,20 +430,20 @@ $$
 
 Next we evaluate absolute value expressions with a variable.
 
-**Example.** Evaluate: (a) $|x|$ when $x = -35$ (b) $|-y|$ when $y = -20$
+**Example.** Evaluate: (a) $|x|$ when $x = -35$ (b) $\lvert -y\rvert$ when $y = -20$
 (c) $-|u|$ when $u = 12$ (d) $-|p|$ when $p = -14$.
 
 (a) Substitute $-35$ for $x$, then take the absolute value:
-$|x| = |-35| = 35$.
+$|x| = \lvert -35\rvert = 35$.
 
 (b) Substitute $-20$ for $y$. Simplify inside the bars first, then take the
-absolute value: $|-y| = |-(-20)| = |20| = 20$.
+absolute value: $\lvert -y\rvert = \lvert -(-20)\rvert = |20| = 20$.
 
 (c) Substitute $12$ for $u$, take the absolute value, then negate:
 $-|u| = -|12| = -12$.
 
 (d) Substitute $-14$ for $p$, take the absolute value, then negate:
-$-|p| = -|-14| = -14$.
+$-|p| = -\lvert -14\rvert = -14$.
 
 {{< fillin
   question="Evaluate: $|x|$ when $x = -17$."
@@ -898,7 +898,7 @@ $$
 
 **negative numbers** — numbers less than $0$; they lie to the left of zero
 on the number line. **integers** — the whole numbers and their opposites:
-$\dots -3, -2, -1, 0, 1, 2, 3 \dots$. **opposite** — the number that is the
+$\dots {-3}, -2, -1, 0, 1, 2, 3 \dots$. **opposite** — the number that is the
 same distance from zero on the number line, but on the opposite side.
 **absolute value** — the distance between a number and $0$ on the number
 line, written $|n|$; always greater than or equal to zero. **neutral pair**
@@ -941,16 +941,16 @@ number is the same as adding its opposite.
 ### Simplify expressions with absolute value
 
 {{< fillin
-  question="Simplify: $8|-7|$."
+  question="Simplify: $8\lvert -7\rvert$."
   answer="56"
   answerForm="decimal"
   hint="Simplify inside the absolute value bars first, then multiply."
 >}}
 
 {{< multiplechoice
-  question="Fill in <, >, or = for the following pair of numbers: $-6 \_\_\_ |-6|$."
+  question="Fill in <, >, or = for the following pair of numbers: $-6 \_\_\_ \lvert -6\rvert$."
   answer="$<$"
-  hint="Simplify $|-6|$ first, then compare it with $-6$."
+  hint="Simplify $\lvert -6\rvert$ first, then compare it with $-6$."
 >}}
 $=$
 $<$
@@ -958,7 +958,7 @@ $>$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Fill in <, >, or = for the following pair of numbers: $-|-3| \_\_\_ -3$."
+  question="Fill in <, >, or = for the following pair of numbers: $-\lvert -3\rvert \_\_\_ -3$."
   answer="$=$"
   hint="Simplify the absolute value on the left before comparing the two sides."
 >}}

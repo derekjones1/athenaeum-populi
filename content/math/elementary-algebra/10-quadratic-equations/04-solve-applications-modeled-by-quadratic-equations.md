@@ -101,6 +101,7 @@ consecutive odd integers whose product is 195 are 13, 15, and $-13,-15$.
 {{< fillin
   question="The product of two consecutive odd integers is 99. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="9,11,-9,-11"
+  answerForm="decimal"
   answerDisplay="$9,11,-9,-11$"
   hint="Let the first odd integer be $n$ and the next be $n+2$. Translate the product into an equation."
 >}}
@@ -108,8 +109,9 @@ consecutive odd integers whose product is 195 are 13, 15, and $-13,-15$.
 {{< fillin
   question="The product of two consecutive even integers is 168. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="12,14,-12,-14"
+  answerForm="decimal"
   answerDisplay="$12,14,-12,-14$"
-  hint="Let the first even integer be $n$ and the next be $n+2$."
+  hint="Let the first even integer be $n$ and the next be $n+2$. Translate the product into an equation."
 >}}
 
 We will use the formula for the area of a triangle to solve the next example.
@@ -196,17 +198,19 @@ $h^2+2h-120=0$, we could have factored it. If we did, we would have solved the
 equation $(h+12)(h-10)=0$.
 
 {{< fillin
-  question="Find the dimensions of a triangle whose width is four more than six times its height and has an area of 208 square inches. Enter the height and width, separated by a comma."
+  question="Find the dimensions of a triangle whose width is four more than six times its height and has an area of 208 square inches. Enter the height and width in inches, separated by a comma."
   answer="8,52"
+  answerForm="decimal"
   answerDisplay="$8,52$ inches"
-  hint="Use $208=\tfrac12(6h+4)h$."
+  hint="Let $h$ be the height, write the width in terms of $h$, and substitute into $A=\tfrac12bh$."
 >}}
 
 {{< fillin
-  question="If a triangle that has an area of 110 square feet has a height that is two feet less than twice the width, what are its dimensions? Enter the height and width, separated by a comma."
+  question="If a triangle that has an area of 110 square feet has a height that is two feet less than twice the width, what are its dimensions? Enter the height and width in feet, separated by a comma."
   answer="20,11"
+  answerForm="decimal"
   answerDisplay="$20,11$ feet"
-  hint="Use $110=\tfrac12 w(2w-2)$."
+  hint="Let $w$ be the width, write the height in terms of $w$, and substitute into $A=\tfrac12bh$."
 >}}
 
 In the two preceding examples, the number in the radical in the Quadratic Formula
@@ -241,17 +245,19 @@ a pole and to two stakes on the ground. He wants the height of the pole to be th
 same as the distance from the base of the pole to each stake. How tall should the pole be?
 
 <div class="ap-figure">
-<svg role="img" aria-label="Two congruent right triangles form a tree shape. The central vertical pole and each horizontal distance to a stake are x; each sloping light string is 10 feet." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 192" width="252" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="126" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="71.4" y="86.8" text-anchor="end" font-size="13" fill="currentColor">10</text>
-  <line x1="126" y1="36" x2="216" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="180.6" y="86.8" text-anchor="start" font-size="13" fill="currentColor">10</text>
-  <line x1="126" y1="36" x2="126" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="138" y="100" text-anchor="start" font-size="13" fill="currentColor">x</text>
-  <line x1="36" y1="156" x2="126" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="81" y="142" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <line x1="126" y1="156" x2="216" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="171" y="142" text-anchor="middle" font-size="13" fill="currentColor">x</text>
+<svg role="img" aria-label="Two congruent right triangles form a tree shape. The central vertical pole and each horizontal distance to a stake are x; each sloping light string is 10 feet." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 192" width="312" height="192" font-family="Helvetica, Arial, sans-serif">
+  <line x1="36" y1="156" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="88" y="90" text-anchor="end" font-size="13" fill="currentColor">10</text>
+  <line x1="156" y1="36" x2="276" y2="156" stroke="currentColor" stroke-width="1.5"/>
+  <text x="224" y="90" text-anchor="start" font-size="13" fill="currentColor">10</text>
+  <line x1="156" y1="36" x2="156" y2="156" stroke="currentColor" stroke-width="1.5"/>
+  <text x="166" y="100" text-anchor="start" font-size="13" fill="currentColor">x</text>
+  <line x1="36" y1="156" x2="156" y2="156" stroke="currentColor" stroke-width="1.5"/>
+  <text x="96" y="178" text-anchor="middle" font-size="13" fill="currentColor">x</text>
+  <line x1="156" y1="156" x2="276" y2="156" stroke="currentColor" stroke-width="1.5"/>
+  <text x="216" y="178" text-anchor="middle" font-size="13" fill="currentColor">x</text>
+  <path d="M 146 156 L 146 146 L 156 146" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  <path d="M 166 156 L 166 146 L 156 146" fill="none" stroke="currentColor" stroke-width="1.2"/>
 </svg>
 </div>
 
@@ -302,17 +308,19 @@ $$
 **Step 7. Answer** the question. The pole should be about 7.1 feet tall.
 
 {{< fillin
-  question="The sun casts a shadow from a flag pole. The height of the flag pole is three times the length of its shadow. The distance between the end of the shadow and the top of the flag pole is 20 feet. Find the length of the shadow and the length of the flag pole. Round to the nearest tenth of a foot. Enter the shadow length and flag pole length, separated by a comma."
+  question="The sun casts a shadow from a flag pole. The height of the flag pole is three times the length of its shadow. The distance between the end of the shadow and the top of the flag pole is 20 feet. Find the length of the shadow and the length of the flag pole. Compute each length from the exact solution, then round it to the nearest tenth of a foot. Enter the shadow length and flag pole length, separated by a comma."
   answer="6.3,19.0"
+  answerForm="decimal"
   answerDisplay="$6.3,19.0$ feet"
-  hint="If the shadow is $x$, the pole is $3x$. Use the Pythagorean Theorem, then round each length itself — the pole is $3\sqrt{40}\approx19.0$, not $3$ times the rounded shadow."
+  hint="Let the shadow be $x$ and write the pole in terms of $x$; the shadow, the pole, and the 20-foot distance form a right triangle, so use the Pythagorean Theorem. Round each length from its exact value, not from the other rounded length."
 >}}
 
 {{< fillin
   question="The distance between opposite corners of a rectangular field is four more than the width of the field. The length of the field is twice its width. Find the distance between the opposite corners. Round to the nearest tenth."
   answer="7.2"
+  answerForm="decimal"
   answerDisplay="$7.2$"
-  hint="Let the width be $w$, the length $2w$, and the diagonal $w+4$."
+  hint="Name the width, write the length and the diagonal in terms of it, and use the Pythagorean Theorem."
 >}}
 
 **Example 10.41.** Mike wants to put 150 square feet of artificial turf in his
@@ -355,33 +363,37 @@ $$
 \text{Identify the }a,b,c\text{ values.} & a&=&3,\ b=-1,\ c=-150 \\[4pt]
 \text{Write the Quadratic Formula.} & w &=& \tfrac{-b\pm\sqrt{b^2-4ac}}{2a} \\[10pt]
 \text{Then substitute in the values of }a,b,c. & w &=& \tfrac{-(-1)\pm\sqrt{(-1)^2-4(3)(-150)}}{2(3)} \\[10pt]
-\text{Simplify.} & w &=& \tfrac{1\pm\sqrt{1+1800}}{6} \\[10pt]
-&&=& \tfrac{1\pm\sqrt{1801}}{6} \\[10pt]
-\text{Rewrite to show two solutions.} & w &=& \tfrac{1+\sqrt{1801}}{6},\ w=\tfrac{1-\sqrt{1801}}{6} \\[10pt]
+\text{Simplify.} & w &=& \tfrac{1\pm\sqrt{1+1{,}800}}{6} \\[10pt]
+&&=& \tfrac{1\pm\sqrt{1{,}801}}{6} \\[10pt]
+\text{Rewrite to show two solutions.} & w &=& \tfrac{1+\sqrt{1{,}801}}{6},\ w=\tfrac{1-\sqrt{1{,}801}}{6} \\[10pt]
 \text{Approximate the answers using a calculator.} & w&\approx&7.2,\ w\approx-6.9
 \end{array}
 $$
 
 Approximate the answers using a calculator. We eliminate the negative solution
-for the width. Width $w\approx7.2$. Length $\approx3w-1\approx3(7.2)-1\approx20.6$.
+for the width. Width $w\approx7.2$. Length $=3w-1=\tfrac{\sqrt{1{,}801}-1}{2}\approx20.7$.
+Compute the length from the exact width: $3(7.2)-1=20.6$ carries the rounding
+of the width into the length.
 
 **Step 6. Check** the answer. Make sure that the answers make sense.
 
 **Step 7. Answer** the question. The width of the rectangle is approximately
-7.2 feet and the length 20.6 feet.
+7.2 feet and the length 20.7 feet.
 
 {{< fillin
-  question="The length of a 200 square foot rectangular vegetable garden is four feet less than twice the width. Find the length and width of the garden. Round to the nearest tenth of a foot. Enter the length and width, separated by a comma."
+  question="The length of a 200 square foot rectangular vegetable garden is four feet less than twice the width. Find the length and width of the garden. Compute each length from the exact solution, then round it to the nearest tenth of a foot. Enter the length and width, separated by a comma."
   answer="18.1,11.0"
+  answerForm="decimal"
   answerDisplay="$18.1,11.0$ feet"
-  hint="Use $200=w(2w-4)$."
+  hint="Let $w$ be the width, write the length in terms of $w$, substitute into $A=L\cdot W$, and use the Quadratic Formula. Round each length from its exact value."
 >}}
 
 {{< fillin
   question="A rectangular tablecloth has an area of 80 square feet. The width is 5 feet shorter than the length. What are the length and width of the tablecloth? Round to the nearest tenth of a foot. Enter the length and width, separated by a comma."
   answer="11.8,6.8"
+  answerForm="decimal"
   answerDisplay="$11.8,6.8$ feet"
-  hint="If the length is $l$, the width is $l-5$."
+  hint="Let $l$ be the length, write the width in terms of $l$, substitute into $A=L\cdot W$, and use the Quadratic Formula."
 >}}
 
 The height of a projectile shot upwards is modeled by a quadratic equation. The
@@ -430,26 +442,26 @@ $$
 
 **Step 6. Check** the answer. The check is left to you.
 
-The firework will go up and then fall back down. As the firework goes up, it will
-reach 260 feet after approximately 3.6 seconds. It will also pass that height on
-the way down at 4.6 seconds.
-
-**Step 7. Answer** the question.
+**Step 7. Answer** the question. The firework will go up and then fall back down.
+As the firework goes up, it will reach 260 feet after approximately 3.6 seconds.
+It will also pass that height on the way down at 4.6 seconds.
 
 {{< fillin
   question="An arrow is shot from the ground into the air at an initial speed of 108 ft/sec. Use the formula $h=-16t^2+v_0t$ to determine when the arrow will be 180 feet from the ground. Round to the nearest tenth of a second. Enter both times, separated by a comma."
   answer="3,3.8"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$3,3.8$ seconds"
-  hint="Set $180=-16t^2+108t$ and find both positive solutions."
+  hint="Substitute the height and the initial velocity into the formula, write the equation in standard form, and solve it; both positive solutions are times."
 >}}
 
 {{< fillin
   question="A man throws a ball into the air with a velocity of 96 ft/sec. Use the formula $h=-16t^2+v_0t$ to determine when the height of the ball will be 48 feet. Round to the nearest tenth of a second. Enter both times, separated by a comma."
   answer="0.6,5.4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$0.6,5.4$ seconds"
-  hint="Set $48=-16t^2+96t$ and find both positive solutions."
+  hint="Substitute the height and the initial velocity into the formula, write the equation in standard form, and use the Quadratic Formula; both positive solutions are times."
 >}}
 
 ## Key terms
@@ -472,17 +484,19 @@ $a^2+b^2=c^2$.
 ### Solve applications modeled by Quadratic Equations
 
 {{< fillin
-  question="The product of two consecutive odd numbers is 255. Find the numbers. Enter the two positive numbers, smaller first, separated by a comma."
-  answer="15,17"
-  answerDisplay="$15,17$"
-  hint="Let $n$ be the first odd number and $n+2$ the next; solve $n(n+2)=255$ and keep the positive root."
+  question="The product of two consecutive odd numbers is 255. Find the numbers. Enter the two positive numbers from least to greatest, then their opposites in the same order, separated by commas."
+  answer="15,17,-15,-17"
+  answerForm="decimal"
+  answerDisplay="$15,17,-15,-17$"
+  hint="Let the first odd number be $n$ and the next be $n+2$. Translate the product into an equation and write it in standard form."
 >}}
 
 {{< fillin
-  question="A triangle with area 45 square inches has a height that is two less than four times the width. Find the height and width of the triangle. Enter the height and width, separated by a comma."
+  question="A triangle with area 45 square inches has a height that is two less than four times the width. Find the height and width of the triangle. Enter the height and width in inches, separated by a comma."
   answer="18,5"
+  answerForm="decimal"
   answerDisplay="$18,5$ inches"
-  hint="Let $w$ be the width and $4w-2$ the height; solve $45=\tfrac12 w(4w-2)$."
+  hint="Let $w$ be the width, write the height in terms of $w$, and substitute into $A=\tfrac12bh$; discard the negative solution."
 >}}
 
 {{< fillin
@@ -490,24 +504,26 @@ $a^2+b^2=c^2$.
   answer="7.3"
   answerForm="decimal"
   answerDisplay="$7.3$ yards"
-  hint="Let the width be $w$, the length $3w$, and the diagonal $w+5$; use $w^2+(3w)^2=(w+5)^2$."
+  hint="Name the width, write the length and the diagonal in terms of it, and use the Pythagorean Theorem. Round the diagonal from its exact value."
 >}}
 
 {{< fillin
-  question="The length of a rectangular driveway is five feet more than three times the width. The area is 350 square feet. Find the length and width of the driveway. Enter the length and width, separated by a comma."
+  question="The length of a rectangular driveway is five feet more than three times the width. The area is 350 square feet. Find the length and width of the driveway. Enter the length and width in feet, separated by a comma."
   answer="35,10"
+  answerForm="decimal"
   answerDisplay="$35,10$ feet"
-  hint="Let $w$ be the width and $3w+5$ the length; solve $w(3w+5)=350$ and discard the negative root."
+  hint="Let $w$ be the width, write the length in terms of $w$, substitute into $A=L\cdot W$, and discard the negative solution."
 >}}
 
 {{< fillin
   question="A firework rocket is shot upward at a rate of 640 ft/sec. Use the projectile formula $h=-16t^2+v_0t$ to determine when the height of the firework rocket will be 1,200 feet. Round to the nearest tenth of a second. Enter both times, separated by a comma."
   answer="2,38"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$2,38$ seconds"
   hint="Substitute $h=1{,}200$ and $v_0=640$ into $h=-16t^2+v_0t$, solve the quadratic, and round each positive time to the nearest tenth."
 >}}
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.4](https://openstax.org/books/elementary-algebra-2e/pages/10-4-solve-applications-modeled-by-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; corrected Try It 10.80 from the source key’s $3.2$ (the width) to $7.2$ (the requested diagonal), Try It 10.81 from 18 feet by 11 feet to 18.1 feet by 11.0 feet as directed to the nearest tenth, and Try It 10.84 from 0.6 and 5.5 seconds to 0.6 and 5.4 seconds; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.4](https://openstax.org/books/elementary-algebra-2e/pages/10-4-solve-applications-modeled-by-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; corrected Example 10.41’s length from 20.6 feet (computed from the rounded width) to 20.7 feet, Try It 10.79’s flag pole from 18.9 feet to 19.0 feet for the same reason, Try It 10.80 from the source key’s $3.2$ (the width) to $7.2$ (the requested diagonal), Try It 10.81 from 18 feet by 11 feet to 18.1 feet by 11.0 feet as directed to the nearest tenth, and Try It 10.84 from 0.6 and 5.5 seconds to 0.6 and 5.4 seconds; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

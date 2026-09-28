@@ -407,10 +407,11 @@ test('a simplest-form ask on a numeral fraction requires lowest-terms', () => {
 });
 
 // ---- an interval-notation ask must author an interval ----------------------
-// The engine grades an inequality and an interval unequal in BOTH directions,
-// so `u>10` behind "write the solution in interval notation" marks the
-// learner who follows the instruction incorrect — and self-grading cannot see
-// it, because the authored inequality is only compared against itself.
+// The grader reads the right set in the other notation as 'form' and names
+// the KEY's notation, so `u>10` behind "write the solution in interval
+// notation" tells the learner who follows the instruction to rewrite it as an
+// inequality — and self-grading cannot see it, because the authored
+// inequality is only compared against itself.
 test('an interval-notation ask rejects a non-interval authored answer', () => {
   const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
   const interval = (error) => error.includes('interval notation');
@@ -2330,6 +2331,56 @@ test('a stray double backslash in math is caught, but a row separator is not', (
     [],
     'a fenced code block is not a math span',
   );
+});
+
+test('a sign minus after an opening absolute-value bar or \\ldots is rejected', () => {
+  // KaTeX's `|` is an ordinary symbol, so `$|-5|$` renders "| − 5|": the sign
+  // is spaced as subtraction. It never throws, so only this rule sees it.
+  const binary = (source) => lintHugo(source, SECTION)
+    .errors.filter((e) => e.includes('sign minus KaTeX spaces as subtraction'));
+  const flagged = [
+    '$|-5|$',
+    '$| -5|$',
+    '$-|-9|$',
+    '$8|-7|$',
+    '$|-y| = 3$',
+    '$|x| = |-35| = 35$',
+    '$\\vert -5\\vert$',
+    '$|5 - |-3||$',
+    '$\\text{so } |-5| = 5$',
+    '$$\\begin{array}{rcl} |-5| &>& -|-5| \\end{array}$$',
+    '$\\ldots -3, -2, -1$',
+    '$\\dots -3, -2$',
+    '{{< fillin\n  question="Simplify: $-|-28|$."\n  answer="-28"\n>}}',
+    '{{< fillin\n  question="Compare."\n  answer="5"\n  hint="First find $|-3|$."\n>}}',
+  ];
+  for (const source of flagged) {
+    assert(binary(`${source}\n`).length > 0, `expected a binary-sign error for ${JSON.stringify(source)}`);
+  }
+  // Two hits on one span are two errors, not one.
+  assert.equal(binary('$|-5| > -|-5|$\n').length, 2);
+
+  const clean = [
+    '$|a|-|b|$',
+    '$|5x-4|-3=8$',
+    '$|x| - 3$',
+    '$\\lvert -5\\rvert$',
+    '$-\\lvert -9\\rvert$',
+    '$\\left|-5\\right|$',
+    '$\\bigl|-5\\bigr|$',
+    '$|\\text{actual}-\\text{ideal}|\\leq\\text{tolerance}$',
+    '$|(180^\\circ-225^\\circ)|=45^\\circ$',
+    '$|20| = 20$',
+    '$\\ldots {-3}, -2, -1$',
+    '$\\ldots, -3, -2$',
+    '$a_1 + \\cdots - a_n$',
+    '$\\begin{array}{r|l} -1 & 2 \\end{array}$',
+    '| a | -b |\n|---|---|\n| 1 | 2 |',
+    'Type `$|-5|$` into the box.',
+  ];
+  for (const source of clean) {
+    assert.deepEqual(binary(`${source}\n`), [], `expected no binary-sign error for ${JSON.stringify(source)}`);
+  }
 });
 
 test('apfigure must be blank-line separated, or Goldmark parses it inline', () => {
