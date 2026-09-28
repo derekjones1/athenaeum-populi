@@ -87,12 +87,13 @@ test('a right value in the wrong form is held back, not accepted (answerForm)', 
     .toBe('correct');
 });
 
-test('a re-typed polynomial is held back on a factoring prompt (answerForm="factored")', async ({ page }) => {
+test('a re-typed polynomial is held back on a factoring prompt (answerForm="factored-completely")', async ({ page }) => {
   await gotoBuiltPage(page, '/math/elementary-algebra/07-factoring/02-factor-trinomials-of-the-form-x2-bx-c/');
 
   // The symbolic counterpart of the test above. `x^2+6x+8` and `(x+2)(x+4)`
   // are the same value, so this prompt was passable by retyping it until
-  // `factored` graded the shape. This is the only place the whole stack runs
+  // `factored` graded the shape (now `factored-completely`, since the
+  // Elementary Algebra chapter 7 re-review). This is the only place the whole stack runs
   // together: MathLive's real emission for typed parentheses, the shared
   // compute engine, and checkForm's parse-based predicate.
   const card = page.locator('fill-in[data-question*="6x + 8"]').first();
@@ -105,7 +106,7 @@ test('a re-typed polynomial is held back on a factoring prompt (answerForm="fact
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('form');
-  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/factored form/i);
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/factored completely/i);
 
   await clearMathField(field);
   await page.keyboard.type('(x+2)(x+4)', { delay: 20 });
