@@ -185,7 +185,15 @@ second quantity the source computes from the first rounded value (Elementary
 Algebra 10.4: 3(7.2)−1 = 20.6, 3(6.3) = 18.9) is a convention finding: the
 page rounds each quantity from its exact value and pins "Compute each length
 from the exact solution, then round it" in the stem (ruling, September 28,
-2026).
+2026). Since the Intermediate Algebra chapter 3 re-review (September 28,
+2026): `slope-intercept-form`, `point-slope-form` and `line-standard-form`
+require every number finished in the `lowest-terms` sense — the slope formula
+typed unworked (`y=\frac{-3-1}{1-(-2)}x`), `y=(2+1)x-4`, `y=\frac{4}{-3}x`
+and `y=2x-(-3)` are `form`; `y=\frac{-4}{3}x`, a mixed-number constant, and
+point-slope's substituted `y-(-3)` still pass. A function label with an
+expression argument or made of applications (`g(m^2)=4m^2-7`,
+`f(x)+f(2)=x^2+4`) is stripped against a key with no `=`, so an "evaluate
+$f(x+2)$" item graded that way needs no MC workaround.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints

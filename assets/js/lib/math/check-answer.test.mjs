@@ -2496,6 +2496,104 @@ test('slope-intercept form is one constant term with reduced numerals', async (t
   }
 });
 
+// Every number a line form writes is finished: the parse has already
+// evaluated the slope formula, so `y=\frac{-3-1}{1-(-2)}x` graded `correct`
+// under `slope-intercept-form` and `point-slope-form` (Intermediate Algebra
+// 3.3, September 28, 2026). Numeral-only fraction halves are one integer, the
+// denominator unsigned; a numeral-only group is one finished numeral; a sum
+// writes one numeral term. The substituted point `y-(-3)` stays point-slope.
+const lineNumeralsFinished = [
+  // slope-intercept-form: refused
+  ['y=\\frac{-3-1}{1-(-2)}x', 'y=-\\frac{4}{3}x', 'slope-intercept-form', 'form'],
+  ['y=\\frac{1}{3}x-\\frac{1+9}{3}', 'y=\\frac13x-\\frac{10}{3}', 'slope-intercept-form', 'form'],
+  ['y=(2+1)x-4', 'y=3x-4', 'slope-intercept-form', 'form'],
+  ['y=\\frac{4}{-3}x', 'y=-\\frac43x', 'slope-intercept-form', 'form'],
+  ['y=\\frac{-4}{-3}x', 'y=\\frac43x', 'slope-intercept-form', 'form'],
+  ['y=\\frac{4x}{-3}', 'y=-\\frac43x', 'slope-intercept-form', 'form'],
+  ['y=-\\frac{-4}{3}x', 'y=\\frac43x', 'slope-intercept-form', 'form'],
+  ['y=2x-(-3)', 'y=2x+3', 'slope-intercept-form', 'form'],
+  ['y=2x+(-3)', 'y=2x-3', 'slope-intercept-form', 'form'],
+  ['\\frac{-3-1}{3}x+2', '-\\frac{4}{3}x+2', 'slope-intercept-form no-like-terms', 'form'],
+  // slope-intercept-form: still correct
+  ['y=\\frac{-4}{3}x', 'y=-\\frac43x', 'slope-intercept-form', 'correct'],
+  ['y=-\\frac{4x}{3}', 'y=-\\frac43x', 'slope-intercept-form', 'correct'],
+  ['y=\\frac{-4x}{3}', 'y=-\\frac43x', 'slope-intercept-form', 'correct'],
+  ['y=\\frac13x-3\\frac13', 'y=\\frac13x-\\frac{10}{3}', 'slope-intercept-form', 'correct'],
+  ['y=\\frac{1}{3}x-\\frac{10}{3}', 'y=\\frac13x-\\frac{10}{3}', 'slope-intercept-form', 'correct'],
+  ['y=-\\frac{3}{2}x+\\frac{1}{2}', 'y=-\\frac{3}{2}x+\\frac{1}{2}', 'slope-intercept-form', 'correct'],
+  ['y=0.5x+1.25', 'y=\\frac12x+\\frac54', 'slope-intercept-form', 'correct'],
+  ['y=(-3)x+2', 'y=-3x+2', 'slope-intercept-form', 'correct'],
+  ['y=-x', 'y=-x', 'slope-intercept-form', 'correct'],
+  ['y=x', 'y=x', 'slope-intercept-form', 'correct'],
+  ['y=5', 'y=5', 'slope-intercept-form', 'correct'],
+  ['-\\frac{4}{3}x+2', '-\\frac{4}{3}x+2', 'slope-intercept-form no-like-terms', 'correct'],
+  // point-slope-form: refused
+  ['y=\\frac{-3-1}{1-(-2)}x', 'y=-\\frac{4}{3}x', 'point-slope-form', 'form'],
+  ['y-(-3)=\\frac{1-(-3)}{2}(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y+3=\\frac{4}{2}(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y+3=(1+1)(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y+3=2(x-(1+1))', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y-(1-4)=2(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y+3=2(x-3+1)', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y+1+2=2(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'form'],
+  ['y+3=\\frac{2}{-1}(x-2)', 'y+3=-2(x-2)', 'point-slope-form', 'form'],
+  ['y-4=\\frac{1}{-2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'form'],
+  ['y-4=\\frac{x+1}{-2}', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'form'],
+  ['y-4=2\\cdot3(x+1)', 'y-4=6(x+1)', 'point-slope-form', 'form'],
+  ['y-4=2^2(x+1)', 'y-4=4(x+1)', 'point-slope-form', 'form'],
+  // point-slope-form: still correct — the substituted point is the shape
+  ['y-(-3)=2(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'correct'],
+  ['y+3=2(x-2)', 'y+3=2(x-2)', 'point-slope-form', 'correct'],
+  ['y-4=-\\frac{1}{2}(x-(-1))', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  ['y-4=\\frac{-1}{2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  ['y-4=-\\frac{x+1}{2}', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  ['f(x)-4=-\\frac{1}{2}(x-(-1))', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  // line-standard-form: sign work left undone
+  ['x+y\\ge\\frac{6}{-2}', 'x+y\\ge-3', 'line-standard-form', 'form'],
+  ['x+y\\ge\\frac{-6}{-2}', 'x+y\\ge3', 'line-standard-form', 'form'],
+  ['x+y=-\\frac{-6}{2}', 'x+y=3', 'line-standard-form', 'form'],
+  ['x+y=\\frac{-3}{2}', 'x+y=-\\frac32', 'line-standard-form', 'correct'],
+  ['x+y\\ge-3', 'x+y\\ge-3', 'line-standard-form', 'correct'],
+];
+test('a line form writes every number finished', async (t) => {
+  for (const [typed, key, form, expected] of lineNumeralsFinished) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A function label whose argument is an expression, or which is itself an
+// expression of applications, is the quantity the ask named and is stripped
+// when the key writes no `=` (Intermediate Algebra 3.5, September 28, 2026).
+const expressionLabels = [
+  ['g(m^2)=4m^2-7', '4m^2-7', 'expanded distributed no-like-terms', 'correct'],
+  ['g(m^2)=4m^2-8', '4m^2-7', 'expanded distributed no-like-terms', 'incorrect'],
+  ['g\\left(m^2\\right)=4m^2-7', '4m^2-7', undefined, 'correct'],
+  ['f(x+2)=x^2+4x+4', 'x^2+4x+4', 'expanded', 'correct'],
+  ['f(x+2)=(x+2)^2', 'x^2+4x+4', 'expanded', 'form'],
+  ['f(x)+f(2)=x^2+4', 'x^2+4', undefined, 'correct'],
+  ['f(x)+f(2)=x^2+4', 'x^2+5', undefined, 'incorrect'],
+  ['h(x)+h(1)=2x+4', '2x+4', undefined, 'correct'],
+  ['-f(x)=-x^2+3', '-x^2+3', undefined, 'correct'],
+  ['h(f(-2))=5', '5', undefined, 'correct'],
+  ['f(x)\\cdot g(x)=x^2-1', 'x^2-1', undefined, 'correct'],
+  // a name inside its own argument is a product, not an application
+  ['x(x+2)=15', '15', undefined, 'incorrect'],
+  // a key that is an equation is compared as the equation it is
+  ['x(x+3)=15', 'x(x+2)=15', 'translation', 'incorrect'],
+  ['x(x+2)=15', 'x(x+2)=15', 'translation', 'correct'],
+  // a second `=` is not a label
+  ['g(m^2)=4m^2-7=0', '4m^2-7', undefined, 'incorrect'],
+];
+test('an expression-valued function label is stripped against a value key', async (t) => {
+  for (const [typed, key, form, expected] of expressionLabels) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
 // An inequality in two or more variables is its half-plane: the same when one
 // difference is a positive multiple of the other with the same strictness
 // (Elementary Algebra knowledge check 1–5, September 27, 2026). A pinned

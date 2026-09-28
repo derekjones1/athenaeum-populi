@@ -2814,6 +2814,92 @@ function numeralFractionsReduced(latex) {
   return true;
 }
 
+/** Writing that is numerals only: no letter outside `\frac`/`\cdot`/`\times`. */
+const writesOnlyNumerals = (text) => /\d/.test(text)
+  && !/[a-zA-Z]/.test(text.replace(/\\(?:[tdc]?frac|cdot|times)(?![a-zA-Z])/g, ' '));
+
+/**
+ * One finished numeral, in the sense `lowest-terms` enforces: a decimal, or a
+ * fraction or mixed number with integer halves sharing no factor and its
+ * sign reduced (at most one minus, never in the denominator).
+ */
+function isFinishedNumeral(text) {
+  const bare = bareLatex(text);
+  if (asDecimal(bare) !== null) return true;
+  const fraction = asFraction(bare) ?? asMixedNumber(bare);
+  if (!fraction) return false;
+  if (fraction.negativeDenominator || fraction.signs > 1) return false;
+  return gcd(fraction.numerator, fraction.denominator) === 1;
+}
+
+/**
+ * Is every number a LINE's writing states finished — nothing a learner can
+ * still work out? The line forms read their shape off the parse, which has
+ * already evaluated `\frac{-3-1}{1-(-2)}` to $-\tfrac43$, `(2+1)` to 3 and
+ * `\frac{4}{-3}` to $-\tfrac43$, so the slope formula typed unworked graded
+ * `correct` under `slope-intercept-form` and `point-slope-form`
+ * (Intermediate Algebra 3.3, September 28, 2026). Read off the writing, at
+ * any depth:
+ *   - a fraction half written in numerals alone is one integer, and the
+ *     denominator carries no sign (`\frac{1+9}{3}`, `\frac{4}{-3}`,
+ *     `\frac{-4}{-3}` fail; `\frac{-4}{3}` passes, as under `lowest-terms`),
+ *     and a minus before a fraction whose numerator is negative is two signs
+ *     for one (`-\frac{-4}{3}`);
+ *   - a parenthesized group written in numerals alone is one finished
+ *     numeral (`(2+1)x`, `\frac{1}{1-(-2)}` fail; `(-3)` passes — the point
+ *     in `y-(-3)` and `(x-(-2))` is the book's own substitution step);
+ *   - a sum holding a letter — the whole response, each group, each
+ *     fraction half — writes at most one numeral term (`(x-3+1)`,
+ *     `y+1+2`).
+ * With `signs`, a sign directly before a parenthesized signed numeral is
+ * sign work left undone too (`2x-(-3)`, `2x+(-3)`) — slope-intercept form
+ * only: point-slope form's `y-(-3)` is the formula with the point
+ * substituted, the shape the ask names.
+ */
+function lineNumeralsFinished(latex, { signs = false } = {}) {
+  const text = bareLatex(latex);
+  const oneNumeralTerm = (sum) => splitTopLevelTerms(sum)
+    .filter((term) => term.trim() && writesOnlyNumerals(term)).length <= 1;
+  if (!text.split(/=|<|>|\\[lg]eq?(?![a-zA-Z])|\\ne(?![a-zA-Z])/).every(oneNumeralTerm)) return false;
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] === '(') {
+      let depth = 0;
+      let close = -1;
+      for (let j = i; j < text.length; j += 1) {
+        if (text[j] === '(') depth += 1;
+        else if (text[j] === ')') {
+          depth -= 1;
+          if (depth === 0) { close = j; break; }
+        }
+      }
+      if (close === -1) return true;
+      const content = text.slice(i + 1, close);
+      if (writesOnlyNumerals(content)) {
+        if (!isFinishedNumeral(content)) return false;
+        if (signs && /[+-]\s*$/.test(text.slice(0, i)) && /^\s*[+-]/.test(content)) return false;
+      } else if (!oneNumeralTerm(content)) {
+        return false;
+      }
+      continue;
+    }
+    if (text[i] !== '\\') continue;
+    const command = text.slice(i).match(/^\\[tdc]?frac(?![a-zA-Z])/);
+    if (!command) {
+      i += text.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1;
+      continue;
+    }
+    const numerator = readTexArgument(text, i + command[0].length);
+    const denominator = numerator && readTexArgument(text, numerator[1]);
+    if (!denominator) return true;
+    const [top, bottom] = [numerator[0].trim(), denominator[0].trim()];
+    if (writesOnlyNumerals(top) ? !/^[+-]?\d+$/.test(top) : !oneNumeralTerm(top)) return false;
+    if (writesOnlyNumerals(bottom) ? !/^\d+$/.test(bottom) : !oneNumeralTerm(bottom)) return false;
+    if (top.startsWith('-') && /-\s*$/.test(text.slice(0, i))) return false;
+    i += command[0].length - 1;
+  }
+  return true;
+}
+
 /**
  * One additive term of a radical expression, read factor by factor off the
  * writing (the engine folds `\frac{6\sqrt2}{4}` and `\sqrt3\sqrt5` before any
@@ -4050,7 +4136,16 @@ const FORM_PREDICATES = {
       const input = slopeProduct(slopeSide);
       return output !== null && input !== null && output !== input;
     };
-    return pointSlope(parsed[0], parsed[1]) || pointSlope(parsed[1], parsed[0]);
+    if (!(pointSlope(parsed[0], parsed[1]) || pointSlope(parsed[1], parsed[0]))) return false;
+    // The parse has evaluated the numbers, so their writing is read off the
+    // LaTeX: the slope formula left unworked (`\frac{1-(-3)}{2}`), an
+    // unreduced or sign-unfinished slope (`\frac{4}{2}`, `\frac{2}{-1}`), a
+    // numeral product or power, and a point written as arithmetic
+    // (`y-(1-4)`, `(x-3+1)`) fail; the substituted point `y-(-3)` passes
+    // (Intermediate Algebra 3.3, September 28, 2026).
+    return sides.every((side) => !splitTopLevelTerms(side)
+      .some((term) => NUMERAL_PRODUCT.test(term) || NUMERAL_POWER.test(term)))
+      && numeralFractionsReduced(latex) && lineNumeralsFinished(latex);
   },
   // "Rewrite that same line in slope-intercept form" answers $y=-2x-2$, and
   // the elementary-algebra phrasing "enter the expression that follows $y=$"
@@ -4108,7 +4203,12 @@ const FORM_PREDICATES = {
     return written.length <= 2
       && written.filter((term) => !hasVariableLetter(term)).length <= 1
       && !written.some((term) => NUMERAL_PRODUCT.test(term) || NUMERAL_POWER.test(term))
-      && numeralFractionsReduced(bare) && termFractionsReduced(bare);
+      && numeralFractionsReduced(bare) && termFractionsReduced(bare)
+      // …and every number finished: the unworked slope formula
+      // `y=\frac{-3-1}{1-(-2)}x`, `y=(2+1)x-4`, `y=\frac{4}{-3}x` and
+      // `y=2x-(-3)` graded `correct` (Intermediate Algebra 3.3, September
+      // 28, 2026).
+      && lineNumeralsFinished(bare, { signs: true });
   },
   // "Convert the equation from logarithmic to exponential form: $3=\log_7
   // 343$" answers $343=7^3$ — two true statements the engine grades equal, so
@@ -4137,7 +4237,9 @@ const FORM_PREDICATES = {
       if (!match) return false;
       letters.push(match[1]);
     }
-    return letters.length >= 1 && new Set(letters).size === letters.length && numeralFractionsReduced(text);
+    return letters.length >= 1 && new Set(letters).size === letters.length && numeralFractionsReduced(text)
+      // `x+y\ge\frac{6}{-2}` and `\frac{-6}{-2}` are sign work left undone.
+      && lineNumeralsFinished(text);
   },
   'exponential-form': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
   // "Change the function $y=3(0.5)^x$ to one having $e$ as the base" answers
@@ -5042,6 +5144,67 @@ function readFunctionNotation(latex) {
 }
 
 /**
+ * A label whose argument is an expression — `g(m^2)=4m^2-7`, `f(x+2)=…`,
+ * `h(f(-2))=…` — or which is itself an expression of applications —
+ * `f(x)+f(2)=x^2+4`, `-f(x)=…`, `f(x)\cdot g(x)=…`: the quantity the ask
+ * named ("find $g(m^2)$", "find $f(x)+f(2)$"), written before the answer
+ * the way the book's worked examples write it. FUNCTION_APPLICATION_RE reads
+ * only a letter or numeral argument, so these graded `incorrect` against a
+ * right key (Intermediate Algebra 3.5, September 28, 2026). Stripped only
+ * when the KEY writes no `=` (a key that is an equation — a polar
+ * `r(1+\cos\theta)=5`, a translation `x(x+2)=15` — is compared as the
+ * equation it is), when the response has exactly one `=` and no order
+ * relation, and when the left side is nothing but applications joined by
+ * `+`, `-`, `\cdot`, `\times` (one leading sign allowed) — `f(x)-4=…` keeps
+ * its output-quantity reading. A name that appears inside its own argument
+ * is a product, not an application (`x(x+2)=15`), and is left alone. A
+ * single application at a letter or numeral is left to readFunctionNotation,
+ * which already reads it. Not read: a quotient of applications (the
+ * difference quotient `\frac{f(x+h)-f(x)}{h}=…`) and a coefficient
+ * (`2f(x)=…`).
+ */
+function readExpressionLabel(latex, answerRaw) {
+  if (answerRaw == null || preprocess(String(answerRaw)).includes('=')) return latex;
+  const text = latex.replace(/\\(?:left|right)\s*/g, '');
+  if ((text.match(/=/g) || []).length !== 1 || /[<>]|\\[lg]eq?(?![a-zA-Z])|\\ne(?![a-zA-Z])/.test(text)) return latex;
+  const at = text.indexOf('=');
+  const lhs = text.slice(0, at).trim();
+  let i = 0;
+  let applications = 0;
+  let simple = true;
+  if (lhs[i] === '-' || lhs[i] === '+') {
+    i += 1;
+    simple = false;
+  }
+  for (;;) {
+    while (lhs[i] === ' ') i += 1;
+    const name = lhs.slice(i).match(/^([a-zA-Z])(?:_\{p+\})?(?:\^\{-1\})?\s*\(/);
+    if (!name) return latex;
+    const open = i + name[0].length - 1;
+    let depth = 0;
+    let close = -1;
+    for (let j = open; j < lhs.length; j += 1) {
+      if (lhs[j] === '(') depth += 1;
+      else if (lhs[j] === ')' && (depth -= 1) === 0) { close = j; break; }
+    }
+    if (close === -1) return latex;
+    const argument = lhs.slice(open + 1, close).trim();
+    if (!argument || argument.replace(/\\[a-zA-Z]+/g, ' ').includes(name[1])) return latex;
+    if (!/^(?:[a-zA-Z]|-?\d+(?:\.\d+)?)$/.test(argument)) simple = false;
+    applications += 1;
+    i = close + 1;
+    while (lhs[i] === ' ') i += 1;
+    if (i >= lhs.length) break;
+    const operator = lhs.slice(i).match(/^(?:[+-]|\\cdot(?![a-zA-Z])|\\times(?![a-zA-Z]))/);
+    if (!operator) return latex;
+    i += operator[0].length;
+  }
+  if (applications === 1 && simple) return latex;
+  const value = text.slice(at + 1).trim();
+  return value || latex;
+}
+
+/**
  * The equation reading of a LABELLED response, for the form check only.
  * `f(x)=5(x-3)` is the label reading `5(x-3)` for value grading — but as
  * writing it is also the collapsed-origin point-slope equation `y=5(x-3)`,
@@ -5065,7 +5228,8 @@ function functionLabelEquation(latex) {
  * accepted too. Exported so the content lint's cheap shape pre-filter can
  * never disagree with the grader about the same text.
  */
-function formAcceptedAsWritten(preprocessed, spec, answerRaw) {
+function formAcceptedAsWritten(written, spec, answerRaw) {
+  const preprocessed = readExpressionLabel(written, answerRaw);
   if (checkForm(readFunctionNotation(preprocessed), spec, answerRaw)) return true;
   const equation = functionLabelEquation(preprocessed);
   if (equation !== null && checkForm(equation, spec, answerRaw)) return true;
@@ -5331,7 +5495,7 @@ function gradeResponse(rawStudent, answerRaw, options = {}) {
   if (asList !== null) return withListForm(asList, studentRaw, options.form);
 
   const written = student;
-  student = readFunctionNotation(student);
+  student = readFunctionNotation(readExpressionLabel(student, answerRaw));
   if (!student) return 'invalid';
 
   let studentExpr;
