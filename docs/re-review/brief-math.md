@@ -199,7 +199,15 @@ Algebra chapter 4 re-review (October 3, 2026): a whole-number coefficient,
 so a source's variable `e` keeps its letter. A chain of operations on one
 matrix (or one quantity) asked as separate items prints each item's
 starting state in its own stem — "starting from the result above" stems
-print the previous item's key.
+print the previous item's key. Since the Intermediate Algebra chapter 5 re-review
+(October 3, 2026): a combined-function label (`(f+g)(x)=`, `(f-g)(-2)=`,
+`(f\cdot g)(2)=`, `(fg)(x)=`, `\left(\frac{f}{g}\right)(x)=`, `(f/g)(-5)=`)
+is stripped against a value key, so a function-arithmetic ask needs no
+"enter just the polynomial" pin; `no-like-terms` refuses a sum holding an
+improper polynomial quotient (`x^3-3x^2+2x+\frac{x+6}{x+3}`), so a
+long-division key with a remainder takes `expanded no-like-terms`; and
+"with a positive exponent" on a numeral power (`\frac{1}{12^{15}}`) takes
+`single-power positive-exponents` (`single-power` alone passes `12^{-15}`).
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
