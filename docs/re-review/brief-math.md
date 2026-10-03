@@ -218,6 +218,12 @@ refuses a GCF taken out in part (`2(4a^3b+…)` for `2ab(…)`) or with the wron
 sign (`4b(-b^2+4b-2)` for `-4b(b^2-4b+2)`), composed with `factored` on an
 incomplete key and `factored-completely` on a complete one. A bare command
 word in math (`checkmark`, `cdot`, `frac`) is a lint error.
+Since the Intermediate Algebra chapter 7 re-review (October 3, 2026):
+`solved:<v>` composes — the other tokens read the side $v$ equals — so a
+solve-for or variation key that is a fraction takes `solved:<v>
+single-fraction reduced-fraction` (refuses `a=\frac{2b}{2bc-2}`,
+`h=\frac{2\cdot65}{t}`) and a combined sum takes `solved:<v> no-like-terms`
+or `expanded distributed no-like-terms`; equation forms still read the whole.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
