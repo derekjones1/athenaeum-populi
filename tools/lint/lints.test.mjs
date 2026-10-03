@@ -2333,6 +2333,17 @@ test('a stray double backslash in math is caught, but a row separator is not', (
   );
 });
 
+test('a command name typed without its backslash in math is rejected', () => {
+  const bare = (source) => lintHugo(source, SECTION)
+    .errors.filter((e) => e.includes('KaTeX sets it as italic letters'));
+  for (const source of ['$9x^2+12x+4 checkmark$', '$$\n3 cdot 4\n$$', '$x+frac12$', '$sqrt{2}$']) {
+    assert.equal(bare(source).length, 1, source);
+  }
+  for (const source of ['$9x^2+12x+4\\ \\checkmark$', '$3\\cdot4$', '$\\text{checkmark}$', '$\\dfrac12$', 'a checkmark in prose']) {
+    assert.deepEqual(bare(source), [], source);
+  }
+});
+
 test('a sign minus after an opening absolute-value bar or \\ldots is rejected', () => {
   // KaTeX's `|` is an ordinary symbol, so `$|-5|$` renders "| − 5|": the sign
   // is spaced as subtraction. It never throws, so only this rule sees it.

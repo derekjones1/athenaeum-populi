@@ -2166,8 +2166,11 @@ function exprToRationalTerms(expr, vars) {
 /**
  * The factor profile of a written product: how many non-constant factors it
  * has with multiplicity, whether every polynomial factor is primitive over
- * the integers, and whether every coefficient it wrote was an integer — or
- * null when some factor cannot be read as a rational-coefficient polynomial.
+ * the integers, whether every coefficient it wrote was an integer, and the
+ * sign of its monomial part (`negative`: the constants, minus signs, and
+ * one-term factors written outside the polynomial factors multiply to a
+ * negative) — or null when some factor cannot be read as a
+ * rational-coefficient polynomial.
  */
 function factorProfile(latex) {
   let expr;
@@ -2180,13 +2183,33 @@ function factorProfile(latex) {
   const symbols = new Set();
   collectSymbols(expr, symbols);
   const vars = [...symbols].sort();
-  const profile = { count: 0, primitive: true, integral: true };
+  const profile = { count: 0, primitive: true, integral: true, negative: false };
+  const flip = (multiplicity) => {
+    if (multiplicity % 2 === 1) profile.negative = !profile.negative;
+  };
+  const negativeConstant = (e) => {
+    try {
+      const value = e.isNumberLiteral ? e : e.N();
+      return value.im === 0 && value.re < 0;
+    } catch {
+      return false;
+    }
+  };
   const walk = (e, multiplicity) => {
-    if (isConstantExpr(e)) return true;
+    if (isConstantExpr(e)) {
+      if (negativeConstant(e)) flip(multiplicity);
+      return true;
+    }
     const ops = e.ops ?? [];
-    if (e.operator === 'Negate') return walk(ops[0], multiplicity);
+    if (e.operator === 'Negate') {
+      flip(multiplicity);
+      return walk(ops[0], multiplicity);
+    }
     if (e.operator === 'Multiply') return ops.every((op) => walk(op, multiplicity));
-    if (e.operator === 'Divide' && isConstantExpr(ops[1])) return walk(ops[0], multiplicity);
+    if (e.operator === 'Divide' && isConstantExpr(ops[1])) {
+      if (negativeConstant(ops[1])) flip(multiplicity);
+      return walk(ops[0], multiplicity);
+    }
     if (e.operator === 'Power') {
       const exponent = ops[1];
       if (!exponent?.isNumberLiteral || exponent.im !== 0 || !Number.isInteger(exponent.re)
@@ -2205,6 +2228,7 @@ function factorProfile(latex) {
       // A single term that stayed a sum in the parse (`(x+x)`): its constant
       // is free and its variables count like written powers.
       profile.count += multiplicity * entries[0][0].reduce((sum, e) => sum + e, 0);
+      if (entries[0][1][0] < 0n) flip(multiplicity);
       return true;
     }
     const content = entries.reduce((g, [, [n]]) => bigintGcd(g, n), 0n);
@@ -2818,6 +2842,39 @@ function numeralFractionsReduced(latex) {
       if (b === 1 || (a !== 0 && gcd(a, b) !== 1)) return false;
     }
     i += command[0].length - 1;
+  }
+  return true;
+}
+
+/**
+ * Is every parenthesized sum the response writes finished — expanded, with
+ * like terms combined? A pattern applied but not simplified keeps the value
+ * and the product shape, so `factored-completely` passed the substitution
+ * left in place (`(x-5+2)(x-5+4)` for `(x-3)(x-1)`, `(3x+1-3)^2` for
+ * `(3x-2)^2`), a cube pattern's factors unsquared (`(x+3)(x^2-3x+3^2)`,
+ * `(2x-3y)((2x)^2+2x\cdot3y+(3y)^2)`), and `(y+1-3y)(…)` (Intermediate
+ * Algebra 6.2–6.4, October 3, 2026). Simplifying inside the parentheses is
+ * the step those sections end on, so `factored` requires it, as it requires
+ * `numeralFractionsReduced`. A group that is one term (`(3y)`, `(-2)`) is
+ * not read.
+ */
+function factorSumsFinished(latex) {
+  const text = bareLatex(latex);
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] !== '(') continue;
+    let depth = 0;
+    let end = -1;
+    for (let j = i; j < text.length; j += 1) {
+      if (text[j] === '(') depth += 1;
+      else if (text[j] === ')') {
+        depth -= 1;
+        if (depth === 0) { end = j; break; }
+      }
+    }
+    if (end < 0) return true;
+    const inner = text.slice(i + 1, end);
+    if (splitTopLevelTerms(inner).filter((term) => term.trim()).length > 1
+      && !(FORM_PREDICATES.expanded(inner) && FORM_PREDICATES['no-like-terms'](inner))) return false;
   }
   return true;
 }
@@ -3988,7 +4045,8 @@ const FORM_PREDICATES = {
   // choice (numeralFractionsReduced).
   factored: (latex) => {
     const product = asFactoredProduct(latex);
-    return product !== null && product.compound >= 1 && product.count >= 2 && numeralFractionsReduced(latex);
+    return product !== null && product.compound >= 1 && product.count >= 2 && numeralFractionsReduced(latex)
+      && factorSumsFinished(latex);
   },
   // "Factor completely: $2x^2+8x+8$" answers `2(x+2)^2`, and `factored`
   // passes the half-done `(2x+4)(x+2)` and `2(x^2+4x+4)` too. This token is
@@ -4003,13 +4061,33 @@ const FORM_PREDICATES = {
   // (`\cdot x\cdot\frac1x`, `(x+1)(x+1)^{-1}`, `|x|\frac{1}{|x|}`) buy the
   // unfinished `(x^2+4)(x^2-4)` the factor count it lacked.
   // Use it where the ask is "Factor" / "Factor completely" and the key is
-  // complete; a GCF-only ask keeps `factored` (see the ruling above).
+  // complete; a GCF-only ask takes `gcf-factored`, composed with `factored`
+  // when its key is not complete (see the ruling above).
   'factored-completely': (latex, answer) => {
     if (!FORM_PREDICATES.factored(latex)) return false;
     const key = answer ? factorProfile(answer) : null;
     if (key === null || !key.integral) return true;
     const response = factorProfile(latex);
     return response !== null && response.primitive && response.count >= key.count;
+  },
+  // "Factor the greatest common factor from $8a^3b+2a^2b^2-6ab^3$" answers
+  // `2ab(4a^2+ab-3b^2)`, which is not complete, so it keeps `factored` — and
+  // `factored` passed a common factor taken out only in part
+  // (`2(4a^3b+a^2b^2-3ab^3)`, `-7(a^3-3a^2+2a)`), and on "factor out a
+  // negative GCF" the positive one (`4b(-b^2+4b-2)` for `-4b(b^2-4b+2)`;
+  // Intermediate Algebra 6.1, October 3, 2026). The GCF is all taken out
+  // exactly when every polynomial factor left is primitive — no integer and
+  // no variable common to its terms — and then, by Gauss's lemma, the
+  // monomial outside is the key's up to sign; the sign is the book's rule
+  // (a negative leading coefficient goes out with the GCF), so it is read
+  // against the key's. Factoring further is allowed. A key the reader
+  // cannot take as an integer-coefficient product falls back to `factored`.
+  'gcf-factored': (latex, answer) => {
+    if (!FORM_PREDICATES.factored(latex)) return false;
+    const key = answer ? factorProfile(answer) : null;
+    if (key === null || !key.integral) return true;
+    const response = factorProfile(latex);
+    return response !== null && response.primitive && response.negative === key.negative;
   },
   // "Write $y=-x^2+2x-4$ in standard form" answers $y=-(x-1)^2-3$ — completing
   // the square changes the shape, not the value, so the printed general form
@@ -4552,6 +4630,7 @@ const FORM_PHRASES = {
   'reduced-fraction': 'as a single fraction with all common factors cancelled',
   factored: 'in factored form',
   'factored-completely': 'factored completely, with no factor that can be factored further',
+  'gcf-factored': 'with the whole greatest common factor taken out, a negative one when the leading coefficient is negative',
   'point-slope-form': 'in point-slope form, y − y₁ = m(x − x₁), with the slope multiplying the parenthesized difference',
   'slope-intercept-form': 'in slope-intercept form, y = mx + b, with one constant term and every fraction reduced',
   'line-standard-form': 'in standard form, with the variable terms on one side and one number on the other',
@@ -4627,6 +4706,14 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
     const product = asFactoredProduct(studentRaw);
     if (product !== null && product.compound >= 1 && product.count >= 2) {
       return 'That value is right and it is factored — now reduce each fraction in it to lowest terms.';
+    }
+  }
+  // …and one that left a sum unsimplified inside a factor is told to finish it.
+  if (tokens.every((token) => token === 'factored' || token === 'factored-completely' || token === 'gcf-factored')
+    && numeralFractionsReduced(studentRaw) && !factorSumsFinished(studentRaw)) {
+    const product = asFactoredProduct(studentRaw);
+    if (product !== null && product.compound >= 1 && product.count >= 2) {
+      return 'That value is right and it is factored — now simplify inside each set of parentheses.';
     }
   }
   if (tokens.length === 1 && tokens[0] === 'factored-completely' && checkFormAsGraded(studentRaw, 'factored')) {

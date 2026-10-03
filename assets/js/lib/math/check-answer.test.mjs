@@ -1073,6 +1073,35 @@ const formCases = [
   ['(x^2+4)(x+2)(x-2)', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'correct'],
   ['(x-2)(x+2)(x^2+4)', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'correct'],
   ['(x^2+4)(x^2-4)', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
+  // a sum left unsimplified inside a factor is unfinished writing, under
+  // `factored` and so every factoring token (Intermediate Algebra 6.2–6.4,
+  // October 3, 2026): the substitution left in place, a cube pattern's
+  // factors unsquared, a binomial's terms uncombined
+  ['(x-5+2)(x-5+4)', '(x-3)(x-1)', 'factored-completely', 'form'],
+  ['(3x+1-3)^2', '(3x-2)^2', 'factored-completely', 'form'],
+  ['(x+3)(x^2-3x+3^2)', '(x+3)(x^2-3x+9)', 'factored-completely', 'form'],
+  ['(2x-3y)((2x)^2+2x\\cdot3y+(3y)^2)', '(2x-3y)(4x^2+6xy+9y^2)', 'factored-completely', 'form'],
+  ['(y+1-3y)((y+1)^2+3y(y+1)+9y^2)', '(1-2y)(13y^2+5y+1)', 'factored-completely', 'form'],
+  ['(x-5+2)(x-5+4)', '(x-3)(x-1)', 'factored', 'form'],
+  ['(1-2y)(13y^2+5y+1)', '(1-2y)(13y^2+5y+1)', 'factored-completely', 'correct'],
+  ['(x+\\frac12)^2', '(x+\\frac12)^2', 'factored', 'correct'],
+  ['(3y)^2(x+1)', '9y^2(x+1)', 'factored', 'correct'],
+  // gcf-factored: the whole GCF out, with the key's sign (6.1)
+  ['2ab(4a^2+ab-3b^2)', '2ab(4a^2+ab-3b^2)', 'factored gcf-factored', 'correct'],
+  ['2ab(ab+4a^2-3b^2)', '2ab(4a^2+ab-3b^2)', 'factored gcf-factored', 'correct'],
+  ['2(4a^3b+a^2b^2-3ab^3)', '2ab(4a^2+ab-3b^2)', 'factored', 'correct'],
+  ['2(4a^3b+a^2b^2-3ab^3)', '2ab(4a^2+ab-3b^2)', 'factored gcf-factored', 'form'],
+  ['ab(8a^2+2ab-6b^2)', '2ab(4a^2+ab-3b^2)', 'factored gcf-factored', 'form'],
+  ['-7a(a^2-3a+2)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'correct'],
+  ['-7(a^3-3a^2+2a)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'form'],
+  ['7a(-a^2+3a-2)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'form'],
+  ['-7a(a-1)(a-2)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'correct'],
+  ['-4b(b^2-4b+2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'correct'],
+  ['4b(-b^2+4b-2)', '-4b(b^2-4b+2)', 'factored-completely', 'correct'],
+  ['4b(-b^2+4b-2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'form'],
+  ['-(4b)(b^2-4b+2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'correct'],
+  ['3(x+2)', '3(x+2)', 'factored gcf-factored', 'correct'],
+  ['-3(-x-2)', '3(x+2)', 'factored gcf-factored', 'form'],
   // a cancelling pair cannot buy the missing factor count
   ['(x^2+4)(x^2-4)x\\cdot x^{-1}', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
   ['(x^2+4)(x^2-4)(x+1)(x+1)^{-1}', '(x^2+4)(x+2)(x-2)', 'factored-completely', 'form'],
@@ -1682,6 +1711,10 @@ test('answerForm parsing and feedback wording', async (t) => {
       assert.ok(describeFormFeedback(typed, 'factored-completely').includes(keepGoing), typed);
     }
     assert.equal(describeFormFeedback('2x^2+8x+8', 'factored-completely'), describeAnswerForm('factored-completely'));
+    const simplifyInside = 'now simplify inside each set of parentheses';
+    for (const typed of ['(x-5+2)(x-5+4)', '(x+3)(x^2-3x+3^2)']) {
+      assert.ok(describeFormFeedback(typed, 'factored-completely').includes(simplifyInside), typed);
+    }
     assert.ok(describeAnswerForm('factored-completely').includes('factored completely'));
   });
 

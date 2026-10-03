@@ -1558,6 +1558,18 @@ export function lintHugo(src, filename = '', options = {}) {
       err(span.index + m.index, 'degree glyph inside math — write ^\\circ, the spelling KaTeX sets and the `degrees` answerForm reads');
     }
   }
+  // A command name typed without its backslash. KaTeX sets `checkmark` as
+  // nine italic variables and `cdot` as four, and never throws, so neither
+  // the build nor verify-section sees it; Intermediate Algebra 6.3 ended three
+  // check lines in a bare `checkmark` (October 3, 2026). Only names no
+  // product of one-letter variables in this corpus spells; text arguments
+  // (`\text{…}`, `\mathrm{…}`) are prose and are blanked first.
+  for (const span of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
+    const tex = span.tex.replace(/\\(?:text|textbf|textit|mathrm|mathit|operatorname|mbox)\s*\{[^{}]*\}/g, (m) => ' '.repeat(m.length));
+    for (const m of tex.matchAll(/(?<![\\a-zA-Z])(checkmark|cdot|cdots|ldots|dfrac|tfrac|frac|sqrt|infty|qquad)(?![a-zA-Z])/g)) {
+      err(span.index + (span.display ? 2 : 1) + m.index, `bare \`${m[1]}\` in math — KaTeX sets it as italic letters; write \`\\${m[1]}\``);
+    }
+  }
   // A sign spaced as subtraction. KaTeX's `|` is an ORDINARY symbol, so the
   // minus after the bar that opens an absolute value is set as a binary
   // operator: `$|-5|$` renders "| − 5|" and `$-|-9|$` "−| − 9|". It never
