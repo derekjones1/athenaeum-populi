@@ -51,15 +51,15 @@ $$
 {{< fillin
   question="Factor $q^2+10q+24$."
   answer="(q+4)(q+6)"
-  answerForm="factored"
-  hint="Find two numbers that multiply to $24$ and add to $10$."
+  answerForm="factored-completely"
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor $t^2+14t+24$."
   answer="(t+2)(t+12)"
-  answerForm="factored"
-  hint="Find two numbers that multiply to $24$ and add to $14$."
+  answerForm="factored-completely"
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< callout type="info" >}}
@@ -84,15 +84,15 @@ $$y^2-11y+28=(y-4)(y-7).$$
 {{< fillin
   question="Factor $u^2-9u+18$."
   answer="(u-3)(u-6)"
-  answerForm="factored"
-  hint="Use two negative numbers that multiply to $18$ and add to $-9$."
+  answerForm="factored-completely"
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor $y^2-16y+63$."
   answer="(y-7)(y-9)"
-  answerForm="factored"
-  hint="Use two negative numbers that multiply to $63$ and add to $-16$."
+  answerForm="factored-completely"
+  hint="Use the signs of the last and middle terms to decide the signs of the two numbers, then find the pair whose product is the last term and whose sum is the coefficient of the middle term."
 >}}
 
 If the last term is negative, its factors have opposite signs. Choose them
@@ -109,19 +109,20 @@ $$2x+x^2-48=(x-6)(x+8).$$
 {{< fillin
   question="Factor $9m+m^2+18$."
   answer="(m+3)(m+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="First write the trinomial in descending order."
 >}}
 
 {{< fillin
   question="Factor $-7n+12+n^2$."
   answer="(n-3)(n-4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="First write the trinomial in descending order."
 >}}
 
-Trinomials may have two variables. The $y^2$ in the last term means the
-second terms of the binomial factors must each contain $y$.
+Trinomials may have two variables, as in the form $x^2+bxy+cy^2$. The $y^2$
+in the last term means the second terms of the binomial factors must each
+contain $y$.
 
 **Example.** Factor $r^2-8rs-9s^2$.
 
@@ -132,15 +133,15 @@ $$r^2-8rs-9s^2=(r+s)(r-9s).$$
 {{< fillin
   question="Factor $a^2-11ab+10b^2$."
   answer="(a-b)(a-10b)"
-  answerForm="factored"
-  hint="Find coefficients that multiply to $10$ and add to $-11$."
+  answerForm="factored-completely"
+  hint="Put the first variable first in each binomial and the second variable in each last term. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the last coefficient and their sum to the middle coefficient."
 >}}
 
 {{< fillin
   question="Factor $m^2-13mn+12n^2$."
   answer="(m-n)(m-12n)"
-  answerForm="factored"
-  hint="Find coefficients that multiply to $12$ and add to $-13$."
+  answerForm="factored-completely"
+  hint="Put the first variable first in each binomial and the second variable in each last term. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the last coefficient and their sum to the middle coefficient."
 >}}
 
 Some trinomials are prime. The only way to be certain is to list all
@@ -152,7 +153,7 @@ The factor-pair sums for $-12$ are $-11,11,-4,4,-1,1$. None is $-9$, so
 the trinomial is prime.
 
 {{< multiplechoice
-  question="Factor $x^2-7xy-10y^2$."
+  question="Factor $x^2-7xy-10y^2$. If it cannot be factored, choose “prime.”"
   answer="prime"
   hint="List the integer factor pairs of the constant term and test whether any pair has the required middle-term sum."
 >}}
@@ -162,7 +163,7 @@ $(x+5y)(x-2y)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Factor $p^2+15pq+20q^2$."
+  question="Factor $p^2+15pq+20q^2$. If it cannot be factored, choose “prime.”"
   answer="prime"
   hint="List the integer factor pairs of the constant term and test whether any pair has the required middle-term sum."
 >}}
@@ -190,15 +191,15 @@ $$4x^3+16x^2-20x=4x(x^2+4x-5)=4x(x-1)(x+5).$$
 {{< fillin
   question="Factor completely: $5x^3+15x^2-20x$."
   answer="5x(x-1)(x+4)"
-  answerForm="factored"
-  hint="Factor out $5x$ first."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses."
 >}}
 
 {{< fillin
   question="Factor completely: $6y^3+18y^2-60y$."
   answer="6y(y-2)(y+5)"
-  answerForm="factored"
-  hint="Factor out $6y$ first."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses."
 >}}
 
 When there is no GCF, test factor pairs. For $3x^2+5x+2$, test $x,3x$ and
@@ -220,14 +221,14 @@ Thus $3y^2+22y+7=(y+7)(3y+1)$.
 {{< fillin
   question="Factor completely using trial and error: $2a^2+5a+3$."
   answer="(a+1)(2a+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Test factor pairs of $2a^2$ and $3$."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $4b^2+5b+1$."
   answer="(b+1)(4b+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Test factor pairs of $4b^2$ and $1$."
 >}}
 
@@ -261,15 +262,15 @@ So $6b^2-13b+5=(2b-1)(3b-5)$.
 {{< fillin
   question="Factor completely using trial and error: $8x^2-14x+3$."
   answer="(2x-3)(4x-1)"
-  answerForm="factored"
-  hint="Test factor pairs of $8$ and $3$ with negative signs."
+  answerForm="factored-completely"
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $10y^2-37y+7$."
   answer="(2y-7)(5y-1)"
-  answerForm="factored"
-  hint="Test factor pairs of $10$ and $7$ with negative signs."
+  answerForm="factored-completely"
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last terms until the middle term matches."
 >}}
 
 If an expression has no GCF, neither factor can have a common factor. This
@@ -285,15 +286,15 @@ $$18x^2-37xy+15y^2=(2x-3y)(9x-5y).$$
 {{< fillin
   question="Factor completely using trial and error: $18x^2-3xy-10y^2$."
   answer="(3x+2y)(6x-5y)"
-  answerForm="factored"
-  hint="Use opposite signs and eliminate binomials with common factors."
+  answerForm="factored-completely"
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, skip any binomial whose terms share a common factor, and test the rest until the middle term matches."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $30x^2-53xy-21y^2$."
   answer="(3x+y)(10x-21y)"
-  answerForm="factored"
-  hint="Use opposite signs and eliminate binomials with common factors."
+  answerForm="factored-completely"
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, skip any binomial whose terms share a common factor, and test the rest until the middle term matches."
 >}}
 
 If the leading coefficient is negative, so is the GCF.
@@ -303,23 +304,24 @@ If the leading coefficient is negative, so is the GCF.
 $$-10y^4-55y^3-60y^2=-5y^2(2y^2+11y+12)=-5y^2(y+4)(2y+3).$$
 
 {{< fillin
-  question="Factor completely: $15n^3-85n^2+100n$."
+  question="Factor completely using trial and error: $15n^3-85n^2+100n$."
   answer="5n(n-4)(3n-5)"
-  answerForm="factored"
-  hint="Factor out $5n$ first."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses by trial and error."
 >}}
 
 {{< fillin
-  question="Factor completely: $56q^3+320q^2-96q$."
+  question="Factor completely using trial and error: $56q^3+320q^2-96q$."
   answer="8q(q+6)(7q-2)"
-  answerForm="factored"
-  hint="Factor out $8q$ first."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses by trial and error."
 >}}
 
 ## Factor trinomials of the form $ax^2+bx+c$ using the “ac” method
 
-The “ac” method, sometimes called the grouping method, extends the preceding
-method. It is very structured and always works.
+The “ac” method, sometimes called the grouping method, extends the method for
+trinomials with leading coefficient one. It is very structured and always
+works.
 
 **Example.** Factor $6x^2+7x+2$ using the “ac” method.
 
@@ -337,15 +339,15 @@ $$
 {{< fillin
   question="Factor using the ac method: $6x^2+13x+2$."
   answer="(x+2)(6x+1)"
-  answerForm="factored"
-  hint="Find numbers that multiply to $12$ and add to $13$."
+  answerForm="factored-completely"
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< fillin
   question="Factor using the ac method: $4y^2+8y+3$."
   answer="(2y+1)(2y+3)"
-  answerForm="factored"
-  hint="Find numbers that multiply to $12$ and add to $8$."
+  answerForm="factored-completely"
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< callout type="info" >}}
@@ -363,6 +365,7 @@ $$
 \begin{array}{rcl}
 10y^2-55y+70&=&5(2y^2-11y+14)\\[4pt]
 &=&5(2y^2-7y-4y+14)\\[4pt]
+&=&5\bigl(y(2y-7)-2(2y-7)\bigr)\\[4pt]
 &=&5(y-2)(2y-7)
 \end{array}
 $$
@@ -370,15 +373,15 @@ $$
 {{< fillin
   question="Factor using the ac method: $16x^2-32x+12$."
   answer="4(2x-3)(2x-1)"
-  answerForm="factored"
-  hint="Factor out $4$ first."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses — look for two numbers whose product is $ac$ and whose sum is $b$."
 >}}
 
 {{< fillin
   question="Factor using the ac method: $18w^2-39w+18$."
   answer="3(3w-2)(2w-3)"
-  answerForm="factored"
-  hint="Factor out $3$ first."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses — look for two numbers whose product is $ac$ and whose sum is $b$."
 >}}
 
 ## Factor using substitution
@@ -396,14 +399,14 @@ $$x^4-4x^2-5=u^2-4u-5=(u+1)(u-5)=(x^2+1)(x^2-5).$$
 {{< fillin
   question="Factor by substitution: $h^4+4h^2-12$."
   answer="(h^2-2)(h^2+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=h^2$."
 >}}
 
 {{< fillin
   question="Factor by substitution: $y^4-y^2-20$."
   answer="(y^2+4)(y^2-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=y^2$."
 >}}
 
@@ -427,14 +430,14 @@ but most students prefer substitution.
 {{< fillin
   question="Factor by substitution: $(x-5)^2+6(x-5)+8$."
   answer="(x-3)(x-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=x-5$."
 >}}
 
 {{< fillin
   question="Factor by substitution: $(y-4)^2+8(y-4)+15$."
   answer="(y-1)(y+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=y-4$."
 >}}
 
@@ -454,15 +457,15 @@ trinomial that cannot be factored over the integers.
 {{< fillin
   question="Factor $p^2+11p+30$."
   answer="(p+5)(p+6)"
-  answerForm="factored"
-  hint="Find two numbers that multiply to $30$ and add to $11$."
+  answerForm="factored-completely"
+  hint="List the factor pairs of the last term and look for the pair whose sum is the coefficient of the middle term."
 >}}
 
 {{< fillin
   question="Factor $8-6x+x^2$."
   answer="(x-2)(x-4)"
-  answerForm="factored"
-  hint="First write the trinomial in descending order, then find two numbers that multiply to $8$ and add to $-6$."
+  answerForm="factored-completely"
+  hint="Put the terms in decreasing degree order first. Use the signs of the last and middle terms to decide the signs of the two numbers, then match their product to the constant term and their sum to the middle coefficient."
 >}}
 
 {{< multiplechoice
@@ -480,22 +483,22 @@ prime
 {{< fillin
   question="Factor completely using trial and error: $p^3-8p^2-20p$."
   answer="p(p-10)(p+2)"
-  answerForm="factored"
-  hint="Factor out $p$ first, then find two numbers that multiply to $-20$ and add to $-8$."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then look for two numbers whose product is the trinomial's last term and whose sum is its middle coefficient."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $2t^2+7t+5$."
   answer="(2t+5)(t+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Test factor pairs of $2t^2$ and $5$."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $6p^2-19pq+10q^2$."
   answer="(2p-5q)(3p-2q)"
-  answerForm="factored"
-  hint="The last term is positive and the middle term negative, so both signs are negative — test factor pairs of $6$ and $10$."
+  answerForm="factored-completely"
+  hint="Let the signs of the last and middle terms decide the signs in the binomials, then test the factor pairs of the first and last coefficients until the middle term matches."
 >}}
 
 ### Factor trinomials of the form $ax^2+bx+c$ using the “ac” method
@@ -503,22 +506,22 @@ prime
 {{< fillin
   question="Factor using the ac method: $5n^2+21n+4$."
   answer="(5n+1)(n+4)"
-  answerForm="factored"
-  hint="Find numbers that multiply to $20$ and add to $21$."
+  answerForm="factored-completely"
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< fillin
   question="Factor using the ac method: $4k^2-16k+15$."
   answer="(2k-3)(2k-5)"
-  answerForm="factored"
-  hint="Find numbers that multiply to $60$ and add to $-16$."
+  answerForm="factored-completely"
+  hint="Find $ac$, then look for two numbers whose product is $ac$ and whose sum is $b$; split the middle term with them and factor by grouping."
 >}}
 
 {{< fillin
   question="Factor using the ac method: $60y^2+290y-50$."
   answer="10(6y-1)(y+5)"
-  answerForm="factored"
-  hint="Factor out $10$ first, then find numbers that multiply to $-30$ and add to $29$."
+  answerForm="factored-completely"
+  hint="Factor out the GCF first, then factor the trinomial left inside the parentheses — look for two numbers whose product is $ac$ and whose sum is $b$."
 >}}
 
 ### Factor using substitution
@@ -526,24 +529,24 @@ prime
 {{< fillin
   question="Factor by substitution: $x^4-6x^2-7$."
   answer="(x^2+1)(x^2-7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=x^2$."
 >}}
 
 {{< fillin
   question="Factor by substitution: $(x-3)^2-5(x-3)-36$."
   answer="(x-12)(x+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=x-3$."
 >}}
 
 {{< fillin
   question="Factor by substitution: $(3y-2)^2-(3y-2)-2$."
   answer="(3y-4)(3y-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   hint="Let $u=3y-2$."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.2: Factor Trinomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-2-factor-trinomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example tables and factoring diagrams as accessible math and tables, omitted the Be Prepared quiz and media link, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.2: Factor Trinomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-2-factor-trinomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example tables and factoring diagrams as accessible math and tables, omitted the Be Prepared quiz, Key Concepts, Self Check checklist, media link, and unselected end-of-section exercises, converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking the two prime Try Its as multiple choice, and adapted selected end-of-section exercises into an interactive Practice block, asking the prime exercise as a multiple choice.</small>

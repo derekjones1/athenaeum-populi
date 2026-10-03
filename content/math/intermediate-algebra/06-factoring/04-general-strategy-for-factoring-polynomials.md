@@ -23,7 +23,7 @@ You have now become acquainted with all the methods of factoring that you will n
 | Binomial: sum of cubes | $a^3+b^3=(a+b)(a^2-ab+b^2)$ |
 | Binomial: difference of cubes | $a^3-b^3=(a-b)(a^2+ab+b^2)$ |
 | Trinomial: $x^2+bx+c$ | $(x\phantom{{}+{}})(x\phantom{{}+{}})$ |
-| Trinomial: $ax^2+bx+c$ | If $a$ and $c$ are squares, check the trinomial-square pattern; otherwise use trial and error or the “$ac$” method. |
+| Trinomial: $ax^2+bx+c$ | If $a$ and $c$ are squares, check the trinomial-square patterns $(a+b)^2=a^2+2ab+b^2$ and $(a-b)^2=a^2-2ab+b^2$; otherwise use trial and error or the “$ac$” method. |
 | More than three terms | Use grouping. |
 
 {{< callout type="info" >}}
@@ -63,17 +63,17 @@ $$
 {{< fillin
   question="Factor completely: $8y^3+16y^2-24y$."
   answer="8y(y-1)(y+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$8y(y-1)(y+3)$"
-  hint="First factor out the GCF $8y$, then factor the remaining trinomial."
+  hint="Factor out the greatest common factor first, then factor the remaining trinomial."
 >}}
 
 {{< fillin
   question="Factor completely: $5y^3-15y^2-270y$."
   answer="5y(y-9)(y+6)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$5y(y-9)(y+6)$"
-  hint="First factor out the GCF $5y$, then factor the remaining trinomial."
+  hint="Factor out the greatest common factor first, then factor the remaining trinomial."
 >}}
 
 Be careful when you are asked to factor a binomial as there are several options!
@@ -94,7 +94,7 @@ $$
 {{< fillin
   question="Factor completely: $16x^3-36x$."
   answer="4x(2x-3)(2x+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4x(2x-3)(2x+3)$"
   hint="Factor out the GCF, then recognize a difference of squares."
 >}}
@@ -102,9 +102,9 @@ $$
 {{< fillin
   question="Factor completely: $27y^2-48$."
   answer="3(3y-4)(3y+4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3(3y-4)(3y+4)$"
-  hint="Factor out the GCF $3$, then recognize a difference of squares."
+  hint="Factor out the GCF, then recognize a difference of squares."
 >}}
 
 The next example can be factored using several methods. Recognizing the trinomial-squares pattern will make your work easier.
@@ -124,7 +124,7 @@ $$
 {{< fillin
   question="Factor completely: $4x^2+20xy+25y^2$."
   answer="(2x+5y)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2x+5y)^2$"
   hint="Check whether the trinomial fits the pattern $a^2+2ab+b^2$."
 >}}
@@ -132,7 +132,7 @@ $$
 {{< fillin
   question="Factor completely: $9x^2-24xy+16y^2$."
   answer="(3x-4y)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3x-4y)^2$"
   hint="Check whether the trinomial fits the pattern $a^2-2ab+b^2$."
 >}}
@@ -150,17 +150,17 @@ $$12x^3y^2+75xy^2=3xy^2(4x^2+25)$$
 {{< fillin
   question="Factor completely: $50x^3y+72xy$."
   answer="2xy(25x^2+36)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2xy(25x^2+36)$"
-  hint="Factor out the GCF. The remaining binomial is a sum of squares."
+  hint="Factor out the GCF, then decide whether the remaining binomial factors further."
 >}}
 
 {{< fillin
   question="Factor completely: $27xy^3+48xy$."
   answer="3xy(9y^2+16)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3xy(9y^2+16)$"
-  hint="Factor out the GCF. The remaining binomial is a sum of squares."
+  hint="Factor out the GCF, then decide whether the remaining binomial factors further."
 >}}
 
 When using the sum or difference of cubes pattern, be careful with the signs.
@@ -182,15 +182,17 @@ The expression is factored completely. Check by multiplying.
 {{< fillin
   question="Factor completely: $250m^3+432n^3$."
   answer="2(5m+6n)(25m^2-30mn+36n^2)"
-  answerForm="factored"
-  hint="Factor out the GCF $2$, then use the sum of cubes pattern."
+  answerForm="factored-completely"
+  answerDisplay="$2(5m+6n)(25m^2-30mn+36n^2)$"
+  hint="Factor out the GCF, then use the sum of cubes pattern."
 >}}
 
 {{< fillin
   question="Factor completely: $2p^3+54q^3$."
   answer="2(p+3q)(p^2-3pq+9q^2)"
-  answerForm="factored"
-  hint="Factor out the GCF $2$, then use the sum of cubes pattern."
+  answerForm="factored-completely"
+  answerDisplay="$2(p+3q)(p^2-3pq+9q^2)$"
+  hint="Factor out the GCF, then use the sum of cubes pattern."
 >}}
 
 **Example.** Factor completely: $3x^5y-48xy$.
@@ -210,7 +212,7 @@ The expression is factored completely. Check by multiplying.
 {{< fillin
   question="Factor completely: $4a^5b-64ab$."
   answer="4ab(a^2+4)(a-2)(a+2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4ab(a^2+4)(a-2)(a+2)$"
   hint="Factor out the GCF, then factor a difference of squares twice."
 >}}
@@ -218,7 +220,7 @@ The expression is factored completely. Check by multiplying.
 {{< fillin
   question="Factor completely: $7xy^5-7xy$."
   answer="7xy(y^2+1)(y-1)(y+1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$7xy(y^2+1)(y-1)(y+1)$"
   hint="Factor out the GCF, then factor a difference of squares twice."
 >}}
@@ -240,17 +242,17 @@ $$
 {{< fillin
   question="Factor completely: $6x^2-12xc+6bx-12bc$."
   answer="6(x+b)(x-2c)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$6(x+b)(x-2c)$"
-  hint="Factor out the GCF $6$, then use grouping."
+  hint="Factor out the GCF, then factor the four remaining terms by grouping."
 >}}
 
 {{< fillin
   question="Factor completely: $16x^2+24xy-4x-6y$."
   answer="2(4x-1)(2x+3y)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$2(4x-1)(2x+3y)$"
-  hint="Factor out the GCF $2$, then use grouping."
+  hint="Factor out the GCF, then factor the four remaining terms by grouping."
 >}}
 
 Taking out the complete GCF in the first step will always make your work easier.
@@ -271,17 +273,17 @@ $$
 {{< fillin
   question="Factor completely: $4p^2q-16pq+12q$."
   answer="4q(p-3)(p-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$4q(p-3)(p-1)$"
-  hint="Factor out the complete GCF $4q$, then factor the trinomial."
+  hint="Factor out the complete GCF, variable included, then factor the trinomial."
 >}}
 
 {{< fillin
   question="Factor completely: $6pq^2-9pq-6p$."
   answer="3p(2q+1)(q-2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3p(2q+1)(q-2)$"
-  hint="Factor out the complete GCF $3p$, then factor the trinomial."
+  hint="Factor out the complete GCF, variable included, then factor the trinomial."
 >}}
 
 When we have factored a polynomial with four terms, most often we separated it into two groups of two terms. Remember that we can also separate it into a trinomial and then one term.
@@ -310,7 +312,7 @@ $$
 {{< fillin
   question="Factor completely: $4x^2-12xy+9y^2-25$."
   answer="(2x-3y-5)(2x-3y+5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2x-3y-5)(2x-3y+5)$"
   hint="Group the first three terms as a perfect-square trinomial, then factor a difference of squares."
 >}}
@@ -318,7 +320,7 @@ $$
 {{< fillin
   question="Factor completely: $16x^2-24xy+9y^2-64$."
   answer="(4x-3y-8)(4x-3y+8)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(4x-3y-8)(4x-3y+8)$"
   hint="Group the first three terms as a perfect-square trinomial, then factor a difference of squares."
 >}}
@@ -334,15 +336,15 @@ $$
 {{< fillin
   question="Factor completely: $7b^2+7b-42$."
   answer="7(b+3)(b-2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$7(b+3)(b-2)$"
-  hint="Factor out the GCF $7$ first, then undo FOIL on the remaining trinomial."
+  hint="Factor out the GCF first, then undo FOIL on the remaining trinomial."
 >}}
 
 {{< fillin
   question="Factor completely: $121r^2-s^2$."
   answer="(11r-s)(11r+s)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(11r-s)(11r+s)$"
   hint="Two squares subtracted — write it directly as a product of conjugates."
 >}}
@@ -350,7 +352,7 @@ $$
 {{< fillin
   question="Factor completely: $8x^3-27y^3$."
   answer="(2x-3y)(4x^2+6xy+9y^2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(2x-3y)(4x^2+6xy+9y^2)$"
   hint="Binomial of cubes — apply the difference of cubes pattern $a^3-b^3=(a-b)(a^2+ab+b^2)$."
 >}}
@@ -358,15 +360,15 @@ $$
 {{< fillin
   question="Factor completely: $15pq-15p+12q-12$."
   answer="3(5p+4)(q-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3(5p+4)(q-1)$"
-  hint="Take out the GCF $3$ first, then group the four remaining terms into pairs and factor out the common binomial."
+  hint="Take out the GCF first, then group the four remaining terms into pairs and factor out the common binomial."
 >}}
 
 {{< fillin
   question="Factor completely: $9x^2-6xy+y^2-49$."
   answer="(3x-y+7)(3x-y-7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3x-y+7)(3x-y-7)$"
   hint="Group the first three terms as a perfect-square trinomial, then factor the resulting difference of squares."
 >}}
@@ -374,15 +376,15 @@ $$
 {{< fillin
   question="Factor completely: $(3x+1)^2-6(3x+1)+9$."
   answer="(3x-2)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3x-2)^2$"
-  hint="Let $u=3x+1$; the expression is $u^2-6u+9$, a perfect-square trinomial in $u$."
+  hint="Let $u=3x+1$ and factor the trinomial in $u$; then substitute back and simplify inside the parentheses."
 >}}
 
 {{< multiplechoice
   question="Factor completely: $4c^2+20cd+81d^2$. If it cannot be factored, choose “prime.”"
   answer="prime"
-  hint="Check the trinomial-square pattern: the middle term would need to be $36cd$, not $20cd$, and no factor pair of $ac=324$ sums to $20$."
+  hint="Check the trinomial-square pattern by comparing the middle term with $2ab$; if it does not fit, look for a factor pair of $ac$ that sums to $b$."
 >}}
 prime
 $(2c-9d)^2$
@@ -391,4 +393,4 @@ $(2c+9d)^2$
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.4: General Strategy for Factoring Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-4-general-strategy-for-factoring-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recast the factoring-method chart as an accessible table, reformatted the worked-example tables as aligned math, converted the practice problems (“Try Its”) into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.4: General Strategy for Factoring Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-4-general-strategy-for-factoring-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recast the factoring-method chart as an accessible table, reformatted the worked-example tables as aligned math, condensed the Key Concepts summary (which repeats the strategy box) into a Key terms list, omitted the Writing Exercises and Self Check checklist, converted the practice problems (“Try Its”) into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block, asking the prime exercise as a multiple choice.</small>

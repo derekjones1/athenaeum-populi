@@ -47,14 +47,15 @@ The method is similar to the method used to find the LCM.
 
 **Example.** Find the greatest common factor of $21x^3$, $9x^2$, and $15x$.
 
-Factor each coefficient into primes and expand each power. The factors common
-to all three expressions are $3$ and $x$:
+Factor each coefficient into primes and expand each power, matching common
+factors in a column. The columns common to all three expressions are $3$ and
+$x$:
 
 $$
-\begin{array}{rcl}
-21x^3 &=& 3 \cdot 7 \cdot x \cdot x \cdot x \\[4pt]
-9x^2 &=& 3 \cdot 3 \cdot x \cdot x \\[4pt]
-15x &=& 3 \cdot 5 \cdot x
+\begin{array}{rclllllll}
+21x^3 &=& 3\,\cdot & & 7\,\cdot & & x\,\cdot & x\,\cdot & x \\[4pt]
+9x^2 &=& 3\,\cdot & 3\,\cdot & & & x\,\cdot & x & \\[4pt]
+15x &=& 3\,\cdot & & & 5\,\cdot & x & &
 \end{array}
 $$
 
@@ -67,6 +68,7 @@ Therefore, the GCF of $21x^3$, $9x^2$, and $15x$ is $3x$.
 {{< fillin
   question="Find the greatest common factor of $25m^4$, $35m^3$, and $20m^2$."
   answer="5m^2"
+  answerForm="single-term"
   answerDisplay="$5m^2$"
   hint="Prime-factor the coefficients and expand the powers of $m$. Keep only the factors shared by all three expressions."
 >}}
@@ -74,6 +76,7 @@ Therefore, the GCF of $21x^3$, $9x^2$, and $15x$ is $3x$.
 {{< fillin
   question="Find the greatest common factor of $14x^3$, $70x^2$, and $105x$."
   answer="7x"
+  answerForm="single-term"
   answerDisplay="$7x$"
   hint="The coefficient GCF is found from 14, 70, and 105. For the variable factor, use the smallest exponent shared by every term."
 >}}
@@ -101,14 +104,15 @@ as a product.
 **Example.** Use the Distributive Property to factor
 $8m^3-12m^2n+20mn^2$.
 
-First find the GCF. Factoring the coefficients and expanding the variables
-shows that every term contains $4m$:
+First find the GCF. Factoring the coefficients and expanding the variables,
+with common factors matched in columns, shows that every term contains
+$2 \cdot 2 \cdot m=4m$:
 
 $$
-\begin{array}{rcl}
-8m^3 &=& 2 \cdot 2 \cdot 2 \cdot m \cdot m \cdot m \\[4pt]
-12m^2n &=& 2 \cdot 2 \cdot 3 \cdot m \cdot m \cdot n \\[4pt]
-20mn^2 &=& 2 \cdot 2 \cdot 5 \cdot m \cdot n \cdot n
+\begin{array}{rcllllllllll}
+8m^3 &=& 2\,\cdot & 2\,\cdot & 2\,\cdot & & & m\,\cdot & m\,\cdot & m & & \\[4pt]
+12m^2n &=& 2\,\cdot & 2\,\cdot & & 3\,\cdot & & m\,\cdot & m\,\cdot & & n & \\[4pt]
+20mn^2 &=& 2\,\cdot & 2\,\cdot & & & 5\,\cdot & m\,\cdot & & & n\,\cdot & n
 \end{array}
 $$
 
@@ -129,7 +133,7 @@ checks.
 {{< fillin
   question="Factor $9xy^2+6x^2y^2+21y^3$ by taking out the greatest common factor."
   answer="3y^2(3x+2x^2+7y)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$3y^2(3x+2x^2+7y)$"
   hint="Find the coefficient GCF and the smallest power of each variable shared by all three terms."
 >}}
@@ -137,8 +141,8 @@ checks.
 {{< fillin
   question="Factor $3p^3-6p^2q+9pq^3$ by taking out the greatest common factor."
   answer="3p(p^2-2pq+3q^3)"
-  answerForm="factored"
-  hint="All three coefficients share 3, and each term contains at least one factor of $p$."
+  answerForm="factored-completely gcf-factored"
+  hint="Find the GCF of the coefficients and the smallest power of each variable shared by all three terms, then divide each term by that GCF."
 >}}
 
 {{< callout type="info" >}}
@@ -174,7 +178,7 @@ $$
 {{< fillin
   question="Factor $2x^3+12x^2$ by taking out the greatest common factor."
   answer="2x^2(x+6)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$2x^2(x+6)$"
   hint="Find the largest coefficient and variable factors shared by both terms."
 >}}
@@ -182,9 +186,9 @@ $$
 {{< fillin
   question="Factor $6y^3-15y^2$ by taking out the greatest common factor."
   answer="3y^2(2y-5)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$3y^2(2y-5)$"
-  hint="The coefficient GCF is 3, and both terms contain $y^2$."
+  hint="Find the GCF of the coefficients and the smallest power of $y$ in both terms, then divide each term by that GCF."
 >}}
 
 **Example.** Factor $8x^3y-10x^2y^2+12xy^3$.
@@ -206,15 +210,15 @@ polynomial.
 {{< fillin
   question="Factor $15x^3y-3x^2y^2+6xy^3$ by taking out the greatest common factor."
   answer="3xy(5x^2-xy+2y^2)"
-  answerForm="factored"
-  hint="Every term shares 3, one factor of $x$, and one factor of $y$."
+  answerForm="factored-completely gcf-factored"
+  hint="Find the GCF of the coefficients, then the smallest power of $x$ and of $y$ that appears in every term."
 >}}
 
 {{< fillin
   question="Factor $8a^3b+2a^2b^2-6ab^3$ by taking out the greatest common factor."
   answer="2ab(4a^2+ab-3b^2)"
-  answerForm="factored"
-  hint="Every term shares 2, one factor of $a$, and one factor of $b$."
+  answerForm="factored gcf-factored"
+  hint="Find the GCF of the coefficients, then the smallest power of $a$ and of $b$ that appears in every term."
 >}}
 
 When the leading coefficient is negative, factor the negative out as part of
@@ -237,7 +241,7 @@ $$
 {{< fillin
   question="Factor $-4b^3+16b^2-8b$ by taking out a negative greatest common factor."
   answer="-4b(b^2-4b+2)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$-4b(b^2-4b+2)$"
   hint="Since the leading coefficient is negative, include the negative sign in the GCF."
 >}}
@@ -245,9 +249,9 @@ $$
 {{< fillin
   question="Factor $-7a^3+21a^2-14a$ by taking out a negative greatest common factor."
   answer="-7a(a^2-3a+2)"
-  answerForm="factored"
+  answerForm="factored gcf-factored"
   answerDisplay="$-7a(a^2-3a+2)$"
-  hint="Take out $-7a$, then determine the three terms that remain."
+  hint="Since the leading coefficient is negative, make the GCF negative; then divide each term by it, watching the signs."
 >}}
 
 So far the greatest common factors have been monomials. A GCF can also be a
@@ -264,17 +268,17 @@ Check by multiplying the factors.
 {{< fillin
   question="Factor $4m(m+3)-7(m+3)$ by taking out the common binomial factor."
   answer="(m+3)(4m-7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(m+3)(4m-7)$"
-  hint="Treat the repeated binomial $(m+3)$ as one common factor."
+  hint="Treat the binomial that appears in both terms as one common factor, and factor it out of each term."
 >}}
 
 {{< fillin
   question="Factor $8n(n-4)+5(n-4)$ by taking out the common binomial factor."
   answer="(n-4)(8n+5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(n-4)(8n+5)$"
-  hint="Treat the repeated binomial $(n-4)$ as one common factor."
+  hint="Treat the binomial that appears in both terms as one common factor, and factor it out of each term."
 >}}
 
 ## Factor by grouping
@@ -304,7 +308,7 @@ its middle terms reordered.
 {{< fillin
   question="Factor by grouping: $xy+8y+3x+24$."
   answer="(x+8)(y+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+8)(y+3)$"
   hint="Group the first two terms and the last two terms, then factor each group."
 >}}
@@ -312,7 +316,7 @@ its middle terms reordered.
 {{< fillin
   question="Factor by grouping: $ab+7b+8a+56$."
   answer="(a+7)(b+8)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a+7)(b+8)$"
   hint="Group the first two terms and the last two terms. Both groups should reveal the same binomial factor."
 >}}
@@ -359,7 +363,7 @@ Check both results by multiplying their factors.
 {{< fillin
   question="Factor by grouping: $x^2+2x-5x-10$."
   answer="(x-5)(x+2)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x-5)(x+2)$"
   hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
 >}}
@@ -367,15 +371,15 @@ Check both results by multiplying their factors.
 {{< fillin
   question="Factor by grouping: $20x^2-16x-15x+12$."
   answer="(5x-4)(4x-3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(5x-4)(4x-3)$"
-  hint="Group the first pair and the second pair; their common binomial factor is $5x-4$."
+  hint="Group the first two terms and the last two terms. Factor a negative number from the second group so both groups show the same binomial."
 >}}
 
 {{< fillin
   question="Factor by grouping: $y^2+4y-7y-28$."
   answer="(y+4)(y-7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(y+4)(y-7)$"
   hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
 >}}
@@ -395,6 +399,7 @@ terms, factoring each group, and then factoring the common binomial.
 {{< fillin
   question="Find the greatest common factor of $10p^3q$ and $12pq^2$."
   answer="2pq"
+  answerForm="single-term"
   answerDisplay="$2pq$"
   hint="Factor each coefficient into primes and expand the variable powers. Keep only the factors common to both expressions."
 >}}
@@ -402,6 +407,7 @@ terms, factoring each group, and then factoring the common binomial.
 {{< fillin
   question="Find the greatest common factor of $10a^3$, $12a^2$, and $14a$."
   answer="2a"
+  answerForm="single-term"
   answerDisplay="$2a$"
   hint="Find the GCF of the coefficients 10, 12, and 14, then keep the smallest power of $a$ shared by all three terms."
 >}}
@@ -411,25 +417,25 @@ terms, factoring each group, and then factoring the common binomial.
 {{< fillin
   question="Factor $6m+9$ by taking out the greatest common factor."
   answer="3(2m+3)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$3(2m+3)$"
-  hint="Both terms share a factor of 3."
+  hint="Find the GCF of the two coefficients, then divide each term by it."
 >}}
 
 {{< fillin
   question="Factor $8p^2+4p+2$ by taking out the greatest common factor."
   answer="2(4p^2+2p+1)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$2(4p^2+2p+1)$"
-  hint="All three coefficients share a factor of 2."
+  hint="Find the GCF of the three coefficients, then divide each term by it."
 >}}
 
 {{< fillin
   question="Factor $5x(x+1)+3(x+1)$ by taking out the common binomial factor."
   answer="(x+1)(5x+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x+1)(5x+3)$"
-  hint="Treat the repeated binomial $(x+1)$ as one common factor."
+  hint="Treat the binomial that appears in both terms as one common factor, and factor it out of each term."
 >}}
 
 ### Factor by grouping
@@ -437,7 +443,7 @@ terms, factoring each group, and then factoring the common binomial.
 {{< fillin
   question="Factor by grouping: $ab+5a+3b+15$."
   answer="(b+5)(a+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(b+5)(a+3)$"
   hint="Group the first two terms and the last two terms, then factor each group."
 >}}
@@ -445,7 +451,7 @@ terms, factoring each group, and then factoring the common binomial.
 {{< fillin
   question="Factor by grouping: $uv-9u+2v-18$."
   answer="(u+2)(v-9)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(u+2)(v-9)$"
   hint="Group the first two terms and the last two terms; both groups reveal the same binomial factor."
 >}}
@@ -453,11 +459,11 @@ terms, factoring each group, and then factoring the common binomial.
 {{< fillin
   question="Factor by grouping: $2x^2-14x-5x+35$."
   answer="(x-7)(2x-5)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x-7)(2x-5)$"
   hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.1: Greatest Common Factor and Factor by Grouping](https://openstax.org/books/intermediate-algebra-2e/pages/6-1-greatest-common-factor-and-factor-by-grouping) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz and media links, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.1: Greatest Common Factor and Factor by Grouping](https://openstax.org/books/intermediate-algebra-2e/pages/6-1-greatest-common-factor-and-factor-by-grouping) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, setting the GCF prime-factor listings as column-matched arrays; omitted the Be Prepared quiz, Self Check checklist, and media links; condensed the Key Concepts summary into a Key terms list; converted selected practice problems ("Try Its") into interactive exercises with instant feedback; keyed the $3p^3-6p^2q+9pq^3$ exercise $3p(p^2-2pq+3q^3)$, where the source's answer ends in $3q^2$, which does not multiply back to $9pq^3$; and adapted selected end-of-section exercises into an interactive Practice block.</small>

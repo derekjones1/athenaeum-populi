@@ -151,14 +151,14 @@ aliases:
 {{< fillin
   question="Factor out the Greatest Common Factor in the expression: $14y - 42$."
   answer="14(y-3)"
-  answerForm="factored-completely"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$14(y - 3)$"
 >}}
 
 {{< fillin
   question="Factor out the Greatest Common Factor in the expression: $80a^2 + 120a^3$."
   answer="40a^2(2+3a)"
-  answerForm="factored-completely"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$40a^2(2 + 3a)$"
 >}}
 

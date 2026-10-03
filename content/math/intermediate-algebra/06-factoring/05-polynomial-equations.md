@@ -108,6 +108,7 @@ The solutions are $n=\tfrac{2}{5}$ and $n=\tfrac{1}{6}$.
 {{< fillin
   question="Solve $(3m-2)(2m+1)=0$. Enter the two solutions separated by commas."
   answer="-\frac{1}{2}, \frac{2}{3}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{1}{2}, \tfrac{2}{3}$"
   hint="Use the Zero Product Property: set each factor equal to zero and solve both linear equations."
@@ -116,9 +117,10 @@ The solutions are $n=\tfrac{2}{5}$ and $n=\tfrac{1}{6}$.
 {{< fillin
   question="Solve $(4p+3)(4p-3)=0$. Enter the two solutions separated by commas."
   answer="-\frac{3}{4}, \frac{3}{4}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{3}{4}, \tfrac{3}{4}$"
-  hint="Set $4p+3=0$ and $4p-3=0$, then solve."
+  hint="Use the Zero Product Property: set each factor equal to zero and solve both linear equations."
 >}}
 
 {{< callout type="info" >}}
@@ -152,6 +154,7 @@ Substituting each solution into the original equation verifies both answers.
 {{< fillin
   question="Solve $3c^2=10c-8$. Enter the two solutions separated by commas."
   answer="\frac{4}{3}, 2"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$\tfrac{4}{3}, 2$"
   hint="Write the equation in standard form, factor the trinomial, and use the Zero Product Property."
@@ -160,6 +163,7 @@ Substituting each solution into the original equation verifies both answers.
 {{< fillin
   question="Solve $2d^2-5d=3$. Enter the two solutions separated by commas."
   answer="-\frac{1}{2}, 3"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{1}{2}, 3$"
   hint="Move 3 to the left, then factor $2d^2-5d-3$."
@@ -195,6 +199,7 @@ The check is left to you.
 {{< fillin
   question="Solve $25p^2=49$. Enter the two solutions separated by commas."
   answer="-\frac{7}{5}, \frac{7}{5}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{7}{5}, \tfrac{7}{5}$"
   hint="Move 49 to the left and factor the difference of squares."
@@ -203,6 +208,7 @@ The check is left to you.
 {{< fillin
   question="Solve $36x^2=121$. Enter the two solutions separated by commas."
   answer="-\frac{11}{6}, \frac{11}{6}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{11}{6}, \tfrac{11}{6}$"
   hint="Write $36x^2-121=0$ and factor the difference of squares."
@@ -229,6 +235,7 @@ The check is left to you.
 {{< fillin
   question="Solve $(2m+1)(m+3)=12m$. Enter the two solutions separated by commas."
   answer="1, \frac{3}{2}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$1, \tfrac{3}{2}$"
   hint="Multiply the binomials, put the equation in standard form, and factor."
@@ -237,6 +244,7 @@ The check is left to you.
 {{< fillin
   question="Solve $(k+1)(k-1)=8$. Enter the two solutions separated by commas."
   answer="-3, 3"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-3, 3$"
   hint="Expand the left side and move 8 to the left before factoring."
@@ -262,6 +270,7 @@ The constant factor $3$ is not zero and produces no solution.
 {{< fillin
   question="Solve $18a^2-30=-33a$. Enter the two solutions separated by commas."
   answer="-\frac{5}{2}, \frac{2}{3}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{5}{2}, \tfrac{2}{3}$"
   hint="Move every term to the left, factor the GCF, then factor the trinomial."
@@ -270,6 +279,7 @@ The constant factor $3$ is not zero and produces no solution.
 {{< fillin
   question="Solve $123b=-6-60b^2$. Enter the two solutions separated by commas."
   answer="-2, -\frac{1}{20}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-2, -\tfrac{1}{20}$"
   hint="Write the equation in standard form and first factor out the GCF."
@@ -294,6 +304,7 @@ $$
 {{< fillin
   question="Solve $8x^3=24x^2-18x$. Enter the distinct solutions separated by commas."
   answer="0, \frac{3}{2}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$0, \tfrac{3}{2}$"
   hint="Put zero on one side, factor the GCF, and recognize the remaining perfect-square trinomial."
@@ -302,9 +313,10 @@ $$
 {{< fillin
   question="Solve $16y^2=32y^3+2y$. Enter the distinct solutions separated by commas."
   answer="0, \frac{1}{4}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$0, \tfrac{1}{4}$"
-  hint="Move all terms to one side, factor out $2y$, and factor the remaining trinomial."
+  hint="Move all terms to one side, factor out the GCF, and factor the remaining trinomial."
 >}}
 
 ## Solve equations with polynomial functions
@@ -334,16 +346,18 @@ Since $f(-4)=6$ and $f(2)=6$, the points $(-4,6)$ and $(2,6)$ lie on the
 graph.
 
 {{< fillin
-  question="For $f(x)=x^2-2x-8$, find $x$ when $f(x)=7$. Enter the two values separated by commas."
+  question="For $f(x)=x^2-2x-8$, find $x$ when $f(x)=7$. Enter the two $x$-values separated by commas."
   answer="-3, 5"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-3, 5$"
   hint="Set $x^2-2x-8=7$, put the equation in standard form, and factor."
 >}}
 
 {{< fillin
-  question="For $f(x)=x^2-8x+3$, find $x$ when $f(x)=-4$. Enter the two values separated by commas."
+  question="For $f(x)=x^2-8x+3$, find $x$ when $f(x)=-4$. Enter the two $x$-values separated by commas."
   answer="1, 7"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$1, 7$"
   hint="Set $x^2-8x+3=-4$, move all terms to one side, and factor."
@@ -382,19 +396,21 @@ $$f(0)=3\cdot0^2+10\cdot0-8=-8.$$
 The $y$-intercept is $(0,-8)$.
 
 {{< fillin
-  question="For $f(x)=2x^2-7x+5$, find the zeros of the function. Enter the two values separated by commas."
+  question="For $f(x)=2x^2-7x+5$, find the zeros of the function. Enter the two zeros as numbers (not points), separated by commas."
   answer="1, \frac{5}{2}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$1, \tfrac{5}{2}$"
   hint="Set $f(x)=0$, factor the trinomial, and solve each factor."
 >}}
 
 {{< fillin
-  question="For $f(x)=6x^2+13x-15$, find the zeros of the function. Enter the two values separated by commas."
+  question="For $f(x)=6x^2+13x-15$, find the zeros of the function. Enter the two zeros as numbers (not points), separated by commas."
   answer="-3, \frac{5}{6}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-3, \tfrac{5}{6}$"
-  hint="Set the function equal to zero and factor it as $(6x+?)(x+?)$, then set each factor equal to zero."
+  hint="Set the function equal to zero, factor the trinomial, and set each factor equal to zero."
 >}}
 
 ## Solve applications modeled by polynomial equations
@@ -440,13 +456,15 @@ consecutive odd integers are $17,19$ and $-19,-17$.
 {{< fillin
   question="The product of two consecutive odd integers is 255. Enter all four integers in increasing order, separated by commas."
   answer="-17, -15, 15, 17"
+  answerForm="decimal"
   answerDisplay="$-17, -15, 15, 17$"
-  hint="Let $n$ be the first odd integer and $n+2$ the next. Solve $n(n+2)=255$."
+  hint="Let $n$ be the first odd integer and $n+2$ the next; write an equation for their product, put it in standard form, and factor."
 >}}
 
 {{< fillin
   question="The product of two consecutive odd integers is 483. Enter all four integers in increasing order, separated by commas."
   answer="-23, -21, 21, 23"
+  answerForm="decimal"
   answerDisplay="$-23, -21, 21, 23$"
   hint="Let the integers be $n$ and $n+2$, then solve the resulting quadratic equation."
 >}}
@@ -463,15 +481,15 @@ length is four feet more than the width. Find the dimensions.
 Let $w$ be the width, so $w+4$ is the length.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A rectangle with width w and length w plus 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 192" width="282" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="246" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="178" text-anchor="middle" font-size="13" fill="currentColor">w + 4</text>
-  <line x1="246" y1="156" x2="246" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="258" y="100" text-anchor="start" font-size="13" fill="currentColor">w</text>
-  <line x1="246" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="22" text-anchor="middle" font-size="13" fill="currentColor">w + 4</text>
-  <line x1="36" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">w</text>
+<svg role="img" aria-label="A rectangle with width w and length w plus 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 216" width="280" height="216" font-family="Helvetica, Arial, sans-serif">
+  <line x1="36" y1="180" x2="244" y2="180" stroke="currentColor" stroke-width="1.5"/>
+  <text x="140" y="202" text-anchor="middle" font-size="13" fill="currentColor">w + 4</text>
+  <line x1="244" y1="180" x2="244" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="256" y="112" text-anchor="start" font-size="13" fill="currentColor">w</text>
+  <line x1="244" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="140" y="22" text-anchor="middle" font-size="13" fill="currentColor">w + 4</text>
+  <line x1="36" y1="36" x2="36" y2="180" stroke="currentColor" stroke-width="1.5"/>
+  <text x="24" y="112" text-anchor="end" font-size="13" fill="currentColor">w</text>
 </svg>
 </div>
 
@@ -490,17 +508,19 @@ A width cannot be negative, so $w=9$. The length is $9+4=13$. The bedroom
 is $9$ feet wide and $13$ feet long, and $9\cdot13=117$.
 
 {{< fillin
-  question="A rectangular sign has area 30 square feet. Its length is one foot more than its width. Enter the width and length, separated by a comma."
+  question="A rectangular sign has area 30 square feet. Its length is one foot more than its width. Enter the width and the length, in feet, separated by a comma."
   answer="5, 6"
-  answerDisplay="$5, 6$"
-  hint="Let the width be $w$ and the length $w+1$. Solve $w(w+1)=30$ and reject a negative dimension."
+  answerForm="decimal"
+  answerDisplay="width $5$ feet, length $6$ feet"
+  hint="Let the width be $w$ and the length $w+1$; use $A=l\cdot w$, factor, and reject the negative solution."
 >}}
 
 {{< fillin
-  question="A rectangular patio has area 180 square feet. Its width is three feet less than its length. Enter the width and length, separated by a comma."
+  question="A rectangular patio has area 180 square feet. Its width is three feet less than its length. Enter the width and the length, in feet, separated by a comma."
   answer="12, 15"
-  answerDisplay="$12, 15$"
-  hint="Let the length be $l$ and the width $l-3$. Solve $l(l-3)=180$."
+  answerForm="decimal"
+  answerDisplay="width $12$ feet, length $15$ feet"
+  hint="Let the length be $l$ and the width $l-3$; use $A=l\cdot w$, factor, and reject the negative solution."
 >}}
 
 ### Right-triangle applications
@@ -515,13 +535,13 @@ side lengths.
 Let $x$ be one leg and $x-7$ the other leg.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A right triangle with legs x and x minus 7 and hypotenuse 17." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 312" width="185" height="312" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A right triangle with legs x and x minus 7 and hypotenuse 17." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 312" width="200" height="312" font-family="Helvetica, Arial, sans-serif">
   <line x1="36" y1="276" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <text x="24" y="160" text-anchor="end" font-size="13" fill="currentColor">x</text>
-  <line x1="36" y1="36" x2="148.5" y2="276" stroke="currentColor" stroke-width="1.5"/>
-  <text x="103.1" y="148.9" text-anchor="start" font-size="13" fill="currentColor">17</text>
-  <line x1="148.5" y1="276" x2="36" y2="276" stroke="currentColor" stroke-width="1.5"/>
-  <text x="92.3" y="298" text-anchor="middle" font-size="13" fill="currentColor">x − 7</text>
+  <line x1="36" y1="36" x2="164" y2="276" stroke="currentColor" stroke-width="1.5"/>
+  <text x="111" y="155" text-anchor="start" font-size="13" fill="currentColor">17</text>
+  <line x1="164" y1="276" x2="36" y2="276" stroke="currentColor" stroke-width="1.5"/>
+  <text x="100" y="298" text-anchor="middle" font-size="13" fill="currentColor">x − 7</text>
   <path d="M 36 266 L 46 266 L 46 276" fill="none" stroke="currentColor" stroke-width="1.2"/>
 </svg>
 </div>
@@ -540,17 +560,19 @@ sail are $8$, $15$, and $17$ feet. The check is
 $15^2+8^2=225+64=289=17^2$.
 
 {{< fillin
-  question="A right-triangle deck has one side 7 feet longer than the other and hypotenuse 13 feet. Enter the two leg lengths, separated by a comma."
+  question="A right-triangle deck has one side 7 feet longer than the other and hypotenuse 13 feet. Enter the two leg lengths, in feet, separated by a comma."
   answer="5, 12"
   answerMode="unordered"
-  answerDisplay="$5, 12$"
-  hint="Let one leg be $x$ and the other $x+7$. Use $x^2+(x+7)^2=13^2$."
+  answerForm="decimal"
+  answerDisplay="$5$ feet and $12$ feet"
+  hint="Let one leg be $x$ and the other $x+7$; use the Pythagorean Theorem, factor, and reject the negative solution."
 >}}
 
 {{< fillin
-  question="A right-triangle meditation garden has one leg 7 feet and a hypotenuse one foot longer than the other leg. Enter the other leg and hypotenuse, separated by a comma."
+  question="A right-triangle meditation garden has one leg 7 feet and a hypotenuse one foot longer than the other leg. Enter the other leg and the hypotenuse, in feet, separated by a comma."
   answer="24, 25"
-  answerDisplay="$24, 25$"
+  answerForm="decimal"
+  answerDisplay="other leg $24$ feet, hypotenuse $25$ feet"
   hint="Let the other leg be $x$ and the hypotenuse $x+1$. Use the Pythagorean Theorem."
 >}}
 
@@ -593,22 +615,25 @@ $$h(2)=-16(2)^2+64\cdot2+80=144.$$
 After $2$ seconds, the ball is at $144$ feet.
 
 {{< fillin
-  question="A rock's height is $h(t)=-16t^2+48t+160$. How many seconds after release does it hit the ocean?"
+  question="A rock thrown upward from $160$ feet above the ocean has height $h(t)=-16t^2+48t+160$ feet above the ocean $t$ seconds after release. How many seconds after release does it hit the ocean?"
   answer="5"
+  answerForm="decimal"
   answerDisplay="$5$ seconds"
   hint="Set $h(t)=0$, factor, and discard the negative time."
 >}}
 
 {{< fillin
-  question="For the rock with $h(t)=-16t^2+48t+160$, find its height at $t=1.5$ seconds."
+  question="For the rock with $h(t)=-16t^2+48t+160$, find its height above the ocean, in feet, at $t=1.5$ seconds."
   answer="196"
+  answerForm="decimal"
   answerDisplay="$196$ feet"
   hint="Substitute $1.5$ for $t$ in the height function and simplify."
 >}}
 
 {{< fillin
-  question="A penny's height is $h(t)=-16t^2+32t+128$. How many seconds after release does it hit the ocean?"
+  question="A penny thrown upward from $128$ feet above the ocean has height $h(t)=-16t^2+32t+128$ feet above the ocean $t$ seconds after release. How many seconds after release does it hit the ocean?"
   answer="4"
+  answerForm="decimal"
   answerDisplay="$4$ seconds"
   hint="Set the height equal to zero, factor, and reject the negative solution."
 >}}
@@ -628,6 +653,7 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Solve $(3a-10)(2a-7)=0$. Enter the two solutions separated by commas."
   answer="\frac{10}{3}, \frac{7}{2}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$\tfrac{10}{3}, \tfrac{7}{2}$"
   hint="Use the Zero Product Property: set each factor equal to zero and solve both linear equations."
@@ -636,14 +662,16 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Solve $6m(12m-5)=0$. Enter the two solutions separated by commas."
   answer="0, \frac{5}{12}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$0, \tfrac{5}{12}$"
-  hint="Set each factor equal to zero: $6m=0$ and $12m-5=0$."
+  hint="Use the Zero Product Property: set each factor, including the monomial factor, equal to zero and solve."
 >}}
 
 {{< fillin
   question="Solve $(2x-1)^2=0$."
   answer="\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="Setting the repeated factor $2x-1$ equal to zero gives a single solution."
 >}}
@@ -653,6 +681,7 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Solve $5a^2-26a=24$. Enter the two solutions separated by commas."
   answer="-\frac{4}{5}, 6"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{4}{5}, 6$"
   hint="Write the equation in standard form, factor the trinomial, and use the Zero Product Property."
@@ -661,6 +690,7 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Solve $49m^2=144$. Enter the two solutions separated by commas."
   answer="-\frac{12}{7}, \frac{12}{7}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{12}{7}, \tfrac{12}{7}$"
   hint="Move $144$ to the left and factor the difference of squares."
@@ -669,6 +699,7 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Solve $(x+6)(x-3)=-8$. Enter the two solutions separated by commas."
   answer="-5, 2"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-5, 2$"
   hint="Multiply the binomials, move every term to one side, and factor the trinomial."
@@ -677,6 +708,7 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Solve $16p^3=24p^2-9p$. Enter the distinct solutions separated by commas."
   answer="0, \frac{3}{4}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$0, \tfrac{3}{4}$"
   hint="Move every term to one side, factor out the GCF, and recognize the remaining perfect-square trinomial."
@@ -685,8 +717,9 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 ### Solve equations with polynomial functions
 
 {{< fillin
-  question="For $f(x)=x^2-8x+8$, find $x$ when $f(x)=-4$. Enter the two values separated by commas."
+  question="For $f(x)=x^2-8x+8$, find $x$ when $f(x)=-4$. Enter the two $x$-values separated by commas."
   answer="2, 6"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$2, 6$"
   hint="Set $x^2-8x+8=-4$, write the equation in standard form, and factor."
@@ -695,28 +728,32 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="Using your answers to the previous exercise, name the two points that lie on the graph of $f(x)=x^2-8x+8$ where $f(x)=-4$. Enter the points in order of increasing $x$-coordinate, separated by a comma."
   answer="(2,-4),(6,-4)"
+  answerForm="decimal"
   answerDisplay="$(2,-4),(6,-4)$"
   hint="Each solution $x$ pairs with $f(x)=-4$ to give a point $(x,f(x))$."
 >}}
 
 {{< fillin
-  question="For $f(x)=9x^2-4$, find the zeros of the function. Enter the two values separated by commas."
+  question="For $f(x)=9x^2-4$, find the zeros of the function. Enter the two zeros as numbers (not points), separated by commas."
   answer="-\frac{2}{3}, \frac{2}{3}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$-\tfrac{2}{3}, \tfrac{2}{3}$"
   hint="Set $f(x)=0$ and factor the difference of squares."
 >}}
 
 {{< fillin
-  question="For $f(x)=9x^2-4$, state the $x$-intercepts of the graph, in order of increasing $x$-coordinate, separated by a comma."
+  question="For $f(x)=9x^2-4$, state the $x$-intercepts of the graph as ordered pairs, in order of increasing $x$-coordinate, separated by a comma."
   answer="(-\frac{2}{3},0),(\frac{2}{3},0)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\tfrac{2}{3},0),(\tfrac{2}{3},0)$"
   hint="An $x$-intercept is a point $(x,0)$ where $x$ is a zero of the function."
 >}}
 
 {{< fillin
-  question="For $f(x)=9x^2-4$, find the $y$-intercept of the graph."
+  question="For $f(x)=9x^2-4$, find the $y$-intercept of the graph. Enter it as an ordered pair."
   answer="(0,-4)"
+  answerForm="decimal"
   answerDisplay="$(0,-4)$"
   hint="The $y$-intercept is the point $(0,f(0))$."
 >}}
@@ -726,50 +763,60 @@ factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 {{< fillin
   question="The product of two consecutive odd integers is 143. Enter all four integers in increasing order, separated by commas."
   answer="-13, -11, 11, 13"
+  answerForm="decimal"
   answerDisplay="$-13, -11, 11, 13$"
-  hint="Let $n$ be the first odd integer and $n+2$ the next. Solve $n(n+2)=143$."
+  hint="Let $n$ be the first odd integer and $n+2$ the next; write an equation for their product, put it in standard form, and factor."
 >}}
 
 {{< fillin
   question="The product of two consecutive even integers is 168. Enter all four integers in increasing order, separated by commas."
   answer="-14, -12, 12, 14"
+  answerForm="decimal"
   answerDisplay="$-14, -12, 12, 14$"
-  hint="Let $n$ be the first even integer and $n+2$ the next. Solve $n(n+2)=168$."
+  hint="Let $n$ be the first even integer and $n+2$ the next; write an equation for their product, put it in standard form, and factor."
 >}}
 
 {{< fillin
-  question="A rectangular carpet has area 28 square feet. Its length is three feet more than its width. Find the width."
+  question="A rectangular carpet has area 28 square feet. Its length is three feet more than its width. Find the width, in feet."
   answer="4"
-  hint="Let the width be $w$ and the length $w+3$. Solve $w(w+3)=28$ and reject a negative width."
+  answerForm="decimal"
+  answerDisplay="$4$ feet"
+  hint="Let the width be $w$ and the length $w+3$; use $A=l\cdot w$, factor, and reject the negative solution."
 >}}
 
 {{< fillin
-  question="For the same carpet, find the length."
+  question="For the same carpet, find the length, in feet."
   answer="7"
+  answerForm="decimal"
+  answerDisplay="$7$ feet"
   hint="Add three feet to the width you found."
 >}}
 
 {{< fillin
-  question="A pennant shaped like a right triangle has hypotenuse 10 feet. One leg is two feet longer than the other. Enter the shorter leg and the longer leg, separated by a comma."
+  question="A pennant shaped like a right triangle has hypotenuse 10 feet. One leg is two feet longer than the other. Enter the shorter leg and the longer leg, in feet, separated by a comma."
   answer="6, 8"
-  answerDisplay="$6, 8$"
-  hint="Let the shorter leg be $x$ and the longer leg $x+2$. Use $x^2+(x+2)^2=10^2$."
+  answerForm="decimal"
+  answerDisplay="shorter leg $6$ feet, longer leg $8$ feet"
+  hint="Let the shorter leg be $x$ and the longer leg $x+2$; use the Pythagorean Theorem, factor, and reject the negative solution."
 >}}
 
 {{< fillin
-  question="Juli launches a model rocket in her back yard. Its height is modeled by $h(t)=-16t^2+32t$. Find the zeros of this function, which tell us when the rocket is on the ground. Enter both times separated by a comma."
+  question="Juli launches a model rocket in her back yard. Its height is modeled by $h(t)=-16t^2+32t$. Find the zeros of this function, which tell us when the rocket is on the ground. Enter both times, in seconds, separated by a comma."
   answer="0, 2"
   answerMode="unordered"
-  answerDisplay="$0, 2$"
+  answerForm="decimal"
+  answerDisplay="$0$ seconds and $2$ seconds"
   hint="Set $h(t)=0$ and factor out the GCF."
 >}}
 
 {{< fillin
-  question="For the same rocket, find the time when it is 16 feet above the ground."
+  question="For the same rocket, find the time, in seconds, when it is 16 feet above the ground."
   answer="1"
+  answerForm="decimal"
+  answerDisplay="$1$ second"
   hint="Set $h(t)=16$, move every term to one side, and factor the resulting perfect-square trinomial."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.5: Polynomial Equations](https://openstax.org/books/intermediate-algebra-2e/pages/6-5-polynomial-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz and media links, recreated geometric figures accessibly, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.5: Polynomial Equations](https://openstax.org/books/intermediate-algebra-2e/pages/6-5-polynomial-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz and media links, recreated geometric figures accessibly, converted the practice problems ("Try Its") into interactive exercises with instant feedback, adapted selected end-of-section exercises into an interactive Practice block, and gave the penny Try It's launch height as 128 feet above the ocean, the surface its height function measures from, where the source says "above the ground".</small>

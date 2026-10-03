@@ -570,21 +570,21 @@ trinomial
 {{< fillin
   question="Factor the greatest common factor from the polynomial: $-6x^2 - 30x$"
   answer="-6x(x+5)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$-6x(x + 5)$"
 >}}
 
 {{< fillin
   question="Factor the greatest common factor from the polynomial: $16u - 24$"
   answer="8(2u-3)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$8(2u - 3)$"
 >}}
 
 {{< fillin
   question="Factor the greatest common factor from the polynomial: $6p^2 + 6p$"
   answer="6p(p+1)"
-  answerForm="factored"
+  answerForm="factored-completely gcf-factored"
   answerDisplay="$6p(p + 1)$"
 >}}
 
