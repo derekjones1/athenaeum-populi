@@ -139,7 +139,8 @@ polynomial factor primitive over the integers and the key's factor count
 reached — and a GCF-only ask keeps `factored` only when its key is not itself
 complete (a complete GCF key such as `14(y-3)` takes `factored-completely`,
 which refuses `2(7y-21)`; Elementary Algebra knowledge check 6–10, September
-28, 2026).
+28, 2026); every GCF-only ask also takes `gcf-factored` (below, October 3,
+2026).
 Since the Elementary Algebra chapters 8–9 re-review (September 27, 2026):
 a response that drops a radical over a variable (`9x` for `9\sqrt{x}`) grades
 `incorrect` — radicals over variables are decided by sampling at positive
@@ -207,7 +208,16 @@ is stripped against a value key, so a function-arithmetic ask needs no
 improper polynomial quotient (`x^3-3x^2+2x+\frac{x+6}{x+3}`), so a
 long-division key with a remainder takes `expanded no-like-terms`; and
 "with a positive exponent" on a numeral power (`\frac{1}{12^{15}}`) takes
-`single-power positive-exponents` (`single-power` alone passes `12^{-15}`).
+`single-power positive-exponents` (`single-power` alone passes `12^{-15}`). Since the Intermediate Algebra chapter 6 re-review
+(October 3, 2026): `factored` (and so every factoring token) refuses a sum
+left unsimplified inside parentheses — the substitution left in place
+(`(x-5+2)(x-5+4)`), a cube pattern's factors unsquared
+(`(x+3)(x^2-3x+3^2)`) — and tells the learner to simplify inside; a GCF-only
+ask ("by taking out the greatest common factor") takes `gcf-factored`, which
+refuses a GCF taken out in part (`2(4a^3b+…)` for `2ab(…)`) or with the wrong
+sign (`4b(-b^2+4b-2)` for `-4b(b^2-4b+2)`), composed with `factored` on an
+incomplete key and `factored-completely` on a complete one. A bare command
+word in math (`checkmark`, `cdot`, `frac`) is a lint error.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
@@ -278,10 +288,15 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      grouping or by a pattern) whose key is a complete factorization takes
      `factored-completely` in place of `factored`; run the grader on a
      half-finished product (the GCF left inside, `(x^2+4)(x^2-4)` for a
-     nested difference of squares) and expect `form`. A GCF-only ask keeps
-     `factored` only when its key is not complete. On September 27, 2026, 292 factoring asks declared
-     `factored` (Elementary Algebra ch7 and KC 6–10, Intermediate Algebra
-     ch6 and KC 1–6, Prealgebra ch10).
+     nested difference of squares) and expect `form`. A GCF-only ask takes
+     `gcf-factored`, with `factored` when its key is not complete and
+     `factored-completely` when it is. On September 27, 2026, 292 factoring asks declared
+     `factored`; on October 3, 2026, after Intermediate Algebra ch6 and the
+     GCF sweep (Prealgebra 10.6, both knowledge checks with GCF asks), the
+     remaining plain `factored` asks are Intermediate Algebra KC 1–6 (7),
+     the completing-the-square items of Elementary Algebra 10.2 and
+     Intermediate Algebra 9.2 (3 each), and Precalculus 3.4 (4) and 7.1 (1),
+     (Elementary Algebra 10.2 is a closed row; the rest are pending rows).
      A radical sum key (Multiply, Add, Subtract, or Simplify — `3+2\sqrt2`,
      `2\sqrt3-3\sqrt6`) takes `no-like-terms` with `simplified-radical`
      (`expanded simplified-radical no-like-terms` for a Multiply); run the
