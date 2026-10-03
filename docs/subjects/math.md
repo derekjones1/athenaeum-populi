@@ -174,7 +174,7 @@ names):
 | `degrees` | one term, ending in $^\circ$, on a plain numeric head — for "convert $\tfrac{5\pi}{4}$ radians to degrees", where the engine grades the two spellings equal |
 | `radians` | no degree symbol anywhere — the mirror ask |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
-| `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped; the variable is named because a formula can arrive solved for the *other* side ($x=5y-10$). An inequality counts the same way (`y\ge-2x+3` is solved for $y$; `2x+y\ge3` is not) |
+| `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped; the variable is named because a formula can arrive solved for the *other* side ($x=5y-10$). An inequality counts the same way (`y\ge-2x+3` is solved for $y$; `2x+y\ge3` is not). Composed with other tokens, those tokens read the side the variable equals (equation forms such as `slope-intercept-form` still read the whole): `solved:a single-fraction reduced-fraction` refuses `a=\frac{2b}{2bc-2}`, and `solved:w expanded distributed no-like-terms` refuses `w=2(v+3)+1` — `solved:` alone passes an unfinished right side, so a formula or variation key that is a fraction or a combined sum declares its value form too |
 
 A right value in the wrong shape reports back as "That value is right — now
 write it in lowest terms"; a wrong value is still just wrong.

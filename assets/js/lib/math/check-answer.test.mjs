@@ -1155,6 +1155,19 @@ const formCases = [
   // the same relation with the denominator cleared (Elementary Algebra 8.9) —
   // value-equal, so the retyped formula is refused by the shape, not the value
   ['d=rt', 't=\\frac{d}{r}', 'solved:t', 'form'],
+  // solved:<v> composed with other tokens: they read the side v equals, so
+  // the key passes and an unfinished right side does not (Intermediate
+  // Algebra 7.4, October 3, 2026); an equation form still reads the whole.
+  ['a=\\frac{b}{bc-1}', 'a=\\frac{b}{bc-1}', 'solved:a single-fraction reduced-fraction', 'correct'],
+  ['\\frac{-b}{1-bc}=a', 'a=\\frac{b}{bc-1}', 'solved:a single-fraction reduced-fraction', 'correct'],
+  ['a=\\frac{2b}{2bc-2}', 'a=\\frac{b}{bc-1}', 'solved:a single-fraction reduced-fraction', 'form'],
+  ['a=\\frac{1}{c-\\frac{1}{b}}', 'a=\\frac{b}{bc-1}', 'solved:a single-fraction reduced-fraction', 'form'],
+  ['\\frac{1}{a}+\\frac{1}{b}=c', 'a=\\frac{b}{bc-1}', 'solved:a single-fraction reduced-fraction', 'form'],
+  ['w=2v+6+1', 'w=2v+7', 'solved:w expanded distributed no-like-terms', 'form'],
+  ['w=2(v+3)+1', 'w=2v+7', 'solved:w expanded distributed no-like-terms', 'form'],
+  ['w=7+2v', 'w=2v+7', 'solved:w expanded distributed no-like-terms', 'correct'],
+  ['c=4.8t', 'c=4.8t', 'solved:c slope-intercept-form', 'correct'],
+  ['c=\\frac{312}{65}t', 'c=4.8t', 'solved:c slope-intercept-form', 'form'],
   ['-\\frac{1}{20}(x-20)^2+20', '-\\frac{1}{20}(x-20)^2+20', 'vertex-form', 'correct'],
   // a half-completed square is not vertex form, and neither is the expansion
   // of a vertex-from-a-point answer

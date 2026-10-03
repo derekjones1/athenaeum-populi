@@ -4535,16 +4535,23 @@ const FORM_PREDICATES = {
  * guard reads its remainder.
  */
 function writtenSolvedFor(latex, variable) {
+  return solvedForSide(latex, variable) !== null;
+}
+
+/** The side opposite the isolated `variable` (see writtenSolvedFor), or null when it is not isolated. */
+function solvedForSide(latex, variable) {
   // An inequality solved for the variable counts too — `y\ge-2x+3` for an
   // ask that pins "solved for y" (Elementary Algebra 4.7, September 27, 2026).
   const relationSides = splitAtTopLevel(bareLatex(latex).replace(/\\left\s*|\\right\s*/g, ''), ORDER_RELATION)
     .map((side) => side.replace(/\s+/g, ''));
   const sides = splitEquationSides(latex)
     ?? (relationSides.length === 2 && relationSides.every(Boolean) ? relationSides : null);
-  if (!sides) return false;
+  if (!sides) return null;
   const isolated = (lone, rest) => lone === variable
     && !rest.replace(/\\[a-zA-Z]+/g, ' ').includes(variable);
-  return isolated(sides[0], sides[1]) || isolated(sides[1], sides[0]);
+  if (isolated(sides[0], sides[1])) return sides[1];
+  if (isolated(sides[1], sides[0])) return sides[0];
+  return null;
 }
 
 /**
@@ -5214,6 +5221,25 @@ function checkFormToken(studentRaw, token, answerRaw) {
 export function checkForm(studentRaw, spec, answerRaw) {
   const { tokens, valid } = parseAnswerForm(spec);
   if (!valid) return true;
+  // `solved:<v>` with other tokens: the formula must be solved for v, and the
+  // other tokens describe the side v equals — `a=\frac{b}{bc-1}` under
+  // `solved:a single-fraction reduced-fraction` reads `\frac{b}{bc-1}`, so
+  // `a=\frac{2b}{2bc-2}` and `a=\frac{1}{c-\frac1b}` are `form` (Intermediate
+  // Algebra 7.4, October 3, 2026). Read whole, the equation was never a single
+  // fraction, so the key itself failed and `solved:` stood alone, passing an
+  // unfinished right side.
+  const solvedToken = tokens.find((token) => SOLVED_TOKEN.test(token));
+  if (solvedToken && tokens.length > 1) {
+    const variable = solvedToken.match(SOLVED_TOKEN)[1];
+    const side = solvedForSide(studentRaw, variable);
+    if (side === null) return false;
+    const keySide = solvedForSide(answerRaw ?? '', variable) ?? answerRaw;
+    // An equation form (`slope-intercept-form`) still reads the whole equation.
+    const whole = tokens.filter((token) => token !== solvedToken && EQUATION_FORM_TOKENS.has(token));
+    const onSide = tokens.filter((token) => token !== solvedToken && !EQUATION_FORM_TOKENS.has(token));
+    return (whole.length === 0 || checkForm(studentRaw, whole.join(' '), answerRaw))
+      && (onSide.length === 0 || checkForm(side, onSide.join(' '), keySide));
+  }
   const bounds = tokens.some(distributesOverBounds) ? boundNumbers(studentRaw) : null;
   return tokens.every((token) => (bounds !== null && distributesOverBounds(token)
     ? bounds.every((bound) => checkFormToken(bound, token, answerRaw))
