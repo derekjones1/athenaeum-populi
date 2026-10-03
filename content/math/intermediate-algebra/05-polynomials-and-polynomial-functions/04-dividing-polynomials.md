@@ -118,17 +118,17 @@ $$
 {{< fillin
   question="Find the quotient: $\left(32a^2b-16ab^2\right)\div(-8ab)$."
   answer="-4a+2b"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$-4a+2b$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Divide each term of the polynomial by the monomial; keep track of the signs, since the divisor is negative."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(-48a^8b^4-36a^6b^5\right)\div\left(-6a^3b^3\right)$."
   answer="8a^5b+6a^3b^2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$8a^5b+6a^3b^2$"
-  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
+  hint="Divide each term of the polynomial by the monomial; keep track of the signs, since the divisor is negative."
 >}}
 
 ## Divide polynomials using long division
@@ -147,7 +147,8 @@ $$
 \end{array}
 $$
 
-We check division by multiplying the quotient by the divisor. If we did the
+Here $25$ is the divisor, $875$ is the dividend, $35$ is the quotient, and
+$0$ is the remainder. We check division by multiplying the quotient by the divisor. If we did the
 division correctly, the product should equal the dividend:
 $35\cdot25=875$ ✓.
 
@@ -162,9 +163,9 @@ $$
 \begin{array}{r}
 x+4\phantom{0}\phantom{)} \\[2pt]
 x+5\,\overline{\smash{)}\,x^2+9x+20}\phantom{)} \\[2pt]
-\underline{-\left(x^2+5x\right)}\phantom{{}+20} \\[2pt]
+\underline{\mathllap{-\,(}x^2+5x\mathrlap{)}}\phantom{{}+20}\phantom{)} \\[2pt]
 4x+20\phantom{)} \\[2pt]
-\underline{-\left(4x+20\right)} \\[2pt]
+\underline{\mathllap{-\,(}4x+20\mathrlap{)}}\phantom{)} \\[2pt]
 0\phantom{)}
 \end{array}
 $$
@@ -175,17 +176,17 @@ quotient is $x+4$.
 {{< fillin
   question="Find the quotient: $\left(y^2+10y+21\right)\div(y+3)$."
   answer="y+7"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y+7$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Divide the leading term by the divisor's leading term, multiply, subtract, and bring down the next term; repeat."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(m^2+9m+20\right)\div(m+4)$."
   answer="m+5"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$m+5$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Divide the leading term by the divisor's leading term, multiply, subtract, and bring down the next term; repeat."
 >}}
 
 Sometimes polynomial division leaves a remainder. We write the remainder as
@@ -199,9 +200,9 @@ There is no $x^3$ term, so add $0x^3$ as a placeholder. Long division gives
 
 $$
 \begin{array}{r}
-x^3-2x^2+3x-1\phantom{{}-6}\phantom{)} \\[3pt]
-x+2\,\overline{\smash{)}\,x^4+0x^3-x^2+5x-6}\phantom{)} \\[3pt]
-\underline{\mathllap{-\,(}x^4+2x^3\mathrlap{)}}\phantom{{}-x^2+5x-6}\phantom{)} \\[3pt]
+\phantom{0}x^3-2x^2+3x-1\phantom{)} \\[3pt]
+x+2\,\overline{\smash{)}\,x^4+0x^3-\phantom{1}x^2+5x-6}\phantom{)} \\[3pt]
+\underline{\mathllap{-\,(}x^4+2x^3\mathrlap{)}}\phantom{{}-1x^2+5x-6}\phantom{)} \\[3pt]
 -2x^3-\phantom{4}x^2\phantom{{}+5x-6}\phantom{)} \\[3pt]
 \underline{\mathllap{-\,(}{-2x^3-4x^2}\mathrlap{)}}\phantom{{}+5x-6}\phantom{)} \\[3pt]
 3x^2+5x\phantom{{}-6}\phantom{)} \\[3pt]
@@ -225,17 +226,17 @@ $x^4-x^2+5x-6$.
 {{< fillin
   question="Find the quotient: $\left(x^4-7x^2+7x+6\right)\div(x+3)$."
   answer="x^3-3x^2+2x+1+\frac{3}{x+3}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$x^3-3x^2+2x+1+\tfrac{3}{x+3}$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Insert $0x^3$ as a placeholder, then divide, multiply, subtract, and bring down until the remainder's degree is less than the divisor's; write the remainder over the divisor."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(x^4-11x^2-7x-6\right)\div(x+3)$."
   answer="x^3-3x^2-2x-1-\frac{3}{x+3}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$x^3-3x^2-2x-1-\tfrac{3}{x+3}$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Insert $0x^3$ as a placeholder, then divide, multiply, subtract, and bring down until the remainder's degree is less than the divisor's; write the remainder over the divisor."
 >}}
 
 In the next example, we divide by $2a+3$. We must consider the constants as
@@ -247,7 +248,7 @@ Add the two placeholders $0a^2$ and $0a$ before dividing:
 
 $$
 \begin{array}{r}
-4a^2-6a+9\phantom{{}+27}\phantom{)} \\[3pt]
+4a^2-\phantom{1}6a+\phantom{2}9\phantom{)} \\[3pt]
 2a+3\,\overline{\smash{)}\,8a^3+\phantom{1}0a^2+\phantom{1}0a+27}\phantom{)} \\[3pt]
 \underline{\mathllap{-\,(}8a^3+12a^2\mathrlap{)}}\phantom{{}+\phantom{1}0a+27}\phantom{)} \\[3pt]
 -12a^2+\phantom{1}0a\phantom{{}+27}\phantom{)} \\[3pt]
@@ -264,26 +265,40 @@ quotient is $4a^2-6a+9$.
 {{< fillin
   question="Find the quotient: $\left(x^3-64\right)\div(x-4)$."
   answer="x^2+4x+16"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2+4x+16$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Insert zero placeholders for the missing $x^2$ and $x$ terms, then use long division."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(125x^3-8\right)\div(5x-2)$."
   answer="25x^2+10x+4"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$25x^2+10x+4$"
-  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
+  hint="Insert zero placeholders for the missing $x^2$ and $x$ terms, then use long division."
 >}}
 
 ## Divide polynomials using synthetic division
 
 Long division can be tedious, so mathematicians use a pattern called
 **synthetic division**. It removes repeated variables and numbers from the
-long-division work. The first row contains the coefficients of the dividend;
-the second row contains the successive products; and the third row contains
-the coefficients of the quotient followed by the remainder.
+long-division work. Here is the division of $x^2+9x+20$ by $x+5$ from
+earlier, done synthetically:
+
+$$
+\begin{array}{r|rrr}
+-5 & 1 & 9 & 20 \\
+   &   & -5 & -20 \\
+\hline
+   & 1 & 4 & 0
+\end{array}
+$$
+
+The first row contains the coefficients of the dividend, and $-5$ is the
+opposite of the $5$ in the divisor. The second row contains the numbers
+subtracted in the long division, $5x$ and $20$, written with their signs
+changed. The third row contains the coefficients of the quotient, $1$ and
+$4$, followed by the remainder, $0$.
 
 Synthetic division only works when the divisor is of the form $x-c$.
 
@@ -320,23 +335,24 @@ $$
 {{< fillin
   question="Use synthetic division to find the quotient when $3x^3+10x^2+6x-2$ is divided by $x+2$."
   answer="3x^2+4x-2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3x^2+4x-2$"
-  hint="Use $c=-2$. The final row is $3,4,-2,2$; the last entry is the remainder."
+  hint="Write the divisor as $x-c$ to find $c$. Bring down the first coefficient, then multiply by $c$ and add, column by column; the bottom row's last entry is the remainder, and the entries before it are the quotient's coefficients."
 >}}
 
 {{< fillin
-  question="Find the remainder when $3x^3+10x^2+6x-2$ is divided by $x+2$."
+  question="Use synthetic division to find the remainder when $3x^3+10x^2+6x-2$ is divided by $x+2$."
   answer="2"
-  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
+  answerForm="decimal"
+  hint="The last entry in the bottom row of the synthetic division is the remainder."
 >}}
 
 {{< fillin
   question="Use synthetic division to find the quotient when $4x^3+5x^2-5x+3$ is divided by $x+2$."
   answer="4x^2-3x+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$4x^2-3x+1$"
-  hint="Use $c=-2$. The final row is $4,-3,1,1$; the last entry is the remainder."
+  hint="Write the divisor as $x-c$ to find $c$. Bring down the first coefficient, then multiply by $c$ and add, column by column; the bottom row's last entry is the remainder, and the entries before it are the quotient's coefficients."
 >}}
 
 In the next example, we do all the steps together.
@@ -363,7 +379,7 @@ $x^3-4x^2+3$, and the remainder is $0$.
 {{< fillin
   question="Use synthetic division to find the quotient when $x^4-16x^2+5x+20$ is divided by $x+4$."
   answer="x^3-4x^2+5"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^3-4x^2+5$"
   hint="Use the zero of the divisor in synthetic division, including zero coefficients for missing powers."
 >}}
@@ -371,7 +387,7 @@ $x^3-4x^2+3$, and the remainder is $0$.
 {{< fillin
   question="Use synthetic division to find the quotient when $x^4-9x^2+2x+6$ is divided by $x+3$."
   answer="x^3-3x^2+2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^3-3x^2+2$"
   hint="Use the zero of the divisor in synthetic division, including zero coefficients for missing powers."
 >}}
@@ -408,21 +424,25 @@ $$
 {{< fillin
   question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(x)$."
   answer="x-8"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x-8$"
-  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
+  hint="Divide $f(x)$ by $g(x)$ with long division, or factor $f(x)$ and cancel the common factor with $g(x)$."
 >}}
 
-{{< fillin
-  question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(-4)$."
-  answer="-12"
-  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
+{{< multiplechoice
+  question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, what is $\left(\tfrac{f}{g}\right)(-3)$?"
+  answer="undefined"
+  hint="Evaluate $g$ at the input first, since a quotient of functions is defined only where the divisor function is not zero; then evaluate $f$ there and divide."
 >}}
+$-11$
+$0$
+undefined
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="For $f(x)=x^2-5x-36$ and $g(x)=x+4$, what is $\left(\tfrac{f}{g}\right)(-5)$?"
   answer="$-14$"
-  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
+  hint="Evaluate $g$ at the input first, since a quotient of functions is defined only where the divisor function is not zero; then evaluate $f$ there and divide."
 >}}
 $-4$
 undefined
@@ -431,9 +451,15 @@ $-14$
 
 ## Use the Remainder and Factor Theorems
 
-Look at division problems that end with a remainder. When the divisor is
-written as $x-c$, the value $f(c)$ is the same as the remainder from the
-division.
+Look at some division problems that end with a remainder. If we use each
+dividend to define a function, then when the divisor is written as $x-c$,
+the value $f(c)$ is the same as the remainder from the division:
+
+| Dividend | Divisor $x-c$ | Remainder | Function | $f(c)$ |
+|---|---|---|---|---|
+| $x^4-x^2+5x-6$ | $x-(-2)$ | $-4$ | $f(x)=x^4-x^2+5x-6$ | $-4$ |
+| $3x^3-2x^2-10x+8$ | $x-2$ | $4$ | $f(x)=3x^3-2x^2-10x+8$ | $4$ |
+| $x^4-16x^2+3x+15$ | $x-(-4)$ | $3$ | $f(x)=x^4-16x^2+3x+15$ | $3$ |
 
 To see this generally, a division problem can be checked by multiplying the
 quotient $q(x)$ by the divisor $x-c$ and adding the remainder $r$:
@@ -471,12 +497,14 @@ The remainder is $5$.
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $f(x)=x^3+4x+15$ is divided by $x+2$."
   answer="-1"
+  answerForm="decimal"
   hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $f(x)=x^3-7x+12$ is divided by $x+3$."
   answer="6"
+  answerForm="decimal"
   hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
@@ -496,7 +524,7 @@ so both $4a^2-6a+9$ and $2a+3$ are factors of $8a^3+27$.
   - If $f(c)=0$, then $x-c$ is a factor of $f(x)$.
 {{< /callout >}}
 
-**Example.** Use the Factor Theorem to determine if $x-4$ is a factor of
+**Example.** Use the Remainder Theorem to determine if $x-4$ is a factor of
 $f(x)=x^3-64$.
 
 The Factor Theorem tells us that $x-4$ is a factor if $f(4)=0$:
@@ -562,7 +590,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Find the quotient: $\left(8x^3+6x^2\right)\div2x$."
   answer="4x^2+3x"
-  answerForm="polynomial"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$4x^2+3x$"
   hint="Divide each term of the polynomial by the monomial divisor separately."
 >}}
@@ -570,7 +598,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Find the quotient: $\left(48y^4-24y^3\right)\div\left(-8y^2\right)$."
   answer="-6y^2+3y"
-  answerForm="polynomial"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$-6y^2+3y$"
   hint="Divide each term of the polynomial by the monomial divisor separately."
 >}}
@@ -580,7 +608,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Find the quotient: $\left(a^2-2a-35\right)\div(a+5)$."
   answer="a-7"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a-7$"
   hint="Divide, multiply, subtract, and bring down; repeat until the remainder's degree is less than the divisor's."
 >}}
@@ -588,7 +616,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Find the quotient: $\left(p^2+11p+16\right)\div(p+8)$."
   answer="p+3-\frac{8}{p+8}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$p+3-\tfrac{8}{p+8}$"
   hint="Divide, multiply, subtract, and bring down; write any nonzero remainder over the divisor."
 >}}
@@ -598,7 +626,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Use synthetic division to find the quotient when $x^3-3x^2-4x+12$ is divided by $x+2$."
   answer="x^2-5x+6"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2-5x+6$"
   hint="Use $c=-2$; the final row's leading entries are the quotient's coefficients."
 >}}
@@ -606,13 +634,14 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Find the remainder when $x^3-3x^2-4x+12$ is divided by $x+2$."
   answer="0"
+  answerForm="decimal"
   hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
 {{< fillin
   question="Use synthetic division to find the quotient when $2x^3-11x^2+16x-12$ is divided by $x-4$."
   answer="2x^2-3x+4"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$2x^2-3x+4$"
   hint="Use $c=4$; the final row's leading entries are the quotient's coefficients."
 >}}
@@ -620,6 +649,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Find the remainder when $2x^3-11x^2+16x-12$ is divided by $x-4$."
   answer="4"
+  answerForm="decimal"
   hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
@@ -628,7 +658,7 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="For $f(x)=x^2-15x+54$ and $g(x)=x-9$, find $\left(\tfrac{f}{g}\right)(x)$."
   answer="x-6"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x-6$"
   hint="Divide $f(x)$ by $g(x)$ using long division, or factor $f(x)$ and cancel the common factor with $g(x)$."
 >}}
@@ -636,7 +666,8 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="For $f(x)=x^2-15x+54$ and $g(x)=x-9$, find $\left(\tfrac{f}{g}\right)(-5)$."
   answer="-11"
-  hint="Substitute $x=-5$ into the simplified quotient from the previous part, or evaluate $f(-5)$ and $g(-5)$ and divide."
+  answerForm="decimal"
+  hint="Simplify $\tfrac{f}{g}$ first and substitute $x=-5$, or evaluate $f(-5)$ and $g(-5)$ and divide."
 >}}
 
 ### Use the Remainder and Factor Theorems
@@ -644,12 +675,14 @@ $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $f(x)=x^3-4x-9$ is divided by $x+2$."
   answer="-9"
+  answerForm="decimal"
   hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $f(x)=7x^2-5x-8$ is divided by $x-1$."
   answer="-6"
+  answerForm="decimal"
   hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
@@ -673,4 +706,4 @@ no
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.4: Dividing Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-4-dividing-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: condensed the multi-row worked-example step tables into prose and typeset math, recreated the numeric and polynomial long divisions and synthetic-division layouts as math arrays, omitted the Be Prepared quiz, Self Check checklist, and media links, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.4: Dividing Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-4-dividing-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: condensed the multi-row worked-example step tables into prose and typeset math, recreated the numeric and polynomial long divisions and synthetic-division layouts as math arrays and the remainder chart as a table, omitted the Be Prepared quiz, Self Check checklist, and media links, converted selected practice problems ("Try Its") into interactive exercises with instant feedback, asking a synthetic-division Try It's quotient and remainder as separate exercises and only part (b) of the second quotient-of-functions Try It, as a multiple choice; and adapted selected end-of-section exercises into an interactive Practice block, asking each synthetic-division exercise's quotient and remainder as separate exercises and the quotient-of-functions exercise's two parts as separate exercises. Corrections: for $f(x)=x^2-5x-24$ and $g(x)=x+3$, $\left(\tfrac{f}{g}\right)(-3)$ is undefined, since $g(-3)=0$, where the source answers $-11$ (the page asks it as a multiple choice); and for $f(x)=x^2-5x-36$ and $g(x)=x+4$, $\left(\tfrac{f}{g}\right)(-5)=-14$, where the source answers "undefined".</small>

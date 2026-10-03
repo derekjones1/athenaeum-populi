@@ -51,15 +51,15 @@ $$
   answer="-35y^{11}"
   answerForm="single-term"
   answerDisplay="$-35y^{11}$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Multiply the coefficients, then add the exponents on each matching variable."
 >}}
 
 {{< fillin
   question="Multiply: $\left(\tfrac{2}{5}a^4b^3\right)\left(15ab^3\right)$"
   answer="6a^5b^6"
-  answerForm="single-term"
+  answerForm="single-term no-like-terms"
   answerDisplay="$6a^5b^6$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Multiply the coefficients, then add the exponents on each matching variable."
 >}}
 
 ## Multiply a polynomial by a monomial
@@ -91,7 +91,7 @@ $$
 {{< fillin
   question="Multiply: $-3y\left(5y^2+8y-7\right)$"
   answer="-15y^3-24y^2+21y"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$-15y^3-24y^2+21y$"
   hint="Distribute the monomial to every term, multiply coefficients, and add exponents on like bases."
 >}}
@@ -99,7 +99,7 @@ $$
 {{< fillin
   question="Multiply: $4x^2\left(2x^2-3x+5\right)$"
   answer="8x^4-12x^3+20x^2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$8x^4-12x^3+20x^2$"
   hint="Distribute the monomial to every term, multiply coefficients, and add exponents on like bases."
 >}}
@@ -123,17 +123,17 @@ $$
 {{< fillin
   question="Multiply: $(x+8)(x+9)$"
   answer="x^2+17x+72"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2+17x+72$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Distribute each term of the first binomial over the second binomial, then combine like terms."
 >}}
 
 {{< fillin
   question="Multiply: $(3c+4)(5c-2)$"
   answer="15c^2+14c-8"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$15c^2+14c-8$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Distribute each term of the first binomial over the second binomial, then combine like terms."
 >}}
 
 ### The FOIL method
@@ -189,17 +189,17 @@ $$
 {{< fillin
   question="Multiply using FOIL: $(x-7)(x+5)$"
   answer="x^2-2x-35"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2-2x-35$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Multiply the First, Outer, Inner, and Last terms, then combine like terms."
 >}}
 
 {{< fillin
   question="Multiply using FOIL: $(3x+7)(5x-2)$"
   answer="15x^2+29x-14"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$15x^2+29x-14$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Multiply the First, Outer, Inner, and Last terms, then combine like terms."
 >}}
 
 The final products in the last example were trinomials because we could
@@ -228,17 +228,17 @@ $$
 {{< fillin
   question="Multiply: $\left(x^2+6\right)(x-8)$"
   answer="x^3-8x^2+6x-48"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^3-8x^2+6x-48$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Multiply the First, Outer, Inner, and Last terms, then combine like terms."
 >}}
 
 {{< fillin
   question="Multiply: $(2ab+5)(4ab-4)$"
   answer="8a^2b^2+12ab-20"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$8a^2b^2+12ab-20$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Multiply the First, Outer, Inner, and Last terms, then combine like terms."
 >}}
 
 ### The Vertical Method
@@ -255,14 +255,14 @@ It does not matter which binomial goes on the top. Multiply $3y-1$ by $-6$,
 then multiply $3y-1$ by $2y$, and add like terms:
 
 $$
-\begin{array}{r}
-3y-1 \\
-\times\phantom{0}2y-6 \\
+\begin{array}{rrr}
+ & 3y & -1 \\
+\times & 2y & -6 \\
 \hline
--18y+6 \\
-6y^2-\phantom{0}2y\phantom{{}+6} \\
+ & -18y & +6 \\
+6y^2 & -2y & \\
 \hline
-6y^2-20y+6
+6y^2 & -20y & +6
 \end{array}
 $$
 
@@ -271,7 +271,7 @@ Notice the partial products are the same as the terms in the FOIL method.
 {{< fillin
   question="Multiply using the Vertical Method: $(5m-7)(3m-6)$"
   answer="15m^2-51m+42"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$15m^2-51m+42$"
   hint="Align like powers in columns, multiply by each term of the second binomial, and add the partial products."
 >}}
@@ -279,7 +279,7 @@ Notice the partial products are the same as the terms in the FOIL method.
 {{< fillin
   question="Multiply using the Vertical Method: $(6b-5)(7b-3)$"
   answer="42b^2-53b+15"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$42b^2-53b+15$"
   hint="Align like powers in columns, multiply by each term of the second binomial, and add the partial products."
 >}}
@@ -311,31 +311,31 @@ Using the Vertical Method, it is easier to put the polynomial with fewer
 terms on the bottom because we get fewer partial products that way:
 
 $$
-\begin{array}{r}
-2b^2-\phantom{0}5b+8 \\
-\times\phantom{2b^2-{}}b+3 \\
+\begin{array}{rrrr}
+ & 2b^2 & -5b & +8 \\
+\times & & b & +3 \\
 \hline
-6b^2-15b+24 \\
-2b^3-\phantom{0}5b^2+\phantom{0}8b\phantom{{}+24} \\
+ & 6b^2 & -15b & +24 \\
+2b^3 & -5b^2 & +8b & \\
 \hline
-2b^3+\phantom{0}b^2-\phantom{0}7b+24
+2b^3 & +b^2 & -7b & +24
 \end{array}
 $$
 
 {{< fillin
   question="Multiply $(y-3)\left(y^2-5y+2\right)$."
   answer="y^3-8y^2+17y-6"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^3-8y^2+17y-6$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Distribute each term of the binomial across the trinomial, then combine like terms."
 >}}
 
 {{< fillin
   question="Multiply $(x+4)\left(2x^2-3x+5\right)$."
   answer="2x^3+5x^2-7x+20"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$2x^3+5x^2-7x+20$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Distribute each term of the binomial across the trinomial, then combine like terms."
 >}}
 
 {{< callout type="info" >}}
@@ -392,19 +392,19 @@ $$
 $$
 
 {{< fillin
-  question="Multiply: $(x+9)^2$"
-  answer="x^2+18x+81"
-  answerForm="expanded"
-  answerDisplay="$x^2+18x+81$"
-  hint="Multiply the coefficients and add the exponents of each common base."
+  question="Multiply: $(y+11)^2$"
+  answer="y^2+22y+121"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$y^2+22y+121$"
+  hint="Use the Binomial Squares Pattern: square the first term, square the last term, and double their product for the middle term."
 >}}
 
 {{< fillin
   question="Multiply: $(2c-d)^2$"
   answer="4c^2-4cd+d^2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$4c^2-4cd+d^2$"
-  hint="Multiply the coefficients and add the exponents of each common base."
+  hint="Use the Binomial Squares Pattern: square the first term, square the last term, and double their product for the middle term."
 >}}
 
 We just saw a pattern for squaring binomials. Similarly, there is a pattern
@@ -455,17 +455,17 @@ $$
 {{< fillin
   question="Multiply: $(6x+5)(6x-5)$"
   answer="36x^2-25"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$36x^2-25$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Use the Product of Conjugates Pattern: square the first term, square the last term, and write the difference."
 >}}
 
 {{< fillin
   question="Multiply: $(4p-7q)(4p+7q)$"
   answer="16p^2-49q^2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$16p^2-49q^2$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Use the Product of Conjugates Pattern: square the first term, square the last term, and write the difference."
 >}}
 
 The special product patterns look similar, so it is important to recognize
@@ -516,25 +516,25 @@ $$
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9b-2)(2b+9)$"
   answer="18b^2+77b-18"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$18b^2+77b-18$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Decide whether the product is a binomial squared, a conjugate pair, or neither; then use that pattern, or FOIL."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9p-4)^2$"
   answer="81p^2-72p+16"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$81p^2-72p+16$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Decide whether the product is a binomial squared, a conjugate pair, or neither; then use that pattern, or FOIL."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(7y+1)^2$"
   answer="49y^2+14y+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$49y^2+14y+1$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Decide whether the product is a binomial squared, a conjugate pair, or neither; then use that pattern, or FOIL."
 >}}
 
 ## Multiply polynomial functions
@@ -574,16 +574,17 @@ $$
 {{< fillin
   question="For $f(x)=x-5$ and $g(x)=x^2-2x+3$, find $(f\cdot g)(x)$."
   answer="x^3-7x^2+13x-15"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^3-7x^2+13x-15$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Substitute the two functions, multiply the polynomials, and combine like terms."
 >}}
 
 {{< fillin
   question="For $f(x)=x-5$ and $g(x)=x^2-2x+3$, find $(f\cdot g)(2)$."
   answer="-9"
+  answerForm="decimal"
   answerDisplay="$-9$"
-  hint="Multiply every term in one factor by every term in the other, then combine like powers."
+  hint="Substitute $x=2$ into your $(f\cdot g)(x)$, or evaluate $f(2)$ and $g(2)$ and multiply them."
 >}}
 
 ## Key terms
@@ -613,7 +614,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $\left(\tfrac{5}{8}x^3y\right)\left(24x^5y\right)$"
   answer="15x^8y^2"
-  answerForm="single-term"
+  answerForm="single-term no-like-terms"
   answerDisplay="$15x^8y^2$"
   hint="Multiply the coefficients and add the exponents on each matching variable."
 >}}
@@ -629,7 +630,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $\left(\tfrac{3}{5}m^3n^2\right)\left(\tfrac{5}{9}m^2n^3\right)$"
   answer="\tfrac{1}{3}m^5n^5"
-  answerForm="single-term"
+  answerForm="single-term no-like-terms"
   answerDisplay="$\tfrac{1}{3}m^5n^5$"
   hint="Multiply the coefficients and add the exponents on each matching variable."
 >}}
@@ -639,7 +640,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $-5t\left(t^2+3t-18\right)$"
   answer="-5t^3-15t^2+90t"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$-5t^3-15t^2+90t$"
   hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
 >}}
@@ -647,23 +648,23 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $9r^3s\left(r^2-3rs+5s^2\right)$"
   answer="9r^5s-27r^4s^2+45r^3s^3"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$9r^5s-27r^4s^2+45r^3s^3$"
   hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
 >}}
 
 {{< fillin
-  question="Multiply: $-5m\left(m^2+3m-18\right)$"
-  answer="-5m^3-15m^2+90m"
-  answerForm="expanded"
-  answerDisplay="$-5m^3-15m^2+90m$"
+  question="Multiply: $5q^3\left(q^2-2q+6\right)$"
+  answer="5q^5-10q^4+30q^3"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$5q^5-10q^4+30q^3$"
   hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
 >}}
 
 {{< fillin
   question="Multiply: $-3x^2y^2\left(7x^2+10xy-y^2\right)$"
   answer="-21x^4y^2-30x^3y^3+3x^2y^4"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$-21x^4y^2-30x^3y^3+3x^2y^4$"
   hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
 >}}
@@ -673,7 +674,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(y+9)(y+3)$"
   answer="y^2+12y+27"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^2+12y+27$"
   hint="Use FOIL — multiply the First, Outer, Inner, and Last terms, then combine like terms."
 >}}
@@ -681,7 +682,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(7q+4)(3q-8)$"
   answer="21q^2-44q-32"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$21q^2-44q-32$"
   hint="Use FOIL — multiply the First, Outer, Inner, and Last terms, then combine like terms."
 >}}
@@ -691,7 +692,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(u+4)\left(u^2+3u+2\right)$"
   answer="u^3+7u^2+14u+8"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$u^3+7u^2+14u+8$"
   hint="Distribute each term of the binomial across the trinomial, then combine like terms."
 >}}
@@ -699,7 +700,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(a+10)\left(3a^2+a-5\right)$"
   answer="3a^3+31a^2+5a-50"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3a^3+31a^2+5a-50$"
   hint="Distribute each term of the binomial across the trinomial, then combine like terms."
 >}}
@@ -709,7 +710,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(q+12)^2$"
   answer="q^2+24q+144"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$q^2+24q+144$"
   hint="Use the Binomial Squares Pattern: square the first term, square the last term, and double their product for the middle term."
 >}}
@@ -717,7 +718,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(2y-3z)^2$"
   answer="4y^2-12yz+9z^2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$4y^2-12yz+9z^2$"
   hint="Use the Binomial Squares Pattern: square the first term, square the last term, and subtract twice their product for the middle term."
 >}}
@@ -725,7 +726,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="Multiply: $(8j+4)(8j-4)$"
   answer="64j^2-16"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$64j^2-16$"
   hint="Use the Product of Conjugates Pattern: square the first term, square the last term, and write the difference."
 >}}
@@ -735,7 +736,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="For $f(x)=x-1$ and $g(x)=4x^2+3x-5$, find $(f\cdot g)(x)$."
   answer="4x^3-x^2-8x+5"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$4x^3-x^2-8x+5$"
   hint="Substitute the two functions and multiply the polynomials, combining like terms."
 >}}
@@ -743,6 +744,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="For $f(x)=x-1$ and $g(x)=4x^2+3x-5$, find $(f\cdot g)(-2)$."
   answer="-15"
+  answerForm="decimal"
   answerDisplay="$-15$"
   hint="Substitute $x=-2$ into $f(x)\cdot g(x)$ and simplify."
 >}}
@@ -750,7 +752,7 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="For $f(x)=7x-8$ and $g(x)=7x+8$, find $(f\cdot g)(x)$."
   answer="49x^2-64"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$49x^2-64$"
   hint="Recognize the conjugate pair, or multiply directly and combine like terms."
 >}}
@@ -758,10 +760,11 @@ $a^2-b^2$, the product of a conjugate pair.
 {{< fillin
   question="For $f(x)=7x-8$ and $g(x)=7x+8$, find $(f\cdot g)(-2)$."
   answer="132"
+  answerForm="decimal"
   answerDisplay="$132$"
   hint="Substitute $x=-2$ into $f(x)\cdot g(x)$ and simplify."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.3: Multiply Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-3-multiply-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz and media links; recreated the FOIL and Vertical Method worked examples as aligned equation blocks; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.3: Multiply Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-3-multiply-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz and media links; recreated the FOIL and Vertical Method worked examples as aligned equation blocks; kept part (a) only of the first binomial-times-binomial example; keyed the $(x+4)\left(2x^2-3x+5\right)$ exercise $2x^3+5x^2-7x+20$, where the source's Vertical Method answer repeats the previous exercise's $y^3-8y^2+17y-6$; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

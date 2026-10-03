@@ -104,7 +104,7 @@ $$
   answer="b^{17}"
   answerForm="single-term"
   answerDisplay="$b^{17}$"
-  hint="Same base — add the exponents: $9+8$."
+  hint="Same base — add the exponents."
 >}}
 
 {{< fillin
@@ -184,17 +184,17 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{x^{15}}{x^{10}}$."
   answer="x^5"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$x^5$"
-  hint="The larger exponent is in the numerator, so subtract: $15-10$."
+  hint="The larger exponent is in the numerator, so subtract the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{12^{15}}{12^{30}}$. Enter your answer with a positive exponent."
   answer="\frac{1}{12^{15}}"
-  answerForm="single-power"
+  answerForm="single-power positive-exponents"
   answerDisplay="$\tfrac{1}{12^{15}}$"
-  hint="The larger exponent is in the denominator, so the result is $\tfrac{1}{12^{30-15}}$."
+  hint="The larger exponent is in the denominator, so use $\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$."
 >}}
 
 A special case of the Quotient Property is when the exponents of the numerator
@@ -301,7 +301,7 @@ $$
 \begin{array}{lrcl}
 &&& 10^{-3} \\[6pt]
 \text{Use the definition of a negative exponent, } a^{-n} = \tfrac{1}{a^n}. &&& \tfrac{1}{10^3} \\[10pt]
-\text{Simplify.} &&& \tfrac{1}{1000}
+\text{Simplify.} &&& \tfrac{1}{1{,}000}
 \end{array}
 $$
 
@@ -335,7 +335,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{1}{p^{-8}}$. Write your answer with a positive exponent."
   answer="p^8"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$p^8$"
   hint="Use $\tfrac{1}{a^{-n}} = a^n$."
 >}}
@@ -392,17 +392,17 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{3}\right)^{-4}$."
   answer="\frac{81}{16}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{81}{16}$"
-  hint="Take the reciprocal and change the sign of the exponent: $\left(\tfrac{3}{2}\right)^4$."
+  hint="Take the reciprocal of the base and change the sign of the exponent, then raise the numerator and the denominator to the power."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{3}{5}\right)^{-3}$."
   answer="\frac{125}{27}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{125}{27}$"
-  hint="Take the reciprocal and change the sign of the exponent: $\left(\tfrac{5}{3}\right)^3$."
+  hint="Take the reciprocal of the base and change the sign of the exponent, then raise the numerator and the denominator to the power."
 >}}
 
 Now that we have negative exponents, we will use the Product Property with
@@ -518,7 +518,7 @@ $$
   answer="b^{35}"
   answerForm="single-power"
   answerDisplay="$b^{35}$"
-  hint="Raise a power to a power — multiply the exponents: $7 \cdot 5$."
+  hint="Raise a power to a power — multiply the exponents."
 >}}
 
 {{< fillin
@@ -526,7 +526,7 @@ $$
   answer="a^{48}"
   answerForm="single-term"
   answerDisplay="$a^{48}$"
-  hint="Multiply the exponents in each factor, then add: $20 + 28$."
+  hint="Use the Power Property on each factor, then the Product Property."
 >}}
 
 We will now look at an expression containing a product that is raised to a
@@ -600,7 +600,7 @@ $$
   answer="32w^5x^5"
   answerForm="single-term"
   answerDisplay="$32w^5x^5$"
-  hint="Raise each factor to the fifth power; $2^5 = 32$."
+  hint="Raise each factor, the coefficient included, to the fifth power."
 >}}
 
 {{< fillin
@@ -608,7 +608,7 @@ $$
   answer="\frac{64}{a^8}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{64}{a^8}$"
-  hint="Raise each factor to the power, then rewrite the negative exponent as positive: $8^2 = 64$."
+  hint="Raise each factor to the power, then rewrite the negative exponent as positive."
 >}}
 
 Now we will look at an example that will lead us to the **Quotient to a Power
@@ -683,7 +683,7 @@ $$
   answer="\frac{p^4}{10000}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{p^4}{10{,}000}$"
-  hint="Raise the numerator and denominator to the fourth power; $10^4 = 10{,}000$."
+  hint="Raise the numerator and the denominator to the fourth power."
 >}}
 
 {{< fillin
@@ -767,7 +767,7 @@ $$
   answer="\frac{1}{a^{18}}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{a^{18}}$"
-  hint="Use the Power Property throughout: numerator becomes $a^{-6} \cdot a^8 = a^2$, denominator $a^{20}$."
+  hint="Use the Power Property on each power, add the exponents in the numerator, then use the Quotient Property."
 >}}
 
 ## Use scientific notation
@@ -826,18 +826,22 @@ $37{,}000 = 3.7 \times 10^4$. Check: $3.7 \times 10^4 = 3.7 \times 10{,}000 = 37
 negative power of $10$. Move the decimal point to get $5.2$, a number between
 $1$ and $10$. The decimal point was moved $3$ places to the right, so
 $0.0052 = 5.2 \times 10^{-3}$. Check:
-$5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0052$. ✓
+$5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1{,}000} = 5.2 \times 0.001 = 0.0052$. ✓
 
 {{< fillin
-  question="Write $96{,}000$ in scientific notation. Enter the first factor (the number between 1 and 10)."
-  answer="9.6"
-  hint="Move the decimal to get a number between $1$ and $10$: $9.6$. The power of ten is $10^4$."
+  question="Write $96{,}000$ in scientific notation."
+  answer="9.6 \times 10^4"
+  answerForm="scientific-notation"
+  answerDisplay="$9.6 \times 10^4$"
+  hint="Move the decimal point so the first factor is at least $1$ but less than $10$, count the places it moved, and use the steps above to choose the sign of the exponent."
 >}}
 
 {{< fillin
-  question="Write $0.0078$ in scientific notation. Enter the exponent on 10 (a negative integer)."
-  answer="-3"
-  hint="The number is between $0$ and $1$, and the decimal moves $3$ places to the right, so the exponent is $-3$."
+  question="Write $0.0078$ in scientific notation."
+  answer="7.8 \times 10^{-3}"
+  answerForm="scientific-notation"
+  answerDisplay="$7.8 \times 10^{-3}$"
+  hint="Move the decimal point so the first factor is at least $1$ but less than $10$, count the places it moved, and use the steps above to choose the sign of the exponent."
 >}}
 
 How can we convert from scientific notation to decimal form? If we look at two
@@ -917,7 +921,7 @@ $$
   question="Multiply: $(-3 \times 10^5)(2 \times 10^{-8})$. Write your answer in decimal form."
   answer="-0.006"
   answerForm="decimal"
-  hint="Multiply the coefficients ($-6$) and add the exponents ($10^{-3}$), then write in decimal form."
+  hint="Multiply the coefficients and add the exponents of $10$, then move the decimal point to write the result in decimal form."
 >}}
 
 {{< fillin
@@ -925,7 +929,7 @@ $$
   answer="400000"
   answerForm="decimal"
   answerDisplay="$400{,}000$"
-  hint="Divide the coefficients ($4$) and subtract the exponents ($10^{4-(-1)} = 10^5$)."
+  hint="Divide the coefficients and subtract the exponents of $10$, then move the decimal point to write the result in decimal form."
 >}}
 
 ## Key terms
@@ -951,31 +955,31 @@ integer.
   answer="m^{x+3}"
   answerForm="single-term"
   answerDisplay="$m^{x+3}$"
-  hint="Same base — add the exponents, even when one of them is a variable: $x+3$."
+  hint="Same base — add the exponents, even when one of them is a variable."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{x^{18}}{x^3}$."
   answer="x^{15}"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$x^{15}$"
-  hint="Same base, larger exponent in the numerator — subtract: $18-3$."
+  hint="Same base, larger exponent in the numerator — subtract the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{5^{12}}{5^3}$."
   answer="5^9"
-  answerForm="polynomial"
+  answerForm="single-power"
   answerDisplay="$5^9$"
-  hint="Subtract the exponents: $12-3$."
+  hint="Same base, larger exponent in the numerator — subtract the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{q^{18}}{q^{36}}$. Enter your answer with a positive exponent."
   answer="\frac{1}{q^{18}}"
-  answerForm="single-power"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{q^{18}}$"
-  hint="The larger exponent is in the denominator, so the result is $\tfrac{1}{q^{36-18}}$."
+  hint="The larger exponent is in the denominator, so use $\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$."
 >}}
 
 {{< fillin
@@ -983,7 +987,7 @@ integer.
   answer="\frac{1}{10}"
   answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{10}$"
-  hint="The larger exponent is in the denominator: $\tfrac{1}{10^{3-2}}$."
+  hint="The larger exponent is in the denominator, so use $\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$, then evaluate the power."
 >}}
 
 {{< fillin
@@ -1005,7 +1009,7 @@ integer.
   answer="m^8"
   answerForm="single-power"
   answerDisplay="$m^8$"
-  hint="Raise a power to a power — multiply the exponents: $4 \cdot 2$."
+  hint="Raise a power to a power — multiply the exponents."
 >}}
 
 {{< fillin
@@ -1013,15 +1017,15 @@ integer.
   answer="10^{18}"
   answerForm="single-power"
   answerDisplay="$10^{18}$"
-  hint="Multiply the exponents: $3 \cdot 6$."
+  hint="Raise a power to a power — multiply the exponents and keep the base."
 >}}
 
 {{< fillin
   question="Simplify: $(x^3)^{-4}$. Write your answer with a positive exponent."
   answer="\frac{1}{x^{12}}"
-  answerForm="single-power"
+  answerForm="single-fraction single-power"
   answerDisplay="$\tfrac{1}{x^{12}}$"
-  hint="Multiply the exponents to get $x^{-12}$, then rewrite with a positive exponent."
+  hint="Multiply the exponents, then rewrite the negative exponent as positive."
 >}}
 
 {{< fillin
@@ -1029,80 +1033,81 @@ integer.
   answer="1000x^6y^3"
   answerForm="single-term"
   answerDisplay="$1{,}000x^6y^3$"
-  hint="Raise each factor to the third power; $10^3 = 1{,}000$."
+  hint="Raise each factor, the coefficient included, to the third power."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{p}{2}\right)^5$."
-  answer="\frac{p^5}{32}"
+  question="Simplify: $\left(\tfrac{a}{3b}\right)^4$."
+  answer="\frac{a^4}{81b^4}"
   answerForm="single-fraction"
-  answerDisplay="$\tfrac{p^5}{32}$"
-  hint="Raise the numerator and denominator to the fifth power; $2^5 = 32$."
+  answerDisplay="$\tfrac{a^4}{81b^4}$"
+  hint="Raise the numerator and the denominator to the fourth power, then use the Product to a Power Property on the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{x}{y}\right)^{-6}$. Write your answer with positive exponents."
-  answer="\frac{y^6}{x^6}"
+  question="Simplify: $\left(\tfrac{5}{4m}\right)^{-2}$. Write your answer with a positive exponent."
+  answer="\frac{16m^2}{25}"
   answerForm="single-fraction"
-  answerDisplay="$\tfrac{y^6}{x^6}$"
-  hint="Take the reciprocal of the base and change the sign of the exponent, then raise to the sixth power."
+  answerDisplay="$\tfrac{16m^2}{25}$"
+  hint="Take the reciprocal of the base and change the sign of the exponent, then raise the numerator and the denominator to the power."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{2xy^2}{z}\right)^3$."
-  answer="\frac{8x^3y^6}{z^3}"
+  question="Simplify: $\left(\tfrac{3a^{-2}b^3}{c^2}\right)^{-2}$. Write your answer with positive exponents."
+  answer="\frac{a^4c^4}{9b^6}"
   answerForm="single-fraction"
-  answerDisplay="$\tfrac{8x^3y^6}{z^3}$"
-  hint="Raise the numerator and denominator to the third power, then use the Product to a Power Property on the numerator."
+  answerDisplay="$\tfrac{a^4c^4}{9b^6}$"
+  hint="Raise the numerator and the denominator to the power, use the Product to a Power and Power Properties, then rewrite every negative exponent as positive."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{4p^{-3}}{q^2}\right)^2$. Write your answer with positive exponents."
-  answer="\frac{16}{p^6q^4}"
+  question="Simplify: $\left(\tfrac{p^{-1}q^4}{r^{-4}}\right)^2$. Write your answer with positive exponents."
+  answer="\frac{q^8r^8}{p^2}"
   answerForm="single-fraction"
-  answerDisplay="$\tfrac{16}{p^6q^4}$"
-  hint="Raise the numerator and denominator to the power, then rewrite the negative exponent as positive: $4^2 = 16$."
+  answerDisplay="$\tfrac{q^8r^8}{p^2}$"
+  hint="Raise the numerator and the denominator to the power, use the Power Property, then rewrite every negative exponent as positive."
 >}}
 
 ### Use the definition of a negative exponent
 
 {{< fillin
-  question="Simplify: $a^{-2}$. Write your answer with a positive exponent."
-  answer="\frac{1}{a^2}"
+  question="Simplify: $r^{-3}$. Write your answer with a positive exponent."
+  answer="\frac{1}{r^3}"
   answerForm="single-fraction"
-  answerDisplay="$\tfrac{1}{a^2}$"
+  answerDisplay="$\tfrac{1}{r^3}$"
   hint="Use $a^{-n} = \tfrac{1}{a^n}$."
 >}}
 
 {{< fillin
-  question="Simplify: $10^{-3}$."
-  answer="\frac{1}{1000}"
+  question="Simplify: $10^{-5}$."
+  answer="\frac{1}{100000}"
   answerForm="fraction"
-  answerDisplay="$\tfrac{1}{1{,}000}$"
-  hint="Use $a^{-n} = \tfrac{1}{a^n}$, then simplify $10^3$."
+  answerDisplay="$\tfrac{1}{100{,}000}$"
+  hint="Use $a^{-n} = \tfrac{1}{a^n}$, then evaluate the power of $10$."
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{1}{c^{-5}}$. Write your answer with a positive exponent."
-  answer="c^5"
-  answerForm="polynomial"
-  answerDisplay="$c^5$"
+  question="Simplify: $\tfrac{1}{q^{-10}}$. Write your answer with a positive exponent."
+  answer="q^{10}"
+  answerForm="single-power"
+  answerDisplay="$q^{10}$"
   hint="Use $\tfrac{1}{a^{-n}} = a^n$."
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{1}{3^{-2}}$."
-  answer="9"
+  question="Simplify: $\tfrac{1}{10^{-3}}$."
+  answer="1000"
   answerForm="decimal"
-  hint="Use $\tfrac{1}{a^{-n}} = a^n$, then simplify $3^2$."
+  answerDisplay="$1{,}000$"
+  hint="Use $\tfrac{1}{a^{-n}} = a^n$, then evaluate the power of $10$."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{5}{8}\right)^{-2}$."
   answer="\frac{64}{25}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{64}{25}$"
-  hint="Take the reciprocal and change the sign of the exponent: $\left(\tfrac{8}{5}\right)^2$."
+  hint="Take the reciprocal of the base and change the sign of the exponent, then raise the numerator and the denominator to the power."
 >}}
 
 {{< fillin
@@ -1110,14 +1115,14 @@ integer.
   answer="\frac{a^2}{b^2}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{a^2}{b^2}$"
-  hint="Take the reciprocal of the base and change the sign of the exponent; squaring clears the negative sign."
+  hint="Take the reciprocal of the base and change the sign of the exponent, then raise the numerator and the denominator to the power."
 >}}
 
 {{< fillin
   question="Simplify: $a^3 \cdot a^{-3}$."
   answer="1"
   answerForm="decimal"
-  hint="Add the exponents: $3+(-3)=0$, and any non-zero base to the zero power is $1$."
+  hint="Same base — add the exponents, then simplify."
 >}}
 
 {{< fillin
@@ -1141,7 +1146,7 @@ integer.
   answer="\frac{1}{p}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{p}$"
-  hint="Add the exponents: $5-2-4$, then rewrite with a positive exponent."
+  hint="Same base — add the exponents, then rewrite with a positive exponent."
 >}}
 
 ### Use scientific notation
@@ -1151,7 +1156,7 @@ integer.
   answer="3.4 \times 10^5"
   answerForm="scientific-notation"
   answerDisplay="$3.4 \times 10^5$"
-  hint="Move the decimal point so one digit is to its left: $3.4$, then count the places it moved."
+  hint="Move the decimal point so the first factor is at least $1$ but less than $10$, then count the places it moved to find the exponent."
 >}}
 
 {{< fillin
@@ -1159,7 +1164,7 @@ integer.
   answer="4.1 \times 10^{-2}"
   answerForm="scientific-notation"
   answerDisplay="$4.1 \times 10^{-2}$"
-  hint="The number is between $0$ and $1$, so the exponent on $10$ is negative; the decimal moved $2$ places."
+  hint="Move the decimal point so the first factor is at least $1$ but less than $10$, then count the places it moved to find the exponent."
 >}}
 
 {{< fillin
@@ -1189,9 +1194,9 @@ integer.
   answer="20000000"
   answerForm="decimal"
   answerDisplay="$20{,}000{,}000$"
-  hint="Divide the coefficients and subtract the exponents: $6-(-1)$."
+  hint="Divide the coefficients and subtract the exponents of $10$, then write the result in decimal form."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.2: Properties of Exponents and Scientific Notation](https://openstax.org/books/intermediate-algebra-2e/pages/5-2-properties-of-exponents-and-scientific-notation) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz and media links; recreated the summary of exponent properties as a markdown table; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.2: Properties of Exponents and Scientific Notation](https://openstax.org/books/intermediate-algebra-2e/pages/5-2-properties-of-exponents-and-scientific-notation) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz, media links, and Self Check checklist; recreated the summary of exponent properties as a markdown table; condensed the Key Concepts summary into a Key terms list; corrected the base named in the $\tfrac{7^3}{7^5}$ worked example (the source says "more factors of 3"); converted selected practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final Practice block.</small>

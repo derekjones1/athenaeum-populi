@@ -84,7 +84,7 @@ Here are some additional examples.
 | :--- | :---: | :---: | :---: | :---: |
 | **Monomials** | $14$ | $8ab^2$ | $-9x^3y^5$ | $-13a$ |
 | Degree | $0$ | $3$ | $8$ | $1$ |
-| **Binomial** | $h+7$ | $7b^2-3b$ | $x^3y^2-25$ | $4n^3-8n^2$ |
+| **Binomial** | $h+7$ | $7b^2-3b$ | $x^2y^2-25$ | $4n^3-8n^2$ |
 | Degree of each term | $1,0$ | $2,1$ | $4,0$ | $3,2$ |
 | Degree of polynomial | $1$ | $2$ | $4$ | $3$ |
 | **Trinomial** | $x^2-12x+27$ | $9a^2+6ab+b^2$ | $6m^4-m^3n^2+8mn^5$ | $z^4+3z^2-1$ |
@@ -113,15 +113,17 @@ trinomial, or other polynomial. Then find the degree of each polynomial:
 | (e) | $15$ | $1$ | Monomial | $0$ | $0$ |
 
 {{< fillin
-  question="Determine whether $8y^3-7y^2-y-3$ is a monomial, binomial, trinomial, or other polynomial, then find its degree. Enter just the degree as a number."
+  question="Find the degree of the polynomial $8y^3-7y^2-y-3$. Enter the degree as a number."
   answer="3"
-  hint="It has four terms, so it's a polynomial (no special name). The degree is the highest exponent among its terms."
+  answerForm="decimal"
+  hint="Find the degree of each term, then take the highest."
 >}}
 
 {{< fillin
-  question="Determine the degree of the monomial $-3x^6y^3z$. Enter just the degree as a number."
+  question="Determine the degree of the monomial $-3x^6y^3z$. Enter the degree as a number."
   answer="10"
-  hint="The degree of a monomial in several variables is the sum of all its exponents: $6+3+1$."
+  answerForm="decimal"
+  hint="Add the exponents of all the variables; a variable with no written exponent has exponent $1$."
 >}}
 
 ## Add and subtract polynomials
@@ -155,7 +157,7 @@ $$
 {{< fillin
   question="Add or subtract: $12q^2+9q^2$."
   answer="21q^2"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$21q^2$"
   hint="These are like terms — add the coefficients."
 >}}
@@ -163,9 +165,9 @@ $$
 {{< fillin
   question="Add or subtract: $8mn^3-(-5mn^3)$."
   answer="13mn^3"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$13mn^3$"
-  hint="Subtracting a negative is the same as adding: $8+5$."
+  hint="Subtracting a negative is the same as adding its opposite; then combine the coefficients of the like terms."
 >}}
 
 Remember that like terms must have the same variables with the same
@@ -195,9 +197,9 @@ $$
 {{< fillin
   question="Simplify: $8y^2+3z^2-3y^2$."
   answer="5y^2 + 3z^2"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$5y^2+3z^2$"
-  hint="Only the $y^2$ terms are like terms."
+  hint="Like terms have the same variables with the same exponents; combine only those."
 >}}
 
 We can think of adding and subtracting polynomials as just adding and
@@ -219,7 +221,7 @@ $$
 {{< fillin
   question="Find the sum: $(7x^2-4x+5)+(x^2-7x+3)$."
   answer="8x^2 - 11x + 8"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$8x^2-11x+8$"
   hint="Group the like terms — the $x^2$ terms, the $x$ terms, and the constants — then combine each group."
 >}}
@@ -243,7 +245,7 @@ To subtract $a$ from $b$, we write it as $b-a$, placing the $b$ first.
 {{< fillin
   question="Find the difference: $(8x^2+3x-19)-(7x^2-14)$."
   answer="x^2 + 3x - 5"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$x^2+3x-5$"
   hint="Distribute the subtraction across the second polynomial, then combine like terms."
 >}}
@@ -262,10 +264,21 @@ $$
 {{< fillin
   question="Subtract $(a^2+5ab-6b^2)$ from $(a^2+b^2)$."
   answer="-5ab + 7b^2"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$-5ab+7b^2$"
   hint="Subtract $X$ from $Y$ means $Y-X$. Distribute the subtraction, then combine like terms."
 >}}
+
+**Example.** Find the sum: $(u^2-6uv+5v^2)+(3u^2+2uv)$.
+
+$$
+\begin{array}{lrcl}
+&&& (u^2-6uv+5v^2)+(3u^2+2uv) \\[4pt]
+\text{Distribute.} &&& u^2-6uv+5v^2+3u^2+2uv \\[4pt]
+\text{Rearrange the terms to put like terms together.} &&& u^2+3u^2-6uv+2uv+5v^2 \\[4pt]
+\text{Combine like terms.} &&& 4u^2-4uv+5v^2
+\end{array}
+$$
 
 When we add and subtract more than two polynomials, the process is the same.
 
@@ -284,9 +297,9 @@ $$
 {{< fillin
   question="Simplify: $(x^3-x^2y)-(xy^2+y^3)+(x^2y+xy^2)$."
   answer="x^3 - y^3"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$x^3-y^3$"
-  hint="Distribute across all the parentheses first, then group and combine like terms — most of them cancel."
+  hint="Distribute across all the parentheses first, minding the sign in front of each group, then group and combine like terms."
 >}}
 
 ## Evaluate a polynomial function for a given value
@@ -348,13 +361,15 @@ $$
 {{< fillin
   question="For the function $f(x)=3x^2+2x-15$, find $f(3)$."
   answer="18"
-  hint="Substitute $3$ for $x$: $f(3)=3(3)^2+2(3)-15$."
+  answerForm="decimal"
+  hint="Substitute $3$ for $x$ in every term, then simplify using the order of operations: exponents first, then multiplication, then addition and subtraction."
 >}}
 
 {{< fillin
   question="For the function $f(x)=3x^2+2x-15$, find $f(-5)$."
   answer="50"
-  hint="Substitute $-5$ for $x$: $f(-5)=3(-5)^2+2(-5)-15$."
+  answerForm="decimal"
+  hint="Substitute $-5$ for $x$ in every term, keeping it in parentheses so the square applies to the sign too, then simplify."
 >}}
 
 The polynomial functions similar to the one in the next example are used in
@@ -379,15 +394,17 @@ $$
 After $2$ seconds, the height of the ball is $186$ feet.
 
 {{< fillin
-  question="The polynomial function $h(t)=-16t^2+150$ gives the height of a stone $t$ seconds after it is dropped from a 150-foot tall cliff. Find the height after $t=0$ seconds (the initial height of the object)."
+  question="The polynomial function $h(t)=-16t^2+150$ gives the height of a stone $t$ seconds after it is dropped from a 150-foot tall cliff. Find the height, in feet, after $t=0$ seconds (the initial height of the object)."
   answer="150"
-  hint="Substitute $0$ for $t$: only the constant term survives."
+  answerForm="decimal"
+  hint="Substitute $0$ for $t$ and simplify using the order of operations."
 >}}
 
 {{< fillin
-  question="The polynomial function $h(t)=-16t^2+175$ gives the height of a ball $t$ seconds after it is dropped from a 175-foot tall bridge. Find the height after $t=3$ seconds."
+  question="The polynomial function $h(t)=-16t^2+175$ gives the height of a ball $t$ seconds after it is dropped from a 175-foot tall bridge. Find the height, in feet, after $t=3$ seconds."
   answer="31"
-  hint="Substitute $3$ for $t$: $h(3)=-16(3)^2+175$."
+  answerForm="decimal"
+  hint="Substitute $3$ for $t$, square it first, then multiply by $-16$ and add the constant."
 >}}
 
 ## Add and subtract polynomial functions
@@ -442,6 +459,7 @@ $$
 & g(3) &=& 3^2-4(3)-3 \\[4pt]
 & g(3) &=& -6 \\[4pt]
 \text{Find } (f+g)(3). & (f+g)(x) &=& f(x)+g(x) \\[4pt]
+& (f+g)(3) &=& f(3)+g(3) \\[4pt]
 \text{Substitute } f(3)=19 \text{ and } g(3)=-6. & (f+g)(3) &=& 19+(-6) \\[4pt]
 & (f+g)(3) &=& 13
 \end{array}
@@ -473,7 +491,7 @@ $$
 {{< fillin
   question="For functions $f(x)=2x^2-4x+3$ and $g(x)=x^2-2x-6$, find $(f+g)(x)$."
   answer="3x^2 - 6x - 3"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$3x^2-6x-3$"
   hint="Add the two polynomials and combine like terms."
 >}}
@@ -481,6 +499,7 @@ $$
 {{< fillin
   question="For functions $f(x)=2x^2-4x+3$ and $g(x)=x^2-2x-6$, find $(f-g)(-2)$."
   answer="17"
+  answerForm="decimal"
   hint="First find $(f-g)(x)$ by distributing the subtraction and combining like terms, then substitute $x=-2$."
 >}}
 
@@ -490,7 +509,8 @@ $$
 one variable. **polynomial** — a monomial, or two or more terms combined by
 addition or subtraction. **binomial** — a polynomial with exactly two terms.
 **trinomial** — a polynomial with exactly three terms. **degree of a term** —
-the sum of the exponents of its variables. **degree of a polynomial** — the
+the sum of the exponents of its variables. **degree of a constant** — the
+degree of any constant, which is $0$. **degree of a polynomial** — the
 highest degree of all its terms. **standard form of a polynomial** — a
 polynomial written with terms in descending order of degree. **polynomial
 function** — a function whose range values are defined by a polynomial.
@@ -511,15 +531,16 @@ other polynomial
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="What is the degree of $47x^5-17x^2y^3+y^2$?"
+  question="What is the degree of $47x^5-17x^2y^3+y^2$? Enter the degree as a number."
   answer="5"
-  hint="Add the exponents within each term — $47x^5$ has degree $5$ and $-17x^2y^3$ has degree $2+3=5$ — then take the highest."
+  answerForm="decimal"
+  hint="Find each term's degree by adding the exponents of its variables, then take the highest."
 >}}
 
 {{< multiplechoice
   question="Is $5c^3+11c^2-c-8$ a monomial, binomial, trinomial, or other polynomial?"
   answer="other polynomial"
-  hint="Count the terms — four terms has no special name of its own."
+  hint="Count the terms separated by addition or subtraction, then recall which numbers of terms have special names."
 >}}
 other polynomial
 trinomial
@@ -528,9 +549,10 @@ monomial
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="What is the degree of $5c^3+11c^2-c-8$?"
+  question="What is the degree of $5c^3+11c^2-c-8$? Enter the degree as a number."
   answer="3"
-  hint="The degree of a polynomial is the highest exponent among all of its terms."
+  answerForm="decimal"
+  hint="Find the degree of each term, then take the highest."
 >}}
 
 {{< multiplechoice
@@ -545,15 +567,16 @@ monomial
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="What is the degree of $\tfrac{5}{9}ab+\tfrac{1}{3}b$?"
+  question="What is the degree of $\tfrac{5}{9}ab+\tfrac{1}{3}b$? Enter the degree as a number."
   answer="2"
-  hint="The first term $\tfrac{5}{9}ab$ has degree $1+1=2$; the second term has degree $1$."
+  answerForm="decimal"
+  hint="A term's degree is the sum of its variables' exponents, not its coefficient; find each term's degree and take the highest."
 >}}
 
 {{< multiplechoice
   question="Is $4$ a monomial, binomial, trinomial, or other polynomial?"
   answer="monomial"
-  hint="A single term, even one with no variable, is a monomial."
+  hint="Count the terms; a constant on its own counts as a term."
 >}}
 trinomial
 other polynomial
@@ -562,9 +585,10 @@ monomial
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="What is the degree of the constant $4$?"
+  question="What is the degree of $4$? Enter the degree as a number."
   answer="0"
-  hint="A constant with no variable factor has degree $0$."
+  answerForm="decimal"
+  hint="Recall the special case in the definition of degree: a monomial with no variable."
 >}}
 
 {{< multiplechoice
@@ -579,9 +603,10 @@ trinomial
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="What is the degree of $4pq+17$?"
+  question="What is the degree of $4pq+17$? Enter the degree as a number."
   answer="2"
-  hint="The term $4pq$ has degree $1+1=2$; the constant term has degree $0$."
+  answerForm="decimal"
+  hint="Add the exponents of the variables in each term (an unwritten exponent is $1$), then take the highest."
 >}}
 
 ### Add and subtract polynomials
@@ -589,7 +614,7 @@ trinomial
 {{< fillin
   question="Add: $(x^2+6x+8)+(-4x^2+11x-9)$."
   answer="-3x^2 + 17x - 1"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$-3x^2+17x-1$"
   hint="Drop the parentheses, group the like terms together, then combine each group."
 >}}
@@ -597,17 +622,17 @@ trinomial
 {{< fillin
   question="Find the difference: $(a^2+8a+5)-(a^2-3a+2)$."
   answer="11a + 3"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$11a+3$"
-  hint="Distribute the subtraction across the second polynomial — the $a^2$ terms will cancel."
+  hint="Distribute the subtraction to every term of the second polynomial, then combine like terms."
 >}}
 
 {{< fillin
   question="Subtract $(9x^2+2)$ from $(12x^2-x+6)$."
   answer="3x^2 - x + 4"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$3x^2-x+4$"
-  hint="Subtract $X$ from $Y$ means $Y-X$: write $(12x^2-x+6)-(9x^2+2)$, then combine like terms."
+  hint="Subtract $X$ from $Y$ means $Y-X$, so the polynomial named second is written first. Then distribute the subtraction and combine like terms."
 >}}
 
 ### Evaluate a polynomial function for a given value
@@ -615,26 +640,30 @@ trinomial
 {{< fillin
   question="For the function $f(x)=8x^2-3x+2$, find $f(5)$."
   answer="187"
-  hint="Substitute $5$ for $x$: $f(5)=8(5)^2-3(5)+2$."
+  answerForm="decimal"
+  hint="Substitute $5$ for $x$ in every term, then simplify using the order of operations."
 >}}
 
 {{< fillin
   question="For the function $f(x)=8x^2-3x+2$, find $f(-2)$."
   answer="40"
-  hint="Substitute $-2$ for $x$: $f(-2)=8(-2)^2-3(-2)+2$."
+  answerForm="decimal"
+  hint="Substitute $-2$ for $x$ in every term, keeping it in parentheses so the square applies to the sign too, then simplify."
 >}}
 
 {{< fillin
   question="For the function $f(x)=8x^2-3x+2$, find $f(0)$."
   answer="2"
-  hint="Substitute $0$ for $x$ — only the constant term survives."
+  answerForm="decimal"
+  hint="Substitute $0$ for $x$ in every term, then simplify."
 >}}
 
 {{< fillin
-  question="A manufacturer's revenue from selling speakers at a cost of $p$ dollars each is given by the polynomial function $R(p)=-4p^2+420p$. Find the revenue received when $p=60$."
+  question="A manufacturer's revenue from selling speakers at a cost of $p$ dollars each is given by the polynomial function $R(p)=-4p^2+420p$. Find the revenue received, in dollars, when $p=60$."
   answer="10800"
+  answerForm="decimal"
   answerDisplay="$10{,}800$"
-  hint="Substitute $60$ for $p$: $R(60)=-4(60)^2+420(60)$."
+  hint="Substitute $60$ for $p$ in both terms, square first, then multiply and add."
 >}}
 
 ### Add and subtract polynomial functions
@@ -642,7 +671,7 @@ trinomial
 {{< fillin
   question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f+g)(x)$."
   answer="7x^2 + 4x + 4"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$7x^2+4x+4$"
   hint="Add the two polynomials and combine like terms."
 >}}
@@ -650,13 +679,14 @@ trinomial
 {{< fillin
   question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f+g)(2)$."
   answer="40"
+  answerForm="decimal"
   hint="First find $(f+g)(x)$ by adding the polynomials, then substitute $x=2$ — or evaluate $f(2)$ and $g(2)$ separately and add the results."
 >}}
 
 {{< fillin
   question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f-g)(x)$."
   answer="-3x^2 - 12x - 2"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$-3x^2-12x-2$"
   hint="Distribute the subtraction across $g(x)$, then combine like terms."
 >}}
@@ -664,9 +694,10 @@ trinomial
 {{< fillin
   question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f-g)(-3)$."
   answer="7"
+  answerForm="decimal"
   hint="First find $(f-g)(x)$ by distributing the subtraction and combining like terms, then substitute $x=-3$."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.1: Add and Subtract Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-1-add-and-subtract-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz and media links; recreated the polynomial-classification tables as markdown tables; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.1: Add and Subtract Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-1-add-and-subtract-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz, media links, and Self Check checklist; recreated the polynomial-classification tables as markdown tables; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking only the degree of one classify-and-find-the-degree polynomial; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
