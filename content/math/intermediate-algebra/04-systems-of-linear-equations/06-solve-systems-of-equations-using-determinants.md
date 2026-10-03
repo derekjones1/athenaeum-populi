@@ -53,13 +53,15 @@ $$\begin{vmatrix} -3 & -4 \\ -2 & 0 \end{vmatrix} = -3(0)-(-2)(-4) = 0-8 = -8.$$
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} 5 & -3 \\ 2 & -4 \end{vmatrix}$."
   answer="-14"
-  hint="Subtract the product of the diagonals going the other way from the product of the main diagonal: $5(-4) - 2(-3)$."
+  answerForm="decimal"
+  hint="Multiply down the main diagonal, then subtract the product of the other diagonal: $ad-bc$."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} -1 & 3 \\ -2 & 4 \end{vmatrix}$."
   answer="2"
-  hint="Subtract the products of the diagonals: $(-1)(4) - (-2)(3)$."
+  answerForm="decimal"
+  hint="Multiply down the main diagonal, then subtract the product of the other diagonal: $ad-bc$."
 >}}
 
 ## Evaluate the determinant of a 3 × 3 matrix
@@ -109,12 +111,14 @@ $$\text{minor of } c_2 = \begin{vmatrix} 4 & -2 \\ -2 & -4 \end{vmatrix} = 4(-4)
 {{< fillin
   question="For the determinant $\begin{vmatrix} 1 & -1 & 4 \\ 0 & 2 & -1 \\ -2 & -3 & 3 \end{vmatrix}$, find and evaluate the minor of $a_1$."
   answer="3"
+  answerForm="decimal"
   hint="Eliminate the first row and first column, then evaluate the $2\times 2$ determinant that remains."
 >}}
 
 {{< fillin
   question="For the determinant $\begin{vmatrix} -2 & -1 & 0 \\ 3 & 0 & -1 \\ -1 & -2 & 3 \end{vmatrix}$, find and evaluate the minor of $b_3$."
   answer="2"
+  answerForm="decimal"
   hint="Eliminate the third row and second column, then evaluate the $2\times 2$ determinant that remains."
 >}}
 
@@ -146,12 +150,14 @@ $$= 2(-4-0)+3(-6-0)-1(-3-(-2)) = 2(-4)+3(-6)-1(-1) = -8-18+1 = -25.$$
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} 3 & -2 & 4 \\ 0 & -1 & -2 \\ 2 & 3 & -1 \end{vmatrix}$ by expanding by minors along the first row."
   answer="37"
+  answerForm="decimal"
   hint="$a_1 \begin{vmatrix} b_2 & c_2 \\ b_3 & c_3 \end{vmatrix} - b_1\begin{vmatrix} a_2 & c_2 \\ a_3 & c_3 \end{vmatrix} + c_1\begin{vmatrix} a_2 & b_2 \\ a_3 & b_3 \end{vmatrix}$"
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} 3 & -2 & -2 \\ 2 & -1 & 4 \\ -1 & 0 & -3 \end{vmatrix}$ by expanding by minors along the first row."
   answer="7"
+  answerForm="decimal"
   hint="$a_1 \begin{vmatrix} b_2 & c_2 \\ b_3 & c_3 \end{vmatrix} - b_1\begin{vmatrix} a_2 & c_2 \\ a_3 & c_3 \end{vmatrix} + c_1\begin{vmatrix} a_2 & b_2 \\ a_3 & b_3 \end{vmatrix}$"
 >}}
 
@@ -188,12 +194,14 @@ $$= -3(3-12)+0(-12-(-15))-2(-16-(-5)) = -3(-9)+0(3)-2(-11) = 27+0+22 = 49.$$
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} 2 & -1 & -3 \\ 0 & 3 & -4 \\ 3 & -4 & -3 \end{vmatrix}$ by expanding by minors."
   answer="-11"
+  answerForm="decimal"
   hint="Pick a row or column that makes the arithmetic easier, and watch the $+\,-\,+$ sign pattern."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} -2 & -1 & -3 \\ -1 & 2 & 2 \\ 4 & -4 & 0 \end{vmatrix}$ by expanding by minors."
   answer="-12"
+  answerForm="decimal"
   hint="Pick a row or column that makes the arithmetic easier, and watch the $+\,-\,+$ sign pattern."
 >}}
 
@@ -256,14 +264,17 @@ both original equations confirms $(-2,0)$ is the solution to the system.
 
 {{< fillin
   question="Solve using Cramer's Rule: $\left\{\begin{array}{l} 3x+y=-3 \\ 2x+3y=6 \end{array}\right.$ Enter the solution as an ordered pair."
-  answer="(-15/7, 24/7)"
-  hint="Evaluate $D=\begin{vmatrix}3&1\\2&3\end{vmatrix}$, $D_x=\begin{vmatrix}-3&1\\6&3\end{vmatrix}$, and $D_y=\begin{vmatrix}3&-3\\2&6\end{vmatrix}$, then form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
+  answer="(-\frac{15}{7}, \frac{24}{7})"
+  answerForm="lowest-terms"
+  answerDisplay="$\left(-\tfrac{15}{7}, \tfrac{24}{7}\right)$"
+  hint="Form $D$ from the coefficients, and $D_x$ and $D_y$ by putting the constants in place of the $x$ or the $y$ coefficients; then $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$, each in lowest terms."
 >}}
 
 {{< fillin
   question="Solve using Cramer's Rule: $\left\{\begin{array}{l} -x+y=2 \\ 2x+y=-4 \end{array}\right.$ Enter the solution as an ordered pair."
   answer="(-2, 0)"
-  hint="Evaluate $D=\begin{vmatrix}-1&1\\2&1\end{vmatrix}$, $D_x=\begin{vmatrix}2&1\\-4&1\end{vmatrix}$, and $D_y=\begin{vmatrix}-1&2\\2&-4\end{vmatrix}$, then form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
+  answerForm="decimal"
+  hint="Form $D$ from the coefficients, and $D_x$ and $D_y$ by putting the constants in place of the $x$ or the $y$ coefficients; then $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
 >}}
 
 To solve a system of three equations with three variables with Cramer's
@@ -302,8 +313,8 @@ $$D_x = 5(-4-3)-0(10-12)+3(-5-8) = 5(-7)-0+3(-13) = -35-0-39 = -74.$$
 Evaluate the determinant $D_y$. Use the constants to replace the
 coefficients of $y$, then expand by minors using column $2$:
 
-$$D_y = \begin{vmatrix} 3 & 5 & 4 \\ 5 & 0 & 1 \\ 2 & 3 & -2 \end{vmatrix} = -5\begin{vmatrix} 5 & 1 \\ 2 & -2 \end{vmatrix} + 0\begin{vmatrix} 5 & 4 \\ 3 & -2 \end{vmatrix} - 3\begin{vmatrix} 3 & 4 \\ 5 & 1 \end{vmatrix}$$
-$$D_y = -5(-10-2)+0(-10-12)-3(3-20) = -5(-12)+0(-22)-3(-17) = 60+0+51 = 111.$$
+$$D_y = \begin{vmatrix} 3 & 5 & 4 \\ 5 & 0 & 1 \\ 2 & 3 & -2 \end{vmatrix} = -5\begin{vmatrix} 5 & 1 \\ 2 & -2 \end{vmatrix} + 0\begin{vmatrix} 3 & 4 \\ 2 & -2 \end{vmatrix} - 3\begin{vmatrix} 3 & 4 \\ 5 & 1 \end{vmatrix}$$
+$$D_y = -5(-10-2)+0(-6-8)-3(3-20) = -5(-12)+0(-14)-3(-17) = 60+0+51 = 111.$$
 
 Evaluate the determinant $D_z$. Use the constants to replace the
 coefficients of $z$, then expand by minors using column $3$:
@@ -321,12 +332,14 @@ a solution to all three original equations, to you.
 {{< fillin
   question="Solve the system of equations using Cramer's Rule: $\left\{\begin{array}{l} 3x+8y+2z=-5 \\ 2x+5y-3z=0 \\ x+2y-2z=-1 \end{array}\right.$ Enter the solution as an ordered triple."
   answer="(-9, 3, -1)"
+  answerForm="decimal"
   hint="Evaluate $D$ using the coefficients of $x, y, z$, then $D_x$, $D_y$, $D_z$ by replacing one column of coefficients at a time with the constants $-5, 0, -1$."
 >}}
 
 {{< fillin
   question="Solve the system of equations using Cramer's Rule: $\left\{\begin{array}{l} 3x+y-6z=-3 \\ 2x+6y+3z=0 \\ 3x+2y-3z=-6 \end{array}\right.$ Enter the solution as an ordered triple."
   answer="(-6, 3, -2)"
+  answerForm="decimal"
   hint="Evaluate $D$ using the coefficients of $x, y, z$, then $D_x$, $D_y$, $D_z$ by replacing one column of coefficients at a time with the constants $-3, 0, -6$."
 >}}
 
@@ -350,6 +363,12 @@ system is inconsistent and there is no solution.
   | $D=0$ and $D_x, D_y,$ and $D_z$ are not all zero | inconsistent | no solution |
 {{< /callout >}}
 
+For a system of three equations, the first row of the table needs one more
+check: the system $x+y+z=1$, $x+y+z=2$, $x+y+z=3$
+has $D=D_x=D_y=D_z=0$ but no solution at all. So when all four determinants
+are zero, use elimination to decide whether the system is dependent or
+inconsistent.
+
 In the next example, we will use the values of the determinants to find the
 solution of the system.
 
@@ -366,8 +385,8 @@ system is dependent or inconsistent.
 
 $$D_x = \begin{vmatrix} 4 & 3 \\ 3 & -6 \end{vmatrix} = -24-9 = -33.$$
 
-Since all the determinants are not zero, the system is inconsistent. There
-is no solution.
+Since $D_x$ is not zero, the determinants are not all zero, so the system is
+inconsistent. There is no solution.
 
 {{< multiplechoice
   question="Use Cramer's Rule to solve $\left\{\begin{array}{l} 4x-3y=8 \\ 8x-6y=14 \end{array}\right.$"
@@ -385,7 +404,7 @@ no solution
   hint="Rewrite the first equation as $x+3y=4$, then evaluate $D$, $D_x$, and $D_y$."
   answer="infinitely many solutions"
 >}}
-(4, 0)
+(-4, 0)
 infinitely many solutions
 no solution
 (0, 4)
@@ -457,38 +476,44 @@ zero.
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} -4 & 8 \\ -3 & 5 \end{vmatrix}$."
   answer="4"
-  hint="Subtract the products of the diagonals: $(-4)(5) - (-3)(8)$."
+  answerForm="decimal"
+  hint="Multiply down the main diagonal, then subtract the product of the other diagonal: $ad-bc$."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} -2 & 0 \\ 7 & -5 \end{vmatrix}$."
   answer="10"
-  hint="Subtract the products of the diagonals: $(-2)(-5) - 7(0)$."
+  answerForm="decimal"
+  hint="Multiply down the main diagonal, then subtract the product of the other diagonal: $ad-bc$."
 >}}
 
 ### Evaluate the determinant of a $3 \times 3$ matrix
 
 {{< fillin
-  question="Evaluate the determinant $\begin{vmatrix} 4 & -1 & -2 \\ -3 & -2 & 1 \\ -2 & -5 & 7 \end{vmatrix}$ by expanding by minors."
+  question="Evaluate the determinant $\begin{vmatrix} 4 & -1 & -2 \\ -3 & -2 & 1 \\ -2 & -5 & 7 \end{vmatrix}$ by expanding by minors along the first row."
   answer="-77"
-  hint="Expand along the first row: $4\begin{vmatrix} -2 & 1 \\ -5 & 7 \end{vmatrix} - (-1)\begin{vmatrix} -3 & 1 \\ -2 & 7 \end{vmatrix} + (-2)\begin{vmatrix} -3 & -2 \\ -2 & -5 \end{vmatrix}$."
+  answerForm="decimal"
+  hint="Multiply each first-row entry by its minor, and combine the three products with the signs $+\,-\,+$."
 >}}
 
 {{< fillin
-  question="Evaluate the determinant $\begin{vmatrix} 1 & 3 & -2 \\ 5 & -6 & 4 \\ 0 & -2 & -1 \end{vmatrix}$ by expanding by minors."
+  question="Evaluate the determinant $\begin{vmatrix} 1 & 3 & -2 \\ 5 & -6 & 4 \\ 0 & -2 & -1 \end{vmatrix}$ by expanding by minors along the first row."
   answer="49"
-  hint="Pick the row or column with the most zeros to make the arithmetic easier, and watch the sign pattern."
+  answerForm="decimal"
+  hint="Multiply each first-row entry by its minor, and combine the three products with the signs $+\,-\,+$."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} 4 & -1 & 3 \\ 3 & -2 & 2 \\ -1 & 0 & 4 \end{vmatrix}$ by expanding by minors."
   answer="-24"
+  answerForm="decimal"
   hint="Expanding along the row or column containing the $0$ saves a step."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix} 2 & -4 & -3 \\ 5 & -1 & -4 \\ 3 & 2 & 0 \end{vmatrix}$ by expanding by minors."
   answer="25"
+  answerForm="decimal"
   hint="Expanding along the row or column containing the $0$ saves a step."
 >}}
 
@@ -497,18 +522,21 @@ zero.
 {{< fillin
   question="Solve using Cramer's Rule: $\left\{\begin{array}{l} x-2y=-5 \\ 2x-3y=-4 \end{array}\right.$ Enter the solution as an ordered pair."
   answer="(7, 6)"
-  hint="Evaluate $D=\begin{vmatrix}1&-2\\2&-3\end{vmatrix}$, $D_x=\begin{vmatrix}-5&-2\\-4&-3\end{vmatrix}$, and $D_y=\begin{vmatrix}1&-5\\2&-4\end{vmatrix}$, then form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
+  answerForm="decimal"
+  hint="Form $D$ from the coefficients, and $D_x$ and $D_y$ by putting the constants in place of the $x$ or the $y$ coefficients; then $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
 >}}
 
 {{< fillin
   question="Solve using Cramer's Rule: $\left\{\begin{array}{l} x-3y=-9 \\ 2x+5y=4 \end{array}\right.$ Enter the solution as an ordered pair."
   answer="(-3, 2)"
-  hint="Evaluate $D=\begin{vmatrix}1&-3\\2&5\end{vmatrix}$, $D_x=\begin{vmatrix}-9&-3\\4&5\end{vmatrix}$, and $D_y=\begin{vmatrix}1&-9\\2&4\end{vmatrix}$, then form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
+  answerForm="decimal"
+  hint="Form $D$ from the coefficients, and $D_x$ and $D_y$ by putting the constants in place of the $x$ or the $y$ coefficients; then $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
 >}}
 
 {{< fillin
   question="Solve the system of equations using Cramer's Rule: $\left\{\begin{array}{l} 4x-3y+z=7 \\ 2x-5y-4z=3 \\ 3x-2y-2z=-7 \end{array}\right.$ Enter the solution as an ordered triple."
   answer="(-3, -5, 4)"
+  answerForm="decimal"
   hint="Evaluate $D$ using the coefficients of $x, y, z$, then $D_x$, $D_y$, $D_z$ by replacing one column of coefficients at a time with the constants $7, 3, -7$."
 >}}
 
@@ -525,7 +553,7 @@ no solution
 
 {{< multiplechoice
   question="Use Cramer's Rule to solve $\left\{\begin{array}{l} x-2y+3z=1 \\ x+y-3z=7 \\ 3x-4y+5z=7 \end{array}\right.$"
-  hint="Evaluate $D$ using the coefficients of $x,y,z$. If $D=0$, check whether $D_x$, $D_y$, or $D_z$ is nonzero."
+  hint="Evaluate $D$ using the coefficients of $x,y,z$. If $D=0$, evaluate $D_x$, $D_y$, and $D_z$; if they are all zero too, use elimination to see whether the equations agree."
   answer="infinitely many solutions"
 >}}
 no solution
@@ -535,12 +563,6 @@ infinitely many solutions
 {{< /multiplechoice >}}
 
 ### Solve applications using determinants
-
-{{< fillin
-  question="To test whether the points $(0,-5)$, $(-2,-2)$, and $(2,-8)$ are collinear, evaluate the determinant $\begin{vmatrix} 0 & -5 & 1 \\ -2 & -2 & 1 \\ 2 & -8 & 1 \end{vmatrix}$."
-  answer="0"
-  hint="Expand along the first row; the points are collinear exactly when this determinant comes out $0$."
->}}
 
 {{< multiplechoice
   question="Determine whether the points $(0,-5)$, $(-2,-2)$, and $(2,-8)$ are collinear."
@@ -562,4 +584,4 @@ yes
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.6: Solve Systems of Equations Using Determinants](https://openstax.org/books/intermediate-algebra-2e/pages/4-6-solve-systems-of-equations-using-determinants) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented determinants and the sign-pattern chart with KaTeX vmatrix notation instead of the source's crossed-out row/column diagrams, and its step tables as single display equality chains; recreated the Dependent and Inconsistent Systems table as a markdown table; omitted the Be Prepared quiz, Media links, and self-check; converted the source Try Its into interactive exercises with instant feedback, reducing multi-part items to a single part each; and adapted selected end-of-section Practice Makes Perfect exercises into the section's interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.6: Solve Systems of Equations Using Determinants](https://openstax.org/books/intermediate-algebra-2e/pages/4-6-solve-systems-of-equations-using-determinants) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented determinants and the sign-pattern chart with KaTeX vmatrix notation instead of the source's crossed-out row/column diagrams, and its step tables as single display equality chains; recreated the Dependent and Inconsistent Systems table as a markdown table; named the $y$ coefficients of the two-equation example as $1$ and $-2$ (the source's step says "1 and 2"); corrected the minor of the $0$ entry in the three-equation example's $D_y$ expansion (the source prints $\begin{vmatrix} 5 & 4 \\ 3 & -2 \end{vmatrix}$, but eliminating the second row and column leaves $\begin{vmatrix} 3 & 4 \\ 2 & -2 \end{vmatrix}$; the term is multiplied by $0$, so $D_y=111$ is unchanged); added a note after the table that for three equations all four determinants being zero does not by itself mean infinitely many solutions, and reworded the inconsistent example's "Since all the determinants are not zero" as "not all zero"; omitted the Be Prepared quiz, the Key Concepts summary (it repeats the definition boxes), Media links, the Writing Exercises, and self-check, and gathered the section's bolded terms into a Key terms list; converted the source Try Its into interactive exercises with instant feedback, reducing multi-part items to a single part each; and adapted selected end-of-section Practice Makes Perfect exercises into the section's interactive Practice block.</small>

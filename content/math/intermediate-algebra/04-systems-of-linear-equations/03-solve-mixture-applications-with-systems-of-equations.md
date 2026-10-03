@@ -80,7 +80,8 @@ science center sold 521 adult tickets and 842 child tickets.
 {{< fillin
   question="The ticket office at the zoo sold 553 tickets one day. The receipts totaled \$3,936. How many \$9 adult and how many \$6 child tickets were sold? Enter the number of adult tickets."
   answer="206"
-  hint="Let a be the number of adult tickets and c the number of child tickets, so $a + c = 553$. Set $9a + 6c$ equal to 3,936, then solve the system for a."
+  answerForm="decimal"
+  hint="Let $a$ and $c$ be the numbers of adult and child tickets. The Number column gives one equation and the Total Value column (count times price) gives the other; eliminate $c$ and solve for $a$."
 >}}
 
 In the next example we solve a coin problem. Now that we can work with
@@ -117,7 +118,8 @@ $$
 & 0.05n + 0.10(2n - 9) &=& 8.10 \\[4pt]
 \text{Distribute.} & 0.05n + 0.2n - 0.90 &=& 8.10 \\[4pt]
 \text{Combine like terms.} & 0.25n - 0.90 &=& 8.10 \\[4pt]
-\text{Solve.} & n &=& 36
+\text{Add } 0.90 \text{ to both sides.} & 0.25n &=& 9.00 \\[4pt]
+\text{Divide both sides by } 0.25. & n &=& 36
 \end{array}
 $$
 
@@ -131,7 +133,8 @@ nickels and 63 dimes.
 {{< fillin
   question="Matilda has a handful of quarters and dimes, with a total value of \$8.55. The number of quarters is 3 more than twice the number of dimes. How many dimes does she have?"
   answer="13"
-  hint="Let q be the number of quarters and d the number of dimes, so $q = 2d + 3$. Set $0.25q + 0.10d$ equal to 8.55, substitute for q, and solve for d."
+  answerForm="decimal"
+  hint="Let $q$ and $d$ be the numbers of quarters and dimes. Translate the sentence comparing the counts into one equation and the total value into the other, then substitute for $q$ and solve for $d$."
 >}}
 
 Some mixture applications involve combining foods rather than coins or
@@ -179,7 +182,8 @@ Carson should mix 16 pounds of nuts with 4 pounds of chocolate chips.
 {{< fillin
   question="Sammy has most of the ingredients he needs to make a large batch of chili. He needs a total of 20 pounds combined of beans and ground beef and has a budget of \$3 a pound. The price of beans is \$1 a pound and the price of ground beef is \$5 a pound. How many pounds of ground beef should he purchase?"
   answer="10"
-  hint="Let b be the pounds of beans and g the pounds of ground beef, so $b + g = 20$. Set $1b + 5g$ equal to 20(3), then solve the system for g."
+  answerForm="decimal"
+  hint="Let $b$ and $g$ be the pounds of beans and ground beef. The pounds give one equation; for the other, the cost of the beans plus the cost of the beef equals the cost of the whole batch. Eliminate $b$ and solve for $g$."
 >}}
 
 Another mixture application relates to concentrated cleaning supplies and
@@ -236,7 +240,8 @@ the $25\%$ solution with 120 ml of the $50\%$ solution.
 {{< fillin
   question="Anatole needs to make 250 milliliters of a 25% solution of hydrochloric acid for a lab experiment. The lab only has a 10% solution and a 40% solution in the storeroom. How many milliliters of the 40% solution should he use to make the 25% solution?"
   answer="125"
-  hint="Let x be the ml of the 10% solution and y the ml of the 40% solution, so $x + y = 250$. Set $0.10x + 0.40y$ equal to 0.25(250), then solve the system for y."
+  answerForm="decimal"
+  hint="Let $x$ and $y$ be the milliliters of the 10% and 40% solutions. The volumes give one equation; for the other, the acid in each solution (volume times concentration) adds up to the acid in the mixture. Eliminate $x$ and solve for $y$."
 >}}
 
 ## Solve interest applications
@@ -292,9 +297,11 @@ matches $0.071(40{,}000) = 2{,}840$, and $32{,}800 + 7{,}200 = 40{,}000$. ✓
 Adnan should invest \$32,800 in the stock fund and \$7,200 in bonds.
 
 {{< fillin
-  question="Leon had \$50,000 to invest and hopes to earn 6.2% interest per year. He will put some of the money into a stock fund that earns 7% per year and the rest into a savings account that earns 2% per year. How much money should he put into the stock fund?"
+  question="Leon had \$50,000 to invest and hopes to earn 6.2% interest per year. He will put some of the money into a stock fund that earns 7% per year and the rest into a savings account that earns 2% per year. How much money, in dollars, should he put into the stock fund?"
   answer="42000"
-  hint="Let s be the amount in the stock fund and v the amount in savings, so $s + v = 50{,}000$. Set $0.07s + 0.02v$ equal to 0.062(50,000), then solve the system for s."
+  answerForm="decimal"
+  answerDisplay="\$42,000"
+  hint="Let $s$ and $v$ be the amounts in the stock fund and the savings account. The principals add to the total invested, and the interest from each account (principal times rate) adds to the interest hoped for on the total. Eliminate $v$ and solve for $s$."
 >}}
 
 The next example requires that we find the principal, given the amount of
@@ -331,7 +338,8 @@ $$
 & 0.105(-f + 21{,}540) + 0.059f &=& 1{,}669.68 \\[4pt]
 \text{Distribute.} & -0.105f + 2{,}261.70 + 0.059f &=& 1{,}669.68 \\[4pt]
 \text{Combine like terms.} & -0.046f + 2{,}261.70 &=& 1{,}669.68 \\[4pt]
-\text{Solve.} & f &=& 12{,}870
+\text{Subtract } 2{,}261.70 \text{ from both sides.} & -0.046f &=& -592.02 \\[4pt]
+\text{Divide both sides by } {-0.046}. & f &=& 12{,}870
 \end{array}
 $$
 
@@ -343,9 +351,11 @@ and $8{,}670 + 12{,}870 = 21{,}540$. ✓ The principal for Rosie's bank loan
 is \$8,670 and the principal for her federal loan is \$12,870.
 
 {{< fillin
-  question="Jill's Sandwich Shoppe owes \$65,200 on two business loans, one at 4.5% interest and the other at 7.2% interest. The total amount of interest owed last year was \$3,582. What was the principal for the loan at 7.2% interest?"
+  question="Jill's Sandwich Shoppe owes \$65,200 on two business loans, one at 4.5% interest and the other at 7.2% interest. The total amount of interest owed last year was \$3,582. What was the principal, in dollars, for the loan at 7.2% interest?"
   answer="24000"
-  hint="Let a be the principal at 4.5% and b the principal at 7.2%, so $a + b = 65{,}200$. Set $0.045a + 0.072b$ equal to 3,582, then solve the system for b."
+  answerForm="decimal"
+  answerDisplay="\$24,000"
+  hint="Let $a$ and $b$ be the principals at 4.5% and 7.2%. The principals add to the total owed, and the interest on each loan (principal times rate) adds to the total interest. Eliminate $a$ and solve for $b$."
 >}}
 
 ## Solve applications of cost and revenue functions
@@ -503,14 +513,17 @@ both the cost and the revenue are \$12,250.
 {{< fillin
   question="The manufacturer of a weight training bench spends \$15 to build each bench and sells them for \$32. The manufacturer also has fixed costs each month of \$25,500. Write the cost function $C(x)$ for producing $x$ benches."
   answer="15x+25500"
-  answerDisplay="$15x + 25{,}500$"
-  hint="The cost function is (cost per unit) times x, plus fixed costs."
+  answerForm="slope-intercept-form"
+  answerDisplay="$C(x) = 15x + 25{,}500$"
+  hint="The cost function is (cost per unit) times $x$, plus the fixed costs."
 >}}
 
 {{< fillin
   question="The manufacturer of a weight training bench spends \$120 to build each bench and sells them for \$170. The manufacturer also has fixed costs each month of \$150,000. How many benches must be sold to break even?"
   answer="3000"
-  hint="Set $120x + 150{,}000$ equal to $170x$ and solve for x."
+  answerForm="decimal"
+  answerDisplay="$3{,}000$ benches"
+  hint="Write the cost function and the revenue function, set them equal, and solve for $x$."
 >}}
 
 ## Key terms
@@ -535,45 +548,55 @@ where the cost and revenue functions are equal, $C(x) = R(x)$.
 {{< fillin
   question="The community fair sold 312 tickets on its first day for a total of \$2,204. Adult tickets cost \$12 and child tickets cost \$5. How many child tickets were sold?"
   answer="220"
-  hint="Let a be the number of adult tickets and c the number of child tickets, so $a + c = 312$. Set $12a + 5c$ equal to 2,204, then solve the system for c."
+  answerForm="decimal"
+  hint="Let $a$ and $c$ be the numbers of adult and child tickets. Write one equation from the number of tickets and one from the receipts (count times price), then eliminate $a$ and solve for $c$."
 >}}
 
 {{< fillin
   question="Sherri saves nickels and dimes in a coin purse for her daughter, with a total value of \$0.95. The number of nickels is two less than five times the number of dimes. How many dimes are in the purse?"
   answer="3"
-  hint="Let n be the number of nickels and d the number of dimes, so $n = 5d - 2$. Set $0.05n + 0.10d$ equal to 0.95, substitute for n, and solve for d."
+  answerForm="decimal"
+  hint="Let $n$ and $d$ be the numbers of nickels and dimes. Translate the sentence comparing the counts into one equation and the total value into the other, then substitute for $n$ and solve for $d$."
 >}}
 
 {{< fillin
   question="Joseph wants to make twelve pounds of a coffee blend costing \$6 a pound, using Ground Chicory at \$5 a pound and Jamaican Blue Mountain at \$9 a pound. How many pounds of Jamaican Blue Mountain coffee should he use?"
   answer="3"
-  hint="Let c be the pounds of Ground Chicory and j the pounds of Jamaican Blue Mountain, so $c + j = 12$. Set $5c + 9j$ equal to 72, then solve the system for j."
+  answerForm="decimal"
+  hint="Let $c$ and $j$ be the pounds of Ground Chicory and Jamaican Blue Mountain. The pounds give one equation; for the other, the value of each coffee (pounds times price) adds up to the value of the whole blend. Eliminate $c$ and solve for $j$."
 >}}
 
 {{< fillin
   question="A 90% antifreeze solution is to be mixed with a 75% antifreeze solution to make 360 liters of an 85% solution. How many liters of the 90% solution should be used?"
   answer="240"
-  hint="Let x be the liters of the 90% solution and y the liters of the 75% solution, so $x + y = 360$. Set $0.90x + 0.75y$ equal to 306, then solve the system for x."
+  answerForm="decimal"
+  hint="Let $x$ and $y$ be the liters of the 90% and 75% solutions. The volumes give one equation; for the other, the antifreeze in each solution (volume times concentration) adds up to the antifreeze in the mixture. Eliminate $y$ and solve for $x$."
 >}}
 
 ### Solve interest applications
 
 {{< fillin
-  question="Carol invested \$2,560 into two accounts, one paying 8% interest and the other paying 6% interest. She earned 7.25% interest on the total investment for the year. How much money did she put into the account paying 8% interest?"
+  question="Carol invested \$2,560 into two accounts, one paying 8% interest and the other paying 6% interest. She earned 7.25% interest on the total investment for the year. How much money, in dollars, did she put into the account paying 8% interest?"
   answer="1600"
-  hint="Let s be the amount in the account paying 8% and b the amount in the account paying 6%, so $s + b = 2{,}560$. Set $0.08s + 0.06b$ equal to 0.0725(2,560), then solve the system for s."
+  answerForm="decimal"
+  answerDisplay="\$1,600"
+  hint="Let $s$ and $b$ be the amounts in the accounts paying 8% and 6%. The principals add to the total invested, and the interest from each account (principal times rate) adds to the interest earned on the total. Eliminate $b$ and solve for $s$."
 >}}
 
 {{< fillin
-  question="Arnold invested \$64,000, part at 5.5% interest and the rest at 9% interest. He received \$4,500 in interest in one year. How much did he invest at 9%?"
+  question="Arnold invested \$64,000, part at 5.5% interest and the rest at 9% interest. He received \$4,500 in interest in one year. How much, in dollars, did he invest at 9%?"
   answer="28000"
-  hint="Let a be the amount invested at 5.5% and b the amount invested at 9%, so $a + b = 64{,}000$. Set $0.055a + 0.09b$ equal to 4,500, then solve the system for b."
+  answerForm="decimal"
+  answerDisplay="\$28,000"
+  hint="Let $a$ and $b$ be the amounts invested at 5.5% and 9%. The principals add to the total invested, and the interest from each amount (principal times rate) adds to the total interest. Eliminate $a$ and solve for $b$."
 >}}
 
 {{< fillin
-  question="Mark wants to invest \$10,000 to pay for his daughter's wedding next year. He will invest some in a CD that pays 12% interest and the rest in a savings account that pays 5% interest. How much should he invest in the savings account if he wants to earn \$1,095 in interest in one year?"
+  question="Mark wants to invest \$10,000 to pay for his daughter's wedding next year. He will invest some in a CD that pays 12% interest and the rest in a savings account that pays 5% interest. How much, in dollars, should he invest in the savings account if he wants to earn \$1,095 in interest in one year?"
   answer="1500"
-  hint="Let c be the amount in the CD and s the amount in savings, so $c + s = 10{,}000$. Set $0.12c + 0.05s$ equal to 1,095, then solve the system for s."
+  answerForm="decimal"
+  answerDisplay="\$1,500"
+  hint="Let $c$ and $s$ be the amounts in the CD and the savings account. The principals add to the total invested, and the interest from each account (principal times rate) adds to the interest he wants. Eliminate $c$ and solve for $s$."
 >}}
 
 ### Solve applications of cost and revenue functions
@@ -581,32 +604,37 @@ where the cost and revenue functions are equal, $C(x) = R(x)$.
 {{< fillin
   question="The manufacturer of a water bottle spends \$5 to build each bottle and sells them for \$10. The manufacturer also has fixed costs each month of \$6,500. Write the cost function $C(x)$ for producing $x$ bottles."
   answer="5x+6500"
-  answerDisplay="$5x + 6{,}500$"
-  hint="The cost function is (cost per unit) times x, plus fixed costs."
+  answerForm="slope-intercept-form"
+  answerDisplay="$C(x) = 5x + 6{,}500$"
+  hint="The cost function is (cost per unit) times $x$, plus the fixed costs."
 >}}
 
 {{< fillin
   question="Write the revenue function $R(x)$ for selling $x$ water bottles at \$10 each."
   answer="10x"
-  hint="The revenue function is (selling price per unit) times x."
+  answerForm="slope-intercept-form"
+  answerDisplay="$R(x) = 10x$"
+  hint="The revenue function is (selling price per unit) times $x$."
 >}}
 
 {{< graphplot
-  question="Graph the cost function $C(x) = 5x + 6{,}500$ and the revenue function $R(x) = 10x$ on the same grid to show the break-even point."
+  question="Graph the water bottle manufacturer's cost function and revenue function on the same grid to show the break-even point."
   ariaLabel="A blank grid with x from 0 to 2,000 water bottles and y from 0 to 20,000 dollars."
   answerDisplay="$C(x) = 5x + 6{,}500$ and $R(x) = 10x$"
-  hint="The cost line starts at $(0, 6{,}500)$ and climbs by 5 for every bottle; the revenue line starts at the origin and climbs by 10 for every bottle."
+  hint="For each function, find its value at $x = 0$ and at one more number of bottles, plot the two points, and draw the line through them."
   snap="100"
 >}}
 {"answer": {"system": [{"slope": 5, "intercept": 6500}, {"slope": 10, "intercept": 0}]}, "grid": {"xMin": 0, "xMax": 2000, "yMin": 0, "yMax": 20000, "xUnit": 0.18, "yUnit": 0.018, "xGridStep": 100, "yGridStep": 1000, "xTickStep": 200, "yTickStep": 2000}}
 {{< /graphplot >}}
 
 {{< fillin
-  question="The manufacturer of the water bottle above must sell how many bottles to break even?"
+  question="How many water bottles must the manufacturer sell to break even?"
   answer="1300"
-  hint="Set $5x + 6{,}500$ equal to $10x$ and solve for x."
+  answerForm="decimal"
+  answerDisplay="$1{,}300$ bottles"
+  hint="Set the cost function equal to the revenue function and solve for $x$."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.3: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-3-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the ticket/coin/mixture/investment/loan tables as markdown tables; wrote each system of equations and its elimination or substitution steps as display-math blocks; recreated the cost-and-revenue break-even graph with the site's coordinate-graph component; omitted the "Be Prepared" readiness quiz, the Media link, and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected items from the Section 4.3 Exercises ("Practice Makes Perfect") into a section-final interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.3: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-3-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: described the opening nickel-and-dime table in prose; recreated the ticket/coin/mixture/concentration/investment/loan tables as markdown tables, dropping the Time column (always 1) from the two interest tables; wrote each system of equations and its elimination or substitution steps as display-math blocks, and wrote out the checks the two interest examples leave to the reader; corrected three slips in the worked examples: the acid example's check, which prints 0.25(80) + 0.50(120) = 200 for the 80 ml of acid, the investment example's "b = the amount invested in stocks" (the bonds), and the loan example's "−f + 21.540" (21,540); redrew the cost-and-revenue break-even graph on a 0–100 by 0–15,000 window with each line labeled by its function; omitted the "Be Prepared" readiness quiz, the solution-mixing diagram, the Media link, the unselected Section 4.3 exercises (including the Writing Exercises), and the Self Check checklist; replaced the Key Concepts list with a Key terms list written for this page (the module has no glossary); converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, each asking for one of the quantities or one part; and adapted selected end-of-section exercises into the interactive Practice block, each asking for one of the two quantities, with the water-bottle exercise split into its four parts.</small>

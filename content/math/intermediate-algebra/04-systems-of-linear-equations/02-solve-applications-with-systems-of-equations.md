@@ -75,7 +75,8 @@ $-\tfrac{9}{2}$.
 {{< fillin
   question="The sum of two numbers is 10. One number is 4 less than the other. Find the smaller number."
   answer="3"
-  hint="Let m = the larger number and n = the smaller number, so $m + n = 10$ and $n = m - 4$. Substitute and solve for n."
+  answerForm="decimal"
+  hint="Name the two numbers with two variables. Write one equation for their sum and one for “4 less than,” then substitute and solve."
 >}}
 
 **Example.** Heather has been offered two options for her salary as a
@@ -116,9 +117,10 @@ $10{,}000+40(600)=34{,}000$. ✓ The salary options would be equal for $600$
 training sessions.
 
 {{< fillin
-  question="Geraldine has been offered positions by two insurance companies. The first company pays a salary of \$12,000 plus a commission of \$100 for each policy sold. The second pays a salary of \$20,000 plus a commission of \$50 for each policy sold. How many policies would need to be sold for the total pay to be the same?"
+  question="Geraldine has been offered positions by two insurance companies. The first company pays a salary of \$12,000 plus a commission of \$100 for each policy sold. The second pays a salary of \$20,000 plus a commission of \$50 for each policy sold. How many policies would need to be sold to make the total pay the same?"
   answer="160"
-  hint="Let s = the salary and p = the number of policies sold. The system is $s = 12{,}000 + 100p$ and $s = 20{,}000 + 50p$. Substitute and solve for p."
+  answerForm="decimal"
+  hint="Name the total pay and the number of policies. Write one pay equation for each company, then set the two expressions for the pay equal and solve."
 >}}
 
 **Example.** When Jenna spent 10 minutes on the elliptical trainer and then
@@ -172,7 +174,8 @@ $8.3$ calories per minute of circuit training.
 {{< fillin
   question="Mark went to the gym and did 40 minutes of Bikram hot yoga and 10 minutes of jumping jacks, burning 510 calories. The next time he went to the gym, he did 30 minutes of Bikram hot yoga and 20 minutes of jumping jacks, burning 470 calories. How many calories were burned for each minute of jumping jacks?"
   answer="7"
-  hint="Let y = calories burned per minute of yoga and j = calories burned per minute of jumping jacks. Set up $40y + 10j = 510$ and $30y + 20j = 470$, then solve for j."
+  answerForm="decimal"
+  hint="Name the two per-minute rates. Each visit gives one equation (minutes times rate for each activity, added); then eliminate one variable."
 >}}
 
 ## Solve Geometry Applications
@@ -229,9 +232,10 @@ $58-32\overset{?}{=}26$, and indeed $26=26$. ✓ The angle measures are $58$
 degrees and $32$ degrees.
 
 {{< fillin
-  question="The difference of two complementary angles is 20 degrees. Find the measure of the larger angle."
+  question="The difference of two complementary angles is 20 degrees. Find the measure of the larger angle, in degrees."
   answer="55"
-  hint="Let x and y be the two angle measures. The system is $x + y = 90$ and $x - y = 20$. Add the equations to solve for x."
+  answerForm="decimal"
+  hint="Write one equation for the sum of complementary angles and one for the difference, then add the equations to eliminate a variable."
 >}}
 
 **Example.** Translate to a system of equations and then solve: two angles
@@ -270,9 +274,10 @@ $5(32)-12\overset{?}{=}148$, and indeed $148=148$. ✓ The angle measures are
 $32$ degrees and $148$ degrees.
 
 {{< fillin
-  question="Two angles are supplementary. The measure of the larger angle is 12 degrees more than three times the measure of the smaller angle. Find the measure of the smaller angle."
+  question="Two angles are supplementary. The measure of the larger angle is 12 degrees more than three times the measure of the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="42"
-  hint="Let x = the smaller angle and y = the larger angle. The system is $x + y = 180$ and $y = 3x + 12$. Substitute and solve for x."
+  answerForm="decimal"
+  hint="Write one equation for the sum of supplementary angles and one for the larger angle in terms of the smaller, then substitute."
 >}}
 
 Recall that the angles of a triangle add up to $180$ degrees. A right
@@ -285,12 +290,12 @@ ten more than three times the measure of the other small angle. Find the
 measures of both angles.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A right triangle with the right angle at the bottom-left corner, marked with a small square. The top vertex is labeled a and the bottom-right vertex is labeled b." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 162" width="198" height="162" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A right triangle with the right angle at the bottom-left corner, marked with a small square. The acute angle at the top vertex is labeled a and the acute angle at the bottom-right vertex is labeled b." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 162" width="198" height="162" font-family="Helvetica, Arial, sans-serif">
   <line x1="36" y1="126" x2="162" y2="126" stroke="currentColor" stroke-width="1.5"/>
   <line x1="162" y1="126" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <line x1="36" y1="36" x2="36" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="174.2" y="134.4" text-anchor="start" font-size="13" fill="currentColor">b</text>
-  <text x="28.5" y="23.3" text-anchor="end" font-size="13" fill="currentColor">a</text>
+  <text x="126" y="121" text-anchor="end" font-size="13" fill="currentColor">b</text>
+  <text x="41" y="57" text-anchor="start" font-size="13" fill="currentColor">a</text>
   <path d="M 46 126 L 46 116 L 36 116" fill="none" stroke="currentColor" stroke-width="1.2"/>
 </svg>
 </div>
@@ -328,9 +333,10 @@ $180=180$. ✓ $3(20)+10\overset{?}{=}70$, and indeed $70=70$. ✓ The measures
 of the small angles are $70$ degrees and $20$ degrees.
 
 {{< fillin
-  question="The measure of one of the small angles of a right triangle is 2 more than 3 times the measure of the other small angle. Find the measure of the larger small angle."
+  question="The measure of one of the small angles of a right triangle is 2 more than 3 times the measure of the other small angle. Find the measure of the larger small angle, in degrees."
   answer="68"
-  hint="Let a and b be the two small angles, with $a = 3b + 2$. Since the small angles of a right triangle sum to 90 degrees, $a + b = 90$. Substitute and solve for b, then find a."
+  answerForm="decimal"
+  hint="Use the triangle's angle sum and its right angle for one equation and the stated relationship for the other; substitute, then find the larger angle."
 >}}
 
 Often it is helpful to draw a picture to visualize a geometry application.
@@ -343,12 +349,13 @@ fenced yard (parallel to the house wall) to be 5 feet more than four times
 as long as the width. Find the length and the width.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A rectangle representing the fenced yard. The top side, along the house wall, is dashed and labeled L. The bottom side and the two vertical sides, which are the fenced sides, are solid; the vertical sides are each labeled W." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 168" width="252" height="168" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A rectangle representing the fenced yard. The top side, along the house wall, is dashed and labeled house wall. The bottom side and the two vertical sides, which are the fenced sides, are solid; the bottom side is labeled L and the vertical sides are each labeled W." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 168" width="252" height="168" font-family="Helvetica, Arial, sans-serif">
   <line x1="36" y1="132" x2="216" y2="132" stroke="currentColor" stroke-width="1.5"/>
   <line x1="216" y1="132" x2="216" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <text x="228" y="88" text-anchor="start" font-size="13" fill="currentColor">W</text>
   <line x1="216" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">L (house wall)</text>
+  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">house wall</text>
+  <text x="126" y="152" text-anchor="middle" font-size="13" fill="currentColor">L</text>
   <line x1="36" y1="36" x2="36" y2="132" stroke="currentColor" stroke-width="1.5"/>
   <text x="24" y="88" text-anchor="end" font-size="13" fill="currentColor">W</text>
 </svg>
@@ -389,7 +396,8 @@ The length is $85$ feet and the width is $20$ feet.
 {{< fillin
   question="Mario wants to put a fence around the pool in his backyard. Since one side is adjacent to the house, he only needs to fence three sides: the two long sides and the one shorter side that runs parallel to the house. He needs 155 feet of fencing to enclose the pool. The length of the long side is 10 feet less than twice the width. Find the width of the pool area, in feet."
   answer="35"
-  hint="Let L = the length of the long side and W = the width. Two long sides plus one width use the fencing: $2L + W = 155$. The long side is $L = 2W - 10$. Substitute and solve for W."
+  answerForm="decimal"
+  hint="Name the length and width. Write one equation for the fencing (count only the fenced sides) and one for the long side in terms of the width, then substitute."
 >}}
 
 ## Solve Uniform Motion Applications
@@ -397,8 +405,8 @@ The length is $85$ feet and the width is $20$ feet.
 We used a table to organize the information in uniform motion problems when
 we introduced them earlier. We'll continue using that table here. The basic
 equation is $D=rt$, where $D$ is the distance traveled, $r$ is the rate, and
-$t$ is the time. Now that we can use two variables and two equations, we no
-longer need to write one person's time or rate in terms of the other's.
+$t$ is the time. Our first example is a situation similar to some we have
+already seen, but now we can use two variables and two equations.
 
 **Example.** Translate to a system of equations and then solve: Joni left
 St. Louis on the interstate, driving west towards Denver at a speed of 65
@@ -433,7 +441,7 @@ $$
 & 65j &=& 78\left(j - \tfrac{1}{2}\right) \\[4pt]
 \text{Distribute.} & 65j &=& 78j - 39 \\[4pt]
 \text{Subtract }78j\text{ from each side.} & -13j &=& -39 \\[4pt]
-\text{Divide each side by }-13. & j &=& 3
+\text{Divide each side by }{-13}. & j &=& 3
 \end{array}
 $$
 
@@ -447,7 +455,8 @@ Joni will have traveled $3$ hours.
 {{< fillin
   question="Mitchell left Detroit on the interstate driving south towards Orlando at a speed of 60 miles per hour. Clark left Detroit 1 hour later, traveling at a speed of 75 miles per hour, following the same route as Mitchell. How long will it take Clark to catch Mitchell? Enter the time in hours."
   answer="4"
-  hint="Let t = Clark's driving time, so Mitchell's time is $t + 1$. Both travel the same distance: $60(t + 1) = 75t$. Solve for t."
+  answerForm="decimal"
+  hint="Name each driver's time and write one equation relating the two times. Clark catches up when the distances are equal: use $D = rt$, then substitute."
 >}}
 
 Many real-world uniform motion applications arise because of the effect of
@@ -518,7 +527,8 @@ rate of the ship is $13.5$ mph and the rate of the current is $1.5$ mph.
 {{< fillin
   question="A Mississippi river boat cruise sailed 120 miles upstream for 12 hours and then took 10 hours to return to the dock. Find the speed of the river boat in still water, in mph."
   answer="11"
-  hint="Let s = the boat's speed in still water and c = the current's speed. Upstream (against the current): $12(s - c) = 120$. The return trip downstream (with the current): $10(s + c) = 120$. Solve for s."
+  answerForm="decimal"
+  hint="Upstream the actual rate is the still-water speed minus the current; on the return it is their sum. Write rate times time equals distance for each trip, then eliminate the current."
 >}}
 
 **Example.** Translate to a system of equations and then solve: a private
@@ -567,7 +577,8 @@ mph.
 {{< fillin
   question="A small jet can fly 1,325 miles in 5 hours with a tailwind but only 1,035 miles in 5 hours into a headwind. Find the speed of the wind, in mph."
   answer="29"
-  hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}325$ and $5(j - w) = 1{,}035$. Solve for w."
+  answerForm="decimal"
+  hint="With a tailwind the actual rate is the jet's speed plus the wind's; into a headwind it is the difference. Write rate times time equals distance for each flight, then eliminate the jet's speed."
 >}}
 
 ## Key terms
@@ -587,69 +598,80 @@ plane is flying, so it decreases the plane's actual speed to $j-w$.
 {{< fillin
   question="The sum of two numbers is 30. One number is 4 less than the other. Find the smaller number."
   answer="13"
-  hint="Let m = the larger number and n = the smaller number, so $m + n = 30$ and $n = m - 4$. Substitute and solve for n."
+  answerForm="decimal"
+  hint="Name the two numbers with two variables. Write one equation for their sum and one for “4 less than,” then substitute and solve."
 >}}
 
 {{< fillin
   question="Jackie has been offered positions by two cable companies. The first company pays a salary of \$14,000 plus a commission of \$100 for each cable package sold. The second pays a salary of \$20,000 plus a commission of \$25 for each cable package sold. How many cable packages would need to be sold to make the total pay the same?"
   answer="80"
-  hint="Let s = the salary and p = the number of cable packages sold. The system is $s = 14{,}000 + 100p$ and $s = 20{,}000 + 25p$. Substitute and solve for p."
+  answerForm="decimal"
+  hint="Name the total pay and the number of packages. Write one pay equation for each company, then set the two expressions for the pay equal and solve."
 >}}
 
 {{< fillin
   question="June needs 48 gallons of punch for a party and has two different coolers to carry it in. The bigger cooler is five times as large as the smaller cooler. How many gallons can the smaller cooler hold?"
   answer="8"
-  hint="Let b = the big cooler's capacity and s = the small cooler's capacity, so $b + s = 48$ and $b = 5s$. Substitute and solve for s."
+  answerForm="decimal"
+  hint="Name the two capacities. Write one equation for the total and one for “five times as large,” then substitute."
 >}}
 
 {{< fillin
   question="June needs 48 gallons of punch for a party and has two different coolers to carry it in. The bigger cooler is five times as large as the smaller cooler. How many gallons can the bigger cooler hold?"
   answer="40"
-  hint="Let b = the big cooler's capacity and s = the small cooler's capacity, with $b + s = 48$ and $b = 5s$. Once you find s, use $b = 5s$ to find b."
+  answerForm="decimal"
+  hint="Name the two capacities. Write one equation for the total and one for “five times as large,” substitute, and then find the bigger capacity."
 >}}
 
 {{< fillin
   question="Drew burned 1,800 calories Friday playing one hour of basketball and canoeing for two hours. Saturday he spent two hours playing basketball and three hours canoeing and burned 3,200 calories. How many calories did he burn per hour when playing basketball?"
   answer="1000"
-  hint="Let b = calories burned per hour of basketball and c = calories burned per hour of canoeing. The system is $b + 2c = 1{,}800$ and $2b + 3c = 3{,}200$. Solve for b."
+  answerForm="decimal"
+  hint="Name the two hourly rates. Each day gives one equation (hours times rate for each activity, added); then eliminate the canoeing rate."
 >}}
 
 {{< fillin
   question="Drew burned 1,800 calories Friday playing one hour of basketball and canoeing for two hours. Saturday he spent two hours playing basketball and three hours canoeing and burned 3,200 calories. How many calories did he burn per hour when canoeing?"
   answer="400"
-  hint="Let b = calories burned per hour of basketball and c = calories burned per hour of canoeing. The system is $b + 2c = 1{,}800$ and $2b + 3c = 3{,}200$. Solve for c."
+  answerForm="decimal"
+  hint="Name the two hourly rates. Each day gives one equation (hours times rate for each activity, added); then eliminate the basketball rate."
 >}}
 
 ### Solve geometry applications
 
 {{< fillin
-  question="The difference of two complementary angles is 17 degrees. Find the measure of the larger angle."
+  question="The difference of two complementary angles is 17 degrees. Find the measure of the larger angle, in degrees, as a decimal."
   answer="53.5"
-  hint="Let x and y be the two angle measures, with $x + y = 90$ and $x - y = 17$. Add the equations to solve for x."
+  answerForm="decimal"
+  hint="Write one equation for the sum of complementary angles and one for the difference, then add the equations to eliminate a variable."
 >}}
 
 {{< fillin
-  question="Two angles are supplementary. The measure of the larger angle is five less than four times the measure of the smaller angle. Find the measure of the larger angle."
+  question="Two angles are supplementary. The measure of the larger angle is five less than four times the measure of the smaller angle. Find the measure of the larger angle, in degrees."
   answer="143"
-  hint="Let x = the larger angle and y = the smaller angle. The system is $x + y = 180$ and $x = 4y - 5$. Substitute and solve for y, then find x."
+  answerForm="decimal"
+  hint="Write one equation for the sum of supplementary angles and one for the larger angle in terms of the smaller; substitute, then find the larger angle."
 >}}
 
 {{< fillin
-  question="The measure of one of the small angles of a right triangle is 26 more than 3 times the measure of the other small angle. Find the measure of the larger small angle."
+  question="The measure of one of the small angles of a right triangle is 26 more than 3 times the measure of the other small angle. Find the measure of the larger small angle, in degrees."
   answer="74"
-  hint="Let a and b be the two small angles, with $a = 3b + 26$. Since the small angles of a right triangle sum to 90 degrees, $a + b = 90$. Substitute and solve for b, then find a."
+  answerForm="decimal"
+  hint="Use the triangle's angle sum and its right angle for one equation and the stated relationship for the other; substitute, then find the larger angle."
 >}}
 
 {{< fillin
   question="The perimeter of a toddler play area is 100 feet. The length is ten more than three times the width. Find the width of the play area, in feet."
   answer="10"
-  hint="Let L = the length and W = the width. Two lengths and two widths make the perimeter: $2L + 2W = 100$. The length is $L = 3W + 10$. Substitute and solve for W."
+  answerForm="decimal"
+  hint="Name the length and width. Write one equation for the perimeter (all four sides) and one for the length in terms of the width, then substitute."
 >}}
 
 {{< fillin
   question="The perimeter of a toddler play area is 100 feet. The length is ten more than three times the width. Find the length of the play area, in feet."
   answer="40"
-  hint="Let L = the length and W = the width, with $2L + 2W = 100$ and $L = 3W + 10$. Once you find W, use $L = 3W + 10$ to find L."
+  answerForm="decimal"
+  hint="Name the length and width. Write one equation for the perimeter (all four sides) and one for the length in terms of the width; substitute, then find the length."
 >}}
 
 ### Solve uniform motion applications
@@ -657,27 +679,31 @@ plane is flying, so it decreases the plane's actual speed to $j-w$.
 {{< fillin
   question="A motor boat travels 60 miles down a river in three hours but takes five hours to return upstream. Find the rate of the current, in mph."
   answer="4"
-  hint="Let s = the boat's speed in still water and c = the current's speed. Downstream: $3(s + c) = 60$. Upstream: $5(s - c) = 60$. Solve the system for c."
+  answerForm="decimal"
+  hint="Downstream the actual rate is the still-water speed plus the current; upstream it is the difference. Write rate times time equals distance for each trip, then eliminate the boat's speed."
 >}}
 
 {{< fillin
   question="A river cruise boat sailed 80 miles down the Mississippi River for four hours. It took five hours to return. Find the rate of the cruise boat in still water, in mph."
   answer="18"
-  hint="Let s = the boat's speed in still water and c = the current's speed. Downstream: $4(s + c) = 80$. Upstream: $5(s - c) = 80$. Solve the system for s."
+  answerForm="decimal"
+  hint="Downstream the actual rate is the still-water speed plus the current; upstream it is the difference. Write rate times time equals distance for each trip, then eliminate the current."
 >}}
 
 {{< fillin
   question="A small jet can fly 1,435 miles in 5 hours with a tailwind but only 1,215 miles in 5 hours into a headwind. Find the speed of the wind, in mph."
   answer="22"
-  hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}435$ and $5(j - w) = 1{,}215$. Solve for w."
+  answerForm="decimal"
+  hint="With a tailwind the actual rate is the jet's speed plus the wind's; into a headwind it is the difference. Write rate times time equals distance for each flight, then eliminate the jet's speed."
 >}}
 
 {{< fillin
   question="A commercial jet can fly 1,320 miles in 3 hours with a tailwind but only 1,170 miles in 3 hours into a headwind. Find the speed of the jet in still air, in mph."
   answer="415"
-  hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $3(j + w) = 1{,}320$ and $3(j - w) = 1{,}170$. Solve for j."
+  answerForm="decimal"
+  hint="With a tailwind the actual rate is the jet's speed plus the wind's; into a headwind it is the difference. Write rate times time equals distance for each flight, then eliminate the wind's speed."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.2: Solve Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-2-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the right-triangle and fenced-yard figures as accessible inline graphics and described the river-current and wind-current illustrations in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks; omitted the "Be Prepared" readiness quiz and the Media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected exercises from the Section 4.2 Exercises ("Practice Makes Perfect") set into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.2: Solve Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-2-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the right-triangle and fenced-yard figures as accessible inline graphics, described the two river-current figures in prose, and omitted the trip diagrams in the three uniform-motion examples, whose facts the rate tables carry; wrote each system of equations and its elimination or substitution steps as display-math blocks, writing the right-triangle system with $a+b=90$ in place of $a+b+90=180$ and simplifying the river-cruise system by dividing each equation by its common factor rather than multiplying to match coefficients; omitted the "Be Prepared" readiness quiz and the Media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback, each asking for one of the two unknowns; and adapted selected exercises from the Section 4.2 Exercises ("Practice Makes Perfect") set into an interactive Practice block, one unknown per item.</small>

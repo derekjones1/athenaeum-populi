@@ -104,7 +104,7 @@ determine whether each ordered pair is a solution.
 
 {{< multiplechoice
   question="Is the ordered pair $(-2,1)$ a solution to the system $\left\{\begin{array}{l} y>4x-2 \\ 4x-y<20 \end{array}\right.$?"
-  hint="Substitute $x=-2$ and $y=1$ into both inequalities and check that both come out true."
+  hint="Substitute $x=-2$ and $y=1$ into each inequality; the pair is a solution only if it makes both inequalities true."
   answer="yes"
 >}}
 no
@@ -113,7 +113,7 @@ yes
 
 {{< multiplechoice
   question="Is the ordered pair $(4,-1)$ a solution to the system $\left\{\begin{array}{l} y>4x-2 \\ 4x-y<20 \end{array}\right.$?"
-  hint="Substitute $x=4$ and $y=-1$ into $y>4x-2$ first — if it comes out false, the pair is not a solution."
+  hint="Substitute $x=4$ and $y=-1$ into each inequality; the pair is a solution only if it makes both inequalities true."
   answer="no"
 >}}
 no
@@ -144,90 +144,9 @@ boundary line $y=x+1$. It is a dashed line because the inequality sign is
 $<$. Testing $(0,0)$ again: since $0<0+1$ is true, we shade in the side of
 this boundary line that also contains $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The boundary line y equals 2x minus 1 is solid, with the region above and to the left shaded, satisfying y greater than or equal to 2x minus 1. The boundary line y equals x plus 1 is dashed, with the region below and to the right shaded, satisfying y less than x plus 1. The two shadings overlap in a wedge below and to the left of their intersection point (2, 3)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 276,26 116,346 26,346" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="326,26 346,26 346,346 26,346 26,326" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="183" x2="26" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="201" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="179" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="201" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="183" y1="346" x2="189" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="350" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="183" y1="306" x2="189" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="192" y="230" font-size="11" fill="currentColor" text-anchor="start">−2</text>
-  <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="110" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="183" y1="66" x2="189" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="70" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="183" y1="26" x2="189" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="117.5" y1="343.1" x2="274.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="279,20 279,31.2 270.1,26.7" fill="currentColor"/>
-  <polygon points="113,352 113,340.8 121.9,345.3" fill="currentColor"/>
-  <line x1="27.1" y1="324.9" x2="324.9" y2="27.1" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="332,20 328.5,30.6 321.4,23.5" fill="currentColor"/>
-  <polygon points="20,332 23.5,321.4 30.6,328.5" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes, numbered every 2 units. The solid boundary line y equals 2x minus 1 has the region above and to the left of it shaded, and the dashed boundary line y equals x plus 1 has the region below and to the right of it shaded. The lines cross at (2, 3), and the region shaded twice, darkest, lies below and to the left of that point, between the two lines.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":2,"intercept":-1},"side":[0,0]},{"line":{"slope":1,"intercept":1},"side":[0,0],"dashed":true}]}
+{{< /apfigure >}}
 
 **Step 3. The solution is the region where the shading overlaps.** The point
 where the boundary lines intersect, $(2,3)$, is not included in the
@@ -239,8 +158,9 @@ shaded twice, which appears as the darkest region in the graph.
 {{< fillin
   question="Check the point $(-1,-1)$ in the system $\left\{\begin{array}{l} y\geq2x-1 \\ y<x+1 \end{array}\right.$: substitute it into $y\geq2x-1$ and simplify the right side."
   answer="-3"
+  answerForm="decimal"
   answerDisplay="$-3$, so $-1\geq-3$ is true"
-  hint="Substitute $x=-1$ into $2x-1$: $2(-1)-1$."
+  hint="Replace $x$ with the point's $x$-coordinate in the right side, multiply, then subtract."
 >}}
 
 {{< callout type="info" >}}
@@ -270,90 +190,9 @@ $m=-\tfrac{1}{5}$ and $y$-intercept $b=4$. The boundary line will be dashed.
 We test $(0,0)$, which makes the inequality true, so we shade the side that
 contains $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The dashed boundary line x minus y equals 3 has the region below and to the right shaded, satisfying x minus y greater than 3. The dashed boundary line y equals negative one-fifth x plus 4 has the region containing the origin shaded, satisfying y less than negative one-fifth x plus 4. The two shadings overlap in a wedge below the second line and to the right of the first line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="346,86 346,346 86,346" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="26,74 346,138 346,346 26,346" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="183" x2="26" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="201" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="201" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="183" y1="346" x2="189" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="350" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="183" y1="306" x2="189" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="110" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="183" y1="66" x2="189" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="70" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="183" y1="26" x2="189" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="87.1" y1="344.9" x2="344.9" y2="87.1" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="352,80 348.5,90.6 341.4,83.5" fill="currentColor"/>
-  <polygon points="80,352 83.5,341.4 90.6,348.5" fill="currentColor"/>
-  <line x1="29.8" y1="74.8" x2="342.2" y2="137.2" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="352,139.2 341.2,142.1 343.2,132.3" fill="currentColor"/>
-  <polygon points="20,72.8 30.8,69.9 28.8,79.7" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes, numbered every 2 units. The dashed boundary line x minus y equals 3, through (3, 0) and (0, negative 3), has the region below and to the right of it shaded, and the dashed boundary line y equals negative one-fifth x plus 4, through (0, 4), has the region below it shaded. The region shaded twice, darkest, lies to the right of the first line and below the second.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":1,"intercept":-3},"side":[4,-4],"dashed":true},{"line":{"slope":-0.2,"intercept":4},"side":[0,0],"dashed":true}]}
+{{< /apfigure >}}
 
 The point where the two lines intersect is not included in the solution,
 since both boundary lines are dashed. The solution is the area shaded
@@ -372,90 +211,9 @@ line through $y=-4$. The boundary line will be dashed. We test $(0,0)$,
 which makes the inequality true, so we shade the side that contains
 $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The dashed boundary line x minus 2y equals 5 has the region above and to the left shaded, satisfying x minus 2y less than 5. The dashed horizontal boundary line y equals negative 4 has the region above shaded, satisfying y greater than negative 4. The two shadings overlap in a large region containing the origin, above both boundary lines." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 346,26 346,156 26,316" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="26,26 346,26 346,266 26,266" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="183" x2="26" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="201" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="179" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="201" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="183" y1="346" x2="189" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="350" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="183" y1="306" x2="189" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="261" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="110" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="183" y1="66" x2="189" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="70" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="183" y1="26" x2="189" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="28.9" y1="314.5" x2="343.1" y2="157.5" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="352,153 345.3,161.9 340.8,153" fill="currentColor"/>
-  <polygon points="20,319 26.7,310.1 31.2,319" fill="currentColor"/>
-  <line x1="30" y1="266" x2="342" y2="266" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="352,266 342,271 342,261" fill="currentColor"/>
-  <polygon points="20,266 30,261 30,271" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes, numbered every 2 units. The dashed boundary line x minus 2y equals 5, through (5, 0) and (0, negative 2.5), has the region above and to the left of it shaded, and the dashed horizontal boundary line y equals negative 4 has the region above it shaded. The region shaded twice, darkest, lies above both lines and contains the origin.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":0.5,"intercept":-2.5},"side":[0,0],"dashed":true},{"line":{"slope":0,"intercept":-4},"side":[0,0],"dashed":true}]}
+{{< /apfigure >}}
 
 The point $(0,0)$ is in the solution, as we already found it to be a
 solution of each inequality. The point of intersection of the two lines is
@@ -478,97 +236,16 @@ $m=-\tfrac{4}{3}$ and $y$-intercept $b=1$. The boundary line will be dashed.
 We test $(0,0)$, which makes the inequality true, so we shade the side that
 contains $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The solid boundary line 4x plus 3y equals 12 has the region above and to the right shaded, satisfying 4x plus 3y greater than or equal to 12. The parallel dashed boundary line y equals negative four-thirds x plus 1 has the region below and to the left shaded, satisfying y less than negative four-thirds x plus 1. The two shaded regions never touch, since the lines are parallel and the shadings point away from each other." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="126,26 346,26 346,319.3" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="26,26 81,26 321,346 26,346" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="183" x2="26" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="201" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="201" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="183" y1="346" x2="189" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="350" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="183" y1="306" x2="189" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="110" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="183" y1="66" x2="189" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="70" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="183" y1="26" x2="189" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="127.5" y1="28" x2="346" y2="319.3" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="352,327.3 342,322.3 350,316.3" fill="currentColor"/>
-  <polygon points="121.5,20 131.5,25 123.5,31" fill="currentColor"/>
-  <line x1="82.5" y1="28" x2="319.5" y2="344" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="325.5,352 315.5,347 323.5,341" fill="currentColor"/>
-  <polygon points="76.5,20 86.5,25 78.5,31" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 8 to 8 on both axes, numbered every 2 units. The solid boundary line 4x plus 3y equals 12, through (3, 0) and (0, 4), has the region above and to the right of it shaded, and the parallel dashed boundary line y equals negative four-thirds x plus 1, through (0, 1), has the region below and to the left of it shaded. No region is shaded twice: the strip between the two lines is unshaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":-1.3333333333333333,"intercept":4},"side":[4,4]},{"line":{"slope":-1.3333333333333333,"intercept":1},"side":[0,0],"dashed":true}]}
+{{< /apfigure >}}
 
 There is no point in both shaded regions, so this system has **no
 solution**.
 
 {{< multiplechoice
-  question="Does the system $\left\{\begin{array}{l} 4x+3y\geq12 \\ y<-\tfrac{4}{3}x+1 \end{array}\right.$ have a solution?"
-  hint="The boundary lines are parallel, with the same slope $-\tfrac{4}{3}$; the shaded regions face away from each other and never overlap."
+  question="Does the system $\left\{\begin{array}{l} 3x-2y\geq12 \\ y\geq\tfrac{3}{2}x+1 \end{array}\right.$ have a solution?"
+  hint="Solve the first inequality for $y$, compare the two boundary lines, and decide which side of each line is shaded."
   answer="no"
 >}}
 yes
@@ -592,101 +269,37 @@ test point in the solution and verify that it is a solution to both
 inequalities. We test $(0,0)$, which makes the inequality false, so we
 shade the side that does not contain $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The dashed boundary line y equals one-half x minus 4 has the region above and to the left shaded, containing the origin, satisfying y greater than one-half x minus 4. The parallel dashed boundary line x minus 2y equals negative 4, equivalent to y equals one-half x plus 2, has the region above it shaded, not containing the origin, satisfying x minus 2y less than negative 4. The two shadings overlap above the second, higher line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 372" width="372" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="346" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="346" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="346" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="346" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="346" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="346" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="346" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="346" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="346" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="346" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="346" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="346" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="346" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="346" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="346" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="346" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="346" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="346" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="346" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="346" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 346,26 346,186 26,346" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="26,26 346,26 346,66 26,226" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="186" x2="348" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="358,186 348,191 348,181" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="186,358 181,348 191,348" fill="currentColor"/>
-  <text x="356" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="183" x2="26" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="201" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="146" y1="183" x2="146" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="306" y1="183" x2="306" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="346" y1="183" x2="346" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="201" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="183" y1="346" x2="189" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="350" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="183" y1="306" x2="189" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="183" y1="266" x2="189" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="183" y1="226" x2="189" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="183" y1="146" x2="189" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="183" y1="106" x2="189" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="110" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="183" y1="66" x2="189" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="70" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="183" y1="26" x2="189" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="28.9" y1="344.5" x2="343.1" y2="187.5" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="352,183 345.3,191.9 340.8,183" fill="currentColor"/>
-  <polygon points="20,349 26.7,340.1 31.2,349" fill="currentColor"/>
-  <line x1="28.9" y1="224.5" x2="343.1" y2="67.5" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>
-  <polygon points="352,63 345.3,71.9 340.8,63" fill="currentColor"/>
-  <polygon points="20,229 26.7,220.1 31.2,229" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 12 to 12 on both axes, numbered every 2 units. The dashed boundary line y equals one-half x minus 4, through (0, negative 4) and (8, 0), has the region above it shaded, and the parallel dashed boundary line x minus 2y equals negative 4, through (negative 4, 0) and (0, 2), has the region above it shaded. The region shaded twice, darkest, lies above the higher line.","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":14,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":0.5,"intercept":-4},"side":[0,0],"dashed":true},{"line":{"slope":0.5,"intercept":2},"side":[0,4],"dashed":true}]}
+{{< /apfigure >}}
 
 No point on the boundary lines is included in the solution, since both
 lines are dashed. The solution is the region that is shaded twice, which is
 also the solution to $x-2y<-4$ alone.
 
-{{< fillin
-  question="For the system $\left\{\begin{array}{l} y>\tfrac{1}{2}x-4 \\ x-2y<-4 \end{array}\right.$, what is the $y$-intercept of the boundary line $x-2y=-4$?"
-  answer="(0,2)"
-  answerDisplay="$(0,2)$"
-  hint="Substitute $x=0$ into $x-2y=-4$ and solve for $y$."
+{{< graphplot
+  question="Graph the boundary lines of the system $\left\{\begin{array}{l} y\geq3x+1 \\ -3x+y\geq-4 \end{array}\right.$."
+  answerDisplay="$y=3x+1$ and $y=3x-4$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Replace each inequality sign with $=$, solve each equation for $y$, and plot points from the slope and $y$-intercept."
 >}}
+{"answer":{"system":[{"slope":3,"intercept":1},{"slope":3,"intercept":-4}]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+{{< multiplechoice
+  question="Which graph shows the solution of the system $\left\{\begin{array}{l} y\geq3x+1 \\ -3x+y\geq-4 \end{array}\right.$?"
+  hint="Choose each boundary line's style from its inequality symbol, test $(0,0)$ in each inequality, and keep only the points that satisfy both."
+  mode="graph"
+  answerIndex="2"
+>}}
+{"ariaLabel":"Two parallel solid lines rising steeply to the right, one through (0, 1) and one through (0, −4), with the region above the line through (0, −4) shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"lines":[{"slope":3,"intercept":1}],"regions":[{"line":{"slope":3,"intercept":-4},"side":[-3,3]}]}
+===OPT===
+{"ariaLabel":"Two parallel dashed lines rising steeply to the right, one through (0, 1) and one through (0, −4), with the region above the line through (0, 1) shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"lines":[{"slope":3,"intercept":-4,"dashed":true}],"regions":[{"line":{"slope":3,"intercept":1},"side":[-3,3],"dashed":true}]}
+===OPT===
+{"ariaLabel":"Two parallel solid lines rising steeply to the right, one through (0, 1) and one through (0, −4), with the region above the line through (0, 1) shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"lines":[{"slope":3,"intercept":-4}],"regions":[{"line":{"slope":3,"intercept":1},"side":[-3,3]}]}
+===OPT===
+{"ariaLabel":"Two parallel solid lines rising steeply to the right, one through (0, 1) and one through (0, −4), with the region below the line through (0, −4) shaded.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"lines":[{"slope":3,"intercept":1}],"regions":[{"line":{"slope":3,"intercept":-4},"side":[3,-3]}]}
+{{< /multiplechoice >}}
 
 ## Solve applications of systems of inequalities
 
@@ -722,95 +335,14 @@ inequality false, so we shade the side that does not contain $(0,0)$. To
 graph $4x+10y\leq200$, graph $4x+10y=200$ as a solid line; testing $(0,0)$
 makes the inequality true, so we shade the side that contains $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Quadrant I only, axes labeled x for the number of small photos and y for the number of large photos. The solid boundary line x plus y equals 25 has the region above and to the right shaded. The solid boundary line 4x plus 10y equals 200 has the region below and to the left shaded. The two shadings overlap in a region bounded by the two lines and the axes, which is the solution to the system." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382" width="382" height="382" font-family="Helvetica, Arial, sans-serif">
-  <line x1="56" y1="356" x2="56" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="356" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="116" y1="356" x2="116" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="356" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="176" y1="356" x2="176" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="356" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="236" y1="356" x2="236" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="356" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="296" y1="356" x2="296" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="356" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="356" y1="356" x2="356" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="356" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="296" x2="356" y2="296" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="356" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="236" x2="356" y2="236" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="356" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="176" x2="356" y2="176" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="356" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="116" x2="356" y2="116" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="356" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="56" x2="356" y2="56" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="356" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 356,26 356,356 176,356 26,206" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="26,236 326,356 26,356" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="26" y1="356" x2="358" y2="356" stroke="currentColor" stroke-width="1"/>
-  <line x1="26" y1="24" x2="26" y2="356" stroke="currentColor" stroke-width="1"/>
-  <polygon points="368,356 358,361 358,351" fill="currentColor"/>
-  <polygon points="26,14 31,24 21,24" fill="currentColor"/>
-  <text x="366" y="348" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="34" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="56" y1="353" x2="56" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="56" y="371" font-size="11" fill="currentColor" text-anchor="middle">5</text>
-  <line x1="86" y1="353" x2="86" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="86" y="371" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="116" y1="353" x2="116" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="116" y="371" font-size="11" fill="currentColor" text-anchor="middle">15</text>
-  <line x1="146" y1="353" x2="146" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="371" font-size="11" fill="currentColor" text-anchor="middle">20</text>
-  <line x1="176" y1="353" x2="176" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="176" y="371" font-size="11" fill="currentColor" text-anchor="middle">25</text>
-  <line x1="206" y1="353" x2="206" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="206" y="371" font-size="11" fill="currentColor" text-anchor="middle">30</text>
-  <line x1="236" y1="353" x2="236" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="236" y="371" font-size="11" fill="currentColor" text-anchor="middle">35</text>
-  <line x1="266" y1="353" x2="266" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="371" font-size="11" fill="currentColor" text-anchor="middle">40</text>
-  <line x1="296" y1="353" x2="296" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="296" y="371" font-size="11" fill="currentColor" text-anchor="middle">45</text>
-  <line x1="326" y1="353" x2="326" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="326" y="371" font-size="11" fill="currentColor" text-anchor="middle">50</text>
-  <line x1="356" y1="353" x2="356" y2="359" stroke="currentColor" stroke-width="1"/>
-  <text x="356" y="371" font-size="11" fill="currentColor" text-anchor="middle">55</text>
-  <line x1="23" y1="326" x2="29" y2="326" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="330" font-size="11" fill="currentColor" text-anchor="end">5</text>
-  <line x1="23" y1="296" x2="29" y2="296" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="300" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <line x1="23" y1="266" x2="29" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="270" font-size="11" fill="currentColor" text-anchor="end">15</text>
-  <line x1="23" y1="236" x2="29" y2="236" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="240" font-size="11" fill="currentColor" text-anchor="end">20</text>
-  <line x1="23" y1="206" x2="29" y2="206" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="210" font-size="11" fill="currentColor" text-anchor="end">25</text>
-  <line x1="23" y1="176" x2="29" y2="176" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="180" font-size="11" fill="currentColor" text-anchor="end">30</text>
-  <line x1="23" y1="146" x2="29" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="150" font-size="11" fill="currentColor" text-anchor="end">35</text>
-  <line x1="23" y1="116" x2="29" y2="116" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="120" font-size="11" fill="currentColor" text-anchor="end">40</text>
-  <line x1="23" y1="86" x2="29" y2="86" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="90" font-size="11" fill="currentColor" text-anchor="end">45</text>
-  <line x1="23" y1="56" x2="29" y2="56" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="60" font-size="11" fill="currentColor" text-anchor="end">50</text>
-  <line x1="23" y1="26" x2="29" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="30" font-size="11" fill="currentColor" text-anchor="end">55</text>
-  <line x1="27.1" y1="207.1" x2="174.9" y2="354.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="182,362 171.4,358.5 178.5,351.4" fill="currentColor"/>
-  <polygon points="20,200 30.6,203.5 23.5,210.6" fill="currentColor"/>
-  <line x1="29.3" y1="237.3" x2="331.7" y2="358.3" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="341,362 329.9,362.9 333.6,353.6" fill="currentColor"/>
-  <polygon points="20,233.6 31.1,232.7 27.4,242" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A first-quadrant grid with x, the number of small photos, from 0 to 55 and y, the number of large photos, from 0 to 30, numbered every 5 units. The solid boundary line x plus y equals 25 runs from (0, 25) to (25, 0) with the region above it shaded, and the solid boundary line 4x plus 10y equals 200 runs from (0, 20) to (50, 0) with the region below it shaded. The lines cross at about (8.3, 16.7), and the region shaded twice, darkest, is the triangle bounded by the two lines and the x-axis from (25, 0) to (50, 0).","xMin":0,"xMax":55,"yMin":0,"yMax":30,"unit":6,"gridStep":5,"tickLabels":true,"tickStep":5,"regions":[{"line":{"slope":-1,"intercept":25,"arrows":false},"side":[40,25]},{"line":{"slope":-0.4,"intercept":20,"arrows":false},"side":[5,5]}]}
+{{< /apfigure >}}
 
 The solution of the system is the region of the graph that is shaded the
 darkest. The boundary line sections that border the darkly shaded section
 are included in the solution, as are the points on the $x$-axis from
-$(25,0)$ to $(55,0)$.
+$(25,0)$ to $(50,0)$.
 
 (c) Could she display 10 small and 20 large photos? We look at the graph to
 see whether the point $(10,20)$ is in the solution region. It is not, so
@@ -833,7 +365,7 @@ and costs \$0.50.
 
 Let $h=$ the number of hamburgers and $c=$ the number of cookies. The
 calories from the hamburgers, at 240 calories each, plus the calories from
-the cookies, at 160 calories each, must be more than 800: $240h+160c\geq800$.
+the cookies, at 160 calories each, must be at least 800: $240h+160c\geq800$.
 The amount spent on hamburgers, at \$1.40 each, plus the amount spent on
 cookies, at \$0.50 each, must be no more than \$5.00: $1.40h+0.50c\leq5$.
 The number of hamburgers and the number of cookies must each be greater
@@ -851,68 +383,16 @@ does not contain $(0,0)$. To graph $1.40h+0.50c\leq5$, graph
 $1.40h+0.50c=5$ as a solid line; testing $(0,0)$ makes the inequality true,
 so we shade the side that contains $(0,0)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Quadrant I only, axes labeled h for the number of hamburgers and c for the number of cookies. The solid boundary line 240h plus 160c equals 800 has the region above and to the right shaded. The solid boundary line 1.40h plus 0.50c equals 5 has the region below and to the left shaded. The two shadings overlap in a region bounded by the two lines and the axes, which is the solution to the system." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 262" width="262" height="262" font-family="Helvetica, Arial, sans-serif">
-  <line x1="61" y1="236" x2="61" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="96" y1="236" x2="96" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="131" y1="236" x2="131" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="236" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="201" y1="236" x2="201" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="236" y1="236" x2="236" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="201" x2="236" y2="201" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="236" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="131" x2="236" y2="131" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="96" x2="236" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="61" x2="236" y2="61" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="236" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,61 26,26 236,26 236,236 142.7,236" fill="currentColor" opacity="0.12" stroke="none"/>
-  <polygon points="26,26 76,26 151,236 26,236" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="26" y1="236" x2="238" y2="236" stroke="currentColor" stroke-width="1"/>
-  <line x1="26" y1="24" x2="26" y2="236" stroke="currentColor" stroke-width="1"/>
-  <polygon points="248,236 238,241 238,231" fill="currentColor"/>
-  <polygon points="26,14 31,24 21,24" fill="currentColor"/>
-  <text x="246" y="228" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">h</text>
-  <text x="34" y="24" font-size="13" fill="currentColor" font-style="italic">c</text>
-  <line x1="61" y1="233" x2="61" y2="239" stroke="currentColor" stroke-width="1"/>
-  <text x="61" y="251" font-size="11" fill="currentColor" text-anchor="middle">1</text>
-  <line x1="96" y1="233" x2="96" y2="239" stroke="currentColor" stroke-width="1"/>
-  <text x="96" y="251" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="131" y1="233" x2="131" y2="239" stroke="currentColor" stroke-width="1"/>
-  <text x="131" y="251" font-size="11" fill="currentColor" text-anchor="middle">3</text>
-  <line x1="166" y1="233" x2="166" y2="239" stroke="currentColor" stroke-width="1"/>
-  <text x="166" y="251" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="201" y1="233" x2="201" y2="239" stroke="currentColor" stroke-width="1"/>
-  <text x="201" y="251" font-size="11" fill="currentColor" text-anchor="middle">5</text>
-  <line x1="236" y1="233" x2="236" y2="239" stroke="currentColor" stroke-width="1"/>
-  <text x="236" y="251" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="23" y1="201" x2="29" y2="201" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="205" font-size="11" fill="currentColor" text-anchor="end">1</text>
-  <line x1="23" y1="166" x2="29" y2="166" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="170" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="23" y1="131" x2="29" y2="131" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="135" font-size="11" fill="currentColor" text-anchor="end">3</text>
-  <line x1="23" y1="96" x2="29" y2="96" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="100" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="23" y1="61" x2="29" y2="61" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="65" font-size="11" fill="currentColor" text-anchor="end">5</text>
-  <line x1="23" y1="26" x2="29" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="25.5" y1="60.3" x2="141.1" y2="233.7" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="146.7,242 137,236.5 145.3,230.9" fill="currentColor"/>
-  <polygon points="20,52 29.7,57.5 21.4,63.1" fill="currentColor"/>
-  <line x1="77.2" y1="29.4" x2="149.8" y2="232.6" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="153.1,242 145.1,234.3 154.5,230.9" fill="currentColor"/>
-  <polygon points="73.9,20 81.9,27.7 72.5,31.1" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A first-quadrant grid with h, the number of hamburgers, on the horizontal axis and c, the number of cookies, on the vertical axis, each from 0 to 5 and numbered every unit. The solid boundary line 240h plus 160c equals 800 runs from (0, 5) to about (3.3, 0) with the region above it shaded, and the solid boundary line 1.40h plus 0.50c equals 5 runs from about (1.8, 5) at the top of the grid to about (3.6, 0) with the region below it shaded. The region shaded twice, darkest, is the strip between the two lines.","xMin":0,"xMax":5,"yMin":0,"yMax":5,"unit":40,"tickLabels":true,"tickStep":1,"xLabel":"h","yLabel":"c","regions":[{"line":{"slope":-1.5,"intercept":5,"arrows":false},"side":[4,4]},{"line":{"slope":-2.8,"intercept":10,"arrows":false},"side":[0.5,0.5]}]}
+{{< /apfigure >}}
 
 The solution of the system is the region of the graph that is shaded the
 darkest.
 
 (c) Could he eat 3 hamburgers and 1 cookie? We look at the graph to see
-whether the point $(3,2)$, three hamburgers and two cookies, is in the
-solution region. It is, so Omar might choose to eat 3 hamburgers and 1
-cookie.
+whether the point $(3,1)$ is in the solution region. It is, so Omar might
+choose to eat 3 hamburgers and 1 cookie.
 
 (d) Could he eat 2 hamburgers and 4 cookies? We look at the graph to see
 whether the point $(2,4)$ is in the solution region. It is, so Omar might
@@ -931,8 +411,8 @@ energy drinks, which have 110 calories each.
 >}}
 
 {{< multiplechoice
-  question="Tenison's system is $\left\{\begin{array}{l} 360d+110e\geq1000 \\ 0.75d+2e\leq25 \end{array}\right.$, where $d$ is the number of donuts and $e$ is the number of energy drinks. Can he buy 8 donuts and 4 energy drinks and satisfy both his caloric needs and his budget?"
-  hint="Check both inequalities: $360(8)+110(4)=3{,}320$, and $0.75(8)+2(4)=14$."
+  question="Can Tenison buy 8 donuts and 4 energy drinks and satisfy his caloric needs?"
+  hint="Substitute $d=8$ and $e=4$ into your calorie inequality and check whether it is true."
   answer="yes"
 >}}
 yes
@@ -953,7 +433,7 @@ whose ordered pairs make the inequalities true.
 
 {{< multiplechoice
   question="Is $(5,-2)$ a solution to the system $\left\{\begin{array}{l} 4x-y<10 \\ -2x+2y>-8 \end{array}\right.$?"
-  hint="Substitute $x=5$ and $y=-2$ into $4x-y<10$ first; if it's already false, the pair is not a solution."
+  hint="Substitute $x=5$ and $y=-2$ into each inequality; the pair is a solution only if it makes both inequalities true."
   answer="no"
 >}}
 no
@@ -962,7 +442,7 @@ yes
 
 {{< multiplechoice
   question="Is $(-1,3)$ a solution to the system $\left\{\begin{array}{l} 4x-y<10 \\ -2x+2y>-8 \end{array}\right.$?"
-  hint="Substitute $x=-1$ and $y=3$ into both inequalities and check that both come out true."
+  hint="Substitute $x=-1$ and $y=3$ into each inequality; the pair is a solution only if it makes both inequalities true."
   answer="yes"
 >}}
 yes
@@ -971,7 +451,7 @@ no
 
 {{< multiplechoice
   question="Is $(-4,-1)$ a solution to the system $\left\{\begin{array}{l} y<\tfrac{3}{2}x+3 \\ \tfrac{3}{4}x-2y<5 \end{array}\right.$?"
-  hint="Substitute $x=-4$ and $y=-1$ into $y<\tfrac{3}{2}x+3$ first; it's already false, so the pair is not a solution."
+  hint="Substitute $x=-4$ and $y=-1$ into each inequality; the pair is a solution only if it makes both inequalities true."
   answer="no"
 >}}
 yes
@@ -980,7 +460,7 @@ no
 
 {{< multiplechoice
   question="Is $(8,3)$ a solution to the system $\left\{\begin{array}{l} y<\tfrac{3}{2}x+3 \\ \tfrac{3}{4}x-2y<5 \end{array}\right.$?"
-  hint="Substitute $x=8$ and $y=3$ into both inequalities and check that both come out true."
+  hint="Substitute $x=8$ and $y=3$ into each inequality; the pair is a solution only if it makes both inequalities true."
   answer="yes"
 >}}
 no
@@ -991,7 +471,7 @@ yes
 
 {{< multiplechoice
   question="Does the system $\left\{\begin{array}{l} x-3y\geq6 \\ y>\tfrac{1}{3}x+1 \end{array}\right.$ have a solution?"
-  hint="Write both boundary lines in slope-intercept form: they're parallel with slope $\tfrac{1}{3}$, and the shading for each inequality faces away from the other."
+  hint="Solve each inequality for $y$ and compare the boundary lines' slopes; then decide which side of each line is shaded and look for points shaded for both."
   answer="no"
 >}}
 no
@@ -1001,13 +481,14 @@ yes
 {{< fillin
   question="For the system $\left\{\begin{array}{l} y<-2x+2 \\ y\geq-x-1 \end{array}\right.$, find the intersection point of the two boundary lines $y=-2x+2$ and $y=-x-1$."
   answer="(3,-4)"
+  answerForm="decimal"
   answerDisplay="$(3,-4)$"
   hint="Set $-2x+2=-x-1$ and solve for $x$, then substitute back to find $y$."
 >}}
 
 {{< multiplechoice
   question="Is the point $(-5,2)$ in the solution region of the system $\left\{\begin{array}{l} 2x+y>-6 \\ -x+2y\geq-4 \end{array}\right.$?"
-  hint="Substitute $x=-5$ and $y=2$ into $2x+y>-6$ first — it's already false, so the point can't be in the solution region."
+  hint="Substitute $x=-5$ and $y=2$ into each inequality; the point is in the solution region only if it makes both inequalities true."
   answer="no"
 >}}
 yes
@@ -1026,8 +507,8 @@ Jake doesn't want to spend more than \$50 on bags of fertilizer and peat moss fo
 >}}
 
 {{< multiplechoice
-  question="Jake's system is $\left\{\begin{array}{l} f+p\leq20 \\ 2f+5p\leq50 \end{array}\right.$, where $f$ is bags of fertilizer and $p$ is bags of peat moss. Can he buy 15 bags of fertilizer and 4 bags of peat moss?"
-  hint="Check both inequalities: $15+4=19$ and $2(15)+5(4)=50$."
+  question="Can Jake buy 15 bags of fertilizer and 4 bags of peat moss?"
+  hint="Write the van-capacity inequality too, then substitute $f=15$ and $p=4$ into both inequalities; he can buy them only if both are true."
   answer="yes"
 >}}
 no
@@ -1035,8 +516,8 @@ yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Jake's system is $\left\{\begin{array}{l} f+p\leq20 \\ 2f+5p\leq50 \end{array}\right.$, where $f$ is bags of fertilizer and $p$ is bags of peat moss. Can he buy 10 bags of fertilizer and 10 bags of peat moss?"
-  hint="Check the budget inequality: $2(10)+5(10)=70$."
+  question="Can Jake buy 10 bags of fertilizer and 10 bags of peat moss?"
+  hint="Substitute $f=10$ and $p=10$ into the budget and van-capacity inequalities; he can buy them only if both are true."
   answer="no"
 >}}
 yes
@@ -1053,8 +534,8 @@ Mark is increasing his exercise routine by running and walking at least 4 miles 
 >}}
 
 {{< multiplechoice
-  question="Mark's system is $\left\{\begin{array}{l} w+r\geq4 \\ 270w+650r\geq1500 \end{array}\right.$, where $w$ is miles walked and $r$ is miles run. Could he meet his goal by walking 3 miles and running 1 mile?"
-  hint="Check the calorie inequality: $270(3)+650(1)=1{,}460$."
+  question="Could Mark meet his goal by walking 3 miles and running 1 mile?"
+  hint="Write the distance inequality too, then substitute $w=3$ and $r=1$ into both inequalities; he meets his goal only if both are true."
   answer="no"
 >}}
 no
@@ -1062,8 +543,8 @@ yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Mark's system is $\left\{\begin{array}{l} w+r\geq4 \\ 270w+650r\geq1500 \end{array}\right.$, where $w$ is miles walked and $r$ is miles run. Could he meet his goal by walking 2 miles and running 2 miles?"
-  hint="Check both inequalities: $2+2=4$ and $270(2)+650(2)=1{,}840$."
+  question="Could Mark meet his goal by walking 2 miles and running 2 miles?"
+  hint="Substitute $w=2$ and $r=2$ into the distance and calorie inequalities; he meets his goal only if both are true."
   answer="yes"
 >}}
 yes
@@ -1072,4 +553,4 @@ no
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.7: Graphing Systems of Linear Inequalities](https://openstax.org/books/intermediate-algebra-2e/pages/4-7-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz, Media links, and Self Check; converted the source Try Its into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.7: Graphing Systems of Linear Inequalities](https://openstax.org/books/intermediate-algebra-2e/pages/4-7-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible graphs with numbered axes, showing each worked example's two shading steps on one graph and drawing the photo-display and hamburger-and-cookie graphs in Quadrant I with boundary segments ending at the axes; wrote the worked examples' step tables as prose; omitted the Be Prepared quiz, the Media links, the Key Concepts summary (it repeats the how-to box), the writing exercises, and the Self Check; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, turning the how-to example's test-point check into one, asking whether one parallel-line system has a solution, asking for another system's boundary lines and then its solution graph, and asking parts (a) and (c) of the donut-and-energy-drink problem, part (a) for the calorie inequality alone; wrote the Key terms list from the module's glossary and definition boxes; and adapted selected end-of-section exercises into an interactive Practice block, asking for the boundary lines' intersection point in one graphing exercise and whether the point $(-5,2)$ lies in the solution region of another, asking parts (a), (c), and (d) of each application exercise, part (a) for one of its inequalities, and giving running's rate in Mark's exercise as 650 calories per mile, where the source omits "per mile". Corrections: the photo-display example includes the points on the $x$-axis from $(25,0)$ to $(50,0)$, where the source prints $(55,0)$ ($4x+10y=200$ meets the $x$-axis at $x=50$); the hamburger-and-cookie example checks the point $(3,1)$ for 3 hamburgers and 1 cookie, where the source checks $(3,2)$, a point outside the solution region; and its calorie condition reads "at least 800", where the source writes "more that 800".</small>

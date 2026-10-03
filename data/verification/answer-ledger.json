@@ -351,6 +351,10 @@
    "verdict": "ok",
    "note": "sin(2x)=sin(x+x)=sinx cosx+cosx sinx=2 sinx cosx by the sum formula for sine; confirmed by numeric sampling of x -- functions are the Same, matching the CNXML-printed solution."
   },
+  "00efb9b0d5cc8beb": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "00f2894ef5cb6291": {
    "verdict": "ok",
    "note": "source exercise fs-idm10859360 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -486,13 +490,6 @@
   },
   "01368ab1d68dc097": {
    "verdict": "ok"
-  },
-  "013c5eefd33f1f09": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "013e1e8f17977fcd": {
    "verdict": "ok"
@@ -853,9 +850,6 @@
   "0202981b5d90f34a": {
    "verdict": "ok"
   },
-  "0204d7349cf8f387": {
-   "verdict": "ok"
-  },
   "020ab1da44d710a8": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661369825 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -881,6 +875,14 @@
    "note": "source exercise fs-idm52941392 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "021a580260a352a6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -964,6 +966,14 @@
   "02506bddb9ce9dc3": {
    "verdict": "ok",
    "note": "tan(pi/2-x)=sin(pi/2-x)/cos(pi/2-x)=cosx/sinx=cotx; confirmed by numeric sampling of x; same retype hazard as the sec item, hence multiplechoice."
+  },
+  "025454edbc4d53a2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "0255e5293445f2e7": {
    "verdict": "ok",
@@ -1696,6 +1706,14 @@
    "verdict": "ok",
    "note": "KC 1 3.5 § body DNA and RNA (fs-id1802488), m66443 — parent re-read against the module"
   },
+  "0441a66fa0c4788e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "0441ca4bcf95c1c1": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662684321 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -1876,13 +1894,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "04bb275056aa2354": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -2088,6 +2099,14 @@
     "result": "agrees"
    }
   },
+  "0530940428b8aaa7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "0531a723e51c9d1d": {
    "verdict": "ok",
    "note": "body cloze from § PCR Variations: \"Reverse transcriptase PCR (RT-PCR) is used for obtaining DNA copies of a specific mRNA molecule.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -2248,13 +2267,6 @@
    "note": "MC transcribes fs-idp131254784 (Review Q3) verbatim; source <solution> keys option A \"single common ancestor\", matching the body's description of the classic tree's trunk. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "058d0cfe282db00a": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -3278,6 +3290,14 @@
     "result": "agrees"
    }
   },
+  "087909b9d45fa15a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "087d98727a2163c3": {
    "verdict": "ok",
    "note": "author-built from § Nucleic Acid Probing: \"If researchers have a portion of the sequence of DNA for the gene of interest, they can design a DNA probe , a single-stranded DNA fragment…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -3372,13 +3392,6 @@
   },
   "08bebfaf2eab1b55": {
    "verdict": "ok"
-  },
-  "08c40eb85b918df1": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "08c437e0f868a325": {
    "verdict": "ok",
@@ -3523,9 +3536,6 @@
    }
   },
   "093f4334770802e6": {
-   "verdict": "ok"
-  },
-  "0942ac1ec3784792": {
    "verdict": "ok"
   },
   "0944e6a37e7a9f88": {
@@ -3793,9 +3803,6 @@
     "result": "agrees"
    }
   },
-  "09e4cff2dd3c2a16": {
-   "verdict": "ok"
-  },
   "09e4e1ba8629ed67": {
    "verdict": "ok"
   },
@@ -3873,9 +3880,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0a46dbc2ee680fbf": {
-   "verdict": "ok"
   },
   "0a5042afffdaae2d": {
    "verdict": "ok",
@@ -5018,6 +5022,14 @@
   "0d150e1d186f676b": {
    "verdict": "ok"
   },
+  "0d178c9487bf16f3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "0d1a3bc83fc0b0a0": {
    "verdict": "ok",
    "note": "glossary definition fs-id2137674 (shotgun sequencing); prompt built from the meaning and the section's cut-and-reassemble description. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -5083,6 +5095,14 @@
   "0d3ceebcb027a91e": {
    "verdict": "ok",
    "note": "m66407 eip-514 — model answer is the CNXML solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0d407b980240e850": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "0d45ad49d7dd6888": {
    "verdict": "ok",
@@ -5398,9 +5418,6 @@
   "0e01703e37d43dd0": {
    "verdict": "ok"
   },
-  "0e0bd58a0de2ce7e": {
-   "verdict": "ok"
-  },
   "0e0d799e287dc8d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5464,6 +5481,10 @@
     "result": "agrees"
    }
   },
+  "0e24fa3eb9595974": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "0e258cde31b3fcd1": {
    "verdict": "ok"
   },
@@ -5487,13 +5508,6 @@
   },
   "0e3398d447996220": {
    "verdict": "ok"
-  },
-  "0e3644d5a5d49a9c": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "0e3a2a2ebd97998a": {
    "verdict": "ok",
@@ -5849,6 +5863,14 @@
   "0f11bec2626f6310": {
    "verdict": "ok"
   },
+  "0f12fa78f846db07": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "0f14815f5da47087": {
    "verdict": "ok",
    "note": "Glossary 'chylomicron' (fs-idp41940288): 'small lipid globule' — matches.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -5910,13 +5932,6 @@
   "0f372156cb1ff877": {
    "verdict": "ok",
    "note": "each input a,c,e appears once -> function; key p1270 #1 \"function\""
-  },
-  "0f40dd8c94c5466f": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "0f43f24734e3ea64": {
    "verdict": "ok",
@@ -6171,9 +6186,6 @@
   "0fec5acacfbb9a97": {
    "verdict": "ok"
   },
-  "0fed8bf5a34f03e9": {
-   "verdict": "ok"
-  },
   "0ff6a6ad24a3968e": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660204573 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -6372,9 +6384,6 @@
     "result": "agrees"
    }
   },
-  "108cfafc5ae9d00d": {
-   "verdict": "ok"
-  },
   "1090abd7eb23ef31": {
    "verdict": "ok",
    "note": "author-built from § Very Early Hominins: \"If Orrorin is a human ancestor, then the australopithicenes may not be in the direct human lineage.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -6474,6 +6483,14 @@
   },
   "10f1ae64c23e0e7a": {
    "verdict": "ok"
+  },
+  "10fc471c29bfcb54": {
+   "verdict": "ok",
+   "note": "parent re-derived Oct 3 2026: boundaries of y>=3x+1 and -3x+y>=-4 are y=3x+1 and y=3x-4 (source Try It fs-id after the parallel example)",
+   "solved": {
+    "by": "parent",
+    "result": "agrees"
+   }
   },
   "10fdb9b0de91f356": {
    "verdict": "ok",
@@ -7292,6 +7309,14 @@
   "13222422f3662872": {
    "verdict": "ok"
   },
+  "13279c8f350a3402": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "1331603a2c41bdc2": {
    "verdict": "ok",
    "note": "source exercise fs-idm147867984 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -7664,9 +7689,6 @@
   "140a45d318c9daf9": {
    "verdict": "ok",
    "note": "CT fs-idp76047552: model answer transcribes solution fs-idp64739856 verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "140d71f46ab93cde": {
-   "verdict": "ok"
   },
   "14137783a843e69f": {
    "verdict": "ok",
@@ -8560,9 +8582,6 @@
     "result": "agrees"
    }
   },
-  "1657a0e6364f6a05": {
-   "verdict": "ok"
-  },
   "165b14c89337158e": {
    "verdict": "ok",
    "note": "body cloze from § Type IV Hypersensitivities: \"Exposure to hapten antigens in poison ivy can cause contact dermatitis, a type IV hypersensitivity.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -9354,13 +9373,6 @@
     "result": "agrees"
    }
   },
-  "182bd83a7b06ccd3": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "182d715fea359edd": {
    "verdict": "ok"
   },
@@ -9443,6 +9455,14 @@
     "result": "agrees"
    }
   },
+  "1863de84364d9fe8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "18643ea4a2bae0db": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9458,6 +9478,14 @@
   "18665533b8575ae7": {
    "verdict": "ok",
    "note": "Vertex of f(x)=x^2-2x: h=1,k=f(1)=-1, so (1,-1); computed via node, matches printed function."
+  },
+  "186c20393e081646": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "186c773e04e3d979": {
    "verdict": "ok",
@@ -9504,6 +9532,14 @@
   },
   "18866ad15804c3dd": {
    "verdict": "ok"
+  },
+  "18870ecbb10dd85a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "1888ef018e93e913": {
    "verdict": "ok",
@@ -9559,9 +9595,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "18a780318c5ea1cc": {
-   "verdict": "ok"
   },
   "18aba53c0db19e11": {
    "verdict": "ok",
@@ -9879,13 +9912,6 @@
   "195693f06622ccc2": {
    "verdict": "ok",
    "note": "Solved y=x^3+5 for x: f^{-1}(x)=cbrt(x-5). Checked composition symbolically (standard cubic/cube-root inverse pair). Matches CNXML exercise fs-id1165137725343 (source #13), which has a solution."
-  },
-  "195bf0786ce2b1de": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "195ca3f741ff1c42": {
    "verdict": "ok",
@@ -10953,13 +10979,6 @@
    "verdict": "ok",
    "note": "c^2=25+36=61 -> foci (sqrt61,0),(-sqrt61,0); matches source fs-id2129321."
   },
-  "1bf23eb3f890548c": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "1bf3a1775180c138": {
    "verdict": "ok",
    "note": "fs-idm47940992: source SOL D (hermaphroditism); \"Self fertilization is common in animals that have limited mobility or are not motile\" and hermaphroditism is the only sexual (non-asexual) option among the four. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -11039,6 +11058,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1c27865116c4a782": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -11393,13 +11420,6 @@
   "1d230f92e3e7f4ad": {
    "verdict": "ok"
   },
-  "1d2de8eac06a26c5": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "1d2e571eaa545868": {
    "verdict": "ok",
    "note": "m66434 Section Summary: 'Hydrogen bonds allow ions and other polar molecules to dissolve in water. Therefore, water is an excellent solvent.' Blank correctly isolates 'Hydrogen bonds'; accept list covers 'hydrogen bonding'; no accept-list member appears in the prompt (the sentence's own word 'solvent' is unrelated to the answer). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -11502,9 +11522,6 @@
     "result": "agrees"
    }
   },
-  "1d7989225bfb9418": {
-   "verdict": "ok"
-  },
   "1d7abf28de46657f": {
    "verdict": "ok",
    "note": "body cloze from § Lipid Catabolism: \"The released fatty acids are catabolized in a process called β-oxidation , which sequentially removes two-carbon acetyl groups from the end…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -11589,13 +11606,6 @@
    "note": "Glossary textin from definition fs-id1631200 (transcription factor binding site); prompt paraphrases the meaning, answer is the term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "1d9488dbff48e4a1": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -12252,6 +12262,14 @@
     "result": "agrees"
    }
   },
+  "1f38249c79ba3c21": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "1f3b23352923c19c": {
    "verdict": "ok",
    "note": "glossary recall: apomixis (fs-idm139696656) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -12601,6 +12619,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "203e0c807029a779": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -13082,6 +13108,14 @@
    "note": "22.4 glossary recall: 'CA-MRSA' meaning transcribed as the prompt, abbreviation as answer; accept includes 'community-associated MRSA,' the compound form used in the body prose. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2182298e81358e08": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -13747,13 +13781,6 @@
     "result": "agrees"
    }
   },
-  "23925c653954782b": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "2393913dd3fbe7d2": {
    "verdict": "ok",
    "note": "c^2=49+49=98 -> c=7sqrt(2) -> foci (2+7sqrt2,-7),(2-7sqrt2,-7); matches source fs-id1636747."
@@ -13887,6 +13914,14 @@
    "note": "parent: accept list widened or prompt reworded after the checker pass; answer re-read against the glossary definition | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2412033dfcddcb1f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -14103,6 +14138,14 @@
    "note": "KC 5 26.1 § The Peripheral Nervous System, m58940 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "24c357afe7a6017a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -14576,6 +14619,10 @@
     "result": "agrees"
    }
   },
+  "25ee88013d4edb3f": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "25f3f8e2d87437fc": {
    "verdict": "ok",
    "note": "author-built from § Polyacrylamide Gel Electrophoresis, Check Your Understanding: \"On what basis are proteins separated in SDS-PAGE?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14636,6 +14683,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "261773592dbd6162": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -14827,9 +14882,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "26b77abe952dbffc": {
-   "verdict": "ok"
   },
   "26b986c2feced080": {
    "verdict": "ok",
@@ -15108,6 +15160,14 @@
    "verdict": "ok",
    "note": "Practice (Descartes). Sign changes of x^4-x^2-1 (signs +,0,-,0,-1 -> effectively +,-,-): 1 change (1 positive); f(-x) is the same polynomial (only even powers plus a constant), also 1 change (1 negative). Matches CNXML solution for fs-id1165134061970."
   },
+  "2778ae5c047e3f5b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "277aec1baae49365": {
    "verdict": "ok",
    "note": "m66445 exercise fs-id1775146 is a different item; this is fs-id1989359, solution B = 'cell', matches the module's own cell-theory tenet ('the cell is the basic unit of life'). | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -15260,6 +15320,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "27cc6ea7323aef0b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -15732,9 +15800,6 @@
     "result": "agrees"
    }
   },
-  "290b50d1e5e37048": {
-   "verdict": "ok"
-  },
   "290cdd5ee93735eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -15863,9 +15928,6 @@
    "note": "reverted to selfcheck per checker defect 1 / parent ruling: source SA stem restored verbatim; the key needs both adjacent BSL-3 sentences (potential for lethal inhalation infection; indigenous or exotic), not one, so it is not gradable as multiplechoice; model + rubric from those two sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
   "29637d5a7d223337": {
-   "verdict": "ok"
-  },
-  "296d4de83a14dc52": {
    "verdict": "ok"
   },
   "296f616684762934": {
@@ -16024,6 +16086,14 @@
    "note": "glossary recall: heterotroph (def-00003) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "29e007bc47c31d80": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -16745,6 +16815,14 @@
     "result": "agrees"
    }
   },
+  "2c0e9f3a303faaee": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "2c10fd7f90ff1991": {
    "verdict": "ok",
    "note": "glossary recall: trypsin (fs-idp54026480) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -16752,6 +16830,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2c1381a745122019": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "2c16a4300c7946a2": {
    "verdict": "ok",
@@ -16849,6 +16931,14 @@
   },
   "2c4d3178234266f8": {
    "verdict": "ok"
+  },
+  "2c4f958be139696a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "2c52f185e626ae44": {
    "verdict": "ok",
@@ -17041,9 +17131,6 @@
   "2ce3336f6ab8621b": {
    "verdict": "ok"
   },
-  "2ce360fd835be99e": {
-   "verdict": "ok"
-  },
   "2ce3efb8b3e9322e": {
    "verdict": "ok",
    "solved": {
@@ -17080,13 +17167,6 @@
    "note": "author-built from § Scanning Probe Microscopy, Check Your Understanding: \"Which has higher magnification, a light microscope or a scanning probe microscope?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "2d04907dbbf32ca4": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -17296,9 +17376,6 @@
     "result": "agrees"
    }
   },
-  "2d9675fc4fd4c798": {
-   "verdict": "ok"
-  },
   "2d975d5261c672a1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17424,6 +17501,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2e03d6a78dc3072e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -17617,6 +17702,14 @@
     "result": "agrees"
    }
   },
+  "2e6223086d46d847": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "2e64be499aa3723e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -17804,9 +17897,6 @@
     "result": "agrees"
    }
   },
-  "2efe83c3e244e53d": {
-   "verdict": "ok"
-  },
   "2f0586699dceaaec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17897,6 +17987,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2f40f4a01163e2de": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -19308,6 +19406,14 @@
    "verdict": "ok",
    "note": "The domain of ln is (0,infinity), so ln(-500) is undefined for reals; matches CNXML Try It 8, converted to multiple choice since the answer is categorical (undefined), not a number."
   },
+  "3354f9dd12352274": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "335f5344f92c367a": {
    "verdict": "ok"
   },
@@ -19964,6 +20070,10 @@
   "352f65ee62cfd9e5": {
    "verdict": "ok"
   },
+  "352ff9aeeba13cdc": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "35318b96263f5a3b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20291,6 +20401,14 @@
     "result": "agrees"
    }
   },
+  "3623e4fbc5816127": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "3628d5e238464e2d": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165137658781: k=100/(1*2*5)=10, so y=10xzw. Verified with node arithmetic; matches CNXML solution."
@@ -20463,6 +20581,14 @@
   "369549126ff880dd": {
    "verdict": "ok"
   },
+  "369da6189f16e440": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "36af168400a53ccd": {
    "verdict": "ok"
   },
@@ -20588,9 +20714,6 @@
   "36f5f6dea0dc0ec2": {
    "verdict": "ok",
    "note": "Body selfcheck, Protozoan Virulence CYU bullet. Model answer joins the Plasmodium falciparum PfEMP1 antigenic-variation sentence and the Trypanosoma brucei glycoprotein-alteration sentence; both from this module's Protozoan Virulence paragraphs. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "36f8cd577418d333": {
-   "verdict": "ok"
   },
   "36f9212060ff48bf": {
    "verdict": "ok"
@@ -21950,13 +22073,6 @@
     "result": "agrees"
    }
   },
-  "3a932597d5b5989d": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "3a98ba819af3c3b4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22036,9 +22152,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "3ad92b990f2f4806": {
-   "verdict": "ok"
   },
   "3adf61f8cd1dc699": {
    "verdict": "ok",
@@ -22375,13 +22488,6 @@
     "result": "agrees"
    }
   },
-  "3bf12d7a9e67ee1c": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "3bf53cf2524d48dd": {
    "verdict": "ok"
   },
@@ -22442,13 +22548,6 @@
    "note": "source exercise fs-idm45339088 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "3c210ee0320acc81": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -23401,6 +23500,14 @@
    "note": "body cloze from § Effects of Mutations on Protein Structure and Function: \"Sometimes the effects of missense mutations may be only apparent under certain environmental conditions; such missense mutations are called…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3eeeab82b451219c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -24418,6 +24525,14 @@
     "result": "agrees"
    }
   },
+  "41529aef6af5e3d0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "4152ae03efa6c055": {
    "verdict": "ok",
    "note": "textin from glossary term 'Milankovitch cycles' (fs-idp38626128); prompt paraphrases the meaning plus the body's numeric range, answer is the term; accept singular form. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -25332,6 +25447,14 @@
   },
   "43ea045e49e832e7": {
    "verdict": "ok"
+  },
+  "43f7354c1bf82667": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "43fbbd2071255d3a": {
    "verdict": "ok"
@@ -26290,9 +26413,6 @@
     "result": "agrees"
    }
   },
-  "4649a3746e421b1f": {
-   "verdict": "ok"
-  },
   "465272020b04c54b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -26481,6 +26601,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "46dcbafd232d7b96": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -27123,6 +27251,14 @@
     "result": "agrees"
    }
   },
+  "48fc47eaff1f8a72": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "48fffd7032e62b4b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -27146,6 +27282,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "491f2fd68d548a91": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "491f6a0295e2d57e": {
    "verdict": "ok",
@@ -27178,6 +27318,14 @@
   "492852e15d002118": {
    "verdict": "ok",
    "note": "Critical Thinking eip-108; model answer is the CNXML solution verbatim, checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "492a25e0e86c9722": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "492a57cdc7ead02e": {
    "verdict": "ok",
@@ -28417,9 +28565,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "4c61b335b8b7d92a": {
-   "verdict": "ok"
-  },
   "4c66eaaecd989da4": {
    "verdict": "ok"
   },
@@ -29353,6 +29498,14 @@
    "verdict": "ok",
    "note": "u-v = (-3-(-2), 4-1) = (-1,3) -> -i+3j. Node-verified."
   },
+  "4f1cd448869360f3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "4f207e1ee2e50c7b": {
    "verdict": "ok",
    "note": "source exercise fs-id1167659071010 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -29604,13 +29757,6 @@
    "note": "KC 2 5.4 § glossary potocytosis (fs-id1442893), m66376 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "4fd4e99a3f696c0a": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -29891,9 +30037,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "509bebbed8f9229c": {
-   "verdict": "ok"
   },
   "50a1cffad4115184": {
    "verdict": "ok",
@@ -30221,6 +30364,14 @@
     "result": "agrees"
    }
   },
+  "51a9dac20bbc7942": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "51aea4f0f515f568": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30508,6 +30659,14 @@
     "result": "agrees"
    }
   },
+  "52867dc13dcf1856": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "5288e6333870051f": {
    "verdict": "ok",
    "note": "body CYU box1 (WHO section), 1 bullet: matches CNXML paras naming WHO, CDC, and the EU Health Security Committee | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -30559,13 +30718,6 @@
   "529d6e4c484a5ee3": {
    "verdict": "ok",
    "note": "body selfcheck, Sporothrix progression; model answer is the Sporotrichosis section's second paragraph verbatim in substance; hash changed after the checker's concern 3 split the merged 'nodules...as more lymph nodes' checkpoint into two checkpoints matching the source's two stages | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "529dfb16fa7acd9c": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "529f1ee11278a8ac": {
    "verdict": "ok",
@@ -31015,6 +31167,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "53e8b968426449c0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -31989,6 +32149,14 @@
     "result": "agrees"
    }
   },
+  "570284600e02d905": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "57045bb18db45984": {
    "verdict": "ok",
    "note": "source exercise fs-idp1445456 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -32388,6 +32556,10 @@
     "result": "agrees"
    }
   },
+  "57e4009e812df99f": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "57e750068749ba6f": {
    "verdict": "ok",
    "note": "glossary recall: ADH — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -32405,13 +32577,6 @@
    "note": "body cloze from § Movement: \"As you read these words, red and white blood cells are moving throughout your body, muscle cells are contracting and relaxing to maintain y…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "57fd10909b29d387": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -32453,13 +32618,6 @@
   "582f08e112ca1eb6": {
    "verdict": "ok",
    "note": "Practice selfcheck, source Critical Thinking fs-id1167661730304, unkeyed; module explains the type IV/memory-T-cell mechanism but not BCG itself, model answer states what the module gives and stops | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "58326a49bbe2cde8": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "583b13d23fed7e68": {
    "verdict": "ok",
@@ -33390,9 +33548,6 @@
     "result": "agrees"
    }
   },
-  "5ad36a90262dfcbe": {
-   "verdict": "ok"
-  },
   "5ad57cd672159595": {
    "verdict": "ok",
    "note": "glossary recall: G-protein (fs-idp52786928) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -33456,6 +33611,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-C",
+    "result": "agrees"
+   }
+  },
+  "5af75185ea61d080": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -33645,9 +33808,6 @@
     "result": "agrees"
    }
   },
-  "5b83d2a2a98aa21d": {
-   "verdict": "ok"
-  },
   "5b8504a0baf90054": {
    "verdict": "ok",
    "note": "Practice: line through (-1,0) at t=0 and (3,-2) at t=1 -> x(t)=-1+4t,y(t)=-2t by linear interpolation; matches CNXML solution exactly."
@@ -33786,6 +33946,14 @@
   },
   "5be6f0786f762592": {
    "verdict": "ok"
+  },
+  "5bf04c1647c7d72d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "5bf27dad0b8464eb": {
    "verdict": "ok",
@@ -34089,13 +34257,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "5cbfa26ab535fdf5": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -34850,6 +35011,14 @@
     "result": "agrees"
    }
   },
+  "5ebcf192efdbaf8b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "5ebde30eafe031b0": {
    "verdict": "ok",
    "note": "22.4 MRSA MC: 'aureus' italicized per CNXML emphasis; key per source solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -34912,9 +35081,6 @@
    }
   },
   "5f0a7b1c26f9d8cf": {
-   "verdict": "ok"
-  },
-  "5f1975c4611dd54d": {
    "verdict": "ok"
   },
   "5f240febf34406fc": {
@@ -35543,9 +35709,6 @@
     "result": "agrees"
    }
   },
-  "6113fc6f2b56f5c1": {
-   "verdict": "ok"
-  },
   "611ac738e35ce9f7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35751,6 +35914,10 @@
     "result": "agrees"
    }
   },
+  "61bd2892c560220c": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "61c200409e31849a": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"If tissues are transplanted from one area on an individual to another area on the same individual (e.g., a skin graft on a burn patient), i…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -35953,6 +36120,14 @@
   },
   "629779e2099e3fb3": {
    "verdict": "ok"
+  },
+  "629d918ac428ed8a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "629f086bdbaa7433": {
    "verdict": "ok",
@@ -36252,6 +36427,14 @@
   "639d2d0f7fd6ab33": {
    "verdict": "ok"
   },
+  "639e191346f8618f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "63a0d240aa7dc0be": {
    "verdict": "ok",
    "solved": {
@@ -36362,13 +36545,6 @@
    }
   },
   "63f6d543b07423e5": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "63fe5dfe709eaf6a": {
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
@@ -36629,6 +36805,14 @@
    "verdict": "ok",
    "note": "m66554 critical-thinking exercise fs-idp61504304: model answer is the CNXML solution verbatim (Giardia/G. lamblia italicized per source emphasis, checkpoints reworded plain since checkpoints render as plain text). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "651321d3901cc0a1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "6515467cdcc7a470": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: bioremediation (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -36639,13 +36823,6 @@
   },
   "65312dd541abd562": {
    "verdict": "ok"
-  },
-  "65373c0f9bc5e20f": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "653cdb4185a86ed8": {
    "verdict": "ok",
@@ -36838,6 +37015,14 @@
   "65a7f4530d9311ba": {
    "verdict": "ok"
   },
+  "65ab515d28c282d5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "65b378ad4cff28b1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36883,13 +37068,6 @@
   },
   "65d6c42cf41d94f9": {
    "verdict": "ok"
-  },
-  "65d96294702db5c6": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "65dc29b220f19723": {
    "verdict": "ok",
@@ -37310,13 +37488,6 @@
     "result": "agrees"
    }
   },
-  "6735607d6b14e15d": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "673a74217e03f9fe": {
    "verdict": "ok",
    "note": "author-written from § Prokaryotic Gene Regulation (the repressor/activator/inducer paragraph). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -37452,13 +37623,6 @@
   },
   "677bc8ebd4a3aa01": {
    "verdict": "ok"
-  },
-  "67831c53e7992700": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "67918abcb90bc21d": {
    "verdict": "ok",
@@ -37597,9 +37761,6 @@
   "67fc5e50e97b4f9e": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "67ffbdf4ff2ea569": {
-   "verdict": "ok"
   },
   "68031a32c40a6a04": {
    "verdict": "ok",
@@ -37838,6 +37999,14 @@
     "result": "agrees"
    }
   },
+  "68b4c3795e8f11c3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "68b668a0aeff4567": {
    "verdict": "ok"
   },
@@ -37951,13 +38120,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "6929c661d79b4874": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "692ae1501575a91c": {
    "verdict": "ok",
    "note": "KC 5 21.3 § Oral Herpes, m58908",
@@ -37995,20 +38157,6 @@
    "note": "source exercise fs-id1172098392508 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "6944315b4000eb33": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "6946707fcab14bd4": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -38053,6 +38201,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "69685e320ea21501": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "696c500ac2d69a20": {
    "verdict": "ok",
@@ -38835,9 +38987,6 @@
     "result": "agrees"
    }
   },
-  "6c36b19ceae6e810": {
-   "verdict": "ok"
-  },
   "6c38bf4388c838ad": {
    "verdict": "ok",
    "note": "Review Question fs-id1422483; source solution keys option C, water moves from high to low water concentration. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -38915,9 +39064,6 @@
     "result": "agrees"
    }
   },
-  "6c668fe5726d9e1e": {
-   "verdict": "ok"
-  },
   "6c68b6345182def5": {
    "verdict": "ok",
    "solved": {
@@ -38940,9 +39086,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "6c7617bbdd926b4e": {
-   "verdict": "ok"
   },
   "6c8a00fe7ec53c46": {
    "verdict": "ok",
@@ -39214,6 +39357,14 @@
    "verdict": "ok",
    "note": "Given figure per CNXML ti_06_01_07 solution 4sin(pi/5 x - pi/5)+4; independently confirmed max 8/min 0 (D=4,|A|=4), period 10 (B=pi/5), peak shifted to x=1 (C/B=1)."
   },
+  "6d54b0f442d25ddc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "6d56c56ae20c0c63": {
    "verdict": "ok"
   },
@@ -39401,9 +39552,6 @@
    }
   },
   "6de452cdaedbf259": {
-   "verdict": "ok"
-  },
-  "6def64c2af923383": {
    "verdict": "ok"
   },
   "6def84f2d4177ac2": {
@@ -39703,9 +39851,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "6ecb83a0844b96dc": {
-   "verdict": "ok"
   },
   "6ed1d6df0b58e607": {
    "verdict": "ok"
@@ -40459,6 +40604,14 @@
     "result": "agrees"
    }
   },
+  "70d35f0647dd86c3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "70d89793a39b1e2c": {
    "verdict": "ok"
   },
@@ -40726,9 +40879,6 @@
     "result": "agrees"
    }
   },
-  "71866239540a2723": {
-   "verdict": "ok"
-  },
   "718ad38d1a1aa079": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40819,13 +40969,6 @@
   "71bf14bb5dae1a99": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "71d1db44e60ff91e": {
-   "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
@@ -41873,13 +42016,6 @@
     "result": "agrees"
    }
   },
-  "74b572d9c2863b41": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "74b6c3f60d276e99": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Organ-specific autoimmune diseases include celiac disease , Graves disease , Hashimoto thyroiditis , type I diabetes mellitus, and Addison…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -42021,6 +42157,14 @@
   "74f0744a2b498366": {
    "verdict": "ok",
    "note": "7π/6 QIII ref angle π/6: sin=-1/2, csc=1/sin=-2; node check 1/Math.sin(7π/6)=-2.0000000000000013"
+  },
+  "74f78c8b6dff8eda": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "74faca13659a7ef6": {
    "verdict": "ok",
@@ -42876,6 +43020,14 @@
   },
   "776c74366de22aaa": {
    "verdict": "ok"
+  },
+  "777182200230b7a9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "7771fd89fa612bd1": {
    "verdict": "ok",
@@ -43833,6 +43985,14 @@
     "result": "agrees"
    }
   },
+  "7a03b7b00586c5ab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "7a060fecc13ebc33": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44089,13 +44249,6 @@
     "result": "agrees"
    }
   },
-  "7a7df9d1eefa202f": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "7a8e97b24f2084c3": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: dysuria (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44126,9 +44279,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "7aa9bee5a0c250de": {
-   "verdict": "ok"
   },
   "7aac334a506d7948": {
    "verdict": "ok",
@@ -44364,6 +44514,14 @@
     "result": "agrees"
    }
   },
+  "7b38471fcd8322b5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "7b3bbd2a95a16f22": {
    "verdict": "ok",
    "note": "parent re-verdict after accept widened to include the plural compound form the glossary uses (recombinant DNA molecules); answer unchanged, re-read against m66511 glossary; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44496,6 +44654,14 @@
   "7b84a9197d31e374": {
    "verdict": "ok"
   },
+  "7ba33299f0afce6e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "7ba75434bba199f6": {
    "verdict": "ok",
    "note": "m66620 note.visual-connection fs-idp48683952 / exercise fs-idp120487536, key B 'Myelin sheath provides an insulating layer to the dendrites.' — false as printed because the section's own text and figure wrap myelin around the axon, not the dendrites; page key matches source key verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44609,13 +44775,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "7bd177a75c0b675b": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -44897,9 +45056,6 @@
   "7c59ed2603d3d14d": {
    "verdict": "ok",
    "note": "KC 8 44.5 § summary, m66419 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:139): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
-  },
-  "7c5c885dd0e0bffe": {
-   "verdict": "ok"
   },
   "7c5d53a0aa15ef7a": {
    "verdict": "ok"
@@ -45252,13 +45408,6 @@
     "result": "agrees"
    }
   },
-  "7d4970a25a1b0c22": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "7d507ff57e0999a1": {
    "verdict": "ok",
    "note": "author-built from § Actinobacteria: High G+C Gram-Positive Bacteria: \"Ubiquitous in the environment and on the human skin; oxidase-positive (as opposed to morphologically similar S. aureus ); some are opportun…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -45334,13 +45483,6 @@
     "result": "agrees"
    }
   },
-  "7d7147b7cbd8f6dd": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "7d72e4112735e3bb": {
    "verdict": "ok",
    "note": "Matches CNXML ti_03_04_05 solution f(x)=-1/8(x-2)^3(x+1)^2(x-4) verbatim; independently confirmed the figure's marked intercepts (-1,0),(2,0),(4,0) and y-intercept (0,-4) all satisfy this formula by node evaluation of the expanded coefficients."
@@ -45349,6 +45491,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7d84b3a3568ae938": {
+   "verdict": "ok",
+   "note": "parent re-derived Oct 3 2026: C(x)=5x+6500 and R(x)=10x from the water-bottle stem; break-even (1300, 13000) inside the 0-2000 by 0-20000 grid",
+   "solved": {
+    "by": "parent",
     "result": "agrees"
    }
   },
@@ -45361,9 +45511,6 @@
    }
   },
   "7d87a04d957a8655": {
-   "verdict": "ok"
-  },
-  "7d8e341755332dc8": {
    "verdict": "ok"
   },
   "7d90aecb0ebd07b3": {
@@ -46143,6 +46290,14 @@
     "result": "agrees"
    }
   },
+  "7ff47af0943f24a1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "7ff6806a7922f143": {
    "verdict": "ok",
    "note": "Bio 28.2 nematocyst selfcheck: model answer corrected per erratum 993 (organelles within cnidocytes, m66395 body+glossary); parent re-read Sep 23 2026"
@@ -46187,9 +46342,6 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "800aa8d1b76a64c4": {
-   "verdict": "ok"
-  },
-  "800bfde36dda1803": {
    "verdict": "ok"
   },
   "800c8e4250177b73": {
@@ -46783,6 +46935,14 @@
     "result": "agrees"
    }
   },
+  "820ead888613bead": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "820f2055ed0da835": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -46964,6 +47124,14 @@
     "result": "agrees"
    }
   },
+  "82a33b8b3e1087e6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "82a4806132ca5bbd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -46997,13 +47165,6 @@
    "note": "key-term recall: gene expression; printed in § introduction: \"Gene expression is the synthesis of a specific protein with a sequence of amino acids that is encoded in the gene.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "82adcd7511cb3afa": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -47512,9 +47673,6 @@
    "verdict": "ok",
    "note": "x^2+4x+4=(x+2)^2, so f(x)=x^2(x+2)^2 has zero 0 (mult 2) and -2 (mult 2). Matches CNXML fs-id1165135525889 solution."
   },
-  "83fc5d53284f7408": {
-   "verdict": "ok"
-  },
   "83fe9023dfbc3dfe": {
    "verdict": "ok",
    "note": "Algebraic exercise 37 (fs-id1165135449709): piecewise f, x>0 branch is x-3; lim_{x->0+} f(x) = 0-3 = -3; matches CNXML solution -3."
@@ -47746,13 +47904,6 @@
    "verdict": "ok",
    "note": "Practice (source fs-id1165135550012, a=5,c=6,beta=35): Area=0.5*5*6*sin(35)=8.6036 -> 8.6. Matches CNXML answer 8.6."
   },
-  "849d8bf5fe3341b8": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "849f05c979c605ce": {
    "verdict": "ok",
    "note": "Glossary textin, definition id fs-idm83407200: 'long-term potentiation (LTP)' = 'prolonged increase in synaptic coupling between a pre-and postsynaptic cell'; prompt paraphrases the body's Hebbian-principle description of the same term — matches, accept covers LTP. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -47882,6 +48033,14 @@
    "verdict": "ok",
    "note": "parent: r=27^(1/3)=3, theta=(240+360k)/3 -> 80,200,320"
   },
+  "84e68c85a4fc6458": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "84e6f9ec1b5138ec": {
    "verdict": "ok",
    "note": "KC 7 41.5 § Atrial Natriuretic Peptide Hormone, m66661 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the ANP paragraph, Section 41.5)"
@@ -47934,9 +48093,6 @@
   "850397e837b904be": {
    "verdict": "ok"
   },
-  "85045b69b3c6c629": {
-   "verdict": "ok"
-  },
   "8504a9da16bb5699": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -47972,9 +48128,6 @@
    }
   },
   "85147865346b9f23": {
-   "verdict": "ok"
-  },
-  "852123166dc8fd2c": {
    "verdict": "ok"
   },
   "8528b1b53a087e83": {
@@ -48714,6 +48867,14 @@
   "8743a7c393318c44": {
    "verdict": "ok"
   },
+  "8745da334dd50e11": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "87479406c95b13ec": {
    "verdict": "ok",
    "note": "glossary recall: GLUT protein (fs-id1485699) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -48734,13 +48895,6 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "8754b3a0918d6bca": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -48805,13 +48959,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8789d207fe79e2b3": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -48961,9 +49108,6 @@
   "87f8bf71ea056d5d": {
    "verdict": "ok"
   },
-  "87f8cdd762432b19": {
-   "verdict": "ok"
-  },
   "87f9af983d1cbed1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49053,13 +49197,6 @@
     "result": "agrees"
    }
   },
-  "8850ca00a93d3a84": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "8853540f1bf62ae1": {
    "verdict": "ok"
   },
@@ -49119,6 +49256,14 @@
     "result": "agrees"
    }
   },
+  "8884621583dc67da": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "8884eed2f66f389e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49157,9 +49302,6 @@
   "88ac9cdf5b80e94f": {
    "verdict": "ok",
    "note": "TryIt1 (source ti_08_01_01, AAS): beta=180-98-43=39; a=b*sin(alpha)/sin(beta)=22*sin(98)/sin(39)=34.618 -> 34.6, nearest tenth. Independently derived via node law-of-sines; matches CNXML solution a=34.6."
-  },
-  "88bcfcc733664342": {
-   "verdict": "ok"
   },
   "88bd87f9d1c23eda": {
    "verdict": "ok",
@@ -49334,6 +49476,10 @@
   "8929293203f51c0a": {
    "verdict": "ok",
    "note": "Source CT eip-308; model answer is the source solution verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "892e05dd1e742a2f": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "8933bd4876003edf": {
    "verdict": "ok",
@@ -49546,13 +49692,6 @@
    "note": "f(x)=2x^2+1 is the bare printed expression; node check-answer.mjs confirms the printed \\lim retype grades incorrect against this key."
   },
   "89bdcd2656da46ae": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
-  "89c172eb994be695": {
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
@@ -49817,6 +49956,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8a7eb3068f11b3ef": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -50484,13 +50631,6 @@
     "result": "agrees"
    }
   },
-  "8c6343a3fd7aa3f7": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "8c64cab0bd96dd5a": {
    "verdict": "ok",
    "solved": {
@@ -50517,10 +50657,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "8c77bf04420fa858": {
-   "verdict": "ok",
-   "note": "re-derived: x-3y=-3 -> y=(1/3)x+1 (slope 0.3333333333333333, intercept 1), x+y=5 -> y=-x+5 (slope -1, intercept 5); intersection (3,2) matches CNXML m81427 Try It fs-id1167835367659 verbatim. Grid -6..6 matches sibling elementary-algebra/05-systems-of-linear-equations/01 conversion of the identical system. Line 1 reaches 5 snap points (x=-6,-3,0,3,6), line 2 reaches 8 (x=-1..6); both >=2, gpcheck parses clean."
   },
   "8c814c1858294f42": {
    "verdict": "ok"
@@ -50738,9 +50874,6 @@
   "8cfc562c179e26e7": {
    "verdict": "ok",
    "note": "25=5^2, so 5^{2x}=5^{2(3x+2)} => 2x=6x+4 => x=-1. Independently solved."
-  },
-  "8cfcfc220c16eac5": {
-   "verdict": "ok"
   },
   "8cfdc6c45945aead": {
    "verdict": "ok"
@@ -51164,6 +51297,14 @@
     "result": "agrees"
    }
   },
+  "8e509d90fbe69f26": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "8e53d8e2ecdb609e": {
    "verdict": "ok"
   },
@@ -51224,13 +51365,6 @@
    "note": "summary cloze from § summary: \"We can observe evidence of evolution by means of DNA code and the fossil record, and also by the existence of homologous and vestigial stru…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8e75de6eef04be96": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -51606,11 +51740,27 @@
     "result": "agrees"
    }
   },
+  "8f70d81e5995f739": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "8f7518b7c19ba90e": {
    "verdict": "ok",
    "note": "Review Question eip-788, source key B matches section text (\"Enhancers and silencers affect the efficiency of transcription but are not necessary for transcription to proceed\"). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8f78bd2f0e62a4ef": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -51797,6 +51947,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8ff870584f0d44bd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -52004,13 +52162,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "90d18ab799fc2d6a": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -52990,6 +53141,14 @@
   "937a0ffd9138c50b": {
    "verdict": "ok"
   },
+  "937eff48edf5cc9a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "93829ff301d4c367": {
    "verdict": "ok",
    "note": "KC 1 4.4 § Bacilli (fs-id1172100932307), m58798"
@@ -53105,6 +53264,14 @@
    "note": "unkeyed Short Answer fs-id1167661757767 graded from the candidiasis figure caption's own sentence naming Candida albicans | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "93bd9ac091e0cd42": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -53691,6 +53858,14 @@
     "result": "agrees"
    }
   },
+  "9548e51112148b68": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "954bd644157f4af3": {
    "verdict": "ok",
    "note": "Review Q4 (fs-id1462637), solution B = prometaphase; matches the Prometaphase paragraph's kinetochore/spindle-attachment description. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -54079,6 +54254,14 @@
   "9698474e148593a6": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9698732196743ce1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "969cad27be602a7c": {
    "verdict": "ok",
@@ -54853,6 +55036,14 @@
    "verdict": "ok",
    "note": "KC 5 28.3 § body Digestive System [Nemertea] (fs-idm176520257), m66396 — parent re-read against the module"
   },
+  "98f7b180b898bc79": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "98fdc668fba051ac": {
    "verdict": "ok",
    "note": "KC 4 18.5 § Variolation and Vaccination, m58888 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -55096,6 +55287,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "99a233cc0d547538": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -55352,13 +55551,6 @@
     "result": "agrees"
    }
   },
-  "9a4d12795fb3a07e": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "9a54f743242dd135": {
    "verdict": "ok",
    "note": "selfcheck: CYU malaria-importance bullet; module gives no single fixing sentence (distribution claim + separate WHO case/death-count sentence), model answer and checkpoints quote both, per Part C item 3. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -55394,6 +55586,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "9a7299224477d1c3": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "9a7805c5c97ca8ac": {
    "verdict": "ok",
@@ -55549,6 +55745,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "9af4f60a6e797fbb": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "9af91d1054a2559c": {
    "verdict": "ok",
@@ -56405,9 +56605,6 @@
    "verdict": "ok",
    "note": "|A|=1/2=0.5; restated as decimal to avoid retyping the printed 1/2 coefficient (Try It 2 amplitude part)."
   },
-  "9d7b8831e241e8b8": {
-   "verdict": "ok"
-  },
   "9d7d58d016e6a432": {
    "verdict": "ok",
    "note": "Parent rewrote the question: it previously asked for the answer 'in thousands, rounded to the nearest whole thousand' but keyed 25.634, which is neither. The source's own solution reads 'about 25,634 seals'. Recomputed the shipped logistic model at x=23: 25.65665979/(1+6.113686306e^{-0.3852149008*23}) = 25.6340 thousand = 25,634 seals."
@@ -56516,9 +56713,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "9dce1219fb74d385": {
-   "verdict": "ok"
   },
   "9dcfb228bd35e831": {
    "verdict": "ok",
@@ -56846,6 +57040,14 @@
     "result": "agrees"
    }
   },
+  "9ecf5ae35b02eceb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "9ed97baf5d7e576f": {
    "verdict": "ok",
    "note": "source exercise fs-idp162154752 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -56905,6 +57107,14 @@
    "note": "source exercise fs-idm61794080 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9eff6611c093c72b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -58506,6 +58716,14 @@
    "verdict": "ok",
    "note": "Visual Connection self-check (fs-idp43828064): CNXML solution 'The air content of the soil decreases.' keyed verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a350de366b8e279a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "a35b735feac071ba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58959,9 +59177,6 @@
     "result": "agrees"
    }
   },
-  "a461dd85004523f0": {
-   "verdict": "ok"
-  },
   "a464e119ecb12d64": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 602): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -59062,6 +59277,14 @@
    "note": "KC 5 23.1 § Characteristics of Eukaryotes, m66552 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a4bcb26034ce8af6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -59995,9 +60218,6 @@
     "result": "agrees"
    }
   },
-  "a72052d316ed7c96": {
-   "verdict": "ok"
-  },
   "a723bde959178e18": {
    "verdict": "ok"
   },
@@ -60060,6 +60280,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a74d4188cea80bed": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -60582,9 +60810,6 @@
    "verdict": "ok",
    "note": "x=2(y-3)^2+2: vertex (h,k)=(2,3); at y=2 and y=4, x=2(1)+2=4 for both (mirror pair across axis y=3). The equation's own x-intercept (y=0) is (20,0), off any reasonable grid, so the mirror-pair-at-y=2,4 substitute (proposal's approach) was used instead and re-verified by node. Points inside grid -1..8/-1..7, integer lattice."
   },
-  "a8b35629a2c99ecf": {
-   "verdict": "ok"
-  },
   "a8b942e3f207f72d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60688,6 +60913,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a8f7d0ab60f2811b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -60831,16 +61064,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "a94693fd04674bed": {
-   "verdict": "ok"
-  },
-  "a94939e7787938a0": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -62045,13 +62268,6 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
-  "ad0c0848a9959db5": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "ad19924e436ad347": {
    "verdict": "ok",
    "note": "Glossary recall (definition fs-id2000981, term pure culture, module m66514); accept 'pure cultures' (plural form the module itself uses in the metagenomics Critical Thinking solution).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -62065,6 +62281,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ad244bd95f14eb20": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -62463,6 +62687,10 @@
     "note": "Flag withdrawn: the module's vocabulary makes a protein's fold its tertiary structure ('unique three-dimensional structure'); the α→β conversion in prion disease is a specialist secondary-structure reading the section never gives, so (b) is not module-supported."
    }
   },
+  "ae0e73c656fd8acc": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "ae25a5b0f6df3f33": {
    "verdict": "ok",
    "note": "Try It 1. Ran synthetic division / Horner evaluation for f(x)=2x^5-3x^4-9x^3+8x^2+2 at x=-3 via node: f(-3)=-412. Matches CNXML ti_03_06_01 solution."
@@ -62490,9 +62718,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "ae33eda29eb9d7ed": {
-   "verdict": "ok"
   },
   "ae36e767c91783b5": {
    "verdict": "ok",
@@ -62776,6 +63001,14 @@
    "note": "author-built from § Spirochetes: \"Most spirochetes are also very thin, which makes it difficult to examine gram-stained preparations under a conventional brightfield microsc…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "aef88cc8afad6ee6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -63803,9 +64036,6 @@
     "result": "agrees"
    }
   },
-  "b1ea8d31ad70d0a2": {
-   "verdict": "ok"
-  },
   "b1eb32782793d057": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L421 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
@@ -64205,13 +64435,6 @@
   "b2feb781ee88ae44": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 4 (urinary-infection conditions). Model answer assembled from the cystitis/urethritis paragraph and the pyelonephritis/glomerulonephritis paragraphs."
-  },
-  "b2ffd61e183df7b3": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "b301853ff9f1eeac": {
    "verdict": "ok",
@@ -64953,9 +65176,6 @@
     "result": "agrees"
    }
   },
-  "b4fea72f53a3bb64": {
-   "verdict": "ok"
-  },
   "b4ffc98c53843779": {
    "verdict": "ok"
   },
@@ -65153,6 +65373,14 @@
   "b57f010305034a90": {
    "verdict": "ok",
    "note": "body selfcheck; model answer (toxicity/allergic reactions, liver/kidney dysfunction, half-life) traces to the same section's sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "b582edb793273357": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "b5856588eb35c6f6": {
    "verdict": "ok",
@@ -65425,10 +65653,11 @@
    "verdict": "ok",
    "note": "body selfcheck, IgG crosses placenta; model traces to fs-id1167662885726. Left selfcheck because the Matching set's row A ('only one that can cross the placenta' -> IgG) already grades the identical fact as a Practice multiplechoice. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "b658d5ee04572126": {
+  "b658aa2bdddc985b": {
    "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -65700,9 +65929,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b729348f78d588a0": {
-   "verdict": "ok"
   },
   "b72990f53834086e": {
    "verdict": "ok",
@@ -66366,13 +66592,6 @@
     "result": "agrees"
    }
   },
-  "b8bdb926eafb30ac": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "b8c898d0a3d2c67a": {
    "verdict": "ok",
    "note": "source exercise fs-idm126918432 (key-differs) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -66441,13 +66660,6 @@
   "b8f47e7dfa1df434": {
    "verdict": "ok",
    "note": "Source Critical Thinking fs-id1167663915545 (penicillin G, fungroup_img), no upstream key; stays a selfcheck per § What is different §2. Model answer (a) is figure-keyed: the drawing shows two amide linkages (the side-chain amide and the ring amide) and one carboxylic acid group. Model answer (b) uses only § Biologically Significant Functional Groups' own carbonyl sentence ('a carbonyl group ... is present in several classes of organic compounds as part of larger functional groups such as ... carboxylic acids, and amides') plus the functional-group table's own carboxylic-acid formula (carbonyl + hydroxyl) and explicitly stops there because the module never decomposes the amide bond's nitrogen-bearing side; no claim beyond the module is made. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "b8f5174badc94a0e": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "b8f8939b2f0df5e9": {
    "verdict": "ok",
@@ -66571,6 +66783,14 @@
   "b95b7cc69beead0b": {
    "verdict": "ok",
    "note": "KC 7 42.2 § Helper T Lymphocytes, m66664 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1116): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
+  "b95cbda1332d5960": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "b95e2241c64d1a4f": {
    "verdict": "ok"
@@ -66749,6 +66969,14 @@
     "result": "agrees"
    }
   },
+  "ba18b9787f6ca061": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "ba255ec079a84c91": {
    "verdict": "ok",
    "note": "fs-idp233292000 (Review Q); source SOL B = 'cerebral cortex', keyed as printed. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -66772,6 +67000,10 @@
     "by": "fable-blind-solve",
     "result": "agrees"
    }
+  },
+  "ba36bad6696f37a1": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "ba36d4cb6d50adba": {
    "verdict": "ok",
@@ -66968,9 +67200,6 @@
     "result": "agrees"
    }
   },
-  "bad6af939efad16b": {
-   "verdict": "ok"
-  },
   "bad79fbf16a75767": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67105,6 +67334,14 @@
   "bb1834effe165271": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "bb1ca454ac71de4c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "bb1ccae0024bfbf3": {
    "verdict": "ok",
@@ -67298,6 +67535,14 @@
   "bb7cfe05262d429e": {
    "verdict": "ok"
   },
+  "bb80111442e196a3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "bb8acee9b7843e9d": {
    "verdict": "ok",
    "note": "KC 7 38.2 § body Thickening of Long Bones (fs-idm166160432), m66638 — parent re-read against the module"
@@ -67355,6 +67600,14 @@
   "bbac5986b0b54ffc": {
    "verdict": "ok"
   },
+  "bbb78599281c66c5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "bbb990a658345156": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67405,6 +67658,14 @@
   "bbddc63e6bc446f8": {
    "verdict": "ok",
    "note": "unmatched (note.check-your-understanding, not an <exercise>); no single module sentence fixes which infections are common in the US, so it stays a selfcheck; model answer and its four CHECKS clauses each trace to that disease's own subsection sentence (giardiasis 'a common disease in the United States'; cryptosporidiosis US outbreak settings vs. 'more common in developing countries'; amoebiasis 'most widespread in the developing world'; cyclosporiasis 'uncommon in the United States' with imported-produce outbreaks). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "bbdde5978fe876c2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "bbdfe7bb2687551f": {
    "verdict": "ok"
@@ -67545,13 +67806,6 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "bc40e9791aa6eccc": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -67814,6 +68068,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bcdba2c9414cb7e8": {
+   "verdict": "ok",
+   "note": "parent re-derived Oct 3 2026: x-3y=-3 is y=x/3+1, x+y=5 is y=-x+5, crossing (3,2) = source Example solution | prior record: re-derived: x-3y=-3 -> y=(1/3)x+1 (slope 0.3333333333333333, intercept 1), x+y=5 -> y=-x+5 (slope -1, intercept 5); intersection (3,2) matches CNXML m81427 Try It fs-id1167835367659 verbatim. Grid -6..6 matches sibling elementary-algebra/05-systems-of-linear-equations/01 conversion of the identical system. Line 1 reaches 5 snap points (x=-6,-3,0,3,6), line 2 reaches 8 (x=-1..6); both >=2, gpcheck parses clean.",
+   "solved": {
+    "by": "parent",
     "result": "agrees"
    }
   },
@@ -68246,6 +68508,10 @@
   "be23a4273c66494c": {
    "verdict": "ok"
   },
+  "be256dd4ea589fee": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "be276dd8568949c2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68555,6 +68821,14 @@
     "result": "agrees"
    }
   },
+  "bef3e00bab15f55d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "bef63024d2ac425b": {
    "verdict": "ok",
    "note": "Review Question fs-id1435268, source key D 'radioactive phosphorus was found in the cell' verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -68613,6 +68887,14 @@
    "verdict": "ok",
    "note": "5-12-13 triangle: tan θ=12/5 ⇒ cos θ=5/13 exactly; node: Math.cos(Math.atan(12/5))=0.38461538461538464=5/13 (source Algebraic #35, solution 5/13)."
   },
+  "bf32af0ec95899a9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "bf34b559dea4fc4a": {
    "verdict": "ok",
    "note": "Section Exercise 37 part b: c=b/sin(15deg)=57.9555, computed with node; matches CNXML solution."
@@ -68626,6 +68908,14 @@
   },
   "bf4ddfe700cfd0e0": {
    "verdict": "ok"
+  },
+  "bf54237d6524d91a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "bf5578bfacf66db2": {
    "verdict": "ok",
@@ -68704,6 +68994,14 @@
     "result": "agrees"
    }
   },
+  "bf87bded505a6c21": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "bf90defbeec5bf5e": {
    "verdict": "ok",
    "note": "body cloze from § DNA Sequencing: \"This diagram summarizes the Sanger sequencing method using fluorochrome-labeled ddNTPs and capillary gel electrophoresis.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -68778,13 +69076,6 @@
   "bfb15f5c8ab93910": {
    "verdict": "ok",
    "note": "selfcheck: How do cancer cells suppress the immune system? — model answer and CHECKS trace to m58896's leukemia/apoptosis-resistance paragraph (immune cells becoming cancerous in leukemia; resistance to apoptosis via membrane proteins shutting off cytotoxic T cells or inducing regulatory T cells); stays selfcheck per run facts (no single fixing sentence). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "bfb32de3a54cf5c4": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "bfb7d431d032a72e": {
    "verdict": "ok",
@@ -68901,9 +69192,6 @@
   "c0022972d8d2b178": {
    "verdict": "ok",
    "note": "m66651 fs-idm32162688 CTQ, model answer reuses source solution fs-idm85451968 verbatim; 3 checkpoints each a clause of it. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "c00bb3a9d664e728": {
-   "verdict": "ok"
   },
   "c017ec740e6b0dbd": {
    "verdict": "ok",
@@ -69221,19 +69509,20 @@
    "verdict": "ok",
    "note": "Restates the source's own definition (fs-id1165137651029 verbal exercise, CNXML solution): k multiplies the variable (coefficient); p is the highest power (degree)."
   },
-  "c0c913042df8118f": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "c0ca322cfdf9343c": {
    "verdict": "ok",
    "note": "selfcheck: which groups are vulnerable — model answer assembles each organism subsection's own stated group (Hib 2mo-5yr; N. meningitidis infants/adolescents/young adults; S. pneumoniae 2mo-adulthood; S. agalactiae up to 3mo), all traced to this module."
   },
   "c0d03ad992e7d344": {
    "verdict": "ok"
+  },
+  "c0d45e94a05e8f8e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "c0d823f9c93eed4e": {
    "verdict": "ok",
@@ -70994,13 +71283,6 @@
     "result": "agrees"
    }
   },
-  "c6000cd3b3795b2c": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "c60bf426c0013955": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -71414,6 +71696,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c7502cfecc63aecc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -72002,6 +72292,14 @@
    "verdict": "ok",
    "note": "Bio 45.5 selfcheck \"Human reproduction is far below its biotic potenti\": hint location-only, model answer and rubric checked against the module; parent re-read Sep 24 2026"
   },
+  "c94ba43165a16988": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "c94c8c41006d1366": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 868): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -72200,6 +72498,14 @@
     "result": "agrees"
    }
   },
+  "c9c485f48465446e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "c9d0803813764319": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72228,6 +72534,14 @@
     "result": "agrees"
    }
   },
+  "c9f5cb1b189d80ad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "c9fa154390673e01": {
    "verdict": "ok",
    "note": "KC 7 43.6 § Gastrulation, m66678 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -72247,6 +72561,14 @@
   "ca066c53bbe6950a": {
    "verdict": "ok",
    "note": "vertical transverse axis, slope=+-a/b=+-2/9 -> y=2/9x,y=-2/9x; matches source fs-id1688303."
+  },
+  "ca0cd9b8ffcdf2f1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "ca10adabc3dbd161": {
    "verdict": "ok",
@@ -72302,13 +72624,6 @@
   "ca2b1cb4db45f526": {
    "verdict": "ok",
    "note": "KC 1 3.1 § body Dehydration Synthesis (fs-id1266915), m66438 — parent re-read against the module"
-  },
-  "ca2d73b9a166be39": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "ca314f58039b00b0": {
    "verdict": "ok",
@@ -72837,13 +73152,6 @@
     "result": "agrees"
    }
   },
-  "cb5bb3c34bee45ea": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "cb6891018794a143": {
    "verdict": "ok"
   },
@@ -73305,6 +73613,14 @@
   "cd19c25da4f8498e": {
    "verdict": "ok"
   },
+  "cd20c522d1cb5ca4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "cd26150fd593c42f": {
    "verdict": "ok",
    "solved": {
@@ -73531,9 +73847,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "cdb6fa95c41a3b4a": {
-   "verdict": "ok"
   },
   "cdbb5fd6b25fa734": {
    "verdict": "ok",
@@ -74289,6 +74602,14 @@
     "result": "agrees"
    }
   },
+  "cff3332d760fa2f2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "cff4de711ad2b631": {
    "verdict": "ok",
    "note": "KC 4 17.1 § Physical Barriers, m58877",
@@ -74419,6 +74740,14 @@
   "d06c4d2ca9fb0160": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d06df1caf84fdb71": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "d07487b547d3ffc9": {
    "verdict": "ok",
@@ -74622,6 +74951,14 @@
   "d0fe5587ccdc5ae7": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d0feefcbae4b4ad4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "d1010ab5e0a6e64b": {
    "verdict": "ok",
@@ -75687,6 +76024,14 @@
     "result": "agrees"
    }
   },
+  "d46c3c27fb8975a0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "d46e30ececcd4de0": {
    "verdict": "ok",
    "solved": {
@@ -75769,9 +76114,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "d4adaf536b86424d": {
-   "verdict": "ok"
   },
   "d4b2fafb8acd61c3": {
    "verdict": "ok",
@@ -76224,9 +76566,6 @@
     "result": "agrees"
    }
   },
-  "d61697250a6c8439": {
-   "verdict": "ok"
-  },
   "d61896dbfaaf3cb3": {
    "verdict": "ok",
    "note": "m66407 fs-idp66126000 (VC, exercise copy) — CNXML solution keys B; page keys 'Hearing loss resulting from an abnormal auditory nerve.' Note copy and exercise copy print identical option wording. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -76396,9 +76735,6 @@
     "result": "agrees"
    }
   },
-  "d683eaae8fbb6ee6": {
-   "verdict": "ok"
-  },
   "d69199a33b70cb6d": {
    "verdict": "ok",
    "note": "KC 3 11.2 § summary (parent replacement of the alternation-of-generations selfcheck), m66484 — parent re-read against the module"
@@ -76424,6 +76760,14 @@
    "note": "body CYU 'Describe the most common way to diagnose loiasis' converted to multiplechoice; fixing sentence: 'They can often be observed when migrating through the eye, and sometimes under the skin; in fact, this is generally how the disease is diagnosed.' Distractors (antibody testing, skin biopsy, surgical removal) are the module's own sibling diagnosis/treatment sentences, none correct for loiasis specifically | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d6a55cb452fb5ab0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -76554,13 +76898,6 @@
    "note": "author-built from § X-Rays: \"X-rays are slightly impeded by soft tissues, which show up as gray on the X-ray plate, whereas hard tissues, such as bone, largely block th…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "d6ecde0d5515311c": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -77310,9 +77647,6 @@
     "result": "agrees"
    }
   },
-  "d912dd73506cb093": {
-   "verdict": "ok"
-  },
   "d91653a747416e28": {
    "verdict": "ok",
    "note": "author-built from § Deltaproteobacteria: \"Reduce sulfur; can be used for removal of toxic and radioactive waste\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -77361,13 +77695,6 @@
   "d92664c6ef50144e": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-63; model answer is the CNXML solution (eip-926/eip-142) verbatim, checkpoints are its four clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "d92dae6037ce86cd": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
   },
   "d938c5b176987fce": {
    "verdict": "ok"
@@ -77591,6 +77918,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "da048e080c1d6890": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -78205,9 +78540,6 @@
     "result": "agrees"
    }
   },
-  "db81abccbdb74ee6": {
-   "verdict": "ok"
-  },
   "db8b2709e279afcd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78328,6 +78660,14 @@
   "dbdf7dd839cac6e8": {
    "verdict": "ok",
    "note": "Practice item, source exercise fs-id1165132079352. Solved 3x-2y+5z=21, 5x+4y=37, x-2y-5z=5 via X=A^-1 B in exact rational arithmetic: X=(7,1/2,1/5). Matches source's printed (7,1/2,1/5); verified by substitution into all three equations."
+  },
+  "dbe48907dae16c38": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "dbe561542b2804f0": {
    "verdict": "ok"
@@ -79048,13 +79388,6 @@
   "de41467a00e089de": {
    "verdict": "ok"
   },
-  "de46bd483b9d9f74": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "de53e7f096199642": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -79188,13 +79521,6 @@
    "note": "KC 3 14.6 § introduction, m66392 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "deaeab70e214fd94": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -79657,13 +79983,6 @@
     "result": "agrees"
    }
   },
-  "dfd53c4fab0e78d5": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "dfd987e43cc78b7f": {
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-idp64289856: selfcheck model answer is the CNXML solution verbatim; checkpoints are its own clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -79780,6 +80099,14 @@
   "e01f5f63c8fd7feb": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L447 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "e01f860fa530d981": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "e01fa25a914941ff": {
    "verdict": "ok",
@@ -79912,9 +80239,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "e07097193bfbd95f": {
-   "verdict": "ok"
   },
   "e073ec09210b896d": {
    "verdict": "ok",
@@ -80509,6 +80833,14 @@
     "result": "agrees"
    }
   },
+  "e2195f29f2b153a4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "e2198fa22e8750cb": {
    "verdict": "ok",
    "note": "KC 4 19.5 § Cancer Vaccines, m58896 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -80544,9 +80876,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e2271b03d62ce958": {
-   "verdict": "ok"
   },
   "e227bae3d27dfe46": {
    "verdict": "ok",
@@ -80590,9 +80919,6 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
-  },
-  "e23ecf3b26db8f03": {
-   "verdict": "ok"
   },
   "e24661dac56c19a4": {
    "verdict": "ok",
@@ -80717,13 +81043,6 @@
    "note": "body cloze from § Viral Growth Curve: \"The one-step multiplication curve for a bacteriophage population follows three steps: 1) inoculation, during which the virions attach to ho…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "e2a09ff3c8933a41": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
   },
@@ -80890,9 +81209,6 @@
     "result": "agrees"
    }
   },
-  "e329e469ab19f484": {
-   "verdict": "ok"
-  },
   "e33329993a3b1be5": {
    "verdict": "ok",
    "note": "source exercise fs-id2250378 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -81022,6 +81338,14 @@
   },
   "e38bc3da2ccf0d0e": {
    "verdict": "ok"
+  },
+  "e39121b618a87321": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "e39759a203340ef2": {
    "verdict": "ok",
@@ -81477,9 +81801,6 @@
    "verdict": "ok",
    "note": "pattern-fit to 9,-81,729,-6561,59049,...; verified (-1)^(n+1)*9^n reproduces all five terms by loop (CNXML Try It ti_11_01_04)."
   },
-  "e4c0d9ef70b2f87c": {
-   "verdict": "ok"
-  },
   "e4c1f6dcdc5f3144": {
    "verdict": "ok"
   },
@@ -81504,6 +81825,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e4c86fb890be9b90": {
+   "verdict": "ok",
+   "note": "parent re-derived Oct 3 2026: 3x+y=-3 is y=-3x-3, 2x+3y=5 is y=-2x/3+5/3, crossing (-2,3) | prior record: re-derived: 3x+y=-3 -> y=-3x-3 (slope -3, intercept -3), 2x+3y=5 -> y=-(2/3)x+5/3 (slope -0.6666666666666666, intercept 1.6666666666666667); intersection (-2,3) matches CNXML m81427 Practice exercise fs-id1167830924068 verbatim. Grid -6..6 matches sibling elementary-algebra Practice conversion of the identical system. Line 1 reaches 5 snap points (x=-3..1), line 2 reaches 4 (x=-5,-2,1,4 mod 3); both >=2, gpcheck parses clean.",
+   "solved": {
+    "by": "parent",
     "result": "agrees"
    }
   },
@@ -82614,6 +82943,10 @@
     "result": "agrees"
    }
   },
+  "e82a0e85b58e72b0": {
+   "verdict": "ok",
+   "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
   "e831ba2a226f2f87": {
    "verdict": "ok",
    "note": "Model answer paraphrases the electrolyte sentence in fs-id2103101 with no new claim."
@@ -82912,6 +83245,14 @@
    "note": "m66549 exercise fs-idm36358320; source solution B = 'the use of prokaryotes to clean up pollutants', confirmed against section's bioremediation definition. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e930fada139b394d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -83529,13 +83870,6 @@
    "verdict": "ok",
    "note": "body selfcheck; model answer assembles the NK-activation paragraph (inhibitory MHC signal, activating molecules, net effect); module-only. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "eb05c7b5baa537fb": {
-   "verdict": "ok",
-   "solved": {
-    "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
-    "result": "agrees"
-   }
-  },
   "eb07026a7320a4c5": {
    "verdict": "ok",
    "note": "KC 4 20.3 § body Genome Fusion and Eukaryote Evolution (fs-idp53484800), m66532 (parent replacement of a free-phrase summary cloze) — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -83834,9 +84168,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "ebd42155f43f1b9d": {
-   "verdict": "ok"
   },
   "ebd5025bfcf79252": {
    "verdict": "ok",
@@ -84777,9 +85108,6 @@
   "ee5a5fec5ae43aac": {
    "verdict": "ok"
   },
-  "ee60e8c3560df7ec": {
-   "verdict": "ok"
-  },
   "ee6384f11bb4b537": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85133,9 +85461,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "ef86fcf2f9ec7b31": {
-   "verdict": "ok"
   },
   "ef871d0f62eaf7fe": {
    "verdict": "ok",
@@ -86253,10 +86578,6 @@
    "verdict": "ok",
    "note": "KC 1 3.4 § Extracellular Matrix, m58793"
   },
-  "f2ee1da828835a3a": {
-   "verdict": "ok",
-   "note": "re-derived: 3x+y=-3 -> y=-3x-3 (slope -3, intercept -3), 2x+3y=5 -> y=-(2/3)x+5/3 (slope -0.6666666666666666, intercept 1.6666666666666667); intersection (-2,3) matches CNXML m81427 Practice exercise fs-id1167830924068 verbatim. Grid -6..6 matches sibling elementary-algebra Practice conversion of the identical system. Line 1 reaches 5 snap points (x=-3..1), line 2 reaches 4 (x=-5,-2,1,4 mod 3); both >=2, gpcheck parses clean."
-  },
   "f2f6f9edba71d888": {
    "verdict": "ok"
   },
@@ -87066,6 +87387,14 @@
     "result": "agrees"
    }
   },
+  "f50401ca750e9953": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "f50c559e437f417f": {
    "verdict": "ok"
   },
@@ -87120,6 +87449,14 @@
   },
   "f548bfd0b577e254": {
    "verdict": "ok"
+  },
+  "f54d42092124185d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
   },
   "f556560934919d93": {
    "verdict": "ok",
@@ -87495,6 +87832,14 @@
     "result": "agrees"
    }
   },
+  "f67c5c2db3428054": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "f67e911fa64afcb5": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -87830,6 +88175,14 @@
     "result": "agrees"
    }
   },
+  "f75ec0edfbce3ee8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "f75f5d966d1ac68a": {
    "verdict": "ok",
    "note": "g(0)=13; matches CNXML solution '(0,13)'."
@@ -88139,9 +88492,6 @@
     "result": "agrees"
    }
   },
-  "f8184e6451f89b40": {
-   "verdict": "ok"
-  },
   "f81f7eec43395a1e": {
    "verdict": "ok",
    "solved": {
@@ -88170,9 +88520,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "f8326fab998db1c9": {
-   "verdict": "ok"
   },
   "f8368b6d5e08b142": {
    "verdict": "ok",
@@ -88554,6 +88901,14 @@
     "result": "agrees"
    }
   },
+  "f9591e6528499824": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "f95bf624f22f243a": {
    "verdict": "ok",
    "note": "Summary-derived multiplechoice (disclosed in footer). m66449 Section Summary states verbatim 'Plant cells and plant-like cells each have a cell wall, chloroplasts, and a central vacuole.' Distractors (lysosome, centrosome, peroxisome) are animal- or generic-organelle terms the summary does not attribute to plant cells alongside cell wall/chloroplasts. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -88820,6 +89175,14 @@
     "result": "agrees"
    }
   },
+  "f9f6268550f72bbf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
   "f9fa4dbd86a6f4a6": {
    "verdict": "ok",
    "note": "author-built from § Lipid Catabolism: \"These microbes use phospholipases to destroy lipids and phospholipids in host cells and then use the catabolic products for energy (see Vir…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -88922,9 +89285,6 @@
    "verdict": "ok"
   },
   "fa52ada734afa1b3": {
-   "verdict": "ok"
-  },
-  "fa54e1656598c207": {
    "verdict": "ok"
   },
   "fa55fd7d9ba421bc": {
@@ -89127,14 +89487,19 @@
    "verdict": "ok",
    "note": "KC 7 33.3 § body Control of Homeostasis (fs-idm41037936), m66613 — parent re-read against the module"
   },
-  "fadfcd99c99bf6ce": {
-   "verdict": "ok"
-  },
   "fae49034bc07d7c2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fae80fd46f54a375": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-2",
     "result": "agrees"
    }
   },
@@ -89664,6 +90029,14 @@
   "fc504071763dda2d": {
    "verdict": "ok",
    "note": "15000 outside 5600-6900 data range -> extrapolation; key p1279 #35"
+  },
+  "fc50b96262546dc6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
   },
   "fc594ad337043f08": {
    "verdict": "ok"
@@ -90654,6 +91027,14 @@
     "result": "agrees"
    }
   },
+  "ff149ae81364f8d7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
   "ff1c62e11a9c1fbd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -90739,6 +91120,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "ff33596618b823b1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver-1",
     "result": "agrees"
    }
   },
@@ -90892,15 +91281,9 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "ffa531851f90692b": {
-   "verdict": "ok"
-  },
   "ffa64171fe9bb933": {
    "verdict": "ok",
    "note": "B={-23,-16,-7,-2,20,36,48,72}: positive={20,36,48,72}(4), odd={-23,-7}(2), disjoint, 4+2=6 (verified by script filter, matches CNXML key)."
-  },
-  "ffa81ea8961eeafe": {
-   "verdict": "ok"
   },
   "ffa8822bff26d1d0": {
    "verdict": "ok",

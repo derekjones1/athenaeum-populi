@@ -70,7 +70,7 @@ We replace the second equation with its standard form. In the augmented
 matrix, the first equation gives us the first row and the second equation
 gives us the second row; the vertical line replaces the equal signs.
 
-$$\left[\begin{array}{cc|c}5 & -3 & -1\\2 & -1 & 2\end{array}\right]$$
+$$\left[\begin{array}{cc|c}5 & -3 & -1\\-2 & 1 & -2\end{array}\right]$$
 
 (b) All three equations are already in standard form. In the augmented
 matrix, the first equation gives us the first row, the second equation gives
@@ -81,7 +81,8 @@ $$\left[\begin{array}{ccc|c}6 & -5 & 2 & 3\\2 & 1 & -4 & 5\\3 & -3 & 1 & -1\end{
 {{< fillin
   question="Write the system $\begin{cases}3x+8y=-3\\2x=-5y-3\end{cases}$ as an augmented matrix (rewrite the second equation in standard form first). Enter the second row of the matrix as a comma-separated list of three numbers."
   answer="2, 5, -3"
-  hint="$2x=-5y-3$ in standard form is $2x+5y=-3$."
+  answerForm="decimal"
+  hint="Move the $y$ term to the left side so the second equation reads $Ax+By=C$; row 2 lists $A$, $B$, then $C$."
 >}}
 
 It is important as we solve systems of equations using matrices to be able to
@@ -109,7 +110,8 @@ $$
 {{< fillin
   question="The augmented matrix $\left[\begin{array}{ccc|c}1 & 1 & 1 & 4\\2 & 3 & -1 & 8\\1 & 1 & -1 & 3\end{array}\right]$ corresponds to a system of equations. Enter the coefficients of $x$, $y$, and $z$ in the second equation, as a comma-separated list of three numbers."
   answer="2, 3, -1"
-  hint="Row 2 of the matrix is the second equation: the first three entries are the coefficients of $x$, $y$, and $z$."
+  answerForm="decimal"
+  hint="Each row is one equation; the entries left of the bar are the coefficients of $x$, $y$, and $z$, in that order."
 >}}
 
 ## Use row operations on a matrix
@@ -174,9 +176,10 @@ $$\left[\begin{array}{ccc|c}6 & -5 & 2 & 3\\10 & 5 & -20 & 25\\3 & -3 & 1 & -1\e
 $$\left[\begin{array}{ccc|c}0 & 1 & 0 & 5\\2 & 1 & -4 & 5\\3 & -3 & 1 & -1\end{array}\right]$$
 
 {{< fillin
-  question="Starting from the matrix $\left[\begin{array}{ccc|c}2 & -3 & -2 & -4\\4 & 1 & -3 & 2\\5 & 0 & 4 & -1\end{array}\right]$, multiply row 1 by 2. Enter the new row 1 as a comma-separated list of four numbers."
-  answer="4, -6, -4, -8"
-  hint="Multiply every entry of row 1, including the entry after the bar, by 2."
+  question="Starting from the augmented matrix $\left[\begin{array}{ccc|c}2 & -3 & -2 & -4\\4 & 1 & -3 & 2\\5 & 0 & 4 & -1\end{array}\right]$, interchange rows 1 and 2, and then multiply the new row 1 by 2. Enter the resulting row 1 as a comma-separated list of four numbers."
+  answer="8, 2, -6, 4"
+  answerForm="decimal"
+  hint="Swap the two rows first; then multiply every entry of the new row 1, including the entry after the bar, by 2."
 >}}
 
 Now that we have practiced the row operations, we look at an augmented matrix
@@ -196,7 +199,8 @@ $$\left[\begin{array}{cc|c}1 & -1 & 2\\4 & -8 & 0\end{array}\right] \xrightarrow
 {{< fillin
   question="Perform the row operation that will get the first entry of row 2 to be zero in the augmented matrix $\left[\begin{array}{cc|c}1 & -1 & 3\\-2 & -3 & 2\end{array}\right]$. Enter the resulting row 2 as a comma-separated list of three numbers."
   answer="0, -5, 8"
-  hint="Multiply row 1 by 2 and add it to row 2."
+  answerForm="decimal"
+  hint="Choose the multiple of row 1 whose first entry is the opposite of row 2's first entry, and add it to row 2; row 1 does not change."
 >}}
 
 ## Solve systems of equations using matrices
@@ -259,8 +263,9 @@ pair makes both original equations true is left to you.
 {{< fillin
   question="Solve the system of equations using a matrix: $\begin{cases}2x+y=7\\x-2y=6\end{cases}$. Enter the solution as an ordered pair."
   answer="(4,-1)"
+  answerForm="decimal"
   answerDisplay="$(4,-1)$"
-  hint="Get a zero below the leading $1$ in column $1$, put a $1$ in row 2 column 2, then use substitution."
+  hint="Interchange the rows so a $1$ is in row 1, column 1; get a zero below it, make the row 2, column 2 entry $1$, then use substitution."
 >}}
 
 {{< callout type="info" >}}
@@ -328,6 +333,7 @@ triple makes all three original equations true is left to you.
 {{< fillin
   question="Solve the system of equations using a matrix: $\begin{cases}2x-5y+3z=8\\3x-y+4z=7\\x+3y+2z=-3\end{cases}$. Enter the solution as an ordered triple."
   answer="(6,-1,-3)"
+  answerForm="decimal"
   answerDisplay="$(6,-1,-3)$"
   hint="Get row-echelon form, then use substitution starting from the last row."
 >}}
@@ -367,7 +373,7 @@ is no solution.
 
 {{< multiplechoice
   question="Solve the system of equations using a matrix: $\begin{cases}x-2y+2z=1\\-2x+y-z=2\\x-y+z=5\end{cases}$. What do you find?"
-  hint="Row-reduce the augmented matrix; two of the rows lead to contradictory equations for $y$ and $z$."
+  hint="Row-reduce the augmented matrix, then write the equations of the reduced rows: do they give a value for each variable, a false statement, or a true statement such as $0=0$?"
   answer="no solution — the system is inconsistent"
 >}}
 no solution — the system is inconsistent
@@ -428,7 +434,7 @@ $$(z+5,\ 2z+2,\ z)$$
 
 {{< multiplechoice
   question="Solve the system of equations using a matrix: $\begin{cases}x+y-z=0\\2x+4y-2z=6\\3x+6y-3z=9\end{cases}$. What do you find?"
-  hint="Row-reduce the augmented matrix; the bottom row reduces to all zeros."
+  hint="Row-reduce the augmented matrix, then write the equation of the bottom row: does it give a value for $z$, a false statement, or a true statement such as $0=0$?"
   answer="infinitely many solutions — the system is dependent"
 >}}
 the unique solution $(1,1,2)$
@@ -460,19 +466,22 @@ statement (such as $0=0$); it has infinitely many solutions.
 {{< fillin
   question="Write the system $\begin{cases}2x+4y=-5\\3x-2y=2\end{cases}$ as an augmented matrix. Enter row 2 of the matrix as a comma-separated list of three numbers."
   answer="3, -2, 2"
+  answerForm="decimal"
   hint="Row 2 holds the coefficients of $x$ and $y$ in the second equation, then its constant."
 >}}
 
 {{< fillin
-  question="Write the system $\begin{cases}3x-2y-z=-2\\-2x+y=5\\5x+4y+z=-1\end{cases}$ as an augmented matrix. The second equation has no $z$ term, so its coefficient is $0$. Enter row 2 of the matrix as a comma-separated list of four numbers."
+  question="Write the system $\begin{cases}3x-2y-z=-2\\-2x+y=5\\5x+4y+z=-1\end{cases}$ as an augmented matrix. Enter row 2 of the matrix as a comma-separated list of four numbers."
   answer="-2, 1, 0, 5"
-  hint="Row 2 lists the coefficients of $x$, $y$, and $z$ (in that order, using $0$ for a missing variable), then the constant."
+  answerForm="decimal"
+  hint="Row 2 lists the coefficients of $x$, $y$, and $z$ in the second equation, in that order, then its constant; a variable that does not appear has coefficient $0$."
 >}}
 
 {{< fillin
   question="The augmented matrix $\left[\begin{array}{cc|c}2 & -4 & -2\\3 & -3 & -1\end{array}\right]$ corresponds to a system of equations. Enter the coefficients of $x$ and $y$, and the constant, in the second equation, as a comma-separated list of three numbers."
   answer="3, -3, -1"
-  hint="Row 2 of the matrix is the second equation: the first two entries are the coefficients of $x$ and $y$, and the last entry is the constant."
+  answerForm="decimal"
+  hint="Each row is one equation: the entries left of the bar are the coefficients of $x$ and $y$, and the entry right of the bar is the constant."
 >}}
 
 ### Use row operations on a matrix
@@ -480,19 +489,22 @@ statement (such as $0=0$); it has infinitely many solutions.
 {{< fillin
   question="Starting from the augmented matrix $\left[\begin{array}{cc|c}4 & -6 & -3\\3 & 2 & 1\end{array}\right]$, interchange rows 1 and 2. Enter the new row 1 as a comma-separated list of three numbers."
   answer="3, 2, 1"
-  hint="Interchanging rows 1 and 2 swaps the two rows, so the new row 1 is the old row 2."
+  answerForm="decimal"
+  hint="An interchange moves whole rows to new positions without changing any entry."
 >}}
 
 {{< fillin
-  question="Starting from the matrix $\left[\begin{array}{cc|c}3 & 2 & 1\\4 & -6 & -3\end{array}\right]$ (the result of interchanging rows 1 and 2 in the previous exercise), multiply row 1 by $4$. Enter the new row 1 as a comma-separated list of three numbers."
+  question="Starting from the augmented matrix $\left[\begin{array}{cc|c}4 & -6 & -3\\3 & 2 & 1\end{array}\right]$, interchange rows 1 and 2, and then multiply the new row 1 by $4$. Enter the resulting row 1 as a comma-separated list of three numbers."
   answer="12, 8, 4"
-  hint="Multiply every entry of row 1, including the entry after the bar, by $4$."
+  answerForm="decimal"
+  hint="Swap the rows first; then multiply every entry of the new row 1, including the entry after the bar, by $4$."
 >}}
 
 {{< fillin
-  question="Starting from the matrix $\left[\begin{array}{cc|c}12 & 8 & 4\\4 & -6 & -3\end{array}\right]$ (the result of the previous exercise), multiply row 2 by $3$ and add row 1 to it. Enter the new row 2 as a comma-separated list of three numbers."
+  question="Starting from the augmented matrix $\left[\begin{array}{cc|c}4 & -6 & -3\\3 & 2 & 1\end{array}\right]$, interchange rows 1 and 2, multiply the new row 1 by $4$, and then multiply row 2 by $3$ and add row 1 to it. Enter the resulting row 2 as a comma-separated list of three numbers."
   answer="24, -10, -5"
-  hint="Multiply each entry of row 2 by $3$, then add the matching entry of row 1; row 1 itself does not change."
+  answerForm="decimal"
+  hint="Carry out the operations in order. For the last one, multiply each entry of row 2 by $3$, then add the matching entry of row 1; row 1 itself does not change."
 >}}
 
 ### Solve systems of equations using matrices
@@ -500,20 +512,22 @@ statement (such as $0=0$); it has infinitely many solutions.
 {{< fillin
   question="Solve the system of equations using a matrix: $\begin{cases}3x+y=2\\x-y=2\end{cases}$. Enter the solution as an ordered pair."
   answer="(1,-1)"
+  answerForm="decimal"
   answerDisplay="$(1,-1)$"
-  hint="Get a zero below the leading $1$ in column $1$, put a $1$ in row 2 column 2, then use substitution."
+  hint="Interchange the rows so a $1$ is in row 1, column 1; get a zero below it, make the row 2, column 2 entry $1$, then use substitution."
 >}}
 
 {{< fillin
   question="Solve the system of equations using a matrix: $\begin{cases}2x-y+3z=-3\\-x+2y-z=10\\x+y+z=5\end{cases}$. Enter the solution as an ordered triple."
   answer="(-2,5,2)"
+  answerForm="decimal"
   answerDisplay="$(-2,5,2)$"
   hint="Get the matrix into row-echelon form, then use substitution starting from the last row."
 >}}
 
 {{< multiplechoice
   question="Solve the system of equations using a matrix: $\begin{cases}x+2y+6z=5\\-x+y-2z=3\\x-4y-2z=1\end{cases}$. What do you find?"
-  hint="Row-reduce the augmented matrix; two of the rows reduce to a contradiction, such as $0=$ a nonzero number."
+  hint="Row-reduce the augmented matrix, then write the equation of the bottom row: does it give a value for $z$, a false statement, or a true statement such as $0=0$?"
   answer="no solution — the system is inconsistent"
 >}}
 the unique solution $(-3,4,2)$
@@ -524,7 +538,7 @@ infinitely many solutions — the system is dependent
 
 {{< multiplechoice
   question="Solve the system of equations using a matrix: $\begin{cases}x+2y+z=4\\x+y-2z=3\\-2x-3y+z=-7\end{cases}$. What do you find?"
-  hint="Row-reduce the augmented matrix; the bottom row reduces to $0=0$."
+  hint="Get zeros below the $1$ in column 1, then in column 2; write the equation of the bottom row and decide whether it gives a value for $z$, a false statement, or a true statement."
   answer="infinitely many solutions — the system is dependent"
 >}}
 the unique solution $(1,1,1)$
@@ -535,4 +549,4 @@ no solution — the system is inconsistent
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.5: Solve Systems of Equations Using Matrices](https://openstax.org/books/intermediate-algebra-2e/pages/4-5-solve-systems-of-equations-using-matrices) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented matrices and augmented matrices with typeset KaTeX arrays instead of the source's labeled screenshots; omitted the Be Prepared quiz, the decorative "order for getting 1's and 0's" color-box graphic (redundant with the adjacent How To step list), the Media box, and Self Check; corrected an arithmetic slip in the source's final stated numeric solution for the dependent-system example — the row-reduction work shown (both here and in the source) derives the general solution $(z+5,\ 2z+2,\ z)$, which is what we report, rather than the specific triple the source printed, which does not actually satisfy the system; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and added a section-final Practice block adapting selected end-of-section exercises, each independently solved and confirmed against the Answer Key, into interactive fill-in and multiple-choice components, one group per objective.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.5: Solve Systems of Equations Using Matrices](https://openstax.org/books/intermediate-algebra-2e/pages/4-5-solve-systems-of-equations-using-matrices) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented matrices and augmented matrices with typeset KaTeX arrays instead of the source's labeled screenshots; omitted the Be Prepared quiz, the lettered row-echelon-form schematic, the elimination aside before the row-operation goal example, the "order for getting 1's and 0's" graphic (redundant with the adjacent How To step list), the Media box, the Writing Exercises, and Self Check; in the first augmented-matrix example, wrote the second row from the standard form the text derives, $-2x+y=-2$ (the source's matrix image uses the equivalent $2x-y=2$); in the matrix-to-system example, said the matrix is four columns wide where the source calls it a $4\times 3$ matrix (it is $3\times 4$); in the dependent-system example, reported the general solution $(z+5,\ 2z+2,\ z)$ that the row-reduction work derives, where the source's closing line prints the triple $(\tfrac{8}{5},-\tfrac{42}{5},-\tfrac{24}{5})$ — the answer to a later exercise, which does not satisfy this system; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback; and added a section-final Practice block adapting selected end-of-section exercises, each independently solved and confirmed against the Answer Key, into interactive fill-in and multiple-choice components, one group per objective. Matrix answers are entered one row at a time as a comma-separated list; a multi-step row-operation exercise names the earlier operations in its question rather than printing the intermediate matrix; and an inconsistent or dependent system is asked as a multiple choice on the kind of solution set, where the source's answer to a dependent system also gives its general solution.</small>

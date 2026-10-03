@@ -91,8 +91,8 @@ $$\left\{\begin{array}{l} x-y+z=2 \\ 2x-y-z=-6 \\ 2x+2y+z=-3 \end{array}\right.$
 $$
 \begin{array}{rcl}
 -2-(-1)+3 &\overset{?}{=}& 2, \text{ so } 2=2\ \checkmark \\
-2(-2)-(-1)-3 &\overset{?}{=}& -6, \text{ so } -6=-6\ \checkmark \\
-2(-2)+2(-1)+3 &\overset{?}{=}& -3, \text{ so } -3=-3\ \checkmark
+2(-2)-(-1)-3 &\overset{?}{=}& -6, \text{ so } {-}6=-6\ \checkmark \\
+2(-2)+2(-1)+3 &\overset{?}{=}& -3, \text{ so } {-}3=-3\ \checkmark
 \end{array}
 $$
 
@@ -103,8 +103,8 @@ $(-2,-1,3)$ makes all three equations true, so it is a solution.
 $$
 \begin{array}{rcl}
 -4-(-3)+4 &\overset{?}{=}& 2, \text{ so } 3\neq 2 \\
-2(-4)-(-3)-4 &\overset{?}{=}& -6, \text{ so } -9\neq -6 \\
-2(-4)+2(-3)+4 &\overset{?}{=}& -3, \text{ so } -10\neq -3
+2(-4)-(-3)-4 &\overset{?}{=}& -6, \text{ so } {-}9\neq -6 \\
+2(-4)+2(-3)+4 &\overset{?}{=}& -3, \text{ so } {-}10\neq -3
 \end{array}
 $$
 
@@ -112,7 +112,7 @@ $(-4,-3,4)$ does not make all three equations true, so it is not a
 solution.
 
 {{< multiplechoice
-  question="Which ordered triple is a solution to the system $\left\{\begin{array}{l} 3x+y+z=2 \\ x+2y+z=-3 \\ 3x+y+2z=4 \end{array}\right.$?"
+  question="Which ordered triple is a solution to the system $\begin{cases}3x+y+z=2 \\ x+2y+z=-3 \\ 3x+y+2z=4\end{cases}$?"
   hint="Substitute each triple into all three equations; the solution must make every equation true."
   answer="$(1,-3,2)$"
 >}}
@@ -168,10 +168,11 @@ $$\left\{\begin{array}{l} x-2y+z=3 \\ 2x+y+z=4 \\ 3x+4y+3z=-1 \end{array}\right.
 {{< /callout >}}
 
 {{< fillin
-  question="Solve the system by elimination: $\left\{\begin{array}{l} 3x+y-z=2 \\ 2x-3y-2z=1 \\ 4x-y-3z=0 \end{array}\right.$ Enter the solution as an ordered triple $(x,y,z)$."
+  question="Solve the system by elimination: $\begin{cases}3x+y-z=2 \\ 2x-3y-2z=1 \\ 4x-y-3z=0\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
   answer="(2,-1,3)"
+  answerForm="decimal"
   answerDisplay="$(2,-1,3)$"
-  hint="Add equations (1) and (3) to eliminate y directly, giving an equation in x and z. Separately, add 3 times equation (1) to equation (2) to get a second equation in x and z."
+  hint="Add the first and third equations to eliminate y directly, giving an equation in x and z. Separately, add 3 times the first equation to the second to get a second equation in x and z."
 >}}
 
 The system is easier to solve when each equation is already missing one of
@@ -234,14 +235,15 @@ equations true:
 $$
 \begin{array}{rcl}
 3(-4)-4(-3) &\overset{?}{=}& 0, \text{ so } 0=0\ \checkmark \\
-3(1)+2(-3) &\overset{?}{=}& -3, \text{ so } -3=-3\ \checkmark \\
-2(-4)+3(1) &\overset{?}{=}& -5, \text{ so } -5=-5\ \checkmark
+3(1)+2(-3) &\overset{?}{=}& -3, \text{ so } {-}3=-3\ \checkmark \\
+2(-4)+3(1) &\overset{?}{=}& -5, \text{ so } {-}5=-5\ \checkmark
 \end{array}
 $$
 
 {{< fillin
-  question="Solve the system by elimination: $\left\{\begin{array}{l} 3x-4z=-1 \\ 2y+3z=2 \\ 2x+3y=6 \end{array}\right.$ Enter the solution as an ordered triple $(x,y,z)$."
+  question="Solve the system by elimination: $\begin{cases}3x-4z=-1 \\ 2y+3z=2 \\ 2x+3y=6\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
   answer="(-3,4,-2)"
+  answerForm="decimal"
   answerDisplay="$(-3,4,-2)$"
   hint="Each equation is missing one variable. Eliminate z from the first two equations to get an equation in x and y, then combine that with the third equation."
 >}}
@@ -289,8 +291,8 @@ This is a false statement, so there is no solution. We are left with a
 false statement, which tells us the system is inconsistent.
 
 {{< multiplechoice
-  question="Solve the system of equations: $\left\{\begin{array}{l} x+2y+6z=5 \\ -x+y-2z=3 \\ x-4y-2z=1 \end{array}\right.$ How many solutions does the system have?"
-  hint="Add the first two equations to eliminate x, getting one equation in y and z. Then subtract the first equation from the third to eliminate x again, getting a second equation in y and z. Compare the two."
+  question="Solve the system of equations: $\begin{cases}x+2y+6z=5 \\ -x+y-2z=3 \\ x-4y-2z=1\end{cases}$ How many solutions does the system have?"
+  hint="Add the first two equations to eliminate x, getting one equation in y and z. Then subtract the first equation from the third to eliminate x again, getting a second equation in y and z. Eliminate a variable from those two and read what is left."
   answer="no solution"
 >}}
 infinitely many solutions
@@ -359,15 +361,12 @@ $$
 The solutions are all ordered triples of the form $(5z-5,\,-2z+3,\,z)$,
 where $z$ is any real number.
 
-{{< multiplechoice
-  question="Solve the system of equations: $\left\{\begin{array}{l} x+y-z=0 \\ 2x+4y-2z=6 \\ 3x+6y-3z=9 \end{array}\right.$ How many solutions does the system have?"
-  hint="Compare the second and third equations — one is a constant multiple of the other, so the three planes reduce to only two independent equations."
-  answer="infinitely many solutions"
+{{< fillin
+  question="Solve the system of equations: $\begin{cases}x+y-z=0 \\ 2x+4y-2z=6 \\ 3x+6y-3z=9\end{cases}$ Enter the general solution as an ordered triple $(x,y,z)$, writing $x$ and $y$ in terms of $z$."
+  answer="(z-3,3,z)"
+  answerDisplay="$(z-3,\,3,\,z)$, where $z$ is any real number"
+  hint="Eliminate x from two different pairs of equations and see what the resulting equations tell you about y. Then substitute into the first equation and solve for x in terms of z."
 >}}
-no solution
-infinitely many solutions
-exactly one solution
-{{< /multiplechoice >}}
 
 ## Solve Applications Using Systems of Linear Equations with Three Variables
 
@@ -403,7 +402,7 @@ multiplying (1) by $-8$ and adding it to (2) gives
 
 $$
 \begin{array}{rcl}
--8x-8y-8z &=& -2000 \\
+-8x-8y-8z &=& -2{,}000 \\
 15x+10y+8z &=& 2{,}825 \\
 7x+2y &=& 825
 \end{array}
@@ -446,9 +445,10 @@ The theater department sold $75$ adult tickets, $150$ student tickets, and
 $25$ child tickets.
 
 {{< fillin
-  question="The community college fine arts department sold three kinds of tickets to its latest dance presentation. The adult tickets sold for \$20, the student tickets for \$12, and the child tickets for \$10. The department sold 350 tickets and brought in \$4,650 in one night. The number of child tickets sold was the same as the number of adult tickets sold. How many student tickets did the department sell?"
-  answer="200"
-  hint="Let x, y, and z be the numbers of adult, student, and child tickets sold. Then x+y+z=350, 20x+12y+10z=4650, and z=x. Substitute z=x to reduce the system to two variables."
+  question="The community college fine arts department sold three kinds of tickets to its latest dance presentation. The adult tickets sold for \$20, the student tickets for \$12, and the child tickets for \$10. The department sold 350 tickets and brought in \$4,650 in one night. The number of child tickets sold was the same as the number of adult tickets sold. How many of each type did the department sell? Enter the numbers of adult, student, and child tickets, in that order, separated by commas."
+  answer="75,200,75"
+  answerForm="decimal"
+  hint="Let a variable stand for each type of ticket, then write one equation for the number of tickets, one for the money taken in, and one for the adult–child relationship, and solve the system."
 >}}
 
 ## Key terms
@@ -470,7 +470,7 @@ solutions; eliminating variables leaves a true statement like $0=0$.
 ### Determine whether an ordered triple is a solution of a system of three linear equations with three variables
 
 {{< multiplechoice
-  question="Is $(-5,-7,4)$ a solution to the system $\left\{\begin{array}{l} -3x+y+z=-4 \\ -x+2y-2z=1 \\ 2x-y-z=-1 \end{array}\right.$?"
+  question="Is $(-5,-7,4)$ a solution to the system $\begin{cases}-3x+y+z=-4 \\ -x+2y-2z=1 \\ 2x-y-z=-1\end{cases}$?"
   hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
   answer="no"
 >}}
@@ -479,7 +479,7 @@ yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is $(5,7,4)$ a solution to the system $\left\{\begin{array}{l} -3x+y+z=-4 \\ -x+2y-2z=1 \\ 2x-y-z=-1 \end{array}\right.$?"
+  question="Is $(5,7,4)$ a solution to the system $\begin{cases}-3x+y+z=-4 \\ -x+2y-2z=1 \\ 2x-y-z=-1\end{cases}$?"
   hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
   answer="yes"
 >}}
@@ -488,7 +488,7 @@ yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is $\left(-6,5,\tfrac{1}{2}\right)$ a solution to the system $\left\{\begin{array}{l} x+3y-z=15 \\ y=\tfrac{2}{3}x-2 \\ x-3y+z=-2 \end{array}\right.$?"
+  question="Is $\left(-6,5,\tfrac{1}{2}\right)$ a solution to the system $\begin{cases}x+3y-z=15 \\ y=\tfrac{2}{3}x-2 \\ x-3y+z=-2\end{cases}$?"
   hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
   answer="no"
 >}}
@@ -497,7 +497,7 @@ no
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is $\left(5,\tfrac{4}{3},-3\right)$ a solution to the system $\left\{\begin{array}{l} x+3y-z=15 \\ y=\tfrac{2}{3}x-2 \\ x-3y+z=-2 \end{array}\right.$?"
+  question="Is $\left(5,\tfrac{4}{3},-3\right)$ a solution to the system $\begin{cases}x+3y-z=15 \\ y=\tfrac{2}{3}x-2 \\ x-3y+z=-2\end{cases}$?"
   hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
   answer="no"
 >}}
@@ -508,22 +508,24 @@ no
 ### Solve a system of linear equations with three variables
 
 {{< fillin
-  question="Solve the system by elimination: $\left\{\begin{array}{l} 6x-5y+2z=3 \\ 2x+y-4z=5 \\ 3x-3y+z=-1 \end{array}\right.$ Enter the solution as an ordered triple $(x,y,z)$."
+  question="Solve the system by elimination: $\begin{cases}6x-5y+2z=3 \\ 2x+y-4z=5 \\ 3x-3y+z=-1\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
   answer="(4,5,2)"
+  answerForm="decimal"
   answerDisplay="$(4,5,2)$"
   hint="Eliminate y from the first and second equations, then eliminate y again using a different pair, to get a system of two equations in x and z."
 >}}
 
 {{< fillin
-  question="Solve the system by elimination: $\left\{\begin{array}{l} 4x-3y+z=7 \\ 2x-5y-4z=3 \\ 3x-2y-2z=-7 \end{array}\right.$ Enter the solution as an ordered triple $(x,y,z)$."
+  question="Solve the system by elimination: $\begin{cases}4x-3y+z=7 \\ 2x-5y-4z=3 \\ 3x-2y-2z=-7\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
   answer="(-3,-5,4)"
+  answerForm="decimal"
   answerDisplay="$(-3,-5,4)$"
   hint="Eliminate z from the first and second equations, then eliminate z again using the first and third, to get a system of two equations in x and y."
 >}}
 
 {{< multiplechoice
-  question="Solve the system of equations: $\left\{\begin{array}{l} x-2y+2z=1 \\ -2x+y-z=2 \\ x-y+z=5 \end{array}\right.$ How many solutions does the system have?"
-  hint="Eliminate x from two different pairs of equations; if the two resulting equations in y and z contradict each other, the system has no solution."
+  question="Solve the system of equations: $\begin{cases}x-2y+2z=1 \\ -2x+y-z=2 \\ x-y+z=5\end{cases}$ How many solutions does the system have?"
+  hint="Eliminate x from two different pairs of equations, then eliminate a second variable from the two resulting equations in y and z and read what is left."
   answer="no solution"
 >}}
 infinitely many solutions
@@ -531,30 +533,29 @@ no solution
 exactly one solution
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Solve the system of equations: $\left\{\begin{array}{l} x+y-2z=3 \\ -2x-3y+z=-7 \\ x+2y+z=4 \end{array}\right.$ How many solutions does the system have?"
-  hint="Eliminate x from two different pairs of equations; if the two resulting equations in y and z are equivalent, the system has infinitely many solutions."
-  answer="infinitely many solutions"
+{{< fillin
+  question="Solve the system of equations: $\begin{cases}x+y-2z=3 \\ -2x-3y+z=-7 \\ x+2y+z=4\end{cases}$ Enter the general solution as an ordered triple $(x,y,z)$, writing $x$ and $y$ in terms of $z$."
+  answer="(5z+2,-3z+1,z)"
+  answerDisplay="$(5z+2,\,-3z+1,\,z)$, where $z$ is any real number"
+  hint="Eliminate x from two different pairs of equations. Solve one of the resulting equations for y in terms of z, then substitute into the first equation and solve for x."
 >}}
-infinitely many solutions
-no solution
-exactly one solution
-{{< /multiplechoice >}}
 
 ### Solve applications using systems of linear equations with three variables
 
 {{< fillin
-  question="The sum of the measures of the angles of a triangle is 180 degrees. The sum of the measures of the second and third angles is three times the measure of the first angle, and the third angle is fifteen more than the second. Enter the measures of the first, second, and third angles, in that order, separated by commas."
+  question="The sum of the measures of the angles of a triangle is 180 degrees. The sum of the measures of the second and third angles is three times the measure of the first angle, and the third angle is fifteen more than the second. Enter the measures of the first, second, and third angles in degrees, in that order, separated by commas."
   answer="45,60,75"
-  hint="Let x, y, and z be the first, second, and third angles. Then x+y+z=180, y+z=3x, and z=y+15; substitute to reduce to one variable."
+  answerForm="decimal"
+  hint="Let a variable stand for each angle and write one equation for each fact the problem states. Substitute to reduce the system to fewer variables."
 >}}
 
 {{< fillin
   question="The church youth group is selling snacks to raise money for a convention. Amy sold 2 pounds of candy, 3 boxes of cookies, and 1 can of popcorn for total sales of \$65. Brian sold 4 pounds of candy, 6 boxes of cookies, and 3 cans of popcorn for total sales of \$140. Paulina sold 8 pounds of candy, 8 boxes of cookies, and 5 cans of popcorn for total sales of \$250. Enter the cost of a pound of candy, a box of cookies, and a can of popcorn, in that order, separated by commas, in dollars."
   answer="20,5,10"
+  answerForm="decimal"
   hint="Let c, k, and p be the prices of candy, cookies, and popcorn. Translate each person's sales into an equation and solve the resulting system."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.4: Solve Systems of Equations with Three Variables](https://openstax.org/books/intermediate-algebra-2e/pages/4-4-solve-systems-of-equations-with-three-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: described the three-plane geometric cases (one solution, no solution, infinitely many solutions) in prose instead of recreating the 3D plane diagrams; recast the seven-step worked example as a markdown table; omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the no-solution and infinite-solutions Try Its into multiple-choice questions about the number of solutions, since a word answer can't be graded by the math checker; and adapted selected end-of-section Practice Makes Perfect exercises into an interactive Practice block covering all three objectives.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.4: Solve Systems of Equations with Three Variables](https://openstax.org/books/intermediate-algebra-2e/pages/4-4-solve-systems-of-equations-with-three-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: described the two-line and three-plane cases (one solution, no solution, infinitely many solutions) in prose instead of recreating the line graphs and 3D plane diagrams; recast the seven-step worked example as a markdown table; omitted the Be Prepared quiz, the Key Concepts summary (it repeats the definition box and the how-to steps), the Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback — posing the first Try It's two triples as a choice of which one solves the system, turning each no-solution item (Try It and exercise) into a multiple-choice question about the number of solutions, since a word answer can't be graded by the math checker, and asking for each infinitely-many-solutions general solution as an ordered triple in terms of $z$; and adapted selected end-of-section Practice Makes Perfect exercises into an interactive Practice block covering all three objectives.</small>
