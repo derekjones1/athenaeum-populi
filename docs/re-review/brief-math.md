@@ -193,7 +193,13 @@ and `y=2x-(-3)` are `form`; `y=\frac{-4}{3}x`, a mixed-number constant, and
 point-slope's substituted `y-(-3)` still pass. A function label with an
 expression argument or made of applications (`g(m^2)=4m^2-7`,
 `f(x)+f(2)=x^2+4`) is stripped against a key with no `=`, so an "evaluate
-$f(x+2)$" item graded that way needs no MC workaround.
+$f(x+2)$" item graded that way needs no MC workaround. Since the Intermediate
+Algebra chapter 4 re-review (October 3, 2026): a whole-number coefficient,
+`e`, then a sign (`110e+360d`, `3e-2`) is algebra, not scientific notation,
+so a source's variable `e` keeps its letter. A chain of operations on one
+matrix (or one quantity) asked as separate items prints each item's
+starting state in its own stem — "starting from the result above" stems
+print the previous item's key.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
