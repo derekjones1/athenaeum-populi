@@ -243,6 +243,13 @@ const extra = [
   // The rewritten quotient is brace-wrapped, so a postfix operator binds to
   // the whole fraction: \frac{d}{t}^2 is (d/t)^2, not d/(t^2).
   ['\\frac{d}{t}^2', '\\frac{d^2}{t^2}', 'correct'],
+  // A numeral, `e`, then a signed numeral is scientific notation to the
+  // engine (`110e+360d` was 1.1e363·d), so a letter-e variable written after
+  // its coefficient graded wrong against itself (Intermediate Algebra §4.7).
+  ['110e+360d\\ge1000', '360d+110e\\geq1000', 'correct'],
+  ['2+3e', '3e+2', 'correct'],
+  ['3e - 2', '-2+3e', 'correct'],
+  ['3e+2', '302', 'incorrect'],
   ['\\frac{d}{t}^2', '\\frac{d}{t^2}', 'incorrect'],
   // The rewrite runs after the spacing strip, so spacing-polluted and variant
   // forms of the same defect (virtual keyboard, pasted content, \cfrac) are

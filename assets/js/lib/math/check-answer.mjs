@@ -388,6 +388,14 @@ export function preprocess(raw) {
       '$1\\left($2+\\frac{$3}{$4}\\right)',
     )
     .replace(/((?:\d+)?\.\d+)\s*(?=\(|\\left\()/g, '$1\\cdot ')
+    // The engine reads a numeral, `e`/`E`, then a numeral as scientific
+    // notation: `110e+360d` is 1.1×10³⁶³·d and `2+3e` never equals `3e+2`
+    // (300). A whole-number coefficient, `e`, then a SIGN is algebra — the
+    // variable `e` or Euler's number plus a term (Intermediate Algebra §4.7)
+    // — so brace the letter and the engine reads the product. A decimal
+    // mantissa or an unsigned exponent (`2.0794e0`, `1.5e-3`) is a
+    // calculator readout and stays a number for the exact tokens to refuse.
+    .replace(/(^|[^\d.])(\d+)\s*([eE])(?=\s*[+-]\s*\d)/g, '$1$2{$3}')
     .replace(/−/g, '-')
     .replace(/×/g, '\\times ')
     .replace(/÷/g, '\\div ')
