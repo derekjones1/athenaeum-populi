@@ -97,13 +97,15 @@ The solution is $x=2$.
 {{< fillin
   question="Solve $\tfrac{1}{y}+\tfrac{2}{3}=\tfrac{1}{5}$."
   answer="-\frac{15}{7}"
+  answerForm="lowest-terms"
   answerDisplay="$y=-\tfrac{15}{7}$"
-  hint="The LCD is $15y$. Note first that $y\ne0$."
+  hint="Note the value that makes a denominator zero, multiply both sides by the LCD of all the denominators, then solve and check."
 >}}
 
 {{< fillin
   question="Solve $\tfrac{2}{3}+\tfrac{1}{5}=\tfrac{1}{x}$."
   answer="\frac{15}{13}"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{15}{13}$"
   hint="Combine the fractions on the left, or clear all fractions using the LCD."
 >}}
@@ -166,16 +168,18 @@ The solutions are $y=2$ and $y=3$.
   question="Solve $1-\tfrac{2}{x}=\tfrac{15}{x^2}$. Enter both solutions, separated by commas."
   answer="-3, 5"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-3,\ 5$"
-  hint="Clear fractions with $x^2$, write the quadratic in standard form, and factor."
+  hint="Multiply both sides by the LCD, write the resulting quadratic in standard form, and factor."
 >}}
 
 {{< fillin
   question="Solve $1-\tfrac{4}{y}=\tfrac{12}{y^2}$. Enter both solutions, separated by commas."
   answer="-2, 6"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$y=-2,\ 6$"
-  hint="Clear fractions with $y^2$, then factor the resulting quadratic."
+  hint="Multiply both sides by the LCD, then write the resulting quadratic in standard form and factor."
 >}}
 
 In the next example, the last denominator is a difference of squares.
@@ -205,6 +209,7 @@ $\tfrac{2}{3}=\tfrac{2}{3}$. The solution is $x=-1$.
 {{< fillin
   question="Solve $\tfrac{2}{x+1}+\tfrac{1}{x-1}=\tfrac{1}{x^2-1}$."
   answer="\frac{2}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{2}{3}$"
   hint="Factor $x^2-1$, note the excluded values, and multiply by the LCD."
 >}}
@@ -212,6 +217,7 @@ $\tfrac{2}{3}=\tfrac{2}{3}$. The solution is $x=-1$.
 {{< fillin
   question="Solve $\tfrac{5}{y+3}+\tfrac{2}{y-3}=\tfrac{5}{y^2-9}$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$y=2$"
   hint="Factor the difference of squares before finding the LCD."
 >}}
@@ -305,6 +311,7 @@ $\tfrac{4}{10}=\tfrac{72}{-20}+4=\tfrac{4}{10}$. The solution is $y=4$.
 {{< fillin
   question="Solve $\tfrac{x}{x+4}=\tfrac{32}{x^2-16}+5$."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$x=3$"
   hint="Factor the difference of squares and discard any excluded algebraic solution."
 >}}
@@ -312,6 +319,7 @@ $\tfrac{4}{10}=\tfrac{72}{-20}+4=\tfrac{4}{10}$. The solution is $y=4$.
 {{< fillin
   question="Solve $\tfrac{y}{y+8}=\tfrac{128}{y^2-64}+9$."
   answer="7"
+  answerForm="decimal"
   answerDisplay="$y=7$"
   hint="Factor $y^2-64$, clear fractions, then test the algebraic solutions against the excluded values."
 >}}
@@ -447,9 +455,10 @@ The value of the function is $1$ when $x=7$, so the point on the graph is
 $(7,1)$.
 
 {{< fillin
-  question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, find the values excluded from the domain, separated by commas."
+  question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, find the values excluded from the domain. Enter just the values, separated by commas."
   answer="3, 4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x\ne3,\ x\ne4$"
   hint="Factor the denominator and set each factor equal to zero."
 >}}
@@ -458,6 +467,7 @@ $(7,1)$.
   question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, solve $f(x)=3$. Enter both solutions, separated by commas."
   answer="2, \frac{14}{3}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=2,\ \tfrac{14}{3}$"
   hint="Set the rational expression equal to $3$, clear fractions, and discard excluded roots."
 >}}
@@ -466,6 +476,7 @@ $(7,1)$.
   question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, find the points on the graph where $f(x)=3$, separated by commas."
   answer="(2,3), (\frac{14}{3},3)"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$(2,3),\ (\tfrac{14}{3},3)$"
   hint="Use each input found when solving $f(x)=3$ as the first coordinate; the function value is the second coordinate."
 >}}
@@ -509,17 +520,19 @@ $$
 Thus $y=mx-3m+2$.
 
 {{< fillin
-  question="Solve $m=\tfrac{y-5}{x-4}$ for $y$."
-  answer="mx-4m+5"
+  question="Solve $m=\tfrac{y-5}{x-4}$ for $y$. Enter your answer as $y=$ an expression in $m$ and $x$."
+  answer="y=mx-4m+5"
+  answerForm="solved:y no-like-terms"
   answerDisplay="$y=mx-4m+5$"
-  hint="Multiply both sides by $x-4$, then add $5$."
+  hint="Multiply both sides by the denominator, then isolate the term with $y$."
 >}}
 
 {{< fillin
-  question="Solve $m=\tfrac{y-1}{x+5}$ for $y$."
-  answer="mx+5m+1"
+  question="Solve $m=\tfrac{y-1}{x+5}$ for $y$. Enter your answer as $y=$ an expression in $m$ and $x$."
+  answer="y=mx+5m+1"
+  answerForm="solved:y no-like-terms"
   answerDisplay="$y=mx+5m+1$"
-  hint="Multiply both sides by $x+5$, then add $1$."
+  hint="Multiply both sides by the denominator, then isolate the term with $y$."
 >}}
 
 Remember to multiply both sides by the LCD in the next example.
@@ -542,17 +555,19 @@ Even though we excluded $c=0$ and $m=0$ from the original equation, we must
 also now state that $m\ne1$. Thus $c=\tfrac{m}{m-1}$.
 
 {{< fillin
-  question="Solve $\tfrac{1}{a}+\tfrac{1}{b}=c$ for $a$."
-  answer="\frac{b}{bc-1}"
+  question="Solve $\tfrac{1}{a}+\tfrac{1}{b}=c$ for $a$. Enter your answer as $a=$ an expression in $b$ and $c$."
+  answer="a=\frac{b}{bc-1}"
+  answerForm="solved:a single-fraction reduced-fraction"
   answerDisplay="$a=\tfrac{b}{bc-1}$"
-  hint="Multiply by $ab$, collect the terms containing $a$, and factor."
+  hint="Multiply both sides by the LCD, collect the terms containing $a$ on one side, factor out $a$, and divide."
 >}}
 
 {{< fillin
-  question="Solve $\tfrac{2}{x}+\tfrac{1}{3}=\tfrac{1}{y}$ for $y$."
-  answer="\frac{3x}{x+6}"
+  question="Solve $\tfrac{2}{x}+\tfrac{1}{3}=\tfrac{1}{y}$ for $y$. Enter your answer as $y=$ an expression in $x$."
+  answer="y=\frac{3x}{x+6}"
+  answerForm="solved:y single-fraction reduced-fraction"
   answerDisplay="$y=\tfrac{3x}{x+6}$"
-  hint="Clear fractions using the LCD $3xy$, then isolate $y$."
+  hint="Multiply both sides by the LCD, collect the terms containing $y$ on one side, factor out $y$, and divide."
 >}}
 
 ## Key terms
@@ -569,16 +584,18 @@ equation to be undefined.
 {{< fillin
   question="Solve $\tfrac{1}{a}+\tfrac{2}{5}=\tfrac{1}{2}$."
   answer="10"
+  answerForm="decimal"
   answerDisplay="$a=10$"
-  hint="Note $a\ne0$, then clear the fractions using the LCD $10a$."
+  hint="Note the value that makes a denominator zero, multiply both sides by the LCD of all the denominators, then solve and check."
 >}}
 
 {{< fillin
   question="Solve $1+\tfrac{9}{p}=\tfrac{-20}{p^2}$. Enter both solutions, separated by commas."
   answer="-5, -4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$p=-5,\ -4$"
-  hint="Note $p\ne0$, clear the fractions using $p^2$, then factor the resulting quadratic."
+  hint="Note the value that makes a denominator zero, multiply both sides by the LCD, then write the resulting quadratic in standard form and factor."
 >}}
 
 {{< multiplechoice
@@ -594,9 +611,10 @@ No solution
 ### Use rational functions
 
 {{< fillin
-  question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, find the values excluded from the domain, separated by commas."
+  question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, find the values excluded from the domain. Enter just the values, separated by commas."
   answer="-2, -4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x\ne-2,\ x\ne-4$"
   hint="Factor the denominator and set each factor equal to zero."
 >}}
@@ -605,6 +623,7 @@ No solution
   question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, solve $f(x)=5$. Enter both solutions, separated by commas."
   answer="-3, -\frac{14}{5}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-3,\ -\tfrac{14}{5}$"
   hint="Set the rational expression equal to $5$, clear fractions, and discard any excluded root."
 >}}
@@ -612,6 +631,7 @@ No solution
 {{< fillin
   question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, find the points on the graph where $f(x)=5$. Enter the points in order of increasing $x$-coordinate, separated by a comma."
   answer="(-3,5), (-\frac{14}{5},5)"
+  answerForm="lowest-terms"
   answerDisplay="$(-3,5),\ (-\tfrac{14}{5},5)$"
   hint="Use each input found when solving $f(x)=5$ as the first coordinate; the function value is the second coordinate."
 >}}
@@ -619,24 +639,27 @@ No solution
 ### Solve a rational equation for a specific variable
 
 {{< fillin
-  question="Solve $\tfrac{C}{r}=2\pi$ for $r$."
-  answer="\frac{C}{2\pi}"
+  question="Solve $\tfrac{C}{r}=2\pi$ for $r$. Enter your answer as $r=$ an expression in $C$."
+  answer="r=\frac{C}{2\pi}"
+  answerForm="solved:r single-fraction"
   answerDisplay="$r=\tfrac{C}{2\pi}$"
-  hint="Multiply both sides by $r$, then divide by $2\pi$."
+  hint="Multiply both sides by the LCD to clear the fraction, then divide to isolate $r$."
 >}}
 
 {{< fillin
-  question="Solve $\tfrac{v+3}{w-1}=\tfrac{1}{2}$ for $w$."
-  answer="2v+7"
+  question="Solve $\tfrac{v+3}{w-1}=\tfrac{1}{2}$ for $w$. Enter your answer as $w=$ an expression in $v$."
+  answer="w=2v+7"
+  answerForm="solved:w expanded distributed no-like-terms"
   answerDisplay="$w=2v+7$"
   hint="Cross-multiply, then isolate $w$."
 >}}
 
 {{< fillin
-  question="Solve $a=\tfrac{b+3}{c-2}$ for $c$."
-  answer="\frac{b+3+2a}{a}"
+  question="Solve $a=\tfrac{b+3}{c-2}$ for $c$. Enter your answer as $c=$ a single fraction in $a$ and $b$."
+  answer="c=\frac{b+3+2a}{a}"
+  answerForm="solved:c single-fraction reduced-fraction"
   answerDisplay="$c=\tfrac{b+3+2a}{a}$"
-  hint="Multiply both sides by $c-2$, collect the terms with $c$, then divide by $a$."
+  hint="Multiply both sides by the LCD, distribute, collect the terms with $c$ on one side, then divide to isolate $c$."
 >}}
 
 <small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.4](https://openstax.org/books/intermediate-algebra-2e/pages/7-4-solve-rational-equations), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section for interactive web delivery, converted Try It exercises to immediate-feedback questions, and adapted selected end-of-section exercises into an interactive Practice block.</small>

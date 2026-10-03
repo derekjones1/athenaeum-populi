@@ -62,15 +62,15 @@ denominator of $x+4$, so $x\ne -4$.
 {{< fillin
   question="Simplify $\tfrac{9x+14}{x+7}+\tfrac{x^2}{x+7}$."
   answer="x+2"
-  answerForm="polynomial"
+  answerForm="polynomial no-like-terms"
   hint="Add the numerators over the common denominator, then factor the numerator."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{x^2+8x}{x+5}+\tfrac{15}{x+5}$."
   answer="x+3"
-  answerForm="polynomial"
-  hint="Combine the numerators, then factor $x^2+8x+15$."
+  answerForm="polynomial no-like-terms"
+  hint="Add the numerators over the common denominator, then factor the numerator and remove the common factor."
 >}}
 
 To subtract rational expressions, they must also have a common denominator.
@@ -95,7 +95,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{4x^2-11x+8}{x^2-3x+2}-\tfrac{3x^2+x-3}{x^2-3x+2}$."
   answer="\frac{x-11}{x-2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-11}{x-2}$"
   hint="Subtract the entire second numerator, combine like terms, and factor both numerator and denominator."
 >}}
@@ -103,7 +103,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{6x^2-x+20}{x^2-81}-\tfrac{5x^2+11x-7}{x^2-81}$."
   answer="\frac{x-3}{x+9}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-3}{x+9}$"
   hint="Distribute the subtraction sign, combine like terms, then factor."
 >}}
@@ -142,7 +142,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{y^2-5y}{y^2-4}-\tfrac{6y-6}{4-y^2}$."
   answer="\frac{y+3}{y+2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y+3}{y+2}$"
   hint="The denominators are opposites. Multiply the second rational expression by $\tfrac{-1}{-1}$ before subtracting."
 >}}
@@ -150,7 +150,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{2n^2+8n-1}{n^2-1}-\tfrac{n^2-7n-1}{1-n^2}$."
   answer="\frac{3n-2}{n-1}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3n-2}{n-1}$"
   hint="Rewrite the second denominator as $n^2-1$ by multiplying its fraction by $\tfrac{-1}{-1}$."
 >}}
@@ -202,24 +202,20 @@ $\tfrac{8x+24}{(x+1)(x-3)(x+3)}$ and
 $\tfrac{3x^2-9x}{(x+1)(x+3)(x-3)}$.
 
 {{< fillin
-  question="Find the LCD for $\tfrac{2}{x^2-x-12}$ and $\tfrac{1}{x^2-16}$."
+  question="Find the LCD for $\tfrac{2}{x^2-x-12}$ and $\tfrac{1}{x^2-16}$. Leave your answer in factored form."
   answer="(x-4)(x+3)(x+4)"
+  answerForm="factored-completely"
+  answerDisplay="$(x-4)(x+3)(x+4)$; the equivalent expressions are $\tfrac{2x+8}{(x-4)(x+3)(x+4)}$ and $\tfrac{x+3}{(x-4)(x+3)(x+4)}$"
   hint="Factor both denominators completely and include each distinct factor the greatest number of times it occurs."
 >}}
 
-The equivalent expressions are
-
-$$\frac{2x+8}{(x-4)(x+3)(x+4)}\quad\text{and}\quad\frac{x+3}{(x-4)(x+3)(x+4)}.$$
-
 {{< fillin
-  question="Find the LCD for $\tfrac{3x}{x^2-3x-10}$ and $\tfrac{5}{x^2+3x+2}$."
+  question="Find the LCD for $\tfrac{3x}{x^2-3x-10}$ and $\tfrac{5}{x^2+3x+2}$. Leave your answer in factored form."
   answer="(x+2)(x-5)(x+1)"
+  answerForm="factored-completely"
+  answerDisplay="$(x+2)(x-5)(x+1)$; the equivalent expressions are $\tfrac{3x^2+3x}{(x+2)(x-5)(x+1)}$ and $\tfrac{5x-25}{(x+2)(x-5)(x+1)}$"
   hint="Factor both quadratic denominators, match their common factor, and include it only once."
 >}}
-
-The equivalent expressions are
-
-$$\frac{3x^2+3x}{(x+2)(x-5)(x+1)}\quad\text{and}\quad\frac{5x-25}{(x+2)(x-5)(x+1)}.$$
 
 ## Add and subtract rational expressions with unlike denominators
 
@@ -242,17 +238,17 @@ Because $5x-12$ cannot be factored, the answer is simplified.
 {{< fillin
   question="Add $\tfrac{2}{x-2}+\tfrac{5}{x+3}$."
   answer="\frac{7x-4}{(x-2)(x+3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{7x-4}{(x-2)(x+3)}$"
-  hint="The LCD is $(x-2)(x+3)$. Multiply each numerator by the factor missing from its denominator."
+  hint="Use the product of the two denominators as the LCD, multiply each numerator by the factor its denominator is missing, then add."
 >}}
 
 {{< fillin
   question="Add $\tfrac{4}{m+3}+\tfrac{3}{m+4}$."
   answer="\frac{7m+25}{(m+3)(m+4)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{7m+25}{(m+3)(m+4)}$"
-  hint="Use $(m+3)(m+4)$ as the LCD, rewrite both fractions, and combine the numerators."
+  hint="Use the product of the two denominators as the LCD, rewrite both fractions over it, and combine the numerators."
 >}}
 
 {{< callout type="info" >}}
@@ -289,15 +285,15 @@ The numerator is prime, so there are no common factors.
 {{< fillin
   question="Add $\tfrac{1}{m^2-m-2}+\tfrac{5m}{m^2+3m+2}$."
   answer="\frac{5m^2-9m+2}{(m+1)(m-2)(m+2)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5m^2-9m+2}{(m+1)(m-2)(m+2)}$"
-  hint="Factor both denominators. Their common factor is $m+1$."
+  hint="Factor both denominators, build the LCD with the shared factor written once, and rewrite each fraction over it before adding."
 >}}
 
 {{< fillin
   question="Add $\tfrac{2n}{n^2-3n-10}+\tfrac{6}{n^2+5n+6}$."
   answer="\frac{2n^2+12n-30}{(n+2)(n-5)(n+3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2n^2+12n-30}{(n+2)(n-5)(n+3)}$"
   hint="Factor both denominators, find the LCD, and multiply each numerator by its missing factor."
 >}}
@@ -324,7 +320,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{2x}{x^2-4}-\tfrac{1}{x+2}$."
   answer="\frac{1}{x-2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{1}{x-2}$"
   hint="Factor $x^2-4$, rewrite the second fraction with the LCD, and subtract."
 >}}
@@ -332,9 +328,9 @@ $$
 {{< fillin
   question="Subtract $\tfrac{3}{z+3}-\tfrac{6z}{z^2-9}$."
   answer="-\frac{3}{z-3}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{3}{z-3}$"
-  hint="Factor $z^2-9=(z-3)(z+3)$ and rewrite the first fraction with the LCD."
+  hint="Factor the second denominator to find the LCD, rewrite the first fraction over it, subtract, and look for a common factor."
 >}}
 
 There are lots of negative signs in the next example. Be extra careful.
@@ -360,15 +356,15 @@ $$
 {{< fillin
   question="Subtract $\tfrac{3x-1}{x^2-5x-6}-\tfrac{2}{6-x}$."
   answer="\frac{5x+1}{(x-6)(x+1)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5x+1}{(x-6)(x+1)}$"
-  hint="Factor the quadratic. Notice that $6-x$ is the opposite of $x-6$."
+  hint="Factor the quadratic denominator and look for a factor that is the opposite of $6-x$; multiply that fraction by $\tfrac{-1}{-1}$."
 >}}
 
 {{< fillin
   question="Subtract $\tfrac{-2y-2}{y^2+2y-8}-\tfrac{y-1}{2-y}$."
   answer="\frac{y+3}{y+4}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y+3}{y+4}$"
   hint="Factor $y^2+2y-8$ and rewrite the denominator $2-y$ using its opposite."
 >}}
@@ -396,17 +392,17 @@ $$
 {{< fillin
   question="Subtract $\tfrac{3}{b^2-4b-5}-\tfrac{2}{b^2-6b+5}$."
   answer="\frac{1}{(b+1)(b-1)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{1}{(b+1)(b-1)}$"
-  hint="Factor both denominators. They share the factor $b-5$."
+  hint="Factor both denominators, build the LCD with their shared factor written once, and subtract the whole second numerator."
 >}}
 
 {{< fillin
   question="Subtract $\tfrac{4}{x^2-4}-\tfrac{3}{x^2-x-2}$."
   answer="\frac{1}{(x+2)(x+1)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{1}{(x+2)(x+1)}$"
-  hint="Factor both denominators and use the LCD $(x-2)(x+2)(x+1)$."
+  hint="Factor both denominators, build the LCD with their shared factor written once, and subtract the whole second numerator."
 >}}
 
 We follow the same steps as before to find the LCD when we have more than two
@@ -431,17 +427,17 @@ $$
 {{< fillin
   question="Simplify $\tfrac{v}{v+1}+\tfrac{3}{v-1}-\tfrac{6}{v^2-1}$."
   answer="\frac{v+3}{v+1}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{v+3}{v+1}$"
-  hint="Factor $v^2-1$; it is the LCD of all three denominators."
+  hint="Factor every denominator, find the LCD of all three, and rewrite each fraction over it before combining."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{3w}{w+2}+\tfrac{2}{w+7}-\tfrac{17w+4}{w^2+9w+14}$."
   answer="\frac{3w}{w+7}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3w}{w+7}$"
-  hint="Factor the quadratic denominator as $(w+2)(w+7)$, rewrite all three expressions with that LCD, and combine."
+  hint="Factor the quadratic denominator, rewrite all three expressions with the LCD, combine, and look for a common factor."
 >}}
 
 ## Add and subtract rational functions
@@ -468,17 +464,17 @@ $$
 {{< fillin
   question="Find $R(x)=f(x)-g(x)$ where $f(x)=\tfrac{x+1}{x+3}$ and $g(x)=\tfrac{x+17}{x^2-x-12}$."
   answer="\frac{x-7}{x-4}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-7}{x-4}$"
-  hint="Factor $x^2-x-12=(x+3)(x-4)$, then subtract with the common denominator."
+  hint="Substitute the functions, factor the denominators to find the LCD, then subtract and remove any common factor."
 >}}
 
 {{< fillin
   question="Find $R(x)=f(x)+g(x)$ where $f(x)=\tfrac{x-4}{x+3}$ and $g(x)=\tfrac{4x+6}{x^2-9}$."
   answer="\frac{x^2-3x+18}{(x+3)(x-3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x^2-3x+18}{(x+3)(x-3)}$"
-  hint="Factor $x^2-9=(x+3)(x-3)$ and rewrite $f(x)$ with that denominator before adding."
+  hint="Substitute the functions, factor the denominators to find the LCD, rewrite $f(x)$ over it, and add."
 >}}
 
 ## Key terms
@@ -495,17 +491,17 @@ add or subtract the numerators and place the result over that denominator.
 {{< fillin
   question="Add: $\tfrac{3c}{4c-5}+\tfrac{5}{4c-5}$."
   answer="\frac{3c+5}{4c-5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3c+5}{4c-5}$"
-  hint="Add the numerators over the common denominator; $3c+5$ shares no factor with $4c-5$."
+  hint="Add the numerators over the common denominator, then check whether the result has a common factor."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{6p^2+3p+4}{p^2+4p-5}-\tfrac{5p^2+p+7}{p^2+4p-5}$."
   answer="\frac{p+3}{p+5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{p+3}{p+5}$"
-  hint="Subtract the entire second numerator, combine like terms, then factor both the numerator and denominator to cancel $p-1$."
+  hint="Subtract the entire second numerator, combine like terms, then factor both the numerator and denominator and remove the common factor."
 >}}
 
 ### Add and subtract rational expressions whose denominators are opposites
@@ -513,7 +509,7 @@ add or subtract the numerators and place the result over that denominator.
 {{< fillin
   question="Add: $\tfrac{10x^2+16x-7}{8x-3}+\tfrac{2x^2+3x-1}{3-8x}$."
   answer="x+2"
-  answerForm="polynomial"
+  answerForm="polynomial no-like-terms"
   answerDisplay="$x+2$"
   hint="The denominators $8x-3$ and $3-8x$ are opposites. Multiply the second fraction by $\tfrac{-1}{-1}$ before combining."
 >}}
@@ -521,7 +517,7 @@ add or subtract the numerators and place the result over that denominator.
 {{< fillin
   question="Subtract: $\tfrac{z^2+6z}{z^2-25}-\tfrac{3z+20}{25-z^2}$."
   answer="\frac{z+4}{z-5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{z+4}{z-5}$"
   hint="The denominators $z^2-25$ and $25-z^2$ are opposites. Multiply the second fraction by $\tfrac{-1}{-1}$, combine over the common denominator, and factor."
 >}}
@@ -529,21 +525,27 @@ add or subtract the numerators and place the result over that denominator.
 ### Find the least common denominator of rational expressions
 
 {{< fillin
-  question="Find the LCD for $\tfrac{5}{x^2-2x-8}$ and $\tfrac{2x}{x^2-x-12}$."
+  question="Find the LCD for $\tfrac{5}{x^2-2x-8}$ and $\tfrac{2x}{x^2-x-12}$. Leave your answer in factored form."
   answer="(x+2)(x-4)(x+3)"
-  hint="Factor $x^2-2x-8=(x+2)(x-4)$ and $x^2-x-12=(x-4)(x+3)$; bring down each factor once, using the shared $(x-4)$ only once."
+  answerForm="factored-completely"
+  answerDisplay="$(x+2)(x-4)(x+3)$"
+  hint="Factor each denominator completely, line up the factors they share in columns, and bring down one factor from each column."
 >}}
 
 {{< fillin
-  question="Rewrite $\tfrac{5}{x^2-2x-8}$ as an equivalent rational expression with denominator $(x+2)(x-4)(x+3)$. Enter just the new numerator."
-  answer="5x+15"
-  hint="The factor missing from $x^2-2x-8=(x+2)(x-4)$ is $(x+3)$; multiply the numerator $5$ by it."
+  question="Rewrite $\tfrac{9}{z^2+2z-8}$ as an equivalent rational expression with denominator $(z-2)(z+4)(z+2)$. Enter just the new numerator, multiplied out."
+  answer="9z+18"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$9z+18$"
+  hint="Factor the denominator, find the factor of the new denominator that it is missing, and multiply the numerator by that factor."
 >}}
 
 {{< fillin
-  question="Rewrite $\tfrac{2x}{x^2-x-12}$ as an equivalent rational expression with denominator $(x+2)(x-4)(x+3)$. Enter just the new numerator."
-  answer="2x^2+4x"
-  hint="The factor missing from $x^2-x-12=(x-4)(x+3)$ is $(x+2)$; multiply the numerator $2x$ by it."
+  question="Rewrite $\tfrac{4z}{z^2-4}$ as an equivalent rational expression with denominator $(z-2)(z+4)(z+2)$. Enter just the new numerator, multiplied out."
+  answer="4z^2+16z"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$4z^2+16z$"
+  hint="Factor the denominator, find the factor of the new denominator that it is missing, and multiply the numerator by that factor."
 >}}
 
 ### Add and subtract rational expressions with unlike denominators
@@ -551,17 +553,17 @@ add or subtract the numerators and place the result over that denominator.
 {{< fillin
   question="Add: $\tfrac{3}{r+4}+\tfrac{2}{r-5}$."
   answer="\frac{5r-7}{(r+4)(r-5)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5r-7}{(r+4)(r-5)}$"
-  hint="The LCD is $(r+4)(r-5)$. Rewrite each fraction with that denominator, then combine the numerators."
+  hint="Use the product of the two denominators as the LCD. Rewrite each fraction over it, then combine the numerators."
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{t}{t-6}-\tfrac{t-2}{t+6}$."
   answer="\frac{2(7t-6)}{(t-6)(t+6)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2(7t-6)}{(t-6)(t+6)}$"
-  hint="The LCD is $(t-6)(t+6)$. Rewrite each fraction with that denominator, subtract the numerators, and factor the result."
+  hint="Use the product of the two denominators as the LCD. Rewrite each fraction over it and subtract the whole second numerator."
 >}}
 
 ### Add and subtract rational functions
@@ -569,19 +571,19 @@ add or subtract the numerators and place the result over that denominator.
 {{< fillin
   question="Find $R(x)=f(x)+g(x)$ where $f(x)=\tfrac{6x}{x^2-64}$ and $g(x)=\tfrac{3}{x-8}$."
   answer="\frac{3(3x+8)}{(x-8)(x+8)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3(3x+8)}{(x-8)(x+8)}$"
-  hint="Factor $x^2-64=(x-8)(x+8)$, rewrite $g(x)$ with that denominator, then add and factor the numerator."
+  hint="Substitute the functions, factor the denominators to find the LCD, rewrite $g(x)$ over it, and add."
 >}}
 
 {{< fillin
   question="Find $R(x)=f(x)-g(x)$ where $f(x)=\tfrac{6x}{x^2-64}$ and $g(x)=\tfrac{3}{x-8}$."
   answer="\frac{3}{x+8}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3}{x+8}$"
-  hint="Factor $x^2-64=(x-8)(x+8)$, rewrite $g(x)$ with that denominator, subtract, then cancel the common factor $x-8$."
+  hint="Substitute the functions, factor the denominators to find the LCD, rewrite $g(x)$ over it, subtract, and look for a common factor."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 7.2: Add and Subtract Rational Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/7-2-add-and-subtract-rational-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example steps as accessible typeset mathematics; omitted the Be Prepared quiz and media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 7.2: Add and Subtract Rational Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/7-2-add-and-subtract-rational-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example steps as accessible typeset mathematics; omitted the Be Prepared quiz, media link, writing exercises, Self Check checklist, and unselected end-of-section exercises; condensed the Key Concepts summary into a Key terms list; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking for each LCD in factored form and showing the two LCD Try Its' rewritten expressions in their answer feedback; and adapted selected end-of-section exercises into an interactive Practice block, posing the $z$ equivalent-expression exercise one fraction at a time with its new numerator multiplied out and splitting each rational-function exercise into its sum and difference.</small>

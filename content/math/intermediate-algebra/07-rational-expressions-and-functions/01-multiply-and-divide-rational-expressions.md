@@ -99,6 +99,7 @@ Thus $\tfrac{x+4}{x^2+5x+6}$ is undefined for $x=-2$ or $x=-3$.
 {{< fillin
   question="For what value is $\tfrac{3y^2}{8x}$ undefined?"
   answer="0"
+  answerForm="decimal"
   answerDisplay="$x=0$"
   hint="Set the denominator $8x$ equal to zero and solve for $x$."
 >}}
@@ -106,6 +107,7 @@ Thus $\tfrac{x+4}{x^2+5x+6}$ is undefined for $x=-2$ or $x=-3$.
 {{< fillin
   question="For what value is $\tfrac{8n-5}{3n+1}$ undefined?"
   answer="-\frac{1}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$n=-\tfrac{1}{3}$"
   hint="Set $3n+1$ equal to zero and solve for $n$."
 >}}
@@ -113,9 +115,10 @@ Thus $\tfrac{x+4}{x^2+5x+6}$ is undefined for $x=-2$ or $x=-3$.
 {{< fillin
   question="Enter, separated by commas, the values for which $\tfrac{a+10}{a^2+4a+3}$ is undefined."
   answer="-1, -3"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-1,-3$"
-  hint="Factor the denominator as $(a+1)(a+3)$, then set each factor equal to zero."
+  hint="Factor the denominator completely, then set each factor equal to zero and solve."
 >}}
 
 ## Simplify rational expressions
@@ -170,15 +173,15 @@ The original denominator gives the restrictions $x\ne-2$ and $x\ne-6$.
 {{< fillin
   question="Simplify $\tfrac{x^2-x-2}{x^2-3x+2}$."
   answer="\frac{x+1}{x-1}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+1}{x-1}$"
-  hint="Factor the numerator as $(x-2)(x+1)$ and the denominator as $(x-2)(x-1)$."
+  hint="Factor the numerator and the denominator completely, then divide out the common factor."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{x^2-3x-10}{x^2+x-2}$."
   answer="\frac{x-5}{x-1}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-5}{x-1}$"
   hint="Factor both polynomials completely, then remove their common factor."
 >}}
@@ -210,15 +213,15 @@ $$
 {{< fillin
   question="Simplify $\tfrac{2x^2-12xy+18y^2}{3x^2-27y^2}$."
   answer="\frac{2(x-3y)}{3(x+3y)}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2(x-3y)}{3(x+3y)}$"
-  hint="Factor the numerator as $2(x-3y)^2$ and the denominator as $3(x-3y)(x+3y)$."
+  hint="Factor out each GCF first, then factor what remains completely and divide out the common factors."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{5x^2-30xy+25y^2}{2x^2-50y^2}$."
   answer="\frac{5(x-y)}{2(x+5y)}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5(x-y)}{2(x+5y)}$"
   hint="Factor out each GCF, then factor the remaining trinomials and differences of squares."
 >}}
@@ -252,17 +255,17 @@ $$
 {{< fillin
   question="Simplify $\tfrac{x^2-4x-5}{25-x^2}$."
   answer="-\frac{x+1}{x+5}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{x+1}{x+5}$"
-  hint="Factor the numerator, then recognize that $x-5$ and $5-x$ are opposites."
+  hint="Factor the numerator and the denominator, then look for a pair of opposite factors."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{x^2+x-2}{1-x^2}$."
   answer="-\frac{x+2}{x+1}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{x+2}{x+1}$"
-  hint="Factor both polynomials and use $1-x=-(x-1)$."
+  hint="Factor both polynomials completely, then look for a pair of opposite factors."
 >}}
 
 ## Multiply rational expressions
@@ -299,7 +302,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{5x}{x^2+5x+6}\cdot\tfrac{x^2-4}{10x}$."
   answer="\frac{x-2}{2(x+3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-2}{2(x+3)}$"
   hint="Factor $x^2+5x+6$ and $x^2-4$, then remove common factors."
 >}}
@@ -307,7 +310,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{9x^2}{x^2+11x+30}\cdot\tfrac{x^2-36}{3x^2}$."
   answer="\frac{3(x-6)}{x+5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3(x-6)}{x+5}$"
   hint="Factor both quadratic expressions completely before multiplying."
 >}}
@@ -334,7 +337,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{2x^2+5x-12}{x^2-16}\cdot\tfrac{x^2-8x+16}{2x^2-13x+15}$."
   answer="\frac{x-4}{x-5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-4}{x-5}$"
   hint="Factor every polynomial completely, then divide out common factors."
 >}}
@@ -342,9 +345,9 @@ $$
 {{< fillin
   question="Simplify $\tfrac{4b^2+7b-2}{1-b^2}\cdot\tfrac{b^2-2b+1}{4b^2+15b-4}$."
   answer="-\frac{(b+2)(b-1)}{(b+1)(b+4)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{(b+2)(b-1)}{(b+1)(b+4)}$"
-  hint="Factor each polynomial and recognize the opposite factors $1-b$ and $b-1$."
+  hint="Factor each polynomial completely, then look for a pair of opposite factors."
 >}}
 
 ## Divide rational expressions
@@ -379,7 +382,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{x^3+8}{3x^2-6x+12}\div\tfrac{x^2-4}{6}$."
   answer="\frac{2}{x-2}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2}{x-2}$"
   hint="Multiply by the reciprocal, factor the sum of cubes and difference of squares, then simplify."
 >}}
@@ -387,7 +390,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{2z^2}{z^2-1}\div\tfrac{z^3-z^2+z}{z^3+1}$."
   answer="\frac{2z}{z-1}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2z}{z-1}$"
   hint="Multiply by the reciprocal and factor $z^3+1$ as a sum of cubes."
 >}}
@@ -424,7 +427,7 @@ $$
 {{< fillin
   question="Simplify the complex fraction $\cfrac{\tfrac{3x^2+7x+2}{4x+24}}{\tfrac{3x^2-14x-5}{x^2+x-30}}$."
   answer="\frac{x+2}{4}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+2}{4}$"
   hint="Rewrite the fraction bar as division, multiply by the reciprocal, and factor each polynomial."
 >}}
@@ -432,7 +435,7 @@ $$
 {{< fillin
   question="Simplify the complex fraction $\cfrac{\tfrac{y^2-36}{2y^2+11y-6}}{\tfrac{2y^2-2y-60}{8y-4}}$."
   answer="\frac{2}{y+5}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2}{y+5}$"
   hint="Rewrite as multiplication by the reciprocal, then factor all four polynomials."
 >}}
@@ -456,7 +459,7 @@ $$
 {{< fillin
   question="Perform the indicated operations: $\tfrac{4m+4}{3m-15}\cdot\tfrac{m^2-3m-10}{m^2-4m-32}\div\tfrac{12m-36}{6m-48}$."
   answer="\frac{2(m+1)(m+2)}{3(m+4)(m-3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2(m+1)(m+2)}{3(m+4)(m-3)}$"
   hint="Rewrite division as multiplication by the reciprocal, then factor and remove common factors."
 >}}
@@ -464,7 +467,7 @@ $$
 {{< fillin
   question="Perform the indicated operations: $\tfrac{2n^2+10n}{n-1}\div\tfrac{n^2+10n+24}{n^2+8n-9}\cdot\tfrac{n+4}{8n^2+12n}$."
   answer="\frac{(n+5)(n+9)}{2(n+6)(2n+3)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{(n+5)(n+9)}{2(n+6)(2n+3)}$"
   hint="Change the division to multiplication by a reciprocal and factor every polynomial completely."
 >}}
@@ -513,16 +516,18 @@ $$
 The domain of $R(x)$ is all real numbers where $x\ne6$ and $x\ne-2$.
 
 {{< fillin
-  question="Find the values excluded from the domain of $R(x)=\tfrac{2x^2-10x}{4x^2-16x-20}$. Enter them separated by commas."
+  question="Find the values excluded from the domain of $R(x)=\tfrac{2x^2-10x}{4x^2-16x-20}$. Enter just the excluded values, separated by commas."
   answer="-1, 5"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-1,5$"
   hint="Set the denominator equal to zero, divide out its GCF, and factor."
 >}}
 
 {{< fillin
-  question="Find the values excluded from the domain of $R(x)=\tfrac{4x^2-16x}{8x^2-16x-64}$. Enter them separated by commas."
+  question="Find the values excluded from the domain of $R(x)=\tfrac{4x^2-16x}{8x^2-16x-64}$. Enter just the excluded values, separated by commas."
   answer="-2, 4"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-2,4$"
   hint="Factor the denominator after removing the GCF."
@@ -544,21 +549,18 @@ $$
 \end{array}
 $$
 
-{{< multiplechoice
+{{< fillin
   question="Find $R(x)=f(x)\cdot g(x)$ where $f(x)=\tfrac{3x-21}{x^2-9x+14}$ and $g(x)=\tfrac{2x^2-8}{3x+6}$."
-  answer="$2$"
+  answer="2"
+  answerForm="decimal"
+  answerDisplay="$2$"
   hint="Factor every numerator and denominator completely, then divide out each factor that appears both above and below the bar."
 >}}
-$2$
-$\tfrac{2}{x-2}$
-$\tfrac{2(x-2)}{x+2}$
-$2(x-2)$
-{{< /multiplechoice >}}
 
 {{< fillin
   question="Find $R(x)=f(x)\cdot g(x)$ where $f(x)=\tfrac{x^2-x}{3x^2+27x-30}$ and $g(x)=\tfrac{x^2-100}{x^2-10x}$."
   answer="\frac{1}{3}"
-  answerForm="single-fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{3}$"
   hint="Factor every numerator and denominator, multiply, and remove common factors."
 >}}
@@ -582,7 +584,7 @@ $$
 {{< fillin
   question="Find $R(x)=\tfrac{f(x)}{g(x)}$ where $f(x)=\tfrac{2x^2}{x^2-8x}$ and $g(x)=\tfrac{8x^2+24x}{x^2+x-6}$."
   answer="\frac{x-2}{4(x-8)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x-2}{4(x-8)}$"
   hint="Rewrite the quotient as multiplication by the reciprocal, then factor and simplify."
 >}}
@@ -590,7 +592,7 @@ $$
 {{< fillin
   question="Find $R(x)=\tfrac{f(x)}{g(x)}$ where $f(x)=\tfrac{15x^2}{3x^2+33x}$ and $g(x)=\tfrac{5x-5}{x^2+9x-22}$."
   answer="\frac{x(x-2)}{x-1}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x(x-2)}{x-1}$"
   hint="Multiply $f(x)$ by the reciprocal of $g(x)$, then factor all polynomials."
 >}}
@@ -599,7 +601,7 @@ $$
 
 **rational expression** — an expression of the form $\tfrac{p}{q}$, where
 $p$ and $q$ are polynomials and $q\ne0$. **simplified rational expression** —
-a rational expression with no common factors in its numerator and denominator.
+a rational expression with no common factors, other than $1$, in its numerator and denominator.
 **complex fraction** — a fraction containing a fraction in its numerator,
 denominator, or both. **rational function** — a function of the form
 $R(x)=\tfrac{p(x)}{q(x)}$, where $p(x)$ and $q(x)$ are polynomial functions and
@@ -612,6 +614,7 @@ $q(x)$ is not zero.
 {{< fillin
   question="For what value is $\tfrac{2x^2}{z}$ undefined?"
   answer="0"
+  answerForm="decimal"
   answerDisplay="$z=0$"
   hint="Set the denominator $z$ equal to zero."
 >}}
@@ -619,6 +622,7 @@ $q(x)$ is not zero.
 {{< fillin
   question="For what value is $\tfrac{4p-1}{6p-5}$ undefined?"
   answer="\frac{5}{6}"
+  answerForm="lowest-terms"
   answerDisplay="$p=\tfrac{5}{6}$"
   hint="Set the denominator $6p-5$ equal to zero and solve for $p$."
 >}}
@@ -626,9 +630,10 @@ $q(x)$ is not zero.
 {{< fillin
   question="Enter, separated by commas, the values for which $\tfrac{n-3}{n^2+2n-8}$ is undefined."
   answer="-4, 2"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-4,2$"
-  hint="Factor the denominator as $(n+4)(n-2)$, then set each factor equal to zero."
+  hint="Factor the denominator completely, then set each factor equal to zero and solve."
 >}}
 
 ### Simplify rational expressions
@@ -636,25 +641,25 @@ $q(x)$ is not zero.
 {{< fillin
   question="Simplify $\tfrac{8m^3n}{12mn^2}$."
   answer="\frac{2m^2}{3n}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2m^2}{3n}$"
-  hint="Divide out the common factors of $4$, $m$, and $n$."
+  hint="Divide the coefficients by their greatest common factor, then subtract the exponents of each variable."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{x^2+4x-5}{x^2-2x+1}$."
   answer="\frac{x+5}{x-1}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+5}{x-1}$"
-  hint="Factor the numerator as $(x+5)(x-1)$ and the denominator as $(x-1)^2$."
+  hint="Factor the numerator and the denominator completely, then divide out the common factor."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{z^2-9z+20}{16-z^2}$."
   answer="-\frac{z-5}{4+z}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{z-5}{4+z}$"
-  hint="Factor the numerator, then recognize that $z-4$ and $4-z$ are opposites."
+  hint="Factor the numerator and the denominator, then look for a pair of opposite factors."
 >}}
 
 ### Multiply rational expressions
@@ -662,7 +667,7 @@ $q(x)$ is not zero.
 {{< fillin
   question="Simplify $\tfrac{5p^2}{p^2-5p-36}\cdot\tfrac{p^2-16}{10p}$."
   answer="\frac{p(p-4)}{2(p-9)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{p(p-4)}{2(p-9)}$"
   hint="Factor $p^2-5p-36$ and $p^2-16$, then divide out the common factors."
 >}}
@@ -670,9 +675,9 @@ $q(x)$ is not zero.
 {{< fillin
   question="Simplify $\tfrac{2y^2-10y}{y^2+10y+25}\cdot\tfrac{y+5}{6y}$."
   answer="\frac{y-5}{3(y+5)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{y-5}{3(y+5)}$"
-  hint="Factor $y^2+10y+25$ as $(y+5)^2$ and $2y^2-10y$ as $2y(y-5)$."
+  hint="Factor each numerator and denominator completely, then divide out the common factors."
 >}}
 
 ### Divide rational expressions
@@ -680,15 +685,15 @@ $q(x)$ is not zero.
 {{< fillin
   question="Simplify $\tfrac{v-5}{11-v}\div\tfrac{v^2-25}{v-11}$."
   answer="-\frac{1}{v+5}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{1}{v+5}$"
-  hint="Multiply by the reciprocal, then recognize that $11-v$ and $v-11$ are opposites."
+  hint="Multiply by the reciprocal, factor completely, then look for a pair of opposite factors."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{3s^2}{s^2-16}\div\tfrac{s^3+4s^2+16s}{s^3-64}$."
   answer="\frac{3s}{s+4}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3s}{s+4}$"
   hint="Multiply by the reciprocal and factor $s^3-64$ as a difference of cubes."
 >}}
@@ -696,8 +701,9 @@ $q(x)$ is not zero.
 ### Multiply and divide rational functions
 
 {{< fillin
-  question="Find the values excluded from the domain of $R(x)=\tfrac{x^3-2x^2-25x+50}{x^2-25}$. Enter them separated by commas."
+  question="Find the values excluded from the domain of $R(x)=\tfrac{x^3-2x^2-25x+50}{x^2-25}$. Enter just the excluded values, separated by commas."
   answer="-5, 5"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-5,5$"
   hint="Set the denominator $x^2-25$ equal to zero and solve."
@@ -706,7 +712,7 @@ $q(x)$ is not zero.
 {{< fillin
   question="Find $R(x)=f(x)\cdot g(x)$ where $f(x)=\tfrac{4x}{x^2-3x-10}$ and $g(x)=\tfrac{x^2-25}{8x^2}$."
   answer="\frac{x+5}{2x(x+2)}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+5}{2x(x+2)}$"
   hint="Factor $x^2-3x-10$ and $x^2-25$, then multiply and remove common factors."
 >}}
@@ -714,11 +720,11 @@ $q(x)$ is not zero.
 {{< fillin
   question="Find $R(x)=\tfrac{f(x)}{g(x)}$ where $f(x)=\tfrac{27x^2}{3x-21}$ and $g(x)=\tfrac{3x^2+18x}{x^2+13x+42}$."
   answer="\frac{3x(x+7)}{x-7}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{3x(x+7)}{x-7}$"
   hint="Multiply $f(x)$ by the reciprocal of $g(x)$, then factor and simplify."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 7.1: Multiply and Divide Rational Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/7-1-multiply-and-divide-rational-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions as accessible typeset step arrays; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 7.1: Multiply and Divide Rational Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/7-1-multiply-and-divide-rational-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions as accessible typeset step arrays; omitted the Be Prepared quiz, Key Concepts summary, Writing Exercises, and Self Check checklist; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, asking each find-the-domain Try It for the excluded values; and adapted selected end-of-section exercises into an interactive Practice block, asking the find-the-domain exercise for the excluded values.</small>

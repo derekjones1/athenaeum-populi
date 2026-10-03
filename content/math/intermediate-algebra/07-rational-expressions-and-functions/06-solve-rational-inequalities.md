@@ -66,8 +66,8 @@ If an inequality gives $x>3$, there are many solutions. The number $3$ is a
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; 3</text>
+  <path d="M 243.2 35 Q 235.2 45 243.2 55" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor"><tspan font-style="italic">x</tspan> &gt; 3</text>
 </svg>
 </div>
 
@@ -109,86 +109,78 @@ zero and is included. The solution is
 
 $$(-\infty,-3)\cup[1,\infty).$$
 
-The two rays of the solution are shown separately:
+The sign chart puts the signs of the factors above the number line and the sign of the quotient below it, and shades the solution:
 
 <div class="ap-figure">
-<svg role="img" aria-label="A number line shaded left from an open parenthesis at negative three." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="133.6" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−7</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="133.6" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
-  <text x="133.6" y="16" text-anchor="middle" font-size="14" fill="currentColor">(−∞, −3)</text>
-</svg>
-</div>
-
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded right from a closed bracket at one." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="133.6" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">7</text>
-  <text x="133.6" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="133.6" y="16" text-anchor="middle" font-size="14" fill="currentColor">[1, ∞)</text>
+<svg role="img" aria-label="A sign chart on a number line from negative 6 to 6, with dashed vertical lines at the zero partition numbers negative 3 and 1. Above the line, x minus 1 is negative, negative, positive and x plus 3 is negative, positive, positive across the three intervals; below it, the quotient of x minus 1 over x plus 3 is positive, negative, positive. The line is shaded to the left of a parenthesis at negative 3 and to the right of a bracket at 1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 175" width="460" height="175" font-family="Helvetica, Arial, sans-serif">
+  <line x1="80" y1="95" x2="450" y2="95" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 88 88 L 80 95 L 88 102" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 442 88 L 450 95 L 442 102" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="80" y1="95" x2="182.5" y2="95" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="292.5" y1="95" x2="450" y2="95" stroke="currentColor" stroke-width="3.5"/>
+  <line x1="100" y1="89" x2="100" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="100" y="117" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
+  <line x1="127.5" y1="89" x2="127.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="127.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="155" y1="89" x2="155" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="155" y="117" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="182.5" y1="89" x2="182.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="182.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="210" y1="89" x2="210" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="210" y="117" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="237.5" y1="89" x2="237.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="237.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="265" y1="89" x2="265" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="265" y="117" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="292.5" y1="89" x2="292.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="320" y1="89" x2="320" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="320" y="117" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="347.5" y1="89" x2="347.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="347.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="375" y1="89" x2="375" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="375" y="117" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="402.5" y1="89" x2="402.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="402.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="430" y1="89" x2="430" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <text x="430" y="117" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <line x1="182.5" y1="10" x2="182.5" y2="83" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="182.5" y1="124" x2="182.5" y2="170" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="292.5" y1="10" x2="292.5" y2="83" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="292.5" y1="124" x2="292.5" y2="170" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
+  <path d="M 178.5 85 Q 186.5 95 178.5 105" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <path d="M 297.5 85 L 292.5 85 L 292.5 105 L 297.5 105" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <text x="40" y="30" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> − 1</text>
+  <text x="141.25" y="30" text-anchor="middle" font-size="15" fill="currentColor">−</text>
+  <text x="237.5" y="30" text-anchor="middle" font-size="15" fill="currentColor">−</text>
+  <text x="361.25" y="30" text-anchor="middle" font-size="15" fill="currentColor">+</text>
+  <text x="40" y="54" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> + 3</text>
+  <text x="141.25" y="54" text-anchor="middle" font-size="15" fill="currentColor">−</text>
+  <text x="237.5" y="54" text-anchor="middle" font-size="15" fill="currentColor">+</text>
+  <text x="361.25" y="54" text-anchor="middle" font-size="15" fill="currentColor">+</text>
+  <text x="40" y="140" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> − 1</text>
+  <line x1="22" y1="145" x2="58" y2="145" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="160" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> + 3</text>
+  <text x="141.25" y="150" text-anchor="middle" font-size="15" fill="currentColor">+</text>
+  <text x="237.5" y="150" text-anchor="middle" font-size="15" fill="currentColor">−</text>
+  <text x="361.25" y="150" text-anchor="middle" font-size="15" fill="currentColor">+</text>
 </svg>
 </div>
 
 {{< fillin
   question="Solve $\tfrac{x-2}{x+4}\ge0$. Enter the solution in interval notation."
   answer="(-\infty,-4) \cup [2,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-4)\cup[2,\infty)$"
-  hint="The zero partition numbers are $-4$ and $2$. Test one point in each interval."
+  hint="Find where the numerator is zero and where the denominator is zero, then test one point in each interval."
 >}}
 
 {{< fillin
   question="Solve $\tfrac{x+2}{x-4}\ge0$. Enter the solution in interval notation."
   answer="(-\infty,-2] \cup (4,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-2]\cup(4,\infty)$"
-  hint="The numerator is zero at $-2$; the denominator is zero at $4$."
+  hint="Find the zero partition numbers, test each interval, and decide which endpoints the $\ge$ allows."
 >}}
 
 {{< callout type="info" >}}
@@ -237,6 +229,7 @@ inequality is strict, neither endpoint is included.
 {{< fillin
   question="Solve $\tfrac{3x}{x-3}<1$. Enter the solution in interval notation."
   answer="(-\tfrac{3}{2},3)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\tfrac{3}{2},3)$"
   hint="Subtract $1$, combine into one quotient, and find its zero partition numbers."
 >}}
@@ -244,6 +237,7 @@ inequality is strict, neither endpoint is included.
 {{< fillin
   question="Solve $\tfrac{3x}{x-4}<2$. Enter the solution in interval notation."
   answer="(-8,4)"
+  answerForm="lowest-terms"
   answerDisplay="$(-8,4)$"
   hint="Write the inequality with zero on the right before testing intervals."
 >}}
@@ -276,13 +270,15 @@ $$(-\infty,-3)\cup(5,\infty).$$
 {{< fillin
   question="Solve $\tfrac{1}{x^2+2x-8}>0$. Enter the solution in interval notation."
   answer="(-\infty,-4) \cup (2,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-4)\cup(2,\infty)$"
-  hint="Factor the denominator as $(x+4)(x-2)$."
+  hint="The numerator is always positive, so factor the denominator and find the intervals where it is positive."
 >}}
 
 {{< fillin
   question="Solve $\tfrac{3}{x^2+x-12}>0$. Enter the solution in interval notation."
   answer="(-\infty,-4) \cup (3,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-4)\cup(3,\infty)$"
   hint="Factor the denominator, then test the three intervals."
 >}}
@@ -298,7 +294,7 @@ Subtract $\tfrac{5}{3x}$ and use the LCD $3x^2$:
 $$
 \begin{array}{lrcl}
 \text{Get zero on the right.} & \tfrac{1}{3}-\tfrac{2}{x^2}-\tfrac{5}{3x} &<& 0 \\[10pt]
-\text{Write over the LCD.} & \tfrac{x^2-6-5x}{3x^2} &<& 0 \\[10pt]
+\text{Write over the LCD.} & \tfrac{x^2-5x-6}{3x^2} &<& 0 \\[10pt]
 \text{Factor the numerator.} & \tfrac{(x-6)(x+1)}{3x^2} &<& 0
 \end{array}
 $$
@@ -321,6 +317,7 @@ $$(-1,0)\cup(0,6).$$
 {{< fillin
   question="Solve $\tfrac{1}{2}+\tfrac{4}{x^2}<\tfrac{3}{x}$. Enter the solution in interval notation."
   answer="(2,4)"
+  answerForm="lowest-terms"
   answerDisplay="$(2,4)$"
   hint="Move all terms left, use the LCD $2x^2$, and factor the numerator."
 >}}
@@ -328,6 +325,7 @@ $$(-1,0)\cup(0,6).$$
 {{< fillin
   question="Solve $\tfrac{1}{3}+\tfrac{6}{x^2}<\tfrac{3}{x}$. Enter the solution in interval notation."
   answer="(3,6)"
+  answerForm="lowest-terms"
   answerDisplay="$(3,6)$"
   hint="Combine the expressions over $3x^2$, then factor and test intervals."
 >}}
@@ -359,13 +357,15 @@ undefined and excluded. The solution is $[-3,5)$.
 {{< fillin
   question="Given $R(x)=\tfrac{x-2}{x+4}$, find the values of $x$ that make $R(x)\le0$. Enter interval notation."
   answer="(-4,2]"
+  answerForm="lowest-terms"
   answerDisplay="$(-4,2]$"
-  hint="The zero partition numbers are $-4$ and $2$."
+  hint="Find where the numerator and the denominator are zero, test each interval, and include an endpoint only where $R(x)=0$."
 >}}
 
 {{< fillin
   question="Given $R(x)=\tfrac{x+1}{x-4}$, find the values of $x$ that make $R(x)\le0$. Enter interval notation."
   answer="[-1,4)"
+  answerForm="lowest-terms"
   answerDisplay="$[-1,4)$"
   hint="Include the zero of the numerator, but exclude the zero of the denominator."
 >}}
@@ -412,8 +412,9 @@ must be produced to keep the average cost below \$40 per item.
 {{< fillin
   question="If $C(x)=20x+6{,}000$, how many items must be produced so that the average cost is less than \$60? Enter the least whole-number quantity that works."
   answer="151"
+  answerForm="decimal"
   answerDisplay="151 items"
-  hint="Solve $\tfrac{20x+6{,}000}{x}<60$ for positive $x$, then choose the least whole number."
+  hint="Set the average cost function less than $60$, write the inequality as one quotient compared with zero, and solve for positive $x$; then choose the least whole number."
 >}}
 
 {{< fillin
@@ -436,13 +437,15 @@ rational expression zero or undefined.
 {{< fillin
   question="Solve $\tfrac{x-3}{x+4}\ge0$. Enter the solution in interval notation."
   answer="(-\infty,-4) \cup [3,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-4)\cup[3,\infty)$"
-  hint="The zero partition numbers are $-4$ and $3$. Test one point in each of the three intervals."
+  hint="Find where the numerator and the denominator are zero, then test one point in each of the three intervals."
 >}}
 
 {{< fillin
   question="Solve $\tfrac{3x-2}{x-4}\ge2$. Enter the solution in interval notation."
   answer="(-\infty,-6] \cup (4,\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$(-\infty,-6]\cup(4,\infty)$"
   hint="Subtract $2$, combine into one quotient, and find its zero partition numbers."
 >}}
@@ -450,6 +453,7 @@ rational expression zero or undefined.
 {{< fillin
   question="Solve $\tfrac{1}{2}-\tfrac{4}{x^2}\le\tfrac{1}{x}$. Enter the solution in interval notation."
   answer="[-2,0) \cup (0,4]"
+  answerForm="lowest-terms"
   answerDisplay="$[-2,0)\cup(0,4]$"
   hint="Move every term to the left, combine over the LCD $2x^2$, and factor the numerator."
 >}}
@@ -459,15 +463,17 @@ rational expression zero or undefined.
 {{< fillin
   question="Given $R(x)=\tfrac{x-5}{x-2}$, find the values of $x$ that make $R(x)\le0$. Enter interval notation."
   answer="(2,5]"
+  answerForm="lowest-terms"
   answerDisplay="$(2,5]$"
-  hint="The zero partition numbers are $2$ and $5$; a value that zeroes the denominator is always excluded."
+  hint="Find the zero partition numbers and test each interval; a value that zeroes the denominator is always excluded."
 >}}
 
 {{< fillin
   question="Given $R(x)=\tfrac{x-6}{x+2}$, find the values of $x$ that make $R(x)\le0$. Enter interval notation."
   answer="(-2,6]"
+  answerForm="lowest-terms"
   answerDisplay="$(-2,6]$"
   hint="Exclude the zero of the denominator, but include the zero of the numerator."
 >}}
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.6](https://openstax.org/books/intermediate-algebra-2e/pages/7-6-solve-rational-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples, sign analyses, number lines, and Try It exercises for interactive web use and accessibility, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.6](https://openstax.org/books/intermediate-algebra-2e/pages/7-6-solve-rational-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples, sign analyses, number lines, and Try It exercises for interactive web use and accessibility (the first average-cost Try It's part (b) asks for the least whole-number item count where the source answers "more than," and the second keeps only part (a)), and adapted selected end-of-section exercises into an interactive Practice block.</small>

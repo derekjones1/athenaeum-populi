@@ -45,7 +45,7 @@ $$
 \text{Remove common factors.} & 7n &=& 5(n+14) \\[4pt]
 \text{Distribute.} & 7n &=& 5n+70 \\[4pt]
 \text{Solve.} & 2n &=& 70 \\[4pt]
-&& n=& 35
+& n &=& 35
 \end{array}
 $$
 
@@ -54,13 +54,15 @@ Checking gives $\tfrac{35}{35+14}=\tfrac{35}{49}=\tfrac{5}{7}$.
 {{< fillin
   question="Solve the proportion $\tfrac{y}{y+55}=\tfrac{3}{8}$."
   answer="33"
-  hint="Multiply by the LCD $8(y+55)$ and solve for $y$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD to clear the fractions, then solve for $y$."
 >}}
 
 {{< fillin
   question="Solve the proportion $\tfrac{z}{z-84}=-\tfrac{1}{5}$."
   answer="14"
-  hint="Multiply by the LCD $5(z-84)$ and solve for $z$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD to clear the fractions, then solve for $z$."
 >}}
 
 Clearing the fractions in $\tfrac{a}{b}=\tfrac{c}{d}$ gives $ad=bc$, the
@@ -93,13 +95,15 @@ The pediatrician would prescribe 16 ml of acetaminophen to Zoe.
 {{< fillin
   question="Pediatricians prescribe 5 ml of acetaminophen for every 25 pounds of a child’s weight. How many ml will a doctor prescribe for Emilia, who weighs 60 pounds?"
   answer="12"
-  hint="Set up a proportion with milliliters in the numerators and pounds in the denominators."
+  answerForm="decimal"
+  hint="Write a proportion with milliliters in both numerators and pounds in both denominators, then clear the fractions and solve."
 >}}
 
 {{< fillin
   question="For every 1 kg of a child’s weight, pediatricians prescribe 15 mg of a fever reducer. If Isabella weighs 12 kg, how many mg will the pediatrician prescribe?"
   answer="180"
-  hint="Use the proportion $\tfrac{15\text{ mg}}{1\text{ kg}}=\tfrac{x\text{ mg}}{12\text{ kg}}$."
+  answerForm="decimal"
+  hint="Write a proportion with milligrams in both numerators and kilograms in both denominators, then clear the fractions and solve."
 >}}
 
 ## Solve similar-figure applications
@@ -158,13 +162,15 @@ distance from Seattle to Boise is 400 miles.
 {{< fillin
   question="Using the Seattle–Portland–Boise map measurements above, find the actual distance in miles from Seattle to Portland."
   answer="150"
-  hint="Use $\tfrac{x}{1.5}=\tfrac{400}{4}$."
+  answerForm="decimal"
+  hint="Write a proportion of corresponding sides with actual miles in both numerators and map inches in both denominators, using the side whose actual distance you know, then solve."
 >}}
 
 {{< fillin
   question="Using the Seattle–Portland–Boise map measurements above, find the actual distance in miles from Portland to Boise."
   answer="350"
-  hint="Use $\tfrac{x}{3.5}=\tfrac{400}{4}$."
+  answerForm="decimal"
+  hint="Write a proportion of corresponding sides with actual miles in both numerators and map inches in both denominators, using the side whose actual distance you know, then solve."
 >}}
 
 Similar figures can also find heights we cannot directly measure.
@@ -188,13 +194,15 @@ height is less than its shadow. The tree is 18 feet tall.
 {{< fillin
   question="A telephone pole casts a 50-foot shadow while an 8-foot traffic sign casts a 10-foot shadow. How tall is the telephone pole, in feet?"
   answer="40"
-  hint="The height-to-shadow ratios are equal."
+  answerForm="decimal"
+  hint="The pole and its shadow form a triangle similar to the sign and its shadow: write a proportion of height over shadow length for each, then solve."
 >}}
 
 {{< fillin
   question="A pine tree casts an 80-foot shadow while a 30-foot building casts a 40-foot shadow. How tall is the pine tree, in feet?"
   answer="60"
-  hint="Set $\tfrac{h}{80}=\tfrac{30}{40}$."
+  answerForm="decimal"
+  hint="The tree and its shadow form a triangle similar to the building and its shadow: write a proportion of height over shadow length for each, then solve."
 >}}
 
 ## Solve uniform-motion applications
@@ -222,7 +230,7 @@ $$
 \text{Clear the denominators.} & 200(r+30) &=& 300(r-30) \\[4pt]
 \text{Distribute.} & 200r+6{,}000 &=& 300r-9{,}000 \\[4pt]
 \text{Solve.} & 15{,}000 &=& 100r \\[4pt]
-&& r=&150
+& r &=& 150
 \end{array}
 $$
 
@@ -231,15 +239,17 @@ hours. Against the wind the rate is 120 mph and time is
 $\tfrac{200}{120}=\tfrac53$ hours. The plane’s speed is 150 mph.
 
 {{< fillin
-  question="Link rides 20 miles into a 3-mph headwind in the same time he rides 30 miles with a 3-mph tailwind. What is his biking speed in mph?"
+  question="Link’s electric bike runs at a constant speed, reduced by any headwind and increased by any tailwind. He rides 20 miles into a 3-mph headwind in the same time he rides 30 miles with a 3-mph tailwind. What is his biking speed with no wind, in mph?"
   answer="15"
-  hint="Set $\tfrac{20}{r-3}=\tfrac{30}{r+3}$."
+  answerForm="decimal"
+  hint="Let $r$ be his speed with no wind; the headwind subtracts from it and the tailwind adds to it. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 {{< fillin
   question="A river flows at 7 mph. Danica motors 5 miles upstream in the same time she motors 12 miles downstream. What is her boat’s speed in still water, in mph?"
   answer="17"
-  hint="Set $\tfrac{5}{r-7}=\tfrac{12}{r+7}$."
+  answerForm="decimal"
+  hint="Let $r$ be the boat’s speed in still water; the current subtracts from it upstream and adds to it downstream. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 **Example.** Jazmine trained for 3 hours. She ran 8 miles and then biked 24
@@ -274,16 +284,18 @@ A negative speed does not make sense, so $r=8$. Running 8 miles at 8 mph takes
 mph.
 
 {{< fillin
-  question="Dennis skied 20 miles uphill and 20 miles downhill in 6 hours. His uphill speed was 5 mph slower than his downhill speed. Enter his uphill and downhill speeds, separated by commas."
+  question="Dennis went cross-country skiing for 6 hours. He skied 20 miles uphill and then 20 miles back downhill, returning to his starting point. His uphill speed was 5 mph slower than his downhill speed. Enter his uphill speed and then his downhill speed, in mph, separated by a comma."
   answer="5, 10"
-  answerDisplay="$5,10$ mph"
-  hint="Let $r$ be the uphill speed, so the downhill speed is $r+5$, and set $\tfrac{20}{r}+\tfrac{20}{r+5}=6$."
+  answerForm="decimal"
+  answerDisplay="uphill $5$ mph, downhill $10$ mph"
+  hint="Let $r$ be one of the two speeds and write the other in terms of it. Write each time as distance over rate, set their sum equal to the total time, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 {{< fillin
-  question="Joon drove for 4 hours: 208 miles on the interstate and 40 miles on country roads. His interstate speed was 15 mph faster. What was his country-road speed in mph?"
+  question="Joon drove for 4 hours: 208 miles on the interstate and 40 miles on country roads. His interstate speed was 15 mph faster than his country-road speed. What was his country-road speed, in mph?"
   answer="50"
-  hint="Let $r$ be the country-road speed and set $\tfrac{208}{r+15}+\tfrac{40}{r}=4$."
+  answerForm="decimal"
+  hint="Let $r$ be his country-road speed. Write each leg’s time as distance over rate, set their sum equal to the total time, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 **Example.** Hamilton biked downhill 12 miles to the ocean and uphill 12 miles
@@ -317,15 +329,17 @@ At 12 mph downhill, the trip takes 1 hour; at 4 mph uphill, it takes 3 hours.
 Hamilton’s downhill speed is 12 mph.
 
 {{< fillin
-  question="Kayla biked 75 miles home and took a bus back. The bus trip took 2 hours less and the bus was 10 mph faster. Find Kayla’s biking speed in mph."
+  question="Kayla biked 75 miles home from college and then rode the bus back to college. The bus ride took 2 hours less than the bike ride, and the bus averaged 10 mph faster than her biking speed. Find Kayla’s biking speed, in mph."
   answer="15"
-  hint="Let $r$ be her biking speed and set $\tfrac{75}{r+10}=\tfrac{75}{r}-2$."
+  answerForm="decimal"
+  hint="Let $r$ be her biking speed. Write each time as distance over rate, write the equation that relates the two times, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 {{< fillin
-  question="Victoria jogs 12 miles on a flat trail and returns on a 20-mile hilly trail. She is 1 mph slower on the hilly trail, and the return takes 2 hours longer. Find her flat-trail speed in mph."
+  question="Victoria jogs 12 miles on a flat trail and returns on a 20-mile hilly trail. She is 1 mph slower on the hilly trail, and the return takes 2 hours longer. Find her flat-trail speed, in mph."
   answer="6"
-  hint="Let $r$ be the flat-trail speed and set $\tfrac{20}{r-1}=\tfrac{12}{r}+2$."
+  answerForm="decimal"
+  hint="Let $r$ be her flat-trail speed. Write each time as distance over rate, write the equation that relates the two times, clear the fractions, and keep the root that makes sense as a speed."
 >}}
 
 ## Solve work applications
@@ -351,7 +365,8 @@ $$
 \end{array}
 $$
 
-Both presses take 4 hours, less than either press working alone.
+Running together, the presses take 4 hours, less than either press working
+alone.
 
 **Example.** Pete can paint a room in 10 hours and Alicia can paint it in 8
 hours. How long will they take together?
@@ -373,17 +388,19 @@ $$
 Since $\tfrac49(60)\approx27$, it would take about 4 hours and 27 minutes.
 
 {{< fillin
-  question="One gardener mows a golf course in 4 hours and another in 6 hours. How many hours will they take together?"
+  question="One gardener mows a golf course in 4 hours and another in 6 hours. How many hours will they take working together?"
   answer="\frac{12}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$2\tfrac{2}{5}$ hours (2 hours 24 minutes)"
-  hint="Set $\tfrac14+\tfrac16=\tfrac1t$."
+  hint="Let $t$ be the time together. Add the part of the course each gardener mows in one hour, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 {{< fillin
-  question="Daria weeds a garden in 7 hours and her mother in 3 hours. How many hours will they take together?"
+  question="Daria weeds a garden in 7 hours and her mother in 3 hours. How many hours will they take working together?"
   answer="\frac{21}{10}"
+  answerForm="lowest-terms"
   answerDisplay="$2\tfrac{1}{10}$ hours (2 hours 6 minutes)"
-  hint="Set $\tfrac17+\tfrac13=\tfrac1t$."
+  hint="Let $t$ be the time together. Add the part of the garden each person weeds in one hour, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 **Example.** Ra’shon can clean a house in 7 hours. With his sister, the job
@@ -409,13 +426,15 @@ minutes alone.
 {{< fillin
   question="Alice paints a room in 6 hours. With Kristina, it takes 4 hours. How many hours would Kristina take alone?"
   answer="12"
-  hint="Set $\tfrac16+\tfrac1k=\tfrac14$."
+  answerForm="decimal"
+  hint="Let $k$ be Kristina’s time alone. The parts Alice and Kristina each paint in one hour add up to the part they paint together in one hour; clear the fractions and solve for $k$."
 >}}
 
 {{< fillin
   question="Tracy lays a slab in 3 hours. With Jordan, it takes 2 hours. How many hours would Jordan take alone?"
   answer="6"
-  hint="Set $\tfrac13+\tfrac1j=\tfrac12$."
+  answerForm="decimal"
+  hint="Let $j$ be Jordan’s time alone. The parts Tracy and Jordan each lay in one hour add up to the part they lay together in one hour; clear the fractions and solve for $j$."
 >}}
 
 ## Solve direct-variation problems
@@ -459,23 +478,26 @@ $$
 Raoul would burn 437.5 calories in 25 minutes.
 
 {{< fillin
-  question="Calories $c$ vary directly with exercise time $t$. Arnold burned 312 calories in 65 minutes. Enter the equation relating $c$ and $t$ as an expression for $c$."
-  answer="\frac{24}{5}t"
+  question="The number of calories $c$ burned varies directly with the time $t$, in minutes, spent exercising. Arnold burned 312 calories in 65 minutes. Write the equation that relates $c$ and $t$, solved for $c$."
+  answer="c=4.8t"
+  answerForm="solved:c slope-intercept-form"
   answerDisplay="$c=4.8t$"
-  hint="Use $c=kt$ and solve $312=65k$."
+  hint="Substitute the given pair into $c=kt$, solve for the constant of variation $k$, then write $c=kt$ with that value of $k$."
 >}}
 
 {{< fillin
-  question="Using Arnold’s equation from the previous check, how many calories would he burn in 90 minutes?"
+  question="Calories burned vary directly with exercise time, and Arnold burned 312 calories in 65 minutes. How many calories would he burn if he exercised for 90 minutes?"
   answer="432"
-  hint="Substitute $t=90$ into $c=4.8t$."
+  answerForm="decimal"
+  hint="Find the constant of variation from the given pair, write the equation, then substitute the new time."
 >}}
 
 {{< fillin
-  question="Distance $d$ varies directly with time $t$. A train travels 100 miles in 2 hours. Enter the equation relating $d$ and $t$ as an expression for $d$."
-  answer="50t"
+  question="The distance $d$ a moving body travels varies directly with the time $t$ it moves. A train travels 100 miles in 2 hours. Write the equation that relates $d$ and $t$, solved for $d$."
+  answer="d=50t"
+  answerForm="solved:d slope-intercept-form"
   answerDisplay="$d=50t$"
-  hint="Use $d=kt$ and solve $100=2k$."
+  hint="Substitute the given pair into $d=kt$, solve for the constant of variation $k$, then write $d=kt$ with that value of $k$."
 >}}
 
 ## Solve inverse-variation problems
@@ -523,29 +545,32 @@ $$
 A 20-inch guitar string has a frequency of 572 vibrations per second.
 
 {{< fillin
-  question="The hours $h$ for ice to melt vary inversely with temperature $t$. Ice melts in 2 hours at 65°C. Enter the equation relating $h$ and $t$ as an expression for $h$."
-  answer="\frac{130}{t}"
+  question="The number of hours $h$ it takes a block of ice to melt varies inversely with the air temperature $t$. The block melts in 2 hours when the temperature is 65 degrees Celsius. Write the equation that relates $h$ and $t$, solved for $h$."
+  answer="h=\frac{130}{t}"
+  answerForm="solved:h single-fraction reduced-fraction"
   answerDisplay="$h=\tfrac{130}{t}$"
-  hint="Use $h=\tfrac{k}{t}$ and substitute $h=2$, $t=65$."
+  hint="Substitute the given pair into $h=\tfrac{k}{t}$, solve for the constant of variation $k$, then write $h=\tfrac{k}{t}$ with that value of $k$."
 >}}
 
 {{< fillin
-  question="Using the ice-melting equation above, how many hours will the same ice take to melt at 78°C?"
+  question="Melting time varies inversely with the air temperature, and a block of ice melts in 2 hours at 65 degrees Celsius. How many hours would the same block take to melt at 78 degrees Celsius? Enter the time as a fraction or mixed number."
   answer="\frac{5}{3}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   answerDisplay="$1\tfrac{2}{3}$ hours"
-  hint="Substitute $t=78$ into $h=\tfrac{130}{t}$."
+  hint="Find the constant of variation from the given pair, write the equation, then substitute the new temperature."
 >}}
 
 {{< fillin
-  question="Daily demand $x$ varies inversely with price $p$. At a price of \$5, demand is 700 units. Enter the equation relating $x$ and $p$ as an expression for $x$."
-  answer="\frac{3500}{p}"
+  question="Xander’s daily demand $x$, in units, varies inversely with the price $p$, in dollars. When the price is \$5, the demand is 700 units. Write the equation that relates $x$ and $p$, solved for $x$."
+  answer="x=\frac{3500}{p}"
+  answerForm="solved:x single-fraction reduced-fraction"
   answerDisplay="$x=\tfrac{3{,}500}{p}$"
-  hint="Use $x=\tfrac{k}{p}$ and substitute $x=700$, $p=5$."
+  hint="Substitute the given pair into $x=\tfrac{k}{p}$, solve for the constant of variation $k$, then write $x=\tfrac{k}{p}$ with that value of $k$."
 >}}
 
 ## Key terms
 
-**proportion** — an equation stating that two ratios are equal. **similar
+**proportion** — an equation stating that two rational expressions are equal. **similar
 figures** — figures whose corresponding angles are equal and whose
 corresponding sides have the same ratio. **direct variation** — a relationship
 of the form $y=kx$. **constant of variation** — the constant $k$ in a direct-
@@ -559,13 +584,15 @@ form $y=\tfrac{k}{x}$.
 {{< fillin
   question="Solve the proportion $\tfrac{x}{56}=\tfrac{7}{8}$."
   answer="49"
-  hint="Multiply both sides by the LCD $56$ and solve for $x$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD to clear the fractions, then solve for $x$."
 >}}
 
 {{< fillin
   question="Solve the proportion $\tfrac{2p+4}{8}=\tfrac{p+18}{6}$."
   answer="30"
-  hint="Multiply both sides by the LCD $24$, or cross-multiply, and solve for $p$."
+  answerForm="decimal"
+  hint="Multiply both sides by the LCD (or cross-multiply), then collect the $p$ terms on one side and solve."
 >}}
 
 ### Solve similar-figure applications
@@ -573,13 +600,15 @@ form $y=\tfrac{k}{x}$.
 {{< fillin
   question="A 2-foot-tall dog casts a 3-foot shadow at the same time a cat casts a 1-foot shadow. How tall is the cat, in inches?"
   answer="8"
-  hint="Set the height-to-shadow ratios equal: $\tfrac{2}{3}=\tfrac{h}{1}$, then convert feet to inches."
+  answerForm="decimal"
+  hint="The dog and the cat, with their shadows, form similar triangles: write a proportion of height over shadow length for each, solve, then convert feet to inches."
 >}}
 
 {{< fillin
   question="The tower portion of a windmill is 212 feet tall. A 6-foot-tall person standing next to the tower casts a 7-foot shadow. How long is the windmill’s shadow, in feet? Round to the nearest tenth."
   answer="247.3"
-  hint="Set $\tfrac{212}{s}=\tfrac{6}{7}$ and solve for $s$."
+  answerForm="decimal"
+  hint="The tower and the person, with their shadows, form similar triangles: write a proportion of height over shadow length for each, then solve and round."
 >}}
 
 ### Solve uniform-motion applications
@@ -587,13 +616,15 @@ form $y=\tfrac{k}{x}$.
 {{< fillin
   question="Mary takes a sightseeing tour on a helicopter that can fly 450 miles against a 35-mph headwind in the same amount of time it can travel 702 miles with a 35-mph tailwind. Find the speed of the helicopter, in mph."
   answer="160"
-  hint="Set $\tfrac{450}{r-35}=\tfrac{702}{r+35}$ and solve for $r$."
+  answerForm="decimal"
+  hint="Let $r$ be the helicopter’s speed with no wind; the headwind subtracts from it and the tailwind adds to it. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 {{< fillin
   question="A boat travels 140 miles downstream in the same time as it travels 92 miles upstream. The speed of the current is 6 mph. What is the speed of the boat in still water, in mph?"
   answer="29"
-  hint="Set $\tfrac{140}{r+6}=\tfrac{92}{r-6}$ and solve for $r$."
+  answerForm="decimal"
+  hint="Let $r$ be the boat’s speed in still water; the current adds to it downstream and subtracts from it upstream. Write each time as distance over rate, set the two times equal, and clear the fractions."
 >}}
 
 ### Solve work applications
@@ -601,59 +632,67 @@ form $y=\tfrac{k}{x}$.
 {{< fillin
   question="Mike, an experienced bricklayer, can build a wall in 3 hours, while his son, who is learning, can do the job in 6 hours. How long does it take for them to build the wall together, in hours?"
   answer="2"
-  hint="Set $\tfrac13+\tfrac16=\tfrac1t$; rate × time = 1 job for each worker."
+  answerForm="decimal"
+  hint="Let $t$ be the time together. Add the part of the wall each builds in one hour, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 {{< fillin
   question="At the end of the day, Dodie can clean her hair salon in 15 minutes. Ann, who works with her, can clean the salon in 30 minutes. How long would it take them to clean the shop together, in minutes?"
   answer="10"
-  hint="Set $\tfrac1{15}+\tfrac1{30}=\tfrac1t$; rate × time = 1 job for each worker."
+  answerForm="decimal"
+  hint="Let $t$ be the time together, in minutes. Add the part of the salon each cleans in one minute, set the sum equal to $\tfrac{1}{t}$, and clear the fractions."
 >}}
 
 ### Solve direct-variation problems
 
 {{< fillin
-  question="If $p$ varies directly with $q$ and $p=9.6$ when $q=3$, enter the equation relating $p$ and $q$ as an expression for $p$."
-  answer="3.2q"
+  question="If $p$ varies directly as $q$ and $p=9.6$ when $q=3$, find the equation that relates $p$ and $q$. Enter it solved for $p$."
+  answer="p=3.2q"
+  answerForm="solved:p slope-intercept-form"
   answerDisplay="$p=3.2q$"
-  hint="Use $p=kq$ and solve $9.6=3k$ for the constant of variation."
+  hint="Substitute the given pair into $p=kq$, solve for the constant of variation $k$, then write $p=kq$ with that value of $k$."
 >}}
 
 {{< fillin
-  question="The mass of a liquid varies directly with its volume. A liquid with mass 16 kilograms has a volume of 2 liters. Enter the equation relating mass $m$ and volume $v$ as an expression for $m$."
-  answer="8v"
+  question="The mass of a liquid varies directly with its volume. A liquid with mass 16 kilograms has a volume of 2 liters. Write the equation that relates the mass $m$, in kilograms, to the volume $v$, in liters, solved for $m$."
+  answer="m=8v"
+  answerForm="solved:m slope-intercept-form"
   answerDisplay="$m=8v$"
-  hint="Use $m=kv$ and solve $16=2k$ for the constant of variation."
+  hint="Substitute the given pair into $m=kv$, solve for the constant of variation $k$, then write $m=kv$ with that value of $k$."
 >}}
 
 {{< fillin
-  question="Using the mass-volume equation from the previous check, what is the volume, in liters, of a sample of this liquid whose mass is 128 kilograms?"
+  question="The mass of a liquid varies directly with its volume, and 2 liters of the liquid have a mass of 16 kilograms. What is the volume, in liters, of a sample of this liquid whose mass is 128 kilograms?"
   answer="16"
-  hint="Substitute $m=128$ into $m=8v$ and solve for $v$."
+  answerForm="decimal"
+  hint="Find the constant of variation from the given pair, write the equation, then substitute the given mass and solve for the volume."
 >}}
 
 ### Solve inverse-variation problems
 
 {{< fillin
-  question="If $v$ varies inversely with $w$ and $v=6$ when $w=\tfrac{1}{2}$, enter the equation relating $v$ and $w$ as an expression for $v$."
-  answer="\frac{3}{w}"
+  question="If $v$ varies inversely with $w$ and $v=6$ when $w=\tfrac{1}{2}$, find the equation that relates $v$ and $w$. Enter it solved for $v$."
+  answer="v=\frac{3}{w}"
+  answerForm="solved:v single-fraction reduced-fraction"
   answerDisplay="$v=\tfrac{3}{w}$"
-  hint="Use $v=\tfrac{k}{w}$ and solve $6=\tfrac{k}{1/2}$ for the constant of variation."
+  hint="Substitute the given pair into $v=\tfrac{k}{w}$, solve for the constant of variation $k$, then write $v=\tfrac{k}{w}$ with that value of $k$."
 >}}
 
 {{< fillin
-  question="The time required to empty a tank varies inversely with the pumping rate. It took Ada 5 hours to pump her flooded basement using a pump rated at 200 gallons per minute (gpm). Enter the equation relating time $t$ and rate $r$ as an expression for $t$."
-  answer="\frac{1000}{r}"
+  question="The time required to empty a tank varies inversely with the pumping rate. It took Ada 5 hours to pump her flooded basement using a pump rated at 200 gallons per minute (gpm). Write the equation that relates the time $t$, in hours, to the pump rate $r$, in gpm, solved for $t$."
+  answer="t=\frac{1000}{r}"
+  answerForm="solved:t single-fraction reduced-fraction"
   answerDisplay="$t=\tfrac{1{,}000}{r}$"
-  hint="Use $t=\tfrac{k}{r}$ and solve $5=\tfrac{k}{200}$ for the constant of variation."
+  hint="Substitute the given pair into $t=\tfrac{k}{r}$, solve for the constant of variation $k$, then write $t=\tfrac{k}{r}$ with that value of $k$."
 >}}
 
 {{< fillin
-  question="Using Ada’s pumping equation from the previous check, how many hours would it take to pump the same basement using a pump rated at 400 gpm?"
+  question="The time required to empty a tank varies inversely with the pumping rate, and Ada’s flooded basement took 5 hours to pump with a 200-gpm pump. How many hours would it take to pump the same basement with a pump rated at 400 gpm?"
   answer="2.5"
-  hint="Substitute $r=400$ into $t=\tfrac{1{,}000}{r}$."
+  answerForm="lowest-terms"
+  hint="Find the constant of variation from the given pair, write the equation, then substitute the new rate."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 7.5: Solve Applications with Rational Equations](https://openstax.org/books/intermediate-algebra-2e/pages/7-5-solve-applications-with-rational-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the source’s application charts as accessible tables and described its map, shadow, and motion diagrams in text while preserving all measurements; omitted the Be Prepared quiz and media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 7.5: Solve Applications with Rational Equations](https://openstax.org/books/intermediate-algebra-2e/pages/7-5-solve-applications-with-rational-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the source’s application charts as accessible tables and described its map, shadow, and motion diagrams in text while preserving all measurements; condensed the worked examples into aligned step tables; combined the glossary and Key Concepts into a Key terms list; omitted the Be Prepared quiz, media link, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback, splitting each two-part variation problem into separate exercises that restate the given data and omitting the second part of the train and demand problems; and adapted selected end-of-section exercises into an interactive Practice block.</small>
