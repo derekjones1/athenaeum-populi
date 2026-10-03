@@ -953,6 +953,18 @@ const formCases = [
   ['\\frac{1}{2}x+\\frac{3}{4}', '\\frac{1}{2}x+\\frac{3}{4}', 'no-like-terms', 'correct'],
   // An imaginary term is not a like term of a plain number.
   ['2-5i', '2-5i', 'no-like-terms', 'correct'],
+  // "with a positive exponent" on a numeral power (Intermediate Algebra 5.2,
+  // October 3, 2026): `single-power` alone passes the negative exponent.
+  ['\\frac{1}{12^{15}}', '\\frac{1}{12^{15}}', 'single-power positive-exponents', 'correct'],
+  ['12^{-15}', '\\frac{1}{12^{15}}', 'single-power positive-exponents', 'form'],
+  ['12^{-15}', '\\frac{1}{12^{15}}', 'single-power', 'correct'],
+  // A remainder still improper is an unfinished long division (Intermediate
+  // Algebra 5.4, October 3, 2026).
+  ['x^3-3x^2+2x+1+\\frac{3}{x+3}', 'x^3-3x^2+2x+1+\\frac{3}{x+3}', 'expanded no-like-terms', 'correct'],
+  ['x^3-3x^2+2x+\\frac{x+6}{x+3}', 'x^3-3x^2+2x+1+\\frac{3}{x+3}', 'expanded no-like-terms', 'form'],
+  ['p+3-\\frac{8}{p+8}', 'p+3-\\frac{8}{p+8}', 'expanded no-like-terms', 'correct'],
+  ['p+3+\\frac{-8}{p+8}', 'p+3-\\frac{8}{p+8}', 'expanded no-like-terms', 'correct'],
+  ['p+\\frac{3p+16}{p+8}', 'p+3-\\frac{8}{p+8}', 'expanded no-like-terms', 'form'],
   ['n+3', 'n+3', 'polynomial', 'correct'],
   ['\\tfrac{n^2}{n-4} - \\tfrac{n+12}{n-4}', 'n+3', 'polynomial', 'form'],
   ['3-3x', '3-3x', 'distributed', 'correct'],
@@ -2592,6 +2604,18 @@ const expressionLabels = [
   ['x(x+2)=15', 'x(x+2)=15', 'translation', 'correct'],
   // a second `=` is not a label
   ['g(m^2)=4m^2-7=0', '4m^2-7', undefined, 'incorrect'],
+  // a combined function's name, as the books print every function-arithmetic
+  // answer (Intermediate Algebra 5.1 and 5.3, October 3, 2026)
+  ['(f+g)(x)=3x^2-6x-3', '3x^2-6x-3', 'distributed no-like-terms', 'correct'],
+  ['(f+g)(x)=3x^2-6x-2', '3x^2-6x-3', 'distributed no-like-terms', 'incorrect'],
+  ['(f+g)(x)=(x^2-1)+(2x^2-6x-2)', '3x^2-6x-3', 'distributed no-like-terms', 'form'],
+  ['(f-g)(-2)=17', '17', 'decimal', 'correct'],
+  ['(f-g)(-2)=4+13', '17', 'decimal', 'form'],
+  ['(f\\cdot g)(2)=-9', '-9', 'decimal', 'correct'],
+  ['(fg)(x)=x^2-1', 'x^2-1', 'expanded distributed no-like-terms', 'correct'],
+  ['\\left(\\frac{f}{g}\\right)(x)=x+1', 'x+1', undefined, 'correct'],
+  // a product of binomials is not a combined name: its letters are in the argument
+  ['(x+1)(x-1)=x^2-1', 'x^2-1', undefined, 'incorrect'],
 ];
 test('an expression-valued function label is stripped against a value key', async (t) => {
   for (const [typed, key, form, expected] of expressionLabels) {

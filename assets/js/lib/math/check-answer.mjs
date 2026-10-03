@@ -3165,6 +3165,41 @@ function writesUnreducedExponent(bare) {
   return false;
 }
 
+/**
+ * The degree of `e` in the variable `v`, or null when it is not a polynomial
+ * the walk can read (a quotient by a non-numeral, a non-integer power).
+ */
+function polynomialDegree(e, v) {
+  if (e.isNumberLiteral) return 0;
+  if (e.symbol) return e.symbol === v ? 1 : 0;
+  if (e.operator === 'Negate') return polynomialDegree(e.ops[0], v);
+  if (e.operator === 'Add' || e.operator === 'Subtract') {
+    const degrees = e.ops.map((op) => polynomialDegree(op, v));
+    return degrees.includes(null) ? null : Math.max(...degrees);
+  }
+  if (e.operator === 'Multiply') {
+    const degrees = e.ops.map((op) => polynomialDegree(op, v));
+    return degrees.includes(null) ? null : degrees.reduce((a, b) => a + b, 0);
+  }
+  if (e.operator === 'Power' && Number.isInteger(e.ops[1].re) && e.ops[1].re >= 0) {
+    const base = polynomialDegree(e.ops[0], v);
+    return base === null ? null : base * e.ops[1].re;
+  }
+  if (e.operator === 'Divide' && e.ops[1].isNumberLiteral) return polynomialDegree(e.ops[0], v);
+  return null;
+}
+
+/** A sum's term that is a polynomial quotient whose numerator's degree reaches its denominator's. */
+function improperFractionTerm(term) {
+  const e = term.operator === 'Negate' ? term.ops[0] : term;
+  if (e.operator !== 'Divide' || e.ops[1].isNumberLiteral) return false;
+  const free = [...new Set(e.ops[1].freeVariables ?? [])];
+  if (free.length !== 1) return false;
+  const top = polynomialDegree(e.ops[0], free[0]);
+  const bottom = polynomialDegree(e.ops[1], free[0]);
+  return top !== null && bottom !== null && bottom >= 1 && top >= bottom;
+}
+
 const FORM_PREDICATES = {
   fraction: (latex) => asFraction(latex) !== null,
   // An ordered pair keyed with numbers — "(-1,-6)" — is a decimal in each
@@ -3719,6 +3754,12 @@ const FORM_PREDICATES = {
       if (signatures.has(signature)) return false;
       signatures.add(signature);
     }
+    // A remainder term still improper — `x^3-3x^2+2x+\frac{x+6}{x+3}` for
+    // `x^3-3x^2+2x+1+\frac{3}{x+3}` — holds a polynomial part not yet carried
+    // into the quotient's terms, so the unfinished long division is uncombined
+    // too (Intermediate Algebra 5.4, October 3, 2026). Read only on a sum, and
+    // only for a one-variable denominator of degree one or more.
+    if (expr.ops.some(improperFractionTerm)) return false;
     return true;
   },
   // "Multiply: $(w+5)(w+7)$" prints a product worth exactly its own expansion,
@@ -3903,6 +3944,12 @@ const FORM_PREDICATES = {
   // Everything the polynomial reader cannot digest — decimals, radicals,
   // absolute values — FAILS OPEN to the value check: a form check must never
   // reject a correct answer it cannot read.
+  // "Enter your answer with a positive exponent" on a numeral power: the key
+  // `\frac{1}{12^{15}}` is `single-power`, which by design also passes
+  // `12^{-15}`, and `single-fraction` refuses the numeral power in the key
+  // itself (Intermediate Algebra 5.2, October 3, 2026). Read off the writing:
+  // no exponent opens with a minus sign. Composes with a shape token.
+  'positive-exponents': (latex) => !/\^\s*\{?\s*(?:-|−|\\left\s*\(\s*-)/.test(bareLatex(latex)),
   'reduced-fraction': (latex) => {
     const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
     const halves = writtenFractionHalves(bare);
@@ -4501,6 +4548,7 @@ const FORM_PHRASES = {
   'simplified-radical': 'as a simplified radical, with every product multiplied out and any fraction reduced',
   'single-term': 'as a single term',
   'single-fraction': 'as a single fraction',
+  'positive-exponents': 'with positive exponents only',
   'reduced-fraction': 'as a single fraction with all common factors cancelled',
   factored: 'in factored form',
   'factored-completely': 'factored completely, with no factor that can be factored further',
@@ -5171,6 +5219,14 @@ function readFunctionNotation(latex) {
  * difference quotient `\frac{f(x+h)-f(x)}{h}=…`) and a coefficient
  * (`2f(x)=…`).
  */
+// A combined function's name, `(f+g)`, `(f-g)`, `(f\cdot g)`, `(fg)`,
+// `(f\circ g)`, `(\frac{f}{g})`, `(f/g)`, then the argument's opening
+// parenthesis: the label the books print on every function-arithmetic answer
+// (`(f+g)(x)=3x^2-6x-3`, `(f-g)(-2)=17`), which graded `incorrect` against a
+// right key (Intermediate Algebra 5.1, October 3, 2026). Groups 1–2 (or 3–4
+// for the fraction) are the two letters.
+const COMBINED_FUNCTION_NAME_RE = /^\(\s*(?:([a-zA-Z])\s*(?:[+-]|\\cdot(?![a-zA-Z])|\\times(?![a-zA-Z])|\\circ(?![a-zA-Z])|\/)?\s*([a-zA-Z])|\\frac\{([a-zA-Z])\}\{([a-zA-Z])\})\s*\)\s*\(/;
+
 function readExpressionLabel(latex, answerRaw) {
   if (answerRaw == null || preprocess(String(answerRaw)).includes('=')) return latex;
   const text = latex.replace(/\\(?:left|right)\s*/g, '');
@@ -5186,8 +5242,10 @@ function readExpressionLabel(latex, answerRaw) {
   }
   for (;;) {
     while (lhs[i] === ' ') i += 1;
-    const name = lhs.slice(i).match(/^([a-zA-Z])(?:_\{p+\})?(?:\^\{-1\})?\s*\(/);
+    const name = lhs.slice(i).match(/^([a-zA-Z])(?:_\{p+\})?(?:\^\{-1\})?\s*\(/)
+      || lhs.slice(i).match(COMBINED_FUNCTION_NAME_RE);
     if (!name) return latex;
+    if (name.length > 2) simple = false;
     const open = i + name[0].length - 1;
     let depth = 0;
     let close = -1;
@@ -5197,7 +5255,8 @@ function readExpressionLabel(latex, answerRaw) {
     }
     if (close === -1) return latex;
     const argument = lhs.slice(open + 1, close).trim();
-    if (!argument || argument.replace(/\\[a-zA-Z]+/g, ' ').includes(name[1])) return latex;
+    const letters = name.length > 2 ? [name[1] || name[3], name[2] || name[4]] : [name[1]];
+    if (!argument || letters.some((l) => argument.replace(/\\[a-zA-Z]+/g, ' ').includes(l))) return latex;
     if (!/^(?:[a-zA-Z]|-?\d+(?:\.\d+)?)$/.test(argument)) simple = false;
     applications += 1;
     i = close + 1;
