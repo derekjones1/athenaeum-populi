@@ -79,22 +79,24 @@ from $1\to2\to3\to4\to5$. In each term, the sum of the exponents is 5.
 From the patterns we identified, we see the variables in the expansion of
 $(a+b)^n$ would be
 
-$$(a+b)^n=a^n+\underline{\phantom{00}}a^{n-1}b^1+
+$$
+(a+b)^n=a^n+\underline{\phantom{00}}a^{n-1}b^1+
 \underline{\phantom{00}}a^{n-2}b^2+\cdots+
-\underline{\phantom{00}}a^1b^{n-1}+b^n.$$
+\underline{\phantom{00}}a^1b^{n-1}+b^n.
+$$
 
 To find the coefficients of the terms, we write our expansions again,
 focusing on the coefficients. We rewrite the coefficients to the right,
 forming an array of coefficients.
 
 $$
-\begin{array}{rcl}
-(a+b)^0&=&1\\[4pt]
-(a+b)^1&=&1a+1b\\[4pt]
-(a+b)^2&=&1a^2+2ab+1b^2\\[4pt]
-(a+b)^3&=&1a^3+3a^2b+3ab^2+1b^3\\[4pt]
-(a+b)^4&=&1a^4+4a^3b+6a^2b^2+4ab^3+1b^4\\[4pt]
-(a+b)^5&=&1a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+1b^5
+\begin{array}{rclcc}
+(a+b)^0&=&1&\qquad&1\\[4pt]
+(a+b)^1&=&1a+1b&\qquad&1\quad1\\[4pt]
+(a+b)^2&=&1a^2+2ab+1b^2&\qquad&1\quad2\quad1\\[4pt]
+(a+b)^3&=&1a^3+3a^2b+3ab^2+1b^3&\qquad&1\quad3\quad3\quad1\\[4pt]
+(a+b)^4&=&1a^4+4a^3b+6a^2b^2+4ab^3+1b^4&\qquad&1\quad4\quad6\quad4\quad1\\[4pt]
+(a+b)^5&=&1a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+1b^5&\qquad&1\quad5\quad10\quad10\quad5\quad1
 \end{array}
 $$
 
@@ -104,7 +106,7 @@ the next row by starting and ending with one and then adding two adjacent
 numbers.
 
 $$
-\begin{array}{rrrrrrrrrrrrr}
+\begin{array}{ccccccccccccc}
 &&&&&&1\\
 &&&&&1&&1\\
 &&&&1&&2&&1\\
@@ -120,7 +122,7 @@ This triangle gives the coefficients of the terms when we expand binomials.
 **Pascal's Triangle**
 
 $$
-\begin{array}{rrrrrrrrrrrrr}
+\begin{array}{ccccccccccccc}
 &&&&&&1\\
 &&&&&1&&1\\
 &&&&1&&2&&1\\
@@ -169,17 +171,17 @@ $$
 $$
 
 {{< fillin
-  question="Use Pascal's Triangle to expand $(x+y)^5$."
-  answer="x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5"
-  answerForm="expanded"
-  answerDisplay="$x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5$"
-  hint="Use the row of Pascal's Triangle whose second entry is $5$."
+  question="Use Pascal's Triangle to expand $(x+5)^3$."
+  answer="x^3+15x^2+75x+125"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$x^3+15x^2+75x+125$"
+  hint="Match the binomial to $(a+b)^n$, then use the row of Pascal's Triangle whose second entry is $3$."
 >}}
 
 {{< fillin
   question="Use Pascal's Triangle to expand $(p+q)^7$."
   answer="p^7+7p^6q+21p^5q^2+35p^4q^3+35p^3q^4+21p^2q^5+7pq^6+q^7"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$p^7+7p^6q+21p^5q^2+35p^4q^3+35p^3q^4+21p^2q^5+7pq^6+q^7$"
   hint="Use the row of Pascal's Triangle whose second entry is $7$."
 >}}
@@ -230,15 +232,15 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(x+2)^4$."
   answer="x^4+8x^3+24x^2+32x+16"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^4+8x^3+24x^2+32x+16$"
-  hint="Use the coefficients $1,4,6,4,1$ and powers of $2$."
+  hint="Match the binomial to $(a+b)^n$, then use the row of Pascal's Triangle whose second entry is $4$."
 >}}
 
 {{< fillin
   question="Use Pascal's Triangle to expand $(x+1)^6$."
   answer="x^6+6x^5+15x^4+20x^3+15x^2+6x+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^6+6x^5+15x^4+20x^3+15x^2+6x+1$"
   hint="Use the row of Pascal's Triangle whose second entry is $6$."
 >}}
@@ -279,17 +281,17 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(2x-3)^4$."
   answer="16x^4-96x^3+216x^2-216x+81"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$16x^4-96x^3+216x^2-216x+81$"
-  hint="In the pattern, use $a=2x$ and $b=-3$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then use the row of Pascal's Triangle whose second entry is $4$."
 >}}
 
 {{< fillin
   question="Use Pascal's Triangle to expand $(2x-1)^6$."
   answer="64x^6-192x^5+240x^4-160x^3+60x^2-12x+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$64x^6-192x^5+240x^4-160x^3+60x^2-12x+1$"
-  hint="In the pattern, use $a=2x$ and $b=-1$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then use the row of Pascal's Triangle whose second entry is $6$."
 >}}
 
 ## Evaluate a binomial coefficient
@@ -375,11 +377,11 @@ $$
 
 Thus, $\binom{8}{5}=56$.
 
-{{< fillin question="Evaluate $\binom{6}{1}$." answer="6" answerDisplay="$6$" hint="Use $\binom{n}{1}=n$." >}}
+{{< fillin question="Evaluate $\binom{6}{1}$." answer="6" answerForm="decimal" answerDisplay="$6$" hint="Use the definition $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ and cancel the common factorial." >}}
 
-{{< fillin question="Evaluate $\binom{8}{8}$." answer="1" answerDisplay="$1$" hint="Use the definition and remember $0!=1$." >}}
+{{< fillin question="Evaluate $\binom{8}{8}$." answer="1" answerForm="decimal" answerDisplay="$1$" hint="Use the definition and remember $0!=1$." >}}
 
-{{< fillin question="Evaluate $\binom{5}{0}$." answer="1" answerDisplay="$1$" hint="Use the definition and remember $0!=1$." >}}
+{{< fillin question="Evaluate $\binom{5}{0}$." answer="1" answerForm="decimal" answerDisplay="$1$" hint="Use the definition and remember $0!=1$." >}}
 
 In the previous example, parts (a), (b), and (c) demonstrate some special
 properties of binomial coefficients.
@@ -468,19 +470,11 @@ $$
 $$
 
 {{< fillin
-  question="Use the Binomial Theorem to expand $(x+y)^5$."
-  answer="x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5"
-  answerForm="expanded"
-  answerDisplay="$x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5$"
-  hint="Use the binomial coefficients $\binom{5}{r}$."
->}}
-
-{{< fillin
-  question="Use the Binomial Theorem to expand $(m+n)^6$."
-  answer="m^6+6m^5n+15m^4n^2+20m^3n^3+15m^2n^4+6mn^5+n^6"
-  answerForm="expanded"
-  answerDisplay="$m^6+6m^5n+15m^4n^2+20m^3n^3+15m^2n^4+6mn^5+n^6$"
-  hint="Use the binomial coefficients $\binom{6}{r}$."
+  question="Use the Binomial Theorem to expand $(3x+4y)^5$."
+  answer="243x^5+1620x^4y+4320x^3y^2+5760x^2y^3+3840xy^4+1024y^5"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$243x^5+1{,}620x^4y+4{,}320x^3y^2+5{,}760x^2y^3+3{,}840xy^4+1{,}024y^5$"
+  hint="Match the binomial to $(a+b)^n$, then substitute into the Binomial Theorem."
 >}}
 
 Notice that when we expanded $(p+q)^4$ in the last example, using the
@@ -554,17 +548,17 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(x-3)^5$."
   answer="x^5-15x^4+90x^3-270x^2+405x-243"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^5-15x^4+90x^3-270x^2+405x-243$"
-  hint="In the pattern, use $a=x$ and $b=-3$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then substitute into the Binomial Theorem."
 >}}
 
 {{< fillin
   question="Use the Binomial Theorem to expand $(y-1)^6$."
   answer="y^6-6y^5+15y^4-20y^3+15y^2-6y+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^6-6y^5+15y^4-20y^3+15y^2-6y+1$"
-  hint="In the pattern, use $a=y$ and $b=-1$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then substitute into the Binomial Theorem."
 >}}
 
 Things can get messy when both terms have a coefficient and a variable.
@@ -631,17 +625,17 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(3x-2y)^5$."
   answer="243x^5-810x^4y+1080x^3y^2-720x^2y^3+240xy^4-32y^5"
-  answerForm="expanded"
-  answerDisplay="$243x^5-810x^4y+1080x^3y^2-720x^2y^3+240xy^4-32y^5$"
-  hint="In the pattern, use $a=3x$ and $b=-2y$."
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$243x^5-810x^4y+1{,}080x^3y^2-720x^2y^3+240xy^4-32y^5$"
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then substitute into the Binomial Theorem."
 >}}
 
 {{< fillin
   question="Use the Binomial Theorem to expand $(4x-3y)^4$."
   answer="256x^4-768x^3y+864x^2y^2-432xy^3+81y^4"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$256x^4-768x^3y+864x^2y^2-432xy^3+81y^4$"
-  hint="In the pattern, use $a=4x$ and $b=-3y$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then substitute into the Binomial Theorem."
 >}}
 
 The real beauty of the Binomial Theorem is that it gives a formula for any
@@ -688,9 +682,9 @@ $$
 \end{aligned}
 $$
 
-{{< fillin question="Find the third term of $(x+y)^6$." answer="15x^4y^2" answerDisplay="$15x^4y^2$" hint="For the third term, use $r=2$." >}}
+{{< fillin question="Find the seventh term of $(x-y)^{11}$." answer="462x^5y^6" answerForm="single-term" answerDisplay="$462x^5y^6$" hint="The $(r+1)$st term is $\binom{n}{r}a^{n-r}b^r$, so find $r$ from the term's position." >}}
 
-{{< fillin question="Find the fifth term of $(a+b)^8$." answer="70a^4b^4" answerDisplay="$70a^4b^4$" hint="For the fifth term, use $r=4$." >}}
+{{< fillin question="Find the fifth term of $(a+b)^8$." answer="70a^4b^4" answerForm="single-term" answerDisplay="$70a^4b^4$" hint="The $(r+1)$st term is $\binom{n}{r}a^{n-r}b^r$, so find $r$ from the term's position." >}}
 
 **Example 12.39.** Find the coefficient of the $x^6$ term of $(x+3)^9$.
 
@@ -712,11 +706,11 @@ $$
 \end{aligned}
 $$
 
-The coefficient of the $x^6$ term is 2268.
+The coefficient of the $x^6$ term is 2,268.
 
-{{< fillin question="Find the coefficient of the $x^5$ term of $(x+4)^8$." answer="3584" answerDisplay="$3{,}584$" hint="Solve $8-r=5$ and evaluate the resulting coefficient." >}}
+{{< fillin question="Find the coefficient of the $x^5$ term of $(x+4)^8$." answer="3584" answerForm="decimal" answerDisplay="$3{,}584$" hint="Match the power of $x$ to $a^{n-r}$ to find $r$, then multiply $\binom{n}{r}$ by $b^r$." >}}
 
-{{< fillin question="Find the coefficient of the $x^4$ term of $(x+2)^7$." answer="280" answerDisplay="$280$" hint="Solve $7-r=4$ and evaluate the resulting coefficient." >}}
+{{< fillin question="Find the coefficient of the $x^4$ term of $(x+2)^7$." answer="280" answerForm="decimal" answerDisplay="$280$" hint="Match the power of $x$ to $a^{n-r}$ to find $r$, then multiply $\binom{n}{r}$ by $b^r$." >}}
 
 ## Key terms
 
@@ -733,7 +727,7 @@ its rows give the coefficients in binomial expansions.
 {{< fillin
   question="Use Pascal's Triangle to expand $(a+b)^8$."
   answer="a^8+8a^7b+28a^6b^2+56a^5b^3+70a^4b^4+56a^3b^5+28a^2b^6+8ab^7+b^8"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a^8+8a^7b+28a^6b^2+56a^5b^3+70a^4b^4+56a^3b^5+28a^2b^6+8ab^7+b^8$"
   hint="Use the row of Pascal's Triangle whose second entry is $8$."
 >}}
@@ -741,17 +735,17 @@ its rows give the coefficients in binomial expansions.
 {{< fillin
   question="Use Pascal's Triangle to expand $(a-b)^6$."
   answer="a^6-6a^5b+15a^4b^2-20a^3b^3+15a^2b^4-6ab^5+b^6"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a^6-6a^5b+15a^4b^2-20a^3b^3+15a^2b^4-6ab^5+b^6$"
-  hint="Use the row of Pascal's Triangle whose second entry is $6$, and alternate the signs since the binomial is a difference."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then use the row of Pascal's Triangle whose second entry is $6$."
 >}}
 
 {{< fillin
   question="Use Pascal's Triangle to expand $(3x-5)^3$."
   answer="27x^3-135x^2+225x-125"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$27x^3-135x^2+225x-125$"
-  hint="In the pattern, use $a=3x$ and $b=-5$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then use the row of Pascal's Triangle whose second entry is $3$."
 >}}
 
 ### Evaluate a binomial coefficient
@@ -759,27 +753,31 @@ its rows give the coefficients in binomial expansions.
 {{< fillin
   question="Evaluate $\binom{7}{1}$."
   answer="7"
+  answerForm="decimal"
   answerDisplay="$7$"
-  hint="Use $\binom{n}{1}=n$."
+  hint="Use the definition $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ and cancel the common factorial."
 >}}
 
 {{< fillin
   question="Evaluate $\binom{4}{4}$."
   answer="1"
+  answerForm="decimal"
   answerDisplay="$1$"
-  hint="Use $\binom{n}{n}=1$."
+  hint="Use the definition and remember $0!=1$."
 >}}
 
 {{< fillin
   question="Evaluate $\binom{3}{0}$."
   answer="1"
+  answerForm="decimal"
   answerDisplay="$1$"
-  hint="Use $\binom{n}{0}=1$."
+  hint="Use the definition and remember $0!=1$."
 >}}
 
 {{< fillin
   question="Evaluate $\binom{10}{8}$."
   answer="45"
+  answerForm="decimal"
   answerDisplay="$45$"
   hint="Use the definition $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ and cancel the common factorial."
 >}}
@@ -789,7 +787,7 @@ its rows give the coefficients in binomial expansions.
 {{< fillin
   question="Use the Binomial Theorem to expand $(s+t)^7$."
   answer="s^7+7s^6t+21s^5t^2+35s^4t^3+35s^3t^4+21s^2t^5+7st^6+t^7"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$s^7+7s^6t+21s^5t^2+35s^4t^3+35s^3t^4+21s^2t^5+7st^6+t^7$"
   hint="Use the binomial coefficients $\binom{7}{r}$."
 >}}
@@ -797,32 +795,35 @@ its rows give the coefficients in binomial expansions.
 {{< fillin
   question="Use the Binomial Theorem to expand $(y-3)^4$."
   answer="y^4-12y^3+54y^2-108y+81"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$y^4-12y^3+54y^2-108y+81$"
-  hint="In the pattern, use $a=y$ and $b=-3$."
+  hint="Match the binomial to $(a+b)^n$, keeping the minus sign with $b$, then substitute into the Binomial Theorem."
 >}}
 
 {{< fillin
   question="Find the fifth term of $(a+b)^9$."
   answer="126a^5b^4"
+  answerForm="single-term"
   answerDisplay="$126a^5b^4$"
-  hint="For the fifth term, use $r=4$."
+  hint="The $(r+1)$st term is $\binom{n}{r}a^{n-r}b^r$, so find $r$ from the term's position."
 >}}
 
 {{< fillin
   question="Find the coefficient of the $x^6$ term of $(x+2)^8$."
   answer="112"
+  answerForm="decimal"
   answerDisplay="$112$"
-  hint="Solve $8-r=6$ and evaluate the resulting coefficient."
+  hint="Match the power of $x$ to $a^{n-r}$ to find $r$, then multiply $\binom{n}{r}$ by $b^r$."
 >}}
 
 {{< fillin
   question="Find the coefficient of the $x^7$ term of $(x-3)^9$."
   answer="324"
+  answerForm="decimal"
   answerDisplay="$324$"
-  hint="Solve $9-r=7$ and evaluate the resulting coefficient."
+  hint="Match the power of $x$ to $a^{n-r}$ to find $r$, then multiply $\binom{n}{r}$ by $b^r$."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 12.4](https://openstax.org/books/intermediate-algebra-2e/pages/12-4-binomial-theorem) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted the source Try It exercises into interactive questions, adapted selected end-of-section exercises into an interactive Practice block, and omitted the readiness quiz, self-check, and media links in accordance with the authoring playbook.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 12.4](https://openstax.org/books/intermediate-algebra-2e/pages/12-4-binomial-theorem) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted a selection of the source Try It exercises into interactive questions, replaced three Try Its whose answers the page already prints (expand $(x+y)^5$ and $(m+n)^6$, the third term of $(x+y)^6$) with the end-of-section exercises $(x+5)^3$, $(3x+4y)^5$, and the seventh term of $(x-y)^{11}$, adapted selected end-of-section exercises into an interactive Practice block, and omitted the readiness quiz, self-check, and media links in accordance with the authoring playbook. The pattern table gives the number of terms of $(a+b)^n$ as $n+1$ where the source prints "$+1$", and Example 12.38 writes its substituted term and result in $x$ and $y$ ($35x^4y^3$) where the source's step images write $a^{7-3}b^3$ and $35a^4b^3$ for $(x+y)^7$.</small>

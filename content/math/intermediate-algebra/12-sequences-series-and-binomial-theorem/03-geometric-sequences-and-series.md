@@ -130,9 +130,9 @@ $$
 
 The sequence is $3,-6,12,-24,48,\ldots$
 
-{{< fillin question="Write the first five terms of the sequence where the first term is $7$ and the common ratio is $r=-3$. Enter the terms separated by commas." answer="7,-21,63,-189,567" answerDisplay="$7,-21,63,-189,567$" hint="Start with $7$ and multiply each term by $-3$." >}}
+{{< fillin question="Write the first five terms of the sequence where the first term is $7$ and the common ratio is $r=-3$. Enter the terms in order, separated by commas." answer="7,-21,63,-189,567" answerForm="decimal" answerDisplay="$7,-21,63,-189,567$" hint="Start with $7$ and multiply each term by $-3$." >}}
 
-{{< fillin question="Write the first five terms of the sequence where the first term is $6$ and the common ratio is $r=-4$. Enter the terms separated by commas." answer="6,-24,96,-384,1536" answerDisplay="$6,-24,96,-384,1{,}536$" hint="Start with $6$ and multiply each term by $-4$." >}}
+{{< fillin question="Write the first five terms of the sequence where the first term is $6$ and the common ratio is $r=-4$. Enter the terms in order, separated by commas." answer="6,-24,96,-384,1536" answerForm="decimal" answerDisplay="$6,-24,96,-384,1{,}536$" hint="Start with $6$ and multiply each term by $-4$." >}}
 
 ## Find the general term (nth term) of a geometric sequence
 
@@ -191,9 +191,9 @@ a_1=64\text{ and }r=\tfrac12.
 \end{array}
 $$
 
-{{< fillin question="Find the thirteenth term of a sequence where the first term is $81$ and the common ratio is $r=\tfrac13$." answer="\frac{1}{6561}" answerDisplay="$\tfrac1{6{,}561}$" hint="Use $a_n=a_1r^{n-1}$ with $n=13$." >}}
+{{< fillin question="Find the thirteenth term of a sequence where the first term is $81$ and the common ratio is $r=\tfrac13$." answer="\frac{1}{6561}" answerForm="lowest-terms" answerDisplay="$\tfrac1{6{,}561}$" hint="Use $a_n=a_1r^{n-1}$ with $n=13$." >}}
 
-{{< fillin question="Find the twelfth term of a sequence where the first term is $256$ and the common ratio is $r=\tfrac14$." answer="\frac{1}{16384}" answerDisplay="$\tfrac1{16{,}384}$" hint="Use $a_n=a_1r^{n-1}$ with $n=12$." >}}
+{{< fillin question="Find the twelfth term of a sequence where the first term is $256$ and the common ratio is $r=\tfrac14$." answer="\frac{1}{16384}" answerForm="lowest-terms" answerDisplay="$\tfrac1{16{,}384}$" hint="Use $a_n=a_1r^{n-1}$ with $n=12$." >}}
 
 Sometimes we do not know the common ratio and we must use the given
 information to find it before we find the requested term.
@@ -235,11 +235,11 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the ninth term of the sequence $6,18,54,162,486,1{,}458,\ldots$." answer="39366" answerDisplay="$a_9=39{,}366$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
+{{< fillin question="Find the ninth term of the sequence $6,18,54,162,486,1{,}458,\ldots$." answer="39366" answerForm="decimal" answerDisplay="$a_9=39{,}366$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
 
 {{< fillin question="Find the general term of the sequence $6,18,54,162,486,1{,}458,\ldots$." answer="6\cdot3^{n-1}" answerDisplay="$a_n=6(3)^{n-1}$" hint="Use the first term and common ratio in $a_n=a_1r^{n-1}$." >}}
 
-{{< fillin question="Find the eleventh term of the sequence $7,14,28,56,112,224,\ldots$." answer="7168" answerDisplay="$a_{11}=7{,}168$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
+{{< fillin question="Find the eleventh term of the sequence $7,14,28,56,112,224,\ldots$." answer="7168" answerForm="decimal" answerDisplay="$a_{11}=7{,}168$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
 
 ## Find the sum of the first $n$ terms of a geometric sequence
 
@@ -307,9 +307,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the sum of the first 20 terms of the geometric sequence $3,6,12,24,48,96,\ldots$." answer="3145725" answerDisplay="$3{,}145{,}725$" hint="Use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $a_1=3$, $r=2$, and $n=20$." >}}
+{{< fillin question="Find the sum of the first 20 terms of the geometric sequence $3,6,12,24,48,96,\ldots$." answer="3145725" answerForm="decimal" answerDisplay="$3{,}145{,}725$" hint="Identify $a_1$ and $r$ from the sequence, then use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $n=20$." >}}
 
-{{< fillin question="Find the sum of the first 20 terms of the geometric sequence $6,18,54,162,486,1{,}458,\ldots$." answer="10460353200" answerDisplay="$10{,}460{,}353{,}200$" hint="Use the finite geometric sum formula with common ratio $3$." >}}
+{{< fillin question="Find the sum of the first 20 terms of the geometric sequence $6,18,54,162,486,1{,}458,\ldots$." answer="10460353200" answerForm="decimal" answerDisplay="$10{,}460{,}353{,}200$" hint="Identify $a_1$ and $r$ from the sequence, then use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $n=20$." >}}
 
 In the next example, we are given the sum in summation notation. While adding
 all the terms might be possible, most often it is easiest to use the formula
@@ -405,9 +405,9 @@ finite sums for this series. We see $a_1=\tfrac12$ and $r=\tfrac12$.
 
 $$
 \begin{array}{rclcrclcrcl}
-S_{10}&=&\tfrac{0.5(1-(0.5)^{10})}{1-0.5}
-&\quad&S_{20}&=&\tfrac{0.5(1-(0.5)^{20})}{1-0.5}
-&\quad&S_{30}&=&\tfrac{0.5(1-(0.5)^{30})}{1-0.5}\\[10pt]
+S_{10}&=&\cfrac{\tfrac12\left(1-\left(\tfrac12\right)^{10}\right)}{1-\tfrac12}
+&\quad&S_{20}&=&\cfrac{\tfrac12\left(1-\left(\tfrac12\right)^{20}\right)}{1-\tfrac12}
+&\quad&S_{30}&=&\cfrac{\tfrac12\left(1-\left(\tfrac12\right)^{30}\right)}{1-\tfrac12}\\[14pt]
 S_{10}&\approx&0.9990234375
 &&S_{20}&\approx&0.9999990463
 &&S_{30}&\approx&0.9999999991
@@ -464,9 +464,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the sum of the infinite geometric series $48+24+12+6+3+\tfrac32+\cdots$." answer="96" answerDisplay="$96$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
+{{< fillin question="Find the sum of the infinite geometric series $48+24+12+6+3+\tfrac32+\cdots$." answer="96" answerForm="decimal" answerDisplay="$96$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
 
-{{< fillin question="Find the sum of the infinite geometric series $64+16+4+1+\tfrac14+\tfrac1{16}+\cdots$." answer="\frac{256}{3}" answerDisplay="$\tfrac{256}{3}$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
+{{< fillin question="Find the sum of the infinite geometric series $64+16+4+1+\tfrac14+\tfrac1{16}+\cdots$." answer="\frac{256}{3}" answerForm="lowest-terms" answerDisplay="$\tfrac{256}{3}$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
 
 An interesting use of infinite geometric series is to write a repeating decimal
 as a fraction.
@@ -495,9 +495,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Write the repeating decimal $0.\overline4$ as a fraction." answer="\frac{4}{9}" answerForm="fraction" answerDisplay="$\tfrac49$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+{{< fillin question="Write the repeating decimal $0.\overline4$ as a fraction." answer="\frac{4}{9}" answerForm="fraction lowest-terms" answerDisplay="$\tfrac49$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
 
-{{< fillin question="Write the repeating decimal $0.\overline8$ as a fraction." answer="\frac{8}{9}" answerForm="fraction" answerDisplay="$\tfrac89$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+{{< fillin question="Write the repeating decimal $0.\overline8$ as a fraction." answer="\frac{8}{9}" answerForm="fraction lowest-terms" answerDisplay="$\tfrac89$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
 
 ## Apply geometric sequences and series in the real world
 
@@ -535,9 +535,9 @@ $$
 The total effect of the \$1,000 received by each household will be a \$5,000
 growth in the economy.
 
-{{< fillin question="What is the total effect on the economy of a government tax rebate of \$1,000 to each household if each household will spend 90% of the rebate in goods and services?" answer="10000" answerDisplay="$\text{\textdollar}10{,}000$" hint="Model the repeated spending as an infinite geometric series." >}}
+{{< fillin question="What is the total effect on the economy of a government tax rebate of \$1,000 to each household if each household will spend 90% of the rebate in goods and services? Enter the amount in dollars, without a dollar sign." answer="10000" answerForm="decimal" answerDisplay="$\text{\textdollar}10{,}000$" hint="Model the repeated spending as an infinite geometric series." >}}
 
-{{< fillin question="What is the total effect on the economy of a government tax rebate of \$500 to each household if each household will spend 85% of the rebate in goods and services? Round to the nearest cent." answer="3333.33" answerDisplay="$\text{\textdollar}3{,}333.33$" hint="Use $500$ as the first term and $0.85$ as the common ratio." >}}
+{{< fillin question="What is the total effect on the economy of a government tax rebate of \$500 to each household if each household will spend 85% of the rebate in goods and services? Enter the amount in dollars, rounded to the nearest cent, without a dollar sign." answer="3333.33" answerForm="decimal" answerDisplay="$\text{\textdollar}3{,}333.33$" hint="Model the repeated spending as an infinite geometric series." >}}
 
 We have looked at a compound interest formula where a principal, $P$, is
 invested at an interest rate, $r$, for $t$ years. The new balance, $A$, is
@@ -570,9 +570,13 @@ $P(1+r)^2$ dollars. After $t$ years, it will be worth $A=P(1+r)^t$ dollars.
 
 After three years, the value of the annuity is
 
-$$P+P(1+r)^1+P(1+r)^2.$$
+$$
+\underbrace{P}_{\text{year 3 deposit}}
++\underbrace{P(1+r)^1}_{\text{year 2 deposit}}
++\underbrace{P(1+r)^2}_{\text{year 1 deposit}}.
+$$
 
-This a sum of the terms of a geometric sequence where the first term is $P$
+This is a sum of the terms of a geometric sequence where the first term is $P$
 and the common ratio is $1+r$. We substitute these values into the sum
 formula. Be careful, we have two different uses of $r$. The $r$ in the sum
 formula is the common ratio of the sequence. In this case, that is $1+r$ where
@@ -638,9 +642,9 @@ $$
 
 The child will have \$34,920.20 when she turns 18.
 
-{{< fillin question="New grandparents invest \$200 per month in an annuity for their grandson. The account pays 5% interest per year compounded monthly. How much will be in the child's account at his twenty-first birthday? Round to the nearest cent." answer="88868.36" answerDisplay="$\text{\textdollar}88{,}868.36$" hint="Use the annuity formula with $P=200$, $r=0.05$, $n=12$, and $t=21$." >}}
+{{< fillin question="New grandparents invest \$200 per month in an annuity for their grandson. The account pays 5% interest per year compounded monthly. How much will be in the child's account at his twenty-first birthday? Enter the amount in dollars, rounded to the nearest cent, without a dollar sign." answer="88868.36" answerForm="decimal" answerDisplay="$\text{\textdollar}88{,}868.36$" hint="Identify $P$, $r$, $n$, and $t$, then use the annuity formula." >}}
 
-{{< fillin question="Arturo begins investing \$200 per month in an IRA at age 27. The annuity earns 8% interest compounded monthly. How much will be in Arturo's account when he retires at age 67? Round to the nearest cent." answer="698201.57" answerDisplay="$\text{\textdollar}698{,}201.57$" hint="Use the annuity formula with $P=200$, $r=0.08$, $n=12$, and $t=40$." >}}
+{{< fillin question="Arturo begins investing \$200 per month in an IRA at age 27. The annuity earns 8% interest compounded monthly. How much will be in Arturo's account when he retires at age 67? Enter the amount in dollars, rounded to the nearest cent, without a dollar sign." answer="698201.57" answerForm="decimal" answerDisplay="$\text{\textdollar}698{,}201.57$" hint="Identify $P$, $r$, $n$, and $t$, then use the annuity formula." >}}
 
 ## Key terms
 
@@ -655,62 +659,65 @@ an investment that is a sequence of equal periodic deposits.
 
 ### Determine if a sequence is geometric
 
-{{< multiplechoice question="Determine whether the sequence $3,12,48,192,768,3{,}072,\ldots$ is geometric." answer="geometric" hint="Divide each term by the term before it and see whether the ratio stays the same." >}}
-geometric
+{{< multiplechoice question="Determine if the sequence $3,12,48,192,768,3{,}072,\ldots$ is geometric. If so, indicate the common ratio." answer="geometric with common ratio $r=4$" hint="Divide each term by the term before it and see whether the ratio stays the same." >}}
+geometric with common ratio $r=\tfrac14$
 not geometric
+geometric with common ratio $r=4$
 {{< /multiplechoice >}}
 
-{{< fillin question="The sequence $3,12,48,192,768,3{,}072,\ldots$ is geometric. Find its common ratio $r$." answer="4" hint="Divide any term by the term immediately before it." >}}
+{{< fillin question="The sequence $72,36,18,9,\tfrac92,\tfrac94,\ldots$ is geometric. Find its common ratio $r$." answer="\frac{1}{2}" answerForm="lowest-terms" answerDisplay="$r=\tfrac12$" hint="Divide any term by the term immediately before it." >}}
 
-{{< multiplechoice question="Determine whether the sequence $-7,-2,3,8,13,18,\ldots$ is arithmetic, geometric, or neither." answer="arithmetic" hint="Check whether consecutive terms share a common difference or a common ratio." >}}
-arithmetic
+{{< multiplechoice question="Determine if the sequence $-7,-2,3,8,13,18,\ldots$ is arithmetic, geometric, or neither. If arithmetic, indicate the common difference. If geometric, indicate the common ratio." answer="arithmetic with common difference $d=5$" hint="Check whether consecutive terms share a common difference or a common ratio." >}}
+arithmetic with common difference $d=-5$
+arithmetic with common difference $d=5$
 geometric
 neither
 {{< /multiplechoice >}}
 
-{{< fillin question="The sequence $-7,-2,3,8,13,18,\ldots$ is arithmetic. Find its common difference $d$." answer="5" hint="Subtract any term from the term that follows it." >}}
+{{< fillin question="Write the first five terms of the geometric sequence with first term $a_1=-4$ and common ratio $r=-2$. Enter the terms in order, separated by commas." answer="-4,8,-16,32,-64" answerForm="decimal" answerDisplay="$-4,8,-16,32,-64$" hint="Start with the first term and multiply each term by the common ratio to get the next one." >}}
 
 ### Find the general term (nth term) of a geometric sequence
 
-{{< fillin question="Find $a_{11}$ given $a_1=8$ and $r=3$." answer="472392" answerDisplay="$a_{11}=472{,}392$" hint="Use $a_n=a_1r^{n-1}$ with $n=11$." >}}
+{{< fillin question="Find $a_{11}$ given $a_1=8$ and $r=3$." answer="472392" answerForm="decimal" answerDisplay="$a_{11}=472{,}392$" hint="Use $a_n=a_1r^{n-1}$ with $n=11$." >}}
 
-{{< fillin question="Find $a_{10}$ given $a_1=100{,}000$ and $r=0.1$." answer="0.0001" answerDisplay="$a_{10}=0.0001$" hint="Use $a_n=a_1r^{n-1}$ with $n=10$." >}}
+{{< fillin question="Find $a_{10}$ given $a_1=100{,}000$ and $r=0.1$." answer="0.0001" answerForm="lowest-terms" answerDisplay="$a_{10}=0.0001$" hint="Use $a_n=a_1r^{n-1}$ with $n=10$." >}}
 
-{{< fillin question="Find the ninth term of the sequence $9,18,36,72,144,288,\ldots$." answer="2304" answerDisplay="$a_9=2{,}304$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
+{{< fillin question="Find the ninth term of the sequence $9,18,36,72,144,288,\ldots$." answer="2304" answerForm="decimal" answerDisplay="$a_9=2{,}304$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
 
 {{< fillin question="Find the general term of the sequence $9,18,36,72,144,288,\ldots$." answer="9\cdot2^{n-1}" answerDisplay="$a_n=9(2)^{n-1}$" hint="Use the first term and common ratio in $a_n=a_1r^{n-1}$." >}}
 
 ### Find the sum of the first $n$ terms of a geometric sequence
 
-{{< fillin question="Find the sum of the first fifteen terms of the geometric sequence $8,24,72,216,648,1{,}944,\ldots$." answer="57395624" answerDisplay="$57{,}395{,}624$" hint="Use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $a_1=8$, $r=3$, and $n=15$." >}}
+{{< fillin question="Find the sum of the first fifteen terms of the geometric sequence $8,24,72,216,648,1{,}944,\ldots$." answer="57395624" answerForm="decimal" answerDisplay="$57{,}395{,}624$" hint="Identify $a_1$ and $r$ from the sequence, then use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $n=15$." >}}
 
-{{< fillin question="Find the sum of the first fifteen terms of the geometric sequence $-6,12,-24,48,-96,192,\ldots$." answer="-65538" answerDisplay="$-65{,}538$" hint="Use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $a_1=-6$, $r=-2$, and $n=15$." >}}
+{{< fillin question="Find the sum of the first fifteen terms of the geometric sequence $-6,12,-24,48,-96,192,\ldots$." answer="-65538" answerForm="decimal" answerDisplay="$-65{,}538$" hint="Identify $a_1$ and $r$ from the sequence, then use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $n=15$." >}}
 
 {{< fillin question="Find the sum $\sum_{i=1}^{15}(2)^i$." answer="65534" answerForm="decimal" answerDisplay="$65{,}534$" hint="Write out the first few terms to identify $a_1$ and $r$, then use the finite geometric sum formula." >}}
 
 ### Find the sum of an infinite geometric series
 
-{{< fillin question="Find the sum of the infinite geometric series $1+\tfrac13+\tfrac19+\tfrac1{27}+\tfrac1{81}+\tfrac1{243}+\tfrac1{729}+\cdots$. Give the exact answer as a fraction." answer="\frac{3}{2}" answerForm="fraction" answerDisplay="$\tfrac32$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
+{{< fillin question="Find the sum of the infinite geometric series $1+\tfrac13+\tfrac19+\tfrac1{27}+\tfrac1{81}+\tfrac1{243}+\tfrac1{729}+\cdots$. Give the exact answer as a fraction." answer="\frac{3}{2}" answerForm="fraction lowest-terms" answerDisplay="$\tfrac32$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
 
 {{< multiplechoice question="Does the infinite geometric series $6+12+24+48+96+192+\cdots$ have a sum?" answer="no, because $|r|\ge1$" hint="Identify the common ratio and compare $|r|$ with $1$." >}}
 no, because $|r|\ge1$
 yes, because $|r|<1$
+yes, the sum is $-6$
 {{< /multiplechoice >}}
 
-{{< fillin question="Write the repeating decimal $0.\overline3$ as a fraction." answer="\frac{1}{3}" answerForm="fraction" answerDisplay="$\tfrac13$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+{{< fillin question="Write the repeating decimal $0.\overline3$ as a fraction." answer="\frac{1}{3}" answerForm="fraction lowest-terms" answerDisplay="$\tfrac13$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
 
 ### Apply geometric sequences and series in the real world
 
-{{< fillin question="What is the total effect on the economy of a \$1,000 tax rebate to each household if each household spends 85% of the rebate on goods and services? Round to the nearest cent." answer="6666.67" answerDisplay="$\text{\textdollar}6{,}666.67$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}000$ and $r=0.85$." >}}
+{{< fillin question="What is the total effect on the economy of a \$1,000 tax rebate to each household if each household spends 85% of the rebate on goods and services? Enter the amount in dollars, rounded to the nearest cent, without a dollar sign." answer="6666.67" answerForm="decimal" answerDisplay="$\text{\textdollar}6{,}666.67$" hint="Model the repeated spending as an infinite geometric series and use $S=\tfrac{a_1}{1-r}$." >}}
 
-{{< fillin question="What is the total effect on the economy of a \$1,000 tax rebate to each household if each household spends 75% of the rebate on goods and services?" answer="4000" answerDisplay="$\text{\textdollar}4{,}000$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}000$ and $r=0.75$." >}}
+{{< fillin question="What is the total effect on the economy of a \$1,000 tax rebate to each household if each household spends 75% of the rebate on goods and services? Enter the amount in dollars, without a dollar sign." answer="4000" answerForm="decimal" answerDisplay="$\text{\textdollar}4{,}000$" hint="Model the repeated spending as an infinite geometric series and use $S=\tfrac{a_1}{1-r}$." >}}
 
-{{< fillin question="What is the total effect on the economy of a \$1,500 tax rebate to each household if each household spends 90% of the rebate on goods and services?" answer="15000" answerDisplay="$\text{\textdollar}15{,}000$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}500$ and $r=0.9$." >}}
+{{< fillin question="What is the total effect on the economy of a \$1,500 tax rebate to each household if each household spends 90% of the rebate on goods and services? Enter the amount in dollars, without a dollar sign." answer="15000" answerForm="decimal" answerDisplay="$\text{\textdollar}15{,}000$" hint="Model the repeated spending as an infinite geometric series and use $S=\tfrac{a_1}{1-r}$." >}}
 
-{{< fillin question="What is the total effect on the economy of a \$1,500 tax rebate to each household if each household spends 80% of the rebate on goods and services?" answer="7500" answerDisplay="$\text{\textdollar}7{,}500$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}500$ and $r=0.8$." >}}
+{{< fillin question="What is the total effect on the economy of a \$1,500 tax rebate to each household if each household spends 80% of the rebate on goods and services? Enter the amount in dollars, without a dollar sign." answer="7500" answerForm="decimal" answerDisplay="$\text{\textdollar}7{,}500$" hint="Model the repeated spending as an infinite geometric series and use $S=\tfrac{a_1}{1-r}$." >}}
 
-{{< fillin question="Berenice starts investing \$500 per quarter in an IRA at age 30. The annuity earns 7% interest per year compounded quarterly. How much will be in Berenice's account when she retires at age 65? Round to the nearest cent." answer="295581.88" answerDisplay="$\text{\textdollar}295{,}581.88$" hint="Use the annuity formula with $P=500$, $r=0.07$, $n=4$, and $t=35$." >}}
+{{< fillin question="Berenice starts investing \$500 per quarter in an IRA at age 30. The annuity earns 7% interest per year compounded quarterly. How much will be in Berenice's account when she retires at age 65? Enter the amount in dollars, rounded to the nearest cent, without a dollar sign." answer="295581.88" answerForm="decimal" answerDisplay="$\text{\textdollar}295{,}581.88$" hint="Identify $P$, $r$, $n$, and $t$, then use the annuity formula." >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 12.3](https://openstax.org/books/intermediate-algebra-2e/pages/12-3-geometric-sequences-and-series) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted the source Try It exercises into interactive questions; omitted the readiness quiz, self-check, and media links in accordance with the authoring playbook; adapted selected end-of-section exercises into an interactive Practice block; and corrected the opening ratio-3 sequence from $4,12,36,108,432,1728$ to $4,12,36,108,324,972$.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 12.3](https://openstax.org/books/intermediate-algebra-2e/pages/12-3-geometric-sequences-and-series) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted selected source Try It exercises into interactive questions; omitted the readiness quiz, self-check, and media links in accordance with the authoring playbook; adapted selected end-of-section exercises into an interactive Practice block; corrected the opening ratio-3 sequence from $4,12,36,108,432,1{,}728$ to $4,12,36,108,324,972$; and corrected the annuity paragraph's “This a sum” to “This is a sum”.</small>

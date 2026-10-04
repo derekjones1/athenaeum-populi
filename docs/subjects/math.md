@@ -103,8 +103,11 @@ comma-separated answer:
   each branch as to a typed member (`-4\pm\sqrt{27}` and `\pm\sqrt{50}` are
   `form` under `simplified-radical`). A ± response against any other key (one
   value, a list of another size, an interval) is `incorrect`; a member with
-  two ± is not expanded. Key the pair as the two members (`-4,4`), never with
-  `\pm`. MathLive types ± as `\pm` (inline `+-`, shifted minus key).
+  two ± is not expanded, except a point with at most one `\pm` in each of two
+  or three coordinates: `(\pm3,\pm4)` is its four sign combinations
+  *(Intermediate Algebra chapters 11–12 re-review, October 4, 2026)*, and a
+  key listing only correlated points (`(2,3),(-2,-3)`) still refuses it. Key
+  the pair as the two members (`-4,4`), never with `\pm`. MathLive types ± as `\pm` (inline `+-`, shifted minus key).
 
 **Re-expression prompts need `answerForm`.** Value grading accepts any input
 mathematically equal to `answer`, so a prompt that asks the learner to restate
@@ -163,7 +166,7 @@ names):
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
 | `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer (a bare squared term counts as over the unwritten $1$, so $(y-1)^2-\tfrac{x^2}{4}=1$ passes) — for ellipse/hyperbola "write in standard form". Primed variables ($x'$, $y'$) are folded onto one symbol first, so $\tfrac{x'^2}{4}+\tfrac{y'^2}{9}=1$ is keyable |
 | `parabola-standard-form` | an equation with one side a single coefficient-1 squared unit ($x^2$, $y^2$, $(x-h)^2$, $(y-k)^2$) and the other ONE term in the other variable — an optional numeric coefficient (the $4p$: integer, decimal, or written fraction) on the bare variable or its shifted binomial, or that variable/binomial over an integer — for "write the parabola in standard form" $(x-h)^2=4p(y-k)$ asks, which `vertex-form` cannot serve (it wants $y=a(x-h)^2+k$) and which the general form, $x=\tfrac{y^2}{8}$, and the distributed $(x-2)^2=-8y-8$ otherwise pass on value |
-| `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks |
+| `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks; every shift is a nonzero integer, so a written-in zero ($(x-0)^2$) is `form` here and in `conic-standard-form` and `parabola-standard-form`, as $(y-(-4))^2$ already was |
 | `exponential-form` | against a conversion key ($b^y=x$), one power $b^y$ — an atom base, a braced or one-character exponent — equal to a log-free number, either orientation, with the key's base, exponent, and number, each compared by value — for "convert from logarithmic to exponential form". The value path compares an equation's sides by value, so `64=64`, `64=2^6`, and `64=8^2` matched `64=4^3`; a response that keeps the key's three numbers also settles the value, so the identity key `1=x^0` accepts `x^0=1` (Intermediate Algebra 10.3, October 3, 2026). Against a key that is no conversion equation (`100`), only no logarithm left |
 | `logarithmic-form` | the mirror: one logarithm ($\log_b x$, $\log x$ as base 10, $\ln x$ as base $e$) equal to a log-free exponent, with the key's base, argument, and value — for "convert to logarithmic form", where `2=2` and `\log_2 4=2` matched `\log_3 9=2` in value. Without a conversion key, the one-logarithm shape alone |
 | `base-e` | no base other than $e$ raised to a variable exponent — for "change $y=3(0.5)^x$ to one having $e$ as the base". A numeric exponent ($x^2$) is a power function and is left alone |
@@ -776,7 +779,14 @@ Each explains a lint error or a grader behavior an author will still meet:
   Recursive formulas grade well on subscripts (`a_n=a_{n-1}+3`, reordered
   spellings accepted, a shifted index refused), so the question pins the
   shape ("in the form $a_n=\ldots$ in terms of $a_{n-1}$, for $n\ge2$") and
-  keys $a_1$ as its own fill-in.
+  keys $a_1$ as its own fill-in. A subscripted label (`a_n=`, `a_{27}=`,
+  `S_{30}=`, `a_1=`) is stripped before every form token reads the value, as
+  `x=` is, and two finite sigma sums compare term by term — a renamed or
+  shifted index passes, a same-total sum with other terms does not
+  *(Intermediate Algebra chapters 11–12 re-review, October 4, 2026)*. Key a
+  sum-shaped summand in parentheses and say so in the question ("Put the
+  general term in parentheses"): `\sum_{n=1}^{7}2n+12` reads as
+  $(\sum 2n)+12$.
 
 - **The engine evaluates `\lim` and differentiates `\frac{d}{dx}`** *(August
   29, 2026)*. `\lim_{x\to2}(x^2+1)` grades `correct` against a keyed $5$, and

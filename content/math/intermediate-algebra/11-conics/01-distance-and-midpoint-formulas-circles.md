@@ -49,6 +49,14 @@ right triangle as if you were going to find slope. The rise is 3 and the run
 is 4. Find the length of each leg, and use the Pythagorean Theorem to find
 $d$, the distance between the two points.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The points (2, 1) and (6, 4) plotted on a grid from −1 to 7 on both axes and joined by a segment labelled d. A right triangle is drawn on that segment: a vertical leg labelled rise runs up from (2, 1) to (2, 4), and a horizontal leg labelled run runs right from (2, 4) to (6, 4).","xMin":-1,"xMax":7,"yMin":-1,"yMax":7,"tickLabels":true,"unit":48,"segments":[{"from":[2,1],"to":[2,4]},{"from":[2,4],"to":[6,4]},{"from":[2,1],"to":[6,4],"label":"d"}],"points":[{"at":[2,1],"label":"(2, 1)"},{"at":[6,4],"label":"(6, 4)"}],"texts":[{"at":[2.25,2.9],"text":"rise","anchor":"start"},{"at":[4,3.55],"text":"run","anchor":"middle"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"The right triangle on its own: a vertical leg of length 3, a horizontal leg of length 4, and the hypotenuse labelled d.","polygons":[{"points":[[0,0],[0,3],[4,3]],"edgeLabels":["3","4","d"],"rightAngles":[1]}]}
+{{< /apfigure >}}
+
 $$
 \begin{array}{lrcl}
 \text{Use the Pythagorean Theorem.} & a^2+b^2&=&c^2\\[4pt]
@@ -62,9 +70,9 @@ $$
 Since distance, $d$, is positive, we can eliminate $d=-5$. The distance
 between the points $(6,4)$ and $(2,1)$ is 5.
 
-{{< fillin question="Use the rectangular coordinate system to find the distance between the points $(6,1)$ and $(2,-2)$." answer="5" answerDisplay="$5$" hint="Draw a right triangle and use the Pythagorean Theorem." >}}
+{{< fillin question="Use the rectangular coordinate system to find the distance between the points $(6,1)$ and $(2,-2)$." answer="5" answerForm="decimal" answerDisplay="$5$" hint="Draw a right triangle and use the Pythagorean Theorem." >}}
 
-{{< fillin question="Use the rectangular coordinate system to find the distance between the points $(5,3)$ and $(-3,-3)$." answer="10" answerDisplay="$10$" hint="Find the horizontal and vertical distances, then use the Pythagorean Theorem." >}}
+{{< fillin question="Use the rectangular coordinate system to find the distance between the points $(5,3)$ and $(-3,-3)$." answer="10" answerForm="decimal" answerDisplay="$10$" hint="Find the horizontal and vertical distances, then use the Pythagorean Theorem." >}}
 
 The method we used in the last example leads us to the formula to find the
 distance between the two points $(x_1,y_1)$ and $(x_2,y_2)$.
@@ -72,6 +80,10 @@ distance between the two points $(x_1,y_1)$ and $(x_2,y_2)$.
 When we found the length of the horizontal leg we subtracted $6-2$, which is
 $x_2-x_1$. When we found the length of the vertical leg we subtracted $4-1$,
 which is $y_2-y_1$.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The same right triangle with its corners named: (2, 1) is labelled (x₁, y₁) and (6, 4) is labelled (x₂, y₂). The vertical leg, the rise, is y₂ − y₁ = 4 − 1 = 3; the horizontal leg, the run, is x₂ − x₁ = 6 − 2 = 4; the hypotenuse joining the two points is d. The grid runs from −1 to 8 on both axes.","xMin":-1,"xMax":8,"yMin":-1,"yMax":8,"tickLabels":true,"unit":54,"segments":[{"from":[2,1],"to":[2,4]},{"from":[2,4],"to":[6,4]},{"from":[2,1],"to":[6,4],"label":"d"}],"points":[{"at":[2,1],"label":"(2, 1)"},{"at":[6,4],"label":"(6, 4)"}],"texts":[{"at":[2.25,2.9],"text":"rise","anchor":"start"},{"at":[4,3.55],"text":"run","anchor":"middle"},{"at":[1,3.2],"text":"y₂ − y₁","anchor":"middle"},{"at":[1,2.6],"text":"4 − 1","anchor":"middle"},{"at":[1,2.0],"text":"3","anchor":"middle"},{"at":[4,5.8],"text":"x₂ − x₁","anchor":"middle"},{"at":[4,5.2],"text":"6 − 2","anchor":"middle"},{"at":[4,4.6],"text":"4","anchor":"middle"},{"at":[1.05,0.45],"text":"(x₁, y₁)","anchor":"middle"},{"at":[6.9,3.3],"text":"(x₂, y₂)","anchor":"middle"}]}
+{{< /apfigure >}}
 
 If the triangle had been in a different position, we may have subtracted
 $x_1-x_2$ or $y_1-y_2$. The expressions $x_2-x_1$ and $x_1-x_2$ vary only in
@@ -114,9 +126,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(-4,-5)$ and $(5,7)$." answer="15" answerDisplay="$15$" hint="Substitute the two points in the Distance Formula." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(-4,-5)$ and $(5,7)$." answer="15" answerForm="decimal" answerDisplay="$15$" hint="Substitute the two points in the Distance Formula." >}}
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(-2,-5)$ and $(-14,-10)$." answer="13" answerDisplay="$13$" hint="Substitute the two points in the Distance Formula." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(-2,-5)$ and $(-14,-10)$." answer="13" answerForm="decimal" answerDisplay="$13$" hint="Substitute the two points in the Distance Formula." >}}
 
 **Example 11.3.** Use the Distance Formula to find the distance between the
 points $(10,-4)$ and $(-1,5)$. Write the answer in exact form and then find the
@@ -131,7 +143,7 @@ $$
 \text{Simplify.}&d&=&\sqrt{(-11)^2+9^2}\\[4pt]
 &d&=&\sqrt{121+81}\\[4pt]
 &d&=&\sqrt{202}\\[4pt]
-&&&d\approx14.2
+&d&\approx&14.2
 \end{array}
 $$
 
@@ -176,9 +188,13 @@ $$
 The midpoint of the segment is the point $(1,-1)$. Plotting the endpoints and
 midpoint shows that $(1,-1)$ lies halfway between $(-5,-4)$ and $(7,2)$.
 
-{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(-3,-5)$ and $(5,7)$." answer="(1,1)" answerDisplay="$(1,1)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A segment on a grid from −8 to 8 on both axes, from the endpoint (−5, −4) to the endpoint (7, 2), with its midpoint (1, −1) plotted halfway along it.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"segments":[{"from":[-5,-4],"to":[7,2]}],"points":[{"at":[-5,-4],"label":"(−5, −4)"},{"at":[1,-1],"label":"(1, −1)"},{"at":[7,2],"label":"(7, 2)"}]}
+{{< /apfigure >}}
 
-{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(-2,-5)$ and $(6,-1)$." answer="(2,-3)" answerDisplay="$(2,-3)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(-3,-5)$ and $(5,7)$." answer="(1,1)" answerForm="decimal" answerDisplay="$(1,1)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+
+{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(-2,-5)$ and $(6,-1)$." answer="(2,-3)" answerForm="decimal" answerDisplay="$(2,-3)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
 
 Both the Distance Formula and the Midpoint Formula depend on two points,
 $(x_1,y_1)$ and $(x_2,y_2)$. It is easy to confuse which formula requires
@@ -204,6 +220,10 @@ and the fixed distance is called the **radius**, $r$, of the circle.
 
 We look at a circle in the rectangular coordinate system. The radius is the
 distance from the center, $(h,k)$, to a point on the circle, $(x,y)$.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A circle on a coordinate grid whose axes carry no numbers. Its center is the point labelled (h, k), and a point on the circle is labelled (x, y). The segment joining them is the radius, labelled r.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":false,"circles":[{"at":[-2,2],"r":4.2426}],"segments":[{"from":[-2,2],"to":[-5,-1],"label":"r","labelSide":"nw"}],"points":[{"at":[-2,2],"label":"(h, k)"},{"at":[-5,-1],"label":"(x, y)"}]}
+{{< /apfigure >}}
 
 To derive the equation of a circle, we can use the distance formula with the
 points $(h,k)$, $(x,y)$ and the distance, $r$.
@@ -270,6 +290,10 @@ center $(2,4)$ that also contains the point $(-2,1)$.
 circle so we can use the distance formula to calculate it. We will use the
 center $(2,4)$ and point $(-2,1)$.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A circle on a grid from −5 to 8 on the x-axis and −5 to 10 on the y-axis, with its center (2, 4) plotted. A segment joins the center to the point (−2, 1), which lies on the circle.","xMin":-5,"xMax":8,"yMin":-5,"yMax":10,"tickLabels":true,"circles":[{"at":[2,4],"r":5}],"segments":[{"from":[2,4],"to":[-2,1]}],"points":[{"at":[2,4],"label":"(2, 4)"},{"at":[-2,1],"label":"(−2, 1)"}]}
+{{< /apfigure >}}
+
 $$
 \begin{array}{lrcl}
 \text{Use the Distance Formula.}&r&=&\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\[4pt]
@@ -322,9 +346,13 @@ The center is $(-2,1)$ and the radius is 3. To graph the circle, plot the
 center and then plot points 3 units above, below, left, and right of the
 center. Draw the circle through these four points.
 
-{{< fillin question="Find the center and radius of $(x-3)^2+(y+4)^2=4$. Enter the center and radius, separated by a comma." answer="(3,-4),2" answerDisplay="center $(3,-4)$; radius $2$" hint="Compare the equation to $(x-h)^2+(y-k)^2=r^2$." >}}
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A circle on a grid from −6 to 6 on both axes, with its center (−2, 1) plotted and a radius drawn up and to the left, labelled r = 3. The circle passes through (−5, 1), (1, 1), (−2, 4), and (−2, −2).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"circles":[{"at":[-2,1],"r":3}],"segments":[{"from":[-2,1],"to":[-4.1213,3.1213]}],"points":[{"at":[-2,1],"label":"(−2, 1)"}],"texts":[{"at":[-2.5657,2.5556],"text":"r = 3","anchor":"middle"}]}
+{{< /apfigure >}}
 
-{{< fillin question="Find the center and radius of $(x-3)^2+(y-1)^2=16$. Enter the center and radius, separated by a comma." answer="(3,1),4" answerDisplay="center $(3,1)$; radius $4$" hint="Compare the equation to $(x-h)^2+(y-k)^2=r^2$." >}}
+{{< fillin question="Find the center and radius of $(x-3)^2+(y+4)^2=4$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(3,-4),2" answerForm="decimal" answerDisplay="center $(3,-4)$; radius $2$" hint="Compare the equation to $(x-h)^2+(y-k)^2=r^2$." >}}
+
+{{< fillin question="Find the center and radius of $(x-3)^2+(y-1)^2=16$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(3,1),4" answerForm="decimal" answerDisplay="center $(3,1)$; radius $4$" hint="Compare the equation to $(x-h)^2+(y-k)^2=r^2$." >}}
 
 To find the center and radius, we must write the equation in standard form. In
 the next example, we must first get the coefficient of $x^2,y^2$ to be one.
@@ -346,9 +374,13 @@ The center is $(0,0)$ and the radius is 4. Plot the center and the four points
 4 units above, below, left, and right of the center, and draw the circle
 through them.
 
-{{< fillin question="Find the center and radius of $3x^2+3y^2=27$. Enter the center and radius, separated by a comma." answer="(0,0),3" answerDisplay="center $(0,0)$; radius $3$" hint="First divide both sides by the coefficient of $x^2$ and $y^2$." >}}
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A circle on a grid from −6 to 6 on both axes, with its center (0, 0) plotted and a radius drawn down and to the right, labelled r = 4. The circle passes through (−4, 0), (4, 0), (0, 4), and (0, −4).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"circles":[{"at":[0,0],"r":4}],"segments":[{"from":[0,0],"to":[2.4,-3.2]}],"points":[{"at":[0,0],"label":"(0, 0)"}],"texts":[{"at":[2.5,-1.5],"text":"r = 4","anchor":"middle"}]}
+{{< /apfigure >}}
 
-{{< fillin question="Find the center and radius of $5x^2+5y^2=125$. Enter the center and radius, separated by a comma." answer="(0,0),5" answerDisplay="center $(0,0)$; radius $5$" hint="First divide both sides by the coefficient of $x^2$ and $y^2$." >}}
+{{< fillin question="Find the center and radius of $3x^2+3y^2=27$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(0,0),3" answerForm="decimal" answerDisplay="center $(0,0)$; radius $3$" hint="First divide both sides by the coefficient of $x^2$ and $y^2$." >}}
+
+{{< fillin question="Find the center and radius of $5x^2+5y^2=125$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(0,0),5" answerForm="decimal" answerDisplay="center $(0,0)$; radius $5$" hint="First divide both sides by the coefficient of $x^2$ and $y^2$." >}}
 
 If we expand the equation from Example 11.8,
 $(x+2)^2+(y-1)^2=9$, the equation of the circle looks very different.
@@ -391,9 +423,13 @@ $$
 The center is $(2,3)$ and the radius is 3. Plot the center and points 3 units
 above, below, left, and right of it, and draw the circle.
 
-{{< fillin question="Find the center and radius of $x^2+y^2-6x-8y+9=0$. Enter the center and radius, separated by a comma." answer="(3,4),4" answerDisplay="center $(3,4)$; radius $4$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A circle on a grid from −4 to 8 on both axes, with its center (2, 3) plotted and a radius drawn down and to the right, labelled r = 3. The circle passes through (−1, 3), (5, 3), (2, 6), and (2, 0).","xMin":-4,"xMax":8,"yMin":-4,"yMax":8,"tickLabels":true,"circles":[{"at":[2,3],"r":3}],"segments":[{"from":[2,3],"to":[3.8,0.6]}],"points":[{"at":[2,3],"label":"(2, 3)"}],"texts":[{"at":[3.6,2.22],"text":"r = 3","anchor":"middle"}]}
+{{< /apfigure >}}
 
-{{< fillin question="Find the center and radius of $x^2+y^2+6x-2y+1=0$. Enter the center and radius, separated by a comma." answer="(-3,1),3" answerDisplay="center $(-3,1)$; radius $3$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
+{{< fillin question="Find the center and radius of $x^2+y^2-6x-8y+9=0$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(3,4),4" answerForm="decimal" answerDisplay="center $(3,4)$; radius $4$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
+
+{{< fillin question="Find the center and radius of $x^2+y^2+6x-2y+1=0$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(-3,1),3" answerForm="decimal" answerDisplay="center $(-3,1)$; radius $3$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
 
 In the next example, there is a $y$-term and a $y^2$-term. But notice that
 there is no $x$-term, only an $x^2$-term. We have seen this before and know
@@ -417,9 +453,13 @@ $$
 The center is $(0,-4)$ and the radius is 4. Plot the center and points 4 units
 above, below, left, and right of it, and draw the circle.
 
-{{< fillin question="Find the center and radius of $x^2+y^2-2x-3=0$. Enter the center and radius, separated by a comma." answer="(1,0),2" answerDisplay="center $(1,0)$; radius $2$" hint="Complete the square for the $x$-terms." >}}
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A circle on a grid from −6 to 6 on the x-axis and −10 to 2 on the y-axis, with its center (0, −4) plotted and a radius drawn down and to the right, labelled r = 4. The circle passes through (−4, −4), (4, −4), (0, 0), and (0, −8).","xMin":-6,"xMax":6,"yMin":-10,"yMax":2,"tickLabels":true,"circles":[{"at":[0,-4],"r":4}],"segments":[{"from":[0,-4],"to":[2.4,-7.2]}],"points":[{"at":[0,-4],"label":"(0, −4)"}],"texts":[{"at":[2.5,-5.5],"text":"r = 4","anchor":"middle"}]}
+{{< /apfigure >}}
 
-{{< fillin question="Find the center and radius of $x^2+y^2-12y+11=0$. Enter the center and radius, separated by a comma." answer="(0,6),5" answerDisplay="center $(0,6)$; radius $5$" hint="Complete the square for the $y$-terms." >}}
+{{< fillin question="Find the center and radius of $x^2+y^2-2x-3=0$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(1,0),2" answerForm="decimal" answerDisplay="center $(1,0)$; radius $2$" hint="Complete the square for the $x$-terms." >}}
+
+{{< fillin question="Find the center and radius of $x^2+y^2-12y+11=0$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(0,6),5" answerForm="decimal" answerDisplay="center $(0,6)$; radius $5$" hint="Complete the square for the $y$-terms." >}}
 
 ## Key terms
 
@@ -434,34 +474,34 @@ circle** is $x^2+y^2+ax+by+c=0$.
 
 ### Use the Distance Formula
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(2,0)$ and $(5,4)$." answer="5" answerDisplay="$5$" hint="Substitute the two points into $d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(2,0)$ and $(5,4)$." answer="5" answerForm="decimal" answerDisplay="$5$" hint="Substitute the two points into $d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$." >}}
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(-3,-5)$ and $(0,1)$. Enter the exact, simplified-radical form." answer="3\sqrt{5}" answerForm="simplified-radical" answerDisplay="$3\sqrt5\approx6.7$" hint="Simplify the radicand $9+36$, then pull out the largest perfect-square factor." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(-3,-5)$ and $(0,1)$. Enter the exact, simplified-radical form." answer="3\sqrt{5}" answerForm="simplified-radical" answerDisplay="$3\sqrt5\approx6.7$" hint="Substitute the two points into the Distance Formula, then simplify the radical." >}}
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(3,-1)$ and $(1,7)$. Round the decimal approximation to the nearest tenth." answer="8.2" answerForm="decimal" answerDisplay="$\approx8.2$" hint="Find the exact distance, $\sqrt{68}$, then convert it to a decimal rounded to the nearest tenth." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(3,-1)$ and $(1,7)$. Enter the decimal approximation, rounded to the nearest tenth." answer="8.2" answerForm="decimal" answerDisplay="$\approx8.2$" hint="Find the exact distance with the Distance Formula, then round it to the nearest tenth." >}}
 
 ### Use the Midpoint Formula
 
-{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(0,-5)$ and $(4,-3)$." answer="(2,-4)" answerDisplay="$(2,-4)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(0,-5)$ and $(4,-3)$." answer="(2,-4)" answerForm="decimal" answerDisplay="$(2,-4)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
 
-{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(3,-1)$ and $(4,-2)$." answer="(3.5,-1.5)" answerDisplay="$(3\tfrac{1}{2},-1\tfrac{1}{2})$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(3,-1)$ and $(4,-2)$." answer="(3.5,-1.5)" answerForm="lowest-terms" answerDisplay="$(3\tfrac{1}{2},-1\tfrac{1}{2})$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
 
 ### Write the Equation of a Circle in Standard Form
 
 {{< fillin question="Write the standard form of the equation of the circle with radius $7$ and center $(0,0)$." answer="x^2+y^2=49" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=49$" hint="Use $(x-h)^2+(y-k)^2=r^2$ with $h=k=0$." >}}
 
-{{< fillin question="Write the standard form of the equation of the circle with radius $\sqrt{2}$ and center $(0,0)$." answer="x^2+y^2=2" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=2$" hint="Substitute $r=\sqrt2$ into $(x-h)^2+(y-k)^2=r^2$ and simplify $(\sqrt2)^2$." >}}
+{{< fillin question="Write the standard form of the equation of the circle with radius $\sqrt{2}$ and center $(0,0)$." answer="x^2+y^2=2" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=2$" hint="Use $(x-h)^2+(y-k)^2=r^2$ with $h=k=0$, and simplify $r^2$." >}}
 
 {{< fillin question="Write the standard form of the equation of the circle with center $(3,-2)$ that also contains the point $(3,6)$." answer="(x-3)^2+(y+2)^2=64" answerForm="circle-standard-form" answerDisplay="$(x-3)^2+(y+2)^2=64$" hint="First use the Distance Formula to find the radius from the center to the given point." >}}
 
 ### Graph a Circle
 
-{{< fillin question="Find the center and radius of $x^2+y^2=64$. Enter the center as an ordered pair and then the radius, separated by a comma." answer="(0,0),8" answerDisplay="center $(0,0)$; radius $8$" hint="Rewrite as $(x-0)^2+(y-0)^2=8^2$ to read off the center and radius." >}}
+{{< fillin question="Find the center and radius of $x^2+y^2=64$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(0,0),8" answerForm="decimal" answerDisplay="center $(0,0)$; radius $8$" hint="Write the equation in the form $(x-h)^2+(y-k)^2=r^2$ and read off $h$, $k$, and $r$." >}}
 
-{{< fillin question="Find the center and radius of $x^2+y^2+6y+5=0$. Enter the center as an ordered pair and then the radius, separated by a comma." answer="(0,-3),2" answerDisplay="center $(0,-3)$; radius $2$" hint="Group the $y$-terms and complete the square; there is no $x$-term, so $h=0$." >}}
+{{< fillin question="Find the center and radius of $x^2+y^2+6y+5=0$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(0,-3),2" answerForm="decimal" answerDisplay="center $(0,-3)$; radius $2$" hint="Group the $y$-terms and complete the square, then compare with $(x-h)^2+(y-k)^2=r^2$." >}}
 
-{{< fillin question="Find the center and radius of $x^2+y^2-4x+10y-7=0$. Enter the center as an ordered pair and then the radius, separated by a comma." answer="(2,-5),6" answerDisplay="center $(2,-5)$; radius $6$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
+{{< fillin question="Find the center and radius of $x^2+y^2-4x+10y-7=0$. Enter the center as an ordered pair first, then the radius, separated by a comma." answer="(2,-5),6" answerForm="decimal" answerDisplay="center $(2,-5)$; radius $6$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 11.1](https://openstax.org/books/intermediate-algebra-2e/pages/11-1-distance-and-midpoint-formulas-circles) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz and media links and complex source figures; converted Try It exercises into interactive questions, described essential graphing actions in text, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 11.1](https://openstax.org/books/intermediate-algebra-2e/pages/11-1-distance-and-midpoint-formulas-circles) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz, the media links, the double-cone figures, the graphic comparing the two formulas, and the repeated circle diagram beside the standard-form box; wrote the solution tables' equation images as math; redrew the worked examples' graphs, the two distance right-triangle diagrams, and the circle diagram as accessible figures, drawing the radius of the circles in Examples 11.9–11.11 in a different direction than the source; converted Try It exercises into interactive questions that ask for the distance, midpoint, equation, or center and radius, leaving out their plotting and graphing parts; and adapted selected end-of-section exercises into an interactive Practice block.</small>

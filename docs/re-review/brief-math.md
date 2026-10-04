@@ -359,7 +359,14 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      directly above that works the SAME numbers prints the key; an MC
      option or another item's stem that states this item's answer; a
      figure whose label or drawn result is the key sitting above its
-     question.
+     question. A printed expansion with its letters renamed is the same
+     key: the $(a+b)^5$ row of a pattern table prints "expand $(x+y)^5$",
+     Example $(x+y)^6$ prints "expand $(m+n)^6$" and "the third term of
+     $(x+y)^6$". An MC whose correct option prints the next item's key
+     ("write in standard form" options above "what is the vertex?") leaks
+     it: make the MC a fill-in under the shape's token so the key exists
+     only in the learner's own entry *(Intermediate Algebra chapters 11–12,
+     October 4, 2026; each was found by the blind solve, not the fixers)*.
    - **duplicate asks:** two items on the page with the same numbers, or a
      reworded re-ask → replace the author item with a distinct source
      exercise from the module's exercise set (an answer-keyed one; see the
@@ -392,6 +399,15 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
    the label so all three agree; a figure you cannot make correct → needs
    parent. Keep geometry analytic and legible (no overlaps, text inside
    the viewBox, dark-mode safe: `currentColor`, no hard black fills).
+   A page whose footer says it omitted or described the source's figures
+   in words restores each worked example's graph and the concept figures
+   the prose explains, as `apfigure`s on the source window — never a Try
+   It's or exercise's answer graph (Intermediate Algebra 9.8 and 10.1–10.2,
+   October 3, 2026; chapter 11's five pages, 77 figures, October 4, 2026).
+   The parent then runs an Opus figure checker over every fixer-drawn
+   figure: on chapter 11 the checkers made 35 legibility fixes (arrowheads
+   on arrowheads, strokes through tick digits, labels on ink) and found no
+   math errors.
 5. The footer `Changes:` clause: counts from a tally of the page, claims
    true; never where a correction is logged or who it was reported to.
 6. After your edits, re-check every edited item's neighbours for new

@@ -78,27 +78,29 @@ To find the values of a sequence, we substitute in the counting numbers in order
 **Solution.** We substitute the values 1, 2, 3, 4, and 5 into the formula, $a_n=4n-3$, in order.
 
 $$
-\begin{array}{rclcrclcrcl}
-a_1&=&4\cdot1-3=1, &
-a_2&=&4\cdot2-3=5, &
-a_3&=&4\cdot3-3=9,\\[4pt]
-a_4&=&4\cdot4-3=13, &
-a_5&=&4\cdot5-3=17.
+\begin{array}{lll}
+a_1=4\cdot1-3=1, &
+a_2=4\cdot2-3=5, &
+a_3=4\cdot3-3=9,\\[4pt]
+a_4=4\cdot4-3=13, &
+a_5=4\cdot5-3=17. &
 \end{array}
 $$
 
 The first five terms of the sequence are 1, 5, 9, 13, and 17.
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=3n-4$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=3n-4$. Enter the terms in order, separated by commas."
   answer="-1,2,5,8,11"
+  answerForm="decimal"
   answerDisplay="$-1,2,5,8,11$"
   hint="Substitute $n=1,2,3,4,5$ into $3n-4$."
 >}}
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=2n-5$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=2n-5$. Enter the terms in order, separated by commas."
   answer="-3,-1,1,3,5"
+  answerForm="decimal"
   answerDisplay="$-3,-1,1,3,5$"
   hint="Substitute $n=1,2,3,4,5$ into $2n-5$."
 >}}
@@ -110,27 +112,29 @@ For some sequences, the variable is an exponent.
 **Solution.** We substitute the values 1, 2, 3, 4, and 5 into the formula, $a_n=2^n+1$, in order.
 
 $$
-\begin{array}{rclcrclcrcl}
-a_1&=&2^1+1=3, &
-a_2&=&2^2+1=5, &
-a_3&=&2^3+1=9,\\[4pt]
-a_4&=&2^4+1=17, &
-a_5&=&2^5+1=33.
+\begin{array}{lll}
+a_1=2^1+1=3, &
+a_2=2^2+1=5, &
+a_3=2^3+1=9,\\[4pt]
+a_4=2^4+1=17, &
+a_5=2^5+1=33. &
 \end{array}
 $$
 
 The first five terms of the sequence are 3, 5, 9, 17, and 33.
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=3^n+4$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=3^n+4$. Enter the terms in order, separated by commas."
   answer="7,13,31,85,247"
+  answerForm="decimal"
   answerDisplay="$7,13,31,85,247$"
   hint="Substitute $n=1,2,3,4,5$ into $3^n+4$."
 >}}
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=2^n-5$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=2^n-5$. Enter the terms in order, separated by commas."
   answer="-3,-1,3,11,27"
+  answerForm="decimal"
   answerDisplay="$-3,-1,3,11,27$"
   hint="Substitute $n=1,2,3,4,5$ into $2^n-5$."
 >}}
@@ -149,29 +153,31 @@ The terms in the next example will alternate signs as a result of the powers of 
 **Solution.** We substitute the values 1, 2, 3, 4, and 5 into the formula, $a_n=(-1)^n n^3$, in order.
 
 $$
-\begin{array}{rclcrclcrcl}
-a_1&=&(-1)^1 1^3=-1, &
-a_2&=&(-1)^2 2^3=8, &
-a_3&=&(-1)^3 3^3=-27,\\[4pt]
-a_4&=&(-1)^4 4^3=64, &
-a_5&=&(-1)^5 5^3=-125.
+\begin{array}{lll}
+a_1=(-1)^1\cdot1^3=-1, &
+a_2=(-1)^2\cdot2^3=8, &
+a_3=(-1)^3\cdot3^3=-27,\\[4pt]
+a_4=(-1)^4\cdot4^3=64, &
+a_5=(-1)^5\cdot5^3=-125. &
 \end{array}
 $$
 
 The first five terms of the sequence are $-1,8,-27,64,$ and $-125$.
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=(-1)^n n^2$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=(-1)^n n^2$. Enter the terms in order, separated by commas."
   answer="-1,4,-9,16,-25"
+  answerForm="decimal"
   answerDisplay="$-1,4,-9,16,-25$"
   hint="Evaluate the power of $-1$ and then $n^2$ for $n=1,2,3,4,5$."
 >}}
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=(-1)^{n+1}n^3$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=(-1)^{n+1}n^3$. Enter the terms in order, separated by commas."
   answer="1,-8,27,-64,125"
+  answerForm="decimal"
   answerDisplay="$1,-8,27,-64,125$"
-  hint="The factor $(-1)^{n+1}$ makes the first term positive and then alternates signs."
+  hint="Evaluate the power of $-1$ and then $n^3$ for $n=1,2,3,4,5$, and multiply."
 >}}
 
 ## Find a Formula for the General Term (nth Term) of a Sequence
@@ -192,17 +198,19 @@ $$
 | The numbers are all multiples of 4. | The general term of the sequence is $a_n=4n$. |
 
 {{< fillin
-  question="Find a general term for the sequence $3,6,9,12,15,\ldots$."
+  question="Find a general term for the sequence whose first five terms are shown: $3,6,9,12,15,\ldots$."
   answer="3n"
+  answerForm="single-term"
   answerDisplay="$a_n=3n$"
-  hint="Each term is a multiple of its position $n$."
+  hint="Compare each term with its position $n$: look for a multiple or a power of $n$."
 >}}
 
 {{< fillin
-  question="Find a general term for the sequence $5,10,15,20,25,\ldots$."
+  question="Find a general term for the sequence whose first five terms are shown: $5,10,15,20,25,\ldots$."
   answer="5n"
+  answerForm="single-term"
   answerDisplay="$a_n=5n$"
-  hint="Each term is a multiple of its position $n$."
+  hint="Compare each term with its position $n$: look for a multiple or a power of $n$."
 >}}
 
 **Example 12.5.** Find a general term for the sequence whose first five terms are shown.
@@ -224,17 +232,17 @@ $$
 The general term of the sequence is $a_n=(-1)^{n+1}2^n$.
 
 {{< fillin
-  question="Find a general term for the sequence $-3,9,-27,81,-243,\ldots$."
+  question="Find a general term for the sequence whose first five terms are shown: $-3,9,-27,81,-243,\ldots$."
   answer="(-1)^n3^n"
   answerDisplay="$a_n=(-1)^n3^n$"
-  hint="The absolute values are powers of 3, and the signs alternate beginning with a negative term."
+  hint="Find the pattern in the absolute values first, then choose the power of $-1$ that gives the signs."
 >}}
 
 {{< fillin
-  question="Find a general term for the sequence $1,-4,9,-16,25,\ldots$."
+  question="Find a general term for the sequence whose first five terms are shown: $1,-4,9,-16,25,\ldots$."
   answer="(-1)^{n+1}n^2"
   answerDisplay="$a_n=(-1)^{n+1}n^2$"
-  hint="The absolute values are squares, and the signs alternate beginning with a positive term."
+  hint="Find the pattern in the absolute values first, then choose the power of $-1$ that gives the signs."
 >}}
 
 **Example 12.6.** Find a general term for the sequence whose first five terms are shown.
@@ -252,17 +260,17 @@ $$
 The general term of the sequence is $a_n=\tfrac1{3^n}$.
 
 {{< fillin
-  question="Find a general term for the sequence $\tfrac12,\tfrac14,\tfrac18,\tfrac1{16},\tfrac1{32},\ldots$."
+  question="Find a general term for the sequence whose first five terms are shown: $\tfrac12,\tfrac14,\tfrac18,\tfrac1{16},\tfrac1{32},\ldots$."
   answer="\frac{1}{2^n}"
   answerDisplay="$a_n=\tfrac1{2^n}$"
-  hint="The numerators are 1 and the denominators are powers of 2."
+  hint="Look at the numerators and the denominators separately, and write each denominator as a power."
 >}}
 
 {{< fillin
-  question="Find a general term for the sequence $1,\tfrac14,\tfrac19,\tfrac1{16},\tfrac1{25},\ldots$."
+  question="Find a general term for the sequence whose first five terms are shown: $1,\tfrac14,\tfrac19,\tfrac1{16},\tfrac1{25},\ldots$."
   answer="\frac{1}{n^2}"
   answerDisplay="$a_n=\tfrac1{n^2}$"
-  hint="The denominators are the squares of the counting numbers."
+  hint="Write the first term as a fraction with numerator 1, then compare each denominator with its position $n$."
 >}}
 
 ## Use Factorial Notation
@@ -308,15 +316,17 @@ $$
 The first five terms of the sequence are $1,\tfrac12,\tfrac16,\tfrac1{24},\tfrac1{120}$.
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac2{n!}$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac2{n!}$. Enter the terms in order, separated by commas."
   answer="2,1,\frac{1}{3},\frac{1}{12},\frac{1}{60}"
+  answerForm="lowest-terms"
   answerDisplay="$2,1,\tfrac13,\tfrac1{12},\tfrac1{60}$"
   hint="Evaluate $2/n!$ for $n=1,2,3,4,5$."
 >}}
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac3{n!}$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac3{n!}$. Enter the terms in order, separated by commas."
   answer="3,\frac{3}{2},\frac{1}{2},\frac{1}{8},\frac{1}{40}"
+  answerForm="lowest-terms"
   answerDisplay="$3,\tfrac32,\tfrac12,\tfrac18,\tfrac1{40}$"
   hint="Evaluate $3/n!$ for $n=1,2,3,4,5$."
 >}}
@@ -348,15 +358,17 @@ $$
 The first five terms of the sequence are 2, 6, 12, 20, and 30.
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac{(n-1)!}{(n+1)!}$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac{(n-1)!}{(n+1)!}$. Enter the terms in order, separated by commas."
   answer="\frac{1}{2},\frac{1}{6},\frac{1}{12},\frac{1}{20},\frac{1}{30}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac12,\tfrac16,\tfrac1{12},\tfrac1{20},\tfrac1{30}$"
   hint="Expand enough factorial factors to cancel common factors."
 >}}
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac{n!}{(n+1)!}$. Enter the terms separated by commas."
+  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac{n!}{(n+1)!}$. Enter the terms in order, separated by commas."
   answer="\frac{1}{2},\frac{1}{3},\frac{1}{4},\frac{1}{5},\frac{1}{6}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac12,\tfrac13,\tfrac14,\tfrac15,\tfrac16$"
   hint="Since $(n+1)!=(n+1)n!$, simplify the general term first."
 >}}
@@ -432,7 +444,7 @@ Therefore, $\sum_{k=0}^{3}\tfrac1{k!}=\tfrac83$.
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{k=0}^{3}\tfrac2{k!}$."
   answer="\frac{16}{3}"
-  answerForm="fraction lowest-terms"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{16}{3}$"
   hint="Substitute $k=0,1,2,3$ and remember that $0!=1$."
 >}}
@@ -472,7 +484,7 @@ $$
   answer="\sum_{n=1}^{5}\frac{1}{2^n}"
   answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}\tfrac1{2^n}$"
-  hint="The denominators are powers of 2 for $n=1$ through $n=5$."
+  hint="Find a general term for the terms, as for a sequence, then write the sum with the index running over the terms' positions."
 >}}
 
 {{< fillin
@@ -480,7 +492,7 @@ $$
   answer="\sum_{n=1}^{5}\frac{1}{n^2}"
   answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}\tfrac1{n^2}$"
-  hint="The denominators are the squares of the counting numbers from 1 through 5."
+  hint="Find a general term for the terms, as for a sequence, then write the sum with the index running over the terms' positions."
 >}}
 
 When the terms of a sum have negative coefficients, we must carefully analyze the pattern of the signs.
@@ -512,7 +524,7 @@ $$
   answer="\sum_{n=1}^{5}(-1)^{n+1}n^2"
   answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}(-1)^{n+1}n^2$"
-  hint="The absolute values are squares, and the signs alternate beginning with a positive term."
+  hint="Find the pattern in the absolute values, then choose the power of $-1$ that gives the signs."
 >}}
 
 {{< fillin
@@ -520,12 +532,20 @@ $$
   answer="\sum_{n=1}^{5}(-1)^n2n"
   answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}(-1)^n2n$"
-  hint="The absolute values are twice the counting numbers, and the signs alternate beginning with a negative term."
+  hint="Find the pattern in the absolute values, then choose the power of $-1$ that gives the signs."
 >}}
 
 ## Key terms
 
-factorial notation, finite sequence, general term, index of summation, infinite sequence, partial sum, sequence, summation notation, term.
+A **sequence** is a function whose domain is the counting numbers. A sequence
+whose domain is all counting numbers is an **infinite sequence**; a sequence
+whose domain is limited to a finite number of counting numbers is a **finite
+sequence**. The **general term of a sequence** is the formula for writing its
+$n$th term; the $n$th term, $a_n$, is the term in the $n$th position. In
+**factorial notation**, $n!=n(n-1)(n-2)\cdots(3)(2)(1)$ for a positive integer
+$n$, and $0!=1$. **Summation notation** writes the sum of the first $n$ terms
+as $\sum_{i=1}^{n}a_i$, where $i$ is the **index of summation**. When we add a
+finite number of terms of a sequence, we call the sum a **partial sum**.
 
 ## Practice
 
@@ -534,6 +554,7 @@ factorial notation, finite sequence, general term, index of summation, infinite 
 {{< fillin
   question="Write the first five terms of the sequence whose general term is $a_n=2n-7$. Enter the terms in order, separated by commas."
   answer="-5,-3,-1,1,3"
+  answerForm="decimal"
   answerDisplay="$-5,-3,-1,1,3$"
   hint="Substitute $n=1,2,3,4,5$ into $2n-7$."
 >}}
@@ -541,15 +562,17 @@ factorial notation, finite sequence, general term, index of summation, infinite 
 {{< fillin
   question="Write the first five terms of the sequence whose general term is $a_n=2^n+3$. Enter the terms in order, separated by commas."
   answer="5,7,11,19,35"
+  answerForm="decimal"
   answerDisplay="$5,7,11,19,35$"
   hint="Substitute $n=1,2,3,4,5$ into $2^n+3$."
 >}}
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=(-1)^n\cdot2n$. Enter the terms in order, separated by commas."
-  answer="-2,4,-6,8,-10"
-  answerDisplay="$-2,4,-6,8,-10$"
-  hint="The factor $(-1)^n$ makes the first term negative and then alternates signs."
+  question="Write the first five terms of the sequence whose general term is $a_n=3^n-2n$. Enter the terms in order, separated by commas."
+  answer="1,5,21,73,233"
+  answerForm="decimal"
+  answerDisplay="$1,5,21,73,233$"
+  hint="Substitute $n=1,2,3,4,5$ into $3^n-2n$, evaluating the power before you subtract."
 >}}
 
 ### Find a formula for the general term (nth term) of a sequence
@@ -557,22 +580,23 @@ factorial notation, finite sequence, general term, index of summation, infinite 
 {{< fillin
   question="Find a general term for the sequence whose first five terms are shown: $6,7,8,9,10,\ldots$."
   answer="n+5"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a_n=n+5$"
-  hint="Each term is 5 more than its position $n$."
+  hint="Compare each term with its position $n$: look for a multiple, a power, or a constant difference from $n$."
 >}}
 
 {{< fillin
   question="Find a general term for the sequence whose first five terms are shown: $e^3,e^4,e^5,e^6,e^7,\ldots$."
   answer="e^{n+2}"
   answerDisplay="$a_n=e^{n+2}$"
-  hint="The exponent is always 2 more than the position $n$."
+  hint="Compare each exponent with the term's position $n$."
 >}}
 
 {{< fillin
   question="Find a general term for the sequence whose first five terms are shown: $-\tfrac52,-\tfrac54,-\tfrac58,-\tfrac{5}{16},-\tfrac{5}{32},\ldots$."
   answer="-\frac{5}{2^n}"
   answerDisplay="$a_n=-\tfrac{5}{2^n}$"
-  hint="The numerators are all $-5$, and the denominators are powers of 2."
+  hint="Look at the sign, the numerators, and the denominators separately, and write each denominator as a power."
 >}}
 
 ### Use factorial notation
@@ -580,6 +604,7 @@ factorial notation, finite sequence, general term, index of summation, infinite 
 {{< fillin
   question="Using factorial notation, write the first five terms of the sequence whose general term is $a_n=\tfrac{4}{n!}$. Enter the terms in order, separated by commas."
   answer="4,2,\frac{2}{3},\frac{1}{6},\frac{1}{30}"
+  answerForm="lowest-terms"
   answerDisplay="$4,2,\tfrac23,\tfrac16,\tfrac1{30}$"
   hint="Evaluate $4/n!$ for $n=1,2,3,4,5$."
 >}}
@@ -587,13 +612,15 @@ factorial notation, finite sequence, general term, index of summation, infinite 
 {{< fillin
   question="Using factorial notation, write the first five terms of the sequence whose general term is $a_n=3n!$. Enter the terms in order, separated by commas."
   answer="3,6,18,72,360"
+  answerForm="decimal"
   answerDisplay="$3,6,18,72,360$"
-  hint="Evaluate $3\cdot n!$ for $n=1,2,3,4,5$."
+  hint="The factorial applies only to the $n$ directly before the $!$; evaluate for $n=1,2,3,4,5$."
 >}}
 
 {{< fillin
   question="Using factorial notation, write the first five terms of the sequence whose general term is $a_n=(2n)!$. Enter the terms in order, separated by commas."
   answer="2,24,720,40320,3628800"
+  answerForm="decimal"
   answerDisplay="$2,24,720,40{,}320,3{,}628{,}800$"
   hint="Substitute $n=1,2,3,4,5$ so the argument of the factorial is $2n$, then expand each factorial."
 >}}
@@ -619,45 +646,36 @@ factorial notation, finite sequence, general term, index of summation, infinite 
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{n=1}^{5}\tfrac{n}{n+1}$."
   answer="\frac{71}{20}"
-  answerForm="fraction lowest-terms"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{71}{20}$"
   hint="Substitute $n=1,2,3,4,5$, then add the five fractions using a common denominator."
 >}}
 
 ### Use summation notation to write a sum
 
-{{< multiplechoice
+{{< fillin
   question="Write the sum using summation notation: $1+\tfrac18+\tfrac1{27}+\tfrac1{64}+\tfrac1{125}$."
-  answer="$\sum_{n=1}^{5}\tfrac{1}{n^3}$"
-  hint="The numerators are all one, and the denominators are cubes of the counting numbers from one to five."
+  answer="\sum_{n=1}^{5}\frac{1}{n^3}"
+  answerForm="summation"
+  answerDisplay="$\sum_{n=1}^{5}\tfrac{1}{n^3}$"
+  hint="Find a general term for the terms, as for a sequence, then count the terms to set the bounds."
 >}}
-$\sum_{n=1}^{5}\tfrac{1}{n^2}$
-$\sum_{n=1}^{5}\tfrac{1}{n^3}$
-$\sum_{n=1}^{4}\tfrac{1}{n^3}$
-$\sum_{n=1}^{5}\tfrac{1}{3^n}$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Write the sum using summation notation: $14+16+18+20+22+24+26$."
-  answer="$\sum_{n=1}^{7}(2n+12)$"
-  hint="The terms increase by 2 each time; check what constant makes $2n+12$ equal 14 when $n=1$."
+{{< fillin
+  question="Write the sum using summation notation: $14+16+18+20+22+24+26$. Put the general term in parentheses."
+  answer="\sum_{n=1}^{7}(2n+12)"
+  answerForm="summation"
+  answerDisplay="$\sum_{n=1}^{7}(2n+12)$"
+  hint="Find a general term for the terms, as for a sequence, then count the terms to set the bounds and check the first term."
 >}}
-$\sum_{n=0}^{6}(2n+12)$
-$\sum_{n=1}^{7}(2n+12)$
-$\sum_{n=1}^{6}(2n+12)$
-$\sum_{n=1}^{7}(2n+10)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Write the sum using summation notation: $-2+4-6+8-10+\cdots+20$."
-  answer="$\sum_{n=1}^{10}(-1)^n2n$"
-  hint="The absolute values are twice the counting numbers up to 10, and the signs alternate beginning with a negative term."
+{{< fillin
+  question="Write the sum using summation notation: $3-6+9-12+15$."
+  answer="\sum_{n=1}^{5}(-1)^{n+1}3n"
+  answerForm="summation"
+  answerDisplay="$\sum_{n=1}^{5}(-1)^{n+1}3n$"
+  hint="Find the pattern in the absolute values, then choose the power of $-1$ that gives the signs."
 >}}
-$\sum_{n=1}^{9}(-1)^n2n$
-$\sum_{n=1}^{10}(-1)^nn$
-$\sum_{n=1}^{10}(-1)^{n+1}2n$
-$\sum_{n=1}^{10}(-1)^n2n$
-{{< /multiplechoice >}}
 
 <small>
 Adapted from [Intermediate Algebra 2e, Section 12.1: Sequences](https://openstax.org/books/intermediate-algebra-2e/pages/12-1-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: omitted the “Be Prepared” readiness exercises and external media link; converted “Try It” exercises to interactive checks, adapted formatting for the web, and adapted selected end-of-section exercises into an interactive Practice block.

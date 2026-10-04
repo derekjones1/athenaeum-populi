@@ -113,19 +113,19 @@ The sequence is arithmetic. The common difference is $d=-7$.
 Determine whether each sequence is arithmetic. If so, indicate the common
 difference.
 
-{{< multiplechoice question="For $9,20,31,42,53,64,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=11$." hint="Subtract each term from the term that follows it." >}}
+{{< multiplechoice question="For $9,20,31,42,53,64,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=11$." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
 The sequence is not arithmetic.
 The sequence is arithmetic with common difference $d=11$.
 The sequence is arithmetic with common difference $d=9$.
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="For $12,6,0,-6,-12,-18,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=-6$." hint="Subtract each term from the term that follows it." >}}
+{{< multiplechoice question="For $12,6,0,-6,-12,-18,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=-6$." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
 The sequence is arithmetic with common difference $d=-6$.
 The sequence is not arithmetic.
 The sequence is arithmetic with common difference $d=6$.
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="For $7,1,10,4,13,7,\ldots$, which statement is correct?" answer="The sequence is not arithmetic." hint="Compare all the consecutive differences." >}}
+{{< multiplechoice question="For $7,1,10,4,13,7,\ldots$, which statement is correct?" answer="The sequence is not arithmetic." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
 The sequence is arithmetic with common difference $d=9$.
 The sequence is not arithmetic.
 The sequence is arithmetic with common difference $d=-6$.
@@ -133,19 +133,19 @@ The sequence is arithmetic with common difference $d=-6$.
 
 Apply the same test to each sequence in the next set.
 
-{{< multiplechoice question="For $-4,4,2,10,8,16,\ldots$, which statement is correct?" answer="The sequence is not arithmetic." hint="Compare all the consecutive differences." >}}
+{{< multiplechoice question="For $-4,4,2,10,8,16,\ldots$, which statement is correct?" answer="The sequence is not arithmetic." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
 The sequence is arithmetic with common difference $d=-2$.
 The sequence is arithmetic with common difference $d=8$.
 The sequence is not arithmetic.
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="For $-3,-1,1,3,5,7,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=2$." hint="Subtract each term from the term that follows it." >}}
+{{< multiplechoice question="For $-3,-1,1,3,5,7,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=2$." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
 The sequence is not arithmetic.
 The sequence is arithmetic with common difference $d=2$.
 The sequence is arithmetic with common difference $d=-2$.
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="For $7,2,-3,-8,-13,-18,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=-5$." hint="Subtract each term from the term that follows it." >}}
+{{< multiplechoice question="For $7,2,-3,-8,-13,-18,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=-5$." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
 The sequence is arithmetic with common difference $d=5$.
 The sequence is arithmetic with common difference $d=-5$.
 The sequence is not arithmetic.
@@ -172,9 +172,9 @@ $$
 
 The sequence is $5,-1,-7,-13,-19,\ldots$.
 
-{{< fillin question="Write the first five terms of the sequence where the first term is $7$ and the common difference is $d=-4$. Enter the terms separated by commas." answer="7,3,-1,-5,-9" answerDisplay="$7,3,-1,-5,-9$" hint="Start with $7$ and repeatedly add the common difference." >}}
+{{< fillin question="Write the first five terms of the sequence where the first term is $7$ and the common difference is $d=-4$. Enter the terms in order, separated by commas." answer="7,3,-1,-5,-9" answerForm="decimal" answerDisplay="$7,3,-1,-5,-9$" hint="Start with $7$ and repeatedly add the common difference." >}}
 
-{{< fillin question="Write the first five terms of the sequence where the first term is $11$ and the common difference is $d=-8$. Enter the terms separated by commas." answer="11,3,-5,-13,-21" answerDisplay="$11,3,-5,-13,-21$" hint="Start with $11$ and repeatedly add the common difference." >}}
+{{< fillin question="Write the first five terms of the sequence where the first term is $11$ and the common difference is $d=-8$. Enter the terms in order, separated by commas." answer="11,3,-5,-13,-21" answerForm="decimal" answerDisplay="$11,3,-5,-13,-21$" hint="Start with $11$ and repeatedly add the common difference." >}}
 
 ## Find the General Term ($n$th Term) of an Arithmetic Sequence
 
@@ -189,10 +189,10 @@ As we look for a pattern we see that each term starts with $a_1$:
 $$
 \begin{array}{rcl}
 a_1&=&a_1\\[4pt]
-a_2&=&a_1+d\\[4pt]
-a_3&=&a_1+2d\\[4pt]
-a_4&=&a_1+3d\\[4pt]
-a_5&=&a_1+4d.
+a_2&=&a_1+1d\\[4pt]
+a_3&=&a_2+d=a_1+d+d=a_1+2d\\[4pt]
+a_4&=&a_3+d=a_1+2d+d=a_1+3d\\[4pt]
+a_5&=&a_4+d=a_1+3d+d=a_1+4d.
 \end{array}
 $$
 
@@ -230,9 +230,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the twenty-seventh term of a sequence where the first term is $7$ and the common difference is $9$." answer="241" answerDisplay="$241$" hint="Use $a_n=a_1+(n-1)d$." >}}
+{{< fillin question="Find the twenty-seventh term of a sequence where the first term is $7$ and the common difference is $9$." answer="241" answerForm="decimal" answerDisplay="$241$" hint="Use $a_n=a_1+(n-1)d$." >}}
 
-{{< fillin question="Find the eighteenth term of a sequence where the first term is $13$ and the common difference is $-7$." answer="-106" answerDisplay="$-106$" hint="Use $a_n=a_1+(n-1)d$." >}}
+{{< fillin question="Find the eighteenth term of a sequence where the first term is $13$ and the common difference is $-7$." answer="-106" answerForm="decimal" answerDisplay="$-106$" hint="Use $a_n=a_1+(n-1)d$." >}}
 
 Sometimes we do not know the first term and we must use other given information
 to find it before we find the requested term.
@@ -281,15 +281,15 @@ $$
 
 The general term is $a_n=-2n+24$.
 
-{{< fillin question="Find the eleventh term of a sequence where the ninth term is $8$ and the common difference is $-3$." answer="2" answerDisplay="$a_{11}=2$" hint="First use the ninth term to find $a_1$, then find $a_{11}$." >}}
+{{< fillin question="Find the eleventh term of a sequence where the ninth term is $8$ and the common difference is $-3$." answer="2" answerForm="decimal" answerDisplay="$a_{11}=2$" hint="First use the ninth term to find $a_1$, then find $a_{11}$." >}}
 
-{{< fillin question="For the sequence where the ninth term is $8$ and the common difference is $-3$, give the formula for the general term." answer="-3n+35" answerDisplay="$a_n=-3n+35$" hint="Find $a_1$ from $a_9=a_1+8d$, then use the general-term formula." >}}
+{{< fillin question="For the sequence where the ninth term is $8$ and the common difference is $-3$, give the formula for the general term." answer="-3n+35" answerForm="expanded distributed no-like-terms" answerDisplay="$a_n=-3n+35$" hint="Substitute the known term into $a_n=a_1+(n-1)d$ to find $a_1$, then use the general-term formula." >}}
 
 Now use the same process with a different known term and common difference.
 
-{{< fillin question="Find the nineteenth term of a sequence where the fifth term is $1$ and the common difference is $-4$." answer="-55" answerDisplay="$a_{19}=-55$" hint="First use the fifth term to find $a_1$, then find $a_{19}$." >}}
+{{< fillin question="Find the nineteenth term of a sequence where the fifth term is $1$ and the common difference is $-4$." answer="-55" answerForm="decimal" answerDisplay="$a_{19}=-55$" hint="First use the fifth term to find $a_1$, then find $a_{19}$." >}}
 
-{{< fillin question="For the sequence where the fifth term is $1$ and the common difference is $-4$, give the formula for the general term." answer="-4n+21" answerDisplay="$a_n=-4n+21$" hint="Find $a_1$ from $a_5=a_1+4d$, then use the general-term formula." >}}
+{{< fillin question="For the sequence where the fifth term is $1$ and the common difference is $-4$, give the formula for the general term." answer="-4n+21" answerForm="expanded distributed no-like-terms" answerDisplay="$a_n=-4n+21$" hint="Substitute the known term into $a_n=a_1+(n-1)d$ to find $a_1$, then use the general-term formula." >}}
 
 Sometimes the information given leads us to two equations in two unknowns. We
 then use our methods for solving systems of equations to find the values
@@ -362,19 +362,19 @@ $$
 The first term is $a_1=7$. The common difference is $d=3$. The general term
 of the sequence is $a_n=3n+4$.
 
-{{< fillin question="For a sequence where the fourth term is $17$ and the thirteenth term is $53$, find the first term." answer="5" answerDisplay="$a_1=5$" hint="Form two equations from $a_n=a_1+(n-1)d$ and eliminate $a_1$." >}}
+{{< fillin question="For a sequence where the fourth term is $17$ and the thirteenth term is $53$, find the first term." answer="5" answerForm="decimal" answerDisplay="$a_1=5$" hint="Form two equations from $a_n=a_1+(n-1)d$, solve them for $d$, then substitute back to find $a_1$." >}}
 
-{{< fillin question="For a sequence where the fourth term is $17$ and the thirteenth term is $53$, find the common difference." answer="4" answerDisplay="$d=4$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
+{{< fillin question="For a sequence where the fourth term is $17$ and the thirteenth term is $53$, find the common difference." answer="4" answerForm="decimal" answerDisplay="$d=4$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
 
-{{< fillin question="For a sequence where the fourth term is $17$ and the thirteenth term is $53$, give the formula for the general term." answer="4n+1" answerDisplay="$a_n=4n+1$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
+{{< fillin question="For a sequence where the fourth term is $17$ and the thirteenth term is $53$, give the formula for the general term." answer="4n+1" answerForm="expanded distributed no-like-terms" answerDisplay="$a_n=4n+1$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
 
 Repeat the process for another pair of known terms.
 
-{{< fillin question="For a sequence where the third term is $2$ and the twelfth term is $-25$, find the first term." answer="8" answerDisplay="$a_1=8$" hint="Form two equations from $a_n=a_1+(n-1)d$ and eliminate $a_1$." >}}
+{{< fillin question="For a sequence where the third term is $2$ and the twelfth term is $-25$, find the first term." answer="8" answerForm="decimal" answerDisplay="$a_1=8$" hint="Form two equations from $a_n=a_1+(n-1)d$, solve them for $d$, then substitute back to find $a_1$." >}}
 
-{{< fillin question="For a sequence where the third term is $2$ and the twelfth term is $-25$, find the common difference." answer="-3" answerDisplay="$d=-3$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
+{{< fillin question="For a sequence where the third term is $2$ and the twelfth term is $-25$, find the common difference." answer="-3" answerForm="decimal" answerDisplay="$d=-3$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
 
-{{< fillin question="For a sequence where the third term is $2$ and the twelfth term is $-25$, give the formula for the general term." answer="-3n+11" answerDisplay="$a_n=-3n+11$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
+{{< fillin question="For a sequence where the third term is $2$ and the twelfth term is $-25$, give the formula for the general term." answer="-3n+11" answerForm="expanded distributed no-like-terms" answerDisplay="$a_n=-3n+11$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
 
 ## Find the Sum of the First $n$ Terms of an Arithmetic Sequence
 
@@ -455,9 +455,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $5,9,13,17,21,\ldots$." answer="1890" answerDisplay="$1{,}890$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
+{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $5,9,13,17,21,\ldots$." answer="1890" answerForm="decimal" answerDisplay="$1{,}890$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
 
-{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $7,10,13,16,19,\ldots$." answer="1515" answerDisplay="$1{,}515$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
+{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $7,10,13,16,19,\ldots$." answer="1515" answerForm="decimal" answerDisplay="$1{,}515$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
 
 In the next example, we are given the general term for the sequence and are
 asked to find the sum of the first 50 terms.
@@ -483,9 +483,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=2n-5$." answer="2300" answerDisplay="$2{,}300$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
+{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=2n-5$." answer="2300" answerForm="decimal" answerDisplay="$2{,}300$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
 
-{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=4n+3$." answer="5250" answerDisplay="$5{,}250$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
+{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=4n+3$." answer="5250" answerForm="decimal" answerDisplay="$5{,}250$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
 
 In the next example we are given the sum in summation notation. To add all the
 terms would be tedious, so we extract the information needed to use the
@@ -536,50 +536,53 @@ the **common difference**.
 
 ### Determine if a sequence is arithmetic
 
-{{< multiplechoice question="Determine whether the sequence $4,12,20,28,36,44,\ldots$ is arithmetic." answer="Arithmetic" hint="Subtract each term from the term that follows it and compare the differences." >}}
-Not arithmetic
-Arithmetic
+{{< multiplechoice question="Determine whether the sequence $4,12,20,28,36,44,\ldots$ is arithmetic, and if so, indicate the common difference." answer="The sequence is arithmetic with common difference $d=8$." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
+The sequence is arithmetic with common difference $d=-8$.
+The sequence is not arithmetic.
+The sequence is arithmetic with common difference $d=8$.
 {{< /multiplechoice >}}
 
-{{< fillin question="The sequence $4,12,20,28,36,44,\ldots$ is arithmetic. Find its common difference $d$." answer="8" answerDisplay="$d=8$" hint="Subtract any term from the term that follows it." >}}
-
-{{< multiplechoice question="Determine whether the sequence $-15,-16,3,12,21,30,\ldots$ is arithmetic." answer="Not arithmetic" hint="Compare all the consecutive differences." >}}
-Not arithmetic
-Arithmetic
+{{< multiplechoice question="Determine whether the sequence $-15,-16,3,12,21,30,\ldots$ is arithmetic, and if so, indicate the common difference." answer="The sequence is not arithmetic." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
+The sequence is arithmetic with common difference $d=9$.
+The sequence is not arithmetic.
+The sequence is arithmetic with common difference $d=-1$.
 {{< /multiplechoice >}}
 
-{{< multiplechoice question="Determine whether the sequence $8,5,2,-1,-4,-7,\ldots$ is arithmetic." answer="Arithmetic" hint="Subtract each term from the term that follows it and compare the differences." >}}
-Arithmetic
-Not arithmetic
+{{< multiplechoice question="Determine whether the sequence $8,5,2,-1,-4,-7,\ldots$ is arithmetic, and if so, indicate the common difference." answer="The sequence is arithmetic with common difference $d=-3$." hint="Subtract each term from the term that follows it, and compare all the differences." >}}
+The sequence is arithmetic with common difference $d=-3$.
+The sequence is arithmetic with common difference $d=3$.
+The sequence is not arithmetic.
 {{< /multiplechoice >}}
 
-{{< fillin question="The sequence $8,5,2,-1,-4,-7,\ldots$ is arithmetic. Find its common difference $d$." answer="-3" answerDisplay="$d=-3$" hint="Subtract any term from the term that follows it." >}}
+{{< fillin question="Write the first five terms of the sequence with $a_1=11$ and $d=7$. Enter the terms in order, separated by commas." answer="11,18,25,32,39" answerForm="decimal" answerDisplay="$11,18,25,32,39$" hint="Start with the first term and repeatedly add the common difference." >}}
+
+{{< fillin question="Write the first five terms of the sequence with $a_1=14$ and $d=-9$. Enter the terms in order, separated by commas." answer="14,5,-4,-13,-22" answerForm="decimal" answerDisplay="$14,5,-4,-13,-22$" hint="Start with the first term and repeatedly add the common difference." >}}
 
 ### Find the general term ($n$th term) of an arithmetic sequence
 
-{{< fillin question="Find the twenty-first term of a sequence where the first term is three and the common difference is eight." answer="163" answerDisplay="$a_{21}=163$" hint="Use $a_n=a_1+(n-1)d$." >}}
+{{< fillin question="Find the twenty-first term of a sequence where the first term is three and the common difference is eight." answer="163" answerForm="decimal" answerDisplay="$a_{21}=163$" hint="Use $a_n=a_1+(n-1)d$." >}}
 
-{{< fillin question="Find the sixteenth term of a sequence where the first term is $11$ and the common difference is $-6$." answer="-79" answerDisplay="$a_{16}=-79$" hint="Use $a_n=a_1+(n-1)d$." >}}
+{{< fillin question="Find the sixteenth term of a sequence where the first term is $11$ and the common difference is $-6$." answer="-79" answerForm="decimal" answerDisplay="$a_{16}=-79$" hint="Use $a_n=a_1+(n-1)d$." >}}
 
-{{< fillin question="Find the twentieth term of a sequence where the fifth term is $-4$ and the common difference is $-2$." answer="-34" answerDisplay="$a_{20}=-34$" hint="First use the fifth term to find $a_1$, then find $a_{20}$." >}}
+{{< fillin question="Find the twentieth term of a sequence where the fifth term is $-4$ and the common difference is $-2$." answer="-34" answerForm="decimal" answerDisplay="$a_{20}=-34$" hint="First use the fifth term to find $a_1$, then find $a_{20}$." >}}
 
-{{< fillin question="For the sequence where the fifth term is $-4$ and the common difference is $-2$, give the formula for the general term." answer="-2n+6" answerDisplay="$a_n=-2n+6$" hint="Find $a_1$ from $a_5=a_1+4d$, then use the general-term formula." >}}
+{{< fillin question="For the sequence where the fifth term is $-4$ and the common difference is $-2$, give the formula for the general term." answer="-2n+6" answerForm="expanded distributed no-like-terms" answerDisplay="$a_n=-2n+6$" hint="Substitute the known term into $a_n=a_1+(n-1)d$ to find $a_1$, then use the general-term formula." >}}
 
-{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, find the first term." answer="11" answerDisplay="$a_1=11$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
+{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, find the first term." answer="11" answerForm="decimal" answerDisplay="$a_1=11$" hint="Form two equations from $a_n=a_1+(n-1)d$, solve them for $d$, then substitute back to find $a_1$." >}}
 
-{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, find the common difference." answer="3" answerDisplay="$d=3$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
+{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, find the common difference." answer="3" answerForm="decimal" answerDisplay="$d=3$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
 
-{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, give the formula for the general term." answer="3n+8" answerDisplay="$a_n=3n+8$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
+{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, give the formula for the general term." answer="3n+8" answerForm="expanded distributed no-like-terms" answerDisplay="$a_n=3n+8$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
 
 ### Find the sum of the first $n$ terms of an arithmetic sequence
 
-{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $11,14,17,20,23,\ldots$." answer="1635" answerDisplay="$1{,}635$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
+{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $11,14,17,20,23,\ldots$." answer="1635" answerForm="decimal" answerDisplay="$1{,}635$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
 
-{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $-17,-15,-13,-11,-9,\ldots$." answer="360" answerDisplay="$360$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
+{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $-17,-15,-13,-11,-9,\ldots$." answer="360" answerForm="decimal" answerDisplay="$360$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
 
-{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=5n-1$." answer="6325" answerDisplay="$6{,}325$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
+{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=5n-1$." answer="6325" answerForm="decimal" answerDisplay="$6{,}325$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
 
-{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=-3n+5$." answer="-3575" answerDisplay="$-3{,}575$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
+{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=-3n+5$." answer="-3575" answerForm="decimal" answerDisplay="$-3{,}575$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
 
 {{< fillin question="Find the sum $\sum_{i=1}^{40}(8i-7)$." answer="6280" answerForm="decimal" answerDisplay="$6{,}280$" hint="Identify the first and fortieth terms, then use the arithmetic-sequence sum formula." >}}
 
