@@ -38,7 +38,7 @@ Simplify: (a) $\tfrac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ (b) $\tfrac{\sqrt[3]{32 x^
 | Step | Result |
 | --- | --- |
 |  | $\frac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ |
-| Rewrite using the quotient property,$\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}.$ | $\sqrt{\frac{72 x^{3}}{162 x}}$ |
+| Rewrite using the quotient property, $\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}.$ | $\sqrt{\frac{72 x^{3}}{162 x}}$ |
 | Remove common factors. | $\sqrt{\frac{\cancel{18} \cdot 4 \cdot x^{2} \cdot \cancel{x}}{\cancel{18} \cdot 9 \cdot \cancel{x}}}$ |
 | Simplify. | $\sqrt{\frac{4 x^{2}}{9}}$ |
 | Simplify the radical. | $\frac{2 x}{3}$ |
@@ -48,14 +48,14 @@ Simplify: (a) $\tfrac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ (b) $\tfrac{\sqrt[3]{32 x^
 | Step | Result |
 | --- | --- |
 |  | $\frac{\sqrt[3]{32 x^{2}}}{\sqrt[3]{4 x^{5}}}$ |
-| Rewrite using the quotient property,$\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}.$ | $\sqrt[3]{\frac{32 x^{2}}{4 x^{5}}}$ |
+| Rewrite using the quotient property, $\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}.$ | $\sqrt[3]{\frac{32 x^{2}}{4 x^{5}}}$ |
 | Simplify the fraction under the radical. | $\sqrt[3]{\frac{8}{x^{3}}}$ |
 | Simplify the radical. | $\frac{2}{x}$ |
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{50 s^{3}}}{\sqrt{128 s}}$"
   answer="\tfrac{5 s}{8}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{5 s}{8}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -63,15 +63,15 @@ Simplify: (a) $\tfrac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ (b) $\tfrac{\sqrt[3]{32 x^
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[3]{56 a}}{\sqrt[3]{7 a^{4}}}$"
   answer="\tfrac{2}{a}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{2}{a}$"
-  hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
+  hint="Use the quotient property to write one cube root, reduce the fraction under it, then take the cube root of each perfect cube."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{75 q^{5}}}{\sqrt{108 q}}$"
   answer="\tfrac{5 q^{2}}{6}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{5 q^{2}}{6}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -101,7 +101,7 @@ Simplify: (a) $\tfrac{\sqrt{147 a b^{8}}}{\sqrt{3 a^{3} b^{4}}}$ (b) $\tfrac{\sq
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{162 x^{10} y^{2}}}{\sqrt{2 x^{6} y^{6}}}$"
   answer="\tfrac{9 x^{2}}{y^{2}}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{9 x^{2}}{y^{2}}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -109,15 +109,15 @@ Simplify: (a) $\tfrac{\sqrt{147 a b^{8}}}{\sqrt{3 a^{3} b^{4}}}$ (b) $\tfrac{\sq
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[3]{-128 x^{2} y^{-1}}}{\sqrt[3]{2 x^{-1} y^{2}}}$"
   answer="\tfrac{-4 x}{y}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{-4 x}{y}$"
-  hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
+  hint="Use the quotient property to write one cube root, reduce the fraction under it with the exponent rules, then take the cube root of each perfect cube."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{300 m^{3} n^{7}}}{\sqrt{3 m^{5} n}}$"
   answer="\tfrac{10 n^{3}}{m}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{10 n^{3}}{m}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -131,8 +131,8 @@ Simplify: $\tfrac{\sqrt{54 x^{5} y^{3}}}{\sqrt{3 x^{2} y}}.$
 |  | $\frac{\sqrt{54 x^{5} y^{3}}}{\sqrt{3 x^{2} y}}$ |
 | Rewrite using the quotient property. | $\sqrt{\frac{54 x^{5} y^{3}}{3 x^{2} y}}$ |
 | Remove common factors in the fraction. | $\sqrt{18 x^{3} y^{2}}$ |
-| Rewrite the radicand as a productusing the largest perfect square factor. | $\sqrt{9 x^{2} y^{2} \cdot 2 x}$ |
-| Rewrite the radical as the product of tworadicals. | $\sqrt{9 x^{2} y^{2}} \cdot \sqrt{2 x}$ |
+| Rewrite the radicand as a product using the largest perfect square factor. | $\sqrt{9 x^{2} y^{2} \cdot 2 x}$ |
+| Rewrite the radical as the product of two radicals. | $\sqrt{9 x^{2} y^{2}} \cdot \sqrt{2 x}$ |
 | Simplify. | $3 x y \sqrt{2 x}$ |
 
 {{< fillin
@@ -218,7 +218,7 @@ To rationalize a denominator with one term, we can multiply a square root by its
   answer="\tfrac{5 \sqrt{3}}{3}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{5 \sqrt{3}}{3}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Multiply the numerator and denominator by the square root in the denominator, then simplify."
 >}}
 
 {{< fillin
@@ -226,15 +226,15 @@ To rationalize a denominator with one term, we can multiply a square root by its
   answer="\tfrac{\sqrt{6}}{8}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{6}}{8}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Rewrite as a quotient of square roots, simplify the radical in the denominator first, then rationalize."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{2}{\sqrt{2 x}}$"
   answer="\tfrac{\sqrt{2 x}}{x}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{\sqrt{2 x}}{x}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Multiply the numerator and denominator by the radical in the denominator, then reduce the fraction."
 >}}
 
 When we rationalized a square root, we multiplied the numerator and denominator by a square root that would give us a perfect square under the radical in the denominator. When we took the square root, the denominator no longer had a radical.
@@ -313,13 +313,13 @@ To rationalize a denominator with a cube root, we can multiply by a cube root th
   answer="\tfrac{\sqrt[3]{90}}{6}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt[3]{90}}{6}$"
-  hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
+  hint="Rewrite as a quotient of cube roots, then multiply by the smallest radical factor that makes the denominator's radicand a perfect cube."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{5}{\sqrt[3]{9 y}}$"
   answer="\tfrac{5 \sqrt[3]{3 y^{2}}}{3 y}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{5 \sqrt[3]{3 y^{2}}}{3 y}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -376,13 +376,13 @@ To rationalize a denominator with a fourth root, we can multiply by a fourth roo
   answer="\tfrac{\sqrt[4]{12}}{4}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt[4]{12}}{4}$"
-  hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
+  hint="Rewrite as a quotient of fourth roots, simplify the denominator's root first, then multiply by the smallest radical factor that makes its radicand a perfect fourth power."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{3}{\sqrt[4]{125 x}}$"
   answer="\tfrac{3 \sqrt[4]{5 x^{3}}}{5 x}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{3 \sqrt[4]{5 x^{3}}}{5 x}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -442,7 +442,7 @@ Simplify: $\tfrac{\sqrt{3}}{\sqrt{u} - \sqrt{6}}.$
   answer="\tfrac{\sqrt{5} \left(\sqrt{x} - \sqrt{2}\right)}{x - 2}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{5} \left(\sqrt{x} - \sqrt{2}\right)}{x - 2}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 {{< fillin
@@ -450,7 +450,7 @@ Simplify: $\tfrac{\sqrt{3}}{\sqrt{u} - \sqrt{6}}.$
   answer="\tfrac{\sqrt{10} \left(\sqrt{y} + \sqrt{3}\right)}{y - 3}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{10} \left(\sqrt{y} + \sqrt{3}\right)}{y - 3}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 Be careful of the signs when multiplying. The numerator and denominator look very similar when you multiply by the conjugate.
@@ -463,7 +463,7 @@ Simplify: $\tfrac{\sqrt{x} + \sqrt{7}}{\sqrt{x} - \sqrt{7}}.$
 | --- | --- |
 |  | $\tfrac{\sqrt{x}+\sqrt{7}}{\sqrt{x}-\sqrt{7}}$ |
 | Multiply the numerator and denominator by the conjugate of the denominator. | $\tfrac{\sqrt{x}+\sqrt{7}}{\sqrt{x}-\sqrt{7}} \cdot \tfrac{\sqrt{x}+\sqrt{7}}{\sqrt{x}+\sqrt{7}}$ |
-| Multiply the conjugates in the denominator. | $\tfrac{(\sqrt{x}+\sqrt{7})^{2}}{(\sqrt{x})^{2}-(\sqrt{7})^{2}}$ |
+| Multiply the conjugates in the denominator. | $\tfrac{(\sqrt{x}+\sqrt{7})(\sqrt{x}+\sqrt{7})}{(\sqrt{x})^{2}-(\sqrt{7})^{2}}$ |
 | Simplify the denominator. | $\tfrac{(\sqrt{x}+\sqrt{7})^{2}}{x-7}$ |
 
 We do not square the numerator. Leaving it in factored form, we can see there are no common factors to remove from the numerator and denominator.
@@ -471,17 +471,17 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{p} + \sqrt{2}}{\sqrt{p} - \sqrt{2}}$"
   answer="\tfrac{\left(\sqrt{p} + \sqrt{2}\right)^{2}}{p - 2}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{\left(\sqrt{p} + \sqrt{2}\right)^{2}}{p - 2}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{q} - \sqrt{10}}{\sqrt{q} + \sqrt{10}}$"
   answer="\tfrac{\left(\sqrt{q} - \sqrt{10}\right)^{2}}{q - 10}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{\left(\sqrt{q} - \sqrt{10}\right)^{2}}{q - 10}$"
-  hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 ## Practice
@@ -525,7 +525,7 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
 {{< fillin
   question="Simplify: $\tfrac{10}{\sqrt{5 x}}$"
   answer="\tfrac{2 \sqrt{5 x}}{x}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical single-fraction"
   answerDisplay="$\tfrac{2 \sqrt{5 x}}{x}$"
   hint="Multiply numerator and denominator by $\sqrt{5 x}$ to clear the radical from the denominator."
 >}}
@@ -537,7 +537,7 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
   answer="-2 \left(1 + \sqrt{5}\right)"
   answerForm="simplified-radical"
   answerDisplay="$-2\left(1 + \sqrt{5}\right)$"
-  hint="Multiply numerator and denominator by the conjugate $1 + \sqrt{5}$, then simplify the difference of squares."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 {{< fillin
@@ -545,7 +545,7 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
   answer="3 \left(3 + \sqrt{7}\right)"
   answerForm="simplified-radical"
   answerDisplay="$3\left(3 + \sqrt{7}\right)$"
-  hint="Multiply numerator and denominator by the conjugate $3 + \sqrt{7}$, then simplify the difference of squares."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 {{< fillin
@@ -553,9 +553,9 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
   answer="\tfrac{\sqrt{3} \left(\sqrt{m} + \sqrt{5}\right)}{m - 5}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{3} \left(\sqrt{m} + \sqrt{5}\right)}{m - 5}$"
-  hint="Multiply numerator and denominator by the conjugate $\sqrt{m} + \sqrt{5}$, then simplify the difference of squares in the denominator."
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.5: Divide Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-5-divide-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.5: Divide Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-5-divide-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, Key Concepts summary, Writing Exercises, self-check reflection, and unselected end-of-section exercises; converted the source Try It practice into interactive exercises; adapted selected end-of-section exercises into an interactive Practice block; and keyed the two Try Its with a sum of square roots over their conjugate as a squared numerator over the denominator ($\tfrac{(\sqrt{p}+\sqrt{2})^{2}}{p-2}$, $\tfrac{(\sqrt{q}-\sqrt{10})^{2}}{q-10}$), where the source solutions' markup squares the whole fraction.</small>

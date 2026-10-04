@@ -103,16 +103,18 @@ $$
   question="Solve $3y^2-5y+2=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="1, \frac{2}{3}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$y=1,\ y=\tfrac{2}{3}$"
-  hint="Use $a=3$, $b=-5$, and $c=2$ in the Quadratic Formula."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify."
 >}}
 
 {{< fillin
   question="Solve $4z^2+2z-6=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="1, -\frac{3}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$z=1,\ z=-\tfrac{3}{2}$"
-  hint="Use $a=4$, $b=2$, and $c=-6$ in the Quadratic Formula."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify each fraction."
 >}}
 
 {{< callout type="info" >}}
@@ -156,6 +158,7 @@ Both values make $x^2-6x+5=0$ a true equation.
   question="Solve $a^2-2a=15$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="-3, 5"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$a=-3,\ a=5$"
   hint="First write the equation in standard form."
 >}}
@@ -164,6 +167,7 @@ Both values make $x^2-6x+5=0$ a true equation.
   question="Solve $b^2+24=-10b$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="-6, -4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$b=-6,\ b=-4$"
   hint="Move every term to the left side before identifying $a$, $b$, and $c$."
 >}}
@@ -203,6 +207,7 @@ Check: We leave the check for you!
   question="Solve $3m^2+12m+7=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{-6+\sqrt{15}}{3}, \frac{-6-\sqrt{15}}{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$m=\tfrac{-6+\sqrt{15}}{3},\ m=\tfrac{-6-\sqrt{15}}{3}$"
   hint="Simplify the radical and remove the common factor from the numerator and denominator."
 >}}
@@ -211,8 +216,9 @@ Check: We leave the check for you!
   question="Solve $5n^2+4n-4=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{-2+2\sqrt{6}}{5}, \frac{-2-2\sqrt{6}}{5}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$n=\tfrac{-2+2\sqrt6}{5},\ n=\tfrac{-2-2\sqrt6}{5}$"
-  hint="Use $a=5$, $b=4$, and $c=-4$, then simplify the radical."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, then simplify the radical and remove any common factor."
 >}}
 
 When we substitute $a$, $b$, and $c$ into the Quadratic Formula and the
@@ -248,16 +254,18 @@ $$
   question="Solve $4a^2-2a+8=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{1}{4}+\frac{\sqrt{31}}{4}i, \frac{1}{4}-\frac{\sqrt{31}}{4}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$a=\tfrac14+\tfrac{\sqrt{31}}4i,\ a=\tfrac14-\tfrac{\sqrt{31}}4i$"
-  hint="A negative discriminant gives two complex solutions."
+  hint="Substitute $a$, $b$, and $c$ into the Quadratic Formula, simplify the radical (using $i$ if the radicand is negative), and remove any common factor."
 >}}
 
 {{< fillin
   question="Solve $5b^2+2b+4=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="-\frac{1}{5}+\frac{\sqrt{19}}{5}i, -\frac{1}{5}-\frac{\sqrt{19}}{5}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$b=-\tfrac15+\tfrac{\sqrt{19}}5i,\ b=-\tfrac15-\tfrac{\sqrt{19}}5i$"
-  hint="Simplify $\sqrt{-76}$ using $i=\sqrt{-1}$."
+  hint="Simplify the square root of the discriminant using $i=\sqrt{-1}$ when the discriminant is negative, then remove any common factor."
 >}}
 
 Remember, to use the Quadratic Formula, the equation must be written in
@@ -288,6 +296,7 @@ Thus $x=-3+\sqrt5$ or $x=-3-\sqrt5$. Check: We leave the check for you!
   question="Solve $x(x+2)-5=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="-1+\sqrt{6}, -1-\sqrt{6}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=-1+\sqrt6,\ x=-1-\sqrt6$"
   hint="Distribute before identifying $a$, $b$, and $c$."
 >}}
@@ -296,8 +305,9 @@ Thus $x=-3+\sqrt5$ or $x=-3-\sqrt5$. Check: We leave the check for you!
   question="Solve $3y(y-2)-3=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="1+\sqrt{2}, 1-\sqrt{2}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$y=1+\sqrt2,\ y=1-\sqrt2$"
-  hint="Write the equation as $3y^2-6y-3=0$ first."
+  hint="Distribute to write the equation in standard form, then use the Quadratic Formula and remove any common factor."
 >}}
 
 When we solved linear equations, if an equation had too many fractions we
@@ -333,6 +343,7 @@ leave the check for you!
   question="Solve $\tfrac14c^2-\tfrac13c=\tfrac1{12}$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{2+\sqrt{7}}{3}, \frac{2-\sqrt{7}}{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$c=\tfrac{2+\sqrt7}{3},\ c=\tfrac{2-\sqrt7}{3}$"
   hint="Multiply both sides by $12$ to clear the fractions."
 >}}
@@ -341,6 +352,7 @@ leave the check for you!
   question="Solve $\tfrac19d^2-\tfrac12d=-\tfrac13$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{9+\sqrt{33}}{4}, \frac{9-\sqrt{33}}{4}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$d=\tfrac{9+\sqrt{33}}4,\ d=\tfrac{9-\sqrt{33}}4$"
   hint="Clear the fractions before using the Quadratic Formula."
 >}}
@@ -380,13 +392,15 @@ using the Square Root Property, do you get the same result?
 {{< fillin
   question="Solve $r^2+10r+25=0$ by using the Quadratic Formula."
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$r=-5$"
-  hint="The discriminant is $0$, so there is only one solution."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify."
 >}}
 
 {{< fillin
   question="Solve $25t^2-40t=-16$ by using the Quadratic Formula."
   answer="\frac{4}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$t=\tfrac45$"
   hint="Write the equation in standard form and simplify the discriminant."
 >}}
@@ -448,7 +462,7 @@ is 1 real solution to the equation.
 {{< multiplechoice
   question="Determine the number and type of solutions to $8m^2-3m+6=0$."
   answer="2 complex solutions"
-  hint="Find the sign of $(-3)^2-4(8)(6)$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
 2 real solutions
 1 real solution
@@ -458,7 +472,7 @@ is 1 real solution to the equation.
 {{< multiplechoice
   question="Determine the number and type of solutions to $5z^2+6z-2=0$."
   answer="2 real solutions"
-  hint="Find the sign of $6^2-4(5)(-2)$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
 2 complex solutions
 1 real solution
@@ -468,7 +482,7 @@ is 1 real solution to the equation.
 {{< multiplechoice
   question="Determine the number and type of solutions to $9w^2+24w+16=0$."
   answer="1 real solution"
-  hint="Find the sign of $24^2-4(9)(16)$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
 2 complex solutions
 2 real solutions
@@ -545,7 +559,7 @@ Factoring
 {{< multiplechoice
   question="Identify the most appropriate method to solve $(n-3)^2=16$."
   answer="Square Root Property"
-  hint="The equation is already in the form $a(n-h)^2=k$."
+  hint="Test the methods in order: does it factor easily, does it fit $ax^2=k$ or $a(x-h)^2=k$, and otherwise use the Quadratic Formula."
 >}}
 Factoring
 Square Root Property
@@ -577,24 +591,27 @@ $b^2-4ac$ under the radical in the Quadratic Formula.
   question="Solve $2p^2-7p+3=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{1}{2}, 3"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$p=\tfrac{1}{2},\ p=3$"
-  hint="Use $a=2$, $b=-7$, and $c=3$ in the Quadratic Formula."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify."
 >}}
 
 {{< fillin
   question="Solve $3u^2+7u-2=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="\frac{-7+\sqrt{73}}{6}, \frac{-7-\sqrt{73}}{6}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$u=\tfrac{-7+\sqrt{73}}{6},\ u=\tfrac{-7-\sqrt{73}}{6}$"
-  hint="The discriminant $73$ is not a perfect square, so leave the radical in simplified form."
+  hint="Identify $a$, $b$, and $c$, substitute them into the Quadratic Formula, and simplify the radical if you can."
 >}}
 
 {{< fillin
   question="Solve $2x^2+3x+3=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
   answer="-\frac{3}{4}+\frac{\sqrt{15}}{4}i, -\frac{3}{4}-\frac{\sqrt{15}}{4}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=-\tfrac34+\tfrac{\sqrt{15}}4i,\ x=-\tfrac34-\tfrac{\sqrt{15}}4i$"
-  hint="A negative discriminant gives two complex solutions."
+  hint="Substitute $a$, $b$, and $c$ into the Quadratic Formula and simplify the radical, using $i$ if the radicand is negative."
 >}}
 
 ### Use the discriminant to predict the number and type of solutions of a quadratic equation
@@ -602,7 +619,7 @@ $b^2-4ac$ under the radical in the Quadratic Formula.
 {{< multiplechoice
   question="Determine the number and type of solutions to $4x^2-5x+16=0$."
   answer="2 complex solutions"
-  hint="Find the sign of $(-5)^2-4(4)(16)$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
 2 real solutions
 1 real solution
@@ -612,7 +629,7 @@ $b^2-4ac$ under the radical in the Quadratic Formula.
 {{< multiplechoice
   question="Determine the number and type of solutions to $36y^2+36y+9=0$."
   answer="1 real solution"
-  hint="Find the sign of $36^2-4(36)(9)$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
 2 complex solutions
 2 real solutions
@@ -622,7 +639,7 @@ $b^2-4ac$ under the radical in the Quadratic Formula.
 {{< multiplechoice
   question="Determine the number and type of solutions to $6m^2+3m-5=0$."
   answer="2 real solutions"
-  hint="Find the sign of $3^2-4(6)(-5)$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
 2 real solutions
 1 real solution
@@ -644,7 +661,7 @@ Factoring
 {{< multiplechoice
   question="Identify the most appropriate method to solve $(y+5)^2=12$."
   answer="Square Root Property"
-  hint="The equation is already in the form $a(y-h)^2=k$."
+  hint="Test the methods in order: does it factor easily, does it fit $ax^2=k$ or $a(x-h)^2=k$, and otherwise use the Quadratic Formula."
 >}}
 Quadratic Formula
 Square Root Property
@@ -661,4 +678,4 @@ Quadratic Formula
 Square Root Property
 {{< /multiplechoice >}}
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 9.3](https://openstax.org/books/intermediate-algebra-2e/pages/9-3-solve-quadratic-equations-using-the-quadratic-formula), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility, and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 9.3](https://openstax.org/books/intermediate-algebra-2e/pages/9-3-solve-quadratic-equations-using-the-quadratic-formula), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility; omitted the Be Prepared quiz, media links, Writing Exercises, and Self Check checklist; adapted selected end-of-section exercises into an interactive Practice block; and asked the three end-of-section discriminant exercises for the number and type of solutions, as the section's Try Its do, where the source asks for the number of real solutions.</small>

@@ -58,7 +58,7 @@ The indices are the same but the radicals are different. These are not like radi
   answer="- \sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$- \sqrt{2}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Compare the indices and the radicands. Like radicals combine by adding or subtracting their coefficients; unlike radicals cannot be combined."
 >}}
 
 {{< fillin
@@ -66,14 +66,15 @@ The indices are the same but the radicals are different. These are not like radi
   answer="11 \sqrt[3]{x}"
   answerForm="simplified-radical"
   answerDisplay="$11 \sqrt[3]{x}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Compare the indices and the radicands. Like radicals combine by adding or subtracting their coefficients; unlike radicals cannot be combined."
 >}}
 
 {{< fillin
   question="Simplify: $3 \sqrt[4]{x} - 5 \sqrt[4]{y}$"
   answer="3 \sqrt[4]{x} - 5 \sqrt[4]{y}"
+  answerForm="no-like-terms simplified-radical"
   answerDisplay="$3 \sqrt[4]{x} - 5 \sqrt[4]{y}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Compare the indices and the radicands. Like radicals combine by adding or subtracting their coefficients; unlike radicals cannot be combined."
 >}}
 
 For radicals to be like, they must have the same index and radicand. When the radicands contain more than one variable, as long as all the variables and their exponents are identical, the radicands are the same.
@@ -102,7 +103,7 @@ Simplify: (a) $2 \sqrt{5 n} - 6 \sqrt{5 n} + 4 \sqrt{5 n}$ (b) $\sqrt[4]{3 x y} 
   answer="-2 \sqrt{7 x}"
   answerForm="simplified-radical"
   answerDisplay="$-2 \sqrt{7 x}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="With the same index and radicand in every term, add and subtract the coefficients from left to right and keep the radical."
 >}}
 
 {{< fillin
@@ -110,7 +111,7 @@ Simplify: (a) $2 \sqrt{5 n} - 6 \sqrt{5 n} + 4 \sqrt{5 n}$ (b) $\sqrt[4]{3 x y} 
   answer="- \sqrt[4]{5 x y}"
   answerForm="simplified-radical"
   answerDisplay="$- \sqrt[4]{5 x y}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="With the same index and radicand in every term, add and subtract the coefficients from left to right and keep the radical."
 >}}
 
 {{< fillin
@@ -118,7 +119,7 @@ Simplify: (a) $2 \sqrt{5 n} - 6 \sqrt{5 n} + 4 \sqrt{5 n}$ (b) $\sqrt[4]{3 x y} 
   answer="- \sqrt{3 y}"
   answerForm="simplified-radical"
   answerDisplay="$- \sqrt{3 y}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="With the same index and radicand in every term, add and subtract the coefficients from left to right and keep the radical."
 >}}
 
 Remember that we always simplify radicals by removing the largest factor from the radicand that is a power of the index. Once each radical is simplified, we can then decide if they are like radicals.
@@ -160,7 +161,7 @@ Simplify: (a) $\sqrt{20} + 3 \sqrt{5}$ (b) $\sqrt[3]{24} - \sqrt[3]{375}$ (c) $\
   answer="9 \sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$9 \sqrt{2}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Simplify each radical by removing the largest factor of the radicand that is a power of the index, then combine the like radicals."
 >}}
 
 {{< fillin
@@ -168,7 +169,7 @@ Simplify: (a) $\sqrt{20} + 3 \sqrt{5}$ (b) $\sqrt[3]{24} - \sqrt[3]{375}$ (c) $\
   answer="2 \sqrt[3]{2}"
   answerForm="simplified-radical"
   answerDisplay="$2 \sqrt[3]{2}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Simplify each radical by removing the largest factor of the radicand that is a power of the index, then combine the like radicals."
 >}}
 
 {{< fillin
@@ -176,7 +177,7 @@ Simplify: (a) $\sqrt{20} + 3 \sqrt{5}$ (b) $\sqrt[3]{24} - \sqrt[3]{375}$ (c) $\
   answer="\sqrt[3]{3}"
   answerForm="simplified-radical"
   answerDisplay="$\sqrt[3]{3}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Simplify each radical by removing the largest factor that is a perfect cube, multiply each fraction into its new coefficient, then combine the like radicals."
 >}}
 
 In the next example, we will remove both constant and variable factors from the radicals. Now that we have practiced taking both the even and odd roots of variables, it is common practice at this point for us to assume all variables are greater than or equal to zero so that absolute values are not needed. We will use this assumption throughout the rest of this chapter.
@@ -210,7 +211,7 @@ The radicals are not like and so cannot be combined.
   answer="- m^{3} \sqrt{2 m}"
   answerForm="simplified-radical"
   answerDisplay="$- m^{3} \sqrt{2 m}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Simplify each radical by removing the largest factor of the radicand, number and variable, that is a power of the index; then combine the like radicals."
 >}}
 
 {{< fillin
@@ -218,7 +219,7 @@ The radicals are not like and so cannot be combined.
   answer="x^{2} \sqrt[3]{5 x}"
   answerForm="simplified-radical"
   answerDisplay="$x^{2} \sqrt[3]{5 x}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Simplify each radical by removing the largest factor of the radicand, number and variable, that is a power of the index; then combine the like radicals."
 >}}
 
 {{< fillin
@@ -226,7 +227,7 @@ The radicals are not like and so cannot be combined.
   answer="- p \sqrt{3 p}"
   answerForm="simplified-radical"
   answerDisplay="$- p \sqrt{3 p}$"
-  hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
+  hint="Simplify each radical by removing the largest factor of the radicand, number and variable, that is a power of the index; then combine the like radicals."
 >}}
 
 ## Multiply Radical Expressions
@@ -239,11 +240,11 @@ We will rewrite the Product Property of Roots so we see both ways together.
 
 For any real numbers, $\sqrt[n]{a}$ and $\sqrt[n]{b},$ and for any integer $n \geq 2$
 
-$$\sqrt[n]{a b} = \sqrt[n]{a} \cdot \sqrt[n]{b}\ \text{and}\ \sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a b}$$
+$$\sqrt[n]{a b} = \sqrt[n]{a} \cdot \sqrt[n]{b}\quad\text{and}\quad \sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a b}$$
 
 When we multiply two radicals they must have the same index. Once we multiply the radicals, we then look for factors that are a power of the index and simplify the radical whenever possible.
 
-Multiplying radicals with coefficients is much like multiplying variables with coefficients. To multiply $4 x \cdot 3 y$ we multiply the coefficients together and then the variables. The result is 12*xy*. Keep this in mind as you do these examples.
+Multiplying radicals with coefficients is much like multiplying variables with coefficients. To multiply $4 x \cdot 3 y$ we multiply the coefficients together and then the variables. The result is $12 x y$. Keep this in mind as you do these examples.
 
 **Example.**
 
@@ -274,7 +275,7 @@ Simplify: (a) $\left(6 \sqrt{2}\right) \left(3 \sqrt{10}\right)$ (b) $\left(-5 \
   answer="12 \sqrt{15}"
   answerForm="simplified-radical"
   answerDisplay="$12 \sqrt{15}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply the coefficients, multiply the radicands under the common index, then simplify the radical."
 >}}
 
 {{< fillin
@@ -282,7 +283,7 @@ Simplify: (a) $\left(6 \sqrt{2}\right) \left(3 \sqrt{10}\right)$ (b) $\left(-5 \
   answer="-18 \sqrt[3]{4}"
   answerForm="simplified-radical"
   answerDisplay="$-18 \sqrt[3]{4}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply the coefficients, multiply the radicands under the common index, then simplify the radical."
 >}}
 
 {{< fillin
@@ -290,7 +291,7 @@ Simplify: (a) $\left(6 \sqrt{2}\right) \left(3 \sqrt{10}\right)$ (b) $\left(-5 \
   answer="27 \sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$27 \sqrt{2}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply the coefficients, multiply the radicands under the common index, then simplify the radical."
 >}}
 
 We follow the same procedures when there are variables in the radicands.
@@ -324,7 +325,7 @@ Simplify: (a) $\left(10 \sqrt{6 p^{3}}\right) \left(4 \sqrt{3 p}\right)$ (b) $\l
   answer="288 x^{3} \sqrt{5}"
   answerForm="simplified-radical"
   answerDisplay="$288 x^{3} \sqrt{5}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply the coefficients and the radicands, then remove every factor of the radicand, number and variable, that is a power of the index."
 >}}
 
 {{< fillin
@@ -332,7 +333,7 @@ Simplify: (a) $\left(10 \sqrt{6 p^{3}}\right) \left(4 \sqrt{3 p}\right)$ (b) $\l
   answer="8 y \sqrt[4]{6 y^{2}}"
   answerForm="simplified-radical"
   answerDisplay="$8 y \sqrt[4]{6 y^{2}}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply the coefficients and the radicands, then remove every factor of the radicand, number and variable, that is a power of the index."
 >}}
 
 {{< fillin
@@ -340,12 +341,12 @@ Simplify: (a) $\left(10 \sqrt{6 p^{3}}\right) \left(4 \sqrt{3 p}\right)$ (b) $\l
   answer="144 y^{2} \sqrt{5 y}"
   answerForm="simplified-radical"
   answerDisplay="$144 y^{2} \sqrt{5 y}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply the coefficients and the radicands, then remove every factor of the radicand, number and variable, that is a power of the index."
 >}}
 
 ## Use Polynomial Multiplication to Multiply Radical Expressions
 
-In the next a few examples, we will use the Distributive Property to multiply expressions with radicals. First we will distribute and then simplify the radicals when possible.
+In the next few examples, we will use the Distributive Property to multiply expressions with radicals. First we will distribute and then simplify the radicals when possible.
 
 **Example.**
 
@@ -373,7 +374,7 @@ Simplify: (a) $\sqrt{6 } \left(\sqrt{2} + \sqrt{18}\right)$ (b) $\sqrt[3]{9} \le
 {{< fillin
   question="Simplify: $\sqrt{6} \left(1 + 3 \sqrt{6}\right)$"
   answer="18 + \sqrt{6}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$18 + \sqrt{6}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -381,7 +382,7 @@ Simplify: (a) $\sqrt{6 } \left(\sqrt{2} + \sqrt{18}\right)$ (b) $\sqrt[3]{9} \le
 {{< fillin
   question="Simplify: $\sqrt[3]{4} \left(-2 - \sqrt[3]{6}\right)$"
   answer="-2 \sqrt[3]{4} - 2 \sqrt[3]{3}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-2 \sqrt[3]{4} - 2 \sqrt[3]{3}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -389,7 +390,7 @@ Simplify: (a) $\sqrt{6 } \left(\sqrt{2} + \sqrt{18}\right)$ (b) $\sqrt[3]{9} \le
 {{< fillin
   question="Simplify: $\sqrt{8} \left(2 - 5 \sqrt{8}\right)$"
   answer="-40 + 4 \sqrt{2}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-40 + 4 \sqrt{2}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -420,25 +421,25 @@ Simplify: (a) $\left(3 - 2 \sqrt{7}\right) \left(4 - 2 \sqrt{7}\right)$ (b) $\le
 {{< fillin
   question="Simplify: $\left(6 - 3 \sqrt{7}\right) \left(3 + 4 \sqrt{7}\right)$"
   answer="-66 + 15 \sqrt{7}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-66 + 15 \sqrt{7}$"
-  hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
+  hint="Multiply each term of the first binomial by each term of the second (FOIL), simplify the products, then combine like terms."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\sqrt[3]{x} - 2\right) \left(\sqrt[3]{x} - 3\right)$"
   answer="\sqrt[3]{x^{2}} - 5 \sqrt[3]{x} + 6"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$\sqrt[3]{x^{2}} - 5 \sqrt[3]{x} + 6$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply each term of the first binomial by each term of the second (FOIL), simplify the products, then combine like terms."
 >}}
 
 {{< fillin
   question="Simplify: $\left(2 - 3 \sqrt{11}\right) \left(4 - \sqrt{11}\right)$"
   answer="41 - 14 \sqrt{11}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$41 - 14 \sqrt{11}$"
-  hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
+  hint="Multiply each term of the first binomial by each term of the second (FOIL), simplify the products, then combine like terms."
 >}}
 
 **Example.**
@@ -455,24 +456,24 @@ Simplify: $\left(3 \sqrt{2} - \sqrt{5}\right) \left(\sqrt{2} + 4 \sqrt{5}\right)
 {{< fillin
   question="Simplify: $\left(5 \sqrt{3} - \sqrt{7}\right) \left(\sqrt{3} + 2 \sqrt{7}\right)$"
   answer="1 + 9 \sqrt{21}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$1 + 9 \sqrt{21}$"
-  hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
+  hint="Multiply each term of the first binomial by each term of the second (FOIL), simplify the products, then combine like terms."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\sqrt{6} - 3 \sqrt{8}\right) \left(2 \sqrt{6} + \sqrt{8}\right)$"
   answer="-12 - 20 \sqrt{3}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-12 - 20 \sqrt{3}$"
-  hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
+  hint="Multiply each term of the first binomial by each term of the second (FOIL), simplify the products, then combine like terms."
 >}}
 
 Recognizing some special products made our work easier when we multiplied binomials earlier. This is true when we multiply radicals, too. The special product formulas we used are shown here.
 
 ### Special Products
 
-$$\begin{matrix}\ \\ \\ \textbf{Binomial Squares} & & & \textbf{Product of Conjugates}\ \\ \left(a + b\right)^{2} = a^{2} + 2 a b + b^{2} & & & \left(a + b\right) \left(a - b\right) = a^{2} - b^{2} \\ \left(a - b\right)^{2} = a^{2} - 2 a b + b^{2} & & & \end{matrix}$$
+$$\begin{matrix}\textbf{Binomial Squares} & & & \textbf{Product of Conjugates}\ \\ \left(a + b\right)^{2} = a^{2} + 2 a b + b^{2} & & & \left(a + b\right) \left(a - b\right) = a^{2} - b^{2} \\ \left(a - b\right)^{2} = a^{2} - 2 a b + b^{2} & & & \end{matrix}$$
 
 We will use the special product formulas in the next few examples. We will start with the Product of Binomial Squares Pattern.
 
@@ -504,25 +505,25 @@ Be sure to include the $2 a b$ term when squaring a binomial.
 {{< fillin
   question="Simplify: $\left(10 + \sqrt{2}\right)^{2}$"
   answer="102 + 20 \sqrt{2}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$102 + 20 \sqrt{2}$"
-  hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
+  hint="Use the Binomial Squares Pattern, $(a+b)^2=a^2+2ab+b^2$, and include the $2ab$ term."
 >}}
 
 {{< fillin
   question="Simplify: $\left(1 + 3 \sqrt{6}\right)^{2}$"
   answer="55 + 6 \sqrt{6}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$55 + 6 \sqrt{6}$"
-  hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
+  hint="Use the Binomial Squares Pattern, $(a+b)^2=a^2+2ab+b^2$, and include the $2ab$ term."
 >}}
 
 {{< fillin
   question="Simplify: $\left(6 - \sqrt{5}\right)^{2}$"
   answer="41 - 12 \sqrt{5}"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$41 - 12 \sqrt{5}$"
-  hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
+  hint="Use the Binomial Squares Pattern, $(a-b)^2=a^2-2ab+b^2$, and include the $2ab$ term."
 >}}
 
 In the next example, we will use the Product of Conjugates Pattern. Notice that the final product has no radical.
@@ -543,7 +544,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
   answer="-11"
   answerForm="decimal"
   answerDisplay="$-11$"
-  hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
+  hint="Use the Product of Conjugates Pattern, $(a-b)(a+b)=a^2-b^2$."
 >}}
 
 {{< fillin
@@ -551,7 +552,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
   answer="-159"
   answerForm="decimal"
   answerDisplay="$-159$"
-  hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
+  hint="Use the Product of Conjugates Pattern, $(a-b)(a+b)=a^2-b^2$."
 >}}
 
 ## Practice
@@ -587,7 +588,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
   answer="4 y \sqrt{2}"
   answerForm="simplified-radical"
   answerDisplay="$4 y \sqrt{2}$"
-  hint="Simplify each radical to a coefficient times $\sqrt{2}$, then combine the like radicals."
+  hint="Simplify each radical by removing the largest perfect-square factor, numbers and variables alike, then combine the like radicals."
 >}}
 
 ### Multiply Radical Expressions
@@ -629,7 +630,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
 {{< fillin
   question="Simplify: $\sqrt{7} \left(5 + 2 \sqrt{7}\right)$"
   answer="14 + 5 \sqrt{7}"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$14 + 5 \sqrt{7}$"
   hint="Distribute $\sqrt{7}$ across each term, then simplify any resulting radical."
 >}}
@@ -637,7 +638,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
 {{< fillin
   question="Simplify: $\sqrt[3]{6} \left(4 + \sqrt[3]{18}\right)$"
   answer="4 \sqrt[3]{6} + 3 \sqrt[3]{4}"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$4 \sqrt[3]{6} + 3 \sqrt[3]{4}$"
   hint="Distribute $\sqrt[3]{6}$ across each term, then simplify any resulting radical."
 >}}
@@ -645,7 +646,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
 {{< fillin
   question="Simplify: $\left(9 - 3 \sqrt{2}\right) \left(6 + 4 \sqrt{2}\right)$"
   answer="30 + 18 \sqrt{2}"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$30 + 18 \sqrt{2}$"
   hint="Use FOIL to multiply the binomials, simplify each radical term, then combine like terms."
 >}}
@@ -653,7 +654,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
 {{< fillin
   question="Simplify: $\left(\sqrt[3]{x} - 3\right) \left(\sqrt[3]{x} + 1\right)$"
   answer="\sqrt[3]{x^{2}} - 2 \sqrt[3]{x} - 3"
-  answerForm="expanded simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$\sqrt[3]{x^{2}} - 2 \sqrt[3]{x} - 3$"
   hint="Use FOIL to multiply the binomials, then combine like terms."
 >}}

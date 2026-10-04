@@ -21,7 +21,7 @@ In the section on logarithmic functions, we solved some equations by rewriting t
 If our equation has two logarithms we can use a property that says that if ${\text{log}}_{a}M={\text{log}}_{a}N$ then it is true that $M=N.$ This is the One-to-One Property of Logarithmic Equations.
 
 {{< callout type="info" >}}
-**One-to-One Property of Logarithmic Equations.** For $M>0,N>0,\text{a}\text{>}0,$ and $\text{a}\ne 1$ is any real number:
+**One-to-One Property of Logarithmic Equations.** For $M>0,$ $N>0,$ $a>0,$ and $a\ne 1$ is any real number:
 
 $$
 \text{if }\log_a M=\log_a N,\text{ then }M=N.
@@ -48,15 +48,17 @@ Remember that logarithms are defined only for positive real numbers. Check your 
 {{< fillin
   question="Solve $2\log_3x=\log_3 36$."
   answer="6"
+  answerForm="decimal"
   answerDisplay="$x=6$"
-  hint="Use the Power Property to rewrite the left side, then equate the logarithm arguments."
+  hint="Use the Power Property to rewrite the left side, equate the logarithm arguments, and keep only a root at which every logarithm is defined."
 >}}
 
 {{< fillin
   question="Solve $3\log x=\log64$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$x=4$"
-  hint="Rewrite $3\log x$ as $\log(x^3)$."
+  hint="Use the Power Property on the left side, then equate the logarithm arguments and take the cube root."
 >}}
 
 Another strategy to use to solve logarithmic equations is to condense sums or differences into a single logarithm.
@@ -82,6 +84,7 @@ Another strategy to use to solve logarithmic equations is to condense sums or di
 {{< fillin
   question="Solve $\log_2x+\log_2(x-2)=3$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$x=4$"
   hint="Combine the logarithms, rewrite in exponential form, and reject values outside the logarithm domains."
 >}}
@@ -89,6 +92,7 @@ Another strategy to use to solve logarithmic equations is to condense sums or di
 {{< fillin
   question="Solve $\log_2x+\log_2(x-6)=4$."
   answer="8"
+  answerForm="decimal"
   answerDisplay="$x=8$"
   hint="Use the Product Property, convert to exponential form, and check both logarithm arguments."
 >}}
@@ -116,6 +120,7 @@ When there are logarithms on both sides, we condense each side into a single log
 {{< fillin
   question="Solve $\log(x+2)-\log(4x+3)=-\log x$."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$x=3$"
   hint="Use the Quotient Property and rewrite $-\log x$ as $\log(\tfrac1x)$."
 >}}
@@ -123,6 +128,7 @@ When there are logarithms on both sides, we condense each side into a single log
 {{< fillin
   question="Solve $\log(x-2)-\log(4x+16)=\log(\tfrac1x)$."
   answer="8"
+  answerForm="decimal"
   answerDisplay="$x=8$"
   hint="Combine the left side as one logarithm, equate arguments, and check the domain."
 >}}
@@ -140,7 +146,7 @@ It is not always possible or convenient to write the expressions with the same b
 |  | $\begin{array}{llllll}{5}^{x} & = & 11 \\\end{array}$ |
 | --- | --- |
 | Since the exponential is isolated, take the logarithm of both sides. Use the Power Property to get the $x$ as a factor, not an exponent. Solve for $x.$ Find the exact answer. Approximate the answer. | $\begin{array}{llllll}\text{log}{5}^{x} & = & \text{log}11 \\x\text{log}5 & = & \text{log}11 \\x & = & \tfrac{\text{log}11}{\text{log}5} \\x & \approx & 1.490 \\\end{array}$ |
-| Since ${5}^{1}=5$ and ${5}^{2}=25,$ does it makes sense that ${5}^{1.490}\approx 11?$ |  |
+| Since ${5}^{1}=5$ and ${5}^{2}=25,$ does it make sense that ${5}^{1.490}\approx 11?$ |  |
 
 {{< fillin
   question="Solve $7^x=43$. Enter the exact answer; the feedback also gives its three-decimal approximation."
@@ -219,9 +225,9 @@ $$
 | --- | --- |
 |  | $P=10{,}000$ |
 | Identify the variables in the formula | $r=?$ |
-|  | $t=17\text{years}$ |
+|  | $t=17\text{ years}$ |
 |  | $A=P{e}^{rt}$ |
-| Substitute the values into the formula. | $50,000=10,000{e}^{r\cdot 17}$ |
+| Substitute the values into the formula. | $50{,}000=10{,}000{e}^{r\cdot 17}$ |
 | Solve for $r.$ Divide each side by 10,000. | $5={e}^{17r}$ |
 | Take the natural log of each side. | $\text{ln}5=\text{ln}{e}^{17r}$ |
 | Use the Power Property. | $\text{ln}5=17r\text{ln}e$ |
@@ -232,20 +238,20 @@ $$
 |  | They need the rate of growth to be approximately $9.5\%$. |
 
 {{< fillin
-  question="Hector invests \$10,000 at age 21 and wants \$150,000 at age 50. With continuous compounding, what annual growth rate is required? Enter a percent."
+  question="Hector invests \$10,000 at age 21 and wants \$150,000 at age 50. With continuous compounding, what annual growth rate is required? Enter a percent rounded to the nearest tenth of a percent."
   answer="9.3\%"
   answerForm="percent"
   answerDisplay="$r\approx9.3\%$"
-  hint="Use $150{,}000=10{,}000e^{29r}$ and solve for $r$."
+  hint="Substitute into $A=Pe^{rt}$ with $t$ the number of years until he turns 50, isolate the exponential, take the natural logarithm of each side, and convert $r$ to a percent."
   placeholder="percent"
 >}}
 
 {{< fillin
-  question="Rachel invests \$15,000 at age 25 and wants \$90,000 at age 40. With continuous compounding, what annual growth rate is required? Enter a percent."
+  question="Rachel invests \$15,000 at age 25 and wants \$90,000 at age 40. With continuous compounding, what annual growth rate is required? Enter a percent rounded to the nearest tenth of a percent."
   answer="11.9\%"
   answerForm="percent"
   answerDisplay="$r\approx11.9\%$"
-  hint="Use $90{,}000=15{,}000e^{15r}$ and solve for $r$."
+  hint="Substitute into $A=Pe^{rt}$ with $t$ the number of years until she turns 40, isolate the exponential, take the natural logarithm of each side, and convert $r$ to a percent."
   placeholder="percent"
 >}}
 
@@ -267,7 +273,7 @@ We can now solve applications that give us enough information to determine the r
 
 This problem requires two main steps. First we must find the unknown rate, k. Then we use that value of k to help us find the unknown number of bacteria.
 
-| Identify the variables in the formula. | $\begin{array}{llllll}A & = & 300 \\{A}_{0} & = & 100 \\k & = & ? \\t & = & 3\text{hours}\ \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
+| Identify the variables in the formula. | $\begin{array}{llllll}A & = & 300 \\{A}_{0} & = & 100 \\k & = & ? \\t & = & 3\text{ hours} \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
 | --- | --- |
 | Substitute the values in the formula. | $300=100{e}^{k\cdot 3}$ |
 | Solve for $k$. Divide each side by 100. | $3={e}^{3k}$ |
@@ -276,23 +282,25 @@ This problem requires two main steps. First we must find the unknown rate, k. Th
 | Simplify. | $\text{ln}3=3k$ |
 | Divide each side by 3. | $\tfrac{\text{ln}3}{3}=k$ |
 | Approximate the answer. | $k\approx 0.366$ |
-| We use this rate of growth to predict the number of bacteria there will be in 24 hours. | $\begin{array}{llllll}A & = & ? \\{A}_{0} & = & 100 \\k & = & \tfrac{\text{ln}3}{3} \\t & = & 24\text{hours}\ \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
+| We use this rate of growth to predict the number of bacteria there will be in 24 hours. | $\begin{array}{llllll}A & = & ? \\{A}_{0} & = & 100 \\k & = & \tfrac{\text{ln}3}{3} \\t & = & 24\text{ hours} \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
 | Substitute in the values. | $A=100{e}^{\tfrac{\text{ln}3}{3}\cdot 24}$ |
-| Evaluate. | $A\approx 656,100$ |
+| Evaluate. | $A\approx 656{,}100$ |
 |  | At this rate of growth, they can expect 656,100 bacteria. |
 
 {{< fillin
   question="A bacteria population grows from 100 to 500 in 6 hours. At the same continuous growth rate, how many bacteria will there be after 24 hours?"
   answer="62500"
+  answerForm="decimal"
   answerDisplay="$62{,}500$ bacteria"
-  hint="Six hours is one growth interval; determine how many such intervals occur in 24 hours."
+  hint="Find $k$ from the 6-hour data with $A=A_0e^{kt}$, then use that $k$ to evaluate the model at $t=24$."
 >}}
 
 {{< fillin
-  question="A bacteria population declines from 700,000 to 400,000 in 5 hours. At the same decay rate, about how many bacteria will remain after 24 hours?"
+  question="Researchers recorded that a certain bacteria population declined from 700,000 to 400,000 in 5 hours after the administration of medication. At this rate of decay, how many bacteria will there be 24 hours from the start of the experiment? Round to the nearest hundred bacteria."
   answer="47700"
+  answerForm="decimal"
   answerDisplay="about $47{,}700$ bacteria"
-  hint="Use an exponential decay model with a 5-hour factor of $\tfrac47$, then evaluate it at 24 hours."
+  hint="Find the decay constant $k$ from the 5-hour data with $A=A_0e^{kt}$, then evaluate the model at $t=24$ using the exact $k$."
 >}}
 
 Radioactive substances decay or decompose according to the exponential decay formula. The amount of time it takes for the substance to decay to half of its original amount is called the half-life of the substance.
@@ -305,36 +313,34 @@ Similar to the previous example, we can use the given information to determine t
 
 This problem requires two main steps. First we must find the decay constant k. If we start with 100-mg, at the half-life there will be 50-mg remaining. We will use this information to find k. Then we use that value of k to help us find the amount of sample that will be left in 500 years.
 
-| Identify the variables in the formula. | $\begin{array}{llllll}A & = & 50 \\{A}_{0} & = & 100 \\k & = & ? \\t & = & 1590\text{years}\ \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
+| Identify the variables in the formula. | $\begin{array}{llllll}A & = & 50 \\{A}_{0} & = & 100 \\k & = & ? \\t & = & 1{,}590\text{ years} \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
 | --- | --- |
-| Substitute the values in the formula. | $50=100{e}^{k\cdot 1590}$ |
-| Solve for $k$. Divide each side by 100. | $0.5={e}^{1590k}$ |
-| Take the natural log of each side. | $\text{ln}0.5=\text{ln}{e}^{1590k}$ |
-| Use the Power Property. | $\text{ln}0.5=1590k\text{ln}e$ |
-| Simplify. | $\text{ln}0.5=1590k$ |
-| Divide each side by 1590. | $\tfrac{\text{ln}0.5}{1590}=k\text{exact answer}$ |
-| We use this rate of growth to predict the amount that will be left in 500 years. | $\begin{array}{llllll}A & = & ? \\{A}_{0} & = & 100 \\k & = & \tfrac{\text{ln}0.5}{1590} \\t & = & 500\text{years}\ \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
-| Substitute in the values. | $A=100{e}^{\tfrac{\text{ln}0.5}{1590}\cdot 500}$ |
-| Evaluate. | $A\approx 80.4\text{mg}$ |
+| Substitute the values in the formula. | $50=100{e}^{k\cdot 1{,}590}$ |
+| Solve for $k$. Divide each side by 100. | $0.5={e}^{1{,}590k}$ |
+| Take the natural log of each side. | $\text{ln}0.5=\text{ln}{e}^{1{,}590k}$ |
+| Use the Power Property. | $\text{ln}0.5=1{,}590k\text{ln}e$ |
+| Simplify. | $\text{ln}0.5=1{,}590k$ |
+| Divide each side by 1,590. | $\tfrac{\text{ln}0.5}{1{,}590}=k\quad\text{(exact answer)}$ |
+| We use this rate of growth to predict the amount that will be left in 500 years. | $\begin{array}{llllll}A & = & ? \\{A}_{0} & = & 100 \\k & = & \tfrac{\text{ln}0.5}{1{,}590} \\t & = & 500\text{ years} \\A & = & {A}_{0}{e}^{kt} \\\end{array}$ |
+| Substitute in the values. | $A=100{e}^{\tfrac{\text{ln}0.5}{1{,}590}\cdot 500}$ |
+| Evaluate. | $A\approx 80.4\text{ mg}$ |
 |  | In 500 years there would be approximately 80.4 mg remaining. |
 
 {{< fillin
-  question="The half-life of magnesium-27 is 9.45 minutes. How many milligrams of a 10-mg sample remain after 6 minutes?"
+  question="The half-life of magnesium-27 is 9.45 minutes. How many milligrams of a 10-mg sample remain after 6 minutes? Round to the nearest hundredth of a milligram."
   answer="6.44"
+  answerForm="decimal"
   answerDisplay="about $6.44$ mg"
-  hint="Use $A=10(\tfrac12)^{6/9.45}$."
+  hint="At the half-life, half the sample remains: use that to find $k$ in $A=A_0e^{kt}$, then evaluate the model at the new time."
 >}}
 
 {{< fillin
-  question="The half-life of radioactive iodine is 60 days. How many milligrams of a 50-mg sample remain after 40 days?"
+  question="The half-life of radioactive iodine is 60 days. How many milligrams of a 50-mg sample remain after 40 days? Round to the nearest tenth of a milligram."
   answer="31.5"
+  answerForm="decimal"
   answerDisplay="about $31.5$ mg"
-  hint="Use $A=50(\tfrac12)^{40/60}$."
+  hint="At the half-life, half the sample remains: use that to find $k$ in $A=A_0e^{kt}$, then evaluate the model at the new time."
 >}}
-
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and practice with solving exponential and logarithmic equations.
-{{< /callout >}}
 
 ## Practice
 
@@ -343,6 +349,7 @@ This problem requires two main steps. First we must find the decay constant k. I
 {{< fillin
   question="Solve $\log 49=2\log x$."
   answer="7"
+  answerForm="decimal"
   answerDisplay="$x=7$"
   hint="Rewrite $2\log x$ as $\log x^2$, equate the arguments, and reject the root that is not positive."
 >}}
@@ -350,6 +357,7 @@ This problem requires two main steps. First we must find the decay constant k. I
 {{< fillin
   question="Solve $\log x+\log(x-15)=2$."
   answer="20"
+  answerForm="decimal"
   answerDisplay="$x=20$"
   hint="Combine the left side with the Product Property, rewrite in exponential form, and keep only the root satisfying $x>15$."
 >}}
@@ -357,6 +365,7 @@ This problem requires two main steps. First we must find the decay constant k. I
 {{< fillin
   question="Solve $\log_5(x+1)+\log_5(x-5)=\log_5 7$."
   answer="6"
+  answerForm="decimal"
   answerDisplay="$x=6$"
   hint="Use the Product Property, apply the One-to-One Property, and keep only the root satisfying $x>5$."
 >}}
@@ -383,8 +392,9 @@ This problem requires two main steps. First we must find the decay constant k. I
   question="Solve $\tfrac{e^{x^2}}{e^x}=e^{20}$. Enter both solutions, separated by a comma."
   answer="-4,5"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-4$ or $x=5$"
-  hint="The bases already match, so set the exponents equal and solve the resulting quadratic."
+  hint="Use the Quotient Property for exponents on the left side; with matching bases, set the exponents equal and solve the resulting quadratic."
 >}}
 
 ### Use exponential models in applications
@@ -392,24 +402,27 @@ This problem requires two main steps. First we must find the decay constant k. I
 {{< fillin
   question="Simone invests \$8,000 in an account that compounds interest quarterly and earns 5%. How long will it take for the money to double? Round to the nearest tenth of a year."
   answer="13.9"
+  answerForm="decimal"
   answerDisplay="about $13.9$ years"
-  hint="Set $2=\left(1+\tfrac{0.05}{4}\right)^{4t}$, take the logarithm of both sides, and solve for $t$."
+  hint="Set the balance in $A=P\left(1+\tfrac{r}{n}\right)^{nt}$ to twice the principal, divide out the principal, take the logarithm of both sides, and solve for $t$."
 >}}
 
 {{< fillin
   question="A bacteria population doubles every 24 hours. After 72 hours, the population is how many times as large as the original? Enter the multiplier."
   answer="8"
+  answerForm="decimal"
   answerDisplay="$8$ times the original population"
-  hint="72 hours is three doubling periods, so multiply by 2 three times."
+  hint="Use $A=2A_0$ at the doubling time to find $k$ in $A=A_0e^{kt}$, then evaluate $\tfrac{A}{A_0}$ at the new time."
 >}}
 
 {{< fillin
   question="Technetium-99m has a half-life of 6 hours. About how many milliliters of a 0.5 ml injection remain in the body after 24 hours? Round to the nearest hundredth of a milliliter."
   answer="0.03"
+  answerForm="decimal"
   answerDisplay="about $0.03$ ml"
-  hint="24 hours is four half-lives, so multiply 0.5 by $(\tfrac12)^4$."
+  hint="At the half-life, half the dose remains: use that to find $k$ in $A=A_0e^{kt}$, then evaluate the model at the new time."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.5: Solve Exponential and Logarithmic Equations](https://openstax.org/books/intermediate-algebra-2e/pages/10-5-solve-exponential-and-logarithmic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.5: Solve Exponential and Logarithmic Equations](https://openstax.org/books/intermediate-algebra-2e/pages/10-5-solve-exponential-and-logarithmic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz, media links, and Key Concepts summary; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

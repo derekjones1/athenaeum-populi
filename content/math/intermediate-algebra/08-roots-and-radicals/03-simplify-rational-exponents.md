@@ -50,21 +50,21 @@ We want to write each expression in the form $\sqrt[n]{a}.$
 | Step | Result |
 | --- | --- |
 |  | $x^{\frac{1}{2}}$ |
-| The denominator of the rational exponent is 2, sothe index of the radical is 2. We do not show theindex when it is 2. | $\sqrt{x}$ |
+| The denominator of the rational exponent is 2, so the index of the radical is 2. We do not show the index when it is 2. | $\sqrt{x}$ |
 
 (b)
 
 | Step | Result |
 | --- | --- |
 |  | $y^{\frac{1}{3}}$ |
-| The denominator of the exponent is 3, so theindex is 3. | $\sqrt[3]{y}$ |
+| The denominator of the exponent is 3, so the index is 3. | $\sqrt[3]{y}$ |
 
 (c)
 
 | Step | Result |
 | --- | --- |
 |  | $z^{\frac{1}{4}}$ |
-| The denominator of the exponent is 4, so theindex is 4. | $\sqrt[4]{z}$ |
+| The denominator of the exponent is 4, so the index is 4. | $\sqrt[4]{z}$ |
 
 {{< fillin
   question="Write as a radical expression: $t^{\tfrac{1}{2}}$"
@@ -124,7 +124,7 @@ We want to write each radical in the form $a^{\tfrac{1}{n}}.$
   answer="\left(10 m\right)^{\tfrac{1}{2}}"
   answerForm="rational-exponent"
   answerDisplay="$\left(10 m\right)^{\tfrac{1}{2}}$"
-  hint="Write the root index as the exponent denominator and the radicand power as its numerator."
+  hint="The index becomes the exponent’s denominator; put parentheses around the whole radicand."
 >}}
 
 {{< fillin
@@ -132,7 +132,7 @@ We want to write each radical in the form $a^{\tfrac{1}{n}}.$
   answer="\left(3 n\right)^{\tfrac{1}{5}}"
   answerForm="rational-exponent"
   answerDisplay="$\left(3 n\right)^{\tfrac{1}{5}}$"
-  hint="Write the root index as the exponent denominator and the radicand power as its numerator."
+  hint="The index becomes the exponent’s denominator; put parentheses around the whole radicand."
 >}}
 
 {{< fillin
@@ -140,7 +140,7 @@ We want to write each radical in the form $a^{\tfrac{1}{n}}.$
   answer="3 \left(6 y\right)^{\tfrac{1}{4}}"
   answerForm="rational-exponent"
   answerDisplay="$3 \left(6 y\right)^{\tfrac{1}{4}}$"
-  hint="Write the root index as the exponent denominator and the radicand power as its numerator."
+  hint="The index becomes the exponent’s denominator; only the radicand goes inside the parentheses, and a factor outside the radical stays outside them."
 >}}
 
 In the next example, you may find it easier to simplify the expressions if you rewrite them as radicals first.
@@ -180,7 +180,7 @@ Simplify: (a) $25^{\tfrac{1}{2}}$ (b) $64^{\tfrac{1}{3}}$ (c) $256^{\tfrac{1}{4}
   answer="6"
   answerForm="decimal"
   answerDisplay="6"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Rewrite the power as a radical (the exponent’s denominator is the index), then evaluate the root."
 >}}
 
 {{< fillin
@@ -188,7 +188,7 @@ Simplify: (a) $25^{\tfrac{1}{2}}$ (b) $64^{\tfrac{1}{3}}$ (c) $256^{\tfrac{1}{4}
   answer="2"
   answerForm="decimal"
   answerDisplay="2"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Rewrite the power as a radical (the exponent’s denominator is the index), then evaluate the root."
 >}}
 
 {{< fillin
@@ -196,7 +196,7 @@ Simplify: (a) $25^{\tfrac{1}{2}}$ (b) $64^{\tfrac{1}{3}}$ (c) $256^{\tfrac{1}{4}
   answer="2"
   answerForm="decimal"
   answerDisplay="2"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Rewrite the power as a radical (the exponent’s denominator is the index), then evaluate the root."
 >}}
 
 Be careful of the placement of the negative signs in the next example. We will need to use the property $a^{- n} = \tfrac{1}{a^{n}}$ in one case.
@@ -211,15 +211,14 @@ Simplify: (a) $\left(-16\right)^{\tfrac{1}{4}}$ (b) $- 16^{\tfrac{1}{4}}$ (c) $\
 | --- | --- |
 |  | $\left(-16\right)^{\frac{1}{4}}$ |
 | Rewrite as a fourth root. | $\sqrt[4]{-16}$ |
-|  | $\sqrt[4]{\left(-2\right)^{4}}$ |
-| Simplify. | $\text{No real solution}.$ |
+| No real number raised to the fourth power is $-16.$ | $\text{No real solution}.$ |
 
 (b)
 
 | Step | Result |
 | --- | --- |
 |  | $- 16^{\frac{1}{4}}$ |
-| The exponent only applies to the 16.Rewrite as a fouth root. | $- \sqrt[4]{16}$ |
+| The exponent only applies to the 16. Rewrite as a fourth root. | $- \sqrt[4]{16}$ |
 | Rewrite 16 as $2^{4}.$ | $- \sqrt[4]{2^{4}}$ |
 | Simplify. | $-2$ |
 
@@ -247,7 +246,7 @@ not a real number
   answer="-8"
   answerForm="decimal"
   answerDisplay="$-8$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Find the base the exponent applies to (parentheses decide whether the negative sign belongs to it), then take the root."
 >}}
 
 {{< fillin
@@ -260,9 +259,9 @@ not a real number
 
 ## Simplify Expressions with $a^{\tfrac{m}{n}}$
 
-We can look at $a^{\tfrac{m}{n}}$ in two ways. Remember the Power Property tells us to multiply the exponents and so $\left(a^{\tfrac{1}{n}}\right)^{m}$ and $\left(a^{m}\right)^{^{\tfrac{1}{n}}}$ both equal $a^{\tfrac{m}{n}}.$ If we write these expressions in radical form, we get
+We can look at $a^{\tfrac{m}{n}}$ in two ways. Remember the Power Property tells us to multiply the exponents and so $\left(a^{\tfrac{1}{n}}\right)^{m}$ and $\left(a^{m}\right)^{\tfrac{1}{n}}$ both equal $a^{\tfrac{m}{n}}.$ If we write these expressions in radical form, we get
 
-$$a^{\tfrac{m}{n}} = \left(a^{\tfrac{1}{n}}\right)^{m} = \left(\sqrt[n]{a}\right)^{m}\ \text{and}\ a^{\tfrac{m}{n}} = \left(a^{m}\right)^{^{\tfrac{1}{n}}} = \sqrt[n]{a^{m}}$$
+$$a^{\tfrac{m}{n}} = \left(a^{\tfrac{1}{n}}\right)^{m} = \left(\sqrt[n]{a}\right)^{m}\ \text{and}\ a^{\tfrac{m}{n}} = \left(a^{m}\right)^{\tfrac{1}{n}} = \sqrt[n]{a^{m}}$$
 
 This leads us to the following definition.
 
@@ -338,7 +337,7 @@ Remember that $a^{- n} = \tfrac{1}{a^{n}}.$ The negative sign in the exponent do
 
 Simplify: (a) $125^{\tfrac{2}{3}}$ (b) $16^{- \tfrac{3}{2}}$ (c) $32^{- \tfrac{2}{5}}.$
 
-We will rewrite the expression as a radical first using the defintion, $a^{\tfrac{m}{n}} = \left(\sqrt[n]{a}\right)^{m}.$ This form lets us take the root first and so we keep the numbers in the radicand smaller than if we used the other form.
+We will rewrite the expression as a radical first using the definition, $a^{\tfrac{m}{n}} = \left(\sqrt[n]{a}\right)^{m}.$ This form lets us take the root first and so we keep the numbers in the radicand smaller than if we used the other form.
 
 (a)
 
@@ -355,7 +354,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
 | --- | --- |
 |  | $16^{- \frac{3}{2}}$ |
 | Rewrite using $a^{- n} = \frac{1}{a^{n}}$ | $\frac{1}{16^{\frac{3}{2}}}$ |
-| Change to radical form. The power of the radical is thenumerator of the exponent, 3. The index is the denominatorof the exponent, 2. | $\frac{1}{\left(\sqrt{16}\right)^{3}}$ |
+| Change to radical form. The power of the radical is the numerator of the exponent, 3. The index is the denominator of the exponent, 2. | $\frac{1}{\left(\sqrt{16}\right)^{3}}$ |
 | Simplify. | $\frac{1}{4^{3}}$ |
 |  | $\frac{1}{64}$ |
 
@@ -375,7 +374,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
   answer="9"
   answerForm="decimal"
   answerDisplay="9"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Take the root named by the denominator first, then raise the result to the power named by the numerator."
 >}}
 
 {{< fillin
@@ -383,7 +382,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
   answer="\tfrac{1}{729}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{729}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  hint="Rewrite as a reciprocal with a positive exponent, then take the root (the denominator) before the power (the numerator)."
 >}}
 
 {{< fillin
@@ -391,7 +390,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
   answer="\tfrac{1}{8}"
   answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{8}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  hint="Rewrite as a reciprocal with a positive exponent, then take the root (the denominator) before the power (the numerator)."
 >}}
 
 **Example.**
@@ -423,14 +422,14 @@ Simplify: (a) $- 25^{\tfrac{3}{2}}$ (b) $- 25^{- \tfrac{3}{2}}$ (c) $\left(-25\r
 | --- | --- |
 |  | $\left(-25\right)^{\frac{3}{2}}$ |
 | Rewrite in radical form. | $\left(\sqrt{-25}\right)^{3}$ |
-| There is no real number whose square root$\text{is} -25.$ | $\text{Not a real number}.$ |
+| There is no real number whose square is $-25.$ | $\text{Not a real number}.$ |
 
 {{< fillin
   question="Simplify: $-16^{\tfrac{3}{2}}$"
   answer="-64"
   answerForm="decimal"
   answerDisplay="$-64$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Find the base the exponent applies to (parentheses decide whether the negative sign belongs to it), then take the root before the power."
 >}}
 
 {{< fillin
@@ -438,7 +437,7 @@ Simplify: (a) $- 25^{\tfrac{3}{2}}$ (b) $- 25^{- \tfrac{3}{2}}$ (c) $\left(-25\r
   answer="- \tfrac{1}{64}"
   answerForm="fraction lowest-terms"
   answerDisplay="$- \tfrac{1}{64}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  hint="Find the base the exponent applies to, rewrite that power as a reciprocal with a positive exponent, then take the root before the power."
 >}}
 
 {{< multiplechoice
@@ -452,7 +451,7 @@ not a real number
 
 ## Use the Properties of Exponents to Simplify Expressions with Rational Exponents
 
-The same properties of exponents that we have already used also apply to rational exponents. We will list the Properties of Exponenets here to have them for reference as we simplify expressions.
+The same properties of exponents that we have already used also apply to rational exponents. We will list the Properties of Exponents here to have them for reference as we simplify expressions.
 
 ### Properties of Exponents
 
@@ -480,7 +479,7 @@ Simplify: (a) $x^{\tfrac{1}{2}} \cdot x^{\tfrac{5}{6}}$ (b) $\left(z^{9}\right)^
 | Step | Result |
 | --- | --- |
 |  | $\left(z^{9}\right)^{\frac{2}{3}}$ |
-| To raise a power to a power, we multiplythe exponents. | $z^{9 \cdot \frac{2}{3}}$ |
+| To raise a power to a power, we multiply the exponents. | $z^{9 \cdot \frac{2}{3}}$ |
 | Simplify. | $z^{6}$ |
 
 (c) The Quotient Property tells us that when we divide with the same base, we subtract the exponents.
@@ -488,32 +487,31 @@ Simplify: (a) $x^{\tfrac{1}{2}} \cdot x^{\tfrac{5}{6}}$ (b) $\left(z^{9}\right)^
 | Step | Result |
 | --- | --- |
 |  | $\frac{x^{\frac{1}{3}}}{x^{\frac{5}{3}}}$ |
-|  | $\frac{x^{\frac{1}{3}}}{x^{\frac{5}{3}}}$ |
-| To divide with the same base, we subtractthe exponents. | $\frac{1}{x^{\frac{5}{3} - \frac{1}{3}}}$ |
+| To divide with the same base, we subtract the exponents. | $\frac{1}{x^{\frac{5}{3} - \frac{1}{3}}}$ |
 | Simplify. | $\frac{1}{x^{\frac{4}{3}}}$ |
 
 {{< fillin
   question="Simplify: $x^{\tfrac{1}{6}} \cdot x^{\tfrac{4}{3}}$"
   answer="x^{\tfrac{3}{2}}"
-  answerForm="single-term"
+  answerForm="single-term rational-exponent"
   answerDisplay="$x^{\tfrac{3}{2}}$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Same base: add the exponents over a common denominator, then reduce the fraction."
 >}}
 
 {{< fillin
   question="Simplify: $\left(x^{6}\right)^{\tfrac{4}{3}}$"
   answer="x^{8}"
-  answerForm="polynomial"
+  answerForm="single-term polynomial"
   answerDisplay="$x^{8}$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Raise a power to a power by multiplying the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{x^{\tfrac{2}{3}}}{x^{\tfrac{5}{3}}}$"
   answer="\tfrac{1}{x}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{1}{x}$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Same base: subtract the exponents, keeping the power in the denominator when its exponent is larger."
 >}}
 
 Sometimes we need to use more than one property. In the next example, we will use both the Product to a Power Property and then the Power Property.
@@ -527,9 +525,9 @@ Simplify: (a) $\left(27 u^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$ (b) $\left(m^{\t
 | Step | Result |
 | --- | --- |
 |  | $\left(27 u^{\frac{1}{2}}\right)^{\frac{2}{3}}$ |
-| First we use the Product to a PowerProperty. | $\left(27\right)^{\frac{2}{3}} \left(u^{\frac{1}{2}}\right)^{\frac{2}{3}}$ |
+| First we use the Product to a Power Property. | $\left(27\right)^{\frac{2}{3}} \left(u^{\frac{1}{2}}\right)^{\frac{2}{3}}$ |
 | Rewrite 27 as a power of 3. | $\left(3^{3}\right)^{\frac{2}{3}} \left(u^{\frac{1}{2}}\right)^{\frac{2}{3}}$ |
-| To raise a power to a power, we multiplythe exponents. | $\left(3^{2}\right) \left(u^{\frac{1}{3}}\right)$ |
+| To raise a power to a power, we multiply the exponents. | $\left(3^{2}\right) \left(u^{\frac{1}{3}}\right)$ |
 | Simplify. | $9 u^{\frac{1}{3}}$ |
 
 (b)
@@ -537,31 +535,31 @@ Simplify: (a) $\left(27 u^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$ (b) $\left(m^{\t
 | Step | Result |
 | --- | --- |
 |  | $\left(m^{\frac{2}{3}} n^{\frac{1}{2}}\right)^{\frac{3}{2}}$ |
-| First we use the Product to a PowerProperty. | $\left(m^{\frac{2}{3}}\right)^{\frac{3}{2}} \left(n^{\frac{1}{2}}\right)^{\frac{3}{2}}$ |
-| To raise a power to a power, we multiplythe exponents. | $m n^{\frac{3}{4}}$ |
+| First we use the Product to a Power Property. | $\left(m^{\frac{2}{3}}\right)^{\frac{3}{2}} \left(n^{\frac{1}{2}}\right)^{\frac{3}{2}}$ |
+| To raise a power to a power, we multiply the exponents. | $m n^{\frac{3}{4}}$ |
 
 {{< fillin
   question="Simplify: $\left(32 x^{\tfrac{1}{3}}\right)^{\tfrac{3}{5}}$"
   answer="8 x^{\tfrac{1}{5}}"
-  answerForm="distributed"
+  answerForm="single-term rational-exponent"
   answerDisplay="$8 x^{\tfrac{1}{5}}$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Use the Product to a Power Property, then multiply the exponents on each factor; take the number’s root before its power."
 >}}
 
 {{< fillin
   question="Simplify: $\left(x^{\tfrac{3}{4}} y^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$"
   answer="x^{\tfrac{1}{2}} y^{\tfrac{1}{3}}"
-  answerForm="distributed"
+  answerForm="single-term"
   answerDisplay="$x^{\tfrac{1}{2}} y^{\tfrac{1}{3}}$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Use the Product to a Power Property, then multiply the exponents on each factor and reduce each fraction."
 >}}
 
 {{< fillin
   question="Simplify: $\left(81 n^{\tfrac{2}{5}}\right)^{\tfrac{3}{2}}$"
   answer="729 n^{\tfrac{3}{5}}"
-  answerForm="single-term"
+  answerForm="single-term rational-exponent"
   answerDisplay="$729 n^{\tfrac{3}{5}}$"
-  hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
+  hint="Use the Product to a Power Property, then multiply the exponents on each factor; take the number’s root before its power."
 >}}
 
 We will use both the Product Property and the Quotient Property in the next example.
@@ -575,41 +573,41 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
 | Step | Result |
 | --- | --- |
 |  | $\frac{x^{\frac{3}{4}} \cdot x^{- \frac{1}{4}}}{x^{- \frac{6}{4}}}$ |
-| Use the Product Property in the numerator,add the exponents. | $\frac{x^{\frac{2}{4}}}{x^{- \frac{6}{4}}}$ |
+| Use the Product Property in the numerator, add the exponents. | $\frac{x^{\frac{2}{4}}}{x^{- \frac{6}{4}}}$ |
 | Use the Quotient Property and subtract the exponents. | $x^{\frac{8}{4}}$ |
 | Simplify. | $x^{2}$ |
 
-(b) Follow the order of operations to simplify inside the parenthese first.
+(b) Follow the order of operations to simplify inside the parentheses first.
 
 | Step | Result |
 | --- | --- |
 |  | $\left(\frac{16 x^{\frac{4}{3}} y^{- \frac{5}{6}}}{x^{- \frac{2}{3}} y^{\frac{1}{6}}}\right)^{\frac{1}{2}}$ |
 | Use the Quotient Property and subtract the exponents. | $\left(\frac{16 x^{\frac{6}{3}}}{y^{\frac{6}{6}}}\right)^{\frac{1}{2}}$ |
 | Simplify. | $\left(\frac{16 x^{2}}{y}\right)^{\frac{1}{2}}$ |
-| Use the Product to a Power Property,multiply the exponents. | $\frac{4 x}{y^{\frac{1}{2}}}$ |
+| Use the Product to a Power Property, multiply the exponents. | $\frac{4 x}{y^{\frac{1}{2}}}$ |
 
 {{< fillin
   question="Simplify: $\tfrac{m^{\tfrac{2}{3}} \cdot m^{- \tfrac{1}{3}}}{m^{- \tfrac{5}{3}}}$"
   answer="m^{2}"
-  answerForm="polynomial"
+  answerForm="single-term polynomial"
   answerDisplay="$m^{2}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  hint="Add the exponents in the numerator, then subtract the denominator’s exponent (subtracting a negative adds)."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{25 m^{\tfrac{1}{6}} n^{\tfrac{11}{6}}}{m^{\tfrac{2}{3}} n^{- \tfrac{1}{6}}}\right)^{\tfrac{1}{2}}$"
   answer="\tfrac{5 n}{m^{\tfrac{1}{4}}}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{5 n}{m^{\tfrac{1}{4}}}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  hint="Simplify inside the parentheses with the Quotient Property first, then raise each factor to the outer power."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{u^{\tfrac{4}{5}} \cdot u^{- \tfrac{2}{5}}}{u^{- \tfrac{13}{5}}}$"
   answer="u^{3}"
-  answerForm="polynomial"
+  answerForm="single-term polynomial"
   answerDisplay="$u^{3}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  hint="Add the exponents in the numerator, then subtract the denominator’s exponent (subtracting a negative adds)."
 >}}
 
 ## Practice
@@ -629,7 +627,7 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
   answer="-6"
   answerForm="decimal"
   answerDisplay="$-6$"
-  hint="The exponent applies only to 216; take the cube root first, then attach the negative sign in front."
+  hint="Find the base the exponent applies to (parentheses decide whether the negative sign belongs to it), then take the cube root."
 >}}
 
 {{< fillin
@@ -651,11 +649,11 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
 >}}
 
 {{< fillin
-  question="Simplify: $81^{- \tfrac{3}{2}}$"
-  answer="\tfrac{1}{729}"
+  question="Simplify: $27^{- \tfrac{2}{3}}$"
+  answer="\tfrac{1}{9}"
   answerForm="fraction lowest-terms"
-  answerDisplay="$\tfrac{1}{729}$"
-  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+  answerDisplay="$\tfrac{1}{9}$"
+  hint="Rewrite as a reciprocal with a positive exponent, then take the root (the denominator) before the power (the numerator)."
 >}}
 
 {{< fillin
@@ -669,37 +667,37 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
 ### Use the properties of exponents to simplify expressions with rational exponents
 
 {{< fillin
-  question="Simplify: $\left(27 q^{\tfrac{3}{2}}\right)^{\tfrac{4}{3}}$"
+  question="Simplify. Assume all variables are positive: $\left(27 q^{\tfrac{3}{2}}\right)^{\tfrac{4}{3}}$"
   answer="81 q^{2}"
-  answerForm="single-term"
+  answerForm="single-term polynomial"
   answerDisplay="$81 q^{2}$"
   hint="Apply the Product to a Power Property, then multiply exponents on each factor."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(a^{\tfrac{1}{3}} b^{\tfrac{2}{3}}\right)^{\tfrac{3}{2}}$"
+  question="Simplify. Assume all variables are positive: $\left(a^{\tfrac{1}{3}} b^{\tfrac{2}{3}}\right)^{\tfrac{3}{2}}$"
   answer="a^{\tfrac{1}{2}} b"
-  answerForm="distributed"
+  answerForm="single-term"
   answerDisplay="$a^{\tfrac{1}{2}} b$"
   hint="Apply the Product to a Power Property, then multiply exponents on each factor."
 >}}
 
 {{< fillin
-  question="Simplify: $\tfrac{c^{\tfrac{5}{3}} \cdot c^{- \tfrac{1}{3}}}{c^{- \tfrac{2}{3}}}$"
+  question="Simplify. Assume all variables are positive: $\tfrac{c^{\tfrac{5}{3}} \cdot c^{- \tfrac{1}{3}}}{c^{- \tfrac{2}{3}}}$"
   answer="c^{2}"
-  answerForm="polynomial"
+  answerForm="single-term polynomial"
   answerDisplay="$c^{2}$"
   hint="Combine the numerator with the Product Property, then apply the Quotient Property against the denominator."
 >}}
 
 {{< fillin
-  question="Simplify: $\left(\tfrac{8 x^{\tfrac{5}{3}} y^{- \tfrac{1}{2}}}{27 x^{- \tfrac{4}{3}} y^{\tfrac{5}{2}}}\right)^{\tfrac{1}{3}}$"
+  question="Simplify. Assume all variables are positive: $\left(\tfrac{8 x^{\tfrac{5}{3}} y^{- \tfrac{1}{2}}}{27 x^{- \tfrac{4}{3}} y^{\tfrac{5}{2}}}\right)^{\tfrac{1}{3}}$"
   answer="\tfrac{2 x}{3 y}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{2 x}{3 y}$"
   hint="Simplify inside the parentheses with the Quotient Property first, then apply the outer power."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.3: Simplify Rational Exponents](https://openstax.org/books/intermediate-algebra-2e/pages/8-3-simplify-rational-exponents) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.3: Simplify Rational Exponents](https://openstax.org/books/intermediate-algebra-2e/pages/8-3-simplify-rational-exponents) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web, describing the three write-with-a-rational-exponent steps in words; in the $(-16)^{1/4}$ example, replaced the source step that rewrites $-16$ as $(-2)^4$ (which equals $16$) with the reason no real fourth root exists; corrected the reason given for $(-25)^{3/2}$, which the source states as "no real number whose square root is $-25$", to "no real number whose square is $-25$"; corrected four spelling slips ("fouth", "defintion", "Exponenets", "parenthese"); omitted the Be Prepared quiz, media links, Key Concepts summary, Writing Exercises, and Self Check checklist; converted selected source Try Its into interactive exercises, posing each not-a-real-number part as a multiple choice; and adapted selected end-of-section exercises into an interactive Practice block.</small>

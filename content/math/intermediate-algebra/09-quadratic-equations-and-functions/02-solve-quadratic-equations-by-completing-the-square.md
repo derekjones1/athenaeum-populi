@@ -146,6 +146,7 @@ $$
 {{< fillin
   question="Complete the square for $a^2-20a$. Enter the resulting binomial squared."
   answer="(a-10)^2"
+  answerForm="factored-completely"
   answerDisplay="$(a-10)^2$"
   hint="Take half of the coefficient of $a$, square it, and factor the resulting perfect square trinomial."
 >}}
@@ -153,6 +154,7 @@ $$
 {{< fillin
   question="Complete the square for $m^2-5m$. Enter the resulting binomial squared."
   answer="(m-\frac{5}{2})^2"
+  answerForm="factored-completely"
   answerDisplay="$(m-\tfrac{5}{2})^2$"
   hint="Take half of $-5$, square it, and factor the resulting perfect square trinomial."
 >}}
@@ -160,6 +162,7 @@ $$
 {{< fillin
   question="Complete the square for $p^2+\tfrac{1}{4}p$. Enter the resulting binomial squared."
   answer="(p+\frac{1}{8})^2"
+  answerForm="factored-completely"
   answerDisplay="$(p+\tfrac{1}{8})^2$"
   hint="Take half of $\tfrac{1}{4}$, square it, and factor the resulting perfect square trinomial."
 >}}
@@ -177,10 +180,10 @@ the square on the left, we will add 9 to both sides of the equation.
 
 $$
 \begin{array}{lrcl}
-&&& x^2+6x=40 \\[4pt]
-&&& x^2+6x+\_\_=40+\_\_ \\[4pt]
+& x^2+6x &=& 40 \\[4pt]
+& x^2+6x+\underline{\qquad} &=& 40+\underline{\qquad} \\[4pt]
 \text{Add 9 to both sides to complete the square.} & x^2+6x+9 &=& 40+9 \\[4pt]
-&&& (x+3)^2=49
+& (x+3)^2 &=& 49
 \end{array}
 $$
 
@@ -220,16 +223,18 @@ $$
   question="Solve by completing the square: $x^2+4x=5$. Enter both solutions, separated by commas."
   answer="-5,1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-5,\ x=1$"
-  hint="Add 4 to both sides so the left side becomes $(x+2)^2$."
+  hint="Add the square of half the coefficient of $x$ to both sides, factor the left side, and use the Square Root Property."
 >}}
 
 {{< fillin
   question="Solve by completing the square: $y^2-10y=-9$. Enter both solutions, separated by commas."
   answer="1,9"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$y=1,\ y=9$"
-  hint="Add 25 to both sides so the left side becomes $(y-5)^2$."
+  hint="Add the square of half the coefficient of $y$ to both sides, factor the left side, and use the Square Root Property."
 >}}
 
 The steps to solve a quadratic equation by completing the square are listed
@@ -255,7 +260,7 @@ always be integers.
 $$
 \begin{array}{lrcl}
 \text{The variable terms are on the left side. Take half of 4 and square it.} &
-x^2+4x+\left(\tfrac{1}{2}(4)\right)^2 &=& -21 \\[10pt]
+x^2+4x+\underline{\qquad} &=& -21 \\[10pt]
 \left(\tfrac{1}{2}(4)\right)^2=4.\ \text{Add 4 to both sides.} &
 x^2+4x+4 &=& -21+4 \\[4pt]
 \text{Factor the perfect square trinomial.} & (x+2)^2 &=& -17 \\[4pt]
@@ -272,16 +277,18 @@ check to you.
   question="Solve by completing the square: $y^2-10y=-35$. Enter both solutions, separated by commas."
   answer="5+\sqrt{10}i,5-\sqrt{10}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$y=5+\sqrt{10}i,\ y=5-\sqrt{10}i$"
-  hint="Add 25 to both sides, then use $\sqrt{-10}=\sqrt{10}i$."
+  hint="Complete the square, use the Square Root Property, and simplify the radical, writing any square root of a negative number with $i$."
 >}}
 
 {{< fillin
   question="Solve by completing the square: $z^2+8z=-19$. Enter both solutions, separated by commas."
   answer="-4+\sqrt{3}i,-4-\sqrt{3}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$z=-4+\sqrt{3}i,\ z=-4-\sqrt{3}i$"
-  hint="Add 16 to both sides, then use the Square Root Property."
+  hint="Complete the square, use the Square Root Property, and simplify the radical, writing any square root of a negative number with $i$."
 >}}
 
 In the previous example, our solutions were complex numbers. In the next
@@ -291,8 +298,8 @@ example, the solutions will be irrational numbers.
 
 $$
 \begin{array}{lrcl}
-\text{The variable terms are on the left. Take half of }-18\text{ and square it.} &
-y^2-18y+\left(\tfrac{1}{2}(-18)\right)^2 &=& -6 \\[10pt]
+\text{The variable terms are on the left. Take half of }{-18}\text{ and square it.} &
+y^2-18y+\underline{\qquad} &=& -6 \\[10pt]
 \left(\tfrac{1}{2}(-18)\right)^2=81.\ \text{Add 81 to both sides.} &
 y^2-18y+81 &=& -6+81 \\[4pt]
 \text{Factor the perfect square trinomial.} & (y-9)^2 &=& 75 \\[4pt]
@@ -327,16 +334,18 @@ for both of the solutions. The answer should be $-6$.
   question="Solve by completing the square: $x^2-16x=-16$. Enter both solutions, separated by commas."
   answer="8+4\sqrt{3},8-4\sqrt{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=8+4\sqrt{3},\ x=8-4\sqrt{3}$"
-  hint="Add 64 to both sides and simplify the radical."
+  hint="Complete the square, use the Square Root Property, and simplify the radical."
 >}}
 
 {{< fillin
   question="Solve by completing the square: $y^2+8y=11$. Enter both solutions, separated by commas."
   answer="-4+3\sqrt{3},-4-3\sqrt{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$y=-4+3\sqrt{3},\ y=-4-3\sqrt{3}$"
-  hint="Add 16 to both sides and simplify $\sqrt{27}$."
+  hint="Complete the square, use the Square Root Property, and simplify the radical."
 >}}
 
 We will start the next example by isolating the variable terms on the left side
@@ -346,11 +355,11 @@ of the equation.
 
 $$
 \begin{array}{lrcl}
-&&& x^2+10x+4=15 \\[4pt]
+& x^2+10x+4 &=& 15 \\[4pt]
 \text{Subtract 4 to get the constant terms on the right side.} &
 x^2+10x &=& 11 \\[4pt]
-\text{Take half of 10 and square it.} &&
-\left(\tfrac{1}{2}(10)\right)^2=25 \\[10pt]
+\text{Take half of 10 and square it: }\left(\tfrac{1}{2}(10)\right)^2=25. &
+x^2+10x+\underline{\qquad} &=& 11 \\[10pt]
 \text{Add 25 to both sides.} & x^2+10x+25 &=& 11+25 \\[4pt]
 \text{Factor the perfect square trinomial.} & (x+5)^2 &=& 36 \\[4pt]
 \text{Use the Square Root Property.} & x+5 &=& \pm\sqrt{36} \\[4pt]
@@ -376,6 +385,7 @@ $$
   question="Solve by completing the square: $a^2+4a+9=30$. Enter both solutions, separated by commas."
   answer="-7,3"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$a=-7,\ a=3$"
   hint="First isolate $a^2+4a$, then complete the square."
 >}}
@@ -384,8 +394,9 @@ $$
   question="Solve by completing the square: $b^2+8b-4=16$. Enter both solutions, separated by commas."
   answer="-10,2"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$b=-10,\ b=2$"
-  hint="First isolate $b^2+8b$, then add 16 to both sides."
+  hint="First isolate $b^2+8b$, then complete the square."
 >}}
 
 To solve the next equation, we must first collect all the variable terms on the
@@ -395,11 +406,11 @@ left side of the equation. Then we proceed as we did in the previous examples.
 
 $$
 \begin{array}{lrcl}
-&&& n^2=3n+11 \\[4pt]
+& n^2 &=& 3n+11 \\[4pt]
 \text{Subtract }3n\text{ to get the variable terms on the left side.} &
 n^2-3n &=& 11 \\[4pt]
-\text{Take half of }-3\text{ and square it.} &&
-\left(\tfrac{1}{2}(-3)\right)^2=\tfrac{9}{4} \\[10pt]
+\text{Take half of }{-3}\text{ and square it: }\left(\tfrac{1}{2}(-3)\right)^2=\tfrac{9}{4}. &
+n^2-3n+\underline{\qquad} &=& 11 \\[10pt]
 \text{Add }\tfrac{9}{4}\text{ to both sides.} &
 n^2-3n+\tfrac{9}{4} &=& 11+\tfrac{9}{4} \\[10pt]
 \text{Factor the perfect square trinomial.} &
@@ -422,16 +433,18 @@ $n=\tfrac{3}{2}-\tfrac{\sqrt{53}}{2}$. We leave the check for you!
   question="Solve by completing the square: $p^2=5p+9$. Enter both solutions, separated by commas."
   answer="\frac{5+\sqrt{61}}{2},\frac{5-\sqrt{61}}{2}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$p=\tfrac{5+\sqrt{61}}{2},\ p=\tfrac{5-\sqrt{61}}{2}$"
-  hint="Rewrite as $p^2-5p=9$, then add $\tfrac{25}{4}$ to both sides."
+  hint="Collect the variable terms on the left, then complete the square; half of an odd coefficient is a fraction."
 >}}
 
 {{< fillin
   question="Solve by completing the square: $q^2=7q-3$. Enter both solutions, separated by commas."
   answer="\frac{7+\sqrt{37}}{2},\frac{7-\sqrt{37}}{2}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$q=\tfrac{7+\sqrt{37}}{2},\ q=\tfrac{7-\sqrt{37}}{2}$"
-  hint="Rewrite as $q^2-7q=-3$, then add $\tfrac{49}{4}$ to both sides."
+  hint="Collect the variable terms on the left, then complete the square; half of an odd coefficient is a fraction."
 >}}
 
 Notice that the left side of the next equation is in factored form. But the
@@ -444,12 +457,12 @@ square.
 
 $$
 \begin{array}{lrcl}
-&&& (x-3)(x+5)=9 \\[4pt]
+& (x-3)(x+5) &=& 9 \\[4pt]
 \text{Multiply the binomials on the left.} & x^2+2x-15 &=& 9 \\[4pt]
 \text{Add 15 to isolate the constant terms on the right.} &
 x^2+2x &=& 24 \\[4pt]
-\text{Take half of 2 and square it.} &&
-\left(\tfrac{1}{2}(2)\right)^2=1 \\[10pt]
+\text{Take half of 2 and square it: }\left(\tfrac{1}{2}(2)\right)^2=1. &
+x^2+2x+\underline{\qquad} &=& 24 \\[10pt]
 \text{Add 1 to both sides.} & x^2+2x+1 &=& 24+1 \\[4pt]
 \text{Factor the perfect square trinomial.} & (x+1)^2 &=& 25 \\[4pt]
 \text{Use the Square Root Property.} & x+1 &=& \pm\sqrt{25} \\[4pt]
@@ -464,6 +477,7 @@ We leave the check for you!
   question="Solve by completing the square: $(c-2)(c+8)=11$. Enter both solutions, separated by commas."
   answer="-9,3"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$c=-9,\ c=3$"
   hint="Multiply the binomials, isolate the variable terms, and complete the square."
 >}}
@@ -472,6 +486,7 @@ We leave the check for you!
   question="Solve by completing the square: $(d-7)(d+3)=56$. Enter both solutions, separated by commas."
   answer="-7,11"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$d=-7,\ d=11$"
   hint="Multiply the binomials, isolate the variable terms, and complete the square."
 >}}
@@ -494,13 +509,13 @@ solving the equation by completing the square.
 
 $$
 \begin{array}{lrcl}
-&&& 3x^2-12x-15=0 \\[4pt]
+& 3x^2-12x-15 &=& 0 \\[4pt]
 \text{Factor out the greatest common factor.} & 3(x^2-4x-5) &=& 0 \\[4pt]
 \text{Divide both sides by 3.} & \tfrac{3(x^2-4x-5)}{3} &=& \tfrac{0}{3} \\[10pt]
 \text{Simplify.} & x^2-4x-5 &=& 0 \\[4pt]
 \text{Add 5 to get the constant terms on the right side.} & x^2-4x &=& 5 \\[4pt]
-\text{Take half of }-4\text{ and square it.} &&
-\left(\tfrac{1}{2}(-4)\right)^2=4 \\[10pt]
+\text{Take half of }{-4}\text{ and square it: }\left(\tfrac{1}{2}(-4)\right)^2=4. &
+x^2-4x+\underline{\qquad} &=& 5 \\[10pt]
 \text{Add 4 to both sides.} & x^2-4x+4 &=& 5+4 \\[4pt]
 \text{Factor the perfect square trinomial.} & (x-2)^2 &=& 9 \\[4pt]
 \text{Use the Square Root Property.} & x-2 &=& \pm\sqrt{9} \\[4pt]
@@ -525,6 +540,7 @@ $$
   question="Solve by completing the square: $2m^2+16m+14=0$. Enter both solutions, separated by commas."
   answer="-7,-1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$m=-7,\ m=-1$"
   hint="First divide the equation by 2, then complete the square."
 >}}
@@ -533,6 +549,7 @@ $$
   question="Solve by completing the square: $4n^2-24n-56=8$. Enter both solutions, separated by commas."
   answer="-2,8"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$n=-2,\ n=8$"
   hint="Move the constant term, divide by 4, and complete the square."
 >}}
@@ -551,11 +568,11 @@ continue with solving the equation by completing the square.
 
 $$
 \begin{array}{lrcl}
-&&& 2x^2-3x=20 \\[4pt]
+& 2x^2-3x &=& 20 \\[4pt]
 \text{Divide both sides by 2.} & \tfrac{2x^2-3x}{2} &=& \tfrac{20}{2} \\[10pt]
 \text{Simplify.} & x^2-\tfrac{3}{2}x &=& 10 \\[10pt]
-\text{Take half of }-\tfrac{3}{2}\text{ and square it.} &&
-\left(\tfrac{1}{2}\left(-\tfrac{3}{2}\right)\right)^2=\tfrac{9}{16} \\[10pt]
+\text{Take half of }{-\tfrac{3}{2}}\text{ and square it: }\left(\tfrac{1}{2}\left(-\tfrac{3}{2}\right)\right)^2=\tfrac{9}{16}. &
+x^2-\tfrac{3}{2}x+\underline{\qquad} &=& 10 \\[10pt]
 \text{Add }\tfrac{9}{16}\text{ to both sides.} &
 x^2-\tfrac{3}{2}x+\tfrac{9}{16} &=& 10+\tfrac{9}{16} \\[10pt]
 \text{Factor the perfect square trinomial.} &
@@ -576,6 +593,7 @@ We leave the check for you!
   question="Solve by completing the square: $3r^2-2r=21$. Enter both solutions, separated by commas."
   answer="-\frac{7}{3},3"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$r=-\tfrac{7}{3},\ r=3$"
   hint="Divide both sides by 3, then complete the square."
 >}}
@@ -584,6 +602,7 @@ We leave the check for you!
   question="Solve by completing the square: $4t^2+2t=20$. Enter both solutions, separated by commas."
   answer="-\frac{5}{2},2"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$t=-\tfrac{5}{2},\ t=2$"
   hint="Divide both sides by 4, then complete the square."
 >}}
@@ -613,11 +632,11 @@ continue with solving the equation by completing the square.
 
 $$
 \begin{array}{lrcl}
-&&& 3x^2+2x=4 \\[4pt]
+& 3x^2+2x &=& 4 \\[4pt]
 \text{Divide both sides by 3.} & \tfrac{3x^2+2x}{3} &=& \tfrac{4}{3} \\[10pt]
 \text{Simplify.} & x^2+\tfrac{2}{3}x &=& \tfrac{4}{3} \\[10pt]
-\text{Take half of }\tfrac{2}{3}\text{ and square it.} &&
-\left(\tfrac{1}{2}\cdot\tfrac{2}{3}\right)^2=\tfrac{1}{9} \\[10pt]
+\text{Take half of }\tfrac{2}{3}\text{ and square it: }\left(\tfrac{1}{2}\cdot\tfrac{2}{3}\right)^2=\tfrac{1}{9}. &
+x^2+\tfrac{2}{3}x+\underline{\qquad} &=& \tfrac{4}{3} \\[10pt]
 \text{Add }\tfrac{1}{9}\text{ to both sides.} &
 x^2+\tfrac{2}{3}x+\tfrac{1}{9} &=& \tfrac{4}{3}+\tfrac{1}{9} \\[10pt]
 \text{Factor the perfect square trinomial.} &
@@ -637,6 +656,7 @@ $x=-\tfrac{1}{3}-\tfrac{\sqrt{13}}{3}$. We leave the check for you!
   question="Solve by completing the square: $4x^2+3x=2$. Enter both solutions, separated by commas."
   answer="\frac{-3+\sqrt{41}}{8},\frac{-3-\sqrt{41}}{8}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=\tfrac{-3+\sqrt{41}}{8},\ x=\tfrac{-3-\sqrt{41}}{8}$"
   hint="Divide by 4, complete the square, and simplify the resulting radical."
 >}}
@@ -645,6 +665,7 @@ $x=-\tfrac{1}{3}-\tfrac{\sqrt{13}}{3}$. We leave the check for you!
   question="Solve by completing the square: $3y^2-10y=-5$. Enter both solutions, separated by commas."
   answer="\frac{5}{3}+\frac{\sqrt{10}}{3},\frac{5}{3}-\frac{\sqrt{10}}{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$y=\tfrac{5}{3}+\tfrac{\sqrt{10}}{3},\ y=\tfrac{5}{3}-\tfrac{\sqrt{10}}{3}$"
   hint="Divide by 3, complete the square, and simplify the radical."
 >}}
@@ -662,7 +683,7 @@ Square Root Property.
 {{< fillin
   question="Complete the square for $m^2-24m$ to make a perfect square trinomial, then factor it as a binomial squared."
   answer="(m-12)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(m-12)^2$"
   hint="Take half of $-24$ and square it to find the term that completes the square."
 >}}
@@ -670,7 +691,7 @@ Square Root Property.
 {{< fillin
   question="Complete the square for $x^2-11x$ to make a perfect square trinomial, then factor it as a binomial squared."
   answer="(x-\frac{11}{2})^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x-\tfrac{11}{2})^2$"
   hint="Halving an odd coefficient gives a fraction — square that fraction to complete the square."
 >}}
@@ -678,7 +699,7 @@ Square Root Property.
 {{< fillin
   question="Complete the square for $p^2-\tfrac{1}{3}p$ to make a perfect square trinomial, then factor it as a binomial squared."
   answer="(p-\frac{1}{6})^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(p-\tfrac{1}{6})^2$"
   hint="Halve the fractional coefficient of $p$, then square the result to complete the square."
 >}}
@@ -689,16 +710,18 @@ Square Root Property.
   question="Solve by completing the square: $u^2+2u=3$. Enter both solutions, separated by a comma."
   answer="-3,1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$u=-3,\ u=1$"
-  hint="Add 1 to both sides so the left side becomes $(u+1)^2$."
+  hint="Add the square of half the coefficient of $u$ to both sides, factor the left side, and use the Square Root Property."
 >}}
 
 {{< fillin
   question="Solve by completing the square: $r^2+6r=-11$. Enter both solutions, separated by a comma."
   answer="-3+\sqrt{2}i,-3-\sqrt{2}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$r=-3+\sqrt{2}i,\ r=-3-\sqrt{2}i$"
-  hint="Add 9 to both sides, then use $\sqrt{-2}=\sqrt{2}i$."
+  hint="Complete the square, use the Square Root Property, and simplify the radical, writing any square root of a negative number with $i$."
 >}}
 
 ### Solve quadratic equations of the form $ax^2+bx+c=0$ by completing the square
@@ -707,6 +730,7 @@ Square Root Property.
   question="Solve by completing the square: $3m^2+30m-27=6$. Enter both solutions, separated by a comma."
   answer="-11,1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$m=-11,\ m=1$"
   hint="Move the constant term, divide by 3, and complete the square."
 >}}
@@ -715,10 +739,11 @@ Square Root Property.
   question="Solve by completing the square: $2c^2+c=6$. Enter both solutions, separated by a comma."
   answer="-2,\frac{3}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$c=-2,\ c=\tfrac{3}{2}$"
   hint="Divide both sides by 2, then complete the square."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 9.2: Solve Quadratic Equations by Completing the Square](https://openstax.org/books/intermediate-algebra-2e/pages/9-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example steps as accessible typeset mathematics; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 9.2: Solve Quadratic Equations by Completing the Square](https://openstax.org/books/intermediate-algebra-2e/pages/9-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example steps as accessible typeset mathematics; omitted the Be Prepared quiz, media links, Key Concepts summary (which repeats the How To boxes), Writing Exercises, and Self Check checklist, and added a Key terms entry for completing the square; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, one exercise per part; adapted selected end-of-section exercises into an interactive Practice block; and corrected three source slips: the $x^2-26x$ example writes $\left(\tfrac{1}{2}(-26)\right)^2=(-13)^2$ (the source prints $(13)^2$), the $3x^2-12x-15=0$ example says "Take half of $-4$" (the source says "4"), and the $m^2-5m$ Try It is keyed $\left(m-\tfrac{5}{2}\right)^2$ (the source answer reads $\left(b-\tfrac{5}{2}\right)^2$).</small>

@@ -77,7 +77,7 @@ $$
 \begin{array}{lrcl}
 &&& x^2=9 \\[4pt]
 \text{Use the Square Root Property.} & x &=& \pm\sqrt{9} \\[4pt]
-&&& x=\pm3 \\[4pt]
+& x &=& \pm3 \\[4pt]
 &&& \text{So }x=3\text{ or }x=-3.
 \end{array}
 $$
@@ -102,7 +102,7 @@ $$
 \text{Isolate the quadratic term and make its coefficient one.} & x^2 &=& 50 \\[4pt]
 \text{Use the Square Root Property. Remember to write the }\pm\text{ symbol.} & x &=& \pm\sqrt{50} \\[4pt]
 \text{Simplify the radical.} & x &=& \pm\sqrt{25}\cdot\sqrt{2} \\[4pt]
-&&& x=\pm5\sqrt{2} \\[4pt]
+& x &=& \pm5\sqrt{2} \\[4pt]
 \text{Rewrite to show two solutions.} & x &=& 5\sqrt{2},\quad x=-5\sqrt{2}
 \end{array}
 $$
@@ -127,14 +127,16 @@ $$
   question="Solve $x^2-48=0$. Enter both solutions, separated by a comma."
   answer="4\sqrt{3}, -4\sqrt{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=4\sqrt{3},\ x=-4\sqrt{3}$"
-  hint="Isolate $x^2$, use the Square Root Property, and simplify $\sqrt{48}$."
+  hint="Isolate $x^2$, use the Square Root Property, and simplify the radical."
 >}}
 
 {{< fillin
   question="Solve $y^2-27=0$. Enter both solutions, separated by a comma."
   answer="3\sqrt{3}, -3\sqrt{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$y=3\sqrt{3},\ y=-3\sqrt{3}$"
   hint="Isolate $y^2$, use the Square Root Property, and simplify the radical."
 >}}
@@ -175,6 +177,7 @@ Check: $3(6)^2=108$ and $3(-6)^2=108$.
   question="Solve $2x^2=98$. Enter both solutions, separated by a comma."
   answer="7, -7"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=7,\ x=-7$"
   hint="Divide both sides by 2 before using the Square Root Property."
 >}}
@@ -183,6 +186,7 @@ Check: $3(6)^2=108$ and $3(-6)^2=108$.
   question="Solve $5m^2=80$. Enter both solutions, separated by a comma."
   answer="4, -4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$m=4,\ m=-4$"
   hint="Make the coefficient of $m^2$ equal to one, then take both square roots."
 >}}
@@ -225,6 +229,7 @@ $$
   question="Solve $c^2+12=0$. Enter both solutions, separated by a comma."
   answer="2\sqrt{3}i, -2\sqrt{3}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$c=2\sqrt{3}\,i,\ c=-2\sqrt{3}\,i$"
   hint="After isolating $c^2$, use $\sqrt{-1}=i$ and simplify the radical."
 >}}
@@ -233,8 +238,9 @@ $$
   question="Solve $q^2+24=0$. Enter both solutions, separated by a comma."
   answer="2\sqrt{6}i, -2\sqrt{6}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$q=2\sqrt{6}\,i,\ q=-2\sqrt{6}\,i$"
-  hint="The isolated quadratic term equals a negative number, so the solutions are complex."
+  hint="Isolate $q^2$, use the Square Root Property, and write the square root of a negative number with $i$."
 >}}
 
 Our method also works when fractions occur in the equation; we solve as any
@@ -252,7 +258,7 @@ $$
 \text{Simplify.} & u^2 &=& 18 \\[4pt]
 \text{Use the Square Root Property.} & u &=& \pm\sqrt{18} \\[4pt]
 \text{Simplify the radical.} & u &=& \pm\sqrt{9}\cdot\sqrt{2} \\[4pt]
-&&& u=\pm3\sqrt{2} \\[4pt]
+\text{Simplify.} & u &=& \pm3\sqrt{2} \\[4pt]
 \text{Rewrite to show two solutions.} & u &=& 3\sqrt{2},\quad u=-3\sqrt{2}
 \end{array}
 $$
@@ -264,6 +270,7 @@ $\tfrac{2}{3}(-3\sqrt{2})^2+5=17$.
   question="Solve $\tfrac{1}{2}x^2+4=24$. Enter both solutions, separated by a comma."
   answer="2\sqrt{10}, -2\sqrt{10}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=2\sqrt{10},\ x=-2\sqrt{10}$"
   hint="First subtract 4, then make the coefficient of $x^2$ equal to one."
 >}}
@@ -272,6 +279,7 @@ $\tfrac{2}{3}(-3\sqrt{2})^2+5=17$.
   question="Solve $\tfrac{3}{4}y^2-3=18$. Enter both solutions, separated by a comma."
   answer="2\sqrt{7}, -2\sqrt{7}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$y=2\sqrt{7},\ y=-2\sqrt{7}$"
   hint="Isolate the quadratic term, multiply by the reciprocal of its coefficient, and simplify."
 >}}
@@ -301,6 +309,7 @@ Check: We leave the check for you.
   question="Solve $5r^2-2=34$. Enter both solutions, separated by a comma."
   answer="\frac{6\sqrt{5}}{5}, -\frac{6\sqrt{5}}{5}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$r=\tfrac{6\sqrt{5}}{5},\ r=-\tfrac{6\sqrt{5}}{5}$"
   hint="Isolate $r^2$, take both square roots, and rationalize the denominator."
 >}}
@@ -309,6 +318,7 @@ Check: We leave the check for you.
   question="Solve $3t^2+6=70$. Enter both solutions, separated by a comma."
   answer="\frac{8\sqrt{3}}{3}, -\frac{8\sqrt{3}}{3}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$t=\tfrac{8\sqrt{3}}{3},\ t=-\tfrac{8\sqrt{3}}{3}$"
   hint="After isolating $t^2$, simplify the square root and rationalize the denominator."
 >}}
@@ -346,6 +356,7 @@ $4(7-2\sqrt{3}-7)^2=48$.
   question="Solve $3(a-3)^2=54$. Enter both solutions, separated by a comma."
   answer="3+3\sqrt{2}, 3-3\sqrt{2}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$a=3+3\sqrt{2},\ a=3-3\sqrt{2}$"
   hint="Divide by 3, apply the Square Root Property to the binomial, and solve for $a$."
 >}}
@@ -354,6 +365,7 @@ $4(7-2\sqrt{3}-7)^2=48$.
   question="Solve $2(b+2)^2=80$. Enter both solutions, separated by a comma."
   answer="-2+2\sqrt{10}, -2-2\sqrt{10}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$b=-2+2\sqrt{10},\ b=-2-2\sqrt{10}$"
   hint="Isolate $(b+2)^2$, take both square roots, and then subtract 2."
 >}}
@@ -380,6 +392,7 @@ Check: We leave the check for you.
   question="Solve $(x-\tfrac{1}{2})^2=\tfrac{5}{4}$. Enter both solutions, separated by a comma."
   answer="\frac{1}{2}+\frac{\sqrt{5}}{2}, \frac{1}{2}-\frac{\sqrt{5}}{2}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$x=\tfrac{1}{2}+\tfrac{\sqrt{5}}{2},\ x=\tfrac{1}{2}-\tfrac{\sqrt{5}}{2}$"
   hint="Take the square roots of the numerator and denominator separately, then solve for $x$."
 >}}
@@ -388,6 +401,7 @@ Check: We leave the check for you.
   question="Solve $(y+\tfrac{3}{4})^2=\tfrac{7}{16}$. Enter both solutions, separated by a comma."
   answer="-\frac{3}{4}+\frac{\sqrt{7}}{4}, -\frac{3}{4}-\frac{\sqrt{7}}{4}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$y=-\tfrac{3}{4}+\tfrac{\sqrt{7}}{4},\ y=-\tfrac{3}{4}-\tfrac{\sqrt{7}}{4}$"
   hint="Apply the Square Root Property to the binomial, simplify the radical, and isolate $y$."
 >}}
@@ -414,6 +428,7 @@ Check: We leave the check for you.
   question="Solve $5(a-5)^2+4=104$. Enter both solutions, separated by a comma."
   answer="5+2\sqrt{5}, 5-2\sqrt{5}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$a=5+2\sqrt{5},\ a=5-2\sqrt{5}$"
   hint="Isolate the squared binomial, make its coefficient one, and then apply the Square Root Property."
 >}}
@@ -422,6 +437,7 @@ Check: We leave the check for you.
   question="Solve $3(b+3)^2-8=88$. Enter both solutions, separated by a comma."
   answer="-3+4\sqrt{2}, -3-4\sqrt{2}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$b=-3+4\sqrt{2},\ b=-3-4\sqrt{2}$"
   hint="Add 8, divide by 3, and apply the Square Root Property to $b+3$."
 >}}
@@ -449,6 +465,7 @@ Check: We leave the check for you.
   question="Solve $(3r+4)^2=-8$. Enter both solutions, separated by a comma."
   answer="-\frac{4}{3}+\frac{2\sqrt{2}}{3}i, -\frac{4}{3}-\frac{2\sqrt{2}}{3}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$r=-\tfrac{4}{3}+\tfrac{2\sqrt{2}}{3}i,\ r=-\tfrac{4}{3}-\tfrac{2\sqrt{2}}{3}i$"
   hint="Take both complex square roots, subtract 4, and divide by 3."
 >}}
@@ -457,8 +474,9 @@ Check: We leave the check for you.
   question="Solve $(2t-8)^2=-10$. Enter both solutions, separated by a comma."
   answer="4+\frac{\sqrt{10}}{2}i, 4-\frac{\sqrt{10}}{2}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$t=4+\tfrac{\sqrt{10}}{2}i,\ t=4-\tfrac{\sqrt{10}}{2}i$"
-  hint="Use $\sqrt{-10}=\sqrt{10}i$, then isolate $t$."
+  hint="Use the Square Root Property, write the square root of the negative number with $i$, then isolate $t$."
 >}}
 
 The left sides of the equations in the next two examples do not seem to be of
@@ -490,6 +508,7 @@ $4(-\tfrac{5}{2})^2+4(-\tfrac{5}{2})+1=16$.
   question="Solve $9m^2-12m+4=25$. Enter both solutions, separated by a comma."
   answer="\frac{7}{3}, -1"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$m=\tfrac{7}{3},\ m=-1$"
   hint="Factor the left side as a perfect square trinomial, then use the Square Root Property."
 >}}
@@ -498,6 +517,7 @@ $4(-\tfrac{5}{2})^2+4(-\tfrac{5}{2})+1=16$.
   question="Solve $16n^2+40n+25=4$. Enter both solutions, separated by a comma."
   answer="-\frac{3}{4}, -\frac{7}{4}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$n=-\tfrac{3}{4},\ n=-\tfrac{7}{4}$"
   hint="Recognize the perfect square trinomial on the left before taking square roots."
 >}}
@@ -515,22 +535,25 @@ $x=\sqrt{k}$ or $x=-\sqrt{k}$, which can be written $x=\pm\sqrt{k}$.
   question="Solve $r^2-24=0$. Enter both solutions, separated by a comma."
   answer="2\sqrt{6}, -2\sqrt{6}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$r=2\sqrt{6},\ r=-2\sqrt{6}$"
-  hint="Isolate $r^2$, apply the Square Root Property, and simplify $\sqrt{24}$."
+  hint="Isolate $r^2$, apply the Square Root Property, and simplify the radical."
 >}}
 
 {{< fillin
   question="Solve $x^2+25=0$. Enter both solutions, separated by a comma."
   answer="5i, -5i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=5i,\ x=-5i$"
-  hint="Isolate $x^2$; since it equals a negative number, use $\sqrt{-1}=i$."
+  hint="Isolate $x^2$, use the Square Root Property, and write the square root of a negative number with $\sqrt{-1}=i$."
 >}}
 
 {{< fillin
   question="Solve $7p^2+10=26$. Enter both solutions, separated by a comma."
   answer="\frac{4\sqrt{7}}{7}, -\frac{4\sqrt{7}}{7}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$p=\tfrac{4\sqrt{7}}{7},\ p=-\tfrac{4\sqrt{7}}{7}$"
   hint="Isolate $p^2$, apply the Square Root Property, and rationalize the denominator."
 >}}
@@ -541,18 +564,20 @@ $x=\sqrt{k}$ or $x=-\sqrt{k}$, which can be written $x=\pm\sqrt{k}$.
   question="Solve $(m-6)^2=20$. Enter both solutions, separated by a comma."
   answer="6+2\sqrt{5}, 6-2\sqrt{5}"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$m=6+2\sqrt{5},\ m=6-2\sqrt{5}$"
-  hint="Apply the Square Root Property to the binomial, simplify $\sqrt{20}$, and add 6."
+  hint="Apply the Square Root Property to the binomial, simplify the radical, and solve for $m$."
 >}}
 
 {{< fillin
   question="Solve $(5c+1)^2=-27$. Enter both solutions, separated by a comma."
   answer="-\frac{1}{5}+\frac{3\sqrt{3}}{5}i, -\frac{1}{5}-\frac{3\sqrt{3}}{5}i"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$c=-\tfrac{1}{5}+\tfrac{3\sqrt{3}}{5}i,\ c=-\tfrac{1}{5}-\tfrac{3\sqrt{3}}{5}i$"
   hint="Apply the Square Root Property to the binomial, simplify using $i$, and solve for $c$."
 >}}
 
 <small>
-This page adapts [OpenStax *Intermediate Algebra 2e*, Section 9.1](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property). Changes: adapted the source for web presentation and converted the Try It exercises to interactive questions; omitted the Be Prepared questions and media links; and adapted selected end-of-section exercises into an interactive Practice block.
+This page adapts [OpenStax *Intermediate Algebra 2e*, Section 9.1](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property). Changes: adapted the source for web presentation and converted the Try It exercises to interactive questions; corrected the factoring review's Zero Product Property step, which the source prints as $x-3=0$ twice, to $x-3=0$ or $x+3=0$, and wrote the $q^2+24=0$ Try It's solutions in $q$, where the source answer names them $c$; omitted the Be Prepared questions, media links, Writing Exercises, Self Check checklist, and unselected end-of-section exercises; and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

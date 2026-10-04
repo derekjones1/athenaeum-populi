@@ -546,7 +546,7 @@ how much will be in the account in 8 years by each method of compounding?
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="What is the decibel level of a small fan with intensity $10^{-8}$ watts per square inch?"
+  question="What is the decibel level of a small fan with intensity $10^{-8}$ watts per square meter?"
   answer="40"
   answerDisplay="40 dB"
 >}}

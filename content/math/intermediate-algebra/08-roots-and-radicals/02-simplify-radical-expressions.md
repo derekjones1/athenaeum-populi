@@ -76,9 +76,9 @@ Be careful to write your integer so that it is not confused with the index. The 
 
 #### Simplify a radical expression using the Product Property.
 
-1.  Step 1. Find the largest factor in the radicand that is a perfect power of the index. Rewrite the radicand as a product of two factors, using that factor.
-2.  Step 2. Use the product rule to rewrite the radical as the product of two radicals.
-3.  Step 3. Simplify the root of the perfect power.
+1.  Find the largest factor in the radicand that is a perfect power of the index. Rewrite the radicand as a product of two factors, using that factor.
+2.  Use the product rule to rewrite the radical as the product of two radicals.
+3.  Simplify the root of the perfect power.
 
 We will apply this method in the next example. It may be helpful to have a table of perfect squares, cubes, and fourth powers.
 
@@ -91,8 +91,8 @@ Simplify: (a) $\sqrt{500}$ (b) $\sqrt[3]{16}$ (c) $\sqrt[4]{243}.$
 | Step | Result |
 | --- | --- |
 |  | $\sqrt{500}$ |
-| Rewrite the radicand as a product using the largest perfect square factor. | $\sqrt{1 00 \cdot 5}$ |
-| Rewrite the radical as the product of two radicals. | $\sqrt{1 00} \cdot \sqrt{5}$ |
+| Rewrite the radicand as a product using the largest perfect square factor. | $\sqrt{100 \cdot 5}$ |
+| Rewrite the radical as the product of two radicals. | $\sqrt{100} \cdot \sqrt{5}$ |
 | Simplify. | $10 \sqrt{5}$ |
 
 (b)
@@ -343,10 +343,11 @@ Simplify: (a) $\sqrt[3]{-27}$ (b) $\sqrt[4]{-16}.$
 {{< multiplechoice
   question="Simplify: $\sqrt[4]{-81}$"
   answer="not a real number"
-  hint="An even-indexed root of a negative real number is not a real number."
+  hint="Check the sign of any real number raised to the fourth power."
 >}}
+$-3$
 not a real number
-a real number
+$3$
 {{< /multiplechoice >}}
 
 We have seen how to use the order of operations to simplify some expressions with radicals. In the next example, we have the sum of an integer and a square root. We simplify the square root but cannot add the resulting expression to the integer since one term contains a radical and the other does not. The next example also includes a fraction with a radical in the numerator. Remember that in order to simplify a fraction you need a common factor in the numerator and denominator.
@@ -381,7 +382,7 @@ The terms cannot be added as one has a radical and the other does not. Trying to
 {{< fillin
   question="Simplify: $5 + \sqrt{75}$"
   answer="5 + 5 \sqrt{3}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$5 + 5 \sqrt{3}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -389,15 +390,15 @@ The terms cannot be added as one has a radical and the other does not. Trying to
 {{< fillin
   question="Simplify: $\tfrac{10 - \sqrt{75}}{5}$"
   answer="2 - \sqrt{3}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$2 - \sqrt{3}$"
-  hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
+  hint="Simplify the radical first, then factor the common factor out of the numerator and divide it out with the denominator."
 >}}
 
 {{< fillin
   question="Simplify: $2 + \sqrt{98}$"
   answer="2 + 7 \sqrt{2}"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$2 + 7 \sqrt{2}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -526,7 +527,7 @@ We can use a similar property to simplify a root of a fraction. After removing a
 
 ### Quotient Property of Radical Expressions
 
-If $\sqrt[n]{a}$ and $\sqrt[n]{b}$ are real numbers,$b \neq 0,$ and for any integer $n \geq 2$ then,
+If $\sqrt[n]{a}$ and $\sqrt[n]{b}$ are real numbers, $b \neq 0,$ and for any integer $n \geq 2$ then,
 
 $$\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}\ \text{and}\ \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\tfrac{a}{b}}$$
 
@@ -563,9 +564,9 @@ Simplify: $\sqrt{\tfrac{27 m^{3}}{196}}.$
 
 #### Simplify a square root using the Quotient Property.
 
-1.  Step 1. Simplify the fraction in the radicand, if possible.
-2.  Step 2. Use the Quotient Property to rewrite the radical as the quotient of two radicals.
-3.  Step 3. Simplify the radicals in the numerator and the denominator.
+1.  Simplify the fraction in the radicand, if possible.
+2.  Use the Quotient Property to rewrite the radical as the quotient of two radicals.
+3.  Simplify the radicals in the numerator and the denominator.
 
 **Example.**
 
@@ -669,18 +670,18 @@ Simplify: (a) $\sqrt{\tfrac{18 p^{5} q^{7}}{32 p q^{2}}}$ (b) $\sqrt[3]{\tfrac{1
 >}}
 
 {{< fillin
-  question="Simplify: $\sqrt[3]{\tfrac{16 x^{5} y^{7}}{54 x^{2} y^{2}}}$"
-  answer="\tfrac{2 x y \sqrt[3]{y^{2}}}{3}"
+  question="Simplify: $\sqrt[3]{\tfrac{54 x^{7} y^{5}}{250 x^{2} y^{2}}}$"
+  answer="\tfrac{3 x y \sqrt[3]{x^{2}}}{5}"
   answerForm="simplified-radical"
-  answerDisplay="$\tfrac{2 x y \sqrt[3]{y^{2}}}{3}$"
+  answerDisplay="$\tfrac{3 x y \sqrt[3]{x^{2}}}{5}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
 
 {{< fillin
-  question="Simplify: $\sqrt[4]{\tfrac{5 a^{8} b^{6}}{80 a^{3} b^{2}}}$"
-  answer="\tfrac{\left|a b\right| \sqrt[4]{a}}{2}"
+  question="Simplify: $\sqrt[4]{\tfrac{32 a^{9} b^{7}}{162 a^{3} b^{3}}}$"
+  answer="\tfrac{2 \left|a b\right| \sqrt[4]{a^{2}}}{3}"
   answerForm="simplified-radical"
-  answerDisplay="$\tfrac{\left|a b\right| \sqrt[4]{a}}{2}$"
+  answerDisplay="$\tfrac{2 \left|a b\right| \sqrt[4]{a^{2}}}{3}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
 
@@ -758,7 +759,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 >}}
 
 {{< fillin
-  question="Simplify $\sqrt{125 r^{13}}$"
+  question="Simplify, using absolute value signs as needed: $\sqrt{125 r^{13}}$"
   answer="5 r^{6} \sqrt{5 r}"
   answerForm="simplified-radical"
   answerDisplay="$5 r^{6} \sqrt{5 r}$"
@@ -766,7 +767,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 >}}
 
 {{< fillin
-  question="Simplify $\sqrt[3]{108 x^{5}}$"
+  question="Simplify, using absolute value signs as needed: $\sqrt[3]{108 x^{5}}$"
   answer="3 x \sqrt[3]{4 x^{2}}"
   answerForm="simplified-radical"
   answerDisplay="$3 x \sqrt[3]{4 x^{2}}$"
@@ -774,25 +775,25 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 >}}
 
 {{< fillin
-  question="Simplify $\sqrt[4]{48 y^{6}}$"
+  question="Simplify, using absolute value signs as needed: $\sqrt[4]{48 y^{6}}$"
   answer="2 \lvert y\rvert \sqrt[4]{3 y^{2}}"
   answerForm="simplified-radical"
   answerDisplay="$2 \lvert y\rvert \sqrt[4]{3 y^{2}}$"
-  hint="Factor out the largest perfect fourth-power factor; an even index over an odd power of $y$ needs absolute value bars."
+  hint="Factor out the largest perfect fourth-power factor, numeral and variable, then take its fourth root."
 >}}
 
 ### Use the quotient property to simplify radical expressions
 
 {{< fillin
-  question="Simplify $\sqrt{\tfrac{27 p^{2} q}{108 p^{4} q^{3}}}$"
+  question="Simplify, using absolute value signs as needed: $\sqrt{\tfrac{27 p^{2} q}{108 p^{4} q^{3}}}$"
   answer="\tfrac{1}{2 \lvert p q\rvert}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{1}{2 \lvert p q\rvert}$"
-  hint="Reduce the fraction under the radical first, then take the square root of the resulting perfect square."
+  hint="Reduce the fraction under the radical first, then take the square root of the numerator and the denominator."
 >}}
 
 {{< fillin
-  question="Simplify $\sqrt[3]{\tfrac{16 c^{5} d^{7}}{250 c^{2} d^{2}}}$"
+  question="Simplify, using absolute value signs as needed: $\sqrt[3]{\tfrac{16 c^{5} d^{7}}{250 c^{2} d^{2}}}$"
   answer="\tfrac{2 c d \sqrt[3]{d^{2}}}{5}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{2 c d \sqrt[3]{d^{2}}}{5}$"
@@ -800,13 +801,13 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 >}}
 
 {{< fillin
-  question="Simplify $\sqrt[6]{\tfrac{2 m^{9} n^{7}}{128 m^{3} n}}$"
+  question="Simplify, using absolute value signs as needed: $\sqrt[6]{\tfrac{2 m^{9} n^{7}}{128 m^{3} n}}$"
   answer="\tfrac{\lvert m n\rvert}{2}"
   answerForm="simplified-radical"
   answerDisplay="$\tfrac{\lvert m n\rvert}{2}$"
-  hint="Reduce the fraction under the radical first, then take the sixth root of the resulting perfect sixth power."
+  hint="Reduce the fraction under the radical first, then take the sixth root of the numerator and the denominator."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.2: Simplify Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-2-simplify-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.2: Simplify Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-2-simplify-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, Key Concepts summary, Writing Exercises, media links, and Self Check checklist; converted selected Try Its into interactive exercises, asking the fourth root of a negative number as a multiple choice, and keyed $\sqrt[4]{\tfrac{y^{17}}{y^{5}}}$ as $\lvert y^{3}\rvert$, where the source answers $y^{3}$ (an even root is never negative); and adapted selected end-of-section exercises into an interactive Practice block.</small>

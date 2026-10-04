@@ -50,6 +50,7 @@ Solve: $\sqrt{5 n - 4} - 9 = 0.$
 {{< fillin
   question="Solve: $\sqrt{3 m + 2} - 5 = 0$"
   answer="m = \tfrac{23}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$m = \tfrac{23}{3}$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -57,6 +58,7 @@ Solve: $\sqrt{5 n - 4} - 9 = 0.$
 {{< fillin
   question="Solve: $\sqrt{10 z + 1} - 2 = 0$"
   answer="z = \tfrac{3}{10}"
+  answerForm="lowest-terms"
   answerDisplay="$z = \tfrac{3}{10}$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -106,7 +108,7 @@ If one side of an equation with a square root is a binomial, we use the Product 
 
 ### Binomial Squares
 
-$$\begin{matrix} \\ \\ \left(a + b\right)^{2} = a^{2} + 2 a b + b^{2} \\ \left(a - b\right)^{2} = a^{2} - 2 a b + b^{2}\end{matrix}$$
+$$\begin{matrix} \left(a + b\right)^{2} = a^{2} + 2 a b + b^{2} \\ \left(a - b\right)^{2} = a^{2} - 2 a b + b^{2}\end{matrix}$$
 
 Don’t forget the middle term!
 
@@ -125,21 +127,23 @@ Solve: $\sqrt{p - 1} + 1 = p.$
 | Factor the right side. | $0=(p-1)(p-2)$ |
 | Use the Zero Product Property. | $0=p-1\quad\text{or}\quad 0=p-2$ |
 | Solve each equation. | $p=1\quad\text{or}\quad p=2$ |
-| Check $p=1$. | $\sqrt{1-1}+1=1$ |
-| Check $p=2$. | $\sqrt{2-1}+1=2$ |
+| Check $p=1$. | $\sqrt{1-1}+1=\sqrt{0}+1=1\ \checkmark$ |
+| Check $p=2$. | $\sqrt{2-1}+1=\sqrt{1}+1=2\ \checkmark$ |
 |  | The solutions are $p = 1, p = 2.$ |
 
 {{< fillin
-  question="Solve: $\sqrt{x - 2} + 2 = x$"
+  question="Solve: $\sqrt{x - 2} + 2 = x$. Enter both solutions, separated by a comma."
   answer="x = 2 , x = 3"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$x = 2 , x = 3$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
 
 {{< fillin
-  question="Solve: $\sqrt{y - 5} + 5 = y$"
+  question="Solve: $\sqrt{y - 5} + 5 = y$. Enter both solutions, separated by a comma."
   answer="y = 5 , y = 6"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$y = 5 , y = 6$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
@@ -167,6 +171,7 @@ Solve: $\sqrt[3]{5 x + 1} + 8 = 4.$
 {{< fillin
   question="Solve: $\sqrt[3]{4 x - 3} + 8 = 5$"
   answer="x = -6"
+  answerForm="decimal"
   answerDisplay="$x = -6$"
   hint="Isolate the cube-root expression, cube both sides, and solve the resulting linear equation."
 >}}
@@ -174,6 +179,7 @@ Solve: $\sqrt[3]{5 x + 1} + 8 = 4.$
 {{< fillin
   question="Solve: $\sqrt[3]{6 x - 10} + 1 = -3$"
   answer="x = -9"
+  answerForm="decimal"
   answerDisplay="$x = -9$"
   hint="Isolate the cube-root expression, cube both sides, and solve the resulting linear equation."
 >}}
@@ -191,7 +197,7 @@ Solve: $\left(3 x - 2\right)^{\tfrac{1}{4}} + 3 = 5.$
 | Step | Result |
 | --- | --- |
 |  | $\left(3 x - 2\right)^{\frac{1}{4}} + 3 = 5$ |
-| To isolate the term with the rational exponent,subtract 3 from both sides. | $\left(3 x - 2\right)^{\frac{1}{4}} = 2$ |
+| To isolate the term with the rational exponent, subtract 3 from both sides. | $\left(3 x - 2\right)^{\frac{1}{4}} = 2$ |
 | Raise each side of the equation to the fourth power. | $\left(\left(3 x - 2\right)^{\frac{1}{4}}\right)^{4} = \left(2\right)^{4}$ |
 | Simplify. | $3 x - 2 = 16$ |
 | Solve the equation. | $3 x = 18$ |
@@ -202,15 +208,17 @@ Solve: $\left(3 x - 2\right)^{\tfrac{1}{4}} + 3 = 5.$
 {{< fillin
   question="Solve: $\left(9 x + 9\right)^{\tfrac{1}{4}} - 2 = 1$"
   answer="x = 8"
+  answerForm="decimal"
   answerDisplay="$x = 8$"
-  hint="Isolate the fourth-power expression, raise both sides to the fourth power, and check the result."
+  hint="Isolate the term with the rational exponent, raise both sides to the fourth power, solve, and check the result."
 >}}
 
 {{< fillin
   question="Solve: $\left(4 x - 8\right)^{\tfrac{1}{4}} + 5 = 7$"
   answer="x = 6"
+  answerForm="decimal"
   answerDisplay="$x = 6$"
-  hint="Isolate the fourth-power expression, raise both sides to the fourth power, and check the result."
+  hint="Isolate the term with the rational exponent, raise both sides to the fourth power, solve, and check the result."
 >}}
 
 Sometimes the solution of a radical equation results in two algebraic solutions, but one of them may be an extraneous solution!
@@ -235,6 +243,7 @@ Solve: $\sqrt{r + 4} - r + 2 = 0.$
 {{< fillin
   question="Solve: $\sqrt{m + 9} - m + 3 = 0$"
   answer="m = 7"
+  answerForm="decimal"
   answerDisplay="$m = 7$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -242,6 +251,7 @@ Solve: $\sqrt{r + 4} - r + 2 = 0.$
 {{< fillin
   question="Solve: $\sqrt{n + 1} - n + 1 = 0$"
   answer="n = 3"
+  answerForm="decimal"
   answerDisplay="$n = 3$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -250,11 +260,11 @@ When there is a coefficient in front of the radical, we must raise it to the pow
 
 **Example.**
 
-Solve: $\text{3}\ \sqrt{3 x - 5} - 8 = 4.$
+Solve: $3 \sqrt{3 x - 5} - 8 = 4.$
 
 | Step | Result |
 | --- | --- |
-|  | $\text{3}\ \sqrt{3 x - 5} - 8 = 4$ |
+|  | $3 \sqrt{3 x - 5} - 8 = 4$ |
 | Isolate the radical term. | $3 \sqrt{3 x - 5} = 12$ |
 | Isolate the radical by dividing both sides by 3. | $\sqrt{3 x - 5} = 4$ |
 | Square both sides of the equation. | $\left(\sqrt{3 x - 5}\right)^{2} = \left(4\right)^{2}$ |
@@ -267,6 +277,7 @@ Solve: $\text{3}\ \sqrt{3 x - 5} - 8 = 4.$
 {{< fillin
   question="Solve: $2 \sqrt{4 a + 4} - 16 = 16$"
   answer="a = 63"
+  answerForm="decimal"
   answerDisplay="$a = 63$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -274,6 +285,7 @@ Solve: $\text{3}\ \sqrt{3 x - 5} - 8 = 4.$
 {{< fillin
   question="Solve: $3 \sqrt{2 b + 3} - 25 = 50$"
   answer="b = 311"
+  answerForm="decimal"
   answerDisplay="$b = 311$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -291,7 +303,7 @@ Solve: $\sqrt[3]{4 x - 3} = \sqrt[3]{3 x + 2}.$
 | Step | Result |
 | --- | --- |
 | The radical terms are isolated. | $\sqrt[3]{4 x - 3} = \sqrt[3]{3 x + 2}$ |
-| Since the index is 3, cube both sides of theequation. | $\left(\sqrt[3]{4 x - 3}\right)^{3} = \left(\sqrt[3]{3 x + 2}\right)^{3}$ |
+| Since the index is 3, cube both sides of the equation. | $\left(\sqrt[3]{4 x - 3}\right)^{3} = \left(\sqrt[3]{3 x + 2}\right)^{3}$ |
 | Simplify, then solve the new equation. | $4 x - 3 = 3 x + 2$ |
 |  | $x - 3 = 2$ |
 |  | $x = 5$ |
@@ -302,6 +314,7 @@ Solve: $\sqrt[3]{4 x - 3} = \sqrt[3]{3 x + 2}.$
 {{< fillin
   question="Solve: $\sqrt[3]{5 x - 4} = \sqrt[3]{2 x + 5}$"
   answer="x = 3"
+  answerForm="decimal"
   answerDisplay="$x = 3$"
   hint="Isolate the cube-root expression, cube both sides, and solve the resulting linear equation."
 >}}
@@ -309,6 +322,7 @@ Solve: $\sqrt[3]{4 x - 3} = \sqrt[3]{3 x + 2}.$
 {{< fillin
   question="Solve: $\sqrt[3]{7 x + 1} = \sqrt[3]{2 x - 5}$"
   answer="x = - \tfrac{6}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$x = - \tfrac{6}{5}$"
   hint="Isolate the cube-root expression, cube both sides, and solve the resulting linear equation."
 >}}
@@ -331,23 +345,26 @@ Solve: $\sqrt{m} + 1 = \sqrt{m + 9}.$
 | Square both sides again. | $\left(\sqrt{m}\right)^2=4^2$ |
 | Solve. | $m=16$ |
 | 4. Check the answer. | $\sqrt{16}+1=\sqrt{16+9}$ |
-| Simplify. | $4+1=5$ |
+| Simplify. | $4+1=5\ \checkmark$ |
+|  | The solution is $m = 16.$ |
 
 {{< fillin
   question="Solve: $3 - \sqrt{x} = \sqrt{x - 3}$"
   answer="x = 4"
+  answerForm="decimal"
   answerDisplay="$x = 4$"
-  hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
+  hint="Square both sides, isolate the radical that remains, square again, solve, and check the answer in the original equation."
 >}}
 
 {{< fillin
   question="Solve: $\sqrt{x} + 2 = \sqrt{x + 16}$"
   answer="x = 9"
+  answerForm="decimal"
   answerDisplay="$x = 9$"
-  hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
+  hint="Square both sides, isolate the radical that remains, square again, solve, and check the answer in the original equation."
 >}}
 
-We summarize the steps here. We have adjusted our previous steps to include more than one radical in the equation This procedure will now work for any radical equations.
+We summarize the steps here. We have adjusted our previous steps to include more than one radical in the equation. This procedure will now work for any radical equations.
 
 ### How To
 
@@ -385,16 +402,18 @@ Solve: $\sqrt{q - 2} + 3 = \sqrt{4 q + 1}.$
 {{< fillin
   question="Solve: $\sqrt{x - 1} + 2 = \sqrt{2 x + 6}$"
   answer="x = 5"
+  answerForm="decimal"
   answerDisplay="$x = 5$"
-  hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
+  hint="Square both sides, isolate the radical that remains, square again, solve, and check the answer in the original equation."
 >}}
 
 {{< fillin
   question="Solve: $\sqrt{x} + 2 = \sqrt{3 x + 4}$. Enter both solutions, separated by a comma."
   answer="0,4"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$x=0$ or $x=4$"
-  hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
+  hint="Square both sides, isolate the radical that remains, square again, solve, and check the answer in the original equation."
 >}}
 
 ## Use Radicals in Applications
@@ -413,7 +432,7 @@ As you progress through your college courses, you’ll encounter formulas that i
 6.  Step 6. **Check** the answer in the problem and make sure it makes sense.
 7.  Step 7. **Answer** the question with a complete sentence.
 
-One application of radicals has to do with the effect of gravity on falling objects. The formula allows us to determine how long it will take a fallen object to hit the gound.
+One application of radicals has to do with the effect of gravity on falling objects. The formula allows us to determine how long it will take a fallen object to hit the ground.
 
 ### Falling Objects
 
@@ -439,27 +458,29 @@ Marissa dropped her sunglasses from a bridge 400 feet above a river. Use the for
 | Step | Result |
 | --- | --- |
 | Step 1. Read the problem. |  |
-| Step 2. Identify what we are looking for. | the time it takes for thesunglasses to reach the river |
-| Step 3. Name what we are looking. | Let $t =$ time. |
+| Step 2. Identify what we are looking for. | the time it takes for the sunglasses to reach the river |
+| Step 3. Name what we are looking for. | Let $t =$ time. |
 | Step 4. Translate into an equation by writing the appropriate formula. Substitute in the given information. | $t=\tfrac{\sqrt{400}}{4}$ |
 | Step 5. Solve the equation. | $t=\tfrac{20}{4}$ |
 |  | $t=5$ |
 | Step 6. Check the answer in the problem and make sure it makes sense. | $5=\tfrac{\sqrt{400}}{4}=\tfrac{20}{4}=5$ |
-| Does 5 seconds seem like a reasonable length oftime? | Yes. |
-| Step 7. Answer the question. | It will take 5 seconds for thesunglasses to reach the river. |
+| Does 5 seconds seem like a reasonable length of time? | Yes. |
+| Step 7. Answer the question. | It will take 5 seconds for the sunglasses to reach the river. |
 
 {{< fillin
   question="A helicopter dropped a rescue package from a height of 1,296 feet. Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the package to reach the ground."
   answer="9"
+  answerForm="decimal"
   answerDisplay="9 seconds"
-  hint="Substitute the given measurement into the stated formula, evaluate the square root, and apply the requested rounding."
+  hint="Substitute the height for $h$ in the formula, take the square root, and divide by 4."
 >}}
 
 {{< fillin
-  question="A window washer dropped a squeegee from a platform 196 feet above the sidewalk Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the squeegee to reach the sidewalk."
+  question="A window washer dropped a squeegee from a platform 196 feet above the sidewalk. Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the squeegee to reach the sidewalk."
   answer="3.5"
+  answerForm="decimal"
   answerDisplay="$3.5$ seconds"
-  hint="Substitute the given measurement into the stated formula, evaluate the square root, and apply the requested rounding."
+  hint="Substitute the height for $h$ in the formula, take the square root, and divide by 4."
 >}}
 
 Police officers investigating car accidents measure the length of the skid marks on the pavement. Then they use square roots to determine the speed, in miles per hour, a car was going before applying the brakes.
@@ -478,26 +499,28 @@ After a car accident, the skid marks for one car measured 190 feet. Use the form
 | --- | --- |
 | Step 1. Read the problem |  |
 | Step 2. Identify what we are looking for. | the speed of a car |
-| Step 3. Name what weare looking for, | Let $s =$ the speed. |
+| Step 3. Name what we are looking for. | Let $s =$ the speed. |
 | Step 4. Translate into an equation by writing the appropriate formula. Substitute in the given information. | $s=\sqrt{24(190)}$ |
 | Step 5. Solve the equation. | $s=\sqrt{4{,}560}$ |
 |  | $s=67.52777\ldots$ |
 | Round to 1 decimal place. | $s\approx67.5$ |
-| Step 6. Check the answer. | $67.5\approx\sqrt{24(190)}=\sqrt{4{,}560}\approx67.5277$ |
-|  | The speed of the car before the brakes were appliedwas 67.5 miles per hour. |
+| Step 6. Check the answer. | $67.5\approx\sqrt{24(190)}=\sqrt{4{,}560}=67.5277\ldots$ |
+|  | The speed of the car before the brakes were applied was 67.5 miles per hour. |
 
 {{< fillin
-  question="An accident investigator measured the skid marks of the car. The length of the skid marks was 76 feet. Use the formula $s = \sqrt{24 d}$ to find the speed of the car before the brakes were applied. Round your answer to the nearest tenth."
+  question="An accident investigator measured the skid marks of the car. The length of the skid marks was 76 feet. Use the formula $s = \sqrt{24 d}$ to find the speed of the car, in miles per hour, before the brakes were applied. Round your answer to the nearest tenth."
   answer="42.7"
+  answerForm="decimal"
   answerDisplay="$42.7$ miles per hour"
-  hint="Substitute the given measurement into the stated formula, evaluate the square root, and apply the requested rounding."
+  hint="Substitute the skid length for $d$, multiply under the radical, take the square root, and round to the nearest tenth."
 >}}
 
 {{< fillin
-  question="The skid marks of a vehicle involved in an accident were 122 feet long. Use the formula $s = \sqrt{24 d}$ to find the speed of the vehicle before the brakes were applied. Round your answer to the nearest tenth."
+  question="The skid marks of a vehicle involved in an accident were 122 feet long. Use the formula $s = \sqrt{24 d}$ to find the speed of the vehicle, in miles per hour, before the brakes were applied. Round your answer to the nearest tenth."
   answer="54.1"
+  answerForm="decimal"
   answerDisplay="$54.1$ miles per hour"
-  hint="Substitute the given measurement into the stated formula, evaluate the square root, and apply the requested rounding."
+  hint="Substitute the skid length for $d$, multiply under the radical, take the square root, and round to the nearest tenth."
 >}}
 
 ## Practice
@@ -507,6 +530,7 @@ After a car accident, the skid marks for one car measured 190 feet. Use the form
 {{< fillin
   question="Solve: $\sqrt{5x - 6} = 8$"
   answer="x = 14"
+  answerForm="decimal"
   answerDisplay="$x = 14$"
   hint="Square both sides to eliminate the radical, solve the resulting linear equation, and check the answer in the original equation."
 >}}
@@ -514,7 +538,7 @@ After a car accident, the skid marks for one car measured 190 feet. Use the form
 {{< multiplechoice
   question="Solve: $\sqrt{5x + 1} = -3$"
   answer="no solution"
-  hint="A principal square root is never negative, so check whether the isolated radical is being set equal to a negative number before you square."
+  hint="Isolate the radical, square both sides, solve, and check the result in the original equation."
 >}}
 $x = \tfrac{8}{5}$
 no solution
@@ -523,6 +547,7 @@ no solution
 {{< fillin
   question="Solve: $\sqrt{u - 3} + 3 = u$. Enter both solutions, separated by a comma."
   answer="u = 3 , u = 4"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$u = 3$ or $u = 4$"
   hint="Isolate the radical, square both sides, solve the resulting quadratic equation, and check both candidate solutions in the original equation."
@@ -533,6 +558,7 @@ no solution
 {{< fillin
   question="Solve: $\sqrt{3u + 7} = \sqrt{5u + 1}$"
   answer="u = 3"
+  answerForm="decimal"
   answerDisplay="$u = 3$"
   hint="Since both radicals are already isolated, square both sides, solve the resulting linear equation, and check the answer in the original equation."
 >}}
@@ -540,6 +566,7 @@ no solution
 {{< fillin
   question="Solve: $\sqrt{a} + 2 = \sqrt{a + 4}$"
   answer="a = 0"
+  answerForm="decimal"
   answerDisplay="$a = 0$"
   hint="Square both sides, simplify, isolate the remaining radical, and check the answer in the original equation."
 >}}
@@ -547,6 +574,7 @@ no solution
 {{< fillin
   question="Solve: $\sqrt[3]{2 x^2 + 9 x - 18} = \sqrt[3]{x^2 + 3 x - 2}$. Enter both solutions, separated by a comma."
   answer="x = -8 , x = 2"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$x = -8$ or $x = 2$"
   hint="Since both sides have the same index, cube both sides, solve the resulting quadratic equation, and check each candidate solution in the original equation."
@@ -557,6 +585,7 @@ no solution
 {{< fillin
   question="Reed wants to have a square garden plot in his backyard. He has enough compost to cover an area of 75 square feet. Use the formula $s = \sqrt{A}$ to find the length of each side of his garden, rounded to the nearest tenth of a foot."
   answer="8.7"
+  answerForm="decimal"
   answerDisplay="$8.7$ feet"
   hint="Substitute the given area into the formula, evaluate the square root, and round to the nearest tenth."
 >}}
@@ -564,6 +593,7 @@ no solution
 {{< fillin
   question="A hang glider dropped his cell phone from a height of 350 feet. Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the cell phone to reach the ground, rounded to the nearest tenth."
   answer="4.7"
+  answerForm="decimal"
   answerDisplay="$4.7$ seconds"
   hint="Substitute the given height into the falling-object formula, evaluate the square root, divide by 4, and round to the nearest tenth."
 >}}
@@ -571,10 +601,11 @@ no solution
 {{< fillin
   question="The skid marks for a car involved in an accident measured 216 feet. Use the formula $s = \sqrt{24 d}$ to find the speed of the car before the brakes were applied, in miles per hour."
   answer="72"
+  answerForm="decimal"
   answerDisplay="$72$ miles per hour"
-  hint="Substitute the given skid-mark length into the speed formula and evaluate the square root; this radicand is a perfect square, so no rounding is needed."
+  hint="Substitute the skid length for $d$, multiply under the radical, and take the square root."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.6: Solve Radical Equations](https://openstax.org/books/intermediate-algebra-2e/pages/8-6-solve-radical-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.6: Solve Radical Equations](https://openstax.org/books/intermediate-algebra-2e/pages/8-6-solve-radical-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, Key Concepts summary, Writing Exercises, self-check reflection, and unselected end-of-section exercises; converted the source Try It practice into interactive exercises; adapted selected end-of-section exercises into an interactive Practice block; gave the three skid-mark speeds in miles per hour where the source answers say feet; and corrected the source typos "gound", "subtract 1 to both sides", "what we are looking", "weare", and two missing periods.</small>

@@ -172,7 +172,7 @@ $$
 {{< fillin
   question="Complete the square to make a perfect square trinomial. Enter the result as a binomial square: $a^2-20a$."
   answer="(a-10)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a-10)^2$"
   hint="Find $\left(\tfrac{1}{2}b\right)^2$, add it to the binomial, and factor."
 >}}
@@ -604,7 +604,7 @@ $x=-\sqrt{k}$.
 {{< fillin
   question="Complete the square for $a^{2}+10a$, then write the result as a binomial square."
   answer="(a+5)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(a+5)^2$"
   hint="Add the number that completes the square, then factor the perfect square trinomial as a binomial square."
 >}}
@@ -620,7 +620,7 @@ $x=-\sqrt{k}$.
 {{< fillin
   question="Complete the square for $p^{2}-\tfrac{1}{3}p$, then write the result as a binomial square."
   answer="(p-\frac{1}{6})^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(p-\tfrac{1}{6})^2$"
   hint="Add the number that completes the square, then factor the perfect square trinomial as a binomial square."
 >}}

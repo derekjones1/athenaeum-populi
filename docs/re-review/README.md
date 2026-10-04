@@ -75,7 +75,10 @@ Figure and alt work runs on Opus, never Sonnet.
    Briefs forbid every git command, read-only ones included (one shared
    worktree). Launch in a rolling window of about ten to twelve live
    agents — fourteen at once hit the session limit, which any concurrent
-   session shares; after a limit (429), resume each killed agent by
+   session shares; tick each section off a launch list as its agent starts,
+   and check the list is empty before closing the window (a three-row run
+   skipped Intermediate Algebra 9.8 until the errata step). After a limit
+   (429), resume each killed agent by
    `SendMessage` to its raw id once the limit resets ("resume; re-read
    your regions before editing") and never skip its pages. A leak whose
    fix lies in another fixer's pages is relayed by the parent.

@@ -224,6 +224,36 @@ solve-for or variation key that is a fraction takes `solved:<v>
 single-fraction reduced-fraction` (refuses `a=\frac{2b}{2bc-2}`,
 `h=\frac{2\cdot65}{t}`) and a combined sum takes `solved:<v> no-like-terms`
 or `expanded distributed no-like-terms`; equation forms still read the whole.
+Since the Intermediate Algebra chapters 8–10 re-review (October 3, 2026):
+complex values compare with a tolerance and a numeral fraction whose
+numerator holds a radical times `i` is read (`\frac{-4\pm2\sqrt2 i}{3}`
+grades `correct`), so a complex solution list needs no "in $a+bi$ form"
+pin; `no-like-terms` reads `\frac{16i}{17}` as one term and refuses `5i+3i`;
+`expanded`, `single-term` and `no-like-terms` refuse a written power of `i`
+(`20i-12i^2`, `i^{35}`), and `single-term` passes `i` and `-i`; `2\sqrt{-3}`
+still grades `incorrect` against `2\sqrt3 i` (deliberate). `simplified-radical`
+refuses a letter outside the radical in both one-term halves
+(`\frac{2x\sqrt{5x}}{x^2}`) and a minus in a one-term denominator, and checks
+each endpoint of an interval, union, or inequality. `single-term` and
+`single-fraction` refuse exponent arithmetic left written
+(`x^{\frac34\cdot\frac23}`) and a numeral perfect root (`\sqrt{25}`);
+`rational-exponent` refuses the retyped `(32x^{\frac13})^{\frac35}` and a
+decimal exponent; `reduced-fraction` accepts a rational exponent's bar
+(`\frac{5n}{m^{1/4}}`). A three-sided estimate key (`6<\sqrt{38}<7`) takes
+`decimal` — its given middle is exempt and `\sqrt{36}<\sqrt{38}<\sqrt{49}` is
+`form`. A leading `\approx` (or a label, `x\approx`) is dropped on a bare-number
+key, so a rounding ask needs no "without the ≈ sign" pin. `vertex-form`
+refuses constants left uncombined (`-4(x+1)^2+1+4`, `+0`); `factored` refuses
+a compound numeral fraction or an added signed term in a factor
+(`(p+\frac{\frac14}{2})^2`, `(a+(-10))^2`); `lowest-terms` refuses a fraction
+over 1; `exact-log` takes either term order (`2+\ln9`); `expanded-logarithms`
+refuses a power inside a log's argument (`\log_2 x^4`) and a log with a
+rational value left unevaluated (`\log 10000`); `single-logarithm` passes a
+`\cdot` inside the argument. On an ordered pair or triple key, shape tokens
+apply per coordinate as value forms do, so a polynomial tuple takes
+`expanded distributed no-like-terms`. A `log` curve with base below 1 trims to
+`from`/`to` (graph-core). A paraphrased source stem can drop a source-key
+match: keep a source exercise's wording and add the pin after it.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
@@ -300,9 +330,9 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      `factored`; on October 3, 2026, after Intermediate Algebra ch6 and the
      GCF sweep (Prealgebra 10.6, both knowledge checks with GCF asks), the
      remaining plain `factored` asks are Intermediate Algebra KC 1–6 (7),
-     the completing-the-square items of Elementary Algebra 10.2 and
-     Intermediate Algebra 9.2 (3 each), and Precalculus 3.4 (4) and 7.1 (1),
-     (Elementary Algebra 10.2 is a closed row; the rest are pending rows).
+     and Precalculus 3.4 (4) and 7.1 (1), all pending rows (the
+     completing-the-square items of Elementary Algebra 10.2 and Intermediate
+     Algebra 9.2 took `factored-completely` on October 3, 2026).
      A radical sum key (Multiply, Add, Subtract, or Simplify — `3+2\sqrt2`,
      `2\sqrt3-3\sqrt6`) takes `no-like-terms` with `simplified-radical`
      (`expanded simplified-radical no-like-terms` for a Multiply); run the

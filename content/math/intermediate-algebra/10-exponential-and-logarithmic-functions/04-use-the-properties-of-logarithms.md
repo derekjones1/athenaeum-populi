@@ -17,7 +17,7 @@ weight: 4
 
 Now that we have learned about exponential and logarithmic functions, we can introduce some of the properties of logarithms. These will be very helpful as we continue to solve both exponential and logarithmic equations.
 
-The first two properties derive from the definition of logarithms. Since ${a}^{0}=1,$ we can convert this to logarithmic form and get ${\text{log}}_{a}1=0.$ Also, since ${a}^{1}=a,$ we get ${\text{log}}_{a}a=1.$
+The first two properties derive from the definition of logarithms. Since ${a}^{0}=1,$ we can convert this to logarithmic form and get $\log_{a}1=0.$ Also, since ${a}^{1}=a,$ we get $\log_{a}a=1.$
 
 {{< callout type="info" >}}
 **Properties of Logarithms.**
@@ -31,29 +31,35 @@ $$
 
 In the next example we could evaluate the logarithm by converting to exponential form, as we have done previously, but recognizing and then applying the properties saves time.
 
-**Example 10.28.** Evaluate using the properties of logarithms: ⓐ ${\text{log}}_{8}1$ and ⓑ ${\text{log}}_{6}6.$
+**Example 10.28.** Evaluate using the properties of logarithms: ⓐ $\log_{8}1$ and ⓑ $\log_{6}6.$
 
 **Solution.**
 
 ⓐ
 
-|  | ${\text{log}}_{8}1$ |
+|  | $\log_{8}1$ |
 | --- | --- |
-| Use the property, ${\text{log}}_{a}1=0$. | ${\text{log}}_{8}1=0$ |
+| Use the property, $\log_{a}1=0$. | $\log_{8}1=0$ |
 
-ⓑ $\begin{array}{llllll} & & & {\text{log}}_{6}6 & & \\\text{Use the property,}{\text{log}}_{a}a=1. & & & 1 & & {\text{log}}_{6}6=1 \\\end{array}$
+ⓑ
+
+|  | $\log_{6}6$ |
+| --- | --- |
+| Use the property, $\log_{a}a=1$. | $\log_{6}6=1$ |
 
 {{< fillin
   question="Evaluate $\log_{13}1$ and $\log_9 9$. Enter the results as an ordered pair."
   answer="(0,1)"
+  answerForm="evaluated-logarithm"
   answerDisplay="$\left(0,\ 1\right)$"
-  hint="Use $\log_a1=0$ and $\log_a a=1$."
+  hint="Ask what power of each base gives that logarithm's argument."
   placeholder="ordered pair"
 >}}
 
 {{< fillin
   question="Evaluate $\log_5 1$ and $\log_7 7$. Enter the results as an ordered pair."
   answer="(0,1)"
+  answerForm="evaluated-logarithm"
   answerDisplay="$\left(0,\ 1\right)$"
   hint="Apply the two basic logarithm properties."
   placeholder="ordered pair"
@@ -61,9 +67,9 @@ In the next example we could evaluate the logarithm by converting to exponential
 
 The next two properties can also be verified by converting them from exponential form to logarithmic form, or the reverse.
 
-The exponential equation ${a}^{{\text{log}}_{a}x}=x$ converts to the logarithmic equation ${\text{log}}_{a}x={\text{log}}_{a}x,$ which is a true statement for positive values for x only.
+The exponential equation ${a}^{\log_{a}x}=x$ converts to the logarithmic equation $\log_{a}x=\log_{a}x,$ which is a true statement for positive values of $x$ only.
 
-The logarithmic equation ${\text{log}}_{a}{a}^{x}=x$ converts to the exponential equation ${a}^{x}={a}^{x},$ which is also a true statement.
+The logarithmic equation $\log_{a}{a}^{x}=x$ converts to the exponential equation ${a}^{x}={a}^{x},$ which is also a true statement.
 
 These two properties are called inverse properties because, when we have the same base, raising to a power “undoes” the log and taking the log “undoes” raising to a power. These two properties show the composition of functions. Both ended up with the identity function which shows again that the exponential and logarithmic functions are inverse functions.
 
@@ -79,44 +85,46 @@ $$
 
 In the next example, apply the inverse properties of logarithms.
 
-**Example 10.29.** Evaluate using the properties of logarithms: ⓐ ${4}^{{\text{log}}_{4}9}$ and ⓑ ${\text{log}}_{3}{3}^{5}.$
+**Example 10.29.** Evaluate using the properties of logarithms: ⓐ ${4}^{\log_{4}9}$ and ⓑ $\log_{3}{3}^{5}.$
 
 **Solution.**
 
 ⓐ
 
-|  | ${4}^{{\text{log}}_{4}9}$ |
+|  | ${4}^{\log_{4}9}$ |
 | --- | --- |
-| Use the property, ${a}^{{\text{log}}_{a}x}=x$. | ${4}^{{\text{log}}_{4}9}=9$ |
+| Use the property, ${a}^{\log_{a}x}=x$. | ${4}^{\log_{4}9}=9$ |
 
 ⓑ
 
-|  | ${\text{log}}_{3}{3}^{5}$ |
+|  | $\log_{3}{3}^{5}$ |
 | --- | --- |
-| Use the property, ${\text{log}}_{a}{a}^{x}=x$. | ${\text{log}}_{3}{3}^{5}=5$ |
+| Use the property, $\log_{a}{a}^{x}=x$. | $\log_{3}{3}^{5}=5$ |
 
 {{< fillin
   question="Evaluate $5^{\log_5 15}$ and $\log_7(7^4)$. Enter the results as an ordered pair."
   answer="(15,4)"
+  answerForm="evaluated-logarithm"
   answerDisplay="$\left(15,\ 4\right)$"
-  hint="Use the inverse properties $a^{\log_a x}=x$ and $\log_a(a^x)=x$."
+  hint="Use the inverse properties: a power and a logarithm with the same base undo each other."
   placeholder="ordered pair"
 >}}
 
 {{< fillin
   question="Evaluate $2^{\log_2 8}$ and $\log_2(2^{15})$. Enter the results as an ordered pair."
   answer="(8,15)"
+  answerForm="evaluated-logarithm"
   answerDisplay="$\left(8,\ 15\right)$"
   hint="Each logarithm and exponential has the same base, so the operations undo each other."
   placeholder="ordered pair"
 >}}
 
-There are three more properties of logarithms that will be useful in our work. We know exponential functions and logarithmic function are very interrelated. Our definition of logarithm shows us that a logarithm is the exponent of the equivalent exponential. The properties of exponents have related properties for exponents.
+There are three more properties of logarithms that will be useful in our work. We know exponential functions and logarithmic function are very interrelated. Our definition of logarithm shows us that a logarithm is the exponent of the equivalent exponential. The properties of exponents have related properties for logarithms.
 
-In the Product Property of Exponents, ${a}^{m}\cdot {a}^{n}={a}^{m+n},$ we see that to multiply the same base, we add the exponents. The Product Property of Logarithms, ${\text{log}}_{a}(M\cdot N)={\text{log}}_{a}M+{\text{log}}_{a}N$ tells us to take the log of a product, we add the log of the factors.
+In the Product Property of Exponents, ${a}^{m}\cdot {a}^{n}={a}^{m+n},$ we see that to multiply the same base, we add the exponents. The Product Property of Logarithms, $\log_{a}(M\cdot N)=\log_{a}M+\log_{a}N$ tells us to take the log of a product, we add the log of the factors.
 
 {{< callout type="info" >}}
-**Product Property of Logarithms.** If $M>0,N>0\text{,}\text{a}>0$ and $\text{a}\ne 1,$ then,
+**Product Property of Logarithms.** If $M>0,N>0$, $a>0$ and $a\ne 1,$ then,
 
 $$
 \log_a(M\cdot N)=\log_a M+\log_a N.
@@ -127,45 +135,47 @@ The logarithm of a product is the sum of the logarithms.
 
 We use this property to write the log of a product as a sum of the logs of each factor.
 
-**Example 10.30.** Use the Product Property of Logarithms to write each logarithm as a sum of logarithms. Simplify, if possible: ⓐ ${\text{log}}_{3}7x$ and ⓑ ${\text{log}}_{4}64xy.$
+**Example 10.30.** Use the Product Property of Logarithms to write each logarithm as a sum of logarithms. Simplify, if possible: ⓐ $\log_{3}7x$ and ⓑ $\log_{4}64xy.$
 
 **Solution.**
 
 ⓐ
 
-|  | ${\text{log}}_{3}7x$ |
+|  | $\log_{3}7x$ |
 | --- | --- |
-| Use the Product Property, ${\text{log}}_{a}(M\cdot N)={\text{log}}_{a}M+{\text{log}}_{a}N$. | ${\text{log}}_{3}7+{\text{log}}_{3}x$ |
-|  | ${\text{log}}_{3}7x={\text{log}}_{3}7+{\text{log}}_{3}x$ |
+| Use the Product Property, $\log_{a}(M\cdot N)=\log_{a}M+\log_{a}N$. | $\log_{3}7+\log_{3}x$ |
+|  | $\log_{3}7x=\log_{3}7+\log_{3}x$ |
 
 ⓑ
 
-|  | ${\text{log}}_{4}64xy$ |
+|  | $\log_{4}64xy$ |
 | --- | --- |
-| Use the Product Property, ${\text{log}}_{a}(M\cdot N)={\text{log}}_{a}M+{\text{log}}_{a}N$. | ${\text{log}}_{4}64+{\text{log}}_{4}x+{\text{log}}_{4}y$ |
-| Simplify by evaluating ${\text{log}}_{4}64$. | $3+{\text{log}}_{4}x+{\text{log}}_{4}y$ |
-|  | ${\text{log}}_{4}64xy=3+{\text{log}}_{4}x+{\text{log}}_{4}y$ |
+| Use the Product Property, $\log_{a}(M\cdot N)=\log_{a}M+\log_{a}N$. | $\log_{4}64+\log_{4}x+\log_{4}y$ |
+| Simplify by evaluating $\log_{4}64$. | $3+\log_{4}x+\log_{4}y$ |
+|  | $\log_{4}64xy=3+\log_{4}x+\log_{4}y$ |
 
 {{< fillin
   question="Expand $\log_3(3x)$ and $\log_2(8xy)$ using the Product Property. Enter the results as an ordered pair."
   answer="(1+\log_3 x,3+\log_2 x+\log_2 y)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\left(1+\log_3x,\ 3+\log_2x+\log_2y\right)$"
-  hint="Split each product into a sum, then evaluate $\log_3 3$ and $\log_2 8$."
+  hint="Split each product into a sum of logarithms, then evaluate any logarithm whose argument is a power of its base."
   placeholder="ordered pair"
 >}}
 
 {{< fillin
   question="Expand $\log_9(9x)$ and $\log_3(27xy)$ using the Product Property. Enter the results as an ordered pair."
   answer="(1+\log_9 x,3+\log_3 x+\log_3 y)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\left(1+\log_9x,\ 3+\log_3x+\log_3y\right)$"
   hint="Use the logarithm of a product, then simplify logarithms whose arguments are powers of the base."
   placeholder="ordered pair"
 >}}
 
-Similarly, in the Quotient Property of Exponents, $\tfrac{{a}^{m}}{{a}^{n}}={a}^{m-n},$ we see that to divide the same base, we subtract the exponents. The Quotient Property of Logarithms, ${\text{log}}_{a}\tfrac{M}{N}={\text{log}}_{a}M-{\text{log}}_{a}N$ tells us to take the log of a quotient, we subtract the log of the numerator and denominator.
+Similarly, in the Quotient Property of Exponents, $\tfrac{{a}^{m}}{{a}^{n}}={a}^{m-n},$ we see that to divide the same base, we subtract the exponents. The Quotient Property of Logarithms, $\log_{a}\tfrac{M}{N}=\log_{a}M-\log_{a}N$ tells us to take the log of a quotient, we subtract the log of the numerator and denominator.
 
 {{< callout type="info" >}}
-**Quotient Property of Logarithms.** If $M>0,N>0\text{,}\text{a}>0$ and $\text{a}\ne 1,$ then,
+**Quotient Property of Logarithms.** If $M>0,N>0$, $a>0$ and $a\ne 1,$ then,
 
 $$
 \log_a\left(\tfrac{M}{N}\right)=\log_a M-\log_a N.
@@ -174,33 +184,34 @@ $$
 The logarithm of a quotient is the difference of the logarithms.
 {{< /callout >}}
 
-Note that ${\text{log}}_{a}M-{\text{log}}_{a}N\ne {\text{log}}_{a}(M-N).$
+Note that $\log_{a}M-\log_{a}N\ne \log_{a}(M-N).$
 
 We use this property to write the log of a quotient as a difference of the logs of each factor.
 
-**Example 10.31.** Use the Quotient Property of Logarithms to write each logarithm as a difference of logarithms. Simplify, if possible.ⓐ ${\text{log}}_{5}\tfrac{5}{7}$ and ⓑ $\text{log}\tfrac{x}{100}$
+**Example 10.31.** Use the Quotient Property of Logarithms to write each logarithm as a difference of logarithms. Simplify, if possible. ⓐ $\log_{5}\tfrac{5}{7}$ and ⓑ $\log\tfrac{x}{100}$
 
 **Solution.**
 
 ⓐ
 
-|  | ${\text{log}}_{5}\tfrac{5}{7}$ |
+|  | $\log_{5}\tfrac{5}{7}$ |
 | --- | --- |
-| Use the Quotient Property, ${\text{log}}_{a}\tfrac{M}{N}={\text{log}}_{a}M-{\text{log}}_{a}N$. | ${\text{log}}_{5}5-{\text{log}}_{5}7$ |
-| Simplify. | $1-{\text{log}}_{5}7$ |
-|  | ${\text{log}}_{5}\tfrac{5}{7}=1-{\text{log}}_{5}7$ |
+| Use the Quotient Property, $\log_{a}\tfrac{M}{N}=\log_{a}M-\log_{a}N$. | $\log_{5}5-\log_{5}7$ |
+| Simplify. | $1-\log_{5}7$ |
+|  | $\log_{5}\tfrac{5}{7}=1-\log_{5}7$ |
 
 ⓑ
 
-|  | $\text{log}\tfrac{x}{100}$ |
+|  | $\log\tfrac{x}{100}$ |
 | --- | --- |
-| Use the Quotient Property, ${\text{log}}_{a}\tfrac{M}{N}={\text{log}}_{a}M-{\text{log}}_{a}N$. | $\text{log}x-\text{log}100$ |
-| Simplify. | $\text{log}x-2$ |
-|  | $\text{log}\tfrac{x}{100}=\text{log}x-2$ |
+| Use the Quotient Property, $\log_{a}\tfrac{M}{N}=\log_{a}M-\log_{a}N$. | $\log x-\log 100$ |
+| Simplify. | $\log x-2$ |
+|  | $\log\tfrac{x}{100}=\log x-2$ |
 
 {{< fillin
   question="Expand $\log_4(\tfrac34)$ and $\log(\tfrac{x}{1000})$ using the Quotient Property. Enter the results as an ordered pair."
   answer="(\log_4 3-1,\log x-3)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\left(\log_4 3-1,\ \log x-3\right)$"
   hint="Write the logarithm of a quotient as a difference, then evaluate the denominator logarithms."
   placeholder="ordered pair"
@@ -209,15 +220,16 @@ We use this property to write the log of a quotient as a difference of the logs 
 {{< fillin
   question="Expand $\log_2(\tfrac54)$ and $\log(\tfrac{10}{y})$ using the Quotient Property. Enter the results as an ordered pair."
   answer="(\log_2 5-2,1-\log y)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\left(\log_2 5-2,\ 1-\log y\right)$"
   hint="Use $\log_a(\tfrac{M}{N})=\log_aM-\log_aN$."
   placeholder="ordered pair"
 >}}
 
-The third property of logarithms is related to the Power Property of Exponents, ${({a}^{m})}^{n}={a}^{m\cdot n},$ we see that to raise a power to a power, we multiply the exponents. The Power Property of Logarithms, ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$ tells us to take the log of a number raised to a power, we multiply the power times the log of the number.
+The third property of logarithms is related to the Power Property of Exponents, ${({a}^{m})}^{n}={a}^{m\cdot n},$ we see that to raise a power to a power, we multiply the exponents. The Power Property of Logarithms, $\log_{a}{M}^{p}=p\log_{a}M$ tells us to take the log of a number raised to a power, we multiply the power times the log of the number.
 
 {{< callout type="info" >}}
-**Power Property of Logarithms.** If $M>0,\text{a}>0,\text{a}\ne 1$ and $p$ is any real number then,
+**Power Property of Logarithms.** If $M>0,a>0,a\ne 1$ and $p$ is any real number then,
 
 $$
 \log_a(M^p)=p\log_a M.
@@ -228,27 +240,28 @@ The log of a number raised to a power is the product of the power times the log 
 
 We use this property to write the log of a number raised to a power as the product of the power times the log of the number. We essentially take the exponent and throw it in front of the logarithm.
 
-**Example 10.32.** Use the Power Property of Logarithms to write each logarithm as a product of logarithms. Simplify, if possible.ⓐ ${\text{log}}_{5}{4}^{3}$ and ⓑ $\text{log}{x}^{10}$
+**Example 10.32.** Use the Power Property of Logarithms to write each logarithm as a product of logarithms. Simplify, if possible. ⓐ $\log_{5}{4}^{3}$ and ⓑ $\log {x}^{10}$
 
 **Solution.**
 
 ⓐ
 
-|  | ${\text{log}}_{5}{4}^{3}$ |
+|  | $\log_{5}{4}^{3}$ |
 | --- | --- |
-| Use the Power Property, ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$. | $3{\text{log}}_{5}4$ |
-|  | ${\text{log}}_{5}{4}^{3}=3{\text{log}}_{5}4$ |
+| Use the Power Property, $\log_{a}{M}^{p}=p\log_{a}M$. | $3\log_{5}4$ |
+|  | $\log_{5}{4}^{3}=3\log_{5}4$ |
 
 ⓑ
 
-|  | $\text{log}{x}^{10}$ |
+|  | $\log {x}^{10}$ |
 | --- | --- |
-| Use the Power Property, ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$. | $10\text{log}x$ |
-|  | $\text{log}{x}^{10}=10\text{log}x$ |
+| Use the Power Property, $\log_{a}{M}^{p}=p\log_{a}M$. | $10\log x$ |
+|  | $\log {x}^{10}=10\log x$ |
 
 {{< fillin
   question="Expand $\log_7(5^4)$ and $\log(x^{100})$ using the Power Property. Enter the results as an ordered pair."
   answer="(4\log_7 5,100\log x)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\left(4\log_7 5,\ 100\log x\right)$"
   hint="Move each exponent in front of its logarithm."
   placeholder="ordered pair"
@@ -257,6 +270,7 @@ We use this property to write the log of a number raised to a power as the produ
 {{< fillin
   question="Expand $\log_2(3^7)$ and $\log(x^{20})$ using the Power Property. Enter the results as an ordered pair."
   answer="(7\log_2 3,20\log x)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\left(7\log_2 3,\ 20\log x\right)$"
   hint="Use $\log_a(M^p)=p\log_aM$."
   placeholder="ordered pair"
@@ -265,32 +279,32 @@ We use this property to write the log of a number raised to a power as the produ
 We summarize the Properties of Logarithms here for easy reference. While the natural logarithms are a special case of these properties, it is often helpful to also show the natural logarithm version of each property.
 
 {{< callout type="info" >}}
-**Properties of Logarithms.** If $M>0,N>0,\text{a}>0,\text{a}\ne 1$ and $p$ is any real number then,
+**Properties of Logarithms.** If $M>0,N>0,a>0,a\ne 1$ and $p$ is any real number then,
 
 | Property | Base $a$ | Base $e$ |
 | --- | --- | --- |
-|  | ${\text{log}}_{a}1=0$ | $\text{ln}1=0$ |
-|  | ${\text{log}}_{a}a=1$ | $\text{ln}e=1$ |
-| Inverse Properties | $\begin{array}{llllll}{a}^{{\text{log}}_{a}x}=x \\{\text{log}}_{a}{a}^{x}=x \\\end{array}$ | $\begin{array}{llllll}{e}^{\text{ln}x}=x\ \\\text{ln}{e}^{x}=x \\\end{array}$ |
-| Product Property of Logarithms | ${\text{log}}_{a}(M\cdot N)={\text{log}}_{a}M+{\text{log}}_{a}N$ | $\text{ln}(M\cdot N)=\text{ln}M+\text{ln}N$ |
-| Quotient Property of Logarithms | ${\text{log}}_{a}\tfrac{M}{N}={\text{log}}_{a}M-{\text{log}}_{a}N$ | $\text{ln}\tfrac{M}{N}=\text{ln}M-\text{ln}N$ |
-| Power Property of Logarithms | ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$ | $\text{ln}{M}^{p}=p\text{ln}M$ |
+|  | $\log_{a}1=0$ | $\ln 1=0$ |
+|  | $\log_{a}a=1$ | $\ln e=1$ |
+| Inverse Properties | $\begin{array}{l}a^{\log_{a}x}=x\\ \log_{a}a^{x}=x\end{array}$ | $\begin{array}{l}e^{\ln x}=x\\ \ln e^{x}=x\end{array}$ |
+| Product Property of Logarithms | $\log_{a}(M\cdot N)=\log_{a}M+\log_{a}N$ | $\ln (M\cdot N)=\ln M+\ln N$ |
+| Quotient Property of Logarithms | $\log_{a}\tfrac{M}{N}=\log_{a}M-\log_{a}N$ | $\ln\tfrac{M}{N}=\ln M-\ln N$ |
+| Power Property of Logarithms | $\log_{a}{M}^{p}=p\log_{a}M$ | $\ln {M}^{p}=p\ln M$ |
 {{< /callout >}}
 
 Now that we have the properties we can use them to “expand” a logarithmic expression. This means to write the logarithm as a sum or difference and without any powers.
 
 We generally apply the Product and Quotient Properties before we apply the Power Property.
 
-**Example 10.33.** Use the Properties of Logarithms to expand the logarithm ${\text{log}}_{4}(2{x}^{3}{y}^{2})$. Simplify, if possible.
+**Example 10.33.** Use the Properties of Logarithms to expand the logarithm $\log_{4}(2{x}^{3}{y}^{2})$. Simplify, if possible.
 
 **Solution.**
 
-|  | ${\text{log}}_{4}(2{x}^{3}{y}^{2})$ |
+|  | $\log_{4}(2{x}^{3}{y}^{2})$ |
 | --- | --- |
-| Use the Product Property, ${\text{log}}_{a}(M\cdot N)={\text{log}}_{a}M+{\text{log}}_{a}N$. | ${\text{log}}_{4}2+{\text{log}}_{4}{x}^{3}+{\text{log}}_{4}{y}^{2}$ |
-| Use the Power Property, ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$, on the last two terms. | ${\text{log}}_{4}2+3{\text{log}}_{4}x+2{\text{log}}_{4}y$ |
-| Simplify. | $\tfrac{1}{2}+3{\text{log}}_{4}x+2{\text{log}}_{4}y$ |
-|  | ${\text{log}}_{4}(2{x}^{3}{y}^{2})=\tfrac{1}{2}+3{\text{log}}_{4}x+2{\text{log}}_{4}y$ |
+| Use the Product Property, $\log_{a}(M\cdot N)=\log_{a}M+\log_{a}N$. | $\log_{4}2+\log_{4}{x}^{3}+\log_{4}{y}^{2}$ |
+| Use the Power Property, $\log_{a}{M}^{p}=p\log_{a}M$, on the last two terms. | $\log_{4}2+3\log_{4}x+2\log_{4}y$ |
+| Simplify. | $\tfrac{1}{2}+3\log_{4}x+2\log_{4}y$ |
+|  | $\log_{4}(2{x}^{3}{y}^{2})=\tfrac{1}{2}+3\log_{4}x+2\log_{4}y$ |
 
 {{< fillin
   question="Expand $\log_2(5x^4y^2)$ using the properties of logarithms."
@@ -310,19 +324,19 @@ We generally apply the Product and Quotient Properties before we apply the Power
 
 When we have a radical in the logarithmic expression, it is helpful to first write its radicand as a rational exponent.
 
-**Example 10.34.** Use the Properties of Logarithms to expand the logarithm ${\text{log}}_{2}\sqrt[4]{\tfrac{{x}^{3}}{3{y}^{2}z}}$. Simplify, if possible.
+**Example 10.34.** Use the Properties of Logarithms to expand the logarithm $\log_{2}\sqrt[4]{\tfrac{{x}^{3}}{3{y}^{2}z}}$. Simplify, if possible.
 
 **Solution.**
 
-|  | ${\text{log}}_{2}\sqrt[4]{\tfrac{{x}^{3}}{3{y}^{2}z}}$ |
+|  | $\log_{2}\sqrt[4]{\tfrac{{x}^{3}}{3{y}^{2}z}}$ |
 | --- | --- |
-| Rewrite the radical with a rational exponent. | ${\text{log}}_{2}{(\tfrac{{x}^{3}}{3{y}^{2}z})}^{\tfrac{1}{4}}$ |
-| Use the Power Property, ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$. | $\tfrac{1}{4}{\text{log}}_{2}(\tfrac{{x}^{3}}{3{y}^{2}z})$ |
-| Use the Quotient Property, ${\text{log}}_{a}(\tfrac{M}{N})={\text{log}}_{a}M-{\text{log}}_{a}N$. | $\tfrac{1}{4}({\text{log}}_{2}({x}^{3})-{\text{log}}_{2}(3{y}^{2}z))$ |
-| Use the Product Property, ${\text{log}}_{a}(M\cdot N)={\text{log}}_{a}M+{\text{log}}_{a}N$, in the second term. | $\tfrac{1}{4}({\text{log}}_{2}({x}^{3})-({\text{log}}_{2}3+{\text{log}}_{2}{y}^{2}+{\text{log}}_{2}z))$ |
-| Use the Power Property, ${\text{log}}_{a}{M}^{p}=p{\text{log}}_{a}M$, inside the parentheses. | $\tfrac{1}{4}(3{\text{log}}_{2}x-({\text{log}}_{2}3+2{\text{log}}_{2}y+{\text{log}}_{2}z))$ |
-| Simplify by distributing. | $\tfrac{1}{4}(3{\text{log}}_{2}x-{\text{log}}_{2}3-2{\text{log}}_{2}y-{\text{log}}_{2}z)$ |
-|  | ${\text{log}}_{2}\sqrt[4]{\tfrac{{x}^{3}}{3{y}^{2}z}}=\tfrac{1}{4}(3{\text{log}}_{2}x-{\text{log}}_{2}3-2{\text{log}}_{2}y-{\text{log}}_{2}z)$ |
+| Rewrite the radical with a rational exponent. | $\log_{2}{(\tfrac{{x}^{3}}{3{y}^{2}z})}^{\tfrac{1}{4}}$ |
+| Use the Power Property, $\log_{a}{M}^{p}=p\log_{a}M$. | $\tfrac{1}{4}\log_{2}(\tfrac{{x}^{3}}{3{y}^{2}z})$ |
+| Use the Quotient Property, $\log_{a}(\tfrac{M}{N})=\log_{a}M-\log_{a}N$. | $\tfrac{1}{4}(\log_{2}({x}^{3})-\log_{2}(3{y}^{2}z))$ |
+| Use the Product Property, $\log_{a}(M\cdot N)=\log_{a}M+\log_{a}N$, in the second term. | $\tfrac{1}{4}(\log_{2}({x}^{3})-(\log_{2}3+\log_{2}{y}^{2}+\log_{2}z))$ |
+| Use the Power Property, $\log_{a}{M}^{p}=p\log_{a}M$, inside the parentheses. | $\tfrac{1}{4}(3\log_{2}x-(\log_{2}3+2\log_{2}y+\log_{2}z))$ |
+| Simplify by distributing. | $\tfrac{1}{4}(3\log_{2}x-\log_{2}3-2\log_{2}y-\log_{2}z)$ |
+|  | $\log_{2}\sqrt[4]{\tfrac{{x}^{3}}{3{y}^{2}z}}=\tfrac{1}{4}(3\log_{2}x-\log_{2}3-2\log_{2}y-\log_{2}z)$ |
 
 {{< fillin
   question="Expand $\log_4\sqrt[5]{\tfrac{x^4}{2y^3z^2}}$ using the properties of logarithms."
@@ -344,15 +358,15 @@ The opposite of expanding a logarithm is to condense a sum or difference of loga
 
 To condense logarithmic expressions with the same base into one logarithm, we start by using the Power Property to get the coefficients of the log terms to be one and then the Product and Quotient Properties as needed.
 
-**Example 10.35.** Use the Properties of Logarithms to condense the logarithm ${\text{log}}_{4}3+{\text{log}}_{4}x-{\text{log}}_{4}y$. Simplify, if possible.
+**Example 10.35.** Use the Properties of Logarithms to condense the logarithm $\log_{4}3+\log_{4}x-\log_{4}y$. Simplify, if possible.
 
 **Solution.**
 
-| The log expressions all have the same base, 4. | ${\text{log}}_{4}3+{\text{log}}_{4}x-{\text{log}}_{4}y$ |
+| The log expressions all have the same base, 4. | $\log_{4}3+\log_{4}x-\log_{4}y$ |
 | --- | --- |
-| The first two terms are added, so we use the Product Property, ${\text{log}}_{a}M+{\text{log}}_{a}N={\text{log}}_{a}(M\cdot N)$. | ${\text{log}}_{4}3x-{\text{log}}_{4}y$ |
-| Since the logs are subtracted, we use the Quotient Property, ${\text{log}}_{a}M-{\text{log}}_{a}N={\text{log}}_{a}(\tfrac{M}{N})$. | ${\text{log}}_{4}\tfrac{3x}{y}$ |
-|  | ${\text{log}}_{4}3+{\text{log}}_{4}x-{\text{log}}_{4}y={\text{log}}_{4}\tfrac{3x}{y}$ |
+| The first two terms are added, so we use the Product Property, $\log_{a}M+\log_{a}N=\log_{a}(M\cdot N)$. | $\log_{4}3x-\log_{4}y$ |
+| Since the logs are subtracted, we use the Quotient Property, $\log_{a}M-\log_{a}N=\log_{a}(\tfrac{M}{N})$. | $\log_{4}\tfrac{3x}{y}$ |
+|  | $\log_{4}3+\log_{4}x-\log_{4}y=\log_{4}\tfrac{3x}{y}$ |
 
 {{< fillin
   question="Condense $\log_2 5+\log_2x-\log_2y$ to one logarithm."
@@ -367,18 +381,18 @@ To condense logarithmic expressions with the same base into one logarithm, we st
   answer="\log_3\frac{6}{xy}"
   answerForm="single-logarithm"
   answerDisplay="$\log_3\left(\tfrac{6}{xy}\right)$"
-  hint="Combine the two subtracted logarithms into denominator factors."
+  hint="Apply the Quotient Property once for each subtracted logarithm."
 >}}
 
-**Example 10.36.** Use the Properties of Logarithms to condense the logarithm $2{\text{log}}_{3}x+4{\text{log}}_{3}(x+1)$. Simplify, if possible.
+**Example 10.36.** Use the Properties of Logarithms to condense the logarithm $2\log_{3}x+4\log_{3}(x+1)$. Simplify, if possible.
 
 **Solution.**
 
-| The log expressions have the same base, 3. | $2{\text{log}}_{3}x+4{\text{log}}_{3}(x+1)$ |
+| The log expressions have the same base, 3. | $2\log_{3}x+4\log_{3}(x+1)$ |
 | --- | --- |
-| Use the Power Property, ${\text{log}}_{a}(M^p)=p{\text{log}}_{a}M$. | ${\text{log}}_{3}{x}^{2}+{\text{log}}_{3}{(x+1)}^{4}$ |
-| The terms are added, so we use the Product Property, ${\text{log}}_{a}M+{\text{log}}_{a}N={\text{log}}_{a}(M\cdot N)$. | ${\text{log}}_{3}{x}^{2}{(x+1)}^{4}$ |
-|  | $2{\text{log}}_{3}x+4{\text{log}}_{3}(x+1)={\text{log}}_{3}{x}^{2}{(x+1)}^{4}$ |
+| Use the Power Property, $\log_{a}(M^p)=p\log_{a}M$. | $\log_{3}{x}^{2}+\log_{3}{(x+1)}^{4}$ |
+| The terms are added, so we use the Product Property, $\log_{a}M+\log_{a}N=\log_{a}(M\cdot N)$. | $\log_{3}{x}^{2}{(x+1)}^{4}$ |
+|  | $2\log_{3}x+4\log_{3}(x+1)=\log_{3}{x}^{2}{(x+1)}^{4}$ |
 
 {{< fillin
   question="Condense $3\log_2x+2\log_2(x-1)$ to one logarithm."
@@ -400,7 +414,16 @@ To condense logarithmic expressions with the same base into one logarithm, we st
 
 To evaluate a logarithm with any other base, we can use the Change-of-Base Formula. We will show how this is derived.
 
-The Change-of-Base Formula introduces a new base $b.$ This can be any base b we want where $b>0,b\ne 1.$ Because our calculators have keys for logarithms base 10 and base e, we will rewrite the Change-of-Base Formula with the new base as 10 or e.
+| Suppose we want to evaluate $\log_{a}M$. | $\log_{a}M$ |
+| --- | --- |
+| Let $y=\log_{a}M$. | $y=\log_{a}M$ |
+| Rewrite the expression in exponential form. | $a^{y}=M$ |
+| Take the $\log_{b}$ of each side. | $\log_{b}a^{y}=\log_{b}M$ |
+| Use the Power Property. | $y\log_{b}a=\log_{b}M$ |
+| Solve for $y$. | $y=\tfrac{\log_{b}M}{\log_{b}a}$ |
+| Substitute $y=\log_{a}M$. | $\log_{a}M=\tfrac{\log_{b}M}{\log_{b}a}$ |
+
+The Change-of-Base Formula introduces a new base $b.$ This can be any base $b$ we want where $b>0,b\ne 1.$ Because our calculators have keys for logarithms base 10 and base $e$, we will rewrite the Change-of-Base Formula with the new base as 10 or $e$.
 
 {{< callout type="info" >}}
 **Change-of-Base Formula.** For any logarithmic bases $a,b$ and $M>0,$
@@ -420,7 +443,7 @@ $$
 
 When we use a calculator to find the logarithm value, we usually round to three decimal places. This gives us an approximate value and so we use the approximately equal symbol $(\approx)$.
 
-**Example 10.37.** Rounding to three decimal places, approximate ${\text{log}}_{4}35.$
+**Example 10.37.** Rounding to three decimal places, approximate $\log_{4}35.$
 
 **Solution.**
 
@@ -433,20 +456,18 @@ When we use a calculator to find the logarithm value, we usually round to three 
 {{< fillin
   question="Approximate $\log_3 42$ to three decimal places."
   answer="3.402"
+  answerForm="decimal"
   answerDisplay="$3.402$"
-  hint="Use the change-of-base formula $\log_3 42=\tfrac{\log42}{\log3}$."
+  hint="Use the Change-of-Base Formula with base 10, then round the calculator's quotient to three decimal places."
 >}}
 
 {{< fillin
   question="Approximate $\log_5 46$ to three decimal places."
   answer="2.379"
+  answerForm="decimal"
   answerDisplay="$2.379$"
-  hint="Use $\log_5 46=\tfrac{\log46}{\log5}$ and round only at the end."
+  hint="Rewrite the logarithm as a quotient of common (or natural) logarithms and round only at the end."
 >}}
-
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and practice with using the properties of logarithms.
-{{< /callout >}}
 
 ## Practice
 
@@ -456,25 +477,25 @@ When we use a calculator to find the logarithm value, we usually round to three 
   question="Expand $\log\left(\tfrac{10{,}000}{y}\right)$ using the Quotient Property of Logarithms. Simplify if possible."
   answer="4-\log y"
   answerDisplay="$4-\log y$"
-  answerForm="expanded"
-  hint="Write the quotient as a difference of logarithms, then evaluate $\log 10{,}000$."
+  answerForm="expanded-logarithms"
+  hint="Write the quotient as a difference of logarithms, then evaluate the common logarithm of the power of 10."
 >}}
 
 {{< fillin
   question="Expand $\log_5\left(\tfrac{4ab^3c^4}{d^2}\right)$ using the properties of logarithms."
   answer="\log_5 4+\log_5 a+3\log_5 b+4\log_5 c-2\log_5 d"
   answerDisplay="$\log_5 4+\log_5a+3\log_5b+4\log_5c-2\log_5d$"
-  answerForm="expanded"
+  answerForm="expanded-logarithms"
   hint="Split the quotient and the product into separate logarithms, then move each exponent in front of its logarithm."
 >}}
 
 {{< multiplechoice
   question="Condense $2\log(2x+3)+\tfrac12\log(x+1)$ to a single logarithm. Simplify if possible."
   answer="$\log\left((2x+3)^2\sqrt{x+1}\right)$"
-  hint="Use the Power Property to clear the coefficients, then the Product Property to combine the sum into one logarithm."
+  hint="Move each coefficient into an exponent, then combine the logarithms with the property that matches the operation between them."
 >}}
 $\log\left((2x+3)^2(x+1)^2\right)$
-$2\log(2x+3)+\tfrac12\log(x+1)$
+$\log\left(\tfrac{(2x+3)^2}{\sqrt{x+1}}\right)$
 $\log\left((2x+3)^2\sqrt{x+1}\right)$
 $\log\left((2x+3)^2+\sqrt{x+1}\right)$
 {{< /multiplechoice >}}
@@ -486,7 +507,7 @@ $\log\left((2x+3)^2+\sqrt{x+1}\right)$
   answer="1.674"
   answerDisplay="$1.674$"
   answerForm="decimal"
-  hint="Compute $\tfrac{\log 93}{\log 15}$ on a calculator and round only the final quotient."
+  hint="Rewrite the logarithm as a quotient of common logarithms, divide on a calculator, and round only the final quotient."
 >}}
 
 {{< fillin
@@ -494,9 +515,9 @@ $\log\left((2x+3)^2+\sqrt{x+1}\right)$
   answer="5.542"
   answerDisplay="$5.542$"
   answerForm="decimal"
-  hint="Compute $\tfrac{\log 21}{\log \sqrt{3}}$ on a calculator and round only the final quotient."
+  hint="Apply the Change-of-Base Formula with base 10 or $e$, and round only the final quotient."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.4: Use the Properties of Logarithms](https://openstax.org/books/intermediate-algebra-2e/pages/10-4-use-the-properties-of-logarithms) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.4: Use the Properties of Logarithms](https://openstax.org/books/intermediate-algebra-2e/pages/10-4-use-the-properties-of-logarithms) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, entering the two parts of each two-part Try It as an ordered pair; corrected the property cited in three worked-solution steps (Example 10.29ⓑ cites $\log_a a^x=x$, Example 10.34's quotient step prints $\log_a\tfrac{M}{N}$, and Example 10.36's power step prints the Power Property) and the sentence "the properties of exponents have related properties for logarithms"; and adapted selected end-of-section exercises into an interactive Practice block.</small>

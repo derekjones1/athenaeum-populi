@@ -72,15 +72,15 @@ Write each expression in terms of *i* and simplify if possible:
 | Simplify $\sqrt{12}.$ | $2 \sqrt{3} i$ |
 
 {{< fillin
-  question="Write each expression in terms of $i$ and simplify if possible: $\sqrt{-81}$"
+  question="Write the expression in terms of $i$ and simplify if possible: $\sqrt{-81}$"
   answer="9 i"
-  answerForm="expanded"
+  answerForm="simplified-radical"
   answerDisplay="$9 i$"
   hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then simplify."
 >}}
 
 {{< fillin
-  question="Write each expression in terms of $i$ and simplify if possible: $\sqrt{-5}$"
+  question="Write the expression in terms of $i$ and simplify if possible: $\sqrt{-5}$"
   answer="\sqrt{5} i"
   answerForm="simplified-radical"
   answerDisplay="$\sqrt{5} i$"
@@ -88,7 +88,7 @@ Write each expression in terms of *i* and simplify if possible:
 >}}
 
 {{< fillin
-  question="Write each expression in terms of $i$ and simplify if possible: $\sqrt{-18}$"
+  question="Write the expression in terms of $i$ and simplify if possible: $\sqrt{-18}$"
   answer="3 \sqrt{2} i"
   answerForm="simplified-radical"
   answerDisplay="$3 \sqrt{2} i$"
@@ -115,17 +115,15 @@ If $a = 0,$ then $a + b i$ becomes $0 + b i = b i,$ and is called a pure imagina
 
 We summarize this here.
 
-| Step | Result | Result |
-| --- | --- | --- |
 |  | $a + b i$ |  |
+| --- | --- | --- |
 | $b = 0$ | $\begin{matrix} \\ a + 0 \cdot i \\ \\ a\end{matrix}$ | Real number |
 | $b \neq 0$ | $a + b i$ | Imaginary number |
 | $a = 0$ | $\begin{matrix}0 + b i \\ \\ \\ b i\end{matrix}$ | Pure imaginary number |
 
 The standard form of a complex number is $a + b i,$ so this explains why the preferred form is $\sqrt{- b} = \sqrt{b} i$ when $b > 0.$
 
-The table helps us visualize the complex number system. It is made up of both
-the real numbers and the imaginary numbers.
+The complex number system is made up of both the real numbers ($a+bi$ with $b=0$) and the imaginary numbers ($a+bi$ with $b\neq0$).
 
 ## Add or Subtract Complex Numbers
 
@@ -149,7 +147,7 @@ Add: $\sqrt{-12} + \sqrt{-27}.$
   answer="6 \sqrt{2} i"
   answerForm="simplified-radical"
   answerDisplay="$6 \sqrt{2} i$"
-  hint="Combine the real parts together and the coefficients of $i$ together."
+  hint="Write each square root in terms of $i$, simplify each radical, then add the like terms."
 >}}
 
 {{< fillin
@@ -157,7 +155,7 @@ Add: $\sqrt{-12} + \sqrt{-27}.$
   answer="7 \sqrt{3} i"
   answerForm="simplified-radical"
   answerDisplay="$7 \sqrt{3} i$"
-  hint="Combine the real parts together and the coefficients of $i$ together."
+  hint="Write each square root in terms of $i$, simplify each radical, then add the like terms."
 >}}
 
 Remember to add both the real parts and the imaginary parts in this next example.
@@ -171,7 +169,7 @@ Simplify: (a) $\left(4 - 3 i\right) + \left(5 + 6 i\right)$ (b) $\left(2 - 5 i\r
 | Step | Result |
 | --- | --- |
 |  | $\left(4 - 3 i\right) + \left(5 + 6 i\right)$ |
-| Use the Associative Property to put the realparts and the imaginary parts together. | $\left(4 + 5\right) + \left(-3 i + 6 i\right)$ |
+| Use the Associative Property to put the real parts and the imaginary parts together. | $\left(4 + 5\right) + \left(-3 i + 6 i\right)$ |
 | Simplify. | $9 + 3 i$ |
 
 (b)
@@ -180,7 +178,7 @@ Simplify: (a) $\left(4 - 3 i\right) + \left(5 + 6 i\right)$ (b) $\left(2 - 5 i\r
 | --- | --- |
 |  | $\left(2 - 5 i\right) - \left(5 - 2 i\right)$ |
 | Distribute. | $2 - 5 i - 5 + 2 i$ |
-| Use the Associative Property to put the realparts and the imaginary parts together. | $2 - 5 - 5 i + 2 i$ |
+| Use the Associative Property to put the real parts and the imaginary parts together. | $2 - 5 - 5 i + 2 i$ |
 | Simplify. | $-3 - 3 i$ |
 
 {{< fillin
@@ -226,17 +224,17 @@ Multiply: $2 i \left(7 - 5 i\right).$
 {{< fillin
   question="Multiply: $4 i \left(5 - 3 i\right)$"
   answer="12 + 20 i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$12 + 20 i$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Distribute, replace $i^2$ by $-1$, and write the result in standard form."
 >}}
 
 {{< fillin
   question="Multiply: $-3 i \left(2 + 4 i\right)$"
   answer="12 - 6 i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$12 - 6 i$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Distribute, replace $i^2$ by $-1$, and write the result in standard form."
 >}}
 
 In the next example, we multiply the binomials using the Distributive Property or FOIL.
@@ -256,7 +254,7 @@ Multiply: $\left(3 + 2 i\right) \left(4 - 3 i\right).$
 {{< fillin
   question="Multiply: $\left(5 - 3 i\right) \left(-1 - 2 i\right)$"
   answer="-11 - 7 i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-11 - 7 i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -264,7 +262,7 @@ Multiply: $\left(3 + 2 i\right) \left(4 - 3 i\right).$
 {{< fillin
   question="Multiply: $\left(-4 - 3 i\right) \left(2 + i\right)$"
   answer="-5 - 10 i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-5 - 10 i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -286,15 +284,17 @@ Multiply: $\left(3 + 2 i\right)^{2}$
 {{< fillin
   question="Multiply using the Binomial Squares pattern: $\left(-2 - 5 i\right)^{2}$"
   answer="-21 + 20 i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-21 + 20 i$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Use $(a+b)^2=a^2+2ab+b^2$ with the imaginary term as $b$, then replace $i^2$ by $-1$ and combine the real parts."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares pattern: $\left(-5 + 4 i\right)^{2}$"
   answer="9 - 40 i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$9 - 40 i$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Use $(a+b)^2=a^2+2ab+b^2$ with the imaginary term as $b$, then replace $i^2$ by $-1$ and combine the real parts."
 >}}
 
 Since the square root of a negative number is not a real number, when we have the square roots of two negative numbers, we cannot use the Product Property for Radicals. In order to multiply square roots of negative numbers we should first write them as complex numbers, using $\sqrt{- b} = \sqrt{b} i.$ This is one place students tend to make errors, so be careful when you see multiplying with a negative square root.
@@ -318,7 +318,7 @@ To multiply square roots of negative numbers, we first write them as complex num
   answer="-14"
   answerForm="decimal"
   answerDisplay="$-14$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Write each square root as a multiple of $i$ before multiplying, then replace $i^2$ by $-1$."
 >}}
 
 {{< fillin
@@ -326,7 +326,7 @@ To multiply square roots of negative numbers, we first write them as complex num
   answer="-54"
   answerForm="decimal"
   answerDisplay="$-54$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Write each square root as a multiple of $i$ before multiplying, then replace $i^2$ by $-1$."
 >}}
 
 In the next example, each binomial has a square root of a negative number. Before multiplying, each square root of a negative number must be written as a complex number.
@@ -348,17 +348,17 @@ To multiply square roots of negative numbers, we first write them as complex num
 {{< fillin
   question="Multiply: $\left(4 - \sqrt{-12}\right) \left(3 - \sqrt{-48}\right)$"
   answer="-12 - 22 \sqrt{3} i"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-12 - 22 \sqrt{3} i$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Write each square root of a negative number as a multiple of $i$ first, then FOIL, replace $i^2$ by $-1$, and combine like terms."
 >}}
 
 {{< fillin
   question="Multiply: $\left(-2 + \sqrt{-8}\right) \left(3 - \sqrt{-18}\right)$"
   answer="6 + 12 \sqrt{2} i"
-  answerForm="simplified-radical"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$6 + 12 \sqrt{2} i$"
-  hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
+  hint="Write each square root of a negative number as a multiple of $i$ first, then FOIL, replace $i^2$ by $-1$, and combine like terms."
 >}}
 
 We first looked at conjugate pairs when we studied polynomials. We said that a pair of binomials that each have the same first term and the same last term, but one is a sum and one is a difference is called a *conjugate pair* and is of the form $\left(a - b\right), \left(a + b\right).$
@@ -412,7 +412,7 @@ $$
 \end{aligned}
 $$
 
-Notice this is the same result we found in Example 8.84.
+Notice this is the same result we found with FOIL in the example above.
 
 When we multiply complex conjugates, the product of the last terms will always have an $i^{2}$ which simplifies to $-1.$
 
@@ -475,6 +475,7 @@ Divide: $\tfrac{4 + 3 i}{3 - 4 i}.$
 {{< fillin
   question="Divide: $\tfrac{2 + 5 i}{5 - 2 i}$"
   answer="i"
+  answerForm="expanded"
   answerDisplay="$i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -482,6 +483,7 @@ Divide: $\tfrac{4 + 3 i}{3 - 4 i}.$
 {{< fillin
   question="Divide: $\tfrac{1 + 6 i}{6 - i}$"
   answer="i"
+  answerForm="expanded"
   answerDisplay="$i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -492,9 +494,9 @@ We summarize the steps here.
 
 #### How to divide complex numbers.
 
-1.  Step 1. Write both the numerator and denominator in standard form.
-2.  Step 2. Multiply the numerator and denominator by the complex conjugate of the denominator.
-3.  Step 3. Simplify and write the result in standard form.
+1.  Write both the numerator and denominator in standard form.
+2.  Multiply the numerator and denominator by the complex conjugate of the denominator.
+3.  Simplify and write the result in standard form.
 
 **Example.**
 
@@ -511,7 +513,7 @@ Divide, writing the answer in standard form: $\tfrac{-3}{5 + 2 i}.$
 {{< fillin
   question="Divide, writing the answer in standard form: $\tfrac{4}{1 - 4 i}$"
   answer="\tfrac{4}{17} + \tfrac{16}{17} i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{4}{17} + \tfrac{16}{17} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -519,7 +521,7 @@ Divide, writing the answer in standard form: $\tfrac{-3}{5 + 2 i}.$
 {{< fillin
   question="Divide, writing the answer in standard form: $\tfrac{-2}{-1 + 2 i}$"
   answer="\tfrac{2}{5} + \tfrac{4}{5} i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{2}{5} + \tfrac{4}{5} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -544,6 +546,7 @@ Divide: $\tfrac{5 + 3 i}{4 i}.$
 {{< fillin
   question="Divide: $\tfrac{3 + 3 i}{2 i}$"
   answer="\tfrac{3}{2} - \tfrac{3}{2} i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{3}{2} - \tfrac{3}{2} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -551,6 +554,7 @@ Divide: $\tfrac{5 + 3 i}{4 i}.$
 {{< fillin
   question="Divide: $\tfrac{2 + 4 i}{5 i}$"
   answer="\tfrac{4}{5} - \tfrac{2}{5} i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{4}{5} - \tfrac{2}{5} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -563,7 +567,7 @@ $$\begin{matrix}i^{1} & & & i^{2} & & & i^{3} & & & i^{4} \\ i & & & - 1 & & & i
 
 We summarize this now.
 
-$$\begin{aligned}i^{1} & = & i & & & i^{5} & = & i \\ i^{2} & = & -1 & & & i^{6} & = & -1 \\ i^{3} & = & - i & & & i^{7} & = & - i \\ i^{4} & = & 1 & & & i^{8} & = & 1\end{aligned}$$
+$$\begin{array}{rclcrcl}i^{1} & = & i & \qquad & i^{5} & = & i \\[4pt] i^{2} & = & -1 & \qquad & i^{6} & = & -1 \\[4pt] i^{3} & = & -i & \qquad & i^{7} & = & -i \\[4pt] i^{4} & = & 1 & \qquad & i^{8} & = & 1\end{array}$$
 
 If we continued, the pattern would keep repeating in blocks of four. We can use this pattern to help us simplify powers of $i$. Since $i^4=1$, we rewrite each power, $i^n$, as a product using $i^4$ to a power and another power of $i$.
 
@@ -618,7 +622,7 @@ Simplify: $i^{86}.$
   answer="\sqrt{11} i"
   answerForm="simplified-radical"
   answerDisplay="$\sqrt{11} i$"
-  hint="Rewrite the negative square root as $i$ times the square root of its absolute value; $11$ has no perfect-square factor to pull out."
+  hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then simplify the radical if you can."
 >}}
 
 {{< fillin
@@ -660,7 +664,7 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Multiply: $-6 i \left(-3 - 2 i\right)$"
   answer="-12 + 18 i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-12 + 18 i$"
   hint="Distribute $-6i$ across the binomial and replace $i^2$ with $-1$."
 >}}
@@ -668,7 +672,7 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $\left(3 + 4 i\right)^{2}$"
   answer="-7 + 24 i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-7 + 24 i$"
   hint="Expand with $(a+bi)^2=a^2+2abi+b^2i^2$, then replace $i^2$ with $-1$."
 >}}
@@ -676,7 +680,7 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Multiply: $\left(-2 - \sqrt{-27}\right) \left(4 - \sqrt{-48}\right)$"
   answer="-44 - 4 \sqrt{3} i"
-  answerForm="expanded"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-44 - 4 \sqrt{3} i$"
   hint="Rewrite each negative square root as $i$ times a real radical first, then FOIL and replace $i^2$ with $-1$."
 >}}
@@ -694,7 +698,7 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Divide, writing the answer in standard form: $\tfrac{2 + i}{3 - 4 i}$"
   answer="\tfrac{2}{25} + \tfrac{11}{25} i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{2}{25} + \tfrac{11}{25} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -702,15 +706,15 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Divide: $\tfrac{1 + 4 i}{3 i}$"
   answer="\tfrac{4}{3} - \tfrac{1}{3} i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{4}{3} - \tfrac{1}{3} i$"
-  hint="Write the denominator in standard form as $0+3i$, multiply by its conjugate $-3i$, then simplify to $a+bi$."
+  hint="Write the denominator in standard form, multiply numerator and denominator by its complex conjugate, then write the result as $a+bi$."
 >}}
 
 {{< fillin
   question="Divide: $\tfrac{-4}{3 - 2 i}$"
   answer="-\tfrac{12}{13} - \tfrac{8}{13} i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-\tfrac{12}{13} - \tfrac{8}{13} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -722,7 +726,7 @@ Simplify: $i^{86}.$
   answer="i"
   answerForm="expanded"
   answerDisplay="$i$"
-  hint="Divide the exponent by $4$; a remainder of $1$ means the power equals $i$."
+  hint="Divide the exponent by $4$ and use the remainder to rewrite the power as $(i^4)^q\cdot i^r$."
 >}}
 
 {{< fillin
@@ -730,7 +734,7 @@ Simplify: $i^{86}.$
   answer="-1"
   answerForm="decimal"
   answerDisplay="$-1$"
-  hint="Divide the exponent by $4$; a remainder of $2$ means the power equals $-1$."
+  hint="Divide the exponent by $4$ and use the remainder to rewrite the power as $(i^4)^q\cdot i^r$."
 >}}
 
 {{< fillin
@@ -738,9 +742,9 @@ Simplify: $i^{86}.$
   answer="1"
   answerForm="decimal"
   answerDisplay="$1$"
-  hint="Divide the exponent by $4$; a remainder of $0$ means the power equals $1$."
+  hint="Divide the exponent by $4$ and use the remainder to rewrite the power as $(i^4)^q\cdot i^r$."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.8: Use the Complex Number System](https://openstax.org/books/intermediate-algebra-2e/pages/8-8-use-the-complex-number-system) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.8: Use the Complex Number System](https://openstax.org/books/intermediate-algebra-2e/pages/8-8-use-the-complex-number-system) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; adapted selected end-of-section exercises into an interactive Practice block; described the complex-number-system diagram in a sentence; labeled $bi$ in $a+bi$ the "imaginary term" (the source figure calls it the "imaginary part", while its text calls $b$ the imaginary part); and wrote $\left(i^4\right)^{q}$ where the source's $i^{57}$ and $i^{86}$ worked steps print $\left(1^4\right)^{q}$.</small>

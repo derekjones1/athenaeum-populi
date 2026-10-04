@@ -108,15 +108,17 @@ $13\cdot15=195$ and $(-13)(-15)=195$.
 {{< fillin
   question="The product of two consecutive odd integers is 99. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="9, 11, -9, -11"
+  answerForm="decimal"
   answerDisplay="$9,\ 11$ and $-9,\ -11$"
-  hint="Let $n$ be the first odd integer. Solve $n(n+2)=99$."
+  hint="Name the first odd integer $n$ and the next one $n+2$, translate the product into an equation, and keep both solutions."
 >}}
 
 {{< fillin
   question="The product of two consecutive even integers is 168. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="12, 14, -12, -14"
+  answerForm="decimal"
   answerDisplay="$12,\ 14$ and $-12,\ -14$"
-  hint="Let $n$ be the first even integer. Solve $n(n+2)=168$."
+  hint="Name the first even integer $n$ and the next one $n+2$, translate the product into an equation, and keep both solutions."
 >}}
 
 {{< callout type="info" >}}
@@ -172,17 +174,19 @@ $\tfrac12(24)(10)=120$. Yes.
 and the base is 24 feet.
 
 {{< fillin
-  question="Find the base and height of a triangle whose base is four inches more than six times its height and has an area of 456 square inches. Enter the base and height, separated by a comma."
+  question="Find the base and height of a triangle whose base is four inches more than six times its height and has an area of 456 square inches. Enter the base and height in inches, separated by a comma."
   answer="76, 12"
+  answerForm="decimal"
   answerDisplay="base $76$ inches, height $12$ inches"
-  hint="Let $h$ be the height. Then the base is $6h+4$ and $456=\tfrac12(6h+4)h$."
+  hint="Let $h$ be the height, write the base in terms of $h$, substitute into $A=\tfrac12bh$, and discard the negative solution."
 >}}
 
 {{< fillin
-  question="A triangle has an area of 110 square feet and a base that is two feet less than twice the height. Enter the base and height, separated by a comma."
+  question="If a triangle that has an area of 110 square feet has a base that is two feet less than twice the height, what is the length of its base and height? Enter the base and height in feet, separated by a comma."
   answer="20, 11"
+  answerForm="decimal"
   answerDisplay="base $20$ feet, height $11$ feet"
-  hint="Let $h$ be the height. Then the base is $2h-2$."
+  hint="Let $h$ be the height, write the base in terms of $h$, substitute into $A=\tfrac12bh$, and discard the negative solution."
 >}}
 
 In the two preceding examples, the number in the radical in the Quadratic
@@ -231,32 +235,35 @@ Here $a=3$, $b=-1$, and $c=-150$. Using the Quadratic Formula,
 $$
 \begin{aligned}
 w&=\frac{-(-1)\pm\sqrt{(-1)^2-4(3)(-150)}}{2(3)}\\
- &=\frac{1\pm\sqrt{1801}}6.
+ &=\frac{1\pm\sqrt{1{,}801}}6.
 \end{aligned}
 $$
 
 The two solutions are approximately $7.2$ and $-6.9$. We eliminate the negative
 solution for the width. The width is approximately 7.2 feet, and the length is
-$3(7.2)-1\approx20.6$ feet.
+$3w-1=\tfrac{\sqrt{1{,}801}-1}{2}\approx20.7$ feet. Compute the length from the
+exact width: $3(7.2)-1=20.6$ carries the rounding of the width into the length.
 
 **Step 6. Check** the answer. Since the answers are approximate, the area will
 not come out exactly to 150.
 
 **Step 7. Answer** the question. The width is approximately 7.2 feet and the
-length is approximately 20.6 feet.
+length is approximately 20.7 feet.
 
 {{< fillin
-  question="The length of a 200-square-foot rectangular vegetable garden is four feet less than twice the width. Find the length and width, to the nearest tenth of a foot. Enter the length and width, separated by a comma."
+  question="The length of a 200-square-foot rectangular vegetable garden is four feet less than twice the width. Find the length and width of the garden. Compute each length from the exact solution, then round it to the nearest tenth of a foot. Enter the length and width in feet, separated by a comma."
   answer="18.1, 11.0"
+  answerForm="decimal"
   answerDisplay="length $18.1$ feet, width $11.0$ feet"
-  hint="Let $w$ be the width. Solve $w(2w-4)=200$ and reject the negative value."
+  hint="Let $w$ be the width, write the length in terms of $w$, substitute into $A=LW$, and use the Quadratic Formula; reject the negative solution."
 >}}
 
 {{< fillin
-  question="A rectangular tablecloth has an area of 80 square feet. The width is 5 feet shorter than the length. Find the length and width to the nearest tenth of a foot. Enter the length and width, separated by a comma."
+  question="A rectangular tablecloth has an area of 80 square feet. The width is 5 feet shorter than the length. Find the length and width to the nearest tenth of a foot. Enter the length and width in feet, separated by a comma."
   answer="11.8, 6.8"
+  answerForm="decimal"
   answerDisplay="length $11.8$ feet, width $6.8$ feet"
-  hint="Let $L$ be the length. Then the width is $L-5$."
+  hint="Let $L$ be the length, write the width in terms of $L$, substitute into $A=LW$, and use the Quadratic Formula; reject the negative solution."
 >}}
 
 The Pythagorean Theorem gives the relation between the legs and hypotenuse of a
@@ -309,17 +316,19 @@ $x\approx7.1$.
 **Step 7. Answer** the question. The pole should be about 7.1 feet tall.
 
 {{< fillin
-  question="A flag pole is three times the length of its shadow. The distance between the end of the shadow and the top of the pole is 20 feet. Find the shadow length and pole length to the nearest tenth. Enter them in that order, separated by a comma."
+  question="The sun casts a shadow from a flag pole. The height of the flag pole is three times the length of its shadow. The distance between the end of the shadow and the top of the flag pole is 20 feet. Find the length of the shadow and the length of the flag pole. Compute each length from the exact solution, then round it to the nearest tenth of a foot. Enter the shadow length and the flag pole length in feet, separated by a comma."
   answer="6.3, 19.0"
+  answerForm="decimal"
   answerDisplay="shadow $6.3$ feet, pole $19.0$ feet"
-  hint="Let $x$ be the shadow length. The right triangle has legs $x$ and $3x$ and hypotenuse $20$."
+  hint="Let $x$ be the shadow length and write the pole's height in terms of $x$; the shadow, the pole, and the 20-foot distance form a right triangle, so use the Pythagorean Theorem. Round each length from its exact value."
 >}}
 
 {{< fillin
   question="The distance between opposite corners of a rectangular field is four more than the width. The length is twice the width. Find the distance between opposite corners, to the nearest tenth."
   answer="7.2"
+  answerForm="decimal"
   answerDisplay="$7.2$"
-  hint="Let $w$ be the width. Then the diagonal is $w+4$ and the length is $2w$."
+  hint="Name the width, write the length and the diagonal in terms of it, and use the Pythagorean Theorem; reject the negative solution."
 >}}
 
 The height of a projectile shot upward from the ground is modeled by a
@@ -375,19 +384,21 @@ feet after approximately 3.6 seconds. It will also pass that height on the way
 down at 4.6 seconds.
 
 {{< fillin
-  question="An arrow is shot from the ground at an initial speed of 108 ft/s. Use $h=-16t^2+v_0t$ to determine when it will be 180 feet from the ground. Enter both times to the nearest tenth, separated by a comma."
+  question="An arrow is shot from the ground at an initial speed of 108 ft/s. Use $h=-16t^2+v_0t$ to determine when it will be 180 feet from the ground. Enter both times in seconds, to the nearest tenth, separated by a comma."
   answer="3.0, 3.8"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$3.0$ seconds and $3.8$ seconds"
-  hint="Set $180=-16t^2+108t$ and solve the quadratic equation."
+  hint="Substitute the height and the initial velocity into the formula, write the equation in standard form, and solve it; both positive solutions are times."
 >}}
 
 {{< fillin
-  question="A man throws a ball into the air at 96 ft/s. Use $h=-16t^2+v_0t$ to determine when its height will be 48 feet. Enter both times to the nearest tenth, separated by a comma."
+  question="A man throws a ball into the air at 96 ft/s. Use $h=-16t^2+v_0t$ to determine when its height will be 48 feet. Enter both times in seconds, to the nearest tenth, separated by a comma."
   answer="0.6, 5.4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$0.6$ second and $5.4$ seconds"
-  hint="Set $48=-16t^2+96t$ and solve."
+  hint="Substitute the height and the initial velocity into the formula, write the equation in standard form, and use the Quadratic Formula; both positive solutions are times."
 >}}
 
 We have solved uniform motion problems using the formula $D=rt$ in previous
@@ -410,29 +421,29 @@ his home. His total time in the airplane for the round trip was 9 hours. If the
 plane was flying at a rate of 450 miles per hour, what was the speed of the jet
 stream?
 
-**Solution.** This is a uniform motion situation. A diagram helps us visualize
-the 2,000-mile trip with the wind and the 2,000-mile return trip against the
-wind.
+**Solution.** This is a uniform motion situation. Sketching a diagram helps us
+visualize the 2,000-mile trip with the wind and the 2,000-mile return trip
+against the wind.
 
 We are looking for the speed of the jet stream. Let $r$ be its speed. With the
 wind, the plane's rate is $450+r$; against the wind, it is $450-r$.
 
 | Type | Rate | Time | Distance |
 |---|---:|---:|---:|
-| Headwind | $450-r$ | $\tfrac{2000}{450-r}$ | $2000$ |
-| Tailwind | $450+r$ | $\tfrac{2000}{450+r}$ | $2000$ |
+| Headwind | $450-r$ | $\tfrac{2{,}000}{450-r}$ | $2{,}000$ |
+| Tailwind | $450+r$ | $\tfrac{2{,}000}{450+r}$ | $2{,}000$ |
 
 The times add to 9:
 
-$$\frac{2000}{450-r}+\frac{2000}{450+r}=9.$$
+$$\frac{2{,}000}{450-r}+\frac{2{,}000}{450+r}=9.$$
 
 Multiply both sides by the LCD, $(450-r)(450+r)$, and solve:
 
 $$
 \begin{aligned}
-2000(450+r)+2000(450-r)&=9(450-r)(450+r)\\
-2000(900)&=9(450^2-r^2)\\
-2000(100)&=450^2-r^2\\
+2{,}000(450+r)+2{,}000(450-r)&=9(450-r)(450+r)\\
+2{,}000(900)&=9(450^2-r^2)\\
+2{,}000(100)&=450^2-r^2\\
 200{,}000&=202{,}500-r^2\\
 -2{,}500&=-r^2\\
 r&=50.
@@ -440,22 +451,24 @@ r&=50.
 $$
 
 Check: the tailwind rate is $500$ mph, so the trip takes
-$\tfrac{2000}{500}=4$ hours. The headwind rate is $400$ mph, so the return
-takes $\tfrac{2000}{400}=5$ hours. The times add to 9 hours. The speed of the
+$\tfrac{2{,}000}{500}=4$ hours. The headwind rate is $400$ mph, so the return
+takes $\tfrac{2{,}000}{400}=5$ hours. The times add to 9 hours. The speed of the
 jet stream was 50 mph.
 
 {{< fillin
-  question="MaryAnne's destination is 2,400 miles from home and her total round-trip flight time was 10 hours. If the plane flew at 500 mph in still air, what was the speed of the jet stream?"
+  question="MaryAnne's destination is 2,400 miles from home and her total round-trip flight time was 10 hours. If the plane flew at 500 mph in still air, what was the speed of the jet stream, in miles per hour?"
   answer="100"
+  answerForm="decimal"
   answerDisplay="$100$ mph"
-  hint="Let $r$ be the wind speed and add $\tfrac{2{,}400}{500-r}+\tfrac{2{,}400}{500+r}$."
+  hint="Let $r$ be the speed of the jet stream, write the rate each way in terms of $r$, divide distance by rate for each time, and set the two times' sum equal to the total time."
 >}}
 
 {{< fillin
-  question="Gerry's destination is 3,000 miles from home and his total round-trip flight time was 11 hours. If the plane flew at 550 mph in still air, what was the speed of the jet stream?"
+  question="Gerry's destination is 3,000 miles from home and his total round-trip flight time was 11 hours. If the plane flew at 550 mph in still air, what was the speed of the jet stream, in miles per hour?"
   answer="50"
+  answerForm="decimal"
   answerDisplay="$50$ mph"
-  hint="Let $r$ be the wind speed. The two rates are $550-r$ and $550+r$."
+  hint="Let $r$ be the speed of the jet stream and organize the two trips in a rate–time–distance table; the times add to the total time. Multiply by the LCD and reject the negative solution."
 >}}
 
 Work applications can also be modeled by quadratic equations. We will set them
@@ -501,17 +514,19 @@ Press #1 would take 24 hours and Press #2 would take 12 hours to do the job
 alone.
 
 {{< fillin
-  question="Press #1 takes 6 hours more than Press #2 to print a job. Together they print it in 4 hours. How long does each press take alone? Enter the times for Press #1 and Press #2, separated by a comma."
+  question="Press #1 takes 6 hours more than Press #2 to print a job. Together they print it in 4 hours. How long does each press take alone? Enter the times for Press #1 and Press #2 in hours, separated by a comma."
   answer="12, 6"
+  answerForm="decimal"
   answerDisplay="Press #1: $12$ hours; Press #2: $6$ hours"
-  hint="Let $x$ be Press #2's time. Then $\tfrac1{x+6}+\tfrac1x=\tfrac14$."
+  hint="Let $x$ be Press #2's time and write Press #1's time in terms of $x$. Each press does $\tfrac{1}{\text{its time}}$ of the job per hour, and the two parts add to the part done together in one hour."
 >}}
 
 {{< fillin
-  question="A red hose takes 3 hours more than a green hose to fill a hot tub. Together they fill it in 2 hours. How long does each hose take alone? Enter the red-hose and green-hose times, separated by a comma."
+  question="A red hose takes 3 hours more than a green hose to fill a hot tub. Together they fill it in 2 hours. How long does each hose take alone? Enter the red-hose and green-hose times in hours, separated by a comma."
   answer="6, 3"
+  answerForm="decimal"
   answerDisplay="red hose: $6$ hours; green hose: $3$ hours"
-  hint="Let $x$ be the green hose's time. Then $\tfrac1{x+3}+\tfrac1x=\tfrac12$."
+  hint="Let $x$ be the green hose's time and write the red hose's time in terms of $x$. Add the part of the tub each hose fills in one hour and set the sum equal to the part they fill together; reject the negative solution."
 >}}
 
 ## Key terms
@@ -525,41 +540,46 @@ No new key terms are introduced in this section.
 {{< fillin
   question="The product of two consecutive odd integers is 255. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="15, 17, -15, -17"
+  answerForm="decimal"
   answerDisplay="$15,\ 17$ and $-15,\ -17$"
-  hint="Let $n$ be the first odd integer and $n+2$ the next. Solve $n(n+2)=255$ and keep both roots."
+  hint="Name the first odd integer $n$ and the next one $n+2$, translate the product into an equation in standard form, and keep both solutions."
 >}}
 
 {{< fillin
-  question="The length of a rectangular driveway is five feet more than three times the width. The area of the driveway is 50 square feet. Find the length and width, rounded to the nearest tenth of a foot. Enter the length and then the width, separated by a comma."
+  question="The length of a rectangular driveway is five feet more than three times the width. The area of the driveway is 50 square feet. Find the length and width of the driveway. Compute each length from the exact solution, then round it to the nearest tenth of a foot. Enter the length and then the width in feet, separated by a comma."
   answer="15.0, 3.3"
+  answerForm="decimal"
   answerDisplay="length $15.0$ feet, width $3.3$ feet"
-  hint="Let $w$ be the width. Then the length is $3w+5$; substitute into $A=LW$ and solve $50=(3w+5)w$."
+  hint="Let $w$ be the width, write the length in terms of $w$, substitute into $A=LW$, and reject the negative solution. Round each length from its exact value."
 >}}
 
 {{< fillin
-  question="The hypotenuse of a right triangle is twice the length of one of its legs. The other leg is 3 feet long. Find the lengths of all three sides, rounded to the nearest tenth of a foot. Enter the sides in order from shortest to longest, separated by commas."
+  question="The hypotenuse of a right triangle is twice the length of one of its legs. The other leg is 3 feet long. Find the lengths of all three sides. Compute each length from the exact solution, then round it to the nearest tenth of a foot. Enter the sides in feet, in order from shortest to longest, separated by commas."
   answer="1.7, 3, 3.5"
+  answerForm="decimal"
   answerDisplay="$1.7$ ft, $3$ ft, $3.5$ ft"
-  hint="Let $x$ be the leg whose hypotenuse is $2x$. Apply the Pythagorean Theorem: $x^2+3^2=(2x)^2$."
+  hint="Name the unknown leg, write the hypotenuse in terms of it, and use the Pythagorean Theorem; reject the negative solution and round each length from its exact value."
 >}}
 
 {{< fillin
-  question="A firework rocket is shot upward with initial velocity 640 feet per second. Use $h=-16t^2+v_0t$ to determine when its height will be 1,200 feet. Round each time to the nearest hundredth of a second. Enter both times, separated by a comma."
+  question="A firework rocket is shot upward with initial velocity 640 feet per second. Use $h=-16t^2+v_0t$ to determine when its height will be 1,200 feet. Round each time to the nearest hundredth of a second. Enter both times in seconds, separated by a comma."
   answer="1.97, 38.03"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$1.97$ seconds and $38.03$ seconds"
-  hint="Substitute $v_0=640$ and $h=1200$, write the equation in standard form, and apply the Quadratic Formula."
+  hint="Substitute the height and the initial velocity into the formula, write the equation in standard form, and apply the Quadratic Formula; both positive solutions are times."
 >}}
 
 {{< fillin
-  question="A small plane made a round trip for a lunch meeting, flying 200 miles each way, with a total flying time of 4 hours. If the plane's speed in still air was 120 mph, find the speed of the wind. Round to the nearest whole number."
+  question="A small plane made a round trip for a lunch meeting, flying 200 miles each way, with a total flying time of 4 hours. If the plane's speed in still air was 120 mph, find the speed of the wind, in miles per hour. Round to the nearest whole number."
   answer="49"
+  answerForm="decimal"
   answerDisplay="$49$ mph"
-  hint="Let $r$ be the wind speed. Solve $\tfrac{200}{120+r}+\tfrac{200}{120-r}=4$ and reject the negative root."
+  hint="Let $r$ be the wind speed, write the rate each way in terms of $r$, and set the sum of the two times (distance over rate) equal to the total time; reject the negative solution."
 >}}
 
 ---
 
 <small>
-Adapted from [*Intermediate Algebra 2e*, Section 9.5](https://openstax.org/books/intermediate-algebra-2e/pages/9-5-solve-applications-of-quadratic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format and converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.
+Adapted from [*Intermediate Algebra 2e*, Section 9.5](https://openstax.org/books/intermediate-algebra-2e/pages/9-5-solve-applications-of-quadratic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, described the worked examples' pictures and charts in words or tables, and converted Try It exercises to auto-graded questions; corrected Example 9.37's length from 20.6 feet (computed from the rounded width) to 20.7 feet, the flag-pole Try It's pole from 18.9 feet to 19.0 feet for the same reason, and the vegetable-garden Try It from 18 feet by 11 feet to 18.1 feet by 11.0 feet as directed to the nearest tenth; omitted the Be Prepared quiz, media links, Key Concepts summary, writing exercises, Self Check checklist, and unselected end-of-section exercises; and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

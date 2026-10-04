@@ -26,6 +26,7 @@ term. (We know $(x^2)^2=x^4$.) So we let $u=x^2$ and factored.
 $$
 \begin{array}{lrcl}
 &&& x^4-4x^2-5 \\[4pt]
+&&& (x^2)^2-4(x^2)-5 \\[4pt]
 \text{Let }u=x^2\text{ and substitute.} &&& u^2-4u-5 \\[4pt]
 \text{Factor the trinomial.} &&& (u+1)(u-5) \\[4pt]
 \text{Replace }u\text{ with }x^2. &&& (x^2+1)(x^2-5)
@@ -61,7 +62,7 @@ $$
 \text{Substitute }u=x^2. & 6u^2-7u+2 &=& 0 \\[4pt]
 \text{Factor.} & (2u-1)(3u-2) &=& 0 \\[4pt]
 \text{Use the Zero Product Property.} & 2u-1=0 && \text{or}\quad 3u-2=0 \\[4pt]
-&&& 2u=1\quad\text{or}\quad 3u=2 \\[4pt]
+& 2u=1 && \text{or}\quad 3u=2 \\[4pt]
 \text{Solve for }u. & u=\tfrac{1}{2} && \text{or}\quad u=\tfrac{2}{3} \\[10pt]
 \text{Replace }u\text{ with }x^2. & x^2=\tfrac{1}{2} && \text{or}\quad x^2=\tfrac{2}{3} \\[10pt]
 \text{Use the Square Root Property.} & x=\pm\sqrt{\tfrac{1}{2}} && \text{or}\quad x=\pm\sqrt{\tfrac{2}{3}} \\[10pt]
@@ -96,6 +97,7 @@ We leave the other checks to you.
   question="Solve $x^4-6x^2+8=0$. Enter all four solutions, separated by commas."
   answer="\sqrt{2}, -\sqrt{2}, 2, -2"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=\sqrt{2},\ x=-\sqrt{2},\ x=2,\ x=-2$"
   hint="Let $u=x^2$, solve the resulting quadratic equation, and then use the Square Root Property."
 >}}
@@ -104,6 +106,7 @@ We leave the other checks to you.
   question="Solve $x^4-11x^2+28=0$. Enter all four solutions, separated by commas."
   answer="\sqrt{7}, -\sqrt{7}, 2, -2"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=\sqrt{7},\ x=-\sqrt{7},\ x=2,\ x=-2$"
   hint="Use $u=x^2$. After solving for $u$, substitute $x^2$ back for $u$."
 >}}
@@ -164,6 +167,7 @@ $$
   question="Solve $(x-5)^2+6(x-5)+8=0$. Enter both solutions, separated by a comma."
   answer="3, 1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=3,\ x=1$"
   hint="Let $u=x-5$, solve the quadratic equation in $u$, and then substitute back."
 >}}
@@ -172,6 +176,7 @@ $$
   question="Solve $(y-4)^2+8(y-4)+15=0$. Enter both solutions, separated by a comma."
   answer="-1, 1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$y=-1,\ y=1$"
   hint="Use $u=y-4$, factor the resulting trinomial, and then solve for $y$."
 >}}
@@ -222,6 +227,7 @@ $$
   question="Solve $x-7\sqrt{x}+12=0$. Enter both solutions, separated by a comma."
   answer="9, 16"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=9,\ x=16$"
   hint="Let $u=\sqrt{x}$. After solving for $u$, square to solve for $x$ and check both answers."
 >}}
@@ -230,6 +236,7 @@ $$
   question="Solve $x-6\sqrt{x}+8=0$. Enter both solutions, separated by a comma."
   answer="4, 16"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=4,\ x=16$"
   hint="Rewrite $x$ as $(\sqrt{x})^2$ and use $u=\sqrt{x}$."
 >}}
@@ -284,6 +291,7 @@ $$
   question="Solve $x^{\tfrac{2}{3}}-5x^{\tfrac{1}{3}}-14=0$. Enter both solutions, separated by a comma."
   answer="-8, 343"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-8,\ x=343$"
   hint="Let $u=x^{\tfrac{1}{3}}$, then cube the resulting values of $x^{\tfrac{1}{3}}$."
 >}}
@@ -292,6 +300,7 @@ $$
   question="Solve $x^{\tfrac{1}{2}}-8x^{\tfrac{1}{4}}+15=0$. Enter both solutions, separated by a comma."
   answer="81, 625"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=81,\ x=625$"
   hint="Let $u=x^{\tfrac{1}{4}}$ and use $(x^{\tfrac{1}{4}})^2=x^{\tfrac{1}{2}}$."
 >}}
@@ -347,6 +356,7 @@ $$
   question="Solve $8x^{-2}-10x^{-1}+3=0$. Enter both solutions, separated by a comma."
   answer="\frac{4}{3}, 2"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{4}{3},\ x=2$"
   hint="Let $u=x^{-1}$. After solving for $u$, take reciprocals to find $x$."
 >}}
@@ -355,6 +365,7 @@ $$
   question="Solve $6x^{-2}-23x^{-1}+20=0$. Enter both solutions, separated by a comma."
   answer="\frac{2}{5}, \frac{3}{4}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{2}{5},\ x=\tfrac{3}{4}$"
   hint="Use $u=x^{-1}$, factor the quadratic equation in $u$, and then take reciprocals."
 >}}
@@ -372,6 +383,7 @@ rewrite it in the form $au^2+bu+c=0$, where $a\ne0$.
   question="Solve $x^4-7x^2+12=0$. Enter all four solutions, separated by commas."
   answer="\sqrt{3}, -\sqrt{3}, 2, -2"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=\sqrt{3},\ x=-\sqrt{3},\ x=2,\ x=-2$"
   hint="Let $u=x^2$, factor the resulting quadratic, and use the Square Root Property to find $x$."
 >}}
@@ -380,13 +392,15 @@ rewrite it in the form $au^2+bu+c=0$, where $a\ne0$.
   question="Solve $(x-3)^2-5(x-3)-36=0$. Enter both solutions, separated by a comma."
   answer="12, -1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=12,\ x=-1$"
   hint="Let $u=x-3$, solve the quadratic equation in $u$, and then substitute back to find $x$."
 >}}
 
 {{< fillin
-  question="Solve $x-\sqrt{x}-20=0$. One value of $u=\sqrt{x}$ does not give a real solution. Enter the one solution that remains."
+  question="Solve $x-\sqrt{x}-20=0$. If there is more than one solution, separate them with commas."
   answer="25"
+  answerForm="decimal"
   answerDisplay="$x=25$"
   hint="Let $u=\sqrt{x}$, solve the resulting quadratic, and discard any negative value of $u$ before squaring to find $x$."
 >}}
@@ -395,6 +409,7 @@ rewrite it in the form $au^2+bu+c=0$, where $a\ne0$.
   question="Solve $x^{\tfrac{2}{3}}+9x^{\tfrac{1}{3}}+8=0$. Enter both solutions, separated by a comma."
   answer="-1, -512"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-1,\ x=-512$"
   hint="Let $u=x^{\tfrac{1}{3}}$, factor the resulting quadratic, then cube each value of $u$ to find $x$."
 >}}
@@ -403,6 +418,7 @@ rewrite it in the form $au^2+bu+c=0$, where $a\ne0$.
   question="Solve $6x^{-2}+13x^{-1}+5=0$. Enter both solutions, separated by a comma."
   answer="-2, -\frac{3}{5}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-2,\ x=-\tfrac{3}{5}$"
   hint="Let $u=x^{-1}$, factor the resulting quadratic, and then take the reciprocal of each value of $u$ to find $x$."
 >}}

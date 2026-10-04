@@ -39,7 +39,7 @@ We also use the radical sign for the square root of zero. Because $0^{2} = 0,$ $
 
 ### Square Root Notation
 
-$$\begin{matrix} \\ \\ \sqrt{m}\ \text{is read ``the square root of }m\text{.''}\ \\ \text{If}\ n^{2} = m, \text{then}\ n = \sqrt{m}, \text{for}\ n \geq 0.\end{matrix}$$
+$$\begin{matrix}\sqrt{m}\ \text{is read ``the square root of }m\text{.''}\ \\ \text{If}\ n^{2} = m, \text{then}\ n = \sqrt{m}, \text{for}\ n \geq 0.\end{matrix}$$
 
 In the expression $\sqrt{m}$, the symbol surrounding $m$ is the **radical
 sign**, and the expression $m$ under the radical sign is the **radicand**.
@@ -69,7 +69,7 @@ Simplify: (a) $\sqrt{144}$ (b) $- \sqrt{289}.$
   answer="-8"
   answerForm="simplified-radical"
   answerDisplay="$-8$"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Find the nonnegative number whose square is the radicand; a minus sign in front of the radical stays in front."
 >}}
 
 {{< fillin
@@ -77,7 +77,7 @@ Simplify: (a) $\sqrt{144}$ (b) $- \sqrt{289}.$
   answer="15"
   answerForm="simplified-radical"
   answerDisplay="15"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Find the nonnegative number whose square is the radicand."
 >}}
 
 {{< fillin
@@ -85,12 +85,12 @@ Simplify: (a) $\sqrt{144}$ (b) $- \sqrt{289}.$
   answer="10"
   answerForm="simplified-radical"
   answerDisplay="10"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Find the nonnegative number whose square is the radicand."
 >}}
 
 Can we simplify $\sqrt{-49} ?$ Is there a number whose square is $-49 ?$
 
-$$\left( \right)^{2} = -49$$
+$$\left(\quad\right)^{2} = -49$$
 
 Any positive number squared is positive. Any negative number squared is positive. There is no real number equal to $\sqrt{-49}.$ The square root of a negative number is not a real number.
 
@@ -115,10 +115,11 @@ Simplify: (a) $\sqrt{-196}$ (b) $- \sqrt{64}.$
 {{< multiplechoice
   question="Simplify: $\sqrt{-169}$"
   answer="not a real number"
-  hint="An odd root can preserve a negative sign, but an even root of a negative number is not real."
+  hint="Check the index and the sign of the radicand against the properties of $\sqrt[n]{a}$."
 >}}
+$-13$
+$13$
 not a real number
-a real number
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -126,7 +127,7 @@ a real number
   answer="-9"
   answerForm="simplified-radical"
   answerDisplay="$-9$"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Find the nonnegative number whose square is the radicand; a minus sign in front of the radical stays in front."
 >}}
 
 So far we have only talked about squares and square roots. Let’s now extend our work to include higher powers and higher roots.
@@ -160,7 +161,7 @@ and of a few variable expressions.
 | $-4$ | $16$ | $-64$ | $256$ | $-1{,}024$ |
 | $-5$ | $25$ | $-125$ | $625$ | $-3{,}125$ |
 
-Notice the signs in the table. All powers of positive numbers are positive, of course. But when we have a negative number, the *even* powers are positive and the *odd* powers are negative. We’ll copy the row with the powers of -2 to help you see this.
+Notice the signs in the table. All powers of positive numbers are positive, of course. But when we have a negative number, the *even* powers are positive and the *odd* powers are negative. We’ll copy the row with the powers of $-2$ to help you see this.
 
 | $n$ | $n^2$ | $n^3$ | $n^4$ | $n^5$ |
 | --- | --- | --- | --- | --- |
@@ -173,13 +174,13 @@ We will now extend the square root definition to higher roots.
 
 ### *n*th Root of a Number
 
-$$\begin{matrix}\ \\ \\ \text{If}\ b^{n} = a, \text{then}\ b\ \text{is an}\ n^{t h}\ \text{root of}\ a. \\ \text{The principal}\ n^{t h}\ \text{root of}\ a\ \text{is written}\ \sqrt[n]{a}. \\ n\ \text{is called the}\ \textbf{index}\ \text{of the radical}.\end{matrix}$$
+$$\begin{matrix}\text{If}\ b^{n} = a, \text{then}\ b\ \text{is an}\ n^{t h}\ \text{root of}\ a. \\ \text{The principal}\ n^{t h}\ \text{root of}\ a\ \text{is written}\ \sqrt[n]{a}. \\ n\ \text{is called the}\ \textbf{index}\ \text{of the radical}.\end{matrix}$$
 
 Just like we use the word ‘cubed’ for $b^3$, we use the term ‘cube root’ for $\sqrt[3]{a}.$
 
 We can refer to the power tables above to help find higher roots.
 
-$$\begin{aligned}4^{3} & = & 64 \\ 3^{4} & = & 81 \\ \left(-2\right)^{5} & = & -32\end{aligned} \begin{aligned}\sqrt[3]{64} & = & 4 \\ \sqrt[4]{81} & = & 3 \\ \sqrt[5]{-32} & = & -2\end{aligned}$$
+$$\begin{aligned}4^{3} &= 64 &\qquad \sqrt[3]{64} &= 4 \\ 3^{4} &= 81 &\qquad \sqrt[4]{81} &= 3 \\ \left(-2\right)^{5} &= -32 &\qquad \sqrt[5]{-32} &= -2\end{aligned}$$
 
 Could we have an even root of a negative number? We know that the square root of a negative number is not a real number. The same is true for any even root. *Even* roots of negative numbers are not real numbers. *Odd* roots of negative numbers are real numbers.
 
@@ -224,7 +225,7 @@ Simplify: (a) $\sqrt[3]{64}$ (b) $\sqrt[4]{81}$ (c) $\sqrt[5]{32}.$
   answer="3"
   answerForm="simplified-radical"
   answerDisplay="3"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Look in the tables of powers for the number whose power, matching the index, equals the radicand."
 >}}
 
 {{< fillin
@@ -232,7 +233,7 @@ Simplify: (a) $\sqrt[3]{64}$ (b) $\sqrt[4]{81}$ (c) $\sqrt[5]{32}.$
   answer="4"
   answerForm="simplified-radical"
   answerDisplay="4"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Look in the tables of powers for the number whose power, matching the index, equals the radicand."
 >}}
 
 {{< fillin
@@ -240,7 +241,7 @@ Simplify: (a) $\sqrt[3]{64}$ (b) $\sqrt[4]{81}$ (c) $\sqrt[5]{32}.$
   answer="3"
   answerForm="simplified-radical"
   answerDisplay="3"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Look in the tables of powers for the number whose power, matching the index, equals the radicand."
 >}}
 
 In this example be alert for the negative signs as well as even and odd powers.
@@ -275,24 +276,25 @@ Simplify: (a) $\sqrt[3]{-125}$ (b) $\sqrt[4]{- 16}$ (c) $\sqrt[5]{-243}.$
   answer="-3"
   answerForm="decimal"
   answerDisplay="$-3$"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  hint="Look in the tables of powers for the number whose power, matching the index, equals the radicand."
 >}}
 
 {{< multiplechoice
   question="Simplify: $\sqrt[4]{-256}$"
   answer="not a real number"
-  hint="An odd root can preserve a negative sign, but an even root of a negative number is not real."
+  hint="Check the index and the sign of the radicand against the properties of $\sqrt[n]{a}$."
 >}}
+$-4$
+$4$
 not a real number
-a real number
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Simplify: $\sqrt[5]{-32}$"
-  answer="-2"
+  question="Simplify: $\sqrt[3]{-216}$"
+  answer="-6"
   answerForm="decimal"
-  answerDisplay="$-2$"
-  hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
+  answerDisplay="$-6$"
+  hint="Find the number whose cube equals the radicand."
 >}}
 
 ## Estimate and Approximate Roots
@@ -348,6 +350,7 @@ Estimate each root between two consecutive whole numbers: (a) $\sqrt{105}$ (b) $
 {{< fillin
   question="Estimate each root between two consecutive whole numbers: $\sqrt{38}$. Write the answer as the inequality $a < \sqrt{38} < b$ with the root in the middle and the two whole numbers filled in."
   answer="6 < \sqrt{38} < 7"
+  answerForm="decimal"
   answerDisplay="$6 < \sqrt{38} < 7$"
   hint="Compare the radicand with consecutive perfect powers for the indicated root."
 >}}
@@ -355,6 +358,7 @@ Estimate each root between two consecutive whole numbers: (a) $\sqrt{105}$ (b) $
 {{< fillin
   question="Estimate each root between two consecutive whole numbers: $\sqrt[3]{93}$. Write the answer as the inequality $a < \sqrt[3]{93} < b$ with the root in the middle and the two whole numbers filled in."
   answer="4 < \sqrt[3]{93} < 5"
+  answerForm="decimal"
   answerDisplay="$4 < \sqrt[3]{93} < 5$"
   hint="Compare the radicand with consecutive perfect powers for the indicated root."
 >}}
@@ -362,6 +366,7 @@ Estimate each root between two consecutive whole numbers: (a) $\sqrt{105}$ (b) $
 {{< fillin
   question="Estimate each root between two consecutive whole numbers: $\sqrt{84}$. Write the answer as the inequality $a < \sqrt{84} < b$ with the root in the middle and the two whole numbers filled in."
   answer="9 < \sqrt{84} < 10"
+  answerForm="decimal"
   answerDisplay="$9 < \sqrt{84} < 10$"
   hint="Compare the radicand with consecutive perfect powers for the indicated root."
 >}}
@@ -376,7 +381,7 @@ $$\begin{matrix}\sqrt{5} \approx 2.236067978\ \text{rounded to two decimal place
 
 How do we know these values are approximations and not the exact values? Look at what happens when we square them:
 
-$$\begin{aligned}\left(2.236067978\right)^{2} & = & 5.000000002 \\ \left(2.24\right)^{2} & = & 5.0176\end{aligned} \begin{aligned}\left(3.105422799\right)^{4} & = & 92.999999991 \\ \left(3.11\right)^{4} & = & 93.54951841\end{aligned}$$
+$$\begin{aligned}\left(2.236067978\right)^{2} &= 5.000000002 &\qquad \left(3.105422799\right)^{4} &= 92.999999991 \\ \left(2.24\right)^{2} &= 5.0176 &\qquad \left(3.11\right)^{4} &= 93.54951841\end{aligned}$$
 
 Their squares are close to 5, but are not exactly equal to 5. The fourth powers are close to 93, but not equal to 93.
 
@@ -412,22 +417,25 @@ Round to two decimal places: (a) $\sqrt{17}$ (b) $\sqrt[3]{49}$ (c) $\sqrt[4]{51
 |  | $\sqrt[4]{51} \approx 2.67$ |
 
 {{< fillin
-  question="Round to two decimal places: $\sqrt{11}$"
+  question="Round to two decimal places: $\sqrt{11}$."
   answer="3.32"
+  answerForm="decimal"
   answerDisplay="$\approx 3.32$"
   hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
 >}}
 
 {{< fillin
-  question="Round to two decimal places: $\sqrt[3]{71}$"
+  question="Round to two decimal places: $\sqrt[3]{71}$."
   answer="4.14"
+  answerForm="decimal"
   answerDisplay="$\approx 4.14$"
   hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
 >}}
 
 {{< fillin
-  question="Round to two decimal places: $\sqrt[4]{127}$"
+  question="Round to two decimal places: $\sqrt[4]{127}$."
   answer="3.36"
+  answerForm="decimal"
   answerDisplay="$\approx 3.36$"
   hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
 >}}
@@ -508,7 +516,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
   answer="\left|b\right|"
   answerForm="simplified-radical"
   answerDisplay="$\left|b\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -516,7 +524,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
   answer="w"
   answerForm="simplified-radical"
   answerDisplay="$w$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -524,7 +532,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
   answer="\left|m\right|"
   answerForm="simplified-radical"
   answerDisplay="$\left|m\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 What about square roots of higher powers of variables? The Power Property of Exponents says $\left(a^{m}\right)^{n} = a^{m \cdot n}.$ So if we square *am*, the exponent will become 2*m*.
@@ -563,7 +571,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
   answer="\left|y^{9}\right|"
   answerForm="simplified-radical"
   answerDisplay="$\left|y^{9}\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -571,7 +579,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
   answer="z^{6}"
   answerForm="simplified-radical"
   answerDisplay="$z^{6}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -579,7 +587,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
   answer="m^{2}"
   answerForm="simplified-radical"
   answerDisplay="$m^{2}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 The next example uses the same idea for higher roots.
@@ -609,7 +617,7 @@ Simplify: (a) $\sqrt[3]{y^{18}}$ (b) $\sqrt[4]{z^{8}}.$
   answer="\left|u^{3}\right|"
   answerForm="simplified-radical"
   answerDisplay="$\left|u^{3}\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -617,7 +625,7 @@ Simplify: (a) $\sqrt[3]{y^{18}}$ (b) $\sqrt[4]{z^{8}}.$
   answer="v^{5}"
   answerForm="simplified-radical"
   answerDisplay="$v^{5}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -625,7 +633,7 @@ Simplify: (a) $\sqrt[3]{y^{18}}$ (b) $\sqrt[4]{z^{8}}.$
   answer="c^{4}"
   answerForm="simplified-radical"
   answerDisplay="$c^{4}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 In the next example, we now have a coefficient in front of the variable. The concept $\sqrt{a^{2 m}} = \left|a^{m}\right|$ works in much the same way.
@@ -659,7 +667,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
   answer="8 \left|x\right|"
   answerForm="simplified-radical"
   answerDisplay="$8 \left|x\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -667,7 +675,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
   answer="-10 \left|p\right|"
   answerForm="simplified-radical"
   answerDisplay="$-10 \left|p\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -675,7 +683,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
   answer="13 \left|y\right|"
   answerForm="simplified-radical"
   answerDisplay="$13 \left|y\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 This example just takes the idea farther as it has roots of higher index.
@@ -705,7 +713,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
   answer="3 x^{9}"
   answerForm="simplified-radical"
   answerDisplay="$3 x^{9}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -713,7 +721,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
   answer="3 \left|q^{7}\right|"
   answerForm="simplified-radical"
   answerDisplay="$3 \left|q^{7}\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -721,7 +729,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
   answer="5 q^{3}"
   answerForm="simplified-radical"
   answerDisplay="$5 q^{3}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 The next examples have two variables.
@@ -759,7 +767,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
   answer="10 \left|a b\right|"
   answerForm="simplified-radical"
   answerDisplay="$10 \left|a b\right|$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -767,7 +775,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
   answer="12 p^{6} q^{10}"
   answerForm="simplified-radical"
   answerDisplay="$12 p^{6} q^{10}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -775,7 +783,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
   answer="2 x^{10} y^{4}"
   answerForm="simplified-radical"
   answerDisplay="$2 x^{10} y^{4}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 ## Practice
@@ -803,24 +811,25 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
   answer="-2"
   answerForm="decimal"
   answerDisplay="$-2$"
-  hint="Identify the real number whose cube equals the radicand; an odd index preserves a negative sign."
+  hint="Look in the tables of powers for the number whose cube equals the radicand."
 >}}
 
 {{< multiplechoice
   question="Simplify: $\sqrt[4]{-81}$"
   answer="not a real number"
-  hint="An odd root can preserve a negative sign, but an even root of a negative number is not real."
+  hint="Check the index and the sign of the radicand against the properties of $\sqrt[n]{a}$."
 >}}
+$-3$
+$3$
 not a real number
-a real number
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Simplify: $\sqrt[5]{-32}$"
-  answer="-2"
+  question="Simplify: $\sqrt[5]{-1024}$"
+  answer="-4"
   answerForm="decimal"
-  answerDisplay="$-2$"
-  hint="Identify the real number whose fifth power equals the radicand; an odd index preserves a negative sign."
+  answerDisplay="$-4$"
+  hint="Look in the tables of powers for the number whose fifth power equals the radicand."
 >}}
 
 ### Estimate and approximate roots
@@ -828,34 +837,39 @@ a real number
 {{< fillin
   question="Estimate each root between two consecutive whole numbers: $\sqrt{70}$. Write the answer as the inequality $a < \sqrt{70} < b$ with the root in the middle and the two whole numbers filled in."
   answer="8 < \sqrt{70} < 9"
+  answerForm="decimal"
   answerDisplay="$8 < \sqrt{70} < 9$"
   hint="Bracket the radicand between consecutive perfect squares and take their square roots."
 >}}
 
 {{< fillin
-  question="Estimate each root between two consecutive whole numbers: $\sqrt[3]{71}$. Write the answer as the inequality $a < \sqrt[3]{71} < b$ with the root in the middle and the two whole numbers filled in."
-  answer="4 < \sqrt[3]{71} < 5"
-  answerDisplay="$4 < \sqrt[3]{71} < 5$"
+  question="Estimate each root between two consecutive whole numbers: $\sqrt[3]{137}$. Write the answer as the inequality $a < \sqrt[3]{137} < b$ with the root in the middle and the two whole numbers filled in."
+  answer="5 < \sqrt[3]{137} < 6"
+  answerForm="decimal"
+  answerDisplay="$5 < \sqrt[3]{137} < 6$"
   hint="Bracket the radicand between consecutive perfect cubes and take their cube roots."
 >}}
 
 {{< fillin
-  question="Round to two decimal places: $\sqrt{19}$"
+  question="Round to two decimal places: $\sqrt{19}$."
   answer="4.36"
+  answerForm="decimal"
   answerDisplay="$\approx 4.36$"
   hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
 >}}
 
 {{< fillin
-  question="Round to two decimal places: $\sqrt[3]{89}$"
+  question="Round to two decimal places: $\sqrt[3]{89}$."
   answer="4.46"
+  answerForm="decimal"
   answerDisplay="$\approx 4.46$"
   hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
 >}}
 
 {{< fillin
-  question="Round to two decimal places: $\sqrt[4]{97}$"
+  question="Round to two decimal places: $\sqrt[4]{97}$."
   answer="3.14"
+  answerForm="decimal"
   answerDisplay="$\approx 3.14$"
   hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
 >}}
@@ -867,7 +881,7 @@ a real number
   answer="u"
   answerForm="simplified-radical"
   answerDisplay="$u$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -875,7 +889,7 @@ a real number
   answer="\left\lvert v\right\rvert"
   answerForm="simplified-radical"
   answerDisplay="$\left\lvert v\right\rvert$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -883,7 +897,7 @@ a real number
   answer="x^{12}"
   answerForm="simplified-radical"
   answerDisplay="$x^{12}$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -891,7 +905,7 @@ a real number
   answer="\left\lvert y^{11}\right\rvert"
   answerForm="simplified-radical"
   answerDisplay="$\left\lvert y^{11}\right\rvert$"
-  hint="Divide each variable exponent by the root index and take out every complete power."
+  hint="Write the radicand as a power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -899,7 +913,7 @@ a real number
   answer="2 x^{2}"
   answerForm="simplified-radical"
   answerDisplay="$2 x^{2}$"
-  hint="Take the indicated root of the coefficient, then divide each variable exponent by the root index."
+  hint="Write the whole radicand, coefficient included, as one power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 {{< fillin
@@ -907,9 +921,9 @@ a real number
   answer="2 y^{2}"
   answerForm="simplified-radical"
   answerDisplay="$2 y^{2}$"
-  hint="Take the indicated root of the coefficient, then divide each variable exponent by the root index."
+  hint="Write the whole radicand, coefficient included, as one power whose exponent is the index, then apply the rule for simplifying odd and even roots."
 >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.1: Simplify Expressions with Roots](https://openstax.org/books/intermediate-algebra-2e/pages/8-1-simplify-expressions-with-roots) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.1: Simplify Expressions with Roots](https://openstax.org/books/intermediate-algebra-2e/pages/8-1-simplify-expressions-with-roots) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; set the source's power-table, root-estimate, and same/different root figures as text tables and displays; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

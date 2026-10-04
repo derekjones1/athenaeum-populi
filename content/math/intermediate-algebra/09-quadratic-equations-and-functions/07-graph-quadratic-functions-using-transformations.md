@@ -149,7 +149,7 @@ $g$ shifts down 1 unit and $h$ shifts up 1 unit.
 {{< multiplechoice
   question="Graph $f(x)=x^2$, $g(x)=x^2+6$, and $h(x)=x^2-6$ on the same rectangular coordinate system. What effect does the constant have on the basic parabola?"
   answer="$g$ shifts up 6 units and $h$ shifts down 6 units."
-  hint="A constant added outside the square changes every $y$-value."
+  hint="Compare the values of $g$ and $h$ with the values of $f$ at the same $x$."
 >}}
 $g$ shifts up 6 units and $h$ shifts down 6 units.
 $g$ shifts down 6 units and $h$ shifts up 6 units.
@@ -570,7 +570,7 @@ $g$ shifts left 2 units and $h$ shifts right 2 units.
 {{< multiplechoice
   question="Graph $f(x)=x^2$, $g(x)=x^2+5$, and $h(x)=x^2-5$ on the same rectangular coordinate system and describe the effect of the constant."
   answer="$g$ shifts up 5 units and $h$ shifts down 5 units."
-  hint="In each formula, the constant is added or subtracted outside the square."
+  hint="Compare the values of $g$ and $h$ with the values of $f$ at the same $x$."
 >}}
 $g$ shifts left 5 units and $h$ shifts right 5 units.
 $g$ shifts right 5 units and $h$ shifts left 5 units.
@@ -744,7 +744,7 @@ Shift the graph $f(x)=x^2$ to the right 5 units.
   question="Graph $f(x)=(x+6)^2$ using a horizontal shift."
   answerDisplay="$f(x)=(x+6)^2$"
   ariaLabel="A blank coordinate grid from negative 10 to negative 2 on the x-axis and negative 2 to 8 on the y-axis."
-  hint="Rewrite $x+6$ as $x-(-6)$ to find the horizontal shift."
+  hint="Match the function to the form $(x-h)^2$ to find the horizontal shift."
 >}}
 {"answer":{"quadratic":{"a":1,"b":12,"c":36},"plotPoints":3},"grid":{"xMin":-10,"xMax":-2,"yMin":-2,"yMax":8}}
 {{< /graphplot >}}
@@ -866,7 +866,7 @@ $f(x)=(x+1)^2-2$, shift the graph $f(x)=(x+1)^2$ down 2 units.
   question="Graph $f(x)=(x+2)^2-3$ using transformations."
   answerDisplay="$f(x)=(x+2)^2-3$"
   ariaLabel="A blank coordinate grid from negative 6 to 2 on the x-axis and negative 5 to 5 on the y-axis."
-  hint="The vertex of $a(x-h)^2+k$ is $(h,k)$; shift $y=x^2$ left 2 and down 3."
+  hint="Identify $h$ and $k$ in $(x-h)^2+k$; shift $y=x^2$ horizontally first, then vertically."
 >}}
 {"answer":{"quadratic":{"a":1,"b":4,"c":1},"plotPoints":3},"grid":{"xMin":-6,"xMax":2,"yMin":-5,"yMax":5}}
 {{< /graphplot >}}
@@ -875,7 +875,7 @@ $f(x)=(x+1)^2-2$, shift the graph $f(x)=(x+1)^2$ down 2 units.
   question="Graph $f(x)=(x-3)^2+1$ using transformations."
   answerDisplay="$f(x)=(x-3)^2+1$"
   ariaLabel="A blank coordinate grid from negative 1 to 7 on the x-axis and negative 1 to 9 on the y-axis."
-  hint="Read $h$ and $k$ from vertex form; shift $y=x^2$ right 3 and up 1."
+  hint="Identify $h$ and $k$ in $(x-h)^2+k$; shift $y=x^2$ horizontally first, then vertically."
 >}}
 {"answer":{"quadratic":{"a":1,"b":-6,"c":10},"plotPoints":3},"grid":{"xMin":-1,"xMax":7,"yMin":-1,"yMax":9}}
 {{< /graphplot >}}
@@ -1143,7 +1143,7 @@ to get the points for $g(x)=3x^2$.
   question="Which graph shows $f(x)=-3x^2$?"
   mode="graph"
   answerIndex="2"
-  hint="Check whether the negative sign makes the parabola open downward, and whether $|{-3}|>1$ makes it narrower than $y=x^2$."
+  hint="The sign of $a$ sets which way the parabola opens; compare $|a|$ with $1$ to judge its width."
 >}}
 {"ariaLabel": "An upward-opening parabola with vertex (0, -3).", "xMin": -3, "xMax": 3, "yMin": -8, "yMax": 8, "tickLabels": true, "quadratics": [{"a": 1, "b": 0, "c": -3}]}
 ===OPT===
@@ -1210,7 +1210,7 @@ The function is now in the $f(x)=a(x-h)^2+k$ form.
 {{< fillin
   question="Rewrite $f(x)=-4x^2-8x+1$ in the $f(x)=a(x-h)^2+k$ form by completing the square."
   answer="-4(x+1)^2+5"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=-4(x+1)^2+5$"
   hint="Factor $-4$ from the $x$-terms before completing the square."
 >}}
@@ -1218,7 +1218,7 @@ The function is now in the $f(x)=a(x-h)^2+k$ form.
 {{< fillin
   question="Rewrite $f(x)=2x^2-8x+3$ in the $f(x)=a(x-h)^2+k$ form by completing the square."
   answer="2(x-2)^2-5"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=2(x-2)^2-5$"
   hint="Factor 2 from the $x$-terms, then complete the square."
 >}}
@@ -1352,7 +1352,7 @@ $f(x)=(x+3)^2-4$, shift the graph $f(x)=(x+3)^2$ down 4 units.
 {{< fillin
   question="Graph $f(x)=x^2+2x-3$ by using transformations. First enter the function in vertex form."
   answer="(x+1)^2-4"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=(x+1)^2-4$"
   hint="Complete the square on $x^2+2x$."
 >}}
@@ -1360,7 +1360,7 @@ $f(x)=(x+3)^2-4$, shift the graph $f(x)=(x+3)^2$ down 4 units.
 {{< fillin
   question="Graph $f(x)=x^2-8x+12$ by using transformations. First enter the function in vertex form."
   answer="(x-4)^2-4"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=(x-4)^2-4$"
   hint="Complete the square on $x^2-8x$."
 >}}
@@ -1416,7 +1416,7 @@ $f(x)=-2(x+1)^2+4$, shift the graph $f(x)=-2(x+1)^2$ up 4 units.
 {{< fillin
   question="Graph $f(x)=-2x^2+12x-9$ by using transformations. First enter the function in vertex form."
   answer="-2(x-3)^2+9"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=-2(x-3)^2+9$"
   hint="Factor $-2$ from the $x$-terms, then complete the square."
 >}}
@@ -1429,7 +1429,7 @@ If we look back at the last few examples, we see that the vertex is related to
 the constants $h$ and $k$.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Two parabolas in vertex form: one opens upward with vertex (-3, -4), and one opens downward with vertex (-1, 4)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 312" width="332" height="312" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="Two parabolas on one grid: f(x) = (x + 3)² − 4 opens upward with vertex (−3, −4), and f(x) = −2(x + 1)² + 4 opens downward with vertex (−1, 4)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 312" width="384" height="312" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="286" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="46" y1="286" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="66" y1="286" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -1529,6 +1529,8 @@ the constants $h$ and $k$.
   <circle cx="186" cy="86" r="4" fill="currentColor"/>
   <text x="134.8" y="266.2" font-size="13" fill="currentColor" text-anchor="end">(−3, −4)</text>
   <text x="174.8" y="74.8" font-size="13" fill="currentColor" text-anchor="end">(−1, 4)</text>
+  <text x="220" y="52" font-size="12" fill="currentColor" text-anchor="start">f(x) = (x + 3)² − 4</text>
+  <text x="238" y="232" font-size="12" fill="currentColor" text-anchor="start">f(x) = −2(x + 1)² + 4</text>
 </svg>
 </div>
 
@@ -1676,7 +1678,7 @@ $x$-intercepts. Graph the parabola.
 {{< fillin
   question="Rewrite $f(x)=3x^2-6x+5$ in $f(x)=a(x-h)^2+k$ form and graph the function using properties. Enter the vertex form."
   answer="3(x-1)^2+2"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=3(x-1)^2+2$"
   hint="Factor 3 from the $x$-terms before completing the square."
 >}}
@@ -1684,7 +1686,7 @@ $x$-intercepts. Graph the parabola.
 {{< fillin
   question="Rewrite $f(x)=-2x^2+8x-7$ in $f(x)=a(x-h)^2+k$ form and graph the function using properties. Enter the vertex form."
   answer="-2(x-2)^2+1"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=-2(x-2)^2+1$"
   hint="Factor $-2$ from the $x$-terms before completing the square."
 >}}
@@ -1913,7 +1915,7 @@ $$
 {{< fillin
   question="Write the quadratic function in $f(x)=a(x-h)^2+k$ form whose graph has vertex $(3,-4)$ and passes through $(0,5)$."
   answer="(x-3)^2-4"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=(x-3)^2-4$"
   hint="Substitute the vertex first, then use $(0,5)$ to solve for $a$."
 >}}
@@ -2050,9 +2052,10 @@ quadratic function.
 {{< /graphplot >}}
 
 {{< fillin
-  question="For the graph of $g(x)=x^2+2$, find the vertex as an ordered pair."
-  answer="(0,2)"
-  answerDisplay="$(0,2)$"
+  question="For the graph of $f(x)=x^2-7$, find the vertex as an ordered pair."
+  answer="(0,-7)"
+  answerForm="decimal"
+  answerDisplay="$(0,-7)$"
   hint="A vertical shift moves the vertex of $y=x^2$ straight up or down."
 >}}
 
@@ -2079,6 +2082,7 @@ quadratic function.
 {{< fillin
   question="For the graph of $f(x)=(x+5)^2$, find the axis of symmetry."
   answer="x=-5"
+  answerForm="decimal"
   answerDisplay="$x=-5$"
   hint="The axis of symmetry passes through the vertex; a horizontal shift moves it left or right with $h$."
 >}}
@@ -2126,15 +2130,16 @@ skinnier
 {{< fillin
   question="Rewrite $f(x)=-x^2+8x-16$ in $f(x)=a(x-h)^2+k$ form by completing the square."
   answer="-(x-4)^2"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=-(x-4)^2$"
   hint="Factor out $-1$ first, then complete the square inside the parentheses."
 >}}
 
 {{< fillin
-  question="For $f(x)=x^2+6x+5$, complete the square and find the vertex as an ordered pair."
-  answer="(-3,-4)"
-  answerDisplay="$(-3,-4)$"
+  question="For $f(x)=x^2-6x+15$, complete the square and find the vertex as an ordered pair."
+  answer="(3,6)"
+  answerForm="decimal"
+  answerDisplay="$(3,6)$"
   hint="Complete the square to write the function as $a(x-h)^2+k$; the vertex is $(h,k)$."
 >}}
 
@@ -2143,7 +2148,7 @@ skinnier
 {{< fillin
   question="A parabola has vertex $(-1,-5)$ and $y$-intercept $(0,-4)$. Write its equation in $f(x)=a(x-h)^2+k$ form."
   answer="(x+1)^2-5"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=(x+1)^2-5$"
   hint="Substitute the vertex for $h$ and $k$, then use the $y$-intercept to solve for $a$."
 >}}
@@ -2151,11 +2156,11 @@ skinnier
 {{< fillin
   question="A parabola has vertex $(1,-3)$ and $y$-intercept $(0,-1)$. Write its equation in $f(x)=a(x-h)^2+k$ form."
   answer="2(x-1)^2-3"
-  answerForm="vertex-form"
+  answerForm="vertex-form no-like-terms"
   answerDisplay="$f(x)=2(x-1)^2-3$"
   hint="Substitute the vertex for $h$ and $k$, then use the $y$-intercept to solve for $a$."
 >}}
 
 <small>
-Adapted from [Intermediate Algebra 2e, Section 9.7](https://openstax.org/books/intermediate-algebra-2e/pages/9-7-graph-quadratic-functions-using-transformations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: converted Try It exercises to interactive checks and recreated graphs for accessible web presentation, and adapted selected end-of-section exercises into an interactive Practice block.
+Adapted from [Intermediate Algebra 2e, Section 9.7](https://openstax.org/books/intermediate-algebra-2e/pages/9-7-graph-quadratic-functions-using-transformations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: recreated the source graphs as accessible inline graphics, drawing each multi-panel transformation sequence and the two vertex-form examples on one grid, and the worked solutions as typeset steps; omitted the Be Prepared quiz, media links, Key Concepts summary, matching and writing exercises, Self Check checklist, and unselected end-of-section exercises; condensed the section vocabulary into a Key terms paragraph; corrected the sentence after the horizontal-shift Try Its to shift left for $h<0$ and right for $h>0$, which the source reverses; converted the Try Its into interactive exercises with instant feedback, posing each graph-and-describe Try It as a choice among descriptions of the shifts, the $f(x)=-3x^2$ Try It as a choice among graphs, the $f(x)=2x^2$ Try It as a choice among descriptions, the graph-by-transformations Try Its for $f(x)=x^2+2x-3$, $f(x)=x^2-8x+12$, and $f(x)=-2x^2+12x-9$ and the graph-using-properties Try Its as their vertex form, and stating in each find-the-function Try It the vertex and point its graph shows; keyed the $g(x)=x^2+5$, $h(x)=x^2-5$ Try It as shifts up and down 5 units, where the source solution describes $(x+5)^2$ and $(x-5)^2$ shifted left and right; and adapted selected end-of-section exercises into an interactive Practice block, asking for the vertex or axis of symmetry of three graphing exercises, whether the graph of $f(x)=\tfrac14x^2$ is wider or skinnier, and only the vertex form of $f(x)=-x^2+8x-16$, and stating the vertex and $y$-intercept of each find-the-function exercise in place of its graph.
 </small>

@@ -61,6 +61,14 @@ For a parabola that opens upward and has two $x$-intercepts, $f(x)<0$ between
 the intercepts and $f(x)>0$ outside the intercepts. For a parabola that opens
 downward, $f(x)>0$ between the intercepts and $f(x)<0$ outside them.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"An upward-opening parabola f(x) crossing the x-axis at two marked x-intercepts. To the left of the left intercept and to the right of the right intercept the parabola is above the x-axis, labeled f(x) > 0; between the intercepts it is below the x-axis, labeled f(x) < 0.","xMin":-4,"xMax":10,"yMin":-9,"yMax":9,"quadratics":[{"a":0.5,"b":-3,"c":-3.5}],"points":[{"at":[-1,0]},{"at":[7,0]}],"texts":[{"at":[-3.9,0.7],"text":"f(x) > 0"},{"at":[2,-1.3],"text":"f(x) < 0"},{"at":[7.7,0.7],"text":"f(x) > 0"},{"at":[9.2,5.5],"text":"f(x)"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A downward-opening parabola f(x) crossing the x-axis at two marked x-intercepts. To the left of the left intercept and to the right of the right intercept the parabola is below the x-axis, labeled f(x) < 0; between the intercepts it is above the x-axis, labeled f(x) > 0.","xMin":-4,"xMax":10,"yMin":-9,"yMax":9,"quadratics":[{"a":-0.5,"b":3,"c":3.5}],"points":[{"at":[-1,0]},{"at":[7,0]}],"texts":[{"at":[-3.9,-1.3],"text":"f(x) < 0"},{"at":[2,0.7],"text":"f(x) > 0"},{"at":[7.7,-1.3],"text":"f(x) < 0"},{"at":[8.7,-5.5],"text":"f(x)"}]}
+{{< /apfigure >}}
+
 **Example. How to solve a quadratic inequality graphically.** Solve
 $x^2-6x+8<0$ graphically. Write the solution in interval notation.
 
@@ -133,10 +141,22 @@ $y$-intercept $(0,8)$, and the symmetric point $(6,8)$. Graph the vertex,
 intercepts, and the point symmetric to the $y$-intercept. Connect these five
 points to sketch the parabola.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The graph of f(x) = x squared minus 6x plus 8 on a grid from −2 to 9 on the x-axis and −2 to 12 on the y-axis: an upward-opening parabola with its vertex (3, −1) on the dashed axis of symmetry x = 3, crossing the x-axis at (2, 0) and (4, 0), and passing through the y-intercept (0, 8) and its symmetric point (6, 8). The parabola is below the x-axis only between x = 2 and x = 4.","xMin":-2,"xMax":9,"yMin":-2,"yMax":12,"tickLabels":true,"quadratics":[{"a":1,"b":-6,"c":8,"from":-0.5,"to":6.5}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3"}],"points":[{"at":[3,-1],"label":"(3, −1)"},{"at":[2,0],"label":"(2, 0)"},{"at":[4,0],"label":"(4, 0)"},{"at":[0,8],"label":"(0, 8)"},{"at":[6,8],"label":"(6, 8)"}],"unit":24,"xTickStep":2,"yTickStep":4}
+{{< /apfigure >}}
+
 The inequality asks for the values of $x$ which make the function less than
 zero. These are the values of $x$ that make the parabola below the $x$-axis.
 We do not include the values 2 and 4, as the inequality is less than only.
 The solution, in interval notation, is $(2,4)$.
+
+{{< fillin
+  question="Solve $x^2+2x-8<0$ graphically. Write the solution in interval notation."
+  answer="(-4,2)"
+  answerForm="decimal"
+  answerDisplay="$(−4,2)$"
+  hint="Graph $f(x)=x^2+2x-8$ from its vertex and $x$-intercepts, then read off where the parabola is below the $x$-axis."
+>}}
 
 {{< multiplechoice
   question="Which graph shows $y=x^2+2x-8$?"
@@ -144,23 +164,17 @@ The solution, in interval notation, is $(2,4)$.
   answerIndex="1"
   hint="Find the vertex and $x$-intercepts, then check which way the parabola opens."
 >}}
-{"ariaLabel":"A downward-opening parabola with vertex (-1, 9), crossing the x-axis at (-4, 0) and (2, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"quadratics":[{"a":-1,"b":-2,"c":8}]}
+{"ariaLabel":"A downward-opening parabola with vertex (−1, 9), crossing the x-axis at (−4, 0) and (2, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"quadratics":[{"a":-1,"b":-2,"c":8}]}
 ===OPT===
-{"ariaLabel":"An upward-opening parabola with vertex (-1, -9), crossing the x-axis at (-4, 0) and (2, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"quadratics":[{"a":1,"b":2,"c":-8}]}
+{"ariaLabel":"An upward-opening parabola with vertex (−1, −9), crossing the x-axis at (−4, 0) and (2, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"quadratics":[{"a":1,"b":2,"c":-8}]}
 ===OPT===
-{"ariaLabel":"An upward-opening parabola with vertex (1, -9), crossing the x-axis at (-2, 0) and (4, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"quadratics":[{"a":1,"b":-2,"c":-8}]}
+{"ariaLabel":"An upward-opening parabola with vertex (1, −9), crossing the x-axis at (−2, 0) and (4, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"quadratics":[{"a":1,"b":-2,"c":-8}]}
 {{< /multiplechoice >}}
-
-{{< fillin
-  question="Solve $x^2+2x-8<0$ graphically. Write the solution in interval notation."
-  answer="(-4,2)"
-  answerDisplay="$(−4,2)$"
-  hint="Find the $x$-intercepts, then identify where the upward-opening parabola is below the $x$-axis."
->}}
 
 {{< fillin
   question="Solve $x^2-8x+12\ge0$ graphically. Write the solution in interval notation."
   answer="(-\infty,2]\cup[6,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,2]\cup[6,\infty)$"
   hint="Find the $x$-intercepts and include them because the inequality is greater than or equal to."
 >}}
@@ -230,6 +244,10 @@ The $x$-intercepts are $(-6,0)$ and $(-2,0)$. The graph is a downward-opening
 parabola with vertex $(-4,4)$ and $x$-intercepts $(-6,0)$ and $(-2,0)$.
 Graph the parabola.
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The graph of f(x) = negative x squared minus 8x minus 12 on a grid from −8 to 2 on the x-axis and −5 to 6 on the y-axis: a downward-opening parabola with its vertex (−4, 4) on the dashed axis of symmetry x = −4, crossing the x-axis at (−6, 0) and (−2, 0). The parabola is above the x-axis only between x = −6 and x = −2 and below it to the left of −6 and to the right of −2.","xMin":-8,"xMax":2,"yMin":-5,"yMax":6,"tickLabels":true,"quadratics":[{"a":-1,"b":-8,"c":-12}],"lines":[{"x":-4,"dashed":true,"arrows":false,"label":"x = −4"}],"points":[{"at":[-4,4],"label":"(−4, 4)"},{"at":[-6,0],"label":"(−6, 0)"},{"at":[-2,0],"label":"(−2, 0)"}],"unit":34}
+{{< /apfigure >}}
+
 Determine the solution from the graph. We include the $x$-intercepts as the
 inequality is “less than or equal to.” The solution, in interval notation, is
 $(-\infty,-6]\cup[-2,\infty)$.
@@ -238,7 +256,7 @@ $(-\infty,-6]\cup[-2,\infty)$.
   question="Graph $y=-x^2-6x-5$."
   answerDisplay="$y=-x^2-6x-5$"
   ariaLabel="A blank coordinate grid from −10 to 2 on the x-axis and −10 to 6 on the y-axis."
-  hint="Find the axis of symmetry and vertex, then plot one more point on the parabola."
+  hint="Find the vertex from the axis of symmetry, then plot it and two more points, such as the $x$-intercepts."
 >}}
 {"answer":{"quadratic":{"a":-1,"b":-6,"c":-5},"plotPoints":3},"grid":{"xMin":-10,"xMax":2,"yMin":-10,"yMax":6}}
 {{< /graphplot >}}
@@ -246,15 +264,17 @@ $(-\infty,-6]\cup[-2,\infty)$.
 {{< fillin
   question="Solve $-x^2-6x-5>0$ graphically. Write the solution in interval notation."
   answer="(-5,-1)"
+  answerForm="decimal"
   answerDisplay="$(−5,−1)$"
-  hint="Find the zeros, then identify where the downward-opening parabola is above the $x$-axis."
+  hint="Find the zeros, then read off where the parabola is above the $x$-axis."
 >}}
 
 {{< fillin
   question="Solve $-x^2+10x-16\le0$ graphically. Write the solution in interval notation."
   answer="(-\infty,2]\cup[8,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,2]\cup[8,\infty)$"
-  hint="Find the zeros and include them. The parabola opens downward."
+  hint="Find the zeros and include them, and use the sign of $a$ to see which way the parabola opens."
 >}}
 
 ## Solve Quadratic Inequalities Algebraically
@@ -293,9 +313,9 @@ x&=&-3,\ 4
 \end{array}
 $$
 
-Use $-3$ and 4 to divide the number line into intervals. Above the number line,
-show the sign of each quadratic expression using test points from each
-interval substituted into the original inequality.
+Use $-3$ and 4 to divide the number line into intervals. Find the sign of the
+quadratic expression in each interval by substituting a test point from that
+interval.
 
 | Interval | Test value | $x^2-x-12$ | Sign |
 | :--- | :---: | :---: | :---: |
@@ -304,13 +324,14 @@ interval substituted into the original inequality.
 | $(4,\infty)$ | $x=5$ | $5^2-5-12=8$ | $+$ |
 
 Determine the intervals where the inequality is correct. The inequality is
-positive in the first and last quadrants and equals 0 at the points $-3$ and
+positive in the first and last intervals and equals 0 at the points $-3$ and
 4. The solution, in interval notation, is
 $(-\infty,-3]\cup[4,\infty)$.
 
 {{< fillin
   question="Solve $x^2+2x-8\ge0$ algebraically. Write the solution in interval notation."
   answer="(-\infty,-4]\cup[2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-4]\cup[2,\infty)$"
   hint="Use the zeros as partition numbers and test the three intervals."
 >}}
@@ -318,14 +339,23 @@ $(-\infty,-3]\cup[4,\infty)$.
 {{< fillin
   question="Solve $x^2-2x-15\le0$ algebraically. Write the solution in interval notation."
   answer="[-3,5]"
+  answerForm="decimal"
   answerDisplay="$[-3,5]$"
-  hint="Factor the related quadratic equation, then test the interval between its zeros."
+  hint="Factor the related quadratic equation, then test a value in each of the three intervals its zeros create."
 >}}
 
 In this example, since the expression $x^2-x-12$ factors nicely, we can also
 find the sign in each interval much like we did when we solved rational
 inequalities. We find the sign of each of the factors, and then the sign of
-the product. The result is the same as we found using the other method.
+the product.
+
+| Interval | $x+3$ | $x-4$ | $(x+3)(x-4)$ |
+| :--- | :---: | :---: | :---: |
+| $(-\infty,-3)$ | $-$ | $-$ | $+$ |
+| $(-3,4)$ | $+$ | $-$ | $-$ |
+| $(4,\infty)$ | $+$ | $+$ | $+$ |
+
+The result is the same as we found using the other method.
 
 We summarize the steps here.
 
@@ -380,6 +410,12 @@ The zero partition numbers are $3-\sqrt2$ and $3+\sqrt2$, approximately 1.6
 and 4.4. Use the zero partition numbers to divide the number line into
 intervals. Test numbers from each interval in the original inequality.
 
+| Interval | Test value | $-x^2+6x-7$ | Sign |
+| :--- | :---: | :---: | :---: |
+| $(-\infty,3-\sqrt2)$ | $x=0$ | $-(0)^2+6(0)-7=-7$ | $-$ |
+| $(3-\sqrt2,3+\sqrt2)$ | $x=3$ | $-(3)^2+6(3)-7=2$ | $+$ |
+| $(3+\sqrt2,\infty)$ | $x=5$ | $-(5)^2+6(5)-7=-2$ | $-$ |
+
 The expression $-x^2+6x-7$ is nonnegative in the middle interval. The
 solution is
 
@@ -390,6 +426,7 @@ $$
 {{< fillin
   question="Solve $-x^2+2x+1\ge0$ algebraically. Write the solution in interval notation."
   answer="[1-\sqrt{2},1+\sqrt{2}]"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$[1-\sqrt2,1+\sqrt2]$"
   hint="Multiply by $-1$, reverse the inequality, and use the Quadratic Formula to find the partition numbers."
 >}}
@@ -397,8 +434,9 @@ $$
 {{< fillin
   question="Solve $-x^2+8x-14<0$ algebraically. Write the solution in interval notation."
   answer="(-\infty,4-\sqrt{2})\cup(4+\sqrt{2},\infty)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$(-\infty,4-\sqrt2)\cup(4+\sqrt2,\infty)$"
-  hint="Find the two zeros and identify where the downward-opening parabola is below the $x$-axis."
+  hint="Use the Quadratic Formula to find the zero partition numbers, then test a value in each interval."
 >}}
 
 The solutions of the quadratic inequalities in each of the previous examples
@@ -480,7 +518,7 @@ There is no solution to the inequality.
 {{< multiplechoice
   question="Solve $-x^2+2x-4\le0$ and write any solution in interval notation."
   answer="$(-\infty,\infty)$"
-  hint="The discriminant is negative. Decide whether the downward-opening parabola lies above or below the $x$-axis."
+  hint="Compute the discriminant to see whether the parabola crosses the $x$-axis, and use the sign of $a$ to see which way it opens."
 >}}
 $(-\infty,\infty)$
 no solution
@@ -506,18 +544,38 @@ which the quadratic expression has a constant sign.
 
 ### Solve quadratic inequalities graphically
 
+{{< graphplot
+  question="To solve $x^2+6x+5>0$ graphically, first graph $y=x^2+6x+5$."
+  answerDisplay="$y=x^2+6x+5$"
+  ariaLabel="A blank coordinate grid from −8 to 2 on the x-axis and −6 to 8 on the y-axis."
+  hint="Find the vertex from the axis of symmetry, then plot it and two more points, such as the $x$-intercepts."
+>}}
+{"answer":{"quadratic":{"a":1,"b":6,"c":5},"plotPoints":3},"grid":{"xMin":-8,"xMax":2,"yMin":-6,"yMax":8}}
+{{< /graphplot >}}
+
 {{< fillin
   question="Solve $x^2+6x+5>0$ graphically. Write the solution in interval notation."
   answer="(-\infty,-5)\cup(-1,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-5)\cup(-1,\infty)$"
-  hint="Factor to find the $x$-intercepts $-5$ and $-1$, then identify where the upward-opening parabola is above the $x$-axis."
+  hint="Factor to find the $x$-intercepts, then read off where the parabola is above the $x$-axis."
 >}}
+
+{{< graphplot
+  question="To solve $x^2+4x+3\le0$ graphically, first graph $y=x^2+4x+3$."
+  answerDisplay="$y=x^2+4x+3$"
+  ariaLabel="A blank coordinate grid from −6 to 2 on the x-axis and −4 to 8 on the y-axis."
+  hint="Find the vertex from the axis of symmetry, then plot it and two more points, such as the $x$-intercepts."
+>}}
+{"answer":{"quadratic":{"a":1,"b":4,"c":3},"plotPoints":3},"grid":{"xMin":-6,"xMax":2,"yMin":-4,"yMax":8}}
+{{< /graphplot >}}
 
 {{< fillin
   question="Solve $x^2+4x+3\le0$ graphically. Write the solution in interval notation."
   answer="[-3,-1]"
+  answerForm="decimal"
   answerDisplay="$[-3,-1]$"
-  hint="Factor to find the $x$-intercepts $-3$ and $-1$, then identify where the upward-opening parabola is at or below the $x$-axis."
+  hint="Factor to find the $x$-intercepts, then read off where the parabola is on or below the $x$-axis."
 >}}
 
 ### Solve quadratic inequalities algebraically
@@ -525,6 +583,7 @@ which the quadratic expression has a constant sign.
 {{< fillin
   question="Solve $x^2+3x-4\ge0$ algebraically. Write the solution in interval notation."
   answer="(-\infty,-4]\cup[1,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-4]\cup[1,\infty)$"
   hint="Factor to find the zero partition numbers, then test the three intervals they create."
 >}}
@@ -532,19 +591,20 @@ which the quadratic expression has a constant sign.
 {{< fillin
   question="Solve $x^2-4x+2\le0$ algebraically. Write the solution in interval notation."
   answer="[2-\sqrt{2},2+\sqrt{2}]"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$[2-\sqrt2,2+\sqrt2]$"
-  hint="Use the Quadratic Formula to find the zero partition numbers, then test the interval between them."
+  hint="Use the Quadratic Formula to find the zero partition numbers, then test a value in each of the three intervals."
 >}}
 
 {{< multiplechoice
   question="Solve $x^2+3x+5>0$ and write any solution in interval notation."
   answer="$(-\infty,\infty)$"
-  hint="The discriminant is negative. Decide whether the upward-opening parabola lies above or below the $x$-axis."
+  hint="Compute the discriminant to see whether the parabola crosses the $x$-axis, and use the sign of $a$ to see which way it opens."
 >}}
 $(-\infty,\infty)$
 no solution
 {{< /multiplechoice >}}
 
 <small>
-Adapted from [*Intermediate Algebra 2e*, Section 9.8](https://openstax.org/books/intermediate-algebra-2e/pages/9-8-solve-quadratic-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, recreated instructional visuals accessibly, converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.
+Adapted from [*Intermediate Algebra 2e*, Section 9.8](https://openstax.org/books/intermediate-algebra-2e/pages/9-8-solve-quadratic-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format; recreated the source graphs as accessible graphics and its sign charts and discriminant table as tables; converted selected Try It exercises to auto-graded questions, posing the graphing part of the $x^2+2x-8<0$ Try It as a choice among graphs (asked after its interval part) and the graphing part of the $-x^2-6x-5>0$ Try It as a graph-it exercise; kept the correct answer $[1-\sqrt2,1+\sqrt2]$ for the $-x^2+2x+1\ge0$ Try It, where the source prints $[-1-\sqrt2,-1+\sqrt2]$; dropped a stray "$=0$" from the source's "the graph of $f(x)=ax^2+bx+c=0$ is a parabola" and wrote "intervals" where the first algebraic example says "quadrants"; omitted the Be Prepared quiz, Key Concepts summary, writing exercises, Self Check checklist, and unselected end-of-section exercises; condensed the section vocabulary into a Key terms paragraph; and adapted selected end-of-section exercises into an interactive Practice block, each selected graphical exercise as a graphing part and an interval part.
 </small>

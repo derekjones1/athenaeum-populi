@@ -257,7 +257,7 @@ the graph of the function $f(x)=x^2-1$.
   question="Graph $f(x)=-x^2$."
   answerDisplay="$f(x)=-x^2$"
   ariaLabel="A blank coordinate grid from −5 to 5 on the x-axis and −10 to 10 on the y-axis."
-  hint="The vertex is at the origin. Plot one more integer point and draw the parabola."
+  hint="Make a table of values for a few integer values of $x$, plot the points, and connect them with a smooth curve."
 >}}
 {"answer":{"quadratic":{"a":-1,"b":0,"c":0},"plotPoints":3},"grid":{"xMin":-5,"xMax":5,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
@@ -266,7 +266,7 @@ the graph of the function $f(x)=x^2-1$.
   question="Graph $f(x)=x^2+1$."
   answerDisplay="$f(x)=x^2+1$"
   ariaLabel="A blank coordinate grid from −5 to 5 on the x-axis and −2 to 10 on the y-axis."
-  hint="Begin with the vertex, then plot one more integer point."
+  hint="Make a table of values for a few integer values of $x$, plot the points, and connect them with a smooth curve."
 >}}
 {"answer":{"quadratic":{"a":1,"b":0,"c":1},"plotPoints":3},"grid":{"xMin":-5,"xMax":5,"yMin":-2,"yMax":10}}
 {{< /graphplot >}}
@@ -801,6 +801,7 @@ The vertex is $(1,-1)$.
 {{< fillin
   question="For the graph of $f(x)=2x^2-8x+1$, find the axis of symmetry."
   answer="x=2"
+  answerForm="decimal"
   answerDisplay="$x=2$"
   hint="Use $x=-\tfrac{b}{2a}$."
 >}}
@@ -808,6 +809,7 @@ The vertex is $(1,-1)$.
 {{< fillin
   question="For the graph of $f(x)=2x^2-8x+1$, find the vertex as an ordered pair."
   answer="(2,-7)"
+  answerForm="decimal"
   answerDisplay="$(2,-7)$"
   hint="Substitute the x-coordinate from the axis of symmetry into the function."
 >}}
@@ -815,6 +817,7 @@ The vertex is $(1,-1)$.
 {{< fillin
   question="For the graph of $f(x)=2x^2-4x-3$, find the axis of symmetry."
   answer="x=1"
+  answerForm="decimal"
   answerDisplay="$x=1$"
   hint="Use $x=-\tfrac{b}{2a}$."
 >}}
@@ -1115,15 +1118,17 @@ $$
 The $x$-intercepts are the points $(4,0)$ and $(-2,0)$.
 
 {{< fillin
-  question="Find the intercepts of the parabola $f(x)=x^2+2x-8$. Enter the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
+  question="Find the intercepts of the parabola $f(x)=x^2+2x-8$. Enter them as ordered pairs: the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
   answer="(0,-8),(-4,0),(2,0)"
+  answerForm="decimal"
   answerDisplay="$(0,-8),\ (-4,0),\ (2,0)$"
   hint="Set $x=0$ for the y-intercept. Set $f(x)=0$ and factor for the x-intercepts."
 >}}
 
 {{< fillin
-  question="Find the intercepts of the parabola $f(x)=x^2-4x-12$. Enter the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
+  question="Find the intercepts of the parabola $f(x)=x^2-4x-12$. Enter them as ordered pairs: the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
   answer="(0,-12),(-2,0),(6,0)"
+  answerForm="decimal"
   answerDisplay="$(0,-12),\ (-2,0),\ (6,0)$"
   hint="Set $x=0$ for the y-intercept. Set $f(x)=0$ and factor for the x-intercepts."
 >}}
@@ -1156,7 +1161,7 @@ a quadratic function of the form $ax^2+bx+c=0$. Now we can use the
 discriminant to tell us how many $x$-intercepts there are on the graph.
 
 <div class="ap-figure"><svg role="img" aria-label="An upward-opening parabola crossing the x-axis twice, representing a positive discriminant and two real solutions." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 266" width="196" height="266" font-family="Helvetica, Arial, sans-serif">
-  <text x="98" y="14" font-size="13" fill="currentColor" text-anchor="middle">b² − 4ac &gt; 0: two x−intercepts</text>
+  <text x="98" y="14" font-size="13" fill="currentColor" text-anchor="middle">b² − 4ac &gt; 0: two x-intercepts</text>
   <line x1="24" y1="144" x2="172" y2="144" stroke="currentColor" stroke-width="1"/>
   <line x1="98" y1="46" x2="98" y2="242" stroke="currentColor" stroke-width="1"/>
   <polygon points="182,144 172,149 172,139" fill="currentColor"/>
@@ -1172,7 +1177,7 @@ discriminant to tell us how many $x$-intercepts there are on the graph.
 </div>
 
 <div class="ap-figure"><svg role="img" aria-label="A downward-opening parabola touching the x-axis only at its vertex, representing a zero discriminant and one real solution." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 266" width="196" height="266" font-family="Helvetica, Arial, sans-serif">
-  <text x="98" y="14" font-size="13" fill="currentColor" text-anchor="middle">b² − 4ac = 0: one x−intercept</text>
+  <text x="98" y="14" font-size="13" fill="currentColor" text-anchor="middle">b² − 4ac = 0: one x-intercept</text>
   <line x1="24" y1="144" x2="172" y2="144" stroke="currentColor" stroke-width="1"/>
   <line x1="98" y1="46" x2="98" y2="242" stroke="currentColor" stroke-width="1"/>
   <polygon points="182,144 172,149 172,139" fill="currentColor"/>
@@ -1188,7 +1193,7 @@ discriminant to tell us how many $x$-intercepts there are on the graph.
 </div>
 
 <div class="ap-figure"><svg role="img" aria-label="An upward-opening parabola entirely above the x-axis, representing a negative discriminant and no real solution." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 266" width="196" height="266" font-family="Helvetica, Arial, sans-serif">
-  <text x="98" y="14" font-size="13" fill="currentColor" text-anchor="middle">b² − 4ac &lt; 0: no x−intercept</text>
+  <text x="98" y="14" font-size="13" fill="currentColor" text-anchor="middle">b² − 4ac &lt; 0: no x-intercept</text>
   <line x1="24" y1="144" x2="172" y2="144" stroke="currentColor" stroke-width="1"/>
   <line x1="98" y1="46" x2="98" y2="242" stroke="currentColor" stroke-width="1"/>
   <polygon points="182,144 172,149 172,139" fill="currentColor"/>
@@ -1231,10 +1236,11 @@ Since the value of the discriminant is negative, there is no real solution to
 the equation. There are no $x$-intercepts.
 
 {{< fillin
-  question="Find the intercepts of $f(x)=3x^2+4x+4$. Enter the y-intercept."
+  question="Find the y-intercept of the parabola $f(x)=3x^2+4x+4$. Enter it as an ordered pair."
   answer="(0,4)"
+  answerForm="decimal"
   answerDisplay="$(0,4)$"
-  hint="Set $x=0$. Check the discriminant to determine whether there are x-intercepts."
+  hint="Set $x=0$ and evaluate the function."
 >}}
 
 {{< multiplechoice
@@ -1248,8 +1254,9 @@ two
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the intercepts of $f(x)=x^2-4x-5$. Enter the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
+  question="Find the intercepts of $f(x)=x^2-4x-5$. Enter them as ordered pairs: the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
   answer="(0,-5),(-1,0),(5,0)"
+  answerForm="decimal"
   answerDisplay="$(0,-5),\ (-1,0),\ (5,0)$"
   hint="Set $x=0$ for the y-intercept, and solve $f(x)=0$ for the x-intercepts."
 >}}
@@ -1806,7 +1813,7 @@ The approximate values are $x\approx2.6$ and $x\approx-0.6$. The approximate
 values of the $x$-intercepts are $(2.6,0)$ and $(-0.6,0)$. Graph the parabola
 using the points found.
 
-<div class="ap-figure"><svg role="img" aria-label="The upward-opening parabola y equals 2x squared minus 4x minus 3, with vertex (1, -5), y-intercept (0, -3), symmetric point (2, -3), approximate x-intercepts (-0.6, 0) and (2.6, 0), and dashed axis of symmetry x equals 1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316 316" width="316" height="316" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure"><svg role="img" aria-label="The upward-opening parabola y equals 2x squared minus 4x minus 3, with vertex (1, -5), y-intercept (0, -3), symmetric point (2, -3), crossing the x-axis near -0.6 and 2.6, and dashed axis of symmetry x equals 1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316 316" width="316" height="316" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="290" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="48" y1="290" x2="48" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="70" y1="290" x2="70" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -1991,7 +1998,7 @@ The vertex is $(-1,-9)$. Since the parabola has a minimum, the $y$-coordinate
 of the vertex is the minimum $y$-value of the quadratic equation. The minimum
 value of the quadratic is $-9$ and it occurs when $x=-1$.
 
-<div class="ap-figure"><svg role="img" aria-label="The upward-opening parabola y equals x squared plus 2x minus 8, with minimum vertex (-1, -9) and dashed axis of symmetry x equals -1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 316" width="272" height="316" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure"><svg role="img" aria-label="The upward-opening parabola y equals x squared plus 2x minus 8, with minimum vertex (-1, -9), crossing the x-axis at -4 and 2, and dashed axis of symmetry x equals -1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 316" width="272" height="316" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="290" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="48" y1="290" x2="48" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="70" y1="290" x2="70" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -2076,17 +2083,19 @@ value of the quadratic is $-9$ and it occurs when $x=-1$.
 </div>
 
 {{< fillin
-  question="Find the maximum or minimum value of $f(x)=x^2-8x+12$."
-  answer="-4"
-  answerDisplay="The minimum value is $-4$."
-  hint="Find the vertex. Since $a$ is positive, use its y-coordinate as the minimum."
+  question="Find the maximum or minimum value of $y=x^2-6x+15$."
+  answer="6"
+  answerForm="decimal"
+  answerDisplay="The minimum value is $6$."
+  hint="Find the vertex; its y-coordinate is the maximum or minimum value."
 >}}
 
 {{< fillin
   question="Find the maximum or minimum value of $f(x)=-4x^2+16x-11$."
   answer="5"
+  answerForm="decimal"
   answerDisplay="The maximum value is $5$."
-  hint="Find the vertex. Since $a$ is negative, use its y-coordinate as the maximum."
+  hint="Find the vertex; its y-coordinate is the maximum or minimum value."
 >}}
 
 We have used the formula
@@ -2136,22 +2145,25 @@ value of the quadratic is 488 feet and it occurs when $t=5.5$ seconds. After
 5.5 seconds, the volleyball will reach its maximum height of 488 feet.
 
 {{< fillin
-  question="The quadratic function $h(t)=-16t^2+128t+32$ gives the height of a stone thrown upward from a height of 32 feet at 128 ft/sec. How long will it take the stone to reach its maximum height? Round to the nearest tenth."
+  question="The quadratic function $h(t)=-16t^2+128t+32$ gives the height of a stone thrown upward from a height of 32 feet at 128 ft/sec. How long, in seconds, will it take the stone to reach its maximum height? Round to the nearest tenth."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$4.0$ seconds"
   hint="The time coordinate of the vertex is $t=-\tfrac{b}{2a}$."
 >}}
 
 {{< fillin
-  question="For $h(t)=-16t^2+128t+32$, what is the maximum height? Round to the nearest tenth."
+  question="For $h(t)=-16t^2+128t+32$, what is the maximum height, in feet? Round to the nearest tenth."
   answer="288"
+  answerForm="decimal"
   answerDisplay="$288.0$ feet"
   hint="Evaluate the height function at the time when the stone reaches its maximum."
 >}}
 
 {{< fillin
-  question="A toy rocket's path is $h(t)=-16t^2+208t$. When will the rocket reach its maximum height? Round to the nearest tenth."
+  question="A toy rocket's path is $h(t)=-16t^2+208t$. How many seconds after launch will the rocket reach its maximum height? Round to the nearest tenth."
   answer="6.5"
+  answerForm="decimal"
   answerDisplay="$6.5$ seconds"
   hint="The time coordinate of the vertex is $t=-\tfrac{b}{2a}$."
 >}}
@@ -2209,6 +2221,7 @@ upward
 {{< fillin
   question="For the graph of $f(x)=x^2+8x-1$, find the axis of symmetry."
   answer="x=-4"
+  answerForm="decimal"
   answerDisplay="$x=-4$"
   hint="Use $x=-\tfrac{b}{2a}$."
 >}}
@@ -2216,6 +2229,7 @@ upward
 {{< fillin
   question="For the graph of $f(x)=x^2+8x-1$, find the vertex as an ordered pair."
   answer="(-4,-17)"
+  answerForm="decimal"
   answerDisplay="$(-4,-17)$"
   hint="Substitute the axis-of-symmetry value into the function."
 >}}
@@ -2223,6 +2237,7 @@ upward
 {{< fillin
   question="For the graph of $f(x)=-x^2+2x+5$, find the axis of symmetry."
   answer="x=1"
+  answerForm="decimal"
   answerDisplay="$x=1$"
   hint="Use $x=-\tfrac{b}{2a}$."
 >}}
@@ -2230,6 +2245,7 @@ upward
 {{< fillin
   question="For the graph of $f(x)=-x^2+2x+5$, find the vertex as an ordered pair."
   answer="(1,6)"
+  answerForm="decimal"
   answerDisplay="$(1,6)$"
   hint="Substitute the axis-of-symmetry value into the function."
 >}}
@@ -2237,22 +2253,25 @@ upward
 ### Find the Intercepts of a Parabola
 
 {{< fillin
-  question="Find the y-intercept of the parabola $f(x)=x^2+7x+6$."
+  question="Find the y-intercept of the parabola $f(x)=x^2+7x+6$. Enter it as an ordered pair."
   answer="(0,6)"
+  answerForm="decimal"
   answerDisplay="$(0,6)$"
   hint="Set $x=0$ and evaluate the function."
 >}}
 
 {{< fillin
-  question="Find the x-intercepts of the parabola $f(x)=x^2+7x+6$. Enter the intercept with the smaller x-value first."
+  question="Find the x-intercepts of the parabola $f(x)=x^2+7x+6$. Enter them as ordered pairs, the intercept with the smaller x-value first, separated by a comma."
   answer="(-6,0),(-1,0)"
+  answerForm="decimal"
   answerDisplay="$(-6,0),\ (-1,0)$"
   hint="Set $f(x)=0$ and factor."
 >}}
 
 {{< fillin
-  question="Find the y-intercept of the parabola $f(x)=-x^2+8x-19$."
+  question="Find the y-intercept of the parabola $f(x)=-x^2+8x-19$. Enter it as an ordered pair."
   answer="(0,-19)"
+  answerForm="decimal"
   answerDisplay="$(0,-19)$"
   hint="Set $x=0$ and evaluate the function."
 >}}
@@ -2282,7 +2301,7 @@ none
   question="Graph $f(x)=-x^2+2x-7$ by using its properties."
   answerDisplay="$f(x)=-x^2+2x-7$"
   ariaLabel="A blank coordinate grid from −4 to 6 on the x-axis and −12 to 2 on the y-axis."
-  hint="This parabola opens downward and has no x-intercepts; plot the vertex and y-intercept."
+  hint="Find the vertex with $x=-\tfrac{b}{2a}$ and check the discriminant before looking for x-intercepts; then plot the y-intercept and its symmetric point."
 >}}
 {"answer":{"quadratic":{"a":-1,"b":2,"c":-7},"plotPoints":3},"grid":{"xMin":-4,"xMax":6,"yMin":-12,"yMax":2}}
 {{< /graphplot >}}
@@ -2290,33 +2309,37 @@ none
 ### Solve Maximum and Minimum Applications
 
 {{< fillin
-  question="The quadratic function $h(t)=-16t^2+168t+45$ gives the height of an arrow shot upward from a platform 45 feet high at 168 ft/sec. How long will it take the arrow to reach its maximum height? Round to the nearest tenth."
+  question="The quadratic function $h(t)=-16t^2+168t+45$ gives the height of an arrow shot upward from a platform 45 feet high at 168 ft/sec. How long, in seconds, will it take the arrow to reach its maximum height? Round to the nearest tenth."
   answer="5.3"
+  answerForm="decimal"
   answerDisplay="$5.3$ seconds"
   hint="The time coordinate of the vertex is $t=-\tfrac{b}{2a}$."
 >}}
 
 {{< fillin
-  question="For $h(t)=-16t^2+168t+45$, what is the maximum height? Round to the nearest tenth."
+  question="For $h(t)=-16t^2+168t+45$, what is the maximum height, in feet? Round to the nearest tenth."
   answer="486"
+  answerForm="decimal"
   answerDisplay="$486.0$ feet"
   hint="Evaluate the height function at the time found for the vertex."
 >}}
 
 {{< fillin
-  question="A retailer selling pairs of boots for $x$ dollars each can sell $70-x$ pairs a week. The revenue function is $R(x)=-x^2+70x$. Find the selling price that gives the maximum weekly revenue."
+  question="A retailer selling pairs of boots for $x$ dollars each can sell $70-x$ pairs a week. The revenue function is $R(x)=-x^2+70x$. Find the selling price, in dollars, that gives the maximum weekly revenue."
   answer="35"
+  answerForm="decimal"
   answerDisplay="\$35"
   hint="Maximize $R(x)=-x^2+70x$ by finding the x-coordinate of the vertex."
 >}}
 
 {{< fillin
-  question="For $R(x)=-x^2+70x$, what is the maximum weekly revenue?"
+  question="For $R(x)=-x^2+70x$, what is the maximum weekly revenue, in dollars?"
   answer="1225"
+  answerForm="decimal"
   answerDisplay="\$1,225"
   hint="Evaluate $R(x)$ at the selling price that maximizes revenue."
 >}}
 
 <small>
-Adapted from [Intermediate Algebra 2e, Section 9.6](https://openstax.org/books/intermediate-algebra-2e/pages/9-6-graph-quadratic-functions-using-properties) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz, media links, self-check, and review apparatus; converted Try It exercises to interactive checks, recreated instructional graphs for the web, and adapted selected end-of-section exercises into an interactive Practice block.
+Adapted from [Intermediate Algebra 2e, Section 9.6](https://openstax.org/books/intermediate-algebra-2e/pages/9-6-graph-quadratic-functions-using-properties) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: recreated the source graphs as accessible inline graphics and the worked solutions as typeset steps; omitted the Be Prepared quiz, media links, Key Concepts summary, writing exercises, Self Check checklist, and unselected end-of-section exercises; condensed the section vocabulary into a Key terms paragraph; converted selected practice problems ("Try Its") into interactive exercises with instant feedback, posing the $f(x)=x^2-8x+12$ graphing Try It as a choice among graphs, the $f(x)=3x^2+4x+4$ intercepts Try It as its $y$-intercept and a count of $x$-intercepts, and asking only the axis of symmetry of the $f(x)=2x^2-4x-3$ Try It and only the time of the toy-rocket Try It; adapted selected end-of-section exercises into an interactive Practice block, asking the boots exercise for the maximum weekly revenue where the source, whose sales estimate is weekly, says "per day"; and corrected the approximate $x$-intercept $\tfrac{2+\sqrt{10}}{2}$ of the $f(x)=2x^2-4x-3$ example, which the source rounds to $2.5$, to $2.6$.
 </small>
