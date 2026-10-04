@@ -13,7 +13,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  foldPrimes,
+  ce, foldPrimes,
   ANSWER_FORM_TOKENS, bracketsAsParentheses, checkAnswer, checkFormAsGraded, describeAnswerForm,
   describeFormFeedback, parseAnswerForm,
   preprocess,
@@ -3028,6 +3028,213 @@ test('endpoint shape tokens read each endpoint of a solution set', async (t) => 
   for (const [typed, key, form, expected] of endpointShapes) {
     await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
       assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A subscripted sequence label, `a_n=`, is stripped before a value form reads
+// the response, exactly as `x=` and `f(x)=` are (Intermediate Algebra chapters
+// 11–12 re-review, October 4, 2026).
+const sequenceLabels = [
+  ['a_n=-3n+35', '-3n+35', undefined, 'correct'],
+  ['a_n=-3n+35', '-3n+35', 'expanded', 'correct'],
+  ['a_n=-3n+35', '-3n+35', 'distributed', 'correct'],
+  ['a_n=-3n+35', '-3n+35', 'no-like-terms', 'correct'],
+  ['a_n=-3n+35', '-3n+35', 'expanded distributed no-like-terms', 'correct'],
+  ['a_{n}=-3n+35', '-3n+35', 'expanded distributed no-like-terms', 'correct'],
+  ['b_n=-3n+35', '-3n+35', 'expanded distributed', 'correct'],
+  ['S_n=-3n+35', '-3n+35', 'expanded', 'correct'],
+  ['a_n=-3n+35', 'a_n=-3n+35', 'expanded distributed no-like-terms', 'correct'],
+  ['-3n+35', 'a_n=-3n+35', 'expanded distributed no-like-terms', 'correct'],
+  ['a_1=5', '5', 'integer', 'correct'],
+  ['f(x)=2x+1', '2x+1', 'expanded distributed no-like-terms', 'correct'],
+  // The unworked formula is still `form`, the wrong one still `incorrect`.
+  ['a_n=-3(n-1)+32', '-3n+35', 'expanded distributed no-like-terms', 'form'],
+  ['a_n=32-3(n-1)', '-3n+35', 'distributed', 'form'],
+  ['-3(n-1)+32', '-3n+35', 'distributed', 'form'],
+  ['a_n=-3n+36', '-3n+35', 'expanded distributed no-like-terms', 'incorrect'],
+  // A recursive formula's `a_{n-1}` is not a label, and still grades.
+  ['a_n=a_{n-1}+3', 'a_n=a_{n-1}+3', undefined, 'correct'],
+  ['a_n=a_{n-1}+4', 'a_n=a_{n-1}+3', undefined, 'incorrect'],
+  ['a_n=a_{n-1}+3', 'a_{n-1}+3', undefined, 'correct'],
+  // Every value form, as for `x=`/`d=`: the labels the answerDisplays print.
+  ['a_n=3n', '3n', 'single-term', 'correct'],
+  ['a_n=2n+n', '3n', 'single-term', 'form'],
+  ['a_{27}=241', '241', 'decimal', 'correct'],
+  ['a_1=5', '5', 'decimal', 'correct'],
+  ['a_1=5', '5', 'lowest-terms', 'correct'],
+  ['S_{30}=1890', '1890', 'decimal', 'correct'],
+  ['d=4', '4', 'decimal', 'correct'],
+  ['a_1=\\frac{10}{2}', '5', 'lowest-terms', 'form'],
+  ['a_{27}=242', '241', 'decimal', 'incorrect'],
+  // An equation form still reads the equation, never a sequence label.
+  ['a_n=3(y+1)^2+4', '3(y+1)^2+4', 'vertex-form', 'form'],
+];
+test('a subscripted sequence label is stripped before the form check', async (t) => {
+  for (const [typed, key, form, expected] of sequenceLabels) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A one-letter label is never written on its own other side: `y=3(y+1)^2+4`
+// is an equation in y, not the bare key labelled (Intermediate Algebra
+// chapters 11–12 re-review, October 4, 2026).
+const selfReferentLabels = [
+  ['y=3(y+1)^2+4', '3(y+1)^2+4', 'vertex-form', 'incorrect'],
+  ['y=3(y+1)^2+4', '3(y+1)^2+4', undefined, 'incorrect'],
+  ['x=2x+1', '2x+1', undefined, 'incorrect'],
+  ['n=2n+1', '2n+1', undefined, 'incorrect'],
+  ['3(y+1)^2+4', 'y=3(y+1)^2+4', undefined, 'incorrect'],
+  ['y=3(y+1)^2+4', 'x=3(y+1)^2+4', 'vertex-form', 'incorrect'],
+  // The neighbours: a label on the other variable, solved-for keys, lists.
+  ['x=3(y+1)^2+4', '3(y+1)^2+4', 'vertex-form', 'correct'],
+  ['x=3(y+1)^2+4', '3(y+1)^2+4', undefined, 'correct'],
+  ['x=3(y+1)^2+4', 'x=3(y+1)^2+4', 'vertex-form', 'correct'],
+  ['y=2x+1', '2x+1', undefined, 'correct'],
+  ['f(n)=2n+1', '2n+1', undefined, 'correct'],
+  ['x=5', '5', undefined, 'correct'],
+  ['x=5', 'x=5', undefined, 'correct'],
+  ['-\\frac32=x', '-\\frac32', undefined, 'correct'],
+  ['x=2x-5', 'x=5', undefined, 'incorrect'],
+  ['r=\\frac{d}{t}', '\\frac{d}{t}', 'solved:r', 'correct'],
+  ['r=\\frac{d}{t}', 'r=\\frac{d}{t}', 'solved:r', 'correct'],
+];
+test('a label whose letter occurs on its other side is not a label', async (t) => {
+  for (const [typed, key, form, expected] of selfReferentLabels) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+  await t.test('x=4, x=x-2  vs  4,-2  [unordered]', () => {
+    assert.equal(checkAnswer('x=4, x=-2', '4,-2', { mode: 'unordered' }), 'correct');
+    assert.equal(checkAnswer('x=4, x=x-2', '4,-2', { mode: 'unordered' }), 'incorrect');
+  });
+});
+
+// A labelled value is judged on its value alone: the printed prompt behind a
+// label is still `form` (Intermediate Algebra chapters 11–12 re-review,
+// October 4, 2026).
+const labelledValueForms = [
+  ['y=12q^2+9q^2', '21q^2', 'no-like-terms', 'form'],
+  ['a_n=12q^2+9q^2', '21q^2', 'no-like-terms', 'form'],
+  ['f(x)=12q^2+9q^2', '21q^2', 'no-like-terms', 'form'],
+  ['12q^2+9q^2', '21q^2', 'no-like-terms', 'form'],
+  ['y=8\\sqrt{2}-9\\sqrt{2}', '-\\sqrt{2}', 'simplified-radical', 'form'],
+  ['f(x)=8\\sqrt{2}-9\\sqrt{2}', '-\\sqrt{2}', 'simplified-radical', 'form'],
+  ['a_n=32-3n+3', '-3n+35', 'no-like-terms', 'form'],
+  // The finished value behind the same labels, and the equation forms.
+  ['y=21q^2', '21q^2', 'no-like-terms', 'correct'],
+  ['f(x)=21q^2', '21q^2', 'no-like-terms', 'correct'],
+  ['y=-\\sqrt{2}', '-\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['f(x)=i', 'i', 'expanded', 'correct'],
+  ['f(x)=2x+1', '2x+1', 'expanded', 'correct'],
+  ['y=-\\frac{4}{5}x-5', 'y=-\\frac{4}{5}x-5', 'slope-intercept-form no-like-terms', 'correct'],
+  ['f(x)=-\\frac{4}{5}x-5', 'y=-\\frac{4}{5}x-5', 'slope-intercept-form no-like-terms', 'correct'],
+  ['f(x)=5(x-3)', 'y=5(x-3)', 'point-slope-form', 'correct'],
+  ['x=13', '13', 'decimal', 'correct'],
+  ['-7=p', '-7', 'integer', 'correct'],
+];
+test('a labelled value is judged on the value', async (t) => {
+  for (const [typed, key, form, expected] of labelledValueForms) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// An indexed term never reaches the engine's isEqual, whose compile fallback
+// left a sample point assigned to `a` or `n` for every later grading
+// (Intermediate Algebra chapters 11–12 re-review, October 4, 2026).
+test('grading a recursive formula leaves the engine symbols unvalued', () => {
+  assert.equal(checkAnswer('a_n=a_{n-1}+4', 'a_n=a_{n-1}+3'), 'incorrect');
+  assert.equal(checkAnswer('a_{n-1}+4', 'a_{n-1}+3'), 'incorrect');
+  assert.equal(checkAnswer('a_n=\\frac{2a_{n-1}}{3}', 'a_n=\\tfrac{2}{3}a_{n-1}'), 'correct');
+  assert.equal(checkAnswer('a_n=12+a_{n-1}', 'a_n=a_{n-1}+12'), 'correct');
+  assert.equal(ce.box('n').value, undefined);
+  assert.equal(ce.box('a').value, undefined);
+  assert.equal(checkAnswer('n=2n+1', '2n+1'), 'incorrect');
+});
+
+// A conic's standard form writes a zero shift as the bare square: `(x-0)^2`
+// is the centre substituted, not simplified (Intermediate Algebra chapters
+// 11–12 re-review, October 4, 2026).
+const zeroShifts = [
+  ['(x-0)^2+(y-0)^2=36', 'x^2+y^2=36', 'circle-standard-form', 'form'],
+  ['(x+0)^2+y^2=36', 'x^2+y^2=36', 'circle-standard-form', 'form'],
+  ['(x-2)^2+(y-0)^2=4', '(x-2)^2+y^2=4', 'circle-standard-form', 'form'],
+  ['(x-2)^2+(y-(-4))^2=4', '(x-2)^2+(y+4)^2=4', 'circle-standard-form', 'form'],
+  ['\\frac{(x-0)^2}{9}+\\frac{y^2}{4}=1', '\\frac{x^2}{9}+\\frac{y^2}{4}=1', 'conic-standard-form', 'form'],
+  ['\\frac{x^2}{9}-\\frac{(y+0)^2}{4}=1', '\\frac{x^2}{9}-\\frac{y^2}{4}=1', 'conic-standard-form', 'form'],
+  ['y^2=8(x-0)', 'y^2=8x', 'parabola-standard-form', 'form'],
+  ['(y-0)^2=8x', 'y^2=8x', 'parabola-standard-form', 'form'],
+  ['(x-1)^2=\\frac{y-0}{2}', '(x-1)^2=\\frac{y}{2}', 'parabola-standard-form', 'form'],
+  ['(x-0)^2+3', 'x^2+3', 'vertex-form', 'form'],
+  ['(x-0)^2+(y-0)^2=35', 'x^2+y^2=36', 'circle-standard-form', 'incorrect'],
+  ['x^2+y^2=36', 'x^2+y^2=36', 'circle-standard-form', 'correct'],
+  ['(x-2)^2+y^2=4', '(x-2)^2+y^2=4', 'circle-standard-form', 'correct'],
+  ['(x-2)^2+(y+10)^2=4', '(x-2)^2+(y+10)^2=4', 'circle-standard-form', 'correct'],
+  ['\\frac{x^2}{9}+\\frac{y^2}{4}=1', '\\frac{x^2}{9}+\\frac{y^2}{4}=1', 'conic-standard-form', 'correct'],
+  ['y^2=8x', 'y^2=8x', 'parabola-standard-form', 'correct'],
+  ['(x-2)^2=-8(y+1)', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'correct'],
+  ['(x-1)^2=\\frac{y}{2}', '(x-1)^2=\\frac{y}{2}', 'parabola-standard-form', 'correct'],
+];
+test('a written-in zero shift is not standard form', async (t) => {
+  for (const [typed, key, form, expected] of zeroShifts) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// Two finite sigma sums are equal when they list the same terms in order,
+// not when their totals agree (Intermediate Algebra chapters 11–12
+// re-review, October 4, 2026).
+const sigmaSums = [
+  ['\\sum_{n=1}^{5}n', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'incorrect'],
+  ['\\sum_{n=1}^{3}(-2)', '\\sum_{n=1}^{5}(-1)^n2n', 'incorrect'],
+  ['\\sum_{n=1}^{5}(-1)^{n}n^2', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'incorrect'],
+  ['\\sum_{k=1}^{4}5', '\\sum_{k=1}^{5}4', 'incorrect'],
+  ['\\sum_{k=1}^{20}(8k+3)', '\\sum_{k=1}^{20}(8k+2)', 'incorrect'],
+  ['\\sum_{k=1}^{5}(-1)^{k+1}k^2', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'correct'],
+  ['\\sum_{n=0}^{4}(-1)^n(n+1)^2', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'correct'],
+  ['2\\sum_{n=1}^{5}(-1)^nn', '\\sum_{n=1}^{5}(-1)^n2n', 'correct'],
+  ['\\sum_{i=1}^{5}4', '\\sum_{k=1}^{5}4', 'correct'],
+  ['\\sum_{k=0}^{19}(8k+10)', '\\sum_{k=1}^{20}(8k+2)', 'correct'],
+  ['\\sum_{n=1}^{5}\\left(\\frac{1}{2}\\right)^n', '\\sum_{n=1}^{5}\\frac{1}{2^n}', 'correct'],
+  ['15', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'form'],
+  ['1-4+9-16+25', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'form'],
+];
+test('two sigma sums compare term by term', async (t) => {
+  for (const [typed, key, expected] of sigmaSums) {
+    await t.test(`${typed}  vs  ${key}`, () => {
+      assert.equal(checkAnswer(typed, key, { form: 'summation' }), expected);
+    });
+  }
+});
+
+// A point with a ± in each coordinate names every sign combination
+// (Intermediate Algebra chapters 11–12 re-review, October 4, 2026).
+const independentSigns = [
+  ['(\\pm3,\\pm4)', '(-3,-4),(-3,4),(3,-4),(3,4)', 'correct'],
+  ['\\left(\\pm3,\\pm4\\right)', '(-3,-4),(-3,4),(3,-4),(3,4)', 'correct'],
+  ['(\\pm\\sqrt{2},\\pm2)', '(-\\sqrt{2},-2),(-\\sqrt{2},2),(\\sqrt{2},-2),(\\sqrt{2},2)', 'correct'],
+  ['(\\pm1,\\pm1,\\pm1)', '(1,1,1),(1,1,-1),(1,-1,1),(1,-1,-1),(-1,1,1),(-1,1,-1),(-1,-1,1),(-1,-1,-1)', 'correct'],
+  ['(\\pm4,0),(0,\\pm3)', '(-4,0),(4,0),(0,-3),(0,3)', 'correct'],
+  ['(\\pm3,\\pm5)', '(-3,-4),(-3,4),(3,-4),(3,4)', 'incorrect'],
+  // Correlated keys name fewer points than the product.
+  ['(\\pm2,\\pm3)', '(2,3),(-2,-3)', 'incorrect'],
+  // `\mp` beside `\pm` pairs the signs: not read as a product.
+  ['(\\pm2,\\mp3)', '(2,-3),(-2,3),(2,3),(-2,-3)', 'incorrect'],
+  // Two ± in one coordinate, or in a scalar, are still not expanded.
+  ['(1\\pm2\\pm3,0)', '(0,0),(-4,0),(6,0),(2,0)', 'incorrect'],
+  ['1\\pm2\\pm3', '0,-4,6,2', 'incorrect'],
+];
+test('a ± in each coordinate of a point expands to every sign combination', async (t) => {
+  for (const [typed, key, expected] of independentSigns) {
+    await t.test(`${typed}  vs  ${key}`, () => {
+      assert.equal(checkAnswer(typed, key, { mode: 'unordered' }), expected);
     });
   }
 });

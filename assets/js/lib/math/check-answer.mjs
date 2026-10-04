@@ -113,6 +113,7 @@ function parseLatex(source) {
 }
 
 const holdsNaN = (json) => json === 'NaN' || (Array.isArray(json) && json.some(holdsNaN));
+const holdsSubscript = (json) => Array.isArray(json) && (json[0] === 'Subscript' || json.some(holdsSubscript));
 const holdsImaginaryUnit = (json) => json === 'i' || json === 'ImaginaryUnit'
   || (Array.isArray(json) && json.some(holdsImaginaryUnit));
 
@@ -320,8 +321,16 @@ function splitEquationSides(latex) {
  * The coefficient-1 requirement is the point: `9x^2` and `\frac{9x^2}{144}`
  * are the general form's terms, and accepting them would accept the very
  * restatement the standard-form predicates exist to reject.
+ *
+ * The shift is a NONZERO integer: a written-in zero, `(x-0)^2`, is the
+ * centre substituted and not simplified — the same unfinished writing as
+ * `(y-(-4))^2`, which already failed — and it graded `correct` against
+ * `x^2+y^2=36` (Intermediate Algebra chapters 11–12 re-review, October 4,
+ * 2026). The origin's unit is the bare `x^2`.
  */
-const isSquaredConicUnit = (term) => /^(?:[a-zA-Z](?:_\{p+\})?|\([a-zA-Z](?:_\{p+\})?[+-]\d+\))\^\{?2\}?$/.test(term);
+const NONZERO_SHIFT = String.raw`[+-][1-9]\d*`;
+const SQUARED_CONIC_UNIT = new RegExp(String.raw`^(?:[a-zA-Z](?:_\{p+\})?|\([a-zA-Z](?:_\{p+\})?${NONZERO_SHIFT}\))\^\{?2\}?$`);
+const isSquaredConicUnit = (term) => SQUARED_CONIC_UNIT.test(term);
 
 /**
  * The Compute Engine reads a `\frac` with a lone `d` numerator as Leibniz
@@ -1082,6 +1091,48 @@ function proportionalSides(sides, vars) {
 const ORDERED_CONTAINERS = new Set(['Tuple', 'List', 'Interval', 'Open']);
 const orderedContainer = (expr) => (ORDERED_CONTAINERS.has(expr.operator) ? expr.ops ?? [] : null);
 
+/**
+ * The terms a finite sigma sum lists, in order: `\sum_{n=1}^{5}(-1)^{n+1}n^2`
+ * is 1, −4, 9, −16, 25. A constant coefficient outside (`3\sum…`, `-\sum…`)
+ * multiplies every term. null when the expression is not one sigma with
+ * integer bounds and at most SIGMA_TERM_LIMIT terms (an infinite series is
+ * read by its value).
+ *
+ * Two sigma sums are the same answer when they list the same terms, not when
+ * their totals agree: "write $1-4+9-16+25$ in summation notation" accepted
+ * `\sum_{n=1}^{5}n` (also 15), and `\sum_{n=1}^{3}(-2)` passed for
+ * $-2+4-6+8-10$ (Intermediate Algebra chapters 11–12 re-review, October 4,
+ * 2026). A renamed or shifted index lists the same terms and still passes; a
+ * bare total or the written-out sum is not a sigma and keeps its value
+ * reading, which the `summation` form then refuses.
+ */
+const SIGMA_TERM_LIMIT = 500;
+function sigmaTerms(expr) {
+  let coefficient = 1;
+  let sum = expr;
+  if (sum.operator === 'Negate') {
+    coefficient = -1;
+    sum = sum.ops[0];
+  } else if (sum.operator === 'Multiply') {
+    const sums = sum.ops.filter((op) => op.operator === 'Sum');
+    if (sums.length !== 1 || !sum.ops.every((op) => op === sums[0] || isConstantExpr(op))) return null;
+    coefficient = ce.box(['Multiply', ...sum.ops.filter((op) => op !== sums[0])]);
+    sum = sums[0];
+  }
+  if (sum.operator !== 'Sum' || sum.ops?.length !== 2) return null;
+  const [body, limits] = sum.ops;
+  if (limits.operator !== 'Limits' || limits.ops?.length !== 3) return null;
+  const [index, lower, upper] = limits.ops;
+  const bound = (e) => (e.isNumberLiteral && e.im === 0 && Number.isInteger(e.re) ? e.re : null);
+  const [from, to] = [bound(lower), bound(upper)];
+  if (!index.symbol || from === null || to === null || to < from || to - from >= SIGMA_TERM_LIMIT) return null;
+  const terms = [];
+  for (let k = from; k <= to; k += 1) {
+    terms.push(ce.box(['Multiply', coefficient, body.subs({ [index.symbol]: ce.number(k) })]).evaluate());
+  }
+  return terms;
+}
+
 function equivalent(studentExpr, answerExpr) {
   try {
     if (studentExpr.isSame(answerExpr)) return true;
@@ -1119,6 +1170,13 @@ function equivalent(studentExpr, answerExpr) {
         unused.splice(match, 1);
         return true;
       });
+    }
+    // Two finite sigma sums compare term by term (sigmaTerms).
+    const studentTerms = sigmaTerms(studentExpr);
+    const answerTerms = studentTerms && sigmaTerms(answerExpr);
+    if (studentTerms && answerTerms) {
+      return studentTerms.length === answerTerms.length
+        && studentTerms.every((term, i) => equivalent(term, answerTerms[i]));
     }
     const studentMembers = orderedContainer(studentExpr);
     const answerMembers = orderedContainer(answerExpr);
@@ -1200,7 +1258,16 @@ function equivalent(studentExpr, answerExpr) {
           && Math.abs(student.im - answer.im) <= SAMPLE_TOLERANCE * scale) return true;
       }
     }
-    if (studentExpr.isEqual(answerExpr) === true) return true;
+    // An indexed term, `a_{n-1}` (a `Subscript`), never reaches `isEqual`:
+    // the pinned engine cannot compile it, and the compile fallback assigns
+    // its sample points to the engine's own symbols inside a scope that does
+    // not own them, so popScope() leaves `a` or `n` holding a number. Every
+    // later grading on the page then read `n` as a constant — `n=2n+1`
+    // stopped writing its label's variable (Intermediate Algebra chapters
+    // 11–12 re-review, October 4, 2026). Such a pair is decided by the
+    // simplified difference alone.
+    if (!holdsSubscript(studentExpr.json) && !holdsSubscript(answerExpr.json)
+      && studentExpr.isEqual(answerExpr) === true) return true;
     const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
     return diff.isSame(ce.number(0));
   } catch {
@@ -1245,15 +1312,22 @@ function equivalentAllowingVariableEquation(studentExpr, answerExpr) {
     // engine's isEqual, which accepted them, is never consulted here.
     return equivalent(studentExpr, answerExpr);
   }
+  // A one-sided unwrap reads the variable as a LABEL, and a label is never
+  // written on its own other side: `y=3(y+1)^2+4` is an equation in y, not
+  // the bare key `3(y+1)^2+4` (the sideways parabola x=3(y+1)^2+4) labelled
+  // `y`, and it graded `correct` (Intermediate Algebra chapters 11–12
+  // re-review, October 4, 2026). The variable must not occur free in the
+  // value; a recursive formula's `a_{n-1}` is a different symbol from its
+  // `a_n` and is unaffected. Two variable equations still compare value to
+  // value above, so `x=2x-5` against `x=5` stays `incorrect`.
+  const labels = (equation) => !equation.value.unknowns.includes(equation.variable);
   if (studentEq) {
-    return answerExpr.operator === 'Equal'
-      ? equivalent(studentExpr, answerExpr)
-      : equivalent(studentEq.value, answerExpr);
+    if (answerExpr.operator === 'Equal') return equivalent(studentExpr, answerExpr);
+    return labels(studentEq) && equivalent(studentEq.value, answerExpr);
   }
   if (answerEq) {
-    return studentExpr.operator === 'Equal'
-      ? equivalent(studentExpr, answerExpr)
-      : equivalent(studentExpr, answerEq.value);
+    if (studentExpr.operator === 'Equal') return equivalent(studentExpr, answerExpr);
+    return labels(answerEq) && equivalent(studentExpr, answerEq.value);
   }
   return equivalent(studentExpr, answerExpr);
 }
@@ -4497,7 +4571,10 @@ const FORM_PREDICATES = {
     const sides = splitEquationSides(latex);
     if (!sides) return false;
     const variable = String.raw`([a-zA-Z])(?:_\{p+\})?`;
-    const shifted = String.raw`(?:${variable}|\(${variable}[+-]\d+\))`;
+    // A shift is a nonzero integer, as in isSquaredConicUnit: `(y-0)^2=8x`
+    // and `y^2=8(x-0)` leave the vertex substituted, not simplified
+    // (Intermediate Algebra chapters 11–12 re-review, October 4, 2026).
+    const shifted = String.raw`(?:${variable}|\(${variable}${NONZERO_SHIFT}\))`;
     const squaredUnit = new RegExp(String.raw`^${shifted}\^\{?2\}?$`);
     // The 4p may be irrational — a focus at $(\sqrt2,0)$ gives $y^2=4\sqrt2x$ —
     // so a coefficient is an integer/decimal, a written fraction, a radical,
@@ -4505,11 +4582,11 @@ const FORM_PREDICATES = {
     const radical = String.raw`\\sqrt(?:\{\d+\}|\d)`;
     const coefficient = String.raw`(?:\d+(?:\.\d+)?|\\[tdc]?frac\{[+-]?\d+\}\{\d+\}|\\[tdc]?frac\d\d|\d*${radical})?`;
     const linearTerm = new RegExp(String.raw`^[+-]?${coefficient}(?:\\cdot)?${shifted}$`);
-    const linearOverInteger = new RegExp(String.raw`^[+-]?\\[tdc]?frac\{\(?${variable}(?:[+-]\d+)?\)?\}\{\d+\}$`);
+    const linearOverInteger = new RegExp(String.raw`^[+-]?\\[tdc]?frac\{\(?${variable}(?:${NONZERO_SHIFT})?\)?\}\{\d+\}$`);
     // The same quotient written with a slash, $(x-2)^2=(y-1)/2$ — the
     // sibling `conic-standard-form` reads both spellings, and a value-equal
     // response in the very shape the ask names must never report 'form'.
-    const linearOverIntegerSlash = new RegExp(String.raw`^[+-]?\(?${variable}(?:[+-]\d+)?\)?/\d+$`);
+    const linearOverIntegerSlash = new RegExp(String.raw`^[+-]?\(?${variable}(?:${NONZERO_SHIFT})?\)?/\d+$`);
     const letterOf = (match) => match.slice(1).find((group) => group !== undefined);
     const isParabola = (squared, linear) => {
       const unit = squared.match(squaredUnit);
@@ -5694,24 +5771,49 @@ function halfPlaneVerdict(studentRaw, answerRaw, options) {
  * list is graded against a list key of the same size AS A SET: the ± states
  * no order, so an ordered key's order is not required of it. The key's
  * answerForm reaches each expanded member exactly as it would a typed list.
- * A member with two ± is not expanded; a ± response against any other key is
- * 'incorrect'.
+ * A member with two ± is not expanded unless they sit in different
+ * coordinates of a point (independentCoordinateSigns); a ± response against
+ * any other key is 'incorrect'.
  * ------------------------------------------------------------------------ */
 
 const PLUS_MINUS = /\\pm(?![a-zA-Z])|\\mp(?![a-zA-Z])|±|∓/g;
 
+// A point with a ± in each of two or three coordinates, `(\pm3,\pm4)`, names
+// every sign combination — the four vertices the source writes that way —
+// and graded `incorrect` against the four-point key (Intermediate Algebra
+// chapters 11–12 re-review, October 4, 2026). Expanded as the Cartesian
+// product of its signs, one ± per coordinate and `\pm` only: a `\mp` beside
+// a `\pm` pairs the signs, which this reading would get wrong, so that
+// member is still not expanded. A key listing only correlated points
+// (`(2,3),(-2,-3)`) has fewer members than the product and still refuses it.
+function independentCoordinateSigns(member, marks) {
+  if (marks.length > 3 || marks.some((mark) => mark === '\\mp' || mark === '∓')) return false;
+  const point = member.replace(/\\left\s*|\\right\s*/g, '').trim().match(/^\((.*)\)$/s);
+  if (!point) return false;
+  const coordinates = splitTopLevelCommas(point[1]);
+  return coordinates.length >= 2
+    && coordinates.every((coordinate) => (coordinate.match(PLUS_MINUS) ?? []).length <= 1);
+}
+
 function plusMinusBranches(member) {
   const marks = member.match(PLUS_MINUS) ?? [];
   if (marks.length === 0) return [member];
-  if (marks.length > 1) return null;
+  if (marks.length > 1) {
+    if (!independentCoordinateSigns(member, marks)) return null;
+    return firstSignBranches(member, marks[0]).flatMap(plusMinusBranches);
+  }
+  return firstSignBranches(member, marks[0]);
+}
+
+function firstSignBranches(member, mark) {
   const at = member.search(PLUS_MINUS);
   const before = member.slice(0, at);
-  const after = member.slice(at + marks[0].length).replace(/^\s*\{\s*\}/, '');
+  const after = member.slice(at + mark.length).replace(/^\s*\{\s*\}/, '');
   const plus = /(?:^|[=({[,<>])\s*$/.test(before) ? '' : '+';
   return [`${before}-${after}`, `${before}${plus}${after}`];
 }
 
-/** The members a response with a ± in it stands for, or null when it has none (or two in one member). */
+/** The members a response with a ± in it stands for, or null when it has none (or two in one member, outside a point's coordinates). */
 function plusMinusExpansion(raw) {
   const text = String(raw ?? '');
   if (!text.match(PLUS_MINUS)) return null;
@@ -5951,17 +6053,28 @@ function functionLabelEquation(latex) {
 
 /**
  * The form check exactly as checkAnswer() applies it: on the
- * function-notation-normalized writing, with the labelled-equation reading
- * accepted too. Exported so the content lint's cheap shape pre-filter can
+ * function-notation-normalized writing, a labelled value read as its value,
+ * and the labelled-equation reading accepted too for a form that reads
+ * equations. Exported so the content lint's cheap shape pre-filter can
  * never disagree with the grader about the same text.
  */
 function formAcceptedAsWritten(written, spec, answerRaw) {
   const preprocessed = readExpressionLabel(written, answerRaw);
-  if (checkForm(readFunctionNotation(preprocessed), spec, answerRaw)) return true;
+  // A labelled VALUE is judged on the value alone. The whole equation was
+  // read first, and a value form has no reading of an `=`: `no-like-terms`
+  // and `simplified-radical` took `y=12q^2+9q^2`, `a_n=…` and
+  // `y=8\sqrt2-9\sqrt2` as one unfinished term, so the printed prompt behind
+  // any label graded `correct` where the bare prompt graded `form`
+  // (Intermediate Algebra chapters 11–12 re-review, October 4, 2026). The
+  // equation readings below stay for the forms that read equations. Read
+  // after the function label is gone, so `f(x)=x` is never the trailing
+  // label `=x` on the value `f(x)`.
+  const normalized = readFunctionNotation(preprocessed);
+  const value = variableLabelValue(normalized, spec);
+  if (value !== null) return checkForm(value, spec, answerRaw);
+  if (checkForm(normalized, spec, answerRaw)) return true;
   const equation = functionLabelEquation(preprocessed);
-  if (equation !== null && checkForm(equation, spec, answerRaw)) return true;
-  const value = variableLabelValue(preprocessed, spec);
-  return value !== null && checkForm(value, spec, answerRaw);
+  return equation !== null && readsEquations(spec) && checkForm(equation, spec, answerRaw);
 }
 
 // Forms whose shape IS an equation: a `y=` on the response is part of what
@@ -5970,6 +6083,24 @@ const EQUATION_FORM_TOKENS = new Set([
   'point-slope-form', 'slope-intercept-form', 'vertex-form', 'conic-standard-form',
   'parabola-standard-form', 'circle-standard-form', 'line-standard-form', 'exponential-form', 'logarithmic-form', 'translation',
 ]);
+
+/** Does the spec name a form that reads an equation (a named shape or `solved:`)? */
+function readsEquations(spec) {
+  const { tokens, valid } = parseAnswerForm(spec);
+  return valid && tokens.some((token) => EQUATION_FORM_TOKENS.has(token) || SOLVED_TOKEN.test(token));
+}
+
+// The label may carry a subscript, `a_n=-3n+35`, `a_{n}=…`, `S_n=…`,
+// `a_1=5`: a sequence's term or sum written before its formula the way the
+// book's chapter 12 answers write it. The value grader already reads `a_n`
+// as one variable, but the form check saw the whole equation, so the right
+// formula graded `form` under `expanded`/`distributed` — and a key written
+// `a_n=…` failed its own form (Intermediate Algebra chapters 11–12
+// re-review, October 4, 2026). Only a letter or numeral index: a recursive
+// formula's `a_{n-1}` is never a label.
+const SUBSCRIPTED_LETTER = String.raw`[a-zA-Z](?:_(?:[a-zA-Z0-9]|\{\s*[a-zA-Z0-9]+\s*\}))?`;
+const LEADING_VARIABLE_LABEL = new RegExp(String.raw`^\s*${SUBSCRIPTED_LETTER}\s*=(?![=<>])`);
+const TRAILING_VARIABLE_LABEL = new RegExp(String.raw`(?<![=<>!])=\s*${SUBSCRIPTED_LETTER}\s*$`);
 
 /**
  * The value side of a one-letter LABEL, `x=13`, for a form that describes a
@@ -5983,11 +6114,11 @@ const EQUATION_FORM_TOKENS = new Set([
  */
 function variableLabelValue(preprocessed, spec) {
   let rest;
-  const label = preprocessed.match(/^\s*[a-zA-Z]\s*=(?![=<>])/);
+  const label = preprocessed.match(LEADING_VARIABLE_LABEL);
   if (label) {
     rest = preprocessed.slice(label[0].length);
   } else {
-    const trailing = preprocessed.match(/(?<![=<>!])=\s*[a-zA-Z]\s*$/);
+    const trailing = preprocessed.match(TRAILING_VARIABLE_LABEL);
     if (!trailing) return null;
     rest = preprocessed.slice(0, trailing.index);
   }
