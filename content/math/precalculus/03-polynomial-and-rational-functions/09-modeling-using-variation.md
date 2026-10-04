@@ -56,7 +56,7 @@ greater than zero and is called the **constant of variation**. In this case,
 $k=0.16$ and $n=1$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of e equals 0.16 s, a ray starting at the origin and rising to the right through the marked points (4,600, 736), (9,200, 1,472), and (18,400, 2,944), with an arrowhead near the top right. The horizontal axis is s, Sales Price in Dollars, from 0 to 30,000, and the vertical axis is e, Earnings in dollars, from 0 to 5,000.","xMin":0,"xMax":30000,"yMin":0,"yMax":5000,"xUnit":0.0086,"yUnit":0.045,"grid":false,"xTickStep":6000,"yTickStep":1000,"tickLabels":true,"xLabel":"s","yLabel":"e","polynomials":[{"coeffs":[0,0.16],"from":0,"arrows":"end"}],"points":[{"at":[4600,736],"label":"(4,600, 736)"},{"at":[9200,1472],"label":"(9,200, 1,472)"},{"at":[18400,2944],"label":"(18,400, 2,944)"}]}
+{"ariaLabel":"The graph of e equals 0.16 s, a ray starting at the origin and rising to the right through the marked points (4,600, 736), (9,200, 1,472), and (18,400, 2,944), with an arrowhead near the top right. The horizontal axis, labeled s, is the sales price in dollars, from 0 to 30,000, and the vertical axis, labeled e, is the earnings in dollars, from 0 to 5,000.","xMin":0,"xMax":30000,"yMin":0,"yMax":5000,"xUnit":0.0086,"yUnit":0.045,"grid":false,"xTickStep":6000,"yTickStep":1000,"tickLabels":true,"xLabel":"s","yLabel":"e","polynomials":[{"coeffs":[0,0.16],"from":0,"arrows":"end"}],"points":[{"at":[4600,736],"label":"(4,600, 736)"},{"at":[9200,1472],"label":"(9,200, 1,472)"},{"at":[18400,2944],"label":"(18,400, 2,944)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -114,7 +114,7 @@ $$
 **Analysis.** The graph of this equation is a simple cubic, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals twenty-five eighths x cubed, a curve starting at the origin and rising steeply to the right through the marked points (2, 25) and (6, 675), with an arrowhead near the top. The horizontal axis is x from 0 to 10, and the vertical axis is y from 0 to 800.","xMin":0,"xMax":10,"yMin":0,"yMax":800,"xUnit":24,"yUnit":0.3,"grid":false,"xTickStep":2,"yTickStep":200,"tickLabels":true,"xLabel":"x","yLabel":"y","polynomials":[{"coeffs":[0,0,0,3.125],"from":0,"arrows":"end"}],"points":[{"at":[2,25],"label":"(2, 25)"},{"at":[6,675],"label":"(6, 675)"}]}
+{"ariaLabel":"The graph of y equals twenty-five eighths x cubed, a curve starting at the origin and rising steeply to the right through the marked points (2, 25) and (6, 675), with an arrowhead near the top. The horizontal axis is x from 0 to 10, and the vertical axis is y from 0 to 800.","xMin":0,"xMax":10,"yMin":0,"yMax":800,"xUnit":24,"yUnit":0.3,"grid":false,"xTickStep":2,"yTickStep":200,"tickLabels":true,"xLabel":"x","yLabel":"y","polynomials":[{"coeffs":[0,0,0,3.125],"from":0,"arrows":"end"}],"points":[{"at":[2,25],"label":"(2, 25)","labelSide":"n","labelNudge":[-10,-2]},{"at":[6,675],"label":"(6, 675)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -127,8 +127,9 @@ $$
 {{< /callout >}}
 
 {{< fillin
-  question="The quantity $y$ varies directly with the square of $x$. If $y=24$ when $x=3$, find $y$ when $x$ is 4."
+  question="The quantity $y$ varies directly with the square of $x$. If $y=24$ when $x=3$, find $y$ when $x$ is 4. Enter the exact value."
   answer="\frac{128}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$y=\tfrac{128}{3}$"
   hint="Divide $y$ by the square of $x$ to find the constant $k$, then substitute $x=4$ into $y=kx^2$."
 >}}
@@ -163,7 +164,7 @@ the depth increases, the temperature decreases. The formula $y=\tfrac{k}{x}$
 for inverse variation in this case uses $k=14{,}000$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of T equals 14,000 over d, a curve falling from upper left to lower right through the marked points (250, 56), (350, 40), and (500, 28), with arrowheads at both ends. The horizontal axis is d, Depth in feet, from 0 to 600, and the vertical axis is T, Temperature in degrees Fahrenheit, from 0 to 60.","xMin":0,"xMax":600,"yMin":0,"yMax":60,"xUnit":0.4,"yUnit":4,"grid":false,"xTickStep":200,"yTickStep":10,"tickLabels":true,"xLabel":"d","yLabel":"T","curves":[{"kind":"reciprocal","a":14000}],"points":[{"at":[250,56],"label":"(250, 56)"},{"at":[350,40],"label":"(350, 40)"},{"at":[500,28],"label":"(500, 28)"}]}
+{"ariaLabel":"The graph of T equals 14,000 over d, a curve falling from upper left to lower right through the marked points (250, 56), (350, 40), and (500, 28), with arrowheads at both ends. The horizontal axis, labeled d, is the depth in feet, from 0 to 600, and the vertical axis, labeled T, is the temperature in degrees Fahrenheit, from 0 to 65.","xMin":0,"xMax":600,"yMin":0,"yMax":65,"xUnit":0.4,"yUnit":4,"grid":false,"xTickStep":200,"yTickStep":10,"tickLabels":true,"xLabel":"d","yLabel":"T","curves":[{"kind":"reciprocal","a":14000}],"points":[{"at":[250,56],"label":"(250, 56)"},{"at":[350,40],"label":"(350, 40)"},{"at":[500,28],"label":"(500, 28)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -229,7 +230,7 @@ relationship.
 
 $$
 \begin{array}{lrcl}
-& y &=& \tfrac{k}{x^{3}},k=200 \\[4pt]
+& y &=& \tfrac{k}{x^{3}},\quad k=200 \\[4pt]
 & y &=& \tfrac{200}{x^{3}}
 \end{array}
 $$
@@ -247,12 +248,13 @@ $$
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 25 over x cubed, a curve falling steeply from the upper left through the marked points (2, 25) and (6, 25 over 27), leveling off near the horizontal axis, with arrowheads at both ends. The horizontal axis is x from 0 to 10, and the vertical axis is y from 0 to 30.","xMin":0,"xMax":10,"yMin":0,"yMax":30,"xUnit":24,"yUnit":8,"grid":false,"xTickStep":2,"yTickStep":5,"tickLabels":true,"xLabel":"x","yLabel":"y","rationals":[{"num":[25],"den":[0,0,0,1]}],"points":[{"at":[2,25],"label":"(2, 25)"},{"at":[6,0.9259259259259259],"label":"(6, 25/27)"}]}
+{"ariaLabel":"The graph of y equals 200 over x cubed, a curve falling steeply from the upper left through the marked points (2, 25) and (6, 25 over 27), leveling off just above the horizontal axis, with arrowheads at both ends. The horizontal axis is x from 0 to 10, and the vertical axis is y from 0 to 30.","xMin":0,"xMax":10,"yMin":0,"yMax":30,"xUnit":24,"yUnit":8,"grid":false,"xTickStep":2,"yTickStep":5,"tickLabels":true,"xLabel":"x","yLabel":"y","rationals":[{"num":[200],"den":[0,0,0,1],"to":9.4}],"points":[{"at":[2,25],"label":"(2, 25)"},{"at":[6,0.9259259259259259],"label":"(6, 25/27)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="A quantity $y$ varies inversely with the square of $x$. If $y=8$ when $x=3$, find $y$ when $x$ is 4."
   answer="\frac{9}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$y=\tfrac{9}{2}$"
   hint="Multiply $y$ by the square of $x$ to find the constant $k$, then substitute $x=4$ into $y=\tfrac{k}{x^2}$."
 >}}
@@ -314,6 +316,7 @@ $$
 {{< fillin
   question="$x$ varies directly with the square of $y$ and inversely with $z$. If $x=40$ when $y=4$ and $z=2$, find $x$ when $y=10$ and $z=25$."
   answer="20"
+  answerForm="decimal"
   answerDisplay="$x=20$"
   hint="Substitute the first triple of values into $x=\tfrac{ky^2}{z}$ to find $k$, then use that same $k$ with the second triple."
 >}}
@@ -359,6 +362,7 @@ relationship where one quantity is a constant divided by the other quantity.
 {{< fillin
   question="$y$ varies directly as the square of $x$, and when $x=4$, $y=80$. Write the equation that relates $x$ and $y$."
   answer="y=5x^2"
+  answerForm="single-term"
   answerDisplay="$y=5x^{2}$"
   hint="Divide $y$ by the square of $x$ to find the constant of variation $k$, then write $y=kx^2$."
 >}}
@@ -366,12 +370,14 @@ relationship where one quantity is a constant divided by the other quantity.
 {{< fillin
   question="$y$ varies directly as the square of $x$. When $x=2$, $y=16$. Find $y$ when $x=8$."
   answer="256"
+  answerForm="decimal"
   hint="Find the constant $k$ from the first pair using $y=kx^2$, then substitute $x=8$."
 >}}
 
 {{< fillin
-  question="The distance $s$ that an object falls varies directly with the square of the time, $t$, of the fall. If an object falls 16 feet in one second, how long for it to fall 144 feet?"
+  question="The distance $s$ that an object falls varies directly with the square of the time, $t$, of the fall. If an object falls 16 feet in one second, how long for it to fall 144 feet? Give the time in seconds."
   answer="3"
+  answerForm="decimal"
   answerDisplay="3 seconds"
   hint="Find $k$ from the given fall using $s=kt^2$, then solve for $t$ when $s=144$."
 >}}
@@ -381,6 +387,7 @@ relationship where one quantity is a constant divided by the other quantity.
 {{< fillin
   question="$y$ varies inversely as the square of $x$, and when $x=3$, $y=2$. Write the equation that relates $x$ and $y$."
   answer="y=\frac{18}{x^2}"
+  answerForm="single-fraction"
   answerDisplay="$y=\tfrac{18}{x^{2}}$"
   hint="Multiply $y$ by the square of $x$ to find the constant of variation $k$, then write $y=\tfrac{k}{x^2}$."
 >}}
@@ -388,12 +395,14 @@ relationship where one quantity is a constant divided by the other quantity.
 {{< fillin
   question="$y$ varies inversely with the cube root of $x$. When $x=27$, $y=5$. Find $y$ when $x=125$."
   answer="3"
+  answerForm="decimal"
   hint="Find $k$ from the first pair using $y=\tfrac{k}{\sqrt[3]{x}}$, then substitute $x=125$."
 >}}
 
 {{< fillin
-  question="The rate of vibration of a string under constant tension varies inversely with the length of the string. If a string is 24 inches long and vibrates 128 times per second, what is the length of a string that vibrates 64 times per second?"
+  question="The rate of vibration of a string under constant tension varies inversely with the length of the string. If a string is 24 inches long and vibrates 128 times per second, what is the length of a string that vibrates 64 times per second? Give the length in inches."
   answer="48"
+  answerForm="decimal"
   answerDisplay="48 inches"
   hint="Find $k$ from (rate)(length)$=k$ using the 24-inch string, then solve for the length when the rate is 64."
 >}}
@@ -403,12 +412,14 @@ relationship where one quantity is a constant divided by the other quantity.
 {{< fillin
   question="$y$ varies jointly as $x$, $z$, and $w$. When $x=1$, $z=2$, and $w=5$, $y=100$. Write the equation that relates the variables."
   answer="y=10xzw"
+  answerForm="single-term"
   hint="Divide $y$ by the product $xzw$ to find the constant of variation $k$."
 >}}
 
 {{< fillin
-  question="$y$ varies jointly as $x$ and $z$ and inversely as $w$. When $x=3$, $z=5$, and $w=6$, $y=10$. Write the equation that relates the variables."
+  question="$y$ varies jointly as $x$ and $z$ and inversely as $w$. When $x=3$, $z=5$, and $w=6$, $y=10$. Write the equation that relates the variables, with the right side as a single fraction."
   answer="y=\frac{4xz}{w}"
+  answerForm="single-fraction"
   answerDisplay="$y=\tfrac{4xz}{w}$"
   hint="Solve $y=\tfrac{kxz}{w}$ for $k$ using the given values, then write the equation with that $k$."
 >}}
@@ -416,10 +427,11 @@ relationship where one quantity is a constant divided by the other quantity.
 {{< fillin
   question="The horsepower (hp) that a shaft can safely transmit varies jointly with its speed (in revolutions per minute) and the cube of the diameter. A shaft 3 inches in diameter can transmit 45 hp at 100 rpm. What must the diameter be, to the nearest hundredth of an inch, in order to transmit 60 hp at 150 rpm?"
   answer="2.88"
+  answerForm="decimal"
   answerDisplay="≈2.88 inches"
   hint="Find $k$ from $\text{hp}=k\cdot\text{rpm}\cdot d^3$ using the 3-inch shaft, then solve for $d$ with the second shaft's numbers."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 3.9: Modeling Using Variation](https://openstax.org/books/precalculus-2e/pages/3-9-modeling-using-variation) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all four graphs as accessible inline SVGs generated from their exact equations — the direct-variation earnings ray $e=0.16s$ with its three labelled points, the cubic $y=\tfrac{25}{8}x^{3}$ with its two labelled points, the inverse-variation temperature curve $T=\tfrac{14{,}000}{d}$ with its three labelled points, and the rational curve $y=\tfrac{25}{x^{3}}$ with its two labelled points; presented the two data tables (sales price vs. earnings, depth vs. temperature) as Markdown tables; reworded the two in-text figure and table cross-references ("as shown in Figure N", "See Table N") as "shown below" and "the table below", since this page does not carry the source's figure and table numbering; omitted the italic emphasis on the printed Q&A answers, matching this book's house style, and reworded the Q&A's "look like Example 1" reference to "look like the one above" for the same reason; omitted the "Access these online resources" media links; converted the three "Try It" checks into interactive fill-ins with instant feedback; and adapted nine selected end-of-section exercises — three direct-variation items (one equation-writing, one numeric, one real-world falling-object problem), three inverse-variation items (one equation-writing, one numeric, one real-world string-vibration problem), and three joint-variation items (two equation-writing, one real-world shaft-horsepower problem rounded to the nearest hundredth of an inch, matching the source's own rounding) — into interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 3.9: Modeling Using Variation](https://openstax.org/books/precalculus-2e/pages/3-9-modeling-using-variation) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all four graphs as accessible inline SVGs generated from their exact equations — the direct-variation earnings ray $e=0.16s$ with its three labelled points, the cubic $y=\tfrac{25}{8}x^{3}$ with its two labelled points, the inverse-variation temperature curve $T=\tfrac{14{,}000}{d}$ with its three labelled points, and the rational curve $y=\tfrac{200}{x^{3}}$, the example's own equation, with its two labelled points (the source's alt text names it $y=\tfrac{25}{x^{3}}$, which passes through neither point; the printed curve is $y=\tfrac{200}{x^{3}}$); presented the two data tables (sales price vs. earnings, depth vs. temperature) as Markdown tables; reworded the two in-text figure and table cross-references ("as shown in Figure N", "See Table N") as "shown below" and "the table below", since this page does not carry the source's figure and table numbering; omitted the italic emphasis on the printed Q&A answers, matching this book's house style, and reworded the Q&A's "look like Example 1" reference to "look like the one above" for the same reason; omitted the "Access these online resources" media links; converted the three "Try It" checks into interactive fill-ins with instant feedback, the first asking for the exact value; and adapted nine selected end-of-section exercises — three direct-variation items (one equation-writing, one numeric, one real-world falling-object problem), three inverse-variation items (one equation-writing, one numeric, one real-world string-vibration problem), and three joint-variation items (two equation-writing, one real-world shaft-horsepower problem rounded to the nearest hundredth of an inch, matching the source's own rounding) — into interactive components in a closing Practice block, one group per objective, the falling-object and string questions naming the unit to enter (seconds, inches) and the second joint-variation equation asking for its right side as a single fraction, where the source prints $y=4\tfrac{xz}{w}$.</small>

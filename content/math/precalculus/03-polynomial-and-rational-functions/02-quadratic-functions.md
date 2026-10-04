@@ -42,7 +42,7 @@ through the vertex, called the **axis of symmetry**. These features are
 illustrated below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola opening upward with vertex at (1, -4). A dashed vertical line at x = 1 marks the axis of symmetry. The parabola crosses the x-axis at the x-intercepts (-1, 0) and (3, 0), and crosses the y-axis at the y-intercept (0, -3).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":18,"tickLabels":true,"quadratics":[{"a":1,"b":-2,"c":-3}],"lines":[{"x":1,"dashed":true,"arrows":false}],"points":[{"at":[-1,0]},{"at":[3,0]},{"at":[0,-3]},{"at":[1,-4],"label":"Vertex"}]}
+{"ariaLabel":"A parabola opening upward with its lowest point, labeled Vertex, at (1, -4). A dashed vertical line through the vertex, x = 1, is labeled Axis of symmetry. The parabola crosses the x-axis at the two points labeled x-intercept, (-1, 0) and (3, 0), and crosses the y-axis at the point labeled y-intercept, (0, -3). Three more points on the curve, (-2, 5), (2, -3), and (4, 5), are plotted.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":1,"b":-2,"c":-3}],"lines":[{"x":1,"dashed":true,"arrows":false}],"points":[{"at":[-1,0],"label":"x‑intercept"},{"at":[3,0],"label":"x‑intercept","labelSide":"se","labelNudge":[0,8]},{"at":[0,-3],"label":"y‑intercept"},{"at":[1,-4],"label":"Vertex"},{"at":[-2,5]},{"at":[2,-3]},{"at":[4,5]}],"texts":[{"at":[1.3,-5.5],"text":"Axis of symmetry","anchor":"start"}]}
 {{< /apfigure >}}
 
 The $y$-intercept is the point at which the parabola crosses the $y$-axis.
@@ -54,7 +54,7 @@ the quadratic function, the values of $x$ at which $y=0$.
 of the parabola shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola opening upward with vertex at (3, 1) and y-intercept at (0, 7). It does not cross the x-axis.","xMin":-4,"xMax":8,"yMin":-1,"yMax":10,"unit":20,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":0.6666666666666666,"b":-4,"c":7}],"points":[{"at":[3,1],"label":"(3, 1)"},{"at":[0,7],"label":"(0, 7)"}]}
+{"ariaLabel":"A parabola opening upward with vertex at (3, 1) and y-intercept at (0, 7). It does not cross the x-axis.","xMin":-4,"xMax":8,"yMin":-1,"yMax":10,"unit":20,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":0.6666666666666666,"b":-4,"c":7,"from":-0.53,"to":6.53}],"points":[{"at":[3,1],"label":"(3, 1)"},{"at":[0,7],"label":"(0, 7)"}]}
 {{< /apfigure >}}
 
 **Solution.** The vertex is the turning point of the graph. We can see that
@@ -92,7 +92,7 @@ points where the parabola crosses the $x$-axis, occur at $(-3,0)$ and
 $(-1,0)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y = x squared + 4x + 3, opening upward with vertex at (-2, -1). A dashed vertical line at x = -2 marks the axis of symmetry. The x-intercepts are at (-3, 0) and (-1, 0).","xMin":-6,"xMax":6,"yMin":-4,"yMax":8,"unit":18,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":1,"b":4,"c":3}],"lines":[{"x":-2,"dashed":true,"arrows":false}],"points":[{"at":[-3,0]},{"at":[-1,0]},{"at":[-2,-1],"label":"Vertex","labelSide":"sw"}],"texts":[{"at":[1.3,7.4],"text":"y = x² + 4x + 3","anchor":"start"}]}
+{"ariaLabel":"The parabola y = x squared + 4x + 3, opening upward with its vertex, labeled Vertex, at (-2, -1). A dashed vertical line through the vertex, x = -2, is labeled Axis of symmetry. The x-intercepts, (-3, 0) and (-1, 0), are marked.","xMin":-6,"xMax":6,"yMin":-4,"yMax":8,"unit":24,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":1,"b":4,"c":3}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"Axis of symmetry"}],"points":[{"at":[-3,0]},{"at":[-1,0]},{"at":[-2,-1],"label":"Vertex"}],"texts":[{"at":[1.3,7.4],"text":"y = x² + 4x + 3","anchor":"start"}]}
 {{< /apfigure >}}
 
 The **standard form of a quadratic function** presents the function in the
@@ -112,7 +112,7 @@ $a=-3$, $h=-2$, and $k=4$. Because $a<0$, the parabola opens downward. The
 vertex is at $(-2,4)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y = -3(x+2) squared + 4, opening downward with vertex at (-2, 4).","xMin":-6,"xMax":6,"yMin":-9,"yMax":5,"unit":18,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":-3,"b":-12,"c":-8}],"points":[{"at":[-2,4],"label":"Vertex"}],"texts":[{"at":[0,4.35],"text":"y = -3(x + 2)² + 4","anchor":"start"}]}
+{"ariaLabel":"The parabola y = -3(x+2) squared + 4, opening downward with its vertex, labeled Vertex, at (-2, 4). A dashed vertical line through the vertex, x = -2, marks the axis of symmetry. The points (-3, 1) and (-1, 1) on the curve are plotted.","xMin":-6,"xMax":6,"yMin":-8,"yMax":5,"unit":20,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":-3,"b":-12,"c":-8,"from":-3.75,"to":-0.25}],"lines":[{"x":-2,"dashed":true,"arrows":false}],"points":[{"at":[-2,4],"label":"Vertex"},{"at":[-3,1]},{"at":[-1,1]}],"texts":[{"at":[1.0,3.0],"text":"y = -3(x + 2)² + 4","anchor":"start"}]}
 {{< /apfigure >}}
 
 The standard form is useful for determining how the graph is transformed from
@@ -123,15 +123,16 @@ the graph of $y=x^2$. The graph below is that basic function.
 {{< /apfigure >}}
 
 If $k>0$, the graph shifts upward, whereas if $k<0$, the graph shifts
-downward. Above, $k>0$, so the graph is shifted 4 units upward. If $h>0$, the
-graph shifts toward the right and if $h<0$, the graph shifts to the left.
-Above, $h<0$, so the graph is shifted 2 units to the left. The magnitude of
+downward. For $y=-3(x+2)^2+4$, graphed earlier, $k>0$, so the graph is shifted
+4 units upward. If $h>0$, the graph shifts toward the right and if $h<0$, the
+graph shifts to the left. For $y=-3(x+2)^2+4$, $h<0$, so the graph is shifted
+2 units to the left. The magnitude of
 $a$ indicates the stretch of the graph. If $|a|>1$, the point associated with
 a particular $x$-value shifts farther from the $x$-axis, so the graph appears
 to become narrower, and there is a vertical stretch. But if $|a|<1$, the
 point associated with a particular $x$-value shifts closer to the $x$-axis,
 so the graph appears to become wider, but in fact there is a vertical
-compression. Above, $|a|>1$, so the graph becomes narrower.
+compression. For $y=-3(x+2)^2+4$, $|a|>1$, so the graph becomes narrower.
 
 The standard form and the general form are equivalent methods of describing
 the same function. We can see this by expanding out the general form and
@@ -252,7 +253,7 @@ point $(-4,7)$ is the highest point of the basketball's trajectory, and that
 the hoop sits 4 feet high at the horizontal position $x=-7.5$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola modeling a basketball's path, released at the origin and reaching its highest point at (-4, 7). At the hoop's horizontal position, x = -7.5, the curve's height is well below the marked hoop height of 4 feet.","xMin":-9,"xMax":1,"yMin":-1,"yMax":8,"unit":24,"tickLabels":true,"quadratics":[{"a":-0.4375,"b":-3.5,"c":0,"from":-8.3,"to":0.4}],"points":[{"at":[0,0],"label":"release"},{"at":[-4,7],"label":"(-4, 7)"},{"at":[-7.5,4],"label":"hoop, 4 ft","open":true}]}
+{"ariaLabel":"A coordinate grid over the basketball's flight, with the release point at the origin and the observed path rising from the release point to its highest point at (-4, 7). An open dot marks the hoop at x = -7.5, 4 feet high; the path beyond its highest point is not drawn.","xMin":-9,"xMax":1,"yMin":-1,"yMax":8,"xUnit":28,"yUnit":24,"tickLabels":true,"yTickStep":2,"quadratics":[{"a":-0.4375,"b":-3.5,"c":0,"from":-4,"to":0,"arrows":false}],"points":[{"at":[0,0],"label":"release","labelSide":"nw","labelNudge":[-6,0]},{"at":[-4,7],"label":"(-4, 7)"},{"at":[-7.5,4],"label":"hoop, 4 ft","open":true}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -336,7 +337,7 @@ output occurs, $(k)$, and where it occurs, $(x)$.
 $g(x)=x^2-6x+13$
 $g(x)=13+x^2-6x$
 $g(x)=-6x+x^2+13$
-$g(x)=(x-3)^2+4$
+$g(x)=13-6x+x^2$
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -416,10 +417,11 @@ $$
 The range is $f(x)\le\tfrac{61}{20}$, or $\left(-\infty,\tfrac{61}{20}\right]$.
 
 {{< fillin
-  question="Find the range of $f(x)=2\left(x-\tfrac{4}{7}\right)^2+\tfrac{8}{11}$."
+  question="Find the range of $f(x)=2\left(x-\tfrac{4}{7}\right)^2+\tfrac{8}{11}$. Write your answer in interval notation."
   answer="[\frac{8}{11},\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$\left[\tfrac{8}{11},\infty\right)$"
-  hint="This is already in standard form; $a>0$, so the range is $f(x)\ge k$."
+  hint="Read $a$ and $k$ from the standard form $a(x-h)^2+k$: the sign of $a$ tells you whether $k$ is the least or the greatest output, and the range starts or ends there."
 >}}
 
 
@@ -430,11 +432,11 @@ value of the function, depending on the orientation of the **parabola**. We
 can see the maximum and minimum values in the two graphs below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a): the graph of f of x equals the quantity x minus 2, squared, plus 1. A parabola opening upward with a minimum value of 1, occurring at x = 2, at the point (2, 1).","xMin":-2,"xMax":6,"yMin":-2,"yMax":10,"unit":24,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":5}],"points":[{"at":[2,1],"label":"(2, 1)","labelSide":"e"}],"texts":[{"at":[2,8.4],"text":"f(x) = (x - 2)² + 1","anchor":"middle"},{"at":[2.55,-1.3],"text":"Minimum value of 1","anchor":"middle"},{"at":[2.55,-1.88],"text":"occurs at x = 2","anchor":"middle"}]}
+{"ariaLabel":"Panel (a): the graph of f of x equals the quantity x minus 2, squared, plus 1. A parabola opening upward with a minimum value of 1, occurring at x = 2, at the point (2, 1).","xMin":-2,"xMax":6,"yMin":-2,"yMax":10,"unit":24,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":5}],"points":[{"at":[2,1],"label":"(2, 1)","labelSide":"e"}],"texts":[{"at":[2.4,8.4],"text":"f(x) = (x - 2)² + 1","anchor":"middle"},{"at":[2.8,-1.3],"text":"Minimum value of 1","anchor":"middle"},{"at":[2.8,-1.88],"text":"occurs at x = 2","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b): the graph of g of x equals negative the quantity x plus 3, squared, plus 4. A parabola opening downward with a maximum value of 4, occurring at x = -3, at the point (-3, 4).","xMin":-6,"xMax":2,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"quadratics":[{"a":-1,"b":-6,"c":-5}],"points":[{"at":[-3,4],"label":"(-3, 4)"}],"texts":[{"at":[-5.55,-3.5],"text":"g(x) = -(x + 3)² + 4","anchor":"start"},{"at":[-3.2,5.55],"text":"Maximum value of 4","anchor":"middle"},{"at":[-3.2,4.95],"text":"occurs at x = -3","anchor":"middle"}]}
+{"ariaLabel":"Panel (b): the graph of g of x equals negative the quantity x plus 3, squared, plus 4. A parabola opening downward with a maximum value of 4, occurring at x = -3, at the point (-3, 4).","xMin":-6,"xMax":2,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"yTickStep":2,"quadratics":[{"a":-1,"b":-6,"c":-5,"from":-5.7,"to":-0.3}],"points":[{"at":[-3,4],"label":"(-3, 4)"}],"texts":[{"at":[-5.7,-5],"text":"g(x) = -(x + 3)² + 4","anchor":"start"},{"at":[-3.2,5.55],"text":"Maximum value of 4","anchor":"middle"},{"at":[-3.2,4.95],"text":"occurs at x = -3","anchor":"middle"}]}
 {{< /apfigure >}}
 
 There are many real-world scenarios that involve finding the maximum or
@@ -456,7 +458,7 @@ represent the width of the garden and the length of the fence section
 parallel to the backyard fence.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A rectangular backyard with a smaller rectangular garden set against its top edge, which is the existing fence. The garden's two vertical sides have length L and its bottom side has length W.","polygons":[{"points":[[0,0],[10,0],[10,7],[0,7]]},{"points":[[2,4],[7,4],[7,7],[2,7]],"edgeLabels":["W","L",null,null]}],"texts":[{"at":[4.5,5.3],"text":"Garden"},{"at":[5,1.5],"text":"Backyard"},{"at":[4.5,7.35],"text":"existing fence","fontSize":11}]}
+{"ariaLabel":"A rectangular backyard with a smaller rectangular garden set against its top edge, which is the existing fence. The garden's two vertical sides have length L and its bottom side has length W.","polygons":[{"points":[[0,0],[10,0],[10,7],[0,7]]},{"points":[[2,4],[7,4],[7,7],[2,7]],"edgeLabels":["W","L",null,null]}],"texts":[{"at":[4.5,5.3],"text":"Garden","anchor":"middle"},{"at":[5,1.5],"text":"Backyard","anchor":"middle"},{"at":[5,7.35],"text":"existing fence","fontSize":11,"anchor":"middle"}]}
 {{< /apfigure >}}
 
 1. We know we have only 80 feet of fence available, and $L+W+L=80$, or more
@@ -516,7 +518,7 @@ parallel to the backyard fence.
 function. We can see where the maximum area occurs on the graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of A of L equals -2L squared + 80L, a downward-opening parabola with vertex at (20, 800), the maximum enclosed area.","xMin":0,"xMax":50,"yMin":0,"yMax":1000,"xUnit":7,"yUnit":0.35,"margin":40,"grid":false,"tickLabels":true,"xTickStep":10,"yTickStep":100,"xLabel":"Length (L)","yLabel":"Area (A)","quadratics":[{"a":-2,"b":80,"c":0}],"points":[{"at":[20,800],"label":"(20, 800)","labelSide":"n"}],"texts":[{"at":[26.3,650],"text":"A","anchor":"start"}]}
+{"ariaLabel":"The graph of A of L equals -2L squared + 80L, a downward-opening parabola with vertex at (20, 800), the maximum enclosed area.","xMin":0,"xMax":50,"yMin":0,"yMax":1000,"xUnit":7,"yUnit":0.35,"margin":40,"grid":false,"tickLabels":true,"xTickStep":10,"yTickStep":100,"xLabel":"Length (L)","yLabel":"Area (A)","quadratics":[{"a":-2,"b":80,"c":0,"from":0.8,"to":39.2}],"points":[{"at":[20,800],"label":"(20, 800)","labelSide":"n"}],"texts":[{"at":[30.5,640],"text":"A","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -605,7 +607,7 @@ $$
 can see the maximum revenue on the graph of the quadratic function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of revenue, in thousands of dollars, as a function of subscription price p, a downward-opening parabola with vertex at (31.8, 2528.1), the maximum revenue.","xMin":0,"xMax":80,"yMin":0,"yMax":3000,"xUnit":4,"yUnit":0.11,"margin":40,"grid":false,"tickLabels":true,"xTickStep":10,"yTickStep":500,"xLabel":"Price (p)","yLabel":"Revenue ($1,000)","quadratics":[{"a":-2.5,"b":159,"c":0}],"points":[{"at":[31.8,2528.1],"label":"(31.80, 2528.1)","labelSide":"n"}]}
+{"ariaLabel":"The graph of revenue, in thousands of dollars, as a function of subscription price p, a downward-opening parabola from (0, 0) to (63.6, 0) with vertex at (31.8, 2,528.1), the maximum revenue.","xMin":0,"xMax":80,"yMin":0,"yMax":3000,"xUnit":4,"yUnit":0.11,"margin":40,"grid":false,"tickLabels":true,"xTickStep":10,"yTickStep":500,"xLabel":"Price (p)","yLabel":"Revenue ($1,000)","quadratics":[{"a":-2.5,"b":159,"c":0,"from":0,"to":63.6,"arrows":false}],"points":[{"at":[31.8,2528.1],"label":"(31.80, 2,528.1)","labelSide":"n"}]}
 {{< /apfigure >}}
 
 ## Finding the x- and y-intercepts of a quadratic function
@@ -618,15 +620,15 @@ zero. Notice below that the number of $x$-intercepts can vary depending upon
 the location of the graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel showing no x-intercept: an upward-opening parabola entirely above the x-axis, with vertex at (1, 2).","xMin":-3,"xMax":5,"yMin":-3,"yMax":6,"unit":22,"tickLabels":true,"quadratics":[{"a":1,"b":-2,"c":3}]}
+{"ariaLabel":"Panel showing no x-intercept: the upward-opening parabola y = (x - 2) squared + 1, entirely above the x-axis, with vertex at (2, 1).","xMin":-3,"xMax":5,"yMin":-3,"yMax":6,"unit":22,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":5,"from":0.2,"to":3.8}],"texts":[{"at":[1,-4],"text":"No x‑intercept","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel showing one x-intercept: an upward-opening parabola tangent to the x-axis at its vertex, (1, 0).","xMin":-3,"xMax":5,"yMin":-3,"yMax":6,"unit":22,"tickLabels":true,"quadratics":[{"a":1,"b":-2,"c":1}],"points":[{"at":[1,0]}]}
+{"ariaLabel":"Panel showing one x-intercept: the upward-opening parabola y = (x - 2) squared, touching the x-axis only at its vertex, (2, 0).","xMin":-3,"xMax":5,"yMin":-3,"yMax":6,"unit":22,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":4,"from":0.2,"to":3.8}],"texts":[{"at":[1,-4],"text":"One x‑intercept","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel showing two x-intercepts: an upward-opening parabola with vertex at (1, -2), crossing the x-axis at approximately -0.41 and 2.41.","xMin":-3,"xMax":5,"yMin":-3,"yMax":6,"unit":22,"tickLabels":true,"quadratics":[{"a":1,"b":-2,"c":-1}],"points":[{"at":[-0.41,0]},{"at":[2.41,0]}]}
+{"ariaLabel":"Panel showing two x-intercepts: the upward-opening parabola y = (x - 2) squared - 1, with vertex at (2, -1), crossing the x-axis at (1, 0) and (3, 0).","xMin":-3,"xMax":5,"yMin":-3,"yMax":6,"unit":22,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":3,"from":0.2,"to":3.8}],"texts":[{"at":[1,-4],"text":"Two x‑intercepts","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -680,7 +682,7 @@ the $x$-axis at $\left(\tfrac{1}{3},0\right)$ and $(-2,0)$. See the graph
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 3x squared + 5x - 2, an upward-opening parabola crossing the x-axis at (-2, 0) and (1/3, 0), and the y-axis at (0, -2).","xMin":-3,"xMax":3,"yMin":-5,"yMax":1,"unit":30,"tickLabels":true,"quadratics":[{"a":3,"b":5,"c":-2}],"points":[{"at":[-2,0],"label":"(-2, 0)"},{"at":[0.333333,0],"label":"(1/3, 0)"},{"at":[0,-2],"label":"(0, -2)","labelSide":"se"}],"texts":[{"at":[0.7,1.5],"text":"f(x) = 3x² + 5x - 2","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals 3x squared + 5x - 2, an upward-opening parabola crossing the x-axis at (-2, 0) and (1/3, 0), and the y-axis at (0, -2).","xMin":-3,"xMax":3,"yMin":-5,"yMax":1,"unit":30,"tickLabels":true,"quadratics":[{"a":3,"b":5,"c":-2,"from":-2.1067,"to":0.44}],"points":[{"at":[-2,0],"label":"(-2, 0)"},{"at":[0.333333,0],"label":"(1/3, 0)"},{"at":[0,-2],"label":"(0, -2)","labelSide":"se"}],"texts":[{"at":[0.7,1.5],"text":"f(x) = 3x² + 5x - 2","anchor":"start"}]}
 {{< /apfigure >}}
 
 ## Rewriting quadratics in standard form
@@ -751,25 +753,24 @@ The graph has $x$-intercepts at $(-1-\sqrt{3},0)$ and $(-1+\sqrt{3},0)$.
 graphing utility and observing the $x$-intercepts, shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 2x squared + 4x - 4, an upward-opening parabola with vertex at (-1, -6), crossing the x-axis at approximately (-2.732, 0) and (0.732, 0).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":18,"tickLabels":true,"xTickStep":2,"yTickStep":2,"quadratics":[{"a":2,"b":4,"c":-4}],"points":[{"at":[-2.732,0],"label":"(-2.732, 0)"},{"at":[0.732,0],"label":"(0.732, 0)"}]}
+{"ariaLabel":"The graph of f of x equals 2x squared + 4x - 4, an upward-opening parabola with vertex at (-1, -6), crossing the x-axis at approximately (-2.732, 0) and (0.732, 0).","xMin":-6,"xMax":6,"yMin":-7,"yMax":6,"unit":18,"tickLabels":true,"xTickStep":2,"yTickStep":4,"quadratics":[{"a":2,"b":4,"c":-4}],"points":[{"at":[-2.732,0],"label":"(-2.732, 0)"},{"at":[0.732,0],"label":"(0.732, 0)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Earlier, we found the standard and general form for the function $g(x)=13+x^2-6x$. Now find its y-intercept. Enter your answer as an ordered pair."
   answer="(0,13)"
+  answerForm="decimal"
   answerDisplay="$(0,13)$"
-  hint="Evaluate $g(0)$."
+  hint="The $y$-intercept is the point where the input is zero: evaluate $g(0)$."
 >}}
 
-{{< multiplechoice
-  question="How many real x-intercepts does that same parabola, $g(x)=x^2-6x+13$, have?"
+{{< fillin
+  question="How many $x$-intercepts does that same parabola, $g(x)=x^2-6x+13$, have? Enter a whole number."
   answer="0"
-  hint="Rewrite in standard form, $(x-3)^2+4$, and check the sign of the constant term $k$ against the direction the parabola opens."
+  answerForm="decimal"
+  answerDisplay="$0$ (no $x$-intercepts)"
+  hint="Use the standard form you found above: compare the height of the vertex with the direction the parabola opens, or solve $g(x)=0$."
 >}}
-0
-1
-2
-{{< /multiplechoice >}}
 
 **Example.** Solve $x^2+x+2=0$.
 
@@ -857,7 +858,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
    graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of H of t equals -16t squared + 80t + 40, the height of the ball above the ground. An upward arrow marks the vertex at (2.5, 140), the maximum height, and the curve exits the grid at about t = 5.458, where the ball hits the ground.","xMin":0,"xMax":7,"yMin":0,"yMax":150,"xUnit":38,"yUnit":1.5,"tickLabels":true,"xTickStep":1,"yTickStep":50,"xLabel":"Time (s)","yLabel":"Height (ft)","quadratics":[{"a":-16,"b":80,"c":40,"from":0,"to":5.458,"arrows":"end"}],"points":[{"at":[2.5,140],"label":"(2.5, 140)","labelSide":"n"}]}
+{"ariaLabel":"The graph of H of t equals -16t squared + 80t + 40, the height of the ball above the ground, with time in seconds on the horizontal axis and height in feet on the vertical axis. The curve starts at (0, 40), peaks at the marked vertex (2.5, 140), the maximum height, and comes down to the horizontal axis at about t = 5.458, where the ball hits the ground.","xMin":0,"xMax":7,"yMin":0,"yMax":170,"xUnit":38,"yUnit":1.5,"tickLabels":true,"xTickStep":1,"yTickStep":50,"xLabel":"Time (s)","yLabel":"Height (ft)","quadratics":[{"a":-16,"b":80,"c":40,"from":0,"to":5.458,"arrows":"end"}],"points":[{"at":[2.5,140],"label":"(2.5, 140)","labelSide":"n"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -876,6 +877,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="A rock is thrown upward from the top of a 112-foot high cliff overlooking the ocean at a speed of 96 feet per second. The rock's height above the ocean can be modeled by $H(t)=-16t^2+96t+112$. When does the rock reach its maximum height, in seconds?"
   answer="3"
+  answerForm="decimal"
   answerDisplay="3 seconds"
   hint="The maximum height occurs at the vertex; find $h=-\tfrac{b}{2a}$."
 >}}
@@ -883,6 +885,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="What is the maximum height of that same rock, in feet?"
   answer="256"
+  answerForm="decimal"
   answerDisplay="256 feet"
   hint="Evaluate $H$ at the time you just found for the vertex."
 >}}
@@ -890,6 +893,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="When does that same rock hit the ocean, in seconds?"
   answer="7"
+  answerForm="decimal"
   answerDisplay="7 seconds"
   hint="Solve $H(t)=0$ with the quadratic formula, and keep only the positive solution."
 >}}
@@ -932,7 +936,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 
 {{< graphplot
   question="Sketch the graph of $f(x)=x^2-2x$."
-  answerDisplay="Vertex $(1,-1)$, opening upward through $(0,0)$ and $(2,0)$"
+  answerDisplay="The parabola $y=x^2-2x$, opening upward through $(0,0)$ and $(2,0)$"
   ariaLabel="A blank grid from -7 to 7 on both axes."
   hint="Plot the vertex and one or two nearby points, then draw the U-shape through them."
 >}}
@@ -942,6 +946,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="What is the vertex of that same parabola, $f(x)=x^2-2x$? Enter your answer as an ordered pair."
   answer="(1,-1)"
+  answerForm="decimal"
   answerDisplay="$(1,-1)$"
   hint="Find $h=-\tfrac{b}{2a}$, then evaluate $f(h)$."
 >}}
@@ -949,20 +954,23 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="What is the axis of symmetry of that same parabola, $f(x)=x^2-2x$?"
   answer="x=1"
+  answerForm="decimal"
   answerDisplay="$x=1$"
   hint="The axis of symmetry is the vertical line through the vertex, $x=h$."
 >}}
 
 {{< fillin
   question="What is the vertex of $f(x)=x^2-5x-6$? Enter your answer as an ordered pair."
-  answer="(5/2,-49/4)"
+  answer="(\frac{5}{2},-\frac{49}{4})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(\tfrac{5}{2},-\tfrac{49}{4}\right)$"
   hint="Find $h=-\tfrac{b}{2a}$, then evaluate $f(h)$."
 >}}
 
 {{< fillin
   question="What is the axis of symmetry of that same parabola, $f(x)=x^2-5x-6$?"
-  answer="x=5/2"
+  answer="x=\frac{5}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{5}{2}$"
   hint="The axis of symmetry is the vertical line through the vertex, $x=h$."
 >}}
@@ -979,7 +987,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 
 {{< fillin
   question="Rewrite $f(x)=3x^2-5x-1$ in standard (vertex) form."
-  answer="3(x-5/6)^2-37/12"
+  answer="3(x-\frac{5}{6})^2-\frac{37}{12}"
   answerForm="vertex-form"
   answerDisplay="$f(x)=3\left(x-\tfrac{5}{6}\right)^2-\tfrac{37}{12}$"
   hint="Find $h=-\tfrac{b}{2a}$ and $k=f(h)$, then substitute into $a(x-h)^2+k$."
@@ -988,46 +996,49 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="Write the general form of the equation for the parabola graphed below."
   answer="x^2-4x+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$f(x)=x^2-4x+1$"
   hint="Read the vertex and one other point off the graph, then follow the same steps as writing an equation from a graph."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An upward-opening parabola with vertex near (2, -3) and y-intercept at (0, 1).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":1}]}
+{"ariaLabel":"An upward-opening parabola with vertex at (2, -3) and y-intercept at (0, 1).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":1}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write the general form of the equation for the parabola graphed below."
   answer="-2x^2+8x-1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$f(x)=-2x^2+8x-1$"
   hint="Read the vertex and one other point off the graph, then follow the same steps as writing an equation from a graph."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A downward-opening parabola with vertex near (2, 7) and y-intercept at (0, -1).","xMin":-5,"xMax":5,"yMin":-9,"yMax":9,"unit":20,"tickLabels":true,"quadratics":[{"a":-2,"b":8,"c":-1}]}
+{"ariaLabel":"A downward-opening parabola with vertex at (2, 7) and y-intercept at (0, -1).","xMin":-5,"xMax":5,"yMin":-4,"yMax":8,"xUnit":30,"yUnit":24,"tickLabels":true,"yTickStep":2,"quadratics":[{"a":-2,"b":8,"c":-1,"from":-0.28,"to":4.28}]}
 {{< /apfigure >}}
 
 ### Determine a quadratic function's minimum or maximum value
 
 {{< fillin
   question="Find the minimum value of $f(x)=2x^2-10x+4$."
-  answer="-17/2"
+  answer="-\frac{17}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{17}{2}$"
   hint="The minimum value occurs at the vertex; evaluate $f$ at $h=-\tfrac{b}{2a}$."
 >}}
 
 {{< fillin
   question="What is the axis of symmetry of that same parabola, $f(x)=2x^2-10x+4$?"
-  answer="x=5/2"
+  answer="x=\frac{5}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{5}{2}$"
   hint="The axis of symmetry is $x=-\tfrac{b}{2a}$."
 >}}
 
 {{< fillin
   question="Find the minimum value of $f(x)=4x^2+x-1$."
-  answer="-17/16"
+  answer="-\frac{17}{16}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{17}{16}$"
   hint="The minimum value occurs at the vertex; evaluate $f$ at $h=-\tfrac{b}{2a}$."
 >}}
@@ -1035,8 +1046,9 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
 {{< fillin
   question="Find the range of $f(x)=(x-3)^2+2$. Write your answer in interval notation."
   answer="[2,\infty)"
+  answerForm="decimal"
   answerDisplay="$[2,\infty)$"
-  hint="This is already in standard form with $a>0$, so the range is $f(x)\ge k$."
+  hint="Read $a$ and $k$ from the standard form $a(x-h)^2+k$: the sign of $a$ tells you whether $k$ is the least or the greatest output, and the range starts or ends there."
 >}}
 
 ### Solve problems involving a quadratic function's minimum or maximum value
@@ -1047,20 +1059,23 @@ fencing on all four sides.
 {{< fillin
   question="What side length, in feet, produces the greatest enclosed area?"
   answer="50"
+  answerForm="decimal"
   answerDisplay="50 feet"
-  hint="Let one side be $x$; the opposite side is also $x$ and the other pair is $100-x$ each, so maximize $A(x)=x(100-x)$."
+  hint="Call one side $x$, use the 200 feet of perimeter to write the adjacent side in terms of $x$, and find the vertex of the area function."
 >}}
 
 {{< fillin
   question="Using that same 200 feet of fencing, what is the greatest enclosed area, in square feet?"
   answer="2500"
+  answerForm="decimal"
   answerDisplay="2,500 square feet"
   hint="Evaluate the area function at the side length you just found."
 >}}
 
 {{< fillin
-  question="A soccer stadium holds 62,000 spectators. With a ticket price of \$11, average attendance has been 26,000. When the price dropped to \$9, average attendance rose to 31,000. Assuming attendance is linearly related to ticket price, what ticket price would maximize revenue?"
+  question="A soccer stadium holds 62,000 spectators. With a ticket price of \$11, the average attendance has been 26,000. When the price dropped to \$9, the average attendance rose to 31,000. Assuming that attendance is linearly related to ticket price, what ticket price would maximize revenue? Enter the price in dollars."
   answer="10.70"
+  answerForm="decimal"
   answerDisplay="\$10.70"
   hint="Find the linear attendance-vs-price relationship first, then maximize $\text{Revenue}=\text{price}\times\text{attendance}$."
 >}}
@@ -1068,6 +1083,7 @@ fencing on all four sides.
 {{< fillin
   question="A rocket is launched in the air. Its height, in meters above sea level, as a function of time, in seconds, is given by $h(t)=-4.9t^2+229t+234$. Find the maximum height the rocket attains, in meters, rounded to two decimal places."
   answer="2909.56"
+  answerForm="decimal"
   answerDisplay="2,909.56 meters"
   hint="The maximum height is the $y$-value of the vertex, $h\!\left(-\tfrac{b}{2a}\right)$."
 >}}
@@ -1076,13 +1092,15 @@ fencing on all four sides.
   question="Among all pairs of numbers whose difference is 12, find the pair with the smallest product. Enter both numbers, separated by a comma."
   answer="-6,6"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$-6$ and $6$"
-  hint="Let the numbers be $x$ and $x-12$; minimize the product $P(x)=x(x-12)$."
+  hint="Call the larger number $x$, write the smaller one in terms of $x$, and find the vertex of their product."
 >}}
 
 {{< fillin
   question="What is that smallest product?"
   answer="-36"
+  answerForm="decimal"
   answerDisplay="$-36$"
   hint="Evaluate the product function at the vertex you just found."
 >}}
@@ -1090,5 +1108,5 @@ fencing on all four sides.
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 3.2: Quadratic Functions](https://openstax.org/books/precalculus-2e/pages/3-2-quadratic-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from its exact equation — the labeled-features schematic parabola $y=x^2-2x-3$; the vertex/no-x-intercept parabola $y=\tfrac{2}{3}(x-3)^2+1$ of Example 1; the general-form parabola $y=x^2+4x+3$; the standard-form parabola $y=-3(x+2)^2+4$; the basic parabola $y=x^2$; the graph-transformation parabola $g(x)=\tfrac{1}{2}(x+2)^2-3$; the two minimum/maximum panels $f(x)=(x-2)^2+1$ and $g(x)=-(x+3)^2+4$; the area function $A(L)=-2L^2+80L$; the revenue function, scaled to thousands of dollars, $-2.5p^2+159p$; the three no/one/two-$x$-intercept panels; the $y$-/$x$-intercept parabola $f(x)=3x^2+5x-2$; the standard-form parabola $f(x)=2x^2+4x-4$ with its irrational intercepts; the corrected height-vs-time parabola $H(t)=-16t^2+80t+40$; and the two Practice graph-reading items $f(x)=x^2-4x+1$ and $f(x)=-2x^2+8x-1$; recreated the garden diagram as a labeled rectangle-in-rectangle figure; presented the table-feature check in Example 2 as a Markdown table; omitted the decorative satellite-dish photograph, which carries no mathematics, and reworded the opening sentence that pointed at it; omitted the section's four Media links to external graphing-calculator resources; converted the basketball Try It's photograph-with-grid-overlay into a recreated graph, stating in the question the release point, vertex, and the hoop's location and height that the source conveyed only through the image; converted the practice problems ("Try Its") into interactive exercises with instant feedback — a fillin plus multiple choice for the basketball path and shot outcome, a multiple choice among competing writings plus a fillin for the rewritten-in-standard-form Try It (its general-form half is a bare reordering of an already-expanded printed expression, so no `answerForm` token restricts term order and a retyped printed span would grade correct; a multiple choice among the general, standard, and mis-ordered forms grades the shape instead), a fillin for the domain-and-range Try It, a fillin plus multiple choice for the $y$-intercept and $x$-intercept count of the rewritten function, and three fillins for the falling-rock application; split each of the two "sketch a graph and give the vertex, axis of symmetry, and intercepts" Practice items into a graphing or fillin component per requested quantity; and adapted thirteen selected end-of-section exercises — two vertex/axis-of-symmetry rewrites, two graph-reading equations, two minimum-value/axis-of-symmetry evaluations, a range evaluation, and four real-world optimization problems (a four-sided corral, a ticket-revenue maximization, a rocket's maximum height, and a smallest-product pair) — into nineteen interactive components in a closing Practice block, one group per objective. One upstream figure defect is corrected here: the pinned CNXML's Figure 16 (module m49337) prints its vertical axis labeled "$t$" carrying the height values (50, 100, 150) and its horizontal axis labeled "$H$" carrying the time values (1 through 6), the reverse of the function $H(t)$ it illustrates, alongside a stray "$(x$ from $-1$ to $6)$" annotation left over from a different window setting; this page draws the corrected axes, time on the horizontal axis and height on the vertical axis, over the function's own domain, and carries a visible source note beside the corrected figure disclosing the correction in addition to this footer.</small>
+<small>This section is adapted from [Precalculus 2e, Section 3.2: Quadratic Functions](https://openstax.org/books/precalculus-2e/pages/3-2-quadratic-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from its exact equation — the labeled-features schematic parabola $y=x^2-2x-3$; the vertex/no-x-intercept parabola $y=\tfrac{2}{3}(x-3)^2+1$ of Example 1; the general-form parabola $y=x^2+4x+3$; the standard-form parabola $y=-3(x+2)^2+4$; the basic parabola $y=x^2$; the graph-transformation parabola $g(x)=\tfrac{1}{2}(x+2)^2-3$; the two minimum/maximum panels $f(x)=(x-2)^2+1$ and $g(x)=-(x+3)^2+4$; the area function $A(L)=-2L^2+80L$; the revenue function, scaled to thousands of dollars, $-2.5p^2+159p$; the three no/one/two-$x$-intercept panels; the $y$-/$x$-intercept parabola $f(x)=3x^2+5x-2$; the standard-form parabola $f(x)=2x^2+4x-4$ with its irrational intercepts; the corrected height-vs-time parabola $H(t)=-16t^2+80t+40$; and the two Practice graph-reading items $f(x)=x^2-4x+1$ and $f(x)=-2x^2+8x-1$; recreated the garden diagram as a labeled rectangle-in-rectangle figure; numbered the vertical axes of the maximum-value panel $g(x)=-(x+3)^2+4$ and the second Practice graph every 2 units, and of $f(x)=2x^2+4x-4$ every 4 units, sparser than the source, to keep the tick numbers out from under the curves; presented the table-feature check in Example 2 as a Markdown table; omitted the decorative satellite-dish photograph, which carries no mathematics, and reworded the opening sentence that pointed at it; omitted the section's four Media links to external graphing-calculator resources; converted the basketball Try It's photograph-with-grid-overlay into a recreated graph that draws the observed flight from the release point to the highest point, as the photograph's ball positions show it, and marks the hoop, stating in the text the release point, vertex, and the hoop's location and height that the source conveyed only through the image; converted the practice problems ("Try Its") into interactive exercises with instant feedback — a fillin plus multiple choice for the basketball path and shot outcome, a multiple choice among competing writings plus a fillin for the rewritten-in-standard-form Try It (its general-form half is a bare reordering of an already-expanded printed expression, so no `answerForm` token restricts term order and a retyped printed span would grade correct; a multiple choice among the general form and mis-ordered writings of it grades the shape instead), a fillin for the domain-and-range Try It, two fillins for the $y$-intercept and the number of $x$-intercepts of the rewritten function, and three fillins for the falling-rock application; split each of the two "sketch a graph and give the vertex, axis of symmetry, and intercepts" Practice items into a graphing or fillin component per requested quantity; and adapted thirteen selected end-of-section exercises — two vertex/axis-of-symmetry rewrites, two graph-reading equations, two minimum-value/axis-of-symmetry evaluations, a range evaluation, and four real-world optimization problems (a four-sided corral, a ticket-revenue maximization, a rocket's maximum height, and a smallest-product pair) — into nineteen interactive components in a closing Practice block, one group per objective. One upstream figure defect is corrected here: the pinned CNXML's Figure 16 (module m49337) prints its vertical axis labeled "$t$" carrying the height values (50, 100, 150) and its horizontal axis labeled "$H$" carrying the time values (1 through 6), the reverse of the function $H(t)$ it illustrates, alongside a stray "$(x$ from $-1$ to $6)$" annotation left over from a different window setting; this page draws the corrected axes, time on the horizontal axis and height on the vertical axis, over the function's own domain, and carries a visible source note beside the corrected figure disclosing the correction in addition to this footer.</small>
 

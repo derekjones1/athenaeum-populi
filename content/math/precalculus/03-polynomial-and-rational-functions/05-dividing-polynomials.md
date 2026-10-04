@@ -65,6 +65,12 @@ $$
 \end{array}
 $$
 
+1. $5\times3=15$ and $17-15=2$.
+2. Bring down the $8$.
+3. $9\times3=27$ and $28-27=1$.
+
+Answer: $59\text{ R }1$ or $59\tfrac{1}{3}$.
+
 Another way to look at the solution is as a sum of parts. This should look
 familiar, since it is the same method used to check division in elementary
 arithmetic.
@@ -91,7 +97,7 @@ division algorithm, it would look like this:
 
 $$
 \begin{array}{r}
-2x^2-7x+18\phantom{{}+5}\phantom{)} \\[3pt]
+2x^2-7x+18\phantom{)} \\[3pt]
 x+2\,\overline{\smash{)}\,2x^3-3x^2+4x+5}\phantom{)} \\[3pt]
 \underline{\mathllap{-\,(}2x^3+4x^2\mathrlap{)}}\phantom{{}+4x+5}\phantom{)} \\[3pt]
 -7x^2+4x\phantom{{}+5}\phantom{)} \\[3pt]
@@ -101,6 +107,15 @@ x+2\,\overline{\smash{)}\,2x^3-3x^2+4x+5}\phantom{)} \\[3pt]
 -31\phantom{)}
 \end{array}
 $$
+
+The tableau is built one step at a time:
+
+1. Set up the division problem.
+2. $2x^3$ divided by $x$ is $2x^2$.
+3. Multiply $x+2$ by $2x^2$. Subtract. Bring down the next term.
+4. $-7x^2$ divided by $x$ is $-7x$. Multiply $x+2$ by $-7x$. Subtract. Bring
+   down the next term.
+5. $18x$ divided by $x$ is $18$. Multiply $x+2$ by $18$. Subtract.
 
 We have found
 
@@ -155,14 +170,20 @@ Writing the result in this manner illustrates the Division Algorithm.
 
 $$
 \begin{array}{r}
-5x-2\phantom{{}-2}\phantom{)} \\[2pt]
+5x-2\phantom{)} \\[2pt]
 x+1\,\overline{\smash{)}\,5x^2+3x-2}\phantom{)} \\[2pt]
-\underline{-\left(5x^2+5x\right)}\phantom{{}-2} \\[2pt]
+\underline{\mathllap{-\,(}5x^2+5x\mathrlap{)}}\phantom{{}-2}\phantom{)} \\[2pt]
 -2x-2\phantom{)} \\[2pt]
-\underline{-\left(-2x-2\right)} \\[2pt]
+\underline{\mathllap{-\,(}{-2x-2}\mathrlap{)}}\phantom{)} \\[2pt]
 0\phantom{)}
 \end{array}
 $$
+
+1. Set up the division problem.
+2. $5x^2$ divided by $x$ is $5x$.
+3. Multiply $x+1$ by $5x$. Subtract.
+4. Bring down the next term. $-2x$ divided by $x$ is $-2$.
+5. Multiply $x+1$ by $-2$. Subtract.
 
 The quotient is $5x-2$. The remainder is $0$. We write the result as
 
@@ -182,7 +203,7 @@ a factor of the dividend.
 
 $$
 \begin{array}{r}
-2x^2+5x-7\phantom{{}+15}\phantom{)} \\[3pt]
+2x^2+5x-7\phantom{)} \\[3pt]
 3x-2\,\overline{\smash{)}\,6x^3+11x^2-31x+15}\phantom{)} \\[3pt]
 \underline{\mathllap{-\,(}6x^3-4x^2\mathrlap{)}}\phantom{{}-31x+15}\phantom{)} \\[3pt]
 15x^2-31x\phantom{{}+15}\phantom{)} \\[3pt]
@@ -192,6 +213,13 @@ $$
 1\phantom{)}
 \end{array}
 $$
+
+1. $6x^3$ divided by $3x$ is $2x^2$. Multiply $3x-2$ by $2x^2$.
+2. Subtract. Bring down the next term. $15x^2$ divided by $3x$ is $5x$.
+   Multiply $3x-2$ by $5x$.
+3. Subtract. Bring down the next term. $-21x$ divided by $3x$ is $-7$.
+   Multiply $3x-2$ by $-7$.
+4. Subtract. The remainder is $1$.
 
 There is a remainder of $1$. We can express the result as
 
@@ -212,7 +240,7 @@ Notice, as we write our result,
 {{< fillin
   question="Divide $16x^3-12x^2+20x-3$ by $4x+5$."
   answer="4x^2-8x+15-\frac{78}{4x+5}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$4x^2-8x+15-\tfrac{78}{4x+5}$"
   hint="Divide the leading terms to get each quotient term, multiply that term by the whole divisor, subtract, and bring down the next term; write any final nonzero remainder over the divisor."
 >}}
@@ -225,12 +253,12 @@ special case of dividing by a linear factor whose leading coefficient is
 $1$.
 
 To illustrate the process, recall the example at the beginning of this
-subsection: dividing $2x^3-3x^2+4x+5$ by $x+2$ using the long division
+section: dividing $2x^3-3x^2+4x+5$ by $x+2$ using the long division
 algorithm. The final form of the process looked like this:
 
 $$
 \begin{array}{r}
-2x^2-7x+18\phantom{{}+5}\phantom{)} \\[3pt]
+2x^2-7x+18\phantom{)} \\[3pt]
 x+2\,\overline{\smash{)}\,2x^3-3x^2+4x+5}\phantom{)} \\[3pt]
 \underline{\mathllap{-\,(}2x^3+4x^2\mathrlap{)}}\phantom{{}+4x+5}\phantom{)} \\[3pt]
 -7x^2+4x\phantom{{}+5}\phantom{)} \\[3pt]
@@ -307,7 +335,9 @@ the coefficients.
 
 $$
 \begin{array}{r|rrr}
-3 & 5 & -3 & -36
+3 & 5 & -3 & -36 \\
+  &   &    &     \\
+\hline
 \end{array}
 $$
 
@@ -365,7 +395,14 @@ $f(x)=4x^3+10x^2-6x-20$ below shows a zero at $x=k=-2$. This confirms that
 $x+2$ is a factor of $4x^3+10x^2-6x-20$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 4x cubed plus 10x squared minus 6x minus 20, on a grid with x from negative 5 to 5 and y from negative 22 to 14. The curve crosses the x-axis at x equals negative 2, dips to a local minimum near x equals 1, then rises steeply to the right.","xMin":-5,"xMax":5,"yMin":-22,"yMax":14,"xUnit":22,"yUnit":11,"grid":true,"xGridStep":1,"yGridStep":2,"tickLabels":true,"xTickStep":1,"yTickStep":4,"polynomials":[{"coeffs":[-20,-6,10,4],"arrows":true}],"points":[{"at":[-2,0],"label":"x = -2"}]}
+{"ariaLabel":"The graph of f of x equals 4x cubed plus 10x squared minus 6x minus 20, on a grid with x from negative 5 to 5 and y from negative 22 to 14. The curve rises from the lower left and reaches the x-axis at x equals negative 2, where at this scale it seems only to touch the axis; it then falls through the y-intercept at negative 20 to a local minimum of about negative 20.8 near x equals 0.26, crosses the x-axis again near x equals 1.35, and rises steeply to the right.","xMin":-5,"xMax":5,"yMin":-22,"yMax":14,"xUnit":22,"yUnit":11,"grid":true,"xGridStep":1,"yGridStep":2,"tickLabels":true,"xTickStep":1,"yTickStep":4,"polynomials":[{"coeffs":[-20,-6,10,4],"arrows":true}]}
+{{< /apfigure >}}
+
+A close-up of the graph near $x=-2$ shows that the curve crosses the
+$x$-axis at $x=-2$ and again just to its right.
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A close-up of the same graph for x from negative 2.1 to negative 1.75 and y from negative 0.4 to 0.2, with gridlines every 0.05, the x-axis numbered every 0.1, and the vertical scale drawn along the window's right edge and numbered every 0.2. The curve rises from the lower left, crosses the x-axis at the point marked x equals negative 2, peaks at about 0.07 near x equals negative 1.93, and falls back across the x-axis at the point marked x approximately negative 1.85.","xMin":-2.1,"xMax":-1.75,"yMin":-0.4,"yMax":0.2,"xUnit":800,"yUnit":400,"grid":true,"xGridStep":0.05,"yGridStep":0.05,"tickLabels":true,"yLabel":"","polynomials":[{"coeffs":[-20,-6,10,4],"from":-2.09,"to":-1.79,"arrows":false}],"points":[{"at":[-2,0],"label":"x = −2"},{"at":[-1.8508,0],"label":"x ≈ −1.85"}],"xTickStep":0.1,"yTickStep":0.2}
 {{< /apfigure >}}
 
 **Example.** Use synthetic division to divide $-9x^4+10x^3+7x^2-6$ by $x-1$.
@@ -387,9 +424,9 @@ The result is $-9x^3+x^2+8x+8+\tfrac{2}{x-1}$.
 {{< fillin
   question="Use synthetic division to divide $3x^4+18x^3-3x+40$ by $x+7$."
   answer="3x^3-3x^2+21x-150+\frac{1{,}090}{x+7}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$3x^3-3x^2+21x-150+\tfrac{1{,}090}{x+7}$"
-  hint="Write $k=-7$, insert a zero coefficient for the missing $x^2$ term, and bring the coefficients through the synthetic-division rows."
+  hint="Write the divisor in the form $x-k$ to find $k$, insert a zero coefficient for the missing $x^2$ term, and bring the coefficients through the synthetic-division rows."
 >}}
 
 ## Using polynomial division to solve application problems
@@ -407,7 +444,7 @@ divide the expression for the volume of the solid by the expressions for the
 length and width. Let us create a sketch.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique sketch of a rectangular box representing the rectangular solid. Its bottom front edge is labeled Length 3x, its bottom edge receding into the page is labeled Width x - 2, and its right vertical edge is labeled Height.","unit":40,"padding":110,"polygons":[{"points":[[0,0],[6,0],[6,1.8],[0,1.8]],"edgeLabels":["Length 3x",null,null,null]}],"segments":[{"from":[0,1.8],"to":[1.6,2.55]},{"from":[1.6,2.55],"to":[7.6,2.55]},{"from":[7.6,2.55],"to":[6,1.8]},{"from":[7.6,2.55],"to":[7.6,0.75],"label":"Height"},{"from":[7.6,0.75],"to":[6,0],"label":"Width x - 2"},{"from":[0,0],"to":[1.6,0.75],"dashed":true},{"from":[1.6,0.75],"to":[1.6,2.55],"dashed":true},{"from":[1.6,0.75],"to":[7.6,0.75],"dashed":true}]}
+{"ariaLabel":"An oblique sketch of a rectangular box representing the rectangular solid. Its bottom front edge is labeled Length 3x, its bottom edge receding into the page is labeled Width x minus 2, and its right vertical edge is labeled Height.","unit":40,"padding":110,"polygons":[{"points":[[0,0],[6,0],[6,1.8],[0,1.8]],"edgeLabels":["Length 3x",null,null,null]}],"segments":[{"from":[0,1.8],"to":[1.6,2.55]},{"from":[1.6,2.55],"to":[7.6,2.55]},{"from":[7.6,2.55],"to":[6,1.8]},{"from":[7.6,2.55],"to":[7.6,0.75],"label":"Height"},{"from":[7.6,0.75],"to":[6,0],"label":"Width x - 2"},{"from":[0,0],"to":[1.6,0.75],"dashed":true},{"from":[1.6,0.75],"to":[1.6,2.55],"dashed":true},{"from":[1.6,0.75],"to":[7.6,0.75],"dashed":true}]}
 {{< /apfigure >}}
 
 We can now write an equation by substituting the known values into the
@@ -448,9 +485,9 @@ is $x^2+x-9$.
 {{< fillin
   question="The area of a rectangle is given by $3x^3+14x^2-23x+6$. The width of the rectangle is given by $x+6$. Find an expression for the length of the rectangle."
   answer="3x^2-4x+1"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$3x^2-4x+1$"
-  hint="Length equals area divided by width; use synthetic division with $k=-6$."
+  hint="Length equals area divided by width; write the width in the form $x-k$ and divide by synthetic division."
 >}}
 
 ## Key equations
@@ -487,7 +524,7 @@ polynomial by a binomial of the form $x-k$.
 {{< fillin
   question="Use long division to divide $3x^2+23x+14$ by $x+7$. What is the quotient?"
   answer="3x+2"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$3x+2$"
   hint="Divide the leading terms to start the quotient, multiply that term by the whole divisor, subtract, and bring down the next term."
 >}}
@@ -495,13 +532,14 @@ polynomial by a binomial of the form $x-k$.
 {{< fillin
   question="Now give the remainder from dividing $3x^2+23x+14$ by $x+7$."
   answer="0"
-  hint="Subtract the last product from the last partial dividend; a zero remainder means the divisor is a factor."
+  answerForm="decimal"
+  hint="Subtract the last product from the last partial dividend to find what is left over."
 >}}
 
 {{< fillin
   question="Use long division to divide $2x^2-3x+2$ by $x+2$. What is the quotient?"
   answer="2x-7"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$2x-7$"
   hint="Divide the leading terms to start the quotient, multiply that term by the whole divisor, subtract, and bring down the next term."
 >}}
@@ -509,15 +547,16 @@ polynomial by a binomial of the form $x-k$.
 {{< fillin
   question="Now give the remainder from dividing $2x^2-3x+2$ by $x+2$."
   answer="16"
+  answerForm="decimal"
   hint="Subtract the last product from the last partial dividend to find what is left over."
 >}}
 
 ### Use synthetic division to divide polynomials
 
 {{< fillin
-  question="Use synthetic division to find the quotient when $2x^3-6x^2-7x+6$ is divided by $x-4$."
+  question="Use synthetic division to find the quotient when $2x^3-6x^2-7x+6$ is divided by $x-4$. Include the remainder, written as a fraction over the divisor."
   answer="2x^2+2x+1+\frac{10}{x-4}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$2x^2+2x+1+\tfrac{10}{x-4}$"
   hint="Use $k=4$; bring down the leading coefficient, then repeatedly multiply by $4$ and add down each column."
 >}}
@@ -525,7 +564,7 @@ polynomial by a binomial of the form $x-k$.
 {{< fillin
   question="Use synthetic division to find the quotient when $x^3-21x^2+147x-343$ is divided by $x-7$."
   answer="x^2-14x+49"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$x^2-14x+49$"
   hint="Use $k=7$; bring down the leading coefficient, then repeatedly multiply by $7$ and add down each column."
 >}}
@@ -541,4 +580,4 @@ no
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 3.5: Dividing Polynomials](https://openstax.org/books/precalculus-2e/pages/3-5-dividing-polynomials) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative Lincoln Memorial photograph, which carries no mathematics; recreated every long-division and synthetic-division tableau as an accessible KaTeX array with `\phantom` spacing rather than as an image, staging each one exactly as the source's image sequence does — the full long-division tableau, then the same work with the variables dropped, then the collapsed, sign-flipped synthetic-division grid bridging the two methods; and Example 3's three partial grids (set up, bring down the lead coefficient, then complete the remaining columns), each paired with the source's own narration; recreated the zero-confirming graph in Example 4's Analysis as an accessible SVG plotted directly from $f(x)=4x^3+10x^2-6x-20$, and omitted its inset close-up detail as decorative; recreated the labelled rectangular-solid sketch in the application example as an accessible SVG figure, an oblique box with its length, width, and height edges labelled to match the source; omitted the media links; converted the "Try It" problems into interactive fill-in exercises with instant feedback, each carrying an `expanded` answer form because "Divide $A$ by $B$" is otherwise satisfied by retyping the printed quotient $\tfrac{A}{B}$; and adapted five selected end-of-section exercises — two "specify the quotient and the remainder" long-division items, each split into paired quotient/remainder prompts, two "find the quotient" synthetic-division items, and a synthetic-division factor check — into seven interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 3.5: Dividing Polynomials](https://openstax.org/books/precalculus-2e/pages/3-5-dividing-polynomials) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative Lincoln Memorial photograph, which carries no mathematics; recreated every long-division and synthetic-division tableau as an accessible KaTeX array with `\phantom` spacing rather than as an image; gave each long-division tableau (the $178\div3$ division, the opening polynomial division, and Examples 1 and 2) the step narration the source prints beside its images as a numbered list after the finished tableau, where the source builds the opening division up across five partial tableaux; kept the source's three stages bridging the two methods — the full long-division tableau, then the same work with the variables dropped, then the collapsed, sign-flipped synthetic-division grid; and Example 3's three partial grids (set up, bring down the lead coefficient, then complete the remaining columns), each paired with the source's own narration; recreated the zero-confirming graph in Example 4's Analysis as an accessible SVG plotted directly from $f(x)=4x^3+10x^2-6x-20$, numbering its $y$-axis every 4 where the source numbers every 2 so the steep curve crosses fewer tick numbers, and its inset close-up — which shows the curve crossing the $x$-axis at $-2$ and again near $-1.85$, where the full graph seems only to touch it — as a second graph below it, introduced by a sentence of our own; recreated the labelled rectangular-solid sketch in the application example as an accessible SVG figure, an oblique box with its length, width, and height edges labelled to match the source; omitted the media links; converted the "Try It" problems into interactive fill-in exercises with instant feedback, each carrying an `expanded no-like-terms` answer form because "Divide $A$ by $B$" is otherwise satisfied by retyping the printed quotient $\tfrac{A}{B}$ or a line with terms left uncombined; and adapted five selected end-of-section exercises — two "specify the quotient and the remainder" long-division items, each split into paired quotient/remainder prompts, two "find the quotient" synthetic-division items (the one with a nonzero remainder asking for the remainder over the divisor too, as the source's answer gives it), and a synthetic-division factor check, asked without its "if it is, indicate the factorization" part, which would give the answer away — into seven interactive components in a closing Practice block, one group per objective.</small>

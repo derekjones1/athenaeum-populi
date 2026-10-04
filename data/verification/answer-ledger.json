@@ -511,6 +511,10 @@
     "result": "agrees"
    }
   },
+  "013b61a3a5b85cb4": {
+   "verdict": "ok",
+   "note": "Solved y=3x^2+5 (x<=0) for x: x=-sqrt((y-5)/3) (negative root since x<=0), so f^{-1}(x)=-sqrt((x-5)/3). Matches CNXML exercise fs-id1165135209972 (source #9), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "013e1e8f17977fcd": {
    "verdict": "ok"
   },
@@ -849,6 +853,14 @@
     "result": "agrees"
    }
   },
+  "01e0e61d3edccf62": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "01e79c618b248c00": {
    "verdict": "ok",
    "note": "source exercise fs-id1408445 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -1127,10 +1139,6 @@
   "029f6a5fdc52e2ff": {
    "verdict": "ok",
    "note": "KC 5 24.2 § Oral Thrush, m58925"
-  },
-  "02a3ebc9fa92ab53": {
-   "verdict": "ok",
-   "note": "(3-4i)-(2+5i) = (3-2)+(-4-5)i = 1-9i; recomputed independently, matches CNXML ti_03_01_03."
   },
   "02a428c62e72cd95": {
    "verdict": "ok",
@@ -1656,10 +1664,6 @@
   "03dfdb3a032821b1": {
    "verdict": "ok",
    "note": "focus (0,7/2) form (0,p) -> x^2=4py; 4p=4(7/2)=14 -> x^2=14y; matches source TI3 exactly."
-  },
-  "03ecd1c2bc668730": {
-   "verdict": "ok",
-   "note": "x^4: even exponent, coefficient +1 (positive) -> both ends increase without bound. Matches CNXML fs-id1165137455119."
   },
   "03f1340f128d22bb": {
    "verdict": "ok",
@@ -2618,6 +2622,14 @@
     "result": "agrees"
    }
   },
+  "0651e78081c5e464": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0654528189d58f9e": {
    "verdict": "ok",
    "solved": {
@@ -2628,6 +2640,14 @@
   "065c902fb41e6b2d": {
    "verdict": "ok",
    "note": "KC 5 24.1 § introduction, m66558 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:385): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
+  "067277c3efcc5ed2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "067ae83e2b31fefe": {
    "verdict": "ok",
@@ -3162,6 +3182,14 @@
     "result": "agrees"
    }
   },
+  "07d389525648fdaf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "07d4b3652d0f5a80": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 875): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -3483,10 +3511,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "08a48543bd7b78db": {
-   "verdict": "ok",
-   "note": "x^4-19x^2+30x = x(x^3-19x+30); tested x=2 as a root of the cubic (8-38+30=0), synthetic-divided to x^2+2x-15=(x+5)(x-3); zeros 0,-5,2,3 — matches CNXML ti_03_04_01 solution."
   },
   "08a650be80382b31": {
    "verdict": "ok",
@@ -3935,6 +3959,10 @@
   "09e4e1ba8629ed67": {
    "verdict": "ok"
   },
+  "09e617dacafe3958": {
+   "verdict": "ok",
+   "note": "Recreated graph vertex (2,-3), y-intercept (0,1); expands to x^2-4x+1; matches CNXML solution for fs-id1165134391628, and vertex/y-intercept confirmed against rendered PDF page 272 graph #59. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "09f2970f5809a2a6": {
    "verdict": "ok",
    "note": "Figure triangle base 12 / height 5 / hyp 13; α is opposite the base (12) and adjacent to the height (5): sinα=12/13, cosα=5/13. sin2α=120/169, cos2α=-119/169, tan2α=-120/119 (node-checked; the negative cos2α is correct since α>45°)."
@@ -4361,10 +4389,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0b27c49d865065d1": {
-   "verdict": "ok",
-   "note": "Solved y=(x+1)^2-3 (x>=-1) for x: x=-1+sqrt(y+3) (positive root since x+1>=0), so f^{-1}(x)=sqrt(x+3)-1. Matches CNXML exercise fs-id1165137405850 (source #7), which has a solution."
   },
   "0b2a4ef63c85eacf": {
    "verdict": "ok",
@@ -4878,6 +4902,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "0c7ac8cbb315aa82": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0c7afbb97f366809": {
    "verdict": "ok",
    "note": "body CYU 3b; source fs-id1171360481357 bullet 2; model from the Viruses section's acellular/domain-of-life sentences, kept distinct from the Practice virus-behavior selfcheck's inert/co-opt facts. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -4921,10 +4953,6 @@
     "result": "agrees"
    }
   },
-  "0c9349d45e6f3803": {
-   "verdict": "ok",
-   "note": "A(50)=50*50=2500 sq ft (computed via node vertex k-value 2500); matches same CNXML solution."
-  },
   "0ca6028c79ce9ebc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -4948,10 +4976,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0cae772bd5d5807a": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137676536: k=45/(100*3^3)=1/60; solve 60=(1/60)*150*d^3 => d^3=24 => d=cbrt(24)=2.884499... rounds to 2.88 inches. Verified with node arithmetic; matches CNXML solution '≈2.88 inches'; rounding disclosed in the question text."
   },
   "0cb3527316a865aa": {
    "verdict": "ok",
@@ -5234,6 +5258,10 @@
    "verdict": "ok",
    "note": "m66407 eip-514 — model answer is the CNXML solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "0d3e06181cce24ed": {
+   "verdict": "ok",
+   "note": "Factored (x-5)(x+5)/[x(x-1)(x-5)] = (x+5)/[x(x-1)] after cancelling x-5; VA at zeros of x(x-1): x=0,1; matches CNXML Try It 5. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "0d407b980240e850": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -5332,6 +5360,10 @@
     "result": "agrees"
    }
   },
+  "0d930d08f84e0a6b": {
+   "verdict": "ok",
+   "note": "(-5+3i)-(6-i)=(-5-6)+(3+1)i=-11+4i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "0d9ad2aa767421c9": {
    "verdict": "ok",
    "note": "L=19; independently recomputed 2*(-3)^2+1 = 2*9+1 = 19 via node."
@@ -5411,10 +5443,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0dc644a31975d64c": {
-   "verdict": "ok",
-   "note": "(2+sqrt(-12))/2=(2+2i*sqrt(3))/2=1+i*sqrt(3); recomputed independently, matches CNXML end-of-section answer key."
   },
   "0dc9e49700502fdb": {
    "verdict": "ok",
@@ -5660,10 +5688,6 @@
   "0e4373d8f50c895a": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1286460, source solution kept verbatim as the model answer, decomposed into rubric checkpoints of the solution's own words. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "0e44b32d88dec820": {
-   "verdict": "ok",
-   "note": "Factored (x-5)(x+5)/[x(x-1)(x-5)] = (x+5)/[x(x-1)] after cancelling x-5; VA at zeros of x(x-1): x=0,1; matches CNXML Try It 5."
   },
   "0e4605bf2574a029": {
    "verdict": "ok",
@@ -6724,10 +6748,6 @@
     "result": "agrees"
    }
   },
-  "111314c54dab7777": {
-   "verdict": "ok",
-   "note": "Practice long-division item 2 (quotient): ran long division of 2x^2-3x+2 by x+2 in node; quotient 2x-7, remainder 16, matching the CNXML solution (fs-id1165134472270)."
-  },
   "111d5af66a0688d7": {
    "verdict": "ok"
   },
@@ -6822,8 +6842,20 @@
     "result": "agrees"
    }
   },
+  "115f7f3a7a80a6a4": {
+   "verdict": "ok",
+   "note": "Reduced (x+3)/(x+1), both degree 1, ratio of leading coeffs 1/1=1; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "11612e5b2bc4b32e": {
    "verdict": "ok"
+  },
+  "1171b50f4f08add8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "117424a25a55c611": {
    "verdict": "ok",
@@ -7380,6 +7412,22 @@
   "12be2d0a2a57b4eb": {
    "verdict": "ok"
   },
+  "12bf13254224d909": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "12c551da954504f0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "12ce71ca1c2e67e2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7431,6 +7479,10 @@
   "12e6421033b5056f": {
    "verdict": "ok",
    "note": "(y+3)^2=4x+5 -> x=((y+3)^2-5)/4; roundtrip g(f(7))=7 checked; key p1298 #47"
+  },
+  "12e736cfc5621f23": {
+   "verdict": "ok",
+   "note": "1/(x-3)^2-4 combined over a common denominator: [1-4(x-3)^2]/(x-3)^2 = (-4x^2+24x-35)/(x^2-6x+9); expanded and checked by hand; matches CNXML Try It 7. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "12e9a20fcb1c1549": {
    "verdict": "ok",
@@ -7570,6 +7622,10 @@
   },
   "13535116fecd37f4": {
    "verdict": "ok"
+  },
+  "135471d3f7292b7f": {
+   "verdict": "ok",
+   "note": "7-2x^2 in general form is -2x^2+7; highest power is 2. Matches CNXML fs-id1165134380913 (\"Degree = 2\"). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "1357da148da1f43b": {
    "verdict": "ok",
@@ -8134,6 +8190,10 @@
     "result": "agrees"
    }
   },
+  "146e9be07d12afd7": {
+   "verdict": "ok",
+   "note": "Solved y=(3x+4)/(5-4x) for x by cross-multiplying and collecting x terms: x(3+4y)=5y-4 => x=(5y-4)/(4y+3), so f^{-1}(x)=(5x-4)/(4x+3). Verified by node composition f(f^{-1}(x))=x for x=0,1,2,-3,7.5 (exact match). Matches CNXML exercise fs-id1165135333251 (source #27), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "147c19fe7acd89f0": {
    "verdict": "ok",
    "note": "KC 4 16.1 § Patterns of Incidence (fs-id1167660340074), m58871"
@@ -8423,16 +8483,20 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L337 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "154985f4cffcd0cd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "154eead9c324cdf3": {
    "verdict": "ok"
   },
   "155557da2c8671b4": {
    "verdict": "ok",
    "note": "m66405 fs-idp316672320 critical thinking; selfcheck model answer is the source solution verbatim. No departure. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "1558d2bb9fab2128": {
-   "verdict": "ok",
-   "note": "(6+4i)/i * (-i/-i) = (-6i-4i^2)/(-i^2) = (4-6i)/1 = 4-6i; recomputed independently with node, matches CNXML end-of-section answer key."
   },
   "15596f3fedf5811c": {
    "verdict": "ok",
@@ -8713,6 +8777,14 @@
    "verdict": "ok"
   },
   "15fa6ae62cfbbda2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "15fbada47107cfc7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -9160,10 +9232,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "16e695e3cb488e49": {
-   "verdict": "ok",
-   "note": "Leading term (the term with the highest power, 6) is -x^6. Matches CNXML ti_03_03_03."
   },
   "16ead049a3a8b54e": {
    "verdict": "ok",
@@ -9733,6 +9801,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1854f255174e7ffa": {
+   "verdict": "ok",
+   "note": "Re-derived independently: (3+4i)(3-4i) = 9 - 12i + 12i - 16i^2 = 9 + 16 = 25. Conjugate pair, so the product is a^2+b^2 = 3^2+4^2 = 25. Record replaces the pre-edit hash: the answerForm was changed from \"decimal\" to \"distributed\" (same grading outcome on this item, but \"decimal\" told the learner to write a complex product as a decimal, while \"distributed\" names the step the exercise asks for). Answer text unchanged. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "18555b4ddb8aa077": {
    "verdict": "ok"
   },
@@ -9775,10 +9847,6 @@
   "18657cfdc2126a12": {
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-idp177675648 (why distinguish homology/analogy before building trees): source solution reproduced near-verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "18665533b8575ae7": {
-   "verdict": "ok",
-   "note": "Vertex of f(x)=x^2-2x: h=1,k=f(1)=-1, so (1,-1); computed via node, matches printed function."
   },
   "186c20393e081646": {
    "verdict": "ok",
@@ -10016,10 +10084,6 @@
     "result": "agrees"
    }
   },
-  "18eea05f0a9eb8dc": {
-   "verdict": "ok",
-   "note": "f(0) = (2)^2(-2) / [2(-1)^2(-3)] = -8/-6 = 4/3, so (0,4/3); matches CNXML Try It 8."
-  },
   "18ef86a486b8e250": {
    "verdict": "ok",
    "note": "(y+4)^2/100-(x-3)^2/64=1: center read directly from shifted binomials, (3,-4); matches source Try It 5 (kept 3 of its 5 requested quantities)."
@@ -10106,10 +10170,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "191d95f305b4d379": {
-   "verdict": "ok",
-   "note": "Every polynomial function has domain all real numbers, stated directly in the section's own Q&A callout; no division, root, or log restricts x^3+x^2-20x."
   },
   "192238dac7a5eb57": {
    "verdict": "ok",
@@ -10241,10 +10301,6 @@
   "19542f9195d829f9": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id2897121 (m66480) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "195693f06622ccc2": {
-   "verdict": "ok",
-   "note": "Solved y=x^3+5 for x: f^{-1}(x)=cbrt(x-5). Checked composition symbolically (standard cubic/cube-root inverse pair). Matches CNXML exercise fs-id1165137725343 (source #13), which has a solution."
   },
   "195ca3f741ff1c42": {
    "verdict": "ok",
@@ -10575,10 +10631,6 @@
     "result": "agrees"
    }
   },
-  "1a37db7da841c1b9": {
-   "verdict": "ok",
-   "note": "(3+2i)+(5-3i)=(3+5)+(2-3)i=8-i; recomputed independently, matches CNXML end-of-section answer key."
-  },
   "1a38d3cdd99ed683": {
    "verdict": "ok"
   },
@@ -10645,6 +10697,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "1a6bab332dc017d4": {
+   "verdict": "ok",
+   "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "1a6cbd6eacd5aebc": {
    "verdict": "ok",
@@ -10956,10 +11012,6 @@
     "result": "agrees"
    }
   },
-  "1b02d88c9b1d2370": {
-   "verdict": "ok",
-   "note": "Try It 2 (ti_03_09_02): k=x^2*y=9*8=72; y=72/4^2=72/16=9/2. Verified with node arithmetic; matches CNXML solution."
-  },
   "1b0e737e5635ac3d": {
    "verdict": "ok",
    "note": "Glossary recall: thermophile, meaning transcribed from the glossary definition (60-80 degrees C optimal growth).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -11030,10 +11082,6 @@
   "1b329d62fa1ca9f4": {
    "verdict": "ok",
    "note": "atan2(-6,-4) normalized to [0,360) = 236.3099 deg, rounds to 236.310 deg. node -e dirDeg(-4,-6)=236.3099."
-  },
-  "1b36c6f431a3fb97": {
-   "verdict": "ok",
-   "note": "f(1) = (1+5)/3 = 2 by direct substitution into f(x)=(x+5)/3; matches CNXML ti_03_08_01 solution's intermediate step."
   },
   "1b39a01c3cc6c6b4": {
    "verdict": "ok",
@@ -11133,6 +11181,14 @@
   "1b6812a65200a9d0": {
    "verdict": "ok"
   },
+  "1b70320dcd1da6dd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1b72b8d0dec8cd13": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -11168,10 +11224,6 @@
   "1b81834df58579e1": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "1b8bfb4e68f34040": {
-   "verdict": "ok",
-   "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "1b8c084d50ab2223": {
    "verdict": "ok",
@@ -11225,6 +11277,10 @@
   },
   "1bb4188c77f4b32e": {
    "verdict": "ok"
+  },
+  "1bb804e658c6b24f": {
+   "verdict": "ok",
+   "note": "Practice (Rational Zero Theorem list). Constant term 1 (factors +-1), leading coeff 6 (factors +-1,+-2,+-3,+-6) give candidates +-1,+-1/2,+-1/3,+-1/6. Matches CNXML solution for fs-id1165132920307. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "1bb83e68b40858d6": {
    "verdict": "ok",
@@ -11554,6 +11610,14 @@
     "result": "agrees"
    }
   },
+  "1c670b2d45e1b964": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1c6ce3d737eefb4d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -11609,10 +11673,6 @@
    "verdict": "ok",
    "note": "KC 1 3.3 § Glycocalyces and S-Layers, m58792"
   },
-  "1c9d11c8ff9f65cf": {
-   "verdict": "ok",
-   "note": "Try It 5. Derived independently: zeros 5, 2i, -2i give base cubic x^3-5x^2+4x-20; f(1) of base = -20; a=10/-20=-1/2; f(x)=-1/2x^3+5/2x^2-2x+10, confirmed by node computation of f(1)=10. Matches CNXML ti_03_06_05 solution exactly."
-  },
   "1ca4ecc4b5f56402": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662382922 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -11632,6 +11692,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "1caf8a09e4b6e950": {
+   "verdict": "ok",
+   "note": "From the same expansion, -2x^4-x^3+8x^2+4x, the leading coefficient is -2. Matches CNXML fs-id1165137742433 (\"Coefficient = -2\"). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "1cb274f98b66e635": {
    "verdict": "ok",
@@ -11820,10 +11884,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "1d1c5b558dbf7514": {
-   "verdict": "ok",
-   "note": "Computed with node: Math.sqrt(50/(4*Math.PI)) = 1.9947...; rounds to 1.99, matching the question's 'rounded to the nearest hundredth' instruction and the CNXML solution's stated '1.99 inches'."
   },
   "1d2e571eaa545868": {
    "verdict": "ok",
@@ -12104,9 +12164,9 @@
    "verdict": "ok",
    "note": "m66609 CT exercise fs-idp21524464: model answer is the source solution verbatim (energy savings, genetic identity/survival, faster maturity from adult tissue), checkpoints decompose its three clauses with no new claims. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
   },
-  "1dd86ebfb3974ab8": {
+  "1dd3cf95b5ca5651": {
    "verdict": "ok",
-   "note": "Practice synthetic-division item 1: ran synthetic division (k=4) on 2,-6,-7,6 in node; quotient 2x^2+2x+1, remainder 10, matching the CNXML solution (fs-id1165134474179)."
+   "note": "(x-1)(x+3)(x-5)/[(x+2)^2(x-4)] has no common factors; VA at x=-2,4; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "1dd98bb77515af99": {
    "verdict": "ok",
@@ -12121,6 +12181,14 @@
    "note": "RQ2 (fs-idp163375200): CNXML solution keys D = 'all of the above'; all three sub-claims (earliest life, hydrothermal-vent energy, multi-layered sheet of bacteria+archaea) are stated in the Microbial Mats subsection, so 'all of the above' is taught. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1defdf3eaa36c91a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -12570,6 +12638,10 @@
   "1ef4fb11af558ce9": {
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-idp96392800 (dolphins/fish): source solution reproduced near-verbatim as the model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "1ef97d3f1205c02d": {
+   "verdict": "ok",
+   "note": "Numeric maximization of 100t/(2t^2+75) over t in [0,50] (node scan, step 0.001) peaks at t=6.124; exact critical point sqrt(75/2)=6.1237...; rounds to 6.12, matching the CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "1efe0fe2af8950ce": {
    "verdict": "ok",
@@ -13103,6 +13175,10 @@
     "result": "agrees"
    }
   },
+  "2064a7a748cfc8f2": {
+   "verdict": "ok",
+   "note": "Degree of numerator (1) < degree of denominator (3, from x^3-16x); HA y=0; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "20674fe37737c837": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13132,10 +13208,6 @@
   "20969727580f2e79": {
    "verdict": "ok",
    "note": "m66380 critical-thinking solution fs-id2026021 verbatim match. Both CHECKS clauses split the two-sentence solution (kinase locked on vs. non-functional) with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "209ba78b114d0b4f": {
-   "verdict": "ok",
-   "note": "Degree of numerator (1) < degree of denominator (3, from x^3-16x); HA y=0; matches CNXML source answer."
   },
   "20a195fcc2acbbfb": {
    "verdict": "ok",
@@ -13265,10 +13337,6 @@
   "20e71d68c7654247": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "20eb14b613cce122": {
-   "verdict": "ok",
-   "note": "1-2i has real part 1 and imaginary part -2, ordered pair (1,-2); source solution is an image confirming the plotted point 1-2i, coordinates derived independently."
   },
   "20f52fa96c327e8e": {
    "verdict": "ok",
@@ -14337,10 +14405,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "242fe2bb23e04b0a": {
-   "verdict": "ok",
-   "note": "Vertex of f(x)=(x-3)^2+2 is (3,2), a>0, so range [2,infty); matches CNXML solution for fs-id1165135419824."
   },
   "243529ae810ebac6": {
    "verdict": "ok",
@@ -15902,10 +15966,6 @@
    "verdict": "ok",
    "note": "node: Math.cos(Math.asin(7/9))=0.628539361054709, and 4*Math.sqrt(2)/9=0.628539361054709 — matches exactly."
   },
-  "282eb68408b21190": {
-   "verdict": "ok",
-   "note": "Practice long-division item 1 (quotient): ran long division of 3x^2+23x+14 by x+7 in node; quotient 3x+2, remainder 0, matching the CNXML solution (fs-id1165135643143)."
-  },
   "28304676b9731bed": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp14432288; model answer is the source solution verbatim (ferns, seed-plant-like traits). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -16237,10 +16297,6 @@
     "result": "agrees"
    }
   },
-  "291497273e05f8f3": {
-   "verdict": "ok",
-   "note": "-4(2+6i) = -8-24i by distribution; recomputed independently, matches CNXML ti_03_01_04."
-  },
   "29157eed65008ea6": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -16284,10 +16340,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "2935f0c5da5bc416": {
-   "verdict": "ok",
-   "note": "f(-i)=(1-i)/(-4-i); multiplied by conjugate (-4+i)/(-4+i): numerator (1-i)(-4+i)=-3+5i, denominator 16+1=17, giving -3/17+5/17 i; recomputed independently, matches CNXML ti_03_01_07 value (source spells it -3/17+5i/17)."
   },
   "2936332596e89596": {
    "verdict": "ok",
@@ -16601,6 +16653,10 @@
     "result": "agrees"
    }
   },
+  "2a3aea2e88c90670": {
+   "verdict": "ok",
+   "note": "Near x=6, numerator -2x is negative (-12); denominator sign flip gives +inf on the left, -inf on the right; verified numerically. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "2a3ce0636ffb433a": {
    "verdict": "ok"
   },
@@ -16668,10 +16724,6 @@
     "result": "agrees"
    }
   },
-  "2a5e09f2a3aa1adf": {
-   "verdict": "ok",
-   "note": "(3-4i)(2+3i) = 6+9i-8i-12i^2 = 6+i+12 = 18+i; recomputed independently, matches CNXML ti_03_01_05."
-  },
   "2a6b76f994d3610f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16724,6 +16776,10 @@
   },
   "2a8a09b987386e34": {
    "verdict": "ok"
+  },
+  "2a8cbea09254d57a": {
+   "verdict": "ok",
+   "note": "f(1) = (1+5)/3 = 2 by direct substitution into f(x)=(x+5)/3; matches CNXML ti_03_08_01 solution's intermediate step. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2a8d2f9195551d6a": {
    "verdict": "ok",
@@ -17452,10 +17508,6 @@
     "result": "agrees"
    }
   },
-  "2c7185703caa2f7e": {
-   "verdict": "ok",
-   "note": "Re-derived: the reciprocal squared function 1/x^2 shifted right 3 and down 4 is f(x)=1/(x-3)^2-4, undefined at x=3, so the vertical asymptote is x=3. Wording reconciled to the source Try It (m49351 says 'reciprocal squared'; the page had dropped 'squared'); answer unchanged."
-  },
   "2c767bbfe34272ef": {
    "verdict": "ok",
    "note": "vertex x=2 (a=1,b=-4 -> x=4/2=2), opens up -> increasing (2,inf); key p1271 #27"
@@ -17618,10 +17670,6 @@
     "result": "agrees"
    }
   },
-  "2cd92b3e7b919d5e": {
-   "verdict": "ok",
-   "note": "Both numerator and denominator expand to degree 3; leading-coefficient ratio 1/2; matches CNXML Try It 8."
-  },
   "2ce0a3ae5e852550": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit; plural-fold audit 2026-09-06: auditor flagged that the fold accepts \"facts\" (FACT + s, lowercased); adjudicated not a defect — the question asks for the complex that facilitates chromatin transcription, and \"facts\" is not a plausible wrong answer to it | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -17685,6 +17733,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2d0cfb2c35f7e351": {
+   "verdict": "ok",
+   "note": "Both numerator and denominator expand to degree 3 with leading coefficient 1; ratio 1/1=1; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2d111d43b44e2399": {
    "verdict": "ok",
@@ -18105,10 +18157,6 @@
    "verdict": "ok",
    "note": "Vector from origin to (3,5) is trivially (3,5); i,j form is 3i+5j."
   },
-  "2e28efe4337a23e0": {
-   "verdict": "ok",
-   "note": "Vertex of H(t)=-16t^2+96t+112: h=-96/-32=3; matches CNXML solution '3 seconds'."
-  },
   "2e293cf6ff092077": {
    "verdict": "ok",
    "note": "Review Q3 (fs-id1458009), solution B = centrosome; matches 'The two centrosomes will give rise to the mitotic spindle' in the S Phase paragraph. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -18147,6 +18195,10 @@
     "result": "agrees"
    }
   },
+  "2e32bf23c8341147": {
+   "verdict": "ok",
+   "note": "(3+2i)+(5-3i)=(3+5)+(2-3)i=8-i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "2e358755b12880be": {
    "verdict": "ok",
    "note": "m66438 CT solution fs-idm40512355 (amino-acid condensation) verbatim; three CHECKS clauses each restate a sentence of it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -18157,10 +18209,6 @@
   "2e3dc9248b4fbbb0": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 811): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
-  },
-  "2e405d00b1baa222": {
-   "verdict": "ok",
-   "note": "(5-2i)(3i)=15i-6i^2=15i+6=6+15i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "2e4887e4f5b520ac": {
    "verdict": "ok",
@@ -18726,10 +18774,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "2f8754086e0105c8": {
-   "verdict": "ok",
-   "note": "(-5+3i)-(6-i)=(-5-6)+(3+1)i=-11+4i; recomputed independently, matches CNXML end-of-section answer key."
-  },
   "2f89667a21955926": {
    "verdict": "ok",
    "note": "source selfcheck, exercise fs-idp18938784, model answer = solution fs-idm6442528 verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -18770,6 +18814,15 @@
     "result": "agrees"
    }
   },
+  "2f9fbd57f7fd8b8c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Parent, October 4, 2026: the stem says degree 9 and multiplicities 3, 2, 2 sum to 7, so the source's printed answer is not defensible; the drawing (Figure_03_04_010-2698, flat zero at 3, peaks 42 and 15 fit only by (x-3)^4) and the pinned prompt agree on multiplicity 4 (erratum 33 as amended). Key stands. The callout the solver read has been reworded to name no values."
+   }
+  },
   "2fa033cfb58a367d": {
    "verdict": "ok",
    "note": "Bio 37.4 oral-contraceptive selfcheck: hint now points to 37.3 feedback passage; model answer = source solution (m66630); parent re-read Sep 23 2026"
@@ -18789,10 +18842,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "2fb356675a0e6393": {
-   "verdict": "ok",
-   "note": "Vertex of f(x)=4x^2+x-1: h=-1/8,k=-17/16 (computed via node); matches CNXML solution for fs-id1165134278554."
   },
   "2fb410d0b4a7255d": {
    "verdict": "ok"
@@ -19236,10 +19285,6 @@
     "result": "agrees"
    }
   },
-  "31342b0bc448d11f": {
-   "verdict": "ok",
-   "note": "Axis of symmetry x=h=1 for f(x)=x^2-2x."
-  },
   "313685b909630db7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19468,6 +19513,14 @@
    "note": "source exercise fs-id1167793964407 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "31c61da53533c93e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -20268,15 +20321,19 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "33f602cb72445619": {
-   "verdict": "ok",
-   "note": "C(t) = sugar/water = (8+2t)/(300+20t) by direct construction from the stated rates; matches CNXML source exercise's given answer."
-  },
   "33f66e95f87309cd": {
    "verdict": "ok",
    "note": "KC 5 27.3 § body Modern Advances in Phylogenetic Understanding Come from Molecular Analyses (fs-idp44881632), m66722 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "33f9b2a74453c81f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -20789,6 +20846,10 @@
     "result": "agrees"
    }
   },
+  "3543be99a1e8c443": {
+   "verdict": "ok",
+   "note": "Vertex of H(t)=-16t^2+96t+112: h=-96/-32=3; matches CNXML solution '3 seconds'. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "354f379854e5311e": {
    "verdict": "ok"
   },
@@ -20913,10 +20974,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "35a176f8f073fd49": {
-   "verdict": "ok",
-   "note": "Denominator (x-3)^2 zero only at x=3; matches CNXML Try It 7."
   },
   "35a17e9c6757cdd1": {
    "verdict": "ok",
@@ -21127,10 +21184,6 @@
     "result": "agrees"
    }
   },
-  "3628d5e238464e2d": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137658781: k=100/(1*2*5)=10, so y=10xzw. Verified with node arithmetic; matches CNXML solution."
-  },
   "362b1be8d6a029cc": {
    "verdict": "ok",
    "note": "locally built selfcheck paraphrasing one paragraph (Levels of Ecological Study para 2) with no new claim: population size, physiology/behavior, plants/soils, sociology/urban ecology — all four checkpoints are clauses of that one source sentence. Disclosed in footer as a local item (objective 2 has no source Critical Thinking item). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -21206,6 +21259,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3643855daf5da0d6": {
+   "verdict": "ok",
+   "note": "1-2i has real part 1 and imaginary part -2, ordered pair (1,-2); source solution is an image confirming the plotted point 1-2i, coordinates derived independently. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "364528a33a440da2": {
    "verdict": "ok",
@@ -21337,6 +21394,10 @@
   "36af825525b8fc23": {
    "verdict": "ok",
    "note": "m66474 critical-thinking solution fs-idm123143120 (roles of ATP/NADPH). Page model answer is a faithful paraphrase; three CHECKS clauses (both carry energy, NADPH has reducing power, fuels light-independent carbohydrate synthesis) restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "36afb276a4cca2d2": {
+   "verdict": "ok",
+   "note": "Axis of symmetry x=h=1 for f(x)=x^2-2x. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "36b0b87c256d017b": {
    "verdict": "ok",
@@ -21950,10 +22011,6 @@
   "38465c8a8a7464d2": {
    "verdict": "ok"
   },
-  "3846adbe2c104268": {
-   "verdict": "ok",
-   "note": "Computed f(2)=8-18=-10 and f(4)=64-36=28 by node arithmetic for f(x)=x^3-9x. Matches CNXML fs-id1165135513620 solution."
-  },
   "384a76d5e877e33c": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 1 (urinary structures). Model answer assembled from the Anatomy of the Urinary Tract subsection's own kidney/nephron/ureter/bladder/urethra/meatus sentences."
@@ -21997,10 +22054,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "385d80ce21eac373": {
-   "verdict": "ok",
-   "note": "f(x)=108-13x^9-8x^4+14x^12+2x^3: highest power present is 12 (the 14x^12 term), so at most 12 x-intercepts. Matches CNXML ti_03_03_07."
   },
   "385fa042642b9ebb": {
    "verdict": "ok",
@@ -22447,10 +22500,6 @@
    "verdict": "ok",
    "note": "Try It 8: x^2-9 factors to (x-3)(x+3); confirmed by float substitution at x=5 (node) that ln of the printed quotient equals (1/2)ln(x-1)+ln(2x+1)-ln(x+3)-ln(x-3). Matches CNXML solution (terms reordered)."
   },
-  "399fb24d16f3b83f": {
-   "verdict": "ok",
-   "note": "Try It 3. Only rational candidates for x^3-5x^2+2x+1 are +-1 (constant/leading coeff both 1); computed f(1)=-1, f(-1)=-7, neither 0, so 0 rational zeros. Matches CNXML ti_03_06_03 solution text 'There are no rational zeros.'"
-  },
   "39a49ed49de5ffcf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22525,10 +22574,6 @@
   "39c958c528de66c4": {
    "verdict": "ok",
    "note": "2 sin theta=sqrt3 -> sin theta=sqrt3/2 -> theta=pi/3,2pi/3 on [0,2pi); standard."
-  },
-  "39c988cb509dfb62": {
-   "verdict": "ok",
-   "note": "7-2x^2 in general form is -2x^2+7; highest power is 2. Matches CNXML fs-id1165134380913 (\"Degree = 2\")."
   },
   "39ccabd74234a416": {
    "verdict": "ok",
@@ -22705,6 +22750,14 @@
   "3a1b46f4462ff168": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "3a1d19d573370aa1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3a24f5a3ce6525ca": {
    "verdict": "ok",
@@ -23307,10 +23360,6 @@
   },
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
-  },
-  "3bac08ba7506b6ec": {
-   "verdict": "ok",
-   "note": "(x+2)^2(x-2)/[2(x-1)^2(x-3)]: denominator zero at x=1,3, neither shared with numerator; matches CNXML Try It 8."
   },
   "3bad69fa7dd5a995": {
    "verdict": "ok",
@@ -24370,10 +24419,6 @@
     "result": "agrees"
    }
   },
-  "3ea343a4a05d032b": {
-   "verdict": "ok",
-   "note": "C(t)=3(t+2)(t-3)(t+5) is already factored; zeros -2, 3, -5 by inspection. Matches CNXML fs-id1165133381481 solution (-2,0),(3,0),(-5,0)."
-  },
   "3ea7eed41fb5e24f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25062,6 +25107,10 @@
     "result": "agrees"
    }
   },
+  "4038c63f6a0e470b": {
+   "verdict": "ok",
+   "note": "Try It 2: ran synthetic division (k=-7) on coefficients 3,18,0,-3,40 (0 inserted for the missing x^2 term) in node; got quotient 3x^3-3x^2+21x-150, remainder 1090, matching the CNXML solution's 1,090/(x+7). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "403c34456728763f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25692,10 +25741,6 @@
     "result": "agrees"
    }
   },
-  "418f0b1449e4fcb1": {
-   "verdict": "ok",
-   "note": "Recreated graph vertex (2,7), y-intercept (0,-1); expands to -2x^2+8x-1; matches CNXML solution for fs-id1165135262616, confirmed against rendered PDF page 272 graph #61."
-  },
   "41918f9684690715": {
    "verdict": "ok",
    "note": "Shoe-loan system: x+y+z=1,500,000; z=4x; 0.07x+0.08y+0.10z=130,500. Substituting z=4x and y=1,500,000-5x gives 0.47x+0.08(1,500,000-5x)=130,500 -> 0.07x=10,500 -> x=150,000. Matches CNXML ti_09_06_06's $150,000 at 7%."
@@ -25833,10 +25878,6 @@
   "41fb0502605c304e": {
    "verdict": "ok",
    "note": "Table (0,-4)(3,-1)(6,2)(9,-1)(12,-4)(15,-1)(18,2): amplitude (2-(-4))/2=3, midline (2+(-4))/2=-1, period 12 -> B=pi/6, minimum at x=0 -> -cos form. y=-3cos(pi/6 x)-1 numerically checked against all 7 table points (matches source exercise #5 solution)."
-  },
-  "420655cacc5dfe33": {
-   "verdict": "ok",
-   "note": "f(8-i)=2(8-i)^2-3(8-i)=2(63-16i)-24+3i=126-32i-24+3i=102-29i; recomputed independently with node, matches CNXML ti_03_01_06."
   },
   "4206da86c4965a8e": {
    "verdict": "ok",
@@ -26032,10 +26073,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "427cf5910e32cd9b": {
-   "verdict": "ok",
-   "note": "Practice long-division item 1 (remainder): same division as above; remainder 0, matching the CNXML solution."
   },
   "42806ac99107df01": {
    "verdict": "ok"
@@ -26434,6 +26471,14 @@
   "438f97db64fb87f9": {
    "verdict": "ok"
   },
+  "4392057ab8a067ac": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4394b853e7a5b1fc": {
    "verdict": "ok",
    "note": "glossary recall: cortex (fs-idp146570080) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -26734,6 +26779,10 @@
     "result": "agrees"
    }
   },
+  "4461381a9872d64a": {
+   "verdict": "ok",
+   "note": "Solved y=(x+3)/(x-2) for x by cross-multiplying and collecting x terms: f^{-1}(x)=(2x+3)/(x-1). Verified by node composition f(f^{-1}(x))=x for several x values (0,1,2,-3,7.5), all equal to 5 decimal places. Matches CNXML ti_03_08_05. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "44640592941b1328": {
    "verdict": "ok",
    "note": "source exercise fs-id1172101911308 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -26863,10 +26912,6 @@
   "44b1233a1a6c7107": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "44b299ebf48673ee": {
-   "verdict": "ok",
-   "note": "Leading coefficient of -x^6 is -1. Matches CNXML ti_03_03_03."
   },
   "44b35f783f45fd0e": {
    "verdict": "ok",
@@ -27019,10 +27064,6 @@
     "result": "agrees"
    }
   },
-  "451a29190d14c30e": {
-   "verdict": "ok",
-   "note": "Try It 6. Computed sign changes via node: f(x)=2x^4-10x^3+11x^2-15x+12 has coefficient signs +,-,+,-,+ = 4 sign changes (4,2,or 0 positive); f(-x)=2x^4+10x^3+11x^2+15x+12 has all-positive coefficients = 0 sign changes (0 negative). Matches CNXML ti_03_06_06 solution ('4, 2, or 0 positive real roots and 0 negative real roots')."
-  },
   "451c6001fdd0725e": {
    "verdict": "ok",
    "note": "source exercise fs-idm116603568 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27030,6 +27071,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "452510260e3387cc": {
+   "verdict": "ok",
+   "note": "-4(2+6i) = -8-24i by distribution; recomputed independently, matches CNXML ti_03_01_04. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "4526b71da4de39b6": {
    "verdict": "ok",
@@ -27157,10 +27202,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "457a580a32fac8ed": {
-   "verdict": "ok",
-   "note": "Numeric maximization of 100t/(2t^2+75) over t in [0,50] (node scan, step 0.001) peaks at t=6.124; exact critical point sqrt(75/2)=6.1237...; rounds to 6.12, matching the CNXML source answer."
-  },
   "457db476bbde7fc7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -27276,10 +27317,6 @@
     "result": "agrees"
    }
   },
-  "45b577e1e61a6231": {
-   "verdict": "ok",
-   "note": "Re-derived independently: (3+4i)(3-4i) = 9 - 12i + 12i - 16i^2 = 9 + 16 = 25. Conjugate pair, so the product is a^2+b^2 = 3^2+4^2 = 25. Record replaces the pre-edit hash: the answerForm was changed from \"decimal\" to \"distributed\" (same grading outcome on this item, but \"decimal\" told the learner to write a complex product as a decimal, while \"distributed\" names the step the exercise asks for). Answer text unchanged."
-  },
   "45b7eeaf727cf53b": {
    "verdict": "ok",
    "note": "Glossary fs-id2642866 'telomere' = 'DNA at the end of linear chromosomes'; prompt is the meaning, answer the term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27376,6 +27413,14 @@
    "note": "key-term recall: supergroups; printed in § Taxonomy of Protists: \"Eukarya is currently divided into six supergroups that are further divided into subgroups, as illustrated in ( ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4602d818dfabb7e7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -27753,6 +27798,10 @@
    "verdict": "ok",
    "note": "loop diuretics VC selfcheck; model answer and checkpoints reuse the source solution's clauses verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "46f92e7e59339abf": {
+   "verdict": "ok",
+   "note": "Independently derived: 1/x^2 is even, so both sides of x=0 go to +inf and both tails go to 0; matches CNXML Try It 1. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "46fba703aa097412": {
    "verdict": "ok",
    "note": "Review Question fs-id2575162: solution C = 'cell', matches option list (organ, organelle, cell, macromolecule). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27764,6 +27813,10 @@
   "470167b117d65bf9": {
    "verdict": "ok",
    "note": "3(-x)^4=3x^4 -> even; key p1271 #57"
+  },
+  "47098aa1d52f65ef": {
+   "verdict": "ok",
+   "note": "(3-4i)(2+3i) = 6+9i-8i-12i^2 = 6+i+12 = 18+i; recomputed independently, matches CNXML ti_03_01_05. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "470e0972e2c5dd0e": {
    "verdict": "ok",
@@ -27903,10 +27956,6 @@
     "result": "agrees"
    }
   },
-  "478b2768637eb7f7": {
-   "verdict": "ok",
-   "note": "2x^2 * 4x^3 = (2*4)x^(2+3) = 8x^5 (sympy expand; at x=2 the product is 256, matching 8x^5=256 and not 8x^4=128). f is a single term with a variable base at a fixed power, so it is the power function; g is a sum of three terms and h is a quotient. Exponent corrected from the source's 8x^4 (upstream errata #43, m49346 fs-id1165134312227)."
-  },
   "478da0b12e04ebac": {
    "verdict": "ok",
    "note": "Body CYU, Transformation section (fs-id1167663653822). Selfcheck assembled from the nuclease/single-strand sentence in the Transformation section's second paragraph. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -28014,10 +28063,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "47ddd631a251b08d": {
-   "verdict": "ok",
-   "note": "Solved y=(x+3)/(x-2) for x by cross-multiplying and collecting x terms: f^{-1}(x)=(2x+3)/(x-1). Verified by node composition f(f^{-1}(x))=x for several x values (0,1,2,-3,7.5), all equal to 5 decimal places. Matches CNXML ti_03_08_05."
   },
   "47de71828920d367": {
    "verdict": "ok"
@@ -28521,6 +28566,10 @@
     "result": "agrees"
    }
   },
+  "493ecb98abfa5691": {
+   "verdict": "ok",
+   "note": "Denominator x^4-5x^2+4=(x^2-1)(x^2-4) zero at x=±1,±2; matches CNXML source answer 'All reals x≠-1,-2,1,2'. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "4943998424cb1bd5": {
    "verdict": "ok",
    "note": "graded from bone marrow/thymus/secondary-lymphoid sentences of § T Cell Production and Maturation | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -28747,6 +28796,10 @@
   "49f473fe0118eb1c": {
    "verdict": "ok",
    "note": "x(t)=-2-2t, y(t)=3+t: solved t=y-3, substituted to get x=4-2y, solved for y=2-x/2=-1/2 x+2 via node -e (verified against 6 sample t values, all match). Matches source solution alt-text 'a line, negative slope' (slope -1/2). Not a retype hazard (eliminate-the-parameter construction); answerForm=slope-intercept-form pins the shape. Replayed alternate spellings (distributed order, decimal coefficient) through check-answer.mjs -- both grade correct."
+  },
+  "49f7a444a4fd8a71": {
+   "verdict": "ok",
+   "note": "Practice (Descartes). Sign changes of 2x^3+37x^2+200x+300 (all positive): 0 changes (0 positive); f(-x)=-2x^3+37x^2-200x+300 (signs -,+,-,+): 3 changes (3 or 1 negative). Matches CNXML solution for fs-id1165134149873. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "49f8500229aa20e4": {
    "verdict": "ok",
@@ -29292,6 +29345,10 @@
     "result": "agrees"
    }
   },
+  "4b5a3d700579d800": {
+   "verdict": "ok",
+   "note": "Try It 7. Solved w(w+1)(2w+1)=84 for positive w via node scan: w=3 gives 84 exactly, so width=3, length=w+1=4, height=2w+1=7. Matches CNXML ti_03_06_07 solution '3 meters by 4 meters by 7 meters' (width, length, height order), which the question now states explicitly. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "4b5b58463bd3ea49": {
    "verdict": "ok",
    "note": "KC 7 37.1 § body Peptide Hormones (fs-idm24624192), m66626 — parent re-read against the module"
@@ -29303,10 +29360,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "4b742116b6580e7e": {
-   "verdict": "ok",
-   "note": "f(x)=2x^3-6x^2-20x has no constant term, so f(0)=0; y-intercept value is 0. Matches CNXML ti_03_03_06."
   },
   "4b742a31e229c03f": {
    "verdict": "ok",
@@ -29581,10 +29634,6 @@
   "4c15be78ca46ed7b": {
    "verdict": "ok"
   },
-  "4c1813f1de2e278d": {
-   "verdict": "ok",
-   "note": "Denominator zero at x=1,5 (the 5(x-1)(x-5) factors); domain is R minus {1,5}; matches CNXML Try It 4."
-  },
   "4c2400e2bfb320db": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29600,10 +29649,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "4c29152dc2ef6d21": {
-   "verdict": "ok",
-   "note": "Practice (Rational Zero Theorem list). Constant term 5 (factors +-1,+-5), leading coeff 2 (factors +-1,+-2) give candidates +-1,+-5,+-1/2,+-5/2. Matches CNXML solution for fs-id1165135486016."
   },
   "4c2c67e65a475c4f": {
    "verdict": "ok",
@@ -30352,10 +30397,6 @@
     "result": "agrees"
    }
   },
-  "4e024d526b13cc47": {
-   "verdict": "ok",
-   "note": "Solved y=3x^2+5 (x<=0) for x: x=-sqrt((y-5)/3) (negative root since x<=0), so f^{-1}(x)=-sqrt((x-5)/3). Matches CNXML exercise fs-id1165135209972 (source #9), which has a solution."
-  },
   "4e0427b84bcec45b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30528,10 +30569,6 @@
    "verdict": "ok",
    "note": "exponential with positive stretch -> range (0,inf); key p1315 #9"
   },
-  "4e82bed91880cef9": {
-   "verdict": "ok",
-   "note": "Vertex of h(t)=-4.9t^2+229t+234: k=2909.5612... rounds to 2909.56 (computed via node); matches CNXML solution for fs-id1165135571732."
-  },
   "4e8537a1329636da": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -30667,6 +30704,14 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "4edb828ff4603e9a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4eddb597d706676f": {
    "verdict": "ok",
    "note": "Latus endpoints share focus x-coord 0; with vertex (-3,-1), p=0-(-3)=3, 4p=12 -> (y+1)^2=12(x+3); matches source exercise fs-id1741214's key exactly. Self-checked correct under the token."
@@ -30717,6 +30762,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4f12c5bb872049f7": {
+   "verdict": "ok",
+   "note": "Degree 12 polynomial has at most 12-1=11 turning points. Matches CNXML ti_03_03_07. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "4f147b6d0d4a708f": {
    "verdict": "ok",
@@ -30976,6 +31025,10 @@
     "result": "agrees"
    }
   },
+  "4fc9090fa5792725": {
+   "verdict": "ok",
+   "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "4fcbd116c5c393eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31127,6 +31180,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5013fb86a18fd318": {
+   "verdict": "ok",
+   "note": "f(x)=-5x^4: exponent 4 is even, coefficient -5 is negative, so both ends of f decrease without bound. Matches CNXML ti_03_03_02. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "5015e2d78eb85b3d": {
    "verdict": "ok",
@@ -31386,10 +31443,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "50e2de20fb984a6e": {
-   "verdict": "ok",
-   "note": "f(x)=x^5-5x^3+4x has degree 5 (leading coefficient of x^5 is 1, nonzero); max turning points = 5-1 = 4, by the section's own stated theorem."
   },
   "50ea75f8f7f693ee": {
    "verdict": "ok",
@@ -31679,9 +31732,6 @@
     "result": "agrees"
    }
   },
-  "51b974b0c2d0fd3a": {
-   "verdict": "ok"
-  },
   "51bcbfee20cba943": {
    "verdict": "ok"
   },
@@ -31696,10 +31746,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "51d5e3d39cc3f819": {
-   "verdict": "ok",
-   "note": "x^2+5x-36=(x-4)(x+9); VA at x=4,-9; matches CNXML source answer."
   },
   "51dd5a6a49ccecd8": {
    "verdict": "ok",
@@ -31991,10 +32037,6 @@
    "verdict": "ok",
    "note": "body selfcheck, Sporothrix progression; model answer is the Sporotrichosis section's second paragraph verbatim in substance; hash changed after the checker's concern 3 split the merged 'nodules...as more lymph nodes' checkpoint into two checkpoints matching the source's two stages | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "529f1ee11278a8ac": {
-   "verdict": "ok",
-   "note": "5x+2=0 at x=-2/5; matches CNXML source answer."
-  },
   "52a2d075ac7ac778": {
    "verdict": "ok",
    "note": "glossary recall: phosphodiesterase — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -32034,6 +32076,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "52b903e872c0384f": {
+   "verdict": "ok",
+   "note": "Numerator 4x^2-1, denominator x^2+x-6, both degree 2; ratio of leading coeffs 4/1=4; matches CNXML Try It 6. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "52b97c2fddd8e561": {
    "verdict": "ok",
@@ -32817,10 +32863,6 @@
     "result": "agrees"
    }
   },
-  "54ee8c6d36dd591a": {
-   "verdict": "ok",
-   "note": "Both degree 1; leading coeffs -2 (from 4-2x) and 3; ratio -2/3; matches CNXML source answer."
-  },
   "54f6a872e5227b86": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -33021,10 +33063,6 @@
     "result": "agrees"
    }
   },
-  "557f0e9a006f1651": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137696700: k=y*cbrt(x)=5*3=15; y=15/cbrt(125)=15/5=3. Verified with node arithmetic; matches CNXML solution."
-  },
   "558b38a78a5c3738": {
    "verdict": "ok",
    "note": "CNXML fs-id1167661745926 (Critical Thinking, source prints no key). Stays a selfcheck: the module never states outright that life depends on photosynthetic carbon fixation, so the answer is assembled (intro paragraph's heterotroph/carbohydrate sentence + § Light-Independent Reactions' carbon-storage sentence). HASH CHANGED (was 01ee3dd4faf17a60): checker defect 6 — model answer's and the matching ===CHECKS=== clause's 'CO2' converted to 'CO₂' together, keeping the rubric clause traceable to the model answer's own words. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -33140,10 +33178,6 @@
   "55bdd77ffb53d975": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "55be7ccc89739995": {
-   "verdict": "ok",
-   "note": "Numerator 4x^2-1, denominator x^2+x-6, both degree 2; ratio of leading coeffs 4/1=4; matches CNXML Try It 6."
   },
   "55c2b00e686b819a": {
    "verdict": "ok",
@@ -33376,10 +33410,6 @@
     "result": "agrees"
    }
   },
-  "56556644ac946793": {
-   "verdict": "ok",
-   "note": "Same function's cancelled factor gives a hole at x=5; reduced value (5+5)/(5*4)=1/2, so (5,1/2); matches CNXML Try It 5."
-  },
   "565589f1c6a3cc20": {
    "verdict": "ok",
    "note": "summary cloze \"electromagnetic radiation spectrum\"; parent added accept \"electromagnetic spectrum\", printed in the body | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -33512,6 +33542,14 @@
    }
   },
   "56ec85c92f133224": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "56f234f29c14de18": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -33674,10 +33712,6 @@
   "5749e96a663f29ea": {
    "verdict": "ok"
   },
-  "574b780633a41dd0": {
-   "verdict": "ok",
-   "note": "Try It 1: ran coefficient-array long division of 16x^3-12x^2+20x-3 by 4x+5 in node (also hand-verified step by step); got quotient 4x^2-8x+15, remainder -78, matching the CNXML solution exactly."
-  },
   "574ca72de7378281": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -33689,6 +33723,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "57505a5741a0f863": {
+   "verdict": "ok",
+   "note": "Practice synthetic-division item 2: ran synthetic division (k=7) on 1,-21,147,-343 in node; quotient x^2-14x+49, remainder 0, matching the CNXML solution (fs-id1165134061948). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "5755673a22192b12": {
    "verdict": "ok",
@@ -34575,10 +34613,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "59a82df1da969f00": {
-   "verdict": "ok",
-   "note": "Re-derived: as x approaches +/-infinity, 1/(x-3)^2 approaches 0, so f(x)=1/(x-3)^2-4 approaches -4; horizontal asymptote y=-4. Hint reconciled to 'reciprocal squared'; answer unchanged."
   },
   "59a87302a13face3": {
    "verdict": "ok",
@@ -35823,6 +35857,10 @@
     "result": "agrees"
    }
   },
+  "5d13e3833415d988": {
+   "verdict": "ok",
+   "note": "Try It 1: ran coefficient-array long division of 16x^3-12x^2+20x-3 by 4x+5 in node (also hand-verified step by step); got quotient 4x^2-8x+15, remainder -78, matching the CNXML solution exactly. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "5d17a1e441cb40ee": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -35857,10 +35895,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "5d35059e9655c495": {
-   "verdict": "ok",
-   "note": "P(6)=6*(-6)=-36 (computed via node); matches CNXML solution product '-36' for fs-id1165134089397."
   },
   "5d3bc54d1dcdb174": {
    "verdict": "ok",
@@ -36147,6 +36181,14 @@
    "note": "glossary recall: atrial natriuretic peptide — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5de8e57970373974": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -36570,10 +36612,6 @@
   "5ed34c1bb01fc080": {
    "verdict": "ok"
   },
-  "5ee13cc7725cc31c": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137731890: k=24*128=3072; length=3072/64=48 inches. Verified with node arithmetic; matches CNXML solution."
-  },
   "5ee42c4fefcbb473": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -36588,6 +36626,10 @@
   },
   "5f0a7b1c26f9d8cf": {
    "verdict": "ok"
+  },
+  "5f0b6c6a368e2efe": {
+   "verdict": "ok",
+   "note": "Cancelled factor (x-1) gives a hole at x=1; reduced value (1+3)/(1+1)=2, so (1,2); matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "5f1d7c02c88f3180": {
    "verdict": "ok",
@@ -37066,6 +37108,10 @@
     "result": "agrees"
    }
   },
+  "60968e199e8f9551": {
+   "verdict": "ok",
+   "note": "Expanded x(4-x^2)(2x+1) by hand and with node: = -2x^4-x^3+8x^2+4x. Highest power is 4. Matches CNXML fs-id1165137742433 (\"Degree = 4\"). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "60973fb4e43e79aa": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -37212,6 +37258,14 @@
     "result": "agrees"
    }
   },
+  "60e313e59dc3df00": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "60ee0af1c7d35cc3": {
    "verdict": "ok",
    "note": "summary-sourced cloze: 'organismal, population, community, and ecosystem' printed verbatim in section.summary; answer 'ecosystem' is the blanked list item, not present elsewhere in prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -37227,6 +37281,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "60f28059e7f1ffbc": {
+   "verdict": "ok",
+   "note": "(6+4i)/i * (-i/-i) = (-6i-4i^2)/(-i^2) = (4-6i)/1 = 4-6i; recomputed independently with node, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "6106578bd41269c3": {
    "verdict": "ok",
@@ -37474,6 +37532,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "61c1aa3317be4b6f": {
+   "verdict": "ok",
+   "note": "Practice (Find zeros). Evaluated 2x^3+7x^2-10x-24 at 2, -4, -1.5 via node: all 0. Matches CNXML solution for fs-id1165134212161 (2, -4, -3/2). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "61c200409e31849a": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"If tissues are transplanted from one area on an individual to another area on the same individual (e.g., a skin graft on a burn patient), i…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -37576,10 +37638,6 @@
   "61f1745f1c1d28d4": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "61f547a40b2011f1": {
-   "verdict": "ok",
-   "note": "Solved y=x^2+1 (x>=0) for x: x=sqrt(y-1), positive root since x>=0, so f^{-1}(x)=sqrt(x-1). Checked f(f^{-1}(x))=(sqrt(x-1))^2+1=x for x>=1. Matches CNXML ti_03_08_03."
   },
   "61f9fda85d575ac4": {
    "verdict": "ok",
@@ -37845,10 +37903,6 @@
     "result": "agrees"
    }
   },
-  "62fed7ea0975830a": {
-   "verdict": "ok",
-   "note": "Try It 2: ran synthetic division (k=-7) on coefficients 3,18,0,-3,40 (0 inserted for the missing x^2 term) in node; got quotient 3x^3-3x^2+21x-150, remainder 1090, matching the CNXML solution's 1,090/(x+7)."
-  },
   "6312421d54908213": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -37966,6 +38020,10 @@
   },
   "637a3791fb60b17a": {
    "verdict": "ok"
+  },
+  "637b1af12424ef5f": {
+   "verdict": "ok",
+   "note": "0.2x^3-1.2x^2+0.6x+2: degree 3 (odd), leading coefficient 0.2 (positive), so as x->-inf f decreases and as x->inf f increases. Matches CNXML ti_03_03_05 solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "6381cbcd46739cf2": {
    "verdict": "ok",
@@ -38162,6 +38220,10 @@
   },
   "6424121dadf3df75": {
    "verdict": "ok"
+  },
+  "642d4519f6e5d123": {
+   "verdict": "ok",
+   "note": "Solved V=(4/3)pi r^3 for r: r^3=3V/(4pi), r=cbrt(3V/(4pi)). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (cbrt(3/(4pi)) * cbrt(V)) -- graded correct, confirming true value equivalence, not just self-identity. Matches CNXML exercise fs-id1165137451866 (Real-World Applications, sphere volume), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "642d8a553dc85ae1": {
    "verdict": "ok",
@@ -38442,10 +38504,6 @@
     "result": "agrees"
    }
   },
-  "6556b057abf8a907": {
-   "verdict": "ok",
-   "note": "a(0) = (0+0-3)/(0-1) = 3, so (0,3); verified by node numeric check and by hand."
-  },
   "655da9809db06f6f": {
    "verdict": "ok"
   },
@@ -38650,6 +38708,10 @@
     "result": "agrees"
    }
   },
+  "65d5d73735e09211": {
+   "verdict": "ok",
+   "note": "Solved y=x^3+5 for x: f^{-1}(x)=cbrt(x-5). Checked composition symbolically (standard cubic/cube-root inverse pair). Matches CNXML exercise fs-id1165137725343 (source #13), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "65dc29b220f19723": {
    "verdict": "ok",
    "note": "key-term recall: petechiae; printed in § Infections of the Circulatory System: \"Although somewhat rare, vasculitis can cause blood vessels to become damaged and rupture; as blood is released, small red or purple spots c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -38774,6 +38836,14 @@
    "note": "KC 5 26.1 § body untitled introduction (fs-idp217794576), m66572 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "66328f85aaf199f2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -38957,6 +39027,14 @@
     "result": "agrees"
    }
   },
+  "66be534f30a618aa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "66be539a7c1004fa": {
    "verdict": "ok",
    "note": "m66671 fs-idp325930864; source solution A = oviparity; matches page key. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -39041,6 +39119,10 @@
     "result": "agrees"
    }
   },
+  "66fdd7bc052810a9": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137658781: k=100/(1*2*5)=10, so y=10xzw. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "6700c3d0e1bd2b63": {
    "verdict": "ok",
    "note": "source exercise fs-id1168327925720 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -39068,10 +39150,6 @@
   "670dbe058c22c03e": {
    "verdict": "ok",
    "note": "latus endpoints (h+p,k+2p)=(9,1) and (h+p,k-2p)=(9,-3); matches source TI4."
-  },
-  "670f9c3012b4e6dd": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165135176447: k=80/4^2=5, so y=5x^2. Verified with node arithmetic; matches CNXML solution."
   },
   "6711bb8a41476238": {
    "verdict": "ok",
@@ -39291,6 +39369,14 @@
    "verdict": "ok",
    "note": "The table above (x=2,4,6,8; f(x)=12,16,20,0) gives f(2)=12, so g(2)=3/4*12=9, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "678c1fbdd5456432": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "678e5adf1a5df519": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -39306,10 +39392,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "67918abcb90bc21d": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137619342: k=16/2^2=4, y=4*8^2=256. Verified with node arithmetic; matches CNXML solution."
   },
   "6799025500f514c8": {
    "verdict": "ok",
@@ -39634,6 +39716,10 @@
     "result": "agrees"
    }
   },
+  "6867207cf382effd": {
+   "verdict": "ok",
+   "note": "Leading term -2x^2, leading coefficient -2. Matches CNXML fs-id1165134380913 (\"Coefficient = -2\"). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "686929be50ae1d8b": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663644101 (options-differ) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -39804,10 +39890,6 @@
     "result": "agrees"
    }
   },
-  "68f834909e0bda7c": {
-   "verdict": "ok",
-   "note": "Denominator x^2-1=(x-1)(x+1) zero at x=±1; domain is R minus {-1,1}; matches CNXML source answer 'All reals x≠-1,1'."
-  },
   "68fc1ad3a10fc4ae": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 6 (Lactobacillus role). Model answer assembled from the lactic-acid, binding-site/nutrient-competition, and hydrogen-peroxide/bacteriocin sentences. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -39901,6 +39983,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "693ae73d37e09f0b": {
+   "verdict": "ok",
+   "note": "Precalculus 3.2 Practice graphplot, re-derived by the parent in the October 4, 2026 chapter 3 re-review: f(x)=x^2-2x is the quadratic a=1, b=-2, c=0 (vertex (1,-1), x-intercepts (0,0) and (2,0), symmetric points (-1,3), (3,3)), all lattice points inside the -7..7 grid; the key {quadratic a=1,b=-2,c=0, plotPoints 3} matches. The answerDisplay no longer prints the vertex the fill-in below asks for."
   },
   "6946051d84526a00": {
    "verdict": "ok",
@@ -40044,6 +40130,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "69dfc2cf11fc8ce7": {
+   "verdict": "ok",
+   "note": "Denominator x^2-1=(x-1)(x+1) zero at x=±1; domain is R minus {-1,1}; matches CNXML source answer 'All reals x≠-1,1'. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "69e2ecd83049725c": {
    "verdict": "ok",
@@ -40269,10 +40359,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "6a715f2f84e44795": {
-   "verdict": "ok",
-   "note": "Recreated graph vertex (2,-3), y-intercept (0,1); expands to x^2-4x+1; matches CNXML solution for fs-id1165134391628, and vertex/y-intercept confirmed against rendered PDF page 272 graph #59."
   },
   "6a73eca7016ac658": {
    "verdict": "ok",
@@ -40957,6 +41043,10 @@
     "result": "agrees"
    }
   },
+  "6cb12c4b7e2837e6": {
+   "verdict": "ok",
+   "note": "Practice (Remainder Theorem). Evaluated 3x^3-2x^2+x-4 at x=-3 via node: -106. Matches CNXML solution for fs-id1165134152708. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "6cbf8ebfc64cebc3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41099,6 +41189,14 @@
   },
   "6d0fac009f79a356": {
    "verdict": "ok"
+  },
+  "6d144813142da33a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6d1da5f47b8d01c0": {
    "verdict": "ok",
@@ -41666,10 +41764,6 @@
   "6e9d8a7d85c6db61": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "6ea2f06f8bac7fa5": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165134047625: k=y*w/(xz)=10*6/15=4, so y=4xz/w. Verified with node arithmetic; matches CNXML solution."
   },
   "6eb0c770d9a0570d": {
    "verdict": "ok",
@@ -42510,6 +42604,14 @@
     "result": "agrees"
    }
   },
+  "70d348258299b072": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "70d35f0647dd86c3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -42656,6 +42758,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "713d1ba5bc2d8d9c": {
+   "verdict": "ok",
+   "note": "Try It 2 (ti_03_09_02): k=x^2*y=9*8=72; y=72/4^2=72/16=9/2. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "713da0bfe6f750eb": {
    "verdict": "ok",
@@ -43377,16 +43483,8 @@
    "verdict": "ok",
    "note": "body CYU4, selfcheck: needs two module facts (RNA polymerase difference + DNA gyrase) assembled, so stays selfcheck per the one-sentence rule | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "73040c8dc9319360": {
-   "verdict": "ok",
-   "note": "Practice (Find zeros). Evaluated 2x^3+7x^2-10x-24 at 2, -4, -1.5 via node: all 0. Matches CNXML solution for fs-id1165134212161 (2, -4, -3/2)."
-  },
   "73042ecb03b05c7b": {
    "verdict": "ok"
-  },
-  "73044f866bdf29c9": {
-   "verdict": "ok",
-   "note": "Computed f(1)=7-9-1=-3 and f(2)=7*32-9*16-4=224-144-4=76 by node arithmetic; matches the sign pattern implied by CNXML ti_03_04_04's solution text (f(1) negative, f(2) positive)."
   },
   "73057f9e4f6b3d7e": {
    "verdict": "ok",
@@ -43530,10 +43628,6 @@
     "result": "agrees"
    }
   },
-  "73741eea1ef9100b": {
-   "verdict": "ok",
-   "note": "f(x)=-5x^4: exponent 4 is even, coefficient -5 is negative, so both ends of f decrease without bound. Matches CNXML ti_03_03_02."
-  },
   "737690c6f980a482": {
    "verdict": "ok"
   },
@@ -43576,6 +43670,14 @@
   "73994b4fb506f65c": {
    "verdict": "ok",
    "note": "source FIB fs-id1167661329857 as textin, key 'capsules'; accept 'capsule' (plural key lists singular) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "739a9b4937f0194b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43798,6 +43900,10 @@
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Sketch the graph of $r=4\\sin(2\\theta)$. What type of curve i)"
   },
+  "742e1dabf8d6b76c": {
+   "verdict": "ok",
+   "note": "A(50)=50*50=2500 sq ft (computed via node vertex k-value 2500); matches same CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "74360c4fb36e5d24": {
    "verdict": "ok"
   },
@@ -43835,10 +43941,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "745a13e0c58caa7f": {
-   "verdict": "ok",
-   "note": "Reduced (x+3)/(x+1), both degree 1, ratio of leading coeffs 1/1=1; matches CNXML source answer."
   },
   "745aa3e3d082f3a6": {
    "verdict": "ok",
@@ -43936,6 +44038,10 @@
     "result": "agrees"
    }
   },
+  "7495a063d3fdc6b4": {
+   "verdict": "ok",
+   "note": "(2+sqrt(-12))/2=(2+2i*sqrt(3))/2=1+i*sqrt(3); recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "7496657b3d57f74b": {
    "verdict": "ok",
    "note": "author-built from § Radiation: \"Ionizing radiation is also used for the sterilization of other types of delicate, heat-sensitive materials used clinically, including tissu…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44030,10 +44136,6 @@
     "result": "agrees"
    }
   },
-  "74bca2b67f5283ce": {
-   "verdict": "ok",
-   "note": "Numerator/denominator both degree 2, leading coeff ratio -4/1=-4; matches CNXML Try It 7 (also matches the pre-combination form's y=-4 shift)."
-  },
   "74bf001e13a2dcdf": {
    "verdict": "ok",
    "note": "author-built from § Genetic Maps: \"In 1931, Barbara McClintock and Harriet Creighton demonstrated the crossover of homologous chromosomes in corn plants.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -44088,6 +44190,10 @@
   "74cb9dba83dc2968": {
    "verdict": "ok",
    "note": "51/22 = 2.318181...; only the '3 does not repeat, then 18 repeats' option names that number. 2.318, 2.318318..., 2.38181... are all different numbers. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "74cfa6d236389769": {
+   "verdict": "ok",
+   "note": "Try It 3 (ti_03_09_03): k=40*2/4^2=5; x=5*10^2/25=500/25=20. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "74cfbf5c064761a9": {
    "verdict": "ok",
@@ -44284,6 +44390,10 @@
     "result": "agrees"
    }
   },
+  "7546d136f58272c1": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137696700: k=y*cbrt(x)=5*3=15; y=15/cbrt(125)=15/5=3. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "75480a22f3c58bf3": {
    "verdict": "ok",
    "note": "KC 1 2.1 § Electromagnetic Spectrum and Color, m58785",
@@ -44407,6 +44517,10 @@
   "759ea5beebb1d109": {
    "verdict": "ok",
    "note": "Same ellipse: a^2=49,b^2=16, major axis y, c^2=33,c=sqrt33; foci (0,+-sqrt33); matches CNXML fs-id1229749."
+  },
+  "75a246def219e094": {
+   "verdict": "ok",
+   "note": "P(x)=x(x-12), vertex at x=6 giving numbers 6 and -6 (computed via node); matches CNXML solution numbers for fs-id1165134089397 (source's internal 'maximize f(x)=x^2+12x' annotation is a separate defect noted in the report, not reproduced on the page). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "75ac5281e5d3e6d9": {
    "verdict": "ok",
@@ -44669,6 +44783,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "7633c72d53519af9": {
+   "verdict": "ok",
+   "note": "5x+2=0 at x=-2/5; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "7633edfb79aabdab": {
    "verdict": "ok",
@@ -45284,9 +45402,9 @@
     "result": "agrees"
    }
   },
-  "77c1fe4e3d0e02ea": {
+  "77c610ac6d63175c": {
    "verdict": "ok",
-   "note": "Both numerator and denominator expand to degree 3 with leading coefficient 1; ratio 1/1=1; matches CNXML source answer."
+   "note": "2x^2 * 4x^3 = (2*4)x^(2+3) = 8x^5 (sympy expand; at x=2 the product is 256, matching 8x^5=256 and not 8x^4=128). f is a single term with a variable base at a fixed power, so it is the power function; g is a sum of three terms and h is a quotient. Exponent corrected from the source's 8x^4 (upstream errata #43, m49346 fs-id1165134312227). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "77c8292d2f9a6ce8": {
    "verdict": "ok"
@@ -45556,10 +45674,6 @@
   "78987006a22b90fd": {
    "verdict": "ok",
    "note": "|12-5i| = sqrt(12^2+5^2) = sqrt(169) = 13."
-  },
-  "789bb9de62cc297c": {
-   "verdict": "ok",
-   "note": "Already standard form a=2>0, k=8/11, so range f(x)>=8/11; matches CNXML."
   },
   "78a271238fd2bec6": {
    "verdict": "ok",
@@ -46062,10 +46176,6 @@
   "79cd93e7139d9203": {
    "verdict": "ok"
   },
-  "79d3809f59135b0f": {
-   "verdict": "ok",
-   "note": "Restored general-form half of ti_03_02_02 (CNXML: g(x)=13+x^2-6x) as multiplechoice, since no answerForm token restricts term order. General form x^2-6x+13 matches CNXML solution; distractors are the printed span itself, another mis-ordering (-6x+x^2+13), and the standard/vertex form (x-3)^2+4 already used as the adjacent fillin's answer."
-  },
   "79d6d8e0dcca4b93": {
    "verdict": "ok",
    "note": "m66405 glossary term 'bipolar neuron' — meaning 'neuron with two processes extending from the cell body, typically in opposite directions'. No departure.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -46168,6 +46278,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7a0807270130cd0f": {
+   "verdict": "ok",
+   "note": "(-1+2i)(-2+3i)=2-3i-4i+6i^2=2-7i-6=-4-7i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "7a0b11583ec2b377": {
    "verdict": "ok",
@@ -46366,6 +46480,10 @@
     "result": "agrees"
    }
   },
+  "7a596c5b7ad5e616": {
+   "verdict": "ok",
+   "note": "Practice (Rational Zero Theorem list). Constant term 5 (factors +-1,+-5), leading coeff 2 (factors +-1,+-2) give candidates +-1,+-5,+-1/2,+-5/2. Matches CNXML solution for fs-id1165135486016. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "7a5a6665ea649d90": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -46469,10 +46587,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "7aac334a506d7948": {
-   "verdict": "ok",
-   "note": "Practice (Find zeros). Evaluated 6x^3-7x^2+1 at 1, 0.5, -1/3 via node: all 0. Matches CNXML solution for fs-id1165135353055 (1, 1/2, -1/3)."
   },
   "7aadf51ffb7a046a": {
    "verdict": "ok",
@@ -47233,6 +47347,14 @@
     "result": "agrees"
    }
   },
+  "7c47807fe0998ac6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7c47df620a933acc": {
    "verdict": "ok",
    "note": "Reviewed 2026-08-15: 'Quadratic Formula' is a defensible choice of METHOD, not a wrong answer. The discriminant is a perfect square, but a leading coefficient of 14 makes AC-method factoring non-trivial, and the hint is hedged ('consider whether factoring would be quick'). | carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -47530,6 +47652,14 @@
     "result": "agrees"
    }
   },
+  "7cf03a2289aaa99f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7cf03aed8c6a2aec": {
    "verdict": "ok",
    "note": "Critical Thinking eip-45 (bread powering legs): model answer is the source solution verbatim; checkpoints decompose its five clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -47768,10 +47898,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7d72e4112735e3bb": {
-   "verdict": "ok",
-   "note": "Matches CNXML ti_03_04_05 solution f(x)=-1/8(x-2)^3(x+1)^2(x-4) verbatim; independently confirmed the figure's marked intercepts (-1,0),(2,0),(4,0) and y-intercept (0,-4) all satisfy this formula by node evaluation of the expanded coefficients."
   },
   "7d84b3a3568ae938": {
    "verdict": "ok",
@@ -48460,10 +48586,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "7f54c27f2d1715e5": {
-   "verdict": "ok",
-   "note": "Computed with node: Math.cbrt(3*200/(4*Math.PI)) = 3.6278...; rounds to 3.63, matching the question's 'rounded to the nearest hundredth' instruction and the CNXML solution's stated '3.63 feet'."
-  },
   "7f57dd43c5308dd4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48925,6 +49047,10 @@
     "result": "agrees"
    }
   },
+  "8085852839a55c30": {
+   "verdict": "ok",
+   "note": "Same function's cancelled factor gives a hole at x=5; reduced value (5+5)/(5*4)=1/2, so (5,1/2); matches CNXML Try It 5. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "808cf7c0901ae454": {
    "verdict": "ok",
    "note": "4x^2+y^2-24x+2y+21=0: complete the square, 4(x-3)^2-36+(y+1)^2-1+21=0 -> 4(x-3)^2+(y+1)^2=16 -> (x-3)^2/4+(y+1)^2/16=1; matches CNXML fs-id1388898; replayed printed general form through checkAnswer with form:conic-standard-form -> reports form."
@@ -49265,10 +49391,6 @@
    "verdict": "ok",
    "note": "KC 2 8.1 § body untitled intro paragraph (fs-idm88222304), m66473 — parent re-read against the module"
   },
-  "81b29506fcd0021a": {
-   "verdict": "ok",
-   "note": "Independently derived: 1/x^2 is even, so both sides of x=0 go to +inf and both tails go to 0; matches CNXML Try It 1."
-  },
   "81b6bf4707effdb0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49578,6 +49700,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "827be3bd4518c6cf": {
+   "verdict": "ok",
+   "note": "Leading term (the term with the highest power, 6) is -x^6. Matches CNXML ti_03_03_03. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "8287249abf4d9451": {
    "verdict": "ok",
@@ -50161,10 +50287,6 @@
    "verdict": "ok",
    "note": "cosecant is odd: csc(-x)=-csc(x)=-(-5)=5; matches source's printed solution."
   },
-  "83fbcd639f17998c": {
-   "verdict": "ok",
-   "note": "x^2+4x+4=(x+2)^2, so f(x)=x^2(x+2)^2 has zero 0 (mult 2) and -2 (mult 2). Matches CNXML fs-id1165135525889 solution."
-  },
   "83fc86ab7987485c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50221,15 +50343,15 @@
     "result": "agrees"
    }
   },
+  "84250c2410f74550": {
+   "verdict": "ok",
+   "note": "sqrt(-9)+3*sqrt(-16)=3i+3*4i=3i+12i=15i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "842acff09fd8558e": {
    "verdict": "ok"
   },
   "842c4c102784f230": {
    "verdict": "ok"
-  },
-  "843294bbbe8e9a6c": {
-   "verdict": "ok",
-   "note": "Practice (Linear Factorization Theorem). Source text 'Real roots: -1, 1 (with multiplicity 2 and 1)' means -1 has multiplicity 2: base polynomial (x+1)^2(x-1)=x^3+x^2-x-1. Computed base(2)=9 via node; a=4/9=0.444..., matching CNXML solution f(x)=4/9(x^3+x^2-x-1) for fs-id1165135538724 exactly."
   },
   "843bf4aed0b85209": {
    "verdict": "ok",
@@ -50306,6 +50428,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8453de01e1c21624": {
+   "verdict": "ok",
+   "note": "i = 0+1i, ordered pair (0,1); source solution is an image confirming the plotted point i, coordinates derived independently. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "84550fa5c288b48d": {
    "verdict": "ok",
@@ -50438,6 +50564,14 @@
    }
   },
   "84a7f1de8ca47d9c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "84a7f59e6a3b7dc3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -50822,6 +50956,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "858d69a431d723fe": {
+   "verdict": "ok",
+   "note": "a(0) = (0+0-3)/(0-1) = 3, so (0,3); verified by node numeric check and by hand. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "858dab08bdf932c5": {
    "verdict": "ok",
@@ -52140,10 +52278,6 @@
     "result": "agrees"
    }
   },
-  "8978c36e7b4fe470": {
-   "verdict": "ok",
-   "note": "4-sided corral, perimeter 200: A(x)=x(100-x), vertex at x=50 (computed via node); matches CNXML solution for fs-id1165131857392 ('50 feet by 50 feet')."
-  },
   "897a31fcc75a66fc": {
    "verdict": "ok",
    "note": "glossary recall: charophyte (fs-idm66561584) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -52167,10 +52301,6 @@
     "by": "fable-blind-solver",
     "result": "agrees"
    }
-  },
-  "89921b487b379621": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137447334: k=x^2*y=9*2=18, so y=18/x^2. Verified with node arithmetic; matches CNXML solution."
   },
   "8996e6bf5fab9b49": {
    "verdict": "ok",
@@ -52234,10 +52364,6 @@
     "by": "fable-blind-solver",
     "result": "agrees"
    }
-  },
-  "89cbedd9c3e3b65b": {
-   "verdict": "ok",
-   "note": "From the same expansion, -2x^4-x^3+8x^2+4x, the leading coefficient is -2. Matches CNXML fs-id1165137742433 (\"Coefficient = -2\")."
   },
   "89d4956867050988": {
    "verdict": "ok"
@@ -52334,6 +52460,10 @@
    "verdict": "ok",
    "note": "body CYU, selfcheck; model answer assembled from § Termination. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "8a12eca535cc178e": {
+   "verdict": "ok",
+   "note": "Re-derived: as x approaches +/-infinity, 1/(x-3)^2 approaches 0, so f(x)=1/(x-3)^2-4 approaches -4; horizontal asymptote y=-4. Hint reconciled to 'reciprocal squared'; answer unchanged. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "8a1627d6dcfb6182": {
    "verdict": "ok",
    "note": "Critical Thinking eip-409/eip-79 (HDAC9): question and solution transcribed verbatim as model answer; checkpoints are literal substrings of the model answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -52395,10 +52525,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "8a3d9a4c6510569d": {
-   "verdict": "ok",
-   "note": "Practice (Factor Theorem). Evaluated 2x^3+x^2-5x+2 at -2, 1, 0.5 via node: all 0. Matches CNXML solution for fs-id1165135349107 (-2, 1, 1/2)."
   },
   "8a468808faf7668a": {
    "verdict": "ok"
@@ -53195,10 +53321,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "8c527830bb941765": {
-   "verdict": "ok",
-   "note": "Computed by hand: 1200+20*12=1440 first-years, 1500-15*12=1320 second-years, ratio 1440/1320=12/11; matches CNXML Try It 3."
   },
   "8c56c54096c9d6cb": {
    "verdict": "ok",
@@ -55330,6 +55452,14 @@
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=2\\theta$ for symmetry. Which symmetries)"
   },
+  "9218f43b279c46eb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "921c6dad3dfeade2": {
    "verdict": "ok"
   },
@@ -55696,10 +55826,6 @@
     "result": "agrees"
    }
   },
-  "92ec352cd089e3fa": {
-   "verdict": "ok",
-   "note": "1/(x-3)^2-4 combined over a common denominator: [1-4(x-3)^2]/(x-3)^2 = (-4x^2+24x-35)/(x^2-6x+9); expanded and checked by hand; matches CNXML Try It 7."
-  },
   "92f2368eae87ef0e": {
    "verdict": "ok",
    "note": "cotangent is odd: cot(-t)=-cot(t)=-√3"
@@ -55723,10 +55849,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "930fb95aa353ffe6": {
-   "verdict": "ok",
-   "note": "Try It 4. Evaluated f(x)=2x^3+5x^2-11x+4 at -4, 1/2, 1 via node: all equal 0. Matches CNXML ti_03_06_04 solution (-4, 1/2, 1)."
   },
   "931cbdc29c4f7f6f": {
    "verdict": "ok",
@@ -56308,10 +56430,6 @@
     "result": "agrees"
    }
   },
-  "94964abb930c0e86": {
-   "verdict": "ok",
-   "note": "Direct application of the section's own Graphical-Behavior note (touch = even multiplicity); matches CNXML Verbal fs-id1165135621844 solution (\"factor raised to an even power\")."
-  },
   "94a3e93bd58feb4f": {
    "verdict": "ok",
    "note": "unkeyed Short Answer fs-id1167661539049, kept as selfcheck (not graded) because its fact — LPS outer membrane / polymyxins — duplicates the CYU3 graded item; model answer traces to the polymyxin paragraph. Reworded post-checker to drop the unsupported 'unique to gram-negative bacteria' framing (hash changed from f37420f68dee7752) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -56368,10 +56486,6 @@
     "result": "agrees"
    }
   },
-  "94c0bef2aa017bb6": {
-   "verdict": "ok",
-   "note": "(x-1)(x+3)(x-5)/[(x+2)^2(x-4)] has no common factors; VA at x=-2,4; matches CNXML source answer."
-  },
   "94c1923f3493a5a5": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -56403,10 +56517,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "94c9ef816a42ca2e": {
-   "verdict": "ok",
-   "note": "Practice (Linear Factorization Theorem). Base polynomial x(x+1/2)(x-1/2)=x^3-x/4; computed base(-2)=-7.5 via node; a=6/-7.5=-0.8=-4/5, matching CNXML solution f(x)=-1/5(4x^3-x) for fs-id1165135205845 exactly (-4/5 x^3 + 1/5 x)."
   },
   "94cc1d554ebeecc8": {
    "verdict": "ok",
@@ -56499,6 +56609,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "94f4c54d8865f412": {
+   "verdict": "ok",
+   "note": "(5-2i)(3i)=15i-6i^2=15i+6=6+15i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "94f6e7f483314bff": {
    "verdict": "ok",
@@ -56654,6 +56768,10 @@
   "954d83cd5f42b3a6": {
    "verdict": "ok",
    "note": "TI6a: f(x)=x^3-3x, f(1)=1-3=-2 by direct substitution. Matches source Try It solution's first value (-2)."
+  },
+  "95505c26ca223abf": {
+   "verdict": "ok",
+   "note": "Try It 6. Computed sign changes via node: f(x)=2x^4-10x^3+11x^2-15x+12 has coefficient signs +,-,+,-,+ = 4 sign changes (4,2,or 0 positive); f(-x)=2x^4+10x^3+11x^2+15x+12 has all-positive coefficients = 0 sign changes (0 negative). Matches CNXML ti_03_06_06 solution ('4, 2, or 0 positive real roots and 0 negative real roots'). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "9553fe5b324d180c": {
    "verdict": "ok",
@@ -57032,6 +57150,14 @@
    "verdict": "ok",
    "note": "Point-slope from (2,5), m=-1/3: y-5=(-1/3)(x-2) => y = 17/3 - x/3, a non-terminating intercept written to full double precision as slope -0.3333333333333333, intercept 5.666666666666667 (matches authored values). On the -7..7/-7..7 grid with snap 1, y is an integer only when x ≡ 2 (mod 3); candidates x=-7,-4,-1,2,5,8 within [-7,7] narrow to x=-7 (y=8, off-grid), x=-4 (y=7), x=-1 (y=6), x=2 (y=5), x=5 (y=4), x=8 (off-grid). Four lattice points are reachable — (-4,7), (-1,6), (2,5), (5,4) — comfortably above the required plotPoints:3. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "967372da579e1481": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "967cd97cb9fff583": {
    "verdict": "ok"
   },
@@ -57149,10 +57275,6 @@
     "result": "agrees"
    }
   },
-  "96c337f54fdb6a67": {
-   "verdict": "ok",
-   "note": "Try It 3: ran synthetic division (k=-6) on coefficients 3,14,-23,6 in node; got quotient 3x^2-4x+1, remainder 0, matching the CNXML solution."
-  },
   "96c3ce1227c23202": {
    "verdict": "ok"
   },
@@ -57183,10 +57305,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "96e36327832ed670": {
-   "verdict": "ok",
-   "note": "Practice (real-world). Solved (w+1)*w*(w-1)=86.625 via node scan: w=4.5 gives 86.625 exactly, so width=4.5, length=5.5, height=3.5. Matches CNXML solution for fs-id1165134043625 ('5.5 by 4.5 by 3.5 inches', length-width-height order stated explicitly in the question)."
   },
   "96ef0cb6d1ac22c5": {
    "verdict": "ok",
@@ -57534,10 +57652,6 @@
     "result": "agrees"
    }
   },
-  "97d5943efd34b348": {
-   "verdict": "ok",
-   "note": "Try It 1 (ti_03_09_01): k=y/x^2=24/9=8/3; y=(8/3)(4^2)=128/3. Verified with node arithmetic; matches CNXML solution."
-  },
   "97d88f909d20d6fb": {
    "verdict": "ok",
    "note": "25.2 CT selfcheck; Sep 23 2026 close-out: hint replaced with a location; tick-removal sentence and rubric line 2 now give only the module's stated reasons (chemicals: release fluid, increase chance of infection; crushing: could release bacterial pathogens), hot objects dropped; model answer, rubric, and hint re-read against the module"
@@ -57746,14 +57860,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "98777aeeecc640f5": {
-   "verdict": "ok",
-   "note": "Practice (Rational Zero Theorem list). Constant term 1 (factors +-1), leading coeff 6 (factors +-1,+-2,+-3,+-6) give candidates +-1,+-1/2,+-1/3,+-1/6. Matches CNXML solution for fs-id1165132920307."
-  },
-  "988776c4eb4e9bc9": {
-   "verdict": "ok",
-   "note": "Expanded 0.2(x-2)(x+1)(x-5) by hand and with node: (x-2)(x+1)(x-5)=x^3-6x^2+3x+10, times 0.2 = 0.2x^3-1.2x^2+0.6x+2. Matches CNXML ti_03_03_09's y-intercept check (f(0)=2). Replayed the printed factored subject through checkAnswer with form:\"expanded\" -- it returns \"form\" (rejected), and the authored expanded answer self-grades \"correct\"."
   },
   "98886ac8cff19f9e": {
    "verdict": "ok",
@@ -58526,6 +58632,10 @@
    "verdict": "ok",
    "note": "Try It 14: log_5(100)=ln(100)/ln(5)=2.8613531... (node), rounds to 2.861, matching the CNXML solution's own rounding (4.6051/1.6094=2.861)."
   },
+  "9abb1de493eaf5be": {
+   "verdict": "ok",
+   "note": "x^4: even exponent, coefficient +1 (positive) -> both ends increase without bound. Matches CNXML fs-id1165137455119. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "9ac0e92706e132bb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58780,6 +58890,10 @@
     "result": "agrees"
    }
   },
+  "9b87e8e96a4f96fe": {
+   "verdict": "ok",
+   "note": "f(8-i)=2(8-i)^2-3(8-i)=2(63-16i)-24+3i=126-32i-24+3i=102-29i; recomputed independently with node, matches CNXML ti_03_01_06. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "9b8d9ef5975e5014": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58984,6 +59098,10 @@
     "result": "agrees"
    }
   },
+  "9c54e441da8d6456": {
+   "verdict": "ok",
+   "note": "w(0) = (-1)(3)(-5) / [(2)^2(-4)] = 15/-16 = -15/16, so (0,-15/16); verified by node numeric check (-0.9375) and matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "9c569dd9f9b76caa": {
    "verdict": "ok",
    "note": "body cloze from § Dilution Tests: \"The MIC assay can also be performed using 96-well microdilution trays, which allow for the use of small volumes and automated dispensing de…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -59055,10 +59173,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "9c6d9568a91eccec": {
-   "verdict": "ok",
-   "note": "Expanded g(x)=(x+4)(x-1)^2 by node: leading term coefficient of x^3 is +1, so as x->infinity g(x)->infinity; confirmed numerically (g(100) is large and positive). Matches CNXML fs-id1165134328240 solution."
   },
   "9c6f9b1caaaeafcc": {
    "verdict": "ok",
@@ -59472,6 +59586,10 @@
     "result": "agrees"
    }
   },
+  "9d5e725d2b5eed97": {
+   "verdict": "ok",
+   "note": "Try It 4. Evaluated f(x)=2x^3+5x^2-11x+4 at -4, 1/2, 1 via node: all equal 0. Matches CNXML ti_03_06_04 solution (-4, 1/2, 1). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "9d62a7fc3c635f86": {
    "verdict": "ok",
    "note": "KC 2 7.5 § body, m58817 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -59538,6 +59656,14 @@
   "9da713ec155f5159": {
    "verdict": "ok",
    "note": "Microbiology 11.2 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Elongation primer-removal sentence (DNA pol I exonuclease))"
+  },
+  "9da8126c9c3c8610": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9daafaae41c9afb7": {
    "verdict": "ok",
@@ -59775,10 +59901,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "9e4459561d60f233": {
-   "verdict": "ok",
-   "note": "Practice (Descartes). Sign changes of 2x^3+37x^2+200x+300 (all positive): 0 changes (0 positive); f(-x)=-2x^3+37x^2-200x+300 (signs -,+,-,+): 3 changes (3 or 1 negative). Matches CNXML solution for fs-id1165134149873."
   },
   "9e49c5bef1e724ef": {
    "verdict": "ok",
@@ -60296,10 +60418,6 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
-  "9fa74a01e6e4cc41": {
-   "verdict": "ok",
-   "note": "Section exercise fs-id1165137662862: k=16/1^2=16, s=16t^2, 144=16t^2 => t=3 seconds. Verified with node arithmetic; matches CNXML solution. Note: source wording itself reads 'how long for it to fall 144 feet?' (missing 'will it take'), preserved verbatim from CNXML/PDF; not an answer defect."
-  },
   "9fb14a5620c5b527": {
    "verdict": "ok"
   },
@@ -60428,10 +60546,6 @@
   "a0051996d1bf5bf9": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2063200, model answer is the source <solution> verbatim; four CHECKS clauses decompose it with no new claim. Hint reworded (checker finding 3) to drop the literal word \"effector\" (and \"sensor\"), sibling recall items' keys, describing the roles instead. Hash changed from 28d7aee2d38cf48c. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
-  },
-  "a0090e6e18e8657e": {
-   "verdict": "ok",
-   "note": "Practice synthetic-division item 2: ran synthetic division (k=7) on 1,-21,147,-343 in node; quotient x^2-14x+49, remainder 0, matching the CNXML solution (fs-id1165134061948)."
   },
   "a00da61b3b82cbaa": {
    "verdict": "ok",
@@ -60723,10 +60837,6 @@
     "result": "agrees"
    }
   },
-  "a0d119ab96334f68": {
-   "verdict": "ok",
-   "note": "w(0) = (-1)(3)(-5) / [(2)^2(-4)] = 15/-16 = -15/16, so (0,-15/16); verified by node numeric check (-0.9375) and matches CNXML source answer."
-  },
   "a0e10e3143680258": {
    "verdict": "ok",
    "note": "Table (x=1..6; y=46,50,59,75,100,136) has consecutive differences 4,9,16,25,36 — not constant — so the data is 'Nonlinear', matching the declared answer."
@@ -60822,10 +60932,6 @@
    "verdict": "ok",
    "note": "KC 7 35.5 § Autism, m66624 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the retracted autism-vaccine paper sentence, Section 35.5)"
   },
-  "a1344f187493f370": {
-   "verdict": "ok",
-   "note": "Derived linear attendance-price relation from (11,26000),(9,31000), Revenue(p)=p*Q(p), vertex at p=10.7 (computed via node); matches CNXML solution for fs-id1165135449627 ('$10.70')."
-  },
   "a1369cee672520e9": {
    "verdict": "ok",
    "note": "Microbiology 7.2 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the d/l and dexter/laevus paragraph of the previous section and the enantiomeric forms of glucose)"
@@ -60905,10 +61011,6 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
-  },
-  "a15be3c6efaba88b": {
-   "verdict": "ok",
-   "note": "f(2+i)=(2+i)^2+3(2+i)+5=(3+4i)+(6+3i)+5=14+7i; recomputed independently with node, matches CNXML end-of-section answer key."
   },
   "a162f4cc9fdaef89": {
    "verdict": "ok",
@@ -62531,6 +62633,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a505b8b21d07e275": {
+   "verdict": "ok",
+   "note": "f(x)=x^2/(x^2-1) has a variable denominator -- not a single term to a fixed power and not a finite sum of non-negative-integer-power terms, so neither. Matches CNXML fs-id1165135339598 solution \"Neither\". | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "a5068226d1289b03": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62745,10 +62851,6 @@
     "result": "agrees"
    }
   },
-  "a58851382a8a6a27": {
-   "verdict": "ok",
-   "note": "Denominator x^4-5x^2+4=(x^2-1)(x^2-4) zero at x=±1,±2; matches CNXML source answer 'All reals x≠-1,-2,1,2'."
-  },
   "a58854537b4480ee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62764,6 +62866,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a58d441845cfef60": {
+   "verdict": "ok",
+   "note": "General odd-degree, positive-leading-coefficient case behaves like x^3: decreases as x decreases, increases as x increases. Matches CNXML fs-id1165137794232 solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a58dbf54ddba9cf9": {
    "verdict": "ok",
@@ -62897,10 +63003,6 @@
     "result": "agrees"
    }
   },
-  "a5eaadca0aef3690": {
-   "verdict": "ok",
-   "note": "Cancelled factor (x-1) gives a hole at x=1; reduced value (1+3)/(1+1)=2, so (1,2); matches CNXML source answer."
-  },
   "a5f300693a4f9dd1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62948,6 +63050,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a612c0b54beba6e0": {
+   "verdict": "ok",
+   "note": "Practice (real-world). Solved 2w*w*(w+2)=192 via node scan over integer w: w=4 gives 192 exactly, so width=4, length=8, height=6. Matches CNXML solution for fs-id1165134043608 ('8 by 4 by 6 inches', length-width-height order stated explicitly in the question). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a619dcd00744775f": {
    "verdict": "ok"
@@ -63572,6 +63678,14 @@
    "note": "(6-x)/|x-6| as x->6+: x-6>0 so |x-6|=x-6, giving -(x-6)/(x-6)=-1; matches CNXML Try It 9 solution. MC because one-sided notation is unparseable and the answer is graded categorically."
   },
   "a7e8b7ba578bc176": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7e90d8757ca21ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -64207,6 +64321,14 @@
     "result": "agrees"
    }
   },
+  "a95e6eb9773ade49": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a96d033e88485214": {
    "verdict": "ok",
    "note": "KC 5 23.1 § General Signs and Symptoms of Urogenital Infections, m58917 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -64452,6 +64574,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "aa59760963aa436f": {
+   "verdict": "ok",
+   "note": "4-sided corral, perimeter 200: A(x)=x(100-x), vertex at x=50 (computed via node); matches CNXML solution for fs-id1165131857392 ('50 feet by 50 feet'). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "aa63b1dedbb96dd6": {
    "verdict": "ok",
@@ -64927,6 +65053,14 @@
     "result": "agrees"
    }
   },
+  "abb315a0a35aa820": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "abb4d3dc5e2965d6": {
    "verdict": "ok",
    "note": "KC 7 43.1 § Parthenogenesis, m66668 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -65141,6 +65275,10 @@
     "result": "agrees"
    }
   },
+  "ac6d298637897495": {
+   "verdict": "ok",
+   "note": "Practice (real-world). Solved (w+1)*w*(w-1)=86.625 via node scan: w=4.5 gives 86.625 exactly, so width=4.5, length=5.5, height=3.5. Matches CNXML solution for fs-id1165134043625 ('5.5 by 4.5 by 3.5 inches', length-width-height order stated explicitly in the question). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "ac73e1cd25951b7b": {
    "verdict": "ok"
   },
@@ -65329,10 +65467,6 @@
   "acc8978e586984d4": {
    "verdict": "ok",
    "note": "x=-2(y+3)^2+2: vertex (h,k)=(2,-3); y-intercepts (x=0): (y+3)^2=1 -> y=-2,-4 -> (0,-2),(0,-4), re-derived by node and matches CNXML solution image alt text verbatim. Points inside grid -4..4/-7..1, integer lattice."
-  },
-  "acd189c8a2b89760": {
-   "verdict": "ok",
-   "note": "-x^4: even exponent, coefficient -1 (negative) -> both ends decrease without bound. Matches CNXML fs-id1165137678592."
   },
   "acd6e7697d0a9036": {
    "verdict": "ok",
@@ -65764,6 +65898,14 @@
     "result": "agrees"
    }
   },
+  "add20acb81cae1ab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "add419a1b343ecc0": {
    "verdict": "ok",
    "note": "Review Question fs-idp147938368, solution C (parabasalids — hydrogenosomes). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -65842,10 +65984,6 @@
   "ae0e73c656fd8acc": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "ae25a5b0f6df3f33": {
-   "verdict": "ok",
-   "note": "Try It 1. Ran synthetic division / Horner evaluation for f(x)=2x^5-3x^4-9x^3+8x^2+2 at x=-3 via node: f(-3)=-412. Matches CNXML ti_03_06_01 solution."
   },
   "ae29098ae428f684": {
    "verdict": "ok",
@@ -66014,6 +66152,10 @@
     "result": "agrees"
    }
   },
+  "ae8bb2bb5d3da466": {
+   "verdict": "ok",
+   "note": "f(0) = (2)^2(-2) / [2(-1)^2(-3)] = -8/-6 = 4/3, so (0,4/3); matches CNXML Try It 8. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "ae8cae5461f0ce43": {
    "verdict": "ok",
    "note": "author-built from § Fungus/Animal Mutualism: \"The scale insects foster a flow of nutrients from the parasitized plant to the fungus.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -66045,10 +66187,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "ae94286c5c096f21": {
-   "verdict": "ok",
-   "note": "Vertex of f(x)=2x^2-10x+4: h=5/2,k=-17/2 (computed via node); matches CNXML solution for fs-id1165133344089 ('Minimum is -17/2... at 5/2')."
   },
   "ae9bedbbf862916e": {
    "verdict": "ok",
@@ -66165,10 +66303,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "aed4e3a9dde80844": {
-   "verdict": "ok",
-   "note": "f(x)=3x^2-5x-1: h=5/6,k=-37/12 (computed via node); matches CNXML solution for fs-id1165135409784."
   },
   "aed7c6428c7d3a41": {
    "verdict": "ok",
@@ -66468,10 +66602,6 @@
     "result": "agrees"
    }
   },
-  "afc1f5439b7aeda6": {
-   "verdict": "ok",
-   "note": "Leading term -2x^2, leading coefficient -2. Matches CNXML fs-id1165134380913 (\"Coefficient = -2\")."
-  },
   "afc220e62ada059f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66535,6 +66665,10 @@
   "afd77e5473824fca": {
    "verdict": "ok",
    "note": "tangent is odd: tan(-x)=-tan(x)=-(-1.5)=1.5; matches source's printed solution."
+  },
+  "afdcae78191a75e1": {
+   "verdict": "ok",
+   "note": "Expanded 0.2(x-2)(x+1)(x-5) by hand and with node: (x-2)(x+1)(x-5)=x^3-6x^2+3x+10, times 0.2 = 0.2x^3-1.2x^2+0.6x+2. Matches CNXML ti_03_03_09's y-intercept check (f(0)=2). Replayed the printed factored subject through checkAnswer with form:\"expanded\" -- it returns \"form\" (rejected), and the authored expanded answer self-grades \"correct\". | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "afde6fef7031f9c9": {
    "verdict": "ok",
@@ -66740,10 +66874,6 @@
     "result": "agrees"
    }
   },
-  "b075b3dd40bf8083": {
-   "verdict": "ok",
-   "note": "Practice (real-world). Solved 2w*w*(w+2)=192 via node scan over integer w: w=4 gives 192 exactly, so width=4, length=8, height=6. Matches CNXML solution for fs-id1165134043608 ('8 by 4 by 6 inches', length-width-height order stated explicitly in the question)."
-  },
   "b0798cd24e63d913": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Although the body can respond to high temperatures by sweating and to low temperatures by shivering and increased fuel consumption, long-te…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -66867,6 +66997,10 @@
   },
   "b0ca612f024ccad3": {
    "verdict": "ok"
+  },
+  "b0cbbddd897d6694": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137619342: k=16/2^2=4, y=4*8^2=256. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "b0cbccd8ce302d62": {
    "verdict": "ok"
@@ -67377,10 +67511,6 @@
     "result": "agrees"
    }
   },
-  "b2222c20ff9303f2": {
-   "verdict": "ok",
-   "note": "Figure built by me from 0.02*(x+5)^3(x+1)^2(x-3)^2, chosen exactly to match the CNXML ti_03_04_02 solution (-5 mult 3, -1 mult 2, 3 mult 2, sum=7=degree); verified by node evaluation that the curve touches at -1 and 3 and crosses while flattening at -5."
-  },
   "b22e3fbf86de7423": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1451790 (m66478) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -67523,6 +67653,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b271dbfb7eb8cec7": {
+   "verdict": "ok",
+   "note": "(3-4i)-(2+5i) = (3-2)+(-4-5)i = 1-9i; recomputed independently, matches CNXML ti_03_01_03. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "b27625c5df05d270": {
    "verdict": "ok",
@@ -67846,10 +67980,6 @@
   "b3416b01888bd188": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 777): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
-  },
-  "b346b1098464c1aa": {
-   "verdict": "ok",
-   "note": "(3+4i)/(2-i)*(2+i)/(2+i)=(6+3i+8i+4i^2)/(4+1)=(2+11i)/5=2/5+11/5 i; recomputed independently with node, matches CNXML end-of-section answer key; also cross-checked that the single-fraction form (2+11i)/5 grades equal to the authored 2/5+11/5 i via check-answer.mjs."
   },
   "b347b58d3e8b2179": {
    "verdict": "ok",
@@ -68348,6 +68478,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b4921777c38358f7": {
+   "verdict": "ok",
+   "note": "Practice (Factor Theorem). Evaluated 2x^3+5x^2-12x-30 at -2.5, sqrt(6), -sqrt(6) via node: all 0 (within float tolerance). Matches CNXML solution for fs-id1165135453082 (-5/2, sqrt6, -sqrt6). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b4940e0e3ac4609c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68524,6 +68658,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b4fcbd500af61c0b": {
+   "verdict": "ok",
+   "note": "Practice (Find zeros). Confirmed f(2)=0 for x^3-8x^2+25x-26 via node; dividing by (x-2) leaves x^2-6x+13 with discriminant 36-52=-16, roots 3+-2i. Matches CNXML solution for fs-id1165132940010 (2, 3+2i, 3-2i). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "b50132beabd9c858": {
    "verdict": "ok",
@@ -68807,6 +68945,10 @@
     "result": "agrees"
    }
   },
+  "b59ff81c7630290a": {
+   "verdict": "ok",
+   "note": "P(6)=6*(-6)=-36 (computed via node); matches CNXML solution product '-36' for fs-id1165134089397. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b5a0a7f86a21a759": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68890,10 +69032,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b5eb61f158da0516": {
-   "verdict": "ok",
-   "note": "Practice (Find zeros). Confirmed f(2)=0 for x^3-8x^2+25x-26 via node; dividing by (x-2) leaves x^2-6x+13 with discriminant 36-52=-16, roots 3+-2i. Matches CNXML solution for fs-id1165132940010 (2, 3+2i, 3-2i)."
   },
   "b5ebc4de9e4cda0b": {
    "verdict": "ok",
@@ -69945,6 +70083,10 @@
     "result": "agrees"
    }
   },
+  "b8866e5ad7176c0b": {
+   "verdict": "ok",
+   "note": "H(3)=-16*9+96*3+112=256 (computed via node); matches CNXML solution '256 feet'. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b8888bbad1359833": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69964,6 +70106,14 @@
   "b88cfaec4afa38cd": {
    "verdict": "ok",
    "note": "ref angle 45deg QIV, sec positive -> sqrt2; numeric 1/cos(315deg)=1.41421; key p1325 #31"
+  },
+  "b88ec74ec17c5b12": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b88fc3a9a8e9acfb": {
    "verdict": "ok",
@@ -70257,6 +70407,10 @@
     "result": "agrees"
    }
   },
+  "b96f07b340a1f414": {
+   "verdict": "ok",
+   "note": "Solved y=(x+1)^2-3 (x>=-1) for x: x=-1+sqrt(y+3) (positive root since x+1>=0), so f^{-1}(x)=sqrt(x+3)-1. Matches CNXML exercise fs-id1165137405850 (source #7), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b9740ec9ff723bf6": {
    "verdict": "ok",
    "note": "key-term recall: photolyase; printed in § Repair of Thymine Dimers: \"An enzyme called photolyase recognizes the distortion in the DNA helix caused by the thymine dimer and binds to the dimer.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -70501,10 +70655,6 @@
   "ba3ae49b617fd74c": {
    "verdict": "ok"
   },
-  "ba3e57f004218fc6": {
-   "verdict": "ok",
-   "note": "General odd-degree, positive-leading-coefficient case behaves like x^3: decreases as x decreases, increases as x increases. Matches CNXML fs-id1165137794232 solution."
-  },
   "ba41697b3db118ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70734,10 +70884,6 @@
   "bb02d0a77b9d6994": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "bb030e96a5c53337": {
-   "verdict": "ok",
-   "note": "Axis of symmetry x=5/2 for f(x)=x^2-5x-6."
   },
   "bb04192f350297ea": {
    "verdict": "ok",
@@ -71312,10 +71458,6 @@
     "result": "agrees"
    }
   },
-  "bc4fd3d5089e52bd": {
-   "verdict": "ok",
-   "note": "f(x)=a(x+2)(x-1)(x-3); f(0)=a(2)(-1)(-3)=6a=-4 gives a=-2/3 by node arithmetic. Matches CNXML fs-id1165134347505 solution f(x)=-2/3(x+2)(x-1)(x-3)."
-  },
   "bc5873aef81db5a2": {
    "verdict": "ok",
    "note": "Critical Thinking selfcheck fs-idp108238624; model answer is the CNXML solution verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -71605,6 +71747,10 @@
    "verdict": "ok",
    "note": "Practice item, source exercise fs-id1165134319666. Solved 5x-6y=-61, 4x+3y=-2 via X=A^-1 B in exact rational arithmetic: X=(-5,6). Matches source; verified by substitution into both equations."
   },
+  "bceecfe4b4d7c963": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=x^2-2x: h=1,k=f(1)=-1, so (1,-1); computed via node, matches printed function. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "bcf51b1003aa50cc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71668,6 +71814,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "bd28fa2aef41d538": {
+   "verdict": "ok",
+   "note": "Vertex of h(t)=-4.9t^2+229t+234: k=2909.5612... rounds to 2909.56 (computed via node); matches CNXML solution for fs-id1165135571732. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "bd2fad0869e5468a": {
    "verdict": "ok",
@@ -71758,6 +71908,10 @@
   "bd6377800d6a16c5": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "bd63b1f8a8cfea53": {
+   "verdict": "ok",
+   "note": "Recreated graph vertex (2,7), y-intercept (0,-1); expands to -2x^2+8x-1; matches CNXML solution for fs-id1165135262616, confirmed against rendered PDF page 272 graph #61. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "bd65f41ea6ac0299": {
    "verdict": "ok",
@@ -72110,12 +72264,16 @@
     "note": "the summary sentence blanks 'proteins' ('not all cells... express the same proteins'); 'genes' is the looser reading, key stands per the summary's own word"
    }
   },
+  "be49d3f5e8152287": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "be4dcc8f4d822230": {
    "verdict": "ok"
-  },
-  "be4fba0ba6adb84c": {
-   "verdict": "ok",
-   "note": "Matches CNXML fs-id1165134087640 solution f(x)=-2/9(x-3)(x+1)(x+3) verbatim; independently confirmed f(0)=2 by node evaluation of the expanded coefficients used to draw the figure."
   },
   "be5bf5455a48c0c6": {
    "verdict": "ok",
@@ -72188,6 +72346,10 @@
    "verdict": "ok",
    "note": "Practice #7 (Algebraic): f(x)=-2x+1, f'(x)=-2 by the definition (linear function, constant derivative equal to its slope); confirmed numerically node -2.000000000279556. Matches source exercise 7 solution."
   },
+  "be964f9ecb0ec8e7": {
+   "verdict": "ok",
+   "note": "-x^4: even exponent, coefficient -1 (negative) -> both ends decrease without bound. Matches CNXML fs-id1165137678592. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "be97f41b01767f3f": {
    "verdict": "ok",
    "note": "KC 7 36.2 § body Pain (fs-idm143583024), m66404 — parent re-read against the module"
@@ -72242,10 +72404,6 @@
   "beb41557ffaa41fa": {
    "verdict": "ok"
   },
-  "beb93b3d7182c71c": {
-   "verdict": "ok",
-   "note": "Expanded x(4-x^2)(2x+1) by hand and with node: = -2x^4-x^3+8x^2+4x. Highest power is 4. Matches CNXML fs-id1165137742433 (\"Degree = 4\")."
-  },
   "bebe7a57c0d66096": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72289,10 +72447,6 @@
   "bed091233bd7ecf3": {
    "verdict": "ok",
    "note": "#17 (fs-id2011827): cos45°cos15°=(1/2)[cos30°+cos60°]=(1/2)[(√3/2)+(1/2)]=(1+√3)/4; confirmed numerically (degrees converted to radians explicitly), matches CNXML solution (1/4)(1+√3)."
-  },
-  "bed216cef93b31fa": {
-   "verdict": "ok",
-   "note": "(-1+2i)(-2+3i)=2-3i-4i+6i^2=2-7i-6=-4-7i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "bed5117c6eae962a": {
    "verdict": "ok",
@@ -72457,6 +72611,10 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "bf6016c3e7831728": {
+   "verdict": "ok",
+   "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "bf65b51eb6715144": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -72483,6 +72641,10 @@
   },
   "bf703321fc193959": {
    "verdict": "ok"
+  },
+  "bf70e66ff0918049": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=(x-3)^2+2 is (3,2), a>0, so range [2,infty); matches CNXML solution for fs-id1165135419824. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "bf7300de2dd53a73": {
    "verdict": "ok",
@@ -72642,10 +72804,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "bfc669802926e78f": {
-   "verdict": "ok",
-   "note": "sqrt(-9)+3*sqrt(-16)=3i+3*4i=3i+12i=15i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "bfd016115f8169fa": {
    "verdict": "ok",
@@ -73085,10 +73243,6 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
-  "c0c341375713f7bd": {
-   "verdict": "ok",
-   "note": "Restates the source's own definition (fs-id1165137651029 verbal exercise, CNXML solution): k multiplies the variable (coefficient); p is the highest power (degree)."
-  },
   "c0ca322cfdf9343c": {
    "verdict": "ok",
    "note": "selfcheck: which groups are vulnerable — model answer assembles each organism subsection's own stated group (Hib 2mo-5yr; N. meningitidis infants/adolescents/young adults; S. pneumoniae 2mo-adulthood; S. agalactiae up to 3mo), all traced to this module."
@@ -73392,6 +73546,10 @@
     "result": "agrees"
    }
   },
+  "c1d2bc8c1d0cef94": {
+   "verdict": "ok",
+   "note": "Try It 1. Ran synthetic division / Horner evaluation for f(x)=2x^5-3x^4-9x^3+8x^2+2 at x=-3 via node: f(-3)=-412. Matches CNXML ti_03_06_01 solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "c1de4010e1eacd87": {
    "verdict": "ok",
    "note": "Practice obj2-1b: same ellipse, c^2=16-9=7,c=sqrt7; foci (+-sqrt7,0); matches CNXML fs-id1331349 solution."
@@ -73483,10 +73641,6 @@
     "by": "fable-solver (blind, masked pages)",
     "result": "agrees"
    }
-  },
-  "c22d700b93cc9572": {
-   "verdict": "ok",
-   "note": "P(x)=x(x-12), vertex at x=6 giving numbers 6 and -6 (computed via node); matches CNXML solution numbers for fs-id1165134089397 (source's internal 'maximize f(x)=x^2+12x' annotation is a separate defect noted in the report, not reproduced on the page)."
   },
   "c233d98b0aed476f": {
    "verdict": "ok",
@@ -73654,6 +73808,10 @@
     "result": "agrees"
    }
   },
+  "c2929de2a9ca3635": {
+   "verdict": "ok",
+   "note": "C(t) = sugar/water = (8+2t)/(300+20t) by direct construction from the stated rates; matches CNXML source exercise's given answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "c292d0aaf56c79bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73669,10 +73827,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "c299d20217f6f5a7": {
-   "verdict": "ok",
-   "note": "Practice (Remainder Theorem). Evaluated 3x^3-2x^2+x-4 at x=-3 via node: -106. Matches CNXML solution for fs-id1165134152708."
   },
   "c29d54b6a9b10aa7": {
    "verdict": "ok",
@@ -74157,10 +74311,6 @@
     "result": "agrees"
    }
   },
-  "c40c356ab4eafdbf": {
-   "verdict": "ok",
-   "note": "f^{-1}(2) = 3(2)-5 = 1 by direct substitution into f^{-1}(x)=3x-5, confirming f^{-1}(f(1))=1; matches CNXML ti_03_08_01."
-  },
   "c40c631b83a7a2b2": {
    "verdict": "ok",
    "note": "KC 2 10.3 § § Functions of RNA in Protein Synthesis, m58837",
@@ -74192,6 +74342,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c428907195700c9d": {
+   "verdict": "ok",
+   "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "c4303d5377111cf2": {
    "verdict": "ok",
@@ -74745,6 +74899,10 @@
    "verdict": "ok",
    "note": "selfcheck; model answer and CHECKS from m58895 line 62 (genetic-basis/reversibility sentence) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c54cdba144fadfbd": {
+   "verdict": "ok",
+   "note": "2x^3-6x^2-20x = 2x(x^2-3x-10) = 2x(x-5)(x+2); roots at x=-2,0,5, confirmed by node factoring. Matches CNXML ti_03_03_06. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "c5503718a9f3484a": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -74969,6 +75127,10 @@
     "result": "agrees"
    }
   },
+  "c61895f78693c342": {
+   "verdict": "ok",
+   "note": "Try It 3. Only rational candidates for x^3-5x^2+2x+1 are +-1 (constant/leading coeff both 1); computed f(1)=-1, f(-1)=-7, neither 0, so 0 rational zeros. Matches CNXML ti_03_06_03 solution text 'There are no rational zeros.' | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "c61aeed601f3b65e": {
    "verdict": "ok",
    "note": "m66469 Section Summary: \"The regeneration of NAD+ in fermentation is not accompanied by ATP production.\" Confirms answer \"ATP\". | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -75146,6 +75308,14 @@
    }
   },
   "c6751e976af77adf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c67fb4c6549fcda6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -76149,6 +76319,10 @@
    "verdict": "ok",
    "note": "y = -4x is slope -4 through the origin. Grid widened -7..7 -> -14..14 for plotPoints slack (7 reachable, was exactly 3: only x = -1, 0, 1 fit). | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "c9746b2e09ded7ef": {
+   "verdict": "ok",
+   "note": "Solved y=x^2+1 (x>=0) for x: x=sqrt(y-1), positive root since x>=0, so f^{-1}(x)=sqrt(x-1). Checked f(f^{-1}(x))=(sqrt(x-1))^2+1=x for x>=1. Matches CNXML ti_03_08_03. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "c9781d785045871d": {
    "verdict": "ok",
    "note": "key-term recall: Trichomonas vaginalis; printed in § introduction: \"Trichomoniasis , or “trich,” is the most common nonviral STI and is caused by a flagellated protozoan Trichomonas vaginalis .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -76269,6 +76443,14 @@
   "c9df087de141f7ea": {
    "verdict": "ok",
    "note": "Try It 3: power rule, ln x^2 = 2 ln x. Matches CNXML solution."
+  },
+  "c9e0c35490ff1e0d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c9e73c409579ec3c": {
    "verdict": "ok",
@@ -76728,10 +76910,6 @@
     "result": "agrees"
    }
   },
-  "caf01f55826bb674": {
-   "verdict": "ok",
-   "note": "f(x)=x^2/(x^2-1) has a variable denominator -- not a single term to a fixed power and not a finite sum of non-negative-integer-power terms, so neither. Matches CNXML fs-id1165135339598 solution \"Neither\"."
-  },
   "caf1471b020c81bb": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Pathogens are usually mesophiles.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -77117,10 +77295,6 @@
     "result": "agrees"
    }
   },
-  "cc0dc80dd45d7cc0": {
-   "verdict": "ok",
-   "note": "f(x)=0.2(x-2)(x+1)(x-5): f(0)=0.2*(-2)(1)(-5)=0.2*10=2. Matches CNXML ti_03_03_09."
-  },
   "cc117b4fb056feb0": {
    "verdict": "ok",
    "note": "body cloze from § Producing Polyclonal Antibodies: \"Because most antigens are complex structures with multiple epitopes, they result in the production of multiple antibodies in the lab animal.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -77274,10 +77448,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "cc7ebf37fa66d5f8": {
-   "verdict": "ok",
-   "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03."
   },
   "cc81cb19a3a33e4b": {
    "verdict": "ok",
@@ -77559,6 +77729,10 @@
     "result": "agrees"
    }
   },
+  "cd66ceb3a1dac8e3": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165135176447: k=80/4^2=5, so y=5x^2. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "cd69bdb89a0c6939": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Proteomics approaches rely on protein analysis.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -77622,6 +77796,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "cd87a52b5f15e7b5": {
+   "verdict": "ok",
+   "note": "(3+4i)/(2-i)*(2+i)/(2+i)=(6+3i+8i+4i^2)/(4+1)=(2+11i)/5=2/5+11/5 i; recomputed independently with node, matches CNXML end-of-section answer key; also cross-checked that the single-fraction form (2+11i)/5 grades equal to the authored 2/5+11/5 i via check-answer.mjs. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "cd8e7aa5e3d1787b": {
    "verdict": "ok",
@@ -78123,6 +78301,10 @@
     "result": "agrees"
    }
   },
+  "ceda0270060524be": {
+   "verdict": "ok",
+   "note": "Solved y=cbrt(x+4) by interchanging x,y and cubing: f^{-1}(x)=x^3-4. Checked by composition with node: f(f^{-1}(x))=cbrt((x^3-4)+4)=x and f^{-1}(f(x))=(cbrt(x+4))^3-4=x. Matches CNXML ti_03_08_02. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "cede60f2078e8e68": {
    "verdict": "ok",
    "note": "Glossary recall: intestinal phase, prompt uses glossary meaning verbatim, referent matches keyed term. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -78598,6 +78780,10 @@
     "result": "agrees"
    }
   },
+  "d02c46ebef6742e3": {
+   "verdict": "ok",
+   "note": "Restates the source's own definition (fs-id1165137651029 verbal exercise, CNXML solution): k multiplies the variable (coefficient); p is the highest power (degree). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "d02f22d2a9a54422": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -78605,6 +78791,10 @@
   "d03b022c92f171e9": {
    "verdict": "ok",
    "note": "KC 7 43.4 § The Ovarian Cycle and the Menstrual Cycle, m66674 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the corpus luteum and endometrium sentences of the ovarian-cycle paragraph)"
+  },
+  "d03c853f3a080299": {
+   "verdict": "ok",
+   "note": "Practice long-division item 1 (quotient): ran long division of 3x^2+23x+14 by x+7 in node; quotient 3x+2, remainder 0, matching the CNXML solution (fs-id1165135643143). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d03db8a9d628d9d9": {
    "verdict": "ok",
@@ -78645,10 +78835,6 @@
    "verdict": "ok",
    "note": "Body CYU2b. Model answer is the module's own sentence verbatim: 'Viruses can be transmitted through direct contact, indirect contact with fomites, or through a vector.'"
   },
-  "d068808eea8a5556": {
-   "verdict": "ok",
-   "note": "Figure is a fitted cubic with roots -3,-1,1 and negative leading coefficient (enters top-left, local min, local max, exits bottom-right): 3 x-intercepts, 2 turning points -> odd degree >= 3; end behavior (falls right, rises left) requires negative leading coefficient. Matches CNXML ti_03_03_08 solution exactly."
-  },
   "d06c4d2ca9fb0160": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -78684,10 +78870,6 @@
   "d07be0ee0d6ccc4e": {
    "verdict": "ok",
    "note": "y^2=(1/36)x: 4p=1/36->p=1/144; latus endpoints (p,2p)=(1/144,1/72) and (p,-2p)=(1/144,-1/72); matches source key F:(1/144,0) scaled (2p=1/72 computed directly, node-verified)."
-  },
-  "d081433d042aaee4": {
-   "verdict": "ok",
-   "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer."
   },
   "d0826f1c46d37e94": {
    "verdict": "ok",
@@ -78926,10 +79108,6 @@
   "d11a0ee8976817bc": {
    "verdict": "ok"
   },
-  "d11cdce7b91e78a6": {
-   "verdict": "ok",
-   "note": "With h=12 fixed, V=(1/3)pi r^2(12)=4 pi r^2, so r^2=V/(4pi), r=sqrt(V/(4pi)) (r>=0 physical domain). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (sqrt(V)/sqrt(4pi)) -- graded correct. Matches CNXML exercise fs-id1165135209080 (Real-World Applications, cone volume with 12-inch height), which has a solution."
-  },
   "d126eb5bfb0bb2c2": {
    "verdict": "ok",
    "note": "KC 8 46.2 § body Productivity within Trophic Levels, gross primary productivity definition (fs-idm120555168, glossary fs-idp36350368), m66702 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -79036,6 +79214,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d18965acd7a928ba": {
+   "verdict": "ok",
+   "note": "Positive root of -16t^2+96t+112=0 is t=7 (computed via node quadratic-formula roots [-1,7]); matches CNXML solution '7 seconds'. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d190bad9b8bfd283": {
    "verdict": "ok"
@@ -79176,10 +79358,6 @@
   "d1fd920a0820da6a": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 841): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
-  },
-  "d1ff724a37c70a31": {
-   "verdict": "ok",
-   "note": "Solved y=(3x+4)/(5-4x) for x by cross-multiplying and collecting x terms: x(3+4y)=5y-4 => x=(5y-4)/(4y+3), so f^{-1}(x)=(5x-4)/(4x+3). Verified by node composition f(f^{-1}(x))=x for x=0,1,2,-3,7.5 (exact match). Matches CNXML exercise fs-id1165135333251 (source #27), which has a solution."
   },
   "d200081046aa7c12": {
    "verdict": "ok",
@@ -80106,10 +80284,6 @@
     "result": "agrees"
    }
   },
-  "d493d0484373f8ae": {
-   "verdict": "ok",
-   "note": "f(x)=2x^3-x^2-8x+4 has degree 3; max turning points = 3-1 = 2, by the section's own stated theorem."
-  },
   "d499489f074d34ff": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -80300,6 +80474,10 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
+  },
+  "d507f9eee7eb8249": {
+   "verdict": "ok",
+   "note": "-4-i has real part -4 and imaginary part -1, so the ordered pair is (-4,-1); matches the point named in CNXML ti_03_01_02's solution image alt text. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d5082a7f756f27c9": {
    "verdict": "ok",
@@ -80539,6 +80717,14 @@
    }
   },
   "d5ca8402b0e243c5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d5ccd629fa164f08": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -80917,10 +81103,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d6dfdd78445ab34b": {
-   "verdict": "ok",
-   "note": "Solved y=sqrt(2x+3) for x: x=(y^2-3)/2, y>=0 since original range is f(x)>=0. Checked f(f^{-1}(x))=sqrt(2*(x^2-3)/2+3)=sqrt(x^2)=x for x>=0. Matches CNXML ti_03_08_04 (domain note x>=0 given in answerDisplay)."
   },
   "d6e0cebb67702f0e": {
    "verdict": "ok",
@@ -81566,6 +81748,10 @@
     "result": "agrees"
    }
   },
+  "d88118400b7c38ab": {
+   "verdict": "ok",
+   "note": "Try It 2. Evaluated f(x)=x^3+4x^2-4x-16 at x=2,-2,-4 via node: all equal 0. Matches CNXML ti_03_06_02 solution (zeros 2,-2,-4). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "d885257cb52d9fa2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81669,10 +81855,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d8dd0ed9d7209611": {
-   "verdict": "ok",
-   "note": "The exponent on the factor (2x+3) that produces the zero x=-3/2 is 5, by definition of multiplicity. Matches CNXML fs-id1165134155916 solution."
   },
   "d8debb5c0b0a7b37": {
    "verdict": "ok",
@@ -81954,6 +82136,14 @@
     "result": "agrees"
    }
   },
+  "d9d365951035da32": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d9dc2bd87039dc48": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -82141,6 +82331,10 @@
     "result": "agrees"
    }
   },
+  "da4cc1b7deb5af7d": {
+   "verdict": "ok",
+   "note": "Practice (Remainder Theorem). Evaluated x^4-1 at x=4 via node: 255. Matches CNXML solution for fs-id1165135487281. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "da503b097381d0ff": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -82180,10 +82374,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "da6ea750c259c50b": {
-   "verdict": "ok",
-   "note": "0.2x^3-1.2x^2+0.6x+2: degree 3 (odd), leading coefficient 0.2 (positive), so as x->-inf f decreases and as x->inf f increases. Matches CNXML ti_03_03_05 solution."
   },
   "da7a84e228ac9221": {
    "verdict": "ok",
@@ -82242,10 +82432,6 @@
   },
   "da96d37b3bf435a9": {
    "verdict": "ok"
-  },
-  "da9b6bc9aeac7d0d": {
-   "verdict": "ok",
-   "note": "Factored by grouping: x^2(x+1)-4(x+1)=(x+1)(x^2-4)=(x+1)(x-2)(x+2); zeros -1,2,-2, verified by node substitution (all give 0). Matches CNXML fs-id1165134060477 solution (2,0),(-2,0),(-1,0)."
   },
   "da9cc48341e83700": {
    "verdict": "ok",
@@ -82457,10 +82643,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "daf8fa73e3a4529a": {
-   "verdict": "ok",
-   "note": "2x^3-6x^2-20x = 2x(x^2-3x-10) = 2x(x-5)(x+2); roots at x=-2,0,5, confirmed by node factoring. Matches CNXML ti_03_03_06."
   },
   "dafcc1ae1f4d4e75": {
    "verdict": "ok",
@@ -82883,10 +83065,6 @@
     "result": "agrees"
    }
   },
-  "dc2604cd99652674": {
-   "verdict": "ok",
-   "note": "f(x)=a(x+3)(x+2)(x-1); f(0)=a(3)(2)(-1)=-6a=12 gives a=-2 by node arithmetic. Matches CNXML fs-id1165135522143 solution f(x)=-2(x+3)(x+2)(x-1)."
-  },
   "dc39df9ea46cdf1a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -83206,10 +83384,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "dd50815acf02717a": {
-   "verdict": "ok",
-   "note": "Numerically scanned f(x)=-0.2(x-2)^3(x+1)^2(x-4) at 0.001 steps on [-1,4]: local min at x=0.093, f=-6.474; local max at x=3.573, f=6.951 — matches CNXML ti_03_04_06 solution's stated approximate (0,-6.5) and (3.5,7)."
   },
   "dd5382800469a0fa": {
    "verdict": "ok"
@@ -83674,10 +83848,6 @@
    "verdict": "ok",
    "note": "Matches the printed solution for fs-id1165135181688 (does not exist, source exercise 9): the figure's left branch approaches 2 at x=1 while the right branch (sqrt curve) starts at an open circle at 0, so the two-sided limit does not exist."
   },
-  "ded140ea13e3887d": {
-   "verdict": "ok",
-   "note": "Practice long-division item 2 (remainder): same division as above; remainder 16, matching the CNXML solution."
-  },
   "ded1d98c9f8ed777": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660272246 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -83724,10 +83894,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "deef4209f1c76ccd": {
-   "verdict": "ok",
-   "note": "Practice (Remainder Theorem). Evaluated x^4-1 at x=4 via node: 255. Matches CNXML solution for fs-id1165135487281."
   },
   "def3183deb75be83": {
    "verdict": "ok",
@@ -84589,6 +84755,10 @@
     "note": "parent Sep 23 2026: synonym of the key, already graded correct by the accept list/plural fold; key stands"
    }
   },
+  "e0cb745e45b75333": {
+   "verdict": "ok",
+   "note": "Leading coefficient of -x^6 is -1. Matches CNXML ti_03_03_03. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "e0cbd65ed827e97a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85129,10 +85299,6 @@
    "verdict": "ok",
    "note": "Graph read from source page 469 (crop of exercise 47's figure): vertical asymptote near x=1, curve decreasing, passes through (0,0), and reaches about (-5, 2.6) at its arrow. f(x)=log_2(-(x-1)) satisfies all of this: f(0)=log_2(1)=0, f(-5)=log_2(6)=2.585, asymptote at x=1 (argument -(x-1)=0). Matches CNXML fs-id1165135439871 solution f(x)=log_2(-(x-1))."
   },
-  "e21e5e9c960ed859": {
-   "verdict": "ok",
-   "note": "Vertex of f(x)=x^2-5x-6: h=5/2, k=-49/4 (computed via node); matches CNXML sibling exercise's own printed vertex for this function."
-  },
   "e2249584a88ddfac": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -85360,6 +85526,14 @@
     "result": "agrees"
    }
   },
+  "e2cff663055f74ec": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e2d041fbbe18be58": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85533,10 +85707,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "e335024872a2731e": {
-   "verdict": "ok",
-   "note": "-4-i has real part -4 and imaginary part -1, so the ordered pair is (-4,-1); matches the point named in CNXML ti_03_01_02's solution image alt text."
   },
   "e335d59d897856c7": {
    "verdict": "ok",
@@ -85970,10 +86140,6 @@
     "result": "agrees"
    }
   },
-  "e455b7d6f8f70d3c": {
-   "verdict": "ok",
-   "note": "Try It 2. Evaluated f(x)=x^3+4x^2-4x-16 at x=2,-2,-4 via node: all equal 0. Matches CNXML ti_03_06_02 solution (zeros 2,-2,-4)."
-  },
   "e459eaf6cbedcb7b": {
    "verdict": "ok",
    "solved": {
@@ -86031,6 +86197,10 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
+  },
+  "e475c6712eaa0a6e": {
+   "verdict": "ok",
+   "note": "g(0)=13; matches CNXML solution '(0,13)'. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e481e217d87e8f9c": {
    "verdict": "ok",
@@ -86210,6 +86380,10 @@
   "e4d9b90dcdab155d": {
    "verdict": "ok",
    "note": "CNXML fs-idm3674368/fs-idm58621312 solution transcribed verbatim as model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "e4e4a05bfe54751a": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137447334: k=x^2*y=9*2=18, so y=18/x^2. Verified with node arithmetic; matches CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e4e75a01bc1a06ab": {
    "verdict": "ok",
@@ -86727,10 +86901,6 @@
     "result": "agrees"
    }
   },
-  "e61f4928635f7fb5": {
-   "verdict": "ok",
-   "note": "i = 0+1i, ordered pair (0,1); source solution is an image confirming the plotted point i, coordinates derived independently."
-  },
   "e637d02d114a1d4a": {
    "verdict": "ok",
    "note": "KC 1 6.1 § Classification and Taxonomy of Viruses, m58808 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -86879,6 +87049,14 @@
     "result": "agrees"
    }
   },
+  "e69e6694934d3ee8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e6a0c6ae32ce3165": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86945,10 +87123,6 @@
   "e6d3c60dd070d058": {
    "verdict": "ok",
    "note": "r(7+8cosθ)=7 → r=7/(7+8cosθ), ÷7 → e=8/7>1 → hyperbola; matches Algebraic exercise fs-id1999312 (CNXML solution: 'Hyperbola with e=8/7...')."
-  },
-  "e6d63c8692894781": {
-   "verdict": "ok",
-   "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09."
   },
   "e6dab1215d58aacd": {
    "verdict": "ok",
@@ -87218,6 +87392,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e7b9ec4dddbf71fb": {
+   "verdict": "ok",
+   "note": "Practice long-division item 1 (remainder): same division as above; remainder 0, matching the CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e7be514ddc831e26": {
    "verdict": "ok",
@@ -87603,10 +87781,6 @@
     "result": "agrees"
    }
   },
-  "e91e5de923fe1b0b": {
-   "verdict": "ok",
-   "note": "Practice (Remainder Theorem). Evaluated -3x^2+6x+24 at x=4 via node: 0. Matches CNXML solution for fs-id1165135571875."
-  },
   "e92326d987094770": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -87754,6 +87928,10 @@
     "result": "adjudicated",
     "note": "snRNA is the module's own abbreviation, covered by the accept list; primary answer agreed"
    }
+  },
+  "e96866ae9330ed3a": {
+   "verdict": "ok",
+   "note": "Try It 3: ran synthetic division (k=-6) on coefficients 3,14,-23,6 in node; got quotient 3x^2-4x+1, remainder 0, matching the CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e9687f60f66d9c68": {
    "verdict": "ok",
@@ -87987,6 +88165,10 @@
    "verdict": "ok",
    "note": "ln(9(x^2-10))=ln10 => 9(x^2-10)=10 => x^2=100/9 => x=+/-10/3; domain x^2-10>0 holds for both since (10/3)^2=100/9>10. Unordered pair, verified with checkAnswer {unordered:true}."
   },
+  "ea1c3772f0a831dc": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137676536: k=45/(100*3^3)=1/60; solve 60=(1/60)*150*d^3 => d^3=24 => d=cbrt(24)=2.884499... rounds to 2.88 inches. Verified with node arithmetic; matches CNXML solution '≈2.88 inches'; rounding disclosed in the question text. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "ea23cd519420f6c9": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1167584684938 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -88142,6 +88324,14 @@
     "result": "agrees"
    }
   },
+  "eaa804211c439633": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eaa9bb2f99b877e8": {
    "verdict": "ok",
    "note": "KC 1 3.2 § body Disaccharides (fs-id2016502), m66440 — parent re-read against the module",
@@ -88231,10 +88421,6 @@
     "result": "agrees"
    }
   },
-  "ead6789e29050ce8": {
-   "verdict": "ok",
-   "note": "Try It 7. Solved w(w+1)(2w+1)=84 for positive w via node scan: w=3 gives 84 exactly, so width=3, length=w+1=4, height=2w+1=7. Matches CNXML ti_03_06_07 solution '3 meters by 4 meters by 7 meters' (width, length, height order), which the question now states explicitly."
-  },
   "ead88a8aa98f662a": {
    "verdict": "ok",
    "note": "sin t=tan t·cos t=1.3×0.61=0.793, rounds to 0.79; matches CNXML solution sin(t)≈0.79"
@@ -88297,6 +88483,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "eb096885c0d2a349": {
+   "verdict": "ok",
+   "note": "Practice (Remainder Theorem). Evaluated -3x^2+6x+24 at x=4 via node: 0. Matches CNXML solution for fs-id1165135571875. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "eb16d0d00a5b6367": {
    "verdict": "ok",
@@ -88417,6 +88607,14 @@
   },
   "eb6fad34d37482ad": {
    "verdict": "ok"
+  },
+  "eb72e0f976ff2254": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "eb78947874793b5f": {
    "verdict": "ok",
@@ -88743,10 +88941,6 @@
    "verdict": "ok",
    "note": "Depends on an unincluded table, but cross-checks consistently against the paired exercise b4bd4546df6647f8 (both imply f(2)=15). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "ec462a9a5dfdb20c": {
-   "verdict": "ok",
-   "note": "Degree 12 polynomial has at most 12-1=11 turning points. Matches CNXML ti_03_03_07."
-  },
   "ec4662e14f34ffae": {
    "verdict": "ok",
    "note": "KC 6 30.6 § glossary abscission (fs-idp62443952), m66601 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -88870,10 +89064,6 @@
   },
   "ec87d6cbf54dcca0": {
    "verdict": "ok"
-  },
-  "ec8885a3d907c0fd": {
-   "verdict": "ok",
-   "note": "f(x)=1/4 x(x-1)^4(x+3)^3 factors give zeros directly: x=0, x=1 (mult4), x=-3 (mult3). CNXML ti_03_04_03's own solution is only an image (no numeric answer to compare), so this is derived independently from the printed factored formula."
   },
   "ec8d496c7dad02a4": {
    "verdict": "ok",
@@ -89118,10 +89308,6 @@
     "note": "key 'virus core' is the module's glossary term; 'core' added to accept so the natural short form grades correct"
    }
   },
-  "ed41f418107acee2": {
-   "verdict": "ok",
-   "note": "Solved y=cbrt(x+4) by interchanging x,y and cubing: f^{-1}(x)=x^3-4. Checked by composition with node: f(f^{-1}(x))=cbrt((x^3-4)+4)=x and f^{-1}(f(x))=(cbrt(x+4))^3-4=x. Matches CNXML ti_03_08_02."
-  },
   "ed446b232fbf79a3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89238,10 +89424,6 @@
     "result": "agrees"
    }
   },
-  "eda7d4ebd898bac0": {
-   "verdict": "ok",
-   "note": "Positive root of -16t^2+96t+112=0 is t=7 (computed via node quadratic-formula roots [-1,7]); matches CNXML solution '7 seconds'."
-  },
   "eda9845c94a95f03": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89257,6 +89439,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "edbd4ce3bee83d32": {
+   "verdict": "ok",
+   "note": "Denominator zero at x=1,5 (the 5(x-1)(x-5) factors); domain is R minus {1,5}; matches CNXML Try It 4. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "edc12260870df8a0": {
    "verdict": "ok",
@@ -89341,10 +89527,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "ede5dfee2eb2a1f3": {
-   "verdict": "ok",
-   "note": "Solved V=(4/3)pi r^3 for r: r^3=3V/(4pi), r=cbrt(3V/(4pi)). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (cbrt(3/(4pi)) * cbrt(V)) -- graded correct, confirming true value equivalence, not just self-identity. Matches CNXML exercise fs-id1165137451866 (Real-World Applications, sphere volume), which has a solution."
   },
   "ede5e0395cf90202": {
    "verdict": "ok",
@@ -89748,6 +89930,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "ef085ec0d793aaf1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ef09029fdda70edf": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -89849,6 +90039,10 @@
   "ef67ab9e12f2c605": {
    "verdict": "ok",
    "note": "unkeyed CT fs-id1167663964318 (cystic fibrosis) selfcheck; model answer reasons only from this module's mucociliary-escalator sentences, no reach into 22.2, per Part C | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ef6a466602a76741": {
+   "verdict": "ok",
+   "note": "x^2+5x-36=(x-4)(x+9); VA at x=4,-9; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "ef6ca679f08d0e49": {
    "verdict": "ok",
@@ -90085,6 +90279,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f00b73ba7a879eaa": {
+   "verdict": "ok",
+   "note": "Both degree 1; leading coeffs -2 (from 4-2x) and 3; ratio -2/3; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "f00e49d1484a1b26": {
    "verdict": "ok",
    "note": "source exercise fs-idp20795584 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -90184,6 +90382,10 @@
   "f0532f954a36f24e": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "f055ee012766a206": {
+   "verdict": "ok",
+   "note": "Practice long-division item 2 (quotient): ran long division of 2x^2-3x+2 by x+2 in node; quotient 2x-7, remainder 16, matching the CNXML solution (fs-id1165134472270). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "f05727db8c1cf119": {
    "verdict": "ok",
@@ -90499,10 +90701,6 @@
     "result": "agrees"
    }
   },
-  "f1377087d746416b": {
-   "verdict": "ok",
-   "note": "Near x=6, numerator -2x is negative (-12); denominator sign flip gives +inf on the left, -inf on the right; verified numerically."
-  },
   "f13a5e65c0c7c03f": {
    "verdict": "ok",
    "note": "parent: r=2sqrt3*2=4sqrt3, theta=116+82=198; rect product cross-checked numerically"
@@ -90556,6 +90754,14 @@
     "result": "agrees"
    }
   },
+  "f1625cb34472b22e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f162c0fc8a2e3649": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -90568,12 +90774,16 @@
    "verdict": "ok",
    "note": "matches CNXML CT fs-idp72621264 solution verbatim (van Helmont) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f17736ee9160f4b3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f1796915a9891cf1": {
    "verdict": "ok"
-  },
-  "f17f6a5711cc1d67": {
-   "verdict": "ok",
-   "note": "Try It 3 (ti_03_09_03): k=40*2/4^2=5; x=5*10^2/25=500/25=20. Verified with node arithmetic; matches CNXML solution."
   },
   "f1820a1dc503268e": {
    "verdict": "ok",
@@ -90722,10 +90932,6 @@
     "result": "agrees"
    }
   },
-  "f2096e39a0718570": {
-   "verdict": "ok",
-   "note": "Expanded n(x)=-3x(x+2)(x-4) by node: leading term -3x^3; substituting a very negative x (e.g. -100) gives a large positive value, so as x->-infinity n(x)->infinity. Matches CNXML fs-id1165135419774 solution."
-  },
   "f20c2f5f13565778": {
    "verdict": "ok"
   },
@@ -90740,6 +90946,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f2107da7ffc879fa": {
+   "verdict": "ok",
+   "note": "Both numerator and denominator expand to degree 3; leading-coefficient ratio 1/2; matches CNXML Try It 8. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "f212e5bd4c104cb4": {
    "verdict": "ok",
@@ -91123,10 +91333,6 @@
    "verdict": "ok",
    "note": "Section Exercises Algebraic #17 (fs-id1165133360321), Gaussian elimination, system {2x-y+3z=17;-5x+4y-2z=-46;2y+5z=-7}. Independently solved and confirmed via node that (4,-6,1) satisfies all three equations exactly. Matches CNXML solution."
   },
-  "f30f50d91b41f976": {
-   "verdict": "ok",
-   "note": "Axis of symmetry x=5/2 for f(x)=2x^2-10x+4, per same CNXML solution."
-  },
   "f3114e9b98847973": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -91258,6 +91464,10 @@
   },
   "f3497389fd1343f2": {
    "verdict": "ok"
+  },
+  "f34ad222acbbc623": {
+   "verdict": "ok",
+   "note": "Computed by hand: 1200+20*12=1440 first-years, 1500-15*12=1320 second-years, ratio 1440/1320=12/11; matches CNXML Try It 3. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "f34d4fd6fcc551b7": {
    "verdict": "ok",
@@ -92816,10 +93026,6 @@
     "result": "agrees"
    }
   },
-  "f75f5d966d1ac68a": {
-   "verdict": "ok",
-   "note": "g(0)=13; matches CNXML solution '(0,13)'."
-  },
   "f762cc4de1d86a1c": {
    "verdict": "ok",
    "note": "glossary recall: hybrid zone (fs-idm96811840) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -93190,6 +93396,10 @@
     "result": "agrees"
    }
   },
+  "f81e5d00f1309730": {
+   "verdict": "ok",
+   "note": "Practice (Factor Theorem). Evaluated 2x^3+x^2-5x+2 at -2, 1, 0.5 via node: all 0. Matches CNXML solution for fs-id1165135349107 (-2, 1, 1/2). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "f8248291c0319810": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93311,6 +93521,10 @@
     "result": "agrees"
    }
   },
+  "f87ac91d238089fa": {
+   "verdict": "ok",
+   "note": "Practice long-division item 2 (remainder): same division as above; remainder 16, matching the CNXML solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "f8826c66c9d0ed3d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93410,6 +93624,10 @@
   "f8c99bb1f85ccf05": {
    "verdict": "ok",
    "note": "Visual Connection selfcheck; model answer is the module's own commented-out solution verbatim ('Without a megasporangium, an egg would not form; without a microsporangium, pollen would not form.'), checked against exercise fs-idp6180992/solution fs-idm101684528. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "f8d50bbacab0931a": {
+   "verdict": "ok",
+   "note": "f(x)=108-13x^9-8x^4+14x^12+2x^3: highest power present is 12 (the 14x^12 term), so at most 12 x-intercepts. Matches CNXML ti_03_03_07. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "f8d70b6c6e089ec1": {
    "verdict": "ok"
@@ -93685,10 +93903,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "f992f7cf6a37dd08": {
-   "verdict": "ok",
-   "note": "Practice (Factor Theorem). Evaluated 2x^3+5x^2-12x-30 at -2.5, sqrt(6), -sqrt(6) via node: all 0 (within float tolerance). Matches CNXML solution for fs-id1165135453082 (-5/2, sqrt6, -sqrt6)."
   },
   "f9941996c0b40e92": {
    "verdict": "ok",
@@ -94375,6 +94589,22 @@
     "result": "agrees"
    }
   },
+  "fb46d401f92d1972": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fb487b2377108656": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fb4c6db4de3ba46d": {
    "verdict": "ok",
    "note": "KC 7 43.5 § glossary morning sickness (fs-idm97946656), m66677 — parent re-read against the module",
@@ -94407,6 +94637,14 @@
    "note": "Critical Thinking eip-353, solution eip-838, preamble kept, transcribed verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "fb70c9c1df530ed7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fb71e8928697baf8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -94601,10 +94839,6 @@
     "result": "agrees"
    }
   },
-  "fbd603460bf0eef1": {
-   "verdict": "ok",
-   "note": "H(3)=-16*9+96*3+112=256 (computed via node); matches CNXML solution '256 feet'."
-  },
   "fbd7ac4472f72ced": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"Parasitic forms may have complex reproductive cycles with several different life stages and more than one type of host.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94707,6 +94941,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fc3afaa4662aa6a1": {
+   "verdict": "ok",
+   "note": "(x+2)^2(x-2)/[2(x-1)^2(x-3)]: denominator zero at x=1,3, neither shared with numerator; matches CNXML Try It 8. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "fc3e912548ff2649": {
    "verdict": "ok",
@@ -94954,6 +95192,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fcd631c8a296c78b": {
+   "verdict": "ok",
+   "note": "f(2+i)=(2+i)^2+3(2+i)+5=(3+4i)+(6+3i)+5=14+7i; recomputed independently with node, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "fcd8cef9face2f6a": {
    "verdict": "ok",
@@ -95698,10 +95940,6 @@
     "result": "agrees"
    }
   },
-  "fe9cf0372f871397": {
-   "verdict": "ok",
-   "note": "Computed f(1)=-1+4=3 and f(3)=-81+4=-77 by node arithmetic for f(x)=-x^4+4. Matches CNXML fs-id1165131857356 solution."
-  },
   "fe9ffdb404794291": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95729,10 +95967,6 @@
   "feb26f1404e05d4a": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "feb3ac45101bdb95": {
-   "verdict": "ok",
-   "note": "Discriminant of x^2-6x+13 is 36-52=-16<0, so 0 real x-intercepts; consistent with CNXML's 'No x-intercepts'."
   },
   "fec64c45b9a47853": {
    "verdict": "ok",

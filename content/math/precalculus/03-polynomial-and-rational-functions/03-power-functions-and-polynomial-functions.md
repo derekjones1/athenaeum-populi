@@ -103,7 +103,7 @@ powers because they can be written as $f(x)=x^{1/2}$ or $f(x)=x^{1/3}$.
 {{< multiplechoice
   question="Which of the following functions is a power function? $f(x)=2x^2\cdot 4x^3$, $g(x)=-x^5+5x^3-4x$, or $h(x)=\tfrac{2x^5-1}{3x^2+4}$"
   answer="$f(x)$, because it combines into the single term $8x^5$"
-  hint="Combine $f$ into a single term first, then check whether each function is one term with a variable raised to a fixed power."
+  hint="Simplify each function as far as you can, then check whether the result is a single term $kx^p$: a coefficient times a variable raised to a fixed power."
 >}}
 $f(x)$, because it combines into the single term $8x^5$
 $g(x)$, because it already has a variable base
@@ -123,7 +123,7 @@ None of them are power functions
 ## Identifying end behavior of power functions
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three curves on one grid: h of x equals x squared, g of x equals x to the fourth, and f of x equals x to the sixth, all passing through the origin and rising steeply on both sides, arrows at the top left and top right. The x-axis runs from negative 3 to 3 and the y-axis from negative 1 to 4.","xMin":-3,"xMax":3,"yMin":-1,"yMax":4,"unit":40,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,1],"arrows":true},{"coeffs":[0,0,0,0,1],"arrows":true},{"coeffs":[0,0,0,0,0,0,1],"arrows":true}],"texts":[{"at":[2.15,3.9],"text":"h(x) = x²","anchor":"start"},{"at":[2.15,3.3],"text":"g(x) = x⁴","anchor":"start"},{"at":[2.15,2.7],"text":"f(x) = x⁶","anchor":"start"}]}
+{"ariaLabel":"Three curves on one grid, each passing through the origin and the points (−1, 1) and (1, 1): f of x equals x squared, g of x equals x to the fourth, and h of x equals x to the sixth, each labeled beside the arrowhead of its right-hand branch. The higher the power, the flatter the curve between x equals −1 and 1 and the more steeply it climbs outside that interval; all three rise on both sides, with arrows at both ends. The x-axis runs from negative 3 to 3 and the y-axis from negative 1 to 6.","xMin":-3,"xMax":3,"yMin":-1,"yMax":6,"xUnit":70,"yUnit":35,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,1],"arrows":true},{"coeffs":[0,0,0,0,1],"arrows":true},{"coeffs":[0,0,0,0,0,0,1],"from":-1.2849,"to":1.2849,"arrows":true}],"texts":[{"at":[2.3,4.4],"text":"f(x) = x²","anchor":"start"},{"at":[1.45,5.75],"text":"g(x) = x⁴","anchor":"end"},{"at":[1.2,4.4],"text":"h(x) = x⁶","anchor":"end"}]}
 {{< /apfigure >}}
 
 The graph above shows $f(x)=x^2$, $g(x)=x^4$, and $h(x)=x^6$, which are all
@@ -147,7 +147,7 @@ form, we could write
 $$\text{as }x\to\pm\infty,\ f(x)\to\infty$$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three curves on one grid: f of x equals x cubed, g of x equals x to the fifth, and h of x equals x to the seventh, all passing through the origin, symmetric about it, flattening near the origin and steepening away from it, with arrows at the top right and bottom left. The x-axis runs from negative 3 to 3 and the y-axis from negative 4 to 4.","xMin":-3,"xMax":3,"yMin":-4,"yMax":4,"unit":34,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,1],"arrows":true},{"coeffs":[0,0,0,0,0,1],"arrows":true},{"coeffs":[0,0,0,0,0,0,0,1],"arrows":true}],"texts":[{"at":[1.72,3.8],"text":"f(x) = x³","anchor":"start"},{"at":[1.72,3.1],"text":"g(x) = x⁵","anchor":"start"},{"at":[1.72,2.4],"text":"h(x) = x⁷","anchor":"start"}]}
+{"ariaLabel":"Three curves on one grid, each passing through (−1, −1), the origin, and (1, 1): f of x equals x cubed, g of x equals x to the fifth, and h of x equals x to the seventh, each labeled beside the arrowhead of its right-hand branch. All three are symmetric about the origin; the higher the power, the flatter the curve near the origin and the more steeply it climbs away from it. Each falls to the lower left and rises to the upper right, with arrows at both ends. The x-axis runs from negative 3 to 3 and the y-axis from negative 6 to 6.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"xUnit":70,"yUnit":25,"tickLabels":true,"tickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[0,0,0,1],"arrows":true},{"coeffs":[0,0,0,0,0,1],"arrows":true},{"coeffs":[0,0,0,0,0,0,0,1],"from":-1.2394,"to":1.2394,"arrows":true}],"texts":[{"at":[1.95,5.2],"text":"f(x) = x³","anchor":"start"},{"at":[1.3,5.6],"text":"g(x) = x⁵","anchor":"end"},{"at":[1.12,4.2],"text":"h(x) = x⁷","anchor":"end"}]}
 {{< /apfigure >}}
 
 The graph above shows $f(x)=x^3$, $g(x)=x^5$, and $h(x)=x^7$, which are all
@@ -223,7 +223,7 @@ without bound. In symbolic form, as $x\to-\infty$, $f(x)\to\infty$. We can
 graphically represent the function as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals x to the eighth power: a steep U shape symmetric about the y-axis, touching the origin and rising sharply on both sides past y equals 6 near x equals negative 1 and x equals 1. The x-axis runs from negative 3 to 3 and the y-axis from negative 1 to 6.","xMin":-3,"xMax":3,"yMin":-1,"yMax":6,"unit":34,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,0,0,0,0,0,1],"arrows":true}]}
+{"ariaLabel":"The graph of f of x equals x to the eighth power: a steep U shape symmetric about the y-axis, flat along the x-axis near the origin and rising sharply on both sides, leaving the top of the frame at y equals 6 near x equals negative 1.25 and x equals 1.25. The x-axis runs from negative 3 to 3 and the y-axis from negative 1 to 6.","xMin":-3,"xMax":3,"yMin":-1,"yMax":6,"unit":34,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,0,0,0,0,0,1],"arrows":true}]}
 {{< /apfigure >}}
 
 **Example.** Describe the end behavior of the graph of $f(x)=-x^9$.
@@ -243,7 +243,7 @@ $$
 $$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative x to the ninth power: a steeply falling curve from upper left to lower right, flat near the origin, dropping past y equals negative 10 just after x equals 1 and rising past y equals 10 just before x equals negative 1. The x-axis runs from negative 5 to 5 and the y-axis from negative 10 to 10.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,0,0,0,0,0,0,-1],"arrows":true}],"texts":[{"at":[1.7,-6.3],"text":"f(x) = −x⁹","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals negative x to the ninth power: a steeply falling curve from upper left to lower right, flat near the origin, rising past y equals 10 near x equals negative 1.3 and dropping past y equals negative 10 near x equals 1.3, labeled f of x equals negative x to the ninth beside its lower branch. The x-axis runs from negative 5 to 5 and the y-axis from negative 10 to 10.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,0,0,0,0,0,0,-1],"arrows":true}],"texts":[{"at":[1.7,-6.3],"text":"f(x) = −x⁹","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Analysis.** We can check our work by using the table feature on a graphing
@@ -265,7 +265,7 @@ value).
 {{< multiplechoice
   question="Describe the end behavior of $f(x)=-5x^4$."
   answer="As $x$ approaches both positive and negative infinity, $f(x)$ decreases without bound."
-  hint="The exponent is even and the coefficient is negative — use the even-power comparison graph above."
+  hint="Decide whether the power is even or odd and whether the coefficient is positive or negative, then find that case among the four comparison graphs above."
 >}}
 As $x$ approaches both positive and negative infinity, $f(x)$ increases without bound.
 As $x$ approaches both positive and negative infinity, $f(x)$ decreases without bound.
@@ -404,19 +404,22 @@ coefficient is the coefficient of that term, $-1$.
 {{< fillin
   question="Identify the degree of the polynomial $f(x)=4x^2-x^6+2x-6$."
   answer="6"
-  hint="The degree is the highest power of x that appears in the polynomial."
+  answerForm="decimal"
+  hint="The degree is the highest power of $x$ that appears in the polynomial."
 >}}
 
 {{< fillin
   question="Identify the leading term of that same polynomial, $f(x)=4x^2-x^6+2x-6$."
   answer="-x^{6}"
+  answerForm="single-term"
   answerDisplay="$-x^6$"
-  hint="The leading term is the term containing the highest power of x."
+  hint="The leading term is the term containing the highest power of $x$."
 >}}
 
 {{< fillin
   question="Identify the leading coefficient of that same polynomial, $f(x)=4x^2-x^6+2x-6$."
   answer="-1"
+  answerForm="decimal"
   hint="The leading coefficient is the coefficient of the leading term."
 >}}
 
@@ -438,26 +441,26 @@ behavior of the term of highest degree. See the table below.
 | $f(x)=-6x^3+7x^2+3x+1$ | $-6x^3$ |
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 5x to the fourth plus 2x cubed minus x minus 4: a steep W-shaped curve with two dips near x equals negative 1 and x equals 1, rising past y equals 6 on both sides. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-4,-1,0,2,5],"arrows":true}]}
+{"ariaLabel":"The graph of f of x equals 5x to the fourth plus 2x cubed minus x minus 4: a U-shaped curve with one low point near (0.3, −4.2), crossing the x-axis at negative 1 and near 0.9, and rising out of the top of the frame on both sides, near x equals negative 1.3 and x equals 1.1. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-4,-1,0,2,5],"arrows":true}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative 2x to the sixth minus x to the fifth plus 3x to the fourth plus x cubed: a curve with two dips near x equals negative 1 and x equals 1 that falls toward negative infinity on both sides, exiting the bottom of the frame past y equals negative 6. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,1,3,-1,-2],"arrows":true}]}
+{"ariaLabel":"The graph of f of x equals negative 2x to the sixth minus x to the fifth plus 3x to the fourth plus x cubed: a curve with two humps reaching just above y equals 1, near x equals negative 1.1 and x equals 0.9, flattening against the x-axis at the origin between them, and falling through the x-axis near negative 1.3 and 1.2 and out of the bottom of the frame on both sides, near x equals negative 1.6 and x equals 1.4. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[0,0,0,1,3,-1,-2],"arrows":true}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 3x to the fifth minus 4x to the fourth plus 2x squared plus 1: a curve falling steeply from the bottom left, leveling near the origin, and rising steeply past y equals 6 just after x equals 1. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[1,0,2,0,-4,3],"arrows":true}]}
+{"ariaLabel":"The graph of f of x equals 3x to the fifth minus 4x to the fourth plus 2x squared plus 1: a curve rising from the bottom of the frame near x equals negative 1.1, crossing the x-axis near negative 0.8, leveling off through a small hump near (−0.4, 1.2) and a low point at (0, 1), then rising out of the top of the frame near x equals 1.4. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[1,0,2,0,-4,3],"arrows":true}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative 6x cubed plus 7x squared plus 3x plus 1: a curve rising from the bottom left to a hump above the x-axis near x equals 1, then falling steeply past y equals negative 6 before x equals 2. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[1,3,7,-6],"arrows":true}]}
+{"ariaLabel":"The graph of f of x equals negative 6x cubed plus 7x squared plus 3x plus 1: a curve falling from the top of the frame near x equals negative 0.8 to a low point near (−0.2, 0.7), rising to a hump near (1, 5), then falling, crossing the x-axis near 1.6 and leaving the bottom of the frame near x equals 1.8. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 6.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[1,3,7,-6],"arrows":true}]}
 {{< /apfigure >}}
 
 **Example.** Describe the end behavior and determine a possible degree of the
 polynomial function graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A curve falling from the top left, exiting the bottom of the frame near x equals negative 3, rising to a local maximum, dipping to a local minimum, then rising again and exiting the top of the frame near x equals 5. The x-axis runs from negative 6 to 6 and the y-axis from negative 5 to 6.","xMin":-6,"xMax":6,"yMin":-5,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[1.2,-0.9,-0.45,0.15],"arrows":true}]}
+{"ariaLabel":"A curve that starts with a downward arrow near (−1.5, −5) and rises through the x-axis near negative 0.75, crossing the y-axis at 2, to a local maximum near (0.4, 2.2), falls through the x-axis at 2 to a local minimum near (3.6, −2.2), then rises through the x-axis near 4.7 to an upward arrow near (5.5, 5). The x-axis runs from negative 6 to 6 and the y-axis from negative 6 to 6.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[2,1.24113,-1.68794,0.28369],"from":-1.546,"to":5.5,"arrows":true}]}
 {{< /apfigure >}}
 
 **Solution.** As the input values $x$ get very large, the output values
@@ -481,7 +484,7 @@ not been reflected, so the degree of the polynomial creating this graph must
 be odd and the leading coefficient must be positive.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A dome-shaped curve with a single hump peaking near x equals 0.5, falling away steeply on both sides and exiting the bottom of the frame near x equals negative 2 and x equals 3. The x-axis runs from negative 6 to 6 and the y-axis from negative 6 to 6.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[2.98125,0.15,-0.45,0.6,-0.3],"arrows":true}]}
+{"ariaLabel":"A curve symmetric about the line x equals 1, with a broad flat top at y equals 3 centered on x equals 1. It crosses the y-axis just below 3 and the x-axis at negative 1 and 3, and both sides fall steeply out of the bottom of the frame, near x equals negative 1.6 and x equals 3.6. The x-axis runs from negative 6 to 6 and the y-axis from negative 6 to 6.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[2.8125,0.75,-1.125,0.75,-0.1875],"arrows":true}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
@@ -524,7 +527,7 @@ $$
 {{< fillin
   question="Given the function $f(x)=0.2(x-2)(x+1)(x-5)$, express the function as a polynomial in general form."
   answer="0.2x^3-1.2x^2+0.6x+2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$0.2x^3-1.2x^2+0.6x+2$"
   hint="Multiply the three binomial factors together, then distribute the 0.2."
 >}}
@@ -532,7 +535,7 @@ $$
 {{< multiplechoice
   question="What is the end behavior of that same function, $f(x)=0.2(x-2)(x+1)(x-5)$?"
   answer="As $x$ approaches negative infinity, $f(x)$ decreases without bound, and as $x$ approaches positive infinity, $f(x)$ increases without bound."
-  hint="The degree is 3 (odd) and the leading coefficient, 0.2, is positive."
+  hint="Read the leading term from the general form you found, then match its degree (even or odd) and the sign of its coefficient to the comparison graphs."
 >}}
 As $x$ approaches both negative and positive infinity, $f(x)$ increases without bound.
 As $x$ approaches negative infinity, $f(x)$ decreases without bound, and as $x$ approaches positive infinity, $f(x)$ increases without bound.
@@ -558,7 +561,7 @@ of zero. It is possible to have more than one $x$-intercept. See the figure
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A schematic cubic-shaped curve illustrating vocabulary: a small hump above the x-axis is marked as a turning point, a deeper dip below the x-axis is marked as a second turning point, the three points where the curve crosses the x-axis are marked as x-intercepts, and the point where the curve crosses the y-axis, below the axis, is marked as the y-intercept. No axis numbers are shown.","xMin":-2,"xMax":2,"yMin":-2.5,"yMax":1.5,"unit":85,"tickLabels":false,"grid":false,"polynomials":[{"coeffs":[-0.72,-2.58,0.3,3],"arrows":true}],"points":[{"at":[-0.503,0.292],"label":"Turning point"},{"at":[0.503,-1.56],"label":"Turning point"},{"at":[0,-0.72],"label":"y-intercept"}],"texts":[{"at":[-1.95,0.35],"text":"x-intercepts","anchor":"start"}]}
+{"ariaLabel":"A schematic cubic-shaped curve illustrating vocabulary: it rises from the bottom left to a small hump above the x-axis, falls to a deeper dip below the x-axis, then rises out of the top right. Dots mark the hump and the dip, each labeled Turning point; the three points where the curve crosses the x-axis, joined by dashed pointers to the label x-intercepts; and the point where the curve crosses the y-axis, below the x-axis, labeled y-intercept. No axis numbers are shown.","xMin":-2,"xMax":2,"yMin":-2.5,"yMax":1.5,"unit":85,"tickLabels":false,"grid":false,"polynomials":[{"coeffs":[-0.72,-2.58,0.3,3],"arrows":true}],"points":[{"at":[-0.57,0.2925],"label":"Turning point"},{"at":[0.5031,-1.56],"label":"Turning point"},{"at":[0,-0.72],"label":"y‐intercept"},{"at":[-0.8,0]},{"at":[-0.3,0]},{"at":[1,0]}],"texts":[{"at":[1.42,0.92],"text":"x‐intercepts","anchor":"start"}],"segments":[{"from":[1.45,0.8],"to":[1.08,0.12],"arrows":"end","dashed":true},{"from":[1.45,0.8],"to":[-0.24,0.06],"arrows":"end","dashed":true},{"from":[1.45,0.8],"to":[-0.7,0.1],"arrows":"end","dashed":true}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -596,20 +599,18 @@ The $y$-intercept is $(0,8)$.
 
 The $x$-intercepts occur when the output is zero.
 
-$$
-\begin{array}{lrcl}
-& 0 &=& (x-2)(x+1)(x-4) \\[4pt]
-x-2=0 \quad\text{or}\quad x+1=0 \quad\text{or}\quad x-4=0 & & &\\[4pt]
-x=2 \quad\text{or}\quad x=-1 \quad\text{or}\quad x=4 & & &
-\end{array}
-$$
+$$0=(x-2)(x+1)(x-4)$$
+
+$$x-2=0 \quad\text{or}\quad x+1=0 \quad\text{or}\quad x-4=0$$
+
+$$x=2 \quad\text{or}\quad x=-1 \quad\text{or}\quad x=4$$
 
 The $x$-intercepts are $(2,0)$, $(-1,0)$, and $(4,0)$.
 
 We can see these intercepts on the graph of the function shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x minus 2, times the quantity x plus 1, times the quantity x minus 4. The curve crosses the x-axis at negative 1, 2, and 4, crosses the y-axis at 8, and has a local maximum above the axis between negative 1 and 2 and a local minimum below the axis between 2 and 4. The x-axis runs from negative 5 to 5 and the y-axis from negative 4 to 9.","xMin":-5,"xMax":5,"yMin":-4,"yMax":9,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[8,-2,-3,1],"arrows":true}],"points":[{"at":[-1,0]},{"at":[2,0]},{"at":[4,0]},{"at":[0,8]}]}
+{"ariaLabel":"The graph of f of x equals the quantity x minus 2, times the quantity x plus 1, times the quantity x minus 4. The curve rises from the bottom left through the x-axis at negative 1, crosses the y-axis at 8, peaks just above 8 near x equals 0.2, falls through the x-axis at 2 to a low point near (3.1, −4.1), and rises through the x-axis at 4 out of the top of the frame. Labeled dots mark the intercepts (−1, 0), (0, 8), (2, 0), and (4, 0). The x-axis runs from negative 5 to 5 and the y-axis from negative 5 to 9.","xMin":-5,"xMax":5,"yMin":-5,"yMax":9,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[8,2,-5,1],"arrows":true}],"points":[{"at":[-1,0],"label":"(-1, 0)"},{"at":[2,0],"label":"(2, 0)"},{"at":[4,0],"label":"(4, 0)"},{"at":[0,8],"label":"(0, 8)"}]}
 {{< /apfigure >}}
 
 **Example.** Given the polynomial function $f(x)=x^4-4x^2-45$, determine the
@@ -649,21 +650,23 @@ We can see these intercepts on the graph of the function shown below. We can
 see that the function is even because $f(x)=f(-x)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals x to the fourth minus 4x squared minus 45. The curve crosses the x-axis at negative 3 and 3, crosses the y-axis at negative 45, and is symmetric about the y-axis with a broad dip in the middle and steep rises past both x equals negative 3 and x equals 3. The x-axis runs from negative 5 to 5 and the y-axis from negative 120 to 120.","xMin":-5,"xMax":5,"yMin":-120,"yMax":120,"xUnit":24,"yUnit":1.6,"tickLabels":true,"tickStep":20,"xTickStep":1,"yTickStep":20,"xTickGrouping":false,"polynomials":[{"coeffs":[-45,0,-4,0,1],"arrows":true}],"points":[{"at":[-3,0]},{"at":[3,0]},{"at":[0,-45]}]}
+{"ariaLabel":"The graph of f of x equals x to the fourth minus 4x squared minus 45. The curve is symmetric about the y-axis: it comes down from the top of the frame on the left, crosses the x-axis at negative 3, dips to a low point near (−1.4, −49), rises slightly to cross the y-axis at negative 45, dips again to a low point near (1.4, −49), and rises through the x-axis at 3 out of the top of the frame. Labeled dots mark the intercepts (−3, 0), (0, −45), and (3, 0). The x-axis runs from negative 5 to 5 and the y-axis from negative 120 to 120.","xMin":-5,"xMax":5,"yMin":-120,"yMax":120,"xUnit":24,"yUnit":1.6,"tickLabels":true,"tickStep":20,"xTickStep":1,"yTickStep":20,"xTickGrouping":false,"polynomials":[{"coeffs":[-45,0,-4,0,1],"arrows":true}],"points":[{"at":[-3,0],"label":"(-3, 0)"},{"at":[3,0],"label":"(3, 0)"},{"at":[0,-45],"label":"(0, -45)"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Given the polynomial function $f(x)=2x^3-6x^2-20x$, what is the y-intercept?"
-  answer="0"
+  question="Given the polynomial function $f(x)=2x^3-6x^2-20x$, what is the $y$-intercept? Enter it as an ordered pair."
+  answer="(0,0)"
+  answerForm="decimal"
   answerDisplay="$(0,0)$"
-  hint="Substitute x = 0 into the function."
+  hint="Substitute $x=0$ into the function."
 >}}
 
 {{< fillin
   question="Now find the x-intercepts of that same function, $f(x)=2x^3-6x^2-20x$. Enter the three x-coordinates, from least to greatest, separated by commas."
   answer="-2,0,5"
+  answerForm="decimal"
   answerDisplay="$(-2,0),(0,0),(5,0)$"
-  hint="Factor out 2x first, then factor the remaining quadratic."
+  hint="Set $f(x)=0$, factor out the greatest common factor, factor the remaining quadratic, and set each factor equal to zero."
 >}}
 
 ## Comparing smooth and continuous graphs
@@ -697,20 +700,22 @@ $x$-intercepts and at most $10-1=9$ turning points.
 {{< fillin
   question="Without graphing, find the maximum number of x-intercepts for the polynomial function $f(x)=108-13x^9-8x^4+14x^{12}+2x^3$."
   answer="12"
-  hint="Find the degree first: the highest power of x among all the terms."
+  answerForm="decimal"
+  hint="Find the degree first: the highest power of $x$ among all the terms."
 >}}
 
 {{< fillin
   question="Now find the maximum number of turning points for that same function, $f(x)=108-13x^9-8x^4+14x^{12}+2x^3$."
   answer="11"
-  hint="The maximum number of turning points is always one fewer than the degree."
+  answerForm="decimal"
+  hint="A polynomial of degree $n$ has at most $n-1$ turning points."
 >}}
 
 **Example.** What can we conclude about the polynomial represented by the
 graph shown below based on its intercepts and turning points?
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An even-degree polynomial graph with a small local maximum near the origin sitting below the x-axis, flanked by two local minima, and two arms rising steeply out of the top of the frame near x equals negative 2 and x equals 2. The curve crosses the x-axis twice. The x-axis runs from negative 5 to 5 and the y-axis from negative 5 to 4.","xMin":-5,"xMax":5,"yMin":-5,"yMax":4,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1.5,0,-2.88,0,1],"arrows":true}]}
+{"ariaLabel":"A polynomial graph whose arms both rise, ending in upward arrows near (−2.7, 2.8) and (2.7, 2.8). Between them the curve falls through the x-axis near negative 2.4 to a low point near (−1.5, −3.9), rises to a high point near (0.2, −2) below the x-axis, falls to a second, higher low point near (1.5, −2.8), and rises through the x-axis near 2.4. Dots mark the two x-intercepts, joined by dashed pointers to the label x-intercepts, and the three turning points, joined by dashed pointers to the label Turning points. The x-axis runs from negative 5 to 5 and the y-axis from negative 6 to 4.","xMin":-5,"xMax":5,"yMin":-6,"yMax":4,"unit":30,"tickLabels":true,"tickStep":1,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[-2.066,0.55,-1.1414,-0.0815,0.2536],"from":-2.672,"to":2.686,"arrows":true}],"points":[{"at":[-2.443,0]},{"at":[2.4043,0]},{"at":[-1.5,-3.9]},{"at":[0.2409,-2.0]},{"at":[1.5,-2.8004]}],"segments":[{"from":[3.0,1.9],"to":[2.66,0.25],"arrows":"end","dashed":true},{"from":[3.0,1.9],"to":[-2.26,0.15],"arrows":"end","dashed":true},{"from":[1.0,-5.3],"to":[1.45,-3.08],"arrows":"end","dashed":true},{"from":[1.0,-5.3],"to":[0.3,-2.32],"arrows":"end","dashed":true},{"from":[1.0,-5.3],"to":[-1.38,-4.17],"arrows":"end","dashed":true}],"texts":[{"at":[2.95,2.3],"text":"x‐intercepts","anchor":"start"},{"at":[0.75,-5.75],"text":"Turning points","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Solution.** The end behavior of the graph tells us this is the graph of an
@@ -720,7 +725,7 @@ Based on this, it would be reasonable to conclude that the degree is even
 and at least 4.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An odd-degree polynomial graph entering from the top left, falling to a local minimum, rising to a local maximum, then falling steeply out of the bottom of the frame near x equals 1. The curve crosses the x-axis three times. The x-axis runs from negative 5 to 5 and the y-axis from negative 10 to 10.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"unit":18,"tickLabels":true,"tickStep":2,"polynomials":[{"coeffs":[6,2,-6,-2],"arrows":true}]}
+{"ariaLabel":"A polynomial graph entering from the top of the frame near x equals negative 3.7, falling through the x-axis at negative 3 to a low point near (−2.1, −4.1), rising through the x-axis at negative 1 and crossing the y-axis at 6 to a high point near (0.8, 8.2), then falling through the x-axis at 2 and out of the bottom of the frame near x equals 2.5. The x-axis runs from negative 5 to 5 and the y-axis from negative 10 to 10.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"unit":18,"tickLabels":true,"tickStep":2,"polynomials":[{"coeffs":[6,5,-2,-1],"arrows":true}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
@@ -761,16 +766,18 @@ The $x$-intercepts are $(0,0)$, $(-3,0)$, and $(4,0)$.
 The degree is 3 so the graph has at most 2 turning points.
 
 {{< fillin
-  question="Given the function $f(x)=0.2(x-2)(x+1)(x-5)$, what is the y-intercept?"
-  answer="2"
+  question="Given the function $f(x)=0.2(x-2)(x+1)(x-5)$, what is the $y$-intercept? Enter it as an ordered pair."
+  answer="(0,2)"
+  answerForm="decimal"
   answerDisplay="$(0,2)$"
-  hint="Evaluate f(0)."
+  hint="Evaluate $f(0)$."
 >}}
 
 {{< fillin
   question="What is the maximum number of turning points for that same function, $f(x)=0.2(x-2)(x+1)(x-5)$?"
   answer="2"
-  hint="The degree is 3, and the maximum number of turning points is always one fewer than the degree."
+  answerForm="decimal"
+  hint="Find the degree from the highest power of $x$ the product produces; a polynomial of degree $n$ has at most $n-1$ turning points."
 >}}
 
 ## Key equations
@@ -831,7 +838,7 @@ direction.
 {{< multiplechoice
   question="Which statement correctly distinguishes the coefficient from the degree in the power function $f(x)=kx^p$?"
   answer="k is the coefficient — the real number multiplied by the variable raised to a power; p is the degree — the highest power the variable is raised to."
-  hint="The coefficient multiplies the variable; the degree is the exponent on it."
+  hint="Reread the Power function definition box and the definition of degree in the subsection on degree and leading coefficient."
 >}}
 k is the coefficient — the real number multiplied by the variable raised to a power; p is the degree — the highest power the variable is raised to.
 p is the coefficient — the real number multiplied by the variable raised to a power; k is the degree — the highest power the variable is raised to.
@@ -855,7 +862,7 @@ Neither
 {{< multiplechoice
   question="Determine the end behavior of $f(x)=x^4$."
   answer="As $x$ approaches both negative and positive infinity, $f(x)$ increases without bound."
-  hint="The exponent is even and the coefficient is positive."
+  hint="Decide whether the power is even or odd and whether the coefficient is positive or negative, then find that case among the four comparison graphs."
 >}}
 As $x$ approaches negative infinity, $f(x)$ decreases without bound, and as $x$ approaches positive infinity, $f(x)$ increases without bound.
 As $x$ approaches both negative and positive infinity, $f(x)$ increases without bound.
@@ -866,7 +873,7 @@ As $x$ approaches negative infinity, $f(x)$ increases without bound, and as $x$ 
 {{< multiplechoice
   question="Determine the end behavior of $f(x)=-x^4$."
   answer="As $x$ approaches both negative and positive infinity, $f(x)$ decreases without bound."
-  hint="The exponent is even and the coefficient is negative."
+  hint="Decide whether the power is even or odd and whether the coefficient is positive or negative, then find that case among the four comparison graphs."
 >}}
 As $x$ approaches negative infinity, $f(x)$ increases without bound, and as $x$ approaches positive infinity, $f(x)$ decreases without bound.
 As $x$ approaches both negative and positive infinity, $f(x)$ decreases without bound.
@@ -877,7 +884,7 @@ As $x$ approaches negative infinity, $f(x)$ decreases without bound, and as $x$ 
 {{< multiplechoice
   question="In general, what is the end behavior of a polynomial with odd degree if the leading coefficient is positive?"
   answer="As $x$ decreases without bound, so does $f(x)$; as $x$ increases without bound, so does $f(x)$."
-  hint="An odd-degree, positive-leading-coefficient polynomial behaves like $x^3$ far from the origin."
+  hint="The end behavior matches that of the leading term: find the odd-power, positive-coefficient case among the four comparison graphs."
 >}}
 As $x$ decreases or increases without bound, $f(x)$ increases without bound.
 As $x$ decreases without bound, $f(x)$ increases without bound; as $x$ increases without bound, $f(x)$ decreases without bound.
@@ -890,7 +897,7 @@ As $x$ decreases or increases without bound, $f(x)$ decreases without bound.
 {{< multiplechoice
   question="Identify $f(x)=\tfrac{x^2}{x^2-1}$ as a power function, a polynomial function, both, or neither."
   answer="Neither"
-  hint="A polynomial function has no variable in a denominator."
+  hint="Check whether it can be written as one term $kx^p$, and whether it can be written as a sum of terms $a_ix^i$ with non-negative integer powers."
 >}}
 Power function only
 Polynomial function only
@@ -914,25 +921,29 @@ Neither
 {{< fillin
   question="Find the degree of the polynomial $7-2x^2$."
   answer="2"
+  answerForm="decimal"
   hint="Write the polynomial in general form first, then read off the highest power."
 >}}
 
 {{< fillin
   question="Find the leading coefficient of that same polynomial, $7-2x^2$."
   answer="-2"
+  answerForm="decimal"
   hint="The leading coefficient is the coefficient of the term with the highest power."
 >}}
 
 {{< fillin
   question="Find the degree of the polynomial $x(4-x^2)(2x+1)$."
   answer="4"
+  answerForm="decimal"
   hint="Multiply out the factors, or track the highest power each factor contributes."
 >}}
 
 {{< fillin
   question="Find the leading coefficient of that same polynomial, $x(4-x^2)(2x+1)$."
   answer="-2"
-  hint="Multiply the leading terms of the three factors together."
+  answerForm="decimal"
+  hint="Multiply the highest-power terms of the three factors together, then read off the coefficient."
 >}}
 
 {{< multiplechoice
@@ -953,24 +964,31 @@ Functions and Polynomial Functions](https://openstax.org/books/precalculus-2e/pa
 by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA
 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original
 for free at [openstax.org](https://openstax.org/details/books/precalculus-2e).
-Changes: recreated every graph as an accessible inline SVG generated from its
-exact or fitted equation, matching the source's window, arrows, and marked
+Changes: recreated every graph as an accessible figure generated from its
+exact or fitted equation, following the source's window, arrows, and marked
 points — the even-power family $x^2,x^4,x^6$ and the odd-power family
-$x^3,x^5,x^7$ on shared grids; the source's four-panel end-behavior schematic
+$x^3,x^5,x^7$ on shared grids, each curve named beside its own arrowhead (the
+families are drawn in one color, so the steepest curve stops lower than the
+others to keep the arrowheads apart, and both grids are taller than the
+source's), with the even-power family named as the prose names it,
+$f(x)=x^2$, $g(x)=x^4$, $h(x)=x^6$, where the source figure names $x^2$ $h$
+and $x^6$ $f$; the source's four-panel end-behavior schematic
 (even/odd power against positive/negative coefficient), restored as four
 separate figures in the source's own reading order, each drawn from the
 simplest representative of its case ($x^2$, $x^3$, $-x^2$, $-x^3$) since the
 source's cells carry no formula of their own; $x^8$;
-$-x^9$; the four Key Equations table graphs from their exact polynomials
+$-x^9$; the four graphs of the polynomial/leading-term table from their exact polynomials
 ($5x^4+2x^3-x-4$, $-2x^6-x^5+3x^4+x^3$, $3x^5-4x^4+2x^2+1$,
 $-6x^3+7x^2+3x+1$); $(x-2)(x+1)(x-4)$ and $x^4-4x^2-45$ with their intercepts
 marked; and fitted an explicit cubic or quartic formula, recorded in the
-source ledger, for the four schematic figures that had no source formula (the
+source ledger, for the five schematic figures that had no source formula (the
 turning-point/intercept vocabulary diagram, the "describe the end behavior"
 generic odd-degree curve, the generic even-degree dome, and the two
 "conclude the degree" schematic curves) — never traced as a freeform spline;
 condensed the paired plain and annotated versions of the turning-point
-example's graph into one labeled figure; presented the source's tabular data
+example's graph into one labeled figure, whose dots and dashed pointers mark
+the intercepts and turning points as the source's annotated version does (the
+vocabulary diagram marks its three $x$-intercepts the same way); presented the source's tabular data
 (the bird population, and the polynomial/leading-term table) as Markdown
 tables; replaced the "Terminology of Polynomial Functions" annotated artwork
 (arrows from labels into the general-form equation) with the equivalent

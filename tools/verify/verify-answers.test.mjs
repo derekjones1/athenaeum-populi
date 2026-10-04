@@ -174,6 +174,10 @@ test('verify-answers: every prompt class re-derives its answers from the printed
 
   assert.equal(analyze('Find the $x$-intercept of $f(x)=\\tfrac{1}{4}x-4$. Enter its $x$-coordinate.', '16').status, 'pass');
   assert.equal(analyze('Find the $x$-intercept of $f(x)=\\tfrac{1}{4}x-4$. Enter its $x$-coordinate.', '15').status, 'fail');
+  // a count of intercepts is not an intercept
+  assert.notEqual(analyze('How many $x$-intercepts does the parabola $g(x)=x^2-6x+13$ have? Enter a whole number.', '0').status, 'fail');
+  // a complex value's standard form is not a rewrite of the printed function
+  assert.notEqual(analyze('Let $f(x)=\\tfrac{x+1}{x-4}$. Evaluate $f(-i)$. Write the result in standard form, $a+bi$.', '-\\frac{3}{17}+\\frac{5}{17}i').status, 'fail');
   assert.equal(analyze('The graph of $f(x)=-\\lvert x+2\\rvert+3$ crosses the vertical axis at $(0,b)$. Find $b$.', '1').status, 'pass');
   // ordered-pair intercepts are points that must lie on the graph, whichever
   // intercept each one is

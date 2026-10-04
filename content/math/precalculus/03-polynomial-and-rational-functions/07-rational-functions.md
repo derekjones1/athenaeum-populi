@@ -48,11 +48,11 @@ reciprocal function from our study of toolkit functions. Examine these
 graphs, shown below, and notice some of their features.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The toolkit graph of f of x equals 1 over x. On a grid from −4 to 4 on both axes, the left branch falls from near the top at x just below 0 down and off the bottom, and the right branch rises from off the bottom at x just above 0 up toward the top, each branch flattening toward the x-axis as it runs away from the origin.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}]}
+{"ariaLabel":"The toolkit graph of f of x equals 1 over x. On a grid from −4 to 4 on both axes, the left branch falls from near the top at x just below 0 down and off the bottom, and the right branch rises from off the bottom at x just above 0 up toward the top, each branch flattening toward the x-axis as it runs away from the origin.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1],"from":-3.69,"to":-0.2711},{"num":[1],"den":[0,1],"from":0.2711,"to":3.69}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The toolkit graph of f of x equals 1 over x squared. On a grid from −4 to 4 on both axes, both branches rise steeply toward the top on either side of x=0 and flatten toward the x-axis moving away from the origin, so the whole curve stays above the x-axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,0,1]}]}
+{"ariaLabel":"The toolkit graph of f of x equals 1 over x squared. On a grid from −4 to 4 on both axes, both branches rise steeply toward the top on either side of x=0 and flatten toward the x-axis moving away from the origin, so the whole curve stays above the x-axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,0,1],"from":-3.69,"to":-0.5206},{"num":[1],"den":[0,0,1],"from":0.5206,"to":3.69}]}
 {{< /apfigure >}}
 
 Several things are apparent if we examine the graph of $f(x)=\tfrac{1}{x}$.
@@ -107,7 +107,7 @@ We write in arrow notation
 $$\text{as }x\to0^{+},\ f(x)\to\infty$$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 1 over x with four labelled arrows: near the top, as x approaches 0 from the right, f(x) approaches infinity; on the left, as x approaches negative infinity, f(x) approaches 0; on the right, as x approaches infinity, f(x) approaches 0; near the bottom, as x approaches 0 from the left, f(x) approaches negative infinity.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"texts":[{"at":[0.45,4.2],"text":"Right of 0: f(x) → ∞","anchor":"start"},{"at":[-0.85,1],"text":"As x → −∞: f(x) → 0","anchor":"end"},{"at":[0.85,-1.35],"text":"As x → ∞: f(x) → 0","anchor":"start"},{"at":[0.3,-4.55],"text":"Left of 0: f(x) → −∞","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals 1 over x with four labelled arrows: near the top, as x approaches 0 from the right, f(x) approaches infinity; on the left, as x approaches negative infinity, f(x) approaches 0; on the right, as x approaches infinity, f(x) approaches 0; near the bottom, as x approaches 0 from the left, f(x) approaches negative infinity.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1],"from":-4.75,"to":-0.2124},{"num":[1],"den":[0,1],"from":0.2124,"to":4.71}],"texts":[{"at":[0.55,3.9],"text":"As x → 0⁺: f(x) → ∞","anchor":"start"},{"at":[-0.85,1],"text":"As x → −∞: f(x) → 0","anchor":"end"},{"at":[0.85,-1.35],"text":"As x → ∞: f(x) → 0","anchor":"start"},{"at":[0.3,-4.55],"text":"As x → 0⁻: f(x) → −∞","anchor":"start"}]}
 {{< /apfigure >}}
 
 This behavior creates a **vertical asymptote**, which is a vertical line
@@ -115,7 +115,7 @@ that the graph approaches but never crosses. In this case, the graph is
 approaching the vertical line $x=0$ as the input becomes close to zero.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 1 over x with a dashed red vertical line at x=0, labelled x=0, showing the vertical asymptote.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}]}
+{"ariaLabel":"The graph of f of x equals 1 over x with a dashed vertical line at x=0, labelled x=0, showing the vertical asymptote.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1],"from":-4.75,"to":-0.2124},{"num":[1],"den":[0,1],"from":0.2124,"to":4.71}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelAt":0.25,"labelSide":"right"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -135,7 +135,7 @@ the values of $x$ approach negative infinity, the function values approach
 $$\text{as }x\to\infty,\ f(x)\to0,\ \text{ and as }x\to-\infty,\ f(x)\to0$$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 1 over x again, with the same four labelled arrows highlighting its end behavior: as x approaches negative infinity or positive infinity, f(x) approaches 0, and as x approaches 0 from the left or right, f(x) approaches negative infinity or infinity respectively.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"texts":[{"at":[0.45,4.2],"text":"Right of 0: f(x) → ∞","anchor":"start"},{"at":[-0.85,1],"text":"As x → −∞: f(x) → 0","anchor":"end"},{"at":[0.85,-1.35],"text":"As x → ∞: f(x) → 0","anchor":"start"},{"at":[0.3,-4.55],"text":"Left of 0: f(x) → −∞","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals 1 over x again, with the same four labelled arrows highlighting its end behavior: as x approaches negative infinity or positive infinity, f(x) approaches 0, and as x approaches 0 from the left or right, f(x) approaches negative infinity or infinity respectively.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1],"from":-4.75,"to":-0.2124},{"num":[1],"den":[0,1],"from":0.2124,"to":4.71}],"texts":[{"at":[0.55,3.9],"text":"As x → 0⁺: f(x) → ∞","anchor":"start"},{"at":[-0.85,1],"text":"As x → −∞: f(x) → 0","anchor":"end"},{"at":[0.85,-1.35],"text":"As x → ∞: f(x) → 0","anchor":"start"},{"at":[0.3,-4.55],"text":"As x → 0⁻: f(x) → −∞","anchor":"start"}]}
 {{< /apfigure >}}
 
 Based on this overall behavior and the graph, we can see that the function
@@ -146,7 +146,7 @@ decreases without bound. In this case, the graph is approaching the
 horizontal line $y=0$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 1 over x with both asymptotes dashed: a vertical line at x=0 labelled x=0 and a horizontal line at y=0 labelled y=0.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelAt":0.24}]}
+{"ariaLabel":"The graph of f of x equals 1 over x with both asymptotes dashed: a vertical line at x=0 labelled x=0 and a horizontal line at y=0 labelled y=0.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1],"from":-4.75,"to":-0.2124},{"num":[1],"den":[0,1],"from":0.2124,"to":4.71}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelAt":0.25,"labelSide":"right"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelAt":0.24}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -161,7 +161,7 @@ horizontal line $y=0$.
 behavior of the function graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of a rational function with a vertical asymptote at x=2 and a horizontal asymptote at y=4. The left branch falls from the horizontal asymptote near y=4 as x approaches 2 from the left, dropping toward negative infinity; the right branch drops from positive infinity just right of x=2 and levels off toward y=4 as x increases.","xMin":-6,"xMax":6,"yMin":-12,"yMax":12,"unit":18,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-7,4],"den":[-2,1]}],"lines":[{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":4,"dashed":true,"arrows":false,"label":"y = 4","labelSide":"left"}]}
+{"ariaLabel":"The graph of a rational function with a vertical asymptote at x=2 and a horizontal asymptote at y=4. The left branch falls from the horizontal asymptote near y=4 as x approaches 2 from the left, dropping toward negative infinity; the right branch drops from positive infinity just right of x=2 and levels off toward y=4 as x increases.","xMin":-6,"xMax":6,"yMin":-12,"yMax":12,"unit":18,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-7,4],"den":[-2,1],"from":-6,"to":1.9375},{"num":[-7,4],"den":[-2,1],"from":2.125,"to":6}],"lines":[{"x":2,"dashed":true,"arrows":false,"label":"x = 2","labelAt":0.25,"labelSide":"right"},{"y":4,"dashed":true,"arrows":false,"label":"y = 4","labelSide":"left"}]}
 {{< /apfigure >}}
 
 **Solution.** Notice that the graph is showing a vertical asymptote at
@@ -178,7 +178,7 @@ $$\text{as }x\to\infty,\ f(x)\to4\ \text{ and as }x\to-\infty,\ f(x)\to4$$
 {{< multiplechoice
   question="Use arrow notation to describe the end behavior and local behavior of the reciprocal squared function $f(x)=\tfrac{1}{x^2}$."
   answer="As $x\to\pm\infty$, $f(x)\to0$; as $x\to0$, $f(x)\to\infty$"
-  hint="Squaring $x$ keeps the denominator positive on both sides of 0, so both branches behave the same way there."
+  hint="Find the sign of $x^2$ just left and just right of $0$, and the size of $\tfrac{1}{x^2}$ when $\lvert x\rvert$ is very large."
 >}}
 As $x\to\pm\infty$, $f(x)\to0$; as $x\to0$, $f(x)\to\infty$
 As $x\to\pm\infty$, $f(x)\to\infty$; as $x\to0$, $f(x)\to0$
@@ -222,16 +222,17 @@ left 2 and up 3 along with the function.
 {{< fillin
   question="The reciprocal squared function is shifted right 3 units and down 4 units. Find the vertical asymptote of the resulting graph."
   answer="x=3"
-  answerForm="solved:x"
+  answerForm="solved:x decimal"
   answerDisplay="$x=3$"
-  hint="A horizontal shift right by $h$ moves the reciprocal squared function's asymptote at $x=0$ to $x=h$."
+  hint="The asymptotes move with the graph: apply the horizontal shift to the toolkit function's vertical asymptote."
 >}}
 
 {{< fillin
   question="Find the horizontal asymptote of that same shifted graph."
   answer="y=-4"
+  answerForm="decimal"
   answerDisplay="$y=-4$"
-  hint="A vertical shift down by $k$ moves the reciprocal squared function's asymptote at $y=0$ to $y=-k$."
+  hint="The asymptotes move with the graph: apply the vertical shift to the toolkit function's horizontal asymptote."
 >}}
 
 ## Solving applied problems involving rational functions
@@ -312,6 +313,7 @@ the long term.
 {{< fillin
   question="There are 1,200 first-year and 1,500 second-year students at a rally at noon. After 12 p.m., 20 first-year students arrive at the rally every five minutes while 15 second-year students leave the rally. Find the ratio of first-year to second-year students at 1 p.m."
   answer="\frac{12}{11}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{12}{11}$"
   hint="One hour is twelve 5-minute intervals; add $20$ first-years and subtract $15$ second-years per interval, then form the ratio."
 >}}
@@ -357,7 +359,7 @@ is all real numbers except $x=\pm3$.
 function is not defined when $x=\pm3$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x+3 over x squared minus 9, which reduces to 1 over x−3, with a vertical asymptote at x=3 and a horizontal asymptote at y=0.","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[3,1],"den":[-9,0,1]}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
+{"ariaLabel":"The graph of f of x equals the quantity x+3 over x squared minus 9, which reduces to 1 over x−3, with a vertical asymptote at x=3, a horizontal asymptote at y=0, and an open circle marking the hole at (−3, −1/6).","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[-3,1],"from":-5.7,"to":2.75},{"num":[1],"den":[-3,1],"from":3.25,"to":5.5}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3","labelAt":0.2,"labelSide":"right"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[-3,-0.16666666666666666],"open":true}],"xTickStep":2}
 {{< /apfigure >}}
 
 There is a vertical asymptote at $x=3$ and a hole in the graph at $x=-3$. We
@@ -366,8 +368,9 @@ will discuss these types of holes in greater detail later in this section.
 {{< fillin
   question="Find the domain of $f(x)=\tfrac{4x}{5(x-1)(x-5)}$. Write the domain in interval notation."
   answer="(-\infty,1)\cup(1,5)\cup(5,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,1)\cup(1,5)\cup(5,\infty)$"
-  hint="The denominator is zero when $x=1$ or $x=5$; remove both points from the real line."
+  hint="Set the denominator equal to zero, solve, and remove every solution from the real line."
 >}}
 
 ## Identifying vertical asymptotes of rational functions
@@ -425,7 +428,7 @@ indicate two vertical asymptotes. The graph below confirms the location of
 the two vertical asymptotes.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of k of x equals the quantity 5+2x squared over 2−x−x squared, with vertical asymptotes at x=−2 and x=1 and a horizontal asymptote at y=−2.","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[5,0,2],"den":[2,-1,-1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"y":-2,"dashed":true,"arrows":false,"label":"y = −2","labelSide":"left"}]}
+{"ariaLabel":"The graph of k of x equals the quantity 5+2x squared over 2−x−x squared, with vertical asymptotes at x=−2 and x=1 and a horizontal asymptote at y=−2.","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[5,0,2],"den":[2,-1,-1],"from":-6,"to":-2.7713},{"num":[5,0,2],"den":[2,-1,-1],"from":-1.219,"to":0.522},{"num":[5,0,2],"den":[2,-1,-1],"from":1.3713,"to":6}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"y":-2,"dashed":true,"arrows":false,"label":"y = −2","labelSide":"left"}]}
 {{< /apfigure >}}
 
 ### Removable discontinuities
@@ -445,7 +448,7 @@ discontinuity. Notice also that $x-3$ is not a factor in both the numerator
 and denominator. The zero of this factor, $x=3$, is the vertical asymptote.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x squared minus 1, over x squared minus 2x minus 3, which reduces to the quantity x−1 over x−3. There is a vertical asymptote at x=3 and an open circle marking a removable discontinuity at (−1, 0.5).","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-1,0,1],"den":[-3,-2,1]}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3","labelSide":"right"}],"points":[{"at":[-1,0.5],"open":true}]}
+{"ariaLabel":"The graph of f of x equals the quantity x squared minus 1, over x squared minus 2x minus 3, which reduces to the quantity x−1 over x−3. There is a vertical asymptote at x=3 and an open circle marking a removable discontinuity at (−1, 0.5).","xMin":-4,"xMax":10,"yMin":-7,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-1,1],"den":[-3,1],"from":-4,"to":2.75},{"num":[-1,1],"den":[-3,1],"from":3.3333,"to":9.6}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3","labelSide":"right","labelAt":0.2}],"points":[{"at":[-1,0.5],"open":true}],"yTickStep":2}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -476,7 +479,7 @@ numerator, $x+2$. The zero for this factor is $x=-2$. The vertical
 asymptote is $x=-2$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of k of x equals the quantity x−2 over x squared minus 4, which reduces to 1 over x+2. There is a vertical asymptote at x=−2 and an open circle marking a removable hole at (2, 1/4).","xMin":-8,"xMax":4,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-2,1],"den":[-4,0,1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"}],"points":[{"at":[2,0.25],"open":true}]}
+{"ariaLabel":"The graph of k of x equals the quantity x−2 over x squared minus 4, which reduces to 1 over x+2. There is a vertical asymptote at x=−2 and an open circle marking a removable hole at (2, 1/4).","xMin":-8,"xMax":4,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":2,"rationals":[{"num":[1],"den":[2,1],"from":-7.5,"to":-2.1667},{"num":[1],"den":[2,1],"from":-1.8333,"to":3.5}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"}],"points":[{"at":[2,0.25],"open":true}]}
 {{< /apfigure >}}
 
 The graph of this function will have the vertical asymptote at $x=-2$, but
@@ -486,6 +489,7 @@ at $x=2$ the graph will have a hole.
   question="Find the vertical asymptotes of $f(x)=\tfrac{x^2-25}{x^3-6x^2+5x}$. If there is more than one, separate them with a comma."
   answer="x=0,x=1"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=0$ or $x=1$"
   hint="Factor numerator and denominator, cancel the common factor, then find where the reduced denominator is zero."
 >}}
@@ -493,8 +497,9 @@ at $x=2$ the graph will have a hole.
 {{< fillin
   question="That same function has a removable discontinuity. Give it as an ordered pair $(x,y)$."
   answer="(5,\frac{1}{2})"
+  answerForm="lowest-terms"
   answerDisplay="$(5,\tfrac{1}{2})$"
-  hint="The common factor $x-5$ cancels; evaluate the reduced function at $x=5$ to get the missing point's $y$-value."
+  hint="The zero of the factor the numerator and denominator share is the hole's $x$-value; evaluate the reduced function there for its $y$-value."
 >}}
 
 ## Identifying horizontal asymptotes of rational functions
@@ -521,7 +526,7 @@ outputs will approach zero, resulting in a horizontal asymptote at $y=0$.
 See the graph below. Note that this graph crosses the horizontal asymptote.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity 4x+2 over x squared plus 4x minus 5, with vertical asymptotes at x=−5 and x=1 and a horizontal asymptote at y=0 that the graph crosses near the origin.","xMin":-10,"xMax":10,"yMin":-3,"yMax":4,"unit":15,"tickLabels":true,"tickStep":1,"xTickStep":2,"rationals":[{"num":[2,4],"den":[-5,4,1]}],"lines":[{"x":-5,"dashed":true,"arrows":false,"label":"x = −5"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
+{"ariaLabel":"The graph of f of x equals the quantity 4x+2 over x squared plus 4x minus 5, with vertical asymptotes at x=−5 and x=1 and a horizontal asymptote at y=0 that the graph crosses near the origin.","xMin":-10,"xMax":10,"yMin":-3,"yMax":4,"unit":15,"tickLabels":true,"tickStep":1,"xTickStep":2,"rationals":[{"num":[2,4],"den":[-5,4,1],"from":-9.26,"to":-6.0497},{"num":[2,4],"den":[-5,4,1],"from":-4.2838,"to":0.7162},{"num":[2,4],"den":[-5,4,1],"from":1.2839,"to":9.4}],"lines":[{"x":-5,"dashed":true,"arrows":false,"label":"x = −5"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1","labelAt":0.2,"labelSide":"right"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelAt":0.92,"labelSide":"right"}]}
 {{< /apfigure >}}
 
 **Case 2:** If the degree of the denominator < degree of the numerator by
@@ -543,7 +548,7 @@ The slant asymptote is the graph of the line $g(x)=3x+1$. See the graph
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity 3x squared minus 2x plus 1 over x−1, with a vertical asymptote at x=1 and a dashed slant asymptote along y=3x+1.","xMin":-5,"xMax":5,"yMin":-12,"yMax":12,"unit":20,"tickLabels":true,"tickStep":2,"rationals":[{"num":[1,-2,3],"den":[-1,1]}],"lines":[{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"slope":3,"intercept":1,"dashed":true,"arrows":false,"label":"y = 3x + 1"}]}
+{"ariaLabel":"The graph of f of x equals the quantity 3x squared minus 2x plus 1 over x−1, with a vertical asymptote at x=1 and a dashed slant asymptote along y=3x+1.","xMin":-5,"xMax":5,"yMin":-12,"yMax":12,"unit":20,"tickLabels":true,"tickStep":2,"rationals":[{"num":[1,-2,3],"den":[-1,1],"from":-5,"to":0.8719},{"num":[1,-2,3],"den":[-1,1],"from":1.2793,"to":5}],"lines":[{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"slope":3,"intercept":1,"dashed":true,"arrows":false,"label":"y = 3x + 1"}]}
 {{< /apfigure >}}
 
 **Case 3:** If the degree of the denominator = degree of the numerator,
@@ -560,7 +565,7 @@ $f(x)\to3$, resulting in a horizontal asymptote at $y=3$. See the graph
 below. Note that this graph crosses the horizontal asymptote.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity 3x squared plus 2 over x squared plus 4x minus 5, with vertical asymptotes at x=−5 and x=1 and a horizontal asymptote at y=3.","xMin":-20,"xMax":16,"yMin":-6,"yMax":10,"unit":12,"tickLabels":true,"tickStep":2,"xTickStep":4,"rationals":[{"num":[2,0,3],"den":[-5,4,1]}],"lines":[{"x":-5,"dashed":true,"arrows":false,"label":"x = −5","labelAt":0.1},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"y":3,"dashed":true,"arrows":false,"label":"y = 3"}]}
+{"ariaLabel":"The graph of f of x equals the quantity 3x squared plus 2 over x squared plus 4x minus 5, with vertical asymptotes at x=−5 and x=1 and a horizontal asymptote at y=3.","xMin":-20,"xMax":16,"yMin":-6,"yMax":10,"unit":12,"tickLabels":true,"tickStep":2,"xTickStep":4,"rationals":[{"num":[2,0,3],"den":[-5,4,1],"from":-20,"to":-6.8058},{"num":[2,0,3],"den":[-5,4,1],"from":-3.5444,"to":0.8777},{"num":[2,0,3],"den":[-5,4,1],"from":1.1028,"to":16}],"lines":[{"x":-5,"dashed":true,"arrows":false,"label":"x = −5","labelAt":0.1},{"x":1,"dashed":true,"arrows":false,"label":"x = 1","labelAt":0.12,"labelSide":"right"},{"y":3,"dashed":true,"arrows":false,"label":"y = 3"}]}
 {{< /apfigure >}}
 
 Notice that, while the graph of a rational function will never cross a
@@ -673,7 +678,7 @@ $f(x)\to0$. This function will have a horizontal asymptote at $y=0$. See
 the graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, with vertical asymptotes at x=−2, x=1, and x=5, and a horizontal asymptote at y=0.","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
+{"ariaLabel":"The graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, with vertical asymptotes at x=−2, x=1, and x=5, and a horizontal asymptote at y=0.","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1],"from":-5.5,"to":-2.0306},{"num":[-6,1,1],"den":[10,-7,-4,1],"from":-1.9669,"to":0.9417},{"num":[-6,1,1],"den":[10,-7,-4,1],"from":1.0531,"to":4.8585},{"num":[-6,1,1],"den":[10,-7,-4,1],"from":5.1442,"to":7.5}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
 {{< /apfigure >}}
 
 {{< graphplot
@@ -688,6 +693,7 @@ the graph below.
 {{< fillin
   question="Find the horizontal asymptote of that same function."
   answer="y=4"
+  answerForm="decimal"
   answerDisplay="$y=4$"
   hint="Both the numerator and denominator are degree 2; take the ratio of their leading coefficients."
 >}}
@@ -733,29 +739,32 @@ The $y$-intercept is $(0,-0.6)$, the $x$-intercepts are $(2,0)$ and
 $(-3,0)$. See the graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, now marked with its y-intercept at (0, −0.6) and its x-intercepts at (2, 0) and (−3, 0).","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,-0.6],"label":"(0, −0.6)","labelNudge":[8,0]},{"at":[2,0],"label":"(2, 0)"},{"at":[-3,0],"label":"(−3, 0)"}]}
+{"ariaLabel":"The same graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, now marked with its y-intercept at (0, −0.6) and its x-intercepts at (2, 0) and (−3, 0).","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1],"from":-5.5,"to":-2.0306},{"num":[-6,1,1],"den":[10,-7,-4,1],"from":-1.9669,"to":0.9417},{"num":[-6,1,1],"den":[10,-7,-4,1],"from":1.0531,"to":4.8585},{"num":[-6,1,1],"den":[10,-7,-4,1],"from":5.1442,"to":7.5}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelAt":0.9,"labelSide":"right"}],"points":[{"at":[0,-0.6],"label":"(0, −0.6)","labelNudge":[16,4]},{"at":[2,0],"label":"(2, 0)"},{"at":[-3,0],"label":"(−3, 0)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write the reciprocal squared function, shifted right 3 units and down 4 units, as a single rational function $\tfrac{P(x)}{Q(x)}$."
   answer="\frac{-4x^2+24x-35}{x^2-6x+9}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{-4x^2+24x-35}{x^2-6x+9}$"
-  hint="Start from $\tfrac{1}{(x-3)^2}-4$, give both terms the denominator $(x-3)^2$, then combine into one fraction."
+  hint="Write the shifted function as $\tfrac{1}{(x-h)^2}+k$, rewrite the constant over the same denominator, then combine and expand."
 >}}
 
 {{< fillin
-  question="Find the vertical asymptote of that function."
-  answer="x=3"
-  answerDisplay="$x=3$"
-  hint="The denominator $(x-3)^2$ is zero only at $x=3$."
+  question="Find the $x$-intercepts of that function. Enter them as ordered pairs, separated by a comma."
+  answer="(2.5,0),(3.5,0)"
+  answerMode="unordered"
+  answerForm="lowest-terms"
+  answerDisplay="$(2.5,0)$ and $(3.5,0)$"
+  hint="Set the numerator equal to zero and solve; check that neither solution also makes the denominator zero."
 >}}
 
 {{< fillin
-  question="Find the horizontal asymptote of that function."
-  answer="y=-4"
-  answerDisplay="$y=-4$"
-  hint="Numerator and denominator have the same degree; take the ratio of their leading coefficients."
+  question="Find the $y$-intercept of that function, as an ordered pair $(x,y)$."
+  answer="(0,-\frac{35}{9})"
+  answerForm="lowest-terms"
+  answerDisplay="$(0,-\tfrac{35}{9})$"
+  hint="Evaluate the function at $x=0$."
 >}}
 
 ## Graphing rational functions
@@ -774,7 +783,7 @@ on one side of the vertical asymptote the graph heads towards positive
 infinity, and on the other side the graph heads towards negative infinity.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The toolkit graph of y equals 1 over x on a grid from −4 to 4, with a dashed vertical asymptote at x=0. The graph heads toward negative infinity just left of the asymptote and toward positive infinity just right of it.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelSide":"right"}],"texts":[{"at":[1.1,2.6],"text":"y = 1/x","anchor":"start"}]}
+{"ariaLabel":"The toolkit graph of y equals 1 over x on a grid from −4 to 4, with a dashed vertical asymptote at x=0. The graph heads toward negative infinity just left of the asymptote and toward positive infinity just right of it.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1],"from":-3.69,"to":-0.2711},{"num":[1],"den":[0,1],"from":0.2711,"to":3.69}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelSide":"right"}],"texts":[{"at":[1.1,2.6],"text":"y = 1/x","anchor":"start"}]}
 {{< /apfigure >}}
 
 When the degree of the factor in the denominator is even, the
@@ -783,14 +792,14 @@ positive infinity on both sides of the vertical asymptote or heads toward
 negative infinity on both sides.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The toolkit graph of y equals 1 over x squared on a grid from −4 to 4, with a dashed vertical asymptote at x=0. The graph heads toward positive infinity on both sides of the asymptote.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelSide":"right"}],"texts":[{"at":[1.1,2.6],"text":"y = 1/x²","anchor":"start"}]}
+{"ariaLabel":"The toolkit graph of y equals 1 over x squared on a grid from −4 to 4, with a dashed vertical asymptote at x=0. The graph heads toward positive infinity on both sides of the asymptote.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,0,1],"from":-3.69,"to":-0.5206},{"num":[1],"den":[0,0,1],"from":0.5206,"to":3.69}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelSide":"right"}],"texts":[{"at":[1.1,2.6],"text":"y = 1/x²","anchor":"start"}]}
 {{< /apfigure >}}
 
 For example, the graph of
 $f(x)=\tfrac{(x+1)^2(x-3)}{(x+3)^2(x-2)}$ is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x+1 squared times x−3, over the quantity x+3 squared times x−2, with vertical asymptotes at x=−3 and x=2, a horizontal asymptote at y=1, a bounce at the x-intercept (−1, 0), a crossing at the x-intercept (3, 0), and a y-intercept at (0, 1/6).","xMin":-8,"xMax":8,"yMin":-12,"yMax":18,"unit":15,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-3,-5,-1,1],"den":[-18,-3,4,1]}],"lines":[{"x":-3,"dashed":true,"arrows":false,"label":"x = −3"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":1,"dashed":true,"arrows":false,"label":"y = 1"}],"points":[{"at":[-1,0],"label":"(−1, 0)","labelNudge":[-6,-2]},{"at":[3,0],"label":"(3, 0)"},{"at":[0,0.16666666666666666]}],"texts":[{"at":[2.2,1.9],"text":"(0, 1/6)","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals the quantity x+1 squared times x−3, over the quantity x+3 squared times x−2, with vertical asymptotes at x=−3 and x=2, a horizontal asymptote at y=1, a bounce at the x-intercept (−1, 0), a crossing at the x-intercept (3, 0), and a y-intercept at (0, 1/6).","xMin":-8,"xMax":8,"yMin":-12,"yMax":18,"unit":15,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-3,-5,-1,1],"den":[-18,-3,4,1],"from":-8,"to":-3.6867},{"num":[-3,-5,-1,1],"den":[-18,-3,4,1],"from":-2.5871,"to":1.9797},{"num":[-3,-5,-1,1],"den":[-18,-3,4,1],"from":2.0294,"to":7.5}],"lines":[{"x":-3,"dashed":true,"arrows":false,"label":"x = −3","labelAt":0.2,"labelSide":"left"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":1,"dashed":true,"arrows":false,"label":"y = 1"}],"points":[{"at":[-1,0],"label":"(−1, 0)","labelNudge":[-6,-2]},{"at":[3,0],"label":"(3, 0)"},{"at":[0,0.16666666666666666]}],"texts":[{"at":[-3.74,-4.6],"text":"(0, 1/6)","anchor":"end"}],"segments":[{"from":[-3.62,-4.3],"to":[-0.21,-0.0923],"arrows":"end"}]}
 {{< /apfigure >}}
 
 - At the $x$-intercept $x=-1$ corresponding to the $(x+1)^2$ factor of the
@@ -868,7 +877,7 @@ between the asymptotes, letting us fill in the middle portion of the graph
 as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The middle portion of the graph of f of x equals the quantity x+2 times x−3, over the quantity x+1 squared times x−2, drawn only between its two vertical asymptotes. The curve dips from the y-intercept at (0, 3) to a low point and back up, and the x-intercepts at (−2, 0) and (3, 0) are marked as isolated points beyond the drawn portion.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,-1,1],"den":[-2,-3,0,1],"from":-1,"to":2}],"points":[{"at":[-2,0]},{"at":[3,0]}]}
+{"ariaLabel":"The middle portion of the graph of f of x equals the quantity x+2 times x−3, over the quantity x+1 squared times x−2, drawn only between its two vertical asymptotes. The curve falls from the top of the grid through the y-intercept at (0, 3) to a low point and rises back up toward the top; the x-intercepts at (−2, 0) and (3, 0) are marked as isolated points beyond the drawn portion.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,-1,1],"den":[-2,-3,0,1],"from":-0.3599,"to":1.9168}],"points":[{"at":[-2,0]},{"at":[0,3]},{"at":[3,0]}]}
 {{< /apfigure >}}
 
 The factor associated with the vertical asymptote at $x=-1$ was squared, so
@@ -883,13 +892,14 @@ passing through the $x$-intercepts, the graph will then level off toward an
 output of zero, as indicated by the horizontal asymptote.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The full graph of f of x equals the quantity x+2 times x−3, over the quantity x+1 squared times x−2, with vertical asymptotes at x=−1 and x=2 and a horizontal asymptote at y=0. Both sides of x=−1 rise toward positive infinity; the graph falls from positive infinity left of x=2 and rises from negative infinity right of x=2, then levels off toward y=0.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,-1,1],"den":[-2,-3,0,1]}],"lines":[{"x":-1,"dashed":true,"arrows":false,"label":"x = −1","labelSide":"right"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2","labelSide":"left"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
+{"ariaLabel":"The full graph of f of x equals the quantity x+2 times x−3, over the quantity x+1 squared times x−2, with vertical asymptotes at x=−1 and x=2, a horizontal asymptote at y=0, and its intercepts at (−2, 0), (0, 3), and (3, 0) marked. Both sides of x=−1 rise toward positive infinity; the graph rises toward positive infinity just left of x=2 and rises from negative infinity just right of x=2, then levels off toward y=0.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,-1,1],"den":[-2,-3,0,1],"from":-4.75,"to":-1.3693},{"num":[-6,-1,1],"den":[-2,-3,0,1],"from":-0.3599,"to":1.9168},{"num":[-6,-1,1],"den":[-2,-3,0,1],"from":2.0966,"to":4.71}],"lines":[{"x":-1,"dashed":true,"arrows":false,"label":"x = −1","labelAt":0.15,"labelSide":"left"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelAt":0.15,"labelSide":"left"}],"points":[{"at":[-2,0]},{"at":[0,3]},{"at":[3,0]}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Given the function $f(x)=\tfrac{(x+2)^2(x-2)}{2(x-1)^2(x-3)}$, find its vertical asymptotes. If there is more than one, separate them with a comma."
   answer="x=1,x=3"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=1$ or $x=3$"
   hint="Set each denominator factor equal to zero; neither cancels with a numerator factor."
 >}}
@@ -897,6 +907,7 @@ output of zero, as indicated by the horizontal asymptote.
 {{< fillin
   question="Find the horizontal asymptote of that same function."
   answer="y=\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$y=\tfrac{1}{2}$"
   hint="Numerator and denominator both have degree 3; take the ratio of their leading coefficients."
 >}}
@@ -904,6 +915,7 @@ output of zero, as indicated by the horizontal asymptote.
 {{< fillin
   question="Find the $y$-intercept of that same function, as an ordered pair $(x,y)$."
   answer="(0,\frac{4}{3})"
+  answerForm="lowest-terms"
   answerDisplay="$(0,\tfrac{4}{3})$"
   hint="Evaluate the function at $x=0$."
 >}}
@@ -954,7 +966,7 @@ factors.
 **Example.** Write an equation for the rational function shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An unlabeled graph of a rational function with two vertical asymptotes and a horizontal asymptote near y=0, passing through two x-intercepts. The left branch rises from a dip near the left asymptote up through the top of the grid; the middle branch dips down through both x-intercepts to a low point and rises back up; the right branch descends steeply then levels off near the horizontal axis.","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-24,-4,4],"den":[12,0,-9,3]}]}
+{"ariaLabel":"An unlabeled graph of a rational function in three pieces. The left piece runs just below the x-axis from the left, crosses the x-axis, and rises steeply toward the top of the grid. The middle piece rises from the bottom of the grid to a high point below the x-axis and falls back to the bottom. The right piece rises from the bottom of the grid, crosses the x-axis, and levels off just above it toward the right.","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-24,-4,4],"den":[12,0,-9,3],"from":-5.8,"to":-1.1021},{"num":[-24,-4,4],"den":[12,0,-9,3],"from":-0.9008,"to":1.3243},{"num":[-24,-4,4],"den":[12,0,-9,3],"from":2.3885,"to":5.6}]}
 {{< /apfigure >}}
 
 **Solution.** The graph appears to have $x$-intercepts at $x=-2$ and $x=3$.
@@ -967,7 +979,7 @@ $\tfrac{1}{x^2}$, with the graph heading toward negative infinity on both
 sides of the asymptote. See the annotated graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same rational function graph, now annotated: dashed vertical asymptotes at x=−1 and x=2, and x-intercepts marked at (−2, 0) and (3, 0).","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-24,-4,4],"den":[12,0,-9,3]}],"lines":[{"x":-1,"dashed":true,"arrows":false,"label":"x = −1"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"}],"points":[{"at":[-2,0],"label":"(−2, 0)"},{"at":[3,0],"label":"(3, 0)"}]}
+{"ariaLabel":"The same rational function graph, now annotated: dashed vertical asymptotes at x=−1 and x=2, and x-intercepts marked at (−2, 0) and (3, 0).","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-24,-4,4],"den":[12,0,-9,3],"from":-5.8,"to":-1.1021},{"num":[-24,-4,4],"den":[12,0,-9,3],"from":-0.9008,"to":1.3243},{"num":[-24,-4,4],"den":[12,0,-9,3],"from":2.3885,"to":5.6}],"lines":[{"x":-1,"dashed":true,"arrows":false,"label":"x = −1"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"}],"points":[{"at":[-2,0],"label":"(−2, 0)"},{"at":[3,0],"label":"(3, 0)"}]}
 {{< /apfigure >}}
 
 We can use this information to write a function of the form
@@ -1057,7 +1069,7 @@ As $x\to\pm\infty$, $f(x)\to-2$
 {{< multiplechoice
   question="Which statement correctly describes the local behavior of that same function, $f(x)=\tfrac{-2x}{x-6}$, near its vertical asymptote?"
   answer="As $x\to6^{-}$, $f(x)\to\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$"
-  hint="The vertical asymptote is at $x=6$; the numerator there is negative, so check how the denominator's sign changes on each side."
+  hint="The vertical asymptote is at $x=6$; check the sign of the numerator there and how the denominator's sign changes on each side."
 >}}
 As $x\to6^{-}$, $f(x)\to\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to\infty$
@@ -1070,6 +1082,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="In the refugee camp hospital, a large mixing tank currently contains 300 gallons of water, into which 8 pounds of sugar have been mixed. A tap opens, pouring 20 gallons of water per minute into the tank at the same time sugar is poured into the tank at a rate of 2 pounds per minute. Find the rational function $C(t)$ giving the concentration (pounds per gallon) of sugar in the tank after $t$ minutes."
   answer="\frac{8+2t}{300+20t}"
+  answerForm="single-fraction"
   answerDisplay="$C(t)=\tfrac{8+2t}{300+20t}$"
   hint="Write the pounds of sugar and gallons of water as linear functions of $t$, then divide sugar by water."
 >}}
@@ -1077,8 +1090,9 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="The concentration $C$ of a drug in a patient's bloodstream $t$ hours after injection is given by $C(t)=\tfrac{100t}{2t^2+75}$. Approximate, to the nearest hundredth, the number of hours at which the concentration is highest."
   answer="6.12"
+  answerForm="decimal"
   answerDisplay="$t\approx6.12$ hours"
-  hint="Graph or tabulate $C(t)$ and locate its peak; the maximum occurs at $t=\sqrt{37.5}$."
+  hint="Graph $C(t)$ on a calculator, or tabulate it, and read the $t$-value of the highest point."
 >}}
 
 ### Find the domains of rational functions
@@ -1086,15 +1100,17 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the domain of $f(x)=\tfrac{x+1}{x^2-1}$. Write the domain in interval notation."
   answer="(-\infty,-1)\cup(-1,1)\cup(1,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-1)\cup(-1,1)\cup(1,\infty)$"
-  hint="The denominator factors as $(x-1)(x+1)$; remove both zeros from the real line."
+  hint="Set the denominator equal to zero and solve; every solution leaves the domain, even one that also makes the numerator zero."
 >}}
 
 {{< fillin
   question="Find the domain of $f(x)=\tfrac{x^2+4x-3}{x^4-5x^2+4}$. Write the domain in interval notation."
   answer="(-\infty,-2)\cup(-2,-1)\cup(-1,1)\cup(1,2)\cup(2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,-2)\cup(-2,-1)\cup(-1,1)\cup(1,2)\cup(2,\infty)$"
-  hint="The denominator factors as $(x^2-1)(x^2-4)$; remove all four zeros from the real line."
+  hint="Factor the denominator as a quadratic in $x^2$, factor each piece again, and remove every zero from the real line."
 >}}
 
 ### Identify vertical asymptotes
@@ -1102,6 +1118,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the vertical asymptote of $f(x)=\tfrac{2}{5x+2}$."
   answer="x=-\frac{2}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$x=-\tfrac{2}{5}$"
   hint="Set the denominator equal to zero and solve for $x$."
 >}}
@@ -1110,8 +1127,9 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
   question="Find the vertical asymptotes of $f(x)=\tfrac{x}{x^2+5x-36}$. If there is more than one, separate them with a comma."
   answer="x=4,x=-9"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=4$ or $x=-9$"
-  hint="Factor the denominator as $(x-4)(x+9)$; neither factor cancels with the numerator."
+  hint="Factor the denominator, check that no factor cancels with the numerator, and set each remaining factor equal to zero."
 >}}
 
 ### Identify horizontal asymptotes
@@ -1119,6 +1137,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the horizontal asymptote of $f(x)=\tfrac{3x-4}{x^3-16x}$."
   answer="y=0"
+  answerForm="decimal"
   answerDisplay="$y=0$"
   hint="Compare the degree of the numerator to the degree of the denominator."
 >}}
@@ -1126,6 +1145,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the horizontal asymptote of $f(x)=\tfrac{4-2x}{3x-1}$."
   answer="y=-\frac{2}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$y=-\tfrac{2}{3}$"
   hint="Numerator and denominator both have degree 1; take the ratio of their leading coefficients."
 >}}
@@ -1135,6 +1155,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the vertical asymptote of $a(x)=\tfrac{x^2+2x-3}{x^2-1}$."
   answer="x=-1"
+  answerForm="decimal"
   answerDisplay="$x=-1$"
   hint="Factor both numerator and denominator, cancel the common factor, then find where the reduced denominator is zero."
 >}}
@@ -1142,6 +1163,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the horizontal asymptote of that same function, $a(x)=\tfrac{x^2+2x-3}{x^2-1}$."
   answer="y=1"
+  answerForm="decimal"
   answerDisplay="$y=1$"
   hint="Numerator and denominator have the same degree; take the ratio of their leading coefficients."
 >}}
@@ -1149,13 +1171,15 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="That same function, $a(x)=\tfrac{x^2+2x-3}{x^2-1}$, has a removable discontinuity. Give it as an ordered pair $(x,y)$."
   answer="(1,2)"
+  answerForm="decimal"
   answerDisplay="$(1,2)$"
-  hint="The factor $x-1$ cancels; evaluate the reduced function at $x=1$."
+  hint="The zero of the factor the numerator and denominator share is the hole's $x$-value; evaluate the reduced function there for its $y$-value."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of that same function, $a(x)=\tfrac{x^2+2x-3}{x^2-1}$, as an ordered pair $(x,y)$."
   answer="(0,3)"
+  answerForm="decimal"
   answerDisplay="$(0,3)$"
   hint="Evaluate the function at $x=0$."
 >}}
@@ -1164,6 +1188,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
   question="Find the vertical asymptotes of $w(x)=\tfrac{(x-1)(x+3)(x-5)}{(x+2)^2(x-4)}$. If there is more than one, separate them with a comma."
   answer="x=-2,x=4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-2$ or $x=4$"
   hint="Neither denominator factor, $(x+2)^2$ or $(x-4)$, matches a numerator factor."
 >}}
@@ -1171,6 +1196,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the horizontal asymptote of that same function, $w(x)=\tfrac{(x-1)(x+3)(x-5)}{(x+2)^2(x-4)}$."
   answer="y=1"
+  answerForm="decimal"
   answerDisplay="$y=1$"
   hint="Numerator and denominator both have degree 3; take the ratio of their leading coefficients."
 >}}
@@ -1178,6 +1204,7 @@ As $x\to6^{-}$, $f(x)\to-\infty$, and as $x\to6^{+}$, $f(x)\to-\infty$
 {{< fillin
   question="Find the $y$-intercept of that same function, $w(x)=\tfrac{(x-1)(x+3)(x-5)}{(x+2)^2(x-4)}$, as an ordered pair $(x,y)$."
   answer="(0,-\frac{15}{16})"
+  answerForm="lowest-terms"
   answerDisplay="$(0,-\tfrac{15}{16})$"
   hint="Evaluate the function at $x=0$."
 >}}
@@ -1190,26 +1217,30 @@ by Jay Abramson and OpenStax, © OpenStax, licensed under
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access
 the original for free at
 [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes:
-recreated every graph as an accessible inline SVG built from the `rationals`
+recreated every graph as an accessible figure built from the `rationals`
 num/den primitive, matching the source's window, asymptotes (dashed lines),
 marked intercepts, and open-circle holes — the toolkit pair $f(x)=\tfrac{1}{x}$
 and $f(x)=\tfrac{1}{x^2}$; four framings of $f(x)=\tfrac{1}{x}$ itself (its
 local-behavior arrows, its vertical asymptote alone, its end-behavior
 arrows again, and both asymptotes together); $f(x)=\tfrac{1}{x-2}+4$;
 $f(x)=\tfrac{3x+7}{x+2}$; $f(x)=\tfrac{x+3}{x^2-9}$ (Example 4's Analysis
-figure, deliberately left without its hole marked, matching the source's own
-staging); $k(x)=\tfrac{5+2x^2}{2-x-x^2}$; the removable-discontinuity
+figure, with its hole at $(-3,-\tfrac{1}{6})$ marked as the source marks it,
+and its $x$-axis numbered at every second tick rather than every tick so the
+hole's open circle does not sit on a tick number); $k(x)=\tfrac{5+2x^2}{2-x-x^2}$; the removable-discontinuity
 walkthrough $f(x)=\tfrac{x^2-1}{x^2-2x-3}$; $k(x)=\tfrac{x-2}{x^2-4}$; the
 three horizontal/slant-asymptote Case examples; $f(x)=\tfrac{(x-2)(x+3)}{(x-1)(x+2)(x-5)}$
 plain and with its intercepts marked; the odd- and even-multiplicity toolkit
 pair; $f(x)=\tfrac{(x+1)^2(x-3)}{(x+3)^2(x-2)}$; the middle-portion and full
-graphs of $f(x)=\tfrac{(x+2)(x-3)}{(x+1)^2(x-2)}$; and the unlabeled and
-annotated mystery graph of $f(x)=\tfrac{4(x+2)(x-3)}{3(x+1)(x-2)^2}$; omitted
+graphs of $f(x)=\tfrac{(x+2)(x-3)}{(x+1)^2(x-2)}$, each with its intercepts
+marked; and the unlabeled and
+annotated mystery graph of $f(x)=\tfrac{4(x+2)(x-3)}{3(x+1)(x-2)^2}$, ending
+each curve's arrow short of the axis arrowheads and tick numbers and writing
+the four local- and end-behavior callouts in arrow notation; omitted
 the two graphs embedded only in the print answer key (the reciprocal-squared
 Try It and the closing "describe its behavior and sketch" Try It), since
 displaying either would hand a learner the answer to its own interactive
 question, and converted both Try Its into fillin components about their
-asymptotes, intercept, and removable discontinuity instead; omitted the
+rational form, asymptotes, and intercepts instead; omitted the
 "Media" callout's four external video links, which carry no transcribable
 mathematics; converted every retained "Try It" into interactive `fillin`,
 `multiplechoice`, or `graphplot` components, using a place-the-asymptotes
@@ -1220,9 +1251,11 @@ end-/local-behavior judgment (not gradable as free-response math), an
 ordered pair with default ordered grading for every removable-discontinuity
 hole, `answerMode="unordered"` for every multi-asymptote list, and
 interval-notation answers for every domain ask; trimmed the two richest Try
-Its (the rewritten reciprocal-squared-shift Try It and the closing "describe
-and sketch" Try It) to three sequential sub-questions apiece, dropping their
-intercept sub-asks, to respect the two-to-three-question cap on an in-page
+Its to three sequential sub-questions apiece — the reciprocal-squared-shift
+Try It to its rational form and its $x$- and $y$-intercepts (its asymptotes
+are already asked by the earlier Try It on the same function), and the
+closing "describe and sketch" Try It to its asymptotes and $y$-intercept,
+dropping its $x$-intercepts — to respect the two-to-three-question cap on an in-page
 practice set; and adapted 12 selected end-of-section exercises — two
 local/end-behavior pairs, two applied concentration/optimization problems,
 two domain-in-interval-notation problems, two vertical-asymptote problems,

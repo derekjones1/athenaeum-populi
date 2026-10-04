@@ -787,6 +787,9 @@ function checkIntercepts(question, answer) {
   const xAsk = /\$?x\$?-intercepts?|cross(?:es)?\b[^.?!]*horizontal axis/i.test(question);
   const yAsk = /\$?y\$?-intercepts?|cross(?:es)?\b[^.?!]*vertical axis/i.test(question);
   if (!xAsk && !yAsk) return null;
+  // "How many $x$-intercepts…" asks for a count, not an intercept: its key
+  // (`0`) is no root (Precalculus 3.2 re-review, October 4, 2026).
+  if (/\bhow many\b/i.test(question)) return null;
   const defs = printedDefinitions(question);
   if (defs.size !== 1) return null; // a graph or table intercept stays manual
   const def = [...defs.values()][0];
@@ -1193,6 +1196,10 @@ function checkCircleEquation(question, answer) {
  */
 function checkStandardFormRewrite(question, answer) {
   if (!/\bstandard form\b|\bvertex form\b|\bcompleting the square\b/i.test(question)) return null;
+  // A complex number's standard form, $a+bi$, names the shape of a VALUE
+  // ("Evaluate $f(-i)$. Write the result in standard form, $a+bi$."), not a
+  // rewrite of the printed function (Precalculus 3.1 re-review, October 4, 2026).
+  if (/standard form,?\s*\$?\s*a\s*\+\s*bi\b/i.test(question)) return null;
   // A follow-up that quotes the rewritten form and asks for a FEATURE of it
   // ("…rewritten in standard form as $x^2=-\tfrac14y$, give the equation of
   // the directrix") is not a rewrite ask: its answer ($y=\tfrac{1}{16}$) is

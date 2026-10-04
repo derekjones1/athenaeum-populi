@@ -231,7 +231,17 @@ grades `correct`), so a complex solution list needs no "in $a+bi$ form"
 pin; `no-like-terms` reads `\frac{16i}{17}` as one term and refuses `5i+3i`;
 `expanded`, `single-term` and `no-like-terms` refuse a written power of `i`
 (`20i-12i^2`, `i^{35}`), and `single-term` passes `i` and `-i`; `2\sqrt{-3}`
-still grades `incorrect` against `2\sqrt3 i` (deliberate). `simplified-radical`
+still grades `incorrect` against `2\sqrt3 i` (deliberate). Since the Precalculus chapter 3 re-review (October 4, 2026): a complex key
+$a+bi$ takes `expanded no-like-terms` (it refuses `(3-2)+(-4-5)i`,
+`1+(-9i)`, `-4\cdot2-4\cdot6i`, and $i$ in any denominator, `4+\frac{6}{i}`),
+never `decimal`/`lowest-terms`, which refuse the complex key itself; a list
+mixing a real zero with complex ones (`2,3+2i,3-2i`) takes the same form. A
+labelled key whose stem prints its bare value (`x=3` after "shifted right 3
+units") keeps `solved:x` with the value form (`solved:x decimal`): `decimal`
+alone grades the bare `3` correct, and `verify:replay` fails it. When a
+source's prompt, drawing, and printed answer disagree, fit the drawing
+before choosing: the drawing and the pinned prompt outrank a solution that
+matches neither (3.4's "degree 9" graph, erratum 33 as amended). `simplified-radical`
 refuses a letter outside the radical in both one-term halves
 (`\frac{2x\sqrt{5x}}{x^2}`) and a minus in a one-term denominator, and checks
 each endpoint of an interval, union, or inequality. `single-term` and

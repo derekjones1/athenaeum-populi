@@ -51,30 +51,30 @@ a polynomial function and a graph that represents a function that is not a
 polynomial.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A smooth, continuous curve labelled f, falling from the upper left, rising to a local maximum, falling to a local minimum, then rising steeply to the upper right with no breaks or sharp corners.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.5,"c":-3,"arrows":true}],"texts":[{"at":[3.3,3.6],"text":"f","anchor":"start"}]}
+{"ariaLabel":"A smooth, continuous curve labelled f, rising from the lower left to a local maximum, falling through the origin to a local minimum, then rising steeply to the upper right, with no breaks or sharp corners.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.5,"c":-3,"arrows":true}],"texts":[{"at":[3.3,3.6],"text":"f","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A curve labelled f that matches the polynomial curve on the left but ends in an open circle before a gap; the graph resumes at a closed dot at a different height and rises to the upper right, showing a break in the graph.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.5,"c":-3,"from":-4,"to":-0.3,"arrows":"start"}],"segments":[{"from":[0.3,1.4],"to":[3.6,3.9],"arrows":"end"}],"points":[{"at":[-0.3,0.89],"open":true},{"at":[0.3,1.4]}],"texts":[{"at":[3.3,3.5],"text":"f","anchor":"start"}]}
+{"ariaLabel":"The same curve, labelled f, broken by a jump: it rises from the lower left to a local maximum, falls through the origin to a local minimum, and rises to a solid dot just above the x-axis; directly above that dot, an open circle starts a straight ray rising to the upper right.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.5,"c":-3,"from":-4,"to":2.6,"arrows":"start"}],"segments":[{"from":[2.6,2],"to":[3.7,3.9],"arrows":"end"}],"points":[{"at":[2.6,0.988]},{"at":[2.6,2],"open":true}],"texts":[{"at":[2.85,-1.4],"text":"f","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Example.** Which of the four graphs below represents a polynomial
 function?
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel f: a smooth continuous curve, falling from the upper left, rising to a local maximum, falling to a local minimum, and rising steeply to the upper right.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.4,"c":-2,"arrows":true}],"texts":[{"at":[3.3,3.9],"text":"f","anchor":"start"}]}
+{"ariaLabel":"Panel f: a smooth continuous curve rising from the lower left across the x-axis to a high local maximum, falling to touch the x-axis at the origin, rising over a small hump, then falling across the x-axis to the lower right.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","polynomials":[{"coeffs":[0,0,0.81,-0.18,-0.15],"arrows":true}],"texts":[{"at":[2.85,-2.6],"text":"f","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel g: a V-shaped graph with a sharp corner at the origin, one ray falling to the upper left and the other rising to the upper right.","xMin":-4,"xMax":4,"yMin":-1,"yMax":4,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","polylines":[{"through":[[-3,3],[0,0],[3,3]],"arrows":true}],"texts":[{"at":[3.3,3.4],"text":"g","anchor":"start"}]}
+{"ariaLabel":"Panel g: a V-shaped graph with a sharp corner on the positive x-axis, one ray rising to the upper left across the y-axis and the other rising to the upper right.","xMin":-2,"xMax":6,"yMin":-2,"yMax":4,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","polylines":[{"through":[[-1,3.3],[2,0],[5,3.3]],"arrows":true}],"texts":[{"at":[4,3.4],"text":"g","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel h: a smooth continuous curve rising from the upper left, falling to a local minimum, rising to a local maximum, then falling steeply to the lower right.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.4,"c":2,"arrows":true}],"texts":[{"at":[3.3,-3.6],"text":"h","anchor":"start"}]}
+{"ariaLabel":"Panel h: a smooth continuous curve falling from the upper left across the x-axis to a deep local minimum, rising to touch the x-axis at the origin, then falling steeply to the lower right.","xMin":-4,"xMax":3,"yMin":-5,"yMax":3,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.8,"b":-2.4,"arrows":true}],"texts":[{"at":[1.35,-3.4],"text":"h","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel k: a curve that falls from the upper left toward a hollow circle, then resumes from a solid dot at a lower height, dips to a local minimum, and rises steeply to the upper right, showing a break in the graph.","xMin":-4,"xMax":4,"yMin":-2,"yMax":6,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","quadratics":[{"a":-0.4,"c":3,"from":-3.6,"to":-1,"arrows":"start"},{"a":0.5,"b":-0.3,"c":0.2,"from":-0.6,"to":3.6,"arrows":"end"}],"points":[{"at":[-1,2.6],"open":true},{"at":[-0.6,0.56]}],"texts":[{"at":[3,5.6],"text":"k","anchor":"start"}]}
+{"ariaLabel":"Panel k: a short arc rising toward the upper left from a solid dot above the x-axis; directly below that dot, an open circle starts a second piece that dips to a local minimum, rises to touch the x-axis at the origin, and falls steeply to the lower right, showing a break in the graph.","xMin":-4,"xMax":3,"yMin":-5,"yMax":3,"unit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","quadratics":[{"a":-0.35,"b":0.525,"c":-2.546875,"sideways":true,"from":0.75,"to":2.1,"arrows":"end"}],"cubics":[{"a":-0.8,"b":-2.4,"from":-2.35,"to":3,"arrows":"end"}],"points":[{"at":[-2.35,0.75]},{"at":[-2.35,-2.873],"open":true}],"texts":[{"at":[1.35,-3.4],"text":"k","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Solution.** The graphs of $f$ and $h$ are graphs of polynomial functions.
@@ -150,7 +150,7 @@ $(\sqrt{2},0)$, and $(-\sqrt{2},0)$. We can see that this is an even
 function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x to the sixth minus 3x to the fourth plus 2x squared, with x-intercepts at (-square root of 2, 0), (-1, 0), (0, 0), (1, 0), and (square root of 2, 0), rising steeply on both ends.","xMin":-2.2,"xMax":2.2,"yMin":-1,"yMax":3,"unit":70,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[0,0,2,0,-3,0,1],"arrows":true}],"points":[{"at":[-1.41421,0],"label":"(−√2, 0)"},{"at":[-1,0],"label":"(−1, 0)"},{"at":[0,0],"label":"(0, 0)"},{"at":[1,0],"label":"(1, 0)"},{"at":[1.41421,0],"label":"(√2, 0)"}],"texts":[{"at":[1.9,2.6],"text":"f","anchor":"start"}]}
+{"ariaLabel":"The graph of f(x) = x to the sixth minus 3x to the fourth plus 2x squared, with x-intercepts at (-square root of 2, 0), (-1, 0), (0, 0), (1, 0), and (square root of 2, 0), rising steeply on both ends.","xMin":-2.2,"xMax":2.2,"yMin":-1,"yMax":3,"unit":70,"tickLabels":true,"xTickStep":2,"yTickStep":2,"polynomials":[{"coeffs":[0,0,2,0,-3,0,1],"arrows":true}],"points":[{"at":[-1.41421,0],"label":"(−√2, 0)"},{"at":[-1,0]},{"at":[0,0],"label":"(0, 0)"},{"at":[1,0]},{"at":[1.41421,0],"label":"(√2, 0)"}],"texts":[{"at":[1.9,2.6],"text":"f","anchor":"start"},{"at":[-1,-0.8],"text":"(−1, 0)","anchor":"middle"},{"at":[1,-0.8],"text":"(1, 0)","anchor":"middle"}],"segments":[{"from":[-1,-0.62],"to":[-1,-0.08],"arrows":"end"},{"from":[1,-0.62],"to":[1,-0.08],"arrows":"end"}]}
 {{< /apfigure >}}
 
 **Example.** Find the $x$-intercepts of $f(x)=x^{3}-5x^{2}-x+5$.
@@ -176,7 +176,7 @@ $$
 There are three $x$-intercepts: $(-1,0)$, $(1,0)$, and $(5,0)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x cubed minus 5x squared minus x plus 5, crossing the x-axis at (-1, 0), (1, 0), and (5, 0), falling from the upper left, dipping down, rising through a hump, then falling and rising steeply to the upper right.","xMin":-6,"xMax":6,"yMin":-18,"yMax":18,"xUnit":20,"yUnit":9,"tickLabels":true,"xTickStep":2,"yTickStep":6,"polynomials":[{"coeffs":[5,-1,-5,1],"arrows":true}],"points":[{"at":[-1,0]},{"at":[1,0]},{"at":[5,0]}],"texts":[{"at":[-0.3,9],"text":"f(x) = x³ − 5x² − x + 5","anchor":"end"}]}
+{"ariaLabel":"The graph of f(x) = x cubed minus 5x squared minus x plus 5: it rises from the lower left, crosses the x-axis at (-1, 0), reaches a local maximum of about 5 near x = 0, falls through (1, 0) to a local minimum of about -17 near x = 3.4, then rises through (5, 0) to the upper right.","xMin":-6,"xMax":6,"yMin":-18,"yMax":18,"xUnit":20,"yUnit":9,"tickLabels":true,"xTickStep":2,"yTickStep":6,"polynomials":[{"coeffs":[5,-1,-5,1],"arrows":true}],"points":[{"at":[-1,0]},{"at":[1,0]},{"at":[5,0]}],"texts":[{"at":[-0.3,9],"text":"f(x) = x³ − 5x² − x + 5","anchor":"end"}]}
 {{< /apfigure >}}
 
 **Example.** Find the $y$- and $x$-intercepts of $g(x)=(x-2)^{2}(2x+3)$.
@@ -184,7 +184,7 @@ There are three $x$-intercepts: $(-1,0)$, $(1,0)$, and $(5,0)$.
 **Solution.** The $y$-intercept can be found by evaluating $g(0)$.
 
 $$
-\begin{array}{lrcl}
+\begin{array}{rcl}
 g(0) &=& (0-2)^{2}(2(0)+3) \\[4pt]
 &=& 12
 \end{array}
@@ -210,7 +210,7 @@ So the $x$-intercepts are $(2,0)$ and $\left(-\tfrac{3}{2},0\right)$.
 graphing calculator to graph the polynomial, shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of g(x) = (x minus 2) squared times (2x plus 3), with y-intercept (0, 12), touching the x-axis at (2, 0) and crossing at (-1.5, 0), falling from the upper left and rising to the upper right.","xMin":-4,"xMax":4,"yMin":-3,"yMax":15,"xUnit":24,"yUnit":16,"tickLabels":true,"xTickStep":1,"yTickStep":3,"polynomials":[{"coeffs":[12,-4,-5,2],"arrows":true}],"points":[{"at":[0,12],"label":"(0, 12)","labelSide":"nw"},{"at":[-1.5,0],"label":"(−1.5, 0)"},{"at":[2,0],"label":"(2, 0)"}],"texts":[{"at":[-0.2,13.5],"text":"g(x) = (x − 2)²(2x + 3)","anchor":"end"}]}
+{"ariaLabel":"The graph of g(x) = (x minus 2) squared times (2x plus 3): it rises from the lower left, crosses the x-axis at (-1.5, 0), reaches a local maximum just above the y-intercept (0, 12), falls to touch the x-axis at (2, 0), and rises to the upper right.","xMin":-4,"xMax":4,"yMin":-3,"yMax":15,"xUnit":24,"yUnit":16,"tickLabels":true,"xTickStep":1,"yTickStep":3,"polynomials":[{"coeffs":[12,-4,-5,2],"arrows":true}],"points":[{"at":[0,12],"label":"(0, 12)","labelSide":"ne"},{"at":[-1.5,0],"label":"(−1.5, 0)"},{"at":[2,0],"label":"(2, 0)"}],"texts":[{"at":[-1.2,13.6],"text":"g(x) = (x − 2)²(2x + 3)","anchor":"end"}]}
 {{< /apfigure >}}
 
 **Example.** Find the $x$-intercepts of $h(x)=x^{3}+4x^{2}+x-6$.
@@ -225,7 +225,7 @@ Looking at the graph of this function, shown below, it appears that there
 are $x$-intercepts at $x=-3$, $-2$, and $1$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of h(x) = x cubed plus 4x squared plus x minus 6, crossing the x-axis at (-3, 0), (-2, 0), and (1, 0), rising from the lower left, dipping down, then rising steeply to the upper right.","xMin":-4.5,"xMax":4.5,"yMin":-8,"yMax":2,"unit":24,"tickLabels":true,"xTickStep":2,"yTickStep":2,"polynomials":[{"coeffs":[-6,1,4,1],"arrows":true}],"points":[{"at":[-3,0]},{"at":[-2,0]},{"at":[1,0]}],"texts":[{"at":[1.2,1.4],"text":"h(x) = x³ + 4x² + x − 6","anchor":"start"}]}
+{"ariaLabel":"The graph of h(x) = x cubed plus 4x squared plus x minus 6: it rises from the lower left, crosses the x-axis at (-3, 0), turns at a small local maximum, crosses again at (-2, 0), falls to a local minimum near (0, -6), and rises through (1, 0) to the upper right.","xMin":-4.5,"xMax":4.5,"yMin":-8,"yMax":2,"unit":24,"tickLabels":true,"xTickStep":2,"yTickStep":2,"polynomials":[{"coeffs":[-6,1,4,1],"arrows":true}],"points":[{"at":[-3,0]},{"at":[-2,0]},{"at":[1,0]}],"texts":[{"at":[1.6,1.0],"text":"h(x) = x³ + 4x² + x − 6","anchor":"start"}]}
 {{< /apfigure >}}
 
 We can check whether these are correct by substituting these values for $x$
@@ -243,16 +243,17 @@ Each $x$-intercept corresponds to a zero of the polynomial function and each
 zero yields a factor, so we can now write the polynomial in factored form.
 
 $$
-\begin{array}{lrcl}
+\begin{array}{rcl}
 h(x) &=& x^{3}+4x^{2}+x-6 \\[4pt]
 &=& (x+3)(x+2)(x-1)
 \end{array}
 $$
 
 {{< fillin
-  question="Find the x-intercepts of $f(x)=x^4-19x^2+30x$. Enter all of them, separated by commas."
+  question="Find the $x$-intercepts of $f(x)=x^4-19x^2+30x$. Enter the $x$-value of each, separated by commas."
   answer="0,-5,2,3"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=0,-5,2,3$"
   hint="Factor out the greatest common factor first, then factor the remaining cubic by testing small integer values."
 >}}
@@ -271,7 +272,7 @@ Notice in the figure below that the behavior of the function at each of the
 $x$-intercepts is different.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = (x plus 3)(x minus 2) squared (x plus 1) cubed, crossing the x-axis at x = -3, flattening through x = -1, and touching at x = 2.","xMin":-4,"xMax":3,"yMin":-40,"yMax":30,"xUnit":32,"yUnit":5.2,"tickLabels":true,"xTickStep":1,"yTickStep":10,"polynomials":[{"coeffs":[12,28,11,-14,-8,2,1],"arrows":true}]}
+{"ariaLabel":"The graph of f(x) = (x plus 3)(x minus 2) squared (x plus 1) cubed: it falls from the upper left, crosses the x-axis at x = -3, dips to a local minimum near -35, flattens as it crosses the x-axis at x = -1, rises to a local maximum near 32, touches the x-axis at x = 2, and rises to the upper right.","xMin":-4,"xMax":3,"yMin":-40,"yMax":40,"xUnit":32,"yUnit":5.2,"tickLabels":true,"xTickStep":1,"yTickStep":10,"polynomials":[{"coeffs":[12,28,11,-14,-8,2,1],"arrows":true}]}
 {{< /apfigure >}}
 
 The $x$-intercept $-3$ is the solution of equation $(x+3)=0$. The graph
@@ -319,7 +320,7 @@ polynomial functions with multiplicity 1, 2, and 3.
 **Zero with multiplicity 2.**
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A cubic curve that flattens as it passes through the origin, illustrating a zero of multiplicity 3.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":30,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.35,"arrows":true}],"texts":[{"at":[2.15,2.4],"text":"p = 3","anchor":"start"}]}
+{"ariaLabel":"A cubic curve that flattens as it passes through the origin, illustrating a zero of multiplicity 3.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":30,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":0.35,"arrows":true}],"texts":[{"at":[2.25,1.7],"text":"p = 3","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Zero with multiplicity 3.**
@@ -363,7 +364,7 @@ the degree-6 function below to identify its zeros and their possible
 multiplicities.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A degree-6 polynomial graph that touches the x-axis at x = -3, crosses almost linearly at x = -1, and crosses while flattening at x = 4, rising steeply on both ends.","xMin":-6,"xMax":6,"yMin":-240,"yMax":240,"xUnit":21,"yUnit":0.8,"tickLabels":true,"xTickStep":2,"yTickStep":80,"polynomials":[{"coeffs":[-86.4,-79.2,24.6,15.15,-3.15,-0.75,0.15],"arrows":true}]}
+{"ariaLabel":"A degree-6 polynomial graph that touches the x-axis at x = -3, crosses almost linearly at x = -1, and crosses while flattening at x = 4, rising steeply on both ends.","xMin":-6,"xMax":6,"yMin":-240,"yMax":240,"xUnit":21,"yUnit":0.8,"tickLabels":true,"xTickStep":2,"yTickStep":80,"polynomials":[{"coeffs":[-115.2,-105.6,32.8,20.2,-4.2,-1,0.2],"arrows":true}]}
 {{< /apfigure >}}
 
 **Solution.** The polynomial function is of degree $n$. The sum of the
@@ -380,29 +381,27 @@ The last zero occurs at $x=4$. The graph crosses the $x$-axis, so the
 multiplicity of the zero must be odd. We know that the multiplicity is
 likely 3 and that the sum of the multiplicities is likely 6.
 
-{{< callout type="info" >}}
-  **Source note.** OpenStax's current source calls this "the function of
-  degree 9", but its own printed answer gives multiplicities $3$, $2$, and
-  $2$, which sum to $7$, and the figure's description calls it degree $6$ —
-  three different degrees for one graph. The printed edition of the book, and
-  every reading consistent with the answer and the drawn curve, says $7$, so
-  this page says $7$; the mathematics is unchanged.
-{{< /callout >}}
-
 {{< multiplechoice
-  question="The graph below shows a degree-7 polynomial function. What are its zeros and their multiplicities?"
-  answer="x=-5 with multiplicity 3, x=-1 with multiplicity 2, and x=3 with multiplicity 2"
-  hint="A crossing zero that flattens out has odd multiplicity of at least 3; a zero where the graph only touches the axis has even multiplicity."
+  question="The graph below shows a degree-9 polynomial function. What are its zeros and their multiplicities?"
+  answer="$x=-5$ with multiplicity 3, $x=-1$ with multiplicity 2, and $x=3$ with multiplicity 4"
+  hint="Follow the How To above: classify each zero by whether the graph crosses, crosses while flattening, or touches, then make the multiplicities sum to the degree."
 >}}
-x=-5 with multiplicity 3, x=-1 with multiplicity 2, and x=3 with multiplicity 2
-x=-5 with multiplicity 2, x=-1 with multiplicity 3, and x=3 with multiplicity 2
-x=-5, x=-1, and x=3, each with multiplicity 1
-x=-5 with multiplicity 1, x=-1 with multiplicity 2, and x=3 with multiplicity 4
+$x=-5$ with multiplicity 3, $x=-1$ with multiplicity 2, and $x=3$ with multiplicity 2
+$x=-5$ with multiplicity 2, $x=-1$ with multiplicity 3, and $x=3$ with multiplicity 4
+$x=-5$, $x=-1$, and $x=3$, each with multiplicity 1
+$x=-5$ with multiplicity 3, $x=-1$ with multiplicity 2, and $x=3$ with multiplicity 4
 {{< /multiplechoice >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A degree-7 polynomial graph that crosses while flattening at x = -5, touches the x-axis at x = -1, and touches again at x = 3, falling to the lower left and rising steeply to the upper right.","xMin":-6,"xMax":4,"yMin":-45,"yMax":75,"xUnit":26,"yUnit":3.2,"tickLabels":true,"xTickStep":1,"yTickStep":15,"polynomials":[{"coeffs":[22.5,43.5,15.7,-9.22,-3.86,0.26,0.22,0.02],"arrows":true}]}
+{"ariaLabel":"A polynomial graph on x from -6 to 6 and y from -10 to 50. It rises out of the lower left, crosses the x-axis while flattening at x = -5, climbs to a peak of about 42 near x = -3, comes down to touch the x-axis at x = -1, rises to a smaller peak of about 15 near x = 0.7, comes back down and stays flat along the x-axis from about x = 2.5 to x = 3.5 as it touches it at x = 3, then rises steeply to the upper right.","xMin":-6,"xMax":6,"yMin":-10,"yMax":50,"xUnit":26,"yUnit":4,"tickLabels":true,"xTickStep":1,"yTickStep":10,"polynomials":[{"coeffs":[10.125,12.825,-4.86,-6.684,1.814,0.814,-0.172,-0.044,0.005,0.001],"from":-5.43,"to":4.22,"arrows":true}]}
 {{< /apfigure >}}
+
+{{< callout type="info" >}}
+  **Source note.** OpenStax's current source calls this graph "the function of
+  degree 9", and its drawing agrees. The source's printed answer does not: its
+  multiplicities sum to a different degree. This page follows the prompt and
+  the drawing; the page footer gives the details.
+{{< /callout >}}
 
 ## Determining end behavior
 
@@ -429,7 +428,7 @@ every combination.
 **Even degree, positive leading coefficient ($a_n>0$).**
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two arcs opening upward in the upper-left and upper-right corners of a blank grid, showing that as x approaches negative or positive infinity, f(x) approaches positive infinity.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","quadratics":[{"a":0.15,"c":-2,"from":-6,"to":-4,"arrows":"start"},{"a":0.15,"c":-2,"from":4,"to":6,"arrows":"end"}]}
+{"ariaLabel":"Two arcs opening upward in the upper-left and upper-right corners of a blank grid, showing that as x approaches negative or positive infinity, f(x) approaches positive infinity.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","quadratics":[{"a":0.2,"c":-2,"from":-6,"to":-4,"arrows":"start"},{"a":0.2,"c":-2,"from":4,"to":6,"arrows":"end"}]}
 {{< /apfigure >}}
 
 End behavior: as $x\to\infty$, $f(x)\to\infty$; as $x\to-\infty$,
@@ -447,7 +446,7 @@ $f(x)\to-\infty$.
 **Even degree, negative leading coefficient ($a_n<0$).**
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two arcs opening downward in the lower-left and lower-right corners of a blank grid, showing that as x approaches negative or positive infinity, f(x) approaches negative infinity.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","quadratics":[{"a":-0.15,"c":2,"from":-6,"to":-4,"arrows":"start"},{"a":-0.15,"c":2,"from":4,"to":6,"arrows":"end"}]}
+{"ariaLabel":"Two arcs opening downward in the lower-left and lower-right corners of a blank grid, showing that as x approaches negative or positive infinity, f(x) approaches negative infinity.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","quadratics":[{"a":-0.2,"c":2,"from":-6,"to":-4,"arrows":"start"},{"a":-0.2,"c":2,"from":4,"to":6,"arrows":"end"}]}
 {{< /apfigure >}}
 
 End behavior: as $x\to\infty$, $f(x)\to-\infty$; as $x\to-\infty$,
@@ -471,7 +470,7 @@ increasing (falling to rising). Look at the graph of the polynomial function
 $f(x)=x^{4}-x^{3}-4x^{2}+4x$ below. The graph has three turning points.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x to the fourth minus x cubed minus 4x squared plus 4x, with three turning points: a local minimum near (-1.33, -6.9), a local maximum near (0.47, 0.9), and a second local minimum near (1.61, -1.4).","xMin":-2.5,"xMax":3,"yMin":-8,"yMax":8,"xUnit":52,"yUnit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","polynomials":[{"coeffs":[0,4,-4,-1,1],"arrows":true}],"points":[{"at":[-1.33,-6.91],"label":"Turning point"},{"at":[0.47,0.94],"label":"Turning point"},{"at":[1.61,-1.38],"label":"Turning point"}]}
+{"ariaLabel":"The graph of f(x) = x to the fourth minus x cubed minus 4x squared plus 4x, falling from the upper left and rising to the upper right, with three turning points, each marked by a dot and an arrow from the label Turning points: a local minimum near (-1.33, -6.9), a local maximum near (0.47, 0.9), and a second local minimum near (1.61, -1.4).","xMin":-2.5,"xMax":3,"yMin":-8,"yMax":8,"xUnit":52,"yUnit":24,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","polynomials":[{"coeffs":[0,4,-4,-1,1],"arrows":true}],"points":[{"at":[-1.326,-6.914]},{"at":[0.469,0.941]},{"at":[1.607,-1.383]}],"segments":[{"from":[2.0,-5.3],"to":[1.62,-1.75],"arrows":"end"},{"from":[1.9,-5.3],"to":[0.54,0.6],"arrows":"end"},{"from":[1.8,-5.5],"to":[-1.15,-6.84],"arrows":"end"}],"texts":[{"at":[1.6,-6.2],"text":"Turning points","anchor":"start"}]}
 {{< /apfigure >}}
 
 This function $f$ is a 4th degree polynomial function and has 3 turning
@@ -499,7 +498,7 @@ polynomial function.
    function. This polynomial function is of degree 5. The maximum number of
    turning points is $5-1=4$.
 2. First, identify the leading term of the polynomial function if the
-   function were expanded: $a_n=-(x^2)(2x^2)=-2x^4$. Then identify the
+   function were expanded: $-(x^2)(2x^2)=-2x^4$. Then identify the
    degree of the polynomial function. This polynomial function is of degree
    4. The maximum number of turning points is $4-1=3$.
 
@@ -538,7 +537,7 @@ the graph will cross through the axis at this intercept.
 The $y$-intercept is found by evaluating $f(0)$.
 
 $$
-\begin{array}{lrcl}
+\begin{array}{rcl}
 f(0) &=& -2(0+3)^{2}(0-5) \\[4pt]
 &=& -2\cdot 9\cdot(-5) \\[4pt]
 &=& 90
@@ -555,7 +554,7 @@ negative infinity. The figure below shows only that end behavior, before the
 rest of the graph is filled in.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Stage 1 of 4 in sketching f(x) = -2(x+3) squared (x-5): two disconnected arcs on a blank grid, one falling from the upper left and one falling toward the lower right, showing only the end behavior before any intercepts are plotted.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.05,"from":-6,"to":-4,"arrows":"start"},{"a":-0.05,"from":4,"to":6,"arrows":"end"}]}
+{"ariaLabel":"Stage 1 of 4 in sketching f(x) = -2(x+3) squared (x-5): two disconnected arcs on a blank grid, one falling from the upper left and one falling toward the lower right, showing only the end behavior before any intercepts are plotted.","xMin":-7,"xMax":7,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.02,"from":-7,"to":-5,"arrows":"start"},{"a":-0.02,"from":5.4,"to":7,"arrows":"end"}]}
 {{< /apfigure >}}
 
 To sketch this, we consider that:
@@ -569,7 +568,7 @@ To sketch this, we consider that:
   $y$-intercept.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Stage 2 of 4 in sketching f(x) = -2(x+3) squared (x-5): the same two end-behavior arcs, now with the bounce intercept (-3, 0) and the y-intercept (0, 90) plotted, before the connecting curve is drawn.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.05,"from":-6,"to":-4,"arrows":"start"},{"a":-0.05,"from":4,"to":6,"arrows":"end"}],"points":[{"at":[-3,0],"label":"(−3, 0)"},{"at":[0,4.3],"label":"(0, 90)","labelSide":"ne"}]}
+{"ariaLabel":"Stage 2 of 4 in sketching f(x) = -2(x+3) squared (x-5): the same two end-behavior arcs, now with the bounce intercept (-3, 0) and the y-intercept (0, 90) plotted, before the connecting curve is drawn.","xMin":-7,"xMax":7,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.02,"from":-7,"to":-5,"arrows":"start"},{"a":-0.02,"from":5.4,"to":7,"arrows":"end"}],"points":[{"at":[-3,0],"label":"(−3, 0)"},{"at":[0,4.3],"label":"(0, 90)","labelSide":"ne"}]}
 {{< /apfigure >}}
 
 - Somewhere after this point, the graph must turn back down or start
@@ -577,7 +576,7 @@ To sketch this, we consider that:
   the next intercept at $(5,0)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Stage 3 of 4 in sketching f(x) = -2(x+3) squared (x-5): the same two end-behavior arcs with all three known points plotted, (-3, 0), (0, 90), and (5, 0), before the connecting curve is drawn.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.05,"from":-6,"to":-4,"arrows":"start"},{"a":-0.05,"from":4,"to":6,"arrows":"end"}],"points":[{"at":[-3,0],"label":"(−3, 0)"},{"at":[0,4.3],"label":"(0, 90)","labelSide":"ne"},{"at":[5,0],"label":"(5, 0)","labelSide":"n"}]}
+{"ariaLabel":"Stage 3 of 4 in sketching f(x) = -2(x+3) squared (x-5): the same two end-behavior arcs with all three known points plotted, (-3, 0), (0, 90), and (5, 0), before the connecting curve is drawn.","xMin":-7,"xMax":7,"yMin":-6,"yMax":6,"unit":16,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"y","cubics":[{"a":-0.02,"from":-7,"to":-5,"arrows":"start"},{"a":-0.02,"from":5.4,"to":7,"arrows":"end"}],"points":[{"at":[-3,0],"label":"(−3, 0)"},{"at":[0,4.3],"label":"(0, 90)","labelSide":"ne"},{"at":[5,0],"label":"(5, 0)","labelSide":"n"}]}
 {{< /apfigure >}}
 
 - As $x\to\infty$ the function $f(x)\to-\infty$, so we know the graph
@@ -593,11 +592,12 @@ sketch.
 {{< /apfigure >}}
 
 {{< fillin
-  question="A Try It sketches $f(x)=\tfrac{1}{4}x(x-1)^4(x+3)^3$. This function has three x-intercepts. Find them, separated by commas."
+  question="The first step in sketching $f(x)=\tfrac{1}{4}x(x-1)^4(x+3)^3$ is finding its intercepts. The graph has three $x$-intercepts; enter the $x$-value of each, separated by commas."
   answer="0,1,-3"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=0,1,-3$"
-  hint="Set each factor equal to zero: $x=0$, $(x-1)^4=0$, and $(x+3)^3=0$."
+  hint="Set each factor that contains $x$ equal to zero and solve."
 >}}
 
 ## Using the Intermediate Value Theorem
@@ -622,7 +622,7 @@ function must cross the $x$-axis. The figure below shows that there is a
 zero between $a$ and $b$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A smooth increasing curve with a labeled point f(a) below the x-axis near x = 0, a labeled zero f(c) = 0 near x = 1.3, and a labeled point f(b) above the x-axis near x = 3, illustrating the Intermediate Value Theorem.","xMin":-1,"xMax":4,"yMin":-2,"yMax":8,"unit":30,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[-1,0.2,0,0.3],"arrows":true}],"points":[{"at":[0,-1],"label":"f(a) is negative"},{"at":[1.34,0],"label":"f(c) = 0"},{"at":[3,7.7],"label":"f(b) is positive"}]}
+{"ariaLabel":"A cubic curve on a grid from -5 to 5 on both axes: it rises from the lower left to a local maximum at (0, 1), falls to a local minimum at (2, -3), and rises steeply to the upper right. The local minimum is marked f(a) is negative, the x-intercept just before x = 3 is marked f(c) = 0, and a point a little to its right, above the x-axis, is marked f(b) is positive.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":26,"tickLabels":true,"xTickStep":1,"yTickStep":1,"cubics":[{"a":1,"b":-3,"d":1,"arrows":true}],"points":[{"at":[2,-3],"label":"f(a) is negative"},{"at":[2.879,0],"label":"f(c) = 0"},{"at":[3.15,2.49],"label":"f(b) is positive","labelSide":"se"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -655,18 +655,18 @@ $x=4$.
 are two real zeros between $x=1$ and $x=4$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x cubed minus 5x squared plus 3x plus 6 on a grid from -2 to 5, with the labeled points f(1) = 5 and f(4) = 2 above the x-axis, and f(3) = -3 below the x-axis, showing a zero between x = 1 and x = 4.","xMin":-2,"xMax":5,"yMin":-10,"yMax":10,"xUnit":26,"yUnit":16,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[6,3,-5,1],"arrows":true}],"points":[{"at":[1,5],"label":"f(1) = 5","labelSide":"ne"},{"at":[4,2],"label":"f(4) = 2","labelSide":"ne"},{"at":[3,-3],"label":"f(3) = −3"}]}
+{"ariaLabel":"The graph of f(x) = x cubed minus 5x squared plus 3x plus 6 on a grid from -2 to 5, with the labeled points f(1) = 5 and f(4) = 2 above the x-axis and f(3) = -3 below it; dots mark where the curve crosses the x-axis, at x = 2 and again between x = 3 and x = 4.","xMin":-2,"xMax":5,"yMin":-10,"yMax":10,"xUnit":26,"yUnit":16,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[6,3,-5,1],"arrows":true}],"points":[{"at":[2,0]},{"at":[3.79129,0]},{"at":[1,5],"label":"f(1) = 5","labelSide":"ne"},{"at":[4,2],"label":"f(4) = 2","labelSide":"ne"},{"at":[3,-3],"label":"f(3) = −3"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
-  question="Which pair of values confirms, by the Intermediate Value Theorem, that f(x)=7x^5-9x^4-x^2 has at least one real zero between x=1 and x=2?"
-  answer="f(1)=-3 is negative and f(2)=76 is positive"
-  hint="Evaluate f(1) and f(2) and check whether the two values have opposite signs."
+  question="Which pair of values confirms, by the Intermediate Value Theorem, that $f(x)=7x^5-9x^4-x^2$ has at least one real zero between $x=1$ and $x=2$?"
+  answer="$f(1)=-3$ is negative and $f(2)=76$ is positive"
+  hint="Evaluate $f(1)$ and $f(2)$, keeping track of the sign of each term, and check whether the two values have opposite signs."
 >}}
-f(1)=-3 is negative and f(2)=76 is positive
-f(1)=-3 and f(2)=76 are both positive
-f(1)=3 is positive and f(2)=-76 is negative
-f(1)=-3 is negative and f(2)=-76 is also negative
+$f(1)=-3$ is negative and $f(2)=76$ is positive
+$f(1)=15$ and $f(2)=364$ are both positive
+$f(1)=-3$ and $f(2)=-76$ are both negative
+$f(1)=-3$ and $f(2)=-6$ are both negative
 {{< /multiplechoice >}}
 
 ## Writing formulas for polynomial functions
@@ -707,7 +707,7 @@ function.**
 **Example.** Write a formula for the polynomial function shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = one-thirtieth times (x+3)(x-2) squared (x-5), crossing the x-axis at x = -3, touching at x = 2, and crossing again at x = 5, with y-intercept (0, -2).","xMin":-5,"xMax":6,"yMin":-5,"yMax":3,"unit":26,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[-2,1.733333,-0.1,-0.2,0.033333],"arrows":true}]}
+{"ariaLabel":"A polynomial graph that rises at both ends: it falls from the upper left, crosses the x-axis at x = -3, dips to a local minimum near (-1.6, -4), rises through the y-intercept (0, -2) to touch the x-axis at x = 2, dips slightly, and crosses the x-axis again at x = 5 on its way to the upper right.","xMin":-5,"xMax":6,"yMin":-5,"yMax":3,"unit":26,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[-2,1.733333,-0.1,-0.2,0.033333],"arrows":true}]}
 {{< /apfigure >}}
 
 **Solution.** This graph has three $x$-intercepts: $x=-3$, $2$, and $5$. The
@@ -723,7 +723,7 @@ To determine the stretch factor, we utilize another point on the graph. We
 will use the $y$-intercept $(0,-2)$, to solve for $a$.
 
 $$
-\begin{array}{lrcl}
+\begin{array}{rcl}
 f(0) &=& a(0+3)(0-2)^{2}(0-5) \\[4pt]
 -2 &=& a(0+3)(0-2)^{2}(0-5) \\[4pt]
 -2 &=& -60a \\[4pt]
@@ -735,15 +735,15 @@ The graphed polynomial appears to represent the function
 $f(x)=\tfrac{1}{30}(x+3)(x-2)^{2}(x-5)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A degree-6 polynomial graph on a grid from -2 to 5, crossing the x-axis at (-1, 0), touching at (4, 0), touching again near x = 2 on its way to a local maximum, with y-intercept (0, -4): it falls from the upper left, crosses near x = -1, dips to a shallow local minimum, touches near x = 2, rises to a local maximum near x = 3.3, then falls steeply to the lower right.","xMin":-2,"xMax":5,"yMin":-6,"yMax":6,"unit":30,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[-4,-1,5.5,-0.75,-2.125,1,-0.125],"arrows":true}],"points":[{"at":[-1,0],"label":"(−1, 0)"},{"at":[2,0],"label":"(2, 0)"},{"at":[4,0],"label":"(4, 0)"},{"at":[0,-4],"label":"(0, −4)"}]}
+{"ariaLabel":"A polynomial graph on a grid from -2 to 6 that falls at both ends: it rises from the lower left to touch the x-axis at (-1, 0), falls to a local minimum near the y-intercept (0, -4), rises and flattens as it crosses the x-axis at (2, 0), climbs to a local maximum near x = 3.6, then falls through (4, 0) to the lower right.","xMin":-2,"xMax":6,"yMin":-6,"yMax":6,"unit":30,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[-4,-1,5.5,-0.75,-2.125,1,-0.125],"arrows":true}],"points":[{"at":[-1,0],"label":"(−1, 0)"},{"at":[2,0],"label":"(2, 0)"},{"at":[4,0],"label":"(4, 0)","labelSide":"ne"},{"at":[0,-4],"label":"(0, −4)"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Write a formula, in factored form, for the polynomial function shown in the figure above."
+  question="Write a formula, in factored form, for the polynomial function of least degree shown in the figure above."
   answer="-\tfrac{1}{8}(x-2)^{3}(x+1)^{2}(x-4)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$f(x)=-\tfrac{1}{8}(x-2)^{3}(x+1)^{2}(x-4)$"
-  hint="Use the graph's behavior at each x-intercept for that factor's power, then use the y-intercept (0, -4) to solve for the stretch factor a."
+  hint="Use the graph's behavior at each $x$-intercept for that factor's power, then substitute the $y$-intercept $(0,-4)$ to solve for the stretch factor $a$."
 >}}
 
 ## Using local and global extrema
@@ -780,7 +780,7 @@ below.
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A degree-4 polynomial graph falling from the upper left to a local maximum near (0.1, 3), dipping to a local minimum near (1.9, 1.3), rising to a taller global maximum near (4.1, 4.4), then falling to the lower right.","xMin":-2,"xMax":6,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[3,0.35,-2.4,1.2,-0.15],"arrows":true}],"points":[{"at":[0.08,3.01],"label":"Local maximum","labelSide":"w"},{"at":[1.85,1.27],"label":"Local minimum"},{"at":[4.07,4.41],"label":"Global maximum"}]}
+{"ariaLabel":"A polynomial graph on a grid from -6 to 6 that falls at both ends: it rises from the lower left to a local maximum near (2, 1.7), dips to a local minimum near (3.3, -1.9), rises to a higher peak near (5, 4.9), the global maximum, and falls to the lower right.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[-93.184,134.016,-66.88,13.8,-1],"arrows":true}],"points":[{"at":[2.01,1.73],"label":"Local maximum","labelNudge":[5,0]},{"at":[3.33,-1.92],"label":"Local minimum","labelNudge":[6,0]},{"at":[5.01,4.9],"label":"Global maximum"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -800,7 +800,7 @@ should be cut out to maximize the volume enclosed by the box.
 below, labeling the width of the cut-out squares with a variable, $w$.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A rectangular sheet with a small square removed from each of the four corners, each cut-out square labelled w on its width and height, so the sides can fold up into an open box.","unit":16,"polygons":[{"points":[[0,0],[20,0],[20,14],[0,14]]}],"segments":[{"from":[3,14],"to":[3,11]},{"from":[0,11],"to":[3,11]},{"from":[17,14],"to":[17,11]},{"from":[17,11],"to":[20,11]},{"from":[3,3],"to":[3,0]},{"from":[0,3],"to":[3,3]},{"from":[17,0],"to":[17,3]},{"from":[17,3],"to":[20,3]}],"texts":[{"at":[3.4,12.5],"text":"w","anchor":"start"},{"at":[1.2,10.3],"text":"w","anchor":"middle"}]}
+{"ariaLabel":"A rectangular sheet with a small square removed from each of the four corners; the top-left cut-out square is labelled w on its width and on its height, so the sides can fold up into an open box.","unit":16,"polygons":[{"points":[[0,0],[20,0],[20,14],[0,14]]}],"segments":[{"from":[3,14],"to":[3,11]},{"from":[0,11],"to":[3,11]},{"from":[17,14],"to":[17,11]},{"from":[17,11],"to":[20,11]},{"from":[3,3],"to":[3,0]},{"from":[0,3],"to":[3,3]},{"from":[17,0],"to":[17,3]},{"from":[17,3],"to":[20,3]}],"texts":[{"at":[3.4,12.5],"text":"w","anchor":"start"},{"at":[1.2,10.3],"text":"w","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Notice that after a square is cut out from each end, it leaves a $(14-2w)$
@@ -808,7 +808,7 @@ cm by $(20-2w)$ cm rectangle for the base of the box, and the box will be
 $w$ cm tall. This gives the volume
 
 $$
-\begin{array}{lrcl}
+\begin{array}{rcl}
 V(w) &=& (20-2w)(14-2w)w \\[4pt]
 &=& 280w-68w^{2}+4w^{3}
 \end{array}
@@ -817,7 +817,7 @@ $$
 Notice, since the factors are $w$, $20-2w$, and $14-2w$, the three zeros are
 10, 7, and 0, respectively. Because a height of 0 cm is not reasonable, we
 consider only the zeros 10 and 7. The shortest side is 14 and we are cutting
-off two squares, so values $w$ may take on are greater than zero or less
+off two squares, so values $w$ may take on are greater than zero and less
 than 7. This means we will restrict the domain of this function to
 $0<w<7$. Using technology to sketch the graph of $V(w)$ on this reasonable
 domain, we get a graph like the one below. We can use this graph to estimate
@@ -825,7 +825,7 @@ the maximum value for the volume, restricted to values for $w$ that are
 reasonable for this problem — values from 0 to 7.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of V(w) = 280w minus 68w squared plus 4w cubed on a window from -2 to 12, rising from the lower left, reaching a local maximum near w = 2.7 at about 339, dipping to a local minimum near w = 8.6, then rising steeply to the upper right.","xMin":-2,"xMax":12,"yMin":-200,"yMax":420,"xUnit":18,"yUnit":0.62,"tickLabels":true,"xTickStep":2,"yTickStep":100,"xLabel":"w","yLabel":"V(w)","polynomials":[{"coeffs":[0,280,-68,4],"arrows":true}]}
+{"ariaLabel":"The graph of V(w) = 280w minus 68w squared plus 4w cubed on a window from -2 to 12, labelled V(w) = 280w − 68w² + 4w³, rising from the lower left, reaching a local maximum near w = 2.7 at about 339, dipping to a local minimum near w = 8.6, then rising steeply to the upper right.","xMin":-2,"xMax":12,"yMin":-200,"yMax":420,"xUnit":18,"yUnit":0.62,"tickLabels":true,"xTickStep":2,"yTickStep":100,"xLabel":"w","yLabel":"V(w)","polynomials":[{"coeffs":[0,280,-68,4],"from":-0.55,"arrows":true}],"texts":[{"at":[0.6,385],"text":"V(w) = 280w − 68w² + 4w³","anchor":"start"}]}
 {{< /apfigure >}}
 
 From this graph, we turn our focus to only the portion on the reasonable
@@ -836,7 +836,7 @@ available, or simply change our window to zoom in on our graph to produce
 the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A zoomed-in view of V(w) = 280w minus 68w squared plus 4w cubed for w between 2.4 and 3, refining the maximum volume estimate to about 339 cubic centimeters near w = 2.7.","xMin":2.4,"xMax":3,"yMin":330,"yMax":340,"unit":260,"yUnit":26,"tickLabels":true,"xTickStep":0.2,"yTickStep":1,"xLabel":"w","yLabel":"V(w)","polynomials":[{"coeffs":[0,280,-68,4],"arrows":false}]}
+{"ariaLabel":"A zoomed-in view of V(w) = 280w minus 68w squared plus 4w cubed for w between 2.4 and 3, refining the maximum volume estimate to about 339 cubic centimeters near w = 2.7.","xMin":2.4,"xMax":3.1,"yMin":330,"yMax":340,"unit":260,"yUnit":26,"tickLabels":true,"xTickStep":0.2,"yTickStep":1,"xLabel":"w","yLabel":"V(w)","polynomials":[{"coeffs":[0,280,-68,4],"arrows":false}]}
 {{< /apfigure >}}
 
 From this zoomed-in view, we can refine our estimate for the maximum volume
@@ -844,14 +844,15 @@ to about 339 cubic cm, when the squares measure approximately 2.7 cm on each
 side.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = -0.2(x-2) cubed (x+1) squared (x-4) on the interval from -1 to 4, with a labeled local minimum near (0, -6.5) and a labeled local maximum near (3.5, 7).","xMin":-1,"xMax":4,"yMin":-8,"yMax":8,"xUnit":48,"yUnit":22,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polynomials":[{"coeffs":[-6.4,-1.6,8.8,-1.2,-3.4,1.6,-0.2],"from":-1,"to":4,"arrows":false}],"points":[{"at":[0.09,-6.47],"label":"local min ≈ (0, −6.5)"},{"at":[3.57,6.95],"label":"local max ≈ (3.5, 7)"}]}
+{"ariaLabel":"The graph of f(x) = -0.2(x-2) cubed (x+1) squared (x-4) on the interval from -1 to 4, on a grid with x ticks every 1 and y ticks every 1: it starts on the x-axis at (-1, 0), falls to a local minimum just right of the y-axis, rises and flattens as it crosses the x-axis at (2, 0), climbs to a local maximum between x = 3 and x = 4, and falls back to (4, 0).","xMin":-1.5,"xMax":4.5,"yMin":-8,"yMax":8,"xUnit":48,"yUnit":22,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[-6.4,-1.6,8.8,-1.2,-3.4,1.6,-0.2],"from":-1,"to":4,"arrows":false}],"points":[{"at":[-1,0]},{"at":[4,0]}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Using the figure, what are the approximate local minimum and local maximum values of f(x)=-0.2(x-2)^3(x+1)^2(x-4) on [-1,4]? Enter the local minimum value first, then the local maximum value, separated by a comma."
+  question="Use technology, or the graph above, to find the minimum and maximum values of $f(x)=-0.2(x-2)^3(x+1)^2(x-4)$ on the interval $[-1,4]$, each rounded to one decimal place. Enter the minimum value first, then the maximum value, separated by a comma."
   answer="-6.5,7"
-  answerDisplay="local minimum $\approx -6.5$; local maximum $\approx 7$"
-  hint="Read the y-coordinates of the two labeled points on the graph."
+  answerForm="decimal"
+  answerDisplay="minimum $\approx -6.5$; maximum $\approx 7.0$"
+  hint="Find the lowest and the highest points of the graph on the interval and read their $y$-coordinates."
 >}}
 
 ## Key concepts
@@ -911,63 +912,58 @@ Zeros only exist for factored polynomials, while x-intercepts exist for every fu
 The x-intercepts are the output values of the zeros.
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="What is the domain of f(x)=x^3+x^2-20x?"
-  answer="All real numbers"
-  hint="Every polynomial function accepts any real number as an input — there is never a division, root, or logarithm to restrict it."
+{{< fillin
+  question="What is the domain of $f(x)=x^3+x^2-20x$? Enter it in interval notation."
+  answer="(-\infty,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="Ask whether any real input makes the expression undefined; recall the Q&A on the domain of polynomial functions."
 >}}
-All real numbers
-All real numbers except 0
-x greater than or equal to 0
-Cannot be determined without a graph
-{{< /multiplechoice >}}
 
 ### Use factoring to find zeros of polynomial functions
 
 {{< fillin
-  question="Find the zeros of C(t)=3(t+2)(t-3)(t+5). Enter all of them, separated by commas."
+  question="Find the zeros of $C(t)=3(t+2)(t-3)(t+5)$. Enter all of them, separated by commas."
   answer="-2,3,-5"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$t=-2,3,-5$"
-  hint="The function is already factored — set each factor equal to zero."
+  hint="The function is already factored — set each factor that contains $t$ equal to zero."
 >}}
 
 {{< fillin
-  question="Find the zeros of f(x)=x^3+x^2-4x-4. Enter all of them, separated by commas."
+  question="Find the zeros of $f(x)=x^3+x^2-4x-4$. Enter all of them, separated by commas."
   answer="-1,2,-2"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-1,2,-2$"
-  hint="Factor by grouping: pull $x^2$ from the first two terms and $-4$ from the last two, then factor the difference of squares that remains."
+  hint="Factor by grouping, factor any difference of squares that remains, then set each factor equal to zero."
 >}}
 
 ### Identify zeros and their multiplicities
 
-{{< multiplechoice
-  question="What is the multiplicity of the zero x=-3/2 for f(x)=x^2(2x+3)^5(x-4)^2?"
+{{< fillin
+  question="What is the multiplicity of the zero $x=-\tfrac{3}{2}$ of $f(x)=x^2(2x+3)^5(x-4)^2$?"
   answer="5"
-  hint="The multiplicity is the exponent on the factor that produces that zero."
+  answerForm="decimal"
+  hint="Find the factor that equals zero at that input; the multiplicity is the power on that factor."
 >}}
-2
-3
-4
-5
+
+{{< multiplechoice
+  question="Which statement correctly describes the zeros of $f(x)=x^2(x^2+4x+4)$?"
+  answer="$0$ with multiplicity 2 and $-2$ with multiplicity 2"
+  hint="Factor the trinomial completely before reading off each zero and its power."
+>}}
+$0$ with multiplicity 2 and $-2$ with multiplicity 2
+$0$ with multiplicity 1 and $-2$ with multiplicity 3
+$0$ with multiplicity 2 and $2$ with multiplicity 2
+$0$ with multiplicity 4 and $-2$ with multiplicity 1
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which statement correctly describes the zeros of f(x)=x^2(x^2+4x+4)?"
-  answer="0 with multiplicity 2 and -2 with multiplicity 2"
-  hint="Factor the trinomial x^2+4x+4 as a perfect square before reading off the multiplicities."
->}}
-0 with multiplicity 2 and -2 with multiplicity 2
-0 with multiplicity 1 and -2 with multiplicity 3
-0 with multiplicity 2 and 2 with multiplicity 2
-0 with multiplicity 4 and -2 with multiplicity 1
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="If the graph of a polynomial function touches the x-axis at a zero and then changes direction without crossing, what must be true of that zero's multiplicity?"
+  question="If the graph of a polynomial function touches the $x$-axis at a zero and then changes direction without crossing, what must be true of that zero's multiplicity?"
   answer="It is even"
-  hint="Touching and bouncing off the axis is the behavior of a repeated factor raised to an even power, like a quadratic."
+  hint="Reread the callout on the graphical behavior of polynomials at $x$-intercepts."
 >}}
 It is even
 It is odd
@@ -978,79 +974,71 @@ It is exactly 3
 ### Determine end behavior
 
 {{< multiplechoice
-  question="As x approaches infinity, what happens to g(x)=(x+4)(x-1)^2?"
-  answer="g(x) approaches infinity"
-  hint="Multiply out just the leading term: the leading coefficient and the degree's parity together determine the end behavior."
+  question="As $x$ approaches infinity, what happens to $g(x)=(x+4)(x-1)^2$?"
+  answer="$g(x)$ approaches infinity"
+  hint="Find the leading term by multiplying the leading terms of the factors; its coefficient and degree determine the end behavior."
 >}}
-g(x) approaches infinity
-g(x) approaches negative infinity
-g(x) approaches 0
-g(x) cannot be determined from the factored form
+$g(x)$ approaches infinity
+$g(x)$ approaches negative infinity
+$g(x)$ approaches 0
+$g(x)$ cannot be determined from the factored form
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="As x approaches negative infinity, what happens to n(x)=-3x(x+2)(x-4)?"
-  answer="n(x) approaches infinity"
-  hint="The leading term is -3x^3. Substitute a very negative value of x into just that term to see the sign of the result."
+  question="As $x$ approaches negative infinity, what happens to $n(x)=-3x(x+2)(x-4)$?"
+  answer="$n(x)$ approaches infinity"
+  hint="Find the leading term by multiplying the leading terms of the factors, then think about its sign for a very negative $x$."
 >}}
-n(x) approaches infinity
-n(x) approaches negative infinity
-n(x) approaches 0
-n(x) oscillates without approaching a limit
+$n(x)$ approaches infinity
+$n(x)$ approaches negative infinity
+$n(x)$ approaches 0
+$n(x)$ oscillates without approaching a limit
 {{< /multiplechoice >}}
 
 ### Understand the relationship between degree and turning points
 
-{{< multiplechoice
-  question="What is the maximum number of turning points on the graph of f(x)=x^5-5x^3+4x?"
+{{< fillin
+  question="What is the maximum number of turning points on the graph of $f(x)=x^5-5x^3+4x$?"
   answer="4"
-  hint="The maximum number of turning points is always one less than the polynomial's degree."
+  answerForm="decimal"
+  hint="Identify the degree, then use the rule relating the degree to the number of turning points."
 >}}
-2
-3
-4
-5
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="What is the maximum number of turning points on the graph of f(x)=2x^3-x^2-8x+4?"
+{{< fillin
+  question="What is the maximum number of turning points on the graph of $f(x)=2x^3-x^2-8x+4$?"
   answer="2"
-  hint="The maximum number of turning points is always one less than the polynomial's degree."
+  answerForm="decimal"
+  hint="Identify the degree, then use the rule relating the degree to the number of turning points."
 >}}
-1
-2
-3
-4
-{{< /multiplechoice >}}
 
 ### Graph polynomial functions
 
 {{< fillin
-  question="Write a formula, in factored form, for the degree-3 polynomial function with zeros at x=-2, x=1, and x=3, and y-intercept (0,-4)."
+  question="Write a formula, in factored form, for the degree-3 polynomial function with zeros at $x=-2$, $x=1$, and $x=3$, and $y$-intercept $(0,-4)$."
   answer="-\tfrac{2}{3}(x+2)(x-1)(x-3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$f(x)=-\tfrac{2}{3}(x+2)(x-1)(x-3)$"
-  hint="Start from f(x)=a(x+2)(x-1)(x-3), then substitute x=0 and solve for the stretch factor a."
+  hint="Write one linear factor for each zero with an unknown stretch factor $a$ in front, then substitute the $y$-intercept and solve for $a$."
 >}}
 
 {{< fillin
-  question="Write a formula, in factored form, for the degree-3 polynomial function with zeros at x=-3, x=-2, and x=1, and y-intercept (0,12)."
+  question="Write a formula, in factored form, for the degree-3 polynomial function with zeros at $x=-3$, $x=-2$, and $x=1$, and $y$-intercept $(0,12)$."
   answer="-2(x+3)(x+2)(x-1)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$f(x)=-2(x+3)(x+2)(x-1)$"
-  hint="Start from f(x)=a(x+3)(x+2)(x-1), then substitute x=0 and solve for the stretch factor a."
+  hint="Write one linear factor for each zero with an unknown stretch factor $a$ in front, then substitute the $y$-intercept and solve for $a$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A degree-3 polynomial graph crossing the x-axis at x = -3, x = -1, and x = 3, with y-intercept (0, 2), rising from the upper left, dipping to a local minimum, rising to a local maximum, then falling to the lower right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":26,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[2,2,-0.222222,-0.222222],"arrows":true}]}
+{"ariaLabel":"A degree-3 polynomial graph: it falls from the upper left, crosses the x-axis at x = -3, dips to a local minimum, rises through x = -1 and the y-intercept (0, 2) to a local maximum, then falls through x = 3 to the lower right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":26,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polynomials":[{"coeffs":[2,2,-0.222222,-0.222222],"arrows":true}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write a formula, in factored form, for the degree-3 polynomial function shown in the figure above."
   answer="-\tfrac{2}{9}(x-3)(x+1)(x+3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$f(x)=-\tfrac{2}{9}(x-3)(x+1)(x+3)$"
-  hint="All three x-intercepts cross linearly, so each factor is linear; use the y-intercept to find the stretch factor."
+  hint="Read each $x$-intercept and the graph's behavior there for the factor's power, then use the $y$-intercept to find the stretch factor."
 >}}
 
 ### Use the Intermediate Value Theorem
@@ -1067,25 +1055,25 @@ The theorem tells us a function has no zeros if f(a) and f(b) are both positive.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which pair of values confirms, by the Intermediate Value Theorem, that f(x)=x^3-9x has at least one real zero between x=2 and x=4?"
-  answer="f(2)=-10 is negative and f(4)=28 is positive"
-  hint="Evaluate f(2) and f(4) and compare their signs."
+  question="Which pair of values confirms, by the Intermediate Value Theorem, that $f(x)=x^3-9x$ has at least one real zero between $x=2$ and $x=4$?"
+  answer="$f(2)=-10$ is negative and $f(4)=28$ is positive"
+  hint="Evaluate $f(2)$ and $f(4)$, keeping track of the sign of each term, and compare the signs of the results."
 >}}
-f(2)=-10 is negative and f(4)=28 is positive
-f(2)=-10 and f(4)=28 are both negative
-f(2)=10 is positive and f(4)=-28 is negative
-f(2)=-10 is negative and f(4)=-28 is also negative
+$f(2)=-10$ is negative and $f(4)=28$ is positive
+$f(2)=-12$ and $f(4)=-24$ are both negative
+$f(2)=-10$ and $f(4)=-28$ are both negative
+$f(2)=26$ and $f(4)=100$ are both positive
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which pair of values confirms, by the Intermediate Value Theorem, that f(x)=-x^4+4 has at least one real zero between x=1 and x=3?"
-  answer="f(1)=3 is positive and f(3)=-77 is negative"
-  hint="Evaluate f(1) and f(3) and compare their signs."
+  question="Which pair of values confirms, by the Intermediate Value Theorem, that $f(x)=-x^4+4$ has at least one real zero between $x=1$ and $x=3$?"
+  answer="$f(1)=3$ is positive and $f(3)=-77$ is negative"
+  hint="Evaluate $f(1)$ and $f(3)$, applying the power before the negative sign, and compare the signs of the results."
 >}}
-f(1)=3 is positive and f(3)=-77 is negative
-f(1)=3 and f(3)=-77 are both positive
-f(1)=-3 is negative and f(3)=77 is positive
-f(1)=3 is positive and f(3)=77 is also positive
+$f(1)=3$ is positive and $f(3)=-77$ is negative
+$f(1)=5$ and $f(3)=85$ are both positive
+$f(1)=3$ and $f(3)=77$ are both positive
+$f(1)=-5$ and $f(3)=-85$ are both negative
 {{< /multiplechoice >}}
 
 ---
@@ -1095,41 +1083,47 @@ Polynomial Functions](https://openstax.org/books/precalculus-2e/pages/3-4-graphs
 by Jay Abramson and OpenStax, © OpenStax, licensed under
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access
 the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e).
-Changes: recreated every graph as an accessible inline SVG generated from its
-exact polynomial coefficients (expanded by hand from each factored form) —
-the smooth/discontinuous comparison pair, the four-panel "which graph is a
+Changes: recreated every graph as an accessible figure drawn from its exact
+polynomial coefficients (expanded by hand from each factored form) — the
+smooth/discontinuous comparison pair, the four-panel "which graph is a
 polynomial" figure, $f(x)=x^6-3x^4+2x^2$, $f(x)=x^3-5x^2-x+5$,
 $g(x)=(x-2)^2(2x+3)$, $h(x)=x^3+4x^2+x-6$, $f(x)=(x+3)(x-2)^2(x+1)^3$, the
 single-zero/multiplicity-2/multiplicity-3 panels, a fitted degree-6 example
-with zeros $-3$ (mult. 2), $-1$ (mult. 1), $4$ (mult. 3), a fitted degree-7
-Try-It with zeros $-5$ (mult. 3), $-1$ (mult. 2), $3$ (mult. 2), the four
+with zeros $-3$ (mult. 2), $-1$ (mult. 1), $4$ (mult. 3), the degree-9 Try-It
+graph $f(x)=0.001(x+5)^3(x+1)^2(x-3)^4$ (fitted to the source drawing, whose
+flat zero at $x=3$ has multiplicity 4: the source's printed answer gives it
+multiplicity 2, and this page keys 4, with a source note beside the item), the four
 end-behavior corner-arc panels, $f(x)=x^4-x^3-4x^2+4x$ with its turning
-points labeled, the end-behavior tails and complete graph of
-$f(x)=-2(x+3)^2(x-5)$ (condensing the source's four-step progressive sketch
-to a start and an end state, narrated in between), a fitted monotonic cubic
-for the generic Intermediate Value Theorem illustration, $f(x)=x^3-5x^2+3x+6$
-with $f(1)$, $f(3)$, and $f(4)$ labeled, $f(x)=\tfrac{1}{30}(x+3)(x-2)^2(x-5)$,
-the Try-It graph for $f(x)=-\tfrac18(x-2)^3(x+1)^2(x-4)$ with its intercepts
-and $y$-intercept labeled, a fitted degree-4 local/global extrema
-illustration, the corner-cutout box diagram, $V(w)=280w-68w^2+4w^3$ at full
-scale and zoomed near its maximum, and the labeled local extrema of
-$f(x)=-0.2(x-2)^3(x+1)^2(x-4)$; presented the revenue table and the
-Intermediate Value Theorem sign-check table (Table 2) as Markdown tables;
-omitted the decorative "How To" and "Q&A" icon glyphs, which carry no
-mathematics; omitted the Media box linking to an external openstax.org
-resource; converted every retained "Try It" into an interactive component,
-adapting the two "sketch a graph" prompts into a check of the resulting
-x-intercepts (since freehand sketching is not gradable here), the
-graph-reading multiplicity prompt and both Intermediate Value Theorem
-"explain" prompts into multiple choice among paraphrased statements (a
-categorical judgment is never a fill-in number), and the "find the maximum
-and minimum values" prompt into a single ordered fill-in (minimum then
-maximum) since the source asks for both values from one graph; and adapted
-16 selected end-of-section exercises — an x-intercept/zero vocabulary
-question, a domain question, two zero-finding-by-factoring problems, a
-multiplicity-reading problem, a zeros-and-multiplicities multiple choice, an
-even-multiplicity concept check, two end-behavior judgments, two
-maximum-turning-points computations, three "write the formula from the given
-information or graph" problems, an Intermediate-Value-Theorem explanation,
-and two sign-change confirmations — into 17 interactive components in a
-closing Practice block, one group per objective.</small>
+points marked (without the source's increasing/decreasing annotations), the
+four-step progressive sketch of $f(x)=-2(x+3)^2(x-5)$ (the three schematic
+stages and the complete graph), $f(x)=x^3-3x^2+1$ for the generic Intermediate
+Value Theorem illustration, $f(x)=x^3-5x^2+3x+6$ with $f(1)$, $f(3)$, and
+$f(4)$ labeled, $f(x)=\tfrac{1}{30}(x+3)(x-2)^2(x-5)$, the Try-It graph for
+$f(x)=-\tfrac18(x-2)^3(x+1)^2(x-4)$ with its intercepts labeled, a fitted
+degree-4 local/global extrema illustration, the corner-cutout box diagram, and
+$V(w)=280w-68w^2+4w^3$ at full scale and zoomed near its maximum; added a
+graph of $f(x)=-0.2(x-2)^3(x+1)^2(x-4)$ on $[-1,4]$ beside the "use
+technology" Try It; presented the revenue table and the Intermediate Value
+Theorem sign-check table (Table 2) as Markdown tables; omitted the decorative
+"How To" and "Q&A" icon glyphs, which carry no mathematics; wrote the leading
+term in the turning-points example as $-(x^2)(2x^2)=-2x^4$ where the source
+image labels it $a_n$ (the section's name for the leading coefficient) and
+omits the equals sign; wrote "greater than zero and less than 7" where the
+box example's source says "greater than zero or less than 7"; omitted the Media box linking to an external
+openstax.org resource; converted every retained "Try It" into an interactive
+component, narrowing the "find the $y$- and $x$-intercepts" prompt to the
+$x$-intercepts, adapting the "sketch a graph" prompt into a check of the
+graph's $x$-intercepts (since freehand sketching is not gradable here), the
+graph-reading multiplicity prompt and the Intermediate Value Theorem "show
+that" prompt into multiple choice, and the "find the maximum and minimum
+values" prompt into a single ordered fill-in (minimum then maximum, each
+rounded to one decimal place) since the source asks for both values from one
+graph; and adapted 17 selected end-of-section exercises — an x-intercept/zero
+vocabulary question, a domain question asked of one exercise's function, two
+zero-finding-by-factoring problems, a multiplicity-reading problem, a
+zeros-and-multiplicities multiple choice, an even-multiplicity concept check,
+two end-behavior judgments, two maximum-turning-points questions asked of two
+exercises' functions, three "write the formula from the given information or
+graph" problems, an Intermediate-Value-Theorem explanation, and two
+sign-change confirmations — into 17 interactive components in a closing
+Practice block, one group per objective.</small>

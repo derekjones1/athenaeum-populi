@@ -112,8 +112,9 @@ $$
 {{< fillin
   question="Use the Remainder Theorem to evaluate $f(x)=2x^5-3x^4-9x^3+8x^2+2$ at $x=-3$."
   answer="-412"
+  answerForm="decimal"
   answerDisplay="$f(-3)=-412$"
-  hint="Use synthetic division with $k=-3$; the last entry in the bottom row is $f(-3)$."
+  hint="Use synthetic division with $k=-3$, writing a $0$ for the missing $x$ term; the last entry in the bottom row is $f(-3)$."
 >}}
 
 ## Using the Factor Theorem to solve a polynomial equation
@@ -189,6 +190,7 @@ By the Factor Theorem, the zeros of $x^3-6x^2-x+30$ are $-2$, 3, and 5.
   question="Use the Factor Theorem to find the zeros of $f(x)=x^3+4x^2-4x-16$ given that $(x-2)$ is a factor of the polynomial. Enter all of them, separated by commas."
   answer="2,-2,-4"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=2$, $x=-2$, or $x=-4$"
   hint="Divide by $(x-2)$ to get a quadratic quotient, then factor it."
 >}}
@@ -209,7 +211,7 @@ the original quadratic function absent its stretching factor.
 $$
 \begin{array}{lrcl}
 \text{Set each factor equal to }0. & x-\tfrac{2}{5} &=& 0\ \text{or}\ x-\tfrac{3}{4}=0 \\[4pt]
-\text{Multiply both sides by the denominator to clear fractions.} & 5x-2 &=& 0\ \text{or}\ 4x-3=0 \\[4pt]
+\text{Multiply both sides of the equation to eliminate fractions.} & 5x-2 &=& 0\ \text{or}\ 4x-3=0 \\[4pt]
 \text{Create the quadratic function, multiplying the factors.} & f(x) &=& (5x-2)(4x-3) \\[4pt]
 \text{Expand the polynomial.} & f(x) &=& 20x^2-23x+6 \\[4pt]
 & f(x) &=& (5\cdot4)x^2-23x+(2\cdot3)
@@ -310,7 +312,7 @@ $f(x)$. 1 is the only rational zero of $f(x)$.
 {{< multiplechoice
   question="Use the Rational Zero Theorem to determine which of the following is true about the rational zeros of $f(x)=x^3-5x^2+2x+1$."
   answer="f(x) has no rational zeros"
-  hint="The only possible rational zeros are $\pm1$ (factors of the constant term $1$ over factors of the leading coefficient $1$); test both directly in $f(x)$."
+  hint="List every possible rational zero $\tfrac{p}{q}$ from the factors of the constant term and of the leading coefficient, then evaluate $f$ at each candidate."
 >}}
 f(x) has no rational zeros
 f(x) has exactly one rational zero
@@ -504,6 +506,7 @@ our result is correct.
   question="Find the zeros of $f(x)=2x^3+5x^2-11x+4$. Enter all of them, separated by commas."
   answer="-4,\tfrac{1}{2},1"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-4$, $x=\tfrac12$, or $x=1$"
   hint="Use the Rational Zero Theorem to list candidates, then test them with synthetic division."
 >}}
@@ -603,10 +606,11 @@ is the complex conjugate of $i$.
 {{< /callout >}}
 
 {{< fillin
-  question="Find a third-degree polynomial function with real coefficients that has zeros of 5 and $-2i$ such that $f(1)=10$."
+  question="Find a third-degree polynomial function with real coefficients that has zeros of 5 and $-2i$ such that $f(1)=10$. Enter it in expanded form."
   answer="-\tfrac{1}{2}x^3+\tfrac{5}{2}x^2-2x+10"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$f(x)=-\tfrac12x^3+\tfrac52x^2-2x+10$"
-  hint="By the Complex Conjugate Theorem, $2i$ is also a zero; multiply the three linear factors, then use $f(1)=10$ to solve for the leading constant."
+  hint="Use the Complex Conjugate Theorem to find the third zero, multiply the three linear factors by a leading constant $a$, then use $f(1)=10$ to solve for $a$."
 >}}
 
 ## Using Descartes' Rule of Signs
@@ -688,13 +692,13 @@ graph that the function has 0 positive real roots and 2 negative real
 roots.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative x to the fourth minus 3x cubed plus 6x squared minus 4x minus 12, on a grid with x from negative 5.3 to 5.3 and y from negative 33 to 63. The curve rises from the lower left, crosses the x-axis near x equals negative 4.42, rises to a local maximum, falls and crosses the x-axis again at x equals negative 1, then dips to a local minimum and continues downward to the lower right without crossing the axis again, confirming zero positive real zeros and two negative real zeros.","xMin":-5.3,"xMax":5.3,"yMin":-33,"yMax":63,"xUnit":22,"yUnit":4,"grid":true,"xGridStep":1,"yGridStep":10,"tickLabels":true,"xTickStep":1,"yTickStep":10,"polynomials":[{"coeffs":[-12,-4,6,-3,-1],"arrows":true}],"points":[{"at":[-4.42,0],"label":"x = -4.42","labelSide":"nw"},{"at":[-1,0],"label":"x = -1"}]}
+{"ariaLabel":"The graph of f of x equals negative x to the fourth minus 3x cubed plus 6x squared minus 4x minus 12, on a grid with x from negative 5.3 to 5.3 and y from negative 33 to 63. The curve rises from the lower left, crosses the x-axis near x equals negative 4.42, rises to a local maximum, falls and crosses the x-axis again at x equals negative 1, then levels off briefly near y equals negative 13 between x equals 0 and x equals 1 without turning, and continues downward to the lower right without crossing the axis again, confirming zero positive real zeros and two negative real zeros.","xMin":-5.3,"xMax":5.3,"yMin":-33,"yMax":63,"xUnit":22,"yUnit":4,"grid":true,"xGridStep":1,"yGridStep":10,"tickLabels":true,"xTickStep":1,"yTickStep":10,"polynomials":[{"coeffs":[-12,-4,6,-3,-1],"arrows":true}],"points":[{"at":[-4.42,0],"label":"x = -4.42","labelSide":"nw"},{"at":[-1,0],"label":"x = -1"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="Use Descartes' Rule of Signs to determine the maximum possible numbers of positive and negative real zeros of $f(x)=2x^4-10x^3+11x^2-15x+12$."
   answer="4, 2, or 0 positive; 0 negative"
-  hint="Count the sign changes in $f(x)$, then in $f(-x)$ — notice $f(-x)$ has all positive coefficients."
+  hint="Count the sign changes in $f(x)$; then substitute $-x$, simplify the sign of each term, and count the sign changes in $f(-x)$."
 >}}
 4, 2, or 0 positive; 0 negative
 0 positive; 4, 2, or 0 negative
@@ -736,14 +740,14 @@ Substitute the given volume into this equation.
 $$
 \begin{array}{lrcl}
 \text{Substitute 351 for }V. & 351 &=& \tfrac{1}{3}w^3+\tfrac{4}{3}w^2 \\[4pt]
-\text{Multiply both sides by 3}. & 1053 &=& w^3+4w^2 \\[4pt]
-\text{Subtract 1053 from both sides}. & 0 &=& w^3+4w^2-1053
+\text{Multiply both sides by 3}. & 1{,}053 &=& w^3+4w^2 \\[4pt]
+\text{Subtract 1,053 from both sides}. & 0 &=& w^3+4w^2-1{,}053
 \end{array}
 $$
 
 Descartes' rule of signs tells us there is one positive solution. The
 Rational Zero Theorem tells us that the possible rational zeros are
-$\pm1,\pm3,\pm9,\pm13,\pm27,\pm39,\pm81,\pm117,\pm351,$ and $\pm1053$. We
+$\pm1,\pm3,\pm9,\pm13,\pm27,\pm39,\pm81,\pm117,\pm351,$ and $\pm1{,}053$. We
 can use synthetic division to test these possible zeros. Only positive
 numbers make sense as dimensions for a cake, so we need not test any
 negative values. Let's begin by testing values that make the most sense as
@@ -751,10 +755,10 @@ dimensions for a small sheet cake. Use synthetic division to check $x=1$.
 
 $$
 \begin{array}{r|rrrr}
-1 & 1 & 4 & 0 & -1053 \\
+1 & 1 & 4 & 0 & -1{,}053 \\
   &   & 1 & 5 & 5 \\
 \hline
-  & 1 & 5 & 5 & -1048
+  & 1 & 5 & 5 & -1{,}048
 \end{array}
 $$
 
@@ -762,7 +766,7 @@ Since 1 is not a solution, we will check $x=3$.
 
 $$
 \begin{array}{r|rrrr}
-3 & 1 & 4 & 0 & -1053 \\
+3 & 1 & 4 & 0 & -1{,}053 \\
   &   & 3 & 21 & 63 \\
 \hline
   & 1 & 7 & 21 & -990
@@ -773,8 +777,8 @@ Since 3 is not a solution either, we will test $x=9$.
 
 $$
 \begin{array}{r|rrrr}
-9 & 1 & 4 & 0 & -1053 \\
-  &   & 9 & 117 & 1053 \\
+9 & 1 & 4 & 0 & -1{,}053 \\
+  &   & 9 & 117 & 1{,}053 \\
 \hline
   & 1 & 13 & 117 & 0
 \end{array}
@@ -792,6 +796,7 @@ inches.
 {{< fillin
   question="A shipping container in the shape of a rectangular solid must have a volume of 84 cubic meters. The length of the container must be one meter longer than the width, and the height must be one meter greater than twice the width. Enter the width, length, and height, in meters, in that order, separated by commas."
   answer="3,4,7"
+  answerForm="decimal"
   answerDisplay="$w=3$, $l=4$, $h=7$"
   hint="Let $w$ be the width; write the volume as a cubic in $w$ and test small positive integer candidates."
 >}}
@@ -850,20 +855,23 @@ the remainder is equal to the value $f(k)$.
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $3x^3-2x^2+x-4$ is divided by $x+3$."
   answer="-106"
+  answerForm="decimal"
   answerDisplay="$-106$"
-  hint="Evaluate the polynomial at the zero of the divisor, $x=-3$."
+  hint="Evaluate the polynomial at the zero of the divisor, or divide synthetically by it; the remainder is that value."
 >}}
 
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $-3x^2+6x+24$ is divided by $x-4$."
   answer="0"
+  answerForm="decimal"
   answerDisplay="$0$"
-  hint="Evaluate the polynomial at $x=4$; a remainder of 0 means $x-4$ is a factor."
+  hint="Evaluate the polynomial at the zero of the divisor."
 >}}
 
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $x^4-1$ is divided by $x-4$."
   answer="255"
+  answerForm="decimal"
   answerDisplay="$255$"
   hint="Evaluate the polynomial at $x=4$."
 >}}
@@ -874,6 +882,7 @@ the remainder is equal to the value $f(k)$.
   question="Use the given factor and the Factor Theorem to find all real zeros of $f(x)=2x^3+x^2-5x+2$; $x+2$. Enter all of them, separated by commas."
   answer="-2,1,\tfrac{1}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-2$, $x=1$, or $x=\tfrac12$"
   hint="Divide by $x+2$, then factor or apply the quadratic formula to the quotient."
 >}}
@@ -882,8 +891,9 @@ the remainder is equal to the value $f(k)$.
   question="Use the given factor and the Factor Theorem to find all real zeros of $2x^3+5x^2-12x-30$; $2x+5$. Enter all of them, separated by commas."
   answer="-\tfrac{5}{2},\sqrt{6},-\sqrt{6}"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$x=-\tfrac52$, $x=\sqrt6$, or $x=-\sqrt6$"
-  hint="Divide by $2x+5$ (so $k=-\tfrac52$), then solve the quadratic quotient by taking square roots."
+  hint="Divide by $2x+5$ (synthetic division with $k=-\tfrac52$), then solve the quadratic quotient."
 >}}
 
 ### Use the Rational Zero Theorem to find rational zeros
@@ -892,16 +902,18 @@ the remainder is equal to the value $f(k)$.
   question="Use the Rational Zero Theorem to list all possible rational zeros of $f(x)=2x^3+3x^2-8x+5$. Enter all of them, separated by commas."
   answer="1,-1,5,-5,\tfrac{1}{2},-\tfrac{1}{2},\tfrac{5}{2},-\tfrac{5}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$\pm1,\pm5,\pm\tfrac12,\pm\tfrac52$"
-  hint="Divide each factor of the constant term 5 by each factor of the leading coefficient 2."
+  hint="Divide each factor of the constant term by each factor of the leading coefficient, include both signs, and drop repeats."
 >}}
 
 {{< fillin
   question="Use the Rational Zero Theorem to list all possible rational zeros of $f(x)=6x^4-10x^2+13x+1$. Enter all of them, separated by commas."
   answer="1,-1,\tfrac{1}{2},-\tfrac{1}{2},\tfrac{1}{3},-\tfrac{1}{3},\tfrac{1}{6},-\tfrac{1}{6}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$\pm1,\pm\tfrac12,\pm\tfrac13,\pm\tfrac16$"
-  hint="The constant term is 1, so every candidate's numerator is $\pm1$; divide by each factor of the leading coefficient 6."
+  hint="Divide each factor of the constant term by each factor of the leading coefficient, include both signs, and drop repeats."
 >}}
 
 ### Find zeros of a polynomial function
@@ -910,6 +922,7 @@ the remainder is equal to the value $f(k)$.
   question="Use the Rational Zero Theorem to find all real zeros of $2x^3+7x^2-10x-24=0$. Enter all of them, separated by commas."
   answer="2,-4,-\tfrac{3}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=2$, $x=-4$, or $x=-\tfrac32$"
   hint="Test the rational candidates with synthetic division until you find a zero, then solve the remaining quadratic."
 >}}
@@ -918,14 +931,16 @@ the remainder is equal to the value $f(k)$.
   question="Find all complex solutions (real and non-real) of $x^3-8x^2+25x-26=0$. Enter all of them, separated by commas."
   answer="2,3+2i,3-2i"
   answerMode="unordered"
+  answerForm="no-like-terms simplified-radical"
   answerDisplay="$x=2$, $x=3+2i$, or $x=3-2i$"
-  hint="Find the one real zero by testing rational candidates, then solve the quadratic quotient — its discriminant is negative."
+  hint="Find a zero by testing rational candidates with synthetic division, then solve the quadratic quotient with the quadratic formula."
 >}}
 
 {{< fillin
-  question="Use a graph to find the rational zeros of $f(x)=6x^3-7x^2+1$. Enter all of them, separated by commas."
+  question="Use your calculator to graph $f(x)=6x^3-7x^2+1$. Based on the graph, find the rational zeros. All real solutions are rational. Enter all of them, separated by commas."
   answer="1,\tfrac{1}{2},-\tfrac{1}{3}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=1$, $x=\tfrac12$, or $x=-\tfrac13$"
   hint="All the real solutions are rational; use the Rational Zero Theorem to narrow down the candidates the graph's x-intercepts must match."
 >}}
@@ -933,17 +948,19 @@ the remainder is equal to the value $f(k)$.
 ### Use the Linear Factorization Theorem to find polynomials with given zeros
 
 {{< fillin
-  question="Construct a polynomial function of least degree possible with real roots $-1$ (multiplicity 2), $1$ (multiplicity 1), and $(2,f(2))=(2,4)$."
-  answer="\tfrac{4}{9}(x^3+x^2-x-1)"
-  answerDisplay="$f(x)=\tfrac49(x^3+x^2-x-1)$"
-  hint="Write the factors $(x+1)^2(x-1)$, multiply by an unknown leading constant $a$, then substitute $x=2$, $f(2)=4$ to solve for $a$."
+  question="Construct a polynomial function of least degree possible with real roots $-1$ (multiplicity 2), $1$ (multiplicity 1), and $(2,f(2))=(2,4)$. Enter it in expanded form."
+  answer="\tfrac{4}{9}x^3+\tfrac{4}{9}x^2-\tfrac{4}{9}x-\tfrac{4}{9}"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$f(x)=\tfrac49x^3+\tfrac49x^2-\tfrac49x-\tfrac49$, that is, $f(x)=\tfrac49(x^3+x^2-x-1)$"
+  hint="Write one linear factor per root, repeated as its multiplicity says, times an unknown leading constant $a$; then substitute the given point to solve for $a$ and expand."
 >}}
 
 {{< fillin
-  question="Construct a polynomial function of least degree possible with real roots $-\tfrac12$, $0$, $\tfrac12$, and $(-2,f(-2))=(-2,6)$."
-  answer="-\tfrac{1}{5}(4x^3-x)"
-  answerDisplay="$f(x)=-\tfrac15(4x^3-x)$"
-  hint="Write the factors $x\left(x+\tfrac12\right)\left(x-\tfrac12\right)$, multiply by an unknown constant $a$, then use the point $(-2,6)$ to solve for $a$."
+  question="Construct a polynomial function of least degree possible with real roots $-\tfrac12$, $0$, $\tfrac12$, and $(-2,f(-2))=(-2,6)$. Enter it in expanded form."
+  answer="-\tfrac{4}{5}x^3+\tfrac{1}{5}x"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$f(x)=-\tfrac45x^3+\tfrac15x$, that is, $f(x)=-\tfrac15(4x^3-x)$"
+  hint="Write one linear factor per root times an unknown leading constant $a$; then substitute the given point to solve for $a$ and expand."
 >}}
 
 ### Use Descartes' Rule of Signs
@@ -973,7 +990,7 @@ the remainder is equal to the value $f(k)$.
 {{< multiplechoice
   question="According to Descartes' Rule of Signs, which describes the possible numbers of positive and negative real zeros of $f(x)=2x^3+37x^2+200x+300$?"
   answer="0 positive, 3 or 1 negative"
-  hint="Every term of $f(x)$ is positive; then find $f(-x)$ and count its sign changes."
+  hint="Count the sign changes in $f(x)$; then find $f(-x)$ and count its sign changes."
 >}}
 0 positive, 3 or 1 negative
 3 or 1 positive, 0 negative
@@ -986,6 +1003,7 @@ the remainder is equal to the value $f(k)$.
 {{< fillin
   question="A box's length is twice its width, and its height is 2 inches greater than its width. The volume is 192 cubic inches. Enter the length, width, and height, in inches, in that order, separated by commas."
   answer="8,4,6"
+  answerForm="decimal"
   answerDisplay="$l=8$, $w=4$, $h=6$"
   hint="Let $w$ be the width; write the volume as a cubic in $w$ and use the Rational Zero Theorem."
 >}}
@@ -993,10 +1011,11 @@ the remainder is equal to the value $f(k)$.
 {{< fillin
   question="A box's length is one inch more than its width, which is one inch more than its height. The volume is $86.625$ cubic inches. Enter the length, width, and height, in inches, in that order, separated by commas."
   answer="5.5,4.5,3.5"
+  answerForm="lowest-terms"
   answerDisplay="$l=5.5$, $w=4.5$, $h=3.5$"
-  hint="Let $h$ be the height; write width and length in terms of $h$ and solve the resulting cubic — the solution need not be an integer."
+  hint="Let $h$ be the height; write the width and length in terms of $h$, set the volume equal to $86.625$, multiply through by 8 to clear the decimal, and use the Rational Zero Theorem."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 3.6: Zeros of Polynomial Functions](https://openstax.org/books/precalculus-2e/pages/3-6-zeros-of-polynomial-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the media links list of external practice resources; recreated the introductory Rational Zero Theorem derivation image (setting the two fractional zeros' factors equal to 0, clearing denominators, and expanding to $20x^2-23x+6$) as a KaTeX step array; recreated the four sign-change annotation images in the Descartes' Rule of Signs discussion (the introductory example and Example 8's $f(x)$ and $f(-x)$) as displayed equations with the sign-changing term pairs named in prose, since the figure toolkit has no primitive for arc annotations on a typeset equation; recreated the two synthetic-division stage images completing the bakery example's third and fourth tests ($x=3$ and $x=9$) as KaTeX synthetic-division arrays matching the first stage already shown; recreated the three instructional graphs (the bounce/cross graph of $f(x)=4x^3-3x-1$, the cross graph of $f(x)=3x^3+9x^2+x+3$, and the Descartes-confirming graph of $f(x)=-x^4-3x^3+6x^2-4x-12$) as accessible SVGs plotted from the exact `polynomials` coefficients rather than as images; omitted the five answer-key confirmation graphs accompanying the "Graphical" end-of-section exercises drawn into the Descartes' Rule of Signs Practice group, since each component's graded answer is the source's own printed Descartes-analysis text (not a graph reading) and Example 8 already demonstrates the graph-confirmation step in full; converted every "Try It" into an interactive component with instant feedback, with the "no rational zeros" and Descartes' Rule Try Its built as multiple-choice because their answers are a declarative fact or a described set of possibilities rather than a single value; and adapted 17 selected end-of-section exercises into interactive Practice components, one or more per objective group, presenting each multi-dimension word-problem answer in the length/width/height (or width/length/height) order the source's own solution used, stated explicitly in the question.</small>
+<small>This section is adapted from [Precalculus 2e, Section 3.6: Zeros of Polynomial Functions](https://openstax.org/books/precalculus-2e/pages/3-6-zeros-of-polynomial-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the media links list of external practice resources; recreated the introductory Rational Zero Theorem derivation image (setting the two fractional zeros' factors equal to 0, clearing denominators, and expanding to $20x^2-23x+6$) as a KaTeX step array; recreated the four sign-change annotation images in the Descartes' Rule of Signs discussion (the introductory example and Example 8's $f(x)$ and $f(-x)$) as displayed equations with the sign-changing term pairs named in prose, since the figure toolkit has no primitive for arc annotations on a typeset equation; recreated the two synthetic-division stage images completing the bakery example's third and fourth tests ($x=3$ and $x=9$) as KaTeX synthetic-division arrays matching the first stage already shown; recreated the three instructional graphs (the bounce/cross graph of $f(x)=4x^3-3x-1$, the cross graph of $f(x)=3x^3+9x^2+x+3$, and the Descartes-confirming graph of $f(x)=-x^4-3x^3+6x^2-4x-12$) as accessible SVGs plotted from the exact `polynomials` coefficients rather than as images; omitted the five answer-key confirmation graphs accompanying the "Graphical" end-of-section exercises drawn into the Descartes' Rule of Signs Practice group, since each component's graded answer is the source's own printed Descartes-analysis text (not a graph reading) and Example 8 already demonstrates the graph-confirmation step in full; converted every "Try It" into an interactive component with instant feedback, with the "no rational zeros" and Descartes' Rule Try Its built as multiple-choice because their answers are a declarative fact or a described set of possibilities rather than a single value (the Descartes' Rule Try It keeps its sign-change count and leaves out its closing "use a graph to verify" step, which needs a graph of the answer); and adapted 17 selected end-of-section exercises into interactive Practice components, one or more per objective group, presenting each multi-dimension word-problem answer in the length/width/height (or width/length/height) order the source's own solution used, stated explicitly in the question, and asking for the two Extensions polynomials in expanded form where the source prints each with its leading constant factored out.</small>

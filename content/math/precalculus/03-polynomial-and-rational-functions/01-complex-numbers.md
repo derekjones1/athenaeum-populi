@@ -156,12 +156,13 @@ plane.
 part is $-4i$. We plot the ordered pair $(3,-4)$ as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (3, 0) along the real axis, then down to the plotted point (3, −4), labelled 3 − 4i.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"segments":[{"from":[0,0],"to":[3,0],"arrows":"end"},{"from":[3,0],"to":[3,-4],"arrows":"end"}],"points":[{"at":[3,-4],"label":"3 − 4i","labelSide":"se"}]}
+{"ariaLabel":"The complex plane from −5 to 5 on both axes. The real axis is numbered at the even values. An arrow moves from the origin to (3, 0) along the real axis, then down to the plotted point (3, −4), labelled 3 − 4i.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xTickStep":2,"segments":[{"from":[0,0],"to":[3,0],"arrows":"end"},{"from":[3,0],"to":[3,-4],"arrows":"end"}],"points":[{"at":[3,-4],"label":"3 − 4i","labelSide":"se"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Plot the complex number $-4-i$ on the complex plane by giving its ordered pair $(a,b)$."
   answer="(-4,-1)"
+  answerForm="decimal"
   answerDisplay="$(-4,-1)$"
   hint="The real part of $-4-i$ gives the first coordinate and the imaginary part gives the second."
 >}}
@@ -205,9 +206,9 @@ $$
 {{< fillin
   question="Subtract $2+5i$ from $3-4i$."
   answer="1-9i"
-  answerForm="no-like-terms"
+  answerForm="expanded no-like-terms"
   answerDisplay="$1-9i$"
-  hint="Write it as $(3-4i)-(2+5i)$, then combine the real parts and combine the imaginary parts separately."
+  hint="Start from the number you subtract from, then subtract the real parts and subtract the imaginary parts separately."
 >}}
 
 ## Multiplying complex numbers
@@ -244,7 +245,7 @@ $$
 {{< fillin
   question="Find the product $-4(2+6i)$."
   answer="-8-24i"
-  answerForm="distributed"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-8-24i$"
   hint="Distribute the $-4$ to both the real part and the imaginary part."
 >}}
@@ -288,7 +289,7 @@ $$
 {{< fillin
   question="Multiply $(3-4i)(2+3i)$."
   answer="18+i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$18+i$"
   hint="Use the distributive property or FOIL, then remember that $i^2=-1$."
 >}}
@@ -410,8 +411,8 @@ simplify.
 $$
 \begin{array}{lrcl}
 & f(3+i) &=& (3+i)^2-5(3+i)+2 \\[4pt]
-\text{Multiply.} & &=& (3+6i+i^2)-(15+5i)+2 \\[4pt]
-\text{Substitute}\ -1\ \text{for}\ i^2. & &=& 9+6i+(-1)-15-5i+2 \\[4pt]
+\text{Multiply.} & &=& (9+6i+i^2)-(15+5i)+2 \\[4pt]
+\text{Substitute }{-1}\text{ for }i^2. & &=& 9+6i+(-1)-15-5i+2 \\[4pt]
 \text{Combine like terms.} & &=& -5+i
 \end{array}
 $$
@@ -422,6 +423,7 @@ output is $-5+i$.
 {{< fillin
   question="Let $f(x)=2x^2-3x$. Evaluate $f(8-i)$."
   answer="102-29i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$102-29i$"
   hint="Substitute $8-i$ for $x$, expand $(8-i)^2$, and combine the real and imaginary parts."
 >}}
@@ -436,15 +438,16 @@ $$
 \text{Rewrite the denominator in standard form.} & &=& \tfrac{2+10i}{3+10i} \\[4pt]
 \text{Multiply by the complex conjugate of the denominator.} & &=& \tfrac{2+10i}{3+10i}\cdot\tfrac{3-10i}{3-10i} \\[4pt]
 \text{Multiply using the distributive property.} & &=& \tfrac{6-20i+30i-100i^2}{9-30i+30i-100i^2} \\[4pt]
-\text{Substitute}\ -1\ \text{for}\ i^2. & &=& \tfrac{6-20i+30i-100(-1)}{9-30i+30i-100(-1)} \\[4pt]
+\text{Substitute }{-1}\text{ for }i^2. & &=& \tfrac{6-20i+30i-100(-1)}{9-30i+30i-100(-1)} \\[4pt]
 \text{Simplify.} & &=& \tfrac{106+10i}{109} \\[4pt]
 \text{Separate the real and imaginary parts.} & &=& \tfrac{106}{109}+\tfrac{10}{109}i
 \end{array}
 $$
 
 {{< fillin
-  question="Let $f(x)=\tfrac{x+1}{x-4}$. Evaluate $f(-i)$."
+  question="Let $f(x)=\tfrac{x+1}{x-4}$. Evaluate $f(-i)$. Write the result in standard form, $a+bi$."
   answer="-\frac{3}{17}+\frac{5}{17}i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-\tfrac{3}{17}+\tfrac{5}{17}i$"
   hint="Substitute $-i$ for $x$, then multiply the numerator and denominator by the complex conjugate of the denominator."
 >}}
@@ -526,7 +529,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $\sqrt{-9}+3\sqrt{-16}$."
   answer="15i"
-  answerForm="simplified-radical"
+  answerForm="expanded no-like-terms"
   answerDisplay="$15i$"
   hint="Rewrite each radical as a multiple of $i$ first, then combine."
 >}}
@@ -534,9 +537,33 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $\tfrac{2+\sqrt{-12}}{2}$."
   answer="1+\sqrt{3}i"
-  answerForm="simplified-radical"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$1+\sqrt{3}i$"
-  hint="Rewrite $\sqrt{-12}$ as $2i\sqrt{3}$, then divide every term in the numerator by $2$."
+  hint="Write $\sqrt{-12}$ as a multiple of $i$ in simplest radical form, then divide each term of the numerator by $2$."
+>}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The graph of a quadratic function on unnumbered x- and y-axes: an upward-opening parabola whose vertex lies on the y-axis below the x-axis.","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":22,"grid":false,"quadratics":[{"a":2,"c":-2,"from":-1.7,"to":1.7}]}
+{{< /apfigure >}}
+
+{{< fillin
+  question="Determine the number of real and nonreal solutions for the quadratic function shown above. Enter the number of real solutions, then the number of nonreal solutions, separated by a comma."
+  answer="2,0"
+  answerForm="decimal"
+  answerDisplay="2 real and 0 nonreal"
+  hint="Each $x$-intercept of the graph is a real solution of $f(x)=0$; a quadratic has two solutions in all, counting the nonreal ones."
+>}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The graph of a quadratic function on unnumbered x- and y-axes: an upward-opening parabola whose vertex lies on the y-axis above the x-axis.","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":22,"grid":false,"quadratics":[{"a":4,"c":1,"from":-0.85,"to":0.85}]}
+{{< /apfigure >}}
+
+{{< fillin
+  question="Determine the number of real and nonreal solutions for the quadratic function shown above. Enter the number of real solutions, then the number of nonreal solutions, separated by a comma."
+  answer="0,2"
+  answerForm="decimal"
+  answerDisplay="0 real and 2 nonreal"
+  hint="Each $x$-intercept of the graph is a real solution of $f(x)=0$; a quadratic has two solutions in all, counting the nonreal ones."
 >}}
 
 ### Plot complex numbers on the complex plane
@@ -544,6 +571,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Give the ordered pair $(a,b)$ used to plot the complex number $1-2i$ on the complex plane."
   answer="(1,-2)"
+  answerForm="decimal"
   answerDisplay="$(1,-2)$"
   hint="The real part gives the first coordinate and the imaginary part gives the second."
 >}}
@@ -551,8 +579,9 @@ require several more steps than our earlier method.
 {{< fillin
   question="Give the ordered pair $(a,b)$ used to plot the complex number $i$ on the complex plane."
   answer="(0,1)"
+  answerForm="decimal"
   answerDisplay="$(0,1)$"
-  hint="Write $i$ in standard form $a+bi$ first: here $a=0$ and $b=1$."
+  hint="Write $i$ in standard form $a+bi$ first, then read off $a$ and $b$."
 >}}
 
 ### Add and subtract complex numbers
@@ -560,7 +589,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(3+2i)+(5-3i)$."
   answer="8-i"
-  answerForm="no-like-terms"
+  answerForm="expanded no-like-terms"
   answerDisplay="$8-i$"
   hint="Add the real parts together and the imaginary parts together."
 >}}
@@ -568,7 +597,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(-5+3i)-(6-i)$."
   answer="-11+4i"
-  answerForm="no-like-terms"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-11+4i$"
   hint="Distribute the subtraction across the second complex number, then combine the real and imaginary parts."
 >}}
@@ -576,7 +605,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(-4+4i)-(-6+9i)$."
   answer="2-5i"
-  answerForm="no-like-terms"
+  answerForm="expanded no-like-terms"
   answerDisplay="$2-5i$"
   hint="Distribute the subtraction across the second complex number, then combine the real and imaginary parts."
 >}}
@@ -586,7 +615,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(5-2i)(3i)$."
   answer="6+15i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$6+15i$"
   hint="Distribute the $3i$ across both terms, then simplify using $i^2=-1$."
 >}}
@@ -594,7 +623,7 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(-1+2i)(-2+3i)$."
   answer="-4-7i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-4-7i$"
   hint="Use the distributive property or FOIL, then combine using $i^2=-1$."
 >}}
@@ -602,23 +631,23 @@ require several more steps than our earlier method.
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(3+4i)(3-4i)$."
   answer="25"
-  answerForm="distributed"
+  answerForm="decimal"
   answerDisplay="$25$"
-  hint="These two factors are complex conjugates, so their product is real: use $(a+bi)(a-bi)=a^2+b^2$."
+  hint="The factors are complex conjugates: multiply with FOIL (or use $(a+bi)(a-bi)=a^2+b^2$) and replace $i^2$ with $-1$."
 >}}
 
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $\tfrac{3+4i}{2-i}$."
   answer="\frac{2}{5}+\frac{11}{5}i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{2}{5}+\tfrac{11}{5}i$"
-  hint="Multiply the numerator and denominator by the complex conjugate of the denominator, $2+i$, then separate the real and imaginary parts."
+  hint="Multiply the numerator and denominator by the complex conjugate of the denominator, then separate the real and imaginary parts."
 >}}
 
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $\tfrac{6+4i}{i}$."
   answer="4-6i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$4-6i$"
   hint="Multiply the numerator and denominator by $-i$, the complex conjugate of $i$, then simplify using $i^2=-1$."
 >}}
@@ -626,10 +655,11 @@ require several more steps than our earlier method.
 {{< fillin
   question="If $f(x)=x^2+3x+5$, evaluate $f(2+i)$."
   answer="14+7i"
+  answerForm="expanded no-like-terms"
   answerDisplay="$14+7i$"
   hint="Substitute $2+i$ for $x$, expand $(2+i)^2$, and combine the real and imaginary parts."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 3.1: Complex Numbers](https://openstax.org/books/precalculus-2e/pages/3-1-complex-numbers) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the section's three complex-plane figures as accessible inline SVG built from the exact plotted point — $-2+3i$, the bare real/imaginary axis pair, and $3-4i$ — each drawn as a horizontal move along the real axis followed by a vertical move to the labelled point, matching the source's two-arrow diagrams; omitted the decorative "$5+2i$ real part / imaginary part" callout artwork and the "$3(6+2i)$" distribution-arrows illustration, folding their content into the surrounding prose and a plain step equation instead; reconstructed the worked step-by-step for evaluating $f(3+i)$, where $f(x)=x^2-5x+2$, from the source's page image, since its CNXML solution is an image with no transcribed steps, and independently verified the result $-5+i$ by substitution; omitted the two "count the real and nonreal solutions from a graphed parabola" exercises, whose source art has no transcribable geometry; omitted the "Access these online resources" media links, keeping only the introductory sentence; converted the section's "Try It" checks into interactive components, including two complex-plane plotting checks rewritten as ordered-pair fill-ins (GraphPlot only grades a line, a system of two lines, or a quadratic, not a plotted point); and adapted 13 selected end-of-section exercises — two radical-to-$i$ simplifications, two complex-plane plotting conversions, three addition/subtraction simplifications, two multiplications, a product of complex conjugates, two divisions (one by a complex denominator, one by $i$) written in standard $a+bi$ form, and a polynomial evaluated at a complex input — into interactive components in a closing Practice block, one group per objective. Every complex-division answer in this section, in both the exposition and the Practice block, is authored in standard $a+bi$ form rather than as a single fraction over a complex denominator, because the pinned compute-engine build computes complex division incorrectly when the denominator itself is complex.</small>
+<small>This section is adapted from [Precalculus 2e, Section 3.1: Complex Numbers](https://openstax.org/books/precalculus-2e/pages/3-1-complex-numbers) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the section's three complex-plane figures as accessible figures built from the exact plotted point — $-2+3i$, the bare real/imaginary axis pair, and $3-4i$ — each drawn as a horizontal move along the real axis followed by a vertical move to the labelled point, matching the source's two-arrow diagrams, with the $3-4i$ figure's real axis numbered at the even values so the move down from $3$ does not run through a tick number; omitted the decorative "$5+2i$ real part / imaginary part" callout artwork and the "$3(6+2i)$" distribution-arrows illustration, folding their content into the surrounding prose and a plain step equation instead; reconstructed the worked step-by-step for evaluating $f(3+i)$, where $f(x)=x^2-5x+2$, from the source's page image, since its CNXML solution is an image with no transcribed steps, and independently verified the result $-5+i$ by substitution, correcting the image's multiplication step, which prints $(3+6i+i^2)$ for the square $(3+i)^2$, to $(9+6i+i^2)$ (the next step already uses $9$); redrew the parabolas of the two "count the real and nonreal solutions from a graphed quadratic" exercises from their source art, which prints no scale — an upward-opening parabola with its vertex below the $x$-axis, and one with its vertex above it — and posed each as a fill-in, the second keyed from its graph because the source prints no solution for it; omitted the "Access these online resources" media links, keeping only the introductory sentence; converted the section's "Try It" checks into interactive components, including the complex-plane plotting check rewritten as an ordered-pair fill-in (GraphPlot only grades a line, a system of two lines, or a quadratic, not a plotted point), and asked for the $f(-i)$ check's result in standard form $a+bi$; and adapted 15 selected end-of-section exercises — two radical-to-$i$ simplifications, the two solution counts from a graphed quadratic, two complex-plane plotting conversions, three addition/subtraction simplifications, two multiplications, a product of complex conjugates, two divisions (one by a complex denominator, one by $i$) written in standard $a+bi$ form, and a polynomial evaluated at a complex input — into interactive components in a closing Practice block, one group per objective. Every complex-division answer in this section, in both the exposition and the Practice block, is authored in standard $a+bi$ form rather than as a single fraction over a complex denominator, because the pinned compute-engine build computes complex division incorrectly when the denominator itself is complex.</small>
