@@ -3363,3 +3363,182 @@ test('Precalculus chapters 1–2 grader gaps, second round', async (t) => {
     });
   }
 });
+
+// The Precalculus chapter 3 re-review (October 4, 2026). Each `form` row is
+// value-equal to its key and was graded `correct` before; each `correct` row
+// is a finished writing that must keep passing.
+const precalculusChapter3 = [
+  // 3.1 — numeral like terms left inside a group.
+  ['(3-2)+(-4-5)i', '1-9i', 'expanded no-like-terms', 'form'],
+  ['1+(-4-5)i', '1-9i', 'expanded no-like-terms', 'form'],
+  ['(3-2)-9i', '1-9i', 'expanded no-like-terms', 'form'],
+  ['\\left(3-2\\right)+\\left(-4-5\\right)i', '1-9i', 'expanded no-like-terms', 'form'],
+  ['1+i(-4-5)', '1-9i', 'expanded no-like-terms', 'form'],
+  ['\\frac{3-2}{1}-9i', '1-9i', 'expanded no-like-terms', 'form'],
+  ['1-(5i+4i)', '1-9i', 'expanded no-like-terms', 'form'],
+  ['3-2+(-4-5)i', '1-9i', 'expanded no-like-terms', 'form'],
+  ['-4\\cdot2-4\\cdot6i', '-8-24i', 'expanded no-like-terms', 'form'],
+  ['-8+(-24)i', '-8-24i', 'expanded no-like-terms', 'form'],
+  ['i^{35}', '-i', 'expanded no-like-terms', 'form'],
+  ['1-9i', '1-9i', 'expanded no-like-terms', 'correct'],
+  ['-9i+1', '1-9i', 'expanded no-like-terms', 'correct'],
+  ['\\frac{2}{5}+\\frac{11}{5}i', '\\frac{2}{5}+\\frac{11}{5}i', 'expanded no-like-terms', 'correct'],
+  ['(3-2)+(-4-6)i', '1-9i', 'expanded no-like-terms', 'incorrect'],
+  ['x(x+5)+2(x+5)', 'x^2+7x+10', 'no-like-terms', 'correct'], // `distributed` owns this
+  ['(x+2)(x+3)', 'x^2+5x+6', 'no-like-terms', 'correct'],
+  // 3.5 — a remainder over a binomial divisor shares no integer content.
+  ['4x^2-8x+15-\\frac{156}{8x+10}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{156}{8x+10}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded distributed no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{39}{2x+2.5}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
+  ['x+1+\\frac{2x+4}{2x^2+6}', 'x+1+\\frac{x+2}{x^2+3}', 'no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{78}{4x+5}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'correct'],
+  ['4x^2-8x+15+\\frac{-78}{4x+5}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'correct'],
+  ['x+5+\\frac{3}{x-2}', 'x+5+\\frac{3}{x-2}', 'no-like-terms', 'correct'],
+  ['4x^2-8x+15-\\frac{156}{8x+10}', '4x^2-8x+16-\\frac{78}{4x+5}', 'expanded no-like-terms', 'incorrect'],
+  // 3.9 — a variation constant not yet divided out.
+  ['y=\\frac{20}{4}x^2', 'y=5x^2', 'single-term', 'form'],
+  ['\\frac{20}{4}x^2', '5x^2', 'single-term', 'form'],
+  ['\\frac{20x^2}{4}', '5x^2', 'single-term', 'form'],
+  ['\\frac{5}{1}x^2', '5x^2', 'single-term', 'form'],
+  ['-\\frac{20}{4}x^2', '-5x^2', 'single-term', 'form'],
+  ['y=5x^2', 'y=5x^2', 'single-term', 'correct'],
+  ['\\frac{3}{4}x^2', '\\frac{3}{4}x^2', 'single-term', 'correct'],
+  ['\\frac{3x^2}{4}', '\\frac{3}{4}x^2', 'single-term', 'correct'],
+  ['\\frac{-3}{4}x^2', '-\\frac{3}{4}x^2', 'single-term', 'correct'],
+  ['\\frac{20}{4}x^2', '6x^2', 'single-term', 'incorrect'],
+  ['y=\\frac{80}{16}x^2', 'y=5x^2', 'single-term', 'form'],
+  ['y=\\frac{80x^2}{16}', 'y=5x^2', 'single-term', 'form'],
+  ['y=\\frac{100}{10}xzw', 'y=10xzw', 'single-term', 'form'],
+  ['y=\\frac{100xzw}{10}', 'y=10xzw', 'single-term', 'form'],
+  ['y=10xzw', 'y=10xzw', 'single-term', 'correct'],
+  ['y=\\frac{3x^2}{4}', 'y=\\frac{3}{4}x^2', 'single-term', 'correct'],
+  // 3.1 — i below a fraction bar is a division not yet carried out.
+  ['\\frac{6}{i}+\\frac{4i}{i}', '4-6i', 'expanded no-like-terms', 'form'],
+  ['4+\\frac{6}{i}', '4-6i', 'expanded no-like-terms', 'form'],
+  ['4+\\frac{6}{i}', '4-6i', 'expanded distributed no-like-terms', 'form'],
+  ['4-\\frac{6}{-i}', '4-6i', 'expanded no-like-terms', 'form'],
+  ['4+6\\div i', '4-6i', 'expanded no-like-terms', 'form'],
+  ['4+\\frac{6}{(i)}', '4-6i', 'expanded no-like-terms', 'form'],
+  ['4+6i^{-1}', '4-6i', 'expanded no-like-terms', 'form'],
+  ['\\frac{6+4i}{i}', '4-6i', 'expanded no-like-terms', 'form'],
+  ['4-6i', '4-6i', 'expanded no-like-terms', 'correct'],
+  ['\\tfrac{4}{17}+\\tfrac{16}{17}i', '\\tfrac{4}{17}+\\tfrac{16}{17}i', 'expanded no-like-terms', 'correct'],
+  ['\\frac{4}{17}+\\frac{16i}{17}', '\\tfrac{4}{17}+\\tfrac{16}{17}i', 'no-like-terms', 'correct'],
+  ['\\frac{\\pi}{2}+x', '\\frac{\\pi}{2}+x', 'no-like-terms', 'correct'],
+  ['4+\\frac{6}{i}', '4+6i', 'expanded no-like-terms', 'incorrect'],
+  // 3.8 — numeric work left inside a radicand.
+  ['\\sqrt[3]{\\frac{V}{\\frac{4}{3}\\pi}}', '\\sqrt[3]{\\frac{3V}{4\\pi}}', 'simplified-radical', 'form'],
+  ['\\sqrt[3]{\\frac{6V}{8\\pi}}', '\\sqrt[3]{\\frac{3V}{4\\pi}}', 'simplified-radical', 'form'],
+  ['\\sqrt[3]{\\frac{3V}{4\\pi}}', '\\sqrt[3]{\\frac{3V}{4\\pi}}', 'simplified-radical', 'correct'],
+  ['-\\sqrt{\\frac{2x-10}{6}}', '-\\sqrt{\\frac{x-5}{3}}', 'simplified-radical', 'form'],
+  ['\\sqrt{2\\cdot3x}', '\\sqrt{6x}', 'simplified-radical', 'form'],
+  ['-\\sqrt{\\frac{x-5}{3}}', '-\\sqrt{\\frac{x-5}{3}}', 'simplified-radical', 'correct'],
+  ['\\sqrt{\\frac{4+x}{3}}', '\\sqrt{\\frac{4+x}{3}}', 'simplified-radical', 'correct'], // a sum half holds no square
+  ['\\sqrt{\\frac{x}{9+x}}', '\\sqrt{\\frac{x}{9+x}}', 'simplified-radical', 'correct'],
+  ['\\sqrt{\\frac{x}{4}}', '\\frac{\\sqrt{x}}{2}', 'simplified-radical', 'form'],
+  ['\\sqrt{\\frac{V}{4\\pi}}', '\\sqrt{\\frac{V}{4\\pi}}', 'simplified-radical', 'form'], // keyed under `radical`
+  ['\\sqrt{\\frac{V}{4\\pi}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'correct'],
+  ['\\frac12\\sqrt{\\frac{V}{\\pi}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'correct'],
+  ['\\sqrt{\\frac{3V}{12\\pi}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{V}{\\frac13\\pi\\cdot12}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{V}{\\frac{1}{3}\\pi(12)}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{3V}{\\pi\\cdot12}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{V}{2\\cdot2\\pi}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{V}{4\\pi\\cdot1}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{0.25V}{\\pi}}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{V}{4\\pi}+0}', '\\sqrt{\\frac{V}{4\\pi}}', 'radical', 'form'],
+  ['\\sqrt{\\frac{V}{4\\pi}}', '\\sqrt{\\frac{V}{3\\pi}}', 'radical', 'incorrect'],
+  // 3.6 — a plain numeral is expanded, as a lone i is.
+  ['2', '2', 'expanded', 'correct'],
+  ['-3', '-3', 'expanded', 'correct'],
+  ['2', '2', 'expanded no-like-terms', 'correct'],
+  ['i', 'i', 'expanded', 'correct'],
+  ['3\\cdot5', '15', 'expanded', 'form'],
+  ['(2)(3)', '6', 'expanded', 'form'],
+  ['2^3', '8', 'expanded', 'form'],
+  ['x', 'x', 'expanded', 'form'],
+  ['2', '3', 'expanded', 'incorrect'],
+  // Round 2 — a fraction inside a remainder's divisor.
+  ['4x^2-8x+15-\\frac{78}{4(x+\\frac54)}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{39}{2(x+\\frac54)}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{78}{4x+\\frac{20}{4}}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{\\frac{78}{4}}{x+\\frac54}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
+  ['4x^2-8x+15-\\frac{78}{(4x+5)}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'correct'],
+  ['\\frac{5}{2(x+3)}+\\frac{5}{2(x-3)}', '\\frac{5}{2(x+3)}+\\frac{5}{2(x-3)}', 'expanded', 'correct'], // a partial-fraction key
+  // Round 2 — a written zero term beside a radical.
+  ['\\sqrt[3]{\\frac{3V}{4\\pi}}+0', '\\sqrt[3]{\\frac{3V}{4\\pi}}', 'simplified-radical', 'form'],
+  ['0+\\sqrt[3]{\\frac{3V}{4\\pi}}', '\\sqrt[3]{\\frac{3V}{4\\pi}}', 'simplified-radical', 'form'],
+  ['\\sqrt[3]{\\frac{3V}{4\\pi}}+\\sqrt{0}', '\\sqrt[3]{\\frac{3V}{4\\pi}}', 'simplified-radical', 'form'],
+  ['2\\sqrt{6}i+0', '2\\sqrt{6}i', 'simplified-radical', 'form'],
+  ['0+2\\sqrt{6}i+0', '0+2\\sqrt{6}i', 'simplified-radical', 'form'],
+  ['0+2\\sqrt{6}i', '0+2\\sqrt{6}i', 'simplified-radical', 'correct'], // a+bi's zero real part
+  ['2\\sqrt{6}i', '0+2\\sqrt{6}i', 'simplified-radical', 'correct'],
+  ['0', '0', 'simplified-radical', 'correct'],
+  // Round 2 — a sign stacked on a parenthesized single term.
+  ['1+(-9i)', '1-9i', 'expanded no-like-terms', 'form'],
+  ['-(9i)+1', '1-9i', 'expanded no-like-terms', 'form'],
+  ['1-(9i)', '1-9i', 'expanded no-like-terms', 'form'],
+  ['\\left(1\\right)+\\left(-9i\\right)', '1-9i', 'expanded no-like-terms', 'form'],
+  ['-(9i)', '-9i', 'expanded', 'form'],
+  ['x^2-(3x)', 'x^2-3x', 'expanded', 'form'],
+  ['-i', '-i', 'expanded', 'correct'],
+  ['-i', '-i', 'expanded no-like-terms', 'correct'],
+  ['(-i)', '-i', 'expanded', 'correct'],
+  ['-\\frac{3}{17}+\\frac{5}{17}i', '-\\frac{3}{17}+\\frac{5}{17}i', 'expanded no-like-terms', 'correct'],
+  ['x^2-(x+1)', 'x^2-x-1', 'expanded', 'correct'], // a group holding a sum is `distributed`'s
+  ['1+(-8i)', '1-9i', 'expanded no-like-terms', 'incorrect'],
+];
+test('Precalculus chapter 3 grader gaps', async (t) => {
+  for (const [typed, key, form, expected] of precalculusChapter3) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// 3.6 / 3.7 / 3.2 — rows that need a mode or the feedback string: an
+// unordered complex-zero list with a real member, a union of three or more
+// intervals in any order (the engine nests it to the right), and a range
+// written as an inequality on a function label.
+const K3 = '(-\\infty,1)\\cup(1,5)\\cup(5,\\infty)';
+const K5 = '(-\\infty,-2)\\cup(-2,-1)\\cup(-1,1)\\cup(1,2)\\cup(2,\\infty)';
+const precalculusChapter3Modes = [
+  ['2,3+2i,3-2i', '2,3+2i,3-2i', 'expanded no-like-terms', 'unordered', 'correct'],
+  ['3-2i,3+2i,2', '2,3+2i,3-2i', 'expanded no-like-terms', 'unordered', 'correct'],
+  ['3-2i,3+2i,1+1', '2,3+2i,3-2i', 'expanded no-like-terms', 'unordered', 'form'],
+  ['3-2i,3+2i', '2,3+2i,3-2i', 'expanded no-like-terms', 'unordered', 'incorrect'],
+  ['(1,5)\\cup(-\\infty,1)\\cup(5,\\infty)', K3, undefined, undefined, 'correct'],
+  ['(5,\\infty)\\cup(1,5)\\cup(-\\infty,1)', K3, undefined, undefined, 'correct'],
+  ['(1,3)\\cup(-\\infty,0)\\cup(5,\\infty)', '(-\\infty,0)\\cup(1,3)\\cup(5,\\infty)', undefined, undefined, 'correct'],
+  ['(5,\\infty)\\cup(-\\infty,0)\\cup(1,3)', '(-\\infty,0)\\cup(1,3)\\cup(5,\\infty)', undefined, undefined, 'correct'],
+  ['(-\\infty,0)\\cup(5,\\infty)\\cup(1,3)', '(-\\infty,0)\\cup(1,3)\\cup(5,\\infty)', undefined, undefined, 'correct'],
+  ['(1,5)\\cup(-\\infty,1)', '(-\\infty,1)\\cup(1,5)', undefined, undefined, 'correct'],
+  ['(1,5]\\cup(-\\infty,1)\\cup(5,\\infty)', K3, undefined, undefined, 'incorrect'],
+  ['(1,5)\\cup(5,\\infty)', K3, undefined, undefined, 'incorrect'],
+  ['(1,5)\\cup(-\\infty,1)\\cup(5,\\infty)\\cup(7,8)', K3, undefined, undefined, 'incorrect'],
+  ['(1,5)\\cup(-\\infty,1)\\cup(5,\\infty)\\cup(1,5)', K3, undefined, undefined, 'incorrect'],
+  ['(1,\\frac{10}{2})\\cup(-\\infty,1)\\cup(5,\\infty)', K3, 'lowest-terms', undefined, 'form'],
+  ['(2,\\infty)\\cup(1,2)\\cup(-1,1)\\cup(-2,-1)\\cup(-\\infty,-2)', K5, undefined, undefined, 'correct'],
+  ['(-1,1)\\cup(-\\infty,-2)\\cup(2,\\infty)\\cup(-2,-1)\\cup(1,2)', K5, undefined, undefined, 'correct'],
+  ['(-1,1)\\cup(-\\infty,-2)\\cup(2,\\infty)\\cup(-2,-1)\\cup(1,3)', K5, undefined, undefined, 'incorrect'],
+  ['f(x)\\ge\\frac{8}{11}', '[\\frac{8}{11},\\infty)', 'lowest-terms', undefined, 'form'],
+  ['y\\ge\\frac{8}{11}', '[\\frac{8}{11},\\infty)', 'lowest-terms', undefined, 'form'],
+  ['f(x)\\ge2', '[2,\\infty)', 'decimal', undefined, 'form'],
+  ['2\\le f(x)', '[2,\\infty)', undefined, undefined, 'form'],
+  ['-1\\le g(x)<3', '[-1,3)', undefined, undefined, 'form'],
+  ['f(x)\\ge3', '[2,\\infty)', 'decimal', undefined, 'incorrect'],
+  ['f(x)>2', '[2,\\infty)', 'decimal', undefined, 'incorrect'],
+  ['f(2)\\ge2', '[2,\\infty)', undefined, undefined, 'incorrect'],
+  ['[2,\\infty)', '[2,\\infty)', 'decimal', undefined, 'correct'],
+  ['f(x)\\ge2', 'f(x)\\ge2', undefined, undefined, 'correct'],
+  ['y\\ge2', 'f(x)\\ge2', undefined, undefined, 'incorrect'],
+];
+test('Precalculus chapter 3 grader gaps, with modes', async (t) => {
+  for (const [typed, key, form, mode, expected] of precalculusChapter3Modes) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}|${mode ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form, mode }), expected);
+    });
+  }
+  assert.equal(describeFormFeedback('f(x)\\ge\\frac{8}{11}', 'lowest-terms', '[\\frac{8}{11},\\infty)'),
+    describeFormFeedback('y\\ge\\frac{8}{11}', 'lowest-terms', '[\\frac{8}{11},\\infty)'));
+});

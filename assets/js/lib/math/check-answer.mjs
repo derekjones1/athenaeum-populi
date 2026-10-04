@@ -728,6 +728,7 @@ const writesNumeralPower = (bare) => NUMERAL_POWER.test(bare);
 // The imaginary unit written as a letter of its own — not inside a command
 // name (`\pi`, `\infty`, `\sin`) and not the head of a longer word.
 const IMAGINARY_LETTER = /(?<!\\[a-zA-Z]*)i(?![a-zA-Z])/g;
+const IMAGINARY_LETTER_ONCE = /(?<!\\[a-zA-Z]*)i(?![a-zA-Z])/;
 // A power of i left written — `20i-12i^2` for `12+20i`, `i^{35}` for `-i` —
 // is numeral arithmetic left undone exactly as `(-14)^2` is: the engine folds
 // `i^2` to −1 before any parse-based predicate sees it, so `expanded` and
@@ -735,6 +736,26 @@ const IMAGINARY_LETTER = /(?<!\\[a-zA-Z]*)i(?![a-zA-Z])/g;
 // 8.8, October 3, 2026). Not read inside a summation, whose index may be `i`.
 const writesImaginaryPower = (bare) => !/\\sum(?![a-zA-Z])/.test(bare)
   && /(?<!\\[a-zA-Z]*)i\s*\^/.test(bare);
+// The imaginary unit below a fraction bar is a division not yet carried out:
+// `4+\frac{6}{i}` and `\frac{6}{i}+\frac{4i}{i}` passed against `4-6i` —
+// standard form a+bi never divides by i (Precalculus 3.1, October 4, 2026).
+// `6i^{-1}` is writesImaginaryPower's; a written `\div i` or `/i` is the same.
+function writesImaginaryDenominator(bare) {
+  if (/\\sum(?![a-zA-Z])/.test(bare)) return false;
+  const imaginary = /(?<!\\[a-zA-Z]*)i(?![a-zA-Z])/;
+  for (const divide of bare.matchAll(/(?:\\div(?![a-zA-Z])|\/)\s*/g)) {
+    const at = divide.index + divide[0].length;
+    const divisor = bare[at] === '(' || bare[at] === '{'
+      ? readDelimitedGroup(bare, at)?.[0] : bare.slice(at).match(/^[\d.\s]*[a-zA-Z]?/)[0];
+    if (divisor && imaginary.test(divisor)) return true;
+  }
+  for (const opener of bare.matchAll(/\\[tdc]?frac(?![a-zA-Z])/g)) {
+    const numerator = readTexArgument(bare, opener.index + opener[0].length);
+    const denominator = numerator && readTexArgument(bare, numerator[1]);
+    if (denominator && imaginary.test(denominator[0])) return true;
+  }
+  return false;
+}
 
 /** A quotient whose divisor holds a symbol: `\frac{3}{x}`, `\frac{3}{x+1}`, `x^{-1}`. */
 function symbolDenominator(expr) {
@@ -1236,11 +1257,19 @@ function equivalent(studentExpr, answerExpr) {
     // so a right set with an unreduced endpoint graded `incorrect` where the
     // same endpoint in one interval graded `form` (Intermediate Algebra 2.6,
     // September 27, 2026).
+    //
+    // The engine nests a union of three or more to the right —
+    // `a\cup b\cup c` boxes as Union(a, Union(b, c)) — so the members are
+    // read flattened: matched as a nested pair, a correct union typed in
+    // another order (`(1,5)\cup(-\infty,1)\cup(5,\infty)`) graded
+    // `incorrect` (Precalculus 3.7, October 4, 2026).
     if (studentExpr.operator === 'Union' || answerExpr.operator === 'Union') {
       if (studentExpr.operator !== answerExpr.operator) return false;
-      const unused = [...(answerExpr.ops ?? [])];
-      if ((studentExpr.ops ?? []).length !== unused.length) return false;
-      return studentExpr.ops.every((member) => {
+      const unionMembers = (e) => (e.operator === 'Union' ? (e.ops ?? []).flatMap(unionMembers) : [e]);
+      const unused = unionMembers(answerExpr);
+      const members = unionMembers(studentExpr);
+      if (members.length !== unused.length) return false;
+      return members.every((member) => {
         const match = unused.findIndex((candidate) => equivalent(member, candidate));
         if (match === -1) return false;
         unused.splice(match, 1);
@@ -2695,6 +2724,35 @@ function isImaginaryRationalTerm(term) {
   }
 }
 
+/**
+ * Does a written sum hold two variable-free like terms the engine folds before
+ * any parse can show them — two rational constants (`16x+9+8`), or two
+ * rational multiples of i (`5i+3i`)? Read on the top-level terms of `text`.
+ */
+function writesNumeralLikeTerms(text) {
+  const bodies = splitTopLevelTerms(text).map((term) => term.trim().replace(/^[+-]\s*/, '')).filter(Boolean);
+  return bodies.filter(isConstantTerm).length > 1 || bodies.filter(isImaginaryRationalTerm).length > 1;
+}
+
+/**
+ * The contents of every `(…)` and `{…}` group the writing holds, at every
+ * depth, outermost first. A command name is stepped over, so `\{` opens
+ * nothing.
+ */
+function writtenGroups(text) {
+  const groups = [];
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] === '\\') {
+      i += text.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1;
+      continue;
+    }
+    if (text[i] !== '(' && text[i] !== '{') continue;
+    const group = readDelimitedGroup(text, i);
+    if (group) groups.push(group[0]);
+  }
+  return groups;
+}
+
 function isZeroTerm(term) {
   const head = ZERO_TERM_HEAD.exec(term);
   if (head) {
@@ -2767,6 +2825,27 @@ function writesFactorProduct(term) {
       if (!holdsSum && (i > 0 || rest.trim())) return true;
       i = after - 1;
     }
+  }
+  return false;
+}
+
+/**
+ * Does a top-level term consist of a sign and then one parenthesized single
+ * term, nothing else — `+(-9i)`, `-(9i)`? Read on the whole writing, because
+ * splitTopLevelTerms drops the sign that delimits a term.
+ */
+function writesSignedGroupTerm(bare) {
+  let depth = 0;
+  for (let i = 0; i < bare.length; i += 1) {
+    const char = bare[i];
+    if (char === '{' || char === '(') depth += 1;
+    else if (char === '}' || char === ')') depth -= 1;
+    if (depth !== 0 || (char !== '+' && char !== '-')) continue;
+    const open = bare.slice(i + 1).match(/^\s*\(/);
+    if (!open) continue;
+    const group = readDelimitedGroup(bare, i + open[0].length);
+    if (!group || !/^\s*(?:[+-]|$)/.test(bare.slice(group[1]))) continue;
+    if (splitTopLevelTerms(group[0]).filter((piece) => piece.trim()).length === 1) return true;
   }
   return false;
 }
@@ -3106,7 +3185,7 @@ const WRITES_A_DECIMAL = /\d\s*\.|\.\s*\d/;
  * every group whose halves are both monomials: no decimal point in either
  * half, and reducedMonomialQuotient() — no shared variable, no common
  * integer factor. A half that is not a monomial (`\frac{3}{x-2}`) is a
- * rational-expression remainder and is not read here.
+ * rational-expression remainder, read only for a common integer content.
  *
  * Elementary Algebra 6.6's quotient-with-remainder keys (`3c+1-\frac{3}{2c}`,
  * declared `expanded distributed no-like-terms`) accepted the unreduced
@@ -3144,6 +3223,21 @@ function termFractionsReduced(latex) {
       if (magnitudes.every(Boolean)) {
         if (halves.some((half) => WRITES_A_DECIMAL.test(half))) return false;
         if (!reducedMonomialQuotient(magnitudes[0], magnitudes[1])) return false;
+      } else {
+        // A remainder over a polynomial divisor still has its integer content
+        // cancelled: `4x^2-8x+15-\frac{156}{8x+10}` passed against
+        // `4x^2-8x+15-\frac{78}{4x+5}` (Precalculus 3.5, October 4, 2026).
+        // The contents are the gcds of each half's terms' integer contents;
+        // a decimal point in either half is the same unfinished division
+        // (`\frac{39}{2x+2.5}`), as it is over a monomial.
+        if (halves.some((half) => WRITES_A_DECIMAL.test(half))) return false;
+        // …and so is a fraction written inside either half, the divisor's
+        // factored-out leading coefficient left in place:
+        // `\frac{78}{4(x+\frac54)}` for `\frac{78}{4x+5}` (Precalculus 3.5,
+        // October 4, 2026, round 2).
+        if (halves.some((half) => /\\[tdc]?frac(?![a-zA-Z])/.test(half))) return false;
+        const contents = halves.map(integerContent);
+        if (contents.every(Number.isInteger) && gcd(contents[0], contents[1]) > 1) return false;
       }
       i = denominator[1] - 1;
     }
@@ -3530,6 +3624,30 @@ function radicalWritingDefect(text) {
 }
 
 /**
+ * Does a radicand leave numeric work written? radicalWritingDefect() reads
+ * a radical's surroundings and steps over its radicand, so a fraction under
+ * the radical went unread: `\sqrt{\frac{2x-10}{6}}` passed `simplified-radical`
+ * against `\sqrt{\frac{x-5}{3}}`, and `\sqrt[3]{\frac{V}{\frac43\pi}}` against
+ * `\sqrt[3]{\frac{3V}{4\pi}}` (Precalculus 3.8, October 4, 2026). The same
+ * defects are read inside it — content across the bar, a bar over 1, two
+ * numerals in one term — and so is a fraction written inside a fraction's
+ * half, the compound fraction the inverse-function solve leaves, a decimal
+ * (`\sqrt{\frac{0.25V}{\pi}}`), and a written zero term.
+ */
+function radicandWritingDefect(radicand) {
+  if (WRITES_A_DECIMAL.test(radicand)) return true;
+  const terms = splitTopLevelTerms(radicand).filter((term) => term.trim());
+  if (terms.length > 1 && terms.some((term) => isZeroTerm(term.trim().replace(/^[+-]\s*/, '')))) return true;
+  for (const opener of radicand.matchAll(/\\[tdc]?frac(?![a-zA-Z])/g)) {
+    const numerator = readTexArgument(radicand, opener.index + opener[0].length);
+    const denominator = numerator && readTexArgument(radicand, numerator[1]);
+    if (!denominator) continue;
+    if ([numerator[0], denominator[0]].some((half) => /\\[tdc]?frac(?![a-zA-Z])/.test(half))) return true;
+  }
+  return radicalWritingDefect(radicand);
+}
+
+/**
  * Is a written numeral-fraction exponent in lowest terms? `x^{\frac{2}{4}}`
  * is `x^{\frac12}` with the exponent left unreduced — value-equal, so only
  * the writing can refuse it. An exponent that is not a numeral fraction has
@@ -3739,7 +3857,12 @@ const FORM_PREDICATES = {
     if (!factor || factor.exponent !== null || factor.atom.kind !== 'sqrt') return false;
     const { index, radicand } = factor.atom;
     if (index !== null && !(isIntegerLiteral(index) && Number(index) >= 2)) return false;
-    return hasVariableLetter(radicand);
+    // The radicand's numeric work is finished: `\sqrt{\frac{3V}{12\pi}}` and
+    // `\sqrt{\frac{V}{\frac13\pi\cdot12}}` passed against the source's
+    // `\sqrt{\frac{V}{4\pi}}` (Precalculus 3.8, October 4, 2026) — a key that
+    // `simplified-radical` refuses for the square 4 the source leaves in its
+    // denominator, so the token that keys it reads the radicand itself.
+    return hasVariableLetter(radicand) && !radicandWritingDefect(radicand);
   },
   // "Solve $7^x=43$. Enter the exact answer": the exercise prints the decimal
   // approximation in its own feedback, and that approximation is value-equal
@@ -3957,6 +4080,17 @@ const FORM_PREDICATES = {
     // (`3.3166i`) is an approximation — neither is a simplified radical.
     if (NON_INTEGER_EXPONENT.test(bare)) return false;
     if (/\d\.\d/.test(bare)) return false;
+    // A written zero term is decoration, at the top level as inside a
+    // radicand: `\sqrt[3]{\frac{3V}{4\pi}}+0` passed (Precalculus 3.8,
+    // October 4, 2026, round 2). A lone `0` is a value, not decoration, and
+    // so is the zero real part of a+bi written out — the source's own
+    // standard form `0+2\sqrt{6}i` (Precalculus 3.1): a leading plain `0`
+    // and one term carrying i.
+    const topTerms = splitTopLevelTerms(bare).filter((term) => term.trim());
+    const zeroRealPart = topTerms.length === 2 && /^\s*0\s*$/.test(topTerms[0])
+      && IMAGINARY_LETTER_ONCE.test(topTerms[1]) && !isZeroTerm(topTerms[1].trim());
+    if (topTerms.length > 1 && !zeroRealPart
+      && topTerms.some((term) => isZeroTerm(term.trim().replace(/^[+-]\s*/, '')))) return false;
     // Read each radicand as a balanced group: `\sqrt[4]{u^{12}}` and
     // `\sqrt{\tfrac{75x^5}{3x}}` both carry braces inside the radicand, which a
     // flat `[^{}]*` pattern silently fails to match — and a radical that never
@@ -3998,6 +4132,9 @@ const FORM_PREDICATES = {
       }
     }
     for (const [indexArg, radicand] of radicands) {
+      // Numeric work left inside the radicand — `\sqrt{\frac{2x-10}{6}}`,
+      // `\sqrt[3]{\frac{V}{\frac43\pi}}` (Precalculus 3.8, October 4, 2026).
+      if (radicandWritingDefect(radicand)) return false;
       // Unevaluated ARITHMETIC under the radical is never simplified when the
       // radicand is all numerals: `\sqrt{64+225}` is a sum the learner was
       // asked to evaluate, and `\sqrt{\tfrac{25}{16}}` keeps the fraction the
@@ -4037,6 +4174,10 @@ const FORM_PREDICATES = {
       // 2^6·2) still comes out (Elementary Algebra 9.7, September 27, 2026).
       const halves = fracHalves(radicand.trim());
       for (const piece of halves.length === 2 ? halves : [radicand]) {
+        // A half that is a sum is irreducible for the same reason a sum
+        // radicand is: `\sqrt{\frac{x-5}{3}}` and `\sqrt{\frac{4+x}{3}}` are
+        // not holding the square 4 (Precalculus 3.8, October 4, 2026).
+        if (splitTopLevelTerms(piece).filter((term) => term.trim()).length > 1) continue;
         const numeral = piece.match(/^\s*-?\s*(\d+)/);
         if (numeral) {
           const value = Number(numeral[1]);
@@ -4186,17 +4327,20 @@ const FORM_PREDICATES = {
   // (the engine keeps `\sqrt8` apart from `\sqrt2`), since reducing it is
   // `simplified-radical`'s rule, not this one's.
   'no-like-terms': (latex) => {
-    const constants = splitTopLevelTerms(bareLatex(latex))
-      .filter((term) => term.trim() && isConstantTerm(term.trim().replace(/^[+-]\s*/, '')));
-    if (constants.length > 1) return false;
-    // The imaginary twins of both folds: `i^2` left written is a −1 not yet
-    // carried into the real part (`20i-12i^2` for `12+20i`), and two written
-    // rational multiples of i (`5i+3i`, which parses to `8i`) are like terms
-    // (Intermediate Algebra 8.8, October 3, 2026).
-    if (writesImaginaryPower(bareLatex(latex))) return false;
-    const imaginaries = splitTopLevelTerms(bareLatex(latex))
-      .filter((term) => term.trim() && isImaginaryRationalTerm(term.trim().replace(/^[+-]\s*/, '')));
-    if (imaginaries.length > 1) return false;
+    // Two written constants, and their imaginary twins: `i^2` left written is
+    // a −1 not yet carried into the real part (`20i-12i^2` for `12+20i`), and
+    // two written rational multiples of i (`5i+3i`, which parses to `8i`) are
+    // like terms (Intermediate Algebra 8.8, October 3, 2026).
+    if (writesNumeralLikeTerms(bareLatex(latex))) return false;
+    if (writesImaginaryPower(bareLatex(latex)) || writesImaginaryDenominator(bareLatex(latex))) return false;
+    // …and so are two written inside a group: `(3-2)+(-4-5)i` for `1-9i`,
+    // the "add the real parts, add the imaginary parts" line, passed — each
+    // group was one constant term of the sum, and the engine folds what is
+    // inside it (Precalculus 3.1, October 4, 2026). Every `(…)`/`{…}` group
+    // at any depth is read (`\frac{3-2}{1}`, `x^{2+1}` alike), except a
+    // comma-separated one, which is a list, not a sum.
+    if (writtenGroups(bareLatex(latex)).some((group) => splitTopLevelTerms(group).filter((term) => term.trim()).length > 1
+      && !withoutGroups(group).includes(',') && writesNumeralLikeTerms(group))) return false;
     // …and so does a sum of like radical constants (`\sqrt2+\sqrt2` parses to
     // `2\sqrt2`, `2\sqrt3+5\sqrt3` to `7\sqrt3`), so a variable-free term's
     // radical part is read off the LaTeX too.
@@ -4272,14 +4416,26 @@ const FORM_PREDICATES = {
   // load-bearing term; a plain monomial (`-\frac{1}{2}x^3y`) passes, and so
   // does a sum still holding a binomial factor (`x(x+5)+2(x+5)`), which
   // `distributed` owns. Uncombined like terms stay legal (`no-like-terms`
-  // owns them), and so does an unreduced coefficient (`\frac{2}{72}xy`), as
-  // under `single-term` and `no-like-terms`.
+  // owns them), and so does an unreduced coefficient (`\frac{2}{72}xy`),
+  // which `single-term` and `no-like-terms` refuse.
   expanded: (latex) => {
     const bare = bareLatex(latex);
+    // A plain numeral is already in standard form, as a lone `i` (a Complex
+    // literal) always was: `2` graded `form` against itself, so a complex-zero
+    // list mixing a real member with a+bi members (`2,3+2i,3-2i`) refused its
+    // own key (Precalculus 3.6, October 4, 2026). Only the bare numeral —
+    // `3\cdot5`, `(2)(3)` and `2^3` still fail below.
+    if (PLAIN_NUMERAL.test(bare)) return true;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     if (writesImaginaryPower(bare)) return false;
     const terms = loadBearingTerms(bare);
     if (terms.length > 1 && terms.some(writesFactorProduct)) return false;
+    // A sign stacked on a parenthesized single term is the sign not yet
+    // distributed: `1+(-9i)`, `-(9i)+1` and `1-(9i)` passed against `1-9i`
+    // where `-8+(-24)i` was already refused (Precalculus 3.1, October 4,
+    // 2026, round 2) — slope-intercept form's `2x-(-3)` rule, here for every
+    // term. A group holding a sum (`-(x+1)`) is not this.
+    if (writesSignedGroupTerm(bare)) return false;
     const written = terms.length === 1 && terms[0] !== bare ? terms[0] : latex;
     try {
       const expr = parseLatex(preprocess(written));
@@ -4307,6 +4463,12 @@ const FORM_PREDICATES = {
     if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     if (writesUnreducedExponent(bare) || writesImaginaryPower(bare) || writesPerfectNumeralRoot(bare)) return false;
+    // A coefficient fraction left unreduced is a division left undone:
+    // `y=\frac{20}{4}x^2`, `\frac{20x^2}{4}` and `\frac{5}{1}x^2` passed
+    // against `y=5x^2`, the variation constant not yet divided out
+    // (Precalculus 3.9, October 4, 2026). The rules `no-like-terms` and
+    // `factored` already hold a term to; a reduced `\frac{3}{4}x^2` passes.
+    if (!numeralFractionsReduced(bare) || !termFractionsReduced(bare)) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
       if (bare[i] === '{' || bare[i] === '(') depth += 1;
@@ -5695,6 +5857,16 @@ function intervalNotationSet(latex) {
   return intervals;
 }
 
+/**
+ * The variable side of a one-variable inequality: a letter, or a function
+ * label standing for one. The source writes a range as `f(x)\ge k`, and
+ * `f(x)\ge\frac{8}{11}` graded `incorrect` against `[\frac{8}{11},\infty)`
+ * where `y\ge\frac{8}{11}` got the interval-notation nudge (Precalculus 3.2,
+ * October 4, 2026). The label is compared as written, spaces aside, so
+ * `f(x)` and `y` are different variables.
+ */
+const INEQUALITY_VARIABLE = /^(?:[a-zA-Z]|[a-zA-Z](?:_\{p+\})?\s*\(\s*[a-zA-Z]\s*\))$/;
+
 /** `{ variable, intervals }` for a one-variable inequality response, or null. */
 function inequalitySet(latex) {
   const text = setWriting(latex);
@@ -5710,10 +5882,11 @@ function inequalitySet(latex) {
       const relations = [];
       const sides = splitAtTopLevel(conjunct, ORDER_RELATION, relations);
       if (sides.length < 2 || sides.length > 3 || sides.some((side) => !side)) return null;
-      const at = sides.findIndex((side) => /^[a-zA-Z]$/.test(side));
+      const at = sides.findIndex((side) => INEQUALITY_VARIABLE.test(side));
       if (at === -1 || (sides.length === 3 && at !== 1)) return null;
-      if (variable !== null && sides[at] !== variable) return null;
-      variable = sides[at];
+      const written = sides[at].replace(/\s+/g, '');
+      if (variable !== null && written !== variable) return null;
+      variable = written;
       const kinds = relations.map(relationKind);
       if (kinds.some((kind) => kind === null)) return null;
       if (kinds.length === 2 && (kinds[0] === 'lt' || kinds[0] === 'le') !== (kinds[1] === 'lt' || kinds[1] === 'le')) {
