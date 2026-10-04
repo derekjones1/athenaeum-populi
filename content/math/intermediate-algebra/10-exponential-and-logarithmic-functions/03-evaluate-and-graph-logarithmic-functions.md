@@ -65,35 +65,29 @@ Identify the base and the exponent in each exponential equation:
 | ${5}^{\tfrac{1}{2}}=\sqrt{5}$ | $\tfrac{1}{2}=\log_{5}\sqrt{5}$ |
 | ${(\tfrac{1}{2})}^{4}=\tfrac{1}{16}$ | $4=\log_{\tfrac{1}{2}}\tfrac{1}{16}$ |
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $3^2=9$."
-  answer="$\log_3 9=2$"
+  answer="\log_3 9=2"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_3 9=2$"
   hint="In $a^y=x$, the equivalent logarithmic form is $\log_a x=y$."
 >}}
-$\log_2 9=3$
-$\log_3 9=2$
-$\log_9 3=2$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $7^{\tfrac12}=\sqrt7$."
-  answer="$\log_7\sqrt7=\tfrac12$"
+  answer="\log_7\sqrt{7}=\frac{1}{2}"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_7\sqrt7=\tfrac12$"
   hint="Keep the exponential base as the logarithmic base."
 >}}
-$\log_7\sqrt7=\tfrac12$
-$\log_{\tfrac12}\sqrt7=7$
-$\log_{\sqrt7}7=\tfrac12$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $(\tfrac13)^x=\tfrac1{27}$."
-  answer="$\log_{\tfrac13}\tfrac1{27}=x$"
+  answer="\log_{\frac{1}{3}}\frac{1}{27}=x"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_{\tfrac13}\tfrac1{27}=x$"
   hint="The base of the power becomes the base of the logarithm, and the exponent becomes the value of the logarithm."
 >}}
-$\log_x\tfrac1{27}=\tfrac13$
-$\log_{\tfrac1{27}}\tfrac13=x$
-$\log_{\tfrac13}\tfrac1{27}=x$
-{{< /multiplechoice >}}
 
 In the next example we do the reverse—convert logarithmic form to exponential form.
 
@@ -109,35 +103,29 @@ Identify the base and the exponent in each logarithmic equation:
 | $0=\log_{4}1$ | $1=4^0$ |
 | $-3=\log_{10}\tfrac{1}{1000}$ | $\tfrac{1}{1000}=10^{-3}$ |
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $3=\log_4 64$."
-  answer="$64=4^3$"
+  answer="64=4^3"
+  answerForm="exponential-form"
+  answerDisplay="$64=4^3$"
   hint="In $\log_a x=y$, the equivalent exponential form is $x=a^y$."
 >}}
-$64=3^4$
-$64=4^3$
-$4=64^3$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $0=\log_x 1$."
-  answer="$1=x^0$"
+  answer="1=x^0"
+  answerForm="exponential-form"
+  answerDisplay="$1=x^0$"
   hint="The logarithm is the exponent on the base."
 >}}
-$1=x^0$
-$1=0^x$
-$x=1^0$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $-2=\log_{10}\tfrac1{100}$."
-  answer="$\tfrac1{100}=10^{-2}$"
+  answer="\frac{1}{100}=10^{-2}"
+  answerForm="exponential-form"
+  answerDisplay="$\tfrac1{100}=10^{-2}$"
   hint="The base of the logarithm becomes the base of the power."
 >}}
-$\tfrac1{100}=(-2)^{10}$
-$10=(\tfrac1{100})^{-2}$
-$\tfrac1{100}=10^{-2}$
-{{< /multiplechoice >}}
 
 ## Evaluate Logarithmic Functions
 
@@ -583,89 +571,83 @@ To compare the intensities, we first need to convert the magnitudes to intensiti
   hint="Convert each magnitude to an intensity, form the ratio of the intensities, and divide by subtracting the exponents."
 >}}
 
+## Key terms
+
+**common logarithmic function** — the function $f(x)=\log x$, the
+logarithmic function with base $10$, where $x>0$: $y=\log x$ is equivalent to
+$x=10^y$. **logarithmic function** — the function $f(x)=\log_a x$, the
+logarithmic function with base $a$, where $a>0$, $x>0$, and $a\ne1$:
+$y=\log_a x$ is equivalent to $x=a^y$. **natural logarithmic function** — the
+function $f(x)=\ln x$, the logarithmic function with base $e$, where $x>0$:
+$y=\ln x$ is equivalent to $x=e^y$.
+
 ## Practice
 
 ### Convert between exponential and logarithmic form
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $2^5=32$."
-  answer="$\log_2 32=5$"
+  answer="\log_2 32=5"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_2 32=5$"
   hint="In $a^y=x$, the equivalent logarithmic form is $\log_a x=y$."
 >}}
-$\log_5 32=2$
-$\log_2 32=5$
-$\log_{32}2=5$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $10^{-2}=\tfrac1{100}$."
-  answer="$\log\tfrac1{100}=-2$"
+  answer="\log\frac{1}{100}=-2"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log\tfrac1{100}=-2$"
   hint="A logarithm written with no base shown is base $10$."
 >}}
-$\log_{-2}\tfrac1{100}=10$
-$\log\tfrac1{100}=-2$
-$\log_{10}(-2)=\tfrac1{100}$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $17^x=\sqrt[5]{17}$."
-  answer="$\log_{17}\sqrt[5]{17}=x$"
+  answer="\log_{17}\sqrt[5]{17}=x"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_{17}\sqrt[5]{17}=x$"
   hint="Keep the exponential base as the logarithmic base."
 >}}
-$\log_x\sqrt[5]{17}=17$
-$\log_{\sqrt[5]{17}}17=x$
-$\log_{17}\sqrt[5]{17}=x$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to logarithmic form: $e^3=x$."
-  answer="$\ln x=3$"
+  answer="\ln x=3"
+  answerForm="logarithmic-form"
+  answerDisplay="$\ln x=3$"
   hint="The logarithmic form of $e^y=x$ is $\ln x=y$."
 >}}
-$\log_x e=3$
-$\ln 3=x$
-$\ln x=3$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $6=\log_2 64$."
-  answer="$64=2^6$"
+  answer="64=2^6"
+  answerForm="exponential-form"
+  answerDisplay="$64=2^6$"
   hint="In $\log_a x=y$, the equivalent exponential form is $a^y=x$."
 >}}
-$6=64^2$
-$2=6^{64}$
-$64=2^6$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $0=\log_7 1$."
-  answer="$1=7^0$"
+  answer="1=7^0"
+  answerForm="exponential-form"
+  answerDisplay="$1=7^0$"
   hint="The logarithm is the exponent on the base."
 >}}
-$0=1^7$
-$7=0^1$
-$1=7^0$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $3=\log_{10}1{,}000$."
-  answer="$1{,}000=10^3$"
+  answer="1{,}000=10^3"
+  answerForm="exponential-form"
+  answerDisplay="$1{,}000=10^3$"
   hint="In $\log_a x=y$, the equivalent exponential form is $x=a^y$."
 >}}
-$1{,}000=10^3$
-$10=3^{1{,}000}$
-$3=1{,}000^{10}$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Convert to exponential form: $x=\log_e 43$."
-  answer="$43=e^x$"
+  answer="43=e^x"
+  answerForm="exponential-form"
+  answerDisplay="$43=e^x$"
   hint="$\log_e$ is written $\ln$, and its exponential form is base $e$."
 >}}
-$43=e^x$
-$x=43^e$
-$e=x^{43}$
-{{< /multiplechoice >}}
 
 ### Evaluate logarithmic functions
 

@@ -469,6 +469,18 @@ When we use a calculator to find the logarithm value, we usually round to three 
   hint="Rewrite the logarithm as a quotient of common (or natural) logarithms and round only at the end."
 >}}
 
+## Key terms
+
+**Product Property of Logarithms** — $\log_a(M\cdot N)=\log_a M+\log_a N$:
+to take the log of a product, add the logs of the factors. **Quotient
+Property of Logarithms** — $\log_a\tfrac{M}{N}=\log_a M-\log_a N$: to take
+the log of a quotient, subtract the log of the denominator from the log of the
+numerator. **Power Property of Logarithms** — $\log_a M^p=p\log_a M$: to take
+the log of a number raised to a power, multiply the power by the log of the
+number. **Change-of-Base Formula** — $\log_a M=\tfrac{\log_b M}{\log_b a}$
+for any logarithmic bases $a$ and $b$ and $M>0$; it evaluates a logarithm
+with any base using common or natural logarithms.
+
 ## Practice
 
 ### Use the properties of logarithms

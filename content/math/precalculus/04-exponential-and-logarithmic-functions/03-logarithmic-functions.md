@@ -423,6 +423,7 @@ $0$
 {{< fillin
   question="Rewrite $c^d=k$ in logarithmic form."
   answer="\log_c(k)=d"
+  answerForm="logarithmic-form"
   answerDisplay="$\log_c(k)=d$"
   hint="The base of the power becomes the base of the logarithm; the exponent becomes the value the logarithm equals."
 >}}
@@ -430,6 +431,7 @@ $0$
 {{< fillin
   question="Rewrite $e^k=h$ in logarithmic form."
   answer="\ln(h)=k"
+  answerForm="logarithmic-form"
   answerDisplay="$\ln(h)=k$"
   hint="A power of $e$ converts to a natural logarithm, $\ln$."
 >}}

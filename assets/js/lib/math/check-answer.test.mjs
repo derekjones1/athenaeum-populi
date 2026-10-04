@@ -1293,6 +1293,36 @@ const formCases = [
   // conversion — a logarithm left standing in an otherwise correct value.
   ['10^{\\log 100}', '100', 'exponential-form', 'form'],
   ['100', '100', 'exponential-form', 'correct'],
+  // A conversion KEY is read for its base, exponent and number: the value
+  // path compares sides by value, so a different true power, or the number
+  // restated, matched `64=4^3` (Intermediate Algebra 10.3, October 3, 2026).
+  ['4^3=64', '64=4^3', 'exponential-form', 'correct'],
+  ['64=64', '64=4^3', 'exponential-form', 'form'],
+  ['64=2^6', '64=4^3', 'exponential-form', 'form'],
+  ['64=8^2', '64=4^3', 'exponential-form', 'form'],
+  ['1000000=1000000', '10^6=1{,}000{,}000', 'exponential-form', 'form'],
+  ['\\frac{1}{100}=100^{-1}', '\\frac{1}{100}=10^{-2}', 'exponential-form', 'form'],
+  ['0.01=10^{-2}', '\\frac{1}{100}=10^{-2}', 'exponential-form', 'correct'],
+  // An identity key: the equation path cannot compare `x^0=1` with `1=x^0`,
+  // so a response that keeps the key's three numbers settles the value too.
+  ['x^0=1', '1=x^0', 'exponential-form', 'correct'],
+  ['1=y^0', '1=x^0', 'exponential-form', 'incorrect'],
+  ['1=1', '1=x^0', 'exponential-form', 'incorrect'],
+  ['b=a^c', 'a^c=b', 'exponential-form', 'correct'],
+  // logarithmic-form — the mirror: both sides of `\log_3 9=2` are the number
+  // 2, so `2=2` and `\log_2 4=2` matched it in value.
+  ['\\log_3 9=2', '\\log_3 9=2', 'logarithmic-form', 'correct'],
+  ['2=\\log_3(9)', '\\log_3 9=2', 'logarithmic-form', 'correct'],
+  ['2=2', '\\log_3 9=2', 'logarithmic-form', 'form'],
+  ['\\log_2 4=2', '\\log_3 9=2', 'logarithmic-form', 'form'],
+  ['\\log_9 81=2', '\\log_3 9=2', 'logarithmic-form', 'form'],
+  ['3^2=9', '\\log_3 9=2', 'logarithmic-form', 'incorrect'],
+  ['x=3', '\\log_{\\frac{1}{3}}\\frac{1}{27}=x', 'logarithmic-form', 'form'],
+  ['x=\\log_{\\frac13}\\left(\\frac{1}{27}\\right)', '\\log_{\\frac{1}{3}}\\frac{1}{27}=x', 'logarithmic-form', 'correct'],
+  ['\\log_{10}\\frac{1}{100}=-2', '\\log\\frac{1}{100}=-2', 'logarithmic-form', 'correct'], // base 10 written out
+  ['\\log_e x=3', '\\ln x=3', 'logarithmic-form', 'correct'],
+  ['\\ln 3=x', '\\ln x=3', 'logarithmic-form', 'incorrect'],
+  ['x=\\frac{1}{5}', '\\log_{17}\\sqrt[5]{17}=x', 'logarithmic-form', 'form'],
   // base-e — "change this function to one having e as the base" answers the
   // SAME function, so the printed subject grades correct by construction and
   // only the written base can refuse it.

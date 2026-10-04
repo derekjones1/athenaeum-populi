@@ -579,6 +579,14 @@ export const NAMED_FORM_ASKS = [
     tokens: ['exponential-form', 'single-power', 'prime-product'],
   },
   {
+    // "Convert to logarithmic form: $3^2=9$" keyed `\log_3 9=2`: both sides
+    // are the number 2, so `2=2` and `\log_2 4=2` match it in value. "in
+    // exact logarithmic form" is the `exact-log` ask, not this one.
+    ask: /\b(?:in|to) logarithmic form\b/i,
+    name: 'logarithmic form',
+    tokens: ['logarithmic-form'],
+  },
+  {
     // "Enter the exact answer" / "Give the exact answer" / "Enter the exact
     // form": the exercise pairs its key with a decimal approximation, so
     // value grading alone accepts the approximation the ask exists to rule

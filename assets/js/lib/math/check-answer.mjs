@@ -4689,7 +4689,22 @@ const FORM_PREDICATES = {
       // `x+y\ge\frac{6}{-2}` and `\frac{-6}{-2}` are sign work left undone.
       && lineNumeralsFinished(text);
   },
-  'exponential-form': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
+  // With a conversion KEY the token reads the key, as `translation` does: the
+  // value path compares an equation's sides by value, so `64=64`, `64=2^6`
+  // and `64=8^2` all graded `correct` against `64=4^3` ("Convert to
+  // exponential form: $3=\log_4 64$") — none of them the conversion. The
+  // response must be one power equal to a log-free number with the key's
+  // base, exponent and number (conversionTriples). A key that is no
+  // conversion equation (`100` for an evaluate ask) keeps the absence test.
+  'exponential-form': (latex, answer) => conversionFormHolds(latex, answer, 'power')
+    ?? !/\\log|\\ln\b/.test(bareLatex(latex)),
+  // The mirror conversion, "Convert to logarithmic form: $3^2=9$", keyed
+  // `\log_3 9=2`: the value path reads both sides as the number 2, so `2=2`
+  // and `\log_2 4=2` graded `correct` (Intermediate Algebra 10.3, October 3,
+  // 2026). One logarithm equal to a log-free exponent, with the key's base,
+  // argument and value. With no conversion key it asks only for that shape.
+  'logarithmic-form': (latex, answer) => conversionFormHolds(latex, answer, 'log')
+    ?? conversionTriples(latex, 'log').length > 0,
   // "Change the function $y=3(0.5)^x$ to one having $e$ as the base" answers
   // $3e^{(\ln 0.5)x}$ — the SAME function, so the printed subject grades
   // `correct` by construction and only the written base can refuse it. The
@@ -4810,8 +4825,8 @@ const FORM_PREDICATES = {
   // writing itself, so the response must be the key as written: the same
   // operands in the same order (a translation keeps the sentence's order),
   // up to spacing, multiplication and division spellings, implicit
-  // multiplication, and which side of the `=` each half sits on. The only
-  // predicate that reads the key; with no key to compare it admits nothing.
+  // multiplication, and which side of the `=` each half sits on. It reads
+  // the key, as the two conversion forms do; with no key it admits nothing.
   translation: (latex, answer) => {
     if (answer === undefined) return false;
     const student = translationSides(latex);
@@ -4918,6 +4933,123 @@ function translationSides(latex) {
   return sides.length >= 2 && sides.every(Boolean) ? sides : null;
 }
 
+/* --------------------------------------------------------------------------
+ * Conversions between exponential and logarithmic form
+ *
+ * `b^y=x` and `\log_b x=y` state one relation among three numbers — the base
+ * b, the exponent y and the number x — and a conversion is right exactly when
+ * it keeps all three. Reading them is the whole check: two true equations
+ * with equal side values (`64=2^6` and `64=4^3`) are different conversions,
+ * and an identity key (`1=x^0`, from $0=\log_x 1$) is the right answer even
+ * though the equation path cannot compare two identities.
+ * ------------------------------------------------------------------------ */
+
+const LOG_NAME = /\\log|\\ln(?![a-zA-Z])/;
+
+/**
+ * A side written as ONE power `b^y` — read from the writing, because the
+ * engine folds `4^3` to 64 even uncanonicalized. The base must be a single
+ * atom (a numeral, a letter, `e`, or a bracketed group) and the exponent a
+ * braced group or one character, ending the side. null otherwise.
+ */
+function writtenPower(side) {
+  const text = side.trim();
+  let depth = 0;
+  let caret = -1;
+  for (let i = 0; i < text.length; i += 1) {
+    const ch = text[i];
+    if ('{(['.includes(ch)) depth += 1;
+    else if ('})]'.includes(ch)) depth -= 1;
+    else if (ch === '^' && depth === 0) {
+      if (caret !== -1) return null;
+      caret = i;
+    }
+  }
+  if (caret <= 0) return null;
+  const base = text.slice(0, caret).trim();
+  const exponent = text.slice(caret + 1).trim();
+  const wraps = (s, open, close) => s.startsWith(open) && s.endsWith(close)
+    && splitAtTopLevel(s.slice(1, -1), /^[\])}]/).length === 1;
+  const atomBase = /^(?:\d+(?:\.\d+)?|[a-zA-Z])$/.test(base)
+    || wraps(base, '(', ')') || wraps(base, '{', '}') || wraps(base, '[', ']');
+  const atomExponent = /^[0-9a-zA-Z]$/.test(exponent) || wraps(exponent, '{', '}');
+  if (!atomBase || !atomExponent) return null;
+  const unbrace = (s) => (wraps(s, '{', '}') ? s.slice(1, -1) : s);
+  return { base: unbrace(base), exponent: unbrace(exponent) };
+}
+
+/** A side written as ONE logarithm, as {base, argument} engine boxes, or null. */
+function writtenLogarithm(side) {
+  let json;
+  try {
+    const expr = ce.parse(side, { canonical: false });
+    if (!expr.isValid) return null;
+    json = expr.json;
+  } catch {
+    return null;
+  }
+  while (Array.isArray(json) && json[0] === 'Delimiter' && json.length === 2) [, json] = json;
+  if (!Array.isArray(json)) return null;
+  if (json[0] === 'Ln' && json.length === 2) return { base: ce.box('ExponentialE'), argument: ce.box(json[1]) };
+  if (json[0] === 'Log' && (json.length === 2 || json.length === 3)) {
+    return { base: ce.box(json.length === 3 ? json[2] : 10), argument: ce.box(json[1]) };
+  }
+  return null;
+}
+
+/**
+ * Every (base, exponent, number) reading of an equation in the given form:
+ * `power` reads `b^y=x`, `log` reads `\log_b x=y`, either side of the `=`
+ * holding the power or logarithm and the other side holding no logarithm.
+ * Components are engine expressions. Empty when the writing is not that form.
+ */
+function conversionTriples(latex, kind) {
+  const sides = splitAtTopLevel(bareLatex(latex), /^=/);
+  if (sides.length !== 2 || sides.some((side) => !side)) return [];
+  const triples = [];
+  for (const [lead, other] of [sides, [sides[1], sides[0]]]) {
+    if (LOG_NAME.test(other)) continue;
+    const value = parseValid(other);
+    if (!value) continue;
+    if (kind === 'power') {
+      const power = writtenPower(lead);
+      const base = power && parseValid(power.base);
+      const exponent = power && parseValid(power.exponent);
+      if (base && exponent && !LOG_NAME.test(lead)) triples.push({ base, exponent, number: value });
+    } else {
+      const log = writtenLogarithm(lead);
+      if (log) triples.push({ base: log.base, exponent: value, number: log.argument });
+    }
+  }
+  return triples;
+}
+
+/**
+ * Does the response keep the key's base, exponent and number? null when the
+ * key itself is no conversion equation of this kind, so the caller falls
+ * back to its key-free reading.
+ */
+function conversionFormHolds(latex, answer, kind) {
+  if (answer === undefined) return null;
+  const keyTriples = conversionTriples(answer, kind);
+  if (keyTriples.length === 0) return null;
+  const same = (a, b) => equivalent(a, b) || equivalent(a.canonical, b.canonical);
+  return conversionTriples(latex, kind).some((triple) => keyTriples.some((key) => (
+    same(triple.base, key.base) && same(triple.exponent, key.exponent) && same(triple.number, key.number))));
+}
+
+/**
+ * The value step's escape for a conversion ask: a response that keeps the
+ * key's three numbers IS the key's relation, whatever the equation path can
+ * compare. Without it the identity key `1=x^0` graded its own answer `x^0=1`
+ * `incorrect` — two identities are proportional nowhere the sampler looks.
+ */
+function conversionMatchesKey(written, answerRaw, spec) {
+  const { tokens } = parseAnswerForm(spec);
+  return (tokens.includes('exponential-form') && conversionFormHolds(written, answerRaw, 'power') === true)
+    || (tokens.includes('logarithmic-form') && conversionFormHolds(written, answerRaw, 'log') === true);
+}
+
 const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
 const SOLVED_TOKEN = /^solved:([a-zA-Z])$/;
 
@@ -4977,7 +5109,8 @@ const FORM_PHRASES = {
   'conic-standard-form': 'in standard form, with each squared term over its denominator and the right side equal to 1',
   'parabola-standard-form': 'in standard form, with the squared term alone on one side and a single multiple of the other variable (or its shifted binomial) on the other',
   'circle-standard-form': 'in standard form, with the squared binomials on the left and the squared radius on the right',
-  'exponential-form': 'in exponential form, with no logarithm left',
+  'exponential-form': 'in exponential form, with no logarithm left: the logarithm\'s base, raised to its value, equals its argument',
+  'logarithmic-form': 'in logarithmic form: the logarithm, to the power\'s base, of the number equals the exponent',
   'base-e': 'with $e$ as the base',
   'expanded-logarithms': 'as a sum of logarithms of single numbers and variables',
   'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
@@ -5835,7 +5968,7 @@ function formAcceptedAsWritten(written, spec, answerRaw) {
 // they read, never a label to strip.
 const EQUATION_FORM_TOKENS = new Set([
   'point-slope-form', 'slope-intercept-form', 'vertex-form', 'conic-standard-form',
-  'parabola-standard-form', 'circle-standard-form', 'line-standard-form', 'exponential-form', 'translation',
+  'parabola-standard-form', 'circle-standard-form', 'line-standard-form', 'exponential-form', 'logarithmic-form', 'translation',
 ]);
 
 /**
@@ -6123,7 +6256,8 @@ function gradeResponse(rawStudent, answerRaw, options = {}) {
     return 'incorrect';
   }
 
-  if (!equivalentAllowingVariableEquation(studentExpr, answerExpr)) {
+  if (!equivalentAllowingVariableEquation(studentExpr, answerExpr)
+    && !conversionMatchesKey(written, answerRaw, options.form)) {
     // A tuple with too many members may be a digit-grouping misread — retry
     // the arity-reconciled readings once. Each candidate has strictly fewer
     // commas than the response, so the recursion cannot loop.
