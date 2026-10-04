@@ -771,35 +771,111 @@ function numericallyEquivalent(studentExpr, answerExpr) {
   const vars = diff.unknowns;
   if (vars.length === 0) return sampleIsZero(diff.N());
   let agreed = 0;
-  for (let i = 0; i < SAMPLE_POINTS.length && agreed < SAMPLES_REQUIRED; i += 1) {
-    const assignment = {};
-    vars.forEach((name, j) => {
-      assignment[name] = SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length];
-    });
-    const value = diff.subs(assignment).N();
-    if (!Number.isFinite(value.re) || !Number.isFinite(value.im)) continue; // singularity — try another point
-    if (!sampleIsZero(value)) {
-      // A disagreement at a point where either side is non-real is a point
-      // OUTSIDE the expressions' common real domain, and the pinned engine's
-      // complex arithmetic is known-wrong there (division by |b| rather than
-      // |b|², see tools/verify/verify-answers.mjs `hasComplexDivision`): the
-      // rationalized derivative \frac{\sqrt{x-1}}{2(x-1)} "disagreed" with
-      // the keyed \frac{1}{2\sqrt{x-1}} at x = 0.61 and graded incorrect.
-      // Equality is decided on the real domain the exercise is about, so such
-      // a point is skipped like a singularity; the SAMPLES_REQUIRED floor
-      // still fails safe when too few real-domain points remain.
-      const nonReal = [studentExpr, answerExpr].some((side) => {
-        const v = side.subs(assignment).N();
-        return !Number.isFinite(v.re) || !Number.isFinite(v.im) || Math.abs(v.im) > SAMPLE_TOLERANCE
-          || evenRootOfNegative(side, assignment);
+  for (const shift of SAMPLE_SHIFTS) {
+    for (let i = 0; i < SAMPLE_POINTS.length && agreed < SAMPLES_REQUIRED; i += 1) {
+      const assignment = {};
+      vars.forEach((name, j) => {
+        assignment[name] = SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length] + shift;
       });
-      if (nonReal) continue;
-      return false;
+      const verdict = samplePointVerdict(studentExpr, answerExpr, assignment);
+      if (verdict === 'disagree') return false;
+      if (verdict === 'agree') agreed += 1;
     }
-    agreed += 1;
+    if (agreed >= SAMPLES_REQUIRED) break;
   }
   if (agreed < SAMPLES_REQUIRED) return false;
   return !negativesInScope(answerExpr) || agreesAtNegativePoints(vars, studentExpr, answerExpr);
+}
+
+/**
+ * One sample point of numericallyEquivalent(): 'agree', 'disagree', or
+ * 'skip'. Equality is decided on the KEY's real domain, side by side, never
+ * through the difference.
+ *
+ * - A point outside the key's real domain (a pole, or an even root of a
+ *   negative) is skipped, whatever the response does there. The pinned
+ *   engine's arithmetic is known-wrong off the real domain — complex division
+ *   by |b| rather than |b|² (tools/verify/verify-answers.mjs
+ *   `hasComplexDivision`), and `\frac{3x^2}{\sqrt{x-50}}` numericizes to the
+ *   same −18.3i as `\frac{3x^2}{\sqrt{x-5}}` at x = 2.47, the radicand's value
+ *   dropped — so neither an agreement nor a disagreement there means
+ *   anything. The rationalized derivative `\frac{\sqrt{x-1}}{2(x-1)}` once
+ *   "disagreed" with its key `\frac{1}{2\sqrt{x-1}}` at x = 0.61; and those
+ *   off-domain "agreements" counted toward the floor, so
+ *   `\frac{3x^2}{\sqrt{x-50}}` graded `correct` against
+ *   `\frac{3x^2}{\sqrt{x-5}}` on four of them (Precalculus chapters 1–2
+ *   re-review, October 4, 2026).
+ * - A point inside the key's domain where the response is not defined is a
+ *   disagreement: the response names a different function there.
+ * - Otherwise the two values compare within a relative tolerance (the shifted
+ *   points grow the values); a complex key compares both parts.
+ */
+function samplePointVerdict(studentExpr, answerExpr, assignment) {
+  const [student, answer] = [studentExpr, answerExpr].map((side) => sampleValue(side, assignment));
+  const defined = (value, side) => Number.isFinite(value.re) && Number.isFinite(value.im)
+    && !outsideRealDomain(side, assignment);
+  if (!defined(answer, answerExpr)) return 'skip';
+  if (!defined(student, studentExpr)) return 'disagree';
+  const scale = Math.max(1, Math.abs(student.re), Math.abs(student.im), Math.abs(answer.re), Math.abs(answer.im));
+  return Math.abs(student.re - answer.re) <= SAMPLE_TOLERANCE * scale
+    && Math.abs(student.im - answer.im) <= SAMPLE_TOLERANCE * scale ? 'agree' : 'disagree';
+}
+
+/**
+ * The fixed points sit in (0, 10), so a radicand whose real domain starts
+ * further out left too few of them inside it: the composition key
+ * `\frac{3x^2}{\sqrt{x-5}}` is real only at 7.83 and 9.41, and the correct
+ * rationalized `\frac{3x^2\sqrt{x-5}}{x-5}` graded `incorrect` for want of a
+ * third agreeing point (Precalculus chapters 1–2 re-review, October 4, 2026).
+ * The same points shifted out by each later step are tried while too few
+ * have agreed; the first step is the fixed points themselves.
+ */
+const SAMPLE_SHIFTS = [0, 10, 100];
+
+/**
+ * `side` numericized at `assignment`. The pinned engine THROWS (a BigInt
+ * conversion of NaN) on a quotient of an odd root at a negative point when
+ * the divisor holds a numeral root it boxed as `2\sqrt[3]{1}`: the half-worked
+ * `\frac{\sqrt[3]{x}}{\sqrt[3]{8}}` threw at x = −2.47 in the negative-point
+ * check, and graded `incorrect` against `\frac{\sqrt[3]{x}}{2}` where `form`
+ * was due (Precalculus 1.1, October 4, 2026). On a throw the side is
+ * evaluated again with every variable-free subexpression folded to its value
+ * first — the same value, so nothing is widened; a second throw propagates
+ * and fails the comparison as before.
+ */
+function sampleValue(side, assignment) {
+  try {
+    return side.subs(assignment).N();
+  } catch {
+    const fold = (e) => {
+      if (e.isNumberLiteral || e.symbol) return e;
+      if (e.unknowns.length === 0) {
+        const value = e.N();
+        if (Number.isFinite(value.re) && Number.isFinite(value.im)) return value;
+      }
+      return e.ops ? ce.box([e.operator, ...e.ops.map(fold)]) : e;
+    };
+    return fold(side).subs(assignment).N();
+  }
+}
+
+/**
+ * Is `expr` outside its real domain at `assignment` — a square root, an
+ * even-index root, or an even-denominator rational power of a negative real
+ * radicand, anywhere in the tree? (evenRootOfNegative() below misses `Sqrt`,
+ * which it never needed: the engine numericizes `\sqrt{-2.47}` imaginary.)
+ */
+function outsideRealDomain(expr, assignment) {
+  const exponent = expr.operator === 'Power' ? expr.ops[1]?.json : null;
+  const evenRoot = expr.operator === 'Sqrt'
+    || (expr.operator === 'Root' && expr.ops[1]?.isNumberLiteral && expr.ops[1].re % 2 === 0)
+    || (Array.isArray(exponent) && exponent[0] === 'Rational' && exponent[2] % 2 === 0);
+  if (evenRoot) {
+    const radicand = expr.ops[0].subs(assignment).N();
+    if (Number.isFinite(radicand.re) && Math.abs(radicand.im ?? 0) <= SAMPLE_TOLERANCE
+      && radicand.re < 0) return true;
+  }
+  return (expr.ops ?? []).some((op) => outsideRealDomain(op, assignment));
 }
 
 const containsOperator = (expr, operator) => expr.operator === operator
@@ -846,7 +922,7 @@ function agreesAtNegativePoints(vars, studentExpr, answerExpr) {
       // Each side is evaluated on its own: the engine may fold the
       // difference into one fractional power (`c^3\sqrt[3]{c}` → `c^{10/3}`)
       // that is non-real at a negative point where both sides are real.
-      const values = [studentExpr, answerExpr].map((side) => side.subs(assignment).N());
+      const values = [studentExpr, answerExpr].map((side) => sampleValue(side, assignment));
       if (!values.every((v) => Number.isFinite(v.re) && Number.isFinite(v.im)
         && Math.abs(v.im) <= SAMPLE_TOLERANCE)) continue;
       const [student, answer] = values.map((v) => v.re);
@@ -3940,8 +4016,14 @@ const FORM_PREDICATES = {
       // product: the factor tests below would read its leading term ("4 holds
       // a square") and reject an irreducible radical forever. A form check
       // must never reject a correct answer, so a multi-term radicand is left
-      // to the like-radicals and rationalizing tests alone.
-      if (splitTopLevelTerms(radicand).length > 1) continue;
+      // to the like-radicals and rationalizing tests alone — save its like
+      // terms, which are arithmetic left undone exactly as the numeral sum
+      // above is: `\sqrt{x^2+1+2}+2` passed against `\sqrt{x^2+3}+2`
+      // (Precalculus chapters 1–2 re-review, October 4, 2026).
+      if (splitTopLevelTerms(radicand).length > 1) {
+        if (!FORM_PREDICATES['no-like-terms'](radicand)) return false;
+        continue;
+      }
       // `\sqrt{1}`, `\sqrt{0}` and `\sqrt{-1}` are written-out numbers (1, 0,
       // i); the factor loop below starts at 2 and cannot see them.
       if (/^\s*-?\s*[01]\s*$/.test(radicand)) return false;
@@ -4378,8 +4460,13 @@ const FORM_PREDICATES = {
     // The polynomial reader fails open on such an exponent, so two one-term
     // halves are read off the writing instead: no common integer factor and
     // no letter outside a radical on both sides (`\frac{10n}{2m^{1/4}}`,
-    // `\frac{n}{n^{1/4}}`).
-    if (halves.some((half) => half !== withoutExponents(half) && /\\[tdc]?frac|\//.test(half))) {
+    // `\frac{n}{n^{1/4}}`). A half holding a radical fails it open the same
+    // way, so `\frac{6x^2}{2\sqrt{x-5}}` — the numeral 2 left in both halves
+    // — passed against the key `\frac{3x^2}{\sqrt{x-5}}` where
+    // `\frac{6x^2}{2x}` grades `form` (Precalculus chapters 1–2 re-review,
+    // October 4, 2026); it is read off the writing too.
+    if (halves.some((half) => (half !== withoutExponents(half) && /\\[tdc]?frac|\//.test(half))
+      || /\\sqrt(?![a-zA-Z])/.test(half))) {
       const reads = halves.map((half) => {
         const terms = splitTopLevelTerms(half).filter((piece) => piece.trim());
         return terms.length === 1 ? readRadicalTerm(terms[0]) : null;
@@ -4622,19 +4709,14 @@ const FORM_PREDICATES = {
   // `vertex-form`, and the collapsed origin case ($y=-3x$ through $(0,0)$) is
   // point-slope with both subtractions evaluated — rejecting it would reject
   // the authored answer of the degenerate exercise.
-  'point-slope-form': (latex) => {
-    const sides = splitEquationSides(latex);
-    if (!sides) return false;
-    const parsed = sides.map((side) => {
-      let expr;
-      try {
-        expr = parseLatex(preprocess(side));
-      } catch {
-        return null;
-      }
-      return expr.isValid ? expr : null;
-    });
-    if (parsed.some((expr) => expr === null)) return false;
+  //
+  // That origin case is read against the key, though: `y=-3x` is also the
+  // slope-intercept form of every line through the origin, and it graded
+  // `correct` against `y-3=-3(x+1)`, whose ask names the point (−1, 3)
+  // (Precalculus chapters 1–2 re-review, October 4, 2026). Both subtractions
+  // left out stand for the point (0, 0), so they pass only where the key's own
+  // point is the origin (`y-0=-3(x-0)`, which the parse folds to `y=-3x`).
+  'point-slope-form': (latex, answer) => {
     // The bare variable, or variable ± constant with coefficient 1 — the
     // $y-y_1$ side, and equally the binomial inside the slope side's parens.
     const shiftedVariable = (e) => {
@@ -4644,24 +4726,47 @@ const FORM_PREDICATES = {
       return compound.length === 1 && compound[0].symbol ? compound[0].symbol : null;
     };
     // One $m(x-x_1)$ term: sign and constant factors peeled off a shifted
-    // variable. An Add here is the distributed form — exactly what fails.
-    const slopeProduct = (e) => {
-      if (e.operator === 'Negate') return slopeProduct(e.ops[0]);
+    // variable, which is returned. An Add here is the distributed form —
+    // exactly what fails.
+    const slopeBinomial = (e) => {
+      if (e.operator === 'Negate') return slopeBinomial(e.ops[0]);
       if (e.operator === 'Multiply') {
         const compound = e.ops.filter((op) => !isConstantExpr(op));
-        return compound.length === 1 ? slopeProduct(compound[0]) : null;
+        return compound.length === 1 ? slopeBinomial(compound[0]) : null;
       }
       if (e.operator === 'Divide') {
-        return isConstantExpr(e.ops[1]) ? slopeProduct(e.ops[0]) : null;
+        return isConstantExpr(e.ops[1]) ? slopeBinomial(e.ops[0]) : null;
       }
-      return shiftedVariable(e);
+      return shiftedVariable(e) === null ? null : e;
     };
-    const pointSlope = (pointSide, slopeSide) => {
-      const output = shiftedVariable(pointSide);
-      const input = slopeProduct(slopeSide);
-      return output !== null && input !== null && output !== input;
+    // The point-slope reading of an equation, `{ origin }` (both shifts left
+    // out), or null.
+    const readPointSlope = (text) => {
+      const sides = splitEquationSides(text);
+      if (!sides) return null;
+      const parsed = sides.map((side) => {
+        let expr;
+        try {
+          expr = parseLatex(preprocess(side));
+        } catch {
+          return null;
+        }
+        return expr.isValid ? expr : null;
+      });
+      if (parsed.some((expr) => expr === null)) return null;
+      const pointSlope = (pointSide, slopeSide) => {
+        const output = shiftedVariable(pointSide);
+        const binomial = slopeBinomial(slopeSide);
+        const input = binomial && shiftedVariable(binomial);
+        return output !== null && input && output !== input
+          ? { origin: Boolean(pointSide.symbol && binomial.symbol) } : null;
+      };
+      return pointSlope(parsed[0], parsed[1]) ?? pointSlope(parsed[1], parsed[0]);
     };
-    if (!(pointSlope(parsed[0], parsed[1]) || pointSlope(parsed[1], parsed[0]))) return false;
+    const read = readPointSlope(latex);
+    if (!read) return false;
+    if (read.origin && answer && readPointSlope(answer)?.origin === false) return false;
+    const sides = splitEquationSides(latex);
     // The parse has evaluated the numbers, so their writing is read off the
     // LaTeX: the slope formula left unworked (`\frac{1-(-3)}{2}`), an
     // unreduced or sign-unfinished slope (`\frac{4}{2}`, `\frac{2}{-1}`), a
@@ -4689,11 +4794,23 @@ const FORM_PREDICATES = {
   // `y=-\frac{3}{2}x-1` — passed as slope-intercept form, which is y alone
   // on the left (Elementary Algebra 5, September 27, 2026). A function label
   // (`f(x)=`) still passes.
+  //
+  // Against a BARE key, though, the label is the quantity's own name: the
+  // model `100-10t` answered `d=100-10t` graded `form` where `d(t)=` and `y=`
+  // were `correct` (Precalculus chapters 1–2 re-review, October 4, 2026). A
+  // letter that is a variable of neither the key nor the response's right
+  // side is a label there, as the value grader already reads it; a letter
+  // that is one (`t=100-10t`, or the solved-for-x line against a bare key in
+  // x) still is not.
   'slope-intercept-form': (latex, answer) => {
     const letterLabel = (text) => bareLatex(text).match(/^([a-zA-Z])\s*=(?![=<>])/)?.[1];
+    const writtenLetters = (text) => bareLatex(text).replace(/\\[a-zA-Z]+/g, ' ').match(/[a-zA-Z]/g) ?? [];
     const label = letterLabel(latex);
-    if (label !== undefined && label !== 'y' && label !== (answer ? letterLabel(answer) : undefined)) return false;
+    const keyLabel = answer ? letterLabel(answer) : undefined;
     const bare = stripWrittenLabel(bareLatex(latex));
+    const namesBareKey = answer !== undefined && answer !== null && keyLabel === undefined
+      && !writtenLetters(bare).includes(label) && !writtenLetters(answer).includes(label);
+    if (label !== undefined && label !== 'y' && label !== keyLabel && !namesBareKey) return false;
     if (bare.includes('=')) return false;
     let expr;
     try {
@@ -4725,6 +4842,14 @@ const FORM_PREDICATES = {
     // `correct` (Elementary Algebra knowledge check 1–5, September 27, 2026).
     const written = splitTopLevelTerms(bare.replace(/\\left\s*|\\right\s*/g, ''))
       .map((term) => term.trim()).filter(Boolean);
+    // A written zero term (`2x+0`) and a parenthesized sum (`2(x-0)`, the
+    // point-slope product through the origin) are the unworked origin-point
+    // forms the parse folds to `2x`: both graded `correct` against `2x` and
+    // `y=2x` (Precalculus chapters 1–2 re-review, October 4, 2026). A lone
+    // `0` (the line y = 0) is the answer, not decoration.
+    if (written.length > 1 && written.some(isZeroTerm)) return false;
+    if (written.some((term) => [...term.matchAll(/\(([^()]*)\)/g)]
+      .some(([, inner]) => splitTopLevelTerms(inner).filter((piece) => piece.trim()).length > 1))) return false;
     return written.length <= 2
       && written.filter((term) => !hasVariableLetter(term)).length <= 1
       && !written.some((term) => NUMERAL_PRODUCT.test(term) || NUMERAL_POWER.test(term))
@@ -5989,6 +6114,41 @@ function readFunctionNotation(latex) {
 // for the fraction) are the two letters.
 const COMBINED_FUNCTION_NAME_RE = /^\(\s*(?:([a-zA-Z])\s*(?:[+-]|\\cdot(?![a-zA-Z])|\\times(?![a-zA-Z])|\\circ(?![a-zA-Z])|\/)?\s*([a-zA-Z])|\\frac\{([a-zA-Z])\}\{([a-zA-Z])\})\s*\)\s*\(/;
 
+/**
+ * A CHAIN of two labels on a bare key — `y=f(x)=\frac{\sqrt[3]{x}}{2}`, the
+ * source's own answer shape for "find a formula", or `f(x)=y=…` — read as the
+ * function label alone, which the readers below already strip. The chain
+ * graded `incorrect` (Precalculus 1.1, October 4, 2026). Exactly one letter
+ * label and one function application, the letter neither the application's
+ * argument nor written in the value: a letter on its own right side is an
+ * equation, not a label (Intermediate Algebra chapters 11–12 re-review).
+ */
+const CHAIN_LETTER_LABEL = /^\s*([a-zA-Z])\s*=(?![=<>])/;
+const CHAIN_APPLICATION_LABEL = /^\s*([a-zA-Z](?:_\{p+\})?(?:\^\{-1\})?\s*\(\s*([a-zA-Z])\s*\))\s*=(?![=<>])/;
+function readLabelChain(latex, answerRaw) {
+  if (answerRaw == null || preprocess(String(answerRaw)).includes('=')) return latex;
+  const text = latex.replace(/\\(?:left|right)\s*/g, '');
+  const letterFirst = text.match(CHAIN_LETTER_LABEL);
+  const applicationAfter = letterFirst && text.slice(letterFirst[0].length).match(CHAIN_APPLICATION_LABEL);
+  const applicationFirst = text.match(CHAIN_APPLICATION_LABEL);
+  const letterAfter = applicationFirst && text.slice(applicationFirst[0].length).match(CHAIN_LETTER_LABEL);
+  let letter;
+  let application;
+  let value;
+  if (applicationAfter) {
+    [letter, application] = [letterFirst[1], applicationAfter];
+    value = text.slice(letterFirst[0].length + applicationAfter[0].length);
+  } else if (letterAfter) {
+    [letter, application] = [letterAfter[1], applicationFirst];
+    value = text.slice(applicationFirst[0].length + letterAfter[0].length);
+  } else {
+    return latex;
+  }
+  if (!value.trim() || value.includes('=') || letter === application[2]) return latex;
+  if (value.replace(/\\[a-zA-Z]+/g, ' ').includes(letter)) return latex;
+  return `${application[1]}=${value}`;
+}
+
 function readExpressionLabel(latex, answerRaw) {
   if (answerRaw == null || preprocess(String(answerRaw)).includes('=')) return latex;
   const text = latex.replace(/\\(?:left|right)\s*/g, '');
@@ -6059,7 +6219,7 @@ function functionLabelEquation(latex) {
  * never disagree with the grader about the same text.
  */
 function formAcceptedAsWritten(written, spec, answerRaw) {
-  const preprocessed = readExpressionLabel(written, answerRaw);
+  const preprocessed = readExpressionLabel(readLabelChain(written, answerRaw), answerRaw);
   // A labelled VALUE is judged on the value alone. The whole equation was
   // read first, and a value form has no reading of an `=`: `no-like-terms`
   // and `simplified-radical` took `y=12q^2+9q^2`, `a_n=…` and
@@ -6364,7 +6524,7 @@ function gradeResponse(rawStudent, answerRaw, options = {}) {
   if (asList !== null) return withListForm(asList, studentRaw, options.form);
 
   const written = student;
-  student = readFunctionNotation(readExpressionLabel(student, answerRaw));
+  student = readFunctionNotation(readExpressionLabel(readLabelChain(student, answerRaw), answerRaw));
   if (!student) return 'invalid';
 
   let studentExpr;

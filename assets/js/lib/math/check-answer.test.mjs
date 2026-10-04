@@ -62,7 +62,24 @@ const extra = [
   ['\\frac{-\\sqrt{x-1}}{2(x-1)}', '\\frac{1}{2\\sqrt{x-1}}', 'incorrect'],
   ['\\frac{\\sqrt{x-1}}{x-1}', '\\frac{1}{2\\sqrt{x-1}}', 'incorrect'],
   ['\\sqrt{1-x}', '\\sqrt{x-1}', 'incorrect'],
-  ['\\frac{\\sqrt{x-8}}{2(x-8)}', '\\frac{1}{2\\sqrt{x-8}}', 'incorrect'],
+  ['\\frac{\\sqrt{x-500}}{2(x-500)}', '\\frac{1}{2\\sqrt{x-500}}', 'incorrect'],
+  // A real domain that starts past most of the fixed points is sampled at
+  // the same points shifted out, real points only (Precalculus chapters 1–2
+  // re-review, October 4, 2026): the rationalized composition key of 1.4,
+  // and the x − 8 radical this list once pinned as failing safe.
+  ['\\frac{\\sqrt{x-8}}{2(x-8)}', '\\frac{1}{2\\sqrt{x-8}}', 'correct'],
+  ['\\frac{3x^2\\sqrt{x-5}}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'correct'],
+  ['\\frac{\\sqrt{x-5}}{x-5}', '\\frac{1}{\\sqrt{x-5}}', 'correct'],
+  ['\\frac{x\\sqrt{x-12}}{x-12}', '\\frac{x}{\\sqrt{x-12}}', 'correct'],
+  // … and a dropped radical, a wrong coefficient, a wrong radicand, a
+  // dropped radical behind bars, or a real-domain disagreement still fails.
+  ['\\frac{3x^2}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'incorrect'],
+  ['3x^2\\sqrt{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'incorrect'],
+  ['\\frac{3x\\sqrt{x-5}}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'incorrect'],
+  ['\\frac{3x^2\\sqrt{x+5}}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'incorrect'],
+  ['\\frac{3x^2}{|x-5|}', '\\frac{3x^2}{\\sqrt{x-5}}', 'incorrect'],
+  ['\\frac{\\sqrt{x-8}}{x-8}', '\\frac{1}{2\\sqrt{x-8}}', 'incorrect'],
+  ['\\frac{-\\sqrt{x-8}}{2(x-8)}', '\\frac{1}{2\\sqrt{x-8}}', 'incorrect'],
   // A list member's written function label is read the way a scalar's is:
   // "parameterize the line" is answered in the question's own x(t)/y(t)
   // notation, and the labelled pair graded incorrect while the `x=`/`y=`
@@ -3235,6 +3252,114 @@ test('a ± in each coordinate of a point expands to every sign combination', asy
   for (const [typed, key, expected] of independentSigns) {
     await t.test(`${typed}  vs  ${key}`, () => {
       assert.equal(checkAnswer(typed, key, { mode: 'unordered' }), expected);
+    });
+  }
+});
+
+// Precalculus chapters 1–2 re-review, October 4, 2026. Each gap with the
+// neighbours that must not move: the wrong answers stay `incorrect`, the
+// unfinished or retyped writing stays `form`.
+const precalculusChapters1To2 = [
+  // 1.4 — a radical whose real domain starts at x = 5 is sampled there.
+  ['\\frac{3x^2\\sqrt{x-5}}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'single-fraction', 'correct'],
+  ['\\frac{3x^2\\sqrt{x-5}}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'reduced-fraction single-fraction', 'correct'],
+  ['\\frac{3x^2}{\\sqrt{x-5}}', '\\frac{3x^2}{\\sqrt{x-5}}', 'reduced-fraction single-fraction', 'correct'],
+  ['\\frac{3x^2}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', 'single-fraction', 'incorrect'],
+  // 1.4 — a numeral common to both halves beside a radical is unreduced.
+  ['\\frac{6x^2}{2\\sqrt{x-5}}', '\\frac{3x^2}{\\sqrt{x-5}}', 'reduced-fraction single-fraction', 'form'],
+  ['\\frac{6x^2}{2\\sqrt{x-5}}', '\\frac{3x^2}{\\sqrt{x-5}}', 'reduced-fraction', 'form'],
+  ['\\frac{6x^2}{4\\sqrt{x-5}}', '\\frac{3x^2}{2\\sqrt{x-5}}', 'reduced-fraction', 'form'],
+  ['\\frac{6x^2}{2x}', '3x', 'reduced-fraction single-fraction', 'form'],
+  ['\\frac{6\\sqrt2}{4}', '\\frac{3\\sqrt2}{2}', 'reduced-fraction', 'form'],
+  ['\\frac{3x^2}{2\\sqrt{x-5}}', '\\frac{3x^2}{2\\sqrt{x-5}}', 'reduced-fraction', 'correct'],
+  ['\\frac{3\\sqrt2}{2}', '\\frac{3\\sqrt2}{2}', 'reduced-fraction', 'correct'],
+  ['\\frac{\\sqrt6}{3}', '\\frac{\\sqrt6}{3}', 'reduced-fraction', 'correct'],
+  ['\\frac{\\sqrt{x}}{x}', '\\frac{1}{\\sqrt{x}}', 'reduced-fraction', 'correct'],
+  ['\\frac{x}{\\sqrt{x}}', '\\sqrt{x}', 'reduced-fraction', 'correct'],
+  // 1.4 — like terms left inside a variable radicand.
+  ['\\sqrt{x^2+1+2}+2', '\\sqrt{x^2+3}+2', 'simplified-radical no-like-terms', 'form'],
+  ['\\sqrt{x^2+x+3x}', '\\sqrt{x^2+4x}', 'simplified-radical', 'form'],
+  ['\\sqrt{x^2+3}+1+1', '\\sqrt{x^2+3}+2', 'simplified-radical no-like-terms', 'form'],
+  ['\\sqrt{x^2+3}+2', '\\sqrt{x^2+3}+2', 'simplified-radical no-like-terms', 'correct'],
+  ['\\sqrt{4+x}', '\\sqrt{x+4}', 'simplified-radical', 'correct'],
+  ['\\sqrt{x^2+y^2}', '\\sqrt{x^2+y^2}', 'simplified-radical', 'correct'],
+  ['\\sqrt{x^2+5}+2', '\\sqrt{x^2+3}+2', 'simplified-radical no-like-terms', 'incorrect'],
+  // 2.1 — the collapsed origin case is point-slope only through the origin.
+  ['y=-3x', 'y-3=-3(x+1)', 'point-slope-form', 'form'],
+  ['y=-3(x)', 'y-3=-3(x+1)', 'point-slope-form', 'form'],
+  ['y-0=-3x', 'y-3=-3(x+1)', 'point-slope-form', 'form'],
+  ['-3x=y', 'y-3=-3(x+1)', 'point-slope-form', 'form'],
+  ['y-3=-3x-3', 'y-3=-3(x+1)', 'point-slope-form', 'form'],
+  ['y-3=-3(x+1)', 'y-3=-3(x+1)', 'point-slope-form', 'correct'],
+  ['-3(x+1)=y-3', 'y-3=-3(x+1)', 'point-slope-form', 'correct'],
+  ['y=-3x', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
+  ['y-0=-3(x-0)', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
+  ['y=-3x', 'y=-3x', 'point-slope-form', 'correct'],
+  ['y=-2x-2', 'y-2=-2(x+2)', 'point-slope-form', 'form'],
+  // 2.1 — a letter naming a bare key's quantity is a label.
+  ['d=100-10t', '100-10t', 'slope-intercept-form', 'correct'],
+  ['d=-10t+100', '100-10t', 'slope-intercept-form', 'correct'],
+  ['d(t)=100-10t', '100-10t', 'slope-intercept-form', 'correct'],
+  ['y=100-10t', '100-10t', 'slope-intercept-form', 'correct'],
+  ['d=10(10-t)', '100-10t', 'slope-intercept-form', 'form'],
+  ['t=100-10t', '100-10t', 'slope-intercept-form', 'incorrect'],
+  ['d=100-10d', '100-10t', 'slope-intercept-form', 'incorrect'],
+  ['x=-\\frac{2}{3}y-\\frac{2}{3}', 'y=-\\frac{3}{2}x-1', 'slope-intercept-form', 'form'],
+  ['x=-\\frac{2}{3}y-\\frac{2}{3}', '-\\frac{3}{2}x-1', 'slope-intercept-form', 'incorrect'],
+  ['d=100-10t', '100-10t', undefined, 'correct'],
+];
+test('Precalculus chapters 1–2 grader gaps', async (t) => {
+  for (const [typed, key, form, expected] of precalculusChapters1To2) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// Precalculus chapters 1–2 re-review, October 4, 2026, second round: sampling
+// counts only the key's real domain, unworked origin-point lines, and the
+// cube-root Try It of 1.1.
+const precalculusChapters1To2Second = [
+  // A response undefined where the key is real disagrees; off-domain points
+  // never count as agreement.
+  ['\\frac{3x^2}{\\sqrt{x-50}}', '\\frac{3x^2}{\\sqrt{x-5}}', undefined, 'incorrect'],
+  ['\\sqrt{x-50}', '\\sqrt{x-5}', undefined, 'incorrect'],
+  ['\\frac{1}{\\sqrt{x-20}}', '\\frac{1}{\\sqrt{x-5}}', undefined, 'incorrect'],
+  ['\\frac{1}{\\sqrt{5-x}}', '\\frac{1}{\\sqrt{x-5}}', undefined, 'incorrect'],
+  ['\\frac{3x^2\\sqrt{x-5}}{x-5}', '\\frac{3x^2}{\\sqrt{x-5}}', undefined, 'correct'],
+  ['\\frac{\\sqrt{x-1}}{2(x-1)}', '\\frac{1}{2\\sqrt{x-1}}', undefined, 'correct'],
+  // 2.2 — a written zero term or a parenthesized sum is the unworked line.
+  ['2(x-0)', '2x', 'slope-intercept-form', 'form'],
+  ['2(x-0)+0', '2x', 'slope-intercept-form', 'form'],
+  ['-\\frac12(x-0)', '-\\frac12x', 'slope-intercept-form', 'form'],
+  ['\\frac{-1}{2}x+0', '-\\frac12x', 'slope-intercept-form', 'form'],
+  ['y=2(x-0)', 'y=2x', 'slope-intercept-form', 'form'],
+  ['y=2x+0', 'y=2x', 'slope-intercept-form', 'form'],
+  ['y=0x+3', 'y=3', 'slope-intercept-form', 'form'],
+  ['2x', '2x', 'slope-intercept-form', 'correct'],
+  ['y=0', 'y=0', 'slope-intercept-form', 'correct'],
+  ['y=(-2)x+3', 'y=-2x+3', 'slope-intercept-form', 'correct'],
+  ['y=2x+0.5', 'y=2x+0.5', 'slope-intercept-form', 'correct'],
+  ['y=2(x+1)', 'y=2x+2', 'slope-intercept-form', 'form'],
+  // 1.1 — a chain of two labels, and an unevaluated numeral cube root.
+  ['y=f(x)=\\frac{\\sqrt[3]{x}}{2}', '\\frac{\\sqrt[3]{x}}{2}', 'simplified-radical', 'correct'],
+  ['f(x)=y=\\frac{\\sqrt[3]{x}}{2}', '\\frac{\\sqrt[3]{x}}{2}', 'simplified-radical', 'correct'],
+  ['y=f(x)=\\frac{\\sqrt[3]{x}}{2}', '\\frac{\\sqrt[3]{x}}{2}', undefined, 'correct'],
+  ['y=f(x)=\\sqrt[3]{\\frac{x}{8}}', '\\frac{\\sqrt[3]{x}}{2}', 'simplified-radical', 'form'],
+  ['y=f(x)=\\frac{\\sqrt[3]{x}}{3}', '\\frac{\\sqrt[3]{x}}{2}', 'simplified-radical', 'incorrect'],
+  ['y=f(x)=\\frac{y}{2}', '\\frac{x}{2}', undefined, 'incorrect'],
+  ['x=f(x)=\\frac{x}{2}', '\\frac{x}{2}', undefined, 'incorrect'],
+  ['y=x=3', '3', undefined, 'incorrect'],
+  ['\\frac{\\sqrt[3]{x}}{\\sqrt[3]{8}}', '\\frac{\\sqrt[3]{x}}{2}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt[3]{x}}{\\sqrt[3]{8}}', '\\frac{\\sqrt[3]{x}}{2}', undefined, 'correct'],
+  ['\\frac{\\sqrt[3]{x}}{\\sqrt[3]{27}}', '\\frac{\\sqrt[3]{x}}{2}', undefined, 'incorrect'],
+  ['\\frac{\\sqrt[3]{-x}}{\\sqrt[3]{8}}', '\\frac{\\sqrt[3]{x}}{2}', undefined, 'incorrect'],
+  ['\\frac{|x|}{\\sqrt[3]{8}}', '\\frac{x}{2}', undefined, 'incorrect'],
+];
+test('Precalculus chapters 1–2 grader gaps, second round', async (t) => {
+  for (const [typed, key, form, expected] of precalculusChapters1To2Second) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
     });
   }
 });
