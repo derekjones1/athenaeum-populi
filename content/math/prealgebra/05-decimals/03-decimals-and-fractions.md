@@ -232,15 +232,15 @@ $0.61, 0.65, 0.6875$. Rewrite the list with the original fractions:
 $$0.61, \frac{13}{20}, \frac{11}{16}$$
 
 {{< fillin
-  question="Write each set of numbers in order from smallest to largest: $\tfrac{7}{8}, \tfrac{4}{5}, 0.82$"
-  answer="0.8, 0.82, 0.875"
+  question="Write each set of numbers in order from smallest to largest: $\tfrac{7}{8}, \tfrac{4}{5}, 0.82$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
+  answer="0.8, 0.82, 0.875" answerForm="decimal"
   answerDisplay="$\tfrac{4}{5}, 0.82, \tfrac{7}{8}$"
   hint="Convert both fractions to decimals, then order all three decimals from smallest to largest."
 >}}
 
 {{< fillin
   question="Write each set of numbers in order from smallest to largest: $0.835, \tfrac{13}{16}, \tfrac{3}{4}$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
-  answer="0.75, 0.8125, 0.835"
+  answer="0.75, 0.8125, 0.835" answerForm="decimal"
   answerDisplay="$\tfrac{3}{4}, \tfrac{13}{16}, 0.835$"
   hint="Convert both fractions to decimals, then order all three decimals from smallest to largest."
 >}}
@@ -514,14 +514,14 @@ $0.\overline{5}$
 
 {{< fillin
   question="Write the set of numbers in order from least to greatest: $\tfrac{3}{5}, \tfrac{9}{16}, 0.55$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
-  answer="0.55, 0.5625, 0.6"
+  answer="0.55, 0.5625, 0.6" answerForm="decimal"
   answerDisplay="$0.55, \tfrac{9}{16}, \tfrac{3}{5}$"
   hint="Convert both fractions to decimals, then order all three decimals from least to greatest."
 >}}
 
 {{< fillin
   question="Write the set of numbers in order from least to greatest: $0.702, \tfrac{13}{20}, \tfrac{5}{8}$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
-  answer="0.625, 0.65, 0.702"
+  answer="0.625, 0.65, 0.702" answerForm="decimal"
   answerDisplay="$\tfrac{5}{8}, \tfrac{13}{20}, 0.702$"
   hint="Convert both fractions to decimals, then order all three decimals from least to greatest."
 >}}

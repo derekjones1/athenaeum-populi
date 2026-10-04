@@ -407,14 +407,14 @@ shows the solution to $2x+3y<6$.
 
 {{< fillin
   question="Write the inequality shown by a solid boundary line $x-4y=8$ with the region above the line shaded."
-  answer="x-4y\leq8"
+  answer="x-4y\leq8" answerForm="decimal"
   answerDisplay="$x-4y\leq8$"
   hint="Test $(0,0)$, which lies in the shaded region, to choose between $<$ and $>$; the line style decides whether equality is included."
 >}}
 
 {{< fillin
   question="Write the inequality shown by a solid boundary line $3x-y=6$ with the region to the right of the line shaded."
-  answer="3x-y\geq6"
+  answer="3x-y\geq6" answerForm="decimal"
   answerDisplay="$3x-y\geq6$"
   hint="Test a point in the shaded region, such as $(4,0)$, to choose between $<$ and $>$; the line style decides whether equality is included."
 >}}
@@ -677,7 +677,7 @@ job to earn at least \$260?
 
 {{< fillin
   question="Let $x$ be the number of hours Hugh works at the grocery store and let $y$ be the number of hours he works babysitting. Write an inequality that would model this situation."
-  answer="10x+13y\geq260"
+  answer="10x+13y\geq260" answerForm="decimal"
   answerDisplay="$10x+13y\geq260$"
   hint="Add the earnings from the two jobs and use the phrase 'at least' to choose the inequality symbol."
 >}}
@@ -697,7 +697,7 @@ hours does Veronica need to work at each job to earn at least \$280?
 
 {{< fillin
   question="Let $x$ be the number of hours Veronica works at the day spa and let $y$ be the number of hours she works as administrative assistant. Write an inequality that would model this situation."
-  answer="10x+17.5y\geq280"
+  answer="10x+17.5y\geq280" answerForm="decimal"
   answerDisplay="$10x+17.5y\geq280$"
   hint="Add the earnings from the two jobs and use the phrase 'at least' to choose the inequality symbol."
 >}}
@@ -753,7 +753,7 @@ no
 
 {{< fillin
   question="Write the inequality shown by a solid boundary line $x+y=5$ with the region above the line shaded."
-  answer="x+y\geq5"
+  answer="x+y\geq5" answerForm="decimal"
   answerDisplay="$x+y\geq5$"
   hint="Test a point in the shaded region, such as $(5,5)$, to choose between $<$ and $>$; the line style decides whether equality is included."
 >}}
@@ -804,7 +804,7 @@ dashed; the side not containing the origin
 
 {{< fillin
   question="Laura burns 15 calories per minute running and 10 calories per minute biking, and wants to burn at least 500 calories today. If $x$ is the number of minutes she runs and $y$ is the number of minutes she bikes, write an inequality that models this situation."
-  answer="15x+10y\geq500"
+  answer="15x+10y\geq500" answerForm="decimal"
   answerDisplay="$15x+10y\geq500$"
   hint="Multiply each activity's rate by its minutes, add the two amounts, and require the total to be at least $500$."
 >}}

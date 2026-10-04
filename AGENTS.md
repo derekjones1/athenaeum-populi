@@ -232,7 +232,9 @@ one between files costs nothing.
 item, but not every re-hash needs a new solve. A record carries to the new
 hash when the stem, options, and key are unchanged and every previously
 graded form still grades correct (so `accept` ADDITIONS carry, while a
-removal or a new key does not); an item whose `dependency` block — the
+removal or a new key does not); a fill-in's `answerForm` change carries
+while the key still grades correct under the new form, since `solve:compare`
+judges a solver on value, not form (October 4, 2026); an item whose `dependency` block — the
 figure or table it names — changed is re-solved, since the solver read
 that block. The rule is `tools/verify/ledger-carry.mjs`: take
 `npm run ledger:carry --silent -- snapshot content > $SP/ledger-before.json` BEFORE
@@ -283,7 +285,7 @@ Commands that drive a re-run:
   the old key no longer exists, so the edit strands the record under its
   new key;
 - `npm run ledger:carry -- snapshot|plan` carries records across a
-  sweep's hint and accept-addition edits ("Re-solving after a sweep"
+  sweep's hint, accept-addition, and answerForm edits ("Re-solving after a sweep"
   above) and lists what it would not carry.
 
 A pass writes result files, each shaped

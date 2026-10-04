@@ -621,7 +621,7 @@ $18.38$ is $18.379$ rounded to the nearest hundredth.
 
 {{< fillin
   question="Round 1.047 to the nearest hundredth."
-  answer="1.05"
+  answer="1.05" answerForm="decimal"
   hint="Look at the digit to the right of the hundredths place (the thousandths digit) to decide whether to round up."
 >}}
 
@@ -647,19 +647,19 @@ So $18.379$ rounded to the nearest whole number is $18$.
 
 {{< fillin
   question="Round 6.582 to the nearest hundredth."
-  answer="6.58"
+  answer="6.58" answerForm="decimal"
   hint="Underline the digit just to the right of the hundredths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round 6.582 to the nearest tenth."
-  answer="6.6"
+  answer="6.6" answerForm="decimal"
   hint="Start again from $6.582$, not your rounded answer: underline the digit just to the right of the tenths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round 6.582 to the nearest whole number."
-  answer="7"
+  answer="7" answerForm="decimal"
   hint="Underline the digit just to the right of the ones place and compare it with $5$."
 >}}
 
@@ -861,44 +861,44 @@ negative seventy-one and nine tenths
 
 {{< fillin
   question="Round to the nearest tenth: $0.67$"
-  answer="0.7"
+  answer="0.7" answerForm="decimal"
   hint="The tenths digit is $6$; look at the hundredths digit to its right to decide whether to add $1$."
 >}}
 
 {{< fillin
   question="Round to the nearest hundredth: $0.845$"
-  answer="0.85"
+  answer="0.85" answerForm="decimal"
   hint="The hundredths digit is $4$; underline the digit to its right and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round to the nearest hundredth: $63.479$"
-  answer="63.48"
+  answer="63.48" answerForm="decimal"
   hint="Underline the digit just to the right of the hundredths place and compare it with $5$, then drop every digit after the hundredths place."
 >}}
 
 {{< fillin
   question="Round to the nearest tenth: $63.479$"
-  answer="63.5"
+  answer="63.5" answerForm="decimal"
   hint="Go back to the original number, not your rounded answer. Underline the digit just to the right of the tenths place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Round to the nearest whole number: $63.479$"
-  answer="63"
+  answer="63" answerForm="decimal"
   hint="Underline the digit just to the right of the ones place and compare it with $5$."
 >}}
 
 {{< fillin
   question="Hyo Jin bought a refrigerator for \$1,624.99, and the clerk calculated the sales tax as exactly \$142.186625. Round the sales tax to the nearest penny. Enter the amount in dollars, as a number."
-  answer="142.19"
+  answer="142.19" answerForm="decimal"
   answerDisplay="\$142.19"
   hint="A penny is one hundredth of a dollar, so round to the hundredths place — the thousandths digit decides it."
 >}}
 
 {{< fillin
   question="Hyo Jin's sales tax was exactly \$142.186625. Round the sales tax to the nearest dollar. Enter the amount in dollars, as a number."
-  answer="142"
+  answer="142" answerForm="decimal"
   answerDisplay="\$142"
   hint="Rounding to the nearest dollar is rounding to the ones place — look only at the tenths digit."
 >}}

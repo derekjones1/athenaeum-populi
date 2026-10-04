@@ -734,7 +734,7 @@ $y=\ln x$ is equivalent to $x=e^y$.
 
 {{< fillin
   question="For $y=\log_7x$, what are its domain and range, in interval notation? Enter the domain, then the range, separated by a comma."
-  answer="(0,\infty),(-\infty,\infty)"
+  answer="(0,\infty),(-\infty,\infty)" answerForm="decimal"
   answerDisplay="domain $(0,\infty)$, range $(-\infty,\infty)$"
   hint="Rewrite in exponential form, $x=7^y$, and ask which values each variable can take."
   placeholder="domain, range"
@@ -742,7 +742,7 @@ $y=\ln x$ is equivalent to $x=e^y$.
 
 {{< fillin
   question="What is the equation of the vertical asymptote of the graph of $y=\log_{2.5}x$?"
-  answer="x=0"
+  answer="x=0" answerForm="decimal"
   hint="Ask which inputs a logarithm cannot take, and find the line the graph approaches but never reaches."
 >}}
 

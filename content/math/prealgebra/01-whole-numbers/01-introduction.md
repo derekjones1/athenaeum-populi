@@ -92,7 +92,7 @@ numbers — they belong to families of numbers we will meet later.
 
 {{< fillin
   question="Which of the numbers 0, $\tfrac{2}{3}$, 2, 9, 11.8, 241, 376 are counting numbers? Enter them separated by commas."
-  answer="2,9,241,376"
+  answer="2,9,241,376" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="2, 9, 241, and 376"
   hint="Test each number against the definition: counting numbers are the numbers used to count objects, starting at 1."
@@ -100,7 +100,7 @@ numbers — they belong to families of numbers we will meet later.
 
 {{< fillin
   question="Which of the numbers 0, $\tfrac{2}{3}$, 2, 9, 11.8, 241, 376 are whole numbers? Enter them separated by commas."
-  answer="0,2,9,241,376"
+  answer="0,2,9,241,376" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="0, 2, 9, 241, and 376"
   hint="Test each number against the definition of the whole numbers given above."
@@ -182,7 +182,7 @@ these digits:
 
 {{< fillin
   question="In the number 27,493,615 — what is the value of the digit 4?"
-  answer="400000"
+  answer="400000" answerForm="decimal"
   answerDisplay="400,000 — the 4 is in the hundred thousands place"
   hint="Write the number in a place value chart, starting from the ones place on the right, to find the 4's place; its value is 4 times that place's value."
 >}}
@@ -328,13 +328,13 @@ the $1$ carries: $3{,}978$ rounds to $4{,}000$.
 
 {{< fillin
   question="Round 157 to the nearest ten."
-  answer="160"
+  answer="160" answerForm="decimal"
   hint="Underline the digit to the right of the tens place and compare it with 5, then replace every digit right of the tens place with zero."
 >}}
 
 {{< fillin
   question="Round 4,951 to the nearest hundred."
-  answer="5000"
+  answer="5000" answerForm="decimal"
   answerDisplay="5,000"
   hint="Compare the digit to the right of the hundreds place with 5. If you round up a 9, it becomes 0 and 1 is added to the digit on its left."
 >}}
@@ -356,7 +356,7 @@ the process of approximating a number to a given place value.
 
 {{< fillin
   question="Which of the numbers 0, $\tfrac{2}{3}$, 5, 8.1, 125 are counting numbers? Enter them separated by commas."
-  answer="5,125"
+  answer="5,125" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="5 and 125"
   hint="Test each number against the definition: counting numbers are the numbers used to count objects, starting at 1."
@@ -364,7 +364,7 @@ the process of approximating a number to a given place value.
 
 {{< fillin
   question="Which of the numbers 0, $\tfrac{2}{3}$, 5, 8.1, 125 are whole numbers? Enter them separated by commas."
-  answer="0,5,125"
+  answer="0,5,125" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="0, 5, and 125"
   hint="The whole numbers are the counting numbers together with zero."
@@ -372,7 +372,7 @@ the process of approximating a number to a given place value.
 
 {{< fillin
   question="Which of the numbers 0, $\tfrac{4}{9}$, 3.9, 50, 221 are counting numbers? Enter them separated by commas."
-  answer="50,221"
+  answer="50,221" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="50 and 221"
   hint="Counting numbers are what you use to count objects: 1, 2, 3, and so on."
@@ -380,7 +380,7 @@ the process of approximating a number to a given place value.
 
 {{< fillin
   question="Which of the numbers 0, $\tfrac{4}{9}$, 3.9, 50, 221 are whole numbers? Enter them separated by commas."
-  answer="0,50,221"
+  answer="0,50,221" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="0, 50, and 221"
   hint="The whole numbers are the counting numbers together with zero."
@@ -591,27 +591,27 @@ Fourteen thousand, forty-one
 
 {{< fillin
   question="Round 386 to the nearest ten."
-  answer="390"
+  answer="390" answerForm="decimal"
   hint="The tens digit is 8; compare the digit just to its right with 5."
 >}}
 
 {{< fillin
   question="Round 2,931 to the nearest ten."
-  answer="2930"
+  answer="2930" answerForm="decimal"
   answerDisplay="2,930"
   hint="Compare the digit to the right of the tens place with 5, then replace every digit right of the tens place with zero."
 >}}
 
 {{< fillin
   question="Round 13,748 to the nearest hundred."
-  answer="13700"
+  answer="13700" answerForm="decimal"
   answerDisplay="13,700"
   hint="The hundreds digit is 7; compare the digit just to its right with 5."
 >}}
 
 {{< fillin
   question="Round 391,794 to the nearest hundred."
-  answer="391800"
+  answer="391800" answerForm="decimal"
   answerDisplay="391,800"
   hint="Compare the digit to the right of the hundreds place with 5, then replace every digit right of the hundreds place with zero."
 >}}

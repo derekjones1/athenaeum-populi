@@ -21,8 +21,10 @@ Opus on September 22, 2026). New A&P chapters meet it by being authored with
 Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
-September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error).
+September 26, 2026: 2,151 items, chapter by chapter). The check became a
+lint error on October 4, 2026, after the last Intermediate Algebra row; the
+101 items the rows had left formless (rounding, graph reads, coefficients,
+domain lists) took a form then.
 
 | | Chapter | Sections | Fixed | Errata | Commit | Notes |
 |---|---|---|---|---|---|---|
@@ -47,8 +49,10 @@ closes, promote the check to a lint error).
 Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
-September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error). The same sweep adds
+September 26, 2026: 2,151 items, chapter by chapter). The check became a
+lint error on October 4, 2026, after the last Intermediate Algebra row; the
+101 items the rows had left formless (rounding, graph reads, coefficients,
+domain lists) took a form then. The same sweep adds
 `reduced-fraction` to every Simplify fill-in keyed `single-fraction` whose
 key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt
@@ -79,8 +83,10 @@ Factoring asks take `factored-completely` (chapter 7 and knowledge check
 Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
-September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error). The same sweep adds
+September 26, 2026: 2,151 items, chapter by chapter). The check became a
+lint error on October 4, 2026, after the last Intermediate Algebra row; the
+101 items the rows had left formless (rounding, graph reads, coefficients,
+domain lists) took a form then. The same sweep adds
 `reduced-fraction` to every Simplify fill-in keyed `single-fraction` whose
 key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt
@@ -115,8 +121,10 @@ ask whose key is complete (Elementary Algebra chapter 7, September 27,
 Never read against the September 22 bar: needs the full checker read AND
 the image-first figure pass. Every math row also adds `answerForm` to its
 numeric fill-ins that lack one (`brief-math.md` step 3, Derek's decision
-September 26, 2026: 2,151 items, chapter by chapter; when the last math row
-closes, promote the check to a lint error). The same sweep adds
+September 26, 2026: 2,151 items, chapter by chapter). Since October 4,
+2026 it is a lint error everywhere but the open rows below: each row deletes
+its chapter from `VALUE_FORM_SWEEP_PENDING` in `tools/lint/lints.mjs` and
+clears what `npm run lint` then reports. The same sweep adds
 `reduced-fraction` to every Simplify fill-in keyed `single-fraction` whose
 key has a sum or difference in its numerator or denominator: without it
 the grader accepts the unreduced fraction, including the printed prompt

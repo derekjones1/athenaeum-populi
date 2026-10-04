@@ -314,7 +314,7 @@ $$\tfrac{0}{n+5} = 0$$
 {{< fillin
   question="Simplify: $\tfrac{0}{m + 7}$, where $m \ne -7$."
   answer="0"
-  answerForm="polynomial"
+  answerForm="polynomial decimal"
   hint="Decide whether $0$ is the dividend or the divisor, then apply the matching property of zero."
 >}}
 

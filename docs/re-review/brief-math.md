@@ -304,9 +304,11 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
      is a computed number and which declares no `answerForm`** — body and
      Practice alike — and add the form after checking the grader refuses
      the retyped expression. Derek's decision (September 26, 2026): these
-     2,151 items across the four books are fixed chapter by chapter by
-     this re-review, not by a corpus pass, so no lint guards them until
-     the last math row closes; a chapter left unswept stays exposed.
+     items are fixed chapter by chapter by this re-review, not by a corpus
+     pass. The lint has enforced it since October 4, 2026 on every page
+     except the Precalculus chapters in `VALUE_FORM_SWEEP_PENDING`
+     (`tools/lint/lints.mjs`): when your row closes, delete its chapter's
+     entry and make `npm run lint` pass — that is the sweep's check.
      In the same sweep, add `reduced-fraction` to every Simplify fill-in
      keyed `single-fraction` whose key has a sum or difference in either
      half, and check the grader returns `form` on the unreduced fraction.

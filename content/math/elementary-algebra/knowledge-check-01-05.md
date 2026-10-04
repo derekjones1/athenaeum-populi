@@ -527,14 +527,14 @@ weight: 6
 
 {{< fillin
   question="Which of the ordered pairs $(3, 3)$, $(2, 0)$, $(4, -6)$ are solutions to the equation $3x - y = 6$? Enter the solutions separated by commas, in the order given."
-  answer="(3, 3), (2, 0)"
+  answer="(3, 3), (2, 0)" answerForm="decimal"
 >}}
 
 ### 4.2 Graph Linear Equations in Two Variables
 
 {{< fillin
   question="Which of the ordered pairs $(0, -1)$, $(3, 1)$, $(-3, -3)$, $(6, 4)$ are solutions to the equation $y = \tfrac{2}{3}x - 1$? Enter the solutions separated by commas, in the order given."
-  answer="(0, -1), (3, 1), (-3, -3)"
+  answer="(0, -1), (3, 1), (-3, -3)" answerForm="decimal"
 >}}
 
 {{< graphplot

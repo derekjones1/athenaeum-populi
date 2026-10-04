@@ -609,7 +609,7 @@ $\tfrac{6}{5} = 1\tfrac{1}{5}, -\tfrac{5}{2} = -2\tfrac{1}{2},
 
 {{< fillin
   question="Locate the following on a number line, then give the value that is farthest to the left: $-1$, $\tfrac{1}{3}$, $\tfrac{6}{5}$, $-\tfrac{7}{4}$, $\tfrac{9}{2}$, $5$, $-\tfrac{8}{3}$."
-  answer="-\frac{8}{3}"
+  answer="-\frac{8}{3}" answerForm="lowest-terms"
   answerDisplay="$-\tfrac{8}{3}$"
   hint="Compare the negative values by converting each to a decimal or mixed number — the smallest (most negative) one is farthest left."
 >}}
@@ -1092,7 +1092,7 @@ not a real number
 
 {{< fillin
   question="On the number line, $\tfrac{10}{3}$ falls between two consecutive integers. Give the smaller one first, then the larger, separated by a comma."
-  answer="3,4"
+  answer="3,4" answerForm="decimal"
   hint="Convert $\tfrac{10}{3}$ to a mixed number to see which two whole numbers it falls between."
 >}}
 
@@ -1114,7 +1114,7 @@ not a real number
 
 {{< fillin
   question="On the number line, $-1.6$ falls between two consecutive integers. Give the smaller one first, then the larger, separated by a comma."
-  answer="-2,-1"
+  answer="-2,-1" answerForm="decimal"
   hint="Find the integers on either side of $-1.6$; on the negative side of the number line, the integer farther from zero is the smaller one."
 >}}
 

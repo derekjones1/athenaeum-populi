@@ -50,7 +50,7 @@ In the next example we could evaluate the logarithm by converting to exponential
 {{< fillin
   question="Evaluate $\log_{13}1$ and $\log_9 9$. Enter the results as an ordered pair."
   answer="(0,1)"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$\left(0,\ 1\right)$"
   hint="Ask what power of each base gives that logarithm's argument."
   placeholder="ordered pair"
@@ -59,7 +59,7 @@ In the next example we could evaluate the logarithm by converting to exponential
 {{< fillin
   question="Evaluate $\log_5 1$ and $\log_7 7$. Enter the results as an ordered pair."
   answer="(0,1)"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$\left(0,\ 1\right)$"
   hint="Apply the two basic logarithm properties."
   placeholder="ordered pair"
@@ -104,7 +104,7 @@ In the next example, apply the inverse properties of logarithms.
 {{< fillin
   question="Evaluate $5^{\log_5 15}$ and $\log_7(7^4)$. Enter the results as an ordered pair."
   answer="(15,4)"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$\left(15,\ 4\right)$"
   hint="Use the inverse properties: a power and a logarithm with the same base undo each other."
   placeholder="ordered pair"
@@ -113,7 +113,7 @@ In the next example, apply the inverse properties of logarithms.
 {{< fillin
   question="Evaluate $2^{\log_2 8}$ and $\log_2(2^{15})$. Enter the results as an ordered pair."
   answer="(8,15)"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$\left(8,\ 15\right)$"
   hint="Each logarithm and exponential has the same base, so the operations undo each other."
   placeholder="ordered pair"

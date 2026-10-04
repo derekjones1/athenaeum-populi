@@ -355,13 +355,13 @@ The graph of $x - y = 2$:
 
 {{< fillin
   question="Find the $x$-intercept of the graph of $x - y = 2$ shown above. Give it as an ordered pair."
-  answer="(2,0)"
+  answer="(2,0)" answerForm="decimal"
   hint="The $x$-intercept is the point where the graph crosses the $x$-axis — the $y$-coordinate there is $0$."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of the graph of $x - y = 2$ shown above. Give it as an ordered pair."
-  answer="(0,-2)"
+  answer="(0,-2)" answerForm="decimal"
   hint="The $y$-intercept is the point where the graph crosses the $y$-axis — the $x$-coordinate there is $0$."
 >}}
 
@@ -373,7 +373,7 @@ The graph of $2x + 3y = 6$:
 
 {{< fillin
   question="Find the $x$-intercept of the graph of $2x + 3y = 6$ shown above. Give it as an ordered pair."
-  answer="(3,0)"
+  answer="(3,0)" answerForm="decimal"
   hint="Look for the point on the line whose $y$-coordinate is $0$."
 >}}
 
@@ -425,19 +425,19 @@ The intercepts are the points $(3, 0)$ and $(0, 6)$.
 
 {{< fillin
   question="Find the intercepts of the line: $3x + y = 12$. Give the $x$-intercept as an ordered pair."
-  answer="(4,0)"
+  answer="(4,0)" answerForm="decimal"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
 {{< fillin
   question="Find the intercepts of the line: $3x + y = 12$. Give the $y$-intercept as an ordered pair."
-  answer="(0,12)"
+  answer="(0,12)" answerForm="decimal"
   hint="Let $x = 0$ and solve for $y$."
 >}}
 
 {{< fillin
   question="Find the intercepts of the line: $x + 4y = 8$. Give the $x$-intercept as an ordered pair."
-  answer="(8,0)"
+  answer="(8,0)" answerForm="decimal"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
@@ -475,19 +475,19 @@ The intercepts are the points $(3, 0)$ and $(0, -4)$.
 
 {{< fillin
   question="Find the intercepts of the line: $3x - 4y = 12$. Give the $x$-intercept as an ordered pair."
-  answer="(4,0)"
+  answer="(4,0)" answerForm="decimal"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
 {{< fillin
   question="Find the intercepts of the line: $3x - 4y = 12$. Give the $y$-intercept as an ordered pair."
-  answer="(0,-3)"
+  answer="(0,-3)" answerForm="decimal"
   hint="Let $x = 0$ and solve for $y$."
 >}}
 
 {{< fillin
   question="Find the intercepts of the line: $2x - 4y = 8$. Give the $x$-intercept as an ordered pair."
-  answer="(4,0)"
+  answer="(4,0)" answerForm="decimal"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
@@ -692,13 +692,13 @@ $4x = 24$, and $x = 6$. A third solution is $(6, 4)$.
 
 {{< fillin
   question="Graph the line using the intercepts: $5x - 2y = 10$. What is the $x$-intercept? Give it as an ordered pair."
-  answer="(2,0)"
+  answer="(2,0)" answerForm="decimal"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
 {{< fillin
   question="Graph the line using the intercepts: $5x - 2y = 10$. What is the $y$-intercept? Give it as an ordered pair."
-  answer="(0,-5)"
+  answer="(0,-5)" answerForm="decimal"
   hint="Let $x = 0$ and solve for $y$."
 >}}
 
@@ -917,13 +917,13 @@ Use this graph for the next two exercises.
 
 {{< fillin
   question="Find the $x$-intercept of the line shown in the graph above. Give it as an ordered pair."
-  answer="(3,0)"
+  answer="(3,0)" answerForm="decimal"
   hint="Read across to where the line crosses the horizontal axis; the $y$-coordinate there is $0$."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of the line shown in the graph above. Give it as an ordered pair."
-  answer="(0,3)"
+  answer="(0,3)" answerForm="decimal"
   hint="Read up to where the line crosses the vertical axis; the $x$-coordinate there is $0$."
 >}}
 
@@ -935,13 +935,13 @@ Use this graph for the next two exercises.
 
 {{< fillin
   question="Find the $x$-intercept of the line shown in the graph above. Give it as an ordered pair."
-  answer="(0,0)"
+  answer="(0,0)" answerForm="decimal"
   hint="Read across to where the line crosses the horizontal axis; the $y$-coordinate there is $0$."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of the line shown in the graph above. Give it as an ordered pair."
-  answer="(0,0)"
+  answer="(0,0)" answerForm="decimal"
   hint="Read up to where the line crosses the vertical axis; the $x$-coordinate there is $0$."
 >}}
 
@@ -949,25 +949,25 @@ Use this graph for the next two exercises.
 
 {{< fillin
   question="Find the $x$-intercept of $x - 3y = 12$. Give it as an ordered pair."
-  answer="(12,0)"
+  answer="(12,0)" answerForm="decimal"
   hint="Let $y = 0$ and solve for $x$."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of $x - 3y = 12$. Give it as an ordered pair."
-  answer="(0,-4)"
+  answer="(0,-4)" answerForm="decimal"
   hint="Let $x = 0$ and solve for $y$."
 >}}
 
 {{< fillin
   question="Find the $x$-intercept of $y = \tfrac{1}{5}x + 2$. Give it as an ordered pair."
-  answer="(-10,0)"
+  answer="(-10,0)" answerForm="decimal"
   hint="Let $y = 0$ to get $0 = \tfrac{1}{5}x + 2$, subtract $2$ from both sides, then multiply by $5$."
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of $y = \tfrac{1}{5}x + 2$. Give it as an ordered pair."
-  answer="(0,2)"
+  answer="(0,2)" answerForm="decimal"
   hint="Let $x = 0$ and simplify the right side."
 >}}
 

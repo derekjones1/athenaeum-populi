@@ -586,20 +586,20 @@ $<$
 
 {{< fillin
   question="Translate into an expression with integers: the opposite of $8$."
-  answer="-8"
+  answer="-8" answerForm="decimal"
   hint="The word *opposite* signals a sign change — the opposite of a positive number is negative."
 >}}
 
 {{< fillin
   question="Translate into an expression with integers: the opposite of $-6$. Enter its value."
-  answer="6"
+  answer="6" answerForm="decimal"
   answerDisplay="$-(-6)$, or $6$"
   hint="*The opposite of* signals a minus sign in front of the number; write the expression, then simplify it."
 >}}
 
 {{< fillin
   question="Translate into an expression with integers: negative three."
-  answer="-3"
+  answer="-3" answerForm="decimal"
   hint="The word *negative* is read directly as a minus sign in front of the number."
 >}}
 
@@ -616,21 +616,21 @@ $4+(-3)$
 
 {{< fillin
   question="Translate into an expression with integers: a temperature of $6$ degrees below zero. Give the number of degrees as a signed integer, without the degree sign."
-  answer="-6"
+  answer="-6" answerForm="decimal"
   answerDisplay="$-6$ degrees"
   hint="*Below zero* signals a negative number."
 >}}
 
 {{< fillin
   question="Translate into an expression with integers: an elevation of $40$ feet below sea level. Give the number of feet as a signed integer."
-  answer="-40"
+  answer="-40" answerForm="decimal"
   answerDisplay="$-40$ feet"
   hint="Sea level is $0$ feet, so an elevation below it is negative."
 >}}
 
 {{< fillin
   question="Translate into an expression with integers: a football play loss of $12$ yards. Give the number of yards as a signed integer."
-  answer="-12"
+  answer="-12" answerForm="decimal"
   answerDisplay="$-12$ yards"
   hint="A *loss* moves the team backward, so it is recorded as a negative number."
 >}}

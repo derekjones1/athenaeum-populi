@@ -399,7 +399,7 @@ $$\frac{x-8}{8-x} = -1$$
 {{< fillin
   question="Simplify: $\frac{y-2}{2-y}$."
   answer="-1"
-  answerForm="polynomial"
+  answerForm="polynomial decimal"
   hint="Compare the numerator and the denominator term by term, then use the property of opposites in a rational expression."
 >}}
 
@@ -534,7 +534,7 @@ to $-1$.
 {{< fillin
   question="Simplify: $\frac{a-5}{5-a}$."
   answer="-1"
-  answerForm="polynomial"
+  answerForm="polynomial decimal"
   hint="Compare the numerator and the denominator term by term, then use the property of opposites in a rational expression."
 >}}
 

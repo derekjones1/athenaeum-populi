@@ -37,7 +37,7 @@ weight: 7
 
 {{< fillin
   question="Round 81,486 to the nearest hundred."
-  answer="81500"
+  answer="81500" answerForm="decimal"
   answerDisplay="81,500"
 >}}
 

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { BOOK_RULES, bookRulesFor, lintHugo, NAMED_FORM_ASKS } from './lints.mjs';
+import { BOOK_RULES, bookRulesFor, lintHugo, NAMED_FORM_ASKS, unworkedKey } from './lints.mjs';
 import { buildPracticeIndex, practiceItems } from '../lib/practice-index.mjs';
 import { checkAnswer, parseAnswerForm } from '../../assets/js/lib/math/check-answer.mjs';
 
@@ -82,7 +82,7 @@ test('inline SVG needs a non-empty accessible name', () => {
   }
 });
 
-const fillin = (question) => `{{< fillin question="${question}" answer="1" hint="Use the definition." >}}`;
+const fillin = (question) => `{{< fillin question="${question}" answer="1" answerForm="decimal" hint="Use the definition." >}}`;
 const multiplechoice = (question) => `{{< multiplechoice question="${question}" answer="yes" hint="Test each choice." >}}\nyes\nno\n{{< /multiplechoice >}}`;
 const objectivesCallout = (objectives) => [
   '{{< callout type="info" >}}',
@@ -154,7 +154,7 @@ test('regular-section exercises require hints and knowledge checks do not', () =
     'regular-section exercises require hints',
   );
   assert.equal(
-    lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
+    lintHugo('{{< fillin question="Practice" answer="1" answerForm="decimal" >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
     0,
     'knowledge-check exercises intentionally omit hints',
   );
@@ -209,8 +209,9 @@ test('a prescribed order or an explicit unordered mode resolves the ambiguity', 
     [listFillin('How many acres?', '40100'),
       'a grouped scalar written without commas is a scalar, not a list'],
   ]) {
+    // The keys are numbers, so each declares the value form the corpus requires.
     assert.equal(
-      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors.length,
+      lintHugo(source.replace(' hint=', ' answerForm="decimal" hint='), 'content/math/book/01-chapter/01-section.md').errors.length,
       0,
       reason,
     );
@@ -406,6 +407,42 @@ test('a simplest-form ask on a numeral fraction requires lowest-terms', () => {
   assert(lint(fillin('4\\frac{2}{3}')).some(simplest), 'a mixed number with no lowest-terms fires');
   assert.equal(lint(fillin('\\frac{3}{4}', 'lowest-terms')).filter(simplest).length, 0, 'lowest-terms satisfies');
   assert.equal(lint(fillin('\\frac{x}{4}')).filter(simplest).length, 0, 'a variable fraction is reduced-fraction territory, not this rule');
+});
+
+// ---- a computed number graded by value alone -------------------------------
+// Value grading accepts any expression equal to the key, so a word problem
+// keyed 105 with no form accepts the unworked `29+76`. The rule restates the
+// key unworked and grades it under the declared form.
+test('a numeric, bound, or coordinate key needs a value form that refuses it unworked', () => {
+  const lint = (source, file = 'content/math/book/01-chapter/01-section.md') => lintHugo(source, file).errors;
+  const unworked = (error) => error.includes('accepted unworked');
+  const fillin = (answer, form = '') =>
+    `{{< fillin question="Elena read 29 pages yesterday and 76 pages today. How many pages did she read?" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Add." >}}`;
+  assert(lint(fillin('105')).some(unworked), 'a bare number with no form fires');
+  assert.equal(lint(fillin('105', 'decimal')).filter(unworked).length, 0, 'decimal refuses 29+76');
+  assert(lint(fillin('\\frac{3}{4}')).some(unworked), 'a fraction with no form fires');
+  assert.equal(lint(fillin('\\frac{3}{4}', 'lowest-terms')).filter(unworked).length, 0, 'lowest-terms satisfies');
+  assert(lint(fillin('-1', 'polynomial')).some(unworked), 'a form that does not reach the number fires');
+  assert(lint(fillin('p\\ge\\frac{11}{12}')).some(unworked), 'an inequality bound fires');
+  assert(lint(fillin('(-\\infty,107]')).some(unworked), 'an interval endpoint fires');
+  assert(lint(fillin('(2,\\frac{3}{2})')).some(unworked), 'a pair coordinate fires');
+  assert.equal(lint(fillin('(2,\\frac{3}{2})', 'lowest-terms')).filter(unworked).length, 0, 'lowest-terms reaches each coordinate');
+  assert.equal(lint(fillin('105'), 'content/math/precalculus/01-functions/01-functions.md').filter(unworked).length, 0,
+    'a Precalculus chapter whose re-review row is open is not yet held to it');
+});
+
+test('unworkedKey restates only the numbers a value form can reach', () => {
+  assert.equal(unworkedKey('105'), '\\left(105+1-1\\right)');
+  assert.equal(unworkedKey('x=5'), 'x=\\left(5+1-1\\right)');
+  assert.equal(unworkedKey('(-\\infty,3)\\cup(5,\\infty)'), '(-\\infty,\\left(3+1-1\\right))\\cup(\\left(5+1-1\\right),\\infty)');
+  assert.equal(unworkedKey('x-4y\\leq8'), 'x-4y\\leq\\left(8+1-1\\right)', 'the variable-free side of a two-variable inequality');
+  assert.equal(unworkedKey('6<\\sqrt{38}<7'), '\\left(6+1-1\\right)<\\sqrt{38}<\\left(7+1-1\\right)', 'an estimate chain is not a comparison');
+  // Left alone: a comparison of printed numbers (the relation is the answer),
+  // and every key where no value form could be declared without failing it.
+  for (const key of ['0.42>0.4', '-8<|-8|', 'y\\geq-2x+3', 'x+3', '(x+3)^2-1', '(-\\infty,\\infty)',
+    '15x^2, 6x, 2', '(z-3,3,z)', '\\{-2,3,7,12\\}', '\\{(4,0),(7,1)\\}']) {
+    assert.equal(unworkedKey(key), null, key);
+  }
 });
 
 // ---- an interval-notation ask must author an interval ----------------------

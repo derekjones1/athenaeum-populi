@@ -502,7 +502,7 @@ Thirty-six is not equal to nineteen.
 
 {{< fillin
   question="What is the coefficient of $8a$?"
-  answer="8"
+  answer="8" answerForm="decimal"
   hint="The coefficient is the constant that multiplies the variable."
 >}}
 

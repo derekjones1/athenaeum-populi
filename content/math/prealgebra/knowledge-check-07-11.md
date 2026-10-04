@@ -651,13 +651,13 @@ Yes — substituting gives $1 \cdot 4 \cdot 3 = 12$
 
 {{< fillin
   question="Find the $x$-intercept and $y$-intercept of $x - y = -1$. Enter the $x$-intercept as an ordered pair."
-  answer="(-1, 0)"
+  answer="(-1, 0)" answerForm="decimal"
   answerDisplay="$(-1, 0)$"
 >}}
 
 {{< fillin
   question="Find the $x$-intercept and $y$-intercept of $y = 3x$. Enter the $y$-intercept as an ordered pair."
-  answer="(0, 0)"
+  answer="(0, 0)" answerForm="decimal"
   answerDisplay="$(0, 0)$"
 >}}
 
@@ -667,7 +667,7 @@ Yes — substituting gives $1 \cdot 4 \cdot 3 = 12$
 
 {{< fillin
   question="Find the $x$-intercept and $y$-intercept on the line shown above. Enter the $x$-intercept as an ordered pair."
-  answer="(4, 0)"
+  answer="(4, 0)" answerForm="decimal"
   answerDisplay="$(4, 0)$"
 >}}
 

@@ -405,7 +405,7 @@ energy drinks, which have 110 calories each.
 
 {{< fillin
   question="Let $d$ be the number of donuts and $e$ be the number of energy drinks Tenison buys. Write an inequality that models needing at least 1,000 extra calories, given each donut has 360 calories and each energy drink has 110 calories."
-  answer="360d+110e\geq1000"
+  answer="360d+110e\geq1000" answerForm="decimal"
   answerDisplay="$360d+110e\geq1000$"
   hint="Multiply calories per item by the number of items, add the two, and use 'at least' to choose the inequality symbol."
 >}}
@@ -501,7 +501,7 @@ Jake doesn't want to spend more than \$50 on bags of fertilizer and peat moss fo
 
 {{< fillin
   question="If $f$ is the number of bags of fertilizer and $p$ is the number of bags of peat moss, write an inequality that models Jake's budget: fertilizer costs \$2 a bag, peat moss costs \$5 a bag, and he doesn't want to spend more than \$50."
-  answer="2f+5p\leq50"
+  answer="2f+5p\leq50" answerForm="decimal"
   answerDisplay="$2f+5p\leq50$"
   hint="Multiply each price by its number of bags, add them, and use 'not more than' to choose $\leq$."
 >}}
@@ -528,7 +528,7 @@ Mark is increasing his exercise routine by running and walking at least 4 miles 
 
 {{< fillin
   question="If $w$ is the number of miles Mark walks and $r$ is the number of miles he runs, write an inequality that models his calorie goal: walking burns 270 calories per mile, running burns 650 calories per mile, and he wants a minimum of 1,500 calories burned."
-  answer="270w+650r\geq1500"
+  answer="270w+650r\geq1500" answerForm="decimal"
   answerDisplay="$270w+650r\geq1500$"
   hint="Multiply each rate by its number of miles, add them, and use 'a minimum of' to choose $\geq$."
 >}}

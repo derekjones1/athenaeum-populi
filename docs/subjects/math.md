@@ -260,11 +260,22 @@ learner picks among forms.
 
 **A word problem is a re-expression ask too.** "Translate and simplify: 29
 increased by 76" and "Mark rode 18, 15, 26, 49, and 32 miles — how many in
-all?" accept the typed unevaluated `29+76` or `18+15+26+49+32`, and the lint
-cannot see it because the numbers are in words or prose. Every fill-in whose
-key is a computed number declares `decimal` (or the form its key needs).
-The math re-review adds it chapter by chapter (Prealgebra 1, September 26,
-2026: 47 items).
+all?" accept the typed unevaluated `29+76` or `18+15+26+49+32`, and the
+retype rule cannot see it because the numbers are in words or prose. So
+every fill-in whose key is a number declares a value form that refuses it
+unworked — `decimal` for an integer or decimal, `lowest-terms` for a
+fraction, `fraction-or-mixed-number` for a mixed number — and so does every
+inequality bound, interval endpoint, and pair coordinate. The lint restates
+the key unworked (`\left(105+1-1\right)`) and grades it under the declared
+form; `correct` is an error (October 4, 2026). It asks for a form even where
+the number is read rather than worked out (rounding, a point read off a
+graph): a form costs those nothing, and guessing hazards from the wording
+would miss the next word problem. Exempt by shape only: a comparison of
+printed numbers (`0.42>0.4`), and keys no value form can be declared on — a
+list or tuple mixing numbers with expressions, and a roster set
+(`\{-2,3,7,12\}`), whose members the grader applies no form to. Precalculus
+chapters whose re-review row is open are listed in the lint
+(`VALUE_FORM_SWEEP_PENDING`) until their row closes.
 
 Retyping a printed *expression* ("Add: $3+5$", "Simplify: $b^9\cdot b^8$")
 grades correct too, and is flagged the same way: the lint grades every printed
@@ -823,6 +834,6 @@ companion) is documented in `docs/history/math.md`.
 
 ## Done checklist (in addition to the core checklist)
 
-- [ ] Every re-expression prompt carries an `answerForm`; categorical answers
-      are `multiplechoice`, never digit codes.
+- [ ] Every re-expression prompt and every number-keyed fill-in carries an
+      `answerForm`; categorical answers are `multiplechoice`, never digit codes.
 - [ ] No file-backed instructional images; recreated figures compared visually.

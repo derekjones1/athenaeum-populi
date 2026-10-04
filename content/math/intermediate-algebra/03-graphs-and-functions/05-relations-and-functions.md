@@ -62,7 +62,7 @@ $\{1,4,9,16,25\}$.
 
 {{< fillin
   question="For the relation $\{(1,1),(2,8),(3,27),(4,64),(5,125)\}$, enter the domain as a comma-separated list."
-  answer="1,2,3,4,5"
+  answer="1,2,3,4,5" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$1,2,3,4,5$"
   hint="The domain is the set of all $x$-values."
@@ -70,7 +70,7 @@ $\{1,4,9,16,25\}$.
 
 {{< fillin
   question="For the relation $\{(1,3),(2,6),(3,9),(4,12),(5,15)\}$, enter the range as a comma-separated list."
-  answer="3,6,9,12,15"
+  answer="3,6,9,12,15" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$3,6,9,12,15$"
   hint="The range is the set of all $y$-values."
@@ -186,7 +186,7 @@ $\{-2,-1,3,4,5\}$. Notice that while $-2$ repeats, it is only listed once.
 
 {{< fillin
   question="Use the graph of the relation directly above. Enter the domain of the relation as a comma-separated list."
-  answer="-3,-2,-1,0,2,4"
+  answer="-3,-2,-1,0,2,4" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-3,-2,-1,0,2,4$"
   hint="List each distinct $x$-coordinate once."
@@ -198,7 +198,7 @@ $\{-2,-1,3,4,5\}$. Notice that while $-2$ repeats, it is only listed once.
 
 {{< fillin
   question="Use the graph of the relation directly above. Enter the range of the relation as a comma-separated list."
-  answer="-6,-4,-2,0,2,5"
+  answer="-6,-4,-2,0,2,5" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-6,-4,-2,0,2,5$"
   hint="List the $y$-coordinates, writing repeated values only once."
@@ -595,7 +595,7 @@ whose value depends on the independent variable.
 
 {{< fillin
   question="For the relation $\{(1,4),(2,8),(3,12),(4,16),(5,20)\}$, enter the domain as a comma-separated list."
-  answer="1,2,3,4,5"
+  answer="1,2,3,4,5" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$1,2,3,4,5$"
   hint="The domain is the set of all $x$-values."
@@ -603,7 +603,7 @@ whose value depends on the independent variable.
 
 {{< fillin
   question="For the relation $\{(1,4),(2,8),(3,12),(4,16),(5,20)\}$, enter the range as a comma-separated list."
-  answer="4,8,12,16,20"
+  answer="4,8,12,16,20" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$4,8,12,16,20$"
   hint="The range is the set of all $y$-values."
@@ -611,7 +611,7 @@ whose value depends on the independent variable.
 
 {{< fillin
   question="For the relation $\{(1,7),(5,3),(7,9),(-2,-3),(-2,8)\}$, enter the domain as a comma-separated list."
-  answer="1,5,7,-2"
+  answer="1,5,7,-2" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$1,5,7,-2$"
   hint="List each distinct $x$-value once, even when it appears in more than one pair."
@@ -619,7 +619,7 @@ whose value depends on the independent variable.
 
 {{< fillin
   question="For the relation $\{(1,7),(5,3),(7,9),(-2,-3),(-2,8)\}$, enter the range as a comma-separated list."
-  answer="7,3,9,-3,8"
+  answer="7,3,9,-3,8" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$7,3,9,-3,8$"
   hint="The range is the set of all $y$-values."
@@ -638,7 +638,7 @@ No
 
 {{< fillin
   question="For the relation $\{(-3,9),(-2,4),(-1,1),(0,0),(1,1),(2,4),(3,9)\}$, enter the domain as a comma-separated list."
-  answer="-3,-2,-1,0,1,2,3"
+  answer="-3,-2,-1,0,1,2,3" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$-3,-2,-1,0,1,2,3$"
   hint="The domain is the set of all $x$-values."
@@ -646,7 +646,7 @@ No
 
 {{< fillin
   question="For the relation $\{(-3,9),(-2,4),(-1,1),(0,0),(1,1),(2,4),(3,9)\}$, enter the range as a comma-separated list."
-  answer="9,4,1,0"
+  answer="9,4,1,0" answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$9,4,1,0$"
   hint="List each distinct $y$-value only once."

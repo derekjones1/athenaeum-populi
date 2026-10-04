@@ -27,6 +27,12 @@
  *   - for a textin, every form the old `answer`/`accept` graded still grades
  *     correct under the new ones (an accept ADDITION carries; a removal does
  *     not); any other kind carries only with `accept` unchanged;
+ *   - for a fill-in whose `answerForm` changed, the unchanged key still
+ *     grades correct under the new form. A form is not what a reading
+ *     checked: the key is the same value, and `solve:compare` counts a
+ *     solver's answer as agreeing on value whatever its form, so a form-only
+ *     edit cannot change either result (October 4, 2026, when the
+ *     answerForm lint gave 101 already-solved fill-ins a form);
  *   - exactly one pre-edit exercise with a ledger record matches.
  *
  * The snapshot is this tool's own format, not `ledger:list` output: `list`
@@ -35,6 +41,7 @@
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
+import { checkAnswer } from '../../assets/js/lib/math/check-answer.mjs';
 import { acceptedForms, checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { LedgerFormatError } from '../lib/ledger.mjs';
@@ -55,9 +62,9 @@ export function snapshot(root) {
   }));
 }
 
-/** Everything a solver reads except the hint, plus the key; `accept` is judged separately. */
+/** Everything a solver reads except the hint, plus the key; `accept` and `answerForm` are judged separately. */
 function signature(item) {
-  const { hint, accept, ...rest } = item.params ?? {};
+  const { hint, accept, answerForm, ...rest } = item.params ?? {};
   return JSON.stringify([
     item.path, item.kind, Object.keys(rest).sort().map((key) => [key, norm(rest[key])]), norm(item.inner),
   ]);
@@ -72,6 +79,19 @@ export function acceptNeutral(before, now) {
   const answer = now.params?.answer ?? '';
   return acceptedForms(before.params?.answer ?? '', oldAccept)
     .every((form) => checkText(form, answer, { accept: newAccept }) === 'correct');
+}
+
+/** Does the unchanged key still grade correct under a changed answerForm? */
+export function formNeutral(before, now) {
+  const form = now.params?.answerForm;
+  if (norm(before.params?.answerForm) === norm(form)) return true;
+  if (now.kind !== 'fillin') return false;
+  const answer = now.params?.answer ?? '';
+  try {
+    return checkAnswer(answer, answer, { mode: now.params?.answerMode, form }) === 'correct';
+  } catch {
+    return false;
+  }
 }
 
 /**
@@ -95,11 +115,13 @@ export function planCarry({ before, now, entries, note }) {
     seen.add(item.hash);
     const matches = bySignature.get(signature(item)) ?? [];
     const sameContext = matches.filter((m) => m.dependency === item.dependency);
-    const neutral = sameContext.filter((m) => acceptNeutral(m, item));
+    const acceptOk = sameContext.filter((m) => acceptNeutral(m, item));
+    const neutral = acceptOk.filter((m) => formNeutral(m, item));
     let why = null;
     if (!matches.length) why = 'changed';
     else if (!sameContext.length) why = 'dependency-changed';
-    else if (!neutral.length) why = 'accept-narrowed';
+    else if (!acceptOk.length) why = 'accept-narrowed';
+    else if (!neutral.length) why = 'form-rejects-key';
     else if (neutral.length > 1) why = 'ambiguous';
     if (why) {
       toResolve.push({
@@ -144,7 +166,7 @@ function main() {
   if (!snapshotFile) usage('plan needs the pre-edit snapshot file');
   if (!out) usage('plan needs --out <dir>');
   const date = new Date().toISOString().slice(0, 10);
-  const note = norm(flag('note')) || `carried ${date} (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct`;
+  const note = norm(flag('note')) || `carried ${date} (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form`;
   const { entries } = readLedger(flag('ledger') ?? LEDGER_PATH);
   const plan = planCarry({
     before: JSON.parse(readFileSync(snapshotFile, 'utf8')), now: snapshot(root), entries, note,

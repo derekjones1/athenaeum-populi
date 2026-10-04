@@ -71,6 +71,21 @@ test('an accept addition carries; removing a graded form or changing the key doe
   assert.deepEqual(rekeyed.resolve.map((r) => r.why), ['changed']);
 });
 
+test('a fill-in carries across an answerForm change only while its key grades correct under it', () => {
+  const fillinPage = (form) => `---\ntitle: Sample\n---\n\n## Practice\n\n{{< fillin question="Elena read 29 pages and then 76 more. How many pages?" answer="105"${form ? ` answerForm="${form}"` : ''} hint="Add." >}}\n`;
+  const run = (from, to) => {
+    const dir = site(fillinPage(from));
+    const before = snapshot(join(dir, 'content'));
+    writeFileSync(join(dir, 'content', 'a.md'), fillinPage(to));
+    return planCarry({ before, now: snapshot(join(dir, 'content')), entries: recorded(before), note: 'n' });
+  };
+  const added = run('', 'decimal');
+  assert.equal(added.results.length, 1, 'adding a form the key satisfies carries');
+  assert.deepEqual(added.results[0].solved, { by: 'fable', result: 'agrees' });
+  assert.deepEqual(run('', 'fraction').resolve.map((r) => r.why), ['form-rejects-key'],
+    'a form the key itself fails is not carried');
+});
+
 test('an accept member the plural fold still grades is not a narrowing', () => {
   // Dropping `mitochondrion` narrows (the fold does not reach it); dropping a
   // regular plural of the key does not, because the grader folds it anyway.

@@ -670,6 +670,89 @@ const VALUE_SPAN_RE = new RegExp(
 const PROSE_NUMBER_RE = new RegExp(String.raw`(?<![\w.,−-])[−-]?${NUMBER_TOKEN}(?!\.?\d|\w)`, 'g');
 
 /**
+ * A fill-in's key restated with every number the grader reads under a value
+ * form written out unworked, as `\left(N+1-1\right)` — or null when the key
+ * holds no such number. The numbers are the ones checkAnswer's value forms
+ * reach: a whole list member (after an optional `x=` label), each side of an
+ * inequality that is a number, each interval endpoint, each pair or triple
+ * coordinate. A coefficient or exponent inside an expression is not one.
+ *
+ * A relation whose every side is a number, absolute-value bars allowed, is a
+ * comparison ask ("$0.42$ __ $0.4$"): the learner retypes both printed
+ * numbers by design and the relation is the answer, so it is left alone. An
+ * estimate chain is not one — `6<\sqrt{38}<7` has a side that is not a
+ * number, and its bounds are still restated.
+ *
+ * Where no value form can be declared, nothing is restated, so the rule never
+ * demands a form the key itself would fail. A value form is checked on every
+ * list member and every coordinate, so a list or tuple that mixes numbers with
+ * expressions (`15x^2, 6x, 2`; the general solution `(z-3,3,z)`) can declare
+ * none, and the grader applies no form inside set braces (`\{-2,3,7,12\}`
+ * fails `decimal` itself), so a roster set is out of reach too.
+ */
+const ORDER_RELATION_SPLIT_RE = /(\\(?:leq?|geq?|lt|gt)(?![a-zA-Z])|[<>])/;
+const DELIMITED_MEMBER_RE = /^(\s*(?:\\left\s*)?[([])([\s\S]*?)((?:\\right\s*)?[)\]]\s*)$/;
+const hasVariableLetter = (text) => /[a-zA-Z]/.test(text.replace(/\\[a-zA-Z]+/g, ''));
+export function unworkedKey(answer) {
+  if (/^\s*(?:\\left\s*)?\\\{/.test(answer)) return null;
+  let changed = false;
+  const unwork = (text) => {
+    if (!VALUE_SPAN_RE.test(text)) return text;
+    changed = true;
+    return `\\left(${text.trim()}+1-1\\right)`;
+  };
+  const restate = (member) => {
+    const labelled = member.match(/^(\s*[a-zA-Z]\s*=\s*)([\s\S]+)$/);
+    if (labelled) return VALUE_SPAN_RE.test(labelled[2]) ? labelled[1] + unwork(labelled[2]) : null;
+    if (VALUE_SPAN_RE.test(member)) return unwork(member);
+    const sides = member.split(ORDER_RELATION_SPLIT_RE);
+    if (sides.length > 1) {
+      const isComparison = sides.every((side, i) => i % 2
+        || VALUE_SPAN_RE.test(side.replace(/\\left|\\right|\\[lr]vert|\|/g, '')));
+      return isComparison ? member : sides.map((side, i) => (i % 2 ? side : unwork(side))).join('');
+    }
+    const parts = member.split(/(\\cup(?![a-zA-Z]))/);
+    const restated = parts.map((part, i) => {
+      if (i % 2) return part;
+      const delimited = part.match(DELIMITED_MEMBER_RE);
+      const inner = delimited ? splitTopLevelCommas(delimited[2]) : [];
+      if (inner.length < 2) return null;
+      return inner.some(hasVariableLetter) ? part : delimited[1] + inner.map(unwork).join(',') + delimited[3];
+    });
+    return restated.includes(null) ? null : restated.join('');
+  };
+  const members = splitTopLevelCommas(answer).map(restate);
+  // One expression member puts the whole key out of reach: it fails every
+  // value form the numbers beside it would need.
+  return changed && !members.includes(null) ? members.join(',') : null;
+}
+
+/**
+ * Pages whose fill-ins have not yet had the answerForm sweep: the Precalculus
+ * chapters whose row in docs/re-review/tracker.md is still open (Derek,
+ * September 26, 2026: the sweep is done row by row, each form checked
+ * against the grader; October 4, 2026: the rule below is an error for every
+ * other page now). Each row deletes its entry when it closes; the last row
+ * deletes the list.
+ */
+export const VALUE_FORM_SWEEP_PENDING = Object.freeze([
+  'math/precalculus/01-functions/',
+  'math/precalculus/02-linear-functions/',
+  'math/precalculus/03-polynomial-and-rational-functions/',
+  'math/precalculus/04-exponential-and-logarithmic-functions/',
+  'math/precalculus/05-trigonometric-functions/',
+  'math/precalculus/06-periodic-functions/',
+  'math/precalculus/07-trigonometric-identities-and-equations/',
+  'math/precalculus/08-further-applications-of-trigonometry/',
+  'math/precalculus/09-systems-of-equations-and-inequalities/',
+  'math/precalculus/10-analytic-geometry/',
+  'math/precalculus/11-sequences-probability-and-counting-theory/',
+  'math/precalculus/12-introduction-to-calculus/',
+  'math/precalculus/knowledge-check-01-06.md',
+  'math/precalculus/knowledge-check-07-12.md',
+]);
+
+/**
  * Standalone values printed in a fillin question, for the trivial-answer
  * check. Grading is value-based, so a prompt whose target value appears in
  * the question is trivially satisfiable: typing 86 passes "Find the prime
@@ -2350,6 +2433,33 @@ export function lintHugo(src, filename = '', options = {}) {
           ? 'the question restated with the operation written but not carried out'
           : 'printed in the question';
         err(index, `${where}: answer grades equal to ${JSON.stringify(printed)}, ${source} — a learner passes by retyping the prompt; ${remedy}, since value-based grading alone cannot tell the two forms apart`);
+      }
+    }
+    // ---- a computed number graded by value alone.
+    // Value grading accepts any expression equal to the key, so without a
+    // form a word problem keyed 105 accepts the unworked `29+76` and an
+    // inequality keyed `(-\infty,107]` accepts `(-\infty,62+45]`. The retype
+    // rule above sees only operands printed in math; numbers in prose are
+    // invisible to it, so the key itself is tested: restate it unworked and
+    // grade the restatement under the declared form. Every key, not only the
+    // hazardous ones — a form costs a rounding or graph-read item nothing,
+    // and a rule that guessed which prompts are hazards from their wording
+    // would miss the next word problem phrased like a rounding ask (Derek,
+    // October 4, 2026).
+    const unworked = VALUE_FORM_SWEEP_PENDING.some((page) => filename.replace(/\\/g, '/').includes(page))
+      ? null : unworkedKey(params.answer || '');
+    if (unworked !== null) {
+      let verdict;
+      try {
+        verdict = checkAnswer(unworked, params.answer, { mode: params.answerMode, form: params.answerForm });
+      } catch {
+        verdict = 'error';
+      }
+      if (verdict === 'correct') {
+        const remedy = params.answerForm === undefined
+          ? 'declare the answerForm the key is written in'
+          : `the declared answerForm ${JSON.stringify(params.answerForm)} does not rule it out — add the value form the key is written in`;
+        err(index, `${where}: ${JSON.stringify(unworked)} grades correct, so the key is accepted unworked (29+76 for 105); ${remedy} — "decimal" for an integer or decimal, "lowest-terms" for a fraction, "fraction-or-mixed-number" for a mixed number`);
       }
     }
     if (isRegularSection && !(params.hint || '').trim()) {

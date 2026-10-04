@@ -763,7 +763,7 @@ and to the right $4$ — we should get to another point on the line.
 
 {{< fillin
   question="A line passes through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting out the rise and run, what point do you land on? Enter it as an ordered pair."
-  answer="(5, 2)"
+  answer="(5, 2)" answerForm="decimal"
   answerDisplay="$(5, 2)$"
   hint="Read the rise and the run from the slope, then add the rise to the $y$-coordinate and the run to the $x$-coordinate."
 >}}
@@ -841,7 +841,7 @@ Connect the two points with a line.
 
 {{< fillin
   question="A line passes through the point $(-2, 1)$ with slope $m = 3$. Starting at $(-2, 1)$ and counting out the rise and run, what point do you land on? Enter it as an ordered pair."
-  answer="(-1, 4)"
+  answer="(-1, 4)" answerForm="decimal"
   answerDisplay="$(-1, 4)$"
   hint="Write $3$ as a fraction to read the rise and the run, then add the rise to the $y$-coordinate and the run to the $x$-coordinate."
 >}}

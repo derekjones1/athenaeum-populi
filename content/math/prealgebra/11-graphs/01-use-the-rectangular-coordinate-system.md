@@ -414,14 +414,14 @@ Use the graph below for the next two questions.
 
 {{< fillin
   question="Read the coordinates of point $B$ from the graph above. Enter them as an ordered pair $(x, y)$."
-  answer="(-2,4)"
+  answer="(-2,4)" answerForm="decimal"
   answerDisplay="$(-2, 4)$"
   hint="Read the $x$-value straight down from $B$ to the $x$-axis, and the $y$-value straight across to the $y$-axis."
 >}}
 
 {{< fillin
   question="Read the coordinates of point $D$ from the graph above. Enter them as an ordered pair $(x, y)$."
-  answer="(3,-2)"
+  answer="(3,-2)" answerForm="decimal"
   answerDisplay="$(3, -2)$"
   hint="Read straight up or down from $D$ to the $x$-axis for the first number, then straight across to the $y$-axis for the second."
 >}}
@@ -822,14 +822,14 @@ Quadrant II
 
 {{< fillin
   question="Name the ordered pair of point $C$ shown on the graph. Write it in the form $(x, y)$."
-  answer="(1,-3)"
+  answer="(1,-3)" answerForm="decimal"
   answerDisplay="$(1, -3)$"
   hint="Follow a vertical grid line from $C$ to the $x$-axis for the $x$-coordinate, then a horizontal grid line to the $y$-axis for the $y$-coordinate."
 >}}
 
 {{< fillin
   question="Name the ordered pair of point $D$ shown on the graph. Write it in the form $(x, y)$."
-  answer="(4,3)"
+  answer="(4,3)" answerForm="decimal"
   answerDisplay="$(4, 3)$"
   hint="Read the $x$-axis number directly above or below $D$ first, then the $y$-axis number directly beside it."
 >}}
@@ -901,14 +901,14 @@ Quadrant II
 
 {{< fillin
   question="Name the ordered pair of point $S$ shown on the graph. Write it in the form $(x, y)$."
-  answer="(-2,4)"
+  answer="(-2,4)" answerForm="decimal"
   answerDisplay="$(-2, 4)$"
   hint="Follow a vertical grid line from $S$ to the $x$-axis for the $x$-coordinate, then a horizontal grid line to the $y$-axis for the $y$-coordinate."
 >}}
 
 {{< fillin
   question="Name the ordered pair of point $T$ shown on the graph. Write it in the form $(x, y)$."
-  answer="(-4,-2)"
+  answer="(-4,-2)" answerForm="decimal"
   answerDisplay="$(-4, -2)$"
   hint="Read the $x$-axis number directly above or below $T$ first, then the $y$-axis number directly beside it, keeping each sign."
 >}}

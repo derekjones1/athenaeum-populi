@@ -33,7 +33,7 @@ const dirty = page([
   'Compute $\\dfrac{1}{2}$.',
   '{{< multiplechoice question="Which?" answer="c" hint="h" >}}\na\nb\n{{< /multiplechoice >}}',
 ].join('\n\n'));
-const clean = page('{{< fillin question="Find $1+1$." answer="2" hint="h" >}}');
+const clean = page('{{< fillin question="Find $1+1$." answer="2" answerForm="decimal" hint="h" >}}');
 
 test('an author run lints and grades; every finding fails the run', () => {
   writeFileSync(section, dirty);

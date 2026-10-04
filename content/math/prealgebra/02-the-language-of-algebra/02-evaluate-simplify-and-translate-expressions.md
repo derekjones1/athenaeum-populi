@@ -102,7 +102,7 @@ constant itself).
 
 {{< fillin
   question="Give the coefficient of each term of $9a + 13a^2 + a^3$, in the order the terms appear, separated by commas."
-  answer="9,13,1"
+  answer="9,13,1" answerForm="decimal"
   answerDisplay="$9$, $13$, $1$"
   hint="The coefficient is the constant that multiplies the variable part of each term. A term with no number written in front of its variable still has a coefficient."
 >}}
@@ -272,7 +272,7 @@ terms** — simplifying by adding the coefficients of like terms.
 
 {{< fillin
   question="Identify the coefficient of the term $5r^2$."
-  answer="5"
+  answer="5" answerForm="decimal"
   hint="The coefficient is the constant that multiplies the variable part. The exponent belongs to the variable, not to the coefficient."
 >}}
 
