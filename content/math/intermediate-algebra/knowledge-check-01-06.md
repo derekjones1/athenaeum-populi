@@ -13,7 +13,7 @@ weight: 7
   **Test yourself on Chapters 1–6.** Every question comes from the source
   textbook's chapter Practice Tests (with a few drawn from its Review
   Exercises), and every answer is graded against the book's official
-  Answer Key. There are no hints — treat it like a test. Questions are
+  Answer Key, except one it corrects (noted at the end). There are no hints — treat it like a test. Questions are
   grouped by the section they cover, so a miss tells you exactly which
   section to review.
 {{< /callout >}}
@@ -34,6 +34,7 @@ weight: 7
 {{< fillin
   question="Translate to an algebraic expression and simplify: eleven less than negative eight. Give the simplified value."
   answer="-19"
+  answerForm="decimal"
   answerDisplay="$-8 - 11$; $-19$"
 >}}
 
@@ -48,7 +49,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{180}{204}$."
   answer="\frac{15}{17}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{15}{17}$"
 >}}
 
@@ -64,6 +65,7 @@ weight: 7
 {{< fillin
   question="Round $28.1458$ to the nearest hundredth."
   answer="28.15"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -86,7 +88,7 @@ undefined
 {{< fillin
   question="Simplify: $6(3y - 1) - (5y - 3)$."
   answer="13y-3"
-  answerForm="distributed"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$13y - 3$"
 >}}
 
@@ -97,12 +99,14 @@ undefined
 {{< fillin
   question="Solve: $-5(2x + 1) = 45$."
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$x = -5$"
 >}}
 
 {{< fillin
   question="Solve: $\tfrac{3}{4}x - \tfrac{2}{3} = \tfrac{1}{2}x + \tfrac{5}{6}$."
   answer="6"
+  answerForm="decimal"
   answerDisplay="$x = 6$"
 >}}
 
@@ -111,32 +115,37 @@ undefined
 {{< fillin
   question="Three-fourths of the people at a concert are children. If there are 87 children, what is the total number of people at the concert?"
   answer="116"
+  answerForm="decimal"
   answerDisplay="116 people"
 >}}
 
 {{< fillin
   question="Winston deposited \$3,294 in a bank account with an interest rate of 2.6%. How much simple interest, in dollars, was earned in five years?"
   answer="428.22"
+  answerForm="decimal"
   answerDisplay="\$428.22"
 >}}
 
 ### 2.3 Solve a Formula for a Specific Variable
 
 {{< fillin
-  question="Solve $A = \tfrac{1}{2}d_1d_2$ for $d_2$."
-  answer="2A/d_1"
+  question="Solve the formula $A = \tfrac{1}{2}d_1d_2$ for $d_2$. Enter your answer as $d_2 =$ ___ (an expression in $A$ and $d_1$)."
+  answer="\frac{2A}{d_1}"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$d_2 = \tfrac{2A}{d_1}$"
 >}}
 
 {{< fillin
-  question="The length of a rectangle is 12 centimeters more than its width. The perimeter is 74 centimeters. Find the width."
+  question="The length of a rectangle is 12 centimeters more than its width. The perimeter is 74 centimeters. Find the width, in centimeters."
   answer="12.5"
+  answerForm="decimal"
   answerDisplay="12.5 centimeters"
 >}}
 
 {{< fillin
-  question="The length of a rectangle is 12 centimeters more than its width. The perimeter is 74 centimeters. Find the length."
+  question="The length of a rectangle is 12 centimeters more than its width. The perimeter is 74 centimeters. Find the length, in centimeters."
   answer="24.5"
+  answerForm="decimal"
   answerDisplay="24.5 centimeters"
 >}}
 
@@ -145,33 +154,38 @@ undefined
 {{< fillin
   question="Lenny has \$3.69 in pennies, dimes, and quarters. The number of pennies is three more than the number of dimes, and the number of quarters is twice the number of dimes. How many dimes does he have?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="6 dimes"
 >}}
 
 {{< fillin
   question="Lenny has \$3.69 in pennies, dimes, and quarters. The number of pennies is three more than the number of dimes, and the number of quarters is twice the number of dimes. How many quarters does he have?"
   answer="12"
+  answerForm="decimal"
   answerDisplay="12 quarters"
 >}}
 
 {{< fillin
   question="Marquese is making 10 pounds of trail mix from raisins that cost \$3.45 per pound and nuts that cost \$7.95 per pound. How many pounds of raisins should he use for the trail mix to cost \$6.96 per pound?"
   answer="2.2"
+  answerForm="decimal"
   answerDisplay="2.2 pounds of raisins"
 >}}
 
 ### 2.5 Solve Linear Inequalities
 
 {{< fillin
-  question="Solve the inequality: $3c - 10(c - 2) < 5c + 16$."
-  answer="c>1/3"
+  question="Solve the inequality: $3c - 10(c - 2) < 5c + 16$. Enter the solution as an inequality."
+  answer="c>\frac{1}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$c > \tfrac{1}{3}$"
 >}}
 
 {{< fillin
-  question="Sara has a budget of \$1000 for costumes for the 18 members of her musical theater group. What is the most she can spend on each costume, to the nearest cent?"
-  answer="55.56"
-  answerDisplay="at most \$55.56"
+  question="Sara has a budget of \$1,000 for costumes for the 18 members of her musical theater group. If all the costumes are the same price, what is the maximum she can spend for each costume without going over her budget? Give the amount in dollars and cents, without a dollar sign."
+  answer="55.55"
+  answerForm="decimal"
+  answerDisplay="at most \$55.55"
 >}}
 
 ### 2.6 Solve Compound Inequalities
@@ -187,37 +201,33 @@ $[-2,5]$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Solve $3(2x - 3) < -5$ or $4x - 1 > 3$, and choose the solution in interval notation."
-  answer="$(-\infty,\tfrac{2}{3}) \cup (1,\infty)$"
+  question="Solve $\tfrac{3}{4}x - 2 > 4$ or $4(2 - x) > 0$, and choose the solution in interval notation."
+  answer="$(-\infty,2) \cup (8,\infty)$"
 >}}
-$(\tfrac{2}{3},1)$
-$(-\infty,\tfrac{2}{3}) \cup (1,\infty)$
-$[\tfrac{2}{3},1]$
-$(-\infty,1) \cup (\tfrac{2}{3},\infty)$
+$(2,8)$
+$(-\infty,2) \cup (8,\infty)$
+$(2,\infty)$
+$(-\infty,2] \cup [8,\infty)$
 {{< /multiplechoice >}}
 
 ### 2.7 Solve Absolute Value Inequalities
 
 {{< fillin
-  question="Solve $|2x - 1| = |4x + 3|$. Enter the smaller solution."
-  answer="-2"
-  answerDisplay="$x = -2$"
->}}
-
-{{< fillin
-  question="Solve $|2x - 1| = |4x + 3|$. Enter the larger solution."
-  answer="-\frac{1}{3}"
-  answerDisplay="$x = -\tfrac{1}{3}$"
+  question="Solve $|2x - 1| = |4x + 3|$. Enter both solutions, separated by a comma."
+  answer="-2,-\frac{1}{3}"
+  answerMode="unordered"
+  answerForm="lowest-terms"
+  answerDisplay="$x = -2$ or $x = -\tfrac{1}{3}$"
 >}}
 
 {{< multiplechoice
-  question="Solve $|4x - 3| \ge 5$, and choose the solution in interval notation."
-  answer="$(-\infty,-\tfrac{1}{2}] \cup [2,\infty)$"
+  question="Solve $|x| \ge 2$, and choose the solution in interval notation."
+  answer="$(-\infty,-2] \cup [2,\infty)$"
 >}}
-$(-\infty,-\tfrac{1}{2}] \cup [2,\infty)$
-$(-\tfrac{1}{2},2)$
-$[-\tfrac{1}{2},2]$
-$(-\infty,-2] \cup [\tfrac{1}{2},\infty)$
+$(-\infty,-2] \cup [2,\infty)$
+$[-2,2]$
+$(-\infty,-2) \cup (2,\infty)$
+$(-2,2)$
 {{< /multiplechoice >}}
 
 ## Chapter 3: Graphs and Functions
@@ -235,12 +245,14 @@ no
 {{< fillin
   question="Find the $x$-intercept of $x + 2y = 6$. Write it as an ordered pair."
   answer="(6,0)"
+  answerForm="decimal"
   answerDisplay="$(6,0)$"
 >}}
 
 {{< fillin
   question="Find the $y$-intercept of $x + 2y = 6$. Write it as an ordered pair."
   answer="(0,3)"
+  answerForm="decimal"
   answerDisplay="$(0,3)$"
 >}}
 
@@ -257,6 +269,7 @@ no
 {{< fillin
   question="Find the slope of the line through $(3,5)$ and $(4,-1)$."
   answer="-6"
+  answerForm="decimal"
 >}}
 
 {{< multiplechoice
@@ -270,7 +283,7 @@ neither
 
 {{< graphplot
   question="Graph the line with slope $m = \tfrac{1}{2}$ that contains the point $(-3, -4)$."
-  answerDisplay="$y = \tfrac{1}{2}x - \tfrac{5}{2}$, through $(-3, -4)$, $(-1, -3)$, and $(1, -2)$"
+  answerDisplay="the line through $(-3, -4)$, $(-1, -3)$, and $(1, -2)$"
   ariaLabel="A blank grid from −7 to 7 on both axes."
 >}}
 {"answer":{"slope":0.5,"intercept":-2.5,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
@@ -279,14 +292,16 @@ neither
 ### 3.3 Find the Equation of a Line
 
 {{< fillin
-  question="Find an equation of the line with slope $-5$ and $y$-intercept $(0,-3)$."
+  question="Find an equation of the line with slope $-5$ and $y$-intercept $(0,-3)$. Write the equation in slope-intercept form."
   answer="y=-5x-3"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = -5x - 3$"
 >}}
 
 {{< fillin
-  question="Find an equation of the line through $(7,1)$ and $(5,0)$."
+  question="Find an equation of the line through $(7,1)$ and $(5,0)$. Write the equation in slope-intercept form, or as $x=a$ if the line is vertical."
   answer="y=\frac{1}{2}x-\frac{5}{2}"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = \tfrac{1}{2}x - \tfrac{5}{2}$"
 >}}
 
@@ -316,11 +331,8 @@ no
 
 ### 3.5 Relations and Functions
 
-For the next three questions, use the relation
-$\{(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)\}$.
-
 {{< multiplechoice
-  question="Is this relation a function?"
+  question="Is the relation $\{(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)\}$ a function?"
   answer="yes"
 >}}
 no
@@ -328,20 +340,20 @@ yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="What is the domain of the relation?"
+  question="What is the domain of the relation $\{(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)\}$?"
   answer="$\{-3,-2,-1,0,1,2,3\}$"
 >}}
-$\{0,1,8,27\}$
+$\{0,1,2,3\}$
 $\{-3,-2,-1\}$
 $\{-3,-2,-1,0,1,2,3\}$
 $\{1,2,3\}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="What is the range of the relation?"
+  question="What is the range of the relation $\{(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)\}$?"
   answer="$\{0,1,8,27\}$"
 >}}
-$\{-3,-2,-1,0,1,2,3\}$
+$\{0,1,8\}$
 $\{1,8,27\}$
 $\{-27,-8,-1,0,1,8,27\}$
 $\{0,1,8,27\}$
@@ -352,7 +364,18 @@ $\{0,1,8,27\}$
 {{< fillin
   question="For $h(y) = 3|y - 1| - 3$, find $h(-4)$."
   answer="12"
+  answerForm="decimal"
 >}}
+
+{{< multiplechoice
+  question="What is the range of $f(x) = x^2 + 1$?"
+  answer="$[1,\infty)$"
+>}}
+$[1,\infty)$
+$(-\infty,1]$
+$(1,\infty)$
+$(-\infty,\infty)$
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Which graph shows $f(x) = x^2 + 1$?"
@@ -368,16 +391,6 @@ $\{0,1,8,27\}$
 {"ariaLabel":"A parabola opening downward with its highest point at (0, 1).","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":-1,"c":1}]}
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="What is the range of $f(x) = x^2 + 1$?"
-  answer="$[1,\infty)$"
->}}
-$[1,\infty)$
-$(-\infty,1]$
-$(1,\infty)$
-$(-\infty,\infty)$
-{{< /multiplechoice >}}
-
 ## Chapter 4: Systems of Linear Equations
 
 ### 4.1 Solve Systems of Linear Equations with Two Variables
@@ -385,46 +398,53 @@ $(-\infty,\infty)$
 {{< fillin
   question="Solve the system $x - y = 5$ and $x + 2y = -4$. Write the solution as an ordered pair $(x,y)$."
   answer="(2,-3)"
+  answerForm="decimal"
   answerDisplay="$(2,-3)$"
 >}}
 
 {{< fillin
   question="Solve the system $x + 4y = 6$ and $-2x + y = -3$. Write the solution as an ordered pair $(x,y)$."
   answer="(2,1)"
+  answerForm="decimal"
   answerDisplay="$(2,1)$"
 >}}
 
 ### 4.2 Solve Applications with Systems of Equations
 
 {{< fillin
-  question="A bulb garden contains 200 bulbs. The number of tulip bulbs is three times the number of iris bulbs. How many iris bulbs are there?"
+  question="Mollie wants to plant 200 bulbs in her garden, all irises and tulips. She wants to plant three times as many tulips as irises. How many irises should she plant?"
   answer="50"
+  answerForm="decimal"
   answerDisplay="50 iris bulbs"
 >}}
 
 {{< fillin
-  question="A bulb garden contains 200 bulbs. The number of tulip bulbs is three times the number of iris bulbs. How many tulip bulbs are there?"
+  question="Mollie wants to plant 200 bulbs in her garden, all irises and tulips. She wants to plant three times as many tulips as irises. How many tulips should she plant?"
   answer="150"
+  answerForm="decimal"
   answerDisplay="150 tulip bulbs"
 >}}
 
 {{< fillin
-  question="Two angles are supplementary, and their measures differ by 58 degrees. Find the larger angle."
+  question="The difference of two supplementary angles is 58 degrees. Find the measure of the larger angle, in degrees."
   answer="119"
+  answerForm="decimal"
   answerDisplay="$119^\circ$"
 >}}
 
 ### 4.3 Solve Mixture Applications with Systems of Equations
 
 {{< fillin
-  question="Priam has \$4.21 in pennies and dimes. The number of dimes is three less than four times the number of pennies. How many pennies does he have?"
+  question="Priam has dimes and pennies in a cup holder in his car. The total value of the coins is \$4.21. The number of dimes is three less than four times the number of pennies. How many pennies are in the cup?"
   answer="11"
+  answerForm="decimal"
   answerDisplay="11 pennies"
 >}}
 
 {{< fillin
-  question="Priam has \$4.21 in pennies and dimes. The number of dimes is three less than four times the number of pennies. How many dimes does he have?"
+  question="Priam has dimes and pennies in a cup holder in his car. The total value of the coins is \$4.21. The number of dimes is three less than four times the number of pennies. How many dimes are in the cup?"
   answer="41"
+  answerForm="decimal"
   answerDisplay="41 dimes"
 >}}
 
@@ -433,12 +453,14 @@ $(-\infty,\infty)$
 {{< fillin
   question="Solve the system $x + y - z = -1$, $2x - y + 2z = 8$, and $-3x + 2y + z = -9$. Write the solution as an ordered triple $(x,y,z)$."
   answer="(2,-2,1)"
+  answerForm="decimal"
   answerDisplay="$(2,-2,1)$"
 >}}
 
 {{< fillin
-  question="After a baseball game, one family buys four T-shirts, one cap, and one stuffed animal for \$135. Another couple buys two T-shirts, one cap, and three stuffed animals for \$115. A third couple buys two T-shirts, one cap, and one stuffed animal for \$85. What is the cost of one cap?"
+  question="After attending a major league baseball game, the patrons often purchase souvenirs. If a family purchases 4 t-shirts, a cap and 1 stuffed animal their total is \$135. A couple buys 2 t-shirts, a cap and 3 stuffed animals for their nieces and spends \$115. Another couple buys 2 t-shirts, a cap and 1 stuffed animal and their total is \$85. What is the cost of one cap, in dollars?"
   answer="20"
+  answerForm="decimal"
   answerDisplay="\$20"
 >}}
 
@@ -447,26 +469,30 @@ $(-\infty,\infty)$
 {{< fillin
   question="Use matrices to solve the system $-3x + y + z = -4$, $-x + 2y - 2z = 1$, and $2x - y - z = -1$. Write the solution as an ordered triple $(x,y,z)$."
   answer="(5,7,4)"
+  answerForm="decimal"
   answerDisplay="$(5,7,4)$"
 >}}
 
 {{< fillin
-  question="Use matrices to solve the system $2x - y + 3z = -3$, $-x + 2y - z = 10$, and $x + y + z = 5$. Write the solution as an ordered triple $(x,y,z)$."
-  answer="(-2,5,2)"
-  answerDisplay="$(-2,5,2)$"
+  question="Write the system $4x + 3y = -2$, $x - 2y - 3z = 7$, and $2x - y + 2z = -6$ as an augmented matrix. Enter row 1 of the matrix as a comma-separated list of four numbers."
+  answer="4, 3, 0, -2"
+  answerForm="decimal"
+  answerDisplay="$4, 3, 0, -2$"
 >}}
 
 ### 4.6 Solve Systems of Equations Using Determinants
 
 {{< fillin
-  question="Find the value of the determinant $\begin{vmatrix}3 & -2 & -2 \\ 2 & -1 & 4 \\ -1 & 0 & -3\end{vmatrix}$."
-  answer="7"
+  question="Evaluate the determinant $\begin{vmatrix}-2 & -3 & -4 \\ 5 & -6 & 7 \\ -1 & 2 & 0\end{vmatrix}$ by expanding by minors along the first row."
+  answer="33"
+  answerForm="decimal"
 >}}
 
 {{< fillin
-  question="Use Cramer's Rule to solve $x - 3y = -9$ and $2x + 5y = 4$. Write the solution as an ordered pair $(x,y)$."
-  answer="(-3,2)"
-  answerDisplay="$(-3,2)$"
+  question="Use Cramer's Rule to solve the system $2x + 5y = 4$, $3y - z = 3$, and $4x + 3z = -3$. Write the solution as an ordered triple $(x,y,z)$."
+  answer="(-3,2,3)"
+  answerForm="decimal"
+  answerDisplay="$(-3,2,3)$"
 >}}
 
 ### 4.7 Graphing Systems of Linear Inequalities
@@ -480,7 +506,7 @@ no
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Andi wants to spend no more than \$50 on Halloween treats. Candy bars cost \$1 each and lollipops cost \$0.50 each, and she wants at least three times as many lollipops as candy bars. Can she buy 20 candy bars and 40 lollipops?"
+  question="Andi wants to spend no more than \$50 on Halloween treats. She wants to buy candy bars that cost \$1 each and lollipops that cost \$0.50 each, and she wants the number of lollipops to be at least three times the number of candy bars. Can she buy 20 candy bars and 40 lollipops?"
   answer="no"
 >}}
 yes
@@ -501,14 +527,15 @@ trinomial
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the degree of $8y^4 - 3y^2 + 1$."
+  question="Find the degree of $8y^4 - 3y^2 + 1$. Enter the degree as a number."
   answer="4"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Subtract: $(10x^2 - 3x + 5) - (4x^2 - 6)$."
   answer="6x^2-3x+11"
-  answerForm="no-like-terms"
+  answerForm="distributed no-like-terms"
   answerDisplay="$6x^2 - 3x + 11$"
 >}}
 
@@ -545,14 +572,14 @@ trinomial
 {{< fillin
   question="Multiply: $(m + 3)(7m - 2)$."
   answer="7m^2+19m-6"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$7m^2 + 19m - 6$"
 >}}
 
 {{< fillin
   question="Multiply: $(4x - 3)^2$."
   answer="16x^2-24x+9"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$16x^2 - 24x + 9$"
 >}}
 
@@ -561,7 +588,7 @@ trinomial
 {{< fillin
   question="Divide: $(15xy^3 - 35x^2y) \div 5xy$."
   answer="3y^2-7x"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$3y^2 - 7x$"
 >}}
 
@@ -580,14 +607,14 @@ yes
 {{< fillin
   question="Factor completely: $80a^2 + 120a^3$."
   answer="40a^2(2+3a)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$40a^2(2 + 3a)$"
 >}}
 
 {{< fillin
   question="Factor by grouping: $xy - 8y + 7x - 56$."
   answer="(x-8)(y+7)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x - 8)(y + 7)$"
 >}}
 
@@ -596,7 +623,7 @@ yes
 {{< fillin
   question="Factor completely: $x^2 + 13x + 36$."
   answer="(x+4)(x+9)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(x + 4)(x + 9)$"
 >}}
 
@@ -605,22 +632,22 @@ yes
 {{< fillin
   question="Factor completely: $9s^2 - 12s + 4$."
   answer="(3s-2)^2"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3s - 2)^2$"
 >}}
 
 {{< fillin
   question="Factor completely: $3x^2 - 75y^2$."
   answer="3(x+5y)(x-5y)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$3(x + 5y)(x - 5y)$"
 >}}
 
 {{< fillin
-  question="Factor completely: $x^3 + 125$."
-  answer="(x+5)(x^2-5x+25)"
-  answerForm="factored"
-  answerDisplay="$(x + 5)(x^2 - 5x + 25)$"
+  question="Factor completely: $2m^3 + 54$."
+  answer="2(m+3)(m^2-3m+9)"
+  answerForm="factored-completely"
+  answerDisplay="$2(m + 3)(m^2 - 3m + 9)$"
 >}}
 
 ### 6.4 General Strategy for Factoring Polynomials
@@ -628,34 +655,32 @@ yes
 {{< fillin
   question="Factor completely: $6x^4 - 19x^2 + 15$."
   answer="(3x^2-5)(2x^2-3)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(3x^2 - 5)(2x^2 - 3)$"
 >}}
 
 ### 6.5 Polynomial Equations
 
 {{< fillin
-  question="Solve $5a^2 + 26a = 24$. Enter the smaller solution."
-  answer="-6"
-  answerDisplay="$a = -6$"
+  question="Solve $5a^2 + 26a = 24$. Enter both solutions, separated by a comma."
+  answer="-6,\frac{4}{5}"
+  answerMode="unordered"
+  answerForm="lowest-terms"
+  answerDisplay="$a = -6$ or $a = \tfrac{4}{5}$"
 >}}
 
 {{< fillin
-  question="Solve $5a^2 + 26a = 24$. Enter the larger solution."
-  answer="4/5"
-  answerDisplay="$a = \tfrac{4}{5}$"
->}}
-
-{{< fillin
-  question="A rectangular placemat has an area of 168 square inches. Its length is two inches longer than its width. Find the width."
+  question="A rectangular placemat has an area of 168 square inches. Its length is two inches longer than its width. Find the width, in inches."
   answer="12"
+  answerForm="decimal"
   answerDisplay="12 inches"
 >}}
 
 {{< fillin
-  question="A rectangular placemat has an area of 168 square inches. Its length is two inches longer than its width. Find the length."
+  question="A rectangular placemat has an area of 168 square inches. Its length is two inches longer than its width. Find the length, in inches."
   answer="14"
+  answerForm="decimal"
   answerDisplay="14 inches"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/1-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, rephrased word-answer and interval questions as value, ordered-pair, interval, and multiple-choice questions, kept the graphing questions as graphing questions the reader draws on an interactive grid, asked the two “which graph” questions with rendered graphs rather than prose descriptions, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/1-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test, with some questions drawn from the Review Exercises (including wherever a Practice Test question repeated one on the section page or gave away another question's answer), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, asked the augmented-matrix question for its first row, rephrased word-answer and interval questions as value, ordered-pair, interval, and multiple-choice questions, kept the graphing questions as graphing questions the reader draws on an interactive grid, asked the two “which graph” questions with rendered graphs rather than prose descriptions, and took all answers from the book's Answer Key except one: the Answer Key gives Sara “at most \$55.56” per costume, but $18 \times \$55.56 = \$1{,}000.08$ is over her \$1,000 budget, so this page asks for the most she can spend without going over and keys \$55.55.</small>

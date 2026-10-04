@@ -9,6 +9,7 @@ section.
 
 Prealgebra 2e re-reviewed to the A&P standard, completed September 27, 2026.
 Elementary Algebra 2e re-reviewed to the A&P standard, completed September 28, 2026.
+Intermediate Algebra 2e re-reviewed to the A&P standard, completed October 4, 2026.
 
 ## 2. Writing patterns
 
@@ -810,6 +811,12 @@ Each explains a lint error or a grader behavior an author will still meet:
   `\frac{x^2+5x+6}{x+3}`, so "find an equation represented by this graph with
   a hole" and "construct a function with removable discontinuities at…" are
   posed as multiple choice among candidate quotients.
+- **A "most you can spend" key rounds down.** An at-most budget, ration, or
+  capacity answer is the largest value that still satisfies the constraint,
+  not the nearest one: Sara's \$1,000 for 18 costumes is \$55.55, because
+  $18 \times 55.56$ is over budget (the source prints \$55.56, erratum 1646;
+  the blind solve caught it). Say "without going over" in the stem, never
+  "to the nearest cent", which asks for the round-half-up value.
 
 The corpus-wide replay audit (`npm run verify:replay` and its manual bare-RHS
 companion) is documented in `docs/history/math.md`.

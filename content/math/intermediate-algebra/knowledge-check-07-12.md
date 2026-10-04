@@ -32,7 +32,7 @@ weight: 14
 {{< fillin
   question="Perform the indicated operation and simplify: $\tfrac{4x}{x+2} \cdot \tfrac{x^2+5x+6}{12x^2}$."
   answer="\frac{x+3}{3x}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{x+3}{3x}$"
 >}}
 
@@ -43,24 +43,24 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 {{< fillin
   question="Find $R(x)$ given $R(x)=f(x)\cdot g(x)$."
   answer="\frac{1}{(x+2)^2}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$R(x)=\tfrac{1}{(x+2)^2}$"
 >}}
 
 ### 7.2 Add and Subtract Rational Expressions
 
 {{< fillin
-  question="Perform the indicated operation and simplify: $\tfrac{6x^2-x+20}{x^2-81}-\tfrac{5x^2+11x-7}{x^2-81}$."
-  answer="\frac{x-3}{x+9}"
-  answerForm="reduced-fraction"
-  answerDisplay="$\tfrac{x-3}{x+9}$"
+  question="Perform the indicated operations and simplify: $\tfrac{4q^2-q+3}{q^2+6q+5}-\tfrac{3q^2+q+6}{q^2+6q+5}$."
+  answer="\frac{q-3}{q+5}"
+  answerForm="single-fraction reduced-fraction"
+  answerDisplay="$\tfrac{q-3}{q+5}$"
 >}}
 
 {{< fillin
-  question="Perform the indicated operation and simplify: $\tfrac{2n^2+8n-1}{n^2-1}-\tfrac{n^2-7n-1}{1-n^2}$."
-  answer="\frac{3n-2}{n-1}"
-  answerForm="reduced-fraction"
-  answerDisplay="$\tfrac{3n-2}{n-1}$"
+  question="Perform the indicated operations and simplify: $\tfrac{2b^2+3b-15}{b^2-49}-\tfrac{b^2+16b-1}{49-b^2}$."
+  answer="\frac{3b^2+19b-16}{b^2-49}"
+  answerForm="single-fraction reduced-fraction"
+  answerDisplay="$\tfrac{3b^2+19b-16}{b^2-49}$"
 >}}
 
 ### 7.3 Simplify Complex Rational Expressions
@@ -68,7 +68,7 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 {{< fillin
   question="Perform the indicated operation and simplify: $\tfrac{\tfrac{1}{m}-\tfrac{1}{n}}{\tfrac{1}{n}+\tfrac{1}{m}}$."
   answer="\frac{n-m}{m+n}"
-  answerForm="reduced-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$\tfrac{n-m}{m+n}$"
 >}}
 
@@ -76,7 +76,8 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 
 {{< fillin
   question="Solve the equation: $\tfrac{1}{z-5}+\tfrac{1}{z+5}=\tfrac{1}{z^2-25}$."
-  answer="1/2"
+  answer="\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$z=\tfrac{1}{2}$"
 >}}
 
@@ -84,19 +85,22 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 
 {{< fillin
   question="If $y$ varies inversely with the square of $x$ and $x=3$ when $y=9$, find $y$ when $x=4$."
-  answer="81/16"
+  answer="\frac{81}{16}"
+  answerForm="lowest-terms"
   answerDisplay="$y=\tfrac{81}{16}$"
 >}}
 
 {{< fillin
-  question="Oliver can split a truckload of logs in 8 hours, but working with his dad they can get it done in 3 hours. How long would it take Oliver’s dad working alone to split the logs?"
-  answer="24/5"
+  question="Oliver can split a truckload of logs in 8 hours, but working with his dad they can get it done in 3 hours. How long would it take Oliver’s dad working alone to split the logs? Enter the time in hours."
+  answer="\frac{24}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$4\tfrac{4}{5}$ hours"
 >}}
 
 {{< fillin
-  question="The cities of Dayton, Columbus, and Cincinnati form a triangle in southern Ohio. The map distances are 2.4 inches from Dayton to Cincinnati, 3.2 inches from Dayton to Columbus, and 5.3 inches from Cincinnati to Columbus. The actual distance from Dayton to Cincinnati is 48 miles. What is the actual distance between Dayton and Columbus?"
+  question="The cities of Dayton, Columbus, and Cincinnati form a triangle in southern Ohio. The map distances are 2.4 inches from Dayton to Cincinnati, 3.2 inches from Dayton to Columbus, and 5.3 inches from Cincinnati to Columbus. The actual distance from Dayton to Cincinnati is 48 miles. What is the actual distance between Dayton and Columbus? Enter the distance in miles."
   answer="64"
+  answerForm="decimal"
   answerDisplay="64 miles"
 >}}
 
@@ -171,7 +175,7 @@ Assume all variables are positive.
 {{< fillin
   question="Simplify: $\tfrac{x^{-\tfrac{1}{4}}\cdot x^{\tfrac{5}{4}}}{x^{-\tfrac{3}{4}}}$."
   answer="x^{7/4}"
-  answerForm="single-term"
+  answerForm="single-term rational-exponent"
   answerDisplay="$x^{\tfrac{7}{4}}$"
 >}}
 
@@ -194,7 +198,7 @@ Assume all variables are positive.
 {{< fillin
   question="Simplify: $(4-3\sqrt{3})(5+2\sqrt{3})$."
   answer="2-7\sqrt{3}"
-  answerForm="expanded"
+  answerForm="expanded simplified-radical no-like-terms"
 >}}
 
 ### 8.5 Divide Radical Expressions
@@ -228,39 +232,38 @@ $\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$
 {{< fillin
   question="Solve: $\sqrt{x+5}+1=x$."
   answer="4"
+  answerForm="decimal"
   answerDisplay="$x=4$"
 >}}
 
 ### 8.7 Use Radicals in Functions
 
-For the next three questions, use $g(x)=\sqrt{x+2}$.
-
 {{< multiplechoice
-  question="Find the domain of the function."
-  answer="$[-2,\infty)$"
+  question="Find the domain of the function $F(x)=\sqrt[4]{10-7x}$ and write the domain in interval notation."
+  answer="$\left(-\infty,\tfrac{10}{7}\right]$"
 >}}
-$[-2,\infty)$
-$[0,\infty)$
-$(-\infty,\infty)$
-$(-2,\infty)$
+$\left[\tfrac{10}{7},\infty\right)$
+$\left(-\infty,\tfrac{10}{7}\right]$
+$\left(-\infty,\tfrac{10}{7}\right)$
+$\left(-\infty,\tfrac{7}{10}\right]$
 {{< /multiplechoice >}}
 
 {{< graphplot
-  question="Graph the function by plotting the points at $x = -2$, $x = -1$, and $x = 2$."
-  answerDisplay="$(-2, 0)$, $(-1, 1)$, and $(2, 2)$"
-  ariaLabel="A blank grid from −4 to 8 on the x-axis and −4 to 4 on the y-axis."
+  question="Graph $g(x)=2\sqrt{x}$ by plotting the points at $x = 0$, $x = 1$, and $x = 4$."
+  answerDisplay="$(0, 0)$, $(1, 2)$, and $(4, 4)$"
+  ariaLabel="A blank grid from −2 to 10 on the x-axis and −2 to 8 on the y-axis."
 >}}
-{"answer":{"points":[[-2,0],[-1,1],[2,2]]},"grid":{"xMin":-4,"xMax":8,"yMin":-4,"yMax":4}}
+{"answer":{"points":[[0,0],[1,2],[4,4]]},"grid":{"xMin":-2,"xMax":10,"yMin":-2,"yMax":8}}
 {{< /graphplot >}}
 
 {{< multiplechoice
-  question="Find the range of the function."
+  question="Find the range of $g(x)=2\sqrt{x}$."
   answer="$[0,\infty)$"
 >}}
-$[-2,\infty)$
 $(0,\infty)$
-$(-\infty,\infty)$
+$[2,\infty)$
 $[0,\infty)$
+$(-\infty,\infty)$
 {{< /multiplechoice >}}
 
 ### 8.8 Use the Complex Number System
@@ -268,7 +271,7 @@ $[0,\infty)$
 {{< fillin
   question="Multiply: $-4i(-2-3i)$."
   answer="-12+8i"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
 >}}
 
 {{< fillin
@@ -282,48 +285,37 @@ $[0,\infty)$
 ### 9.1 Solve Quadratic Equations Using the Square Root Property
 
 {{< fillin
-  question="Use the Square Root Property to solve $3(w+5)^2=27$. Enter the smaller solution."
-  answer="-8"
-  answerDisplay="$w=-8$"
->}}
-
-{{< fillin
-  question="Use the Square Root Property to solve $3(w+5)^2=27$. Enter the larger solution."
-  answer="-2"
-  answerDisplay="$w=-2$"
+  question="Use the Square Root Property to solve $3(w+5)^2=27$. Enter both solutions, separated by a comma."
+  answer="-8,-2"
+  answerMode="unordered"
+  answerForm="decimal"
+  answerDisplay="$w=-8$ or $w=-2$"
 >}}
 
 ### 9.2 Solve Quadratic Equations by Completing the Square
 
 {{< fillin
-  question="Solve by completing the square: $d^2+14d=-13$. Enter the smaller solution."
-  answer="-13"
-  answerDisplay="$d=-13$"
->}}
-
-{{< fillin
-  question="Solve by completing the square: $d^2+14d=-13$. Enter the larger solution."
-  answer="-1"
-  answerDisplay="$d=-1$"
+  question="Solve by completing the square: $d^2+14d=-13$. Enter both solutions, separated by a comma."
+  answer="-13,-1"
+  answerMode="unordered"
+  answerForm="decimal"
+  answerDisplay="$d=-13$ or $d=-1$"
 >}}
 
 ### 9.3 Solve Quadratic Equations Using the Quadratic Formula
 
 {{< fillin
-  question="Use the Quadratic Formula to solve $2m^2-5m+3=0$. Enter the smaller solution."
-  answer="1"
-  answerDisplay="$m=1$"
+  question="Use the Quadratic Formula to solve $2m^2-5m+3=0$. Enter both solutions, separated by a comma."
+  answer="1,\frac{3}{2}"
+  answerMode="unordered"
+  answerForm="lowest-terms"
+  answerDisplay="$m=1$ or $m=\tfrac{3}{2}$"
 >}}
 
 {{< fillin
-  question="Use the Quadratic Formula to solve $2m^2-5m+3=0$. Enter the larger solution."
-  answer="3/2"
-  answerDisplay="$m=\tfrac{3}{2}$"
->}}
-
-{{< fillin
-  question="Solve the quadratic equation using any method: $\tfrac{9}{4}y^2-3y+1=0$."
-  answer="2/3"
+  question="Solve the quadratic equation using any method: $\tfrac{9}{4}y^2-3y+1=0$. If there is more than one solution, separate them with commas."
+  answer="\frac{2}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$y=\tfrac{2}{3}$"
 >}}
 
@@ -339,15 +331,11 @@ $[0,\infty)$
 ### 9.4 Solve Equations in Quadratic Form
 
 {{< fillin
-  question="Solve $y^{\tfrac{2}{3}}+2y^{\tfrac{1}{3}}-3=0$. Enter the smaller solution."
-  answer="-27"
-  answerDisplay="$y=-27$"
->}}
-
-{{< fillin
-  question="Solve $y^{\tfrac{2}{3}}+2y^{\tfrac{1}{3}}-3=0$. Enter the larger solution."
-  answer="1"
-  answerDisplay="$y=1$"
+  question="Solve $y^{\tfrac{2}{3}}+2y^{\tfrac{1}{3}}-3=0$. Enter both solutions, separated by a comma."
+  answer="-27,1"
+  answerMode="unordered"
+  answerForm="decimal"
+  answerDisplay="$y=-27$ or $y=1$"
 >}}
 
 ### 9.5 Solve Applications of Quadratic Equations
@@ -355,51 +343,54 @@ $[0,\infty)$
 {{< fillin
   question="The length of a diagonal of a rectangle is three more than the width. The length of the rectangle is three times the width. Find the length of the diagonal. Round to the nearest tenth."
   answer="4.4"
+  answerForm="decimal"
   answerDisplay="4.4 units"
 >}}
 
 ### 9.6 Graph Quadratic Functions Using Properties
 
-For the next six questions, use $y=-x^2-8x-16$.
-
 {{< fillin
-  question="Find the equation of the axis of symmetry."
+  question="For the parabola $y=-x^2-8x-16$, find the equation of the axis of symmetry."
   answer="x=-4"
+  answerForm="decimal"
   answerDisplay="$x=-4$"
 >}}
 
 {{< fillin
-  question="Find the vertex."
+  question="For the parabola $y=-x^2-8x-16$, find the vertex. Enter it as an ordered pair."
   answer="(-4,0)"
+  answerForm="decimal"
   answerDisplay="$(-4,0)$"
 >}}
 
 {{< fillin
-  question="Find the $y$-intercept."
+  question="For the parabola $y=-x^2-8x-16$, find the $y$-intercept. Enter it as an ordered pair."
   answer="(0,-16)"
+  answerForm="decimal"
   answerDisplay="$(0,-16)$"
 >}}
 
 {{< fillin
-  question="Find the $x$-intercept."
+  question="For the parabola $y=-x^2-8x-16$, find the $x$-intercepts as ordered pairs. If there is more than one, separate them with commas."
   answer="(-4,0)"
+  answerForm="decimal"
   answerDisplay="$(-4,0)$"
 >}}
 
 {{< fillin
-  question="Find the maximum value."
+  question="For the parabola $y=-x^2-8x-16$, find the maximum or minimum value."
   answer="0"
+  answerForm="decimal"
+  answerDisplay="The maximum value is $0$."
 >}}
 
-{{< multiplechoice
-  question="Which graph shows the parabola?"
-  mode="graph"
-  answerIndex="0"
+{{< graphplot
+  question="Graph $y=-x^2-8x-16$ using its properties."
+  answerDisplay="$y=-x^2-8x-16$"
+  ariaLabel="A blank grid from −9 to 2 on the x-axis and −18 to 2 on the y-axis."
 >}}
-{"ariaLabel":"A parabola opening downward with its highest point at (−4, 0), crossing the y-axis at (0, −16).","xMin":-8,"xMax":0,"yMin":-18,"yMax":18,"tickLabels":true,"xTickStep":2,"yTickStep":6,"quadratics":[{"a":-1,"b":-8,"c":-16}]}
-===OPT===
-{"ariaLabel":"A parabola opening upward with its lowest point at (−4, 0), crossing the y-axis at (0, 16).","xMin":-8,"xMax":0,"yMin":-18,"yMax":18,"tickLabels":true,"xTickStep":2,"yTickStep":6,"quadratics":[{"a":1,"b":8,"c":16}]}
-{{< /multiplechoice >}}
+{"answer":{"quadratic":{"a":-1,"b":-8,"c":-16},"plotPoints":3},"grid":{"xMin":-9,"xMax":2,"yMin":-18,"yMax":2}}
+{{< /graphplot >}}
 
 {{< graphplot
   question="Graph $f(x)=-2x^2+8x+4$ using intercepts, the vertex, and the equation of the axis of symmetry."
@@ -421,38 +412,33 @@ For the next six questions, use $y=-x^2-8x-16$.
 
 ### 9.8 Solve Quadratic Inequalities
 
-{{< multiplechoice
-  question="Solve $2x^2+x-10>0$ algebraically and write the solution in interval notation."
-  answer="$(-\infty,-\tfrac{5}{2})\cup(2,\infty)$"
+{{< fillin
+  question="Solve $2x^2+x-10>0$ algebraically. Write the solution in interval notation."
+  answer="(-\infty,-\frac{5}{2})\cup(2,\infty)"
+  answerForm="lowest-terms"
+  answerDisplay="$(-\infty,-\tfrac{5}{2})\cup(2,\infty)$"
 >}}
-$[-\tfrac{5}{2},2]$
-$(-\infty,-\tfrac{5}{2})\cup(2,\infty)$
-$(-\infty,-2)\cup(\tfrac{5}{2},\infty)$
-$(-\tfrac{5}{2},2)$
-{{< /multiplechoice >}}
 
 ## Chapter 10: Exponential and Logarithmic Functions
 
 ### 10.1 Finding Composite and Inverse Functions
 
-For the next three questions, use $f(x)=6x+1$ and $g(x)=8x-3$.
-
 {{< fillin
-  question="Find $(f\circ g)(x)$."
+  question="For the functions $f(x)=6x+1$ and $g(x)=8x-3$, find $(f\circ g)(x)$."
   answer="48x-17"
-  answerForm="distributed no-like-terms"
+  answerForm="expanded distributed no-like-terms"
 >}}
 
 {{< fillin
-  question="Find $(g\circ f)(x)$."
+  question="For the functions $f(x)=6x+1$ and $g(x)=8x-3$, find $(g\circ f)(x)$."
   answer="48x+5"
-  answerForm="distributed no-like-terms"
+  answerForm="expanded distributed no-like-terms"
 >}}
 
 {{< fillin
-  question="Find $(f\cdot g)(x)$."
+  question="For the functions $f(x)=6x+1$ and $g(x)=8x-3$, find $(f\cdot g)(x)$."
   answer="48x^2-10x-3"
-  answerForm="distributed no-like-terms"
+  answerForm="expanded distributed no-like-terms"
 >}}
 
 {{< apfigure kind="graph" >}}
@@ -469,7 +455,7 @@ a function, but not one-to-one
 {{< /multiplechoice >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An increasing exponential curve through (−1, one half), (0, 1), and (1, 2), approaching a dashed horizontal asymptote at y = 0 on the left.","xMin":-5,"xMax":4,"yMin":-2,"yMax":8,"tickLabels":true,"curves":[{"kind":"exp","b":2}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[-1,0.5]},{"at":[0,1]},{"at":[1,2]}]}
+{"ariaLabel":"An increasing exponential curve through (−1, one half), (0, 1), and (1, 2), rising steeply on the right and leveling off just above the x-axis on the left.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"unit":40,"tickLabels":true,"curves":[{"kind":"exp","b":2,"from":-2.6}],"points":[{"at":[-1,0.5]},{"at":[0,1]},{"at":[1,2]}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
@@ -492,27 +478,28 @@ a function, but not one-to-one
 {{< fillin
   question="Solve the equation $2^{2x-4}=64$."
   answer="5"
+  answerForm="decimal"
   answerDisplay="$x=5$"
 >}}
 
-Megan invested \$21,000 in a savings account. If the interest rate is 5%,
-how much will be in the account in 8 years by each method of compounding?
-
 {{< fillin
-  question="Find the amount when interest is compounded quarterly."
+  question="Megan invested \$21,000 in a savings account. If the interest rate is $5\%,$ how much will be in the account in 8 years if the interest is compounded quarterly? Enter the amount in dollars, without a dollar sign, rounded to the nearest cent."
   answer="31250.74"
+  answerForm="decimal"
   answerDisplay="\$31,250.74"
 >}}
 
 {{< fillin
-  question="Find the amount when interest is compounded monthly."
+  question="Megan invested \$21,000 in a savings account. If the interest rate is $5\%,$ how much will be in the account in 8 years if the interest is compounded monthly? Enter the amount in dollars, without a dollar sign, rounded to the nearest cent."
   answer="31302.29"
+  answerForm="decimal"
   answerDisplay="\$31,302.29"
 >}}
 
 {{< fillin
-  question="Find the amount when interest is compounded continuously."
+  question="Megan invested \$21,000 in a savings account. If the interest rate is $5\%,$ how much will be in the account in 8 years if the interest is compounded continuously? Enter the amount in dollars, without a dollar sign, rounded to the nearest cent."
   answer="31328.32"
+  answerForm="decimal"
   answerDisplay="\$31,328.32"
 >}}
 
@@ -536,18 +523,19 @@ how much will be in the account in 8 years by each method of compounding?
   mode="graph"
   answerIndex="2"
 >}}
-{"ariaLabel":"An increasing exponential curve through (0, 1), approaching a dashed horizontal asymptote at y = 0 on the left.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"exp","b":3}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[0,1]}]}
+{"ariaLabel":"An increasing curve through (0, 1), rising steeply to the right and staying just above the x-axis on the left.","xMin":-1,"xMax":5,"yMin":-4,"yMax":4,"unit":36,"tickLabels":true,"curves":[{"kind":"exp","b":3,"from":-1}],"points":[{"at":[0,1]}]}
 ===OPT===
-{"ariaLabel":"A curve with a dashed vertical asymptote at x = 0, passing through (1, 0) and falling to the right.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":3,"a":-1}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0]}]}
+{"ariaLabel":"A curve through (1, 0) that falls from left to right, dropping steeply just to the right of the y-axis and leveling off on the right.","xMin":-1,"xMax":5,"yMin":-4,"yMax":4,"unit":36,"tickLabels":true,"curves":[{"kind":"log","b":3,"a":-1,"from":0.165}],"points":[{"at":[1,0]}]}
 ===OPT===
-{"ariaLabel":"A curve with a dashed vertical asymptote at x = 0, passing through (1, 0) and rising to the right.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":3}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0]}]}
+{"ariaLabel":"A curve through (1, 0) that rises from left to right, climbing steeply just to the right of the y-axis and leveling off on the right.","xMin":-1,"xMax":5,"yMin":-4,"yMax":4,"unit":36,"tickLabels":true,"curves":[{"kind":"log","b":3,"from":0.165}],"points":[{"at":[1,0]}]}
 ===OPT===
-{"ariaLabel":"A straight line through (1, 0) and (0, −1), rising from lower left to upper right.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"lines":[{"slope":1,"intercept":-1}],"points":[{"at":[1,0]}]}
+{"ariaLabel":"A straight line through (1, 0) and (0, −1), rising from lower left to upper right.","xMin":-1,"xMax":5,"yMin":-4,"yMax":4,"unit":36,"tickLabels":true,"lines":[{"slope":1,"intercept":-1}],"points":[{"at":[1,0]}]}
 {{< /multiplechoice >}}
 
 {{< fillin
   question="What is the decibel level of a small fan with intensity $10^{-8}$ watts per square meter?"
   answer="40"
+  answerForm="decimal"
   answerDisplay="40 dB"
 >}}
 
@@ -578,6 +566,7 @@ how much will be in the account in 8 years by each method of compounding?
 {{< fillin
   question="Solve for $x$: $\log_7(x+2)+\log_7(x-3)=\log_7 24$."
   answer="6"
+  answerForm="decimal"
   answerDisplay="$x=6$"
 >}}
 
@@ -591,12 +580,14 @@ how much will be in the account in 8 years by each method of compounding?
 {{< fillin
   question="Solve $5e^{x-4}=40$. Approximate the answer to three decimal places."
   answer="6.079"
+  answerForm="decimal"
   answerDisplay="$x\approx6.079$"
 >}}
 
 {{< fillin
-  question="Researchers recorded that a certain bacteria population grew from 500 to 700 in 5 hours. At this rate of growth, how many bacteria will there be in 20 hours?"
+  question="Researchers recorded that a certain bacteria population grew from 500 to 700 in 5 hours. At this rate of growth, how many bacteria will there be in 20 hours? Round to the nearest whole number."
   answer="1921"
+  answerForm="decimal"
   answerDisplay="1,921 bacteria"
 >}}
 
@@ -604,16 +595,16 @@ how much will be in the account in 8 years by each method of compounding?
 
 ### 11.1 Distance and Midpoint Formulas; Circles
 
-For the next two questions, use the endpoints $(-4,-3)$ and $(-10,-11)$.
-
 {{< fillin
-  question="Find the distance between the points. Round to the nearest tenth as needed."
+  question="Find the distance between the points $(-4,-3)$ and $(-10,-11)$. Round to the nearest tenth as needed."
   answer="10"
+  answerForm="decimal"
 >}}
 
 {{< fillin
-  question="Find the midpoint of the line segment."
+  question="Find the midpoint of the line segment with endpoints $(-4,-3)$ and $(-10,-11)$."
   answer="(-7,-7)"
+  answerForm="decimal"
   answerDisplay="$(-7,-7)$"
 >}}
 
@@ -632,7 +623,7 @@ For the next two questions, use the endpoints $(-4,-3)$ and $(-10,-11)$.
 >}}
 
 {{< multiplechoice
-  question="Identify the type of graph of $3x^2+3y^2=27$."
+  question="Identify the type of graph of $3x^2+3y^2=432$."
   answer="circle"
 >}}
 ellipse
@@ -642,17 +633,17 @@ hyperbola
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which graph shows $3x^2+3y^2=27$?"
+  question="Which graph shows $3x^2+3y^2=432$?"
   mode="graph"
   answerIndex="2"
 >}}
-{"ariaLabel":"A circle centered at the origin with radius 9.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"r":9}]}
+{"ariaLabel":"A circle centered at the origin with radius about 20.8.","xMin":-24,"xMax":24,"yMin":-24,"yMax":24,"unit":6,"gridStep":6,"tickLabels":true,"tickStep":6,"circles":[{"at":[0,0],"r":20.785}]}
 ===OPT===
-{"ariaLabel":"A parabola opening upward with its vertex at the origin.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"quadratics":[{"a":1}]}
+{"ariaLabel":"A parabola opening upward with its vertex at the origin.","xMin":-24,"xMax":24,"yMin":-24,"yMax":24,"unit":6,"gridStep":6,"tickLabels":true,"tickStep":6,"quadratics":[{"a":0.25}]}
 ===OPT===
-{"ariaLabel":"A circle centered at the origin with radius 3.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"r":3}]}
+{"ariaLabel":"A circle centered at the origin with radius 12.","xMin":-24,"xMax":24,"yMin":-24,"yMax":24,"unit":6,"gridStep":6,"tickLabels":true,"tickStep":6,"circles":[{"at":[0,0],"r":12}]}
 ===OPT===
-{"ariaLabel":"An ellipse centered at the origin with vertices at (0, −3) and (0, 3) and co-vertices at (−1, 0) and (1, 0).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":1,"ry":3}]}
+{"ariaLabel":"An ellipse centered at the origin with vertices at (0, −12) and (0, 12) and co-vertices at (−4, 0) and (4, 0).","xMin":-24,"xMax":24,"yMin":-24,"yMax":24,"unit":6,"gridStep":6,"tickLabels":true,"tickStep":6,"circles":[{"at":[0,0],"rx":4,"ry":12}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -720,13 +711,13 @@ hyperbola
   mode="graph"
   answerIndex="1"
 >}}
-{"ariaLabel":"A circle centered at the origin with radius 7.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"r":7}]}
+{"ariaLabel":"A circle centered at the origin with radius 7.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"r":7}]}
 ===OPT===
-{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−7, 0) and (7, 0) and co-vertices at (0, −2) and (0, 2).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":7,"ry":2}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−7, 0) and (7, 0) and co-vertices at (0, −2) and (0, 2).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"rx":7,"ry":2}]}
 ===OPT===
-{"ariaLabel":"An ellipse centered at the origin with vertices at (−4, 0) and (4, 0) and co-vertices at (0, −49) and (0, 49).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":4,"ry":49}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−7, 0) and (7, 0) and co-vertices at (0, −4) and (0, 4).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"rx":7,"ry":4}]}
 ===OPT===
-{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −7) and (0, 7) and co-vertices at (−2, 0) and (2, 0).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":2,"ry":7}]}
+{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −7) and (0, 7) and co-vertices at (−2, 0) and (2, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"rx":2,"ry":7}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -744,17 +735,17 @@ hyperbola
   mode="graph"
   answerIndex="0"
 >}}
-{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −9) and (0, 9) and co-vertices at (−4, 0) and (4, 0).","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"rx":4,"ry":9}]}
+{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −9) and (0, 9) and co-vertices at (−4, 0) and (4, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"rx":4,"ry":9}]}
 ===OPT===
-{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −81) and (0, 81) and co-vertices at (−16, 0) and (16, 0).","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"rx":16,"ry":81}]}
+{"ariaLabel":"A circle centered at the origin with radius 4.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"r":4}]}
 ===OPT===
-{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−9, 0) and (9, 0) and co-vertices at (0, −4) and (0, 4).","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"rx":9,"ry":4}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−9, 0) and (9, 0) and co-vertices at (0, −4) and (0, 4).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"rx":9,"ry":4}]}
 ===OPT===
-{"ariaLabel":"A circle centered at the origin with radius 9.","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"r":9}]}
+{"ariaLabel":"A circle centered at the origin with radius 9.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"r":9}]}
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="A comet moves in an elliptical orbit around a sun. The closest the comet gets to the sun is approximately 20 AU and the furthest is approximately 70 AU. The sun is one of the foci of the elliptical orbit. Letting the ellipse center at the origin and labeling the axes in AU, use the graph with vertices $(-45,0)$ and $(45,0)$ and a focus $(25,0)$ to write an equation for the elliptical orbit of the comet."
+  question="A comet moves in an elliptical orbit around a sun. The closest the comet gets to the sun is approximately 20 AU and the furthest is approximately 70 AU. The sun is one of the foci of the elliptical orbit. Letting the ellipse center at the origin and labeling the axes in AU, the orbit has vertices $(-45,0)$ and $(45,0)$, and the sun is at the focus $(25,0)$. Write an equation for the elliptical orbit of the comet."
   answer="\frac{x^2}{2025}+\frac{y^2}{1400}=1"
   answerForm="conic-standard-form"
   answerDisplay="$\tfrac{x^2}{2025}+\tfrac{y^2}{1400}=1$"
@@ -829,15 +820,11 @@ two solutions
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Solve the nonlinear system $x^2+9y^2=9$ and $2x^2-9y^2=18$. Enter the solution with the negative $x$-coordinate."
-  answer="(-3,0)"
-  answerDisplay="$(-3,0)$"
->}}
-
-{{< fillin
-  question="Solve the nonlinear system $x^2+9y^2=9$ and $2x^2-9y^2=18$. Enter the solution with the positive $x$-coordinate."
-  answer="(3,0)"
-  answerDisplay="$(3,0)$"
+  question="Solve the nonlinear system of equations using elimination: $x^2+9y^2=9$ and $2x^2-9y^2=18$. Enter both ordered-pair solutions, separated by a comma."
+  answer="(-3,0),(3,0)"
+  answerMode="unordered"
+  answerForm="decimal"
+  answerDisplay="$(-3,0)$ and $(3,0)$"
 >}}
 
 ## Chapter 12: Sequences, Series and Binomial Theorem
@@ -845,13 +832,14 @@ two solutions
 ### 12.1 Sequences
 
 {{< fillin
-  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac{(n+2)!}{(n+3)!}$."
-  answer="(1/4,1/5,1/6,1/7,1/8)"
+  question="Write the first five terms of the sequence whose general term is $a_n=\tfrac{(n+2)!}{(n+3)!}$. Enter the terms in order, separated by commas."
+  answer="\frac{1}{4},\frac{1}{5},\frac{1}{6},\frac{1}{7},\frac{1}{8}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{4},\tfrac{1}{5},\tfrac{1}{6},\tfrac{1}{7},\tfrac{1}{8}$"
 >}}
 
 {{< fillin
-  question="Expand the partial sum and find its value: $\sum_{i=1}^{4}(-4)^i$."
+  question="Expand the partial sum and find its value: $\sum_{i=1}^{4}(-4)^i$. Enter the value."
   answer="204"
   answerForm="decimal"
   answerDisplay="$-4+16-64+256=204$"
@@ -860,27 +848,31 @@ two solutions
 ### 12.2 Arithmetic Sequences
 
 {{< fillin
-  question="Write the first five terms of the arithmetic sequence with first term $a_1=-13$ and common difference $d=3$."
-  answer="(-13,-10,-7,-4,-1)"
+  question="Write the first five terms of the arithmetic sequence with first term $a_1=-13$ and common difference $d=3$. Enter the terms in order, separated by commas."
+  answer="-13,-10,-7,-4,-1"
+  answerForm="decimal"
   answerDisplay="$-13,-10,-7,-4,-1$"
 >}}
 
 {{< fillin
-  question="Find the twenty-third term of an arithmetic sequence whose seventh term is 11 and common difference is 3."
+  question="Find the twenty-third term of an arithmetic sequence whose seventh term is $11$ and common difference is three."
   answer="59"
+  answerForm="decimal"
   answerDisplay="$a_{23}=59$"
 >}}
 
 {{< fillin
-  question="Find a formula for the general term of an arithmetic sequence whose seventh term is 11 and common difference is 3."
-  answer="a_n=3n-10"
+  question="Find a formula for the general term of an arithmetic sequence whose seventh term is $11$ and common difference is three."
+  answer="3n-10"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a_n=3n-10$"
 >}}
 
 {{< fillin
-  question="Find the sum of the first 25 terms of the arithmetic sequence $5,9,13,17,21,\ldots$."
-  answer="1325"
-  answerDisplay="1,325"
+  question="Find the sum of the first 30 terms of the arithmetic sequence $7,4,1,-2,-5,\ldots$."
+  answer="-1095"
+  answerForm="decimal"
+  answerDisplay="$-1{,}095$"
 >}}
 
 {{< fillin
@@ -892,68 +884,76 @@ two solutions
 
 ### 12.3 Geometric Sequences and Series
 
-For the next two questions, use the sequence
-$324,108,36,12,4,\tfrac{4}{3},\ldots$.
-
 {{< multiplechoice
-  question="Determine if the sequence is arithmetic, geometric, or neither."
-  answer="geometric"
+  question="Determine if the sequence $9,-18,36,-72,144,-288,\ldots$ is geometric, and if so, indicate the common ratio."
+  answer="geometric with common ratio $r=-2$"
 >}}
-neither
-arithmetic
-geometric
+geometric with common ratio $r=2$
+not geometric
+geometric with common ratio $r=-2$
+geometric with common ratio $r=-\tfrac{1}{2}$
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the common ratio."
-  answer="1/3"
+  question="Find the common ratio of the geometric sequence $324,108,36,12,4,\tfrac{4}{3},\ldots$. Enter it as a fraction."
+  answer="\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$r=\tfrac{1}{3}$"
 >}}
 
 {{< fillin
   question="In the geometric sequence whose first term and common ratio are $a_1=5$ and $r=4$, find $a_{11}$."
   answer="5242880"
+  answerForm="decimal"
   answerDisplay="5,242,880"
 >}}
 
 {{< fillin
   question="Find the sum of the first thirteen terms of the geometric sequence $2,-6,18,-54,162,-486,\ldots$."
   answer="797162"
+  answerForm="decimal"
   answerDisplay="797,162"
 >}}
 
 {{< fillin
-  question="Find the sum: $1-\tfrac{1}{5}+\tfrac{1}{25}-\tfrac{1}{125}+\tfrac{1}{625}-\tfrac{1}{3{,}125}+\cdots$."
-  answer="5/6"
+  question="Find the sum: $1-\tfrac{1}{5}+\tfrac{1}{25}-\tfrac{1}{125}+\tfrac{1}{625}-\tfrac{1}{3{,}125}+\cdots$. Give the exact answer as a fraction."
+  answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
 >}}
 
 {{< fillin
-  question="Dave just got his first full-time job after graduating from high school at age 18. He decided to invest \$450 per month in an IRA (an annuity). The interest on the annuity is 6% which is compounded monthly. How much will be in Dave’s account when he retires at his sixty-fifth birthday?"
+  question="Dave just got his first full-time job after graduating from high school at age 18. He decided to invest \$450 per month in an IRA (an annuity). The interest on the annuity is 6% which is compounded monthly. How much will be in Dave’s account when he retires at his sixty-fifth birthday? Enter the amount in dollars, rounded to the nearest cent, without a dollar sign."
   answer="1409344.19"
+  answerForm="decimal"
   answerDisplay="\$1,409,344.19"
 >}}
 
 ### 12.4 Binomial Theorem
 
 {{< fillin
+  question="Expand the binomial using Pascal's Triangle: $(2y-3)^5$."
+  answer="32y^5-240y^4+720y^3-1080y^2+810y-243"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$32y^5-240y^4+720y^3-1{,}080y^2+810y-243$"
+>}}
+
+{{< fillin
   question="Evaluate the binomial coefficient $\binom{8}{1}$."
   answer="8"
->}}
-
-{{< fillin
-  question="Evaluate the binomial coefficient $\binom{16}{16}$."
-  answer="1"
->}}
-
-{{< fillin
-  question="Evaluate the binomial coefficient $\binom{12}{0}$."
-  answer="1"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Evaluate the binomial coefficient $\binom{10}{6}$."
   answer="210"
+  answerForm="decimal"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions. Graphing questions are drawn on an interactive grid; the “which graph” questions offer rendered graphs rather than prose descriptions, and the two graphs the source prints beside its function/one-to-one question are recreated as accessible inline graphs. All answers come from the book's Answer Key. One correction: the source's §12.4 annuity question introduces Dave and then asks about “Adam’s” account, naming a person it never defines; this page writes “Dave’s”. The printed answer is unaffected.</small>
+{{< fillin
+  question="Find the coefficient of the $y^4$ term in the expansion of $(y+3)^6$."
+  answer="135"
+  answerForm="decimal"
+>}}
+
+<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question, or where a Practice Test question repeated one on the section page or gave away another question's answer), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions; one circle Review Exercise ($3x^2+3y^2=432$), which asks for the center and radius, is asked here for its type and its graph. Graphing questions are drawn on an interactive grid; the “which graph” questions offer rendered graphs rather than prose descriptions, and the two graphs the source prints beside its function/one-to-one question are recreated as accessible inline graphs. All answers come from the book's Answer Key. Two corrections: the §10.3 decibel question measures intensity in watts per square meter, where the source prints “watts per square inch”; and the Chapter 12 Practice Test annuity question introduces Dave and then asks about “Adam’s” account, naming a person it never defines; this page writes “Dave’s”. The printed answer is unaffected.</small>
