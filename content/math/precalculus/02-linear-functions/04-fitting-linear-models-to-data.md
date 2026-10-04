@@ -110,7 +110,7 @@ predict temperature when the values for chirps are less than 18.5 or greater
 than 44.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The cricket-chirp scatter plot and its line of best fit, with a dashed rectangle enclosing the data from 18.5 to 44 chirps and 52 to 80.5 degrees. The inside of the rectangle is labelled Interpolation and the region outside it is labelled Extrapolation.","xMin":0,"xMax":50,"yMin":0,"yMax":90,"xUnit":5.4,"yUnit":2.4,"xGridStep":10,"yGridStep":10,"tickLabels":true,"xTickStep":10,"yTickStep":10,"caption":"Cricket Chirps vs. Temperature","xLabel":"c, chirps","yLabel":"T(c), °F","points":[{"at":[44,80.5]},{"at":[35,70.5]},{"at":[20.4,57]},{"at":[33,66]},{"at":[31,68]},{"at":[35,72]},{"at":[18.5,52]},{"at":[37,73.5]},{"at":[26,53]}],"lines":[{"slope":1.2,"intercept":30,"arrows":false}],"polylines":[{"through":[[18.5,52],[44,52],[44,80.5],[18.5,80.5],[18.5,52]],"dashed":true}],"texts":[{"at":[9,70],"text":"Extrapolation","anchor":"middle"},{"at":[31,57],"text":"Interpolation","anchor":"middle"}]}
+{"ariaLabel":"The cricket-chirp scatter plot and its line of best fit, with a dashed rectangle enclosing the data from 18.5 to 44 chirps and 52 to 80.5 degrees. The inside of the rectangle is labelled Interpolation and the region outside it is labelled Extrapolation.","xMin":0,"xMax":50,"yMin":0,"yMax":90,"xUnit":5.4,"yUnit":2.4,"xGridStep":10,"yGridStep":10,"tickLabels":true,"xTickStep":10,"yTickStep":10,"caption":"Cricket Chirps vs. Temperature","xLabel":"c, chirps","yLabel":"T(c), °F","points":[{"at":[44,80.5]},{"at":[35,70.5]},{"at":[20.4,57]},{"at":[33,66]},{"at":[31,68]},{"at":[35,72]},{"at":[18.5,52]},{"at":[37,73.5]},{"at":[26,53]}],"lines":[{"slope":1.2,"intercept":30,"arrows":false}],"polylines":[{"through":[[18.5,52],[44,52],[44,80.5],[18.5,80.5],[18.5,52]],"dashed":true}],"texts":[{"at":[9,70],"text":"Extrapolation","anchor":"middle"},{"at":[36,57],"text":"Interpolation","anchor":"middle"}]}
 {{< /apfigure >}}
 
 *Interpolation occurs within the domain and range of the provided data
@@ -176,7 +176,7 @@ We can compare the regions of interpolation and extrapolation using the graph
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The cricket-chirp scatter plot and its line of best fit, with the same dashed interpolation rectangle. Two predictions are marked on the line with dashed crosshairs: (30, 66) inside the rectangle and (8.33, 40) outside it to the left.","xMin":0,"xMax":50,"yMin":0,"yMax":90,"xUnit":5.4,"yUnit":2.4,"xGridStep":10,"yGridStep":10,"tickLabels":true,"xTickStep":10,"yTickStep":10,"caption":"Cricket Chirps vs. Temperature","xLabel":"c, chirps","yLabel":"T(c), °F","points":[{"at":[44,80.5]},{"at":[35,70.5]},{"at":[20.4,57]},{"at":[33,66]},{"at":[31,68]},{"at":[35,72]},{"at":[18.5,52]},{"at":[37,73.5]},{"at":[26,53]},{"at":[30,66]},{"at":[8.33,40]}],"lines":[{"slope":1.2,"intercept":30,"arrows":false}],"polylines":[{"through":[[18.5,52],[44,52],[44,80.5],[18.5,80.5],[18.5,52]],"dashed":true}],"guides":[[30,66],[8.33,40]],"texts":[{"at":[20,74],"text":"Interpolation"},{"at":[11.5,30],"text":"Extrapolation"}]}
+{"ariaLabel":"The cricket-chirp scatter plot and its line of best fit, with the same dashed interpolation rectangle. Two predictions are marked on the line as open dots with dashed crosshairs: (30, 66) inside the rectangle and (8.33, 40) outside it to the left.","xMin":0,"xMax":50,"yMin":0,"yMax":90,"xUnit":5.4,"yUnit":2.4,"xGridStep":10,"yGridStep":10,"tickLabels":true,"xTickStep":10,"yTickStep":10,"caption":"Cricket Chirps vs. Temperature","xLabel":"c, chirps","yLabel":"T(c), °F","points":[{"at":[44,80.5]},{"at":[35,70.5]},{"at":[20.4,57]},{"at":[33,66]},{"at":[31,68]},{"at":[35,72]},{"at":[18.5,52]},{"at":[37,73.5]},{"at":[26,53]},{"at":[30,66],"open":true},{"at":[8.33,40],"open":true}],"lines":[{"slope":1.2,"intercept":30,"arrows":false}],"polylines":[{"through":[[18.5,52],[44,52],[44,80.5],[18.5,80.5],[18.5,52]],"dashed":true}],"guides":[[30,66],[8.33,40]],"texts":[{"at":[20,74],"text":"Interpolation"},{"at":[11.5,30],"text":"Extrapolation"}]}
 {{< /apfigure >}}
 
 *Analysis.* Our model predicts the crickets would chirp 8.33 times in 15
@@ -185,10 +185,11 @@ is valid outside the domain and range. In fact, generally crickets stop
 chirping altogether below around 50 degrees.
 
 {{< fillin
-  question="According to the cricket data in the table above, what temperature, in degrees Fahrenheit, can we predict it is if we counted 20 chirps in 15 seconds?"
+  question="According to the cricket data in the table above, what temperature, in degrees Fahrenheit, can we predict it is if we counted 20 chirps in 15 seconds? Use the eyeballed model $T(c)=1.2c+30$."
   answer="54"
+  answerForm="decimal"
   answerDisplay="$T(20)=1.2(20)+30=54$ degrees Fahrenheit"
-  hint="Substitute $c=20$ into the eyeballed model $T(c)=1.2c+30$."
+  hint="Substitute the number of chirps for $c$ in the model and simplify."
 >}}
 
 ## Finding the line of best fit using a graphing utility
@@ -286,7 +287,7 @@ axis shows the input and the vertical axis shows the output.
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of sixteen points spread over the grid with no rising or falling trend, labelled r = 0.0.","xMin":0,"xMax":10,"yMin":0,"yMax":10,"unit":13,"margin":18,"grid":false,"caption":"r = 0.0","points":[{"at":[1.5,6.3]},{"at":[2.4,3]},{"at":[3.3,6.8]},{"at":[4.3,4.2]},{"at":[5.2,7.4]},{"at":[6.1,2]},{"at":[7.1,5.8]},{"at":[8,3]},{"at":[8.9,6.8]},{"at":[1.9,2.6]},{"at":[3.8,5.8]},{"at":[5.7,7.8]},{"at":[7.5,3.6]},{"at":[2.9,6.8]},{"at":[4.7,2.6]},{"at":[6.6,5.4]}]}
+{"ariaLabel":"A scatter plot of sixteen points spread across the plot with no rising or falling trend, labelled r = 0.0.","xMin":0,"xMax":10,"yMin":0,"yMax":10,"unit":13,"margin":18,"grid":false,"caption":"r = 0.0","points":[{"at":[1.5,6.3]},{"at":[2.4,3]},{"at":[3.3,6.8]},{"at":[4.3,4.2]},{"at":[5.2,7.4]},{"at":[6.1,2]},{"at":[7.1,5.8]},{"at":[8,3]},{"at":[8.9,6.8]},{"at":[1.9,2.6]},{"at":[3.8,5.8]},{"at":[5.7,7.8]},{"at":[7.5,3.6]},{"at":[2.9,6.8]},{"at":[4.7,2.6]},{"at":[6.6,5.4]}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
@@ -306,7 +307,7 @@ unrelated — it means they are not *linearly* related. The points below lie on
 a perfectly definite curve, yet their correlation coefficient is exactly 0.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of seventeen points forming a symmetric arch that rises to a peak in the middle and falls again, labelled r = 0.0.","xMin":0,"xMax":10,"yMin":0,"yMax":10,"unit":13,"margin":18,"grid":false,"caption":"r = 0.0","points":[{"at":[1,3.52]},{"at":[1.5,4.87]},{"at":[2,5.13]},{"at":[2.5,6.65]},{"at":[3,6.68]},{"at":[3.5,7.62]},{"at":[4,7.42]},{"at":[4.5,8.28]},{"at":[5,8]},{"at":[5.5,8.28]},{"at":[6,7.42]},{"at":[6.5,7.62]},{"at":[7,6.68]},{"at":[7.5,6.65]},{"at":[8,5.13]},{"at":[8.5,4.87]},{"at":[9,3.52]}]}
+{"ariaLabel":"A scatter plot of nine points lying on a symmetric arch, a downward-opening parabola that rises to a peak in the middle and falls again, labelled r = 0.0.","xMin":0,"xMax":10,"yMin":0,"yMax":10,"unit":13,"margin":18,"grid":false,"caption":"r = 0.0","points":[{"at":[1,3.52]},{"at":[2,5.48]},{"at":[3,6.88]},{"at":[4,7.72]},{"at":[5,8]},{"at":[6,7.72]},{"at":[7,6.88]},{"at":[8,5.48]},{"at":[9,3.52]}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -379,8 +380,9 @@ The model predicts 144.244 billion gallons of gasoline consumption in 2008.
 {{< fillin
   question="Use the model $C(t)=113.318+2.209t$ created above to predict the gas consumption in 2011, in billions of gallons."
   answer="150.871"
+  answerForm="decimal"
   answerDisplay="$C(17)=113.318+2.209(17)=150.871$ billion gallons"
-  hint="2011 is 17 years after 1994, so evaluate the model at $t=17$."
+  hint="Count the years from 1994 to 2011 to find $t$, then evaluate the model at that $t$."
 >}}
 
 {{< multiplechoice
@@ -462,8 +464,9 @@ The table below gives paired $x$ and $y$ values.
 | **$y$** | 23 | 41 | 53 | 72 | 103 |
 
 {{< fillin
-  question="Using the table above, find the least-squares regression line for this data. Round the slope to three decimal places."
+  question="Using the table above, find the least-squares regression line for this data. Enter its slope, rounded to three decimal places."
   answer="1.640"
+  answerForm="decimal"
   answerDisplay="$y=1.640x+13.800$"
   hint="Enter the five ordered pairs into a linear regression calculator and read off the slope $a$ in $y=ax+b$."
 >}}
@@ -475,8 +478,9 @@ The table below gives another set of paired $x$ and $y$ values.
 | **$y$** | 70 | 80 | 82 | 84 | 105 | 108 |
 
 {{< fillin
-  question="Using the table above, find the least-squares regression line for this data. Round the $y$-intercept to three decimal places."
+  question="Using the table above, find the least-squares regression line for this data. Enter its $y$-intercept, rounded to three decimal places."
   answer="-38.841"
+  answerForm="decimal"
   answerDisplay="$y=0.121x-38.841$"
   hint="Enter the six ordered pairs into a linear regression calculator and read off the intercept $b$ in $y=ax+b$."
 >}}
@@ -492,6 +496,7 @@ thousands of dollars, for five recorded years.
 {{< fillin
   question="Using the table above, find the slope of the least-squares regression line for the profit $y$ as a function of units sold $x$."
   answer="20.25"
+  answerForm="lowest-terms"
   answerDisplay="$y=20.25x-671.50$"
   hint="Run a linear regression on the five ordered pairs and read off the slope $a$ in $y=ax+b$."
 >}}
@@ -505,6 +510,7 @@ thousands of dollars, for five recorded years.
 >}}
 It clusters more tightly around a line
 It becomes more scattered
+Its regression line becomes steeper
 {{< /multiplechoice >}}
 
 The U.S. import of wine, in hectoliters, for several years is given in the
@@ -517,7 +523,7 @@ table below.
 {{< multiplechoice
   question="Using the table above, does this import data appear to follow a linear trend?"
   answer="Linear"
-  hint="Check whether the correlation coefficient for this data, $r\approx0.985$, is close to $1$ or close to $0$."
+  hint="Run a linear regression on the table and see how close the correlation coefficient $r$ comes to $1$."
 >}}
 Nonlinear
 Linear
@@ -530,9 +536,9 @@ The table below gives paired $x$ and $y$ values.
 | **$y$** | 17 | 11 | 2 | -1 | -18 | -40 |
 
 {{< multiplechoice
-  question="The least-squares regression line for the table above has correlation coefficient $r=-0.998$. Does this data show a positive correlation or a negative correlation?"
+  question="Using the table above, does this data show a positive correlation or a negative correlation?"
   answer="Negative correlation"
-  hint="Look at the sign of $r$."
+  hint="As $x$ increases across the table, check whether $y$ tends to increase or decrease."
 >}}
 Positive correlation
 Negative correlation
@@ -543,8 +549,9 @@ Negative correlation
 {{< fillin
   question="A regression relating a tree's diameter $x$, in inches, to its age $y$, in years, gives $y=ax+b$ with $a=6.301$, $b=-1.044$, and $r=0.970$. Use this model to predict the age, in years, of a tree with diameter $10$ inches."
   answer="61.966"
+  answerForm="decimal"
   answerDisplay="$y=6.301(10)-1.044=61.966$ years"
-  hint="Substitute $x=10$ into $y=6.301x-1.044$."
+  hint="Build $y=ax+b$ from the given $a$ and $b$, then substitute the diameter for $x$."
 >}}
 
 The table below gives the temperature, in degrees Fahrenheit, and the time,
@@ -557,7 +564,7 @@ in seconds, for several trials.
 {{< multiplechoice
   question="Using the table above, if we wanted to predict the time when the temperature reaches $28$ degrees Fahrenheit, would that prediction be an interpolation or an extrapolation?"
   answer="Interpolation"
-  hint="Compare $28$ to the span of temperatures actually in the table, $16$ to $30$."
+  hint="Compare $28$ with the smallest and largest temperatures in the table."
 >}}
 Interpolation
 Extrapolation
@@ -566,10 +573,11 @@ Extrapolation
 {{< fillin
   question="For the linear function $f(x)=-2x-10$, what is $f(9)$?"
   answer="-28"
+  answerForm="decimal"
   answerDisplay="$f(9)=-2(9)-10=-28$"
-  hint="Substitute $x=9$ into $f(x)=-2x-10$."
+  hint="Replace $x$ with the input, multiply first, then subtract."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.4: Fitting Linear Models to Data](https://openstax.org/books/precalculus-2e/pages/2-4-fitting-linear-models-to-data) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every scatter plot and fitted line as an accessible inline SVG plotted from the source's own numbers — the cricket-chirp, interpolation, and gasoline figures use the exact table values together with the stated equations $T(c)=1.2c+30$, $T(c)=30.281+1.143c$, and $C(t)=113.318+2.209t$, each of which was recomputed from the data and matched to the source's three-decimal rounding; the opening "Final Exam Score vs. Age" scatter has no published data table, so its fourteen points were measured off the source figure; replaced the source's twenty-one-panel Wikimedia correlation composite (credit: "DenisBoigelot") with eight panels built from explicit point sets whose correlation coefficients were computed exactly, covering the same values $r=1.0,\ 0.8,\ 0.4,\ 0.0,\ -0.4,\ -0.8,\ -1.0$ plus one nonlinear arch with $r=0$, and added the one sentence needed to introduce that arch; drew the interpolation region as a dashed rectangle and marked the two predictions with dashed crosshairs, because the source's red and blue highlighting cannot be carried by a single-colour accessible SVG; drew the vertical axes over their full range instead of reproducing the source's compressed axis breaks; presented the three data tables as Markdown tables; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is the word "interpolation" or "extrapolation", which cannot be graded as free-response math; and adapted eleven selected end-of-section exercises into the section-final Practice block, again using multiple choice for the categorical judgments (linear/nonlinear, positive/negative correlation, interpolation/extrapolation) that free-response grading cannot check.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.4: Fitting Linear Models to Data](https://openstax.org/books/precalculus-2e/pages/2-4-fitting-linear-models-to-data) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every scatter plot and fitted line as an accessible figure plotted from the source's own numbers — the cricket-chirp, interpolation, and gasoline figures use the exact table values together with the stated equations $T(c)=1.2c+30$, $T(c)=30.281+1.143c$, and $C(t)=113.318+2.209t$, each of which was recomputed from the data and matched to the source's three-decimal rounding; the opening "Final Exam Score vs. Age" scatter has no published data table, so its fourteen points were measured off the source figure; replaced the source's twenty-one-panel Wikimedia correlation composite (credit: "DenisBoigelot") with eight panels built from explicit point sets whose correlation coefficients were computed exactly, covering the same values $r=1.0,\ 0.8,\ 0.4,\ 0.0,\ -0.4,\ -0.8,\ -1.0$ plus one nonlinear arch with $r=0$, and added the two sentences needed to introduce that arch; drew the interpolation region as a dashed rectangle and marked the two predictions as open dots with dashed crosshairs, because the source's red and blue highlighting cannot be carried by a single-colour accessible figure; drew the vertical axes of the four cricket-chirp plots that the source breaks from 0 over their full range, and began the gasoline plot's vertical axis at 100 with no break mark; presented the three data tables as Markdown tables; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is the word "interpolation" or "extrapolation", which cannot be graded as free-response math; and adapted eleven selected end-of-section exercises into the section-final Practice block, again using multiple choice for the categorical judgments (linear/nonlinear, positive/negative correlation, interpolation/extrapolation) that free-response grading cannot check.</small>

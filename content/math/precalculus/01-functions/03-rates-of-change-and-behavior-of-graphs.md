@@ -110,7 +110,7 @@ $$
 & \tfrac{\Delta y}{\Delta x} &=& \tfrac{y_2-y_1}{x_2-x_1} \\[4pt]
 & &=& \tfrac{2.41-2.84}{2009-2007} \\[4pt]
 & &=& \tfrac{-0.43}{2\ \text{years}} \\[4pt]
-& &=& -0.22\ \text{per year}
+& &=& -0.22\ \text{dollars per year}
 \end{array}
 $$
 
@@ -121,6 +121,7 @@ input increases or when the output increases as the input decreases.
 {{< fillin
   question="Using the gasoline data above, find the average rate of change between 2005 and 2010, in dollars per year."
   answer="0.106"
+  answerForm="decimal"
   answerDisplay="$\tfrac{2.84-2.31}{5\ \text{years}}=\tfrac{0.53}{5\ \text{years}}=0.106$ dollars per year"
   hint="Divide the change in cost by the 5-year change in time."
 >}}
@@ -129,18 +130,18 @@ input increases or when the output increases as the input decreases.
 of change on the interval $[-1,2]$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of g of t, an upward-opening parabola with its vertex near (1.5, 0.9). It passes through (−1, 4) and (2, 1).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"t","yLabel":"g(t)","quadratics":[{"a":0.5,"b":-1.5,"c":2}]}
+{"ariaLabel":"The graph of g of t, an upward-opening parabola with its vertex at (1, 0). It passes through (0, 1) and (2, 1), and through (−1, 4) and (3, 4).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"t","yLabel":"g(t)","quadratics":[{"a":1,"b":-2,"c":1}]}
 {{< /apfigure >}}
 
 **Solution.** At $t=-1$, the graph shows $g(-1)=4$. At $t=2$, the graph shows
 $g(2)=1$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same parabola with the points (−1, 4) and (2, 1) marked and joined by a straight line. A horizontal dashed segment from (−1, 1) to (2, 1) is labelled delta t = 3, and a vertical dashed segment from (−1, 1) to (−1, 4) is labelled delta g(t) = −3.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"t","yLabel":"g(t)","quadratics":[{"a":0.5,"b":-1.5,"c":2}],"segments":[{"from":[-1,4],"to":[2,1]},{"from":[-1,1],"to":[2,1],"dashed":true},{"from":[-1,1],"to":[-1,4],"dashed":true}],"points":[{"at":[-1,4]},{"at":[2,1]}],"texts":[{"at":[-1,4],"text":"(−1, 4)","anchor":"end","dx":-8,"dy":-4},{"at":[2,1],"text":"(2, 1)","dx":9,"dy":4},{"at":[1.15,1],"text":"Δt = 3","anchor":"middle","dy":13},{"at":[-1.15,2.5],"text":"Δg(t) = −3","anchor":"end"}]}
+{"ariaLabel":"The same parabola with the points (−1, 4) and (2, 1) marked and joined by a straight line. Below the t-axis, a horizontal arrow at height −1.5 runs from t = −1 to t = 2 and is labelled delta t = 3; left of the curve, a vertical arrow at t = −2 runs down from height 4 to height 1 and is labelled delta g(t) = −3.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"t","yLabel":"g(t)","quadratics":[{"a":1,"b":-2,"c":1}],"segments":[{"from":[-1,4],"to":[2,1]},{"from":[-1,-1.5],"to":[2,-1.5],"arrows":"end"},{"from":[-2,4],"to":[-2,1],"arrows":"end"}],"points":[{"at":[-1,4]},{"at":[2,1]}],"texts":[{"at":[2.2,-1.5],"text":"Δt = 3","dy":4},{"at":[-2.2,2.5],"text":"Δg(t) = −3","anchor":"end"}]}
 {{< /apfigure >}}
 
 The horizontal change $\Delta t=3$ and the vertical change
-$\Delta g(t)=-3$ are shown by the dashed segments. The output changes by $-3$
+$\Delta g(t)=-3$ are shown by the two arrows. The output changes by $-3$
 while the input changes by 3, giving an average rate of change of
 
 $$\frac{1-4}{2-(-1)}=\frac{-3}{3}=-1$$
@@ -207,6 +208,7 @@ $$
 {{< fillin
   question="Find the average rate of change of $f(x)=x-2\sqrt{x}$ on the interval $[1,9]$."
   answer="\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="Evaluate $f$ at both endpoints first; $\sqrt{9}=3$."
 >}}
@@ -254,6 +256,7 @@ rate of change would be $5+3=8$.
 {{< fillin
   question="Find the average rate of change of $f(x)=x^2+2x-8$ on the interval $[5,a]$."
   answer="a+7"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a+7$"
   hint="Form $\tfrac{f(a)-f(5)}{a-5}$, then factor the numerator so the common factor $a-5$ divides out."
 >}}
@@ -312,7 +315,7 @@ neighboring points. The graph below illustrates these ideas for a local
 maximum.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A downward-opening curve rising from a on the left to a peak at b and falling to c on the right. The peak is marked Local maximum, the height of the peak is marked f(b) on the vertical axis, the rising stretch is labelled Increasing function and the falling stretch Decreasing function.","xMin":0,"xMax":8,"yMin":0,"yMax":6,"xUnit":34,"yUnit":30,"grid":false,"quadratics":[{"a":-0.45,"b":3.6,"c":-2.2,"from":0.7,"to":7.3,"arrows":false}],"guides":[[4,5]],"points":[{"at":[4,5]}],"texts":[{"at":[1,-0.15],"text":"a","anchor":"middle","dy":16,"italic":true},{"at":[4,-0.15],"text":"b","anchor":"middle","dy":16,"italic":true},{"at":[7,-0.15],"text":"c","anchor":"middle","dy":16,"italic":true},{"at":[0,5],"text":"f(b)","anchor":"end","dx":-6,"dy":4,"italic":true},{"at":[4.3,5.6],"text":"Local maximum","dx":6},{"at":[2.4,1.9],"text":"Increasing","anchor":"middle"},{"at":[2.4,1.4],"text":"function","anchor":"middle"},{"at":[5.6,1.9],"text":"Decreasing","anchor":"middle"},{"at":[5.6,1.4],"text":"function","anchor":"middle"}]}
+{"ariaLabel":"A downward-opening curve rising from a on the left to a peak at b and falling to c on the right. The peak is marked Local maximum, the height of the peak is marked f(b) on the vertical axis, the rising stretch is labelled Increasing function and the falling stretch Decreasing function.","xMin":0,"xMax":8,"yMin":0,"yMax":6,"xUnit":34,"yUnit":30,"grid":false,"quadratics":[{"a":-0.555556,"b":4.444444,"c":-3.888889,"from":1,"to":7,"arrows":false}],"guides":[[4,5]],"points":[{"at":[4,5]}],"texts":[{"at":[1,-0.15],"text":"a","anchor":"middle","dy":16,"italic":true},{"at":[4,-0.15],"text":"b","anchor":"middle","dy":16,"italic":true},{"at":[7,-0.15],"text":"c","anchor":"middle","dy":16,"italic":true},{"at":[0,5],"text":"f(b)","anchor":"end","dx":-6,"dy":4,"italic":true},{"at":[4.3,5.6],"text":"Local maximum","dx":6},{"at":[2.75,1.2],"text":"Increasing","anchor":"middle"},{"at":[2.75,0.7],"text":"function","anchor":"middle"},{"at":[5.25,1.2],"text":"Decreasing","anchor":"middle"},{"at":[5.25,0.7],"text":"function","anchor":"middle"}]}
 {{< /apfigure >}}
 
 These observations lead us to a formal definition of local extrema.
@@ -340,7 +343,7 @@ These observations lead us to a formal definition of local extrema.
 on which the function appears to be increasing.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of p of t. It falls steeply from the top left to a low point at t = 1, rises to a high point at t = 3, dips to a second low point at t = 4, then rises steeply off the top of the grid.","xMin":-1,"xMax":6,"yMin":-2,"yMax":4,"xUnit":34,"yUnit":34,"tickLabels":true,"xLabel":"t","yLabel":"p","polynomials":[{"coeffs":[2.06987,-6.81124,5.39223,-1.51361,0.1419]}]}
+{"ariaLabel":"The graph of p of t. It falls steeply from the top left to a low point at t = 1, rises to a high point at t = 3, dips to a second low point at t = 4, then rises steeply off the top of the grid.","xMin":-1,"xMax":6,"yMin":-2,"yMax":5,"xUnit":34,"yUnit":34,"tickLabels":true,"xLabel":"t","yLabel":"p","polynomials":[{"coeffs":[2.475,-8.4,6.65,-1.866667,0.175],"from":-0.225}]}
 {{< /apfigure >}}
 
 **Solution.** We see that the function is not constant on any interval. The
@@ -366,11 +369,13 @@ between $x=2$ and $x=3$, and a mirror-image high point, or local maximum,
 somewhere between $x=-3$ and $x=-2$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 2 over x plus x over 3. The right branch falls from the top toward a low point near (2.4, 1.6) and then rises slowly; the left branch is its mirror image, rising to a high point near (−2.4, −1.6) and then falling steeply toward the vertical axis.","xMin":-5,"xMax":5,"yMin":-4,"yMax":4,"xUnit":26,"yUnit":26,"tickLabels":true,"yLabel":"f(x)","rationals":[{"num":[6,0,1],"den":[0,3]}]}
+{"ariaLabel":"The graph of f of x equals 2 over x plus x over 3. The right branch falls from the top toward a low point near (2.4, 1.6) and then rises slowly; the left branch is its mirror image, rising to a high point near (−2.4, −1.6) and then falling steeply toward the vertical axis.","xMin":-5,"xMax":5,"yMin":-4,"yMax":4,"xUnit":26,"yUnit":26,"tickLabels":true,"yLabel":"f(x)","rationals":[{"num":[6,0,1],"den":[0,3],"from":-5,"to":-0.57},{"num":[6,0,1],"den":[0,3],"from":0.57,"to":5}]}
 {{< /apfigure >}}
 
 Most graphing calculators and graphing utilities can estimate the location of
-maxima and minima. Based on such estimates, the function is increasing on the
+maxima and minima. One graphing utility estimates the local minimum at
+$(2.4494898, 1.6329932)$, and a graphing calculator estimates the local maximum
+at $(-2.449491, -1.632993)$. Based on these estimates, the function is increasing on the
 interval $(-\infty,-2.449)$ and $(2.449,\infty)$. Notice that, while we
 expect the extrema to be symmetric, two different technologies agree only up
 to four decimals due to the differing approximation algorithms used by each.
@@ -380,25 +385,23 @@ requires calculus.)
 {{< fillin
   question="Graph $f(x)=x^3-6x^2-15x+20$. The local maximum occurs at $x=-1$; what is the local maximum value?"
   answer="28"
+  answerForm="decimal"
   hint="Evaluate the function at $x=-1$."
 >}}
 
-{{< multiplechoice
-  question="For that same function $f(x)=x^3-6x^2-15x+20$, on which intervals is it increasing?"
-  answer="$(-\infty,-1)\cup(5,\infty)$"
-  hint="The graph turns at the two local extrema, $x=-1$ and $x=5$; it climbs outside them."
+{{< fillin
+  question="For that same function $f(x)=x^3-6x^2-15x+20$, on which intervals is it increasing? Enter the answer in interval notation, joining the intervals with $\cup$."
+  answer="(-\infty,-1)\cup(5,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,-1)\cup(5,\infty)$"
+  hint="Find the stretches where the graph rises as you move to the right; each ends at the x-value of a local extremum, which an open interval leaves out."
 >}}
-$(5,\infty)$
-$(-\infty,-1)$
-$(-1,5)$
-$(-\infty,-1)\cup(5,\infty)$
-{{< /multiplechoice >}}
 
 **Example.** For the function $f$ whose graph is shown below, find all local
 maxima and minima.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 3x minus x cubed. It falls from the top left to a low point at (−1, −2), rises to a high point at (1, 2), then falls steeply off the bottom of the grid.","xMin":-3,"xMax":3,"yMin":-8,"yMax":8,"xUnit":40,"yUnit":16,"xGridStep":1,"yGridStep":2,"tickLabels":true,"xTickStep":1,"yTickStep":2,"cubics":[{"a":-1,"b":0,"c":3,"d":0}],"texts":[{"at":[2.1,-6],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f of x equals 3x minus x cubed. It falls from the top left to a low point at (−1, −2), rises to a high point at (1, 2), then falls steeply off the bottom of the grid.","xMin":-3,"xMax":3,"yMin":-8,"yMax":8,"xUnit":40,"yUnit":16,"xGridStep":1,"yGridStep":2,"tickLabels":true,"xTickStep":1,"yTickStep":2,"cubics":[{"a":-1,"b":0,"c":3,"d":0}],"texts":[{"at":[2.6,-7],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 **Solution.** Observe the graph of $f$. The graph attains a local maximum at
@@ -462,7 +465,7 @@ function $f(x)=x^3$ is one such function.
 minima.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f on a closed domain. It begins at a solid point near (−2.4, 13), rises to a high point of 16 at x = −2, falls to a dip near the origin, rises to a second high point of 16 at x = 2, then falls steeply to a solid point at (3, −10).","xMin":-4,"xMax":4,"yMin":-16,"yMax":20,"xUnit":30,"yUnit":6.5,"xGridStep":1,"yGridStep":4,"tickLabels":true,"xTickStep":1,"yTickStep":4,"polynomials":[{"coeffs":[-0.64,0,8.32,0,-1.04],"from":-2.4,"to":3,"arrows":false}],"points":[{"at":[-2.4,12.94]},{"at":[3,-10]}],"texts":[{"at":[2.3,6],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f on a closed domain. It begins at a solid point near (−2.5, 12), rises to a high point of 16 at x = −2, falls to touch the x-axis at the origin, rises to a second high point of 16 at x = 2, then falls steeply to a solid point at (3, −10).","xMin":-4,"xMax":4,"yMin":-16,"yMax":20,"xUnit":30,"yUnit":6.5,"xGridStep":1,"yGridStep":4,"tickLabels":true,"xTickStep":1,"yTickStep":4,"polynomials":[{"coeffs":[0,0,7.92888889,0,-0.96444444,0,-0.00444444],"from":-2.45,"to":3,"arrows":false}],"points":[{"at":[-2.45,11.88]},{"at":[3,-10]}],"texts":[{"at":[2.95,7],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 **Solution.** Observe the graph of $f$. The graph attains an absolute maximum
@@ -528,6 +531,7 @@ interval.
 {{< fillin
   question="A town's population was 83 thousand in 2002 and 77 thousand in 2004. Find the average rate of change of the population between 2002 and 2004, in people per year."
   answer="-3000"
+  answerForm="decimal"
   answerDisplay="$-3{,}000$ people per year"
   hint="Divide the change in population, converted to people, by the 2-year change in time."
 >}}
@@ -535,6 +539,7 @@ interval.
 {{< fillin
   question="The same town's population was 83 thousand in 2002 and 78 thousand in 2006. Find the average rate of change of the population between 2002 and 2006, in people per year."
   answer="-1250"
+  answerForm="decimal"
   answerDisplay="$-1{,}250$ people per year"
   hint="Divide the change in population, converted to people, by the 4-year change in time."
 >}}
@@ -542,6 +547,7 @@ interval.
 {{< fillin
   question="Let $f(x)=\tfrac{1}{x}$. Find the number $b$ such that the average rate of change of $f$ on the interval $(2,b)$ is $-\tfrac{1}{10}$."
   answer="5"
+  answerForm="decimal"
   answerDisplay="$b=5$"
   hint="Set $\tfrac{f(b)-f(2)}{b-2}=-\tfrac{1}{10}$, clear denominators, and solve the resulting quadratic (reject $b=2$)."
 >}}
@@ -556,45 +562,40 @@ interval.
 
 ### Use a graph to determine where a function is increasing, decreasing, or constant
 
-{{< multiplechoice
-  question="A graphing utility shows the complete behavior of $f(x)=x^4-4x^3+5$. On which interval is $f$ increasing?"
-  answer="$(3,\infty)$"
-  hint="Find where $f'(x)=4x^3-12x^2=4x^2(x-3)$ changes sign from negative to positive."
+{{< fillin
+  question="Use a graphing utility to graph $f(x)=x^4-4x^3+5$. On which interval is $f$ increasing? Enter the answer in interval notation."
+  answer="(3,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(3,\infty)$"
+  hint="Find where the graph turns from falling to rising. A spot where the graph levels off but keeps falling is not a turn."
 >}}
-$(3,\infty)$
-$(-\infty,0)\cup(3,\infty)$
-$(0,3)$
-$(-\infty,3)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="A graphing utility shows the complete behavior of $g(t)=t\sqrt{t+3}$. On which interval is $g$ decreasing?"
-  answer="$(-3,-2)$"
-  hint="Check the sign of $g$ just to the right of $t=-3$ and just left of $t=-2$."
+{{< fillin
+  question="Use a graphing utility to graph $g(t)=t\sqrt{t+3}$. On which interval is $g$ decreasing? Enter the answer in interval notation."
+  answer="(-3,-2)"
+  answerForm="decimal"
+  answerDisplay="$(-3,-2)$"
+  hint="The graph exists only where $t+3\ge0$. Find its lowest point, then read where the graph falls as $t$ increases."
 >}}
-$(-\infty,-3)$
-$(-3,\infty)$
-$(-2,\infty)$
-$(-3,-2)$
-{{< /multiplechoice >}}
 
 ### Use a graph to locate local maxima and local minima
 
 {{< fillin
   question="Using a graphing utility, estimate the $x$-value of the local maximum of $m(x)=x^4+2x^3-12x^2-10x+4$, rounded to two decimal places."
   answer="-0.39"
+  answerForm="decimal"
   answerDisplay="$x\approx -0.39$"
-  hint="Locate the critical point between $x=-1$ and $x=0$ where $m$ changes from increasing to decreasing."
+  hint="Graph $m$ and use the utility's maximum feature on the hump that rises between the graph's two low points."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The complete graph of a function f. It rises from the lower left to a local maximum near (−3, 50), falls through the origin to a local minimum near (3, −50), then rises again toward the upper right.","xMin":-5,"xMax":5,"yMin":-60,"yMax":60,"xUnit":26,"yUnit":2.3,"xGridStep":1,"yGridStep":20,"tickLabels":true,"xTickStep":1,"yTickStep":20,"cubics":[{"a":0.925926,"b":0,"c":-25,"d":0}]}
+{"ariaLabel":"The complete graph of a smooth function f, drawn from x = −5 to x = 5 on a grid from −60 to 60 vertically, with arrows at both ends. Reading left to right, it passes through about (−5, 9), (−4, 41), (−2, 43), (−1, 24), the origin, (1, −24), (2, −43), (4, −41), and (5, −9).","xMin":-5,"xMax":5,"yMin":-60,"yMax":60,"xUnit":26,"yUnit":2.3,"xGridStep":1,"yGridStep":20,"tickLabels":true,"xTickStep":1,"yTickStep":20,"cubics":[{"a":0.925926,"b":0,"c":-25,"d":0}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="The graph above shows the complete graph of a function $f$. Estimate its local maximum and local minimum."
   answer="local maximum $(-3, 50)$; local minimum $(3, -50)$"
-  hint="Read the highest point on the left hump and the lowest point on the right dip."
+  hint="A local maximum is higher than the nearby points on both sides, and a local minimum is lower than them; read each one's coordinates off the grid."
 >}}
 local maximum $(0, 0)$; local minimum $(3, -50)$
 local maximum $(3, 50)$; local minimum $(-3, -50)$
@@ -605,24 +606,24 @@ local maximum $(-3, 50)$; local minimum $(3, -50)$
 ### Use a graph to locate the absolute maximum and absolute minimum
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The complete graph of a function f on the closed domain from x = −7.5 to x = 7. A solid point begins the curve near (−7.5, −220), the curve rises through a local maximum near (−3, 50), crosses near the origin, falls to a local minimum near (3, −50), then rises steeply to a solid point ending the curve near (7, 150).","xMin":-8,"xMax":8,"yMin":-250,"yMax":200,"xUnit":18,"yUnit":0.62,"xGridStep":2,"yGridStep":50,"tickLabels":true,"xTickStep":2,"yTickStep":50,"cubics":[{"a":0.96333,"b":-0.07663,"c":-25.33662,"d":0.68966,"from":-7.5,"to":7,"arrows":false}],"points":[{"at":[-7.5,-220]},{"at":[7,150]}]}
+{"ariaLabel":"The complete graph of a smooth function f on a grid from −8 to 8 horizontally and −250 to 200 vertically. The curve begins at a solid point at x = −7.5 and ends at a solid point at x = 7. Reading left to right, it passes through about (−6, −58), (−4, 39), (−2, 43), (0, 1), (2, −43), (4, −40), and (6, 54).","xMin":-8,"xMax":8,"yMin":-250,"yMax":200,"xUnit":18,"yUnit":0.62,"xGridStep":2,"yGridStep":50,"tickLabels":true,"xTickStep":2,"yTickStep":50,"cubics":[{"a":0.96333,"b":-0.07663,"c":-25.33662,"d":0.68966,"from":-7.5,"to":7,"arrows":false}],"points":[{"at":[-7.5,-220]},{"at":[7,150]}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="If the complete graph of the function shown above is displayed, estimate its absolute maximum and absolute minimum."
   answer="absolute maximum $\approx(7, 150)$; absolute minimum $\approx(-7.5, -220)$"
-  hint="Over a closed domain, the absolute extrema often occur at the endpoints rather than at the interior humps."
+  hint="Compare the heights of every turning point and of both endpoints of the domain; the absolute extrema are the highest and the lowest of them all."
 >}}
 absolute maximum $\approx(-7.5, -220)$; absolute minimum $\approx(7, 150)$
-absolute maximum $\approx(7, 150)$; absolute minimum $\approx(2, -50)$
+absolute maximum $\approx(7, 150)$; absolute minimum $\approx(3, -50)$
 absolute maximum $\approx(7, 150)$; absolute minimum $\approx(-7.5, -220)$
-absolute maximum $\approx(-3, 50)$; absolute minimum $\approx(2, -50)$
+absolute maximum $\approx(-3, 50)$; absolute minimum $\approx(3, -50)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="How are the absolute maximum and minimum similar to and different from the local extrema?"
   answer="The absolute maximum and minimum relate to the entire graph, whereas the local extrema relate only to a specific region around an open interval."
-  hint="Absolute extrema compare the whole domain; local extrema compare only a nearby interval."
+  hint="Reread the opening paragraph of the subsection on locating the absolute maximum and absolute minimum."
 >}}
 The absolute maximum and minimum relate only to a specific region around an open interval, whereas the local extrema relate to the entire graph.
 The absolute maximum and minimum only exist for polynomial functions, while local extrema exist for all functions.
@@ -632,4 +633,4 @@ There is no difference; the terms are interchangeable.
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.3: Rates of Change and Behavior of Graphs](https://openstax.org/books/precalculus-2e/pages/1-3-rates-of-change-and-behavior-of-graphs) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from an explicit formula — the source's unlabelled illustrative curves were fitted first, so $g(t)=\tfrac{1}{2}t^{2}-\tfrac{3}{2}t+2$, $p(t)$ is the quartic whose extrema fall exactly at $t=1,3,4$, and the closed-domain example is $-1.04x^{4}+8.32x^{2}-0.64$; presented the gasoline and distance tables and the three toolkit increasing/decreasing tables as Markdown tables, referring to the toolkit graphs published in Section 1.2 rather than repeating them; omitted the pair of graphing-calculator screen images, keeping the estimates they illustrate in the prose; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is interval notation, which cannot be graded as free-response math; and adapted selected end-of-section exercises into the closing Practice block, recreating two of the section's illustrative graphs as accessible SVGs fitted to their printed answer coordinates and using multiple choice for interval-notation, ordered-pair, and verbal answers.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.3: Rates of Change and Behavior of Graphs](https://openstax.org/books/precalculus-2e/pages/1-3-rates-of-change-and-behavior-of-graphs) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible figure generated from an explicit formula — the source's unlabelled illustrative curves were fitted first, so $g(t)=(t-1)^{2}$, $p(t)$ is the quartic whose extrema fall exactly at $t=1,3,4$, and the closed-domain example is $-\tfrac{1}{225}x^{6}-\tfrac{217}{225}x^{4}+\tfrac{1784}{225}x^{2}$, which touches the axis at the origin, peaks at 16 at $x=\pm2$, and ends at $(3,-10)$; presented the gasoline and distance tables as Markdown tables and merged the three toolkit increasing/decreasing tables into one, referring to the toolkit graphs published in Section 1.2 rather than repeating them; omitted the pair of graphing-calculator screen images, stating the estimates they show in the prose; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, splitting the graph-the-cubic Try It into its local maximum value and its increasing intervals; and adapted selected end-of-section exercises into the closing Practice block, stating the two population values each part of the town-population exercise needs instead of reprinting its table, asking for one part of each multi-part graphing-utility exercise, recreating two of the section's illustrative graphs as accessible figures fitted to their printed answer coordinates, and using multiple choice for the estimated extreme points read off those graphs and for the verbal answer.</small>

@@ -736,8 +736,6 @@ export function unworkedKey(answer) {
  * deletes the list.
  */
 export const VALUE_FORM_SWEEP_PENDING = Object.freeze([
-  'math/precalculus/01-functions/',
-  'math/precalculus/02-linear-functions/',
   'math/precalculus/03-polynomial-and-rational-functions/',
   'math/precalculus/04-exponential-and-logarithmic-functions/',
   'math/precalculus/05-trigonometric-functions/',

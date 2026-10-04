@@ -85,7 +85,7 @@ Plot the coordinate pairs and draw a line through the points. The graph below
 represents the function $f(x)=-\tfrac{2}{3}x+5$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative two thirds x plus 5, a line falling from left to right through the plotted points (0, 5), (3, 3), and (6, 1).","xMin":-4,"xMax":7,"yMin":-2,"yMax":7,"unit":24,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","lines":[{"through":[[0,5],[6,1]]}],"points":[{"at":[0,5]},{"at":[3,3]},{"at":[6,1]}],"texts":[{"at":[0,5],"text":"(0, 5)","dx":9,"dy":-6},{"at":[3,3],"text":"(3, 3)","dx":9,"dy":-6},{"at":[6,1],"text":"(6, 1)","dx":9,"dy":-6},{"at":[-1.9,6.15],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f of x equals negative two thirds x plus 5, a line falling from left to right through the plotted points (0, 5), (3, 3), and (6, 1).","xMin":-4,"xMax":7,"yMin":-2,"yMax":7,"unit":24,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","polynomials":[{"coeffs":[5,-0.6666666666666666],"to":6.8,"arrows":true}],"points":[{"at":[0,5]},{"at":[3,3]},{"at":[6,1]}],"texts":[{"at":[0,5],"text":"(0, 5)","dx":9,"dy":-6},{"at":[3,3],"text":"(3, 3)","dx":9,"dy":-6},{"at":[6,1],"text":"(6, 1)","dx":9,"dy":-6},{"at":[-2.1,5.4],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 The graph of the function is a line as expected for a linear
@@ -97,7 +97,7 @@ change in the equation for the function.
   question="Graph $f(x)=-\tfrac{3}{4}x+6$ by plotting points."
   answerDisplay="The line through $(0,6)$, $(4,3)$, and $(8,0)$"
   ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
-  hint="Choose multiples of 4 as input values so every output is a whole number: $f(0)=6$, $f(4)=3$, and $f(8)=0$."
+  hint="Choose multiples of 4 as input values so every output is a whole number, then evaluate the function at each one."
 >}}
 {"answer":{"slope":-0.75,"intercept":6,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
@@ -133,7 +133,7 @@ starting from our $y$-intercept $(0,1)$, we can rise 1 and then run 2, or run
 line through the points as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals one half x plus 1. The y-intercept (0, 1) is marked, and a dashed staircase runs right 2 and up 1 three times, from (0, 1) through (2, 2), (4, 3), and (6, 4).","xMin":-2,"xMax":7,"yMin":0,"yMax":5,"unit":30,"tickLabels":true,"lines":[{"through":[[0,1],[2,2]]}],"points":[{"at":[0,1]}],"segments":[{"from":[0,1],"to":[2,1],"dashed":true},{"from":[2,1],"to":[2,2],"dashed":true},{"from":[2,2],"to":[4,2],"dashed":true},{"from":[4,2],"to":[4,3],"dashed":true},{"from":[4,3],"to":[6,3],"dashed":true},{"from":[6,3],"to":[6,4],"dashed":true},{"from":[0.95,2.85],"to":[0.15,1.25],"arrows":"end"}],"texts":[{"at":[0,1],"text":"(0, 1)","anchor":"end","dx":-20,"dy":4},{"at":[1,3.05],"text":"y‑intercept"},{"at":[2.2,1.4],"text":"Rise = 1"},{"at":[1.15,0.45],"text":"Run = 2"},{"at":[4.5,4.2],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f of x equals one half x plus 1. The y-intercept (0, 1) is marked, and a dashed staircase runs right 2 and up 1 three times, from (0, 1) through (2, 2), (4, 3), and (6, 4).","xMin":-2,"xMax":7,"yMin":0,"yMax":5,"unit":30,"tickLabels":true,"polynomials":[{"coeffs":[1,0.5],"from":-1.5,"arrows":true}],"points":[{"at":[0,1]}],"segments":[{"from":[0,1],"to":[2,1],"dashed":true},{"from":[2,1],"to":[2,2],"dashed":true},{"from":[2,2],"to":[4,2],"dashed":true},{"from":[4,2],"to":[4,3],"dashed":true},{"from":[4,3],"to":[6,3],"dashed":true},{"from":[6,3],"to":[6,4],"dashed":true},{"from":[0.95,2.85],"to":[0.15,1.25],"arrows":"end"}],"texts":[{"at":[0,1],"text":"(0, 1)","anchor":"end","dx":-20,"dy":4},{"at":[1,3.05],"text":"y‑intercept"},{"at":[2.2,1.4],"text":"Rise = 1"},{"at":[1.15,0.45],"text":"Run = 2"},{"at":[4.5,4.2],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -185,7 +185,7 @@ units. We can extend the line to the left and right by repeating, and then
 draw a line through the points.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative two thirds x plus 5. Dashed arrows step down 2 and right 3 from (0, 5) to (3, 3) and again from (3, 3) to (6, 1).","xMin":-1,"xMax":7,"yMin":0,"yMax":6,"unit":30,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","lines":[{"through":[[0,5],[6,1]]}],"points":[{"at":[0,5]},{"at":[3,3]},{"at":[6,1]}],"segments":[{"from":[0,5],"to":[0,3],"dashed":true,"arrows":"end"},{"from":[0,3],"to":[3,3],"dashed":true,"arrows":"end"},{"from":[3,3],"to":[3,1],"dashed":true,"arrows":"end"},{"from":[3,1],"to":[6,1],"dashed":true,"arrows":"end"}],"texts":[{"at":[1.6,4.35],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f of x equals negative two thirds x plus 5. Dashed arrows step right 3 and down 2 from (0, 5) to (3, 3) and again from (3, 3) to (6, 1).","xMin":-1,"xMax":7,"yMin":0,"yMax":6,"unit":30,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","polynomials":[{"coeffs":[5,-0.6666666666666666],"to":6.8,"arrows":true}],"points":[{"at":[0,5]},{"at":[3,3]},{"at":[6,1]}],"segments":[{"from":[0,5],"to":[3,5],"dashed":true,"arrows":"end"},{"from":[3,5],"to":[3,3],"dashed":true,"arrows":"end"},{"from":[3,3],"to":[6,3],"dashed":true,"arrows":"end"},{"from":[6,3],"to":[6,1],"dashed":true,"arrows":"end"}],"texts":[{"at":[1.25,3.45],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 The graph slants downward from left to right, which means it
@@ -194,8 +194,9 @@ has a negative slope as expected.
 {{< fillin
   question="The line above continues to the left of the vertical axis. Find the point on it whose $x$-coordinate is $-3$ by evaluating $f(x)=-\tfrac{2}{3}x+5$, and enter that point's $y$-coordinate."
   answer="7"
+  answerForm="decimal"
   answerDisplay="$f(-3)=-\tfrac{2}{3}(-3)+5=2+5=7$, so the point is $(-3,7)$"
-  hint="Substitute $x=-3$ into the rule; two negatives multiply to a positive, so $-\tfrac{2}{3}(-3)=2$."
+  hint="Substitute $x=-3$ into the rule and simplify, watching the sign when you multiply the two negative numbers."
 >}}
 
 ## Graphing a function using transformations
@@ -221,7 +222,7 @@ $f(x)=-x$, and $f(x)=-2x$; each is labelled by the expression that $f(x)$
 equals, written with a slash for the fraction.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Eight lines through the origin: f of x equals 3x, 2x, x, x over 2, and x over 3 rise to the right with decreasing steepness, while f of x equals negative x over 2, negative x, and negative 2x fall to the right.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":26,"tickLabels":true,"lines":[{"through":[[0,0],[1,3]]},{"through":[[0,0],[1,2]]},{"through":[[0,0],[1,1]]},{"through":[[0,0],[2,1]]},{"through":[[0,0],[3,1]]},{"through":[[0,0],[2,-1]]},{"through":[[0,0],[1,-1]]},{"through":[[0,0],[1,-2]]}],"texts":[{"at":[1.95,5.3],"text":"3x"},{"at":[3.05,5.3],"text":"2x"},{"at":[5.15,5.5],"text":"x","anchor":"end"},{"at":[5.3,2.95],"text":"x/2","anchor":"end"},{"at":[5.4,1.25],"text":"x/3","anchor":"end"},{"at":[5.4,-2.05],"text":"-x/2","anchor":"end"},{"at":[5,-5.5],"text":"-x","anchor":"end"},{"at":[2.4,-5.5],"text":"-2x","anchor":"end"}]}
+{"ariaLabel":"Eight lines through the origin: f of x equals 3x, 2x, x, x over 2, and x over 3 rise to the right with decreasing steepness, while f of x equals negative x over 2, negative x, and negative 2x fall to the right.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":26,"tickLabels":true,"lines":[{"through":[[0,0],[1,3]]},{"through":[[0,0],[1,2]]},{"through":[[0,0],[1,1]]},{"through":[[0,0],[2,1]]},{"through":[[0,0],[3,1]]},{"through":[[0,0],[2,-1]]},{"through":[[0,0],[1,-1]]},{"through":[[0,0],[1,-2]]}],"texts":[{"at":[2.05,6.7],"text":"3x","anchor":"end"},{"at":[2.95,6.7],"text":"2x"},{"at":[6.4,5.85],"text":"x"},{"at":[6.4,2.85],"text":"x/2"},{"at":[6.4,1.85],"text":"x/3"},{"at":[6.4,-3.15],"text":"-x/2"},{"at":[6.4,-6.15],"text":"-x"},{"at":[3,-6.95],"text":"-2x","anchor":"middle"}]}
 {{< /apfigure >}}
 
 ## Vertical shift
@@ -235,7 +236,7 @@ $f(x)=x$, $f(x)=x-2$, and $f(x)=x-4$, each labelled by the expression that
 $f(x)$ equals.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Five parallel lines of slope 1: f of x equals x plus 4, x plus 2, x, x minus 2, and x minus 4, crossing the vertical axis at 4, 2, 0, negative 2, and negative 4.","xMin":-11,"xMax":11,"yMin":-11,"yMax":11,"unit":20,"maxWidth":440,"gridStep":2,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,4],[1,5]]},{"through":[[0,2],[1,3]]},{"through":[[0,0],[1,1]]},{"through":[[0,-2],[1,-1]]},{"through":[[0,-4],[1,-3]]}],"texts":[{"at":[5.75,9],"text":"x+4"},{"at":[7.75,9],"text":"x+2"},{"at":[9.75,9],"text":"x"},{"at":[9.75,7],"text":"x-2"},{"at":[9.75,5],"text":"x-4"}]}
+{"ariaLabel":"Five parallel lines of slope 1: f of x equals x plus 4, x plus 2, x, x minus 2, and x minus 4, crossing the vertical axis at 4, 2, 0, negative 2, and negative 4.","xMin":-11,"xMax":11,"yMin":-11,"yMax":11,"unit":20,"maxWidth":440,"gridStep":2,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,4],[1,5]]},{"through":[[0,2],[1,3]]},{"through":[[0,0],[1,1]]},{"through":[[0,-2],[1,-1]]},{"through":[[0,-4],[1,-3]]}],"texts":[{"at":[7,11.8],"text":"x+4","anchor":"middle"},{"at":[9,11.8],"text":"x+2","anchor":"middle"},{"at":[11.5,10.75],"text":"x"},{"at":[11.5,8.75],"text":"x-2"},{"at":[11.5,6.75],"text":"x-4"}]}
 {{< /apfigure >}}
 
 Using vertical stretches or compressions along with vertical shifts is
@@ -263,20 +264,20 @@ outputs: $y=x$ reaches 4 at $x=4$, while $y=\tfrac{1}{2}x$ reaches only 2.5
 at $x=5$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The identity line y equals x together with the shallower line y equals one half x. A vertical arrow rises from (4, 0) to (4, 4) on y equals x, and a second from (5, 0) to (5, 2.5) on y equals one half x.","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"lines":[{"through":[[0,0],[1,1]]},{"through":[[0,0],[2,1]]}],"segments":[{"from":[4,0],"to":[4,4],"arrows":"end"},{"from":[5,0],"to":[5,2.5],"arrows":"end"}],"texts":[{"at":[5.15,4.4],"text":"y = x"},{"at":[5.3,1.5],"text":"y = x/2"}]}
+{"ariaLabel":"The identity line y equals x together with the shallower line y equals one half x. A vertical arrow rises from (4, 0) to (4, 4) on y equals x, and a second from (5, 0) to (5, 2.5) on y equals one half x.","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"lines":[{"through":[[0,0],[1,1]]},{"through":[[0,0],[2,1]]}],"segments":[{"from":[4,0],"to":[4,4],"arrows":"end"},{"from":[5,0],"to":[5,2.5],"arrows":"end"}],"texts":[{"at":[5.45,4.05],"text":"y = x"},{"at":[5.3,1.5],"text":"y = x/2"}]}
 {{< /apfigure >}}
 
 Then show the vertical shift.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The line y equals one half x and, three units below it, the parallel line y equals one half x minus 3. A vertical arrow at x equals 3 runs from (3, 1.5) down to (3, negative 1.5).","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"lines":[{"through":[[0,0],[2,1]]},{"through":[[0,-3],[2,-2]]}],"segments":[{"from":[3,1.5],"to":[3,-1.5],"arrows":"end"}],"texts":[{"at":[4.7,3.6],"text":"y = x/2"},{"at":[4.7,1.2],"text":"y = x/2 - 3"}]}
+{"ariaLabel":"The line y equals one half x and, three units below it, the parallel line y equals one half x minus 3. A vertical arrow at x equals 3 runs from (3, 1.5) down to (3, negative 1.5).","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"polynomials":[{"coeffs":[0,0.5],"arrows":true},{"coeffs":[-3,0.5],"to":6.7,"arrows":true}],"segments":[{"from":[3,1.5],"to":[3,-1.5],"arrows":"end"}],"texts":[{"at":[4.7,3.6],"text":"y = x/2"},{"at":[3.9,-2.45],"text":"y = x/2 - 3"}]}
 {{< /apfigure >}}
 
 {{< graphplot
   question="Graph $f(x)=4+2x$ using transformations."
   answerDisplay="Stretch $y=x$ by a factor of 2 to get $y=2x$, then shift up 4 units to reach $y=2x+4$."
   ariaLabel="A blank coordinate grid running from −10 to 10 on both axes."
-  hint="The stretch factor is the coefficient of $x$ and the shift is the constant term; the finished line passes through $(0,4)$ and $(1,6)$."
+  hint="Read the stretch factor from the coefficient of $x$ and the vertical shift from the constant term; stretch a few points of $y=x$ first, then shift them."
 >}}
 {"answer":{"slope":2,"intercept":4,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
@@ -340,7 +341,7 @@ lines in the graph below.
 $$f(x)=2x+3 \qquad g(x)=2x-3 \qquad h(x)=-2x+3 \qquad j(x)=\tfrac{1}{2}x+3$$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Four lines labelled I, II, III, and IV. Lines I and II cross the vertical axis at 3; line I is steep and rising, line II rises gently. Line III rises steeply and crosses the vertical axis at negative 3. Line IV falls steeply and crosses the vertical axis at 3.","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"lines":[{"through":[[0,3],[1,5]]},{"through":[[0,3],[2,4]]},{"through":[[0,-3],[1,-1]]},{"through":[[0,3],[1,1]]}],"texts":[{"at":[1.45,5.45],"text":"I"},{"at":[3.4,5.35],"text":"II","anchor":"end"},{"at":[4.35,4.5],"text":"III"},{"at":[4.3,-4.4],"text":"IV"}]}
+{"ariaLabel":"Four lines labelled I, II, III, and IV. Lines I and II cross the vertical axis at 3; line I is steep and rising, line II rises gently. Line III rises steeply and crosses the vertical axis at negative 3. Line IV falls steeply and crosses the vertical axis at 3.","xMin":-9,"xMax":7,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"lines":[{"through":[[0,3],[1,5]]},{"through":[[0,3],[2,4]]},{"through":[[0,-3],[1,-1]]},{"through":[[0,3],[1,1]]}],"texts":[{"at":[1.85,6.2],"text":"I"},{"at":[6.3,5.25],"text":"II"},{"at":[4.15,6.2],"text":"III","anchor":"end"},{"at":[4.85,-5.9],"text":"IV"}]}
 {{< /apfigure >}}
 
 **Solution.** Analyze the information for each function.
@@ -366,7 +367,7 @@ $$f(x)=2x+3 \qquad g(x)=2x-3 \qquad h(x)=-2x+3 \qquad j(x)=\tfrac{1}{2}x+3$$
 Now we can re-label the lines as below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same four lines relabelled: h of x equals negative 2x plus 3, j of x equals one half x plus 3, f of x equals 2x plus 3, and g of x equals 2x minus 3.","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"lines":[{"through":[[0,3],[1,5]]},{"through":[[0,3],[2,4]]},{"through":[[0,-3],[1,-1]]},{"through":[[0,3],[1,1]]}],"texts":[{"at":[-6.6,4.5],"text":"h(x) = -2x + 3"},{"at":[-6.6,2.2],"text":"j(x) = x/2 + 3"},{"at":[3.2,2.2],"text":"g(x) = 2x - 3"},{"at":[-6.6,-2.4],"text":"f(x) = 2x + 3"}]}
+{"ariaLabel":"The same four lines relabelled: h of x equals negative 2x plus 3, j of x equals one half x plus 3, f of x equals 2x plus 3, and g of x equals 2x minus 3.","xMin":-9,"xMax":7,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"lines":[{"through":[[0,3],[1,5]]},{"through":[[0,3],[2,4]]},{"through":[[0,-3],[1,-1]]},{"through":[[0,3],[1,1]]}],"texts":[{"at":[-1.3,4.3],"text":"h(x) = -2x + 3","anchor":"end"},{"at":[-6.6,2.2],"text":"j(x) = x/2 + 3"},{"at":[3.2,2.2],"text":"g(x) = 2x - 3"},{"at":[-6.6,-2.4],"text":"f(x) = 2x + 3"}]}
 {{< /apfigure >}}
 
 ## Finding the x-intercept of a line
@@ -438,6 +439,7 @@ $x$-intercept is $(6,0)$ as we expected.
 {{< fillin
   question="Find the $x$-intercept of $f(x)=\tfrac{1}{4}x-4$. Enter its $x$-coordinate."
   answer="16"
+  answerForm="decimal"
   answerDisplay="$0=\tfrac{1}{4}x-4$ gives $x=16$, so the $x$-intercept is $(16,0)$"
   hint="Set the function equal to 0, then undo the subtraction and the multiplication by $\tfrac{1}{4}$."
 >}}
@@ -517,7 +519,7 @@ we shifted one line vertically toward the $y$-intercept of the other, they
 would become the same line.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parallel lines of slope negative three halves: y equals negative three halves x plus 1 and y equals negative three halves x plus 7.","xMin":-4,"xMax":6,"yMin":-3,"yMax":8,"unit":24,"tickLabels":true,"lines":[{"through":[[0,1],[2,-2]]},{"through":[[0,7],[2,4]]}]}
+{"ariaLabel":"Two parallel lines of slope negative three halves: y equals negative three halves x plus 1 and y equals negative three halves x plus 7.","xMin":-4,"xMax":6,"yMin":-3,"yMax":9,"unit":24,"tickLabels":true,"lines":[{"through":[[0,1],[2,-2]]},{"through":[[0,7],[2,4]]}]}
 {{< /apfigure >}}
 
 We can determine from their equations whether two lines are parallel by
@@ -537,7 +539,7 @@ intersection forms a right, or 90-degree, angle. The two lines below are
 perpendicular.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two perpendicular lines crossing at (1, 0): a steep rising line of slope 5 and a shallow falling line of slope negative one fifth.","xMin":-4,"xMax":4,"yMin":-8,"yMax":4,"unit":24,"tickLabels":true,"lines":[{"through":[[1,0],[2,5]]},{"through":[[1,0],[-4,1]]}],"segments":[{"from":[0.5097,0.0981],"to":[0.6078,0.5884]},{"from":[0.6078,0.5884],"to":[1.0981,0.4903]}]}
+{"ariaLabel":"Two perpendicular lines crossing at (1, 0): a steep rising line of slope 5 and a shallow falling line of slope negative one fifth.","xMin":-4,"xMax":5,"yMin":-9,"yMax":4,"unit":24,"tickLabels":true,"tickStep":2,"lines":[{"through":[[1,0],[2,5]]},{"through":[[1,0],[-4,1]]}],"segments":[{"from":[0.5097,0.0981],"to":[0.6078,0.5884]},{"from":[0.6078,0.5884],"to":[1.0981,0.4903]}]}
 {{< /apfigure >}}
 
 Perpendicular lines do not have the same slope. The slopes of perpendicular
@@ -559,8 +561,8 @@ other, so the lines are perpendicular.
 
 $$
 \begin{array}{ll}
-f(x)=\tfrac{1}{4}x+2 & \text{negative reciprocal of }\tfrac{1}{4}\text{ is }-4 \\[4pt]
-f(x)=-4x+3 & \text{negative reciprocal of }-4\text{ is }\tfrac{1}{4}
+f(x)=\tfrac{1}{4}x+2 & \text{negative reciprocal of }\tfrac{1}{4}\text{ is }{-4} \\[4pt]
+f(x)=-4x+3 & \text{negative reciprocal of }{-4}\text{ is }\tfrac{1}{4}
 \end{array}
 $$
 
@@ -603,7 +605,7 @@ and $h(x)=-2x+2$ represent perpendicular lines.
 A graph of the lines is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Four lines: f of x equals 2x plus 3 and j of x equals 2x minus 6 are parallel, while g of x equals one half x minus 4 and h of x equals negative 2x plus 2 meet at right angles.","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":13,"margin":42,"gridStep":2,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,3],[1,5]]},{"through":[[0,-6],[1,-4]]},{"through":[[0,-4],[2,-3]]},{"through":[[0,2],[1,0]]}],"texts":[{"at":[-12.4,13.3],"text":"h(x) = -2x + 2"},{"at":[1.2,13.3],"text":"f(x) = 2x + 3"},{"at":[-12.4,-13.4],"text":"g(x) = x/2 - 4"},{"at":[1.2,-13.4],"text":"j(x) = 2x - 6"}]}
+{"ariaLabel":"Four lines: f of x equals 2x plus 3 and j of x equals 2x minus 6 are parallel, while g of x equals one half x minus 4 and h of x equals negative 2x plus 2 meet at right angles.","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":13,"margin":42,"gridStep":2,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,3],[1,5]]},{"through":[[0,-6],[1,-4]]},{"through":[[0,-4],[2,-3]]},{"through":[[0,2],[1,0]]}],"texts":[{"at":[-12.4,13.3],"text":"h(x) = -2x + 2"},{"at":[1.2,13.3],"text":"f(x) = 2x + 3"},{"at":[12.2,3.0],"text":"g(x) = x/2 - 4","anchor":"end"},{"at":[7.0,5.5],"text":"j(x) = 2x - 6"}]}
 {{< /apfigure >}}
 
 The graph shows that the lines $f(x)=2x+3$ and $j(x)=2x-6$ are parallel, and
@@ -685,7 +687,7 @@ them. The graph below shows that the two lines will never intersect; a dashed
 right-1, up-3 step on each line makes the shared slope of 3 visible.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parallel lines of slope 3: y equals 3x plus 6 and y equals 3x minus 9. A dashed right-1, up-3 step is drawn on each.","xMin":-6,"xMax":6,"yMin":-5,"yMax":5,"unit":26,"tickLabels":true,"lines":[{"through":[[0,6],[1,9]]},{"through":[[3,0],[4,3]]}],"segments":[{"from":[-2,0],"to":[-1,0],"dashed":true},{"from":[-1,0],"to":[-1,3],"dashed":true,"arrows":"end"},{"from":[3,0],"to":[4,0],"dashed":true},{"from":[4,0],"to":[4,3],"dashed":true,"arrows":"end"}],"texts":[{"at":[-0.05,1.35],"text":"Up 3","anchor":"end"},{"at":[-1.5,-1.6],"text":"Right 1","anchor":"middle"},{"at":[4.3,1.2],"text":"Up 3"},{"at":[3.4,-1.6],"text":"Right 1"},{"at":[-5.9,-1.6],"text":"y = 3x + 6"},{"at":[2,-4.4],"text":"y = 3x - 9"}]}
+{"ariaLabel":"Two parallel lines of slope 3: y equals 3x plus 6 and y equals 3x minus 9. A dashed right-1, up-3 step is drawn on each.","xMin":-6,"xMax":6,"yMin":-6,"yMax":5,"unit":26,"tickLabels":true,"polynomials":[{"coeffs":[6,3],"to":-0.8,"arrows":true},{"coeffs":[-9,3],"arrows":true}],"segments":[{"from":[-3.5,-4.5],"to":[-2.5,-4.5],"dashed":true},{"from":[-2.5,-4.5],"to":[-2.5,-1.5],"dashed":true,"arrows":"end"},{"from":[1.5,-4.5],"to":[2.5,-4.5],"dashed":true},{"from":[2.5,-4.5],"to":[2.5,-1.5],"dashed":true,"arrows":"end"}],"texts":[{"at":[-2.3,-3.2],"text":"Up 3"},{"at":[-3.35,-5.25],"text":"Right 1"},{"at":[2.7,-3.2],"text":"Up 3"},{"at":[1.65,-5.25],"text":"Right 1"},{"at":[-5.9,-1.6],"text":"y = 3x + 6"},{"at":[4.4,2.0],"text":"y = 3x - 9"}]}
 {{< /apfigure >}}
 
 ## Writing equations of perpendicular lines
@@ -781,19 +783,21 @@ $g(x)=-\tfrac{1}{3}x+1$.
 A graph of the two lines is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The steep line f of x equals 3x plus 3 and the shallow falling line g of x equals negative one third x plus 1, meeting at right angles. The line g crosses the horizontal axis at 3.","xMin":-6,"xMax":6,"yMin":-4,"yMax":10,"unit":24,"tickLabels":true,"lines":[{"through":[[0,3],[1,6]]},{"through":[[0,1],[3,0]]}],"texts":[{"at":[-5.7,3.7],"text":"g(x) = -x/3 + 1"},{"at":[-5.9,-2.5],"text":"f(x) = 3x + 3"}]}
+{"ariaLabel":"The steep line f of x equals 3x plus 3 and the shallow falling line g of x equals negative one third x plus 1, meeting at right angles. The line g crosses the horizontal axis at 3.","xMin":-6,"xMax":7,"yMin":-4,"yMax":10,"unit":24,"tickLabels":true,"lines":[{"through":[[0,3],[1,6]]},{"through":[[0,1],[3,0]]}],"texts":[{"at":[-5.7,3.7],"text":"g(x) = -x/3 + 1"},{"at":[-5.9,-2.5],"text":"f(x) = 3x + 3"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Given the function $h(x)=2x-4$, write an equation for the line passing through $(0,0)$ that is parallel to $h$. Enter the expression that $y$ equals."
   answer="2x"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=2x$"
-  hint="Parallel lines share a slope, and a line through the origin has $y$-intercept 0."
+  hint="Parallel lines share a slope; use the given point to find the $y$-intercept."
 >}}
 
 {{< fillin
   question="Given the function $h(x)=2x-4$, write an equation for the line passing through $(0,0)$ that is perpendicular to $h$. Enter the expression that $y$ equals."
   answer="-\frac{1}{2}x"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{1}{2}x$"
   hint="Use the negative reciprocal of 2 as the slope, and remember the line passes through the origin."
 >}}
@@ -854,8 +858,9 @@ $$y=6x-19$$
 {{< fillin
   question="A line passes through the points $(-2,-15)$ and $(2,-3)$. Find the equation of a perpendicular line that passes through the point $(6,4)$. Enter the expression that $y$ equals."
   answer="-\frac{1}{3}x+6"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{1}{3}x+6$"
-  hint="The slope through the two given points is $\tfrac{-3-(-15)}{2-(-2)}$; take its negative reciprocal, then substitute $(6,4)$ to find $b$."
+  hint="Find the slope of the line through the two given points, take its negative reciprocal, then substitute $(6,4)$ into $y=mx+b$ to find $b$."
 >}}
 
 ## Solving a system of linear equations using a graph
@@ -902,7 +907,7 @@ These lines intersect at the point $\left(\tfrac{9}{4},\tfrac{11}{4}\right)$.
 Looking at the graph below, this result seems reasonable.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The rising line h of t equals 3t minus 4 and the falling line j of t equals 5 minus t crossing at the marked point (9 over 4, 11 over 4).","xMin":-2,"xMax":8,"yMin":-5,"yMax":7,"unit":24,"tickLabels":true,"xLabel":"t","yLabel":"y","lines":[{"through":[[0,-4],[1,-1]]},{"through":[[0,5],[5,0]]}],"points":[{"at":[2.25,2.75]}],"texts":[{"at":[2.25,2.75],"text":"(9/4, 11/4)","dx":10,"dy":-5},{"at":[1.35,5.9],"text":"h(t)","italic":true},{"at":[4.4,0.9],"text":"j(t)","italic":true}]}
+{"ariaLabel":"The rising line h of t equals 3t minus 4 and the falling line j of t equals 5 minus t crossing at the marked point (9 over 4, 11 over 4).","xMin":-2,"xMax":8,"yMin":-7,"yMax":7,"unit":24,"tickLabels":true,"yTickStep":2,"xLabel":"t","yLabel":"y","lines":[{"through":[[0,-4],[1,-1]]},{"through":[[0,5],[5,0]]}],"points":[{"at":[2.25,2.75]}],"texts":[{"at":[2.25,2.75],"text":"(9/4, 11/4)","dx":10,"dy":-5},{"at":[2.85,5.5],"text":"h(t)","italic":true,"anchor":"end"},{"at":[4.4,0.9],"text":"j(t)","italic":true}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -920,6 +925,7 @@ questions about $j$.
 {{< fillin
   question="Find the $x$-intercept of $j(t)=5-t$. Enter its $t$-coordinate."
   answer="5"
+  answerForm="decimal"
   answerDisplay="$5-t=0$ gives $t=5$, so the intercept is $(5,0)$"
   hint="The graph crosses the horizontal axis where the output is 0."
 >}}
@@ -927,6 +933,7 @@ questions about $j$.
 {{< fillin
   question="Find the slope of $j(t)=5-t$."
   answer="-1"
+  answerForm="decimal"
   answerDisplay="$-1$"
   hint="Rewrite the rule in the form $mt+b$; the coefficient of $t$ is the slope."
 >}}
@@ -938,7 +945,7 @@ questions about $j$.
 >}}
 A shift up 5 units, with no reflection
 A vertical flip over the horizontal axis, then a shift down 5 units
-A vertical stretch by a factor of 5
+A shift up 5 units, then a vertical flip over the horizontal axis
 A vertical flip over the horizontal axis, then a shift up 5 units
 {{< /multiplechoice >}}
 
@@ -987,7 +994,7 @@ even; both the sales and cost incurred equaled 1.75 million dollars. See the
 graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Cost and revenue for sports helmets. The cost line C starts at 250,000 dollars and the revenue line R starts at the origin; the steeper revenue line overtakes cost at the marked break-even point (12,500, 1,750,000). Left of that point the company loses money; right of it the company makes a profit.","xMin":0,"xMax":20000,"yMin":0,"yMax":2750000,"xUnit":0.022,"yUnit":0.00013,"margin":74,"maxWidth":500,"grid":false,"tickLabels":true,"xTickStep":20000,"yTickStep":1000000,"segments":[{"from":[0,250000],"to":[19500,2590000],"arrows":"end"},{"from":[0,0],"to":[19000,2660000],"arrows":"end"},{"from":[5500,1900000],"to":[5500,800000],"arrows":"end"},{"from":[15400,1420000],"to":[14100,2050000],"arrows":"end"}],"points":[{"at":[12500,1750000]}],"texts":[{"at":[0,0],"text":"0","anchor":"end","dx":-6,"dy":15},{"at":[12500,1750000],"text":"(12,500, 1,750,000)","anchor":"end","dx":-12,"dy":-6},{"at":[700,2150000],"text":"sales < cost"},{"at":[700,1990000],"text":"Company loses money"},{"at":[13000,1300000],"text":"cost < sales"},{"at":[13000,1140000],"text":"Company makes a profit"},{"at":[6300,1180000],"text":"C","italic":true},{"at":[7600,890000],"text":"R","italic":true}]}
+{"ariaLabel":"Cost and revenue for sports helmets. The cost line C starts at 250,000 dollars and the revenue line R starts at the origin; the steeper revenue line overtakes cost at the marked break-even point (12,500, 1,750,000). Left of that point the company loses money; right of it the company makes a profit.","xMin":0,"xMax":20000,"yMin":0,"yMax":2750000,"xUnit":0.022,"yUnit":0.00013,"margin":74,"maxWidth":500,"grid":false,"tickLabels":true,"xTickStep":20000,"yTickStep":1000000,"segments":[{"from":[0,250000],"to":[19500,2590000],"arrows":"end"},{"from":[0,0],"to":[19000,2660000],"arrows":"end"},{"from":[5500,1900000],"to":[5500,800000],"arrows":"end"},{"from":[15400,1420000],"to":[14600,2020000],"arrows":"end"}],"points":[{"at":[12500,1750000]}],"texts":[{"at":[0,0],"text":"0","anchor":"end","dx":-6,"dy":15},{"at":[12500,1750000],"text":"(12,500, 1,750,000)","anchor":"end","dx":-12,"dy":-6},{"at":[700,2150000],"text":"sales < cost"},{"at":[700,1990000],"text":"Company loses money"},{"at":[13000,1300000],"text":"cost < sales"},{"at":[13000,1140000],"text":"Company makes a profit"},{"at":[6300,1180000],"text":"C","italic":true},{"at":[7600,890000],"text":"R","italic":true}]}
 {{< /apfigure >}}
 
 ## Key concepts
@@ -1036,19 +1043,19 @@ negative reciprocals of each other.
 ### Graph linear functions
 
 {{< graphplot
-  question="Graph the line with $x$-intercept $(-2,0)$ and $y$-intercept $(0,4)$."
-  answerDisplay="The line through $(-2,0)$ and $(0,4)$, i.e. $y=2x+4$"
-  ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
-  hint="Use the two intercepts to find the slope: $m=\tfrac{4-0}{0-(-2)}=2$; the $y$-intercept is $4$."
+  question="Graph the line with $y$-intercept $(0,3)$ and slope $\tfrac{2}{5}$."
+  answerDisplay="The line through $(0,3)$ with slope $\tfrac{2}{5}$, i.e. $y=\tfrac{2}{5}x+3$"
+  ariaLabel="A blank coordinate grid running from −10 to 10 on both axes."
+  hint="Plot the $y$-intercept, then use the slope as rise over run to step from it to more points on the line."
 >}}
-{"answer":{"slope":2,"intercept":4,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{"answer":{"slope":0.4,"intercept":3,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
 
 {{< graphplot
   question="Graph the line $x=-2$."
   answerDisplay="The vertical line through $(-2,0)$"
   ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
-  hint="Every point on this line has $x$-coordinate $-2$, no matter its $y$-coordinate, so the line is vertical."
+  hint="The equation fixes one coordinate and leaves the other free; choose three points that satisfy it."
 >}}
 {"answer":{"x":-2,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
@@ -1057,7 +1064,7 @@ negative reciprocals of each other.
   question="Graph the function $q(x)=3$."
   answerDisplay="The horizontal line through $(0,3)$"
   ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
-  hint="The output is $3$ for every input, so the graph is a horizontal line."
+  hint="The output does not depend on the input; choose three inputs and plot each with its output."
 >}}
 {"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
@@ -1066,7 +1073,7 @@ negative reciprocals of each other.
   question="Which graph shows the linear function $f(x)=3x+2$?"
   mode="graph"
   answerIndex="2"
-  hint="Read the slope and the $y$-intercept from $f(x)=3x+2$: the line crosses the $y$-axis at $(0,2)$ and rises $3$ units for every $1$ unit to the right."
+  hint="Read the slope and the $y$-intercept from the equation, then find the graph that crosses the $y$-axis there and rises by the slope for each unit to the right."
 >}}
 {"ariaLabel":"A line falling from left to right through (negative 1, 2), (0, negative 1), and (1, negative 4).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":2,"lines":[{"slope":-3,"intercept":-1}]}
 ===OPT===
@@ -1086,6 +1093,7 @@ negative reciprocals of each other.
 {{< fillin
   question="Write the equation of the horizontal line shown in the graph above. Enter the expression that $y$ equals."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$y=3$"
   hint="A horizontal line has equation $y=b$, where $b$ is its constant output value."
 >}}
@@ -1095,8 +1103,9 @@ negative reciprocals of each other.
 {{< /apfigure >}}
 
 {{< fillin
-  question="Write the equation of the vertical line shown in the graph above."
+  question="Write the equation of the vertical line shown in the graph above, in the form $x=a$."
   answer="x=-3"
+  answerForm="solved:x decimal"
   hint="Every point on a vertical line shares the same $x$-coordinate; read it directly from the graph."
 >}}
 
@@ -1137,29 +1146,33 @@ perpendicular
 {{< fillin
   question="Write an equation for a line parallel to $g(x)=3x-1$ and passing through the point $(4,9)$. Enter the expression that $y$ equals."
   answer="3x-3"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=3x-3$"
-  hint="Parallel lines share a slope; substitute $(4,9)$ into $y=3x+b$ to solve for $b$."
+  hint="Parallel lines share a slope; substitute $(4,9)$ into $y=mx+b$ with that slope and solve for $b$."
 >}}
 
 {{< fillin
-  question="Write an equation for a line perpendicular to $p(t)=3t+4$ and passing through the point $(3,1)$. Enter the expression that $y$ equals."
-  answer="-\tfrac{1}{3}t+2"
+  question="Write an equation for a line perpendicular to $p(t)=3t+4$ and passing through the point $(3,1)$. Write the new line as a function of $t$ and enter the expression it equals."
+  answer="-\frac{1}{3}t+2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{1}{3}t+2$"
   hint="Use the negative reciprocal of $3$ as the slope, then substitute $(3,1)$ to solve for the intercept."
 >}}
 
 {{< fillin
-  question="Write an equation for a line perpendicular to $g(x)=-0.01x+2.01$ and passing through the point $(1,2)$. Enter the expression that $y$ equals."
+  question="Find the equation of the line perpendicular to the line $g(x)=-0.01x+2.01$ through the point $(1,2)$. Enter the expression that $y$ equals."
   answer="100x-98"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=100x-98$"
-  hint="The negative reciprocal of $-0.01$ is $100$; substitute $(1,2)$ into $y=100x+b$ to solve for $b$."
+  hint="Take the negative reciprocal of the slope of $g$, then substitute $(1,2)$ into $y=mx+b$ with that slope and solve for $b$."
 >}}
 
 ### Solve a system of linear equations
 
 {{< fillin
-  question="Find the point of intersection of the lines $f(x)=2x+5$ and $g(x)=-3x-5$. Enter your answer as an ordered pair."
+  question="Find the point at which the line $f(x)=2x+5$ intersects the line $g(x)=-3x-5$. Enter your answer as an ordered pair."
   answer="(-2,1)"
+  answerForm="decimal"
   answerDisplay="$(-2,1)$"
   hint="Set $2x+5=-3x-5$ and solve for $x$, then evaluate either function at that $x$."
 >}}
@@ -1167,6 +1180,7 @@ perpendicular
 {{< fillin
   question="Find the point of intersection of the lines $2x=y-3$ and $y+4x=15$. Enter your answer as an ordered pair."
   answer="(2,7)"
+  answerForm="decimal"
   answerDisplay="$(2,7)$"
   hint="Solve the first equation for $y$, substitute into the second equation, and solve for $x$."
 >}}
@@ -1174,10 +1188,11 @@ perpendicular
 {{< fillin
   question="Find the point of intersection of the lines $5x+3y=-65$ and $x-y=-5$. Enter your answer as an ordered pair."
   answer="(-10,-5)"
+  answerForm="decimal"
   answerDisplay="$(-10,-5)$"
   hint="Solve the second equation for $x$ in terms of $y$, then substitute into the first equation."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.2: Graphs of Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-2-graphs-of-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all twenty-three graphs as accessible inline SVGs generated from explicit formulas, matching the printed window, intercepts, slope triangles, and annotations of each; because these figures are monochrome, every line the source distinguishes only by colour is labelled with its own formula, written compactly ($x/2$ for $\tfrac{1}{2}x$) so that the eight stretch lines and the five shift lines still fit one grid, and the prose names each family in full; presented the horizontal-line and vertical-line coordinate tables as Markdown tables and the "change of output over change of input" annotation as a displayed fraction; omitted the media links; adapted fourteen selected end-of-section exercises, drawn from the Verbal, Algebraic, Graphical, Extensions, and Real-World Applications subsections, into the interactive exercises of the section-final Practice section below, recreating two of the source's graph-reading items as accessible figures generated from the same explicit formulas; and converted the in-page practice problems ("Try Its") into interactive exercises with instant feedback, using the graphing component where the source answer is itself a graph, multiple choice where the answer is a verbal transformation description, and a single requested coordinate where the source answer is an ordered pair. Two response-mode adaptations are worth naming: where the source asks for any point with a negative $x$-value, this page asks for the output at $x=-3$, one of the source's own listed answers, so that a single response can be graded; and of the six parts of the last Try It, this page keeps the $x$-intercept, the slope, and the transformation description, the three that are not already exercised elsewhere in the section. Two corrections to the source art are disclosed here: the Analysis figure for the perpendicular-line example is drawn with that example's own line $f(x)=3x+3$, where the printed figure is labelled $f(x)=3x+6$; and the break-even figure's left-hand annotation reads "sales &lt; cost" above "Company loses money", where the printed art reads "cost &lt; sales", which contradicts both the label beneath it and the figure's own alt text. Two further upstream defects were found and deliberately not propagated: the pinned CNXML's alt text for the parallel-lines figure gives its slopes as $-\tfrac{2}{3}$ while the printed geometry is $-\tfrac{3}{2}$, and its alt text for the write-the-equation figure describes a line through $(0,3)$ while both the printed figure and the surrounding prose give $y=2x+4$; in each case this page follows the printed figure and the prose.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.2: Graphs of Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-2-graphs-of-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all twenty-three graphs as accessible figures generated from explicit formulas, matching the printed intercepts, slope triangles, and annotations of each, and the printed window except where a window is widened by a unit or two, its tick numbers are thinned to every second value, or a line stops a little short of the grid edge, so that no arrowhead lands on a tick number, an axis letter, or another arrowhead; the parallel-line Analysis figure draws its right-1, up-3 slope steps below the $x$-axis, and the first graph-from-the-slope figure steps right 3 and then down 2 rather than down and then right, because the printed steps run along the axes and cannot be seen; because these figures are monochrome, every line the source distinguishes only by colour is labelled with its own formula beside that line, written compactly ($x/2$ for $\tfrac{1}{2}x$) so that the eight stretch lines and the five shift lines still fit one grid, and the prose names each family in full; presented the horizontal-line and vertical-line coordinate tables as Markdown tables and the "change of output over change of input" annotation as a displayed fraction; omitted the media links; adapted fifteen selected end-of-section exercises, drawn from the Algebraic, Graphical, and Extensions subsections, into the interactive exercises of the section-final Practice section below, recreating two of the source's graph-reading items as accessible figures generated from the same explicit formulas and posing the match-the-equation-to-its-graph exercise as a choice among four graphs; and converted the in-page practice problems ("Try Its") into interactive exercises with instant feedback, using the graphing component where the source answer is itself a graph, multiple choice where the answer is a verbal transformation description, and a single requested coordinate where the source answer is an ordered pair. Two response-mode adaptations are worth naming: where the source asks for any point with a negative $x$-value, this page asks for the output at $x=-3$, one of the source's own listed answers, so that a single response can be graded; and of the six parts of the last Try It, this page keeps the $x$-intercept, the slope, and the transformation description, the three that are not already exercised elsewhere in the section. Two corrections to the source art are disclosed here: the Analysis figure for the perpendicular-line example is drawn with that example's own line $f(x)=3x+3$, where the printed figure draws and labels $f(x)=3x+6$; and the break-even figure's left-hand annotation reads "sales &lt; cost" above "Company loses money", where the printed art reads "cost &lt; sales", which contradicts both the label beneath it and the figure's own alt text. Three further upstream defects were found and deliberately not propagated: the pinned CNXML's alt text for the parallel-lines figure gives its slopes as $-\tfrac{2}{3}$ while the printed geometry is $-\tfrac{3}{2}$, its alt text for the write-the-equation figure describes a line through $(0,3)$ while both the printed figure and the surrounding prose give $y=2x+4$, and its alt text for the point-of-intersection figure names the falling line $j(t)=t+5$ where the example's line is $j(t)=5-t$; in each case this page follows the printed figure and the prose.</small>

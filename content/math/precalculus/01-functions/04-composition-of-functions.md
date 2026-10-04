@@ -116,7 +116,7 @@ undefined.
 {{< fillin
   question="Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(fg)(x)$."
   answer="x^3-x^2-x+1"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$(fg)(x)=(x-1)(x^2-1)=x^3-x^2-x+1$"
   hint="Multiply the two outputs, then expand."
 >}}
@@ -124,9 +124,9 @@ undefined.
 {{< fillin
   question="Given the same $f$ and $g$, find and simplify $(f-g)(x)$."
   answer="x-x^2"
-  answerForm="distributed"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$(f-g)(x)=(x-1)-(x^2-1)=x-x^2$"
-  hint="Subtract the whole of $g(x)$; the two constants cancel."
+  hint="Put $g(x)$ in parentheses so the minus sign reaches every term, then combine like terms."
 >}}
 
 ## Create a function by composition of functions
@@ -344,14 +344,16 @@ The table below shows the composite functions $f\circ g$ and $g\circ f$.
 | 3 | 2 | 8 | 3 | 2 |
 
 {{< fillin
-  question="Using the table above, evaluate $f(g(1))$."
+  question="Using the first table above, which lists $f(x)$ and $g(x)$ for $x=1$ to $4$, evaluate $f(g(1))$."
   answer="3"
+  answerForm="decimal"
   hint="Read $g(1)$ from the table first, then look that value up in the $f$ column."
 >}}
 
 {{< fillin
   question="Using the same table, evaluate $g(f(4))$."
   answer="3"
+  answerForm="decimal"
   hint="Start inside: find $f(4)$, then read $g$ at that input."
 >}}
 
@@ -376,14 +378,14 @@ the graphs.
      This is the output of the composite function.
 {{< /callout >}}
 
-**Example.** Using the graphs (a) and (b) below, evaluate $f(g(1))$.
+**Example.** Using the graphs of $g$ and $f$ below, evaluate $f(g(1))$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Graph (a): g of x, an upward-opening parabola with its vertex at (3, −1), crossing the horizontal axis at 2 and 4.","xMin":-2,"xMax":7,"yMin":-5,"yMax":7,"unit":22,"tickLabels":true,"yLabel":"g(x)","quadratics":[{"a":1,"b":-6,"c":8}]}
+{"ariaLabel":"Graph of g of x, an upward-opening parabola with its vertex at (3, −1), crossing the horizontal axis at 2 and 4.","xMin":-2,"xMax":7,"yMin":-5,"yMax":7,"unit":22,"tickLabels":true,"yLabel":"g(x)","quadratics":[{"a":1,"b":-6,"c":8}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Graph (b): f of x, a downward-opening parabola with its vertex at (3, 6), passing through (0, −3) and (6, −3).","xMin":-2,"xMax":7,"yMin":-5,"yMax":7,"unit":22,"tickLabels":true,"yLabel":"f(x)","quadratics":[{"a":-1,"b":6,"c":-3}]}
+{"ariaLabel":"Graph of f of x, a downward-opening parabola with its vertex at (3, 6), passing through (0, −3) and (6, −3).","xMin":-2,"xMax":7,"yMin":-5,"yMax":7,"unit":22,"tickLabels":true,"yLabel":"f(x)","quadratics":[{"a":-1,"b":6,"c":-3}]}
 {{< /apfigure >}}
 
 **Solution.** To evaluate $f(g(1))$, we start with the inside evaluation. The
@@ -408,9 +410,10 @@ finding the input of 3 on the $x$-axis and reading the output value of the
 graph at this input. Here, $f(3)=6$, so $f(g(1))=6$.
 
 {{< fillin
-  question="Using the graphs above, evaluate $g(f(2))$."
+  question="Using the graphs of $g$ and $f$ above, evaluate $g(f(2))$."
   answer="3"
-  hint="Read $f(2)$ from graph (b) first, then read $g$ at that input on graph (a)."
+  answerForm="decimal"
+  hint="Read $f(2)$ from the graph of $f$ first, then read $g$ at that input on the graph of $g$."
 >}}
 
 ### Evaluating composite functions using formulas
@@ -464,13 +467,15 @@ this problem because we evaluated for specific numerical values.
 {{< fillin
   question="Given $f(t)=t^2-t$ and $h(x)=3x+2$, evaluate $h(f(2))$."
   answer="8"
+  answerForm="decimal"
   hint="Work from the inside: find $f(2)$, then feed that into $h$."
 >}}
 
 {{< fillin
   question="Given the same $f$ and $h$, evaluate $h(f(-2))$."
   answer="20"
-  hint="$f(-2)$ squares the negative input before subtracting it."
+  answerForm="decimal"
+  hint="Work from the inside: in $f(-2)$, square $-2$ and then subtract $-2$, keeping the signs; then feed that output into $h$."
 >}}
 
 ## Finding the domain of a composite function
@@ -553,16 +558,13 @@ inner function) can also be helpful in finding the domain of a composite
 function. It also shows that the domain of $f\circ g$ can contain values that
 are not in the domain of $f$, though they must be in the domain of $g$.
 
-{{< multiplechoice
-  question="Find the domain of $(f\circ g)(x)$ where $f(x)=\tfrac{1}{x-2}$ and $g(x)=\sqrt{x+4}$."
-  answer="$[-4,0)\cup(0,\infty)$"
-  hint="Start with the domain of $g$, then throw out the input that makes $g(x)$ equal to 2."
+{{< fillin
+  question="Find the domain of $(f\circ g)(x)$ where $f(x)=\tfrac{1}{x-2}$ and $g(x)=\sqrt{x+4}$. Write it in interval notation."
+  answer="[-4,0)\cup(0,\infty)"
+  answerForm="decimal"
+  answerDisplay="$[-4,0)\cup(0,\infty)$"
+  hint="Start with the domain of $g$, then remove every input whose output $g(x)$ is not in the domain of $f$."
 >}}
-$[-4,\infty)$
-$[-4,0)\cup(0,\infty)$
-$[-4,2)\cup(2,\infty)$
-$(-\infty,-4]\cup(0,\infty)$
-{{< /multiplechoice >}}
 
 ## Decomposing a composite function into its component functions
 
@@ -634,7 +636,7 @@ the output of one function is used as the input of another.
 {{< fillin
   question="Given $f(x)=x^2+2x$ and $g(x)=6-x^2$, find and simplify $(fg)(x)$."
   answer="-x^4-2x^3+6x^2+12x"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$(fg)(x)=-x^{4}-2x^{3}+6x^{2}+12x$"
   hint="Multiply the two polynomials and collect like terms by degree."
 >}}
@@ -642,7 +644,7 @@ the output of one function is used as the input of another.
 {{< fillin
   question="Given $f(x)=2x^2+4x$ and $g(x)=\tfrac{1}{2x}$, find and simplify $(f+g)(x)$ as a single fraction."
   answer="\frac{4x^3+8x^2+1}{2x}"
-  answerForm="single-fraction"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$(f+g)(x)=\tfrac{4x^{3}+8x^{2}+1}{2x}$"
   hint="Rewrite $f(x)$ with denominator $2x$, then add the numerators over that common denominator."
 >}}
@@ -660,7 +662,7 @@ the output of one function is used as the input of another.
 {{< fillin
   question="Given $f(x)=\sqrt{x}+2$ and $g(x)=x^2+3$, find and simplify $f(g(x))$."
   answer="\sqrt{x^2+3}+2"
-  answerForm="no-like-terms"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$f(g(x))=\sqrt{x^{2}+3}+2$"
   hint="Substitute $g(x)$ for every $x$ in $f(x)=\sqrt{x}+2$."
 >}}
@@ -668,7 +670,7 @@ the output of one function is used as the input of another.
 {{< fillin
   question="Given the same $f$ and $g$, find and simplify $g(f(x))$."
   answer="x+4\sqrt{x}+7"
-  answerForm="expanded distributed"
+  answerForm="expanded distributed simplified-radical no-like-terms"
   answerDisplay="$g(f(x))=x+4\sqrt{x}+7$"
   hint="Square $\sqrt{x}+2$ completely before adding 3 — don't leave it as a power."
 >}}
@@ -676,7 +678,7 @@ the output of one function is used as the input of another.
 {{< fillin
   question="Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find and simplify $f(g(x))$."
   answer="18x^2+60x+51"
-  answerForm="expanded distributed"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$f(g(x))=18x^{2}+60x+51$"
   hint="Substitute $3x+5$ for every $x$ in $f(x)=2x^2+1$, then expand the square before combining terms."
 >}}
@@ -702,55 +704,49 @@ to 9.
 {{< fillin
   question="Using the table above, evaluate $f(g(5))$."
   answer="9"
+  answerForm="decimal"
   hint="Read $g(5)$ from the table first, then look that value up in the $f$ column."
 >}}
 
 {{< fillin
   question="Using the same table, evaluate $g(f(3))$."
   answer="4"
+  answerForm="decimal"
   hint="Start inside: find $f(3)$, then read $g$ at that input."
 >}}
 
 {{< fillin
   question="Using the same table, evaluate $f(f(1))$."
   answer="2"
+  answerForm="decimal"
   hint="Find $f(1)$ first, then apply $f$ again to that result."
 >}}
 
 ### Find the domain of a composite function
 
-{{< multiplechoice
+{{< fillin
   question="For $f(x)=\tfrac{1}{x}$ and $g(x)=\sqrt{x-1}$, write the domain of $(f\circ g)(x)$ in interval notation."
-  answer="$(1,\infty)$"
-  hint="Find the input to $g$ that makes $g(x)$ equal to 0, the one value $f$ cannot accept."
+  answer="(1,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(1,\infty)$"
+  hint="Start with the domain of $g$, then remove every input whose output $g(x)$ is not in the domain of $f$."
 >}}
-$(1,\infty)$
-$[1,\infty)$
-$(0,\infty)$
-$(-\infty,1)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="For $p(x)=\tfrac{1}{\sqrt{x}}$ and $m(x)=x^2-4$, state the domain of $p(m(x))$ in interval notation."
-  answer="$(-\infty,-2)\cup(2,\infty)$"
-  hint="The radicand $m(x)$ must be strictly positive, since it also sits under a fraction bar."
+  answer="(-\infty,-2)\cup(2,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,-2)\cup(2,\infty)$"
+  hint="Find which inputs $p$ accepts (its input sits under a square root and a fraction bar), then solve for the $x$ that make $m(x)$ one of them."
 >}}
-$[-2,2]$
-$(-\infty,-2)\cup(2,\infty)$
-$(-\infty,-2]\cup[2,\infty)$
-$(2,\infty)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="For $f(x)=\sqrt{2-4x}$ and $g(x)=-\tfrac{3}{x}$, write the domain of $(g\circ f)(x)$ in interval notation."
-  answer="$\left(-\infty,\tfrac{1}{2}\right)$"
-  hint="Start from the domain of $f$, then exclude the input where $f(x)$ itself equals 0."
+  answer="(-\infty,\frac{1}{2})"
+  answerForm="lowest-terms"
+  answerDisplay="$\left(-\infty,\tfrac{1}{2}\right)$"
+  hint="Start with the domain of $f$, then remove every input whose output $f(x)$ is not in the domain of $g$."
 >}}
-$(-\infty,0)\cup\left(0,\tfrac{1}{2}\right)$
-$\left(\tfrac{1}{2},\infty\right)$
-$\left(-\infty,\tfrac{1}{2}\right]$
-$\left(-\infty,\tfrac{1}{2}\right)$
-{{< /multiplechoice >}}
 
 ### Decompose a composite function into its component functions
 
@@ -789,4 +785,4 @@ $f(x)=\sqrt[3]{x}$ and $g(x)=1-x$
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.4: Composition of Functions](https://openstax.org/books/precalculus-2e/pages/1-4-composition-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the two parabola graphs as accessible inline SVGs generated from their formulas, $g(x)=x^{2}-6x+8$ and $f(x)=-x^{2}+6x-3$, and merged the source's two annotated versions of them into one marked pair, since dashed crosshairs already trace the path the arrows were added to show; presented the function tables as Markdown tables; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is interval notation, a pair of functions, or a verbal judgement, none of which can be graded as free-response math; and adapted a selection of the end-of-section exercises, each independently checked against the printed Answer Key, into the closing interactive Practice block, again using multiple choice for the same categorical cases (interval-notation domains, non-unique decompositions). One correction: where the source writes the domain restriction as "$x\ne\tfrac{2}{3}$ or $x\ne 2$" — a disjunction that excludes nothing — this page writes "and", matching both the sentence before it and the interval notation after it.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.4: Composition of Functions](https://openstax.org/books/precalculus-2e/pages/1-4-composition-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the two parabola graphs as accessible graphs drawn from their formulas, $g(x)=x^{2}-6x+8$ and $f(x)=-x^{2}+6x-3$, and merged the source's two annotated versions of them into one marked pair, since dashed crosshairs already trace the path the arrows were added to show; presented the function tables as Markdown tables; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a verbal judgement or a pair of functions (a decomposition is not unique); and adapted a selection of the end-of-section exercises, each independently checked against the printed Answer Key, into the closing interactive Practice block, again using multiple choice for the decompositions. Two corrections: where the source writes the domain restriction as "$x\ne\tfrac{2}{3}$ or $x\ne 2$" — a disjunction that excludes nothing — this page writes "and", matching both the sentence before it and the interval notation after it; and where the radical-domain example says the radicand of a square root "must be positive" and that "square roots are positive", this page says "nonnegative", since $\sqrt{0}=0$ and the example's own domain $(-\infty,3]$ includes $x=3$.</small>

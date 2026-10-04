@@ -87,7 +87,7 @@ functions such as these.
 </div>
 
 <div class="ap-figure">
-<svg role="img" aria-label="A bar graph titled “Market Share of Horror Movies, by Year.” The vertical axis runs from 0% to 8%. Market share is about 4.3% in 2000, 4.6% in 2001, 3.2% in 2002, 4.7% in 2003, 5.0% in 2004, 5.6% in 2005, 5.9% in 2006, 7.0% in 2007, 2.8% in 2008, 5.4% in 2009, 4.6% in 2010, 3.9% in 2011, 2.6% in 2012, and 4.1% in 2013." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 372" width="430" height="372" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A bar graph titled “Market Share of Horror Movies, by Year.” The vertical axis runs from 0% to 8%. Market share is about 4.4% in 2000, 4.8% in 2001, 3.2% in 2002, 4.8% in 2003, 5.1% in 2004, 5.7% in 2005, 6.0% in 2006, 7.1% in 2007, 2.9% in 2008, 5.5% in 2009, 4.7% in 2010, 4.0% in 2011, 2.6% in 2012, and 4.1% in 2013." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 372" width="430" height="372" font-family="Helvetica, Arial, sans-serif">
   <text x="229" y="18" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle">Market Share of Horror Movies,</text>
   <text x="229" y="36" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle">by Year</text>
   <line x1="42" y1="310.0" x2="416" y2="310.0" stroke="currentColor" stroke-width="0.4" opacity="0.25"/>
@@ -119,33 +119,33 @@ functions such as these.
   <text x="33" y="54.0" font-size="11" fill="currentColor" text-anchor="end">8%</text>
   <line x1="42" y1="50" x2="42" y2="310" stroke="currentColor" stroke-width="1"/>
   <line x1="42" y1="310" x2="416" y2="310" stroke="currentColor" stroke-width="1"/>
-  <rect x="52" y="170.3" width="16" height="139.8" fill="currentColor" opacity="0.75"/>
+  <rect x="52" y="167.0" width="16" height="143.0" fill="currentColor" opacity="0.75"/>
   <text x="60" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 60 322)">2000</text>
-  <rect x="78" y="160.5" width="16" height="149.5" fill="currentColor" opacity="0.75"/>
+  <rect x="78" y="154.0" width="16" height="156.0" fill="currentColor" opacity="0.75"/>
   <text x="86" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 86 322)">2001</text>
   <rect x="104" y="206.0" width="16" height="104.0" fill="currentColor" opacity="0.75"/>
   <text x="112" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 112 322)">2002</text>
-  <rect x="130" y="157.3" width="16" height="152.8" fill="currentColor" opacity="0.75"/>
+  <rect x="130" y="154.0" width="16" height="156.0" fill="currentColor" opacity="0.75"/>
   <text x="138" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 138 322)">2003</text>
-  <rect x="156" y="147.5" width="16" height="162.5" fill="currentColor" opacity="0.75"/>
+  <rect x="156" y="144.2" width="16" height="165.8" fill="currentColor" opacity="0.75"/>
   <text x="164" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 164 322)">2004</text>
-  <rect x="182" y="128.0" width="16" height="182.0" fill="currentColor" opacity="0.75"/>
+  <rect x="182" y="124.8" width="16" height="185.2" fill="currentColor" opacity="0.75"/>
   <text x="190" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 190 322)">2005</text>
-  <rect x="208" y="118.3" width="16" height="191.8" fill="currentColor" opacity="0.75"/>
+  <rect x="208" y="115.0" width="16" height="195.0" fill="currentColor" opacity="0.75"/>
   <text x="216" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 216 322)">2006</text>
-  <rect x="234" y="82.5" width="16" height="227.5" fill="currentColor" opacity="0.75"/>
+  <rect x="234" y="79.2" width="16" height="230.8" fill="currentColor" opacity="0.75"/>
   <text x="242" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 242 322)">2007</text>
-  <rect x="260" y="219.0" width="16" height="91.0" fill="currentColor" opacity="0.75"/>
+  <rect x="260" y="215.8" width="16" height="94.2" fill="currentColor" opacity="0.75"/>
   <text x="268" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 268 322)">2008</text>
-  <rect x="286" y="134.5" width="16" height="175.5" fill="currentColor" opacity="0.75"/>
+  <rect x="286" y="131.2" width="16" height="178.8" fill="currentColor" opacity="0.75"/>
   <text x="294" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 294 322)">2009</text>
-  <rect x="312" y="160.5" width="16" height="149.5" fill="currentColor" opacity="0.75"/>
+  <rect x="312" y="157.2" width="16" height="152.8" fill="currentColor" opacity="0.75"/>
   <text x="320" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 320 322)">2010</text>
-  <rect x="338" y="183.3" width="16" height="126.8" fill="currentColor" opacity="0.75"/>
+  <rect x="338" y="180.0" width="16" height="130.0" fill="currentColor" opacity="0.75"/>
   <text x="346" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 346 322)">2011</text>
   <rect x="364" y="225.5" width="16" height="84.5" fill="currentColor" opacity="0.75"/>
   <text x="372" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 372 322)">2012</text>
-  <rect x="390" y="176.8" width="16" height="133.3" fill="currentColor" opacity="0.75"/>
+  <rect x="390" y="176.8" width="16" height="133.2" fill="currentColor" opacity="0.75"/>
   <text x="398" y="322" font-size="11" fill="currentColor" text-anchor="end" transform="rotate(-45 398 322)">2013</text>
 </svg>
 </div>
@@ -170,7 +170,7 @@ for a "function machine" and the range as another "holding area" for the
 machine's products.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A diagram of how a function relates two sets. A left oval labelled Domain holds a, b, and c; a right oval labelled Range holds x, y, and z. An arrow runs from the left oval into a funnel labelled Function machine, and a second arrow runs from the funnel to the right oval." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 208" width="360" height="208" font-family="Helvetica, Arial, sans-serif">
+<svg role="img" aria-label="A diagram of how a function relates two sets. A left oval labelled Domain holds a, b, and c; a right oval labelled Range holds x, y, and z. An arrow runs from b in the left oval into a funnel labelled Function machine, and a second arrow runs from the funnel to y in the right oval." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 208" width="360" height="208" font-family="Helvetica, Arial, sans-serif">
   <text x="70" y="34" font-size="13" fill="currentColor" text-anchor="middle">Domain</text>
   <text x="290" y="34" font-size="13" fill="currentColor" text-anchor="middle">Range</text>
   <text x="180" y="60" font-size="13" fill="currentColor" text-anchor="middle">Function</text>
@@ -268,16 +268,13 @@ this function. The domain is the set of real numbers.
 
 In interval form, the domain of $f$ is $(-\infty,\infty)$.
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=5-x+x^3$."
-  answer="$(-\infty,\infty)$"
-  hint="Nothing here is a denominator or an even root, so ask whether any real number could fail."
+{{< fillin
+  question="Find the domain of the function $f(x)=5-x+x^3$. Write it in interval notation."
+  answer="(-\infty,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="Look for a denominator or an even root that could restrict the input."
 >}}
-$(-\infty,5]$
-$(-\infty,0)\cup(0,\infty)$
-$[0,\infty)$
-$(-\infty,\infty)$
-{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
   **How to:** given a function written in an equation form that includes a
@@ -317,16 +314,13 @@ $(-\infty,2)\cup(2,\infty)$.
 
 In interval form, the domain of $f$ is $(-\infty,2)\cup(2,\infty)$.
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=\tfrac{1+4x}{2x-1}$."
-  answer="$(-\infty,\tfrac{1}{2})\cup(\tfrac{1}{2},\infty)$"
-  hint="Set the denominator equal to zero; that input is the one value to exclude."
+{{< fillin
+  question="Find the domain of the function $f(x)=\tfrac{1+4x}{2x-1}$. Write it in interval notation."
+  answer="(-\infty,\frac{1}{2})\cup(\frac{1}{2},\infty)"
+  answerForm="lowest-terms"
+  answerDisplay="$(-\infty,\tfrac{1}{2})\cup(\tfrac{1}{2},\infty)$"
+  hint="Set the denominator equal to zero and solve; exclude that input and join the two remaining intervals with $\cup$."
 >}}
-$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
-$[\tfrac{1}{2},\infty)$
-$(-\infty,\tfrac{1}{2})\cup(\tfrac{1}{2},\infty)$
-$(-\infty,2)\cup(2,\infty)$
-{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
   **How to:** given a function written in equation form including an even
@@ -358,16 +352,13 @@ $$
 Now, we will exclude any number greater than 7 from the domain. The answers
 are all real numbers less than or equal to $7$, or $(-\infty,7]$.
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=\sqrt{5+2x}$."
-  answer="$[-\tfrac{5}{2},\infty)$"
-  hint="Set the radicand greater than or equal to zero and solve the inequality."
+{{< fillin
+  question="Find the domain of the function $f(x)=\sqrt{5+2x}$. Write it in interval notation."
+  answer="[-\frac{5}{2},\infty)"
+  answerForm="lowest-terms"
+  answerDisplay="$[-\tfrac{5}{2},\infty)$"
+  hint="Set the radicand greater than or equal to zero and solve the inequality; an endpoint the inequality includes takes a bracket."
 >}}
-$(-\infty,\infty)$
-$[-\tfrac{5}{2},\infty)$
-$(-\infty,-\tfrac{5}{2}]$
-$[\tfrac{5}{2},\infty)$
-{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
   **Q&A.** *Can there be functions in which the domain and range do not
@@ -511,16 +502,13 @@ values that are between $-2$ and $-1$, or values that are greater than 3
 values that are less than or equal to $-2$, or values that are greater than or equal to $-1$ and less than 3
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Write the same set in interval notation."
-  answer="$(-\infty,-2]\cup[-1,3)$"
+{{< fillin
+  question="Write the set graphed on the same number line in interval notation."
+  answer="(-\infty,-2]\cup[-1,3)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,-2]\cup[-1,3)$"
   hint="A solid dot takes a bracket and a hollow dot takes a parenthesis; join the two pieces with $\cup$."
 >}}
-$[-2,-1]\cup(3,\infty)$
-$(-\infty,-2]\cup[-1,3)$
-$(-\infty,-2]\cup[-1,3]$
-$(-\infty,-2)\cup(-1,3]$
-{{< /multiplechoice >}}
 
 ## Finding domain and range from graphs
 
@@ -532,7 +520,7 @@ mind that if the graph continues beyond the portion of the graph we can see,
 the domain and range may be greater than the visible values.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A curve beginning at a solid point at (−5, 5), falling to a low point near (−0.7, −2), rising to a high point near (2.2, −0.8), then falling steeply off the bottom of the grid near x = 4.9. A horizontal arrow labelled Domain runs right from x = −5, and a vertical arrow labelled Range runs down from y = 5.","xMin":-6,"xMax":6,"yMin":-9,"yMax":7,"unit":20,"tickLabels":true,"polynomials":[{"coeffs":[-1.9302,0.438,0.2517,-0.0762,-0.0107],"from":-5,"arrows":"end"}],"points":[{"at":[-5,5]},{"at":[-5,6]},{"at":[5,5]}],"segments":[{"from":[-5,6],"to":[5.7,6],"arrows":"end"},{"from":[5,5],"to":[5,-8.7],"arrows":"end"}],"texts":[{"at":[2,6],"text":"Domain","dy":-9,"anchor":"middle"},{"at":[5,2],"text":"Range","dx":-9,"anchor":"end"}]}
+{"ariaLabel":"A curve beginning at a solid point at (−5, 5), falling through the x-axis near x = −3.4 to a low point near (−1, −2), rising to a high point near (2.2, −1), then falling steeply off the bottom of the grid near x = 4.6. A horizontal arrow labelled Domain runs right from a dot at (−5, 6.5), and a vertical arrow labelled Range runs down from a dot at (5.5, 5).","xMin":-6,"xMax":6,"yMin":-9,"yMax":7,"unit":20,"tickLabels":true,"polylines":[{"through":[[-5,5],[-4.75,3.902],[-4.5,2.936],[-4.25,2.088],[-4.0,1.347],[-3.75,0.702],[-3.5,0.147],[-3.25,-0.329],[-3.0,-0.731],[-2.75,-1.067],[-2.5,-1.342],[-2.25,-1.562],[-2.0,-1.732],[-1.75,-1.857],[-1.5,-1.94],[-1.25,-1.986],[-1.0,-1.999],[-0.75,-1.982],[-0.5,-1.94],[-0.25,-1.876],[0.0,-1.794],[0.25,-1.698],[0.5,-1.593],[0.75,-1.483],[1.0,-1.374],[1.25,-1.271],[1.5,-1.18],[1.75,-1.108],[2.0,-1.063],[2.25,-1.052],[2.5,-1.086],[2.75,-1.173],[3.0,-1.325],[3.25,-1.555],[3.5,-1.88],[3.75,-2.331],[4.0,-2.989],[4.05,-3.162],[4.1,-3.356],[4.15,-3.575],[4.2,-3.826],[4.25,-4.116],[4.3,-4.456],[4.35,-4.858],[4.4,-5.339],[4.45,-5.92],[4.5,-6.629],[4.55,-7.5],[4.6,-8.579],[4.605,-8.7]],"arrows":"end"}],"points":[{"at":[-5,5]},{"at":[-5,6.5]},{"at":[5.5,5]}],"segments":[{"from":[-5,6.5],"to":[5.7,6.5],"arrows":"end"},{"from":[5.5,5],"to":[5.5,-8.7],"arrows":"end"}],"texts":[{"at":[2.5,6.5],"text":"Domain","dy":-9,"anchor":"middle"},{"at":[5.5,2],"text":"Range","dx":-9,"anchor":"end"}]}
 {{< /apfigure >}}
 
 We can observe that the graph extends horizontally from $-5$ to the right
@@ -546,7 +534,7 @@ of the graph for range.
 shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f from an open circle at (−3, 0), falling to a low point at (−2, −4), rising to a high point at (0, 0), then falling to a solid point at (1, −4).","xMin":-4,"xMax":2,"yMin":-6,"yMax":2,"unit":24,"tickLabels":true,"cubics":[{"a":-1,"b":-3,"c":0,"d":0,"from":-3,"to":1,"arrows":false}],"points":[{"at":[-3,0],"open":true},{"at":[1,-4]}],"texts":[{"at":[0.4,-2.4],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f from an open circle at (−3, 0), falling to a low point at (−2, −4), rising to a high point at (0, 0), then falling to a solid point at (1, −4).","xMin":-4,"xMax":2,"yMin":-6,"yMax":2,"xUnit":48,"yUnit":24,"tickLabels":true,"cubics":[{"a":-1,"b":-3,"c":0,"d":0,"from":-3,"to":1,"arrows":false}],"points":[{"at":[-3,0],"open":true},{"at":[1,-4]}],"texts":[{"at":[0.4,-2.4],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 **Solution.** We can observe that the horizontal extent of the graph is $-3$
@@ -556,14 +544,14 @@ The vertical extent of the graph is 0 to $-4$, so the range is $[-4,0]$. The
 graph below marks both.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same graph of f with its extent marked: a horizontal segment at height 1 from an open circle above x = −3 to a solid dot above x = 1 shows the domain, and a vertical segment at x = 1.6 from a solid dot at height 0 down to a solid dot at height −4 shows the range.","xMin":-4,"xMax":3,"yMin":-6,"yMax":2,"unit":24,"tickLabels":true,"cubics":[{"a":-1,"b":-3,"c":0,"d":0,"from":-3,"to":1,"arrows":false}],"points":[{"at":[-3,0],"open":true},{"at":[1,-4]},{"at":[-3,1],"open":true},{"at":[1,1]},{"at":[1.8,0]},{"at":[1.8,-4]}],"segments":[{"from":[-3,1],"to":[1,1]},{"from":[1.8,0],"to":[1.8,-4]}],"texts":[{"at":[-1.6,1],"text":"Domain","dy":-10,"anchor":"middle"},{"at":[2,-2],"text":"Range","dx":4}]}
+{"ariaLabel":"The same graph of f with its extent marked: a horizontal segment at height 1.5 from an open circle above x = −3 to a solid dot above x = 1 shows the domain, and a vertical segment at x = 1.5 from a solid dot at height 0 down to a solid dot at height −4 shows the range.","xMin":-4,"xMax":2,"yMin":-6,"yMax":2,"xUnit":48,"yUnit":24,"tickLabels":true,"cubics":[{"a":-1,"b":-3,"c":0,"d":0,"from":-3,"to":1,"arrows":false}],"points":[{"at":[-3,0],"open":true},{"at":[1,-4]},{"at":[-3,1.5],"open":true},{"at":[1,1.5]},{"at":[1.5,0]},{"at":[1.5,-4]}],"segments":[{"from":[-3,1.5],"to":[1,1.5]},{"from":[1.5,0],"to":[1.5,-4]}],"texts":[{"at":[-1.5,1.5],"text":"Domain","dy":-10,"anchor":"middle"},{"at":[1.5,-2],"text":"Range","dx":6}]}
 {{< /apfigure >}}
 
 **Example.** Find the domain and range of the function $f$ whose graph is
 shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A line graph titled Alaska Crude Oil Production. The horizontal axis is the year from 1973 to 2008 and the vertical axis is thousand barrels per day from 0 to 2,200. Production sits near 200 through 1976, climbs steeply to about 1,600 by 1980, drifts up to a peak of about 2,010 in 1988, then declines steadily to about 680 in 2008.","xMin":1973,"xMax":2008,"yMin":0,"yMax":2200,"xUnit":8,"yUnit":0.1,"margin":46,"xGridStep":5,"yGridStep":200,"tickLabels":true,"xTickStep":5,"yTickStep":400,"xTickGrouping":false,"xLabel":"t","yLabel":"b","maxWidth":360,"polylines":[{"through":[[1973,215],[1974,195],[1975,190],[1976,180],[1977,465],[1978,1230],[1979,1400],[1980,1610],[1981,1610],[1982,1690],[1983,1710],[1984,1720],[1985,1830],[1986,1870],[1987,1960],[1988,2010],[1989,1870],[1990,1780],[1991,1800],[1992,1710],[1993,1590],[1994,1580],[1995,1490],[1996,1400],[1997,1300],[1998,1180],[1999,1050],[2000,970],[2001,980],[2002,980],[2003,940],[2004,880],[2005,830],[2006,740],[2007,720],[2008,680]]}]}
+{"ariaLabel":"A line graph of Alaska crude oil production. The horizontal axis is the year from 1973 to 2008 and the vertical axis is thousand barrels per day from 0 to 2,200. Production sits near 200 through 1976, climbs steeply to about 1,600 by 1980, drifts up to a peak of about 2,010 in 1988, then declines steadily to about 680 in 2008.","xMin":1973,"xMax":2008,"yMin":0,"yMax":2200,"xUnit":8,"yUnit":0.1,"margin":46,"xGridStep":5,"yGridStep":200,"tickLabels":true,"xTickStep":5,"yTickStep":400,"xTickGrouping":false,"xLabel":"t","yLabel":"b","maxWidth":360,"polylines":[{"through":[[1973,215],[1974,195],[1975,190],[1976,180],[1977,465],[1978,1230],[1979,1400],[1980,1610],[1981,1610],[1982,1690],[1983,1710],[1984,1720],[1985,1830],[1986,1870],[1987,1960],[1988,2010],[1989,1870],[1990,1780],[1991,1800],[1992,1710],[1993,1590],[1994,1580],[1995,1490],[1996,1400],[1997,1300],[1998,1180],[1999,1050],[2000,970],[2001,980],[2002,980],[2003,940],[2004,880],[2005,830],[2006,740],[2007,720],[2008,680]]}]}
 {{< /apfigure >}}
 
 <small>Alaska crude oil production. (credit: modification of work by the U.S.
@@ -582,29 +570,26 @@ $[180,2010]$. For the domain and the range, we approximate the smallest and
 largest values since they do not fall exactly on the grid lines.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A line graph titled World Population Increase. The horizontal axis is the year from 1950 to 2002 and the vertical axis is millions of people from 0 to 100. The curve rises from about 47 million in 1950 to about 75 million by 1966, levels off near 74 to 76 million through the mid-1970s, rises to a peak of about 89 million in 1985, then eases back to about 76 million by 2002.","xMin":1950,"xMax":2002,"yMin":0,"yMax":100,"xUnit":5.4,"yUnit":2.2,"margin":34,"xGridStep":10,"yGridStep":10,"tickLabels":true,"xTickStep":10,"yTickStep":20,"xTickGrouping":false,"xLabel":"t","yLabel":"P","maxWidth":360,"smoothCurves":[{"freeform":true,"through":[[1950,47],[1955,53],[1960,56],[1963,63],[1966,74],[1970,76],[1975,74],[1980,81],[1985,89],[1990,84],[1995,80],[2002,76]]}]}
+{"ariaLabel":"A line graph titled World Population Increase. The horizontal axis is the year, marked from 1950 to 2000 in steps of 10, and the vertical axis is millions of people, marked from 0 to 100 in steps of 20. The curve runs across the whole marked span of years: it rises, levels off from the late 1960s to the mid-1970s, climbs to its highest point in the mid-1980s, then eases down.","xMin":1950,"xMax":2000,"yMin":0,"yMax":100,"xUnit":5.6,"yUnit":2.2,"margin":34,"xGridStep":10,"yGridStep":10,"tickLabels":true,"xTickStep":10,"yTickStep":20,"xTickGrouping":false,"xLabel":"Year","yLabel":"Millions of people","maxWidth":360,"smoothCurves":[{"freeform":true,"through":[[1950,47],[1955,53.4],[1958,55.2],[1960,58],[1963,68],[1966,74.8],[1970,75.7],[1975,74.4],[1980,82.6],[1983,87.4],[1985,89],[1987,88.3],[1990,83.2],[1995,78.6],[2000,76.2]]}],"texts":[{"at":[1975,100],"text":"World Population Increase","dy":-30,"anchor":"middle"}]}
 {{< /apfigure >}}
 
-{{< multiplechoice
-  question="Using the World Population Increase graph above, identify the domain using interval notation."
-  answer="$[1950,2002]$"
-  hint="The domain is the horizontal extent of the graph, read off the year axis."
+{{< fillin
+  question="Using the World Population Increase graph above, identify the domain in interval notation."
+  answer="[1950,2000]"
+  answerForm="decimal"
+  answerDisplay="$[1950,2000]$"
+  hint="The domain is the horizontal extent of the graph: read the first and last years the curve reaches."
 >}}
-$[0,100]$
-$[47,89]$
-$[1950,2002]$
-$[1950,2000]$
-{{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Using the same graph, identify the range using interval notation, in people."
+  question="Using the same graph, identify the range in interval notation, in people."
   answer="$[47{,}000{,}000,\,89{,}000{,}000]$"
-  hint="The range is the vertical extent; remember the axis is labeled in millions of people."
+  hint="The range is the vertical extent: read the lowest and highest points of the curve, then convert from millions of people to people."
 >}}
 $[47{,}000{,}000,\,89{,}000{,}000]$
 $[47,89]$
-$[1950,2002]$
-$[0,100{,}000{,}000]$
+$[0,\,89{,}000{,}000]$
+$[0,\,100{,}000{,}000]$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -622,7 +607,7 @@ and range of each.
 **Constant function** — $f(x)=c$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the constant function f of x equals c: a horizontal line, drawn here above the x-axis, extending with arrows in both directions.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"yLabel":"f(x)","lines":[{"y":2,"label":"f(x) = c","labelSide":"left","labelAt":0.7}]}
+{"ariaLabel":"The graph of the constant function f of x equals c: a horizontal line, drawn here above the x-axis, extending with arrows in both directions.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":false,"tickStep":2,"yLabel":"f(x)","lines":[{"y":2,"label":"f(x) = c","labelSide":"left","labelAt":0.7}]}
 {{< /apfigure >}}
 
 For the constant function $f(x)=c$, the domain consists of all real numbers;
@@ -677,7 +662,7 @@ all real numbers. Domain: $(-\infty,\infty)$. Range: $(-\infty,\infty)$.
 **Reciprocal function** — $f(x)=\tfrac{1}{x}$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the reciprocal function f of x equals 1 over x: two branches approaching but never touching the axes, one in the upper right and one in the lower left.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"yLabel":"f(x)","curves":[{"kind":"reciprocal"}]}
+{"ariaLabel":"The graph of the reciprocal function f of x equals 1 over x: two branches approaching but never touching the axes, one in the upper right and one in the lower left.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"yLabel":"f(x)","curves":[{"kind":"reciprocal","from":-3.5,"to":-0.3333},{"kind":"reciprocal","from":0.3333,"to":3.5}]}
 {{< /apfigure >}}
 
 For the reciprocal function $f(x)=\tfrac{1}{x}$, we cannot divide by 0, so we
@@ -689,7 +674,7 @@ Domain: $(-\infty,0)\cup(0,\infty)$. Range: $(-\infty,0)\cup(0,\infty)$.
 **Reciprocal squared function** — $f(x)=\tfrac{1}{x^2}$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the reciprocal squared function f of x equals 1 over x squared: two branches, both above the horizontal axis, approaching but never touching the axes.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"yLabel":"f(x)","curves":[{"kind":"reciprocal-squared"}]}
+{"ariaLabel":"The graph of the reciprocal squared function f of x equals 1 over x squared: two branches, both above the horizontal axis, approaching but never touching the axes.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"yLabel":"f(x)","curves":[{"kind":"reciprocal-squared","from":-3.5,"to":-0.5774},{"kind":"reciprocal-squared","from":0.5774,"to":3.5}]}
 {{< /apfigure >}}
 
 For the reciprocal squared function $f(x)=\tfrac{1}{x^2}$, we cannot divide
@@ -766,30 +751,24 @@ range of $f$ is $[0,\infty)$.
 The graph below represents the function $f$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 2 times the square root of x plus 4. It begins at a solid point at (−4, 0) and rises to the right, passing near (0, 4) and continuing with an arrow.","xMin":-5,"xMax":5,"yMin":-1,"yMax":6,"unit":24,"tickLabels":true,"curves":[{"kind":"sqrt","a":2,"h":-4,"arrows":"end"}],"points":[{"at":[-4,0]}],"texts":[{"at":[-2.4,3.1],"text":"f","italic":true}]}
+{"ariaLabel":"The graph of f of x equals 2 times the square root of x plus 4. It begins at a solid point at (−4, 0) and rises to the right, passing through (0, 4) and continuing with an arrow.","xMin":-5,"xMax":5,"yMin":-1,"yMax":6,"unit":24,"tickLabels":true,"curves":[{"kind":"sqrt","a":2,"h":-4,"arrows":"end"}],"points":[{"at":[-4,0]}],"texts":[{"at":[-2.4,3.1],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
-{{< multiplechoice
-  question="Find the domain of $f(x)=-\sqrt{2-x}$."
-  answer="$(-\infty,2]$"
-  hint="The radicand must be nonnegative: solve $2-x\ge 0$."
+{{< fillin
+  question="Find the domain of $f(x)=-\sqrt{2-x}$. Write it in interval notation."
+  answer="(-\infty,2]"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,2]$"
+  hint="Set the radicand greater than or equal to zero and solve for $x$."
 >}}
-$(-\infty,\infty)$
-$[2,\infty)$
-$(-\infty,2]$
-$(-\infty,-2]$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Find the range of $f(x)=-\sqrt{2-x}$."
-  answer="$(-\infty,0]$"
-  hint="A square root is never negative, so think about what the leading minus sign does to every output."
+{{< fillin
+  question="Find the range of $f(x)=-\sqrt{2-x}$. Write it in interval notation."
+  answer="(-\infty,0]"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,0]$"
+  hint="Start from the range of the square root alone, then apply the leading minus sign to every output."
 >}}
-$(-\infty,\infty)$
-$[0,\infty)$
-$(-\infty,0]$
-$(-\infty,2]$
-{{< /multiplechoice >}}
 
 ## Graphing piecewise-defined functions
 
@@ -977,9 +956,9 @@ function, though $(1,1)$ and $(2,3)$ are.
   mode="graph"
   question="Which graph shows the piecewise function $f(x)=x^3$ if $x<-1$, $f(x)=-2$ if $-1<x<4$, and $f(x)=\sqrt{x}$ if $x>4$?"
   answerIndex="1"
-  hint="Check where each piece starts and stops: the square-root piece only exists past $x=4$, and the middle piece sits at height $-2$."
+  hint="Graph each formula only over its own interval, and evaluate each piece at its boundaries to place the endpoints."
 >}}
-{"ariaLabel":"A cubic curve rising from the lower left to an open circle at (−1, −1); a horizontal segment at height −2 between open circles at (−1, −2) and (4, −2); and a square-root curve starting at the origin and rising to the right, crossing the horizontal segment.","xMin":-3,"xMax":10,"yMin":-4,"yMax":4,"unit":22,"tickLabels":true,"tickStep":2,"yTickStep":4,"cubics":[{"a":1,"to":-1,"arrows":"start"}],"curves":[{"kind":"sqrt"}],"segments":[{"from":[-1,-2],"to":[4,-2]}],"points":[{"at":[-1,-1],"open":true},{"at":[-1,-2],"open":true},{"at":[4,-2],"open":true},{"at":[0,0]}]}
+{"ariaLabel":"A cubic curve rising from the lower left to an open circle at (−1, −1); a horizontal segment at height −2 between open circles at (−1, −2) and (4, −2); and a square-root curve starting at a solid point at the origin and rising to the right.","xMin":-3,"xMax":10,"yMin":-4,"yMax":4,"unit":22,"tickLabels":true,"tickStep":2,"yTickStep":4,"cubics":[{"a":1,"to":-1,"arrows":"start"}],"curves":[{"kind":"sqrt"}],"segments":[{"from":[-1,-2],"to":[4,-2]}],"points":[{"at":[-1,-1],"open":true},{"at":[-1,-2],"open":true},{"at":[4,-2],"open":true},{"at":[0,0]}]}
 ===OPT===
 {"ariaLabel":"A cubic curve rising from the lower left to an open circle at (−1, −1); a horizontal segment at height −2 between open circles at (−1, −2) and (4, −2); and a square-root curve from an open circle at (4, 2) rising slowly to the right.","xMin":-3,"xMax":10,"yMin":-4,"yMax":4,"unit":22,"tickLabels":true,"tickStep":2,"yTickStep":4,"cubics":[{"a":1,"to":-1,"arrows":"start"}],"curves":[{"kind":"sqrt","from":4}],"segments":[{"from":[-1,-2],"to":[4,-2]}],"points":[{"at":[-1,-1],"open":true},{"at":[-1,-2],"open":true},{"at":[4,-2],"open":true},{"at":[4,2],"open":true}]}
 ===OPT===
@@ -1026,102 +1005,95 @@ about }x\}$.
 
 ### Find the domain of a function defined by an equation
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=5-2x^2$."
-  answer="$(-\infty,\infty)$"
-  hint="There is no denominator or even root here, so ask whether any real number could fail."
+{{< fillin
+  question="Find the domain of the function $f(x)=5-2x^2$. Write it in interval notation."
+  answer="(-\infty,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="Look for a denominator or an even root that could restrict the input."
 >}}
-$(-\infty,5]$
-$[0,\infty)$
-$(-\infty,0)\cup(0,\infty)$
-$(-\infty,\infty)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=3-\sqrt{6-2x}$."
-  answer="$(-\infty,3]$"
+{{< fillin
+  question="Find the domain of the function $f(x)=3-\sqrt{6-2x}$. Write it in interval notation."
+  answer="(-\infty,3]"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,3]$"
   hint="Set the radicand greater than or equal to zero and solve for $x$."
 >}}
-$[3,\infty)$
-$(-\infty,6]$
-$(-\infty,3]$
-$(-\infty,3)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=\tfrac{3x+1}{4x+2}$."
-  answer="$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$"
-  hint="Set the denominator equal to zero; that input is the one value to exclude."
+{{< fillin
+  question="Find the domain of the function $f(x)=\tfrac{3x+1}{4x+2}$. Write it in interval notation."
+  answer="(-\infty,-\frac{1}{2})\cup(-\frac{1}{2},\infty)"
+  answerForm="lowest-terms"
+  answerDisplay="$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$"
+  hint="Set the denominator equal to zero and solve; exclude that input and join the two remaining intervals with $\cup$."
 >}}
-$(-\infty,-\tfrac{1}{3})\cup(-\tfrac{1}{3},\infty)$
-$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
-$(-\infty,\infty)$
-$[-\tfrac{1}{2},\infty)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Find the domain of the function $f(x)=\tfrac{2x+1}{\sqrt{5-x}}$."
-  answer="$(-\infty,5)$"
-  hint="The radicand sits under a denominator, so it must be strictly positive, not just nonnegative."
+{{< fillin
+  question="Find the domain of the function $f(x)=\tfrac{2x+1}{\sqrt{5-x}}$. Write it in interval notation."
+  answer="(-\infty,5)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,5)$"
+  hint="The square root sits in the denominator: decide whether the radicand may equal zero, then solve for $x$."
 >}}
-$(5,\infty)$
-$(-\infty,5)$
-$(-\infty,5]$
-$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
-{{< /multiplechoice >}}
 
 ### Graph piecewise-defined functions
 
 {{< fillin
   question="A piecewise function is defined by $f(x)=\begin{cases}5x & \text{if }x<0\\[4pt]3 & \text{if }0\le x\le3\\[4pt]x^2 & \text{if }x>3\end{cases}$. Find $f(-1)$."
   answer="-5"
-  hint="Since $-1<0$, use the first piece, $5x$."
+  answerForm="decimal"
+  answerDisplay="$-5$"
+  hint="Find the interval that contains the input, then evaluate that piece's formula."
 >}}
 
 {{< fillin
   question="For the same piecewise function, find $f(0)$."
   answer="3"
-  hint="Since $0\le 0\le 3$, use the middle piece, which is constant."
+  answerForm="decimal"
+  answerDisplay="$3$"
+  hint="Check which inequality the input satisfies; an endpoint belongs to the piece whose inequality includes it."
 >}}
 
 {{< fillin
   question="For the same piecewise function, find $f(2)$."
   answer="3"
-  hint="Since $0\le 2\le 3$, the input still falls in the middle piece."
+  answerForm="decimal"
+  answerDisplay="$3$"
+  hint="Find the interval that contains the input, then evaluate that piece's formula."
 >}}
 
 {{< fillin
   question="For the same piecewise function, find $f(4)$."
   answer="16"
-  hint="Since $4>3$, use the third piece, $x^2$."
+  answerForm="decimal"
+  answerDisplay="$16$"
+  hint="Find the interval that contains the input, then evaluate that piece's formula."
 >}}
 
 {{< multiplechoice
   mode="graph"
   question="Which graph shows the piecewise function $f(x)=2x-1$ if $x<1$ and $f(x)=1+x$ if $x\ge 1$?"
   answerIndex="0"
-  hint="Check which endpoint is open and which is closed at $x=1$: the first piece excludes $x=1$, the second includes it."
+  hint="Evaluate each piece at the boundary $x=1$, and read each inequality sign to decide whether that endpoint is drawn open or closed."
 >}}
-{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to an open circle at (1, 1), and a separate line of slope 1 starting at a solid point at (1, 2) and continuing to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":1,"arrows":"start"},{"coeffs":[1,1],"from":1,"arrows":"end"}],"points":[{"at":[1,1],"open":true},{"at":[1,2]}]}
+{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to an open circle at (1, 1), and a separate line of slope 1 starting at a solid point at (1, 2) and continuing to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":1,"arrows":"start"},{"coeffs":[1,1],"from":1,"arrows":"end"}],"points":[{"at":[1,1],"open":true},{"at":[1,2]}],"yTickStep":2}
 ===OPT===
-{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to a solid point at (1, 1), and a separate line of slope 1 starting at an open circle at (1, 2) and continuing to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":1,"arrows":"start"},{"coeffs":[1,1],"from":1,"arrows":"end"}],"points":[{"at":[1,1]},{"at":[1,2],"open":true}]}
+{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to a solid point at (1, 1), and a separate line of slope 1 starting at an open circle at (1, 2) and continuing to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":1,"arrows":"start"},{"coeffs":[1,1],"from":1,"arrows":"end"}],"points":[{"at":[1,1]},{"at":[1,2],"open":true}],"yTickStep":2}
 ===OPT===
-{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to an open circle at (1, 1), and a separate line of slope negative 1 starting at a solid point at (1, 2) and falling to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":1,"arrows":"start"},{"coeffs":[3,-1],"from":1,"arrows":"end"}],"points":[{"at":[1,1],"open":true},{"at":[1,2]}]}
+{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to an open circle at (1, 1), and a separate line of slope negative 1 starting at a solid point at (1, 2) and falling to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":1,"arrows":"start"},{"coeffs":[3,-1],"from":1,"arrows":"end"}],"points":[{"at":[1,1],"open":true},{"at":[1,2]}],"yTickStep":2}
 ===OPT===
-{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to an open circle at (0, -1), and a separate line of slope 1 starting at a solid point at (0, 1) and continuing to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":0,"arrows":"start"},{"coeffs":[1,1],"from":0,"arrows":"end"}],"points":[{"at":[0,-1],"open":true},{"at":[0,1]}]}
+{"ariaLabel":"The graph of a piecewise function: a line of slope 2 rising to an open circle at (0, -1), and a separate line of slope 1 starting at a solid point at (0, 1) and continuing to the right.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"polynomials":[{"coeffs":[-1,2],"to":0,"arrows":"start"},{"coeffs":[1,1],"from":0,"arrows":"end"}],"points":[{"at":[0,-1],"open":true},{"at":[0,1]}],"yTickStep":2}
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="A piecewise function is defined by $f(x)=x^2-2$ if $x<1$ and $f(x)=-x^2+2$ if $x>1$. Find its domain."
-  answer="$(-\infty,1)\cup(1,\infty)$"
-  hint="Neither piece's interval includes $x=1$ itself, so check whether that input is covered at all."
+{{< fillin
+  question="A piecewise function is defined by $f(x)=x^2-2$ if $x<1$ and $f(x)=-x^2+2$ if $x>1$. Find its domain. Write it in interval notation."
+  answer="(-\infty,1)\cup(1,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,1)\cup(1,\infty)$"
+  hint="The domain is the union of the pieces' intervals: check whether every input, including the boundary, is covered by some piece."
 >}}
-$(-\infty,\infty)$
-$(-\infty,1)\cup(1,\infty)$
-$(-\infty,1]$
-$[1,\infty)$
-{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.2: Domain and Range](https://openstax.org/books/precalculus-2e/pages/1-2-domain-and-range) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the two opening bar charts (whose bar heights are read from the source charts), the domain-and-range function-machine diagram, the number lines, the toolkit function library, and the piecewise graphs; presented the interval-notation summary and the inequality/set-builder/interval comparison as Markdown tables, with the comparison's number lines following as a labelled figure group and the generic $a$-and-$b$ number lines of the first summary replaced by its own description column; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, presented as multiple choice because interval and set-builder notation cannot be graded as free-response math; presented the piecewise-sketching practice item as a "which graph is correct" question, since the graphing component cannot accept a piecewise answer; and adapted selected end-of-section exercises (Verbal, Algebraic, Graphical, and Numeric subsections) into the section-final interactive Practice block.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.2: Domain and Range](https://openstax.org/books/precalculus-2e/pages/1-2-domain-and-range) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible figure, including the two opening bar charts (whose bar heights are read from the source charts), the domain-and-range function-machine diagram (its machine drawn as a funnel), the number lines, the toolkit function library (the constant function drawn at one sample height on an unnumbered grid), the graphs with their domain and range marked, and the piecewise graphs, labelling the oil-production axes $t$ and $b$ as the worked solution names them; presented the interval-notation summary and the inequality/set-builder/interval comparison as Markdown tables, with the comparison's number lines following as a labelled figure group and the generic $a$-and-$b$ number lines of the first summary replaced by its own description column; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback: the domain and range asks as interval-notation fill-ins, the ordered-pair domain as a multiple choice among sets, and the number-line Try It as a words multiple choice and an interval-notation fill-in, leaving out its set-builder part; keyed the World Population Increase domain $[1950,2000]$, the years the graph shows, where the source answer prints $[1950,2002]$, and asked for its range, an estimate read off the curve, as a multiple choice; presented the piecewise-sketching practice item as a "which graph is correct" question, since the graphing component cannot accept a piecewise answer; and adapted selected end-of-section exercises (Algebraic, Graphical, and Numeric subsections) into the section-final interactive Practice block, posing the piecewise-sketching exercise as a "which graph is correct" question.</small>

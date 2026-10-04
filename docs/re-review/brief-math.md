@@ -253,7 +253,26 @@ rational value left unevaluated (`\log 10000`); `single-logarithm` passes a
 apply per coordinate as value forms do, so a polynomial tuple takes
 `expanded distributed no-like-terms`. A `log` curve with base below 1 trims to
 `from`/`to` (graph-core). A paraphrased source stem can drop a source-key
-match: keep a source exercise's wording and add the pin after it.
+match: keep a source exercise's wording and add the pin after it — a pin
+that prints a number of its own ("Round the number of years after 2005 …")
+can drop it too; "Round to the nearest year." kept the match (Precalculus
+2.3). Since the Precalculus chapters 1–2 re-review (October 4, 2026): a radical
+over a variable whose radicand is negative at the small sample points
+(`\frac{3x^2}{\sqrt{x-5}}`) is sampled inside the key's own domain, so the
+rationalized entry `\frac{3x^2\sqrt{x-5}}{x-5}` grades `correct` and
+`\sqrt{x-50}` against `\sqrt{x-5}` grades `incorrect` (a point where the key is
+real and the response is not is a disagreement); `reduced-fraction` refuses a
+numeral common factor beside a radical (`\frac{6x^2}{2\sqrt{x-5}}`);
+`simplified-radical` refuses uncombined terms in a radicand
+(`\sqrt{x^2+1+2}`); `point-slope-form` refuses `y=-3x` unless the key's own
+point is the origin; `slope-intercept-form` strips a one-letter label that is
+not a variable of the expression (`d=100-10t`) and refuses a written zero term
+or a parenthesized point-slope shape (`2x+0`, `2(x-0)`); a chained label
+(`y=f(x)=\frac{\sqrt[3]{x}}{2}`) is read as one label; and an unevaluated
+numeral root (`\frac{\sqrt[3]{x}}{\sqrt[3]{8}}`) is `form` under
+`simplified-radical`. A linear-model key (`0.5x+12.5`, `12025-205t`) takes
+`slope-intercept-form`, which accepts a function label and either term order
+and refuses an unworked slope.
 
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
@@ -423,6 +442,16 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
   `answerForm`, an `answerMode`, or a pinned ask. Convert only per the
   math playbook's own rules (a categorical answer; a shape no token
   refuses) and list it under "needs parent".
+- **A multiple choice that exists only because the grader once could not
+  take the answer** — interval notation, a union, a domain or range, a
+  number, a function formula — becomes a fill-in again, its stem saying "in
+  interval notation" where needed and a value form on every endpoint; probe
+  the key, the inequality form (`form`), a wrong bracket (`incorrect`), and an
+  unworked endpoint (`form`) *(Precalculus chapters 1–2, October 4, 2026: 31
+  items; precedent Intermediate Algebra 7.1 and 12.1)*. Categorical
+  multiple choice (yes/no, which graph, describe-the-transformation, verbal
+  judgements, a graph-read estimate, a pair of answers that cannot be one
+  entry) stays.
 - Hints, author-written items, `answerDisplay`, `answerForm`, pinning
   words in a question, item order within a group, figures and their
   labels, worked-example arithmetic, and footers: yes.

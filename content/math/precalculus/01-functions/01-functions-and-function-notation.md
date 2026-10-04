@@ -66,7 +66,7 @@ The three diagrams below compare relations that are functions and not
 functions.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A mapping diagram. The input bubble holds p, q, and r; the output bubble holds m and n. An arrow goes from p to m, from q to n, and from r to n. Each input has exactly one arrow leaving it, so the relation is a function.","circles":[{"at":[0,0],"r":1.6},{"at":[4.5,0],"r":1.25}],"texts":[{"at":[0,2.3],"text":"Inputs","anchor":"middle"},{"at":[4.5,2.3],"text":"Outputs","anchor":"middle"},{"at":[0,0.85],"text":"p","anchor":"middle"},{"at":[0,0],"text":"q","anchor":"middle"},{"at":[0,-0.85],"text":"r","anchor":"middle"},{"at":[4.5,0.5],"text":"m","anchor":"middle"},{"at":[4.5,-0.5],"text":"n","anchor":"middle"},{"at":[2.25,-2.1],"text":"(a)","anchor":"middle"}],"segments":[{"from":[0.65,0.85],"to":[3.6,0.55],"arrow":true},{"from":[0.65,0],"to":[3.6,-0.4],"arrow":true},{"from":[0.65,-0.85],"to":[3.6,-0.55],"arrow":true}]}
+{"ariaLabel":"A mapping diagram. The input bubble holds p, q, and r; the output bubble holds m and n. An arrow goes from p to m, from q to n, and from r to n. Each input has exactly one arrow leaving it, so the relation is a function.","circles":[{"at":[0,0],"r":1.6},{"at":[4.5,0],"r":1.25}],"texts":[{"at":[0,2.3],"text":"Inputs","anchor":"middle"},{"at":[4.5,2.3],"text":"Outputs","anchor":"middle"},{"at":[0,0.85],"text":"p","anchor":"middle"},{"at":[0,0],"text":"q","anchor":"middle"},{"at":[0,-0.85],"text":"r","anchor":"middle"},{"at":[4.5,0.5],"text":"m","anchor":"middle"},{"at":[4.5,-0.5],"text":"n","anchor":"middle"},{"at":[2.25,-2.1],"text":"(a)","anchor":"middle"}],"segments":[{"from":[0.65,0.85],"to":[3.6,0.55],"arrow":true},{"from":[0.65,0],"to":[3.62,-0.34],"arrow":true},{"from":[0.65,-0.85],"to":[3.62,-0.66],"arrow":true}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="figure" >}}
@@ -130,7 +130,7 @@ be the input values and the items to be the output, then the same input value
 could have more than one output associated with it.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The same coffee shop menu with the arrows reversed, running from each price back to an item. The price 1.99 has two arrows leaving it, one to Jelly Donut and one to Chocolate Donut, so one price gives two different items.","polygons":[{"points":[[0,0],[8.28,0],[8.28,3.83],[0,3.83]]}],"texts":[{"at":[4.14,3.3],"text":"Menu","anchor":"middle"},{"at":[0.38,2.53],"text":"Item"},{"at":[7.9,2.53],"text":"Price","anchor":"end"},{"at":[0.38,1.76],"text":"Plain Donut"},{"at":[7.9,1.76],"text":"1.49","anchor":"end"},{"at":[0.38,1.15],"text":"Jelly Donut"},{"at":[7.9,1.15],"text":"1.99","anchor":"end"},{"at":[0.38,0.54],"text":"Chocolate Donut"},{"at":[7.9,0.54],"text":"1.99","anchor":"end"}],"segments":[{"from":[6.75,1.76],"to":[3.22,1.76],"dashed":true,"arrow":true},{"from":[6.75,1.15],"to":[3.22,1.15],"dashed":true,"arrow":true},{"from":[6.75,1.15],"to":[3.99,0.54],"dashed":true,"arrow":true}]}
+{"ariaLabel":"The same coffee shop menu with the prices as inputs: the prices 1.49 and 1.99 are listed on the right and the three items on the left. One arrow runs from 1.49 to Plain Donut, and two arrows leave 1.99, one to Jelly Donut and one to Chocolate Donut, so one price gives two different items.","polygons":[{"points":[[0,0],[8.28,0],[8.28,3.83],[0,3.83]]}],"texts":[{"at":[4.14,3.3],"text":"Menu","anchor":"middle"},{"at":[0.38,2.53],"text":"Item"},{"at":[7.9,2.53],"text":"Price","anchor":"end"},{"at":[0.38,1.76],"text":"Plain Donut"},{"at":[7.9,1.76],"text":"1.49","anchor":"end"},{"at":[0.38,1.15],"text":"Jelly Donut"},{"at":[7.9,1.15],"text":"1.99","anchor":"end"},{"at":[0.38,0.54],"text":"Chocolate Donut"}],"segments":[{"from":[6.75,1.76],"to":[3.22,1.76],"dashed":true,"arrow":true},{"from":[6.75,1.15],"to":[3.22,1.15],"dashed":true,"arrow":true},{"from":[6.75,1.15],"to":[3.99,0.54],"dashed":true,"arrow":true}]}
 {{< /apfigure >}}
 
 Therefore, the item is not a function of price.
@@ -178,7 +178,7 @@ Yes
 {{< multiplechoice
   question="Using the same table, is the player name a function of the rank?"
   answer="Yes"
-  hint="Ask whether any single rank is paired with more than one player. If two players had tied, the answer would change."
+  hint="Ask whether any single rank is paired with more than one player."
 >}}
 Yes
 No
@@ -232,7 +232,7 @@ $\text{days}=f(\text{month})$ or $d=f(m)$. The name of the month is the input
 to a "rule" that associates a specific number (the output) with each input.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The equation 31 equals f of January. An arrow labeled output points up to 31, an arrow labeled rule points up to f, and an arrow labeled input points up to January.","texts":[{"at":[0.23,2.2],"text":"31"},{"at":[1.46,2.2],"text":"="},{"at":[2.3,2.2],"text":"f"},{"at":[2.68,2.2],"text":"(January)"},{"at":[0,0.51],"text":"output"},{"at":[2.07,0],"text":"rule"},{"at":[3.91,0.51],"text":"input"}],"segments":[{"from":[0.54,0.82],"to":[0.46,1.82],"arrow":true},{"from":[2.45,0.21],"to":[2.45,1.82],"arrow":true},{"from":[4.22,0.82],"to":[3.83,1.82],"arrow":true}]}
+{"ariaLabel":"The equation 31 equals f of January. An arrow labeled output points up to 31, an arrow labeled rule points up to f, and an arrow labeled input points up to January.","texts":[{"at":[0.3,2.2],"text":"31"},{"at":[0.95,2.2],"text":"="},{"at":[1.45,2.2],"text":"f","anchor":"middle"},{"at":[1.65,2.2],"text":"(January)"},{"at":[-0.2,0.45],"text":"output"},{"at":[1.45,-0.15],"text":"rule","anchor":"middle"},{"at":[2.4,0.45],"text":"input"}],"segments":[{"from":[0.42,0.95],"to":[0.5,1.85],"arrow":true},{"from":[1.45,0.4],"to":[1.45,1.85],"arrow":true},{"from":[2.8,0.95],"to":[2.45,1.85],"arrow":true}]}
 {{< /apfigure >}}
 
 For example, $f(\text{March})=31$, because March has 31 days. The notation
@@ -366,8 +366,14 @@ $$g(-3)=5,\quad g(0)=1,\quad \text{and}\quad g(4)=5$$
 represent the function in table B. Table C cannot be expressed in a similar
 way because it does not represent a function.
 
+| Input | Output |
+| ---: | ---: |
+| 1 | 10 |
+| 2 | 100 |
+| 3 | 1,000 |
+
 {{< multiplechoice
-  question="Does the table with inputs $1,2,3$ and matching outputs $10,100,1000$ represent a function?"
+  question="Does the table above represent a function?"
   answer="Yes"
   hint="Check whether any input value appears twice with different outputs."
 >}}
@@ -472,6 +478,7 @@ Therefore, for an input of 4, we have an output of 24.
 {{< fillin
   question="Given the function $g(m)=\sqrt{m-4}$, evaluate $g(5)$."
   answer="1"
+  answerForm="decimal"
   hint="Substitute $5$ for $m$ first, then take the square root of what is left."
 >}}
 
@@ -513,6 +520,8 @@ $h(1)=h(-3)=3$ and $h(4)=24$.
 {{< fillin
   question="Given the function $g(m)=\sqrt{m-4}$, solve $g(m)=2$."
   answer="8"
+  answerForm="decimal"
+  answerDisplay="$m=8$"
   hint="Square both sides to undo the radical, then solve for $m$."
 >}}
 
@@ -573,7 +582,7 @@ We now try to solve for $y$ in this equation.
 $$
 \begin{array}{lrcl}
 & y &=& \pm\sqrt{1-x^2} \\[4pt]
-& &=& +\sqrt{1-x^2}\ \text{and}\ -\sqrt{1-x^2}
+& &=& +\sqrt{1-x^2}\ \text{and}\ {-\sqrt{1-x^2}}
 \end{array}
 $$
 
@@ -581,8 +590,9 @@ We get two outputs corresponding to the same input, so this relationship
 cannot be represented as a single function $y=f(x)$.
 
 {{< fillin
-  question="If $x-8y^3=0$, express $y$ as a function of $x$."
+  question="If $x-8y^3=0$, express $y$ as a function of $x$. Simplify the radical."
   answer="\frac{\sqrt[3]{x}}{2}"
+  answerForm="simplified-radical"
   answerDisplay="$y=f(x)=\tfrac{\sqrt[3]{x}}{2}$"
   hint="Isolate $y^3$ first, then take the cube root of both sides."
 >}}
@@ -663,6 +673,7 @@ $g$, our output is also 6.
 {{< fillin
   question="Using the table above, evaluate $g(1)$."
   answer="8"
+  answerForm="decimal"
   hint="Find the column where $n=1$ and read the value directly beneath it."
 >}}
 
@@ -702,6 +713,7 @@ when the input is $-1$ or $3$, the output is $4$.
 {{< fillin
   question="Using the graph above, solve $f(x)=1$. Enter both solutions, separated by a comma."
   answer="0,2"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$x=0$ or $x=2$"
   hint="Find every point on the curve at height $1$ and read off its $x$-coordinate."
@@ -710,10 +722,10 @@ when the input is $-1$ or $3$, the output is $4$.
 ## Determining whether a function is one-to-one
 
 Some functions have a given output value that corresponds to two or more
-input values. For example, in the stock chart shown in the figure at the
-beginning of this chapter, the stock price was \$1000 on five different
-dates, meaning that there were five different input values that all resulted
-in the same output value of \$1000.
+input values. For example, in the stock chart that opens this chapter in the
+source textbook, the stock price was \$1,000 on five different dates, meaning
+that there were five different input values that all resulted in the same
+output value of \$1,000.
 
 However, some functions have only one input value for each output value, as
 well as having only one output for each input. We call these functions
@@ -777,7 +789,7 @@ Yes
 {{< multiplechoice
   question="If each percent grade earned in a course translates to one letter grade, is the letter grade a one-to-one function of the percent grade?"
   answer="No"
-  hint="There are about a hundred possible percent grades but only about five letter grades."
+  hint="Ask whether one letter grade could come from more than one percent grade."
 >}}
 No
 Yes
@@ -841,15 +853,15 @@ them at two points.
 **Example.** Which of the graphs below represent(s) a function $y=f(x)$?
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A cubic curve with a local high point at (-1, 3) and a local low point at (1, -3), falling to the lower left and rising to the upper right.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","cubics":[{"a":1.5,"c":-4.5}]}
+{"ariaLabel":"Graph (a): a cubic curve with a local high point at (-1, 3) and a local low point at (1, -3), falling to the lower left and rising to the upper right.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","cubics":[{"a":1.5,"c":-4.5}],"texts":[{"at":[0,-6.4],"text":"(a)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A straight line falling from left to right, passing through (4, 1) and (12, -3).","xMin":3,"xMax":12,"yMin":-5,"yMax":5,"unit":20,"tickLabels":"x","lines":[{"slope":-0.5,"intercept":3}]}
+{"ariaLabel":"Graph (b): a straight line falling from left to right, drawn from (4, 1) to (12, -3) with an arrow at each end, on axes running from 4 to 12 horizontally and -5 to 5 vertically.","xMin":3.5,"xMax":12.5,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"x","yLabel":"y","segments":[{"from":[4,1],"to":[12,-3],"arrows":true}],"texts":[{"at":[8,-6.4],"text":"(b)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A circle of radius 3 centred at the origin.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","circles":[{"at":[0,0],"r":3}]}
+{"ariaLabel":"Graph (c): a circle of radius 3 centred at the origin.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"xLabel":"x","yLabel":"f(x)","circles":[{"at":[0,0],"r":3}],"texts":[{"at":[0,-6.4],"text":"(c)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Solution.** If any vertical line intersects a graph more than once, the
@@ -912,7 +924,7 @@ diagonal line at most once.
 {{< multiplechoice
   question="Is the circle graphed in part (c) of the vertical line test example one-to-one?"
   answer="No"
-  hint="A relation must first be a function before it can be one-to-one."
+  hint="Slide a horizontal line up and down across the circle and count how many times it meets the graph."
 >}}
 Yes
 No
@@ -934,13 +946,18 @@ $y=f(x)$ as the output variable.
 We will see these toolkit functions, combinations of toolkit functions, their
 graphs, and their transformations frequently throughout this book. It will be
 very helpful if we can recognize these toolkit functions and their features
-quickly by name, formula, graph, and basic table properties.
+quickly by name, formula, graph, and basic table properties. The graphs and
+sample table values are included with each function shown below.
 
 **Constant** — $f(x)=c$, where $c$ is a constant
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of a constant function: a horizontal line.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"y":2}]}
+{"ariaLabel":"The graph of a constant function: a horizontal line, drawn here at y = 2 and labelled f(x) = 2.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"y":2,"label":"f(x) = 2"}],"yTickStep":4}
 {{< /apfigure >}}
+
+| $x$ | −2 | 0 | 2 |
+| :--- | ---: | ---: | ---: |
+| $f(x)$ | 2 | 2 | 2 |
 
 **Identity** — $f(x)=x$
 
@@ -948,11 +965,19 @@ quickly by name, formula, graph, and basic table properties.
 {"ariaLabel":"The graph of the identity function: a straight line through the origin rising at 45 degrees.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"slope":1,"intercept":0}]}
 {{< /apfigure >}}
 
+| $x$ | −2 | 0 | 2 |
+| :--- | ---: | ---: | ---: |
+| $f(x)$ | −2 | 0 | 2 |
+
 **Absolute value** — $f(x)=\lvert x\rvert$
 
 {{< apfigure kind="graph" >}}
 {"ariaLabel":"The graph of the absolute value function: a V shape with its corner at the origin.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"polylines":[{"through":[[-4,4],[0,0],[4,4]],"arrows":true}]}
 {{< /apfigure >}}
+
+| $x$ | −2 | 0 | 2 |
+| :--- | ---: | ---: | ---: |
+| $f(x)$ | 2 | 0 | 2 |
 
 **Quadratic** — $f(x)=x^2$
 
@@ -960,23 +985,39 @@ quickly by name, formula, graph, and basic table properties.
 {"ariaLabel":"The graph of the quadratic function: an upward-opening parabola with its vertex at the origin.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"quadratics":[{"a":1}]}
 {{< /apfigure >}}
 
+| $x$ | −2 | −1 | 0 | 1 | 2 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | 4 | 1 | 0 | 1 | 4 |
+
 **Cubic** — $f(x)=x^3$
 
 {{< apfigure kind="graph" >}}
 {"ariaLabel":"The graph of the cubic function: an S-shaped curve through the origin, falling to the lower left and rising to the upper right.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"cubics":[{"a":1}]}
 {{< /apfigure >}}
 
+| $x$ | −1 | −0.5 | 0 | 0.5 | 1 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | −1 | −0.125 | 0 | 0.125 | 1 |
+
 **Reciprocal** — $f(x)=\tfrac{1}{x}$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the reciprocal function: two branches approaching but never touching the axes, one in the upper right and one in the lower left.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"curves":[{"kind":"reciprocal"}]}
+{"ariaLabel":"The graph of the reciprocal function: two branches approaching but never touching the axes, one in the upper right and one in the lower left.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"curves":[{"kind":"reciprocal","from":-3.5,"to":-0.3333},{"kind":"reciprocal","from":0.3333,"to":3.5}]}
 {{< /apfigure >}}
+
+| $x$ | −2 | −1 | −0.5 | 0.5 | 1 | 2 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | −0.5 | −1 | −2 | 2 | 1 | 0.5 |
 
 **Reciprocal squared** — $f(x)=\tfrac{1}{x^2}$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the reciprocal squared function: two branches, both above the horizontal axis, approaching but never touching the axes.","xMin":-4,"xMax":4,"yMin":-1,"yMax":7,"unit":18,"tickLabels":true,"tickStep":2,"curves":[{"kind":"reciprocal-squared"}]}
+{"ariaLabel":"The graph of the reciprocal squared function: two branches, both above the horizontal axis, approaching but never touching the axes.","xMin":-4,"xMax":4,"yMin":-1,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"curves":[{"kind":"reciprocal-squared","from":-3.5,"to":-0.5774},{"kind":"reciprocal-squared","from":0.5774,"to":3.5}]}
 {{< /apfigure >}}
+
+| $x$ | −2 | −1 | −0.5 | 0.5 | 1 | 2 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | 0.25 | 1 | 4 | 4 | 1 | 0.25 |
 
 **Square root** — $f(x)=\sqrt{x}$
 
@@ -984,11 +1025,19 @@ quickly by name, formula, graph, and basic table properties.
 {"ariaLabel":"The graph of the square root function: a curve starting at the origin and rising to the right, flattening as it goes.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"curves":[{"kind":"sqrt"}]}
 {{< /apfigure >}}
 
+| $x$ | 0 | 1 | 4 |
+| :--- | ---: | ---: | ---: |
+| $f(x)$ | 0 | 1 | 2 |
+
 **Cube root** — $f(x)=\sqrt[3]{x}$
 
 {{< apfigure kind="graph" >}}
 {"ariaLabel":"The graph of the cube root function: a curve through the origin rising to the right and falling to the left, steep near the origin.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"curves":[{"kind":"cbrt"}]}
 {{< /apfigure >}}
+
+| $x$ | −1 | −0.125 | 0 | 0.125 | 1 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | −1 | −0.5 | 0 | 0.5 | 1 |
 
 ## Key equations
 
@@ -1069,12 +1118,14 @@ not a function
 {{< fillin
   question="For $f(x)=8-3x$, evaluate $f(-2)$."
   answer="14"
+  answerForm="decimal"
   hint="Substitute $-2$ for $x$ and simplify."
 >}}
 
 {{< fillin
   question="For $f(x)=8-3x$, solve $f(x)=-1$."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$x=3$"
   hint="Set $8-3x$ equal to $-1$ and solve for $x$."
 >}}
@@ -1082,12 +1133,14 @@ not a function
 {{< fillin
   question="For $f(x)=x^2-3x$, evaluate $f(5)$."
   answer="10"
+  answerForm="decimal"
   hint="Substitute $5$ for $x$ and simplify."
 >}}
 
 {{< fillin
   question="For $f(x)=x^2-3x$, solve $f(x)=4$. Enter both solutions, separated by a comma."
   answer="-1,4"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$x=-1$ or $x=4$"
   hint="Move every term to one side and factor the resulting quadratic."
@@ -1102,8 +1155,9 @@ The table below gives selected values of a function $f$.
 {{< fillin
   question="Using the table above, solve $f(x)=1$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$x=2$"
-  hint="Scan the table for the input whose output is $1$."
+  hint="Scan the output row for every entry equal to $1$ and read the input above each one."
 >}}
 
 ### Determine whether a function is one-to-one
@@ -1115,7 +1169,7 @@ The table below gives selected values of a function $f$.
 {{< multiplechoice
   question="Is the relation graphed above a one-to-one function?"
   answer="not a function"
-  hint="A one-to-one function must first be a function — check whether the graph passes the vertical line test."
+  hint="Apply the vertical line test first; if the graph is a function, then apply the horizontal line test."
 >}}
 not a function
 function, but not one-to-one
@@ -1123,13 +1177,13 @@ one-to-one function
 {{< /multiplechoice >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A steadily rising curve shaped like a cube root function, with an inflection point near (−2, 1), running from about (−5.2, −0.5) up to about (3.5, 2.8) and never turning back.","xMin":-5.5,"xMax":4,"yMin":-1,"yMax":3,"curves":[{"kind":"cbrt","a":1,"h":-2,"k":1,"from":-5.2,"to":3.5}],"tickLabels":true}
+{"ariaLabel":"A curve shaped like the cube root graph, with a vertical tangent at (−2, 1), passing through (−3, 0) and crossing the y-axis near 2.3, drawn from about (−5.2, −0.5) at the lower left to about (3.5, 2.8) at the upper right.","xMin":-5.5,"xMax":4,"yMin":-1,"yMax":3,"curves":[{"kind":"cbrt","a":1,"h":-2,"k":1,"from":-5.2,"to":3.5}],"tickLabels":true,"xTickStep":2}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="Is the relation graphed above a one-to-one function?"
   answer="one-to-one function"
-  hint="The curve never doubles back on itself, so ask whether any horizontal line could cross it twice."
+  hint="Apply the vertical line test first; if the graph is a function, then apply the horizontal line test."
 >}}
 not a function
 function, but not one-to-one
@@ -1143,7 +1197,7 @@ one-to-one function
 {{< /apfigure >}}
 
 {{< multiplechoice
-  question="Does the graph shown above pass the vertical line test?"
+  question="Use the vertical line test: is the relation graphed above a function?"
   answer="function"
   hint="Check whether any vertical line could cross the graph more than once."
 >}}
@@ -1156,9 +1210,9 @@ function
 {{< /apfigure >}}
 
 {{< multiplechoice
-  question="Does the graph shown above pass the vertical line test?"
+  question="Use the vertical line test: is the relation graphed above a function?"
   answer="not a function"
-  hint="Look at $x=1$: how many points on the curve share that input?"
+  hint="Slide a vertical line across the graph and count how many times it meets the drawn curves."
 >}}
 not a function
 function
@@ -1167,47 +1221,35 @@ function
 ### Graph the functions listed in the library of functions
 
 {{< graphplot
-  question="Graph $y=x^2$."
+  question="Graph $y=x^2$ on the domain $[-10,10]$."
   answerDisplay="$y=x^2$"
-  ariaLabel="A blank grid from −10 to 10 on the x-axis and −10 to 100 on the y-axis."
-  hint="Plot the vertex at the origin, then use symmetry about the $y$-axis."
+  ariaLabel="A blank grid from −10 to 10 on the x-axis and −10 to 110 on the y-axis."
+  hint="Make a small table of values for inputs between $-10$ and $10$, and plot those points."
 >}}
-{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}, "plotPoints": 3}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 100, "xUnit": 18, "yUnit": 3.2, "yGridStep": 10, "yTickStep": 10}}
+{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}, "plotPoints": 3}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 110, "xUnit": 18, "yUnit": 3.2, "yGridStep": 10, "yTickStep": 10}}
 {{< /graphplot >}}
 
-{{< multiplechoice
-  question="What is the range of $y=x^2$ on the domain $[-10,10]$?"
-  answer="$[0,100]$"
-  hint="Squaring never gives a negative output, and the input farthest from $0$ has absolute value $10$."
+{{< fillin
+  question="What is the range of $y=x^2$ on the domain $[-10,10]$? Enter it in interval notation."
+  answer="[0,100]"
+  answerForm="decimal"
+  hint="Find the least output (at the vertex) and the greatest output (at an end of the domain)."
 >}}
-$[-10,10]$
-$[0,100]$
-$[0,10]$
-$[-100,100]$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="What is the range of $y=x^3$ on the domain $[-0.1,0.1]$?"
-  answer="$[-0.001,0.001]$"
+{{< fillin
+  question="What is the range of $y=x^3$ on the domain $[-0.1,0.1]$? Enter it in interval notation."
+  answer="[-0.001,0.001]"
+  answerForm="lowest-terms"
   hint="The cubing function is increasing, so evaluate it at both ends of the domain."
 >}}
-$[-0.01,0.01]$
-$[-0.001,0.001]$
-$[0,0.001]$
-$[-0.1,0.1]$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="What is the range of $y=\sqrt{x}$ on the domain $[0,100]$?"
-  answer="$[0,10]$"
+{{< fillin
+  question="What is the range of $y=\sqrt{x}$ on the domain $[0,100]$? Enter it in interval notation."
+  answer="[0,10]"
+  answerForm="decimal"
   hint="The square root function is increasing, so evaluate it at both ends of the domain."
 >}}
-$[0,10]$
-$[0,50]$
-$[0,100]$
-$[-10,10]$
-{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.1: Functions and Function Notation](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the input–output mapping diagrams, the coffee shop menu mappings, and the function-machine diagram; presented the menu itself and the toolkit function library as Markdown tables and headed figure groups rather than images; omitted the media links; adapted selected end-of-section exercises into the closing interactive Practice block, including two recreated figures for the one-to-one determinations and two for the vertical-line-test items; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and presented the write-a-function-notation practice item as multiple choice so it can be graded in the browser.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.1: Functions and Function Notation](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible figure, including the input–output mapping diagrams (without their "Relation is a Function" panel titles), the coffee shop menu mappings (with arrows from each item to its price in place of the dotted leaders), and the function-machine diagram; presented the menu itself as a Markdown table and the toolkit function library as headed figure groups, each with its sample-value table, rather than one image table; pointed the stock-chart example to the chapter opener of the source textbook, which this site does not reproduce; corrected the typo "is a not a function" in the menu example; omitted the media links; adapted selected end-of-section exercises into the closing interactive Practice block, including two recreated figures for the one-to-one determinations and two for the vertical-line-test items, with the graph of $y=x^2$ on $[-10,10]$ drawn by placing points and each range entered in interval notation; converted selected practice problems ("Try Its") into interactive exercises with instant feedback; and presented the write-a-function-notation practice item as multiple choice, because the grader reads $f(d)$ as a product and cannot tell $w=f(d)$ from $w=d(f)$.</small>

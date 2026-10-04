@@ -81,7 +81,7 @@ mathematicians generally prefer absolute value notation.
 {{< multiplechoice
   question="Describe all values $x$ within a distance of 3 from the number 2."
   answer="$\lvert x-2\rvert\le 3$"
-  hint="The distance between $x$ and 2 is $\lvert x-2\rvert$; \"within 3\" bounds that distance."
+  hint="Write the distance between $x$ and the given number with absolute value bars, then decide which inequality \"within\" a distance describes."
 >}}
 $\lvert x-3\rvert\le 2$
 $\lvert x-2\rvert\ge 3$
@@ -135,13 +135,13 @@ factor of 2, and shifted up 4 units. This means that the corner point is
 located at $(3,4)$ for this transformed function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two V shapes on one grid. Drawn dashed, y = |x| has its corner at the origin. Drawn solid, y = 2|x − 3| + 4 has steeper arms and its corner marked at (3, 4).","xMin":-6,"xMax":7,"yMin":-1,"yMax":12,"xUnit":22,"yUnit":17,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polylines":[{"through":[[-6,6],[0,0],[6,6]],"dashed":true,"arrows":true},{"through":[[-0.5,11],[3,4],[6.5,11]],"arrows":true}],"points":[{"at":[3,4],"label":"(3, 4)","labelSide":"se"}],"texts":[{"at":[-5.6,7.4],"text":"y = |x|","anchor":"start"},{"at":[0.6,11.6],"text":"y = 2|x − 3| + 4","anchor":"start"}]}
+{"ariaLabel":"Two V shapes on one grid. Drawn dashed, y = |x| has its corner at the origin. Drawn solid, y = 2|x − 3| + 4 has steeper arms and its corner marked at (3, 4).","xMin":-6,"xMax":7,"yMin":-1,"yMax":12,"xUnit":22,"yUnit":17,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polylines":[{"through":[[-6,6],[0,0],[6,6]],"dashed":true,"arrows":true},{"through":[[0.5,9],[3,4],[5.5,9]],"arrows":true}],"points":[{"at":[3,4],"label":"(3, 4)","labelSide":"se"}],"texts":[{"at":[-5.6,7.4],"text":"y = |x|","anchor":"start"},{"at":[1.2,11.2],"text":"y = 2|x − 3| + 4","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Example.** Write an equation for the function graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of an absolute value function: a V with its corner point at (3, −2), crossing the horizontal axis at 2 and 4 and reaching a height of 4 at x = 0.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"polylines":[{"through":[[-0.5,5],[3,-2],[4.5,1]],"arrows":true}]}
+{"ariaLabel":"The graph of an absolute value function: a V with its corner point at (3, −2), crossing the horizontal axis at 2 and 4 and reaching a height of 4 at x = 0.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"polylines":[{"through":[[0,4],[3,-2],[5,2]],"arrows":true}]}
 {{< /apfigure >}}
 
 **Solution.** The basic absolute value function changes direction at the
@@ -156,15 +156,15 @@ distance, as shown below, where the unstretched shape through the same corner
 is dashed.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same V with its corner at (3, −2), drawn solid, together with the unstretched absolute value shape through the same corner, drawn dashed. Four units above the corner the dashed V is 8 units wide, a ratio of 2 to 1, while the solid V is only 4 units wide, a ratio of 1 to 1.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"polylines":[{"through":[[-0.5,5],[3,-2],[4.5,1]],"arrows":true},{"through":[[-4,5],[3,-2],[5,0]],"dashed":true,"arrows":true}],"points":[{"at":[3,-2],"label":"(3, −2)","labelSide":"se"}],"texts":[{"at":[-4.2,5.4],"text":"Ratio 2/1","anchor":"start"},{"at":[3.6,2.6],"text":"Ratio 1/1","anchor":"start"}]}
+{"ariaLabel":"The same V with its corner at (3, −2), drawn solid, together with the unstretched absolute value shape through the same corner, drawn dashed. Two units above the corner, along the horizontal axis, the dashed V runs from 1 to 5, 4 units wide, a ratio of 2 to 1, while the solid V runs from 2 to 4, 2 units wide, a ratio of 1 to 1.","xMin":-5,"xMax":6,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"polylines":[{"through":[[0,4],[3,-2],[5,2]],"arrows":true},{"through":[[-4,5],[3,-2],[6,1]],"dashed":true,"arrows":true}],"points":[{"at":[3,-2],"label":"(3, −2)","labelSide":"se"}],"texts":[{"at":[-4.2,5.4],"text":"Ratio 2/1","anchor":"start"},{"at":[3.6,3.2],"text":"Ratio 1/1","anchor":"start"}]}
 {{< /apfigure >}}
 
 From this information we can write the equation
 
 $$
-\begin{array}{lrcl}
-\text{treating the stretch as a vertical stretch, or} & f(x) &=& 2\lvert x-3\rvert-2, \\[4pt]
-\text{treating the stretch as a horizontal compression.} & f(x) &=& \lvert 2(x-3)\rvert-2,
+\begin{array}{rcll}
+f(x) &=& 2\lvert x-3\rvert-2, & \quad\text{treating the stretch as a vertical stretch, or} \\[4pt]
+f(x) &=& \lvert 2(x-3)\rvert-2, & \quad\text{treating the stretch as a horizontal compression.}
 \end{array}
 $$
 
@@ -197,8 +197,9 @@ factor is negative, there is also a reflection about the $x$-axis.
 {{< fillin
   question="Write the equation for the absolute value function that is horizontally shifted left 2 units, is vertically reflected, and vertically shifted up 3 units."
   answer="-|x+2|+3"
+  answerForm="no-like-terms"
   answerDisplay="$f(x)=-\lvert x+2\rvert+3$"
-  hint="Left 2 is an inside $+2$; the reflection is a minus sign outside; up 3 is a $+3$ outside."
+  hint="Start from $\lvert x\rvert$: a horizontal shift changes the input inside the bars, a vertical reflection multiplies the absolute value by $-1$, and a vertical shift adds a constant outside."
 >}}
 
 {{< callout type="info" >}}
@@ -218,19 +219,19 @@ factor is negative, there is also a reflection about the $x$-axis.
 (a) The absolute value function does not intersect the horizontal axis.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(a) A V with its corner at (0, 2), entirely above the horizontal axis, so the graph never meets it.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"polylines":[{"through":[[-4,6],[0,2],[4,6]],"arrows":true}]}
+{"ariaLabel":"(a) A V with its corner at (−1, 2), entirely above the horizontal axis, so the graph never meets it.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"polylines":[{"through":[[-4,5],[-1,2],[2,5]],"arrows":true}]}
 {{< /apfigure >}}
 
 (b) The absolute value function intersects the horizontal axis at one point.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(b) A V with its corner exactly on the horizontal axis at (2, 0), so the graph meets the axis at one point.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"polylines":[{"through":[[-4,6],[2,0],[6,4]],"arrows":true}]}
+{"ariaLabel":"(b) A V with its corner exactly on the horizontal axis at (2, 0), so the graph meets the axis at one point.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"polylines":[{"through":[[-3,5],[2,0],[5,3]],"arrows":true}]}
 {{< /apfigure >}}
 
 (c) The absolute value function intersects the horizontal axis at two points.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(c) An upside-down V with its peak at (1, 3), crossing the horizontal axis at −2 and at 4, so the graph meets the axis at two points.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"polylines":[{"through":[[-3,-1],[1,3],[5.5,-1.5]],"arrows":true}]}
+{"ariaLabel":"(c) An upside-down V with its peak at (1, 3), crossing the horizontal axis at −2 and at 4, so the graph meets the axis at two points.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"polylines":[{"through":[[-5,-3],[1,3],[5.5,-1.5]],"arrows":true}]}
 {{< /apfigure >}}
 
 ## Solving an absolute value equation
@@ -302,15 +303,16 @@ $x$ such that $f(x)=0$.
 The function outputs 0 when $x=1.5$ or $x=-2$, as the graph below confirms.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the absolute value of 4x plus 1, minus 7: a steep V with its corner at (−0.25, −7), crossing the horizontal axis at −2 and at 1.5.","xMin":-4,"xMax":4,"yMin":-8,"yMax":6,"xUnit":30,"yUnit":16,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polylines":[{"through":[[-3.5,6],[-0.25,-7],[3,6]],"arrows":true}],"points":[{"at":[-2,0]},{"at":[1.5,0]}]}
+{"ariaLabel":"The graph of f of x equals the absolute value of 4x plus 1, minus 7: a steep V with its corner at (−0.25, −7), crossing the horizontal axis at −2 and at 1.5.","xMin":-4,"xMax":4,"yMin":-8,"yMax":6,"xUnit":30,"yUnit":16,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polylines":[{"through":[[-3.5,6],[-0.25,-7],[3,6]],"arrows":true}],"points":[{"at":[-2,0],"label":"(−2, 0)"},{"at":[1.5,0],"label":"(1.5, 0)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="For the function $f(x)=\lvert 2x-1\rvert-3$, find the values of $x$ such that $f(x)=0$. Enter both solutions, separated by a comma."
   answer="-1,2"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-1$ or $x=2$"
-  hint="Isolate the absolute value, then set the inside equal to $3$ and to $-3$."
+  hint="Isolate the absolute value, then split $\lvert A\rvert=B$ into $A=B$ and $A=-B$ and solve each for $x$."
 >}}
 
 {{< callout type="info" >}}
@@ -356,19 +358,22 @@ this equation has no solutions.
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of g of x equals 4 times the absolute value of x minus 2, plus 2, a steep V with its corner at (2, 2), together with the horizontal line f of x equals 1. The V never dips to the line, so the two graphs do not intersect.","xMin":-1,"xMax":5,"yMin":-1,"yMax":12,"xUnit":40,"yUnit":18,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polylines":[{"through":[[-0.4,11.6],[2,2],[4.4,11.6]],"arrows":true}],"lines":[{"y":1,"label":"f(x) = 1","labelAt":0.72,"labelSide":"left","arrows":false}],"texts":[{"at":[2.7,8],"text":"g(x)","anchor":"end"}]}
+{"ariaLabel":"The graph of g of x equals 4 times the absolute value of x minus 2, plus 2, a steep V with its corner at (2, 2), together with the horizontal line f of x equals 1. The V never dips to the line, so the two graphs do not intersect.","xMin":-1,"xMax":5,"yMin":-1,"yMax":12,"xUnit":40,"yUnit":18,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":2,"polylines":[{"through":[[0.25,9],[2,2],[3.75,9]],"arrows":true}],"lines":[{"y":1,"label":"f(x) = 1","labelAt":0.72,"labelSide":"left","arrows":false}],"texts":[{"at":[2.7,8],"text":"g(x)","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="The graph of $f(x)=-\lvert x+2\rvert+3$ crosses the vertical axis at $(0,b)$. Find $b$."
-  answer="1"
+  question="Where does the graph of $f(x)=-\lvert x+2\rvert+3$ intersect the vertical axis? Enter the intercept as an ordered pair."
+  answer="(0,1)"
+  answerForm="decimal"
+  answerDisplay="$(0,1)$"
   hint="Evaluate the function at $x=0$."
 >}}
 
 {{< fillin
-  question="Where does the graph of $f(x)=-\lvert x+2\rvert+3$ cross the horizontal axis? Enter both $x$-values, separated by a comma."
-  answer="-5,1"
+  question="Where does the graph of $f(x)=-\lvert x+2\rvert+3$ intersect the horizontal axis? Enter both intercepts as ordered pairs, separated by a comma."
+  answer="(-5,0),(1,0)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(-5,0)$ and $(1,0)$"
   hint="Set the function equal to zero and isolate the absolute value first."
 >}}
@@ -378,7 +383,7 @@ this equation has no solutions.
 Absolute value equations may not always involve equalities. Instead, we may
 need to solve an equation within a range of values. We would use an absolute
 value inequality to solve such an equation. An **absolute value inequality**
-is an equation of the form
+is an inequality of the form
 
 $$\lvert A\rvert<B,\quad \lvert A\rvert\le B,\quad \lvert A\rvert>B,\quad\text{or}\quad \lvert A\rvert\ge B,$$
 
@@ -396,7 +401,7 @@ from the graph.
 For example, we know that all numbers within 200 units of 0 may be expressed
 as
 
-$$\lvert x\rvert<200\quad\text{or}\quad -200<x<200$$
+$$\lvert x\rvert<200\quad\text{or}\quad {-200}<x<200$$
 
 Suppose we want to know all possible returns on an investment if we could earn
 some amount of money within \$200 of \$600. We can solve algebraically for the
@@ -475,7 +480,7 @@ To use a graph, we can sketch the function $f(x)=\lvert x-5\rvert$. To help us
 see where the outputs are 4, the line $g(x)=4$ could also be sketched.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the absolute value of x minus 5, a V with its corner at (5, 0), together with the horizontal line g of x equals 4. The two meet at x = 1 and x = 9, and the V lies below the line between them.","xMin":-1,"xMax":12,"yMin":-1,"yMax":8,"xUnit":26,"yUnit":26,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polylines":[{"through":[[-0.5,5.5],[5,0],[12,7]],"arrows":true}],"lines":[{"y":4,"label":"g(x) = 4","labelAt":0.45,"labelSide":"right","arrows":false}],"points":[{"at":[1,4]},{"at":[9,4]}]}
+{"ariaLabel":"The graph of f of x equals the absolute value of x minus 5, a V with its corner at (5, 0), together with the horizontal line g of x equals 4. The two meet at x = 1 and x = 9, and the V lies below the line between them.","xMin":-1,"xMax":12,"yMin":-1,"yMax":8,"xUnit":26,"yUnit":26,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polylines":[{"through":[[0,5],[5,0],[12,7]],"arrows":true}],"lines":[{"y":4,"label":"g(x) = 4","labelAt":0.45,"labelSide":"right"}],"points":[{"at":[1,4]},{"at":[9,4]}],"texts":[{"at":[7.6,1.2],"text":"f(x) = |x − 5|","anchor":"start"}]}
 {{< /apfigure >}}
 
 We can see the following:
@@ -513,16 +518,13 @@ $$
 \end{array}
 $$
 
-{{< multiplechoice
-  question="Solve $\lvert x+2\rvert\le 6$."
-  answer="$-8\le x\le 4$"
-  hint="Rewrite without the bars as $-6\le x+2\le 6$, then isolate $x$."
+{{< fillin
+  question="Solve $\lvert x+2\rvert\le 6$. Write the solution as a compound inequality."
+  answer="-8\le x\le4"
+  answerForm="decimal"
+  answerDisplay="$-8\le x\le 4$"
+  hint="Rewrite $\lvert A\rvert\le B$ as the compound inequality $-B\le A\le B$, then isolate $x$ in the middle."
 >}}
-$-6\le x\le 6$
-$x\le -8$ or $x\ge 4$
-$-4\le x\le 8$
-$-8\le x\le 4$
-{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
   **How to:** given an absolute value function, solve for the set of inputs
@@ -544,8 +546,8 @@ value.
 
 $$
 \begin{array}{lrcl}
-\text{Multiply both sides by }-2,\text{ and reverse the inequality.} & -\tfrac{1}{2}\lvert 4x-5\rvert &<& -3 \\[4pt]
-& \lvert 4x-5\rvert &>& 6
+& -\tfrac{1}{2}\lvert 4x-5\rvert &<& -3 \\[4pt]
+\text{Multiply both sides by }{-2}\text{, and reverse the inequality.} & \lvert 4x-5\rvert &>& 6
 \end{array}
 $$
 
@@ -572,7 +574,7 @@ it crosses the horizontal axis at $x=-\tfrac{1}{4}$ and $x=\tfrac{11}{4}$ and
 that the graph has been reflected vertically.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals negative one half times the absolute value of 4x minus 5, plus 3: an upside-down V with its peak at (1.25, 3), crossing the horizontal axis at −0.25 and at 2.75. The branches fall below the axis to the left of −0.25 and to the right of 2.75.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"xUnit":30,"yUnit":24,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polylines":[{"through":[[-2.5,-4.5],[1.25,3],[3.75,-2]],"arrows":true}],"points":[{"at":[-0.25,0]},{"at":[2.75,0]}]}
+{"ariaLabel":"The graph of f of x equals negative one half times the absolute value of 4x minus 5, plus 3: an upside-down V with its peak at (1.25, 3), crossing the horizontal axis at −0.25 and at 2.75. The branches fall below the axis to the left of −0.25 and to the right of 2.75.","xMin":-3,"xMax":5,"yMin":-5,"yMax":5,"xUnit":30,"yUnit":24,"xGridStep":1,"yGridStep":1,"tickLabels":true,"xTickStep":1,"yTickStep":1,"polylines":[{"through":[[-2.5,-4.5],[1.25,3],[3.75,-2]],"arrows":true}],"points":[{"at":[-0.25,0],"label":"x = −0.25"},{"at":[2.75,0],"label":"x = 2.75"}]}
 {{< /apfigure >}}
 
 We observe that the graph of the function is below the $x$-axis left of
@@ -585,16 +587,13 @@ $$x<-\tfrac{1}{4}\quad\text{or}\quad x>\tfrac{11}{4}$$
 
 In interval notation, this would be $(-\infty,-0.25)\cup(2.75,\infty)$.
 
-{{< multiplechoice
-  question="Solve $-2\lvert k-4\rvert\le -6$."
-  answer="$(-\infty,1]\cup[7,\infty)$"
-  hint="Divide by $-2$ and reverse the inequality, then read $\lvert k-4\rvert\ge 3$ as two separate conditions."
+{{< fillin
+  question="Solve $-2\lvert k-4\rvert\le -6$. Write the solution in interval notation."
+  answer="(-\infty,1]\cup[7,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,1]\cup[7,\infty)$"
+  hint="Divide both sides by the coefficient of the absolute value, reversing the inequality because you divide by a negative, then split the result into two conditions joined by \"or\"."
 >}}
-$(-\infty,-1]\cup[7,\infty)$
-$[1,7]$
-$(-\infty,3]\cup[5,\infty)$
-$(-\infty,1]\cup[7,\infty)$
-{{< /multiplechoice >}}
 
 ## Key concepts
 
@@ -631,19 +630,18 @@ $\lvert A\rvert\le B$, $\lvert A\rvert>B$, or $\lvert A\rvert\ge B$.
 {{< fillin
   question="Find the $y$-intercept and both $x$-intercepts of $f(x)=2\lvert x+1\rvert-10$. Enter the $y$-intercept first, then the $x$-intercepts in increasing order of $x$, separated by commas."
   answer="(0,-8),(-6,0),(4,0)"
-  hint="Evaluate $f(0)$ for the $y$-intercept; set $f(x)=0$ and split $\lvert x+1\rvert=5$ into two linear equations for the $x$-intercepts."
+  answerForm="decimal"
+  answerDisplay="$(0,-8)$; $(-6,0)$ and $(4,0)$"
+  hint="Evaluate $f(0)$ for the $y$-intercept; for the $x$-intercepts, set $f(x)=0$, isolate the absolute value, and split it into two linear equations."
 >}}
 
-{{< multiplechoice
-  question="Use a graphing utility to graph $f(x)=10\lvert x-2\rvert$ on the viewing window $[0,4]$. What is the corresponding range?"
-  answer="$[0,20]$"
-  hint="Evaluate $f$ at the window's endpoints and at the corner $x=2$ to find the least and greatest outputs."
+{{< fillin
+  question="Use a graphing utility to graph $f(x)=10\lvert x-2\rvert$ on the viewing window $[0,4]$. Identify the corresponding range, in interval notation."
+  answer="[0,20]"
+  answerForm="decimal"
+  answerDisplay="$[0,20]$"
+  hint="Find the least and greatest outputs on the window: check the corner of the V and the window's two endpoints."
 >}}
-$[0,20]$
-$[-20,20]$
-$[0,10]$
-$[0,40]$
-{{< /multiplechoice >}}
 
 ### Solve an absolute value equation
 
@@ -651,22 +649,24 @@ $[0,40]$
   question="Solve $\lvert 6-x\rvert=5$. Enter both solutions, separated by a comma."
   answer="1,11"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=1$ or $x=11$"
-  hint="Split into $6-x=5$ and $6-x=-5$, then solve each for $x$."
+  hint="Write the two equations $A=B$ and $A=-B$ for the expression $A$ inside the bars, then solve each for $x$."
 >}}
 
 {{< fillin
   question="Solve $\lvert 4x-2\rvert=11$. Enter both solutions, separated by a comma."
   answer="-\tfrac{9}{4},\tfrac{13}{4}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-\tfrac{9}{4}$ or $x=\tfrac{13}{4}$"
-  hint="Split into $4x-2=11$ and $4x-2=-11$, then solve each for $x$."
+  hint="Write the two equations $A=B$ and $A=-B$ for the expression $A$ inside the bars, then solve each for $x$."
 >}}
 
 {{< multiplechoice
   question="Solve $\lvert 3x-2\rvert=-7$."
   answer="No solution"
-  hint="The absolute value of an expression can never equal a negative number."
+  hint="Compare the right side with the values an absolute value can take."
 >}}
 $x=3$
 $x=3$ or $x=-\tfrac{5}{3}$
@@ -676,39 +676,29 @@ $x=-\tfrac{5}{3}$
 
 ### Solve an absolute value inequality
 
-{{< multiplechoice
-  question="Solve $\lvert 3x-4\rvert\le 8$."
-  answer="$-\tfrac{4}{3}\le x\le 4$"
-  hint="Rewrite without the bars as $-8\le 3x-4\le 8$, then isolate $x$."
+{{< fillin
+  question="Solve $\lvert 3x-4\rvert\le 8$. Write the solution in interval notation."
+  answer="\left[-\tfrac{4}{3},4\right]"
+  answerForm="lowest-terms"
+  answerDisplay="$\left[-\tfrac{4}{3},4\right]$"
+  hint="Rewrite $\lvert A\rvert\le B$ as the compound inequality $-B\le A\le B$, then isolate $x$ in the middle."
 >}}
-$-\tfrac{4}{3}\le x\le 4$
-$-\tfrac{4}{3}< x< 4$
-$x\le -\tfrac{4}{3}$ or $x\ge 4$
-$-4\le x\le \tfrac{4}{3}$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Solve $\lvert 3x-5\rvert\ge 13$."
-  answer="$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$"
-  hint="Split into $3x-5\le -13$ or $3x-5\ge 13$, then isolate $x$ in each."
+{{< fillin
+  question="Solve $\lvert 3x-5\rvert\ge 13$. Write the solution in interval notation."
+  answer="\left(-\infty,-\tfrac{8}{3}\right]\cup[6,\infty)"
+  answerForm="lowest-terms"
+  answerDisplay="$\left(-\infty,-\tfrac{8}{3}\right]\cup[6,\infty)$"
+  hint="Rewrite $\lvert A\rvert\ge B$ as $A\le -B$ or $A\ge B$, then isolate $x$ in each."
 >}}
-$[-\tfrac{8}{3},6]$
-$(-\infty,-\tfrac{8}{3})\cup(6,\infty)$
-$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$
-$(-\infty,-6]\cup[\tfrac{8}{3},\infty)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Solve $\left\lvert -2x-\tfrac{2}{3}(x+1)\right\rvert+3>-1$."
-  answer="$(-\infty,\infty)$"
-  hint="Isolate the absolute value to get $\left\lvert -2x-\tfrac{2}{3}(x+1)\right\rvert>-4$ — an absolute value is never negative, so this holds for every $x$ without expanding the expression inside."
+{{< fillin
+  question="Solve $\left\lvert -2x-\tfrac{2}{3}(x+1)\right\rvert+3>-1$. Write the solution in interval notation."
+  answer="(-\infty,\infty)"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="Isolate the absolute value first, then compare the right side with the values an absolute value can take before doing any algebra inside the bars."
 >}}
-$x=-4$
-$(-\infty,\infty)$
-$(-\infty,-4)\cup(4,\infty)$
-No solution
-{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.6: Absolute Value Functions](https://openstax.org/books/precalculus-2e/pages/1-6-absolute-value-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph and number line as an accessible inline SVG generated from an explicit formula or point list, drawing the comparison curve dashed where the source distinguishes it by colour; condensed the source's multi-colour construction diagrams for $f(x)=2\lvert x-3\rvert-2$ — one showing the shift and one the width ratio — into a single annotated figure, because monochrome renderings of four overlapping annotated V shapes are unreadable, and likewise showed the four-stage transformation of $y=2\lvert x-3\rvert+4$ as the toolkit V against the finished V, with the intermediate stages described in the prose; presented the solution steps and the interval test as Markdown tables; omitted the opening Andromeda Galaxy photograph and the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is an inequality or an interval, which cannot be graded as free-response math; and adapted selected end-of-section exercises into the closing Practice block, again using multiple choice for interval- and inequality-valued answers for the same reason.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.6: Absolute Value Functions](https://openstax.org/books/precalculus-2e/pages/1-6-absolute-value-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph and number line as an accessible figure generated from an explicit formula or point list, drawing the comparison curve dashed where the source distinguishes it by colour; condensed the source's multi-colour construction diagrams for $f(x)=2\lvert x-3\rvert-2$ — one showing the shift and one the width ratio — into a single annotated figure, because monochrome renderings of four overlapping annotated V shapes are unreadable, and likewise showed the four-stage transformation of $y=2\lvert x-3\rvert+4$ as the toolkit V against the finished V, with the intermediate stages described in the prose; presented the solution steps and the interval test as Markdown tables; omitted the opening Andromeda Galaxy photograph and the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a statement in absolute value notation and asking the axis-intercepts Try It as one item per axis; adapted selected end-of-section exercises into the closing Practice block, posing the equation with no solution as multiple choice; corrected three slips in the source: the second line of the $\lvert 4x-5\rvert=6$ solution, which repeats $4x-5=6$ where the step is $4x=11$, the no-solution example's "the absolute value always returns a positive value" (it returns a nonnegative value, since $\lvert 0\rvert=0$), and the definition of an absolute value inequality as "an equation of the form" (it is an inequality); and wrote the bounds in the inequality How To as $A$ and $B$ throughout, where the source switches to lowercase $a$ and $b$.</small>

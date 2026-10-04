@@ -175,6 +175,7 @@ input and output are clearly reversed.
 {{< fillin
   question="Given that $h^{-1}(6)=2$, find $h(2)$."
   answer="6"
+  answerForm="decimal"
   hint="The inverse swaps input and output, so read the statement backwards."
 >}}
 
@@ -217,7 +218,7 @@ order of the operations from the original function.
 {{< multiplechoice
   question="If $f(x)=x^3-4$ and $g(x)=\sqrt[3]{x+4}$, is $g=f^{-1}$?"
   answer="Yes, because both $f(g(x))=x$ and $g(f(x))=x$"
-  hint="Substitute one into the other and simplify; the cube and the cube root undo each other."
+  hint="Substitute $g(x)$ into $f$ and simplify, then check the other order, $g(f(x))$."
 >}}
 Yes, because both $f(g(x))=x$ and $g(f(x))=x$
 No, because $g(f(x))\ne x$
@@ -239,7 +240,7 @@ is an exponent, not a multiplier.
 {{< multiplechoice
   question="If $f(x)=(x-1)^3$ and $g(x)=\sqrt[3]{x}+1$, is $g=f^{-1}$?"
   answer="Yes"
-  hint="Work $f(g(x))$ from the inside out: the $+1$ and the $-1$ cancel before the cube."
+  hint="Simplify $f(g(x))$ from the inside out, then check $g(f(x))$ the same way."
 >}}
 No, because $f(g(x))=x^3$
 No, because $g(f(x))=x-2$
@@ -271,7 +272,7 @@ visualize the situation as below.
   <path d="M 254 136 A 130 130 0 0 1 135 142" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <polygon points="125,143 136.6,137.3 137.4,147.3" fill="currentColor"/>
   <text x="190" y="56" font-size="13" fill="currentColor" text-anchor="middle" font-style="italic">f</text>
-  <text x="190" y="180" font-size="13" fill="currentColor" text-anchor="middle" font-style="italic">f<tspan font-size="9" dy="-5">-1</tspan></text>
+  <text x="190" y="180" font-size="13" fill="currentColor" text-anchor="middle" font-style="italic">f<tspan font-size="9" dy="-5">−1</tspan></text>
 </svg>
 </div>
 
@@ -371,19 +372,22 @@ then in that restricted domain, it can have an inverse.
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(b) The graph of the reciprocal squared function: two branches above the horizontal axis, one on each side of the vertical axis. A horizontal line would meet it twice, so it is not one-to-one.","xMin":-4,"xMax":4,"yMin":-2,"yMax":4,"unit":26,"tickLabels":true,"curves":[{"kind":"reciprocal-squared"}]}
+{"ariaLabel":"(b) The graph of the reciprocal squared function: two branches above the horizontal axis, one on each side of the vertical axis. A horizontal line would meet it twice, so it is not one-to-one.","xMin":-4,"xMax":4,"yMin":-2,"yMax":4,"unit":26,"tickLabels":true,"curves":[{"kind":"reciprocal-squared","from":-3.6,"to":3.6}]}
 {{< /apfigure >}}
 
-{{< multiplechoice
-  question="The domain of function $f$ is $(1,\infty)$ and the range of function $f$ is $(-\infty,-2)$. What are the domain and range of the inverse function?"
-  answer="domain $(-\infty,-2)$, range $(1,\infty)$"
-  hint="An inverse swaps the two sets: what goes in becomes what comes out."
+{{< fillin
+  question="The domain of function $f$ is $(1,\infty)$ and the range of function $f$ is $(-\infty,-2)$. What is the domain of the inverse function? Enter it in interval notation."
+  answer="(-\infty,-2)"
+  answerForm="decimal"
+  hint="The inputs of $f^{-1}$ are the outputs of $f$."
 >}}
-domain $(-\infty,1)$, range $(-2,\infty)$
-domain $(1,\infty)$, range $(-\infty,-2)$
-domain $(-2,\infty)$, range $(-\infty,1)$
-domain $(-\infty,-2)$, range $(1,\infty)$
-{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the same function $f$, what is the range of the inverse function? Enter it in interval notation."
+  answer="(1,\infty)"
+  answerForm="decimal"
+  hint="The outputs of $f^{-1}$ are the inputs of $f$."
+>}}
 
 ## Finding and evaluating inverse functions
 
@@ -430,12 +434,14 @@ Now consider a slightly longer table for the same journey.
 {{< fillin
   question="Using the table above, find $f(60)$, in miles."
   answer="50"
+  answerForm="decimal"
   hint="Read the table forwards: 60 is an input, so look for it in the top row."
 >}}
 
 {{< fillin
   question="Using the same table, find $f^{-1}(60)$, in minutes."
   answer="70"
+  answerForm="decimal"
   hint="Read the table backwards: here 60 is an output, so look for it in the bottom row."
 >}}
 
@@ -462,7 +468,7 @@ the vertical axis of the original function's graph.
 **Example.** A function $g(x)$ is graphed below. Find $g(3)$ and $g^{-1}(3)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of g: a curve that hugs the horizontal axis to the left, passes through (3, 1), and rises to the right through (5, 3).","xMin":-1,"xMax":6,"yMin":-1,"yMax":4,"xUnit":34,"yUnit":34,"tickLabels":true,"yLabel":"g(x)","curves":[{"kind":"exp","b":1.7320508,"h":3}]}
+{"ariaLabel":"The graph of g: a curve that hugs the horizontal axis to the left, passes through (3, 1), and rises to the right through (5, 3).","xMin":-1,"xMax":6,"yMin":-1,"yMax":4,"xUnit":34,"yUnit":34,"tickLabels":true,"yLabel":"g(x)","curves":[{"kind":"exp","b":1.7320508,"h":3,"from":-0.6}]}
 {{< /apfigure >}}
 
 **Solution.** To evaluate $g(3)$, we find 3 on the $x$-axis and find the
@@ -475,24 +481,25 @@ axis, we find the point $(5,3)$ on the graph, which means $g(5)=3$, so by
 definition, $g^{-1}(3)=5$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same graph of g with two points marked and dashed lines drawn to the axes: (3, 1), showing g(3) = 1, and (5, 3), showing g(5) = 3 and therefore g inverse of 3 equals 5.","xMin":-1,"xMax":6,"yMin":-1,"yMax":4,"xUnit":34,"yUnit":34,"tickLabels":true,"yLabel":"g(x)","curves":[{"kind":"exp","b":1.7320508,"h":3}],"guides":[[3,1],[5,3]],"points":[{"at":[3,1],"label":"(3, 1)","labelSide":"e"},{"at":[5,3],"label":"(5, 3)","labelSide":"se"}]}
+{"ariaLabel":"The same graph of g with two points marked and dashed lines drawn to the axes: (3, 1), showing g(3) = 1, and (5, 3), showing g(5) = 3 and therefore g inverse of 3 equals 5.","xMin":-1,"xMax":6,"yMin":-1,"yMax":4,"xUnit":34,"yUnit":34,"tickLabels":true,"yLabel":"g(x)","curves":[{"kind":"exp","b":1.7320508,"h":3,"from":-0.6}],"guides":[[3,1],[5,3]],"points":[{"at":[3,1],"label":"(3, 1)","labelSide":"e"},{"at":[5,3],"label":"(5, 3)","labelSide":"se"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Using the graph of $g$ above, find $g^{-1}(1)$."
   answer="3"
+  answerForm="decimal"
   hint="Find the height 1 on the vertical axis, then read across to the curve and down to the input."
 >}}
 
 {{< multiplechoice
   question="Using the same graph, estimate $g^{-1}(4)$."
   answer="about 5.6"
-  hint="The output 4 sits just above the marked point $(5,3)$, so the input is a little past 5."
+  hint="Find the height 4 on the vertical axis, read across to the curve, then read down to the input."
 >}}
 about 5.6
 about 4.0
-about 3.5
-about 7.2
+about 1.7
+about 0.6
 {{< /multiplechoice >}}
 
 ### Finding inverses of functions represented by formulas
@@ -541,6 +548,7 @@ confusing.
 {{< fillin
   question="Solve for $x$ in terms of $y$ given $y=\tfrac{1}{3}(x-5)$."
   answer="3y+5"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x=3y+5$"
   hint="Undo the operations in reverse: multiply by 3 first, then add 5."
 >}}
@@ -598,16 +606,19 @@ one-to-one function. This domain of $f^{-1}$ is exactly the range of $f$.
   hint="Set $y=2-\sqrt{x}$, isolate the radical, then square both sides."
 >}}
 
-{{< multiplechoice
-  question="State the domains of $f(x)=2-\sqrt{x}$ and of its inverse."
-  answer="domain of $f$: $[0,\infty)$; domain of $f^{-1}$: $(-\infty,2]$"
-  hint="The domain of the inverse is the range of $f$ — and a square root is never negative, so $2-\sqrt{x}$ never exceeds 2."
+{{< fillin
+  question="State the domain of $f(x)=2-\sqrt{x}$ in interval notation."
+  answer="[0,\infty)"
+  answerForm="decimal"
+  hint="A square root of a real number needs a radicand that is not negative."
 >}}
-domain of $f$: $[0,\infty)$; domain of $f^{-1}$: $(-\infty,2]$
-domain of $f$: $(-\infty,\infty)$; domain of $f^{-1}$: $(-\infty,\infty)$
-domain of $f$: $(-\infty,2]$; domain of $f^{-1}$: $[0,\infty)$
-domain of $f$: $[0,\infty)$; domain of $f^{-1}$: $[2,\infty)$
-{{< /multiplechoice >}}
+
+{{< fillin
+  question="State the domain of the inverse of $f(x)=2-\sqrt{x}$ in interval notation."
+  answer="(-\infty,2]"
+  answerForm="decimal"
+  hint="The domain of the inverse is the range of $f$: ask which values $\sqrt{x}$ can take, and so which values $2-\sqrt{x}$ can take."
+>}}
 
 ## Finding inverse functions and their graphs
 
@@ -634,7 +645,7 @@ $f(x)$ reflected about the diagonal line $y=x$, which we will call the
 identity line, shown below with the square-root function dashed.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The right half of the parabola y = x squared together with the square root curve, drawn dashed, and the dashed identity line y = x. Each curve is the mirror image of the other across that line.","xMin":-1,"xMax":5,"yMin":-1,"yMax":5,"unit":34,"tickLabels":true,"quadratics":[{"a":1,"from":0,"arrows":"end"}],"curves":[{"kind":"sqrt","dashed":true,"arrows":"end"}],"lines":[{"slope":1,"intercept":0,"dashed":true,"arrows":false,"label":"y = x","labelAt":0.8}],"points":[{"at":[0,0]}]}
+{"ariaLabel":"The right half of the parabola y = x squared, labelled f(x), together with the square root curve, drawn dashed and labelled f inverse of x, and the dashed identity line y = x. Each curve is the mirror image of the other across that line.","xMin":-1,"xMax":5,"yMin":-1,"yMax":5,"unit":34,"tickLabels":true,"quadratics":[{"a":1,"from":0,"arrows":"end"}],"curves":[{"kind":"sqrt","dashed":true,"arrows":"end"}],"lines":[{"slope":1,"intercept":0,"dashed":true,"arrows":false,"label":"y = x","labelAt":0.8}],"points":[{"at":[0,0]}],"texts":[{"at":[1.5,3.4],"text":"f(x)","anchor":"end"},{"at":[3.3,1.2],"text":"f⁻¹(x)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 This relationship will be observed for all one-to-one functions, because it is
@@ -644,7 +655,7 @@ equivalent to interchanging the roles of the vertical and horizontal axes.
 **Example.** Given the graph of $f(x)$ below, sketch a graph of $f^{-1}(x)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f: a curve that falls steeply near the vertical axis, crosses the horizontal axis at (1, 0), and rises slowly to the right through (4, 2).","xMin":-1,"xMax":6,"yMin":-4,"yMax":4,"xUnit":34,"yUnit":24,"tickLabels":true,"curves":[{"kind":"log","b":2}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[4,2],"label":"(4, 2)"}]}
+{"ariaLabel":"The graph of f: a curve that rises steeply out of the bottom of the window just right of the vertical axis, crosses the horizontal axis at (1, 0), and keeps rising, more and more slowly, to the right through (4, 2).","xMin":-1,"xMax":6,"yMin":-4,"yMax":4,"xUnit":34,"yUnit":24,"tickLabels":true,"curves":[{"kind":"log","b":2,"from":0.09}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[4,2],"label":"(4, 2)"}]}
 {{< /apfigure >}}
 
 **Solution.** This is a one-to-one function, so we will be able to sketch an
@@ -657,7 +668,7 @@ $(0,1)$ and the point $(4,2)$ reflects to $(2,4)$. Sketching the inverse
 (dashed) on the same axes as the original graph gives the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same curve together with its inverse, drawn dashed, and the dashed identity line y = x. The point (1, 0) on the original corresponds to (0, 1) on the inverse, and (4, 2) corresponds to (2, 4); each curve is the mirror image of the other across the line y = x.","xMin":-4,"xMax":6,"yMin":-4,"yMax":6,"xUnit":26,"yUnit":26,"tickLabels":true,"curves":[{"kind":"log","b":2},{"kind":"exp","b":2,"dashed":true}],"lines":[{"slope":1,"intercept":0,"dashed":true,"arrows":false,"label":"y = x","labelAt":0.85}],"points":[{"at":[1,0]},{"at":[4,2]},{"at":[0,1]},{"at":[2,4]}]}
+{"ariaLabel":"The same curve, labelled f(x), together with its inverse, drawn dashed and labelled f inverse of x, and the dashed identity line y = x. The point (1, 0) on the original corresponds to (0, 1) on the inverse, and (4, 2) corresponds to (2, 4); each curve is the mirror image of the other across the line y = x.","xMin":-4,"xMax":6,"yMin":-4,"yMax":6,"xUnit":26,"yUnit":26,"tickLabels":true,"curves":[{"kind":"log","b":2,"from":0.09},{"kind":"exp","b":2,"dashed":true,"from":-3.5}],"lines":[{"slope":1,"intercept":0,"dashed":true,"arrows":false,"label":"y = x","labelAt":0.85}],"points":[{"at":[1,0]},{"at":[4,2]},{"at":[0,1]},{"at":[2,4]}],"texts":[{"at":[5.2,1.6],"text":"f(x)","anchor":"middle"},{"at":[1.8,4.6],"text":"f⁻¹(x)","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -676,7 +687,8 @@ $(0,1)$ and the point $(4,2)$ reflects to $(2,4)$. Sketching the inverse
 ## Key concepts
 
 - If $g(x)$ is the inverse of $f(x)$, then $g(f(x))=f(g(x))=x$.
-- Each of the toolkit functions has an inverse.
+- Every toolkit function except the constant function has an inverse, once
+  its domain is restricted where necessary.
 - For a function to have an inverse, it must be one-to-one (pass the
   horizontal line test).
 - A function that is not one-to-one over its entire domain may be one-to-one
@@ -703,7 +715,7 @@ $f^{-1}$.
 {{< multiplechoice
   question="Can a function be its own inverse?"
   answer="Yes"
-  hint="Test $f(x)=\tfrac{1}{x}$: composing it with itself simplifies immediately."
+  hint="A function is its own inverse when $f(f(x))=x$; try composing a toolkit function with itself."
 >}}
 Yes
 No
@@ -723,7 +735,7 @@ No, because $f(g(x))\ne x$
 {{< multiplechoice
   question="If $f(x)=\sqrt[3]{x-1}$ and $g(x)=x^3+1$, is $g=f^{-1}$?"
   answer="Yes, because both $f(g(x))=x$ and $g(f(x))=x$"
-  hint="Substitute $g(x)$ into $f$ first — the cube and cube root cancel — then check the reverse order."
+  hint="Substitute $g(x)$ into $f$ and simplify, then substitute $f(x)$ into $g$ and simplify."
 >}}
 No, because $f(g(x))\ne x$
 Only $g(f(x))=x$ holds, so they are not inverses
@@ -736,7 +748,7 @@ No, because $g(f(x))\ne x$
 {{< multiplechoice
   question="Find a domain on which $f(x)=(x+7)^2$ is one-to-one and non-decreasing, and find the inverse of $f$ restricted to that domain."
   answer="domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}-7$"
-  hint="Restrict to where $x+7\ge 0$, then solve $y=(x+7)^2$ for $x$ using the positive square root."
+  hint="Find the vertex of the parabola and keep the side on which $f$ is non-decreasing; then solve $y=(x+7)^2$ for $x$, taking the square root that matches that side, and interchange $x$ and $y$."
 >}}
 domain of $f$: $(-\infty,-7]$; $f^{-1}(x)=\sqrt{x}-7$
 domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}+7$
@@ -747,7 +759,7 @@ domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x-7}$
 {{< multiplechoice
   question="Find a domain on which $f(x)=x^2-5$ is one-to-one and non-decreasing, and find the inverse of $f$ restricted to that domain."
   answer="domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x+5}$"
-  hint="Restrict to where $x\ge 0$, then solve $y=x^2-5$ for $x$ using the positive square root."
+  hint="Find the vertex of the parabola and keep the side on which $f$ is non-decreasing; then solve $y=x^2-5$ for $x$, taking the square root that matches that side, and interchange $x$ and $y$."
 >}}
 domain of $f$: $(-\infty,0]$; $f^{-1}(x)=\sqrt{x+5}$
 domain of $f$: $[-5,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
@@ -758,7 +770,7 @@ domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x}-5$
 {{< multiplechoice
   question="Is $f(x)=\sqrt{x}$ one-to-one?"
   answer="Yes"
-  hint="A one-to-one function passes the horizontal line test; a square-root graph never doubles back on itself."
+  hint="Picture the graph of $f(x)=\sqrt{x}$ and apply the horizontal line test."
 >}}
 No
 Yes
@@ -769,6 +781,7 @@ Yes
 {{< fillin
   question="Find $f^{-1}(x)$ for $f(x)=x+3$."
   answer="x-3"
+  answerForm="slope-intercept-form"
   answerDisplay="$f^{-1}(x)=x-3$"
   hint="Undo addition with the opposite operation."
 >}}
@@ -776,6 +789,7 @@ Yes
 {{< fillin
   question="Find $f^{-1}(x)$ for $f(x)=\tfrac{x}{x+2}$."
   answer="-\tfrac{2x}{x-1}"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$f^{-1}(x)=-\tfrac{2x}{x-1}$"
   hint="Set $y=\tfrac{x}{x+2}$, clear the denominator, then collect the $x$-terms on one side."
 >}}
@@ -783,12 +797,14 @@ Yes
 {{< fillin
   question="If $f(6)=7$ for a one-to-one function $f$, find $f^{-1}(7)$."
   answer="6"
+  answerForm="decimal"
   hint="The inverse swaps input and output, so read the given statement backwards."
 >}}
 
 {{< fillin
   question="If $f^{-1}(-4)=-8$ for a one-to-one function $f$, find $f(-8)$."
   answer="-4"
+  answerForm="decimal"
   hint="By definition, $f^{-1}(a)=b$ means $f(b)=a$."
 >}}
 
@@ -803,20 +819,22 @@ The table below shows a one-to-one function $f$.
 {{< fillin
   question="Using the table above, give $f^{-1}(1)$, $f^{-1}(4)$, $f^{-1}(7)$, $f^{-1}(12)$, and $f^{-1}(16)$, in that order, separated by commas."
   answer="3,6,9,13,14"
+  answerForm="decimal"
   answerDisplay="$f^{-1}(1)=3$, $f^{-1}(4)=6$, $f^{-1}(7)=9$, $f^{-1}(12)=13$, $f^{-1}(16)=14$"
   hint="Reverse each pair from the table: if $f(a)=b$ then $f^{-1}(b)=a$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of a one-to-one function f: a downward-sloping line that meets the y-axis at (0, 3) and the x-axis at (2, 0).","xMin":-1,"xMax":5,"yMin":-1,"yMax":5,"unit":30,"tickLabels":true,"lines":[{"slope":-1.5,"intercept":3,"label":"f"}]}
+{"ariaLabel":"The graph of a one-to-one function f: a downward-sloping straight line, labelled f, that meets the y-axis at (0, 3) and falls 3 units for every 2 units to the right.","xMin":-1,"xMax":5,"yMin":-1,"yMax":5,"unit":30,"tickLabels":true,"lines":[{"slope":-1.5,"intercept":3,"label":"f","labelAt":0.45}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="The graph of a one-to-one function $f$ is shown above. Find $f^{-1}(0)$."
   answer="2"
+  answerForm="decimal"
   hint="$f^{-1}(0)$ asks for the input that makes $f$ output $0$ — read the $x$-intercept."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.7: Inverse Functions](https://openstax.org/books/precalculus-2e/pages/1-7-inverse-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the reversible function-machine diagram and the domain-and-range diagram, and generated every graph from an explicit formula — the source's unlabelled curves for $g$ and for the reflection example are $g(x)=3^{(x-3)/2}$ and $f(x)=\log_2 x$, fitted to the points the text names; presented Milan's weather forecast and every function table as Markdown tables, giving the forecast temperatures without the source's weather icons; drew the inverse or comparison curve dashed where the source distinguishes it by colour; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a domain, an interval, or a yes/no judgement; omitted the final sketching practice item, which asks for the pair of graphs the worked example immediately above already shows; and adapted selected end-of-section exercises, each with an answer in the official Answer Key, into the section-final Practice block, recreating one exercise's table and another's line graph and using multiple choice for domain, restricted-domain, and one-to-one judgements.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.7: Inverse Functions](https://openstax.org/books/precalculus-2e/pages/1-7-inverse-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the reversible function-machine diagram and the domain-and-range diagram (drawn without its sample points $a$ and $b$), and generated every graph from an explicit formula — the source's unlabelled curves for $g$ and for the reflection example are $g(x)=3^{(x-3)/2}$ and $f(x)=\log_2 x$, fitted to the points the text names; presented Milan's weather forecast and every function table as Markdown tables, giving the forecast temperatures without the source's weather icons; drew the inverse or comparison curve dashed where the source distinguishes it by colour; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, asking for the values where the source also asks for an interpretation, splitting each two-part domain-and-range question into one interval-notation fill-in per set, and using multiple choice for the yes/no judgements and for the estimate read from the graph; omitted the final sketching practice item, which asks for the pair of graphs the worked example immediately above already shows; adapted selected end-of-section exercises, each with an answer in the official Answer Key, into the section-final Practice block, recreating one exercise's table and another's line graph, asking for the inverse table's values in order, and using multiple choice for the yes/no, inverse-verification, and one-to-one judgements and for the two restricted-domain exercises, whose domain and inverse are chosen together; and corrected the key concept "Each of the toolkit functions has an inverse," which the section's own toolkit example contradicts, to except the constant function and allow a restricted domain.</small>

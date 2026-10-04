@@ -111,8 +111,8 @@ function, the graph is always a line.
 
 The rate of change, which is constant, determines the slant, or **slope** of
 the line. The point at which the input value is zero is the vertical
-intercept, or **$y$-intercept**, of the line. We can see from the graph that
-the $y$-intercept in the train example we just saw is $(0,250)$ and
+intercept, or **$y$-intercept**, of the line. We can see from the graph below
+that the $y$-intercept in the train example we just saw is $(0,250)$ and
 represents the distance of the train from the station when it began moving at
 a constant speed.
 
@@ -167,15 +167,15 @@ are the same for all input values so the slope is zero. A line with a slope
 of zero is horizontal as in **(c)**.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a): an increasing function. The line labelled f slants upward from left to right, ending in an arrow at the upper right.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"f(x)","segments":[{"from":[0.1,0.2],"to":[6.4,6.6],"arrows":"end","label":"f"}]}
+{"ariaLabel":"Panel (a), captioned Increasing function: the line labelled f slants upward from left to right, ending in an arrow at the upper right.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"f(x)","segments":[{"from":[0.1,0.2],"to":[6.4,6.6],"arrows":"end","label":"f"}],"texts":[{"at":[3.5,-1.1],"text":"(a) Increasing function","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b): a decreasing function. The line labelled f slants downward from left to right, ending in an arrow at the lower right.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"f(x)","segments":[{"from":[0.1,6.6],"to":[6.2,0.3],"arrows":"end","label":"f"}]}
+{"ariaLabel":"Panel (b), captioned Decreasing function: the line labelled f slants downward from left to right, ending in an arrow at the lower right.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"f(x)","segments":[{"from":[0.1,6.6],"to":[6.2,0.3],"arrows":"end","label":"f"}],"texts":[{"at":[3.5,-1.1],"text":"(b) Decreasing function","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (c): a constant function. The horizontal line labelled f runs to the right at a fixed height, ending in an arrow.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"f(x)","segments":[{"from":[0.1,4],"to":[6.6,4],"arrows":"end","label":"f"}]}
+{"ariaLabel":"Panel (c), captioned Constant function: the horizontal line labelled f runs to the right at a fixed height, ending in an arrow.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"unit":26,"grid":false,"tickLabels":false,"xLabel":"x","yLabel":"f(x)","segments":[{"from":[0.1,4],"to":[6.6,4],"arrows":"end","label":"f"}],"texts":[{"at":[3.5,-1.1],"text":"(c) Constant function","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -244,7 +244,7 @@ steepness. The greater the absolute value of the slope, the steeper the line
 is.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The line y = 3x + 2 with the points (1, 5) and (2, 8) marked and labelled (x sub 1, y sub 1) and (x sub 2, y sub 2). A vertical double arrow from (1, 5) to (1, 8) measures y sub 2 minus y sub 1, and a horizontal double arrow from (1, 8) to (2, 8) measures x sub 2 minus x sub 1.","xMin":-3,"xMax":4,"yMin":-1,"yMax":10,"unit":24,"tickLabels":true,"lines":[{"slope":3,"intercept":2}],"segments":[{"from":[1,5],"to":[1,8],"arrows":true},{"from":[1,8],"to":[2,8],"arrows":true},{"from":[-1,7.1],"to":[0.85,6.6],"arrows":"end"},{"from":[-1,9.1],"to":[1.35,8.35],"arrows":"end"}],"points":[{"at":[1,5],"label":"(x₁, y₁)"},{"at":[2,8],"label":"(x₂, y₂)"}],"texts":[{"at":[-2.95,7.1],"text":"y₂ − y₁","anchor":"start"},{"at":[-2.95,9.1],"text":"x₂ − x₁","anchor":"start"}]}
+{"ariaLabel":"The line y = 3x + 2 with the points (1, 5) and (2, 8) marked and labelled (x sub 1, y sub 1) and (x sub 2, y sub 2). A vertical double arrow from (1, 5) to (1, 8) measures y sub 2 minus y sub 1, and a horizontal double arrow from (1, 8) to (2, 8) measures x sub 2 minus x sub 1.","xMin":-3,"xMax":4,"yMin":-2,"yMax":10,"unit":28,"tickLabels":true,"lines":[{"slope":3,"intercept":2}],"segments":[{"from":[1,5],"to":[1,7.85],"arrows":true},{"from":[1,8],"to":[2,8],"arrows":true},{"from":[-1,6.5],"to":[0.8,6.5],"arrows":"end"},{"from":[-1,9.5],"to":[1.5,9.5]},{"from":[1.5,9.5],"to":[1.5,8.25],"arrows":"end"}],"points":[{"at":[1,5],"label":"(x₁, y₁)"},{"at":[2,8],"label":"(x₂, y₂)"}],"texts":[{"at":[-2.95,6.5],"text":"y₂ − y₁","anchor":"start"},{"at":[-2.95,9.5],"text":"x₂ − x₁","anchor":"start"}]}
 {{< /apfigure >}}
 
 The slope of a function is calculated by the change in $y$ divided by the
@@ -301,6 +301,7 @@ $x$-coordinate, used.
 {{< fillin
   question="If $f(x)$ is a linear function, and $(2,3)$ and $(0,4)$ are points on the line, find the slope."
   answer="-\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$m=\tfrac{4-3}{0-2}=\tfrac{1}{-2}=-\tfrac{1}{2}$"
   hint="Divide the change in output by the change in input, keeping each point's two coordinates together."
 >}}
@@ -337,6 +338,7 @@ therefore reasonable.
 {{< fillin
   question="The population of a small town increased from 1,442 to 1,868 between 2009 and 2012. Find the change of population per year, in people per year, if we assume the change was constant from 2009 to 2012."
   answer="142"
+  answerForm="decimal"
   answerDisplay="$m=\tfrac{1{,}868-1{,}442}{2012-2009}=\tfrac{426}{3}=142$ people per year"
   hint="Divide the change in population by the number of years between the two counts."
 >}}
@@ -369,7 +371,7 @@ slope-intercept form as shown.
 $$
 \begin{array}{lrcl}
 & y-4 &=& -\tfrac{1}{2}(x-6) \\[4pt]
-\text{Distribute the }-\tfrac{1}{2}. & y-4 &=& -\tfrac{1}{2}x+3 \\[4pt]
+\text{Distribute the }{-}\tfrac{1}{2}. & y-4 &=& -\tfrac{1}{2}x+3 \\[4pt]
 \text{Add 4 to each side}. & y &=& -\tfrac{1}{2}x+7
 \end{array}
 $$
@@ -417,7 +419,7 @@ Both equations, $y-1=2(x-4)$ and $y=2x-7$, describe the same line, graphed
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The line y = 2x − 7 on a grid from −8 to 8 on both axes, with the points (0, −7), (3.5, 0), and (4, 1) marked.","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":13,"grid":false,"tickStep":2,"tickLabels":true,"lines":[{"slope":2,"intercept":-7}],"points":[{"at":[0,-7]},{"at":[3.5,0]},{"at":[4,1]}]}
+{"ariaLabel":"The line y = 2x − 7 on axes numbered from −8 to 8, with the points (0, −7), (3.5, 0), and (4, 1) marked.","xMin":-8,"xMax":8,"yMin":-9.5,"yMax":8,"unit":13,"grid":false,"tickStep":2,"tickLabels":true,"lines":[{"slope":2,"intercept":-7}],"points":[{"at":[0,-7]},{"at":[3.5,0]},{"at":[4,1]}]}
 {{< /apfigure >}}
 
 **Example.** Write the point-slope form of an equation of a line with a slope
@@ -433,7 +435,7 @@ $$
 \begin{array}{lrcl}
 & y-y_1 &=& m(x-x_1) \\[4pt]
 \text{Substitute known values}. & y-(-1) &=& 3(x-6) \\[4pt]
-\text{Distribute }-1\text{ to find point-slope form}. & y+1 &=& 3(x-6)
+\text{Distribute }{-}1\text{ to find point-slope form}. & y+1 &=& 3(x-6)
 \end{array}
 $$
 
@@ -502,7 +504,7 @@ $$
 Both equations describe the line shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The line y = one-third x + 1 on a grid from −4 to 4 on both axes, with the points (−3, 0) and (0, 1) marked and labelled.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":24,"grid":false,"tickLabels":true,"lines":[{"slope":0.3333333333333333,"intercept":1}],"points":[{"at":[-3,0]},{"at":[0,1]}],"texts":[{"at":[-3.9,0.45],"text":"(−3, 0)","anchor":"start"},{"at":[0.2,1],"text":"(0, 1)","anchor":"start","dy":14}]}
+{"ariaLabel":"The line y = one-third x + 1 on a grid from −4 to 4 on both axes, with the points (−3, 0) and (0, 1) marked and labelled.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":28,"grid":false,"tickStep":2,"tickLabels":true,"polynomials":[{"coeffs":[1,0.3333333333333333],"from":-3.6,"arrows":true}],"points":[{"at":[-3,0]},{"at":[0,1]}],"texts":[{"at":[-3.9,0.45],"text":"(−3, 0)","anchor":"start"},{"at":[0.2,1],"text":"(0, 1)","anchor":"start","dy":14}]}
 {{< /apfigure >}}
 
 **Example.** Write the point-slope form of an equation of a line that passes
@@ -569,7 +571,7 @@ in the form of a graph, a point and a slope, two points, and so on. Look at
 the graph of the function $f$ below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f, a line falling from left to right, on a grid with x from −2 to 8 and y from −1 to 8. The points (0, 7) and (4, 4) are marked and labelled.","xMin":-2,"xMax":8,"yMin":-1,"yMax":8,"unit":22,"tickLabels":true,"lines":[{"slope":-0.75,"intercept":7,"label":"f","labelAt":0.72}],"points":[{"at":[0,7],"label":"(0, 7)","labelSide":"e"},{"at":[4,4],"label":"(4, 4)","labelSide":"ne"}]}
+{"ariaLabel":"The graph of f, a line falling from left to right, on a grid with x from −2 to 8 and y from −1 to 8. The points (0, 7) and (4, 4) are marked and labelled.","xMin":-2,"xMax":8,"yMin":-1,"yMax":8,"unit":22,"tickLabels":true,"polynomials":[{"coeffs":[7,-0.75],"arrows":true}],"points":[{"at":[0,7],"label":"(0, 7)","labelSide":"e"},{"at":[4,4],"label":"(4, 4)","labelSide":"ne"}],"texts":[{"at":[6.5,2.65],"text":"f","italic":true}]}
 {{< /apfigure >}}
 
 We are not given the slope of the line, but we can choose any two points on
@@ -907,8 +909,9 @@ $x$ months since the measurements began.
 {{< fillin
   question="Using the table above, write a linear function $H(x)$, where $x$ is the number of months since the start of the experiment. Enter the rule for $H(x)$."
   answer="0.5x+12.5"
+  answerForm="slope-intercept-form"
   answerDisplay="$H(x)=0.5x+12.5$"
-  hint="The height rises 1 foot every 2 months, and the initial height is the output at $x=0$."
+  hint="Divide the change in height between two columns by the change in months, and read the initial value from the column where $x=0$."
 >}}
 
 ## Key equations
@@ -972,7 +975,7 @@ linear function of the form $y-y_1=m(x-x_1)$.
 {{< multiplechoice
   question="Can $y=\tfrac{1}{4}x+6$ be written as a linear function?"
   answer="Yes"
-  hint="A linear function has $x$ appearing only to the first power, with no other operations on it."
+  hint="Compare the equation with the slope-intercept form $y=mx+b$."
 >}}
 Yes
 No
@@ -981,7 +984,7 @@ No
 {{< multiplechoice
   question="Can $y=3x^2-2$ be written as a linear function?"
   answer="No"
-  hint="Look at the power of $x$: a linear function never raises the input above the first power."
+  hint="Compare the equation with the slope-intercept form $y=mx+b$, paying attention to the power of $x$."
 >}}
 Yes
 No
@@ -990,8 +993,9 @@ No
 {{< fillin
   question="A boat is 100 miles from a marina, sailing directly toward it at 10 miles per hour. Write an equation for the distance $d(t)$ of the boat from the marina after $t$ hours. Enter the rule for $d(t)$."
   answer="100-10t"
+  answerForm="slope-intercept-form"
   answerDisplay="$d(t)=100-10t$"
-  hint="The distance starts at 100 miles and decreases by 10 miles for every hour that passes."
+  hint="The initial value is the distance when $t=0$; the rate of change is how the distance changes each hour, so decide whether it grows or shrinks."
 >}}
 
 ### Determine whether a linear function is increasing, decreasing, or constant
@@ -1010,7 +1014,7 @@ Constant, because $m=0$
 {{< multiplechoice
   question="Is $a(x)=5-2x$ increasing, decreasing, or constant?"
   answer="Decreasing, because $m<0$"
-  hint="Rewrite the function as $a(x)=-2x+5$ and check the sign of its slope."
+  hint="Reorder the terms into the form $mx+b$ and check the sign of $m$."
 >}}
 Increasing, because $m>0$
 Constant, because $m=0$
@@ -1034,6 +1038,7 @@ Increasing, because $m>0$
 {{< fillin
   question="Find the slope of the line through $(2,4)$ and $(4,10)$."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$m=\tfrac{10-4}{4-2}=3$"
   hint="Divide the change in output by the change in input."
 >}}
@@ -1041,13 +1046,15 @@ Increasing, because $m>0$
 {{< fillin
   question="Find the slope of the line through $(-1,4)$ and $(5,2)$."
   answer="-\frac{1}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$m=\tfrac{2-4}{5-(-1)}=-\tfrac{1}{3}$"
   hint="Divide the change in output by the change in input, keeping each point's coordinates together."
 >}}
 
 {{< fillin
-  question="Jessica is walking home from a friend's house. After 2 minutes she is 1.4 miles from home. Twelve minutes after leaving, she is 0.9 miles from home. What is her rate, in miles per hour?"
+  question="Jessica is walking home from a friend's house. After 2 minutes she is 1.4 miles from home. Twelve minutes after leaving, she is 0.9 miles from home. What is her rate in miles per hour? Enter her speed as a positive number."
   answer="3"
+  answerForm="decimal"
   answerDisplay="3 miles per hour"
   hint="Find the slope between the two (time, distance) points in miles per minute, then convert to miles per hour."
 >}}
@@ -1075,6 +1082,7 @@ Increasing, because $m>0$
 {{< fillin
   question="A gym membership with two personal training sessions costs \$125, while a gym membership with five personal training sessions costs \$260. What is the cost per session, in dollars?"
   answer="45"
+  answerForm="decimal"
   answerDisplay="\$45 per session"
   hint="Treat the number of sessions as the input and the total cost as the output, then find the slope."
 >}}
@@ -1082,6 +1090,7 @@ Increasing, because $m>0$
 {{< fillin
   question="A phone company charges according to $C(n)=24+0.1n$, where $n$ is the number of minutes talked and $C(n)$ is the monthly charge in dollars. What is the rate of change, in dollars per minute?"
   answer="0.1"
+  answerForm="lowest-terms"
   answerDisplay="$0.1$ dollars per minute"
   hint="The rate of change is the coefficient of $n$."
 >}}
@@ -1089,6 +1098,7 @@ Increasing, because $m>0$
 {{< fillin
   question="Using that same phone plan, $C(n)=24+0.1n$, what is the initial value, in dollars?"
   answer="24"
+  answerForm="decimal"
   answerDisplay="\$24"
   hint="The initial value is the constant term, the charge when $n=0$."
 >}}
@@ -1096,12 +1106,13 @@ Increasing, because $m>0$
 {{< fillin
   question="A city's population in 1960 was 287,500. In 1989 the population was 275,900. Find the rate of change of the population, in people per year."
   answer="-400"
+  answerForm="decimal"
   answerDisplay="$-400$ people per year"
   hint="Divide the change in population by the number of years between 1960 and 1989."
 >}}
 
 {{< multiplechoice
-  question="Average annual income for the years 1990 through 1999 is given by $I(x)=1054x+23{,}286$, where $x$ is the number of years after 1990. Which statement correctly interprets the slope in context?"
+  question="Average annual income for the years 1990 through 1999 is given by $I(x)=1{,}054x+23{,}286$, where $x$ is the number of years after 1990. Which statement correctly interprets the slope in context?"
   answer="Each year in the decade of the 1990s, average annual income increased by \$1,054."
   hint="The slope is the change in income for each one-year increase in $x$."
 >}}
@@ -1113,4 +1124,4 @@ Average annual income rose to a level of \$23,286 by the end of 1999.
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.1: Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-1-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from its exact equation, matching the source's window, marked points, and labels — the train ray $D(t)=83t+250$, the three generic increasing/decreasing/constant lines, $y=3x+2$ for the slope diagram and again for the two "write an equation from the graph" figures, $y=2x-7$, $y=\tfrac{1}{3}x+1$, and $y=-\tfrac{3}{4}x+7$; presented the source's three tabular figures (the train, the rat population, and the plant-food experiment) as Markdown tables; replaced the two annotated artwork panels that draw arrows from the numbers into $f(x)=mx+b$ with the equivalent KaTeX substitution step; omitted the decorative maglev-train and scuba-diver photographs, which carry no mathematics, and reworded the two sentences that pointed at them; wrote the two money-valued slope steps in the insurance-commission example as $\tfrac{160\ \text{dollars}}{2\ \text{policies}}=80\ \text{dollars per policy}$, because an escaped dollar sign cannot appear inside a math run in this build; omitted the media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback, splitting each multipart item into one component per response and using multiple choice for the increasing-or-decreasing judgement, which cannot be graded as free-response math; and adapted 15 selected end-of-section exercises — two is-it-linear judgements, a distance-from-a-marina word problem, three increasing/decreasing judgements, two slope-between-two-points computations, a walking-speed word problem, two point-slope-form derivations rewritten from the source's slope-intercept answers, a training-session cost rate, a phone-plan rate-and-initial-value item split into two prompts, a city-population rate of change, and a slope-interpretation multiple choice — into 16 interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.1: Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-1-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible figure generated from its exact equation, matching the source's marked points and labels, and its window except where a window is widened by a unit or two or its tick numbers are thinned to every second value so that no arrowhead lands on a tick number, a label, or another arrowhead — the train ray $D(t)=83t+250$, the three generic increasing/decreasing/constant lines, $y=3x+2$ for the slope diagram and again for the two "write an equation from the graph" figures, $y=2x-7$, $y=\tfrac{1}{3}x+1$, and $y=-\tfrac{3}{4}x+7$; presented the source's three tabular figures (the train, the rat population, and the plant-food experiment) as Markdown tables; replaced the two annotated artwork panels that draw arrows from the numbers into $f(x)=mx+b$ with the equivalent KaTeX substitution step; omitted the decorative maglev-train and scuba-diver photographs, which carry no mathematics, and reworded the two sentences that pointed at them; wrote the two money-valued slope steps in the insurance-commission example as $\tfrac{160\ \text{dollars}}{2\ \text{policies}}=80\ \text{dollars per policy}$, because an escaped dollar sign cannot appear inside a math run in this build; wrote the two-points example's stated point-slope equation as $y-1=2(x-5)$, where the source prints the variables with stray subscripts as $y_2-1=2(x_2-5)$; omitted the media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback, splitting each multipart item into one component per response and using multiple choice for the increasing-or-decreasing judgement, which cannot be graded as free-response math; and adapted 15 selected end-of-section exercises — two is-it-linear judgements, a distance-from-a-marina word problem, three increasing/decreasing judgements, two slope-between-two-points computations, a walking-speed word problem, two point-slope-form derivations rewritten from the source's slope-intercept answers, a training-session cost rate, a phone-plan rate-and-initial-value item split into two prompts, a city-population rate of change, and a slope-interpretation multiple choice — into 16 interactive components in a closing Practice block, one group per objective.</small>

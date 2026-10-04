@@ -48,7 +48,7 @@ input. For a function $g(x)=f(x)+k$, the function $f(x)$ is shifted vertically
 $k$ units.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The cube root curve and, dashed, the same curve shifted one unit up. Both rise from the third quadrant into the first; the dashed copy passes through (0, 1) instead of the origin.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":30,"tickLabels":true,"curves":[{"kind":"cbrt"},{"kind":"cbrt","k":1,"dashed":true}]}
+{"ariaLabel":"The cube root curve and, dashed, the same curve shifted one unit up. Both rise from the third quadrant into the first; the dashed copy passes through (0, 1) instead of the origin.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":30,"tickLabels":true,"curves":[{"kind":"cbrt"},{"kind":"cbrt","k":1,"from":-2.62,"dashed":true}],"texts":[{"at":[1.0,2.7],"text":"f(x) + 1","anchor":"start"},{"at":[1.6,0.5],"text":"f(x)","anchor":"start"}]}
 {{< /apfigure >}}
 
 A vertical shift by $k=1$ of the cube root function $f(x)=\sqrt[3]{x}$; the
@@ -145,8 +145,9 @@ only the output values change.
 {{< fillin
   question="The function $h(t)=-4.9t^2+30t$ gives the height $h$ of a ball (in meters) thrown upward from the ground after $t$ seconds. Suppose the ball was instead thrown from the top of a 10-m building. Write a formula for the new height function $b(t)$."
   answer="-4.9t^2+30t+10"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$b(t)=h(t)+10=-4.9t^2+30t+10$"
-  hint="Throwing from 10 m up adds 10 to every output, so this is a vertical shift."
+  hint="Ask whether the building changes the time input or the height output, then change the formula for $h(t)$ in that place."
 >}}
 
 ### Identifying horizontal shifts
@@ -158,7 +159,7 @@ movement of the graph of the function left or right in what is known as a
 **horizontal shift**.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The cube root curve and, dashed, the same curve shifted one unit to the left. The dashed copy crosses the horizontal axis at −1 instead of at the origin.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":30,"tickLabels":true,"curves":[{"kind":"cbrt"},{"kind":"cbrt","h":-1,"dashed":true}]}
+{"ariaLabel":"The cube root curve and, dashed, the same curve shifted one unit to the left. The dashed copy crosses the horizontal axis at −1 instead of at the origin.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":30,"tickLabels":true,"curves":[{"kind":"cbrt"},{"kind":"cbrt","h":-1,"dashed":true,"from":-2.2,"to":1.8}],"texts":[{"at":[0.4,1.8],"text":"f(x + 1)","anchor":"start"},{"at":[1.7,0.45],"text":"f(x)","anchor":"start"}]}
 {{< /apfigure >}}
 
 A horizontal shift of the function $f(x)=\sqrt[3]{x}$; the shifted graph is
@@ -204,7 +205,7 @@ In both cases, we see that, because $F(t)$ starts 2 hours sooner, $h=-2$. That
 means that the same output values are reached when $F(t)=V(t-(-2))=V(t+2)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of V of t together with, dashed, the graph of F of t equals V of t plus 2. The dashed graph has the same shape but every feature happens 2 hours earlier: it starts to rise at t = 6 instead of t = 8 and reaches 220 at t = 8 instead of t = 10.","xMin":-4,"xMax":26,"yMin":-30,"yMax":300,"xUnit":11,"yUnit":0.75,"xGridStep":4,"yGridStep":50,"tickLabels":true,"xTickStep":4,"yTickStep":50,"xLabel":"t","yLabel":"V","polylines":[{"through":[[0,0],[8,0],[10,220],[17,220],[19,0],[24,0]]},{"through":[[0,0],[6,0],[8,220],[15,220],[17,0],[24,0]],"dashed":true}]}
+{"ariaLabel":"The graph of V of t together with, dashed, the graph of F of t equals V of the quantity t plus 2. The dashed graph has the same shape but every feature happens 2 hours earlier: it starts to rise at t = 6 instead of t = 8 and reaches 220 at t = 8 instead of t = 10.","xMin":-4,"xMax":26,"yMin":-30,"yMax":300,"xUnit":11,"yUnit":0.75,"xGridStep":4,"yGridStep":50,"tickLabels":true,"xTickStep":4,"yTickStep":50,"xLabel":"t","yLabel":"V","polylines":[{"through":[[0,0],[8,0],[10,220],[17,220],[19,0],[24,0]]},{"through":[[-2,0],[6,0],[8,220],[15,220],[17,0],[22,0]],"dashed":true}]}
 {{< /apfigure >}}
 
 Note that $V(t+2)$ has the effect of shifting the graph to the *left*.
@@ -272,7 +273,7 @@ function $f(x)=x^2$. Relate this new function $g(x)$ to $f(x)$, and then find
 a formula for $g(x)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An upward-opening parabola with its vertex at (2, 0), the graph of the squaring function shifted 2 units to the right.","xMin":-3,"xMax":7,"yMin":-2,"yMax":8,"unit":24,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":4}]}
+{"ariaLabel":"An upward-opening parabola with its vertex at (2, 0), passing through (0, 4) and (4, 4).","xMin":-3,"xMax":7,"yMin":-2,"yMax":8,"unit":24,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":4}]}
 {{< /apfigure >}}
 
 **Solution.** Notice that the graph is identical in shape to the $f(x)=x^2$
@@ -317,7 +318,7 @@ graph would indicate a horizontal shift.
 {{< multiplechoice
   question="Given $f(x)=\sqrt{x}$, describe the transformation $g(x)=f(x+2)$."
   answer="a horizontal shift 2 units to the left"
-  hint="The change is inside the function, so it moves the graph along the input axis — and a plus sign moves it toward negative $x$."
+  hint="Decide whether the $2$ changes the input or the output. Then ask which input to $g$ gives the output $f(0)$."
 >}}
 a vertical shift 2 units down
 a horizontal shift 2 units to the left
@@ -378,7 +379,7 @@ The graph of $h$ alone is shown below.
 transformation of the toolkit square root function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the square root function shifted 1 unit right and 2 units up: it begins at the solid point (1, 2) and rises to the right, passing through (2, 3) and (5, 4).","xMin":-2,"xMax":8,"yMin":-1,"yMax":6,"unit":26,"tickLabels":true,"curves":[{"kind":"sqrt","h":1,"k":2,"arrows":"end"}],"points":[{"at":[1,2]}]}
+{"ariaLabel":"A curve with the shape of the square root graph: it begins at the solid point (1, 2) and rises to the right, passing through (2, 3) and (5, 4).","xMin":-2,"xMax":8,"yMin":-1,"yMax":6,"unit":26,"tickLabels":true,"curves":[{"kind":"sqrt","h":1,"k":2,"arrows":"end"}],"points":[{"at":[1,2]}]}
 {{< /apfigure >}}
 
 **Solution.** The graph of the toolkit function starts at the origin, so this
@@ -398,7 +399,7 @@ function. This new graph has domain $[1,\infty)$ and range $[2,\infty)$.
   question="Write a formula for a transformation of the toolkit reciprocal function $f(x)=\tfrac{1}{x}$ that shifts the function's graph one unit to the right and one unit up."
   answer="\frac{1}{x-1}+1"
   answerDisplay="$g(x)=\tfrac{1}{x-1}+1$"
-  hint="Right by one is an inside change, $x-1$; up by one is an outside change, $+1$."
+  hint="A horizontal shift changes the input inside the function, and a vertical shift adds a constant to the output. Choose each sign from the direction of the shift."
 >}}
 
 ## Graphing functions using reflections about the axes
@@ -409,7 +410,7 @@ across the $x$-axis, while a **horizontal reflection** reflects a graph
 horizontally across the $y$-axis.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A rising curve labelled the original function f of x, together with its two reflections drawn dashed: the horizontal reflection f of negative x, a mirror image across the vertical axis, and the vertical reflection negative f of x, a mirror image across the horizontal axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"curves":[{"kind":"exp","b":2.4,"k":-0.4},{"kind":"exp","b":0.4167,"k":-0.4,"dashed":true},{"kind":"exp","a":-1,"b":2.4,"k":0.4,"dashed":true}],"texts":[{"at":[2.1,2.6],"text":"f(x)","anchor":"start"},{"at":[-2.6,2.6],"text":"f(−x)","anchor":"end"},{"at":[2.3,-2.6],"text":"−f(x)","anchor":"start"}]}
+{"ariaLabel":"A rising exponential-shaped curve labelled f of x, lying above the horizontal axis, together with its two reflections drawn dashed: the horizontal reflection f of negative x, a mirror image across the vertical axis that falls from left to right above the horizontal axis, and the vertical reflection negative f of x, a mirror image across the horizontal axis that falls below it.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"curves":[{"kind":"exp","b":1.6,"from":-2.8},{"kind":"exp","b":0.625,"dashed":true,"to":2.8},{"kind":"exp","a":-1,"b":1.6,"dashed":true,"from":-2.8}],"texts":[{"at":[2.3,3.2],"text":"f(x)","anchor":"end"},{"at":[-2.3,3.2],"text":"f(−x)","anchor":"start"},{"at":[1.9,-3.4],"text":"−f(x)","anchor":"end"}]}
 {{< /apfigure >}}
 
 Notice that the vertical reflection produces a new graph that is a mirror
@@ -462,7 +463,7 @@ so the negative sign belongs outside of the function.
 the vertical axis, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The square root curve rising to the right from the origin and, dashed, its horizontal reflection H of t equals the square root of negative t, rising to the left from the origin as a mirror image across the vertical axis.","xMin":-6,"xMax":6,"yMin":-1,"yMax":3,"xUnit":26,"yUnit":34,"tickLabels":true,"xLabel":"t","yLabel":"s(t)","curves":[{"kind":"sqrt","arrows":"end"}],"polylines":[{"through":[[0,0],[-0.25,0.5],[-0.5,0.707],[-1,1],[-1.5,1.225],[-2,1.414],[-2.5,1.581],[-3,1.732],[-3.5,1.871],[-4,2],[-4.5,2.121],[-5,2.236],[-5.5,2.345]],"dashed":true,"arrows":"end"}]}
+{"ariaLabel":"The square root curve rising to the right from the origin and, dashed, its horizontal reflection H of t equals the square root of negative t, rising to the left from the origin as a mirror image across the vertical axis.","xMin":-6,"xMax":6,"yMin":-1,"yMax":3,"xUnit":26,"yUnit":34,"tickLabels":true,"xLabel":"t","yLabel":"s(t)","curves":[{"kind":"sqrt","arrows":"end"}],"quadratics":[{"a":-1,"sideways":true,"from":0,"to":2.4,"dashed":true,"arrows":"end"}]}
 {{< /apfigure >}}
 
 Because each input value is the opposite of the original input value, we can
@@ -487,10 +488,10 @@ the domain $(-\infty,0]$.
 >}}
 
 {{< fillin
-  question="Now reflect $f(x)=\lvert x-1\rvert$ horizontally, and write the result in the simplest equivalent form."
+  question="Now reflect $f(x)=\lvert x-1\rvert$ horizontally. Write a formula for the result."
   answer="|x+1|"
-  answerDisplay="$f(-x)=\lvert -x-1\rvert=\lvert x+1\rvert$"
-  hint="Replace $x$ by $-x$ inside, then use $\lvert -a\rvert=\lvert a\rvert$."
+  answerDisplay="$f(-x)=\lvert -x-1\rvert$, which equals $\lvert x+1\rvert$"
+  hint="A horizontal reflection multiplies every input by $-1$ before the function acts on it."
 >}}
 
 **Example.** A function $f(x)$ is given below. Create a table for the
@@ -525,13 +526,15 @@ Now suppose a function $f$ is given by the table below.
 {{< fillin
   question="With $f$ as in the table above and $g(x)=-f(x)$, find $g(2)$."
   answer="-15"
+  answerForm="decimal"
   hint="A vertical reflection keeps the input and negates the output."
 >}}
 
 {{< fillin
   question="With the same $f$ and $h(x)=f(-x)$, find $h(-2)$."
   answer="15"
-  hint="A horizontal reflection reads the table at the opposite input: $h(-2)=f(2)$."
+  answerForm="decimal"
+  hint="A horizontal reflection keeps the output and reads the table of $f$ at the opposite input."
 >}}
 
 **Example.** A common model for learning has an equation similar to
@@ -540,7 +543,7 @@ after $t$ practice sessions. This is a transformation of the function
 $f(t)=2^t$ shown below. Sketch a graph of $k(t)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of t equals 2 to the power t: a curve that hugs the horizontal axis on the left, passes through (0, 1), and rises steeply to the right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xLabel":"t","yLabel":"f(t)","curves":[{"kind":"exp","b":2}]}
+{"ariaLabel":"The graph of f of t equals 2 to the power t: a curve that hugs the horizontal axis on the left, passes through (0, 1), and rises steeply to the right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xLabel":"t","yLabel":"f(t)","curves":[{"kind":"exp","b":2,"from":-4.75}]}
 {{< /apfigure >}}
 
 **Solution.** This equation combines three transformations into one equation.
@@ -567,11 +570,11 @@ Below, the first graph results from a horizontal reflection, the second from a
 vertical reflection, and the third from a vertical shift up 1 unit.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Stage one: 2 to the power negative t, the horizontal reflection of 2 to the power t. It falls from the upper left, passes through (0, 1), and hugs the horizontal axis on the right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xLabel":"t","yLabel":"f(−t)","curves":[{"kind":"exp","b":0.5}]}
+{"ariaLabel":"Stage one: 2 to the power negative t, the horizontal reflection of 2 to the power t. It falls from the upper left, passes through (0, 1), and hugs the horizontal axis on the right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xLabel":"t","yLabel":"f(−t)","curves":[{"kind":"exp","b":0.5,"to":4.75}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Stage two: negative 2 to the power negative t, the vertical reflection of stage one. It rises from the lower left, passes through (0, −1), and hugs the horizontal axis from below on the right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xLabel":"t","yLabel":"−f(−t)","curves":[{"kind":"exp","b":0.5,"a":-1}]}
+{"ariaLabel":"Stage two: negative 2 to the power negative t, the vertical reflection of stage one. It rises from the lower left, passes through (0, −1), and hugs the horizontal axis from below on the right.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"xLabel":"t","yLabel":"−f(−t)","curves":[{"kind":"exp","b":0.5,"a":-1,"to":4.75}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
@@ -680,7 +683,7 @@ and the corresponding point $(-1,-3)$ is also on the graph.
 {{< multiplechoice
   question="Is the function $f(s)=s^4+3s^2+7$ even, odd, or neither?"
   answer="even"
-  hint="Replace $s$ by $-s$: every exponent here is even, so what happens to each term?"
+  hint="Replace $s$ by $-s$, simplify each term, and compare $f(-s)$ with $f(s)$ and with $-f(s)$."
 >}}
 even
 neither
@@ -737,7 +740,7 @@ compression**. The graph below shows a function multiplied by constant factors
 is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of P of t, a fruit fly population. It begins at (0, 1), curves up to a peak at (3, 3), falls steadily to (6, 2), then drops steeply to (7, 0).","xMin":-1,"xMax":7,"yMin":-1,"yMax":7,"unit":26,"tickLabels":true,"xLabel":"t","yLabel":"P(t)","polylines":[{"through":[[0,1],[1,1.5],[2,2.15],[3,3],[6,2],[7,0]]}],"points":[{"at":[0,1]},{"at":[7,0]}]}
+{"ariaLabel":"The graph of P of t, a fruit fly population. It begins at (0, 1), curves up to a peak at (3, 3), falls steadily to (6, 2), then drops steeply to (7, 0).","xMin":-1,"xMax":8,"yMin":-1,"yMax":7,"unit":26,"tickLabels":true,"xLabel":"t","yLabel":"P(t)","quadratics":[{"a":0.2222222222,"b":0,"c":1,"from":0,"to":3,"arrows":false}],"polylines":[{"through":[[3,3],[6,2],[7,0]]}],"points":[{"at":[0,1]},{"at":[7,0]}]}
 {{< /apfigure >}}
 
 A scientist is comparing this population to another population, $Q$, whose
@@ -762,7 +765,7 @@ $$
 $$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of Q of t equals 2 times P of t. It has the same shape as P but every height is doubled: it begins at (0, 2), peaks at (3, 6), falls to (6, 4), then drops to (7, 0).","xMin":-1,"xMax":7,"yMin":-1,"yMax":7,"unit":26,"tickLabels":true,"xLabel":"t","yLabel":"Q(t)","polylines":[{"through":[[0,2],[1,3],[2,4.3],[3,6],[6,4],[7,0]]}],"points":[{"at":[0,2]},{"at":[7,0]}]}
+{"ariaLabel":"The graph of Q of t equals 2 times P of t. It has the same shape as P but every height is doubled: it begins at (0, 2), peaks at (3, 6), falls to (6, 4), then drops to (7, 0).","xMin":-1,"xMax":8,"yMin":-1,"yMax":7,"unit":26,"tickLabels":true,"xLabel":"t","yLabel":"Q(t)","quadratics":[{"a":0.4444444444,"b":0,"c":2,"from":0,"to":3,"arrows":false}],"polylines":[{"through":[[3,6],[6,4],[7,0]]}],"points":[{"at":[0,2]},{"at":[7,0]}]}
 {{< /apfigure >}}
 
 Symbolically, the relationship is written as
@@ -816,12 +819,14 @@ Now suppose a function $f$ is given by the table below.
 {{< fillin
   question="With $f$ as in the table above and $g(x)=\tfrac{3}{4}f(x)$, find $g(2)$."
   answer="9"
+  answerForm="decimal"
   hint="Multiply the output at that same input by $\tfrac{3}{4}$."
 >}}
 
 {{< fillin
   question="With the same $f$ and $g$, find $g(6)$."
   answer="15"
+  answerForm="decimal"
   hint="A vertical compression leaves the input alone and scales the output."
 >}}
 
@@ -830,7 +835,7 @@ $f(x)=x^3$. Relate this new function $g(x)$ to $f(x)$, and then find a formula
 for $g(x)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of g of x equals one quarter x cubed: an S-shaped curve through the origin that passes through (2, 2), flatter than the cubic toolkit function.","xMin":-4,"xMax":4,"yMin":-6,"yMax":6,"xUnit":26,"yUnit":22,"tickLabels":true,"cubics":[{"a":0.25}],"points":[{"at":[2,2],"label":"(2, 2)","labelSide":"se"}]}
+{"ariaLabel":"An S-shaped curve through the origin, flatter than the cubic toolkit function, passing through the marked point (2, 2).","xMin":-4,"xMax":4,"yMin":-6,"yMax":6,"xUnit":26,"yUnit":22,"tickLabels":true,"cubics":[{"a":0.25}],"points":[{"at":[2,2],"label":"(2, 2)","labelSide":"se"}]}
 {{< /apfigure >}}
 
 **Solution.** When trying to determine a vertical stretch or shift, it is
@@ -847,8 +852,9 @@ $$g(x)=\tfrac{1}{4}f(x)=\tfrac{1}{4}x^3$$
 {{< fillin
   question="Write the formula for the function that we get when we stretch the identity toolkit function by a factor of 3, and then shift it down by 2 units."
   answer="3x-2"
+  answerForm="slope-intercept-form"
   answerDisplay="$g(x)=3x-2$"
-  hint="Stretch first, then shift: multiply the output by 3, then subtract 2."
+  hint="Start from $f(x)=x$. Apply the vertical stretch to the output first, then the vertical shift, in the order given."
 >}}
 
 ### Horizontal stretches and compressions
@@ -861,7 +867,7 @@ if the constant is greater than 1, we get a **horizontal compression** of the
 function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three parabolas with a common vertex at the origin. The solid one is y = x squared. Drawn dashed, y = (0.5x) squared is a horizontal stretch, opening more widely, and y = (2x) squared is a horizontal compression, opening more narrowly.","xMin":-5,"xMax":5,"yMin":-1,"yMax":8,"xUnit":26,"yUnit":26,"tickLabels":true,"quadratics":[{"a":1},{"a":0.25,"dashed":true},{"a":4,"dashed":true}],"texts":[{"at":[-4.4,5.6],"text":"y = (2x)²","anchor":"start"},{"at":[3.3,7.2],"text":"y = x²","anchor":"start"},{"at":[4.9,1.3],"text":"y = (0.5x)²","anchor":"end"}]}
+{"ariaLabel":"Three parabolas with a common vertex at the origin. The solid one is y = x squared. Drawn dashed, y = (0.5x) squared is a horizontal stretch, opening more widely, and y = (2x) squared is a horizontal compression, opening more narrowly.","xMin":-5,"xMax":5,"yMin":-1,"yMax":10,"xUnit":26,"yUnit":22,"yGridStep":1,"yTickStep":2,"tickLabels":true,"quadratics":[{"a":1},{"a":0.25,"dashed":true},{"a":4,"dashed":true}],"texts":[{"at":[1.8,10.75],"text":"y = (2x)²","anchor":"middle"},{"at":[3.4,9.0],"text":"y = x²","anchor":"start"},{"at":[4.9,0.9],"text":"y = (0.5x)²","anchor":"end"}]}
 {{< /apfigure >}}
 
 Given a function $y=f(x)$, the form $y=f(bx)$ results in a horizontal stretch
@@ -910,7 +916,7 @@ Comparing the original population graph above with the compressed population
 graph below:
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The transformed population R of t equals P of 2t. It has the same shape as P but is half as wide: it begins at (0, 1), peaks at (1.5, 3), falls to (3, 2), then drops to (3.5, 0).","xMin":-1,"xMax":7,"yMin":-1,"yMax":7,"unit":26,"tickLabels":true,"xLabel":"t","yLabel":"R(t)","polylines":[{"through":[[0,1],[0.5,1.5],[1,2.15],[1.5,3],[3,2],[3.5,0]]}],"points":[{"at":[0,1]},{"at":[3.5,0]}]}
+{"ariaLabel":"The transformed population R of t equals P of 2t. It has the same shape as P but is half as wide: it begins at (0, 1), peaks at (1.5, 3), falls to (3, 2), then drops to (3.5, 0).","xMin":-1,"xMax":7,"yMin":-1,"yMax":7,"unit":26,"tickLabels":true,"xLabel":"t","yLabel":"R(t)","quadratics":[{"a":0.8888888889,"b":0,"c":1,"from":0,"to":1.5,"arrows":false}],"polylines":[{"through":[[1.5,3],[3,2],[3.5,0]]}],"points":[{"at":[0,1]},{"at":[3.5,0]}]}
 {{< /apfigure >}}
 
 Note that the effect on the graph is a horizontal compression where all input
@@ -957,7 +963,7 @@ $g(x)$ has been stretched horizontally by a factor of 2.
 $g$ is dashed.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f rises in a straight line from the origin to (4, 4), dips to (5, 3.4) and returns to a solid point at (6, 4). Drawn dashed, g is the same shape compressed to one third of its width: it rises from the origin to (4/3, 4), dips at (5/3, 3.4) and ends at a solid point at (2, 4).","xMin":-1,"xMax":7,"yMin":-1,"yMax":5,"xUnit":40,"yUnit":40,"tickLabels":true,"segments":[{"from":[0,0],"to":[4,4]},{"from":[0,0],"to":[1.3333,4],"dashed":true}],"quadratics":[{"a":0.6,"b":-6,"c":18.4,"from":4,"to":6,"arrows":false},{"a":5.4,"b":-18,"c":18.4,"from":1.3333,"to":2,"dashed":true,"arrows":false}],"points":[{"at":[6,4],"label":"f","labelSide":"e"},{"at":[2,4],"label":"g","labelSide":"n"}]}
+{"ariaLabel":"The graph of f rises in a straight line from the origin to (4, 4), dips in a curve to (5, 3) and returns to a solid point at (6, 4). Drawn dashed, the graph of g rises in a straight line from the origin to (4/3, 4), dips in a curve to (5/3, 3) and ends at a solid point at (2, 4).","xMin":-1,"xMax":7,"yMin":-1,"yMax":5,"xUnit":40,"yUnit":40,"tickLabels":true,"segments":[{"from":[0,0],"to":[4,4]},{"from":[0,0],"to":[1.3333333333,4],"dashed":true}],"quadratics":[{"a":1,"b":-10,"c":28,"from":4,"to":6,"arrows":false},{"a":9,"b":-30,"c":28,"from":1.3333333333,"to":2,"dashed":true,"arrows":false}],"points":[{"at":[6,4],"label":"f","labelSide":"e"},{"at":[2,4],"label":"g","labelSide":"n"}]}
 {{< /apfigure >}}
 
 **Solution.** The graph of $g(x)$ looks like the graph of $f(x)$ horizontally
@@ -978,7 +984,7 @@ input to be larger, causing the horizontal stretching.
   question="Write a formula for the toolkit square root function horizontally stretched by a factor of 3."
   answer="\sqrt{\frac{1}{3}x}"
   answerDisplay="$g(x)=f\left(\tfrac{1}{3}x\right)=\sqrt{\tfrac{1}{3}x}$"
-  hint="The coefficient inside is the reciprocal of the stretch factor."
+  hint="A horizontal stretch multiplies the input by a constant; the paragraph above explains how that constant relates to the stretch factor."
 >}}
 
 ## Performing a sequence of transformations
@@ -1178,14 +1184,14 @@ the input by a constant $b>1$.
   question="Write a formula for the function obtained when the graph of $f(x)=\lvert x\rvert$ is shifted down 3 units and to the right 1 unit."
   answer="\lvert x-1\rvert-3"
   answerDisplay="$g(x)=\lvert x-1\rvert-3$"
-  hint="A shift right 1 replaces $x$ with $x-1$ inside the function; a shift down 3 subtracts 3 from the result."
+  hint="A horizontal shift changes the input inside the absolute value, and a vertical shift adds a constant to the output. Choose each sign from the direction of the shift."
 >}}
 
 {{< fillin
   question="Write a formula for the function obtained when the graph of $f(x)=\tfrac{1}{x^2}$ is shifted up 2 units and to the left 4 units."
   answer="\frac{1}{(x+4)^2}+2"
   answerDisplay="$g(x)=\tfrac{1}{(x+4)^2}+2$"
-  hint="A shift left 4 replaces $x$ with $x+4$ inside the function; a shift up 2 adds 2 to the result."
+  hint="A horizontal shift changes the input inside the function, and a vertical shift adds a constant to the output. Choose each sign from the direction of the shift."
 >}}
 
 ### Graph functions using reflections about the $x$-axis and the $y$-axis
@@ -1193,7 +1199,7 @@ the input by a constant $b>1$.
 {{< multiplechoice
   question="The graph of $g(x)=-f(x)$ is obtained from the graph of $f$ by which transformation?"
   answer="Vertical reflection across the $x$-axis"
-  hint="Multiplying the output by $-1$ flips every point over the horizontal axis."
+  hint="Decide whether the $-1$ multiplies the input or the output, and which axis that change mirrors the graph across."
 >}}
 Vertical shift down 1 unit
 Vertical reflection across the $x$-axis
@@ -1204,7 +1210,7 @@ Vertical stretch by a factor of 2
 {{< multiplechoice
   question="Describe how the graph of $g(x)=3f(-x)$ is a transformation of the graph of $f$."
   answer="Horizontal reflection across the $y$-axis and a vertical stretch by a factor of 3"
-  hint="The $-x$ inside $f$ reflects the graph horizontally; the factor of 3 outside stretches it vertically."
+  hint="Sort the two changes: which one acts on the input, inside $f$, and which on the output, outside $f$?"
 >}}
 Horizontal shift left 3 units and a reflection across the $y$-axis
 Horizontal reflection across the $y$-axis and a vertical stretch by a factor of 3
@@ -1239,7 +1245,7 @@ neither
 {{< multiplechoice
   question="Describe how the graph of $g(x)=4f(x)$ is a transformation of the graph of $f$."
   answer="Vertical stretch by a factor of 4"
-  hint="Multiplying the output by a constant greater than 1 stretches the graph vertically."
+  hint="Decide whether the constant multiplies the input or the output, and whether it is greater or less than 1."
 >}}
 Horizontal compression by a factor of $\tfrac{1}{4}$
 Horizontal stretch by a factor of 4
@@ -1250,7 +1256,7 @@ Vertical compression by a factor of $\tfrac{1}{4}$
 {{< multiplechoice
   question="Describe how the graph of $g(x)=f(5x)$ is a transformation of the graph of $f$."
   answer="Horizontal compression by a factor of $\tfrac{1}{5}$"
-  hint="Multiplying the input by a constant greater than 1 compresses the graph horizontally."
+  hint="Decide whether the constant multiplies the input or the output, and whether it is greater or less than 1."
 >}}
 Vertical compression by a factor of $\tfrac{1}{5}$
 Horizontal stretch by a factor of 5
@@ -1264,16 +1270,16 @@ Horizontal compression by a factor of $\tfrac{1}{5}$
   question="The graph of $f(x)=\tfrac{1}{x^2}$ is vertically compressed by a factor of $\tfrac{1}{3}$, then shifted to the left 2 units and down 3 units. Write a formula for $g$."
   answer="\frac{1}{3(x+2)^2}-3"
   answerDisplay="$g(x)=\tfrac{1}{3(x+2)^2}-3$"
-  hint="Apply the compression first, then replace $x$ with $x+2$ for the horizontal shift, then subtract 3 for the vertical shift."
+  hint="Multiply the toolkit function by the compression factor first. Then apply the horizontal shift inside the function and the vertical shift outside it, choosing each sign from its direction."
 >}}
 
 {{< fillin
   question="The graph of $f(x)=x^2$ is vertically compressed by a factor of $\tfrac{1}{2}$, then shifted to the right 5 units and up 1 unit. Write a formula for $g$."
   answer="\frac{1}{2}(x-5)^2+1"
   answerDisplay="$g(x)=\tfrac{1}{2}(x-5)^2+1$"
-  hint="Apply the compression first, then replace $x$ with $x-5$ for the horizontal shift, then add 1 for the vertical shift."
+  hint="Multiply the toolkit function by the compression factor first. Then apply the horizontal shift inside the function and the vertical shift outside it, choosing each sign from its direction."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.5: Transformation of Functions](https://openstax.org/books/precalculus-2e/pages/1-5-transformation-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from an explicit formula or point list — the half-circle example is drawn as exact elliptical arcs, and where the source distinguishes a transformed curve by colour this page draws it dashed, since the figures are monochrome; presented every function table as a Markdown table; omitted the opening funhouse-mirror photograph, whose point the surrounding prose already makes, along with the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a verbal description or a classification, and asking for individual table entries where the source answer is a whole table; and adapted selected end-of-section exercises into an interactive Practice block.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.5: Transformation of Functions](https://openstax.org/books/precalculus-2e/pages/1-5-transformation-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible figure generated from an explicit formula or point list — the half-circle example is drawn as exact elliptical arcs, the rising first piece of the fruit-fly population graphs as a parabola, the vertical stretch-and-compression illustration with a square-root-shaped curve where the source draws a bell-shaped one, and where the source distinguishes a transformed curve by colour this page draws it dashed, since the figures are monochrome; presented every function table as a Markdown table; omitted the opening funhouse-mirror photograph, whose point the surrounding prose already makes, along with the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a verbal description or a classification, and asking for individual table entries where the source answer is a whole table; and adapted selected end-of-section exercises into an interactive Practice block. Corrections: the square-root reflection example no longer calls the vertical reflection a "vertical shift", and the Try It on reflecting $f(x)=x^2$ names the graph that matches $f$ as $h(x)=f(-x)$, where the source's answer labels it $g(x)$.</small>

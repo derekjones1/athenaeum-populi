@@ -249,6 +249,7 @@ years after 2004, or somewhere around the year 2027.
 {{< fillin
   question="A company sells doughnuts. They incur a fixed cost of \$25,000 for rent, insurance, and other expenses, and it costs \$0.25 to produce each doughnut. Write a linear model for the cost $C$, in dollars, as a function of $x$, the number of doughnuts produced. Enter the expression for $C(x)$."
   answer="0.25x+25000"
+  answerForm="slope-intercept-form"
   answerDisplay="$C(x)=0.25x+25{,}000$"
   hint="The fixed cost never changes, so it is the initial value; the cost per doughnut is the rate of change."
 >}}
@@ -267,6 +268,7 @@ $(0,25{,}000.25)$ — the cost of producing the very first doughnut.
 {{< fillin
   question="A city's population has been growing linearly. In 2008, the population was 28,200. By 2012, the population was 36,800. Assume this trend continues. Identify the year in which the population will reach 54,000."
   answer="2020"
+  answerForm="decimal"
   answerDisplay="the year 2020"
   hint="Let $t$ be years since 2008, find the slope from the two given points, then solve $P(t)=54{,}000$ for $t$."
 >}}
@@ -459,6 +461,7 @@ between reference points.
 {{< fillin
   question="There is a straight road leading from the town of Timpson to Ashburn 60 miles east and 12 miles north. Partway down the road, it junctions with a second road, perpendicular to the first, leading to the town of Garrison. If the town of Garrison is located 22 miles directly east of the town of Timpson, how far is the road junction from Timpson? Round to the nearest hundredth of a mile."
   answer="21.57"
+  answerForm="decimal"
   answerDisplay="about $21.57$ miles"
   hint="Put Timpson at the origin and Ashburn at $(60,12)$; the road to Garrison is the perpendicular line through $(22,0)$, so find where the two lines meet and use the distance formula."
 >}}
@@ -473,7 +476,7 @@ Typically, there are three types of answers possible, as shown below.
 **(a) Exactly one solution**
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two lines on a coordinate plane, f rising and g falling. They cross at a single point above the horizontal axis and to the right of the vertical axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":1,"label":"f"},{"slope":-2,"intercept":3,"label":"g"}]}
+{"ariaLabel":"Two lines on a coordinate plane, f rising and g falling. They cross at a single point above the horizontal axis and to the right of the vertical axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":1,"label":"f","labelAt":0.2,"labelSide":"left"},{"slope":-2,"intercept":3,"label":"g","labelAt":0.8,"labelSide":"left"}]}
 {{< /apfigure >}}
 
 **(b) Infinitely many solutions**
@@ -485,7 +488,7 @@ Typically, there are three types of answers possible, as shown below.
 **(c) No solutions**
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parallel lines on a coordinate plane, g above f. They have the same slope and never meet.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":2,"label":"g"},{"slope":2,"intercept":-2,"label":"f"}]}
+{"ariaLabel":"Two parallel lines on a coordinate plane, g above f. They have the same slope and never meet.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":2,"label":"g","labelAt":0.2,"labelSide":"left"},{"slope":2,"intercept":-2,"label":"f","labelAt":0.7,"labelSide":"right"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -545,7 +548,7 @@ is smaller.
 These graphs are sketched below, with $M(d)$ drawn dashed.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A graph of two cost lines against distance driven. The horizontal axis d runs from 0 to 170 miles and the vertical axis, in dollars, runs from 0 to 130. The line K of d equals 0.59d plus 20 starts at 20 dollars, and the line M of d equals 0.63d plus 16 starts at 16 dollars and is steeper. They cross at the marked point (100, 80), after which M lies above K.","xMin":0,"xMax":170,"yMin":0,"yMax":130,"xUnit":3,"yUnit":2.2,"gridStep":10,"tickLabels":true,"tickStep":10,"xLabel":"d","yLabel":"dollars","segments":[{"from":[0,20],"to":[165,117.35],"arrows":"end"},{"from":[0,16],"to":[165,119.95],"arrows":"end","dashed":true}],"points":[{"at":[100,80]}],"texts":[{"at":[24,74],"text":"K(d) = 0.59d + 20"},{"at":[60,42],"text":"M(d) = 0.63d + 16"},{"at":[100,80],"text":"(100, 80)","dx":8,"dy":16}]}
+{"ariaLabel":"A graph of two cost lines against distance driven. The horizontal axis d runs from 0 to 170 miles and the vertical axis, in dollars, runs from 0 to 130. The line K of d equals 0.59d plus 20 starts at 20 dollars, and the line M of d equals 0.63d plus 16 starts at 16 dollars and is steeper. They cross at the marked point (100, 80), after which M lies above K.","xMin":0,"xMax":170,"yMin":0,"yMax":130,"xUnit":3,"yUnit":2.2,"gridStep":10,"tickLabels":true,"xTickStep":20,"yTickStep":10,"xLabel":"d","yLabel":"dollars","segments":[{"from":[0,20],"to":[170,120.3]},{"from":[0,16],"to":[170,123.1],"dashed":true}],"points":[{"at":[100,80]}],"texts":[{"at":[20,66],"text":"K(d) = 0.59d + 20"},{"at":[60,42],"text":"M(d) = 0.63d + 16"},{"at":[100,80],"text":"(100, 80)","dx":8,"dy":16}]}
 {{< /apfigure >}}
 
 To find the intersection, we set the equations equal and solve:
@@ -622,6 +625,7 @@ Find the slope of the line through any two data points.
 {{< fillin
   question="The weight of a newborn is 7.5 pounds. The baby gained one-half pound a month for its first year. Write the linear function that models the baby's weight $W$ as a function of its age in months, $t$. Enter the expression for $W(t)$."
   answer="0.5t+7.5"
+  answerForm="slope-intercept-form"
   answerDisplay="$W(t)=0.5t+7.5$"
   hint="The birth weight is the initial value; the monthly gain is the rate of change."
 >}}
@@ -629,6 +633,7 @@ Find the slope of the line through any two data points.
 {{< fillin
   question="Using that baby-weight model, at what age, in months, did the baby weigh 10.4 pounds?"
   answer="5.8"
+  answerForm="lowest-terms"
   answerDisplay="$5.8$ months"
   hint="Set $W(t)=10.4$ and solve for $t$."
 >}}
@@ -636,20 +641,23 @@ Find the slope of the line through any two data points.
 {{< fillin
   question="The number of people afflicted with the common cold in the winter months steadily decreased by 205 each year from 2005 until 2010. In 2005, 12,025 people were afflicted. Write the linear function that models the number of people afflicted, $C$, as a function of $t$, the number of years since 2005. Enter the expression for $C(t)$."
   answer="12025-205t"
+  answerForm="slope-intercept-form"
   answerDisplay="$C(t)=12{,}025-205t$"
   hint="The 2005 count is the initial value; a steady yearly decrease is a negative rate of change."
 >}}
 
 {{< fillin
-  question="Using that common-cold model, in what year will the number of people afflicted reach 0?"
+  question="Using that common-cold model, in what year will the number of people afflicted reach 0? Round to the nearest year."
   answer="2064"
+  answerForm="decimal"
   answerDisplay="the year 2064"
-  hint="Set $C(t)=0$, solve for $t$, then add the result to 2005 and round to the nearest year."
+  hint="Set $C(t)=0$ and solve for $t$; round $t$ to a whole number of years and count that many years on from 2005."
 >}}
 
 {{< fillin
   question="The Federal Helium Reserve held about 16 billion cubic feet of helium in 2010 and is being depleted by about 2.1 billion cubic feet each year. Write a linear equation for the remaining reserves $R$, in billion cubic feet, in terms of $t$, the number of years since 2010. Enter the expression for $R(t)$."
   answer="16-2.1t"
+  answerForm="slope-intercept-form"
   answerDisplay="$R(t)=16-2.1t$"
   hint="16 billion cubic feet is the initial value; the yearly depletion is a negative rate of change."
 >}}
@@ -657,15 +665,17 @@ Find the slope of the line through any two data points.
 {{< fillin
   question="Using that helium-reserve model, if the rate of depletion doesn't change, what will the reserves be in 2015? Give your answer in billion cubic feet."
   answer="5.5"
+  answerForm="lowest-terms"
   answerDisplay="$5.5$ billion cubic feet"
   hint="2015 corresponds to $t=5$; evaluate $R(5)$."
 >}}
 
 {{< fillin
-  question="Using that same helium-reserve model, if the rate of depletion doesn't change, in what year will the Federal Helium Reserve be depleted?"
+  question="Using that same helium-reserve model, if the rate of depletion doesn't change, during what year will the Federal Helium Reserve be depleted? Enter the calendar year in which $R(t)$ reaches 0."
   answer="2017"
-  answerDisplay="the year 2017"
-  hint="Set $R(t)=0$, solve for $t$, then add the result to 2010."
+  answerForm="decimal"
+  answerDisplay="during the year 2017"
+  hint="Set $R(t)=0$ and solve for $t$; the reserve runs out partway through a year, so name the year that contains that moment."
 >}}
 
 The table below gives the median home value in Mississippi and Hawaii (adjusted for inflation) in 1950 and 2000. Assume the values changed linearly over that period.
@@ -700,7 +710,7 @@ Exactly 133 minutes
 {{< multiplechoice
   question="When hired at a new job selling jewelry, you are given two pay options. Option A: base salary of \$17,000 a year with a commission of 12% of your sales. Option B: base salary of \$20,000 a year with a commission of 5% of your sales. How much jewelry would you need to sell for Option A to produce a larger income?"
   answer="More than \$42,857.14 worth of jewelry"
-  hint="Set the two income expressions equal to find the break-even sales amount, then decide which side favors Option A's higher commission rate."
+  hint="Set the two income expressions equal to find the break-even sales amount, then test a sales amount on each side of it to see where Option A pays more."
 >}}
 Exactly \$42,857.14 worth of jewelry
 Fewer than \$42,857.14 worth of jewelry
@@ -711,7 +721,7 @@ More than \$42,857.14 worth of jewelry
 {{< multiplechoice
   question="When hired at a new job selling electronics, you are given two pay options. Option A: base salary of \$20,000 a year with a commission of 12% of your sales. Option B: base salary of \$26,000 a year with a commission of 3% of your sales. How much electronics would you need to sell for Option A to produce a larger income?"
   answer="More than \$66,666.67 worth of electronics"
-  hint="Set the two income expressions equal to find the break-even sales amount, then decide which side favors Option A's higher commission rate."
+  hint="Set the two income expressions equal to find the break-even sales amount, then test a sales amount on each side of it to see where Option A pays more."
 >}}
 More than \$66,666.67 worth of electronics
 More than \$86,666.67 worth of electronics
@@ -721,4 +731,4 @@ Exactly \$66,666.67 worth of electronics
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.3: Modeling with Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-3-modeling-with-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG generated from explicit geometry — the Anna-and-Emanuel diagrams are drawn as a true 3-4-5 right triangle without the source's stock illustrations of the two walkers, the Westborough map is drawn from the coordinates the text names, the three system-outcome panels are drawn from the analytic lines $f(x)=2x+1$ and $g(x)=-2x+3$, $f(x)=g(x)=2x$, and $g(x)=2x+2$ and $f(x)=2x-2$, and the truck-rental graph is drawn from $K(d)=0.59d+20$ and $M(d)=0.63d+16$ with $M$ dashed, since the figures are monochrome and the source distinguishes the two lines by colour; replaced the source's colour-coded substitution graphic for $M(t)=mt+b$ with the equivalent substitution step, and labelled the truck-rental cost axis "dollars" rather than "\$"; presented the truck-rental input/output summary as a Markdown table; omitted the opening photograph of Seattle, which is a credit photo rather than instructional art, along with the media links; adapted selected end-of-section exercises from the Verbal, Algebraic, Numeric, and Real-World Applications subsections into the section-final Practice block, leaving out the Graphical subsection's two profit-graph exercises because their source figures are not reproduced on this page; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice for the $y$-intercept interpretation, which is a verbal judgement that cannot be graded as free-response math, and omitting the population-in-2014 evaluation so the practice set stays within three questions — the question retained for that model asks for the year the population reaches 54,000, which requires the same model plus solving for the input. Three notes on the source: the table in the truck-rental example labels the second rate $P(d)$, though every other line of the example, including the figure, calls that function $M(d)$, so this page writes $M$; the sentence introducing that figure says "with $K(d)$ in blue", while the figure itself draws $K$ in orange and $M$ in blue, so this page identifies the two lines by their labels instead; and the sentence setting up that comparison names the wrong rental company for the inequality $K(d)<M(d)$, which this page corrects inline, quoting the source wording and the reason in a source note beside it.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.3: Modeling with Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-3-modeling-with-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible figure generated from explicit geometry — the Anna-and-Emanuel diagrams are drawn as a true 3-4-5 right triangle without the source's stock illustrations of the two walkers, the Westborough map is drawn from the coordinates the text names, the three system-outcome panels are drawn from the analytic lines $f(x)=2x+1$ and $g(x)=-2x+3$, $f(x)=g(x)=2x$, and $g(x)=2x+2$ and $f(x)=2x-2$, and the truck-rental graph is drawn from $K(d)=0.59d+20$ and $M(d)=0.63d+16$ with $M$ dashed, since the figures are monochrome and the source distinguishes the two lines by colour, and with both lines running to the edge of the grid without arrowheads and the distance axis numbered every 20 miles, because at this scale the two printed arrowheads and the printed every-10 numbering print on top of one another; replaced the source's colour-coded substitution graphic for $M(t)=mt+b$ with the equivalent substitution step, and labelled the truck-rental cost axis "dollars" rather than "\$"; presented the truck-rental input/output summary as a Markdown table; omitted the opening photograph of Seattle, which is a credit photo rather than instructional art, along with the media links; adapted selected end-of-section exercises from the Verbal, Algebraic, Numeric, and Real-World Applications subsections into the section-final Practice block, leaving out the Graphical subsection's two profit-graph exercises because their source figures are not reproduced on this page, and stating in the two depletion-year questions the rounding each source answer uses — the common-cold question rounds the number of years after 2005 to the nearest whole year, as the source's 2064 does, and the helium question asks for the year during which the reserve runs out, as the source's "during the year 2017" does; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice for the $y$-intercept interpretation, which is a verbal judgement that cannot be graded as free-response math, and omitting the population-in-2014 evaluation so the practice set stays within three questions — the question retained for that model asks for the year the population reaches 54,000, which requires the same model plus solving for the input. Three notes on the source: the table in the truck-rental example labels the second rate $P(d)$, though every other line of the example, including the figure, calls that function $M(d)$, so this page writes $M$; the sentence introducing that figure says "with $K(d)$ in blue", while the figure itself draws $K$ in orange and $M$ in blue, so this page identifies the two lines by their labels instead; and the sentence setting up that comparison names the wrong rental company for the inequality $K(d)<M(d)$, which this page corrects inline, quoting the source wording and the reason in a source note beside it.</small>
