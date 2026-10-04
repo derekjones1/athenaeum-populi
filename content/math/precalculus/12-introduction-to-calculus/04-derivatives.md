@@ -628,11 +628,6 @@ $$
   hint="Find $s'(t)$ and evaluate it at $t=4$."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with derivatives.
-{{< /callout >}}
-
 ## Key equations
 
 | average rate of change | $\text{AROC}=\tfrac{f(a+h)-f(a)}{h}$ |

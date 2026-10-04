@@ -1054,7 +1054,11 @@ export function buildGraph(props) {
         pointAt: (y) => [h + side * b ** ((y - k) / a), y], errorName: 'log curve',
         unitPx: uy,
         toIndependent: (x) => k + a * Math.log(Math.max(1e-12, side * (x - h))) / lnB,
-        independentDecreasing: side * a < 0,
+        // y falls as x rises when the base is below 1 too: log_{1/3}x is
+        // decreasing, so its `from`/`to` clamps swap like a reflection's —
+        // reading only `side·a` reported "no domain" for a trimmed base-⅓ curve
+        // (Intermediate Algebra 10.3, October 3, 2026).
+        independentDecreasing: side * a * lnB < 0,
       })
     } else if (c.kind === 'logistic') {
       // y = k + c/(1 + a·e^(−b(x−h))) — the textbook's own parameter names, so

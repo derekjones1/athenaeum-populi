@@ -539,10 +539,6 @@ hyperbola
 ellipse
 {{< /multiplechoice >}}
 
-{{< callout type="info" >}}
-**Media.** Access this online resource for additional instruction and practice with conic sections and rotation of axes.
-{{< /callout >}}
-
 ## Key equations
 
 | Rotation of a conic section | $\begin{array}{l}x=x'\cos\theta-y'\sin\theta\\y=x'\sin\theta+y'\cos\theta\end{array}$ |

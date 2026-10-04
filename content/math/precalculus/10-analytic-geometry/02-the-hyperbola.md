@@ -570,11 +570,6 @@ $$\tfrac{x^2}{900}-\tfrac{y^2}{14{,}400.3636}=1,\text{ or }\tfrac{x^2}{30^2}-\tf
 
 *Project design for a natural draft cooling tower.*
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with hyperbolas.
-{{< /callout >}}
-
 ## Key equations
 
 | Hyperbola, center at origin, transverse axis on $x$-axis | $\tfrac{x^2}{a^2}-\tfrac{y^2}{b^2}=1$ |

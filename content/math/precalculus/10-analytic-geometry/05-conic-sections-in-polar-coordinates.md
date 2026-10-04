@@ -348,10 +348,6 @@ $$
   hint="Isolate $r$ as $r=2-2r\cos\theta=2-2x$, square both sides, and substitute $r^2=x^2+y^2$."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and practice with conics in polar coordinates.
-{{< /callout >}}
-
 ## Key concepts
 
 - Any conic may be determined by a single focus, the corresponding eccentricity, and the directrix. We can also define a conic in terms of a fixed point, the focus $P(r,\theta)$ at the pole, and a line, the directrix, which is perpendicular to the polar axis.

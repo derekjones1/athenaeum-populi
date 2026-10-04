@@ -407,11 +407,6 @@ $$
 
 Obtaining a statement that is a contradiction means that the system has no solution.
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with Cramer's Rule.
-{{< /callout >}}
-
 ## Key concepts
 
 - The determinant for $\begin{bmatrix}a&b\\c&d\end{bmatrix}$ is $ad-bc$.

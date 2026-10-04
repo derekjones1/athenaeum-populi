@@ -503,11 +503,6 @@ Each of these will eventually result in the answer we obtained above but may
 require several more steps than our earlier method.
 {{< /callout >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with complex numbers.
-{{< /callout >}}
-
 ## Key concepts
 
 - The square root of any negative number can be written as a multiple of

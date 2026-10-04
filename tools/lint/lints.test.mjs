@@ -3298,6 +3298,14 @@ test('an attribution footer naming run machinery (where a correction was logged 
   assert.deepEqual(lintHugo(outsideFooter, 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('names run machinery')), []);
 });
 
+test('a Media callout with no link is an error; one with a link is fine', () => {
+  const page = (body) => `# T\n\nProse.\n\n{{< callout type="info" >}}\n**Media.** Access these online resources for additional instruction and practice with x.${body}\n{{< /callout >}}\n`;
+  const bad = lintHugo(page(''), 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('empty Media callout'));
+  assert.equal(bad.length, 1, JSON.stringify(bad));
+  const ok = lintHugo(page('\n\n- [Video](https://example.org/v)'), 'content/x/y/01-a/01-b.md').errors.filter((e) => e.includes('empty Media callout'));
+  assert.deepEqual(ok, []);
+});
+
 test('the attribution footer must be the last thing on the page, and there is only one', () => {
   const footer = '<small>This section is adapted from [Book, Section 1.1] by Authors and OpenStax. Changes: none.</small>';
   const ok = `# T\n\nProse.\n\n---\n\n${footer}\n`;

@@ -104,10 +104,68 @@ const PARSE_CACHE_LIMIT = 256;
 const parseCache = new Map();
 function parseLatex(source) {
   if (parseCache.has(source)) return parseCache.get(source);
-  const expr = ce.parse(spellFractionPercents(spellDegreesAsQuantity(source)));
+  const latex = spellFractionPercents(spellDegreesAsQuantity(source));
+  let expr = ce.parse(latex);
+  if (holdsNaN(expr.json)) expr = splitComplexQuotients(latex) ?? expr;
   if (parseCache.size >= PARSE_CACHE_LIMIT) parseCache.clear();
   parseCache.set(source, expr);
   return expr;
+}
+
+const holdsNaN = (json) => json === 'NaN' || (Array.isArray(json) && json.some(holdsNaN));
+const holdsImaginaryUnit = (json) => json === 'i' || json === 'ImaginaryUnit'
+  || (Array.isArray(json) && json.some(holdsImaginaryUnit));
+
+const holdsComplexValue = (json) => json === 'ImaginaryUnit'
+  || (Array.isArray(json) && (json[0] === 'Complex' || json.some(holdsComplexValue)));
+
+// The terms of a raw sum, through `Delimiter` groups and `Subtract`.
+function rawSumTerms(json) {
+  if (!Array.isArray(json)) return [json];
+  if (json[0] === 'Delimiter' && json.length === 2) return rawSumTerms(json[1]);
+  if (json[0] === 'Add') return json.slice(1).flatMap(rawSumTerms);
+  if (json[0] === 'Subtract' && json.length === 3) {
+    return [...rawSumTerms(json[1]), ...rawSumTerms(json[2]).map((term) => ['Negate', term])];
+  }
+  return [json];
+}
+
+/**
+ * The pinned engine canonicalizes a quotient whose numerator is a SUM holding
+ * a radical-times-i term to NaN: `\frac{1+\sqrt2 i}{3}` boxes as
+ * Multiply(1/3, NaN), while `\frac{1+2i}{3}`, `\frac{\sqrt2 i}{3}` and
+ * `1+\sqrt2 i` alone are read right. So the fully simplified
+ * `\frac{-4\pm2\sqrt2 i}{3}` graded `incorrect` against its own value
+ * (Intermediate Algebra 9.1, October 3, 2026). When the canonical parse holds
+ * a NaN, the raw parse is rewritten term by term — `\frac{a+b}{d}` as
+ * `\frac{a}{d}+\frac{b}{d}`, for a numerator holding `i` — and boxed again;
+ * that is the same value, written the way the engine reads. Each term keeps
+ * its own quotient rather than one `\frac{1}{d}` factor, so the documented
+ * coefficient-times-`(a+i)` defect is never reached. null when the rewrite
+ * changes nothing or still holds a NaN — the original parse then stands.
+ */
+function splitComplexQuotients(latex) {
+  let changed = false;
+  const rewrite = (json) => {
+    if (!Array.isArray(json)) return json;
+    const node = json.map(rewrite);
+    if (node[0] === 'Divide' && node.length === 3 && holdsImaginaryUnit(node[1])) {
+      const terms = rawSumTerms(node[1]);
+      if (terms.length > 1) {
+        changed = true;
+        return ['Add', ...terms.map((term) => ['Divide', term, node[2]])];
+      }
+    }
+    return node;
+  };
+  try {
+    const json = rewrite(ce.parse(latex, { form: 'raw' }).json);
+    if (!changed) return null;
+    const expr = ce.box(json);
+    return holdsNaN(expr.json) ? null : expr;
+  } catch {
+    return null;
+  }
 }
 
 /**
@@ -200,6 +258,36 @@ function leadingWrittenFraction(bare) {
     denominator: denominatorGroup[0],
     rest: bare.slice(denominatorGroup[1]).trim(),
   };
+}
+
+/** The writing with every `(…)`/`{…}` group's contents cut out. */
+function withoutGroups(text) {
+  let out = '';
+  let depth = 0;
+  for (const char of text) {
+    if (char === '(' || char === '{') depth += 1;
+    if (depth === 0) out += char;
+    if (char === ')' || char === '}') depth = Math.max(0, depth - 1);
+  }
+  return out;
+}
+
+/** The writing with every exponent argument (`^{1/4}`, `^2`) cut out. */
+function withoutExponents(text) {
+  let out = '';
+  let i = 0;
+  while (i < text.length) {
+    if (text[i] === '^') {
+      const argument = readTexArgument(text, i + 1);
+      if (argument) {
+        i = argument[1];
+        continue;
+      }
+    }
+    out += text[i];
+    i += 1;
+  }
+  return out;
 }
 
 function writtenFractionHalves(bare) {
@@ -628,6 +716,16 @@ function fracHalves(bare) {
 const writesNumeralProduct = (bare) => NUMERAL_PRODUCT.test(bare.replace(NUMERAL_FRACTION, '1'));
 const writesExponentArithmetic = (bare) => EXPONENT_ARITHMETIC.test(bare);
 const writesNumeralPower = (bare) => NUMERAL_POWER.test(bare);
+// The imaginary unit written as a letter of its own — not inside a command
+// name (`\pi`, `\infty`, `\sin`) and not the head of a longer word.
+const IMAGINARY_LETTER = /(?<!\\[a-zA-Z]*)i(?![a-zA-Z])/g;
+// A power of i left written — `20i-12i^2` for `12+20i`, `i^{35}` for `-i` —
+// is numeral arithmetic left undone exactly as `(-14)^2` is: the engine folds
+// `i^2` to −1 before any parse-based predicate sees it, so `expanded` and
+// `no-like-terms` passed the unfinished product line (Intermediate Algebra
+// 8.8, October 3, 2026). Not read inside a summation, whose index may be `i`.
+const writesImaginaryPower = (bare) => !/\\sum(?![a-zA-Z])/.test(bare)
+  && /(?<!\\[a-zA-Z]*)i\s*\^/.test(bare);
 
 /** A quotient whose divisor holds a symbol: `\frac{3}{x}`, `\frac{3}{x+1}`, `x^{-1}`. */
 function symbolDenominator(expr) {
@@ -683,7 +781,8 @@ function numericallyEquivalent(studentExpr, answerExpr) {
       // still fails safe when too few real-domain points remain.
       const nonReal = [studentExpr, answerExpr].some((side) => {
         const v = side.subs(assignment).N();
-        return !Number.isFinite(v.re) || !Number.isFinite(v.im) || Math.abs(v.im) > SAMPLE_TOLERANCE;
+        return !Number.isFinite(v.re) || !Number.isFinite(v.im) || Math.abs(v.im) > SAMPLE_TOLERANCE
+          || evenRootOfNegative(side, assignment);
       });
       if (nonReal) continue;
       return false;
@@ -742,10 +841,40 @@ function agreesAtNegativePoints(vars, studentExpr, answerExpr) {
       if (!values.every((v) => Number.isFinite(v.re) && Number.isFinite(v.im)
         && Math.abs(v.im) <= SAMPLE_TOLERANCE)) continue;
       const [student, answer] = values.map((v) => v.re);
-      if (Math.abs(student - answer) > SAMPLE_TOLERANCE * Math.max(1, Math.abs(student), Math.abs(answer))) return false;
+      if (Math.abs(student - answer) > SAMPLE_TOLERANCE * Math.max(1, Math.abs(student), Math.abs(answer))) {
+        if ([studentExpr, answerExpr].some((side) => evenRootOfNegative(side, assignment))) continue;
+        return false;
+      }
     }
   }
   return true;
+}
+
+/**
+ * Does `expr` take an even root (`\sqrt[4]{…}`, `\sqrt[6]{…}`, a power whose
+ * exponent has an even denominator) of a radicand that is negative at
+ * `assignment`? Such a point is outside the real domain, but the pinned
+ * engine does not say so: `\sqrt{-2.47}` numericizes imaginary, as it
+ * should, while `\sqrt[4]{-2.47}` numericizes to the REAL 1.2536 — the root of
+ * the absolute value. So `x\sqrt[4]{x}` "disagreed" with the keyed
+ * `|x|\sqrt[4]{x}` at x = −2.47 (−3.10 against 3.10) and graded
+ * `incorrect`, where the square-root twin `x\sqrt{x}` against `|x|\sqrt{x}`
+ * was skipped there and graded `correct` (Intermediate Algebra 8.2, October
+ * 3, 2026). The radicand already forces x ≥ 0, so the bars are redundant and
+ * the two are equal on the domain. Consulted only when a sample disagrees,
+ * so it can skip a point, never fail one: where an even root's radicand is
+ * a square (`\sqrt[4]{x^4}`, `\sqrt[4]{x^6}`) it is never negative and the
+ * negative points still decide — `x` against `|x|` stays `incorrect`.
+ */
+function evenRootOfNegative(expr, assignment) {
+  const index = expr.operator === 'Root' ? expr.ops[1]
+    : expr.operator === 'Power' && expr.ops[1]?.operator === 'Rational' ? expr.ops[1].ops[1]
+      : null;
+  if (index?.isNumberLiteral && Number.isInteger(index.re) && index.re % 2 === 0) {
+    const radicand = expr.ops[0].subs(assignment).N();
+    if (Number.isFinite(radicand.re) && radicand.re < 0) return true;
+  }
+  return (expr.ops ?? []).some((op) => evenRootOfNegative(op, assignment));
 }
 
 /**
@@ -826,6 +955,26 @@ function irreducibleLogArgument(argument) {
       // before is not, so guard the one unbracketed spelling too.
       if (arg[i - 1] !== '^') return true;
     }
+  }
+  return false;
+}
+
+/**
+ * Is `\log_base argument`, both written, a rational number — `\log 10000`,
+ * `\log_9 9`, `\log_4 2`, `\log 1`, `\ln e`, `\log_b b`? A numeral base and
+ * argument are compared exactly: some power b^p equals n^q with q ≤ 12.
+ */
+function logEvaluatesRationally(base, argument) {
+  if (argument === base) return true;
+  if (!/^\d+$/.test(argument)) return false;
+  const n = Number(argument);
+  if (n === 1) return true;
+  const b = base === 'e' ? Math.E : /^\d+$/.test(base) ? Number(base) : null;
+  if (b === null || b <= 1 || base === 'e') return false;
+  const value = Math.log(n) / Math.log(b);
+  for (let q = 1; q <= 12; q += 1) {
+    const p = Math.round(value * q);
+    if (p > 0 && Math.abs(value * q - p) < 1e-9 && BigInt(b) ** BigInt(p) === BigInt(n) ** BigInt(q)) return true;
   }
   return false;
 }
@@ -1033,6 +1182,23 @@ function equivalent(studentExpr, answerExpr) {
     // these value-equalities as well as the engine did.
     if (negativePowerOverSymbol(studentExpr) || negativePowerOverSymbol(answerExpr)) {
       return numericallyEquivalent(studentExpr, answerExpr);
+    }
+    // Two CONSTANT complex values compare by their numeric parts, within the
+    // sampling tolerance. `isEqual` compared the engine's floats exactly, and
+    // the same complex value reached by two orders of operation can differ
+    // in the last bit: `\frac{3\sqrt3 i}{5}` (1.0392304845413265i) graded
+    // `incorrect` against the keyed `\frac{3\sqrt3}{5}i` (…263i), and
+    // `2\sqrt2i+4\sqrt2i` against `6\sqrt2 i` (Intermediate Algebra 8.8 and
+    // 9.1, October 3, 2026). Each side is evaluated on its own, never as a
+    // difference, so no complex division is added to what the sides wrote.
+    if (studentExpr.unknowns.length === 0 && answerExpr.unknowns.length === 0
+      && (holdsComplexValue(studentExpr.json) || holdsComplexValue(answerExpr.json))) {
+      const [student, answer] = [studentExpr.N(), answerExpr.N()];
+      if ([student, answer].every((v) => Number.isFinite(v.re) && Number.isFinite(v.im))) {
+        const scale = Math.max(1, Math.abs(student.re), Math.abs(student.im), Math.abs(answer.re), Math.abs(answer.im));
+        if (Math.abs(student.re - answer.re) <= SAMPLE_TOLERANCE * scale
+          && Math.abs(student.im - answer.im) <= SAMPLE_TOLERANCE * scale) return true;
+      }
     }
     if (studentExpr.isEqual(answerExpr) === true) return true;
     const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
@@ -1624,7 +1790,17 @@ function monomialMagnitude(expr) {
   const bases = new Set();
   for (const factor of factors) {
     if (factor.isNumberLiteral) {
-      coefficient *= Math.abs(factor.re);
+      // A complex literal's size is its imaginary part when it is pure
+      // imaginary (`16i` is 16 of the unit i), and the common factor of its
+      // parts otherwise. Reading `.re` alone made `16i` worth 0, so
+      // `\frac{16i}{17}` — gcd(0, 17) = 17 — was "unreduced" and the finished
+      // `\frac{4}{17}+\frac{16i}{17}` graded `form` under `no-like-terms`
+      // (Intermediate Algebra 8.8, October 3, 2026).
+      const [re, im] = [Math.abs(factor.re), Math.abs(factor.im ?? 0)];
+      if (im === 0) coefficient *= re;
+      else if (re === 0) coefficient *= im;
+      else if (Number.isInteger(re) && Number.isInteger(im)) coefficient *= gcd(re, im);
+      else return null;
       continue;
     }
     // Deliberately *not* powerLikeBase(): `reduced-fraction` fails open on a
@@ -2355,6 +2531,20 @@ function isConstantTerm(term) {
   }
 }
 
+// A written term worth a rational multiple of i, `5i`, `\frac{16i}{17}` —
+// isConstantTerm's imaginary counterpart (constants only: no unknowns).
+function isImaginaryRationalTerm(term) {
+  try {
+    const expr = parseLatex(preprocess(term));
+    if (!expr.isValid || expr.unknowns.length > 0) return false;
+    const value = expr.N();
+    return value.isNumberLiteral === true && Number.isFinite(value.im) && Math.abs(value.re) < SAMPLE_TOLERANCE
+      && value.im !== 0 && isRationalValue(ce.number(value.im));
+  } catch {
+    return false;
+  }
+}
+
 function isZeroTerm(term) {
   const head = ZERO_TERM_HEAD.exec(term);
   if (head) {
@@ -2837,6 +3027,11 @@ function numeralFractionsReduced(latex) {
     const denominator = numerator && readTexArgument(text, numerator[1]);
     if (!denominator) return true;
     const [top, bottom] = [numerator[0].trim(), denominator[0].trim()];
+    // A numeral fraction over or under another is a division left written:
+    // `(p+\frac{\frac{1}{4}}{2})^2`, the "half of ¼" line, for `(p+\frac18)^2`
+    // (Intermediate Algebra 9.2, October 3, 2026).
+    if ([top, bottom].some((half) => /\\[tdc]?frac(?![a-zA-Z])/.test(half))
+      && [top, bottom].every(writesOnlyNumerals)) return false;
     if (/^[+-]?\d+$/.test(top) && /^\d+$/.test(bottom)) {
       const [a, b] = [Math.abs(Number(top)), Number(bottom)];
       if (b === 1 || (a !== 0 && gcd(a, b) !== 1)) return false;
@@ -2873,8 +3068,13 @@ function factorSumsFinished(latex) {
     }
     if (end < 0) return true;
     const inner = text.slice(i + 1, end);
-    if (splitTopLevelTerms(inner).filter((term) => term.trim()).length > 1
+    const terms = splitTopLevelTerms(inner).filter((term) => term.trim());
+    if (terms.length > 1
       && !(FORM_PREDICATES.expanded(inner) && FORM_PREDICATES['no-like-terms'](inner))) return false;
+    // A signed term added in parentheses is a sign left unreduced:
+    // `(a+(-10))^2` for `(a-10)^2` (Intermediate Algebra 9.2, October 3,
+    // 2026). The leading term may be grouped (`((-3)+x)` reads as written).
+    if (terms.slice(1).some((term) => /^\(\s*[+-][^()]*\)$/.test(term.trim()))) return false;
   }
   return true;
 }
@@ -3134,8 +3334,9 @@ function integerContent(text) {
  *   - two variable-free like terms side by side: `3+4` for 7, and
  *     `\frac{2\sqrt3+\sqrt3}{4}` below a bar the top-level like-radicals
  *     scan cannot see.
- * A sign is never a defect (`\frac{-\sqrt3}{3}` = `-\frac{\sqrt3}{3}`), and a
- * term or half the reader cannot state an integer content for fails open.
+ * A sign in a numerator is never a defect (`\frac{-\sqrt3}{3}` =
+ * `-\frac{\sqrt3}{3}`) — one in a one-term denominator is — and a term or
+ * half the reader cannot state an integer content for fails open.
  */
 function radicalWritingDefect(text) {
   const numericTerms = new Set();
@@ -3156,6 +3357,21 @@ function radicalWritingDefect(text) {
       const top = integerContent(numerator);
       const bottom = integerContent(denominator);
       if (top !== null && bottom !== null && gcd(top, bottom) > 1) return true;
+      // The same reduction for a VARIABLE factor, and the sign: a letter
+      // written outside every radical in both one-term halves still cancels
+      // (`\frac{2x\sqrt{5x}}{x^2}` for `\frac{2\sqrt{5x}}{x}`), and a minus
+      // standing in a one-term denominator is sign work left undone
+      // (`\frac{3(1+\sqrt5)}{-4}`). Both graded `correct` (Intermediate
+      // Algebra 8.5, October 3, 2026). A letter under a radical is not a
+      // factor of the half, and a sum's letters are not read at all.
+      const single = [numerator, denominator].map((half) => {
+        const terms = splitTopLevelTerms(half).filter((piece) => piece.trim());
+        return terms.length === 1 ? readRadicalTerm(terms[0]) : null;
+      });
+      if (single[1] && /^\s*-/.test(denominator)) return true;
+      if (single.every(Boolean) && [...single[0].letters.keys()].some((letter) => single[1].letters.has(letter))) {
+        return true;
+      }
       if (radicalWritingDefect(numerator) || radicalWritingDefect(denominator)) return true;
     }
     if (read.nested.some(radicalWritingDefect)) return true;
@@ -3206,18 +3422,45 @@ function radicalParts(json) {
  * `\frac{1}{z^{6/3}}`)? The engine folds both before a parse could show them,
  * so `single-term` and `single-fraction` passed them against `x^{1/2}`,
  * `x^2` and `\frac{1}{z^2}` (Elementary Algebra 9.8, September 27, 2026).
- * `single-power`, `reduced-fraction` and `rational-exponent` already refuse
- * both by their own grammar.
+ * `single-power` and `rational-exponent` already refuse both by their own
+ * grammar; `reduced-fraction` did by refusing every `/`, and asks this since
+ * a rational exponent's bar stopped counting as a fraction bar.
  */
+//
+// …nor one written as numeral arithmetic: `x^{\frac34\cdot\frac23}` for
+// `x^{1/2}`, `n^{2\cdot\frac12}` for `n` — the Power Property applied but its
+// product left unmultiplied. EXPONENT_ARITHMETIC reads only brace-free
+// integer operands, so an exponent fraction's own braces hid the product from
+// `single-term` and `single-fraction` (Intermediate Algebra 8.3, October 3,
+// 2026). A numerals-only exponent that is not ONE number is work left undone.
 function writesUnreducedExponent(bare) {
   for (const caret of bare.matchAll(/\^/g)) {
     const argument = readTexArgument(bare, caret.index + 1);
     if (!argument) continue;
     const written = argument[0].replace(/\s+/g, '');
     const value = exponentValue(written);
+    if (value === null && writesOnlyNumerals(written)) return true;
     const isFraction = EXPONENT_FRACTION.test(written) || /^[+-]?\d+\/[+-]?\d+$/.test(written);
     if (!isFraction || value === null) continue;
     if (Number.isInteger(value) || !exponentInLowestTerms(written)) return true;
+  }
+  return false;
+}
+
+/**
+ * Does the writing leave a root of a numeral perfect power unevaluated —
+ * `\sqrt{25}` for 5, `\sqrt[3]{8}`, `\sqrt{1}`? The engine folds it, so
+ * `single-fraction` passed `\frac{\sqrt{25}n}{m^{1/4}}` against
+ * `\frac{5n}{m^{1/4}}` (Intermediate Algebra 8.3, October 3, 2026). Only an
+ * integer radicand is read: `\sqrt{2}` is a finished radical.
+ */
+function writesPerfectNumeralRoot(bare) {
+  for (const opener of bare.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?/g)) {
+    const radicand = readTexArgument(bare, opener.index + opener[0].length);
+    if (!radicand || !/^\s*\d+\s*$/.test(radicand[0])) continue;
+    const [value, index] = [Number(radicand[0]), Number(opener[1] ?? 2)];
+    const root = Math.round(value ** (1 / index));
+    if (root ** index === value) return true;
   }
   return false;
 }
@@ -3313,7 +3556,16 @@ const FORM_PREDICATES = {
     // `x^{\frac{2}{4}}` is `x^{\frac12}` with the exponent left unreduced
     // (Elementary Algebra 9.8, September 27, 2026).
     if (!exponentInLowestTerms(factor.exponent)) return false;
+    // A decimal exponent (`x^{2.5}`) is not the fraction the token names, and
+    // a powered group that writes a power of its own is the Power Property
+    // left unapplied — the retyped prompt `(32x^{\frac13})^{\frac35}` for
+    // `8x^{1/5}`; nor may the exponent be arithmetic (writesUnreducedExponent)
+    // (Intermediate Algebra 8.3, October 3, 2026). A group holding a sum
+    // (`(x^2+1)^{\frac12}`) has nothing to merge and still passes.
+    if (/\./.test(factor.exponent) || writesUnreducedExponent(bare)) return false;
     if (factor.atom.kind === 'symbol') return true;
+    if (factor.atom.kind === 'group' && /\^/.test(factor.atom.text)
+      && splitTopLevelTerms(factor.atom.text).filter((term) => term.trim()).length === 1) return false;
     return factor.atom.kind === 'group' && hasVariableLetter(factor.atom.text);
   },
   // The mirror-image conversion ("Write $t^{1/2}$ as a radical expression"),
@@ -3367,12 +3619,17 @@ const FORM_PREDICATES = {
     if (WRITES_A_DECIMAL.test(bare)) return false;
     const shape = formShape(bare);
     if (!shape || shape.terms.length > 2) return false;
-    // `\ln 9+2` — a plain integer is the only company a logarithm may keep.
+    // `\ln 9+2` — a plain integer is the only company a logarithm may keep,
+    // on either side: term order is no part of exactness, and `2+\ln 9` (the
+    // order a learner who moves the 2 last writes it in) graded `form`
+    // against the key `\ln 9+2` (Intermediate Algebra 10.5, October 3, 2026).
+    const leadingInteger = shape.terms.length === 2 && shape.terms[0].factors.length === 1
+      && isIntegerFactor(shape.terms[0].factors[0]);
     if (shape.terms.length === 2) {
-      const trailing = shape.terms[1].factors;
-      if (trailing.length !== 1 || !isIntegerFactor(trailing[0])) return false;
+      const company = shape.terms[leadingInteger ? 0 : 1].factors;
+      if (company.length !== 1 || !isIntegerFactor(company[0])) return false;
     }
-    const factors = shape.terms[0].factors;
+    const factors = shape.terms[leadingInteger ? 1 : 0].factors;
     if (factors.length > 2) return false;
     if (factors.length === 2 && !isExactScalarFactor(factors[0])) return false;
     const carrying = factors.at(-1);
@@ -3452,7 +3709,11 @@ const FORM_PREDICATES = {
     if ((bare.match(/\\log|\\ln/g) || []).length !== 1) return false;
     const terms = splitTopLevelTerms(bare);
     if (terms.length !== 1) return false;
-    if (/\\cdot|\\times/.test(terms[0])) return false;
+    // Only an explicit product OUTSIDE every group: `\log_2(x^3\cdot(x-1)^2)`
+    // writes its `\cdot` inside the condensed argument, the source's own
+    // spelling, and graded `form` (Intermediate Algebra 10.4, October 3,
+    // 2026); `2\cdot\log_2 x` still multiplies the logarithm.
+    if (/\\cdot|\\times/.test(withoutGroups(terms[0]))) return false;
     return /^\s*-?\s*\\(?:log|ln)(?![a-zA-Z])/.test(terms[0]);
   },
   'mixed-number': (latex) => {
@@ -3469,11 +3730,14 @@ const FORM_PREDICATES = {
   // Lowest terms is also the sign reduced: at most one minus, never in the
   // denominator — `\frac{-23}{-4}` and `\frac{23}{-4}` are unfinished
   // (Intermediate Algebra 2.5, September 27, 2026), `\frac{-23}{4}` and
-  // `-\frac{23}{4}` are not.
+  // `-\frac{23}{4}` are not. Nor is a fraction over 1: `\frac{2}{1}` is the
+  // integer 2 with the division left written, and it passed as a member of a
+  // list keyed `\frac43, 2` (Intermediate Algebra 9.4, October 3, 2026) —
+  // the refusal `simplified-radical` already makes.
   'lowest-terms': (latex) => {
     const fraction = asFraction(latex) ?? asMixedNumber(latex);
     if (!fraction) return asDecimal(latex) !== null || asProductOfPowers(latex) !== null;
-    if (fraction.negativeDenominator || fraction.signs > 1) return false;
+    if (fraction.negativeDenominator || fraction.signs > 1 || fraction.denominator === 1) return false;
     return gcd(fraction.numerator, fraction.denominator) === 1;
   },
   'scientific-notation': (latex) => {
@@ -3769,6 +4033,14 @@ const FORM_PREDICATES = {
     const constants = splitTopLevelTerms(bareLatex(latex))
       .filter((term) => term.trim() && isConstantTerm(term.trim().replace(/^[+-]\s*/, '')));
     if (constants.length > 1) return false;
+    // The imaginary twins of both folds: `i^2` left written is a −1 not yet
+    // carried into the real part (`20i-12i^2` for `12+20i`), and two written
+    // rational multiples of i (`5i+3i`, which parses to `8i`) are like terms
+    // (Intermediate Algebra 8.8, October 3, 2026).
+    if (writesImaginaryPower(bareLatex(latex))) return false;
+    const imaginaries = splitTopLevelTerms(bareLatex(latex))
+      .filter((term) => term.trim() && isImaginaryRationalTerm(term.trim().replace(/^[+-]\s*/, '')));
+    if (imaginaries.length > 1) return false;
     // …and so does a sum of like radical constants (`\sqrt2+\sqrt2` parses to
     // `2\sqrt2`, `2\sqrt3+5\sqrt3` to `7\sqrt3`), so a variable-free term's
     // radical part is read off the LaTeX too.
@@ -3849,6 +4121,7 @@ const FORM_PREDICATES = {
   expanded: (latex) => {
     const bare = bareLatex(latex);
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
+    if (writesImaginaryPower(bare)) return false;
     const terms = loadBearingTerms(bare);
     if (terms.length > 1 && terms.some(writesFactorProduct)) return false;
     const written = terms.length === 1 && terms[0] !== bare ? terms[0] : latex;
@@ -3877,7 +4150,7 @@ const FORM_PREDICATES = {
     // it too has to be caught on the LaTeX.
     if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
-    if (writesUnreducedExponent(bare)) return false;
+    if (writesUnreducedExponent(bare) || writesImaginaryPower(bare) || writesPerfectNumeralRoot(bare)) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
       if (bare[i] === '{' || bare[i] === '(') depth += 1;
@@ -3889,7 +4162,16 @@ const FORM_PREDICATES = {
       const expr = parseLatex(preprocess(latex));
       if (!expr.isValid) return false;
       const parts = monomialParts(expr);
-      return parts !== null && parts.bases.size >= 1;
+      if (parts === null) return false;
+      // A pure imaginary term is one term — the unit i is its base — when the
+      // i is written once: the keys `i` and `-i` graded `form` against
+      // themselves, because the engine boxes `i` as a number literal and a
+      // lone number has no base (Intermediate Algebra 8.8, October 3, 2026).
+      // `i^{35}` is refused above, `i\cdot i\cdot i` at the `\cdot`.
+      const value = expr.isNumberLiteral ? expr : null;
+      if (parts.bases.size === 0 && value !== null && value.re === 0 && (value.im ?? 0) !== 0
+        && (bare.match(IMAGINARY_LETTER) ?? []).length === 1) return true;
+      return parts.bases.size >= 1;
     } catch {
       return false;
     }
@@ -3906,7 +4188,7 @@ const FORM_PREDICATES = {
     const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
     if (/\\div/.test(bare) || !/^\\[tdc]?frac/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare)) return false;
-    if (writesUnreducedExponent(bare)) return false;
+    if (writesUnreducedExponent(bare) || writesPerfectNumeralRoot(bare)) return false;
     // A numeral power (`\frac{1}{2^3y^3}`) is arithmetic left undone, and a
     // negative exponent (`\frac{1}{8}y^{-3}`) is the reciprocal the fraction
     // exists to write — neither is the one simplified fraction the ask names.
@@ -4013,7 +4295,26 @@ const FORM_PREDICATES = {
     // A plain `/` counts as a fraction bar here: `\tfrac{p/2}{q/5}` is a
     // complex fraction however its inner quotients are written.
     if (!halves) return !/\\[tdc]?frac|\\div|\//.test(bare);
-    if (halves.some((half) => /\\[tdc]?frac|\\div|\//.test(half))) return false;
+    // …but a rational EXPONENT's bar is no fraction bar of the expression:
+    // the reduced monomial key `\frac{5n}{m^{1/4}}` graded `form` against
+    // itself (Intermediate Algebra 8.3, October 3, 2026). The exponent is
+    // still read: `\frac{1}{z^{6/3}}` keeps an exponent to finish.
+    if (halves.some((half) => /\\[tdc]?frac|\\div|\//.test(withoutExponents(half)))) return false;
+    if (writesUnreducedExponent(bare)) return false;
+    // The polynomial reader fails open on such an exponent, so two one-term
+    // halves are read off the writing instead: no common integer factor and
+    // no letter outside a radical on both sides (`\frac{10n}{2m^{1/4}}`,
+    // `\frac{n}{n^{1/4}}`).
+    if (halves.some((half) => half !== withoutExponents(half) && /\\[tdc]?frac|\//.test(half))) {
+      const reads = halves.map((half) => {
+        const terms = splitTopLevelTerms(half).filter((piece) => piece.trim());
+        return terms.length === 1 ? readRadicalTerm(terms[0]) : null;
+      });
+      if (reads.every(Boolean)) {
+        if ([...reads[0].letters.keys()].some((letter) => reads[1].letters.has(letter))) return false;
+        if (reads.every((read) => read.content !== null) && gcd(reads[0].content, reads[1].content) !== 1) return false;
+      }
+    }
     // `\frac{(2x^4)^5}{(4x^3)^2}` folds to a reduced quotient in the parse;
     // the powered numeral group is read off the writing (writesNumeralGroupPower).
     if (writesNumeralGroupPower(bare)) return false;
@@ -4120,9 +4421,23 @@ const FORM_PREDICATES = {
         && e.ops[1].isNumberLiteral && e.ops[1].re === 2;
     };
     const terms = expr.operator === 'Add' ? expr.ops : [expr];
-    return terms.length <= 2
+    if (!(terms.length <= 2
       && terms.filter(isSquaredBinomialTerm).length === 1
-      && terms.every((term) => isSquaredBinomialTerm(term) || isConstantExpr(term));
+      && terms.every((term) => isSquaredBinomialTerm(term) || isConstantExpr(term)))) return false;
+    // The parse has already combined the constants, so the finished writing
+    // is read off the LaTeX: the square completed but `+1+4` left for `+5`
+    // (`-4(x+1)^2+1+4` graded `correct` against `-4(x+1)^2+5`), a numeral
+    // product or power in front, a fraction unreduced or over 1, a sum inside
+    // the square left unsimplified, or a written `+0` (Intermediate Algebra
+    // 9.7, October 3, 2026). At most two written terms, at most one of them
+    // variable-free and that one not zero.
+    const bare = stripWrittenLabel(bareLatex(latex)).replace(/\\left\s*|\\right\s*/g, '');
+    const written = splitTopLevelTerms(bare).map((term) => term.trim()).filter(Boolean);
+    const constants = written.filter((term) => !hasVariableLetter(term));
+    return written.length <= 2 && constants.length <= 1
+      && !constants.some((term) => /^[+-]?\s*(?:0+(?:\.0*)?|\.0+)$/.test(term))
+      && !written.some((term) => NUMERAL_PRODUCT.test(term) || NUMERAL_POWER.test(term))
+      && numeralFractionsReduced(bare) && factorSumsFinished(bare);
   },
   // The conic half of the same class: "Write $25x^2+9y^2-100x-54y-44=0$ in
   // standard form" answers $\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$, again
@@ -4415,24 +4730,41 @@ const FORM_PREDICATES = {
   // `\ln((x+3)(x-1))`, and demanding a bare atom there would reject the
   // correct answer — a rule firing on sound content. Only a product,
   // quotient, power, or juxtaposition is still expandable.
+  //
+  // Two more refusals (Intermediate Algebra 10.4, October 3, 2026). An
+  // unbraced argument was read only up to its caret, so `\log_2 x^4` — the
+  // Power Property left unapplied — and the retyped prompt `\log_2 3^7`
+  // passed: a `^` right after the argument makes it a power. And a logarithm
+  // of a numeral whose value is rational (`\log 10000`, `\log_9 9`,
+  // `\log_4 2`, `\log 1`) — or of its own base (`\ln e`, `\log_b b`) — is a
+  // number left unevaluated on a "simplify, if possible" ask; an irrational
+  // one (`\log_2 5`, `\ln 3`) is a finished term.
   'expanded-logarithms': (latex) => {
     const bare = bareLatex(latex);
-    const opener = /\\(?:log(?:_(?:\{[^{}]*\}|[0-9a-zA-Z]))?|ln)\s*/g;
+    const opener = /\\(?:log(?:_(\{[^{}]*\}|[0-9a-zA-Z]))?|ln)\s*/g;
     let match;
     while ((match = opener.exec(bare)) !== null) {
       const rest = bare.slice(match.index + match[0].length);
       let argument;
+      let after;
       if (rest[0] === '{') {
-        argument = readBalancedGroup(rest, 0)?.[0] ?? '';
+        const group = readBalancedGroup(rest, 0);
+        argument = group?.[0] ?? '';
+        after = group ? rest.slice(group[1]) : '';
       } else if (rest[0] === '(') {
         const close = matchingParenIndex(rest, 0);
         argument = close === -1 ? '' : rest.slice(1, close);
+        after = close === -1 ? '' : rest.slice(close + 1);
       } else if (rest[0] === '\\') {
         return false; // \sqrt, \frac — a compound argument however it is read
       } else {
         argument = rest.match(/^[0-9a-zA-Z.]+/)?.[0] ?? '';
+        after = rest.slice(argument.length);
       }
-      if (!irreducibleLogArgument(argument)) return false;
+      if (!irreducibleLogArgument(argument) || /^\s*\^/.test(after)) return false;
+      const base = match[0].startsWith('\\ln') ? 'e'
+        : (match[1] ?? '10').replace(/[{}\s]/g, '');
+      if (logEvaluatesRationally(base, argument.replace(/\s+/g, ''))) return false;
     }
     return true;
   },
@@ -4735,7 +5067,7 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
       || /^[+-]?(?:\d+(?:\.\d+)?|\.\d+)\s*\\%$/.test(written));
   };
   // A list's members, and a ± response's branches, are each one number.
-  const numbers = labelledCoordinates(studentRaw) ?? boundNumbers(studentRaw) ?? plusMinusExpansion(studentRaw)
+  const numbers = labelledCoordinates(studentRaw) ?? boundNumbers(studentRaw, answerRaw) ?? plusMinusExpansion(studentRaw)
     ?? (commasAreAllGrouping(studentRaw) ? [studentRaw] : splitTopLevelCommas(studentRaw));
   if (!numbers.some(unworked)) return general;
   const rest = tokens.filter((token) => token !== 'decimal').map((token) => {
@@ -4752,6 +5084,30 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
  */
 const BOUND_FORM_TOKENS = new Set([...NUMBER_SHAPE_TOKENS, 'scientific-notation']);
 const distributesOverBounds = (token) => BOUND_FORM_TOKENS.has(token) || DENOMINATOR_TOKEN.test(token);
+
+/**
+ * The tokens that describe how one exact ENDPOINT is written. Read whole, a
+ * solution set's punctuation broke them: `simplified-radical`'s like-radicals
+ * scan split `[1-\sqrt2,1+\sqrt2]` at the top-level signs and read the two
+ * endpoints' `\sqrt2` as uncombined like terms, so the key failed itself on a
+ * closed interval or a union while the open interval (a tuple) passed
+ * (Intermediate Algebra 9.8, October 3, 2026). They distribute over the
+ * endpoints of an interval or union and the numeric sides of an inequality
+ * whose variable side is one letter (solutionSetEndpoints).
+ */
+const ENDPOINT_FORM_TOKENS = new Set(['simplified-radical', 'no-like-terms', 'exact-radical', 'exact']);
+
+/**
+ * boundNumbers() for a SOLUTION SET only — an interval, a union, or an
+ * inequality whose every variable side is a lone letter — or null. A side
+ * like `x^2+\sqrt8` is an expression the endpoint tokens read whole.
+ */
+function solutionSetEndpoints(latex, answerRaw) {
+  const text = preprocess(latex ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  const sides = splitAtTopLevel(text, ORDER_RELATION);
+  if (sides.length >= 2 && sides.some((side) => hasVariableLetter(side) && !/^[a-zA-Z]$/.test(side))) return null;
+  return boundNumbers(latex, answerRaw);
+}
 
 // A written order relation, in every spelling MathLive or a keyboard gives.
 // The letter boundary keeps `\left` and `\leftarrow` from reading as `\le`.
@@ -4842,17 +5198,51 @@ function delimitedMembers(piece) {
  *
  * An inequality or interval with no finite numeric bound (`y<-2x+3`,
  * `(-\infty,\infty)`) passes a value form vacuously.
+ *
+ * The bounded quantity of an ESTIMATE chain is exempt the way a variable side
+ * is: on "between which two consecutive whole numbers does $\sqrt{38}$ lie",
+ * keyed `6<\sqrt{38}<7`, the middle side is the given number, not a bound,
+ * so `decimal` failed the key itself, and with no form declared the unworked
+ * `\sqrt{36}<\sqrt{38}<\sqrt{49}` graded `correct` (Intermediate Algebra 8.1,
+ * October 3, 2026). Given the key, a side that is the key's own variable-free
+ * middle (estimateQuantity) is not checked; every other side still is.
  */
-function boundNumbers(latex) {
+function boundNumbers(latex, answerRaw) {
   const text = preprocess(latex ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
   const sides = splitAtTopLevel(text, ORDER_RELATION);
   if (sides.length >= 2) {
     if (sides.some((side) => !side)) return null;
-    return sides.filter((side) => !hasVariableLetter(side) && !INFINITE_BOUND.test(side));
+    const given = answerRaw === undefined ? null : estimateQuantity(answerRaw);
+    return sides.filter((side) => !hasVariableLetter(side) && !INFINITE_BOUND.test(side)
+      && !(given !== null && sameWrittenQuantity(side, given)));
   }
   const endpoints = splitAtTopLevel(text, /^\\cup(?![a-zA-Z])/).map(delimitedMembers);
   if (endpoints.some((pair) => pair === null)) return null;
   return endpoints.flat().filter((bound) => !INFINITE_BOUND.test(bound));
+}
+
+/**
+ * The middle side of a three-sided key chain whose middle holds no variable
+ * letter — `\sqrt{38}` in `6<\sqrt{38}<7`, `\sqrt[3]{71}` in
+ * `4<\sqrt[3]{71}<5` — or null. A chain bounds its middle, so a variable-free
+ * middle is the quantity the exercise gave.
+ */
+function estimateQuantity(answerRaw) {
+  const text = preprocess(answerRaw ?? '').replace(/\\left\s*|\\right\s*/g, '').trim();
+  const sides = splitAtTopLevel(text, ORDER_RELATION);
+  if (sides.length !== 3 || sides.some((side) => !side) || hasVariableLetter(sides[1])) return null;
+  return sides[1];
+}
+
+// The same quantity, compared structurally on the parse (spacing and brace
+// spelling aside), never by value: `\sqrt{36}` is not a given `6`.
+function sameWrittenQuantity(side, given) {
+  try {
+    const [a, b] = [side, given].map((text) => parseLatex(text));
+    return a.isValid && b.isValid && a.isSame(b);
+  } catch {
+    return false;
+  }
 }
 
 const LABELLED_MEMBER = /^([a-zA-Z])\s*=(?![=<>])\s*([\s\S]+)$/;
@@ -5240,10 +5630,34 @@ export function checkForm(studentRaw, spec, answerRaw) {
     return (whole.length === 0 || checkForm(studentRaw, whole.join(' '), answerRaw))
       && (onSide.length === 0 || checkForm(side, onSide.join(' '), keySide));
   }
-  const bounds = tokens.some(distributesOverBounds) ? boundNumbers(studentRaw) : null;
-  return tokens.every((token) => (bounds !== null && distributesOverBounds(token)
-    ? bounds.every((bound) => checkFormToken(bound, token, answerRaw))
-    : checkFormToken(studentRaw, token, answerRaw)));
+  const bounds = tokens.some(distributesOverBounds) ? boundNumbers(studentRaw, answerRaw) : null;
+  // A SHAPE token on an ordered-pair or triple key describes each coordinate,
+  // as a value form already does through boundNumbers: read whole, the
+  // polynomial key `(15x+1,15x-9,15x^2-7x-2)` was no sum and failed
+  // `expanded` against itself, while `polynomial` passed the unworked
+  // `(3(5x+1)-2,5(3x-2)+1,(3x-2)(5x+1))` (Intermediate Algebra 10.1, October
+  // 3, 2026). Coordinate i is checked against the key's coordinate i, and
+  // only when the response is a tuple of the key's arity; an equation form or
+  // `solved:` still reads the whole writing.
+  const keyMembers = answerRaw === undefined ? null : tupleKeyMembers(answerRaw);
+  const studentMembers = keyMembers ? tupleKeyMembers(studentRaw) : null;
+  const coordinates = studentMembers?.length === keyMembers?.length ? studentMembers : null;
+  const perCoordinate = (token) => coordinates !== null && !distributesOverBounds(token)
+    && !EQUATION_FORM_TOKENS.has(token) && !SOLVED_TOKEN.test(token);
+  const endpoints = coordinates === null && tokens.some((token) => ENDPOINT_FORM_TOKENS.has(token))
+    ? solutionSetEndpoints(studentRaw, answerRaw) : null;
+  return tokens.every((token) => {
+    if (bounds !== null && distributesOverBounds(token)) {
+      return bounds.every((bound) => checkFormToken(bound, token, answerRaw));
+    }
+    if (endpoints !== null && ENDPOINT_FORM_TOKENS.has(token)) {
+      return endpoints.every((bound) => checkFormToken(bound, token, answerRaw));
+    }
+    if (perCoordinate(token)) {
+      return coordinates.every((member, i) => checkFormToken(member, token, keyMembers[i]));
+    }
+    return checkFormToken(studentRaw, token, answerRaw);
+  });
 }
 
 /**
@@ -5507,6 +5921,15 @@ const PLAIN_NUMBER_KEY = /^-?(?:\d+(?:\.\d*)?|\.\d+)$/;
 
 // A leading dollar sign, before or after a minus: `\$237,186`, `-\$5`.
 const CURRENCY_PREFIX = /^\s*(-?)\s*\\\$\s*/;
+// A leading approximation sign, optionally behind a one-letter label:
+// `\approx3.32`, `≈3.32`, `x\approx3.32`. A learner rounding a root to the
+// hundredths the ask names types the sign the book prints beside the result,
+// and it parsed 'invalid' (Intermediate Algebra 8.1, October 3, 2026). Read,
+// like the `\$`, only on a bare-number key and only at the very start: the
+// bare sign goes, a label keeps its `=` reading, and what follows is graded
+// as typed — `\approx3.31` is still wrong, and a sign anywhere else
+// (`3.32\approx`, `2\approx3.32`) is no reading of the answer at all.
+const APPROX_PREFIX = /^\s*(?:([a-zA-Z])\s*)?(?:\\approx(?![a-zA-Z])|≈)\s*/;
 // A dollar sign directly before a numeral (or a minus and a numeral) anywhere
 // in an inequality or interval response: `s\geq\$4,000,000`, `(-\infty,\$5]`.
 const BOUND_CURRENCY = /\\\$\s*(?=-?\s*(?:\d|\.\d))/g;
@@ -5651,7 +6074,9 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
     const tail = String(studentRaw ?? '').trim().match(FRACTION_UNIT_TAIL);
     return tail && gradeResponse(tail[1], answerRaw, options) === 'correct' ? 'unit' : verdict;
   }
-  const unpriced = (studentRaw ?? '').replace(CURRENCY_PREFIX, '$1');
+  const unpriced = (studentRaw ?? '')
+    .replace(APPROX_PREFIX, (match, label) => (label ? `${label}=` : ''))
+    .replace(CURRENCY_PREFIX, '$1');
   const verdict = gradeResponse(unpriced, answerRaw, options);
   if (verdict !== 'incorrect' && verdict !== 'invalid') return verdict;
   const tail = preprocess(unpriced).match(UNIT_TAIL);

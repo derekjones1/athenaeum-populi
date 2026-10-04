@@ -409,12 +409,6 @@ b. We can find the number of years since age $5$ by subtracting.
   hint="Substitute $8$ for $n$ in the formula."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access this online resource for additional instruction and practice with arithmetic sequences.
-
-- Arithmetic Sequences
-{{< /callout >}}
-
 ## Key equations
 
 | recursive formula for $n$th term of an arithmetic sequence | $a_n=a_{n-1}+d,\ n\ge2$ |

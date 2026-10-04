@@ -318,10 +318,6 @@ c. It is often easiest to solve "at least" problems using the Complement Rule. W
   hint="Use the Complement Rule: subtract the probability that no yellow gumballs are selected from 1."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and practice with probability.
-{{< /callout >}}
-
 ## Key equations
 
 | probability of an event with equally likely outcomes | $P(E)=\tfrac{n(E)}{n(S)}$ |

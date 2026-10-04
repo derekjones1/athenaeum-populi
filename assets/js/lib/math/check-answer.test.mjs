@@ -2756,3 +2756,248 @@ test('a single fraction writes each variable once per term', async (t) => {
     });
   }
 });
+
+// Intermediate Algebra chapters 8–10 re-review (October 3, 2026). Each row
+// pairs the gap with the neighbours that must not move: the wrong value
+// still `incorrect`, the half-worked line still `form`.
+const intermediateAlgebra8to10 = [
+  // 8.2 — an even root of a negative radicand is outside the domain at a
+  // negative sample point; the engine read `\sqrt[4]{-2.47}` as real.
+  ['x\\sqrt[4]{x}', '|x|\\sqrt[4]{x}', undefined, 'correct'],
+  ['2xy^2\\sqrt[4]{2x}', '2|x|y^2\\sqrt[4]{2x}', undefined, 'correct'],
+  ['x\\sqrt{x}', '|x|\\sqrt{x}', undefined, 'correct'],
+  ['x', '|x|', undefined, 'incorrect'],
+  ['x\\sqrt[4]{x^2}', '|x|\\sqrt[4]{x^2}', undefined, 'incorrect'],
+  ['2y\\sqrt[4]{3y^2}', '2|y|\\sqrt[4]{3y^2}', undefined, 'incorrect'],
+  ['x^2\\sqrt[4]{x}', '|x|\\sqrt[4]{x}', undefined, 'incorrect'],
+  // 8.1 — an estimate chain's given middle is exempt from a value form.
+  ['6<\\sqrt{38}<7', '6<\\sqrt{38}<7', 'decimal', 'correct'],
+  ['7>\\sqrt{38}>6', '6<\\sqrt{38}<7', 'decimal', 'correct'],
+  ['\\sqrt{36}<\\sqrt{38}<\\sqrt{49}', '6<\\sqrt{38}<7', 'decimal', 'form'],
+  ['5+1<\\sqrt{38}<7', '6<\\sqrt{38}<7', 'decimal', 'form'],
+  ['5<\\sqrt{38}<7', '6<\\sqrt{38}<7', 'decimal', 'incorrect'],
+  ['4<\\sqrt[3]{71}<5', '4<\\sqrt[3]{71}<5', 'decimal', 'correct'],
+  ['\\sqrt[3]{64}<\\sqrt[3]{71}<\\sqrt[3]{125}', '4<\\sqrt[3]{71}<5', 'decimal', 'form'],
+  ['-2\\le x<3+4', '-2\\le x<7', 'decimal', 'form'],
+  // 8.1 — a leading approximation sign on a bare-number key.
+  ['\\approx3.32', '3.32', 'decimal', 'correct'],
+  ['≈3.32', '3.32', 'decimal', 'correct'],
+  ['x\\approx3.32', '3.32', 'decimal', 'correct'],
+  ['\\approx3.31', '3.32', 'decimal', 'incorrect'],
+  ['2\\approx3.32', '3.32', 'decimal', 'incorrect'],
+  ['3.32\\approx', '3.32', 'decimal', 'invalid'],
+  // 8.5 — a variable or a sign left across a radical fraction's bar.
+  ['\\frac{2x\\sqrt{5x}}{x^2}', '\\frac{2\\sqrt{5x}}{x}', 'simplified-radical single-fraction', 'form'],
+  ['\\frac{2x\\sqrt{5x}}{x^2}', '\\frac{2\\sqrt{5x}}{x}', 'simplified-radical single-fraction reduced-fraction', 'form'],
+  ['\\frac{2\\sqrt{5x}}{x}', '\\frac{2\\sqrt{5x}}{x}', 'simplified-radical single-fraction reduced-fraction', 'correct'],
+  ['\\frac{\\sqrt{5x}}{x}', '\\frac{\\sqrt{5x}}{x}', 'simplified-radical', 'correct'],
+  ['\\frac{3(1+\\sqrt5)}{-4}', '-\\frac{3(1+\\sqrt5)}{4}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt5}{-4}', '-\\frac{\\sqrt5}{4}', 'simplified-radical', 'form'],
+  ['-\\frac{3(1+\\sqrt5)}{4}', '-\\frac{3(1+\\sqrt5)}{4}', 'simplified-radical', 'correct'],
+  ['\\frac{-3(1+\\sqrt5)}{4}', '-\\frac{3(1+\\sqrt5)}{4}', 'simplified-radical', 'correct'],
+  ['\\frac{-\\sqrt3}{3}', '-\\frac{\\sqrt3}{3}', 'simplified-radical', 'correct'],
+  ['\\frac{\\sqrt{x}+2}{4-x}', '\\frac{\\sqrt{x}+2}{4-x}', 'simplified-radical', 'correct'],
+  // 9.1 — a radical-times-i numerator over a number boxed as NaN.
+  ['\\frac{1+i\\sqrt{2}}{3}', '\\frac{1}{3}+\\frac{\\sqrt{2}}{3}i', undefined, 'correct'],
+  ['\\frac{1+i\\sqrt{2}}{3}', '\\frac{1}{3}-\\frac{\\sqrt{2}}{3}i', undefined, 'incorrect'],
+  ['\\frac{2+\\sqrt2 i}{3}', '\\frac{1}{3}+\\frac{\\sqrt{2}}{3}i', undefined, 'incorrect'],
+  // 8.8 / 9.1 — constant complex values compare within tolerance.
+  ['\\frac{3\\sqrt3 i}{5}', '\\frac{3\\sqrt3}{5}i', undefined, 'correct'],
+  ['-\\frac15+\\frac{3i\\sqrt3}{5}', '-\\frac{1}{5}+\\frac{3\\sqrt{3}}{5}i', undefined, 'correct'],
+  ['\\frac{3\\sqrt3 i}{5}', '\\frac{3\\sqrt2}{5}i', undefined, 'incorrect'],
+  ['2\\sqrt2i+4\\sqrt2i', '6\\sqrt2 i', 'no-like-terms', 'form'],
+  ['\\sqrt{8}i+\\sqrt{32}i', '6\\sqrt{2}i', 'simplified-radical', 'form'],
+  ['3(2+i)', '6+3i', undefined, 'incorrect'],
+  // 8.8 — `no-like-terms` on i over a number; written powers of i.
+  ['\\frac{4}{17}+\\frac{16i}{17}', '\\tfrac{4}{17}+\\tfrac{16}{17}i', 'no-like-terms', 'correct'],
+  ['\\frac{4}{3}-\\frac{i}{3}', '\\tfrac{4}{3}-\\tfrac{1}{3}i', 'no-like-terms', 'correct'],
+  ['\\frac{16i}{17}', '\\frac{16}{17}i', 'no-like-terms', 'correct'],
+  ['-\\frac43+\\frac{2\\sqrt2 i}{3}', '-\\frac43+\\frac{2\\sqrt2}{3}i', 'no-like-terms', 'correct'],
+  ['\\frac{6}{4}-\\frac{6i}{4}', '\\frac32-\\frac32i', 'no-like-terms', 'form'],
+  ['5i+3i', '8i', 'no-like-terms', 'form'],
+  ['2+3+5i', '5+5i', 'no-like-terms', 'form'],
+  ['i', 'i', 'single-term', 'correct'],
+  ['-i', '-i', 'single-term', 'correct'],
+  ['15i', '15i', 'single-term', 'correct'],
+  ['i^{35}', '-i', 'single-term', 'form'],
+  ['i^2i', '-i', 'single-term', 'form'],
+  ['iii', '-i', 'single-term', 'form'],
+  ['20i-12i^2', '12+20i', 'expanded no-like-terms', 'form'],
+  ['18i+12i^2', '-12+18i', 'expanded no-like-terms', 'form'],
+  ['12+20i', '12+20i', 'expanded no-like-terms', 'correct'],
+  ['i^{75}', '-i', 'expanded', 'form'],
+  ['x\\pi^2+3', 'x\\pi^2+3', 'expanded no-like-terms', 'correct'],
+  // 9.2 — a compound numeral fraction or an added negative in a factor.
+  ['(p+\\frac{\\frac{1}{4}}{2})^2', '(p+\\frac{1}{8})^2', 'factored-completely', 'form'],
+  ['(a+(-10))^2', '(a-10)^2', 'factored-completely', 'form'],
+  ['(a-(-10))^2', '(a+10)^2', 'factored-completely', 'form'],
+  ['(p+\\frac18)^2', '(p+\\frac{1}{8})^2', 'factored-completely', 'correct'],
+  ['(x+5)(x+5)', '(x+5)^2', 'factored-completely', 'correct'],
+  ['(x-\\frac52)^2', '(x-\\frac52)^2', 'factored-completely', 'correct'],
+  // 8.3 — exponent arithmetic, a numeral perfect root, a powered product.
+  ['x^{\\frac34\\cdot\\frac23}y^{\\frac12\\cdot\\frac23}', 'x^{1/2}y^{1/3}', 'single-term', 'form'],
+  ['x^{\\frac12}y^{\\frac13}', 'x^{1/2}y^{1/3}', 'single-term', 'correct'],
+  ['x^{-2}y^{3}', 'x^{-2}y^3', 'single-term', 'correct'],
+  ['\\sqrt[3]{8}x', '2x', 'single-term', 'form'],
+  ['\\sqrt{2}x', '\\sqrt{2}x', 'single-term', 'correct'],
+  ['\\frac{5n^{2\\cdot\\frac12}}{m^{\\frac12\\cdot\\frac12}}', '\\frac{5n}{m^{1/4}}', 'single-fraction', 'form'],
+  ['\\frac{\\sqrt{25}n}{m^{1/4}}', '\\frac{5n}{m^{1/4}}', 'single-fraction', 'form'],
+  ['\\frac{5n}{m^{1/4}}', '\\frac{5n}{m^{1/4}}', 'single-fraction', 'correct'],
+  ['\\frac{5n}{m^{1/4}}', '\\frac{5n}{m^{1/4}}', 'reduced-fraction', 'correct'],
+  ['\\frac{10n}{2m^{1/4}}', '\\frac{5n}{m^{1/4}}', 'reduced-fraction', 'form'],
+  ['\\frac{5n^{5/4}}{n^{1/4}m^{1/4}}', '\\frac{5n}{m^{1/4}}', 'reduced-fraction', 'form'],
+  ['\\frac{1}{z^{6/3}}', '\\frac{1}{z^2}', 'reduced-fraction', 'form'],
+  ['(32x^{\\frac13})^{\\frac35}', '8x^{1/5}', 'rational-exponent', 'form'],
+  ['8x^{\\frac15}', '8x^{1/5}', 'rational-exponent', 'correct'],
+  ['(2x)^{\\frac13}', '(2x)^{\\frac13}', 'rational-exponent', 'correct'],
+  ['(x^2+1)^{\\frac12}', '(x^2+1)^{\\frac12}', 'rational-exponent', 'correct'],
+  ['x^{2.5}', 'x^{5/2}', 'rational-exponent', 'form'],
+  ['x^{-\\frac52}', 'x^{-5/2}', 'rational-exponent', 'correct'],
+  // 9.4 — a fraction over 1 is not lowest terms.
+  ['\\frac{-2}{1}', '-2', 'lowest-terms', 'form'],
+  ['\\frac{23}{4}', '\\frac{23}{4}', 'lowest-terms', 'correct'],
+  // 10.5 — exact-log reads its integer company on either side.
+  ['2+\\ln 9', '\\ln 9+2', 'exact-log', 'correct'],
+  ['x=2+\\ln9', '\\ln 9+2', 'exact-log', 'correct'],
+  ['-2+\\ln 9', '\\ln 9-2', 'exact-log', 'correct'],
+  ['2+\\ln 3+\\ln 3', '\\ln 9+2', 'exact-log', 'form'],
+  ['2+4.197', '\\ln 9+2', 'exact-log', 'incorrect'],
+  ['\\frac{\\ln5}{2}', '\\frac12\\ln5', 'exact-log', 'correct'],
+  ['\\frac12\\ln5', '\\frac{\\ln5}{2}', 'exact-log', 'correct'],
+];
+test('Intermediate Algebra 8–10 grader gaps', async (t) => {
+  for (const [typed, key, form, expected] of intermediateAlgebra8to10) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// The same gaps on list and ± responses (unordered mode).
+const intermediateAlgebra8to10Lists = [
+  ['\\frac{-4\\pm2\\sqrt{2}i}{3}', '-\\frac{4}{3}+\\frac{2\\sqrt{2}}{3}i, -\\frac{4}{3}-\\frac{2\\sqrt{2}}{3}i', 'simplified-radical', 'correct'],
+  ['\\frac{-4+2\\sqrt{2}i}{3},\\frac{-4-2\\sqrt{2}i}{3}', '-\\frac{4}{3}+\\frac{2\\sqrt{2}}{3}i, -\\frac{4}{3}-\\frac{2\\sqrt{2}}{3}i', 'simplified-radical', 'correct'],
+  ['\\frac{-4\\pm2\\sqrt{2}i}{5}', '-\\frac{4}{3}+\\frac{2\\sqrt{2}}{3}i, -\\frac{4}{3}-\\frac{2\\sqrt{2}}{3}i', 'simplified-radical', 'incorrect'],
+  ['\\frac{-1\\pm3\\sqrt{3}i}{5}', '-\\frac{1}{5}+\\frac{3\\sqrt{3}}{5}i, -\\frac{1}{5}-\\frac{3\\sqrt{3}}{5}i', 'simplified-radical', 'correct'],
+  ['-\\frac15\\pm\\frac{3\\sqrt{3}i}{5}', '-\\frac{1}{5}+\\frac{3\\sqrt{3}}{5}i, -\\frac{1}{5}-\\frac{3\\sqrt{3}}{5}i', 'simplified-radical', 'correct'],
+  ['-\\frac43\\pm\\frac{2\\sqrt2 i}{3}', '-\\frac43+\\frac{2\\sqrt2}{3}i,-\\frac43-\\frac{2\\sqrt2}{3}i', 'no-like-terms', 'correct'],
+  ['\\frac{4}{3},\\frac{2}{1}', '\\frac{4}{3}, 2', 'lowest-terms', 'form'],
+  ['\\frac{4}{3},2', '\\frac{4}{3}, 2', 'lowest-terms', 'correct'],
+];
+test('Intermediate Algebra 8–10 grader gaps on lists', async (t) => {
+  for (const [typed, key, form, expected] of intermediateAlgebra8to10Lists) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form, mode: 'unordered' }), expected);
+    });
+  }
+});
+
+// `vertex-form` reads the finished writing: one constant, combined and
+// nonzero, one coefficient (Intermediate Algebra 9.7, October 3, 2026).
+const vertexFormWriting = [
+  ['-4(x+1)^2+1+4', '-4(x+1)^2+5', 'form'],
+  ['-(x-4)^2+0', '-(x-4)^2', 'form'],
+  ['(x-3)^2+\\frac{2}{1}', '(x-3)^2+2', 'form'],
+  ['(x-3)^2+\\frac{4}{2}', '(x-3)^2+2', 'form'],
+  ['2\\cdot2(x+1)^2+3', '4(x+1)^2+3', 'form'],
+  ['2^2(x+1)^2+3', '4(x+1)^2+3', 'form'],
+  ['(x+2-1)^2+3', '(x+1)^2+3', 'form'],
+  ['-4x^2-8x+1', '-4(x+1)^2+5', 'form'],
+  ['-4(x+1)^2+6', '-4(x+1)^2+5', 'incorrect'],
+  ['-4(x+1)^2+5', '-4(x+1)^2+5', 'correct'],
+  ['f(x)=-4(x+1)^2+5', '-4(x+1)^2+5', 'correct'],
+  ['5-4(x+1)^2', '-4(x+1)^2+5', 'correct'],
+  ['(x-3)^2-1', '(x-3)^2-1', 'correct'],
+  ['-(x-4)^2', '-(x-4)^2', 'correct'],
+  ['\\left(x-3\\right)^2-4', '(x-3)^2-4', 'correct'],
+  ['-\\frac{7}{16}(x+4)^2+7', '-\\frac{7}{16}(x+4)^2+7', 'correct'],
+  ['3(x-5/6)^2-37/12', '3(x-5/6)^2-37/12', 'correct'],
+  ['-4(y+2)^2+4', '-4(y+2)^2+4', 'correct'],
+];
+test('vertex-form requires its constants combined', async (t) => {
+  for (const [typed, key, expected] of vertexFormWriting) {
+    await t.test(`${typed}  vs  ${key}`, () => {
+      assert.equal(checkAnswer(typed, key, { form: 'vertex-form' }), expected);
+    });
+  }
+});
+
+// Logarithm shape tokens (Intermediate Algebra 10.4, October 3, 2026): a
+// power after an unbraced argument and a rational-valued log left written
+// fail `expanded-logarithms`; a `\cdot` inside the condensed argument passes
+// `single-logarithm`.
+const logarithmWriting = [
+  ['\\log_2 5+\\log_2 x^4+\\log_2 y^2', '\\log_2 5+4\\log_2 x+2\\log_2 y', 'expanded-logarithms', 'form'],
+  ['\\log_2 5+\\log_2 x^{4}+\\log_2 y^2', '\\log_2 5+4\\log_2 x+2\\log_2 y', 'expanded-logarithms', 'form'],
+  ['\\log_2 3^7', '7\\log_2 3', 'expanded-logarithms', 'form'],
+  ['\\log(x^4)', '4\\log x', 'expanded-logarithms', 'form'],
+  ['\\ln x^{2}', '2\\ln x', 'expanded-logarithms', 'form'],
+  ['\\log 10000-\\log y', '4-\\log y', 'expanded-logarithms', 'form'],
+  ['\\log_9 9+\\log_9 x', '1+\\log_9 x', 'expanded-logarithms', 'form'],
+  ['\\log_4 3-\\log_4 4', '\\log_4 3-1', 'expanded-logarithms', 'form'],
+  ['\\log_3 27+\\log_3 x', '3+\\log_3 x', 'expanded-logarithms', 'form'],
+  ['\\ln e+\\ln x', '1+\\ln x', 'expanded-logarithms', 'form'],
+  ['\\log 1+\\log x', '\\log x', 'expanded-logarithms', 'form'],
+  ['\\log_8 4', '\\frac23', 'expanded-logarithms', 'form'],
+  ['\\log_2 5+4\\log_2 x+2\\log_2 y', '\\log_2 5+4\\log_2 x+2\\log_2 y', 'expanded-logarithms', 'correct'],
+  ['4-\\log y', '4-\\log y', 'expanded-logarithms', 'correct'],
+  ['\\ln 3+\\ln x', '\\ln 3+\\ln x', 'expanded-logarithms', 'correct'],
+  ['\\ln(x+3)+\\ln(x-1)', '\\ln(x+3)+\\ln(x-1)', 'expanded-logarithms', 'correct'],
+  ['\\ln(x^2+1)', '\\ln(x^2+1)', 'expanded-logarithms', 'correct'],
+  ['\\log_2(x^3\\cdot(x-1)^2)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'correct'],
+  ['\\log_2(x^3(x-1)^2)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'correct'],
+  ['3\\log_2 x+2\\log_2(x-1)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'form'],
+  ['2\\cdot\\log_2 x', '\\log_2 x^2', 'single-logarithm', 'form'],
+];
+test('logarithm shape tokens read powers, values and grouped products', async (t) => {
+  for (const [typed, key, form, expected] of logarithmWriting) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// A shape token on a tuple key reads each coordinate against the key's
+// coordinate (Intermediate Algebra 10.1, October 3, 2026).
+const tupleShapes = [
+  ['(15x+1,15x-9,15x^2-7x-2)', '(15x+1,15x-9,15x^2-7x-2)', 'expanded distributed no-like-terms', 'correct'],
+  ['(3(5x+1)-2,5(3x-2)+1,(3x-2)(5x+1))', '(15x+1,15x-9,15x^2-7x-2)', 'expanded distributed no-like-terms', 'form'],
+  ['(x,x)', '(x,x)', 'polynomial distributed no-like-terms', 'correct'],
+  ['(x,(x-6)+6)', '(x,x)', 'polynomial distributed no-like-terms', 'form'],
+  ['(x,x-6+6)', '(x,x)', 'polynomial distributed no-like-terms', 'form'],
+  ['(\\frac{4x}{4},x)', '(x,x)', 'polynomial distributed no-like-terms', 'form'],
+  ['(7\\log_2 3,20\\log x)', '(7\\log_2 3,20\\log x)', 'expanded-logarithms', 'correct'],
+  ['(\\log_2 3^7,\\log x^{20})', '(7\\log_2 3,20\\log x)', 'expanded-logarithms', 'form'],
+  ['(\\log_2(xy),\\log(x^2y))', '(\\log_2(xy),\\log(x^2y))', 'single-logarithm', 'correct'],
+  ['(\\log_2 x+\\log_2 y,\\log(x^2y))', '(\\log_2(xy),\\log(x^2y))', 'single-logarithm', 'form'],
+  ['(2,1+\\frac12)', '(2,\\frac32)', 'lowest-terms', 'form'],
+  ['(2,\\frac{3}{2})', '(2,\\frac32)', 'lowest-terms', 'correct'],
+];
+test('a shape token on a tuple key applies per coordinate', async (t) => {
+  for (const [typed, key, form, expected] of tupleShapes) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+// Endpoint shape tokens distribute over a solution set's endpoints
+// (Intermediate Algebra 9.8, October 3, 2026).
+const endpointShapes = [
+  ['[1-\\sqrt{2},1+\\sqrt{2}]', '[1-\\sqrt{2},1+\\sqrt{2}]', 'simplified-radical', 'correct'],
+  ['[1-\\sqrt{2},1+\\sqrt{2}]', '[1-\\sqrt{2},1+\\sqrt{2}]', 'no-like-terms simplified-radical', 'correct'],
+  ['(-\\infty,4-\\sqrt{2})\\cup(4+\\sqrt{2},\\infty)', '(-\\infty,4-\\sqrt{2})\\cup(4+\\sqrt{2},\\infty)', 'simplified-radical', 'correct'],
+  ['(1-\\sqrt{2},1+\\sqrt{2})', '(1-\\sqrt{2},1+\\sqrt{2})', 'simplified-radical', 'correct'],
+  ['1-\\sqrt2\\le x\\le1+\\sqrt2', '1-\\sqrt2\\le x\\le1+\\sqrt2', 'simplified-radical no-like-terms', 'correct'],
+  ['[\\frac{4-\\sqrt{8}}{2},\\frac{4+\\sqrt{8}}{2}]', '[2-\\sqrt{2},2+\\sqrt{2}]', 'simplified-radical', 'form'],
+  ['[1+1-\\sqrt{2},2+\\sqrt{2}]', '[2-\\sqrt{2},2+\\sqrt{2}]', 'no-like-terms simplified-radical', 'form'],
+  ['\\frac{2-\\sqrt8}{2}\\le x\\le1+\\sqrt2', '1-\\sqrt2\\le x\\le1+\\sqrt2', 'simplified-radical', 'form'],
+  ['[1-\\sqrt{2},1+\\sqrt{3}]', '[1-\\sqrt{2},1+\\sqrt{2}]', 'simplified-radical', 'incorrect'],
+];
+test('endpoint shape tokens read each endpoint of a solution set', async (t) => {
+  for (const [typed, key, form, expected] of endpointShapes) {
+    await t.test(`${typed}  vs  ${key}  [${form}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});

@@ -1010,3 +1010,15 @@ test('an arrowless line stops at the grid edge — a first-quadrant boundary nev
     }
   }
 });
+
+test('a log curve with a base below 1 trims to its from/to window', () => {
+  // f(x) = log_{1/3} x decreases, so from/to in x bound y the other way round.
+  const trimmed = buildGraph({
+    xMin: -1, xMax: 10, yMin: -4, yMax: 4, unit: 20, ariaLabel: 't',
+    curves: [{ kind: 'log', b: 1 / 3, from: 1 / 3, to: 9, arrows: false }],
+  });
+  const [pts] = polylines(trimmed);
+  assert.ok(pts.length > 2, 'the trimmed base-1/3 curve draws');
+  const span = Math.max(...pts.map((p) => p[0])) - Math.min(...pts.map((p) => p[0]));
+  assert.ok(Math.abs(span - (9 - 1 / 3) * 20) < 2, `it spans x = 1/3 to 9, got ${span}px`);
+});

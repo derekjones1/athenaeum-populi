@@ -443,11 +443,6 @@ So the general solution is $\left(x,\tfrac{5}{2}x,\tfrac{3}{2}x\right)$. In this
   hint="Add equations to eliminate z first, then eliminate it again from a different pair to get two equations relating x and y alone."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with systems of equations in three variables.
-{{< /callout >}}
-
 ## Key concepts
 
 - A solution set is an ordered triple $\{(x,y,z)\}$ that represents the intersection of three planes in space.

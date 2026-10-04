@@ -609,10 +609,6 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   hint="Find $c=\sqrt{a^2-b^2}$ from part (a), then the distance between the foci is $2c$."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and practice with ellipses.
-{{< /callout >}}
-
 ## Key equations
 
 | Horizontal ellipse, center at origin | $\tfrac{x^2}{a^2}+\tfrac{y^2}{b^2}=1,\ a>b$ |

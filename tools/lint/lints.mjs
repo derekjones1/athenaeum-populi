@@ -2938,6 +2938,17 @@ export function lintHugo(src, filename = '', options = {}) {
     }
   }
 
+  // ---- empty Media callout ---------------------------------------------------
+  // OpenStax's "Access these online resources for additional instruction and
+  // practice with ..." box is only its link list; the pages omit the links, so
+  // a callout holding a `**Media.**` paragraph with no link promises resources
+  // that are not there.
+  for (const m of mediaSrc.matchAll(/\{\{< callout\b[^>]*>\}\}\n(\*\*Media\.\*\*[\s\S]*?)\{\{< \/callout >\}\}/g)) {
+    if (!m[1].includes('](')) {
+      err(m.index, "empty Media callout: the source's online-resource links are omitted, so remove the box");
+    }
+  }
+
   // ---- attribution footer: last thing on the page ---------------------------
   // The `<small>This … adapted from …</small>` footer closes the page. The
   // Microbiology Knowledge Check for chapters 21-26 shipped from September

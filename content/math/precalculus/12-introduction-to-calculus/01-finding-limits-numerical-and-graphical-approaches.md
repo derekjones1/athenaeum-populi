@@ -389,11 +389,6 @@ $1$
 The limit does not exist.
 {{< /multiplechoice >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with finding limits.
-{{< /callout >}}
-
 ## Key concepts
 
 - A function has a limit if the output values approach some value $L$ as the input values approach some quantity $a.$

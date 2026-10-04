@@ -328,10 +328,6 @@ Since the left- and right-hand limits are not equal, there is no limit.
 does not exist
 {{< /multiplechoice >}}
 
-{{< callout type="info" >}}
-**Media.** Access the following online resource for additional instruction and practice with properties of limits.
-{{< /callout >}}
-
 ## Key concepts
 
 - The properties of limits can be used to perform operations on the limits of functions rather than the functions themselves.

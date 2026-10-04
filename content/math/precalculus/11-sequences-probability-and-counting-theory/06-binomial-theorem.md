@@ -276,11 +276,6 @@ $$\binom{16}{9}x^{16-9}(2y)^9=5{,}857{,}280x^7y^9$$
   hint="The sixth term has $r+1=6$, so $r=5$; use $\binom{n}{r}x^{n-r}y^r$ with $n=9$, $x=3x$, and $y=-y$."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with binomial expansion.
-{{< /callout >}}
-
 ## Key equations
 
 | Binomial Theorem | $(x+y)^n=\sum_{k=0}^{n}\binom{n}{k}x^{n-k}y^k$ |

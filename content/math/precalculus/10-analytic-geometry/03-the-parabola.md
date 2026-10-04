@@ -444,11 +444,6 @@ The dish is about $0.74$ inches deep.
   hint="The dish extends half the $1{,}600$ mm diameter, or $800$ mm, on either side of the origin; substitute that for $y$ and solve for $x$."
 >}}
 
-{{< callout type="info" >}}
-**Media.** Access these online resources for additional instruction and
-practice with parabolas.
-{{< /callout >}}
-
 ## Key equations
 
 | Parabola, vertex at origin, axis of symmetry on $x$-axis | $y^2=4px$ |
