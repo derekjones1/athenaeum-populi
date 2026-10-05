@@ -39,7 +39,7 @@ years it would take for our initial investment to double? The graph below
 shows this point on the logarithmic graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A graph titled 'Logarithmic model showing years as a function of the account balance.' The horizontal axis, account balance, runs from 0 to 6,500 dollars; the vertical axis, years, runs from 0 to 20. The curve starts at (2,500, 0) and rises, passing near (5,000, 14) — where the balance reaches $5,000 in about 14 years — and continues upward past $6,000.","xMin":0,"xMax":6500,"yMin":0,"yMax":20,"xUnit":0.13,"yUnit":15,"tickLabels":true,"xTickStep":1000,"yTickStep":5,"xLabel":"Account balance","yLabel":"Years","curves":[{"kind":"log","b":2.718281828459045,"a":20,"h":0,"k":-156.48,"from":2500,"to":6300,"arrows":"end"}],"points":[{"at":[5000,13.86],"label":"Balance reaches $5,000 near year 14","labelSide":"nw"}]}
+{"ariaLabel":"A graph of the logarithmic model showing years as a function of the account balance. The horizontal axis, account balance, runs from 0 to 6,500 dollars; the vertical axis, years, runs from 0 to 20. The curve starts at (2,500, 0) and rises, passing near (5,000, 14) — where the balance reaches $5,000 in about 14 years — and continues upward past $6,000.","xMin":0,"xMax":6500,"yMin":0,"yMax":21,"xUnit":0.13,"yUnit":15,"tickLabels":true,"xTickStep":1000,"yTickStep":5,"xLabel":"Account balance","yLabel":"Years","curves":[{"kind":"log","b":2.718281828459045,"a":20,"h":0,"k":-156.48,"from":2500,"to":6300,"arrows":"end"}],"points":[{"at":[5000,13.86],"label":"Balance reaches $5,000 near year 14","labelSide":"nw"}]}
 {{< /apfigure >}}
 
 In this section we will discuss the values for which a logarithmic function
@@ -116,6 +116,7 @@ The domain of $f(x)=\log_2(x+3)$ is $(-3,\infty)$.
 {{< fillin
   question="What is the domain of $f(x)=\log_5(x-2)+1$? Write your answer in interval notation."
   answer="(2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(2,\infty)$"
   hint="Set the argument $x-2$ greater than zero and solve for $x$."
 >}}
@@ -130,7 +131,7 @@ $$
 \begin{array}{lrcl}
 \text{The input must be positive.} & 5-2x &>& 0 \\[4pt]
 \text{Subtract 5.} & -2x &>& -5 \\[4pt]
-\text{Divide by }-2\text{ and switch the inequality.} & x &<& \tfrac{5}{2}
+\text{Divide by }{-2}\text{ and switch the inequality.} & x &<& \tfrac{5}{2}
 \end{array}
 $$
 
@@ -139,6 +140,7 @@ The domain of $f(x)=\log(5-2x)$ is $\left(-\infty,\tfrac{5}{2}\right)$.
 {{< fillin
   question="What is the domain of $f(x)=\log(x-5)+2$? Write your answer in interval notation."
   answer="(5,\infty)"
+  answerForm="decimal"
   answerDisplay="$(5,\infty)$"
   hint="Set the argument $x-5$ greater than zero and solve for $x$."
 >}}
@@ -175,7 +177,7 @@ As we'd expect, the $x$- and $y$-coordinates are reversed for the inverse
 functions. The graph below shows the graph of $f$ and $g$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graphs of f(x) = 2 to the x and g(x) = log base 2 of x, which are reflections of each other across the dashed line y = x. f passes through (0, 1) and (1, 2); g passes through (1, 0) and (2, 1).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"exp","b":2},{"kind":"log","b":2}],"lines":[{"through":[[-5,-5],[5,5]],"dashed":true,"arrows":true}],"texts":[{"at":[-3.7,1.6],"text":"f(x) = 2ˣ"},{"at":[1.5,-3],"text":"g(x) = log₂(x)"},{"at":[3.3,4.5],"text":"y = x"}]}
+{"ariaLabel":"The graphs of f(x) = 2 to the x and g(x) = log base 2 of x, which are reflections of each other across the dashed line y = x. f passes through (0, 1) and (1, 2); g passes through (1, 0) and (2, 1).","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"exp","b":2,"from":-4.3},{"kind":"log","b":2,"from":0.04736614270344993}],"lines":[{"through":[[-5,-5],[5,5]],"dashed":true,"arrows":true}],"texts":[{"at":[-3.7,1.6],"text":"f(x) = 2ˣ"},{"at":[1.5,-3],"text":"g(x) = log₂(x)"},{"at":[4.1,3.0],"text":"y = x"}]}
 {{< /apfigure >}}
 
 Observe the following from the graph:
@@ -205,11 +207,11 @@ Observe the following from the graph:
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a): the graph of the parent function f(x) = log base b of x for a base b greater than 1, increasing, with vertical asymptote x = 0, x-intercept (1, 0), and key point (b, 1).","xMin":-1,"xMax":7,"yMin":-3,"yMax":3,"tickLabels":false,"curves":[{"kind":"log","b":3}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[3,1],"label":"(b, 1)"}]}
+{"ariaLabel":"Panel (a): the graph of the parent function f(x) = log base b of x for a base b greater than 1, increasing, with vertical asymptote x = 0, x-intercept (1, 0), and key point (b, 1); the panel is marked b > 1.","xMin":-1,"xMax":7,"yMin":-3,"yMax":3,"unit":28,"tickLabels":false,"curves":[{"kind":"log","b":3,"from":0.06}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[3,1],"label":"(b, 1)","labelSide":"nw"}],"texts":[{"at":[4.6,2.4],"text":"b > 1"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b): the graph of the parent function f(x) = log base b of x for a base b between 0 and 1, decreasing, with vertical asymptote x = 0, x-intercept (1, 0), and key point (b, 1).","xMin":-1,"xMax":7,"yMin":-3,"yMax":3,"tickLabels":false,"curves":[{"kind":"log","b":0.4}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[0.4,1],"label":"(b, 1)"}]}
+{"ariaLabel":"Panel (b): the graph of the parent function f(x) = log base b of x for a base b between 0 and 1, decreasing, with vertical asymptote x = 0, x-intercept (1, 0), and key point (b, 1); the panel is marked 0 < b < 1.","xMin":-1,"xMax":7,"yMin":-3,"yMax":3,"unit":28,"tickLabels":false,"curves":[{"kind":"log","b":0.4,"from":0.095}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"ne"},{"at":[0.4,1],"label":"(b, 1)","labelSide":"e"}],"texts":[{"at":[3.8,2.4],"text":"0 < b < 1"}]}
 {{< /apfigure >}}
 
 The graph below shows how changing the base $b$ in $f(x)=\log_b(x)$ can
@@ -218,7 +220,7 @@ value of the base increases. (*Note:* recall that the function $\ln(x)$
 has base $e\approx2.718$.)
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three logarithmic curves sharing the point (1, 0): y = log base 2 of x (steepest), y = ln(x), and y = log(x) (flattest), each with vertical asymptote x = 0. The curves compress vertically as the base increases.","xMin":0,"xMax":11,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":2,"to":8.5},{"kind":"log","b":2.718281828459045,"to":8.5},{"kind":"log","b":10,"to":8.5}],"lines":[{"x":0,"dashed":true,"arrows":false}],"texts":[{"at":[9,3.09],"text":"log₂(x)"},{"at":[9,2.14],"text":"ln(x)"},{"at":[9,0.93],"text":"log(x)"}]}
+{"ariaLabel":"Three logarithmic curves sharing the point (1, 0): y = log base 2 of x (steepest), y = ln(x), and y = log(x) (flattest), each with vertical asymptote x = 0. The curves compress vertically as the base increases.","xMin":0,"xMax":11,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":2,"from":0.08246924442330589,"to":8.5},{"kind":"log","b":2.718281828459045,"from":0.06081006262521799,"to":8.5},{"kind":"log","b":10,"from":0.012589254117941675,"to":8.5}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"texts":[{"at":[9,3.09],"text":"log₂(x)"},{"at":[9,2.14],"text":"ln(x)"},{"at":[9,0.93],"text":"log(x)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -248,7 +250,7 @@ graph.
   smooth curve through the points (see the graph below).
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = log base 5 of x, increasing, with vertical asymptote x = 0, x-intercept (1, 0), and key point (5, 1).","xMin":-2,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":5}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[5,1],"label":"(5, 1)"}]}
+{"ariaLabel":"The graph of f(x) = log base 5 of x, increasing, with vertical asymptote x = 0, x-intercept (1, 0), and key point (5, 1).","xMin":-2,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":5,"from":0.0036}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelNudge":[4,0]},{"at":[5,1],"label":"(5, 1)","labelSide":"n"}],"texts":[{"at":[2.6,2.55],"text":"f(x) = log₅(x)"}]}
 {{< /apfigure >}}
 
 The domain is $(0,\infty)$, the range is $(-\infty,\infty)$, and the
@@ -257,8 +259,9 @@ vertical asymptote is $x=0$.
 {{< fillin
   question="Graph $f(x)=\log_{1/5}(x)$. What is the domain? Write your answer in interval notation."
   answer="(0,\infty)"
+  answerForm="decimal"
   answerDisplay="$(0,\infty)$"
-  hint="Every logarithmic function $\log_b(x)$, regardless of the base, has the same domain."
+  hint="Set the argument greater than zero and solve; the base plays no part in the domain."
 >}}
 
 ## Graphing transformations of logarithmic functions
@@ -276,14 +279,14 @@ $f(x)=\log_b(x)$, the result is a **horizontal shift** $c$ units in the
 we can observe the general graph of the parent function $f(x)=\log_b(x)$
 for $c>0$ alongside the shift left, $g(x)=\log_b(x+c)$, and the shift
 right, $h(x)=\log_b(x-c)$. See the panels below, drawn with $b=2$ and
-$c=2$.
+$c=3$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a), shift left. The parent function f(x) = log base 2 of x with asymptote x = 0, alongside g(x) = log base 2 of (x + 2), shifted 2 units left, with asymptote x = -2. The asymptote moves to x = -2, the domain becomes (-2, infinity), and the range stays (-infinity, infinity).","xMin":-5,"xMax":6,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"h":-2}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":-2,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[2,1],"label":"(2, 1)"},{"at":[-1,0],"label":"(-1, 0)"},{"at":[0,1],"label":"(0, 1)"}]}
+{"ariaLabel":"Panel (a), shift left. The parent function f(x) = log base 2 of x, with asymptote x = 0, passing through (1, 0) and (2, 1), alongside g(x) = log base 2 of (x + 3), shifted 3 units left, with asymptote x = -3, passing through (-2, 0) and (-1, 1). The asymptote moves to x = -3, the domain becomes (-3, infinity), and the range stays (-infinity, infinity).","xMin":-4,"xMax":6,"yMin":-4,"yMax":4,"unit":26,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.08838834764831845,"to":6},{"kind":"log","b":2,"h":-3,"from":-2.9116116523516817,"to":5}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"},{"x":-3,"dashed":true,"arrows":false,"label":"x = −3"}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[2,1],"label":"(2, 1)","labelSide":"se"},{"at":[-2,0],"label":"(−2, 0)"},{"at":[-1,1],"label":"(−1, 1)","labelSide":"nw","labelNudge":[5,0]}],"texts":[{"at":[2.6,3.55],"text":"g(x) = log₂(x + 3)"},{"at":[4.6,1.6],"text":"f(x) = log₂(x)"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b), shift right. The parent function f(x) = log base 2 of x with asymptote x = 0, alongside h(x) = log base 2 of (x - 2), shifted 2 units right, with asymptote x = 2. The asymptote moves to x = 2, the domain becomes (2, infinity), and the range stays (-infinity, infinity).","xMin":-2,"xMax":9,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"h":2}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":2,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[2,1],"label":"(2, 1)"},{"at":[3,0],"label":"(3, 0)"},{"at":[4,1],"label":"(4, 1)"}]}
+{"ariaLabel":"Panel (b), shift right. The parent function f(x) = log base 2 of x, with asymptote x = 0, passing through (1, 0) and (2, 1), alongside h(x) = log base 2 of (x - 3), shifted 3 units right, with asymptote x = 3, passing through (4, 0) and (5, 1). The asymptote moves to x = 3, the domain becomes (3, infinity), and the range stays (-infinity, infinity).","xMin":-1,"xMax":10,"yMin":-4,"yMax":4,"unit":26,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.08838834764831845,"to":9},{"kind":"log","b":2,"h":3,"from":3.0883883476483183,"to":10}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"},{"x":3,"dashed":true,"arrows":false,"label":"x = 3"}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[2,1],"label":"(2, 1)"},{"at":[4,0],"label":"(4, 0)"},{"at":[5,1],"label":"(5, 1)","labelSide":"n"}],"texts":[{"at":[5.5,3.6],"text":"f(x) = log₂(x)"},{"at":[6.0,-1.6],"text":"h(x) = log₂(x − 3)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -336,19 +339,21 @@ The domain is $(2,\infty)$, the range is $(-\infty,\infty)$, and the
 vertical asymptote is $x=2$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parent function y = log base 3 of x with asymptote x = 0, passing through (1/3, -1), (1, 0), and (3, 1), alongside its horizontal shift f(x) = log base 3 of (x - 2), shifted 2 units right, with asymptote x = 2, passing through (7/3, -1), (3, 0), and (5, 1).","xMin":-1,"xMax":9,"yMin":-4,"yMax":4,"unit":26,"tickLabels":true,"curves":[{"kind":"log","b":3},{"kind":"log","b":3,"h":2}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":2,"dashed":true,"arrows":false}],"points":[{"at":[0.333333,-1]},{"at":[1,0],"label":"(1, 0)"},{"at":[3,1],"label":"(3, 1)","labelSide":"n"},{"at":[2.333333,-1]},{"at":[3,0],"label":"(3, 0)","labelSide":"s","labelNudge":[8,2]},{"at":[5,1],"label":"(5, 1)"}]}
+{"ariaLabel":"The parent function y = log base 3 of x with asymptote x = 0, passing through (1/3, -1), (1, 0), and (3, 1), alongside its horizontal shift f(x) = log base 3 of (x - 2), shifted 2 units right, with asymptote x = 2, passing through (7/3, -1), (3, 0), and (5, 1).","xMin":-1,"xMax":9,"yMin":-4,"yMax":4,"unit":32,"tickLabels":"y","curves":[{"kind":"log","b":3,"from":0.021383343303319473,"to":9},{"kind":"log","b":3,"h":2,"from":2.0213833433033193,"to":8}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"}],"points":[{"at":[0.3333333333333333,-1],"label":"(⅓, −1)","labelSide":"e","labelNudge":[-6,4]},{"at":[1,0],"label":"(1, 0)","labelSide":"se","labelNudge":[-15,1]},{"at":[3,1],"label":"(3, 1)","labelSide":"n"},{"at":[2.3333333333333335,-1],"label":"(7/3, −1)","labelSide":"e"},{"at":[3,0],"label":"(3, 0)","labelSide":"se"},{"at":[5,1],"label":"(5, 1)","labelSide":"se"}],"texts":[{"at":[7.0,2.5],"text":"y = log₃(x)"},{"at":[5.6,-2.4],"text":"f(x) = log₃(x − 2)"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Sketch a graph of $f(x)=\log_3(x+4)$ alongside its parent function. What is the vertical asymptote?"
+  question="Sketch a graph of $f(x)=\log_3(x+4)$ alongside its parent function. What is the vertical asymptote? Enter its equation."
   answer="x=-4"
+  answerForm="solved:x decimal"
   answerDisplay="$x=-4$"
-  hint="For $f(x)=\log_b(x+c)$, the vertical asymptote is $x=-c$."
+  hint="The asymptote is the vertical line where the argument $x+4$ equals zero."
 >}}
 
 {{< fillin
   question="What is the domain of that same function, $f(x)=\log_3(x+4)$? Write your answer in interval notation."
   answer="(-4,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-4,\infty)$"
   hint="The domain begins immediately to the right of the vertical asymptote."
 >}}
@@ -360,14 +365,15 @@ result is a **vertical shift** $d$ units in the direction of the sign on
 $d$. To visualize vertical shifts, we can observe the general graph of the
 parent function $f(x)=\log_b(x)$ alongside the shift up,
 $g(x)=\log_b(x)+d$, and the shift down, $h(x)=\log_b(x)-d$. See the panels
-below, drawn with $b=2$ and $d=2$.
+below, drawn with $b=2$, and with $d=3$ for the shift up and $d=2$ for the
+shift down.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a), shift up. The parent function f(x) = log base 2 of x with asymptote x = 0, alongside g(x) = log base 2 of x, plus 2, shifted 2 units up. The asymptote stays x = 0; the domain and range are unchanged.","xMin":-1,"xMax":9,"yMin":-4,"yMax":4,"unit":24,"tickLabels":false,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"k":2}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[2,1],"label":"(2, 1)"},{"at":[0.25,0],"label":"(0.25, 0)","labelSide":"sw"},{"at":[0.5,1],"label":"(0.5, 1)","labelSide":"w"}]}
+{"ariaLabel":"Panel (a), shift up. The parent function f(x) = log base 2 of x, passing through (1, 0) and (2, 1), alongside g(x) = log base 2 of x, plus 3, shifted 3 units up, passing through (1/8, 0) and (1/4, 1). Both have asymptote x = 0; the domain and range are unchanged.","xMin":-1,"xMax":7,"yMin":-4,"yMax":6,"xUnit":44,"yUnit":28,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.32987697769322355,"to":7},{"kind":"log","b":2,"k":3,"from":0.010309311105826497,"to":6}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[2,1],"label":"(2, 1)","labelSide":"se"},{"at":[0.125,0]},{"at":[0.25,1]}],"texts":[{"at":[0,0],"dx":-6,"dy":-6,"anchor":"end","text":"(⅛, 0)"},{"at":[0,1],"dx":-6,"dy":5,"anchor":"end","text":"(¼, 1)"},{"at":[0.8,5.4],"text":"g(x) = log₂(x) + 3"},{"at":[4.0,1.55],"text":"f(x) = log₂(x)"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b), shift down. The parent function f(x) = log base 2 of x with asymptote x = 0, alongside h(x) = log base 2 of x, minus 2, shifted 2 units down. The asymptote stays x = 0; the domain and range are unchanged.","xMin":-1,"xMax":9,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"k":-2}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[2,1],"label":"(2, 1)"},{"at":[4,0],"label":"(4, 0)"},{"at":[8,1],"label":"(8, 1)"}]}
+{"ariaLabel":"Panel (b), shift down. The parent function f(x) = log base 2 of x, passing through (1, 0) and (2, 1), alongside h(x) = log base 2 of x, minus 2, shifted 2 units down, passing through (4, 0) and (8, 1). Both have asymptote x = 0; the domain and range are unchanged.","xMin":-1,"xMax":9,"yMin":-4,"yMax":4,"unit":30,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.08246924442330589,"to":9},{"kind":"log","b":2,"k":-2,"from":0.435275281648062,"to":9}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se","labelNudge":[-6,-1]},{"at":[2,1],"label":"(2, 1)","labelSide":"se"},{"at":[4,0],"label":"(4, 0)","labelSide":"se"},{"at":[8,1],"label":"(8, 1)","labelSide":"n"}],"texts":[{"at":[4.6,3.6],"text":"f(x) = log₂(x)"},{"at":[3.0,-2.3],"text":"h(x) = log₂(x) − 2"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -419,14 +425,14 @@ The domain is $(0,\infty)$, the range is $(-\infty,\infty)$, and the
 vertical asymptote is $x=0$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parent function y = log base 3 of x with asymptote x = 0, passing through (1/3, -1), (1, 0), and (3, 1), alongside its vertical shift f(x) = log base 3 of x, minus 2, shifted 2 units down. The shifted curve passes through (1/3, -3), (1, -2), and (3, -1).","xMin":-1,"xMax":5,"yMin":-4,"yMax":2,"unit":24,"tickLabels":true,"curves":[{"kind":"log","b":3},{"kind":"log","b":3,"k":-2}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[0.333333,-1]},{"at":[1,0],"label":"(1, 0)"},{"at":[3,1],"label":"(3, 1)"},{"at":[0.333333,-3],"label":"(1/3, -3)"},{"at":[1,-2],"label":"(1, -2)"},{"at":[3,-1],"label":"(3, -1)"}]}
+{"ariaLabel":"The parent function y = log base 3 of x with asymptote x = 0, passing through (1/3, -1), (1, 0), and (3, 1), alongside its vertical shift f(x) = log base 3 of x, minus 2, shifted 2 units down. The shifted curve passes through (1/3, -3), (1, -2), and (3, -1).","xMin":-2,"xMax":9,"yMin":-5,"yMax":3,"unit":28,"tickLabels":false,"curves":[{"kind":"log","b":3,"from":0.06415002990995841,"to":9},{"kind":"log","b":3,"k":-2,"from":0.05737037881701282,"to":6}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[0.3333333333333333,-1]},{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[3,1],"label":"(3, 1)","labelSide":"nw"},{"at":[0.3333333333333333,-3]},{"at":[1,-2],"label":"(1, −2)","labelSide":"se"},{"at":[3,-1],"label":"(3, −1)","labelSide":"se"}],"texts":[{"at":[0,-1],"dx":-6,"dy":5,"anchor":"end","text":"(⅓, −1)"},{"at":[0,-3],"dx":-6,"dy":5,"anchor":"end","text":"(⅓, −3)"},{"at":[6.6,2.3],"text":"y = log₃(x)"},{"at":[4.6,-2.6],"text":"f(x) = log₃(x) − 2"}]}
 {{< /apfigure >}}
 
 {{< graphplot
   question="Sketch a graph of $f(x)=\log_2(x)+2$ by plotting the points with $x=\tfrac{1}{2}$, $1$, $2$, $4$, and $8$."
   answerDisplay="The points $\left(\tfrac{1}{2},1\right)$, $(1,2)$, $(2,3)$, $(4,4)$, and $(8,5)$"
   ariaLabel="A blank coordinate grid running from −2 to 9 horizontally and from −1 to 7 vertically."
-  hint="Shift the key points of $y=\log_2(x)$ up 2 units: $\log_2\tfrac{1}{2}=-1$, so $f\left(\tfrac{1}{2}\right)=-1+2=1$."
+  hint="Evaluate $\log_2(x)$ at each input, then shift every output up 2 units."
   snap="0.5"
 >}}
 {"answer": {"points": [[0.5, 1], [1, 2], [2, 3], [4, 4], [8, 5]]}, "grid": {"xMin": -2, "xMax": 9, "yMin": -1, "yMax": 7}}
@@ -435,6 +441,7 @@ vertical asymptote is $x=0$.
 {{< fillin
   question="What is the domain of $f(x)=\log_2(x)+2$? Write your answer in interval notation."
   answer="(0,\infty)"
+  answerForm="decimal"
   answerDisplay="$(0,\infty)$"
   hint="A vertical shift moves the graph up or down but never changes which inputs are allowed."
 >}}
@@ -450,16 +457,16 @@ compression, $h(x)=\tfrac{1}{a}\log_b(x)$. See the panels below, drawn
 with $b=2$ and $a=2$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a), vertical stretch. The parent function f(x) = log base 2 of x, alongside g(x) = 2 log base 2 of x, stretched vertically by a factor of 2. The asymptote stays x = 0, the x-intercept stays (1, 0), and the domain and range are unchanged.","xMin":-1,"xMax":7,"yMin":-4,"yMax":4,"unit":24,"tickLabels":false,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"a":2}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[2,1],"label":"(2, 1)"},{"at":[1.414,1],"label":"(√2, 1)"}]}
+{"ariaLabel":"Panel (a), vertical stretch. The parent function f(x) = log base 2 of x, passing through (1, 0) and (2, 1), alongside g(x) = 2 log base 2 of x, stretched vertically by a factor of 2, passing through (1, 0) and (square root of 2, 1). The asymptote stays x = 0, the x-intercept stays (1, 0), and the domain and range are unchanged.","xMin":-1,"xMax":5,"yMin":-3,"yMax":3,"unit":44,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.16493848884661177},{"kind":"log","b":2,"a":2,"from":0.42044820762685725}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[2,1],"label":"(2, 1)","labelSide":"se"},{"at":[1.414,1],"label":"(√2, 1)","labelSide":"w"}],"texts":[{"at":[3.0,2.6],"text":"g(x) = 2log₂(x)"},{"at":[3.3,1.3],"text":"f(x) = log₂(x)"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b), vertical compression. The parent function f(x) = log base 2 of x, alongside h(x) = one-half log base 2 of x, compressed vertically by a factor of 2. The asymptote stays x = 0, the x-intercept stays (1, 0), and the domain and range are unchanged.","xMin":-1,"xMax":9,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"a":0.5}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[2,1],"label":"(2, 1)"},{"at":[4,1],"label":"(4, 1)"}]}
+{"ariaLabel":"Panel (b), vertical compression. The parent function f(x) = log base 2 of x, passing through (1, 0) and (2, 1), alongside h(x) = one-half log base 2 of x, compressed vertically by a factor of 2, passing through (1, 0) and (4, 1). The asymptote stays x = 0, the x-intercept stays (1, 0), and the domain and range are unchanged.","xMin":-1,"xMax":7,"yMin":-4,"yMax":3,"xUnit":40,"yUnit":28,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.4665164957684037,"to":7},{"kind":"log","b":2,"a":0.5,"from":0.006801176155978966,"to":7}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[2,1],"label":"(2, 1)","labelSide":"nw"},{"at":[4,1],"label":"(4, 1)","labelSide":"n"}],"texts":[{"at":[3.6,2.65],"text":"f(x) = log₂(x)"},{"at":[4.3,0.4],"text":"h(x) = ½log₂(x)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
   **Vertical stretches and compressions of the parent function
-  $y=\log_b(x)$.** For any constant $a>1$, the function $f(x)=a\log_b(x)$
+  $y=\log_b(x)$.** For any constant $a>0$, the function $f(x)=a\log_b(x)$
 
   - stretches the parent function $y=\log_b(x)$ vertically by a factor of
     $a$ if $a>1$.
@@ -511,14 +518,15 @@ The domain is $(0,\infty)$, the range is $(-\infty,\infty)$, and the
 vertical asymptote is $x=0$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parent function y = log base 4 of x, alongside its vertical stretch f(x) = 2 log base 4 of x. The stretched curve passes through (1/4, -2), (1, 0), and (4, 2).","xMin":-1,"xMax":6,"yMin":-3,"yMax":3,"tickLabels":true,"curves":[{"kind":"log","b":4},{"kind":"log","b":4,"a":2}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[0.25,-1],"label":"(1/4, -1)"},{"at":[1,0],"label":"(1, 0)"},{"at":[4,1],"label":"(4, 1)"},{"at":[0.25,-2],"label":"(1/4, -2)"},{"at":[4,2],"label":"(4, 2)"}]}
+{"ariaLabel":"The parent function y = log base 4 of x, passing through (1/4, -1), (1, 0), and (4, 1), alongside its vertical stretch f(x) = 2 log base 4 of x, which passes through (1/4, -2), (1, 0), and (4, 2). Both have asymptote x = 0.","xMin":-1,"xMax":7,"yMin":-4,"yMax":3,"unit":36,"tickLabels":false,"curves":[{"kind":"log","b":4,"from":0.10881882041201557,"to":7},{"kind":"log","b":4,"a":2,"from":0.08246924442330589,"to":7}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[0.25,-1]},{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[4,1],"label":"(4, 1)","labelSide":"s"},{"at":[0.25,-2],"label":"(¼, −2)","labelSide":"e"},{"at":[4,2],"label":"(4, 2)","labelSide":"nw"}],"texts":[{"at":[0,-1],"dx":-6,"dy":5,"anchor":"end","text":"(¼, −1)"},{"at":[4.9,1.68],"text":"f(x) = 2log₄(x)"},{"at":[5.0,0.5],"text":"y = log₄(x)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Sketch a graph of $f(x)=\tfrac{1}{2}\log_4(x)$ alongside its parent function. Besides the x-intercept, the parent function has key point $(4,1)$. What is the corresponding key point on the graph of $f$? Enter your answer as an ordered pair."
-  answer="(4,1/2)"
+  answer="(4,\frac{1}{2})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(4,\tfrac12\right)$"
-  hint="A vertical compression by $\tfrac12$ multiplies every $y$-coordinate of the parent function by $\tfrac12$."
+  hint="Keep the input $4$ and evaluate $f(4)$."
 >}}
 
 **Example.** Sketch a graph of $f(x)=5\log(x+2)$. State the domain, range,
@@ -533,15 +541,16 @@ $(-1,0)$ and $(8,5)$. We chose $x=8$ as the $x$-coordinate of one point to
 graph because when $x=8$, $x+2=10$, the base of the common logarithm.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three curves: the common-log parent y = log(x); its horizontal shift y = log(x + 2), 2 units left; and the combined transformation f(x) = 5 log(x + 2), stretched vertically by 5. The shifted curves share vertical asymptote x = -2. The stretched curve passes through (-1, 0) and (8, 5).","xMin":-3,"xMax":9,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"log","b":10},{"kind":"log","b":10,"h":-2},{"kind":"log","b":10,"h":-2,"a":5}],"lines":[{"x":-2,"dashed":true,"arrows":false}],"points":[{"at":[-1,0],"label":"(-1, 0)"},{"at":[8,5],"label":"(8, 5)"}],"texts":[{"at":[1.8,4.7],"text":"y = 5log(x + 2)"},{"at":[3,1.3],"text":"y = log(x + 2)"},{"at":[5.5,-2],"text":"y = log(x)"}]}
+{"ariaLabel":"Three curves: the common-log parent y = log(x); its horizontal shift y = log(x + 2), 2 units left; and the combined transformation f(x) = 5 log(x + 2), stretched vertically by 5. The shifted curves share vertical asymptote x = -2. The stretched curve passes through (-1, 0) and (8, 5).","xMin":-3,"xMax":10,"yMin":-5,"yMax":6,"xUnit":22,"yUnit":28,"tickLabels":true,"curves":[{"kind":"log","b":10,"from":0.0001,"to":2.3},{"kind":"log","b":10,"h":-2,"from":-1.9999748811356064,"to":9.5},{"kind":"log","b":10,"h":-2,"a":5,"from":-1.6369174663175163,"to":9.5}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"}],"points":[{"at":[-1,0]},{"at":[8,5],"label":"(8, 5)"}],"texts":[{"at":[1.8,4.7],"text":"y = 5log(x + 2)"},{"at":[3,1.4],"text":"y = log(x + 2)"},{"at":[0.6,-1.7],"text":"y = log(x)"}]}
 {{< /apfigure >}}
 
 The domain is $(-2,\infty)$, the range is $(-\infty,\infty)$, and the
 vertical asymptote is $x=-2$.
 
 {{< fillin
-  question="Sketch a graph of the function $f(x)=3\log(x-2)+1$. What is the vertical asymptote?"
+  question="Sketch a graph of the function $f(x)=3\log(x-2)+1$. What is the vertical asymptote? Enter its equation."
   answer="x=2"
+  answerForm="solved:x decimal"
   answerDisplay="$x=2$"
   hint="The horizontal shift alone determines the asymptote; the stretch and vertical shift do not move it."
 >}}
@@ -549,6 +558,7 @@ vertical asymptote is $x=-2$.
 {{< fillin
   question="What is the domain of that same function, $f(x)=3\log(x-2)+1$? Write your answer in interval notation."
   answer="(2,\infty)"
+  answerForm="decimal"
   answerDisplay="$(2,\infty)$"
   hint="The domain begins immediately to the right of the vertical asymptote."
 >}}
@@ -564,11 +574,11 @@ $x$-axis, $g(x)=-\log_b(x)$, and the reflection about the $y$-axis,
 $h(x)=\log_b(-x)$. Both are drawn below with $b=2$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a), reflection about the x-axis. The parent function f(x) = log base 2 of x, alongside g(x) = negative log base 2 of x. Both share the x-intercept (1, 0) and asymptote x = 0; the reflected curve is decreasing.","xMin":-1,"xMax":5,"yMin":-3,"yMax":3,"unit":24,"tickLabels":false,"curves":[{"kind":"log","b":2},{"kind":"log","b":2,"a":-1}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0]},{"at":[2,1],"label":"(2, 1)"},{"at":[0.5,1],"label":"(1/2, 1)","labelSide":"w"}]}
+{"ariaLabel":"Panel (a), reflection about the x-axis. The parent function f(x) = log base 2 of x, passing through (1, 0) and (2, 1), alongside g(x) = negative log base 2 of x, passing through (1, 0) and (1/2, 1). Both share the x-intercept (1, 0) and asymptote x = 0; the reflected curve is decreasing.","xMin":-1,"xMax":7,"yMin":-3,"yMax":3,"unit":32,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.16493848884661177},{"kind":"log","b":2,"a":-1,"from":0.16493848884661177}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0]},{"at":[2,1],"label":"(2, 1)"},{"at":[0.5,1],"label":"(½, 1)","labelSide":"ne"}],"texts":[{"at":[1.3,-1.4],"anchor":"middle","text":"(1, 0)"},{"at":[2.3,2.75],"text":"f(x) = log₂(x)"},{"at":[2.3,-2.75],"text":"g(x) = −log₂(x)"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel": "Panel (b), reflection about the y-axis. The parent function f(x) = log base 2 of x for x greater than 0, alongside h(x) = log base 2 of negative x for x less than 0. The reflected curve has x-intercept (-1, 0) and the same asymptote x = 0; it is decreasing as x runs from negative infinity to zero.", "xMin": -9, "xMax": 9, "yMin": -4, "yMax": 4, "tickLabels": false, "curves": [{"kind": "log", "b": 2}, {"kind": "log", "b": 2, "reflect": true}], "lines": [{"x": 0, "dashed": true, "arrows": false}], "points": [{"at": [1, 0], "label": "(1, 0)"}, {"at": [2, 1], "label": "(2, 1)"}, {"at": [-1, 0]}, {"at": [-2, 1], "label": "(-2, 1)"}]}
+{"ariaLabel":"Panel (b), reflection about the y-axis. The parent function f(x) = log base 2 of x for x greater than 0, passing through (1, 0) and (2, 1), alongside h(x) = log base 2 of negative x for x less than 0, passing through (-1, 0) and (-2, 1). The reflected curve has x-intercept (-1, 0) and the same asymptote x = 0; it is decreasing as x runs from negative infinity to zero.","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":24,"tickLabels":false,"curves":[{"kind":"log","b":2,"from":0.08246924442330589},{"kind":"log","b":2,"reflect":true,"to":-0.1435872943746294}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[2,1],"label":"(2, 1)","labelSide":"se","labelNudge":[0,-5]},{"at":[-1,0],"label":"(−1, 0)","labelSide":"sw"},{"at":[-2,1],"label":"(−2, 1)","labelSide":"sw","labelNudge":[0,-5]}],"texts":[{"at":[2.2,3.3],"text":"f(x) = log₂(x)"},{"at":[-5.8,3.3],"text":"h(x) = log₂(−x)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -630,7 +640,7 @@ key points for the graph.
   smooth curve through the points.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel": "The common-log parent function y = log(x) for x greater than 0, with points (1, 0) and (10, 1), alongside its reflection f(x) = log(negative x) for x less than 0, with points (-1, 0) and (-10, 1). Both share the vertical asymptote x = 0.", "xMin": -13, "xMax": 13, "yMin": -2, "yMax": 2, "tickLabels": true, "xTickStep": 2, "curves": [{"kind": "log", "b": 10}, {"kind": "log", "b": 10, "reflect": true}], "lines": [{"x": 0, "dashed": true, "arrows": false}], "points": [{"at": [1, 0], "label": "(1, 0)"}, {"at": [10, 1], "label": "(10, 1)"}, {"at": [-1, 0], "label": "(-1, 0)"}, {"at": [-10, 1], "label": "(-10, 1)"}]}
+{"ariaLabel":"The common-log parent function y = log(x) for x greater than 0, with points (1, 0) and (10, 1), alongside its reflection f(x) = log(negative x) for x less than 0, with points (-1, 0) and (-10, 1). Both share the vertical asymptote x = 0.","xMin":-13,"xMax":13,"yMin":-3,"yMax":2,"tickLabels":false,"xTickStep":4,"curves":[{"kind":"log","b":10,"from":0.0025118864315095794},{"kind":"log","b":10,"reflect":true,"to":-0.01}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0],"label":"(1, 0)","labelSide":"se"},{"at":[10,1],"label":"(10, 1)","labelSide":"s"},{"at":[-1,0],"label":"(−1, 0)","labelSide":"sw"},{"at":[-10,1],"label":"(−10, 1)","labelSide":"s"}],"texts":[{"at":[5,1.45],"anchor":"middle","text":"y = log(x)"},{"at":[-5,1.45],"anchor":"middle","text":"f(x) = log(−x)"}],"xUnit":22,"yUnit":44}
 {{< /apfigure >}}
 
 The domain is $(-\infty,0)$, the range is $(-\infty,\infty)$, and the
@@ -639,8 +649,9 @@ vertical asymptote is $x=0$.
 {{< fillin
   question="Graph $f(x)=-\log(-x)$. What is the domain? Write your answer in interval notation."
   answer="(-\infty,0)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,0)$"
-  hint="The input is multiplied by $-1$, so only negative inputs keep the argument $-x$ positive."
+  hint="Set the argument $-x$ greater than zero and solve, switching the inequality when you divide by a negative."
 >}}
 
 {{< callout type="info" >}}
@@ -704,7 +715,7 @@ general equation for translating logarithmic functions.
 
   - shifted vertically up $d$ units.
   - shifted horizontally to the left $c$ units.
-  - stretched vertically by a factor of $|a|$ if $|a|>0$.
+  - stretched vertically by a factor of $|a|$ if $|a|>1$.
   - compressed vertically by a factor of $|a|$ if $0<|a|<1$.
   - reflected about the $x$-axis when $a<0$.
 
@@ -721,8 +732,9 @@ affect the asymptote. The shift of the curve 4 units to the left shifts
 the vertical asymptote to $x=-4$.
 
 {{< fillin
-  question="What is the vertical asymptote of $f(x)=3+\ln(x-1)$?"
+  question="What is the vertical asymptote of $f(x)=3+\ln(x-1)$? Enter its equation."
   answer="x=1"
+  answerForm="solved:x decimal"
   answerDisplay="$x=1$"
   hint="Only the horizontal shift — the number added to or subtracted from $x$ inside the logarithm — moves the asymptote."
 >}}
@@ -731,7 +743,7 @@ the vertical asymptote to $x=-4$.
 graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A common-logarithm function graphed with vertical asymptote x = -2, decreasing, passing through (-1, 1) and (2, -1).","xMin":-4,"xMax":8,"yMin":-3,"yMax":5,"tickLabels":true,"curves":[{"kind":"log","b":10,"a":-3.321928,"h":-2,"k":1}],"lines":[{"x":-2,"dashed":true,"arrows":false}],"points":[{"at":[-1,1],"label":"(-1, 1)"},{"at":[2,-1],"label":"(2, -1)"}]}
+{"ariaLabel":"A common-logarithm function graphed with vertical asymptote x = -2, decreasing, passing through the marked points (-1, 1) and (2, -1).","xMin":-4,"xMax":8,"yMin":-3,"yMax":5,"tickLabels":true,"curves":[{"kind":"log","b":10,"a":-3.321928,"h":-2,"k":1,"from":-1.9175307614548096}],"lines":[{"x":-2,"dashed":true,"arrows":false}],"points":[{"at":[-1,1]},{"at":[2,-1]}]}
 {{< /apfigure >}}
 
 **Solution.** This graph has a vertical asymptote at $x=-2$ and has been
@@ -773,12 +785,13 @@ the table below with the points on the graph above.
 {{< fillin
   question="Give the equation of the natural logarithm graphed below."
   answer="2\ln(x+3)-1"
+  answerForm="expanded-logarithms"
   answerDisplay="$f(x)=2\ln(x+3)-1$"
   hint="Read the vertical asymptote to find the horizontal shift, then use a labeled point to solve for the vertical stretch."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A natural-logarithm function graphed with vertical asymptote x = -3, increasing, stretched vertically by a factor of 2 and shifted down 1 unit.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"log","b":2.718281828459045,"a":2,"h":-3,"k":-1}],"lines":[{"x":-3,"dashed":true,"arrows":false}]}
+{"ariaLabel":"A natural-logarithm curve with vertical asymptote x = -3, increasing, passing through the marked point (-2, -1) and the labeled point (e squared minus 3, 3).","xMin":-5,"xMax":6,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"log","b":2.718281828459045,"a":2,"h":-3,"k":-1,"from":-2.8347011117784136,"to":5.8}],"lines":[{"x":-3,"dashed":true,"arrows":false}],"points":[{"at":[-2,-1]},{"at":[4.3890560989306495,3],"label":"(e² − 3, 3)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -845,21 +858,24 @@ the table below with the points on the graph above.
 
 {{< fillin
   question="Find the domain of $h(x)=\ln\left(\tfrac{1}{2}-x\right)$. Write your answer in interval notation."
-  answer="(-\infty,1/2)"
+  answer="(-\infty,\frac{1}{2})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(-\infty,\tfrac12\right)$"
   hint="Set the argument $\tfrac12-x$ greater than zero and solve for $x$."
 >}}
 
 {{< fillin
-  question="Find the vertical asymptote of $f(x)=\log(3x+1)$."
-  answer="x=-1/3"
+  question="Find the vertical asymptote of $f(x)=\log(3x+1)$. Enter its equation."
+  answer="x=-\frac{1}{3}"
+  answerForm="solved:x lowest-terms"
   answerDisplay="$x=-\tfrac13$"
   hint="The vertical asymptote occurs where the argument $3x+1$ equals zero."
 >}}
 
 {{< fillin
   question="Find the domain of $h(x)=\ln(4x+17)-5$. Write your answer in interval notation."
-  answer="(-17/4,\infty)"
+  answer="(-\frac{17}{4},\infty)"
+  answerForm="lowest-terms"
   answerDisplay="$\left(-\tfrac{17}{4},\infty\right)$"
   hint="Set the argument $4x+17$ greater than zero and solve for $x$."
 >}}
@@ -870,7 +886,7 @@ The five curves below all share the point $(1,0)$ and are labeled A through
 E.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Five logarithmic curves sharing the point (1, 0), labeled A through E from steepest to flattest at the right edge.","xMin":-0.4,"xMax":4,"yMin":-2,"yMax":2.2,"unit":78,"tickLabels":true,"curves":[{"kind":"log","b":2},{"kind":"log","b":2.718281828459045},{"kind":"log","b":5},{"kind":"log","b":10},{"kind":"log","b":25}],"texts":[{"at":[4.12,2.0],"text":"A"},{"at":[4.12,1.39],"text":"B"},{"at":[4.12,0.86],"text":"C"},{"at":[4.12,0.60],"text":"D"},{"at":[4.12,0.43],"text":"E"}]}
+{"ariaLabel":"Five logarithmic curves sharing the point (1, 0), labeled A through E from steepest to flattest at the right edge.","xMin":-0.5,"xMax":3,"yMin":-2,"yMax":1.8,"xUnit":104,"yUnit":100,"xGridStep":0.5,"xTickStep":1,"yTickStep":1,"tickLabels":true,"curves":[{"kind":"log","b":2,"from":0.2773923680169612},{"kind":"log","b":2.718281828459045,"from":0.2725317930340126},{"kind":"log","b":5,"from":0.2},{"kind":"log","b":10,"from":0.1778279410038923},{"kind":"log","b":25,"from":0.3039220407997257}],"texts":[{"at":[3,1.585],"dx":8,"dy":5,"text":"A"},{"at":[3,1.099],"dx":8,"dy":5,"text":"B"},{"at":[3,0.683],"dx":8,"dy":5,"text":"C"},{"at":[3,0.477],"dx":8,"dy":5,"text":"D"},{"at":[3,0.341],"dx":8,"dy":5,"text":"E"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
@@ -905,9 +921,9 @@ E
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel": "A logarithmic function graphed with vertical asymptote x = 1, decreasing, passing through (0, 0) and approaching (-5, 2.6) at its upper-left arrow.", "xMin": -5, "xMax": 3, "yMin": -5, "yMax": 4, "tickLabels": true, "lines": [{"x": 1, "dashed": true, "arrows": false}], "points": [{"at": [0, 0], "label": "(0, 0)"}], "curves": [{"kind": "log", "b": 2, "h": 1, "reflect": true, "arrows": "end"}]}
+{"ariaLabel":"A logarithmic function graphed with vertical asymptote x = 1, decreasing, passing through (-3, 2), (-1, 1), and the marked point (0, 0), with arrows at both ends.","xMin":-5,"xMax":3,"yMin":-5,"yMax":4,"tickLabels":true,"lines":[{"x":1,"dashed":true,"arrows":false}],"points":[{"at":[0,0]}],"curves":[{"kind":"log","b":2,"h":1,"reflect":true,"from":-5,"to":0.9,"arrows":true}]}
 {{< /apfigure >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 4.4: Graphs of Logarithmic Functions](https://openstax.org/books/precalculus-2e/pages/4-4-graphs-of-logarithmic-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible spec-first SVG built from its exact equation — the investment logarithmic model $t=20\ln(A)-20\ln(2{,}500)$ with its labeled "balance reaches \$5{,}000 near year 14" point; the $f(x)=2^x$/$g(x)=\log_2(x)$ reflection pair about $y=x$; the two-panel parent-function characteristics schematic; the three-curve base-comparison graph $\log_2(x)$, $\ln(x)$, and $\log(x)$; the $f(x)=\log_5(x)$ worked example; the two-panel horizontal-shift, vertical-shift, stretch/compression, and reflection schematics (recreated with concrete representative values $b=2$ and $c=2$, $d=2$, or $a=2$ in place of the source's symbolic point labels, since the figure engine draws real analytic curves rather than schematic ones); the horizontal-shift, vertical-shift, stretch, and combined shift-and-stretch worked examples; the reflection-about-the-$y$-axis panel and the $f(x)=\log(-x)$ worked example, both of which need $x<h$ on their reflected branch — outside the analytic log primitive's domain — and so are rendered as a dense reflected `log` curve primitive (added to `graph-core.mjs` in this pass, which previously could only open rightward from a vertical asymptote); the vertical-asymptote and equation-from-a-graph worked examples; and the five-curve base-comparison figure and the equation-from-a-graph item used in the closing Practice block. Converted the two-column "graph a reflection" How To table into two separate How To callouts, one per reflection axis, matching this book's callout convention. Presented the four data tables (the $2^x$/$\log_2(y)$ correspondence, the $f$/$g$ ordered-pair correspondence, and the two-part function-value check table, the latter combined into a single ten-column table since its source split was only print pagination) as Markdown tables. Omitted the "Access these online resources" media links. Omitted the corequisite-skills "Objective 1"/"Objective 2" review appendix that precedes this section's actual content in the pinned CNXML module, since it does not appear in the printed textbook (confirmed against the source PDF) and duplicates material this section itself develops. Converted the ten retained "Try It" checks into interactive fill-ins with instant feedback, several split into a domain question and a vertical-asymptote or key-point question when the original asked for multiple facts at once; every exponential and logarithmic curve in this section is graded through a static figure plus a fill-in or multiple-choice question, except the vertical-shift Try It $f(x)=\log_2(x)+2$, which is additionally graded as a plot-the-points graph exercise at five named inputs ($x=\tfrac{1}{2}$ through $8$, whose outputs land on a half-unit grid) — the plotted points are graded, never the curve through them. And adapted five selected end-of-section exercises — two domain evaluations, one vertical-asymptote evaluation, a graph-matching pair converted to graph-mode multiple choice, and one equation-from-a-graph item — into interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 4.4: Graphs of Logarithmic Functions](https://openstax.org/books/precalculus-2e/pages/4-4-graphs-of-logarithmic-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible spec-first SVG built from its exact equation — the investment logarithmic model $t=20\ln(A)-20\ln(2{,}500)$ with its labeled "balance reaches \$5{,}000 near year 14" point; the $f(x)=2^x$/$g(x)=\log_2(x)$ reflection pair about $y=x$; the two-panel parent-function characteristics schematic; the three-curve base-comparison graph $\log_2(x)$, $\ln(x)$, and $\log(x)$; the $f(x)=\log_5(x)$ worked example; the two-panel horizontal-shift, vertical-shift, stretch/compression, and reflection schematics (drawn with concrete representative values $b=2$ and $c=3$, $d=3$ (shift up) or $d=2$ (shift down), or $a=2$ in place of the source's symbolic point labels, each curve named beside it, and without tick numbers, as in the source panels); the horizontal-shift, vertical-shift, stretch, combined shift-and-stretch, and $f(x)=\log(-x)$ worked examples (the horizontal-shift example numbers only the $y$-axis, and the vertical-shift, stretch, and $f(x)=\log(-x)$ examples neither axis, so their point labels stay legible); the vertical-asymptote and equation-from-a-graph worked examples; and the five-curve base-comparison figure and the equation-from-a-graph item used in the closing Practice block. Every curve that runs off toward an asymptote ends its arrow short of the axes' arrowheads and of the other curves' arrows. The vertical-asymptote, equation-from-a-graph, and Practice equation-from-a-graph figures draw their asymptote as a dashed line, which the source art omits, and three worked-example graphs mark the extra points their solution text computes. The natural-logarithm Try It's graph, which the source prints with no labeled points, marks two points on the curve, the grid point $(-2,-1)$ and the labeled point $(e^2-3,3)$, so the stretch and shift can be solved for exactly rather than estimated from the grid. Corrected four source slips, each a reader-visible change: the stretch-and-compression callout's opening condition reads "for any constant $a>0$" (the source's "$a>1$" contradicts its own "$0<a<1$" bullet); the transformations callout's stretch bullet reads "if $\lvert a\rvert>1$" (the source prints "$\lvert a\rvert>0$", which would make every compression a stretch); the summary paragraph arrives at the general equation for translating *logarithmic* functions (the source says exponential); and the "graph a reflection about the $y$-axis" How To plots the $x$-intercept $(-1,0)$ (the source table's second column repeats $(1,0)$, which is not on the graph of $\log_b(-x)$). Converted the two-column "graph a reflection" How To table into two separate How To callouts, one per reflection axis, matching this book's callout convention. Presented the four data tables (the $2^x$/$\log_2(y)$ correspondence, the $f$/$g$ ordered-pair correspondence, and the two-part function-value check table, the latter combined into a single ten-column table since its source split was only print pagination) as Markdown tables. Omitted the "Access these online resources" media links. Omitted the corequisite-skills "Objective 1"/"Objective 2" review appendix that precedes this section's actual content in the pinned CNXML module, since it does not appear in the printed textbook (confirmed against the source PDF) and duplicates material this section itself develops. Converted all eleven "Try It" checks into interactive fill-ins with instant feedback, several split into a domain question and a vertical-asymptote or key-point question when the original asked for multiple facts at once (the vertical-asymptote questions ask for the asymptote's equation); every exponential and logarithmic curve in this section is graded through a static figure plus a fill-in or multiple-choice question, except the vertical-shift Try It $f(x)=\log_2(x)+2$, which is additionally graded as a plot-the-points graph exercise at five named inputs ($x=\tfrac{1}{2}$ through $8$, whose outputs land on a half-unit grid) — the plotted points are graded, never the curve through them. And adapted six selected end-of-section exercises — two domain evaluations, one vertical-asymptote evaluation (the source also asks for the domain), a graph-matching pair posed as multiple choice against the labeled five-curve figure, and one equation-from-a-graph item — into interactive components in a closing Practice block, one group per objective.</small>

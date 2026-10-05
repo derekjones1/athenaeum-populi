@@ -110,7 +110,7 @@ Let us examine the graph of $f$ by plotting the ordered pairs we observe on
 the table, and then make a few observations.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 2 to the x, an increasing curve through the plotted points (-3, 1/8), (-2, 1/4), (-1, 1/2), (0, 1), (1, 2), (2, 4), and (3, 8), with a dashed horizontal asymptote at y = 0.","xMin":-6,"xMax":5,"yMin":-3,"yMax":9,"unit":28,"tickLabels":true,"curves":[{"kind":"exp","a":1,"b":2}],"lines":[{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[-3,0.125],"label":"(-3, 1/8)"},{"at":[-2,0.25],"label":"(-2, 1/4)"},{"at":[-1,0.5],"label":"(-1, 1/2)","labelNudge":[0,-6]},{"at":[0,1],"label":"(0, 1)"},{"at":[1,2],"label":"(1, 2)"},{"at":[2,4],"label":"(2, 4)"},{"at":[3,8],"label":"(3, 8)"}],"texts":[{"at":[3.3,8.7],"text":"f(x) = 2ˣ","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals 2 to the x, an increasing curve through the plotted points (-3, 1/8), (-2, 1/4), (-1, 1/2), (0, 1), (1, 2), (2, 4), and (3, 8), with a dashed horizontal asymptote at y = 0.","xMin":-6,"xMax":5,"yMin":-3,"yMax":9,"unit":28,"tickLabels":true,"yTickStep":2,"curves":[{"kind":"exp","a":1,"b":2,"from":-4.5}],"lines":[{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[-3,0.125],"label":"(-3, 1/8)"},{"at":[-2,0.25],"label":"(-2, 1/4)"},{"at":[-1,0.5],"label":"(-1, 1/2)","labelNudge":[0,-6]},{"at":[0,1],"label":"(0, 1)","labelSide":"e"},{"at":[1,2],"label":"(1, 2)","labelSide":"e"},{"at":[2,4],"label":"(2, 4)"},{"at":[3,8],"label":"(3, 8)"}],"texts":[{"at":[2.5,8.6],"text":"f(x) = 2ˣ","anchor":"end"}]}
 {{< /apfigure >}}
 
 Let's define the behavior of the graph of the exponential function $f(x)=2^x$
@@ -161,20 +161,20 @@ function because the base, $-2$, is less than $0$.
 
 {{< multiplechoice
   question="Which of these functions represents an exponential function: $f(x)=2x^2-3x+1$ or $g(x)=0.875^x$?"
-  answer="g(x)=0.875^x"
-  hint="An exponential function has a constant base and a variable exponent; $f$ has the variable in the base instead."
+  answer="$g(x)=0.875^x$"
+  hint="Look for a positive constant base other than $1$ raised to a power that contains the variable."
 >}}
-f(x)=2x^2-3x+1
-g(x)=0.875^x
+$f(x)=2x^2-3x+1$
+$g(x)=0.875^x$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Which of these functions represents an exponential function: $h(x)=1.75x+2$ or $j(x)=1095.6^{-2x}$?"
-  answer="j(x)=1095.6^{-2x}"
-  hint="An exponential function has a positive constant base other than $1$ raised to a variable exponent; $h$ has the variable in the base of a linear term instead."
+  answer="$j(x)=1095.6^{-2x}$"
+  hint="Look for a positive constant base other than $1$ raised to a power that contains the variable."
 >}}
-h(x)=1.75x+2
-j(x)=1095.6^{-2x}
+$h(x)=1.75x+2$
+$j(x)=1095.6^{-2x}$
 {{< /multiplechoice >}}
 
 ## Evaluating exponential functions
@@ -247,7 +247,7 @@ $$
   answer="5.5556"
   answerForm="decimal"
   answerDisplay="$5.5556$"
-  hint="Substitute $x=3$, so $f(3)=8(1.2)^{-2}$."
+  hint="Substitute $x=3$ and follow the order of operations: work out the exponent, then the power, then multiply."
 >}}
 
 ## Defining exponential growth
@@ -296,7 +296,7 @@ period are shown below. We can see that, with exponential growth, the number
 of stores increases much more rapidly than with linear growth.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A line for Company A, A of x equals 100 plus 50x, and a steeper curve for Company B, B of x equals 100 times 1.5 to the x, both starting at (0, 100) and increasing over 5 years; the exponential curve overtakes the line after year 1.","xMin":0,"xMax":5,"yMin":0,"yMax":500,"xUnit":60,"yUnit":0.6,"margin":40,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":25,"xLabel":"Years","yLabel":"Number of Stores","lines":[{"slope":50,"intercept":100,"label":"A(x) = 100 + 50x"}],"curves":[{"kind":"exp","a":100,"b":1.5}],"texts":[{"at":[0.6,470],"text":"B(x) = 100(1.5)ˣ"}]}
+{"ariaLabel":"A line for Company A, A of x equals 100 plus 50x, and a steeper curve for Company B, B of x equals 100 times 1.5 to the x, both starting at (0, 100) and increasing over 5 years; the exponential curve overtakes the line after year 1.","xMin":0,"xMax":5,"yMin":0,"yMax":500,"xUnit":60,"yUnit":0.6,"margin":40,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":25,"xLabel":"Years","yLabel":"Number of Stores","segments":[{"from":[0,100],"to":[5,350],"arrows":"end"}],"curves":[{"kind":"exp","a":100,"b":1.5,"from":0,"arrows":"end"}],"texts":[{"at":[0.4,340],"text":"B(x) = 100(1.5)ˣ","anchor":"start"},{"at":[3.1,215],"text":"A(x) = 100 + 50x","anchor":"start"}]}
 {{< /apfigure >}}
 
 Notice that the domain for both functions is $[0,\infty)$, and the range for
@@ -325,19 +325,19 @@ $$P(18)=1.25(1.012)^{18}\approx1.549$$
 There will be about 1.549 billion people in India in the year 2031.
 
 {{< fillin
-  question="The population of China was about $1.39$ billion in the year 2013, with an annual growth rate of about $0.6\%$. This situation is represented by the growth function $P(t)=1.39(1.006)^t$, where $t$ is the number of years since 2013. To the nearest thousandth, what will the population of China be for the year 2031?"
+  question="The population of China was about $1.39$ billion in the year 2013, with an annual growth rate of about $0.6\%$. This situation is represented by the growth function $P(t)=1.39(1.006)^t$, where $t$ is the number of years since 2013. To the nearest thousandth, what will the population of China be for the year 2031? Enter the population in billions."
   answer="1.548"
   answerForm="decimal"
   answerDisplay="$1.548$ billion"
-  hint="Evaluate the model at $t=18$, since 2031 is 18 years after 2013."
+  hint="Find the value of $t$ that stands for 2031, then evaluate the model there, as in the India example."
 >}}
 
 {{< fillin
-  question="By about how many billion people will India's population (about $1.549$ billion) exceed China's population (about $1.548$ billion) in 2031, to the nearest thousandth?"
+  question="How does this compare to the population prediction made for India in the example above? Using the two projections to the nearest thousandth, by about how many billion people will India's population exceed China's in 2031?"
   answer="0.001"
   answerForm="decimal"
   answerDisplay="$0.001$ billion, or about 1 million people"
-  hint="Subtract China's projected 2031 population from India's."
+  hint="Subtract your projection for China from the example's projection for India."
 >}}
 
 ## Finding equations of exponential functions
@@ -399,21 +399,23 @@ domain for the function is $[0,\infty)$, and the range for the function is
 $[80,\infty)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of N of t equals 80 times 1.1447 to the t, an increasing curve through the plotted points (0, 80) and (6, 180), the deer population over time, t years after 2006.","xMin":0,"xMax":10,"yMin":0,"yMax":320,"xUnit":35,"yUnit":0.9,"margin":40,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":20,"xLabel":"Years","yLabel":"Deer Population, N(t)","curves":[{"kind":"exp","a":80,"b":1.1447}],"points":[{"at":[0,80],"label":"(0, 80)"},{"at":[6,180],"label":"(6, 180)"}]}
+{"ariaLabel":"The graph of N of t equals 80 times 1.1447 to the t, an increasing curve through the plotted points (0, 80) and (6, 180), the deer population over time, t years after 2006.","xMin":0,"xMax":10,"yMin":0,"yMax":320,"xUnit":35,"yUnit":0.9,"margin":40,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":20,"xLabel":"Years","yLabel":"Deer Population, N(t)","curves":[{"kind":"exp","a":80,"b":1.1447,"from":0,"arrows":"end"}],"points":[{"at":[0,80],"label":"(0, 80)"},{"at":[6,180],"label":"(6, 180)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="A wolf population is growing exponentially. In 2011, 129 wolves were counted. By 2013, the population had reached 236 wolves. What two points, in the form $(t,\text{population})$ with $t$ measured in years after 2011, can be used to derive an exponential equation modeling this situation? Enter both, in order of increasing $t$, separated by a comma."
   answer="(0,129),(2,236)"
+  answerForm="decimal"
   answerDisplay="$(0,129)$ and $(2,236)$"
-  hint="Let $t$ be years after 2011; the first count gives the initial value, and the second count comes two years later."
+  hint="Turn each count into a point $(t,\text{population})$, measuring each year as years after 2011, as the deer example does with 2006."
 >}}
 
 {{< fillin
-  question="Using those two points, write the equation representing the wolf population $w$ over time $t$, with $b$ rounded to four decimal places."
+  question="Using those two points, write the equation representing the population $N$ of wolves over time $t$, with $b$ rounded to four decimal places."
   answer="129(1.3526)^t"
-  answerDisplay="$w(t)=129(1.3526)^t$"
-  hint="With $a=129$ from the initial point, substitute the second point into $w(t)=129b^t$ and solve for $b$."
+  answerForm="exponential-model"
+  answerDisplay="$N(t)=129(1.3526)^t$"
+  hint="Read the initial value $a$ from the point with $t=0$, then substitute the other point into $N(t)=ab^t$ and solve for $b$."
 >}}
 
 **Example.** Find an exponential function that passes through the points
@@ -458,12 +460,13 @@ through the initial points given in the problem, $(-2,6)$ and $(2,1)$. The
 graph is an example of an exponential decay function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 2.4492 times 0.6389 to the x, a decreasing curve through the plotted points (-2, 6) and (2, 1), modeling exponential decay.","xMin":-3,"xMax":5,"yMin":0,"yMax":10,"unit":30,"tickLabels":true,"yLabel":"f(x)","curves":[{"kind":"exp","a":2.4492,"b":0.6389}],"points":[{"at":[-2,6],"label":"(-2, 6)"},{"at":[2,1],"label":"(2, 1)"}]}
+{"ariaLabel":"The graph of f of x equals 2.4492 times 0.6389 to the x, a decreasing curve through the plotted points (-2, 6) and (2, 1), modeling exponential decay.","xMin":-3,"xMax":5,"yMin":0,"yMax":10,"unit":30,"tickLabels":true,"yTickStep":2,"yLabel":"f(x)","curves":[{"kind":"exp","a":2.4492,"b":0.6389,"to":4.5}],"points":[{"at":[-2,6],"label":"(-2, 6)"},{"at":[2,1],"label":"(2, 1)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Given the two points $(1,3)$ and $(2,4.5)$, find the equation of the exponential function that passes through these points."
   answer="2(1.5)^x"
+  answerForm="exponential-model"
   answerDisplay="$f(x)=2(1.5)^x$"
   hint="Substitute both points into $f(x)=ab^x$ and divide the two equations to eliminate $a$ and solve for $b$ first."
 >}}
@@ -499,7 +502,7 @@ graph is an example of an exponential decay function.
 **Example.** Find an equation for the exponential function graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An increasing exponential curve with y-intercept at (0, 3), passing through (2, 12).","xMin":-3.5,"xMax":3.5,"yMin":-3,"yMax":21,"unit":16,"tickLabels":true,"xTickStep":1,"yTickStep":3,"yLabel":"f(x)","curves":[{"kind":"exp","a":3,"b":2}]}
+{"ariaLabel":"An increasing exponential curve with y-intercept at (0, 3), passing through (2, 12).","xMin":-3.5,"xMax":3.5,"yMin":-3,"yMax":21,"xUnit":60,"yUnit":12,"tickLabels":true,"xTickStep":0.5,"yTickStep":3,"yLabel":"f(x)","curves":[{"kind":"exp","a":3,"b":2,"from":-3.25}]}
 {{< /apfigure >}}
 
 **Solution.** We can choose the $y$-intercept of the graph, $(0,3)$, as our
@@ -522,14 +525,15 @@ Substitute $a$ and $b$ into the standard form to yield the equation
 $f(x)=3(2)^x$.
 
 {{< fillin
-  question="Find an equation for the exponential function graphed below."
+  question="Find an equation for the exponential function graphed below. Write $a$ and $b$ exactly, using radicals rather than decimal approximations."
   answer="\sqrt{2}(\sqrt{2})^x"
+  answerForm="exponential-model"
   answerDisplay="$f(x)=\sqrt{2}(\sqrt{2})^x$"
-  hint="Use the marked $y$-intercept, $(0,\sqrt{2})$, as the initial value $a$, then substitute another point on the curve to solve for $b$."
+  hint="Read the initial value $a$ from the marked $y$-intercept, then substitute a second point on the curve with integer coordinates and solve for $b$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An increasing exponential curve with y-intercept at (0, the square root of 2), approximately (0, 1.41).","xMin":-5,"xMax":5,"yMin":-1,"yMax":4,"unit":34,"tickLabels":true,"yLabel":"f(x)","curves":[{"kind":"exp","a":1.4142135623730951,"b":1.4142135623730951}],"points":[{"at":[0,1.4142135623730951],"label":"(0, √2)"}]}
+{"ariaLabel":"An increasing exponential curve with y-intercept at (0, the square root of 2), approximately (0, 1.41), marked; the curve also passes through the grid points (-1, 1), (1, 2), and (3, 4).","xMin":-5,"xMax":5,"yMin":-1,"yMax":4,"unit":34,"tickLabels":true,"yLabel":"f(x)","curves":[{"kind":"exp","a":1.4142135623730951,"b":1.4142135623730951,"from":-4.5}],"points":[{"at":[0,1.4142135623730951],"label":"(0, √2)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -559,11 +563,11 @@ values $a=6.2$ and $b=2$ will be displayed. The exponential equation is
 $y=6.2\cdot2^x$.
 
 {{< fillin
-  question="Find the growth factor $b$ of the exponential function that passes through the points $(3,75.98)$ and $(6,481.07)$, rounded to two decimal places."
-  answer="1.85"
-  answerForm="decimal"
-  answerDisplay="$b\approx1.85$ (the full model is $y\approx12(1.85)^x$)"
-  hint="Divide the two equations $ab^6=481.07$ and $ab^3=75.98$ to eliminate $a$, then take a cube root."
+  question="Use a graphing calculator to find the exponential equation that includes the points $(3,75.98)$ and $(6,481.07)$. Round $a$ to the nearest whole number and $b$ to two decimal places."
+  answer="12\cdot1.85^x"
+  answerForm="exponential-model"
+  answerDisplay="$y\approx12\cdot1.85^x$"
+  hint="Enter the $x$-coordinates in L1 and the $y$-coordinates in L2 and run ExpReg; by hand, divide one point's equation by the other's to eliminate $a$."
 >}}
 
 ## Applying the compound-interest formula
@@ -634,11 +638,11 @@ $$
 The account will be worth about \$4{,}045.05 in 10 years.
 
 {{< fillin
-  question="An initial investment of \$100{,}000 at $12\%$ interest is compounded weekly (use 52 weeks in a year). What will the investment be worth in 30 years, rounded to the nearest cent?"
+  question="An initial investment of \$100{,}000 at $12\%$ interest is compounded weekly (use 52 weeks in a year). What will the investment be worth in 30 years, in dollars, rounded to the nearest cent?"
   answer="3644675.88"
   answerForm="decimal"
   answerDisplay="\$3{,}644{,}675.88"
-  hint="Use $A(t)=P\left(1+\tfrac{r}{n}\right)^{nt}$ with $P=100{,}000$, $r=0.12$, $n=52$, and $t=30$."
+  hint="Use the compound interest formula with the rate as a decimal and $n$ the number of compounding periods in a year; round only the final value."
 >}}
 
 **Example.** A 529 Plan is a college-savings plan that allows relatives to
@@ -672,7 +676,7 @@ Lily will need to invest \$13{,}801 to have \$40{,}000 in 18 years.
   answer="13693"
   answerForm="decimal"
   answerDisplay="\$13{,}693"
-  hint="Use $n=4$ in the compound interest formula and solve for $P$ the same way as the example."
+  hint="Change $n$ to the number of quarters in a year, then isolate $P$ the same way as the example."
 >}}
 
 ## Evaluating functions with base $e$
@@ -803,11 +807,11 @@ $$
 The account is worth \$1{,}105.17 after one year.
 
 {{< fillin
-  question="A person invests \$100{,}000 at a nominal $12\%$ interest per year compounded continuously. What will be the value of the investment in 30 years, rounded to the nearest cent?"
+  question="A person invests \$100{,}000 at a nominal $12\%$ interest per year compounded continuously. What will be the value of the investment in 30 years, in dollars, rounded to the nearest cent?"
   answer="3659823.44"
   answerForm="decimal"
   answerDisplay="\$3{,}659{,}823.44"
-  hint="Use $A(t)=Pe^{rt}$ with $P=100{,}000$, $r=0.12$, and $t=30$."
+  hint="Use the continuous compounding formula with the rate written as a decimal and $t$ in years."
 >}}
 
 **Example.** Radon-222 decays at a continuous rate of $17.3\%$ per day. How
@@ -829,11 +833,11 @@ $$
 So 59.5115 mg of radon-222 will remain.
 
 {{< fillin
-  question="Using the same decay rate as the radon-222 example, how much of the original 100 mg will remain after 1 year (365 days)? Enter your answer in scientific notation, rounded to two decimal places in the coefficient."
+  question="Using the same decay rate as the radon-222 example, how much of the original 100 mg will remain after 1 year (365 days)? Enter the amount in milligrams in scientific notation, rounded to two decimal places in the coefficient."
   answer="3.77\times10^{-26}"
   answerForm="scientific-notation"
   answerDisplay="$3.77\times10^{-26}$ mg"
-  hint="Evaluate $A(365)=100e^{-0.173(365)}$; the result is so close to zero it must be written in scientific notation."
+  hint="Use the continuous decay formula with the example's $a$ and $r$, and $t$ measured in days; the result is so close to zero that the calculator shows it in scientific notation."
 >}}
 
 ## Key equations
@@ -879,7 +883,7 @@ So 59.5115 mg of radon-222 will remain.
 {{< multiplechoice
   question="A population of bacteria decreases by a factor of $\tfrac{1}{8}$ every 24 hours. Does this represent exponential growth, exponential decay, or neither?"
   answer="exponential decay"
-  hint="The population decreases by a proportional rate each period, not by a constant amount."
+  hint="Decide whether the quantity changes by a constant amount or by a constant factor each period, and whether it rises or falls."
 >}}
 exponential growth
 exponential decay
@@ -889,7 +893,7 @@ neither, this is linear
 {{< multiplechoice
   question="For each training session, a personal trainer charges his clients \$5 less than the previous training session. Does this represent exponential growth, exponential decay, or neither?"
   answer="neither, this is linear"
-  hint="The charge decreases by a constant dollar amount each session, not by a percent of the previous charge."
+  hint="Decide whether the quantity changes by a constant amount or by a constant factor each period, and whether it rises or falls."
 >}}
 exponential growth
 exponential decay
@@ -899,7 +903,8 @@ neither, this is linear
 {{< fillin
   question="Let $f(x)=-4^{2x+3}$. Find $f(-1)$."
   answer="-4"
-  hint="Substitute $x=-1$ into the exponent first: $2(-1)+3=1$, so $f(-1)=-4^1$."
+  answerForm="decimal"
+  hint="Substitute into the exponent first, then raise $4$ to that power; the negative sign is applied after the power, since it is not part of the base."
 >}}
 
 ### Find the equation of an exponential function
@@ -907,48 +912,51 @@ neither, this is linear
 {{< fillin
   question="Find the formula for an exponential function that passes through the two points $(0,2000)$ and $(2,20)$."
   answer="2000(0.1)^x"
+  answerForm="exponential-model"
   answerDisplay="$f(x)=2000(0.1)^x$"
-  hint="Since $(0,2000)$ is the $y$-intercept, $a=2000$; substitute the second point to solve for $b$."
+  hint="One point is the $y$-intercept, so it gives the initial value $a$; substitute the other point into $f(x)=ab^x$ and solve for $b$."
 >}}
 
 {{< fillin
   question="Use a calculator to find the equation of an exponential function that includes the points $(0,3)$ and $(3,375)$."
   answer="3\cdot5^x"
+  answerForm="exponential-model"
   answerDisplay="$y=3\cdot5^x$"
-  hint="Since $(0,3)$ is the $y$-intercept, $a=3$; substitute the second point to solve for $b^3$."
+  hint="Enter the points in L1 and L2 and run ExpReg; by hand, the $y$-intercept gives $a$, and the other point gives $b$."
 >}}
 
 {{< fillin
   question="Use a calculator to find the equation of an exponential function that includes the points $(20,29.495)$ and $(150,730.89)$, rounding $a$ to the nearest whole number and $b$ to three decimal places."
   answer="18\cdot1.025^x"
+  answerForm="exponential-model"
   answerDisplay="$y\approx18\cdot1.025^x$"
-  hint="Divide the two equations $ab^{150}=730.89$ and $ab^{20}=29.495$ to eliminate $a$, then take the appropriate root of $b^{130}$."
+  hint="Enter the points in L1 and L2 and run ExpReg; by hand, divide one point's equation by the other's to eliminate $a$, solve for $b$, then substitute back for $a$."
 >}}
 
 ### Use compound interest formulas
 
 {{< fillin
-  question="An account is opened with an initial deposit of \$6{,}500 and earns $3.6\%$ interest compounded semi-annually. What will the account be worth in 20 years, rounded to the nearest cent?"
+  question="An account is opened with an initial deposit of \$6{,}500 and earns $3.6\%$ interest compounded semi-annually. What will the account be worth in 20 years, in dollars, rounded to the nearest cent?"
   answer="13268.58"
   answerForm="decimal"
   answerDisplay="\$13{,}268.58"
-  hint="Use $A(t)=P\left(1+\tfrac{r}{n}\right)^{nt}$ with $P=6{,}500$, $r=0.036$, $n=2$, and $t=20$."
+  hint="Use the compound interest formula with the rate as a decimal and $n$ the number of compounding periods in a year."
 >}}
 
 {{< fillin
-  question="An account compounded semi-annually starts with an initial deposit of \$9{,}000 and is worth \$13{,}373.53 after 10 years. What is the interest rate, as a percent?"
-  answer="4"
-  answerForm="decimal"
+  question="An account compounded semi-annually starts with an initial deposit of \$9{,}000 and is worth \$13{,}373.53 after 10 years. What is the annual interest rate? Enter it as a percent, including the % sign."
+  answer="4\%"
+  answerForm="percent"
   answerDisplay="$4\%$"
-  hint="Substitute into $A(t)=P\left(1+\tfrac{r}{n}\right)^{nt}$ with $n=2$, $t=10$, and solve for $r$."
+  hint="Substitute into the compound interest formula, divide by $P$, take the root that undoes the exponent $nt$, and solve for $r$."
 >}}
 
 {{< fillin
-  question="Jaylen wants to save \$54{,}000 for a down payment on a home. How much will he need to invest in an account with $8.2\%$ APR, compounding daily, in order to reach his goal in 5 years? Round to the nearest cent."
+  question="Jaylen wants to save \$54{,}000 for a down payment on a home. How much will he need to invest in an account with $8.2\%$ APR, compounding daily, in order to reach his goal in 5 years? Enter the amount in dollars, rounded to the nearest cent."
   answer="35838.76"
   answerForm="decimal"
   answerDisplay="\$35{,}838.76"
-  hint="Solve $A(t)=P\left(1+\tfrac{r}{n}\right)^{nt}$ for $P$ with $A=54{,}000$, $r=0.082$, $n=365$, and $t=5$."
+  hint="Substitute the goal for $A(t)$ in the compound interest formula, with $n$ the number of days in a year, and isolate $P$ as in Lily's example."
 >}}
 
 ### Evaluate exponential functions with base $e$
@@ -968,7 +976,7 @@ neither
   answer="-0.2707"
   answerForm="decimal"
   answerDisplay="$-0.2707$"
-  hint="Substitute $x=-1$ so the exponent is $-1-1=-2$, then evaluate $-2e^{-2}$."
+  hint="Substitute into the exponent first, use the calculator's $e^x$ key for the power, then multiply by the coefficient."
 >}}
 
 {{< fillin
@@ -976,9 +984,9 @@ neither
   answer="483.8146"
   answerForm="decimal"
   answerDisplay="$483.8146$"
-  hint="Substitute $x=3$ so the exponent is $2(3)=6$, then evaluate $1.2e^6-0.3$."
+  hint="Follow the order of operations: the exponent, then the power of $e$, then the multiplication, and subtract last."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 4.1: Exponential Functions](https://openstax.org/books/precalculus-2e/pages/4-1-exponential-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from its exact equation — the labeled-points curve $f(x)=2^x$ with its $y=0$ asymptote; the Company A/B comparison of $A(x)=100+50x$ against $B(x)=100(1.5)^x$; the deer-population curve $N(t)=80(1.1447)^t$; the decay curve $f(x)=2.4492(0.6389)^x$ of the "initial value not known" example; the graph-reading example's $f(x)=3(2)^x$; and the Try It graph-reading curve $f(x)=\sqrt{2}(\sqrt{2})^x$; presented every value-versus-frequency comparison (the \$1{,}000-at-10\% table, the \$1-at-100\% table, and the store-count and interest tables) as Markdown tables; omitted the two decorative chapter-opener/definition photographs (the linear/quadratic/exponential-function illustration and the E. coli micrograph), which carry no mathematics; omitted the section's two Media links to external graphing-calculator resources; excluded a "coreq-skills" block present in the pinned CNXML module (a corequisite-course skills review covering evaluating and graphing exponential functions with its own short exercise set) that does not appear in the printed Precalculus 2e text — pages 397–426 of the source PDF confirm the printed section runs directly from the chapter introduction into "Identifying Exponential Functions," with no corequisite-skills material between them; converted the "Try It" practice problems into interactive exercises with instant feedback — two multiple-choice questions (replacing one four-option "which of these represent exponential functions" prompt with two correct answers, since a single-answer multiple-choice component can only test one designated answer at a time) and a fill-in for the definition Try It, a fill-in for the order-of-operations evaluation, two fill-ins for the India/China population comparison, two fill-ins for the wolf-population model (renaming the population function from the source's $N$ to $w$, since $N$ is reserved by this project's compute engine for numeric evaluation), a fill-in each for the two-point and known-graph equation-writing Try Its, a fill-in asking for just the growth factor $b$ (rather than the full calculator-derived equation) for the graphing-calculator Try It, a fill-in each for the two compound-interest Try Its, a fill-in for the power-of-$e$ Try It, a fill-in each for the two continuous growth/decay Try Its (the radon-222 one declaring `scientific-notation`, since its value is far too small to write as a plain decimal), and adapted eight selected end-of-section exercises — two growth/decay-versus-linear identifications, an exponential evaluation, three find-the-equation problems, two compound-interest applications, a continuous-growth identification, and two base-$e$ evaluations — into eleven interactive components in a closing Practice block, one group per objective. The second "Finding Equations of Exponential Functions" example is reproduced exactly as the source prints it, including its $a=6b^2\approx6(0.6389)^2\approx2.4492$ step, which substitutes the already-rounded $b$ and so sits in tension with the section's own "do not round any intermediate calculations" note; the unrounded value would be $a=6b^2=\sqrt6\approx2.4495$. That tension is the source's, and this page does not silently resolve it.</small>
+<small>This section is adapted from [Precalculus 2e, Section 4.1: Exponential Functions](https://openstax.org/books/precalculus-2e/pages/4-1-exponential-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible figure generated from its exact equation — the labeled-points curve $f(x)=2^x$ with its $y=0$ asymptote; the Company A/B comparison of $A(x)=100+50x$ against $B(x)=100(1.5)^x$; the deer-population curve $N(t)=80(1.1447)^t$; the decay curve $f(x)=2.4492(0.6389)^x$ of the "initial value not known" example; the graph-reading example's $f(x)=3(2)^x$; and the Try It graph-reading curve $f(x)=\sqrt{2}(\sqrt{2})^x$; presented every value-versus-frequency comparison (the \$1{,}000-at-10\% table, the \$1-at-100\% table, and the store-count and interest tables) as Markdown tables; omitted the two decorative chapter-opener/definition photographs (the linear/quadratic/exponential-function illustration and the E. coli micrograph), which carry no mathematics; omitted the section's two Media links to external graphing-calculator resources; excluded a "coreq-skills" block present in the pinned CNXML module (a corequisite-course skills review covering evaluating and graphing exponential functions with its own short exercise set) that does not appear in the printed Precalculus 2e text — pages 397–426 of the source PDF confirm the printed section runs directly from the chapter introduction into "Identifying Exponential Functions," with no corequisite-skills material between them; converted the "Try It" practice problems into interactive exercises with instant feedback — two multiple-choice questions (replacing one four-option "which of these represent exponential functions" prompt with two correct answers, since a single-answer multiple-choice component can only test one designated answer at a time), a fill-in for the order-of-operations evaluation, two fill-ins for the India/China population comparison, two fill-ins for the wolf-population model (the points, then the equation), a fill-in each for the two-point and known-graph equation-writing Try Its (the known-graph one asking for $a$ and $b$ in exact radical form, where the source also accepts $1.4142(1.4142)^x$), a fill-in for the graphing-calculator Try It (asking for $a$ to the nearest whole number and $b$ to two decimal places), a fill-in each for the two compound-interest Try Its, a fill-in for the power-of-$e$ Try It, a fill-in each for the two continuous growth/decay Try Its (the radon-222 one declaring `scientific-notation`, since its value is far too small to write as a plain decimal), and adapted twelve selected end-of-section exercises — two growth/decay-versus-linear identifications, an exponential evaluation, three find-the-equation problems, three compound-interest applications, a continuous-growth identification, and two base-$e$ evaluations — into twelve interactive components in a closing Practice block, one group per objective. The second "Finding Equations of Exponential Functions" example is reproduced exactly as the source prints it, including its $a=6b^2\approx6(0.6389)^2\approx2.4492$ step, which substitutes the already-rounded $b$ and so sits in tension with the section's own "do not round any intermediate calculations" note; the unrounded value would be $a=6b^2=\sqrt6\approx2.4495$. That tension is the source's, and this page does not silently resolve it.</small>

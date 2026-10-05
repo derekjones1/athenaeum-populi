@@ -62,11 +62,11 @@ graphs seem to lie on the $x$-axis, they are really a tiny distance above
 the $x$-axis.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = 2e^(3x), an exponential growth curve with a horizontal asymptote at y = 0, passing through (0, 2), with labeled points at (-1/3, 2/e) and (1/3, 2e).","xMin":-3,"xMax":3,"yMin":-1,"yMax":6,"unit":26,"tickLabels":true,"curves":[{"kind":"exp","a":2,"b":20.0855}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[0,2],"label":"(0, 2)"},{"at":[-0.3333,0.7358],"label":"(-1/3, 2/e)"},{"at":[0.3333,5.4366],"label":"(1/3, 2e)"}],"texts":[{"at":[0.55,5.7],"text":"y = 2e³ˣ"}]}
+{"ariaLabel":"The graph of y = 2e^(3x), an exponential growth curve with a horizontal asymptote at y = 0, passing through (0, 2), with labeled points at (-1/3, 2/e) and (1/3, 2e).","xMin":-3,"xMax":3,"yMin":-1,"yMax":7,"tickLabels":true,"yTickStep":2,"curves":[{"kind":"exp","a":2,"b":20.0855,"from":-2.7,"to":0.408}],"lines":[{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,2],"label":"(0, 2)"},{"at":[-0.3333,0.7358],"label":"(-1/3, 2/e)"},{"at":[0.3333,5.4366],"label":"(1/3, 2e)"}],"texts":[{"at":[0.55,4],"text":"y = 2e³ˣ","anchor":"start"}],"xUnit":40,"yUnit":26}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = 3e^(-2x), an exponential decay curve with a horizontal asymptote at y = 0, passing through (0, 3), with labeled points at (-1/2, 3e) and (1/2, 3/e).","xMin":-3,"xMax":3,"yMin":-1,"yMax":9,"unit":22,"tickLabels":true,"curves":[{"kind":"exp","a":3,"b":0.135335}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[0,3],"label":"(0, 3)"},{"at":[-0.5,8.1548],"label":"(-1/2, 3e)"},{"at":[0.5,1.1036],"label":"(1/2, 3/e)"}],"texts":[{"at":[-2.9,4],"text":"y = 3e⁻²ˣ"}]}
+{"ariaLabel":"The graph of y = 3e^(-2x), an exponential decay curve with a horizontal asymptote at y = 0, passing through (0, 3), with labeled points at (-1/2, 3e) and (1/2, 3/e).","xMin":-3,"xMax":3,"yMin":-1,"yMax":10,"tickLabels":true,"yTickStep":3,"curves":[{"kind":"exp","a":3,"b":0.135335,"from":-0.5816,"to":2.6}],"lines":[{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,3],"label":"(0, 3)"},{"at":[-0.5,8.1548],"label":"(-1/2, 3e)"},{"at":[0.5,1.1036],"label":"(1/2, 3/e)"}],"texts":[{"at":[-0.6,6],"text":"y = 3e⁻²ˣ","anchor":"end"}],"xUnit":60,"yUnit":22}
 {{< /apfigure >}}
 
 Exponential growth and decay often involve very large or very small numbers.
@@ -94,11 +94,11 @@ having order of magnitude $10^{13}$.
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A generic exponential growth curve y = A0 e^(kt) with k greater than 0, showing a horizontal asymptote at y = 0, the y-intercept at (0, A0), and labeled points (1/k, A0e) and (-1/k, A0/e).","xMin":-2.5,"xMax":2.5,"yMin":-1,"yMax":6,"unit":45,"xLabel":"t","yLabel":"y","curves":[{"kind":"exp","a":2,"b":2.71828}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[0,2],"label":"(0, A0)"},{"at":[1,5.4366],"label":"(1/k, A0e)"},{"at":[-1,0.7358],"label":"(-1/k, A0/e)"}],"texts":[{"at":[-2.3,5.6],"text":"y = A0eᵏᵗ, k > 0"}]}
+{"ariaLabel":"A generic exponential growth curve y = A0 e^(kt) with k greater than 0, showing a horizontal asymptote at y = 0, the y-intercept at (0, A0), and labeled points (1/k, A0e) and (-1/k, A0/e).","xMin":-2.5,"xMax":2.5,"yMin":-1,"yMax":6,"unit":45,"xLabel":"t","yLabel":"y","curves":[{"kind":"exp","a":2,"b":2.71828,"from":-2.3}],"lines":[{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,2],"label":"(0, A₀)"},{"at":[1,5.4366],"label":"(1/k, A₀e)"},{"at":[-1,0.7358],"label":"(−1/k, A₀/e)"}],"texts":[{"at":[-2.3,5.6],"text":"y = A₀eᵏᵗ, k > 0"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A generic exponential decay curve y = A0 e^(kt) with k less than 0, showing a horizontal asymptote at y = 0, the y-intercept at (0, A0), and labeled points (-1/k, A0e) and (1/k, A0/e).","xMin":-2.5,"xMax":2.5,"yMin":-1,"yMax":6,"unit":45,"xLabel":"t","yLabel":"y","curves":[{"kind":"exp","a":2,"b":0.367879}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[0,2],"label":"(0, A0)"},{"at":[-1,5.4366],"label":"(-1/k, A0e)"},{"at":[1,0.7358],"label":"(1/k, A0/e)"}],"texts":[{"at":[0.85,5.6],"text":"y = A0eᵏᵗ, k < 0"}]}
+{"ariaLabel":"A generic exponential decay curve y = A0 e^(kt) with k less than 0, showing a horizontal asymptote at y = 0, the y-intercept at (0, A0), and labeled points (1/k, A0e) at the upper left and (-1/k, A0/e) at the lower right, since 1/k is negative when k is negative.","xMin":-2.5,"xMax":2.5,"yMin":-1,"yMax":6,"unit":45,"xLabel":"t","yLabel":"y","curves":[{"kind":"exp","a":2,"b":0.367879,"to":2.3}],"lines":[{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,2],"label":"(0, A₀)"},{"at":[-1,5.4366],"label":"(1/k, A₀e)"},{"at":[1,0.7358],"label":"(−1/k, A₀/e)"}],"texts":[{"at":[0.85,5.6],"text":"y = A₀eᵏᵗ, k < 0"}]}
 {{< /apfigure >}}
 
 **Example.** A population of bacteria doubles every hour. If the culture
@@ -123,7 +123,7 @@ $y=10e^{(\ln2)t}=10\left(e^{\ln2}\right)^t=10\cdot2^t$. The graph is shown
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = 10e^((ln 2)t), equivalently y = 10·2^t, starting at (0, 10) and rising rapidly to the right.","xMin":0,"xMax":5,"yMin":0,"yMax":200,"unit":34,"tickLabels":true,"yTickStep":20,"curves":[{"kind":"exp","a":10,"b":2,"from":0}],"texts":[{"at":[0.3,175],"text":"y = 10·2ᵗ"}]}
+{"ariaLabel":"The graph of y = 10e^((ln 2)t), equivalently y = 10·2^t, starting at the point (0, 10) and rising rapidly to the right.","xMin":0,"xMax":5,"yMin":0,"yMax":200,"xUnit":40,"yUnit":1.3,"tickLabels":true,"yTickStep":20,"curves":[{"kind":"exp","a":10,"b":2,"from":0,"arrows":"end"}],"points":[{"at":[0,10]}],"texts":[{"at":[1.6,150],"text":"y = 10·2ᵗ","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Analysis.** The population of bacteria after ten hours is $10{,}240$. We
@@ -198,8 +198,9 @@ coefficient of $t$, $\tfrac{\ln(0.5)}{5{,}730}\approx-1.2097\times10^{-4}$, is
 negative, as expected in the case of exponential decay.
 
 {{< fillin
-  question="The half-life of plutonium-244 is 80,000,000 years. Find a function that gives the amount of plutonium-244 remaining as a function of time, measured in years."
+  question="The half-life of plutonium-244 is 80,000,000 years. Find a function that gives the amount of plutonium-244 remaining as a function of time, measured in years. Round the rate constant $k$ to two significant figures."
   answer="A_0e^{-8.7\times10^{-9}t}"
+  answerForm="exponential-model"
   answerDisplay="$f(t)=A_0e^{-8.7\times10^{-9}t}$"
   hint="Substitute the half-life for $t$ and $0.5A_0$ for $A$ in $A=A_0e^{kt}$, then solve for $k$."
 >}}
@@ -273,8 +274,8 @@ $$t=\tfrac{\ln(r)}{-0.000121}$$
   **How to: given the percentage of carbon-14 in an object, determine its
   age.**
 
-  1. Express the given percentage of carbon-14 as an equivalent decimal, $k$.
-  2. Substitute for $k$ in the equation $t=\tfrac{\ln(r)}{-0.000121}$ and
+  1. Express the given percentage of carbon-14 as an equivalent decimal, $r$.
+  2. Substitute for $r$ in the equation $t=\tfrac{\ln(r)}{-0.000121}$ and
      solve for the age, $t$.
 {{< /callout >}}
 
@@ -303,18 +304,18 @@ years $\pm$ 1%, or $13{,}301$ years $\pm$ 133 years.
 {{< multiplechoice
   question="Cesium-137 has a half-life of about 30 years. If we begin with 200 mg of cesium-137, will it take more or less than 230 years until only 1 milligram remains?"
   answer="less than 230 years"
-  hint="Solve $\tfrac{1}{200}=e^{kt}$ with $k=-\tfrac{\ln(2)}{30}$, and compare the result with 230."
+  hint="Find $k$ from the half-life, then solve for the time at which $\tfrac{1}{200}$ of the starting amount remains, and compare that time with 230 years."
 >}}
 less than 230 years
 more than 230 years
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="To four decimal places, exactly how many years will it take the cesium-137 in that same scenario to decay from 200 mg to 1 milligram?"
+  question="To four decimal places, how many years will it take the cesium-137 in that same scenario to decay from 200 mg to 1 milligram?"
   answer="229.3157"
   answerForm="decimal"
   answerDisplay="$229.3157$ years"
-  hint="Solve $\tfrac{1}{200}=e^{kt}$ for $t$, where $k=-\tfrac{\ln(2)}{30}$."
+  hint="Find $k$ from the 30-year half-life, set the remaining fraction equal to $e^{kt}$, and take the natural log of both sides."
 >}}
 
 ## Calculating Doubling Time
@@ -361,8 +362,9 @@ $$
 The function is $A_0e^{\tfrac{\ln2}{2}t}$.
 
 {{< fillin
-  question="Recent data suggests that, as of 2013, the rate of growth predicted by Moore's Law no longer holds. Growth has slowed to a doubling time of approximately three years. Find the new function that takes that longer doubling time into account."
+  question="Recent data suggests that, as of 2013, the rate of growth predicted by Moore's Law no longer holds. Growth has slowed to a doubling time of approximately three years. Find the new function that takes that longer doubling time into account. Keep $k$ exact."
   answer="A_0e^{\frac{\ln2}{3}t}"
+  answerForm="exponential-model"
   answerDisplay="$f(t)=A_0e^{\tfrac{\ln2}{3}t}$"
   hint="Use the doubling time formula $t=\tfrac{\ln2}{k}$ with $t=3$, solve for $k$, then substitute into the continuous growth formula."
 >}}
@@ -477,7 +479,7 @@ cheesecake to cool to $70\degree$F.
   answer="6.026"
   answerForm="decimal"
   answerDisplay="$6.026$ hours"
-  hint="Set $T_s=70$ and $A=40-70=-30$, use $T(1)=45$ to find $k$, then solve $T(t)=60$ for $t$."
+  hint="Set $T_s$ to the room temperature and $A$ to the starting difference $T(0)-T_s$, use the one-hour reading to find $k$, then solve $T(t)=60$ for $t$."
 >}}
 
 ## Using Logistic Growth Models
@@ -509,7 +511,7 @@ reaches its point of maximum growth rate, at which point the rate of
 increase decreases.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel": "A generic logistic growth curve f(t) = c/(1+ae^(-bt)), S-shaped, rising from an initial value near t = 0, through a point of maximum growth, and leveling off toward a horizontal carrying-capacity asymptote at y = c.", "xMin": -3, "xMax": 13, "yMin": 0, "yMax": 11, "unit": 32, "xLabel": "t", "yLabel": "f(t)", "lines": [{"y": 10, "dashed": true, "arrows": false}], "points": [{"at": [0, 1], "label": "(0, c/(1+a))"}, {"at": [3.66, 5], "label": "(ln(a)/b, c/2)"}], "texts": [{"at": [6.3, 10.4], "text": "Carrying capacity"}, {"at": [6.6, 4.4], "text": "Point of maximum growth", "anchor": "start"}, {"at": [-0.4, 2.2], "text": "Initial value", "anchor": "end"}], "curves": [{"kind": "logistic", "c": 10, "a": 9, "b": 0.6}]}
+{"ariaLabel":"A generic logistic growth curve f(t) = c/(1+ae^(-bt)), S-shaped, rising from the initial value (0, c/(1+a)) through the point of maximum growth (ln(a)/b, c/2) and leveling off toward the carrying capacity, the horizontal asymptote y = c.","xMin":-3,"xMax":13,"yMin":-2,"yMax":11,"unit":32,"xLabel":"t","yLabel":"f(t)","lines":[{"y":10,"dashed":true,"arrows":false,"label":"y = c (carrying capacity)"}],"points":[{"at":[0,1],"label":"Initial value (0, c/(1+a))"},{"at":[3.66,5],"label":"Point of maximum growth (ln(a)/b, c/2)","labelSide":"e"}],"texts":[{"at":[7.4,7.9],"text":"f(t) = c/(1 + ae⁻ᵇᵗ)","anchor":"start"}],"curves":[{"kind":"logistic","c":10,"a":9,"b":0.6,"from":-2.8,"to":9.5}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -544,14 +546,14 @@ has passed.
 $$f(t)=\tfrac{c}{1+ae^{-bt}}$$
 
 Because at most 1,000 people, the entire population of the community, can
-get the flu, we know the limiting value is $c=1000$. To find $a$, we use the
+get the flu, we know the limiting value is $c=1{,}000$. To find $a$, we use the
 formula that the number of cases at time $t=0$ is $\tfrac{c}{1+a}=1$, from
 which it follows that $a=999$. This model predicts that, after ten days, the
 number of people who have had the flu is
-$f(t)=\tfrac{1000}{1+999e^{-0.6030x}}\approx293.8$. Because the actual
+$f(t)=\tfrac{1{,}000}{1+999e^{-0.6030x}}\approx293.8$. Because the actual
 number must be a whole number (a person has either had the flu or not) we
 round to 294. In the long term, the number of people who will contract the
-flu is the limiting value, $c=1000$.
+flu is the limiting value, $c=1{,}000$.
 
 **Analysis.** Remember that, because we are dealing with a virus, we cannot
 predict with certainty the number of people infected. The model only
@@ -561,14 +563,15 @@ actual values.
 The graph below gives a good picture of how this model fits the data.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel": "The graph of f(t) = 1000/(1+999e^(-0.6030t)), an S-shaped logistic curve rising from 1 case on day 0, through 20 cases on day 5 and 294 cases on day 10, leveling off near a horizontal asymptote at 1000 cases by about day 21.", "xMin": 0, "xMax": 26, "yMin": 0, "yMax": 1100, "unit": 15, "yUnit": 0.5, "tickLabels": true, "yTickStep": 100, "xTickStep": 2, "xLabel": "Days", "yLabel": "Cases", "lines": [{"y": 1000, "dashed": true, "arrows": false, "label": "y = 1000"}], "points": [{"at": [0, 1], "label": "1 case of flu on day 0", "labelSide": "nw"}, {"at": [5, 20], "label": "20 cases on day 5"}, {"at": [10, 293.85], "label": "294 cases on day 10"}, {"at": [21, 996.85], "label": "1000 cases on day 21"}], "curves": [{"kind": "logistic", "c": 1000, "a": 999, "b": 0.603}]}
+{"ariaLabel":"The graph of f(t) = 1000/(1+999e^(-0.6030t)), an S-shaped logistic curve rising from 1 case on day 0, through 20 cases on day 5 and 294 cases on day 10, leveling off near a horizontal asymptote at 1,000 cases by about day 21.","xMin":0,"xMax":26,"yMin":0,"yMax":1100,"unit":15,"yUnit":0.5,"tickLabels":true,"yTickStep":100,"xTickStep":2,"xLabel":"Days","yLabel":"Cases","lines":[{"y":1000,"dashed":true,"arrows":false,"label":"y = 1,000"}],"points":[{"at":[0,1],"label":"1 case of flu on day 0","labelSide":"nw"},{"at":[5,20],"label":"20 cases on day 5","labelNudge":[9,-6]},{"at":[10,293.85],"label":"294 cases on day 10"},{"at":[21,996.85],"label":"1,000 cases on day 21"}],"curves":[{"kind":"logistic","c":1000,"a":999,"b":0.603,"from":0,"arrows":"end"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Using that same flu model, estimate the number of cases of flu on day 15."
+  question="Using that same flu model, estimate the number of cases of flu on day 15. Round to the nearest whole number."
   answer="895"
+  answerForm="decimal"
   answerDisplay="895 cases"
-  hint="Evaluate $f(15)=\tfrac{1000}{1+999e^{-0.6030\cdot15}}$ and round to the nearest whole number."
+  hint="Substitute $t=15$ into the flu model and evaluate."
 >}}
 
 ## Choosing an Appropriate Model for Data
@@ -653,7 +656,7 @@ To check the accuracy of the model, we graph the function together with the
 given points below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = 2 ln(x), an increasing, concave-down logarithmic curve with a vertical asymptote at x = 0, passing closely through the nine data points from the table.","xMin":0,"xMax":10,"yMin":0,"yMax":5.5,"unit":30,"tickLabels":true,"yTickStep":0.5,"curves":[{"kind":"log","a":2,"from":0.02}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0]},{"at":[2,1.386]},{"at":[3,2.197]},{"at":[4,2.773]},{"at":[5,3.219]},{"at":[6,3.584]},{"at":[7,3.892]},{"at":[8,4.159]},{"at":[9,4.394]}]}
+{"ariaLabel":"The graph of y = 2 ln(x), an increasing, concave-down logarithmic curve with a vertical asymptote at x = 0, passing closely through the nine data points from the table.","xMin":0,"xMax":10,"yMin":0,"yMax":5.5,"unit":30,"tickLabels":true,"yTickStep":0.5,"curves":[{"kind":"log","a":2,"arrows":"end"}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0]},{"at":[2,1.386]},{"at":[3,2.197]},{"at":[4,2.773]},{"at":[5,3.219]},{"at":[6,3.584]},{"at":[7,3.892]},{"at":[8,4.159]},{"at":[9,4.394]}]}
 {{< /apfigure >}}
 
 We can conclude that the model is a good fit to the data.
@@ -661,7 +664,7 @@ We can conclude that the model is a good fit to the data.
 Compare to the graph of $y=\ln\left(x^2\right)$ shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = ln(x squared), for x greater than 0, appearing identical to the graph of y = 2 ln(x) and passing through the same nine data points.","xMin":0,"xMax":10,"yMin":0,"yMax":5.5,"unit":30,"tickLabels":true,"yTickStep":0.5,"curves":[{"kind":"log","a":2,"from":0.02}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0]},{"at":[2,1.386]},{"at":[3,2.197]},{"at":[4,2.773]},{"at":[5,3.219]},{"at":[6,3.584]},{"at":[7,3.892]},{"at":[8,4.159]},{"at":[9,4.394]}]}
+{"ariaLabel":"The graph of y = ln(x squared), for x greater than 0, appearing identical to the graph of y = 2 ln(x) and passing through the same nine data points.","xMin":0,"xMax":10,"yMin":0,"yMax":5.5,"unit":30,"tickLabels":true,"yTickStep":0.5,"curves":[{"kind":"log","a":2,"arrows":"end"}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}],"points":[{"at":[1,0]},{"at":[2,1.386]},{"at":[3,2.197]},{"at":[4,2.773]},{"at":[5,3.219]},{"at":[6,3.584]},{"at":[7,3.892]},{"at":[8,4.159]},{"at":[9,4.394]}]}
 {{< /apfigure >}}
 
 The graphs appear to be identical when $x>0$. A quick check confirms this
@@ -674,14 +677,15 @@ be negative), the function $y=\ln\left(x^2\right)$ can have negative domain
 values.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel": "The graph of y = ln(x squared), symmetric about the y-axis with a vertical asymptote at x = 0: two branches, each rising from near the asymptote and curving upward and outward as x moves away from 0 in either direction.", "xMin": -10, "xMax": 10, "yMin": -3, "yMax": 6, "unit": 16, "tickLabels": true, "xTickStep": 2, "yTickStep": 2, "curves": [{"kind": "log", "a": 2, "from": 0.333, "to": 10}, {"kind": "log", "a": 2, "reflect": true, "from": -10, "to": -0.333}], "lines": [{"x": 0, "dashed": true, "arrows": false, "label": "x = 0"}]}
+{"ariaLabel":"The graph of y = ln(x squared), symmetric about the y-axis with a vertical asymptote at x = 0: two branches, each rising from near the asymptote and curving upward and outward as x moves away from 0 in either direction.","xMin":-10,"xMax":10,"yMin":-3,"yMax":6,"unit":16,"tickLabels":true,"xTickStep":2,"yTickStep":2,"curves":[{"kind":"log","a":2,"from":0.5,"to":10},{"kind":"log","a":2,"reflect":true,"from":-10,"to":-0.5}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Does a linear, exponential, or logarithmic model best fit the data in the table below? Find the model."
+  question="Does a linear, exponential, or logarithmic model best fit the data in the table below? Find the model. Write it in the form $y=A_0e^{kx}$, with $A_0$ and $k$ rounded to one decimal place."
   answer="2e^{0.5x}"
+  answerForm="exponential-model"
   answerDisplay="$y=2e^{0.5x}$"
-  hint="Check whether consecutive $y$-values share a common ratio; if so, the model is exponential, $y=ab^x$."
+  hint="Divide consecutive $y$-values to find the growth factor $b$, take $k=\ln b$, then use one data point to solve for $A_0$."
 >}}
 
 | $x$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ | $9$ |
@@ -720,9 +724,9 @@ $$
 $$
 
 {{< fillin
-  question="Change the function $y=3(0.5)^x$ to one having $e$ as the base."
+  question="Change the function $y=3(0.5)^x$ to one having $e$ as the base. Keep the exact logarithm in the exponent."
   answer="3e^{(\ln0.5)x}"
-  answerForm="base-e"
+  answerForm="base-e exponential-model"
   answerDisplay="$y=3e^{(\ln0.5)x}$"
   hint="Rewrite $0.5^x$ as $e^{\ln\left(0.5^x\right)}$, then apply the power rule of logarithms."
 >}}
@@ -771,7 +775,7 @@ $$
 {{< multiplechoice
   question="With what kind of exponential model would half-life be associated?"
   answer="exponential decay"
-  hint="Half-life measures how long it takes an amount to fall to half its original value."
+  hint="Look at the sign the half-life formula $t=-\tfrac{\ln(2)}{k}$ requires of $k$."
 >}}
 exponential growth
 exponential decay
@@ -782,11 +786,11 @@ exponential decay
   answer="-0.0666"
   answerForm="decimal"
   answerDisplay="$-0.0666$"
-  hint="Solve $\tfrac12=e^{k\cdot10.4}$ for $k$ using $k=-\tfrac{\ln(2)}{10.4}$."
+  hint="Replace $A$ by $\tfrac12A_0$ and $t$ by the half-life in $A=A_0e^{kt}$, then solve for $k$."
 >}}
 
 {{< fillin
-  question="For that same Erbium-165 half-life, express the hourly decay rate as a percentage, to two decimal places."
+  question="For that same Erbium-165 half-life, express the hourly decay rate as a percentage, to two decimal places. Keep its negative sign and include the % sign."
   answer="-6.66\%"
   answerForm="percent"
   answerDisplay="$-6.66\%$"
@@ -794,18 +798,19 @@ exponential decay
 >}}
 
 {{< fillin
-  question="A research student is working with a culture of bacteria that doubles in size every twenty minutes. The initial population count was 1350 bacteria. Rounding to five decimal places, write an exponential equation, in minutes, representing this situation."
+  question="A research student is working with a culture of bacteria that doubles in size every twenty minutes. The initial population count was 1,350 bacteria. Rounding to five decimal places, write an exponential equation, in minutes, representing this situation. Write it in the form $f(t)=A_0e^{kt}$."
   answer="1350e^{0.03466t}"
+  answerForm="exponential-model"
   answerDisplay="$f(t)=1350e^{0.03466t}$"
   hint="Use the doubling-time formula $t=\tfrac{\ln2}{k}$ with a doubling time of 20 minutes to solve for $k$."
 >}}
 
 {{< fillin
-  question="To the nearest whole number, what is that same bacteria population's size after 3 hours?"
+  question="To the nearest whole number, what is that same bacteria population's size after 3 hours? Use the exact value of $k$, not the rounded one."
   answer="691200"
   answerForm="decimal"
   answerDisplay="$691{,}200$"
-  hint="Evaluate the equation at $t=180$ minutes."
+  hint="Convert 3 hours to minutes, then evaluate the model with the exact rate $k$ from the doubling-time formula."
 >}}
 
 {{< fillin
@@ -813,30 +818,33 @@ exponential decay
   answer="60"
   answerForm="decimal"
   answerDisplay="60 days"
-  hint="Solve $\tfrac12=e^{kt}$ for $t$ with $k=-0.0115$."
+  hint="Write the daily decay rate as a negative decimal $k$ and use the half-life formula."
 >}}
 
 ### Use Newton's Law of Cooling
 
 {{< fillin
-  question="A turkey is taken out of the oven with an internal temperature of 165°F and is allowed to cool in a 75°F room. After half an hour, the internal temperature of the turkey is 145°F. Write a formula, T(t), that models this situation, with t in minutes."
+  question="A turkey is taken out of the oven with an internal temperature of 165°F and is allowed to cool in a 75°F room. After half an hour, the internal temperature of the turkey is 145°F. Write a formula, T(t), that models this situation, with t in minutes. Round $k$ to six decimal places."
   answer="90e^{-0.008377t}+75"
+  answerForm="exponential-model"
   answerDisplay="$T(t)=90e^{-0.008377t}+75$"
-  hint="Set $T_s=75$ and $A=165-75=90$, then use $T(30)=145$ to solve for $k$."
+  hint="Set $T_s$ to the room temperature and $A$ to $T(0)-T_s$, then use the half-hour reading to solve for $k$."
 >}}
 
 {{< fillin
   question="Using that same turkey's cooling model, to the nearest minute, how long will it take the turkey to cool to 110°F?"
   answer="113"
+  answerForm="decimal"
   answerDisplay="113 minutes"
-  hint="Solve $T(t)=110$ for $t$ using $T(t)=90e^{-0.008377t}+75$."
+  hint="Set the turkey model equal to 110, subtract the room temperature, and take the natural log of both sides."
 >}}
 
 {{< fillin
   question="A pot of warm soup with an internal temperature of 100° Fahrenheit was taken off the stove to cool in a 69° F room. After fifteen minutes, the internal temperature of the soup was 95° F. To the nearest minute, how long will it take the soup to cool to 80° F?"
   answer="88"
+  answerForm="decimal"
   answerDisplay="88 minutes"
-  hint="Set $T_s=69$ and $A=100-69=31$, use $T(15)=95$ to find $k$, then solve $T(t)=80$ for $t$."
+  hint="Set $T_s$ to the room temperature and $A$ to $T(0)-T_s$, use the fifteen-minute reading to find $k$, then solve $T(t)=80$ for $t$."
 >}}
 
 ### Use logistic-growth models
@@ -854,7 +862,7 @@ exponential decay
   answer="7.3"
   answerForm="decimal"
   answerDisplay="7.3 years"
-  hint="Solve $\tfrac{1000}{1+9e^{-0.6t}}=900$ for $t$."
+  hint="Set $P(t)=900$, isolate the exponential term, and take the natural log of both sides."
 >}}
 
 A different logistic growth model is given by $f(x)=\tfrac{150}{1+8e^{-2x}}$.
@@ -862,7 +870,8 @@ A different logistic growth model is given by $f(x)=\tfrac{150}{1+8e^{-2x}}$.
 {{< fillin
   question="For that model, find the carrying capacity."
   answer="150"
-  hint="The carrying capacity is the constant $c$ in $f(x)=\tfrac{c}{1+ae^{-bx}}$ — the value the population approaches as $x$ grows without bound, not an evaluated point."
+  answerForm="decimal"
+  hint="Find the value $f(x)$ approaches as $x$ grows without bound: what happens to $e^{-2x}$?"
 >}}
 
 {{< fillin
@@ -876,9 +885,9 @@ A different logistic growth model is given by $f(x)=\tfrac{150}{1+8e^{-2x}}$.
 ### Choose an appropriate model for data
 
 {{< multiplechoice
-  question="A graphing calculator scatter plot of the data below rises steeply at first, then levels off, always increasing. Does the data best fit a linear, exponential, or logarithmic model?"
+  question="Enter the data from the table below into a graphing calculator and graph the resulting scatter plot. Determine whether the data from the table could represent a function that is linear, exponential, or logarithmic."
   answer="logarithmic"
-  hint="Check whether the curve is concave down, always rising but by smaller and smaller amounts."
+  hint="Compare successive differences and successive ratios of the $f(x)$-values, then check which way the scatter plot bends."
 >}}
 linear
 exponential
@@ -892,7 +901,7 @@ logarithmic
 {{< multiplechoice
   question="Determine whether the data from the table below could best be represented as a function that is linear, exponential, or logarithmic."
   answer="exponential"
-  hint="Check whether consecutive $f(x)$-values share a common ratio."
+  hint="Compare successive differences and successive ratios of the $f(x)$-values."
 >}}
 linear
 exponential
@@ -904,10 +913,11 @@ logarithmic
 | $f(x)$ | $0.694$ | $0.833$ | $1$ | $1.2$ | $1.44$ | $1.728$ | $2.074$ | $2.488$ |
 
 {{< fillin
-  question="Write a formula for a model that represents that same data."
+  question="Write a formula for a model that represents that same data, in the form $f(x)=ab^x$."
   answer="1.2^x"
+  answerForm="exponential-model"
   answerDisplay="$f(x)=1.2^x$"
-  hint="Since the $f(x)$-values share a common ratio, the model is exponential; use $f(0)$ for the leading coefficient and the common ratio for the base."
+  hint="Read $a$ from $f(0)$, and divide successive $f(x)$-values to find $b$."
 >}}
 
 ### Express an exponential model in base $e$
@@ -917,23 +927,25 @@ logarithmic
   answer="-0.3567"
   answerForm="decimal"
   answerDisplay="$k\approx-0.3567$"
-  hint="A 30% hourly decay means each hour multiplies the amount by 0.70, so $e^{k}=0.70$."
+  hint="Find the factor the amount is multiplied by each hour, set $e^k$ equal to it, and take the natural log."
 >}}
 
 {{< fillin
   question="Using that same drug model, find the amount of the drug that would remain in the patient's system after 3 hours. Round to the nearest milligram."
   answer="43"
+  answerForm="decimal"
   answerDisplay="43 mg"
-  hint="Evaluate $A=125e^{-0.3567\cdot3}$."
+  hint="Substitute $t=3$ into the drug model and evaluate."
 >}}
 
 {{< fillin
   question="To prove the identity $b^x=e^{x\ln(b)}$ for positive $b\ne1$, start from $y=b^x$ and take the natural logarithm of both sides: $\ln(y)=$ ____."
   answer="x\ln(b)"
+  answerForm="expanded-logarithms"
   answerDisplay="$x\ln(b)$"
   hint="Apply the power rule of logarithms to $\ln\left(b^x\right)$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 4.7: Exponential and Logarithmic Models](https://openstax.org/books/precalculus-2e/pages/4-7-exponential-and-logarithmic-models) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: excluded a "coreq-skills" block present in the pinned CNXML module (a corequisite-course skills review covering compound interest, exponential growth/decay applications, decibel levels, and the Richter scale, with its own short exercise set) that does not appear in the printed Precalculus 2e text — pages 494–495 of the source PDF confirm the printed section runs directly from the chapter introduction into "Modeling Exponential Growth and Decay," with no corequisite-skills material between them; omitted the decorative nuclear-reactor photograph, which carries no mathematics; omitted the section's five Media links to external graphing-calculator resources; recreated every graph as an accessible inline SVG — the labeled-points growth curve $y=2e^{3x}$ and decay curve $y=3e^{-2x}$; the generic growth/decay panels of $y=A_0e^{kt}$ (drawn with concrete $A_0=2$, $k=\pm1$ so the curves are plottable, keeping the source's own symbolic point labels, which name the high point and low point of each panel rather than literal coordinates); the bacteria-growth curve $y=10e^{(\ln2)t}$, labeled by its equivalent simplified form $y=10\cdot2^t$; the generic logistic S-curve with its carrying-capacity asymptote, initial-value point, and point-of-maximum-growth point; the flu-epidemic logistic curve $f(t)=\tfrac{1000}{1+999e^{-0.6030t}}$ with its four data-point annotations; the nine-point scatter plot of Table 1; the logarithmic curve $y=2\ln(x)$ and the identical-looking $y=\ln(x^2)$ over $x>0$, each overlaid with the same nine data points; and the full two-branch graph of $y=\ln(x^2)$ showing the extra branch for $x<0$. The generic logistic S-curve, the flu-epidemic logistic curve, and the left-hand ($x<0$) branch of $y=\ln(x^2)$ are each drawn from their exact closed-form equation by an analytic primitive: this authoring pass added a `logistic` curve kind and a `reflect` option on the `log` curve to `graph-core.mjs`, which previously had neither, so all three had to be hand-sampled as dense point lists. Presented the compound-model comparison table (Try It data) and Table 1/Table 2 data as Markdown tables; renamed the rumor model's population function from the source's $N(t)$ to $p(t)$, since $N$ is reserved by this project's compute engine for numeric evaluation; converted the "Try It" practice problems into interactive exercises with instant feedback — a fill-in for the plutonium-244 half-life function, a multiple-choice plus fill-in for the cesium-137 comparison (splitting the source's combined "which, and what is the exact value" answer into a categorical choice and a decimal value), a fill-in for the three-year Moore's-Law doubling function, a fill-in for the pitcher-of-water cooling time, a fill-in for the day-15 flu estimate, a fill-in for the data-table exponential model, and a fill-in for the base-$e$ conversion of $y=3(0.5)^x$; and adapted eighteen selected end-of-section exercises with an answer present in the CNXML solution key — a half-life verbal identification, the Erbium-165 hourly decay rate (split into its decimal and percentage parts), the twenty-minute bacteria-doubling model and its three-hour population, the Iodine-125 half-life, the turkey and soup Newton's-Law-of-Cooling problems, the fish-farm logistic doubling time and time-to-900, a separate logistic carrying-capacity identification, the town-rumor logistic evaluation, two Technology-section model-classification tables, and the drug-decay base-$e$ conversion together with its three-hour evaluation and the general $b^x=e^{x\ln(b)}$ identity — into nineteen interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 4.7: Exponential and Logarithmic Models](https://openstax.org/books/precalculus-2e/pages/4-7-exponential-and-logarithmic-models) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: excluded a "coreq-skills" block present in the pinned CNXML module (a corequisite-course skills review covering compound interest, exponential growth/decay applications, decibel levels, and the Richter scale, with its own short exercise set) that does not appear in the printed Precalculus 2e text — pages 494–495 of the source PDF confirm the printed section runs directly from the chapter introduction into "Modeling Exponential Growth and Decay," with no corequisite-skills material between them; omitted the decorative nuclear-reactor photograph, which carries no mathematics; omitted the section's five Media links to external graphing-calculator resources; recreated every graph as an accessible figure — the labeled-points growth curve $y=2e^{3x}$ and decay curve $y=3e^{-2x}$; the generic growth/decay panels of $y=A_0e^{kt}$ (drawn with concrete $A_0=2$, $k=\pm1$ so the curves are plottable, keeping the source's symbolic point labels, except that the decay panel reads $\left(\tfrac1k,A_0e\right)$ at its high point and $\left(-\tfrac1k,\tfrac{A_0}{e}\right)$ at its low point where the source prints $\left(-\tfrac1k,A_0e\right)$ and $\left(\tfrac1k,\tfrac{A_0}{e}\right)$: with $k<0$, $\tfrac1k$ is negative, and $A_0e^{k\cdot\frac1k}=A_0e$); the bacteria-growth curve $y=10e^{(\ln2)t}$, labeled by its equivalent simplified form $y=10\cdot2^t$; the generic logistic S-curve with its carrying-capacity asymptote, initial-value point, and point-of-maximum-growth point; the flu-epidemic logistic curve $f(t)=\tfrac{1000}{1+999e^{-0.6030t}}$ with its four data-point annotations; the nine-point scatter plot of Table 1; the logarithmic curve $y=2\ln(x)$ and the identical-looking $y=\ln(x^2)$ over $x>0$, each overlaid with the same nine data points; and the full two-branch graph of $y=\ln(x^2)$ showing the extra branch for $x<0$. The labelled points, asymptote labels, and curve equations follow the source figures; the generic logistic curve names its two points in its labels ("Initial value", "Point of maximum growth") where the source uses leader arrows. Presented the compound-model comparison table (Try It data) and Table 1/Table 2 data as Markdown tables; renamed the rumor model's population function from the source's $N(t)$ to $p(t)$, since $N$ is reserved by this project's compute engine for numeric evaluation; in the How To for carbon-14 dating, named the decimal $r$, as in the equation it is substituted into, where the source calls it $k$; labelled the carbon-14 example's last step "Substitute for $k$", where the source writes "for $r$", a letter the derivation never uses; keyed the Erbium-165 hourly decay rate as $-0.0666$ and $-6.66\%$, since $\tfrac{\ln(0.5)}{10.4}=-0.06665\ldots$, where the source prints $-0.0667$ and $6.67\%$; converted the "Try It" practice problems into interactive exercises with instant feedback — a fill-in for the plutonium-244 half-life function, a multiple-choice plus fill-in for the cesium-137 comparison (splitting the source's combined "which, and what is the exact value" answer into a categorical choice and a decimal value), a fill-in for the three-year Moore's-Law doubling function, a fill-in for the pitcher-of-water cooling time, a fill-in for the day-15 flu estimate, a fill-in for the data-table exponential model, and a fill-in for the base-$e$ conversion of $y=3(0.5)^x$; and adapted fifteen selected end-of-section exercises with an answer present in the CNXML solution key — a half-life verbal identification, the Erbium-165 hourly decay rate (split into its decimal and percentage parts), the twenty-minute bacteria-doubling model and its three-hour population, the Iodine-125 half-life, the turkey and soup Newton's-Law-of-Cooling problems, the fish-farm logistic doubling time and time-to-900, a separate logistic carrying-capacity identification, the town-rumor logistic evaluation, a Technology-section model-classification table, the Numeric-section table classification with its formula (split into a choice and a fill-in), and the drug-decay base-$e$ conversion together with its three-hour evaluation and the general $b^x=e^{x\ln(b)}$ identity — into nineteen interactive components in a closing Practice block, one group per objective; where a source item leaves the shape of a graded answer open, its stem adds the rounding or form the source solution uses (round $k$ to two significant figures or six decimal places, keep $k$ exact, write the model in the form $y=A_0e^{kx}$ or $f(x)=ab^x$, use the exact rate for the three-hour bacteria count).</small>

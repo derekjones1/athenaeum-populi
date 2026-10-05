@@ -26,10 +26,10 @@ The Richter Scale is a base-ten logarithmic scale. In other words, an earthquake
 
 In order to analyze the magnitude of earthquakes or compare the magnitudes of two different earthquakes, we need to be able to convert between logarithmic and exponential form. For example, suppose the amount of energy released from one earthquake were 500 times greater than the amount of energy released from another. We want to calculate the difference in magnitude. The equation that represents this problem is $10^x=500$, where $x$ represents the difference in magnitudes on the **Richter Scale**. How would we solve for $x$?
 
-We have not yet learned a method for solving exponential equations. None of the algebraic tools discussed so far is sufficient to solve $10^x=500$. We know that $10^2=100$ and $10^3=1000$, so it is clear that $x$ must be some value between 2 and 3, since $y=10^x$ is increasing. We can examine a graph to better estimate the solution.
+We have not yet learned a method for solving exponential equations. None of the algebraic tools discussed so far is sufficient to solve $10^x=500$. We know that $10^2=100$ and $10^3=1{,}000$, so it is clear that $x$ must be some value between 2 and 3, since $y=10^x$ is increasing. We can examine a graph to better estimate the solution.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The curve y equals 10 to the x power, rising from near 0 at x = -0.5 to 1,000 at x = 3. A dashed horizontal line at y = 500 crosses the curve at about x = 2.7, the value being estimated.","xMin":-0.5,"xMax":3,"yMin":-100,"yMax":1000,"xUnit":110,"yUnit":0.45,"margin":40,"grid":false,"tickLabels":true,"xTickStep":0.5,"yTickStep":100,"curves":[{"kind":"exp","a":1,"h":0,"k":0,"b":10}],"lines":[{"y":500,"dashed":true,"arrows":false}],"texts":[{"at":[2.15,850],"text":"y = 10ˣ","anchor":"start"},{"at":[0.3,560],"text":"y = 500","anchor":"start"}]}
+{"ariaLabel":"The curve y equals 10 to the x power, rising from just above 0 on the left to 1,000 at x = 3. A dashed horizontal line at y = 500 crosses the curve between x = 2.5 and x = 3, at the value being estimated.","xMin":-0.75,"xMax":3.25,"yMin":-150,"yMax":1050,"xUnit":110,"yUnit":0.45,"margin":40,"grid":false,"tickLabels":true,"xTickStep":0.5,"yTickStep":100,"curves":[{"kind":"exp","a":1,"h":0,"k":0,"b":10,"from":-0.3,"to":3}],"lines":[{"y":500,"dashed":true,"arrows":false}],"texts":[{"at":[2.15,850],"text":"y = 10ˣ","anchor":"start"},{"at":[0.3,560],"text":"y = 500","anchor":"start"}]}
 {{< /apfigure >}}
 
 Estimating from a graph, however, is imprecise. To find an algebraic solution, we must introduce a new function. Observe that the graph passes the horizontal line test. The exponential function $y=b^x$ is one-to-one, so its inverse, $x=b^y$, is also a function. As is the case with all inverse functions, we simply interchange $x$ and $y$ and solve for $y$ to find the inverse function. To represent $y$ as a function of $x$, we use a logarithmic function of the form $y=\log_b(x)$. The base $b$ **logarithm** of a number is the exponent by which we must raise $b$ to get that number.
@@ -40,9 +40,13 @@ We can express the relationship between logarithmic form and its corresponding e
 
 $$\log_b(x)=y\iff b^y=x,\quad b>0,\ b\ne1$$
 
-Note that the base $b$ is always positive. To help with converting back and forth, take a close look at the equations: in both forms, $y$ is the exponent and $b$ is the base — a quick way to remember the relationship is to think "$b$ to the $y$ equals $x$."
+Note that the base $b$ is always positive. A quick way to remember the conversion is to read $\log_b(x)=y$ in a loop: start at the base $b$, go *to* the $y$ on the right of the equals sign, and come back around to the $x$ — think "$b$ to the $y$ equals $x$."
 
-Because logarithm is a function, it is most correctly written as $\log_b(x)$, using parentheses to denote function evaluation, just as we would with $f(x)$. However, when the input is a single variable or number, it is common to see the parentheses dropped and the expression written without parentheses, as $\log_b x$. Note that many calculators require parentheses around the $x$. For example, $\log_b(c)=a$ means $b^a=c$.
+Because logarithm is a function, it is most correctly written as $\log_b(x)$, using parentheses to denote function evaluation, just as we would with $f(x)$. However, when the input is a single variable or number, it is common to see the parentheses dropped and the expression written without parentheses, as $\log_b x$. Note that many calculators require parentheses around the $x$.
+
+We can illustrate the notation of logarithms as follows:
+
+$$\log_b(c)=a\quad\text{means}\quad b^a=c$$
 
 Notice that, comparing the logarithm function and the exponential function, the input and the output are switched. This means $y=\log_b(x)$ and $y=b^x$ are inverse functions.
 
@@ -94,7 +98,7 @@ No. Because the base of an exponential function is always positive, no power of 
   answer="10^6=1{,}000{,}000"
   answerForm="exponential-form"
   answerDisplay="$10^6=1{,}000{,}000$"
-  hint="Identify $b=10$, $y=6$, and $x=1{,}000{,}000$, then rewrite as $b^y=x$."
+  hint="Identify the base $b$, the value $y$ the logarithm equals, and the argument $x$, then rewrite the equation as $b^y=x$."
 >}}
 
 {{< fillin
@@ -102,7 +106,7 @@ No. Because the base of an exponential function is always positive, no power of 
   answer="5^2=25"
   answerForm="exponential-form"
   answerDisplay="$5^2=25$"
-  hint="Identify $b=5$, $y=2$, and $x=25$, then rewrite as $b^y=x$."
+  hint="Identify the base $b$, the value $y$ the logarithm equals, and the argument $x$, then rewrite the equation as $b^y=x$."
 >}}
 
 ## Converting from Exponential to Logarithmic Form
@@ -125,38 +129,29 @@ To convert from exponents to logarithms, we follow the same steps in reverse. We
 
 (c) Here, $b=10$, $x=-4$, and $y=\tfrac{1}{10{,}000}$. Therefore, the equation $10^{-4}=\tfrac{1}{10{,}000}$ is equivalent to $\log_{10}\left(\tfrac{1}{10{,}000}\right)=-4$.
 
-{{< multiplechoice
-  question="Which equation is $3^2=9$ written in logarithmic form?"
-  answer="$\log_3(9)=2$"
-  hint="The base of the power becomes the base of the logarithm, and the exponent becomes the value the logarithm equals."
+{{< fillin
+  question="Write $n^4=103$ in logarithmic form."
+  answer="\log_n(103)=4"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_n(103)=4$"
+  hint="Identify the base $b$, the exponent $x$, and the output $y$ of the power, then write the equation as $x=\log_b(y)$."
 >}}
-$\log_3(9)=2$
-$\log_9(3)=2$
-$\log_2(9)=3$
-$\log_3(2)=9$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Which equation is $5^3=125$ written in logarithmic form?"
-  answer="$\log_5(125)=3$"
-  hint="The base of the power becomes the base of the logarithm, and the exponent becomes the value the logarithm equals."
+{{< fillin
+  question="Write $5^3=125$ in logarithmic form."
+  answer="\log_5(125)=3"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_5(125)=3$"
+  hint="Identify the base $b$, the exponent $x$, and the output $y$ of the power, then write the equation as $x=\log_b(y)$."
 >}}
-$\log_5(125)=3$
-$\log_{125}(5)=3$
-$\log_3(125)=5$
-$\log_5(3)=125$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Which equation is $2^{-1}=\tfrac{1}{2}$ written in logarithmic form?"
-  answer="$\log_2\left(\tfrac{1}{2}\right)=-1$"
-  hint="The base of the power becomes the base of the logarithm, and the exponent becomes the value the logarithm equals."
+{{< fillin
+  question="Write $2^{-1}=\tfrac{1}{2}$ in logarithmic form."
+  answer="\log_2\left(\frac{1}{2}\right)=-1"
+  answerForm="logarithmic-form"
+  answerDisplay="$\log_2\left(\tfrac{1}{2}\right)=-1$"
+  hint="Identify the base $b$, the exponent $x$, and the output $y$ of the power, then write the equation as $x=\log_b(y)$."
 >}}
-$\log_2\left(\tfrac{1}{2}\right)=-1$
-$\log_{1/2}(2)=-1$
-$\log_2(-1)=\tfrac{1}{2}$
-$\log_{-1}\left(\tfrac{1}{2}\right)=2$
-{{< /multiplechoice >}}
 
 ## Evaluating Logarithms
 
@@ -192,10 +187,10 @@ $$\log_4(64)=3$$
 
 {{< fillin
   question="Solve $y=\log_{121}(11)$ without using a calculator."
-  answer="1/2"
-  answerForm="evaluated-logarithm"
+  answer="\frac{1}{2}"
+  answerForm="evaluated-logarithm lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
-  hint="Rewrite as $121^y=11$, and recall that $\sqrt{121}=(121)^{1/2}=11$."
+  hint="Rewrite the logarithm in exponential form, $121^y=11$, and ask how $11$ is related to $121$."
 >}}
 
 **Example.** Evaluate $y=\log_3\left(\tfrac{1}{27}\right)$ without using a calculator.
@@ -216,7 +211,7 @@ Therefore, $\log_3\left(\tfrac{1}{27}\right)=-3$.
 {{< fillin
   question="Evaluate $y=\log_2\left(\tfrac{1}{32}\right)$ without using a calculator."
   answer="-5"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$-5$"
   hint="Rewrite as $2^y=\tfrac{1}{32}$, and recall that $b^{-a}=\tfrac{1}{b^a}$."
 >}}
@@ -257,20 +252,20 @@ Currently, we use $\log(x)$ or $\text{lg}(x)$ as the common logarithm, $\text{lb
 2. Use previous knowledge of powers of $10$ to identify $y$ by asking, "To what exponent must $10$ be raised in order to get $x$?"
 {{< /callout >}}
 
-**Example.** Evaluate $y=\log(1000)$ without using a calculator.
+**Example.** Evaluate $y=\log(1{,}000)$ without using a calculator.
 
-**Solution.** First we rewrite the logarithm in exponential form: $10^y=1000$. Next, we ask, "To what exponent must $10$ be raised in order to get 1000?" We know
+**Solution.** First we rewrite the logarithm in exponential form: $10^y=1{,}000$. Next, we ask, "To what exponent must $10$ be raised in order to get 1,000?" We know
 
-$$10^3=1000$$
+$$10^3=1{,}000$$
 
-Therefore, $\log(1000)=3$.
+Therefore, $\log(1{,}000)=3$.
 
 {{< fillin
-  question="Evaluate $y=\log(1{,}000{,}000)$."
-  answer="6"
-  answerForm="evaluated-logarithm"
-  answerDisplay="$6$"
-  hint="Ask what power of $10$ gives $1{,}000{,}000$."
+  question="Evaluate $2\log\left(100^{-3}\right)$ without using a calculator."
+  answer="-12"
+  answerForm="evaluated-logarithm decimal"
+  answerDisplay="$-12$"
+  hint="Write $100^{-3}$ as a power of $10$ to evaluate the logarithm, then multiply the result by $2$."
 >}}
 
 {{< callout type="info" >}}
@@ -291,11 +286,11 @@ Therefore, $\log(1000)=3$.
 
 Rounding to four decimal places, $\log(321)\approx2.5065$.
 
-**Analysis.** Note that $10^2=100$ and that $10^3=1000$. Since 321 is between 100 and 1000, we know that $\log(321)$ must be between $\log(100)$ and $\log(1000)$. This gives us the following:
+**Analysis.** Note that $10^2=100$ and that $10^3=1{,}000$. Since 321 is between 100 and 1,000, we know that $\log(321)$ must be between $\log(100)$ and $\log(1{,}000)$. This gives us the following:
 
 $$
 \begin{array}{lcccl}
-100 &<& 321 &<& 1000 \\[4pt]
+100 &<& 321 &<& 1{,}000 \\[4pt]
 2 &<& 2.5065 &<& 3
 \end{array}
 $$
@@ -328,7 +323,7 @@ The difference in magnitudes was about $2.699$.
   answer="3.929"
   answerForm="decimal"
   answerDisplay="$3.929$"
-  hint="Rewrite the equation in logarithmic form, $x=\log(8{,}500)$, then evaluate with a calculator."
+  hint="Rewrite the exponential equation in logarithmic form using the definition of the common logarithm, then evaluate it with a calculator and round to three decimal places."
 >}}
 
 ## Using Natural Logarithms
@@ -372,7 +367,7 @@ Rounding to four decimal places, $\ln(500)\approx6.2146$.
 {{< multiplechoice
   question="Evaluate $\ln(-500)$."
   answer="It is not possible; the natural logarithm of a negative number is not a real number."
-  hint="The domain of every logarithm, including the natural logarithm, is the positive real numbers."
+  hint="Rewrite $y=\ln(-500)$ in exponential form, and ask whether any power of $e$ can equal $-500$."
 >}}
 It is not possible; the natural logarithm of a negative number is not a real number.
 $\approx6.2146$
@@ -440,16 +435,16 @@ $0$
 
 {{< fillin
   question="Evaluate $\log_6(\sqrt6)$ without using a calculator."
-  answer="1/2"
-  answerForm="evaluated-logarithm"
+  answer="\frac{1}{2}"
+  answerForm="evaluated-logarithm lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
-  hint="Ask what power of $6$ gives $\sqrt6$; recall that $\sqrt6=6^{1/2}$."
+  hint="Ask what power of $6$ gives $\sqrt6$; write the square root as a power."
 >}}
 
 {{< fillin
   question="Evaluate $6\log_8(4)$ without using a calculator."
   answer="4"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$4$"
   hint="First find $\log_8(4)$ by asking what power of $8$ gives $4$, then multiply the result by $6$."
 >}}
@@ -459,7 +454,7 @@ $0$
 {{< fillin
   question="Evaluate $\log(0.001)$ without using a calculator."
   answer="-3"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$-3$"
   hint="Rewrite $0.001$ as a power of $10$."
 >}}
@@ -477,19 +472,19 @@ $0$
 {{< fillin
   question="Evaluate $\ln(1)$ without using a calculator."
   answer="0"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$0$"
-  hint="The logarithm of $1$ is always $0$, in any base."
+  hint="Rewrite the logarithm in exponential form, $e^y=1$, and ask what power of $e$ gives $1$."
 >}}
 
 {{< fillin
   question="Evaluate $25\ln\left(e^{2/5}\right)$ without using a calculator."
   answer="10"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
   answerDisplay="$10$"
   hint="Use $\ln(e^x)=x$ to evaluate the logarithm first, then multiply by $25$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 4.3: Logarithmic Functions](https://openstax.org/books/precalculus-2e/pages/4-3-logarithmic-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of earthquake damage in Honshu, Japan, which carries no mathematics, and reworded the sentence that pointed at it; omitted three purely typographic arrow/mnemonic illustrations (a figure showing the positions of the exponent and base in $\log_a(x)=y$ and $x=a^y$; a circular-arrow "Think $b$ to the $y=x$" mnemonic; and a circular-arrow illustration of $\log_b(c)=a$ meaning $b^a=c$), folding each one's content directly into the surrounding prose instead; recreated the graph of $y=10^x$ and $y=500$ as an accessible inline SVG built from the exact curve equation; corrected the sentence introducing common-logarithm notation, which the pinned CNXML gets wrong twice: it prints "$\log_b(x), \text{lg}(x)$ as the common logarithm" — a base-$b$ logarithm is not the common (base-10) logarithm the surrounding paragraph defines — and then deprecates the wrong notation, "Writing $\text{lg}(x)$ without specifying a base is now considered bad form", when $\text{lg}$ is fixed at base 10 by ISO 80000-2 and it is bare $\log(x)$ that is ambiguous, exactly as the paragraph above this one explains; this page writes "$\log(x)$ or $\text{lg}(x)$ as the common logarithm" and "Writing $\log(x)$ without specifying a base"; converted the "write the following exponential equations in logarithmic form" Try It's three numeric parts ($3^2=9$, $5^3=125$, $2^{-1}=\tfrac{1}{2}$) from fill-ins into multiple-choice questions, because the pinned compute-engine build grades any two true, fully numeric equations as equal to each other regardless of content (for example $1+1=2$ grades correct against $3+3=6$), which would let a learner pass by retyping the printed exponential equation with no available answer-shape guard against it; converted the "Evaluate $\ln(-500)$" Try It into a multiple-choice question, since its answer is that the expression is undefined rather than a number; omitted the "Access this online resource" media link; and adapted ten selected end-of-section exercises — two logarithmic-to-exponential rewrites, two exponential-to-logarithmic rewrites, two mental base-$b$ evaluations, two common-logarithm evaluations, and two natural-logarithm evaluations — into interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 4.3: Logarithmic Functions](https://openstax.org/books/precalculus-2e/pages/4-3-logarithmic-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: excluded the "coreq-skills" block the pinned CNXML module prepends to the section (an Intermediate Algebra corequisite review of converting between exponential and logarithmic form and evaluating logarithms, with its own objectives, worked examples, and exercise sets), which the printed Precalculus 2e text does not contain; omitted the decorative photograph of earthquake damage in Honshu, Japan, which carries no mathematics, and reworded the sentence that pointed at it; set the two circular-arrow notation illustrations in words and math instead of as images — the "Think $b$ to the $y=x$" mnemonic as a sentence describing the loop its arrows trace, and "$\log_b(c)=a$ means $b^a=c$" as a display equation; redrew the graph of $y=10^x$ and $y=500$ from the exact curve equation, without the source's grid lines and with the axes run a little past the last labelled tick; corrected the sentence introducing common-logarithm notation, which the pinned CNXML gets wrong twice: it prints "$\log_b(x), \text{lg}(x)$ as the common logarithm" — a base-$b$ logarithm is not the common (base-10) logarithm the surrounding paragraph defines — and then deprecates the wrong notation, "Writing $\text{lg}(x)$ without specifying a base is now considered bad form", when $\text{lg}$ is fixed at base 10 by ISO 80000-2 and it is bare $\log(x)$ that is ambiguous, exactly as the paragraph above this one explains; this page writes "$\log(x)$ or $\text{lg}(x)$ as the common logarithm" and "Writing $\log(x)$ without specifying a base"; converted the "Evaluate $\ln(-500)$" Try It into a multiple-choice question, since its answer is that the expression is undefined rather than a number; replaced two Try Its whose answers the page already prints with unused answer-keyed section exercises of the same kind — "write $3^2=9$ in logarithmic form" (the first worked example states $\log_3(9)=2$ is equivalent to $3^2=9$) with "write $n^4=103$ in logarithmic form", and "evaluate $\log(1{,}000{,}000)$" (the Try It before it prints $\log_{10}(1{,}000{,}000)=6$) with "evaluate $2\log(100^{-3})$ without using a calculator"; omitted the "Access this online resource" media link; and adapted ten selected end-of-section exercises — two logarithmic-to-exponential rewrites, two exponential-to-logarithmic rewrites, two mental base-$b$ evaluations, two common-logarithm evaluations, and two natural-logarithm evaluations — into interactive components in a closing Practice block, one group per objective.</small>

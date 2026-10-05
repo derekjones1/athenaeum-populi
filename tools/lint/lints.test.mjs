@@ -427,7 +427,7 @@ test('a numeric, bound, or coordinate key needs a value form that refuses it unw
   assert(lint(fillin('(-\\infty,107]')).some(unworked), 'an interval endpoint fires');
   assert(lint(fillin('(2,\\frac{3}{2})')).some(unworked), 'a pair coordinate fires');
   assert.equal(lint(fillin('(2,\\frac{3}{2})', 'lowest-terms')).filter(unworked).length, 0, 'lowest-terms reaches each coordinate');
-  assert.equal(lint(fillin('105'), 'content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md').filter(unworked).length, 0,
+  assert.equal(lint(fillin('105'), 'content/math/precalculus/05-trigonometric-functions/01-angles.md').filter(unworked).length, 0,
     'a Precalculus chapter whose re-review row is open is not yet held to it');
 });
 

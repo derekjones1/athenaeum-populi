@@ -90,7 +90,7 @@ data.
 
   Note that:
 
-  - $b$ must be non-negative.
+  - $b$ must be positive.
   - when $b>1$, we have an exponential growth model.
   - when $0<b<1$, we have an exponential decay model.
 {{< /callout >}}
@@ -159,7 +159,7 @@ likely to crash as a person who has not been drinking alcohol.
    scatterplot to verify it is a good fit, as shown below:
 
    {{< apfigure kind="graph" >}}
-   {"ariaLabel":"The same scatter plot with the fitted exponential curve drawn through it, rising slowly at first and then sharply toward the upper right, passing close to nearly every plotted point.","xMin":0,"xMax":0.22,"yMin":0,"yMax":110,"xUnit":1450,"yUnit":3,"grid":false,"xTickStep":0.02,"xTickGrouping":false,"yTickStep":10,"tickLabels":true,"xLabel":"x","yLabel":"y","points":[{"at":[0,1]},{"at":[0.01,1.03]},{"at":[0.03,1.06]},{"at":[0.05,1.38]},{"at":[0.07,2.09]},{"at":[0.09,3.54]},{"at":[0.11,6.41]},{"at":[0.13,12.6]},{"at":[0.15,22.1]},{"at":[0.17,39.05]},{"at":[0.19,65.32]},{"at":[0.21,99.78]}],"curves":[{"kind":"exp","a":0.58304829,"b":22072021300}]}
+   {"ariaLabel":"The same scatter plot with the fitted exponential curve drawn through it, rising slowly at first and then sharply toward the upper right, passing close to nearly every plotted point.","xMin":0,"xMax":0.22,"yMin":0,"yMax":110,"xUnit":1450,"yUnit":3,"grid":false,"xTickStep":0.02,"xTickGrouping":false,"yTickStep":10,"tickLabels":true,"xLabel":"x","yLabel":"y","points":[{"at":[0,1]},{"at":[0.01,1.03]},{"at":[0.03,1.06]},{"at":[0.05,1.38]},{"at":[0.07,2.09]},{"at":[0.09,3.54]},{"at":[0.11,6.41]},{"at":[0.13,12.6]},{"at":[0.15,22.1]},{"at":[0.17,39.05]},{"at":[0.19,65.32]},{"at":[0.21,99.78]}],"curves":[{"kind":"exp","a":0.58304829,"b":22072021300,"from":0,"arrows":"end"}]}
    {{< /apfigure >}}
 
 2. Use the model to estimate the risk associated with a BAC of $0.16$.
@@ -184,15 +184,17 @@ after graduation.
 | Debt ($) | 620.00 | 761.88 | 899.80 | 1,039.93 | 1,270.63 | 1,589.04 | 1,851.31 | 2,154.92 |
 
 {{< fillin
-  question="Use exponential regression to fit a model to that data, letting $x$ be the month number."
-  answer="522.88585984(1.19645256)^x"
-  answerDisplay="$y=522.88585984(1.19645256)^x$"
+  question="Use exponential regression to fit a model to that data, letting $x$ be the month number. Enter the model with $a$ and $b$ rounded to four decimal places."
+  answer="522.8859(1.1965)^x"
+  answerForm="exponential-model"
+  answerDisplay="$y=522.8859(1.1965)^x$ (unrounded: $y=522.88585984(1.19645256)^x$)"
   hint="Enter the month in L1 and the debt in L2, then run ExpReg to find $a$ and $b$ for $y=ab^x$."
 >}}
 
 {{< fillin
-  question="If spending continues at this rate, what will the graduate's credit card debt be one year (month 12) after graduating?"
+  question="If spending continues at this rate, what will the graduate's credit card debt be one year (month 12) after graduating? Evaluate the model with its unrounded coefficients, and give the debt in dollars, to the nearest cent."
   answer="4499.38"
+  answerForm="decimal"
   answerDisplay="\$4,499.38"
   hint="Evaluate the model you just found at $x=12$."
 >}}
@@ -244,7 +246,7 @@ most commonly used on graphing utilities, $y=a+b\ln(x)$. For this function
 
   Note that
 
-  - all input values, $x$, must be non-negative.
+  - all input values, $x$, must be positive.
   - when $b>0$, the model is increasing.
   - when $b<0$, the model is decreasing.
 {{< /callout >}}
@@ -307,7 +309,7 @@ from 1900–2010.
    is a good fit, as shown below:
 
    {{< apfigure kind="graph" >}}
-   {"ariaLabel":"The same scatter plot with the fitted logarithmic curve drawn through it, rising steeply near decade 1 and then leveling off gradually toward decade 12, passing close to nearly every plotted point.","xMin":0,"xMax":13,"yMin":40,"yMax":85,"xUnit":28,"yUnit":8,"grid":false,"xTickStep":1,"yTickStep":5,"tickLabels":true,"xLabel":"x","yLabel":"y","points":[{"at":[1,47.3]},{"at":[2,50.0]},{"at":[3,54.1]},{"at":[4,59.7]},{"at":[5,62.9]},{"at":[6,68.2]},{"at":[7,69.7]},{"at":[8,70.8]},{"at":[9,73.7]},{"at":[10,75.4]},{"at":[11,76.8]},{"at":[12,78.7]}],"curves":[{"kind":"log","a":13.85752327,"k":42.52722583}]}
+   {"ariaLabel":"The same scatter plot with the fitted logarithmic curve drawn through it, rising steeply near decade 1 and then leveling off gradually toward decade 12, passing close to nearly every plotted point.","xMin":0,"xMax":13,"yMin":40,"yMax":85,"xUnit":28,"yUnit":8,"grid":false,"xTickStep":1,"yTickStep":5,"tickLabels":true,"xLabel":"x","yLabel":"y","points":[{"at":[1,47.3]},{"at":[2,50.0]},{"at":[3,54.1]},{"at":[4,59.7]},{"at":[5,62.9]},{"at":[6,68.2]},{"at":[7,69.7]},{"at":[8,70.8]},{"at":[9,73.7]},{"at":[10,75.4]},{"at":[11,76.8]},{"at":[12,78.7]}],"curves":[{"kind":"log","a":13.85752327,"k":42.52722583,"arrows":"end"}]}
    {{< /apfigure >}}
 
 2. To predict the life expectancy of an American in the year 2030,
@@ -333,15 +335,17 @@ sold, in thousands, from the years 2000–2010.
 | Number Sold (Thousands) | 142 | 149 | 154 | 155 | 159 | 161 | 163 | 164 | 164 | 166 | 167 |
 
 {{< fillin
-  question="Let $x$ represent time in years starting with $x=1$ for the year 2000, and let $y$ represent the number of games sold in thousands. Use logarithmic regression to fit a model to that data."
-  answer="141.91242949+10.45366573\ln(x)"
-  answerDisplay="$y=141.91242949+10.45366573\ln(x)$"
+  question="Let $x$ represent time in years starting with $x=1$ for the year 2000, and let $y$ represent the number of games sold in thousands. Use logarithmic regression to fit a model to that data. Enter the model with $a$ and $b$ rounded to four decimal places."
+  answer="141.9124+10.4537\ln(x)"
+  answerForm="expanded-logarithms"
+  answerDisplay="$y=141.9124+10.4537\ln(x)$ (unrounded: $y=141.91242949+10.45366573\ln(x)$)"
   hint="Enter the year number in L1 and the thousands sold in L2, then run LnReg to find $a$ and $b$ for $y=a+b\ln(x)$."
 >}}
 
 {{< fillin
-  question="If games continue to sell at this rate, how many games will sell in the year 2015 ($x=16$)? Round to the nearest thousand."
+  question="If games continue to sell at this rate, how many games will sell in the year 2015 ($x=16$)? Round to the nearest thousand, and enter the number of games, not thousands."
   answer="171000"
+  answerForm="decimal"
   answerDisplay="171,000 games"
   hint="Evaluate the model you just found at $x=16$, then round the result (in thousands) to the nearest whole thousand."
 >}}
@@ -421,7 +425,7 @@ the years 1995 and 2012.
 
 | Year | 2004 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012 |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Americans with Cellular Service (%) | 62.852 | 68.63 | 76.64 | 82.47 | 85.68 | 89.14 | 91.86 | 95.28 | 98.17 |
+| Americans with Cellular Service (%) | 62.85 | 68.63 | 76.64 | 82.47 | 85.68 | 89.14 | 91.86 | 95.28 | 98.17 |
 
 1. Let $x$ represent time in years starting with $x=0$ for the year 1995.
    Let $y$ represent the corresponding percentage of residents with
@@ -440,7 +444,7 @@ the years 1995 and 2012.
    pattern, as shown below:
 
    {{< apfigure kind="graph" >}}
-   {"ariaLabel":"A scatter plot of years since 1995, 0 through 17, against the percentage of Americans with cellular service, rising slowly at first, then steeply through the middle years, then leveling off as it approaches 100 percent, an S-shaped pattern.","xMin":0,"xMax":20,"yMin":0,"yMax":110,"xUnit":18,"yUnit":3.2,"grid":false,"xTickStep":1,"xTickGrouping":false,"yTickStep":10,"tickLabels":true,"xLabel":"x","yLabel":"y","points":[{"at":[0,12.69]},{"at":[1,16.35]},{"at":[2,20.29]},{"at":[3,25.08]},{"at":[4,30.81]},{"at":[5,38.75]},{"at":[6,45.00]},{"at":[7,49.16]},{"at":[8,55.15]},{"at":[9,62.852]},{"at":[10,68.63]},{"at":[11,76.64]},{"at":[12,82.47]},{"at":[13,85.68]},{"at":[14,89.14]},{"at":[15,91.86]},{"at":[16,95.28]},{"at":[17,98.17]}]}
+   {"ariaLabel":"A scatter plot of years since 1995, 0 through 17, against the percentage of Americans with cellular service, rising slowly at first, then steeply through the middle years, then leveling off as it approaches 100 percent, an S-shaped pattern.","xMin":0,"xMax":20,"yMin":0,"yMax":110,"xUnit":18,"yUnit":3.2,"grid":false,"xTickStep":1,"xTickGrouping":false,"yTickStep":10,"tickLabels":true,"xLabel":"x","yLabel":"y","points":[{"at":[0,12.69]},{"at":[1,16.35]},{"at":[2,20.29]},{"at":[3,25.08]},{"at":[4,30.81]},{"at":[5,38.75]},{"at":[6,45.00]},{"at":[7,49.16]},{"at":[8,55.15]},{"at":[9,62.85]},{"at":[10,68.63]},{"at":[11,76.64]},{"at":[12,82.47]},{"at":[13,85.68]},{"at":[14,89.14]},{"at":[15,91.86]},{"at":[16,95.28]},{"at":[17,98.17]}]}
    {{< /apfigure >}}
 
    Use the "Logistic" command from the STAT then CALC menu to obtain the
@@ -452,7 +456,7 @@ the years 1995 and 2012.
    is a good fit, as shown below:
 
    {{< apfigure kind="graph" >}}
-   {"ariaLabel": "The same scatter plot with the fitted logistic curve drawn through it, an S-shaped curve rising slowly at first, steeply through the middle years, and leveling off above the plotted points as it approaches its upper bound just past 100 percent.", "xMin": 0, "xMax": 20, "yMin": 0, "yMax": 110, "xUnit": 18, "yUnit": 3.2, "grid": false, "xTickStep": 1, "xTickGrouping": false, "yTickStep": 10, "tickLabels": true, "xLabel": "x", "yLabel": "y", "points": [{"at": [0, 12.69]}, {"at": [1, 16.35]}, {"at": [2, 20.29]}, {"at": [3, 25.08]}, {"at": [4, 30.81]}, {"at": [5, 38.75]}, {"at": [6, 45.0]}, {"at": [7, 49.16]}, {"at": [8, 55.15]}, {"at": [9, 62.852]}, {"at": [10, 68.63]}, {"at": [11, 76.64]}, {"at": [12, 82.47]}, {"at": [13, 85.68]}, {"at": [14, 89.14]}, {"at": [15, 91.86]}, {"at": [16, 95.28]}, {"at": [17, 98.17]}], "curves": [{"kind": "logistic", "c": 105.7379526, "a": 6.88328979, "b": 0.2595440013, "arrows": "end"}]}
+   {"ariaLabel": "The same scatter plot with the fitted logistic curve drawn through it, an S-shaped curve rising slowly at first and steeply through the middle years, passing close to every plotted point, then leveling off past x = 17 as it continues toward an upper bound above 100 percent.", "xMin": 0, "xMax": 20, "yMin": 0, "yMax": 110, "xUnit": 18, "yUnit": 3.2, "grid": false, "xTickStep": 1, "xTickGrouping": false, "yTickStep": 10, "tickLabels": true, "xLabel": "x", "yLabel": "y", "points": [{"at": [0, 12.69]}, {"at": [1, 16.35]}, {"at": [2, 20.29]}, {"at": [3, 25.08]}, {"at": [4, 30.81]}, {"at": [5, 38.75]}, {"at": [6, 45.0]}, {"at": [7, 49.16]}, {"at": [8, 55.15]}, {"at": [9, 62.85]}, {"at": [10, 68.63]}, {"at": [11, 76.64]}, {"at": [12, 82.47]}, {"at": [13, 85.68]}, {"at": [14, 89.14]}, {"at": [15, 91.86]}, {"at": [16, 95.28]}, {"at": [17, 98.17]}], "curves": [{"kind": "logistic", "c": 105.7379526, "a": 6.88328979, "b": 0.2595440013, "arrows": "end"}]}
    {{< /apfigure >}}
 
 2. To approximate the percentage of Americans with cellular service in the
@@ -490,15 +494,16 @@ Wadden Sea over the years 1997 to 2012.
 | Seal Population (Thousands) | 19.590 | 21.955 | 22.862 | 23.869 | 24.243 | 24.344 | 24.919 | 25.108 |
 
 {{< fillin
-  question="Let $x$ represent time in years starting with $x=0$ for the year 1997, and let $y$ represent the number of seals in thousands. Use logistic regression to fit a model to that data."
-  answer="25.65665979/(1+6.113686306e^{-0.3852149008x})"
-  answerDisplay="$y=\tfrac{25.65665979}{1+6.113686306e^{-0.3852149008x}}$"
+  question="Let $x$ represent time in years starting with $x=0$ for the year 1997, and let $y$ represent the number of seals in thousands. Use logistic regression to fit a model to that data. Enter the model with $a$, $b$, and $c$ rounded to four decimal places."
+  answer="\frac{25.6567}{1+6.1137e^{-0.3852x}}"
+  answerDisplay="$y=\tfrac{25.6567}{1+6.1137e^{-0.3852x}}$ (unrounded: $y=\tfrac{25.65665979}{1+6.113686306e^{-0.3852149008x}}$)"
   hint="Enter the year number in L1 and the population in L2, then run Logistic to find $a$, $b$, and $c$ for $y=\tfrac{c}{1+ae^{-bx}}$."
 >}}
 
 {{< fillin
-  question="Use that model to predict the seal population for the year 2020 ($x=23$). The model gives the population in thousands, so enter the number of seals, to the nearest whole seal."
+  question="Use that model, with its unrounded coefficients, to predict the seal population for the year 2020 ($x=23$). The model gives the population in thousands, so enter the number of seals, to the nearest whole seal."
   answer="25634"
+  answerForm="decimal"
   answerDisplay="about 25,634 seals"
   hint="Substitute $x=23$ into the model you just found, then convert from thousands to a count."
 >}}
@@ -506,6 +511,7 @@ Wadden Sea over the years 1997 to 2012.
 {{< fillin
   question="To the nearest whole number, what is the limiting value of that model, as a number of seals?"
   answer="25657"
+  answerForm="decimal"
   answerDisplay="about 25,657 seals"
   hint="The limiting value is the constant $c$ in the numerator of the model."
 >}}
@@ -538,8 +544,9 @@ The table below shows a set of data.
 | $f(x)$ | 1,125 | 1,495 | 2,310 | 3,294 | 4,650 | 6,361 |
 
 {{< fillin
-  question="Use the regression feature of a graphing calculator to find an exponential function of the form $f(x)=ab^x$ that best fits the data in the table above."
+  question="Use the regression feature of a graphing calculator to find an exponential function of the form $f(x)=ab^x$ that best fits the data in the table above. Round $a$ and $b$ to three decimal places."
   answer="776.682(1.426)^x"
+  answerForm="exponential-model"
   answerDisplay="$f(x)=776.682(1.426)^x$"
   hint="Enter the $x$-values in L1 and the $f(x)$-values in L2, then run ExpReg."
 >}}
@@ -551,11 +558,11 @@ The table below shows a different set of data.
 | $f(x)$ | 555 | 383 | 307 | 210 | 158 | 122 |
 
 {{< fillin
-  question="Exponential regression on the data above gives the model $f(x)=731.92(0.738)^x$. Write this model as an equivalent exponential equation with base $e$."
+  question="Exponential regression on the data above gives the model $f(x)=731.92(0.738)^x$. Write this model as an equivalent exponential equation with base $e$. Express the exponent's coefficient to four significant digits."
   answer="731.92e^{-0.3038x}"
-  answerForm="base-e"
+  answerForm="base-e exponential-model"
   answerDisplay="$f(x)=731.92e^{-0.3038x}$"
-  hint="Write $0.738=e^{\ln(0.738)}$, so $0.738^x=e^{x\ln(0.738)}$."
+  hint="Any positive base $b$ equals $e^{\ln b}$, so $b^x=e^{(\ln b)x}$; find the natural log of this model's base."
 >}}
 
 ### Build a logarithmic model from data
@@ -567,8 +574,9 @@ The table below shows a set of data.
 | $f(x)$ | 5.1 | 6.3 | 7.3 | 7.7 | 8.1 | 8.6 |
 
 {{< fillin
-  question="Use the LOGarithm option of the REGression feature to find a logarithmic function of the form $y=a+b\ln(x)$ that best fits the data in the table above."
+  question="Use the LOGarithm option of the REGression feature to find a logarithmic function of the form $y=a+b\ln(x)$ that best fits the data in the table above. Round $a$ and $b$ to three decimal places."
   answer="5.063+1.934\ln(x)"
+  answerForm="expanded-logarithms"
   answerDisplay="$y=5.063+1.934\ln(x)$"
   hint="Enter the $x$-values in L1 and the $f(x)$-values in L2, then run LnReg."
 >}}
@@ -592,18 +600,21 @@ The table below shows a set of data.
 {{< fillin
   question="To the nearest whole number, what is the initial value of a population modeled by the logistic equation $P(t)=\tfrac{175}{1+6.995e^{-0.68t}}$?"
   answer="22"
+  answerForm="decimal"
   hint="The initial value is $P(0)$."
 >}}
 
 {{< fillin
   question="What is the carrying capacity of that same population model, $P(t)=\tfrac{175}{1+6.995e^{-0.68t}}$?"
   answer="175"
-  hint="The carrying capacity is the constant in the numerator, the model's upper bound as $t\to\infty$."
+  answerForm="decimal"
+  hint="The carrying capacity is the limiting value the model's outputs approach as $t$ grows without bound."
 >}}
 
 {{< fillin
   question="What is the $y$-intercept on the graph of the logistic model $P(t)=\tfrac{90}{1+5e^{-0.42t}}$? Enter your answer as an ordered pair."
   answer="(0,15)"
+  answerForm="decimal"
   answerDisplay="$(0,15)$"
   hint="Evaluate $P(0)$."
 >}}
@@ -614,6 +625,7 @@ $P(x)=\tfrac{68}{1+16e^{-0.28x}}$.
 {{< fillin
   question="What was the initial population of koi in that pond?"
   answer="4"
+  answerForm="decimal"
   answerDisplay="4 koi"
   hint="The initial population is $P(0)$."
 >}}
@@ -632,6 +644,7 @@ years.
 {{< fillin
   question="How many wolves will that habitat have after 3 years? Round to the nearest whole number."
   answer="38"
+  answerForm="decimal"
   answerDisplay="about 38 wolves"
   hint="Evaluate the model at $x=3$."
 >}}
@@ -640,7 +653,7 @@ years.
   question="Use the intersect feature to approximate the number of years it will take before the population of that habitat reaches half its carrying capacity. Round to the nearest tenth."
   answer="8.7"
   answerForm="decimal"
-  hint="The carrying capacity is 558, so set the model equal to 279 and solve for $x$."
+  hint="Half the carrying capacity is $\tfrac{c}{2}$; set the model equal to it and solve for $x$ by isolating the exponential term."
 >}}
 
 ---
@@ -650,35 +663,51 @@ Exponential Models to Data](https://openstax.org/books/precalculus-2e/pages/4-8-
 by Jay Abramson and OpenStax, © OpenStax, licensed under
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access
 the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e).
-Changes: recreated every scatter plot and fitted-curve graph as an accessible
-inline SVG built from its exact data and equation — the BAC/relative-risk
-scatter and its exponential fit $y=0.58304829(22{,}072{,}021{,}300)^x$; the
-life-expectancy scatter and its logarithmic fit
-$y=42.52722583+13.85752327\ln(x)$; and the cellular-service scatter and its
-logistic fit $y=\tfrac{105.7379526}{1+6.88328979e^{-0.2595440013x}}$, whose
-curve has no closed-form primitive in this site's figure engine and is
-therefore drawn as a dense polyline sampled directly from that exact
-equation rather than any spline approximation. Every regression coefficient
-printed on this page was independently re-derived — ordinary least squares
-of $\ln y$ against $x$ for each exponential model, of $y$ against $\ln x$ for
-each logarithmic model, and Nelder–Mead nonlinear least squares for each
-logistic model — and matched the source's published values to the precision
-shown. Omitted the section's one Media link to an external
-graphing-calculator resource, which carries no transcribable mathematics.
-Converted the three in-page Try Its (credit-card debt, video-game sales, and
-harbor-seal population) into interactive fill-in components, each part of a
-multipart Try It becoming its own component; converted eleven selected
-end-of-section exercises — two exponential-model builds from data tables,
-one logarithmic-model build plus two logarithmic evaluations, and six
-logistic-model evaluations across three scenarios (a generic carrying-
-capacity model, a koi pond, and a wolf habitat) — into interactive
-fill-ins in a closing Practice block, one group per objective. Two exercises
-whose end-of-section items depend on a graphing-calculator "intersect"
-reading were given the underlying model directly in the question text so
-each is answerable from the page alone. One upstream defect is corrected
-here: the pinned CNXML's solution to the Table 9 logarithmic-regression
-exercise (module m49368, exercise id `fs-id1650282`) prints its fitted model
-as $y=5.063+1.934\log(x)$, but the section's own "LnReg" definition returns
-$y=a+b\ln(x)$, and reproducing the regression independently on the printed
-data confirms the natural logarithm, not the common logarithm — this page's
-Practice block states the model with $\ln(x)$.</small>
+Changes: excluded a "coreq-skills" block present in the pinned CNXML module
+(a corequisite-course review of scatter diagrams and linear regression, with
+its own learning objectives and "Practice Makes Perfect" exercises) that does
+not appear in the printed Precalculus 2e text; recreated every scatter plot
+and fitted-curve graph as an accessible generated figure built from its exact
+data and equation — the BAC/relative-risk scatter and its exponential fit
+$y=0.58304829(22{,}072{,}021{,}300)^x$; the life-expectancy scatter and its
+logarithmic fit $y=42.52722583+13.85752327\ln(x)$; and the cellular-service
+scatter and its logistic fit
+$y=\tfrac{105.7379526}{1+6.88328979e^{-0.2595440013x}}$. Every regression
+coefficient printed on this page was independently re-derived — ordinary
+least squares of $\ln y$ against $x$ for each exponential model, of $y$
+against $\ln x$ for each logarithmic model, and nonlinear least squares for
+each logistic model — and matched the source's published values to the
+precision shown. Corrected four source slips: the cellular-service table's
+2004 entry reads $62.85$ (the source table prints $62.852$; its own table
+summary and the published logistic constants both reproduce from $62.85$);
+the logistic example lists the years as the values 0–17 in L1 (the source
+says 0–15, though its data run through 2012); the logarithmic and logistic
+examples say "substitute $x=14$ for the decade" and "$x=18$ for the year"
+(the source drops the noun); and the regression notes state that $b$ and
+every input $x$ must be positive (the source says "non-negative", against
+its own $b>0$ and $x>0$ a few lines earlier). Omitted the section's one Media
+link to an external graphing-calculator resource, which carries no
+transcribable mathematics. Converted the three in-page Try Its (credit-card
+debt, video-game sales, and harbor-seal population) into interactive fill-in
+components, each part of a multipart Try It becoming its own component (the
+cellular-service example's discussion part stays prose); each Try It model
+fill-in asks for its coefficients rounded to four decimal places (the source
+prints eight to ten digits, more than a calculator's display shows) and its
+prediction is computed from the unrounded model, as the source computes it;
+the Practice model fill-ins ask for the source's own three decimal places.
+Converted eleven selected end-of-section exercises — an exponential-model
+build and a base-$e$ rewrite from two data tables, a logarithmic-model build,
+two logarithmic evaluations, and six logistic-model evaluations across four
+models (two stand-alone population models, a koi pond, and a wolf habitat;
+the initial-value-and-carrying-capacity exercise split into two fill-ins) —
+into twelve interactive fill-ins in a closing Practice block, one group per
+objective. Two exercises whose source answers rest on an earlier regression
+the source never prints (the base-$e$ rewrite of the Table 8 model and the
+evaluation of the Table 10 model at $x=10$) state that model in the question
+text, so each is answerable from the page alone. One upstream defect is
+corrected here: the source's solution to the Table 9 logarithmic-regression
+exercise prints its fitted model as $y=5.063+1.934\log(x)$, but the section's
+own "LnReg" definition returns $y=a+b\ln(x)$, and reproducing the regression
+independently on the printed data confirms the natural logarithm, not the
+common logarithm — this page's Practice block states the model with
+$\ln(x)$.</small>

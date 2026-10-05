@@ -95,8 +95,9 @@ $$
 {{< fillin
   question="Solve $5^{2x}=5^{3x+2}$."
   answer="-2"
+  answerForm="decimal"
   answerDisplay="$x=-2$"
-  hint="The bases already match, so set the exponents equal: $2x=3x+2$."
+  hint="The bases already match, so use the one-to-one property to set the exponents equal, then solve for $x$."
 >}}
 
 ## Rewriting Equations So All Powers Have the Same Base
@@ -113,7 +114,7 @@ $$
 \begin{array}{lrcl}
 & 256 &=& 4^{x-5} \\[4pt]
 \text{Rewrite each side as a power with base 2.} & 2^{8} &=& (2^{2})^{x-5} \\[4pt]
-\text{Use the one-to-one property of exponents.} & 2^{8} &=& 2^{2x-10} \\[4pt]
+\text{To take a power of a power, multiply exponents.} & 2^{8} &=& 2^{2x-10} \\[4pt]
 \text{Apply the one-to-one property of exponents.} & 8 &=& 2x-10 \\[4pt]
 \text{Add 10 to both sides.} & 18 &=& 2x \\[4pt]
 \text{Divide by 2.} & x &=& 9
@@ -148,8 +149,9 @@ $$
 {{< fillin
   question="Solve $5^{2x}=25^{3x+2}$."
   answer="-1"
+  answerForm="decimal"
   answerDisplay="$x=-1$"
-  hint="Rewrite $25$ as $5^2$, then set the exponents equal: $2x=2(3x+2)$."
+  hint="Write $25$ as a power of $5$, simplify the power of a power, then use the one-to-one property to set the exponents equal."
 >}}
 
 **Example.** Solve $2^{5x}=\sqrt2$.
@@ -166,9 +168,10 @@ $$
 
 {{< fillin
   question="Solve $5^x=\sqrt5$."
-  answer="1/2"
-  answerDisplay="$\tfrac{1}{2}$"
-  hint="Write $\sqrt5$ as $5^{1/2}$, then set the exponents equal."
+  answer="\frac{1}{2}"
+  answerForm="lowest-terms"
+  answerDisplay="$x=\tfrac{1}{2}$"
+  hint="Write $\sqrt5$ as a power of $5$ with a fractional exponent, then use the one-to-one property."
 >}}
 
 {{< callout type="info" >}}
@@ -190,17 +193,17 @@ the left side is never equal to the right side. Thus, the equation has no
 solution.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The curve y = 3 to the power (x + 1), rising steeply and staying above the x-axis for every x, together with the horizontal line y = -2. The two graphs never cross.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"exp","a":1,"h":-1,"k":0,"b":3}],"lines":[{"y":-2}],"texts":[{"at":[1,4.6],"text":"y = 3ˣ⁺¹","anchor":"start"},{"at":[2.2,-1.5],"text":"y = -2","anchor":"start"},{"at":[-4.8,-3.4],"text":"They do not","anchor":"start"},{"at":[-4.8,-4.3],"text":"cross.","anchor":"start"}]}
+{"ariaLabel":"The curve y = 3 to the power (x + 1), rising steeply and staying above the x-axis for every x, together with the horizontal line y = -2. The two graphs never cross.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"curves":[{"kind":"exp","a":1,"h":-1,"k":0,"b":3,"from":-4.4,"to":0.4}],"lines":[{"y":-2}],"texts":[{"at":[1,3.6],"text":"y = 3ˣ⁺¹","anchor":"start"},{"at":[2.2,-1.5],"text":"y = -2","anchor":"start"},{"at":[-4.8,-3.4],"text":"They do not","anchor":"start"},{"at":[-4.8,-4.3],"text":"cross.","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="Solve $2^x=-100$."
-  answer="No real solution exists, because a positive base raised to any power is always positive."
-  hint="Every power of a positive base is positive, so it can never equal a negative number."
+  answer="No solution"
+  hint="Recall the range of an exponential function with a positive base: which values can $2^x$ take?"
 >}}
-No real solution exists, because a positive base raised to any power is always positive.
-x = -\log_2(100)
-x = \log_2(100)
+No solution
+$x=-\log_2 100$
+$x=\log_2 100$
 {{< /multiplechoice >}}
 
 ## Solving Exponential Equations Using Logarithms
@@ -228,15 +231,14 @@ found, solve for the unknown.
 
 $$
 \begin{array}{lrcl}
-& 5^{x+2} &=& 4^x \\[4pt]
-\text{There is no easy way to get the powers to have the same base.} & \ln5^{x+2} &=& \ln4^x \\[4pt]
-\text{Take ln of both sides.} & (x+2)\ln5 &=& x\ln4 \\[4pt]
-\text{Use laws of logs.} & x\ln5+2\ln5 &=& x\ln4 \\[4pt]
-\text{Use the distributive law.} & x\ln5-x\ln4 &=& -2\ln5 \\[4pt]
-\text{Get terms with } x \text{ on one side, terms without } x \text{ on the other.} & x(\ln5-\ln4) &=& -2\ln5 \\[4pt]
-\text{Factor out an } x \text{ on the left-hand side.} & x\ln\!\left(\tfrac{5}{4}\right) &=& \ln\!\left(\tfrac{1}{25}\right) \\[4pt]
-\text{Use the laws of logs.} & x &=& \tfrac{\ln(1/25)}{\ln(5/4)} \\[4pt]
-\text{Divide by the coefficient of } x. &&&
+\text{There is no easy way to get the powers to have the same base.} & 5^{x+2} &=& 4^x \\[4pt]
+\text{Take ln of both sides.} & \ln5^{x+2} &=& \ln4^x \\[4pt]
+\text{Use laws of logs.} & (x+2)\ln5 &=& x\ln4 \\[4pt]
+\text{Use the distributive law.} & x\ln5+2\ln5 &=& x\ln4 \\[4pt]
+\text{Get terms with } x \text{ on one side, terms without } x \text{ on the other.} & x\ln5-x\ln4 &=& -2\ln5 \\[4pt]
+\text{Factor out an } x \text{ on the left-hand side.} & x(\ln5-\ln4) &=& -2\ln5 \\[4pt]
+\text{Use the laws of logs.} & x\ln\!\left(\tfrac{5}{4}\right) &=& \ln\!\left(\tfrac{1}{25}\right) \\[4pt]
+\text{Divide by the coefficient of } x. & x &=& \tfrac{\ln(1/25)}{\ln(5/4)}
 \end{array}
 $$
 
@@ -245,7 +247,7 @@ $$
   answer="-2.7095"
   answerForm="decimal"
   answerDisplay="$x\approx-2.7095$"
-  hint="Take $\ln$ of both sides, distribute, then collect the $x$-terms on one side: $x\ln2-x\ln3=\ln3$."
+  hint="Take $\ln$ of both sides and use the power rule, then collect the $x$-terms on one side, factor out $x$, and divide."
 >}}
 
 {{< callout type="info" >}}
@@ -321,7 +323,7 @@ $$
   answer="-\frac{1}{2}\ln 2"
   answerForm="exact-log"
   answerDisplay="$t=-\tfrac{1}{2}\ln2$"
-  hint="Collect the $e^{2t}$ terms first: $3=6e^{2t}$, so $e^{2t}=\tfrac{1}{2}$."
+  hint="Collect the $e^{2t}$ terms on one side and isolate $e^{2t}$, then take $\ln$ of both sides and solve for $t$."
 >}}
 
 ## Extraneous Solutions
@@ -362,7 +364,7 @@ real number system this solution is rejected as an extraneous solution.
   answer="\ln 2"
   answerForm="exact-log"
   answerDisplay="$x=\ln2$"
-  hint="Get zero on one side and factor as a quadratic in $e^x$: $(e^x-2)(e^x+1)=0$, then reject the negative root."
+  hint="Get zero on one side and factor as a quadratic in $e^x$, then reject any factor that would make $e^x$ negative."
 >}}
 
 {{< callout type="info" >}}
@@ -417,8 +419,9 @@ $$
 $$
 
 {{< fillin
-  question="Solve $6+\ln x=10$."
+  question="Solve $6+\ln x=10$. Enter the exact answer."
   answer="e^{4}"
+  answerForm="single-power exact"
   answerDisplay="$x=e^4$"
   hint="Isolate $\ln x$, then rewrite in exponential form."
 >}}
@@ -437,8 +440,9 @@ $$
 $$
 
 {{< fillin
-  question="Solve $2\ln(x+1)=10$."
+  question="Solve $2\ln(x+1)=10$. Enter the exact answer."
   answer="e^{5}-1"
+  answerForm="exact no-like-terms"
   answerDisplay="$x=e^5-1$"
   hint="Divide by 2 to isolate $\ln(x+1)$, then rewrite in exponential form."
 >}}
@@ -459,15 +463,15 @@ words, $e^3\approx20$. A calculator gives a better approximation:
 $e^3\approx20.0855$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The curve y = ln(x), rising slowly from the y-axis, and the horizontal line y = 3. The two graphs cross at approximately (20.0855, 3).","xMin":-3,"xMax":29,"yMin":-3,"yMax":4.5,"xTickStep":4,"yTickStep":1,"tickLabels":true,"curves":[{"kind":"log","a":1,"h":0,"k":0,"b":2.718281828459045}],"lines":[{"y":3}],"points":[{"at":[20.0855,3],"label":"(e³, 3) ≈ (20.0855, 3)"}],"texts":[{"at":[22,3.8],"text":"y = ln(x)","anchor":"start"}]}
+{"ariaLabel":"The curve y = ln(x), rising slowly from the y-axis, and the horizontal line y = 3. The two graphs cross at approximately (20.0855, 3).","xMin":-4,"xMax":30,"yMin":-3,"yMax":4.5,"xUnit":10,"yUnit":36,"xTickStep":4,"yTickStep":2,"tickLabels":true,"curves":[{"kind":"log","a":1,"h":0,"k":0,"b":2.718281828459045,"from":0.0821,"to":28}],"lines":[{"y":3,"label":"y = 3"}],"points":[{"at":[20.0855,3],"label":"(e³, 3) ≈ (20.0855, 3)"}],"texts":[{"at":[22,4],"text":"y = ln(x)","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Use a graphing calculator to estimate the approximate solution to the logarithmic equation $2^x=1000$, to 2 decimal places."
+  question="Use a graphing calculator to estimate the approximate solution to the logarithmic equation $2^x=1{,}000$, to 2 decimal places."
   answer="9.97"
   answerForm="decimal"
   answerDisplay="$x\approx9.97$"
-  hint="Graph $y=2^x$ and $y=1000$ and read the $x$-coordinate where they cross, or compute $\tfrac{\ln1000}{\ln2}$."
+  hint="Graph $y=2^x$ and $y=1{,}000$ and read the $x$-coordinate where they cross, or take a logarithm of both sides and use a calculator."
 >}}
 
 ## Using the One-to-One Property of Logarithms to Solve Logarithmic Equations
@@ -560,9 +564,10 @@ because the argument of the logarithm functions is still positive.
 {{< fillin
   question="Solve $\ln(x^2)=\ln1$. Enter both solutions, separated by a comma."
   answer="1,-1"
+  answerForm="decimal"
   answerMode="unordered"
   answerDisplay="$x=1$ or $x=-1$"
-  hint="Use the one-to-one property to get $x^2=1$, then check both roots against the original equation's domain."
+  hint="Use the one-to-one property to set the arguments equal, solve, then check each root against the original equation's domain."
 >}}
 
 ## Solving Applied Problems Using Exponential and Logarithmic Equations
@@ -609,16 +614,16 @@ where
 - $t$ is the time period over which the substance is studied
 - $A(t)$ is the amount of the substance present after time $t$
 
-**Example.** How long will it take for ten percent of a 1000-gram sample of
+**Example.** How long will it take for ten percent of a 1,000-gram sample of
 uranium-235 to decay?
 
 **Solution.**
 
 $$
 \begin{array}{lrcl}
-& y &=& 1000e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t} \\[4pt]
-\text{After 10\% decays, 900 grams are left.} & 900 &=& 1000e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t} \\[4pt]
-\text{Divide by 1000.} & 0.9 &=& e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t} \\[4pt]
+& y &=& 1{,}000e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t} \\[4pt]
+\text{After 10\% decays, 900 grams are left.} & 900 &=& 1{,}000e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t} \\[4pt]
+\text{Divide by 1,000.} & 0.9 &=& e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t} \\[4pt]
 \text{Take ln of both sides.} & \ln(0.9) &=& \ln\!\left(e^{\tfrac{\ln(0.5)}{703{,}800{,}000}t}\right) \\[4pt]
 \ln(e^M)=M & \ln(0.9) &=& \tfrac{\ln(0.5)}{703{,}800{,}000}t \\[4pt]
 \text{Solve for } t. & t &=& 703{,}800{,}000\times\tfrac{\ln(0.9)}{\ln(0.5)}\ \text{years} \\[4pt]
@@ -626,15 +631,15 @@ $$
 \end{array}
 $$
 
-**Analysis.** Ten percent of 1000 grams is 100 grams. If 100 grams decay,
+**Analysis.** Ten percent of 1,000 grams is 100 grams. If 100 grams decay,
 the amount of uranium-235 remaining is 900 grams.
 
 {{< fillin
-  question="How long will it take before twenty percent of our 1000-gram sample of uranium-235 has decayed? Round to the nearest year."
+  question="How long will it take before twenty percent of our 1,000-gram sample of uranium-235 has decayed? Round to the nearest year."
   answer="226572993"
   answerForm="decimal"
   answerDisplay="$t\approx226{,}572{,}993$ years"
-  hint="Use the same decay formula with $80\%$ remaining: $t=703{,}800{,}000\times\tfrac{\ln(0.8)}{\ln(0.5)}$."
+  hint="Find how many grams remain, then follow the example: divide by the initial amount, take $\ln$ of both sides, and solve for $t$."
 >}}
 
 ## Key equations
@@ -684,7 +689,8 @@ the amount of uranium-235 remaining is 900 grams.
 
 {{< fillin
   question="Solve $64\cdot4^{3x}=16$."
-  answer="-1/3"
+  answer="-\frac{1}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$x=-\tfrac{1}{3}$"
   hint="Write every term as a power of $2$, then set the exponents equal."
 >}}
@@ -692,13 +698,15 @@ the amount of uranium-235 remaining is 900 grams.
 {{< fillin
   question="Solve $2^{-3n}\cdot\tfrac{1}{4}=2^{n+2}$."
   answer="-1"
+  answerForm="decimal"
   answerDisplay="$n=-1$"
-  hint="Write $\tfrac{1}{4}$ as $2^{-2}$ and combine the exponents on the left before setting exponents equal."
+  hint="Write $\tfrac{1}{4}$ as a power of $2$ and combine the exponents on the left before setting the exponents equal."
 >}}
 
 {{< fillin
   question="Solve $\tfrac{36^{3b}}{36^{2b}}=216^{2-b}$."
-  answer="6/5"
+  answer="\frac{6}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$b=\tfrac{6}{5}$"
   hint="Write $36$ and $216$ as powers of $6$, then set the exponents equal."
 >}}
@@ -710,7 +718,7 @@ the amount of uranium-235 remaining is 900 grams.
   answer="-\frac{\ln 38}{3}"
   answerForm="exact-log"
   answerDisplay="$k=-\tfrac{\ln38}{3}$"
-  hint="Isolate the exponential first: $e^{-3k}=38$, then take $\ln$ of both sides."
+  hint="Isolate the exponential term first, then take $\ln$ of both sides and divide."
 >}}
 
 {{< fillin
@@ -718,7 +726,7 @@ the amount of uranium-235 remaining is 900 grams.
   answer="\ln 12"
   answerForm="exact-log"
   answerDisplay="$x=\ln12$"
-  hint="Factor as a quadratic in $e^x$: $(e^x-12)(e^x+11)=0$, then reject the negative root."
+  hint="Factor as a quadratic in $e^x$, then reject any factor that would make $e^x$ negative."
 >}}
 
 {{< fillin
@@ -726,7 +734,7 @@ the amount of uranium-235 remaining is 900 grams.
   answer="\ln 3"
   answerForm="exact-log"
   answerDisplay="$x=\ln3$"
-  hint="Factor as a quadratic in $e^x$: $(e^x-3)(e^x+2)=0$, then reject the negative root."
+  hint="Treat $e^x$ as the unknown of a quadratic and factor, then keep only the factor that gives $e^x$ a positive value."
 >}}
 
 {{< fillin
@@ -734,7 +742,7 @@ the amount of uranium-235 remaining is 900 grams.
   answer="2.2401"
   answerForm="decimal"
   answerDisplay="$x\approx2.2401$"
-  hint="Isolate the exponential, $e^{3x-5}=\tfrac{47-7.9}{7}$, then take $\ln$ of both sides."
+  hint="Isolate the exponential term (subtract, then divide), then take $\ln$ of both sides and solve the linear equation."
 >}}
 
 ### Use the definition of a logarithm to solve logarithmic equations
@@ -750,20 +758,23 @@ the amount of uranium-235 remaining is 900 grams.
 {{< fillin
   question="Solve $5\log_7 n=10$."
   answer="49"
+  answerForm="decimal"
   answerDisplay="$n=49$"
   hint="Divide by 5 to isolate $\log_7 n$, then rewrite in exponential form."
 >}}
 
 {{< fillin
   question="Solve $4+\log_2(9k)=2$."
-  answer="1/36"
+  answer="\frac{1}{36}"
+  answerForm="lowest-terms"
   answerDisplay="$k=\tfrac{1}{36}$"
   hint="Isolate $\log_2(9k)$ first, then rewrite in exponential form."
 >}}
 
 {{< fillin
-  question="Solve $10-4\ln(9-8x)=6$."
-  answer="(9-e)/8"
+  question="Solve $10-4\ln(9-8x)=6$. Enter the answer as a single fraction."
+  answer="\frac{9-e}{8}"
+  answerForm="single-fraction reduced-fraction"
   answerDisplay="$x=\tfrac{9-e}{8}$"
   hint="Isolate $\ln(9-8x)$ first, then rewrite in exponential form and solve for $x$."
 >}}
@@ -772,15 +783,17 @@ the amount of uranium-235 remaining is 900 grams.
 
 {{< fillin
   question="Solve $\ln(x^2-10)+\ln(9)=\ln(10)$. Enter both solutions, separated by a comma."
-  answer="10/3,-10/3"
+  answer="\frac{10}{3},-\frac{10}{3}"
+  answerForm="lowest-terms"
   answerMode="unordered"
   answerDisplay="$x=\pm\tfrac{10}{3}$"
-  hint="Combine the left side into one logarithm, apply the one-to-one property to get $9(x^2-10)=10$, then check both roots against the domain $x^2-10>0$."
+  hint="Combine the left side into one logarithm with the product rule, apply the one-to-one property, then check each root against the domain $x^2-10>0$."
 >}}
 
 {{< fillin
   question="Solve $\ln(x)+\ln(x-3)=\ln(7x)$."
   answer="10"
+  answerForm="decimal"
   answerDisplay="$x=10$"
   hint="Combine the left side into one logarithm, apply the one-to-one property, and reject any root that fails the domain $x>3$."
 >}}
@@ -791,15 +804,16 @@ the amount of uranium-235 remaining is 900 grams.
   hint="Set the arguments equal and solve the resulting quadratic, then check each root against the domain $x-2>0$."
 >}}
 No solution
-x = -2+\sqrt5
-x = -2-\sqrt5
+$x=-2+\sqrt5$
+$x=-2-\sqrt5$
 {{< /multiplechoice >}}
 
 {{< fillin
   question="Solve $\log_9(3-x)=\log_9(4x-8)$."
-  answer="11/5"
+  answer="\frac{11}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$x=\tfrac{11}{5}$"
-  hint="Set the arguments equal, $3-x=4x-8$, then check the root against both domain conditions $3-x>0$ and $4x-8>0$."
+  hint="Use the one-to-one property to set the arguments equal and solve, then check the root against both domain conditions $3-x>0$ and $4x-8>0$."
 >}}
 
 ### Solve applied problems involving exponential and logarithmic equations
@@ -809,16 +823,17 @@ x = -2-\sqrt5
   answer="27710.24"
   answerForm="decimal"
   answerDisplay="\$27{,}710.24"
-  hint="Use $A=Pe^{rt}$ with $P=6{,}500$, $r=0.0725$, and $t=20$."
+  hint="Use the continuous-compounding formula $A=Pe^{rt}$, writing the rate as a decimal."
 >}}
 
 {{< fillin
-  question="The population of a small town is modeled by the equation $P=1650e^{0.5t}$, where $t$ is measured in years. In approximately how many years will the town's population reach $20{,}000$? Round to the nearest year."
+  question="The population of a small town is modeled by the equation $P=1{,}650e^{0.5t}$, where $t$ is measured in years. In approximately how many years will the town's population reach $20{,}000$? Round to the nearest year."
   answer="5"
+  answerForm="decimal"
   answerDisplay="about 5 years"
-  hint="Solve $20{,}000=1650e^{0.5t}$ for $t$ by isolating the exponential and taking $\ln$ of both sides."
+  hint="Set the model equal to the target population, isolate the exponential, and take $\ln$ of both sides."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 4.6: Exponential and Logarithmic Equations](https://openstax.org/books/precalculus-2e/pages/4-6-exponential-and-logarithmic-equations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the corequisite-skills review subsection (module m49366's "Objective 1"/"Objective 2" intermediate-algebra refresher, with its own separate Learning Objectives and Practice Makes Perfect sets) that precedes this section's actual content in the pinned module, since it duplicates intermediate-algebra material outside this section's own five learning objectives; omitted the decorative photograph of wild rabbits in Australia, which carries no mathematics; recreated the "they do not cross" graph of $y=3^{x+1}$ and $y=-2$ and the graph of $y=\ln x$ and $y=3$ crossing near $(e^3,3)$ as accessible generated figures from their exact equations; converted the practice problems ("Try Its") into interactive exercises with instant feedback, a multiple choice for each "no solution" case ($2^x=-100$; $\log_{11}(-2x^2-7x)=\log_{11}(x-2)$), and a fillin with `answerMode="unordered"` for each of the two-solution cases ($\ln(x^2)=\ln1$; $\ln(x^2-10)+\ln(9)=\ln(10)$); adapted two Try Its ($2^x=3^{x+1}$ and $3e^{0.5t}=11$) from an exact-quotient-of-logarithms response, which the grader's exact-log form cannot represent because both logarithms' arguments are themselves fractions, into a "round to four decimal places" decimal response instead; and adapted fourteen selected end-of-section exercises — three like-base equations, three logarithm-based exponential equations (two exact, one decimal), four solved with the definition of a logarithm (one converted to exponential form), four solved with the one-to-one property of logarithms (including both no-solution and two-solution cases), and two applied problems (continuous compounding, exponential population growth) — into fourteen interactive components in a closing Practice block, one group per objective. The pinned CNXML's own accessibility `summary` attribute on the half-life table (module m49366, table `Table_04_06_001`) states carbon-14's half-life as "5,715 years," while the table's own visible cell — and the printed PDF — both give "5,730 years" (the commonly cited value); this page follows the visible table and the PDF rather than the inconsistent summary text.</small>
+<small>This section is adapted from [Precalculus 2e, Section 4.6: Exponential and Logarithmic Equations](https://openstax.org/books/precalculus-2e/pages/4-6-exponential-and-logarithmic-equations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the corequisite-skills review subsection (module m49366's "Objective 1"/"Objective 2" intermediate-algebra refresher, with its own separate Learning Objectives and Practice Makes Perfect sets) that precedes this section's actual content in the pinned module, since it duplicates intermediate-algebra material outside this section's own five learning objectives; omitted the decorative photograph of wild rabbits in Australia, which carries no mathematics; recreated the "they do not cross" graph of $y=3^{x+1}$ and $y=-2$ and the graph of $y=\ln x$ and $y=3$ crossing near $(e^3,3)$ as accessible generated figures from their exact equations, numbering the second graph's $y$-axis every 2 so the line $y=3$ crosses no tick number; converted the practice problems ("Try Its") into interactive exercises with instant feedback, a multiple choice for each "no solution" case ($2^x=-100$; $\log_{11}(-2x^2-7x)=\log_{11}(x-2)$), and a fillin with `answerMode="unordered"` for each of the two-solution cases ($\ln(x^2)=\ln1$; $\ln(x^2-10)+\ln(9)=\ln(10)$); adapted two Try Its ($2^x=3^{x+1}$ and $3e^{0.5t}=11$) from an exact-quotient-of-logarithms response, which the grader's exact-log form cannot represent because both logarithms' arguments are themselves fractions, into a "round to four decimal places" decimal response instead; labelled the step $2^8=2^{2x-10}$ of the $256=4^{x-5}$ example "To take a power of a power, multiply exponents," where the source labels it "Use the one-to-one property of exponents" (that property is the next step, setting the exponents equal); and adapted seventeen selected end-of-section exercises — three like-base equations, four logarithm-based exponential equations (three exact, one decimal), four solved with the definition of a logarithm (one converted to exponential form), four solved with the one-to-one property of logarithms (including both no-solution and two-solution cases), and two applied problems (continuous compounding, exponential population growth) — into seventeen interactive components in a closing Practice block, one group per objective. The pinned CNXML's own accessibility `summary` attribute on the half-life table (module m49366, table `Table_04_06_001`) states carbon-14's half-life as "5,715 years," while the table's own visible cell — and the printed PDF — both give "5,730 years" (the commonly cited value); this page follows the visible table and the PDF rather than the inconsistent summary text.</small>

@@ -284,6 +284,33 @@ numeral root (`\frac{\sqrt[3]{x}}{\sqrt[3]{8}}`) is `form` under
 `slope-intercept-form`, which accepts a function label and either term order
 and refuses an unworked slope.
 
+Since the Precalculus chapter 4 re-review (October 4, 2026): an exponential
+model or transformed-exponential key (`6(5)^x`, `-\frac13e^x-2`, `4^{-x}`,
+`A_0e^{\frac{\ln2}{3}t}`, `90e^{-0.008377t}+75`) takes the new
+`exponential-model` token — one exponential term plus at most one constant,
+every number finished — which refuses `6\cdot125^{x/3}`, `\frac{750}{125}(5)^x`,
+`e^{x+0}`, `-1\cdot10^x+7`, and a regression model typed with more decimals
+than the stem asks (`form`, never `correct`); a "change to base $e$" key
+composes `base-e exponential-model`, which refuses the printed $ab^x$. A
+logistic key has no token yet. `expanded-logarithms` refuses a log of a
+polynomial that factors over the integers (`\ln(x^2-9)`), a composite numeral
+argument where the key's are prime (`\log_b 14` for `\log_b2+\log_b7`), and
+written coefficient arithmetic (`\frac13\cdot2\ln x`); it also grades the
+source key `\log_2(-(x-1))` `form` against itself, so a reflected-log key
+declares no form. `single-logarithm` requires the argument's numeral work done
+(`\ln\frac{6x^9}{3x^2}`, `\log_3(4^2)` are `form`), so a condense ask whose
+source accepts an unreduced argument pins "in lowest terms" (4.5). `exact-log`
+accepts `\frac{-\ln2}{2}` and a log of a numeral fraction (`\ln\frac{1}{\sqrt2}`,
+a source's own printed answer) and refuses `\log 100` for `2`; the new
+`natural-log` composes with `single-fraction` for "a quotient of natural
+logarithms"; `no-like-terms` refuses numeral exponent arithmetic
+(`e^{\frac{10}{2}}-1`). Grading: a nonzero constant below 1 compares relatively
+(a tiny scientific-notation key no longer accepts every value under $10^{-9}$),
+and a logarithm of a negative argument is non-real, so `\ln x` against
+`\ln(-x)` and `\ln|x|` against `\ln x` grade `incorrect`. Gate trap: a
+digit-grouped stem (`1{,}000`) now keeps its source-key match (the matcher had
+read it as 1 and 000).
+
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
 `$-10$` in the wording of a +10 source item pairs with it and fails

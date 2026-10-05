@@ -129,9 +129,9 @@ $$\log_3(30x(3x+4))=\log_3(2)+\log_3(3)+\log_3(5)+\log_3(x)+\log_3(3x+4)$$
 {{< fillin
   question="Expand $\log_b(8k)$."
   answer="3\log_b(2)+\log_b(k)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$3\log_b(2)+\log_b(k)$"
-  hint="Write $8$ as $2^3$, then apply the product and power rules."
+  hint="Write $8$ as a power of a prime, then apply the product rule and the power rule."
 >}}
 
 ## Using the Quotient Rule for Logarithms
@@ -208,16 +208,13 @@ $$
 
 **Analysis.** There are exceptions to consider in this and later examples. First, because denominators must never be zero, this expression is not defined for $x=-\tfrac{4}{3}$ and $x=2$. Also, since the argument of a logarithm must be positive, we note as we observe the expanded logarithm, that $x>0$, $x>1$, $x>-\tfrac{4}{3}$, and $x<2$. Combining these conditions is beyond the scope of this section, and we will not consider them here or in subsequent exercises.
 
-{{< multiplechoice
+{{< fillin
   question="Expand $\log_3\left(\tfrac{7x^2+21x}{7x(x-1)(x-2)}\right)$."
-  answer="$\log_3(x+3)-\log_3(x-1)-\log_3(x-2)$"
-  hint="Factor and cancel first — the numerator is $7x(x+3)$ — then apply the quotient rule to the remaining fraction, and the product rule to its denominator."
+  answer="\log_3(x+3)-\log_3(x-1)-\log_3(x-2)"
+  answerForm="expanded-logarithms no-like-terms"
+  answerDisplay="$\log_3(x+3)-\log_3(x-1)-\log_3(x-2)$"
+  hint="Factor the numerator and cancel the factor it shares with the denominator first, then apply the quotient rule and the product rule."
 >}}
-$\log_3(x+3)+\log_3(x-1)+\log_3(x-2)$
-$\log_3(x+3)-\log_3(x-1)-\log_3(x-2)$
-$\log_3(x+3)-\log_3(x-1)+\log_3(x-2)$
-$\log_3\left(\tfrac{x+3}{(x-1)(x-2)}\right)$
-{{< /multiplechoice >}}
 
 ## Using the Power Rule for Logarithms
 
@@ -270,34 +267,28 @@ $$\log_3(5^2)=2\log_3(5)$$
 
 **Solution.** Because the logarithm of a power is the product of the exponent times the logarithm of the base, it follows that the product of a number and a logarithm can be written as a power. For the expression $4\ln(x)$, we identify the factor, $4$, as the exponent and the argument, $x$, as the base, and rewrite the product as a logarithm of a power: $4\ln(x)=\ln(x^4)$.
 
-{{< multiplechoice
+{{< fillin
   question="Expand $\ln x^2$."
-  answer="$2\ln(x)$"
-  hint="The power rule turns the exponent into a coefficient in front of the logarithm."
+  answer="2\ln(x)"
+  answerForm="expanded-logarithms no-like-terms"
+  answerDisplay="$2\ln(x)$"
+  hint="Apply the power rule for logarithms."
 >}}
-$2\ln(x)$
-$\ln(2x)$
-$(\ln x)^2$
-$\ln(x)+2$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< fillin
   question="Expand $\ln\left(\tfrac{1}{x^2}\right)$."
-  answer="$-2\ln(x)$"
-  hint="Rewrite $\tfrac{1}{x^2}$ as $x^{-2}$ first, then apply the power rule."
+  answer="-2\ln(x)"
+  answerForm="expanded-logarithms no-like-terms"
+  answerDisplay="$-2\ln(x)$"
+  hint="Write the reciprocal as a power with a negative exponent, then apply the power rule."
 >}}
-$2\ln(x)$
-$\ln(x)-2$
-$-2\ln(x)$
-$-\ln(2x)$
-{{< /multiplechoice >}}
 
 {{< fillin
   question="Rewrite $2\log_3(4)$ using the power rule for logs to a single logarithm with a leading coefficient of $1$."
   answer="\log_3(16)"
   answerForm="single-logarithm"
   answerDisplay="$\log_3(16)$"
-  hint="The coefficient becomes the exponent on the argument: $2\log_3(4)=\log_3(4^2)$."
+  hint="Use the power rule in reverse to move the coefficient into the argument as an exponent, then evaluate the power."
 >}}
 
 ## Expanding Logarithmic Expressions
@@ -343,7 +334,7 @@ $$\ln(x^4)+\ln(y)-\ln(7)=4\ln(x)+\ln(y)-\ln(7)$$
 {{< fillin
   question="Expand $\log\left(\tfrac{x^2y^3}{z^4}\right)$."
   answer="2\log(x)+3\log(y)-4\log(z)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$2\log(x)+3\log(y)-4\log(z)$"
   hint="Apply the quotient rule, then the product rule, then the power rule to each factor."
 >}}
@@ -359,16 +350,13 @@ $$
 \end{array}
 $$
 
-{{< multiplechoice
+{{< fillin
   question="Expand $\ln\left(\sqrt[3]{x^2}\right)$."
-  answer="$\tfrac{2}{3}\ln(x)$"
-  hint="Rewrite the cube root as the exponent $\tfrac13$ on $x^2$, then apply the power rule."
+  answer="\frac{2}{3}\ln(x)"
+  answerForm="expanded-logarithms no-like-terms"
+  answerDisplay="$\tfrac{2}{3}\ln(x)$"
+  hint="Rewrite the root as a power with a rational exponent, then apply the power rule."
 >}}
-$\tfrac{2}{3}\ln(x)$
-$\tfrac{3}{2}\ln(x)$
-$2\ln(x)$
-$\ln\left(\tfrac{2x}{3}\right)$
-{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
   **Q&A.** *Can we expand $\ln(x^2+y^2)$?*
@@ -389,16 +377,13 @@ $$
 \end{array}
 $$
 
-{{< multiplechoice
-  question="Expand $\ln\left(\tfrac{\sqrt{(x-1)(2x+1)^2}}{x^2-9}\right)$."
-  answer="$\tfrac12\ln(x-1)+\ln(2x+1)-\ln(x+3)-\ln(x-3)$"
-  hint="Factor $x^2-9$ as $(x-3)(x+3)$, then apply the quotient rule, the product rule, and the power rule (on the square root) in turn."
+{{< fillin
+  question="Expand $\ln\left(\tfrac{\sqrt{(x-1)(2x+1)^2}}{x^2-9}\right)$ as much as possible."
+  answer="\frac{1}{2}\ln(x-1)+\ln(2x+1)-\ln(x+3)-\ln(x-3)"
+  answerForm="expanded-logarithms no-like-terms"
+  answerDisplay="$\tfrac12\ln(x-1)+\ln(2x+1)-\ln(x+3)-\ln(x-3)$"
+  hint="Factor the denominator completely, write the square root as a power, then apply the quotient, product, and power rules."
 >}}
-$\ln(x-1)+\ln(2x+1)-\ln(x+3)-\ln(x-3)$
-$\tfrac12\ln(x-1)+\ln(2x+1)-\ln(x+3)-\ln(x-3)$
-$\tfrac12\ln(x-1)+\ln(2x+1)+\ln(x+3)+\ln(x-3)$
-$\tfrac12\ln(x-1)+\ln(2x+1)-\ln(x^2-9)$
-{{< /multiplechoice >}}
 
 ## Condensing Logarithmic Expressions
 
@@ -431,7 +416,7 @@ Then, using the quotient rule
 $$\log_3(40)-\log_3(2)=\log_3\left(\tfrac{40}{2}\right)=\log_3(20)$$
 
 {{< fillin
-  question="Condense $\log(3)-\log(4)+\log(5)-\log(6)$ to a single logarithm."
+  question="Condense $\log(3)-\log(4)+\log(5)-\log(6)$ to a single logarithm, with the fraction inside it in lowest terms."
   answer="\log\left(\frac{5}{8}\right)"
   answerForm="single-logarithm"
   answerDisplay="$\log\left(\tfrac{5}{8}\right)$"
@@ -504,11 +489,11 @@ $$\text{pH}=P-\log(2)\approx P-0.301$$
 When the concentration of hydrogen ions is doubled, the pH decreases by about $0.301$.
 
 {{< fillin
-  question="How does the pH change when the concentration of positive hydrogen ions is decreased by half? Enter the size of the change, in pH units, rounded to three decimal places."
+  question="How does the pH change when the concentration of positive hydrogen ions is decreased by half? Enter the change in pH units, rounded to three decimal places — positive if the pH increases, negative if it decreases."
   answer="0.301"
   answerForm="decimal"
-  answerDisplay="increases by about $0.301$"
-  hint="Write the new pH as $-\log\left(\tfrac{C}{2}\right)$ and apply the quotient rule; the pH increases by $\log(2)$."
+  answerDisplay="$0.301$ (the pH increases by about $0.301$)"
+  hint="Follow the doubling example: write the new pH in terms of the original concentration $C$, apply the quotient rule, and compare the result with $P=-\log(C)$."
 >}}
 
 ## Using the Change-of-Base Formula for Logarithms
@@ -587,7 +572,7 @@ $$
   answer="\frac{\ln(8)}{\ln(0.5)}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{\ln(8)}{\ln(0.5)}$"
-  hint="Use the change-of-base formula with $n=e$: numerator $\ln$ of the argument, denominator $\ln$ of the original base $0.5$."
+  hint="Apply the change-of-base formula with the new base $n=e$, as in the example above."
 >}}
 
 {{< callout type="info" >}}
@@ -612,7 +597,7 @@ $$
   answer="2.861"
   answerForm="decimal"
   answerDisplay="$2.861$"
-  hint="Compute $\tfrac{\ln(100)}{\ln(5)}$ on a calculator, then round."
+  hint="Rewrite the logarithm as a quotient of natural (or common) logarithms with the change-of-base formula, then evaluate the quotient on a calculator and round."
 >}}
 
 ## Key equations
@@ -640,9 +625,9 @@ $$
 {{< fillin
   question="Expand $\log_b(7x\cdot2y)$."
   answer="\log_b(2)+\log_b(7)+\log_b(x)+\log_b(y)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$\log_b(2)+\log_b(7)+\log_b(x)+\log_b(y)$"
-  hint="Multiply the factors first (giving $14xy$), then apply the product rule to each prime and variable factor."
+  hint="Write the whole-number factors as a product of primes, then apply the product rule to each prime and variable factor."
 >}}
 
 {{< fillin
@@ -658,7 +643,7 @@ $$
 {{< fillin
   question="Expand $\log_b\left(\tfrac{13}{17}\right)$."
   answer="\log_b(13)-\log_b(17)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$\log_b(13)-\log_b(17)$"
   hint="Apply the quotient rule: the log of a quotient is the difference of the logs."
 >}}
@@ -668,28 +653,25 @@ $$
   answer="\log_b(4)"
   answerForm="single-logarithm"
   answerDisplay="$\log_b(4)$"
-  hint="Apply the quotient rule, then simplify $28\div7$."
+  hint="Apply the quotient rule, then simplify the quotient inside the logarithm."
 >}}
 
 ### Use the power rule for logarithms
 
-{{< multiplechoice
+{{< fillin
   question="Expand $\ln\left(\tfrac{1}{4^k}\right)$ as much as possible."
-  answer="$-k\ln(4)$"
-  hint="Rewrite $\tfrac{1}{4^k}$ as $4^{-k}$, then apply the power rule."
+  answer="-k\ln(4)"
+  answerForm="expanded-logarithms no-like-terms"
+  answerDisplay="$-k\ln(4)$"
+  hint="Write the reciprocal as a power with a negative exponent, then apply the power rule."
 >}}
-$k\ln(4)$
-$-k\ln(4)$
-$\ln(4)-k$
-$-\ln(4k)$
-{{< /multiplechoice >}}
 
 {{< fillin
   question="Use the Power Rule to rewrite $-\log_b\left(\tfrac17\right)$ as a single logarithm with a leading coefficient of $1$."
   answer="\log_b(7)"
-  answerForm="expanded-logarithms"
+  answerForm="single-logarithm expanded-logarithms"
   answerDisplay="$\log_b(7)$"
-  hint="Rewrite $\tfrac17$ as $7^{-1}$ and apply the power rule; the two negative signs cancel."
+  hint="Write the fraction as a power with a negative exponent, then apply the power rule."
 >}}
 
 ### Expand logarithmic expressions
@@ -697,7 +679,7 @@ $-\ln(4k)$
 {{< fillin
   question="Expand $\log\left(\tfrac{x^{15}y^{13}}{z^{19}}\right)$ as much as possible."
   answer="15\log(x)+13\log(y)-19\log(z)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$15\log(x)+13\log(y)-19\log(z)$"
   hint="Apply the quotient rule first, then the product rule, then the power rule to each factor."
 >}}
@@ -705,7 +687,7 @@ $-\ln(4k)$
 {{< fillin
   question="Expand $\log\left(\sqrt{x^3y^{-4}}\right)$ as much as possible."
   answer="\frac{3}{2}\log(x)-2\log(y)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$\tfrac32\log(x)-2\log(y)$"
   hint="Rewrite the square root as an exponent of $\tfrac12$, then apply the power rule to each factor inside."
 >}}
@@ -713,7 +695,7 @@ $-\ln(4k)$
 {{< fillin
   question="Expand $\log\left(x^2y^3\sqrt[3]{x^2y^5}\right)$ as much as possible."
   answer="\frac{8}{3}\log(x)+\frac{14}{3}\log(y)"
-  answerForm="expanded-logarithms"
+  answerForm="expanded-logarithms no-like-terms"
   answerDisplay="$\tfrac83\log(x)+\tfrac{14}{3}\log(y)$"
   hint="Rewrite the cube root as an exponent of $\tfrac13$, combine the like factors of $x$ and of $y$, then apply the product and power rules."
 >}}
@@ -725,7 +707,7 @@ $-\ln(4k)$
   answer="\ln(2x^7)"
   answerForm="single-logarithm"
   answerDisplay="$\ln(2x^7)$"
-  hint="Apply the quotient rule, then simplify the resulting fraction $\tfrac{6x^9}{3x^2}$."
+  hint="Apply the quotient rule, then simplify the fraction inside the logarithm."
 >}}
 
 {{< fillin
@@ -743,7 +725,7 @@ $-\ln(4k)$
   answer="\frac{\ln(15)}{\ln(7)}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{\ln(15)}{\ln(7)}$"
-  hint="Use the change-of-base formula with $n=e$: the numerator is $\ln$ of the argument, the denominator is $\ln$ of the original base."
+  hint="Apply the change-of-base formula with the new base $n=e$."
 >}}
 
 {{< fillin
@@ -751,7 +733,7 @@ $-\ln(4k)$
   answer="2.81359"
   answerForm="decimal"
   answerDisplay="$2.81359$"
-  hint="Compute $\tfrac{\ln(22)}{\ln(3)}$ on a calculator."
+  hint="Rewrite the logarithm as a quotient of natural logarithms with the change-of-base formula, then evaluate the quotient on a calculator and round."
 >}}
 
 {{< fillin
@@ -759,9 +741,9 @@ $-\ln(4k)$
   answer="0.93913"
   answerForm="decimal"
   answerDisplay="$0.93913$"
-  hint="Compute $\tfrac{\ln(5.38)}{\ln(6)}$ on a calculator."
+  hint="Rewrite the logarithm as a quotient of natural logarithms with the change-of-base formula, then evaluate the quotient on a calculator and round."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 4.5: Logarithmic Properties](https://openstax.org/books/precalculus-2e/pages/4-5-logarithmic-properties) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the pinned CNXML's "coreq-skills" block, a prerequisite/corequisite review section carrying its own "Learning Objectives" (exponent-property and logarithm-property review keyed to Intermediate Algebra sections 5.2.1 and 10.4.1) that precedes the real section content in the source file but is not part of the printed textbook — the rendered PDF (pages 470–471) runs directly from the end of Section 4.4 to this section's own six-item Learning Objectives list and its pH introduction, with no exponent-review material printed anywhere on those pages; omitted the decorative photograph of litmus paper testing hydrochloric acid, which carries no mathematics; converted every source Try It into a real interactive component; five Try Its (the quotient-rule expansion of $\log_3\left(\tfrac{7x^2+21x}{7x(x-1)(x-2)}\right)$; the power-rule expansions of $\ln x^2$ and $\ln\left(\tfrac{1}{x^2}\right)$; the root expansion $\ln\left(\sqrt[3]{x^2}\right)$; and the complex expansion $\ln\left(\tfrac{\sqrt{(x-1)(2x+1)^2}}{x^2-9}\right)$) and one end-of-section exercise (expanding $\ln\left(\tfrac{1}{4^k}\right)$) became multiple-choice questions rather than fill-ins, because their fully-expanded answers either keep an irreducible binomial inside a logarithm's argument (the `expanded-logarithms` answer form accepts only a single number or variable there) or are written with $\ln$, which the pinned answer-form checker's `expanded-logarithms` predicate does not scan for at all, so a fill-in declaring that form would silently accept the unexpanded printed expression retyped back; verified independently that this is a grader limitation, not a content issue, before adapting each one; the pH-decrease-by-half Try It and the evaluate-$\log_5(100)$ Try It ask for a rounded decimal rather than an exact log expression, matching the pinned solution's own three-decimal rounding; and adapted fourteen selected end-of-section exercises — two product-rule, two quotient-rule, two power-rule, three general expansions, two general condensations, and three change-of-base evaluations — into interactive components in a closing Practice block, one group per objective. The Practice item rewriting $-\log_b\left(\tfrac17\right)$ is worded "use the Power Rule to rewrite… as a single logarithm" rather than the source's "condense to a single logarithm," and declares `expanded-logarithms` rather than `single-logarithm`: the printed prompt is itself already a single logarithm (negated), so `single-logarithm` — which accepts a leading unary minus as part of "the term IS the logarithm" — would accept it retyped verbatim; `expanded-logarithms`'s single-atomic-argument requirement correctly rejects the un-simplified $\tfrac17$ argument while accepting the simplified $\log_b(7)$. The two "quotient of logs" change-of-base items ($\log_{0.5}(8)$ and $\log_7(15)$) declare `single-fraction` rather than the seemingly natural `exact-log`: `exact-log`'s own grammar admits a bare, unconverted logarithm as a zero-integer-coefficient case, so it would accept the printed logarithm retyped back without the required change-of-base conversion; `single-fraction` correctly requires the one-quotient shape the conversion produces.</small>
+<small>This section is adapted from [Precalculus 2e, Section 4.5: Logarithmic Properties](https://openstax.org/books/precalculus-2e/pages/4-5-logarithmic-properties) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the pinned CNXML's "coreq-skills" block, a prerequisite/corequisite review section carrying its own "Learning Objectives" (exponent-property and logarithm-property review keyed to Intermediate Algebra sections 5.2.1 and 10.4.1) that precedes the real section content in the source file but is not part of the printed textbook — the rendered PDF (pages 470–471) runs directly from the end of Section 4.4 to this section's own six-item Learning Objectives list and its pH introduction, with no exponent-review material printed anywhere on those pages; omitted the decorative photograph of litmus paper testing hydrochloric acid, which carries no mathematics; converted every source Try It into a real interactive component; the complex-expansion Try It, $\ln\left(\tfrac{\sqrt{(x-1)(2x+1)^2}}{x^2-9}\right)$, adds "as much as possible" to its stem, and the condense-$\log(3)-\log(4)+\log(5)-\log(6)$ Try It asks for the fraction in lowest terms (the source also accepts the unreduced $\log\left(\tfrac{15}{24}\right)$, which the grader answers with a prompt to reduce); the pH-decrease-by-half Try It asks for the change as a signed rounded decimal (positive for an increase) and the evaluate-$\log_5(100)$ Try It for a rounded decimal, matching the pinned solutions' three-decimal rounding; and adapted fourteen selected end-of-section exercises — two product-rule, two quotient-rule, two power-rule, three general expansions, two general condensations, one change-of-base rewrite, and two change-of-base evaluations — into interactive components in a closing Practice block, one group per objective. The Practice item rewriting $-\log_b\left(\tfrac17\right)$ is worded "use the Power Rule to rewrite… as a single logarithm with a leading coefficient of $1$" rather than the source's "condense to a single logarithm," because the printed expression is already a single logarithm, negated.</small>
