@@ -181,7 +181,7 @@ after graduation.
 
 | Month | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Debt ($) | 620.00 | 761.88 | 899.80 | 1,039.93 | 1,270.63 | 1,589.04 | 1,851.31 | 2,154.92 |
+| Debt (\$) | 620.00 | 761.88 | 899.80 | 1,039.93 | 1,270.63 | 1,589.04 | 1,851.31 | 2,154.92 |
 
 {{< fillin
   question="Use exponential regression to fit a model to that data, letting $x$ be the month number. Enter the model with $a$ and $b$ rounded to four decimal places."

@@ -1502,18 +1502,27 @@ export function lintHugo(src, filename = '', options = {}) {
       err(index + (display ? 2 : 1) + at, `stray \`\\\\\` in math, outside any \\begin{…} environment — KaTeX sets it as a row break and prints the rest literally (\`\\\\tfrac\` renders as the word "tfrac"), and it never throws, so no other gate sees it; write a single backslash`);
     }
   }
-  // A single `$` immediately followed by an escaped dollar (`$\$…`) fails the
-  // production build and nothing else sees it: Hugo's passthrough closes the
-  // span at the escaped dollar's own `$`, hands KaTeX the bare backslash left
-  // between them, and `hugo` dies with "Unexpected character: '\'" — but only
-  // `hugo` runs that parser, so `npm test` passes the page (precalc 9.7
-  // shipped `$\$10{,}500$` through every fast gate and broke `npm run ci` at
-  // the build step). Display math is fine (`$$\$3.99$$` renders a dollar
-  // sign) and a prose escape with no math delimiter in front (`\$10,500`) is
-  // the house spelling for money, so the rule is exactly the three-character
-  // sequence `$\$` not preceded by another `$` or a backslash.
-  for (const m of withoutFigureSpecs(mediaSrc, blank).matchAll(/(?<![$\\])\$\\\$/g)) {
-    err(m.index, 'a `$` immediately followed by an escaped dollar (`$\\$…`) — the production build fails on it (Hugo\'s passthrough closes the span at the escaped dollar and KaTeX throws on the bare backslash) while every fast gate passes it; write the amount in prose as `\\$10,500` or use display math');
+  // An escaped dollar anywhere inside inline math fails the production build
+  // and nothing else sees it: Hugo's passthrough closes an inline span at the
+  // first `$` it meets, backslash or not, hands KaTeX a fragment ending (or,
+  // for `$\$…`, starting) with a bare backslash, and `hugo` dies with
+  // "Unexpected character: '\'" — but only `hugo` runs that parser, so
+  // `npm test` passes the page. Precalc 9.7 shipped `$\$10{,}500$` through
+  // every fast gate; the first spelling of this rule matched only that
+  // leading `$\$`, so IA knowledge check 1–6 then shipped
+  // `$18 \times \$55.56 = \$1{,}000.08$` (escape mid-span) the same way and
+  // broke the deploy. `mathSpans` shields `\$` like the in-param renderer, so
+  // the span's tex keeps every inner escape and the rule is just "inline tex
+  // holds `\$`". Display math is fine (`$$\$3.99$$` renders a dollar sign),
+  // and a prose escape outside any span (`\$10,500`) is the house spelling for
+  // money; inside inline math write `\text{\textdollar}` (bare `\textdollar`
+  // is text-mode only and fails the KaTeX gate).
+  for (const { tex, display, index } of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
+    if (display) continue;
+    const at = tex.indexOf('\\$');
+    if (at >= 0) {
+      err(index + 1 + at, 'an escaped dollar (`\\$`) inside inline math — the production build fails on it (Hugo\'s passthrough closes the span at that `$` and KaTeX throws on the bare backslash) while every fast gate passes it; write `\\text{\\textdollar}` inside the span, or the amount in prose as `\\$10,500`');
+    }
   }
   // Unicode superscript minus can't parse as an exponent — in MATH. A figure
   // spec is not math: its labels are plain SVG text with no typesetter behind

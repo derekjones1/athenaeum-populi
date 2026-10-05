@@ -2523,6 +2523,13 @@ test('an escaped dollar inside inline math is caught; display math and prose esc
 
   assert(dollar('Soriya plans to invest $\\$10{,}500$ into two bonds.\n').length > 0,
     'the shipped 9.7 defect is caught');
+  assert(dollar('but $18 \\times \\$55.56 = \\$1{,}000.08$ is over her \\$1,000 budget\n').length > 0,
+    'an escape mid-span is caught too — IA knowledge check 1–6 broke the deploy with it after the leading-only rule passed it');
+  assert.deepEqual(
+    dollar('but $18 \\times \\text{\\textdollar}55.56$ is over her \\$1,000 budget\n'),
+    [],
+    '\\text{\\textdollar} is the inline-math spelling',
+  );
   assert.deepEqual(
     dollar('$$\\$3.99 \\div 24 = \\$0.17$$\n'),
     [],

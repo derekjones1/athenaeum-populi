@@ -45,7 +45,7 @@ value of each type to get the total value of *all* the coins. Suppose there
 are $14$ quarters, $17$ dimes, $21$ nickels, and $39$ pennies. A table helps
 organize the type, number, and value of each:
 
-| Type | Number | Value ($) | Total Value ($) |
+| Type | Number | Value (\$) | Total Value (\$) |
 | :--- | :---: | :---: | :---: |
 | Quarters | $14$ | $0.25$ | $3.50$ |
 | Dimes | $17$ | $0.10$ | $1.70$ |
@@ -65,7 +65,7 @@ $\text{\textdollar}0.05$), totaling $\text{\textdollar}2.25$. We cannot
 count each type directly, but we have a clue: there are nine more nickels
 than dimes. Let $d =$ number of dimes, so $d + 9 =$ number of nickels.
 
-| Type | Number | Value ($) | Total Value ($) |
+| Type | Number | Value (\$) | Total Value (\$) |
 | :--- | :---: | :---: | :---: |
 | Dimes | $d$ | $0.10$ | $0.10d$ |
 | Nickels | $d + 9$ | $0.05$ | $0.05(d + 9)$ |
@@ -135,7 +135,7 @@ each type does she have?
 
 Let $q =$ the number of quarters, so the number of pennies is $2q$.
 
-| Type | Number | Value ($) | Total Value ($) |
+| Type | Number | Value (\$) | Total Value (\$) |
 | :--- | :---: | :---: | :---: |
 | Quarters | $q$ | $0.25$ | $0.25q$ |
 | Pennies | $2q$ | $0.01$ | $0.01(2q)$ |
@@ -180,7 +180,7 @@ have?
 
 Let $p =$ number of pennies, so $10p + 2 =$ number of nickels.
 
-| Type | Number | Value ($) | Total Value ($) |
+| Type | Number | Value (\$) | Total Value (\$) |
 | :--- | :---: | :---: | :---: |
 | Pennies | $p$ | $0.01$ | $0.01p$ |
 | Nickels | $10p + 2$ | $0.05$ | $0.05(10p + 2)$ |
@@ -231,7 +231,7 @@ sold?
 Let $s =$ the number of student tickets, so $3s - 5$ is the number of adult
 tickets.
 
-| Type | Number | Value ($) | Total Value ($) |
+| Type | Number | Value (\$) | Total Value (\$) |
 | :--- | :---: | :---: | :---: |
 | Student | $s$ | $6$ | $6s$ |
 | Adult | $3s - 5$ | $9$ | $9(3s - 5)$ |
@@ -278,7 +278,7 @@ $49$-cent stamps and how many $8$-cent stamps did Monica buy?
 Let $x =$ number of $8$-cent stamps, so $2x + 4 =$ number of $49$-cent
 stamps.
 
-| Type | Number | Value ($) | Total Value ($) |
+| Type | Number | Value (\$) | Total Value (\$) |
 | :--- | :---: | :---: | :---: |
 | 49-cent stamps | $2x + 4$ | $0.49$ | $0.49(2x + 4)$ |
 | 8-cent stamps | $x$ | $0.08$ | $0.08x$ |
