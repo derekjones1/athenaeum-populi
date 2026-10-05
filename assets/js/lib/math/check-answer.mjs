@@ -787,10 +787,25 @@ const sampleIsZero = (value) => Number.isFinite(value.re) && Number.isFinite(val
  * guarded (unrationalized) response that grades `incorrect`, which is the
  * safe side.
  */
+/** Does a logarithm in `expr` take an argument holding an absolute value? */
+const logOfAbsoluteValue = (expr) => (['Ln', 'Log', 'Lb', 'Lg'].includes(expr.operator)
+  && containsOperator(expr.ops[0], 'Abs')) || (expr.ops ?? []).some(logOfAbsoluteValue);
+
 function numericallyEquivalent(studentExpr, answerExpr) {
   const diff = ce.box(['Subtract', studentExpr, answerExpr]);
   const vars = diff.unknowns;
   if (vars.length === 0) return sampleIsZero(diff.N());
+  const logarithms = containsLogarithm(studentExpr) || containsLogarithm(answerExpr);
+  // An absolute value inside a logarithm on one side only extends that
+  // side's domain to its mirror: `\ln|x|` against `\ln x`, `\log_2|x-1|`
+  // against `\log_2(-(x-1))`, `2\ln|x+3|-1` against `2\ln(x+3)-1` agree on
+  // the common domain and graded `correct` — the wrong graph. Such a pair is
+  // read on the UNION of the two domains: a point where one side is real and
+  // the other is not is a disagreement (Precalculus chapter 4 re-review,
+  // round 2, October 4, 2026). A log property that moves the domain without
+  // a bar (condense/expand) keeps the common-domain reading.
+  const unionDomain = logarithms && logOfAbsoluteValue(studentExpr) !== logOfAbsoluteValue(answerExpr);
+  const options = { commonDomain: logarithms, unionDomain };
   let agreed = 0;
   for (const shift of SAMPLE_SHIFTS) {
     for (let i = 0; i < SAMPLE_POINTS.length && agreed < SAMPLES_REQUIRED; i += 1) {
@@ -798,11 +813,35 @@ function numericallyEquivalent(studentExpr, answerExpr) {
       vars.forEach((name, j) => {
         assignment[name] = SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length] + shift;
       });
-      const verdict = samplePointVerdict(studentExpr, answerExpr, assignment);
+      const verdict = samplePointVerdict(studentExpr, answerExpr, assignment, options);
       if (verdict === 'disagree') return false;
       if (verdict === 'agree') agreed += 1;
     }
     if (agreed >= SAMPLES_REQUIRED) break;
+  }
+  // A logarithm's domain may lie wholly below zero — the key
+  // `\log_2(-(x-1))` is real only for x < 1 — so the mirrored points are
+  // read too, every one of them, and count toward the floor (Precalculus
+  // 4.4, October 4, 2026). Wherever a logarithm is written, points are read
+  // on the COMMON domain: a log property moves the domain
+  // (`\log_2\frac{5x}{y}` is real at x, y < 0 where
+  // `\log_2 5+\log_2 x-\log_2 y` is not; `\log_2(x^3(x-1)^2)` at x = 0.61
+  // where `3\log_2 x+2\log_2(x-1)` is not), and the book grades the
+  // condensed and expanded forms equal, leaving the writing to the form
+  // tokens. Two logarithms with disjoint domains (`\ln x`, `\ln(-x)`) find
+  // no common point and fall short of the floor.
+  if (logarithms) {
+    for (const shift of SAMPLE_SHIFTS) {
+      for (let i = 0; i < SAMPLE_POINTS.length; i += 1) {
+        const assignment = {};
+        vars.forEach((name, j) => {
+          assignment[name] = -(SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length] + shift);
+        });
+        const verdict = samplePointVerdict(studentExpr, answerExpr, assignment, options);
+        if (verdict === 'disagree') return false;
+        if (verdict === 'agree') agreed += 1;
+      }
+    }
   }
   if (agreed < SAMPLES_REQUIRED) return false;
   return !negativesInScope(answerExpr) || agreesAtNegativePoints(vars, studentExpr, answerExpr);
@@ -831,12 +870,12 @@ function numericallyEquivalent(studentExpr, answerExpr) {
  * - Otherwise the two values compare within a relative tolerance (the shifted
  *   points grow the values); a complex key compares both parts.
  */
-function samplePointVerdict(studentExpr, answerExpr, assignment) {
+function samplePointVerdict(studentExpr, answerExpr, assignment, { commonDomain = false, unionDomain = false } = {}) {
   const [student, answer] = [studentExpr, answerExpr].map((side) => sampleValue(side, assignment));
   const defined = (value, side) => Number.isFinite(value.re) && Number.isFinite(value.im)
     && !outsideRealDomain(side, assignment);
-  if (!defined(answer, answerExpr)) return 'skip';
-  if (!defined(student, studentExpr)) return 'disagree';
+  if (!defined(answer, answerExpr)) return unionDomain && defined(student, studentExpr) ? 'disagree' : 'skip';
+  if (!defined(student, studentExpr)) return commonDomain && !unionDomain ? 'skip' : 'disagree';
   const scale = Math.max(1, Math.abs(student.re), Math.abs(student.im), Math.abs(answer.re), Math.abs(answer.im));
   return Math.abs(student.re - answer.re) <= SAMPLE_TOLERANCE * scale
     && Math.abs(student.im - answer.im) <= SAMPLE_TOLERANCE * scale ? 'agree' : 'disagree';
@@ -895,6 +934,23 @@ function outsideRealDomain(expr, assignment) {
     const radicand = expr.ops[0].subs(assignment).N();
     if (Number.isFinite(radicand.re) && Math.abs(radicand.im ?? 0) <= SAMPLE_TOLERANCE
       && radicand.re < 0) return true;
+  }
+  // A logarithm of a non-positive argument, or to a non-positive base or
+  // base 1, is not real either — but the engine numericizes `\ln(-2.47)` as
+  // the finite complex 0.904+πi, and its `isEqual` called `\ln(x)` equal to
+  // `\ln(-x)` and `\log_2(x-1)` equal to the key `\log_2(-(x-1))`
+  // (Precalculus 4.4, October 4, 2026).
+  if (['Ln', 'Log', 'Lb', 'Lg'].includes(expr.operator)) {
+    const real = (op) => {
+      const value = op.subs(assignment).N();
+      return Number.isFinite(value.re) && Math.abs(value.im ?? 0) <= SAMPLE_TOLERANCE ? value.re : null;
+    };
+    const argument = real(expr.ops[0]);
+    if (argument === null || argument <= 0) return true;
+    if (expr.operator === 'Log' && expr.ops[1]) {
+      const base = real(expr.ops[1]);
+      if (base === null || base <= 0 || base === 1) return true;
+    }
   }
   return (expr.ops ?? []).some((op) => outsideRealDomain(op, assignment));
 }
@@ -1066,6 +1122,87 @@ function irreducibleLogArgument(argument) {
 }
 
 /**
+ * The logarithms `bare` writes — each call's argument, the text after it,
+ * and its base (`e` for `\ln`, `10` for an unsubscripted `\log`) — and
+ * whether a parenthesized group that is no logarithm's own argument holds a
+ * logarithm (`\frac12(3\log x-4\log y)`). null when an argument is a
+ * compound command (`\log\sqrt{x}`, `\ln\frac{a}{b}`), however it is read.
+ */
+function logWriting(bare) {
+  const opener = /\\(?:log(?:_(\{[^{}]*\}|[0-9a-zA-Z]))?|ln)\s*/g;
+  const calls = [];
+  const argumentParens = new Set();
+  let match;
+  while ((match = opener.exec(bare)) !== null) {
+    const at = match.index + match[0].length;
+    const rest = bare.slice(at);
+    let argument;
+    let after;
+    if (rest[0] === '{') {
+      const group = readBalancedGroup(rest, 0);
+      argument = group?.[0] ?? '';
+      after = group ? rest.slice(group[1]) : '';
+    } else if (rest[0] === '(') {
+      const close = matchingParenIndex(rest, 0);
+      argument = close === -1 ? '' : rest.slice(1, close);
+      after = close === -1 ? '' : rest.slice(close + 1);
+      argumentParens.add(at);
+    } else if (rest[0] === '\\') {
+      return null;
+    } else {
+      argument = rest.match(/^[0-9a-zA-Z.]+/)?.[0] ?? '';
+      after = rest.slice(argument.length);
+    }
+    const base = match[0].startsWith('\\ln') ? 'e' : (match[1] ?? '10').replace(/[{}\s]/g, '');
+    calls.push({ argument, after, base });
+  }
+  let groupsOfLogarithms = false;
+  for (let i = 0; i < bare.length; i += 1) {
+    if (bare[i] !== '(' || argumentParens.has(i)) continue;
+    const close = matchingParenIndex(bare, i);
+    if (close !== -1 && /\\(?:log|ln)(?![a-zA-Z])/.test(bare.slice(i + 1, close))) groupsOfLogarithms = true;
+  }
+  return { calls, groupsOfLogarithms };
+}
+
+/**
+ * Is a logarithm's sum argument a one-variable integer polynomial that
+ * factors over the integers — a common integer factor (`2x+4`), a common
+ * power of the variable (`x^2+3x`), or a rational root (`x^2-9`,
+ * `x^2-3x+2`, `x^3-8`)? An irreducible quadratic or a factor pair with no
+ * rational root (`x^4+4`) reads as finished: this can only refuse.
+ */
+function reduciblePolynomialArgument(argument) {
+  let expr;
+  try {
+    expr = parseLatex(preprocess(argument));
+  } catch {
+    return false;
+  }
+  if (!expr.isValid || expr.operator !== 'Add' || expr.unknowns.length !== 1) return false;
+  const poly = exprToPolynomial(expr, expr.unknowns);
+  if (!poly || poly.length < 2) return false;
+  const coefficients = poly.map((c) => Number(c));
+  if (!coefficients.every(Number.isSafeInteger)) return false;
+  const degree = coefficients.length - 1;
+  if (coefficients.reduce((g, c) => gcd(g, Math.abs(c)), 0) > 1) return true;
+  if (degree < 2) return false;
+  if (coefficients[0] === 0) return true;
+  const divisors = (n) => {
+    const out = [];
+    for (let d = 1; d <= Math.abs(n) && d <= 10000; d += 1) if (n % d === 0) out.push(d);
+    return out;
+  };
+  const value = (x) => coefficients.reduceRight((sum, c) => sum * x + c, 0);
+  for (const p of divisors(coefficients[0])) {
+    for (const q of divisors(coefficients[degree])) {
+      if (Math.abs(value(p / q)) < 1e-9 || Math.abs(value(-p / q)) < 1e-9) return true;
+    }
+  }
+  return false;
+}
+
+/**
  * Is `\log_base argument`, both written, a rational number — `\log 10000`,
  * `\log_9 9`, `\log_4 2`, `\log 1`, `\ln e`, `\log_b b`? A numeral base and
  * argument are compared exactly: some power b^p equals n^q with q ≤ 12.
@@ -1230,6 +1367,51 @@ function sigmaTerms(expr) {
   return terms;
 }
 
+/**
+ * `expr` numericized without the engine's chop. N() flushes a value below
+ * its tolerance (1e-10) to 0 for most constructions — `2^{-80}`, `e^{-50}`,
+ * `\frac{1}{3}\times10^{-20}` all evaluate to 0, while the literal
+ * `3.33\times10^{-21}` does not — so a tiny value can only be compared with
+ * the tolerance lowered for the one evaluation, and restored whatever happens.
+ */
+function unchoppedValue(expr) {
+  const saved = ce.tolerance;
+  try {
+    ce.tolerance = Number.MIN_VALUE;
+    return expr.N();
+  } finally {
+    ce.tolerance = saved;
+  }
+}
+
+/**
+ * Does a constant real key smaller than 1 DISAGREE relatively with the
+ * response? `isEqual` compares within the engine's absolute tolerance
+ * (1e-10), and the constant branch of numericallyEquivalent() within the
+ * absolute SAMPLE_TOLERANCE, so every value below them equalled every other:
+ * against the radon-222 key `3.77\times10^{-26}`, `9.99\times10^{-12}`,
+ * `1\times10^{-30}` and `5\times10^{-26}` graded `correct` and `0` reached
+ * the form check (Precalculus 4.1, October 4, 2026). The tolerance is the
+ * sampling one, 1e-9 of the larger magnitude — the same 1e-9·max(1,|v|) a key
+ * of 1 or more already gets, without the floor. Only ever a refusal: a pair
+ * that agrees relatively still has to pass the usual paths, so no key of
+ * ordinary size grades anything new. A zero key, a complex value, and
+ * anything holding a variable are not read.
+ */
+function tinyConstantsDisagree(studentExpr, answerExpr) {
+  if (studentExpr.unknowns.length !== 0 || answerExpr.unknowns.length !== 0
+    || holdsComplexValue(studentExpr.json) || holdsComplexValue(answerExpr.json)) return false;
+  // An exact zero the engine numericizes as float noise (`\tan\pi`,
+  // −3.8e-25) is a zero key. Read through simplify(): `is(0)` chops too, and
+  // called `e^{-50}` zero.
+  if (answerExpr.simplify().isSame(ce.number(0))) return false;
+  const [student, answer] = [studentExpr, answerExpr].map(unchoppedValue);
+  const real = (v) => Number.isFinite(v?.re) && Math.abs(v.im ?? 0) === 0;
+  if (!real(answer) || !real(student) || answer.re === 0 || Math.abs(answer.re) >= 1) return false;
+  return Math.abs(student.re - answer.re)
+    > SAMPLE_TOLERANCE * Math.max(Math.abs(student.re), Math.abs(answer.re));
+}
+
 function equivalent(studentExpr, answerExpr) {
   try {
     if (studentExpr.isSame(answerExpr)) return true;
@@ -1298,6 +1480,9 @@ function equivalent(studentExpr, answerExpr) {
       return studentExpr.operator === 'Equal' && answerExpr.operator === 'Equal'
         && equationsEquivalent(studentExpr, answerExpr);
     }
+    // A tiny constant key is compared relatively before any engine or sampling
+    // path can call it equal to every other tiny value.
+    if (tinyConstantsDisagree(studentExpr, answerExpr)) return false;
     // `isEqual` must never see a radical-denominator quotient, or a logarithm
     // sharing an operand with a symbolic denominator — its two hang classes
     // (see the guards' banner). Only sampling provably returns there. The
@@ -1371,6 +1556,14 @@ function equivalent(studentExpr, answerExpr) {
     // stopped writing its label's variable (Intermediate Algebra chapters
     // 11–12 re-review, October 4, 2026). Such a pair is decided by the
     // simplified difference alone.
+    // A logarithm over a variable is decided by sampling on the key's real
+    // domain: `isEqual` reads a logarithm of a negative as real and called
+    // `\ln(x)` equal to `\ln(-x)` (outsideRealDomain, Precalculus 4.4,
+    // October 4, 2026).
+    if ((containsLogarithm(studentExpr) || containsLogarithm(answerExpr))
+      && (studentExpr.unknowns.length > 0 || answerExpr.unknowns.length > 0)) {
+      return numericallyEquivalent(studentExpr, answerExpr);
+    }
     if (!holdsSubscript(studentExpr.json) && !holdsSubscript(answerExpr.json)
       && studentExpr.isEqual(answerExpr) === true) return true;
     const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
@@ -2968,6 +3161,14 @@ function readNotationArgument(source, start) {
     const group = readDelimitedGroup(source, i);
     return group ? [group[0], group[1]] : null;
   }
+  // A fraction or radical brings its own arguments, so it is read whole:
+  // `\ln\frac{1}{\sqrt2}` takes the fraction, where reading the command name
+  // alone left `{1}{\sqrt2}` as two stray factors (Precalculus 4.6, October
+  // 4, 2026).
+  if (/^\\(?:[tdc]?frac|sqrt)(?![a-zA-Z])/.test(source.slice(i))) {
+    const atom = readShapeAtom(source, i);
+    return atom ? [source.slice(i, atom.next), atom.next] : null;
+  }
   const token = source.slice(i).match(/^(?:\d+(?:\.\d+)?|[a-zA-Z]|\\[a-zA-Z]+)/);
   return token ? [token[0], i + token[0].length] : null;
 }
@@ -3159,11 +3360,35 @@ function singleCarryingFactor(bare) {
   return factors.at(-1);
 }
 
-/** `\log 43`, `\ln 8`, `\log_2 x` — a logarithm of ONE numeral or variable. */
+/**
+ * `\log 43`, `\ln 8`, `\log_2 x` — a logarithm of ONE numeral or variable,
+ * whose value is not rational: `\log 100` is the 2 it evaluates to, left
+ * unevaluated. Or of one finished numeral FRACTION — integer halves in lowest
+ * terms, or a simplified numeral root over an integer or the reverse — the
+ * source's own `\ln\left(\frac{1}{\sqrt2}\right)` and
+ * `\frac12\ln\frac12` for $-\tfrac12\ln 2$ (Precalculus 4.6, October 4,
+ * 2026); `\ln\frac{2}{4}` and `\log_2\frac18` are still work to do.
+ */
 function isLogarithmOfAnAtom(factor) {
   if (!factor || factor.exponent !== null || factor.atom.kind !== 'log') return false;
   const argument = factor.atom.argument.trim();
-  return /^\d+$/.test(argument) || /^[a-zA-Z]$/.test(argument);
+  const base = factor.atom.name === 'ln' ? 'e' : (factor.atom.base ?? '10').replace(/[{}\s]/g, '');
+  if (/^[a-zA-Z]$/.test(argument)) return true;
+  if (/^\d+$/.test(argument)) return !logEvaluatesRationally(base, argument);
+  const fraction = loneFactor(argument);
+  if (!fraction || fraction.exponent !== null || fraction.atom.kind !== 'frac') return false;
+  const halves = [fraction.atom.numerator, fraction.atom.denominator].map(loneFactor);
+  if (!halves.every((half) => half && half.exponent === null
+    && (half.atom.kind === 'number' || half.atom.kind === 'sqrt') && isFinishedModelNumeral(half))) return false;
+  if (halves.every((half) => half.atom.kind === 'number')) {
+    const [top, bottom] = halves.map((half) => Number(half.atom.text));
+    if (bottom === 1 || gcd(top, bottom) !== 1) return false;
+    if (/^\d+$/.test(base) && Number(base) > 1) {
+      const value = Math.log(top / bottom) / Math.log(Number(base));
+      for (let q = 1; q <= 12; q += 1) if (Math.abs(value * q - Math.round(value * q)) < 1e-9) return false;
+    }
+  }
+  return true;
 }
 
 /** A plain positive integer factor — the `+2` of `\ln 9+2`, the `2` of `\frac{\ln 5}{2}`. */
@@ -3339,6 +3564,318 @@ function isFinishedNumeral(text) {
   if (!fraction) return false;
   if (fraction.negativeDenominator || fraction.signs > 1) return false;
   return gcd(fraction.numerator, fraction.denominator) === 1;
+}
+
+/**
+ * One unsigned, nonzero, finished numeral FACTOR of an exponential model — its
+ * coefficient, its base, or a constant term — read off a formShape() factor:
+ * a decimal or integer, a fraction of integers in lowest terms over a
+ * denominator other than 1, or a simplified root of an integer (the source's
+ * own `\sqrt{2}(\sqrt{2})^x`), optionally in parentheses. Never a power, a
+ * logarithm, a sign inside a group, or a fraction holding anything else:
+ * `\frac{750}{125}`, `\sqrt[3]{125}`, `125^{\frac13}` and `\frac{\ln 0.5}{30}`
+ * are arithmetic still to do.
+ */
+function isFinishedModelNumeral(factor) {
+  if (!factor || factor.exponent !== null) return false;
+  const { atom } = factor;
+  if (atom.kind === 'number') return Number(atom.text) !== 0;
+  if (atom.kind === 'frac') {
+    if (!isIntegerLiteral(atom.numerator) || !isIntegerLiteral(atom.denominator)) return false;
+    const [top, bottom] = [Number(atom.numerator), Number(atom.denominator)];
+    return top !== 0 && bottom > 1 && gcd(top, bottom) === 1;
+  }
+  if (atom.kind === 'sqrt') {
+    const index = atom.index === null ? 2 : Number(atom.index);
+    if (atom.index !== null && !isIntegerLiteral(atom.index)) return false;
+    if (!(index >= 2) || !isIntegerLiteral(atom.radicand)) return false;
+    const radicand = Number(atom.radicand);
+    if (radicand < 2 || !Number.isSafeInteger(radicand)) return false;
+    for (let root = 2; root ** index <= radicand; root += 1) {
+      if (radicand % root ** index === 0) return false;
+    }
+    return true;
+  }
+  if (atom.kind === 'group') return isFinishedModelNumeral(loneFactor(atom.text));
+  return false;
+}
+
+/**
+ * An EXACT continuous rate, the value of `\frac{\ln 2}{3}`, `(\ln 0.5)` or
+ * `\ln(0.5)` as written in a model's exponent, or null: one natural
+ * logarithm of a finished positive numeral other than 1, alone or over an
+ * integer of at least 2. "Keep $k$ exact" asks for exactly this, so the key
+ * `A_0e^{\frac{\ln2}{3}t}` is a finished model (Precalculus 4.7, October 4,
+ * 2026); a decimal written in for the logarithm (`\frac{0.6931}{3}`) or a
+ * slash (`\ln2/3`) is not this shape.
+ */
+function exactLogRate(text) {
+  // `\frac{\ln 125}{3}` is `\ln 5` with the root left to take — the
+  // `6\cdot125^{x/3}` of base e: a divided logarithm is finished only when
+  // the argument is no perfect power of the divisor's degree.
+  const rootIsRational = (written, degree) => {
+    const call = written.match(/^\\ln(?:\((.+)\)|\{(.+)\}|(.+))$/);
+    const argument = call && (call[1] ?? call[2] ?? call[3]);
+    const fraction = argument && asFraction(argument);
+    const decimal = !fraction && argument && /^\d*\.?\d+$/.test(argument.trim()) ? argument.trim() : null;
+    const places = decimal ? (decimal.split('.')[1] ?? '').length : 0;
+    const halves = fraction ? [fraction.numerator, fraction.denominator]
+      : decimal ? [Math.round(Number(decimal) * 10 ** places), 10 ** places] : null;
+    const common = halves ? gcd(halves[0], halves[1]) : 1;
+    return halves !== null && halves.map((half) => half / common).every((half) => Math.round(half ** (1 / degree)) ** degree === half);
+  };
+  const logValue = (written) => {
+    const call = written.match(/^\\ln(?:\((.+)\)|\{(.+)\}|(.+))$/);
+    const argument = call && (call[1] ?? call[2] ?? call[3]);
+    if (!argument || !isFinishedNumeral(argument) || /^[+-]/.test(argument.trim())) return null;
+    const fraction = asFraction(argument);
+    const value = fraction ? fraction.numerator / fraction.denominator : Number(bareLatex(argument));
+    return value > 0 && value !== 1 ? Math.log(value) : null;
+  };
+  const quotient = text.match(/^\\[tdc]?frac\{(\\ln[^{}]*(?:\{[^{}]*\})?[^{}]*)\}(?:\{(\d+)\}|(\d))$/);
+  if (quotient) {
+    const divisor = Number(quotient[2] ?? quotient[3]);
+    const value = logValue(quotient[1]);
+    return value !== null && divisor >= 2 && !rootIsRational(quotient[1], divisor) ? value / divisor : null;
+  }
+  const grouped = text.match(/^\((\\ln.*)\)$/);
+  if (grouped) return logValue(grouped[1]);
+  // `\frac{1}{3}\ln(2)`, the unit fraction written before the logarithm
+  // (Precalculus chapter 4 re-review, round 2, October 4, 2026).
+  const scaled = text.match(/^\\[tdc]?frac(?:\{1\}|1)(?:\{(\d+)\}|(\d))(\\ln.*)$/);
+  if (scaled) {
+    const divisor = Number(scaled[1] ?? scaled[2]);
+    const value = logValue(scaled[3]);
+    return value !== null && divisor >= 2 && !rootIsRational(scaled[3], divisor) ? value / divisor : null;
+  }
+  return /^\\ln[({]/.test(text) ? logValue(text) : null;
+}
+
+/**
+ * An exponent over $e$ written as an exact logarithm rate and its variable in
+ * ANY order — `x\ln5`, `x\ln(5)`, `t\frac{\ln2}{3}`, `\frac{t\ln2}{3}`,
+ * `\frac{1}{3}\ln(2)t` — as the rate's value, or null. The one variable
+ * (and a `\cdot`/`\times` beside it) is taken out and the rest must be an
+ * exactLogRate; a rate written with the variable last, `(\ln5)x`, was the
+ * only order read, so the others graded `form` against keys they equal
+ * (Precalculus chapter 4 re-review, round 2, October 4, 2026). With the
+ * variable out of the way, a bare `\ln5` is unambiguous as the rate.
+ */
+function exactLogRateAnyOrder(text) {
+  if (!/\\ln(?![a-zA-Z])/.test(text)) return null;
+  const letters = [];
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] === '\\') {
+      i += (text.slice(i).match(/^\\[a-zA-Z]*/)[0].length || 1) - 1;
+      continue;
+    }
+    if (/[a-zA-Z]/.test(text[i])) letters.push(i);
+  }
+  if (letters.length !== 1 || text[letters[0]] === 'e') return null;
+  const at = letters[0];
+  const before = text.slice(0, at).replace(/(?:\\cdot|\\times|\*)$/, '');
+  const after = text.slice(at + 1).replace(/^(?:\\cdot|\\times|\*)/, '');
+  if (before !== text.slice(0, at) && after !== text.slice(at + 1)) return null;
+  const rest = `${before}${after}`;
+  if (!rest) return null;
+  return exactLogRate(rest) ?? (/^\\ln[^({]/.test(rest) ? exactLogRate(`\\ln(${rest.slice(3)})`) : null);
+}
+
+/**
+ * The rate a finished exponential model's exponent multiplies its variable
+ * by, as `{ value, places }` (places null for an exact rate), or null when
+ * the exponent is not finished. The exponent is the variable (any letter but
+ * `e`) times an optional finished rate: a decimal (`0.5x`, `-0.0231t`,
+ * `(-0.3038)x`), a decimal in scientific notation (`-8.7\times10^{-9}t`), a
+ * lowest-terms fraction (`\frac{1}{3}x`, `\frac{t}{20}`, `t/20`,
+ * `\frac{2x}{3}`), or — over $e$ only — an exact logarithm rate
+ * (exactLogRate). Never other arithmetic: `e^{(\ln5)\cdot1x}`,
+ * `e^{\frac{0.693}{30}t}`, `5^{-(-x)}`.
+ */
+function modelExponentRate(written, natural) {
+  let text = String(written ?? '').replace(/\s+/g, '');
+  let sign = 1;
+  if (text.startsWith('-')) { sign = -1; text = text.slice(1); }
+  if (/^[a-df-zA-Z]$/.test(text)) return { value: sign, places: null };
+  const quotient = text.match(/^\\[tdc]?frac(?:\{(?<top>\d*)[a-df-zA-Z]\}|[a-df-zA-Z])(?:\{(?<bottom>\d+)\}|(?<digit>\d))$/)
+    ?? text.match(/^(?<top>\d*)[a-df-zA-Z]\/(?<bottom>\d+)$/);
+  if (quotient) {
+    const { top, bottom, digit } = quotient.groups;
+    const [a, b] = [Number(top || 1), Number(bottom ?? digit)];
+    return a !== 0 && b >= 2 && gcd(a, b) === 1 ? { value: sign * a / b, places: null } : null;
+  }
+  const exact = natural ? exactLogRateAnyOrder(text) : null;
+  if (exact !== null) return { value: sign * exact, places: null };
+  const product = text.match(/^(.+?)(?:\\cdot|\\times|\*)?[a-df-zA-Z]$/);
+  if (!product) return null;
+  let rate = product[1];
+  const grouped = rate.match(/^\((.*)\)$/);
+  if (grouped) {
+    rate = grouped[1];
+    if (rate.startsWith('-')) {
+      if (sign < 0) return null;
+      sign = -1;
+      rate = rate.slice(1);
+    }
+  }
+  if (/^[+-]/.test(rate)) return null;
+  // A written rate of 1 is the step left in place: `5^{1x}`,
+  // `1.25^{-1\cdot x}` (Precalculus 4.2, October 4, 2026).
+  if (asDecimal(rate) !== null) {
+    return Number(rate) === 0 || Number(rate) === 1 ? null
+      : { value: sign * Number(rate), places: (rate.split('.')[1] ?? '').length };
+  }
+  const scientific = asScientific(rate);
+  if (scientific !== null) {
+    const { coefficient, exponent } = scientific;
+    return coefficient >= 1 && coefficient < 10
+      ? { value: sign * Number(`${coefficient}e${exponent}`), places: null } : null;
+  }
+  const fraction = asFraction(rate);
+  return fraction !== null && fraction.signs === 0 && fraction.numerator !== 0
+    && fraction.denominator > 1 && gcd(fraction.numerator, fraction.denominator) === 1
+    ? { value: sign * fraction.numerator / fraction.denominator, places: null } : null;
+}
+
+/**
+ * Is a numeral base raised to `rate` a power still to take? Over a numeral
+ * base the exponent is the variable alone or its negative (`4(3)^{-x}`); any
+ * other multiple is finished only when the base to that multiple is
+ * irrational (`2^{t/3}`, `2^{0.5x}`). A rational one is the power left
+ * untaken: `6\cdot125^{x/3}` for `6(5)^x`, `4^{x/2}` for `2^x`,
+ * `1.5^{2x}` for `2.25^x` (Precalculus chapter 4 re-review, October 4, 2026).
+ */
+function untakenPower(base, rate) {
+  if (Math.abs(rate) === 1) return false;
+  const power = base ** Math.abs(rate);
+  if (!Number.isFinite(power)) return true;
+  for (let denominator = 1; denominator <= 10000; denominator += 1) {
+    const scaled = power * denominator;
+    if (Math.abs(scaled - Math.round(scaled)) <= 1e-9 * Math.max(1, scaled)) return true;
+  }
+  return false;
+}
+
+/**
+ * An exponential model read off the writing (the `exponential-model` grammar
+ * documented at its predicate), or null: the parts the rounding comparison
+ * pairs up — the model term's sign, its coefficient and base factors, whether
+ * the base is $e$, the written exponent, and the constant term with its sign.
+ */
+const INITIAL_VALUE_SYMBOL = /(?<![\\a-zA-Z])[a-zA-Z]_(?:\{\s*0\s*\}|0)(?![0-9])/;
+
+function readExponentialModel(latex) {
+  let bare = stripWrittenLabel(bareLatex(latex));
+  const label = bare.match(LEADING_VARIABLE_LABEL);
+  if (label) bare = bare.slice(label[0].length);
+  // An initial-value symbol, `A_0`/`P_{0}`, is the coefficient of a model
+  // left general ("a function that gives the amount remaining"): read as one
+  // opaque factor, the shape parser having no subscripts.
+  bare = bareLatex(bare).replace(INITIAL_VALUE_SYMBOL, '\\initialvalue ');
+  if (bare.includes('=')) return null;
+  const shape = formShape(bare);
+  if (!shape || shape.terms.length > 2) return null;
+  // splitTopLevelTerms() drops the sign that splits two terms, so the signs
+  // are read here: the leading one, then each top-level `+`/`-` after a term.
+  const signs = [bare.startsWith('-')];
+  for (let i = 0, depth = 0, seen = false; i < bare.length; i += 1) {
+    const char = bare[i];
+    if (char === '{' || char === '(') depth += 1;
+    else if (char === '}' || char === ')') depth -= 1;
+    if (depth === 0 && (char === '+' || char === '-') && seen) signs.push(char === '-');
+    if (depth === 0 && (char === '+' || char === '-')) seen = false;
+    else if (char.trim()) seen = true;
+  }
+  const isConstant = (term) => term.factors.length === 1 && isFinishedModelNumeral(term.factors[0]);
+  const at = shape.terms.findIndex((term) => !isConstant(term));
+  if (at === -1 || shape.terms.some((term, i) => i !== at && !isConstant(term))) return null;
+  const factors = shape.terms[at].factors.map((factor) => {
+    if (factor.atom.kind !== 'group' || factor.exponent !== null) return factor;
+    const inner = loneFactor(factor.atom.text);
+    return inner && inner.exponent !== null ? inner : factor;
+  });
+  const powers = factors.filter((factor) => factor.exponent !== null);
+  if (factors.length > 2 || powers.length !== 1) return null;
+  const coefficient = factors.find((factor) => factor.exponent === null) ?? null;
+  const initialValue = coefficient?.atom.kind === 'command' && coefficient.atom.text === 'initialvalue';
+  if (coefficient && !initialValue && !isFinishedModelNumeral(coefficient)) return null;
+  // A written coefficient of 1 is the substitution left in place:
+  // `-1\cdot10^x+7` for `-10^x+7` (Precalculus 4.2, October 4, 2026).
+  if (coefficient && !initialValue && modelNumeralValue(coefficient).value === 1) return null;
+  const [{ atom, exponent }] = powers;
+  const natural = (atom.kind === 'symbol' || atom.kind === 'group') && atom.text.trim() === 'e';
+  if (!natural && !isFinishedModelNumeral({ atom, exponent: null })) return null;
+  const rate = modelExponentRate(exponent, natural);
+  if (rate === null) return null;
+  if (!natural && untakenPower(modelNumeralValue({ atom, exponent: null }).value, rate.value)) return null;
+  const constantAt = shape.terms.length === 2 ? 1 - at : -1;
+  return {
+    negative: signs[at],
+    coefficient,
+    base: natural ? null : { atom, exponent: null },
+    exponent,
+    constant: constantAt === -1 ? null : { negative: signs[constantAt], factor: shape.terms[constantAt].factors[0] },
+  };
+}
+
+/**
+ * A finished model numeral's value, and how many decimal places it is
+ * written to — null places for an exact one (a fraction, a root, an
+ * implicit 1).
+ */
+function modelNumeralValue(factor) {
+  if (factor === null) return { value: 1, places: null };
+  const { atom } = factor;
+  // An initial-value symbol pairs only with itself (overPreciseModel).
+  if (atom.kind === 'command') return { value: Number.NaN, places: null, symbol: true };
+  if (atom.kind === 'number') return { value: Number(atom.text), places: (atom.text.split('.')[1] ?? '').length };
+  if (atom.kind === 'frac') return { value: Number(atom.numerator) / Number(atom.denominator), places: null };
+  if (atom.kind === 'sqrt') return { value: Number(atom.radicand) ** (1 / Number(atom.index ?? 2)), places: null };
+  return modelNumeralValue(loneFactor(atom.text));
+}
+
+/**
+ * Is `studentRaw` the key's exponential model with its decimals carried
+ * further than the key rounds them? A regression ask prints "round to four
+ * decimal places", and the value check (1e-9) marked
+ * `522.8858598(1.196452561)^x` `incorrect` against `522.8859(1.1965)^x`
+ * (Precalculus 4.8, October 4, 2026) — the right model, under-rounded.
+ * Every part is paired by role: the same signs, the same kind of base, and
+ * each decimal of the key matched by a response decimal written to at least
+ * as many places that rounds to it; an exact part must be the key's value.
+ * An integer part of a key that rounds anything is rounded too ("round $a$
+ * to the nearest whole number", `18\cdot1.025^x`).
+ * The verdict this feeds is `form`, never `correct`.
+ */
+function overPreciseModel(studentRaw, answerRaw) {
+  const [student, key] = [studentRaw, answerRaw].map(readExponentialModel);
+  if (!student || !key || student.negative !== key.negative) return false;
+  if ((student.base === null) !== (key.base === null)) return false;
+  if ((student.constant === null) !== (key.constant === null)) return false;
+  if (student.constant && student.constant.negative !== key.constant.negative) return false;
+  const pairs = [
+    [student.coefficient, key.coefficient].map(modelNumeralValue),
+    [[student, student.exponent], [key, key.exponent]].map(([model, exponent]) => modelExponentRate(exponent, model.base === null)),
+  ];
+  if (key.base) pairs.push([student.base, key.base].map(modelNumeralValue));
+  if (key.constant) pairs.push([student.constant.factor, key.constant.factor].map(modelNumeralValue));
+  // Only a key written with a decimal is a rounded model: `6(5)^x` and
+  // `-10^x+7` are exact, and `6.0001(5)^x` is just wrong.
+  if (!pairs.some(([, theirs]) => theirs.places > 0)) return false;
+  let carried = false;
+  for (const [mine, theirs] of pairs) {
+    if (mine.symbol || theirs.symbol) {
+      if (!(mine.symbol && theirs.symbol)) return false;
+      continue;
+    }
+    if (theirs.places === null || mine.places === null) {
+      if (Math.abs(mine.value - theirs.value) > SAMPLE_TOLERANCE * Math.max(1, Math.abs(theirs.value))) return false;
+      continue;
+    }
+    if (mine.places < theirs.places || mine.value.toFixed(theirs.places) !== theirs.value.toFixed(theirs.places)) return false;
+    if (mine.places > theirs.places) carried = true;
+  }
+  return carried;
 }
 
 /**
@@ -3901,6 +4438,8 @@ const FORM_PREDICATES = {
     if (shape.terms.length === 2) {
       const company = shape.terms[leadingInteger ? 0 : 1].factors;
       if (company.length !== 1 || !isIntegerFactor(company[0])) return false;
+      // …never a written zero: `\ln\frac{1}{\sqrt2}+0` is the term alone.
+      if (Number(company[0].atom.text) === 0) return false;
     }
     const factors = shape.terms[leadingInteger ? 1 : 0].factors;
     if (factors.length > 2) return false;
@@ -3908,7 +4447,14 @@ const FORM_PREDICATES = {
     const carrying = factors.at(-1);
     if (isLogarithmOfAnAtom(carrying)) return true;
     if (carrying.exponent !== null || carrying.atom.kind !== 'frac') return false;
-    const numerator = loneFactor(carrying.atom.numerator);
+    // The minus may be written on the numerator's logarithm,
+    // `\frac{-\ln 2}{2}` for $-\tfrac12\ln 2$ — once: not with a sign on
+    // the term as well (Precalculus 4.6, October 4, 2026). A minus in the
+    // denominator stays unreduced sign work.
+    const signedTerm = splitTopLevelTerms(bare)[leadingInteger ? 1 : 0].trim().startsWith('-');
+    const signedNumerator = /^\s*-/.test(carrying.atom.numerator);
+    if (signedNumerator && signedTerm) return false;
+    const numerator = loneFactor(carrying.atom.numerator.replace(/^\s*-/, ''));
     const denominator = loneFactor(carrying.atom.denominator);
     if (!isLogarithmOfAnAtom(numerator) || !denominator) return false;
     return isLogarithmOfAnAtom(denominator) || isIntegerFactor(denominator);
@@ -3987,7 +4533,23 @@ const FORM_PREDICATES = {
     // spelling, and graded `form` (Intermediate Algebra 10.4, October 3,
     // 2026); `2\cdot\log_2 x` still multiplies the logarithm.
     if (/\\cdot|\\times/.test(withoutGroups(terms[0]))) return false;
-    return /^\s*-?\s*\\(?:log|ln)(?![a-zA-Z])/.test(terms[0]);
+    if (!/^\s*-?\s*\\(?:log|ln)(?![a-zA-Z])/.test(terms[0])) return false;
+    // …and the argument's numeral work is finished: `\ln\frac{6x^9}{3x^2}`
+    // for `\ln(2x^7)`, `\log_b\frac{28}{7}` for `\log_b 4`, `\log_3(4^2)`
+    // and `\log_3(4\cdot4)` for `\log_3 16` condensed the logarithms but
+    // left the quotient, power or product unworked (Precalculus 4.5, October
+    // 4, 2026). A numeral power or product, exponent arithmetic, and a
+    // fraction whose monomial halves share a factor are refused; a fraction
+    // over a polynomial keeps only its integer content to cancel.
+    const call = terms[0].replace(/^\s*-?\s*/, '').match(/^\\(?:log|ln)(?![a-zA-Z])\s*/);
+    let at = call[0].length;
+    const body = terms[0].replace(/^\s*-?\s*/, '');
+    if (body[at] === '_') at = readTexArgument(body, at + 1)?.[1] ?? body.length;
+    const argument = readNotationArgument(body, at);
+    const written = argument ? `${argument[0]}${body.slice(argument[1])}` : body.slice(at);
+    return !writesNumeralPower(written) && !writesNumeralProduct(written)
+      && !writesExponentArithmetic(written) && !writesUnreducedExponent(written)
+      && termFractionsReduced(written) && numeralFractionsReduced(written);
   },
   'mixed-number': (latex) => {
     const mixed = asMixedNumber(latex);
@@ -4333,6 +4895,11 @@ const FORM_PREDICATES = {
     // like terms (Intermediate Algebra 8.8, October 3, 2026).
     if (writesNumeralLikeTerms(bareLatex(latex))) return false;
     if (writesImaginaryPower(bareLatex(latex)) || writesImaginaryDenominator(bareLatex(latex))) return false;
+    // …and a numeral exponent still to work out is a term not yet combined:
+    // `e^{\frac{10}{2}}-1` and `e^{10-5}-1` passed against `e^{5}-1`, where
+    // `single-term` already refused `e^{10-6}` alone (Precalculus 4.6,
+    // October 4, 2026).
+    if (writesExponentArithmetic(bareLatex(latex)) || writesUnreducedExponent(bareLatex(latex))) return false;
     // …and so are two written inside a group: `(3-2)+(-4-5)i` for `1-9i`,
     // the "add the real parts, add the imaginary parts" line, passed — each
     // group was one constant term of the sum, and the engine folds what is
@@ -5091,6 +5658,25 @@ const FORM_PREDICATES = {
     }
     return true;
   },
+  // "Find the exponential function through these two points", "write the
+  // model": no token pinned an exponential-model key, so the half-worked
+  // `6\cdot125^{x/3}`, `6(\sqrt[3]{125})^x`, `\frac{750}{125}(5)^x` and
+  // `6\cdot5^x\cdot1` graded `correct` against `6(5)^x` (Precalculus chapter
+  // 4 re-review, October 4, 2026). Read off the writing, after any label:
+  //
+  //   response := model-term (± constant)?      (either order)
+  //   model-term := coefficient? power | power coefficient?
+  //   power := numeral-base ^ (-)?rate? variable | e ^ (-)?rate? variable
+  //
+  // Every coefficient, base, rate and constant a finished numeral
+  // (isFinishedModelNumeral, modelExponentRate, untakenPower); `\cdot`,
+  // `\times`, juxtaposition and parentheses all multiply; a power in
+  // parentheses (`6(5^x)`) is read through them. The constant is the
+  // vertical shift of `90e^{-0.008377t}+75` and `-10^x+7` (Precalculus 4.2);
+  // the coefficient may be an initial-value symbol, `A_0e^{\frac{\ln2}{3}t}`
+  // (4.7), whose exact rate is finished too. `(e^{0.5})^x` is the power left
+  // to take: its base is no numeral.
+  'exponential-model': (latex) => readExponentialModel(latex) !== null,
   // "Use properties of logarithms to write $\log_5 25ab$ as a sum of
   // logarithms" answers $2+\log_5 a+\log_5 b$. Every written logarithm must
   // take an argument the log rules cannot break apart, so the printed
@@ -5118,34 +5704,45 @@ const FORM_PREDICATES = {
   // `\log_4 2`, `\log 1`) — or of its own base (`\ln e`, `\log_b b`) — is a
   // number left unevaluated on a "simplify, if possible" ask; an irrational
   // one (`\log_2 5`, `\ln 3`) is a finished term.
-  'expanded-logarithms': (latex) => {
+  //
+  // Three more (Precalculus 4.5, October 4, 2026). A sum argument that is a
+  // polynomial factoring over the integers is a product still to split:
+  // `-\ln(x^2-9)` for `-\ln(x+3)-\ln(x-3)` (reduciblePolynomialArgument). A
+  // composite whole-number argument is too, when the key writes every
+  // whole-number argument prime — the How To "expresses each whole number
+  // factor as a product of primes", so `\log_b(14)` for
+  // `\log_b(2)+\log_b(7)`. And written numeral arithmetic on the
+  // coefficients — `\frac13\cdot2\ln x`, or a coefficient on a parenthesized
+  // group of logarithms, `\frac12(3\log x-4\log y)` — is the distribution
+  // left undone, unless the key itself is written factored out that way
+  // (Intermediate Algebra 10.4's `\frac{1}{5}(4\log_4 x-…)`).
+  'expanded-logarithms': (latex, answer) => {
     const bare = bareLatex(latex);
-    const opener = /\\(?:log(?:_(\{[^{}]*\}|[0-9a-zA-Z]))?|ln)\s*/g;
-    let match;
-    while ((match = opener.exec(bare)) !== null) {
-      const rest = bare.slice(match.index + match[0].length);
-      let argument;
-      let after;
-      if (rest[0] === '{') {
-        const group = readBalancedGroup(rest, 0);
-        argument = group?.[0] ?? '';
-        after = group ? rest.slice(group[1]) : '';
-      } else if (rest[0] === '(') {
-        const close = matchingParenIndex(rest, 0);
-        argument = close === -1 ? '' : rest.slice(1, close);
-        after = close === -1 ? '' : rest.slice(close + 1);
-      } else if (rest[0] === '\\') {
-        return false; // \sqrt, \frac — a compound argument however it is read
-      } else {
-        argument = rest.match(/^[0-9a-zA-Z.]+/)?.[0] ?? '';
-        after = rest.slice(argument.length);
-      }
+    const writing = logWriting(bare);
+    if (writing === null) return false;
+    for (const { argument, after, base } of writing.calls) {
       if (!irreducibleLogArgument(argument) || /^\s*\^/.test(after)) return false;
-      const base = match[0].startsWith('\\ln') ? 'e'
-        : (match[1] ?? '10').replace(/[{}\s]/g, '');
       if (logEvaluatesRationally(base, argument.replace(/\s+/g, ''))) return false;
+      if (reduciblePolynomialArgument(argument)) return false;
     }
-    return true;
+    const key = answer === undefined ? null : logWriting(bareLatex(answer));
+    if (key !== null) {
+      const composite = (calls) => calls.some(({ argument }) => /^\d+$/.test(argument.trim())
+        && Number(argument) > 3 && !isPrime(Number(argument)));
+      if (composite(writing.calls) && !composite(key.calls)) return false;
+      if (writing.groupsOfLogarithms && !key.groupsOfLogarithms) return false;
+    }
+    return !writesNumeralProduct(bare);
+  },
+  // "Rewrite $\log_{0.5}(8)$ as a quotient of natural logarithms" is keyed
+  // `\frac{\ln(8)}{\ln(0.5)}`, and the common-log quotient
+  // `\frac{\log 8}{\log 0.5}` is the same number, so only the written base
+  // can refuse it (Precalculus 4.5, October 4, 2026). At least one
+  // logarithm, every one of them natural: `\ln`, or `\log_e`.
+  'natural-log': (latex) => {
+    const bare = bareLatex(latex);
+    const calls = [...bare.matchAll(/\\(ln|log)(?![a-zA-Z])\s*(?:_\s*(\{\s*e\s*\}|e))?/g)];
+    return calls.length > 0 && calls.every((call) => call[1] === 'ln' || call[2] !== undefined);
   },
   // "Find the exact value of $\cos\left(\tfrac{\pi}{4}\right)$" answers
   // $\tfrac{\sqrt2}{2}$ — and the printed subject IS that value, so retyping
@@ -5476,7 +6073,9 @@ const FORM_PHRASES = {
   'exponential-form': 'in exponential form, with no logarithm left: the logarithm\'s base, raised to its value, equals its argument',
   'logarithmic-form': 'in logarithmic form: the logarithm, to the power\'s base, of the number equals the exponent',
   'base-e': 'with $e$ as the base',
+  'exponential-model': 'as one exponential model, $ab^x$ or $ae^{kx}$, with every number in it worked out',
   'expanded-logarithms': 'as a sum of logarithms of single numbers and variables',
+  'natural-log': 'with natural logarithms ($\\ln$) only',
   'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
   'single-trig-function': 'as a single trigonometric function',
   'evaluated-logarithm': 'as a number, with the logarithm evaluated',
@@ -5532,6 +6131,9 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
   const { tokens, valid } = parseAnswerForm(spec);
   const general = describeAnswerForm(spec);
   if (!valid || !tokens.length) return general;
+  if (tokens.includes('exponential-model') && answerRaw !== undefined && overPreciseModel(studentRaw, answerRaw)) {
+    return 'That model is right — now round each number in it to the places the question asks for.';
+  }
   // A response already in factored form that missed only completeness is
   // told to keep going — "now write it factored completely" would read as
   // if the factoring it did had not registered.
@@ -5894,9 +6496,20 @@ function inequalitySet(latex) {
       }
       for (let r = 0; r < kinds.length; r += 1) {
         const variableOnLeft = r === at;
-        const bound = finiteBound(variableOnLeft ? sides[r + 1] : sides[r]);
-        if (!bound) return null;
         const kind = variableOnLeft ? kinds[r] : FLIPPED_RELATION[kinds[r]];
+        // A strict bound at infinity bounds nothing — `-\infty<x<\infty`
+        // is every real, the interval `(-\infty,\infty)` written as an
+        // inequality, and graded `incorrect` rather than the notation's
+        // `form` (Precalculus 4.2, October 4, 2026). A closed one, or one
+        // on the wrong side, states no interval.
+        const boundText = (variableOnLeft ? sides[r + 1] : sides[r]).trim();
+        if (INFINITE_BOUND.test(boundText)) {
+          const positive = POSITIVE_INFINITY.test(boundText);
+          if ((kind === 'lt' && positive) || (kind === 'gt' && !positive)) continue;
+          return null;
+        }
+        const bound = finiteBound(boundText);
+        if (!bound) return null;
         if (kind === 'lt' || kind === 'le') {
           if (bound.value < hi.value) { hi = bound; hiClosed = kind === 'le'; } else if (bound.value === hi.value) hiClosed &&= kind === 'le';
         } else if (bound.value > lo.value) {
@@ -6666,6 +7279,10 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   const keyText = preprocess(answerRaw ?? '');
   if (!PLAIN_NUMBER_KEY.test(keyText)) {
     const verdict = gradeResponse(studentRaw, answerRaw, options);
+    // The right exponential model with its decimals not yet rounded as the
+    // key rounds them is `form` (overPreciseModel), never `correct`.
+    if (verdict === 'incorrect' && parseAnswerForm(options.form).tokens.includes('exponential-model')
+      && overPreciseModel(studentRaw, answerRaw)) return 'form';
     if ((verdict !== 'incorrect' && verdict !== 'invalid')
       || (asFraction(keyText) === null && asMixedNumber(keyText) === null)) return verdict;
     const tail = String(studentRaw ?? '').trim().match(FRACTION_UNIT_TAIL);

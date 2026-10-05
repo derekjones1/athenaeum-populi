@@ -201,6 +201,11 @@ const MIXED_NUMBER_PRODUCT_RE = /\d\s*\\[tdc]?frac\s*\{\s*\d+\s*\}\s*\{\s*\d+\s*
 // expression, small enough that degree-8 powers stay well inside float range.
 const SAMPLE_BASES = [1.3178, -0.7351, 2.4189, 0.5417, -1.8323, 3.1029];
 
+/** Does the expression hold a logarithm (`\ln`, `\log`, `\log_b`)? */
+function hasLogarithm(expr) {
+  return /"(Ln|Log|Lb|Lg)"/.test(JSON.stringify(expr.json));
+}
+
 /** N() under an assignment → {re, im}, or null when not a finite number. */
 function numericValue(expr, assignment) {
   let value;
@@ -247,6 +252,13 @@ export function equivalentNumerically(left, right) {
   }
 
   const positive = needsPositiveDomain(left) || needsPositiveDomain(right);
+  // The book's logarithm identities hold on the real domain only: at a point
+  // where a log's argument is negative both sides go complex, on branches
+  // that need not agree ($\ln((x-1)(2x+1))$ against $\ln(x-1)+\ln(2x+1)$
+  // at $x=1.3$ differ by $2\pi i$). A sample where either side is non-real is
+  // skipped, like one outside a radical's domain (Precalculus 4.5, October 4,
+  // 2026).
+  const realOnly = hasLogarithm(left) || hasLogarithm(right);
   // Two magnifications: the base samples (≤ ~3.2) sit inside every textbook
   // pole gap, but a shifted radicand like $\sqrt{x-5}$ is undefined at all of
   // them. When the first sweep cannot collect two valid points, a ×7 sweep
@@ -264,6 +276,7 @@ export function equivalentNumerically(left, right) {
       const a = numericValue(left, assignment);
       const b = numericValue(right, assignment);
       if (!a || !b) continue;
+      if (realOnly && (Math.abs(a.im) > 1e-12 || Math.abs(b.im) > 1e-12)) continue;
       valid += 1;
       if (!close(a, b)) {
         return { equal: false, witness: { assignment, left: fmt(a), right: fmt(b) } };

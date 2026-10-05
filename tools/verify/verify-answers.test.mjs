@@ -496,3 +496,12 @@ test('verify-answers: every prompt class re-derives its answers from the printed
     assert.equal(stillLine.status, 'fail', 'a wrong line still fails');
   }
 });
+
+test('verify-answers: a logarithm expansion is compared on its real domain only', () => {
+  // Precalculus 4.5 (October 4, 2026): at x=1.3178 both sides are logs of
+  // negatives and their complex branches differ by 2πi.
+  const expand = (answer) => analyze(
+    'Expand $\\ln\\left(\\tfrac{\\sqrt{(x-1)(2x+1)^2}}{x^2-9}\\right)$ as much as possible.', answer);
+  assert.equal(expand('\\frac{1}{2}\\ln(x-1)+\\ln(2x+1)-\\ln(x+3)-\\ln(x-3)').status, 'pass');
+  assert.equal(expand('\\frac{1}{2}\\ln(x-1)+\\ln(2x+1)-\\ln(x+3)+\\ln(x-3)').status, 'fail', 'a sign slip still fails');
+});

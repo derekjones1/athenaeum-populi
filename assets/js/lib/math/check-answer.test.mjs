@@ -1346,6 +1346,17 @@ const formCases = [
   ['3e^{(\\ln0.5)x}', '3e^{(\\ln0.5)x}', 'base-e', 'correct'],
   ['3(0.5)^x', '3e^{(\\ln0.5)x}', 'base-e', 'form'],
   ['x^2', 'x^2', 'base-e', 'correct'], // a numeric exponent is a power function, not an exponential
+  // exponential-model — "find the exponential function through these points":
+  // the half-worked base and coefficient are the key's value, so only the
+  // writing refuses them (Precalculus chapter 4 re-review, October 4, 2026).
+  ['6(5)^x', '6(5)^x', 'exponential-model', 'correct'],
+  ['6\\cdot125^{x/3}', '6(5)^x', 'exponential-model', 'form'],
+  ['200e^{-0.0231t}', '200e^{-0.0231t}', 'exponential-model', 'correct'],
+  ['200(e^{-0.0231})^t', '200e^{-0.0231t}', 'exponential-model', 'form'],
+  // natural-log — "a quotient of natural logarithms": the common-log
+  // quotient is the same number (Precalculus 4.5, October 4, 2026)
+  ['\\frac{\\ln(8)}{\\ln(0.5)}', '\\frac{\\ln(8)}{\\ln(0.5)}', 'natural-log', 'correct'],
+  ['\\frac{\\log 8}{\\log 0.5}', '\\frac{\\ln(8)}{\\ln(0.5)}', 'natural-log', 'form'],
   // expanded-logarithms — every written log takes a single atom
   ['2+\\log_5 a+\\log_5 b', '2+\\log_5 a+\\log_5 b', 'expanded-logarithms', 'correct'],
   ['\\log_5 25ab', '2+\\log_5 a+\\log_5 b', 'expanded-logarithms', 'form'],
@@ -3541,4 +3552,273 @@ test('Precalculus chapter 3 grader gaps, with modes', async (t) => {
   }
   assert.equal(describeFormFeedback('f(x)\\ge\\frac{8}{11}', 'lowest-terms', '[\\frac{8}{11},\\infty)'),
     describeFormFeedback('y\\ge\\frac{8}{11}', 'lowest-terms', '[\\frac{8}{11},\\infty)'));
+});
+
+// Precalculus chapter 4 (October 4, 2026): `exponential-model`, the token for
+// "find the exponential function through these two points" and "write the
+// model" — one term $ab^x$ or $ae^{kx}$ (plus at most a constant shift), every
+// number in it finished.
+const precalculusChapter4 = [
+  // the key and its finished restatements
+  ['6(5)^x', '6(5)^x', 'exponential-model', 'correct'],
+  ['f(x)=6(5)^x', '6(5)^x', 'exponential-model', 'correct'],
+  ['y=6\\cdot5^x', '6(5)^x', 'exponential-model', 'correct'],
+  ['6\\times5^x', '6(5)^x', 'exponential-model', 'correct'],
+  ['5^x\\cdot6', '6(5)^x', 'exponential-model', 'correct'],
+  ['6(5^x)', '6(5)^x', 'exponential-model', 'correct'],
+  ['(6)(5)^x', '6(5)^x', 'exponential-model', 'correct'],
+  ['6\\cdot0.2^{-x}', '6(5)^x', 'exponential-model', 'correct'],
+  ['6\\cdot(\\frac{1}{5})^{-x}', '6(5)^x', 'exponential-model', 'correct'],
+  // half-worked: a power, a root, a fraction or a factor still to work
+  ['6\\cdot125^{x/3}', '6(5)^x', 'exponential-model', 'form'],
+  ['6(\\sqrt[3]{125})^x', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot\\sqrt{25}^x', '6(5)^x', 'exponential-model', 'form'],
+  ['\\frac{750}{125}(5)^x', '6(5)^x', 'exponential-model', 'form'],
+  ['\\frac{6}{1}5^x', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot5^{x}\\cdot1', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot5^{x}\\cdot5^0', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot5^{x}+0', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot5^x+\\sqrt{1}-1', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot5^{1x}', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot5^{-(-x)}', '6(5)^x', 'exponential-model', 'form'],
+  ['6\\cdot(5^{1})^x', '6(5)^x', 'exponential-model', 'form'],
+  ['30\\cdot5^{x-1}', '6(5)^x', 'exponential-model', 'form'],
+  ['\\frac{6\\cdot5^x}{1}', '6(5)^x', 'exponential-model', 'form'],
+  ['e^{\\ln6}5^x', '6(5)^x', 'exponential-model', 'form'],
+  // an exact log rate is a finished continuous-form model ("keep k exact")
+  ['6e^{(\\ln5)x}', '6(5)^x', 'exponential-model', 'correct'],
+  ['6e^{(\\ln5)\\cdot1x}', '6(5)^x', 'exponential-model', 'form'],
+  ['7(5)^x', '6(5)^x', 'exponential-model', 'incorrect'],
+  // base e: the rate a finished numeral, never a logarithm or a power to take
+  ['A(t)=200e^{-0.0231t}', '200e^{-0.0231t}', 'exponential-model', 'correct'],
+  ['200(e^{-0.0231})^t', '200e^{-0.0231t}', 'exponential-model', 'form'],
+  ['200e^{\\frac{\\ln 0.5}{30}t}', '200e^{\\frac{\\ln 0.5}{30}t}', 'exponential-model', 'correct'],
+  ['200e^{\\frac{\\ln 0.5}{30}t}', '200e^{-0.0231t}', 'exponential-model', 'incorrect'],
+  ['200e^{\\ln0.5/30t}', '200e^{\\frac{\\ln 0.5}{30}t}', 'exponential-model', 'incorrect'],
+  ['e^{0.5x}', 'e^{0.5x}', 'exponential-model', 'correct'],
+  ['e^{\\frac{x}{2}}', 'e^{0.5x}', 'exponential-model', 'correct'],
+  ['e^{x/2}', 'e^{0.5x}', 'exponential-model', 'correct'],
+  ['e^{\\frac{1}{2}x}', 'e^{0.5x}', 'exponential-model', 'correct'],
+  ['2e^{(0.5)x}', '2e^{0.5x}', 'exponential-model', 'correct'],
+  ['(e^{0.5})^x', 'e^{0.5x}', 'exponential-model', 'form'],
+  ['e^{\\frac{2}{4}x}', 'e^{0.5x}', 'exponential-model', 'form'],
+  ['e^{\\frac{2x}{4}}', 'e^{0.5x}', 'exponential-model', 'form'],
+  ['2e^{0.25\\cdot2x}', '2e^{0.5x}', 'exponential-model', 'form'],
+  ['2e^{-(-0.5)x}', '2e^{0.5x}', 'exponential-model', 'form'],
+  ['2(\\sqrt{e})^x', '2e^{0.5x}', 'exponential-model', 'form'],
+  ['\\sqrt{4}e^{0.5x}', '2e^{0.5x}', 'exponential-model', 'form'],
+  // rounded keys: the value check admits only the key's own digits
+  ['N(t)=80(1.1447)^t', '80(1.1447)^t', 'exponential-model', 'correct'],
+  ['f(x)=2.4492(0.6389)^x', '2.4492(0.6389)^x', 'exponential-model', 'correct'],
+  ['2.449(0.639)^x', '2.4492(0.6389)^x', 'exponential-model', 'incorrect'],
+  ['(1.5)^x\\cdot100', '100(1.5)^x', 'exponential-model', 'correct'],
+  ['(\\frac{6}{5})^x', '1.2^x', 'exponential-model', 'correct'],
+  ['(\\frac{12}{10})^x', '1.2^x', 'exponential-model', 'form'],
+  // a simplified root is a finished numeral
+  ['\\sqrt{2}(\\sqrt{2})^x', '\\sqrt{2}(\\sqrt{2})^x', 'exponential-model', 'correct'],
+  // one constant shift, finished, on either side
+  ['-10^{x}+7', '-10^{x}+7', 'exponential-model', 'correct'],
+  ['7-10^x', '-10^{x}+7', 'exponential-model', 'correct'],
+  ['-10^x+\\frac{14}{2}', '-10^{x}+7', 'exponential-model', 'form'],
+  ['-10^x+8-1', '-10^{x}+7', 'exponential-model', 'form'],
+  ['90e^{-0.008377t}+75', '90e^{-0.008377t}+75', 'exponential-model', 'correct'],
+  ['-\\frac{1}{3}e^{x}-2', '-\\frac{1}{3}e^{x}-2', 'exponential-model', 'correct'],
+  ['4(\\frac{1}{3})^x', '4(3)^{-x}', 'exponential-model', 'correct'],
+  ['\\frac{4}{3^x}', '4(3)^{-x}', 'exponential-model', 'form'],
+  ['P_n=293\\cdot1.026^n', 'P_n=293\\cdot1.026^n', 'exponential-model', 'correct'],
+  // a rounded model typed with more places than the key rounds to: `form`
+  // (round as asked), never `correct`, and only when every part agrees (4.8)
+  ['522.8858598(1.196452561)^x', '522.8859(1.1965)^x', 'exponential-model', 'form'],
+  ['f(x)=522.8858598\\cdot1.196452561^x', '522.8859(1.1965)^x', 'exponential-model', 'form'],
+  ['522.8858598(1.196452561)^x', '522.8859(1.1965)^x', undefined, 'incorrect'],
+  ['522.88590(1.19650)^x', '522.8859(1.1965)^x', 'exponential-model', 'correct'],
+  ['522.89(1.1965)^x', '522.8859(1.1965)^x', 'exponential-model', 'incorrect'],
+  ['522.8858598(1.1966)^x', '522.8859(1.1965)^x', 'exponential-model', 'incorrect'],
+  ['-522.8858598(1.196452561)^x', '522.8859(1.1965)^x', 'exponential-model', 'incorrect'],
+  ['522.8858598(1.196452561)^{-x}', '522.8859(1.1965)^x', 'exponential-model', 'incorrect'],
+  ['522.8858598(1.196452561)^x+1', '522.8859(1.1965)^x', 'exponential-model', 'incorrect'],
+  ['18.3\\cdot1.025^x', '18\\cdot1.025^x', 'exponential-model', 'form'],
+  ['731.92e^{-0.30381x}', '731.92e^{-0.3038x}', 'exponential-model base-e', 'form'],
+  ['731.92e^{-0.30389x}', '731.92e^{-0.3038x}', 'exponential-model base-e', 'incorrect'],
+  ['75+90e^{-0.0083771t}', '90e^{-0.008377t}+75', 'exponential-model', 'form'],
+  ['90e^{-0.0083771t}-75', '90e^{-0.008377t}+75', 'exponential-model', 'incorrect'],
+  ['6.0001(5)^x', '6(5)^x', 'exponential-model', 'incorrect'],
+  ['-10.0001^x+7', '-10^{x}+7', 'exponential-model', 'incorrect'],
+  // the transformed and general models (4.2, 4.7): a shift, an initial-value
+  // symbol, an exact log rate; a written 1 or 0 is the step left in place
+  ['-\\frac{1}{3}e^{x+0}-2', '-\\frac{1}{3}e^{x}-2', 'exponential-model', 'form'],
+  ['1.25^{-1\\cdot x}', '1.25^{-x}', 'exponential-model', 'form'],
+  ['-1\\cdot10^x+7', '-10^{x}+7', 'exponential-model', 'form'],
+  ['1\\cdot1.2^x', '1.2^x', 'exponential-model', 'form'],
+  ['4^x+1-4', '4^{x}-3', 'exponential-model', 'form'],
+  ['-(10)^x+7', '-10^{x}+7', 'exponential-model', 'correct'],
+  ['A_0e^{\\frac{\\ln2}{3}t}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'correct'],
+  ['A_{0}e^{\\frac{\\ln(2)}{3}t}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'correct'],
+  ['A_0\\cdot2^{t/3}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'correct'],
+  ['A_0e^{\\frac{0.6931}{3}t}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'incorrect'],
+  ['6e^{\\frac{\\ln2}{3}t}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'incorrect'],
+  ['A_0e^{-8.7\\times10^{-9}t}', 'A_0e^{-8.7\\times10^{-9}t}', 'exponential-model', 'correct'],
+  ['A_0e^{-87\\times10^{-10}t}', 'A_0e^{-8.7\\times10^{-9}t}', 'exponential-model', 'form'],
+  ['3e^{(\\ln0.5)x}', '3e^{(\\ln0.5)x}', 'exponential-model base-e', 'correct'],
+  ['3e^{-(\\ln2)x}', '3e^{(\\ln0.5)x}', 'exponential-model base-e', 'correct'],
+  ['3(0.5)^x', '3e^{(\\ln0.5)x}', 'exponential-model base-e', 'form'],
+  // a numeral base to a multiple of the variable: finished only when that
+  // power of the base is irrational
+  ['2^{2x}', '4^x', 'exponential-model', 'form'],
+  ['1.5^{2x}', '2.25^x', 'exponential-model', 'form'],
+  ['2^{0.5x}', '\\sqrt{2}^x', 'exponential-model', 'correct'],
+  // an all-reals domain typed as an inequality is the notation miss (4.2)
+  ['-\\infty<x<\\infty', '(-\\infty,\\infty)', undefined, 'form'],
+  ['0<x<\\infty', '(0,\\infty)', undefined, 'form'],
+  ['-\\infty<x\\le\\infty', '(-\\infty,\\infty)', undefined, 'incorrect'],
+  ['-\\infty<x<\\infty', '(0,\\infty)', undefined, 'incorrect'],
+  // a tiny constant key compares relatively: the engine's absolute 1e-10
+  // made every value below it equal (4.1, the radon-222 key)
+  ['3.77\\times10^{-26}', '3.77\\times10^{-26}', 'scientific-notation', 'correct'],
+  ['9.99\\times10^{-12}', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
+  ['1\\times10^{-30}', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
+  ['3.77\\times10^{-25}', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
+  ['5\\times10^{-26}', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
+  ['0', '3.77\\times10^{-26}', 'scientific-notation', 'incorrect'],
+  ['37.7\\times10^{-27}', '3.77\\times10^{-26}', 'scientific-notation', 'form'],
+  ['0.0000000000000000000000000377', '3.77\\times10^{-26}', undefined, 'correct'],
+  ['(0,1\\times10^{-30})', '(0,3.77\\times10^{-26})', undefined, 'incorrect'],
+  // …through the engine's chop, which numericizes these to 0
+  ['\\frac{1}{3}\\times10^{-20}', '3.333333333333333\\times10^{-21}', undefined, 'correct'],
+  ['e^{-50}', 'e^{-50}', undefined, 'correct'],
+  ['\\frac{1}{e^{50}}', 'e^{-50}', undefined, 'correct'],
+  ['e^{-49}', 'e^{-50}', undefined, 'incorrect'],
+  ['2^{-80}', '8.27\\times10^{-25}', undefined, 'incorrect'],
+  // an exact zero key, and ordinary keys, grade as before
+  ['0', '\\tan(\\pi)', undefined, 'correct'],
+  ['\\sin\\pi', '0', undefined, 'correct'],
+  ['\\sin\\pi', '3.77\\times10^{-26}', undefined, 'incorrect'],
+  ['0.001', '10^{-3}', undefined, 'correct'],
+  ['0.00100000001', '0.001', undefined, 'incorrect'],
+  ['\\cos(\\frac{\\pi}{3})', '\\frac{1}{2}', undefined, 'correct'],
+  // a logarithm of a non-positive argument is not real (4.4): the engine
+  // read `\\ln(-x)` as 0.904+πi and its isEqual called it `\\ln x`
+  ['\\log_2(x-1)', '\\log_{2}(-(x-1))', undefined, 'incorrect'],
+  ['-\\log_2(x-1)', '\\log_{2}(-(x-1))', undefined, 'incorrect'],
+  ['\\log_2(x-1)+2', '\\log_2(1-x)', undefined, 'incorrect'],
+  ['\\ln(x)', '\\ln(-x)', undefined, 'incorrect'],
+  ['\\log(x)', '\\log(-x)', undefined, 'incorrect'],
+  ['-\\log(x)', '\\log(-x)', undefined, 'incorrect'],
+  ['\\ln(-x)', '\\ln(x)', undefined, 'incorrect'],
+  ['\\log_2(x+1)', '\\log_{2}(-(x-1))', undefined, 'incorrect'],
+  ['\\log_2(-x)+1', '\\log_{2}(-(x-1))', undefined, 'incorrect'],
+  ['\\log(x-5)', '\\log(x-50)', undefined, 'incorrect'],
+  ['\\log_2(1-x)', '\\log_{2}(-(x-1))', undefined, 'correct'],
+  ['\\log_2(-x+1)', '\\log_{2}(-(x-1))', undefined, 'correct'],
+  ['\\frac{\\ln(1-x)}{\\ln2}', '\\log_{2}(-(x-1))', undefined, 'correct'],
+  ['\\ln(-x)', '\\ln(-x)', undefined, 'correct'],
+  ['\\log(-x-50)', '\\log(-x-50)', undefined, 'correct'],
+  // …while a log property that moves the domain still grades by value on the
+  // common one, and a symbolic base is sampled like any variable
+  ['\\ln(x^2)', '2\\ln x', undefined, 'correct'],
+  ['\\log_2 5+\\log_2 x-\\log_2 y', '\\log_2\\frac{5x}{y}', undefined, 'correct'],
+  ['3\\log_2 x+2\\log_2(x-1)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'form'],
+  ['\\log_b 8', '3\\log_b 2', undefined, 'correct'],
+  ['\\log_x 8', '\\frac{3\\ln 2}{\\ln x}', undefined, 'correct'],
+];
+test('Precalculus chapter 4 grader gaps', async (t) => {
+  for (const [typed, key, form, expected] of precalculusChapter4) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+  assert.equal(describeFormFeedback('522.8858598(1.196452561)^x', 'exponential-model', '522.8859(1.1965)^x'),
+    'That model is right — now round each number in it to the places the question asks for.');
+  assert.equal(describeFormFeedback('6\\cdot125^{x/3}', 'exponential-model', '6(5)^x'),
+    describeAnswerForm('exponential-model'));
+});
+
+// Precalculus chapter 4, round 2 (October 4, 2026): logarithm forms (4.5,
+// 4.6), exact log rates in any order, and an absolute value in a log.
+const precalculusChapter4Round2 = [
+  // a reducible polynomial argument is a product still to split (4.5)
+  ['\\frac12\\ln(x-1)+\\ln(2x+1)-\\ln(x^2-9)', '\\frac{1}{2}\\ln(x-1)+\\ln(2x+1)-\\ln(x+3)-\\ln(x-3)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\frac12\\ln(x-1)+\\ln(2x+1)-\\ln(x+3)-\\ln(x-3)', '\\frac{1}{2}\\ln(x-1)+\\ln(2x+1)-\\ln(x+3)-\\ln(x-3)', 'expanded-logarithms no-like-terms', 'correct'],
+  ['\\log_3(x+3)-\\log_3(x^2-3x+2)', '\\log_3(x+3)-\\log_3(x-1)-\\log_3(x-2)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\ln(2x+4)', '\\ln 2+\\ln(x+2)', 'expanded-logarithms', 'form'],
+  ['\\ln(x^2+1)', '\\ln(x^2+1)', 'expanded-logarithms', 'correct'],
+  // a composite whole-number argument, when the key's are prime (4.5)
+  ['\\log_b(14)+\\log_b(x)+\\log_b(y)', '\\log_b(2)+\\log_b(7)+\\log_b(x)+\\log_b(y)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\log_b(2)+\\log_b(7)+\\log_b(x)+\\log_b(y)', '\\log_b(2)+\\log_b(7)+\\log_b(x)+\\log_b(y)', 'expanded-logarithms no-like-terms', 'correct'],
+  ['\\log_b(8)+\\log_b(k)', '3\\log_b(2)+\\log_b(k)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\log_b(2^3)+\\log_b(k)', '3\\log_b(2)+\\log_b(k)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\log_b(4)', '2\\log_b 2', 'expanded-logarithms no-like-terms', 'form'],
+  ['-k\\ln(4)', '-k\\ln(4)', 'expanded-logarithms no-like-terms', 'correct'],
+  // numeral arithmetic on the coefficients, unless the key is factored out (4.5)
+  ['\\frac13\\cdot2\\ln x', '\\frac{2}{3}\\ln(x)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\frac{1}{3}(2\\ln x)', '\\frac{2}{3}\\ln(x)', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\frac{2\\ln x}{3}', '\\frac{2}{3}\\ln(x)', 'expanded-logarithms no-like-terms', 'correct'],
+  ['\\frac12(3\\log x-4\\log y)', '\\frac{3}{2}\\log(x)-2\\log(y)', 'expanded-logarithms no-like-terms', 'form'],
+  ['2\\log x+3\\log y+\\frac13(2\\log x+5\\log y)', '\\frac{8}{3}\\log x+\\frac{14}{3}\\log y', 'expanded-logarithms no-like-terms', 'form'],
+  ['\\frac{1}{5}(4\\log_4 x-\\frac{1}{2}-3\\log_4 y-2\\log_4 z)', '\\frac{1}{5}(4\\log_4 x-\\frac{1}{2}-3\\log_4 y-2\\log_4 z)', 'expanded-logarithms', 'correct'],
+  ['\\frac45\\log_4 x-\\frac{1}{10}-\\frac35\\log_4 y-\\frac25\\log_4 z', '\\frac{1}{5}(4\\log_4 x-\\frac{1}{2}-3\\log_4 y-2\\log_4 z)', 'expanded-logarithms', 'correct'],
+  // single-logarithm: the condensed argument's numeral work finished (4.5)
+  ['\\ln\\left(\\frac{6x^9}{3x^2}\\right)', '\\ln(2x^7)', 'single-logarithm', 'form'],
+  ['\\ln(2x^7)', '\\ln(2x^7)', 'single-logarithm', 'correct'],
+  ['\\log_b\\left(\\frac{28}{7}\\right)', '\\log_b(4)', 'single-logarithm', 'form'],
+  ['\\log_3(4^2)', '\\log_3(16)', 'single-logarithm', 'form'],
+  ['\\log_3(4\\cdot4)', '\\log_3(16)', 'single-logarithm', 'form'],
+  ['\\log\\left(\\frac{5}{8}\\right)', '\\log\\left(\\frac{5}{8}\\right)', 'single-logarithm', 'correct'],
+  ['\\log\\left(\\frac{15}{24}\\right)', '\\log\\left(\\frac{5}{8}\\right)', 'single-logarithm', 'form'],
+  ['\\log_8(5\\cdot13xy)', '\\log_8(65xy)', 'single-logarithm', 'form'],
+  ['\\log_2(x^3\\cdot(x-1)^2)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'correct'],
+  // natural-log composed with single-fraction
+  ['\\frac{\\log_e 8}{\\ln 0.5}', '\\frac{\\ln(8)}{\\ln(0.5)}', 'single-fraction natural-log', 'correct'],
+  ['-3', '\\frac{\\ln(8)}{\\ln(0.5)}', 'single-fraction natural-log', 'form'],
+  // exact-log: a minus on the numerator's log, a finished fraction argument (4.6)
+  ['\\frac{-\\ln 2}{2}', '-\\frac{1}{2}\\ln 2', 'exact-log', 'correct'],
+  ['\\frac{-\\ln 38}{3}', '-\\frac{\\ln 38}{3}', 'exact-log', 'correct'],
+  ['-\\frac{-\\ln 38}{3}', '\\frac{\\ln 38}{3}', 'exact-log', 'form'],
+  ['\\frac{\\ln 38}{-3}', '-\\frac{\\ln 38}{3}', 'exact-log', 'form'],
+  ['\\ln\\left(\\frac{1}{\\sqrt{2}}\\right)', '-\\frac{1}{2}\\ln 2', 'exact-log', 'correct'],
+  ['\\frac{1}{2}\\ln\\frac{1}{2}', '-\\frac{1}{2}\\ln 2', 'exact-log', 'correct'],
+  ['\\ln\\frac{\\sqrt{2}}{2}', '-\\frac{1}{2}\\ln 2', 'exact-log', 'correct'],
+  ['\\frac{1}{2}\\ln\\frac{2}{4}', '-\\frac{1}{2}\\ln 2', 'exact-log', 'form'],
+  ['\\ln\\frac{1}{1.4142135623730951}', '-\\frac{1}{2}\\ln 2', 'exact-log', 'form'],
+  ['\\ln\\frac{1}{\\sqrt{2}}+0', '-\\frac{1}{2}\\ln 2', 'exact-log', 'form'],
+  ['\\log 100', '2', 'exact-log', 'form'],
+  ['\\ln 9+2', '\\ln 9+2', 'exact-log', 'correct'],
+  // no-like-terms: a numeral exponent still to work (4.6)
+  ['e^{\\frac{10}{2}}-1', 'e^{5}-1', 'no-like-terms', 'form'],
+  ['e^{10-5}-1', 'e^{5}-1', 'expanded no-like-terms', 'form'],
+  ['e^{5}-1', 'e^{5}-1', 'expanded no-like-terms', 'correct'],
+  ['x^{\\frac12}+1', 'x^{\\frac12}+1', 'no-like-terms', 'correct'],
+  // an exact log rate in any factor order (A1); a root left to take is not
+  ['6e^{x\\ln5}', '6(5)^x', 'exponential-model', 'correct'],
+  ['6e^{x\\ln(5)}', '6(5)^x', 'exponential-model', 'correct'],
+  ['3e^{x\\ln0.5}', '3e^{(\\ln0.5)x}', 'base-e exponential-model', 'correct'],
+  ['3e^{-x\\ln2}', '3e^{(\\ln0.5)x}', 'base-e exponential-model', 'correct'],
+  ['3e^{\\ln(0.5)x}', '3e^{(\\ln0.5)x}', 'base-e exponential-model', 'correct'],
+  ['3(0.5)^x', '3e^{(\\ln0.5)x}', 'base-e exponential-model', 'form'],
+  ['A_0e^{\\frac{1}{3}\\ln(2)t}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'correct'],
+  ['A_0e^{\\frac{t\\ln2}{3}}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'correct'],
+  ['A_0e^{t\\frac{\\ln2}{3}}', 'A_0e^{\\frac{\\ln2}{3}t}', 'exponential-model', 'correct'],
+  ['6e^{\\frac{x\\ln 125}{3}}', '6(5)^x', 'exponential-model', 'form'],
+  ['6e^{\\frac{1}{3}\\ln(125)x}', '6(5)^x', 'exponential-model', 'form'],
+  ['e^{\\frac{\\ln0.25}{2}x}', 'e^{-x\\ln2}', 'exponential-model', 'form'],
+  ['6e^{x\\ln5\\cdot1}', '6(5)^x', 'exponential-model', 'form'],
+  // an absolute value inside a log on one side only: the union domain (A3)
+  ['\\ln|x|', '\\ln(x)', undefined, 'incorrect'],
+  ['\\ln|x|', '\\ln(-x)', undefined, 'incorrect'],
+  ['\\log_2|x-1|', '\\log_{2}(-(x-1))', undefined, 'incorrect'],
+  ['2\\ln|x+3|-1', '2\\ln(x+3)-1', undefined, 'incorrect'],
+  ['\\ln x', '\\ln|x|', undefined, 'incorrect'],
+  ['\\ln|x|', '\\ln|x|', undefined, 'correct'],
+  ['\\frac12\\ln(x^2)', '\\ln|x|', undefined, 'correct'],
+  ['\\ln|2x|', '\\ln 2+\\ln|x|', undefined, 'correct'],
+  ['\\frac{\\log_2(x^2-2x+1)}{2}', '\\log_{2}(-(x-1))', 'expanded-logarithms', 'form'],
+  ['\\ln((x+3)^2)', '2\\ln(x+3)', 'expanded-logarithms', 'form'],
+  ['3\\log_2x+2\\log_2(x-1)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'form'],
+];
+test('Precalculus chapter 4 grader gaps, round 2', async (t) => {
+  for (const [typed, key, form, expected] of precalculusChapter4Round2) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
 });

@@ -390,6 +390,7 @@ test('a page key is its values; a symbolic key is not judged', () => {
   assert.equal(answerValues('(10,\\infty)'), null);
   assert.equal(answerValues('\\sqrt{2}'), null);
   assert.deepEqual(latexNumbers('Solve $3(w + 5)^2 = 27$ and $\\frac{1}{2}$, two decimal places, \\$25,000'), [3, 5, 2, 27, 1, 2, 0.5, 2, 25000]);
+  assert.deepEqual(latexNumbers('Solve $2^x=1{,}000$ and $37{,}519{,}248$'), [2, 1000, 37519248], 'a KaTeX digit group is one number');
   assert.deepEqual(latexShape('$a_n = 3^n + 4$ and $\\tfrac{n!}{(n+1)!}$ at $30^\\circ$'), [1, 1, 0, 2]);
 });
 

@@ -1434,7 +1434,10 @@ export function mathmlShape(node) {
 /** The numbers a page question prints, LaTeX and prose alike: a `\frac{a}{b}`
  * contributes a, b, and a/b; number words count; commands and braces do not. */
 export function latexNumbers(latex) {
-  const withFractions = String(latex).replace(
+  // A KaTeX digit group (`1{,}000`) is one number; stripping its braces read
+  // it as 1 and 000, so a grouped stem lost its source match (Precalculus 4.6,
+  // October 4, 2026).
+  const withFractions = String(latex).replace(/(\d)\{,\}(?=\d{3}(?!\d))/g, '$1,').replace(
     /\\[td]?frac\{(-?[\d.]+)\}\{(-?[\d.]+)\}/g,
     (m, a, b) => ` ${a} ${b} ${Number(b) ? Number(a) / Number(b) : ''} `,
   );
