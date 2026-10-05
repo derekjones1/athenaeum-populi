@@ -24,7 +24,9 @@
  *   xLabel,yLabel        axis letters (default 'x','y')
  *   quadrantLabels       true → Roman numerals I–IV in the quadrant centres
  *   grid                 false → hide the faint integer grid (default true)
- *   xGridStep,yGridStep  per-axis gridline spacing (default gridStep = 1)
+ *   xGridStep,yGridStep  per-axis gridline spacing (default gridStep = 1);
+ *                        lines sit on multiples of the step, whatever the
+ *                        window edges are
  *   tickLabels           true → label numbered ticks on both axes
  *                        (comma-grouped, e.g. 7,000)
  *   tickStep             spacing between labeled ticks (default gridStep)
@@ -443,20 +445,49 @@ export function buildGraph(props) {
   // renders as a solid grey block rather than a grid. Coarsen the step to the
   // smallest multiple of itself that clears MIN_GRID_PX (10px), so the lattice still
   // lands on the same values and only the crowding goes away.
+  //
+  // On a numbered axis "the smallest multiple" is not enough: a unit step
+  // coarsened to 7 under ticks at every 50 drew lines at 0, 7, 14, … and put
+  // none of them on a tick but zero's. So the coarsened step is the smallest
+  // one that also DIVIDES the tick step (10 here) — every tick sits on a
+  // gridline — or, when even the tick step is too dense to draw, the smallest
+  // multiple of the tick step, so every gridline sits on a tick.
   const MIN_GRID_PX = 10
-  const spacedStep = (step, unitPx) => {
+  const isWhole = (q) => Math.abs(q - Math.round(q)) < 1e-9
+  const spacedStep = (step, unitPx, tickStep) => {
     const perLine = Math.abs(step * unitPx)
     if (!(perLine > 0) || perLine >= MIN_GRID_PX) return step
-    return step * Math.ceil(MIN_GRID_PX / perLine)
+    const least = Math.ceil(MIN_GRID_PX / perLine)
+    const perTick = tickStep / step
+    if (!(perTick >= 1) || !isWhole(perTick)) return step * least
+    const n = Math.round(perTick)
+    if (n < least) return step * n * Math.ceil(least / n)
+    let best = n
+    for (let d = 1; d * d <= n; d++) {
+      if (n % d !== 0) continue
+      for (const k of [d, n / d]) if (k >= least && k < best) best = k
+    }
+    return step * best
+  }
+  // Gridlines sit on MULTIPLES of the step, exactly as tick labels do — not
+  // at min, min + step, …. A window edge that is not itself a multiple
+  // (xMin: -3.5 to give a curve room) used to shift the whole lattice half a
+  // unit off its ticks, so a point plotted at (1, 2) sat between gridlines.
+  const gridValues = (min, max, step) => {
+    const first = Math.ceil(min / step - 1e-9)
+    const last = Math.floor(max / step + 1e-9)
+    return Array.from({ length: Math.max(0, last - first + 1) }, (_, i) => (first + i) * step)
   }
   if (grid) {
-    const xStep = spacedStep(xGridStep, ux)
-    const yStep = spacedStep(yGridStep, uy)
-    for (let mx = xMin; mx <= xMax + 1e-9; mx += xStep) {
+    const wantXTicks = tickLabels === true || tickLabels === 'x'
+    const wantYTicks = tickLabels === true || tickLabels === 'y'
+    const xStep = spacedStep(xGridStep, ux, wantXTicks ? xTickStep : NaN)
+    const yStep = spacedStep(yGridStep, uy, wantYTicks ? yTickStep : NaN)
+    for (const mx of gridValues(xMin, xMax, xStep)) {
       if (mx === 0 && yMin <= 0 && yMax >= 0) continue
       add('line', segAttrs(px([mx, yMin]), px([mx, yMax]), { strokeWidth: '0.4', opacity: '0.2' }))
     }
-    for (let my = yMin; my <= yMax + 1e-9; my += yStep) {
+    for (const my of gridValues(yMin, yMax, yStep)) {
       if (my === 0 && xMin <= 0 && xMax >= 0) continue
       add('line', segAttrs(px([xMin, my]), px([xMax, my]), { strokeWidth: '0.4', opacity: '0.2' }))
     }

@@ -887,6 +887,84 @@ test('a grid never collapses into a solid block on a small-unit axis', () => {
   assert.equal(plainH.length, 10, 'a 20px-per-unit grid still draws every integer line');
 });
 
+// Faint gridlines and 6px tick marks of a built graph, as sorted px positions
+// per axis: x holds the vertical gridlines / x-axis ticks, y the horizontal.
+const gridAndTicks = (out) => {
+  const lines = out.els.filter((e) => e.tag === 'line');
+  const sorted = (list) => [...new Set(list)].sort((a, b) => a - b);
+  const faint = lines.filter((e) => e.attrs.opacity === '0.2');
+  const marks = lines.filter((e) => e.attrs.strokeWidth === '1' && !e.attrs.strokeDasharray
+    && Math.abs(e.attrs.x2 - e.attrs.x1) + Math.abs(e.attrs.y2 - e.attrs.y1) === 6);
+  return {
+    grid: {
+      x: sorted(faint.filter((e) => e.attrs.x1 === e.attrs.x2).map((e) => e.attrs.x1)),
+      y: sorted(faint.filter((e) => e.attrs.y1 === e.attrs.y2).map((e) => e.attrs.y1)),
+    },
+    ticks: {
+      x: sorted(marks.filter((e) => e.attrs.x1 === e.attrs.x2).map((e) => e.attrs.x1)),
+      y: sorted(marks.filter((e) => e.attrs.y1 === e.attrs.y2).map((e) => e.attrs.y1)),
+    },
+  };
+};
+
+test('gridlines sit on multiples of the step, not at the window edge', () => {
+  // A window edge that is not a multiple of the step (xMin: -3.5 to give a
+  // curve room) used to start the lattice AT the edge — lines at −3.5, −2.5,
+  // … — so every gridline fell between two ticks and a point plotted at
+  // (1, 2) sat inside a cell. 62 Precalculus graphs shipped that way.
+  const out = buildGraph({
+    xMin: -3.5, xMax: 3.5, yMin: -1.3, yMax: 4, unit: 20,
+    tickLabels: true, tickStep: 1, points: [{ at: [1, 2] }], ariaLabel: 't',
+  });
+  const { grid, ticks } = gridAndTicks(out);
+  // x = −3 … 3 and y = −1 … 4, less the two lines the axes replace.
+  assert.deepEqual(grid.x, [36, 56, 76, 116, 136, 156]);
+  assert.deepEqual(grid.y, [26, 46, 66, 86, 126]);
+  assert.deepEqual(grid.x, ticks.x, 'every vertical gridline passes through an x tick');
+  assert.deepEqual(grid.y, ticks.y, 'every horizontal gridline passes through a y tick');
+  const dot = out.els.find((e) => e.tag === 'circle');
+  assert.ok(grid.x.includes(Number(dot.attrs.cx)) && grid.y.includes(Number(dot.attrs.cy)),
+    'a lattice point is drawn on a gridline crossing');
+
+  // A step that is not 1 anchors the same way: years 1973–2008 by fives draw
+  // 1975, 1980, …, not 1973, 1978, ….
+  const years = gridAndTicks(buildGraph({
+    xMin: 1973, xMax: 2008, yMin: 0, yMax: 10, xUnit: 8, yUnit: 20, xGridStep: 5,
+    tickLabels: true, xTickStep: 5, yTickStep: 2, xTickGrouping: false, ariaLabel: 't',
+  }));
+  assert.deepEqual(years.grid.x, years.ticks.x);
+  assert.equal(years.grid.x.length, 7, '1975 through 2005');
+});
+
+test('a coarsened grid still lands on the tick labels', () => {
+  // Coarsening took the smallest multiple of the step that cleared 10px and
+  // counted it from the window edge: a unit step at 1.5px per unit became 7,
+  // drawn at −120, −113, −106, … under ticks at every 20.
+  const out = gridAndTicks(buildGraph({
+    xMin: -5, xMax: 5, yMin: -120, yMax: 120, unit: 20, yUnit: 1.5,
+    tickLabels: true, xTickStep: 1, yTickStep: 20, ariaLabel: 't',
+  }));
+  // 10 is the smallest step ≥ 7 that divides 20: 25 lines, less the x-axis.
+  assert.equal(out.grid.y.length, 24);
+  for (const tick of out.ticks.y) assert.ok(out.grid.y.includes(tick), `the tick at y=${tick}px has a gridline`);
+  for (let i = 1; i < out.grid.y.length; i += 1) assert.ok(out.grid.y[i] - out.grid.y[i - 1] >= 10);
+
+  // When the tick step itself is too dense to draw, the grid thins to a
+  // multiple of it instead, so every gridline still passes through a tick.
+  const dense = gridAndTicks(buildGraph({
+    xMin: -5, xMax: 5, yMin: -12, yMax: 12, unit: 20, yUnit: 3,
+    tickLabels: true, xTickStep: 1, yTickStep: 2, ariaLabel: 't',
+  }));
+  assert.equal(dense.grid.y.length, 6, 'lines at ±4, ±8, ±12');
+  for (const line of dense.grid.y) assert.ok(dense.ticks.y.includes(line), `the gridline at y=${line}px sits on a tick`);
+
+  // An unnumbered axis has no ticks to land on: the smallest clear multiple
+  // of the step, counted from zero rather than from yMin.
+  const bare = gridAndTicks(buildGraph({ xMin: -5, xMax: 5, yMin: -10, yMax: 10, unit: 20, yUnit: 4, ariaLabel: 't' }));
+  const oy = 26 + 10 * 4;
+  assert.deepEqual(bare.grid.y, [-9, -6, -3, 3, 6, 9].map((v) => oy - v * 4).sort((a, b) => a - b));
+});
+
 test('quadratic-boundary regions shade the test-point side of the parabola', () => {
   // y >= x^2 - 4: test point (0,0) is above the vertex, so the fill runs from
   // the parabola up to the top window edge.

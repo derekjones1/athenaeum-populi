@@ -836,7 +836,7 @@ available, or simply change our window to zoom in on our graph to produce
 the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A zoomed-in view of V(w) = 280w minus 68w squared plus 4w cubed for w between 2.4 and 3, refining the maximum volume estimate to about 339 cubic centimeters near w = 2.7.","xMin":2.4,"xMax":3.1,"yMin":330,"yMax":340,"unit":260,"yUnit":26,"tickLabels":true,"xTickStep":0.2,"yTickStep":1,"xLabel":"w","yLabel":"V(w)","polynomials":[{"coeffs":[0,280,-68,4],"arrows":false}]}
+{"ariaLabel":"A zoomed-in view of V(w) = 280w minus 68w squared plus 4w cubed for w between 2.4 and 3, refining the maximum volume estimate to about 339 cubic centimeters near w = 2.7.","xMin":2.4,"xMax":3.1,"yMin":330,"yMax":340,"unit":260,"yUnit":26,"xGridStep":0.2,"tickLabels":true,"xTickStep":0.2,"yTickStep":1,"xLabel":"w","yLabel":"V(w)","polynomials":[{"coeffs":[0,280,-68,4],"arrows":false}]}
 {{< /apfigure >}}
 
 From this zoomed-in view, we can refine our estimate for the maximum volume

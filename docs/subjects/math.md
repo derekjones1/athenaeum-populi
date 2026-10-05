@@ -637,6 +637,17 @@ grouping off per axis with `xTickGrouping: false` so a year reads 1975 rather
 than 1,975. Where the source numbers only one axis, `tickLabels` also takes
 `'x'` or `'y'` to label that axis alone.
 
+Gridlines sit on multiples of the grid step, as tick labels sit on multiples
+of the tick step — never at `xMin`, `xMin + step`, … *(October 4, 2026)*. So
+a window edge may be whatever the curve needs (`xMin: -3.5`, `yMin: -30`
+under a step of 50) without moving the lattice off its ticks. Where a step is
+too dense to draw, the engine thins it to a spacing that divides the tick
+step, so every tick still has a gridline. What the engine cannot supply is a
+step that suits the window: a zoomed window (`xMin: 2.4, xMax: 3.1`, ticks
+every 0.2) under the default `gridStep` of 1 draws one vertical gridline, at
+3, or none at all — set `xGridStep`/`yGridStep` to the tick step when the
+grid is meant to show.
+
 `buildNumberLine` draws a single boundary with `marker` + `shade`, and any
 compound set — $(-\infty,2)\cup(2,\infty)$, $[1,3]\cup(5,\infty)$ — with
 `intervals`: one entry per heavy stretch, each `{ from?, to?, fromType?,
