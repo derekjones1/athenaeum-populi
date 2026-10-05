@@ -3822,3 +3822,262 @@ test('Precalculus chapter 4 grader gaps, round 2', async (t) => {
     });
   }
 });
+
+// Precalculus chapters 5–6 (October 4, 2026). G1: the right degree count
+// typed without its mark is `form`, the mirror of a marked number against a
+// bare key reporting `unit` — per list member and pair coordinate too; a
+// wrong count, the key's radian value read as degrees, and written arithmetic
+// stay `incorrect`. G2: `degrees` refuses numeral arithmetic under the mark,
+// a fraction head held to lowest terms. G3: `single-term` and
+// `simplified-radical` refuse a compound fraction, the period formula 2π/|B|
+// half worked. G4: a reciprocal trigonometric function in a denominator is
+// sampled (the engine cannot decide it), and `single-trig-function` refuses
+// the reciprocal identity half applied unless the key writes its function
+// in a denominator itself. G5: `no-like-terms` holds a trigonometric
+// argument to its rules, and refuses the numeral work the engine folds (a
+// numeral product, a zero term, a coefficient of 1, `+(-4)`, an undistributed
+// number). G6: a bar over 1. G7: `\cos45^\circ` unspaced still writes a
+// function. G8: `2(3)` is a numeral product. G9: `single-term` distributes
+// over interval endpoints and takes a plain numeral.
+const precalculusChapters5And6 = [
+  // [typed, key, answerForm, answerMode, verdict]
+  // G1 — a bare number against a degree key
+  ['240', '240^\\circ', undefined, undefined, 'form'],
+  ['240', '240^\\circ', 'degrees', undefined, 'form'],
+  ['-135', '-135^\\circ', 'degrees', undefined, 'form'],
+  ['-135', '-135^\\circ', undefined, undefined, 'form'],
+  ['0', '0^\\circ', 'degrees', undefined, 'form'],
+  ['1,536', '1536^\\circ', 'degrees', undefined, 'form'],
+  ['250', '240^\\circ', 'degrees', undefined, 'incorrect'],
+  ['135', '-135^\\circ', 'degrees', undefined, 'incorrect'],
+  ['4.18879', '240^\\circ', undefined, undefined, 'incorrect'],
+  ['4.18879', '240^\\circ', 'degrees', undefined, 'incorrect'],
+  ['200+40', '240^\\circ', 'degrees', undefined, 'incorrect'],
+  ['240x', '240^\\circ', undefined, undefined, 'incorrect'],
+  ['\\frac{4\\pi}{3}', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{4\\pi}{3}', '240^\\circ', undefined, undefined, 'correct'],
+  ['240^\\circ', '240^\\circ', 'degrees', undefined, 'correct'],
+  ['-6^\\circ', '-6', undefined, undefined, 'unit'],
+  // …per pair coordinate and list member
+  ['(22,68)', '(22^\\circ,68^\\circ)', undefined, undefined, 'form'],
+  ['(22^\\circ,68)', '(22^\\circ,68^\\circ)', undefined, undefined, 'form'],
+  ['(23,68)', '(22^\\circ,68^\\circ)', undefined, undefined, 'incorrect'],
+  ['(22^\\circ,68^\\circ)', '(22^\\circ,68^\\circ)', undefined, undefined, 'correct'],
+  ['(22^\\circ,68^\\circ)', '(22,68)', undefined, undefined, 'unit'],
+  ['(9.8489,203.96)', '(9.8489,203.96^\\circ)', undefined, undefined, 'form'],
+  ['(9.8489,3.5598)', '(9.8489,203.96^\\circ)', undefined, undefined, 'incorrect'],
+  ['(203.96,9.8489)', '(9.8489,203.96^\\circ)', undefined, undefined, 'incorrect'],
+  ['27.7,40.5,111.8', '27.7^\\circ,40.5^\\circ,111.8^\\circ', 'degrees', undefined, 'form'],
+  ['27.7^\\circ,40.5,111.8^\\circ', '27.7^\\circ,40.5^\\circ,111.8^\\circ', 'degrees', undefined, 'form'],
+  ['27.7,40.6,111.8', '27.7^\\circ,40.5^\\circ,111.8^\\circ', 'degrees', undefined, 'incorrect'],
+  ['68,22', '22^\\circ,68^\\circ', 'degrees', 'unordered', 'form'],
+  ['68,22', '22^\\circ,68^\\circ', 'degrees', undefined, 'incorrect'],
+  ['68,23', '22^\\circ,68^\\circ', 'degrees', 'unordered', 'incorrect'],
+  // G2 — numeral arithmetic under the mark
+  ['\\frac{720}{3}^\\circ', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{480}{2}^\\circ', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{240}{1}^\\circ', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{720}{3}\\degree', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{720}{3}°', '240^\\circ', 'degrees', undefined, 'form'],
+  ['(\\frac{720}{3})^\\circ', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{720}{3}^\\circ,68^\\circ', '240^\\circ,68^\\circ', 'degrees', undefined, 'form'],
+  ['(600-360)^\\circ', '240^\\circ', 'degrees', undefined, 'form'],
+  ['{240+0}^\\circ', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{720^\\circ}{3}', '240^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{90}{4}^\\circ', '22.5^\\circ', 'degrees', undefined, 'form'],
+  ['21\\frac32^\\circ', '22.5^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{-45}{-2}^\\circ', '22.5^\\circ', 'degrees', undefined, 'form'],
+  ['\\frac{721}{3}^\\circ', '240^\\circ', 'degrees', undefined, 'incorrect'],
+  ['\\frac{45}{2}^\\circ', '22.5^\\circ', 'degrees', undefined, 'correct'],
+  ['22\\frac12^\\circ', '22.5^\\circ', 'degrees', undefined, 'correct'],
+  ['-\\frac{45}{2}^\\circ', '-22.5^\\circ', 'degrees', undefined, 'correct'],
+  ['48.3^\\circ', '48.3^\\circ', 'degrees', undefined, 'correct'],
+  ['-135^\\circ', '-135^\\circ', 'degrees', undefined, 'correct'],
+  ['\\frac{720}{3}^\\circ', '240^\\circ', undefined, undefined, 'correct'],
+  // G3 — a compound fraction is not a single term
+  ['\\frac{2\\pi}{\\frac13}', '6\\pi', 'radians single-term', undefined, 'form'],
+  ['\\frac{2\\pi}{\\frac{1}{3}}', '6\\pi', 'radians single-term', undefined, 'form'],
+  ['\\frac{2\\pi}{1/3}', '6\\pi', 'radians single-term', undefined, 'form'],
+  ['2\\pi/\\frac13', '6\\pi', 'single-term', undefined, 'form'],
+  ['2\\pi/(1/3)', '6\\pi', 'single-term', undefined, 'form'],
+  ['2\\pi\\div\\frac13', '6\\pi', 'single-term', undefined, 'form'],
+  ['\\frac{\\frac{\\pi}{3}}{2}', '\\frac{\\pi}{6}', 'single-term', undefined, 'form'],
+  ['\\frac{\\pi/3}{2}', '\\frac{\\pi}{6}', 'single-term', undefined, 'form'],
+  ['\\frac{\\pi}{3}/2', '\\frac{\\pi}{6}', 'single-term', undefined, 'form'],
+  ['2\\pi\\cdot3', '6\\pi', 'radians single-term', undefined, 'form'],
+  ['\\frac{2\\pi}{\\frac14}', '6\\pi', 'radians single-term', undefined, 'incorrect'],
+  ['6\\pi', '6\\pi', 'radians single-term', undefined, 'correct'],
+  ['\\frac{\\pi}{6}', '\\frac{\\pi}{6}', 'single-term', undefined, 'correct'],
+  ['\\pi/6', '\\frac{\\pi}{6}', 'single-term', undefined, 'correct'],
+  ['-\\frac{\\pi}{6}', '-\\frac{\\pi}{6}', 'single-term', undefined, 'correct'],
+  ['\\frac{x^{1/2}}{3}', '\\frac{x^{1/2}}{3}', 'single-term', undefined, 'correct'],
+  ['\\frac{3x}{4}', '\\frac34x', 'single-term', undefined, 'correct'],
+  // …nor a simplified radical, and the numeral forms already refused it
+  ['\\frac{2\\sqrt3}{\\frac12}', '4\\sqrt3', 'simplified-radical', undefined, 'form'],
+  ['\\frac{2\\sqrt3}{1/2}', '4\\sqrt3', 'simplified-radical', undefined, 'form'],
+  ['4\\sqrt3', '4\\sqrt3', 'simplified-radical', undefined, 'correct'],
+  ['\\frac{\\sqrt3}{2}+\\frac{1}{2}i', '\\frac{\\sqrt3}{2}+\\frac12i', 'simplified-radical', undefined, 'correct'],
+  ['\\frac{6}{\\frac12}', '12', 'lowest-terms', undefined, 'form'],
+  ['6\\div\\frac12', '12', 'lowest-terms', undefined, 'form'],
+  ['\\frac{6}{1/2}', '12', 'decimal', undefined, 'form'],
+  ['\\frac{2\\pi}{\\frac{\\pi}{3}}', '6', 'decimal', undefined, 'form'],
+  // G4 — a reciprocal trigonometric function in a denominator: the value is
+  // sampled, and `single-trig-function` refuses the half-applied reciprocal
+  ['\\frac{1}{\\csc t}', '\\sin t', undefined, undefined, 'correct'],
+  ['\\frac{1}{\\sec t}', '\\cos t', undefined, undefined, 'correct'],
+  ['\\frac{2}{\\csc t}', '2\\sin t', undefined, undefined, 'correct'],
+  ['\\frac{\\cot x}{\\csc x}', '\\cos x', undefined, undefined, 'correct'],
+  ['\\frac{\\sec t}{\\csc t}', '\\tan t', undefined, undefined, 'correct'],
+  ['\\frac{1}{\\csc t}', '\\cos t', undefined, undefined, 'incorrect'],
+  ['\\frac{1}{\\csc t}', '-\\sin t', undefined, undefined, 'incorrect'],
+  ['\\frac{\\csc t}{\\sec t}', '\\tan t', undefined, undefined, 'incorrect'],
+  ['\\sec(2t)', '\\frac{1}{\\cos t}', undefined, undefined, 'incorrect'],
+  ['\\cot t', '\\tan t', undefined, undefined, 'incorrect'],
+  ['\\frac{\\sec t}{\\csc t}', '\\tan t', 'single-trig-function', undefined, 'form'],
+  ['\\frac{1}{\\csc t}', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\frac{1}{\\cot t}', '\\tan t', 'single-trig-function', undefined, 'form'],
+  ['\\frac{1}{\\cos t}', '\\sec t', 'single-trig-function', undefined, 'form'],
+  ['1/\\cos t', '\\sec t', 'single-trig-function', undefined, 'form'],
+  ['(\\cos t)^{-1}', '\\sec t', 'single-trig-function', undefined, 'form'],
+  ['\\frac{\\sec x+\\csc x}{1+\\tan x}', '\\frac{1}{\\sin x}', 'single-trig-function', undefined, 'form'],
+  ['\\frac{1}{\\sin x}', '\\frac{1}{\\sin x}', 'single-trig-function', undefined, 'correct'],
+  ['\\tan t', '\\tan t', 'single-trig-function', undefined, 'correct'],
+  ['2\\sin t', '2\\sin t', 'single-trig-function', undefined, 'correct'],
+  ['\\frac{\\sin t}{2}', '\\frac12\\sin t', 'single-trig-function', undefined, 'correct'],
+  ['\\tan(x/10)', '\\tan(x/10)', 'single-trig-function', undefined, 'correct'],
+  ['\\frac{1-\\cos(4x)}{8}', '\\frac{1-\\cos(4x)}{8}', 'single-trig-function', undefined, 'correct'],
+  ['\\sin^{-1}x', '\\arcsin x', 'single-trig-function', undefined, 'correct'],
+  // G5 — `no-like-terms` reads a trigonometric argument, and the numeral
+  // work the engine folds at the top level
+  ['4\\sin(\\frac{2\\pi}{10}x-\\frac{\\pi}{5})+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'form'],
+  ['4\\sin(\\frac{2\\pi}{10}(x-1))+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'form'],
+  ['4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5}+2\\pi)+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'form'],
+  ['4\\sin(\\frac{\\pi}{5}(x-1))+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'correct'],
+  ['-4\\sin(-\\frac{\\pi}{5}x+\\frac{\\pi}{5})+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'correct'],
+  ['4\\cos(\\frac{\\pi}{5}x-\\frac{7\\pi}{10})+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'correct'],
+  ['4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'correct'],
+  ['4\\sin(\\frac{2\\pi}{10}x)+4', '4\\sin(\\frac{\\pi}{5}x-\\frac{\\pi}{5})+4', 'no-like-terms', undefined, 'incorrect'],
+  ['2\\sin(\\frac{2\\pi}{4}x)-3', '2\\sin(\\frac{\\pi}{2}x)-3', 'no-like-terms', undefined, 'form'],
+  ['\\sin^2(\\frac{2\\pi}{4}x)', '\\sin^2(\\frac{\\pi}{2}x)', 'no-like-terms', undefined, 'form'],
+  ['2\\sin(\\frac{\\pi}{2}x)-3', '2\\sin(\\frac{\\pi}{2}x)-3', 'no-like-terms', undefined, 'correct'],
+  ['4\\tan(\\frac{\\pi}{\\frac{\\pi}{2}}x)', '4\\tan(2x)', 'no-like-terms', undefined, 'form'],
+  ['2\\cdot2\\tan(2x)', '4\\tan(2x)', 'no-like-terms', undefined, 'form'],
+  ['4\\tan(2x)+0', '4\\tan(2x)', 'no-like-terms', undefined, 'form'],
+  ['\\frac{8}{2}\\tan(2x)', '4\\tan(2x)', 'no-like-terms', undefined, 'form'],
+  ['4\\tan(2x)', '4\\tan(2x)', 'no-like-terms', undefined, 'correct'],
+  ['\\tan(\\frac{\\pi}{\\frac{\\pi}{3}}(x-\\frac{\\pi}{4}))+2', '\\tan(3(x-\\frac{\\pi}{4}))+2', 'no-like-terms', undefined, 'form'],
+  ['1\\tan(3(x-\\frac{\\pi}{4}))+2', '\\tan(3(x-\\frac{\\pi}{4}))+2', 'no-like-terms', undefined, 'form'],
+  ['\\tan(3(x-\\frac{\\pi}{4}))+2', '\\tan(3(x-\\frac{\\pi}{4}))+2', 'no-like-terms', undefined, 'correct'],
+  ['\\tan(3x-\\frac{3\\pi}{4})+2', '\\tan(3(x-\\frac{\\pi}{4}))+2', 'no-like-terms', undefined, 'correct'],
+  ['1\\sin(x)+2', '\\sin(x)+2', 'no-like-terms', undefined, 'form'],
+  ['\\sin(1x-0)+2', '\\sin(x)+2', 'no-like-terms', undefined, 'form'],
+  ['\\sin(x)+2', '\\sin(x)+2', 'no-like-terms', undefined, 'correct'],
+  ['3\\cos(x)+(-4)', '3\\cos(x)-4', 'no-like-terms', undefined, 'form'],
+  ['3\\cos(x)-4', '3\\cos(x)-4', 'no-like-terms', undefined, 'correct'],
+  ['2x+0', '2x', 'no-like-terms', undefined, 'form'],
+  ['5\\cdot2^x+1', '5\\cdot2^x+1', 'no-like-terms', undefined, 'correct'],
+  ['x+10', 'x+10', 'no-like-terms', undefined, 'correct'],
+  // G6 — a bar over 1 on a π multiple
+  ['\\frac{2\\pi}{1}', '2\\pi', 'radians single-term', undefined, 'form'],
+  ['\\frac{6\\pi}{1}', '6\\pi', 'radians single-term', undefined, 'form'],
+  ['\\frac{2\\pi}{3}', '\\frac{2\\pi}{3}', 'radians single-term', undefined, 'correct'],
+  // G7 — an unspaced degree argument is still a function left
+  ['\\cos45^\\circ', '\\frac{\\sqrt2}{2}', 'evaluated-trig', undefined, 'form'],
+  ['\\cos315^\\circ', '\\frac{\\sqrt2}{2}', 'evaluated-trig simplified-radical', undefined, 'form'],
+  ['\\sin135^\\circ', '\\frac{\\sqrt2}{2}', 'evaluated-trig simplified-radical', undefined, 'form'],
+  ['-\\cos45^\\circ', '-\\frac{\\sqrt2}{2}', 'evaluated-trig simplified-radical', undefined, 'form'],
+  ['\\cos30^\\circ', '\\frac{\\sqrt2}{2}', 'evaluated-trig', undefined, 'incorrect'],
+  ['\\cos45^\\circ', '\\frac{\\sqrt2}{2}', undefined, undefined, 'correct'],
+  ['\\frac{\\sqrt2}{2}', '\\frac{\\sqrt2}{2}', 'evaluated-trig simplified-radical', undefined, 'correct'],
+  ['\\ln1', '0', 'evaluated-logarithm', undefined, 'form'],
+  ['0', '0', 'evaluated-logarithm', undefined, 'correct'],
+  // G8 — a juxtaposed numeral product, and a number not yet distributed
+  ['\\frac{\\pi}{2(3)}', '\\frac{\\pi}{6}', 'radians single-term', undefined, 'form'],
+  ['\\frac{\\pi}{(2)(3)}', '\\frac{\\pi}{6}', 'radians single-term', undefined, 'form'],
+  ['\\frac{1}{4}(\\frac{\\pi}{2}-2)', '\\frac{\\pi}{8}-\\frac{1}{2}', 'exact no-like-terms', undefined, 'form'],
+  ['\\frac{\\pi}{2\\cdot4}-\\frac{1}{2}', '\\frac{\\pi}{8}-\\frac{1}{2}', 'exact no-like-terms', undefined, 'form'],
+  ['\\frac{\\pi-4}{8}', '\\frac{\\pi}{8}-\\frac{1}{2}', 'exact no-like-terms', undefined, 'correct'],
+  ['\\frac{\\pi}{8}-\\frac{1}{2}', '\\frac{\\pi}{8}-\\frac{1}{2}', 'exact no-like-terms', undefined, 'correct'],
+  ['\\frac{\\pi}{8}-\\frac{1}{4}', '\\frac{\\pi}{8}-\\frac{1}{2}', 'exact no-like-terms', undefined, 'incorrect'],
+  // G9 — `single-term` reads an interval endpoint by endpoint, and a plain
+  // numeral is a finished term
+  ['[0,\\pi]', '[0,\\pi]', 'evaluated-trig radians single-term', undefined, 'correct'],
+  ['[-\\frac{\\pi}{2},\\frac{\\pi}{2}]', '[-\\frac{\\pi}{2},\\frac{\\pi}{2}]', 'evaluated-trig radians single-term', undefined, 'correct'],
+  ['[0,1]', '[0,1]', 'single-term', undefined, 'correct'],
+  ['(-\\infty,0]', '(-\\infty,0]', 'single-term', undefined, 'correct'],
+  ['(0,\\pi)', '(0,\\pi)', 'single-term', undefined, 'correct'],
+  ['0,\\pi', '0,\\pi', 'single-term', undefined, 'correct'],
+  ['0', '0', 'single-term', undefined, 'correct'],
+  ['-3', '-3', 'single-term', undefined, 'correct'],
+  ['-0', '0', 'single-term', undefined, 'form'],
+  ['[1-1,\\pi]', '[0,\\pi]', 'evaluated-trig radians single-term', undefined, 'form'],
+  ['[0,\\pi+0]', '[0,\\pi]', 'evaluated-trig radians single-term', undefined, 'form'],
+  ['[0,\\frac{2\\pi}{2}]', '[0,\\pi]', 'evaluated-trig radians single-term', undefined, 'form'],
+  ['[0,2\\pi]', '[0,\\pi]', 'evaluated-trig radians single-term', undefined, 'incorrect'],
+  ['2+3', '5', 'single-term', undefined, 'form'],
+  ['\\frac{10}{2}', '5', 'single-term', undefined, 'form'],
+];
+test('Precalculus chapters 5–6 grader gaps', async (t) => {
+  for (const [typed, key, form, mode, expected] of precalculusChapters5And6) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}${mode ? ` ${mode}` : ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form, mode }), expected);
+    });
+  }
+  await t.test('a dropped degree mark is told to add it, with or without `degrees`', () => {
+    const sentence = 'That number is right — now write it in degrees, with the degree symbol.';
+    assert.equal(describeFormFeedback('240', 'degrees', '240^\\circ'), sentence);
+    assert.equal(describeFormFeedback('240', '', '240^\\circ'), sentence);
+    assert.equal(describeFormFeedback('(22,68)', '', '(22^\\circ,68^\\circ)'), sentence);
+    // the radian value keeps the token's own sentence
+    assert.equal(describeFormFeedback('\\frac{4\\pi}{3}', 'degrees', '240^\\circ'), describeAnswerForm('degrees'));
+  });
+});
+
+// Precalculus chapters 5–6, round 2 (October 4, 2026). G10: under
+// `single-trig-function` the one application is the key's — the same
+// function on an argument of the same value, written finished — and the
+// rest is finished numeral work. A function's argument is no integer content
+// of its term (`\\frac{\\cos(4x)}{8}` is reduced).
+const precalculusChapters5And6Round2 = [
+  // [typed, key, answerForm, answerMode, verdict]
+  ['\\cos(\\frac{\\pi}{2}-t)', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\frac{\\sin t}{1}', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\sin t\\cdot1', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['1\\sin t', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\sin t+0', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\sin(-t)', '-\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\sin(t+2\\pi)', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\sin(2t-t)', '\\sin t', 'single-trig-function', undefined, 'form'],
+  ['\\cos t', '\\sin t', 'single-trig-function', undefined, 'incorrect'],
+  ['-\\sin t', '-\\sin t', 'single-trig-function', undefined, 'correct'],
+  ['\\sin(t)', '\\sin t', 'single-trig-function', undefined, 'correct'],
+  ['2\\sin t', '2\\sin t', 'single-trig-function', undefined, 'correct'],
+  ['\\tan(\\frac{x}{10})', '\\tan(x/10)', 'single-trig-function', undefined, 'correct'],
+  ['\\tan(0.1x)', '\\tan(x/10)', 'single-trig-function', undefined, 'correct'],
+  ['\\tan(\\frac{3x}{2}-\\frac{7x}{5})', '\\tan(x/10)', 'single-trig-function', undefined, 'form'],
+  ['\\tan(\\frac{3}{30}x)', '\\tan(x/10)', 'single-trig-function', undefined, 'form'],
+  ['\\cos2\\theta', '\\cos(2\\theta)', 'single-trig-function', undefined, 'correct'],
+  ['1-2\\sin^2\\theta', '\\cos(2\\theta)', 'single-trig-function', undefined, 'form'],
+  ['\\sin(90^\\circ)', '\\sin\\left(\\tfrac{\\pi}{2}\\right)', 'single-trig-function', undefined, 'correct'],
+  ['\\frac{1}{8}-\\frac{\\cos(4x)}{8}', '\\frac{1-\\cos(4x)}{8}', 'single-trig-function', undefined, 'correct'],
+  ['\\frac{2-2\\cos(4x)}{16}', '\\frac{1-\\cos(4x)}{8}', 'single-trig-function', undefined, 'form'],
+  ['(\\sin\\theta)^2', '\\sin^2\\theta', 'single-trig-function', undefined, 'correct'],
+  ['1-\\cos^2\\theta', '\\sin^2\\theta', 'single-trig-function', undefined, 'form'],
+  ['2\\cos(-7x)', '2\\cos(7x)', 'single-trig-function', undefined, 'form'],
+  ['2\\cos7x', '2\\cos(7x)', 'single-trig-function', undefined, 'correct'],
+  ['\\sqrt2\\cos(-31^\\circ)', '\\sqrt{2}\\cos(31^\\circ)', 'single-trig-function', undefined, 'form'],
+  ['\\sqrt2\\cos31^\\circ', '\\sqrt{2}\\cos(31^\\circ)', 'single-trig-function', undefined, 'correct'],
+  ['\\csc x', '\\frac{1}{\\sin x}', 'single-trig-function', undefined, 'form'],
+  ['\\tan(-x)', '-\\tan x', 'single-trig-function', undefined, 'form'],
+  ['-\\tan(x)', '-\\tan x', 'single-trig-function', undefined, 'correct'],
+  ['\\frac{1}{8}-\\frac{\\cos(4x)}{8}', '\\frac{1-\\cos(4x)}{8}', 'no-like-terms', undefined, 'correct'],
+  ['\\frac{2\\cos(4x)}{8}', '\\frac{\\cos(4x)}{4}', 'no-like-terms', undefined, 'form'],
+  ['\\frac{2\\sqrt2}{4}', '\\frac{\\sqrt2}{2}', 'simplified-radical', undefined, 'form'],
+];
+test('Precalculus chapters 5–6 grader gaps, round 2', async (t) => {
+  for (const [typed, key, form, mode, expected] of precalculusChapters5And6Round2) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form, mode }), expected);
+    });
+  }
+});

@@ -1100,3 +1100,20 @@ test('a log curve with a base below 1 trims to its from/to window', () => {
   const span = Math.max(...pts.map((p) => p[0])) - Math.min(...pts.map((p) => p[0]));
   assert.ok(Math.abs(span - (9 - 1 / 3) * 20) < 2, `it spans x = 1/3 to 9, got ${span}px`);
 });
+
+test('a figure circle with from/to draws an exact arc that fits its own sweep', () => {
+  // Precalculus 5.4's angle of depression mark (October 4, 2026): an arc at a
+  // vertex, not eight chords, and the frame must not grow to the full circle.
+  const out = buildFigure({
+    ariaLabel: 't', unit: 20, padding: 0,
+    segments: [{ from: [0, 0], to: [4, 0] }],
+    circles: [{ at: [4, 0], r: 1, from: 146.31, to: 180 }],
+  });
+  const arcs = out.els.filter((e) => e.tag === 'path' && / A /.test(e.attrs.d));
+  assert.equal(arcs.length, 1, 'one SVG arc');
+  assert.equal(out.els.filter((e) => e.tag === 'circle').length, 0, 'no full circle');
+  assert.match(arcs[0].attrs.d, / A 20 20 0 0 0 /, 'a short counter-clockwise sweep at the radius');
+  const full = buildFigure({ ariaLabel: 't', unit: 20, padding: 0, circles: [{ at: [4, 0], r: 1 }] });
+  assert.ok(out.height < full.height, 'the arc reserves less height than the whole circle');
+  assert.throws(() => buildFigure({ ariaLabel: 't', circles: [{ at: [0, 0], r: 1, from: 10, to: 10 }] }));
+});

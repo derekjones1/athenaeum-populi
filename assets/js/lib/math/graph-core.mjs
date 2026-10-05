@@ -1541,13 +1541,16 @@ const fmtN = (n) => String(+Number(n).toFixed(1))
  *              labelSide is relative to the from→to direction (default left)
  *   rightAngles [{ at, dirs: [[dx,dy],[dx,dy]] }] standalone marks (e.g.
  *              where a height meets a base); dirs point INTO the corner
- *   circles    [{ at, r, dashed?,
+ *   circles    [{ at, r, dashed?, from?, to?,
  *                 radius?:   { angle?: deg (default 40), label? },
  *                 diameter?: { angle?: deg (default 0), label?, dashed? },
  *                 label?:    { text, angle?: deg (default -90) } — outside
  *                            label with a short leader line to the rim }]
  *              radius/diameter endpoints are COMPUTED from r — they always
- *              reach the rim exactly.
+ *              reach the rim exactly. from/to (degrees, counter-clockwise
+ *              from +x) draw an exact SVG arc instead — an angle mark at a
+ *              vertex (Precalculus 5.4's elevation/depression figure, October
+ *              4, 2026, had faked one from eight chords).
  *   points     [{ at, r?, label? }]
  *   texts      [{ at, text, anchor?, dx?, dy? }]
  */
@@ -1565,7 +1568,15 @@ export function buildFigure(props) {
   for (const p of polygons) for (const [x, y] of p.points) eat(x, y)
   for (const s of segments) { eat(...s.from); eat(...s.to) }
   for (const c of circles) {
-    eat(c.at[0] - c.r, c.at[1] - c.r); eat(c.at[0] + c.r, c.at[1] + c.r)
+    if (c.from !== undefined || c.to !== undefined) { // an arc fits its own sweep
+      const a0 = c.from ?? 0, a1 = c.to ?? 360
+      for (let i = 0; i <= 36; i++) {
+        const a = rad(a0 + ((a1 - a0) * i) / 36)
+        eat(c.at[0] + c.r * Math.cos(a), c.at[1] + c.r * Math.sin(a))
+      }
+    } else {
+      eat(c.at[0] - c.r, c.at[1] - c.r); eat(c.at[0] + c.r, c.at[1] + c.r)
+    }
     if (c.label) { // reserve radial room for the outside label + leader
       const a = rad(c.label.angle ?? -90)
       eat(c.at[0] + (c.r + 44 / u) * Math.cos(a), c.at[1] + (c.r + 44 / u) * Math.sin(a))
@@ -1712,6 +1723,21 @@ export function buildFigure(props) {
   // ---- circles (+ computed radius / diameter / outside label)
   for (const c of circles) {
     const ctr = px(c.at)
+    if (c.from !== undefined || c.to !== undefined) {
+      const a0 = c.from ?? 0, a1 = c.to ?? 360
+      if (!Number.isFinite(a0) || !Number.isFinite(a1) || a1 === a0 || Math.abs(a1 - a0) > 360) {
+        throw new Error('circle from/to must be distinct finite angles no more than 360 degrees apart')
+      }
+      const end = (deg) => px([c.at[0] + c.r * Math.cos(rad(deg)), c.at[1] + c.r * Math.sin(rad(deg))])
+      const [x0, y0] = end(a0), [x1, y1] = end(a1)
+      // y is flipped in px space, so increasing math angle sweeps clockwise
+      add('path', {
+        d: `M ${fmtN(x0)} ${fmtN(y0)} A ${fmtN(c.r * u)} ${fmtN(c.r * u)} 0 ${Math.abs(a1 - a0) > 180 ? 1 : 0} ${a1 > a0 ? 0 : 1} ${fmtN(x1)} ${fmtN(y1)}`,
+        fill: 'none', stroke: 'currentColor', strokeWidth: '1.5',
+        ...(c.dashed ? DASH : {}),
+      })
+      continue
+    }
     add('circle', {
       cx: fmtN(ctr[0]), cy: fmtN(ctr[1]), r: fmtN(c.r * u),
       fill: 'none', stroke: 'currentColor', strokeWidth: '1.5',
