@@ -36,7 +36,7 @@ In this section, we will see another way to define trigonometric functions using
 In earlier sections, we used a unit circle to define the **trigonometric functions**. In this section, we will extend those definitions so that we can apply them to right triangles. The value of the sine or cosine function of $t$ is its value at $t$ radians. First, we need to create our right triangle. The figure below shows a point on a **unit circle** of radius 1. If we drop a vertical line segment from the point $(x,y)$ to the $x$-axis, we have a right triangle whose vertical side has length $y$ and whose horizontal side has length $x$. We can use this right triangle to redefine sine, cosine, and the other trigonometric functions as ratios of the sides of a right triangle.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A quarter circle of radius 1 in the first quadrant, with the terminal side of angle t meeting it at the point (x, y). A vertical segment drops from (x, y) to the x-axis, forming a right triangle with horizontal leg x, vertical leg y, and hypotenuse 1.","xMin":-0.3,"xMax":1.3,"yMin":-0.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":220,"circles":[{"at":[0,0],"r":1,"from":0,"to":90},{"at":[0,0],"r":0.3,"from":0,"to":40}],"segments":[{"from":[0,0],"to":[0.766,0.643]},{"from":[0.766,0.643],"to":[0.766,0]},{"from":[0,0],"to":[0.766,0]}],"points":[{"at":[0.766,0.643]}],"texts":[{"at":[0.4,0.36],"text":"1"},{"at":[0.16,0.07],"text":"t"},{"at":[0.82,0.32],"text":"y"},{"at":[0.35,-0.14],"text":"x"}]}
+{"ariaLabel":"A quarter circle of radius 1 in the first quadrant, with the terminal side of angle t meeting it at the point (x, y). A vertical segment drops from (x, y) to the x-axis, forming a right triangle with horizontal leg x, vertical leg y, and hypotenuse 1.","xMin":-0.3,"xMax":1.3,"yMin":-0.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":220,"circles":[{"at":[0,0],"r":1,"from":0,"to":90},{"at":[0,0],"r":0.3,"from":0,"to":40}],"segments":[{"from":[0,0],"to":[0.766,0.643]},{"from":[0.766,0.643],"to":[0.766,0]},{"from":[0,0],"to":[0.766,0]}],"points":[{"at":[0.766,0.643]}],"texts":[{"at":[0.35,0.37],"text":"1","anchor":"end"},{"at":[0.16,0.07],"text":"t"},{"at":[0.82,0.32],"text":"y"},{"at":[0.35,-0.14],"text":"x"},{"at":[0.8,0.7],"text":"(x, y)","anchor":"start"}]}
 {{< /apfigure >}}
 
 We know
@@ -92,8 +92,8 @@ $$
 
 {{< fillin
   question="Given the triangle shown below, find the value of $\sin t$."
-  answer="7/25"
-  answerForm="evaluated-trig"
+  answer="\frac{7}{25}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac{7}{25}$"
   hint="Sine is the ratio of the opposite side to the hypotenuse."
 >}}
@@ -147,10 +147,10 @@ $$
 
 {{< fillin
   question="Using the triangle shown below, evaluate $\sin t$, $\cos t$, $\tan t$, $\sec t$, $\csc t$, and $\cot t$, in that order, separated by commas."
-  answer="33/65,56/65,33/56,65/56,65/33,56/33"
-  answerForm="evaluated-trig"
+  answer="\frac{33}{65},\frac{56}{65},\frac{33}{56},\frac{65}{56},\frac{65}{33},\frac{56}{33}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\sin t=\tfrac{33}{65}$, $\cos t=\tfrac{56}{65}$, $\tan t=\tfrac{33}{56}$, $\sec t=\tfrac{65}{56}$, $\csc t=\tfrac{65}{33}$, $\cot t=\tfrac{56}{33}$"
-  hint="Sine, cosine, and tangent come first from the opposite, adjacent, and hypotenuse; the last three are their reciprocals in that same order."
+  hint="Find sine, cosine, and tangent from the sides opposite and adjacent to $t$ and the hypotenuse; secant, cosecant, and cotangent are the reciprocals of cosine, sine, and tangent."
 >}}
 
 {{< apfigure kind="figure" >}}
@@ -164,11 +164,11 @@ We have already discussed the trigonometric functions as they relate to the **sp
 Suppose we have a $30^\circ,60^\circ,90^\circ$ triangle, which can also be described as a $\tfrac{\pi}{6},\tfrac{\pi}{3},\tfrac{\pi}{2}$ triangle. The sides have lengths in the relation $s,\sqrt3s,2s$. The sides of a $45^\circ,45^\circ,90^\circ$ triangle, which can also be described as a $\tfrac{\pi}{4},\tfrac{\pi}{4},\tfrac{\pi}{2}$ triangle, have lengths in the relation $s,s,\sqrt2s$. These relations are shown in the panels below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a). A 30-60-90 triangle inscribed in a circle of radius 2s. A horizontal leg of length s lies along the positive x-axis, a vertical leg of length square root of 3 s rises to the circle, and the hypotenuse, the circle's radius, has length 2s. The angle between the x-axis and the hypotenuse is pi over 3, and the angle at the top vertex is pi over 6.","xMin":-2.3,"xMax":2.3,"yMin":-2.3,"yMax":2.3,"grid":false,"tickLabels":false,"unit":75,"circles":[{"at":[0,0],"r":2},{"at":[0,0],"r":0.4,"from":0,"to":60}],"segments":[{"from":[0,0],"to":[1,1.7320508]},{"from":[1,1.7320508],"to":[1,0]},{"from":[0,0],"to":[1,0]}],"texts":[{"at":[0.5,-0.22],"text":"s"},{"at":[1.18,0.85],"text":"√3s","anchor":"start"},{"at":[0.6,1.0],"text":"2s"},{"at":[0.563,0.325],"text":"π/3"},{"at":[0.62,1.5],"text":"π/6"}]}
+{"ariaLabel":"Panel (a). A 30-60-90 triangle inscribed in a circle of radius 2s. A horizontal leg of length s lies along the positive x-axis, a vertical leg of length square root of 3 s rises to the circle, and the hypotenuse, the circle's radius, has length 2s. The angle between the x-axis and the hypotenuse is pi over 3, and the angle at the top vertex is pi over 6.","xMin":-2.3,"xMax":2.3,"yMin":-2.3,"yMax":2.3,"grid":false,"tickLabels":false,"unit":75,"circles":[{"at":[0,0],"r":2},{"at":[0,0],"r":0.4,"from":0,"to":60},{"at":[1,1.7320508],"r":0.55,"from":240,"to":270}],"segments":[{"from":[0,0],"to":[1,1.7320508]},{"from":[1,1.7320508],"to":[1,0]},{"from":[0,0],"to":[1,0]}],"polylines":[{"through":[[0.86,0],[0.86,0.14],[1,0.14]]}],"texts":[{"at":[0.5,-0.22],"text":"s"},{"at":[1.12,0.85],"text":"√3s","anchor":"start"},{"at":[0.45,1.0],"text":"2s","anchor":"end"},{"at":[0.563,0.325],"text":"π/3"},{"at":[0.82,0.82],"text":"π/6","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b). A 45-45-90 triangle inscribed in a circle of radius square root of 2 s. A horizontal leg of length s lies along the positive x-axis, a vertical leg of length s rises to the circle, and the hypotenuse, the circle's radius, has length square root of 2 s. The angle between the x-axis and the hypotenuse is pi over 4, and the angle at the top vertex is also pi over 4.","xMin":-1.7,"xMax":1.7,"yMin":-1.7,"yMax":1.7,"grid":false,"tickLabels":false,"unit":100,"circles":[{"at":[0,0],"r":1.4142136},{"at":[0,0],"r":0.4,"from":0,"to":45}],"segments":[{"from":[0,0],"to":[1,1]},{"from":[1,1],"to":[1,0]},{"from":[0,0],"to":[1,0]}],"texts":[{"at":[0.5,-0.22],"text":"s"},{"at":[1.18,0.5],"text":"s","anchor":"start"},{"at":[0.44,0.72],"text":"√2s"},{"at":[0.601,0.249],"text":"π/4"},{"at":[0.75,1.25],"text":"π/4"}]}
+{"ariaLabel":"Panel (b). A 45-45-90 triangle inscribed in a circle of radius square root of 2 s. A horizontal leg of length s lies along the positive x-axis, a vertical leg of length s rises to the circle, and the hypotenuse, the circle's radius, has length square root of 2 s. The angle between the x-axis and the hypotenuse is pi over 4, and the angle at the top vertex is also pi over 4.","xMin":-1.7,"xMax":1.7,"yMin":-1.7,"yMax":1.7,"grid":false,"tickLabels":false,"unit":100,"circles":[{"at":[0,0],"r":1.4142136},{"at":[0,0],"r":0.35,"from":0,"to":45},{"at":[1,1],"r":0.3,"from":225,"to":270}],"segments":[{"from":[0,0],"to":[1,1]},{"from":[1,1],"to":[1,0]},{"from":[0,0],"to":[1,0]}],"polylines":[{"through":[[0.88,0],[0.88,0.12],[1,0.12]]}],"texts":[{"at":[0.5,-0.22],"text":"s"},{"at":[1.1,0.5],"text":"s","anchor":"start"},{"at":[0.5,0.62],"text":"√2s","anchor":"end"},{"at":[0.5,0.2],"text":"π/4"},{"at":[0.79,0.49],"text":"π/4","anchor":"middle"}]}
 {{< /apfigure >}}
 
 We can then use the ratios of the side lengths to evaluate trigonometric functions of special angles.
@@ -196,19 +196,19 @@ $$
 $$
 
 {{< fillin
-  question="Find the exact value of $\sin\left(\tfrac{\pi}{4}\right)$, using side lengths."
-  answer="1/\sqrt2"
-  answerForm="evaluated-trig"
-  answerDisplay="$\tfrac{1}{\sqrt2}$"
-  hint="For a $45^\circ,45^\circ,90^\circ$ triangle the legs are equal, each of length $s$, and the hypotenuse is $\sqrt2s$."
+  question="Find the exact value of $\sin\left(\tfrac{\pi}{4}\right)$, using side lengths. Rationalize the denominator."
+  answer="\frac{\sqrt2}{2}"
+  answerForm="evaluated-trig simplified-radical"
+  answerDisplay="$\tfrac{\sqrt2}{2}$"
+  hint="Sine is the ratio of the opposite side to the hypotenuse; read both from the $45^\circ,45^\circ,90^\circ$ triangle shown above, then multiply the top and bottom by the radical in the denominator."
 >}}
 
 {{< fillin
   question="Find the exact value of $\sec\left(\tfrac{\pi}{4}\right)$, using side lengths."
   answer="\sqrt2"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\sqrt2$"
-  hint="Secant is the ratio of the hypotenuse, $\sqrt2s$, to the adjacent side, $s$."
+  hint="Secant is the ratio of the hypotenuse to the adjacent side; read both from the $45^\circ,45^\circ,90^\circ$ triangle shown above."
 >}}
 
 ## Using Equal Cofunction of Complements
@@ -225,7 +225,7 @@ $$
 See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A 30-60-90 triangle inscribed in a circle of radius 2s, identical to panel (a) above: the angle between the x-axis and the hypotenuse is pi over 3, and the angle at the top vertex is pi over 6, illustrating that the sine of pi over 3 equals the cosine of pi over 6 and vice versa.","xMin":-2.3,"xMax":2.3,"yMin":-2.3,"yMax":2.3,"grid":false,"tickLabels":false,"unit":75,"circles":[{"at":[0,0],"r":2},{"at":[0,0],"r":0.4,"from":0,"to":60}],"segments":[{"from":[0,0],"to":[1,1.7320508]},{"from":[1,1.7320508],"to":[1,0]},{"from":[0,0],"to":[1,0]}],"texts":[{"at":[0.5,-0.22],"text":"s"},{"at":[1.18,0.85],"text":"√3s","anchor":"start"},{"at":[0.6,1.0],"text":"2s"},{"at":[0.563,0.325],"text":"π/3"},{"at":[0.62,1.5],"text":"π/6"}]}
+{"ariaLabel":"A 30-60-90 triangle inscribed in a circle of radius 2s, identical to panel (a) above: the angle between the x-axis and the hypotenuse is pi over 3, and the angle at the top vertex is pi over 6, illustrating that the sine of pi over 3 equals the cosine of pi over 6 and vice versa.","xMin":-2.3,"xMax":2.3,"yMin":-2.3,"yMax":2.3,"grid":false,"tickLabels":false,"unit":75,"circles":[{"at":[0,0],"r":2},{"at":[0,0],"r":0.4,"from":0,"to":60},{"at":[1,1.7320508],"r":0.55,"from":240,"to":270}],"segments":[{"from":[0,0],"to":[1,1.7320508]},{"from":[1,1.7320508],"to":[1,0]},{"from":[0,0],"to":[1,0]}],"polylines":[{"through":[[0.86,0],[0.86,0.14],[1,0.14]]}],"texts":[{"at":[0.5,-0.22],"text":"s"},{"at":[1.12,0.85],"text":"√3s","anchor":"start"},{"at":[0.45,1.0],"text":"2s","anchor":"end"},{"at":[0.563,0.325],"text":"π/3"},{"at":[0.82,0.82],"text":"π/6","anchor":"middle"}]}
 {{< /apfigure >}}
 
 This result should not be surprising because, as we see from the figure, the side opposite the angle of $\tfrac{\pi}{3}$ is also the side adjacent to $\tfrac{\pi}{6}$, so $\sin(\tfrac{\pi}{3})$ and $\cos(\tfrac{\pi}{6})$ are exactly the same ratio of the same two sides, $\sqrt3s$ and $2s$. Similarly, $\cos(\tfrac{\pi}{3})$ and $\sin(\tfrac{\pi}{6})$ are also the same ratio using the same two sides, $s$ and $2s$.
@@ -272,9 +272,9 @@ $$\cos\left(\tfrac{\pi}{2}-t\right)=\tfrac{5}{12}$$
 {{< fillin
   question="If $\csc\left(\tfrac{\pi}{6}\right)=2$, find $\sec\left(\tfrac{\pi}{3}\right)$."
   answer="2"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$2$"
-  hint="$\tfrac{\pi}{6}$ and $\tfrac{\pi}{3}$ are complementary, and cosecant and secant are cofunctions."
+  hint="Add the two angles to check whether they are complementary, then use the cofunction identity that rewrites a secant as a cosecant."
 >}}
 
 ## Using Trigonometric Functions
@@ -324,6 +324,7 @@ $$
 {{< fillin
   question="A right triangle has one angle of $\tfrac{\pi}{3}$ and a hypotenuse of 20. Find the side adjacent to that angle."
   answer="10"
+  answerForm="decimal"
   answerDisplay="$10$"
   hint="Cosine is the ratio of the adjacent side to the hypotenuse."
 >}}
@@ -338,8 +339,8 @@ $$
 
 {{< fillin
   question="Using that same triangle — one angle of $\tfrac{\pi}{3}$ and a hypotenuse of 20 — find the measure of the missing angle."
-  answer="\pi/6"
-  answerForm="radians"
+  answer="\frac{\pi}{6}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{6}$"
   hint="The two acute angles of a right triangle are complementary."
 >}}
@@ -349,7 +350,7 @@ $$
 Right-triangle trigonometry has many practical applications. For example, the ability to compute the lengths of sides of a triangle makes it possible to find the height of a tall object without climbing to the top or having to extend a tape measure along its height. We do so by measuring a distance from the base of the object to a point on the ground some distance away, where we can look up to the top of the tall object at an angle. The **angle of elevation** of an object above an observer relative to the observer is the angle between the horizontal and the line from the object to the observer's eye. The right triangle this position creates has sides that represent the unknown height, the measured distance from the base, and the angled line of sight from the ground to the top of the object. Knowing the measured distance to the base of the object and the angle of the line of sight, we can use trigonometric functions to calculate the unknown height. Similarly, we can form a triangle from the top of a tall object by looking downward. The **angle of depression** of an object below an observer relative to the observer is the angle between the horizontal and the line from the object to the observer's eye. See the figure below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A vertical tower with its base and a point on the ground some distance away joined by a line of sight to the top of the tower, forming a right triangle. A horizontal dashed line at the top of the tower shows the angle of depression down to the line of sight; the angle of elevation is the same line of sight measured up from the horizontal ground at the distant point. A labelled arrow points to each of the two angles.","unit":24,"segments":[{"from":[0,0],"to":[0,5]},{"from":[0,0],"to":[8.5,0]},{"from":[0,5],"to":[7,5],"dashed":true},{"from":[0,5],"to":[7,0]},{"from":[3.5,5.05],"to":[0.55,4.85],"arrow":true},{"from":[7.5,1.5],"to":[6.65,0.28],"arrow":true}],"texts":[{"at":[3.6,5.35],"text":"angle of depression","anchor":"start"},{"at":[7.6,1.6],"text":"angle of elevation","anchor":"start"}]}
+{"ariaLabel":"A vertical tower and a point on the ground some distance from its base, joined by a line of sight from the point to the top of the tower, forming a right triangle with the ground and the tower. A dashed horizontal line runs from the top of the tower; an arc marks the angle of depression between that horizontal and the line of sight, at the top of the tower, and a second arc marks the angle of elevation between the ground and the line of sight, at the distant point. A labelled arrow points to each arc.","unit":24,"segments":[{"from":[0,0],"to":[0,6]},{"from":[0,0],"to":[10,0]},{"from":[0,6],"to":[9,6],"dashed":true},{"from":[0,6],"to":[9,0]},{"from":[3.1,5.3],"to":[1.5,5.55],"arrow":true},{"from":[6.15,0.47],"to":[7.5,0.42],"arrow":true}],"texts":[{"at":[3.2,5.05],"text":"angle of depression","anchor":"start"},{"at":[6.0,0.3],"text":"angle of elevation","anchor":"end"}],"circles":[{"at":[0,6],"r":1.4,"from":326.31,"to":360},{"at":[9,0],"r":1.4,"from":146.31,"to":180}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -419,78 +420,79 @@ For the following exercises, use the triangle below to evaluate each trigonometr
 {{< /apfigure >}}
 
 {{< fillin
-  question="Find $\sin A$."
-  answer="5\sqrt{29}/29"
-  answerForm="evaluated-trig"
+  question="Find $\sin A$. Enter the exact value, with a rational denominator."
+  answer="\frac{5\sqrt{29}}{29}"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{5\sqrt{29}}{29}$"
-  hint="Sine is the ratio of the opposite side, 10, to the hypotenuse; find the hypotenuse with the Pythagorean theorem first."
+  hint="Find the hypotenuse with the Pythagorean theorem; sine is the ratio of the side opposite $A$ to the hypotenuse. Simplify the radical before rationalizing."
 >}}
 
 {{< fillin
   question="Find $\tan A$."
-  answer="5/2"
-  answerForm="evaluated-trig"
+  answer="\frac{5}{2}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac{5}{2}$"
   hint="Tangent is the ratio of the opposite side to the adjacent side."
 >}}
 
 ### Find function values for $30^\circ\left(\tfrac{\pi}{6}\right)$, $45^\circ\left(\tfrac{\pi}{4}\right)$, and $60^\circ\left(\tfrac{\pi}{3}\right)$
 
+For the following exercises, find the lengths of the missing sides if side $a$ is opposite angle $A$, side $b$ is opposite angle $B$, and side $c$ is the hypotenuse.
+
+{{< fillin
+  question="$a=5$, $\angle A=60^\circ$. Find side $b$. Enter the exact value, with a rational denominator."
+  answer="\frac{5\sqrt3}{3}"
+  answerForm="evaluated-trig simplified-radical"
+  answerDisplay="$b=\tfrac{5\sqrt3}{3}$"
+  hint="Tangent of $A$ is the ratio of the opposite side $a$ to the adjacent side $b$; use the exact value of $\tan 60^\circ$ from the $30^\circ,60^\circ,90^\circ$ triangle."
+>}}
+
+{{< fillin
+  question="$a=5$, $\angle A=60^\circ$. Find side $c$. Enter the exact value, with a rational denominator."
+  answer="\frac{10\sqrt3}{3}"
+  answerForm="evaluated-trig simplified-radical"
+  answerDisplay="$c=\tfrac{10\sqrt3}{3}$"
+  hint="Sine of $A$ is the ratio of the opposite side $a$ to the hypotenuse $c$; use the exact value of $\sin 60^\circ$."
+>}}
+
 For the following exercises, solve for the unknown sides of the given triangle.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle with a 30-degree angle, the side opposite it (adjacent to angle B) labeled 7, the side adjacent to the 30-degree angle labeled b, and the hypotenuse labeled c. Angle B is the triangle's other acute angle.","unit":12,"polygons":[{"points":[[0,0],[12.1,0],[0,7]],"edgeLabels":["b","c","7"],"vertexLabels":[null,"30°","B"],"rightAngles":[0]}]}
-{{< /apfigure >}}
-
-{{< fillin
-  question="Find side $c$."
-  answer="14"
-  answerDisplay="$14$"
-  hint="Sine of $30^\circ$ is the ratio of the given side, 7, to the hypotenuse $c$."
->}}
-
-{{< fillin
-  question="Find side $b$."
-  answer="7\sqrt3"
-  answerForm="exact-radical"
-  answerDisplay="$7\sqrt3$"
-  hint="Tangent of $30^\circ$ is the ratio of the given side, 7, to the adjacent side $b$."
->}}
-
-{{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle with the right angle at C, a 45-degree angle at B, and the hypotenuse AB labeled 15 times the square root of 2. The 45-degree angle is marked at B. The two legs are not labeled.","unit":10,"polygons":[{"points":[[0,0],[15,0],[0,15]],"edgeLabels":[null,"15√2",null],"vertexLabels":["C","B","A"],"rightAngles":[0]}],"texts":[{"at":[10.4,1.9],"text":"45°"}]}
+{"ariaLabel":"A right triangle with the right angle at C, a 45-degree angle at B, and the hypotenuse AB labeled 15 times the square root of 2. The 45-degree angle is marked at B. The two legs are not labeled.","unit":10,"polygons":[{"points":[[0,0],[15,0],[0,15]],"edgeLabels":[null,"15√2",null],"vertexLabels":["C","B","A"],"rightAngles":[0]}],"texts":[{"at":[12.0,0.9],"text":"45°","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Find side $a$ (opposite angle $A$)."
   answer="15"
+  answerForm="decimal"
   answerDisplay="$15$"
-  hint="With $B=45^\circ$, angle $A$ is also $45^\circ$, so the triangle is isosceles: both legs are equal."
+  hint="Angle $A$ is the complement of $B$; sine of $A$ is the ratio of the opposite side $a$ to the hypotenuse."
 >}}
 
 {{< fillin
   question="Find side $b$ (opposite angle $B$)."
   answer="15"
+  answerForm="decimal"
   answerDisplay="$15$"
-  hint="With $B=45^\circ$, angle $A$ is also $45^\circ$, so the triangle is isosceles: both legs are equal."
+  hint="Sine of $B$ is the ratio of the opposite side $b$ to the hypotenuse."
 >}}
 
 ### Use cofunctions of complementary angles
 
 {{< fillin
   question="$\cos\left(\tfrac{\pi}{3}\right)=\sin(\underline{\quad})$. Fill in the missing angle."
-  answer="\pi/6"
-  answerForm="radians"
+  answer="\frac{\pi}{6}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{6}$"
   hint="Cosine of an angle equals sine of its complement; the two acute angles of a right triangle sum to $\tfrac{\pi}{2}$."
 >}}
 
 {{< fillin
   question="$\tan\left(\tfrac{\pi}{4}\right)=\cot(\underline{\quad})$. Fill in the missing angle."
-  answer="\pi/4"
-  answerForm="radians"
+  answer="\frac{\pi}{4}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{4}$"
-  hint="Tangent of an angle equals cotangent of its complement; $\tfrac{\pi}{4}$ is its own complement."
+  hint="Tangent of an angle equals cotangent of its complement; subtract the given angle from $\tfrac{\pi}{2}$."
 >}}
 
 ### Use the definitions of trigonometric functions of any angle
@@ -549,4 +551,4 @@ For the following exercises, use a calculator to find the length of each side to
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 5.4: Right Triangle Trigonometry](https://openstax.org/books/precalculus-2e/pages/5-4-right-triangle-trigonometry) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all seventeen instructional figures as accessible spec-first SVGs — the quarter-circle unit-circle figure with legs $x$ and $y$ and hypotenuse 1; the general adjacent/opposite/hypotenuse triangle; the Example 1 $8$-$15$-$17$ triangle and its Try It $7$-$24$-$25$ triangle; the general $\alpha$/$\beta$ "side adjacent to one angle is opposite the other" triangle; the Example 2 $3$-$4$-$5$ triangle and its Try It $33$-$56$-$65$ triangle; the two-panel $30$-$60$-$90$/$45$-$45$-$90$ special-triangle construction, drawn as circle-inscribed triangles with concrete side lengths $s$, $\sqrt3s$/$s$, $2s$/$\sqrt2s$ in place of the source's symbolic labels; the standalone $\pi/3$ cofunction circle (identical construction to the $30$-$60$-$90$ panel); the general $\alpha$/$\beta$ cofunction-identity triangle; the Example 5 $30^\circ$ triangle with unknown sides $a$ and $c$; the angle-of-elevation/angle-of-depression schematic; and the Example 6 tree-height triangle. Presented the cofunction identities as a Markdown table (`## Key equations`) with the six equations stacked in one KaTeX array, matching this book's one-row Key equations convention. Converted every "How To" two-column/numbered list into the book's callout convention. Omitted the "Access these online resources" media links. Every exact trigonometric value in this section is graded with `answerForm="evaluated-trig"`; every calculator/decimal answer declares `decimal` and states the rounding the source's own Answer Key implies (the source leaves the Real-World Applications ladder and Seattle-building Try Its and Practice items unrounded in their prompts even though the printed key carries four decimal places, so the local questions state "round to four decimal places" or "round to the nearest foot" explicitly, matching the key's own precision); every missing-angle cofunction answer declares `radians` to pin the source's radian spelling. The four answers that are exact whole-number side lengths ($10$, $14$, and the two $15$s) declare no form: `exact-radical` refuses a bare integer, since it requires a radical to be the carrying factor, and none of those four values is printed in its own question or figure, so no form token is needed to keep the item from being passable by retyping. Combined Try It 2, which asks for all six trigonometric functions of one triangle, into a single ordered, comma-separated fill-in, since the question itself states the order and the six values are not printed anywhere in the prompt to retype; Try It 3, which asks for the same six functions of $\tfrac{\pi}{4}$, is instead assessed by two single-value fill-ins (the sine and the secant), because the in-page practice sets are capped at two to three consecutive questions and those two exercise the ratio and its reciprocal without repeating the pair a third and fourth time. Expanded the Try It after Example 5 (find the two unknown sides *and* the missing angle) into three separate fill-ins, and the two Section Exercises "solve for the unknown sides" figures (Exercise 29 [$c=14,b=7\sqrt3$] and Exercise 31 [$a=15,b=15$]) into one fill-in per side, since each source item asks for more than one value. Adapted nine selected end-of-section exercises — two Graphical trigonometric-function evaluations, two Algebraic/Graphical "solve for the unknown sides" triangles (split into four components), two Algebraic cofunction fill-in-the-blank items, two Technology calculator items (split into four components), and two Real-World Applications word problems — into interactive components in a closing Practice block, one group per objective. The pinned module `m49384` appends the chapter's own Review Exercises and Practice Test after this section's Section Exercises; neither is part of Section 5.4, and no item from either was transcribed or drawn into the Practice block.</small>
+<small>This section is adapted from [Precalculus 2e, Section 5.4: Right Triangle Trigonometry](https://openstax.org/books/precalculus-2e/pages/5-4-right-triangle-trigonometry) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all fourteen instructional figures, and the two Practice triangles, as accessible spec-first SVGs — the quarter-circle unit-circle figure with legs $x$ and $y$ and hypotenuse 1; the general adjacent/opposite/hypotenuse triangle; the Example 1 $8$-$15$-$17$ triangle and its Try It $7$-$24$-$25$ triangle; the general $\alpha$/$\beta$ "side adjacent to one angle is opposite the other" triangle; the Example 2 $3$-$4$-$5$ triangle and its Try It $33$-$56$-$65$ triangle; the two-panel $30$-$60$-$90$/$45$-$45$-$90$ special-triangle construction, drawn as circle-inscribed triangles with side lengths $s$, $\sqrt3s$/$s$, $2s$/$\sqrt2s$, both acute angles marked, and the right angle marked; the standalone $\pi/3$ cofunction circle (identical construction to the $30$-$60$-$90$ panel); the general $\alpha$/$\beta$ cofunction-identity triangle; the Example 5 $30^\circ$ triangle with unknown sides $a$ and $c$; the angle-of-elevation/angle-of-depression schematic, with the radio tower drawn as a plain vertical segment and each angle marked by an arc; and the Example 6 tree-height triangle. Presented the cofunction identities as a Markdown table (`## Key equations`) with the six equations stacked in one KaTeX array, matching this book's one-row Key equations convention. Converted every "How To" two-column/numbered list into the book's callout convention. Omitted the "Access these online resources" media links. Every exact trigonometric value is graded with `evaluated-trig` composed with `lowest-terms` (a rational value) or `simplified-radical` (a radical value), so a trigonometric function, an unreduced ratio, or an unsimplified radical left in the entry is refused; every side length, calculator, and decimal answer declares `decimal` and states the rounding the source's own Answer Key implies (the source leaves the Real-World Applications ladder and Seattle-building exercises unrounded in their prompts even though the printed key carries four decimal places, so the local questions state "round to four decimal places" explicitly, matching the key's own precision; the ladder Try It keeps the source's own "Round to the nearest foot"); every missing-angle answer declares `radians single-term`, which pins the source's radian spelling and refuses the subtraction from $\tfrac{\pi}{2}$ left unworked. Try It 3's sine and Exercise 17's $\sin A$ add "Rationalize the denominator" to the question, and Exercise 15's two parts "Enter the exact value, with a rational denominator", because their keys are rationalized as Example 3 rationalizes; the source's own Try It 3 answer prints the unrationalized $\tfrac{1}{\sqrt2}$, which the page keys as the same value written $\tfrac{\sqrt2}{2}$. The Technology items repeat the Algebraic group's naming convention (side $a$ opposite angle $A$, and so on), since the page states them without their figures. Combined Try It 2, which asks for all six trigonometric functions of one triangle, into a single ordered, comma-separated fill-in, since the question itself states the order and the six values are not printed anywhere in the prompt to retype; Try It 3, which asks for the same six functions of $\tfrac{\pi}{4}$, is instead assessed by two single-value fill-ins (the sine and the secant), because the in-page practice sets are capped at two to three consecutive questions and those two exercise the ratio and its reciprocal without repeating the pair a third and fourth time. Expanded the Try It after Example 5 (find the two unknown sides *and* the missing angle) into three separate fill-ins, and Algebraic Exercise 15 ($a=5$, $\angle A=60^\circ$ [$b=\tfrac{5\sqrt3}{3},c=\tfrac{10\sqrt3}{3}$]) and the Graphical "solve for the unknown sides" Exercise 31 [$a=15,b=15$] into one fill-in per side, since each source item asks for more than one value. Exercise 29 is not used: its triangle is Example 5's, with the same 7 and $30^\circ$, so the example prints its hypotenuse. Adapted nine selected end-of-section exercises — two Graphical trigonometric-function evaluations, one Algebraic missing-sides exercise and one Graphical "solve for the unknown sides" triangle (split into four components), two Algebraic cofunction fill-in-the-blank items, two Technology calculator items (split into four components), and two Real-World Applications word problems — into interactive components in a closing Practice block, one group per objective. The pinned module `m49384` appends the chapter's own Review Exercises and Practice Test after this section's Section Exercises; neither is part of Section 5.4, and no item from either was transcribed or drawn into the Practice block.</small>

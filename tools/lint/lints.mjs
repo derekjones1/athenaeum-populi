@@ -736,8 +736,6 @@ export function unworkedKey(answer) {
  * deletes the list.
  */
 export const VALUE_FORM_SWEEP_PENDING = Object.freeze([
-  'math/precalculus/05-trigonometric-functions/',
-  'math/precalculus/06-periodic-functions/',
   'math/precalculus/07-trigonometric-identities-and-equations/',
   'math/precalculus/08-further-applications-of-trigonometry/',
   'math/precalculus/09-systems-of-equations-and-inequalities/',

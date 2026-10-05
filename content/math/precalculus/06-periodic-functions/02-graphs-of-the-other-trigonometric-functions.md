@@ -62,7 +62,7 @@ As $x$ approaches $\tfrac{\pi}{2}$, the outputs of the function get larger and l
 We can see that, as $x$ approaches $-\tfrac{\pi}{2}$, the outputs get smaller and smaller. Remember that there are some values of $x$ for which $\cos x=0$. For example, $\cos\left(\tfrac{\pi}{2}\right)=0$ and $\cos\left(\tfrac{3\pi}{2}\right)=0$. At these values, the **tangent function** is undefined, so the graph of $y=\tan x$ has discontinuities at $x=\tfrac{\pi}{2}$ and $\tfrac{3\pi}{2}$. At these values, the graph of the tangent has vertical asymptotes. The figure below represents the graph of $y=\tan x$. The tangent is positive from $0$ to $\tfrac{\pi}{2}$ and from $\pi$ to $\tfrac{3\pi}{2}$, corresponding to quadrants I and III of the unit circle.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals tangent of x over one period, passing through the points (-pi/4, -1), (0, 0), and (pi/4, 1), with dashed vertical asymptotes at x = -pi/2 and x = pi/2.","xMin":-3.6,"xMax":3.6,"yMin":-4.3,"yMax":4.3,"grid":false,"tickLabels":false,"unit":42,"curves":[{"kind":"tangent","from":-1.54,"to":1.54}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false},{"x":-1.5707963267948966,"dashed":true,"arrows":false}],"points":[{"at":[-0.7853981633974483,-1]},{"at":[0,0]},{"at":[0.7853981633974483,1]}],"texts":[{"at":[3.1416,-0.5],"text":"π"},{"at":[-3.1416,-0.5],"text":"−π"},{"at":[1.5708,-0.5],"text":"π/2"},{"at":[-1.5708,-0.5],"text":"−π/2"},{"at":[1.9,3.6],"text":"y = tan(x)"}]}
+{"ariaLabel":"The graph of y equals tangent of x over three periods, the middle branch passing through the special-angle points (−π/3, −√3), (−π/4, −1), (−π/6, −√3/3), (0, 0), (π/6, √3/3), (π/4, 1), and (π/3, √3), with dashed vertical asymptotes at x = −π/2 and x = π/2.","xMin":-4.4,"xMax":4.4,"yMin":-4.4,"yMax":4.4,"grid":false,"tickLabels":"y","yTickStep":1,"unit":40,"curves":[{"kind":"tangent"}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false},{"x":-1.5707963267948966,"dashed":true,"arrows":false}],"points":[{"at":[-1.0471975511965976,-1.7320508075688767]},{"at":[-0.7853981633974483,-0.9999999999999999]},{"at":[-0.5235987755982988,-0.5773502691896256]},{"at":[0,0.0]},{"at":[0.5235987755982988,0.5773502691896256]},{"at":[0.7853981633974483,0.9999999999999999]},{"at":[1.0471975511965976,1.7320508075688767]}],"texts":[{"at":[3.141592653589793,-0.55],"text":"π","anchor":"middle"},{"at":[-3.141592653589793,-0.55],"text":"−π","anchor":"middle"},{"at":[1.6507963267948966,-0.55],"text":"π/2"},{"at":[-1.4907963267948965,-0.55],"text":"−π/2"},{"at":[2.6,3.7],"text":"y = tan(x)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 ## Graphing Variations of $y=\tan x$
@@ -125,6 +125,7 @@ This means the curve must pass through the points $(0.5,0.5)$, $(0,0)$, and $(-0
 {{< fillin
   question="Sketch a graph of $f(x)=3\tan\left(\tfrac{\pi}{6}x\right)$. What is the period of this function?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="$6$"
   hint="The period of $A\tan(Bx)$ is $\tfrac{\pi}{\lvert B\rvert}$."
 >}}
@@ -132,8 +133,9 @@ This means the curve must pass through the points $(0.5,0.5)$, $(0,0)$, and $(-0
 {{< fillin
   question="For that same function, $f(x)=3\tan\left(\tfrac{\pi}{6}x\right)$, what is the smallest positive vertical asymptote?"
   answer="3"
+  answerForm="decimal"
   answerDisplay="$3$"
-  hint="One period covers the asymptote-to-asymptote span; the first positive asymptote is half a period from the origin."
+  hint="One period of $A\tan(Bx)$ runs between two asymptotes centred on the origin, so the first positive asymptote is half a period from the origin."
 >}}
 
 ### Graphing One Period of a Shifted Tangent Function
@@ -149,7 +151,7 @@ The graph of a transformed tangent function is different from the basic tangent 
 
   - The stretching factor is $\lvert A\rvert$.
   - The period is $\tfrac{\pi}{\lvert B\rvert}$.
-  - The domain is $x\ne\tfrac{C}{B}+\tfrac{\pi}{2\lvert B\rvert}k$, where $k$ is an integer.
+  - The domain is $x\ne\tfrac{C}{B}+\tfrac{\pi}{2\lvert B\rvert}k$, where $k$ is an odd integer.
   - The range is $(-\infty,\infty)$.
   - The vertical asymptotes occur at $x=\tfrac{C}{B}+\tfrac{\pi}{2\lvert B\rvert}k$, where $k$ is an odd integer.
   - There is no amplitude.
@@ -180,7 +182,7 @@ The graph of a transformed tangent function is different from the basic tangent 
 **Steps 5–7.** The asymptotes are at $x=-\tfrac{3}{2}$ and $x=-\tfrac{1}{2}$ and the three recommended reference points are $(-1.25,1)$, $(-1,-1)$, and $(-0.75,-3)$. The graph is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals negative 2 tangent of pi x plus pi, minus 1, one period, passing through the points (-1.25, 1), (-1, -1), and (-0.75, -3), with dashed vertical asymptotes at x = -1.5 and x = -0.5.","xMin":-2,"xMax":0.5,"yMin":-10.5,"yMax":10.5,"grid":false,"tickLabels":true,"xTickStep":0.5,"yTickStep":5,"unit":75,"curves":[{"kind":"tangent","a":-2,"b":3.141592653589793,"h":-1,"k":-1,"from":-1.495,"to":-0.505}],"lines":[{"x":-1.5,"dashed":true,"arrows":false},{"x":-0.5,"dashed":true,"arrows":false}],"points":[{"at":[-1.25,1]},{"at":[-1,-1]},{"at":[-0.75,-3]}]}
+{"ariaLabel":"The graph of y equals negative 2 tangent of pi x plus pi, minus 1, one period, passing through the points (−1.25, 1), (−1, −1), and (−0.75, −3), with dashed vertical asymptotes at x = −1.5 and x = −0.5.","xMin":-2,"xMax":0.5,"yMin":-10.5,"yMax":10.5,"grid":false,"tickLabels":"y","yTickStep":5,"xUnit":120,"yUnit":13,"texts":[{"at":[-2,0.6],"text":"−2","anchor":"middle"},{"at":[-1.5,0.6],"text":"−1.5","anchor":"middle"},{"at":[-1,0.6],"text":"−1","anchor":"middle"},{"at":[-0.5,0.6],"text":"−0.5","anchor":"middle"}],"curves":[{"kind":"tangent","a":-2,"b":3.141592653589793,"h":-1,"k":-1,"from":-1.4372,"to":-0.578}],"lines":[{"x":-1.5,"dashed":true,"arrows":false},{"x":-0.5,"dashed":true,"arrows":false}],"points":[{"at":[-1.25,1]},{"at":[-1,-1]},{"at":[-0.75,-3]}]}
 {{< /apfigure >}}
 
 **Analysis.** Note that this is a decreasing function because $A<0$.
@@ -188,7 +190,7 @@ The graph of a transformed tangent function is different from the basic tangent 
 {{< multiplechoice
   question="How would the graph in the example above look different if we made $A=2$ instead of $-2$?"
   answer="It would be reflected across the line $y=-1$, becoming an increasing function"
-  hint="Flipping the sign of $A$ reflects the curve about its own midline, $y=D$."
+  hint="Compare $-2\tan(\pi x+\pi)-1$ with $2\tan(\pi x+\pi)-1$ at the same $x$: how far above or below $-1$ is each output?"
 >}}
 It would be reflected across the line $y=-1$, becoming an increasing function
 It would be reflected across the $x$-axis, becoming an increasing function
@@ -207,7 +209,7 @@ It would be stretched vertically, remaining a decreasing function
 **Example.** Find a formula for the function graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of a stretched tangent function, with vertical asymptotes at x = -4 and x = 4, passing through the marked point (2, 2).","xMin":-8,"xMax":8,"yMin":-6.5,"yMax":6.5,"grid":false,"tickLabels":true,"xTickStep":2,"unit":45,"curves":[{"kind":"tangent","a":2,"b":0.39269908169872414}],"lines":[{"x":4,"dashed":true,"arrows":false},{"x":-4,"dashed":true,"arrows":false}],"points":[{"at":[2,2],"label":"(2, 2)"}]}
+{"ariaLabel":"The graph of a stretched tangent function, with vertical asymptotes at x = -4 and x = 4, passing through the marked point (2, 2).","xMin":-8,"xMax":8,"yMin":-6.5,"yMax":6.5,"grid":false,"tickLabels":true,"xTickStep":2,"unit":45,"curves":[{"kind":"tangent","a":2,"b":0.39269908169872414,"from":-7.4,"to":7.4}],"lines":[{"x":4,"dashed":true,"arrows":false},{"x":-4,"dashed":true,"arrows":false}],"points":[{"at":[2,2],"label":"(2, 2)"}]}
 {{< /apfigure >}}
 
 **Solution.** The graph has the shape of a tangent function.
@@ -227,12 +229,13 @@ This function would have a formula $f(x)=2\tan\left(\tfrac{\pi}{8}x\right)$.
 {{< fillin
   question="Find a formula for the function graphed below."
   answer="4\tan(2x)"
+  answerForm="no-like-terms"
   answerDisplay="$f(x)=4\tan(2x)$"
-  hint="Read the period from the asymptote spacing to find $B=\pi/P$, then use the marked point to find $A$."
+  hint="Read the period $P$ from the asymptote spacing to find $B=\tfrac{\pi}{P}$, then use the marked point to find $A$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of a modified tangent function over several periods, with dashed vertical asymptotes at x = negative 3 pi over 4, negative pi over 4, pi over 4, and 3 pi over 4, passing through the marked point (pi over 8, 4).","xMin":-3.6,"xMax":3.6,"yMin":-10,"yMax":10,"grid":false,"tickLabels":false,"unit":55,"curves":[{"kind":"tangent","a":4,"b":2}],"lines":[{"x":0.7853981633974483,"dashed":true,"arrows":false},{"x":-0.7853981633974483,"dashed":true,"arrows":false},{"x":2.356194490192345,"dashed":true,"arrows":false},{"x":-2.356194490192345,"dashed":true,"arrows":false}],"points":[{"at":[0.39269908169872414,4],"label":"(π/8, 4)"}],"texts":[{"at":[0.7854,-0.9],"text":"π/4"},{"at":[-0.7854,-0.9],"text":"−π/4"},{"at":[2.3562,-0.9],"text":"3π/4"},{"at":[-2.3562,-0.9],"text":"−3π/4"}]}
+{"ariaLabel":"The graph of a modified tangent function over several periods, with y-axis ticks every 5 units, dashed vertical asymptotes at x = negative 3 pi over 4, negative pi over 4, pi over 4, and 3 pi over 4, passing through the marked point (pi over 8, 4).","xMin":-3.5,"xMax":3.5,"yMin":-11,"yMax":11,"grid":false,"tickLabels":"y","yTickStep":5,"xUnit":75,"yUnit":14,"curves":[{"kind":"tangent","a":4,"b":2}],"lines":[{"x":0.7853981633974483,"dashed":true,"arrows":false},{"x":-0.7853981633974483,"dashed":true,"arrows":false},{"x":2.356194490192345,"dashed":true,"arrows":false},{"x":-2.356194490192345,"dashed":true,"arrows":false}],"points":[{"at":[0.39269908169872414,4],"label":"(π/8, 4)"}],"texts":[{"at":[0.7853981633974483,-1.4],"text":"π/4","anchor":"middle"},{"at":[-0.7853981633974483,-1.4],"text":"−π/4","anchor":"middle"},{"at":[2.356194490192345,-1.4],"text":"3π/4","anchor":"middle"},{"at":[-2.356194490192345,-1.4],"text":"−3π/4","anchor":"middle"}]}
 {{< /apfigure >}}
 
 ## Analyzing the Graphs of $y=\sec x$ and $y=\csc x$
@@ -246,7 +249,7 @@ The secant graph has vertical asymptotes at each value of $x$ where the cosine g
 Note that, because cosine is an even function, secant is also an even function. That is, $\sec(-x)=\sec x$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals secant x with the guide graph of y equals cosine x drawn dashed, and dashed vertical asymptotes at odd multiples of pi over two.","xMin":-6.5,"xMax":6.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"secant"},{"kind":"cosine","dashed":true}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false},{"x":-1.5707963267948966,"dashed":true,"arrows":false},{"x":4.71238898038469,"dashed":true,"arrows":false},{"x":-4.71238898038469,"dashed":true,"arrows":false}],"texts":[{"at":[2.4,2.6],"text":"y = sec(x)"},{"at":[-4.1,2.6],"text":"y = cos(x)"}]}
+{"ariaLabel":"The graph of y equals secant x with the guide graph of y equals cosine x drawn dashed, from −2π to 2π, and dashed vertical asymptotes at x = −3π/2, −π/2, π/2, and 3π/2, where the cosine crosses the x-axis.","xMin":-6.6,"xMax":6.6,"yMin":-4,"yMax":4,"grid":false,"tickLabels":"y","yTickStep":2,"unit":44,"curves":[{"kind":"secant","from":-6.283185307179586,"to":-5.0123889803846895,"arrows":"end"},{"kind":"secant","from":-4.41238898038469,"to":-1.8707963267948966},{"kind":"secant","from":-1.2707963267948965,"to":1.2707963267948965},{"kind":"secant","from":1.8707963267948966,"to":4.41238898038469},{"kind":"secant","from":5.0123889803846895,"to":6.283185307179586,"arrows":"start"},{"kind":"cosine","dashed":true,"arrows":false,"from":-6.283185307179586,"to":6.283185307179586}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false},{"x":-1.5707963267948966,"dashed":true,"arrows":false},{"x":4.71238898038469,"dashed":true,"arrows":false},{"x":-4.71238898038469,"dashed":true,"arrows":false}],"segments":[{"from":[-3.05,0.72],"to":[-2.27,-0.6],"arrows":"end"}],"texts":[{"at":[3.141592653589793,-3.85],"text":"y = sec(x)","anchor":"middle"},{"at":[-3.3,1.0],"text":"y = cos(x)","anchor":"middle"},{"at":[3.141592653589793,-0.5],"text":"π","anchor":"middle"},{"at":[-3.141592653589793,-0.5],"text":"−π","anchor":"middle"},{"at":[6.283185307179586,-0.5],"text":"2π","anchor":"middle"},{"at":[-6.283185307179586,-0.5],"text":"−2π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 As we did for the tangent function, we will again refer to the constant $\lvert A\rvert$ as the stretching factor, not the amplitude.
@@ -274,7 +277,7 @@ Note that, since sine is an odd function, the cosecant function is also an odd f
 The graph of cosecant, which is shown below, is similar to the graph of secant.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals cosecant x with the guide graph of y equals sine x drawn dashed, and dashed vertical asymptotes at multiples of pi.","xMin":-6.5,"xMax":6.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cosecant"},{"kind":"sine","dashed":true}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.14159265,"dashed":true,"arrows":false},{"x":-3.14159265,"dashed":true,"arrows":false},{"x":6.2831853,"dashed":true,"arrows":false},{"x":-6.2831853,"dashed":true,"arrows":false}],"texts":[{"at":[4.6,2.6],"text":"y = csc(x)"},{"at":[-2.0,2.6],"text":"y = sin(x)"}]}
+{"ariaLabel":"The graph of y equals cosecant x with the guide graph of y equals sine x drawn dashed, from −2π to 2π, and dashed vertical asymptotes at x = −2π, −π, 0, π, and 2π, where the sine crosses the x-axis.","xMin":-6.6,"xMax":6.6,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"curves":[{"kind":"cosecant","from":-5.983185307179586,"to":-3.441592653589793},{"kind":"cosecant","from":-2.8415926535897933,"to":-0.3},{"kind":"cosecant","from":0.3,"to":2.8415926535897933},{"kind":"cosecant","from":3.441592653589793,"to":5.983185307179586},{"kind":"sine","dashed":true,"arrows":false,"from":-6.283185307179586,"to":6.283185307179586}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.141592653589793,"dashed":true,"arrows":false},{"x":-3.141592653589793,"dashed":true,"arrows":false},{"x":6.283185307179586,"dashed":true,"arrows":false},{"x":-6.283185307179586,"dashed":true,"arrows":false}],"segments":[{"from":[-1.5,1.05],"to":[-0.95,-0.76],"arrows":"end"},{"from":[-0.06,-4],"to":[0.06,-4]},{"from":[-0.06,-2],"to":[0.06,-2]},{"from":[-0.06,2],"to":[0.06,2]},{"from":[-0.06,4],"to":[0.06,4]}],"texts":[{"at":[1.5707963267948966,3.0],"text":"y = csc(x)","anchor":"middle"},{"at":[-1.75,1.3],"text":"y = sin(x)","anchor":"middle"},{"at":[3.141592653589793,-0.8],"text":"π","anchor":"middle"},{"at":[-3.141592653589793,-0.8],"text":"−π","anchor":"middle"},{"at":[-0.12,1.88],"text":"2","anchor":"end"},{"at":[-0.12,3.88],"text":"4","anchor":"end"},{"at":[0.12,-2.12],"text":"−2"},{"at":[0.12,-4.12],"text":"−4"}],"xUnit":50,"yUnit":44}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -290,7 +293,7 @@ The graph of cosecant, which is shown below, is similar to the graph of secant.
 
 ## Graphing Variations of $y=\sec x$ and $y=\csc x$
 
-For shifted, compressed, and/or stretched versions of the secant and cosecant functions, we can follow similar methods to those we used for tangent and cotangent. That is, we locate the vertical asymptotes and also evaluate the functions for a few points (specifically the local extrema). If we want to graph only a single period, we can choose the interval for the period in more than one way. The procedure for secant is very similar, because the cofunction identity means that the secant graph is the same as the cosecant graph shifted half a period to the left. Vertical and phase shifts may be applied to the **cosecant function** in the same way as for the secant and other functions. The equations become the following.
+For shifted, compressed, and/or stretched versions of the secant and cosecant functions, we can follow similar methods to those we used for tangent and cotangent. That is, we locate the vertical asymptotes and also evaluate the functions for a few points (specifically the local extrema). If we want to graph only a single period, we can choose the interval for the period in more than one way. The procedure for secant is very similar, because the cofunction identity means that the secant graph is the same as the cosecant graph shifted a quarter period to the left. Vertical and phase shifts may be applied to the **cosecant function** in the same way as for the secant and other functions. The equations become the following.
 
 $$y=A\sec(Bx-C)+D$$
 
@@ -305,7 +308,7 @@ $$y=A\csc(Bx-C)+D$$
   - The range is $(-\infty,-\lvert A\rvert+D]\cup[\lvert A\rvert+D,\infty)$.
   - The vertical asymptotes occur at $x=\tfrac{C}{B}+\tfrac{\pi}{2\lvert B\rvert}k$, where $k$ is an odd integer.
   - There is no amplitude.
-  - $y=A\sec(Bx-C)+D$ is an even function because cosine is an even function.
+  - With no shifts ($C=0$ and $D=0$), $y=A\sec(Bx)$ is an even function because cosine is an even function.
 {{< /callout >}}
 
 {{< callout type="info" >}}
@@ -317,7 +320,7 @@ $$y=A\csc(Bx-C)+D$$
   - The range is $(-\infty,-\lvert A\rvert+D]\cup[\lvert A\rvert+D,\infty)$.
   - The vertical asymptotes occur at $x=\tfrac{C}{B}+\tfrac{\pi}{\lvert B\rvert}k$, where $k$ is an integer.
   - There is no amplitude.
-  - $y=A\csc(Bx-C)+D$ is an odd function because sine is an odd function.
+  - With no shifts ($C=0$ and $D=0$), $y=A\csc(Bx)$ is an odd function because sine is an odd function.
 {{< /callout >}}
 
 {{< callout type="info" >}}
@@ -342,19 +345,20 @@ $$y=A\csc(Bx-C)+D$$
 
 **Step 4.** Sketch the graph of the function $g(x)=2.5\cos(0.4x)$.
 
-**Step 5.** Use the reciprocal relationship of the cosine and secant functions to draw the cosecant function.
+**Step 5.** Use the reciprocal relationship of the cosine and secant functions to draw the secant function.
 
 **Steps 6–7.** Sketch two asymptotes at $x=1.25\pi$ and $x=3.75\pi$. We can use two reference points, the local minimum at $(0,2.5)$ and the local maximum at $(2.5\pi,-2.5)$. The figure below shows the graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 2.5 secant of 0.4 x over one period, a local minimum at (0, 2.5) and a local maximum at (2.5 pi, -2.5), with dashed vertical asymptotes at x = 1.25 pi and x = 3.75 pi.","xMin":-1.5,"xMax":13.5,"yMin":-7,"yMax":9,"grid":false,"tickLabels":false,"unit":24,"curves":[{"kind":"secant","a":2.5,"b":0.4}],"lines":[{"x":3.9269908169872414,"dashed":true,"arrows":false},{"x":11.780972450961724,"dashed":true,"arrows":false}],"points":[{"at":[0,2.5]},{"at":[7.853981633974483,-2.5]}],"texts":[{"at":[3.927,-1.1],"text":"1.25π"},{"at":[11.781,-1.1],"text":"3.75π"}]}
+{"ariaLabel":"The graph of y equals 2.5 secant of 0.4 x over one period, a local minimum at (0, 2.5) and a local maximum at (2.5π, −2.5), with dashed vertical asymptotes at x = −1.25π, x = 1.25π, and x = 3.75π.","xMin":-5.4,"xMax":13.6,"yMin":-7,"yMax":7,"grid":false,"tickLabels":"y","yTickStep":5,"xUnit":30,"yUnit":24,"curves":[{"kind":"secant","a":2.5,"b":0.4,"from":-3.85,"to":11.7}],"lines":[{"x":-3.9269908169872414,"dashed":true,"arrows":false},{"x":3.9269908169872414,"dashed":true,"arrows":false},{"x":11.780972450961723,"dashed":true,"arrows":false}],"points":[{"at":[0,2.5],"label":"(0, 2.5)"},{"at":[7.853981633974483,-2.5],"label":"(2.5π, −2.5)"}],"texts":[{"at":[3.9269908169872414,-0.75],"text":"1.25π","anchor":"middle"},{"at":[11.780972450961723,-0.75],"text":"3.75π","anchor":"middle"},{"at":[-3.9269908169872414,-0.75],"text":"−1.25π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph one period of $f(x)=-2.5\sec(0.4x)$. What is the value of $f(0)$?"
   answer="-2.5"
+  answerForm="decimal"
   answerDisplay="$-2.5$"
-  hint="This is a vertical reflection of the preceding graph because $A$ is negative, so its local minimum at $x=0$ becomes a local maximum."
+  hint="Substitute $x=0$ and use $\sec\theta=\tfrac{1}{\cos\theta}$."
 >}}
 
 {{< callout type="info" >}}
@@ -405,13 +409,13 @@ $$
 **Step 6.** Sketch the vertical asymptotes, which occur at $x=0$, $x=3$, and $x=6$. There is a local minimum at $(1.5,5)$ and a local maximum at $(4.5,-3)$. The figure below shows the graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 4 secant of pi over 3 x minus pi over 2, plus 1, over one period, a local minimum at (1.5, 5) and a local maximum at (4.5, -3), with dashed vertical asymptotes at x = 0, x = 3, and x = 6.","xMin":-1.5,"xMax":7.5,"yMin":-8,"yMax":10,"grid":false,"tickLabels":true,"xTickStep":1,"unit":48,"curves":[{"kind":"secant","a":4,"b":1.0471975511965976,"h":1.5,"k":1}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3,"dashed":true,"arrows":false},{"x":6,"dashed":true,"arrows":false}],"points":[{"at":[1.5,5]},{"at":[4.5,-3]}]}
+{"ariaLabel":"The graph of y equals 4 secant of pi over 3 x minus pi over 2, plus 1, over one period from x = 0 to x = 6, a local minimum at (1.5, 5) and a local maximum at (4.5, −3), with dashed vertical asymptotes at x = 0, x = 3, and x = 6.","xMin":-0.6,"xMax":6.8,"yMin":-12,"yMax":12,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":5,"xUnit":64,"yUnit":13,"curves":[{"kind":"secant","a":4,"b":1.0471975511965976,"h":1.5,"k":1,"from":0.02,"to":5.98}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3,"dashed":true,"arrows":false},{"x":6,"dashed":true,"arrows":false}],"points":[{"at":[1.5,5],"label":"(1.5, 5)"},{"at":[4.5,-3],"label":"(4.5, −3)"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Graph one period of $f(x)=-6\sec(4x+2)-8$. What is the vertical asymptote of this function nearest to $x=0$?"
-  answer="\pi/8-1/2"
-  answerForm="radians"
+  question="Graph one period of $f(x)=-6\sec(4x+2)-8$. What is the vertical asymptote of this function nearest to $x=0$? Enter the exact $x$-value."
+  answer="\frac{\pi}{8}-\frac{1}{2}"
+  answerForm="radians exact no-like-terms"
   answerDisplay="$\tfrac{\pi}{8}-\tfrac12$"
   hint="Solve $4x+2=\tfrac{\pi}{2}+k\pi$ for $x$, then pick the integer $k$ that lands closest to $0$."
 >}}
@@ -449,23 +453,23 @@ $$
 **Steps 6–7.** Sketch three asymptotes at $x=0$, $x=\tfrac{\pi}{4}$, and $x=\tfrac{\pi}{2}$. We can use two reference points, the local maximum at $\left(\tfrac{\pi}{8},-3\right)$ and the local minimum at $\left(\tfrac{3\pi}{8},3\right)$. The figure below shows the graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals negative 3 cosecant of 4 x, over one period, a local maximum at (pi over 8, -3) and a local minimum at (3 pi over 8, 3), with dashed vertical asymptotes at x = 0, x = pi over 4, and x = pi over 2.","xMin":-0.3,"xMax":1.9,"yMin":-16,"yMax":16,"grid":false,"tickLabels":false,"unit":90,"curves":[{"kind":"cosecant","a":-3,"b":4}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":0.7853981633974483,"dashed":true,"arrows":false},{"x":1.5707963267948966,"dashed":true,"arrows":false}],"points":[{"at":[0.39269908169872414,-3]},{"at":[1.1780972450961724,3]}],"texts":[{"at":[0.785,-1.4],"text":"π/4"},{"at":[1.571,-1.4],"text":"π/2"}]}
+{"ariaLabel":"The graph of y equals negative 3 cosecant of 4 x, over one period, a local maximum at (pi over 8, −3) and a local minimum at (3 pi over 8, 3), with dashed vertical asymptotes at x = 0, x = pi over 4, and x = pi over 2.","xMin":-0.2,"xMax":1.75,"yMin":-11,"yMax":11,"grid":false,"tickLabels":"y","yTickStep":5,"xUnit":280,"yUnit":14,"curves":[{"kind":"cosecant","a":-3,"b":4,"from":0.005,"to":1.5658}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":0.7853981633974483,"dashed":true,"arrows":false},{"x":1.5707963267948966,"dashed":true,"arrows":false}],"points":[{"at":[0.39269908169872414,-3],"label":"(π/8, −3)"},{"at":[1.1780972450961724,3],"label":"(3π/8, 3)"}],"texts":[{"at":[0.39269908169872414,-1.4],"text":"π/8","anchor":"middle"},{"at":[0.7853981633974483,-1.4],"text":"π/4","anchor":"middle"},{"at":[1.1780972450961724,-1.4],"text":"3π/8","anchor":"middle"},{"at":[1.5707963267948966,-1.4],"text":"π/2","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph one period of $f(x)=0.5\csc(2x)$. What is the period of this function?"
   answer="\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\pi$"
   hint="The period of $A\csc(Bx)$ is $\tfrac{2\pi}{\lvert B\rvert}$."
 >}}
 
 {{< fillin
   question="For that same function, $f(x)=0.5\csc(2x)$, what is the smallest positive vertical asymptote?"
-  answer="\pi/2"
-  answerForm="radians"
+  answer="\frac{\pi}{2}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{2}$"
-  hint="The asymptotes of $A\csc(Bx)$ occur at $x=\tfrac{\pi}{\lvert B\rvert}k$; the smallest positive one is half the period."
+  hint="Cosecant is undefined where its sine is $0$: solve $\sin(2x)=0$ for the smallest positive $x$."
 >}}
 
 {{< callout type="info" >}}
@@ -493,10 +497,10 @@ $$
 
 **Step 6.** Sketch the vertical asymptotes, which occur at $x=0$, $x=2$, $x=4$.
 
-The graph for this function is shown below.
+The graph for this function is shown below. The domain is all real numbers $x$ except $x=2k$, where $k$ is an integer, and the range is $(-\infty,-1]\cup[3,\infty)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 2 cosecant of pi over 2 x, plus 1, with the guide graph of y equals 2 sine of pi over 2 x, plus 1, drawn dashed, over one period, local extrema marked by dots, and dashed vertical asymptotes at x = 0, x = 2, and x = 4.","xMin":-4.5,"xMax":4.5,"yMin":-4,"yMax":7,"grid":false,"tickLabels":true,"xTickStep":1,"unit":42,"curves":[{"kind":"cosecant","a":2,"b":1.5707963267948966,"k":1},{"kind":"sine","a":2,"b":1.5707963267948966,"k":1,"dashed":true}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":2,"dashed":true,"arrows":false},{"x":4,"dashed":true,"arrows":false},{"x":-2,"dashed":true,"arrows":false},{"x":-4,"dashed":true,"arrows":false}],"points":[{"at":[1,3]},{"at":[3,-1]},{"at":[-1,-1]},{"at":[-3,3]}]}
+{"ariaLabel":"The graph of y equals 2 cosecant of pi over 2 x, plus 1, with the guide graph of y equals 2 sine of pi over 2 x, plus 1, drawn dashed, from x = −4 to x = 4, dashed vertical asymptotes at x = −4, −2, 0, 2, and 4, and dots at the local minimum (1, 3) and the local maximum (3, −1).","xMin":-4.5,"xMax":4.5,"yMin":-3.6,"yMax":7,"grid":false,"tickLabels":"x","xTickStep":1,"xUnit":55,"yUnit":36,"texts":[{"at":[-0.12,1.88],"text":"2","anchor":"end"},{"at":[-0.12,3.88],"text":"4","anchor":"end"},{"at":[-0.12,5.88],"text":"6","anchor":"end"},{"at":[0.12,-2.12],"text":"−2"}],"curves":[{"kind":"cosecant","a":2,"b":1.5707963267948966,"k":1,"from":-3.99,"to":3.99},{"kind":"sine","a":2,"b":1.5707963267948966,"k":1,"dashed":true,"arrows":false,"from":-4,"to":4}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":2,"dashed":true,"arrows":false},{"x":4,"dashed":true,"arrows":false},{"x":-2,"dashed":true,"arrows":false},{"x":-4,"dashed":true,"arrows":false}],"points":[{"at":[1,3]},{"at":[3,-1]}]}
 {{< /apfigure >}}
 
 **Analysis.** The vertical asymptotes shown on the graph mark off one period of the function, and the local extrema in this interval are shown by dots. Notice how the graph of the transformed cosecant relates to the graph of $f(x)=2\sin\left(\tfrac{\pi}{2}x\right)+1$, shown as the dashed wave.
@@ -504,12 +508,13 @@ The graph for this function is shown below.
 {{< fillin
   question="Given the graph of $f(x)=2\cos\left(\tfrac{\pi}{2}x\right)+1$ shown below, sketch the graph of $g(x)=2\sec\left(\tfrac{\pi}{2}x\right)+1$ on the same axes. What is the smallest positive vertical asymptote of $g$?"
   answer="1"
+  answerForm="decimal"
   answerDisplay="$1$"
   hint="$g$ is undefined exactly where its cosine factor is zero; find the smallest positive $x$ with $\cos\left(\tfrac{\pi}{2}x\right)=0$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) equals 2 cosine of pi over 2 x, plus 1, over two periods.","xMin":-4.5,"xMax":4.5,"yMin":-4,"yMax":4,"grid":true,"tickLabels":true,"xTickStep":1,"yTickStep":1,"unit":42,"curves":[{"kind":"cosine","a":2,"b":1.5707963267948966,"k":1}]}
+{"ariaLabel":"The graph of f(x) equals 2 cosine of pi over 2 x, plus 1, over two periods.","xMin":-4.5,"xMax":4.5,"yMin":-4,"yMax":4,"grid":true,"tickLabels":true,"xTickStep":1,"yTickStep":2,"unit":42,"curves":[{"kind":"cosine","a":2,"b":1.5707963267948966,"k":1}]}
 {{< /apfigure >}}
 
 ## Analyzing the Graph of $y=\cot x$
@@ -521,7 +526,7 @@ We can graph $y=\cot x$ by observing the graph of the tangent function because t
 The cotangent graph has vertical asymptotes at each value of $x$ where $\tan x=0$; we show these in the graph below with dashed lines. Since the cotangent is the reciprocal of the tangent, $\cot x$ has vertical asymptotes at all values of $x$ where $\tan x=0$, and $\cot x=0$ at all values of $x$ where $\tan x$ has its vertical asymptotes.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals cotangent of x over several periods, with dashed vertical asymptotes at multiples of pi.","xMin":-6.9,"xMax":6.9,"yMin":-8,"yMax":9,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cotangent"}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.14159265,"dashed":true,"arrows":false},{"x":-3.14159265,"dashed":true,"arrows":false},{"x":6.2831853,"dashed":true,"arrows":false},{"x":-6.2831853,"dashed":true,"arrows":false}],"texts":[{"at":[4.6,8.5],"text":"f(x) = cot(x)"}]}
+{"ariaLabel":"The graph of y equals cotangent of x over four periods from −2π to 2π, each branch decreasing, with dashed vertical asymptotes at x = −2π, −π, 0, π, and 2π.","xMin":-6.9,"xMax":6.9,"yMin":-7,"yMax":7,"grid":false,"tickLabels":false,"xUnit":42,"yUnit":24,"curves":[{"kind":"cotangent","from":-6.113185307179586,"to":-3.311592653589793},{"kind":"cotangent","from":-2.971592653589793,"to":-0.17},{"kind":"cotangent","from":0.17,"to":2.971592653589793},{"kind":"cotangent","from":3.311592653589793,"to":6.113185307179586}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.141592653589793,"dashed":true,"arrows":false},{"x":-3.141592653589793,"dashed":true,"arrows":false},{"x":6.283185307179586,"dashed":true,"arrows":false},{"x":-6.283185307179586,"dashed":true,"arrows":false}],"texts":[{"at":[3.491592653589793,-6.4],"text":"π"},{"at":[-2.741592653589793,-6.4],"text":"−π"},{"at":[6.633185307179586,-6.4],"text":"2π"},{"at":[-5.833185307179586,-6.4],"text":"−2π"},{"at":[4.75,6.3],"text":"f(x) = cot(x)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -581,10 +586,10 @@ $$y=A\cot(Bx-C)+D$$
 
 **Step 7.** Sketch the asymptotes, $x=0$, $x=\tfrac{\pi}{4}$.
 
-The graph below shows $y=3\tan(4x)$ and $y=3\cot(4x)$ together.
+The graph below shows $y=3\tan(4x)$ (dashed) and $y=3\cot(4x)$ (solid) together.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graphs of y equals 3 tangent of 4x and y equals 3 cotangent of 4x together over one period, with dashed vertical asymptotes at x = negative pi over 4, negative pi over 8, pi over 8, and pi over 4.","xMin":-1.05,"xMax":1.05,"yMin":-8,"yMax":8,"grid":false,"tickLabels":false,"unit":100,"curves":[{"kind":"tangent","a":3,"b":4},{"kind":"cotangent","a":3,"b":4}],"lines":[{"x":0.39269908169872414,"dashed":true,"arrows":false},{"x":-0.39269908169872414,"dashed":true,"arrows":false},{"x":0.7853981633974483,"dashed":true,"arrows":false},{"x":-0.7853981633974483,"dashed":true,"arrows":false}]}
+{"ariaLabel":"The graphs of y equals 3 tangent of 4x, dashed, and y equals 3 cotangent of 4x, solid, together from x = negative pi over 4 to pi over 4, with dashed vertical asymptotes at x = negative pi over 4, negative pi over 8, pi over 8, and pi over 4.","xMin":-0.9,"xMax":1.35,"yMin":-7.5,"yMax":7.5,"grid":false,"tickLabels":false,"xUnit":260,"yUnit":20,"curves":[{"kind":"tangent","a":3,"b":4,"from":-0.7853981633974483,"to":-0.5086109839489257,"arrows":false,"dashed":true},{"kind":"tangent","a":3,"b":4,"from":-0.27678717944852266,"to":0.27678717944852266,"arrows":false,"dashed":true},{"kind":"tangent","a":3,"b":4,"from":0.5086109839489257,"to":0.7853981633974483,"arrows":false,"dashed":true},{"kind":"cotangent","a":3,"b":4,"from":-0.6694862611472467,"to":-0.11591190225020154,"arrows":false},{"kind":"cotangent","a":3,"b":4,"from":0.11591190225020154,"to":0.6694862611472467,"arrows":false}],"lines":[{"x":0.39269908169872414,"dashed":true,"arrows":false},{"x":-0.39269908169872414,"dashed":true,"arrows":false},{"x":0.7853981633974483,"dashed":true,"arrows":false},{"x":-0.7853981633974483,"dashed":true,"arrows":false}],"segments":[{"from":[0.88,5.6],"to":[0.97,5.6],"dashed":true},{"from":[0.88,3.9],"to":[0.97,3.9]}],"texts":[{"at":[0.99,5.35],"text":"y = 3tan(4x)"},{"at":[0.99,3.65],"text":"y = 3cot(4x)"},{"at":[0.39269908169872414,-7.1],"text":"π/8","anchor":"middle"},{"at":[-0.39269908169872414,-7.1],"text":"−π/8","anchor":"middle"},{"at":[0.7853981633974483,-7.1],"text":"π/4","anchor":"middle"},{"at":[-0.7853981633974483,-7.1],"text":"−π/4","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -618,7 +623,7 @@ The graph below shows $y=3\tan(4x)$ and $y=3\cot(4x)$ together.
 The graph is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 4 cotangent of pi over 8 x, minus pi over 2, minus 2, over one period, passing through the points (6, 2), (8, -2), and (10, -6), with dashed vertical asymptotes at x = 4 and x = 12.","xMin":2,"xMax":14,"yMin":-42,"yMax":42,"grid":false,"tickLabels":true,"xTickStep":2,"yTickStep":10,"unit":30,"curves":[{"kind":"cotangent","a":4,"b":0.39269908169872414,"h":4,"k":-2}],"lines":[{"x":4,"dashed":true,"arrows":false},{"x":12,"dashed":true,"arrows":false}],"points":[{"at":[6,2]},{"at":[8,-2]},{"at":[10,-6]}]}
+{"ariaLabel":"The graph of y equals 4 cotangent of pi over 8 x, minus pi over 2, minus 2, over one period, passing through the points (6, 2), (8, −2), and (10, −6), with dashed vertical asymptotes at x = 4 and x = 12.","xMin":0,"xMax":14.5,"yMin":-14,"yMax":14,"grid":false,"tickLabels":true,"xTickStep":2,"yTickStep":5,"xUnit":36,"yUnit":16,"curves":[{"kind":"cotangent","a":4,"b":0.39269908169872414,"h":4,"k":-2,"from":4.02,"to":11.98}],"lines":[{"x":4,"dashed":true,"arrows":false},{"x":12,"dashed":true,"arrows":false}],"points":[{"at":[6,2]},{"at":[8,-2]},{"at":[10,-6]}]}
 {{< /apfigure >}}
 
 ### Using the Graphs of Trigonometric Functions to Solve Real-World Problems
@@ -638,7 +643,7 @@ The period is $\tfrac{\pi}{\tfrac{\pi}{4}}=\tfrac{\pi}{1}\cdot\tfrac{4}{\pi}=4$.
 **b.** To graph the function, we draw an asymptote at $t=2$ and use the stretching factor and period. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 5 tangent of pi over 4 t, on the interval from 0 to 5, with a dashed vertical asymptote at t = 2.","xMin":-0.3,"xMax":5.3,"yMin":-21,"yMax":21,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":5,"unit":60,"curves":[{"kind":"tangent","a":5,"b":0.7853981633974483,"from":0,"to":5}],"lines":[{"x":2,"dashed":true,"arrows":false}]}
+{"ariaLabel":"The graph of y equals 5 tangent of pi over 4 t, on the interval from t = 0 to t = 5, with a dashed vertical asymptote at t = 2.","xMin":-0.4,"xMax":5.4,"yMin":-22,"yMax":22,"grid":false,"tickLabels":true,"xTickStep":1,"yTickStep":5,"xUnit":80,"yUnit":7,"xLabel":"t","curves":[{"kind":"tangent","a":5,"b":0.7853981633974483,"from":0,"to":1.99,"arrows":"end"},{"kind":"tangent","a":5,"b":0.7853981633974483,"from":2.01,"to":5,"arrows":"start"}],"lines":[{"x":2,"dashed":true,"arrows":false}],"texts":[{"at":[1.55,-18],"text":"t = 2","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **c.** $f(1)=5\tan\left(\tfrac{\pi}{4}(1)\right)=5(1)=5$; after $1$ second, the beam has moved $5$ ft from the spot across from the police car.
@@ -658,7 +663,7 @@ The period is $\tfrac{\pi}{\tfrac{\pi}{4}}=\tfrac{\pi}{1}\cdot\tfrac{4}{\pi}=4$.
 - The secant and cosecant are both periodic functions with a period of $2\pi$. $f(x)=A\sec(Bx-C)+D$ gives a shifted, compressed, and/or stretched secant function graph.
 - $f(x)=A\csc(Bx-C)+D$ gives a shifted, compressed, and/or stretched cosecant function graph.
 - The cotangent function has period $\pi$ and vertical asymptotes at $0,\pm\pi,\pm2\pi,\dots$
-- The range of cotangent is $(-\infty,\infty)$, and the function is decreasing at each point in its range.
+- The range of cotangent is $(-\infty,\infty)$, and the function is decreasing at each point in its domain.
 - The cotangent is zero at $\pm\tfrac{\pi}{2},\pm\tfrac{3\pi}{2},\dots$
 - $f(x)=A\cot(Bx-C)+D$ is a cotangent with vertical and/or horizontal stretch/compression and shift.
 - Real-world scenarios can be solved using graphs of trigonometric functions.
@@ -670,14 +675,15 @@ The period is $\tfrac{\pi}{\tfrac{\pi}{4}}=\tfrac{\pi}{1}\cdot\tfrac{4}{\pi}=4$.
 {{< fillin
   question="If $\tan x=-1.5$, find $\tan(-x)$."
   answer="1.5"
+  answerForm="decimal"
   answerDisplay="$1.5$"
-  hint="Tangent is an odd function: $\tan(-x)=-\tan x$."
+  hint="Is tangent an even or an odd function? Apply that property to $\tan(-x)$."
 >}}
 
 {{< multiplechoice
   question="The identity $\tan(x+\pi)=\tan x$ holds for every real number $x$. What does this identity establish about the graph of $y=\tan x$?"
   answer="Its period is $\pi$"
-  hint="A function's period is the smallest positive shift that maps its graph back onto itself."
+  hint="Read the identity as a statement about the graph: what happens to the output when the input moves $\pi$ units to the right?"
 >}}
 Its period is $\pi$
 Its amplitude is $\pi$
@@ -689,15 +695,16 @@ Its domain excludes $\pi$
 
 {{< fillin
   question="What is the period of $f(x)=2\tan(4x-32)$?"
-  answer="\pi/4"
-  answerForm="radians"
+  answer="\frac{\pi}{4}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{4}$"
-  hint="The period of $A\tan(Bx-C)$ is $\tfrac{\pi}{\lvert B\rvert}$; here $B=4$."
+  hint="The period of $A\tan(Bx-C)$ is $\tfrac{\pi}{\lvert B\rvert}$; the shift $C$ does not change it."
 >}}
 
 {{< fillin
   question="A tangent curve has stretching factor $A=1$, period $\tfrac{\pi}{3}$, and phase shift $(h,k)=\left(\tfrac{\pi}{4},2\right)$. Write its equation in the form $y=A\tan(B(x-h))+k$."
-  answer="\tan(3(x-\pi/4))+2"
+  answer="\tan(3(x-\frac{\pi}{4}))+2"
+  answerForm="no-like-terms"
   answerDisplay="$y=\tan\left(3\left(x-\tfrac{\pi}{4}\right)\right)+2$"
   hint="Since $P=\tfrac{\pi}{3}$ and $P=\tfrac{\pi}{\lvert B\rvert}$, solve for $B$ first; the shift $(h,k)$ then plugs straight into the general form."
 >}}
@@ -707,16 +714,17 @@ Its domain excludes $\pi$
 {{< fillin
   question="If $\csc x=-5$, find $\csc(-x)$."
   answer="5"
+  answerForm="decimal"
   answerDisplay="$5$"
-  hint="Cosecant is an odd function: $\csc(-x)=-\csc x$."
+  hint="Is cosecant an even or an odd function? It inherits the property from sine."
 >}}
 
 {{< fillin
   question="What is the period of $y=\csc x$?"
   answer="2\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$2\pi$"
-  hint="Cosecant shares its period with sine."
+  hint="Use the reciprocal identity $\csc x=\tfrac{1}{\sin x}$: the reciprocal repeats exactly when $\sin x$ does."
 >}}
 
 ### Graph variations of $y=\sec x$ and $y=\csc x$
@@ -724,16 +732,17 @@ Its domain excludes $\pi$
 {{< fillin
   question="What is the period of $m(x)=6\csc\left(\tfrac{\pi}{3}x+\pi\right)$?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="$6$"
-  hint="The period of $A\csc(Bx-C)$ is $\tfrac{2\pi}{\lvert B\rvert}$; here $B=\tfrac{\pi}{3}$."
+  hint="The period of $A\csc(Bx-C)$ is $\tfrac{2\pi}{\lvert B\rvert}$; the shift $C$ does not change it."
 >}}
 
 {{< fillin
   question="What is the smallest positive vertical asymptote of $f(x)=4\sec(3x)$?"
-  answer="\pi/6"
-  answerForm="radians"
+  answer="\frac{\pi}{6}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{6}$"
-  hint="The asymptotes of $A\sec(Bx)$ occur at $x=\tfrac{\pi}{2\lvert B\rvert}k$ for odd $k$; the smallest positive one has $k=1$."
+  hint="Secant is undefined where its cosine is $0$: solve $\cos(3x)=0$ for the smallest positive $x$."
 >}}
 
 ### Analyze the graph of $y=\cot x$
@@ -742,15 +751,15 @@ Its domain excludes $\pi$
   question="Which graph shows $f(x)=\cot x$?"
   mode="graph"
   answerIndex="2"
-  hint="Cotangent is decreasing through every period, crossing the $x$-axis midway between consecutive asymptotes."
+  hint="Use $\cot x=\tfrac{\cos x}{\sin x}$: where is cotangent undefined, where is it zero, and what is its sign just to the right of $x=0$?"
 >}}
-{"ariaLabel":"Graph I: a repeating curve rising from lower left to upper right through the origin, with dashed vertical asymptotes at x = negative pi over 2 and x = pi over 2.","xMin":-2.4,"xMax":2.4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":60,"curves":[{"kind":"tangent"}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false},{"x":-1.5707963267948966,"dashed":true,"arrows":false}]}
+{"ariaLabel":"Graph I: a repeating curve rising from lower left to upper right through the origin, with two dashed vertical asymptotes placed symmetrically on either side of the y-axis.","xMin":-2.4,"xMax":2.4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":60,"curves":[{"kind":"tangent"}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false},{"x":-1.5707963267948966,"dashed":true,"arrows":false}]}
 ===OPT===
-{"ariaLabel":"Graph II: U-shaped and dome-shaped branches opening away from the x-axis, with a dashed vertical asymptote at x = pi.","xMin":-6.5,"xMax":6.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cosecant"}],"lines":[{"x":3.14159265,"dashed":true,"arrows":false}]}
+{"ariaLabel":"Graph II: U-shaped and dome-shaped branches opening away from the x-axis, none of them crossing the y-axis, with one dashed vertical asymptote drawn to the right of the y-axis.","xMin":-6.5,"xMax":6.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cosecant","from":-5.983185307179586,"to":-3.441592653589793},{"kind":"cosecant","from":-2.8415926535897933,"to":-0.3},{"kind":"cosecant","from":0.3,"to":2.8415926535897933},{"kind":"cosecant","from":3.441592653589793,"to":5.983185307179586}],"lines":[{"x":3.14159265,"dashed":true,"arrows":false}]}
 ===OPT===
-{"ariaLabel":"Graph III: repeating decreasing branches crossing the x-axis, with dashed vertical asymptotes at x = 0 and x = pi.","xMin":-1,"xMax":6.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":60,"curves":[{"kind":"cotangent"}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.14159265,"dashed":true,"arrows":false}]}
+{"ariaLabel":"Graph III: repeating decreasing branches crossing the x-axis, with dashed vertical asymptotes along the y-axis and to its right.","xMin":-1,"xMax":6.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":60,"curves":[{"kind":"cotangent","from":-1,"to":-0.3},{"kind":"cotangent","from":0.3,"to":2.8415926535897933},{"kind":"cotangent","from":3.441592653589793,"to":5.983185307179586}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.14159265,"dashed":true,"arrows":false}]}
 ===OPT===
-{"ariaLabel":"Graph IV: U-shaped and dome-shaped branches opening away from the x-axis, with a dashed vertical asymptote at x = pi over 2.","xMin":-3.5,"xMax":3.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":66,"curves":[{"kind":"secant"}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false}]}
+{"ariaLabel":"Graph IV: U-shaped and dome-shaped branches opening away from the x-axis, one U centred on the y-axis, with one dashed vertical asymptote drawn just to the right of that U.","xMin":-3.5,"xMax":3.5,"yMin":-4,"yMax":4,"grid":false,"tickLabels":false,"unit":66,"curves":[{"kind":"secant"}],"lines":[{"x":1.5707963267948966,"dashed":true,"arrows":false}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -766,27 +775,22 @@ $\cot x\cos x-\sin x$
 
 ### Graph variations of $y=\cot x$
 
-A graphing calculator exercise asks for two periods of $f(x)=\lvert\cot x\rvert$, shown below.
-
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals the absolute value of cotangent x, folded above the x-axis, over one period from 0 to pi, with vertical asymptotes at x = 0 and x = pi.","xMin":-0.3,"xMax":3.45,"yMin":-1,"yMax":6,"grid":false,"tickLabels":false,"unit":100,"curves":[{"kind":"cotangent","a":1,"from":0.06,"to":1.5707963267948966,"arrows":"start"},{"kind":"cotangent","a":-1,"from":1.5707963267948966,"to":3.08,"arrows":"end"}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.14159265,"dashed":true,"arrows":false}]}
-{{< /apfigure >}}
-
 {{< fillin
   question="What is the range of $f(x)=\lvert\cot x\rvert$? Write your answer in interval notation."
   answer="[0,\infty)"
+  answerForm="decimal"
   answerDisplay="$[0,\infty)$"
-  hint="Taking an absolute value folds every negative output up to positive; cotangent itself already reaches every real value."
+  hint="Start from the range of $\cot x$, then ask what the absolute value does to each of those outputs."
 >}}
 
 {{< fillin
-  question="What is the vertical asymptote of that same function, $f(x)=\lvert\cot x\rvert$, closest to (but greater than) $x=0$?"
+  question="What is the smallest positive $x$ at which $f(x)=\lvert\cot x\rvert$ has a vertical asymptote?"
   answer="\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\pi$"
   hint="An absolute value does not remove where the inside function is undefined."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 6.2: Graphs of the Other Trigonometric Functions](https://openstax.org/books/precalculus-2e/pages/6-2-graphs-of-the-other-trigonometric-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all seventeen instructional figures as accessible spec-first SVGs built from the exact equation each one draws — the one-period tangent graph with its three reference points and two dashed asymptotes; the compressed-tangent Example 1 graph; the shifted-tangent Example 2 graph; the stretched-tangent Example 3 graph and its Try It companion (with the graph's own marked reference point recreated so the exercise stays derivable from the figure alone, as the worked example's own point is); the secant-with-dashed-cosine-guide overview and its Features callout; the cosecant-with-dashed-sine-guide overview; the secant Examples 4 and 5 with their local extrema and dashed asymptotes; the given-cosine Try It figure of Example 7 together with the transformed-cosecant graph and its dashed sine guide; the cosecant Example 6 graph; the cotangent overview graph; the paired tangent/cotangent Example 8 graph; the shifted-cotangent Example 9 graph; and the real-world tangent graph of Example 10. Omitted Example 10's separate annotated-formula panel (arrows pointing to the letters $A$ and $B$ inside the printed equation), which carries no mathematics beyond what the equation itself already states, and omitted the "Access these online resources" media links. Converted every retained "Try It" into an interactive component: because this section's curves have vertical asymptotes at multiples of $\pi$ — off the `graphplot` snap lattice — no Try It or Practice item was authored as a drawn `graphplot`; instead, each "sketch/graph" Try It keeps its instruction and adds a `fillin` on one of the curve's own features (period, an asymptote in a stated window, or a function value), matching the section's own graphplot-ledger disposition for this class of prompt. The one Try It with no printed or derivable numeric answer in the CNXML (Graph one period of $f(x)=-6\sec(4x+2)-8$, whose key is only an approximately-labelled image) was kept and given an independently exact asymptote answer, $\tfrac{\pi}{8}-\tfrac12$, solved directly from $4x+2=\tfrac{\pi}{2}+k\pi$ rather than read off the approximate figure. The rewrite-with-positive-argument Try It (originally a fill-in candidate) is authored as a `multiplechoice`: retyping the printed subject, $\cot(-x)\cos(-x)+\sin(-x)$, is value-equal to the simplified answer and grades `correct` against it with no available `answerForm` to block that retype, so the component was changed to keep the exercise honestly gradable. One recognition `multiplechoice` (`mode="graph"`) is authored for the whole section, matching the corpus's one-per-section convention for a page with no `graphplot`: it recreates the source's own four-graph matching figure (Graphs I–IV) as spec options, with option `ariaLabel`s describing only what is drawn. Adapted eleven selected end-of-section exercises — two evaluate-the-transformed-function items (tangent, cosecant, using their odd-function property), one conceptual period fact recast as multiple choice to avoid a retype hazard (the source's own printed identity contains the numeral answer), two period/asymptote extraction items each for the tangent and secant/cosecant families, the source's own sec/csc/cot graph-matching exercise (recast as the section's graph-recognition multiple choice), the cot-parity rewrite exercise (recast as multiple choice for the same retype-hazard reason described above), and the Technology section's $f(x)=\lvert\cot x\rvert$ graphing-calculator exercise, whose only printed answer content is its alt text ("Range is $0$ to $\infty$") — split into two fill-ins (range and nearest positive asymptote) since no other end-of-section cotangent-*variation* exercise in this module carries a printed or derivable answer, into a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 6.2: Graphs of the Other Trigonometric Functions](https://openstax.org/books/precalculus-2e/pages/6-2-graphs-of-the-other-trigonometric-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated sixteen instructional figures as accessible spec-first SVGs built from the exact equation each one draws — the tangent graph over three periods with the special-angle points of the table above it and its two dashed asymptotes; the compressed-tangent Example 1 graph; the shifted-tangent Example 2 graph; the stretched-tangent Example 3 graph and its Try It companion (to which the page adds the marked point $\left(\tfrac{\pi}{8},4\right)$, so the stretch can be read from the figure as the worked example's point $(2,2)$ is); the secant overview with its dashed cosine guide; the cosecant overview with its dashed sine guide; the secant Examples 4 and 5 with their local extrema and dashed asymptotes; the cosecant Example 6 graph; the transformed-cosecant Example 7 graph with its dashed sine guide, whose dots mark the extrema $(1,3)$ and $(3,-1)$ of the period from $0$ to $4$ that Step 6 names (the source dots $(-1,-1)$ and $(1,3)$); the given-cosine Try It figure; the cotangent overview graph; the paired tangent/cotangent Example 8 graph, drawn with the tangent dashed and the cotangent solid where the source uses two colours; the shifted-cotangent Example 9 graph; and the real-world tangent graph of Example 10, drawn without arrowheads at the ends of its interval $[0,5]$. Omitted Example 10's separate annotated-formula panel (arrows pointing to the letters $A$ and $B$ inside the printed equation), which carries no mathematics beyond what the equation itself already states, the "Access these online resources" media links, and the answer graph of the $f(x)=\lvert\cot x\rvert$ exercise, whose range and asymptote the Practice block asks. Corrected six source statements: the tangent Features list gives the domain of $y=A\tan(Bx-C)+D$ as $x\ne\tfrac{C}{B}+\tfrac{\pi}{2\lvert B\rvert}k$ for odd $k$ (the source says any integer $k$, which would exclude $x=\tfrac{C}{B}$); the secant graph is the cosecant graph shifted a quarter period to the left (the source says half a period); the even/odd bullets of the shifted secant and cosecant Features lists are stated for $C=0$ and $D=0$ (the source claims $y=A\sec(Bx-C)+D$ is even and $y=A\csc(Bx-C)+D$ odd for every shift); Example 4's Step 5 draws the secant function (the source says cosecant); Example 7, which asks for the domain and range, now states them (the source's solution never does); and the Key Concepts say cotangent is decreasing at each point in its domain (the source says range). Example 10's part ⓒ drops a stray "period:" label and reads "the beam has moved" (the source: "the beam of has moved"). Converted every retained "Try It" into an interactive component: because this section's curves have vertical asymptotes at multiples of $\pi$ — off the `graphplot` snap lattice — no Try It or Practice item was authored as a drawn `graphplot`; instead, each "sketch/graph" Try It keeps its instruction and adds a `fillin` on one of the curve's own features (period, an asymptote, or a function value). The source prints no answer for the Try It "Graph one period of $f(x)=-6\sec(4x+2)-8$"; the page asks for its exact asymptote nearest $x=0$, $\tfrac{\pi}{8}-\tfrac12$, solved from $4x+2=\tfrac{\pi}{2}+k\pi$. Adapted eleven selected end-of-section exercises into a closing Practice block, one group per objective: two evaluate-the-transformed-function items (tangent, cosecant); the Verbal "explain why the period of $\tan x$ is $\pi$" recast as a multiple choice on what the identity $\tan(x+\pi)=\tan x$ establishes; the period of $f(x)=2\tan(4x-32)$; the tangent curve with $A=1$, period $\tfrac{\pi}{3}$, and phase shift $\left(\tfrac{\pi}{4},2\right)$, written as an equation; the period of $y=\csc x$; the period of $m(x)=6\csc\left(\tfrac{\pi}{3}x+\pi\right)$; the smallest positive asymptote of $f(x)=4\sec(3x)$; the source's graph-matching exercise, recreated as a graph multiple choice on $f(x)=\cot x$ (Graphs I–IV, option descriptions saying only what is drawn); the rewrite-$\cot(-x)\cos(-x)+\sin(-x)$-with-positive-arguments exercise, kept as a multiple choice because the retyped expression grades equal to its rewrite and no answer form refuses it; and the Technology exercise $f(x)=\lvert\cot x\rvert$, whose only printed answer is its graph's alt text ("Range is $0$ to infinity"), split into two fill-ins (its range and its smallest positive asymptote).</small>

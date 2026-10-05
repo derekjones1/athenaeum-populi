@@ -48,7 +48,7 @@ $\overrightarrow{EF}$. Angles can be named using a point on each ray and the
 vertex, such as angle *DEF*, or in symbol form $\angle DEF$.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Angle DEF: two rays from vertex E, one through point D and one through point F.","unit":50,"segments":[{"from":[0,0],"to":[0.9,4.9],"arrow":true},{"from":[0,0],"to":[5.3,0.9],"arrow":true}],"points":[{"at":[0,0],"label":"E"},{"at":[0.63,3.43],"label":"D"},{"at":[4.3,0.73],"label":"F"}]}
+{"ariaLabel":"Angle DEF: two rays from vertex E, one through point D and one through point F.","unit":50,"segments":[{"from":[0,0],"to":[0.9,4.9],"arrow":true},{"from":[0,0],"to":[5.3,0.9],"arrow":true}],"points":[{"at":[0,0]},{"at":[0.63,3.43]},{"at":[4.3,0.73],"label":"F"}],"texts":[{"at":[0.45,3.33],"text":"D","anchor":"end"},{"at":[-0.15,-0.15],"text":"E","anchor":"end"}]}
 {{< /apfigure >}}
 
 Greek letters are often used as variables for the measure of an angle. The
@@ -70,7 +70,7 @@ In order to identify the different sides, we indicate the rotation with a
 small arc and arrow close to the vertex, as below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An angle with its vertex, initial side, and terminal side labeled.","unit":45,"segments":[{"from":[0,0],"to":[3.4,0],"arrow":true},{"from":[0,0],"to":[1.6,3.6],"arrow":true}],"texts":[{"at":[0.5,-0.5],"text":"Vertex"},{"at":[1.9,-0.35],"text":"Initial side"},{"at":[-0.75,3.0],"text":"Terminal side"}]}
+{"ariaLabel":"An angle with its vertex, initial side, and terminal side labeled; a small arc with an arrow near the vertex shows the rotation from the initial side to the terminal side.","unit":45,"segments":[{"from":[0,0],"to":[3.4,0],"arrow":true},{"from":[0,0],"to":[1.6,3.6],"arrow":true},{"from":[0.6094,0.9753],"to":[0.486,1.0423],"arrow":true}],"texts":[{"at":[-0.15,-0.1],"text":"Vertex","anchor":"end"},{"at":[1.6,-0.35],"text":"Initial side"},{"at":[-0.75,3.0],"text":"Terminal side"}],"circles":[{"at":[0,0],"r":1.15,"from":0,"to":58.0}]}
 {{< /apfigure >}}
 
 As we discussed at the beginning of the section, there are many
@@ -90,7 +90,7 @@ if its vertex is located at the origin, and its initial side extends along
 the positive $x$-axis. See below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An angle in standard position: the vertex is at the origin, the initial side lies along the positive x-axis, and the terminal side extends into the second quadrant. A dashed arc marks the counterclockwise rotation from the initial side to the terminal side.","xMin":-3.2,"xMax":3.2,"yMin":-1,"yMax":2.2,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[3,0],"arrows":"end"},{"from":[0,0],"to":[-2.078,1.2],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.1,"from":0,"to":150,"dashed":true}],"texts":[{"at":[-2.6,1.55],"text":"Terminal side"},{"at":[1.5,-0.35],"text":"Initial side"}]}
+{"ariaLabel":"An angle in standard position: the vertex is at the origin, the initial side lies along the positive x-axis, and the terminal side extends into the second quadrant. An arc with an arrow marks the counterclockwise rotation from the initial side to the terminal side.","xMin":-3.2,"xMax":3.2,"yMin":-1,"yMax":2.2,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[2.4,0],"arrows":"end"},{"from":[0,0],"to":[-2.078,1.2],"arrows":"end"},{"from":[-0.7913,0.7641],"to":[-0.9526,0.55],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.1,"from":0,"to":150}],"texts":[{"at":[-2.6,1.55],"text":"Terminal side"},{"at":[0.65,-0.4],"text":"Initial side"}]}
 {{< /apfigure >}}
 
 If the angle is measured in a counterclockwise direction from the initial
@@ -111,11 +111,11 @@ counterclockwise from the positive $x$-axis. In this case, the initial side
 and the terminal side overlap. See below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a): drawing a 90 degree angle in standard position. The terminal side points straight up along the positive y-axis; a labeled arc sweeps from the positive x-axis, the initial side, to the terminal side.","xMin":-3,"xMax":3,"yMin":-1,"yMax":3.2,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[0,2.4],"arrows":"end"}],"circles":[{"at":[0,0],"r":1,"from":0,"to":90}],"texts":[{"at":[0.3,1.05],"text":"90°"}]}
+{"ariaLabel":"Panel (a): drawing a 90 degree angle in standard position. The terminal side points straight up along the positive y-axis; an arc with an arrow sweeps counterclockwise from the initial side on the positive x-axis to the terminal side.","xMin":-3,"xMax":3.2,"yMin":-1,"yMax":3.2,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[0,2.4],"arrows":"end"},{"from":[0.2419,0.9703],"to":[0.0,1.0],"arrows":"end"},{"from":[0,0],"to":[2.2,0],"arrows":"end"}],"circles":[{"at":[0,0],"r":1,"from":0,"to":90}],"texts":[{"at":[0.813,0.813],"text":"90°"},{"at":[1.1,-0.4],"text":"Initial side"},{"at":[-0.15,1.9],"text":"Terminal side","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b): drawing a 360 degree angle in standard position. The terminal side overlaps the initial side along the positive x-axis after one complete counterclockwise rotation, shown as a full circle.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"grid":false,"tickLabels":false,"unit":38,"segments":[{"from":[0,0],"to":[2.4,0],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.6}],"texts":[{"at":[0.55,1.55],"text":"360°"}]}
+{"ariaLabel":"Panel (b): drawing a 360 degree angle in standard position. An arc with an arrow makes one complete counterclockwise rotation, so the terminal side ends on the initial side along the positive x-axis.","xMin":-3,"xMax":4.4,"yMin":-3,"yMax":3,"grid":false,"tickLabels":false,"unit":38,"segments":[{"from":[0,0],"to":[2.2,0],"arrows":"end"},{"from":[1.538,-0.441],"to":[1.6,-0.0],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.6,"from":0,"to":358}],"texts":[{"at":[1.157,1.379],"text":"360°"},{"at":[2.3,0.2],"text":"Initial side"},{"at":[2.3,-0.6],"text":"Terminal side"}]}
 {{< /apfigure >}}
 
 Since we define an angle in standard position by its initial side, we have
@@ -128,15 +128,15 @@ a special type of angle whose terminal side lies on an axis, a
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Quadrantal angle of 90 degrees: the terminal side lies along the positive y-axis.","xMin":-2.2,"xMax":2.2,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":45,"segments":[{"from":[0,0],"to":[0,1.6],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":90}],"texts":[{"at":[0.32,0.75],"text":"90°"}]}
+{"ariaLabel":"Quadrantal angle of 90 degrees: the terminal side lies along the positive y-axis.","xMin":-2.2,"xMax":2.2,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":45,"segments":[{"from":[0,0],"to":[0,1.6],"arrows":"end"},{"from":[0.2177,0.8733],"to":[0.0,0.9],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":90}],"texts":[{"at":[1.0,0.45],"text":"90°"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Quadrantal angle of 180 degrees: the terminal side lies along the negative x-axis.","xMin":-2.2,"xMax":2.2,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":45,"segments":[{"from":[0,0],"to":[-1.6,0],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":180}],"texts":[{"at":[-0.75,0.62],"text":"180°"}]}
+{"ariaLabel":"Quadrantal angle of 180 degrees: the terminal side lies along the negative x-axis.","xMin":-2.2,"xMax":2.2,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":45,"segments":[{"from":[0,0],"to":[-1.6,0],"arrows":"end"},{"from":[-0.8733,0.2177],"to":[-0.9,0.0],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":180}],"texts":[{"at":[1.0,0.45],"text":"180°"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Quadrantal angle of 270 degrees: the terminal side lies along the negative y-axis, reached by a large counterclockwise sweep.","xMin":-2.2,"xMax":2.2,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":45,"segments":[{"from":[0,0],"to":[0,-1.6],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":270}],"texts":[{"at":[0.62,-0.62],"text":"270°"}]}
+{"ariaLabel":"Quadrantal angle of 270 degrees: the terminal side lies along the negative y-axis, reached by a large counterclockwise sweep.","xMin":-2.2,"xMax":2.2,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":45,"segments":[{"from":[0,0],"to":[0,-1.6],"arrows":"end"},{"from":[-0.2177,-0.8733],"to":[-0.0,-0.9],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":270}],"texts":[{"at":[1.0,0.45],"text":"270°"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -174,7 +174,7 @@ angle of $-135^\circ$ in standard position.
    rotation into thirds, we can sketch a line at 30° as below.
 
    {{< apfigure kind="graph" >}}
-   {"ariaLabel":"An angle of 30 degrees in standard position, shown by dividing a right-angle quarter turn into thirds; a dashed ray at 60 degrees marks the other division point, so the quarter turn is cut into three equal 30-degree parts.","xMin":-2.5,"xMax":2.5,"yMin":-1,"yMax":2.5,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[1.732,1],"arrows":"end"},{"from":[0,0],"to":[1,1.732],"dashed":true}],"circles":[{"at":[0,0],"r":0.8,"from":0,"to":30}],"texts":[{"at":[0.338,0.0906],"text":"30°"}]}
+   {"ariaLabel":"An angle of 30 degrees in standard position, shown by dividing a right-angle quarter turn into thirds; a dashed ray at 60 degrees marks the other division point, so the quarter turn is cut into three equal 30-degree parts. An arc with an arrow marks the counterclockwise rotation.","xMin":-2.5,"xMax":2.5,"yMin":-1,"yMax":2.5,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[1.732,1],"arrows":"end"},{"from":[0,0],"to":[1,1.732],"dashed":true},{"from":[0.7518,0.2736],"to":[0.6928,0.4],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.8,"from":0,"to":30}],"texts":[{"at":[0.966,0.259],"text":"30°"}]}
    {{< /apfigure >}}
 
 2. Divide the angle measure by 360°.
@@ -190,13 +190,13 @@ angle of $-135^\circ$ in standard position.
    quarter, as below.
 
    {{< apfigure kind="graph" >}}
-   {"ariaLabel":"An angle of negative 135 degrees in standard position, with the terminal side in the third quadrant and a clockwise arc from the positive x-axis.","xMin":-2.5,"xMax":2.5,"yMin":-2.5,"yMax":1,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[-1.414,-1.414],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.8,"from":225,"to":360}],"texts":[{"at":[0.078,-0.443],"text":"-135°"}]}
+   {"ariaLabel":"An angle of negative 135 degrees in standard position, with the terminal side in the third quadrant and an arc with an arrow sweeping clockwise from the positive x-axis.","xMin":-2.5,"xMax":2.5,"yMin":-2.5,"yMax":1,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[-1.414,-1.414],"arrows":"end"},{"from":[-0.412,-0.6857],"to":[-0.5657,-0.5657],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.8,"from":225,"to":360}],"texts":[{"at":[0.5,-1.055],"text":"−135°"}]}
    {{< /apfigure >}}
 
 {{< multiplechoice
   question="In which quadrant does the terminal side of an angle of $240^\circ$ in standard position lie?"
   answer="Quadrant III"
-  hint="$240^\circ$ is more than $180^\circ$ but less than $270^\circ$."
+  hint="Compare the angle with the quadrantal angles $90^\circ$, $180^\circ$, $270^\circ$, and $360^\circ$, which bound the quadrants."
 >}}
 Quadrant I
 Quadrant II
@@ -225,7 +225,7 @@ would be room for six full string-lengths and a little more than a
 quarter of a seventh, as shown below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A circle with a radius drawn from the center, and six points marked around the rim, each one radius-length farther along the circumference than the last. A seventh, unlabeled gap remains between the sixth point and the start, a little more than a quarter of a full radius-length.","unit":100,"circles":[{"at":[0,0],"r":1.3}],"segments":[{"from":[0,0],"to":[1.126,-0.65]}],"points":[{"at":[1.155,0.596]},{"at":[0.123,1.294]},{"at":[-1.023,0.802]},{"at":[-1.228,-0.427]},{"at":[-0.304,-1.264]},{"at":[0.899,-0.939]}],"texts":[{"at":[1.377,0.711],"text":"1"},{"at":[0.146,1.543],"text":"2"},{"at":[-1.22,0.957],"text":"3"},{"at":[-1.464,-0.509],"text":"4"},{"at":[-0.362,-1.507],"text":"5"},{"at":[1.072,-1.119],"text":"6"},{"at":[1.55,-1.22],"text":"Fractional piece"}]}
+{"ariaLabel":"A circle with a radius drawn from the center, and six points marked around the rim, each one radius-length farther along the circumference than the last. A seventh, unlabeled gap remains between the sixth point and the start, a little more than a quarter of a full radius-length.","unit":100,"circles":[{"at":[0,0],"r":1.3}],"segments":[{"from":[0,0],"to":[1.126,-0.65]}],"points":[{"at":[1.155,0.596]},{"at":[0.123,1.294]},{"at":[-1.023,0.802]},{"at":[-1.228,-0.427]},{"at":[-0.304,-1.264]},{"at":[0.899,-0.939]}],"texts":[{"at":[1.377,0.711],"text":"1"},{"at":[0.146,1.543],"text":"2"},{"at":[-1.22,0.957],"text":"3"},{"at":[-1.464,-0.509],"text":"4"},{"at":[-0.362,-1.507],"text":"5"},{"at":[1.072,-1.119],"text":"6"},{"at":[1.22,-0.84],"text":"Fractional piece"}]}
 {{< /apfigure >}}
 
 This brings us to our new angle measure. One **radian** is the measure of
@@ -249,7 +249,7 @@ quotient of a length (circumference) divided by a length (radius) and the
 length units cancel out.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A circle of radius r with a radian angle t swept from the positive x-axis. The intercepted arc between the two radii has the same length as the radius r.","xMin":-1.5,"xMax":1.5,"yMin":-0.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":110,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.5403,0.8415]}],"texts":[{"at":[0.62,-0.13],"text":"r"},{"at":[0.14,0.55],"text":"r"},{"at":[0.28,0.14],"text":"t"}]}
+{"ariaLabel":"A circle of radius r with a radian angle t swept counterclockwise from the positive x-axis. The intercepted arc between the two radii is labeled r: it has the same length as the radius.","xMin":-1.5,"xMax":1.5,"yMin":-1.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":110,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":0.3,"from":0,"to":57.3}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.5403,0.8415]},{"from":[0.2386,0.1818],"to":[0.1621,0.2525],"arrows":"end"}],"texts":[{"at":[0.45,-0.2],"text":"r"},{"at":[0.12,0.5],"text":"r","anchor":"end"},{"at":[0.966,0.527],"text":"r"},{"at":[0.36,0.12],"text":"t"}]}
 {{< /apfigure >}}
 
 ## Relating Arc Lengths to Radius
@@ -274,15 +274,15 @@ $$
 If $s=r$, then $\theta=\tfrac{r}{r}=\text{1 radian}$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a): in an angle of 1 radian, the arc length s equals the radius r.","xMin":-1.5,"xMax":1.5,"yMin":-0.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":90,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.5403,0.8415]}],"texts":[{"at":[0.62,-0.14],"text":"r"},{"at":[0.62,0.75],"text":"s"},{"at":[0.28,0.16],"text":"1 radian"}]}
+{"ariaLabel":"Panel (a): in an angle of 1 radian, the arc length s equals the radius r.","xMin":-1.5,"xMax":1.5,"yMin":-1.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":90,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":0.3,"from":0,"to":57.3}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.5403,0.8415]},{"from":[0.2386,0.1818],"to":[0.1621,0.2525],"arrows":"end"}],"texts":[{"at":[0.12,0.5],"text":"r","anchor":"end"},{"at":[0.966,0.527],"text":"s"},{"at":[0.1,-0.3],"text":"1 radian"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b): an angle of 2 radians has an arc length s = 2r.","xMin":-1.5,"xMax":1.5,"yMin":-0.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":90,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[-0.4161,0.9093]}],"texts":[{"at":[0.62,-0.14],"text":"r"},{"at":[-0.868,1.034],"text":"s = 2r"},{"at":[0.1,0.42],"text":"2 radians"}]}
+{"ariaLabel":"Panel (b): an angle of 2 radians has an arc length s = 2r.","xMin":-1.5,"xMax":1.5,"yMin":-1.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":90,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":0.3,"from":0,"to":114.6}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[-0.4161,0.9093]},{"from":[0.0021,0.3],"to":[-0.1249,0.2728],"arrows":"end"}],"texts":[{"at":[0.6,0.07],"text":"r"},{"at":[0.605,0.942],"text":"s = 2r"},{"at":[0.1,-0.3],"text":"2 radians"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (c): a full revolution is 2 pi, or about 6.28 radians. A full circle is shown with a bold radius near 4 radians and three dashed diameters connecting antipodal radian markers.","xMin":-1.6,"xMax":1.6,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":75,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[-0.54,-0.841],"to":[0.54,0.841],"dashed":true},{"from":[-0.416,0.909],"to":[0.416,-0.909],"dashed":true},{"from":[-0.99,0.141],"to":[0.99,-0.141],"dashed":true},{"from":[0,0],"to":[-0.654,-0.757],"arrows":"end"}],"points":[{"at":[1,0]},{"at":[0.54,0.841]},{"at":[-0.416,0.909]},{"at":[-0.99,0.141]},{"at":[-0.654,-0.757]},{"at":[-0.54,-0.841]},{"at":[0.416,-0.909]},{"at":[0.99,-0.141]}],"texts":[{"at":[1.739,0.466],"text":"0, 2π"},{"at":[0.864,1.346],"text":"1 radian"},{"at":[-0.77,1.682],"text":"2 radians"},{"at":[-1.831,0.261],"text":"3 radians"},{"at":[-1.046,-1.211],"text":"4"},{"at":[-0.999,-1.557],"text":"1 + π radians"},{"at":[0.666,-1.455],"text":"2 + π radians"},{"at":[1.584,-0.226],"text":"3 + π radians"},{"at":[0.75,1.55],"text":"A full revolution"}]}
+{"ariaLabel":"Panel (c): a full revolution is 2 pi, or about 6.28 radians. A circle with points marked at 0, 1, 2, 3 and 4 radians and at 1 + pi, 2 + pi and 3 + pi radians; three dashed diameters join each whole-number radian mark to the mark pi radians farther on, and a solid radius points to 4 radians.","xMin":-1.6,"xMax":1.6,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":75,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[-0.5403,-0.8415],"to":[0.5403,0.8415],"dashed":true},{"from":[0.4161,-0.9093],"to":[-0.4161,0.9093],"dashed":true},{"from":[0.99,-0.1411],"to":[-0.99,0.1411],"dashed":true},{"from":[0,0],"to":[-0.6536,-0.7568],"arrows":"end"}],"points":[{"at":[1.0,0.0]},{"at":[0.5403,0.8415]},{"at":[-0.4161,0.9093]},{"at":[-0.99,0.1411]},{"at":[-0.5403,-0.8415]},{"at":[0.4161,-0.9093]},{"at":[0.99,-0.1411]}],"texts":[{"at":[1.12,0.12],"text":"0, 2π"},{"at":[0.621,0.968],"text":"1 radian"},{"at":[-0.479,1.046],"text":"2 radians","anchor":"end"},{"at":[-1.12,0.22],"text":"3 radians","anchor":"end"},{"at":[-0.76,-0.8],"text":"4","anchor":"end"},{"at":[-0.62,-1.2],"text":"1 + π radians","anchor":"end"},{"at":[0.479,-1.184],"text":"2 + π radians"},{"at":[1.12,-0.38],"text":"3 + π radians"},{"at":[0,-2.05],"text":"A full revolution: 2π ≈ 6.28 radians","anchor":"middle"}]}
 {{< /apfigure >}}
 
 To elaborate on this idea, consider two circles, one with radius 2 and the
@@ -292,7 +292,7 @@ $2\pi(2)=4\pi$ and the larger has circumference $2\pi(3)=6\pi$. Now we
 draw a 45° angle on the two circles, as below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two concentric circles of radius 2 and radius 3, each with a 45-degree central angle from the positive x-axis; the angle contains one-eighth of each circle's circumference, labeled 45 degrees equals pi over 4 radians.","xMin":-3.6,"xMax":3.6,"yMin":-1,"yMax":3.6,"grid":false,"tickLabels":false,"unit":42,"circles":[{"at":[0,0],"r":2},{"at":[0,0],"r":3}],"segments":[{"from":[0,0],"to":[3,0]},{"from":[0,0],"to":[2.121,2.121]}],"texts":[{"at":[2.05,-0.32],"text":"2"},{"at":[3.05,-0.32],"text":"3"},{"at":[0.55,0.28],"text":"45°"},{"at":[1.2,3.3],"text":"45° = π/4 radians"}]}
+{"ariaLabel":"Two concentric circles of radius 2 and radius 3, each with a 45-degree central angle from the positive x-axis; the angle contains one-eighth of each circle's circumference, labeled 45 degrees equals pi over 4 radians.","xMin":-3.6,"xMax":3.6,"yMin":-3.6,"yMax":3.6,"grid":false,"tickLabels":false,"unit":42,"circles":[{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":0.8,"from":0,"to":45}],"segments":[{"from":[0,0],"to":[3,0]},{"from":[0,0],"to":[2.121,2.121]},{"from":[0.6857,0.412],"to":[0.5657,0.5657],"arrows":"end"}],"texts":[{"at":[1.8,-0.42],"text":"2","anchor":"middle"},{"at":[2.8,-0.42],"text":"3","anchor":"middle"},{"at":[0.924,0.383],"text":"45°"},{"at":[2.3,2.1],"text":"45° = π/4 radians"}]}
 {{< /apfigure >}}
 
 Notice what happens if we find the ratio of the arc length divided by the
@@ -365,7 +365,7 @@ angles will be very useful as we study the properties associated with
 angles.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A circle with sixteen rays from the origin, spaced at the commonly encountered angles measured in degrees: 0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, and 330.","xMin":-1.5,"xMax":1.5,"yMin":-1.5,"yMax":1.5,"grid":false,"tickLabels":false,"unit":115,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.866,0.5]},{"from":[0,0],"to":[0.7071,0.7071]},{"from":[0,0],"to":[0.5,0.866]},{"from":[0,0],"to":[0,1]},{"from":[0,0],"to":[-0.5,0.866]},{"from":[0,0],"to":[-0.7071,0.7071]},{"from":[0,0],"to":[-0.866,0.5]},{"from":[0,0],"to":[-1,0]},{"from":[0,0],"to":[-0.866,-0.5]},{"from":[0,0],"to":[-0.7071,-0.7071]},{"from":[0,0],"to":[-0.5,-0.866]},{"from":[0,0],"to":[0,-1]},{"from":[0,0],"to":[0.5,-0.866]},{"from":[0,0],"to":[0.7071,-0.7071]},{"from":[0,0],"to":[0.866,-0.5]}],"texts":[{"at":[1.22,0],"text":"0°"},{"at":[1.057,0.61],"text":"30°"},{"at":[0.863,0.863],"text":"45°"},{"at":[0.61,1.057],"text":"60°"},{"at":[0,1.22],"text":"90°"},{"at":[-0.61,1.057],"text":"120°"},{"at":[-0.863,0.863],"text":"135°"},{"at":[-1.057,0.61],"text":"150°"},{"at":[-1.22,0],"text":"180°"},{"at":[-1.057,-0.61],"text":"210°"},{"at":[-0.863,-0.863],"text":"225°"},{"at":[-0.61,-1.057],"text":"240°"},{"at":[0,-1.22],"text":"270°"},{"at":[0.61,-1.057],"text":"300°"},{"at":[0.863,-0.863],"text":"315°"},{"at":[1.057,-0.61],"text":"330°"}]}
+{"ariaLabel":"A circle with sixteen rays from the origin, spaced at the commonly encountered angles measured in degrees: 0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, and 330.","xMin":-1.5,"xMax":1.5,"yMin":-1.5,"yMax":1.5,"grid":false,"tickLabels":false,"unit":115,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.866,0.5]},{"from":[0,0],"to":[0.7071,0.7071]},{"from":[0,0],"to":[0.5,0.866]},{"from":[0,0],"to":[0,1]},{"from":[0,0],"to":[-0.5,0.866]},{"from":[0,0],"to":[-0.7071,0.7071]},{"from":[0,0],"to":[-0.866,0.5]},{"from":[0,0],"to":[-1,0]},{"from":[0,0],"to":[-0.866,-0.5]},{"from":[0,0],"to":[-0.7071,-0.7071]},{"from":[0,0],"to":[-0.5,-0.866]},{"from":[0,0],"to":[0,-1]},{"from":[0,0],"to":[0.5,-0.866]},{"from":[0,0],"to":[0.7071,-0.7071]},{"from":[0,0],"to":[0.866,-0.5]}],"texts":[{"at":[1.06,0.06],"text":"0°"},{"at":[0.927,0.535],"text":"30°"},{"at":[0.757,0.757],"text":"45°"},{"at":[0.535,0.927],"text":"60°"},{"at":[0.05,1.07],"text":"90°"},{"at":[-0.535,0.927],"text":"120°","anchor":"end"},{"at":[-0.757,0.757],"text":"135°","anchor":"end"},{"at":[-0.927,0.535],"text":"150°","anchor":"end"},{"at":[-1.06,0.06],"text":"180°","anchor":"end"},{"at":[-0.927,-0.625],"text":"210°","anchor":"end"},{"at":[-0.757,-0.847],"text":"225°","anchor":"end"},{"at":[-0.535,-1.017],"text":"240°","anchor":"end"},{"at":[0.05,-1.1604347826086958],"text":"270°"},{"at":[0.535,-1.017],"text":"300°"},{"at":[0.757,-0.847],"text":"315°"},{"at":[0.927,-0.625],"text":"330°"}]}
 {{< /apfigure >}}
 
 Now, we can list the corresponding radian values for the common measures of
@@ -373,7 +373,7 @@ a circle corresponding to those listed above, which are shown below. Be
 sure you can verify each of these measures.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same circle of sixteen rays, now labeled with the equivalent radian measures: 0, pi/6, pi/4, pi/3, pi/2, 2 pi/3, 3 pi/4, 5 pi/6, pi, 7 pi/6, 5 pi/4, 4 pi/3, 3 pi/2, 5 pi/3, 7 pi/4, and 11 pi/6.","xMin":-1.6,"xMax":1.6,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":105,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.866,0.5]},{"from":[0,0],"to":[0.7071,0.7071]},{"from":[0,0],"to":[0.5,0.866]},{"from":[0,0],"to":[0,1]},{"from":[0,0],"to":[-0.5,0.866]},{"from":[0,0],"to":[-0.7071,0.7071]},{"from":[0,0],"to":[-0.866,0.5]},{"from":[0,0],"to":[-1,0]},{"from":[0,0],"to":[-0.866,-0.5]},{"from":[0,0],"to":[-0.7071,-0.7071]},{"from":[0,0],"to":[-0.5,-0.866]},{"from":[0,0],"to":[0,-1]},{"from":[0,0],"to":[0.5,-0.866]},{"from":[0,0],"to":[0.7071,-0.7071]},{"from":[0,0],"to":[0.866,-0.5]}],"texts":[{"at":[1.25,0],"text":"0"},{"at":[1.08,0.62],"text":"π/6"},{"at":[0.88,0.88],"text":"π/4"},{"at":[0.62,1.08],"text":"π/3"},{"at":[0,1.25],"text":"π/2"},{"at":[-0.62,1.08],"text":"2π/3"},{"at":[-0.88,0.88],"text":"3π/4"},{"at":[-1.08,0.62],"text":"5π/6"},{"at":[-1.25,0],"text":"π"},{"at":[-1.08,-0.62],"text":"7π/6"},{"at":[-0.88,-0.88],"text":"5π/4"},{"at":[-0.62,-1.08],"text":"4π/3"},{"at":[0,-1.25],"text":"3π/2"},{"at":[0.62,-1.08],"text":"5π/3"},{"at":[0.88,-0.88],"text":"7π/4"},{"at":[1.08,-0.62],"text":"11π/6"}]}
+{"ariaLabel":"The same circle of sixteen rays, now labeled with the equivalent radian measures: 0, pi/6, pi/4, pi/3, pi/2, 2 pi/3, 3 pi/4, 5 pi/6, pi, 7 pi/6, 5 pi/4, 4 pi/3, 3 pi/2, 5 pi/3, 7 pi/4, and 11 pi/6.","xMin":-1.6,"xMax":1.6,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":105,"circles":[{"at":[0,0],"r":1}],"segments":[{"from":[0,0],"to":[1,0]},{"from":[0,0],"to":[0.866,0.5]},{"from":[0,0],"to":[0.7071,0.7071]},{"from":[0,0],"to":[0.5,0.866]},{"from":[0,0],"to":[0,1]},{"from":[0,0],"to":[-0.5,0.866]},{"from":[0,0],"to":[-0.7071,0.7071]},{"from":[0,0],"to":[-0.866,0.5]},{"from":[0,0],"to":[-1,0]},{"from":[0,0],"to":[-0.866,-0.5]},{"from":[0,0],"to":[-0.7071,-0.7071]},{"from":[0,0],"to":[-0.5,-0.866]},{"from":[0,0],"to":[0,-1]},{"from":[0,0],"to":[0.5,-0.866]},{"from":[0,0],"to":[0.7071,-0.7071]},{"from":[0,0],"to":[0.866,-0.5]}],"texts":[{"at":[1.06,0.06],"text":"0"},{"at":[0.927,0.535],"text":"π/6"},{"at":[0.757,0.757],"text":"π/4"},{"at":[0.535,0.927],"text":"π/3"},{"at":[0.05,1.07],"text":"π/2"},{"at":[-0.535,0.927],"text":"2π/3","anchor":"end"},{"at":[-0.757,0.757],"text":"3π/4","anchor":"end"},{"at":[-0.927,0.535],"text":"5π/6","anchor":"end"},{"at":[-1.06,0.06],"text":"π","anchor":"end"},{"at":[-0.927,-0.634],"text":"7π/6","anchor":"end"},{"at":[-0.757,-0.856],"text":"5π/4","anchor":"end"},{"at":[-0.535,-1.026],"text":"4π/3","anchor":"end"},{"at":[0.05,-1.1690476190476191],"text":"3π/2"},{"at":[0.535,-1.026],"text":"5π/3"},{"at":[0.757,-0.856],"text":"7π/4"},{"at":[0.927,-0.634],"text":"11π/6"}]}
 {{< /apfigure >}}
 
 **Example.** Find the radian measure of one-third of a full rotation.
@@ -405,7 +405,7 @@ $$
 {{< fillin
   question="Find the radian measure of three-fourths of a full rotation."
   answer="\frac{3\pi}{2}"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{3\pi}{2}$"
   hint="A full rotation is $2\pi$ radians; multiply by $\tfrac34$."
 >}}
@@ -490,7 +490,7 @@ that $\tfrac{1}{2}\left(\tfrac{\pi}{6}\right)$ is $\tfrac{\pi}{12}$.
 {{< fillin
   question="Convert $126^\circ$ to radians."
   answer="\frac{7\pi}{10}"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{7\pi}{10}$"
   hint="Use the proportion $\tfrac{\theta}{180}=\tfrac{\theta^R}{\pi}$, then reduce the fraction."
 >}}
@@ -515,7 +515,7 @@ convenient to find the coterminal angle within the range of 0° to 360°
 than to work with an angle that is outside that range.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An angle of 140 degrees and an angle of negative 220 degrees are coterminal, sharing a terminal side in the second quadrant. A short counterclockwise arc shows the 140-degree sweep; a larger clockwise arc shows the negative 220-degree sweep.","xMin":-2.5,"xMax":2.5,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[-1.532,1.286],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.75,"from":0,"to":140},{"at":[0,0],"r":1.05,"from":140,"to":360}],"texts":[{"at":[0.075,0.207],"text":"140°"},{"at":[0.65,-0.95],"text":"-220°"}]}
+{"ariaLabel":"An angle of 140 degrees and an angle of negative 220 degrees are coterminal, sharing a terminal side in the second quadrant. A short counterclockwise arc shows the 140-degree sweep; a larger clockwise arc shows the negative 220-degree sweep.","xMin":-2.5,"xMax":2.5,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[-1.532,1.286],"arrows":"end"},{"from":[-0.4408,0.6068],"to":[-0.5745,0.4821],"arrows":"end"},{"from":[-0.9437,0.4603],"to":[-0.8043,0.6749],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.75,"from":0,"to":140},{"at":[0,0],"r":1.05,"from":140,"to":360}],"texts":[{"at":[0.38,0.816],"text":"140°"},{"at":[0.61,-1.288],"text":"−220°"}]}
 {{< /apfigure >}}
 
 Any angle has infinitely many **coterminal angles** because each time we
@@ -533,19 +533,19 @@ See below for examples of reference angles for angles in different
 quadrants.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Reference angle in Quadrant I: the terminal side of angle t already lies in the first quadrant, so the reference angle t prime equals t.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[1.028,1.226],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.55,"from":0,"to":50}],"texts":[{"at":[0.42,0.16],"text":"t"}]}
+{"ariaLabel":"Reference angle in Quadrant I: the terminal side of angle t lies in the first quadrant, so the reference angle t prime equals t.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[0.7392,0.881],"arrows":"end"},{"from":[0.433,0.25],"to":[0.3214,0.383],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.5,"from":0,"to":50}],"texts":[{"at":[0.616,0.287],"text":"t"},{"at":[0,-2.4],"text":"t′ = t","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Reference angle in Quadrant II: the terminal side of angle t lies in the second quadrant; the dashed reference ray shows the reference angle t prime in the first quadrant, where t prime = 180 degrees minus t.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[-1.386,0.8],"arrows":"end"},{"from":[0,0],"to":[1.386,0.8],"dashed":true}],"circles":[{"at":[0,0],"r":0.75,"from":0,"to":150},{"at":[0,0],"r":0.5,"from":0,"to":30}],"texts":[{"at":[-0.55,0.32],"text":"t"},{"at":[0.338,0.0906],"text":"t′"}]}
+{"ariaLabel":"Reference angle in Quadrant II: the terminal side of angle t lies in the second quadrant; the reference angle t prime is the angle between that terminal side and the negative x-axis, t prime = pi minus t = 180 degrees minus t. A dashed ray in the first quadrant shows an angle of the same measure as t prime.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[-1.1691,0.675],"arrows":"end"},{"from":[-0.3214,0.383],"to":[-0.433,0.25],"arrows":"end"},{"from":[0,0],"to":[1.1691,0.675],"dashed":true},{"from":[-0.8084,0.2627],"to":[-0.7361,0.425],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.5,"from":0,"to":150},{"at":[0,0],"r":0.85,"from":150,"to":180}],"texts":[{"at":[0.226,0.62],"text":"t"},{"at":[-0.97,0.165],"text":"t′","anchor":"end"},{"at":[0,-2.4],"text":"t′ = π − t = 180° − t","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Reference angle in Quadrant III: the terminal side of angle t lies in the third quadrant; the dashed reference ray shows the reference angle t prime in the first quadrant, where t prime = t minus 180 degrees.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[-1.386,-0.8],"arrows":"end"},{"from":[0,0],"to":[1.386,0.8],"dashed":true}],"circles":[{"at":[0,0],"r":0.75,"from":180,"to":210},{"at":[0,0],"r":0.5,"from":0,"to":30}],"texts":[{"at":[-0.55,-0.32],"text":"t"},{"at":[0.338,0.0906],"text":"t′"}]}
+{"ariaLabel":"Reference angle in Quadrant III: the terminal side of angle t lies in the third quadrant; the reference angle t prime is the angle between the negative x-axis and that terminal side, t prime = t minus pi = t minus 180 degrees. A dashed ray in the first quadrant shows an angle of the same measure as t prime.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[-1.1691,-0.675],"arrows":"end"},{"from":[-0.4924,-0.0868],"to":[-0.433,-0.25],"arrows":"end"},{"from":[0,0],"to":[1.1691,0.675],"dashed":true},{"from":[-0.8084,-0.2627],"to":[-0.7361,-0.425],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.5,"from":0,"to":210},{"at":[0,0],"r":0.85,"from":180,"to":210}],"texts":[{"at":[0.226,0.62],"text":"t"},{"at":[-0.97,-0.31],"text":"t′","anchor":"end"},{"at":[0,-2.4],"text":"t′ = t − π = t − 180°","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Reference angle in Quadrant IV: the terminal side of angle t lies in the fourth quadrant; the dashed reference ray shows the reference angle t prime in the first quadrant, where t prime = 360 degrees minus t.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[1.386,-0.8],"arrows":"end"},{"from":[0,0],"to":[1.386,0.8],"dashed":true}],"circles":[{"at":[0,0],"r":0.75,"from":330,"to":360},{"at":[0,0],"r":0.5,"from":0,"to":30}],"texts":[{"at":[0.55,-0.32],"text":"t"},{"at":[0.338,0.0906],"text":"t′"}]}
+{"ariaLabel":"Reference angle in Quadrant IV: the terminal side of angle t lies in the fourth quadrant; the reference angle t prime is the angle between that terminal side and the positive x-axis, t prime = 2 pi minus t = 360 degrees minus t. A dashed ray in the first quadrant shows an angle of the same measure as t prime.","xMin":-1.9,"xMax":1.9,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"quadrantLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[1.1691,-0.675],"arrows":"end"},{"from":[0.3214,-0.383],"to":[0.433,-0.25],"arrows":"end"},{"from":[0,0],"to":[1.1691,0.675],"dashed":true},{"from":[0.8084,-0.2627],"to":[0.7361,-0.425],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.5,"from":0,"to":330},{"at":[0,0],"r":0.85,"from":330,"to":360}],"texts":[{"at":[-0.226,0.62],"text":"t","anchor":"end"},{"at":[0.97,-0.31],"text":"t′"},{"at":[0,-2.4],"text":"t′ = 2π − t = 360° − t","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -578,7 +578,7 @@ The angle $\theta=80^\circ$ is coterminal with 800°. To put it another way, 800
 equals 80° plus two full rotations, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An angle of 800 degrees drawn as a spiral making two full counterclockwise turns and then 80 degrees more, ending on a terminal side in the first quadrant close to the y-axis. A separate outer arc marks the 80-degree angle between the positive x-axis and that terminal side.","xMin":-2.6,"xMax":2.6,"yMin":-2.2,"yMax":2.4,"grid":false,"tickLabels":false,"unit":50,"segments":[{"from":[0,0],"to":[0.363,2.058],"arrows":"end"},{"from":[0,0],"to":[2.1,0],"arrows":"end"}],"polylines":[{"through":[[0.12,0],[0.123,0.006],[0.126,0.013],[0.129,0.02],[0.131,0.028],[0.133,0.036],[0.134,0.044],[0.135,0.052],[0.135,0.06],[0.135,0.069],[0.134,0.077],[0.133,0.086],[0.131,0.095],[0.128,0.104],[0.125,0.113],[0.122,0.122],[0.118,0.131],[0.113,0.139],[0.107,0.148],[0.101,0.156],[0.095,0.164],[0.088,0.172],[0.08,0.18],[0.072,0.187],[0.063,0.194],[0.054,0.2],[0.044,0.206],[0.034,0.212],[0.023,0.216],[0.012,0.221],[0,0.225],[-0.012,0.228],[-0.024,0.23],[-0.037,0.232],[-0.05,0.233],[-0.063,0.234],[-0.076,0.234],[-0.089,0.232],[-0.103,0.231],[-0.116,0.228],[-0.13,0.225],[-0.143,0.221],[-0.157,0.216],[-0.17,0.21],[-0.183,0.203],[-0.196,0.196],[-0.208,0.188],[-0.221,0.179],[-0.233,0.169],[-0.244,0.158],[-0.255,0.147],[-0.265,0.135],[-0.275,0.123],[-0.285,0.109],[-0.293,0.095],[-0.301,0.081],[-0.308,0.066],[-0.315,0.05],[-0.321,0.034],[-0.325,0.017],[-0.329,0],[-0.332,-0.017],[-0.334,-0.035],[-0.336,-0.053],[-0.336,-0.071],[-0.335,-0.09],[-0.333,-0.108],[-0.33,-0.127],[-0.326,-0.145],[-0.321,-0.164],[-0.315,-0.182],[-0.308,-0.2],[-0.3,-0.218],[-0.291,-0.236],[-0.281,-0.253],[-0.27,-0.27],[-0.258,-0.286],[-0.245,-0.302],[-0.23,-0.317],[-0.215,-0.332],[-0.2,-0.346],[-0.183,-0.359],[-0.165,-0.371],[-0.147,-0.382],[-0.128,-0.393],[-0.108,-0.402],[-0.087,-0.411],[-0.066,-0.418],[-0.045,-0.425],[-0.023,-0.43],[0,-0.434],[0.023,-0.437],[0.046,-0.438],[0.07,-0.439],[0.093,-0.438],[0.117,-0.436],[0.141,-0.433],[0.164,-0.428],[0.188,-0.422],[0.211,-0.415],[0.234,-0.406],[0.257,-0.396],[0.28,-0.385],[0.302,-0.372],[0.323,-0.359],[0.344,-0.344],[0.364,-0.328],[0.383,-0.31],[0.402,-0.292],[0.419,-0.272],[0.436,-0.252],[0.452,-0.23],[0.466,-0.208],[0.48,-0.184],[0.492,-0.16],[0.503,-0.135],[0.513,-0.109],[0.522,-0.083],[0.529,-0.056],[0.534,-0.028],[0.538,0],[0.541,0.028],[0.542,0.057],[0.542,0.086],[0.54,0.115],[0.537,0.144],[0.532,0.173],[0.526,0.202],[0.517,0.23],[0.508,0.259],[0.497,0.287],[0.484,0.314],[0.47,0.341],[0.454,0.367],[0.436,0.393],[0.418,0.418],[0.398,0.442],[0.376,0.465],[0.353,0.486],[0.329,0.507],[0.304,0.527],[0.278,0.545],[0.25,0.562],[0.222,0.578],[0.192,0.592],[0.162,0.604],[0.131,0.615],[0.099,0.625],[0.066,0.633],[0.033,0.639],[0,0.643],[-0.034,0.646],[-0.068,0.647],[-0.102,0.646],[-0.137,0.643],[-0.171,0.638],[-0.205,0.632],[-0.239,0.623],[-0.273,0.613],[-0.306,0.601],[-0.339,0.587],[-0.371,0.572],[-0.403,0.554],[-0.433,0.535],[-0.463,0.514],[-0.492,0.492],[-0.519,0.468],[-0.546,0.442],[-0.571,0.415],[-0.595,0.386],[-0.617,0.356],[-0.638,0.325],[-0.658,0.293],[-0.675,0.259],[-0.691,0.225],[-0.705,0.189],[-0.718,0.153],[-0.728,0.115],[-0.737,0.077],[-0.743,0.039],[-0.748,0],[-0.75,-0.039],[-0.751,-0.079],[-0.749,-0.119],[-0.745,-0.158],[-0.739,-0.198],[-0.731,-0.238],[-0.721,-0.277],[-0.709,-0.315],[-0.694,-0.354],[-0.678,-0.391],[-0.659,-0.428],[-0.639,-0.464],[-0.616,-0.499],[-0.592,-0.533],[-0.566,-0.566],[-0.538,-0.597],[-0.508,-0.627],[-0.476,-0.656],[-0.443,-0.683],[-0.409,-0.708],[-0.373,-0.732],[-0.335,-0.753],[-0.297,-0.773],[-0.257,-0.791],[-0.216,-0.806],[-0.174,-0.82],[-0.132,-0.832],[-0.088,-0.841],[-0.044,-0.848],[0,-0.852],[0.045,-0.855],[0.09,-0.855],[0.135,-0.852],[0.18,-0.847],[0.225,-0.84],[0.27,-0.831],[0.314,-0.819],[0.358,-0.804],[0.401,-0.787],[0.444,-0.768],[0.485,-0.747],[0.526,-0.723],[0.565,-0.698],[0.603,-0.67],[0.64,-0.64],[0.675,-0.608],[0.708,-0.574],[0.74,-0.538],[0.77,-0.5],[0.799,-0.461],[0.825,-0.42],[0.849,-0.378],[0.871,-0.334],[0.89,-0.289],[0.908,-0.243],[0.922,-0.196],[0.935,-0.148],[0.945,-0.099],[0.952,-0.05],[0.957,0],[0.959,0.05],[0.959,0.101],[0.956,0.151],[0.95,0.202],[0.941,0.252],[0.93,0.302],[0.916,0.352],[0.9,0.401],[0.881,0.449],[0.859,0.496],[0.835,0.542],[0.808,0.587],[0.779,0.631],[0.747,0.673],[0.714,0.714],[0.678,0.753],[0.64,0.79],[0.599,0.825],[0.557,0.858],[0.513,0.889],[0.468,0.918],[0.42,0.944],[0.372,0.968],[0.322,0.99],[0.27,1.009],[0.218,1.025]]}],"circles":[{"at":[0,0],"r":1.62,"from":0,"to":80}],"texts":[{"at":[-1.45,-0.53],"text":"800°"},{"at":[1.42,1.02],"text":"80°"}]}
+{"ariaLabel":"An angle of 800 degrees drawn as a spiral making two full counterclockwise turns and then 80 degrees more, ending on a terminal side in the first quadrant close to the y-axis. A separate outer arc marks the 80-degree angle between the positive x-axis and that terminal side.","xMin":-2.6,"xMax":2.6,"yMin":-2.2,"yMax":2.4,"grid":false,"tickLabels":false,"unit":50,"segments":[{"from":[0,0],"to":[0.363,2.058],"arrows":"end"},{"from":[0,0],"to":[2.1,0],"arrows":"end"},{"from":[0.5541,1.5223],"to":[0.2813,1.5954],"arrows":"end"}],"polylines":[{"through":[[0.12,0],[0.123,0.006],[0.126,0.013],[0.129,0.02],[0.131,0.028],[0.133,0.036],[0.134,0.044],[0.135,0.052],[0.135,0.06],[0.135,0.069],[0.134,0.077],[0.133,0.086],[0.131,0.095],[0.128,0.104],[0.125,0.113],[0.122,0.122],[0.118,0.131],[0.113,0.139],[0.107,0.148],[0.101,0.156],[0.095,0.164],[0.088,0.172],[0.08,0.18],[0.072,0.187],[0.063,0.194],[0.054,0.2],[0.044,0.206],[0.034,0.212],[0.023,0.216],[0.012,0.221],[0,0.225],[-0.012,0.228],[-0.024,0.23],[-0.037,0.232],[-0.05,0.233],[-0.063,0.234],[-0.076,0.234],[-0.089,0.232],[-0.103,0.231],[-0.116,0.228],[-0.13,0.225],[-0.143,0.221],[-0.157,0.216],[-0.17,0.21],[-0.183,0.203],[-0.196,0.196],[-0.208,0.188],[-0.221,0.179],[-0.233,0.169],[-0.244,0.158],[-0.255,0.147],[-0.265,0.135],[-0.275,0.123],[-0.285,0.109],[-0.293,0.095],[-0.301,0.081],[-0.308,0.066],[-0.315,0.05],[-0.321,0.034],[-0.325,0.017],[-0.329,0],[-0.332,-0.017],[-0.334,-0.035],[-0.336,-0.053],[-0.336,-0.071],[-0.335,-0.09],[-0.333,-0.108],[-0.33,-0.127],[-0.326,-0.145],[-0.321,-0.164],[-0.315,-0.182],[-0.308,-0.2],[-0.3,-0.218],[-0.291,-0.236],[-0.281,-0.253],[-0.27,-0.27],[-0.258,-0.286],[-0.245,-0.302],[-0.23,-0.317],[-0.215,-0.332],[-0.2,-0.346],[-0.183,-0.359],[-0.165,-0.371],[-0.147,-0.382],[-0.128,-0.393],[-0.108,-0.402],[-0.087,-0.411],[-0.066,-0.418],[-0.045,-0.425],[-0.023,-0.43],[0,-0.434],[0.023,-0.437],[0.046,-0.438],[0.07,-0.439],[0.093,-0.438],[0.117,-0.436],[0.141,-0.433],[0.164,-0.428],[0.188,-0.422],[0.211,-0.415],[0.234,-0.406],[0.257,-0.396],[0.28,-0.385],[0.302,-0.372],[0.323,-0.359],[0.344,-0.344],[0.364,-0.328],[0.383,-0.31],[0.402,-0.292],[0.419,-0.272],[0.436,-0.252],[0.452,-0.23],[0.466,-0.208],[0.48,-0.184],[0.492,-0.16],[0.503,-0.135],[0.513,-0.109],[0.522,-0.083],[0.529,-0.056],[0.534,-0.028],[0.538,0],[0.541,0.028],[0.542,0.057],[0.542,0.086],[0.54,0.115],[0.537,0.144],[0.532,0.173],[0.526,0.202],[0.517,0.23],[0.508,0.259],[0.497,0.287],[0.484,0.314],[0.47,0.341],[0.454,0.367],[0.436,0.393],[0.418,0.418],[0.398,0.442],[0.376,0.465],[0.353,0.486],[0.329,0.507],[0.304,0.527],[0.278,0.545],[0.25,0.562],[0.222,0.578],[0.192,0.592],[0.162,0.604],[0.131,0.615],[0.099,0.625],[0.066,0.633],[0.033,0.639],[0,0.643],[-0.034,0.646],[-0.068,0.647],[-0.102,0.646],[-0.137,0.643],[-0.171,0.638],[-0.205,0.632],[-0.239,0.623],[-0.273,0.613],[-0.306,0.601],[-0.339,0.587],[-0.371,0.572],[-0.403,0.554],[-0.433,0.535],[-0.463,0.514],[-0.492,0.492],[-0.519,0.468],[-0.546,0.442],[-0.571,0.415],[-0.595,0.386],[-0.617,0.356],[-0.638,0.325],[-0.658,0.293],[-0.675,0.259],[-0.691,0.225],[-0.705,0.189],[-0.718,0.153],[-0.728,0.115],[-0.737,0.077],[-0.743,0.039],[-0.748,0],[-0.75,-0.039],[-0.751,-0.079],[-0.749,-0.119],[-0.745,-0.158],[-0.739,-0.198],[-0.731,-0.238],[-0.721,-0.277],[-0.709,-0.315],[-0.694,-0.354],[-0.678,-0.391],[-0.659,-0.428],[-0.639,-0.464],[-0.616,-0.499],[-0.592,-0.533],[-0.566,-0.566],[-0.538,-0.597],[-0.508,-0.627],[-0.476,-0.656],[-0.443,-0.683],[-0.409,-0.708],[-0.373,-0.732],[-0.335,-0.753],[-0.297,-0.773],[-0.257,-0.791],[-0.216,-0.806],[-0.174,-0.82],[-0.132,-0.832],[-0.088,-0.841],[-0.044,-0.848],[0,-0.852],[0.045,-0.855],[0.09,-0.855],[0.135,-0.852],[0.18,-0.847],[0.225,-0.84],[0.27,-0.831],[0.314,-0.819],[0.358,-0.804],[0.401,-0.787],[0.444,-0.768],[0.485,-0.747],[0.526,-0.723],[0.565,-0.698],[0.603,-0.67],[0.64,-0.64],[0.675,-0.608],[0.708,-0.574],[0.74,-0.538],[0.77,-0.5],[0.799,-0.461],[0.825,-0.42],[0.849,-0.378],[0.871,-0.334],[0.89,-0.289],[0.908,-0.243],[0.922,-0.196],[0.935,-0.148],[0.945,-0.099],[0.952,-0.05],[0.957,0],[0.959,0.05],[0.959,0.101],[0.956,0.151],[0.95,0.202],[0.941,0.252],[0.93,0.302],[0.916,0.352],[0.9,0.401],[0.881,0.449],[0.859,0.496],[0.835,0.542],[0.808,0.587],[0.779,0.631],[0.747,0.673],[0.714,0.714],[0.678,0.753],[0.64,0.79],[0.599,0.825],[0.557,0.858],[0.513,0.889],[0.468,0.918],[0.42,0.944],[0.372,0.968],[0.322,0.99],[0.27,1.009],[0.218,1.025]],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.62,"from":0,"to":80}],"texts":[{"at":[-1.45,-0.53],"text":"800°"},{"at":[1.379,1.157],"text":"80°"}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -614,7 +614,7 @@ $$-45^\circ+360^\circ=315^\circ$$
 We can then show the angle on a circle, as below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An angle of negative 45 degrees and an angle of 315 degrees are coterminal, sharing a terminal side in the fourth quadrant. A short clockwise arc near the terminal side shows the negative 45-degree sweep; a large counterclockwise arc shows the 315-degree sweep.","xMin":-2.5,"xMax":2.5,"yMin":-2.5,"yMax":1.8,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[1.414,-1.414],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.5,"from":315,"to":360},{"at":[0,0],"r":1.3,"from":0,"to":315}],"texts":[{"at":[0.785,-0.325],"text":"-45°"},{"at":[-0.55,0.7],"text":"315°"}]}
+{"ariaLabel":"An angle of negative 45 degrees and an angle of 315 degrees are coterminal, sharing a terminal side in the fourth quadrant. A short clockwise arc near the terminal side shows the negative 45-degree sweep; a large counterclockwise arc shows the 315-degree sweep.","xMin":-2.5,"xMax":2.5,"yMin":-2.5,"yMax":1.8,"grid":false,"tickLabels":false,"unit":45,"segments":[{"from":[0,0],"to":[1.414,-1.414],"arrows":"end"},{"from":[0.6695,-1.1143],"to":[0.9192,-0.9192],"arrows":"end"},{"from":[0.4532,-0.2113],"to":[0.3536,-0.3536],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.5,"from":315,"to":360},{"at":[0,0],"r":1.3,"from":0,"to":315}],"texts":[{"at":[0.68,-0.42],"text":"−45°"},{"at":[-1.363,-0.727],"text":"315°","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -670,13 +670,13 @@ The angle $\tfrac{3\pi}{4}$ is coterminal with $\tfrac{19\pi}{4}$, as shown
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An angle of 19 pi over 4 radians drawn as a spiral making two full counterclockwise turns and then three quarters of pi more, ending on a terminal side in the second quadrant. A separate outer arc marks the 3 pi over 4 angle between the positive x-axis and that terminal side.","xMin":-2.8,"xMax":2.4,"yMin":-2.2,"yMax":2.4,"grid":false,"tickLabels":false,"unit":50,"segments":[{"from":[0,0],"to":[-1.46,1.46],"arrows":"end"},{"from":[0,0],"to":[2.1,0],"arrows":"end"}],"polylines":[{"through":[[0.12,0],[0.123,0.006],[0.126,0.013],[0.128,0.02],[0.13,0.028],[0.132,0.035],[0.133,0.043],[0.133,0.051],[0.133,0.059],[0.133,0.068],[0.132,0.076],[0.131,0.085],[0.129,0.094],[0.126,0.102],[0.123,0.111],[0.119,0.119],[0.115,0.128],[0.11,0.136],[0.105,0.145],[0.099,0.153],[0.093,0.16],[0.086,0.168],[0.078,0.175],[0.07,0.182],[0.061,0.189],[0.052,0.195],[0.043,0.2],[0.033,0.206],[0.022,0.21],[0.011,0.214],[0,0.218],[-0.012,0.221],[-0.023,0.223],[-0.036,0.225],[-0.048,0.226],[-0.061,0.226],[-0.073,0.226],[-0.086,0.225],[-0.099,0.223],[-0.112,0.22],[-0.125,0.217],[-0.138,0.213],[-0.151,0.208],[-0.164,0.202],[-0.176,0.196],[-0.189,0.189],[-0.201,0.181],[-0.212,0.172],[-0.224,0.163],[-0.235,0.152],[-0.245,0.142],[-0.255,0.13],[-0.265,0.118],[-0.273,0.105],[-0.282,0.092],[-0.289,0.078],[-0.296,0.063],[-0.302,0.048],[-0.308,0.032],[-0.312,0.016],[-0.316,0],[-0.319,-0.017],[-0.321,-0.034],[-0.322,-0.051],[-0.322,-0.068],[-0.321,-0.086],[-0.319,-0.104],[-0.316,-0.121],[-0.312,-0.139],[-0.308,-0.157],[-0.302,-0.174],[-0.295,-0.192],[-0.287,-0.209],[-0.278,-0.225],[-0.269,-0.242],[-0.258,-0.258],[-0.246,-0.273],[-0.234,-0.289],[-0.22,-0.303],[-0.206,-0.317],[-0.191,-0.33],[-0.174,-0.342],[-0.158,-0.354],[-0.14,-0.365],[-0.122,-0.375],[-0.103,-0.384],[-0.083,-0.392],[-0.063,-0.399],[-0.043,-0.405],[-0.021,-0.41],[0,-0.414],[0.022,-0.416],[0.044,-0.418],[0.066,-0.418],[0.089,-0.417],[0.111,-0.415],[0.134,-0.412],[0.156,-0.408],[0.179,-0.402],[0.201,-0.395],[0.223,-0.387],[0.245,-0.377],[0.266,-0.366],[0.287,-0.354],[0.307,-0.341],[0.327,-0.327],[0.346,-0.312],[0.365,-0.295],[0.382,-0.278],[0.399,-0.259],[0.415,-0.239],[0.43,-0.219],[0.444,-0.197],[0.456,-0.175],[0.468,-0.152],[0.478,-0.128],[0.488,-0.104],[0.496,-0.078],[0.502,-0.053],[0.508,-0.027],[0.512,0],[0.514,0.027],[0.515,0.054],[0.515,0.082],[0.513,0.109],[0.51,0.137],[0.505,0.164],[0.499,0.192],[0.491,0.219],[0.482,0.246],[0.471,0.272],[0.459,0.298],[0.446,0.324],[0.431,0.349],[0.414,0.373],[0.396,0.396],[0.377,0.419],[0.357,0.441],[0.335,0.461],[0.312,0.481],[0.288,0.5],[0.263,0.517],[0.237,0.533],[0.21,0.548],[0.182,0.561],[0.154,0.573],[0.124,0.583],[0.094,0.592],[0.063,0.6],[0.032,0.605],[0,0.609],[-0.032,0.612],[-0.064,0.613],[-0.097,0.612],[-0.129,0.609],[-0.162,0.604],[-0.194,0.598],[-0.227,0.59],[-0.259,0.581],[-0.29,0.569],[-0.321,0.556],[-0.351,0.541],[-0.381,0.525],[-0.41,0.507],[-0.438,0.487],[-0.466,0.466],[-0.492,0.443],[-0.517,0.418],[-0.541,0.393],[-0.563,0.366],[-0.584,0.337],[-0.604,0.308],[-0.622,0.277],[-0.639,0.245],[-0.654,0.213],[-0.668,0.179],[-0.679,0.144],[-0.689,0.109],[-0.697,0.073],[-0.703,0.037],[-0.707,0],[-0.71,-0.037],[-0.71,-0.075],[-0.708,-0.112],[-0.705,-0.15],[-0.699,-0.187],[-0.691,-0.225],[-0.682,-0.262],[-0.67,-0.298],[-0.656,-0.334],[-0.641,-0.37],[-0.623,-0.405],[-0.604,-0.439],[-0.583,-0.472],[-0.56,-0.504],[-0.535,-0.535],[-0.508,-0.564],[-0.48,-0.593],[-0.45,-0.62],[-0.419,-0.645],[-0.386,-0.669],[-0.352,-0.691],[-0.317,-0.712],[-0.28,-0.73],[-0.243,-0.747],[-0.204,-0.762],[-0.165,-0.775],[-0.124,-0.786],[-0.083,-0.794],[-0.042,-0.801],[0,-0.805],[0.042,-0.807],[0.085,-0.807],[0.128,-0.805],[0.17,-0.8],[0.213,-0.794],[0.255,-0.784],[0.297,-0.773],[0.338,-0.759],[0.379,-0.744],[0.419,-0.726],[0.458,-0.705],[0.496,-0.683],[0.533,-0.659],[0.569,-0.632],[0.604,-0.604],[0.637,-0.574],[0.669,-0.542],[0.699,-0.508],[0.727,-0.472],[0.754,-0.435],[0.779,-0.397],[0.801,-0.357],[0.822,-0.315],[0.84,-0.273],[0.857,-0.23],[0.871,-0.185],[0.882,-0.14],[0.892,-0.094],[0.899,-0.047],[0.903,0],[0.905,0.047],[0.905,0.095],[0.902,0.143],[0.896,0.19],[0.888,0.238],[0.878,0.285],[0.864,0.332],[0.849,0.378],[0.831,0.423],[0.81,0.468],[0.788,0.511],[0.762,0.554],[0.735,0.595],[0.705,0.635],[0.673,0.673],[0.639,0.71],[0.603,0.745],[0.565,0.778],[0.526,0.809],[0.484,0.839],[0.441,0.866],[0.397,0.891],[0.351,0.913],[0.303,0.933],[0.255,0.951],[0.205,0.966],[0.155,0.979],[0.104,0.989],[0.052,0.996],[0,1.001],[-0.053,1.003],[-0.105,1.002],[-0.158,0.998],[-0.211,0.992],[-0.263,0.983],[-0.315,0.971],[-0.367,0.956],[-0.418,0.938],[-0.468,0.918],[-0.517,0.895],[-0.565,0.87],[-0.611,0.842],[-0.657,0.811],[-0.7,0.778],[-0.742,0.742]]}],"circles":[{"at":[0,0],"r":1.62,"from":0,"to":135}],"texts":[{"at":[-1.52,-0.55],"text":"19π/4"},{"at":[0.62,1.62],"text":"3π/4"}]}
+{"ariaLabel":"An angle of 19 pi over 4 radians drawn as a spiral making two full counterclockwise turns and then three quarters of pi more, ending on a terminal side in the second quadrant. A separate outer arc marks the 3 pi over 4 angle between the positive x-axis and that terminal side.","xMin":-2.8,"xMax":2.4,"yMin":-2.2,"yMax":2.4,"grid":false,"tickLabels":false,"unit":50,"segments":[{"from":[0,0],"to":[-1.46,1.46],"arrows":"end"},{"from":[0,0],"to":[2.1,0],"arrows":"end"},{"from":[-0.9292,1.327],"to":[-1.1455,1.1455],"arrows":"end"}],"polylines":[{"through":[[0.12,0],[0.123,0.006],[0.126,0.013],[0.128,0.02],[0.13,0.028],[0.132,0.035],[0.133,0.043],[0.133,0.051],[0.133,0.059],[0.133,0.068],[0.132,0.076],[0.131,0.085],[0.129,0.094],[0.126,0.102],[0.123,0.111],[0.119,0.119],[0.115,0.128],[0.11,0.136],[0.105,0.145],[0.099,0.153],[0.093,0.16],[0.086,0.168],[0.078,0.175],[0.07,0.182],[0.061,0.189],[0.052,0.195],[0.043,0.2],[0.033,0.206],[0.022,0.21],[0.011,0.214],[0,0.218],[-0.012,0.221],[-0.023,0.223],[-0.036,0.225],[-0.048,0.226],[-0.061,0.226],[-0.073,0.226],[-0.086,0.225],[-0.099,0.223],[-0.112,0.22],[-0.125,0.217],[-0.138,0.213],[-0.151,0.208],[-0.164,0.202],[-0.176,0.196],[-0.189,0.189],[-0.201,0.181],[-0.212,0.172],[-0.224,0.163],[-0.235,0.152],[-0.245,0.142],[-0.255,0.13],[-0.265,0.118],[-0.273,0.105],[-0.282,0.092],[-0.289,0.078],[-0.296,0.063],[-0.302,0.048],[-0.308,0.032],[-0.312,0.016],[-0.316,0],[-0.319,-0.017],[-0.321,-0.034],[-0.322,-0.051],[-0.322,-0.068],[-0.321,-0.086],[-0.319,-0.104],[-0.316,-0.121],[-0.312,-0.139],[-0.308,-0.157],[-0.302,-0.174],[-0.295,-0.192],[-0.287,-0.209],[-0.278,-0.225],[-0.269,-0.242],[-0.258,-0.258],[-0.246,-0.273],[-0.234,-0.289],[-0.22,-0.303],[-0.206,-0.317],[-0.191,-0.33],[-0.174,-0.342],[-0.158,-0.354],[-0.14,-0.365],[-0.122,-0.375],[-0.103,-0.384],[-0.083,-0.392],[-0.063,-0.399],[-0.043,-0.405],[-0.021,-0.41],[0,-0.414],[0.022,-0.416],[0.044,-0.418],[0.066,-0.418],[0.089,-0.417],[0.111,-0.415],[0.134,-0.412],[0.156,-0.408],[0.179,-0.402],[0.201,-0.395],[0.223,-0.387],[0.245,-0.377],[0.266,-0.366],[0.287,-0.354],[0.307,-0.341],[0.327,-0.327],[0.346,-0.312],[0.365,-0.295],[0.382,-0.278],[0.399,-0.259],[0.415,-0.239],[0.43,-0.219],[0.444,-0.197],[0.456,-0.175],[0.468,-0.152],[0.478,-0.128],[0.488,-0.104],[0.496,-0.078],[0.502,-0.053],[0.508,-0.027],[0.512,0],[0.514,0.027],[0.515,0.054],[0.515,0.082],[0.513,0.109],[0.51,0.137],[0.505,0.164],[0.499,0.192],[0.491,0.219],[0.482,0.246],[0.471,0.272],[0.459,0.298],[0.446,0.324],[0.431,0.349],[0.414,0.373],[0.396,0.396],[0.377,0.419],[0.357,0.441],[0.335,0.461],[0.312,0.481],[0.288,0.5],[0.263,0.517],[0.237,0.533],[0.21,0.548],[0.182,0.561],[0.154,0.573],[0.124,0.583],[0.094,0.592],[0.063,0.6],[0.032,0.605],[0,0.609],[-0.032,0.612],[-0.064,0.613],[-0.097,0.612],[-0.129,0.609],[-0.162,0.604],[-0.194,0.598],[-0.227,0.59],[-0.259,0.581],[-0.29,0.569],[-0.321,0.556],[-0.351,0.541],[-0.381,0.525],[-0.41,0.507],[-0.438,0.487],[-0.466,0.466],[-0.492,0.443],[-0.517,0.418],[-0.541,0.393],[-0.563,0.366],[-0.584,0.337],[-0.604,0.308],[-0.622,0.277],[-0.639,0.245],[-0.654,0.213],[-0.668,0.179],[-0.679,0.144],[-0.689,0.109],[-0.697,0.073],[-0.703,0.037],[-0.707,0],[-0.71,-0.037],[-0.71,-0.075],[-0.708,-0.112],[-0.705,-0.15],[-0.699,-0.187],[-0.691,-0.225],[-0.682,-0.262],[-0.67,-0.298],[-0.656,-0.334],[-0.641,-0.37],[-0.623,-0.405],[-0.604,-0.439],[-0.583,-0.472],[-0.56,-0.504],[-0.535,-0.535],[-0.508,-0.564],[-0.48,-0.593],[-0.45,-0.62],[-0.419,-0.645],[-0.386,-0.669],[-0.352,-0.691],[-0.317,-0.712],[-0.28,-0.73],[-0.243,-0.747],[-0.204,-0.762],[-0.165,-0.775],[-0.124,-0.786],[-0.083,-0.794],[-0.042,-0.801],[0,-0.805],[0.042,-0.807],[0.085,-0.807],[0.128,-0.805],[0.17,-0.8],[0.213,-0.794],[0.255,-0.784],[0.297,-0.773],[0.338,-0.759],[0.379,-0.744],[0.419,-0.726],[0.458,-0.705],[0.496,-0.683],[0.533,-0.659],[0.569,-0.632],[0.604,-0.604],[0.637,-0.574],[0.669,-0.542],[0.699,-0.508],[0.727,-0.472],[0.754,-0.435],[0.779,-0.397],[0.801,-0.357],[0.822,-0.315],[0.84,-0.273],[0.857,-0.23],[0.871,-0.185],[0.882,-0.14],[0.892,-0.094],[0.899,-0.047],[0.903,0],[0.905,0.047],[0.905,0.095],[0.902,0.143],[0.896,0.19],[0.888,0.238],[0.878,0.285],[0.864,0.332],[0.849,0.378],[0.831,0.423],[0.81,0.468],[0.788,0.511],[0.762,0.554],[0.735,0.595],[0.705,0.635],[0.673,0.673],[0.639,0.71],[0.603,0.745],[0.565,0.778],[0.526,0.809],[0.484,0.839],[0.441,0.866],[0.397,0.891],[0.351,0.913],[0.303,0.933],[0.255,0.951],[0.205,0.966],[0.155,0.979],[0.104,0.989],[0.052,0.996],[0,1.001],[-0.053,1.003],[-0.105,1.002],[-0.158,0.998],[-0.211,0.992],[-0.263,0.983],[-0.315,0.971],[-0.367,0.956],[-0.418,0.938],[-0.468,0.918],[-0.517,0.895],[-0.565,0.87],[-0.611,0.842],[-0.657,0.811],[-0.7,0.778],[-0.742,0.742]],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.62,"from":0,"to":135}],"texts":[{"at":[-1.52,-0.55],"text":"19π/4"},{"at":[0.689,1.663],"text":"3π/4"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Find an angle $\theta$ that is coterminal with an angle of measure $-\tfrac{17\pi}{6}$, where $0\le\theta<2\pi$."
   answer="\frac{7\pi}{6}"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{7\pi}{6}$"
   hint="Add $2\pi$ (as $\tfrac{12\pi}{6}$) until the result lies between $0$ and $2\pi$."
 >}}
@@ -696,7 +696,7 @@ length along a circle, given an angle.
   $$s=r\theta$$
 
   {{< apfigure kind="graph" >}}
-  {"ariaLabel":"A circle with a central angle theta at the origin, radius r drawn to the terminal side, and the intercepted arc s highlighted between the initial and terminal sides.","xMin":-1.6,"xMax":1.8,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":85,"circles":[{"at":[0,0],"r":1.3}],"segments":[{"from":[0,0],"to":[1.3,0]},{"from":[0,0],"to":[0.746,1.065]}],"texts":[{"at":[0.42,0.13],"text":"θ"},{"at":[0.68,-0.22],"text":"r"},{"at":[0.55,1.28],"text":"s"}]}
+  {"ariaLabel":"A circle with a central angle theta at the origin, radius r along the initial side, and the intercepted arc s between the initial and terminal sides.","xMin":-1.6,"xMax":1.8,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":85,"circles":[{"at":[0,0],"r":1.3},{"at":[0,0],"r":0.35,"from":0,"to":54.98993047633493}],"segments":[{"from":[0,0],"to":[1.3,0]},{"from":[0,0],"to":[0.746,1.065]},{"from":[0.2867,0.2007],"to":[0.2008,0.2867],"arrows":"end"}],"texts":[{"at":[0.426,0.222],"text":"θ"},{"at":[0.62,-0.22],"text":"r"},{"at":[1.26,0.656],"text":"s"}]}
   {{< /apfigure >}}
 
 {{< /callout >}}
@@ -783,7 +783,7 @@ $$
   See below.
 
   {{< apfigure kind="graph" >}}
-  {"ariaLabel":"A circle with a central angle theta at the origin and radius r, showing the sector bounded by the two radii and the intercepted arc, whose area equals one-half theta r squared.","xMin":-1.6,"xMax":1.8,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":85,"circles":[{"at":[0,0],"r":1.3}],"segments":[{"from":[0,0],"to":[1.3,0]},{"from":[0,0],"to":[0.714,1.091]}],"texts":[{"at":[0.4,0.16],"text":"θ"},{"at":[0.65,-0.22],"text":"r"},{"at":[1.15,0.85],"text":"A = ½θr²"}]}
+  {"ariaLabel":"A circle with a central angle theta at the origin and radius r, showing the sector bounded by the two radii and the intercepted arc; an arrow points from the label A = one-half theta r squared into the sector, whose area it gives.","xMin":-1.6,"xMax":1.8,"yMin":-1.6,"yMax":1.6,"grid":false,"tickLabels":false,"unit":85,"circles":[{"at":[0,0],"r":1.3},{"at":[0,0],"r":0.35,"from":0,"to":56.79744063681188}],"segments":[{"from":[0,0],"to":[1.3,0]},{"from":[0,0],"to":[0.714,1.091]},{"from":[0.2803,0.2096],"to":[0.1917,0.2929],"arrows":"end"},{"from":[1.2,0.6],"to":[0.82,0.42],"arrows":"end"}],"texts":[{"at":[0.422,0.228],"text":"θ"},{"at":[0.62,-0.22],"text":"r"},{"at":[1.249,0.675],"text":"A = ½θr²"}]}
   {{< /apfigure >}}
 
 {{< /callout >}}
@@ -802,7 +802,7 @@ while rotating 30 degrees, as shown below. What is the area of the sector
 of grass the sprinkler waters?
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A 30-degree sector with two 20-foot radii from the sprinkler, the arc between them tracing the watered edge.","xMin":-2,"xMax":24,"yMin":-2,"yMax":13,"grid":false,"tickLabels":false,"unit":11,"circles":[{"at":[0,0],"r":20,"from":0,"to":30}],"segments":[{"from":[0,0],"to":[20,0]},{"from":[0,0],"to":[17.32,10]}],"texts":[{"at":[10,1.6],"text":"30°"},{"at":[10,-1.5],"text":"20 ft"}]}
+{"ariaLabel":"A 30-degree sector with two 20-foot radii from the sprinkler, the arc between them tracing the watered edge.","xMin":-2,"xMax":24,"yMin":-2,"yMax":13,"grid":false,"tickLabels":false,"unit":11,"circles":[{"at":[0,0],"r":20,"from":0,"to":30},{"at":[0,0],"r":5,"from":0,"to":30}],"segments":[{"from":[0,0],"to":[20,0]},{"from":[0,0],"to":[17.32,10]},{"from":[4.6359,1.873],"to":[4.3301,2.5],"arrows":"end"}],"texts":[{"at":[5.796,1.553],"text":"30°"},{"at":[10,-1.5],"text":"20 ft","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Solution.** First, we need to convert the angle measure into radians.
@@ -820,7 +820,7 @@ The area of the sector is then
 
 $$
 \begin{array}{lrcl}
-\text{Area} & =& \tfrac{1}{2}\left(\tfrac{\pi}{6}\right)(20)^2 \\[4pt]
+\text{Area} & &=& \tfrac{1}{2}\left(\tfrac{\pi}{6}\right)(20)^2 \\[4pt]
 & &\approx& 104.72
 \end{array}
 $$
@@ -921,7 +921,7 @@ of flowing water to other devices. Water turned the wheel, which in turn
 rotated a crank connected to two saws used to cut blocks. These design
 elements were used in water wheel applications throughout the world, and
 even provided the underlying principle for the steam engine, invented
-about 1500 years later.
+about 1,500 years later.
 
 **Example.** A water wheel completes 1 rotation every 5 seconds. Find the
 angular speed in radians per second.
@@ -933,7 +933,7 @@ $\omega=\tfrac{2\pi}{5}\approx1.257$ radians per second.
 {{< fillin
   question="A vintage vinyl record is played on a turntable rotating clockwise at a rate of 45 rotations per minute. Find the angular speed in radians per second."
   answer="\frac{3\pi}{2}"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{3\pi}{2}$ rad/s"
   hint="Convert 45 rotations per minute to radians per second, using $2\pi$ rad per rotation and 60 seconds per minute."
 >}}
@@ -982,8 +982,9 @@ measurement, like miles per hour.
 $$5{,}040\pi\tfrac{\text{inches}}{\text{minute}}\cdot\tfrac{1\text{ feet}}{12\text{ inches}}\cdot\tfrac{1\text{ mile}}{5{,}280\text{ feet}}\cdot\tfrac{60\text{ minutes}}{1\text{ hour}}\approx14.99\text{ miles per hour (mph)}$$
 
 {{< fillin
-  question="A satellite is rotating around Earth at 0.25 radians per hour at an altitude of 242 km above Earth. If the radius of Earth is 6378 kilometers, find the linear speed of the satellite in kilometers per hour."
+  question="A satellite is rotating around Earth at 0.25 radians per hour at an altitude of 242 km above Earth. If the radius of Earth is $6{,}378$ kilometers, find the linear speed of the satellite in kilometers per hour."
   answer="1655"
+  answerForm="decimal"
   answerDisplay="$1{,}655$ kilometers per hour"
   hint="Add Earth's radius to the altitude to get the orbital radius, then apply $v=r\omega$."
 >}}
@@ -1034,7 +1035,7 @@ $$5{,}040\pi\tfrac{\text{inches}}{\text{minute}}\cdot\tfrac{1\text{ feet}}{12\te
 {{< multiplechoice
   question="In which quadrant does the terminal side of an angle of $135^\circ$ in standard position lie?"
   answer="Quadrant II"
-  hint="$135^\circ$ is between $90^\circ$ and $180^\circ$."
+  hint="Compare the angle with the quadrantal angles $90^\circ$, $180^\circ$, $270^\circ$, and $360^\circ$, which bound the quadrants."
 >}}
 Quadrant I
 Quadrant II
@@ -1045,7 +1046,7 @@ Quadrant IV
 {{< multiplechoice
   question="In which quadrant does the terminal side of an angle of $300^\circ$ in standard position lie?"
   answer="Quadrant IV"
-  hint="$300^\circ$ is between $270^\circ$ and $360^\circ$."
+  hint="Compare the angle with the quadrantal angles $90^\circ$, $180^\circ$, $270^\circ$, and $360^\circ$, which bound the quadrants."
 >}}
 Quadrant I
 Quadrant II
@@ -1056,7 +1057,7 @@ Quadrant IV
 {{< multiplechoice
   question="In which quadrant does the terminal side of an angle of $\tfrac{5\pi}{6}$ in standard position lie?"
   answer="Quadrant II"
-  hint="Convert to degrees: $\tfrac{5\pi}{6}=150^\circ$, which is between $90^\circ$ and $180^\circ$."
+  hint="Compare the angle with the quadrantal angles $\tfrac{\pi}{2}$, $\pi$, $\tfrac{3\pi}{2}$, and $2\pi$, which bound the quadrants."
 >}}
 Quadrant I
 Quadrant II
@@ -1077,7 +1078,7 @@ Quadrant IV
 {{< fillin
   question="Convert $-540^\circ$ to radians."
   answer="-3\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$-3\pi$"
   hint="Multiply the degree measure by $\tfrac{\pi}{180}$."
 >}}
@@ -1085,7 +1086,7 @@ Quadrant IV
 {{< fillin
   question="Convert $150^\circ$ to radians."
   answer="\frac{5\pi}{6}"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{5\pi}{6}$"
   hint="Multiply the degree measure by $\tfrac{\pi}{180}$ and reduce the fraction."
 >}}
@@ -1111,7 +1112,7 @@ Quadrant IV
 {{< fillin
   question="Find the angle between $0$ and $2\pi$ that is coterminal with $\tfrac{44\pi}{9}$."
   answer="\frac{8\pi}{9}"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{8\pi}{9}$"
   hint="Subtract $2\pi$ (as $\tfrac{18\pi}{9}$) until the result lies between $0$ and $2\pi$."
 >}}
@@ -1147,6 +1148,7 @@ Quadrant IV
 {{< fillin
   question="A wheel of radius 14 inches is rotating 0.5 rad/s. Find the linear speed v, in inches per second."
   answer="7"
+  answerForm="decimal"
   answerDisplay="$7$ in./s"
   hint="Apply $v=r\omega$."
 >}}
@@ -1177,4 +1179,4 @@ Quadrant IV
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 5.1: Angles](https://openstax.org/books/precalculus-2e/pages/5-1-angles) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all twenty-three instructional figures the source draws before its Section Exercises as accessible spec-first SVGs, thirty-two `apfigure` panels in all — ray EF; angle DEF; the sample angle θ; the initial-side/terminal-side/vertex diagram (its small rotation-indicator arc is omitted, since the figure engine's arc primitive requires a coordinate frame that a bare, axis-free angle diagram does not carry — a simplification, not a content loss, since the initial/terminal/vertex labels already convey the rotation); the standard-position schematic; the 90°/360° drawing pair; the four quadrantal-angle panels; the 30° and −135° worked-example angles; the radius-string circle illustrating why $2\pi\approx6.28$; the one-radian construction; the three-panel 1-radian/2-radian/full-revolution figure (drawn with a full circle, three dashed diameters connecting antipodal radian markers, and one solid radius, in place of the source's hand-drawn spiral of radius arcs); the 45°-on-two-circles figure (its decorative dashed crosshair, which carries no additional angle information beyond the labeled 45° ray itself, is omitted); the sixteen-ray common-angle wheels in degrees and radians; the 140°/−220° and −45°/315° coterminal pairs; the four reference-angle panels; the 800°/80° and 19π/4/3π/4 coterminal pairs (each drawn as an Archimedean spiral $r=r_0+(r_1-r_0)\tfrac{\theta}{\theta_{\max}}$ sampled from that equation at three-degree steps, so the two extra full rotations are shown as the source draws them, plus a labeled outer arc for the coterminal angle); the generic arc-length and sector-area diagrams; and the sprinkler sector. The two Section Exercises figures (radius 3 in at 140°; radius 4.5 cm at 2π/5) were not needed: the Practice block draws its arc-length coverage from three answered exercises that need no figure instead. Omitted the decorative photograph of the 3rd-century Hierapolis water wheel, which carries no mathematics, and reworded the sentence that pointed at it. Converted the eleven "Try Its" into interactive fill-ins and multiple-choice questions with instant feedback; the 240° "sketch the angle" Try It became a quadrant-identification multiple choice, since the source asks only for a drawing with no separate checkable fact — the same adaptation used for the three "draw an angle" Practice items, each verified against the source's own solution figure. Every coterminal-angle exercise states the representative it wants (“between $0^\circ$ and $360^\circ$”, “where $0\le\theta<2\pi$”), because a coterminal angle has infinitely many correct measures and only the stated one is graded. Every one of them remains a fill-in, including the two whose printed angle exceeds a full turn ($870^\circ$, and $\tfrac{44\pi}{9}$ in the Practice block): the grader reads a degree mark as the quantity it is rather than folding it onto one turn, so retyping the printed $870^\circ$ against the keyed $150^\circ$ is graded incorrect — confirmed against the real grader for all three spellings of the symbol. Adapted fourteen selected end-of-section exercises — three quadrant identifications, three degree/radian conversions, three coterminal-angle findings, three arc-length computations, a four-part angular/linear-speed problem, and a linear-speed problem — into sixteen interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 5.1: Angles](https://openstax.org/books/precalculus-2e/pages/5-1-angles) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all twenty-three instructional figures the source draws before its Section Exercises as accessible spec-first SVGs, thirty-two `apfigure` panels in all — ray EF; angle DEF; the sample angle θ; the initial-side/terminal-side/vertex diagram with its rotation arc; the standard-position schematic; the 90°/360° drawing pair; the four quadrantal-angle panels; the 30° and −135° worked-example angles; the radius-string circle illustrating why $2\pi\approx6.28$; the one-radian construction; the three-panel 1-radian/2-radian/full-revolution figure (the full-revolution panel states the revolution in a line beneath the circle in place of the source's inner circular arrow); the 45°-on-two-circles figure (its decorative dashed crosshair, which carries no additional angle information beyond the labeled 45° ray itself, is omitted); the sixteen-ray common-angle wheels in degrees and radians; the 140°/−220° and −45°/315° coterminal pairs; the four reference-angle panels; the 800°/80° and 19π/4/3π/4 coterminal pairs (each drawn as an Archimedean spiral $r=r_0+(r_1-r_0)\tfrac{\theta}{\theta_{\max}}$ sampled from that equation at three-degree steps, so the two extra full rotations are shown as the source draws them, plus a labeled outer arc for the coterminal angle); every rotation arc carries an arrowhead showing its direction, as in the source; the generic arc-length and sector-area diagrams (the sector-area diagram points its formula label into the sector in place of the source's shading); and the sprinkler sector (the arc-length diagram and the sprinkler are drawn in standard position on coordinate axes). The two Section Exercises figures (radius 3 in at 140°; radius 4.5 cm at 2π/5) were not needed: the Practice block draws its arc-length coverage from three answered exercises that need no figure instead. Omitted the decorative photograph of the 3rd-century Hierapolis water wheel, which carries no mathematics, and reworded the sentence that pointed at it. Converted the eleven "Try Its" into interactive fill-ins and multiple-choice questions with instant feedback; the 240° "sketch the angle" Try It became a quadrant-identification multiple choice, since the source asks only for a drawing with no separate checkable fact — the same adaptation used for the three "draw an angle" Practice items, each verified against the source's own solution figure. Every coterminal-angle exercise states the representative it wants (“between $0^\circ$ and $360^\circ$”, “where $0\le\theta<2\pi$”), because a coterminal angle has infinitely many correct measures and only the stated one is graded. Every one of them remains a fill-in, including the two whose printed angle exceeds a full turn ($870^\circ$, and $\tfrac{44\pi}{9}$ in the Practice block): the grader reads a degree mark as the quantity it is rather than folding it onto one turn, so retyping the printed $870^\circ$ against the keyed $150^\circ$ is graded incorrect — confirmed against the real grader for all three spellings of the symbol. Adapted fourteen selected end-of-section exercises — three quadrant identifications, three degree/radian conversions, three coterminal-angle findings, three arc-length computations, a three-part angular/linear-speed problem, and a linear-speed problem — into sixteen interactive components in a closing Practice block, one group per objective.</small>

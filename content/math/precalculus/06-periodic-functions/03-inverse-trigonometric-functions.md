@@ -40,13 +40,13 @@ In previous sections, we evaluated the trigonometric functions at various angles
 Bear in mind that the sine, cosine, and tangent functions are not one-to-one functions. The graph of each function would fail the horizontal line test. In fact, no periodic function can be one-to-one because each output in its range corresponds to at least one input in every period, and there are an infinite number of periods. As with other functions that are not one-to-one, we will need to restrict the domain of each function to yield a new function that is one-to-one. We choose a domain for each function that includes the number $0$. The figure below shows the graph of the sine function limited to $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ and the graph of the cosine function limited to $[0,\pi]$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The sine function on its restricted domain from negative pi over 2 to pi over 2, increasing from the point (negative pi over 2, negative 1) to the point (pi over 2, 1).","xMin":-2,"xMax":2,"yMin":-1.4,"yMax":1.4,"grid":false,"tickLabels":"y","yTickStep":1,"unit":95,"curves":[{"kind":"sine","from":-1.5707963267948966,"to":1.5707963267948966,"arrows":false}],"points":[{"at":[-1.5707963267948966,-1]},{"at":[1.5707963267948966,1]}],"texts":[{"at":[-1.5707963267948966,-0.18],"text":"−π/2"},{"at":[1.5707963267948966,-0.18],"text":"π/2"}]}
+{"ariaLabel":"The sine function on its restricted domain from negative pi over 2 to pi over 2, increasing from the point (negative pi over 2, negative 1) to the point (pi over 2, 1).","xMin":-2,"xMax":2,"yMin":-1.4,"yMax":1.4,"grid":false,"tickLabels":"y","yTickStep":1,"unit":95,"curves":[{"kind":"sine","from":-1.5707963267948966,"to":1.5707963267948966,"arrows":false}],"points":[{"at":[-1.5707963267948966,-1]},{"at":[1.5707963267948966,1]}],"segments":[{"from":[-1.5707963267948966,-0.05],"to":[-1.5707963267948966,0.05],"arrows":false},{"from":[1.5707963267948966,-0.05],"to":[1.5707963267948966,0.05],"arrows":false}],"texts":[{"at":[-1.5707963267948966,-0.24],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-0.24],"text":"π/2","anchor":"middle"}]}
 {{< /apfigure >}}
 
 *(a) Sine function on a restricted domain of $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The cosine function on its restricted domain from 0 to pi, decreasing from the point (0, 1) to the point (pi, negative 1).","xMin":-0.4,"xMax":3.5,"yMin":-1.4,"yMax":1.4,"grid":false,"tickLabels":"y","yTickStep":1,"unit":75,"curves":[{"kind":"cosine","from":0,"to":3.141592653589793,"arrows":false}],"points":[{"at":[0,1]},{"at":[3.141592653589793,-1]}],"texts":[{"at":[1.9,-0.32],"text":"π/2"},{"at":[3.141592653589793,-0.32],"text":"π"}]}
+{"ariaLabel":"The cosine function on its restricted domain from 0 to pi, decreasing from the point (0, 1) through (pi over 2, 0) to the point (pi, negative 1).","xMin":-0.4,"xMax":3.5,"yMin":-1.4,"yMax":1.4,"grid":false,"tickLabels":"y","yTickStep":1,"unit":75,"curves":[{"kind":"cosine","from":0,"to":3.141592653589793,"arrows":false}],"points":[{"at":[0,1]},{"at":[3.141592653589793,-1]}],"segments":[{"from":[1.5707963267948966,-0.06],"to":[1.5707963267948966,0.06],"arrows":false},{"from":[3.141592653589793,-0.06],"to":[3.141592653589793,0.06],"arrows":false}],"texts":[{"at":[1.4907963267948965,-0.3],"text":"π/2","anchor":"end"},{"at":[3.141592653589793,0.14],"text":"π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 *(b) Cosine function on a restricted domain of $[0,\pi]$.*
@@ -54,7 +54,7 @@ Bear in mind that the sine, cosine, and tangent functions are not one-to-one fun
 The figure below shows the graph of the tangent function limited to $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The tangent function on its restricted domain from negative pi over 2 to pi over 2, an increasing curve passing through the origin and approaching vertical asymptotes at both ends of the domain.","xMin":-1.9,"xMax":1.9,"yMin":-5.3,"yMax":5.3,"grid":false,"tickLabels":"y","yTickStep":1,"unit":90,"curves":[{"kind":"tangent","from":-1.5707963267948966,"to":1.5707963267948966,"arrows":false}],"texts":[{"at":[-1.5707963267948966,-0.5],"text":"−π/2"},{"at":[1.5707963267948966,-0.5],"text":"π/2"}]}
+{"ariaLabel":"The tangent function on its restricted domain from negative pi over 2 to pi over 2, an increasing curve passing through the origin and approaching vertical asymptotes at both ends of the domain.","xMin":-1.9,"xMax":1.9,"yMin":-5.3,"yMax":5.3,"grid":false,"tickLabels":"y","yTickStep":1,"xUnit":90,"yUnit":30,"curves":[{"kind":"tangent","from":-1.5707963267948966,"to":1.5707963267948966}],"segments":[{"from":[-1.5707963267948966,-0.15],"to":[-1.5707963267948966,0.15],"arrows":false},{"from":[1.5707963267948966,-0.15],"to":[1.5707963267948966,0.15],"arrows":false}],"texts":[{"at":[-1.5707963267948966,-0.9],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-0.9],"text":"π/2","anchor":"middle"}]}
 {{< /apfigure >}}
 
 *Tangent function on a restricted domain of $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$.*
@@ -78,19 +78,19 @@ On these restricted domains, we can define the inverse trigonometric functions.
 The graphs of the inverse functions are shown below. Notice that the output of each of these inverse functions is a *number*, an angle in radian measure. We see that $\sin^{-1}x$ has domain $[-1,1]$ and range $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\cos^{-1}x$ has domain $[-1,1]$ and range $[0,\pi]$, and $\tan^{-1}x$ has domain of all real numbers and range $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$. To find the domain and range of inverse trigonometric functions, switch the domain and range of the original functions. Each graph of the inverse trigonometric function is a reflection of the graph of the original function about the line $y=x$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals sine x, an S-shaped curve through the origin extending with arrows beyond the window, together with the graph of y equals inverse sine of x on its domain from -1 to 1 with closed endpoints at (-1, -pi over 2) and (1, pi over 2), and the dashed line y = x.","xMin":-4.3,"xMax":4.3,"yMin":-1.85,"yMax":1.85,"grid":false,"tickLabels":"x","xTickStep":1,"unit":80,"curves":[{"kind":"sine"},{"kind":"arcsine"}],"lines":[{"slope":1,"intercept":0,"dashed":true,"label":"y = x"}],"points":[{"at":[-1,-1.5707963267948966]},{"at":[1,1.5707963267948966]}],"texts":[{"at":[-0.75,1.5708],"text":"π/2"},{"at":[-0.9,-1.78],"text":"−π/2"},{"at":[3.4,0.9],"text":"y = sin(x)"},{"at":[1.3,1.35],"text":"y = sin⁻¹(x)"}]}
+{"ariaLabel":"The graph of y equals sine x on its restricted domain from negative pi over 2 to pi over 2, with closed endpoints at (negative pi over 2, -1) and (pi over 2, 1), together with the graph of y equals inverse sine of x on its domain from -1 to 1, with closed endpoints at (-1, negative pi over 2) and (1, pi over 2), and the dashed line y = x; the two curves are mirror images across the dashed line.","xMin":-2.3,"xMax":2.3,"yMin":-2.3,"yMax":2.3,"grid":false,"tickLabels":"x","xTickStep":1,"unit":90,"curves":[{"kind":"sine","from":-1.5707963267948966,"to":1.5707963267948966,"arrows":false},{"kind":"arcsine"}],"lines":[{"slope":1,"intercept":0,"dashed":true}],"points":[{"at":[-1,-1.5707963267948966]},{"at":[1,1.5707963267948966]},{"at":[-1.5707963267948966,-1]},{"at":[1.5707963267948966,1]}],"segments":[{"from":[-0.06,1.5707963267948966],"to":[0.06,1.5707963267948966],"arrows":false},{"from":[-0.06,-1.5707963267948966],"to":[0.06,-1.5707963267948966],"arrows":false}],"texts":[{"at":[-0.12,1.5707963267948966],"text":"π/2","anchor":"end","dy":4},{"at":[-0.12,-1.5707963267948966],"text":"−π/2","anchor":"end","dy":4},{"at":[0.9,1.74],"text":"y = sin⁻¹(x)","anchor":"middle"},{"at":[1.72,0.9],"text":"y = sin(x)","anchor":"start"},{"at":[2.45,2.2],"text":"y = x","anchor":"start"}]}
 {{< /apfigure >}}
 
 *The sine function and inverse sine (or arcsine) function.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals cosine x, a downward curve extending with arrows beyond the window, together with the graph of y equals inverse cosine of x on its domain from -1 to 1 with closed endpoints at (-1, pi) and (1, 0), and the dashed line y = x.","xMin":-1.5,"xMax":2.3,"yMin":-1.7,"yMax":3.5,"grid":false,"tickLabels":"x","xTickStep":1,"unit":140,"curves":[{"kind":"cosine"},{"kind":"arccosine"}],"lines":[{"slope":1,"intercept":0,"dashed":true,"label":"y = x"}],"points":[{"at":[-1,3.141592653589793]},{"at":[1,0]}],"texts":[{"at":[-0.85,3.141592653589793],"text":"π"},{"at":[-0.85,1.5707963267948966],"text":"π/2"},{"at":[1.55,0.9],"text":"y = cos(x)"},{"at":[-1.4,1.9],"text":"y = cos⁻¹(x)"}]}
+{"ariaLabel":"The graph of y equals cosine x on its restricted domain from 0 to pi, with closed endpoints at (0, 1) and (pi, -1), together with the graph of y equals inverse cosine of x on its domain from -1 to 1, with closed endpoints at (-1, pi) and (1, 0), and the dashed line y = x; the two curves are mirror images across the dashed line.","xMin":-1.4,"xMax":3.5,"yMin":-1.4,"yMax":3.5,"grid":false,"tickLabels":"x","xTickStep":1,"unit":80,"curves":[{"kind":"cosine","from":0,"to":3.141592653589793,"arrows":false},{"kind":"arccosine"}],"lines":[{"slope":1,"intercept":0,"dashed":true}],"points":[{"at":[-1,3.141592653589793]},{"at":[1,0]},{"at":[0,1]},{"at":[3.141592653589793,-1]}],"segments":[{"from":[-0.06,3.141592653589793],"to":[0.06,3.141592653589793],"arrows":false},{"from":[-0.06,1.5707963267948966],"to":[0.06,1.5707963267948966],"arrows":false}],"texts":[{"at":[-0.12,3.141592653589793],"text":"π","anchor":"end","dy":4},{"at":[-0.25,1.5707963267948966],"text":"π/2","anchor":"end","dy":4},{"at":[-0.7,2.0],"text":"y = cos⁻¹(x)","anchor":"end"},{"at":[3.3,-1.0],"text":"y = cos(x)","anchor":"start","dy":5},{"at":[3.0,3.3],"text":"y = x","anchor":"end"}]}
 {{< /apfigure >}}
 
 *The cosine function and inverse cosine (or arccosine) function.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals tangent x, an increasing curve through the origin approaching vertical asymptotes at x equals pi over 2 and x equals negative pi over 2, together with the graph of y equals inverse tangent of x approaching but never reaching horizontal asymptotes at y equals pi over 2 and y equals negative pi over 2, and the dashed line y = x.","xMin":-4.3,"xMax":4.3,"yMin":-1.85,"yMax":1.85,"grid":false,"tickLabels":"x","xTickStep":1,"unit":80,"curves":[{"kind":"tangent","from":-1.5707963267948966,"to":1.5707963267948966},{"kind":"arctangent"}],"lines":[{"slope":1,"intercept":0,"dashed":true,"label":"y = x"}],"texts":[{"at":[-0.75,1.5708],"text":"π/2"},{"at":[-0.9,-1.78],"text":"−π/2"},{"at":[1.9,1.75],"text":"y = tan(x)"},{"at":[2.5,0.65],"text":"y = tan⁻¹(x)"}]}
+{"ariaLabel":"The graph of y equals tangent x on the interval from negative pi over 2 to pi over 2, an increasing curve through the origin that leaves the top and the bottom of the window with arrows (it approaches vertical asymptotes at x equals negative pi over 2 and x equals pi over 2, beyond the window), together with the graph of y equals inverse tangent of x, an increasing curve through the origin approaching but never reaching the dashed horizontal asymptotes y equals negative pi over 2 and y equals pi over 2, and the dashed line y = x; the two curves are mirror images across the line y = x.","xMin":-4.3,"xMax":4.3,"yMin":-2.3,"yMax":2.3,"grid":false,"tickLabels":"x","xTickStep":1,"unit":80,"curves":[{"kind":"tangent","from":-1.5707963267948966,"to":1.5707963267948966},{"kind":"arctangent"}],"lines":[{"slope":1,"intercept":0,"dashed":true},{"y":1.5707963267948966,"dashed":true,"arrows":false},{"y":-1.5707963267948966,"dashed":true,"arrows":false}],"texts":[{"at":[-0.12,1.5707963267948966],"text":"π/2","anchor":"end","dy":-5},{"at":[-0.12,-1.5707963267948966],"text":"−π/2","anchor":"end","dy":14},{"at":[1.16,2.45],"text":"y = tan(x)","anchor":"middle"},{"at":[4.2,0.92],"text":"y = tan⁻¹(x)","anchor":"end"},{"at":[2.45,2.2],"text":"y = x","anchor":"start"}]}
 {{< /apfigure >}}
 
 *The tangent function and inverse tangent (or arctangent) function.*
@@ -114,10 +114,11 @@ In this problem, $x=0.96593$, and $y=\tfrac{5\pi}{12}$.
 $$\sin^{-1}(0.96593)\approx\tfrac{5\pi}{12}$$
 
 {{< fillin
-  question="Given $\cos(0.5)\approx0.8776$, write the equivalent relation involving the inverse cosine, as an equation of the form $\cos^{-1}(a)\approx b$."
-  answer="\cos^{-1}(0.8776)=0.5"
-  answerDisplay="$\cos^{-1}(0.8776)\approx0.5$"
-  hint="Swap which side of the equation the number and the angle sit on: if $\cos y=x$ then $\cos^{-1}x=y$."
+  question="Given $\cos(0.5)\approx0.8776$, write a relation involving the inverse cosine: $\cos^{-1}(0.8776)\approx b$. Enter the number $b$."
+  answer="0.5"
+  answerForm="evaluated-trig decimal"
+  answerDisplay="$\cos^{-1}(0.8776)\approx0.5$, so $b=0.5$"
+  hint="Use the relation for the inverse cosine: if $\cos y=x$ for an angle $y$ in $[0,\pi]$, then $\cos^{-1}x=y$."
 >}}
 
 ## Finding the Exact Value of Expressions Involving the Inverse Sine, Cosine, and Tangent Functions
@@ -147,18 +148,18 @@ Evaluate each of the following, as in the example above.
 
 {{< fillin
   question="Evaluate $\sin^{-1}(-1)$."
-  answer="-\pi/2"
-  answerForm="evaluated-trig radians"
+  answer="-\frac{\pi}{2}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$-\tfrac{\pi}{2}$"
-  hint="Find the angle in $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ whose sine is $-1$."
+  hint="On the unit circle, sine is the $y$-coordinate: find where it equals $-1$, and choose the angle that lies in the range of the inverse sine, $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$."
 >}}
 
 {{< fillin
   question="Evaluate $\tan^{-1}(-1)$."
-  answer="-\pi/4"
-  answerForm="evaluated-trig radians"
+  answer="-\frac{\pi}{4}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$-\tfrac{\pi}{4}$"
-  hint="Find the angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$ whose tangent is $-1$."
+  hint="Recall the special angle whose tangent is $1$, then use the sign of tangent to pick the angle in the range of the inverse tangent, $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$."
 >}}
 
 Evaluate the remaining two expressions.
@@ -166,17 +167,17 @@ Evaluate the remaining two expressions.
 {{< fillin
   question="Evaluate $\cos^{-1}(-1)$."
   answer="\pi"
-  answerForm="evaluated-trig radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\pi$"
-  hint="Find the angle in $[0,\pi]$ whose cosine is $-1$."
+  hint="On the unit circle, cosine is the $x$-coordinate: find where it equals $-1$, and choose the angle that lies in the range of the inverse cosine, $[0,\pi]$."
 >}}
 
 {{< fillin
   question="Evaluate $\cos^{-1}\left(\tfrac12\right)$."
-  answer="\pi/3"
-  answerForm="evaluated-trig radians"
+  answer="\frac{\pi}{3}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\tfrac{\pi}{3}$"
-  hint="Find the angle in $[0,\pi]$ whose cosine is $\tfrac12$."
+  hint="Recall which special angle has a cosine of $\tfrac12$, and check that it lies in the range of the inverse cosine, $[0,\pi]$."
 >}}
 
 ## Using a Calculator to Evaluate Inverse Trigonometric Functions
@@ -254,17 +255,17 @@ For any trigonometric function, $f(f^{-1}(y))=y$ for all $y$ in the proper domai
 
   $$
   \begin{array}{l}
-  \sin(\sin^{-1}x)=x\ \text{for}\ -1\le x\le1 \\
-  \cos(\cos^{-1}x)=x\ \text{for}\ -1\le x\le1 \\
-  \tan(\tan^{-1}x)=x\ \text{for}\ -\infty<x<\infty
+  \sin(\sin^{-1}x)=x\ \text{for}\ {-1}\le x\le1 \\
+  \cos(\cos^{-1}x)=x\ \text{for}\ {-1}\le x\le1 \\
+  \tan(\tan^{-1}x)=x\ \text{for}\ {-\infty}<x<\infty
   \end{array}
   $$
 
   $$
   \begin{array}{l}
-  \sin^{-1}(\sin x)=x\ \text{only for}\ -\tfrac{\pi}{2}\le x\le\tfrac{\pi}{2} \\
+  \sin^{-1}(\sin x)=x\ \text{only for}\ {-\tfrac{\pi}{2}}\le x\le\tfrac{\pi}{2} \\
   \cos^{-1}(\cos x)=x\ \text{only for}\ 0\le x\le\pi \\
-  \tan^{-1}(\tan x)=x\ \text{only for}\ -\tfrac{\pi}{2}<x<\tfrac{\pi}{2}
+  \tan^{-1}(\tan x)=x\ \text{only for}\ {-\tfrac{\pi}{2}}<x<\tfrac{\pi}{2}
   \end{array}
   $$
 {{< /callout >}}
@@ -296,18 +297,18 @@ For any trigonometric function, $f(f^{-1}(y))=y$ for all $y$ in the proper domai
 
 {{< fillin
   question="Evaluate $\tan^{-1}\left(\tan\left(\tfrac{\pi}{8}\right)\right)$."
-  answer="\pi/8"
-  answerForm="evaluated-trig radians"
+  answer="\frac{\pi}{8}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\tfrac{\pi}{8}$"
-  hint="$\tfrac{\pi}{8}$ is already in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$, the restricted domain of tangent."
+  hint="Check whether the inner angle lies in the restricted domain of tangent, $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$, as in the How To above."
 >}}
 
 {{< fillin
   question="Evaluate $\tan^{-1}\left(\tan\left(\tfrac{11\pi}{9}\right)\right)$."
-  answer="2\pi/9"
-  answerForm="evaluated-trig radians"
+  answer="\frac{2\pi}{9}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\tfrac{2\pi}{9}$"
-  hint="$\tfrac{11\pi}{9}$ is outside $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$; find the angle in that interval with the same tangent."
+  hint="Tangent repeats every $\pi$: add or subtract a multiple of $\pi$ to move the inner angle into $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$."
 >}}
 
 ### Evaluating Compositions of the Form $f^{-1}(g(x))$
@@ -358,10 +359,10 @@ $$
 
 {{< fillin
   question="Evaluate $\cos^{-1}\left(\sin\left(-\tfrac{11\pi}{4}\right)\right)$."
-  answer="3\pi/4"
-  answerForm="evaluated-trig radians"
+  answer="\frac{3\pi}{4}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\tfrac{3\pi}{4}$"
-  hint="First reduce $-\tfrac{11\pi}{4}$ to a coterminal angle in $[0,2\pi)$, then apply the cofunction relationship."
+  hint="Find an angle $y$ in $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ with the same sine as $-\tfrac{11\pi}{4}$, then use $\cos^{-1}(\sin x)=\tfrac{\pi}{2}-y$ from the How To above."
 >}}
 
 ### Evaluating Compositions of the Form $f(g^{-1}(x))$
@@ -391,8 +392,8 @@ We know that the inverse cosine always gives an angle on the interval $[0,\pi]$,
 
 {{< fillin
   question="Evaluate $\cos\left(\tan^{-1}\left(\tfrac{5}{12}\right)\right)$."
-  answer="12/13"
-  answerForm="evaluated-trig"
+  answer="\frac{12}{13}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac{12}{13}$"
   hint="Sketch a right triangle with legs $5$ and $12$, then find its hypotenuse."
 >}}
@@ -426,7 +427,7 @@ $$
 {{< fillin
   question="Evaluate $\cos\left(\sin^{-1}\left(\tfrac79\right)\right)$."
   answer="\frac{4\sqrt2}{9}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{4\sqrt2}{9}$"
   hint="Sketch a right triangle with hypotenuse $9$ and opposite leg $7$; use the Pythagorean theorem for the third side."
 >}}
@@ -451,7 +452,7 @@ $$\cos\left(\sin^{-1}\left(\tfrac{x}{3}\right)\right)=\tfrac{\sqrt{9-x^2}}{3}$$
 {{< fillin
   question="Find a simplified expression for $\sin\left(\tan^{-1}(4x)\right)$ for $-\tfrac14\le x\le\tfrac14$."
   answer="\frac{4x}{\sqrt{16x^2+1}}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig single-fraction reduced-fraction"
   answerDisplay="$\tfrac{4x}{\sqrt{16x^2+1}}$"
   hint="Sketch a right triangle with opposite leg $4x$ and adjacent leg $1$; find the hypotenuse, then read off the sine."
 >}}
@@ -480,83 +481,81 @@ $$\cos\left(\sin^{-1}\left(\tfrac{x}{3}\right)\right)=\tfrac{\sqrt{9-x^2}}{3}$$
 {{< multiplechoice
   question="Determine whether the following statement is true or false: $\arccos(-x)=\pi-\arccos x$."
   answer="True"
-  hint="Compare the reference angles of $\arccos x$ and $\arccos(-x)$; one lies in quadrant I, the other in quadrant II."
+  hint="Test the statement with a value whose inverse cosine you know exactly, such as $x=\tfrac12$, and compare the two sides."
 >}}
 True
 False
 {{< /multiplechoice >}}
 
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals inverse cosine of x, decreasing from a closed dot at (-1, pi) to a closed dot at (1, 0).","xMin":-1.6,"xMax":1.6,"yMin":-0.6,"yMax":3.6,"grid":false,"tickLabels":"x","xTickStep":1,"unit":110,"curves":[{"kind":"arccosine"}],"points":[{"at":[-1,3.141592653589793]},{"at":[1,0]}],"texts":[{"at":[-1.3,3.141592653589793],"text":"π"},{"at":[-1.35,1.5707963267948966],"text":"π/2"}]}
-{{< /apfigure >}}
-
 {{< fillin
-  question="Graph $y=\arccos x$, shown above. State the domain of the function in interval notation."
+  question="Graph $y=\arccos x$ and state the domain of the function. Enter the domain in interval notation."
   answer="[-1,1]"
+  answerForm="evaluated-trig decimal"
   answerDisplay="$[-1,1]$"
-  hint="An inverse function's domain equals the original function's range; cosine's range is $[-1,1]$."
+  hint="Switch the domain and range of the restricted cosine function: the inverse's domain is the original function's range."
 >}}
 
 {{< fillin
-  question="Graph $y=\arccos x$, shown above. State the range of the function in interval notation."
+  question="Graph $y=\arccos x$ and state the range of the function. Enter the range in interval notation, in radians."
   answer="[0,\pi]"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$[0,\pi]$"
-  hint="An inverse function's range equals the original function's restricted domain; cosine was restricted to $[0,\pi]$."
+  hint="Switch the domain and range of the restricted cosine function: the inverse's range is the interval cosine was restricted to."
 >}}
 
 {{< multiplechoice
   question="Which graph shows $y=\tan^{-1}x$?"
   mode="graph"
   answerIndex="2"
-  hint="The inverse tangent is bounded between two horizontal asymptotes and increases through the origin — unlike the unrestricted tangent (unbounded) or the inverse sine (confined to $[-1,1]$)."
+  hint="Switch the domain and range of the restricted tangent function, then look for the graph with that domain and range."
 >}}
-{"ariaLabel":"An increasing curve through the origin that shoots up and down toward vertical asymptotes near the edges of the window, unbounded vertically.","xMin":-4,"xMax":4,"yMin":-2,"yMax":2,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"tangent","from":-1.5707963267948966,"to":1.5707963267948966}]}
+{"ariaLabel":"An increasing curve through the origin that rises steeply out of the top of the window near x = 1 and falls steeply out of the bottom near x = -1.","xMin":-4.4,"xMax":4.4,"yMin":-2.4,"yMax":2.4,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"tangent","from":-1.5707963267948966,"to":1.5707963267948966}]}
 ===OPT===
-{"ariaLabel":"A curve confined between x = -1 and x = 1, rising from a closed dot at the bottom-left end of its domain to a closed dot at the top-right end.","xMin":-4,"xMax":4,"yMin":-2,"yMax":2,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"arcsine"}],"points":[{"at":[-1,-1.5707963267948966]},{"at":[1,1.5707963267948966]}]}
+{"ariaLabel":"A curve confined between x = -1 and x = 1, rising through the origin from a closed dot at its bottom-left end to a closed dot at its top-right end.","xMin":-4.4,"xMax":4.4,"yMin":-2.4,"yMax":2.4,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"arcsine"}],"points":[{"at":[-1,-1.5707963267948966]},{"at":[1,1.5707963267948966]}]}
 ===OPT===
-{"ariaLabel":"A bounded increasing curve passing through the origin, approaching but never reaching two horizontal lines as x goes to positive and negative infinity.","xMin":-4,"xMax":4,"yMin":-2,"yMax":2,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"arctangent"}]}
+{"ariaLabel":"An increasing curve through the origin that extends across the whole window, levelling off as it rises to the right and as it falls to the left.","xMin":-4.4,"xMax":4.4,"yMin":-2.4,"yMax":2.4,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"arctangent"}]}
 ===OPT===
-{"ariaLabel":"A bounded decreasing curve passing through the origin, approaching but never reaching two horizontal lines as x goes to positive and negative infinity.","xMin":-4,"xMax":4,"yMin":-2,"yMax":2,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"arctangent","a":-1}]}
+{"ariaLabel":"A decreasing curve through the origin that extends across the whole window, levelling off as it falls to the right and as it rises to the left.","xMin":-4.4,"xMax":4.4,"yMin":-2.4,"yMax":2.4,"grid":false,"tickLabels":true,"unit":80,"curves":[{"kind":"arctangent","a":-1}]}
 {{< /multiplechoice >}}
 
 ### Find the exact value of expressions involving the inverse sine, cosine, and tangent functions
 
 {{< fillin
   question="Find the exact value: $\sin^{-1}\left(-\tfrac12\right)$."
-  answer="-\pi/6"
-  answerForm="evaluated-trig radians"
+  answer="-\frac{\pi}{6}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$-\tfrac{\pi}{6}$"
-  hint="Find the angle in $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ whose sine is $-\tfrac12$."
+  hint="Recall the special angle whose sine is $\tfrac12$, then use the sign to pick the angle in the range of the inverse sine, $\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$."
 >}}
 
 {{< fillin
   question="Find the exact value: $\cos^{-1}\left(-\tfrac{\sqrt2}{2}\right)$."
-  answer="3\pi/4"
-  answerForm="evaluated-trig radians"
+  answer="\frac{3\pi}{4}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\tfrac{3\pi}{4}$"
-  hint="Find the angle in $[0,\pi]$ whose cosine is $-\tfrac{\sqrt2}{2}$; it is the supplement of $\tfrac{\pi}{4}$."
+  hint="Recall the special angle whose cosine is $\tfrac{\sqrt2}{2}$, then use the sign of cosine to pick the angle in the range of the inverse cosine, $[0,\pi]$."
 >}}
 
 {{< fillin
   question="Find the exact value: $\tan^{-1}\left(-\sqrt3\right)$."
-  answer="-\pi/3"
-  answerForm="evaluated-trig radians"
+  answer="-\frac{\pi}{3}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$-\tfrac{\pi}{3}$"
-  hint="Find the angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$ whose tangent is $-\sqrt3$."
+  hint="Recall the special angle whose tangent is $\sqrt3$, then use the sign to pick the angle in the range of the inverse tangent, $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$."
 >}}
 
 ### Use a calculator to evaluate inverse trigonometric functions
 
 {{< fillin
-  question="Use a calculator to evaluate $\cos^{-1}(-0.4)$. Round to the nearest hundredth."
-  answer="1.98"
+  question="Use a calculator to evaluate $\tan^{-1}(6)$. Express the answer in radians, to the nearest hundredth."
+  answer="1.41"
   answerForm="decimal"
-  answerDisplay="$1.98$"
-  hint="Use your calculator's inverse cosine key in radian mode, then round."
+  answerDisplay="$1.41$"
+  hint="Use your calculator's inverse tangent key in radian mode, then round."
 >}}
 
 {{< fillin
-  question="Use a calculator to evaluate $\arccos\left(\tfrac35\right)$. Round to the nearest hundredth."
+  question="Use a calculator to evaluate $\arccos\left(\tfrac35\right)$. Express the answer in radians, to the nearest hundredth."
   answer="0.93"
   answerForm="decimal"
   answerDisplay="$0.93$"
@@ -564,7 +563,7 @@ False
 >}}
 
 {{< fillin
-  question="Find the angle $\theta$ in the right triangle below. Round to the nearest hundredth."
+  question="Find the angle $\theta$ in the right triangle below. Give the radian measure, rounded to the nearest hundredth."
   answer="0.56"
   answerForm="decimal"
   answerDisplay="$0.56$"
@@ -579,20 +578,20 @@ False
 
 {{< fillin
   question="Find the exact value: $\sin\left(\cos^{-1}\left(\tfrac35\right)\right)$."
-  answer="4/5"
-  answerForm="evaluated-trig"
+  answer="\frac{4}{5}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac45$"
   hint="Sketch a right triangle with $\cos\theta=\tfrac35$; then read $\sin\theta$ from its sides."
 >}}
 
 {{< fillin
   question="Find the exact value: $\cos\left(\tan^{-1}\left(\tfrac{12}{5}\right)\right)$."
-  answer="5/13"
-  answerForm="evaluated-trig"
+  answer="\frac{5}{13}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac{5}{13}$"
   hint="Sketch a right triangle with $\tan\theta=\tfrac{12}{5}$; find the hypotenuse, then read $\cos\theta$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 6.3: Inverse Trigonometric Functions](https://openstax.org/books/precalculus-2e/pages/6-3-inverse-trigonometric-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative "Trig Functions / Inverse Trig Functions" domain-range chart image (Figure 1), recreated as a two-by-two Markdown table with identical content; recreated all fifteen instructional figures as accessible spec-first SVGs built from exact coordinates — the restricted-domain sine and cosine panels and the restricted-domain tangent graph; the three function-and-inverse overlay graphs (sine/arcsine, cosine/arccosine, tangent/arctangent, each with the dashed line $y=x$), simplified to label only the endpoints of each inverse curve's range ($\pm\tfrac{\pi}{2}$ or $\pi$) rather than every eighth-multiple of $\pi$ the source prints, since the shape and endpoints are the instructional content; the generic right-triangle diagram for the calculator How To; the two worked-example/Try-It right triangles solved for $\theta$; the cofunction-relationship triangle; and the three composition right triangles. Converted the two-column "Trig Functions/Inverse Trig Functions" relations into the book's callout convention, and the Q&A into the book's Q&A callout convention. Every retained Try It became a real `fillin` component; the four-part Try It after Example 2 was split into two consecutive pairs of fillins (separated by a sentence of connecting prose) to respect the section's 2–3 consecutive-question limit, each carrying `answerForm="evaluated-trig"` so retyping the printed subject cannot pass. Every calculator-rounding Try It and exercise states the number of decimal places to make it gradable as a `decimal`. Omitted the "Access these online resources" media link. Adapted nine selected end-of-section exercises — one true/false identity, a domain-and-range graphing item (adapted to a static figure plus two fill-ins, with a graph-recognition multiple choice added for the inverse tangent alongside it), three exact-value evaluations, three calculator/right-triangle evaluations, and two exact-value compositions — into eleven interactive components in a closing Practice block, one group per objective. This module's own "Key Concepts" and its module-scoped `<glossary>` (six terms: arccosine, arcsine, arctangent, and the three inverse function definitions) are transcribed as this section's `## Key concepts` and `## Key terms`; the printed textbook interleaves them with the rest of chapter 6's summary terms on its own consolidated Chapter Review pages (PDF pp. 678–679) rather than printing them immediately after this section, a print-layout choice that does not change which content belongs to module m49390.</small>
+<small>This section is adapted from [Precalculus 2e, Section 6.3: Inverse Trigonometric Functions](https://openstax.org/books/precalculus-2e/pages/6-3-inverse-trigonometric-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative "Trig Functions / Inverse Trig Functions" domain-range chart image (Figure 1), recreated as a two-by-two Markdown table with identical content; recreated the other eleven body figures and one exercise figure as thirteen accessible spec-first SVGs built from exact coordinates (the two-panel restricted-domain figure became two) — the restricted-domain sine and cosine panels and the restricted-domain tangent graph; the three function-and-inverse overlay graphs (sine/arcsine, cosine/arccosine, tangent/arctangent, each with the dashed line $y=x$), redrawn with equal scales on both axes so each inverse is the exact reflection of its function across $y=x$ (sine and cosine are drawn on their restricted domains with closed endpoints, where the source draws sine as an arrowed curve and cosine with an arrow at $x=0$), with the $y$-axis marked only at the ends of each inverse's range ($\pm\tfrac{\pi}{2}$, or $\tfrac{\pi}{2}$ and $\pi$) rather than at every eighth-multiple of $\pi$ the source prints, and with the inverse tangent's horizontal asymptotes $y=\pm\tfrac{\pi}{2}$ drawn dashed; the generic right-triangle diagram for the calculator How To; the two worked-example/Try-It right triangles solved for $\theta$; the cofunction-relationship triangle; the two composition right triangles; and the right triangle of the Practice exercise. Converted the two-column "Trig Functions/Inverse Trig Functions" relations into the book's callout convention, and the Q&A into the book's Q&A callout convention. Every retained Try It became a real `fillin` component: the first ("write a relation involving the inverse cosine") asks for the number completing the printed relation $\cos^{-1}(0.8776)\approx b$; the four-part Try It after Example 2 was split into two consecutive pairs of fill-ins (separated by a sentence of connecting prose) to respect the section's 2–3 consecutive-question limit, and the two-part Try It after Example 5 into two fill-ins. Every calculator Try It and exercise states the unit (radians) and the number of decimal places. Omitted the "Access these online resources" media link. Adapted nine selected end-of-section exercises — one true/false identity, the "graph $y=\arccos x$ and state the domain and range" item (the graph is sketched on paper; its domain and range are two fill-ins), three exact-value evaluations, three calculator/right-triangle evaluations, and two exact-value compositions — into eleven interactive components in a closing Practice block, one group per objective, and added one author-written graph-recognition multiple choice for the inverse tangent. This module's own "Key Concepts" and its module-scoped `<glossary>` (six terms: arccosine, arcsine, arctangent, and the three inverse function definitions) are transcribed as this section's `## Key concepts` and `## Key terms`; the printed textbook interleaves them with the rest of chapter 6's summary terms on its own consolidated Chapter Review pages (PDF pp. 678–679) rather than printing them immediately after this section, a print-layout choice that does not change which content belongs to module m49390.</small>

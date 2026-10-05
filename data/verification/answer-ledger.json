@@ -125,10 +125,6 @@
     "result": "agrees"
    }
   },
-  "003d4ac0320d8519": {
-   "verdict": "ok",
-   "note": "-7π/4+2π=π/4 (QI, all positive): tan(π/4)=1; numeric check Math.tan(-7π/4)=1 to 1e-15"
-  },
   "003fcaef398c56d5": {
    "verdict": "ok"
   },
@@ -304,10 +300,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "00a5b4a0d1552429": {
-   "verdict": "ok",
-   "note": "|A|=0.5<1 so compressed (Try It 2 stretch/compress part, matches CNXML)."
   },
   "00a6a6d69e641c24": {
    "verdict": "ok",
@@ -1276,6 +1268,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "02e9686c6bb7c697": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "02f06a5a2bc424bd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1407,10 +1407,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "032b7aacce535901": {
-   "verdict": "ok",
-   "note": "period of A tan(Bx) is pi/|B|; B=pi/6 gives P=6, independently computed."
   },
   "032d82fe5573a078": {
    "verdict": "ok",
@@ -1739,6 +1735,10 @@
    "verdict": "ok",
    "note": "Using the table above (x=0..9; f=7,6,5,8,4,0,2,1,9,3; g=9,5,6,2,1,8,7,3,4,0): g(5)=8, then f(8)=9, so f(g(5))=9, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "0425b3e7f181d0ee": {
+   "verdict": "ok",
+   "note": "cot(315°): QIV ref 45°, cos+/sin- ⇒ negative: cot(315°)=-1; node check Math.cos(315°rad)/Math.sin(315°rad)=-0.9999999999999996 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "0426c491fdcf65d1": {
    "verdict": "ok",
    "note": "KC 5 22.1 § glossary tympanic membrane, m58950",
@@ -1762,6 +1762,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "0430d211974d6c49": {
+   "verdict": "ok",
+   "note": "|A|=0.5<1 so compressed (Try It 2 stretch/compress part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "0433dc5aae640e6f": {
    "verdict": "ok",
@@ -2092,10 +2096,6 @@
   "04fd683a1c8adfc4": {
    "verdict": "ok"
   },
-  "04fec9f1673dba11": {
-   "verdict": "ok",
-   "note": "sin is odd: sin(-pi/6)=-sin(pi/6)=-1/2; equivalently QIV with ref angle pi/6, sine negative there"
-  },
   "04ffa8599cc7e232": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -2320,6 +2320,14 @@
    }
   },
   "0558bddd57054fd8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "055b62ed33953f9c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -2558,10 +2566,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "0616fe5b903de57d": {
-   "verdict": "ok",
-   "note": "Coordinates on the unit circle at 5π/3. 5π/3 is in quadrant IV with reference angle 2π - 5π/3 = π/3; cos(π/3)=1/2 and sin(π/3)=√3/2, and in quadrant IV x>0, y<0, so the point is (1/2, -√3/2). Numerically cos(5π/3)=0.5 and sin(5π/3)=-0.8660254 ✓. Matches the source Answer Key for this Try It verbatim (m49372: \"(1/2, -√3/2)\"), which the source itself prints as a parenthesized ordered pair. Re-keyed from the bare comma list \"1/2,-\\sqrt3/2\" to \"(1/2,-\\sqrt3/2)\" so the ordered pair the answerDisplay prints is the response that grades."
-  },
   "06178496ebd954b5": {
    "verdict": "ok",
    "note": "m66375 Visual Connection solution fs-id1451634/fs-id1645235 (potassium injection lethality, tied to fig-ch05_03_01): model answer verbatim match. Footer discloses the body note's question wording was used rather than the slightly longer end-of-section repeat. Four CHECKS clauses restate potassium/sodium concentration setup, gradient dissipation, heart-muscle signal transmission, and cardiac arrest. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -2717,10 +2721,6 @@
     "result": "agrees"
    }
   },
-  "069ac07670cbeb83": {
-   "verdict": "ok",
-   "note": "absolute value does not remove where cot x is undefined; asymptotes remain at every multiple of pi, closest positive one is pi, independently computed."
-  },
   "069e22441e0e4372": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -2740,6 +2740,14 @@
   "06b61c797a570b80": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "06bc85c11415fdb4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "06c1d4aeb7172146": {
    "verdict": "ok",
@@ -3012,6 +3020,10 @@
     "result": "agrees"
    }
   },
+  "075234cf07e85fcb": {
+   "verdict": "ok",
+   "note": "asymptote spacing pi/2 apart gives B=2 (independently derived); A=4 confirmed against source's printed text solution g(x)=4tan(2x), and f(pi/8)=4tan(pi/4)=4 checked by node -e. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "075241a282d87b77": {
    "verdict": "ok",
    "note": "The second base-10 block SVG shows 4 hundred-squares, 0 ten-rods (no 'ap-ten' element used), and 7 individual unit-block rects: 4(100)+0(10)+7(1)=407, matching the declared answer. (carried 2026-09-26 from the pre-re-review record; the item gained answerForm=\"decimal\")",
@@ -3059,6 +3071,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0770facee3e37a61": {
+   "verdict": "ok",
+   "note": "sin(pi/3) = sqrt(3)/2 = 0.8660254037844386, rounds to 0.8660 at 4dp (node computed) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "07772febaf9f5142": {
    "verdict": "ok",
@@ -3679,6 +3695,10 @@
     "result": "agrees"
    }
   },
+  "0927df2874ebfd26": {
+   "verdict": "ok",
+   "note": "-540 deg * pi/180 = -3*pi rad | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "092e61a5d43aef95": {
    "verdict": "ok",
    "note": "(1/5+1/x)/(10+2x) = [(x+5)/5x] / [2(x+5)] = 1/(10x); at x=-5, 1/(-50) = -1/50; matches CNXML Try It 6 solution."
@@ -3709,6 +3729,10 @@
   "094575e1a5e58d21": {
    "verdict": "ok",
    "note": "m66374 solution fs-id1568744 (diffusion factors: molecular size/temperature/density/distance): model answer is a light stylistic merge of the solution's sentences (comma/semicolon joins, 'to sustain life' dropped) with no content added or dropped. Four CHECKS clauses restate mass, temperature, density, and distance claims from the solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "094807a0b7959a08": {
+   "verdict": "ok",
+   "note": "Section Exercise 31 part 2: same isosceles-right-triangle reasoning, b=15; matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "0948cfa6ef179c3d": {
    "verdict": "ok",
@@ -3770,6 +3794,14 @@
    "note": "Glossary definition fs-id1479018, term \"thermodynamics\", meaning \"study of energy and energy transfer involving physical matter\" — prompt is the meaning verbatim. Question contains no word of the answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0965e353ae0bd7ba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -3971,6 +4003,14 @@
    "verdict": "ok",
    "note": "Recreated graph vertex (2,-3), y-intercept (0,1); expands to x^2-4x+1; matches CNXML solution for fs-id1165134391628, and vertex/y-intercept confirmed against rendered PDF page 272 graph #59. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "09ec3a84d678820e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "09f2970f5809a2a6": {
    "verdict": "ok",
    "note": "Figure triangle base 12 / height 5 / hyp 13; α is opposite the base (12) and adjacent to the height (5): sinα=12/13, cosα=5/13. sin2α=120/169, cos2α=-119/169, tan2α=-120/119 (node-checked; the negative cos2α is correct since α>45°)."
@@ -4005,6 +4045,14 @@
     "result": "agrees"
    }
   },
+  "0a0c0a5de254d73c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0a11da40efbadb6c": {
    "verdict": "ok"
   },
@@ -4020,6 +4068,14 @@
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "0a26ed99ca33e003": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0a2e7068c911400b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -4401,6 +4457,14 @@
   "0b2a508f22244f16": {
    "verdict": "ok",
    "note": "author-built from § PCR Variations: \"In qPCR, however, the use of fluorescence allows one to monitor the increase in a double-stranded template during a PCR reaction as it occu…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0b2db299967691dc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -5258,10 +5322,6 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 677): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
-  "0d2f0b38cb9337e5": {
-   "verdict": "ok",
-   "note": "cos t=√2/2 ⇒ sec t=1/cos t=√2"
-  },
   "0d32bec7a839e1cd": {
    "verdict": "ok",
    "note": "Try It 9: 2^6=64 subsets."
@@ -5761,10 +5821,6 @@
     "result": "agrees"
    }
   },
-  "0e5e57959e5f8738": {
-   "verdict": "ok",
-   "note": "3-4-5 triangle: cos θ=3/5 ⇒ sin θ=4/5 exactly; node: Math.sin(Math.acos(0.6))=0.8 (source Algebraic #33, solution 0.8=4/5)."
-  },
   "0e664b23959e0109": {
    "verdict": "ok",
    "note": "KC 3 16.7 § body Tumor Suppressor Genes, Oncogenes, and Cancer (fs-id1787656), m66509 — parent re-read against the module",
@@ -5876,6 +5932,14 @@
   "0eb6c4bc150c9119": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: next generation sequencing (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0ebab904a058feba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -6194,6 +6258,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "0f7f1de9ecff6662": {
+   "verdict": "ok",
+   "note": "45 rot/min * 2*pi rad/rot / 60 s/min = 90*pi/60 = 3*pi/2 rad/s; matches pinned CNXML solution 3*pi/2 rad/s (line 2359-2368) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "0f807a61b53ff04d": {
    "verdict": "ok",
@@ -6940,10 +7008,6 @@
     "result": "agrees"
    }
   },
-  "117e702a7cf48dce": {
-   "verdict": "ok",
-   "note": "cot(-7π/4)=cot(π/4)=1 (QI positive); numeric check confirms"
-  },
   "1180ca345f561f77": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6967,10 +7031,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "1187d9f5542b0f92": {
-   "verdict": "ok",
-   "note": "node: Math.acos(0.8776)=0.499964≈0.5, matches the source's own rounded pair; grader rejects the swapped equation \\cos^{-1}(0.5)=0.8776 (verified via check-answer.mjs), so the equation form is not a retype hazard."
   },
   "118d68d70299dee4": {
    "verdict": "ok",
@@ -7097,10 +7157,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "11d68a4550b6147b": {
-   "verdict": "ok",
-   "note": "C/B=(-\\pi/6)/(\\pi/3)=-0.5 (Try It 9 phase-shift part, matches CNXML -1/2)."
   },
   "11d703ed862074ee": {
    "verdict": "ok",
@@ -7540,6 +7596,14 @@
    "verdict": "ok",
    "note": "KC 2 8.4 § body (Lactic Acid Fermentation), m58822"
   },
+  "12f2e7f33952ca45": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "12f64608e4f28bb1": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id2645208 (m66480) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -7903,6 +7967,14 @@
    "verdict": "ok",
    "note": "Bio 29.6 eutherian clades selfcheck: m66593 Living Mammals last paragraph (two clades + four superorders); parent re-read Sep 23 2026"
   },
+  "13dbc1e0a68d9c59": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "13df434e0ea4719f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8142,10 +8214,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "145094c0704cf943": {
-   "verdict": "ok",
-   "note": "44*pi/9 - 18*pi/9 = 26*pi/9 (still > 2*pi=18*pi/9), - 18*pi/9 again = 8*pi/9, in [0,2*pi)"
   },
   "145283943a247cfc": {
    "verdict": "ok",
@@ -8454,6 +8522,14 @@
   "151d1d2c1560863d": {
    "verdict": "ok",
    "note": "key-term recall: roseola; printed in § Roseola and Fifth Disease: \"Roseola, sometimes called roseola infantum or exanthem subitum (“sudden rash”), is a mild viral infection usually caused by human herpesvir…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1528972974e516da": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -9931,10 +10007,6 @@
     "result": "agrees"
    }
   },
-  "18798d991789860d": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
-  },
   "187b8140fa9f4a88": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -10882,10 +10954,6 @@
    "verdict": "ok",
    "note": "a1=2, a_n=2a_(n-1)+1 for n=2..5, computed by loop: 2,5,11,23,47 (CNXML Try It ti_11_01_07)."
   },
-  "1aa6e58e5d058f1d": {
-   "verdict": "ok",
-   "note": "cos is even: cos(-pi/6)=cos(pi/6)=sqrt3/2; equivalently -pi/6 coterminal with 11pi/6 in QIV, ref angle pi/6, cosine positive there"
-  },
   "1aaa20804abac7a8": {
    "verdict": "ok"
   },
@@ -11080,10 +11148,6 @@
     "result": "agrees"
    }
   },
-  "1b19156a53a480dd": {
-   "verdict": "ok",
-   "note": "cot(315°): QIV ref 45°, cos+/sin- ⇒ negative: cot(315°)=-1; node check Math.cos(315°rad)/Math.sin(315°rad)=-0.9999999999999996"
-  },
   "1b28efb035054964": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -11240,10 +11304,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "1b743ff792d266f0": {
-   "verdict": "ok",
-   "note": "pi/6 = 30 deg special angle, cos(pi/6) = sqrt3/2, x-coordinate of point (sqrt3/2, 1/2)"
   },
   "1b7a550b6ff98fe2": {
    "verdict": "ok",
@@ -11885,10 +11945,6 @@
     "result": "agrees"
    }
   },
-  "1cfb1ff454d9f68a": {
-   "verdict": "ok",
-   "note": "Domain of y=arccos x is [-1,1] by definition (arccos's domain equals cos's range); matches source solution 'domain [-1,1]; range [0,π]'."
-  },
   "1cfc0c4d69d77b1f": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Several species in the genus Plasmodium are responsible for malaria and all are transmitted by Anopheles mosquitoes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -12267,6 +12323,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1e0f0573438d5035": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1e132eb53521db4e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -12282,10 +12346,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "1e1b6b3a78ae3c8a": {
-   "verdict": "ok",
-   "note": "pi/3 = 60 deg special angle, sin(pi/3) = sqrt3/2, y-coordinate of point (1/2, sqrt3/2)"
   },
   "1e1f324d71f19ac2": {
    "verdict": "ok"
@@ -12530,10 +12590,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "1eaf8ace4efdfb82": {
-   "verdict": "ok",
-   "note": "Practice ex23: period 4, matches CNXML solution and node-confirmed extrema spacing."
   },
   "1eb0df77d4ccbe52": {
    "verdict": "ok",
@@ -13247,6 +13303,22 @@
    "verdict": "ok",
    "note": "Degree of numerator (1) < degree of denominator (3, from x^3-16x); HA y=0; matches CNXML source answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "2064e6f200df0d38": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "20673fd13d0ede57": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "20674fe37737c837": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13366,10 +13438,6 @@
     "result": "agrees"
    }
   },
-  "20bcdc78a3c36a53": {
-   "verdict": "ok",
-   "note": "Range of y=arccos x is [0,π] by definition (arccos's range equals cos's restricted domain); matches source."
-  },
   "20c6126c43323b48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13461,10 +13529,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "21163bd39056badd": {
-   "verdict": "ok",
-   "note": "f(0)=-2.5*sec(0)=-2.5*1=-2.5, computed directly; A negative flips Example 4's local min at 0 (2.5) to a local max (-2.5)."
   },
   "211c825a43f79287": {
    "verdict": "ok",
@@ -13830,10 +13894,6 @@
   "220d394b10d25fc1": {
    "verdict": "ok"
   },
-  "221b9805d94d2389": {
-   "verdict": "ok",
-   "note": "v = r*omega = 14 in * 0.5 rad/s = 7 in/s exactly"
-  },
   "2223a8e7d76f8f73": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -14097,10 +14157,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "22f9e0e370d86ded": {
-   "verdict": "ok",
-   "note": "point (√2/2,√2/2): sec t=1/x=√2; matches CNXML solution"
   },
   "22fa6db4d0eb1810": {
    "verdict": "ok",
@@ -14402,10 +14458,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "23e49aa154b69a6a": {
-   "verdict": "ok",
-   "note": "cot(π/4)=cos/sin=(√2/2)/(√2/2)=1"
   },
   "23e6fac47fcc1a96": {
    "verdict": "ok",
@@ -14723,6 +14775,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "24bfc23a83f8cd63": {
+   "verdict": "ok",
+   "note": "cosecant is odd: csc(-x)=-csc(x)=-(-5)=5; matches source's printed solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "24c357afe7a6017a": {
    "verdict": "ok",
@@ -15262,10 +15318,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "26138f1195a2ee79": {
-   "verdict": "ok",
-   "note": "Practice ex15 (fs-id1165134277994): y=3sin(8(x+4))+5 -> 8(x+4)=8x-(-32), C/B=-32/8=-4, matches CNXML solution -4 (node-verified)."
   },
   "26147706ce38a43a": {
    "verdict": "ok",
@@ -15859,10 +15911,6 @@
    "verdict": "ok",
    "note": "Practice selfcheck for unkeyed SA [fs-id1167662448310]; model assembled from fs-id1167662786554/fs-id1167662654313 (antigen) and fs-id1167662654313 (hapten); source prints no key, correctly selfcheck (run-facts C4 #21). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "27a91827d7fe55b7": {
-   "verdict": "ok",
-   "note": "(tan t)(cos t)=(sin t/cos t)(cos t)=sin t; matches CNXML Try It 6 solution exactly"
-  },
   "27ab24acd0ba742b": {
    "verdict": "ok",
    "note": "KC 5 26.2 § Clostridium-Associated Diseases (intro), m58941",
@@ -15991,10 +16039,6 @@
     "result": "agrees"
    }
   },
-  "281afcdeb2751040": {
-   "verdict": "ok",
-   "note": "csc(π/3)=1/sin(π/3)=1/(√3/2)=2/√3=2√3/3, rationalized as source does"
-  },
   "281c2a7e5c94b762": {
    "verdict": "ok",
    "note": "Glossary textin, definition id fs-idm133006736: 'inhibitory postsynaptic potential (IPSP)' = 'hyperpolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell' — matches; accept list covers IPSP/IPSPs.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -16029,10 +16073,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "282d403d87bd85e9": {
-   "verdict": "ok",
-   "note": "node: Math.cos(Math.asin(7/9))=0.628539361054709, and 4*Math.sqrt(2)/9=0.628539361054709 — matches exactly."
   },
   "28304676b9731bed": {
    "verdict": "ok",
@@ -16717,6 +16757,14 @@
    "verdict": "ok",
    "note": "sin²xcos²x=(sinxcosx)²=(1/2 sin2x)²=1/4 sin²2x=1/4·(1-cos4x)/2=(1-cos4x)/8; confirmed numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader."
   },
+  "2a189c2fedf902bf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2a25710d4a7d8092": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16776,6 +16824,10 @@
     "result": "agrees"
    }
   },
+  "2a56cae009a841bb": {
+   "verdict": "ok",
+   "note": "point (0,-1): cot t=x/y=0/-1=0 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "2a57edfec00df783": {
    "verdict": "ok",
    "note": "Practice #21 (fs-id1165134282176): B=[[3,6,4],[-8,0,12]], D=[[2,-3,12],[9,3,1],[0,8,-10]]; BD computed in Node = [[60,41,2],[-16,120,-216]], row 2 = -16,120,-216. Matches CNXML solution."
@@ -16815,10 +16867,6 @@
   "2a713abfff316d3e": {
    "verdict": "ok"
   },
-  "2a7e10e073d848b9": {
-   "verdict": "ok",
-   "note": "Try It 2: triangle 33-56-65, computed each ratio directly (33/65, 56/65, 33/56, and their reciprocals 65/56, 65/33, 56/33); matches CNXML solution."
-  },
   "2a7f308a64165655": {
    "verdict": "ok",
    "note": "author-built from § Viral Structures, Check Your Understanding: \"Which types of viruses have spikes?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -16841,10 +16889,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "2a878bf583a993bf": {
-   "verdict": "ok",
-   "note": "sine is odd: sin(-t)=-sin(t)=-√2/2"
   },
   "2a8a09b987386e34": {
    "verdict": "ok"
@@ -17193,6 +17237,14 @@
     "result": "agrees"
    }
   },
+  "2b4d9a0cb9cac121": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b50340744aa54d2": {
    "verdict": "ok",
    "note": "source exercise fs-idp224380144 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -17204,10 +17256,6 @@
   "2b5ec0bacaef9621": {
    "verdict": "ok",
    "note": "16.2 source CT selfcheck; Sep 23 2026 close-out: visible Source note added for the trp receptor -> trp operon correction (footer already disclosed); model answer and rubric re-read against the module"
-  },
-  "2b62a17f35f60b61": {
-   "verdict": "ok",
-   "note": "P=2\\pi/2=\\pi (Try It 8 period part, matches CNXML)."
   },
   "2b62c1208f525d0b": {
    "verdict": "ok",
@@ -17264,6 +17312,10 @@
   "2b8f3316b5673edb": {
    "verdict": "ok",
    "note": "Critical Thinking exercise eip-534; selfcheck model answer matches the CNXML solution verbatim (apostrophe/prime normalized). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "2b901b0838a28835": {
+   "verdict": "ok",
+   "note": "44*pi/9 - 18*pi/9 = 26*pi/9 (still > 2*pi=18*pi/9), - 18*pi/9 again = 8*pi/9, in [0,2*pi) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2b935a16c49e3a58": {
    "verdict": "ok"
@@ -17595,10 +17647,6 @@
   "2c7b4086fbdde764": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 463): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
-  },
-  "2c7c0b66467d95e0": {
-   "verdict": "ok",
-   "note": "node: 1/Math.cos(310°·π/180)=1.5557238268604126, rounds to 1.556; matches CNXML solution 1.556"
   },
   "2c7f4bac20b85bc2": {
    "verdict": "ok",
@@ -18225,6 +18273,14 @@
     "result": "agrees"
    }
   },
+  "2e1cf9ba955ee196": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e1d42cf68a1d6a0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -18628,9 +18684,9 @@
     "result": "agrees"
    }
   },
-  "2f1ce75d0dd199e0": {
+  "2f1a291e23ceab2c": {
    "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+   "note": "Try It 4: csc(pi/6) and sec(pi/3) are cofunctions of complementary angles pi/6+pi/3=pi/2, so sec(pi/3)=csc(pi/6)=2; matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2f263edc9dccc60f": {
    "verdict": "ok",
@@ -18898,6 +18954,10 @@
   "2fa033cfb58a367d": {
    "verdict": "ok",
    "note": "Bio 37.4 oral-contraceptive selfcheck: hint now points to 37.3 feedback passage; model answer = source solution (m66630); parent re-read Sep 23 2026"
+  },
+  "2fa84303c914cec8": {
+   "verdict": "ok",
+   "note": "-7π/4+2π=π/4 (QI, all positive): tan(π/4)=1; numeric check Math.tan(-7π/4)=1 to 1e-15 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2fa98a465d6ecbf4": {
    "verdict": "ok",
@@ -19352,10 +19412,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "31309a618e7983ce": {
-   "verdict": "ok",
-   "note": "period of A tan(Bx-C) is pi/|B|; B=4 gives P=pi/4, independently computed; matches source's own printed stretching-factor/period/asymptote solution for this exercise."
   },
   "31328933a4d534b0": {
    "verdict": "ok",
@@ -20210,10 +20266,6 @@
   "336a784e924bac34": {
    "verdict": "ok"
   },
-  "336aed1737843712": {
-   "verdict": "ok",
-   "note": "-540 deg * pi/180 = -3*pi rad"
-  },
   "336bf8f0007783a3": {
    "verdict": "ok",
    "note": "Glossary fs-idm162647536 'thalamus' = 'brain area that relays sensory information to the cortex'. Prompt expands with the body text ('acts as a gateway to and from the cortex... receives sensory and motor inputs from the body and also receives feedback from the cortex'); unique referent. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20273,10 +20325,6 @@
   "33881d495cd60628": {
    "verdict": "ok",
    "note": "Practice: (4a-b)^3 expanded via Binomial Theorem with BigInt coefficients = 64a^3-48a^2b+12ab^2-b^3; matches CNXML Algebraic exercise fs-id1165137442493."
-  },
-  "3394b31cc3ce3b4b": {
-   "verdict": "ok",
-   "note": "Section Exercise 19 (same Figure 14): tan A = opposite/adjacent = 10/4 = 5/2; matches CNXML solution."
   },
   "339700795710e5bf": {
    "verdict": "ok",
@@ -20557,10 +20605,6 @@
     "result": "agrees"
    }
   },
-  "344c7d52c25dfce1": {
-   "verdict": "ok",
-   "note": "sec t=-17/8 ⇒ cos t=-8/17; sin²t=1-64/289=225/289, sin t=±15/17; 0<t<π ⇒ sin positive ⇒ 15/17; sqrt(225/289)=0.8823529...=15/17 confirmed numerically"
-  },
   "3455651a1a619e03": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20779,6 +20823,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "34f986d523b44a43": {
+   "verdict": "ok",
+   "note": "secant is even: sec(-t)=sec(t)=3.1 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "34fb1241dff077f0": {
    "verdict": "ok",
@@ -21182,10 +21230,6 @@
     "result": "agrees"
    }
   },
-  "35dd61699e258c52": {
-   "verdict": "ok",
-   "note": "P=pi/3=pi/|B| gives B=3; h,k copied directly from the stated phase shift (pi/4,2); matches source's printed solution y=tan(3(x-pi/4))+2 exactly."
-  },
   "35e1944bfad4949a": {
    "verdict": "ok",
    "note": "In-page Try It (ti_09_07_03). Computed 3x3 inverse via cofactor/adjugate in exact rational arithmetic: A^-1=[[1,1,2],[2,4,-3],[3,6,-5]]. Matches source exactly; keyed row 1. Also verified A*A^-1=I."
@@ -21493,10 +21537,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "36b60e9275a98ea7": {
-   "verdict": "ok",
-   "note": "asymptote spacing pi/2 apart gives B=2 (independently derived); A=4 confirmed against source's printed text solution g(x)=4tan(2x), and f(pi/8)=4tan(pi/4)=4 checked by node -e."
   },
   "36b796d53df25494": {
    "verdict": "ok",
@@ -22313,10 +22353,6 @@
     "result": "agrees"
    }
   },
-  "38f3a24222d80a56": {
-   "verdict": "ok",
-   "note": "cos(pi) = -1 exactly, point (-1,0) on unit circle at pi rad (180 deg)"
-  },
   "38f73147a5c94946": {
    "verdict": "ok",
    "note": "source exercise fs-id1338802 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -22416,6 +22452,14 @@
     "result": "agrees"
    }
   },
+  "393697b037fc40b5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "39377914d25b3d74": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22495,20 +22539,12 @@
     "result": "agrees"
    }
   },
-  "396cbc15c56a0b4a": {
-   "verdict": "ok",
-   "note": "sec(π/6)=1/cos(π/6)=1/(√3/2)=2/√3=2√3/3, rationalized form matches source convention"
-  },
   "396f72aa971f3420": {
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "396f8414db1395b5": {
-   "verdict": "ok",
-   "note": "2*pi/3 rad = 120 deg is in QII, reference angle = pi - 2*pi/3 = pi/3"
   },
   "3970a521965b7f74": {
    "verdict": "ok"
@@ -22686,6 +22722,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "39df145b9a6a1370": {
+   "verdict": "ok",
+   "note": "same point: sec t=1/x=1/(√2/2)=2/√2=√2 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "39dfa19d0ad0bee5": {
    "verdict": "ok",
@@ -23193,10 +23233,6 @@
   "3b13c8d07bbae455": {
    "verdict": "ok"
   },
-  "3b23883f6c01cfd9": {
-   "verdict": "ok",
-   "note": "P=2\\pi/(1/3)=6\\pi (Try It 5 period part, matches CNXML)."
-  },
   "3b24d16f92af9093": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23425,10 +23461,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "3ba573ee07582a03": {
-   "verdict": "ok",
-   "note": "Range [-7,7] for f(x)=7cos(x); restated from Try It 10's amplitude ask (source answer 7) to avoid retyping the printed coefficient."
   },
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
@@ -23739,6 +23771,14 @@
     "result": "agrees"
    }
   },
+  "3cb1cb2668f66882": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3cb591bd26ce3c18": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23970,6 +24010,10 @@
    "verdict": "ok",
    "note": "Microbiology 3.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the labeled generalized eukaryotic cell earlier in the section, positions read off both images)"
   },
+  "3d5e6c6b1ae6ae31": {
+   "verdict": "ok",
+   "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "3d64d4b3887083db": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: β-oxidation (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -24053,6 +24097,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "3d930d035aaa1fae": {
+   "verdict": "ok",
+   "note": "cot(π/4)=cos/sin=(√2/2)/(√2/2)=1 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "3d983f6f60831c98": {
    "verdict": "ok",
@@ -24717,6 +24765,10 @@
     "result": "agrees"
    }
   },
+  "3f1b9847beb83fb3": {
+   "verdict": "ok",
+   "note": "240 deg is between 180 and 270, so terminal side lies in QIII | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "3f1e075377333383": {
    "verdict": "ok",
    "note": "unkeyed SA fs-id1172098527018, source prints no key; model answer assembled from skin-barrier, cell-junction, and mucociliary-escalator-disruption sentences of this module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -24983,10 +25035,6 @@
    "verdict": "ok",
    "note": "Section Exercise 39 part a: c=50, B=21deg, a=c*cos(21deg)=46.6790, computed with node; matches CNXML solution."
   },
-  "3fb781b6cad84e92": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
-  },
   "3fb841d97891aadf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25018,10 +25066,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "3fcb79ec6240de71": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "3fccc9ea75290110": {
    "verdict": "ok",
@@ -25386,10 +25430,6 @@
   "40a7dcf40fb3d528": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "40adbd8e2b8eb240": {
-   "verdict": "ok",
-   "note": "|cot x| folds cot's full range of reals to non-negative values, attaining 0 where cot x=0; range [0,infinity), consistent with the source alt text 'Range is 0 to infinity.'"
   },
   "40af9a4f62e7508d": {
    "verdict": "ok",
@@ -25906,6 +25946,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "41db51b24862fe93": {
+   "verdict": "ok",
+   "note": "point (0,-1): tan t=y/x=-1/0, undefined (x=0); MC option 'Undefined' correct, matches restructuring rationale in front-matter changelog | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "41dd3cd655e1bd4d": {
    "verdict": "ok",
@@ -26665,10 +26709,6 @@
     "result": "agrees"
    }
   },
-  "4407aa0d402fb864": {
-   "verdict": "ok",
-   "note": "Midline=(-1+-7)/2=-4, amplitude=|-1-(-4)|=3, starts at max at x=0 -> +cos shape: y=3cos(x)-4, matches CNXML ti_06_01_11 solution."
-  },
   "4407e8d4aa670b2d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -26981,10 +27021,6 @@
     "result": "agrees"
    }
   },
-  "44baf3086b99da38": {
-   "verdict": "ok",
-   "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.98 (source Algebraic #17, solution 1.98)."
-  },
   "44bb21fd7dee020c": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098560868 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27148,6 +27184,14 @@
     "result": "agrees"
    }
   },
+  "4532a566bb719b36": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4532be27a1c05301": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -27282,6 +27326,14 @@
    "verdict": "ok",
    "note": "m66701 eip-676: model answer is the CNXML <solution> verbatim (conceptual = big-picture/descriptive, limited on resistance/resilience conclusions; analytical = predictive but loses complexity). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "458c18a1d4984552": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "458db869342b4a67": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660204589 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -27389,6 +27441,14 @@
     "result": "agrees"
    }
   },
+  "45b976809dbd85bf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "45bb3691cf84a6de": {
    "verdict": "ok",
    "note": "KC 5 26.2 § Conifers (Coniferophyta), m66573 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -27463,10 +27523,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "45f76d3cb244fbcf": {
-   "verdict": "ok",
-   "note": "Try It 5 part a: adjacent = 20*cos(pi/3) = 10, computed with node; matches CNXML solution 'adjacent=10'."
   },
   "45f8a36fd04adf5d": {
    "verdict": "ok",
@@ -27711,10 +27767,6 @@
     "result": "agrees"
    }
   },
-  "4660767eb2208012": {
-   "verdict": "ok",
-   "note": "C/B=(\\pi/2)/1=\\pi/2, positive=right (Try It 3, matches CNXML ti_06_01_03 solution)."
-  },
   "4660de33f704de90": {
    "verdict": "ok",
    "note": "author-built from § Indirect Cell Counts: \"Once the calibration curve has been produced, it can be used to estimate cell counts for all samples obtained or cultured under similar con…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -27769,6 +27821,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "4682d63edf78ccd3": {
+   "verdict": "ok",
+   "note": "Range [-7,7] for f(x)=7cos(x); restated from Try It 10's amplitude ask (source answer 7) to avoid retyping the printed coefficient. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "468d2df0edc54d8b": {
    "verdict": "ok",
@@ -27887,6 +27943,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
+  "46e2cacc6d2cd24b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -28036,6 +28100,14 @@
     "result": "agrees"
    }
   },
+  "477d6c03ef4ee028": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "477d76488cf96367": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -28095,6 +28167,10 @@
   "47998834e0147710": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "47998b3c4b05000f": {
+   "verdict": "ok",
+   "note": "135 deg is in QII, reference angle = 180-135 = 45 deg | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "47a1f4c3b02771e0": {
    "verdict": "ok"
@@ -28268,6 +28344,10 @@
   "4830ecb53b0368fe": {
    "verdict": "ok",
    "note": "Try It 1: 3+4=7, addition principle (disjoint option groups)."
+  },
+  "4833dbc157177712": {
+   "verdict": "ok",
+   "note": "135 deg is between 90 and 180, terminal side in QII | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "4834a3a247921f28": {
    "verdict": "ok",
@@ -28606,10 +28686,6 @@
     "result": "agrees"
    }
   },
-  "4922ede6102cb2dd": {
-   "verdict": "ok",
-   "note": "Point (-1/2, -√3/2) on the unit circle. csc t = 1/y = 1/(-√3/2) = -2/√3 = -2√3/3; numerically 1/(-0.8660254) = -1.1547005 and -2(1.7320508)/3 = -1.1547005 ✓. Matches the source Answer Key for this Graphical exercise verbatim (m49374: \"csc t = -2√3/3\"). This item previously asked for sin t, whose answer -√3/2 is printed three times on the same screen — in the lead-in sentence, as the figure's point label, and as its y-axis annotation — so it was answerable by reading rather than by working. csc t is on this Practice group's objective (secant, cosecant, tangent, cotangent), needs the reciprocal step, and appears nowhere in the figure."
-  },
   "4925f653c819e92b": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663603943 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -28817,10 +28893,6 @@
     "result": "agrees"
    }
   },
-  "499d81d383e78f67": {
-   "verdict": "ok",
-   "note": "Locally authored graph-recognition MC (not source-keyed): rendered all four option specs via svgshot and visually confirmed option 0 (cos(2x), two oscillations starting at max) is the only one matching f(x)=cos(2x); the three distractors vary period, sine/cosine phase, and reflection respectively."
-  },
   "499facc7d73ab967": {
    "verdict": "ok"
   },
@@ -28850,10 +28922,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "49cac183752c69a1": {
-   "verdict": "ok",
-   "note": "126 deg * pi/180 = 126/180*pi = 7*pi/10 (gcd(126,180)=18)"
   },
   "49cc43e4f9495281": {
    "verdict": "ok",
@@ -29186,10 +29254,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "4ab4fb8958c57c2d": {
-   "verdict": "ok",
-   "note": "period of A csc(Bx-C) is 2pi/|B|; B=pi/3 gives P=6; matches source's own printed solution (stretching factor 6, period 6)."
   },
   "4abbde75bf46e4f9": {
    "verdict": "ok",
@@ -29612,10 +29676,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "4bab0e9ff80b7b9e": {
-   "verdict": "ok",
-   "note": "Given figure is sin(x)+2 per CNXML ti_06_01_06 solution f(x)=sin(x)+2; independently confirmed the figure's max 3/min 1 fits D=2, |A|=1."
   },
   "4bada7976fc7286f": {
    "verdict": "ok",
@@ -30047,10 +30107,6 @@
     "result": "agrees"
    }
   },
-  "4cc4f6ddf6528954": {
-   "verdict": "ok",
-   "note": "node: cot(4π/7)=Math.cos(4π/7)/Math.sin(4π/7)=-0.22824347439014986, rounds to -0.228; matches CNXML solution -0.228"
-  },
   "4ccf5107277865bb": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-27: spec system slope -4 through the origin and horizontal y = -4 match y = -4x and y = -4"
@@ -30232,10 +30288,6 @@
   "4d2135ff137016f5": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "4d222b55b8d56346": {
-   "verdict": "ok",
-   "note": "5*pi/3 rad (=300 deg) is in QIV; reference angle = 2*pi - 5*pi/3 = pi/3"
   },
   "4d246305d3ef6a05": {
    "verdict": "ok",
@@ -30689,10 +30741,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "4e72f62f2b9a3e98": {
-   "verdict": "ok",
-   "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1."
-  },
   "4e78aa9b89302800": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -30716,6 +30764,14 @@
   "4e8b5dad00fba60f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "4e8e4703698d18ae": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4e8e55a88c1c0d3a": {
    "verdict": "ok",
@@ -31016,6 +31072,14 @@
    }
   },
   "4f665153402dd174": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4f6ae06922980123": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -31436,6 +31500,10 @@
     "result": "agrees"
    }
   },
+  "504372b9057b9583": {
+   "verdict": "ok",
+   "note": "period of A csc(Bx-C) is 2pi/|B|; B=pi/3 gives P=6; matches source's own printed solution (stretching factor 6, period 6). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "504a11f6dbea2916": {
    "verdict": "ok"
   },
@@ -31840,6 +31908,10 @@
     "result": "agrees"
    }
   },
+  "519d2427e5f02c49": {
+   "verdict": "ok",
+   "note": "Practice ex7: B=1 (no coefficient written) -> P=2\\pi, matches CNXML solution 2\\pi. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "519e4f586b12442e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31895,6 +31967,10 @@
    "verdict": "ok",
    "note": "Selfcheck fs-idm235970128: model answer is the CNXML solution fs-idm145538736 verbatim (both paragraphs). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "51ca45588026bfa1": {
+   "verdict": "ok",
+   "note": "period of csc x equals period of sin x = 2pi; matches source's printed solution to the analogous verbal exercise. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "51d266111679a09e": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The theory of spontaneous generation states that life arose from nonliving matter.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -31911,6 +31987,10 @@
     "result": "adjudicated",
     "note": "\"pinna\" is never printed in m66407; the module names only \"auricle\". Not added to accept; key stands."
    }
+  },
+  "51dd5cfc8e4640dd": {
+   "verdict": "ok",
+   "note": "Symbolic Pythagorean derivation (opposite 4x, adjacent 1, hyp sqrt(16x^2+1)) confirmed numerically at x=0.2: Math.sin(Math.atan(0.8))=0.6246950475544243 equals 0.8/Math.sqrt(1.64)=0.6246950475544243. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "51e00579f2a4062a": {
    "verdict": "ok",
@@ -31962,10 +32042,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "5218f7d18c1751fc": {
-   "verdict": "ok",
-   "note": "Practice ex23: midline y=-3, matches CNXML solution."
   },
   "52197b51138df2c9": {
    "verdict": "ok",
@@ -32930,10 +33006,6 @@
     "result": "agrees"
    }
   },
-  "54a73476b46de54c": {
-   "verdict": "ok",
-   "note": "Try It 5 part c: missing angle = pi/2 - pi/3 = pi/6; matches CNXML solution."
-  },
   "54a9df7c4f8d2d37": {
    "verdict": "ok",
    "note": "author-built from § Legionnaires Disease: \"This bacterium infects free-living amoebae that inhabit moist environments, and infections typically occur from human-made reservoirs such…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -32941,10 +33013,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "54ad8b8cc272d4dd": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "54afe9a30363ef92": {
    "verdict": "ok",
@@ -33184,6 +33252,14 @@
   "555def72d700be7a": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp59027664: model answer transcribes the source solution, with 'made up tracheids' corrected to 'made up of tracheids' (missing preposition in the printed solution) — reported as a source defect; checkpoints are its clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "55619336a768b310": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5561cae963a4b2d3": {
    "verdict": "ok"
@@ -33753,10 +33829,6 @@
     "result": "agrees"
    }
   },
-  "570a474ba779b0f4": {
-   "verdict": "ok",
-   "note": "Section Exercise 9: tan(pi/4)=cot(pi/2-pi/4)=cot(pi/4); matches CNXML solution 'pi/4'."
-  },
   "570c0db13d78c93b": {
    "verdict": "ok",
    "note": "Review Question 1 (fs-id2024549); keyed option C 'deoxyribose, thymine, and a phosphate group' matches CNXML solution fs-id1812286; independently confirmed against PDF p-0116 (Q18). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -33852,6 +33924,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "5746c9df06af0c6e": {
+   "verdict": "ok",
+   "note": "-17*pi/6 + 12*pi/6 = -5*pi/6 (still negative), + 12*pi/6 again = 7*pi/6, which lies in [0,2*pi) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "574857325cbef46c": {
    "verdict": "ok",
@@ -34125,6 +34201,14 @@
   "57e4009e812df99f": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "57e50e12a629e907": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "57e750068749ba6f": {
    "verdict": "ok",
@@ -34411,10 +34495,6 @@
     "result": "agrees"
    }
   },
-  "58c07c5acb45eb2e": {
-   "verdict": "ok",
-   "note": "coordinates on unit circle satisfy -1<=x,y<=1, so range of sin and cos is [-1,1]"
-  },
   "58c9890771d9802c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34434,10 +34514,6 @@
   "58ce38fd8d07a613": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "58d3dd0598e8b295": {
-   "verdict": "ok",
-   "note": "pi/3 = 60 deg special angle, cos(pi/3) = 1/2, x-coordinate of point (1/2, sqrt3/2)"
   },
   "58d6bc7bce90256f": {
    "verdict": "ok"
@@ -34655,6 +34731,14 @@
     "result": "agrees"
    }
   },
+  "59512d7a8e0e290a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59548365dce3387e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34766,6 +34850,14 @@
     "result": "agrees"
    }
   },
+  "599fbdb2b6256529": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59a87302a13face3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34781,10 +34873,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "59b368ec9d79def4": {
-   "verdict": "ok",
-   "note": "240 deg is between 180 and 270, so terminal side lies in QIII"
   },
   "59b778ccea3e131d": {
    "verdict": "ok",
@@ -35515,10 +35603,6 @@
    "verdict": "ok",
    "note": "Practice: line through (-1,0) at t=0 and (3,-2) at t=1 -> x(t)=-1+4t,y(t)=-2t by linear interpolation; matches CNXML solution exactly."
   },
-  "5b882bf832604508": {
-   "verdict": "ok",
-   "note": "Try It 1: triangle 7-24-25 (source alt text), sin t = opposite/hyp = 7/25; matches CNXML solution."
-  },
   "5b897e6c8aa7cdef": {
    "verdict": "ok",
    "note": "source exercise fs-id1167582423366 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -35867,10 +35951,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "5c58ea79702b4812": {
-   "verdict": "ok",
-   "note": "45 rot/min * 2*pi rad/rot / 60 s/min = 90*pi/60 = 3*pi/2 rad/s; matches pinned CNXML solution 3*pi/2 rad/s (line 2359-2368)"
   },
   "5c5c91b6d9e47368": {
    "verdict": "ok"
@@ -36313,6 +36393,10 @@
     "result": "agrees"
    }
   },
+  "5dbc10dd2cb90fe0": {
+   "verdict": "ok",
+   "note": "node: Math.cos(Math.asin(7/9))=0.628539361054709, and 4*Math.sqrt(2)/9=0.628539361054709 — matches exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "5dcfac9f587f01df": {
    "verdict": "ok",
    "note": "Source SA fs-id1172099410278 (unkeyed), selfcheck: differentiating three pathways needs three separate trigger sentences, one per pathway. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -36418,6 +36502,14 @@
   "5df3397fc7fd68b1": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5df9d22afe0d06f7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5dfc67abcb5f6ad2": {
    "verdict": "ok",
@@ -36913,6 +37005,10 @@
   "5f6228ba7a198d6f": {
    "verdict": "ok"
   },
+  "5f658d9457c6da18": {
+   "verdict": "ok",
+   "note": "sin(pi) = 0 exactly, y-coordinate of point (-1,0) at pi rad | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "5f681e6adce8c328": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36961,6 +37057,14 @@
    }
   },
   "5f92e82f4cdf905c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5f9c58d432eb4f2d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -37665,10 +37769,6 @@
     "result": "agrees"
    }
   },
-  "619d788f8e367fc5": {
-   "verdict": "ok",
-   "note": "Point (-√2/2, √2/2) on the unit circle; on the unit circle cos t = x and sin t = y, so cos t = -√2/2 and sin t = √2/2. The point is on the circle: (√2/2)^2+(√2/2)^2 = 1/2+1/2 = 1 ✓. Matches the source Answer Key for this Try It verbatim (m49372: \"cos(t) = -√2/2, sin(t) = √2/2\"). Re-keyed from the bare comma list \"-\\sqrt2/2,\\sqrt2/2\" to the ordered pair \"(-\\sqrt2/2,\\sqrt2/2)\" so the response the prompt asks for is the response that grades: as a bare list the parenthesized pair a learner reads off the figure was graded incorrect."
-  },
   "61a166964c4f8f05": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38116,6 +38216,14 @@
    "note": "author-built from § introduction: \"So if a bacterium was not the cause of TMD, what could be causing the disease?\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "634d197823f05916": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -38742,6 +38850,14 @@
     "result": "agrees"
    }
   },
+  "657d231ada0ba52e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "657e8cc0cdf275a8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38774,10 +38890,6 @@
     "result": "agrees"
    }
   },
-  "658c0c00176d9ad7": {
-   "verdict": "ok",
-   "note": "300 deg is between 270 and 360, terminal side in QIV"
-  },
   "658c8f5b7814822d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38785,6 +38897,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "6595bce10a353428": {
+   "verdict": "ok",
+   "note": "P=2\\pi/|B| with B=1/3 (Try It 1, matches CNXML ti_06_01_01 solution 6\\pi). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "659656a8696af797": {
    "verdict": "ok",
@@ -39609,10 +39725,6 @@
    "verdict": "ok",
    "note": "Microbiology 14.2 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Spectrum of Activity superinfection paragraph; states the yeast-specific reason is not given)"
   },
-  "67ca61ad5df69b1c": {
-   "verdict": "ok",
-   "note": "point (0,-1): cot t=x/y=0/-1=0"
-  },
   "67ce6ece70fcbcf5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -39664,10 +39776,6 @@
   "67e533b268fd038d": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "67e5500b6131745a": {
-   "verdict": "ok",
-   "note": "secant is even: sec(-t)=sec(t)=3.1"
   },
   "67e56d370137e084": {
    "verdict": "ok",
@@ -40619,10 +40727,6 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-id2200536: independently translated 5'-AUGGCCGGUUAUUAAGCA-3' codon by codon (AUG-GCC-GGU-UAU-UAA), confirming MAGY with a stop at the fifth codon, matching the source solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "6ab0bc601d805024": {
-   "verdict": "ok",
-   "note": "cot t=1/tan t=1/(-15/8)=-8/15"
-  },
   "6ab1029fbd8f9443": {
    "verdict": "ok"
   },
@@ -40883,9 +40987,13 @@
     "result": "agrees"
    }
   },
-  "6bb5ce36f42a7c2c": {
+  "6baa7f51276c6592": {
    "verdict": "ok",
-   "note": "asymptotes at P/2+kP=3+6k; smallest positive is 3, independently computed."
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6bb742d701b9513c": {
    "verdict": "ok",
@@ -40993,6 +41101,14 @@
     "result": "agrees"
    }
   },
+  "6c1076e6823a7507": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6c152deb0580f2ea": {
    "verdict": "ok",
    "note": "m66441 CT solution fs-idm40512360 (cortisol crossing the membrane) verbatim; four CHECKS clauses restate its sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -41004,6 +41120,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "6c229774230fb7c3": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "6c253ff394962942": {
    "verdict": "ok",
@@ -41315,6 +41435,14 @@
     "result": "agrees"
    }
   },
+  "6cef89b5b3347951": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6cf7fd3b62534adf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41452,10 +41580,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "6d54848e9e31be9e": {
-   "verdict": "ok",
-   "note": "Given figure per CNXML ti_06_01_07 solution 4sin(pi/5 x - pi/5)+4; independently confirmed max 8/min 0 (D=4,|A|=4), period 10 (B=pi/5), peak shifted to x=1 (C/B=1)."
   },
   "6d54b0f442d25ddc": {
    "verdict": "ok",
@@ -41716,6 +41840,10 @@
   "6e0425877d38750f": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6e042a755e7f5859": {
+   "verdict": "ok",
+   "note": "sin t=cos t=√2/2 ⇒ tan t=sin/cos=1 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "6e0f619067942af4": {
    "verdict": "ok",
@@ -42105,6 +42233,14 @@
    "verdict": "ok"
   },
   "6f281449b61cb031": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6f2d98ff7a65c1f0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -42815,6 +42951,10 @@
     "result": "agrees"
    }
   },
+  "70f47380c438414b": {
+   "verdict": "ok",
+   "note": "sec(-7π/4)=sec(π/4)=√2 (QI positive); numeric check confirms | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "70f9496699defa66": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -43093,10 +43233,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "71a237eade6590a6": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "71a3175db11da8d6": {
    "verdict": "ok"
@@ -43843,6 +43979,10 @@
     "result": "agrees"
    }
   },
+  "73a6064aca7ff821": {
+   "verdict": "ok",
+   "note": "asymptotes at P/2+kP=3+6k; smallest positive is 3, independently computed. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "73a6433deda5ccfd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44401,10 +44541,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "74f0744a2b498366": {
-   "verdict": "ok",
-   "note": "7π/6 QIII ref angle π/6: sin=-1/2, csc=1/sin=-2; node check 1/Math.sin(7π/6)=-2.0000000000000013"
   },
   "74f78c8b6dff8eda": {
    "verdict": "ok",
@@ -45454,10 +45590,6 @@
     "result": "agrees"
    }
   },
-  "777e14a928281ee9": {
-   "verdict": "ok",
-   "note": "node: Math.tan(5π/8)=-2.4142135623730954, rounds to -2.414; matches CNXML solution -2.414"
-  },
   "777e6f670f78ecb7": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -45569,6 +45701,14 @@
   "77ba040729bcd73c": {
    "verdict": "ok",
    "note": "source exercise fs-id2662649 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "77bda413cd4ef9cd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45900,6 +46040,14 @@
    "note": "Body CYU, Conjugation > Consequences and Applications (fs-id1167663640512), bullet 1. Textin keyed by 'As rolling circle replication of the F plasmid occurs in the F+ cell...' (Conjugation of the F Plasmid subsection). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "78bd347aa67ce163": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -46276,10 +46424,6 @@
   "799bc4ce4bb3b878": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 941): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
-  },
-  "79a050a296049bc6": {
-   "verdict": "ok",
-   "note": "5*pi/6 rad = 150 deg, between 90 and 180, terminal side in QII"
   },
   "79b07aa1af1f3439": {
    "verdict": "ok",
@@ -46831,10 +46975,6 @@
     "result": "agrees"
    }
   },
-  "7ae4a384a4d56661": {
-   "verdict": "ok",
-   "note": "3/4 of full rotation = (3/4)*2*pi = 3*pi/2"
-  },
   "7ae5a359e1d9aeba": {
    "verdict": "ok"
   },
@@ -46857,10 +46997,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7aeed607046ecbb4": {
-   "verdict": "ok",
-   "note": "135 deg is in QII, reference angle = 180-135 = 45 deg"
   },
   "7af5e1170019df7b": {
    "verdict": "ok"
@@ -47920,6 +48056,14 @@
     "result": "agrees"
    }
   },
+  "7d25809b048a394e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7d286513d01c0f6a": {
    "verdict": "ok",
    "note": "KC 2 4.5 § body Intermediate Filaments (fs-id1232860), m66454 — parent re-read against the module",
@@ -48018,10 +48162,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7d5eac003c3510b9": {
-   "verdict": "ok",
-   "note": "135 deg is between 90 and 180, terminal side in QII"
   },
   "7d602f74c9457a1a": {
    "verdict": "ok",
@@ -48144,6 +48284,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "7da04e6ea6b2311d": {
+   "verdict": "ok",
+   "note": "f(0)=-2.5*sec(0)=-2.5*1=-2.5, computed directly; A negative flips Example 4's local min at 0 (2.5) to a local max (-2.5). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "7da2fc2a3e0ccd0a": {
    "verdict": "ok",
@@ -48335,10 +48479,6 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 323): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
-  "7e3801e78141a704": {
-   "verdict": "ok",
-   "note": "135 deg is QII, reference angle 45 deg, sine positive in QII: sin(135)=sin(45)=sqrt2/2; numerically Math.sin(135*pi/180)=0.7071067811865476"
-  },
   "7e3807a3b45ba883": {
    "verdict": "ok",
    "note": "m66407 fs-idp138052832 — CNXML solution keys A (basilar membrane); the module's own glossary definition ('indirectly anchors auditory receptors') supports this key over tectorial membrane, per brief pre-flag. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -48500,6 +48640,10 @@
    "verdict": "ok",
    "note": "model answer traced to the Snow water-source-tracing sentences (exercise fs-id1167662743953, unkeyed short answer) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "7ea5da53b7549782": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "7eacefe5aafbccdc": {
    "verdict": "ok",
    "note": "vertices (+-3,0) -> a=3,a^2=9; focus (5,0) -> c=5,c^2=25; b^2=25-9=16 -> x^2/9-y^2/16=1; matches source fs-id1388303."
@@ -48531,10 +48675,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7ec2826c86ce6d84": {
-   "verdict": "ok",
-   "note": "point (0,-1): tan t=y/x=-1/0, undefined (x=0); MC option 'Undefined' correct, matches restructuring rationale in front-matter changelog"
   },
   "7ec527ec0e96e3ec": {
    "verdict": "ok",
@@ -48924,6 +49064,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7fb514294572c277": {
+   "verdict": "ok",
+   "note": "P=2\\pi/2=\\pi (Try It 8 period part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "7fbc7e66d0bd0fec": {
    "verdict": "ok",
@@ -49387,6 +49531,10 @@
     "result": "agrees"
    }
   },
+  "81281ac5ad78ce6a": {
+   "verdict": "ok",
+   "note": "Practice ex23/Fig26 (fs-id1165137658354): amplitude read from the plotted f(x)=2sin(pi/2 x)-3, node scanExtrema confirms max -1 at x=-3,1 and min -5 at x=-1,3, matching CNXML's printed amplitude 2. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "8129b01a4095fe60": {
    "verdict": "ok"
   },
@@ -49813,6 +49961,14 @@
    "verdict": "ok",
    "note": "a1=0,a2=1,a3=1, a_n=a_(n-1)/a_(n-2)+a_(n-3) for n=4..8, computed with exact-rational tracking: 0,1,1,1,2,3,5/2,17/6 (CNXML Try It ti_11_01_08)."
   },
+  "824da54187b665d4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "824ddde154eee0d0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50076,10 +50232,6 @@
   "82e337a8e08a3b94": {
    "verdict": "ok",
    "note": "Annuity a1=200,r=1+0.06/12=1.005,n=120; Sn=32775.8694 (node), rounds to 32775.87; matches CNXML ti_11_04_15."
-  },
-  "82f1619a5c68804a": {
-   "verdict": "ok",
-   "note": "sec(π/3)=1/cos(π/3)=1/(1/2)=2; matches CNXML"
   },
   "82f24bc7eb1ad80e": {
    "verdict": "ok",
@@ -50462,10 +50614,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "83f8e05a6be6afb5": {
-   "verdict": "ok",
-   "note": "cosecant is odd: csc(-x)=-csc(x)=-(-5)=5; matches source's printed solution."
   },
   "83fc86ab7987485c": {
    "verdict": "ok",
@@ -50955,6 +51103,10 @@
    "verdict": "ok",
    "note": "sum_{k=1}^{8}3^k evaluated by loop = 9840; matches CNXML ti_11_04_07."
   },
+  "852b3c0e1fe96486": {
+   "verdict": "ok",
+   "note": "period of A tan(Bx) is pi/|B|; B=pi/6 gives P=6, independently computed. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "8532e9e5fc818dff": {
    "verdict": "ok",
    "note": "d=47-50=-3, a1=50; a_n=50-3(n-1)=53-3n, checked against terms 50,47,44,41 by substitution n=1..4."
@@ -51216,6 +51368,14 @@
   "85c813fd3dd9d570": {
    "verdict": "ok",
    "note": "KC 8 44.2 § body Water (fs-idp48507440), m66411 — parent re-read against the module"
+  },
+  "85dd59ee2b5d3ec4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "85de9fe6cc0a1f5b": {
    "verdict": "ok",
@@ -51917,6 +52077,14 @@
    "verdict": "ok",
    "note": "source Short Answer fs-id1171360061770 (source prints no key); model author-written from the Protists paragraph's cilia/flagella/pseudopods sentence, § Protists. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "87f580049c57c823": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "87f8bf71ea056d5d": {
    "verdict": "ok"
   },
@@ -52165,6 +52333,14 @@
     "result": "agrees"
    }
   },
+  "88c3b1ec590ebcc8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "88c8652624ff1918": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: xenobiotic (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -52345,6 +52521,14 @@
    "note": "glossary recall: monogamy (fs-idp158367088) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "893dca0d51e74b52": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -53186,6 +53370,10 @@
   "8b6b7f0a5bf7d65c": {
    "verdict": "ok"
   },
+  "8b6e395ab4bcf016": {
+   "verdict": "ok",
+   "note": "sec(120°)=1/cos(120°)=1/(-1/2)=-2; node check 1/Math.cos(120°·π/180)=-2.000000000000001 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "8b7563f3241082df": {
    "verdict": "ok",
    "note": "source exercise fs-idm46999728 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -53201,10 +53389,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "8b79c1ee7cbf1c61": {
-   "verdict": "ok",
-   "note": "period of csc x equals period of sin x = 2pi; matches source's printed solution to the analogous verbal exercise."
   },
   "8b7a09231ae1e10f": {
    "verdict": "ok",
@@ -54839,6 +55023,10 @@
    "verdict": "ok",
    "note": "m66518 Critical Thinking fs-idm56506992; model answer is the source solution, lightly punctuated into one clean sentence, no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "8fe0e4a90c4be298": {
+   "verdict": "ok",
+   "note": "|cot x| folds cot's full range of reals to non-negative values, attaining 0 where cot x=0; range [0,infinity), consistent with the source alt text 'Range is 0 to infinity.' | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "8fe23eea895649f7": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -55296,6 +55484,14 @@
     "result": "agrees"
    }
   },
+  "9120a044ebcf9838": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "91215f575bc46ead": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -55415,6 +55611,10 @@
   "9178fef28c49c1c4": {
    "verdict": "ok",
    "note": "source SA fs-id1167662555337 prints no key; selfcheck model answer and rubric assembled from the Live Attenuated Vaccines and Inactivated Vaccines subsections. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "917c0b51e4cad155": {
+   "verdict": "ok",
+   "note": "cos(pi) = -1 exactly, point (-1,0) on unit circle at pi rad (180 deg) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "918a6929973a250a": {
    "verdict": "ok",
@@ -56006,10 +56206,6 @@
     "result": "agrees"
    }
   },
-  "92f2368eae87ef0e": {
-   "verdict": "ok",
-   "note": "cotangent is odd: cot(-t)=-cot(t)=-√3"
-  },
   "92f499b321ea2d9a": {
    "verdict": "ok",
    "note": "source exercise fs-id2308224 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -56045,10 +56241,6 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
-  },
-  "9323e3b59ff95cdf": {
-   "verdict": "ok",
-   "note": "Section Exercise 31 part 2: same isosceles-right-triangle reasoning, b=15; matches CNXML solution."
   },
   "932e8b866ee2e2a2": {
    "verdict": "ok",
@@ -56117,6 +56309,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "9351f9f4ebe58b25": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "9359a5741f860d08": {
    "verdict": "ok",
@@ -56443,10 +56639,6 @@
     "result": "agrees"
    }
   },
-  "9428186de1653212": {
-   "verdict": "ok",
-   "note": "Section Exercise 29 part 2: b = 7/tan(30deg) = 7 sqrt3 = 12.1244, computed with node; matches CNXML solution 'b=7 sqrt3'."
-  },
   "942abf37b3dc9065": {
    "verdict": "ok",
    "note": "source exercise fs-idp7922736 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -56562,10 +56754,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "94835ec451370610": {
-   "verdict": "ok",
-   "note": "node: Math.cos(Math.atan(5/12))=0.9230769230769231=12/13 (5-12-13 triangle)."
   },
   "94871f534a48a5e2": {
    "verdict": "ok",
@@ -56794,6 +56982,10 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
   },
+  "94f96df45e309281": {
+   "verdict": "ok",
+   "note": "cot(-7π/4)=cot(π/4)=1 (QI positive); numeric check confirms | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "94ff04c993cbd14f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56981,6 +57173,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "955de7afb3d3f20c": {
+   "verdict": "ok",
+   "note": "Section Exercise 31 (hyp 15 sqrt2, angle B=45deg, isosceles right triangle): leg = hyp/sqrt2 = 15; matches CNXML solution 'a=15,b=15'. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "9561576d56d4f782": {
    "verdict": "ok"
   },
@@ -57101,6 +57297,14 @@
    "note": "source exercise fs-id1167662504408 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "95df5a4089b51591": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -57447,6 +57651,10 @@
    "verdict": "ok",
    "note": "sec(pi/2-theta)=1/cos(pi/2-theta)=1/sin(theta)=csc(theta); confirmed by numeric sampling of theta; retyping the printed subject grades correct against the key (checked with checkAnswer), which is why this is multiplechoice rather than fillin."
   },
+  "96bf789c6c6fd51b": {
+   "verdict": "ok",
+   "note": "Practice ex15 (fs-id1165134277994): y=3sin(8(x+4))+5 -> 8(x+4)=8x-(-32), C/B=-32/8=-4, matches CNXML solution -4 (node-verified). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "96c04d24eb791d87": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -57501,6 +57709,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "970330d225bf7355": {
+   "verdict": "ok",
+   "note": "node: cot(4π/7)=Math.cos(4π/7)/Math.sin(4π/7)=-0.22824347439014986, rounds to -0.228; matches CNXML solution -0.228 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "97035879660ea789": {
    "verdict": "ok",
@@ -57636,10 +57848,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "97600550ae91dcbc": {
-   "verdict": "ok",
-   "note": "Section Exercise 29 (Figure with 7, b, c, 30 degrees): c = 7/sin(30deg) = 14, computed with node; matches CNXML solution 'c=14'."
   },
   "9760f3ac8433f1b0": {
    "verdict": "ok",
@@ -57907,6 +58115,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "9802df844239dad0": {
+   "verdict": "ok",
+   "note": "300 deg is between 270 and 360, terminal side in QIV | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "980748dd82386b00": {
    "verdict": "ok",
@@ -58625,6 +58837,14 @@
    "verdict": "ok",
    "note": "CNXML fs-id1172102030088 SA, source prints no key; selfcheck — figure's 5 numbered stages do not map 1:1 onto the 5 lettered items (stage 4 bundles A and D)"
   },
+  "9a2c6ea7f76da473": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9a2e89f02c1aa81e": {
    "verdict": "ok"
   },
@@ -58651,10 +58871,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "9a39f468aa18d0d9": {
-   "verdict": "ok",
-   "note": "D=2 read directly from f(x)=3sin(x)+2 (Try It 4 restated as midline equation)."
   },
   "9a3e2039d5b60e9a": {
    "verdict": "ok",
@@ -58827,6 +59043,14 @@
   "9ac1c8a42ed50367": {
    "verdict": "ok",
    "note": "body cloze from § Female Gametophyte: \"The female gametophyte is contained within a structure called the archegonium.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9ac5acc0fdd19add": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59786,10 +60010,6 @@
     "result": "agrees"
    }
   },
-  "9d73869d7e066741": {
-   "verdict": "ok",
-   "note": "|A|=1/2=0.5; restated as decimal to avoid retyping the printed 1/2 coefficient (Try It 2 amplitude part)."
-  },
   "9d7cca683bffe159": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60010,10 +60230,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "9e159c0b7bc6bbd7": {
-   "verdict": "ok",
-   "note": "node: Math.acos(3/5)=0.9272952180016123, rounds to 0.93 (source Algebraic #19, solution 0.93)."
   },
   "9e1766b50b4f15ac": {
    "verdict": "ok",
@@ -60252,10 +60468,6 @@
   "9ebe72d9ac5ff453": {
    "verdict": "ok",
    "note": "m66373 solution fs-id1404963/fs-id1967384 ('Why is it advantageous for the cell membrane to be fluid...'): model answer verbatim match. Three CHECKS clauses restate flexibility, motion of membrane components, and requirement for membrane transport — all in the solution text. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "9ecae4e4008ecc01": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "9ecd4a317c35acb2": {
    "verdict": "ok"
@@ -60958,6 +61170,14 @@
     "result": "agrees"
    }
   },
+  "a0ada1491a79045f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a0b349f6c51c65a0": {
    "verdict": "ok",
    "note": "author-built from § Cultivation of Viruses, Check Your Understanding: \"What property of cells makes periodic dilutions of primary cell cultures necessary?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -61136,10 +61356,6 @@
     "result": "agrees"
    }
   },
-  "a13e349e11ce2179": {
-   "verdict": "ok",
-   "note": "node: Math.atan(12/19)=0.5627784766957478, rounds to 0.56 (source Algebraic #23, adjacent 19/opposite 12 triangle, solution 0.56 radians)."
-  },
   "a14469a581e7f3a6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -61245,6 +61461,14 @@
    }
   },
   "a17cd8576b0f1731": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a1870de88f8794d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -62004,6 +62228,10 @@
     "result": "agrees"
    }
   },
+  "a3172ad1b57ab0f8": {
+   "verdict": "ok",
+   "note": "tangent is odd: tan(-x)=-tan(x)=-(-1.5)=1.5; matches source's printed solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "a31cb224de9fc39b": {
    "verdict": "ok",
    "note": "d = 16-18 = -2, confirmed by iterating the sequence."
@@ -62247,10 +62475,6 @@
     "result": "agrees"
    }
   },
-  "a3ae3b9d82594a3f": {
-   "verdict": "ok",
-   "note": "point (-1/2,-√3/2): cot t=x/y=(-1/2)/(-√3/2)=1/√3=√3/3; matches CNXML solution"
-  },
   "a3b1f64caba64856": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62285,10 +62509,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "a3c6fe1997c1aeaa": {
-   "verdict": "ok",
-   "note": "sin(pi) = 0 exactly, y-coordinate of point (-1,0) at pi rad"
   },
   "a3cbb780c92c6bba": {
    "verdict": "ok",
@@ -62979,6 +63199,10 @@
     "result": "agrees"
    }
   },
+  "a570068556139f9a": {
+   "verdict": "ok",
+   "note": "sec(π/3)=1/cos(π/3)=1/(1/2)=2; matches CNXML | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "a571a7aadf454c2c": {
    "verdict": "ok",
    "note": "author-written from § Life Cycle of Viruses with Plant Hosts, opening paragraph (envelope/genome/strandedness sentences); source prints no key for this Check Your Understanding bullet. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -63199,6 +63423,10 @@
     "result": "agrees"
    }
   },
+  "a5f589a5ccae4dd5": {
+   "verdict": "ok",
+   "note": "P=2\\pi/(1/3)=6\\pi (Try It 5 period part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "a5f8d9f9de968b13": {
    "verdict": "ok",
    "note": "re-derived: 'Which graph shows x = 4?' — option index 1 (0-based) is {x:4}, a vertical line crossing the x-axis at 4, matching authored answerIndex=1; option 0 is the sign-flipped vertical line at x=-4 and option 2 is the vertical/horizontal-confusion distractor y=4; all three share the same -7..7 grid. | carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -63305,10 +63533,6 @@
     "result": "agrees"
    }
   },
-  "a65fd0caaf0784b9": {
-   "verdict": "ok",
-   "note": "240 deg is in QIII (180<240<270), reference angle = 240-180 = 60 deg"
-  },
   "a6681eee9cec77a2": {
    "verdict": "ok",
    "note": "author-built from § summary: \"This produces a net gain of two ATP and two NADH molecules for the cell.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -63414,10 +63638,6 @@
   "a6b4a060c57f7a6c": {
    "verdict": "ok",
    "note": "Table gives Mississippi $25,200 to $71,400 (rate $924/yr) and Hawaii $74,400 to $272,700 (rate $3,966/yr) from 1950-2000; Hawaii's rate is far higher, matching the declared answer."
-  },
-  "a6b6a39afea37410": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "a6b6fc76a4432cb7": {
    "verdict": "ok"
@@ -64384,10 +64604,6 @@
     "result": "agrees"
    }
   },
-  "a922832eb7a6513a": {
-   "verdict": "ok",
-   "note": "option III is the recreated cotangent shape (decreasing branches, asymptotes at 0 and pi); matches source's printed answer 'III' for f(x)=cot x in the graph-matching exercise; all four option specs independently rendered and visually distinguished via svgshot."
-  },
   "a9259c078bb4a201": {
    "verdict": "ok",
    "note": "author-built from § Viral Structures: \"At the tips of these spikes are structures that allow the virus to attach and enter a cell, like the influenza virus hemagglutinin spikes (…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -64787,6 +65003,14 @@
     "result": "agrees"
    }
   },
+  "aa7ffd7bc7c00d0a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aa889b907b5d4f5a": {
    "verdict": "ok",
    "note": "m66463 CT exercise fs-id1511408, solution fs-id2291594: model answer matches source verbatim (vitamins/minerals as coenzymes/cofactors; example vitamin C for collagen; example Mg2+ for pyruvate dehydrogenase, Fe/Mg ion notation updated to site style Mg²⁺; vitamins not produced by the body). All 5 CHECKS clauses restate the model answer, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -64996,6 +65220,10 @@
    "verdict": "ok",
    "note": "Precalculus 2.2 Practice graphplot, replaced in the October 4, 2026 re-review (the old line 4+2x repeated a body Try It): source exercise fs-id1165135191668, y-intercept (0,3) and slope 2/5. Re-derived: y=0.4x+3 passes (0,3), (5,5), (-5,1), all lattice points inside the -10..10 grid; the key {slope 0.4, intercept 3, plotPoints 3} matches."
   },
+  "aaf973190b951353": {
+   "verdict": "ok",
+   "note": "csc(π/3)=1/sin(π/3)=1/(√3/2)=2/√3=2√3/3, rationalized as source does | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "aaf9da0c75e52f78": {
    "verdict": "ok",
    "note": "KC 4 16.1 § Etiology (fs-id1167660378783), m58871",
@@ -65139,10 +65367,6 @@
   "ab635a78fa91fa37": {
    "verdict": "ok",
    "note": "KC 5 21.2 § body Animal Viruses (fs-idm53380352), m66535 — parent re-read against the module"
-  },
-  "ab6e97b0b66f19fb": {
-   "verdict": "ok",
-   "note": "Practice ex15: D=5 read directly, matches CNXML midline y=5."
   },
   "ab75b662295db7ac": {
    "verdict": "ok"
@@ -65410,10 +65634,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "ac2bf6adcbc53922": {
-   "verdict": "ok",
-   "note": "Practice ex23/Fig26 (fs-id1165137658354): amplitude read from the plotted f(x)=2sin(pi/2 x)-3, node scanExtrema confirms max -1 at x=-3,1 and min -5 at x=-1,3, matching CNXML's printed amplitude 2."
   },
   "ac32d6a52b07b3e5": {
    "verdict": "ok",
@@ -66027,6 +66247,10 @@
    "verdict": "ok",
    "note": "Recognition MC authored for the rule-4 keeper: correct option (index 2) is a=1,b=-8,c=12, vertex=(-b/2a, f(4))=(4,-4) re-derived, roots (2,0)/(6,0) confirmed by factoring x^2-8x+12=(x-2)(x-6); the three distractors (vertex shifted to (5,-4) same shape, direction inverted at the same vertex, correct vertex with narrower a=4 giving roots (3,0)/(5,0)) each independently re-derived and rendered with svgshot.mjs to confirm they are visually distinct and wrong for exactly one reason."
   },
+  "adb6074d6c355609": {
+   "verdict": "ok",
+   "note": "240 deg is in QIII (180<240<270), reference angle = 240-180 = 60 deg | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "adbd48842b7d7868": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66048,6 +66272,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
   "adc6e2c6f15590d4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "adc7190a3c7d1d46": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -66500,6 +66732,10 @@
    "verdict": "ok",
    "note": "x=64^(1/3)=4; key p1315 #17"
   },
+  "aede0b627f0c48c9": {
+   "verdict": "ok",
+   "note": "5*pi/6 rad = 150 deg, between 90 and 180, terminal side in QII | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "aee4ecbd2e095b4c": {
    "verdict": "ok",
    "note": "source exercise fs-id1181228 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -66849,10 +67085,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "afd77e5473824fca": {
-   "verdict": "ok",
-   "note": "tangent is odd: tan(-x)=-tan(x)=-(-1.5)=1.5; matches source's printed solution."
   },
   "afdc151651ee5878": {
    "verdict": "ok",
@@ -67229,6 +67461,10 @@
     "result": "agrees"
    }
   },
+  "b0e7d14c7d57a7cd": {
+   "verdict": "ok",
+   "note": "node: cot(-π/8)=Math.cos(-π/8)/Math.sin(-π/8)=-2.414213562373095, rounds to -2.414 at 3dp | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b0f7d095b1f8a821": {
    "verdict": "ok",
    "solved": {
@@ -67283,10 +67519,6 @@
     "by": "fable-solver-C",
     "result": "agrees"
    }
-  },
-  "b121b4e504d3362b": {
-   "verdict": "ok",
-   "note": "sec(-7π/4)=sec(π/4)=√2 (QI positive); numeric check confirms"
   },
   "b12272062f0d77b0": {
    "verdict": "ok",
@@ -67683,10 +67915,6 @@
     "result": "agrees"
    }
   },
-  "b20c423e11e4ce26": {
-   "verdict": "ok",
-   "note": "Try It 4: csc(pi/6) and sec(pi/3) are cofunctions of complementary angles pi/6+pi/3=pi/2, so sec(pi/3)=csc(pi/6)=2; matches CNXML solution."
-  },
   "b20fa94b49d7a51e": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Only finished mRNAs that have undergone 5' capping, 3' polyadenylation, and intron splicing are exported from the nucleus to the cytoplasm.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -67805,10 +68033,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "b260816d7ca832e4": {
-   "verdict": "ok",
-   "note": "C/B=(\\pi/3)/(1/3)=\\pi (Try It 5 phase-shift part, matches CNXML)."
   },
   "b26193251bb2c361": {
    "verdict": "ok",
@@ -68805,10 +69029,6 @@
     "result": "agrees"
    }
   },
-  "b4d4c1e9343c41d3": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
-  },
   "b4d6250fca6faba0": {
    "verdict": "ok",
    "note": "Summary-derived select-the-term multiple choice from the section summary's own sentence 'Density and temperature shape the structure of aquatic systems.' Distractors (salinity, light, pH, nutrients, oxygen, pressure) are all terms used elsewhere in the module's own text. Author-written item, no source key.",
@@ -69080,6 +69300,10 @@
    "verdict": "ok",
    "note": "body selfcheck; model answer (toxicity/allergic reactions, liver/kidney dysfunction, half-life) traces to the same section's sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "b580897d422dbf54": {
+   "verdict": "ok",
+   "note": "D=2 read directly from f(x)=3sin(x)+2 (Try It 4 restated as midline equation). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b582edb793273357": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -69180,10 +69404,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b5a7880291013911": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "b5b1eaff5501fdd4": {
    "verdict": "ok",
@@ -70753,6 +70973,14 @@
    "verdict": "ok",
    "note": "KC 3 17.2 § introduction, m66512 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
   },
+  "b9ddfe9aece73ac5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b9de9385e2278561": {
    "verdict": "ok",
    "note": "Glossary fs-idm26043216 'limbic system' = 'connected brain areas that process emotion and motivation'. Prompt matches body text ('a connected set of structures that regulates emotion, as well as behaviors related to fear and motivation'); unique referent. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -70779,10 +71007,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b9ec896e871bf926": {
-   "verdict": "ok",
-   "note": "Practice ex7: B=1 (no coefficient written) -> P=2\\pi, matches CNXML solution 2\\pi."
   },
   "b9efcd97bbcf8aac": {
    "verdict": "ok",
@@ -70954,6 +71178,10 @@
    "verdict": "ok",
    "note": "x=40: 1600=-125(y-20) -> y=20-1600/125=20-12.8=7.2; matches source key 'height is 7.2 feet' exactly. Exact terminating decimal, no rounding divergence."
   },
+  "ba5f6d5911fff6bb": {
+   "verdict": "ok",
+   "note": "P=2\\pi/(\\pi/3)=6 (Try It 9 period part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "ba619bf24600d8ad": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70973,10 +71201,6 @@
   "ba771c6cde0f83b0": {
    "verdict": "ok",
    "note": "m66408 Critical Thinking fs-idp41212752 (pineal gland/SCN); model answer reuses the source solution's own sentences verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "ba835b71cd023ad8": {
-   "verdict": "ok",
-   "note": "|A|=1/2=0.5 for (1/2)cos(x/3-pi/3) (Try It 5 amplitude part, matches CNXML ti_06_01_05)."
   },
   "ba86989a50a97023": {
    "verdict": "ok",
@@ -71232,10 +71456,6 @@
     "result": "agrees"
    }
   },
-  "bb25321839eb55d3": {
-   "verdict": "ok",
-   "note": "node: cot(-π/8)=Math.cos(-π/8)/Math.sin(-π/8)=-2.414213562373095, rounds to -2.414 at 3dp"
-  },
   "bb28a4168e299e50": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71420,6 +71640,10 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "bba0cc6bd8999123": {
+   "verdict": "ok",
+   "note": "|A|=|-2|=2 for g(x)=-2cos(pi/3 x+pi/6) (Try It 9 amplitude part, matches CNXML ti_06_01_09). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "bba137793129e604": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71461,6 +71685,14 @@
    }
   },
   "bbbca1df0a1b0a2f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bbbcfdd50f52bfd0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -72185,6 +72417,10 @@
     "result": "agrees"
    }
   },
+  "bd6cea7ce8b69d2a": {
+   "verdict": "ok",
+   "note": "v = r*omega = 14 in * 0.5 rad/s = 7 in/s exactly | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "bd6f7905b534973f": {
    "verdict": "ok",
    "note": "c^2=4+16=20 -> c=2sqrt5 -> foci (3,4+2sqrt5),(3,4-2sqrt5); matches source fs-id2272094."
@@ -72192,6 +72428,14 @@
   "bd703c5c381002e4": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L241 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "bd747c2d77e14e73": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bd79a88202312984": {
    "verdict": "ok",
@@ -72359,10 +72603,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "bdedc937036458d6": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "bdfbd2304486a766": {
    "verdict": "ok",
@@ -72800,10 +73040,6 @@
     "result": "agrees"
    }
   },
-  "bf2c03802472cbec": {
-   "verdict": "ok",
-   "note": "5-12-13 triangle: tan θ=12/5 ⇒ cos θ=5/13 exactly; node: Math.cos(Math.atan(12/5))=0.38461538461538464=5/13 (source Algebraic #35, solution 5/13)."
-  },
   "bf32af0ec95899a9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72973,10 +73209,6 @@
   },
   "bfa3f86603265cbe": {
    "verdict": "ok"
-  },
-  "bfa683428d0690b4": {
-   "verdict": "ok",
-   "note": "Try It 3 part b: sec(pi/4)=hyp/adj=sqrt2 s/s=sqrt2; matches CNXML solution."
   },
   "bfa76b7108183632": {
    "verdict": "ok",
@@ -73151,6 +73383,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c01729574cc71b43": {
+   "verdict": "ok",
+   "note": "Practice ex23: midline y=-3, matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "c017ec740e6b0dbd": {
    "verdict": "ok",
@@ -73486,10 +73722,6 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
-  },
-  "c0c10798aae50399": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "c0ca322cfdf9343c": {
    "verdict": "ok",
@@ -74096,10 +74328,6 @@
    "verdict": "ok",
    "note": "author-written from § Prokaryotic Gene Regulation (the operon-regulatory-region paragraph): promoter, operator, structural genes. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "c2ac6953243c66f0": {
-   "verdict": "ok",
-   "note": "Practice ex7 (fs-id1165137423636): amplitude 2/3, midline y=0 (no D term) -> range [-2/3,2/3]; restated from the source's amplitude ask to avoid retyping the printed 2/3 coefficient."
-  },
   "c2c22c896f333e09": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -74297,6 +74525,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c351c06be2b8234d": {
+   "verdict": "ok",
+   "note": "coordinates on unit circle satisfy -1<=x,y<=1, so range of sin and cos is [-1,1] | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "c3521dac3ca3fb89": {
    "verdict": "ok",
@@ -74612,6 +74844,14 @@
    }
   },
   "c43655c54e57848e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c43c1fe9990943d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -75078,10 +75318,6 @@
     "result": "agrees"
    }
   },
-  "c523115c4bb7ee19": {
-   "verdict": "ok",
-   "note": "asymptotes of A sec(Bx) at pi/(2|B|)*k for odd k; B=3 gives smallest positive pi/6; matches source's own printed solution (period 2pi/3, asymptotes x=pi/6 *k odd)."
-  },
   "c526e1931d0fdc81": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660255767 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -75118,6 +75354,14 @@
   "c531c2c5fdc83c4f": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 228): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "c531dbbfa38c4350": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c53625a2e88e610f": {
    "verdict": "ok",
@@ -75308,10 +75552,6 @@
   "c5deb2844db6eb64": {
    "verdict": "ok"
   },
-  "c5e5fc614a998217": {
-   "verdict": "ok",
-   "note": "sin t=cos t=√2/2 ⇒ tan t=sin/cos=1"
-  },
   "c5e7451b010413d9": {
    "verdict": "ok",
    "note": "m66631 fs-idp196112832: model answer is the source solution verbatim (which itself omits 'pancreas' from the body prose's four-site list — transcribed as printed in the solution); checkpoints are its own clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -75379,10 +75619,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "c6132476a380097e": {
-   "verdict": "ok",
-   "note": "135 deg is QII, reference angle 45 deg, cosine negative in QII: cos(135)=-cos(45)=-sqrt2/2; numerically Math.cos(135*pi/180)=-0.7071067811865475"
   },
   "c6166247aa87764c": {
    "verdict": "ok",
@@ -75738,10 +75974,6 @@
     "result": "agrees"
    }
   },
-  "c6f53471266e000f": {
-   "verdict": "ok",
-   "note": "sec(120°)=1/cos(120°)=1/(-1/2)=-2; node check 1/Math.cos(120°·π/180)=-2.000000000000001"
-  },
   "c6fb0869fe368ca6": {
    "verdict": "ok",
    "note": "source exercise fs-idp3441920 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -75749,10 +75981,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "c705c37bac1c56ef": {
-   "verdict": "ok",
-   "note": "v = r*omega = (6378+242 km)*0.25 rad/hr = 6620*0.25 = 1655 km/hr; matches pinned CNXML solution '1655 kilometers per hour' (line 2570)"
   },
   "c70a474ddeee4845": {
    "verdict": "ok"
@@ -76016,10 +76244,6 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp83533840 (obesity epidemic): model answer is the source solution verbatim; checkpoints decompose its three clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "c7f56bd72b8dc245": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
-  },
   "c7f82bdbb4c03062": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -76059,10 +76283,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "c80f64e219c5c885": {
-   "verdict": "ok",
-   "note": "P=2\\pi/(\\pi/3)=6 (Try It 9 period part, matches CNXML)."
   },
   "c80f771c7c1fde52": {
    "verdict": "ok",
@@ -76424,10 +76644,6 @@
   "c92e19e875c491be": {
    "verdict": "ok",
    "note": "x=36y^2 divided by 36: y^2=(1/36)x; matches source exercise fs-id1980920's key y^2=1/36x. Self-checked correct under the token."
-  },
-  "c93516c1a1b8ccd3": {
-   "verdict": "ok",
-   "note": "Practice ex19 (fs-id1165137898084): f(t)=-cos(t+pi/3)+1 -> C=-pi/3, B=1, C/B=-pi/3, matches CNXML solution -pi/3 (node-verified)."
   },
   "c935e0368d3ee861": {
    "verdict": "ok",
@@ -76927,6 +77143,14 @@
     "result": "agrees"
    }
   },
+  "ca61c5af9869bf18": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ca64080e45da199d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77179,6 +77403,10 @@
     "result": "agrees"
    }
   },
+  "caf607dcb995a6bf": {
+   "verdict": "ok",
+   "note": "126 deg * pi/180 = 126/180*pi = 7*pi/10 (gcd(126,180)=18) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "caf6505970608413": {
    "verdict": "ok",
    "note": "author-built from § Antibody Classes: \"The secreted form of IgM assembles into a pentamer with five monomers of IgM bound together by a protein structure called the J chain .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -77218,10 +77446,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "cb0d224700630f79": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "cb14bfb54dc00e6d": {
    "verdict": "ok",
@@ -77564,6 +77788,10 @@
     "result": "agrees"
    }
   },
+  "cc13999e3627cd07": {
+   "verdict": "ok",
+   "note": "Practice ex15: D=5 read directly, matches CNXML midline y=5. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "cc16a281a806de10": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77581,6 +77809,14 @@
    }
   },
   "cc2119bc0d6efa24": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cc2957880ff69e48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -77747,6 +77983,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ccb826e09b8b20ea": {
+   "verdict": "ok",
+   "note": "3/4 of full rotation = (3/4)*2*pi = 3*pi/2 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "ccb96e32d5e96708": {
    "verdict": "ok",
@@ -78186,6 +78426,10 @@
    "verdict": "ok",
    "note": "Practice, objective 1; Critical Thinking fs-id1167793389907, unkeyed — model answer from §Brightfield Microscopes (coarse/fine knob sentence) and the Micro Connection maintenance list | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "cde235cf24a994d6": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "cde561b8ecc74359": {
    "verdict": "ok",
    "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 34.03 line 204; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -78269,10 +78513,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "ce11e1914b7c1c92": {
-   "verdict": "ok",
-   "note": "Section Exercise 7: cos(pi/3)=sin(pi/2-pi/3)=sin(pi/6); matches CNXML solution 'pi/6'."
   },
   "ce1245301aecef57": {
    "verdict": "ok",
@@ -78697,10 +78937,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "cf3d55b422dfb196": {
-   "verdict": "ok",
-   "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument."
-  },
   "cf401972097d1450": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=4\\sin\\theta$. What is the name o)"
@@ -78726,6 +78962,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "cf54a8f90a0980be": {
+   "verdict": "ok",
+   "note": "7π/6 QIII ref angle π/6: sin=-1/2, csc=1/sin=-2; node check 1/Math.sin(7π/6)=-2.0000000000000013 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "cf5ad773e820a49e": {
    "verdict": "ok",
@@ -79069,6 +79309,10 @@
     "result": "agrees"
    }
   },
+  "d04d8a76da3a6504": {
+   "verdict": "ok",
+   "note": "Practice ex23: period 4, matches CNXML solution and node-confirmed extrema spacing. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "d054201ba2edb108": {
    "verdict": "ok"
   },
@@ -79180,10 +79424,6 @@
     "result": "agrees"
    }
   },
-  "d096ae7f381a1309": {
-   "verdict": "ok",
-   "note": "Section Exercise 31 (hyp 15 sqrt2, angle B=45deg, isosceles right triangle): leg = hyp/sqrt2 = 15; matches CNXML solution 'a=15,b=15'."
-  },
   "d0997ecd5cd12280": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -79233,10 +79473,6 @@
   },
   "d0bcc04576123394": {
    "verdict": "ok"
-  },
-  "d0c33c8d7ffcf99c": {
-   "verdict": "ok",
-   "note": "point (√2/2,√2/2): tan t=y/x=1; matches CNXML solution for this exact point (tan t=1, sec t=√2, csc t=√2)"
   },
   "d0c5428332dcbac5": {
    "verdict": "ok",
@@ -79377,6 +79613,14 @@
   "d11a0ee8976817bc": {
    "verdict": "ok"
   },
+  "d11ab81bcd9e03a4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d126eb5bfb0bb2c2": {
    "verdict": "ok",
    "note": "KC 8 46.2 § body Productivity within Trophic Levels, gross primary productivity definition (fs-idm120555168, glossary fs-idp36350368), m66702 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -79459,6 +79703,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d1648fa91402bd26": {
+   "verdict": "ok",
+   "note": "cotangent is odd: cot(-t)=-cot(t)=-√3 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d17a352259aefd49": {
    "verdict": "ok",
@@ -80275,11 +80523,15 @@
     "result": "agrees"
    }
   },
-  "d406bef98b0204cc": {
-   "verdict": "ok",
-   "note": "Symbolic Pythagorean derivation (opposite 4x, adjacent 1, hyp sqrt(16x^2+1)) confirmed numerically at x=0.2: Math.sin(Math.atan(0.8))=0.6246950475544243 equals 0.8/Math.sqrt(1.64)=0.6246950475544243."
-  },
   "d40712a28fce87ca": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d4092b6588ccd750": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -80695,6 +80947,14 @@
   "d4e8b3c926da776f": {
    "verdict": "ok",
    "note": "selfcheck, cross-presentation definition + condition; model answer and 4 checkpoints from fs-id1167662888219 (cross-presentation paragraph) only. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d4e9c119826c1019": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d4eb68c6154169c7": {
    "verdict": "ok",
@@ -81777,6 +82037,14 @@
    "verdict": "ok",
    "note": "-32,-16,-8,-4,...: first term stated directly, a1=-32. Matches CNXML Algebraic #25 solution."
   },
+  "d7cf457564d876ae": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d7cf6a850886f8db": {
    "verdict": "ok",
    "note": "author-built from § Oxygen Requirements of Microorganisms, Check Your Understanding: \"Would you expect the oldest bacterial lineages to be aerobic or anaerobic?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -81944,6 +82212,10 @@
   "d835e290c055c46a": {
    "verdict": "ok",
    "note": "KC 5 25.4 § body The Importance of Seedless Plants (fs-idp25444480), m66570 — parent re-read against the module"
+  },
+  "d83972958cb12db3": {
+   "verdict": "ok",
+   "note": "150 deg * pi/180 = 150/180*pi = 5*pi/6 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d845b6e0045cdfc6": {
    "verdict": "ok",
@@ -82365,6 +82637,14 @@
     "result": "agrees"
    }
   },
+  "d98bb3385c81e56d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d990897bca5e8545": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -82742,10 +83022,6 @@
    "verdict": "ok",
    "note": "selfcheck: CTQ fs-idm18879616 — model answer is the CNXML solution verbatim (no typos in this module's copy); checkpoints decompose its four clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "daaa4302398854cc": {
-   "verdict": "ok",
-   "note": "same point: sec t=1/x=1/(√2/2)=2/√2=√2"
-  },
   "daad383bc484d7b7": {
    "verdict": "ok",
    "note": "TI8b: same reconstructed graph; not differentiable at x=1 and x=3 (the only discontinuities, no interior corners); matches source Try It solution's stated differentiability intervals exactly."
@@ -82952,10 +83228,6 @@
   "db08655036703782": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "db0ef133cea8a2c1": {
-   "verdict": "ok",
-   "note": "Try It 3 part a: 45-45-90 triangle legs s,s, hyp sqrt2 s; sin(pi/4)=s/(sqrt2 s)=1/sqrt2; matches CNXML solution."
   },
   "db11537f3ff0e13c": {
    "verdict": "ok"
@@ -85126,6 +85398,14 @@
     "result": "agrees"
    }
   },
+  "e101ec24ac58fada": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e10ca0482b21151d": {
    "verdict": "ok",
    "note": "#9 (fs-id2698945): sin(-x)sin(5x)=-sin(x)sin(5x)=-(1/2)[cos4x-cos6x]=(1/2)cos6x-(1/2)cos4x; confirmed numerically at x=0.77, matches CNXML solution (1/2)(cos6x-cos4x)."
@@ -85137,10 +85417,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e11ee7438879ad3a": {
-   "verdict": "ok",
-   "note": "Option 2 (0-indexed) is curves:[{kind:arctangent}], the only bounded, increasing, origin-passing curve among the four rendered options (verified by rendering all four with svgshot.mjs and inspecting each: option0=unbounded restricted tangent, option1=arcsine on [-1,1] with closed dots, option2=arctangent (correct), option3=-arctangent, decreasing)."
   },
   "e127516a3dcb3746": {
    "verdict": "ok",
@@ -85519,10 +85795,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "e202f0e3b52c9410": {
-   "verdict": "ok",
-   "note": "135 deg is between 90 and 180, terminal side in QII"
   },
   "e205c3afb5f0ab02": {
    "verdict": "ok",
@@ -86293,10 +86565,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e3f579a46037f85d": {
-   "verdict": "ok",
-   "note": "P=2\\pi/|B| with B=1/3 (Try It 1, matches CNXML ti_06_01_01 solution 6\\pi)."
   },
   "e3fab3e062bd9b38": {
    "verdict": "ok",
@@ -87162,6 +87430,14 @@
     "result": "agrees"
    }
   },
+  "e61b6fdebaaef97b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e620854f71219675": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -87338,6 +87614,14 @@
     "result": "agrees"
    }
   },
+  "e6a4faf9dd537fcb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e6bdb0dba7cb3d93": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100835261 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -87396,6 +87680,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e6e3097a503cad28": {
+   "verdict": "ok",
+   "note": "cos t=√2/2 ⇒ sec t=1/cos t=√2 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e6ec3df80c273288": {
    "verdict": "ok",
@@ -88014,10 +88302,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e905224000b8c682": {
-   "verdict": "ok",
-   "note": "sin(pi/3) = sqrt(3)/2 = 0.8660254037844386, rounds to 0.8660 at 4dp (node computed)"
   },
   "e913150916e4a104": {
    "verdict": "ok",
@@ -88757,6 +89041,10 @@
    "verdict": "ok",
    "note": "Practice (Remainder Theorem). Evaluated -3x^2+6x+24 at x=4 via node: 0. Matches CNXML solution for fs-id1165135571875. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "eb12dbf4b66d8ab1": {
+   "verdict": "ok",
+   "note": "node: 1/Math.cos(310°·π/180)=1.5557238268604126, rounds to 1.556; matches CNXML solution 1.556 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "eb16d0d00a5b6367": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89037,6 +89325,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "ebcedfb5d9b46e7b": {
+   "verdict": "ok",
+   "note": "sine is odd: sin(-t)=-sin(t)=-√2/2 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "ebcfc3fcd57d7d4d": {
    "verdict": "ok",
@@ -89342,10 +89634,6 @@
     "result": "agrees"
    }
   },
-  "ec90051b06fee829": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
-  },
   "ec936728671d278c": {
    "verdict": "ok",
    "note": "Slope 4/3 through (2,-2) means y = (4/3)x - 14/3, rising steeply; option 1 draws slope 1.3333333333333333 intercept -4.666666666666667. Option 0 is the sign-inverted -4/3 and option 2 the reciprocal 3/4. All three mark (2,-2), so only the slope differs. Rendered and inspected. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -89608,6 +89896,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "ed4d83e85b357f23": {
+   "verdict": "ok",
+   "note": "node: Math.tan(5π/8)=-2.4142135623730954, rounds to -2.414; matches CNXML solution -2.414 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "ed55ac47b1b53d9f": {
    "verdict": "ok",
@@ -90147,10 +90439,6 @@
    "verdict": "ok",
    "note": "KC 3 14.1 § body Avery, MacLeod, and McCarty transformation (fs-id2890946), m66386 — parent re-read against the module"
   },
-  "eecb8c85c1084467": {
-   "verdict": "ok",
-   "note": "315 deg is in QIV, reference angle 45 deg, sine negative in QIV: sin(315)=-sin(45)=-sqrt2/2; numerically Math.sin(315*pi/180)=-0.7071067811865474"
-  },
   "eed2df56e4916aaf": {
    "verdict": "ok",
    "note": "key-term recall: actinomycetes; printed in § The First Antimicrobial Drugs: \"Selman Waksman was the first to show the vast antimicrobial production capabilities of a group of soil bacteria, the actinomycetes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -90182,10 +90470,6 @@
   "eee850893cd6ae1b": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "eeedd93195f954ac": {
-   "verdict": "ok",
-   "note": "Practice ex23: f(x)=2sin(pi/2 x)-3 matches CNXML's printed equation exactly; independently re-derived from amplitude/period/midline plus the curve's rising zero-crossing at x=0."
   },
   "eef5fb4e1705938c": {
    "verdict": "ok",
@@ -90436,10 +90720,6 @@
   "efa2a4a5be3b8b82": {
    "verdict": "ok",
    "note": "source CT fs-id1167585098616, no source key; selfcheck built from two adjacent module sentences (pore/lysis similarity, then original-target difference). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "efa9c3a1a236620b": {
-   "verdict": "ok",
-   "note": "-17*pi/6 + 12*pi/6 = -5*pi/6 (still negative), + 12*pi/6 again = 7*pi/6, which lies in [0,2*pi)"
   },
   "efb577b804d843ce": {
    "verdict": "ok"
@@ -91106,10 +91386,6 @@
    "verdict": "ok",
    "note": "KC 7 39.4 § body Carbon Monoxide Poisoning (fs-idp174613152), m66648 — parent re-read against the module"
   },
-  "f1ac65e43a0c9922": {
-   "verdict": "ok",
-   "note": "Section Exercise 17 (Figure 14, sides 4 and 10): hyp = sqrt(4^2+10^2) = sqrt(116) = 2 sqrt(29); sin A = 10/(2 sqrt29) = 5 sqrt29/29, computed with node; matches CNXML solution."
-  },
   "f1b5c641ac61305b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91430,6 +91706,14 @@
   "f27ea879280e4995": {
    "verdict": "ok",
    "note": "Bio 29.7 CT2 selfcheck: corrected per erratum 1000 (m66594 common-ancestor and four-million-year sentences); parent re-read Sep 23 2026"
+  },
+  "f27f3fdb0f7e0a05": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f281fc24ab745339": {
    "verdict": "ok",
@@ -92526,10 +92810,6 @@
    "verdict": "ok",
    "note": "m66459 visual-exercise fs-idp41379504, solution fs-id1786520 (rendered as selfcheck): model answer \"No. We can store chemical energy because of the need to overcome the barrier to its breakdown.\" matches source verbatim. Both CHECKS clauses restate it, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
-  "f519f013c6725529": {
-   "verdict": "ok",
-   "note": "315 deg is in QIV, reference angle 45 deg, cosine positive in QIV: cos(315)=cos(45)=sqrt2/2; numerically Math.cos(315*pi/180)=0.7071067811865476=sqrt2/2"
-  },
   "f51cee7787b3da3a": {
    "verdict": "ok",
    "note": "Practice ambiguous part 1 (source fs-id1165135521227, a=12,c=17,alpha=35, gamma acute): sin(gamma)=c*sin(alpha)/a=0.8126; gamma1=54.347 -> 54.3 deg. Matches CNXML 'gamma approx 54.3'."
@@ -92749,10 +93029,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "f5de63373c842ac2": {
-   "verdict": "ok",
-   "note": "150 deg * pi/180 = 150/180*pi = 5*pi/6"
   },
   "f5e9d3413e3405ef": {
    "verdict": "ok",
@@ -93331,6 +93607,14 @@
    "verdict": "ok",
    "note": "KC 6 30.2 § body Stem Modifications (fs-idm2293328), m66597 — parent re-read against the module"
   },
+  "f76efeb0586a3401": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f7703bd17be370f8": {
    "verdict": "ok",
    "note": "Matrix already row-echelon [[1,0,0|31],[0,1,1|45],[0,0,1|87]]. Back-substitution: z=87, y=45-87=-42, x=31. Matches CNXML fs-id1165134431916 (31,-42,87) exactly."
@@ -93463,6 +93747,10 @@
     "result": "agrees"
    }
   },
+  "f7952be7d6372f01": {
+   "verdict": "ok",
+   "note": "Try It 5 part a: adjacent = 20*cos(pi/3) = 10, computed with node; matches CNXML solution 'adjacent=10'. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "f7a36524c8e35478": {
    "verdict": "ok",
    "note": "KC 2 5.3 § Carrier Proteins for Active Transport, m66375 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -93521,10 +93809,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "f7bf7d28ee5d6ad0": {
-   "verdict": "ok",
-   "note": "|A|=|-2|=2 for g(x)=-2cos(pi/3 x+pi/6) (Try It 9 amplitude part, matches CNXML ti_06_01_09)."
   },
   "f7c1ad3225f90f3a": {
    "verdict": "ok",
@@ -94074,6 +94358,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "f937e54bc80bdff3": {
+   "verdict": "ok",
+   "note": "C/B=(\\pi/3)/(1/3)=\\pi (Try It 5 phase-shift part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "f93f0427431a47bd": {
    "verdict": "ok",
@@ -94910,6 +95198,14 @@
    "verdict": "ok",
    "note": "KC 1 2.2 § body Water's Polarity (fs-idm174636784), m66434 — parent re-read against the module"
   },
+  "fb50da08f8140b75": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fb5869a7f80f30de": {
    "verdict": "ok"
   },
@@ -94959,10 +95255,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "fb831ea69a11407e": {
-   "verdict": "ok",
-   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "fb8435b2b7f1213d": {
    "verdict": "ok",
@@ -95518,6 +95810,10 @@
     "result": "agrees"
    }
   },
+  "fce704d399673be1": {
+   "verdict": "ok",
+   "note": "135 deg is between 90 and 180, terminal side in QII | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "fcebe303e7b6d38a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95598,10 +95894,6 @@
     "result": "agrees"
    }
   },
-  "fd13b3f1f94eefd4": {
-   "verdict": "ok",
-   "note": "sin^2t = 1-cos^2t = 1-(24/25)^2 = 1-576/625 = 49/625, sin t = +/-7/25; QIV means sin t<0, so sin t = -7/25"
-  },
   "fd1c55d645f26d4a": {
    "verdict": "ok",
    "note": "r=(4/3)/2=2/3; verified forward: 2*(2/3)=4/3, (4/3)*(2/3)=8/9, (8/9)*(2/3)=16/27, all match. Recursive formula a_n=(2/3)a_{n-1}; matches CNXML solution."
@@ -95617,6 +95909,10 @@
   "fd1df94086f74195": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp117922032; model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "fd2a10ccbbb50b11": {
+   "verdict": "ok",
+   "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "fd33a1fe71ce6a7d": {
    "verdict": "ok",
@@ -95685,10 +95981,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "fd55149f097a12de": {
-   "verdict": "ok",
-   "note": "tan t=sin/cos=(15/17)/(-8/17)=-15/8"
   },
   "fd5690f1b2bd4480": {
    "verdict": "ok",
@@ -96106,10 +96398,6 @@
   "fe4f02290f8fd05e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "fe5392b736d12277": {
-   "verdict": "ok",
-   "note": "point (√2/2,-√2/2): tan t=y/x=(-√2/2)/(√2/2)=-1"
   },
   "fe57a2a35cde7c73": {
    "verdict": "ok",

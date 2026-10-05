@@ -31,13 +31,13 @@ Recall that the sine and cosine functions relate real number values to the $x$- 
 Plotting the points from the table and continuing along the $x$-axis gives the shape of the sine function, shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = sin(x) from 0 to 2π, marked with the table's nine points from x = 0 to x = π, rising from (0,0) to a maximum of 1 at x = π/2, back to 0 at x = π, continuing to a minimum of −1 at x = 3π/2, and returning to 0 at x = 2π; the curve continues past 2π.","xMin":-0.4,"xMax":6.8,"yMin":-1.9,"yMax":1.8,"grid":false,"tickLabels":false,"unit":45,"curves":[{"kind":"sine"}],"points":[{"at":[0,0]},{"at":[0.5236,0.5]},{"at":[0.7854,0.70711]},{"at":[1.0472,0.86603]},{"at":[1.5708,1]},{"at":[2.0944,0.86603]},{"at":[2.3562,0.70711]},{"at":[2.6180,0.5]},{"at":[3.1416,0]}],"texts":[{"at":[0.7854,-1.35],"text":"π/4"},{"at":[1.5708,-1.35],"text":"π/2"},{"at":[2.3562,-1.35],"text":"3π/4"},{"at":[3.1416,-1.35],"text":"π"},{"at":[3.9270,-1.35],"text":"5π/4"},{"at":[4.7124,-1.35],"text":"3π/2"},{"at":[5.4978,-1.35],"text":"7π/4"},{"at":[6.2832,-1.35],"text":"2π"},{"at":[3.4,1.4],"text":"y = sin(x)"}]}
+{"ariaLabel":"The graph of y = sin(x) from 0 to 2π, marked with the table's nine points from x = 0 to x = π, rising from (0,0) to a maximum of 1 at x = π/2, back to 0 at x = π, continuing to a minimum of −1 at x = 3π/2, and returning to 0 at x = 2π; the curve continues past 2π.","xMin":-0.4,"xMax":6.8,"yMin":-1.9,"yMax":1.8,"grid":false,"tickLabels":"y","unit":45,"curves":[{"kind":"sine"}],"points":[{"at":[0,0]},{"at":[0.5236,0.5]},{"at":[0.7854,0.70711]},{"at":[1.0472,0.86603]},{"at":[1.5708,1]},{"at":[2.0944,0.86603]},{"at":[2.3562,0.70711]},{"at":[2.618,0.5]},{"at":[3.1416,0]}],"texts":[{"at":[0.7854,-1.35],"text":"π/4","anchor":"middle"},{"at":[1.5708,-1.35],"text":"π/2","anchor":"middle"},{"at":[2.3562,-1.35],"text":"3π/4","anchor":"middle"},{"at":[3.1416,-1.35],"text":"π","anchor":"middle"},{"at":[3.927,-1.35],"text":"5π/4","anchor":"middle"},{"at":[4.7124,-1.35],"text":"3π/2","anchor":"middle"},{"at":[5.4978,-1.35],"text":"7π/4","anchor":"middle"},{"at":[6.2832,-1.35],"text":"2π","anchor":"middle"},{"at":[3.4,1.4],"text":"y = sin(x)"}]}
 {{< /apfigure >}}
 
 Notice how the sine values are positive between $0$ and $\pi$, which correspond to the values of the sine function in quadrants I and II on the unit circle, and the sine values are negative between $\pi$ and $2\pi$, which correspond to the values of the sine function in quadrants III and IV on the unit circle, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A unit circle at left with radius segments drawn to the points at 0°, 30°, 45°, 60°, and 90°, each connected by a dashed horizontal guide line to the matching point on the y = sin(x) curve at right, illustrating that the sine value equals the circle point's height.","xMin":-3,"xMax":2,"yMin":-1.6,"yMax":1.9,"grid":false,"tickLabels":false,"unit":65,"curves":[{"kind":"sine","from":0,"to":1.8}],"circles":[{"at":[-1.8,0],"r":1}],"segments":[{"from":[-1.8,0],"to":[-0.8,0]},{"from":[-1.8,0],"to":[-0.9401,0.5]},{"from":[-1.8,0],"to":[-1.0929,0.70711]},{"from":[-1.8,0],"to":[-1.3,0.86603]},{"from":[-1.8,0],"to":[-1.8,1]},{"from":[-0.8,0],"to":[0,0],"dashed":true},{"from":[-0.9401,0.5],"to":[0.5236,0.5],"dashed":true},{"from":[-1.0929,0.70711],"to":[0.7854,0.70711],"dashed":true},{"from":[-1.3,0.86603],"to":[1.0472,0.86603],"dashed":true},{"from":[-1.8,1],"to":[1.5708,1],"dashed":true}],"points":[{"at":[-0.8,0]},{"at":[-0.9401,0.5]},{"at":[-1.0929,0.70711]},{"at":[-1.3,0.86603]},{"at":[-1.8,1]},{"at":[0,0]},{"at":[0.5236,0.5]},{"at":[0.7854,0.70711]},{"at":[1.0472,0.86603]},{"at":[1.5708,1]}]}
+{"ariaLabel":"A unit circle at left with radius segments drawn to the points at 0°, 30°, 45°, 60°, and 90°, each connected by a dashed horizontal guide line to the matching point on the y = sin(x) curve at right, illustrating that the sine value equals the circle point's height.","xMin":-3,"xMax":3.0,"yMin":-1.6,"yMax":1.9,"grid":false,"tickLabels":false,"unit":65,"curves":[{"kind":"sine","from":0,"to":2.6,"arrows":"end"}],"circles":[{"at":[-1.8,0],"r":1}],"segments":[{"from":[-1.8,0],"to":[-0.8,0]},{"from":[-1.8,0],"to":[-0.934,0.5]},{"from":[-1.8,0],"to":[-1.0929,0.70711]},{"from":[-1.8,0],"to":[-1.3,0.86603]},{"from":[-1.8,0],"to":[-1.8,1]},{"from":[-0.8,0],"to":[0,0],"dashed":true},{"from":[-0.934,0.5],"to":[0.5236,0.5],"dashed":true},{"from":[-1.0929,0.70711],"to":[0.7854,0.70711],"dashed":true},{"from":[-1.3,0.86603],"to":[1.0472,0.86603],"dashed":true},{"from":[-1.8,1],"to":[1.5708,1],"dashed":true}],"points":[{"at":[-0.8,0]},{"at":[-0.934,0.5]},{"at":[-1.0929,0.70711]},{"at":[-1.3,0.86603]},{"at":[-1.8,1]},{"at":[0,0]},{"at":[0.5236,0.5]},{"at":[0.7854,0.70711]},{"at":[1.0472,0.86603]},{"at":[1.5708,1]}],"texts":[{"at":[1.95,1.3],"text":"y = sin(x)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Now let's take a similar look at the **cosine function**. Again, we can create a table of values and use them to sketch a graph. The table below lists some of the values for the cosine function on a unit circle.
@@ -49,7 +49,7 @@ Now let's take a similar look at the **cosine function**. Again, we can create a
 As with the sine function, we can plot points to create a graph of the cosine function, as below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = cos(x) from 0 to 2π, marked with the table's nine points from x = 0 to x = π, falling from (0,1) to a minimum of −1 at x = π, then rising back to 1 at x = 2π; the curve continues past 2π.","xMin":-0.4,"xMax":6.8,"yMin":-1.6,"yMax":1.8,"grid":false,"tickLabels":false,"unit":45,"curves":[{"kind":"cosine"}],"points":[{"at":[0,1]},{"at":[0.5236,0.86603]},{"at":[0.7854,0.70711]},{"at":[1.0472,0.5]},{"at":[1.5708,0]},{"at":[2.0944,-0.5]},{"at":[2.3562,-0.70711]},{"at":[2.6180,-0.86603]},{"at":[3.1416,-1]}],"texts":[{"at":[0.7854,-1.5],"text":"π/4"},{"at":[1.5708,-1.5],"text":"π/2"},{"at":[2.3562,-1.5],"text":"3π/4"},{"at":[3.1416,-1.5],"text":"π"},{"at":[3.9270,-1.5],"text":"5π/4"},{"at":[4.7124,-1.5],"text":"3π/2"},{"at":[5.4978,-1.5],"text":"7π/4"},{"at":[6.2832,-1.5],"text":"2π"},{"at":[3.4,1.4],"text":"y = cos(x)"}]}
+{"ariaLabel":"The graph of y = cos(x) from 0 to 2π, marked with the table's nine points from x = 0 to x = π, falling from (0,1) to a minimum of −1 at x = π, then rising back to 1 at x = 2π; the curve continues past 2π.","xMin":-0.4,"xMax":6.8,"yMin":-1.6,"yMax":1.8,"grid":false,"tickLabels":"y","unit":45,"curves":[{"kind":"cosine","from":0,"arrows":"end"}],"points":[{"at":[0,1]},{"at":[0.5236,0.86603]},{"at":[0.7854,0.70711]},{"at":[1.0472,0.5]},{"at":[1.5708,0]},{"at":[2.0944,-0.5]},{"at":[2.3562,-0.70711]},{"at":[2.618,-0.86603]},{"at":[3.1416,-1]}],"texts":[{"at":[0.7854,-1.5],"text":"π/4","anchor":"middle"},{"at":[1.5708,-1.5],"text":"π/2","anchor":"middle"},{"at":[2.3562,-1.5],"text":"3π/4","anchor":"middle"},{"at":[3.1416,-1.5],"text":"π","anchor":"middle"},{"at":[3.927,-1.5],"text":"5π/4","anchor":"middle"},{"at":[4.7124,-1.5],"text":"3π/2","anchor":"middle"},{"at":[5.4978,-1.5],"text":"7π/4","anchor":"middle"},{"at":[6.2832,-1.5],"text":"2π","anchor":"middle"},{"at":[3.4,1.4],"text":"y = cos(x)"}]}
 {{< /apfigure >}}
 
 Because we can evaluate the sine and cosine of any real number, both of these functions are defined for all real numbers. By thinking of the sine and cosine values as coordinates of points on a unit circle, it becomes clear that the range of both functions must be the interval $[-1,1]$.
@@ -57,23 +57,23 @@ Because we can evaluate the sine and cosine of any real number, both of these fu
 In both graphs, the shape of the graph repeats after $2\pi$, which means the functions are periodic with a period of $2\pi$. A **periodic function** is a function for which a specific **horizontal shift**, $P$, results in a function equal to the original function: $f(x+P)=f(x)$ for all values of $x$ in the domain of $f$. When this occurs, we call the smallest such horizontal shift with $P>0$ the **period** of the function. The figure below shows several periods of the sine and cosine functions.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (a). The graph of y = sin(x) from −2π to 3π, with a bracket marking one period spanning 0 to 2π.","xMin":-6.9,"xMax":10.6,"yMin":-1.7,"yMax":2.6,"grid":false,"tickLabels":false,"unit":26,"curves":[{"kind":"sine"}],"segments":[{"from":[0,2.15],"to":[6.2832,2.15],"arrows":true,"label":"1 period"}],"texts":[{"at":[-6.2832,-1.35],"text":"−2π"},{"at":[-3.1416,-1.35],"text":"−π"},{"at":[3.1416,-1.35],"text":"π"},{"at":[6.2832,-1.35],"text":"2π"},{"at":[9.4248,-1.35],"text":"3π"}]}
+{"ariaLabel":"Panel (a). The graph of y = sin(x) from −2π to 3π, with a bracket marking one period spanning 0 to 2π.","xMin":-7.3,"xMax":10.6,"yMin":-1.75,"yMax":1.95,"grid":false,"tickLabels":false,"curves":[{"kind":"sine","from":-6.9,"to":10.1}],"segments":[{"from":[0,1.4],"to":[6.283185307179586,1.4],"arrows":true}],"texts":[{"at":[-6.2832,-1.7],"text":"−2π","anchor":"middle"},{"at":[-3.1416,-1.7],"text":"−π","anchor":"middle"},{"at":[3.1416,-1.7],"text":"π","anchor":"middle"},{"at":[6.2832,-1.7],"text":"2π","anchor":"middle"},{"at":[9.4248,-1.7],"text":"3π","anchor":"middle"},{"at":[3.141592653589793,1.6],"text":"1 period","anchor":"middle"},{"at":[-4.7124,1.3],"text":"y = sin(x)","anchor":"middle"}],"xUnit":26,"yUnit":40}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Panel (b). The graph of y = cos(x) from −2π to 3π, with a bracket marking one period spanning 0 to 2π.","xMin":-6.9,"xMax":10.6,"yMin":-1.7,"yMax":2.6,"grid":false,"tickLabels":false,"unit":26,"curves":[{"kind":"cosine"}],"segments":[{"from":[0,2.15],"to":[6.2832,2.15],"arrows":true,"label":"1 period"}],"texts":[{"at":[-6.2832,-1.35],"text":"−2π"},{"at":[-3.1416,-1.35],"text":"−π"},{"at":[3.1416,-1.35],"text":"π"},{"at":[6.2832,-1.35],"text":"2π"},{"at":[9.4248,-1.35],"text":"3π"}]}
+{"ariaLabel":"Panel (b). The graph of y = cos(x) from −2π to 3π, with a bracket marking one period spanning 0 to 2π.","xMin":-7.3,"xMax":10.6,"yMin":-1.75,"yMax":1.95,"grid":false,"tickLabels":false,"curves":[{"kind":"cosine","from":-6.9,"to":10.1}],"segments":[{"from":[0,1.4],"to":[6.283185307179586,1.4],"arrows":true}],"texts":[{"at":[-6.2832,-1.7],"text":"−2π","anchor":"middle"},{"at":[-3.1416,-1.7],"text":"−π","anchor":"middle"},{"at":[3.1416,-1.7],"text":"π","anchor":"middle"},{"at":[6.2832,-1.7],"text":"2π","anchor":"middle"},{"at":[9.4248,-1.7],"text":"3π","anchor":"middle"},{"at":[3.141592653589793,1.6],"text":"1 period","anchor":"middle"},{"at":[-4.7124,1.3],"text":"y = cos(x)","anchor":"middle"}],"xUnit":26,"yUnit":40}
 {{< /apfigure >}}
 
 Looking again at the sine and cosine functions on a domain centered at the $y$-axis helps reveal symmetries. As we can see below, the **sine function** is symmetric about the origin. Recall from The Other Trigonometric Functions that we determined from the unit circle that the sine function is an odd function because $\sin(-x)=-\sin x$. Now we can clearly see this property from the graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = sin(x) from −2π to 2π, symmetric about the origin: rotating the curve 180° about the origin leaves it unchanged.","xMin":-6.9,"xMax":6.9,"yMin":-1.7,"yMax":1.5,"grid":false,"tickLabels":false,"unit":34,"curves":[{"kind":"sine"}],"texts":[{"at":[-6.2832,-1.3],"text":"−2π"},{"at":[-4.7124,-1.3],"text":"−3π/2"},{"at":[-3.1416,-1.3],"text":"−π"},{"at":[-1.5708,-1.3],"text":"−π/2"},{"at":[1.5708,-1.3],"text":"π/2"},{"at":[3.1416,-1.3],"text":"π"},{"at":[4.7124,-1.3],"text":"3π/2"},{"at":[6.2832,-1.3],"text":"2π"}]}
+{"ariaLabel":"The graph of y = sin(x) from −2π to 2π, symmetric about the origin: rotating the curve 180° about the origin leaves it unchanged.","xMin":-7.3,"xMax":7.3,"yMin":-1.95,"yMax":1.5,"grid":false,"tickLabels":"y","unit":34,"curves":[{"kind":"sine","from":-6.9,"to":6.9}],"texts":[{"at":[-6.2832,-1.6],"text":"−2π","anchor":"middle"},{"at":[-4.7124,-1.6],"text":"−3π/2","anchor":"middle"},{"at":[-3.1416,-1.6],"text":"−π","anchor":"middle"},{"at":[-1.5708,-1.6],"text":"−π/2","anchor":"middle"},{"at":[1.5708,-1.6],"text":"π/2","anchor":"middle"},{"at":[3.1416,-1.6],"text":"π","anchor":"middle"},{"at":[4.7124,-1.6],"text":"3π/2","anchor":"middle"},{"at":[6.2832,-1.6],"text":"2π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 The figure below shows that the cosine function is symmetric about the $y$-axis. Again, we determined that the cosine function is an even function. Now we can see from the graph that $\cos(-x)=\cos x$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = cos(x) from −2π to 2π, symmetric about the y-axis: reflecting the curve across the y-axis leaves it unchanged.","xMin":-6.9,"xMax":6.9,"yMin":-1.7,"yMax":1.5,"grid":false,"tickLabels":false,"unit":34,"curves":[{"kind":"cosine"}],"texts":[{"at":[-6.2832,-1.3],"text":"−2π"},{"at":[-4.7124,-1.3],"text":"−3π/2"},{"at":[-3.1416,-1.3],"text":"−π"},{"at":[-1.5708,-1.3],"text":"−π/2"},{"at":[1.5708,-1.3],"text":"π/2"},{"at":[3.1416,-1.3],"text":"π"},{"at":[4.7124,-1.3],"text":"3π/2"},{"at":[6.2832,-1.3],"text":"2π"}]}
+{"ariaLabel":"The graph of y = cos(x) from −2π to 2π, symmetric about the y-axis: reflecting the curve across the y-axis leaves it unchanged.","xMin":-7.3,"xMax":7.3,"yMin":-1.95,"yMax":1.5,"grid":false,"tickLabels":"y","unit":34,"curves":[{"kind":"cosine","from":-6.9,"to":6.9}],"texts":[{"at":[-6.2832,-1.6],"text":"−2π","anchor":"middle"},{"at":[-4.7124,-1.6],"text":"−3π/2","anchor":"middle"},{"at":[-3.1416,-1.6],"text":"−π","anchor":"middle"},{"at":[-1.5708,-1.6],"text":"−π/2","anchor":"middle"},{"at":[1.5708,-1.6],"text":"π/2","anchor":"middle"},{"at":[3.1416,-1.6],"text":"π","anchor":"middle"},{"at":[4.7124,-1.6],"text":"3π/2","anchor":"middle"},{"at":[6.2832,-1.6],"text":"2π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -98,7 +98,7 @@ Looking at the forms of sinusoidal functions, we can see that they are transform
 In the general formula, $B$ is related to the period by $P=\tfrac{2\pi}{|B|}$. If $|B|>1$, then the period is less than $2\pi$ and the function undergoes a horizontal compression, whereas if $|B|<1$, then the period is greater than $2\pi$ and the function undergoes a horizontal stretch. For example, $f(x)=\sin(x)$, $B=1$, so the period is $2\pi$, which we knew. If $f(x)=\sin(2x)$, then $B=2$, so the period is $\pi$ and the graph is compressed. If $f(x)=\sin\left(\tfrac{x}{2}\right)$, then $B=\tfrac12$, so the period is $4\pi$ and the graph is stretched. The figure below shows how the period is indirectly related to $|B|$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three sine curves on 0 to about 4π: f(x) = sin(2x), the most compressed with period π; f(x) = sin(x), with period 2π; and f(x) = sin(x/2), the most stretched with period 4π.","xMin":-0.3,"xMax":13.6,"yMin":-1.7,"yMax":1.6,"grid":false,"tickLabels":false,"unit":24,"curves":[{"kind":"sine","b":2},{"kind":"sine","b":0.5},{"kind":"sine"}],"texts":[{"at":[0.3,1.3],"text":"f(x) = sin(2x)","anchor":"start"},{"at":[8.7,1.3],"text":"f(x) = sin(x/2)","anchor":"start"},{"at":[6.8,-1.35],"text":"f(x) = sin(x)","anchor":"start"},{"at":[1.5708,-1.35],"text":"π/2"},{"at":[3.1416,-1.35],"text":"π"},{"at":[4.7124,-1.35],"text":"3π/2"},{"at":[12.566,-1.35],"text":"4π"}]}
+{"ariaLabel":"Three sine curves from 0 to 4π: f(x) = sin(2x), the most compressed, with period π; f(x) = sin(x), with period 2π; and f(x) = sin(x/2), the most stretched, with period 4π, completing one cycle over the whole interval.","xMin":-0.5,"xMax":13.4,"yMin":-1.95,"yMax":1.8,"grid":false,"tickLabels":"y","xUnit":26,"yUnit":50,"curves":[{"kind":"sine","b":2,"from":0,"to":12.5664,"arrows":false},{"kind":"sine","b":0.5,"from":0,"to":12.5664,"arrows":false},{"kind":"sine","from":0,"to":12.5664,"arrows":false}],"texts":[{"at":[7.0686,1.5],"text":"f(x) = sin(2x)","anchor":"middle"},{"at":[3.1416,1.5],"text":"f(x) = sin(x/2)","anchor":"middle"},{"at":[4.7124,-1.55],"text":"f(x) = sin(x)","anchor":"middle"},{"at":[3.1416,-2.0],"text":"π","anchor":"middle"},{"at":[6.2832,-2.0],"text":"2π","anchor":"middle"},{"at":[9.4248,-2.0],"text":"3π","anchor":"middle"},{"at":[12.5664,-2.0],"text":"4π","anchor":"middle"}],"segments":[{"from":[3.1416,1.3],"to":[3.1416,1.06],"arrows":"end"},{"from":[7.0686,1.3],"to":[7.0686,1.06],"arrows":"end"},{"from":[4.7124,-1.27],"to":[4.7124,-1.06],"arrows":"end"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -127,7 +127,7 @@ $$
 {{< fillin
   question="Determine the period of the function $g(x)=\cos\left(\tfrac{x}{3}\right)$."
   answer="6\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$6\pi$"
   hint="Compare to $y=A\cos(Bx)$ and compute $P=\tfrac{2\pi}{|B|}$."
 >}}
@@ -137,7 +137,7 @@ $$
 Returning to the general formula for a sinusoidal function, we have analyzed how the variable $B$ relates to the period. Now let's turn to the variable $A$ so we can analyze how it is related to the **amplitude**, or greatest distance from rest. $A$ represents the vertical stretch factor, and its absolute value $|A|$ is the amplitude. The local maxima will be a distance $|A|$ above the horizontal **midline** of the graph, which is the line $y=D$; because $D=0$ in this case, the midline is the $x$-axis. The local minima will be the same distance below the midline. If $|A|>1$, the function is stretched. For example, the amplitude of $f(x)=4\sin x$ is twice the amplitude of $f(x)=2\sin x$. If $|A|<1$, the function is compressed. The figure below compares several sine functions with different amplitudes.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Four sine curves of increasing amplitude over roughly −6π to 3.5π: sin(x) with amplitude 1, 2sin(x) with amplitude 2, 3sin(x) with amplitude 3, and 4sin(x) with amplitude 4.","xMin":-19.3,"xMax":23,"yMin":-5.4,"yMax":5.1,"grid":false,"tickLabels":false,"unit":13,"curves":[{"kind":"sine","to":11.5},{"kind":"sine","a":2,"to":11.5},{"kind":"sine","a":3,"to":11.5},{"kind":"sine","a":4,"to":11.5}],"texts":[{"at":[13.0,4.6],"text":"f(x) = 4sin(x)","anchor":"start"},{"at":[13.0,3.0],"text":"f(x) = 3sin(x)","anchor":"start"},{"at":[13.0,1.4],"text":"f(x) = 2sin(x)","anchor":"start"},{"at":[13.0,-1.1],"text":"f(x) = 1sin(x)","anchor":"start"},{"at":[-18.85,-4.95],"text":"−6π"},{"at":[-12.566,-4.95],"text":"−4π"},{"at":[-6.2832,-4.95],"text":"−2π"},{"at":[6.2832,-4.95],"text":"2π"}]}
+{"ariaLabel":"Four sine curves from 0 to 5π/2: f(x) = sin(x), 2sin(x), 3sin(x), and 4sin(x), each labeled at its peak at x = 5π/2, where the peaks reach heights 1, 2, 3, and 4.","xMin":-1.0,"xMax":11.8,"yMin":-4.9,"yMax":4.8,"grid":false,"tickLabels":"y","xUnit":22,"yUnit":26,"curves":[{"kind":"sine","a":1,"from":0,"to":7.854,"arrows":false},{"kind":"sine","a":2,"from":0,"to":7.854,"arrows":false},{"kind":"sine","a":3,"from":0,"to":7.854,"arrows":false},{"kind":"sine","a":4,"from":0,"to":7.854,"arrows":false}],"texts":[{"at":[8.2,4],"text":"f(x) = 4sin(x)","anchor":"start"},{"at":[8.2,3],"text":"f(x) = 3sin(x)","anchor":"start"},{"at":[8.2,2],"text":"f(x) = 2sin(x)","anchor":"start"},{"at":[8.2,1],"text":"f(x) = 1sin(x)","anchor":"start"},{"at":[3.1416,-4.6],"text":"π","anchor":"middle"},{"at":[6.2832,-4.6],"text":"2π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -157,21 +157,21 @@ In the given function, $A=-4$, so the amplitude is $|A|=\lvert -4\rvert=4$. The 
 **Analysis.** The negative value of $A$ results in a reflection across the $x$-axis of the sine function, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = −4sin(x) from −2π to 2π, amplitude 4, with local minima at (−3π/2, −4) and (π/2, −4) and local maxima at (−π/2, 4) and (3π/2, 4).","xMin":-6.9,"xMax":6.9,"yMin":-4.9,"yMax":4.6,"grid":false,"tickLabels":false,"unit":34,"curves":[{"kind":"sine","a":-4}],"texts":[{"at":[-6.2832,-4.75],"text":"−2π"},{"at":[-3.1416,-4.75],"text":"−π"},{"at":[3.1416,-4.75],"text":"π"},{"at":[6.2832,-4.75],"text":"2π"}]}
+{"ariaLabel":"The graph of y = −4sin(x) from −2π to 2π, amplitude 4, with local minima at (−3π/2, −4) and (π/2, −4) and local maxima at (−π/2, 4) and (3π/2, 4).","xMin":-6.9,"xMax":6.9,"yMin":-4.9,"yMax":4.6,"grid":false,"tickLabels":"y","curves":[{"kind":"sine","a":-4}],"texts":[{"at":[-6.2832,-4.75],"text":"−2π","anchor":"middle"},{"at":[-3.1416,-4.75],"text":"−π","anchor":"middle"},{"at":[3.1416,-4.75],"text":"π","anchor":"middle"},{"at":[6.2832,-4.75],"text":"2π","anchor":"middle"}],"yTickStep":2,"xUnit":40,"yUnit":30}
 {{< /apfigure >}}
 
 {{< fillin
-  question="What is the amplitude of the sinusoidal function $f(x)=\tfrac12\sin(x)$, entered as a decimal? Is the function stretched or compressed vertically?"
-  answer="0.5"
-  answerForm="decimal"
-  answerDisplay="$0.5$"
-  hint="The amplitude is $|A|$; compare $|A|$ against $1$ to decide stretched or compressed."
+  question="What is the amplitude of the sinusoidal function $f(x)=\tfrac12\sin(x)$?"
+  answer="\frac{1}{2}"
+  answerForm="lowest-terms"
+  answerDisplay="$\tfrac12$"
+  hint="Compare the function to $y=A\sin(Bx)$; the amplitude is $|A|$."
 >}}
 
 {{< multiplechoice
   question="Is the sinusoidal function $f(x)=\tfrac12\sin(x)$ stretched or compressed vertically, compared to $y=\sin(x)$?"
   answer="compressed"
-  hint="A factor with $|A|<1$ shrinks the graph toward the midline."
+  hint="Compare $|A|$ with $1$, using the rule in the amplitude paragraph above."
 >}}
 stretched
 compressed
@@ -192,19 +192,19 @@ $$
 The value $\tfrac{C}{B}$ for a sinusoidal function is called the **phase shift**, or the horizontal displacement of the basic sine or cosine function. If $C>0$, the graph shifts to the right. If $C<0$, the graph shifts to the left. The greater the value of $|C|$, the more the graph is shifted. The figure below shows that the graph of $f(x)=\sin(x-\pi)$ shifts to the right by $\pi$ units, which is more than we see in the graph of $f(x)=\sin\left(x-\tfrac{\pi}{4}\right)$, which shifts to the right by $\tfrac{\pi}{4}$ units.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Three sine curves over −π to 3π: f(x) = sin(x); f(x) = sin(x − π/4), shifted right by π/4; and f(x) = sin(x − π), shifted right by π.","xMin":-3.6,"xMax":10.6,"yMin":-2.5,"yMax":2.2,"grid":false,"tickLabels":false,"unit":22,"curves":[{"kind":"sine"},{"kind":"sine","h":0.7854},{"kind":"sine","h":3.1416}],"texts":[{"at":[-3.1416,-1.35],"text":"−π"},{"at":[-1.5708,-1.35],"text":"−π/2"},{"at":[1.5708,-1.35],"text":"π/2"},{"at":[3.1416,-1.35],"text":"π"},{"at":[4.7124,-1.35],"text":"3π/2"},{"at":[6.2832,-1.35],"text":"2π"},{"at":[7.854,-1.35],"text":"5π/2"},{"at":[9.4248,-1.35],"text":"3π"},{"at":[-3.4,1.9],"text":"f(x) = sin(x)","anchor":"start"},{"at":[3.6,1.9],"text":"f(x) = sin(x−π/4)","anchor":"start"},{"at":[6.9,-2.15],"text":"f(x) = sin(x−π)","anchor":"start"}]}
+{"ariaLabel":"Three sine curves from −π to 3π: f(x) = sin(x); f(x) = sin(x − π/4), the same curve shifted right by π/4; and f(x) = sin(x − π), shifted right by π.","xMin":-3.9,"xMax":10.4,"yMin":-2.7,"yMax":2.5,"grid":false,"tickLabels":false,"xUnit":28,"yUnit":44,"curves":[{"kind":"sine","from":-3.1416,"to":9.4248,"arrows":false},{"kind":"sine","h":0.7854,"from":-3.1416,"to":9.4248,"arrows":false},{"kind":"sine","h":3.1416,"from":-3.1416,"to":9.4248,"arrows":false}],"segments":[{"from":[7.5,1.85],"to":[7.854,1.1],"arrows":"end"},{"from":[2.05,1.85],"to":[2.3562,1.1],"arrows":"end"},{"from":[7.5,-1.95],"to":[7.854,-1.1],"arrows":"end"}],"texts":[{"at":[7.5,2.15],"text":"f(x) = sin(x)"},{"at":[2.05,2.15],"text":"f(x) = sin(x − π/4)"},{"at":[7.5,-2.3],"text":"f(x) = sin(x − π)"},{"at":[-3.1416,-1.55],"text":"−π","anchor":"middle"},{"at":[3.1416,-1.55],"text":"π","anchor":"middle"},{"at":[6.2832,-1.55],"text":"2π","anchor":"middle"},{"at":[9.4248,-1.55],"text":"3π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 While $C$ relates to the horizontal shift, $D$ indicates the vertical shift from the midline in the general formula for a sinusoidal function, as in the figure below. The function $y=\cos(x)+D$ has its midline at $y=D$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A generic sinusoid y = A sin(x) + D, oscillating symmetrically above and below a dashed horizontal midline y = D, which sits a distance D above the x-axis.","xMin":-0.3,"xMax":9.6,"yMin":-0.6,"yMax":2.6,"grid":false,"tickLabels":false,"unit":30,"curves":[{"kind":"sine","k":1}],"lines":[{"y":1,"dashed":true,"arrows":false,"label":"y = D"}],"segments":[{"from":[-0.15,0],"to":[-0.15,1],"arrows":true}],"texts":[{"at":[-0.55,0.5],"text":"D"},{"at":[5.3,1.32],"text":"Midline"},{"at":[3.1416,-0.4],"text":"π"},{"at":[6.2832,-0.4],"text":"2π"},{"at":[9.4248,-0.4],"text":"3π"}]}
+{"ariaLabel":"A generic sinusoid y = A sin(x) + D oscillating an equal distance above and below a dashed horizontal midline y = D, which sits a distance D above the x-axis.","xMin":-2.3,"xMax":10.4,"yMin":-1.7,"yMax":3.3,"grid":false,"tickLabels":false,"unit":30,"curves":[{"kind":"sine","a":1.5,"k":1,"from":-0.6,"to":9.0}],"lines":[{"y":1,"dashed":true,"arrows":false,"label":"y = D"}],"segments":[{"from":[-1.5,0],"to":[-1.5,1],"arrows":true},{"from":[4.7124,2.2],"to":[4.7124,1.12],"arrows":"end"}],"texts":[{"at":[-1.7,0.5],"text":"D","anchor":"end"},{"at":[4.7124,2.45],"text":"Midline","anchor":"middle"},{"at":[4.7124,-1.2],"text":"y = A sin(x) + D","anchor":"middle"},{"at":[3.1416,-0.55],"text":"π","anchor":"middle"},{"at":[6.2832,-0.55],"text":"2π","anchor":"middle"},{"at":[9.4248,-0.55],"text":"3π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Any value of $D$ other than zero shifts the graph up or down. The figure below compares $f(x)=\sin(x)$ with $f(x)=\sin(x)+2$, which is shifted $2$ units up on a graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two sine curves over −π to 3π: f(x) = sin(x), oscillating between −1 and 1, and f(x) = sin(x) + 2, the same curve shifted up 2 units, oscillating between 1 and 3.","xMin":-3.6,"xMax":10.6,"yMin":-2.3,"yMax":4.0,"grid":false,"tickLabels":false,"unit":22,"curves":[{"kind":"sine"},{"kind":"sine","k":2}],"texts":[{"at":[-3.1416,-1.35],"text":"−π"},{"at":[-1.5708,-1.35],"text":"−π/2"},{"at":[1.5708,-1.35],"text":"π/2"},{"at":[3.1416,-1.35],"text":"π"},{"at":[4.7124,-1.35],"text":"3π/2"},{"at":[6.2832,-1.35],"text":"2π"},{"at":[7.854,-1.35],"text":"5π/2"},{"at":[9.4248,-1.35],"text":"3π"},{"at":[-3.4,3.7],"text":"y = sin(x) + 2","anchor":"start"},{"at":[6.4,-2.1],"text":"y = sin(x)","anchor":"start"}]}
+{"ariaLabel":"Two sine curves over −π to 3π: f(x) = sin(x), oscillating between −1 and 1, and f(x) = sin(x) + 2, the same curve shifted up 2 units, oscillating between 1 and 3.","xMin":-3.9,"xMax":10.8,"yMin":-1.95,"yMax":3.6,"grid":false,"tickLabels":"y","curves":[{"kind":"sine","from":-3.6,"to":10.2},{"kind":"sine","k":2,"from":-3.6,"to":10.2}],"texts":[{"at":[-3.1416,-1.75],"text":"−π","anchor":"middle"},{"at":[-1.5708,-1.75],"text":"−π/2","anchor":"middle"},{"at":[1.5708,-1.75],"text":"π/2","anchor":"middle"},{"at":[3.1416,-1.75],"text":"π","anchor":"middle"},{"at":[4.7124,-1.75],"text":"3π/2","anchor":"middle"},{"at":[6.2832,-1.75],"text":"2π","anchor":"middle"},{"at":[7.854,-1.75],"text":"5π/2","anchor":"middle"},{"at":[9.4248,-1.75],"text":"3π","anchor":"middle"},{"at":[10.45,1.3],"text":"y = sin(x) + 2","anchor":"start"},{"at":[10.45,-0.75],"text":"y = sin(x)","anchor":"start"}],"xUnit":24,"yUnit":48}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -230,8 +230,8 @@ or $\tfrac{\pi}{6}$ units to the left.
 
 {{< fillin
   question="Determine the phase shift for $f(x)=3\cos\left(x-\tfrac{\pi}{2}\right)$ as a signed value (positive = right, negative = left)."
-  answer="\pi/2"
-  answerForm="radians"
+  answer="\frac{\pi}{2}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{2}$"
   hint="Compare to $y=A\cos(Bx-C)+D$ and compute $\tfrac{C}{B}$."
 >}}
@@ -245,6 +245,7 @@ In the given equation, $D=-3$ so the shift is $3$ units downward.
 {{< fillin
   question="What is the midline of $f(x)=3\sin(x)+2$?"
   answer="y=2"
+  answerForm="solved:y decimal"
   answerDisplay="$y=2$"
   hint="The midline is $y=D$; read $D$ directly from the equation."
 >}}
@@ -273,39 +274,39 @@ Finally, $D=1$, so the midline is $y=1$.
 **Analysis.** Inspecting the graph, we can determine that the period is $\pi$, the midline is $y=1$, and the amplitude is $3$, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = 3sin(2x) + 1 over one period, with the amplitude 3 marked from the midline to the peak, the midline y = 1 marked with a dashed line, and the period π marked below.","xMin":-0.5,"xMax":3.5,"yMin":-3.0,"yMax":4.8,"grid":false,"tickLabels":false,"unit":80,"curves":[{"kind":"sine","a":3,"b":2,"k":1}],"lines":[{"y":1,"dashed":true,"arrows":false}],"segments":[{"from":[-0.3,1],"to":[-0.3,4],"arrows":true,"label":"Amplitude = 3"},{"from":[0,-2.3],"to":[3.1416,-2.3],"arrows":true,"label":"Period = π"}],"texts":[{"at":[1.5708,-2.85],"text":"π/2"},{"at":[3.1416,-2.85],"text":"π"},{"at":[2.55,1.35],"text":"Midline"}]}
+{"ariaLabel":"The graph of y = 3sin(2x) + 1 over one period, with the amplitude 3 marked from the midline up to the peak at x = π/4, the midline y = 1 marked with a dashed line, and the period π marked below.","xMin":-0.5,"xMax":3.5,"yMin":-2.95,"yMax":4.8,"grid":false,"tickLabels":"y","curves":[{"kind":"sine","a":3,"b":2,"k":1}],"lines":[{"y":1,"dashed":true,"arrows":false}],"segments":[{"from":[0.7854,1],"to":[0.7854,4],"arrows":true},{"from":[0,-2.3],"to":[3.1416,-2.3],"arrows":true},{"from":[1.5707963267948966,-0.09],"to":[1.5707963267948966,0.09]},{"from":[3.141592653589793,-0.09],"to":[3.141592653589793,0.09]}],"texts":[{"at":[1.5708,-0.5],"text":"π/2","anchor":"middle"},{"at":[3.1416,-0.5],"text":"π","anchor":"middle"},{"at":[2.2,1.35],"text":"Midline"},{"at":[0.25,4.5],"text":"Amplitude = 3","anchor":"start"},{"at":[3.3,-2.3],"text":"Period = π","anchor":"start"}],"xUnit":80,"yUnit":45}
 {{< /apfigure >}}
 
 For the amplitude, period, and phase shift of $y=\tfrac12\cos\left(\tfrac{x}{3}-\tfrac{\pi}{3}\right)$ (its midline is $y=0$):
 
 {{< fillin
-  question="What is the amplitude of $y=\tfrac12\cos\left(\tfrac{x}{3}-\tfrac{\pi}{3}\right)$, entered as a decimal?"
-  answer="0.5"
-  answerForm="decimal"
-  answerDisplay="$0.5$"
+  question="What is the amplitude of $y=\tfrac12\cos\left(\tfrac{x}{3}-\tfrac{\pi}{3}\right)$?"
+  answer="\frac{1}{2}"
+  answerForm="lowest-terms"
+  answerDisplay="$\tfrac12$"
   hint="The amplitude is $|A|$."
 >}}
 
 {{< fillin
   question="What is the period of $y=\tfrac12\cos\left(\tfrac{x}{3}-\tfrac{\pi}{3}\right)$?"
   answer="6\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$6\pi$"
-  hint="Compute $P=\tfrac{2\pi}{|B|}$ with $B=\tfrac13$."
+  hint="Read $B$ as the coefficient of $x$ inside the cosine, then compute $P=\tfrac{2\pi}{|B|}$."
 >}}
 
 {{< fillin
   question="Determine the phase shift for $y=\tfrac12\cos\left(\tfrac{x}{3}-\tfrac{\pi}{3}\right)$ as a signed value (positive = right, negative = left)."
   answer="\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\pi$"
-  hint="Compute $\tfrac{C}{B}$ with $C=\tfrac{\pi}{3}$ and $B=\tfrac13$."
+  hint="Match the argument to the form $Bx-C$ to read $B$ and $C$, then compute $\tfrac{C}{B}$."
 >}}
 
 **Example.** Determine the formula for the cosine function in the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A periodic curve oscillating between a maximum of 1 and a minimum of 0, completing four full cycles across the interval from −4π to 4π, with tick marks at −4π, −2π, 2π, and 4π.","xMin":-14.2,"xMax":14.2,"yMin":-0.8,"yMax":1.3,"grid":false,"tickLabels":false,"unit":11,"curves":[{"kind":"cosine","a":-0.5,"k":0.5}],"texts":[{"at":[-12.566,-0.65],"text":"−4π"},{"at":[-6.2832,-0.65],"text":"−2π"},{"at":[6.2832,-0.65],"text":"2π"},{"at":[12.566,-0.65],"text":"4π"}],"yLabel":"g(x)"}
+{"ariaLabel":"A periodic curve oscillating between a maximum of 1 and a minimum of 0, completing four full cycles across the interval from −4π to 4π, with the y-axis labelled at −0.5, 0.5, and 1 and tick marks at −4π, −2π, 2π, and 4π.","xMin":-14.6,"xMax":14.6,"yMin":-0.7,"yMax":1.4,"grid":false,"tickLabels":"y","yTickStep":0.5,"xUnit":16,"yUnit":80,"curves":[{"kind":"cosine","a":-0.5,"k":0.5,"from":-13.5,"to":13.5}],"texts":[{"at":[-12.566,-0.24],"text":"−4π","anchor":"middle"},{"at":[-6.2832,-0.24],"text":"−2π","anchor":"middle"},{"at":[6.2832,-0.24],"text":"2π","anchor":"middle"},{"at":[12.566,-0.24],"text":"4π","anchor":"middle"}],"yLabel":"g(x)"}
 {{< /apfigure >}}
 
 **Solution.** To determine the equation, we need to identify each value in the general form of a sinusoidal function.
@@ -325,12 +326,13 @@ Putting this all together,
 $$g(x)=-0.5\cos(x)+0.5$$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A periodic curve oscillating between a maximum of 3 and a minimum of 1, completing four full cycles across the interval from −4π to 4π, with the y-axis labelled at 1, 2, and 3 and the x-axis labelled at −4π, −2π, 2π, and 4π.","xMin":-14.2,"xMax":14.2,"yMin":-0.9,"yMax":3.4,"grid":false,"tickLabels":false,"unit":14,"curves":[{"kind":"sine","k":2}],"texts":[{"at":[-12.566,-0.72],"text":"−4π"},{"at":[-6.2832,-0.72],"text":"−2π"},{"at":[6.2832,-0.72],"text":"2π"},{"at":[12.3,-0.72],"text":"4π"},{"at":[-1,1],"text":"1","anchor":"end","fontSize":11},{"at":[-1,2],"text":"2","anchor":"end","fontSize":11},{"at":[-1,3],"text":"3","anchor":"end","fontSize":11}],"yLabel":"f(x)"}
+{"ariaLabel":"A periodic curve oscillating between a maximum of 3 and a minimum of 1, completing four full cycles across the interval from −4π to 4π, with the y-axis labelled at 1, 2, and 3 and the x-axis labelled at −4π, −2π, 2π, and 4π.","xMin":-14.6,"xMax":14.6,"yMin":-0.9,"yMax":3.5,"grid":false,"tickLabels":"y","xUnit":20,"yUnit":50,"curves":[{"kind":"sine","k":2,"from":-13.5,"to":13.5}],"texts":[{"at":[-12.566,-0.45],"text":"−4π","anchor":"middle"},{"at":[-6.2832,-0.45],"text":"−2π","anchor":"middle"},{"at":[6.2832,-0.45],"text":"2π","anchor":"middle"},{"at":[12.566,-0.45],"text":"4π","anchor":"middle"}],"yLabel":"f(x)"}
 {{< /apfigure >}}
 
 {{< fillin
   question="Determine the formula for the sine function shown above."
   answer="\sin(x)+2"
+  answerForm="no-like-terms"
   answerDisplay="$f(x)=\sin(x)+2$"
   hint="Read the midline from the graph's range, then the amplitude is the distance from midline to peak."
 >}}
@@ -370,7 +372,8 @@ Again, these functions are equivalent, so both yield the same graph.
 
 {{< fillin
   question="Write a formula for the function graphed above."
-  answer="4\sin(\tfrac{\pi}{5}x-\tfrac{\pi}{5})+4"
+  answer="4\sin(\frac{\pi}{5}x-\frac{\pi}{5})+4"
+  answerForm="no-like-terms"
   answerDisplay="$y=4\sin\left(\tfrac{\pi}{5}x-\tfrac{\pi}{5}\right)+4$"
   hint="Find the midline and amplitude from the maximum and minimum, then find the period from one full cycle to locate $B$, and finally the horizontal shift of the first peak to locate $C$."
 >}}
@@ -438,9 +441,9 @@ For the graph of $g(x)=-0.8\cos(2x)$, whose midline is $y=0$ and phase shift is 
 {{< fillin
   question="What is the period of $g(x)=-0.8\cos(2x)$?"
   answer="\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$\pi$"
-  hint="Compute $P=\tfrac{2\pi}{|B|}$ with $B=2$."
+  hint="Read $B$ as the coefficient of $x$ inside the cosine, then compute $P=\tfrac{2\pi}{|B|}$."
 >}}
 
 {{< callout type="info" >}}
@@ -482,23 +485,25 @@ For $g(x)=-2\cos\left(\tfrac{\pi}{3}x+\tfrac{\pi}{6}\right)$, whose midline is $
 {{< fillin
   question="What is the amplitude of $g(x)=-2\cos\left(\tfrac{\pi}{3}x+\tfrac{\pi}{6}\right)$?"
   answer="2"
+  answerForm="decimal"
   answerDisplay="$2$"
-  hint="The amplitude is $|A|$; note the printed coefficient here is $-2$, so its absolute value is the amplitude."
+  hint="Compare the function to $y=A\cos(Bx-C)+D$; the amplitude is $|A|$, so mind the sign of $A$."
 >}}
 
 {{< fillin
   question="What is the period of $g(x)=-2\cos\left(\tfrac{\pi}{3}x+\tfrac{\pi}{6}\right)$?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="$6$"
-  hint="Compute $P=\tfrac{2\pi}{|B|}$ with $B=\tfrac{\pi}{3}$."
+  hint="Read $B$ as the coefficient of $x$ inside the cosine, then compute $P=\tfrac{2\pi}{|B|}$."
 >}}
 
 {{< fillin
   question="Determine the phase shift for $g(x)=-2\cos\left(\tfrac{\pi}{3}x+\tfrac{\pi}{6}\right)$ as a signed value (positive = right, negative = left)."
-  answer="-0.5"
-  answerForm="decimal"
+  answer="-\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac12$"
-  hint="Rewrite $+\tfrac{\pi}{6}$ as $-\left(-\tfrac{\pi}{6}\right)$ so $C=-\tfrac{\pi}{6}$, then compute $\tfrac{C}{B}$."
+  hint="Match the argument to the form $Bx-C$, keeping the sign of $C$, then compute $\tfrac{C}{B}$."
 >}}
 
 **Example.** Given $y=-2\cos\left(\tfrac{\pi}{2}x+\pi\right)+3$, determine the amplitude, period, phase shift, and vertical shift. Then graph the function.
@@ -522,7 +527,7 @@ Since $A$ is negative, the graph of the cosine function has been reflected about
 The figure below shows one cycle of the graph of the function.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"One cycle of y = −2cos(πx/2 + π) + 3 on a labeled grid from −1 to 9, with amplitude 2 marked from the midline to a peak at x = 0, the midline y = 3 marked with a dashed line, and the period 4 marked between two troughs.","xMin":-1.3,"xMax":9.3,"yMin":-1.6,"yMax":7.6,"grid":false,"tickLabels":true,"unit":42,"curves":[{"kind":"cosine","a":-2,"b":1.5707963267948966,"h":-2,"k":3}],"lines":[{"y":3,"dashed":true,"arrows":false,"label":"Midline"}],"segments":[{"from":[4,3],"to":[4,5],"arrows":true},{"from":[2,-1.0],"to":[6,-1.0],"arrows":true}],"texts":[{"at":[4,5.9],"text":"Amplitude = 2"},{"at":[4,-1.35],"text":"Period = 4"}]}
+{"ariaLabel":"The graph of y = −2cos(πx/2 + π) + 3 on a labeled grid from −1 to 9, with the amplitude 2 marked from the midline up to the peak at x = 4, the midline y = 3 marked with a dashed line, and the period 4 marked between the troughs at x = 2 and x = 6.","xMin":-1.3,"xMax":9.3,"yMin":-1.6,"yMax":7.6,"grid":false,"tickLabels":true,"unit":42,"curves":[{"kind":"cosine","a":-2,"b":1.5707963267948966,"h":-2,"k":3}],"lines":[{"y":3,"dashed":true,"arrows":false,"label":"Midline"}],"segments":[{"from":[4,3],"to":[4,5],"arrows":true},{"from":[2,0.45],"to":[6,0.45],"arrows":true}],"texts":[{"at":[4,5.45],"text":"Amplitude = 2","anchor":"middle"},{"at":[6.35,0.45],"text":"Period = 4","anchor":"start"}]}
 {{< /apfigure >}}
 
 ## Using Transformations of Sine and Cosine Functions
@@ -534,7 +539,7 @@ We can use the transformations of sine and cosine functions in numerous applicat
 **Solution.** Recall that, for a point on a circle of radius $r$, the $y$-coordinate of the point is $y=r\sin(x)$, so in this case, we get the equation $y(x)=3\sin(x)$. The constant $3$ causes a vertical stretch of the $y$-values of the function by a factor of $3$, which we can see in the graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = 3sin(x) from −π/2 to 4π, amplitude 3, period 2π, oscillating between −3 and 3.","xMin":-2,"xMax":13.7,"yMin":-4.6,"yMax":4.3,"grid":false,"tickLabels":false,"unit":22,"curves":[{"kind":"sine","a":3}],"texts":[{"at":[-1.5708,-3.75],"text":"−π/2"},{"at":[1.5708,-3.75],"text":"π/2"},{"at":[3.1416,-3.75],"text":"π"},{"at":[4.7124,-3.75],"text":"3π/2"},{"at":[6.2832,-3.75],"text":"2π"},{"at":[7.854,-3.75],"text":"5π/2"},{"at":[9.4248,-3.75],"text":"3π"},{"at":[11.0,-3.75],"text":"7π/2"},{"at":[12.566,-3.75],"text":"4π"}]}
+{"ariaLabel":"The graph of y = 3sin(x) from 0 to 4π, amplitude 3, period 2π, oscillating between −3 and 3.","xMin":-1.0,"xMax":13.7,"yMin":-4.7,"yMax":4.3,"grid":false,"tickLabels":"y","unit":22,"curves":[{"kind":"sine","a":3,"from":0,"to":13.2,"arrows":"end"}],"texts":[{"at":[1.5708,-4.0],"text":"π/2","anchor":"middle"},{"at":[3.1416,-4.0],"text":"π","anchor":"middle"},{"at":[4.7124,-4.0],"text":"3π/2","anchor":"middle"},{"at":[6.2832,-4.0],"text":"2π","anchor":"middle"},{"at":[7.854,-4.0],"text":"5π/2","anchor":"middle"},{"at":[9.4248,-4.0],"text":"3π","anchor":"middle"},{"at":[10.9956,-4.0],"text":"7π/2","anchor":"middle"},{"at":[12.566,-4.0],"text":"4π","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Analysis.** Notice that the period of the function is still $2\pi$; as we travel around the circle, we return to the point $(3,0)$ for $x=2\pi,4\pi,6\pi,\dots$ Because the outputs of the graph will now oscillate between $-3$ and $3$, the amplitude of the sine wave is $3$.
@@ -542,6 +547,7 @@ We can use the transformations of sine and cosine functions in numerous applicat
 {{< fillin
   question="What is the range of $f(x)=7\cos(x)$? Write your answer in interval notation."
   answer="[-7,7]"
+  answerForm="decimal"
   answerDisplay="$[-7,7]$"
   hint="The outputs oscillate a distance $|A|$ above and below the midline $y=0$."
 >}}
@@ -549,13 +555,13 @@ We can use the transformations of sine and cosine functions in numerous applicat
 **Example.** A circle with radius $3$ ft is mounted with its center $4$ ft off the ground. The point closest to the ground is labeled $P$, as shown below. Sketch a graph of the height above the ground of the point $P$ as the circle is rotated; then find a function that gives the height in terms of the angle of rotation.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A circle of radius 3 feet, its center mounted 4 feet above a horizontal ground line, with the point on the circle closest to the ground labeled P.","circles":[{"at":[0,4],"r":3,"radius":{"angle":50,"label":"3 ft"}}],"segments":[{"from":[-5,0],"to":[5,0]},{"from":[-4.3,0],"to":[-4.3,4],"label":"4 ft","labelSide":"left"}],"points":[{"at":[0,1],"label":"P"}]}
+{"ariaLabel":"A circle of radius 3 feet, its center mounted 4 feet above a horizontal ground line, with the point on the circle closest to the ground labeled P.","circles":[{"at":[0,4],"r":3,"radius":{"angle":50,"label":"3 ft"}}],"segments":[{"from":[-5,0],"to":[5,0]},{"from":[-4.3,0],"to":[-4.3,4],"arrow":"both","label":"4 ft","labelSide":"left"},{"from":[-4.6,4],"to":[-4.0,4]}],"points":[{"at":[0,4]},{"at":[0,1],"label":"P"}]}
 {{< /apfigure >}}
 
 **Solution.** Sketching the height, we note that it will start $1$ ft above the ground, then increase up to $7$ ft above the ground, and continue to oscillate $3$ ft above and below the center value of $4$ ft, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of h(x) = −3cos(x) + 4 from 0 to 4π, oscillating between 1 and 7, with a dashed midline at y = 4.","xMin":-0.3,"xMax":13.7,"yMin":-0.6,"yMax":7.5,"grid":false,"tickLabels":"y","yTickStep":0.5,"unit":22,"curves":[{"kind":"cosine","a":-3,"k":4}],"lines":[{"y":4,"dashed":true,"arrows":false}],"texts":[{"at":[1.5708,-0.35],"text":"π/2"},{"at":[3.1416,-0.35],"text":"π"},{"at":[4.7124,-0.35],"text":"3π/2"},{"at":[6.2832,-0.35],"text":"2π"},{"at":[7.854,-0.35],"text":"5π/2"},{"at":[9.4248,-0.35],"text":"3π"},{"at":[11.0,-0.35],"text":"7π/2"},{"at":[12.566,-0.35],"text":"4π"}],"yLabel":"h(x)"}
+{"ariaLabel":"The graph of h(x) = −3cos(x) + 4 from 0 to 4π, oscillating between 1 and 7, with a dashed midline at y = 4.","xMin":-0.3,"xMax":13.7,"yMin":-0.9,"yMax":7.6,"grid":false,"tickLabels":"y","xUnit":22,"yUnit":26,"curves":[{"kind":"cosine","a":-3,"k":4,"from":0,"to":13.2,"arrows":"end"}],"lines":[{"y":4,"dashed":true,"arrows":false}],"texts":[{"at":[1.5708,-0.55],"text":"π/2","anchor":"middle"},{"at":[3.1416,-0.55],"text":"π","anchor":"middle"},{"at":[4.7124,-0.55],"text":"3π/2","anchor":"middle"},{"at":[6.2832,-0.55],"text":"2π","anchor":"middle"},{"at":[7.854,-0.55],"text":"5π/2","anchor":"middle"},{"at":[9.4248,-0.55],"text":"3π","anchor":"middle"},{"at":[10.9956,-0.55],"text":"7π/2","anchor":"middle"},{"at":[12.566,-0.55],"text":"4π","anchor":"middle"}],"yLabel":"h(x)"}
 {{< /apfigure >}}
 
 Although we could use a transformation of either the sine or cosine function, we start by looking for characteristics that would make one function easier to use than the other. Let's use a cosine function because it starts at the highest or lowest value, while a sine function starts at the middle value. A standard cosine starts at the highest value, and this graph starts at the lowest value, so we need to incorporate a vertical reflection.
@@ -569,12 +575,13 @@ $$y=-3\cos(x)+4$$
 {{< fillin
   question="A weight is attached to a spring that is then hung from a board, as shown below. As the spring oscillates up and down, the position $y$ of the weight relative to the board ranges from $-1$ in. (at time $x=0$) to $-7$ in. (at time $x=\pi$) below the board. Assuming $y$ is given as a sinusoidal function of $x$, find a cosine function that gives the position $y$ in terms of $x$."
   answer="3\cos(x)-4"
+  answerForm="no-like-terms"
   answerDisplay="$y=3\cos(x)-4$"
-  hint="The midline is halfway between $-1$ and $-7$; the amplitude is the distance from the midline to either extreme, and $y$ starts at its highest value at $x=0$."
+  hint="The midline is halfway between the two extreme positions and the amplitude is the distance from the midline to either one; then decide whether $y$ starts at its highest or its lowest value at $x=0$."
 >}}
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A weight hanging below a board on a spring, with the distance y measured from the board down to the weight.","polygons":[{"points":[[-2,4],[2,4],[2,4.5],[-2,4.5]]}],"segments":[{"from":[0,4],"to":[0,1.3],"label":"y","labelSide":"right"}],"circles":[{"at":[0,1],"r":0.3}]}
+{"ariaLabel":"A weight hanging below a board on a spring, with the distance y measured from the board down to the weight.","polygons":[{"points":[[-2,4],[2,4],[2,4.5],[-2,4.5]]},{"points":[[-0.6,0.4],[0.6,0.4],[0.6,1.3],[-0.6,1.3]]}],"segments":[{"from":[0,4],"to":[0,3.75]},{"from":[0,3.75],"to":[0.3,3.6125]},{"from":[0.3,3.6125],"to":[-0.3,3.3375]},{"from":[-0.3,3.3375],"to":[0.3,3.0625]},{"from":[0.3,3.0625],"to":[-0.3,2.7874999999999996]},{"from":[-0.3,2.7874999999999996],"to":[0.3,2.5125]},{"from":[0.3,2.5125],"to":[-0.3,2.2375]},{"from":[-0.3,2.2375],"to":[0.3,1.9625]},{"from":[0.3,1.9625],"to":[-0.3,1.6875]},{"from":[-0.3,1.6875],"to":[0,1.55]},{"from":[0,1.55],"to":[0,1.3]},{"from":[-1.2,4],"to":[-1.2,1.3],"arrow":"both","label":"y","labelSide":"right"}]}
 {{< /apfigure >}}
 
 **Example.** The London Eye is a huge Ferris wheel with a diameter of $135$ meters ($443$ feet). It completes one rotation every $30$ minutes. Riders board from a platform $2$ meters above the ground. Express a rider's height above ground as a function of time in minutes.
@@ -630,6 +637,7 @@ where $t$ is in minutes and $y$ is measured in meters.
 {{< fillin
   question="A sinusoidal curve is shown above. What is its amplitude?"
   answer="2"
+  answerForm="decimal"
   answerDisplay="$2$"
   hint="The amplitude is half the distance between the maximum and minimum $y$-values."
 >}}
@@ -637,6 +645,7 @@ where $t$ is in minutes and $y$ is measured in meters.
 {{< fillin
   question="What is the period of the same curve?"
   answer="4"
+  answerForm="decimal"
   answerDisplay="$4$"
   hint="The period is the horizontal distance between two consecutive maxima."
 >}}
@@ -644,20 +653,23 @@ where $t$ is in minutes and $y$ is measured in meters.
 {{< fillin
   question="What is the midline of the same curve?"
   answer="y=-3"
+  answerForm="solved:y decimal"
   answerDisplay="$y=-3$"
   hint="The midline sits halfway between the maximum and minimum $y$-values."
 >}}
 
 {{< fillin
   question="Write an equation involving the sine function for the same curve."
-  answer="2\sin(\tfrac{\pi}{2}x)-3"
+  answer="2\sin(\frac{\pi}{2}x)-3"
+  answerForm="no-like-terms"
   answerDisplay="$f(x)=2\sin\left(\tfrac{\pi}{2}x\right)-3$"
-  hint="Use the amplitude, period, and midline you already found; the curve crosses its midline rising at $x=0$."
+  hint="Use the amplitude, period, and midline you already found; then check whether the curve crosses its midline rising or falling at $x=0$."
 >}}
 
 {{< fillin
   question="What is the range of $f(x)=\tfrac23\cos x$? Write your answer in interval notation."
-  answer="[-2/3,2/3]"
+  answer="[-\frac{2}{3},\frac{2}{3}]"
+  answerForm="lowest-terms"
   answerDisplay="$\left[-\tfrac23,\tfrac23\right]$"
   hint="The outputs oscillate a distance $|A|$ above and below the midline $y=0$."
 >}}
@@ -665,24 +677,24 @@ where $t$ is in minutes and $y$ is measured in meters.
 {{< fillin
   question="What is the period of $f(x)=\tfrac23\cos x$?"
   answer="2\pi"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$2\pi$"
-  hint="No coefficient of $x$ is written, so $B=1$ and $P=\tfrac{2\pi}{|B|}$."
+  hint="Read $B$ as the coefficient of $x$ inside the cosine, then compute $P=\tfrac{2\pi}{|B|}$."
 >}}
 
 {{< multiplechoice
   question="Which graph shows two periods of $f(x)=\cos(2x)$?"
   mode="graph"
   answerIndex="0"
-  hint="Two periods of a function with period $\pi$ span an interval of length $2\pi$; a cosine curve starts at its maximum."
+  hint="Find the period with $P=\tfrac{2\pi}{|B|}$, count the full cycles each graph completes between $0$ and $2\pi$, and check where each curve starts."
 >}}
-{"ariaLabel":"A cosine-shaped curve completing two full oscillations between −1 and 1 over the interval from 0 to 2π, starting at a maximum.","xMin":-0.3,"xMax":7.3,"yMin":-1.7,"yMax":1.4,"tickLabels":false,"curves":[{"kind":"cosine","b":2}],"texts":[{"at":[0,-1.35],"text":"0"},{"at":[3.1416,-1.35],"text":"π"},{"at":[6.2832,-1.35],"text":"2π"}]}
+{"ariaLabel":"A cosine-shaped curve completing two full oscillations centred on the x-axis over the interval from 0 to 2π, starting at a maximum.","xMin":-0.5,"xMax":7.0,"yMin":-1.9,"yMax":1.5,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cosine","b":2,"from":0,"to":6.2832,"arrows":false}],"texts":[{"at":[3.1416,-1.5],"text":"π","anchor":"middle"},{"at":[6.2832,-1.5],"text":"2π","anchor":"middle"}]}
 ===OPT===
-{"ariaLabel":"A cosine-shaped curve completing one full oscillation between −1 and 1 over the interval from 0 to 2π, starting at a maximum.","xMin":-0.3,"xMax":7.3,"yMin":-1.7,"yMax":1.4,"tickLabels":false,"curves":[{"kind":"cosine"}],"texts":[{"at":[0,-1.35],"text":"0"},{"at":[3.1416,-1.35],"text":"π"},{"at":[6.2832,-1.35],"text":"2π"}]}
+{"ariaLabel":"A cosine-shaped curve completing one full oscillation centred on the x-axis over the interval from 0 to 2π, starting at a maximum.","xMin":-0.5,"xMax":7.0,"yMin":-1.9,"yMax":1.5,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cosine","from":0,"to":6.2832,"arrows":false}],"texts":[{"at":[3.1416,-1.5],"text":"π","anchor":"middle"},{"at":[6.2832,-1.5],"text":"2π","anchor":"middle"}]}
 ===OPT===
-{"ariaLabel":"A sine-shaped curve completing two full oscillations between −1 and 1 over the interval from 0 to 2π, starting at zero and rising.","xMin":-0.3,"xMax":7.3,"yMin":-1.7,"yMax":1.4,"tickLabels":false,"curves":[{"kind":"sine","b":2}],"texts":[{"at":[0,-1.35],"text":"0"},{"at":[3.1416,-1.35],"text":"π"},{"at":[6.2832,-1.35],"text":"2π"}]}
+{"ariaLabel":"A sine-shaped curve completing two full oscillations centred on the x-axis over the interval from 0 to 2π, starting at zero and rising.","xMin":-0.5,"xMax":7.0,"yMin":-1.9,"yMax":1.5,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"sine","b":2,"from":0,"to":6.2832,"arrows":false}],"texts":[{"at":[3.1416,-1.5],"text":"π","anchor":"middle"},{"at":[6.2832,-1.5],"text":"2π","anchor":"middle"}]}
 ===OPT===
-{"ariaLabel":"A cosine-shaped curve completing two full oscillations between −1 and 1 over the interval from 0 to 2π, starting at a minimum.","xMin":-0.3,"xMax":7.3,"yMin":-1.7,"yMax":1.4,"tickLabels":false,"curves":[{"kind":"cosine","a":-1,"b":2}],"texts":[{"at":[0,-1.35],"text":"0"},{"at":[3.1416,-1.35],"text":"π"},{"at":[6.2832,-1.35],"text":"2π"}]}
+{"ariaLabel":"A cosine-shaped curve completing two full oscillations centred on the x-axis over the interval from 0 to 2π, starting at a minimum.","xMin":-0.5,"xMax":7.0,"yMin":-1.9,"yMax":1.5,"grid":false,"tickLabels":false,"unit":36,"curves":[{"kind":"cosine","a":-1,"b":2,"from":0,"to":6.2832,"arrows":false}],"texts":[{"at":[3.1416,-1.5],"text":"π","anchor":"middle"},{"at":[6.2832,-1.5],"text":"2π","anchor":"middle"}]}
 {{< /multiplechoice >}}
 
 ### Use phase shifts of sine and cosine curves
@@ -690,32 +702,35 @@ where $t$ is in minutes and $y$ is measured in meters.
 {{< fillin
   question="Determine the phase shift for $y=3\sin(8(x+4))+5$ as a signed value (positive = right, negative = left)."
   answer="-4"
+  answerForm="decimal"
   answerDisplay="$-4$"
-  hint="Rewrite $8(x+4)$ as $8x-(-32)$ so $B=8$, $C=-32$, then compute $\tfrac{C}{B}$."
+  hint="Distribute the $8$ to write the argument in the form $Bx-C$, keeping the sign of $C$, then compute $\tfrac{C}{B}$."
 >}}
 
 {{< fillin
   question="What is the midline of $y=3\sin(8(x+4))+5$?"
   answer="y=5"
+  answerForm="solved:y decimal"
   answerDisplay="$y=5$"
   hint="The midline is $y=D$; read $D$ directly from the equation."
 >}}
 
 {{< fillin
   question="Determine the phase shift for $f(t)=-\cos\left(t+\tfrac{\pi}{3}\right)+1$ as a signed value (positive = right, negative = left)."
-  answer="-\pi/3"
-  answerForm="radians"
+  answer="-\frac{\pi}{3}"
+  answerForm="radians single-term"
   answerDisplay="$-\tfrac{\pi}{3}$"
-  hint="Rewrite $t+\tfrac{\pi}{3}$ as $t-\left(-\tfrac{\pi}{3}\right)$ so $B=1$, $C=-\tfrac{\pi}{3}$, then compute $\tfrac{C}{B}$."
+  hint="Match the argument to the form $Bt-C$, keeping the sign of $C$, then compute $\tfrac{C}{B}$."
 >}}
 
 {{< fillin
   question="What is the midline of $f(t)=-\cos\left(t+\tfrac{\pi}{3}\right)+1$?"
   answer="y=1"
+  answerForm="solved:y decimal"
   answerDisplay="$y=1$"
   hint="The midline is $y=D$; read $D$ directly from the equation."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 6.1: Graphs of the Sine and Cosine Functions](https://openstax.org/books/precalculus-2e/pages/6-1-graphs-of-the-sine-and-cosine-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the opening rainbow-prism credit photograph (Figure 1), which carries no mathematics. Recreated every instructional graph as an accessible spec-first SVG built from its exact equation, using the new `sine`/`cosine` curve kinds: the plotted $\sin(x)$ and $\cos(x)$ parent curves with their table points; the compound unit-circle/sine-curve correspondence figure, redrawn as radius segments and dashed guide lines within one shared coordinate system rather than the source's two-panel raster image; the period comparison of $\sin(x)$ and $\cos(x)$ with a bracketed "1 period" span; the odd- and even-symmetry sine and cosine graphs; the $\sin(2x)/\sin(x/2)/\sin(x)$ period-compression comparison; the four-curve amplitude comparison $\sin x,2\sin x,3\sin x,4\sin x$; the reflected $-4\sin(x)$; the three-curve phase-shift comparison; the generic $y=A\sin(x)+D$ midline diagram; the vertical-shift comparison $\sin(x)$ vs. $\sin(x)+2$; the annotated $3\sin(2x)+1$ (amplitude/midline/period marked); the two "determine the equation from the graph" figures (the reflected-cosine and the shifted-cosine); the annotated grid-plotted $-2\sin(\pi x/2)$; the annotated $3\sin(\pi x/4-\pi/4)$; the annotated $-2\cos(\pi x/2+\pi)+3$ (amplitude/midline/period marked); the $3\sin(x)$ circular-motion curve; and the $-3\cos(x)+4$ Ferris-wheel-style height curve. The circle-mounted-on-a-stand illustration (radius $3$ ft, center $4$ ft up, point $P$) and the weight-on-a-spring illustration were recreated as simplified `kind="figure"` schematics (a labeled circle over a ground line; a labeled board, measurement segment, and weight) rather than literal photographic-style renderings, since the engine has no spring-coil primitive and none of the illustration's geometry is graded. The Practice block's "determine the amplitude, period, midline, and an equation" graph-reading exercise, and both "determine the formula" in-page figures, kept their own bare, unlabeled curves (no amplitude/midline arrows and no printed equation, since those are exactly what each item asks the learner to find); every such figure's accessible description states only the same raw coordinates and axis marks a sighted reader would read off the image, never the derived amplitude/period/midline/equation vocabulary that would answer the accompanying question. Converted every "Try It" into interactive components with instant feedback. Two amplitude Try Its whose printed coefficient ($\tfrac12$, $7$) is literally the requested value were restated to avoid a pure retype: the first asks for the amplitude as a decimal ($0.5$, distinct from the printed $\tfrac12$ span) alongside a separate stretched-or-compressed multiple choice, and the second asks for the range $[-7,7]$ instead of the amplitude directly. Every phase-shift answer is requested "as a signed value (positive = right, negative = left)," combining the source's separate direction-and-magnitude answer into one graded quantity, and every midline answer is requested as the equation $y=D$. Two Try Its that ask for all four of the midline, amplitude, period, and phase shift (Try It 5, Try It 9) keep only the three non-trivial values interactive, since each has a midline of $y=0$; Try It 8 keeps only its amplitude and period interactive, since its midline and phase shift are both $0$ — each dropped value is stated in the surrounding prose instead, to keep the in-page practice set at the 2–3 question cap. "Sketch a graph" instructions are not graded as drawn curves in this chapter (their key points fall on multiples of $\pi$, off the `graphplot` snap lattice); each retained sketch Try It instead asks for the derived numeric or symbolic features shown in its worked How-To, per the corpus's established response-mode adaptation for trigonometric graphing. Added one graph-mode recognition multiple choice (which graph shows two periods of $f(x)=\cos(2x)$?), the section's one graphing-recognition item per corpus convention, with distractors varying the period, the sine/cosine phase, and the reflection. Adapted seven selected end-of-section exercises — one two-full-periods period/range item (the printed amplitude $\tfrac23$ is asked for as a range instead, the same retype-avoidance adaptation used on Try It 10), one graph-reading amplitude/period/midline/equation item, one graph-recognition source item, and two phase-shift/vertical-translation items — into eleven interactive components across a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 6.1: Graphs of the Sine and Cosine Functions](https://openstax.org/books/precalculus-2e/pages/6-1-graphs-of-the-sine-and-cosine-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the opening rainbow-prism credit photograph (Figure 1), which carries no mathematics. Recreated every instructional graph as an accessible spec-first SVG built from its exact equation, using the new `sine`/`cosine` curve kinds: the plotted $\sin(x)$ and $\cos(x)$ parent curves with their table points; the compound unit-circle/sine-curve correspondence figure, redrawn as radius segments and dashed guide lines within one shared coordinate system rather than the source's two-panel raster image; the period comparison of $\sin(x)$ and $\cos(x)$ with a bracketed "1 period" span; the odd- and even-symmetry sine and cosine graphs; the $\sin(2x)/\sin(x/2)/\sin(x)$ period-compression comparison; the four-curve amplitude comparison $\sin x,2\sin x,3\sin x,4\sin x$; the reflected $-4\sin(x)$; the three-curve phase-shift comparison; the generic $y=A\sin(x)+D$ midline diagram; the vertical-shift comparison $\sin(x)$ vs. $\sin(x)+2$; the annotated $3\sin(2x)+1$ (amplitude/midline/period marked); the two "determine the equation from the graph" figures (the reflected-cosine and the shifted-cosine); the annotated grid-plotted $-2\sin(\pi x/2)$; the annotated $3\sin(\pi x/4-\pi/4)$; the annotated $-2\cos(\pi x/2+\pi)+3$ (amplitude/midline/period marked); the $3\sin(x)$ circular-motion curve; and the $-3\cos(x)+4$ Ferris-wheel-style height curve. The circle-mounted-on-a-stand illustration (radius $3$ ft, center $4$ ft up, point $P$) and the weight-on-a-spring illustration were recreated as simplified `kind="figure"` schematics (a labeled circle over a ground line with a $4$ ft dimension arrow; a board, a zigzag spring, and a block weight with a dimension arrow labeled $y$) rather than literal photographic-style renderings, since none of the illustration's geometry is graded. The period comparison is drawn from $0$ to $4\pi$ so that $\sin(x/2)$ shows a full period (the source figure ends at $2\pi$ but prints that tick as $4\pi$), the amplitude comparison is drawn from $0$ to $\tfrac{5\pi}{2}$ with each curve labeled at its last peak, and the comparison figures carry their curve names on leader arrows. Example 10's phase-shift fraction drops a stray comma the source prints after $-\pi$ in its numerator. The Practice block's "determine the amplitude, period, midline, and an equation" graph-reading exercise, and both "determine the formula" in-page figures, kept their curves unannotated (no amplitude/midline arrows and no printed equation, since those are exactly what each item asks the learner to find); every such figure's accessible description states only the same raw coordinates and axis marks a sighted reader would read off the image, never the derived amplitude/period/midline/equation vocabulary that would answer the accompanying question. Converted every "Try It" into interactive components with instant feedback. Try It 2's two questions are separate items, the amplitude a fill-in and the stretched-or-compressed judgement a multiple choice; Try It 10, whose printed coefficient $7$ is literally the requested amplitude, asks for the range $[-7,7]$ instead. Every phase-shift answer is requested "as a signed value (positive = right, negative = left)," combining the source's separate direction-and-magnitude answer into one graded quantity, and every midline answer is requested as the equation $y=D$ (Try It 4's vertical shift, "2 units up," is asked as the midline $y=2$). Two Try Its that ask for all four of the midline, amplitude, period, and phase shift (Try It 5, Try It 9) keep only the three non-trivial values interactive, since each has a midline of $y=0$; Try It 8 keeps only its amplitude and period interactive, since its midline and phase shift are both $0$ — each dropped value is stated in the surrounding prose instead, to keep the in-page practice set at the 2–3 question cap. "Sketch a graph" instructions are not graded as drawn curves in this chapter (their key points fall on multiples of $\pi$, off the `graphplot` snap lattice); each retained sketch Try It instead asks for the derived numeric or symbolic features shown in its worked How-To, per the corpus's established response-mode adaptation for trigonometric graphing. Added one graph-mode recognition multiple choice (which graph shows two periods of $f(x)=\cos(2x)$?), the section's one graphing-recognition item per corpus convention, with distractors varying the period, the sine/cosine phase, and the reflection. Adapted five selected end-of-section exercises — one two-full-periods period/range item (the printed amplitude $\tfrac23$ is asked for as a range instead, the same retype-avoidance adaptation used on Try It 10), one graph-reading amplitude/period/midline/equation item, one graph-recognition source item, and two phase-shift/vertical-translation items — into eleven interactive components across a closing Practice block, one group per objective.</small>

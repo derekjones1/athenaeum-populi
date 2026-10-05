@@ -311,6 +311,40 @@ and a logarithm of a negative argument is non-real, so `\ln x` against
 digit-grouped stem (`1{,}000`) now keeps its source-key match (the matcher had
 read it as 1 and 000).
 
+Since the Precalculus chapters 5–6 re-review (October 4, 2026): the trig tokens
+alone pass written arithmetic, so they compose with a value or shape form —
+an evaluated radical key takes `evaluated-trig simplified-radical` (refuses
+`\frac{2\sqrt2}{4}` and the unrationalized `\frac{1}{\sqrt2}`), a rational or
+integer key `evaluated-trig lowest-terms` (refuses `\frac{30}{34}`,
+`1-2(\frac45)^2`), a π-valued key `radians single-term` (refuses
+`\frac{6\pi}{4}`, the retyped conversion `270\cdot\frac{\pi}{180}`, the
+coterminal step `2\pi-\frac{\pi}{3}`, the half-worked period
+`\frac{2\pi}{\frac13}`, `\frac{\pi}{2(3)}`, `\frac{2\pi}{1}`), an inverse-trig
+angle `evaluated-trig radians single-term`, and a sinusoid or transformed-trig
+formula `no-like-terms`, which now reads inside each function's argument
+(`4\sin(\frac{2\pi}{10}x-\frac{\pi}{5})+4`, `2\cdot2\tan(2x)`, `1\sin x`, `+0`
+are `form`; the factored phase `4\sin(\frac{\pi}{5}(x-1))+4` passes). Write
+every key with `\frac`, never a slash: `lowest-terms` grades `15/17` `form`
+against itself. `single-term` now reads interval endpoints one by one and
+passes a bare `0`, so `[0,\pi]` takes `evaluated-trig radians single-term`. A
+bare number against a degree key (`240` for `240^\circ`) is `form` ("write it
+in degrees, with the degree symbol"), and `degrees` refuses arithmetic under
+the mark (`\frac{720}{3}^\circ`). `evaluated-trig` refuses an unspaced degree
+argument (`\cos45^\circ`; the same word-boundary hole let `\ln1` pass
+`evaluated-logarithm`). sec/csc/cot over a variable compare by sampling
+(`\frac{1}{\csc t}` is `correct` for `\sin t`), and `single-trig-function`
+requires the key's own function on the key's argument, finished: the
+cofunction prompt `\cos(\frac{\pi}{2}-t)`, `\sin(-t)` for `-\sin t`,
+`\frac{1}{\cot t}` for `\tan t`, `\frac{\sin t}{1}` are `form`. Engine limit:
+`\sin t\cdot\frac{1}{\cos t}` parses as $\sin(t\sec t)$ (`incorrect`, not
+`form`). Stem trap: "Rationalize the denominator." after "Find $\sin A$" makes
+`verify-answers` read $\sin A$ as a printed subject to re-express; pin "Enter
+the exact value, with a rational denominator." A `kind="figure"` angle mark is
+a figure circle with `from`/`to` (exact arc). A source reference chart placed
+directly above the Try It it answers (Precalculus 5.2's special-angles unit
+circle and its table above the $\tfrac{5\pi}{3}$ Try It) moves below that Try
+It, disclosed; a summary table far above the Practice block stays.
+
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
 `$-10$` in the wording of a +10 source item pairs with it and fails
