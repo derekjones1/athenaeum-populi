@@ -736,8 +736,6 @@ export function unworkedKey(answer) {
  * deletes the list.
  */
 export const VALUE_FORM_SWEEP_PENDING = Object.freeze([
-  'math/precalculus/07-trigonometric-identities-and-equations/',
-  'math/precalculus/08-further-applications-of-trigonometry/',
   'math/precalculus/09-systems-of-equations-and-inequalities/',
   'math/precalculus/10-analytic-geometry/',
   'math/precalculus/11-sequences-probability-and-counting-theory/',
@@ -2551,6 +2549,15 @@ export function lintHugo(src, filename = '', options = {}) {
         err(index, 'multiplechoice: missing non-empty answer');
       } else if (opts.length && !opts.includes(params.answer)) {
         err(index, `multiplechoice: answer ${JSON.stringify(params.answer.slice(0, 40))} is not one of the options (exact string match required)`);
+      }
+      // An option renders as Markdown text with `$…$` math, so TeX outside a
+      // math span prints raw (`\cos^3\theta-…` on Precalculus 7.2–7.4 until
+      // October 5, 2026; no gate read the built options).
+      for (const opt of opts) {
+        const outside = opt.replace(/(^|[^\\])\$(?:[^$\\]|\\.)*\$/g, '$1');
+        if (/\\[A-Za-z]|\^|_\{/.test(outside)) {
+          err(index, `multiplechoice: option ${JSON.stringify(opt.slice(0, 40))} has TeX outside \`$…$\` and renders raw — wrap the math (and the matching \`answer\`) in \`$…$\``);
+        }
       }
     }
     if (/\(a\)/.test(q) && /\(b\)/.test(q)) err(index, `multiplechoice (${q.slice(0, 40)}…): question looks multi-part — split it`);

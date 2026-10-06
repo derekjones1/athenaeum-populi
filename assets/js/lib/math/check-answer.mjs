@@ -743,7 +743,11 @@ function fracHalves(bare) {
 // graded `correct` against `\frac{\pi}{6}` under `single-term` where
 // `\frac{\pi}{2\cdot3}` was refused (Precalculus chapters 5–6 re-review,
 // October 4, 2026). A power of the group (`(-3)^2`) is writesNumeralPower's.
-const NUMERAL_GROUP_PRODUCT = /\d\s*\(\s*-?\s*\d+(?:\.\d+)?\s*\)|\(\s*-?\s*\d+(?:\.\d+)?\s*\)\s*\(?\s*-?\s*\d/;
+// A parenthesized numeral after a closing group, `(-\sqrt3)(1)`, is the same
+// product (Precalculus chapters 7–8 re-review, October 5, 2026).
+// A powered group is a base, not a factor: `10(0.85)^{t}` is the damped
+// model's finished coefficient and base (same re-review).
+const NUMERAL_GROUP_PRODUCT = /\d\s*\(\s*-?\s*\d+(?:\.\d+)?\s*\)(?!\s*\^)|\(\s*-?\s*\d+(?:\.\d+)?\s*\)\s*\(?\s*-?\s*\d|\)\s*\(\s*-?\s*\d+(?:\.\d+)?\s*\)/;
 const writesNumeralProduct = (bare) => {
   const text = bare.replace(NUMERAL_FRACTION, '1');
   return NUMERAL_PRODUCT.test(text) || NUMERAL_GROUP_PRODUCT.test(text);
@@ -2955,8 +2959,16 @@ function isImaginaryRationalTerm(term) {
  * any parse can show them — two rational constants (`16x+9+8`), or two
  * rational multiples of i (`5i+3i`)? Read on the top-level terms of `text`.
  */
+//
+// A term that writes a trigonometric function is never one of them: its value
+// being rational is the angle's coincidence, not arithmetic left undone, and
+// whether it should be evaluated is `evaluated-trig`'s question. The polar
+// key `\frac34(\cos180^\circ+i\sin180^\circ)` read as the two constants −1
+// and 0 and graded `form` against itself, where `120^\circ` passed
+// (Precalculus chapters 7–8 re-review, October 5, 2026).
 function writesNumeralLikeTerms(text) {
-  const bodies = splitTopLevelTerms(text).map((term) => term.trim().replace(/^[+-]\s*/, '')).filter(Boolean);
+  const bodies = splitTopLevelTerms(text).map((term) => term.trim().replace(/^[+-]\s*/, ''))
+    .filter((body) => body && !TRIG_NAME.test(body));
   return bodies.filter(isConstantTerm).length > 1 || bodies.filter(isImaginaryRationalTerm).length > 1;
 }
 
@@ -3098,25 +3110,81 @@ const WRITES_TIMES_ONE = /(?:\\cdot|\\times|\*)\s*1(?![\d.])|(?<![\d.])1\s*(?:\\
 const COEFFICIENT_ONE = /(?:^|[+\-(,=])\s*1\s*(?=[a-zA-Z]|\\(?:sqrt|pi|ln|log|(?:arc)?(?:sin|cos|tan|csc|sec|cot)|theta|alpha|beta|phi)(?![a-zA-Z]))/;
 const NUMERAL_PRODUCT_UNPOWERED = /\d\s*(?:\\cdot|\\times|\*)\s*\(?\s*-?\s*\d+(?:\.\d+)?(?![\d.]|\s*\^)/;
 function writesUnfinishedTerms(bare) {
-  const text = bare.replace(NUMERAL_FRACTION, '1');
-  if (NUMERAL_PRODUCT_UNPOWERED.test(text) || NUMERAL_GROUP_PRODUCT.test(text)) return true;
+  // Read twice: as written, and with π read as a numeral, because an angular
+  // frequency left as `2\pi\cdot3t`, `2\pi(3)t` or `2\pi\cdot\frac12t` splits
+  // its numeral product with the π and passed against `6\pi t` and `\pi t`
+  // (Precalculus chapters 7–8 re-review, October 5, 2026).
+  for (const variant of [bare, bare.replace(/\\pi(?![a-zA-Z])/g, ' 1 ')]) {
+    const text = variant.replace(NUMERAL_FRACTION, '1').replace(NUMERAL_FRACTION_ANY_BRACING, '1');
+    if (NUMERAL_PRODUCT_UNPOWERED.test(text) || NUMERAL_GROUP_PRODUCT.test(text)) return true;
+  }
+  // …and a compound fraction is a division not yet done:
+  // `5\cos(\frac{2\pi}{\frac13}t)` for `5\cos(6\pi t)` (same re-review).
+  if (writesCompoundFraction(bare)) return true;
+  if (writesNumeralTimesFraction(bare) || writesNumeralNumeralPower(bare)) return true;
   if (COEFFICIENT_ONE.test(bare) || writesSignedGroupTerm(bare)) return true;
   const terms = splitTopLevelTerms(bare).filter((term) => term.trim());
-  if (terms.length > 1 && terms.some((term) => isZeroTerm(term.trim().replace(/^[+-]\s*/, '')))) return true;
+  // A term that writes a trigonometric function is zero only by its angle
+  // (`i\sin180^\circ` in a polar form), which is no written zero: only a
+  // literal zero coefficient counts there (Precalculus chapters 7–8 re-review).
+  const zeroTerm = (body) => (TRIG_NAME.test(body) ? /^0(?![\d.])/.test(body) : isZeroTerm(body));
+  if (terms.length > 1 && terms.some((term) => zeroTerm(term.trim().replace(/^[+-]\s*/, '')))) return true;
   for (let i = 0; i < bare.length; i += 1) {
     if (bare[i] === '\\') {
       i += bare.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1;
       continue;
     }
     if (bare[i] !== '(') continue;
+    const group = readDelimitedGroup(bare, i);
+    if (!group) continue;
+    const sum = splitTopLevelTerms(group[0]).filter((term) => term.trim()).length > 1;
+    const variableFree = !/[a-zA-Z]/.test(group[0].replace(/\\[a-zA-Z]+/g, ' '));
+    // A variable-free sum raised to a power is a square not yet multiplied
+    // out: `\frac{(1-\sqrt3)^2}{-2}` passed against `\sqrt3-2` (Precalculus
+    // chapters 7–8 re-review, October 5, 2026).
+    if (sum && variableFree && /^\s*\^/.test(bare.slice(group[1]))) return true;
     const before = bare.slice(0, i).trimEnd();
     if (!/(?:\d|\})$/.test(before) || /(?:\^|_)\s*\{[^{}]*\}$/.test(before)) continue;
-    const group = readDelimitedGroup(bare, i);
-    if (!group || splitTopLevelTerms(group[0]).filter((term) => term.trim()).length < 2) continue;
-    if (!/[a-zA-Z]/.test(group[0].replace(/\\[a-zA-Z]+/g, ' '))) return true;
+    // One term in parentheses after a numeral or a fraction is a product not
+    // yet carried out — `2(\frac{\sqrt2}{2})\cos31^\circ`,
+    // `\frac14(\frac{1-\cos(4x)}{2})` (same re-review).
+    // A powered group is a base, not a factor (`10(0.85)^t`).
+    if (!sum && !/^\s*\^/.test(bare.slice(group[1]))) return true;
+    if (sum && variableFree) return true;
   }
   return false;
 }
+
+/**
+ * A numeral (or numeral fraction) multiplied by a fraction with a `\cdot`,
+ * `\times` or `*` written between them, either side: `2\cdot\frac{\sqrt2}{2}`,
+ * `\frac14\cdot\frac{1-\cos(4x)}{2}`, `\sin(2\cdot\frac{\pi}{4})`. The
+ * numeral-product rule saw only numerals on both sides, so the product of a
+ * number and a fraction holding a radical, π or a variable passed
+ * `no-like-terms` and `single-trig-function` (Precalculus chapters 7–8
+ * re-review, October 5, 2026). A numeral power after the dot (`\cdot2^x`) is
+ * a model's base, as in writesUnfinishedTerms.
+ */
+// A function name's parenthesized argument, `\cos(4x)`, `\sin^2(x)`, `\ln(x)`.
+const FUNCTION_ARGUMENT_GROUP = /\\[a-zA-Z]+\s*(?:\^\s*(?:\{[^{}]*\}|\S))?\s*\([^()]*\)/g;
+const NUMERAL_FRACTION_ANY_BRACING = /\\[tdc]?frac\s*(?:\{\s*-?\s*\d+(?:\.\d+)?\s*\}|\d)\s*(?:\{\s*\d+(?:\.\d+)?\s*\}|\d)/g;
+function writesNumeralTimesFraction(bare) {
+  const text = bare.replace(NUMERAL_FRACTION_ANY_BRACING, '1');
+  if (/(?:^|[^\w^_{])\d+(?:\.\d+)?\s*(?:\\cdot|\\times|\*)\s*\(?\s*-?\s*\\[tdc]?frac(?![a-zA-Z])/.test(text)) return true;
+  for (const opener of text.matchAll(/\\[tdc]?frac(?![a-zA-Z])/g)) {
+    const numerator = readTexArgument(text, opener.index + opener[0].length);
+    const denominator = numerator && readTexArgument(text, numerator[1]);
+    if (denominator && /^\s*\)?\s*(?:\\cdot|\\times|\*)\s*\(?\s*-?\s*\d+(?:\.\d+)?(?![\d.]|\s*\^)/.test(text.slice(denominator[1]))) return true;
+  }
+  return false;
+}
+
+// A numeral raised to a numeral power, `5^3`, `(-2)^{4}` — a power left to
+// work out (`5^3(\cos135^\circ+i\sin135^\circ)` for the modulus 125). Ten
+// is exempt: `\times10^{-3}` is scientific notation's own writing.
+const NUMERAL_NUMERAL_POWER = /(?:^|[^\w\\}^_.])(\(\s*-?\s*\d+(?:\.\d+)?\s*\)|\d+(?:\.\d+)?)\s*\^\s*(?:\{\s*-?\s*\d+(?:\.\d+)?\s*\}|\d)/g;
+const writesNumeralNumeralPower = (bare) => [...bare.matchAll(NUMERAL_NUMERAL_POWER)]
+  .some((match) => match[1].replace(/[()\s]/g, '') !== '10');
 
 /**
  * Does a top-level term consist of a sign and then one parenthesized single
@@ -4866,8 +4934,13 @@ const FORM_PREDICATES = {
       // quotient property removes. Scoped to numeral-only radicands, because
       // a variable sum (`\sqrt{4+x}`) is irreducible and a variable quotient
       // is the prompt's shape, not necessarily the answer's defect.
+      // A sum holding a radical is no number to evaluate: the nested radical
+      // `\frac{\sqrt{2-\sqrt2}}{2}` (the half-angle value of sin π/8) graded
+      // `form` against itself (Precalculus chapters 7–8 re-review, October
+      // 5, 2026). It is read as a sum below: like terms combined.
       if (radicandIsNumeric(radicand)
-        && (/\\[tdc]?frac|\/|\\cdot|\\times/.test(radicand) || splitTopLevelTerms(radicand).length > 1)) {
+        && (/\\[tdc]?frac|\/|\\cdot|\\times/.test(radicand)
+          || (splitTopLevelTerms(radicand).length > 1 && !/\\sqrt/.test(radicand)))) {
         return false;
       }
       // A NEGATIVE numeric radicand is never a simplified answer: in the
@@ -4884,6 +4957,18 @@ const FORM_PREDICATES = {
       // (Precalculus chapters 1–2 re-review, October 4, 2026).
       if (splitTopLevelTerms(radicand).length > 1) {
         if (!FORM_PREDICATES['no-like-terms'](radicand)) return false;
+        // …and a perfect power common to every term still comes out:
+        // `\sqrt{4x+8}` for `2\sqrt{x+2}`, `\frac{\sqrt{8-4\sqrt2}}{4}` for
+        // `\frac{\sqrt{2-\sqrt2}}{2}` (Precalculus chapters 7–8 re-review,
+        // October 5, 2026). Read off each term's leading numeral (1 when it
+        // has none).
+        const common = splitTopLevelTerms(radicand).filter((term) => term.trim())
+          .map((term) => Number(term.trim().replace(/^[+-]\s*/, '').match(/^\d+(?![.\d])/)?.[0] ?? 1))
+          .reduce((a, b) => gcd(a, b));
+        const index = Number(indexArg ?? 2);
+        for (let factor = 2; factor ** index <= common; factor += 1) {
+          if (common % factor ** index === 0) return false;
+        }
         continue;
       }
       // `\sqrt{1}`, `\sqrt{0}` and `\sqrt{-1}` are written-out numbers (1, 0,
@@ -5002,7 +5087,10 @@ const FORM_PREDICATES = {
     // "Multiplied out" means no grouping left to multiply — and the engine
     // flattens `(y+12)+28` to `y+40`, its own answer, so the parenthesis has
     // to be read off the LaTeX rather than the parse.
-    if (/[()]/.test(bareLatex(latex))) return false;
+    // A function's argument is no grouping (`\cos(80^\circ)`, `\sin(2x)`):
+    // every trigonometric key graded `form` against itself (Precalculus
+    // chapters 7–8 re-review, October 5, 2026).
+    if (/[()]/.test(bareLatex(latex).replace(FUNCTION_ARGUMENT_GROUP, ''))) return false;
     if (!termFractionsReduced(latex)) return false;
     let expr;
     try {
@@ -5013,6 +5101,7 @@ const FORM_PREDICATES = {
     if (!expr.isValid) return false;
     const holdsASum = (e) => {
       if (e.operator === 'Add') return true;
+      if (TRIG_OPERATORS.has(e.operator)) return false;
       if (!e.ops || !e.ops.length) return false;
       return e.ops.some(holdsASum);
     };
@@ -5074,7 +5163,20 @@ const FORM_PREDICATES = {
     // `4\sin(\frac{\pi}{5}x-\frac{\pi}{5})+4` and `4\tan(2x)` — no rule looked
     // inside the parentheses (same re-review). A factored phase,
     // `\frac{\pi}{5}(x-1)`, is one term and passes.
-    if (trigArguments(bareLatex(latex)).some((argument) => !FORM_PREDICATES['no-like-terms'](argument))) return false;
+    //
+    // The argument is read with its degree marks taken off: `3\cdot45^\circ`
+    // and `\frac{240^\circ}{3}` hid their numeral work behind the mark (a
+    // numeral product is refused unless a power follows it, and the mark is
+    // written as one), and passed against `135^\circ` and `80^\circ`
+    // (Precalculus chapters 7–8 re-review, October 5, 2026).
+    if (trigArguments(bareLatex(latex)).some((argument) => !FORM_PREDICATES['no-like-terms'](argument.replace(DEGREE_MARK, '')))) return false;
+    // …and every group holding a sum is a sum held to the same rules, at any
+    // depth: `\tan(\frac{15x-14x}{10})`, `\frac{3\theta+\theta}{2}` and the
+    // denominator of `\frac{-\sqrt3+1}{1-(-\sqrt3)}` passed, because only the
+    // top-level sum was read for like terms and unfinished numeral work
+    // (same re-review). A comma-separated group is a list, not a sum.
+    if (writtenGroups(bareLatex(latex)).some((group) => splitTopLevelTerms(group).filter((term) => term.trim()).length > 1
+      && !withoutGroups(group).includes(',') && !FORM_PREDICATES['no-like-terms'](group))) return false;
     // …and so are two written inside a group: `(3-2)+(-4-5)i` for `1-9i`,
     // the "add the real parts, add the imaginary parts" line, passed — each
     // group was one constant term of the sum, and the engine folds what is
@@ -5282,7 +5384,10 @@ const FORM_PREDICATES = {
     // could show it.
     if (fracHalves(bare).some((half) => {
       const terms = splitTopLevelTerms(half).filter((term) => term.trim());
-      return terms.length > 1 && terms.some((term) => /[()]/.test(term));
+      // A function's argument is no grouped product: `\frac{1-\cos(4x)}{8}`
+      // graded `form` against itself where `\cos4x` passed (Precalculus
+      // chapters 7–8 re-review, October 5, 2026).
+      return terms.length > 1 && terms.some((term) => /[()]/.test(term.replace(FUNCTION_ARGUMENT_GROUP, '')));
     })) return false;
     let depth = 0;
     for (let i = 0; i < bare.length; i += 1) {
@@ -5998,6 +6103,87 @@ const FORM_PREDICATES = {
       return true;
     }
   },
+  // "Write $\sin x\cos y$ as a sum" (product-to-sum) and "rewrite with no
+  // exponent higher than 1" (power reduction) answer with a sum of single
+  // trigonometric applications, and the printed product or power is
+  // value-equal to it: `\sin(x)\cos(x)+\sin(y)\cos(y)` passed
+  // `expanded no-like-terms` against `\frac12\sin(2x)+\frac12\sin(2y)`, and
+  // `\cos x\cos\frac{2\pi}{3}-\sin x\sin\frac{2\pi}{3}` (the sum formula
+  // with its special-angle factors left unevaluated) against
+  // `-\frac12\cos x-\frac{\sqrt3}{2}\sin x` (Precalculus chapters 7–8
+  // re-review, October 5, 2026). Read off the parse, which keeps products and
+  // powers as written: no product holds two factors that write a
+  // trigonometric function, no power of a writing that holds one
+  // (`\cos^2(2x)`, `(1-\cos(6x))^2`), and no function under a bar
+  // (`\frac{\sin x}{\cos x}`). An argument is the function's own business;
+  // compose `no-like-terms` for finished numerals.
+  'no-trig-products': (latex) => {
+    let expr;
+    try {
+      expr = parseLatex(preprocess(latex));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    const holdsTrig = (e) => TRIG_OPERATORS.has(e.operator) || (e.ops ?? []).some(holdsTrig);
+    const unfinished = (e) => {
+      if (TRIG_OPERATORS.has(e.operator)) return false;
+      if ((e.operator === 'Power' || e.operator === 'Square') && holdsTrig(e.ops[0])
+        && !(e.operator === 'Power' && e.ops[1].isNumberLiteral && e.ops[1].re === 1)) return true;
+      if (e.operator === 'Multiply' && e.ops.filter(holdsTrig).length > 1) return true;
+      if (e.operator === 'Divide' && holdsTrig(e.ops[1])) return true;
+      return (e.ops ?? []).some(unfinished);
+    };
+    return !unfinished(expr);
+  },
+  // Sum-to-product: "Write $\sin(3\theta)+\sin\theta$ as a product" answers
+  // `2\sin(2\theta)\cos\theta`, and the printed sum is value-equal to it, so
+  // the item sat as multiple choice — `single-term` and `factored` both
+  // refused the key itself (Precalculus chapters 7–8 re-review, October 5,
+  // 2026). The response is one product: an optional finished numeral
+  // coefficient and trigonometric applications (a power of one allowed),
+  // nothing added, every argument finished (`no-like-terms`, degree marks
+  // off, so `\frac{3\theta+\theta}{2}` is refused). With a key, the
+  // applications are the KEY's: the same functions on arguments of the same
+  // values, in any order — `\cos(-\theta)` for `\cos\theta` is the even
+  // identity left unapplied.
+  'trig-product': (latex, answer) => {
+    const bare = bareLatex(latex);
+    if (!termFractionsReduced(bare) || writesUnfinishedTerms(bare) || writesNumeralProduct(bare)
+      || WRITES_TIMES_ONE.test(bare)) return false;
+    if (trigArguments(bare).some((argument) => !FORM_PREDICATES['no-like-terms'](argument.replace(DEGREE_MARK, '')))) return false;
+    let expr;
+    try {
+      expr = parseLatex(preprocess(latex));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    let product = expr.operator === 'Negate' ? expr.ops[0] : expr;
+    if (product.operator === 'Divide' && product.ops[1].isNumberLiteral) product = product.ops[0];
+    const factors = product.operator === 'Multiply' ? product.ops : [product];
+    const isApplication = (e) => TRIG_OPERATORS.has(e.operator)
+      || (e.operator === 'Power' && TRIG_OPERATORS.has(e.ops[0].operator) && e.ops[1].isNumberLiteral)
+      || (e.operator === 'Square' && TRIG_OPERATORS.has(e.ops[0].operator));
+    const isConstant = (e) => e.unknowns.length === 0 && trigApplications(e).length === 0;
+    if (!factors.every((e) => isApplication(e) || isConstant(e))) return false;
+    const mine = factors.filter(isApplication).flatMap(trigApplications);
+    if (mine.length < 1) return false;
+    if (answer === undefined) return true;
+    try {
+      const key = trigApplications(parseLatex(preprocess(answer)));
+      if (key.length !== mine.length) return false;
+      const left = [...mine];
+      return key.every((wanted) => {
+        const at = left.findIndex((have) => have.operator === wanted.operator && equivalent(have.ops[0], wanted.ops[0]));
+        if (at === -1) return false;
+        left.splice(at, 1);
+        return true;
+      });
+    } catch {
+      return true;
+    }
+  },
   // "Evaluate $\log_2 8$" answers 3, the same hazard one function over. The
   // predicate is `exponential-form`'s, and the duplication is deliberate:
   // §6's rule is that the feedback has to name the step the exercise asks
@@ -6317,6 +6503,8 @@ const FORM_PHRASES = {
   'natural-log': 'with natural logarithms ($\\ln$) only',
   'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
   'single-trig-function': 'as a single trigonometric function',
+  'no-trig-products': 'as a sum of single trigonometric functions, with no product or power of them left',
+  'trig-product': 'as a product of trigonometric functions',
   'evaluated-logarithm': 'as a number, with the logarithm evaluated',
   translation: 'as the sentence reads: the same numbers and operations, in the order the words give them',
   degrees: 'in degrees, with the degree symbol',
@@ -7050,7 +7238,14 @@ export function checkForm(studentRaw, spec, answerRaw) {
       return endpoints.every((bound) => checkFormToken(bound, token, answerRaw));
     }
     if (perCoordinate(token)) {
-      return coordinates.every((member, i) => checkFormToken(member, token, keyMembers[i]));
+      // A coordinate the key itself rounds to a decimal is a number, not a
+      // shape: the polar key `(2\sqrt{5},0.464)` failed `simplified-radical`
+      // against itself for its angle, so no token held the radius simplified
+      // (Precalculus chapters 7–8 re-review, October 5, 2026). Its place
+      // takes a bare number; the value grader judges the rounding.
+      const roundedPlace = (member, i) => /\./.test(keyMembers[i])
+        && PLAIN_NUMBER_KEY.test(preprocess(keyMembers[i]).trim()) && PLAIN_NUMBER_KEY.test(preprocess(member).trim());
+      return coordinates.every((member, i) => roundedPlace(member, i) || checkFormToken(member, token, keyMembers[i]));
     }
     return checkFormToken(studentRaw, token, answerRaw);
   });
@@ -7294,7 +7489,14 @@ function readsEquations(spec) {
 // `a_n=…` failed its own form (Intermediate Algebra chapters 11–12
 // re-review, October 4, 2026). Only a letter or numeral index: a recursive
 // formula's `a_{n-1}` is never a label.
-const SUBSCRIPTED_LETTER = String.raw`[a-zA-Z](?:_(?:[a-zA-Z0-9]|\{\s*[a-zA-Z0-9]+\s*\}))?`;
+// A lowercase Greek letter is a one-letter label too: a law-of-sines stem
+// names its angles α, β, γ, and `\alpha=27.7^\circ` — value-graded as 27.7°
+// like `A=27.7^\circ` — graded `form` under `degrees`, its label read as part
+// of the writing (Precalculus chapters 7–8 re-review, October 5, 2026). Never
+// `\pi`, which is a number, not a name.
+const GREEK_LABEL_LETTER = String.raw`\\(?:alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|rho|sigma|tau|upsilon|phi|varphi|chi|psi|omega)(?![a-zA-Z])`;
+const LABEL_LETTER = String.raw`(?:[a-zA-Z]|${GREEK_LABEL_LETTER})`;
+const SUBSCRIPTED_LETTER = String.raw`${LABEL_LETTER}(?:_(?:[a-zA-Z0-9]|\{\s*[a-zA-Z0-9]+\s*\}))?`;
 const LEADING_VARIABLE_LABEL = new RegExp(String.raw`^\s*${SUBSCRIPTED_LETTER}\s*=(?![=<>])`);
 const TRAILING_VARIABLE_LABEL = new RegExp(String.raw`(?<![=<>!])=\s*${SUBSCRIPTED_LETTER}\s*$`);
 
@@ -7389,7 +7591,28 @@ const CURRENCY_PREFIX = /^\s*(-?)\s*\\\$\s*/;
 // bare sign goes, a label keeps its `=` reading, and what follows is graded
 // as typed — `\approx3.31` is still wrong, and a sign anywhere else
 // (`3.32\approx`, `2\approx3.32`) is no reading of the answer at all.
-const APPROX_PREFIX = /^\s*(?:([a-zA-Z])\s*)?(?:\\approx(?![a-zA-Z])|≈)\s*/;
+//
+// Since the Precalculus chapters 7–8 re-review (October 5, 2026) the label
+// may be a Greek letter (`\alpha\approx27.7`), and the sign is read the same
+// way on a key that is a bare number with a degree mark (`27.7^\circ`, a
+// rounded angle) and at the start of each member of a list whose members are
+// all such numbers (`\alpha\approx27.7^\circ,\beta\approx40.5^\circ`).
+const APPROX_SIGN = String.raw`\s*(?:(${LABEL_LETTER})\s*)?(?:\\approx(?![a-zA-Z])|≈)\s*`;
+const APPROX_PREFIX = new RegExp(String.raw`^${APPROX_SIGN}`);
+const APPROX_MEMBER_PREFIX = new RegExp(String.raw`(^|,)${APPROX_SIGN}`, 'g');
+/**
+ * Is every top-level member of the key a bare number, with or without a
+ * degree mark — so a leading `\approx` on a response member is a rounding
+ * sign, never part of a value? A lone bare number takes the older scalar path.
+ */
+function approximableMembers(keyText) {
+  const members = splitTopLevelCommas(keyText);
+  return members.length > 0 && members.every((member) => {
+    const text = member.trim();
+    const head = text.match(DEGREE_MARK_AT_END);
+    return PLAIN_NUMBER_KEY.test(head ? head[1].trim() : text);
+  });
+}
 // A dollar sign directly before a numeral (or a minus and a numeral) anywhere
 // in an inequality or interval response: `s\geq\$4,000,000`, `(-\infty,\$5]`.
 const BOUND_CURRENCY = /\\\$\s*(?=-?\s*(?:\d|\.\d))/g;
@@ -7469,7 +7692,12 @@ function degreeMarksRestored(studentRaw, answerRaw, mode) {
   if (!members || members.length !== keyMembers.length) return null;
   let restored = false;
   const rebuilt = members.map((member, index) => {
-    if (!marked[index] || !PLAIN_NUMBER_KEY.test(preprocess(member).trim())) return member;
+    // A one-letter label may stand in front (`A=27.7`, `\alpha=27.7`): the
+    // value grader reads it as the label it is, so the mark goes after the
+    // number all the same.
+    const written = preprocess(member).trim();
+    const label = written.match(LEADING_VARIABLE_LABEL);
+    if (!marked[index] || !PLAIN_NUMBER_KEY.test((label ? written.slice(label[0].length) : written).trim())) return member;
     restored = true;
     return `${member.trim()}^\\circ`;
   });
@@ -7538,7 +7766,76 @@ export function bracketsAsParentheses(latex) {
 // the sign left off rather than a value a hundred times too large.
 const PERCENT_KEY = /^(-?(?:\d+(?:\.\d*)?|\.\d+))\s*\\%$/;
 
+/* ---------------------------------------------------------------------------
+ * General solutions over every integer k
+ *
+ * A trigonometric equation's general solution is keyed `\frac{\pi}{3}+k\pi`,
+ * k any integer — and the same set is written `\frac{\pi}{3}-k\pi` or, as the
+ * source's own worked examples print it, `\frac{\pi}{3}\pm k\pi`. Both graded
+ * `incorrect`: the engine compares the two as functions of k (Precalculus
+ * chapters 7–8 re-review, October 5, 2026). When the key writes the letter k,
+ * a response member's ± directly before its k term reads `+`, and a member
+ * whose k coefficient is negative is graded with k read as −k. The form is
+ * checked on the writing with the ± read as `+` and the sign of k as typed.
+ * Only the coefficient's sign is free: `\frac{\pi}{3}+2k\pi` (half the set)
+ * and another letter stay `incorrect`.
+ * ------------------------------------------------------------------------ */
+const INTEGER_PARAMETER = /(?<!\\[a-zA-Z]*)k(?![a-zA-Z])/;
+const INTEGER_PARAMETER_ALL = new RegExp(INTEGER_PARAMETER.source, 'g');
+
+/** The member with a ± before a term holding k read as `+`. */
+function integerFamilyPlusMinus(member) {
+  return member.replace(new RegExp(PLUS_MINUS.source, 'g'), (mark, at) => {
+    const term = splitTopLevelTerms(member.slice(at + mark.length))[0] ?? '';
+    return INTEGER_PARAMETER.test(term) ? '+' : mark;
+  });
+}
+
+/** Is the member affine in k (past a one-letter label) with a negative coefficient? */
+function negativeIntegerCoefficient(member) {
+  try {
+    const text = preprocess(member);
+    const label = text.match(LEADING_VARIABLE_LABEL);
+    const expr = parseLatex(label ? text.slice(label[0].length) : text);
+    if (!expr.isValid || expr.unknowns.join() !== 'k') return false;
+    const at = (k) => expr.subs({ k }).N();
+    const step = ce.box(['Subtract', at(1), at(0)]).N();
+    const twice = ce.box(['Subtract', at(2), at(0)]).N();
+    if (step.isNumberLiteral !== true || twice.isNumberLiteral !== true
+      || Math.abs(step.im ?? 0) > 1e-12 || Math.abs(twice.re - 2 * step.re) > 1e-9 * Math.max(1, Math.abs(twice.re))) return false;
+    return step.re < 0;
+  } catch {
+    return false;
+  }
+}
+
+// The key is a general solution only when it writes k beside an angle — π or
+// a degree mark — and no summation index: `-k\ln(4)` and `\sum_{k=1}^{5}`
+// are not families, and `3-k` against `k+3` stays `incorrect`.
+function integerFamilyKey(answerRaw) {
+  const key = preprocess(answerRaw ?? '');
+  return INTEGER_PARAMETER.test(key) && !/\\sum(?![a-zA-Z])/.test(key)
+    && (/\\pi(?![a-zA-Z])/.test(key) || DEGREE_MARK_ANYWHERE.test(key));
+}
+
+function integerFamilyVerdict(studentRaw, answerRaw, options) {
+  if (!integerFamilyKey(answerRaw) || !INTEGER_PARAMETER.test(String(studentRaw ?? ''))) return null;
+  const members = splitTopLevelCommas(String(studentRaw ?? ''));
+  const written = members.map(integerFamilyPlusMinus);
+  const reflected = written.map((member) => (negativeIntegerCoefficient(member)
+    ? member.replace(INTEGER_PARAMETER_ALL, '(-k)') : member));
+  if (reflected.every((member, i) => member === members[i])) return null;
+  const verdict = checkAnswer(reflected.join(','), answerRaw, { ...options, form: undefined });
+  if (verdict !== 'correct') return verdict;
+  const formHolds = written.length === 1
+    ? checkFormAsGraded(written[0], options.form, answerRaw)
+    : written.every((member) => checkFormAsGraded(member, options.form));
+  return formHolds ? 'correct' : 'form';
+}
+
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
+  const family = integerFamilyVerdict(studentRaw, answerRaw, options);
+  if (family !== null) return family;
   // A ± response is the set of its two branches (plusMinusExpansion). A key
   // written with ± itself is not read this way — none is authored.
   const branches = plusMinusExpansion(studentRaw);
@@ -7576,6 +7873,9 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   }
   const keyText = preprocess(answerRaw ?? '');
   if (!PLAIN_NUMBER_KEY.test(keyText)) {
+    if (approximableMembers(keyText)) {
+      studentRaw = String(studentRaw ?? '').replace(APPROX_MEMBER_PREFIX, (match, lead, label) => `${lead}${label ? `${label}=` : ''}`);
+    }
     const verdict = gradeResponse(studentRaw, answerRaw, options);
     // The right exponential model with its decimals not yet rounded as the
     // key rounds them is `form` (overPreciseModel), never `correct`.

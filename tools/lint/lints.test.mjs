@@ -427,7 +427,7 @@ test('a numeric, bound, or coordinate key needs a value form that refuses it unw
   assert(lint(fillin('(-\\infty,107]')).some(unworked), 'an interval endpoint fires');
   assert(lint(fillin('(2,\\frac{3}{2})')).some(unworked), 'a pair coordinate fires');
   assert.equal(lint(fillin('(2,\\frac{3}{2})', 'lowest-terms')).filter(unworked).length, 0, 'lowest-terms reaches each coordinate');
-  assert.equal(lint(fillin('105'), 'content/math/precalculus/07-trigonometric-identities-and-equations/01-solving-trigonometric-equations-with-identities.md').filter(unworked).length, 0,
+  assert.equal(lint(fillin('105'), 'content/math/precalculus/09-systems-of-equations-and-inequalities/01-systems-of-linear-equations-two-variables.md').filter(unworked).length, 0,
     'a Precalculus chapter whose re-review row is open is not yet held to it');
 });
 
@@ -3093,6 +3093,10 @@ test('each once-untested rule still fires on its own construct', () => {
   fires('{{< multiplechoice question="Which?" hint="h" >}}\na\nb\n{{< /multiplechoice >}}', 'multiplechoice: missing non-empty answer');
   fires('{{< multiplechoice question="Which?" answer="c" hint="h" >}}\na\nb\n{{< /multiplechoice >}}', 'is not one of the options');
   fires(`${MC_GRAPH([LINE_SPEC, CURVE_SPEC])}\n\n${MC_GRAPH([CURVE_SPEC, LINE_SPEC])}`, 'use answerIndex=0 — vary the correct position');
+  fires('{{< multiplechoice question="Which?" answer="\\cos^3\\theta" hint="h" >}}\n\\cos^3\\theta\n\\sin^3\\theta\n{{< /multiplechoice >}}', 'has TeX outside `$…$`');
+  fires('{{< multiplechoice question="Which?" answer="$x$" hint="h" >}}\n$x$\nYes, x^2 is\n{{< /multiplechoice >}}', 'has TeX outside `$…$`');
+  const mathOptions = lintHugo('{{< multiplechoice question="Which?" answer="$\\cos^3\\theta$" hint="h" >}}\n$\\cos^3\\theta$\nYes, because $\\sin x$ costs \\$5\n{{< /multiplechoice >}}', SECTION).errors;
+  assert.deepEqual(mathOptions.filter((e) => e.includes('TeX outside')), []);
 });
 
 /* -------------------------------------------- data-spec entity decoding */
