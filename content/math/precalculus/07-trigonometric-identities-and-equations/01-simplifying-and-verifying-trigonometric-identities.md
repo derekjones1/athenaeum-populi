@@ -98,7 +98,7 @@ $$
 This is shown in the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = sin θ from −2π to 2π, symmetric about the origin, with marked points (−π/2, −1) and (π/2, 1).","xMin":-6.9,"xMax":6.9,"yMin":-2.4,"yMax":2.3,"grid":false,"tickLabels":"y","yTickStep":1,"unit":34,"curves":[{"kind":"sine"}],"points":[{"at":[1.5707963267948966,1],"label":"(π/2, 1)"},{"at":[-1.5707963267948966,-1],"label":"(−π/2, −1)"}],"texts":[{"at":[-6.283185307179586,-1.6],"text":"−2π","anchor":"middle"},{"at":[-4.71238898038469,-1.6],"text":"−3π/2","anchor":"middle"},{"at":[-3.141592653589793,-1.6],"text":"−π","anchor":"middle"},{"at":[-1.5707963267948966,-1.6],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-1.6],"text":"π/2","anchor":"middle"},{"at":[3.141592653589793,-1.6],"text":"π","anchor":"middle"},{"at":[4.71238898038469,-1.6],"text":"3π/2","anchor":"middle"},{"at":[6.283185307179586,-1.6],"text":"2π","anchor":"middle"}]}
+{"ariaLabel":"The graph of y = sin θ from −2π to 2π, symmetric about the origin, with marked points (−π/2, −1) and (π/2, 1).","xMin":-6.9,"xMax":6.9,"yMin":-2.4,"yMax":2.3,"grid":false,"tickLabels":"y","yTickStep":1,"unit":34,"curves":[{"kind":"sine"}],"points":[{"at":[1.5707963267948966,1],"label":"(π/2, 1)"},{"at":[-1.5707963267948966,-1],"label":"(−π/2, −1)","labelSide":"sw","labelNudge":[0,17]}],"texts":[{"at":[-6.283185307179586,-1.6],"text":"−2π","anchor":"middle"},{"at":[-4.71238898038469,-1.6],"text":"−3π/2","anchor":"middle"},{"at":[-3.141592653589793,-1.6],"text":"−π","anchor":"middle"},{"at":[-1.5707963267948966,-1.6],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-1.6],"text":"π/2","anchor":"middle"},{"at":[3.141592653589793,-1.6],"text":"π","anchor":"middle"},{"at":[4.71238898038469,-1.6],"text":"3π/2","anchor":"middle"},{"at":[6.283185307179586,-1.6],"text":"2π","anchor":"middle"}],"segments":[{"from":[-6.283185307179586,-0.09],"to":[-6.283185307179586,0.09]},{"from":[-4.71238898038469,-0.09],"to":[-4.71238898038469,0.09]},{"from":[-3.141592653589793,-0.09],"to":[-3.141592653589793,0.09]},{"from":[-1.5707963267948966,-0.09],"to":[-1.5707963267948966,0.09]},{"from":[1.5707963267948966,-0.09],"to":[1.5707963267948966,0.09]},{"from":[3.141592653589793,-0.09],"to":[3.141592653589793,0.09]},{"from":[4.71238898038469,-0.09],"to":[4.71238898038469,0.09]},{"from":[6.283185307179586,-0.09],"to":[6.283185307179586,0.09]}]}
 {{< /apfigure >}}
 
 *Graph of $y=\sin\theta$.*
@@ -119,7 +119,7 @@ $$
 See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = cos θ from −2π to 2π, symmetric about the y-axis, with marked points (−π/4, 0.707) and (π/4, 0.707).","xMin":-6.9,"xMax":6.9,"yMin":-2.1,"yMax":2.3,"grid":false,"tickLabels":"y","yTickStep":1,"unit":34,"curves":[{"kind":"cosine"}],"points":[{"at":[0.7853981633974483,0.7071],"label":"(π/4, 0.707)"},{"at":[-0.7853981633974483,0.7071],"label":"(−π/4, 0.707)"}],"texts":[{"at":[-6.283185307179586,-1.3],"text":"−2π","anchor":"middle"},{"at":[-4.71238898038469,-1.3],"text":"−3π/2","anchor":"middle"},{"at":[-3.141592653589793,-1.3],"text":"−π","anchor":"middle"},{"at":[-1.5707963267948966,-1.3],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-1.3],"text":"π/2","anchor":"middle"},{"at":[3.141592653589793,-1.3],"text":"π","anchor":"middle"},{"at":[4.71238898038469,-1.3],"text":"3π/2","anchor":"middle"},{"at":[6.283185307179586,-1.3],"text":"2π","anchor":"middle"}]}
+{"ariaLabel":"The graph of y = cos θ from −2π to 2π, symmetric about the y-axis, with marked points (−π/4, 0.707) and (π/4, 0.707).","xMin":-6.9,"xMax":6.9,"yMin":-2.1,"yMax":2.3,"grid":false,"tickLabels":false,"yTickStep":1,"unit":34,"curves":[{"kind":"cosine"}],"points":[{"at":[0.7853981633974483,0.7071],"label":"(π/4, 0.707)"},{"at":[-0.7853981633974483,0.7071],"label":"(−π/4, 0.707)"}],"texts":[{"at":[-6.283185307179586,-1.6],"text":"−2π","anchor":"middle"},{"at":[-4.71238898038469,-1.6],"text":"−3π/2","anchor":"middle"},{"at":[-3.141592653589793,-1.6],"text":"−π","anchor":"middle"},{"at":[-1.5707963267948966,-1.6],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-1.6],"text":"π/2","anchor":"middle"},{"at":[3.141592653589793,-1.6],"text":"π","anchor":"middle"},{"at":[4.71238898038469,-1.6],"text":"3π/2","anchor":"middle"},{"at":[6.283185307179586,-1.6],"text":"2π","anchor":"middle"},{"at":[0,-2],"text":"−2","anchor":"end","dx":-6,"dy":4},{"at":[0,-1],"text":"−1","anchor":"end","dx":-6,"dy":4},{"at":[0,1],"text":"1","anchor":"end","dx":-6,"dy":-2},{"at":[0,2],"text":"2","anchor":"end","dx":-6,"dy":4}],"segments":[{"from":[-0.09,-2],"to":[0.09,-2]},{"from":[-0.09,-1],"to":[0.09,-1]},{"from":[-0.09,1],"to":[0.09,1]},{"from":[-0.09,2],"to":[0.09,2]},{"from":[-6.283185307179586,-0.09],"to":[-6.283185307179586,0.09]},{"from":[-4.71238898038469,-0.09],"to":[-4.71238898038469,0.09]},{"from":[-3.141592653589793,-0.09],"to":[-3.141592653589793,0.09]},{"from":[-1.5707963267948966,-0.09],"to":[-1.5707963267948966,0.09]},{"from":[1.5707963267948966,-0.09],"to":[1.5707963267948966,0.09]},{"from":[3.141592653589793,-0.09],"to":[3.141592653589793,0.09]},{"from":[4.71238898038469,-0.09],"to":[4.71238898038469,0.09]},{"from":[6.283185307179586,-0.09],"to":[6.283185307179586,0.09]}]}
 {{< /apfigure >}}
 
 *Graph of $y=\cos\theta$.*
@@ -222,7 +222,7 @@ The reciprocal and quotient identities are derived from the definitions of the b
 **Solution.** See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graphs of y = cot θ and y = 1/tan θ from −2π to 2π, coinciding as a single curve — cotangent-shaped branches descending between dashed vertical asymptotes at each multiple of π.","xMin":-7.2,"xMax":7.2,"yMin":-12.5,"yMax":12.5,"grid":false,"tickLabels":"y","yTickStep":2,"unit":55,"curves":[{"kind":"cotangent"}],"lines":[{"x":0,"dashed":true,"arrows":false},{"x":3.141592653589793,"dashed":true,"arrows":false},{"x":-3.141592653589793,"dashed":true,"arrows":false},{"x":6.283185307179586,"dashed":true,"arrows":false},{"x":-6.283185307179586,"dashed":true,"arrows":false}],"texts":[{"at":[-6.283185307179586,-1.6],"text":"−2π","anchor":"middle"},{"at":[-4.71238898038469,-1.6],"text":"−3π/2","anchor":"middle"},{"at":[-3.141592653589793,-1.6],"text":"−π","anchor":"middle"},{"at":[-1.5707963267948966,-1.6],"text":"−π/2","anchor":"middle"},{"at":[1.5707963267948966,-1.6],"text":"π/2","anchor":"middle"},{"at":[3.141592653589793,-1.6],"text":"π","anchor":"middle"},{"at":[4.71238898038469,-1.6],"text":"3π/2","anchor":"middle"},{"at":[6.283185307179586,-1.6],"text":"2π","anchor":"middle"},{"at":[1.5707963267948966,8.5],"text":"y = cot θ","anchor":"middle"},{"at":[1.5707963267948966,7],"text":"y = 1/tan θ","anchor":"middle"}]}
+{"ariaLabel":"The graphs of y = cot θ and y = 1/tan θ from −2π to 2π, coinciding as a single curve — cotangent-shaped branches descending between dashed vertical asymptotes at each multiple of π.","xMin":-6.8,"xMax":6.8,"yMin":-10.5,"yMax":10.5,"xUnit":44,"yUnit":14,"grid":false,"xLabel":"θ","curves":[{"kind":"cotangent","from":-6.283185307179586,"to":6.283185307179586}],"lines":[{"x":0.0,"dashed":true,"arrows":false},{"x":3.141592653589793,"dashed":true,"arrows":false},{"x":-3.141592653589793,"dashed":true,"arrows":false},{"x":6.283185307179586,"dashed":true,"arrows":false},{"x":-6.283185307179586,"dashed":true,"arrows":false}],"segments":[{"from":[-0.07,-10],"to":[0.07,-10]},{"from":[-0.07,-8],"to":[0.07,-8]},{"from":[-0.07,-6],"to":[0.07,-6]},{"from":[-0.07,-4],"to":[0.07,-4]},{"from":[-0.07,-2],"to":[0.07,-2]},{"from":[-0.07,2],"to":[0.07,2]},{"from":[-0.07,4],"to":[0.07,4]},{"from":[-0.07,6],"to":[0.07,6]},{"from":[-0.07,8],"to":[0.07,8]},{"from":[-0.07,10],"to":[0.07,10]},{"from":[-6.283185307179586,-0.25],"to":[-6.283185307179586,0.25]},{"from":[-4.71238898038469,-0.25],"to":[-4.71238898038469,0.25]},{"from":[-3.141592653589793,-0.25],"to":[-3.141592653589793,0.25]},{"from":[-1.5707963267948966,-0.25],"to":[-1.5707963267948966,0.25]},{"from":[1.5707963267948966,-0.25],"to":[1.5707963267948966,0.25]},{"from":[3.141592653589793,-0.25],"to":[3.141592653589793,0.25]},{"from":[4.71238898038469,-0.25],"to":[4.71238898038469,0.25]},{"from":[6.283185307179586,-0.25],"to":[6.283185307179586,0.25]}],"texts":[{"at":[0,-10],"text":"−10","anchor":"start","dx":6,"dy":4},{"at":[0,-8],"text":"−8","anchor":"start","dx":6,"dy":4},{"at":[0,-6],"text":"−6","anchor":"start","dx":6,"dy":4},{"at":[0,-4],"text":"−4","anchor":"start","dx":6,"dy":4},{"at":[0,-2],"text":"−2","anchor":"start","dx":6,"dy":4},{"at":[0,2],"text":"2","anchor":"end","dx":-6,"dy":4},{"at":[0,4],"text":"4","anchor":"end","dx":-6,"dy":4},{"at":[0,6],"text":"6","anchor":"end","dx":-6,"dy":4},{"at":[0,8],"text":"8","anchor":"end","dx":-6,"dy":4},{"at":[0,10],"text":"10","anchor":"end","dx":-6,"dy":4},{"at":[-6.283185307179586,0],"text":"−2π","anchor":"end","dx":-3,"dy":-5},{"at":[-3.141592653589793,0],"text":"−π","anchor":"end","dx":-3,"dy":-5},{"at":[3.141592653589793,0],"text":"π","anchor":"end","dx":-3,"dy":-5},{"at":[6.283185307179586,0],"text":"2π","anchor":"end","dx":-3,"dy":-5},{"at":[-4.71238898038469,0],"text":"−3π/2","anchor":"end","dx":-5,"dy":17},{"at":[-1.5707963267948966,0],"text":"−π/2","anchor":"start","dx":4,"dy":-6},{"at":[1.5707963267948966,0],"text":"π/2","anchor":"start","dx":4,"dy":-6},{"at":[4.71238898038469,0],"text":"3π/2","anchor":"end","dx":-5,"dy":17},{"at":[1.5707963267948966,7],"text":"y = cot θ","anchor":"middle"},{"at":[1.5707963267948966,4.5],"text":"y = 1/tan θ","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Analysis.** We see only one graph because both expressions generate the same image. One is on top of the other. This is a good way to confirm an identity verified with analytical means. If both expressions give the same graph, then they are most likely identities.
@@ -250,14 +250,12 @@ $$
 
 **Analysis.** This identity was fairly simple to verify, as it only required writing $\tan\theta$ in terms of $\sin\theta$ and $\cos\theta$.
 
-Evaluate each of the following, as in the example above.
-
 {{< fillin
   question="Simplify $\csc\theta\cos\theta\tan\theta$ to a single number."
   answer="1"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$1$"
-  hint="Write $\csc\theta$ and $\tan\theta$ in terms of $\sin\theta$ and $\cos\theta$; the sines and cosines will cancel."
+  hint="Write $\csc\theta$ and $\tan\theta$ in terms of $\sin\theta$ and $\cos\theta$, then multiply and simplify."
 >}}
 
 **Example.** Verify the following equivalency using the even-odd identities:
@@ -343,8 +341,6 @@ $$
 \end{array}
 $$
 
-Which expression completes the identity's verification below?
-
 {{< multiplechoice
   question="Which expression is the simplified form of $\tfrac{\sin^2\theta-1}{\tan\theta\sin\theta-\tan\theta}$?"
   answer="$\tfrac{\sin\theta+1}{\tan\theta}$"
@@ -400,11 +396,11 @@ $$
 **Analysis.** If this expression were written in the form of an equation set equal to zero, we could solve each factor using the zero factor property. We could also use substitution like we did in the previous problem and let $\cos\theta=x$, rewrite the expression as $4x^2-1$, and factor $(2x-1)(2x+1)$. Then replace $x$ with $\cos\theta$ and solve for the angle.
 
 {{< fillin
-  question="Rewrite the trigonometric expression: $25-9\sin^2\theta$."
+  question="Rewrite the trigonometric expression: $25-9\sin^2\theta$. Enter it in factored form."
   answer="(5-3\sin\theta)(5+3\sin\theta)"
-  answerForm="factored"
+  answerForm="factored-completely"
   answerDisplay="$(5-3\sin\theta)(5+3\sin\theta)$"
-  hint="This is a difference of squares: $25=5^2$ and $9\sin^2\theta=(3\sin\theta)^2$."
+  hint="Write each term as the square of something, then apply the difference of squares pattern $a^2-b^2=(a-b)(a+b)$."
 >}}
 
 **Example.** Simplify the expression by rewriting and using identities:
@@ -425,9 +421,9 @@ $$
 $$
 
 {{< multiplechoice
-  question="Use algebraic techniques to verify the identity: which expression equals $\tfrac{\cos\theta}{1+\sin\theta}$? (Hint: Multiply the numerator and denominator on the left side by $1-\sin\theta$.)"
+  question="Use algebraic techniques to verify the identity: which expression completes $\tfrac{\cos\theta}{1+\sin\theta}=\ ?$ (Hint: Multiply the numerator and denominator on the left side by $1-\sin\theta$.)"
   answer="$\tfrac{1-\sin\theta}{\cos\theta}$"
-  hint="Multiply the numerator and denominator by $1-\sin\theta$, then use the Pythagorean identity to simplify $1-\sin^2\theta$."
+  hint="After multiplying, rewrite $1-\sin^2\theta$ with a Pythagorean identity, then cancel the factor the numerator and denominator share."
 >}}
 $\tfrac{1-\sin\theta}{\cos\theta}$
 $\tfrac{1+\sin\theta}{\cos\theta}$
@@ -473,7 +469,7 @@ False
 {{< multiplechoice
   question="Determine whether the following statement is true or false: $\tfrac{\tan x}{\sec x}\sin(-x)=\cos^2x$."
   answer="False"
-  hint="Simplify $\tfrac{\tan x}{\sec x}$ to $\sin x$ first, then apply the odd identity $\sin(-x)=-\sin x$."
+  hint="Write $\tfrac{\tan x}{\sec x}$ in terms of sine and cosine and simplify, then apply the odd identity for $\sin(-x)$ and compare with the right side."
 >}}
 True
 False
@@ -482,7 +478,7 @@ False
 {{< multiplechoice
   question="Determine whether the following statement is true or false: $3\sin^2\theta+4\cos^2\theta=3+\cos^2\theta$."
   answer="True"
-  hint="Rewrite $4\cos^2\theta$ as $3\cos^2\theta+\cos^2\theta$, then apply the Pythagorean identity to the sine and the first cosine term."
+  hint="Split one of the terms so that part of the left side can be grouped into a multiple of $\sin^2\theta+\cos^2\theta$."
 >}}
 True
 False
@@ -491,15 +487,15 @@ False
 ### Simplify trigonometric expressions using algebra and the identities
 
 {{< fillin
-  question="Use the fundamental identities to fully simplify the expression: $\sin x\cos x\sec x$."
+  question="Use the fundamental identities to fully simplify the expression: $\sin x\cos x\sec x$. Enter a single trigonometric function."
   answer="\sin x"
   answerForm="single-trig-function"
   answerDisplay="$\sin x$"
-  hint="Replace $\sec x$ with $\tfrac{1}{\cos x}$ so it cancels with the factor of $\cos x$."
+  hint="Rewrite $\sec x$ with a reciprocal identity, then cancel common factors."
 >}}
 
 {{< fillin
-  question="Use the fundamental identities to fully simplify the expression: $\tan x\sin x+\sec x\cos^2x$."
+  question="Use the fundamental identities to fully simplify the expression: $\tan x\sin x+\sec x\cos^2x$. Enter a single trigonometric function."
   answer="\sec x"
   answerForm="single-trig-function"
   answerDisplay="$\sec x$"
@@ -511,9 +507,9 @@ False
   answer="\frac{1}{\sin x}"
   answerForm="single-trig-function"
   answerDisplay="$\tfrac{1}{\sin x}$"
-  hint="Write $\sec x$, $\csc x$, and $\tan x$ in terms of sine and cosine; the numerator and denominator will share a factor of $\sin x+\cos x$."
+  hint="Write $\sec x$, $\csc x$, and $\tan x$ in terms of sine and cosine, combine each sum over a common denominator, then cancel the factor the numerator and denominator share."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 7.1: Simplifying and Verifying Trigonometric Identities](https://openstax.org/books/precalculus-2e/pages/7-1-simplifying-and-verifying-trigonometric-identities) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of international passports (Figure 1), which illustrates only the section's opening analogy; recreated the three instructional figures as accessible spec-first SVGs built from exact coordinates — the graph of $y=\sin\theta$ and the graph of $y=\cos\theta$, each from $-2\pi$ to $2\pi$ with their marked symmetry points, and the overlaid graphs of $y=\cot\theta$ and $y=\tfrac{1}{\tan\theta}$ confirming the identity by coinciding as one curve, with dashed vertical asymptotes at every multiple of $\pi$. Converted the four boxed identity tables (Pythagorean, even-odd, reciprocal, quotient) and the closing "Summarizing Trigonometric Identities" recap into the book's callout convention. Every retained Try It became a real interactive component: the three whose left side simplifies to a single value, a single trigonometric function, or a factorable difference of squares became `fillin` components (`evaluated-trig`, `single-trig-function`, and `factored` respectively); the two verify-type Try Its whose simplified side still holds more than one trigonometric function (so no `answerForm` token can separate the printed subject from the key) became `multiplechoice` questions on the identity's load-bearing simplification step instead, per this chapter's proof-item policy. Struck-through cancellation steps shown in the printed derivations (Examples 2, 4, and 6) are rendered with `\cancel{}`. Omitted the "Access these online resources" media links. Adapted three true/false "prove or disprove" exercises (themselves ungradeable as free response) into `multiplechoice` True/False questions for the "verify the fundamental trigonometric identities" objective, and three "fully simplify"/"simplify in terms of" exercises into `single-trig-function` `fillin` questions for the "simplify trigonometric expressions" objective, into a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 7.1: Simplifying and Verifying Trigonometric Identities](https://openstax.org/books/precalculus-2e/pages/7-1-simplifying-and-verifying-trigonometric-identities) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of international passports (Figure 1), which illustrates only the section's opening analogy; recreated the three instructional figures as accessible spec-first SVGs built from exact coordinates — the graph of $y=\sin\theta$ and the graph of $y=\cos\theta$, each from $-2\pi$ to $2\pi$ with their marked symmetry points, and the overlaid graphs of $y=\cot\theta$ and $y=\tfrac{1}{\tan\theta}$ confirming the identity by coinciding as one curve, with dashed vertical asymptotes at every multiple of $\pi$. Converted the four boxed identity tables (Pythagorean, even-odd, reciprocal, quotient) and the closing "Summarizing Trigonometric Identities" recap into the book's callout convention. Every retained Try It became a real interactive component: the three whose left side simplifies to a single value, a single trigonometric function, or a factorable difference of squares became `fillin` components (`evaluated-trig lowest-terms`, `single-trig-function`, and `factored-completely` respectively), the difference-of-squares one adding "Enter it in factored form."; the two verify-type Try Its whose simplified side still holds more than one trigonometric function (so no `answerForm` token can separate the printed subject from the key) became `multiplechoice` questions on the identity's load-bearing simplification step instead, per this chapter's proof-item policy. Struck-through cancellation steps shown in the printed derivations (Examples 2, 4, and 6) are rendered with `\cancel{}`. Omitted the "Access these online resources" media links. Adapted three "prove or disprove" and "true or false" exercises (themselves ungradeable as free response) into `multiplechoice` True/False questions for the "verify the fundamental trigonometric identities" objective, and three "fully simplify"/"simplify in terms of" exercises into `single-trig-function` `fillin` questions for the "simplify trigonometric expressions" objective (the two "fully simplify" ones adding "Enter a single trigonometric function."), into a closing Practice block, one group per objective. Corrected the source's "identifies" to "identities" in the sentence introducing the Pythagorean Identities.</small>

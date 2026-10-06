@@ -51,7 +51,7 @@ In lieu of a graphing calculator or a computer graphing program, plotting points
 The graph is a **parabola** with vertex at the point $(1,2)$, opening to the right. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The plane curve x(t)=t squared plus 1, y(t)=2+t traced for t from -3 to 3: a parabola opening to the right with vertex at (1,2), a lower branch through (10,-1), (5,0), (2,1), and an upper branch through (2,3), (5,4), (10,5), with an arrow on the lower branch pointing toward the vertex and an arrow on the upper branch pointing away from it, both in the direction of increasing t.","xMin":0,"xMax":11,"yMin":-2,"yMax":6,"grid":true,"tickLabels":true,"unit":45,"quadratics":[{"a":1,"b":-4,"c":5,"sideways":true,"from":-1,"to":5,"arrows":false}],"points":[{"at":[10,-1],"label":"t = -3, (10, -1)"},{"at":[5,0],"label":"t = -2, (5, 0)"},{"at":[2,1],"label":"t = -1, (2, 1)"},{"at":[1,2],"label":"t = 0, (1, 2)"},{"at":[2,3],"label":"t = 1, (2, 3)"},{"at":[5,4],"label":"t = 2, (5, 4)"},{"at":[10,5],"label":"t = 3, (10, 5)"}],"segments":[{"from":[5,0],"to":[2,1],"arrows":"end"},{"from":[2,3],"to":[5,4],"arrows":"end"}]}
+{"ariaLabel":"The plane curve x(t)=t squared plus 1, y(t)=2+t: a parabola opening to the right with vertex at (1,2), marked at the table points (10,-1), (5,0), (2,1), (1,2), (2,3), (5,4), (10,5) for t from -3 to 3 and running on past them to the edge of the grid, with an arrowhead on the lower branch pointing toward the vertex and arrowheads on the upper branch pointing away from it, all in the direction of increasing t.","xMin":0,"xMax":11,"yMin":-2,"yMax":6,"grid":true,"tickLabels":true,"unit":45,"quadratics":[{"a":1,"b":-4,"c":5,"sideways":true,"from":-1.1623,"to":0.4,"arrows":"end"},{"a":1,"b":-4,"c":5,"sideways":true,"from":0.4,"to":3.6,"arrows":"end"},{"a":1,"b":-4,"c":5,"sideways":true,"from":3.6,"to":5.1623,"arrows":"end"}],"points":[{"at":[10,-1],"label":"t = -3, (10, -1)"},{"at":[5,0],"label":"t = -2, (5, 0)"},{"at":[2,1],"label":"t = -1, (2, 1)"},{"at":[1,2],"label":"t = 0, (1, 2)"},{"at":[2,3],"label":"t = 1, (2, 3)"},{"at":[5,4],"label":"t = 2, (5, 4)"},{"at":[10,5],"label":"t = 3, (10, 5)"}]}
 {{< /apfigure >}}
 
 **Analysis.** As values for $t$ progress in a positive direction from $0$ to $5$, the plotted points trace out the top half of the parabola. As values of $t$ become negative, they trace out the lower half of the parabola. There are no restrictions on the domain. The arrows indicate direction according to increasing values of $t$. The graph does not represent a function, as it will fail the vertical line test. The graph is drawn in two parts: the positive values for $t$, and the negative values for $t$.
@@ -60,7 +60,7 @@ The graph is a **parabola** with vertex at the point $(1,2)$, opening to the rig
   question="Sketch the graph of the parametric equations $x=\sqrt t$, $y=2t+3$, $0\le t\le3$."
   mode="graph"
   answerIndex="0"
-  hint="Since $x=\sqrt t\ge0$ for every $t$ in $[0,3]$, only the right half of the parabola $y=2x^2+3$ can appear; find the endpoints at $t=0$ and $t=3$ to fix the domain and the direction of travel."
+  hint="Eliminate the parameter: solve $x=\sqrt t$ for $t$ and substitute into $y=2t+3$. Then use the sign of $\sqrt t$ and the points at $t=0$ and $t=3$ to see which part of that curve is traced, and in which direction."
 >}}
 {"ariaLabel":"The right half of an upward-opening parabola with vertex at (0,3), running from (0,3) to about (1.73,9), with an arrow pointing away from the vertex.","xMin":-2.2,"xMax":2.2,"yMin":-3,"yMax":10,"grid":true,"tickLabels":true,"unit":40,"quadratics":[{"a":2,"c":3,"from":0,"to":1.7321,"arrows":"end"}]}
 ===OPT===
@@ -99,7 +99,7 @@ $$
 The figure below shows the graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An ellipse taller than it is wide, traced by x=2cos t, y=4sin t, marked at (2,0) for t=0, (0,4) for t=pi/2, (-1.73,2) for t=5pi/6, and (1.73,-2) for t=11pi/6, with an arrow indicating a counterclockwise direction of travel.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4}],"points":[{"at":[2,0],"label":"t = 0, (2, 0)"},{"at":[0,4],"label":"t = π/2, (0, 4)"},{"at":[-1.7321,2],"label":"t = 5π/6, (−√3, 2)"},{"at":[1.7321,-2],"label":"t = 11π/6, (√3, −2)"}],"segments":[{"from":[1.9421,1.0237],"to":[1.8167,1.7124],"arrows":"end"},{"from":[-1.9421,-1.0237],"to":[-1.8167,-1.7124],"arrows":"end"}]}
+{"ariaLabel":"An ellipse taller than it is wide, traced by x=2cos t, y=4sin t, marked at (2,0) for t=0, (0,4) for t=pi/2, (-1.73,2) for t=5pi/6, and (1.73,-2) for t=11pi/6, with an arrow indicating a counterclockwise direction of travel.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4}],"points":[{"at":[2,0],"label":"t = 0, (2, 0)"},{"at":[0,4],"label":"t = π/2, (0, 4)"},{"at":[-1.7321,2],"label":"t = 5π/6, (−√3, 2)"},{"at":[1.7321,-2],"label":"t = 11π/6, (√3, −2)"}],"segments":[{"from":[1.9328,1.0283],"to":[1.8095,1.7038],"arrows":"end"},{"from":[-1.9328,-1.0283],"to":[-1.8095,-1.7038],"arrows":"end"}]}
 {{< /apfigure >}}
 
 By the symmetry shown in the values of $x$ and $y$, we see that the parametric equations represent an **ellipse**. The ellipse is mapped in a counterclockwise direction as shown by the arrows indicating increasing $t$ values.
@@ -121,13 +121,13 @@ instead of $Y_1=$.
   question="Graph the parametric equations: $x=5\cos t$, $y=3\sin t$."
   mode="graph"
   answerIndex="1"
-  hint="Compare $\tfrac{x}{5}$ and $\tfrac{y}{3}$ to $\cos t$ and $\sin t$: the semi-axis lengths come straight from the coefficients on $\cos t$ and $\sin t$."
+  hint="Make a table for $t=0$, $\tfrac{\pi}{2}$, $\pi$, and $\tfrac{3\pi}{2}$ to find where the curve crosses each axis, then plot the points in order of increasing $t$."
 >}}
-{"ariaLabel":"A circle of radius 5 centered at the origin, with an arrow indicating a counterclockwise direction of travel starting from (5,0).","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":5}],"segments":[{"from":[4.8695,1.2403],"to":[4.5275,2.1799],"arrows":"end"}]}
+{"ariaLabel":"A circle of radius 5 centered at the origin, with an arrow indicating a counterclockwise direction of travel starting from (5,0).","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":5}],"segments":[{"from":[4.8446,1.237],"to":[4.5022,2.1748],"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"An ellipse wider than it is tall, semi-axis 5 along the x-axis and 3 along the y-axis, centered at the origin, with an arrow indicating a counterclockwise direction of travel starting from (5,0).","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":3}],"segments":[{"from":[4.9578,0.5986],"to":[4.4391,1.4536],"arrows":"end"}]}
+{"ariaLabel":"An ellipse wider than it is tall, semi-axis 5 along the x-axis and 3 along the y-axis, centered at the origin, with an arrow indicating a counterclockwise direction of travel starting from (5,0).","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":3}],"segments":[{"from":[4.964,0.3591],"to":[4.5654,1.2233],"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"An ellipse taller than it is wide, semi-axis 3 along the x-axis and 5 along the y-axis, centered at the origin, with an arrow indicating a counterclockwise direction of travel starting from (3,0).","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":3,"ry":5}],"segments":[{"from":[2.9044,1.3193],"to":[2.7337,2.1009],"arrows":"end"}]}
+{"ariaLabel":"An ellipse taller than it is wide, semi-axis 3 along the x-axis and 5 along the y-axis, centered at the origin, with an arrow indicating a counterclockwise direction of travel starting from (3,0).","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":3,"ry":5}],"segments":[{"from":[2.8992,1.2854],"to":[2.7269,2.0844],"arrows":"end"}]}
 {{< /multiplechoice >}}
 
 **Example.** Graph the parametric equations $x=5\cos t$ and $y=2\sin t$. First, construct the graph using data points generated from the **parametric form**. Then graph the **rectangular form** of the equation. Compare the two graphs.
@@ -151,7 +151,7 @@ instead of $Y_1=$.
 Plot the $(x,y)$ values from the table. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An ellipse wider than it is tall, plotted from the parametric table, marked at (5,0) for t=0, (-2.1,1.8) for t=2, and (-2.1,-1.8) for t=-2, with an arrow indicating a counterclockwise direction of travel.","xMin":-6.5,"xMax":6.5,"yMin":-3.2,"yMax":3.2,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":2}],"points":[{"at":[5,0],"label":"t = 0"},{"at":[-2.1,1.8],"label":"t = 2"},{"at":[-2.1,-1.8],"label":"t = -2"}],"segments":[{"from":[5.035,0.3142],"to":[4.362,1.0539],"arrows":"end"},{"from":[-5.035,-0.3142],"to":[-4.362,-1.0539],"arrows":"end"}]}
+{"ariaLabel":"An ellipse wider than it is tall, plotted from the parametric table, marked at (5,0) for t=0, (-2.1,1.8) for t=2, and (-2.1,-1.8) for t=-2, with an arrow indicating a counterclockwise direction of travel.","xMin":-6.5,"xMax":6.5,"yMin":-3.2,"yMax":3.2,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":2}],"points":[{"at":[5,0],"label":"t = 0"},{"at":[-2.1,1.8],"label":"t = 2"},{"at":[-2.1,-1.8],"label":"t = -2"}],"segments":[{"from":[4.5654,0.8155],"to":[4.1823,1.096],"arrows":"end"},{"from":[-4.5654,-0.8155],"to":[-4.1823,-1.096],"arrows":"end"}]}
 {{< /apfigure >}}
 
 *(a) Plotted from the parametric table of values.*
@@ -186,7 +186,7 @@ $$
 **Analysis.** In the figure below, the data from the parametric equations and the rectangular equation are plotted together. The parametric equations are plotted as a solid curve; the graph for the rectangular equation is drawn on top of the parametric plot in a dashed style. Clearly, both forms produce the same graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The two overlaid ellipses coincide exactly: a solid ellipse traced from the parametric equations lies directly under a dashed ellipse traced from the rectangular equation, wider than it is tall.","xMin":-6.5,"xMax":6.5,"yMin":-3.2,"yMax":3.2,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":2},{"at":[0,0],"rx":5,"ry":2,"dashed":true}],"segments":[{"from":[5.035,0.3142],"to":[4.362,1.0539],"arrows":"end"},{"from":[-5.035,-0.3142],"to":[-4.362,-1.0539],"arrows":"end"}]}
+{"ariaLabel":"The two overlaid ellipses coincide exactly: a solid ellipse traced from the parametric equations lies directly under a dashed ellipse traced from the rectangular equation, wider than it is tall.","xMin":-6.5,"xMax":6.5,"yMin":-3.2,"yMax":3.2,"grid":true,"tickLabels":true,"unit":30,"circles":[{"at":[0,0],"rx":5,"ry":2},{"at":[0,0],"rx":5,"ry":2,"dashed":true}],"segments":[{"from":[4.5654,0.8155],"to":[4.1823,1.096],"arrows":"end"},{"from":[-4.5654,-0.8155],"to":[-4.1823,-1.096],"arrows":"end"}]}
 {{< /apfigure >}}
 
 *(c) The parametric plot (solid) and the rectangular plot (dashed) coincide exactly.*
@@ -205,13 +205,13 @@ $$
   question="Sketch the graph of the parametric equations $x=2\cos\theta$ and $y=4\sin\theta$, along with the rectangular equation, on the same grid."
   mode="graph"
   answerIndex="2"
-  hint="Eliminate $\theta$ first — square and add $\left(\tfrac{x}{2}\right)^2$ and $\left(\tfrac{y}{4}\right)^2$ — then check that the dashed rectangular curve traces exactly the same ellipse as the solid parametric one."
+  hint="Solve each equation for $\cos\theta$ and $\sin\theta$, substitute into $\cos^2\theta+\sin^2\theta=1$, and graph the equation you get on the same grid as the parametric curve."
 >}}
-{"ariaLabel":"A tall ellipse traced twice: a solid curve from the parametric equations and a dashed curve from a different, wider ellipse, so the two curves do not coincide.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4},{"at":[0,0],"rx":3,"ry":4,"dashed":true}],"segments":[{"from":[1.9421,1.0237],"to":[1.8167,1.7124],"arrows":"end"}]}
+{"ariaLabel":"A tall solid ellipse, semi-axis 2 along the x-axis and 4 along the y-axis, with an arrow indicating a counterclockwise direction of travel, and a dashed wide ellipse, semi-axis 4 along the x-axis and 2 along the y-axis, drawn over it, so the two curves cross instead of coinciding.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4},{"at":[0,0],"rx":4,"ry":2,"dashed":true}],"segments":[{"from":[1.9775,0.5978],"to":[1.8787,1.3716],"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"A tall ellipse traced once, as a solid curve from the parametric equations only, with no second curve drawn on top of it.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4}],"segments":[{"from":[1.9421,1.0237],"to":[1.8167,1.7124],"arrows":"end"}]}
+{"ariaLabel":"A tall solid ellipse, semi-axis 2 along the x-axis and 4 along the y-axis, with an arrow indicating a counterclockwise direction of travel, and a dashed straight line through (2,0) and (0,4) drawn over it, so the two graphs meet only at those two points.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"lines":[{"through":[[2,0],[0,4]],"dashed":true,"arrows":false}],"circles":[{"at":[0,0],"rx":2,"ry":4}],"segments":[{"from":[1.9775,0.5978],"to":[1.8787,1.3716],"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"A tall ellipse traced twice, exactly coinciding: a solid curve from the parametric equations directly under a dashed curve from the rectangular equation.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4},{"at":[0,0],"rx":2,"ry":4,"dashed":true}],"segments":[{"from":[1.9421,1.0237],"to":[1.8167,1.7124],"arrows":"end"}]}
+{"ariaLabel":"A tall ellipse traced twice, exactly coinciding: a solid curve from the parametric equations directly under a dashed curve from the rectangular equation.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":true,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"rx":2,"ry":4},{"at":[0,0],"rx":2,"ry":4,"dashed":true}],"segments":[{"from":[1.9775,0.5978],"to":[1.8787,1.3716],"arrows":"end"}]}
 {{< /multiplechoice >}}
 
 ### Applications of Parametric Equations
@@ -315,7 +315,7 @@ $$
 The ball is $141.8$ feet in the air when it soars out of the ballpark. It was indeed a home run. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The trajectory of the baseball, a parabolic arc from (0,3) rising to a peak of about 156 feet near 306 feet out, then falling back to the ground at about 615 feet; a short vertical mark at 400 feet rises to 10 feet, showing the outfield wall, which the trajectory clears well above.","xMin":0,"xMax":650,"yMin":-110,"yMax":310,"grid":true,"tickLabels":true,"xTickStep":100,"yTickStep":100,"unit":0.85,"polylines":[{"through":[[0,3],[12.82,15.55],[25.65,27.57],[38.47,39.05],[51.29,50],[64.11,60.4],[76.94,70.27],[89.76,79.6],[102.58,88.4],[115.4,96.66],[128.23,104.38],[141.05,111.57],[153.87,118.22],[166.69,124.33],[179.52,129.9],[192.34,134.94],[205.16,139.44],[217.98,143.41],[230.81,146.83],[243.63,149.72],[256.45,152.08],[269.27,153.89],[282.1,155.17],[294.92,155.92],[307.74,156.12],[320.57,155.79],[333.39,154.92],[346.21,153.52],[359.03,151.58],[371.86,149.1],[384.68,146.08],[397.5,142.53],[410.32,138.44],[423.15,133.82],[435.97,128.65],[448.79,122.95],[461.61,116.72],[474.44,109.94],[487.26,102.63],[500.08,94.78],[512.9,86.4],[525.73,77.48],[538.55,68.02],[551.37,58.03],[564.19,47.5],[577.02,36.43],[589.84,24.82],[602.66,12.68],[615.49,0]]}],"segments":[{"from":[400,0],"to":[400,10]}],"texts":[{"at":[70,-90],"text":"Position of hitter"},{"at":[400,-90],"text":"Outfield wall"},{"at":[175,175],"text":"Trajectory of ball"}]}
+{"ariaLabel":"The trajectory of the baseball, a parabolic arc starting 3 feet above the hitter's position at the origin, rising to a peak of about 156 feet near 306 feet out, then falling back to the ground at about 615 feet, with arrowheads along the arc in the direction of travel; a short vertical mark at 400 feet rises to 10 feet, showing the outfield wall, which the trajectory clears well above.","xMin":0,"xMax":650,"yMin":-90,"yMax":310,"grid":true,"tickLabels":true,"xTickStep":100,"yTickStep":100,"unit":0.85,"polylines":[{"through":[[0.0,3.0],[12.37,15.12],[24.75,26.75],[37.12,37.87],[49.5,48.5],[61.87,58.62],[74.25,68.25],[86.62,77.37],[98.99,85.99],[111.37,94.12],[123.74,101.74],[136.12,108.87],[148.49,115.49]],"arrows":"end"},{"through":[[148.49,115.49],[160.68,121.53],[172.86,127.08],[185.04,132.14],[197.23,136.72],[209.41,140.81],[221.6,144.43],[233.78,147.55],[245.96,150.19],[258.15,152.35],[270.33,154.02],[282.52,155.21],[294.7,155.91],[306.88,156.12],[319.07,155.86],[331.25,155.1],[343.44,153.87],[355.62,152.15],[367.8,149.94],[379.99,147.25],[392.17,144.07],[404.36,140.41],[416.54,136.27],[428.72,131.64],[440.91,126.52],[453.09,120.92],[465.28,114.84]],"arrows":"end"},{"through":[[465.28,114.84],[477.79,108.08],[490.31,100.81],[502.83,93.03],[515.35,84.74],[527.86,75.94],[540.38,66.63],[552.9,56.8],[565.42,46.46],[577.93,35.62],[590.45,24.26],[602.97,12.38],[615.49,0]]}],"segments":[{"from":[397.6,0],"to":[397.6,10]},{"from":[398.4,0],"to":[398.4,10]},{"from":[399.2,0],"to":[399.2,10]},{"from":[400,0],"to":[400,10]},{"from":[400.8,0],"to":[400.8,10]},{"from":[401.6,0],"to":[401.6,10]},{"from":[402.4,0],"to":[402.4,10]},{"from":[48,-52],"to":[5,-5],"arrows":"end"}],"texts":[{"at":[52,-66],"text":"Position of hitter","anchor":"start"},{"at":[400,26],"text":"Outfield wall"},{"at":[175,175],"text":"Trajectory of ball"}]}
 {{< /apfigure >}}
 
 ## Key concepts
@@ -347,26 +347,26 @@ The ball is $141.8$ feet in the air when it soars out of the ballpark. It was in
   question="Graph the set of parametric equations by making a table of values, and include the orientation: $x(t)=2\sin t$, $y(t)=4\cos t$."
   mode="graph"
   answerIndex="0"
-  hint="Evaluate $x$ and $y$ at $t=0$ to find the starting point, then check the sign of $\tfrac{dx}{dt}$ there to see which way the curve first moves."
+  hint="Evaluate $x$ and $y$ at $t=0$, $\tfrac{\pi}{6}$, and $\tfrac{\pi}{2}$: the first point is where the curve starts, the next shows which way it first moves, and the table shows where it crosses each axis."
 >}}
-{"ariaLabel":"A tall ellipse, semi-axis 2 along the x-axis and 4 along the y-axis, centered at the origin, with an arrow at the top of the curve pointing to the right.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":true,"tickLabels":true,"unit":35,"circles":[{"at":[0,0],"rx":2,"ry":4}],"segments":[{"from":[-0.0362,4.0564],"to":[0.6339,3.8538],"arrows":"end"}]}
+{"ariaLabel":"A tall ellipse, semi-axis 2 along the x-axis and 4 along the y-axis, centered at the origin, with an arrow on the right side of the curve pointing downward.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":true,"tickLabels":true,"unit":35,"circles":[{"at":[0,0],"rx":2,"ry":4}],"segments":[{"from":[1.5667,2.4864],"to":[1.8255,1.6339],"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"A wide ellipse, semi-axis 4 along the x-axis and 2 along the y-axis, centered at the origin, with an arrow on the curve near the right vertex pointing up and to the left.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":true,"tickLabels":true,"unit":35,"circles":[{"at":[0,0],"rx":4,"ry":2}],"segments":[{"from":[4.0518,0.073],"to":[3.7888,0.7217],"arrows":"end"}]}
+{"ariaLabel":"A wide ellipse, semi-axis 4 along the x-axis and 2 along the y-axis, centered at the origin, with an arrow on the upper right of the curve pointing up and to the left.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":true,"tickLabels":true,"unit":35,"circles":[{"at":[0,0],"rx":4,"ry":2}],"segments":[{"from":[3.7575,0.6858],"to":[3.1843,1.2104],"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"A tall ellipse, semi-axis 2 along the x-axis and 4 along the y-axis, centered at (2,0), with an arrow at the top of the curve pointing to the right.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":true,"tickLabels":true,"unit":35,"circles":[{"at":[2,0],"rx":2,"ry":4}],"segments":[{"from":[1.9638,4.0564],"to":[2.6339,3.8538],"arrows":"end"}]}
+{"ariaLabel":"A tall ellipse, semi-axis 2 along the x-axis and 4 along the y-axis, centered at the origin, with an arrow on the right side of the curve pointing upward.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":true,"tickLabels":true,"unit":35,"circles":[{"at":[0,0],"rx":2,"ry":4}],"segments":[{"from":[1.8255,1.6339],"to":[1.5667,2.4864],"arrows":"end"}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Sketch the curve and include the orientation: $x(t)=-\sqrt t$, $y(t)=t$."
   mode="graph"
   answerIndex="0"
-  hint="Since $x=-\sqrt t\le0$ for every $t\ge0$, only the left half of $y=x^2$ can appear, and $x$ becomes more negative as $t$ increases."
+  hint="Eliminate $t$ by substituting $y$ for $t$ in $x=-\sqrt t$, use the sign of $-\sqrt t$ to see which half of that graph appears, and compare the points at $t=0$ and $t=4$ for the direction."
 >}}
-{"ariaLabel":"The left half of an upward-opening parabola with vertex at the origin, running from about (-2,4) to (0,0), with an arrow pointing away from the vertex.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"grid":true,"tickLabels":true,"unit":55,"quadratics":[{"a":1,"from":-2,"to":0,"arrows":"start"}]}
+{"ariaLabel":"The left half of an upward-opening parabola with vertex at the origin, running from (0,0) to (-2,4), with an arrow at (-2,4) pointing away from the vertex.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"grid":true,"tickLabels":true,"unit":55,"quadratics":[{"a":1,"from":-2,"to":0,"arrows":"start"}]}
 ===OPT===
-{"ariaLabel":"The right half of an upward-opening parabola with vertex at the origin, running from (0,0) to about (2,4), with an arrow pointing toward the vertex.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"grid":true,"tickLabels":true,"unit":55,"quadratics":[{"a":1,"from":0,"to":2,"arrows":"end"}]}
+{"ariaLabel":"The right half of an upward-opening parabola with vertex at the origin, running from (0,0) to (2,4), with an arrow at (2,4) pointing away from the vertex.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"grid":true,"tickLabels":true,"unit":55,"quadratics":[{"a":1,"from":0,"to":2,"arrows":"end"}]}
 ===OPT===
-{"ariaLabel":"The left half of a downward-opening parabola with vertex at the origin, running from about (-2,-4) to (0,0), with an arrow pointing away from the vertex.","xMin":-3,"xMax":3,"yMin":-5,"yMax":1,"grid":true,"tickLabels":true,"unit":55,"quadratics":[{"a":-1,"from":-2,"to":0,"arrows":"start"}]}
+{"ariaLabel":"The left half of a downward-opening parabola with vertex at the origin, running from (0,0) to (-2,-4), with an arrow at (-2,-4) pointing away from the vertex.","xMin":-3,"xMax":3,"yMin":-5,"yMax":1,"grid":true,"tickLabels":true,"unit":55,"quadratics":[{"a":-1,"from":-2,"to":0,"arrows":"start"}]}
 {{< /multiplechoice >}}
 
 ### Graph parametric equations
@@ -380,17 +380,18 @@ The ball is $141.8$ feet in the air when it soars out of the ballpark. It was in
 >}}
 
 {{< fillin
-  question="Eliminate the parameter to write the Cartesian equation of $x=2\cos t$, $y=-\sin t$."
+  question="Eliminate the parameter to write the Cartesian equation of $x=2\cos t$, $y=-\sin t$. Write it in standard form, with $1$ on the right side."
   answer="\tfrac{x^2}{4}+y^2=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{x^2}{4}+y^2=1$"
   hint="Solve each equation for $\cos t$ and $\sin t$, then substitute into $\cos^2t+\sin^2t=1$."
 >}}
 
 {{< fillin
-  question="Write the parametric equations of a circle centered at the origin with radius $5$ and a counterclockwise orientation, using the form $x(t)=5\cos t$. Enter $x(t)$ first, then $y(t)$, separated by a comma."
+  question="Write the parametric equations of a circle with center $(0,0)$, radius $5$, and a counterclockwise orientation, starting at $(5,0)$ when $t=0$ and making one full turn as $t$ runs from $0$ to $2\pi$. Enter $x(t)$ first, then $y(t)$, separated by a comma."
   answer="5\cos t,5\sin t"
   answerDisplay="$x(t)=5\cos t$, $y(t)=5\sin t$"
-  hint="A counterclockwise circle of radius $r$ centered at the origin is traced by $x(t)=r\cos t$ paired with $y(t)=r\sin t$."
+  hint="Start from the unit-circle coordinates of the point at angle $t$ and scale them by the radius; check that $t=0$ gives the starting point and that $t=\tfrac{\pi}{2}$ lands above the center."
 >}}
 
 {{< fillin
@@ -398,7 +399,7 @@ The ball is $141.8$ feet in the air when it soars out of the ballpark. It was in
   answer="3.2"
   answerForm="decimal"
   answerDisplay="$3.2$ seconds"
-  hint="Set $y(t)=-16t^2+(64\sin52^\circ)t$ equal to $0$ and solve for the positive root."
+  hint="Write $y(t)$ from the projectile model with $v_0=64$, $\theta=52^\circ$, and $h=0$, set it equal to $0$, and keep the positive solution."
 >}}
 
 {{< fillin
@@ -406,9 +407,9 @@ The ball is $141.8$ feet in the air when it soars out of the ballpark. It was in
   answer="1.6"
   answerForm="decimal"
   answerDisplay="$1.6$ seconds"
-  hint="The maximum height of $y(t)=-16t^2+(64\sin52^\circ)t$ occurs halfway between its two ground-level roots, at $t=-\tfrac{b}{2a}$."
+  hint="Write $y(t)$ from the projectile model with $h=0$; it is a downward parabola in $t$, so its highest point is at the vertex, $t=-\tfrac{b}{2a}$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.7: Parametric Equations: Graphs](https://openstax.org/books/precalculus-2e/pages/8-7-parametric-equations-graphs) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photo of a baseball batter (Figure 1), which carries no mathematics beyond the credit line, and the "Graphing Parametric Equations on the TI-84" media resource box, an external video link with no mathematical content of its own. Recreated every instructional figure as an accessible spec-first SVG: the two-branch parabola of Example 1 (drawn from the exact sideways parabola $x=(y-2)^2+1$, with the source's own $t$-labels and two tangent arrows placed on the exact table segments); the two ellipses of Examples 2 and 3 (drawn from the exact `rx`/`ry` primitive rather than sampled points, with the source's own labeled points and orientation arrows computed from the parametric derivative); the parametric/rectangular overlay pairs of Examples 3 and 4 (a solid curve for the parametric plot and a dashed curve of the identical primitive for the rectangular plot, reproducing the source's solid-blue/dashed-red overlay convention in one color); and the baseball trajectory of Example 5 (sampled from the exact solved formula $x(t)=(140\cos45^\circ)t$, $y(t)=-16t^2+(140\sin45^\circ)t+3$ over $t\in[0,6.2173]$, with the outfield wall and hitter/wall/trajectory labels from the source figure; the source's leader-line callouts were simplified to plain text labels). Every retained Try It became a real interactive component. Because the grader has no primitive that judges a drawn curve, each "sketch/graph the curve" Try It became a `multiplechoice` in graph mode, with distractors that vary the drawn shape, semi-axis lengths, domain branch, or overlay agreement (never only a marked point) and options ordered so the page does not use one answer position throughout. Adapted eight selected end-of-section exercises into a closing Practice block, one group per objective: three "graph by making a table"/"sketch the curve" items became graph-mode `multiplechoice` questions for the same reason the Try Its did; a fourth graph-by-table item ($x(t)=-2-2t$, $y(t)=3+t$, whose printed answer is the graph of a negative-slope line) was recast as an eliminate-the-parameter `fillin` asking for that line's slope-intercept equation, since the drawn answer is exactly the line the equation names; and four items whose skill survives as a value — eliminating the parameter to a Cartesian equation, constructing a pinned circle parametrization, and two applied timing questions about a thrown dart — became `fillin` questions, each independently re-derived (including by running the arithmetic in Node) rather than read off the source key. The two dart questions restate the shared scenario from the source's introductory sentence, since each interactive component must stand alone. Every polar/degree angle in an applied formula (e.g. $140\cos45^\circ$) is graded by the engine's exact treatment of $^\circ$, so no `answerForm` token was needed on the numeric applied answers beyond `decimal`.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.7: Parametric Equations: Graphs](https://openstax.org/books/precalculus-2e/pages/8-7-parametric-equations-graphs) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photo of a baseball batter (Figure 1), which carries no mathematics beyond the credit line, and the "Graphing Parametric Equations on the TI-84" media resource box, an external video link with no mathematical content of its own. Recreated every instructional figure as an accessible spec-first SVG: the two-branch parabola of Example 1 (drawn from the exact sideways parabola $x=(y-2)^2+1$, with the source's own $t$-labels, run on past the table points to the edge of the grid as in the source, and orientation arrowheads placed on the exact curve); the two ellipses of Examples 2 and 3 (drawn from the exact `rx`/`ry` primitive rather than sampled points, with the source's labeled points in Example 2, three table points marked in Example 3, and short orientation arrows drawn between two exact points of each ellipse); the parametric/rectangular overlay pairs of Examples 3 and 4 (a solid curve for the parametric plot and a dashed curve of the identical primitive for the rectangular plot, reproducing the source's solid-blue/dashed-red overlay convention in one color); and the baseball trajectory of Example 5 (sampled from the exact solved formula $x(t)=(140\cos45^\circ)t$, $y(t)=-16t^2+(140\sin45^\circ)t+3$ over $t\in[0,6.2173]$, with orientation arrowheads along the arc, the outfield wall, and the hitter/wall/trajectory labels from the source figure, the hitter's label keeping a leader arrow and the other two set as plain text labels; the source's drawing lands near 570 feet, while the recreation lands at the computed 615 feet, and the axes keep the page's $x$ and $y$ letters for the source's distance and height titles). Every retained Try It became a real interactive component. Because the grader has no primitive that judges a drawn curve, each "sketch/graph the curve" Try It became a `multiplechoice` in graph mode, with distractors that vary the drawn shape, semi-axis lengths, domain branch, orientation, or overlay agreement (never only a marked point); the overlay Try It's distractors draw the rectangular graph a learner gets by swapping the denominators or by not squaring, so each differs visibly from the coinciding pair and options ordered so the page does not use one answer position throughout. Adapted eight selected end-of-section exercises into a closing Practice block, one group per objective: three "graph by making a table"/"sketch the curve" items became graph-mode `multiplechoice` questions for the same reason the Try Its did; a fourth graph-by-table item ($x(t)=-2-2t$, $y(t)=3+t$, whose printed answer is the graph of a negative-slope line) was recast as an eliminate-the-parameter `fillin` asking for that line's slope-intercept equation, since the drawn answer is exactly the line the equation names; and four items whose skill survives as a value — eliminating the parameter to a Cartesian equation (asked in standard form, with $1$ on the right side), constructing a circle parametrization (pinned by its starting point $(5,0)$ at $t=0$ and one full turn as $t$ runs from $0$ to $2\pi$ in place of printing $x(t)=5\cos t$ in the question, which gave away half the answer), and two applied timing questions about a thrown dart — became `fillin` questions, each independently re-derived (including by running the arithmetic in Node) rather than read off the source key. The two dart questions restate the shared scenario from the source's introductory sentence, since each interactive component must stand alone. Every polar/degree angle in an applied formula (e.g. $140\cos45^\circ$) is graded by the engine's exact treatment of $^\circ$, so no `answerForm` token was needed on the numeric applied answers beyond `decimal`.</small>

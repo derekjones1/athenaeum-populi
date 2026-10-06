@@ -29,7 +29,7 @@ In this section, we will learn techniques that will enable us to solve problems 
 Finding the exact value of the sine, cosine, or tangent of an angle is often easier if we can rewrite the given angle in terms of two angles that have known trigonometric values. We can use the **special angles**, which we can review in the unit circle shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The unit circle, with the (cosine, sine) coordinates labeled at every multiple of 30 or 45 degrees around the rim — the special angles used throughout the sum and difference formulas.","xMin":-1.5,"xMax":1.5,"yMin":-1.5,"yMax":1.5,"grid":false,"tickLabels":false,"unit":170,"circles":[{"at":[0,0],"r":1}],"points":[{"at":[1,0],"label":"(1, 0)"},{"at":[0.866,0.5],"label":"(√3/2, 1/2)"},{"at":[0.707,0.707],"label":"(√2/2, √2/2)"},{"at":[0.5,0.866],"label":"(1/2, √3/2)"},{"at":[0,1],"label":"(0, 1)"},{"at":[-0.5,0.866],"label":"(-1/2, √3/2)"},{"at":[-0.707,0.707],"label":"(-√2/2, √2/2)"},{"at":[-0.866,0.5],"label":"(-√3/2, 1/2)"},{"at":[-1,0],"label":"(-1, 0)"},{"at":[-0.866,-0.5],"label":"(-√3/2, -1/2)"},{"at":[-0.707,-0.707],"label":"(-√2/2, -√2/2)"},{"at":[-0.5,-0.866],"label":"(-1/2, -√3/2)"},{"at":[0,-1],"label":"(0, -1)"},{"at":[0.5,-0.866],"label":"(1/2, -√3/2)"},{"at":[0.707,-0.707],"label":"(√2/2, -√2/2)"},{"at":[0.866,-0.5],"label":"(√3/2, -1/2)"}]}
+{"ariaLabel":"The unit circle of special angles: rays from the origin at every multiple of 30 and 45 degrees, each marked inside the rim with its radian measure and labeled outside with its degree measure and the (cosine, sine) coordinates of the point where it meets the circle, from 0 degrees at (1, 0) around to 330 degrees at (√3/2, −1/2).","xMin":-1.5,"xMax":1.5,"yMin":-1.5,"yMax":1.5,"grid":false,"tickLabels":false,"unit":170,"circles":[{"at":[0,0],"r":1}],"points":[{"at":[1.0,0.0],"label":"0° (1, 0)","labelSide":"se"},{"at":[0.866,0.5],"label":"30° (√3/2, 1/2)","labelSide":"e"},{"at":[0.7071,0.7071],"label":"45° (√2/2, √2/2)","labelSide":"e"},{"at":[0.5,0.866],"label":"60° (1/2, √3/2)","labelSide":"e"},{"at":[0.0,1.0],"label":"90° (0, 1)","labelSide":"ne"},{"at":[-0.5,0.866],"label":"(−1/2, √3/2) 120°","labelSide":"w"},{"at":[-0.7071,0.7071],"label":"(−√2/2, √2/2) 135°","labelSide":"w"},{"at":[-0.866,0.5],"label":"(−√3/2, 1/2) 150°","labelSide":"w"},{"at":[-1.0,0.0],"label":"(−1, 0) 180°","labelSide":"nw"},{"at":[-0.866,-0.5],"label":"(−√3/2, −1/2) 210°","labelSide":"w"},{"at":[-0.7071,-0.7071],"label":"(−√2/2, −√2/2) 225°","labelSide":"w"},{"at":[-0.5,-0.866],"label":"(−1/2, −√3/2) 240°","labelSide":"w"},{"at":[0.0,-1.0],"label":"270° (0, −1)","labelSide":"se"},{"at":[0.5,-0.866],"label":"300° (1/2, −√3/2)","labelSide":"e"},{"at":[0.7071,-0.7071],"label":"315° (√2/2, −√2/2)","labelSide":"e"},{"at":[0.866,-0.5],"label":"330° (√3/2, −1/2)","labelSide":"e"}],"segments":[{"from":[0,0],"to":[0.6062,0.35]},{"from":[0,0],"to":[0.495,0.495]},{"from":[0,0],"to":[0.35,0.6062]},{"from":[0,0],"to":[-0.35,0.6062]},{"from":[0,0],"to":[-0.495,0.495]},{"from":[0,0],"to":[-0.6062,0.35]},{"from":[0,0],"to":[-0.6062,-0.35]},{"from":[0,0],"to":[-0.495,-0.495]},{"from":[0,0],"to":[-0.35,-0.6062]},{"from":[0,0],"to":[0.35,-0.6062]},{"from":[0,0],"to":[0.495,-0.495]},{"from":[0,0],"to":[0.6062,-0.35]}],"texts":[{"at":[0.7853,0.1526],"text":"2π","anchor":"middle","dy":4},{"at":[0.7188,0.415],"text":"π/6","anchor":"middle","dy":4},{"at":[0.5869,0.5869],"text":"π/4","anchor":"middle","dy":4},{"at":[0.415,0.7188],"text":"π/3","anchor":"middle","dy":4},{"at":[-0.1526,0.7853],"text":"π/2","anchor":"middle","dy":4},{"at":[-0.415,0.7188],"text":"2π/3","anchor":"middle","dy":4},{"at":[-0.5869,0.5869],"text":"3π/4","anchor":"middle","dy":4},{"at":[-0.7188,0.415],"text":"5π/6","anchor":"middle","dy":4},{"at":[-0.7853,-0.1526],"text":"π","anchor":"middle","dy":4},{"at":[-0.7188,-0.415],"text":"7π/6","anchor":"middle","dy":4},{"at":[-0.5869,-0.5869],"text":"5π/4","anchor":"middle","dy":4},{"at":[-0.415,-0.7188],"text":"4π/3","anchor":"middle","dy":4},{"at":[0.1526,-0.7853],"text":"3π/2","anchor":"middle","dy":4},{"at":[0.415,-0.7188],"text":"5π/3","anchor":"middle","dy":4},{"at":[0.5869,-0.5869],"text":"7π/4","anchor":"middle","dy":4},{"at":[0.7188,-0.415],"text":"11π/6","anchor":"middle","dy":4}]}
 {{< /apfigure >}}
 
 We will begin with the **sum and difference formulas for cosine**, so that we can find the cosine of a given angle if we can break it up into the sum or difference of two of the special angles. See the table below.
@@ -43,7 +43,7 @@ First, we will prove the difference formula for cosines. Let's consider two poin
 Label two more points: $A$ at an angle of $(\alpha-\beta)$ from the positive $x$-axis with coordinates $(\cos(\alpha-\beta),\sin(\alpha-\beta))$; and point $B$ with coordinates $(1,0)$. Triangle $POQ$ is a rotation of triangle $AOB$ and thus the distance from $P$ to $Q$ is the same as the distance from $A$ to $B$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The unit circle with points P at angle alpha and Q at angle beta from the positive x-axis, joined to the origin and to each other by solid segments forming triangle POQ; points A at angle alpha minus beta and B at (1, 0), joined by dashed segments forming triangle AOB, a rotated copy of POQ. Nested arcs near the origin mark angle beta between the positive x-axis and OQ, angle alpha between the positive x-axis and OP, and angle alpha minus beta between OQ and OP.","xMin":-1.3,"xMax":1.3,"yMin":-0.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":190,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":0.3,"from":0,"to":20},{"at":[0,0],"r":0.45,"from":0,"to":140},{"at":[0,0],"r":0.6,"from":20,"to":140}],"segments":[{"from":[0,0],"to":[-0.766,0.6428]},{"from":[0,0],"to":[0.9397,0.342]},{"from":[-0.766,0.6428],"to":[0.9397,0.342]},{"from":[0,0],"to":[-0.5,0.866],"dashed":true},{"from":[0,0],"to":[1,0],"dashed":true},{"from":[-0.5,0.866],"to":[1,0],"dashed":true}],"points":[{"at":[-0.766,0.6428],"label":"P"},{"at":[0.9397,0.342],"label":"Q"},{"at":[-0.5,0.866],"label":"A"},{"at":[1,0],"label":"B"}],"texts":[{"at":[0.17,0.018],"text":"β"},{"at":[0.53,0.15],"text":"α"},{"at":[0.05,0.62],"text":"α − β"}]}
+{"ariaLabel":"The unit circle with points P at angle alpha and Q at angle beta from the positive x-axis, joined to the origin and to each other by solid segments forming triangle POQ; points A at angle alpha minus beta and B at (1, 0), joined by dashed segments forming triangle AOB, a rotated copy of POQ. Nested arcs near the origin mark angle beta between the positive x-axis and OQ, angle alpha between the positive x-axis and OP, and angle alpha minus beta between OQ and OP.","xMin":-1.3,"xMax":1.3,"yMin":-1.3,"yMax":1.3,"grid":false,"tickLabels":false,"unit":190,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":0.36,"from":0,"to":20},{"at":[0,0],"r":0.12,"from":0,"to":140},{"at":[0,0],"r":0.26,"from":20,"to":140}],"segments":[{"from":[0,0],"to":[-0.766,0.6428]},{"from":[0,0],"to":[0.9397,0.342]},{"from":[-0.766,0.6428],"to":[0.9397,0.342]},{"from":[0,0],"to":[-0.5,0.866],"dashed":true},{"from":[0,0],"to":[1,0],"dashed":true},{"from":[-0.5,0.866],"to":[1,0],"dashed":true}],"points":[{"at":[-0.766,0.6428],"label":"P"},{"at":[0.9397,0.342],"label":"Q"},{"at":[-0.5,0.866],"label":"A"},{"at":[1,0],"label":"B"}],"texts":[{"at":[0.44,0.045],"text":"β","anchor":"middle"},{"at":[0.122,0.12],"text":"α","anchor":"middle"},{"at":[0.17,0.31],"text":"α − β","anchor":"middle"}]}
 {{< /apfigure >}}
 
 We can find the distance from $P$ to $Q$ using the **distance formula**.
@@ -134,7 +134,7 @@ $$
 {{< fillin
   question="Find the exact value of $\cos\left(\tfrac{\pi}{3}-\tfrac{\pi}{4}\right)$."
   answer="\frac{\sqrt2+\sqrt6}{4}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{\sqrt2+\sqrt6}{4}$"
   hint="Write the difference formula for cosine, substitute $\alpha=\tfrac{\pi}{3}$ and $\beta=\tfrac{\pi}{4}$, then evaluate each factor."
 >}}
@@ -155,7 +155,7 @@ $$
 {{< fillin
   question="Find the exact value of $\cos(105^\circ)$."
   answer="\frac{\sqrt2-\sqrt6}{4}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{\sqrt2-\sqrt6}{4}$"
   hint="Write $105^\circ$ as $45^\circ+60^\circ$ (or $135^\circ-30^\circ$), then apply the sum or difference formula for cosine."
 >}}
@@ -339,7 +339,7 @@ $$
 {{< fillin
   question="Find the exact value of $\tan\left(\tfrac{2\pi}{3}+\tfrac{\pi}{4}\right)$."
   answer="\frac{1-\sqrt3}{1+\sqrt3}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig no-like-terms"
   answerDisplay="$\tfrac{1-\sqrt3}{1+\sqrt3}$"
   hint="Write the sum formula for tangent, substitute $\alpha=\tfrac{2\pi}{3}$ and $\beta=\tfrac{\pi}{4}$, then evaluate each tangent."
 >}}
@@ -378,7 +378,7 @@ $$
 Since $\beta$ is in the third quadrant, $a=-12$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A right triangle in the coordinate plane with vertices at the origin, (-5, 0), and (-5, -12), a right angle at (-5, 0), the standard-position angle beta swept from the positive x-axis to the hypotenuse, and hypotenuse of length 13.","xMin":-7,"xMax":2,"yMin":-13,"yMax":2,"grid":false,"tickLabels":false,"unit":38,"segments":[{"from":[0,0],"to":[-5,0]},{"from":[-5,0],"to":[-5,-12]},{"from":[0,0],"to":[-5,-12],"label":"13"}],"points":[{"at":[-5,0],"label":"(−5, 0)"},{"at":[-5,-12],"label":"(−5, −12)"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":247.38}],"texts":[{"at":[0.55,-0.75],"text":"β"}]}
+{"ariaLabel":"A right triangle in the coordinate plane with vertices at the origin, (-5, 0), and (-5, -12), a right angle at (-5, 0), the standard-position angle beta swept from the positive x-axis to the hypotenuse, and hypotenuse of length 13.","xMin":-7,"xMax":2,"yMin":-13,"yMax":2,"grid":false,"tickLabels":false,"unit":38,"segments":[{"from":[0,0],"to":[-5,0]},{"from":[-5,0],"to":[-5,-12]},{"from":[0,0],"to":[-5,-12],"label":"13"}],"points":[{"at":[-5,0],"label":"(−5, 0)"},{"at":[-5,-12],"label":"(−5, −12)"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":247.38}],"texts":[{"at":[-1.25,-0.8],"text":"β","anchor":"middle"}]}
 {{< /apfigure >}}
 
 The next step is finding the cosine of $\alpha$ and the sine of $\beta$. The cosine of $\alpha$ is the adjacent side over the hypotenuse. We can find it from the triangle above: $\cos\alpha=\tfrac45$. We can also find the sine of $\beta$ from the triangle above, as opposite side over the hypotenuse: $\sin\beta=-\tfrac{12}{13}$. Now we are ready to evaluate $\sin(\alpha+\beta)$.
@@ -444,7 +444,7 @@ Now that we can find the sine, cosine, and tangent functions for the sums and di
 Notice also that $\sin\theta=\cos\left(\tfrac{\pi}{2}-\theta\right)$: opposite over hypotenuse. Thus, when two angles are complementary, we can say that the sine of $\theta$ equals the **cofunction** of the complement of $\theta$. Similarly, tangent and cotangent are cofunctions, and secant and cosecant are cofunctions.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle with angle theta at the bottom-left vertex, the right angle at the bottom-right vertex, and the angle pi over 2 minus theta at the top vertex.","unit":70,"polygons":[{"points":[[0,0],[3,0],[3,5]],"vertexLabels":["θ",null,"π/2 − θ"],"rightAngles":[1]}]}
+{"ariaLabel":"A right triangle with the right angle at the bottom-right vertex, an arc marking angle theta at the bottom-left vertex, and an arc at the top vertex marking the other acute angle, pi over 2 minus theta.","unit":70,"polygons":[{"points":[[0,0],[3,0],[3,5]],"rightAngles":[1]}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":59.04},{"at":[3,5],"r":1.3,"from":239.04,"to":270}],"texts":[{"at":[0.78,0.42],"text":"θ","anchor":"middle","dy":4},{"at":[2.584,3.331],"text":"π/2 − θ","anchor":"middle","dy":4}]}
 {{< /apfigure >}}
 
 From these relationships, the **cofunction identities** are formed.
@@ -484,16 +484,13 @@ $$
 \end{array}
 $$
 
-{{< multiplechoice
+{{< fillin
   question="Write $\sin\tfrac{\pi}{7}$ in terms of its cofunction."
-  answer="\cos(5\pi/14)"
+  answer="\cos\left(\frac{5\pi}{14}\right)"
+  answerForm="single-trig-function"
+  answerDisplay="$\cos\left(\tfrac{5\pi}{14}\right)$"
   hint="A cofunction rewrite replaces $\sin\theta$ with $\cos\left(\tfrac{\pi}{2}-\theta\right)$; compute $\tfrac{\pi}{2}-\tfrac{\pi}{7}$ with a common denominator of 14."
 >}}
-\cos(5\pi/14)
-\cos(2\pi/7)
-\cos(\pi/14)
-\sin(5\pi/14)
-{{< /multiplechoice >}}
 
 ## Using the Sum and Difference Formulas to Verify Identities
 
@@ -547,16 +544,13 @@ $$
 
 We see that the identity is verified. In many cases, verifying tangent identities can successfully be accomplished by writing the tangent in terms of sine and cosine.
 
-{{< multiplechoice
-  question="Which of the following is equivalent to $\tan(\pi-\theta)$ for every $\theta$ in its domain?"
+{{< fillin
+  question="Use the difference formula for tangent to simplify $\tan(\pi-\theta)$ to a single trigonometric function of $\theta$."
   answer="-\tan\theta"
+  answerForm="single-trig-function"
+  answerDisplay="$-\tan\theta$"
   hint="Write the difference formula for tangent with $\alpha=\pi$ and $\beta=\theta$, and use $\tan\pi=0$."
 >}}
--\tan\theta
-\tan\theta
-\cot\theta
--\cot\theta
-{{< /multiplechoice >}}
 
 **Example.** Let $L_1$ and $L_2$ denote two non-vertical intersecting lines, and let $\theta$ denote the acute angle between $L_1$ and $L_2$. See the figure below. Show that
 
@@ -569,7 +563,7 @@ where $m_1$ and $m_2$ are the slopes of $L_1$ and $L_2$ respectively. (**Hint:**
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two non-vertical lines L1 and L2 crossing the x-axis at different points near the origin and intersecting each other above it; theta1 marks the angle L1 makes with the positive x-axis, theta2 marks the angle L2 makes with the positive x-axis, and theta marks the acute angle between L1 and L2 at their intersection.","xMin":-2,"xMax":2.2,"yMin":-1,"yMax":2.5,"grid":false,"tickLabels":false,"unit":150,"lines":[{"slope":1,"intercept":0.3,"label":"L2"},{"slope":3,"intercept":-1.5,"label":"L1"}],"circles":[{"at":[0.5,0],"r":0.3,"from":0,"to":71.57},{"at":[-0.3,0],"r":0.3,"from":0,"to":45},{"at":[0.9,1.2],"r":0.3,"from":225,"to":251.57}],"texts":[{"at":[0.82,0.16],"text":"θ1"},{"at":[-0.55,0.15],"text":"θ2"},{"at":[0.75,1.45],"text":"θ"}]}
+{"ariaLabel":"Two non-vertical lines L1 and L2 crossing the positive x-axis at different points to the right of the origin and intersecting each other above it, L1 the steeper of the two. theta1 marks the angle L1 makes with the positive x-axis, theta2 marks the angle L2 makes with the positive x-axis, and theta marks the acute angle between L1 and L2 above their intersection.","xMin":-0.8,"xMax":2.6,"yMin":-1,"yMax":2.6,"grid":false,"tickLabels":false,"unit":150,"lines":[{"slope":1,"intercept":-0.3,"label":"L₂","labelSide":"right"},{"slope":3,"intercept":-3,"label":"L₁","labelSide":"left"}],"circles":[{"at":[1,0],"r":0.3,"from":0,"to":71.57},{"at":[0.3,0],"r":0.3,"from":0,"to":45},{"at":[1.35,1.05],"r":0.3,"from":45,"to":71.57}],"texts":[{"at":[1.39,0.195],"text":"θ₁","anchor":"middle"},{"at":[0.742,0.13],"text":"θ₂","anchor":"middle"},{"at":[1.586,1.4],"text":"θ","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Solution.** Using the difference formula for tangent, this problem does not seem as daunting as it might.
@@ -584,8 +578,8 @@ $$
 
 **Example.** For a climbing wall, a guy-wire $R$ is attached 47 feet high on a vertical pole. Added support is provided by another guy-wire $S$ attached 40 feet above ground on the same pole. If the wires are attached to the ground 50 feet from the pole, find the angle $\alpha$ between the wires. See the figure below.
 
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"A vertical pole with guy-wire R attached 47 feet high and guy-wire S attached 40 feet high, both running down to a common point on the ground 50 feet from the pole. Angle beta is the angle wire R makes with the ground, and angle alpha is the angle between the two wires.","xMin":-10,"xMax":55,"yMin":-5,"yMax":50,"grid":false,"tickLabels":false,"unit":15,"segments":[{"from":[0,0],"to":[0,47]},{"from":[0,47],"to":[50,0],"label":"R","labelSide":"n"},{"from":[0,40],"to":[50,0],"label":"S","labelSide":"s"},{"from":[0,0],"to":[50,0],"label":"50 ft"}],"points":[{"at":[0,47],"label":"47 ft"},{"at":[0,40],"label":"40 ft"}],"circles":[{"at":[50,0],"r":9,"from":136.77,"to":180},{"at":[50,0],"r":12,"from":136.77,"to":141.34}],"texts":[{"at":[38.5,2.4],"text":"β"},{"at":[40.5,9.2],"text":"α"}]}
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A vertical pole meeting the ground at a right angle, with guy-wire R attached 47 feet high and guy-wire S attached 40 feet high, both running down to a common point on the ground 50 feet from the pole. Angle beta is the angle wire R makes with the ground, and angle alpha is the angle between the two wires.","unit":9,"maxWidth":560,"segments":[{"from":[0,0],"to":[0,47]},{"from":[0,47],"to":[50,0],"label":"R"},{"from":[0,40],"to":[50,0],"label":"S","labelSide":"right"},{"from":[0,0],"to":[50,0],"label":"50 ft","labelSide":"right"}],"rightAngles":[{"at":[0,0],"dirs":[[1,0],[0,1]]}],"points":[{"at":[0,47]},{"at":[0,40]}],"circles":[{"at":[50,0],"r":9,"from":136.77,"to":180},{"at":[50,0],"r":12,"from":136.77,"to":141.34}],"texts":[{"at":[-1.5,46.3],"text":"47 ft","anchor":"end"},{"at":[-1.5,39.3],"text":"40 ft","anchor":"end"},{"at":[43.2,1.6],"text":"β","anchor":"middle"},{"at":[40.6,9.6],"text":"α","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Solution.** Let's first summarize the information we can gather from the diagram. As only the sides adjacent to the right angle are known, we can use the tangent function. Notice that $\tan\beta=\tfrac{47}{50}$, and $\tan(\beta-\alpha)=\tfrac{40}{50}=\tfrac45$. We can then use the difference formula for tangent.
@@ -650,15 +644,15 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
 {{< fillin
   question="Find the exact value: $\cos\left(\tfrac{\pi}{12}\right)$."
   answer="\frac{\sqrt2+\sqrt6}{4}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{\sqrt2+\sqrt6}{4}$"
-  hint="Write $\tfrac{\pi}{12}$ as $\tfrac{\pi}{3}-\tfrac{\pi}{4}$ (or $\tfrac{\pi}{4}-\tfrac{\pi}{6}$), then apply the difference formula for cosine."
+  hint="Write $\tfrac{\pi}{12}$ as a difference of two special angles whose sines and cosines you know, then apply the difference formula for cosine."
 >}}
 
 {{< fillin
   question="Rewrite $\cos\left(x+\tfrac{2\pi}{3}\right)$ in terms of $\sin x$ and $\cos x$."
   answer="-\frac{1}{2}\cos x-\frac{\sqrt3}{2}\sin x"
-  answerForm="expanded"
+  answerForm="expanded no-trig-products no-like-terms"
   answerDisplay="$-\tfrac12\cos x-\tfrac{\sqrt3}{2}\sin x$"
   hint="Write the sum formula for cosine with $\alpha=x$ and $\beta=\tfrac{2\pi}{3}$, then evaluate $\cos\tfrac{2\pi}{3}$ and $\sin\tfrac{2\pi}{3}$."
 >}}
@@ -668,7 +662,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
 {{< fillin
   question="Find the exact value: $\sin\left(\tfrac{11\pi}{12}\right)$."
   answer="\frac{\sqrt6-\sqrt2}{4}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{\sqrt6-\sqrt2}{4}$"
   hint="Write $\tfrac{11\pi}{12}$ as $\tfrac{3\pi}{4}+\tfrac{\pi}{6}$ (or $\pi-\tfrac{\pi}{12}$), then apply the sum or difference formula for sine."
 >}}
@@ -676,7 +670,7 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
 {{< fillin
   question="Rewrite $\sin\left(x-\tfrac{3\pi}{4}\right)$ in terms of $\sin x$ and $\cos x$."
   answer="-\frac{\sqrt2}{2}\sin x-\frac{\sqrt2}{2}\cos x"
-  answerForm="expanded"
+  answerForm="expanded no-trig-products no-like-terms"
   answerDisplay="$-\tfrac{\sqrt2}{2}\sin x-\tfrac{\sqrt2}{2}\cos x$"
   hint="Write the difference formula for sine with $\alpha=x$ and $\beta=\tfrac{3\pi}{4}$, then evaluate $\cos\tfrac{3\pi}{4}$ and $\sin\tfrac{3\pi}{4}$."
 >}}
@@ -686,14 +680,14 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
 {{< fillin
   question="Find the exact value: $\tan\left(\tfrac{19\pi}{12}\right)$."
   answer="-2-\sqrt3"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical no-like-terms"
   answerDisplay="$-2-\sqrt3$"
   hint="Write $\tfrac{19\pi}{12}$ as $\tfrac{4\pi}{3}+\tfrac{\pi}{4}$ (or a coterminal angle you recognize), then apply the sum or difference formula for tangent."
 >}}
 
 {{< fillin
   question="Simplify $\cfrac{\tan\left(\tfrac32 x\right)-\tan\left(\tfrac75 x\right)}{1+\tan\left(\tfrac32 x\right)\tan\left(\tfrac75 x\right)}$ to a single trigonometric function of $x$."
-  answer="\tan(x/10)"
+  answer="\tan\left(\frac{x}{10}\right)"
   answerForm="single-trig-function"
   answerDisplay="$\tan\left(\tfrac{x}{10}\right)$"
   hint="Recognize the right side of the difference formula for tangent, then subtract the two arguments: $\tfrac32x-\tfrac75x$."
@@ -701,34 +695,28 @@ $$\alpha\approx0.079741\left(\tfrac{180}{\pi}\right)\approx4.57^\circ$$
 
 ### Use sum and difference formulas for cofunctions.
 
-{{< multiplechoice
-  question="Simplify $\sec\left(\tfrac{\pi}{2}-\theta\right)$."
+{{< fillin
+  question="Simplify $\sec\left(\tfrac{\pi}{2}-\theta\right)$ to a single trigonometric function of $\theta$."
   answer="\csc\theta"
+  answerForm="single-trig-function"
+  answerDisplay="$\csc\theta$"
   hint="Use the cofunction identity for secant: $\sec\theta=\csc\left(\tfrac{\pi}{2}-\theta\right)$, applied to the angle $\tfrac{\pi}{2}-\theta$."
 >}}
-\csc\theta
-\sec\theta
-\sin\theta
-\tan\theta
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Simplify $\tan\left(\tfrac{\pi}{2}-x\right)$."
+{{< fillin
+  question="Simplify $\tan\left(\tfrac{\pi}{2}-x\right)$ to a single trigonometric function of $x$."
   answer="\cot x"
+  answerForm="single-trig-function"
+  answerDisplay="$\cot x$"
   hint="Use the cofunction identity for tangent: $\tan\theta=\cot\left(\tfrac{\pi}{2}-\theta\right)$, applied to the angle $\tfrac{\pi}{2}-x$."
 >}}
-\cot x
-\tan x
-\csc x
-\sec x
-{{< /multiplechoice >}}
 
 ### Use sum and difference formulas to verify identities.
 
 {{< multiplechoice
-  question="True or false: $\tan(u-v)=\tfrac{\tan u-\tan v}{1+\tan u\tan v}$ for every $u,v$ in the domain."
+  question="True or false: if $\alpha$, $\beta$, and $\gamma$ are angles in the same triangle, then $\sin(\alpha+\beta)=\sin\gamma$."
   answer="True"
-  hint="Write $\tan(u-v)$ as $\tfrac{\sin(u-v)}{\cos(u-v)}$, expand with the sum and difference formulas, then divide numerator and denominator by $\cos u\cos v$."
+  hint="Use the angle sum of a triangle to write $\alpha+\beta$ in terms of $\gamma$, then expand with the difference formula for sine."
 >}}
 True
 False
@@ -745,4 +733,4 @@ Different
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 7.2: Sum and Difference Identities](https://openstax.org/books/precalculus-2e/pages/7-2-sum-and-difference-identities) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of Denali (Figure 1). Recreated all seven instructional figures as accessible spec-first SVGs: the unit circle of special angles (Figure 2), reusing the coordinate-labeled unit circle already authored for Section 5.2 with its degree/radian ray labels omitted, since the (cosine, sine) coordinates alone carry this figure's reason for being shown here (deriving the sum and difference formulas), and every special angle's degree and radian measure is transcribed in full in Sections 5.2 and 5.3; the difference-formula proof diagram (Figure 3), rebuilt with representative angles $\alpha=140^\circ$, $\beta=20^\circ$ standing in for the source's generic $\alpha,\beta$, since the proof depends only on the two points' being distinct and in general position, not on their specific measures; the two reference-triangle figures for Example 6 (Figures 4–5); the cofunction right triangle (Figure 6); the two-line application diagram (Figure 7); and the guy-wire diagram (Figure 8), with the source's separate dashed horizontal reference ray for angles $\alpha$ and $\beta$ replaced by the solid $50$-foot ground segment itself, which is both the same reference direction and the segment the problem already measures. Every retained Try It became a real `fillin` or `multiplechoice` component. Two Try Its whose printed subject is itself a single trigonometric application of a cofunction- or supplement-related argument — "write $\sin\tfrac{\pi}{7}$ in terms of its cofunction" and "verify $\tan(\pi-\theta)=-\tan\theta$" — were authored as `multiplechoice` rather than `fillin`: since both the printed subject and the keyed answer are exactly one trigonometric application of the variable, the grader's `single-trig-function` token cannot refuse a learner who simply retypes the prompt, so the response mode changed instead of the token; the corresponding cofunction Practice items ($\sec\left(\tfrac{\pi}{2}-\theta\right)$, $\tan\left(\tfrac{\pi}{2}-x\right)$) received the same adaptation. One Extension "prove or disprove" item and one Graphical "same or different" item, adapted into the closing Practice block's verify-identities group, were changed from free-response proofs to `multiplechoice` for the same reason a proof has no gradable free-response answer; their keyed alternative is the source's own printed solution ("True" / "They are the same"). Omitted the "Access these online resources" media links. The two-line application example's stated goal is corrected from the source's $\tfrac{m_2-m_1}{1+m_1m_2}$ to the $\tfrac{m_1-m_2}{1+m_1m_2}$ its own solution derives and its own figure supports, with a visible Source note beside the statement (the source's stated goal is the negative of what its solution proves). The five source Try Its (three `fillin`, two `multiplechoice`) were transcribed as in-page practice following their examples; ten further end-of-section exercises — two per objective, covering exact-value evaluation, rewriting in terms of $\sin x$ and $\cos x$, a tangent-difference simplification, cofunction simplification, and identity/graph-comparison recognition — were adapted into the closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 7.2: Sum and Difference Identities](https://openstax.org/books/precalculus-2e/pages/7-2-sum-and-difference-identities) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of Denali (Figure 1). Recreated all seven instructional figures as accessible spec-first SVGs: the unit circle of special angles (Figure 2), with a ray to each special angle carrying its radian measure and each point labeled with its degree measure and (cosine, sine) coordinates; the difference-formula proof diagram (Figure 3), rebuilt with representative angles $\alpha=140^\circ$, $\beta=20^\circ$ standing in for the source's generic $\alpha,\beta$, since the proof depends only on the two points' being distinct and in general position, not on their specific measures; the two reference-triangle figures for Example 6 (Figures 4–5); the cofunction right triangle (Figure 6); the two-line application diagram (Figure 7); and the guy-wire diagram (Figure 8), with the source's separate dashed horizontal reference ray for angles $\alpha$ and $\beta$ replaced by the solid $50$-foot ground segment itself, which is both the same reference direction and the segment the problem already measures. Every retained Try It became a real `fillin` component. The Try It "verify the identity $\tan(\pi-\theta)=-\tan\theta$", whose printed statement contains its own answer, is asked instead as "use the difference formula for tangent to simplify $\tan(\pi-\theta)$ to a single trigonometric function of $\theta$", keyed with the right side the source verifies. One Extension "prove or disprove" item and one Graphical "same or different" item, adapted into the closing Practice block's verify-identities group, were changed from free-response proofs to `multiplechoice`, since a proof has no gradable free-response answer; their keyed alternative is the source's own printed solution ("True" / "They are the same"). Omitted the "Access these online resources" media links. The two-line application example's stated goal is corrected from the source's $\tfrac{m_2-m_1}{1+m_1m_2}$ to the $\tfrac{m_1-m_2}{1+m_1m_2}$ its own solution derives and its own figure supports, with a visible Source note beside the statement (the source's stated goal is the negative of what its solution proves). The five source Try Its (all five as `fillin`s) were transcribed as in-page practice following their examples; ten further end-of-section exercises — two per objective, covering exact-value evaluation, rewriting in terms of $\sin x$ and $\cos x$, a tangent-difference simplification, cofunction simplification, and a prove-or-disprove and a graph-comparison judgment — were adapted into the closing Practice block, one group per objective.</small>

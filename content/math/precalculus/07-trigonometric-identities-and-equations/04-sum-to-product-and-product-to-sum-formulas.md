@@ -19,7 +19,7 @@ weight: 4
 A band marches down the field creating an amazing sound that bolsters the crowd. That sound travels as a wave that can be interpreted using trigonometric functions. For example, the figure below represents a sound wave for the musical note A. In this section, we will investigate trigonometric identities that are the foundation of everyday phenomena such as sound waves.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A sound wave for the musical note A: a sine curve dipping first below the axis and oscillating between y equals negative 1 and 1, completing four full cycles and part of a fifth as x runs from 0 to 0.01, with the x-axis marked every 0.002.","xMin":0,"xMax":0.0105,"yMin":-1.4,"yMax":1.4,"xUnit":36000,"yUnit":55,"xTickStep":0.002,"yTickStep":1,"tickLabels":true,"xTickGrouping":false,"curves":[{"kind":"sine","a":-1,"b":2764.6}]}
+{"ariaLabel":"A sound wave for the musical note A: a sine curve dipping first below the axis and oscillating between y equals negative 1 and 1, completing four full cycles and part of a fifth as x runs from 0 to 0.01, with the x-axis ticked every 0.002 and the tick values printed below the wave.","xMin":0,"xMax":0.0105,"yMin":-1.75,"yMax":1.4,"xUnit":36000,"yUnit":55,"xTickStep":0.002,"yTickStep":1,"tickLabels":"y","xTickGrouping":false,"curves":[{"kind":"sine","a":-1,"b":2764.6,"arrows":"end"}],"segments":[{"from":[0.002,-0.055],"to":[0.002,0.055]},{"from":[0.004,-0.055],"to":[0.004,0.055]},{"from":[0.006,-0.055],"to":[0.006,0.055]},{"from":[0.008,-0.055],"to":[0.008,0.055]},{"from":[0.01,-0.055],"to":[0.01,0.055]}],"texts":[{"at":[0.002,-1.38],"text":"0.002","anchor":"middle","dy":4},{"at":[0.004,-1.38],"text":"0.004","anchor":"middle","dy":4},{"at":[0.006,-1.38],"text":"0.006","anchor":"middle","dy":4},{"at":[0.008,-1.38],"text":"0.008","anchor":"middle","dy":4},{"at":[0.01,-1.38],"text":"0.01","anchor":"middle","dy":4}]}
 {{< /apfigure >}}
 
 ## Expressing Products as Sums
@@ -68,9 +68,9 @@ $$
 $$
 
 {{< fillin
-  question="Use the product-to-sum formula to write the product as a sum or difference: $\cos(2\theta)\cos(4\theta)$."
+  question="Use the product-to-sum formula to write the product as a sum or difference: $\cos(2\theta)\cos(4\theta)$. Distribute any constant factor, so the answer is a sum of terms."
   answer="\frac{1}{2}\cos(6\theta)+\frac{1}{2}\cos(2\theta)"
-  answerForm="expanded"
+  answerForm="no-trig-products distributed no-like-terms"
   answerDisplay="$\tfrac12\cos(6\theta)+\tfrac12\cos(2\theta)$"
   hint="Use $\cos\alpha\cos\beta=\tfrac12[\cos(\alpha-\beta)+\cos(\alpha+\beta)]$ with $\alpha=2\theta$ and $\beta=4\theta$, then simplify each resulting angle."
 >}}
@@ -105,9 +105,9 @@ $$
 $$
 
 {{< fillin
-  question="Use the product-to-sum formula to write the product as a sum: $\sin(x+y)\cos(x-y)$."
+  question="Use the product-to-sum formula to write the product as a sum: $\sin(x+y)\cos(x-y)$. Distribute any constant factor, so the answer is a sum of terms."
   answer="\frac{1}{2}\sin(2x)+\frac{1}{2}\sin(2y)"
-  answerForm="expanded"
+  answerForm="no-trig-products distributed no-like-terms"
   answerDisplay="$\tfrac12\sin(2x)+\tfrac12\sin(2y)$"
   hint="Use $\sin\alpha\cos\beta=\tfrac12[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$ with $\alpha=x+y$ and $\beta=x-y$."
 >}}
@@ -158,9 +158,9 @@ $$
 $$
 
 {{< fillin
-  question="Use the product-to-sum formula to evaluate $\cos\tfrac{11\pi}{12}\cos\tfrac{\pi}{12}$."
+  question="Use the product-to-sum formula to evaluate $\cos\tfrac{11\pi}{12}\cos\tfrac{\pi}{12}$. Enter the exact value as a single fraction."
   answer="\frac{-2-\sqrt3}{4}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical no-like-terms"
   answerDisplay="$\tfrac{-2-\sqrt3}{4}$"
   hint="Use $\cos\alpha\cos\beta=\tfrac12[\cos(\alpha-\beta)+\cos(\alpha+\beta)]$ with $\alpha=\tfrac{11\pi}{12}$ and $\beta=\tfrac{\pi}{12}$, then evaluate each cosine exactly."
 >}}
@@ -229,16 +229,13 @@ $$
 \end{array}
 $$
 
-{{< multiplechoice
+{{< fillin
   question="Use the sum-to-product formula to write the sum as a product: $\sin(3\theta)+\sin(\theta)$."
   answer="2\sin(2\theta)\cos(\theta)"
-  hint="Let $u=3\theta$ and $v=\theta$; the sum-to-product formula for sine gives $2\sin\left(\tfrac{u+v}{2}\right)\cos\left(\tfrac{u-v}{2}\right)$."
+  answerForm="trig-product"
+  answerDisplay="$2\sin(2\theta)\cos(\theta)$"
+  hint="Use the sum-to-product formula for $\sin\alpha+\sin\beta$ with $\alpha=3\theta$ and $\beta=\theta$, then simplify the half-sum and the half-difference."
 >}}
-2\sin(2\theta)\cos(\theta)
-2\cos(2\theta)\sin(\theta)
-\sin(2\theta)\cos(\theta)
-2\sin(2\theta)\sin(\theta)
-{{< /multiplechoice >}}
 
 **Example.** Evaluate $\cos(15^\circ)-\cos(75^\circ)$.
 
@@ -288,11 +285,11 @@ $$
 $$
 
 {{< fillin
-  question="Simplify the left side of the identity $\tan\theta\cot\theta-\cos^2\theta$ to a single trigonometric function."
+  question="Simplify $\tan\theta\cot\theta-\cos^2\theta$ to a single trigonometric function."
   answer="\sin^2\theta"
   answerForm="single-trig-function"
   answerDisplay="$\sin^2\theta$"
-  hint="Write $\tan\theta\cot\theta$ as $\left(\tfrac{\sin\theta}{\cos\theta}\right)\left(\tfrac{\cos\theta}{\sin\theta}\right)$, which reduces to $1$, then apply the Pythagorean identity."
+  hint="Write $\tan\theta$ and $\cot\theta$ in terms of sine and cosine and simplify their product, then use a Pythagorean identity."
 >}}
 
 ## Key equations
@@ -319,9 +316,9 @@ $$
 ### Express products as sums
 
 {{< fillin
-  question="Rewrite the product as a sum or difference: $16\sin(16x)\sin(11x)$."
+  question="Rewrite the product as a sum or difference: $16\sin(16x)\sin(11x)$. Distribute any constant factor, so the answer is a sum of terms."
   answer="8\cos(5x)-8\cos(27x)"
-  answerForm="expanded"
+  answerForm="no-trig-products distributed no-like-terms"
   answerDisplay="$8\cos(5x)-8\cos(27x)$"
   hint="Use $\sin\alpha\sin\beta=\tfrac12[\cos(\alpha-\beta)-\cos(\alpha+\beta)]$ with $\alpha=16x$ and $\beta=11x$, then distribute the $16$."
 >}}
@@ -329,31 +326,31 @@ $$
 {{< fillin
   question="Rewrite the product as a sum or difference: $2\sin(5x)\cos(3x)$."
   answer="\sin(2x)+\sin(8x)"
-  answerForm="expanded"
+  answerForm="no-trig-products no-like-terms"
   answerDisplay="$\sin(2x)+\sin(8x)$"
   hint="Use $\sin\alpha\cos\beta=\tfrac12[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$ with $\alpha=5x$ and $\beta=3x$."
 >}}
 
 {{< fillin
-  question="Rewrite the product as a sum or difference: $\sin(-x)\sin(5x)$."
+  question="Rewrite the product as a sum or difference: $\sin(-x)\sin(5x)$. Distribute any constant factor, so the answer is a sum of terms."
   answer="\frac{1}{2}\cos(6x)-\frac{1}{2}\cos(4x)"
-  answerForm="expanded"
+  answerForm="no-trig-products distributed no-like-terms"
   answerDisplay="$\tfrac12\cos(6x)-\tfrac12\cos(4x)$"
   hint="Use the odd property $\sin(-x)=-\sin x$ first, then apply $\sin\alpha\sin\beta=\tfrac12[\cos(\alpha-\beta)-\cos(\alpha+\beta)]$ with $\alpha=x$ and $\beta=5x$."
 >}}
 
 {{< fillin
-  question="Evaluate using a sum or difference of two functions: $\cos(45^\circ)\cos(15^\circ)$."
-  answer="\frac{1}{4}(1+\sqrt3)"
-  answerForm="evaluated-trig"
-  answerDisplay="$\tfrac14(1+\sqrt3)$"
+  question="Evaluate using a sum or difference of two functions: $\cos(45^\circ)\cos(15^\circ)$. Enter the exact value as a single fraction."
+  answer="\frac{1+\sqrt3}{4}"
+  answerForm="evaluated-trig simplified-radical no-like-terms"
+  answerDisplay="$\tfrac{1+\sqrt3}{4}$"
   hint="Use $\cos\alpha\cos\beta=\tfrac12[\cos(\alpha-\beta)+\cos(\alpha+\beta)]$ with $\alpha=45^\circ$ and $\beta=15^\circ$, then evaluate each cosine exactly."
 >}}
 
 {{< fillin
   question="Evaluate using a sum or difference of two functions, leaving your answer in terms of sine and cosine: $2\sin(100^\circ)\sin(20^\circ)$."
   answer="\cos(80^\circ)-\cos(120^\circ)"
-  answerForm="expanded"
+  answerForm="no-trig-products no-like-terms"
   answerDisplay="$\cos(80^\circ)-\cos(120^\circ)$"
   hint="Use $\sin\alpha\sin\beta=\tfrac12[\cos(\alpha-\beta)-\cos(\alpha+\beta)]$ with $\alpha=100^\circ$ and $\beta=20^\circ$, then distribute the $2$."
 >}}
@@ -361,30 +358,27 @@ $$
 ### Express sums as products
 
 {{< fillin
-  question="Rewrite the sum as a product of two functions: $\cos(7x)+\cos(-7x)$."
+  question="Rewrite the sum as a product: $\cos(7x)+\cos(-7x)$."
   answer="2\cos(7x)"
   answerForm="single-trig-function"
   answerDisplay="$2\cos(7x)$"
-  hint="Cosine is even, so $\cos(-7x)=\cos(7x)$ — the sum-to-product formula then collapses to a single term."
+  hint="Use $\cos\alpha+\cos\beta=2\cos\left(\tfrac{\alpha+\beta}{2}\right)\cos\left(\tfrac{\alpha-\beta}{2}\right)$ with $\alpha=7x$ and $\beta=-7x$, then simplify each factor."
 >}}
 
-{{< multiplechoice
-  question="Rewrite the sum as a product of two functions: $\cos(6t)+\cos(4t)$."
+{{< fillin
+  question="Rewrite the sum as a product: $\cos(6t)+\cos(4t)$."
   answer="2\cos(5t)\cos(t)"
-  hint="Let $u=6t$ and $v=4t$; the sum-to-product formula for cosine gives $2\cos\left(\tfrac{u+v}{2}\right)\cos\left(\tfrac{u-v}{2}\right)$."
+  answerForm="trig-product"
+  answerDisplay="$2\cos(5t)\cos t$"
+  hint="Use the sum-to-product formula for $\cos\alpha+\cos\beta$ with $\alpha=6t$ and $\beta=4t$, then simplify the half-sum and the half-difference."
 >}}
-2\cos(5t)\cos(t)
-2\sin(5t)\sin(t)
-\cos(5t)\cos(t)
-2\cos(5t)\sin(t)
-{{< /multiplechoice >}}
 
 {{< fillin
   question="Rewrite the sum as a product of two functions, leaving your answer in terms of sine and cosine: $\sin(76^\circ)+\sin(14^\circ)$."
   answer="\sqrt{2}\cos(31^\circ)"
-  answerForm="single-trig-function"
+  answerForm="single-trig-function simplified-radical no-like-terms"
   answerDisplay="$\sqrt2\cos(31^\circ)$"
-  hint="Use $\sin\alpha+\sin\beta=2\sin\left(\tfrac{\alpha+\beta}{2}\right)\cos\left(\tfrac{\alpha-\beta}{2}\right)$ with $\alpha=76^\circ$ and $\beta=14^\circ$, then evaluate $\sin(45^\circ)$ exactly."
+  hint="Use $\sin\alpha+\sin\beta=2\sin\left(\tfrac{\alpha+\beta}{2}\right)\cos\left(\tfrac{\alpha-\beta}{2}\right)$ with $\alpha=76^\circ$ and $\beta=14^\circ$, then evaluate the sine factor exactly."
 >}}
 
 {{< fillin
@@ -405,4 +399,4 @@ $$
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 7.4: Sum-to-Product and Product-to-Sum Formulas](https://openstax.org/books/precalculus-2e/pages/7-4-sum-to-product-and-product-to-sum-formulas) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of the UCLA marching band (Figure 1); recreated the note-A sound-wave graph (Figure 2) as an accessible spec-first SVG drawn from the exact 440-Hz sine formula $y=-\sin(2\pi\cdot440x)$ (the source curve dips below the axis first) over the source's $0$-to-$0.01$ window with its $0.002$-step axis labels. Converted the boxed "The Product-to-Sum Formulas" and "Sum-to-Product Formulas" identity lists into the book's callout convention. Every retained Try It became a real interactive component. The three rewrite-as-a-sum Try Its (product-to-sum) became `fillin` components with `answerForm="expanded"`, since the printed product and the keyed sum are the same value and only the shape — a top-level sum versus a top-level product — separates a correct retype of the prompt from the correct answer; each answer is written as a distributed sum of terms (no factored-out leading coefficient) so the shape check itself passes on the keyed value. The rewrite-as-a-product (sum-to-product) Try It whose answer still holds two multiplied trigonometric applications ($2\sin(2\theta)\cos(\theta)$, no available token separates a product answer from a retyped sum) became a `multiplechoice` instead, with distractors that swap which factor carries which function or drop the leading coefficient — each verified numerically distinct from the correct value and from each other. The verify-identity Try It was adapted per this chapter's proof-item policy into "simplify the left side to a single trigonometric function," graded `single-trig-function`, since the identity's left side genuinely reduces to $\sin^2\theta$. Struck-through cancellation shown in the printed derivation of Example 6 is rendered with `\cancel{}`. Omitted the "Access these online resources" media links. The "See Example_07_04_0N" cross-references in Key Concepts were rewritten as "See Example N," matching this section's own example numbering. Adapted ten selected end-of-section exercises — three product-to-sum rewrites, two items from the source's product-to-sum evaluate groups (one evaluated exactly, one left in terms of sine and cosine as its own instruction asks), two sum-to-product rewrites that reduce to a single term, one general sum-to-product rewrite, and two sum-to-product rewrites evaluated numerically to four decimal places — into ten interactive components (nine `fillin`, one `multiplechoice`) in a closing Practice block, one group per objective. Every fillin's `answerForm` was chosen only after replaying its exercise's own printed subject through the grader to confirm the form rejects it.</small>
+<small>This section is adapted from [Precalculus 2e, Section 7.4: Sum-to-Product and Product-to-Sum Formulas](https://openstax.org/books/precalculus-2e/pages/7-4-sum-to-product-and-product-to-sum-formulas) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of the UCLA marching band (Figure 1); recreated the note-A sound-wave graph (Figure 2) as an accessible spec-first SVG drawn from the exact 440-Hz sine formula $y=-\sin(2\pi\cdot440x)$ (the source curve dips below the axis first) over the source's $0$-to-$0.01$ window with its $0.002$-step axis labels, printed below the wave so the curve never strikes through a digit, and without the source's arrowhead at the origin, which would sit on the axes' corner. Converted the boxed "The Product-to-Sum Formulas" and "Sum-to-Product Formulas" identity lists into the book's callout convention. Every retained Try It became a real interactive component. The three rewrite-as-a-sum Try Its (product-to-sum) became `fillin` components with `answerForm="no-trig-products distributed no-like-terms"`, since the printed product and the keyed sum are the same value and only the shape — a sum with no product of trigonometric functions left, its angles worked out — separates a correct retype of the prompt from the correct answer; each answer is written as a distributed sum of terms (no factored-out leading coefficient) so the shape check itself passes on the keyed value, and every product-to-sum item whose result carries a constant factor asks for that factor to be distributed. The rewrite-as-a-product (sum-to-product) Try It, and the $\cos(6t)+\cos(4t)$ exercise, were earlier posed as multiple choice because no grading form could refuse the retyped sum; both are fill-ins again under `answerForm="trig-product"`, which requires the key's own product with its angles worked out. The verify-identity Try It was adapted per this chapter's proof-item policy into "simplify the left side to a single trigonometric function," graded `single-trig-function`, since the identity's left side genuinely reduces to $\sin^2\theta$. Struck-through cancellation shown in the printed derivation of Example 6 is rendered with `\cancel{}`. Omitted the "Access these online resources" media links. The "See Example_07_04_0N" cross-references in Key Concepts were rewritten as "See Example N," matching this section's own example numbering. Adapted ten selected end-of-section exercises — three product-to-sum rewrites, two items from the source's product-to-sum evaluate groups (one evaluated exactly, one left in terms of sine and cosine as its own instruction asks), two sum-to-product rewrites that reduce to a single term, one general sum-to-product rewrite, and two sum-to-product rewrites evaluated numerically to four decimal places — into ten `fillin` components in a closing Practice block, one group per objective. The two exact-value items (the $\cos\tfrac{11\pi}{12}\cos\tfrac{\pi}{12}$ Try It and the $\cos(45^\circ)\cos(15^\circ)$ exercise) ask for the value as a single fraction, so the second is keyed $\tfrac{1+\sqrt3}{4}$, the source's $\tfrac14(1+\sqrt3)$ written over one bar. Every fillin's `answerForm` was chosen only after replaying its exercise's own printed subject through the grader to confirm the form rejects it.</small>

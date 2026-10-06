@@ -20,7 +20,7 @@ weight: 2
 Suppose a boat leaves port, travels $10$ miles, turns $20$ degrees, and travels another $8$ miles as shown below. How far from port is the boat?
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A triangle whose vertices are the port, the point where the boat turned, and the boat: the port-to-turn leg is 10 mi, the turn-to-boat leg is 8 mi, the port-to-turn leg is extended past the turn point as a dashed ray, and the angle between that dashed ray and the 8-mi leg is 20 degrees.","unit":26,"polygons":[{"points":[[0,0],[0,10],[-2.7362,17.5175]],"edgeLabels":["10 mi","8 mi",null],"vertexLabels":["Port",null,null]}],"segments":[{"from":[0,10],"to":[0,13],"dashed":true}],"texts":[{"at":[-0.78,14.29],"text":"20°","anchor":"middle"}]}
+{"ariaLabel":"A triangle whose vertices are the port, the point where the boat turned, and the boat: the port-to-turn leg is 10 mi, the turn-to-boat leg is 8 mi, and the port-to-boat side is dashed. The port-to-turn leg is extended past the turn point as a dashed ray, and an arc marks the 20-degree angle between that dashed ray and the 8-mi leg.","unit":26,"polygons":[{"points":[[0,0],[0,10],[-2.7362,17.5175]],"edgeLabels":["10 mi","8 mi",null],"vertexLabels":["Port",null,null],"dashedEdges":[2]}],"segments":[{"from":[0,10],"to":[0,12.6],"dashed":true}],"circles":[{"at":[0,10],"r":1.5,"from":90,"to":110}],"texts":[{"at":[0.3,11.25],"text":"20°","anchor":"start"}]}
 {{< /apfigure >}}
 
 Unfortunately, while the Law of Sines enables us to address many non-right triangle cases, it does not help us with triangles where the known angle is between two known sides, a **SAS (side-angle-side) triangle**, or when all three sides are known, but no angles are known, a **SSS (side-side-side) triangle**. In this section, we will investigate another tool for solving oblique triangles described by these last two cases.
@@ -32,7 +32,7 @@ The tool we need to solve the problem of the boat's distance from the port is th
 Understanding how the Law of Cosines is derived will be helpful in using the formulas. The derivation begins with the **Generalized Pythagorean Theorem**, an extension of the Pythagorean Theorem to non-right triangles. Here is how it works: an arbitrary non-right triangle $ABC$ is placed in the coordinate plane with vertex $A$ at the origin, side $c$ drawn along the $x$-axis, and vertex $C$ located at some point $(x,y)$ in the plane, as shown below. Generally, triangles exist anywhere in the plane, but for this explanation we will place the triangle as noted.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An oblique triangle ABC placed in the coordinate plane: vertex A at the origin, vertex B at (c,0) on the x-axis, and vertex C at (b cos theta, b sin theta) in the first quadrant, with angle theta at A. A dashed perpendicular drops from C to the x-axis; the segment from B to that foot has length x minus c, and the dashed vertical from the foot up to C has length y.","xMin":-0.4,"xMax":5.6,"yMin":-1.2,"yMax":4.1,"grid":false,"tickLabels":false,"unit":85,"points":[{"at":[0,0],"label":"A (0, 0)","labelSide":"sw"},{"at":[3,0],"label":"B"},{"at":[4.9149,3.4415],"label":"C (b cos θ, b sin θ)","labelSide":"ne"}],"segments":[{"from":[0,0],"to":[4.9149,3.4415],"label":"b"},{"from":[3,0],"to":[4.9149,3.4415],"label":"a"},{"from":[4.9149,3.4415],"to":[4.9149,0],"dashed":true,"label":"y"},{"from":[3,0],"to":[4.9149,0],"dashed":true,"label":"x − c"},{"from":[0,0],"to":[3,0],"label":"c"}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":35}],"texts":[{"at":[0.75,0.28],"text":"θ"},{"at":[2.46,-0.6],"text":"x","anchor":"middle"}]}
+{"ariaLabel":"An oblique triangle ABC placed in the coordinate plane: vertex A at the origin, vertex B at (c,0) on the x-axis, and vertex C at (b cos theta, b sin theta) in the first quadrant, with angle theta at A. A dashed perpendicular drops from C to the x-axis, meeting it at a right angle; the segment from B to that foot has length x minus c, the dashed vertical from the foot up to C has length y, and a double-headed arrow below the x-axis spans the distance x from A to the foot.","xMin":-0.4,"xMax":5.6,"yMin":-1.6,"yMax":4.1,"grid":false,"tickLabels":false,"unit":85,"points":[{"at":[0,0],"label":"A (0, 0)","labelSide":"sw"},{"at":[3,0],"label":"B"},{"at":[4.9149,3.4415],"label":"C (b cos θ, b sin θ)","labelSide":"ne"}],"segments":[{"from":[0,0],"to":[4.9149,3.4415],"label":"b"},{"from":[3,0],"to":[4.9149,3.4415],"label":"a"},{"from":[4.9149,3.4415],"to":[4.9149,0],"dashed":true,"label":"y"},{"from":[3,0],"to":[4.9149,0],"dashed":true,"label":"x − c"},{"from":[0,0],"to":[3,0],"label":"c"},{"from":[0,-1.0],"to":[4.9149,-1.0],"arrows":true},{"from":[4.6649,0],"to":[4.6649,0.25]},{"from":[4.6649,0.25],"to":[4.9149,0.25]}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":35}],"texts":[{"at":[0.75,0.28],"text":"θ"},{"at":[2.46,-1.35],"text":"x","anchor":"middle"}]}
 {{< /apfigure >}}
 
 We can drop a perpendicular from $C$ to the $x$-axis (this is the altitude or height). Recalling the basic trigonometric identities, we know that
@@ -44,11 +44,11 @@ In terms of $\theta$, $x=b\cos\theta$ and $y=b\sin\theta$. The $(x,y)$ point loc
 $$
 \begin{array}{lrcl}
 & a^2 &=& (x-c)^2+y^2 \\[4pt]
-& &=& (b\cos\theta-c)^2+(b\sin\theta)^2 \\[4pt]
-\text{Substitute }(b\cos\theta)\text{ for }x\text{ and }(b\sin\theta)\text{ for }y. & &=& (b^2\cos^2\theta-2bc\cos\theta+c^2)+b^2\sin^2\theta \\[4pt]
-\text{Expand the perfect square.} & &=& b^2\cos^2\theta+b^2\sin^2\theta+c^2-2bc\cos\theta \\[4pt]
-\text{Group terms noting that }\cos^2\theta+\sin^2\theta=1. & &=& b^2(\cos^2\theta+\sin^2\theta)+c^2-2bc\cos\theta \\[4pt]
-\text{Factor out }b^2. & a^2 &=& b^2+c^2-2bc\cos\theta
+\text{Substitute }(b\cos\theta)\text{ for }x\text{ and }(b\sin\theta)\text{ for }y. & &=& (b\cos\theta-c)^2+(b\sin\theta)^2 \\[4pt]
+\text{Expand the perfect square.} & &=& (b^2\cos^2\theta-2bc\cos\theta+c^2)+b^2\sin^2\theta \\[4pt]
+\text{Group terms noting that }\cos^2\theta+\sin^2\theta=1. & &=& b^2\cos^2\theta+b^2\sin^2\theta+c^2-2bc\cos\theta \\[4pt]
+\text{Factor out }b^2. & &=& b^2(\cos^2\theta+\sin^2\theta)+c^2-2bc\cos\theta \\[4pt]
+& a^2 &=& b^2+c^2-2bc\cos\theta
 \end{array}
 $$
 
@@ -79,8 +79,8 @@ Keep in mind that it is always helpful to sketch the triangle when solving for a
 
   $$
   \begin{array}{l}
-  \cos\alpha=\tfrac{b^2+c^2-a^2}{2bc} \\
-  \cos\beta=\tfrac{a^2+c^2-b^2}{2ac} \\
+  \cos\alpha=\tfrac{b^2+c^2-a^2}{2bc} \\[6pt]
+  \cos\beta=\tfrac{a^2+c^2-b^2}{2ac} \\[6pt]
   \cos\gamma=\tfrac{a^2+b^2-c^2}{2ab}
   \end{array}
   $$
@@ -98,7 +98,7 @@ Keep in mind that it is always helpful to sketch the triangle when solving for a
 **Example.** Find the unknown side and angles of the triangle below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle with angle alpha at the bottom-left vertex, a 30-degree angle at the bottom-right vertex, and angle gamma at the top vertex; the base from alpha to the 30-degree vertex is labeled c = 12, and the side from the 30-degree vertex up to gamma is labeled a = 10.","unit":28,"polygons":[{"points":[[0,0],[12,0],[3.3397,5]],"edgeLabels":["c = 12","a = 10",null],"vertexLabels":["α","30°","γ"]}]}
+{"ariaLabel":"An oblique triangle with angle alpha at the bottom-left vertex, angle beta at the bottom-right vertex, and angle gamma at the top vertex; an arc marks beta as 30 degrees. The base from alpha to beta is labeled c = 12, the side from beta up to gamma is labeled a = 10, and the side from gamma down to alpha is labeled b.","unit":28,"polygons":[{"points":[[0,0],[12,0],[3.3397,5]],"edgeLabels":["c = 12","a = 10","b"],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[12,0],"r":2.2,"from":150,"to":180}],"texts":[{"at":[8.72,0.88],"text":"30°","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Solution.** First, make note of what is given: two sides and the angle between them. This arrangement is classified as SAS and supplies the data needed to apply the Law of Cosines.
@@ -171,13 +171,13 @@ $$
 See the figure below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle with a 52.4-degree angle at the left vertex, computed as angle alpha; the top-right vertex and bottom-right vertex are unlabeled. The left-to-bottom-right side is c = 18, the bottom-right-to-top-right side is a = 20, and the left-to-top-right side is b = 25.","unit":22,"polygons":[{"points":[[0,0],[18,0],[15.25,19.81]],"edgeLabels":["c = 18","a = 20","b = 25"],"vertexLabels":["α ≈ 52.4°",null,null]}]}
+{"ariaLabel":"An oblique triangle with angle alpha at the left vertex, angle beta at the bottom-right vertex, and angle gamma at the top vertex; an arc marks alpha as 52.4 degrees. The side from alpha to beta is c = 18, the side from beta to gamma is a = 20, and the side from alpha to gamma is b = 25.","unit":22,"polygons":[{"points":[[0,0],[18,0],[15.25,19.81]],"edgeLabels":["c = 18","a = 20","b = 25"],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[0,0],"r":2.5,"from":0,"to":52.41}],"texts":[{"at":[4.49,2.19],"text":"52.4°","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Analysis.** Because the inverse cosine can return any angle between $0$ and $180$ degrees, there will not be any ambiguous cases using this method.
 
 {{< fillin
-  question="Given $a=5$, $b=7$, and $c=10$, find the missing angles $\alpha$, $\beta$, and $\gamma$, in that order, each rounded to the nearest tenth of a degree."
+  question="Given $a=5$, $b=7$, and $c=10$, find the missing angles $\alpha$, $\beta$, and $\gamma$, in that order, each rounded to the nearest tenth of a degree. Enter the three measures, separated by commas."
   answer="27.7^\circ,40.5^\circ,111.8^\circ"
   answerForm="degrees"
   answerDisplay="$\alpha\approx27.7^\circ$, $\beta\approx40.5^\circ$, $\gamma\approx111.8^\circ$"
@@ -193,7 +193,7 @@ Just as the Law of Sines provided the appropriate equations to solve a number of
 **Solution.** For simplicity, we start by drawing a diagram similar to the figure below and labeling our given information.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A triangle formed by two cell towers 6,000 feet apart along a straight highway and a cell phone north of the highway: the angle theta at the left tower, the side from the left tower to the phone is 5,050 feet, and the side from the right tower to the phone is 2,420 feet.","unit":0.115,"polygons":[{"points":[[0,0],[6000,0],[4638.15,1997.5]],"edgeLabels":["6,000 ft","2,420 ft","5,050 ft"],"vertexLabels":["θ",null,null]}]}
+{"ariaLabel":"A triangle formed by two cell towers 6,000 feet apart along a straight highway and a cell phone north of the highway: tower 1 at the left vertex, tower 2 at the right vertex, and the phone at the top vertex. An arc marks the angle theta at tower 1; the side from tower 1 to the phone is 5,050 feet, and the side from tower 2 to the phone is 2,420 feet.","unit":0.115,"polygons":[{"points":[[0,0],[6000,0],[4637.175,1999.777]],"edgeLabels":["6,000 ft","2,420 ft","5,050 ft"],"vertexLabels":["Tower 1","Tower 2","Phone"]}],"circles":[{"at":[0,0],"r":900,"from":0,"to":23.33}],"texts":[{"at":[1322,274],"text":"θ","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Using the Law of Cosines, we can solve for the angle $\theta$. Remember that the Law of Cosines uses the square of one side to find the cosine of the opposite angle. For this example, let $a=2{,}420$, $b=5{,}050$, and $c=6{,}000$. Thus, $\theta$ corresponds to the opposite side $a=2{,}420$.
@@ -213,7 +213,7 @@ $$
 To answer the questions about the phone's position north and east of the tower, and the distance to the highway, drop a perpendicular from the position of the cell phone, as in the figure below. This forms two right triangles, although we only need the right triangle that includes the first tower for this problem.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle formed by dropping a perpendicular from the cell phone to the highway: the left tower is the left vertex with a 23.3-degree angle, the foot of the perpendicular is the right-angle vertex, the horizontal leg along the highway is x, the vertical leg up to the phone is y, and the hypotenuse from the tower to the phone is 5,050 feet.","unit":0.115,"polygons":[{"points":[[0,0],[4638.15,0],[4638.15,1997.5]],"edgeLabels":["x","y","5,050 ft"],"vertexLabels":["23.3°",null,null],"rightAngles":[1]}]}
+{"ariaLabel":"A right triangle formed by dropping a perpendicular from the cell phone to the highway: tower 1 is the left vertex, where an arc marks a 23.3-degree angle; the foot of the perpendicular is the right-angle vertex; the phone is the top vertex. The horizontal leg along the highway is x, the vertical leg up to the phone is y, and the hypotenuse from the tower to the phone is 5,050 feet.","unit":0.115,"polygons":[{"points":[[0,0],[4638.15,0],[4638.15,1997.5]],"edgeLabels":["x","y","5,050 ft"],"vertexLabels":["Tower 1",null,"Phone"],"rightAngles":[1]}],"circles":[{"at":[0,0],"r":900,"from":0,"to":23.3}],"texts":[{"at":[1665,343],"text":"23.3°","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Using the angle $\theta=23.3^\circ$ and the basic trigonometric identities, we can find the solutions. Thus
@@ -229,12 +229,12 @@ $$
 \end{array}
 $$
 
-The cell phone is approximately $4{,}638$ feet east and $1998$ feet north of the first tower, and $1998$ feet from the highway.
+The cell phone is approximately $4{,}638$ feet east and $1{,}998$ feet north of the first tower, and $1{,}998$ feet from the highway.
 
 **Example.** Returning to our problem at the beginning of this section, suppose a boat leaves port, travels $10$ miles, turns $20$ degrees, and travels another $8$ miles. How far from port is the boat? The diagram is repeated below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A triangle whose vertices are the port, the point where the boat turned, and the boat: the port-to-turn leg is 10 mi, the turn-to-boat leg is 8 mi, the port-to-turn leg is extended past the turn point as a dashed ray, and the angle between that dashed ray and the 8-mi leg is 20 degrees.","unit":26,"polygons":[{"points":[[0,0],[0,10],[-2.7362,17.5175]],"edgeLabels":["10 mi","8 mi",null],"vertexLabels":["Port",null,null]}],"segments":[{"from":[0,10],"to":[0,13],"dashed":true}],"texts":[{"at":[-0.78,14.29],"text":"20°","anchor":"middle"}]}
+{"ariaLabel":"A triangle whose vertices are the port, the point where the boat turned, and the boat: the port-to-turn leg is 10 mi, the turn-to-boat leg is 8 mi, and the port-to-boat side is dashed. The port-to-turn leg is extended past the turn point as a dashed ray, and an arc marks the 20-degree angle between that dashed ray and the 8-mi leg.","unit":26,"polygons":[{"points":[[0,0],[0,10],[-2.7362,17.5175]],"edgeLabels":["10 mi","8 mi",null],"vertexLabels":["Port",null,null],"dashedEdges":[2]}],"segments":[{"from":[0,10],"to":[0,12.6],"dashed":true}],"circles":[{"at":[0,10],"r":1.5,"from":90,"to":110}],"texts":[{"at":[0.3,11.25],"text":"20°","anchor":"start"}]}
 {{< /apfigure >}}
 
 **Solution.** The boat turned $20$ degrees, so the obtuse angle of the non-right triangle is the supplemental angle, $180^\circ-20^\circ=160^\circ$. With this, we can utilize the Law of Cosines to find the missing side of the obtuse triangle — the distance of the boat to the port.
@@ -382,7 +382,7 @@ The developer has about $711.4$ square meters.
 {{< multiplechoice
   question="If possible, solve the triangle for the unknown side $c$: $\beta=50^\circ$, $a=105$, $b=45$."
   answer="not possible"
-  hint="With $\beta$ opposite the given side $b$, the Law of Cosines $b^2=a^2+c^2-2ac\cos\beta$ is a quadratic in $c$; check whether its discriminant is negative."
+  hint="With $\beta$ opposite the given side $b$, the Law of Cosines $b^2=a^2+c^2-2ac\cos\beta$ is a quadratic in $c$; count how many positive real solutions it has."
 >}}
 two triangles
 not possible
@@ -392,7 +392,7 @@ exactly one triangle
 ### Solve applied problems using the Law of Cosines
 
 {{< fillin
-  question="A satellite calculates the distances and angle shown: two cities are $370$ km and $350$ km from the satellite, with an angle of $2.1^\circ$ between those two sightlines. Find the distance between the two cities. Round to the nearest tenth."
+  question="A satellite calculates these distances and this angle: two cities are $370$ km and $350$ km from the satellite, with an angle of $2.1^\circ$ between those two sightlines. Find the distance between the two cities. Round to the nearest tenth of a kilometer."
   answer="24.0"
   answerForm="decimal"
   answerDisplay="$24.0$ km"
@@ -443,4 +443,4 @@ exactly one triangle
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.2: Non-right Triangles: Law of Cosines](https://openstax.org/books/precalculus-2e/pages/8-2-non-right-triangles-law-of-cosines) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all instructional figures as accessible spec-first SVGs built from exact Law-of-Cosines/coordinate computations (never traced) — the opening boat triangle (repeated verbatim at Example 4, matching the source's own repetition); the coordinate-plane derivation triangle $ABC$ with its dashed altitude and $x-c$/$y$ legs; the standard $\alpha,\beta,\gamma$/$a,b,c$ labeling triangle; the two worked-example triangles (SAS and SSS); the cell-tower triangle and its right-triangle decomposition; the Heron's-formula example triangle labeled $A,B,C$; and the Chicago building-lot triangle, whose decorative angled-street-grid background (no primitive in this engine's figure spec draws city blocks) was simplified to a plain labeled triangle carrying the same three street names and frontages, since that information — not the map art — is what the problem uses. Omitted the decorative boat-hull, cell-tower, and antenna photo overlays, which carry no mathematics, and the "Access these online resources" media links. Every retained Try It became a real `fillin` component. Where a Try It's printed solution mixes units the grader cannot compose in one `answerForm` (a decimal side alongside two degree-valued angles), a single quantity was asked instead of the full solved triangle, following the same adaptation used in Section 8.1: the first Try It (originally $a\approx14.9$, $\beta\approx23.8^\circ$, $\gamma\approx126.2^\circ$) asks only for side $a$, because computing $\beta$ from a *rounded* $a=14.9$ grades $23.9^\circ$ — one tenth off the source's own $23.8^\circ$, which only the full-precision chain reproduces — so publishing $\beta$ as a second fillin here would have required pinning a rounded intermediate that does not actually match the printed key. The second Try It's three angles compose cleanly into one `answerForm="degrees"` list because each is solved directly from the original $a$, $b$, $c$ with its own Law of Cosines formula, with no chained rounding step between them. Every degree-valued answer is keyed with `answerForm="degrees"` alone (never composed with `decimal`, which self-rejects a trailing $^\circ$); every Heron's-formula area is a `decimal` fillin. The Practice item drawn from the "solve for the unknown side" exercise set with $\beta=50^\circ$, $a=105$, $b=45$ — whose Law of Cosines equation has no real solution for $c$ — is authored as a `multiplechoice` on the triangle count, since "not possible" is a categorical judgment, not a number. Adapted ten selected end-of-section exercises — four Algebraic (three Law of Cosines solves for a side or angle, one no-triangle recognition), three Real-World word problems, and three Heron's-formula area computations — into a closing Practice block, one group per objective, every answer independently re-derived by running the Law of Cosines and Heron's-formula arithmetic in Node rather than read off the source key. The area exercise with sides $18$ in, $21$ in, and $32$ in restates its own rounding instruction as "round to the nearest hundredth": the source's individual exercise text says "Round to the nearest tenth," contradicting both the surrounding exercise group's stated "Round to the nearest hundredth" and the source's own printed answer key of $177.56\ \text{in}^2$, which is precise to hundredths.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.2: Non-right Triangles: Law of Cosines](https://openstax.org/books/precalculus-2e/pages/8-2-non-right-triangles-law-of-cosines) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all instructional figures as accessible spec-first SVGs built from exact Law-of-Cosines/coordinate computations (never traced) — the opening boat triangle (repeated verbatim at Example 4, matching the source's own repetition); the coordinate-plane derivation triangle $ABC$ with its dashed altitude and $x-c$/$y$ legs; the standard $\alpha,\beta,\gamma$/$a,b,c$ labeling triangle; the two worked-example triangles (SAS and SSS); the cell-tower triangle and its right-triangle decomposition; the Heron's-formula example triangle labeled $A,B,C$; and the Chicago building-lot triangle, whose decorative angled-street-grid background (no primitive in this engine's figure spec draws city blocks) was simplified to a plain labeled triangle carrying the same three street names and frontages, since that information — not the map art — is what the problem uses. Omitted the decorative boat-hull, cell-tower, and antenna photo overlays, which carry no mathematics, and the "Access these online resources" media links. Every retained Try It became a real `fillin` component. Where a Try It's printed solution mixes units the grader cannot compose in one `answerForm` (a decimal side alongside two degree-valued angles), a single quantity was asked instead of the full solved triangle, following the same adaptation used in Section 8.1: the first Try It (originally $a\approx14.9$, $\beta\approx23.8^\circ$, $\gamma\approx126.2^\circ$) asks only for side $a$, because computing $\beta$ from a *rounded* $a=14.9$ grades $23.9^\circ$ — one tenth off the source's own $23.8^\circ$, which only the full-precision chain reproduces — so publishing $\beta$ as a second fillin here would have required pinning a rounded intermediate that does not actually match the printed key. The second Try It's three angles compose cleanly into one `answerForm="degrees"` list because each is solved directly from the original $a$, $b$, $c$ with its own Law of Cosines formula, with no chained rounding step between them. Every degree-valued answer is keyed with `answerForm="degrees"` alone (never composed with `decimal`, which self-rejects a trailing $^\circ$); every Heron's-formula area is a `decimal` fillin. The Practice item drawn from the "solve for the unknown side" exercise set with $\beta=50^\circ$, $a=105$, $b=45$ — whose Law of Cosines equation has no real solution for $c$ — is authored as a `multiplechoice` on the triangle count, since "not possible" is a categorical judgment, not a number. Adapted ten selected end-of-section exercises — four Algebraic (three Law of Cosines solves for a side or angle, one no-triangle recognition), three Real-World word problems, and three Heron's-formula area computations — into a closing Practice block, one group per objective, every answer independently re-derived by running the Law of Cosines and Heron's-formula arithmetic in Node rather than read off the source key. The area exercise with sides $18$ in, $21$ in, and $32$ in restates its own rounding instruction as "round to the nearest hundredth": the source's individual exercise text says "Round to the nearest tenth," contradicting both the surrounding exercise group's stated "Round to the nearest hundredth" and the source's own printed answer key of $177.56\ \text{in}^2$, which is precise to hundredths. The satellite exercise states its figure's two distances and angle in words, and the two-boat exercise omits its reference graph, whose speeds and headings the text already gives; where a source exercise gives no rounding instruction (the pilot and two-boat problems), the question names the rounding of the source's printed answer.</small>

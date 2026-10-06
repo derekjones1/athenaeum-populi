@@ -24,8 +24,8 @@ weight: 8
 
 An airplane is flying at an airspeed of $200$ miles per hour headed on a SE bearing of $140^\circ$. A north wind (blowing from north to south) is blowing at $16.2$ miles per hour, as shown below. What are the ground speed and actual bearing of the plane?
 
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"A vector diagram for an airplane's flight, not to scale: a north reference ray from point O through A, a 140-degree angle from north to the airspeed vector OC pointing southeast, the wind vector CB pointing due south from C, and the resultant ground-track vector OB, with the angle alpha between OC and OB.","xMin":-1.6,"xMax":4.6,"yMin":-5.2,"yMax":4.6,"grid":false,"tickLabels":false,"unit":52,"points":[{"at":[0,0],"label":"O"},{"at":[0,3.3],"label":"A"},{"at":[2.5712,-3.0642],"label":"C"},{"at":[2.5712,-4.3642],"label":"B"}],"segments":[{"from":[0,0],"to":[0,4],"arrows":"end"},{"from":[0,0],"to":[2.5712,-3.0642],"arrows":"end","label":"200","labelSide":"e"},{"from":[2.5712,-3.0642],"to":[2.5712,-4.3642],"arrows":"end","label":"16.2","labelSide":"e"},{"from":[0,0],"to":[2.5712,-4.3642],"arrows":"end","label":"x","labelSide":"w"}],"circles":[{"at":[0,0],"r":0.95,"from":-50,"to":90},{"at":[0,0],"r":0.5,"from":-59.5,"to":-50}],"texts":[{"at":[0.42,4.15],"text":"N"},{"at":[1.08,0.62],"text":"140°"},{"at":[1.61,-2.29],"text":"α"}]}
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A vector diagram for an airplane's flight, not to scale: a north reference ray from point O through A, a 140-degree angle from north to the airspeed vector OC of length 200 pointing southeast, the wind vector CB of length 16.2 pointing due south from C, and the resultant ground-track vector OB labeled x, with the angle alpha between OC and OB.","unit":52,"points":[{"at":[0,0]},{"at":[0,3.3]}],"segments":[{"from":[0,0],"to":[0,4],"arrow":true},{"from":[0,0],"to":[2.5712,-3.0642],"arrow":true,"label":"200"},{"from":[2.5712,-3.0642],"to":[2.5712,-4.3642],"arrow":true,"label":"16.2"},{"from":[0,0],"to":[2.5712,-4.3642],"arrow":true,"label":"x","labelSide":"right"}],"circles":[{"at":[0,0],"r":0.95,"from":-50,"to":90},{"at":[0,0],"r":2.2,"from":-59.5,"to":-50}],"texts":[{"at":[-0.2,-0.1],"text":"O","anchor":"end"},{"at":[-0.2,3.22],"text":"A","anchor":"end"},{"at":[0,4.3],"text":"N","anchor":"middle"},{"at":[2.78,-3.0],"text":"C"},{"at":[2.78,-4.5],"text":"B"},{"at":[1.27,0.42],"text":"140°"},{"at":[1.59,-2.25],"text":"α","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Ground speed refers to the speed of a plane relative to the ground. Airspeed refers to the speed a plane can travel relative to its surrounding air mass. These two quantities are not the same because of the effect of wind. In an earlier section, we used triangles to solve a similar problem involving the movement of boats. Later in this section, we will find the airplane's ground speed and bearing while investigating another approach to problems of this type. First, however, let's examine the basics of vectors.
@@ -50,7 +50,7 @@ $$
 In the figure below, we see the original vector $\overrightarrow{CD}$ and the position vector $\overrightarrow{AB}$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vector CD from a point (x1, y1) to a point (x2, y2), and its equivalent position vector AB from the origin to (a, b), both pointing the same direction with the same length.","xMin":-1,"xMax":8,"yMin":-1,"yMax":5,"grid":true,"tickLabels":true,"unit":45,"points":[{"at":[1,2],"label":"C(x₁, y₁)"},{"at":[7,4],"label":"D(x₂, y₂)"},{"at":[0,0],"label":"A"},{"at":[6,2],"label":"B(a, b)"}],"segments":[{"from":[1,2],"to":[7,4],"arrows":"end","label":"CD"},{"from":[0,0],"to":[6,2],"arrows":"end","label":"AB"}]}
+{"ariaLabel":"A vector CD from a point (x1, y1) to a point (x2, y2), and its equivalent position vector AB from the origin to (a, b), both pointing the same direction with the same length.","xMin":-1,"xMax":8,"yMin":-1,"yMax":5,"grid":true,"tickLabels":true,"unit":45,"points":[{"at":[2,2],"label":"C(x₁, y₁)","labelSide":"nw"},{"at":[7,4],"label":"D(x₂, y₂)"},{"at":[0,0],"label":"A"},{"at":[5,2],"label":"B(a, b)"}],"segments":[{"from":[2,2],"to":[7,4],"arrows":"end","label":"CD"},{"from":[0,0],"to":[5,2],"arrows":"end","label":"AB"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -71,7 +71,7 @@ $$
 The position vector begins at $(0,0)$ and terminates at $(4,1)$. The graphs of both vectors are shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vector from P(2, 3) to Q(6, 4), and its equivalent position vector from the origin to (4, 1).","xMin":-1,"xMax":8,"yMin":-2,"yMax":5,"grid":true,"tickLabels":true,"unit":45,"points":[{"at":[2,3],"label":"P(2, 3)"},{"at":[6,4],"label":"Q(6, 4)"}],"segments":[{"from":[2,3],"to":[6,4],"arrows":"end"},{"from":[0,0],"to":[4,1],"arrows":"end","label":"⟨4, 1⟩","labelSide":"e"}]}
+{"ariaLabel":"A vector from P(2, 3) to Q(6, 4), and its equivalent position vector from the origin to (4, 1).","xMin":-1,"xMax":8,"yMin":-2,"yMax":5,"grid":true,"tickLabels":true,"unit":45,"points":[{"at":[2,3],"label":"P(2, 3)"},{"at":[6,4],"label":"Q(6, 4)"}],"segments":[{"from":[2,3],"to":[6,4],"arrows":"end"},{"from":[0,0],"to":[4,1],"arrows":"end"}],"texts":[{"at":[4.2,0.85],"text":"⟨4, 1⟩"}]}
 {{< /apfigure >}}
 
 We see that the position vector is $\langle 4,1\rangle$.
@@ -90,14 +90,15 @@ $$
 Thus, the position vector begins at $(0,0)$ and terminates at $(7,3)$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vector from (-3, 2) to (4, 5), and its equivalent position vector from the origin to (7, 3).","xMin":-4,"xMax":8,"yMin":-2,"yMax":6,"grid":true,"tickLabels":true,"unit":40,"points":[{"at":[-3,2],"label":"(-3, 2)"},{"at":[4,5],"label":"(4, 5)"}],"segments":[{"from":[-3,2],"to":[4,5],"arrows":"end"},{"from":[0,0],"to":[7,3],"arrows":"end","label":"Position vector","labelSide":"e"}]}
+{"ariaLabel":"A vector from (-3, 2) to (4, 5), and its equivalent position vector from the origin to (7, 3).","xMin":-4,"xMax":8,"yMin":-2,"yMax":6,"grid":true,"tickLabels":true,"unit":40,"points":[{"at":[-3,2],"label":"(-3, 2)"},{"at":[4,5],"label":"(4, 5)"},{"at":[7,3],"label":"(7, 3)"}],"segments":[{"from":[-3,2],"to":[4,5],"arrows":"end"},{"from":[0,0],"to":[7,3],"arrows":"end","label":"Position vector","labelSide":"e"}],"yTickStep":2}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Write the vector from the origin to the point $(3,5)$ in terms of $i$ and $j$."
+  question="Write the vector from the origin to the point $(3,5)$ in terms of $i$ and $j$, writing $\langle a,b\rangle$ as $ai+bj$."
   answer="3i+5j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$3i+5j$"
-  hint="Since the vector begins at the origin, its component form uses the terminal point's coordinates as the coefficients of $i$ and $j$."
+  hint="Subtract the initial point's coordinates from the terminal point's to get the components, then write them as the coefficients of $i$ and $j$."
 >}}
 
 ### Finding Magnitude and Direction
@@ -111,7 +112,7 @@ To work with a vector, we need to be able to find its magnitude and its directio
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A position vector v extending from the origin to the point (a, b), with the direction angle theta marked between the vector and the positive x-axis.","xMin":-1,"xMax":5,"yMin":-1,"yMax":4,"grid":true,"tickLabels":true,"unit":55,"points":[{"at":[4,3],"label":"⟨a, b⟩"}],"segments":[{"from":[0,0],"to":[4,3],"arrows":"end","label":"v"}],"circles":[{"at":[0,0],"r":0.8,"from":0,"to":36.87}],"texts":[{"at":[0.95,0.36],"text":"θ"}]}
+{"ariaLabel":"A position vector v extending from the origin to the point (a, b), with the direction angle theta marked between the vector and the positive x-axis.","xMin":-1,"xMax":5,"yMin":-1,"yMax":3,"grid":true,"tickLabels":true,"unit":55,"points":[{"at":[4,2],"label":"⟨a, b⟩"}],"segments":[{"from":[0,0],"to":[4,2],"arrows":"end","label":"v"}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":26.57}],"texts":[{"at":[1.12,0.24],"text":"θ"}]}
 {{< /apfigure >}}
 
 **Example.** Find the magnitude and direction of the vector with initial point $P(-8,1)$ and terminal point $Q(-2,-5)$. Draw the vector.
@@ -147,7 +148,7 @@ $$
 However, the angle terminates in the fourth quadrant, so we add $360^\circ$ to obtain a positive angle. Thus, $-45^\circ+360^\circ=315^\circ$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A position vector u from the origin to (6, -6) in the fourth quadrant, with its direction angle of 315 degrees marked sweeping counterclockwise from the positive x-axis.","xMin":-3,"xMax":7.5,"yMin":-8,"yMax":2.6,"grid":true,"tickLabels":true,"unit":38,"points":[{"at":[6,-6],"label":"⟨6, -6⟩"}],"segments":[{"from":[0,0],"to":[6,-6],"arrows":"end","label":"|u| = 6√2","labelSide":"w"}],"circles":[{"at":[0,0],"r":1.9,"from":0,"to":315}],"texts":[{"at":[-1.15,2.15],"text":"315°"}]}
+{"ariaLabel":"A position vector u from the origin to (6, -6) in the fourth quadrant, with its direction angle of 315 degrees marked sweeping counterclockwise from the positive x-axis.","xMin":-3,"xMax":7.5,"yMin":-8,"yMax":2.6,"grid":true,"tickLabels":true,"unit":38,"points":[{"at":[6,-6],"label":"⟨6, -6⟩"}],"segments":[{"from":[0,0],"to":[6,-6],"arrows":"end","label":"|u| = 6√2","labelSide":"w"}],"circles":[{"at":[0,0],"r":0.5,"from":0,"to":315}],"texts":[{"at":[-1.1,0.7],"text":"315°","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Example.** Show that vector $\mathbf{v}$ with initial point at $(5,-3)$ and terminal point at $(-1,2)$ is equal to vector $\mathbf{u}$ with initial point at $(-1,-3)$ and terminal point at $(-7,2)$. Draw the position vector on the same grid as $\mathbf{v}$ and $\mathbf{u}$. Next, find the magnitude and direction of each vector.
@@ -204,7 +205,7 @@ $$
 However, we can see that the position vector terminates in the second quadrant, so we add $180^\circ$. Thus, the direction is $-39.8^\circ+180^\circ=140.2^\circ$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two equal vectors v and u drawn at different starting points but with the same length and direction, plus their shared position vector from the origin to (-6, 5), with its direction angle of 140.2 degrees marked from the positive x-axis.","xMin":-8,"xMax":5.5,"yMin":-4.5,"yMax":6.2,"grid":true,"tickLabels":true,"unit":36,"segments":[{"from":[5,-3],"to":[-1,2],"arrows":"end","label":"v"},{"from":[-1,-3],"to":[-7,2],"arrows":"end","label":"u"},{"from":[0,0],"to":[-6,5],"arrows":"end","label":"Position vector","labelSide":"w"}],"circles":[{"at":[0,0],"r":2.6,"from":0,"to":140.19}],"texts":[{"at":[1.19,3.29],"text":"140.2°"}]}
+{"ariaLabel":"Two equal vectors v and u drawn at different starting points but with the same length and direction, plus their shared position vector from the origin to (-6, 5), with its direction angle of 140.2 degrees marked from the positive x-axis.","xMin":-8,"xMax":5.5,"yMin":-4.5,"yMax":6.2,"grid":true,"tickLabels":"y","unit":36,"segments":[{"from":[5,-3],"to":[-1,2],"arrows":"end","label":"v"},{"from":[-1,-3],"to":[-7,2],"arrows":"end","label":"u"},{"from":[0,0],"to":[-6,5],"arrows":"end","label":"Position vector","labelSide":"w"},{"from":[-8,-0.0833],"to":[-8,0.0833]},{"from":[-7,-0.0833],"to":[-7,0.0833]},{"from":[-6,-0.0833],"to":[-6,0.0833]},{"from":[-5,-0.0833],"to":[-5,0.0833]},{"from":[-4,-0.0833],"to":[-4,0.0833]},{"from":[-3,-0.0833],"to":[-3,0.0833]},{"from":[-2,-0.0833],"to":[-2,0.0833]},{"from":[-1,-0.0833],"to":[-1,0.0833]},{"from":[1,-0.0833],"to":[1,0.0833]},{"from":[2,-0.0833],"to":[2,0.0833]},{"from":[3,-0.0833],"to":[3,0.0833]},{"from":[4,-0.0833],"to":[4,0.0833]},{"from":[5,-0.0833],"to":[5,0.0833]}],"points":[{"at":[-6,5],"label":"⟨−6, 5⟩","labelSide":"n"}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":140.19}],"texts":[{"at":[0.6,1.3],"text":"140.2°"},{"at":[-8,0],"text":"−8","anchor":"middle","dy":20,"fontSize":11.56},{"at":[-7,0],"text":"−7","anchor":"middle","dy":20,"fontSize":11.56},{"at":[-6,0],"text":"−6","anchor":"middle","dy":20,"fontSize":11.56},{"at":[-5,0],"text":"−5","anchor":"middle","dy":20,"fontSize":11.56},{"at":[-3,0],"text":"−3","anchor":"middle","dy":20,"fontSize":11.56},{"at":[-2,0],"text":"−2","anchor":"middle","dy":20,"fontSize":11.56},{"at":[-1,0],"text":"−1","anchor":"middle","dy":20,"fontSize":11.56},{"at":[1,0],"text":"1","anchor":"middle","dy":20,"fontSize":11.56},{"at":[3,0],"text":"3","anchor":"middle","dy":20,"fontSize":11.56},{"at":[4,0],"text":"4","anchor":"middle","dy":20,"fontSize":11.56},{"at":[5,0],"text":"5","anchor":"middle","dy":20,"fontSize":11.56}]}
 {{< /apfigure >}}
 
 ### Performing Vector Addition and Scalar Multiplication
@@ -214,13 +215,13 @@ Now that we understand the properties of vectors, we can perform operations invo
 To find $\mathbf{u}+\mathbf{v}$, we first draw the vector $\mathbf{u}$, and from the terminal end of $\mathbf{u}$, we draw the vector $\mathbf{v}$. In other words, we have the initial point of $\mathbf{v}$ meet the terminal end of $\mathbf{u}$. This position corresponds to the notion that we move along the first vector and then, from its terminal point, we move along the second vector. The sum $\mathbf{u}+\mathbf{v}$ is the resultant vector because it results from addition or subtraction of two vectors. The resultant vector travels directly from the beginning of $\mathbf{u}$ to the end of $\mathbf{v}$ in a straight path, as shown below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Two head-to-tail vector triangles. On the left, vector u followed by vector negative v, with the dashed resultant u minus v connecting the start of u to the tip of negative v. On the right, vector u followed by vector v, with the dashed resultant u plus v connecting the start of u to the tip of v.","unit":34,"segments":[{"from":[0,0],"to":[1.6,2.4],"arrow":true,"label":"u"},{"from":[1.6,2.4],"to":[3.4,-0.6],"arrow":true,"label":"−v"},{"from":[0,0],"to":[3.4,-0.6],"arrow":true,"dashed":true,"label":"u − v"},{"from":[6,0],"to":[7.6,2.4],"arrow":true,"label":"u"},{"from":[7.6,2.4],"to":[7,4.6],"arrow":true,"label":"v"},{"from":[6,0],"to":[7,4.6],"arrow":true,"dashed":true,"label":"u + v"}]}
+{"ariaLabel":"Two head-to-tail vector triangles. On the left, vector u followed by vector negative v, with the dashed resultant u minus v connecting the start of u to the tip of negative v. On the right, vector u followed by vector v, with the dashed resultant u plus v connecting the start of u to the tip of v.","unit":34,"segments":[{"from":[0,0],"to":[1.6,2.4],"arrow":true,"label":"u","labelSide":"right"},{"from":[1.6,2.4],"to":[-0.6,2.0],"arrow":true,"label":"−v","labelSide":"right"},{"from":[0,0],"to":[-0.6,2.0],"arrow":true,"dashed":true,"label":"u − v","labelSide":"left"},{"from":[6,0],"to":[7.6,2.4],"arrow":true,"label":"u","labelSide":"left"},{"from":[7.6,2.4],"to":[9.8,2.8],"arrow":true,"label":"v","labelSide":"left"},{"from":[6,0],"to":[9.8,2.8],"arrow":true,"dashed":true,"label":"u + v","labelSide":"right"}]}
 {{< /apfigure >}}
 
 Vector subtraction is similar to vector addition. To find $\mathbf{u}-\mathbf{v}$, view it as $\mathbf{u}+(-\mathbf{v})$. Adding $-\mathbf{v}$ is reversing the direction of $\mathbf{v}$ and adding it to the end of $\mathbf{u}$. The new vector begins at the start of $\mathbf{u}$ and stops at the end point of $-\mathbf{v}$. See the figure below for a visual that compares vector addition and vector subtraction using **parallelograms**.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Two parallelograms illustrating vector addition and subtraction. On the left, a parallelogram with sides u and v and diagonal u plus v. On the right, a parallelogram with sides u and negative v and diagonal u minus v.","unit":34,"polygons":[{"points":[[0,0],[3,0],[4,1.8],[1,1.8]],"edgeLabels":["u","v",null,null]},{"points":[[5,0],[8,0],[7,-1.8],[4,-1.8]],"edgeLabels":["u","−v",null,null]}],"segments":[{"from":[0,0],"to":[4,1.8],"arrow":true,"label":"u + v"},{"from":[4,-1.8],"to":[8,0],"arrow":true,"label":"u − v"}]}
+{"ariaLabel":"Two parallelograms built on the same vectors u and v. On the left, sides u and v drawn head to tail, with the diagonal u plus v running from the start of u to the tip of v. On the right, side u followed by side negative v, with the diagonal u minus v running from the start of u to the tip of negative v.","unit":40,"polygons":[{"points":[[0,0],[3,0],[4,1.8],[1,1.8]]},{"points":[[6,0],[9,0],[10,1.8],[7,1.8]]}],"segments":[{"from":[0,0],"to":[3,0],"arrow":true,"label":"u","labelSide":"right"},{"from":[3,0],"to":[4,1.8],"arrow":true,"label":"v","labelSide":"right"},{"from":[0,0],"to":[4,1.8],"arrow":true,"label":"u + v","labelSide":"left"},{"from":[7,1.8],"to":[10,1.8],"arrow":true,"label":"u","labelSide":"left"},{"from":[10,1.8],"to":[9,0],"arrow":true,"label":"−v","labelSide":"left"},{"from":[7,1.8],"to":[9,0],"arrow":true,"label":"u − v","labelSide":"right"}]}
 {{< /apfigure >}}
 
 **Example.** Given $\mathbf{u}=\langle 3,-2\rangle$ and $\mathbf{v}=\langle -1,4\rangle$, find two new vectors $\mathbf{u}+\mathbf{v}$ and $\mathbf{u}-\mathbf{v}$.
@@ -238,7 +239,7 @@ $$
 See figure (a) below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Vectors u and v drawn from the origin, with the dashed resultant u plus v equal to (2, 2).","xMin":-2,"xMax":4,"yMin":-3,"yMax":3,"grid":true,"tickLabels":true,"unit":55,"segments":[{"from":[0,0],"to":[3,-2],"arrows":"end","label":"u"},{"from":[0,0],"to":[-1,4],"arrows":"end","label":"v"},{"from":[0,0],"to":[2,2],"arrows":"end","dashed":true,"label":"u + v"}]}
+{"ariaLabel":"Vector u from the origin to (3, -2), vector v drawn from the tip of u to (2, 2), and the dashed resultant u plus v from the origin to (2, 2).","xMin":-1,"xMax":5,"yMin":-3,"yMax":3,"grid":true,"tickLabels":true,"unit":50,"segments":[{"from":[0,0],"to":[3,-2],"arrows":"end","label":"u","labelSide":"sw"},{"from":[3,-2],"to":[2,2],"arrows":"end"},{"from":[0,0],"to":[2,2],"arrows":"end","dashed":true,"label":"u + v","labelSide":"nw"}],"texts":[{"at":[2.6,1],"text":"v"}]}
 {{< /apfigure >}}
 
 *(a) Sum of two vectors.*
@@ -256,7 +257,7 @@ $$
 See figure (b) below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Vectors u and negative v drawn from the origin, with the dashed resultant u minus v equal to (4, -6).","xMin":-3,"xMax":5,"yMin":-7,"yMax":1,"grid":true,"tickLabels":true,"unit":42,"segments":[{"from":[0,0],"to":[3,-2],"arrows":"end","label":"u"},{"from":[0,0],"to":[1,-4],"arrows":"end","label":"−v","labelSide":"w","nudge":[-10,-14]},{"from":[0,0],"to":[4,-6],"arrows":"end","dashed":true,"label":"u − v","labelSide":"e"}]}
+{"ariaLabel":"Vector u from the origin to (3, -2), vector negative v drawn from the tip of u to (4, -6), and the dashed resultant u minus v from the origin to (4, -6).","xMin":-1,"xMax":5,"yMin":-7,"yMax":1,"grid":true,"tickLabels":true,"unit":42,"segments":[{"from":[0,0],"to":[3,-2],"arrows":"end","label":"u","labelSide":"ne"},{"from":[3,-2],"to":[4,-6],"arrows":"end","label":"−v","labelSide":"e"},{"from":[0,0],"to":[4,-6],"arrows":"end","dashed":true,"label":"u − v","labelSide":"w"}]}
 {{< /apfigure >}}
 
 *(b) Difference of two vectors.*
@@ -288,14 +289,15 @@ $$
 $$
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Four parallel vectors starting at separate points, showing scalar multiples of v: 3v is three times as long as v and points the same direction, one-half v is half as long and points the same direction, and negative v is the same length as v but points in the opposite direction.","unit":34,"segments":[{"from":[0,3],"to":[9,6],"arrow":true,"label":"3v"},{"from":[0,1.8],"to":[3,2.8],"arrow":true,"label":"v"},{"from":[0,0.8],"to":[1.5,1.3],"arrow":true,"label":"1/2 v"},{"from":[0,-0.3],"to":[-3,-1.3],"arrow":true,"label":"−v"}]}
+{"ariaLabel":"Four parallel vectors starting at separate points, showing scalar multiples of v: 3v is three times as long as v and points the same direction, one-half v is half as long and points the same direction, and negative v is the same length as v but points in the opposite direction.","unit":34,"points":[{"at":[0,4.5]},{"at":[0,3]},{"at":[0,1.5]},{"at":[0,0]}],"segments":[{"from":[0,4.5],"to":[9,7.5],"arrow":true,"label":"3v"},{"from":[0,3],"to":[3,4],"arrow":true,"label":"v"},{"from":[0,1.5],"to":[1.5,2],"arrow":true},{"from":[0,0],"to":[-3,-1],"arrow":true,"label":"−v"}],"texts":[{"at":[1.75,1.85],"text":"½v"}]}
 {{< /apfigure >}}
 
 **Analysis.** Notice that the vector $3\mathbf{v}$ is three times the length of $\mathbf{v}$, $\tfrac12\mathbf{v}$ is half the length of $\mathbf{v}$, and $-\mathbf{v}$ is the same length as $\mathbf{v}$, but in the opposite direction.
 
 {{< fillin
-  question="Find the scalar multiple $3\mathbf{u}$ given $\mathbf{u}=\langle 5,4\rangle$, and write the result in terms of $i$ and $j$."
+  question="Find the scalar multiple $3\mathbf{u}$ given $\mathbf{u}=\langle 5,4\rangle$, and write the result in terms of $i$ and $j$, writing $\langle a,b\rangle$ as $ai+bj$."
   answer="15i+12j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$15i+12j$"
   hint="Multiply each component of $\mathbf{u}$ by $3$, then write the result as a linear combination of $i$ and $j$."
 >}}
@@ -395,7 +397,7 @@ $$
 See the illustration below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The vector v from the origin to (4, 2), with its horizontal component v1 of (4, 0) and vertical component v2 of (0, 2).","xMin":-1,"xMax":5,"yMin":-1,"yMax":3,"grid":true,"tickLabels":true,"unit":65,"segments":[{"from":[0,0],"to":[4,0],"arrows":"end","label":"v₁ = ⟨4, 0⟩","labelSide":"n"},{"from":[0,0],"to":[0,2],"arrows":"end","label":"v₂ = ⟨0, 2⟩","labelSide":"w"},{"from":[0,0],"to":[4,2],"arrows":"end","label":"v"},{"from":[4,0],"to":[4,2],"dashed":true}]}
+{"ariaLabel":"The vector v from the origin to (4, 2), with its horizontal component v1 of (4, 0) and vertical component v2 of (0, 2).","xMin":-1,"xMax":5,"yMin":-1,"yMax":3,"grid":true,"tickLabels":true,"unit":65,"segments":[{"from":[0,0],"to":[4,0],"arrows":"end"},{"from":[0,0],"to":[0,2],"arrows":"end"},{"from":[0,0],"to":[4,2],"arrows":"end"},{"from":[4,0],"to":[4,2],"dashed":true},{"from":[0,2],"to":[4,2],"dashed":true}],"texts":[{"at":[3.05,0.22],"text":"v₁ = ⟨4, 0⟩","anchor":"middle"},{"at":[0.12,1.45],"text":"v₂ = ⟨0, 2⟩"},{"at":[2.1,1.3],"text":"v","anchor":"middle"}]}
 {{< /apfigure >}}
 
 The horizontal component is $\mathbf{v}_1=\langle 4,0\rangle$ and the vertical component is $\mathbf{v}_2=\langle 0,2\rangle$.
@@ -438,7 +440,7 @@ $$\frac{\mathbf{v}}{\lvert\mathbf{v}\rvert}=\left\langle -\tfrac{5}{13},\tfrac{1
 See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The vector v from the origin to (-5, 12), and the shorter unit vector in the same direction, ending at (-5/13, 12/13).","xMin":-8,"xMax":2,"yMin":-1,"yMax":14,"grid":true,"tickLabels":true,"unit":32,"segments":[{"from":[0,0],"to":[-5,12],"arrows":"end","label":"⟨-5, 12⟩"},{"from":[0,0],"to":[-0.3846,0.9231],"arrows":"end","label":"⟨-5/13, 12/13⟩"}]}
+{"ariaLabel":"The vector v from the origin to (-5, 12), and the shorter unit vector in the same direction, ending at (-5/13, 12/13).","xMin":-8,"xMax":2,"yMin":-1,"yMax":14,"grid":true,"tickLabels":true,"unit":32,"segments":[{"from":[0,0],"to":[-5,12],"arrows":"end","label":"⟨-5, 12⟩"},{"from":[0,0],"to":[-0.3846,0.9231],"arrows":"end","label":"⟨-5/13, 12/13⟩"}],"yTickStep":2}
 {{< /apfigure >}}
 
 Verify that the magnitude of the unit vector equals $1$. The magnitude of $-\tfrac{5}{13}i+\tfrac{12}{13}j$ is given as
@@ -497,6 +499,7 @@ $$
 {{< fillin
   question="Write the vector $\mathbf{u}$ with initial point $P=(-1,6)$ and terminal point $Q=(7,-5)$ in terms of $i$ and $j$."
   answer="8i-11j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$8i-11j$"
   hint="Subtract the $x$-coordinates for the coefficient of $i$, and subtract the $y$-coordinates for the coefficient of $j$."
 >}}
@@ -559,7 +562,7 @@ $$
 \end{array}
 $$
 
-This vector can be written as $\mathbf{v}=7\cos(135^\circ)+7\sin(135^\circ)$ or simplified as
+This vector can be written as $\mathbf{v}=7\cos(135^\circ)\,i+7\sin(135^\circ)\,j$ or simplified as
 
 $$\mathbf{v}=-\tfrac{7\sqrt2}{2}i+\tfrac{7\sqrt2}{2}j$$
 
@@ -658,12 +661,12 @@ $$
 See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two position vectors from the origin, one to (-3, 4) and one to (5, 12), with the 59.5-degree angle between them marked.","xMin":-5,"xMax":6,"yMin":-1,"yMax":13,"grid":true,"tickLabels":true,"unit":34,"points":[{"at":[-3,4],"label":"⟨-3, 4⟩"},{"at":[5,12],"label":"⟨5, 12⟩"}],"segments":[{"from":[0,0],"to":[-3,4],"arrows":"end"},{"from":[0,0],"to":[5,12],"arrows":"end"}],"circles":[{"at":[0,0],"r":2.1,"from":67.38,"to":126.87}],"texts":[{"at":[-1.6,2.3],"text":"59.5°"}]}
+{"ariaLabel":"Two position vectors from the origin, one to (-3, 4) and one to (5, 12), with the 59.5-degree angle between them marked.","xMin":-5,"xMax":6,"yMin":-1,"yMax":13,"grid":true,"tickLabels":true,"unit":34,"points":[{"at":[-3,4],"label":"⟨-3, 4⟩"},{"at":[5,12],"label":"⟨5, 12⟩"}],"segments":[{"from":[0,0],"to":[-3,4],"arrows":"end"},{"from":[0,0],"to":[5,12],"arrows":"end"}],"circles":[{"at":[0,0],"r":1.6,"from":67.38,"to":126.87}],"texts":[{"at":[-0.85,2.4],"text":"59.5°","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Example.** We now have the tools to solve the problem we introduced at the opening of the section.
 
-An airplane is flying at an airspeed of $200$ miles per hour headed on a SE bearing of $140^\circ$. A north wind (from north to south) is blowing at $16.2$ miles per hour. What are the ground speed and actual bearing of the plane? See the figure above.
+An airplane is flying at an airspeed of $200$ miles per hour headed on a SE bearing of $140^\circ$. A north wind (from north to south) is blowing at $16.2$ miles per hour. What are the ground speed and actual bearing of the plane? See the figure at the opening of the section.
 
 **Solution.** The ground speed is represented by $x$ in the diagram, and we need to find the angle $\alpha$ in order to calculate the adjusted bearing, which will be $140^\circ+\alpha$.
 
@@ -770,6 +773,7 @@ equal
 {{< fillin
   question="Given $\mathbf{u}=\langle -3,4\rangle$ and $\mathbf{v}=\langle -2,1\rangle$, find $\mathbf{u}+\mathbf{v}$ in terms of $i$ and $j$."
   answer="-5i+5j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-5i+5j$"
   hint="Add the corresponding components of $\mathbf{u}$ and $\mathbf{v}$."
 >}}
@@ -777,6 +781,7 @@ equal
 {{< fillin
   question="Given $\mathbf{u}=\langle -3,4\rangle$ and $\mathbf{v}=\langle -2,1\rangle$, find $\mathbf{u}-\mathbf{v}$ in terms of $i$ and $j$."
   answer="-i+3j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-i+3j$"
   hint="Subtract the corresponding components of $\mathbf{v}$ from $\mathbf{u}$."
 >}}
@@ -784,6 +789,7 @@ equal
 {{< fillin
   question="Given $\mathbf{u}=\langle -3,4\rangle$ and $\mathbf{v}=\langle -2,1\rangle$, find $2\mathbf{u}-3\mathbf{v}$ in terms of $i$ and $j$."
   answer="5j"
+  answerForm="no-like-terms"
   answerDisplay="$5j$"
   hint="Multiply each vector by its scalar first, then subtract the corresponding components."
 >}}
@@ -791,8 +797,9 @@ equal
 {{< fillin
   question="Let $\mathbf{v}=5i+2j$. Find a vector that is twice the length of $\mathbf{v}$ and points in the opposite direction."
   answer="-10i-4j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-10i-4j$"
-  hint="Multiply $\mathbf{v}$ by $-2$: doubling the length and negating the scalar reverses the direction."
+  hint="Choose the scalar whose size doubles the length and whose sign reverses the direction, then multiply each component of $\mathbf{v}$ by it."
 >}}
 
 ### Find the component form of a vector
@@ -800,6 +807,7 @@ equal
 {{< fillin
   question="Given a vector with initial point $(-4,2)$ and terminal point $(3,-3)$, find an equivalent vector whose initial point is $(0,0)$, and write the result in terms of $i$ and $j$."
   answer="7i-5j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$7i-5j$"
   hint="Subtract the $x$-coordinates for the coefficient of $i$, and subtract the $y$-coordinates for the coefficient of $j$."
 >}}
@@ -807,6 +815,7 @@ equal
 {{< fillin
   question="Given initial point $P_1=(4,-1)$ and terminal point $P_2=(-3,2)$, write the vector $\mathbf{v}$ in terms of $i$ and $j$."
   answer="-7i+3j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-7i+3j$"
   hint="Subtract the $x$-coordinates for the coefficient of $i$, and subtract the $y$-coordinates for the coefficient of $j$."
 >}}
@@ -814,15 +823,17 @@ equal
 ### Find the unit vector in the direction of $v$
 
 {{< fillin
-  question="Find a unit vector in the same direction as $\mathbf{b}=-2i+5j$."
+  question="Find a unit vector in the same direction as $\mathbf{b}=-2i+5j$. Enter each coefficient exactly, with a rational denominator."
   answer="-\frac{2\sqrt{29}}{29}i+\frac{5\sqrt{29}}{29}j"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-\tfrac{2\sqrt{29}}{29}i+\tfrac{5\sqrt{29}}{29}j$"
   hint="Divide each component of $\mathbf{b}$ by its magnitude, $\lvert\mathbf{b}\rvert=\sqrt{(-2)^2+5^2}$."
 >}}
 
 {{< fillin
-  question="Find a unit vector in the same direction as $\mathbf{d}=-\tfrac13 i+\tfrac52 j$."
+  question="Find a unit vector in the same direction as $\mathbf{d}=-\tfrac13 i+\tfrac52 j$. Enter each coefficient exactly, with a rational denominator."
   answer="-\frac{2\sqrt{229}}{229}i+\frac{15\sqrt{229}}{229}j"
+  answerForm="expanded simplified-radical no-like-terms"
   answerDisplay="$-\tfrac{2\sqrt{229}}{229}i+\tfrac{15\sqrt{229}}{229}j$"
   hint="Divide each component of $\mathbf{d}$ by its magnitude, $\lvert\mathbf{d}\rvert=\sqrt{\left(-\tfrac13\right)^2+\left(\tfrac52\right)^2}$."
 >}}
@@ -832,6 +843,7 @@ equal
 {{< fillin
   question="For $\mathbf{u}=i+5j$, $\mathbf{v}=-2i-3j$, and $\mathbf{w}=4i-j$, find $4\mathbf{v}+2\mathbf{u}$."
   answer="-6i-2j"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-6i-2j$"
   hint="Scale each vector by its coefficient first, then add the corresponding components."
 >}}
@@ -839,6 +851,7 @@ equal
 {{< fillin
   question="A vector has magnitude $6$ and direction angle $\theta=45^\circ$ in standard position. Write the vector in component form using $i$ and $j$."
   answer="3\sqrt{2}i+3\sqrt{2}j"
+  answerForm="expanded simplified-radical no-like-terms evaluated-trig"
   answerDisplay="$3\sqrt2\,i+3\sqrt2\,j$"
   hint="Use $x=\lvert\mathbf{v}\rvert\cos\theta$ and $y=\lvert\mathbf{v}\rvert\sin\theta$."
 >}}
@@ -848,6 +861,7 @@ equal
 {{< fillin
   question="Given $\mathbf{u}=-i-j$ and $\mathbf{v}=i+5j$, calculate $\mathbf{u}\cdot\mathbf{v}$."
   answer="-6"
+  answerForm="decimal"
   answerDisplay="$-6$"
   hint="Multiply the corresponding $i$-coefficients, multiply the corresponding $j$-coefficients, then add the two products."
 >}}
@@ -855,10 +869,11 @@ equal
 {{< fillin
   question="Given $\mathbf{u}=\langle -1,6\rangle$ and $\mathbf{v}=\langle 6,-1\rangle$, calculate $\mathbf{u}\cdot\mathbf{v}$."
   answer="-12"
+  answerForm="decimal"
   answerDisplay="$-12$"
   hint="Multiply the corresponding horizontal components, multiply the corresponding vertical components, then add the two products."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.8: Vectors](https://openstax.org/books/precalculus-2e/pages/8-8-vectors) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative airplane clip-art overlaid on the source's opening and Example-17 figures, keeping only the instructional vector triangle; the source repeats that triangle verbatim as two separate figures (the opener and Example 17's), so this page consolidates them into the one figure that opens the section, and Example 17 refers back to "the figure above" instead of redrawing an identical copy — the not-to-scale opener/Example-17 diagram exaggerates the drawn length of the $16.2$ mph wind vector relative to the $200$ mph airspeed vector for label legibility, matching the source's own schematic (non-scaled) rendering, and both angle labels ($140^\circ$ and $\alpha$) and every distance label are reproduced from the exact recomputed geometry. Recreated every other instructional figure as an accessible spec-first SVG — both head-to-tail addition/subtraction triangles, both addition/subtraction parallelograms, the four parallel scalar-multiple vectors, and every position-vector diagram — plotted from the exact printed coordinates and angles, independently recomputed rather than eyeballed from the source art. **The grader cannot take `\langle a,b\rangle` as a submitted answer**, so — following the source's own $i,j$ notation — every vector-valued Try It and Practice answer is keyed in bare $i,j$ unit-vector form (never `\mathbf{i}`/`\mathbf{j}`, which MathLive cannot type), with the question reworded to ask "in terms of $i$ and $j$" wherever the source's own wording asked for component form $\langle a,b\rangle$; prose and worked examples keep the source's $\langle a,b\rangle$ notation throughout, since KaTeX renders it and only submitted answers are affected. The source's own "find the magnitude and direction" prompts were split into two fillins per exercise (magnitude, then direction), because the two quantities need different `answerForm` tokens that cannot both apply to one comma-separated answer. **A grader defect surfaced while composing these:** the documented `answerForm="degrees decimal"` composition self-rejects its own keyed answer against the current grader (confirmed directly, and reproducible right now against this book's own shipped 8.1 page, which fails `verify-section` on that exact combination) — `degrees` alone already accepts a decimal-headed angle, so every decimal-degree answer here declares `answerForm="degrees"` alone (a tooling defect, not authored around silently). Try It 1 ("draw a vector from the origin to $(3,5)$") and Try It 4 ("write the vector in terms of magnitude and direction") were recast as real graded fillins — the first asks for the vector in $i,j$ form, the second is split into a magnitude fillin (`exact-radical`) and a direction-angle fillin (`degrees`, range stated) — since a magnitude-and-direction restatement is otherwise retype-passable against the source's own polar-form key. **A confirmed upstream defect corrected in place:** Example 9's closing sentence prints the unit vector's $i$-coefficient as $\tfrac{5}{13}$ (positive), contradicting its own immediately-preceding computation of $-\tfrac{5}{13}i+\tfrac{12}{13}j$ and the fact that $\mathbf{v}=\langle -5,12\rangle$ terminates in Quadrant II; corrected to $-\tfrac{5}{13}i+\tfrac{12}{13}j$ with a visible source note. Fourteen selected end-of-section exercises were adapted into interactive Practice components, one group per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key; the two "are these vectors equal" exercises became multiple-choice, since a categorical equal/not-equal claim has no free-response answer.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.8: Vectors](https://openstax.org/books/precalculus-2e/pages/8-8-vectors) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative airplane clip-art overlaid on the source's opening and Example-17 figures, keeping only the instructional vector triangle; the source repeats that triangle verbatim as two separate figures (the opener and Example 17's), so this page consolidates them into the one figure that opens the section, and Example 17 refers back to "the figure at the opening of the section" instead of redrawing an identical copy; that diagram is drawn without coordinate axes, as the source's is, and, not to scale, it exaggerates the drawn length of the $16.2$ mph wind vector relative to the $200$ mph airspeed vector for label legibility, matching the source's own schematic (non-scaled) rendering, and both angle labels ($140^\circ$ and $\alpha$) and every distance label are reproduced from the exact recomputed geometry. Recreated every other instructional figure as an accessible spec-first SVG — both head-to-tail addition/subtraction triangles, both addition/subtraction parallelograms, the four parallel scalar-multiple vectors, and every position-vector diagram — plotted from the exact printed coordinates and angles, independently recomputed rather than eyeballed from the source art. The schematic triangles and parallelograms are drawn on one fixed pair $\mathbf{u}$, $\mathbf{v}$ in both panels (the source's two panels use differently shaped vectors), and the generic position-vector figures keep the source's plotted points ($C(2,2)$, $D(7,4)$, $B(5,2)$; $\langle a,b\rangle$ at $(4,2)$). **The grader cannot take `\langle a,b\rangle` as a submitted answer**, so — following the source's own $i,j$ notation — every vector-valued Try It and Practice answer is keyed in bare $i,j$ unit-vector form (never `\mathbf{i}`/`\mathbf{j}`, which MathLive cannot type), with the question reworded to ask "in terms of $i$ and $j$" wherever the source's own wording asked for component form $\langle a,b\rangle$; prose and worked examples keep the source's $\langle a,b\rangle$ notation throughout, since KaTeX renders it and only submitted answers are affected. The source's own "find the magnitude and direction" prompts were split into two fillins per exercise (magnitude, then direction), because the two quantities need different `answerForm` tokens that cannot both apply to one comma-separated answer. The two Try Its that come before $i$ and $j$ are introduced say in the question how to write $\langle a,b\rangle$ as $ai+bj$; every vector answer must be entered with its components worked out and combined, and each unit-vector answer with rational denominators, as the source's keys print them. Try It 1 ("draw a vector from the origin to $(3,5)$") and Try It 4 ("write the vector in terms of magnitude and direction") were recast as real graded fillins — the first asks for the vector in $i,j$ form, the second is split into a magnitude fillin (`exact-radical`) and a direction-angle fillin (`degrees`, range stated) — since a magnitude-and-direction restatement is otherwise retype-passable against the source's own polar-form key. **Upstream defects corrected in place:** Example 3's first step prints a stray comma inside the subtraction ($\langle -2,-(-8),-5-1\rangle$), written here as $\langle -2-(-8),-5-1\rangle$; Example 13 writes the vector as $7\cos(135^\circ)+7\sin(135^\circ)$, dropping $i$ and $j$, restored here as $7\cos(135^\circ)\,i+7\sin(135^\circ)\,j$; and Example 9's closing sentence prints the unit vector's $i$-coefficient as $\tfrac{5}{13}$ (positive), contradicting its own immediately-preceding computation of $-\tfrac{5}{13}i+\tfrac{12}{13}j$ and the fact that $\mathbf{v}=\langle -5,12\rangle$ terminates in Quadrant II; corrected to $-\tfrac{5}{13}i+\tfrac{12}{13}j$ with a visible source note. Fourteen selected end-of-section exercises were adapted into interactive Practice components, one group per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key; the two "are these vectors equal" exercises became multiple-choice, since a categorical equal/not-equal claim has no free-response answer.</small>

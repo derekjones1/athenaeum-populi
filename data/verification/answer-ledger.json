@@ -460,10 +460,6 @@
     "result": "agrees"
    }
   },
-  "011f0daba70e20ba": {
-   "verdict": "ok",
-   "note": "Practice P3 (x(t)=-sqrt t, y(t)=t): eliminated t=y, x=-sqrt(y) so x<=0, y=x^2; independently derived left-half-upward-parabola vertex at origin, matches source solution alt-text 'left half of an upward opening parabola'. Arrow direction (toward more negative x as t increases) confirmed since x=-sqrt(t) decreases monotonically as t increases."
-  },
   "0126adff95a31dfc": {
    "verdict": "ok",
    "note": "Inverse annuity: goal=10000,r=1+0.042/12,n=24; solved a1=goal*(1-r)/(1-r^n)=400.14 (node), rounds to nearest dollar 400; matches CNXML fs-id1165135191500 solution ($400 per month)."
@@ -790,10 +786,6 @@
     "result": "agrees"
    }
   },
-  "01b895f145f3c48b": {
-   "verdict": "ok",
-   "note": "#11 (fs-id1668430, multiplechoice): cos6t+cos4t=2cos((6t+4t)/2)cos((6t-4t)/2)=2cos(5t)cos(t); confirmed numerically at t=0.61, matches CNXML solution 2cos5t cost. Distractors 2sin5t sint, cos5t cost, 2cos5t sint confirmed numerically distinct."
-  },
   "01ba71d17b455417": {
    "verdict": "ok"
   },
@@ -1008,10 +1000,6 @@
     "result": "agrees"
    }
   },
-  "02506bddb9ce9dc3": {
-   "verdict": "ok",
-   "note": "tan(pi/2-x)=sin(pi/2-x)/cos(pi/2-x)=cosx/sinx=cotx; confirmed by numeric sampling of x; same retype hazard as the sec item, hence multiplechoice."
-  },
   "025454edbc4d53a2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1045,6 +1033,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "02717d7d6bb8bffa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): fs-id2170891 (CNXML solution: sec x). tan(x)sin(x)+sec(x)cos^2(x) = sin^2x/cos x + cos x = (sin^2x+cos^2x)/cos x = sec x; confirmed numerically at x=1 (1.8508157176809257 vs sec(1)=1.8508157176809255).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -1243,6 +1239,10 @@
   "02dba036bfe6b13b": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "02dc61240c980534": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=3\\cos(2\\theta)$. What is the nam) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "02dd20e55a8d9d48": {
    "verdict": "ok",
@@ -1677,6 +1677,10 @@
    "verdict": "ok",
    "note": "focus (0,7/2) form (0,p) -> x^2=4py; 4p=4(7/2)=14 -> x^2=14y; matches source TI3 exactly."
   },
+  "03ed70cf36502927": {
+   "verdict": "ok",
+   "note": "Point plot 2i = (0,2); no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "03f1340f128d22bb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1713,10 +1717,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "03ffda337f4fa123": {
-   "verdict": "ok",
-   "note": "sin(x-3pi/4)=sinx cos(3pi/4)-cosx sin(3pi/4) = -sqrt2/2 sinx - sqrt2/2 cosx; confirmed by numeric sampling at x=0.4,1.2,-0.9 (agree to 1e-12)."
   },
   "040981b3d85d1e82": {
    "verdict": "ok",
@@ -1942,6 +1942,10 @@
   "04a40aae2c243b30": {
    "verdict": "ok",
    "note": "parent re-derived: in lim_{x->2} f(x)=16,807 the function whose limit is taken is f(x)=(3x+1)^5 (the key formerly named only the base 3x+1); (3(2)+1)^5=7^5=16807 checked in node."
+  },
+  "04a7e266919e5841": {
+   "verdict": "ok",
+   "note": "Dart hits ground: independently solved -16t^2+(64 sin52deg)t=0 for the positive root via node -e: t = 64*sin(52 deg)/16 = 3.152... rounds to 3.2, matches source printed answer 'approximately 3.2 seconds' exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "04a85ef4bb66ad68": {
    "verdict": "ok",
@@ -2598,6 +2602,10 @@
     "result": "agrees"
    }
   },
+  "06203e265d0130ea": {
+   "verdict": "ok",
+   "note": "node: r=sqrt(16+4)=sqrt(20)=2*sqrt(5)=4.4721; theta=atan2(2,4)=0.46365 rad, rounded 0.464. Matches CNXML solution (2*sqrt(5), 0.464) exactly (Section Exercises, (4,2)). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "06249e7dbd47df7b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -2756,6 +2764,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "06c82e9d565055da": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r^2=10\\cos(2\\theta)$. What is the ) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "06c95001f21f3ab7": {
    "verdict": "ok",
@@ -2999,10 +3011,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "073616ae5c2e1e41": {
-   "verdict": "ok",
-   "note": "sinα=-4/5,QIV ⇒ cosα=3/5 (positive, QIV). α/2 is in QII (since 270°<α<360° ⇒ 135°<α/2<180°), so cosine is negative: cos(α/2)=-√((1-3/5)/2)=-√(1/5)=-2/√5 (node-checked, matches source's -2/√5)."
   },
   "073b88f36cea4edb": {
    "verdict": "ok",
@@ -3513,10 +3521,6 @@
     "result": "agrees"
    }
   },
-  "0889e3214cee1342": {
-   "verdict": "ok",
-   "note": "parent: r=sqrt8=2sqrt2, theta=7pi/8 and 15pi/8"
-  },
   "0894d833ae21cb08": {
    "verdict": "ok"
   },
@@ -4010,10 +4014,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "09f2970f5809a2a6": {
-   "verdict": "ok",
-   "note": "Figure triangle base 12 / height 5 / hyp 13; α is opposite the base (12) and adjacent to the height (5): sinα=12/13, cosα=5/13. sin2α=120/169, cos2α=-119/169, tan2α=-120/119 (node-checked; the negative cos2α is correct since α>45°)."
   },
   "09f75e2e6733c711": {
    "verdict": "ok",
@@ -5073,10 +5073,6 @@
     "result": "agrees"
    }
   },
-  "0cc0d41bc5530cf5": {
-   "verdict": "ok",
-   "note": "TI2: sin(x+y)cos(x-y)=(1/2)[sin((x+y)+(x-y))+sin((x+y)-(x-y))]=(1/2)(sin2x+sin2y); matches CNXML solution and product-to-sum formula, structurally derived."
-  },
   "0cc3be4cb66e3e8e": {
    "verdict": "ok",
    "note": "KC 4 16.3 § Contact Transmission (fs-id1167659050093), m58873",
@@ -5400,10 +5396,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "0d79c849c4a081df": {
-   "verdict": "ok",
-   "note": "cofunction: pi/2-pi/7 = 9pi/14-2pi/14 = 5pi/14, so sin(pi/7)=cos(5pi/14); confirmed sin(pi/7) numerically equals cos(5pi/14); distractors are plausible-but-wrong cofunction arithmetic."
   },
   "0d7df2d49e6ad9d8": {
    "verdict": "ok"
@@ -6271,9 +6263,9 @@
     "result": "agrees"
    }
   },
-  "0f84671a35feb23a": {
+  "0f848c36be0f7e25": {
    "verdict": "ok",
-   "note": "(tan(3x/2)-tan(7x/5))/(1+tan(3x/2)tan(7x/5)) = tan(3x/2-7x/5) = tan(x/10) since 3/2-7/5=15/10-14/10=1/10; confirmed by numeric sampling at x=0.3,1.1,-0.7 (agree to 1e-6, tan near-singular so looser tolerance)."
+   "note": "tan(2pi/3+pi/4)=tan(165deg); Math.tan vs (1-sqrt3)/(1+sqrt3) agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "0f86298905df26ad": {
    "verdict": "ok",
@@ -6296,6 +6288,14 @@
    "note": "source exercise fs-idp51619296 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0f8e6fbe6d5b00f5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: 120*sin(3.2 deg)/sin(80 deg)=6.802->6.8; question pins source rounded chain (errata 55)",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -6491,10 +6491,6 @@
     "by": "fable-solver (blind, masked pages)",
     "result": "agrees"
    }
-  },
-  "0ffefae3a544454f": {
-   "verdict": "ok",
-   "note": "x=6cos45=3sqrt2, y=6sin45=3sqrt2. node -e 6*Math.cos(45deg)=4.2426=3*Math.sqrt(2), matches source's own answer 3sqrt2 i+3sqrt2 j."
   },
   "1007569d7420115c": {
    "verdict": "ok",
@@ -6985,10 +6981,6 @@
     "result": "agrees"
    }
   },
-  "117600dfa0117fac": {
-   "verdict": "ok",
-   "note": "Practice: x=4t-1,y=4t+2 -> t=(x+1)/4, y=(x+1)+2=x+3; node-verified residual ~0 over t=-2..5; matches CNXML solution."
-  },
   "1178a8ec185fae61": {
    "verdict": "ok"
   },
@@ -7332,6 +7324,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1241e6e0fe9332fb": {
+   "verdict": "ok",
+   "note": "4*Math.cos(7pi/6)=-3.4641016151377553=-2*sqrt(3); 4*Math.sin(7pi/6)=-1.999999999999999=-2. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "1249958cc3f433b2": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662444785 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -7459,6 +7455,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "12a30b5de5f005fd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): x=2cos t, y=-sin t: cos t=x/2, sin t=-y, cos^2+sin^2=1 gives x^2/4+y^2=1, verified numerically via node -e sampling six t values (all satisfy the equation to floating-point precision). Matches source solution alt-text 'a horizontal ellipse'. Not a retype hazard; self-grades correct and an alternate \\frac spelling also grades correct.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -8567,6 +8571,14 @@
     "result": "agrees"
    }
   },
+  "1531d350f3450ed9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1533e372b2606767": {
    "verdict": "ok",
    "note": "g(x)={sqrt(x),0<=x<4; 2x,x>=4}. left-limit at 4 = sqrt(4)=2; right-limit = 2*4=8. Both exist, unequal -> jump discontinuity. Matches source Try It 1(b) solution."
@@ -8814,10 +8826,6 @@
     "result": "agrees"
    }
   },
-  "15d3b5241dae34c7": {
-   "verdict": "ok",
-   "note": "Try It ti_07_01_04 (CNXML source): 25-9sin^2(t) = (5-3sin t)(5+3sin t), a difference of squares; confirmed numerically at t=1 (18.62733923553786 both sides)."
-  },
   "15dbd53cdf19c768": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8890,6 +8898,14 @@
    "note": "body cloze from § Epigenetic Control: Regulating Access to Genes within the Chromosome: \"Some chemical groups (phosphate, methyl, or acetyl groups) are attached to specific amino acids in histone \"tails\" at the N-terminus of the…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "15f6d0bf3e51e9d7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): #9 (fs-id2698945): sin(-x)sin(5x)=-sin(x)sin(5x)=-(1/2)[cos4x-cos6x]=(1/2)cos6x-(1/2)cos4x; confirmed numerically at x=0.77, matches CNXML solution (1/2)(cos6x-cos4x).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -9531,6 +9547,14 @@
   "174b8d3b5450a72f": {
    "verdict": "ok",
    "note": "Body selfcheck — model answer is the module's own sentence on why polyclonal antisera bind multiple epitopes, making lattice formation more likely. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "174c0e30c76cf2ae": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): sec(pi/2-theta)=1/cos(pi/2-theta)=1/sin(theta)=csc(theta); confirmed by numeric sampling of theta; retyping the printed subject grades correct against the key (checked with checkAnswer), which is why this is multiplechoice rather than fillin.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "1755853a740126f1": {
    "verdict": "ok",
@@ -10311,10 +10335,6 @@
     "result": "agrees"
    }
   },
-  "192972eac5ba2369": {
-   "verdict": "ok",
-   "note": "(3-(-4), -3-2) = (7,-5) -> 7i-5j. Node-verified, matches source's own <7,-5> answer restated in i,j form."
-  },
   "192989a6bac88579": {
    "verdict": "ok",
    "note": "author-built from § Nutritional Requirements: \"Non-selective media support the growth of all microorganisms without any specific inhibition.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -10675,10 +10695,6 @@
   "1a155634a968f8d6": {
    "verdict": "ok",
    "note": "directrix y=4>0,e=3/2 → ep=6 → r=6/(1+1.5sinθ) = 12/(2+3sinθ); matches Algebraic exercise fs-id2900253."
-  },
-  "1a1cd001b138c3a4": {
-   "verdict": "ok",
-   "note": "Try It ti_07_01_05 (CNXML source): cos(t)/(1+sin t) = (1-sin t)/cos t, proved by multiplying by (1-sin t)/(1-sin t) and using 1-sin^2t=cos^2t; confirmed numerically at t=1 (0.2934079930260234 both sides). Distractors (1+sin t)/cos t, (sin t-1)/cos t, (1-sin t)/sin t all confirmed numerically distinct."
   },
   "1a1d198c7f1211ab": {
    "verdict": "ok",
@@ -11329,6 +11345,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1b82dcf0b7550457": {
+   "verdict": "ok",
+   "note": "node: 5*cos(pi)=-5, 5*sin(pi)=0 -> (-5,0). Matches CNXML solution exactly (Section Exercises, (5,pi)). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "1b8c084d50ab2223": {
    "verdict": "ok",
    "note": "m58796 § Gammaproteobacteria: Pseudomonaceae, Pasteurellaceae, and Enterobacteriaceae are all named families."
@@ -11654,6 +11674,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1c364479dbf3a682": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It 2 (SSS, a=5,b=7,c=10): each angle via cos^-1((s1^2+s2^2-opp^2)/(2 s1 s2)) directly from a,b,c -> alpha=27.66, beta=40.54, gamma=111.80 (sum 180.00); rounds to 27.7,40.5,111.8 deg, matches source, no chain (each independent).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "1c384cc028c40078": {
    "verdict": "ok",
    "note": "source multiplechoice: exercise fs-idp212979968 (Review Question), source options in source order, source solution key D = 'ecosystem ecology'; question corrects the source's own typo 'though' to 'through' (confirmed by grep against the raw CNXML: 'The study of nutrient cycling though the environment') — reported as a source defect in the footer, key unaffected. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -11705,6 +11733,14 @@
   "1c531c82724cabe0": {
    "verdict": "ok",
    "note": "Vertex (0,20) opens down, x^2=4p(y-20); edge (50,0): 2500=4p(-20) -> 4p=-125 -> x^2=-125(y-20); matches source exercise fs-id2085442's key exactly."
+  },
+  "1c5cebac538d3e6e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Same figure triangle as fs-id2148715 (sinα=12/13, cosα=5/13); α is acute so α/2 is in quadrant I (all positive). sin(α/2)=√((1-5/13)/2)=2√13/13, cos(α/2)=√((1+5/13)/2)=3√13/13, tan(α/2)=sinα/(1+cosα)=2/3 (node-checked against all three source values).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "1c66537deeab2538": {
    "verdict": "ok",
@@ -12314,10 +12350,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "1dfc3bce25c76c9c": {
-   "verdict": "ok",
-   "note": "node: -3*cos(pi/6)=-2.598076..=-3*sqrt(3)/2, -3*sin(pi/6)=-1.5. Matches CNXML solution (-3*sqrt(3)/2, -3/2) exactly (Section Exercises, (-3,pi/6))."
   },
   "1dfcba5ca8147589": {
    "verdict": "ok",
@@ -13438,11 +13470,27 @@
     "result": "agrees"
    }
   },
+  "20bfce6b549a6aa8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): h(t)=8sin(6*pi*t): amplitude 8, period 2*pi/(6*pi)=1/3. Matches source exercise #29 solution (amplitude 8, period 1/3, freq 3 Hz; asked only for amplitude+period per this section's objective wording).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "20c6126c43323b48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "20d1316578c62d66": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): acos(-0.2)=1.772154->1.7722, 2pi-1.772154=4.511031->4.5110 (node), period 2pi; representatives in [0,2pi) as pinned. Parent re-derivation after edit.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -13608,6 +13656,18 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "214949e8b3a81cfd": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which type of curve is $r=3-2\\cos\\theta$?) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "21505e198b0c599d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2cos^2(theta)+cos(theta)=0 -> cos(theta)(2cos(theta)+1)=0 -> cos theta=0 (pi/2,3pi/2) or cos theta=-1/2 (2pi/3,4pi/3) on [0,2pi); domain added to match source's own key and the surrounding examples' convention (source Try It omits an explicit interval).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "2152d185b0e0236a": {
    "verdict": "ok",
    "solved": {
@@ -13749,6 +13809,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "21c05248c167be6d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): TI4 (adapted to multiplechoice): sin(3θ)+sinθ=2sin((3θ+θ)/2)cos((3θ-θ)/2)=2sin(2θ)cos(θ), matches CNXML. Distractors 2cos(2θ)sin(θ), sin(2θ)cos(θ), 2sin(2θ)sin(θ) confirmed numerically distinct from the correct value and each other at θ=0.7.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -14486,17 +14554,9 @@
   "23f423034e794498": {
    "verdict": "ok"
   },
-  "23f61ad00c8acda1": {
-   "verdict": "ok",
-   "note": "Same figure triangle as fs-id2148715 (sinα=12/13, cosα=5/13); α is acute so α/2 is in quadrant I (all positive). sin(α/2)=√((1-5/13)/2)=2√13/13, cos(α/2)=√((1+5/13)/2)=3√13/13, tan(α/2)=sinα/(1+cosα)=2/3 (node-checked against all three source values)."
-  },
   "23fb12fb247bc85e": {
    "verdict": "ok",
    "note": "Domain of log(x-5)+2: solve x-5>0 -> x>5 -> (5,inf). Matches CNXML ti_04_04_02 solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "23fe758360ec4755": {
-   "verdict": "ok",
-   "note": "tan(pi-theta) = (tan pi - tan theta)/(1+tan pi tan theta) = -tan theta since tan pi=0; confirmed by numeric sampling of theta."
   },
   "2404bb3fefc70214": {
    "verdict": "ok",
@@ -14597,10 +14657,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "244c6fcc144b3b49": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which symmetries does the graph of $r=3\\cos\\theta$ exhibit?)"
   },
   "24502c995aba0f58": {
    "verdict": "ok",
@@ -14820,6 +14876,14 @@
     "result": "agrees"
    }
   },
+  "24e4c98f8a09689c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): tan^2x-sqrt3 tan x=0 -> tan x(tan x-sqrt3)=0 -> tan x=0 (0,pi) or tan x=sqrt3 (pi/3,4pi/3); union sorted matches source key.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "24efec805deabf21": {
    "verdict": "ok",
    "note": "KC 4 20.1 § Clinical Uses of Polyclonal Antisera, m58900",
@@ -14868,14 +14932,6 @@
     "result": "agrees"
    }
   },
-  "24fe207bcd72af5e": {
-   "verdict": "ok",
-   "note": "cos(x+2pi/3)=cosx cos(2pi/3)-sinx sin(2pi/3) = -1/2 cosx - (sqrt3/2) sinx; confirmed by numeric sampling at x=0.4,1.2,-0.9 (agree to 1e-12)."
-  },
-  "2500b1e3bae79ca7": {
-   "verdict": "ok",
-   "note": "cos(105deg)=cos(45+60); Math.cos(105 deg in rad) vs (sqrt2-sqrt6)/4 agree to 1e-12."
-  },
   "250da66ddf537ea4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -14887,6 +14943,10 @@
   "2514e6ace930a242": {
    "verdict": "ok",
    "note": "causative-agent challenges, model+checks from Etiology's first paragraph, multi-sentence | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "25162b5c57ecd7e3": {
+   "verdict": "ok",
+   "note": "cos(105deg)=cos(45+60); Math.cos(105 deg in rad) vs (sqrt2-sqrt6)/4 agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2522743abb5b7191": {
    "verdict": "ok",
@@ -15219,6 +15279,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "25d1f98dd92d81cc": {
+   "verdict": "ok",
+   "note": "TryIt3 (source ti_08_01_02, alpha=80,a=100,b=10): sin(beta)=b*sin(alpha)/a=0.09849 -> beta=5.6517 (only acute solution valid, since 180-alpha-beta2 would be negative); gamma=94.3483; c=a*sin(gamma)/sin(alpha)=101.250 -> 101.3. Matches CNXML solution c approx 101.3. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "25d3b5cce21e564a": {
    "verdict": "ok",
@@ -15588,10 +15652,6 @@
     "result": "agrees"
    }
   },
-  "26cc0e23638634f3": {
-   "verdict": "ok",
-   "note": "sinα=5/8,QI: cosα=√39/8; cos(2α)=1-2sin²α=1-2(25/64)=7/32 (node-checked)."
-  },
   "26d0e11413801413": {
    "verdict": "ok",
    "note": "body cloze from § Evidence for Global Climate Change: \"Antarctic ice cores have been collected and analyzed to indirectly estimate the temperature of the Earth over the past 400,000 years ( a).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -15864,6 +15924,10 @@
     "result": "agrees"
    }
   },
+  "278c87c7252db5f8": {
+   "verdict": "ok",
+   "note": "u.v = (-1)(6)+(6)(-1) = -12. Node-verified, matches source's own answer. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "278dfe0413da3254": {
    "verdict": "ok"
   },
@@ -15872,6 +15936,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2792d0756e32e0cb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2cos(3theta)=-sqrt2 -> cos(3theta)=-sqrt2/2 -> 3theta=3pi/4+2k*pi or 5pi/4+2k*pi -> theta=pi/4+2k*pi/3 or 5pi/12+2k*pi/3; k=0,1,2 reproduces the six printed values (3pi/12=pi/4, kept unreduced as printed in the source key).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -16689,6 +16761,14 @@
     "result": "agrees"
    }
   },
+  "29deb2ea6c1006e3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): a=17, 17*r^3=13 -> r=(13/17)^(1/3)=0.914460..., rounds to 0.9145; omega=2*pi*14=28*pi. D(t)=17(0.9145)^t cos(28 pi t), numerically confirmed 17*0.9145^3~=13.0002 (rounding tolerance). Matches source exercise #39 solution.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "29e007bc47c31d80": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16753,10 +16833,6 @@
     "result": "agrees"
    }
   },
-  "2a1150fe441d83c3": {
-   "verdict": "ok",
-   "note": "sin²xcos²x=(sinxcosx)²=(1/2 sin2x)²=1/4 sin²2x=1/4·(1-cos4x)/2=(1-cos4x)/8; confirmed numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader."
-  },
   "2a189c2fedf902bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16772,6 +16848,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2a38c050e1224d0a": {
+   "verdict": "ok",
+   "note": "parent: r=21/3=7, theta=135-65=70 | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2a3aea2e88c90670": {
    "verdict": "ok",
@@ -16845,6 +16925,14 @@
    "note": "author-built from § Other Factors Affecting Gene Expression in Prokaryotes and Eukaryotes: \"In eukaryotes, an enhancer is a DNA sequence that promotes transcription.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2a649a55f6a60e45": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): cos^3t=cost -> cost(cos^2t-1)=0 -> cost=0 (pi/2,3pi/2) or cos^2t=1 i.e. sint=0 (0,pi); union matches source key.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -17874,6 +17962,14 @@
     "result": "agrees"
    }
   },
+  "2d1187d185fd3cb0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2sin(3theta)=1 -> sin(3theta)=1/2 -> 3theta=pi/6+2k*pi or 5pi/6+2k*pi -> theta=pi/18+2k*pi/3 or 5pi/18+2k*pi/3; k=0,1,2 for each family on [0,2pi) reproduces all six printed values exactly (hand-derived and cross-checked).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "2d1f8ca22c9c9344": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17890,11 +17986,23 @@
     "result": "agrees"
    }
   },
+  "2d22bc6ff9c2bb10": {
+   "verdict": "ok",
+   "note": "|12-5i| = sqrt(12^2+5^2) = sqrt(169) = 13. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "2d2d938c801809e5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2d2e4307c40aa948": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Varies 47-63F, avg(55) first at t=10 rising -> T(t)=8sin(pi/12*(t-10))+55; solved T(t)=51 numerically over [0,24): roots at t=0 and t=8; first time AFTER midnight is t=8. Matches source exercise #19 solution (8 a.m.).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -18289,9 +18397,13 @@
     "result": "agrees"
    }
   },
-  "2e21e8d1e6f7df6c": {
+  "2e25abd781b297d9": {
    "verdict": "ok",
-   "note": "Vector from origin to (3,5) is trivially (3,5); i,j form is 3i+5j."
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): No damping, raised 5cm (max at t=0 -> cosine), first returns to highest position after one full period T=1/3s -> omega=2*pi/(1/3)=6*pi; y=5cos(6*pi t). Matches CNXML Try It solution.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "2e293cf6ff092077": {
    "verdict": "ok",
@@ -18361,10 +18473,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "2e4fe741c2c81ff3": {
-   "verdict": "ok",
-   "note": "TI5 (adapted from verify-identity to simplify-to-single-function): tanθcotθ-cos²θ = (sinθ/cosθ)(cosθ/sinθ)-cos²θ = 1-cos²θ = sin²θ, matches CNXML's own worked steps for this Try It."
   },
   "2e50bbc2bf8d7109": {
    "verdict": "ok",
@@ -18498,10 +18606,6 @@
     "result": "agrees"
    }
   },
-  "2ea3ce806461124f": {
-   "verdict": "ok",
-   "note": "Varies 47-63F, avg(55) first at t=10 rising -> T(t)=8sin(pi/12*(t-10))+55; solved T(t)=51 numerically over [0,24): roots at t=0 and t=8; first time AFTER midnight is t=8. Matches source exercise #19 solution (8 a.m.)."
-  },
   "2ea9c7ad130cdc34": {
    "verdict": "ok",
    "note": "glossary textin: 'conspecifics' = individuals that are members of the same species (glossary fs-idp359775280); accept 'conspecific' is the singular adjective form the body text itself uses ('conspecific interactions'). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -18616,6 +18720,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2ef225b0bf7774f8": {
+   "verdict": "ok",
+   "note": "fs-id2641075 (CNXML solution: 1/sin x). (sec x+csc x)/(1+tan x): numerator=(sin x+cos x)/(sin x cos x), denominator=(cos x+sin x)/cos x, quotient=1/sin x; confirmed numerically at x=1 (1.188395105778121 vs 1/sin(1)=1.1883951057781212). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "2ef519a253294dcb": {
    "verdict": "ok",
@@ -19093,6 +19201,10 @@
    "verdict": "ok",
    "note": "parent: option order rotated for position balance; answer re-derived earlier in this session (conic type from A,C / discriminant; rotation effect; theta from cot 2theta) — Identify the graph of the nondegenerate conic section $16y^2"
   },
+  "3015e2013d310ceb": {
+   "verdict": "ok",
+   "note": "node: r=sqrt(9+25)=sqrt(34)=5.8310; theta=atan2(-5,3)=-1.0304, +2pi=5.2528, rounded 5.253. Matches CNXML solution (sqrt(34), 5.253) exactly (Section Exercises, (3,-5)). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "301aebc7fad43f75": {
    "verdict": "ok",
    "note": "glossary recall: keystone species (fs-idp73678640) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -19495,10 +19607,6 @@
    "verdict": "ok",
    "note": "sum of logs -> log8(5*13*x*y)=log8(65xy); key p1316 #27"
   },
-  "31656d71a9dd9286": {
-   "verdict": "ok",
-   "note": "3cosθ=0 → θ=π/2 is the smallest nonnegative solution; independently solved."
-  },
   "3168384394445ddb": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -19590,6 +19698,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "31a9ccbe4de5adb8": {
+   "verdict": "ok",
+   "note": "Practice: line through (-1,0) at t=0 and (3,-2) at t=1 -> x(t)=-1+4t,y(t)=-2t by linear interpolation; matches CNXML solution exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "31ae2a28929deed7": {
    "verdict": "ok",
@@ -19846,10 +19958,6 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 550): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
-  "3236049fa1c11d91": {
-   "verdict": "ok",
-   "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3"
-  },
   "3238ab8112f60379": {
    "verdict": "ok",
    "note": "m66722 critical-thinking exercise fs-idp19557504. Model answer is the source solution verbatim (lightly split into two sentences, no new claims): morphological similarities can be superficial rather than evolutionary, and similar traits can evolve independently for similar ecological reasons (convergent evolution). Rubric checkpoints are the solution's own two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -20038,10 +20146,6 @@
     "result": "agrees"
    }
   },
-  "32c34c4b02836713": {
-   "verdict": "ok",
-   "note": "r of sqrt3+i: Math.sqrt(3+1)=2."
-  },
   "32c550f75f81e1d5": {
    "verdict": "ok",
    "note": "MC, Review Question fs-id1957993 (\"The energy currency used by cells is ________.\"); keyed option A \"ATP\" matches the source solution and the section's own \"energy currency\" language. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -20175,6 +20279,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "333241f0766618f3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: r=5sqrt2/sqrt2=5, theta=pi-2pi/3=pi/3",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -20346,6 +20458,14 @@
    "verdict": "ok",
    "note": "KC 2 8.3 § body The Energy Flow (fs-idp23524720), m66475 — parent re-read against the module"
   },
+  "33a1c8428ff01fe8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC on Graphical #23 (r=7+4sinθ, CNXML fs-id1165134575414, printed solution 'one-loop/dimpled limaçon', a=7,b=4,1<a/b<2): correct option (index 2 after reorder) is the exact r=7+4sinθ sampled polyline, opening upward with a shallow dimple, independently re-verified via svgshot against the sign-flip (opens down), axis-swap (opens right), and family (a=7,b=9, inner-loop) distractors.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "33ac0d480af55bfb": {
    "verdict": "ok",
    "note": "body Visual Connection selfcheck; model answer is CNXML solution fs-idp18899936 (m66479) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -20493,6 +20613,10 @@
     "result": "agrees"
    }
   },
+  "340686db692510b8": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Sketch the graph of $r=4\\sin(2\\theta)$. What type of curve i) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "3408990238eda601": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20560,6 +20684,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3442eaf5f404b66a": {
+   "verdict": "ok",
+   "note": "parent: 3^2=9, 120*2=240 (De Moivre) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "34430ed455735df9": {
    "verdict": "ok",
@@ -20724,6 +20852,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "34a5e84be389806c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Independently derived: x=-1*cos(2pi/3)=0.5, y=-1*sin(2pi/3)=-0.8660 -> (1/2,-sqrt3/2). Matches CNXML solution exactly. Replayed through check-answer.mjs: self-grades correct, no retype hazard.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "34ac13ee82cfe379": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20779,6 +20915,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "34d78fb8340fe04c": {
+   "verdict": "ok",
+   "note": "u = <7-(-1), -5-6> = <8,-11> -> 8i-11j; node -e confirmed (7-(-1),-5-6)=(8,-11). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "34e74182c5b0fc4f": {
    "verdict": "ok",
@@ -21004,6 +21144,14 @@
     "result": "agrees"
    }
   },
+  "355cca96e0d5422d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): theta of sqrt3+i: Math.atan2(1,Math.sqrt(3))=0.5235987755982989=pi/6.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "355db894c9243dda": {
    "verdict": "ok",
    "note": "CNXML fs-idp52114640 solution transcribed verbatim as model answer."
@@ -21134,10 +21282,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "35adcfc3b11469d7": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (If possible, solve the triangle for the unknown side $c$: $\\)"
   },
   "35af7217c579491c": {
    "verdict": "ok",
@@ -21523,10 +21667,6 @@
    "verdict": "ok",
    "note": "Axis of symmetry x=h=1 for f(x)=x^2-2x. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "36b0b87c256d017b": {
-   "verdict": "ok",
-   "note": "y=3sin(3x) first max for x>0: 3x=pi/2 -> x=pi/6, y=3, matching the source's own five-key-point table (pi/6, 3)."
-  },
   "36b37678d04fb0a1": {
    "verdict": "ok"
   },
@@ -21714,10 +21854,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "372687a4f59cb4d5": {
-   "verdict": "ok",
-   "note": "fs-id1812346 (CNXML solution: False). (tan x/sec x)sin(-x) = sin(x)*(-sin x) = -sin^2 x, not cos^2 x; confirmed numerically at x=1 (-0.7080734182735713 vs cos^2(1)=0.2919265817264289, not equal)."
   },
   "372738559559a4e9": {
    "verdict": "ok",
@@ -22063,10 +22199,6 @@
   "3809365dc27126b7": {
    "verdict": "ok",
    "note": "KC 7 40.4 § How Blood Flows Through the Body, m66654 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the capillary flow-rate paragraph, Section 40.4)"
-  },
-  "380ee7b78dbb49f3": {
-   "verdict": "ok",
-   "note": "quotient: r=2sqrt3/2=sqrt3, angle=150-30=120; node: sqrt3*Math.cos(2pi/3)=-0.866...=-sqrt3/2, sqrt3*Math.sin(2pi/3)=1.5=3/2."
   },
   "3812bf755c115bad": {
    "verdict": "ok",
@@ -22679,10 +22811,6 @@
     "result": "agrees"
    }
   },
-  "39c958c528de66c4": {
-   "verdict": "ok",
-   "note": "2 sin theta=sqrt3 -> sin theta=sqrt3/2 -> theta=pi/3,2pi/3 on [0,2pi); standard."
-  },
   "39ccabd74234a416": {
    "verdict": "ok",
    "note": "KC 2 12.4 § Mechanisms and Risks of Gene Therapy, m58851 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -22977,10 +23105,6 @@
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Without rotating axes, identify the conic for $10x^2-9xy+4y^"
   },
-  "3a62e46ef33a8d29": {
-   "verdict": "ok",
-   "note": "acos(-0.2)=1.772154->1.7722, 2pi-1.772154=4.511031->4.5110 (node), period 2pi; representatives in [0,2pi) as pinned. Parent re-derivation after edit."
-  },
   "3a6b769e56f2871a": {
    "verdict": "ok",
    "note": "m66554 exercise fs-idp237302288 (Review Q2): keyed option B 'mixotrophs' matches the CNXML solution and the Metabolism paragraph's own definition (photoautotrophic or heterotrophic routes). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -23173,6 +23297,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3adfe3c30d79b059": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: x=2sin t,y=4cos t traces tall ellipse x^2/4+y^2/16=1 CW from (0,4); keyed option verified by checker render pass, distractor ariaLabel corrected to match its own drawn geometry",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -23512,6 +23644,14 @@
     "result": "agrees"
    }
   },
+  "3be7e926645c1037": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): r=3-2cosθ: minimized cosθ=-1 at θ=π gives r=3-2(-1)=5, maximum |r|; point (5,π), independently re-derived (node: 3-2*Math.cos(Math.PI)=5).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "3be87a597caaf7b0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23525,6 +23665,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3bf03ec8993126f5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): sinα=-4/5,QIV ⇒ cosα=3/5 (positive, QIV). α/2 is in QII (since 270°<α<360° ⇒ 135°<α/2<180°), so cosine is negative: cos(α/2)=-√((1-3/5)/2)=-√(1/5)=-2/√5 (node-checked, matches source's -2/√5).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -24250,6 +24398,14 @@
     "result": "agrees"
    }
   },
+  "3e06750a6bd3ddd3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): r=-θ at θ=4π gives r=-4π exactly; independently substituted.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "3e0c616561a83746": {
    "verdict": "ok",
    "note": "KC 3 14.6 § The Kirby-Bauer Disk Diffusion Test (Micro Connection: Antibiograms), m58864",
@@ -24322,6 +24478,14 @@
    "note": "glossary recall: hypha (fs-idm44074976) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3e302e0a0a132ac4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): sinα=5/8,QI: cosα=√39/8; cos(2α)=1-2sin²α=1-2(25/64)=7/32 (node-checked).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -24701,9 +24865,13 @@
    "verdict": "ok",
    "note": "selfcheck for unkeyed SA fs-id1167661744113; module never connects treatment duration specifically to resistance, so model answer states only the general resistance-accelerating factors and the TB incorrect-use sentence, per the 'module gives what it gives and stops' policy. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "3ef77c57dbe22690": {
+  "3ef72b592451a1ca": {
    "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $xy=4$ represent?)"
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): tan(pi-theta) = (tan pi - tan theta)/(1+tan pi tan theta) = -tan theta since tan pi=0; confirmed by numeric sampling of theta.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "3efe71bcabebfe9e": {
    "verdict": "ok",
@@ -25011,10 +25179,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "3fa795b045b59794": {
-   "verdict": "ok",
-   "note": "TI4 (adapted to multiplechoice): sin(3θ)+sinθ=2sin((3θ+θ)/2)cos((3θ-θ)/2)=2sin(2θ)cos(θ), matches CNXML. Distractors 2cos(2θ)sin(θ), sin(2θ)cos(θ), 2sin(2θ)sin(θ) confirmed numerically distinct from the correct value and each other at θ=0.7."
   },
   "3fa7ce32cf4dbd1e": {
    "verdict": "ok",
@@ -25483,10 +25647,6 @@
     "result": "agrees"
    }
   },
-  "40cfe5f1450edbf2": {
-   "verdict": "ok",
-   "note": "2cos^2(theta)+cos(theta)=0 -> cos(theta)(2cos(theta)+1)=0 -> cos theta=0 (pi/2,3pi/2) or cos theta=-1/2 (2pi/3,4pi/3) on [0,2pi); domain added to match source's own key and the surrounding examples' convention (source Try It omits an explicit interval)."
-  },
   "40d286520f37952b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -25537,6 +25697,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "40ebe166eded446a": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (If possible, solve the triangle for the unknown side $c$: $\\) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "40ed02d0f6a182b7": {
    "verdict": "ok",
@@ -25638,6 +25802,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "41278da48f15f390": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC: correct option is the exact r=3cos(3θ) sampled polyline (3 petals, index 0 after reorder — verified visually via svgshot: 3-petal rose vs distractors 4-petal (n confusion), rotated 3-petal (cos vs sin), and shorter 3-petal (a=2 not 3)); matches source's printed answer image and the 'Rose curve, n odd' text.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -25991,10 +26163,6 @@
     "result": "agrees"
    }
   },
-  "41fb0502605c304e": {
-   "verdict": "ok",
-   "note": "Table (0,-4)(3,-1)(6,2)(9,-1)(12,-4)(15,-1)(18,2): amplitude (2-(-4))/2=3, midline (2+(-4))/2=-1, period 12 -> B=pi/6, minimum at x=0 -> -cos form. y=-3cos(pi/6 x)-1 numerically checked against all 7 table points (matches source exercise #5 solution)."
-  },
   "4206da86c4965a8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -26003,10 +26171,6 @@
     "result": "agrees"
    }
   },
-  "4207298ce14972e0": {
-   "verdict": "ok",
-   "note": "TI1: cos(2θ)cos(4θ)=(1/2)[cos(2θ-4θ)+cos(2θ+4θ)]=(1/2)(cosθ2θ+cos6θ); derived independently and confirmed numerically to 1e-9 (node), matches CNXML solution (1/2)(cos6θ+cos2θ)."
-  },
   "420dc59dd1d783fe": {
    "verdict": "ok",
    "note": "KC 3 16.6 § The Initiation Complex and Translation Rate, m66508 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -26014,6 +26178,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "420f39ee6fd3fdca": {
+   "verdict": "ok",
+   "note": "u-v = (-3-(-2), 4-1) = (-1,3) -> -i+3j. Node-verified. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "4222fcf71a9c6b4b": {
    "verdict": "ok",
@@ -28279,9 +28447,9 @@
     "result": "agrees"
    }
   },
-  "47fa86319cfbc583": {
+  "47faaf7c77f0fb2d": {
    "verdict": "ok",
-   "note": "node: 5*cos(pi)=-5, 5*sin(pi)=0 -> (-5,0). Matches CNXML solution exactly (Section Exercises, (5,pi))."
+   "note": "fs-id2427617 (CNXML solution: True, with proof shown). 3sin^2(theta)+4cos^2(theta) = 3(sin^2+cos^2)+cos^2 = 3+cos^2(theta); confirmed numerically at theta=1 (3.291926581726429 both sides). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "47fd9868dea68e8d": {
    "verdict": "ok",
@@ -28806,6 +28974,14 @@
    "note": "KC 1 2.1 § Atomic Number and Mass, m66430 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4977601cb9e581b1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: r=sqrt8=2sqrt2, theta=7pi/8 and 15pi/8",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -29557,9 +29733,13 @@
    "verdict": "ok",
    "note": "Practice: fourth term (r=3) of (3x-2y)^5 = C(5,3)*(3x)^2*(-2y)^3, BigInt computation = -720x^2y^3; matches CNXML exercise fs-id1165137696650."
   },
-  "4b760ef4ebde2fa6": {
+  "4b79b786b3c54110": {
    "verdict": "ok",
-   "note": "No damping, raised 5cm (max at t=0 -> cosine), first returns to highest position after one full period T=1/3s -> omega=2*pi/(1/3)=6*pi; y=5cos(6*pi t). Matches CNXML Try It solution."
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 3cosθ=0 → θ=π/2 is the smallest nonnegative solution; independently solved.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "4b81134c5378f7ed": {
    "verdict": "ok",
@@ -30971,10 +31151,6 @@
     "result": "agrees"
    }
   },
-  "4f199cd041dee368": {
-   "verdict": "ok",
-   "note": "u-v = (-3-(-2), 4-1) = (-1,3) -> -i+3j. Node-verified."
-  },
   "4f1cd448869360f3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31103,10 +31279,6 @@
    "verdict": "ok",
    "note": "both slopes 1/3, intercepts differ -> parallel; key p1279 #13"
   },
-  "4f7847d87ae2ccc9": {
-   "verdict": "ok",
-   "note": "2 cos theta=-sqrt2 -> cos theta=-sqrt2/2 -> theta=3pi/4,5pi/4 on [0,2pi); standard."
-  },
   "4f817b6a4e8dba3f": {
    "verdict": "ok"
   },
@@ -31213,6 +31385,14 @@
     "result": "agrees"
    }
   },
+  "4fb4f36c946cf8ab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (For the following exercise, assume $\\alpha$ is opposite side)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "4fb5620d4bd254f7": {
    "verdict": "ok",
    "note": "source exercise fs-idp69205744 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -31264,10 +31444,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "4fd9337df961abe4": {
-   "verdict": "ok",
-   "note": "A=(40-24)/2=8, D=(40+24)/2=32, B=2pi/24=pi/12; high pinned to 6 PM by the question (added clause, disclosed in footer): 8*sin(pi/12*6)+32=40 (node). Parent re-derivation after sign-pinning edit."
   },
   "4fde6ed64b473131": {
    "verdict": "ok",
@@ -31653,10 +31829,6 @@
   "50cb231e38c3277c": {
    "verdict": "ok"
   },
-  "50dbe225c630d2df": {
-   "verdict": "ok",
-   "note": "#27 (fs-id1507419): sin76°+sin14°=2sin45°cos31°=2*(√2/2)*cos31°=√2cos(31°); confirmed numerically, matches CNXML solution √2 cos(31°)."
-  },
   "50df19bcf9a33d2d": {
    "verdict": "ok"
   },
@@ -31727,10 +31899,6 @@
     "result": "adjudicated",
     "note": "accept gap: the glossary keys \"species dispersion pattern\" and the section also says \"dispersion pattern\"; accept widened"
    }
-  },
-  "512378c741ad30fb": {
-   "verdict": "ok",
-   "note": "asin(0.27)=0.273393->0.2734, pi-0.273393=2.868200->2.8682 (node), period 2pi. Parent re-derivation after edit."
   },
   "5126c6f6b2d05cc5": {
    "verdict": "ok",
@@ -31970,6 +32138,14 @@
   "51ca45588026bfa1": {
    "verdict": "ok",
    "note": "period of csc x equals period of sin x = 2pi; matches source's printed solution to the analogous verbal exercise. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "51d14df458ab5c65": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): a=10, decays 15%/s -> r=0.85, oscillates 18/s -> omega=2*pi*18=36*pi. D(t)=10(0.85)^t cos(36 pi t). Matches source exercise #37 solution.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "51d266111679a09e": {
    "verdict": "ok",
@@ -32939,6 +33115,10 @@
    "verdict": "ok",
    "note": "m66709 fs-idm2997248 (Critical Thinking): source solution reused verbatim as the model answer; four checkpoints decompose its four clauses (unsustainable resource use -> habitat destruction; unsustainable fishing/hunting; fossil fuels -> global warming) with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "547b050bda0e2258": {
+   "verdict": "ok",
+   "note": "4v+2u = (4*-2+2*1, 4*-3+2*5) = (-6,-2) -> -6i-2j. Node-verified, matches source's own answer. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "54812071ab2ba67d": {
    "verdict": "ok"
   },
@@ -33150,6 +33330,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "551bfcb4cb7381c1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): cosθ max=1 at θ=0, so r=3(1)=3 at θ=0; max point (3,0), independently re-derived.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -33765,6 +33953,10 @@
     "result": "agrees"
    }
   },
+  "56ea3c65d12c630e": {
+   "verdict": "ok",
+   "note": "|sqrt2-6i| = sqrt(2+36) = sqrt(38), node Math.sqrt(38)=6.164414002968976, no perfect-square factor. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "56ec84e0c62169f1": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: ischemia (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -34041,6 +34233,14 @@
    "note": "source exercise fs-idp78582464 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "579ab3d0545354f2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It #2 (x=5cos t, y=3 sin t): standard parametric ellipse, semi-axes 5 and 3 read directly off the coefficients; independently derived horizontal ellipse, matches source solution alt-text 'a horizontal ellipse'. Distractors (circle rx=ry=5, vertical ellipse rx=3,ry=5) independently checked as wrong shapes.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -34534,6 +34734,10 @@
     "result": "agrees"
    }
   },
+  "58e5120e723f3f28": {
+   "verdict": "ok",
+   "note": "parent: r=2sqrt3*2=4sqrt3, theta=116+82=198; rect product cross-checked numerically | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "58e77acb4b5152d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -34907,6 +35111,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "59bba3a7934d34ba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): #11 (fs-id1668430, multiplechoice): cos6t+cos4t=2cos((6t+4t)/2)cos((6t-4t)/2)=2cos(5t)cos(t); confirmed numerically at t=0.61, matches CNXML solution 2cos5t cost. Distractors 2sin5t sint, cos5t cost, 2cos5t sint confirmed numerically distinct.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -35599,10 +35811,6 @@
     "result": "agrees"
    }
   },
-  "5b8504a0baf90054": {
-   "verdict": "ok",
-   "note": "Practice: line through (-1,0) at t=0 and (3,-2) at t=1 -> x(t)=-1+4t,y(t)=-2t by linear interpolation; matches CNXML solution exactly."
-  },
   "5b897e6c8aa7cdef": {
    "verdict": "ok",
    "note": "source exercise fs-id1167582423366 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -35723,6 +35931,14 @@
    "note": "m66611 exercise fs-idm131350080: solution B = 'midsagittal'. Matches page key. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5bd60418a64e0661": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): (tan(3x/2)-tan(7x/5))/(1+tan(3x/2)tan(7x/5)) = tan(3x/2-7x/5) = tan(x/10) since 3/2-7/5=15/10-14/10=1/10; confirmed by numeric sampling at x=0.3,1.1,-0.7 (agree to 1e-6, tan near-singular so looser tolerance).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -36125,10 +36341,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "5d1f0918dfd17c48": {
-   "verdict": "ok",
-   "note": "Figure-read item (Section Exercises Q41/fs-id1165134108566): CNXML solution prints (3, 3pi/4); alt text describes point on third concentric circle midway between pi/2 and pi, matching r=3, theta=3pi/4. radians token verified: self-grades correct, rejects a degree-spoofed (3,135deg) retype."
-  },
   "5d24ce3f41c8e1df": {
    "verdict": "ok",
    "note": "KC 1 1.2 § Bergey's Manuals — Micro Connection: Same Name, Different Strain, m58782 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -36308,6 +36520,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "5d9115d997b23894": {
+   "verdict": "ok",
+   "note": "parent: r=16^(1/4)=2, theta=(120+360k)/4 -> 30,120,210,300; each root^4 recomputed | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "5d92983334287842": {
    "verdict": "ok",
@@ -36892,6 +37108,14 @@
     "result": "agrees"
    }
   },
+  "5efde5c356f868f5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): y=3sin(3x) first max for x>0: 3x=pi/2 -> x=pi/6, y=3, matching the source's own five-key-point table (pi/6, 3).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "5f0a7b1c26f9d8cf": {
    "verdict": "ok"
   },
@@ -36939,9 +37163,9 @@
     "result": "agrees"
    }
   },
-  "5f35315d229cdab9": {
+  "5f36b50f1b95ea62": {
    "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r^2=10\\cos(2\\theta)$. What is the )"
+   "note": "r of 3i: modulus is |3i|=3 directly (x=0,y=3). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "5f3be31c2a64f969": {
    "verdict": "ok",
@@ -37110,10 +37334,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "5fbfd2da9f7c74c1": {
-   "verdict": "ok",
-   "note": "4*Math.cos(7pi/6)=-3.4641016151377553=-2*sqrt(3); 4*Math.sin(7pi/6)=-1.999999999999999=-2."
   },
   "5fc06d0af46fd95e": {
    "verdict": "ok",
@@ -37297,10 +37517,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "602e8518dc78d8fb": {
-   "verdict": "ok",
-   "note": "h(t)=4cos(pi/2 t): amplitude 4, period 2*pi/(pi/2)=4. Matches source exercise #31 solution (amplitude 4, period 4, freq 1/4 Hz). Amplitude and period coincidentally both equal 4 -- verified independently, not a defect."
   },
   "6035120d7fae7e74": {
    "verdict": "ok",
@@ -37525,10 +37741,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "60dd6c02d0f2c176": {
-   "verdict": "ok",
-   "note": "r^2=4 sec(theta) csc(theta) = 4/(cos theta sin theta) -> r^2 cos(theta) sin(theta) = 4 -> (r cos theta)(r sin theta) = 4 -> xy=4. Matches CNXML solution 'xy=4; hyperbola' exactly."
   },
   "60e0a5b4f200406d": {
    "verdict": "ok",
@@ -39443,10 +39655,6 @@
    "verdict": "ok",
    "note": "1,3,9,27: r=3/1=3, a1=1, a_n=1*3^(n-1)=3^(n-1). Matches CNXML Algebraic #35 solution."
   },
-  "671cfb82847cec4b": {
-   "verdict": "ok",
-   "note": "tan(u-v)=sin(u-v)/cos(u-v), expand both with sum/difference formulas and divide by cos u cos v: (tanu-tanv)/(1+tanu tanv); confirmed by numeric sampling of (u,v) pairs -- statement is True, matching the CNXML-printed solution."
-  },
   "671ea53c80cb0627": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -39578,10 +39786,6 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp48933904: model answer is the CNXML solution verbatim (mineral vs. organic soil). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "67560e1df83f37d8": {
-   "verdict": "ok",
-   "note": "sin(11pi/12)=sin(pi-pi/12)=sin(pi/12)=(sqrt6-sqrt2)/4; Math.sin vs key agree to 1e-12."
-  },
   "675a74464afdc97d": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098776801 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -39600,10 +39804,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "67607c27c4abea52": {
-   "verdict": "ok",
-   "note": "r of 3i: modulus is |3i|=3 directly (x=0,y=3)."
   },
   "6760d8240867ad29": {
    "verdict": "ok",
@@ -39841,10 +40041,6 @@
   },
   "68100209d97249c8": {
    "verdict": "ok"
-  },
-  "6814a8b3c846b291": {
-   "verdict": "ok",
-   "note": "Circle parametrization, radius 5, ccw, form pinned to x(t)=5cos t: standard construction, matches source's own printed solution x(t)=5cos t, y(t)=5sin t exactly. Ordered comma answer since question states the order explicitly."
   },
   "6816303de90893c0": {
    "verdict": "ok",
@@ -40106,6 +40302,14 @@
   },
   "68b668a0aeff4567": {
    "verdict": "ok"
+  },
+  "68b7dbbb651076b1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It ti_07_01_04 (CNXML source): 25-9sin^2(t) = (5-3sin t)(5+3sin t), a difference of squares; confirmed numerically at t=1 (18.62733923553786 both sides).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "68bfe7ef5c76837f": {
    "verdict": "ok",
@@ -40786,10 +40990,6 @@
    "verdict": "ok",
    "note": "199e^(-.625t)=1 -> t=ln199/.625=8.469 -> 8.5; key p1316 #59"
   },
-  "6ae2969195cff4e9": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=3\\cos(2\\theta)$. What is the nam)"
-  },
   "6aeb8d51d45b575a": {
    "verdict": "ok",
    "note": "KC 5 24.1 § Anatomy and Normal Microbiota of the GI Tract, m58924",
@@ -40994,10 +41194,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "6bb742d701b9513c": {
-   "verdict": "ok",
-   "note": "|b|=sqrt(4+25)=sqrt(29); unit = (-2/sqrt29, 5/sqrt29) = (-2*sqrt29/29, 5*sqrt29/29). node -e confirmed -0.37139=-2/sqrt(29) and 0.92848=5/sqrt(29), matching source's own answer."
   },
   "6bb8740f36e7ffbd": {
    "verdict": "ok"
@@ -41957,6 +42153,14 @@
     "result": "agrees"
    }
   },
+  "6e4c6ba0fd4c480d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "6e4c6fa927fd7fea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -42084,6 +42288,14 @@
    "note": "summary cloze from § summary: \"The mRNA is synthesized in the 5' to 3' direction, and the FACT complex moves and reassembles nucleosomes as the polymerase passes by.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6eb9f1890a40e874": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -42271,6 +42483,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "6f543bf3cf38098e": {
+   "verdict": "ok",
+   "note": "Point plot -3-3i; no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "6f5909bba1e31a23": {
    "verdict": "ok",
@@ -42489,6 +42705,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "6fdca4df06c91b65": {
+   "verdict": "ok",
+   "note": "tan(5π/12)=(1-cos(5π/6))/sin(5π/6)=(1+√3/2)/(1/2)=2+√3 (node-checked to ~1e-15). Retype of the printed subject fails evaluated-trig, confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "6fdd061ae8624647": {
    "verdict": "ok",
@@ -42828,10 +43048,6 @@
     "result": "agrees"
    }
   },
-  "70b1e80d25a50571": {
-   "verdict": "ok",
-   "note": "fs-id2170891 (CNXML solution: sec x). tan(x)sin(x)+sec(x)cos^2(x) = sin^2x/cos x + cos x = (sin^2x+cos^2x)/cos x = sec x; confirmed numerically at x=1 (1.8508157176809257 vs sec(1)=1.8508157176809255)."
-  },
   "70b4e08c881d40ee": {
    "verdict": "ok",
    "note": "glossary recall: exotic species (fs-idm28321808) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -42958,6 +43174,14 @@
   "70f9496699defa66": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "70faa993b58b2980": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): tan(pi/2-x)=sin(pi/2-x)/cos(pi/2-x)=cosx/sinx=cotx; confirmed by numeric sampling of x; same retype hazard as the sec item, hence multiplechoice.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "70fb0452b96c15b2": {
    "verdict": "ok",
@@ -43148,10 +43372,6 @@
   "7160d066159b349b": {
    "verdict": "ok"
   },
-  "7169505f2b05fcf6": {
-   "verdict": "ok",
-   "note": "theta of 3i: Math.atan2(3,0)=1.5707963267948966=pi/2."
-  },
   "716a2107679b17e6": {
    "verdict": "ok",
    "note": "KC 1 1.1 § body Scientific Ethics (eip-847), m66427 — parent re-read against the module"
@@ -43236,6 +43456,14 @@
   },
   "71a3175db11da8d6": {
    "verdict": "ok"
+  },
+  "71a345bd4e8c54ff": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=-\\theta$. What is the name of th)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "71acc4b5055b4f84": {
    "verdict": "ok",
@@ -43849,10 +44077,6 @@
     "result": "agrees"
    }
   },
-  "73477062b611647e": {
-   "verdict": "ok",
-   "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly."
-  },
   "734d14adb57bc11a": {
    "verdict": "ok"
   },
@@ -43938,10 +44162,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "73926e713ca5299d": {
-   "verdict": "ok",
-   "note": "4sin^2x-2=0 -> sin^2x=1/2 -> sin x=+-sqrt2/2 -> x=pi/4,3pi/4,5pi/4,7pi/4; all four quadrants confirmed via node Math.sin check."
   },
   "7396d8f367716dde": {
    "verdict": "ok",
@@ -44035,6 +44255,10 @@
    "verdict": "ok",
    "note": "KC 2 7.2 § body First Half of Glycolysis (Energy-Requiring Steps) (fs-id2221367), m66466 — parent re-read against the module"
   },
+  "73c849abdd809443": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=4\\sin\\theta$. What is the name o) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "73ca5de980a037fb": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -44058,6 +44282,14 @@
   "73dde11bc8aba4e8": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "73e17a5b5e475fad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2 sin x+1=0 -> sin x=-1/2 -> x=7pi/6,11pi/6 on [0,2pi); standard unit-circle solve, independently re-derived.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "73e3b5b26048c1f9": {
    "verdict": "ok",
@@ -44148,6 +44380,14 @@
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Without rotating axes, identify the conic for $x^2-9xy+3y^2-"
   },
+  "740ac7ba8c8e2f78": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): #17 (fs-id2011827): cos45°cos15°=(1/2)[cos30°+cos60°]=(1/2)[(√3/2)+(1/2)]=(1+√3)/4; confirmed numerically (degrees converted to radians explicitly), matches CNXML solution (1/4)(1+√3).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "741320ddebfce0c3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44183,10 +44423,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "742a6f04ae48bdec": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Sketch the graph of $r=4\\sin(2\\theta)$. What type of curve i)"
   },
   "742e1dabf8d6b76c": {
    "verdict": "ok",
@@ -44542,6 +44778,10 @@
     "result": "agrees"
    }
   },
+  "74f2f94841474694": {
+   "verdict": "ok",
+   "note": "parent: 5^3=125, 45*3=135 (De Moivre) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "74f78c8b6dff8eda": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44638,6 +44878,14 @@
     "result": "agrees"
    }
   },
+  "75284b66f7975e79": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): product: r=2sqrt3*2=4sqrt3, angle=150+30=180; 4sqrt3*cos(180deg)=-4sqrt3, sin term 0. node: r1*r2*Math.cos(Math.PI)=-6.928203230275509=-4*Math.sqrt(3).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "752d8fcf3865b5cb": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660333416 (key-differs) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -44693,10 +44941,6 @@
   "754bc2e02019a02c": {
    "verdict": "ok",
    "note": "Critical Thinking Q2 fs-idm146811344, model answer = source solution verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "755d0c9c37dd5e5c": {
-   "verdict": "ok",
-   "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution)."
   },
   "755e1b78c7040490": {
    "verdict": "ok",
@@ -44872,10 +45116,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "75c96235b1ec0334": {
-   "verdict": "ok",
-   "note": "theta of sqrt3+i: Math.atan2(1,Math.sqrt(3))=0.5235987755982989=pi/6."
   },
   "75caad9f45f427c3": {
    "verdict": "ok",
@@ -45106,14 +45346,6 @@
   "764f0a6fe1cda417": {
    "verdict": "ok",
    "note": "m66491 critical-thinking solution fs-id2491136: 'The Chromosomal Theory of Inheritance proposed that genes reside on chromosomes. The understanding that chromosomes are linear arrays of genes explained linkage, and crossing over explained recombination.' Page model answer is verbatim. Four CHECKS clauses each restate a fragment of that sentence, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
-  },
-  "76549f279217d8d8": {
-   "verdict": "ok",
-   "note": "|d|=sqrt(1/9+25/4)=sqrt(229)/6; unit = (-2/sqrt229, 15/sqrt229) = (-2sqrt229/229, 15sqrt229/229). node -e confirmed values match source's own answer exactly."
-  },
-  "765e746682eb1279": {
-   "verdict": "ok",
-   "note": "4v+2u = (4*-2+2*1, 4*-3+2*5) = (-6,-2) -> -6i-2j. Node-verified, matches source's own answer."
   },
   "766752ea471cfeb0": {
    "verdict": "ok",
@@ -45979,10 +46211,6 @@
     "result": "agrees"
    }
   },
-  "78987006a22b90fd": {
-   "verdict": "ok",
-   "note": "|12-5i| = sqrt(12^2+5^2) = sqrt(169) = 13."
-  },
   "78a271238fd2bec6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -46717,10 +46945,6 @@
     "result": "agrees"
    }
   },
-  "7a43b06d8956f2fd": {
-   "verdict": "ok",
-   "note": "7*Math.cos(pi/6)=6.062177826491071=7*sqrt(3)/2; 7*Math.sin(pi/6)=3.5=7/2."
-  },
   "7a47da0fb2e9aa72": {
    "verdict": "ok",
    "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 35.02 line 217 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -46872,6 +47096,10 @@
     "result": "agrees"
    }
   },
+  "7a777eb29a3da15f": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation for symmetry: $r=-2\\cos\\theta$. Which symm) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "7a8e97b24f2084c3": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: dysuria (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -46951,10 +47179,6 @@
   "7ad20f04645fd002": {
    "verdict": "ok"
   },
-  "7ad2e732b6392b09": {
-   "verdict": "ok",
-   "note": "distance=sqrt(370^2+350^2-2*370*350*cos(2.1deg))=23.957 -> 24.0 km, matches source key."
-  },
   "7ada0fadd8345503": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -46962,10 +47186,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7add8e20d5217d1c": {
-   "verdict": "ok",
-   "note": "sin⁴(3x)=(sin²3x)²=((1-cos6x)/2)²=1/4-1/2cos6x+1/4cos²6x=1/4-1/2cos6x+1/8+1/8cos12x=3/8-1/2cos6x+1/8cos12x=(3+cos12x-4cos6x)/8, matching the source. Confirmed numerically at x=0.2231; all three distractors confirmed distinct from the true value."
   },
   "7adf692d6e759413": {
    "verdict": "ok",
@@ -47358,10 +47578,6 @@
     "result": "agrees"
    }
   },
-  "7bc94116ec3d61de": {
-   "verdict": "ok",
-   "note": "Table Try It: x(t)=t-3,y(t)=2t+4 evaluated by hand at t=-1,0,1,2 -> (-4,2),(-3,4),(-2,6),(-1,8); matches CNXML solution table verbatim."
-  },
   "7bc9d4461b45004e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47369,10 +47585,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7bcac171ad12c396": {
-   "verdict": "ok",
-   "note": "h(t)=8sin(6*pi*t): amplitude 8, period 2*pi/(6*pi)=1/3. Matches source exercise #29 solution (amplitude 8, period 1/3, freq 3 Hz; asked only for amplitude+period per this section's objective wording)."
   },
   "7bd15c142a0f5e09": {
    "verdict": "ok",
@@ -48352,10 +48564,6 @@
     "result": "agrees"
    }
   },
-  "7de7a7f7fac8455a": {
-   "verdict": "ok",
-   "note": "parent: 5^3=125, 45*3=135 (De Moivre)"
-  },
   "7dea08d5e0e601ae": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48628,6 +48836,14 @@
     "result": "agrees"
    }
   },
+  "7e9fd7477f2419f4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "7ea371788365463d": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -48659,10 +48875,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7eb5a23fde360168": {
-   "verdict": "ok",
-   "note": "a=10,c=0.5,p=2 -> omega=2*pi/2=pi; y=10e^{-0.5t}cos(pi t). Matches CNXML Try It solution."
   },
   "7eb65c6c68bac2cb": {
    "verdict": "ok",
@@ -48735,10 +48947,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "7ef4467841a10d18": {
-   "verdict": "ok",
-   "note": "2u-3v = (2*-3-3*-2, 2*4-3*1) = (0,5) -> 5j (zero i-component). Node-verified."
   },
   "7ef4c52d1fbd3fc7": {
    "verdict": "ok",
@@ -49033,6 +49241,14 @@
     "result": "agrees"
    }
   },
+  "7fa4576e4aa273cb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): quotient: r=2sqrt3/2=sqrt3, angle=150-30=120; node: sqrt3*Math.cos(2pi/3)=-0.866...=-sqrt3/2, sqrt3*Math.sin(2pi/3)=1.5=3/2.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "7fa6e09f1cfc3813": {
    "verdict": "ok",
    "note": "KC 1 6.2 § Viral Growth Curve, m58809 | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -49180,10 +49396,6 @@
   "8008e767508909cc": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "800c8e4250177b73": {
-   "verdict": "ok",
-   "note": "node: r=sqrt(9+25)=sqrt(34)=5.8310; theta=atan2(-5,3)=-1.0304, +2pi=5.2528, rounded 5.253. Matches CNXML solution (sqrt(34), 5.253) exactly (Section Exercises, (3,-5))."
   },
   "800fd8cf4ba8dffc": {
    "verdict": "ok",
@@ -49519,10 +49731,6 @@
   "8116ede627dcf829": {
    "verdict": "ok"
   },
-  "8119c53fdfb4a53c": {
-   "verdict": "ok",
-   "note": "y=3cos(3*pi*x): amplitude |A|=3; period 2*pi/(3*pi)=2/3. Matches CNXML Try It solution."
-  },
   "811d0a94c247cec0": {
    "verdict": "ok",
    "note": "glossary recall: lymphocyte (fs-idm3420432) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -49643,10 +49851,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "818df417c18ee215": {
-   "verdict": "ok",
-   "note": "parent: 3^2=9, 120*2=240 (De Moivre)"
   },
   "81909b4241bd209f": {
    "verdict": "ok",
@@ -49993,10 +50197,6 @@
     "result": "agrees"
    }
   },
-  "825617f94b029984": {
-   "verdict": "ok",
-   "note": "parent: r=21/3=7, theta=135-65=70"
-  },
   "8261f1020bb07cb4": {
    "verdict": "ok",
    "note": "Complete the square in x: x^2-4x+4=-2y+6+4 -> (x-2)^2=-2y+10=-2(y-5); h=2,k=5,4p=-2->p=-1/2; focus=(h,k+p)=(2,4.5); matches source exercise fs-id1989230's key F:(2,9/2) exactly."
@@ -50076,10 +50276,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "82a696e01abb18f0": {
-   "verdict": "ok",
-   "note": "y^2=3-x^2 -> x^2+y^2=3 -> r^2=3 -> r=sqrt(3). Matches CNXML solution r=sqrt(3). exact-radical form verified against grader (self-grades correct, rejects retype of printed equation)."
   },
   "82a83d22064c659d": {
    "verdict": "ok"
@@ -50516,6 +50712,10 @@
     "result": "agrees"
    }
   },
+  "83b00f573f6331ba": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3-3\\cos\\theta$ for symmetry. Which symm) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "83bb06ae42d8f76b": {
    "verdict": "ok",
    "note": "glossary recall: adaptive evolution (fs-idm34018896) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -50626,6 +50826,14 @@
   "83fe9023dfbc3dfe": {
    "verdict": "ok",
    "note": "Algebraic exercise 37 (fs-id1165135449709): piecewise f, x>0 branch is x-3; lim_{x->0+} f(x) = 0-3 = -3; matches CNXML solution -3."
+  },
+  "840ba14bad218bcc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): TI1: cos(2θ)cos(4θ)=(1/2)[cos(2θ-4θ)+cos(2θ+4θ)]=(1/2)(cosθ2θ+cos6θ); derived independently and confirmed numerically to 1e-9 (node), matches CNXML solution (1/2)(cos6θ+cos2θ).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "841177625263e799": {
    "verdict": "ok",
@@ -51010,10 +51218,6 @@
     "result": "agrees"
    }
   },
-  "84e680dce95bd58c": {
-   "verdict": "ok",
-   "note": "parent: r=27^(1/3)=3, theta=(240+360k)/3 -> 80,200,320"
-  },
   "84e68c85a4fc6458": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51040,10 +51244,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "84eea49ec5f40a48": {
-   "verdict": "ok",
-   "note": "-2*(5,2) = (-10,-4) -> -10i-4j. Node-verified."
   },
   "84f64d082413a2aa": {
    "verdict": "ok",
@@ -51672,6 +51872,14 @@
     "result": "agrees"
    }
   },
+  "86b7e4fec25ffb6a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Vector from origin to (3,5) is trivially (3,5); i,j form is 3i+5j.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "86c31ea886739198": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51679,6 +51887,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "86c4fceda8c8f0ad": {
+   "verdict": "ok",
+   "note": "Point plot 1+5i; no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "86c5d0486f942fe8": {
    "verdict": "ok"
@@ -51706,10 +51918,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "86d93c198c48fd97": {
-   "verdict": "ok",
-   "note": "Try It #1 (x=sqrt t, y=2t+3, 0<=t<=3): eliminated t=x^2 (x>=0), y=2x^2+3; independently derived right-half-upward-parabola vertex (0,3) to (sqrt3,9), matches source solution alt-text 'right half of an upward opening parabola'. Distractors (full parabola, downward-opening) independently checked as wrong shapes."
   },
   "86e2453d1cd027a9": {
    "verdict": "ok",
@@ -51884,10 +52092,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "875df415e334d27b": {
-   "verdict": "ok",
-   "note": "cosθ max=1 at θ=0, so r=3(1)=3 at θ=0; max point (3,0), independently re-derived."
   },
   "87601234acab3b2e": {
    "verdict": "ok",
@@ -52858,10 +53062,6 @@
     "result": "agrees"
    }
   },
-  "8a28c9ef47c0441e": {
-   "verdict": "ok",
-   "note": "cos⁴θ-sin⁴θ=(cos²θ+sin²θ)(cos²θ-sin²θ)=1·cos(2θ)=cos(2θ), a pure algebraic identity (node-checked numerically at θ=0.61234)."
-  },
   "8a2bd13dabcb3b06": {
    "verdict": "ok",
    "note": "body CYU, selfcheck; model answer assembled from § Transfer RNAs. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -52924,10 +53124,6 @@
   "8a497effe2767f4b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "8a4d47b38d71a83d": {
-   "verdict": "ok",
-   "note": "sinx=1/8,QI ⇒ cosx=√63/8=3√7/8. sin2x=2sinxcosx=3√7/32; cos2x=1-2sin²x=31/32; tan2x=3√7/31. All three node-checked against the source solution."
   },
   "8a4f04417c795c35": {
    "verdict": "ok",
@@ -53137,10 +53333,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "8ac82d86794ababb": {
-   "verdict": "ok",
-   "note": "Point plot 2i = (0,2); no computation, matches printed coordinates."
   },
   "8ac98347cebdc60a": {
    "verdict": "ok",
@@ -53734,6 +53926,14 @@
     "result": "agrees"
    }
   },
+  "8c80e2a9b71914ab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "8c814c1858294f42": {
    "verdict": "ok"
   },
@@ -53771,6 +53971,10 @@
   },
   "8c9b38efbdafdee3": {
    "verdict": "ok"
+  },
+  "8c9d05f64c22eb7f": {
+   "verdict": "ok",
+   "note": "sec^2x=1 -> cos^2x=1 -> cos x=+-1 -> x=0,pi on [0,2pi); standard. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "8c9faf6d870ae85c": {
    "verdict": "ok"
@@ -54346,10 +54550,6 @@
     "result": "agrees"
    }
   },
-  "8e20178644ce7d77": {
-   "verdict": "ok",
-   "note": "same value as caf7458156c38afa: cos(pi/12)=(sqrt2+sqrt6)/4, confirmed numerically."
-  },
   "8e22001f35879ddb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54652,10 +54852,6 @@
     "result": "agrees"
    }
   },
-  "8efd8868b43740ea": {
-   "verdict": "ok",
-   "note": "cos(2θ)cosθ=(cos²θ-sin²θ)cosθ=cos³θ-cosθsin²θ; all three distractors (sign/term variants) confirmed numerically distinct from the true value at θ=0.5931."
-  },
   "8eff278f5145fc0f": {
    "verdict": "ok",
    "note": "glossary recall: myocardium (fs-idm212500192) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -54727,10 +54923,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "8f2523fbdfb26e08": {
-   "verdict": "ok",
-   "note": "product: r=2sqrt3*2=4sqrt3, angle=150+30=180; 4sqrt3*cos(180deg)=-4sqrt3, sin term 0. node: r1*r2*Math.cos(Math.PI)=-6.928203230275509=-4*Math.sqrt(3)."
   },
   "8f27665bf8e36429": {
    "verdict": "ok",
@@ -55378,6 +55570,14 @@
   "90edd3857b1e8cc5": {
    "verdict": "ok"
   },
+  "90ee91f0494d1596": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): #13 (fs-id2591836): cos7x+cos(-7x)=cos7x+cos7x (cosine even)=2cos(7x); confirmed numerically at x=0.53, matches CNXML solution 2cos(7x).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "90ef0e9aebb09b82": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55430,6 +55630,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 167): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "9108c88758eddc6b": {
+   "verdict": "ok",
+   "note": "(-3-4, 2-(-1)) = (-7,3) -> -7i+3j. Node-verified, matches source's own v=-7i+3j answer. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "910906e0aad70e72": {
    "verdict": "ok",
    "note": "ln(w)=n converts to e^n=w by definition; matches CNXML Section Exercise 15 (fs-id1165137735890)."
@@ -55443,6 +55647,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9114141a4bd74f2a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): sin⁴(3x)=(sin²3x)²=((1-cos6x)/2)²=1/4-1/2cos6x+1/4cos²6x=1/4-1/2cos6x+1/8+1/8cos12x=3/8-1/2cos6x+1/8cos12x=(3+cos12x-4cos6x)/8, matching the source. Confirmed numerically at x=0.2231; all three distractors confirmed distinct from the true value.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -55616,6 +55828,10 @@
    "verdict": "ok",
    "note": "cos(pi) = -1 exactly, point (-1,0) on unit circle at pi rad (180 deg) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "918264d9161d39f6": {
+   "verdict": "ok",
+   "note": "sin(π/8)=√((1-cos(π/4))/2)=√((2-√2)/4)=√(2-√2)/2 (node-checked to ~1e-16). Retype of the printed subject fails evaluated-trig, confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "918a6929973a250a": {
    "verdict": "ok",
    "note": "Review Question fs-idm133171248, source keys 'B' = 'photosystem I'. Section text: 'P700 is oxidized and sends a high-energy electron to NADP+ to form NADPH' (fs-idm16256512) — NADPH forms directly from PSI's reaction center. Correct as keyed. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -55683,6 +55899,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "91b21a1066bc48ef": {
+   "verdict": "ok",
+   "note": "sin(x-3pi/4)=sinx cos(3pi/4)-cosx sin(3pi/4) = -sqrt2/2 sinx - sqrt2/2 cosx; confirmed by numeric sampling at x=0.4,1.2,-0.9 (agree to 1e-12). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "91b23c1fe9a5d428": {
    "verdict": "ok",
@@ -55828,10 +56048,6 @@
     "result": "agrees"
    }
   },
-  "9217092bdc7b0548": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=2\\theta$ for symmetry. Which symmetries)"
-  },
   "9218f43b279c46eb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55842,10 +56058,6 @@
   },
   "921c6dad3dfeade2": {
    "verdict": "ok"
-  },
-  "922146a36cb8bc2d": {
-   "verdict": "ok",
-   "note": "Try It #2 (x=5cos t, y=3 sin t): standard parametric ellipse, semi-axes 5 and 3 read directly off the coefficients; independently derived horizontal ellipse, matches source solution alt-text 'a horizontal ellipse'. Distractors (circle rx=ry=5, vertical ellipse rx=3,ry=5) independently checked as wrong shapes."
   },
   "9222be9582636a3f": {
    "verdict": "ok",
@@ -56023,9 +56235,9 @@
     "result": "agrees"
    }
   },
-  "926c4b445004bb29": {
+  "926a66dceb440342": {
    "verdict": "ok",
-   "note": "Try It: x=t^3,y=t^6=(t^3)^2=x^2; node-verified residual ~0 over t=-2..3; matches CNXML solution y=x^2."
+   "note": "(3-(-4), -3-2) = (7,-5) -> 7i-5j. Node-verified, matches source's own <7,-5> answer restated in i,j form. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "9275404ac5567e83": {
    "verdict": "ok",
@@ -56670,6 +56882,14 @@
   "943da40759e82aea": {
    "verdict": "ok",
    "note": "Visual Connection (fs-idm106325552): model answer transcribes the source solution verbatim; question uses the <exercise> copy's wording (minor wording variant from the note copy, disclosed in footer/report). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "943e14bd80ad8696": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $xy=4$ represent?)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "9445e50ccc47b385": {
    "verdict": "ok",
@@ -57394,6 +57614,14 @@
     "result": "agrees"
    }
   },
+  "9600b464a121fda5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Figure-read item (Section Exercises Q43/fs-id1165135397089): CNXML solution prints (5, pi); alt text describes point on fifth concentric circle along the negative polar axis, matching r=5, theta=pi.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "9601a0faa0c9e3a4": {
    "verdict": "ok",
    "note": "m66628 Critical Thinking fs-idp268410496; model answer corrected from the source solution's 'The number of receptors can increase in response to rising hormone levels, called up-regulation' to 'in response to prolonged low hormone levels, called up-regulation' to match the module's own defining sentence for up-regulation ('In up-regulation, the number of receptors increases in response to prolonged low hormone levels...'), which the solution's phrasing (echoing the glossary's own error) contradicts. Reported as a source defect. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -57646,10 +57874,6 @@
   },
   "96b7620341392737": {
    "verdict": "ok"
-  },
-  "96be0e0e7c0ccb1e": {
-   "verdict": "ok",
-   "note": "sec(pi/2-theta)=1/cos(pi/2-theta)=1/sin(theta)=csc(theta); confirmed by numeric sampling of theta; retyping the printed subject grades correct against the key (checked with checkAnswer), which is why this is multiplechoice rather than fillin."
   },
   "96bf789c6c6fd51b": {
    "verdict": "ok",
@@ -57931,6 +58155,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "977e18116c5e9e25": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=2\\theta$ for symmetry. Which symmetries) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "977f2fdec4dc8cbe": {
    "verdict": "ok",
@@ -58347,6 +58575,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "98d4dcbd077e65df": {
+   "verdict": "ok",
+   "note": "sinx=1/8,QI ⇒ cosx=√63/8=3√7/8. sin2x=2sinxcosx=3√7/32; cos2x=1-2sin²x=31/32; tan2x=3√7/31. All three node-checked against the source solution. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "98d9a0e9623c060e": {
    "verdict": "ok",
@@ -59133,10 +59365,6 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "9af91d1054a2559c": {
-   "verdict": "ok",
-   "note": "|sqrt2-6i| = sqrt(2+36) = sqrt(38), node Math.sqrt(38)=6.164414002968976, no perfect-square factor."
-  },
   "9afa9c2d834f85a3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59390,10 +59618,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "9be545e33fa44491": {
-   "verdict": "ok",
-   "note": "r=-θ at θ=4π gives r=-4π exactly; independently substituted."
   },
   "9be694ff8a0e6905": {
    "verdict": "ok",
@@ -59697,6 +59921,14 @@
     "result": "agrees"
    }
   },
+  "9cc26ceb0fa57832": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It ti_07_01_05 (CNXML source): cos(t)/(1+sin t) = (1-sin t)/cos t, proved by multiplying by (1-sin t)/(1-sin t) and using 1-sin^2t=cos^2t; confirmed numerically at t=1 (0.2934079930260234 both sides). Distractors (1+sin t)/cos t, (sin t-1)/cos t, (1-sin t)/sin t all confirmed numerically distinct.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "9cc3584ed6b1f898": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59768,10 +60000,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "9cdf37abceed74d8": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3-3\\cos\\theta$ for symmetry. Which symm)"
   },
   "9ce1c67bcd836fc7": {
    "verdict": "ok",
@@ -60028,10 +60256,6 @@
   },
   "9d8b755acac0fa5f": {
    "verdict": "ok"
-  },
-  "9d979a9a54503108": {
-   "verdict": "ok",
-   "note": "Dart hits ground: independently solved -16t^2+(64 sin52deg)t=0 for the positive root via node -e: t = 64*sin(52 deg)/16 = 3.152... rounds to 3.2, matches source printed answer 'approximately 3.2 seconds' exactly."
   },
   "9d9f108fec8744b5": {
    "verdict": "ok",
@@ -61076,10 +61300,6 @@
    "verdict": "ok",
    "note": "KC 7 43.6 § Fertilization, m66678 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1304): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
   },
-  "a06c605b241d65c0": {
-   "verdict": "ok",
-   "note": "u = <7-(-1), -5-6> = <8,-11> -> 8i-11j; node -e confirmed (7-(-1),-5-6)=(8,-11)."
-  },
   "a0743fb2388dcb9a": {
    "verdict": "ok"
   },
@@ -61103,6 +61323,14 @@
    "note": "Sortbins from the CALS table 'Summary of Mechanisms of Genetic Diversity in Prokaryotes' (fs-id1167663877679, 4 rows: Conjugation/Transduction/Transformation/Transposition). The four table definitions plus one module-text distinguishing phrase per mechanism (F+/F- requirement for conjugation; phage packaging for transduction; natural competence for transformation; found in both prokaryotes and eukaryotes for transposition) = 8 items, interleaved def/def/def/def then extra/extra/extra/extra. Placed under the 'asexual gene transfer results in genetic diversity' objective per the life-sciences table rule (no CYU asks the all-four-mechanism contrast).",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a080512d55002fdf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): |b|=sqrt(4+25)=sqrt(29); unit = (-2/sqrt29, 5/sqrt29) = (-2*sqrt29/29, 5*sqrt29/29). node -e confirmed -0.37139=-2/sqrt(29) and 0.92848=5/sqrt(29), matching source's own answer.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -61194,6 +61422,14 @@
     "result": "agrees"
    }
   },
+  "a0bc134e62e0f5a9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 12sin^2t+cost-6=0 -> sub 1-cos^2t -> 12cos^2t-cost-6=0 -> quadratic formula cost=(1+-17)/24 = 3/4 or -2/3 (node-computed); four solutions cos^-1(3/4), cos^-1(-2/3), 2pi-cos^-1(-2/3), 2pi-cos^-1(3/4) match source key exactly.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "a0bd81bc4dc9b924": {
    "verdict": "ok",
    "note": "x+3y=5, 2x+3y=4 -> subtract: x=-1, then y=2. Node-verified both equations satisfied by (-1,2)."
@@ -61241,6 +61477,14 @@
     "result": "agrees"
    }
   },
+  "a0d5561c48c0b60b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2 sin theta=sqrt3 -> sin theta=sqrt3/2 -> theta=pi/3,2pi/3 on [0,2pi); standard.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "a0e10e3143680258": {
    "verdict": "ok",
    "note": "Table (x=1..6; y=46,50,59,75,100,136) has consecutive differences 4,9,16,25,36 — not constant — so the data is 'Nonlinear', matching the declared answer."
@@ -61252,6 +61496,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a0e8f86e6a4f9fdd": {
+   "verdict": "ok",
+   "note": "Try It ti_07_01_01 adapted to a pure-number simplification: csc(t)*cos(t)*tan(t) = (1/sin t)(cos t)(sin t/cos t) = 1 for all t; confirmed numerically at t=1 (node: 1.0000000000000002). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a0ea1b7da9cf5709": {
    "verdict": "ok",
@@ -61842,9 +62090,9 @@
     "result": "agrees"
    }
   },
-  "a23b116c005a8818": {
+  "a23c05d6683a5f45": {
    "verdict": "ok",
-   "note": "2sin(3theta)=1 -> sin(3theta)=1/2 -> 3theta=pi/6+2k*pi or 5pi/6+2k*pi -> theta=pi/18+2k*pi/3 or 5pi/18+2k*pi/3; k=0,1,2 for each family on [0,2pi) reproduces all six printed values exactly (hand-derived and cross-checked)."
+   "note": "sin²xcos²x=(sinxcosx)²=(1/2 sin2x)²=1/4 sin²2x=1/4·(1-cos4x)/2=(1-cos4x)/8; confirmed numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a23ef49a92b1e8ff": {
    "verdict": "ok",
@@ -61899,10 +62147,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "a253bbfdd35d1938": {
-   "verdict": "ok",
-   "note": "Try It #3 (x=2cos theta, y=4 sin theta with rectangular overlay): same curve as Example 2 (independently re-derived vertical ellipse rx=2,ry=4); correct option shows the parametric curve and its exact rectangular equation x^2/4+y^2/16=1 coinciding; distractors show a mismatched dashed ellipse and a missing overlay, matching source's own solution text describing a red parametric curve with blue rectangular dots on top."
   },
   "a2559898e860198d": {
    "verdict": "ok",
@@ -62104,10 +62348,6 @@
     "result": "agrees"
    }
   },
-  "a2c1c6f942b521a3": {
-   "verdict": "ok",
-   "note": "tan(2pi/3+pi/4)=tan(165deg); Math.tan vs (1-sqrt3)/(1+sqrt3) agree to 1e-12."
-  },
   "a2c5d042417a84a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62199,10 +62439,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "a3020a451a15f553": {
-   "verdict": "ok",
-   "note": "2cos(3theta)=-sqrt2 -> cos(3theta)=-sqrt2/2 -> 3theta=3pi/4+2k*pi or 5pi/4+2k*pi -> theta=pi/4+2k*pi/3 or 5pi/12+2k*pi/3; k=0,1,2 reproduces the six printed values (3pi/12=pi/4, kept unreduced as printed in the source key)."
   },
   "a302c0dd85356e42": {
    "verdict": "ok",
@@ -62374,10 +62610,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "a37133f39df64edc": {
-   "verdict": "ok",
-   "note": "tan(19pi/12)=tan(285deg)=-tan(75deg)=-(2+sqrt3); Math.tan vs -2-sqrt3 agree to 1e-12."
   },
   "a371e0545c946767": {
    "verdict": "ok",
@@ -62600,10 +62832,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "a4018f8ac6fe5fef": {
-   "verdict": "ok",
-   "note": "#7 (fs-id2036362): 2sin(5x)cos(3x)=2*(1/2)[sin8x+sin2x]=sin2x+sin8x; confirmed numerically at x=0.77, matches CNXML solution sin(2x)+sin(8x)."
   },
   "a4084c11cb796e76": {
    "verdict": "ok",
@@ -63109,6 +63337,10 @@
     "result": "agrees"
    }
   },
+  "a533277a9230407d": {
+   "verdict": "ok",
+   "note": "6 − 2i has real part 6 and imaginary part −2, so it plots at (6, −2): 6 units right, 2 down → option 1. Distractors are its sign/coordinate swaps (−6,2), (−2,6), (6,2). Source: m49408 plotting exercise 6−2i (printed solution figure CNX_Precalc_Figure_08_05_208); recognition MC authored for the graph-recognition rule. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "a5335e61c54ad02d": {
    "verdict": "ok",
    "note": "key-term recall: equivalence zone; printed in § Precipitin Reactions: \"As antigen is slowly added to a solution containing a constant amount antibody, the amount of precipitin increases as the antibody-to-antig…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -63190,6 +63422,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a56e228bcf812f33": {
+   "verdict": "ok",
+   "note": "cos⁴θ-sin⁴θ=(cos²θ+sin²θ)(cos²θ-sin²θ)=1·cos(2θ)=cos(2θ), a pure algebraic identity (node-checked numerically at θ=0.61234). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a56ed8f79667e303": {
    "verdict": "ok",
@@ -63990,6 +64226,10 @@
     "result": "agrees"
    }
   },
+  "a77f2680fc289065": {
+   "verdict": "ok",
+   "note": "sin^2(theta)=2cos(theta)+2 -> substitute 1-cos^2 -> (cos theta+1)^2=0 -> cos theta=-1 -> theta=pi on [0,2pi]; algebra re-derived independently. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "a781fd6df3078b90": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64121,10 +64361,6 @@
     "result": "agrees"
    }
   },
-  "a7f5bb28a1701566": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=1+3\\sin\\theta$. What is the name)"
-  },
   "a7f75447e0b662f6": {
    "verdict": "ok",
    "note": "multiplechoice (True/False), source-keyed. CNXML exercise fs-id1172098499435, KEY False. Confirmed against the Noncoding DNA section's sentence that scientists have found roles for some noncoding regions. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -64196,9 +64432,9 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "a819ee40249b72ad": {
+  "a815fa215c653e95": {
    "verdict": "ok",
-   "note": "6 − 2i has real part 6 and imaginary part −2, so it plots at (6, −2): 6 units right, 2 down → option 1. Distractors are its sign/coordinate swaps (−6,2), (−2,6), (6,2). Source: m49408 plotting exercise 6−2i (printed solution figure CNX_Precalc_Figure_08_05_208); recognition MC authored for the graph-recognition rule."
+   "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a81d80afc006bab6": {
    "verdict": "ok",
@@ -64280,9 +64516,9 @@
     "result": "agrees"
    }
   },
-  "a84c7cd24a4ab650": {
+  "a84644bc422200f7": {
    "verdict": "ok",
-   "note": "Dart max height time: independently computed vertex of -16t^2+(64 sin52deg)t at t=-b/2a = 64*sin(52deg)/32 = 1.576... rounds to 1.6, matches source printed answer '1.6 seconds' exactly."
+   "note": "#7 (fs-id2036362): 2sin(5x)cos(3x)=2*(1/2)[sin8x+sin2x]=sin2x+sin8x; confirmed numerically at x=0.77, matches CNXML solution sin(2x)+sin(8x). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "a84c8e09845fa83d": {
    "verdict": "ok",
@@ -64470,6 +64706,14 @@
    "note": "source exercise fs-id1167657983076 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a8e2e4dad86d01f2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): h(t)=4cos(pi/2 t): amplitude 4, period 2*pi/(pi/2)=4. Matches source exercise #31 solution (amplitude 4, period 4, freq 1/4 Hz). Amplitude and period coincidentally both equal 4 -- verified independently, not a defect.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -64832,6 +65076,14 @@
     "result": "agrees"
    }
   },
+  "a9db97befce0bd2f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): atan(-0.34)=-0.327739->-0.3277 (node), period pi; representative in (-pi/2,pi/2) as pinned. Parent re-derivation after edit.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "a9e19c9ee45a7394": {
    "verdict": "ok",
    "note": "author-built from § Isolation of Viruses: \"(b) The size of the pores in the filter determines what is captured on the surface of the filter (animal [red] and bacteria [blue]) and rem…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -65137,6 +65389,10 @@
     "result": "agrees"
    }
   },
+  "aaca42bef2927f9c": {
+   "verdict": "ok",
+   "note": "r of sqrt3+i: Math.sqrt(3+1)=2. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "aacadf37ca4362c5": {
    "verdict": "ok",
    "note": "source exercise fs-idp72164784 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -65441,10 +65697,6 @@
     "result": "agrees"
    }
   },
-  "aba17853aec88735": {
-   "verdict": "ok",
-   "note": "u.v = (-1)(6)+(6)(-1) = -12. Node-verified, matches source's own answer."
-  },
   "aba17a5ad8c9279a": {
    "verdict": "ok",
    "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.9823 (matches source's own 1.9823 for this Try It)."
@@ -65663,10 +65915,6 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "ac467f1e82513e6f": {
-   "verdict": "ok",
-   "note": "fs-id2427617 (CNXML solution: True, with proof shown). 3sin^2(theta)+4cos^2(theta) = 3(sin^2+cos^2)+cos^2 = 3+cos^2(theta); confirmed numerically at theta=1 (3.291926581726429 both sides)."
-  },
   "ac4dd655b9d5c23d": {
    "verdict": "ok",
    "note": "m66540 exercise eip-784, solution transcribed near-verbatim as the model answer, decomposed into 5 rubric checkpoints. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -65864,10 +66112,6 @@
     "result": "agrees"
    }
   },
-  "acbdbd837992ab55": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation for symmetry: $r=-2\\cos\\theta$. Which symm)"
-  },
   "acc5eb9add35b8a6": {
    "verdict": "ok",
    "note": "Practice: x=4log(t),y=3+2t -> t=(y-3)/2, x=4log((y-3)/2); node-verified residual ~0 (base-10 log) over t=0.5..10; matches CNXML solution."
@@ -65891,10 +66135,6 @@
   "acd8c440dc1159a7": {
    "verdict": "ok"
   },
-  "acdedbf481ed30dc": {
-   "verdict": "ok",
-   "note": "2 sin x+1=0 -> sin x=-1/2 -> x=7pi/6,11pi/6 on [0,2pi); standard unit-circle solve, independently re-derived."
-  },
   "ace196e91d44c0f3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65916,6 +66156,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items); plural-fold audit 2026-09-06: auditor flagged that the fold accepts \"Casparian stripes\" (strip + es); adjudicated not a defect — a learner typing it means the Casparian strip | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ace904a019cb6aad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): cos(2θ)cosθ=(cos²θ-sin²θ)cosθ=cos³θ-cosθsin²θ; all three distractors (sign/term variants) confirmed numerically distinct from the true value at θ=0.5931.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -66093,6 +66341,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ad71f1c95b304667": {
+   "verdict": "ok",
+   "note": "2u-3v = (2*-3-3*-2, 2*4-3*1) = (0,5) -> 5j (zero i-component). Node-verified. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "ad7763d9c78acc2b": {
    "verdict": "ok",
@@ -66421,6 +66673,10 @@
     "result": "agrees"
    }
   },
+  "ae2b2dbd73e2f9c9": {
+   "verdict": "ok",
+   "note": "Dart max height time: independently computed vertex of -16t^2+(64 sin52deg)t at t=-b/2a = 64*sin(52deg)/32 = 1.576... rounds to 1.6, matches source printed answer '1.6 seconds' exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "ae307036d96f55f2": {
    "verdict": "ok",
    "note": "body selfcheck, food-poisoning causes/signs/symptoms; model draws from the food-poisoning-term sentence, the mouth-fermentation sentence, and the lower-GI symptom sentence | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66615,6 +66871,10 @@
   "ae9bedbbf862916e": {
    "verdict": "ok",
    "note": "m66566 critical-thinking eip-346, solution's bulleted list reformatted into complete sentences, no new claim added. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "aea2b1adbd75e749": {
+   "verdict": "ok",
+   "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3 | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "aea44134cd4957dc": {
    "verdict": "ok",
@@ -67270,10 +67530,6 @@
     "result": "agrees"
    }
   },
-  "b064b4cba48d1340": {
-   "verdict": "ok",
-   "note": "tan^2x-sqrt3 tan x=0 -> tan x(tan x-sqrt3)=0 -> tan x=0 (0,pi) or tan x=sqrt3 (pi/3,4pi/3); union sorted matches source key."
-  },
   "b064d892d67e225b": {
    "verdict": "ok",
    "note": "author-built from § Exoenzymes: \"Some pathogens produce extracellular enzymes, or exoenzyme s , that enable them to invade host cells and deeper tissues.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -67586,10 +67842,6 @@
   "b148f6dce90c4341": {
    "verdict": "ok"
   },
-  "b149a546dd91ad8d": {
-   "verdict": "ok",
-   "note": "cos^3t=cost -> cost(cos^2t-1)=0 -> cost=0 (pi/2,3pi/2) or cos^2t=1 i.e. sint=0 (0,pi); union matches source key."
-  },
   "b149cd729532bda2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67726,10 +67978,6 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 693): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
-  "b1a03cc514660de2": {
-   "verdict": "ok",
-   "note": "fs-id2796242 (CNXML solution: sin x). sin(x)cos(x)sec(x) = sin(x)cos(x)/cos(x) = sin x; confirmed numerically at x=1 (0.8414709848078965 both sides)."
-  },
   "b1a6b95356661020": {
    "verdict": "ok",
    "note": "KC 2 7.5 § body Other Types of Fermentation (fs-id811872), m66469 — parent re-read against the module | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -67860,6 +68108,10 @@
     "result": "agrees"
    }
   },
+  "b1e5bed899941940": {
+   "verdict": "ok",
+   "note": "-2*(5,2) = (-10,-4) -> -10i-4j. Node-verified. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "b1e6747491fae2ce": {
    "verdict": "ok",
    "note": "KC 5 26.2 § body Life Cycle of a Conifer (fs-idp58000784), m66573 — parent re-read against the module",
@@ -67981,6 +68233,10 @@
   "b248bd6b4a278986": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b25473d02af7d620": {
+   "verdict": "ok",
+   "note": "Try It #1 (x=sqrt t, y=2t+3, 0<=t<=3): eliminated t=x^2 (x>=0), y=2x^2+3; independently derived right-half-upward-parabola vertex (0,3) to (sqrt3,9), matches source solution alt-text 'right half of an upward opening parabola'. Distractors (full parabola, downward-opening) independently checked as wrong shapes. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "b2557bd259d1a751": {
    "verdict": "ok",
@@ -68557,6 +68813,14 @@
     "result": "agrees"
    }
   },
+  "b3b21276a8b9d050": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Figure triangle base 12 / height 5 / hyp 13; α is opposite the base (12) and adjacent to the height (5): sinα=12/13, cosα=5/13. sin2α=120/169, cos2α=-119/169, tan2α=-120/119 (node-checked; the negative cos2α is correct since α>45°).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "b3b26a24fd849590": {
    "verdict": "ok",
    "note": "Body Visual Connection m66654 fs-idm62414080 (varicose veins); model answer transcribes the <solution> verbatim; note copy and <exercise> copy are word-identical. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -68659,6 +68923,14 @@
   "b3fe453742613ae0": {
    "verdict": "ok"
   },
+  "b3fe76fd90dab2e3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: r=3*(1/4)=3/4, theta=120+60=180",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "b4016b5629d886e6": {
    "verdict": "ok"
   },
@@ -68677,10 +68949,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "b40be0ab01bf9236": {
-   "verdict": "ok",
-   "note": "parent: 120*sin(3.2 deg)/sin(80 deg)=6.802->6.8; question pins source rounded chain (errata 55)"
   },
   "b40eaaf2674ca9b8": {
    "verdict": "ok",
@@ -68920,6 +69188,10 @@
   },
   "b494de6011f63daa": {
    "verdict": "ok"
+  },
+  "b4951a87447dcd71": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=2-2\\cos\\theta$. What is the name) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "b4996c26eb20fbf0": {
    "verdict": "ok",
@@ -70678,10 +70950,6 @@
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Determine the number of triangles possible given $a=31$, $b=)"
   },
-  "b8db1af2f971eb50": {
-   "verdict": "ok",
-   "note": "sin^2(theta)=2cos(theta)+2 -> substitute 1-cos^2 -> (cos theta+1)^2=0 -> cos theta=-1 -> theta=pi on [0,2pi]; algebra re-derived independently."
-  },
   "b8de56f284fd259b": {
    "verdict": "ok",
    "note": "Review Question eip-470: keyed option B (ATP and NADPH accumulation) matches CNXML solution B; independently re-derived — if light-independent enzymes cannot activate, they stop consuming the light reactions' ATP/NADPH output, so those accumulate rather than G3P (not produced) or CO2 (not consumed). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -71036,6 +71304,14 @@
     "result": "agrees"
    }
   },
+  "ba01e710eae8c00a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $x+3y=6$ represent?)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "ba11fb0fb26ded42": {
    "verdict": "ok",
    "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -71109,6 +71385,14 @@
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ba3693e12de37704": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 7*Math.cos(pi/6)=6.062177826491071=7*sqrt(3)/2; 7*Math.sin(pi/6)=3.5=7/2.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -71735,10 +72019,6 @@
   "bbcf8317efa31bf7": {
    "verdict": "ok"
   },
-  "bbd55d10230846e0": {
-   "verdict": "ok",
-   "note": "12sin^2t+cost-6=0 -> sub 1-cos^2t -> 12cos^2t-cost-6=0 -> quadratic formula cost=(1+-17)/24 = 3/4 or -2/3 (node-computed); four solutions cos^-1(3/4), cos^-1(-2/3), 2pi-cos^-1(-2/3), 2pi-cos^-1(3/4) match source key exactly."
-  },
   "bbd9251e985ad577": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -71786,6 +72066,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "bbeb97f285292db7": {
+   "verdict": "ok",
+   "note": "#27 (fs-id1507419): sin76°+sin14°=2sin45°cos31°=2*(√2/2)*cos31°=√2cos(31°); confirmed numerically, matches CNXML solution √2 cos(31°). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "bbf3af3a0b10d35e": {
    "verdict": "ok",
@@ -71997,10 +72281,6 @@
     "result": "agrees"
    }
   },
-  "bc73abf4e3aaf6c8": {
-   "verdict": "ok",
-   "note": "(2sinxcosx)/(2cos²x-1)=sin(2x)/cos(2x)=tan(2x); confirmed as an identity numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader."
-  },
   "bc7a76793badab4d": {
    "verdict": "ok",
    "note": "m66375 solution fs-id1341960 ('Where does the cell get energy for active transport?'): model answer verbatim match. Two CHECKS clauses restate ATP from metabolism and powering pump activity. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -72122,10 +72402,6 @@
     "result": "agrees"
    }
   },
-  "bcb4b109d9d7dd06": {
-   "verdict": "ok",
-   "note": "Try It 2 (SSS, a=5,b=7,c=10): each angle via cos^-1((s1^2+s2^2-opp^2)/(2 s1 s2)) directly from a,b,c -> alpha=27.66, beta=40.54, gamma=111.80 (sum 180.00); rounds to 27.7,40.5,111.8 deg, matches source, no chain (each independent)."
-  },
   "bcb9c5cd28d68dd4": {
    "verdict": "ok",
    "note": "body cloze from § Leaf Adaptations: \"Carnivorous plants, such as the Venus flytrap and the pitcher plant ( ), grow in bogs where the soil is low in nitrogen.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -72194,6 +72470,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "bcd974c0de13b963": {
+   "verdict": "ok",
+   "note": "tan(19pi/12)=tan(285deg)=-tan(75deg)=-(2+sqrt3); Math.tan vs -2-sqrt3 agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "bcdba2c9414cb7e8": {
    "verdict": "ok",
@@ -72916,10 +73196,6 @@
     "result": "agrees"
    }
   },
-  "beca6c4ecb107b14": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=-\\theta$. What is the name of th)"
-  },
   "becb5f2a2c15027a": {
    "verdict": "ok",
    "note": "Review Question fs-id2739491; CNXML solution fs-id2075482 keys option D, 'telomerase' — matches. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -72939,10 +73215,6 @@
     "by": "fable-solver-C",
     "result": "agrees"
    }
-  },
-  "bed091233bd7ecf3": {
-   "verdict": "ok",
-   "note": "#17 (fs-id2011827): cos45°cos15°=(1/2)[cos30°+cos60°]=(1/2)[(√3/2)+(1/2)]=(1+√3)/4; confirmed numerically (degrees converted to radians explicitly), matches CNXML solution (1/4)(1+√3)."
   },
   "bed5117c6eae962a": {
    "verdict": "ok",
@@ -73270,10 +73542,6 @@
     "result": "agrees"
    }
   },
-  "bfbc801634076974": {
-   "verdict": "ok",
-   "note": "2sin(π/4)cos(π/4)=sin(2·π/4)=sin(π/2) by the double-angle formula; numerically both sides equal 1 (node-checked). Retype of the printed subject fails the declared single-trig-function form (2 applications vs. the answer's 1), confirmed against the real grader."
-  },
   "bfbefb281c415306": {
    "verdict": "ok",
    "note": "glossary recall: PTH — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -73472,6 +73740,14 @@
     "result": "agrees"
    }
   },
+  "c02a4c4cba50ded2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): cofunction: pi/2-pi/7 = 9pi/14-2pi/14 = 5pi/14, so sin(pi/7)=cos(5pi/14); confirmed sin(pi/7) numerically equals cos(5pi/14); distractors are plausible-but-wrong cofunction arithmetic.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "c031a82b0eaf2c2a": {
    "verdict": "ok",
    "note": "KC 4 20.5 § Indirect Fluorescent Antibody Techniques, m58904 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -73508,10 +73784,6 @@
     "result": "agrees"
    }
   },
-  "c04a86b49feddc32": {
-   "verdict": "ok",
-   "note": "Point plot 1+5i; no computation, matches printed coordinates."
-  },
   "c04d462a4780f38d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73523,10 +73795,6 @@
   "c04e6d8f55cb1b60": {
    "verdict": "ok",
    "note": "signs +--+ = 2 changes -> 2 or 0 positive; f(-x) 1 change -> 1 negative; key p1297 #35"
-  },
-  "c051033801666a10": {
-   "verdict": "ok",
-   "note": "a=10, decays 15%/s -> r=0.85, oscillates 18/s -> omega=2*pi*18=36*pi. D(t)=10(0.85)^t cos(36 pi t). Matches source exercise #37 solution."
   },
   "c0562e18c0bb6734": {
    "verdict": "ok",
@@ -73757,10 +74025,6 @@
     "result": "agrees"
    }
   },
-  "c0e998ee54cc44f3": {
-   "verdict": "ok",
-   "note": "#5 (fs-id1298302): 16sin(16x)sin(11x)=16*(1/2)[cos(5x)-cos(27x)]=8cos(5x)-8cos(27x); confirmed numerically at x=1.234 (identity holds), matches CNXML solution 8(cos5x-cos27x)."
-  },
   "c0edc8b5c85e08a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73931,6 +74195,14 @@
    "note": "source FIB fs-id1167660272859, key 'conjunctiva' matches CNXML solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c190a0f37956d50f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 2 cos theta=-sqrt2 -> cos theta=-sqrt2/2 -> theta=3pi/4,5pi/4 on [0,2pi); standard.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -74437,6 +74709,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c31f7437f546ac55": {
+   "verdict": "ok",
+   "note": "Table Try It: x(t)=t-3,y(t)=2t+4 evaluated by hand at t=-1,0,1,2 -> (-4,2),(-3,4),(-2,6),(-1,8); matches CNXML solution table verbatim. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "c31fa24621bb7cc1": {
    "verdict": "ok",
@@ -75448,6 +75724,10 @@
    "verdict": "ok",
    "note": "Matrix [[3,2,0|3],[-1,-9,4|-1],[8,5,7|8]]; row 3 read directly as coefficients/constant of equation 3: 8x+5y+7z=8 -> [8,5,7,8]. Matches CNXML fs-id1165137592598's derived system exactly."
   },
+  "c56b1c4740484ba8": {
+   "verdict": "ok",
+   "note": "(2sinxcosx)/(2cos²x-1)=sin(2x)/cos(2x)=tan(2x); confirmed as an identity numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "c56dca002cdc9af6": {
    "verdict": "ok",
    "note": "body cloze from § Processes and Patterns of Evolution: \"For example, flight has evolved in both bats and insects, and they both have structures we refer to as wings, which are adaptations to flig…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -75699,6 +75979,10 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
+  },
+  "c633b9a4554ac0bc": {
+   "verdict": "ok",
+   "note": "parent: r=27^(1/3)=3, theta=(240+360k)/3 -> 80,200,320 | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "c633dba766d1d8b0": {
    "verdict": "ok",
@@ -76292,10 +76576,6 @@
     "result": "agrees"
    }
   },
-  "c80fe50d5789d608": {
-   "verdict": "ok",
-   "note": "(-3-4, 2-(-1)) = (-7,3) -> -7i+3j. Node-verified, matches source's own v=-7i+3j answer."
-  },
   "c8116eaae1e88f31": {
    "verdict": "ok",
    "note": "selfcheck: model + rubric = the module's two-clause -static sentence verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -76344,6 +76624,14 @@
     "result": "agrees"
    }
   },
+  "c83d32b48efc6aae": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): TI2: sin(x+y)cos(x-y)=(1/2)[sin((x+y)+(x-y))+sin((x+y)-(x-y))]=(1/2)(sin2x+sin2y); matches CNXML solution and product-to-sum formula, structurally derived.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "c84057ba4004cb27": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76367,10 +76655,6 @@
     "by": "fable-solver-B",
     "result": "agrees"
    }
-  },
-  "c8529b6f04d06992": {
-   "verdict": "ok",
-   "note": "a=17, 17*r^3=13 -> r=(13/17)^(1/3)=0.914460..., rounds to 0.9145; omega=2*pi*14=28*pi. D(t)=17(0.9145)^t cos(28 pi t), numerically confirmed 17*0.9145^3~=13.0002 (rounding tolerance). Matches source exercise #39 solution."
   },
   "c85a89741bea50c6": {
    "verdict": "ok",
@@ -76629,10 +76913,6 @@
     "result": "agrees"
    }
   },
-  "c91f12ab2eae48b3": {
-   "verdict": "ok",
-   "note": "3*<5,4> = <15,12> -> 15i+12j; ran node -e to confirm (3*5,3*4)=(15,12)."
-  },
   "c927812b0f60f507": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76644,6 +76924,14 @@
   "c92e19e875c491be": {
    "verdict": "ok",
    "note": "x=36y^2 divided by 36: y^2=(1/36)x; matches source exercise fs-id1980920's key y^2=1/36x. Self-checked correct under the token."
+  },
+  "c93533d4fb9b7002": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): A=(40-24)/2=8, D=(40+24)/2=32, B=2pi/24=pi/12; high pinned to 6 PM by the question (added clause, disclosed in footer): 8*sin(pi/12*6)+32=40 (node). Parent re-derivation after sign-pinning edit.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "c935e0368d3ee861": {
    "verdict": "ok",
@@ -76933,6 +77221,14 @@
     "result": "agrees"
    }
   },
+  "c9e15b524be7a87b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): theta of 3i: Math.atan2(3,0)=1.5707963267948966=pi/2.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "c9e73c409579ec3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77071,6 +77367,14 @@
   "ca2b1cb4db45f526": {
    "verdict": "ok",
    "note": "KC 1 3.1 § body Dehydration Synthesis (fs-id1266915), m66438 — parent re-read against the module"
+  },
+  "ca2b91999b7b5540": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): y^2=3-x^2 -> x^2+y^2=3 -> r^2=3 -> r=sqrt(3). Matches CNXML solution r=sqrt(3). exact-radical form verified against grader (self-grades correct, rejects retype of printed equation).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "ca35889e6c165b65": {
    "verdict": "ok",
@@ -77291,6 +77595,14 @@
     "result": "agrees"
    }
   },
+  "cab08d58875b3d84": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Circle parametrization, radius 5, ccw, form pinned to x(t)=5cos t: standard construction, matches source's own printed solution x(t)=5cos t, y(t)=5sin t exactly. Ordered comma answer since question states the order explicitly.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "cab464b3bd2add81": {
    "verdict": "ok",
    "note": "author-built from § Brightfield Microscopes: \"The brightfield microscope , perhaps the most commonly used type of microscope, is a compound microscope with two or more lenses that produ…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -77415,10 +77727,6 @@
     "result": "agrees"
    }
   },
-  "caf7458156c38afa": {
-   "verdict": "ok",
-   "note": "cos(pi/3-pi/4)=cos(pi/12); Math.cos(pi/12) vs (sqrt6+sqrt2)/4 agree to 1e-12."
-  },
   "caffa420dc5c0b9e": {
    "verdict": "ok",
    "note": "unkeyed CT, selfcheck: needs two module sentences | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -77428,6 +77736,14 @@
    "note": "source multiplechoice: exercise fs-idp132626720 (Review Question), source options in source order (wind/disease-causing microbe/temperature/soil particle size), source solution key B = 'disease-causing microbe' — the only living thing among the four options, consistent with the glossary's 'biotic' = living components. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cb0430e1f4e37a13": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): node: -3*cos(pi/6)=-2.598076..=-3*sqrt(3)/2, -3*sin(pi/6)=-1.5. Matches CNXML solution (-3*sqrt(3)/2, -3/2) exactly (Section Exercises, (-3,pi/6)).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -77612,6 +77928,10 @@
   "cb729aff1f572ede": {
    "verdict": "ok",
    "note": "Boulder: a1=6,d=8,n=10; a10=78,S10=420 (node); matches CNXML fs-id1165135181425 solution (420 feet)."
+  },
+  "cb7509f3b2bbf2fd": {
+   "verdict": "ok",
+   "note": "High 105F at 5PM(t=17), avg 85F -> amplitude 20; T(t)=20cos(pi/12*(t-17))+85; T(9)=20*cos(pi/12*(-8))+85=20*cos(-2pi/3)+85=20*(-0.5)+85=75. Matches source exercise #17 solution (75 F). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "cb789c680d51d21e": {
    "verdict": "ok",
@@ -77946,9 +78266,13 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "cc89c440049468de": {
+  "cc8aba9baf4b2031": {
    "verdict": "ok",
-   "note": "Point plot -3-3i; no computation, matches printed coordinates."
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): #5 (fs-id1298302): 16sin(16x)sin(11x)=16*(1/2)[cos(5x)-cos(27x)]=8cos(5x)-8cos(27x); confirmed numerically at x=1.234 (identity holds), matches CNXML solution 8(cos5x-cos27x).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "cc8ac564d83c9188": {
    "verdict": "ok",
@@ -78064,6 +78388,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ccee57b55c6da6e1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It #3 (x=2cos theta, y=4 sin theta with rectangular overlay): same curve as Example 2 (independently re-derived vertical ellipse rx=2,ry=4); correct option shows the parametric curve and its exact rectangular equation x^2/4+y^2/16=1 coinciding; distractors show a mismatched dashed ellipse and a missing overlay, matching source's own solution text describing a red parametric curve with blue rectangular dots on top.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -78310,10 +78642,6 @@
     "result": "agrees"
    }
   },
-  "cd8eabf5c9dc5b97": {
-   "verdict": "ok",
-   "note": "r=3-2cosθ: minimized cosθ=-1 at θ=π gives r=3-2(-1)=5, maximum |r|; point (5,π), independently re-derived (node: 3-2*Math.cos(Math.PI)=5)."
-  },
   "cd8fbcf26e8328ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78425,6 +78753,10 @@
   "cddb6bc12de5d478": {
    "verdict": "ok",
    "note": "Practice, objective 1; Critical Thinking fs-id1167793389907, unkeyed — model answer from §Brightfield Microscopes (coarse/fine knob sentence) and the Micro Connection maintenance list | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "cde1f85d75ad0ae9": {
+   "verdict": "ok",
+   "note": "2sin(π/4)cos(π/4)=sin(2·π/4)=sin(π/2) by the double-angle formula; numerically both sides equal 1 (node-checked). Retype of the printed subject fails the declared single-trig-function form (2 applications vs. the answer's 1), confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "cde235cf24a994d6": {
    "verdict": "ok",
@@ -78933,13 +79265,13 @@
     "result": "agrees"
    }
   },
+  "cf390b39acd9a8e5": {
+   "verdict": "ok",
+   "note": "r^2=4 sec(theta) csc(theta) = 4/(cos theta sin theta) -> r^2 cos(theta) sin(theta) = 4 -> (r cos theta)(r sin theta) = 4 -> xy=4. Matches CNXML solution 'xy=4; hyperbola' exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "cf3a4f0e27f2e1e8": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "cf401972097d1450": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=4\\sin\\theta$. What is the name o)"
   },
   "cf407cf0b1ea8822": {
    "verdict": "ok",
@@ -79770,10 +80102,6 @@
    "verdict": "ok",
    "note": "KC 4 19.2 § body Environmental Variation (fs-idm72231696), m66524 — parent re-read against the module"
   },
-  "d1c38849d26116e5": {
-   "verdict": "ok",
-   "note": "4*Math.cos(11*Math.PI/6)=3.4641016151377535=2*sqrt(3); 4*Math.sin(11*Math.PI/6)=-2.0000000000000018=-2."
-  },
   "d1c7d907b0881910": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -79907,10 +80235,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d221762b306643ab": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which type of curve is $r=3-2\\cos\\theta$?)"
   },
   "d223ff2babb37b3d": {
    "verdict": "ok",
@@ -80805,6 +81129,10 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp76153840: model answer is the CNXML solution verbatim (factors affecting soil formation)."
   },
+  "d490a750d47b34cb": {
+   "verdict": "ok",
+   "note": "cos(x+2pi/3)=cosx cos(2pi/3)-sinx sin(2pi/3) = -1/2 cosx - (sqrt3/2) sinx; confirmed by numeric sampling at x=0.4,1.2,-0.9 (agree to 1e-12). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "d490fbcac17bf467": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1172100972832 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -80956,10 +81284,6 @@
     "result": "agrees"
    }
   },
-  "d4eb68c6154169c7": {
-   "verdict": "ok",
-   "note": "sin(π/8)=√((1-cos(π/4))/2)=√((2-√2)/4)=√(2-√2)/2 (node-checked to ~1e-16). Retype of the printed subject fails evaluated-trig, confirmed against the real grader."
-  },
   "d4ee93a1458fa0ca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81019,10 +81343,6 @@
   "d507f9eee7eb8249": {
    "verdict": "ok",
    "note": "-4-i has real part -4 and imaginary part -1, so the ordered pair is (-4,-1); matches the point named in CNXML ti_03_01_02's solution image alt text. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "d5082a7f756f27c9": {
-   "verdict": "ok",
-   "note": "tan(pi/3)=1.732050807569=sqrt3 (node); period pi so family pi/3+k*pi; representative pinned to (-pi/2,pi/2) by the question. Parent re-derivation after representative-pinning edit."
   },
   "d51717b163c2ed98": {
    "verdict": "ok",
@@ -81388,6 +81708,14 @@
     "result": "agrees"
    }
   },
+  "d62a5968a9f9daf2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): TI3: cos(11π/12)cos(π/12)=(1/2)[cos(5π/6)+cos(π)]=(1/2)(-√3/2-1)=(-2-√3)/4; confirmed numerically in node (Math.cos in radians) to 1e-9, matches CNXML solution exactly.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "d62d740d5b491d3e": {
    "verdict": "ok",
    "note": "Microbiology 16.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the global-transportation and source-management sentences and the SARS example) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -81487,16 +81815,8 @@
     "result": "agrees"
    }
   },
-  "d66d090e96ff4a69": {
-   "verdict": "ok",
-   "note": "Try It ti_07_01_01 adapted to a pure-number simplification: csc(t)*cos(t)*tan(t) = (1/sin t)(cos t)(sin t/cos t) = 1 for all t; confirmed numerically at t=1 (node: 1.0000000000000002)."
-  },
   "d66f3b1253534f5d": {
    "verdict": "ok"
-  },
-  "d67d40de93943e71": {
-   "verdict": "ok",
-   "note": "fs-id2641075 (CNXML solution: 1/sin x). (sec x+csc x)/(1+tan x): numerator=(sin x+cos x)/(sin x cos x), denominator=(cos x+sin x)/cos x, quotient=1/sin x; confirmed numerically at x=1 (1.188395105778121 vs 1/sin(1)=1.1883951057781212)."
   },
   "d67f44f8d9a605c5": {
    "verdict": "ok",
@@ -82165,10 +82485,6 @@
     "result": "agrees"
    }
   },
-  "d811d9e48d7af9da": {
-   "verdict": "ok",
-   "note": "parent: r=5sqrt2/sqrt2=5, theta=pi-2pi/3=pi/3"
-  },
   "d8126e8c073245c4": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -82345,6 +82661,10 @@
     "result": "agrees"
    }
   },
+  "d88f0a0d3921f1af": {
+   "verdict": "ok",
+   "note": "Authored answer is the corrected key (a=5, c=6, f=2/pi) for source defect errata #53 (printed key 6, -6 contradicts its own equation); independently derived by matching f(t)=5e^{-6t}cos(4t) against ae^{-ct}cos(omega t). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "d890e500c11d800f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -82353,9 +82673,9 @@
    "verdict": "ok",
    "note": "m66567 critical-thinking exercise fs-idp56267088, solution transcribed verbatim as the model answer; rubric checkpoints decompose it into two clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
-  "d8a5b662610352b1": {
+  "d8a1498fee48dd7c": {
    "verdict": "ok",
-   "note": "High 105F at 5PM(t=17), avg 85F -> amplitude 20; T(t)=20cos(pi/12*(t-17))+85; T(9)=20*cos(pi/12*(-8))+85=20*cos(-2pi/3)+85=20*(-0.5)+85=75. Matches source exercise #17 solution (75 F)."
+   "note": "4*Math.cos(11*Math.PI/6)=3.4641016151377535=2*sqrt(3); 4*Math.sin(11*Math.PI/6)=-2.0000000000000018=-2. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d8a602b08d93f4f7": {
    "verdict": "ok",
@@ -82440,6 +82760,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "d8e7772ce31a173e": {
+   "verdict": "ok",
+   "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "d8f392c0263779ae": {
    "verdict": "ok",
@@ -82597,10 +82921,6 @@
     "result": "agrees"
    }
   },
-  "d9620cd4d01ea004": {
-   "verdict": "ok",
-   "note": "tan(5π/12)=(1-cos(5π/6))/sin(5π/6)=(1+√3/2)/(1/2)=2+√3 (node-checked to ~1e-15). Retype of the printed subject fails evaluated-trig, confirmed against the real grader."
-  },
   "d9753428492341df": {
    "verdict": "ok",
    "note": "author-built from § The Germ Theory of Disease: \"In 1546, Italian physician Girolamo Fracastoro proposed, in his essay De Contagione et Contagiosis Morbis , that seed-like spores may be tr…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -82672,6 +82992,14 @@
   "d9a40a51690e28d3": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. 'What number is 35% of 250?' had TWO correct options: n/250=35/100 and n/35=250/100 are the same proportion by alternation (both give n=87.5). The alternated distractor was replaced with n/100=35/250 (n=14); the four options now yield 714.29, 87.50, 14.00, 714.29 so only the declared answer is correct. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d9b197e4700c1282": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Practice P3 (x(t)=-sqrt t, y(t)=t): eliminated t=y, x=-sqrt(y) so x<=0, y=x^2; independently derived left-half-upward-parabola vertex at origin, matches source solution alt-text 'left half of an upward opening parabola'. Arrow direction (toward more negative x as t increases) confirmed since x=-sqrt(t) decreases monotonically as t increases.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "d9b1a2afba20df45": {
    "verdict": "ok",
@@ -83058,6 +83386,14 @@
     "result": "agrees"
    }
   },
+  "dab23bcbcb691089": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): tan(pi/3)=1.732050807569=sqrt3 (node); period pi so family pi/3+k*pi; representative pinned to (-pi/2,pi/2) by the question. Parent re-derivation after representative-pinning edit.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "dab5cffec9366a1e": {
    "verdict": "ok",
    "note": "KC 6 30.2 § body Dermal Tissue (fs-idp76383392), m66597 — parent re-read against the module",
@@ -83307,6 +83643,14 @@
     "result": "agrees"
    }
   },
+  "db42aaa5347f9f27": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): distance=sqrt(370^2+350^2-2*370*350*cos(2.1deg))=23.957 -> 24.0 km, matches source key.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "db45b0429a0b0ed9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -83468,9 +83812,13 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
   },
-  "dbd3db3fec3cf6bf": {
+  "dbd212855ccca19c": {
    "verdict": "ok",
-   "note": "parent: x=2sin t,y=4cos t traces tall ellipse x^2/4+y^2/16=1 CW from (0,4); keyed option verified by checker render pass, distractor ariaLabel corrected to match its own drawn geometry"
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Practice: x=4t-1,y=4t+2 -> t=(x+1)/4, y=(x+1)+2=x+3; node-verified residual ~0 over t=-2..5; matches CNXML solution.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "dbd77a0697682712": {
    "verdict": "ok",
@@ -83852,6 +84200,14 @@
   "dcf3ec94df658654": {
    "verdict": "ok",
    "note": "Body Visual Connection selfcheck (m66560 exercise fs-idm112715536); model answer matches the source solution verbatim, checkpoints are its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "dcf558cb4fb92817": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): asin(0.27)=0.273393->0.2734, pi-0.273393=2.868200->2.8682 (node), period 2pi. Parent re-derivation after edit.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "dcfe115005e47477": {
    "verdict": "ok",
@@ -84378,6 +84734,10 @@
    "verdict": "ok",
    "note": "a1=7, an=0.2a_{n-1}: 7, 1.4, 0.28, 0.056, 0.0112 by repeated multiplication. Matches CNXML Algebraic #23 solution."
   },
+  "dea4aaaea28ad628": {
+   "verdict": "ok",
+   "note": "u+v = (-3+-2, 4+1) = (-5,5) -> -5i+5j. Node-verified. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "dea4f58d2d1614e3": {
    "verdict": "ok",
    "note": "KC 3 14.6 § introduction, m66392 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -84848,6 +85208,10 @@
     "result": "agrees"
    }
   },
+  "dfcbf0fbf7b76368": {
+   "verdict": "ok",
+   "note": "fs-id1812346 (CNXML solution: False). (tan x/sec x)sin(-x) = sin(x)*(-sin x) = -sin^2 x, not cos^2 x; confirmed numerically at x=1 (-0.7080734182735713 vs cos^2(1)=0.2919265817264289, not equal). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "dfcd8da9a3c74307": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -85047,10 +85411,6 @@
   "e0329f9f5aaa13d5": {
    "verdict": "ok",
    "note": "h(-7)=-1/2*(1/2)^-7+6 computed with node: -58; matches CNXML solution exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
-  "e03414e7ec28d474": {
-   "verdict": "ok",
-   "note": "u.v = (-1)(1)+(-1)(5) = -6. Node-verified, matches source's own answer."
   },
   "e035ffa2f867efea": {
    "verdict": "ok",
@@ -85320,6 +85680,14 @@
     "result": "agrees"
    }
   },
+  "e0cc40772077125c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): TryIt6 (source ti_08_01_07, blimp, baseline AB=145yd, angle A=70, angle B=62): angle C=48; AC=AB*sin(B)/sin(C)=172.278; height=AC*sin(A)=161.888 -> 161.9 yd. Matches CNXML '161.9 yd'.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "e0cf5792a270cb31": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -85339,10 +85707,6 @@
   "e0d42313ac250fdc": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "e0d4544081e83dc8": {
-   "verdict": "ok",
-   "note": "#13 (fs-id2591836): cos7x+cos(-7x)=cos7x+cos7x (cosine even)=2cos(7x); confirmed numerically at x=0.53, matches CNXML solution 2cos(7x)."
   },
   "e0d8509f4e5b3d32": {
    "verdict": "ok",
@@ -85405,10 +85769,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e10ca0482b21151d": {
-   "verdict": "ok",
-   "note": "#9 (fs-id2698945): sin(-x)sin(5x)=-sin(x)sin(5x)=-(1/2)[cos4x-cos6x]=(1/2)cos6x-(1/2)cos4x; confirmed numerically at x=0.77, matches CNXML solution (1/2)(cos6x-cos4x)."
   },
   "e10ca0a1c45c3502": {
    "verdict": "ok",
@@ -85505,10 +85865,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "e15d8a5af9577465": {
-   "verdict": "ok",
-   "note": "TI3: cos(11π/12)cos(π/12)=(1/2)[cos(5π/6)+cos(π)]=(1/2)(-√3/2-1)=(-2-√3)/4; confirmed numerically in node (Math.cos in radians) to 1e-9, matches CNXML solution exactly."
   },
   "e15daa1d8f4dbf73": {
    "verdict": "ok",
@@ -85951,6 +86307,10 @@
     "result": "agrees"
    }
   },
+  "e268cacc72490d43": {
+   "verdict": "ok",
+   "note": "u.v = (-1)(1)+(-1)(5) = -6. Node-verified, matches source's own answer. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "e26b805fd37f3d95": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86256,6 +86616,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e3349e550d430b1f": {
+   "verdict": "ok",
+   "note": "cos(pi/3-pi/4)=cos(pi/12); Math.cos(pi/12) vs (sqrt6+sqrt2)/4 agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e335d59d897856c7": {
    "verdict": "ok",
@@ -86640,6 +87004,10 @@
   "e43e019df3cbc397": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "e444bef9c9f4a1ec": {
+   "verdict": "ok",
+   "note": "sin(11pi/12)=sin(pi-pi/12)=sin(pi/12)=(sqrt6-sqrt2)/4; Math.sin vs key agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e4483626c1129577": {
    "verdict": "ok",
@@ -87367,10 +87735,6 @@
     "result": "agrees"
    }
   },
-  "e5f364b2a2f15b40": {
-   "verdict": "ok",
-   "note": "Re-derived independently: cos⁴x=((1+cos2x)/2)²=1/4+1/2cos2x+1/4cos²2x=1/4+1/2cos2x+1/8+1/8cos4x=3/8+1/2cos2x+1/8cos4x, ×10 = 15/4+5cos2x+5/4cos4x, matching the source. Distractors confirmed numerically distinct at x=0.4123."
-  },
   "e5f84219004da45f": {
    "verdict": "ok",
    "note": "KC 5 23.4 § Genital Herpes > Neonatal Herpes, m58920"
@@ -87506,10 +87870,6 @@
     "result": "agrees"
    }
   },
-  "e6626cfc616a23c0": {
-   "verdict": "ok",
-   "note": "TryIt3 (source ti_08_01_02, alpha=80,a=100,b=10): sin(beta)=b*sin(alpha)/a=0.09849 -> beta=5.6517 (only acute solution valid, since 180-alpha-beta2 would be negative); gamma=94.3483; c=a*sin(gamma)/sin(alpha)=101.250 -> 101.3. Matches CNXML solution c approx 101.3."
-  },
   "e66a6a168f1a90ea": {
    "verdict": "ok",
    "note": "KC 4 20.3 § Blood Typing and Cross-Matching, m58902"
@@ -87581,6 +87941,10 @@
   "e69757b94a12481b": {
    "verdict": "ok",
    "note": "KC 7 35.3 § Basal Ganglia, m66622 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the basal-ganglia wasp-sting case, Section 35.3)"
+  },
+  "e69c3ca4b8fbb2cf": {
+   "verdict": "ok",
+   "note": "y=3cos(3*pi*x): amplitude |A|=3; period 2*pi/(3*pi)=2/3. Matches CNXML Try It solution. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "e69e2afbf04097b2": {
    "verdict": "ok",
@@ -87833,6 +88197,14 @@
     "result": "agrees"
    }
   },
+  "e75a66fb9d858272": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): 3*<5,4> = <15,12> -> 15i+12j; ran node -e to confirm (3*5,3*4)=(15,12).",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "e75b1091c4349156": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Yeasts use cell-surface receptors and signaling cascades to communicate information on mating with other yeast cells.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -87926,10 +88298,6 @@
    "verdict": "ok",
    "note": "3.2+3.4+...+5.6: a1=3.2,d=0.2,an=5.6,n=13 (node); Sn=57.2; matches CNXML fs-id1165137745115 solution S13=13(3.2+5.6)/2=57.2."
   },
-  "e7a7e70cf461398b": {
-   "verdict": "ok",
-   "note": "#23 (fs-id1384324): 2sin100°sin20°=cos80°-cos120° via sinαsinβ=(1/2)[cos(α-β)-cos(α+β)] times 2; confirmed numerically, matches CNXML solution cos(80°)-cos(120°)."
-  },
   "e7ac648ef3910fc2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -87965,10 +88333,6 @@
   "e7c541e1a452e1da": {
    "verdict": "ok",
    "note": "3y=7-2x -> y=-2x/3+7/3, a linear function; key p1279 #1 \"Yes\""
-  },
-  "e7c9b93b040d6042": {
-   "verdict": "ok",
-   "note": "u+v = (-3+-2, 4+1) = (-5,5) -> -5i+5j. Node-verified."
   },
   "e7cc5857b54bb719": {
    "verdict": "ok",
@@ -88773,10 +89137,6 @@
     "result": "adjudicated",
     "note": "glossary term is insectivorous plant; accept now carries the bare adjective"
    }
-  },
-  "ea4e36cab517d4c6": {
-   "verdict": "ok",
-   "note": "Graph-mode MC on Graphical #23 (r=7+4sinθ, CNXML fs-id1165134575414, printed solution 'one-loop/dimpled limaçon', a=7,b=4,1<a/b<2): correct option (index 2 after reorder) is the exact r=7+4sinθ sampled polyline, opening upward with a shallow dimple, independently re-verified via svgshot against the sign-flip (opens down), axis-swap (opens right), and family (a=7,b=9, inner-loop) distractors."
   },
   "ea571555ad21172b": {
    "verdict": "ok",
@@ -89813,6 +90173,10 @@
     "result": "agrees"
    }
   },
+  "ed0e3af424e6d2f0": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=1+3\\sin\\theta$. What is the name) | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "ed12ca22e0eb45cf": {
    "verdict": "ok",
    "note": "Microbiology 20.3 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the direct Coombs' test paragraph on newborn jaundice) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -90569,6 +90933,14 @@
   "ef3c10ade00b63c5": {
    "verdict": "ok"
   },
+  "ef4e946899b92da7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Practice: x=4-t,y=3t+2 -> t=4-x, y=3(4-x)+2=-3x+14; node-verified residual ~0 over t=-2..5; matches CNXML solution.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "ef5909fe6cb0e5a0": {
    "verdict": "ok",
    "note": "source Multiple Choice fs-id1167661298441, key C (to visualize the fungus) verbatim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -90859,6 +91231,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "f014a707a304fbfe": {
+   "verdict": "ok",
+   "note": "#23 (fs-id1384324): 2sin100°sin20°=cos80°-cos120° via sinαsinβ=(1/2)[cos(α-β)-cos(α+β)] times 2; confirmed numerically, matches CNXML solution cos(80°)-cos(120°). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "f02214d3a8ec6432": {
    "verdict": "ok",
@@ -91265,10 +91641,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "f13a5e65c0c7c03f": {
-   "verdict": "ok",
-   "note": "parent: r=2sqrt3*2=4sqrt3, theta=116+82=198; rect product cross-checked numerically"
   },
   "f14589377fa03a93": {
    "verdict": "ok",
@@ -92106,6 +92478,14 @@
     "result": "agrees"
    }
   },
+  "f37450269fb6861a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It: x=t^3,y=t^6=(t^3)^2=x^2; node-verified residual ~0 over t=-2..3; matches CNXML solution y=x^2.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "f376398bd1048267": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -92199,10 +92579,6 @@
   "f3a65bad9aee2d78": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
-  },
-  "f3a727ebdb82753e": {
-   "verdict": "ok",
-   "note": "Figure-read item (Section Exercises Q43/fs-id1165135397089): CNXML solution prints (5, pi); alt text describes point on fifth concentric circle along the negative polar axis, matching r=5, theta=pi."
   },
   "f3a82935dcaaa014": {
    "verdict": "ok",
@@ -93316,10 +93692,6 @@
     "result": "agrees"
    }
   },
-  "f6a2b34508beffea": {
-   "verdict": "ok",
-   "note": "x=2cos t, y=-sin t: cos t=x/2, sin t=-y, cos^2+sin^2=1 gives x^2/4+y^2=1, verified numerically via node -e sampling six t values (all satisfy the equation to floating-point precision). Matches source solution alt-text 'a horizontal ellipse'. Not a retype hazard; self-grades correct and an alternate \\frac spelling also grades correct."
-  },
   "f6a5fe3dd63e255a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93349,14 +93721,6 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
-  },
-  "f6af3aa479deb2a5": {
-   "verdict": "ok",
-   "note": "parent: r=3*(1/4)=3/4, theta=120+60=180"
-  },
-  "f6b1c92a48197b22": {
-   "verdict": "ok",
-   "note": "parent: r=16^(1/4)=2, theta=(120+360k)/4 -> 30,120,210,300; each root^4 recomputed"
   },
   "f6b56c9ac06356f6": {
    "verdict": "ok",
@@ -93482,6 +93846,14 @@
     "result": "agrees"
    }
   },
+  "f7175fa479cf85c5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): |d|=sqrt(1/9+25/4)=sqrt(229)/6; unit = (-2/sqrt229, 15/sqrt229) = (-2sqrt229/229, 15sqrt229/229). node -e confirmed values match source's own answer exactly.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "f7208a3dc0912e8f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93554,10 +93926,6 @@
     "by": "fable-solver-C",
     "result": "agrees"
    }
-  },
-  "f73ffb5a432f31f4": {
-   "verdict": "ok",
-   "note": "node: r=sqrt(16+4)=sqrt(20)=2*sqrt(5)=4.4721; theta=atan2(2,4)=0.46365 rad, rounded 0.464. Matches CNXML solution (2*sqrt(5), 0.464) exactly (Section Exercises, (4,2))."
   },
   "f74525854744b6bc": {
    "verdict": "ok",
@@ -93736,6 +94104,14 @@
    "note": "summary cloze from § summary: \"The goal of this classification scheme is to create clusters of species that all are derived from a common ancestor.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "f78dde1196f6038b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): fs-id2796242 (CNXML solution: sin x). sin(x)cos(x)sec(x) = sin(x)cos(x)/cos(x) = sin x; confirmed numerically at x=1 (0.8414709848078965 both sides).",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -94556,10 +94932,6 @@
     "result": "agrees"
    }
   },
-  "f9a0edc14c6ebc04": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (For the following exercise, assume $\\alpha$ is opposite side)"
-  },
   "f9a9e0ed47029852": {
    "verdict": "ok",
    "note": "KC 2 6.5 § Enzyme Compartmentalization, m66463 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -94638,14 +95010,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "f9e3d1ecfca70a14": {
-   "verdict": "ok",
-   "note": "sec^2x=1 -> cos^2x=1 -> cos x=+-1 -> x=0,pi on [0,2pi); standard."
-  },
-  "f9e7f002427a5e4e": {
-   "verdict": "ok",
-   "note": "Practice: x=4-t,y=3t+2 -> t=4-x, y=3(4-x)+2=-3x+14; node-verified residual ~0 over t=-2..5; matches CNXML solution."
   },
   "f9e9a2695b090e0c": {
    "verdict": "ok",
@@ -94830,10 +95194,6 @@
   "fa878f7c3c302afd": {
    "verdict": "ok"
   },
-  "fa87f110b6d6bede": {
-   "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $x+3y=6$ represent?)"
-  },
   "fa920bfb2a8b5535": {
    "verdict": "ok",
    "note": "key-term recall: Tetanus; printed in § Clostridium -Associated Diseases: \"Clostridium spp. produce more types of protein exotoxins than any other bacterial genus, including two exotoxins with protease activity tha…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -94939,6 +95299,14 @@
    "note": "KC 5 21.4 § Tineas, m58909 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fad3dd8a6f581236": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): TI5 (adapted from verify-identity to simplify-to-single-function): tanθcotθ-cos²θ = (sinθ/cosθ)(cosθ/sinθ)-cos²θ = 1-cos²θ = sin²θ, matches CNXML's own worked steps for this Try It.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -95055,10 +95423,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "fb06ff499b2e827a": {
-   "verdict": "ok",
-   "note": "TryIt6 (source ti_08_01_07, blimp, baseline AB=145yd, angle A=70, angle B=62): angle C=48; AC=AB*sin(B)/sin(C)=172.278; height=AC*sin(A)=161.888 -> 161.9 yd. Matches CNXML '161.9 yd'."
   },
   "fb0e04164e099858": {
    "verdict": "ok"
@@ -95353,6 +95717,10 @@
     "result": "agrees"
    }
   },
+  "fba9ac5205f373a5": {
+   "verdict": "ok",
+   "note": "Table (0,-4)(3,-1)(6,2)(9,-1)(12,-4)(15,-1)(18,2): amplitude (2-(-4))/2=3, midline (2+(-4))/2=-1, period 12 -> B=pi/6, minimum at x=0 -> -cos form. y=-3cos(pi/6 x)-1 numerically checked against all 7 table points (matches source exercise #5 solution). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "fbac72cf180e625a": {
    "verdict": "ok",
    "note": "source exercise fs-idp162905184 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -95384,10 +95752,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "fbb8a8393cb4d43e": {
-   "verdict": "ok",
-   "note": "Authored answer is the corrected key (a=5, c=6, f=2/pi) for source defect errata #53 (printed key 6, -6 contradicts its own equation); independently derived by matching f(t)=5e^{-6t}cos(4t) against ae^{-ct}cos(omega t)."
   },
   "fbb8da95c83fba35": {
    "verdict": "ok",
@@ -95487,9 +95851,17 @@
     "result": "agrees"
    }
   },
+  "fc0eeaaa958581cb": {
+   "verdict": "ok",
+   "note": "x=6cos45=3sqrt2, y=6sin45=3sqrt2. node -e 6*Math.cos(45deg)=4.2426=3*Math.sqrt(2), matches source's own answer 3sqrt2 i+3sqrt2 j. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
   "fc1822a7d82c1a06": {
    "verdict": "ok",
    "note": "Solved 4=7.85(1.15)^x-2.27 -> x=ln((4+2.27)/7.85)/ln(1.15) computed with node: -1.6079998... rounds to -1.608, matches CNXML Try It ti_04_02_03 solution exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "fc1a47ff3cd39991": {
+   "verdict": "ok",
+   "note": "same value as caf7458156c38afa: cos(pi/12)=(sqrt2+sqrt6)/4, confirmed numerically. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "fc28feadcf09f77b": {
    "verdict": "ok",
@@ -95914,10 +96286,6 @@
    "verdict": "ok",
    "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
-  "fd33a1fe71ce6a7d": {
-   "verdict": "ok",
-   "note": "Graph-mode MC: correct option is the exact r=3cos(3θ) sampled polyline (3 petals, index 0 after reorder — verified visually via svgshot: 3-petal rose vs distractors 4-petal (n confusion), rotated 3-petal (cos vs sin), and shorter 3-petal (a=2 not 3)); matches source's printed answer image and the 'Rose curve, n odd' text."
-  },
   "fd3699a5e8f123a5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -96005,10 +96373,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "fd5afde350f47588": {
-   "verdict": "ok",
-   "note": "Independently derived: x=-1*cos(2pi/3)=0.5, y=-1*sin(2pi/3)=-0.8660 -> (1/2,-sqrt3/2). Matches CNXML solution exactly. Replayed through check-answer.mjs: self-grades correct, no retype hazard."
   },
   "fd5deddf15f1e168": {
    "verdict": "ok",
@@ -96387,9 +96751,13 @@
     "result": "agrees"
    }
   },
-  "fe4ad35d458c58c6": {
+  "fe4a7fd133d8344f": {
    "verdict": "ok",
-   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=2-2\\cos\\theta$. What is the name)"
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Figure-read item (Section Exercises Q41/fs-id1165134108566): CNXML solution prints (3, 3pi/4); alt text describes point on third concentric circle midway between pi/2 and pi, matching r=3, theta=3pi/4. radians token verified: self-grades correct, rejects a degree-spoofed (3,135deg) retype.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "fe4b245240e12dba": {
    "verdict": "ok",
@@ -96584,10 +96952,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "fee74e0ffb389c78": {
-   "verdict": "ok",
-   "note": "atan(-0.34)=-0.327739->-0.3277 (node), period pi; representative in (-pi/2,pi/2) as pinned. Parent re-derivation after edit."
   },
   "feec289561c0ccd8": {
    "verdict": "ok",

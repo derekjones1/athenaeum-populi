@@ -83,9 +83,9 @@ $$
 
 {{< fillin
   question="Solve exactly the following linear equation on the interval $[0,2\pi)$: $2\sin x+1=0$."
-  answer="7\pi/6,11\pi/6"
+  answer="\frac{7\pi}{6},\frac{11\pi}{6}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$x=\tfrac{7\pi}{6}$ or $x=\tfrac{11\pi}{6}$"
   hint="Isolate $\sin x$, then find both angles in $[0,2\pi)$ with that sine value."
 >}}
@@ -140,9 +140,9 @@ Over the interval $[0,2\pi)$, we have two solutions:
 $$\tfrac{3\pi}{4}\ \text{and}\ \tfrac{3\pi}{4}+\pi=\tfrac{7\pi}{4}$$
 
 {{< fillin
-  question="Find all solutions for $\tan x=\sqrt3$, using $k$ for any integer and the representative angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$."
-  answer="\pi/3+k\pi"
-  answerForm="radians"
+  question="Find all solutions for $\tan x=\sqrt3$. Use $k$ for any integer, and write the solutions as the representative angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$ plus $k\pi$."
+  answer="\frac{\pi}{3}+k\pi"
+  answerForm="evaluated-trig radians no-like-terms"
   answerDisplay="$x=\tfrac{\pi}{3}+k\pi$"
   hint="Tangent has period $\pi$: find the one solution in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$, then add $k\pi$ for every integer $k$."
 >}}
@@ -212,7 +212,7 @@ $$
 Since $\tfrac{\pi}{2}\approx1.57$ and $\pi\approx3.14$, $1.8235$ is between these two numbers, thus $\theta\approx1.8235$ is in quadrant II. Cosine is also negative in quadrant III. Note that a calculator will only return an angle in quadrants I or II for the cosine function, since that is the range of the inverse cosine, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An angle theta of about 1.8235 radians in standard position, terminal side in quadrant II, with the reference angle of about 1.3181 radians marked between the terminal side and the negative x-axis; a second terminal side in quadrant III at about 4.4597 radians is the mirror image across the x-axis, at the same reference angle from the negative x-axis.","xMin":-2.1,"xMax":1.9,"yMin":-2,"yMax":1.9,"grid":false,"tickLabels":false,"unit":85,"segments":[{"from":[0,0],"to":[-0.325,1.259],"arrows":"end"},{"from":[0,0],"to":[-0.325,-1.259],"arrows":"end"}],"circles":[{"at":[0,0],"r":0.95,"from":0,"to":104.48},{"at":[0,0],"r":0.45,"from":104.48,"to":180},{"at":[0,0],"r":0.68,"from":180,"to":255.52}],"texts":[{"at":[0.55,1.4],"text":"θ ≈ 1.8235"},{"at":[-2.05,0.78],"text":"θ′ ≈ π − 1.8235 ≈ 1.3181"},{"at":[-2.05,-1.05],"text":"θ′ ≈ π + 1.3181 ≈ 4.4597"}]}
+{"ariaLabel":"Two terminal sides in standard position. One lies in quadrant II at θ ≈ 1.8235 radians, marked by an arc from the positive x-axis; a small arc between that side and the negative x-axis marks the reference angle θ′ ≈ π − 1.8235 ≈ 1.3181. The other lies in quadrant III, the mirror image of the first across the x-axis, marked by a larger arc from the positive x-axis labeled π + 1.3181 ≈ 4.4597.","xMin":-3.2,"xMax":2,"yMin":-1.9,"yMax":1.9,"grid":false,"tickLabels":false,"unit":80,"segments":[{"from":[0,0],"to":[-0.4,1.549],"arrows":"end"},{"from":[0,0],"to":[-0.4,-1.549],"arrows":"end"},{"from":[0.7,0.78],"to":[0.401,0.446]},{"from":[-0.95,0.9],"to":[-0.709,0.554]},{"from":[-0.7,-0.88],"to":[-0.247,-0.247]}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":104.48},{"at":[0,0],"r":0.9,"from":104.48,"to":180},{"at":[0,0],"r":0.35,"from":0,"to":255.52}],"texts":[{"at":[0.75,0.85],"text":"θ ≈ 1.8235"},{"at":[-1.0,0.95],"text":"θ′ ≈ π − 1.8235 ≈ 1.3181","anchor":"end"},{"at":[-0.75,-1.0],"text":"π + 1.3181 ≈ 4.4597","anchor":"end"}]}
 {{< /apfigure >}}
 
 So, we also need to find the measure of the angle in quadrant III. In quadrant III, the reference angle is $\theta'\approx\pi-1.8235\approx1.3181$. The other solution in quadrant III is $\pi+1.3181\approx4.4597$.
@@ -220,10 +220,10 @@ So, we also need to find the measure of the angle in quadrant III. In quadrant I
 The solutions are $1.8235\pm2\pi k$ and $4.4597\pm2\pi k$.
 
 {{< fillin
-  question="Solve $\cos\theta=-0.2$, giving each family of solutions to four decimal places, using $k$ for any integer and representative angles in $[0,2\pi)$."
+  question="Solve $\cos\theta=-0.2$, giving each family of solutions to four decimal places. Use $k$ for any integer, and write each family as its representative angle in $[0,2\pi)$ plus $2k\pi$."
   answer="1.7722+2k\pi,4.5110+2k\pi"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="radians no-like-terms"
   answerDisplay="$\theta\approx1.7722+2k\pi$ or $\theta\approx4.5110+2k\pi$"
   hint="Use the inverse cosine for one representative angle in quadrant II; cosine is also negative in quadrant III, so subtract that angle from $2\pi$ for the second family, then add $2k\pi$ to each."
 >}}
@@ -258,21 +258,11 @@ $$
 
 Note that only the $+$ sign is used. This is because we get an error when we solve $\theta=\cos^{-1}\left(\tfrac{-3-\sqrt{13}}{2}\right)$ on a calculator, since the domain of the inverse cosine function is $[-1,1]$. However, there is a second solution:
 
-$$
-\begin{array}{lrcl}
-& \cos^{-1}\left(\tfrac{-3+\sqrt{13}}{2}\right) \\[4pt]
-& \approx1.26
-\end{array}
-$$
+$$\cos^{-1}\left(\tfrac{-3+\sqrt{13}}{2}\right)\approx1.26$$
 
 This terminal side of the angle lies in quadrant I. Since cosine is also positive in quadrant IV, the second solution is
 
-$$
-\begin{array}{lrcl}
-& 2\pi-\cos^{-1}\left(\tfrac{-3+\sqrt{13}}{2}\right) \\[4pt]
-& \approx5.02
-\end{array}
-$$
+$$2\pi-\cos^{-1}\left(\tfrac{-3+\sqrt{13}}{2}\right)\approx5.02$$
 
 **Example.** Solve the equation exactly: $2\sin^2\theta-5\sin\theta+3=0,\ 0\le\theta\le2\pi$.
 
@@ -309,7 +299,7 @@ Next solve for $\theta$: $\sin\theta\ne\tfrac32$, as the range of the sine funct
 {{< fillin
   question="Solve $\sin^2\theta=2\cos\theta+2$ on $[0,2\pi]$."
   answer="\pi"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\pi$"
   hint="Replace $\sin^2\theta$ with $1-\cos^2\theta$ so the equation is entirely in terms of $\cos\theta$, then solve the resulting equation."
 >}}
@@ -378,16 +368,16 @@ $$
 **Analysis.** We can see the solutions on the graph below. On the interval $0\le\theta<2\pi$, the graph crosses the $x$-axis four times, at the solutions noted. Notice that trigonometric equations that are in quadratic form can yield up to four solutions instead of the expected two that are found with quadratic equations. In this example, each solution (angle) corresponding to a positive sine value will yield two angles that would result in that value.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y equals 2 sine squared theta plus sine theta from negative pi over 6 to 13 pi over 6, a repeating wave rising from 0 at theta equals 0 to a peak of about 3 near theta equals pi over 2, back down through zero at theta equals pi, dipping to a shallow trough of about negative 0.13 before crossing zero at 7 pi over 6, rising to a smaller hump of about 1 near theta equals 3 pi over 2, crossing zero again at 11 pi over 6, dipping to a second shallow trough, then rising again past 2 pi.","xMin":-0.75,"xMax":7.05,"yMin":-2.9,"yMax":4.5,"grid":false,"tickLabels":"y","yTickStep":1,"unit":105,"polylines":[{"through":[[-0.5236,0],[-0.4625,-0.048],[-0.4014,-0.0854],[-0.3403,-0.111],[-0.2793,-0.1237],[-0.2182,-0.1227],[-0.1571,-0.1075],[-0.096,-0.0775],[-0.0349,-0.0325],[0.0262,0.0275],[0.0873,0.1023],[0.1484,0.1915],[0.2094,0.2944],[0.2705,0.4101],[0.3316,0.5376],[0.3927,0.6756],[0.4538,0.8227],[0.5149,0.9774],[0.576,1.1379],[0.637,1.3025],[0.6981,1.4691],[0.7592,1.636],[0.8203,1.8011],[0.8814,1.9624],[0.9425,2.118],[1.0036,2.266],[1.0647,2.4045],[1.1257,2.5319],[1.1868,2.6465],[1.2479,2.747],[1.309,2.832],[1.3701,2.9004],[1.4312,2.9515],[1.4923,2.9846],[1.5533,2.9992],[1.6144,2.9952],[1.6755,2.9727],[1.7366,2.9318],[1.7977,2.8732],[1.8588,2.7975],[1.9199,2.7057],[1.9809,2.5991],[2.042,2.4788],[2.1031,2.3464],[2.1642,2.2036],[2.2253,2.0522],[2.2864,1.8939],[2.3475,1.7307],[2.4086,1.5646],[2.4696,1.3976],[2.5307,1.2316],[2.5918,1.0685],[2.6529,0.9103],[2.714,0.7586],[2.7751,0.6152],[2.8362,0.4816],[2.8972,0.359],[2.9583,0.2487],[3.0194,0.1516],[3.0805,0.0685],[3.1416,0],[3.2027,-0.0536],[3.2638,-0.0922],[3.3249,-0.1158],[3.3859,-0.1249],[3.447,-0.1199],[3.5081,-0.1015],[3.5692,-0.0708],[3.6303,-0.0287],[3.6914,0.0235],[3.7525,0.0844],[3.8135,0.1525],[3.8746,0.2263],[3.9357,0.3042],[3.9968,0.3845],[4.0579,0.4655],[4.119,0.5456],[4.1801,0.6232],[4.2412,0.6968],[4.3022,0.7649],[4.3633,0.8264],[4.4244,0.8799],[4.4855,0.9244],[4.5466,0.9592],[4.6077,0.9836],[4.6688,0.9971],[4.7298,0.9995],[4.7909,0.9908],[4.852,0.971],[4.9131,0.9406],[4.9742,0.9001],[5.0353,0.8503],[5.0964,0.7922],[5.1574,0.7267],[5.2185,0.6553],[5.2796,0.5792],[5.3407,0.5],[5.4018,0.4192],[5.4629,0.3384],[5.524,0.2593],[5.5851,0.1836],[5.6461,0.1128],[5.7072,0.0486],[5.7683,-0.0075],[5.8294,-0.054],[5.8905,-0.0898],[5.9516,-0.1136],[6.0127,-0.1244],[6.0737,-0.1215],[6.1348,-0.1041],[6.1959,-0.072],[6.257,-0.0248],[6.3181,0.0373],[6.3792,0.1142],[6.4403,0.2054],[6.5014,0.3101],[6.5624,0.4276],[6.6235,0.5567],[6.6846,0.6961],[6.7457,0.8444],[6.8068,1]],"arrows":"end"}],"texts":[{"at":[-0.5236,-1.6],"text":"−π/6","anchor":"middle"},{"at":[-0.09,-0.4],"text":"0","anchor":"middle"},{"at":[0.5236,-0.85],"text":"π/6","anchor":"middle"},{"at":[1.0472,-0.4],"text":"π/3","anchor":"middle"},{"at":[1.5708,-0.85],"text":"π/2","anchor":"middle"},{"at":[2.0944,-0.4],"text":"2π/3","anchor":"middle"},{"at":[2.618,-0.85],"text":"5π/6","anchor":"middle"},{"at":[3.1416,-0.4],"text":"π","anchor":"middle"},{"at":[3.6652,-0.85],"text":"7π/6","anchor":"middle"},{"at":[4.1888,-0.4],"text":"4π/3","anchor":"middle"},{"at":[4.7124,-0.85],"text":"3π/2","anchor":"middle"},{"at":[5.236,-0.4],"text":"5π/3","anchor":"middle"},{"at":[5.7596,-0.85],"text":"11π/6","anchor":"middle"},{"at":[6.2832,-0.4],"text":"2π","anchor":"middle"},{"at":[6.8068,-0.85],"text":"13π/6","anchor":"middle"}]}
+{"ariaLabel":"The graph of y equals 2 sine squared theta plus sine theta from negative pi over 6 to 13 pi over 6, with the theta-axis marked in multiples of pi over 6. Starting at zero at negative pi over 6, the curve dips slightly below the axis, rises through zero at theta equals 0 to a peak of 3 at pi over 2, comes back down to zero at pi, dips to a shallow trough of about negative 0.13 and crosses zero again at 7 pi over 6, rises to a smaller hump of 1 at 3 pi over 2, returns to zero at 11 pi over 6, dips to a second shallow trough, and rises again past 2 pi.","xMin":-0.75,"xMax":7.05,"yMin":-0.95,"yMax":4.5,"xLabel":"θ","grid":false,"tickLabels":"y","yTickStep":1,"unit":105,"segments":[{"from":[-0.5236,-0.07],"to":[-0.5236,0.07]},{"from":[0.5236,-0.07],"to":[0.5236,0.07]},{"from":[1.0472,-0.07],"to":[1.0472,0.07]},{"from":[1.5708,-0.07],"to":[1.5708,0.07]},{"from":[2.0944,-0.07],"to":[2.0944,0.07]},{"from":[2.618,-0.07],"to":[2.618,0.07]},{"from":[3.1416,-0.07],"to":[3.1416,0.07]},{"from":[3.6652,-0.07],"to":[3.6652,0.07]},{"from":[4.1888,-0.07],"to":[4.1888,0.07]},{"from":[4.7124,-0.07],"to":[4.7124,0.07]},{"from":[5.236,-0.07],"to":[5.236,0.07]},{"from":[5.7596,-0.07],"to":[5.7596,0.07]},{"from":[6.2832,-0.07],"to":[6.2832,0.07]},{"from":[6.8068,-0.07],"to":[6.8068,0.07]}],"polylines":[{"through":[[-0.5236,-0.0],[-0.4625,-0.048],[-0.4014,-0.0854],[-0.3403,-0.111],[-0.2793,-0.1237],[-0.2182,-0.1227],[-0.1571,-0.1075],[-0.096,-0.0775],[-0.0349,-0.0325],[0.0262,0.0275],[0.0873,0.1023],[0.1484,0.1915],[0.2094,0.2944],[0.2705,0.4101],[0.3316,0.5376],[0.3927,0.6756],[0.4538,0.8227],[0.5149,0.9774],[0.576,1.1379],[0.637,1.3025],[0.6981,1.4691],[0.7592,1.636],[0.8203,1.8011],[0.8814,1.9624],[0.9425,2.118],[1.0036,2.266],[1.0647,2.4045],[1.1257,2.5319],[1.1868,2.6465],[1.2479,2.747],[1.309,2.832],[1.3701,2.9004],[1.4312,2.9515],[1.4923,2.9846],[1.5533,2.9992],[1.6144,2.9952],[1.6755,2.9727],[1.7366,2.9318],[1.7977,2.8732],[1.8588,2.7975],[1.9199,2.7057],[1.9809,2.5991],[2.042,2.4788],[2.1031,2.3464],[2.1642,2.2036],[2.2253,2.0522],[2.2864,1.8939],[2.3475,1.7307],[2.4086,1.5646],[2.4696,1.3976],[2.5307,1.2316],[2.5918,1.0685],[2.6529,0.9103],[2.714,0.7586],[2.7751,0.6152],[2.8362,0.4816],[2.8972,0.359],[2.9583,0.2487],[3.0194,0.1516],[3.0805,0.0685],[3.1416,-0.0],[3.2027,-0.0536],[3.2638,-0.0922],[3.3249,-0.1158],[3.3859,-0.1249],[3.447,-0.1199],[3.5081,-0.1015],[3.5692,-0.0708],[3.6303,-0.0287],[3.6914,0.0235],[3.7525,0.0844],[3.8135,0.1525],[3.8746,0.2263],[3.9357,0.3042],[3.9968,0.3845],[4.0579,0.4655],[4.119,0.5456],[4.1801,0.6232],[4.2412,0.6968],[4.3022,0.7649],[4.3633,0.8264],[4.4244,0.8799],[4.4855,0.9244],[4.5466,0.9592],[4.6077,0.9836],[4.6688,0.9971],[4.7298,0.9995],[4.7909,0.9908],[4.852,0.971],[4.9131,0.9406],[4.9742,0.9001],[5.0353,0.8503],[5.0964,0.7922],[5.1574,0.7267],[5.2185,0.6553],[5.2796,0.5792],[5.3407,0.5],[5.4018,0.4192],[5.4629,0.3384],[5.524,0.2593],[5.5851,0.1836],[5.6461,0.1128],[5.7072,0.0486],[5.7683,-0.0075],[5.8294,-0.054],[5.8905,-0.0898],[5.9516,-0.1136],[6.0127,-0.1244],[6.0737,-0.1215],[6.1348,-0.1041],[6.1959,-0.072],[6.257,-0.0248],[6.3181,0.0373],[6.3792,0.1142],[6.4403,0.2054],[6.5014,0.3101],[6.5624,0.4276],[6.6235,0.5567],[6.6846,0.6961],[6.7457,0.8444],[6.8068,1.0]],"arrows":true}],"texts":[{"at":[-0.5236,-0.85],"text":"−π/6","anchor":"middle"},{"at":[-0.09,-0.4],"text":"0","anchor":"middle"},{"at":[0.5236,-0.85],"text":"π/6","anchor":"middle"},{"at":[1.0472,-0.4],"text":"π/3","anchor":"middle"},{"at":[1.5708,-0.85],"text":"π/2","anchor":"middle"},{"at":[2.0944,-0.4],"text":"2π/3","anchor":"middle"},{"at":[2.618,-0.85],"text":"5π/6","anchor":"middle"},{"at":[3.1416,-0.4],"text":"π","anchor":"middle"},{"at":[3.6652,-0.85],"text":"7π/6","anchor":"middle"},{"at":[4.1888,-0.4],"text":"4π/3","anchor":"middle"},{"at":[4.7124,-0.85],"text":"3π/2","anchor":"middle"},{"at":[5.236,-0.4],"text":"5π/3","anchor":"middle"},{"at":[5.7596,-0.85],"text":"11π/6","anchor":"middle"},{"at":[6.2832,-0.4],"text":"2π","anchor":"middle"},{"at":[6.8068,-0.85],"text":"13π/6","anchor":"middle"}]}
 {{< /apfigure >}}
 
 We can verify the solutions on the unit circle as well.
 
 {{< fillin
   question="Solve the quadratic equation $2\cos^2\theta+\cos\theta=0$ on $[0,2\pi)$."
-  answer="\pi/2,2\pi/3,4\pi/3,3\pi/2"
+  answer="\frac{\pi}{2},\frac{2\pi}{3},\frac{4\pi}{3},\frac{3\pi}{2}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\tfrac{\pi}{2},\tfrac{2\pi}{3},\tfrac{4\pi}{3},\tfrac{3\pi}{2}$"
   hint="Factor out $\cos\theta$, then set each resulting factor equal to zero and solve separately."
 >}}
@@ -564,7 +554,7 @@ We can now use all of the methods we have learned to solve problems that involve
 One of the cables that anchors the center of the London Eye Ferris wheel to the ground must be replaced. The center of the Ferris wheel is $69.5$ meters above the ground, and the second anchor on the ground is $23$ meters from the base of the Ferris wheel. Approximately how long is the cable, and what is the angle of elevation (from ground up to the center of the Ferris wheel)? See the figure below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle representing the Ferris wheel cable: the second ground anchor is the bottom-left vertex, with angle theta; the base of the wheel's support is the bottom-right vertex, marked with a right angle; the vertical leg from there up to the wheel's center measures 69.5 meters and the horizontal leg measures 23 meters. A circle representing the Ferris wheel is centered at the top vertex.","unit":5,"polygons":[{"points":[[0,0],[23,0],[23,69.5]],"edgeLabels":["23","69.5",null],"vertexLabels":["θ",null,null],"rightAngles":[1]}],"circles":[{"at":[23,69.5],"r":15}]}
+{"ariaLabel":"A right triangle representing the Ferris wheel cable: the second ground anchor is the bottom-left vertex, where the angle theta between the ground and the cable is marked with an arc; the base of the wheel's support is the bottom-right vertex, marked with a right angle; the vertical leg from there up to the wheel's center measures 69.5 meters and the horizontal leg measures 23 meters. A circle representing the Ferris wheel is centered at the top vertex.","unit":5,"polygons":[{"points":[[0,0],[23,0],[23,69.5]],"edgeLabels":["23","69.5",null],"rightAngles":[1]}],"circles":[{"at":[23,69.5],"r":15},{"at":[0,0],"r":6,"from":0,"to":71.69}],"texts":[{"at":[8.5,5.5],"text":"θ"}]}
 {{< /apfigure >}}
 
 **Solution.** Using the information given, we can draw a right triangle. We can find the length of the cable with the Pythagorean Theorem.
@@ -582,7 +572,7 @@ The angle of elevation is $\theta$, formed by the second anchor on the ground an
 $$
 \begin{array}{lrcl}
 & \tan\theta &=& \tfrac{69.5}{23} \\[4pt]
-& \tan^{-1}\left(\tfrac{69.5}{23}\right) &\approx& 1.2522 \\[4pt]
+& \tan^{-1}\left(\tfrac{69.5}{23}\right) &\approx& 1.2512 \\[4pt]
 & &\approx& 71.69^\circ
 \end{array}
 $$
@@ -596,7 +586,7 @@ OSHA safety regulations require that the base of a ladder be placed $1$ foot fro
 **Solution.** For any length of ladder, the base needs to be a distance from the wall equal to one fourth of the ladder's length. Equivalently, if the base of the ladder is "$a$" feet from the wall, the length of the ladder will be $4a$ feet. See the figure below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle representing the ladder problem: angle theta at the bottom-left vertex between the ground and the ladder, a right angle at the bottom-right vertex, the horizontal base labeled a, the vertical wall side labeled b, and the hypotenuse (the ladder) labeled 4a.","unit":70,"polygons":[{"points":[[0,0],[2,0],[2,3]],"edgeLabels":["a","b","4a"],"vertexLabels":["θ",null,null],"rightAngles":[1]}]}
+{"ariaLabel":"A right triangle representing the ladder problem: angle theta, marked with an arc, at the bottom-left vertex between the ground and the ladder; a right angle at the bottom-right vertex; the horizontal base labeled a, the vertical wall side labeled b, and the hypotenuse (the ladder) labeled 4a, drawn four times as long as the base.","unit":60,"polygons":[{"points":[[0,0],[1,0],[1,3.873]],"edgeLabels":["a","b","4a"],"rightAngles":[1]}],"circles":[{"at":[0,0],"r":0.3,"from":0,"to":75.52}],"texts":[{"at":[0.4,0.3],"text":"θ"}]}
 {{< /apfigure >}}
 
 The side adjacent to $\theta$ is $a$ and the hypotenuse is $4a$. Thus,
@@ -638,18 +628,18 @@ Thus, the ladder touches the wall at $\sqrt{15}\,a$ feet from the ground.
 
 {{< fillin
   question="Find all exact solutions on $[0,2\pi)$: $2\sin\theta=\sqrt3$."
-  answer="\pi/3,2\pi/3"
+  answer="\frac{\pi}{3},\frac{2\pi}{3}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\tfrac{\pi}{3}$ or $\theta=\tfrac{2\pi}{3}$"
   hint="Isolate $\sin\theta$, then find both angles in $[0,2\pi)$ with that sine value."
 >}}
 
 {{< fillin
   question="Solve exactly on $[0,2\pi)$: $2\cos\theta=-\sqrt2$."
-  answer="3\pi/4,5\pi/4"
+  answer="\frac{3\pi}{4},\frac{5\pi}{4}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\tfrac{3\pi}{4}$ or $\theta=\tfrac{5\pi}{4}$"
   hint="Isolate $\cos\theta$; a negative cosine puts the solutions in quadrants II and III."
 >}}
@@ -657,38 +647,38 @@ Thus, the ladder touches the wall at $\sqrt{15}\,a$ feet from the ground.
 ### Solve equations involving a single trigonometric function
 
 {{< fillin
-  question="Find all solutions exactly on $[0,2\pi)$: $4\sin^2x-2=0$."
-  answer="\pi/4,3\pi/4,5\pi/4,7\pi/4"
+  question="Find all solutions exactly on $[0,2\pi)$: $\tan x=1$."
+  answer="\frac{\pi}{4},\frac{5\pi}{4}"
   answerMode="unordered"
-  answerForm="radians"
-  answerDisplay="$x=\tfrac{\pi}{4},\tfrac{3\pi}{4},\tfrac{5\pi}{4},\tfrac{7\pi}{4}$"
-  hint="Solve for $\sin^2x$, then apply the square root property and keep both signs."
+  answerForm="evaluated-trig radians single-term"
+  answerDisplay="$x=\tfrac{\pi}{4}$ or $x=\tfrac{5\pi}{4}$"
+  hint="Find the one angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$ with that tangent value, then use the period of tangent to find every other solution in $[0,2\pi)$."
 >}}
 
 {{< fillin
   question="Solve exactly on $[0,2\pi)$: $\sec^2x=1$."
   answer="0,\pi"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$x=0$ or $x=\pi$"
-  hint="Rewrite in terms of cosine: $\sec^2x=1$ means $\cos^2x=1$, so $\cos x=\pm1$."
+  hint="Rewrite the secant as the reciprocal of cosine, take the square root of both sides keeping both signs, then find the angles on the unit circle."
 >}}
 
 ### Solve trigonometric equations using a calculator
 
 {{< fillin
-  question="Use a calculator to find all solutions to $\sin x=0.27$, to four decimal places, using $k$ for any integer and representative angles in $[0,2\pi)$."
+  question="Use a calculator to find all solutions to $\sin x=0.27$, to four decimal places. Use $k$ for any integer, and write each family as its representative angle in $[0,2\pi)$ plus $2k\pi$."
   answer="2k\pi+0.2734,2k\pi+2.8682"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="radians no-like-terms"
   answerDisplay="$x=2k\pi+0.2734$ or $x=2k\pi+2.8682$"
   hint="Use the inverse sine for one representative angle, use $\pi$ minus that angle for the other family, then add $2k\pi$ to each."
 >}}
 
 {{< fillin
-  question="Use a calculator to find all solutions to $\tan x=-0.34$, to four decimal places, using $k$ for any integer and the representative angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$."
+  question="Use a calculator to find all solutions to $\tan x=-0.34$, to four decimal places. Use $k$ for any integer, and write the solutions as the representative angle in $\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right)$ plus $k\pi$."
   answer="k\pi-0.3277"
-  answerForm="radians"
+  answerForm="radians no-like-terms"
   answerDisplay="$x=k\pi-0.3277$"
   hint="Use the inverse tangent for one representative angle, then add $k\pi$, since tangent repeats every $\pi$."
 >}}
@@ -697,9 +687,9 @@ Thus, the ladder touches the wall at $\sqrt{15}\,a$ feet from the ground.
 
 {{< fillin
   question="Find all exact solutions on $[0,2\pi)$: $\tan^2x-\sqrt3\tan x=0$."
-  answer="0,\pi/3,\pi,4\pi/3"
+  answer="0,\frac{\pi}{3},\pi,\frac{4\pi}{3}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$x=0,\tfrac{\pi}{3},\pi,\tfrac{4\pi}{3}$"
   hint="Factor out $\tan x$, then set each factor equal to zero and solve separately."
 >}}
@@ -719,39 +709,39 @@ $x=\tfrac{\pi}{2},\tfrac{3\pi}{2}$
 
 {{< fillin
   question="Find all exact solutions on $[0,2\pi)$: $\cos^3t=\cos t$."
-  answer="0,\pi/2,\pi,3\pi/2"
+  answer="0,\frac{\pi}{2},\pi,\frac{3\pi}{2}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$t=0,\tfrac{\pi}{2},\pi,\tfrac{3\pi}{2}$"
   hint="Move every term to one side and factor out $\cos t$; the remaining factor is a Pythagorean identity in disguise."
 >}}
 
 {{< fillin
   question="Find all exact solutions on $[0,2\pi)$: $12\sin^2t+\cos t-6=0$."
-  answer="\cos^{-1}(3/4),\cos^{-1}(-2/3),2\pi-\cos^{-1}(-2/3),2\pi-\cos^{-1}(3/4)"
+  answer="\cos^{-1}(\frac{3}{4}),\cos^{-1}(-\frac{2}{3}),2\pi-\cos^{-1}(-\frac{2}{3}),2\pi-\cos^{-1}(\frac{3}{4})"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="radians no-like-terms"
   answerDisplay="$t=\cos^{-1}\left(\tfrac34\right),\cos^{-1}\left(-\tfrac23\right),2\pi-\cos^{-1}\left(-\tfrac23\right),2\pi-\cos^{-1}\left(\tfrac34\right)$"
-  hint="Replace $\sin^2t$ with $1-\cos^2t$ to get a quadratic in $\cos t$, then solve with the quadratic formula."
+  hint="Replace $\sin^2t$ with $1-\cos^2t$ to get a quadratic in $\cos t$, solve it by factoring or the quadratic formula, then find two angles for each value of $\cos t$."
 >}}
 
 ### Solve trigonometric equations with multiple angles
 
 {{< fillin
   question="Find all exact solutions on $[0,2\pi)$: $2\sin(3\theta)=1$."
-  answer="\pi/18,5\pi/18,13\pi/18,17\pi/18,25\pi/18,29\pi/18"
+  answer="\frac{\pi}{18},\frac{5\pi}{18},\frac{13\pi}{18},\frac{17\pi}{18},\frac{25\pi}{18},\frac{29\pi}{18}"
   answerMode="unordered"
-  answerForm="radians"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\tfrac{\pi}{18},\tfrac{5\pi}{18},\tfrac{13\pi}{18},\tfrac{17\pi}{18},\tfrac{25\pi}{18},\tfrac{29\pi}{18}$"
   hint="Solve for $\sin(3\theta)$ first, list every angle for $3\theta$ across three full revolutions, then divide each by $3$."
 >}}
 
 {{< fillin
   question="Find all exact solutions on $[0,2\pi)$: $2\cos(3\theta)=-\sqrt2$."
-  answer="3\pi/12,5\pi/12,11\pi/12,13\pi/12,19\pi/12,21\pi/12"
+  answer="\frac{\pi}{4},\frac{5\pi}{12},\frac{11\pi}{12},\frac{13\pi}{12},\frac{19\pi}{12},\frac{7\pi}{4}"
   answerMode="unordered"
-  answerForm="radians"
-  answerDisplay="$\theta=\tfrac{3\pi}{12},\tfrac{5\pi}{12},\tfrac{11\pi}{12},\tfrac{13\pi}{12},\tfrac{19\pi}{12},\tfrac{21\pi}{12}$"
+  answerForm="evaluated-trig radians single-term"
+  answerDisplay="$\theta=\tfrac{\pi}{4},\tfrac{5\pi}{12},\tfrac{11\pi}{12},\tfrac{13\pi}{12},\tfrac{19\pi}{12},\tfrac{7\pi}{4}$"
   hint="Solve for $\cos(3\theta)$ first, list every angle for $3\theta$ across three full revolutions, then divide each by $3$."
 >}}
 
@@ -775,4 +765,4 @@ $x=\tfrac{\pi}{2},\tfrac{3\pi}{2}$
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 7.5: Solving Trigonometric Equations](https://openstax.org/books/precalculus-2e/pages/7-5-solving-trigonometric-equations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photo of the Egyptian pyramids (Figure 1), which carries no mathematics beyond the credit line; recreated the four instructional figures as accessible spec-first SVGs — the reference-angle diagram accompanying the calculator secant example (two terminal rays in standard position with their arcs, sampled from the exact solved angles); the graph of $y=2\sin^2\theta+\sin\theta$ accompanying its Analysis, sampled as a dense polyline from the exact formula over $\left[-\tfrac{\pi}{6},\tfrac{13\pi}{6}\right]$ (never a freehand curve) with the source's own $\tfrac{\pi}{6}$-multiple tick labels; the Ferris wheel right triangle with the wheel drawn as a circle centered at the cable's top vertex; and the generic ladder right triangle. Three sentences that cited a "unit circle" figure appearing elsewhere in the chapter (a different module's figure, not this section's own) are reworded to refer to the unit circle generically rather than point at a specific figure number, since that figure is outside this page's scope. Every retained Try It became a real `fillin` component, each carrying the `answerForm` the printed subject demands to block a retype of the equation itself: `radians` on every interval-restricted list and general solution, with `answerMode="unordered"` on every list of two or more members (member order carries no meaning, and the engine grades a swapped order and an equation-wrapped restatement the same). Every general-solution question additionally names $k$ as the integer parameter, states the rounding its own printed key uses, and pins the representative angle's range, since the grader compares one keyed representative strictly — instructions the source's bare "find all solutions" wording leaves implicit. The Try It following Example 12 (a quadratic-in-form equation with no interval stated in the source, unlike every other equation in its subsection) is stated on $[0,2\pi)$ to match the domain its own printed answer key assumes and the domain used by the surrounding worked examples. Adapted fourteen selected end-of-section exercises — two linear, two single-function, two calculator/general-solution, two quadratic-form (one the "no real solution" case recast as a `multiplechoice`, since a categorical non-existence claim has no free-response answer), one identity-based quadratic-form, one pure-identity, two multiple-angle, and two right-triangle word problems — into a closing Practice block, one group per objective, every item independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 7.5: Solving Trigonometric Equations](https://openstax.org/books/precalculus-2e/pages/7-5-solving-trigonometric-equations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photo of the Egyptian pyramids (Figure 1), which carries no mathematics beyond the credit line; recreated the four instructional figures as accessible spec-first SVGs — the reference-angle diagram accompanying the calculator secant example (two terminal rays in standard position at the exact solved angles, each angle marked with an exact arc and a leader to its label; the quadrant III solution is labeled $\pi+1.3181\approx4.4597$, where the source labels it $\theta'$, the symbol its text uses for the reference angle); the graph of $y=2\sin^2\theta+\sin\theta$ accompanying its Analysis, sampled as a dense polyline from the exact formula over $\left[-\tfrac{\pi}{6},\tfrac{13\pi}{6}\right]$ (never a freehand curve) with the source's own $\tfrac{\pi}{6}$-multiple ticks and labels on a $\theta$-axis; the Ferris wheel right triangle with the wheel drawn as a circle centered at the cable's top vertex; and the generic ladder right triangle, drawn to scale with the ladder four times the base and its angle $\theta$ marked with an arc. The Ferris wheel example's radian value $\tan^{-1}\left(\tfrac{69.5}{23}\right)\approx1.2512$ corrects the source's $1.2522$ (its degree value $71.69^\circ$ was already right), and the two quadratic-formula results $\approx1.26$ and $\approx5.02$ are each set on one line. Three sentences that cited a "unit circle" figure appearing elsewhere in the chapter (a different module's figure, not this section's own) are reworded to refer to the unit circle generically rather than point at a specific figure number, since that figure is outside this page's scope. Every retained Try It became a real `fillin` component, each carrying the `answerForm` that refuses an unfinished answer: `evaluated-trig radians single-term` on every exact angle list (an inverse function, a degree measure, or angle arithmetic such as $\pi+\tfrac{\pi}{6}$ left unevaluated is sent back), `radians no-like-terms` on every general solution and on the inverse-cosine list, with `answerMode="unordered"` on every list of two or more members (member order carries no meaning, and the engine grades a swapped order and an equation-wrapped restatement the same). Every general-solution question additionally names $k$ as the integer parameter, states the rounding its own printed key uses, pins the representative angle's range, and asks for the family written as that angle plus $k\pi$ or $2k\pi$ (the source writes $\pm$), since the grader compares one keyed representative strictly — instructions the source's bare "find all solutions" wording leaves implicit. The Try It following Example 12 (a quadratic-in-form equation with no interval stated in the source, unlike every other equation in its subsection) is stated on $[0,2\pi)$ to match the domain its own printed answer key assumes and the domain used by the surrounding worked examples. Adapted fourteen selected end-of-section exercises — two linear, two single-function, two calculator/general-solution, two quadratic-form (one the "no real solution" case recast as a `multiplechoice`, since a categorical non-existence claim has no free-response answer), one identity-based quadratic-form, one pure-identity, two multiple-angle (the $2\cos(3\theta)=-\sqrt2$ key reduced to $\tfrac{\pi}{4}$ and $\tfrac{7\pi}{4}$ where the source prints $\tfrac{3\pi}{12}$ and $\tfrac{21\pi}{12}$), and two right-triangle word problems — into a closing Practice block, one group per objective, every item independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>

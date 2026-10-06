@@ -345,6 +345,45 @@ directly above the Try It it answers (Precalculus 5.2's special-angles unit
 circle and its table above the $\tfrac{5\pi}{3}$ Try It) moves below that Try
 It, disclosed; a summary table far above the Practice block stays.
 
+Since the Precalculus chapters 7–8 re-review (October 5, 2026): a lowercase
+Greek letter is a one-letter label (`\alpha=27.7^\circ` passes `degrees`;
+never `\pi`), a leading `\approx` is dropped on a degree-marked bare-number
+key and on each member of a list of bare numbers
+(`\alpha\approx27.7^\circ,\beta\approx40.5^\circ`), and a labelled bare count
+against a degree key (`A=27.7`) is `form`. Two new trig tokens:
+`no-trig-products` (product-to-sum, power reduction, a sum formula expanded in
+$\sin x$ and $\cos x$ — refuses `\sin x\cos x`, `\cos x\cos\frac{2\pi}{3}`,
+`\cos^2(2x)`, `(1-\cos 6x)^2`; compose `no-like-terms`) and `trig-product`
+(sum-to-product — the key's own product, refuses the printed sum, the
+half-worked averaged arguments and `\cos(-\theta)`), so those items are
+fill-ins, not MC. `no-like-terms` now reads every summed group at any depth
+(`\tan(\frac{15x-14x}{10})`, `\frac{-\sqrt3+1}{1-(-\sqrt3)}`), a trig argument
+with its degree marks off (`3\cdot45^\circ`, `\frac{240^\circ}{3}`), π as a
+numeral in a product (`2\pi\cdot3t`, `2\pi(3)t`), and refuses a numeral times
+a fraction (`2\cdot\frac{\sqrt2}{2}`, `\frac14\cdot\frac{1-\cos 4x}{2}`), a
+numeral power (`5^3`; base 10 exempt), a compound fraction and a squared
+numeral sum (`(1-\sqrt3)^2`); a trig term is never a numeral like term or zero
+term, so the polar key `\frac34(\cos180^\circ+i\sin180^\circ)` passes, and a
+powered group is a base, so the damped key `10(0.85)^t\cos(36\pi t)` takes
+`no-like-terms`. `distributed` and `single-fraction` step over a function's
+argument (`\cos(80^\circ)`, `\frac{1-\cos(4x)}{8}`). `simplified-radical`
+takes a nested radical (`\frac{\sqrt{2-\sqrt2}}{2}`) and refuses a perfect
+power common to a sum radicand (`\sqrt{4x+8}`). On a pair key, a coordinate
+the key rounds to a decimal takes a bare number under any shape token, so
+`(2\sqrt5,0.464)` takes `radians simplified-radical`. A general solution keyed
+with k beside π or a degree mark accepts `\pm k\pi` and `-k\pi` (k ranges over
+every integer; `2k\pi` for `k\pi` stays `incorrect`); a degree family key
+declares no `degrees`. A product-to-sum or power-reduction ask whose stem pins
+"distribute any constant factor" composes `distributed` too (`no-trig-products
+distributed no-like-terms` refuses `\frac12(\cos2x+\cos6x)` and
+`\frac{\cos2x+\cos6x}{2}`). A "rewrite in terms of $\sin x$ and $\cos x$" key
+(a sum formula expanded) takes `expanded no-trig-products no-like-terms`:
+`no-trig-products` alone passes the retyped prompt `\cos(x+\frac{2\pi}{3})`,
+which is one application, not a product. A Try It whose answer is a scalar
+multiple of the worked example directly above it (Precalculus 7.3's
+$10\cos^4x$ under the $\cos^4x$ example) prints its key; swap it for a keyed
+exercise of the same objective, as for an exact repeat.
+
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
 `$-10$` in the wording of a +10 source item pairs with it and fails

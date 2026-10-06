@@ -118,7 +118,7 @@ $$
 Now we can draw a triangle similar to the one shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A right triangle in the coordinate plane with vertices at the origin, (-4, 0), and (-4, 3), a right angle at (-4, 0), standard-position angle theta swept from the positive x-axis to the hypotenuse, and hypotenuse of length 5.","xMin":-5.5,"xMax":1,"yMin":-1,"yMax":4,"grid":false,"tickLabels":false,"unit":75,"segments":[{"from":[0,0],"to":[-4,0]},{"from":[-4,0],"to":[-4,3]},{"from":[0,0],"to":[-4,3],"label":"5"}],"points":[{"at":[-4,3],"label":"(-4, 3)"},{"at":[-4,0],"label":"(-4, 0)"}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":143.13}],"texts":[{"at":[-0.85,0.32],"text":"θ"}]}
+{"ariaLabel":"A right triangle in the coordinate plane with vertices at the origin, (-4, 0), and (-4, 3), a right angle at (-4, 0), standard-position angle theta swept from the positive x-axis to the hypotenuse, and hypotenuse of length 5.","xMin":-5.5,"xMax":1,"yMin":-1,"yMax":4,"grid":false,"tickLabels":false,"unit":75,"segments":[{"from":[0,0],"to":[-4,0]},{"from":[-4,0],"to":[-4,3]},{"from":[0,0],"to":[-4,3],"label":"5"},{"from":[-3.75,0],"to":[-3.75,0.25]},{"from":[-3.75,0.25],"to":[-4,0.25]}],"points":[{"at":[-4,3],"label":"(-4, 3)"},{"at":[-4,0],"label":"(-4, 0)"}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":143.13}],"texts":[{"at":[0.45,0.75],"text":"θ"}]}
 {{< /apfigure >}}
 
 ⓐ Let's begin by writing the double-angle formula for sine.
@@ -171,7 +171,8 @@ $$
 
 {{< fillin
   question="Given $\sin\alpha=\tfrac58$, with $\alpha$ in quadrant I, find $\cos(2\alpha)$."
-  answer="7/32"
+  answer="\frac{7}{32}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac{7}{32}$"
   hint="Use $\cos(2\alpha)=1-2\sin^2\alpha$ and substitute $\sin\alpha=\tfrac58$."
 >}}
@@ -220,7 +221,7 @@ where $a=\sin\theta$ and $b=\cos\theta$. Part of being successful in mathematics
   answer="\cos(2\theta)"
   answerForm="single-trig-function"
   answerDisplay="$\cos(2\theta)$"
-  hint="Factor the left side as a difference of squares, $(\cos^2\theta+\sin^2\theta)(\cos^2\theta-\sin^2\theta)$, then apply the Pythagorean identity and the double-angle formula for cosine."
+  hint="Factor the expression as a difference of squares, then apply the Pythagorean identity to one factor and a double-angle formula for cosine to the other."
 >}}
 
 **Example.** Verify the identity:
@@ -256,13 +257,13 @@ When using the identities to simplify a trigonometric expression or solve a trig
 
 {{< multiplechoice
   question="Which of the following expressions is equivalent to $\cos(2\theta)\cos\theta$?"
-  answer="\cos^3\theta-\cos\theta\sin^2\theta"
+  answer="$\cos^3\theta-\cos\theta\sin^2\theta$"
   hint="Substitute the double-angle formula $\cos(2\theta)=\cos^2\theta-\sin^2\theta$, then distribute the $\cos\theta$ factor."
 >}}
-\cos^3\theta-\cos\theta\sin^2\theta
-\cos^3\theta+\cos\theta\sin^2\theta
-\sin^3\theta-\sin\theta\cos^2\theta
-\cos\theta\sin^2\theta-\cos^3\theta
+$\cos^3\theta-\cos\theta\sin^2\theta$
+$\cos^3\theta+\cos\theta\sin^2\theta$
+$\sin^3\theta-\sin\theta\cos^2\theta$
+$\cos\theta\sin^2\theta-\cos^3\theta$
 {{< /multiplechoice >}}
 
 ## Using Reduction Formulas to Simplify an Expression
@@ -354,16 +355,13 @@ $$\sin^2\theta=\tfrac{1-\cos(2\theta)}{2}$$
 
 We let $\theta=2x$, so $2\theta=4x$.
 
-{{< multiplechoice
-  question="Which of the following is $10\cos^4x$ rewritten so that no exponent is higher than $1$?"
-  answer="\frac{15}{4}+5\cos(2x)+\frac{5}{4}\cos(4x)"
-  hint="Apply the power-reducing formula for $\cos^2x$ twice, as in the example above, then combine like terms."
+{{< fillin
+  question="Use the power-reducing formulas to rewrite $\cos^4x\sin^2x$ with no power higher than $1$. Write the result as a single fraction."
+  answer="\frac{2+\cos(2x)-2\cos(4x)-\cos(6x)}{32}"
+  answerForm="no-trig-products single-fraction reduced-fraction no-like-terms"
+  answerDisplay="$\tfrac{2+\cos(2x)-2\cos(4x)-\cos(6x)}{32}$"
+  hint="Replace each square with its power-reducing formula, expand the product, and reduce any square or product of cosines that remains with the power-reducing and product-to-sum formulas."
 >}}
-\frac{15}{4}+5\cos(2x)+\frac{5}{4}\cos(4x)
-\frac{15}{4}+5\cos(2x)-\frac{5}{4}\cos(4x)
-\frac{5}{4}+5\cos(2x)+\frac{5}{4}\cos(4x)
-\frac{15}{4}+\frac{5}{2}\cos(2x)+\frac{5}{4}\cos(4x)
-{{< /multiplechoice >}}
 
 ## Using Half-Angle Formulas to Find Exact Values
 
@@ -452,7 +450,7 @@ $$
 **Solution.** Using the given information, we can draw the triangle shown below. Using the Pythagorean Theorem, we find the hypotenuse to be $17$. Therefore, we can calculate $\sin\alpha=-\tfrac{8}{17}$ and $\cos\alpha=-\tfrac{15}{17}$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A right triangle in the coordinate plane with vertices at the origin, (-15, 0), and (-15, -8), a right angle at (-15, 0), standard-position angle alpha swept from the positive x-axis to the hypotenuse, and hypotenuse of length 17.","xMin":-17,"xMax":3,"yMin":-9.5,"yMax":3,"grid":false,"tickLabels":false,"unit":38,"segments":[{"from":[0,0],"to":[-15,0]},{"from":[-15,0],"to":[-15,-8]},{"from":[0,0],"to":[-15,-8],"label":"17"}],"points":[{"at":[-15,0],"label":"(-15, 0)"},{"at":[-15,-8],"label":"(-15, -8)"}],"circles":[{"at":[0,0],"r":1.6,"from":0,"to":208.07}],"texts":[{"at":[-2.9,-0.6],"text":"α"}]}
+{"ariaLabel":"A right triangle in the coordinate plane with vertices at the origin, (-15, 0), and (-15, -8), a right angle at (-15, 0), standard-position angle alpha swept from the positive x-axis to the hypotenuse, and hypotenuse of length 17.","xMin":-17,"xMax":3,"yMin":-9.5,"yMax":3,"grid":false,"tickLabels":false,"unit":38,"segments":[{"from":[0,0],"to":[-15,0]},{"from":[-15,0],"to":[-15,-8]},{"from":[0,0],"to":[-15,-8],"label":"17"},{"from":[-14.5,0],"to":[-14.5,-0.5]},{"from":[-14.5,-0.5],"to":[-15,-0.5]}],"points":[{"at":[-15,0],"label":"(-15, 0)"},{"at":[-15,-8],"label":"(-15, -8)"}],"circles":[{"at":[0,0],"r":1.6,"from":0,"to":208.07}],"texts":[{"at":[1.0,1.9],"text":"α"}]}
 {{< /apfigure >}}
 
 ⓐ Before we start, we must remember that, if $\alpha$ is in quadrant III, then $180^\circ<\alpha<270^\circ$, so $\tfrac{180^\circ}{2}<\tfrac{\alpha}{2}<\tfrac{270^\circ}{2}$. This means that the terminal side of $\tfrac{\alpha}{2}$ is in quadrant II, since $90^\circ<\tfrac{\alpha}{2}<135^\circ$.
@@ -505,7 +503,8 @@ We choose the negative value of $\tan\tfrac{\alpha}{2}$ because $\tfrac{\alpha}{
 
 {{< fillin
   question="Given that $\sin\alpha=-\tfrac45$ and $\alpha$ lies in quadrant IV, find the exact value of $\cos\left(\tfrac{\alpha}{2}\right)$."
-  answer="-2/\sqrt{5}"
+  answer="-\frac{2}{\sqrt{5}}"
+  answerForm="evaluated-trig single-fraction reduced-fraction"
   answerDisplay="$-\tfrac{2}{\sqrt5}$"
   hint="First find $\cos\alpha$ from the Pythagorean identity (positive, since $\alpha$ is in quadrant IV), then determine which quadrant $\tfrac{\alpha}{2}$ falls in before choosing the sign."
 >}}
@@ -522,7 +521,7 @@ $$
 $$
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle with angle theta at the bottom-left vertex, the right angle at the bottom-right vertex, base 3, vertical leg 5, and hypotenuse the square root of 34.","unit":70,"polygons":[{"points":[[0,0],[3,0],[3,5]],"edgeLabels":["3","5","√34"],"vertexLabels":["θ",null,null],"rightAngles":[1]}]}
+{"ariaLabel":"A right triangle with an arc marking angle theta at the bottom-left vertex, the right angle at the bottom-right vertex, base 3, vertical leg 5, and hypotenuse the square root of 34.","unit":70,"polygons":[{"points":[[0,0],[3,0],[3,5]],"edgeLabels":["3","5","√34"],"rightAngles":[1]}],"circles":[{"at":[0,0],"r":0.6,"from":0,"to":59.04}],"texts":[{"at":[0.78,0.42],"text":"θ","anchor":"middle","dy":4}]}
 {{< /apfigure >}}
 
 We see that $\cos\theta=\tfrac{3}{\sqrt{34}}=\tfrac{3\sqrt{34}}{34}$. We can use the half-angle formula for tangent: $\tan\tfrac{\theta}{2}=\sqrt{\tfrac{1-\cos\theta}{1+\cos\theta}}$. Since $\tan\theta$ is in the first quadrant, so is $\tan\tfrac{\theta}{2}$. Thus,
@@ -540,10 +539,10 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
 
 ## Key equations
 
-| Double-angle formulas | $\begin{array}{lrcl} \sin(2\theta) &=& 2\sin\theta\cos\theta \\[4pt] \cos(2\theta) &=& \cos^2\theta-\sin^2\theta \\[4pt] &=& 1-2\sin^2\theta \\[4pt] &=& 2\cos^2\theta-1 \\[4pt] \tan(2\theta) &=& \tfrac{2\tan\theta}{1-\tan^2\theta} \end{array}$ |
+| Double-angle formulas | $\begin{array}{rcl} \sin(2\theta) &=& 2\sin\theta\cos\theta \\[4pt] \cos(2\theta) &=& \cos^2\theta-\sin^2\theta \\[4pt] &=& 1-2\sin^2\theta \\[4pt] &=& 2\cos^2\theta-1 \\[4pt] \tan(2\theta) &=& \tfrac{2\tan\theta}{1-\tan^2\theta} \end{array}$ |
 | :--- | :--- |
-| Reduction formulas | $\begin{array}{lrcl} \sin^2\theta &=& \tfrac{1-\cos(2\theta)}{2} \\[4pt] \cos^2\theta &=& \tfrac{1+\cos(2\theta)}{2} \\[4pt] \tan^2\theta &=& \tfrac{1-\cos(2\theta)}{1+\cos(2\theta)} \end{array}$ |
-| Half-angle formulas | $\begin{array}{lrcl} \sin\left(\tfrac{\alpha}{2}\right) &=& \pm\sqrt{\tfrac{1-\cos\alpha}{2}} \\[4pt] \cos\left(\tfrac{\alpha}{2}\right) &=& \pm\sqrt{\tfrac{1+\cos\alpha}{2}} \\[4pt] \tan\left(\tfrac{\alpha}{2}\right) &=& \pm\sqrt{\tfrac{1-\cos\alpha}{1+\cos\alpha}} \\[4pt] &=& \tfrac{\sin\alpha}{1+\cos\alpha} \\[4pt] &=& \tfrac{1-\cos\alpha}{\sin\alpha} \end{array}$ |
+| Reduction formulas | $\begin{array}{rcl} \sin^2\theta &=& \tfrac{1-\cos(2\theta)}{2} \\[4pt] \cos^2\theta &=& \tfrac{1+\cos(2\theta)}{2} \\[4pt] \tan^2\theta &=& \tfrac{1-\cos(2\theta)}{1+\cos(2\theta)} \end{array}$ |
+| Half-angle formulas | $\begin{array}{rcl} \sin\left(\tfrac{\alpha}{2}\right) &=& \pm\sqrt{\tfrac{1-\cos\alpha}{2}} \\[4pt] \cos\left(\tfrac{\alpha}{2}\right) &=& \pm\sqrt{\tfrac{1+\cos\alpha}{2}} \\[4pt] \tan\left(\tfrac{\alpha}{2}\right) &=& \pm\sqrt{\tfrac{1-\cos\alpha}{1+\cos\alpha}} \\[4pt] &=& \tfrac{\sin\alpha}{1+\cos\alpha} \\[4pt] &=& \tfrac{1-\cos\alpha}{\sin\alpha} \end{array}$ |
 
 ## Key concepts
 
@@ -562,17 +561,19 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
 {{< fillin
   question="If $\sin x=\tfrac18$ and $x$ is in quadrant I, find $\sin(2x)$, $\cos(2x)$, and $\tan(2x)$, in that order, separated by commas."
   answer="\frac{3\sqrt7}{32},\frac{31}{32},\frac{3\sqrt7}{31}"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\sin(2x)=\tfrac{3\sqrt7}{32},\ \cos(2x)=\tfrac{31}{32},\ \tan(2x)=\tfrac{3\sqrt7}{31}$"
   hint="Find $\cos x$ from the Pythagorean identity (positive, since $x$ is in quadrant I), then apply each double-angle formula."
 >}}
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle with the right angle at the bottom-left vertex, angle theta at the bottom-right vertex, angle alpha at the top vertex, base 12, and vertical leg 5.","unit":45,"polygons":[{"points":[[0,0],[12,0],[0,5]],"edgeLabels":["12",null,"5"],"vertexLabels":[null,"θ","α"],"rightAngles":[0]}]}
+{"ariaLabel":"A right triangle with the right angle at the bottom-left vertex, an arc marking angle theta at the bottom-right vertex, an arc marking angle alpha at the top vertex, base 12, and vertical leg 5.","unit":45,"polygons":[{"points":[[0,0],[12,0],[0,5]],"edgeLabels":["12",null,"5"],"rightAngles":[0]}],"circles":[{"at":[12,0],"r":1.6,"from":157.38,"to":180},{"at":[0,5],"r":0.9,"from":270,"to":337.38}],"texts":[{"at":[9.745,0.451],"text":"θ","anchor":"middle","dy":4},{"at":[0.749,3.877],"text":"α","anchor":"middle","dy":4}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Using the triangle above, find $\sin(2\alpha)$, $\cos(2\alpha)$, and $\tan(2\alpha)$, in that order, separated by commas."
-  answer="120/169,-119/169,-120/119"
+  answer="\frac{120}{169},-\frac{119}{169},-\frac{120}{119}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\sin(2\alpha)=\tfrac{120}{169},\ \cos(2\alpha)=-\tfrac{119}{169},\ \tan(2\alpha)=-\tfrac{120}{119}$"
   hint="Read $\sin\alpha$ and $\cos\alpha$ from the triangle's sides and hypotenuse (found with the Pythagorean theorem), then apply each double-angle formula."
 >}}
@@ -584,7 +585,7 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
   answer="\sin\left(\tfrac{\pi}{2}\right)"
   answerForm="single-trig-function"
   answerDisplay="$\sin\left(\tfrac{\pi}{2}\right)$"
-  hint="Recognize the right side of the double-angle formula for sine, $2\sin\theta\cos\theta=\sin(2\theta)$, with $\theta=\tfrac{\pi}{4}$."
+  hint="Match the expression to one of the double-angle formulas, then write the doubled angle in lowest terms."
 >}}
 
 {{< fillin
@@ -592,7 +593,7 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
   answer="\tan(2x)"
   answerForm="single-trig-function"
   answerDisplay="$\tan(2x)$"
-  hint="The numerator is the double-angle formula for sine and the denominator is a double-angle formula for cosine; write the quotient as $\tfrac{\sin(2x)}{\cos(2x)}$."
+  hint="Recognize the numerator and the denominator as double-angle formulas, then use a quotient identity."
 >}}
 
 ### Use reduction formulas to simplify an expression.
@@ -600,28 +601,25 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
 {{< fillin
   question="Reduce $\sin^2x\cos^2x$ so that no exponent is higher than $1$."
   answer="\frac{1-\cos(4x)}{8}"
-  answerForm="single-trig-function"
+  answerForm="single-trig-function no-like-terms"
   answerDisplay="$\tfrac{1-\cos(4x)}{8}$"
   hint="Group the factors as $(\sin x\cos x)^2$, rewrite $\sin x\cos x$ as $\tfrac12\sin(2x)$, then apply the reduction formula to the resulting $\sin^2(2x)$."
 >}}
 
-{{< multiplechoice
-  question="Which of the following is $\sin^4(3x)$ rewritten so that no exponent is higher than $1$?"
+{{< fillin
+  question="Rewrite $\sin^4(3x)$ with no power higher than $1$. Write the result as a single fraction."
   answer="\frac{3+\cos(12x)-4\cos(6x)}{8}"
+  answerForm="no-trig-products single-fraction reduced-fraction no-like-terms"
+  answerDisplay="$\tfrac{3+\cos(12x)-4\cos(6x)}{8}$"
   hint="Write $\sin^4(3x)$ as $(\sin^2(3x))^2$, apply the reduction formula for $\sin^2(3x)$, then apply it again to the resulting $\cos^2(6x)$ term."
 >}}
-\frac{3+\cos(12x)-4\cos(6x)}{8}
-\frac{3-\cos(12x)-4\cos(6x)}{8}
-\frac{3+\cos(12x)+4\cos(6x)}{8}
-\frac{1+\cos(12x)-4\cos(6x)}{8}
-{{< /multiplechoice >}}
 
 ### Use half-angle formulas to find exact values.
 
 {{< fillin
   question="Find the exact value using a half-angle formula: $\sin\left(\tfrac{\pi}{8}\right)$."
   answer="\frac{\sqrt{2-\sqrt2}}{2}"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\tfrac{\sqrt{2-\sqrt2}}{2}$"
   hint="Write $\tfrac{\pi}{8}$ as $\tfrac{\pi/4}{2}$, then apply the half-angle formula for sine with $\alpha=\tfrac{\pi}{4}$."
 >}}
@@ -629,22 +627,23 @@ We can take the inverse tangent to find the angle: $\tan^{-1}(0.57)\approx29.7^\
 {{< fillin
   question="Find the exact value using a half-angle formula: $\tan\left(\tfrac{5\pi}{12}\right)$."
   answer="2+\sqrt3"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig simplified-radical no-like-terms"
   answerDisplay="$2+\sqrt3$"
   hint="Write $\tfrac{5\pi}{12}$ as $\tfrac{5\pi/6}{2}$, then apply the half-angle formula for tangent with $\alpha=\tfrac{5\pi}{6}$."
 >}}
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A right triangle with the right angle at the bottom-left vertex, angle theta at the bottom-right vertex, angle alpha at the top vertex, base 12, and vertical leg 5.","unit":45,"polygons":[{"points":[[0,0],[12,0],[0,5]],"edgeLabels":["12",null,"5"],"vertexLabels":[null,"θ","α"],"rightAngles":[0]}]}
+{"ariaLabel":"A right triangle with the right angle at the bottom-left vertex, an arc marking angle theta at the bottom-right vertex, an arc marking angle alpha at the top vertex, base 12, and vertical leg 5.","unit":45,"polygons":[{"points":[[0,0],[12,0],[0,5]],"edgeLabels":["12",null,"5"],"rightAngles":[0]}],"circles":[{"at":[12,0],"r":1.6,"from":157.38,"to":180},{"at":[0,5],"r":0.9,"from":270,"to":337.38}],"texts":[{"at":[9.745,0.451],"text":"θ","anchor":"middle","dy":4},{"at":[0.749,3.877],"text":"α","anchor":"middle","dy":4}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Using the triangle above, find $\sin\left(\tfrac{\alpha}{2}\right)$, $\cos\left(\tfrac{\alpha}{2}\right)$, and $\tan\left(\tfrac{\alpha}{2}\right)$, in that order, separated by commas."
-  answer="2\sqrt{13}/13,3\sqrt{13}/13,2/3"
+  answer="\frac{2\sqrt{13}}{13},\frac{3\sqrt{13}}{13},\frac{2}{3}"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\sin\left(\tfrac{\alpha}{2}\right)=\tfrac{2\sqrt{13}}{13},\ \cos\left(\tfrac{\alpha}{2}\right)=\tfrac{3\sqrt{13}}{13},\ \tan\left(\tfrac{\alpha}{2}\right)=\tfrac23$"
   hint="Read $\cos\alpha$ from the triangle's sides and hypotenuse, note that $\alpha$ is acute so $\tfrac{\alpha}{2}$ is in quadrant I, then apply each half-angle formula."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 7.3: Double-Angle, Half-Angle, and Reduction Formulas](https://openstax.org/books/precalculus-2e/pages/7-3-double-angle-half-angle-and-reduction-formulas) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of two bicycle ramps (Figure 1) and reworded the sentence that pointed at it. Recreated all four instructional figures as accessible spec-first SVGs: the two reference-triangle figures for the double-angle and half-angle worked examples (Figures 2–3), drawn in the coordinate plane with the standard-position angle swept from the positive $x$-axis so a reader can see why each ratio takes the sign it does; the bicycle-ramp triangle (Figure 4); and the axis-free triangle for the four end-of-section angle exercises (Figure 5), whose hypotenuse is left unlabeled exactly as the source draws it, since printing $13$ would hand the learner the value the exercises ask them to find. A source defect: the Try It after Example 1 prints "with $\theta$ in quadrant I" where every other part of the item and its own solution use $\alpha$ — corrected on this page to $\alpha$ throughout, with a visible source note. Every retained Try It became a real `fillin` or `multiplechoice` component. Two Try Its whose printed instruction is "verify"/"prove" an identity have no free-response answer, since a proof cannot be typed: "Verify $\cos(2\theta)\cos\theta=\cos^3\theta-\cos\theta\sin^2\theta$" became a `multiplechoice` on the completed right side, and "prove that $10\cos^4x=\tfrac{15}{4}+5\cos(2x)+\tfrac{5}{4}\cos(4x)$" became a `multiplechoice` on the power-reduced form, each with three algebraically-plausible wrong forms as distractors; the Try It after Example 3 ("establish $\cos^4\theta-\sin^4\theta=\cos(2\theta)$") was adapted the same way but stayed a `fillin`, since its left side is exactly one trigonometric application short of its right side and the `single-trig-function` token can tell them apart. The Practice block's "verify identities" group draws on the same hazard: its source pool is entirely proof-only ("prove the identity…"), so its two items are drawn from the section's "simplify to one trigonometric expression" instruction and from a "prove the identity" item recast as "simplify," the same computational-core adaptation. Two Practice items whose printed subject already writes only one trigonometric application each keep their own token: $\sin^2x\cos^2x$ (two applications, reducing to one) is a `fillin`, while $\sin^4(3x)$ (whose reduced form keeps three) is a `multiplechoice`. Nine selected end-of-section exercises — two double-angle combined-value items (one figure-based), two identity-simplification items, one reduction fill-in and one reduction multiple-choice, and three half-angle exact-value items (one figure-based) — were adapted into nine interactive components in a closing Practice block, one group per objective; the two figure-based Practice items ($\sin(2\alpha)/\cos(2\alpha)/\tan(2\alpha)$ and $\sin(\alpha/2)/\cos(\alpha/2)/\tan(\alpha/2)$) share the same source triangle (Figure 5), transcribed once for each group in which it is used. Every combined "find $a$, $b$, and $c$" source item — three in all — is kept as one component with a comma-separated, order-stated answer, matching the single combined response the source itself asks for. Omitted the "Access these online resources" media links.</small>
+<small>This section is adapted from [Precalculus 2e, Section 7.3: Double-Angle, Half-Angle, and Reduction Formulas](https://openstax.org/books/precalculus-2e/pages/7-3-double-angle-half-angle-and-reduction-formulas) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative photograph of two bicycle ramps (Figure 1) and reworded the sentence that pointed at it. Recreated all four instructional figures as accessible spec-first SVGs: the two reference-triangle figures for the double-angle and half-angle worked examples (Figures 2–3), drawn in the coordinate plane with the standard-position angle swept from the positive $x$-axis so a reader can see why each ratio takes the sign it does; the bicycle-ramp triangle (Figure 4); and the axis-free triangle for the four end-of-section angle exercises (Figure 5), whose hypotenuse is left unlabeled exactly as the source draws it, since printing $13$ would hand the learner the value the exercises ask them to find. A source defect: the Try It after Example 1 prints "with $\theta$ in quadrant I" where every other part of the item and its own solution use $\alpha$ — corrected on this page to $\alpha$ throughout, with a visible source note. Every retained Try It became a real `fillin` or `multiplechoice` component. Two Try Its whose printed instruction is "verify"/"prove" an identity have no free-response answer, since a proof cannot be typed: "Verify $\cos(2\theta)\cos\theta=\cos^3\theta-\cos\theta\sin^2\theta$" became a `multiplechoice` on the completed right side, with three algebraically plausible wrong forms as distractors, and "prove that $10\cos^4x=\tfrac{15}{4}+5\cos(2x)+\tfrac{5}{4}\cos(4x)$", whose answer is ten times the worked $\cos^4x$ example directly above it, was replaced by the section's keyed reduction exercise $\cos^4x\sin^2x$, asked as a single fraction, the shape of the source's answer; the Try It after Example 3 ("establish $\cos^4\theta-\sin^4\theta=\cos(2\theta)$") was recast as "simplify to a single trigonometric function" and stayed a `fillin`, since the `single-trig-function` answer form refuses the retyped left side. The Practice block's "verify identities" group draws on the same hazard: its source pool is entirely proof-only ("prove the identity…"), so its two items are drawn from the section's "simplify to one trigonometric expression" instruction and from a "prove the identity" item recast as "simplify," the same computational-core adaptation. Both reduction Practice items ($\sin^2x\cos^2x$ and $\sin^4(3x)$) are `fillin`s; the $\sin^4(3x)$ ask adds "write the result as a single fraction," the shape of the source's answer. Nine selected end-of-section exercises — two double-angle combined-value items (one figure-based), two identity-simplification items, two reduction fill-ins, and three half-angle exact-value items (one figure-based) — were adapted into nine interactive components in a closing Practice block, one group per objective; the two figure-based Practice items ($\sin(2\alpha)/\cos(2\alpha)/\tan(2\alpha)$ and $\sin(\alpha/2)/\cos(\alpha/2)/\tan(\alpha/2)$) share the same source triangle (Figure 5), transcribed once for each group in which it is used. Every combined "find $a$, $b$, and $c$" source item — three in all — is kept as one component with a comma-separated, order-stated answer, matching the single combined response the source itself asks for. Omitted the "Access these online resources" media links.</small>

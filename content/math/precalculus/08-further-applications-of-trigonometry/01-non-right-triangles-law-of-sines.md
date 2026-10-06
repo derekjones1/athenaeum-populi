@@ -20,7 +20,7 @@ weight: 1
 To ensure the safety of over $5{,}000$ U.S. aircraft flying simultaneously during peak times, air traffic controllers monitor and communicate with them after receiving data from the robust radar beacon system. Suppose two radar stations located $20$ miles apart each detect an aircraft between them. The angle of elevation measured by the first station is $35$ degrees, whereas the angle of elevation measured by the second station is $15$ degrees. How can we determine the altitude of the aircraft? We see below that the triangle formed by the aircraft and the two stations is not a right triangle, so we cannot use what we know about right triangles. In this section, we will find out how to solve problems involving non-right triangles.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle formed by two ground radar stations 20 miles apart and an aircraft between them: the angle at the left station is 15 degrees, the angle at the right station is 35 degrees, and a dashed altitude drops from the aircraft straight down to the ground.","unit":15,"polygons":[{"points":[[0,0],[14.465,3.876],[20,0]],"edgeLabels":[null,null,"20 miles"],"vertexLabels":["15°",null,"35°"]}],"segments":[{"from":[14.465,3.876],"to":[14.465,0],"dashed":true}],"rightAngles":[{"at":[14.465,0],"dirs":[[1,0],[0,1]]}]}
+{"ariaLabel":"An oblique triangle formed by two ground radar stations 20 miles apart and an aircraft between them: an arc marks the 15-degree angle at the left station and another the 35-degree angle at the right station, each measure printed inside its angle, and a dashed altitude drops from the aircraft straight down to the ground.","unit":15,"polygons":[{"points":[[0,0],[14.465,3.876],[20,0]],"edgeLabels":[null,null,"20 miles"],"vertexLabels":[null,null,null]}],"segments":[{"from":[14.465,3.876],"to":[14.465,0],"dashed":true}],"rightAngles":[{"at":[14.465,0],"dirs":[[1,0],[0,1]]}],"circles":[{"at":[0,0],"r":3.2,"from":0,"to":15},{"at":[20,0],"r":2.4,"from":145,"to":180}],"texts":[{"at":[6.444,0.848],"text":"15°","anchor":"middle","dy":5},{"at":[16.281,1.173],"text":"35°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 ### Using the Law of Sines to Solve Oblique Triangles
@@ -32,19 +32,19 @@ Any triangle that is not a right triangle is an **oblique triangle**. Solving an
 - **ASA (angle-side-angle)** We know the measurements of two angles and the included side.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A schematic oblique triangle with vertices alpha, beta, gamma, illustrating the ASA case: angles alpha and gamma and the side between them are the known parts.","unit":40,"polygons":[{"points":[[0,0],[3,4],[8,0]],"vertexLabels":["α","β","γ"]}]}
+{"ariaLabel":"A schematic oblique triangle with vertices alpha, beta, gamma illustrating the ASA case: an arc marks angle alpha, a double arc marks angle gamma, and a tick marks the base between them — the three known parts.","unit":36,"polygons":[{"points":[[0,0],[3,4],[8,0]],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":53.13},{"at":[8,0],"r":0.7,"from":141.34,"to":180},{"at":[8,0],"r":0.875,"from":141.34,"to":180}],"texts":[],"segments":[{"from":[4,-0.18],"to":[4,0.18]}]}
 {{< /apfigure >}}
 
 - **AAS (angle-angle-side)** We know the measurements of two angles and a side that is not between the known angles.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The same schematic triangle illustrating the AAS case: angles alpha and gamma and the side opposite alpha, which is not between them, are the known parts.","unit":40,"polygons":[{"points":[[0,0],[3,4],[8,0]],"vertexLabels":["α","β","γ"]}]}
+{"ariaLabel":"The same schematic triangle illustrating the AAS case: an arc marks angle alpha, a double arc marks angle gamma, and a tick marks the side from beta to gamma, which is opposite alpha and not between the two marked angles.","unit":36,"polygons":[{"points":[[0,0],[3,4],[8,0]],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":53.13},{"at":[8,0],"r":0.7,"from":141.34,"to":180},{"at":[8,0],"r":0.875,"from":141.34,"to":180}],"texts":[],"segments":[{"from":[5.388,1.859],"to":[5.612,2.141]}]}
 {{< /apfigure >}}
 
 - **SSA (side-side-angle)** We know the measurements of two sides and an angle that is not between the known sides.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The same schematic triangle illustrating the SSA case: the sides opposite alpha and gamma and the angle alpha, which is not between them, are the known parts.","unit":40,"polygons":[{"points":[[0,0],[3,4],[8,0]],"vertexLabels":["α","β","γ"]}]}
+{"ariaLabel":"The same schematic triangle illustrating the SSA case: an arc marks angle alpha, a single tick marks the side from alpha to beta, and a double tick marks the side from beta to gamma, opposite alpha — the marked angle is not between the two marked sides.","unit":36,"polygons":[{"points":[[0,0],[3,4],[8,0]],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":53.13}],"texts":[],"segments":[{"from":[1.644,1.892],"to":[1.356,2.108]},{"from":[5.309,1.922],"to":[5.534,2.203]},{"from":[5.466,1.797],"to":[5.691,2.078]}]}
 {{< /apfigure >}}
 
 Knowing how to approach each of these situations enables us to solve oblique triangles without having to drop a perpendicular to form two right triangles. Instead, we can use the fact that the ratio of the measurement of one of the angles to the length of its opposite side will be equal to the other two ratios of angle measure to opposite side. Let's see how this statement is derived by considering the triangle shown below.
@@ -98,7 +98,7 @@ While calculating angles and sides, be sure to carry the exact values through to
 **Example.** Solve the triangle shown below to the nearest tenth.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle with a 50-degree angle at alpha, a 30-degree angle at gamma, the side of length 10 opposite alpha, and the unknown side b as the base and side c on the left.","unit":28,"polygons":[{"points":[[0,0],[4.195,5],[12.856,0]],"edgeLabels":["c","10","b"],"vertexLabels":["50°","β","30°"]}]}
+{"ariaLabel":"An oblique triangle with vertices alpha, beta, gamma: a 50-degree angle is marked at alpha and a 30-degree angle at gamma; the side of length 10 runs from beta to gamma, opposite alpha; the unknown side b is the base from alpha to gamma and side c runs from alpha to beta.","unit":24,"polygons":[{"points":[[0,0],[4.195,5],[12.856,0]],"edgeLabels":["c","10","b"],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[0,0],"r":1.2,"from":0,"to":50},{"at":[12.856,0],"r":1.6,"from":150,"to":180}],"texts":[{"at":[2.085,0.972],"text":"50°","anchor":"middle","dy":5},{"at":[9.958,0.776],"text":"30°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 **Solution.** The three angles must add up to $180$ degrees. From this, we can determine that
@@ -143,7 +143,7 @@ $$
 $$
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A tall, narrow oblique triangle with a 98-degree angle at alpha, a 43-degree angle at gamma, and the base of length 22 between them; the two slanted sides a and c are unlabeled.","unit":12,"polygons":[{"points":[[0,0],[-3.318,23.61],[22,0]],"edgeLabels":["c","a","22"],"vertexLabels":["98°","β","43°"]}]}
+{"ariaLabel":"A tall, narrow oblique triangle with vertices alpha, beta, gamma: a 98-degree angle is marked at alpha and a 43-degree angle at gamma, with the base of length 22 between them; the two slanted sides carry only their letters, a opposite alpha and c opposite gamma.","unit":12,"polygons":[{"points":[[0,0],[-3.318,23.61],[22,0]],"edgeLabels":["c","a","22"],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[0,0],"r":1.8,"from":0,"to":98},{"at":[22,0],"r":2.6,"from":137,"to":180}],"texts":[{"at":[2.362,2.717],"text":"98°","anchor":"middle","dy":5},{"at":[17.72,1.686],"text":"43°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -161,10 +161,30 @@ We can use the Law of Sines to solve any oblique triangle, but some solutions ma
 {{< callout type="info" >}}
   **Possible Outcomes for SSA Triangles.**
 
-  Oblique triangles in the category SSA may have four different outcomes, shown below with the known sides $a$ and $b$ and known angle $\alpha$: (a) no triangle, when $a<h$; (b) a right triangle, when $a=h$; (c) two triangles, when $h<a<b$; (d) one triangle, when $a\ge b$.
+  Oblique triangles in the category SSA may have four different outcomes. The figures below illustrate the solutions with the known sides $a$ and $b$ and known angle $\alpha$.
+
+  **(a) No triangle, $a<h$**
 
   {{< apfigure kind="figure" >}}
-  {"ariaLabel":"Four small oblique-triangle diagrams illustrating the possible outcomes when solving an SSA triangle with known sides a and b and known angle alpha: (a) no triangle when a is less than the altitude h; (b) a right triangle when a equals h; (c) two triangles when a is greater than h but less than b; (d) one triangle when a is greater than or equal to b.","unit":4,"segments":[{"from":[0,0],"to":[5.088,3.18]},{"from":[5.088,3.18],"to":[5.088,1.58],"dashed":true},{"from":[0,0],"to":[7,0]},{"from":[13,0],"to":[18.088,3.18]},{"from":[18.088,3.18],"to":[18.088,0]},{"from":[13,0],"to":[20,0]},{"from":[27,0],"to":[32.088,3.18]},{"from":[32.088,3.18],"to":[28.904,0]},{"from":[32.088,3.18],"to":[35.273,0]},{"from":[27,0],"to":[35.273,0]},{"from":[44,0],"to":[49.088,3.18]},{"from":[49.088,3.18],"to":[56.429,0]},{"from":[44,0],"to":[56.429,0]}],"rightAngles":[{"at":[18.088,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[2.5,5.3],"text":"(a)","anchor":"middle"},{"at":[-0.9,-1.1],"text":"α"},{"at":[6.0,3.7],"text":"γ"},{"at":[15.5,5.3],"text":"(b)","anchor":"middle"},{"at":[12.1,-1.1],"text":"α"},{"at":[19.0,3.7],"text":"γ"},{"at":[29.5,5.3],"text":"(c)","anchor":"middle"},{"at":[26.1,-1.1],"text":"α"},{"at":[33.0,3.7],"text":"γ"},{"at":[28.904,-1.9],"text":"β"},{"at":[35.273,-1.9],"text":"β′"},{"at":[46.5,5.3],"text":"(d)","anchor":"middle"},{"at":[43.1,-1.1],"text":"α"},{"at":[50.0,3.7],"text":"γ"},{"at":[56.429,-1.9],"text":"β"}]}
+  {"ariaLabel":"Side b rises from the marked angle alpha to gamma; side a hangs straight down from gamma but is shorter than the altitude, so it stops above the base line that runs toward beta.","unit":34,"segments":[{"from":[0,0],"to":[4.596,3.857],"label":"b"},{"from":[4.596,3.857],"to":[4.596,1.257],"label":"a","labelSide":"right"},{"from":[0,0],"to":[7,0]}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":40}],"texts":[{"at":[-0.45,-0.1],"text":"α","anchor":"middle","dy":5},{"at":[4.596,4.357],"text":"γ","anchor":"middle","dy":5},{"at":[7.45,-0.1],"text":"β","anchor":"middle","dy":5}]}
+  {{< /apfigure >}}
+
+  **(b) Right triangle, $a=h$**
+
+  {{< apfigure kind="figure" >}}
+  {"ariaLabel":"Side b rises from the marked angle alpha to gamma; side a drops straight down from gamma and meets the base at a right angle at beta.","unit":34,"segments":[{"from":[0,0],"to":[4.596,3.857],"label":"b"},{"from":[4.596,3.857],"to":[4.596,0],"label":"a","labelSide":"right"},{"from":[0,0],"to":[4.596,0]}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":40}],"rightAngles":[{"at":[4.596,0],"dirs":[[-1,0],[0,1]]}],"texts":[{"at":[-0.45,-0.1],"text":"α","anchor":"middle","dy":5},{"at":[4.596,4.357],"text":"γ","anchor":"middle","dy":5},{"at":[5.046,-0.1],"text":"β","anchor":"middle","dy":5}]}
+  {{< /apfigure >}}
+
+  **(c) Two triangles, $a>h$, $a<b$**
+
+  {{< apfigure kind="figure" >}}
+  {"ariaLabel":"Side b rises from the marked angle alpha to gamma; a solid altitude h drops from gamma to the base at a right angle, and two dashed copies of side a, longer than h but shorter than b, reach the base at two points, one on each side of the altitude, the farther one labeled beta.","unit":34,"segments":[{"from":[0,0],"to":[4.596,3.857],"label":"b"},{"from":[4.596,3.857],"to":[2.278,0],"dashed":true,"label":"a","labelSide":"left"},{"from":[4.596,3.857],"to":[6.914,0],"dashed":true,"label":"a","labelSide":"left"},{"from":[4.596,3.857],"to":[4.596,0],"label":"h"},{"from":[0,0],"to":[6.914,0]}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":40}],"rightAngles":[{"at":[4.596,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[-0.45,-0.1],"text":"α","anchor":"middle","dy":5},{"at":[4.596,4.357],"text":"γ","anchor":"middle","dy":5},{"at":[7.364,-0.1],"text":"β","anchor":"middle","dy":5}]}
+  {{< /apfigure >}}
+
+  **(d) One triangle, $a\ge b$**
+
+  {{< apfigure kind="figure" >}}
+  {"ariaLabel":"Side b rises from the marked angle alpha to gamma, and side a, at least as long as b, reaches the base at a single point beta beyond the foot of the altitude, forming one triangle.","unit":30,"polygons":[{"points":[[0,0],[4.596,3.857],[9.828,0]],"edgeLabels":["b","a",null],"vertexLabels":["α","γ","β"]}],"circles":[{"at":[0,0],"r":0.9,"from":0,"to":40}],"texts":[]}
   {{< /apfigure >}}
 
 {{< /callout >}}
@@ -172,7 +192,7 @@ We can use the Law of Sines to solve any oblique triangle, but some solutions ma
 **Example.** Solve the triangle shown below for the missing side and find the missing angle measures to the nearest tenth.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle with a 35-degree angle at alpha, side b=8 rising to gamma, and side a=6 from gamma down to beta, drawn so that beta looks like it could be an obtuse angle.","unit":32,"polygons":[{"points":[[0,0],[6.553,4.589],[2.687,0]],"edgeLabels":["8","6",null],"vertexLabels":["35°","γ","β"]}]}
+{"ariaLabel":"An oblique triangle with vertices alpha, gamma, beta: a 35-degree angle is marked at alpha, side 8 rises from alpha to gamma, and side 6 runs from gamma down to beta, drawn with an obtuse angle at beta.","unit":32,"polygons":[{"points":[[0,0],[6.553,4.589],[2.688,0]],"edgeLabels":["8","6",null],"vertexLabels":["α","γ","β"]}],"circles":[{"at":[0,0],"r":1.1,"from":0,"to":35}],"texts":[{"at":[1.907,0.601],"text":"35°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 **Solution.** Use the Law of Sines to find angle $\beta$ and angle $\gamma$, and then side $c$. Solving for $\beta$, we have the proportion
@@ -191,7 +211,7 @@ $$
 However, in the diagram, angle $\beta$ appears to be an obtuse angle and may be greater than $90^\circ$. How did we get an acute angle, and how do we find the measurement of $\beta$? Let's investigate further. Dropping a perpendicular from $\gamma$ and viewing the triangle from a right angle perspective, we have the figure below. It appears that there may be a second triangle that will fit the given criteria.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The Example triangle extended to show both SSA solutions: from the fixed side b = 8 between alpha-prime and gamma-prime, two points six units from gamma-prime lie on the base — beta, giving the original obtuse triangle, and beta-prime, giving a second triangle — with a dashed altitude from gamma-prime to the base and the base angle phi marked at beta-prime.","unit":30,"segments":[{"from":[0,0],"to":[6.553,4.589],"label":"8"},{"from":[6.553,4.589],"to":[2.687,0],"label":"6"},{"from":[6.553,4.589],"to":[10.419,0],"label":"6"},{"from":[0,0],"to":[10.419,0]},{"from":[6.553,4.589],"to":[6.553,0],"dashed":true}],"points":[{"at":[0,0]},{"at":[2.687,0]},{"at":[10.419,0]},{"at":[6.553,4.589]}],"rightAngles":[{"at":[6.553,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[-0.4,-0.4],"text":"α′"},{"at":[1.5,0.75],"text":"35°"},{"at":[2.687,-0.4],"text":"β"},{"at":[10.419,-0.4],"text":"β′"},{"at":[6.553,5.05],"text":"γ′"},{"at":[9.85,0.55],"text":"φ"}]}
+{"ariaLabel":"The Example triangle extended to show both SSA solutions: a 35-degree angle is marked at alpha-prime, side 8 rises to gamma-prime, and two sides of length 6 from gamma-prime reach the base at beta and at beta-prime; a dashed altitude from gamma-prime meets the base at a right angle between them, arcs mark the two equal base angles of the isosceles triangle at beta and beta-prime, and the angle at beta-prime is labeled phi.","unit":30,"segments":[{"from":[0,0],"to":[6.553,4.589],"label":"8"},{"from":[6.553,4.589],"to":[2.688,0],"label":"6"},{"from":[6.553,4.589],"to":[10.418,0],"label":"6"},{"from":[0,0],"to":[10.418,0]},{"from":[6.553,4.589],"to":[6.553,0],"dashed":true}],"rightAngles":[{"at":[6.553,0],"dirs":[[1,0],[0,1]]}],"circles":[{"at":[0,0],"r":1.1,"from":0,"to":35},{"at":[2.688,0],"r":0.7,"from":0,"to":49.89},{"at":[10.418,0],"r":0.7,"from":130.11,"to":180}],"texts":[{"at":[1.907,0.601],"text":"35°","anchor":"middle","dy":5},{"at":[-0.5,-0.1],"text":"α′","anchor":"middle","dy":5},{"at":[2.688,-0.6],"text":"β","anchor":"middle","dy":5},{"at":[10.918,-0.1],"text":"β′","anchor":"middle","dy":5},{"at":[6.553,5.089],"text":"γ′","anchor":"middle","dy":5},{"at":[9.617999999999999,-0.6],"text":"φ","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 The angle supplementary to $\beta$ is approximately equal to $49.9^\circ$, which means that $\beta=180^\circ-49.9^\circ=130.1^\circ$. (Remember that the sine function is positive in both the first and second quadrants.) Solving for $\gamma$, we have
@@ -225,13 +245,13 @@ To summarize, there are two triangles with an angle of $35^\circ$, an adjacent s
 **(a)**
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The obtuse-beta triangle: alpha 35 degrees, beta 130.1 degrees, gamma 14.9 degrees, b=8, a=6, c approximately 2.7.","unit":30,"polygons":[{"points":[[0,0],[6.553,4.589],[2.687,0]],"edgeLabels":["b = 8","a = 6","c ≈ 2.7"],"vertexLabels":["35°","14.9°","130.1°"]}]}
+{"ariaLabel":"The obtuse-beta triangle, each angle marked with an arc: alpha 35 degrees, beta 130.1 degrees, gamma 14.9 degrees; sides b = 8, a = 6, and c approximately 2.7.","unit":46,"polygons":[{"points":[[0,0],[6.553,4.589],[2.688,0]],"edgeLabels":["b = 8","a = 6","c ≈ 2.7"],"vertexLabels":["α","γ","β"]}],"circles":[{"at":[0,0],"r":0.8,"from":0,"to":35},{"at":[6.553,4.589],"r":1.6,"from":215,"to":229.89},{"at":[2.688,0],"r":0.3,"from":49.89,"to":180}],"texts":[{"at":[1.3,0.42],"text":"35°","anchor":"middle","dy":5},{"at":[4.044,2.294],"text":"14.9°","anchor":"middle","dy":5},{"at":[2.45,0.58],"text":"130.1°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 **(b)**
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The acute-beta-prime triangle: alpha 35 degrees, beta-prime 49.9 degrees, gamma-prime 95.1 degrees, b′=8, a′=6, c′ approximately 10.4.","unit":26,"polygons":[{"points":[[0,0],[6.553,4.589],[10.419,0]],"edgeLabels":["b′ = 8","a′ = 6","c′ ≈ 10.4"],"vertexLabels":["35°","95.1°","49.9°"]}]}
+{"ariaLabel":"The acute-beta-prime triangle, each angle marked with an arc: alpha-prime 35 degrees, beta-prime 49.9 degrees, gamma-prime 95.1 degrees; sides b′ = 8, a′ = 6, and c′ approximately 10.4.","unit":28,"polygons":[{"points":[[0,0],[6.553,4.589],[10.418,0]],"edgeLabels":["b′ = 8","a′ = 6","c′ ≈ 10.4"],"vertexLabels":["α′","γ′","β′"]}],"circles":[{"at":[0,0],"r":1,"from":0,"to":35},{"at":[6.553,4.589],"r":0.7,"from":215,"to":310.11},{"at":[10.418,0],"r":0.8,"from":130.11,"to":180}],"texts":[{"at":[1.764,0.556],"text":"35°","anchor":"middle","dy":5},{"at":[6.359,3.102],"text":"95.1°","anchor":"middle","dy":5},{"at":[8.967,0.675],"text":"49.9°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 However, we were looking for the values for the triangle with an obtuse angle $\beta$. We can see them in the first triangle (a) above.
@@ -245,17 +265,17 @@ However, we were looking for the values for the triangle with an obtuse angle $\
 >}}
 
 {{< fillin
-  question="For the same $\alpha=80^\circ$, $a=120$, $b=121$, the triangle in which $\beta$ is obtuse has $\beta'\approx96.8^\circ$ and $\gamma'\approx3.2^\circ$. Using these rounded angles, find side $c$. Round to the nearest tenth."
+  question="For the same $\alpha=80^\circ$, $a=120$, $b=121$, the triangle in which $\beta$ is obtuse has $\beta'\approx96.8^\circ$ and $\gamma'\approx3.2^\circ$. Using these rounded angles, find side $c'$. Round to the nearest tenth."
   answer="6.8"
   answerForm="decimal"
-  answerDisplay="$c\approx6.8$"
-  hint="Take $180^\circ$ minus the acute value of $\beta$ to get the obtuse solution, find the new $\gamma$, then solve for $c$ with the Law of Sines."
+  answerDisplay="$c'\approx6.8$"
+  hint="Pair the given $\gamma'$ with the known ratio in the Law of Sines, $\tfrac{c'}{\sin\gamma'}=\tfrac{a}{\sin\alpha}$, and solve for $c'$."
 >}}
 
 **Example.** In the triangle shown below, solve for the unknown side and angles. Round your answers to the nearest tenth.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle with side c=12 from alpha up to beta, side b=9 as the base from alpha to gamma, and an 85-degree angle at gamma; side a and angle alpha and angle beta are unknown.","unit":24,"polygons":[{"points":[[0,0],[8.23,8.733],[9,0]],"edgeLabels":["12","a","9"],"vertexLabels":["α","β","85°"]}]}
+{"ariaLabel":"An oblique triangle with vertices alpha, beta, gamma: side 12 runs from alpha up to beta, side 9 is the base from alpha to gamma, and an 85-degree angle is marked at gamma; side a, from beta to gamma, and the angles at alpha and beta are unknown.","unit":24,"polygons":[{"points":[[0,0],[8.236,8.727],[9,0]],"edgeLabels":["12","a","9"],"vertexLabels":["α","β","γ"]}],"circles":[{"at":[9,0],"r":1.1,"from":95,"to":180}],"texts":[{"at":[7.525,1.351],"text":"85°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 **Solution.** In choosing the pair of ratios from the Law of Sines to use, look at the information given. In this case, we know the angle $\gamma=85^\circ$, and its corresponding side $c=12$, and we know side $b=9$. We will use this proportion to solve for $\beta$.
@@ -308,7 +328,7 @@ $$
   answer="101.3"
   answerForm="decimal"
   answerDisplay="$c\approx101.3$"
-  hint="Use $\sin\beta=\tfrac{b\sin\alpha}{a}$ to find $\beta$ (only the acute value gives a valid triangle here), then $\gamma=180^\circ-\alpha-\beta$, then solve for $c$."
+  hint="Use $\sin\beta=\tfrac{b\sin\alpha}{a}$ to find $\beta$, check whether its supplement still leaves room for a positive $\gamma$, then $\gamma=180^\circ-\alpha-\beta$, then solve for $c$."
 >}}
 
 **Example.** Find all possible triangles if one side has length $4$ opposite an angle of $50^\circ$, and a second side has length $10$.
@@ -324,7 +344,7 @@ $$
 $$
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An open, incomplete triangle: a 50-degree angle is marked at the lower-left vertex where a base of length 10 begins, and from an upper vertex labeled alpha a side of length 4 is drawn toward the far end of the base but stops well short of reaching it.","unit":26,"segments":[{"from":[0,0],"to":[4.5,5.362]},{"from":[4.5,5.362],"to":[7.364,2.57],"label":"4"},{"from":[0,0],"to":[10,0],"label":"10"}],"points":[{"at":[0,0]},{"at":[4.5,5.362]},{"at":[10,0]}],"texts":[{"at":[1.1,0.4],"text":"50°"},{"at":[4.5,5.85],"text":"α"}]}
+{"ariaLabel":"An open, incomplete triangle: a 50-degree angle is marked at the lower-left vertex where a base of length 10 begins, and from an upper vertex labeled alpha a side of length 4 is drawn toward the far end of the base but stops well short of reaching it.","unit":26,"segments":[{"from":[0,0],"to":[4.5,5.363]},{"from":[4.5,5.363],"to":[7.364,2.57],"label":"4"},{"from":[0,0],"to":[10,0],"label":"10","labelSide":"right"}],"points":[{"at":[0,0]},{"at":[4.5,5.363]},{"at":[10,0]}],"circles":[{"at":[0,0],"r":1.1,"from":0,"to":50}],"texts":[{"at":[1.813,0.845],"text":"50°","anchor":"middle","dy":5},{"at":[4.5,5.913],"text":"α","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 We can stop here without finding the value of $\alpha$. Because the range of the sine function is $[-1,1]$, it is impossible for the sine value to be $1.915$. In fact, inputting $\sin^{-1}(1.915)$ in a graphing calculator generates an ERROR DOMAIN. Therefore, no triangles can be drawn with the provided dimensions.
@@ -344,7 +364,11 @@ exactly one triangle
 Now that we can solve a triangle for missing values, we can use some of those values and the sine function to find the area of an oblique triangle. Recall that the area formula for a triangle is given as $\text{Area}=\tfrac12 bh$, where $b$ is base and $h$ is height. For oblique triangles, we must find $h$ before we can use the area formula. Observing the two triangles below, one acute and one obtuse, we can drop a perpendicular to represent the height and then apply the trigonometric property $\sin\alpha=\tfrac{\text{opposite}}{\text{hypotenuse}}$ to write an equation for area in oblique triangles. In the acute triangle, we have $\sin\alpha=\tfrac{h}{c}$ or $c\sin\alpha=h$. However, in the obtuse triangle, we drop the perpendicular outside the triangle and extend the base $b$ to form a right triangle. The angle used in calculation is $\alpha'$, or $180-\alpha$.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Two oblique triangles illustrating the area derivation: in the acute triangle, the altitude h from beta meets the base b between alpha and gamma; in the obtuse triangle, the altitude falls outside the triangle, so the base is extended (dashed) and the exterior angle alpha-prime is marked at alpha.","unit":22,"polygons":[{"points":[[0,0],[3,4],[8,0]],"edgeLabels":["c","a","b"],"vertexLabels":["α","β","γ"]},{"points":[[16,0],[11,3],[21,0]],"edgeLabels":["c","a","b"],"vertexLabels":["α","β","γ"]}],"segments":[{"from":[3,4],"to":[3,0],"dashed":true,"label":"h"},{"from":[11,3],"to":[11,0],"dashed":true,"label":"h"},{"from":[16,0],"to":[11,0],"dashed":true}],"rightAngles":[{"at":[3,0],"dirs":[[1,0],[0,1]]},{"at":[11,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[13.5,-1],"text":"α′"}]}
+{"ariaLabel":"The acute triangle: vertices alpha, beta, gamma with sides c, a, and b; an arc marks angle alpha, and the dashed altitude h from beta meets the base b inside the triangle at a right angle.","unit":34,"polygons":[{"points":[[0,0],[3,4],[8,0]],"edgeLabels":["c","a","b"],"vertexLabels":["α","β","γ"]}],"segments":[{"from":[3,4],"to":[3,0],"dashed":true,"label":"h","labelSide":"right"}],"rightAngles":[{"at":[3,0],"dirs":[[1,0],[0,1]]}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":53.13}],"texts":[]}
+{{< /apfigure >}}
+
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"The obtuse triangle: the angle alpha is obtuse, so the dashed altitude h from beta falls outside the triangle; the base b is extended past alpha (dashed) to meet it at a right angle, and the exterior angle alpha-prime is marked between side c and the extension.","unit":30,"polygons":[{"points":[[3,0],[0,4],[10,0]],"edgeLabels":["c","a","b"],"vertexLabels":[null,"β","γ"]}],"segments":[{"from":[0,4],"to":[0,0],"dashed":true,"label":"h","labelSide":"right"},{"from":[3,0],"to":[0,0],"dashed":true}],"rightAngles":[{"at":[0,0],"dirs":[[1,0],[0,1]]}],"circles":[{"at":[3,0],"r":0.45,"from":0,"to":126.87},{"at":[3,0],"r":0.75,"from":126.87,"to":180}],"texts":[{"at":[3.425,0.85],"text":"α","anchor":"middle","dy":5},{"at":[1.75,0.38],"text":"α′","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 Thus,
@@ -398,7 +422,7 @@ The more we study trigonometric applications, the more we discover that the appl
 **Example.** Find the altitude of the aircraft in the problem introduced at the beginning of this section, shown below. Round the altitude to the nearest tenth of a mile.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The same aircraft triangle, now with side a — from the 15-degree station to the aircraft — labeled as the distance to be found before computing the altitude.","unit":15,"polygons":[{"points":[[0,0],[14.465,3.876],[20,0]],"edgeLabels":["a",null,"20 miles"],"vertexLabels":["15°",null,"35°"]}],"segments":[{"from":[14.465,3.876],"to":[14.465,0],"dashed":true}],"rightAngles":[{"at":[14.465,0],"dirs":[[1,0],[0,1]]}]}
+{"ariaLabel":"The same aircraft triangle, with the 15-degree and 35-degree station angles marked by arcs, now with side a — from the 15-degree station to the aircraft — labeled as the distance to be found before computing the altitude.","unit":15,"polygons":[{"points":[[0,0],[14.465,3.876],[20,0]],"edgeLabels":["a",null,"20 miles"],"vertexLabels":[null,null,null]}],"segments":[{"from":[14.465,3.876],"to":[14.465,0],"dashed":true}],"rightAngles":[{"at":[14.465,0],"dirs":[[1,0],[0,1]]}],"circles":[{"at":[0,0],"r":3.2,"from":0,"to":15},{"at":[20,0],"r":2.4,"from":145,"to":180}],"texts":[{"at":[6.444,0.848],"text":"15°","anchor":"middle","dy":5},{"at":[16.281,1.173],"text":"35°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 **Solution.** To find the elevation of the aircraft, we first find the distance from one station to the aircraft, such as the side $a$, and then use right triangle relationships to find the height of the aircraft, $h$.
@@ -431,7 +455,7 @@ $$
 The aircraft is at an altitude of approximately $3.9$ miles.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An oblique triangle with vertices A, B, and C representing a blimp above a football field: the baseline AB is 145 yards, the angle at A (southern end zone) is 70 degrees, and the angle at B (northern end zone) is 62 degrees.","unit":2.2,"polygons":[{"points":[[0,0],[58.922,161.888],[145,0]],"edgeLabels":[null,null,"145 yards"],"vertexLabels":["A","C","B"]}],"texts":[{"at":[10,6],"text":"70°"},{"at":[132,6],"text":"62°"}]}
+{"ariaLabel":"An oblique triangle with vertices A, B, and C representing a blimp above a football field: the baseline AB is 145 yards, a 70-degree angle is marked at A (the southern end zone), and a 62-degree angle is marked at B (the northern end zone).","unit":2.2,"polygons":[{"points":[[0,0],[58.922,161.888],[145,0]],"edgeLabels":[null,null,"145 yards"],"vertexLabels":["A","C","B"]}],"points":[{"at":[0,0]},{"at":[145,0]},{"at":[58.922,161.888]}],"circles":[{"at":[0,0],"r":9,"from":0,"to":70},{"at":[145,0],"r":9,"from":118,"to":180}],"texts":[{"at":[13.926,9.751],"text":"70°","anchor":"middle","dy":5},{"at":[130.428,8.756],"text":"62°","anchor":"middle","dy":5}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -496,9 +520,9 @@ The aircraft is at an altitude of approximately $3.9$ miles.
 >}}
 
 {{< multiplechoice
-  question="For the following exercise, assume $\alpha$ is opposite side $a$, $\beta$ is opposite side $b$, and $\gamma$ is opposite side $c$. Determine whether $\beta=119^\circ$, $b=8.2$, $a=11.3$ gives no triangle, one triangle, or two triangles."
+  question="Assume $\alpha$ is opposite side $a$, $\beta$ is opposite side $b$, and $\gamma$ is opposite side $c$. Determine whether $\beta=119^\circ$, $b=8.2$, $a=11.3$ gives no triangle, one triangle, or two triangles."
   answer="no triangle"
-  hint="A triangle needs the side opposite the largest angle to be the longest side; compare $b$ (opposite the obtuse $119^\circ$) with $a$."
+  hint="Use the Law of Sines to solve for $\sin\alpha$, then ask whether a sine can take that value."
 >}}
 two triangles
 one triangle
@@ -551,4 +575,4 @@ no triangle
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.1: Non-right Triangles: Law of Sines](https://openstax.org/books/precalculus-2e/pages/8-1-non-right-triangles-law-of-sines) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all eighteen instructional figures as accessible spec-first SVGs built from exact law-of-sines/coordinate computations (never traced) — the opening and closing aircraft triangle (shared shape, the second with side $a$ labeled); the ASA/AAS/SSA classification triangles, whose source tick marks indicating "known" parts have no primitive in this engine's figure spec and were omitted, since the same information is stated in the accompanying list text; the altitude-derivation triangle and the standard-labeling triangle; the three worked-example triangles and the first Try It's triangle; the four-panel "Possible Outcomes for SSA Triangles" diagram, redrawn at a fixed schematic angle and side length chosen to reproduce the same four qualitative outcomes the source shows (no numeric values are keyed to it; the source's per-panel prose captions were moved into the callout's lead sentence and the figure itself keeps only the (a)–(d) letters, since the engine's dynamic font-floor scaling made four long captions in one figure collide no matter how widely they were spaced — a global effect of the shared viewBox, not a per-label placement bug); the ambiguous-case investigation triangle with its dashed altitude and $\varphi$ angle; the two-panel final comparison (Figure 12), split into two consecutive single-triangle figures under bold "(a)"/"(b)" leads for the same font-floor reason; the impossible-triangle attempt, with the too-short fourth side drawn stopping short of closing; the two-panel acute/obtuse area-derivation triangles; and the blimp triangle with vertices $A$, $B$, $C$. Omitted the decorative airplane/radar-station and blimp photographic overlays, which carry no mathematics, and the "Access these online resources" media links. Every retained Try It became a real `fillin`, `multiplechoice`, or paired-`fillin` component. Where a source "solve the triangle" Try It has several unknowns of mixed units (an angle plus one or more sides), a single quantity was asked instead of the full set, since one `answerForm` token cannot require `degrees` of one list member and `decimal` of another; the two ambiguous-case Try Its and the matching Practice item instead ask for one component per triangle (`answerForm="degrees"` on the rounded-degree answers — measured against the real grader, composing `degrees decimal` self-rejects a degree-valued answer, because `decimal`'s predicate requires the WHOLE response to be a bare numeral, which a trailing $^\circ$ never is, so `degrees` alone, whose own predicate already demands a decimal/fraction/mixed-number head, is the correct token), following the same "one component per triangle" rule used for the ambiguous SSA case throughout. Two Try Its (the second ambiguous-case triangle and the blimp height) did not state a rounding instruction in the source; "round to the nearest tenth" was added to match the section's own convention and the precision the printed key carries. The obtuse-triangle part of that ambiguous-case Try It also states the source solution's rounded intermediate angles ($\beta'\approx96.8^\circ$, $\gamma'\approx3.2^\circ$) and asks for $c$ from them, because the printed key's $6.8$ comes from that rounded chain while the full-precision chain rounds to $6.9$ — without pinning the chain, either a careful learner or the source's own answer would grade wrong. Adapted ten selected end-of-section exercises — two direct Law of Sines side solves, one ambiguous-case pair (as two fill-ins), one no-triangle recognition multiple choice, three area computations (two numeric, one a real-world park problem), and two real-world elevation-angle word problems — into a closing Practice block, one group per objective, every answer independently re-derived by running the law-of-sines arithmetic in Node rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.1: Non-right Triangles: Law of Sines](https://openstax.org/books/precalculus-2e/pages/8-1-non-right-triangles-law-of-sines) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the instructional figures as twenty-two accessible spec-first SVGs built from exact law-of-sines/coordinate computations (never traced), with every marked angle drawn as an exact arc, its measure inside the angle, and the vertex names outside as in the source — the opening and closing aircraft triangle (shared shape, the second with side $a$ labeled); the ASA/AAS/SSA classification triangles, with the source's arcs and tick marks on the known parts; the altitude-derivation triangle and the standard-labeling triangle; the three worked-example triangles and the first Try It's triangle; the four-panel "Possible Outcomes for SSA Triangles" diagram, redrawn at a fixed schematic angle and side lengths that reproduce the same four outcomes, as four consecutive figures under their source captions; the ambiguous-case investigation triangle with its dashed altitude, the equal base angles, and $\varphi$; the two-panel final comparison, split into two consecutive single-triangle figures under bold "(a)"/"(b)" leads; the impossible-triangle attempt, with the too-short fourth side drawn stopping short of closing; the acute/obtuse area-derivation pair, as two consecutive figures; and the blimp triangle with vertices $A$, $B$, $C$. Omitted the decorative airplane/radar-station and blimp photographic overlays, which carry no mathematics, and the "Access these online resources" media links. Every retained Try It became a real `fillin`, `multiplechoice`, or paired-`fillin` component. Where a source "solve the triangle" Try It has several unknowns of mixed units (an angle plus one or more sides), a single side was asked instead of the full set; the $a=120$, $b=121$ ambiguous-case Try It asks for the third side of each of its two triangles, and the matching Practice exercise asks for $\gamma$ in each of its two triangles, as paired fill-ins. Two Try Its (the $a=120$, $b=121$ ambiguous case and the blimp height) did not state a rounding instruction in the source; "round to the nearest tenth" was added to match the section's own convention and the precision the printed key carries. The obtuse-triangle part of that ambiguous-case Try It also states the source solution's rounded intermediate angles ($\beta'\approx96.8^\circ$, $\gamma'\approx3.2^\circ$) and asks for $c'$ from them, because the printed key's $6.8$ comes from that rounded chain while the full-precision chain rounds to $6.9$ — without pinning the chain, either a careful learner or the source's own answer would grade wrong. Adapted ten selected end-of-section exercises — two direct Law of Sines side solves, one ambiguous-case pair (as two fill-ins), one no-triangle recognition multiple choice, three area computations (two numeric, one a real-world park problem), and two real-world elevation-angle word problems — into a closing Practice block, one group per objective, every answer independently re-derived by running the law-of-sines arithmetic in Node rather than read off the source key.</small>

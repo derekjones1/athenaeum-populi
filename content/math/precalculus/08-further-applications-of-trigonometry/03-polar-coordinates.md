@@ -64,13 +64,13 @@ The **polar grid** is scaled as the unit circle with the positive $x$-axis now v
 The two constructions land on the same point, shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid showing the point (-2, pi/6): a short dashed guide sweeps to the ray at angle pi/6 above the polar axis, then a solid directed segment runs from the pole through the origin and out 2 units into the third quadrant, ending at the plotted point.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"segments":[{"from":[0,0],"to":[0.866,0.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[-1.7321,-1],"arrows":"end"}],"points":[{"at":[-1.7321,-1]}],"texts":[{"at":[-1.29,-1.41],"text":"(-2, π/6)"}]}
+{"ariaLabel":"A polar grid showing the point (-2, pi/6): a short dashed guide runs from the pole along the ray at angle pi/6 above the polar axis, and a solid directed segment runs from the pole 2 units in the opposite direction, into the third quadrant, ending at the plotted point.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"segments":[{"from":[0,0],"to":[0.866,0.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[-1.7321,-1],"arrows":"end"}],"points":[{"at":[-1.7321,-1]}],"texts":[{"at":[-1.16,-2.24],"text":"(-2, π/6)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Compare this to the graph of the polar coordinate $\left(2,\tfrac{\pi}{6}\right)$, shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid with the point (2, pi/6) plotted 2 units from the pole along the ray at angle pi/6 above the polar axis, in the first quadrant.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[1.7321,1],"label":"(2, π/6)","labelSide":"ne","labelNudge":[22,-22]}]}
+{"ariaLabel":"A polar grid with the point (2, pi/6) plotted 2 units from the pole along the ray at angle pi/6 above the polar axis, in the first quadrant.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[1.7321,1]}],"texts":[{"at":[1.24,2.06],"text":"(2, π/6)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
@@ -98,7 +98,7 @@ $$\sin\theta=\tfrac{y}{r}\to y=r\sin\theta$$
 Dropping a perpendicular from the point in the plane to the $x$-axis forms a right triangle, as illustrated below. An easy way to remember the equations above is to think of $\cos\theta$ as the adjacent side over the hypotenuse and $\sin\theta$ as the opposite side over the hypotenuse.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A right triangle in the coordinate plane: the hypotenuse r runs from the origin to a point, also labeled with polar coordinates (r, theta); the angle theta is marked at the origin between the positive x-axis and the hypotenuse; a dashed vertical segment drops from the point to the x-axis, labeled y; the horizontal leg along the x-axis is labeled x, with a right angle marked where the dashed segment meets the axis.","xMin":-0.5,"xMax":4.5,"yMin":-0.5,"yMax":4,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[2.571,3.064],"label":"r"},{"from":[2.571,0],"to":[2.571,3.064],"dashed":true,"label":"y"},{"from":[2.421,0],"to":[2.421,0.15],"arrows":false},{"from":[2.421,0.15],"to":[2.571,0.15],"arrows":false}],"points":[{"at":[2.571,3.064],"label":"(x, y), (r, θ)","labelSide":"n"}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":50}],"texts":[{"at":[0.85,0.35],"text":"θ"},{"at":[1.2,-0.3],"text":"x"}]}
+{"ariaLabel":"A right triangle in the coordinate plane: the hypotenuse r runs from the origin to a point labeled (x, y) or (r, theta); the angle theta is marked at the origin between the positive x-axis and the hypotenuse; a dashed vertical segment drops from the point to the x-axis, labeled y; the horizontal leg along the x-axis is labeled x, with a right angle marked where the dashed segment meets the axis.","xMin":-0.5,"xMax":4.5,"yMin":-0.5,"yMax":4,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[2.571,3.064],"label":"r"},{"from":[2.571,0],"to":[2.571,3.064],"dashed":true,"label":"y"},{"from":[2.421,0],"to":[2.421,0.15],"arrows":false},{"from":[2.421,0.15],"to":[2.571,0.15],"arrows":false}],"points":[{"at":[2.571,3.064],"label":"(x, y) or (r, θ)","labelSide":"n"}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":50}],"texts":[{"at":[0.85,0.35],"text":"θ"},{"at":[1.2,-0.3],"text":"x"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -157,7 +157,7 @@ $$
 The rectangular coordinates are also $(-2,0)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid with the point (-2, 0) plotted 2 units from the pole along the negative polar axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[-2,0]}],"texts":[{"at":[-1.8,0.35],"text":"(-2, 0)"}]}
+{"ariaLabel":"A polar grid with the point (-2, 0) plotted 2 units from the pole along the negative polar axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[-2,0]}],"texts":[{"at":[-1.88,0.4],"text":"(-2, 0)"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
@@ -165,8 +165,9 @@ The rectangular coordinates are also $(-2,0)$.
 {{< /apfigure >}}
 
 {{< fillin
-  question="Write the polar coordinates $\left(-1,\tfrac{2\pi}{3}\right)$ as rectangular coordinates."
-  answer="(1/2,-\sqrt{3}/2)"
+  question="Write the polar coordinates $\left(-1,\tfrac{2\pi}{3}\right)$ as rectangular coordinates. Give exact values, as fractions and radicals."
+  answer="(\frac{1}{2},-\frac{\sqrt{3}}{2})"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\left(\tfrac12,-\tfrac{\sqrt3}{2}\right)$"
   hint="Use $x=r\cos\theta$ and $y=r\sin\theta$ with $r=-1$."
 >}}
@@ -187,7 +188,7 @@ To convert rectangular coordinates to polar coordinates, we will use two other f
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A right triangle in the coordinate plane with the hypotenuse r from the origin to a point, angle theta marked at the origin between the positive x-axis and the hypotenuse, the vertical leg labeled y, the horizontal leg along the x-axis labeled x, and a right angle marked where the legs meet.","xMin":-0.5,"xMax":4.5,"yMin":-0.5,"yMax":4,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[2.571,3.064],"label":"r"},{"from":[2.571,0],"to":[2.571,3.064],"label":"y"},{"from":[2.421,0],"to":[2.421,0.15],"arrows":false},{"from":[2.421,0.15],"to":[2.571,0.15],"arrows":false}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":50}],"texts":[{"at":[0.85,0.35],"text":"θ"},{"at":[1.2,-0.3],"text":"x"}]}
+{"ariaLabel":"A right triangle in the coordinate plane: the hypotenuse r runs from the origin to a point labeled with both its rectangular and polar coordinates, (x, y) and (r, theta); angle theta is marked at the origin between the positive x-axis and the hypotenuse, the vertical leg is labeled y, the horizontal leg along the x-axis is labeled x, and a right angle is marked where the legs meet.","xMin":-0.5,"xMax":4.5,"yMin":-0.5,"yMax":4,"grid":false,"tickLabels":false,"unit":55,"segments":[{"from":[0,0],"to":[2.571,3.064],"label":"r"},{"from":[2.571,0],"to":[2.571,3.064],"label":"y"},{"from":[2.421,0],"to":[2.421,0.15],"arrows":false},{"from":[2.421,0.15],"to":[2.571,0.15],"arrows":false}],"circles":[{"at":[0,0],"r":0.7,"from":0,"to":50}],"texts":[{"at":[0.85,0.35],"text":"θ"},{"at":[1.2,-0.3],"text":"x"}],"points":[{"at":[2.571,3.064],"label":"(x, y), (r, θ)","labelSide":"n"}]}
 {{< /apfigure >}}
 
 **Example.** Convert the rectangular coordinates $(3,3)$ to polar coordinates.
@@ -216,7 +217,7 @@ $$
 So, $r=3\sqrt2$ and $\theta=\tfrac{\pi}{4}$, giving us the polar point $\left(3\sqrt2,\tfrac{\pi}{4}\right)$. See below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid of five concentric circles at radii 1 through 5, with spokes along both diagonals through the origin, and the point (3 radical 2, pi/4) plotted about 4.24 units from the pole along the ray at angle pi/4 above the polar axis.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":false,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4},{"at":[0,0],"r":5}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[3,3],"label":"(3√2, π/4)"}]}
+{"ariaLabel":"A polar grid of five concentric circles at radii 1 through 5, with spokes along both diagonals through the origin, and the point (3 radical 2, pi/4) plotted about 4.24 units from the pole along the ray at angle pi/4 above the polar axis.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":false,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4},{"at":[0,0],"r":5}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[3,3]}],"texts":[{"at":[3.4,4.56],"text":"(3√2, π/4)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
@@ -260,7 +261,7 @@ Thus, $x^2+y^2=9$, $r=3$, and $r=-3$ should generate the same graph.
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid of four concentric circles at radii 1 through 4, with spokes along both diagonals through the origin; the ring at radius 3 is the answer curve, labeled r equals 3.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"texts":[{"at":[3.35,0.4],"text":"r = 3"}]}
+{"ariaLabel":"A polar grid of dashed concentric circles at radii 1, 2, and 4 with dashed diagonal spokes, and a solid circle of radius 3 centered at the pole, labeled r equals 3.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1,"dashed":true},{"at":[0,0],"r":2,"dashed":true},{"at":[0,0],"r":4,"dashed":true},{"at":[0,0],"r":3}],"segments":[{"from":[0,0],"to":[2.828,2.828],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.828,2.828],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.828,-2.828],"dashed":true,"arrows":false},{"from":[0,0],"to":[2.828,-2.828],"dashed":true,"arrows":false}],"texts":[{"at":[0.65,3.35],"text":"r = 3","anchor":"middle"}]}
 {{< /apfigure >}}
 
 To graph a circle in rectangular form, we must first solve for $y$.
@@ -293,11 +294,11 @@ $$
 Therefore, the equations $x^2+y^2=6y$ and $r=6\sin\theta$ should give us the same graph.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A circle of radius 3 centered at (0, 3), tangent to the origin, drawn on a rectangular grid.","xMin":-4,"xMax":4,"yMin":-1,"yMax":7,"tickLabels":true,"unit":42,"circles":[{"at":[0,3],"r":3}]}
+{"ariaLabel":"A circle of radius 3 centered at (0, 3), passing through the origin, where it is tangent to the x-axis, drawn on a rectangular grid.","xMin":-4,"xMax":4,"yMin":-1,"yMax":7,"tickLabels":true,"unit":42,"circles":[{"at":[0,3],"r":3}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid of six concentric circles at radii 1 through 6, with spokes along both diagonals through the origin, and a circle of radius 3 centered at (0, 3) traced through the pole, labeled r equals 6 sine theta.","xMin":-6,"xMax":6,"yMin":-1,"yMax":7,"grid":false,"tickLabels":true,"unit":36,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4},{"at":[0,0],"r":5},{"at":[0,0],"r":6}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"polylines":[{"through":[[0,0],[0.314,0.016],[0.624,0.066],[0.927,0.147],[1.22,0.259],[1.5,0.402],[1.763,0.573],[2.007,0.771],[2.229,0.993],[2.427,1.237],[2.598,1.5],[2.741,1.78],[2.853,2.073],[2.934,2.376],[2.984,2.686],[3,3],[2.984,3.314],[2.934,3.624],[2.853,3.927],[2.741,4.22],[2.598,4.5],[2.427,4.763],[2.229,5.007],[2.007,5.229],[1.763,5.427],[1.5,5.598],[1.22,5.741],[0.927,5.853],[0.624,5.934],[0.314,5.984],[0,6],[-0.314,5.984],[-0.624,5.934],[-0.927,5.853],[-1.22,5.741],[-1.5,5.598],[-1.763,5.427],[-2.007,5.229],[-2.229,5.007],[-2.427,4.763],[-2.598,4.5],[-2.741,4.22],[-2.853,3.927],[-2.934,3.624],[-2.984,3.314],[-3,3],[-2.984,2.686],[-2.934,2.376],[-2.853,2.073],[-2.741,1.78],[-2.598,1.5],[-2.427,1.237],[-2.229,0.993],[-2.007,0.771],[-1.763,0.573],[-1.5,0.402],[-1.22,0.259],[-0.927,0.147],[-0.624,0.066],[-0.314,0.016],[0,0]]}],"texts":[{"at":[0.3,6.4],"text":"r = 6 sin θ"}]}
+{"ariaLabel":"The upper half of a polar grid: dashed semicircles at radii 1 through 6 and dashed spokes at angles pi/4 and 3pi/4, with a solid circle of radius 3 centered at (0, 3) traced through the pole, labeled r equals 6 sine theta.","xMin":-6,"xMax":6,"yMin":-1,"yMax":7,"grid":false,"tickLabels":true,"unit":36,"circles":[{"at":[0,0],"r":1,"from":0,"to":180,"dashed":true},{"at":[0,0],"r":2,"from":0,"to":180,"dashed":true},{"at":[0,0],"r":3,"from":0,"to":180,"dashed":true},{"at":[0,0],"r":4,"from":0,"to":180,"dashed":true},{"at":[0,0],"r":5,"from":0,"to":180,"dashed":true},{"at":[0,0],"r":6,"from":0,"to":180,"dashed":true},{"at":[0,3],"r":3}],"segments":[{"from":[0,0],"to":[4.243,4.243],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.243,4.243],"dashed":true,"arrows":false}],"texts":[{"at":[0.3,6.4],"text":"r = 6 sin θ"}]}
 {{< /apfigure >}}
 
 **Example.** Rewrite the Cartesian equation $y=3x+2$ as a polar equation.
@@ -315,11 +316,11 @@ $$
 $$
 
 {{< fillin
-  question="Rewrite the Cartesian equation $y^2=3-x^2$ in polar form."
+  question="Rewrite the Cartesian equation $y^2=3-x^2$ in polar form. Solve for $r$, taking $r>0$."
   answer="\sqrt{3}"
   answerForm="exact-radical"
   answerDisplay="$r=\sqrt3$"
-  hint="Move every term to one side to get $x^2+y^2=3$, then use $x^2+y^2=r^2$ and take the positive square root."
+  hint="Gather the squared terms on one side, replace $x^2+y^2$ with $r^2$, and solve for $r$."
 >}}
 
 ### Identify and Graph Polar Equations by Converting to Rectangular Equations
@@ -342,11 +343,11 @@ $$
 Notice that the equation $r=2\sec\theta$ drawn on the polar grid is clearly the same as the vertical line $x=2$ drawn on the rectangular grid, below. Just as $x=c$ is the standard form for a vertical line in rectangular form, $r=c\sec\theta$ is the standard form for a vertical line in polar form.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vertical line at x equals 2, drawn on a rectangular grid.","xMin":-2,"xMax":4,"yMin":-3,"yMax":5,"tickLabels":true,"unit":55,"lines":[{"x":2}]}
+{"ariaLabel":"A vertical line at x equals 2, labeled x equals 2, drawn on a rectangular grid.","xMin":-2,"xMax":4,"yMin":-3,"yMax":5,"tickLabels":true,"unit":55,"lines":[{"x":2}],"texts":[{"at":[2.2,2.2],"text":"x = 2"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid of four concentric circles at radii 1 through 4, with spokes along both diagonals through the origin, and a vertical line at x equals 2, labeled r equals 2 secant theta.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false},{"x":2}],"texts":[{"at":[3.9,0.81],"text":"r = 2 sec θ"}]}
+{"ariaLabel":"A polar grid of dashed concentric circles at radii 1 through 4 with dashed diagonal spokes, and a solid vertical line at x equals 2, labeled r equals 2 secant theta.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1,"dashed":true},{"at":[0,0],"r":2,"dashed":true},{"at":[0,0],"r":3,"dashed":true},{"at":[0,0],"r":4,"dashed":true}],"segments":[{"from":[0,0],"to":[2.828,2.828],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.828,2.828],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.828,-2.828],"dashed":true,"arrows":false},{"from":[0,0],"to":[2.828,-2.828],"dashed":true,"arrows":false}],"lines":[{"x":2}],"texts":[{"at":[2.3,3.6],"text":"r = 2 sec θ"}]}
 {{< /apfigure >}}
 
 A similar discussion would demonstrate that the graph of the function $r=2\csc\theta$ will be the horizontal line $y=2$. In fact, $r=c\csc\theta$ is the standard form for a horizontal line in polar form, corresponding to the rectangular form $y=c$.
@@ -358,8 +359,8 @@ A similar discussion would demonstrate that the graph of the function $r=2\csc\t
 $$
 \begin{array}{lrcl}
 & r &=& \tfrac{3}{1-2\cos\theta} \\[4pt]
-& r\left(1-2\left(\tfrac{x}{r}\right)\right) &=& 3 \\[4pt]
-\text{Use }\cos\theta=\tfrac{x}{r}\text{ to eliminate }\theta. & r-2x &=& 3 \\[4pt]
+\text{Use }\cos\theta=\tfrac{x}{r}\text{ to eliminate }\theta. & r\left(1-2\left(\tfrac{x}{r}\right)\right) &=& 3 \\[4pt]
+& r-2x &=& 3 \\[4pt]
 \text{Isolate }r. & r &=& 3+2x \\[4pt]
 \text{Square both sides.} & r^2 &=& (3+2x)^2 \\[4pt]
 \text{Use }x^2+y^2=r^2. & x^2+y^2 &=& (3+2x)^2
@@ -379,11 +380,11 @@ $$
 When our entire equation has been changed from $r$ and $\theta$ to $x$ and $y$, we can stop, unless asked to solve for $y$ or simplify.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A hyperbola opening left and right with vertices at (-3, 0) and (-1, 0) and center (-2, 0), drawn on a rectangular grid.","xMin":-6,"xMax":2,"yMin":-6,"yMax":6,"tickLabels":true,"unit":38,"hyperbolas":[{"at":[-2,0],"a":1,"b":1.7321}]}
+{"ariaLabel":"A hyperbola opening left and right with vertices at (-3, 0) and (-1, 0) and center (-2, 0), labeled x squared plus y squared equals the square of 3 plus 2x, drawn on a rectangular grid.","xMin":-6,"xMax":2,"yMin":-6,"yMax":6,"tickLabels":true,"unit":38,"hyperbolas":[{"at":[-2,0],"a":1,"b":1.7321}],"texts":[{"at":[-2.9,5.6],"text":"x² + y² = (3 + 2x)²","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid with the same hyperbola: two branches with vertices at (-3, 0) and (-1, 0), labeled r equals 3 over the quantity 1 minus 2 cosine theta.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":true,"unit":32,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4},{"at":[0,0],"r":5},{"at":[0,0],"r":6}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"polylines":[{"through":[[-5.7,6.171],[-5.313,5.47],[-4.998,4.895],[-4.737,4.413],[-4.518,4.003],[-4.332,3.649],[-4.172,3.339],[-4.033,3.066],[-3.912,2.822],[-3.805,2.603],[-3.711,2.405],[-3.628,2.224],[-3.553,2.058],[-3.486,1.905],[-3.427,1.762],[-3.373,1.629],[-3.325,1.505],[-3.281,1.387],[-3.242,1.276],[-3.207,1.171],[-3.175,1.07],[-3.147,0.974],[-3.122,0.881],[-3.099,0.791],[-3.08,0.705],[-3.062,0.621],[-3.047,0.539],[-3.034,0.459],[-3.024,0.38],[-3.015,0.303],[-3.008,0.226],[-3.004,0.15],[-3.001,0.075],[-3,0],[-3.001,-0.075],[-3.004,-0.15],[-3.008,-0.226],[-3.015,-0.303],[-3.024,-0.38],[-3.034,-0.459],[-3.047,-0.539],[-3.062,-0.621],[-3.08,-0.705],[-3.099,-0.791],[-3.122,-0.881],[-3.147,-0.974],[-3.175,-1.07],[-3.207,-1.171],[-3.242,-1.276],[-3.281,-1.387],[-3.325,-1.505],[-3.373,-1.629],[-3.427,-1.762],[-3.486,-1.905],[-3.553,-2.058],[-3.628,-2.224],[-3.711,-2.405],[-3.805,-2.603],[-3.912,-2.822],[-4.033,-3.066],[-4.172,-3.339],[-4.332,-3.649],[-4.518,-4.003],[-4.737,-4.413],[-4.998,-4.895],[-5.313,-5.47],[-5.7,-6.171]]},{"through":[[1.842,6.425],[1.518,5.842],[1.249,5.355],[1.023,4.942],[0.831,4.587],[0.665,4.279],[0.521,4.008],[0.394,3.767],[0.282,3.553],[0.182,3.36],[0.093,3.185],[0.013,3.025],[-0.06,2.88],[-0.126,2.745],[-0.186,2.622],[-0.241,2.507],[-0.291,2.4],[-0.338,2.3],[-0.381,2.206],[-0.42,2.118],[-0.457,2.036],[-0.491,1.957],[-0.523,1.883],[-0.552,1.813],[-0.58,1.746],[-0.606,1.682],[-0.63,1.621],[-0.653,1.563],[-0.674,1.507],[-0.695,1.453],[-0.714,1.402],[-0.731,1.352],[-0.748,1.304],[-0.764,1.258],[-0.779,1.213],[-0.793,1.17],[-0.807,1.128],[-0.819,1.087],[-0.831,1.048],[-0.843,1.009],[-0.853,0.971],[-0.864,0.935],[-0.873,0.899],[-0.882,0.864],[-0.891,0.83],[-0.899,0.797],[-0.907,0.764],[-0.914,0.732],[-0.921,0.7],[-0.928,0.669],[-0.934,0.639],[-0.94,0.609],[-0.945,0.58],[-0.951,0.551],[-0.956,0.522],[-0.96,0.494],[-0.964,0.466],[-0.968,0.438],[-0.972,0.411],[-0.976,0.384],[-0.979,0.357],[-0.982,0.331],[-0.985,0.305],[-0.987,0.279],[-0.989,0.253],[-0.991,0.227],[-0.993,0.201],[-0.995,0.176],[-0.996,0.151],[-0.997,0.125],[-0.998,0.1],[-0.999,0.075],[-1,0.05],[-1,0.025],[-1,0],[-1,-0.025],[-1,-0.05],[-0.999,-0.075],[-0.998,-0.1],[-0.997,-0.125],[-0.996,-0.151],[-0.995,-0.176],[-0.993,-0.201],[-0.991,-0.227],[-0.989,-0.253],[-0.987,-0.279],[-0.985,-0.305],[-0.982,-0.331],[-0.979,-0.357],[-0.976,-0.384],[-0.972,-0.411],[-0.968,-0.438],[-0.964,-0.466],[-0.96,-0.494],[-0.956,-0.522],[-0.951,-0.551],[-0.945,-0.58],[-0.94,-0.609],[-0.934,-0.639],[-0.928,-0.669],[-0.921,-0.7],[-0.914,-0.732],[-0.907,-0.764],[-0.899,-0.797],[-0.891,-0.83],[-0.882,-0.864],[-0.873,-0.899],[-0.864,-0.935],[-0.853,-0.971],[-0.843,-1.009],[-0.831,-1.048],[-0.819,-1.087],[-0.807,-1.128],[-0.793,-1.17],[-0.779,-1.213],[-0.764,-1.258],[-0.748,-1.304],[-0.731,-1.352],[-0.714,-1.402],[-0.695,-1.453],[-0.674,-1.507],[-0.653,-1.563],[-0.63,-1.621],[-0.606,-1.682],[-0.58,-1.746],[-0.552,-1.813],[-0.523,-1.883],[-0.491,-1.957],[-0.457,-2.036],[-0.42,-2.118],[-0.381,-2.206],[-0.338,-2.3],[-0.291,-2.4],[-0.241,-2.507],[-0.186,-2.622],[-0.126,-2.745],[-0.06,-2.88],[0.013,-3.025],[0.093,-3.185],[0.182,-3.36],[0.282,-3.553],[0.394,-3.767],[0.521,-4.008],[0.665,-4.279],[0.831,-4.587],[1.023,-4.942],[1.249,-5.355],[1.518,-5.842],[1.842,-6.425]]}]}
+{"ariaLabel":"A polar grid of dashed concentric circles at radii 1 through 6 with dashed diagonal spokes, and the same hyperbola drawn solid: two branches with vertices at (-3, 0) and (-1, 0), labeled r equals 3 over the quantity 1 minus 2 cosine theta.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":true,"unit":32,"circles":[{"at":[0,0],"r":1,"dashed":true},{"at":[0,0],"r":2,"dashed":true},{"at":[0,0],"r":3,"dashed":true},{"at":[0,0],"r":4,"dashed":true},{"at":[0,0],"r":5,"dashed":true},{"at":[0,0],"r":6,"dashed":true}],"segments":[{"from":[0,0],"to":[4.243,4.243],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.243,4.243],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.243,-4.243],"dashed":true,"arrows":false},{"from":[0,0],"to":[4.243,-4.243],"dashed":true,"arrows":false}],"hyperbolas":[{"at":[-2,0],"a":1,"b":1.7321}],"texts":[{"at":[2,6.35],"text":"r = 3/(1 − 2 cos θ)"}]}
 {{< /apfigure >}}
 
 **Analysis.** In this example, the right side of the equation can be expanded and the equation simplified further, as shown above. However, the equation cannot be written as a single function in Cartesian form. We may wish to write the rectangular equation in the hyperbola's standard form. To do this, we can start with the initial equation.
@@ -394,10 +395,10 @@ $$
 & x^2+y^2-(3+2x)^2 &=& 0 \\[4pt]
 & x^2+y^2-(9+12x+4x^2) &=& 0 \\[4pt]
 & x^2+y^2-9-12x-4x^2 &=& 0 \\[4pt]
-\text{Multiply through by }-1. & -3x^2-12x+y^2 &=& 9 \\[4pt]
-& 3x^2+12x-y^2 &=& -9 \\[4pt]
-& 3(x^2+4x+\ )-y^2 &=& -9 \\[4pt]
-\text{Organize terms to complete the square for }x. & 3(x^2+4x+4)-y^2 &=& -9+12 \\[4pt]
+& -3x^2-12x+y^2 &=& 9 \\[4pt]
+\text{Multiply through by }{-1}. & 3x^2+12x-y^2 &=& -9 \\[4pt]
+\text{Organize terms to complete the square for }x. & 3(x^2+4x+\ )-y^2 &=& -9 \\[4pt]
+& 3(x^2+4x+4)-y^2 &=& -9+12 \\[4pt]
 & 3(x+2)^2-y^2 &=& 3 \\[4pt]
 & (x+2)^2-\tfrac{y^2}{3} &=& 1
 \end{array}
@@ -419,11 +420,11 @@ The "hour-glass" shape of the graph is called a **hyperbola**. Hyperbolas have m
 
 $$
 \begin{array}{lrcl}
-\text{Use the double angle identity for sine.} & r &=& \sin(2\theta) \\[4pt]
-\text{Use }\cos\theta=\tfrac{x}{r}\text{ and }\sin\theta=\tfrac{y}{r}. & r &=& 2\sin\theta\cos\theta \\[4pt]
-\text{Simplify.} & r &=& 2\left(\tfrac{x}{r}\right)\left(\tfrac{y}{r}\right) \\[4pt]
-\text{Multiply both sides by }r^2. & r &=& \tfrac{2xy}{r^2} \\[4pt]
-& r^3 &=& 2xy \\[4pt]
+& r &=& \sin(2\theta) \\[4pt]
+\text{Use the double angle identity for sine.} & r &=& 2\sin\theta\cos\theta \\[4pt]
+\text{Use }\cos\theta=\tfrac{x}{r}\text{ and }\sin\theta=\tfrac{y}{r}. & r &=& 2\left(\tfrac{x}{r}\right)\left(\tfrac{y}{r}\right) \\[4pt]
+\text{Simplify.} & r &=& \tfrac{2xy}{r^2} \\[4pt]
+\text{Multiply both sides by }r^2. & r^3 &=& 2xy \\[4pt]
 \text{As }x^2+y^2=r^2,r=\sqrt{x^2+y^2}. & \left(\sqrt{x^2+y^2}\right)^3 &=& 2xy
 \end{array}
 $$
@@ -451,42 +452,44 @@ $$(x^2+y^2)^{\tfrac32}=2xy\ \text{or}\ x^2+y^2=(2xy)^{\tfrac23}$$
 
 ### Plot points using polar coordinates
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A polar grid of five dashed concentric circles with dashed spokes every pi/6, its axes marked 0, pi/2, pi, and 3pi/2; one point is plotted on the third circle out from the pole, midway between the spokes at 2pi/3 and 5pi/6.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"unit":26,"xLabel":"","yLabel":"","circles":[{"at":[0,0],"r":1,"dashed":true},{"at":[0,0],"r":2,"dashed":true},{"at":[0,0],"r":3,"dashed":true},{"at":[0,0],"r":4,"dashed":true},{"at":[0,0],"r":5,"dashed":true}],"segments":[{"from":[0,0],"to":[4.33,2.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[2.5,4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.5,4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.33,2.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.33,-2.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.5,-4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[2.5,-4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[4.33,-2.5],"dashed":true,"arrows":false}],"points":[{"at":[-2.121,2.121]}],"texts":[{"at":[7.0,0],"text":"0"},{"at":[0,6.9],"text":"π/2"},{"at":[-7.0,0],"text":"π"},{"at":[0,-7.2],"text":"3π/2"}]}
+{{< /apfigure >}}
+
 {{< fillin
-  question="Give the polar coordinates of the plotted point, with $r>0$ and $0\le\theta<2\pi$."
-  answer="(3,3\pi/4)"
-  answerForm="radians"
+  question="Give the polar coordinates of the point plotted above, with $r>0$ and $0\le\theta<2\pi$."
+  answer="(3,\frac{3\pi}{4})"
+  answerForm="radians single-term"
   answerDisplay="$\left(3,\tfrac{3\pi}{4}\right)$"
-  hint="Count how many concentric circles out the point sits — that's $r$ — then read its angle counterclockwise from the polar axis, in radians."
+  hint="Count how many concentric circles out the point sits — that's $r$ — then read its angle counterclockwise from the polar axis, in radians. The spokes are drawn every $\tfrac{\pi}{6}$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid with a point plotted on the third concentric circle out from the pole, along the ray midway between pi/2 and pi.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"grid":false,"tickLabels":true,"unit":48,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[-2.1213,2.1213]}]}
+{"ariaLabel":"A polar grid of five dashed concentric circles with dashed spokes every pi/6, its axes marked 0, pi/2, pi, and 3pi/2; one point is plotted on the fifth circle out from the pole, on the axis marked pi.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"unit":26,"xLabel":"","yLabel":"","circles":[{"at":[0,0],"r":1,"dashed":true},{"at":[0,0],"r":2,"dashed":true},{"at":[0,0],"r":3,"dashed":true},{"at":[0,0],"r":4,"dashed":true},{"at":[0,0],"r":5,"dashed":true}],"segments":[{"from":[0,0],"to":[4.33,2.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[2.5,4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.5,4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.33,2.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[-4.33,-2.5],"dashed":true,"arrows":false},{"from":[0,0],"to":[-2.5,-4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[2.5,-4.33],"dashed":true,"arrows":false},{"from":[0,0],"to":[4.33,-2.5],"dashed":true,"arrows":false}],"points":[{"at":[-5,0]}],"texts":[{"at":[7.0,0],"text":"0"},{"at":[0,6.9],"text":"π/2"},{"at":[-7.0,0],"text":"π"},{"at":[0,-7.2],"text":"3π/2"}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Give the polar coordinates of the plotted point, with $r>0$ and $0\le\theta<2\pi$."
+  question="Give the polar coordinates of the point plotted above, with $r>0$ and $0\le\theta<2\pi$."
   answer="(5,\pi)"
-  answerForm="radians"
+  answerForm="radians single-term"
   answerDisplay="$(5,\pi)$"
-  hint="Count how many concentric circles out the point sits — that's $r$ — then read its angle counterclockwise from the polar axis, in radians."
+  hint="Count how many concentric circles out the point sits — that's $r$ — then read its angle counterclockwise from the polar axis, in radians. The spokes are drawn every $\tfrac{\pi}{6}$."
 >}}
-
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"A polar grid of five concentric circles with a point plotted on the fifth circle out from the pole, along the negative polar axis.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"grid":false,"tickLabels":true,"unit":40,"circles":[{"at":[0,0],"r":1},{"at":[0,0],"r":2},{"at":[0,0],"r":3},{"at":[0,0],"r":4},{"at":[0,0],"r":5}],"lines":[{"slope":1,"intercept":0,"arrows":false},{"slope":-1,"intercept":0,"arrows":false}],"points":[{"at":[-5,0]}]}
-{{< /apfigure >}}
 
 ### Convert from polar coordinates to rectangular coordinates
 
 {{< fillin
   question="Convert the polar coordinates $(5,\pi)$ to Cartesian coordinates."
   answer="(-5,0)"
+  answerForm="evaluated-trig decimal"
   answerDisplay="$(-5,0)$"
-  hint="Use $x=r\cos\theta$ and $y=r\sin\theta$; $\cos\pi=-1$ and $\sin\pi=0$."
+  hint="Use $x=r\cos\theta$ and $y=r\sin\theta$ with $r=5$, reading $\cos\pi$ and $\sin\pi$ off the unit circle."
 >}}
 
 {{< fillin
-  question="Convert the polar coordinates $\left(-3,\tfrac{\pi}{6}\right)$ to Cartesian coordinates."
-  answer="(-3\sqrt{3}/2,-3/2)"
+  question="Convert the polar coordinates $\left(-3,\tfrac{\pi}{6}\right)$ to Cartesian coordinates. Give exact values, as fractions and radicals."
+  answer="(-\frac{3\sqrt{3}}{2},-\frac{3}{2})"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$\left(-\tfrac{3\sqrt3}{2},-\tfrac32\right)$"
   hint="Use $x=r\cos\theta$ and $y=r\sin\theta$ with $r=-3$."
 >}}
@@ -496,7 +499,7 @@ $$(x^2+y^2)^{\tfrac32}=2xy\ \text{or}\ x^2+y^2=(2xy)^{\tfrac23}$$
 {{< fillin
   question="Convert the Cartesian coordinates $(4,2)$ to polar coordinates with $r>0$, $0\le\theta<2\pi$. Round $\theta$ to the nearest thousandth."
   answer="(2\sqrt{5},0.464)"
-  answerForm="radians"
+  answerForm="evaluated-trig radians simplified-radical no-like-terms"
   answerDisplay="$(2\sqrt5,0.464)$"
   hint="Find $r$ with $r=\sqrt{x^2+y^2}$ and $\theta$ with $\tan\theta=\tfrac{y}{x}$, checking the quadrant the point is in."
 >}}
@@ -504,9 +507,9 @@ $$(x^2+y^2)^{\tfrac32}=2xy\ \text{or}\ x^2+y^2=(2xy)^{\tfrac23}$$
 {{< fillin
   question="Convert the Cartesian coordinates $(3,-5)$ to polar coordinates with $r>0$, $0\le\theta<2\pi$. Round $\theta$ to the nearest thousandth."
   answer="(\sqrt{34},5.253)"
-  answerForm="radians"
+  answerForm="evaluated-trig radians simplified-radical no-like-terms"
   answerDisplay="$(\sqrt{34},5.253)$"
-  hint="The point is in quadrant IV, so if the calculator's inverse tangent returns a negative angle, add $2\pi$ to land in $[0,2\pi)$."
+  hint="Find $r$ with $r=\sqrt{x^2+y^2}$. For $\theta$, use $\tan\theta=\tfrac{y}{x}$, and if the calculator's inverse tangent returns a negative angle, add $2\pi$ to land in $[0,2\pi)$."
 >}}
 
 ### Transform equations between polar and rectangular forms
@@ -535,9 +538,9 @@ $$(x^2+y^2)^{\tfrac32}=2xy\ \text{or}\ x^2+y^2=(2xy)^{\tfrac23}$$
 >}}
 
 {{< multiplechoice
-  question="Which conic section does the equation $x+3y=6$ represent?"
+  question="Which conic section does the polar equation $r=\tfrac{6}{\cos\theta+3\sin\theta}$ represent?"
   answer="line"
-  hint="The equation is first-degree in $x$ and $y$, with no squared term."
+  hint="Use the Cartesian equation from the item above, and look at the degree of each of its terms in $x$ and $y$."
 >}}
 circle
 line
@@ -549,13 +552,13 @@ parabola
   question="Convert the polar equation $r^2=4\sec\theta\csc\theta$ to a Cartesian equation."
   answer="xy=4"
   answerDisplay="$xy=4$"
-  hint="Rewrite $\sec\theta$ and $\csc\theta$ in terms of cosine and sine, multiply both sides by $\cos\theta\sin\theta$, then use $x=r\cos\theta$, $y=r\sin\theta$, and $r^2=x^2+y^2$."
+  hint="Rewrite $\sec\theta$ and $\csc\theta$ in terms of cosine and sine, clear the fractions, then split $r^2$ so one factor of $r$ goes with the cosine and one with the sine."
 >}}
 
 {{< multiplechoice
-  question="Which conic section does the equation $xy=4$ represent?"
+  question="Which conic section does the polar equation $r^2=4\sec\theta\csc\theta$ represent?"
   answer="hyperbola"
-  hint="The equation is a constant divided by one variable — its graph has two branches approaching the axes."
+  hint="Use the Cartesian equation from the item above, solve it for $y$, and recall the graph of $y=\tfrac{k}{x}$."
 >}}
 parabola
 hyperbola
@@ -565,4 +568,4 @@ line
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.3: Polar Coordinates](https://openstax.org/books/precalculus-2e/pages/8-3-polar-coordinates) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative sailboat illustration opening the section (Figure 1), an ornamental scene-setter with no mathematics beyond its printed compass labels, and reworded the two sentences that pointed at it into a self-contained opener. Recreated every instructional figure as an accessible spec-first SVG: the polar-grid recipe used throughout (concentric circles at each integer radius plus the two diagonal grid lines, matching the source's own grid) for every point-plotting figure; both panels of the negative-$r$ construction (the retrace-through-the-pole sweep and its direct equivalent); the generic $x,y,r,\theta$ right triangle used to introduce each conversion direction; a polar-grid-plus-rectangular-grid pair for every polar/rectangular point-equivalence example; the circle, line, and hyperbola equation-graph pairs, with the hyperbola's polar branches, the horizontal-circle's polar trace, and the vertical line's polar trace each sampled or drawn from the exact solved equation (never freehand) — the hyperbola's dashed asymptote lines use its own solved slope $\pm\sqrt3$. The source prints each polar panel's equation directly on the curve; the $r=2\sec\theta$ and $r=6\sin\theta$ panels keep that label, but the hyperbola's polar panel — the densest figure on the page, six rings, two diagonals, and two long curve branches — has no readable gap left for its 19-character label at any position the figure-overlap gate accepts, so that one label is omitted; the equation is still stated in the adjacent prose and the figure's `ariaLabel`. Every retained "Try It" became a real `fillin` or `multiplechoice` component. The two "plot the point" Try Its (following Examples 1 and 2) became graph-mode multiple choice, since a polar answer cannot be graded by the interactive `graphplot` component (its snap lattice is rectangular, not polar) — this leaves the section with two graph-mode multiple-choice questions and no graphplot, which the corpus's usual "one recognition multiple choice per section" convention does not cleanly cover, the same way intermediate algebra 3.4 could not convert its shading questions. The remaining three Try Its (rectangular-coordinate, polar-form, and Cartesian-form conversions) became `fillin` components with the `answerForm` their printed subject needs: `exact-radical` on the "rewrite in polar form" Try It, since its answer $r=\sqrt3$ has no decimal shape to fall back on, and `circle-standard-form` on the "rewrite in Cartesian form" Try It, since the source itself offers two equally correct forms and the standard-form one is the shape it prints last. Adapted ten selected end-of-section exercises into a closing Practice block, one group per objective: two "find the polar coordinates of the point" Graphical exercises (transcribed as unlabeled figures, since the printed figures carry no coordinate labels either) pinned to their representative with $r>0$, $0\le\theta<2\pi$ and the `radians` form; two Algebraic polar-to-rectangular and two rectangular-to-polar conversions, the latter pair also carrying `radians` since their answers name an angle; two plain equation transformations; and two "convert to Cartesian form and identify the conic" exercises, each split into its two natural asks — a `fillin` for the equation and a `multiplechoice` for the categorical conic name, since a conic name is never a gradable number. Every Practice item and Try It was independently re-derived (including by running the trigonometry and equation algebra in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.3: Polar Coordinates](https://openstax.org/books/precalculus-2e/pages/8-3-polar-coordinates) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative sailboat illustration opening the section (Figure 1), an ornamental scene-setter with no mathematics beyond its printed compass labels, and reworded the two sentences that pointed at it into a self-contained opener. Recreated every instructional figure as an accessible spec-first SVG: the polar-grid recipe used throughout (concentric circles at each integer radius plus the two diagonal grid lines, matching the source's own grid) for every point-plotting figure, drawn dashed in the four equation-graph polar panels so the solid curve stands out from the grid as it does on the source's faint grid (the $r=6\sin\theta$ panel keeps only the upper half of the grid, as the source does); both panels of the negative-$r$ example (the point $\left(-2,\tfrac{\pi}{6}\right)$ with its directed segment, and the comparison point $\left(2,\tfrac{\pi}{6}\right)$); the generic $x,y,r,\theta$ right triangle used to introduce each conversion direction; a polar-grid-plus-rectangular-grid pair for every polar/rectangular point-equivalence example; the circle, line, and hyperbola equation-graph pairs, with the hyperbola's polar branches, the $r=6\sin\theta$ circle's polar trace, and the vertical line's polar trace each drawn from the exact solved equation (never freehand), the hyperbola's branches clipped at the edge of the window. The line and hyperbola pairs name their curves beside them, as the source prints them; the $r=3$ and $r=6\sin\theta$ polar panels, which the source leaves unnamed, name theirs too. Corrected the source's "Covert" to "Convert" in the $r=2\sec\theta$ example's prompt. Moved the step notes in the $r=\tfrac{3}{1-2\cos\theta}$, hyperbola standard-form, and $r=\sin(2\theta)$ step tables onto the row each step produces, as the page's other step tables do. Every retained "Try It" became a real `fillin` or `multiplechoice` component. The two "plot the point" Try Its (following Examples 1 and 2) became graph-mode multiple choice, since a polar answer cannot be graded by the interactive `graphplot` component (its snap lattice is rectangular, not polar). The remaining three Try Its (rectangular-coordinate, polar-form, and Cartesian-form conversions) became `fillin` components with the `answerForm` their printed subject needs: `exact-radical` on the "rewrite in polar form" Try It, which also asks for $r>0$, since its answer $r=\sqrt3$ has no decimal shape to fall back on, and `circle-standard-form` on the "rewrite in Cartesian form" Try It, since the source itself offers two equally correct forms and the standard-form one is the shape it prints last. Adapted ten selected end-of-section exercises into a closing Practice block, one group per objective: two "find the polar coordinates of the point" Graphical exercises, redrawn on the source's own exercise grid (five rings, spokes every $\tfrac{\pi}{6}$, axes marked $0$, $\tfrac{\pi}{2}$, $\pi$, $\tfrac{3\pi}{2}$, no radius numbers), each placed above its question and pinned to its representative with $r>0$, $0\le\theta<2\pi$; two Algebraic polar-to-rectangular and two rectangular-to-polar conversions, the latter pair also carrying `radians` since their answers name an angle; two plain equation transformations; and two "convert to Cartesian form and identify the conic" exercises, each split into its two natural asks — a `fillin` for the equation and a `multiplechoice` for the categorical conic name, since a conic name is never a gradable number; each multiple choice names the polar equation rather than printing the Cartesian answer of the fill-in above it. The rectangular-coordinate Try It and the second polar-to-rectangular exercise ask for exact values, as fractions and radicals. Every Practice item and Try It was independently re-derived (including by running the trigonometry and equation algebra in Node) rather than read off the source key.</small>

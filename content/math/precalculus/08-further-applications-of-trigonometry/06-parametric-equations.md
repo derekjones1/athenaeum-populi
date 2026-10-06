@@ -60,11 +60,11 @@ However, if we were to graph each equation on its own, each one would pass the v
 It may be helpful to use the **TRACE** feature of a graphing calculator to see how the points are generated as $t$ increases.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parametric curve x(t) = t, y(t) = t squared minus 1, a parabola opening upward with vertex at (0,-1), with arrows showing the curve moving down toward the vertex on the left branch and up away from the vertex on the right branch as t increases.","xMin":-4.5,"xMax":4.5,"yMin":-2,"yMax":16,"tickLabels":true,"yTickStep":3,"unit":30,"polylines":[{"through":[[-4,15],[-3.8,13.44],[-3.6,11.96],[-3.4,10.56],[-3.2,9.24],[-3,8],[-2.8,6.84],[-2.6,5.76],[-2.4,4.76],[-2.2,3.84],[-2,3],[-1.8,2.24],[-1.6,1.56],[-1.4,0.96],[-1.2,0.44],[-1,0],[-0.8,-0.36],[-0.6,-0.64],[-0.4,-0.84],[-0.2,-0.96],[0,-1],[0.2,-0.96],[0.4,-0.84],[0.6,-0.64],[0.8,-0.36],[1,0],[1.2,0.44],[1.4,0.96],[1.6,1.56],[1.8,2.24],[2,3],[2.2,3.84],[2.4,4.76],[2.6,5.76],[2.8,6.84],[3,8],[3.2,9.24],[3.4,10.56],[3.6,11.96],[3.8,13.44],[4,15]]}],"segments":[{"from":[-3.0288,8.1726],"to":[-2.9712,7.8274],"arrows":"end"},{"from":[2.9712,7.8274],"to":[3.0288,8.1726],"arrows":"end"}],"texts":[{"at":[-3,13],"text":"y(t) = t² − 1"}]}
+{"ariaLabel":"The parametric curve x(t) = t, y(t) = t squared minus 1, a parabola opening upward with vertex at (0,-1), with arrows showing the curve moving down toward the vertex on the left branch and up away from the vertex on the right branch as t increases.","xMin":-4.5,"xMax":4.5,"yMin":-2,"yMax":16,"tickLabels":true,"yTickStep":3,"unit":30,"quadratics":[{"a":1,"c":-1,"from":-4,"to":4,"arrows":false}],"segments":[{"from":[-3.0288,8.1726],"to":[-2.9712,7.8274],"arrows":"end"},{"from":[2.9712,7.8274],"to":[3.0288,8.1726],"arrows":"end"}],"texts":[{"at":[-3,13],"text":"y(t) = t² − 1"}],"xTickStep":2}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The rectangular curve y = x squared minus 1, the same parabola redrawn with no parameter and no orientation arrows.","xMin":-4.5,"xMax":4.5,"yMin":-2,"yMax":16,"tickLabels":true,"yTickStep":3,"unit":30,"quadratics":[{"a":1,"c":-1,"arrows":false}],"texts":[{"at":[-3,13],"text":"y = x² − 1"}]}
+{"ariaLabel":"The rectangular curve y = x squared minus 1, the same parabola redrawn with no parameter and no orientation arrows.","xMin":-4.5,"xMax":4.5,"yMin":-2,"yMax":16,"tickLabels":true,"yTickStep":3,"unit":30,"quadratics":[{"a":1,"c":-1,"arrows":false}],"texts":[{"at":[-3,13],"text":"y = x² − 1"}],"xTickStep":2}
 {{< /apfigure >}}
 
 **Analysis.** The arrows indicate the direction in which the curve is generated. Notice the curve is identical to the curve of $y=x^2-1$.
@@ -73,6 +73,7 @@ It may be helpful to use the **TRACE** feature of a graphing calculator to see h
   question="Construct a table of $t$, $x(t)$, and $y(t)$ for the parametric equations $x(t)=t-3$, $y(t)=2t+4$ on $-1\le t\le2$, using integer values of $t$. Give the ordered pairs $(x,y)$ in order of increasing $t$, separated by commas."
   answer="(-4,2),(-3,4),(-2,6),(-1,8)"
   answerDisplay="$(-4,2),(-3,4),(-2,6),(-1,8)$"
+  answerForm="decimal"
   hint="Evaluate $x(t)$ and $y(t)$ at $t=-1,0,1,2$."
 >}}
 
@@ -102,7 +103,7 @@ To graph the equations, first we construct a table of values like the one below.
 The graph of $y=1-t^2$ is a parabola facing downward, as shown below. We have mapped the curve over the interval $[-3,3],$ shown as a solid line with arrows indicating the orientation of the curve according to $t$. Orientation refers to the path traced along the curve in terms of increasing values of $t$. As this parabola is symmetric with respect to the line $x=0,$ the values of $x$ are reflected across the $y$-axis.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parametric curve x(t) = t, y(t) = 1 minus t squared for t from -3 to 3, a parabola opening downward with vertex at (0,1), with arrows showing the curve moving up toward the vertex on the left branch and down away from the vertex on the right branch as t increases.","xMin":-5.5,"xMax":5.5,"yMin":-10.5,"yMax":2.5,"tickLabels":true,"yTickStep":2,"unit":30,"polylines":[{"through":[[-3,-8],[-2.85,-7.1225],[-2.7,-6.29],[-2.55,-5.5025],[-2.4,-4.76],[-2.25,-4.0625],[-2.1,-3.41],[-1.95,-2.8025],[-1.8,-2.24],[-1.65,-1.7225],[-1.5,-1.25],[-1.35,-0.8225],[-1.2,-0.44],[-1.05,-0.1025],[-0.9,0.19],[-0.75,0.4375],[-0.6,0.64],[-0.45,0.7975],[-0.3,0.91],[-0.15,0.9775],[0,1],[0.15,0.9775],[0.3,0.91],[0.45,0.7975],[0.6,0.64],[0.75,0.4375],[0.9,0.19],[1.05,-0.1025],[1.2,-0.44],[1.35,-0.8225],[1.5,-1.25],[1.65,-1.7225],[1.8,-2.24],[1.95,-2.8025],[2.1,-3.41],[2.25,-4.0625],[2.4,-4.76],[2.55,-5.5025],[2.7,-6.29],[2.85,-7.1225],[3,-8]]}],"segments":[{"from":[-2.0424,-3.1698],"to":[-1.9576,-2.8302],"arrows":"end"},{"from":[1.9576,-2.8302],"to":[2.0424,-3.1698],"arrows":"end"}]}
+{"ariaLabel":"The parametric curve x(t) = t, y(t) = 1 minus t squared for t from -3 to 3, a parabola opening downward with vertex at (0,1), with arrows showing the curve moving up toward the vertex on the left branch and down away from the vertex on the right branch as t increases.","xMin":-5.5,"xMax":5.5,"yMin":-10.5,"yMax":2.5,"tickLabels":true,"yTickStep":2,"unit":30,"quadratics":[{"a":-1,"c":1,"from":-3,"to":3,"arrows":false}],"segments":[{"from":[-2.0424,-3.1698],"to":[-1.9576,-2.8302],"arrows":"end"},{"from":[1.9576,-2.8302],"to":[2.0424,-3.1698],"arrows":"end"}],"xTickStep":2}
 {{< /apfigure >}}
 
 {{< fillin
@@ -140,11 +141,11 @@ Using these equations, we can build a table of values for $t,x,$ and $y$. In thi
 From this table, we can create three graphs.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A graph of x versus t, the horizontal position over time, a line rising through (0,-5) with slope 2.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"unit":25,"xLabel":"t","yLabel":"x","lines":[{"slope":2,"intercept":-5}]}
+{"ariaLabel":"A graph of x versus t, the horizontal position over time, a ray starting at (0,-5) when t = 0 and rising with slope 2, with an arrow showing it continues as t increases.","xMin":-1,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"unit":40,"xLabel":"t","yLabel":"x","polylines":[{"through":[[0,-5],[5.5,6]],"arrows":"end"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A graph of y versus t, the vertical position over time, a line falling through (0,3) with slope -1.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"unit":25,"xLabel":"t","yLabel":"y","lines":[{"slope":-1,"intercept":3}]}
+{"ariaLabel":"A graph of y versus t, the vertical position over time, a ray starting at (0,3) when t = 0 and falling with slope -1, with an arrow showing it continues as t increases.","xMin":-1,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"unit":40,"xLabel":"t","yLabel":"y","polylines":[{"through":[[0,3],[6,-3]],"arrows":"end"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
@@ -188,14 +189,14 @@ The Cartesian form is $x=y^2-4y+5$.
 **Analysis.** This is an equation for a parabola in which, in rectangular terms, $x$ is dependent on $y$. From the curve's vertex at $(1,2),$ the graph sweeps out to the right. In this section, we consider sets of equations given by the functions $x(t)$ and $y(t),$ where $t$ is the independent variable of time. Notice, both $x$ and $y$ are functions of time; so in general $y$ is not a function of $x$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The sideways parabola x equals (y minus 2) squared plus 1, vertex at (1,2), opening to the right, with arrows on both branches pointing left toward the vertex on the lower branch and right away from the vertex on the upper branch, showing the direction of increasing t.","xMin":-2.5,"xMax":14,"yMin":-2.5,"yMax":6.5,"tickLabels":true,"unit":40,"polylines":[{"through":[[13.25,-1.5],[12.0556,-1.325],[10.9225,-1.15],[9.8506,-0.975],[8.84,-0.8],[7.8906,-0.625],[7.0025,-0.45],[6.1756,-0.275],[5.41,-0.1],[4.7056,0.075],[4.0625,0.25],[3.4806,0.425],[2.96,0.6],[2.5006,0.775],[2.1025,0.95],[1.7656,1.125],[1.49,1.3],[1.2756,1.475],[1.1225,1.65],[1.0306,1.825],[1,2],[1.0306,2.175],[1.1225,2.35],[1.2756,2.525],[1.49,2.7],[1.7656,2.875],[2.1025,3.05],[2.5006,3.225],[2.96,3.4],[3.4806,3.575],[4.0625,3.75],[4.7056,3.925],[5.41,4.1],[6.1756,4.275],[7.0025,4.45],[7.8906,4.625],[8.84,4.8],[9.8506,4.975],[10.9225,5.15],[12.0556,5.325],[13.25,5.5]]}],"segments":[{"from":[5.2425,-0.0606],"to":[4.7575,0.0606],"arrows":"end"},{"from":[9.7534,4.9589],"to":[10.2466,5.0411],"arrows":"end"}]}
+{"ariaLabel":"The sideways parabola x equals (y minus 2) squared plus 1, vertex at (1,2), opening to the right, with arrows showing the direction of increasing t: up and to the left toward the vertex on the lower branch, and up and to the right away from the vertex on the upper branch.","xMin":-2.5,"xMax":14,"yMin":-2.5,"yMax":6.5,"tickLabels":true,"unit":40,"quadratics":[{"a":1,"b":-4,"c":5,"sideways":true,"from":-1.5,"to":5.5,"arrows":false}],"segments":[{"from":[3.4872,0.4209],"to":[3.0128,0.5791],"arrows":"end"},{"from":[9.7534,4.9589],"to":[10.2466,5.0411],"arrows":"end"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Given the equations below, with $t\ge0$, eliminate the parameter and write as a rectangular equation for $y$ as a function of $x$: $x(t)=2t^2+6$, $y(t)=5-t$."
   answer="5-\sqrt{\tfrac{1}{2}x-3}"
   answerDisplay="$y=5-\sqrt{\tfrac{1}{2}x-3}$"
-  hint="Solve $x=2t^2+6$ for $t$, keeping the branch $t=5-y\ge0$ that matches $y=5-t$, then substitute into $y=5-t$."
+  hint="Solve $x=2t^2+6$ for $t$, taking the nonnegative square root because $t\ge0$, then substitute into $y=5-t$."
 >}}
 
 **Example.** Eliminate the parameter and write as a Cartesian equation: $x(t)=e^{-t}$ and $y(t)=3e^t$.
@@ -221,14 +222,14 @@ $$
 
 The Cartesian form is $y=\tfrac3x$.
 
-**Analysis.** The graph of the parametric equation is shown below (a). The domain is restricted to $t>0$. The Cartesian equation, $y=\tfrac3x,$ is shown below (b) and has only one restriction on the domain, $x\ne0$.
+**Analysis.** The graph of the parametric equation is shown below (a). The domain is restricted to $x>0$. The Cartesian equation, $y=\tfrac3x,$ is shown below (b) and has only one restriction on the domain, $x\ne0$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(a) The parametric curve x(t) = e to the minus t, y(t) = 3e to the t, a branch of a hyperbola in the first quadrant, with arrows showing motion up and to the left as t increases.","xMin":-1,"xMax":6,"yMin":-1,"yMax":6.5,"tickLabels":true,"unit":45,"polylines":[{"through":[[5.4739,0.5481],[5.1552,0.5819],[4.855,0.6179],[4.5722,0.6561],[4.306,0.6967],[4.0552,0.7398],[3.819,0.7855],[3.5966,0.8341],[3.3872,0.8857],[3.1899,0.9405],[3.0042,0.9986],[2.8292,1.0604],[2.6645,1.1259],[2.5093,1.1956],[2.3632,1.2695],[2.2255,1.348],[2.0959,1.4313],[1.9739,1.5199],[1.8589,1.6138],[1.7507,1.7136],[1.6487,1.8196],[1.5527,1.9321],[1.4623,2.0516],[1.3771,2.1784],[1.2969,2.3132],[1.2214,2.4562],[1.1503,2.6081],[1.0833,2.7693],[1.0202,2.9406],[0.9608,3.1224],[0.9048,3.3155],[0.8521,3.5205],[0.8025,3.7382],[0.7558,3.9694],[0.7118,4.2148],[0.6703,4.4755],[0.6313,4.7522],[0.5945,5.0461],[0.5599,5.3581],[0.5273,5.6894],[0.4966,6.0413]]}],"segments":[{"from":[2.9962,0.9908],"to":[2.4403,1.2165],"arrows":"end"},{"from":[0.7148,4.1788],"to":[0.6259,4.7722],"arrows":"end"}],"texts":[{"at":[3,5],"text":"x(t) = e⁻ᵗ"},{"at":[3,4.4],"text":"y(t) = 3eᵗ"}]}
+{"ariaLabel":"(a) The parametric curve x(t) = e to the minus t, y(t) = 3e to the t, a branch of a hyperbola in the first quadrant, with arrows showing motion up and to the left as t increases.","xMin":-1,"xMax":6,"yMin":-1,"yMax":6.5,"tickLabels":true,"unit":45,"rationals":[{"num":[3],"den":[0,1],"from":0.4966,"to":5.4739,"arrows":false}],"segments":[{"from":[2.9962,0.9908],"to":[2.4403,1.2165],"arrows":"end"},{"from":[0.7148,4.1788],"to":[0.6259,4.7722],"arrows":"end"}],"texts":[{"at":[3,5],"text":"x(t) = e⁻ᵗ"},{"at":[3,4.4],"text":"y(t) = 3eᵗ"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(b) The Cartesian curve y equals 3 over x, a hyperbola with branches in the first and third quadrants.","xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5,"tickLabels":true,"unit":25,"rationals":[{"num":[3],"den":[0,1]}],"texts":[{"at":[3.5,5.5],"text":"y = 3/x"}]}
+{"ariaLabel":"(b) The Cartesian curve y equals 3 over x, a hyperbola with branches in the first and third quadrants.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"tickLabels":true,"unit":36,"rationals":[{"num":[3],"den":[0,1]}],"texts":[{"at":[2.5,3.2],"text":"y = 3/x"}]}
 {{< /apfigure >}}
 
 **Example.** Eliminate the parameter and write as a Cartesian equation: $x(t)=\sqrt t+2$ and $y(t)=\log(t)$.
@@ -404,10 +405,10 @@ $$
 $$
 
 {{< fillin
-  question="Write the given parametric equations as a Cartesian equation: $x(t)=t^3$, $y(t)=t^6$."
+  question="Write the given parametric equations as a Cartesian equation: $x(t)=t^3$, $y(t)=t^6$. Enter it solved for $y$."
   answer="x^2"
   answerDisplay="$y=x^2$"
-  hint="Notice $y(t)=\left(t^3\right)^2$, so substitute $x$ for $t^3$."
+  hint="Write $t^6$ as a power of $t^3$, then replace $t^3$ with $x$."
 >}}
 
 ### Finding Parametric Equations for Curves Defined by Rectangular Equations
@@ -436,7 +437,7 @@ $$
 $$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"(a) The parametric parabola x(t) = t + 3, y(t) = (t + 6) squared plus 1, vertex at (-3,1), with arrows showing motion down and to the right toward the vertex on the left branch and up and to the right away from it on the right branch as t increases.","xMin":-6.5,"xMax":1,"yMin":-1,"yMax":7.5,"tickLabels":true,"unit":40,"polylines":[{"through":[[-5.4,6.76],[-5.28,6.1984],[-5.16,5.6656],[-5.04,5.1616],[-4.92,4.6864],[-4.8,4.24],[-4.68,3.8224],[-4.56,3.4336],[-4.44,3.0736],[-4.32,2.7424],[-4.2,2.44],[-4.08,2.1664],[-3.96,1.9216],[-3.84,1.7056],[-3.72,1.5184],[-3.6,1.36],[-3.48,1.2304],[-3.36,1.1296],[-3.24,1.0576],[-3.12,1.0144],[-3,1],[-2.88,1.0144],[-2.76,1.0576],[-2.64,1.1296],[-2.52,1.2304],[-2.4,1.36],[-2.28,1.5184],[-2.16,1.7056],[-2.04,1.9216],[-1.92,2.1664],[-1.8,2.44],[-1.68,2.7424],[-1.56,3.0736],[-1.44,3.4336],[-1.32,3.8224],[-1.2,4.24],[-1.08,4.6864],[-0.96,5.1616],[-0.84,5.6656],[-0.72,6.1984],[-0.6,6.76]]}],"segments":[{"from":[-4.6265,3.6295],"to":[-4.3735,2.8705],"arrows":"end"},{"from":[-1.6265,2.8705],"to":[-1.3735,3.6295],"arrows":"end"}],"texts":[{"at":[-4.5,6.8],"text":"x(t) = t + 3"},{"at":[-4.5,6.2],"text":"y(t) = (t + 6)² + 1"}]}
+{"ariaLabel":"(a) The parametric parabola x(t) = t + 3, y(t) = (t + 6) squared plus 1, vertex at (-3,1), with arrows showing motion down and to the right toward the vertex on the left branch and up and to the right away from it on the right branch as t increases.","xMin":-6.5,"xMax":1,"yMin":-1,"yMax":7.5,"tickLabels":true,"unit":40,"quadratics":[{"a":1,"b":6,"c":10,"from":-5.4,"to":-0.6,"arrows":false}],"segments":[{"from":[-4.6265,3.6295],"to":[-4.3735,2.8705],"arrows":"end"},{"from":[-1.6265,2.8705],"to":[-1.3735,3.6295],"arrows":"end"}],"texts":[{"at":[-4.5,6.8],"text":"x(t) = t + 3"},{"at":[-4.5,6.2],"text":"y(t) = (t + 6)² + 1"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
@@ -464,14 +465,16 @@ $$
   question="Parameterize the line from $(-1,0)$ to $(3,-2)$ so that the line is at $(-1,0)$ at $t=0$ and at $(3,-2)$ at $t=1$. Give $x(t)$ then $y(t)$, separated by a comma."
   answer="-1+4t,-2t"
   answerDisplay="$x(t)=-1+4t$, $y(t)=-2t$"
-  hint="At $t=0$ the point is $(-1,0)$ and at $t=1$ it is $(3,-2)$; write each coordinate as a linear function of $t$ that matches both values."
+  answerForm="no-like-terms"
+  hint="For each coordinate, start from its value at $t=0$ and add $t$ times its change from the first point to the second."
 >}}
 
 {{< fillin
   question="Parameterize the line from $(4,1)$ to $(6,-2)$ so that the line is at $(4,1)$ at $t=0$ and at $(6,-2)$ at $t=1$. Give $x(t)$ then $y(t)$, separated by a comma."
   answer="4+2t,1-3t"
   answerDisplay="$x(t)=4+2t$, $y(t)=1-3t$"
-  hint="At $t=0$ the point is $(4,1)$ and at $t=1$ it is $(6,-2)$; write each coordinate as a linear function of $t$ that matches both values."
+  answerForm="no-like-terms"
+  hint="For each coordinate, start from its value at $t=0$ and add $t$ times its change from the first point to the second."
 >}}
 
 ### Eliminate the parameter
@@ -500,17 +503,19 @@ $$
 ### Find a rectangular equation for a curve defined parametrically
 
 {{< fillin
-  question="Rewrite the parametric equations as a Cartesian equation by building an $x$-$y$ table: $x(t)=4-t$, $y(t)=3t+2$."
+  question="Rewrite the parametric equations as a Cartesian equation by building an $x$-$y$ table: $x(t)=4-t$, $y(t)=3t+2$. Enter it solved for $y$."
   answer="-3x+14"
   answerDisplay="$y=-3x+14$"
-  hint="Solve $x=4-t$ for $t$, then substitute into $y=3t+2$."
+  answerForm="slope-intercept-form"
+  hint="Tabulate $x$ and $y$ for a few values of $t$ and find the line through those points, or solve $x=4-t$ for $t$ and substitute into $y=3t+2$."
 >}}
 
 {{< fillin
-  question="Rewrite the parametric equations as a Cartesian equation by building an $x$-$y$ table: $x(t)=4t-1$, $y(t)=4t+2$."
+  question="Rewrite the parametric equations as a Cartesian equation by building an $x$-$y$ table: $x(t)=4t-1$, $y(t)=4t+2$. Enter it solved for $y$."
   answer="x+3"
   answerDisplay="$y=x+3$"
-  hint="Both $x(t)$ and $y(t)$ share the same $4t$ term; subtract the two equations to eliminate $t$."
+  answerForm="slope-intercept-form"
+  hint="Tabulate $x$ and $y$ for a few values of $t$ and find the line through those points, or solve $x=4t-1$ for $4t$ and substitute into $y=4t+2$."
 >}}
 
 ### Find parametric equations for curves defined by rectangular equations
@@ -531,4 +536,4 @@ $$
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.6: Parametric Equations](https://openstax.org/books/precalculus-2e/pages/8-6-parametric-equations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative chapter-opening illustration of a planet's circular orbit around the sun (Figure 1), which carries no mathematical content, and reworded the sentence that pointed at it. Recreated all thirteen instructional figures as accessible spec-first SVGs sampled or fitted from their exact formulas (never traced) — the vertical-line-test circle of radius 2 with its dashed test line; the parametric parabola $y(t)=t^2-1$ and its rectangular twin $y=x^2-1$ (Example 1's two-panel Figure 3, split into two single-panel figures); the downward parabola $y(t)=1-t^2$; the three-panel Figure 5 for the motion example (x-vs-t, y-vs-t, and the plane path with $t=1$ and $t=3$ marked), split into three single-panel figures; the sideways parabola $x=(y-2)^2+1$; the exponential-to-hyperbola pair of Figure 7 (split into two panels); the ellipse $\tfrac{x^2}{16}+\tfrac{y^2}{9}=1$ with $t=0$ and $t=\tfrac{\pi}{2}$ marked; and the parametric/rectangular parabola pair of Figure 9 (split into two panels). Every orientation-arrow direction was computed from the tangent of consecutive samples of the exact parametric formula, never estimated from the printed page. Omitted the "Access these online resources" media links. Every retained Try It became a real `fillin` component. The Try It after Example 2 ("Parameterize the curve given by $x=y^3-2y$") states its printed problem's own answer key's construction "using $y(t)=t$" explicitly in the question, since the printed problem leaves the choice of parametrization open while only the key pins one — an infinite-answer hazard the chapter brief flags; both Practice items in the "find parametric equations for curves defined by rectangular equations" group are similarly pinned to the exact construction their own source keys use. The Try It asking to eliminate the parameter from $x(t)=2t^2+6$, $y(t)=5-t$ adds "with $t\ge0$" to its question: the source states no restriction, but its parametrization is two-to-one in $t$, so without the restriction $y$ is not a function of $x$ at all and the source-keyed branch $y=5-\sqrt{\tfrac12x-3}$ would mark the equally valid other branch wrong. Adapted nine selected end-of-section exercises — two "parameterize the line from…to…" items, three "eliminate the parameter" items (one polynomial/radical, one logarithmic, one trigonometric), two "rewrite by building an $x$-$y$ table" items, and two "parameterize by setting $x(t)=t$ or $y(t)=t$" items — into a closing Practice block, one group per objective, every answer independently re-derived by substitution (verified by running the arithmetic in Node) rather than read off the source key, and every fillin replayed against the real grader together with a retype of its printed parametric subject to confirm no retype hazard.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.6: Parametric Equations](https://openstax.org/books/precalculus-2e/pages/8-6-parametric-equations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the decorative chapter-opening illustration of a planet's circular orbit around the sun (Figure 1), which carries no mathematical content, and reworded the sentence that pointed at it. Recreated all thirteen instructional figures as accessible spec-first SVGs sampled or fitted from their exact formulas (never traced) — the vertical-line-test circle of radius 2 with its dashed test line; the parametric parabola $y(t)=t^2-1$ and its rectangular twin $y=x^2-1$ (Example 1's two-panel Figure 3, split into two single-panel figures); the downward parabola $y(t)=1-t^2$; the three-panel Figure 5 for the motion example (x-vs-t, y-vs-t, and the plane path with $t=1$ and $t=3$ marked), split into three single-panel figures; the sideways parabola $x=(y-2)^2+1$; the exponential-to-hyperbola pair of Figure 7 (split into two panels); the ellipse $\tfrac{x^2}{16}+\tfrac{y^2}{9}=1$ with $t=0$ and $t=\tfrac{\pi}{2}$ marked; and the parametric/rectangular parabola pair of Figure 9 (split into two panels). Every orientation-arrow direction was computed from the tangent of consecutive samples of the exact parametric formula, never estimated from the printed page. The $x$-versus-$t$ and $y$-versus-$t$ panels of Figure 5 are drawn as rays starting at $t=0$, matching the example's non-negative values of $t$ and its plane-path panel, where the source draws full lines. In the exponential example's Analysis, the source's "The domain is restricted to $t>0$" reads "$x>0$" here: every real $t$ gives $x=e^{-t}>0$, and the source's own graph (a) draws the curve for negative $t$ as well. Omitted the "Access these online resources" media links. Every retained Try It became a real `fillin` component. The first Try It asks for its table's ordered pairs rather than a plot, so the source's answer graph is not shown. The $x(t)=t^3$, $y(t)=t^6$ Try It and the two "build an $x$-$y$ table" Practice items add "Enter it solved for $y$." — the shape of their source keys — since an equivalent unsolved equation would otherwise be marked wrong. The Try It after Example 2 ("Parameterize the curve given by $x=y^3-2y$") states its printed problem's own answer key's construction "using $y(t)=t$" explicitly in the question, since the printed problem leaves the choice of parametrization open while only the key pins one — an infinite-answer hazard the chapter brief flags; both Practice items in the "find parametric equations for curves defined by rectangular equations" group are similarly pinned to the exact construction their own source keys use. The Try It asking to eliminate the parameter from $x(t)=2t^2+6$, $y(t)=5-t$ adds "with $t\ge0$" to its question: the source states no restriction, but its parametrization is two-to-one in $t$, so without the restriction $y$ is not a function of $x$ at all and the source-keyed branch $y=5-\sqrt{\tfrac12x-3}$ would mark the equally valid other branch wrong. Adapted nine selected end-of-section exercises — two "parameterize the line from…to…" items, three "eliminate the parameter" items (one polynomial/radical, one logarithmic, one trigonometric), two "rewrite by building an $x$-$y$ table" items, and two "parameterize by setting $x(t)=t$ or $y(t)=t$" items — into a closing Practice block, one group per objective, every answer independently re-derived by substitution (verified by running the arithmetic in Node) rather than read off the source key, and every fillin replayed against the real grader together with a retype of its printed parametric subject to confirm no retype hazard.</small>

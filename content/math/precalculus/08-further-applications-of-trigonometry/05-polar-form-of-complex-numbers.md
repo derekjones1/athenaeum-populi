@@ -49,7 +49,7 @@ Plotting a **complex number** $a+bi$ is similar to plotting a real number, excep
   question="Plot the point $1+5i$ in the complex plane."
   answerDisplay="$(1,5)$"
   ariaLabel="A blank complex plane from -7 to 7 on both axes, labeled Real and Imaginary."
-  hint="Move $1$ unit in the positive real direction and $5$ units in the positive imaginary direction."
+  hint="The real part gives the horizontal coordinate and the coefficient of $i$ gives the vertical coordinate."
 >}}
 {"answer": {"points": [[1,5]]}, "grid": {"xLabel": "Real", "yLabel": "Imaginary"}}
 {{< /graphplot >}}
@@ -59,7 +59,7 @@ Plotting a **complex number** $a+bi$ is similar to plotting a real number, excep
 The first step toward working with a complex number in polar form is to find the absolute value. The absolute value of a complex number is the same as its **magnitude**, or $|z|$. It measures the distance from the origin to a point in the plane. For example, the graph of $z=2+4i$ below shows $|z|$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The point 2 plus 4i plotted in the complex plane, with a segment from the origin to the point labeled the magnitude |z|, which equals the square root of 2 squared plus 4 squared, equals the square root of 20, equals 2 root 5.","xMin":-3,"xMax":7,"yMin":-2,"yMax":8,"tickLabels":true,"xLabel":"Real","yLabel":"Imaginary","unit":40,"points":[{"at":[2,4],"label":"2 + 4i"}],"segments":[{"from":[0,0],"to":[2,4],"label":"|z|"}],"texts":[{"at":[3.6,5.6],"text":"|z| = √(2² + 4²) = √20 = 2√5"}]}
+{"ariaLabel":"The point 2 plus 4i plotted in the complex plane, with a segment from the origin to the point labeled the magnitude |z|, which equals the square root of 2 squared plus 4 squared, equals the square root of 4 plus 16, equals the square root of 20, equals 2 root 5.","xMin":-3,"xMax":7,"yMin":-2,"yMax":8,"tickLabels":true,"xLabel":"Real","yLabel":"Imaginary","unit":40,"points":[{"at":[2,4],"label":"2 + 4i"}],"segments":[{"from":[0,0],"to":[2,4],"label":"|z|","labelSide":"se"}],"texts":[{"at":[2.6,2.2],"text":"|z| = √(2² + 4²) = √(4 + 16)","anchor":"start"},{"at":[2.6,1.5],"text":"= √20 = 2√5","anchor":"start"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -88,12 +88,13 @@ $$
 See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The point z equals the square root of 5 minus i plotted in the complex plane, with a segment from the origin to the point labeled the magnitude |z|.","xMin":-2,"xMax":6,"yMin":-4,"yMax":3,"tickLabels":true,"xLabel":"Real","yLabel":"Imaginary","unit":50,"points":[{"at":[2.236,-1],"label":"z = (√5 − i)"}],"segments":[{"from":[0,0],"to":[2.236,-1],"label":"|z|"}]}
+{"ariaLabel":"The point z equals the square root of 5 minus i plotted in the complex plane, with a segment from the origin to the point labeled the magnitude |z|.","xMin":-2,"xMax":6,"yMin":-4,"yMax":3,"tickLabels":true,"xLabel":"Real","yLabel":"Imaginary","unit":60,"points":[{"at":[2.236,-1],"label":"z = (√5 − i)"}],"segments":[{"from":[0,0],"to":[2.236,-1],"label":"|z|"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Find the absolute value of the complex number $z=12-5i$."
   answer="13"
+  answerForm="decimal"
   answerDisplay="$13$"
   hint="Use $|z|=\sqrt{x^2+y^2}$ with $x=12$ and $y=-5$."
 >}}
@@ -194,22 +195,23 @@ $$
 Next, we look at $x$. If $x=r\cos\theta$, and $x=0$, then $\theta=\tfrac{\pi}{2}$. In polar coordinates, the complex number $z=0+4i$ can be written as $z=4\left(\cos\tfrac{\pi}{2}+i\sin\tfrac{\pi}{2}\right)$ or $4\,\text{cis}\left(\tfrac{\pi}{2}\right)$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The point z equals 4i plotted on the imaginary axis at (0,4), with a small arc from the real axis to the point marking the angle pi over 2.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"tickLabels":true,"xLabel":"Real","yLabel":"Imaginary","unit":55,"points":[{"at":[0,4],"label":"z = 4i"}],"circles":[{"at":[0,0],"r":1,"from":0,"to":90}],"texts":[{"at":[0.7,0.9],"text":"π/2"}]}
+{"ariaLabel":"The point z equals 4i plotted on the imaginary axis at (0,4), with a small arc from the real axis to the point marking the angle pi over 2.","xMin":-3,"xMax":3,"yMin":-1,"yMax":5,"tickLabels":true,"xLabel":"Real","yLabel":"Imaginary","unit":55,"points":[{"at":[0,4],"label":"z = 4i"}],"circles":[{"at":[0,0],"r":0.8,"from":0,"to":90}],"texts":[{"at":[0.8,0.8],"text":"π/2"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Express $z=3i$ as $r\,\text{cis}\,\theta$ in polar form. First find $r$."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$r=3$"
   hint="On the imaginary axis, $r=|z|$ — no distance formula is needed."
 >}}
 
 {{< fillin
   question="Now find $\theta$, with $0\le\theta<2\pi$."
-  answer="\pi/2"
-  answerForm="radians"
+  answer="\frac{\pi}{2}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\tfrac{\pi}{2}$"
-  hint="The point $3i$ lies straight up the imaginary axis from the origin."
+  hint="Use $\cos\theta=\tfrac{x}{r}$ with $x=0$, then check which side of the real axis the point lies on."
 >}}
 
 **Example.** Find the polar form of $-4+4i$.
@@ -241,14 +243,15 @@ Thus, the solution is $4\sqrt2\,\text{cis}\left(\tfrac{3\pi}{4}\right)$.
 {{< fillin
   question="Write $z=\sqrt3+i$ in polar form. First find $r$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$r=2$"
   hint="Use $r=\sqrt{x^2+y^2}$ with $x=\sqrt3$ and $y=1$."
 >}}
 
 {{< fillin
   question="Now find $\theta$, with $0\le\theta<2\pi$."
-  answer="\pi/6"
-  answerForm="radians"
+  answer="\frac{\pi}{6}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\theta=\tfrac{\pi}{6}$"
   hint="Use $\cos\theta=\tfrac{x}{r}$; the point lies in the first quadrant."
 >}}
@@ -296,7 +299,7 @@ The rectangular form of the given number in complex form is $12+5i$.
 {{< fillin
   question="Convert the complex number to rectangular form: $z=4\left(\cos\tfrac{11\pi}{6}+i\sin\tfrac{11\pi}{6}\right)$."
   answer="2\sqrt3-2i"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig expanded simplified-radical no-like-terms"
   answerDisplay="$2\sqrt3-2i$"
   hint="Evaluate $\cos\tfrac{11\pi}{6}$ and $\sin\tfrac{11\pi}{6}$ first, then multiply each by $4$."
 >}}
@@ -373,15 +376,17 @@ $$
 $$
 
 {{< fillin
-  question="Find the product $z_1z_2$ of $z_1=2\sqrt3(\cos(150^\circ)+i\sin(150^\circ))$ and $z_2=2(\cos(30^\circ)+i\sin(30^\circ))$."
+  question="Find the product $z_1z_2$ of $z_1=2\sqrt3(\cos(150^\circ)+i\sin(150^\circ))$ and $z_2=2(\cos(30^\circ)+i\sin(30^\circ))$. Give the result in rectangular form."
   answer="-4\sqrt3"
+  answerForm="evaluated-trig simplified-radical"
   answerDisplay="$-4\sqrt3$"
   hint="Multiply the moduli and add the angles, then evaluate the resulting trigonometric expressions."
 >}}
 
 {{< fillin
-  question="Find the quotient $\tfrac{z_1}{z_2}$ of the same two numbers, $z_1=2\sqrt3(\cos(150^\circ)+i\sin(150^\circ))$ and $z_2=2(\cos(30^\circ)+i\sin(30^\circ))$."
-  answer="-\tfrac{\sqrt3}{2}+\tfrac32 i"
+  question="Find the quotient $\tfrac{z_1}{z_2}$ of the same two numbers, $z_1=2\sqrt3(\cos(150^\circ)+i\sin(150^\circ))$ and $z_2=2(\cos(30^\circ)+i\sin(30^\circ))$. Give the result in rectangular form."
+  answer="-\frac{\sqrt3}{2}+\frac32 i"
+  answerForm="evaluated-trig expanded simplified-radical no-like-terms"
   answerDisplay="$-\tfrac{\sqrt3}{2}+\tfrac32 i$"
   hint="Divide the moduli and subtract the angles, then evaluate the resulting trigonometric expressions."
 >}}
@@ -496,8 +501,9 @@ $$
   question="Find the four fourth roots of $16(\cos(120^\circ)+i\sin(120^\circ))$, each written in the form $r(\cos\theta+i\sin\theta)$ in degrees with $0^\circ\le\theta<360^\circ$, separated by commas."
   answer="2(\cos30^\circ+i\sin30^\circ),2(\cos120^\circ+i\sin120^\circ),2(\cos210^\circ+i\sin210^\circ),2(\cos300^\circ+i\sin300^\circ)"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$2(\cos30^\circ+i\sin30^\circ)$, $2(\cos120^\circ+i\sin120^\circ)$, $2(\cos210^\circ+i\sin210^\circ)$, $2(\cos300^\circ+i\sin300^\circ)$"
-  hint="Take the fourth root of $16$ for $r$, divide $120^\circ$ by $4$ for the first angle, then add $90^\circ$ (that is, $\tfrac{360^\circ}{4}$) repeatedly for the rest."
+  hint="Use the $n$th Root Theorem with $n=4$: take the fourth root of the modulus, and find each angle from $\tfrac{\theta}{4}+\tfrac{360^\circ k}{4}$ for $k=0,1,2,3$."
 >}}
 
 ## Key concepts
@@ -519,7 +525,7 @@ $$
   question="Plot the complex number $-3-3i$ in the complex plane."
   answerDisplay="$(-3,-3)$"
   ariaLabel="A blank complex plane from -7 to 7 on both axes, labeled Real and Imaginary."
-  hint="Move $3$ units in the negative real direction and $3$ units in the negative imaginary direction."
+  hint="The real part gives the horizontal coordinate and the coefficient of $i$ gives the vertical coordinate; mind both signs."
 >}}
 {"answer": {"points": [[-3,-3]]}, "grid": {"xLabel": "Real", "yLabel": "Imaginary"}}
 {{< /graphplot >}}
@@ -528,7 +534,7 @@ $$
   question="Plot the complex number $2i$ in the complex plane."
   answerDisplay="$(0,2)$"
   ariaLabel="A blank complex plane from -7 to 7 on both axes, labeled Real and Imaginary."
-  hint="The real part is $0$, so the point lies on the imaginary axis, $2$ units up."
+  hint="Write the number as $0+bi$: the real part gives the horizontal coordinate and $b$ the vertical one."
 >}}
 {"answer": {"points": [[0,2]]}, "grid": {"xLabel": "Real", "yLabel": "Imaginary"}}
 {{< /graphplot >}}
@@ -537,7 +543,7 @@ $$
   question="Which graph shows the complex number $6-2i$ plotted in the complex plane?"
   mode="graph"
   answerIndex="1"
-  hint="The real part is the horizontal coordinate and the imaginary part the vertical one: $6-2i$ sits $6$ units to the right of the origin and $2$ units down."
+  hint="The real part is the horizontal coordinate and the coefficient of $i$ the vertical one; check the sign of each."
 >}}
 {"ariaLabel":"A point plotted at negative 6 on the real axis and 2 on the imaginary axis.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"xTickStep":2,"yTickStep":2,"xLabel":"Real","yLabel":"Imaginary","points":[{"at":[-6,2]}]}
 ===OPT===
@@ -563,7 +569,7 @@ $$
   answer="\sqrt{38}"
   answerForm="exact-radical"
   answerDisplay="$\sqrt{38}$"
-  hint="Use $|z|=\sqrt{x^2+y^2}$; $38$ has no perfect-square factor, so the radical is already simplified."
+  hint="Use $|z|=\sqrt{x^2+y^2}$ with $x=\sqrt2$ and $y=-6$, then simplify the radical if it has a perfect-square factor."
 >}}
 
 ### Write complex numbers in polar form
@@ -588,8 +594,8 @@ $$
 
 {{< fillin
   question="Convert the complex number to rectangular form: $z=7\,\text{cis}\left(\tfrac{\pi}{6}\right)$."
-  answer="\tfrac{7\sqrt3}{2}+\tfrac72 i"
-  answerForm="evaluated-trig"
+  answer="\frac{7\sqrt3}{2}+\frac72 i"
+  answerForm="evaluated-trig expanded simplified-radical no-like-terms"
   answerDisplay="$\tfrac{7\sqrt3}{2}+\tfrac72 i$"
   hint="Evaluate $\cos\tfrac{\pi}{6}$ and $\sin\tfrac{\pi}{6}$ first, then multiply each by $7$."
 >}}
@@ -597,7 +603,7 @@ $$
 {{< fillin
   question="Convert the complex number to rectangular form: $z=4\,\text{cis}\left(\tfrac{7\pi}{6}\right)$."
   answer="-2\sqrt3-2i"
-  answerForm="evaluated-trig"
+  answerForm="evaluated-trig expanded simplified-radical no-like-terms"
   answerDisplay="$-2\sqrt3-2i$"
   hint="Evaluate $\cos\tfrac{7\pi}{6}$ and $\sin\tfrac{7\pi}{6}$ first, then multiply each by $4$."
 >}}
@@ -607,13 +613,15 @@ $$
 {{< fillin
   question="Find $z_1z_2$ in polar form $r(\cos\theta+i\sin\theta)$, given $z_1=2\sqrt3(\cos(116^\circ)+i\sin(116^\circ))$ and $z_2=2(\cos(82^\circ)+i\sin(82^\circ))$."
   answer="4\sqrt3(\cos198^\circ+i\sin198^\circ)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$4\sqrt3(\cos198^\circ+i\sin198^\circ)$"
   hint="Multiply the moduli and add the angles."
 >}}
 
 {{< fillin
   question="Find $z_1z_2$ in polar form $r(\cos\theta+i\sin\theta)$, given $z_1=3(\cos(120^\circ)+i\sin(120^\circ))$ and $z_2=\tfrac14(\cos(60^\circ)+i\sin(60^\circ))$."
-  answer="\tfrac34(\cos180^\circ+i\sin180^\circ)"
+  answer="\frac34(\cos180^\circ+i\sin180^\circ)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$\tfrac34(\cos180^\circ+i\sin180^\circ)$"
   hint="Multiply the moduli and add the angles."
 >}}
@@ -623,13 +631,15 @@ $$
 {{< fillin
   question="Find $\tfrac{z_1}{z_2}$ in polar form $r(\cos\theta+i\sin\theta)$, given $z_1=21(\cos(135^\circ)+i\sin(135^\circ))$ and $z_2=3(\cos(65^\circ)+i\sin(65^\circ))$."
   answer="7(\cos70^\circ+i\sin70^\circ)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$7(\cos70^\circ+i\sin70^\circ)$"
   hint="Divide the moduli and subtract the angles."
 >}}
 
 {{< fillin
   question="Find $\tfrac{z_1}{z_2}$ in polar form $r(\cos\theta+i\sin\theta)$, given $z_1=5\sqrt2(\cos\pi+i\sin\pi)$ and $z_2=\sqrt2\left(\cos\tfrac{2\pi}{3}+i\sin\tfrac{2\pi}{3}\right)$."
-  answer="5\left(\cos\tfrac{\pi}{3}+i\sin\tfrac{\pi}{3}\right)"
+  answer="5\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$5\left(\cos\tfrac{\pi}{3}+i\sin\tfrac{\pi}{3}\right)$"
   hint="Divide the moduli and subtract the angles."
 >}}
@@ -639,6 +649,7 @@ $$
 {{< fillin
   question="Find $z^3$ in polar form $r(\cos\theta+i\sin\theta)$, when $z=5(\cos(45^\circ)+i\sin(45^\circ))$."
   answer="125(\cos135^\circ+i\sin135^\circ)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$125(\cos135^\circ+i\sin135^\circ)$"
   hint="Raise the modulus to the third power and multiply the angle by $3$."
 >}}
@@ -646,6 +657,7 @@ $$
 {{< fillin
   question="Find $z^2$ in polar form $r(\cos\theta+i\sin\theta)$, when $z=3(\cos(120^\circ)+i\sin(120^\circ))$."
   answer="9(\cos240^\circ+i\sin240^\circ)"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$9(\cos240^\circ+i\sin240^\circ)$"
   hint="Raise the modulus to the second power and multiply the angle by $2$."
 >}}
@@ -656,18 +668,20 @@ $$
   question="Evaluate the cube roots of $z=27(\cos(240^\circ)+i\sin(240^\circ))$, each written in the form $r(\cos\theta+i\sin\theta)$ in degrees with $0^\circ\le\theta<360^\circ$, separated by commas."
   answer="3(\cos80^\circ+i\sin80^\circ),3(\cos200^\circ+i\sin200^\circ),3(\cos320^\circ+i\sin320^\circ)"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$3(\cos80^\circ+i\sin80^\circ)$, $3(\cos200^\circ+i\sin200^\circ)$, $3(\cos320^\circ+i\sin320^\circ)$"
-  hint="Take the cube root of $27$ for $r$, divide $240^\circ$ by $3$ for the first angle, then add $120^\circ$ (that is, $\tfrac{360^\circ}{3}$) repeatedly for the rest."
+  hint="Use the $n$th Root Theorem with $n=3$: take the cube root of the modulus, and find each angle from $\tfrac{\theta}{3}+\tfrac{360^\circ k}{3}$ for $k=0,1,2$."
 >}}
 
 {{< fillin
-  question="Evaluate the square roots of $z=8\left(\cos\tfrac{7\pi}{4}+i\sin\tfrac{7\pi}{4}\right)$, each written in the form $r(\cos\theta+i\sin\theta)$, separated by a comma."
-  answer="2\sqrt2\left(\cos\tfrac{7\pi}{8}+i\sin\tfrac{7\pi}{8}\right),2\sqrt2\left(\cos\tfrac{15\pi}{8}+i\sin\tfrac{15\pi}{8}\right)"
+  question="Evaluate the square roots of $z=8\left(\cos\tfrac{7\pi}{4}+i\sin\tfrac{7\pi}{4}\right)$, each written in the form $r(\cos\theta+i\sin\theta)$ in radians with $0\le\theta<2\pi$, separated by a comma."
+  answer="2\sqrt2\left(\cos\frac{7\pi}{8}+i\sin\frac{7\pi}{8}\right),2\sqrt2\left(\cos\frac{15\pi}{8}+i\sin\frac{15\pi}{8}\right)"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$2\sqrt2\left(\cos\tfrac{7\pi}{8}+i\sin\tfrac{7\pi}{8}\right)$, $2\sqrt2\left(\cos\tfrac{15\pi}{8}+i\sin\tfrac{15\pi}{8}\right)$"
-  hint="Take the square root of $8$ for $r$, divide $\tfrac{7\pi}{4}$ by $2$ for the first angle, then add $\pi$ (that is, $\tfrac{2\pi}{2}$) for the second."
+  hint="Use the $n$th Root Theorem with $n=2$: take the square root of the modulus, and find each angle from $\tfrac{\theta}{2}+\tfrac{2k\pi}{2}$ for $k=0,1$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 8.5: Polar Form of Complex Numbers](https://openstax.org/books/precalculus-2e/pages/8-5-polar-form-of-complex-numbers) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: reworded the introduction's cross-book reference to an earlier "Complex Numbers" section (which lives in a different OpenStax title outside this site's corpus) as a generic mention of prior work with quadratic equations; recreated all six instructional figures as accessible spec-first SVGs — the plotted points for $2-3i$, $\sqrt5-i$, and $3-4i$, each with the magnitude segment and label the source draws; the $2+4i$ magnitude illustration, including its printed radical computation as figure text; the generic $x,y,r,\theta$ right-triangle diagram reviewing the conversion formulas (its large sweeping arc, decorative in the source, is drawn as a plain circular arc through the point, since the engine's figure primitives do not draw arrowheads on a circle); and the polar-coordinate plot of $4i$ with its $\tfrac{\pi}{2}$ angle arc. Omitted the "Access these online resources" media callout linking to two external non-corpus practice sites. Every retained Try It became a real `fillin` or `graphplot` component. The complex-plane plotting Try It and two Graphical-set Practice items became `graphplot` components graded on the placed point, since the engine's points answer form now covers a single plotted point, not just a table of several. "Convert to polar form" Try Its (Try It 4, Try It 5) and the matching Practice item are split into two `fillin` components each — one for $r$, one for $\theta$: for the exact-angle items a keyed full trigonometric-form answer is retype-passable (the engine evaluates $\cos$ and $\sin$ on comparison, so a learner's rectangular-form retype of the printed subject grades against a polar-form key as correct with no token able to refuse it, measured against the pinned grader), and the rounded-angle Practice item keeps the same split for parallel structure and so its $\theta$ part can carry the degree-form check. Because the grader does not parse the $\text{cis}$ abbreviation this section introduces, every product, quotient, power, and root question names the expected $r(\cos\theta+i\sin\theta)$ shape explicitly. Every polar-form product, quotient, power, and root answer is instead directly fillable, since nothing in a "find the product/quotient/power/root" prompt is itself value-equal to the computed result; these are keyed in the same $r(\cos\theta+i\sin\theta)$ shape the source's own Answer Key prints, and were replayed against several learner-plausible alternate spellings (the fully distributed trig form, and the evaluated $a+bi$ form for every angle with an exact closed form) with no wrongly rejected spelling found. Root sets use `answerMode="unordered"` comma lists of polar-form roots. Adapted fifteen selected end-of-section exercises — two complex-plane plots, two absolute-value, one polar-form conversion split into its two components, two polar-to-rectangular conversions, two products, two quotients, two powers, and two root evaluations — into a closing Practice block, one group per objective, every item independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 8.5: Polar Form of Complex Numbers](https://openstax.org/books/precalculus-2e/pages/8-5-polar-form-of-complex-numbers) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: reworded the introduction's cross-book reference to an earlier "Complex Numbers" section (which lives in a different OpenStax title outside this site's corpus) as a generic mention of prior work with quadratic equations; recreated all six instructional figures as accessible spec-first SVGs — the plotted points for $2-3i$, $\sqrt5-i$, and $3-4i$, each with the magnitude segment and label the source draws; the $2+4i$ magnitude illustration, including its printed radical computation as figure text; the generic $x,y,r,\theta$ right-triangle diagram reviewing the conversion formulas (its large sweeping arc, decorative in the source, is drawn as a plain circular arc through the point, since the engine's figure primitives do not draw arrowheads on a circle); and the polar-coordinate plot of $4i$ with its $\tfrac{\pi}{2}$ angle arc. Omitted the "Access these online resources" media callout linking to two external non-corpus practice sites. Every retained Try It became a real `fillin` or `graphplot` component. The complex-plane plotting Try It and two Graphical-set Practice items became `graphplot` components (a third Graphical-set item became a which-graph multiple choice) graded on the placed point, since the engine's points answer form now covers a single plotted point, not just a table of several. "Convert to polar form" Try Its (Try It 4, Try It 5) and the matching Practice item are split into two `fillin` components each — one for $r$, one for $\theta$: for the exact-angle items a keyed full trigonometric-form answer is retype-passable (the engine evaluates $\cos$ and $\sin$ on comparison, so a learner's rectangular-form retype of the printed subject grades against a polar-form key as correct with no token able to refuse it, measured against the pinned grader), and the rounded-angle Practice item keeps the same split for parallel structure and so its $\theta$ part can carry the degree-form check. Because the grader does not parse the $\text{cis}$ abbreviation this section introduces, every product, quotient, power, and root question names the expected $r(\cos\theta+i\sin\theta)$ shape explicitly. Every polar-form product, quotient, power, and root answer is keyed in the same $r(\cos\theta+i\sin\theta)$ shape the source's own Answer Key prints, with a form check that refuses the given numbers typed back multiplied, divided, or raised unworked (the product of the two printed factors is the same value as the answer); the evaluated $a+bi$ form is still accepted. The Try It asking for the product and the quotient of one pair is split into two fill-ins, each asking for the result in rectangular form, the form the source's answer gives; the square-root Practice item names radians with $0\le\theta<2\pi$. Root sets use `answerMode="unordered"` comma lists of polar-form roots. Adapted sixteen selected end-of-section exercises — three complex-plane plots, two absolute-value, one polar-form conversion split into its two components, two polar-to-rectangular conversions, two products, two quotients, two powers, and two root evaluations — into a closing Practice block, one group per objective, every item independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>
