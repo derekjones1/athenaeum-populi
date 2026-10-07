@@ -85,13 +85,16 @@ function segHitsBox(a, b, bb) {
   return t0 <= t1
 }
 
-/** stroke segments worth protecting text from (grid lines excluded) */
+/** stroke segments worth protecting text from (faint strokes excluded) */
 function strokeSegments(els) {
   const segs = []
   for (const el of els) {
     const { tag, attrs } = el
+    // A hairline is background, whatever its shape: gridlines, and the
+    // `faint` lines and circles/arcs a polar grid draws in the same style.
+    // (Filled shapes carry no stroke-width, and NaN < 1 is false.)
+    if (Number(attrs.strokeWidth) < 1) continue
     if (tag === 'line') {
-      if (Number(attrs.strokeWidth) < 1) continue // faint gridline
       segs.push({ seg: [[+attrs.x1, +attrs.y1], [+attrs.x2, +attrs.y2]], kind: attrs.strokeDasharray ? 'dashed line' : 'line' })
     } else if (tag === 'polyline' || tag === 'polygon') {
       const pts = String(attrs.points).trim().split(/\s+/).map((p) => p.split(',').map(Number))
@@ -183,10 +186,17 @@ function boxDepth(p, q) {
 // so a ≤3px cut clips a box corner without touching a stroke of the glyph —
 // the same tolerance print art shows where a curve tail passes an axis
 // number. Anything deeper reads as ink-through-ink and fails — EXCEPT a
-// solid stroke crossing a tick digit, which print art simply draws over (a
-// curve hugging the axis crosses the digit row in the source books too);
-// those are reported as tolerated, never gated. Dashed strokes gap behind
-// digits in the engine, so a dashed crossing IS a defect and stays gated.
+// solid stroke crossing a tick digit. That one is KNOCKED OUT on the page:
+// buildGraph names its tick digits in `knockout`, and every renderer
+// (figure-svg.mjs) draws the strokes through a mask holding a 1.5px
+// glyph-shaped halo around each digit, so the stroke passes behind the
+// number on any background. The engine first moves a crossed digit to the
+// clear side of its axis when that side is free; what is left is reported
+// as tolerated and counted in the summary, never gated. (A spec that sets
+// `tickKnockout: false` has opted into print-art overdraw, the convention
+// the knockout replaced, and is tolerated the same way.) Dashed strokes gap
+// behind digits in the engine, so a dashed crossing IS a defect and stays
+// gated.
 const GRAZE = 3
 
 /**
@@ -390,7 +400,7 @@ if (statusMode) {
   process.exit(0)
 }
 
-let figures = 0, dirty = 0, grazeOnly = 0, failed = 0
+let figures = 0, dirty = 0, grazeOnly = 0, failed = 0, knockedOut = 0
 let legacyFigures = 0, legacyDirty = 0
 let inlineFigures = 0, inlineDirty = 0, inlineGrazeOnly = 0
 const report = []
@@ -430,6 +440,7 @@ for (const file of roots.flatMap((root) => walkMarkdown(root))) {
       continue
     }
     const found = collisions(built)
+    if (!legacy) knockedOut += found.filter((c) => c.tolerated && c.depth >= GRAZE).length
     if (found.length) {
       if (legacy) { if (!found.every((c) => c.graze)) legacyDirty++ }
       else if (found.every((c) => c.graze)) grazeOnly++
@@ -441,7 +452,7 @@ for (const file of roots.flatMap((root) => walkMarkdown(root))) {
 
 if (asJson) {
   console.log(JSON.stringify({
-    figures, dirty, grazeOnly, legacyFigures, legacyDirty, failed, report,
+    figures, dirty, grazeOnly, knockedOut, legacyFigures, legacyDirty, failed, report,
     inline: { gates: INLINE_SVG_GATES, figures: inlineFigures, dirty: inlineDirty, grazeOnly: inlineGrazeOnly, report: inlineReport },
   }, null, 2))
 } else {
@@ -464,7 +475,8 @@ if (asJson) {
     }
   }
   console.log(`\n${figures} spec-first figure(s) checked: ${figures - dirty - grazeOnly} clean, `
-    + `${dirty} with real overlaps, ${grazeOnly} with only ≤${GRAZE}px grazes or print-tolerated digit crossings.`)
+    + `${dirty} with real overlaps, ${grazeOnly} with only ≤${GRAZE}px grazes or knocked-out digit crossings `
+    + `(${knockedOut} solid stroke(s) deeper than ${GRAZE}px through a tick digit, drawn behind its knockout).`)
   console.log(`${legacyFigures} legacy figure(s) previewed as spec-first re-renders: `
     + `${legacyDirty} would need label work at conversion (⚠, non-gating).`)
   console.log(`${inlineFigures} inline SVG figure(s) checked: ${inlineFigures - inlineDirty - inlineGrazeOnly} clean, `

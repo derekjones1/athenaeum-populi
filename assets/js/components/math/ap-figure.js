@@ -18,9 +18,11 @@
  * without figures or plots never fetch it.
  */
 import { graphplotEngineUrl } from '@params';
+// The one els → SVG-children walk (tick-digit mask included), shared with
+// <graph-plot> and toSvgString. A leaf module, so the eager bundle stays light.
+import { appendFigure } from '../../lib/math/figure-svg.mjs';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
-const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase());
 const BUILDERS = { graph: 'buildGraph', numberline: 'buildNumberLine', figure: 'buildFigure' };
 
 class ApFigureElement extends HTMLElement {
@@ -57,12 +59,7 @@ class ApFigureElement extends HTMLElement {
     svg.setAttribute('font-family', 'Helvetica, Arial, sans-serif');
     svg.setAttribute('role', 'img');
     svg.setAttribute('aria-label', g.ariaLabel);
-    for (const { tag, attrs, text } of g.els) {
-      const el = document.createElementNS(SVGNS, tag);
-      for (const [k, v] of Object.entries(attrs)) el.setAttribute(camelToKebab(k), v);
-      if (text !== undefined) el.textContent = text;
-      svg.appendChild(el);
-    }
+    appendFigure(svg, g);
     this.append(svg);
     // The SVG now carries the accessible name; keep the host's no-JS
     // fallback name off the tree so screen readers hear the figure once.
@@ -77,6 +74,10 @@ class ApFigureElement extends HTMLElement {
     let [x, y, w, h] = svg.getAttribute('viewBox').split(' ').map(Number);
     let x1 = x + w, y1 = y + h, grew = false;
     for (const t of svg.querySelectorAll('text')) {
+      // A tick-digit mask copy is never painted (its getBBox can be 0×0,
+      // which would end this loop early) and shares its visible digit's
+      // geometry, so the visible one is the one to measure.
+      if (t.closest('mask')) continue;
       let b;
       try { b = t.getBBox(); } catch { return; } // display:none — nothing rendered
       if (b.width === 0 && b.height === 0) return;

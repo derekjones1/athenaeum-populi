@@ -8,7 +8,10 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildGraph, buildFigure, buildNumberLine } from '../../assets/js/lib/math/graph-core.mjs';
+import {
+  buildGraph, buildFigure, buildNumberLine, toSvgString, GRAPH_PLOT_RENDER_DEFAULTS,
+} from '../../assets/js/lib/math/graph-core.mjs';
+import { figureNodes, svgAttrName } from '../../assets/js/lib/math/figure-svg.mjs';
 import { fitTextBox, measureTextWidth } from '../../assets/js/lib/math/text-metrics.mjs';
 
 const GRID = { xMin: -5, xMax: 5, yMin: -5, yMax: 5, unit: 20 };
@@ -1116,4 +1119,337 @@ test('a figure circle with from/to draws an exact arc that fits its own sweep', 
   const full = buildFigure({ ariaLabel: 't', unit: 20, padding: 0, circles: [{ at: [4, 0], r: 1 }] });
   assert.ok(out.height < full.height, 'the arc reserves less height than the whole circle');
   assert.throws(() => buildFigure({ ariaLabel: 't', circles: [{ at: [0, 0], r: 1, from: 10, to: 10 }] }));
+});
+
+// ---------------------------------------------------------------------------
+// Faint strokes (October 6, 2026): a polar grid's rings and spokes are
+// background construction, not graphed objects, so they draw in the gridline
+// style and stay out of the placement and readability machinery.
+
+test('faint circles, arcs, and lines draw in the gridline style', () => {
+  const out = buildGraph({
+    ...GRID, grid: false, ariaLabel: 't',
+    circles: [{ at: [0, 0], r: 2, faint: true }, { at: [0, 0], r: 3, from: 0, to: 90, faint: true }],
+    lines: [{ slope: 1, intercept: 0, faint: true }],
+  });
+  const ring = out.els.find((e) => e.tag === 'ellipse');
+  const arc = out.els.find((e) => e.tag === 'path');
+  const spoke = out.els.find((e) => e.tag === 'line' && e.attrs.opacity === '0.2');
+  for (const el of [ring, arc, spoke]) {
+    assert.equal(el.attrs.strokeWidth, '0.4', `${el.tag} is a hairline`);
+    assert.equal(el.attrs.opacity, '0.2', `${el.tag} is faint`);
+    assert.equal(el.attrs.strokeDasharray, undefined, `${el.tag} is never dashed`);
+  }
+  // a spoke runs flush with the grid like a gridline: no overshoot, no heads
+  assert.deepEqual([spoke.attrs.x1, spoke.attrs.y1, spoke.attrs.x2, spoke.attrs.y2], [26, 226, 226, 26]);
+  assert.equal(polygons(out).length, 4, 'only the four axis arrowheads');
+});
+
+test('faint strokes refuse dashes, arrowheads, and labels', () => {
+  assert.throws(() => buildGraph({ ...GRID, circles: [{ at: [0, 0], r: 2, faint: true, dashed: true }] }), /faint strokes are never dashed/);
+  assert.throws(() => buildGraph({ ...GRID, lines: [{ x: 1, faint: true, dashed: true }] }), /faint strokes are never dashed/);
+  assert.throws(() => buildGraph({ ...GRID, lines: [{ x: 1, faint: true, arrows: true }] }), /arrowheads/);
+  assert.throws(() => buildGraph({ ...GRID, lines: [{ x: 1, faint: true, label: 'x = 1' }] }), /label/);
+  assert.doesNotThrow(() => buildGraph({ ...GRID, lines: [{ x: 1, faint: true, arrows: false }] }));
+});
+
+test('faint strokes are no placement obstacle — a label sits on one as on a gridline', () => {
+  // A ring of radius 2.8 runs straight through the east station of P's label.
+  const base = { ...GRID, ariaLabel: 't', points: [{ at: [2, 0.6], label: 'P' }] };
+  const labelOf = (spec) => buildGraph(spec).els.find((e) => e.tag === 'text' && e.text === 'P').attrs;
+  const bare = labelOf(base);
+  const faint = labelOf({ ...base, circles: [{ at: [0, 0], r: 2.8, faint: true }] });
+  const solid = labelOf({ ...base, circles: [{ at: [0, 0], r: 2.8 }] });
+  assert.deepEqual(faint, bare, 'the faint ring does not move the label');
+  assert.notDeepEqual(solid, bare, 'the same ring at full weight does (the probe is live)');
+});
+
+// ---------------------------------------------------------------------------
+// Tick-digit knockout (October 6, 2026): every stroke passes BEHIND the tick
+// digits through a mask holding a glyph-shaped halo around each digit
+// (figure-svg.mjs), instead of printing through them or being cut by a
+// box-shaped gap that would read as dashing.
+
+/** tick digits: the smallest font on the board (the overlap checker's own rule) */
+function digitEls(out) {
+  const texts = out.els.filter((e) => e.tag === 'text');
+  const size = Math.min(...texts.map((e) => Number(e.attrs.fontSize)));
+  return texts.filter((e) => Number(e.attrs.fontSize) === size);
+}
+const STROKE_TAG = /^(line|polyline|polygon|ellipse|path)$/;
+const RECIPROCAL = { ariaLabel: 't', xMin: -4, xMax: 4, yMin: -4, yMax: 4, unit: 30, tickLabels: true, curves: [{ kind: 'reciprocal' }] };
+
+test('knockout names exactly the tick-digit elements, and they come last in els', () => {
+  const out = buildGraph({ ...RECIPROCAL, points: [{ at: [1, 1], label: 'P' }], texts: [{ at: [2, 3], text: 'note' }] });
+  const digits = digitEls(out);
+  assert.equal(digits.length, 16, '−4…4 on both axes, the origin zero dropped');
+  assert.equal(out.knockout.texts.length, digits.length);
+  digits.forEach((d, i) => assert.equal(out.knockout.texts[i], d, 'the SAME objects as in els'));
+  assert.deepEqual(out.els.slice(-digits.length), digits, 'the digits are the last elements, after the texts note');
+  assert.ok(out.els.indexOf(out.els.find((e) => e.text === 'note')) < out.els.indexOf(digits[0]));
+});
+
+test('tickKnockout: false (or no tick labels) leaves knockout null and the digits where they were', () => {
+  const on = buildGraph(RECIPROCAL);
+  const off = buildGraph({ ...RECIPROCAL, tickKnockout: false });
+  assert.equal(off.knockout, null);
+  const firstDigit = off.els.indexOf(digitEls(off)[0]);
+  const firstCurve = off.els.findIndex((e) => e.tag === 'polyline');
+  assert.ok(firstDigit < firstCurve, 'the digits keep their old place, right after their tick marks');
+  const key = (e) => JSON.stringify(e);
+  assert.deepEqual(off.els.map(key).sort(), on.els.map(key).sort(), 'the same elements, only reordered');
+  assert.equal(buildGraph({ ...GRID, ariaLabel: 't' }).knockout, null, 'no tick labels, nothing to knock out');
+  assert.throws(() => buildGraph({ ...RECIPROCAL, tickKnockout: 'yes' }), /tickKnockout/);
+});
+
+test('graph-plot inherits the knockout through its render defaults', () => {
+  const out = buildGraph({ ...GRAPH_PLOT_RENDER_DEFAULTS, ...GRID, ariaLabel: 't' });
+  assert.ok(out.knockout && out.knockout.texts.length > 0);
+});
+
+test('toSvgString masks every stroke behind a glyph halo of every digit', () => {
+  const out = buildGraph(RECIPROCAL);
+  const svg = toSvgString(RECIPROCAL);
+  assert.equal(svg.match(/<mask /g).length, 1, 'one mask');
+  const mask = svg.slice(svg.indexOf('<mask '), svg.indexOf('</mask>'));
+  assert.match(mask, /^<mask id="ap-knockout" maskUnits="userSpaceOnUse" x="-10000" y="-10000" width="20000" height="20000">/);
+  assert.match(mask, /<rect x="-10000" y="-10000" width="20000" height="20000" fill="#fff"\/>/);
+  const halos = [...mask.matchAll(/<text ([^>]*)>([^<]*)<\/text>/g)];
+  assert.equal(halos.length, digitEls(out).length, 'one halo per digit');
+  for (const [, attrs] of halos) {
+    assert.match(attrs, /fill="#000" stroke="#000" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/);
+  }
+  const group = svg.slice(svg.indexOf('<g mask="url(#ap-knockout)">'), svg.indexOf('</g>'));
+  const strokes = out.els.filter((e) => STROKE_TAG.test(e.tag)).length;
+  assert.equal((group.match(/<(line|polyline|polygon|ellipse|path) /g) || []).length, strokes, 'every stroke is masked');
+  const outside = svg.slice(svg.indexOf('</g>'));
+  assert.doesNotMatch(outside, /<(line|polyline|polygon|ellipse|path) /, 'no stroke paints over a digit unmasked');
+  assert.equal(toSvgString(RECIPROCAL, { knockoutId: 'k7' }).match(/id="k7"|url\(#k7\)/g).length, 2, 'the mask id is the caller\'s');
+});
+
+test('plotted dots stay outside the mask, and the digits paint last', () => {
+  const g = buildGraph({ ...RECIPROCAL, points: [{ at: [-2, -0.5] }] });
+  const nodes = figureNodes(g, 'k');
+  assert.deepEqual(nodes.map((n) => n.tag).slice(0, 2), ['mask', 'g']);
+  assert.ok(!nodes[1].children.some((n) => n.tag === 'circle'), 'a dot is never nicked by a halo');
+  assert.ok(nodes.some((n) => n.tag === 'circle'));
+  assert.deepEqual(nodes.slice(-g.knockout.texts.length), g.knockout.texts);
+  assert.equal(svgAttrName('maskUnits'), 'maskUnits');
+  assert.equal(svgAttrName('strokeLinejoin'), 'stroke-linejoin');
+});
+
+// Captured from the engine BEFORE the knockout existed: a figure with no tick
+// digits must serialize byte for byte as it always did.
+const NO_DIGIT_SPEC = {
+  ariaLabel: 'no digits', xMin: -3, xMax: 3, yMin: -3, yMax: 3, unit: 20,
+  lines: [{ slope: 1, intercept: 1, label: 'y = x + 1' }, { x: 2, dashed: true, arrows: false }],
+  polylines: [{ through: [[-3, 1], [-2, -1], [0, -2]], arrows: 'end' }],
+  circles: [{ at: [0, 0], r: 1 }, { at: [0, 0], r: 2, from: 0, to: 90 }],
+  segments: [{ from: [-2, -2], to: [-1, -2], dashed: true }],
+  points: [{ at: [1, 2], label: 'P' }, { at: [-1, 0], open: true }],
+  texts: [{ at: [-2.5, 2.5], text: 'note' }],
+};
+const NO_DIGIT_SVG_BEFORE = [
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172" width="172" height="172" style="color:#111" font-family="Helvetica, Arial, sans-serif">',
+  '  <line x1="26" y1="146" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="46" y1="146" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="66" y1="146" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="106" y1="146" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="126" y1="146" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="146" y1="146" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="26" y1="146" x2="146" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="26" y1="126" x2="146" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="26" y1="106" x2="146" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="26" y1="66" x2="146" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="26" y1="46" x2="146" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="26" y1="26" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
+  '  <line x1="24" y1="86" x2="148" y2="86" stroke="currentColor" stroke-width="1"/>',
+  '  <line x1="86" y1="24" x2="86" y2="148" stroke="currentColor" stroke-width="1"/>',
+  '  <polygon points="158,86 148,91 148,81" fill="currentColor"/>',
+  '  <polygon points="86,14 91,24 81,24" fill="currentColor"/>',
+  '  <polygon points="14,86 24,81 24,91" fill="currentColor"/>',
+  '  <polygon points="86,158 81,148 91,148" fill="currentColor"/>',
+  '  <text x="156" y="78" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>',
+  '  <text x="94" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>',
+  '  <line x1="27.1" y1="124.9" x2="124.9" y2="27.1" stroke="currentColor" stroke-width="1.8"/>',
+  '  <polygon points="132,20 128.5,30.6 121.4,23.5" fill="currentColor"/>',
+  '  <polygon points="20,132 23.5,121.4 30.6,128.5" fill="currentColor"/>',
+  '  <line x1="126" y1="146" x2="126" y2="26" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>',
+  '  <polyline points="26,66 46,106 78.8,122.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>',
+  '  <polygon points="86,126 74.8,126 79.3,117.1" fill="currentColor"/>',
+  '  <ellipse cx="86" cy="86" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+  '  <path d="M 126 86 A 40 40 0 0 0 86 46" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+  '  <line x1="46" y1="126" x2="66" y2="126" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>',
+  '  <circle cx="106" cy="46" r="4" fill="currentColor"/>',
+  '  <circle cx="66" cy="86" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+  '  <text x="106" y="69" font-size="13" fill="currentColor" text-anchor="middle">P</text>',
+  '  <text x="56.2" y="60.2" font-size="13" fill="currentColor" text-anchor="end">y = x + 1</text>',
+  '  <text x="36" y="36" font-size="13" fill="currentColor">note</text>',
+  '</svg>',
+].join('\n');
+
+test('a figure with no tick digits serializes byte-identically to the pre-knockout engine', () => {
+  assert.equal(toSvgString(NO_DIGIT_SPEC), NO_DIGIT_SVG_BEFORE);
+});
+
+// ---------------------------------------------------------------------------
+// Tick-digit relocation (October 6, 2026): a digit a solid stroke crosses
+// moves to the clear side of its axis when that spot is free; the knockout
+// handles the rest.
+
+/** where each tick digit ended up: 'left'/'right' of the y-axis, 'below'/'above' the x-axis */
+function digitSides(out) {
+  const [axisX, axisY] = out.map.toPx([0, 0]);
+  const sides = { x: {}, y: {} };
+  for (const d of digitEls(out)) {
+    if (d.attrs.textAnchor === 'middle') sides.x[d.text] = +d.attrs.y < axisY ? 'above' : 'below';
+    else {
+      sides.y[d.text] = d.attrs.textAnchor === 'start' ? 'right' : 'left';
+      if (d.attrs.textAnchor === 'start') assert.equal(+d.attrs.x, axisX + 6, 'a moved y digit sits 6px right of the axis');
+    }
+  }
+  return sides;
+}
+
+test('a tick digit a solid stroke crosses moves to the clear side of its axis', () => {
+  // y = 1/x hugs both axes in the third quadrant. Its branch crosses the y
+  // digits −2 and −3 and its arrowhead the −4; the right of the y-axis is
+  // empty there, so all three move. −1 is never crossed (the branch passes
+  // it 20px out) and stays. On the x row the branch crosses −2 and −3, which
+  // go above the axis; −4 is crossed by the branch's arrowhead but the axis
+  // arrowhead's wing takes the spot above it, so it stays (knocked out), and
+  // −1 is never crossed.
+  const out = buildGraph(RECIPROCAL);
+  const sides = digitSides(out);
+  assert.deepEqual(sides.y, { '−4': 'right', '−3': 'right', '−2': 'right', '−1': 'left', 1: 'left', 2: 'left', 3: 'left', 4: 'left' });
+  assert.deepEqual(sides.x, { '−4': 'below', '−3': 'above', '−2': 'above', '−1': 'below', 1: 'below', 2: 'below', 3: 'below', 4: 'below' });
+  // an x digit above the axis keeps its box bottom clear of the tick mark
+  const [, axisY] = out.map.toPx([0, 0]);
+  const moved = digitEls(out).find((d) => d.text === '−2' && d.attrs.textAnchor === 'middle');
+  assert.ok(inkBox(moved)[3] <= axisY - 4 + 1e-9, 'box bottom at least 4px above the axis');
+});
+
+test('a digit crossed on both sides of its axis stays put', () => {
+  // cos x peaks on the y-axis: the curve crosses the digit 1 left AND right.
+  const out = buildGraph({
+    ariaLabel: 't', xMin: -7.3, xMax: 7.3, yMin: -1.95, yMax: 1.5, grid: false, tickLabels: 'y', unit: 34,
+    curves: [{ kind: 'cosine', from: -6.9, to: 6.9 }],
+  });
+  assert.deepEqual(digitSides(out).y, { '−1': 'left', 1: 'left' });
+  const one = digitEls(out).find((d) => d.text === '1');
+  const [pl] = polylines(out);
+  assert.ok(pl.some((p, i) => i > 0 && segCrossesBox(pl[i - 1], p, inkBox(one))), 'the curve does cross the 1 it leaves in place');
+});
+
+test('relocation is independent of the knockout', () => {
+  const on = buildGraph(RECIPROCAL);
+  const off = buildGraph({ ...RECIPROCAL, tickKnockout: false });
+  assert.deepEqual(digitSides(off), digitSides(on));
+});
+
+test('a relocated digit moves its box in place, so deferred dashed strokes gap at the new spot', () => {
+  // The dashed asymptote x = −2 is emitted after relocation: it must gap
+  // around the −2 digit where it NOW stands (above the axis), and run
+  // unbroken through the spot it left.
+  const out = buildGraph({ ...RECIPROCAL, lines: [{ x: -2, dashed: true, arrows: false }] });
+  const digit = digitEls(out).find((d) => d.text === '−2' && d.attrs.textAnchor === 'middle');
+  const [, axisY] = out.map.toPx([0, 0]);
+  assert.ok(+digit.attrs.y < axisY, 'the x digit −2 moved above the axis');
+  const dashed = out.els.filter((e) => e.tag === 'line' && e.attrs.strokeDasharray === '6 5');
+  assert.equal(dashed.length, 2, 'the asymptote splits once, around the moved digit');
+  for (const l of dashed) {
+    assert.ok(!segCrossesBox([+l.attrs.x1, +l.attrs.y1], [+l.attrs.x2, +l.attrs.y2], inkBox(digit)),
+      'the dashed asymptote prints through the relocated digit');
+  }
+});
+
+test('relocation runs after label placement and never lands on a placed label', () => {
+  // A point label pinned west of (1, −2) occupies exactly the room right of
+  // the y-axis that the crossed digit −2 would move into: the label keeps
+  // its spot and the digit stays left (knocked out). The label is placed
+  // where it would be with no relocation at all.
+  const spec = { ...RECIPROCAL, points: [{ at: [1, -2], label: 'Q', labelSide: 'w' }] };
+  const out = buildGraph(spec);
+  assert.equal(digitSides(out).y['−2'], 'left', 'the digit yields to the label');
+  assert.equal(digitSides(out).y['−3'], 'right', 'its neighbour still moves');
+  const label = out.els.find((e) => e.text === 'Q');
+  for (const d of digitEls(out)) {
+    assert.ok(!boxesTouch(inkBox(label), inkBox(d)), `label Q prints over digit ${d.text}`);
+  }
+});
+
+// ---------------------------------------------------------------------------
+// Tick-row offsets (October 6, 2026): the author moves a whole digit row or
+// column off its axis — 7.4's sound wave dips below the axis across every
+// x digit, so its digits must sit below the trough.
+
+const WAVE = {
+  ariaLabel: 't', xMin: 0, xMax: 0.0105, yMin: -1.75, yMax: 1.4, xUnit: 36000, yUnit: 55,
+  xTickStep: 0.002, yTickStep: 1, tickLabels: true, xTickGrouping: false,
+  curves: [{ kind: 'sine', a: -1, b: 2764.6, arrows: 'end' }],
+};
+
+test('xTickOffset moves the x digit row down and yTickOffset the y column left; tick marks stay', () => {
+  const base = buildGraph(WAVE);
+  const out = buildGraph({ ...WAVE, xTickOffset: 56, yTickOffset: 9 });
+  const [axisX, axisY] = out.map.toPx([0, 0]);
+  const tickFS = Number(digitEls(out)[0].attrs.fontSize);
+  const xs = digitEls(out).filter((d) => d.attrs.textAnchor === 'middle');
+  const ys = digitEls(out).filter((d) => d.attrs.textAnchor !== 'middle');
+  assert.ok(xs.length >= 5 && ys.length >= 2);
+  for (const d of xs) assert.equal(+d.attrs.y, +(axisY + 4 + tickFS + 56).toFixed(1), `x digit ${d.text} rides 56px lower`);
+  for (const d of ys) {
+    assert.equal(d.attrs.textAnchor, 'end', `the offset y column is never relocated (${d.text})`);
+    assert.equal(+d.attrs.x, +(axisX - 6 - 9).toFixed(1), `y digit ${d.text} sits 9px further left`);
+  }
+  // every digit now clears the trough at y = −1 (55px below the axis)
+  const trough = out.map.toPx([0, -1])[1];
+  for (const d of xs) assert.ok(inkBox(d)[1] > trough + 1, `x digit ${d.text} sits below the trough`);
+  // the tick marks themselves never move
+  const ticks = (g) => g.els.filter((e) => e.tag === 'line' && e.attrs.strokeWidth === '1'
+    && Math.hypot(e.attrs.x2 - e.attrs.x1, e.attrs.y2 - e.attrs.y1) === 6).map((e) => JSON.stringify(e.attrs));
+  assert.deepEqual(ticks(out), ticks(base));
+  // and the fit pass grows the viewBox around the moved row
+  assert.ok(Math.max(...xs.map((d) => inkBox(d)[3])) <= out.box.y + out.box.h);
+});
+
+test('an offset axis is never relocated, even where a solid stroke crosses its digits', () => {
+  // RECIPROCAL moves −2 and −3 off both axes; an offset of 1px on one axis
+  // keeps that axis exactly where the author put it.
+  const out = buildGraph({ ...RECIPROCAL, xTickOffset: 1 });
+  const sides = digitSides(out);
+  assert.ok(Object.values(sides.x).every((s) => s === 'below'), JSON.stringify(sides.x));
+  assert.equal(sides.y['−2'], 'right', 'the other axis still relocates');
+  const yOffset = digitSides(buildGraph({ ...RECIPROCAL, yTickOffset: 1 }));
+  assert.ok(Object.values(yOffset.y).every((s) => s === 'left'), JSON.stringify(yOffset.y));
+  assert.equal(yOffset.x['−2'], 'above');
+});
+
+test('tick offsets must be finite px of 0 or more', () => {
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: true, xTickOffset: -1 }), /xTickOffset/);
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: true, yTickOffset: Infinity }), /yTickOffset/);
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: true, yTickOffset: '4' }), /yTickOffset/);
+  assert.doesNotThrow(() => buildGraph({ ...GRID, tickLabels: true, xTickOffset: 0, yTickOffset: 12.5 }));
+});
+
+test('faint segments draw in the gridline style between their endpoints, refuse dashes, arrowheads and labels, and are no obstacle', () => {
+  const spoke = { from: [0, 0], to: [3, 3], faint: true };
+  const out = buildGraph({ ariaLabel: 't', segments: [spoke] });
+  // gridlines are axis-aligned; the one diagonal hairline is the spoke
+  const seg = out.els.find((e) => e.tag === 'line' && e.attrs.opacity === '0.2' && e.attrs.x1 !== e.attrs.x2 && e.attrs.y1 !== e.attrs.y2);
+  assert.ok(seg, 'a faint segment is a hairline');
+  assert.equal(seg.attrs.strokeWidth, '0.4');
+  assert.equal(out.els.filter((e) => e.tag === 'polygon' && e.attrs.fill === 'currentColor').length, 4, 'no arrowheads beyond the four axis tips');
+  for (const bad of [{ dashed: true }, { arrows: 'end' }, { label: 'r' }]) {
+    assert.throws(() => buildGraph({ ariaLabel: 't', segments: [{ ...spoke, ...bad }] }), /faint/);
+  }
+  // no obstacle: a point label whose natural (east) box a segment runs through
+  // sits exactly where it sits with no segment at all when the segment is faint
+  const flat = { from: [0, 1], to: [3, 1] };
+  const label = (g) => g.els.find((e) => e.tag === 'text' && e.text === 'P').attrs;
+  const bare = buildGraph({ ariaLabel: 't', points: [{ at: [1, 1], label: 'P' }] });
+  const withFaint = buildGraph({ ariaLabel: 't', points: [{ at: [1, 1], label: 'P' }], segments: [{ ...flat, faint: true }] });
+  const withSolid = buildGraph({ ariaLabel: 't', points: [{ at: [1, 1], label: 'P' }], segments: [flat] });
+  assert.deepEqual(label(withFaint), label(bare));
+  assert.notDeepEqual(label(withSolid), label(bare), 'the same segment at full weight is an obstacle');
 });

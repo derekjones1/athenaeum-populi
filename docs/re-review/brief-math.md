@@ -538,7 +538,11 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
    The parent then runs an Opus figure checker over every fixer-drawn
    figure: on chapter 11 the checkers made 35 legibility fixes (arrowheads
    on arrowheads, strokes through tick digits, labels on ink) and found no
-   math errors.
+   math errors. Since October 6, 2026 the engine knocks the tick digits out
+   of every stroke and relocates a crossed digit to the clear side of its
+   axis, so a checker never hand-draws ticks as `segments` or digits as
+   `texts`: the fix for a curve across the digit row is `xTickOffset` /
+   `yTickOffset`, and a polar grid (rings and spokes) is `faint: true`.
 5. The footer `Changes:` clause: counts from a tally of the page, claims
    true; never where a correction is logged or who it was reported to.
 6. After your edits, re-check every edited item's neighbours for new

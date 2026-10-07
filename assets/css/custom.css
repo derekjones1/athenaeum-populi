@@ -192,21 +192,27 @@ ap-figure { display: block; }
 .ap-graphplot-svg { color: inherit; }
 
 /* Gridlines are deliberately thin (stroke-width 0.4) and faint (opacity 0.2),
-   the only lines graph-core draws that way. When the SVG is scaled to a
-   non-integer factor (GraphPlot stretches slightly; MC thumbnails shrink),
-   such lines can anti-alias onto fractional device pixels and disappear —
-   which showed up as a missing gridline at ±5. crispEdges snaps these
-   axis-aligned lines to whole pixels so they always render. Scoped to the
-   faint gridlines only, so the axes and the (often diagonal) plotted lines
-   keep their smooth anti-aliasing. */
+   and so are graph-core's `faint` lines, rings, and arcs (a polar grid's
+   spokes and circles) — the only strokes it draws that way. When the SVG is
+   scaled to a non-integer factor (GraphPlot stretches slightly; MC
+   thumbnails shrink), such strokes can anti-alias onto fractional device
+   pixels and disappear — which showed up as a missing gridline at ±5.
+   Scoped to the faint strokes only, so the axes and the plotted lines and
+   curves keep their full weight. */
 .ap-figure svg line[opacity="0.2"],
+.ap-figure svg ellipse[opacity="0.2"],
+.ap-figure svg path[opacity="0.2"],
 .ap-graphplot-svg line[opacity="0.2"],
-.ap-mc-option-graph svg line[opacity="0.2"] {
-  /* Pin the gridlines to a real ~1px in SCREEN space at any SVG scale.
+.ap-graphplot-svg ellipse[opacity="0.2"],
+.ap-graphplot-svg path[opacity="0.2"],
+.ap-mc-option-graph svg line[opacity="0.2"],
+.ap-mc-option-graph svg ellipse[opacity="0.2"],
+.ap-mc-option-graph svg path[opacity="0.2"] {
+  /* Pin the faint strokes to a real ~1px in SCREEN space at any SVG scale.
      graph-core's 0.4 user-unit stroke sub-pixels away when the SVG is scaled
      (GraphPlot enlarges, thumbnails shrink); non-scaling-stroke + a 1px width
      keeps them a consistent hairline that never rounds to nothing. Kept faint
-     by the element's own opacity="0.2". Scoped to gridlines only. */
+     by the element's own opacity="0.2". Scoped to the faint strokes only. */
   vector-effect: non-scaling-stroke;
   stroke-width: 1px;
 }

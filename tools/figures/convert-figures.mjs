@@ -56,6 +56,12 @@ const ELEMENT_RE = /<(\w+)\s([^>]*?)(?:\/>|>([\s\S]*?)<\/\1>)/g
 export function parseSvgElements(svg) {
   const els = []
   const inner = svg.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>[\s\S]*$/, '')
+    // The tick-digit knockout (figure-svg.mjs) is structure, not ink: its
+    // <mask> holds unpainted copies of the digits, and its <g mask> wraps the
+    // strokes. Drop the one and unwrap the other so the element lists of a
+    // masked render and the legacy flat SVG it replaces compare like for like.
+    .replace(/<mask[\s>][\s\S]*?<\/mask>/g, '')
+    .replace(/<\/?g(?:\s[^>]*)?>/g, '')
   for (const m of inner.matchAll(ELEMENT_RE)) {
     const attrs = {}
     for (const a of m[2].matchAll(/([\w-]+)="([^"]*)"/g)) attrs[a[1]] = a[2]

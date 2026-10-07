@@ -8,8 +8,11 @@
  * playbook §"Coordinate-plane graphs" rules, instead of one hand-derived
  * copy per figure.
  *
- * buildGraph(props)  → { viewBox, width, height, ariaLabel, els }
- *   els: [{ tag, attrs, text? }] with JavaScript-style attribute names.
+ * buildGraph(props)  → { viewBox, width, height, ariaLabel, els, knockout }
+ *   els: [{ tag, attrs, text? }] with JavaScript-style attribute names —
+ *   a FLAT list; `knockout` ({ texts } or null) names the tick-digit els
+ *   every stroke passes behind, and figure-svg.mjs turns the two into SVG
+ *   children (a mask and a masked group) for every renderer.
  *   toSvgString(props) serializes them to a plain SVG document so QA
  *   scripts can rasterize figures without a browser runtime.
  *
@@ -35,6 +38,23 @@
  *   tickGrouping         false → no thousands separators in tick labels;
  *                        xTickGrouping/yTickGrouping override per axis, so a
  *                        year axis reads 1975 while a count axis reads 2,200
+ *   xTickOffset          px (default 0, finite, ≥ 0): moves the x digit row
+ *                        DOWN, off its axis, while the tick marks stay on it —
+ *                        for a curve that dips below the axis across the whole
+ *                        row (7.4's sound wave: digits below the trough)
+ *   yTickOffset          px (default 0, finite, ≥ 0): moves the y digit column
+ *                        LEFT the same way
+ *   tickKnockout         false → strokes print over the tick digits. By
+ *                        default every stroke passes BEHIND them: buildGraph
+ *                        returns the digits as `knockout.texts`, and the
+ *                        renderers (figure-svg.mjs) mask the strokes with a
+ *                        1.5px glyph-shaped halo around each one.
+ *                        Independently, a digit that a SOLID stroke crosses
+ *                        moves to the clear side of its axis (a y digit to the
+ *                        right of the y-axis, an x digit above the x-axis)
+ *                        when that room is free of ink, dots, and text; an
+ *                        axis with a nonzero tick offset is never relocated —
+ *                        the author has placed it
  *   maxWidth             CSS max-width (default viewBox width + 20)
  *
  *   points:   [{ at:[x,y], label?, labelSide?, labelNudge?, open? }]
@@ -44,10 +64,16 @@
  *             station to clear a curve (pair it with labelSide)
  *             open: true → hollow dot
  *   lines:    [{ through:[[x,y],[x,y]] | slope+intercept | x | y,
- *                label?, labelSide?, labelAt?, dashed?, arrows? }]
+ *                label?, labelSide?, labelAt?, dashed?, arrows?, faint? }]
  *             x: a → vertical line; y: b → horizontal line
  *             labelAt: 0..1 position along the visible segment (default .78)
  *             labelSide: 'left'|'right' of travel direction (else auto)
+ *             faint: true → drawn in the gridline style (stroke-width 0.4,
+ *             opacity 0.2), flush with the grid edge — background
+ *             construction such as a polar grid's spokes, not a graphed
+ *             object. A faint line is never dashed and takes no arrowheads
+ *             and no label (each throws), and it is no placement obstacle:
+ *             labels may sit on it exactly as they sit on gridlines.
  *   quadratics: [{ a, b?, c?, sideways?, dashed?, arrows? }]
  *             graphs y = ax^2 + bx + c; with sideways:true, graphs
  *             x = ay^2 + by + c; b and c default to 0
@@ -105,17 +131,25 @@
  *             cubics, polynomials, and curves accept
  *             from/to (math x; y for sideways quadratics) to trim the drawn
  *             domain, e.g. to end a curve with an arrow mid-grid.
- *   segments: [{ from:[x,y], to:[x,y], dashed?, label?, labelSide?, arrows? }]
+ *   segments: [{ from:[x,y], to:[x,y], dashed?, label?, labelSide?, arrows?,
+ *                faint? }]
  *             arrows: true | 'start' | 'end' — an indicator ray, e.g. the
  *             "Domain" extent drawn above a graph to show it continues
+ *             faint: true → the gridline style (stroke-width 0.4, opacity
+ *             0.2) between its two endpoints — a half polar grid's spokes
+ *             from the pole to the rim; never dashed, no arrowheads, no
+ *             label (each throws), and no placement obstacle
  *   guides:   [[x,y], …]  dashed axis crosshair to each point
  *   slopeTriangles: [{ from:[x,y], to:[x,y], riseLabel?, runLabel?,
  *                      order? ('vh' vertical-first default, or 'hv') }]
- *   circles:  [{ at:[x,y], r | rx+ry, from?, to?, dashed? }]
+ *   circles:  [{ at:[x,y], r | rx+ry, from?, to?, dashed?, faint? }]
  *             a real SVG ellipse, never a spline. rx/ry give unequal
  *             semi-axes in MATH units; from/to (degrees counter-clockwise
  *             from the positive x-axis) draw an exact elliptical arc instead
- *             of the closed curve, e.g. from:0 to:180 for an upper semicircle
+ *             of the closed curve, e.g. from:0 to:180 for an upper semicircle.
+ *             faint: true → the ring or arc draws in the gridline style
+ *             (stroke-width 0.4, opacity 0.2) — a polar grid's rings — is
+ *             never dashed (throws), and is no placement obstacle
  *   hyperbolas: [{ at:[h,k], a, b, vertical?, dashed?, arrows? }]
  *             the standard-form conic (x−h)²/a² − (y−k)²/b² = 1: two branches
  *             opening left/right from vertices (h±a, k). vertical:true graphs
@@ -136,6 +170,7 @@
 
 import { GEOMETRY_EPSILON } from './geometry-constants.mjs'
 import { fitTextBox, measureTextWidth } from './text-metrics.mjs'
+import { figureNodes, svgAttrName } from './figure-svg.mjs'
 
 const FONT = 13
 
@@ -263,6 +298,8 @@ export const mathMinus = (s) => String(s).replace(/-/g, '−')
  * when the author had set `tickLabels`, and the tick step defaulted to the
  * grid step. An authored `{"grid":{"xMin":-1e6,"xMax":1e6}}` therefore passed
  * `npm run lint` and then asked the browser for a million tick labels.
+ * (`tickKnockout` and digit relocation default ON in buildGraph itself, so
+ * the plot's tick digits get them with no entry here.)
  */
 export const GRAPH_PLOT_RENDER_DEFAULTS = Object.freeze({ tickLabels: true, tickStep: 2 })
 
@@ -278,6 +315,7 @@ export function buildGraph(props) {
     tickLabels = false, tickStep,
     xTickStep = tickStep ?? xGridStep, yTickStep = tickStep ?? yGridStep,
     tickGrouping = true, xTickGrouping = tickGrouping, yTickGrouping = tickGrouping,
+    tickKnockout = true, xTickOffset = 0, yTickOffset = 0,
     quadrantLabels = false,
     points = [], lines = [], quadratics = [], cubics = [], polynomials = [], rationals = [],
     smoothCurves = [], segments = [], guides = [],
@@ -292,6 +330,10 @@ export function buildGraph(props) {
   if (grid && (!Number.isFinite(xGridStep) || xGridStep <= 0
     || !Number.isFinite(yGridStep) || yGridStep <= 0)) {
     throw new Error('Graph grid steps must be positive numbers')
+  }
+  if (tickKnockout !== true && tickKnockout !== false) throw new Error('tickKnockout must be true or false')
+  for (const [name, offset] of [['xTickOffset', xTickOffset], ['yTickOffset', yTickOffset]]) {
+    if (!Number.isFinite(offset) || offset < 0) throw new Error(`${name} must be a finite number of px, 0 or more`)
   }
   const xGridCount = grid ? stepCount(xMin, xMax, xGridStep, 'xGridStep') : 0
   const yGridCount = grid ? stepCount(yMin, yMax, yGridStep, 'yGridStep') : 0
@@ -327,7 +369,10 @@ export function buildGraph(props) {
   const labelBoxes = [] // placed label bboxes [x0,y0,x1,y1]
   const strokeGapBoxes = [] // tick digits + axis letters; strokes pass BEHIND these
   const dotPx = [] // plotted dot centres
+  const tickDigits = [] // { el, box, axis } — box is the SAME array labelBoxes/strokeGapBoxes hold
   const arrowTips = [] // arrowhead tip px points
+  const arrowHeads = [] // arrowhead triangles [tip, wing, wing], as drawn
+  const solidInk = [] // px segments of SOLID strokes only — what moves a tick digit
 
   const add = (tag, attrs, text) => { els.push(text === undefined ? { tag, attrs } : { tag, attrs, text }) }
 
@@ -368,7 +413,11 @@ export function buildGraph(props) {
       and axis letters — a dashed asymptote must not strike through the
       number at its own tick, and a gap in a dash pattern is invisible.
       Solid strokes never take these gaps: a solid line or curve with chunks
-      missing reads as dashing, which is a mathematical statement. */
+      missing reads as dashing, which is a mathematical statement. They pass
+      behind the tick digits another way — a crossed digit moves to the clear
+      side of its axis when it can (8a), and the renderers mask every stroke
+      with a glyph-shaped halo around each digit (10, `knockout`), which
+      reads as the stroke passing under the number, not as a break in it. */
   function addGappedLine(a, b, extra) {
     for (const [s0, s1] of outsideGapRuns(a, b)) {
       const p = [a[0] + (b[0] - a[0]) * s0, a[1] + (b[1] - a[1]) * s0]
@@ -380,13 +429,14 @@ export function buildGraph(props) {
   function arrowhead(tip, dir) {
     const [ux, uy] = norm(dir)
     const bx = tip[0] - AH * ux, by = tip[1] - AH * uy
-    const p = [
+    const tri = [
       tip,
       [bx - AW * uy, by + AW * ux],
       [bx + AW * uy, by - AW * ux],
-    ].map((q) => q.map((n) => +n.toFixed(1)).join(',')).join(' ')
+    ].map((q) => q.map((n) => +n.toFixed(1)))
     arrowTips.push(tip)
-    add('polygon', { points: p, fill: 'currentColor' })
+    arrowHeads.push(tri)
+    add('polygon', { points: tri.map((q) => q.join(',')).join(' '), fill: 'currentColor' })
   }
 
   /** Drop the final ~arrowhead length of a px polyline so the stroke's round
@@ -422,6 +472,7 @@ export function buildGraph(props) {
       ...(dashed ? { strokeDasharray: '6 5' } : {}),
     })
     for (let i = 1; i < pts.length; i++) obstacles.push([pts[i - 1], pts[i]])
+    if (!dashed) for (let i = 1; i < pts.length; i++) solidInk.push([pts[i - 1], pts[i]])
     // Orient each head along the chord it covers — from the trimmed stroke
     // end to the true endpoint — not the endpoint tangent. On a curving path
     // (e.g. a curve ending near an extremum) the tangent can differ visibly
@@ -433,6 +484,10 @@ export function buildGraph(props) {
   }
 
   const fmt = (n) => +n.toFixed(1)
+  // The gridline style: thin, faint, never an obstacle. Gridlines draw in it,
+  // and so do `faint` lines and circles (a polar grid's spokes and rings) —
+  // custom.css pins exactly this opacity to a crisp screen hairline.
+  const FAINT = { strokeWidth: '0.4', opacity: '0.2' }
   const segAttrs = (a, b, extra = {}) => ({
     x1: fmt(a[0]), y1: fmt(a[1]), x2: fmt(b[0]), y2: fmt(b[1]),
     stroke: 'currentColor', ...extra,
@@ -485,11 +540,11 @@ export function buildGraph(props) {
     const yStep = spacedStep(yGridStep, uy, wantYTicks ? yTickStep : NaN)
     for (const mx of gridValues(xMin, xMax, xStep)) {
       if (mx === 0 && yMin <= 0 && yMax >= 0) continue
-      add('line', segAttrs(px([mx, yMin]), px([mx, yMax]), { strokeWidth: '0.4', opacity: '0.2' }))
+      add('line', segAttrs(px([mx, yMin]), px([mx, yMax]), FAINT))
     }
     for (const my of gridValues(yMin, yMax, yStep)) {
       if (my === 0 && xMin <= 0 && xMax >= 0) continue
-      add('line', segAttrs(px([xMin, my]), px([xMax, my]), { strokeWidth: '0.4', opacity: '0.2' }))
+      add('line', segAttrs(px([xMin, my]), px([xMax, my]), FAINT))
     }
   }
   if (caption) {
@@ -574,6 +629,7 @@ export function buildGraph(props) {
   if (xMin < 0) arrowhead([gx0 - OVER, axisY], [-1, 0])
   if (yMin < 0) arrowhead([axisX, gy1 + OVER], [0, 1])
   obstacles.push([[gx0 - OVER, axisY], [gx1 + OVER, axisY]], [[axisX, gy0 - OVER], [axisX, gy1 + OVER]])
+  solidInk.push([[xA0, axisY], [gx1 + OVER - AH, axisY]], [[axisX, gy0 - OVER + AH], [axisX, yA1]])
   // Tight ink box of a text node, for collision scoring. Exact advance
   // widths (no fit-pass safety), ascent/descent bounds of the glyphs this
   // stack actually inks — the fit pass keeps its own wider margins.
@@ -622,7 +678,7 @@ export function buildGraph(props) {
       if (originShown && Math.abs(mx) < GEOMETRY_EPSILON) continue
       const cx = px([mx, 0])[0]
       add('line', segAttrs([cx, axisY - 3], [cx, axisY + 3], { strokeWidth: '1' }))
-      const el = { tag: 'text', attrs: { x: fmt(cx), y: fmt(axisY + 4 + tickFS), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, text: fmtTick(mx, xTickGrouping) }
+      const el = { tag: 'text', attrs: { x: fmt(cx), y: fmt(axisY + 4 + tickFS + xTickOffset), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, text: fmtTick(mx, xTickGrouping) }
       els.push(el); xDigits.push(el)
     }
     const firstY = Math.ceil(yMin / yTickStep) * yTickStep
@@ -632,7 +688,7 @@ export function buildGraph(props) {
       if (originShown && Math.abs(my) < GEOMETRY_EPSILON) continue
       const cy = px([0, my])[1]
       add('line', segAttrs([axisX - 3, cy], [axisX + 3, cy], { strokeWidth: '1' }))
-      const el = { tag: 'text', attrs: { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, text: fmtTick(my, yTickGrouping) }
+      const el = { tag: 'text', attrs: { x: fmt(axisX - 6 - yTickOffset), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, text: fmtTick(my, yTickGrouping) }
       els.push(el); yDigits.push(el)
     }
     // On a dense grid the x digit and y digit nearest the origin share the
@@ -640,8 +696,9 @@ export function buildGraph(props) {
     // along its row until it clears, the way set type does, instead of
     // printing the two digits through each other. Every digit box then
     // becomes a placement obstacle, so auto-placed labels cannot print over
-    // tick numbers, and a stroke-gap box, so lines and curves pass behind
-    // the numbers rather than through them.
+    // tick numbers, and a stroke-gap box, so dashed lines and guides gap
+    // behind the numbers rather than strike through them (solid strokes
+    // pass behind them through the knockout mask, step 10).
     const xDigitBoxes = xDigits.map((el) => tightBox(+el.attrs.x, +el.attrs.y, el.text, 'middle', tickFS))
     const yDigitBoxes = yDigits.map((el) => tightBox(+el.attrs.x, +el.attrs.y, el.text, 'end', tickFS))
     const overlaps = (p, q) => (
@@ -665,6 +722,8 @@ export function buildGraph(props) {
     })
     labelBoxes.push(...xDigitBoxes, ...yDigitBoxes)
     strokeGapBoxes.push(...xDigitBoxes, ...yDigitBoxes)
+    xDigits.forEach((el, i) => tickDigits.push({ el, box: xDigitBoxes[i], axis: 'x' }))
+    yDigits.forEach((el, i) => tickDigits.push({ el, box: yDigitBoxes[i], axis: 'y' }))
   }
 
   if (quadrantLabels) {
@@ -696,6 +755,18 @@ export function buildGraph(props) {
   const deferredLineStrokes = []
   for (const l of allLines) {
     const [A, B] = lineAnchors(l)
+    if (l.faint) {
+      // Background construction in the gridline style: flush with the grid
+      // like a gridline, and like one it is no obstacle and never gapped.
+      // Dashes, arrowheads, and a label would each make it a graphed object
+      // again, so they are refused rather than silently dropped.
+      if (l.dashed) throw new Error('faint strokes are never dashed')
+      if (l.arrows !== undefined && l.arrows !== false) throw new Error('a faint line takes no arrowheads')
+      if (l.label !== undefined) throw new Error('a faint line takes no label — name it with a texts entry')
+      const clipped = clipLine(A, B, 0)
+      if (clipped) add('line', segAttrs(clipped[0], clipped[1], FAINT))
+      continue
+    }
     // an arrowless line (a segment, or a first-quadrant region boundary) stops
     // at the grid edge — past it lies the axis, which the line must not cross
     const clipped = clipLine(A, B, l.arrows === false ? 0 : 6)
@@ -714,6 +785,7 @@ export function buildGraph(props) {
     }
     if (arrows) { arrowhead(P1, dir); arrowhead(P0, [-dir[0], -dir[1]]) }
     obstacles.push({ seg: [P0, P1], soft: !!l.dashed })
+    if (!l.dashed) solidInk.push([P0, P1])
     if (l.label) pendingLineLabels.push({ l, P0, P1, dir })
   }
 
@@ -894,6 +966,7 @@ export function buildGraph(props) {
         ...(curve.dashed ? { strokeDasharray: '6 5' } : {}),
       })
       for (let i = 1; i < sampled.length; i++) obstacles.push([sampled[i - 1], sampled[i]])
+      if (!curve.dashed) for (let i = 1; i < sampled.length; i++) solidInk.push([sampled[i - 1], sampled[i]])
     }
   }
 
@@ -921,12 +994,15 @@ export function buildGraph(props) {
       || !Number.isFinite(rx) || rx <= 0 || !Number.isFinite(ry) || ry <= 0) {
       throw new Error('circle needs a finite at:[x,y] centre and a positive r (or rx and ry)')
     }
+    if (c.faint && c.dashed) throw new Error('faint strokes are never dashed')
     const [cx, cy] = px(c.at)
     const pxRx = rx * ux, pxRy = ry * uy
-    const stroke = {
-      fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
-      ...(c.dashed ? { strokeDasharray: '6 5' } : {}),
-    }
+    const stroke = c.faint
+      ? { fill: 'none', stroke: 'currentColor', ...FAINT }
+      : {
+        fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
+        ...(c.dashed ? { strokeDasharray: '6 5' } : {}),
+      }
     // from/to (degrees, counter-clockwise from the positive x-axis) draw an
     // arc — a real SVG elliptical arc, so a semicircle stays exact.
     const arc = c.from !== undefined || c.to !== undefined
@@ -951,10 +1027,12 @@ export function buildGraph(props) {
     } else {
       add('ellipse', { cx: fmt(cx), cy: fmt(cy), rx: fmt(pxRx), ry: fmt(pxRy), ...stroke })
     }
+    if (c.faint) continue // background, like a gridline: no placement obstacle
     let prev = null
     for (let i = 0; i <= 36; i++) {
       const q = at(a0 + ((a1 - a0) * i) / 36)
       if (prev) obstacles.push([prev, q])
+      if (prev && !c.dashed) solidInk.push([prev, q])
       prev = q
     }
   }
@@ -1135,6 +1213,18 @@ export function buildGraph(props) {
   }
   for (const s of allSegments) {
     const a = px(s.from), b = px(s.to)
+    if (s.faint) {
+      // Background construction in the gridline style — a half polar grid's
+      // spokes, drawn from the pole to the rim, where a faint `lines` entry
+      // would run the whole window. Dashes, arrowheads, and a label would
+      // each make it a graphed object again, so they are refused; like a
+      // gridline it is no obstacle and moves no digit.
+      if (s.dashed) throw new Error('faint strokes are never dashed')
+      if (s.arrows !== undefined && s.arrows !== false) throw new Error('a faint segment takes no arrowheads')
+      if (s.label !== undefined) throw new Error('a faint segment takes no label — name it with a texts entry')
+      add('line', segAttrs(a, b, FAINT))
+      continue
+    }
     // arrows: true | 'start' | 'end' — for indicator rays such as the
     // "Domain"/"Range" extents drawn alongside a graph. The shaft stops short
     // of each head so no stroke cap pokes past the apex.
@@ -1148,6 +1238,7 @@ export function buildGraph(props) {
     if (headEnd) arrowhead(b, dir)
     if (headStart) arrowhead(a, [-dir[0], -dir[1]])
     obstacles.push([a, b])
+    if (!s.dashed) solidInk.push([a, b])
     if (s.label) {
       const mid = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
       const vertical = Math.abs(a[0] - b[0]) < Math.abs(a[1] - b[1])
@@ -1307,6 +1398,54 @@ export function buildGraph(props) {
     }, mathMinus(l.label))
   }
 
+  // --- 8a. tick-digit relocation --------------------------------------------
+  // Every stroke is drawn and every label placed. A tick digit that a SOLID
+  // stroke crosses (curve samples, solid lines and segments, circle rims,
+  // axes, arrowheads) moves to the clear side of its axis — a y digit to the
+  // right of the y-axis, an x digit above the x-axis (box bottom clear of
+  // the tick mark) — when that spot is free of ink, of plotted dots, and of
+  // every other text, placed labels included. Otherwise it stays where it
+  // is and the knockout draws the stroke behind it. Dashed ink never moves a
+  // digit (it gaps behind digits already). Each digit decides alone; there
+  // is no run logic. Its box moves IN PLACE — labelBoxes and strokeGapBoxes
+  // hold the same array — so the deferred dashed-gap pass below gaps around
+  // the new position.
+  //
+  // This runs AFTER label placement, not before: a moved digit takes the
+  // room an auto-placed label would have chosen, and run first it pushed ten
+  // corpus labels (October 6, 2026) onto curves, lines, and dots. Run here,
+  // the label layout is exactly what it was, and a digit moves only into
+  // room no label wanted.
+  const grownBy = (bb, p) => [bb[0] - p, bb[1] - p, bb[2] + p, bb[3] + p]
+  const boxOverlap = (p, q) => (
+    Math.min(p[2], q[2]) - Math.max(p[0], q[0]) > 0
+    && Math.min(p[3], q[3]) - Math.max(p[1], q[1]) > 0)
+  const headCrosses = (bb) => arrowHeads.some((tri) => tri.some((q, i) => segBoxInterval(q, tri[(i + 1) % 3], bb)))
+  const solidCrosses = (bb) => solidInk.some(([a, b]) => segBoxInterval(a, b, bb)) || headCrosses(bb)
+  // A landing spot must be clear of the dashed ink already emitted, too: a
+  // guide or dashed segment was gapped around the digit's OLD position only.
+  // (Soft obstacles — deferred dashed lines — are emitted after this pass,
+  // gapped around wherever the digit ends up.)
+  const inkCrosses = (bb) => solidCrosses(bb)
+    || obstacles.some((o) => !o.soft && segBoxInterval(...(o.seg ?? o), bb))
+  const dotNear = (bb) => dotPx.some(([x, y]) => Math.hypot(
+    Math.max(bb[0] - x, 0, x - bb[2]), Math.max(bb[1] - y, 0, y - bb[3])) < 4)
+  for (const d of tickDigits) {
+    // An offset row or column is the author's placement: leave it alone.
+    if ((d.axis === 'x' ? xTickOffset : yTickOffset) !== 0) continue
+    if (!solidCrosses(grownBy(d.box, 1))) continue
+    const moved = d.axis === 'y'
+      ? { x: fmt(axisX + 6), textAnchor: 'start' }
+      : { y: fmt(axisY - 4 - 0.2 * tickFS) }
+    const at = { ...d.el.attrs, ...moved }
+    const cand = tightBox(+at.x, +at.y, d.el.text, at.textAnchor, tickFS)
+    if (inkCrosses(grownBy(cand, 1))) continue
+    const room = grownBy(cand, 2)
+    if (labelBoxes.some((o) => o !== d.box && boxOverlap(room, o)) || dotNear(room)) continue
+    Object.assign(d.el.attrs, moved)
+    d.box.splice(0, 4, ...cand)
+  }
+
   // --- 8b. deferred dashed guide strokes ------------------------------------
   // Every label box is final now, so each dashed line can be emitted gapped
   // around the label ink it crosses, spliced back at its original position
@@ -1326,6 +1465,24 @@ export function buildGraph(props) {
   // --- 9. raw text annotations (attrs computed above, before placement) -----
   for (const t of textAnnotations) add('text', t.attrs, t.text)
 
+  // --- 10. tick-digit knockout ----------------------------------------------
+  // Every stroke passes BEHIND the tick digits: the renderers (figure-svg.mjs)
+  // mask the strokes with a glyph-shaped halo around each digit named here.
+  // A box-shaped gap would read as dashing — a mathematical statement — but a
+  // halo the shape of the glyph reads as the curve passing under the number,
+  // on any background, with no page colour in the engine. The digits move to
+  // the END of `els`, so a renderer that ignores `knockout` still paints them
+  // over every stroke; that is the last splice, after every recorded index.
+  let knockout = null
+  if (tickKnockout && tickDigits.length) {
+    const digitEls = tickDigits.map((d) => d.el)
+    const moved = new Set(digitEls)
+    const rest = els.filter((e) => !moved.has(e))
+    els.length = 0
+    els.push(...rest, ...digitEls)
+    knockout = { texts: digitEls }
+  }
+
   // Fit pass: no label can clip, ever. Coordinates are untouched — only the
   // viewBox grows to cover what the placement pass let stick out.
   const box = fitViewBox(els, W, H)
@@ -1336,6 +1493,9 @@ export function buildGraph(props) {
     maxWidth: props.maxWidth ?? Math.min(box.w + 20, 360),
     ariaLabel: props.ariaLabel || 'A coordinate-plane graph.',
     els,
+    // the tick-digit <text> els (the same objects as in `els`) every stroke
+    // passes behind, or null — see figure-svg.mjs
+    knockout,
     // px↔math mapping, so the <graph-plot> interactive overlay shares the
     // exact same coordinate transform as the renderer.
     map: {
@@ -1802,25 +1962,32 @@ export function buildFigure(props) {
 
 // ---------------------------------------------------------------------------
 /** Serialize to a plain standalone SVG string (for QA rasterization). */
-// Generic, the same conversion `<graph-plot>` applies in the browser. The
-// lookup table this replaced passed an unmapped camelCase key straight through
-// (`KEBAB[k] || k`), so a new attribute would serialize as valid-looking but
-// inert SVG here while rendering correctly in the DOM.
-const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase())
+// The node tree and the attribute-name conversion are figure-svg.mjs's — the
+// same ones `<ap-figure>` and `<graph-plot>` build their DOM from, so the
+// standalone SVG and the page can never disagree about the tick-digit mask.
+// (A lookup table here once passed an unmapped camelCase key straight
+// through, serializing valid-looking but inert SVG.)
 const escXml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
 /**
  * `color: null` omits the `style` attribute entirely, so the figure inherits
  * the page's text color and stays legible in dark mode. That is what content
  * needs; the default `#111` is for standalone QA rasterization, where nothing
- * supplies a color.
+ * supplies a color. `knockoutId` names the tick-digit mask: one figure per
+ * standalone document needs no more, but a page embedding several of these
+ * strings should give each its own.
  */
-export function toSvgString(props, { color = '#111', builder = buildGraph } = {}) {
+export function toSvgString(props, { color = '#111', builder = buildGraph, knockoutId = 'ap-knockout' } = {}) {
   const g = builder(props)
-  const body = g.els.map(({ tag, attrs, text }) => {
-    const a = Object.entries(attrs).map(([k, v]) => `${camelToKebab(k)}="${v}"`).join(' ')
+  const serialize = ({ tag, attrs, text, children }, indent) => {
+    const a = Object.entries(attrs).map(([k, v]) => `${svgAttrName(k)}="${v}"`).join(' ')
+    if (children) {
+      const inner = `\n${indent}  `
+      return `<${tag} ${a}>${children.map((c) => inner + serialize(c, `${indent}  `)).join('')}\n${indent}</${tag}>`
+    }
     return text === undefined ? `<${tag} ${a}/>` : `<${tag} ${a}>${escXml(text)}</${tag}>`
-  }).join('\n  ')
+  }
+  const body = figureNodes(g, knockoutId).map((node) => serialize(node, '  ')).join('\n  ')
   const style = color === null ? '' : ` style="color:${color}"`
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${g.viewBox}" width="${g.width}" height="${g.height}"${style} font-family="Helvetica, Arial, sans-serif">\n  ${body}\n</svg>`
 }

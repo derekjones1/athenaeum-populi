@@ -12539,10 +12539,6 @@
     "result": "agrees"
    }
   },
-  "1e8be9172ed7dc8c": {
-   "verdict": "ok",
-   "note": "Try It 2: plot (3,-pi/6) and (2,9pi/4). node: 3*cos(-pi/6)=2.5981, 3*sin(-pi/6)=-1.5; 9pi/4 is coterminal with pi/4, 2*cos(pi/4)=2*sin(pi/4)=1.4142 -> option index 2 (correct answerIndex=2); distractors misread the coterminal reduction and sign."
-  },
   "1e989268d10959c4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19280,6 +19276,14 @@
   "3060846557b86605": {
    "verdict": "ok"
   },
+  "30665c505ffc9a62": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): r=-θ at θ=4π gives r=-4π exactly; independently substituted. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec.",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "3069be4cb4d769cd": {
    "verdict": "ok",
    "note": "author-built from § The Lytic Cycle: \"During the lytic cycle of virulent phage, the bacteriophage takes over the cell, reproduces new phages, and destroys the cell.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -20457,14 +20461,6 @@
   "339e01cdde6bf137": {
    "verdict": "ok",
    "note": "KC 2 8.3 § body The Energy Flow (fs-idp23524720), m66475 — parent re-read against the module"
-  },
-  "33a1c8428ff01fe8": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC on Graphical #23 (r=7+4sinθ, CNXML fs-id1165134575414, printed solution 'one-loop/dimpled limaçon', a=7,b=4,1<a/b<2): correct option (index 2 after reorder) is the exact r=7+4sinθ sampled polyline, opening upward with a shallow dimple, independently re-verified via svgshot against the sign-flip (opens down), axis-swap (opens right), and family (a=7,b=9, inner-loop) distractors.",
-   "solved": {
-    "by": "fable-solver",
-    "result": "agrees"
-   }
   },
   "33ac0d480af55bfb": {
    "verdict": "ok",
@@ -24398,14 +24394,6 @@
     "result": "agrees"
    }
   },
-  "3e06750a6bd3ddd3": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): r=-θ at θ=4π gives r=-4π exactly; independently substituted.",
-   "solved": {
-    "by": "fable-solver",
-    "result": "agrees"
-   }
-  },
   "3e0c616561a83746": {
    "verdict": "ok",
    "note": "KC 3 14.6 § The Kirby-Bauer Disk Diffusion Test (Micro Connection: Antibiograms), m58864",
@@ -25805,14 +25793,6 @@
     "result": "agrees"
    }
   },
-  "41278da48f15f390": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC: correct option is the exact r=3cos(3θ) sampled polyline (3 petals, index 0 after reorder — verified visually via svgshot: 3-petal rose vs distractors 4-petal (n confusion), rotated 3-petal (cos vs sin), and shorter 3-petal (a=2 not 3)); matches source's printed answer image and the 'Rose curve, n odd' text.",
-   "solved": {
-    "by": "fable-solver",
-    "result": "agrees"
-   }
-  },
   "412bf346e8c3fd04": {
    "verdict": "ok",
    "note": "source exercise fs-idp35699408 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -26160,6 +26140,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "41f4f84b7ee0ef5a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC on Graphical #23 (r=7+4sinθ, CNXML fs-id1165134575414, printed solution 'one-loop/dimpled limaçon', a=7,b=4,1<a/b<2): correct option (index 2 after reorder) is the exact r=7+4sinθ sampled polyline, opening upward with a shallow dimple, independently re-verified via svgshot against the sign-flip (opens down), axis-swap (opens right), and family (a=7,b=9, inner-loop) distractors. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },
@@ -31798,6 +31786,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "50b9162c887513c8": {
+   "verdict": "ok",
+   "note": "Try It 1: plot (2, pi/3). node: 2*cos(pi/3)=1, 2*sin(pi/3)=1.7321 -> option 0 (correct answerIndex=0); distractors vary radius, angle, and reflected quadrant. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec."
   },
   "50bb063f6f70f9b6": {
    "verdict": "ok",
@@ -51529,10 +51521,6 @@
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 3 (vaginal microbiota factors). Model answer assembled from the Normal Microbiota subsection's paragraph on establishment, estrogen regulation, and dominant organisms."
   },
-  "859e5c86d7be8018": {
-   "verdict": "ok",
-   "note": "Try It 1: plot (2, pi/3). node: 2*cos(pi/3)=1, 2*sin(pi/3)=1.7321 -> option 0 (correct answerIndex=0); distractors vary radius, angle, and reflected quadrant."
-  },
   "85a7a4e123d53937": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53665,6 +53653,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "8bcce76fab9fe7ac": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 265): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec."
   },
   "8bd1c48840cbb0a7": {
    "verdict": "ok",
@@ -64791,6 +64783,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a8fe6c9a36c44b9c": {
+   "verdict": "ok",
+   "note": "Try It 2: plot (3,-pi/6) and (2,9pi/4). node: 3*cos(-pi/6)=2.5981, 3*sin(-pi/6)=-1.5; 9pi/4 is coterminal with pi/4, 2*cos(pi/4)=2*sin(pi/4)=1.4142 -> option index 2 (correct answerIndex=2); distractors misread the coterminal reduction and sign. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec."
   },
   "a902236a363505ef": {
    "verdict": "ok",
@@ -80090,10 +80086,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "d19f16f9573c1bcf": {
-   "verdict": "ok",
-   "note": "KC 7-12 (multiplechoice, line 265): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "d1a0eb513107bf30": {
    "verdict": "ok"
@@ -95837,6 +95829,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fbffc732f878cd42": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Graph-mode MC: correct option is the exact r=3cos(3θ) sampled polyline (3 petals, index 0 after reorder — verified visually via svgshot: 3-petal rose vs distractors 4-petal (n confusion), rotated 3-petal (cos vs sin), and shorter 3-petal (a=2 not 3)); matches source's printed answer image and the 'Rose curve, n odd' text. | Re-read October 6, 2026 after the polar grid was re-authored faint: rings consolidated, spokes faint; every plotted object, the window, and the key compared identical spec by spec.",
+   "solved": {
+    "by": "fable-solver",
     "result": "agrees"
    }
   },

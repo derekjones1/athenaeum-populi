@@ -226,3 +226,22 @@ test('inline SVG findings gate: the console names them and the run fails', () =>
   assert.match(out, /1 inline SVG figure\(s\) checked: 0 clean, 1 with overlaps, 0 with only/);
   assert.doesNotMatch(out, /report-only/);
 });
+
+// ---------------------------------------------------------------------------
+// Faint strokes (October 6, 2026): hairlines of any shape are background.
+
+test('a faint ring through a tick digit is not a finding; the same ring at full weight is', () => {
+  // r = 3 crosses the x-axis at the "3" tick, straight through its digit.
+  const spec = (faint) => ({
+    ariaLabel: 'ring', xMin: -5, xMax: 5, yMin: -5, yMax: 5, unit: 24, tickLabels: true,
+    circles: [{ at: [0, 0], r: 3, ...(faint ? { faint: true } : {}) }],
+  });
+  const crossings = (faint) => {
+    const { code, out } = runOn(page(spec(faint)), ['--json']);
+    assert.equal(code, 0, out);
+    return JSON.parse(out).report.flatMap((r) => r.found).filter((c) => c.kind === 'text-circle' && c.a === '3');
+  };
+  assert.deepEqual(crossings(true), [], 'a hairline ring is background, never ink');
+  const full = crossings(false);
+  assert.ok(full.some((c) => c.depth >= 3), `the full-weight ring is read as ink: ${JSON.stringify(full)}`);
+});

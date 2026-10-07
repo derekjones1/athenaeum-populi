@@ -1,9 +1,10 @@
 # Math — history
 
 Dated records moved out of the operative playbook, kept for provenance.
-Both sections below were cut verbatim from `docs/subjects/math.md`; the
-"Standing notes from the closures" section stayed in place there (promoted
-to its own `##` heading once its parent section moved here).
+The first two sections below were cut verbatim from `docs/subjects/math.md`;
+the "Standing notes from the closures" section stayed in place there (promoted
+to its own `##` heading once its parent section moved here). The last section
+is a dated engine record whose rules live in the playbook.
 
 ## 6. Trivially satisfiable prompts: the closed classes
 
@@ -137,3 +138,21 @@ labelled span itself does not grade equal to anything (the engine reads
 of this continuously, in both source and MathLive-normalized spellings; the
 bare-RHS variant of a printed definition span is still the manual audit's
 job.
+
+## Figure engine: tick digits and polar grids (October 6, 2026)
+
+A measurement of the 1,327 spec-first figures found 284 with a solid stroke of
+at least 3px through a tick digit, 694 crossings in all (Precalculus 8.3 alone
+23 figures); the readability gate had tolerated them because a solid stroke
+never gaps. Four pieces landed together in `graph-core.mjs`: a glyph-shaped
+1.5px knockout of every stroke behind the tick digits (`tickKnockout: false`
+opts out), relocation of a crossed digit to the clear side of its axis,
+`xTickOffset` / `yTickOffset` for a curve that crosses the digit row on both
+sides (7.4's sound wave), and `faint: true` on `circles`, `lines`, and
+`segments` for polar grids (segments for a half grid's spokes, which stop at
+the rim). The prototype showed that a box-shaped gap reads as a hole in the curve
+while a glyph-shaped knockout does not, and that a branch riding along a digit
+row needs relocation, since the halo alone leaves the row struck through
+(3.7's $1/x$). The re-review tracker's four Open notes on this (Precalculus 1,
+6, 7, 8) closed with it; 7.4's and 8.8's hand-drawn ticks and 8.3/8.4's grids
+were re-authored.

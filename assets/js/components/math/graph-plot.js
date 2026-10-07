@@ -18,12 +18,14 @@ import { quadraticThroughVertex } from '../../lib/math/graph-algebra.mjs';
 // The one U+2212 formatter. This file used to carry its own copy, so a change
 // to the shared one silently missed the point-handle labels.
 import { mathMinus as fmt } from '../../lib/math/graph-core.mjs';
+// The one els → SVG-children walk (tick-digit mask included), shared with
+// <ap-figure> and toSvgString.
+import { appendFigure } from '../../lib/math/figure-svg.mjs';
 import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
 import { TONE } from '../../lib/shared/colors.mjs';
 import { focusGuard } from '../../lib/shared/focus.mjs';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
-const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase());
 
 // Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 // Every partial-credit status is a warning: right in part, not yet right.
@@ -293,12 +295,7 @@ class GraphPlotElement extends HTMLElement {
 
     // rebuild children
     while (this.svg.firstChild) this.svg.removeChild(this.svg.firstChild);
-    for (const { tag, attrs, text } of g.els) {
-      const el = document.createElementNS(SVGNS, tag);
-      for (const [k, v] of Object.entries(attrs)) el.setAttribute(camelToKebab(k), v);
-      if (text !== undefined) el.textContent = text;
-      this.svg.appendChild(el);
-    }
+    appendFigure(this.svg, g);
     // focusable grab handles
     this.handles = [];
     this.pts.forEach((p, i) => {

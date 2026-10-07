@@ -436,13 +436,31 @@ annotations, and every already-placed label as obstacles, and scores a
 stroke passing *through* a candidate box far below one merely nearby.
 Dashed guide lines (asymptotes, boundaries) are emitted gapped behind any
 label ink or tick digit they cross, and the two digits sharing the corner
-cell by the origin de-collide on their own. SOLID strokes never gap — a
-solid curve with chunks missing reads as dashing, which is a mathematical
-statement — so a curve hugging the axis draws over the digit row as the
-source books print it. **Write line labels with no `labelSide`/`labelAt`
-pins first** and let the engine choose — a pin is honored even into a
-collision, so state one only to express meaning the engine cannot know. For
-a point label that must sit a few pixels off its chosen side,
+cell by the origin de-collide on their own. SOLID strokes are never gapped
+in the geometry — a solid curve with chunks missing reads as dashing, which is
+a mathematical statement — so a solid stroke meets a tick digit by paint
+alone, in three ways *(October 6, 2026)*:
+
+1. **Every stroke passes behind the tick digits.** The renderer cuts a 1.5px
+   glyph-shaped halo around each digit (an SVG mask, so it works on any
+   background). A box-shaped gap reads as a hole in the curve; a halo the shape
+   of the glyph reads as the curve running under the number, which is why the
+   geometry stays whole and the digit stays legible. `tickKnockout: false`
+   opts a spec out.
+2. **A digit a solid stroke crosses moves to the clear side of its axis** — a
+   y digit to the right of the y-axis, an x digit above the x-axis — when that
+   spot is free of strokes, plotted dots, and text; otherwise it stays and the
+   knockout handles it. A branch that rides along a digit row needs the move;
+   the halo alone would leave the whole row struck through.
+3. **`xTickOffset` / `yTickOffset` (px) push the digit row or column away from
+   its axis**, the tick marks staying on it; relocation is skipped on that
+   axis, because the author has placed the digits. Use them where a curve
+   crosses the digit row on both sides (the sound wave of 7.4: digits below
+   the trough). Never hand-draw ticks as `segments` or digits as `texts`.
+
+**Write line labels with no `labelSide`/`labelAt` pins first** and let the
+engine choose — a pin is honored even into a collision, so state one only to
+express meaning the engine cannot know. For a point label that must sit a few pixels off its chosen side,
 `labelNudge: [dx, dy]` (px) shifts it without giving up placement scoring; a
 `texts` entry remains the full escape hatch and is never moved.
 
@@ -495,8 +513,10 @@ npm run check:figures            # or: node tools/figures/check-figure-overlaps.
 
 builds every spec-first figure and fails on any label printed across other
 ink deeper than a 3px graze (it runs inside `npm test`). A solid stroke
-crossing a tick digit is reported but never gated; a dashed stroke crossing
-one IS gated, because the engine gaps dashes behind digits. The same run
+crossing a tick digit is reported as tolerated and never gated (the engine
+knocks the digit out and relocates it); faint strokes of every tag are
+skipped; a dashed stroke crossing one IS gated, because the engine gaps
+dashes behind digits. The same run
 previews every legacy `data-spec` figure as its spec-first re-render and
 reports, without gating, the ones that will need label work at conversion.
 Hand-written inline `<svg>` figures are read from the markup itself (lines,
@@ -640,11 +660,24 @@ label font up until adjacent titles collide. A `figure`-mode dimension
 diagram draws the object it dimensions (a cooling tower's sides are sampled
 from its own hyperbola, not left as bare dimension lines).
 
+**A polar grid is `faint`** *(October 6, 2026)*. Draw the rings as `circles`
+and the spokes as `lines` — or as `segments` from the pole to the rim, for a
+half grid whose spokes must stop at the axis — each with `faint: true`: the gridline style
+(hairline, 20% opacity, flush with the grid edge), never dashed, no
+arrowheads, no label (each throws), and no placement obstacle — a label may
+sit on a ring as it sits on a gridline. A ring is never dashed and never
+split into arcs to dodge a label; the tick-digit knockout handles whatever
+passes under a digit. Name a ring or spoke with a `texts` entry. The
+readability gate skips faint strokes.
+
 When a graph's window never reaches the origin — a year axis, a dollar axis —
 `tickLabels` still labels both axes along the drawn edges. Turn digit
 grouping off per axis with `xTickGrouping: false` so a year reads 1975 rather
 than 1,975. Where the source numbers only one axis, `tickLabels` also takes
-`'x'` or `'y'` to label that axis alone.
+`'x'` or `'y'` to label that axis alone. `xTickOffset` / `yTickOffset` (px)
+move the digit row down / the digit column left, off an axis a curve runs
+along on both sides; `tickKnockout: false` prints strokes over the digits
+instead of behind them (the default is behind; see the graph-core rules above).
 
 Gridlines sit on multiples of the grid step, as tick labels sit on multiples
 of the tick step — never at `xMin`, `xMin + step`, … *(October 4, 2026)*. So
