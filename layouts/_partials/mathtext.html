@@ -38,8 +38,17 @@
     {{- /* Markdownify with the escaped dollars still behind the sentinel:
          a bare `$` restored first would re-enter goldmark's math
          passthrough and KaTeX-error on money amounts. Restore after. */ -}}
-    {{- $rendered := printf "%s" ($p | markdownify) -}}
-    {{- $sb = $sb | append (replace $rendered $NUL "$") -}}
+    {{- /* markdownify trims its input, which ate the space on each side of
+         every math run ("Evaluate $x$ when" → "Evaluatexwhen"). Re-attach
+         the run's own edge whitespace; a whitespace-only run passes as-is. */ -}}
+    {{- if eq (trim $p " \t\n\r") "" -}}
+      {{- $sb = $sb | append $p -}}
+    {{- else -}}
+      {{- $lead := replaceRE `^(\s*)[\s\S]*$` "$1" $p -}}
+      {{- $trail := replaceRE `^[\s\S]*?(\s*)$` "$1" $p -}}
+      {{- $rendered := printf "%s" ($p | markdownify) -}}
+      {{- $sb = $sb | append (printf "%s%s%s" $lead (replace $rendered $NUL "$") $trail) -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- return (delimit $sb "" | safeHTML) -}}

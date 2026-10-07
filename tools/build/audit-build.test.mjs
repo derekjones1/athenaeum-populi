@@ -117,6 +117,10 @@ test('build audit: content images, duplicated chrome, and missing no-JavaScript 
     assert.match(audit().stderr, /site chrome prints raw TeX/, 'a rail heading printed as TeX must fail the build');
     prepare('<h1>Factor $x^2+bx+c$</h1><p>Semantic content.</p>');
     assert.match(audit().stderr, /page <h1> prints raw TeX/, 'a front-matter title written in TeX must fail the build');
+    prepare('<fill-in data-question="Evaluate $x$"><p class=ap-fillin-question>Evaluate<span class=katex>x</span></p></fill-in><p>$3$ R<span class=katex>4</span></p><text-in><p>3 R<span class=katex>4</span></p></text-in>');
+    assert.match(audit().stderr, /exercise text glues a word to inline math/, 'mathtext dropping the space before math must fail the build');
+    prepare('<fill-in data-question="Evaluate $x$"><p class=ap-fillin-question>Evaluate <span class=katex>x</span></p></fill-in><p>$3$ R<span class=katex>4</span></p><text-in><p>3 R<span class=katex>4</span></p></text-in>');
+    assert.doesNotMatch(audit().stderr, /exercise text glues/, 'remainder notation and body prose may abut math');
 
     prepare('<p>Semantic content.</p>');
     rmSync(join(fixture, 'images', 'logo-dark.svg'));

@@ -558,6 +558,16 @@ if (htmlDocuments.some((document) => RAW_TEX_RE.test(document.match(/<h1\b[^>]*>
   problems.push('page <h1> prints raw TeX (write the front-matter title in Unicode, e.g. x²+bx+c)');
 }
 const contentHtml = contentDocuments.map(({ content }) => content).filter(Boolean).join('\n');
+// Exercise text (question, hint, answerDisplay, options) renders through the
+// mathtext partial, whose markdownify step trims each prose run. Unrepaired,
+// that glued every word to the math beside it ("Evaluate$x$when") across the
+// corpus. Remainder notation abuts math ("$3$ R$4$", in exercises too), so a
+// lone letter passes; body prose is free-form, so only the interactive
+// elements are checked.
+const EXERCISE_RE = /<(fill-in|multiple-choice|self-check|sort-bins|text-in)\b[\s\S]*?<\/\1>/g;
+if ([...contentHtml.matchAll(EXERCISE_RE)].some(([block]) => /[A-Za-z]{2}<span class="?katex"?>/.test(block))) {
+  problems.push('exercise text glues a word to inline math (mathtext dropped the space before a $...$ run)');
+}
 // Media elements remain active even when nested in raw <pre>/<code>.
 // `<img>` is handled separately below — mediafigure's own well-formed `<img>`
 // inside `<figure class="ap-mediafigure">` is the one sanctioned exception —
