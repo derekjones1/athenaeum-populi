@@ -71,9 +71,9 @@ $$A=\begin{bmatrix}1&5\\-2&-9\end{bmatrix},\quad B=\begin{bmatrix}-9&-5\\2&1\end
 
 **Solution.** Multiply $AB$ and $BA$. If both products equal the identity, then the two matrices are inverses of each other.
 
-$$AB=\begin{bmatrix}1&5\\-2&-9\end{bmatrix}\begin{bmatrix}-9&-5\\2&1\end{bmatrix}=\begin{bmatrix}1(-9)+5(2)&1(-5)+5(1)\\-2(-9)-9(2)&-2(-5)-9(1)\end{bmatrix}=\begin{bmatrix}1&0\\0&1\end{bmatrix}$$
+$$\begin{aligned}AB&=\begin{bmatrix}1&5\\-2&-9\end{bmatrix}\begin{bmatrix}-9&-5\\2&1\end{bmatrix}\\[4pt]&=\begin{bmatrix}1(-9)+5(2)&1(-5)+5(1)\\-2(-9)-9(2)&-2(-5)-9(1)\end{bmatrix}\\[4pt]&=\begin{bmatrix}1&0\\0&1\end{bmatrix}\end{aligned}$$
 
-$$BA=\begin{bmatrix}-9&-5\\2&1\end{bmatrix}\begin{bmatrix}1&5\\-2&-9\end{bmatrix}=\begin{bmatrix}-9(1)-5(-2)&-9(5)-5(-9)\\2(1)+1(-2)&2(5)+1(-9)\end{bmatrix}=\begin{bmatrix}1&0\\0&1\end{bmatrix}$$
+$$\begin{aligned}BA&=\begin{bmatrix}-9&-5\\2&1\end{bmatrix}\begin{bmatrix}1&5\\-2&-9\end{bmatrix}\\[4pt]&=\begin{bmatrix}-9(1)-5(-2)&-9(5)-5(-9)\\2(1)+1(-2)&2(5)+1(-9)\end{bmatrix}\\[4pt]&=\begin{bmatrix}1&0\\0&1\end{bmatrix}\end{aligned}$$
 
 $A$ and $B$ are inverses of each other.
 
@@ -220,7 +220,7 @@ $$A=\begin{bmatrix}1&-2\\2&-3\end{bmatrix}$$
 
 **Solution.** Using the formula, we have
 
-$$A^{-1}=\tfrac{1}{(1)(-3)-(-2)(2)}\begin{bmatrix}-3&2\\-2&1\end{bmatrix}=\tfrac{1}{-3+4}\begin{bmatrix}-3&2\\-2&1\end{bmatrix}=\begin{bmatrix}-3&2\\-2&1\end{bmatrix}$$
+$$\begin{aligned}A^{-1}&=\tfrac{1}{(1)(-3)-(-2)(2)}\begin{bmatrix}-3&2\\-2&1\end{bmatrix}\\[4pt]&=\tfrac{1}{-3+4}\begin{bmatrix}-3&2\\-2&1\end{bmatrix}\\[4pt]&=\begin{bmatrix}-3&2\\-2&1\end{bmatrix}\end{aligned}$$
 
 **Analysis.** We can check that our formula works by using one of the other methods to calculate the inverse. Let's augment $A$ with the identity.
 
@@ -241,8 +241,9 @@ So, we have verified our original solution.
 $$A^{-1}=\begin{bmatrix}-3&2\\-2&1\end{bmatrix}$$
 
 {{< fillin
-  question="Use the formula to find the multiplicative inverse of $A=\begin{bmatrix}1&-1\\2&3\end{bmatrix}$, then verify your answer by augmenting with the identity matrix. Enter the second row of $A^{-1}$ as a comma-separated list of two numbers, left to right."
-  answer="-2/5, 1/5"
+  question="Use the formula to find the multiplicative inverse of $A=\begin{bmatrix}1&-1\\2&3\end{bmatrix}$, then verify your answer by augmenting with the identity matrix. Enter the second row of $A^{-1}$ as a comma-separated list of two numbers, left to right, each in lowest terms."
+  answer="-\frac{2}{5},\frac{1}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{2}{5}, \tfrac{1}{5}$"
   hint="Compute $ad-bc$ first, then apply $A^{-1}=\tfrac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$."
 >}}
@@ -294,7 +295,7 @@ $$A=\begin{bmatrix}2&3&1\\3&3&1\\2&4&1\end{bmatrix}$$
 
 **Solution.** Augment $A$ with the identity matrix, and then begin row operations until the identity matrix replaces $A$. The matrix on the right will be the inverse of $A$.
 
-$$\left[\begin{array}{ccc|ccc}2&3&1&1&0&0\\3&3&1&0&1&0\\2&4&1&0&0&1\end{array}\right]\ \overline{\to}\ \left[\begin{array}{ccc|ccc}3&3&1&0&1&0\\2&3&1&1&0&0\\2&4&1&0&0&1\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}2&3&1&1&0&0\\3&3&1&0&1&0\\2&4&1&0&0&1\end{array}\right]\ \xrightarrow{R_1\leftrightarrow R_2}\ \left[\begin{array}{ccc|ccc}3&3&1&0&1&0\\2&3&1&1&0&0\\2&4&1&0&0&1\end{array}\right]$$
 
 $$-R_2+R_1=R_1\ \to\ \left[\begin{array}{ccc|ccc}1&0&0&-1&1&0\\2&3&1&1&0&0\\2&4&1&0&0&1\end{array}\right]$$
 
@@ -312,13 +313,14 @@ $$A^{-1}=B=\begin{bmatrix}-1&1&0\\-1&0&1\\6&-2&-3\end{bmatrix}$$
 
 **Analysis.** To prove that $B=A^{-1}$, let's multiply the two matrices together to see if the product equals the identity, if $AA^{-1}=I$ and $A^{-1}A=I$.
 
-$$AA^{-1}=\begin{bmatrix}2&3&1\\3&3&1\\2&4&1\end{bmatrix}\begin{bmatrix}-1&1&0\\-1&0&1\\6&-2&-3\end{bmatrix}=\begin{bmatrix}2(-1)+3(-1)+1(6)&2(1)+3(0)+1(-2)&2(0)+3(1)+1(-3)\\3(-1)+3(-1)+1(6)&3(1)+3(0)+1(-2)&3(0)+3(1)+1(-3)\\2(-1)+4(-1)+1(6)&2(1)+4(0)+1(-2)&2(0)+4(1)+1(-3)\end{bmatrix}=\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}$$
+$$\begin{aligned}AA^{-1}&=\begin{bmatrix}2&3&1\\3&3&1\\2&4&1\end{bmatrix}\begin{bmatrix}-1&1&0\\-1&0&1\\6&-2&-3\end{bmatrix}\\[4pt]&=\begin{bmatrix}2(-1)+3(-1)+1(6)&2(1)+3(0)+1(-2)&2(0)+3(1)+1(-3)\\3(-1)+3(-1)+1(6)&3(1)+3(0)+1(-2)&3(0)+3(1)+1(-3)\\2(-1)+4(-1)+1(6)&2(1)+4(0)+1(-2)&2(0)+4(1)+1(-3)\end{bmatrix}\\[4pt]&=\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}\end{aligned}$$
 
-$$A^{-1}A=\begin{bmatrix}-1&1&0\\-1&0&1\\6&-2&-3\end{bmatrix}\begin{bmatrix}2&3&1\\3&3&1\\2&4&1\end{bmatrix}=\begin{bmatrix}-1(2)+1(3)+0(2)&-1(3)+1(3)+0(4)&-1(1)+1(1)+0(1)\\-1(2)+0(3)+1(2)&-1(3)+0(3)+1(4)&-1(1)+0(1)+1(1)\\6(2)+(-2)(3)+(-3)(2)&6(3)+(-2)(3)+(-3)(4)&6(1)+(-2)(1)+(-3)(1)\end{bmatrix}=\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}$$
+$$\begin{aligned}A^{-1}A&=\begin{bmatrix}-1&1&0\\-1&0&1\\6&-2&-3\end{bmatrix}\begin{bmatrix}2&3&1\\3&3&1\\2&4&1\end{bmatrix}\\[4pt]&=\begin{bmatrix}-1(2)+1(3)+0(2)&-1(3)+1(3)+0(4)&-1(1)+1(1)+0(1)\\-1(2)+0(3)+1(2)&-1(3)+0(3)+1(4)&-1(1)+0(1)+1(1)\\6(2)+(-2)(3)+(-3)(2)&6(3)+(-2)(3)+(-3)(4)&6(1)+(-2)(1)+(-3)(1)\end{bmatrix}\\[4pt]&=\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}\end{aligned}$$
 
 {{< fillin
   question="Find the multiplicative inverse of $A=\begin{bmatrix}2&-17&11\\-1&11&-7\\0&3&-2\end{bmatrix}$. Enter the first row of $A^{-1}$ as a comma-separated list of three numbers, left to right."
   answer="1, 1, 2"
+  answerForm="decimal"
   answerDisplay="$1,\ 1,\ 2$"
   hint="Augment $A$ with the identity matrix and use row operations until the identity appears on the left; the matrix that appears on the right is $A^{-1}$."
 >}}
@@ -413,7 +415,7 @@ $$\begin{bmatrix}3&8\\4&11\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{b
 
 First, we need to calculate $A^{-1}$. Using the formula to calculate the inverse of a $2\times2$ matrix, we have:
 
-$$A^{-1}=\tfrac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}=\tfrac{1}{3(11)-8(4)}\begin{bmatrix}11&-8\\-4&3\end{bmatrix}=\tfrac{1}{1}\begin{bmatrix}11&-8\\-4&3\end{bmatrix}$$
+$$\begin{aligned}A^{-1}&=\tfrac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\\[4pt]&=\tfrac{1}{3(11)-8(4)}\begin{bmatrix}11&-8\\-4&3\end{bmatrix}\\[4pt]&=\tfrac{1}{1}\begin{bmatrix}11&-8\\-4&3\end{bmatrix}\end{aligned}$$
 
 So,
 
@@ -468,27 +470,27 @@ $$\left[\begin{array}{ccc|ccc}5&15&56&1&0&0\\-4&-11&-41&0&1&0\\-1&-3&-11&0&0&1\e
 
 Multiply row 1 by $\tfrac{1}{5}$.
 
-$$\left[\begin{array}{ccc|ccc}1&3&\tfrac{56}{5}&\tfrac{1}{5}&0&0\\-4&-11&-41&0&1&0\\-1&-3&-11&0&0&1\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}1&3&\tfrac{56}{5}&\tfrac{1}{5}&0&0\\[6pt]-4&-11&-41&0&1&0\\[6pt]-1&-3&-11&0&0&1\end{array}\right]$$
 
 Multiply row 1 by $4$ and add to row 2.
 
-$$\left[\begin{array}{ccc|ccc}1&3&\tfrac{56}{5}&\tfrac{1}{5}&0&0\\0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\-1&-3&-11&0&0&1\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}1&3&\tfrac{56}{5}&\tfrac{1}{5}&0&0\\[6pt]0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\[6pt]-1&-3&-11&0&0&1\end{array}\right]$$
 
 Add row 1 to row 3.
 
-$$\left[\begin{array}{ccc|ccc}1&3&\tfrac{56}{5}&\tfrac{1}{5}&0&0\\0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\0&0&\tfrac{1}{5}&\tfrac{1}{5}&0&1\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}1&3&\tfrac{56}{5}&\tfrac{1}{5}&0&0\\[6pt]0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\[6pt]0&0&\tfrac{1}{5}&\tfrac{1}{5}&0&1\end{array}\right]$$
 
 Multiply row 2 by $-3$ and add to row 1.
 
-$$\left[\begin{array}{ccc|ccc}1&0&-\tfrac{1}{5}&-\tfrac{11}{5}&-3&0\\0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\0&0&\tfrac{1}{5}&\tfrac{1}{5}&0&1\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}1&0&-\tfrac{1}{5}&-\tfrac{11}{5}&-3&0\\[6pt]0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\[6pt]0&0&\tfrac{1}{5}&\tfrac{1}{5}&0&1\end{array}\right]$$
 
 Multiply row 3 by $5$.
 
-$$\left[\begin{array}{ccc|ccc}1&0&-\tfrac{1}{5}&-\tfrac{11}{5}&-3&0\\0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\0&0&1&1&0&5\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}1&0&-\tfrac{1}{5}&-\tfrac{11}{5}&-3&0\\[6pt]0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\[6pt]0&0&1&1&0&5\end{array}\right]$$
 
 Multiply row 3 by $\tfrac{1}{5}$ and add to row 1.
 
-$$\left[\begin{array}{ccc|ccc}1&0&0&-2&-3&1\\0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\0&0&1&1&0&5\end{array}\right]$$
+$$\left[\begin{array}{ccc|ccc}1&0&0&-2&-3&1\\[6pt]0&1&\tfrac{19}{5}&\tfrac{4}{5}&1&0\\[6pt]0&0&1&1&0&5\end{array}\right]$$
 
 Multiply row 3 by $-\tfrac{19}{5}$ and add to row 2.
 
@@ -511,6 +513,7 @@ The solution is $(1,2,0)$.
 {{< fillin
   question="Solve the system $\begin{cases}2x-17y+11z=0\\-x+11y-7z=8\\3y-2z=-2\end{cases}$ using the inverse of the coefficient matrix. Enter the solution as an ordered triple $(x,y,z)$."
   answer="(4,38,58)"
+  answerForm="decimal"
   answerDisplay="$(4,38,58)$"
   hint="Write the system as $AX=B$, find $A^{-1}$ (the same coefficient matrix you inverted in the previous problem), then compute $X=A^{-1}B$."
 >}}
@@ -523,7 +526,7 @@ The solution is $(1,2,0)$.
   3. If the coefficient matrix is invertible, the calculator will present the solution matrix; if the coefficient matrix is not invertible, the calculator will present an error message.
 {{< /callout >}}
 
-**Example.** Solve the system of equations with matrix inverses using a calculator
+**Example.** Solve the system of equations with matrix inverses using a calculator.
 
 $$
 \begin{array}{lrcl}
@@ -570,23 +573,25 @@ $$\begin{bmatrix}-59\\-34\\252\end{bmatrix}$$
 {{< multiplechoice
   question="Can a $2\times2$ matrix with zeros on its diagonal have a multiplicative inverse?"
   answer="Yes — for example, $\begin{bmatrix}0&1\\1&0\end{bmatrix}$ has inverse $\begin{bmatrix}0&1\\1&0\end{bmatrix}$."
-  hint="Test the formula $A^{-1}=\tfrac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$ on a specific matrix with $a=d=0$ — it does not force $ad-bc=0$ by itself."
+  hint="An inverse exists exactly when $ad-bc\neq0$; work out what $ad-bc$ becomes when $a=d=0$."
 >}}
 Yes — for example, $\begin{bmatrix}0&1\\1&0\end{bmatrix}$ has inverse $\begin{bmatrix}0&1\\1&0\end{bmatrix}$.
 No — a matrix with zeros on the diagonal never has an inverse.
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the multiplicative inverse of $\begin{bmatrix}3&-2\\1&9\end{bmatrix}$, if it exists. Enter the first row of the inverse as a comma-separated list of two numbers, left to right."
-  answer="9/29, 2/29"
+  question="Find the multiplicative inverse of $\begin{bmatrix}3&-2\\1&9\end{bmatrix}$, if it exists. Enter the first row of the inverse as a comma-separated list of two numbers, left to right, each in lowest terms."
+  answer="\frac{9}{29},\frac{2}{29}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{9}{29}, \tfrac{2}{29}$"
   hint="Compute $ad-bc$, then apply $A^{-1}=\tfrac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$."
 >}}
 
 {{< fillin
-  question="Find the multiplicative inverse of $\begin{bmatrix}1&9&-3\\2&5&6\\4&-2&7\end{bmatrix}$, if it exists. Enter the first row of the inverse as a comma-separated list of three numbers, left to right."
-  answer="47/209, -57/209, 69/209"
-  answerDisplay="$\tfrac{47}{209}, -\tfrac{57}{209}, \tfrac{69}{209}$"
+  question="Find the multiplicative inverse of $\begin{bmatrix}1&9&-3\\2&5&6\\4&-2&7\end{bmatrix}$, if it exists. Enter the first row of the inverse as a comma-separated list of three numbers, left to right, each in lowest terms."
+  answer="\frac{47}{209},-\frac{3}{11},\frac{69}{209}"
+  answerForm="lowest-terms"
+  answerDisplay="$\tfrac{47}{209}, -\tfrac{3}{11}, \tfrac{69}{209}$"
   hint="Augment the matrix with the identity and use row operations until the identity appears on the left; the matrix that appears on the right is the inverse."
 >}}
 
@@ -595,13 +600,15 @@ No — a matrix with zeros on the diagonal never has an inverse.
 {{< fillin
   question="Solve the system $\begin{cases}5x-6y=-61\\4x+3y=-2\end{cases}$ using the inverse of the coefficient matrix. Enter the solution as an ordered pair $(x,y)$."
   answer="(-5,6)"
+  answerForm="decimal"
   answerDisplay="$(-5,6)$"
   hint="Write the system as $AX=B$, find $A^{-1}$ with the $2\times2$ inverse formula, then compute $X=A^{-1}B$."
 >}}
 
 {{< fillin
   question="Solve the system $\begin{cases}-3x-4y=9\\12x+4y=-6\end{cases}$ using the inverse of the coefficient matrix. Enter the solution as an ordered pair $(x,y)$."
-  answer="(1/3,-5/2)"
+  answer="\left(\frac{1}{3},-\frac{5}{2}\right)"
+  answerForm="lowest-terms"
   answerDisplay="$\left(\tfrac{1}{3},-\tfrac{5}{2}\right)$"
   hint="Write the system as $AX=B$, find $A^{-1}$ with the $2\times2$ inverse formula, then compute $X=A^{-1}B$."
 >}}
@@ -609,13 +616,15 @@ No — a matrix with zeros on the diagonal never has an inverse.
 {{< fillin
   question="Solve the system $\begin{cases}6x-5y-z=31\\-x+2y+z=-6\\3x+3y+2z=13\end{cases}$ using the inverse of the coefficient matrix. Enter the solution as an ordered triple $(x,y,z)$."
   answer="(5,0,-1)"
+  answerForm="decimal"
   answerDisplay="$(5,0,-1)$"
   hint="Write the system as $AX=B$, find $A^{-1}$ by augmenting with the identity matrix, then compute $X=A^{-1}B$."
 >}}
 
 {{< fillin
   question="Solve the system $\begin{cases}3x-2y+5z=21\\5x+4y=37\\x-2y-5z=5\end{cases}$ using the inverse of the coefficient matrix. Enter the solution as an ordered triple $(x,y,z)$."
-  answer="(7,1/2,1/5)"
+  answer="\left(7,\frac{1}{2},\frac{1}{5}\right)"
+  answerForm="lowest-terms"
   answerDisplay="$\left(7,\tfrac{1}{2},\tfrac{1}{5}\right)$"
   hint="Write the system as $AX=B$, find $A^{-1}$ by augmenting with the identity matrix, then compute $X=A^{-1}B$."
 >}}
@@ -623,10 +632,11 @@ No — a matrix with zeros on the diagonal never has an inverse.
 {{< fillin
   question="Three roommates shared a package of $12$ ice cream bars. Micah ate twice as many bars as Joe, and Albert ate three fewer bars than Micah. Letting $m$, $j$, and $a$ be the numbers of bars Micah, Joe, and Albert ate, solve the system $\begin{cases}m+j+a=12\\m-2j=0\\-m+a=-3\end{cases}$ using the inverse of the coefficient matrix. Enter the solution as an ordered triple $(m,j,a)$."
   answer="(6,3,3)"
+  answerForm="decimal"
   answerDisplay="$(6,3,3)$"
   hint="Write the system as $AX=B$ with $X=\begin{bmatrix}m\\j\\a\end{bmatrix}$, find $A^{-1}$, then compute $X=A^{-1}B$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.7: Solving Systems with Inverses](https://openstax.org/books/precalculus-2e/pages/9-7-solving-systems-with-inverses) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1"/"Objective 2" review of evaluating $2\times2$ and $3\times3$ determinants, keyed to Intermediate Algebra 4.6) — the same prepended-block pattern recurring in §§4.3–4.8 and §9.5; this section joins that list. Omitted the "Access these online resources" media links. **The grader cannot take a matrix-shaped answer** (the MathLive matrix-entry path is menu-only and untested for learners), so — following house precedent from Intermediate Algebra 4.5 and this book's §9.5 — every retained Try It and every Practice item whose source answer is a full matrix inverse is re-posed as a row-entry fill-in ("enter the first/second row… as a comma-separated list"), with each fraction entry keyed as the cofactor-over-determinant fraction a learner's own computation produces (entries are graded by value, so an equal reduced or unreduced spelling also passes, and the source's factored-scalar spelling, e.g. $\tfrac{1}{69}\begin{bmatrix}\cdots\end{bmatrix}$, is not required). Every "show that $A$ and $B$ are inverses of each other" ask became a Yes/No multiple choice, since verifying an equality is a categorical outcome, not a number; the diagonal-zeros verbal exercise became a multiple choice for the same reason, offering the source's own example matrix as the "yes" option. Every solved system's variables and equations are inlined directly into the `question` string as $\begin{cases}\ldots\end{cases}$, and every solution is keyed as an ordered pair or triple with the format stated in the question. Eight selected end-of-section exercises were adapted into interactive Practice components (one verbal, two inverse computations, five system solves including one real-world scenario), every one independently re-derived by computing exact-rational matrix inverses and products in Node rather than read off the source key. **One confirmed upstream defect.** The worked Example "Finding the Inverse of the Matrix, If It Exists" ($A=\begin{bmatrix}3&6\\1&2\end{bmatrix}$) prints its "switch row 1 and row 2" step and the augmented matrices that follow with an internal arithmetic inconsistency (row 1 becomes $\begin{bmatrix}1&3\end{bmatrix}$ rather than the correct swap $\begin{bmatrix}1&2\end{bmatrix}$, and neither printed matrix follows from the other by the stated row operation) — the augmented matrices shown on this page are the correct row reduction instead, with a visible source note beside the correction; the example's conclusion ("this matrix has no inverse," since $\det A=0$) is unaffected and is the source's own final sentence.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.7: Solving Systems with Inverses](https://openstax.org/books/precalculus-2e/pages/9-7-solving-systems-with-inverses) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1"/"Objective 2" review of evaluating $2\times2$ and $3\times3$ determinants, keyed to Intermediate Algebra 4.6) — the same prepended-block pattern recurring in §§4.3–4.8 and §9.5; this section joins that list. Omitted the "Access these online resources" media links. **The grader cannot take a matrix-shaped answer** (the MathLive matrix-entry path is menu-only and untested for learners), so — following house precedent from Intermediate Algebra 4.5 and this book's §9.5 — every retained Try It and every Practice item whose source answer is a full matrix inverse is re-posed as a row-entry fill-in ("enter the first/second row… as a comma-separated list"), with each fraction entry asked for and keyed in lowest terms — the source prints those inverses with a factored-out scalar ($\tfrac{1}{29}$, $\tfrac{1}{209}$), so the $3\times3$ inverse's first-row entry $-\tfrac{57}{209}$ is keyed as $-\tfrac{3}{11}$. The $3\times3$ inverse example's first row swap, which the source marks with a bare arrow, is labelled $R_1\leftrightarrow R_2$. Every "show that $A$ and $B$ are inverses of each other" ask became a Yes/No multiple choice, since verifying an equality is a categorical outcome, not a number; the diagonal-zeros verbal exercise became a multiple choice for the same reason, offering the source's own example matrix as the "yes" option. Every solved system's variables and equations are inlined directly into the `question` string as $\begin{cases}\ldots\end{cases}$, and every solution is keyed as an ordered pair or triple with the format stated in the question. Eight selected end-of-section exercises were adapted into interactive Practice components (one verbal, two inverse computations, five system solves including one real-world scenario), every one independently re-derived by computing exact-rational matrix inverses and products in Node rather than read off the source key. **One confirmed upstream defect.** The worked Example "Finding the Inverse of the Matrix, If It Exists" ($A=\begin{bmatrix}3&6\\1&2\end{bmatrix}$) prints its "switch row 1 and row 2" step and the augmented matrices that follow with an internal arithmetic inconsistency (row 1 becomes $\begin{bmatrix}1&3\end{bmatrix}$ rather than the correct swap $\begin{bmatrix}1&2\end{bmatrix}$, and neither printed matrix follows from the other by the stated row operation) — the augmented matrices shown on this page are the correct row reduction instead, with a visible source note beside the correction; the example's conclusion ("this matrix has no inverse," since $\det A=0$) is unaffected and is the source's own final sentence.</small>

@@ -138,6 +138,7 @@ $$
 & 3x &=& A(x-1)+B(x+2) \\[4pt]
 & 3(-2) &=& A[(-2)-1]+B[(-2)+2] \\[4pt]
 & -6 &=& -3A+0 \\[4pt]
+& \tfrac{-6}{-3} &=& A \\[4pt]
 & 2 &=& A
 \end{array}
 $$
@@ -151,7 +152,7 @@ Although this method is not seen very often in textbooks, we present it here as 
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{x}{(x-3)(x-2)}$."
   answer="\frac{3}{x-3}-\frac{2}{x-2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{3}{x-3}-\tfrac{2}{x-2}$"
   hint="Write $\tfrac{A}{x-3}+\tfrac{B}{x-2}$, clear denominators to get $x=A(x-2)+B(x-3)$, then substitute $x=3$ and $x=2$ to solve for $A$ and $B$ directly."
 >}}
@@ -238,7 +239,7 @@ $$\tfrac{-x^2+2x+4}{x^3-4x^2+4x}=\tfrac{1}{x}-\tfrac{2}{x-2}+\tfrac{2}{(x-2)^2}$
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{6x-11}{(x-1)^2}$."
   answer="\frac{6}{x-1}-\frac{5}{(x-1)^2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{6}{x-1}-\tfrac{5}{(x-1)^2}$"
   hint="Write $\tfrac{A}{x-1}+\tfrac{B}{(x-1)^2}$, clear denominators to get $6x-11=A(x-1)+B$, then substitute $x=1$ to find $B$ and compare coefficients of $x$ to find $A$."
 >}}
@@ -258,7 +259,7 @@ So far, we have performed partial fraction decomposition with expressions that h
 {{< callout type="info" >}}
   **How to:** given a rational expression where the factors of the denominator are distinct, irreducible quadratic factors, decompose it.
 
-  1. Use variables such as $A$, $B$, or $C$ for the constant numerators over linear factors, and linear expressions such as $A_1x+B_1$, $A_2x+B_2$, etc., for the numerators of each quadratic factor in the denominator.
+  1. Use variables such as $A$, $B$, or $C$ for the constant numerators over linear factors, and linear expressions such as $A_1x+B_1$, $A_2x+B_2$, etc., for the numerators of each quadratic factor in the denominator: $\tfrac{P(x)}{Q(x)}=\tfrac{A}{ax+b}+\tfrac{A_1x+B_1}{a_1x^2+b_1x+c_1}+\tfrac{A_2x+B_2}{a_2x^2+b_2x+c_2}+\cdots+\tfrac{A_nx+B_n}{a_nx^2+b_nx+c_n}$.
   2. Multiply both sides of the equation by the common denominator to eliminate fractions.
   3. Expand the right side of the equation and collect like terms.
   4. Set coefficients of like terms from the left side of the equation equal to those on the right side to create a system of equations to solve for the numerators.
@@ -323,7 +324,12 @@ $$\tfrac{8x^2+12x-20}{(x+3)(x^2+x+2)}=\tfrac{2}{x+3}+\tfrac{6x-8}{x^2+x+2}$$
 
   Yes, we could have solved it by setting up a system of equations without solving for $A$ first. The expansion on the right would be:
 
-  $$8x^2+12x-20=(A+B)x^2+(A+3B+C)x+(2A+3C)$$
+  $$
+  \begin{array}{lrcl}
+  & 8x^2+12x-20 &=& Ax^2+Ax+2A+Bx^2+3Bx+Cx+3C \\[4pt]
+  & 8x^2+12x-20 &=& (A+B)x^2+(A+3B+C)x+(2A+3C)
+  \end{array}
+  $$
 
   So the system of equations would be:
 
@@ -339,7 +345,7 @@ $$\tfrac{8x^2+12x-20}{(x+3)(x^2+x+2)}=\tfrac{2}{x+3}+\tfrac{6x-8}{x^2+x+2}$$
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{5x^2-6x+7}{(x-1)(x^2+1)}$."
   answer="\frac{3}{x-1}+\frac{2x-4}{x^2+1}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{3}{x-1}+\tfrac{2x-4}{x^2+1}$"
   hint="Write $\tfrac{A}{x-1}+\tfrac{Bx+C}{x^2+1}$, substitute $x=1$ into the cleared equation to find $A$ directly, then expand and compare coefficients for $B$ and $C$."
 >}}
@@ -359,7 +365,7 @@ Now that we can decompose a simplified rational expression with an irreducible q
 {{< callout type="info" >}}
   **How to:** given a rational expression that has a repeated irreducible quadratic factor, decompose it.
 
-  1. Use variables like $A$, $B$, or $C$ for the constant numerators over linear factors, and linear expressions such as $A_1x+B_1$, $A_2x+B_2$, etc., for the numerators of each quadratic factor in the denominator, written in increasing powers.
+  1. Use variables like $A$, $B$, or $C$ for the constant numerators over linear factors, and linear expressions such as $A_1x+B_1$, $A_2x+B_2$, etc., for the numerators of each quadratic factor in the denominator, written in increasing powers: $\tfrac{P(x)}{Q(x)}=\tfrac{A}{ax+b}+\tfrac{A_1x+B_1}{ax^2+bx+c}+\tfrac{A_2x+B_2}{(ax^2+bx+c)^2}+\cdots+\tfrac{A_nx+B_n}{(ax^2+bx+c)^n}$.
   2. Multiply both sides of the equation by the common denominator to eliminate fractions.
   3. Expand the right side of the equation and collect like terms.
   4. Set coefficients of like terms from the left side of the equation equal to those on the right side to create a system of equations to solve for the numerators.
@@ -434,7 +440,7 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{x^3-4x^2+9x-5}{(x^2-2x+3)^2}$."
   answer="\frac{x-2}{x^2-2x+3}+\frac{2x+1}{(x^2-2x+3)^2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{x-2}{x^2-2x+3}+\tfrac{2x+1}{(x^2-2x+3)^2}$"
   hint="Write $\tfrac{Ax+B}{x^2-2x+3}+\tfrac{Cx+D}{(x^2-2x+3)^2}$, clear denominators, expand, and compare coefficients of like powers of $x$."
 >}}
@@ -461,17 +467,17 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{3x-79}{x^2-5x-24}$."
   answer="\frac{8}{x+3}-\frac{5}{x-8}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{8}{x+3}-\tfrac{5}{x-8}$"
-  hint="Factor the denominator as $(x+3)(x-8)$, write $\tfrac{A}{x+3}+\tfrac{B}{x-8}$, then substitute $x=-3$ and $x=8$ into the cleared equation to solve for $A$ and $B$."
+  hint="Factor the denominator first (two numbers with product $-24$ and sum $-5$), put a constant numerator over each linear factor, clear denominators, then substitute each factor's zero to solve for $A$ and $B$."
 >}}
 
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{5x}{x^2-9}$."
   answer="\frac{5}{2(x+3)}+\frac{5}{2(x-3)}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{5}{2(x+3)}+\tfrac{5}{2(x-3)}$"
-  hint="Factor the denominator as $(x+3)(x-3)$, write $\tfrac{A}{x+3}+\tfrac{B}{x-3}$, then substitute $x=-3$ and $x=3$ into the cleared equation to solve for $A$ and $B$."
+  hint="Factor the denominator as a difference of squares, put a constant numerator over each linear factor, clear denominators, then substitute each factor's zero to solve for $A$ and $B$."
 >}}
 
 ### Decompose $\tfrac{P(x)}{Q(x)}$, where $Q(x)$ has repeated linear factors
@@ -479,7 +485,7 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{x}{(x-2)^2}$."
   answer="\frac{1}{x-2}+\frac{2}{(x-2)^2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{1}{x-2}+\tfrac{2}{(x-2)^2}$"
   hint="Write $\tfrac{A}{x-2}+\tfrac{B}{(x-2)^2}$, clear denominators to get $x=A(x-2)+B$, then substitute $x=2$ to find $B$ and compare coefficients of $x$ to find $A$."
 >}}
@@ -487,7 +493,7 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{-24x-27}{(4x+5)^2}$."
   answer="-\frac{6}{4x+5}+\frac{3}{(4x+5)^2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$-\tfrac{6}{4x+5}+\tfrac{3}{(4x+5)^2}$"
   hint="Write $\tfrac{A}{4x+5}+\tfrac{B}{(4x+5)^2}$, clear denominators to get $-24x-27=A(4x+5)+B$, then substitute $x=-\tfrac{5}{4}$ to find $B$ and compare coefficients of $x$ to find $A$."
 >}}
@@ -497,7 +503,7 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{4x^2+6x+11}{(x+2)(x^2+x+3)}$."
   answer="\frac{x+1}{x^2+x+3}+\frac{3}{x+2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{x+1}{x^2+x+3}+\tfrac{3}{x+2}$"
   hint="Write $\tfrac{A}{x+2}+\tfrac{Bx+C}{x^2+x+3}$, substitute $x=-2$ into the cleared equation to find $A$ directly, then expand and compare coefficients for $B$ and $C$."
 >}}
@@ -505,9 +511,9 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{4x^2+5x+3}{x^3-1}$."
   answer="\frac{1}{x^2+x+1}+\frac{4}{x-1}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{1}{x^2+x+1}+\tfrac{4}{x-1}$"
-  hint="Factor $x^3-1$ as $(x-1)(x^2+x+1)$, write $\tfrac{A}{x-1}+\tfrac{Bx+C}{x^2+x+1}$, substitute $x=1$ to find $A$ directly, then compare coefficients for $B$ and $C$."
+  hint="Factor the denominator as a difference of cubes, put a constant $A$ over the linear factor and $Bx+C$ over the quadratic factor, substitute the linear factor's zero into the cleared equation to find $A$, then compare coefficients for $B$ and $C$."
 >}}
 
 ### Decompose $\tfrac{P(x)}{Q(x)}$, where $Q(x)$ has a repeated irreducible quadratic factor
@@ -515,7 +521,7 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{x^3+6x^2+5x+9}{(x^2+1)^2}$."
   answer="\frac{x+6}{x^2+1}+\frac{4x+3}{(x^2+1)^2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{x+6}{x^2+1}+\tfrac{4x+3}{(x^2+1)^2}$"
   hint="Write $\tfrac{Ax+B}{x^2+1}+\tfrac{Cx+D}{(x^2+1)^2}$, clear denominators, expand, and compare coefficients of like powers of $x$."
 >}}
@@ -523,11 +529,11 @@ $$\tfrac{x^4+x^3+x^2-x+1}{x(x^2+1)^2}=\tfrac{1}{x}+\tfrac{1}{x^2+1}-\tfrac{x+2}{
 {{< fillin
   question="Find the partial fraction decomposition of $\tfrac{x^2+25}{(x^2+3x+25)^2}$."
   answer="\frac{1}{x^2+3x+25}-\frac{3x}{(x^2+3x+25)^2}"
-  answerForm="expanded"
+  answerForm="expanded no-like-terms"
   answerDisplay="$\tfrac{1}{x^2+3x+25}-\tfrac{3x}{(x^2+3x+25)^2}$"
   hint="Write $\tfrac{Ax+B}{x^2+3x+25}+\tfrac{Cx+D}{(x^2+3x+25)^2}$, clear denominators, expand, and compare coefficients of like powers of $x$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.4: Partial Fractions](https://openstax.org/books/precalculus-2e/pages/9-4-partial-fractions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: the pinned CNXML module (m49432) opens with a nested "coreq-skills" section — a least-common-denominator refresher (IA 7.2.3) and a solving-by-elimination refresher (IA 4.1.4), each with its own worked example and fill-in-the-blank practice table, plus an LCD-addition walkthrough and an unworked A/(x+4)+B/(x+6) teaser table — that is absent from the printed Precalculus 2e book entirely (page 937/PDF index 947 goes directly from the section's Learning Objectives to "Earlier in this chapter, we studied systems…"); that whole block belongs to a different collection sharing this module (compare the chapter's Review Exercises/Practice Test convention) and is omitted here as out of scope for this section, the same way section 9.8's appended chapter-level material is. Omitted the section's three Media links to external partial-fraction tutorials, which carry no transcribable mathematics. Every source "Try It" became a real graded fillin. **The grader proves a partial-fraction decomposition equal to the single rational expression it decomposes** — retyping the printed $\tfrac{3x}{(x+2)(x-1)}$ grades `correct` against a keyed $\tfrac{2}{x+2}+\tfrac{1}{x-1}$ with no restriction declared — so every decomposition fillin here (all four Try Its and all eight Practice items) declares `answerForm="expanded"`; this was confirmed directly against the real grader for every item shipped, both the key self-grading `correct` under the declared form and a retype of the item's own printed rational expression grading `form` rather than `correct`. Eight end-of-section exercises were adapted into interactive Practice components, two per objective, one group per objective in objectives order; every decomposition was independently re-derived (verified by clearing denominators and comparing coefficients by hand, then cross-checked by evaluating both sides as exact rational-number identities at more than a dozen sample points in Node, run rather than estimated) rather than read off the source Answer Key. Two candidate exercises from the "repeated irreducible quadratic factor" exercise group were passed over for a different item from the same group instead: the printed denominators $(x+2)^2$ and $(x^2-x)^2$ factor into **repeated linear**, not irreducible-quadratic, factors, so despite each carrying a correct printed Answer Key solution they do not illustrate the objective their exercise group is filed under; the two Practice items drawn from that group instead have genuinely irreducible quadratic denominators.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.4: Partial Fractions](https://openstax.org/books/precalculus-2e/pages/9-4-partial-fractions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: the pinned CNXML module (m49432) opens with a "coreq-skills" section — a least-common-denominator refresher (IA 7.2.3), a solving-by-elimination refresher (IA 4.1.4), an LCD-addition walkthrough, and an unworked $\tfrac{A}{x+4}+\tfrac{B}{x+6}$ table — that the printed Precalculus 2e section does not carry; it is omitted, as on the other chapter-9 pages. Omitted the section's three Media links to external partial-fraction tutorials. Two source typos are corrected: in the expansion of the nonrepeated-irreducible-quadratic example (and of the Q&A that follows it) the source prints $3B$ where $(Bx+C)(x+3)$ gives $3Bx$, and in the repeated-irreducible-quadratic How To the last numerator is printed $A_n+B_n$ for $A_nx+B_n$. Every source Try It became a graded fill-in. The grader proves a decomposition equal to the fraction it decomposes, so every decomposition fill-in (the four Try Its and the eight Practice items) declares `answerForm="expanded no-like-terms"`, which refuses the retyped printed fraction, in either denominator form, and a decomposition with numeral arithmetic left in a numerator. Eight end-of-section exercises with printed answers were adapted into the Practice block, two per objective.</small>

@@ -39,7 +39,7 @@ A determinant is a real number that can be very useful in mathematics because it
 {{< /callout >}}
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A mnemonic diagram for the determinant of a 2 by 2 matrix with entries a, b in the top row and c, d in the bottom row: a solid arrow runs from a down to d labeled the product ad, and a dashed arrow runs from c up to b labeled the product minus c b.","unit":80,"texts":[{"at":[0,1],"text":"a","dx":-16,"dy":-8},{"at":[1,1],"text":"b","dx":16,"dy":-8},{"at":[0,0],"text":"c","dx":-16,"dy":12},{"at":[1,0],"text":"d","dx":16,"dy":12},{"at":[0.5,1.28],"text":"ad"},{"at":[0.5,-0.32],"text":"−cb"}],"segments":[{"from":[0,1],"to":[1,0],"arrow":true},{"from":[0,0],"to":[1,1],"arrow":true,"dashed":true}]}
+{"ariaLabel":"A mnemonic for the determinant of a 2-by-2 matrix: det(A) = followed by the entries a, b (top row) and c, d (bottom row) between two vertical bars, then = ad − cb. A solid arrow runs down from a to d and a dashed arrow runs up from c to b.","unit":56,"texts":[{"at":[0,1],"text":"a","anchor":"middle"},{"at":[1,1],"text":"b","anchor":"middle"},{"at":[0,0],"text":"c","anchor":"middle"},{"at":[1,0],"text":"d","anchor":"middle"},{"at":[-0.6,0.5],"text":"det(A) =","anchor":"end"},{"at":[1.6,0.5],"text":"= ad − cb","anchor":"start"}],"segments":[{"from":[-0.3,-0.35],"to":[-0.3,1.35]},{"from":[1.3,-0.35],"to":[1.3,1.35]},{"from":[0.18,0.82],"to":[0.86,0.14],"arrow":true},{"from":[0.18,0.18],"to":[0.86,0.86],"arrow":true,"dashed":true}]}
 {{< /apfigure >}}
 
 **Example.** Find the determinant of the given matrix.
@@ -59,9 +59,9 @@ Cramer's Rule will give us the unique solution to a system of equations, if it e
 To understand Cramer's Rule, let's look closely at how we solve systems of linear equations using basic row operations. Consider a system of two equations in two variables.
 
 $$
-\begin{array}{lrcl}
-& a_1x+b_1y &=& c_1 \\[4pt]
-& a_2x+b_2y &=& c_2
+\begin{array}{rcll}
+a_1x+b_1y &=& c_1 & \quad(1) \\[4pt]
+a_2x+b_2y &=& c_2 & \quad(2)
 \end{array}
 $$
 
@@ -70,7 +70,7 @@ We eliminate one variable using row operations and solve for the other. Say that
 $$
 \begin{array}{lrcl}
 \text{Multiply }R_1\text{ by }b_2. & b_2a_1x+b_2b_1y &=& b_2c_1 \\[4pt]
-\text{Multiply }R_2\text{ by }-b_1. & -b_1a_2x-b_1b_2y &=& -b_1c_2 \\[4pt]
+\text{Multiply }R_2\text{ by }{-b_1}. & -b_1a_2x-b_1b_2y &=& -b_1c_2 \\[4pt]
 \text{Add.} & b_2a_1x-b_1a_2x &=& b_2c_1-b_1c_2
 \end{array}
 $$
@@ -91,7 +91,7 @@ Similarly, to solve for $y$, we will eliminate $x$.
 $$
 \begin{array}{lrcl}
 \text{Multiply }R_1\text{ by }a_2. & a_2a_1x+a_2b_1y &=& a_2c_1 \\[4pt]
-\text{Multiply }R_2\text{ by }-a_1. & -a_1a_2x-a_1b_2y &=& -a_1c_2 \\[4pt]
+\text{Multiply }R_2\text{ by }{-a_1}. & -a_1a_2x-a_1b_2y &=& -a_1c_2 \\[4pt]
 \text{Add.} & a_2b_1y-a_1b_2y &=& a_2c_1-a_1c_2
 \end{array}
 $$
@@ -153,8 +153,9 @@ The solution is $(2,-3)$.
 {{< fillin
   question="Use Cramer's Rule to solve the $2\times2$ system of equations. $\begin{cases}x+2y=-11\\-2x+y=-13\end{cases}$ Enter the solution as an ordered pair $(x,y)$."
   answer="(3,-7)"
+  answerForm="decimal"
   answerDisplay="$(3,-7)$"
-  hint="Evaluate $D=\begin{vmatrix}1&2\\-2&1\end{vmatrix}$, $D_x=\begin{vmatrix}-11&2\\-13&1\end{vmatrix}$, and $D_y=\begin{vmatrix}1&-11\\-2&-13\end{vmatrix}$, then form $x=D_x/D$ and $y=D_y/D$."
+  hint="Find $D$ from the coefficient columns. For $D_x$, replace the $x$-column with the constants; for $D_y$, replace the $y$-column. Then divide each by $D$."
 >}}
 
 ### Evaluating the Determinant of a $3\times3$ Matrix
@@ -167,12 +168,12 @@ $$A=\begin{bmatrix}a_1&b_1&c_1\\a_2&b_2&c_2\\a_3&b_3&c_3\end{bmatrix}$$
 
 1. Augment $A$ with the first two columns.
 
-   $$\det(A)=\begin{vmatrix}a_1&b_1&c_1&a_1&b_1\\a_2&b_2&c_2&a_2&b_2\\a_3&b_3&c_3&a_3&b_3\end{vmatrix}$$
+   $$\det(A)=\left|\begin{array}{ccc|cc}a_1&b_1&c_1&a_1&b_1\\a_2&b_2&c_2&a_2&b_2\\a_3&b_3&c_3&a_3&b_3\end{array}\right|$$
 2. From upper left to lower right: Multiply the entries down the first diagonal. Add the result to the product of entries down the second diagonal. Add this result to the product of the entries down the third diagonal.
 3. From lower left to upper right: Subtract the product of entries up the first diagonal. From this result subtract the product of entries up the second diagonal. From this result, subtract the product of entries up the third diagonal.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"The 3-by-5 augmented determinant array, entries a1 through b3, between two vertical bars. Three solid diagonal arrows run down from the upper left through a1-b2-c3, b1-c2-a3, and c1-a2-b3 — the products that are added — and three dashed diagonal arrows run up from the lower left through a3-b2-c1, b3-c2-a1, and c3-a2-b1 — the products that are subtracted. Every arrow passes behind the entries it crosses.","unit":44,"texts":[{"at":[0,2],"text":"a₁","anchor":"middle"},{"at":[1,2],"text":"b₁","anchor":"middle"},{"at":[2,2],"text":"c₁","anchor":"middle"},{"at":[3,2],"text":"a₁","anchor":"middle"},{"at":[4,2],"text":"b₁","anchor":"middle"},{"at":[0,1],"text":"a₂","anchor":"middle"},{"at":[1,1],"text":"b₂","anchor":"middle"},{"at":[2,1],"text":"c₂","anchor":"middle"},{"at":[3,1],"text":"a₂","anchor":"middle"},{"at":[4,1],"text":"b₂","anchor":"middle"},{"at":[0,0],"text":"a₃","anchor":"middle"},{"at":[1,0],"text":"b₃","anchor":"middle"},{"at":[2,0],"text":"c₃","anchor":"middle"},{"at":[3,0],"text":"a₃","anchor":"middle"},{"at":[4,0],"text":"b₃","anchor":"middle"},{"at":[-1.7,1],"text":"det(A) =","anchor":"end"}],"segments":[{"from":[-0.55,-0.5],"to":[-0.55,2.6]},{"from":[4.55,-0.5],"to":[4.55,2.6]},{"from":[-0.35,2.45],"to":[2.35,-0.45],"gapTexts":true,"arrow":true},{"from":[0.65,2.45],"to":[3.35,-0.45],"gapTexts":true,"arrow":true},{"from":[1.65,2.45],"to":[4.35,-0.45],"gapTexts":true,"arrow":true},{"from":[-0.35,-0.45],"to":[2.35,2.45],"gapTexts":true,"arrow":true,"dashed":true},{"from":[0.65,-0.45],"to":[3.35,2.45],"gapTexts":true,"arrow":true,"dashed":true},{"from":[1.65,-0.45],"to":[4.35,2.45],"gapTexts":true,"arrow":true,"dashed":true}]}
+{"ariaLabel":"The 3-by-5 augmented determinant array after det(A) =, entries a1 through b3, between two vertical bars, with a third bar separating the matrix's three columns from the repeated first two. Three solid diagonal arrows run down from the upper left through a1-b2-c3, b1-c2-a3, and c1-a2-b3 — the products that are added — and three dashed diagonal arrows run up from the lower left through a3-b2-c1, b3-c2-a1, and c3-a2-b1 — the products that are subtracted. Every arrow passes behind the entries it crosses.","unit":44,"texts":[{"at":[0,2],"text":"a₁","anchor":"middle"},{"at":[1,2],"text":"b₁","anchor":"middle"},{"at":[2,2],"text":"c₁","anchor":"middle"},{"at":[3,2],"text":"a₁","anchor":"middle"},{"at":[4,2],"text":"b₁","anchor":"middle"},{"at":[0,1],"text":"a₂","anchor":"middle"},{"at":[1,1],"text":"b₂","anchor":"middle"},{"at":[2,1],"text":"c₂","anchor":"middle"},{"at":[3,1],"text":"a₂","anchor":"middle"},{"at":[4,1],"text":"b₂","anchor":"middle"},{"at":[0,0],"text":"a₃","anchor":"middle"},{"at":[1,0],"text":"b₃","anchor":"middle"},{"at":[2,0],"text":"c₃","anchor":"middle"},{"at":[3,0],"text":"a₃","anchor":"middle"},{"at":[4,0],"text":"b₃","anchor":"middle"},{"at":[-1.0,1],"text":"det(A) =","anchor":"end"}],"segments":[{"from":[-0.55,-0.5],"to":[-0.55,2.6]},{"from":[4.55,-0.5],"to":[4.55,2.6]},{"from":[2.5,-0.5],"to":[2.5,2.6]},{"from":[-0.35,2.45],"to":[2.35,-0.45],"gapTexts":true,"arrow":true},{"from":[0.65,2.45],"to":[3.35,-0.45],"gapTexts":true,"arrow":true},{"from":[1.65,2.45],"to":[4.35,-0.45],"gapTexts":true,"arrow":true},{"from":[-0.35,-0.45],"to":[2.35,2.45],"gapTexts":true,"arrow":true,"dashed":true},{"from":[0.65,-0.45],"to":[3.35,2.45],"gapTexts":true,"arrow":true,"dashed":true},{"from":[1.65,-0.45],"to":[4.35,2.45],"gapTexts":true,"arrow":true,"dashed":true}]}
 {{< /apfigure >}}
 
 The algebra is as follows:
@@ -185,7 +186,7 @@ $$A=\begin{bmatrix}0&2&1\\3&-1&1\\4&0&1\end{bmatrix}$$
 
 **Solution.** Augment the matrix with the first two columns and then follow the formula. Thus,
 
-$$\lvert A\rvert=\begin{vmatrix}0&2&1&0&2\\3&-1&1&3&-1\\4&0&1&4&0\end{vmatrix}$$
+$$\lvert A\rvert=\left|\begin{array}{rrr|rr}0&2&1&0&2\\3&-1&1&3&-1\\4&0&1&4&0\end{array}\right|$$
 
 $$
 \begin{array}{lrcl}
@@ -198,6 +199,7 @@ $$
 {{< fillin
   question="Find the determinant of the $3\times3$ matrix. $\det(A)=\begin{vmatrix}1&-3&7\\1&1&1\\1&-2&3\end{vmatrix}$"
   answer="-10"
+  answerForm="decimal"
   answerDisplay="$-10$"
   hint="Augment the matrix with its first two columns, then add the three down-diagonal products and subtract the three up-diagonal products."
 >}}
@@ -254,7 +256,8 @@ The solution is $(1,3,-2)$.
 
 {{< fillin
   question="Use Cramer's Rule to solve the $3\times3$ system of equations. $\begin{cases}x-3y+7z=13\\x+y+z=1\\x-2y+3z=4\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
-  answer="(-2,3/5,12/5)"
+  answer="(-2,\frac{3}{5},\frac{12}{5})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(-2,\tfrac{3}{5},\tfrac{12}{5}\right)$"
   hint="Evaluate $D$ using the coefficients of $x,y,z$, then $D_x$, $D_y$, $D_z$ by replacing one column of coefficients at a time with the constants $13,1,4$."
 >}}
@@ -283,7 +286,7 @@ $$
 We obtain the equation $0=-8$, which is false. Therefore, the system has no solution. Graphing the system reveals two parallel lines.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parallel lines on the xy-plane: y = 3/2 x, passing through the origin, and y = 3/2 x − 2, with a y-intercept of −2; both lines have the same slope and never intersect.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"lines":[{"slope":1.5,"intercept":0,"label":"y = 3/2 x"},{"slope":1.5,"intercept":-2,"label":"y = 3/2 x − 2"}]}
+{"ariaLabel":"Two parallel lines on the xy-plane: y = 3/2 x, passing through the origin, and y = 3/2 x − 2, with a y-intercept of −2; both lines have the same slope and never intersect.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"lines":[{"slope":1.5,"intercept":0,"label":"y = 3/2 x"},{"slope":1.5,"intercept":-2,"label":"y = 3/2 x − 2"}]}
 {{< /apfigure >}}
 
 **Example.** Solve the system with an infinite number of solutions.
@@ -292,7 +295,7 @@ $$\begin{cases}x-2y+3z=0 & (1)\\3x+y-2z=0 & (2)\\2x-4y+6z=0 & (3)\end{cases}$$
 
 **Solution.** Let's find the determinant first. Set up a matrix augmented by the first two columns.
 
-$$\begin{vmatrix}1&-2&3&1&-2\\3&1&-2&3&1\\2&-4&6&2&-4\end{vmatrix}$$
+$$\left|\begin{array}{rrr|rr}1&-2&3&1&-2\\3&1&-2&3&1\\2&-4&6&2&-4\end{array}\right|$$
 
 Then,
 
@@ -313,7 +316,7 @@ $$
 - Obtaining an answer of $0=0$, a statement that is always true, means that the system has an infinite number of solutions. Graphing the system, we can see that two of the planes are the same and they both intersect the third plane on a line.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Two translucent bands crossing in an X shape: one band carries both labels x − 2y + 3z = 0 and 2x − 4y + 6z = 0, since those two equations describe the same plane; the other band is labeled 3x + y − 2z = 0. A horizontal double-headed arrow spans the diamond where the bands overlap, marking the line of intersection along which every solution lies.","unit":46,"polygons":[{"points":[[-2.3,-1.6],[-0.9,-1.6],[2.3,1.6],[0.9,1.6]],"fill":true},{"points":[[0.9,-1.6],[2.3,-1.6],[-0.9,1.6],[-2.3,1.6]],"fill":true}],"segments":[{"from":[-1.05,0],"to":[1.05,0],"arrow":"both"}],"texts":[{"at":[2.45,1.45],"text":"3x + y − 2z = 0","anchor":"start"},{"at":[2.45,-1.2],"text":"x − 2y + 3z = 0","anchor":"start"},{"at":[2.45,-1.65],"text":"2x − 4y + 6z = 0","anchor":"start"}]}
+{"ariaLabel":"Two translucent bands crossing in an X shape: one band carries both labels x − 2y + 3z = 0 and 2x − 4y + 6z = 0, since those two equations describe the same plane; the other band is labeled 3x + y − 2z = 0. A horizontal double-headed arrow spans the diamond where the bands overlap, marking the line of intersection along which every solution lies.","unit":46,"polygons":[{"points":[[-2.3,-1.6],[-0.9,-1.6],[2.3,1.6],[0.9,1.6]],"fill":true},{"points":[[0.9,-1.6],[2.3,-1.6],[-0.9,1.6],[-2.3,1.6]],"fill":true}],"segments":[{"from":[-0.7,0],"to":[0.7,0],"arrow":"both"}],"texts":[{"at":[2.45,1.65],"text":"x − 2y + 3z = 0","anchor":"start"},{"at":[2.45,1.2],"text":"2x − 4y + 6z = 0","anchor":"start"},{"at":[2.45,-1.45],"text":"3x + y − 2z = 0","anchor":"start"}]}
 {{< /apfigure >}}
 
 *(Source note: the source's own version of this figure labels the second plane $3x+y+2z=0$, the sign-flipped spelling of the equation its example states as $3x+y-2z=0$ — a figure-label slip; the label above matches the example's printed system.)*
@@ -341,7 +344,7 @@ $$A=\begin{bmatrix}1&2&3\\0&2&1\\0&0&-1\end{bmatrix}$$
 
 Augment $A$ with the first two columns.
 
-$$A=\begin{vmatrix}1&2&3&1&2\\0&2&1&0&2\\0&0&-1&0&0\end{vmatrix}$$
+$$A=\left[\begin{array}{rrr|rr}1&2&3&1&2\\0&2&1&0&2\\0&0&-1&0&0\end{array}\right]$$
 
 Then
 
@@ -360,7 +363,7 @@ $$B=\begin{bmatrix}4&-3\\-1&5\end{bmatrix},\ \det(B)=(4)(5)-(-1)(-3)=20-3=17$$
 
 Property 3 states that if two rows or two columns are identical, the determinant equals zero.
 
-$$A=\begin{bmatrix}1&2&2\\2&2&2\\-1&2&2\end{bmatrix}\ \Rightarrow\ \begin{vmatrix}1&2&2&1&2\\2&2&2&2&2\\-1&2&2&-1&2\end{vmatrix}$$
+$$A=\begin{bmatrix}1&2&2\\2&2&2\\-1&2&2\end{bmatrix}\ \Rightarrow\ \left|\begin{array}{rrr|rr}1&2&2&1&2\\2&2&2&2&2\\-1&2&2&-1&2\end{array}\right|$$
 
 $$
 \begin{array}{lrcl}
@@ -423,22 +426,25 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix}2&-5\\-1&6\end{vmatrix}$."
   answer="7"
+  answerForm="decimal"
   answerDisplay="$7$"
-  hint="Subtract the product of the diagonals going the other way from the product of the main diagonal: $2(6)-(-1)(-5)$."
+  hint="Multiply the entries down the main diagonal, then subtract the product of the entries up the other diagonal. Watch the signs."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix}1&0\\3&-4\end{vmatrix}$."
   answer="-4"
+  answerForm="decimal"
   answerDisplay="$-4$"
-  hint="Subtract the products of the diagonals: $1(-4)-3(0)$."
+  hint="Use $ad-bc$: the main-diagonal product minus the other diagonal's product."
 >}}
 
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix}10&0.2\\5&0.1\end{vmatrix}$."
   answer="0"
+  answerForm="decimal"
   answerDisplay="$0$"
-  hint="Subtract the products of the diagonals: $10(0.1)-5(0.2)$."
+  hint="Use $ad-bc$, and keep track of the decimal places in each product."
 >}}
 
 ### Use Cramer's Rule to solve a system of equations in two variables
@@ -446,22 +452,25 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Solve the system of linear equations using Cramer's Rule. $\begin{cases}2x-3y=-1\\4x+5y=9\end{cases}$ Enter the solution as an ordered pair $(x,y)$."
   answer="(1,1)"
+  answerForm="decimal"
   answerDisplay="$(1,1)$"
-  hint="Evaluate $D=\begin{vmatrix}2&-3\\4&5\end{vmatrix}$, $D_x=\begin{vmatrix}-1&-3\\9&5\end{vmatrix}$, and $D_y=\begin{vmatrix}2&-1\\4&9\end{vmatrix}$, then form $x=D_x/D$ and $y=D_y/D$."
+  hint="Find $D$ from the coefficient columns, then $D_x$ and $D_y$ by replacing the $x$-column, then the $y$-column, with the constants. Divide each by $D$."
 >}}
 
 {{< fillin
   question="Solve the system of linear equations using Cramer's Rule. $\begin{cases}6x-3y=2\\-8x+9y=-1\end{cases}$ Enter the solution as an ordered pair $(x,y)$."
-  answer="(1/2,1/3)"
+  answer="(\frac{1}{2},\frac{1}{3})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(\tfrac{1}{2},\tfrac{1}{3}\right)$"
-  hint="Evaluate $D=\begin{vmatrix}6&-3\\-8&9\end{vmatrix}$, $D_x=\begin{vmatrix}2&-3\\-1&9\end{vmatrix}$, and $D_y=\begin{vmatrix}6&2\\-8&-1\end{vmatrix}$, then form $x=D_x/D$ and $y=D_y/D$."
+  hint="Form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$ by replacing one variable column at a time with the constants, and reduce each quotient to lowest terms."
 >}}
 
 {{< fillin
   question="Solve the system of linear equations using Cramer's Rule. $\begin{cases}4x+3y=23\\2x-y=-1\end{cases}$ Enter the solution as an ordered pair $(x,y)$."
   answer="(2,5)"
+  answerForm="decimal"
   answerDisplay="$(2,5)$"
-  hint="Evaluate $D=\begin{vmatrix}4&3\\2&-1\end{vmatrix}$, $D_x=\begin{vmatrix}23&3\\-1&-1\end{vmatrix}$, and $D_y=\begin{vmatrix}4&23\\2&-1\end{vmatrix}$, then form $x=D_x/D$ and $y=D_y/D$."
+  hint="Find $D$, $D_x$, and $D_y$ (the constants $23$ and $-1$ replace one variable column at a time), then divide. Watch the signs in each product."
 >}}
 
 ### Evaluate $3\times3$ determinants
@@ -469,6 +478,7 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix}-1&0&0\\0&1&0\\0&0&-3\end{vmatrix}$."
   answer="3"
+  answerForm="decimal"
   answerDisplay="$3$"
   hint="The matrix is diagonal, so the determinant is just the product of the entries on the main diagonal."
 >}}
@@ -476,6 +486,7 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix}-2&1&4\\-4&2&-8\\2&-8&-3\end{vmatrix}$."
   answer="224"
+  answerForm="decimal"
   answerDisplay="$224$"
   hint="Augment the matrix with its first two columns, then add the three down-diagonal products and subtract the three up-diagonal products."
 >}}
@@ -483,6 +494,7 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Evaluate the determinant $\begin{vmatrix}5&1&-1\\2&3&1\\3&-6&-3\end{vmatrix}$."
   answer="15"
+  answerForm="decimal"
   answerDisplay="$15$"
   hint="Augment the matrix with its first two columns, then add the three down-diagonal products and subtract the three up-diagonal products."
 >}}
@@ -492,6 +504,7 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Solve the system of linear equations using Cramer's Rule. $\begin{cases}x+2y-4z=-1\\7x+3y+5z=26\\-2x-6y+7z=-6\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
   answer="(1,3,2)"
+  answerForm="decimal"
   answerDisplay="$(1,3,2)$"
   hint="Evaluate $D$ using the coefficients of $x,y,z$, then $D_x,D_y,D_z$ by replacing one column at a time with the constants $-1,26,-6$."
 >}}
@@ -499,6 +512,7 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< fillin
   question="Solve the system of linear equations using Cramer's Rule. $\begin{cases}4x+5y-z=-7\\-2x-9y+2z=8\\5y+7z=21\end{cases}$ Enter the solution as an ordered triple $(x,y,z)$."
   answer="(-1,0,3)"
+  answerForm="decimal"
   answerDisplay="$(-1,0,3)$"
   hint="Evaluate $D$ using the coefficients of $x,y,z$ (the third equation has no $x$-term), then $D_x,D_y,D_z$ by replacing one column at a time with the constants $-7,8,21$."
 >}}
@@ -506,25 +520,32 @@ Obtaining a statement that is a contradiction means that the system has no solut
 {{< multiplechoice
   question="Solve the system using Cramer's Rule: $\begin{cases}4x-6y+8z=10\\-2x+3y-4z=-5\\x+y+z=1\end{cases}$ How many solutions does the system have?"
   answer="infinitely many solutions"
-  hint="Evaluate $D$ first; since $D=0$ here, use elimination on the system to decide between no solution and infinitely many."
+  hint="Evaluate $D$ first. If $D=0$, Cramer's Rule cannot finish the job: use elimination and see whether you reach a contradiction or an identity."
 >}}
 infinitely many solutions
 no solution
-$(1,1,1)$
 exactly one solution
 {{< /multiplechoice >}}
 
 ### Know the properties of determinants
 
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix}\tfrac{1}{2}&1&7&4\\0&\tfrac{1}{2}&100&5\\0&0&2&2{,}000\\0&0&0&2\end{vmatrix}$."
+  answer="1"
+  answerForm="decimal"
+  answerDisplay="$1$"
+  hint="Every entry below the main diagonal is $0$. Use the property of determinants for a matrix in upper triangular form."
+>}}
+
 {{< multiplechoice
   question="Which statement correctly explains why the determinant of a square matrix can always be evaluated?"
-  answer="A determinant is only a sum of products of the matrix's own entries, so it can always be computed — even when the result turns out to be $0$."
-  hint="Think about what the diagonal expansion actually does to the matrix's entries — it never requires dividing or testing them first."
+  answer="Because it only adds and subtracts products of the matrix's entries, which can always be computed, even when the result is $0$."
+  hint="Look at the $2\times2$ and $3\times3$ formulas: which operations do they perform on the entries?"
 >}}
-Because every square matrix has a nonzero determinant.
-A determinant is only a sum of products of the matrix's own entries, so it can always be computed — even when the result turns out to be $0$.
-Because a square matrix is always invertible.
-Because the determinant is defined only when every entry of the matrix is nonzero.
+Because every square matrix has a nonzero determinant, so the computation never ends in $0$.
+Because it only adds and subtracts products of the matrix's entries, which can always be computed, even when the result is $0$.
+Because every square matrix is invertible, and the determinant is read off from the inverse.
+Because the formula divides by the diagonal entries, and a square matrix never has a $0$ there.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -540,4 +561,4 @@ The inverse does not exist.
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.8: Solving Systems with Cramer's Rule](https://openstax.org/books/precalculus-2e/pages/9-8-solving-systems-with-cramers-rule) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1" review of using Cramer's Rule to solve a $2\times2$ system, keyed to Intermediate Algebra 4.6.3, complete with its own worked example and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 987 (true PDF index 997), where exercise 61 of the previous section's Real-World Applications runs directly into the "9.8 Solving Systems with Cramer's Rule" heading with no corequisite-skills material between them; the same prepended-block pattern recurs in §§4.3–4.8 and §§9.1–9.7, and this section joins that list. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. Recreated the $2\times2$ crossing-arrow mnemonic that illustrates $\det(A)=ad-bc$ (an uncaptioned inline diagram in the source, not one of its two numbered figures) as an accessible spec-first figure, and independently recomputed the source's own Figure 1 (two parallel lines, $y=\tfrac32x$ and $y=\tfrac32x-2$) from the printed system rather than tracing the source art. Recreated the source's two remaining diagrams as accessible spec-first figures: the Sarrus'-rule mnemonic for a $3\times3$ determinant (an uncaptioned inline diagram immediately following the augment-with-two-columns list) draws the three down-diagonal products as solid arrows and the three up-diagonal products as dashed arrows, each stroke passing behind the matrix-entry labels it crosses via the figure engine's gap-behind-text routing (added for this diagram); and the dependent-system plane diagram beside Example 6 (the source's Figure 2) draws the coincident pair and the distinct plane as two translucent crossing bands with a double-headed arrow along their line of intersection, monochrome like every figure in this book. That figure's green-plane label is printed in the source as $3x+y+2z=0$, the sign-flipped spelling of the equation the example itself states — a source defect — so the recreation labels the plane $3x+y-2z=0$ to match the example's printed system, with a visible Source note beside it. **The symbol $D$ is reserved by the grading engine**, so every determinant-value, Cramer's-rule, and properties-of-determinants question here keys a bare number or an ordered pair/triple — never a string containing $D$, $D_x$, $D_y$, or $D_z$ — while the prose and worked examples keep the source's own $D$/$D_x$/$D_y$/$D_z$ notation throughout, since KaTeX renders it and only submitted answers are restricted. Every retained Try It's system is inlined directly into the `question` string as $\begin{cases}\ldots\end{cases}$, and every solution is keyed as an ordered pair or triple with the format stated in the question; fraction-valued tuple members are keyed with a plain slash (e.g. `(1/2,1/3)`), matching this chapter's own §9.2 precedent, since the grader parses a bare slash between tuple members without the misreading that a juxtaposed factor would cause. The two "how many solutions" categorical outcomes (Example 6's infinite-solutions system and the matching Practice item) are posed as `multiplechoice`, never a `\text{…}` fill-in, following this chapter's own §9.1–§9.2 convention. The two Verbal exercises with a printed solution that is an explanation rather than a value ("explain why we can always evaluate the determinant of a square matrix" and "explain what it means in terms of an inverse for a matrix to have a $0$ determinant") are recast as `multiplechoice` items over the source's own printed explanations, since a free-form justification cannot be graded as a math expression; the Verbal exercise asking for a numeric answer with no printed solution in the Answer Key (explain the effect of swapping rows and scaling both on a $2\times2$ determinant of $3$) was not used, since its answer is not visibly present in the source key. Fourteen selected end-of-section exercises were adapted into interactive Practice components, one group per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.8: Solving Systems with Cramer's Rule](https://openstax.org/books/precalculus-2e/pages/9-8-solving-systems-with-cramers-rule) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1" review of using Cramer's Rule to solve a $2\times2$ system, keyed to Intermediate Algebra 4.6.3, complete with its own worked example and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 987 (true PDF index 997), where exercise 61 of the previous section's Real-World Applications runs directly into the "9.8 Solving Systems with Cramer's Rule" heading with no corequisite-skills material between them; the same prepended-block pattern recurs in §§4.3–4.8 and §§9.1–9.7, and this section joins that list. Omitted the "Access these online resources" media links. Recreated the $2\times2$ crossing-arrow mnemonic that illustrates $\det(A)=ad-bc$ (an uncaptioned inline diagram in the source, not one of its two numbered figures) as an accessible spec-first figure, its subtracted product's arrow dashed (both arrows are solid in the source) to match the $3\times3$ mnemonic below, and independently recomputed the source's own Figure 1 (two parallel lines, $y=\tfrac32x$ and $y=\tfrac32x-2$) from the printed system rather than tracing the source art. Recreated the source's two remaining diagrams as accessible spec-first figures: the Sarrus'-rule mnemonic for a $3\times3$ determinant (an uncaptioned inline diagram immediately following the augment-with-two-columns list) draws the three down-diagonal products as solid arrows and the three up-diagonal products as dashed arrows, each stroke passing behind the matrix-entry labels it crosses via the figure engine's gap-behind-text routing (added for this diagram); and the dependent-system plane diagram beside Example 6 (the source's Figure 2) draws the coincident pair and the distinct plane as two translucent crossing bands with a double-headed arrow along their line of intersection, monochrome like every figure in this book. That figure's green-plane label is printed in the source as $3x+y+2z=0$, the sign-flipped spelling of the equation the example itself states — a source defect — so the recreation labels the plane $3x+y-2z=0$ to match the example's printed system, with a visible Source note beside it. **The symbol $D$ is reserved by the grading engine**, so every determinant-value, Cramer's-rule, and properties-of-determinants question here keys a bare number or an ordered pair/triple — never a string containing $D$, $D_x$, $D_y$, or $D_z$ — while the prose and worked examples keep the source's own $D$/$D_x$/$D_y$/$D_z$ notation throughout, since KaTeX renders it and only submitted answers are restricted. Every retained Try It's system is inlined directly into the `question` string as $\begin{cases}\ldots\end{cases}$, and every solution is keyed as an ordered pair or triple with the format stated in the question, each coordinate an integer or a fraction in lowest terms, so an unevaluated quotient of determinants is not accepted as the answer. The Practice system whose source answer is "Infinite solutions" is posed as a `multiplechoice` over the number of solutions, never a `\text{…}` fill-in, since the source prints no general solution to key. The two Verbal exercises with a printed solution that is an explanation rather than a value ("explain why we can always evaluate the determinant of a square matrix" and "explain what it means in terms of an inverse for a matrix to have a $0$ determinant") are recast as `multiplechoice` items over the source's own printed explanations, since a free-form justification cannot be graded as a math expression; the Verbal exercise asking for a numeric answer with no printed solution in the Answer Key (explain the effect of swapping rows and scaling both on a $2\times2$ determinant of $3$) was not used, since its answer is not visibly present in the source key. In Example 8's elimination step the source prints the first row as $-2x-4y-4x=-8$; the page prints $-2x-4y-4z=-8$, equation (3) multiplied by $-2$. The Technology exercise whose upper-triangular $4\times4$ determinant has a printed answer is asked by hand under the properties objective, since the upper-triangular property evaluates it without a graphing utility. Fifteen selected end-of-section exercises were adapted into interactive Practice components, one group per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>

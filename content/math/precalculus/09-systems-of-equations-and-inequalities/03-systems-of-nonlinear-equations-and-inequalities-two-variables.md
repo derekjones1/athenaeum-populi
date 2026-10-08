@@ -44,7 +44,7 @@ There are three possible types of solutions for a system of nonlinear equations 
   *(a) No solutions.*
 
   {{< apfigure kind="graph" >}}
-  {"ariaLabel":"A parabola opening upward and a rising line that touches the parabola at exactly one point, its lowest point in the pictured window.","xMin":-2,"xMax":5,"yMin":-6,"yMax":1,"tickLabels":true,"quadratics":[{"a":1,"b":-4,"c":1}],"lines":[{"slope":2,"intercept":-8}],"points":[{"at":[3,-2]}]}
+  {"ariaLabel":"A parabola opening upward with its vertex at (3, −3), and a rising line tangent to it, touching the parabola at exactly one point, (4, −2).","xMin":-1,"xMax":7,"yMin":-6,"yMax":2,"tickLabels":true,"quadratics":[{"a":1,"b":-6,"c":6}],"lines":[{"slope":2,"intercept":-10}],"points":[{"at":[4,-2]}]}
   {{< /apfigure >}}
 
   *(b) One solution.*
@@ -97,7 +97,7 @@ $$
 & y &=& (y-1)^2+1 \\[4pt]
 & &=& (y^2-2y+1)+1 \\[4pt]
 & &=& y^2-2y+2 \\[4pt]
-0 &=& y^2-3y+2 \\[4pt]
+& 0 &=& y^2-3y+2 \\[4pt]
 & &=& (y-2)(y-1)
 \end{array}
 $$
@@ -122,7 +122,7 @@ $$
 The solutions are $(1,2)$ and $(0,1)$, which can be verified by substituting these $(x,y)$ values into both of the original equations. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola opening upward and a rising line, intersecting at two points.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"quadratics":[{"a":1,"c":1}],"lines":[{"slope":1,"intercept":1,"label":"x − y = −1"}],"points":[{"at":[1,2],"label":"(1, 2)"},{"at":[0,1],"label":"(0, 1)"}],"texts":[{"at":[-4.6,5.7],"text":"y = x²+1"}]}
+{"ariaLabel":"A parabola opening upward and a rising line, intersecting at two points.","xMin":-4,"xMax":4,"yMin":-3,"yMax":6,"unit":30,"tickLabels":true,"yTickStep":2,"quadratics":[{"a":1,"c":1}],"lines":[{"slope":1,"intercept":1,"label":"x − y = −1"}],"points":[{"at":[1,2],"label":"(1, 2)","labelSide":"e"},{"at":[0,1],"label":"(0, 1)","labelSide":"se"}],"texts":[{"at":[-3.9,4.8],"text":"y = x²+1"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -161,6 +161,7 @@ The solutions are $(1,2)$ and $(0,1)$, which can be verified by substituting the
   question="Solve the given system of equations by substitution. Enter both solutions as ordered pairs $(x,y)$, separated by a comma. $\begin{cases}3x-y=-2\\2x^2-y=0\end{cases}$"
   answer="\left(-\frac{1}{2},\frac{1}{2}\right),\left(2,8\right)"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$\left(-\tfrac12,\tfrac12\right)$ and $(2,8)$"
   hint="Solve $3x-y=-2$ for $y$, substitute into $2x^2-y=0$, and solve the resulting quadratic in $x$."
 >}}
@@ -177,7 +178,7 @@ Just as with a parabola and a line, there are three possible outcomes when solvi
   - Two solutions. The line crosses the circle and intersects it at two points.
 
   {{< apfigure kind="figure" >}}
-  {"ariaLabel":"A circle with a diagonal line passing well to its side, never touching it.","circles":[{"at":[0,0],"r":2}],"segments":[{"from":[-3,1],"to":[-1,-3],"arrow":"both"}]}
+  {"ariaLabel":"A circle with a diagonal line passing well to its side, never touching it.","circles":[{"at":[0,0],"r":2}],"segments":[{"from":[-3.5,1],"to":[-1.5,-3],"arrow":"both"}]}
   {{< /apfigure >}}
 
   *(a) No solutions.*
@@ -189,7 +190,7 @@ Just as with a parabola and a line, there are three possible outcomes when solvi
   *(b) One solution.*
 
   {{< apfigure kind="figure" >}}
-  {"ariaLabel":"A circle with a diagonal line passing through its interior, crossing the circle at two points.","circles":[{"at":[0,0],"r":2}],"segments":[{"from":[-2.5,-2],"to":[2.5,3],"arrow":"both"}]}
+  {"ariaLabel":"A circle with a diagonal line passing through its interior, crossing the circle at two marked points.","circles":[{"at":[0,0],"r":2}],"segments":[{"from":[-2.5,-2],"to":[2.5,3],"arrow":"both"}],"points":[{"at":[1.14194,1.64194]},{"at":[-1.64194,-1.14194]}]}
   {{< /apfigure >}}
 
   *(c) Two solutions.*
@@ -253,12 +254,13 @@ $$
 The line intersects the circle at $(2,1)$ and $(1,-2)$, which can be verified by substituting these $(x,y)$ values into both of the original equations. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A circle and a line intersecting at two points.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"tickLabels":true,"circles":[{"at":[0,0],"r":2.23606797749979}],"lines":[{"slope":3,"intercept":-5,"label":"y = 3x − 5"}],"points":[{"at":[2,1],"label":"(2, 1)"},{"at":[1,-2],"label":"(1, -2)"}],"texts":[{"at":[-2.7,2.4],"text":"x²+y²=5"}]}
+{"ariaLabel":"A circle and a line intersecting at two points.","xMin":-4,"xMax":4,"yMin":-3,"yMax":4,"unit":30,"tickLabels":true,"circles":[{"at":[0,0],"r":2.23606797749979}],"lines":[{"slope":3,"intercept":-5,"label":"y = 3x − 5","labelAt":0.88,"labelSide":"left"}],"points":[{"at":[2,1],"label":"(2, 1)"},{"at":[1,-2],"label":"(1, -2)"}],"texts":[{"at":[-3.8,2.5],"text":"x²+y²=5"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Solve the system of nonlinear equations. Enter the solution as an ordered pair $(x,y)$. $\begin{cases}x^2+y^2=10\\x-3y=-10\end{cases}$"
   answer="\left(-1,3\right)"
+  answerForm="decimal"
   answerDisplay="$(-1,3)$"
   hint="Solve $x-3y=-10$ for $x$ and substitute into $x^2+y^2=10$; the resulting quadratic in $y$ has a repeated root."
 >}}
@@ -301,7 +303,7 @@ We have seen that substitution is often the preferred method when a system of eq
   *(d) Three solutions.*
 
   {{< apfigure kind="graph" >}}
-  {"ariaLabel":"A circle and an ellipse overlapping broadly, crossing at four points.","xMin":-2,"xMax":3,"yMin":-2.2,"yMax":2.5,"grid":false,"tickLabels":false,"circles":[{"at":[0,0],"r":1.5},{"at":[0.5,0.2],"rx":2,"ry":1.0}]}
+  {"ariaLabel":"A circle and a wider, flatter ellipse sharing its center, crossing at four points.","xMin":-2.8,"xMax":2.8,"yMin":-2.2,"yMax":2.2,"grid":false,"tickLabels":false,"circles":[{"at":[0,0],"r":1.5},{"at":[0,0],"rx":2.1,"ry":0.85}]}
   {{< /apfigure >}}
 
   *(e) Four solutions.*
@@ -351,20 +353,22 @@ $$
 \begin{array}{lrcl}
 & x^2+(-1)^2 &=& 26 \\[4pt]
 & x^2+1 &=& 26 \\[4pt]
-& x^2 &=& 25=\pm5
+& x^2 &=& 25 \\[4pt]
+& x &=& \pm\sqrt{25}=\pm5
 \end{array}
 $$
 
 There are four solutions: $(5,1)$, $(-5,1)$, $(5,-1)$, and $(-5,-1)$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A circle and a horizontal ellipse intersecting at four points.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"circles":[{"at":[0,0],"r":5.0990195135927845},{"at":[0,0],"rx":5.773502691896258,"ry":2}],"points":[{"at":[5,1],"label":"(5, 1)"},{"at":[-5,1],"label":"(-5, 1)"},{"at":[5,-1],"label":"(5, -1)"},{"at":[-5,-1],"label":"(-5, -1)","labelSide":"sw"}]}
+{"ariaLabel":"A circle and a horizontal ellipse intersecting at four points.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":30,"tickLabels":true,"circles":[{"at":[0,0],"r":5.0990195135927845},{"at":[0,0],"rx":5.773502691896258,"ry":2}],"points":[{"at":[5,1],"label":"(5, 1)"},{"at":[-5,1],"label":"(-5, 1)"},{"at":[5,-1],"label":"(5, -1)"},{"at":[-5,-1],"label":"(-5, -1)","labelSide":"sw"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Find the solution set for the given system of nonlinear equations. Enter all four solutions as ordered pairs $(x,y)$, separated by commas. $\begin{cases}4x^2+y^2=13\\x^2+y^2=10\end{cases}$"
   answer="\left(1,3\right),\left(1,-3\right),\left(-1,3\right),\left(-1,-3\right)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(1,3)$, $(1,-3)$, $(-1,3)$, and $(-1,-3)$"
   hint="Subtract $x^2+y^2=10$ from $4x^2+y^2=13$ to eliminate $y^2$, solve for $x$, then use either equation to find both values of $y$ for each $x$."
 >}}
@@ -376,25 +380,25 @@ All of the equations in the systems that we have encountered so far have involve
 Recall that when the inequality is greater than, $y>a$, or less than, $y<a$, the graph is drawn with a dashed line. When the inequality is greater than or equal to, $y\ge a$, or less than or equal to, $y\le a$, the graph is drawn with a solid line. The graphs will create regions in the plane, and we will test each region for a solution. If one point in the region works, the whole region works. That is the region we shade. See the figures below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y=x²−4 drawn dashed, with the region above it shaded.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,3],"dashed":true}]}
+{"ariaLabel":"The parabola y=x²−4 drawn dashed, with the region above it shaded, labeled y > x² − 4.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,3],"dashed":true}],"texts":[{"at":[0.25,-4.8],"text":"y > x² − 4"}]}
 {{< /apfigure >}}
 
 *(a) An example of $y>a$.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y=x²−4 drawn solid, with the region above it shaded.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,3],"dashed":false}]}
+{"ariaLabel":"The parabola y=x²−4 drawn solid, with the region above it shaded, labeled y ≥ x² − 4.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,3],"dashed":false}],"texts":[{"at":[0.25,-4.8],"text":"y ≥ x² − 4"}]}
 {{< /apfigure >}}
 
 *(b) An example of $y\ge a$.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y=x²−4 drawn dashed, with the region below it shaded.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,-5.5],"dashed":true}]}
+{"ariaLabel":"The parabola y=x²−4 drawn dashed, with the region below it shaded, labeled y < x² − 4.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,-5.5],"dashed":true}],"texts":[{"at":[0.25,-4.8],"text":"y < x² − 4"}]}
 {{< /apfigure >}}
 
 *(c) An example of $y<a$.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y=x²−4 drawn solid, with the region below it shaded.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,-5.5],"dashed":false}]}
+{"ariaLabel":"The parabola y=x²−4 drawn solid, with the region below it shaded, labeled y ≤ x² − 4.","xMin":-3,"xMax":3,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-4},"side":[0,-5.5],"dashed":false}],"texts":[{"at":[0.25,-4.8],"text":"y ≤ x² − 4"}]}
 {{< /apfigure >}}
 
 *(d) An example of $y\le a$.*
@@ -430,7 +434,7 @@ $$
 The graph is shown below. We can see that the solution set consists of all points inside the parabola, but not on the graph itself.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y=x²+1 drawn dashed, with the region above it shaded, and test points marked at (0, 2) inside the region and (2, 0) outside it.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":1},"side":[0,2],"dashed":true}],"points":[{"at":[0,2],"label":"(0, 2)"},{"at":[2,0],"label":"(2, 0)"}]}
+{"ariaLabel":"The parabola y=x²+1 drawn dashed, with the region above it shaded, and test points marked at (0, 2) inside the region and (2, 0) outside it.","xMin":-3,"xMax":3,"yMin":-1,"yMax":6,"unit":40,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":1},"side":[0,2],"dashed":true}],"points":[{"at":[0,2],"label":"(0, 2)","labelSide":"ne"},{"at":[2,0],"label":"(2, 0)","labelSide":"n"}]}
 {{< /apfigure >}}
 
 ### Graphing a System of Nonlinear Inequalities
@@ -507,14 +511,14 @@ $$
 Graph each inequality. See the figure below. The feasible region is the region between the two equations bounded by $2x^2+y\le12$ on the top and $x^2-y\le0$ on the bottom.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parabolas, one opening upward and one opening downward, each drawn solid; the lens-shaped region between them, where both inequalities hold, is shaded darker than the rest of each shaded half-plane, and the two curves cross at two labeled points.","xMin":-12,"xMax":12,"yMin":-2,"yMax":14,"tickLabels":true,"xTickStep":2,"regions":[{"quadratic":{"a":1,"c":0},"side":[0,4],"dashed":false},{"quadratic":{"a":-2,"c":12},"side":[0,4],"dashed":false}],"points":[{"at":[-2,4],"label":"(-2, 4)"},{"at":[2,4],"label":"(2, 4)"}]}
+{"ariaLabel":"Two parabolas, one opening upward and one opening downward, each drawn solid; the lens-shaped region between them, where both inequalities hold, is shaded darker than the rest of each shaded region, and the two curves cross at two labeled points.","xMin":-12,"xMax":12,"yMin":-2,"yMax":14,"tickLabels":true,"xTickStep":2,"yTickStep":2,"regions":[{"quadratic":{"a":1,"c":0},"side":[0,4],"dashed":false},{"quadratic":{"a":-2,"c":12},"side":[0,4],"dashed":false}],"points":[{"at":[-2,4],"label":"(-2, 4)"},{"at":[2,4],"label":"(2, 4)"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="Which graph shows the solution region of the system of inequalities $y\ge x^2-1$, $x-y\ge-1$?"
   mode="graph"
   answerIndex="0"
-  hint="Rewrite the second inequality as $y\le x+1$; the boundaries are both included (solid), and the feasible region lies above the parabola and below the line."
+  hint="Solve the second inequality for $y$. Decide from each inequality symbol whether its boundary is drawn solid or dashed, then test a point such as $(0,0)$ in both inequalities to find which side of each boundary to shade."
 >}}
 {"ariaLabel":"An upward-opening parabola and a rising line, both drawn solid; the region above the parabola and the region below the line overlap between the two curves.","xMin":-4,"xMax":4,"yMin":-3,"yMax":5,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-1},"side":[0,3],"dashed":false},{"line":{"slope":1,"intercept":1},"side":[0,-5],"dashed":false}]}
 ===OPT===
@@ -541,16 +545,18 @@ Graph each inequality. See the figure below. The feasible region is the region b
   question="Solve the system of nonlinear equations using substitution. Enter both solutions as ordered pairs $(x,y)$, separated by a comma. $\begin{cases}y=x-3\\x^2+y^2=9\end{cases}$"
   answer="\left(0,-3\right),\left(3,0\right)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(0,-3)$ and $(3,0)$"
   hint="Substitute $y=x-3$ into the circle's equation and solve the resulting quadratic in $x$."
 >}}
 
 {{< fillin
-  question="Solve the system of nonlinear equations using substitution. Enter both solutions as ordered pairs $(x,y)$, separated by a comma. $\begin{cases}y=-x\\x^2+y^2=9\end{cases}$"
+  question="Solve the system of nonlinear equations using substitution. Enter both solutions as ordered pairs $(x,y)$, separated by a comma, with exact values and rational denominators. $\begin{cases}y=-x\\x^2+y^2=9\end{cases}$"
   answer="\left(\frac{3\sqrt{2}}{2},-\frac{3\sqrt{2}}{2}\right),\left(-\frac{3\sqrt{2}}{2},\frac{3\sqrt{2}}{2}\right)"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$\left(\tfrac{3\sqrt2}{2},-\tfrac{3\sqrt2}{2}\right)$ and $\left(-\tfrac{3\sqrt2}{2},\tfrac{3\sqrt2}{2}\right)$"
-  hint="Substitute $y=-x$ into the circle's equation; solving $2x^2=9$ gives two opposite-signed values of $x$."
+  hint="Substitute $y=-x$ into the circle's equation, solve for $x$ and rationalize the denominator, then use $y=-x$ to find each $y$."
 >}}
 
 ### Solve a system of nonlinear equations using elimination
@@ -559,67 +565,71 @@ Graph each inequality. See the figure below. The feasible region is the region b
   question="Solve the system of nonlinear equations using elimination. Enter both solutions as ordered pairs $(x,y)$, separated by a comma. $\begin{cases}4x^2-9y^2=36\\4x^2+9y^2=36\end{cases}$"
   answer="\left(3,0\right),\left(-3,0\right)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(3,0)$ and $(-3,0)$"
   hint="Add the two equations to eliminate $y^2$ entirely, then solve for $x$."
 >}}
 
 {{< fillin
-  question="Solve the system of nonlinear equations using elimination. Enter both solutions as ordered pairs $(x,y)$, separated by a comma. $\begin{cases}2x^2+4y^2=4\\2x^2-4y^2=25x-10\end{cases}$"
+  question="Solve the system of nonlinear equations using elimination. Enter both solutions as ordered pairs $(x,y)$, separated by a comma, with exact values and rational denominators. $\begin{cases}2x^2+4y^2=4\\2x^2-4y^2=25x-10\end{cases}$"
   answer="\left(\frac{1}{4},-\frac{\sqrt{62}}{8}\right),\left(\frac{1}{4},\frac{\sqrt{62}}{8}\right)"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$\left(\tfrac14,-\tfrac{\sqrt{62}}{8}\right)$ and $\left(\tfrac14,\tfrac{\sqrt{62}}{8}\right)$"
-  hint="Add the two equations to eliminate $y^2$, solve the resulting quadratic in $x$ for both roots, then substitute each root back into the first equation for $y^2$ — one root will not produce a real $y$."
+  hint="Add the two equations to eliminate $y^2$, solve the resulting quadratic in $x$ for both roots, then substitute each root back into the first equation for $y^2$ and keep only the roots that give a real $y$."
 >}}
 
 ### Graph a nonlinear inequality
 
 {{< fillin
-  question="The boundary of the inequality $x^2+y<9$ is the parabola $y=9-x^2$. Give its vertex as an ordered pair $(x,y)$."
-  answer="\left(0,9\right)"
-  answerDisplay="$(0,9)$"
-  hint="Write the boundary in vertex form $y=a(x-h)^2+k$; the vertex is $(h,k)$."
+  question="Graph the inequality $x^2+y^2<4$. Its solution region is bounded by a circle centered at the origin. Give the radius of that circle."
+  answer="2"
+  answerForm="decimal"
+  answerDisplay="$2$: the region is the inside of the dashed circle $x^2+y^2=4$"
+  hint="Replace the inequality symbol with an equals sign to get the boundary, then compare it with the equation of a circle centered at the origin, $x^2+y^2=r^2$."
 >}}
 
 {{< multiplechoice
   question="Which graph shows the solution region of the inequality $x^2+y<9$?"
   mode="graph"
   answerIndex="1"
-  hint="Rewrite the boundary as $y=9-x^2$, a downward-opening parabola; the strict inequality means the boundary is excluded (dashed), and $x^2+y<9$ means $y<9-x^2$, the region below the parabola."
+  hint="Solve the inequality for $y$ to identify the boundary parabola and which way it opens. Decide from the inequality symbol whether the boundary is drawn solid or dashed, then test a point such as $(0,0)$."
 >}}
-{"ariaLabel":"A downward-opening parabola with vertex at (0, 9), drawn solid, with the region below it shaded.","xMin":-5,"xMax":5,"yMin":-6,"yMax":10,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":9},"side":[0,-5],"dashed":false}]}
+{"ariaLabel":"A downward-opening parabola crossing the x-axis at −3 and 3, drawn solid, with the region below it shaded.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"yTickStep":2,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":9},"side":[0,-9],"dashed":false}]}
 ===OPT===
-{"ariaLabel":"A downward-opening parabola with vertex at (0, 9), drawn dashed, with the region below it shaded.","xMin":-5,"xMax":5,"yMin":-6,"yMax":10,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":9},"side":[0,-5],"dashed":true}]}
+{"ariaLabel":"A downward-opening parabola crossing the x-axis at −3 and 3, drawn dashed, with the region below it shaded.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"yTickStep":2,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":9},"side":[0,-9],"dashed":true}]}
 ===OPT===
-{"ariaLabel":"A downward-opening parabola with vertex at (0, 4), drawn dashed, with the region below it shaded.","xMin":-5,"xMax":5,"yMin":-6,"yMax":10,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":4},"side":[0,-5],"dashed":true}]}
+{"ariaLabel":"An upward-opening parabola crossing the x-axis at −3 and 3, drawn dashed, with the region below it shaded.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"yTickStep":2,"tickLabels":true,"regions":[{"quadratic":{"a":1,"c":-9},"side":[0,-9.5],"dashed":true}]}
 ===OPT===
-{"ariaLabel":"A downward-opening parabola with vertex at (0, 9), drawn dashed, with the region above it shaded.","xMin":-5,"xMax":5,"yMin":-6,"yMax":10,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":9},"side":[0,15],"dashed":true}]}
+{"ariaLabel":"A downward-opening parabola crossing the x-axis at −3 and 3, drawn dashed, with the region above it shaded.","xMin":-5,"xMax":5,"yMin":-10,"yMax":10,"yTickStep":2,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":9},"side":[0,9.5],"dashed":true}]}
 {{< /multiplechoice >}}
 
 ### Graph a system of nonlinear inequalities
 
 {{< fillin
-  question="Graph the system of inequalities $x^2+y<1$, $y>2x$. Give both boundary intersection points as ordered pairs $(x,y)$, separated by a comma."
+  question="Graph the system of inequalities $x^2+y<1$, $y>2x$. Give both boundary intersection points as ordered pairs $(x,y)$ with exact values, separated by a comma."
   answer="\left(\sqrt{2}-1,2\sqrt{2}-2\right),\left(-1-\sqrt{2},-2-2\sqrt{2}\right)"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$\left(\sqrt2-1,2\sqrt2-2\right)$ and $\left(-1-\sqrt2,-2-2\sqrt2\right)$"
-  hint="Set the boundaries equal: $1-x^2=2x$, solve the quadratic for $x$, then use $y=2x$ at each root."
+  hint="Solve each boundary equation for $y$ and set the two expressions equal. The quadratic does not factor, so use the quadratic formula, then find $y$ on the line at each root."
 >}}
 
 {{< multiplechoice
   question="Which graph shows the solution region of the system of inequalities $x^2+y<1$, $y>2x$?"
   mode="graph"
   answerIndex="3"
-  hint="Rewrite the first inequality as $y<1-x^2$; both boundaries are excluded (dashed), and the feasible region lies below the parabola and above the line."
+  hint="Solve the first inequality for $y$. Decide from each inequality symbol whether its boundary is drawn solid or dashed, then test a point that is not on either boundary, such as $(-1,-1)$, in both inequalities."
 >}}
-{"ariaLabel":"A downward-opening parabola and a rising line through the origin, both drawn dashed; the region below the parabola and the region below the line are shaded.","xMin":-4,"xMax":3,"yMin":-6,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,0],"dashed":true},{"line":{"slope":2,"intercept":0},"side":[-1,-4],"dashed":true}]}
+{"ariaLabel":"A downward-opening parabola and a rising line through the origin, both drawn dashed; the region below the parabola and the region below the line are shaded.","xMin":-5,"xMax":3,"yMin":-8,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,0],"dashed":true},{"line":{"slope":2,"intercept":0},"side":[-1,-4],"dashed":true}]}
 ===OPT===
-{"ariaLabel":"A downward-opening parabola and a rising line through the origin, both drawn dashed; the region above the parabola and the region above the line are shaded.","xMin":-4,"xMax":3,"yMin":-6,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,5],"dashed":true},{"line":{"slope":2,"intercept":0},"side":[-1,0],"dashed":true}]}
+{"ariaLabel":"A downward-opening parabola and a rising line through the origin, both drawn dashed; the region above the parabola and the region above the line are shaded.","xMin":-5,"xMax":3,"yMin":-8,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,2],"dashed":true},{"line":{"slope":2,"intercept":0},"side":[-1,0],"dashed":true}]}
 ===OPT===
-{"ariaLabel":"A downward-opening parabola and a rising line, both drawn solid instead of dashed, with the region below the parabola and the region above the line overlapping between the two curves.","xMin":-4,"xMax":3,"yMin":-6,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,0],"dashed":false},{"line":{"slope":2,"intercept":0},"side":[-1,0],"dashed":false}]}
+{"ariaLabel":"A downward-opening parabola and a rising line through the origin, both drawn solid; the region below the parabola and the region above the line overlap between the two curves.","xMin":-5,"xMax":3,"yMin":-8,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,0],"dashed":false},{"line":{"slope":2,"intercept":0},"side":[-1,0],"dashed":false}]}
 ===OPT===
-{"ariaLabel":"A downward-opening parabola and a rising line, both drawn dashed; the region below the parabola and the region above the line overlap in a lens shape between the two curves.","xMin":-4,"xMax":3,"yMin":-6,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,0],"dashed":true},{"line":{"slope":2,"intercept":0},"side":[-1,0],"dashed":true}]}
+{"ariaLabel":"A downward-opening parabola and a rising line through the origin, both drawn dashed; the region below the parabola and the region above the line overlap between the two curves.","xMin":-5,"xMax":3,"yMin":-8,"yMax":3,"tickLabels":true,"regions":[{"quadratic":{"a":-1,"c":1},"side":[0,0],"dashed":true},{"line":{"slope":2,"intercept":0},"side":[-1,0],"dashed":true}]}
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.3: Systems of Nonlinear Equations and Inequalities: Two Variables](https://openstax.org/books/precalculus-2e/pages/9-3-systems-of-nonlinear-equations-and-inequalities-two-variables) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: the module's opening "Coreq Skills" prelude (a corequisite review of graphing a parabola and a circle, tagged IA 11.2.1/IA 11.1.4 for a separate, non-precalculus course) is prerequisite remediation rather than Section 9.3 content and is omitted, following the same house convention already used for every other coreq-skills-bearing module in this book (e.g. Section 4.2); the section's own four learning objectives, from the module's abstract, are unaffected. Omitted the credit photograph of Halley's Comet, keeping the sentence that introduces it. Recreated every instructional figure as an accessible spec-first SVG: the parabola/line and circle/line "possible types of solutions" panels, each independently re-derived to produce the stated 0/1/2 intersection count rather than traced from the source art; the circle/ellipse "possible types of solutions" panels (0 through 4 intersections), each configuration's intersection count confirmed numerically before drawing, though rendered on visible (if unlabeled) axes since the figure engine's axis-free `figure` primitive has no ellipse; the four-panel parabola-inequality shading figure and both worked-example answer graphs, using the engine's new quadratic-boundary shaded-region capability; and every circle/line/ellipse intersection figure, plotted from the exact algebraic solution rather than the printed art. The two remaining circle-or-ellipse-boundary "types of solutions" figures (the circle/line and circle/ellipse panels) have no linear or quadratic boundary for the shading engine to fill, so — like every other bare-circle figure in this book — they are drawn as unshaded curves; this only affects the illustrative overview panels, never a graded exercise, since every graded shaded-region question in this section has a line or parabola boundary. **The grader cannot take `\langle a,b\rangle` or a picture as a submitted answer**, so a solution region is always posed as a `multiplechoice` recognition question over rendered graphs (never a fill-in), and a system's boundary intersection points are posed as a separate fill-in keyed as an unordered list of ordered pairs $(x,y)$ — verified working, including radical coordinates — with the question stating the expected count. Try It 4 ("graph $y\ge x^2-1$, $x-y\ge-1$") carries no printed answer in the source at all (a graph-only Try It); its intersection points and feasible region were independently derived and it was authored as a graph-recognition multiple choice, the only faithful graded form for a shaded-region ask. The lone "graph the inequality" and "graph the system of inequalities" end-of-section exercises with an answer key figure ($x^2+y<9$; and $x^2+y<1,\ y>2x$, whose key even prints the two boundary intersection points) were each split into two Practice components — a computed fill-in (a vertex, or the intersection points) plus a recognition multiple choice — since the printed exercise supports both asks and one source item cannot otherwise fill an objective's two-exercise minimum; the sibling "graph the inequality" exercise ($x^2+y^2<4$) carries no answer at all in the source and was not used. Two end-of-section exercises with a circle-and-hyperbola or ellipse-and-hyperbola boundary were not used for the same reason the overview panels go unshaded: the shading engine has no hyperbola-boundary region. Ten source exercises — the section's four Try Its and six end-of-section exercises, two of the latter split as just described — were adapted into twelve interactive components across the four in-page Try Its and the closing Practice block, one Practice group per objective, every one independently re-derived by computation (including by running the arithmetic in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.3: Systems of Nonlinear Equations and Inequalities: Two Variables](https://openstax.org/books/precalculus-2e/pages/9-3-systems-of-nonlinear-equations-and-inequalities-two-variables) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: the module's opening "Coreq Skills" prelude (a corequisite review of graphing a parabola and a circle, tagged IA 11.2.1/IA 11.1.4) is not part of the printed Precalculus 2e section and is omitted, as on the other chapter-9 pages. Omitted the credit photograph of Halley's Comet, keeping the sentence that introduces it, and the section's two Media links to external video tutorials. One source typo is corrected: for $y=-1$ the circle-and-ellipse example prints $x^2=25=\pm5$; the page completes the step as $x^2=25$, $x=\pm\sqrt{25}=\pm5$, as the source does for $y=1$. Every instructional figure is recreated as an accessible figure: the parabola/line and circle/line "possible types of solutions" panels are re-derived to produce the stated 0, 1, or 2 intersections rather than traced from the source art; the circle/ellipse panels (0 through 4 intersections) have each intersection count confirmed numerically and are drawn on unlabeled axes, since the figure engine draws ellipses only on a coordinate plane; the four-panel parabola-inequality figure, the worked examples' graphs, and the intersection figures are plotted from the exact equations. A graph cannot be submitted as an answer, so a solution region is posed as a multiple-choice recognition question over rendered graphs, and a system's boundary intersection points as a separate fill-in keyed as a list of ordered pairs $(x,y)$, with the question stating the expected count. Try It 4 ("graph $y\ge x^2-1$, $x-y\ge-1$"), whose printed answer is a graph of the region between the parabola and the line, meeting at $(-1,0)$ and $(2,3)$, is that recognition multiple choice. The "graph the inequality" exercise $x^2+y<9$ is that recognition multiple choice, and its sibling $x^2+y^2<4$, which has no printed answer, is a fill-in of the boundary circle's radius, $2$, derived here (the region is the inside of the dashed circle $x^2+y^2=4$); a fill-in of $x^2+y<9$'s own boundary would be read off the graphs its multiple choice draws. The "graph the system" exercise $x^2+y<1$, $y>2x$ (whose key graph prints the two boundary intersection points) is split into two Practice components — a computed fill-in of the intersection points and a recognition multiple choice — since one source item cannot otherwise fill an objective's two-exercise minimum. Two keyed "graph the system" exercises whose boundaries include a hyperbola were not used: the shading engine has no hyperbola-boundary region. Eleven source exercises — the section's four Try Its and seven end-of-section exercises, one of the latter split as just described — were adapted into twelve interactive components across the four in-page Try Its and the closing Practice block, one Practice group per objective.</small>

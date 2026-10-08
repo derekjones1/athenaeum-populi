@@ -33,13 +33,13 @@ Conic sections can also be described by a set of points in the coordinate plane.
 We can draw an ellipse using a piece of cardboard, two thumbtacks, a pencil, and string. Place the thumbtacks in the cardboard to form the foci of the ellipse. Cut a piece of string longer than the distance between the two thumbtacks (the length of the string represents the constant in the definition). Tack each end of the string to the cardboard, and trace a curve with a pencil held taut against the string. The result is an ellipse.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"An ellipse traced by a taut string looped around two thumbtacks pushed into the paper at the foci. Two segments run from a point on the curve to each thumbtack, showing the string held taut as it moves around to trace the ellipse.","unit":50,"polygons":[{"points":[[4,0],[3.998,0.084],[3.99,0.167],[3.978,0.251],[3.961,0.334],[3.939,0.417],[3.913,0.499],[3.881,0.581],[3.845,0.662],[3.804,0.742],[3.759,0.821],[3.709,0.899],[3.654,0.976],[3.595,1.052],[3.532,1.127],[3.464,1.2],[3.392,1.272],[3.316,1.342],[3.236,1.411],[3.152,1.478],[3.064,1.543],[2.973,1.606],[2.877,1.667],[2.779,1.726],[2.677,1.784],[2.571,1.839],[2.463,1.891],[2.351,1.942],[2.237,1.99],[2.12,2.035],[2,2.078],[1.878,2.119],[1.753,2.157],[1.627,2.193],[1.498,2.225],[1.368,2.255],[1.236,2.283],[1.103,2.307],[0.968,2.329],[0.832,2.348],[0.695,2.364],[0.557,2.377],[0.418,2.387],[0.279,2.394],[0.14,2.399],[0,2.4],[-0.14,2.399],[-0.279,2.394],[-0.418,2.387],[-0.557,2.377],[-0.695,2.364],[-0.832,2.348],[-0.968,2.329],[-1.103,2.307],[-1.236,2.283],[-1.368,2.255],[-1.498,2.225],[-1.627,2.193],[-1.753,2.157],[-1.878,2.119],[-2,2.078],[-2.12,2.035],[-2.237,1.99],[-2.351,1.942],[-2.463,1.891],[-2.571,1.839],[-2.677,1.784],[-2.779,1.726],[-2.877,1.667],[-2.973,1.606],[-3.064,1.543],[-3.152,1.478],[-3.236,1.411],[-3.316,1.342],[-3.392,1.272],[-3.464,1.2],[-3.532,1.127],[-3.595,1.052],[-3.654,0.976],[-3.709,0.899],[-3.759,0.821],[-3.804,0.742],[-3.845,0.662],[-3.881,0.581],[-3.913,0.499],[-3.939,0.417],[-3.961,0.334],[-3.978,0.251],[-3.99,0.167],[-3.998,0.084],[-4,0],[-3.998,-0.084],[-3.99,-0.167],[-3.978,-0.251],[-3.961,-0.334],[-3.939,-0.417],[-3.913,-0.499],[-3.881,-0.581],[-3.845,-0.662],[-3.804,-0.742],[-3.759,-0.821],[-3.709,-0.899],[-3.654,-0.976],[-3.595,-1.052],[-3.532,-1.127],[-3.464,-1.2],[-3.392,-1.272],[-3.316,-1.342],[-3.236,-1.411],[-3.152,-1.478],[-3.064,-1.543],[-2.973,-1.606],[-2.877,-1.667],[-2.779,-1.726],[-2.677,-1.784],[-2.571,-1.839],[-2.463,-1.891],[-2.351,-1.942],[-2.237,-1.99],[-2.12,-2.035],[-2,-2.078],[-1.878,-2.119],[-1.753,-2.157],[-1.627,-2.193],[-1.498,-2.225],[-1.368,-2.255],[-1.236,-2.283],[-1.103,-2.307],[-0.968,-2.329],[-0.832,-2.348],[-0.695,-2.364],[-0.557,-2.377],[-0.418,-2.387],[-0.279,-2.394],[-0.14,-2.399],[0,-2.4],[0.14,-2.399],[0.279,-2.394],[0.418,-2.387],[0.557,-2.377],[0.695,-2.364],[0.832,-2.348],[0.968,-2.329],[1.103,-2.307],[1.236,-2.283],[1.368,-2.255],[1.498,-2.225],[1.627,-2.193],[1.753,-2.157],[1.878,-2.119],[2,-2.078],[2.12,-2.035],[2.237,-1.99],[2.351,-1.942],[2.463,-1.891],[2.571,-1.839],[2.677,-1.784],[2.779,-1.726],[2.877,-1.667],[2.973,-1.606],[3.064,-1.543],[3.152,-1.478],[3.236,-1.411],[3.316,-1.342],[3.392,-1.272],[3.464,-1.2],[3.532,-1.127],[3.595,-1.052],[3.654,-0.976],[3.709,-0.899],[3.759,-0.821],[3.804,-0.742],[3.845,-0.662],[3.881,-0.581],[3.913,-0.499],[3.939,-0.417],[3.961,-0.334],[3.978,-0.251],[3.99,-0.167],[3.998,-0.084]]}],"points":[{"at":[-3.2,0]},{"at":[3.2,0]},{"at":[1.69,2.175],"label":"Pencil"}],"texts":[{"at":[-3.2,-0.4],"text":"Focus","anchor":"middle"},{"at":[3.2,-0.4],"text":"Focus","anchor":"middle"}],"segments":[{"from":[-3.2,0],"to":[1.69,2.175]},{"from":[3.2,0],"to":[1.69,2.175]},{"from":[-3.2,-0.9],"to":[3.2,-0.9],"arrow":"both","label":"Foci","labelSide":"right"}]}
+{"ariaLabel":"An ellipse drawn with a string. Two dots inside the ellipse mark the foci, labelled Foci with an arrow to each, and a dot on the curve is labelled Pencil. Two segments, the taut string, run from the pencil point to the two foci.","unit":50,"polygons":[{"points":[[4,0],[3.998,0.084],[3.99,0.167],[3.978,0.251],[3.961,0.334],[3.939,0.417],[3.913,0.499],[3.881,0.581],[3.845,0.662],[3.804,0.742],[3.759,0.821],[3.709,0.899],[3.654,0.976],[3.595,1.052],[3.532,1.127],[3.464,1.2],[3.392,1.272],[3.316,1.342],[3.236,1.411],[3.152,1.478],[3.064,1.543],[2.973,1.606],[2.877,1.667],[2.779,1.726],[2.677,1.784],[2.571,1.839],[2.463,1.891],[2.351,1.942],[2.237,1.99],[2.12,2.035],[2,2.078],[1.878,2.119],[1.753,2.157],[1.627,2.193],[1.498,2.225],[1.368,2.255],[1.236,2.283],[1.103,2.307],[0.968,2.329],[0.832,2.348],[0.695,2.364],[0.557,2.377],[0.418,2.387],[0.279,2.394],[0.14,2.399],[0,2.4],[-0.14,2.399],[-0.279,2.394],[-0.418,2.387],[-0.557,2.377],[-0.695,2.364],[-0.832,2.348],[-0.968,2.329],[-1.103,2.307],[-1.236,2.283],[-1.368,2.255],[-1.498,2.225],[-1.627,2.193],[-1.753,2.157],[-1.878,2.119],[-2,2.078],[-2.12,2.035],[-2.237,1.99],[-2.351,1.942],[-2.463,1.891],[-2.571,1.839],[-2.677,1.784],[-2.779,1.726],[-2.877,1.667],[-2.973,1.606],[-3.064,1.543],[-3.152,1.478],[-3.236,1.411],[-3.316,1.342],[-3.392,1.272],[-3.464,1.2],[-3.532,1.127],[-3.595,1.052],[-3.654,0.976],[-3.709,0.899],[-3.759,0.821],[-3.804,0.742],[-3.845,0.662],[-3.881,0.581],[-3.913,0.499],[-3.939,0.417],[-3.961,0.334],[-3.978,0.251],[-3.99,0.167],[-3.998,0.084],[-4,0],[-3.998,-0.084],[-3.99,-0.167],[-3.978,-0.251],[-3.961,-0.334],[-3.939,-0.417],[-3.913,-0.499],[-3.881,-0.581],[-3.845,-0.662],[-3.804,-0.742],[-3.759,-0.821],[-3.709,-0.899],[-3.654,-0.976],[-3.595,-1.052],[-3.532,-1.127],[-3.464,-1.2],[-3.392,-1.272],[-3.316,-1.342],[-3.236,-1.411],[-3.152,-1.478],[-3.064,-1.543],[-2.973,-1.606],[-2.877,-1.667],[-2.779,-1.726],[-2.677,-1.784],[-2.571,-1.839],[-2.463,-1.891],[-2.351,-1.942],[-2.237,-1.99],[-2.12,-2.035],[-2,-2.078],[-1.878,-2.119],[-1.753,-2.157],[-1.627,-2.193],[-1.498,-2.225],[-1.368,-2.255],[-1.236,-2.283],[-1.103,-2.307],[-0.968,-2.329],[-0.832,-2.348],[-0.695,-2.364],[-0.557,-2.377],[-0.418,-2.387],[-0.279,-2.394],[-0.14,-2.399],[0,-2.4],[0.14,-2.399],[0.279,-2.394],[0.418,-2.387],[0.557,-2.377],[0.695,-2.364],[0.832,-2.348],[0.968,-2.329],[1.103,-2.307],[1.236,-2.283],[1.368,-2.255],[1.498,-2.225],[1.627,-2.193],[1.753,-2.157],[1.878,-2.119],[2,-2.078],[2.12,-2.035],[2.237,-1.99],[2.351,-1.942],[2.463,-1.891],[2.571,-1.839],[2.677,-1.784],[2.779,-1.726],[2.877,-1.667],[2.973,-1.606],[3.064,-1.543],[3.152,-1.478],[3.236,-1.411],[3.316,-1.342],[3.392,-1.272],[3.464,-1.2],[3.532,-1.127],[3.595,-1.052],[3.654,-0.976],[3.709,-0.899],[3.759,-0.821],[3.804,-0.742],[3.845,-0.662],[3.881,-0.581],[3.913,-0.499],[3.939,-0.417],[3.961,-0.334],[3.978,-0.251],[3.99,-0.167],[3.998,-0.084]]}],"points":[{"at":[-3.2,0]},{"at":[3.2,0]},{"at":[1.69,2.175],"label":"Pencil"}],"segments":[{"from":[-3.2,0],"to":[1.69,2.175]},{"from":[3.2,0],"to":[1.69,2.175]},{"from":[-0.5,-1.1],"to":[-3.05,-0.12],"arrow":true},{"from":[0.5,-1.1],"to":[3.05,-0.12],"arrow":true}],"texts":[{"at":[0,-1.45],"text":"Foci","anchor":"middle"}]}
 {{< /apfigure >}}
 
 Every ellipse has two axes of symmetry. The longer axis is called the **major axis**, and the shorter axis is called the **minor axis**. Each endpoint of the major axis is the **vertex** of the ellipse (plural: **vertices**), and each endpoint of the minor axis is a **co-vertex** of the ellipse. The **center of an ellipse** is the midpoint of both the major and minor axes. The axes are perpendicular at the center. The foci always lie on the major axis, and the sum of the distances from the foci to any point on the ellipse (the constant sum) is greater than the distance between the foci. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A horizontal ellipse centered at the origin with its major axis on the x-axis and minor axis on the y-axis. The vertices sit at the ends of the major axis, the co-vertices at the ends of the minor axis, the two foci lie inside the ellipse on the major axis, and the center is the origin.","xMin":-9,"xMax":9,"yMin":-6,"yMax":6,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":4}],"points":[{"at":[5,0],"label":"Vertex","labelSide":"ne"},{"at":[-5,0],"label":"Vertex","labelSide":"nw"},{"at":[0,4],"label":"Co-vertex","labelSide":"ne"},{"at":[0,-4],"label":"Co-vertex","labelSide":"se"},{"at":[3,0],"label":"Focus","labelSide":"s","labelNudge":[0,14]},{"at":[-3,0],"label":"Focus","labelSide":"s","labelNudge":[0,14]},{"at":[0,0],"label":"Center","labelSide":"sw"}],"texts":[{"at":[2.2,0.35],"text":"Major Axis","anchor":"middle"},{"at":[0.3,2],"text":"Minor Axis","anchor":"start"}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin with its major axis on the x-axis and its minor axis on the y-axis. The vertices sit at the ends of the major axis, the co-vertices at the ends of the minor axis, the two foci lie inside the ellipse on the major axis, and the center is the origin.","xMin":-8,"xMax":8,"yMin":-6,"yMax":6,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":4}],"points":[{"at":[5,0],"label":"Vertex","labelSide":"ne"},{"at":[-5,0],"label":"Vertex","labelSide":"nw"},{"at":[0,4],"label":"Co‐vertex","labelSide":"ne"},{"at":[0,-4],"label":"Co‐vertex","labelSide":"se"},{"at":[3,0],"label":"Focus","labelSide":"n"},{"at":[-3,0],"label":"Focus","labelSide":"n"},{"at":[0,0],"label":"Center","labelSide":"se"}],"texts":[{"at":[-1.9,-1.2],"text":"Major Axis","anchor":"middle"},{"at":[0.3,2],"text":"Minor Axis","anchor":"start"}]}
 {{< /apfigure >}}
 
 In this section, we restrict ellipses to those that are positioned vertically or horizontally in the coordinate plane. That is, the axes will either lie on or be parallel to the $x$- and $y$-axes. Later in the chapter, we will see ellipses that are rotated in the coordinate plane.
@@ -51,7 +51,7 @@ To work with horizontal and vertical ellipses in the coordinate plane, we consid
 To derive the equation of an ellipse centered at the origin, we begin with the foci $(-c,0)$ and $(c,0)$. The ellipse is the set of all points $(x,y)$ such that the sum of the distances from $(x,y)$ to the foci is constant, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (negative a, 0) and (a, 0) and foci at (negative c, 0) and (c, 0). Segments of length d1 and d2 connect a point (x, y) on the ellipse to the two foci.","xMin":-8,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":3}],"points":[{"at":[5,0],"label":"(a, 0)","labelSide":"ne"},{"at":[-5,0],"label":"(−a, 0)","labelSide":"nw"},{"at":[4,0],"label":"(c, 0)","labelSide":"sw"},{"at":[-4,0],"label":"(−c, 0)","labelSide":"se"},{"at":[2.868,2.457],"label":"(x, y)","labelSide":"ne"}],"segments":[{"from":[-4,0],"to":[2.868,2.457],"label":"d₁","labelAt":0.35},{"from":[4,0],"to":[2.868,2.457],"label":"d₂","labelAt":0.4}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (negative a, 0) and (a, 0) and foci at (negative c, 0) and (c, 0). Segments of length d1 and d2 connect a point (x, y) on the ellipse to the two foci.","xMin":-8,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":3}],"points":[{"at":[5,0],"label":"(a, 0)","labelSide":"ne"},{"at":[-5,0],"label":"(−a, 0)","labelSide":"nw"},{"at":[4,0],"label":"(c, 0)","labelSide":"sw"},{"at":[-4,0],"label":"(−c, 0)","labelSide":"se"},{"at":[2.868,2.457],"label":"(x, y)","labelSide":"ne"}],"segments":[{"from":[-4,0],"to":[2.868,2.457],"label":"d₁","labelSide":"nw"},{"from":[4,0],"to":[2.868,2.457],"label":"d₂"}]}
 {{< /apfigure >}}
 
 If $(a,0)$ is a vertex of the ellipse, the distance from $(-c,0)$ to $(a,0)$ is $a-(-c)=a+c$. The distance from $(c,0)$ to $(a,0)$ is $a-c$. The sum of the distances from the foci to the vertex is
@@ -132,13 +132,13 @@ The key features of the ellipse are its center, vertices, co-vertices, foci, and
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A horizontal ellipse centered at the origin with major axis on the x-axis: vertices at (−a, 0) and (a, 0), co-vertices at (0, −b) and (0, b), and foci at (−c, 0) and (c, 0).","xMin":-8,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":3}],"points":[{"at":[5,0],"label":"(a, 0)","labelSide":"ne"},{"at":[-5,0],"label":"(−a, 0)","labelSide":"nw"},{"at":[0,3],"label":"(0, b)","labelSide":"ne"},{"at":[0,-3],"label":"(0, −b)","labelSide":"se"},{"at":[4,0],"label":"(c, 0)","labelSide":"sw"},{"at":[-4,0],"label":"(−c, 0)","labelSide":"se"}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin, labelled (0, 0), with its major axis on the x-axis and its minor axis on the y-axis, each named: vertices at (−a, 0) and (a, 0), co-vertices at (0, −b) and (0, b), and foci at (−c, 0) and (c, 0).","xMin":-8,"xMax":8,"yMin":-5,"yMax":5,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":3}],"points":[{"at":[5,0],"label":"(a, 0)","labelSide":"ne"},{"at":[-5,0],"label":"(−a, 0)","labelSide":"nw"},{"at":[0,3],"label":"(0, b)","labelSide":"ne"},{"at":[0,-3],"label":"(0, −b)","labelSide":"se"},{"at":[4,0],"label":"(c, 0)","labelSide":"nw"},{"at":[-4,0],"label":"(−c, 0)","labelSide":"ne"},{"at":[0,0],"label":"(0, 0)","labelSide":"se"}],"texts":[{"at":[-2.1,-1.0],"text":"Major Axis","anchor":"middle"},{"at":[0.3,1.3],"text":"Minor Axis","anchor":"start"}]}
 {{< /apfigure >}}
 
 *(a) Horizontal ellipse with center $(0,0)$.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vertical ellipse centered at the origin with major axis on the y-axis: vertices at (0, −a) and (0, a), co-vertices at (−b, 0) and (b, 0), and foci at (0, −c) and (0, c).","xMin":-6,"xMax":6,"yMin":-7,"yMax":7,"tickLabels":false,"circles":[{"at":[0,0],"rx":4,"ry":5}],"points":[{"at":[0,5],"label":"(0, a)","labelSide":"ne"},{"at":[0,-5],"label":"(0, −a)","labelSide":"se"},{"at":[4,0],"label":"(b, 0)","labelSide":"ne"},{"at":[-4,0],"label":"(−b, 0)","labelSide":"nw"},{"at":[0,3],"label":"(0, c)","labelSide":"e","labelNudge":[10,0]},{"at":[0,-3],"label":"(0, −c)","labelSide":"e","labelNudge":[10,0]}]}
+{"ariaLabel":"A vertical ellipse centered at the origin, labelled (0, 0), with its major axis on the y-axis and its minor axis on the x-axis, each named: vertices at (0, −a) and (0, a), co-vertices at (−b, 0) and (b, 0), and foci at (0, −c) and (0, c).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":false,"circles":[{"at":[0,0],"rx":4,"ry":5}],"points":[{"at":[0,5],"label":"(0, a)","labelSide":"ne"},{"at":[0,-5],"label":"(0, −a)","labelSide":"se"},{"at":[4,0],"label":"(b, 0)","labelSide":"ne"},{"at":[-4,0],"label":"(−b, 0)","labelSide":"nw"},{"at":[0,3],"label":"(0, c)","labelSide":"e"},{"at":[0,-3],"label":"(0, −c)","labelSide":"e"},{"at":[0,0],"label":"(0, 0)","labelSide":"se"}],"texts":[{"at":[0.3,1.9],"text":"Major","anchor":"start"},{"at":[0.3,1.2],"text":"Axis","anchor":"start"},{"at":[-2.1,-1.0],"text":"Minor","anchor":"middle"},{"at":[-2.1,-1.7],"text":"Axis","anchor":"middle"}]}
 {{< /apfigure >}}
 
 *(b) Vertical ellipse with center $(0,0)$.*
@@ -180,7 +180,7 @@ Now we need only substitute $a^2=64$ and $b^2=39$ into the standard form of the 
   answer="x^2+\frac{y^2}{16}=1"
   answerForm="conic-standard-form"
   answerDisplay="$x^2+\tfrac{y^2}{16}=1$"
-  hint="The foci lie on the $y$-axis, so use $\tfrac{x^2}{b^2}+\tfrac{y^2}{a^2}=1$ with $a^2=16$ and $c^2=15$, then solve $c^2=a^2-b^2$ for $b^2$."
+  hint="The foci lie on the $y$-axis, so use $\tfrac{x^2}{b^2}+\tfrac{y^2}{a^2}=1$; read $a$ from the vertices and $c$ from the foci, then solve $c^2=a^2-b^2$ for $b^2$."
 >}}
 
 {{< callout type="info" >}}
@@ -226,13 +226,13 @@ Like the graphs of other equations, the graph of an ellipse can be translated. I
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A horizontal ellipse centered at (h, k) with major axis parallel to the x-axis: vertices at (h−a, k) and (h+a, k), co-vertices at (h, k−b) and (h, k+b), and foci at (h−c, k) and (h+c, k).","xMin":-4,"xMax":10,"yMin":-3,"yMax":7,"tickLabels":false,"circles":[{"at":[3,2],"rx":5,"ry":4}],"points":[{"at":[3,2],"label":"(h, k)","labelSide":"n"},{"at":[8,2],"label":"(h+a, k)","labelSide":"ne"},{"at":[-2,2],"label":"(h−a, k)","labelSide":"nw"},{"at":[3,6],"label":"(h, k+b)","labelSide":"n"},{"at":[3,-2],"label":"(h, k−b)","labelSide":"s"},{"at":[6,2],"label":"(h+c, k)","labelSide":"sw"},{"at":[0,2],"label":"(h−c, k)","labelSide":"se"}]}
+{"ariaLabel":"A horizontal ellipse centered at (h, k) with its major axis, dashed, parallel to the x-axis and its minor axis, dashed, parallel to the y-axis, each named: vertices at (h−a, k) and (h+a, k), co-vertices at (h, k−b) and (h, k+b), and foci at (h−c, k) and (h+c, k).","xMin":-1,"xMax":16,"yMin":-1,"yMax":11,"unit":24,"tickLabels":false,"circles":[{"at":[8,6],"rx":5,"ry":4}],"points":[{"at":[8,6],"label":"(h, k)","labelSide":"sw"},{"at":[13,6],"label":"(h+a, k)","labelSide":"e"},{"at":[3,6],"label":"(h−a, k)","labelSide":"w"},{"at":[8,10],"label":"(h, k+b)","labelSide":"n"},{"at":[8,2],"label":"(h, k−b)","labelSide":"s"},{"at":[11,6],"label":"(h+c, k)","labelSide":"n"},{"at":[5,6],"label":"(h−c, k)","labelSide":"n"}],"segments":[{"from":[3,6],"to":[13,6],"dashed":true},{"from":[8,2],"to":[8,10],"dashed":true}],"texts":[{"at":[9.3,5.1],"text":"Major Axis","anchor":"start"},{"at":[8.3,8.2],"text":"Minor Axis","anchor":"start"}]}
 {{< /apfigure >}}
 
 *(a) Horizontal ellipse with center $(h,k)$.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vertical ellipse centered at (h, k) with major axis parallel to the y-axis: vertices at (h, k−a) and (h, k+a), co-vertices at (h−b, k) and (h+b, k), and foci at (h, k−c) and (h, k+c).","xMin":-3,"xMax":7,"yMin":-4,"yMax":10,"tickLabels":false,"circles":[{"at":[2,3],"rx":4,"ry":5}],"points":[{"at":[2,3],"label":"(h, k)","labelSide":"n"},{"at":[2,8],"label":"(h, k+a)","labelSide":"n"},{"at":[2,-2],"label":"(h, k−a)","labelSide":"s"},{"at":[-2,3],"label":"(h−b, k)","labelSide":"nw"},{"at":[6,3],"label":"(h+b, k)","labelSide":"ne"},{"at":[2,6],"label":"(h, k+c)","labelSide":"se"},{"at":[2,0],"label":"(h, k−c)","labelSide":"ne"}]}
+{"ariaLabel":"A vertical ellipse centered at (h, k) with its major axis, dashed, parallel to the y-axis and its minor axis, dashed, parallel to the x-axis, each named: vertices at (h, k−a) and (h, k+a), co-vertices at (h−b, k) and (h+b, k), and foci at (h, k−c) and (h, k+c).","xMin":-1,"xMax":14,"yMin":-1,"yMax":15,"unit":26,"tickLabels":false,"circles":[{"at":[7,8],"rx":4,"ry":5}],"points":[{"at":[7,8],"label":"(h, k)","labelSide":"ne"},{"at":[7,13],"label":"(h, k+a)","labelSide":"n"},{"at":[7,3],"label":"(h, k−a)","labelSide":"s"},{"at":[3,8],"label":"(h−b, k)","labelSide":"w"},{"at":[11,8],"label":"(h+b, k)","labelSide":"e"},{"at":[7,11],"label":"(h, k+c)","labelSide":"e"},{"at":[7,5],"label":"(h, k−c)","labelSide":"e"}],"segments":[{"from":[7,3],"to":[7,13],"dashed":true},{"from":[3,8],"to":[11,8],"dashed":true}],"texts":[{"at":[7.3,9.6],"text":"Major Axis","anchor":"start"},{"at":[5.0,7.1],"text":"Minor Axis","anchor":"middle"}]}
 {{< /apfigure >}}
 
 *(b) Vertical ellipse with center $(h,k)$.*
@@ -356,23 +356,25 @@ Therefore, the coordinates of the foci are $(0,\pm4)$.
 Next, we plot and label the center, vertices, co-vertices, and foci, and draw a smooth curve to form the ellipse.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, 5) and (0, -5), co-vertices at (3, 0) and (-3, 0), and foci at (0, 4) and (0, -4).","xMin":-6,"xMax":6,"yMin":-7,"yMax":7,"tickLabels":true,"circles":[{"at":[0,0],"rx":3,"ry":5}],"points":[{"at":[0,5],"label":"(0, 5)","labelSide":"ne"},{"at":[0,-5],"label":"(0, −5)","labelSide":"se"},{"at":[3,0],"label":"(3, 0)","labelSide":"ne"},{"at":[-3,0],"label":"(−3, 0)","labelSide":"nw"},{"at":[0,4]},{"at":[0,-4]}],"texts":[{"at":[2.3,4.2],"text":"(0, 4)","anchor":"start"},{"at":[2.3,-3.8],"text":"(0, −4)","anchor":"start"}]}
+{"ariaLabel":"A vertical ellipse centered at the origin, labelled (0, 0), with vertices at (0, 5) and (0, −5), co-vertices at (3, 0) and (−3, 0), and foci at (0, 4) and (0, −4).","xMin":-6,"xMax":6,"yMin":-7,"yMax":7,"unit":26,"tickLabels":false,"circles":[{"at":[0,0],"rx":3,"ry":5}],"points":[{"at":[0,0],"label":"(0, 0)","labelSide":"ne"},{"at":[0,5],"label":"(0, 5)","labelSide":"ne"},{"at":[0,-5],"label":"(0, −5)","labelSide":"se"},{"at":[3,0],"label":"(3, 0)","labelSide":"ne"},{"at":[-3,0],"label":"(−3, 0)","labelSide":"nw"},{"at":[0,4],"label":"(0, 4)","labelSide":"se"},{"at":[0,-4],"label":"(0, −4)","labelSide":"ne"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph the ellipse given by the equation $\tfrac{x^2}{36}+\tfrac{y^2}{4}=1$. Enter the coordinates of the two vertices, separated by a comma."
   answer="(6,0),(-6,0)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(6,0)$ and $(-6,0)$"
-  hint="Since $36>4$, the major axis is the $x$-axis with $a^2=36$, so the vertices are $(\pm a,0)$."
+  hint="The larger denominator is $a^2$, and the variable above it names the major axis; the vertices lie on that axis, $a$ units from the center."
 >}}
 
 {{< fillin
   question="For the same ellipse $\tfrac{x^2}{36}+\tfrac{y^2}{4}=1$, enter the coordinates of the two foci, separated by a comma."
   answer="(4\sqrt{2},0),(-4\sqrt{2},0)"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$(4\sqrt{2},0)$ and $(-4\sqrt{2},0)$"
-  hint="Solve $c^2=a^2-b^2=36-4$ and place the foci at $(\pm c,0)$."
+  hint="Find $c$ from $c^2=a^2-b^2$ and simplify the radical; the foci lie on the major axis, $c$ units from the center."
 >}}
 
 **Example.** Graph the ellipse given by the equation $4x^2+25y^2=100$. Rewrite the equation in standard form. Then identify and label the center, vertices, co-vertices, and foci.
@@ -407,7 +409,7 @@ Therefore the coordinates of the foci are $(\pm\sqrt{21},0)$.
 Next, we plot and label the center, vertices, co-vertices, and foci, and draw a smooth curve to form the ellipse.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (5, 0) and (-5, 0), co-vertices at (0, 2) and (0, -2), and foci at the square root of 21 and its opposite on the x-axis.","xMin":-6,"xMax":6,"yMin":-5,"yMax":5,"tickLabels":true,"circles":[{"at":[0,0],"rx":5,"ry":2}],"points":[{"at":[5,0]},{"at":[-5,0]},{"at":[0,2]},{"at":[0,-2]},{"at":[4.583,0]},{"at":[-4.583,0]}],"texts":[{"at":[5,2.7],"text":"(5, 0)","anchor":"middle"},{"at":[-5,2.7],"text":"(−5, 0)","anchor":"middle"},{"at":[0.4,2.4],"text":"(0, 2)","anchor":"start"},{"at":[0.4,-2.7],"text":"(0, −2)","anchor":"start"},{"at":[3.6,-2.7],"text":"(√21, 0)","anchor":"start"},{"at":[-3.6,-2.7],"text":"(−√21, 0)","anchor":"end"}]}
+{"ariaLabel":"A horizontal ellipse centered at the origin, labelled (0, 0), with vertices at (5, 0) and (−5, 0), co-vertices at (0, 2) and (0, −2), and foci at (√21, 0) and (−√21, 0), just inside the vertices.","xMin":-7,"xMax":7,"yMin":-4,"yMax":4,"unit":36,"tickLabels":false,"circles":[{"at":[0,0],"rx":5,"ry":2}],"points":[{"at":[0,0],"label":"(0, 0)","labelSide":"se"},{"at":[5,0],"label":"(5, 0)","labelSide":"ne"},{"at":[-5,0],"label":"(−5, 0)","labelSide":"nw"},{"at":[0,2],"label":"(0, 2)","labelSide":"ne"},{"at":[0,-2],"label":"(0, −2)","labelSide":"se"},{"at":[4.583,0],"label":"(√21, 0)","labelSide":"nw"},{"at":[-4.583,0],"label":"(−√21, 0)","labelSide":"ne"}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -422,8 +424,9 @@ Next, we plot and label the center, vertices, co-vertices, and foci, and draw a 
   question="For the same ellipse $49x^2+16y^2=784$, enter the coordinates of the two foci, separated by a comma."
   answer="(0,\sqrt{33}),(0,-\sqrt{33})"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$(0,\sqrt{33})$ and $(0,-\sqrt{33})$"
-  hint="In standard form, $a^2=49$ and $b^2=16$; the major axis is the $y$-axis, so the foci are $(0,\pm c)$ with $c^2=a^2-b^2$."
+  hint="Use the standard form from the item above: the larger denominator is $a^2$ and names the major axis; find $c$ from $c^2=a^2-b^2$ and place the foci on that axis, $c$ units from the center."
 >}}
 
 ### Graphing Ellipses Not Centered at the Origin
@@ -472,12 +475,13 @@ Therefore, the coordinates of the foci are $(-2,5-\sqrt{5})$ and $(-2,5+\sqrt{5}
 Next, we plot and label the center, vertices, co-vertices, and foci, and draw a smooth curve to form the ellipse.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A vertical ellipse centered at (-2, 5) with vertices at (-2, 2) and (-2, 8), co-vertices at (-4, 5) and (0, 5), and foci at (-2, 5 minus the square root of 5) and (-2, 5 plus the square root of 5).","xMin":-8,"xMax":4,"yMin":0,"yMax":10,"tickLabels":true,"circles":[{"at":[-2,5],"rx":2,"ry":3}],"points":[{"at":[-2,8],"label":"(−2, 8)","labelSide":"n"},{"at":[-2,2],"label":"(−2, 2)","labelSide":"s"},{"at":[-4,5],"label":"(−4, 5)","labelSide":"w"},{"at":[0,5],"label":"(0, 5)","labelSide":"e"},{"at":[-2,7.236]},{"at":[-2,2.764]}],"texts":[{"at":[0.3,7.236],"text":"(−2, 5+√5)","anchor":"start"},{"at":[0.3,2.764],"text":"(−2, 5−√5)","anchor":"start"}]}
+{"ariaLabel":"A vertical ellipse centered at (−2, 5), labelled, its major and minor axes drawn dashed, with vertices at (−2, 8) and (−2, 2), co-vertices at (−4, 5) and (0, 5), and foci at (−2, 5 + √5) and (−2, 5 − √5), each focus labelled at the left with an arrow pointing to it.","xMin":-9,"xMax":3,"yMin":0,"yMax":10,"unit":32,"tickLabels":false,"circles":[{"at":[-2,5],"rx":2,"ry":3}],"points":[{"at":[-2,5],"label":"(−2, 5)","labelSide":"sw"},{"at":[-2,8],"label":"(−2, 8)","labelSide":"n"},{"at":[-2,2],"label":"(−2, 2)","labelSide":"s"},{"at":[-4,5],"label":"(−4, 5)","labelSide":"w"},{"at":[0,5],"label":"(0, 5)","labelSide":"e"},{"at":[-2,7.236]},{"at":[-2,2.764]}],"segments":[{"from":[-2,2],"to":[-2,8],"dashed":true},{"from":[-4,5],"to":[0,5],"dashed":true},{"from":[-5.3,7.236],"to":[-2.12,7.236],"arrows":"end"},{"from":[-5.3,2.764],"to":[-2.12,2.764],"arrows":"end"}],"texts":[{"at":[-5.45,7.236],"text":"(−2, 5+√5)","anchor":"end"},{"at":[-5.45,2.764],"text":"(−2, 5−√5)","anchor":"end"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph the ellipse given by the equation $\tfrac{(x-4)^2}{36}+\tfrac{(y-2)^2}{20}=1$. Enter the center as an ordered pair $(x,y)$."
   answer="(4,2)"
+  answerForm="decimal"
   answerDisplay="$(4,2)$"
   hint="The center of $\tfrac{(x-h)^2}{a^2}+\tfrac{(y-k)^2}{b^2}=1$ is $(h,k)$."
 >}}
@@ -486,8 +490,9 @@ Next, we plot and label the center, vertices, co-vertices, and foci, and draw a 
   question="For the same ellipse $\tfrac{(x-4)^2}{36}+\tfrac{(y-2)^2}{20}=1$, enter the coordinates of the two vertices, separated by a comma."
   answer="(-2,2),(10,2)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(-2,2)$ and $(10,2)$"
-  hint="Since $36>20$, the major axis is parallel to the $x$-axis with $a^2=36$, so the vertices are $(h\pm a,k)$."
+  hint="The larger denominator is $a^2$, and the variable above it tells which axis the major axis is parallel to; the vertices lie on it, $a$ units from the center."
 >}}
 
 **Example.** Graph the ellipse given by the equation $4x^2+9y^2-40x+36y+100=0$. Identify and label the center, vertices, co-vertices, and foci.
@@ -536,7 +541,7 @@ Therefore, the coordinates of the foci are $(5-\sqrt{5},-2)$ and $(5+\sqrt{5},-2
 Next we plot and label the center, vertices, co-vertices, and foci, and draw a smooth curve to form the ellipse, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A horizontal ellipse centered at (5, -2) with vertices at (2, -2) and (8, -2), co-vertices at (5, 0) and (5, -4), and foci at (5 minus the square root of 5, -2) and (5 plus the square root of 5, -2).","xMin":-1,"xMax":12,"yMin":-7,"yMax":2,"tickLabels":true,"circles":[{"at":[5,-2],"rx":3,"ry":2}],"points":[{"at":[2,-2],"label":"(2, −2)","labelSide":"w"},{"at":[8,-2],"label":"(8, −2)","labelSide":"e"},{"at":[5,0],"label":"(5, 0)","labelSide":"ne"},{"at":[5,-4],"label":"(5, −4)","labelSide":"se"},{"at":[2.764,-2]},{"at":[7.236,-2]}],"texts":[{"at":[2.764,-5.6],"text":"(5−√5, −2)","anchor":"middle"},{"at":[7.236,-5.6],"text":"(5+√5, −2)","anchor":"middle"}],"unit":45}
+{"ariaLabel":"A horizontal ellipse centered at (5, −2), labelled, its major and minor axes drawn dashed, with vertices at (2, −2) and (8, −2), co-vertices at (5, 0) and (5, −4), and foci at (5 − √5, −2) and (5 + √5, −2), each focus labelled above the x-axis with an arrow pointing down to it.","xMin":-1,"xMax":10,"yMin":-6,"yMax":3,"unit":40,"tickLabels":"y","circles":[{"at":[5,-2],"rx":3,"ry":2}],"points":[{"at":[5,-2],"label":"(5, −2)","labelSide":"se"},{"at":[2,-2],"label":"(2, −2)","labelSide":"w"},{"at":[8,-2],"label":"(8, −2)","labelSide":"e"},{"at":[5,0],"label":"(5, 0)","labelSide":"n"},{"at":[5,-4],"label":"(5, −4)","labelSide":"s"},{"at":[2.764,-2]},{"at":[7.236,-2]}],"segments":[{"from":[2,-2],"to":[8,-2],"dashed":true},{"from":[5,-4],"to":[5,0],"dashed":true},{"from":[2.764,1.2],"to":[2.764,-1.85],"arrows":"end"},{"from":[7.236,1.2],"to":[7.236,-1.85],"arrows":"end"}],"texts":[{"at":[2.764,1.55],"text":"(5−√5, −2)","anchor":"middle"},{"at":[7.236,1.55],"text":"(5+√5, −2)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -550,8 +555,9 @@ Next we plot and label the center, vertices, co-vertices, and foci, and draw a s
 {{< fillin
   question="For the same ellipse $4x^2+y^2-24x+2y+21=0$, enter its center as an ordered pair $(x,y)$."
   answer="(3,-1)"
+  answerForm="decimal"
   answerDisplay="$(3,-1)$"
-  hint="Once the equation is in standard form $\tfrac{(x-h)^2}{b^2}+\tfrac{(y-k)^2}{a^2}=1$, the center is $(h,k)$."
+  hint="Once the equation is in standard form, the center $(h,k)$ is read from the squared terms $(x-h)^2$ and $(y-k)^2$."
 >}}
 
 ### Solving Applied Problems Involving Ellipses
@@ -559,39 +565,40 @@ Next we plot and label the center, vertices, co-vertices, and foci, and draw a s
 Many real-world situations can be represented by ellipses, including orbits of planets, satellites, moons and comets, and shapes of boat keels, rudders, and some airplane wings. A medical device called a lithotripter uses elliptical reflectors to break up kidney stones by generating sound waves. Some buildings, called whispering chambers, are designed with elliptical domes so that a person whispering at one focus can easily be heard by someone standing at the other focus. This occurs because of the acoustic properties of an ellipse. When a sound wave originates at one focus of a whispering chamber, the sound wave will be reflected off the elliptical dome and back to the other focus, as shown below. In the whisper chamber at the Museum of Science and Industry in Chicago, two people standing at the foci — about 43 feet apart — can hear each other whisper. When these chambers are placed in unexpected places, such as the ones inside Bush International Airport in Houston and Grand Central Terminal in New York City, they can induce surprised reactions among travelers.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A semi-elliptical dome with two foci, F prime on the left and F on the right. Several rays leave F prime, strike the inside of the dome, and reflect to arrive at F.","unit":55,"polygons":[{"points":[[4,0],[3.999,0.042],[3.998,0.084],[3.995,0.126],[3.99,0.167],[3.985,0.209],[3.978,0.251],[3.97,0.292],[3.961,0.334],[3.951,0.375],[3.939,0.417],[3.927,0.458],[3.913,0.499],[3.897,0.54],[3.881,0.581],[3.864,0.621],[3.845,0.662],[3.825,0.702],[3.804,0.742],[3.782,0.781],[3.759,0.821],[3.734,0.86],[3.709,0.899],[3.682,0.938],[3.654,0.976],[3.625,1.014],[3.595,1.052],[3.564,1.09],[3.532,1.127],[3.498,1.164],[3.464,1.2],[3.429,1.236],[3.392,1.272],[3.355,1.307],[3.316,1.342],[3.277,1.377],[3.236,1.411],[3.195,1.444],[3.152,1.478],[3.109,1.51],[3.064,1.543],[3.019,1.575],[2.973,1.606],[2.925,1.637],[2.877,1.667],[2.828,1.697],[2.779,1.726],[2.728,1.755],[2.677,1.784],[2.624,1.811],[2.571,1.839],[2.517,1.865],[2.463,1.891],[2.407,1.917],[2.351,1.942],[2.294,1.966],[2.237,1.99],[2.179,2.013],[2.12,2.035],[2.06,2.057],[2,2.078],[1.939,2.099],[1.878,2.119],[1.816,2.138],[1.753,2.157],[1.69,2.175],[1.627,2.193],[1.563,2.209],[1.498,2.225],[1.433,2.241],[1.368,2.255],[1.302,2.269],[1.236,2.283],[1.169,2.295],[1.103,2.307],[1.035,2.318],[0.968,2.329],[0.9,2.338],[0.832,2.348],[0.763,2.356],[0.695,2.364],[0.626,2.37],[0.557,2.377],[0.487,2.382],[0.418,2.387],[0.349,2.391],[0.279,2.394],[0.209,2.397],[0.14,2.399],[0.07,2.4],[0,2.4],[-0.07,2.4],[-0.14,2.399],[-0.209,2.397],[-0.279,2.394],[-0.349,2.391],[-0.418,2.387],[-0.487,2.382],[-0.557,2.377],[-0.626,2.37],[-0.695,2.364],[-0.763,2.356],[-0.832,2.348],[-0.9,2.338],[-0.968,2.329],[-1.035,2.318],[-1.103,2.307],[-1.169,2.295],[-1.236,2.283],[-1.302,2.269],[-1.368,2.255],[-1.433,2.241],[-1.498,2.225],[-1.563,2.209],[-1.627,2.193],[-1.69,2.175],[-1.753,2.157],[-1.816,2.138],[-1.878,2.119],[-1.939,2.099],[-2,2.078],[-2.06,2.057],[-2.12,2.035],[-2.179,2.013],[-2.237,1.99],[-2.294,1.966],[-2.351,1.942],[-2.407,1.917],[-2.463,1.891],[-2.517,1.865],[-2.571,1.839],[-2.624,1.811],[-2.677,1.784],[-2.728,1.755],[-2.779,1.726],[-2.828,1.697],[-2.877,1.667],[-2.925,1.637],[-2.973,1.606],[-3.019,1.575],[-3.064,1.543],[-3.109,1.51],[-3.152,1.478],[-3.195,1.444],[-3.236,1.411],[-3.277,1.377],[-3.316,1.342],[-3.355,1.307],[-3.392,1.272],[-3.429,1.236],[-3.464,1.2],[-3.498,1.164],[-3.532,1.127],[-3.564,1.09],[-3.595,1.052],[-3.625,1.014],[-3.654,0.976],[-3.682,0.938],[-3.709,0.899],[-3.734,0.86],[-3.759,0.821],[-3.782,0.781],[-3.804,0.742],[-3.825,0.702],[-3.845,0.662],[-3.864,0.621],[-3.881,0.581],[-3.897,0.54],[-3.913,0.499],[-3.927,0.458],[-3.939,0.417],[-3.951,0.375],[-3.961,0.334],[-3.97,0.292],[-3.978,0.251],[-3.985,0.209],[-3.99,0.167],[-3.995,0.126],[-3.998,0.084],[-3.999,0.042],[-4,0]]}],"points":[{"at":[-3.2,0]},{"at":[3.2,0],"label":"F"}],"texts":[{"at":[-3.2,-0.3],"text":"F′","anchor":"middle"}],"segments":[{"from":[-3.2,0],"to":[2,2.078],"arrow":true},{"from":[2,2.078],"to":[3.2,0],"arrow":true},{"from":[-3.2,0],"to":[-0.695,2.364],"arrow":true},{"from":[-0.695,2.364],"to":[3.2,0],"arrow":true},{"from":[-3.2,0],"to":[-3.064,1.543],"arrow":true},{"from":[-3.064,1.543],"to":[3.2,0],"arrow":true}]}
+{"ariaLabel":"A semi-elliptical dome over a flat floor, with two foci on the floor: F′ on the left and F on the right. Three rays leave F′, strike the inside of the dome, and reflect to arrive at F; an arrowhead along each leg shows the direction of travel.","unit":55,"polygons":[{"points":[[4,0],[3.998,0.084],[3.99,0.167],[3.978,0.251],[3.961,0.334],[3.939,0.417],[3.913,0.499],[3.881,0.581],[3.845,0.662],[3.804,0.742],[3.759,0.821],[3.709,0.899],[3.654,0.976],[3.595,1.052],[3.532,1.127],[3.464,1.2],[3.392,1.272],[3.316,1.342],[3.236,1.411],[3.152,1.478],[3.064,1.543],[2.973,1.606],[2.877,1.667],[2.779,1.726],[2.677,1.784],[2.571,1.839],[2.463,1.891],[2.351,1.942],[2.237,1.99],[2.12,2.035],[2,2.078],[1.878,2.119],[1.753,2.157],[1.627,2.193],[1.498,2.225],[1.368,2.255],[1.236,2.283],[1.103,2.307],[0.968,2.329],[0.832,2.348],[0.695,2.364],[0.557,2.377],[0.418,2.387],[0.279,2.394],[0.14,2.399],[0,2.4],[-0.14,2.399],[-0.279,2.394],[-0.418,2.387],[-0.557,2.377],[-0.695,2.364],[-0.832,2.348],[-0.968,2.329],[-1.103,2.307],[-1.236,2.283],[-1.368,2.255],[-1.498,2.225],[-1.627,2.193],[-1.753,2.157],[-1.878,2.119],[-2,2.078],[-2.12,2.035],[-2.237,1.99],[-2.351,1.942],[-2.463,1.891],[-2.571,1.839],[-2.677,1.784],[-2.779,1.726],[-2.877,1.667],[-2.973,1.606],[-3.064,1.543],[-3.152,1.478],[-3.236,1.411],[-3.316,1.342],[-3.392,1.272],[-3.464,1.2],[-3.532,1.127],[-3.595,1.052],[-3.654,0.976],[-3.709,0.899],[-3.759,0.821],[-3.804,0.742],[-3.845,0.662],[-3.881,0.581],[-3.913,0.499],[-3.939,0.417],[-3.961,0.334],[-3.978,0.251],[-3.99,0.167],[-3.998,0.084],[-4,0]]}],"segments":[{"from":[-3.2,0],"to":[-1.64,0.623],"arrow":true},{"from":[-1.64,0.623],"to":[2,2.078]},{"from":[2,2.078],"to":[2.6,1.039],"arrow":true},{"from":[2.6,1.039],"to":[3.2,0]},{"from":[-3.2,0],"to":[-2.248,0.898],"arrow":true},{"from":[-2.248,0.898],"to":[-0.695,2.364]},{"from":[-0.695,2.364],"to":[1.253,1.182],"arrow":true},{"from":[1.253,1.182],"to":[3.2,0]},{"from":[-3.2,0],"to":[-3.132,0.771],"arrow":true},{"from":[-3.132,0.771],"to":[-3.064,1.543]},{"from":[-3.064,1.543],"to":[0.068,0.771],"arrow":true},{"from":[0.068,0.771],"to":[3.2,0]}],"points":[{"at":[-3.2,0]},{"at":[3.2,0]}],"texts":[{"at":[-3.2,-0.4],"text":"F′","anchor":"middle"},{"at":[3.2,-0.4],"text":"F","anchor":"middle"}]}
 {{< /apfigure >}}
 
 **Example.** A large room in an art gallery is a whispering chamber. Its dimensions are $46$ feet wide by $96$ feet long.
 
-- What is the standard form of the equation of the ellipse representing the outline of the room? Hint: assume a horizontal ellipse, and let the center of the room be the point $(0,0)$.
-- If two visitors standing at the foci of this room can hear each other whisper, how far apart are the two visitors? Round to the nearest foot.
+- (a) What is the standard form of the equation of the ellipse representing the outline of the room? Hint: assume a horizontal ellipse, and let the center of the room be the point $(0,0)$.
+- (b) If two visitors standing at the foci of this room can hear each other whisper, how far apart are the two visitors? Round to the nearest foot.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A horizontal ellipse representing the outline of a whispering-chamber floor, with a focus marked on each side of center. Rays leave one focus, strike the wall, and reflect to arrive at the other focus.","unit":55,"polygons":[{"points":[[4,0],[3.998,0.084],[3.99,0.167],[3.978,0.251],[3.961,0.334],[3.939,0.417],[3.913,0.499],[3.881,0.581],[3.845,0.662],[3.804,0.742],[3.759,0.821],[3.709,0.899],[3.654,0.976],[3.595,1.052],[3.532,1.127],[3.464,1.2],[3.392,1.272],[3.316,1.342],[3.236,1.411],[3.152,1.478],[3.064,1.543],[2.973,1.606],[2.877,1.667],[2.779,1.726],[2.677,1.784],[2.571,1.839],[2.463,1.891],[2.351,1.942],[2.237,1.99],[2.12,2.035],[2,2.078],[1.878,2.119],[1.753,2.157],[1.627,2.193],[1.498,2.225],[1.368,2.255],[1.236,2.283],[1.103,2.307],[0.968,2.329],[0.832,2.348],[0.695,2.364],[0.557,2.377],[0.418,2.387],[0.279,2.394],[0.14,2.399],[0,2.4],[-0.14,2.399],[-0.279,2.394],[-0.418,2.387],[-0.557,2.377],[-0.695,2.364],[-0.832,2.348],[-0.968,2.329],[-1.103,2.307],[-1.236,2.283],[-1.368,2.255],[-1.498,2.225],[-1.627,2.193],[-1.753,2.157],[-1.878,2.119],[-2,2.078],[-2.12,2.035],[-2.237,1.99],[-2.351,1.942],[-2.463,1.891],[-2.571,1.839],[-2.677,1.784],[-2.779,1.726],[-2.877,1.667],[-2.973,1.606],[-3.064,1.543],[-3.152,1.478],[-3.236,1.411],[-3.316,1.342],[-3.392,1.272],[-3.464,1.2],[-3.532,1.127],[-3.595,1.052],[-3.654,0.976],[-3.709,0.899],[-3.759,0.821],[-3.804,0.742],[-3.845,0.662],[-3.881,0.581],[-3.913,0.499],[-3.939,0.417],[-3.961,0.334],[-3.978,0.251],[-3.99,0.167],[-3.998,0.084],[-4,0],[-3.998,-0.084],[-3.99,-0.167],[-3.978,-0.251],[-3.961,-0.334],[-3.939,-0.417],[-3.913,-0.499],[-3.881,-0.581],[-3.845,-0.662],[-3.804,-0.742],[-3.759,-0.821],[-3.709,-0.899],[-3.654,-0.976],[-3.595,-1.052],[-3.532,-1.127],[-3.464,-1.2],[-3.392,-1.272],[-3.316,-1.342],[-3.236,-1.411],[-3.152,-1.478],[-3.064,-1.543],[-2.973,-1.606],[-2.877,-1.667],[-2.779,-1.726],[-2.677,-1.784],[-2.571,-1.839],[-2.463,-1.891],[-2.351,-1.942],[-2.237,-1.99],[-2.12,-2.035],[-2,-2.078],[-1.878,-2.119],[-1.753,-2.157],[-1.627,-2.193],[-1.498,-2.225],[-1.368,-2.255],[-1.236,-2.283],[-1.103,-2.307],[-0.968,-2.329],[-0.832,-2.348],[-0.695,-2.364],[-0.557,-2.377],[-0.418,-2.387],[-0.279,-2.394],[-0.14,-2.399],[0,-2.4],[0.14,-2.399],[0.279,-2.394],[0.418,-2.387],[0.557,-2.377],[0.695,-2.364],[0.832,-2.348],[0.968,-2.329],[1.103,-2.307],[1.236,-2.283],[1.368,-2.255],[1.498,-2.225],[1.627,-2.193],[1.753,-2.157],[1.878,-2.119],[2,-2.078],[2.12,-2.035],[2.237,-1.99],[2.351,-1.942],[2.463,-1.891],[2.571,-1.839],[2.677,-1.784],[2.779,-1.726],[2.877,-1.667],[2.973,-1.606],[3.064,-1.543],[3.152,-1.478],[3.236,-1.411],[3.316,-1.342],[3.392,-1.272],[3.464,-1.2],[3.532,-1.127],[3.595,-1.052],[3.654,-0.976],[3.709,-0.899],[3.759,-0.821],[3.804,-0.742],[3.845,-0.662],[3.881,-0.581],[3.913,-0.499],[3.939,-0.417],[3.961,-0.334],[3.978,-0.251],[3.99,-0.167],[3.998,-0.084]]}],"points":[{"at":[-3.2,0]},{"at":[3.2,0]}],"texts":[{"at":[-3.2,-0.4],"text":"Focus","anchor":"middle"},{"at":[3.2,-0.4],"text":"Focus","anchor":"middle"}],"segments":[{"from":[-3.2,0],"to":[2,2.078],"arrow":true},{"from":[2,2.078],"to":[3.2,0],"arrow":true},{"from":[-3.2,0],"to":[-0.695,2.364],"arrow":true},{"from":[-0.695,2.364],"to":[3.2,0],"arrow":true}]}
+{"ariaLabel":"The outline of the whispering chamber: a horizontal ellipse 96 feet long and 46 feet wide, marked by dimension arrows labelled 96 feet below it and 46 feet beside it. A dot marks each focus, one on each side of center, and four rays leave the left focus, strike the wall, and reflect to arrive at the right focus.","unit":55,"polygons":[{"points":[[4,0],[3.998,0.067],[3.99,0.134],[3.978,0.2],[3.961,0.267],[3.939,0.333],[3.913,0.398],[3.881,0.464],[3.845,0.528],[3.804,0.592],[3.759,0.656],[3.709,0.718],[3.654,0.78],[3.595,0.84],[3.532,0.9],[3.464,0.958],[3.392,1.016],[3.316,1.072],[3.236,1.127],[3.152,1.18],[3.064,1.232],[2.973,1.283],[2.877,1.331],[2.779,1.379],[2.677,1.424],[2.571,1.468],[2.463,1.51],[2.351,1.551],[2.237,1.589],[2.12,1.625],[2,1.66],[1.878,1.692],[1.753,1.723],[1.627,1.751],[1.498,1.777],[1.368,1.801],[1.236,1.823],[1.103,1.842],[0.968,1.86],[0.832,1.875],[0.695,1.888],[0.557,1.898],[0.418,1.906],[0.279,1.912],[0.14,1.915],[0,1.917],[-0.14,1.915],[-0.279,1.912],[-0.418,1.906],[-0.557,1.898],[-0.695,1.888],[-0.832,1.875],[-0.968,1.86],[-1.103,1.842],[-1.236,1.823],[-1.368,1.801],[-1.498,1.777],[-1.627,1.751],[-1.753,1.723],[-1.878,1.692],[-2,1.66],[-2.12,1.625],[-2.237,1.589],[-2.351,1.551],[-2.463,1.51],[-2.571,1.468],[-2.677,1.424],[-2.779,1.379],[-2.877,1.331],[-2.973,1.283],[-3.064,1.232],[-3.152,1.18],[-3.236,1.127],[-3.316,1.072],[-3.392,1.016],[-3.464,0.958],[-3.532,0.9],[-3.595,0.84],[-3.654,0.78],[-3.709,0.718],[-3.759,0.656],[-3.804,0.592],[-3.845,0.528],[-3.881,0.464],[-3.913,0.398],[-3.939,0.333],[-3.961,0.267],[-3.978,0.2],[-3.99,0.134],[-3.998,0.067],[-4,0],[-3.998,-0.067],[-3.99,-0.134],[-3.978,-0.2],[-3.961,-0.267],[-3.939,-0.333],[-3.913,-0.398],[-3.881,-0.464],[-3.845,-0.528],[-3.804,-0.592],[-3.759,-0.656],[-3.709,-0.718],[-3.654,-0.78],[-3.595,-0.84],[-3.532,-0.9],[-3.464,-0.958],[-3.392,-1.016],[-3.316,-1.072],[-3.236,-1.127],[-3.152,-1.18],[-3.064,-1.232],[-2.973,-1.283],[-2.877,-1.331],[-2.779,-1.379],[-2.677,-1.424],[-2.571,-1.468],[-2.463,-1.51],[-2.351,-1.551],[-2.237,-1.589],[-2.12,-1.625],[-2,-1.66],[-1.878,-1.692],[-1.753,-1.723],[-1.627,-1.751],[-1.498,-1.777],[-1.368,-1.801],[-1.236,-1.823],[-1.103,-1.842],[-0.968,-1.86],[-0.832,-1.875],[-0.695,-1.888],[-0.557,-1.898],[-0.418,-1.906],[-0.279,-1.912],[-0.14,-1.915],[0,-1.917],[0.14,-1.915],[0.279,-1.912],[0.418,-1.906],[0.557,-1.898],[0.695,-1.888],[0.832,-1.875],[0.968,-1.86],[1.103,-1.842],[1.236,-1.823],[1.368,-1.801],[1.498,-1.777],[1.627,-1.751],[1.753,-1.723],[1.878,-1.692],[2,-1.66],[2.12,-1.625],[2.237,-1.589],[2.351,-1.551],[2.463,-1.51],[2.571,-1.468],[2.677,-1.424],[2.779,-1.379],[2.877,-1.331],[2.973,-1.283],[3.064,-1.232],[3.152,-1.18],[3.236,-1.127],[3.316,-1.072],[3.392,-1.016],[3.464,-0.958],[3.532,-0.9],[3.595,-0.84],[3.654,-0.78],[3.709,-0.718],[3.759,-0.656],[3.804,-0.592],[3.845,-0.528],[3.881,-0.464],[3.913,-0.398],[3.939,-0.333],[3.961,-0.267],[3.978,-0.2],[3.99,-0.134],[3.998,-0.067]]}],"segments":[{"from":[-4,-2.367],"to":[4,-2.367],"arrow":"both","label":"96 feet","labelSide":"right"},{"from":[4.55,-1.917],"to":[4.55,1.917],"arrow":"both","label":"46 feet","labelSide":"right"},{"from":[-3.511,0],"to":[-0.756,0.83],"arrow":true},{"from":[-0.756,0.83],"to":[2,1.66]},{"from":[2,1.66],"to":[2.756,0.83],"arrow":true},{"from":[2.756,0.83],"to":[3.511,0]},{"from":[-3.511,0],"to":[-2.601,0.869],"arrow":true},{"from":[-2.601,0.869],"to":[-1.69,1.737]},{"from":[-1.69,1.737],"to":[0.911,0.869],"arrow":true},{"from":[0.911,0.869],"to":[3.511,0]},{"from":[-3.511,0],"to":[-2.756,-0.83],"arrow":true},{"from":[-2.756,-0.83],"to":[-2,-1.66]},{"from":[-2,-1.66],"to":[0.756,-0.83],"arrow":true},{"from":[0.756,-0.83],"to":[3.511,0]},{"from":[-3.511,0],"to":[-0.911,-0.869],"arrow":true},{"from":[-0.911,-0.869],"to":[1.69,-1.737]},{"from":[1.69,-1.737],"to":[2.601,-0.869],"arrow":true},{"from":[2.601,-0.869],"to":[3.511,0]}],"points":[{"at":[-3.511,0]},{"at":[3.511,0]}]}
 {{< /apfigure >}}
 
 **Solution.**
 
-- We are assuming a horizontal ellipse with center $(0,0)$, so we need to find an equation of the form $\tfrac{x^2}{a^2}+\tfrac{y^2}{b^2}=1$, where $a>b$. We know that the length of the major axis, $2a$, is longer than the length of the minor axis, $2b$. So the length of the room, $96$, is represented by the major axis, and the width of the room, $46$, is represented by the minor axis.
+- (a) We are assuming a horizontal ellipse with center $(0,0)$, so we need to find an equation of the form $\tfrac{x^2}{a^2}+\tfrac{y^2}{b^2}=1$, where $a>b$. We know that the length of the major axis, $2a$, is longer than the length of the minor axis, $2b$. So the length of the room, $96$, is represented by the major axis, and the width of the room, $46$, is represented by the minor axis.
 
   Solving for $a$, we have $2a=96$, so $a=48$, and $a^2=2{,}304$.
 
   Solving for $b$, we have $2b=46$, so $b=23$, and $b^2=529$.
 
   Therefore, the equation of the ellipse is $\tfrac{x^2}{2{,}304}+\tfrac{y^2}{529}=1$.
-- To find the distance between the senators, we must find the distance between the foci, $(\pm c,0)$, where $c^2=a^2-b^2$. Solving for $c$, we have:
+- (b) To find the distance between the visitors, we must find the distance between the foci, $(\pm c,0)$, where $c^2=a^2-b^2$. Solving for $c$, we have:
 
 $$
 \begin{array}{lrcl}
+& c^2 &=& a^2-b^2 \\[4pt]
 \text{Substitute using the values found in part (a).} & c^2 &=& 2{,}304-529 \\[4pt]
 \text{Take the square root of both sides.} & c &=& \pm\sqrt{2{,}304-529} \\[4pt]
-\text{Subtract.} & c &=& \pm\sqrt{1775} \\[4pt]
+\text{Subtract.} & c &=& \pm\sqrt{1{,}775} \\[4pt]
 \text{Round to the nearest foot.} & c &\approx& \pm42
 \end{array}
 $$
 
-The points $(\pm42,0)$ represent the foci. Thus, the distance between the senators is $2(42)=84$ feet.
+The points $(\pm42,0)$ represent the foci. Thus, the distance between the visitors is $2(42)=84$ feet.
 
 {{< fillin
   question="Suppose a whispering chamber is $480$ feet long and $320$ feet wide. Assuming a horizontal ellipse centered at $(0,0)$, write the standard form of the equation of the ellipse representing the room."
@@ -606,7 +613,7 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   answer="358"
   answerForm="decimal"
   answerDisplay="$358$ feet"
-  hint="Find $c=\sqrt{a^2-b^2}$ from part (a), then the distance between the foci is $2c$."
+  hint="Find $c=\sqrt{a^2-b^2}$ from the equation above, then the distance between the foci is $2c$."
 >}}
 
 ## Key equations
@@ -634,19 +641,19 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   answer="\frac{x^2}{25}+\frac{y^2}{29}=1"
   answerForm="conic-standard-form"
   answerDisplay="$\tfrac{x^2}{25}+\tfrac{y^2}{29}=1$"
-  hint="The point $(5,0)$ gives $b^2=25$ directly; the focus $(0,-2)$ gives $c^2=4$, so solve $c^2=a^2-b^2$ for $a^2$."
+  hint="A focus on the $y$-axis puts the major axis there, so the point on the $x$-axis is a co-vertex and gives $b$; the focus gives $c$, then solve $c^2=a^2-b^2$ for $a^2$."
 >}}
 
 {{< fillin
-  question="An ellipse has center $(-3,4)$, vertex $(1,4)$, and one focus at $(-3+2\sqrt{3},4)$. Write the standard form of its equation."
-  answer="\frac{(x+3)^2}{16}+\frac{(y-4)^2}{4}=1"
+  question="An ellipse has center $(4,2)$, vertex $(9,2)$, and one focus at $(4+2\sqrt{6},2)$. Write the standard form of its equation."
+  answer="\frac{(x-4)^2}{25}+(y-2)^2=1"
   answerForm="conic-standard-form"
-  answerDisplay="$\tfrac{(x+3)^2}{16}+\tfrac{(y-4)^2}{4}=1$"
+  answerDisplay="$\tfrac{(x-4)^2}{25}+\tfrac{(y-2)^2}{1}=1$"
   hint="The distance from center to vertex gives $a$; the distance from center to focus gives $c$; then solve $c^2=a^2-b^2$ for $b^2$."
 >}}
 
 {{< fillin
-  question="Write the equation $4x^2+40x+25y^2-100y+100=0$ in standard form."
+  question="Write the equation $4x^2+40x+25y^2-100y+100=0$ in standard form. Write each denominator as a whole number."
   answer="\frac{(x+5)^2}{25}+\frac{(y-2)^2}{4}=1"
   answerForm="conic-standard-form"
   answerDisplay="$\tfrac{(x+5)^2}{25}+\tfrac{(y-2)^2}{4}=1$"
@@ -659,24 +666,27 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   question="Graph the ellipse $\tfrac{x^2}{16}+\tfrac{y^2}{9}=1$, noting its center, vertices, and foci. Enter the two vertices, separated by a comma."
   answer="(4,0),(-4,0)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(4,0)$ and $(-4,0)$"
-  hint="Since $16>9$, the major axis is the $x$-axis, so the vertices are $(\pm a,0)$ with $a^2=16$."
+  hint="The larger denominator is $a^2$, and the variable above it names the major axis; the vertices lie on that axis, $a$ units from the center."
 >}}
 
 {{< fillin
   question="For the same ellipse $\tfrac{x^2}{16}+\tfrac{y^2}{9}=1$, enter the two foci, separated by a comma."
   answer="(\sqrt{7},0),(-\sqrt{7},0)"
   answerMode="unordered"
+  answerForm="simplified-radical"
   answerDisplay="$(\sqrt{7},0)$ and $(-\sqrt{7},0)$"
-  hint="Solve $c^2=a^2-b^2=16-9$ and place the foci at $(\pm c,0)$."
+  hint="Find $c$ from $c^2=a^2-b^2$; the foci lie on the major axis, $c$ units from the center."
 >}}
 
 {{< fillin
   question="Graph the ellipse $81x^2+49y^2=1$, noting its center, vertices, and foci. Enter the two vertices, separated by a comma."
-  answer="(0,1/7),(0,-1/7)"
+  answer="(0,\frac{1}{7}),(0,-\frac{1}{7})"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$(0,\tfrac{1}{7})$ and $(0,-\tfrac{1}{7})$"
-  hint="Rewrite as $\tfrac{x^2}{1/81}+\tfrac{y^2}{1/49}=1$; since $\tfrac{1}{49}>\tfrac{1}{81}$, the major axis is the $y$-axis."
+  hint="Write each term as a squared variable over a fraction ($81x^2=\tfrac{x^2}{1/81}$); the larger denominator is $a^2$ and names the major axis."
 >}}
 
 ### Graph ellipses not centered at the origin
@@ -684,6 +694,7 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
 {{< fillin
   question="Graph the ellipse $4x^2-8x+16y^2-32y-44=0$, noting its center, vertices, and foci. Enter the center as an ordered pair $(x,y)$."
   answer="(1,1)"
+  answerForm="decimal"
   answerDisplay="$(1,1)$"
   hint="Group the $x$- and $y$-terms and complete the square for each to reach standard form; the center is $(h,k)$."
 >}}
@@ -692,16 +703,18 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   question="For the same ellipse $4x^2-8x+16y^2-32y-44=0$, enter the two vertices, separated by a comma."
   answer="(5,1),(-3,1)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(5,1)$ and $(-3,1)$"
-  hint="In standard form the equation is $\tfrac{(x-1)^2}{16}+\tfrac{(y-1)^2}{4}=1$; the vertices are $(h\pm a,k)$."
+  hint="Complete the square to reach standard form; the larger denominator is $a^2$, and the vertices lie on the major axis, $a$ units from the center."
 >}}
 
 {{< fillin
   question="Graph the ellipse $x^2+8x+4y^2-40y+112=0$, noting its center, vertices, and foci. Enter the two foci, separated by a comma."
   answer="(-4+\sqrt{3},5),(-4-\sqrt{3},5)"
   answerMode="unordered"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$(-4+\sqrt{3},5)$ and $(-4-\sqrt{3},5)$"
-  hint="In standard form the equation is $\tfrac{(x+4)^2}{4}+\tfrac{(y-5)^2}{1}=1$; solve $c^2=a^2-b^2$ and place the foci at $(h\pm c,k)$."
+  hint="Complete the square for each variable to reach standard form, find $c$ from $c^2=a^2-b^2$, and place the foci on the major axis, $c$ units from the center."
 >}}
 
 ### Solve applied problems involving ellipses
@@ -719,7 +732,7 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   answer="17.32"
   answerForm="decimal"
   answerDisplay="$17.32$ feet"
-  hint="Substitute $y=6$ into $\tfrac{x^2}{400}+\tfrac{y^2}{144}=1$ and solve for $x$."
+  hint="Substitute $y=6$ into the equation you found above and solve for the positive $x$."
 >}}
 
 {{< fillin
@@ -727,9 +740,9 @@ The points $(\pm42,0)$ represent the foci. Thus, the distance between the senato
   answer="51.96"
   answerForm="decimal"
   answerDisplay="$51.96$ feet"
-  hint="Half the length gives $a=60$ and the distance to a focus gives $c=30$; the height at the center is $b=\sqrt{a^2-c^2}$."
+  hint="Half the length is $a$, the distance from the center to a focus is $c$, and the ceiling height at the center is the semi-minor axis $b$; use $c^2=a^2-b^2$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 10.1: The Ellipse](https://openstax.org/books/precalculus-2e/pages/10-1-the-ellipse) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own review of completing the square and graphing a circle, keyed to Intermediate Algebra 9.2.1 and 11.1.4, with its own worked examples and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 1010 (true PDF index 1020), where the chapter-opening folio runs directly into the "10.1 The Ellipse" heading and its Learning Objectives with no corequisite-skills material between them. Omitted the National Statuary Hall photograph (a credit photograph, per house convention) but kept the paragraph that introduces it, describing the room generically rather than "as shown in Figure 1." Recreated all twelve remaining source figures as accessible spec-first figures, comparing each against the rendered PDF: the three-cone conic-sections diagram (drawn as an exact schematic: each right double cone and its cutting plane, with the base circles, cone silhouettes, and the ellipse, hyperbola, and parabola traces all computed from the cone equation under a fixed oblique projection, hidden portions dashed) and the thumbtack-and-string construction (simplified to its essential geometry — an exactly sampled ellipse with the taut string drawn to the two foci; the pencil-and-hand illustration is represented by the string alone) as `kind="figure"` figures; the generic center/vertices/co-vertices/foci definition diagram, the $d_1$/$d_2$ derivation diagram, the two horizontal/vertical standard-forms figure pairs (center at the origin and at $(h,k)$), and all four worked-example answer graphs (Examples 3, 4, 5, and 6) as `kind="graph"` figures with the exact numbers each example derives; and the whispering-chamber reflective-property illustration and Example 7's room diagram as `kind="figure"` ray diagrams. Every "write in standard form" fill-in declares `answerForm="conic-standard-form"`, confirmed by replaying each printed general-form equation ($4x^2+40x+25y^2-100y+100=0$, $49x^2+16y^2=784$, $4x^2+y^2-24x+2y+21=0$) through the grader to confirm it reports `form` rather than `correct`. Every vertices/co-vertices/foci ask is keyed as a two-member `answerMode="unordered"` list of ordered pairs rather than a $\pm$ expression, per this chapter's grading constraints. Six retained Try Its and Practice items ask for only one or two of a source exercise's several requested quantities (e.g., "graph the ellipse, noting its center, vertices, and foci" is split into a standard-form or center fill-in plus a vertices or foci fill-in) rather than a single combined response, since the underlying quantities are not commensurable in one graded answer; each such split is disclosed here rather than merging unlike quantities into one component. Twelve selected end-of-section exercises (three per objective) were adapted into interactive Practice components, independently re-derived by hand and in Node rather than read off the source key; the applied Practice items' rounded answers were checked against both full-precision and the source's own rounded intermediates, and no discrepancy was found in this section.</small>
+<small>This section is adapted from [Precalculus 2e, Section 10.1: The Ellipse](https://openstax.org/books/precalculus-2e/pages/10-1-the-ellipse) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own review of completing the square and graphing a circle, keyed to Intermediate Algebra 9.2.1 and 11.1.4, with its own worked examples and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 1010 (true PDF index 1020), where the chapter-opening folio runs directly into the "10.1 The Ellipse" heading and its Learning Objectives with no corequisite-skills material between them. Omitted the National Statuary Hall photograph (a credit photograph, per house convention) but kept the paragraph that introduces it, describing the room generically rather than "as shown in Figure 1." Recreated all twelve remaining source figures as accessible spec-first figures, comparing each against the rendered PDF: the three-cone conic-sections diagram (drawn as an exact schematic: each right double cone and its cutting plane, with the base circles, cone silhouettes, and the ellipse, hyperbola, and parabola traces all computed from the cone equation under a fixed oblique projection, hidden portions dashed) and the thumbtack-and-string construction (simplified to its essential geometry — an exactly sampled ellipse with the taut string drawn to the two foci; the pencil-and-hand illustration is represented by the string alone) as `kind="figure"` figures; the generic center/vertices/co-vertices/foci definition diagram, the $d_1$/$d_2$ derivation diagram, the two horizontal/vertical standard-forms figure pairs (center at the origin and at $(h,k)$), and all four worked-example answer graphs (Examples 3, 4, 5, and 6) as `kind="graph"` figures with the exact numbers each example derives; and the whispering-chamber reflective-property illustration and Example 7's room diagram as `kind="figure"` ray diagrams, the room drawn to its 96-by-46-foot proportions with its foci at their computed positions and the source's two dimension arrows. Every "write in standard form" fill-in declares `answerForm="conic-standard-form"`, confirmed by replaying each printed general-form equation ($4x^2+40x+25y^2-100y+100=0$, $49x^2+16y^2=784$, $4x^2+y^2-24x+2y+21=0$) through the grader to confirm it reports `form` rather than `correct`. Every vertices or foci ask is keyed as a two-member `answerMode="unordered"` list of ordered pairs (one $\pm$ pair, such as $(\pm6,0)$, is accepted too). The source's graphing-exercise answers list all four axis endpoints under "Vertices"; the page keys only the two endpoints of the major axis, as the section defines vertices. The standard-form exercise whose source answer writes its denominators as squares, $(5)^2$ and $(2)^2$, asks for each denominator as a whole number. Example 7's solution says "visitors" where the source says "senators" (a carryover from the Statuary Hall introduction), and its two parts keep the source's (a) and (b) letters, which the solution refers to. Nine retained source items (four Try Its and five Practice exercises) ask for only one or two of a source exercise's several requested quantities (e.g., "graph the ellipse, noting its center, vertices, and foci" is split into a standard-form or center fill-in plus a vertices or foci fill-in) rather than a single combined response, since the underlying quantities are not commensurable in one graded answer; each such split is disclosed here rather than merging unlike quantities into one component. Nine selected end-of-section exercises were adapted into twelve interactive Practice components (three per objective), independently re-derived by hand and in Node rather than read off the source key; the applied Practice items' rounded answers were checked against both full-precision and the source's own rounded intermediates, and no discrepancy was found in this section.</small>

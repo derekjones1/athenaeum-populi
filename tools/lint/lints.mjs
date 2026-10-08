@@ -823,8 +823,6 @@ export function unworkedKey(answer) {
  * deletes the list.
  */
 export const VALUE_FORM_SWEEP_PENDING = Object.freeze([
-  'math/precalculus/09-systems-of-equations-and-inequalities/',
-  'math/precalculus/10-analytic-geometry/',
   'math/precalculus/11-sequences-probability-and-counting-theory/',
   'math/precalculus/12-introduction-to-calculus/',
   'math/precalculus/knowledge-check-01-06.md',

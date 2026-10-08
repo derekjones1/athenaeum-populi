@@ -132,7 +132,8 @@ $$A-B=\begin{bmatrix}2-6&-10-10&-2+2\\14-0&12+12&10+4\\4+5&-2-2&2+2\end{bmatrix}
 {{< fillin
   question="Add matrix $A=\begin{bmatrix}2&6\\1&0\\1&-3\end{bmatrix}$ and matrix $B=\begin{bmatrix}3&-2\\1&5\\-4&3\end{bmatrix}$. Enter the second row of the sum $A+B$ as a comma-separated list of two numbers, left to right."
   answer="2, 5"
-  hint="Add the entries in row 2: $1+1$ and $0+5$."
+  answerForm="decimal"
+  hint="Add corresponding entries: each entry in row 2 of $A$ plus the entry in the same position of $B$."
 >}}
 
 ### Finding Scalar Multiples of a Matrix
@@ -199,7 +200,8 @@ $$3A=3\begin{bmatrix}8&1\\5&4\end{bmatrix}=\begin{bmatrix}3\cdot8&3\cdot1\\3\cdo
 {{< fillin
   question="Given matrix $B=\begin{bmatrix}4&1\\3&2\end{bmatrix}$, find $-2B$. Enter the second row of $-2B$ as a comma-separated list of two numbers, left to right."
   answer="-6, -4"
-  hint="Multiply every entry of row 2 by $-2$: $-2(3)$ and $-2(2)$."
+  answerForm="decimal"
+  hint="Multiply each entry in row 2 of $B$ by the scalar $-2$."
 >}}
 
 **Example.** Find the sum $3A+2B$.
@@ -223,7 +225,7 @@ $$3A+2B=\begin{bmatrix}3-2&-6+4&0+2\\0+0&-3-6&6+4\\12+0&9+2&-18-8\end{bmatrix}=\
 In addition to multiplying a matrix by a scalar, we can multiply two matrices. Finding the **product of two matrices** is only possible when the inner dimensions are the same, meaning that the number of columns of the first matrix is equal to the number of rows of the second matrix. If $A$ is an $m\times r$ matrix and $B$ is an $r\times n$ matrix, then the product matrix $AB$ is an $m\times n$ matrix. If the inner dimensions do not match, the product is not defined.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A schematic showing matrix A, with dimensions 2 by 3, multiplied by matrix B, with dimensions 3 by 3, with a brace under the matching inner dimensions labeled same.","unit":34,"texts":[{"at":[0,2],"text":"A"},{"at":[1.1,2],"text":"·"},{"at":[2.6,2],"text":"B"},{"at":[0,1],"text":"2×3"},{"at":[2.6,1],"text":"3×3"}],"segments":[{"from":[0.4,0.55],"to":[3.2,0.55],"label":"same","arrows":false}]}
+{"ariaLabel":"A schematic of the product A times B: matrix A, with dimensions 2 by 3, beside matrix B, with dimensions 3 by 3, and a bracket joining the inner dimensions, the 3 of A and the 3 of B, labeled same.","unit":40,"texts":[{"at":[0.5,1.55],"text":"A","anchor":"middle"},{"at":[1.5,1.55],"text":"·","anchor":"middle"},{"at":[2.5,1.55],"text":"B","anchor":"middle"},{"at":[0.5,1],"text":"2×3","anchor":"middle"},{"at":[2.5,1],"text":"3×3","anchor":"middle"},{"at":[1.5,0.4],"text":"same","anchor":"middle"}],"segments":[{"from":[0.686,0.85],"to":[0.686,0.7]},{"from":[0.686,0.7],"to":[2.314,0.7]},{"from":[2.314,0.7],"to":[2.314,0.85]}]}
 {{< /apfigure >}}
 
 In this example, the product $AB$ is possible because the number of columns in $A$ (three) is the same as the number of rows in $B$ (three): the inner dimensions match.
@@ -364,19 +366,21 @@ $$\begin{bmatrix}-983&-462&136\\1{,}820&1{,}897&-856\\-311&2{,}032&413\end{bmatr
 {{< fillin
   question="Given $C=\begin{bmatrix}1&5\\8&92\\12&6\end{bmatrix}$ and $D=\begin{bmatrix}10&14\\7&2\\5&61\end{bmatrix}$, find $C+D$. Enter the second row of the sum as a comma-separated list of two numbers, left to right."
   answer="15, 94"
-  hint="Add the entries in row 2: $8+7$ and $92+2$."
+  answerForm="decimal"
+  hint="Add corresponding entries: each entry in row 2 of $C$ plus the entry in the same position of $D$."
 >}}
 
 {{< fillin
   question="Given $B=\begin{bmatrix}2&14\\22&6\end{bmatrix}$ and $E=\begin{bmatrix}6&12\\14&5\end{bmatrix}$, find $B-E$. Enter the first row of the difference as a comma-separated list of two numbers, left to right."
   answer="-4, 2"
-  hint="Subtract the entries in row 1: $2-6$ and $14-12$."
+  answerForm="decimal"
+  hint="Subtract corresponding entries: from each entry in row 1 of $B$, subtract the entry in the same position of $E$."
 >}}
 
 {{< multiplechoice
   question="Given $D=\begin{bmatrix}10&14\\7&2\\5&61\end{bmatrix}$ and $B=\begin{bmatrix}2&14\\22&6\end{bmatrix}$, is $D-B$ defined?"
   answer="No — $D$ is $3\times2$ and $B$ is $2\times2$, so their dimensions do not match."
-  hint="Subtraction requires both matrices to have the same number of rows and the same number of columns."
+  hint="Write down the dimensions of $D$ and of $B$, rows first, then recall which matrices can be subtracted."
 >}}
 Yes — every matrix subtraction is defined.
 No — $D$ is $3\times2$ and $B$ is $2\times2$, so their dimensions do not match.
@@ -389,18 +393,21 @@ No — matrix subtraction is only defined between square matrices.
 {{< fillin
   question="Given $B=\begin{bmatrix}3&9\\21&12\\0&64\end{bmatrix}$, find $3B$. Enter the third row of $3B$ as a comma-separated list of two numbers, left to right."
   answer="0, 192"
-  hint="Multiply every entry of row 3 by $3$: $3(0)$ and $3(64)$."
+  answerForm="decimal"
+  hint="Multiply each entry in row 3 of $B$ by the scalar $3$."
 >}}
 
 {{< fillin
   question="Given $C=\begin{bmatrix}16&3&7&18\\90&5&3&29\end{bmatrix}$, find $-4C$. Enter the first row of $-4C$ as a comma-separated list of four numbers, left to right."
   answer="-64, -12, -28, -72"
+  answerForm="decimal"
   hint="Multiply every entry of row 1 by $-4$."
 >}}
 
 {{< fillin
   question="Given $D=\begin{bmatrix}18&12&13\\8&14&6\\7&4&21\end{bmatrix}$, find $100D$. Enter the second row of $100D$ as a comma-separated list of three numbers, left to right."
   answer="800, 1400, 600"
+  answerForm="decimal"
   hint="Multiply every entry of row 2 by $100$."
 >}}
 
@@ -409,19 +416,21 @@ No — matrix subtraction is only defined between square matrices.
 {{< fillin
   question="Given $B=\begin{bmatrix}3&6&4\\-8&0&12\end{bmatrix}$ and $C=\begin{bmatrix}4&10\\-2&6\\5&9\end{bmatrix}$, find $BC$. Enter the first row of the product as a comma-separated list of two numbers, left to right."
   answer="20, 102"
-  hint="Multiply row 1 of $B$ by each column of $C$: $3(4)+6(-2)+4(5)$ and $3(10)+6(6)+4(9)$."
+  answerForm="decimal"
+  hint="Each entry of row 1 of $BC$ is row 1 of $B$ times a column of $C$: multiply matching entries and add the three products."
 >}}
 
 {{< fillin
   question="Given $B=\begin{bmatrix}3&6&4\\-8&0&12\end{bmatrix}$ and $D=\begin{bmatrix}2&-3&12\\9&3&1\\0&8&-10\end{bmatrix}$, find $BD$. Enter the second row of the product as a comma-separated list of three numbers, left to right."
   answer="-16, 120, -216"
-  hint="Multiply row 2 of $B$ by each column of $D$: $-8(2)+0(9)+12(0)$, $-8(-3)+0(3)+12(8)$, and $-8(12)+0(1)+12(-10)$."
+  answerForm="decimal"
+  hint="Each entry of row 2 of $BD$ is row 2 of $B$ times a column of $D$: multiply matching entries and add the three products."
 >}}
 
 {{< multiplechoice
   question="Given $C=\begin{bmatrix}4&10\\-2&6\\5&9\end{bmatrix}$ and $B=\begin{bmatrix}3&6&4\\-8&0&12\end{bmatrix}$, which matrix is the product $CB$?"
   answer="$\begin{bmatrix}-68&24&136\\-54&-12&64\\-57&30&128\end{bmatrix}$"
-  hint="Multiply each row of $C$ by each column of $B$ and add all three products in each entry — a common slip is stopping after the first product."
+  hint="Each entry of $CB$ is a row of $C$ times a column of $B$: multiply matching entries and add the two products."
 >}}
 $\begin{bmatrix}-68&-54&-57\\24&-12&30\\136&64&128\end{bmatrix}$
 $\begin{bmatrix}12&24&16\\-6&-12&-8\\15&30&20\end{bmatrix}$
@@ -431,4 +440,4 @@ $\begin{bmatrix}-68&24&136\\54&12&-64\\-57&30&128\end{bmatrix}$
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.5: Matrices and Matrix Operations](https://openstax.org/books/precalculus-2e/pages/9-5-matrices-and-matrix-operations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1"/"Objective 2" review of writing an augmented matrix and adding/subtracting/scalar-multiplying matrices, keyed to Intermediate Algebra 4.5) — confirmed against the printed PDF, page 947 runs straight from the previous section's exercises into "Two club soccer teams..."; the same prepended-block pattern recurs in §§4.3–4.8, and this section joins that list. Omitted the decorative soccer-action photograph (Figure 1, a stock action shot credited "SD Dirk," Flickr) and the "Access these online resources" media links. The equipment-needs table is printed twice in the source (once at the section opener, once again as "Table 3" inside the real-world Example) with identical data; this page shows it once and Example 10 refers back to "the table above." Recreated the inner-dimensions schematic ("$A\cdot B$", labeled $2\times3$ and $3\times3$ with a brace reading "same") as an accessible spec-first figure instead of the source's raster image. **The grader cannot take a matrix-shaped answer** (the MathLive matrix-entry path is menu-only and untested for learners), so — following house precedent from Intermediate Algebra 4.5 — every retained Try It and every Practice item whose source answer is a full matrix is either re-posed as a row-entry fill-in ("enter the second row… as a comma-separated list") or, where recognizing a whole computed matrix is itself the point, a multiple choice among full matrices (KaTeX renders `bmatrix` fine in option bodies; only submitted answers are restricted). The "is $D-B$ defined?" item is likewise multiple choice, since a dimension-mismatch verdict is categorical, not a number. Nine selected end-of-section exercises were adapted into interactive Practice components, three per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.5: Matrices and Matrix Operations](https://openstax.org/books/precalculus-2e/pages/9-5-matrices-and-matrix-operations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1"/"Objective 2" review of writing an augmented matrix and adding/subtracting/scalar-multiplying matrices, keyed to Intermediate Algebra 4.5) — confirmed against the printed PDF, page 947 runs straight from the previous section's exercises into "Two club soccer teams...". Omitted the decorative soccer-action photograph (Figure 1, a stock action shot credited "SD Dirk," Flickr) and the "Access these online resources" media links. The equipment-needs table is printed twice in the source (once at the section opener, once again as "Table 3" inside the real-world Example) with identical data; this page shows it once and Example 10 refers back to "the table above." Recreated the inner-dimensions schematic ("$A\cdot B$", labeled $2\times3$ and $3\times3$, with a bracket labeled "same" joining the two inner dimensions) as an accessible spec-first figure instead of the source's raster image, and set Example 8's color-coded working (also a raster image in the source) as display math without the colors. The Key concepts bullet on the product of two matrices reads "column 2" where the source prints "columns 2". **The grader cannot take a matrix-shaped answer** (the MathLive matrix-entry path is menu-only and untested for learners), so — following house precedent from Intermediate Algebra 4.5 — every retained Try It and every Practice item whose source answer is a full matrix is either re-posed as a row-entry fill-in ("enter the second row… as a comma-separated list") or, where recognizing a whole computed matrix is itself the point, a multiple choice among full matrices (KaTeX renders `bmatrix` fine in option bodies; only submitted answers are restricted). The "is $D-B$ defined?" item is likewise multiple choice, since a dimension-mismatch verdict is categorical, not a number. Nine selected end-of-section exercises were adapted into interactive Practice components, three per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>

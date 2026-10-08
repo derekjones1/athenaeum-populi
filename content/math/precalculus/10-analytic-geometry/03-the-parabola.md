@@ -38,7 +38,7 @@ In Quadratic Functions, we learned about a parabola's vertex and axis of symmetr
 The line segment that passes through the focus and is parallel to the directrix is called the **latus rectum**. The endpoints of the latus rectum lie on the curve. By definition, the distance $d$ from the focus to any point $P$ on the parabola is equal to the distance from $P$ to the directrix.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola opening upward with a labeled vertex, a focus above the vertex on a dashed vertical axis of symmetry, a dashed horizontal directrix below the vertex, and a dashed horizontal latus rectum through the focus with both endpoints marked on the curve.","xMin":-4,"xMax":6,"yMin":-4.5,"yMax":3,"grid":false,"tickLabels":false,"quadratics":[{"a":0.16666666666666666,"b":-0.3333333333333333,"c":-1.8333333333333333}],"lines":[{"x":1,"dashed":true,"label":"Axis of symmetry"},{"y":-3.5,"dashed":true,"label":"Directrix"}],"points":[{"at":[1,-2],"label":"Vertex"},{"at":[1,-0.5],"label":"Focus"}],"segments":[{"from":[-2,-0.5],"to":[4,-0.5],"dashed":true}],"texts":[{"at":[4.3,-1],"text":"Latus rectum","anchor":"start"}]}
+{"ariaLabel":"A parabola opening upward with a labeled vertex, a focus above the vertex on a dashed vertical axis of symmetry, a dashed horizontal directrix below the vertex, and a dashed horizontal latus rectum through the focus whose two endpoints lie on the curve.","xMin":-3,"xMax":7,"yMin":-1,"yMax":8,"grid":false,"tickLabels":false,"quadratics":[{"a":0.16666666666666666,"b":-0.6666666666666666,"c":3.6666666666666665}],"lines":[{"x":2,"dashed":true,"label":"Axis of symmetry"},{"y":1.5,"dashed":true,"label":"Directrix"}],"points":[{"at":[2,3],"label":"Vertex","labelSide":"se"},{"at":[2,4.5],"label":"Focus","labelSide":"ne"}],"segments":[{"from":[-1,4.5],"to":[5,4.5],"dashed":true}],"texts":[{"at":[5.35,4.2],"text":"Latus rectum","anchor":"start"}]}
 {{< /apfigure >}}
 
 To work with parabolas in the coordinate plane, we consider two cases: those with a vertex at the origin and those with a vertex at a point other than the origin. We begin with the former.
@@ -46,7 +46,7 @@ To work with parabolas in the coordinate plane, we consider two cases: those wit
 Let $(x,y)$ be a point on the parabola with vertex $(0,0)$, focus $(0,p)$, and directrix $y=-p$. The distance $d$ from point $(x,y)$ to point $(x,-p)$ on the directrix is the difference of the $y$-values: $d=y+p$. The distance from the focus $(0,p)$ to the point $(x,y)$ is also equal to $d$ and can be expressed using the distance formula.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola with vertex at the origin, opening upward. The focus is marked above the vertex, and the directrix is a dashed horizontal line below the vertex. A point (x, y) on the curve connects to the focus by one segment labeled d, and drops straight down to a point (x, negative p) on the directrix by a second segment also labeled d.","xMin":-5,"xMax":5,"yMin":-3,"yMax":4,"grid":false,"tickLabels":false,"quadratics":[{"a":0.16666666666666666}],"lines":[{"y":-1.5,"dashed":true,"label":"y = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,1.5],"label":"(0, p)"},{"at":[3,1.5],"label":"(x, y)"},{"at":[3,-1.5],"label":"(x, −p)"}],"segments":[{"from":[0,1.5],"to":[3,1.5]},{"from":[3,1.5],"to":[3,-1.5]}],"texts":[{"at":[1.4,2.1],"text":"d"},{"at":[3.5,0],"text":"d"}]}
+{"ariaLabel":"A parabola with vertex at the origin, opening upward. The focus is marked above the vertex, and the directrix is a dashed horizontal line below the vertex. A point (x, y) on the curve connects to the focus by one segment labeled d, and drops straight down to a point (x, negative p) on the directrix by a second segment also labeled d, which meets the directrix at a marked right angle.","xMin":-5,"xMax":5,"yMin":-3,"yMax":4,"grid":false,"tickLabels":false,"quadratics":[{"a":0.16666666666666666}],"lines":[{"y":-1.5,"dashed":true,"label":"y = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,1.5],"label":"(0, p)"},{"at":[4,2.6666666666666665],"label":"(x, y)"},{"at":[4,-1.5],"label":"(x, −p)"}],"segments":[{"from":[0,1.5],"to":[4,2.6666666666666665]},{"from":[4,2.6666666666666665],"to":[4,-1.5]},{"from":[3.6,-1.5],"to":[3.6,-1.1]},{"from":[3.6,-1.1],"to":[4,-1.1]}],"texts":[{"at":[1.8,2.45],"text":"d"},{"at":[4.35,-0.85],"text":"d"}],"unit":24}
 {{< /apfigure >}}
 
 Set the two expressions for $d$ equal to each other and solve for $y$ to derive the equation of the parabola. We do this because the distance from $(x,y)$ to $(0,p)$ equals the distance from $(x,y)$ to $(x,-p)$.
@@ -78,25 +78,25 @@ The equations of parabolas with vertex $(0,0)$ are $y^2=4px$ when the $x$-axis i
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y squared equals 4px with p greater than 0, opening rightward from the origin. The focus is marked at (p, 0), the directrix is a dashed vertical line at x = negative p, and the latus rectum's endpoints are marked at (p, 2p) and (p, negative 2p).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"sideways":true}],"lines":[{"x":-2,"dashed":true,"label":"x = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[2,0],"label":"(p, 0)"},{"at":[2,4],"label":"(p, 2p)"},{"at":[2,-4],"label":"(p, −2p)"}]}
+{"ariaLabel":"The parabola y squared equals 4px with p greater than 0, opening rightward from the origin. The focus is marked at (p, 0), the directrix is a dashed vertical line at x = negative p, and a dashed latus rectum through the focus joins its endpoints, marked at (p, 2p) and (p, negative 2p).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"sideways":true}],"lines":[{"x":-2,"dashed":true,"label":"x = −p"}],"points":[{"at":[0,0],"label":"(0, 0)","labelSide":"sw"},{"at":[2,0],"label":"(p, 0)","labelSide":"ne"},{"at":[2,4],"label":"(p, 2p)"},{"at":[2,-4],"label":"(p, −2p)"}],"segments":[{"from":[2,-4],"to":[2,4],"dashed":true}],"unit":24}
 {{< /apfigure >}}
 
 *(a) When $p>0$ and the axis of symmetry is the $x$-axis, the parabola opens right.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y squared equals 4px with p less than 0, opening leftward from the origin. The focus is marked at (p, 0), the directrix is a dashed vertical line at x = negative p, and the latus rectum's endpoints are marked at (p, |2p|) and (p, negative |2p|).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125,"sideways":true}],"lines":[{"x":2,"dashed":true,"label":"x = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[-2,0],"label":"(p, 0)"},{"at":[-2,4],"label":"(p, |2p|)"},{"at":[-2,-4],"label":"(p, −|2p|)"}]}
+{"ariaLabel":"The parabola y squared equals 4px with p less than 0, opening leftward from the origin. The focus is marked at (p, 0), the directrix is a dashed vertical line at x = negative p, and a dashed latus rectum through the focus joins its endpoints, marked at (p, |2p|) and (p, negative |2p|).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125,"sideways":true}],"lines":[{"x":2,"dashed":true,"label":"x = −p"}],"points":[{"at":[0,0],"label":"(0, 0)","labelSide":"se"},{"at":[-2,0],"label":"(p, 0)","labelSide":"nw"},{"at":[-2,4],"label":"(p, |2p|)"},{"at":[-2,-4],"label":"(p, −|2p|)"}],"segments":[{"from":[-2,-4],"to":[-2,4],"dashed":true}],"unit":24}
 {{< /apfigure >}}
 
 *(b) When $p<0$ and the axis of symmetry is the $x$-axis, the parabola opens left.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola x squared equals 4py with p greater than 0, opening upward from the origin. The focus is marked at (0, p), the directrix is a dashed horizontal line at y = negative p, and the latus rectum's endpoints are marked at (2p, p) and (negative 2p, p).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125}],"lines":[{"y":-2,"dashed":true,"label":"y = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,2],"label":"(0, p)"},{"at":[4,2],"label":"(2p, p)"},{"at":[-4,2],"label":"(−2p, p)"}]}
+{"ariaLabel":"The parabola x squared equals 4py with p greater than 0, opening upward from the origin. The focus is marked at (0, p), the directrix is a dashed horizontal line at y = negative p, and a dashed latus rectum through the focus joins its endpoints, marked at (2p, p) and (negative 2p, p).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125}],"lines":[{"y":-2,"dashed":true,"label":"y = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,2],"label":"(0, p)"},{"at":[4,2],"label":"(2p, p)"},{"at":[-4,2],"label":"(−2p, p)"}],"segments":[{"from":[-4,2],"to":[4,2],"dashed":true}],"unit":24}
 {{< /apfigure >}}
 
 *(c) When $p>0$ and the axis of symmetry is the $y$-axis, the parabola opens up.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola x squared equals 4py with p less than 0, opening downward from the origin. The focus is marked at (0, p), the directrix is a dashed horizontal line at y = negative p, and the latus rectum's endpoints are marked at (|2p|, p) and (negative |2p|, p).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125}],"lines":[{"y":2,"dashed":true,"label":"y = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,-2],"label":"(0, p)"},{"at":[4,-2],"label":"(|2p|, p)"},{"at":[-4,-2],"label":"(−|2p|, p)"}]}
+{"ariaLabel":"The parabola x squared equals 4py with p less than 0, opening downward from the origin. The focus is marked at (0, p), the directrix is a dashed horizontal line at y = negative p, and a dashed latus rectum through the focus joins its endpoints, marked at (|2p|, p) and (negative |2p|, p).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125}],"lines":[{"y":2,"dashed":true,"label":"y = −p"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,-2],"label":"(0, p)"},{"at":[4,-2],"label":"(|2p|, p)"},{"at":[-4,-2],"label":"(−|2p|, p)"}],"segments":[{"from":[-4,-2],"to":[4,-2],"dashed":true}],"unit":24}
 {{< /apfigure >}}
 
 *(d) When $p<0$ and the axis of symmetry is the $y$-axis, the parabola opens down.*
@@ -106,7 +106,7 @@ The key features of a parabola are its vertex, axis of symmetry, focus, directri
 A line is said to be tangent to a curve if it intersects the curve at exactly one point. If we sketch lines tangent to the parabola at the endpoints of the latus rectum, these lines intersect on the axis of symmetry, as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y squared equals 24x, opening rightward from the origin, with a dashed vertical directrix at x = negative 6. Two dashed lines run from the point (negative 6, 0) on the directrix to the latus rectum's endpoints at (6, 12) and (6, negative 12), each tangent to the parabola at that endpoint, meeting only at (negative 6, 0) on the axis of symmetry.","xMin":-9,"xMax":9,"yMin":-14,"yMax":14,"grid":false,"tickLabels":false,"quadratics":[{"a":0.041666666666666664,"sideways":true}],"lines":[{"x":-6,"dashed":true,"label":"x = −6"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[6,0],"label":"(6, 0)"},{"at":[6,12],"label":"(6, 12)"},{"at":[6,-12],"label":"(6, −12)"}],"segments":[{"from":[-6,0],"to":[7,13],"dashed":true,"arrow":true},{"from":[-6,0],"to":[7,-13],"dashed":true,"arrow":true}]}
+{"ariaLabel":"The parabola y squared equals 24x, opening rightward from the origin, with a dashed vertical directrix at x = negative 6 and a dashed vertical latus rectum through the focus (6, 0) joining its endpoints (6, 12) and (6, negative 12). Two dashed lines, each tangent to the parabola at one of those endpoints, cross each other at (negative 6, 0), on the axis of symmetry.","xMin":-9,"xMax":9,"yMin":-14,"yMax":14,"grid":false,"tickLabels":false,"quadratics":[{"a":0.041666666666666664,"sideways":true}],"lines":[{"x":-6,"dashed":true,"label":"x = −6"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[6,0],"label":"(6, 0)"},{"at":[6,12],"label":"(6, 12)"},{"at":[6,-12],"label":"(6, −12)"}],"segments":[{"from":[-7.5,-1.5],"to":[6,12],"dashed":true},{"from":[-7.5,1.5],"to":[6,-12],"dashed":true},{"from":[6,-12],"to":[6,12],"dashed":true}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -141,12 +141,13 @@ A line is said to be tangent to a curve if it intersects the curve at exactly on
 Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to form the parabola.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola y squared equals 24x, opening rightward from the origin, with focus at (6, 0), a dashed vertical directrix at x = negative 6, and the latus rectum's endpoints marked at (6, 12) and (6, negative 12).","xMin":-10,"xMax":10,"yMin":-20,"yMax":20,"tickLabels":true,"xTickStep":2,"yTickStep":4,"quadratics":[{"a":0.041666666666666664,"sideways":true}],"lines":[{"x":-6,"dashed":true,"label":"x = −6"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[6,0],"label":"(6, 0)"},{"at":[6,12],"label":"(6, 12)"},{"at":[6,-12],"label":"(6, −12)"}]}
+{"ariaLabel":"The parabola y squared equals 24x, opening rightward from the origin, with focus at (6, 0), a dashed vertical directrix at x = negative 6, and a dashed vertical latus rectum through the focus with endpoints (6, 12) and (6, negative 12).","xMin":-10,"xMax":10,"yMin":-20,"yMax":20,"tickLabels":true,"xTickStep":2,"yTickStep":4,"quadratics":[{"a":0.041666666666666664,"sideways":true}],"lines":[{"x":-6,"dashed":true,"label":"x = −6"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[6,0],"label":"(6, 0)"},{"at":[6,12],"label":"(6, 12)"},{"at":[6,-12],"label":"(6, −12)"}],"segments":[{"from":[6,-12],"to":[6,12],"dashed":true}],"yUnit":10,"yGridStep":2}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph $y^2=-16x$. Give the coordinates of the focus as an ordered pair."
   answer="(-4,0)"
+  answerForm="decimal"
   answerDisplay="$(-4,0)$"
   hint="Match the equation to $y^2=4px$ to find $p$, then the focus is $(p,0)$."
 >}}
@@ -154,6 +155,7 @@ Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to 
 {{< fillin
   question="Graph $y^2=-16x$. Give the equation of the directrix, as an equation."
   answer="x=4"
+  answerForm="solved:x decimal"
   answerDisplay="$x=4$"
   hint="The directrix of $y^2=4px$ is $x=-p$."
 >}}
@@ -162,6 +164,7 @@ Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to 
   question="Graph $y^2=-16x$. Give both endpoints of the latus rectum as ordered pairs, separated by a comma."
   answer="(-4,8),(-4,-8)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(-4,8)$ and $(-4,-8)$"
   hint="The endpoints of the latus rectum share the focus's $x$-coordinate; substitute it into the original equation and solve for $y$."
 >}}
@@ -178,12 +181,13 @@ Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to 
 Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to form the parabola.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola x squared equals negative 6y, opening downward from the origin, with focus at (0, negative 3/2), a dashed horizontal directrix at y = 3/2, and the latus rectum's endpoints marked at (3, negative 3/2) and (negative 3, negative 3/2).","xMin":-4,"xMax":4,"yMin":-3,"yMax":1,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.16666666666666666}],"lines":[{"y":1.5,"dashed":true,"label":"y = 3/2"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,-1.5],"label":"(0, −3/2)"},{"at":[3,-1.5],"label":"(3, −3/2)","labelSide":"e"},{"at":[-3,-1.5],"label":"(−3, −3/2)","labelSide":"w"}]}
+{"ariaLabel":"The parabola x squared equals negative 6y, opening downward from the origin, with focus at (0, negative 3/2), a dashed horizontal directrix at y = 3/2, and a dashed horizontal latus rectum through the focus with endpoints (3, negative 3/2) and (negative 3, negative 3/2).","xMin":-5,"xMax":5,"yMin":-4,"yMax":3,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.16666666666666666}],"lines":[{"y":1.5,"dashed":true,"label":"y = 3/2"}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[0,-1.5],"label":"(0, −3/2)","labelSide":"se"},{"at":[3,-1.5],"label":"(3, −3/2)","labelSide":"e"},{"at":[-3,-1.5],"label":"(−3, −3/2)","labelSide":"w"}],"segments":[{"from":[-3,-1.5],"to":[3,-1.5],"dashed":true}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph $x^2=8y$. Give the coordinates of the focus as an ordered pair."
   answer="(0,2)"
+  answerForm="decimal"
   answerDisplay="$(0,2)$"
   hint="Match the equation to $x^2=4py$ to find $p$, then the focus is $(0,p)$."
 >}}
@@ -191,6 +195,7 @@ Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to 
 {{< fillin
   question="Graph $x^2=8y$. Give the equation of the directrix, as an equation."
   answer="y=-2"
+  answerForm="solved:y decimal"
   answerDisplay="$y=-2$"
   hint="The directrix of $x^2=4py$ is $y=-p$."
 >}}
@@ -199,6 +204,7 @@ Next we plot the focus, directrix, and latus rectum, and draw a smooth curve to 
   question="Graph $x^2=8y$. Give both endpoints of the latus rectum as ordered pairs, separated by a comma."
   answer="(4,2),(-4,2)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(4,2)$ and $(-4,2)$"
   hint="The endpoints of the latus rectum share the focus's $y$-coordinate; substitute it into the original equation and solve for $x$."
 >}}
@@ -229,9 +235,9 @@ Therefore, the equation for the parabola is $y^2=-2x$.
 {{< fillin
   question="What is the equation for the parabola with focus $\left(0,\tfrac{7}{2}\right)$ and directrix $y=-\tfrac{7}{2}$? Write the equation in standard form."
   answer="x^2=14y"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$x^2=14y$"
-  hint="The focus has the form $(0,p)$, so the equation has the form $x^2=4py$; substitute $p=\tfrac{7}{2}$."
+  hint="The focus has the form $(0,p)$, so the equation has the form $x^2=4py$; read $p$ off the focus and multiply $4p$."
 >}}
 
 ### Graphing Parabolas with Vertices Not at the Origin
@@ -250,25 +256,25 @@ To graph parabolas with a vertex $(h,k)$ other than the origin, we use the stand
 {{< /callout >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola (y minus k) squared equals 4p(x minus h) with p greater than 0, opening rightward from vertex (h, k). The focus is marked at (h+p, k), the directrix is a dashed vertical line at x = h−p, and the latus rectum's endpoints are marked at (h+p, k+2p) and (h+p, k−2p).","xMin":-4,"xMax":6,"yMin":-5,"yMax":7,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"b":-0.25,"c":1.125,"sideways":true}],"lines":[{"x":-1,"dashed":true,"label":"x = h−p"},{"y":1,"dashed":true,"label":"y = k"}],"points":[{"at":[1,1],"label":"(h, k)"},{"at":[3,1],"label":"(h+p, k)"},{"at":[3,5],"label":"(h+p, k+2p)"},{"at":[3,-3],"label":"(h+p, k−2p)"}]}
+{"ariaLabel":"The parabola (y minus k) squared equals 4p(x minus h) with p greater than 0, opening rightward from vertex (h, k). The focus is marked at (h+p, k), the directrix is a dashed vertical line at x = h−p, and a dashed latus rectum through the focus joins its endpoints, marked at (h+p, k+2p) and (h+p, k−2p).","xMin":-4,"xMax":6,"yMin":-5,"yMax":7,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"b":-0.25,"c":1.125,"sideways":true}],"lines":[{"x":-1,"dashed":true,"label":"x = h−p"},{"y":1,"dashed":true,"label":"y = k"}],"points":[{"at":[1,1],"label":"(h, k)"},{"at":[3,1],"label":"(h+p, k)"},{"at":[3,5],"label":"(h+p, k+2p)"},{"at":[3,-3],"label":"(h+p, k−2p)"}],"unit":28,"segments":[{"from":[3,-3],"to":[3,5],"dashed":true}]}
 {{< /apfigure >}}
 
 *(a) When $p>0$, the parabola opens right.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola (y minus k) squared equals 4p(x minus h) with p less than 0, opening leftward from vertex (h, k). The focus is marked at (h+p, k), the directrix is a dashed vertical line at x = h−p, and the latus rectum's endpoints are marked at (h+p, k+|2p|) and (h+p, k−|2p|).","xMin":-4,"xMax":6,"yMin":-5,"yMax":7,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125,"b":0.25,"c":0.875,"sideways":true}],"lines":[{"x":3,"dashed":true,"label":"x = h−p"},{"y":1,"dashed":true,"label":"y = k"}],"points":[{"at":[1,1],"label":"(h, k)"},{"at":[-1,1],"label":"(h+p, k)"},{"at":[-1,-3],"label":"(h+p, k−|2p|)"},{"at":[-1,5],"label":"(h+p, k+|2p|)"}]}
+{"ariaLabel":"The parabola (y minus k) squared equals 4p(x minus h) with p less than 0, opening leftward from vertex (h, k). The focus is marked at (h+p, k), the directrix is a dashed vertical line at x = h−p, and a dashed latus rectum through the focus joins its endpoints, marked at (h+p, k+|2p|) and (h+p, k−|2p|).","xMin":-4,"xMax":6,"yMin":-5,"yMax":7,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125,"b":0.25,"c":0.875,"sideways":true}],"lines":[{"x":3,"dashed":true,"label":"x = h−p"},{"y":1,"dashed":true,"label":"y = k"}],"points":[{"at":[1,1],"label":"(h, k)","labelSide":"ne"},{"at":[-1,1],"label":"(h+p, k)"},{"at":[-1,-3],"label":"(h+p, k−|2p|)"},{"at":[-1,5],"label":"(h+p, k+|2p|)"}],"unit":28,"segments":[{"from":[-1,-3],"to":[-1,5],"dashed":true}]}
 {{< /apfigure >}}
 
 *(b) When $p<0$, the parabola opens left.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola (x minus h) squared equals 4p(y minus k) with p greater than 0, opening upward from vertex (h, k). The focus is marked at (h, k+p), the directrix is a dashed horizontal line at y = k−p, and the latus rectum's endpoints are marked at (h+2p, k+p) and (h−2p, k+p).","xMin":-5,"xMax":7,"yMin":-4,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"b":-0.25,"c":1.125}],"lines":[{"y":-1,"dashed":true,"label":"y = k−p"},{"x":1,"dashed":true,"label":"x = h"}],"points":[{"at":[1,1],"label":"(h, k)"},{"at":[1,3],"label":"(h, k+p)"},{"at":[5,3],"label":"(h+2p, k+p)","labelSide":"e"},{"at":[-3,3],"label":"(h−2p, k+p)","labelSide":"w"}]}
+{"ariaLabel":"The parabola (x minus h) squared equals 4p(y minus k) with p greater than 0, opening upward from vertex (h, k). The focus is marked at (h, k+p), the directrix is a dashed horizontal line at y = k−p, and a dashed latus rectum through the focus joins its endpoints, marked at (h+2p, k+p) and (h−2p, k+p).","xMin":-5,"xMax":7,"yMin":-4,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"b":-0.25,"c":1.125}],"lines":[{"y":-1,"dashed":true,"label":"y = k−p"},{"x":1,"dashed":true,"label":"x = h"}],"points":[{"at":[1,1],"label":"(h, k)","labelSide":"se"},{"at":[1,3],"label":"(h, k+p)"},{"at":[5,3],"label":"(h+2p, k+p)","labelSide":"e"},{"at":[-3,3],"label":"(h−2p, k+p)","labelSide":"w"}],"unit":28,"segments":[{"from":[-3,3],"to":[5,3],"dashed":true}]}
 {{< /apfigure >}}
 
 *(c) When $p>0$, the parabola opens up.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola (x minus h) squared equals 4p(y minus k) with p less than 0, opening downward from vertex (h, k). The focus is marked at (h, k+p), the directrix is a dashed horizontal line at y = k−p, and the latus rectum's endpoints are marked at (h+|2p|, k+p) and (h−|2p|, k+p).","xMin":-5,"xMax":7,"yMin":-4,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125,"b":0.25,"c":0.875}],"lines":[{"y":3,"dashed":true,"label":"y = k−p"},{"x":1,"dashed":true,"label":"x = h"}],"points":[{"at":[1,1],"label":"(h, k)"},{"at":[1,-1],"label":"(h, k+p)"},{"at":[5,-1],"label":"(h+|2p|, k+p)","labelSide":"e"},{"at":[-3,-1],"label":"(h−|2p|, k+p)","labelSide":"w"}]}
+{"ariaLabel":"The parabola (x minus h) squared equals 4p(y minus k) with p less than 0, opening downward from vertex (h, k). The focus is marked at (h, k+p), the directrix is a dashed horizontal line at y = k−p, and a dashed latus rectum through the focus joins its endpoints, marked at (h+|2p|, k+p) and (h−|2p|, k+p).","xMin":-5,"xMax":7,"yMin":-4,"yMax":6,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.125,"b":0.25,"c":0.875}],"lines":[{"y":3,"dashed":true,"label":"y = k−p"},{"x":1,"dashed":true,"label":"x = h"}],"points":[{"at":[1,1],"label":"(h, k)"},{"at":[1,-1],"label":"(h, k+p)"},{"at":[5,-1],"label":"(h+|2p|, k+p)","labelSide":"e"},{"at":[-3,-1],"label":"(h−|2p|, k+p)","labelSide":"w"}],"unit":28,"segments":[{"from":[-3,-1],"to":[5,-1],"dashed":true}]}
 {{< /apfigure >}}
 
 *(d) When $p<0$, the parabola opens down.*
@@ -309,12 +315,13 @@ To graph parabolas with a vertex $(h,k)$ other than the origin, we use the stand
 Next we plot the vertex, axis of symmetry, focus, directrix, and latus rectum, and draw a smooth curve to form the parabola.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola (y minus 1) squared equals negative 16(x + 3), opening leftward from vertex (negative 3, 1), with focus at (negative 7, 1), a dashed vertical directrix at x = 1, a dashed horizontal axis of symmetry at y = 1, and the latus rectum's endpoints marked at (negative 7, negative 7) and (negative 7, 9).","xMin":-10,"xMax":3,"yMin":-9,"yMax":11,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.0625,"b":0.125,"c":-3.0625,"sideways":true}],"lines":[{"x":1,"dashed":true,"label":"x = 1"},{"y":1,"dashed":true,"label":"y = 1"}],"points":[{"at":[-3,1],"label":"(−3, 1)"},{"at":[-7,1],"label":"(−7, 1)"},{"at":[-7,9],"label":"(−7, 9)"},{"at":[-7,-7],"label":"(−7, −7)"}]}
+{"ariaLabel":"The parabola (y minus 1) squared equals negative 16(x + 3), opening leftward from vertex (negative 3, 1), with focus at (negative 7, 1), a dashed vertical directrix at x = 1, a dashed horizontal axis of symmetry at y = 1, and a dashed vertical latus rectum through the focus with endpoints (negative 7, negative 7) and (negative 7, 9).","xMin":-10,"xMax":3,"yMin":-8,"yMax":10,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.0625,"b":0.125,"c":-3.0625,"sideways":true}],"lines":[{"x":1,"dashed":true,"label":"x = 1"},{"y":1,"dashed":true,"label":"y = 1"}],"points":[{"at":[-3,1],"label":"(−3, 1)"},{"at":[-7,1],"label":"(−7, 1)"},{"at":[-7,9],"label":"(−7, 9)"},{"at":[-7,-7],"label":"(−7, −7)"}],"segments":[{"from":[-7,-7],"to":[-7,9],"dashed":true}],"unit":28}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph $(y+1)^2=4(x-8)$. Give the vertex as an ordered pair."
   answer="(8,-1)"
+  answerForm="decimal"
   answerDisplay="$(8,-1)$"
   hint="Match the equation to $(y-k)^2=4p(x-h)$; the vertex is $(h,k)$."
 >}}
@@ -322,14 +329,16 @@ Next we plot the vertex, axis of symmetry, focus, directrix, and latus rectum, a
 {{< fillin
   question="Graph $(y+1)^2=4(x-8)$. Give the coordinates of the focus as an ordered pair."
   answer="(9,-1)"
+  answerForm="decimal"
   answerDisplay="$(9,-1)$"
-  hint="With $(h,k)=(8,-1)$ and $4p=4$, the focus is $(h+p,k)$."
+  hint="Read $h$, $k$, and $4p$ off the equation; the focus is $(h+p,k)$."
 >}}
 
 {{< fillin
   question="Graph $(y+1)^2=4(x-8)$. Give both endpoints of the latus rectum as ordered pairs, separated by a comma."
   answer="(9,1),(9,-3)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(9,1)$ and $(9,-3)$"
   hint="The endpoints of the latus rectum are $(h+p,k\pm2p)$."
 >}}
@@ -361,12 +370,13 @@ It follows that:
 Next we plot the vertex, axis of symmetry, focus, directrix, and latus rectum, and draw a smooth curve to form the parabola.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The parabola (x minus 4) squared equals 28(y + 8), opening upward from vertex (4, negative 8), with focus at (4, negative 1), a dashed horizontal directrix at y = negative 15, a dashed vertical axis of symmetry at x = 4, and the latus rectum's endpoints marked at (negative 10, negative 1) and (18, negative 1).","xMin":-13,"xMax":21,"yMin":-17,"yMax":3,"grid":false,"tickLabels":false,"quadratics":[{"a":0.03571428571428571,"b":-0.2857142857142857,"c":-7.428571428571429}],"lines":[{"y":-15,"dashed":true,"label":"y = −15"},{"x":4,"dashed":true,"label":"x = 4"}],"points":[{"at":[4,-8],"label":"(4, −8)"},{"at":[4,-1],"label":"(4, −1)"},{"at":[-10,-1],"label":"(−10, −1)"},{"at":[18,-1],"label":"(18, −1)"}]}
+{"ariaLabel":"The parabola (x minus 4) squared equals 28(y + 8), opening upward from vertex (4, negative 8), with focus at (4, negative 1), a dashed horizontal directrix at y = negative 15, a dashed vertical axis of symmetry at x = 4, and a dashed horizontal latus rectum through the focus with endpoints (negative 10, negative 1) and (18, negative 1).","xMin":-13,"xMax":22,"yMin":-17,"yMax":3,"grid":false,"tickLabels":false,"quadratics":[{"a":0.03571428571428571,"b":-0.2857142857142857,"c":-7.428571428571429}],"lines":[{"y":-15,"dashed":true,"label":"y = −15"},{"x":4,"dashed":true,"label":"x = 4"}],"points":[{"at":[4,-8],"label":"(4, −8)"},{"at":[4,-1],"label":"(4, −1)"},{"at":[-10,-1],"label":"(−10, −1)","labelSide":"sw"},{"at":[18,-1],"label":"(18, −1)","labelSide":"se"}],"segments":[{"from":[-10,-1],"to":[18,-1],"dashed":true}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Graph $(x+2)^2=-20(y-3)$. Give the vertex as an ordered pair."
   answer="(-2,3)"
+  answerForm="decimal"
   answerDisplay="$(-2,3)$"
   hint="This equation is already in standard form $(x-h)^2=4p(y-k)$; the vertex is $(h,k)$."
 >}}
@@ -374,14 +384,16 @@ Next we plot the vertex, axis of symmetry, focus, directrix, and latus rectum, a
 {{< fillin
   question="Graph $(x+2)^2=-20(y-3)$. Give the equation of the directrix, as an equation."
   answer="y=8"
+  answerForm="solved:y decimal"
   answerDisplay="$y=8$"
-  hint="With $(h,k)=(-2,3)$ and $4p=-20$, the directrix is $y=k-p$."
+  hint="Read $k$ and $4p$ off the equation; the directrix is $y=k-p$."
 >}}
 
 {{< fillin
   question="Graph $(x+2)^2=-20(y-3)$. Give both endpoints of the latus rectum as ordered pairs, separated by a comma."
   answer="(-12,-2),(8,-2)"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$(-12,-2)$ and $(8,-2)$"
   hint="The endpoints of the latus rectum are $(h\pm2p,k+p)$."
 >}}
@@ -391,7 +403,7 @@ Next we plot the vertex, axis of symmetry, focus, directrix, and latus rectum, a
 As we mentioned at the beginning of the section, parabolas are used to design many objects we use every day, such as telescopes, suspension bridges, microphones, and radar equipment. Parabolic mirrors, such as the one used to light the Olympic torch, have a very unique reflecting property. When rays of light parallel to the parabola's axis of symmetry are directed toward any surface of the mirror, the light is reflected directly to the focus. This is why the Olympic torch is ignited when it is held at the focus of the parabolic mirror.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabolic reflector opening to the right. Three parallel rays of sunlight, all traveling horizontally leftward, strike the inside of the reflector and each reflects toward a single focus point inside the curve.","xMin":-1,"xMax":5,"yMin":-5,"yMax":5,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"sideways":true}],"points":[{"at":[2,0],"label":"Focus"}],"segments":[{"from":[4,3],"to":[1.125,3],"arrow":true},{"from":[1.125,3],"to":[2,0],"arrow":true},{"from":[4,1],"to":[0.125,1],"arrow":true},{"from":[0.125,1],"to":[2,0],"arrow":true},{"from":[4,-3.5],"to":[1.53125,-3.5],"arrow":true},{"from":[1.53125,-3.5],"to":[2,0],"arrow":true}],"texts":[{"at":[-0.3,-4.7],"text":"Parabolic reflector","anchor":"end"},{"at":[3.4,4.8],"text":"Parallel rays of sunlight","anchor":"start"}]}
+{"ariaLabel":"A parabolic reflector opening to the right. Three parallel rays of sunlight, all traveling horizontally leftward, strike the inside of the reflector and each reflects toward a single focus point inside the curve.","xMin":-1,"xMax":5,"yMin":-5,"yMax":5,"grid":false,"tickLabels":false,"quadratics":[{"a":0.125,"sideways":true,"arrows":false}],"points":[{"at":[2,0],"label":"Focus","labelSide":"se"}],"segments":[{"from":[4.5,3.5],"to":[1.53125,3.5],"arrows":"end"},{"from":[1.53125,3.5],"to":[1.9469,0.3965],"arrows":"end"},{"from":[4.5,1.5],"to":[0.28125,1.5],"arrows":"end"},{"from":[0.28125,1.5],"to":[1.6986,0.263],"arrows":"end"},{"from":[4.5,-3],"to":[1.125,-3],"arrows":"end"},{"from":[1.125,-3],"to":[1.888,-0.384],"arrows":"end"}],"texts":[{"at":[4.7,3.35],"text":"Parallel rays of sunlight","anchor":"start"},{"at":[2.95,-4.65],"text":"Parabolic reflector","anchor":"start"}],"unit":40}
 {{< /apfigure >}}
 
 Parabolic mirrors have the ability to focus the sun's energy to a single point, raising the temperature hundreds of degrees in a matter of seconds. Thus, parabolic mirrors are featured in many low-cost, energy efficient solar products, such as solar cookers, solar heaters, and even travel-sized fire starters.
@@ -402,7 +414,7 @@ Parabolic mirrors have the ability to focus the sun's energy to a single point, 
 - Use the equation found in the first part to find the depth of the fire starter.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Cross-section of a travel-sized solar fire starter: a shallow upward-opening parabolic dish 4.5 inches wide at its rim, with the igniter mounted 1.7 inches above the vertex on a vertical post, and the dish's own depth — the shorter vertical distance from the rim down to the vertex — marked separately alongside it.","xMin":-3,"xMax":3.3,"yMin":-0.7,"yMax":2.1,"grid":false,"tickLabels":false,"quadratics":[{"a":0.14705882352941177,"arrows":false,"from":-2.25,"to":2.25}],"points":[{"at":[0,1.7]}],"segments":[{"from":[0,0],"to":[0,1.7]},{"from":[-2.25,-0.45],"to":[2.25,-0.45],"arrow":"both","label":"4.5 in"},{"from":[2.85,0],"to":[2.85,0.7444852941176471],"arrow":"both"}],"texts":[{"at":[0.25,1.7],"text":"Igniter","anchor":"start"},{"at":[-0.15,0.85],"text":"1.7 in","anchor":"end"},{"at":[3.05,1.05],"text":"Depth","anchor":"start"}]}
+{"ariaLabel":"Cross-section of a travel-sized solar fire starter on coordinate axes with the dish's vertex at the origin: an upward-opening parabolic dish 4.5 inches across its rim, the igniter marked 1.7 inches above the vertex on the axis of symmetry, and the dish's depth — the vertical distance from the rim down to the level of the vertex — marked at the right rim, unlabeled in number.","unit":70,"xMin":-3,"xMax":4,"yMin":0,"yMax":2.2,"grid":false,"tickLabels":false,"quadratics":[{"a":0.14705882352941177,"arrows":false,"from":-2.25,"to":2.25}],"points":[{"at":[0,1.7],"label":"Igniter","labelSide":"e"}],"segments":[{"from":[-0.35,0],"to":[-0.35,1.7],"arrows":true,"label":"1.7 in","labelSide":"w"},{"from":[-2.25,-0.3],"to":[2.25,-0.3],"arrows":true,"label":"4.5 in","labelSide":"s"},{"from":[2.6,0],"to":[2.6,0.7444852941176471],"arrows":true,"label":"Depth","labelSide":"e"}]}
 {{< /apfigure >}}
 
 **Solution.**
@@ -432,17 +444,27 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="Balcony-sized solar cookers have been designed for families living in India. The top of a dish has a diameter of $1{,}600$ mm. The sun's rays reflect off the parabolic mirror toward the \"cooker,\" which is placed $320$ mm from the base. Find an equation that models a cross-section of the solar cooker. Assume that the vertex of the parabolic mirror is the origin of the coordinate plane, and that the parabola opens to the right (i.e., has the $x$-axis as its axis of symmetry). Write the equation in standard form."
   answer="y^2=1280x"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$y^2=1280x$"
-  hint="The parabola takes the form $y^2=4px$ with $p=320$, the focus distance."
+  hint="The cooker sits at the focus, so its distance from the vertex is $p$; substitute it into $y^2=4px$."
 >}}
 
 {{< fillin
-  question="Using the equation found for the solar cooker's cross-section, $y^2=1280x$, find the depth of the cooker in millimeters."
+  question="For the same solar cooker (a dish $1{,}600$ mm across at the top, with the cooker $320$ mm from the base), use your equation to find the depth of the cooker, in millimeters."
   answer="500"
+  answerForm="decimal"
   answerDisplay="$500\text{ mm}$"
   hint="The dish extends half the $1{,}600$ mm diameter, or $800$ mm, on either side of the origin; substitute that for $y$ and solve for $x$."
 >}}
+
+{{< callout type="info" >}}
+  **Media.** Access these online resources for additional instruction and practice with parabolas.
+
+  - Conic Sections: The Parabola Part 1 of 2
+  - Conic Sections: The Parabola Part 2 of 2
+  - Parabola with Vertical Axis
+  - Parabola with Horizontal Axis
+{{< /callout >}}
 
 ## Key equations
 
@@ -469,47 +491,50 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="For the equation $x=8y^2$, rewrite it in standard form."
   answer="y^2=\frac{1}{8}x"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$y^2=\tfrac{1}{8}x$"
   hint="Divide both sides by $8$ so the squared term stands alone."
 >}}
 
 {{< fillin
-  question="For the equation $x=8y^2$, rewritten in standard form as $y^2=\tfrac{1}{8}x$, give the coordinates of the focus as an ordered pair."
-  answer="(1/32,0)"
+  question="For the same equation $x=8y^2$, give the coordinates of the focus as an ordered pair."
+  answer="(\frac{1}{32},0)"
+  answerForm="lowest-terms"
   answerDisplay="$\left(\tfrac{1}{32},0\right)$"
-  hint="Match $y^2=\tfrac18x$ to $y^2=4px$ to find $p$; the focus is $(p,0)$."
+  hint="Match your standard form to $y^2=4px$ to find $p$; the focus is $(p,0)$."
 >}}
 
 {{< fillin
   question="For the equation $y=-4x^2$, rewrite it in standard form."
   answer="x^2=-\frac{1}{4}y"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$x^2=-\tfrac{1}{4}y$"
   hint="Divide both sides by $-4$ so the squared term stands alone."
 >}}
 
 {{< fillin
-  question="For the equation $y=-4x^2$, rewritten in standard form as $x^2=-\tfrac{1}{4}y$, give the equation of the directrix, as an equation."
-  answer="y=1/16"
+  question="For the same equation $y=-4x^2$, give the equation of the directrix, as an equation."
+  answer="y=\frac{1}{16}"
+  answerForm="solved:y lowest-terms"
   answerDisplay="$y=\tfrac{1}{16}$"
-  hint="Match $x^2=-\tfrac14y$ to $x^2=4py$ to find $p$; the directrix is $y=-p$."
+  hint="Match your standard form to $x^2=4py$ to find $p$; the directrix is $y=-p$."
 >}}
 
 {{< fillin
   question="For the equation $x=36y^2$, rewrite it in standard form."
   answer="y^2=\frac{1}{36}x"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$y^2=\tfrac{1}{36}x$"
   hint="Divide both sides by $36$ so the squared term stands alone."
 >}}
 
 {{< fillin
-  question="For the equation $x=36y^2$, rewritten in standard form as $y^2=\tfrac{1}{36}x$, give both endpoints of the latus rectum as ordered pairs, separated by a comma."
-  answer="(1/144,1/72),(1/144,-1/72)"
+  question="For the same equation $x=36y^2$, give both endpoints of the latus rectum as ordered pairs, separated by a comma."
+  answer="(\frac{1}{144},\frac{1}{72}),(\frac{1}{144},-\frac{1}{72})"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$\left(\tfrac{1}{144},\tfrac{1}{72}\right)$ and $\left(\tfrac{1}{144},-\tfrac{1}{72}\right)$"
-  hint="Match $y^2=\tfrac1{36}x$ to $y^2=4px$ to find $p$; the endpoints are $(p,\pm2p)$."
+  hint="Match your standard form to $y^2=4px$ to find $p$; the endpoints are $(p,\pm2p)$."
 >}}
 
 ### Write equations of parabolas in standard form
@@ -517,7 +542,7 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="The vertex of a parabola is $(-3,-1)$, and the endpoints of its latus rectum are $(0,5)$ and $(0,-7)$. Find the equation of the parabola, in standard form."
   answer="(y+1)^2=12(x+3)"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$(y+1)^2=12(x+3)$"
   hint="The latus rectum endpoints share the focus's $x$-coordinate, $0$; use it with the vertex to find $p$, then form $(y-k)^2=4p(x-h)$."
 >}}
@@ -525,7 +550,7 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="A parabola has vertex $(0,0)$, directrix $y=4$, and focus $(0,-4)$. Find the equation of the parabola, in standard form."
   answer="x^2=-16y"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$x^2=-16y$"
   hint="The focus has the form $(0,p)$, so the equation has the form $x^2=4py$."
 >}}
@@ -533,13 +558,13 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="The graph below shows a parabola with vertex $(0,0)$ and focus $\left(0,\tfrac{1}{4}\right)$, opening upward along a vertical axis of symmetry. Find the equation of the parabola, in standard form."
   answer="x^2=y"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$x^2=y$"
   hint="The focus has the form $(0,p)$, so the equation has the form $x^2=4py$."
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"An upward-opening parabola with vertex at (0, 0). A dashed vertical axis of symmetry passes through the vertex and the focus, which is marked at (0, 1/4).","xMin":-3,"xMax":3,"yMin":-1,"yMax":4,"grid":false,"tickLabels":false,"quadratics":[{"a":1}],"lines":[{"x":0,"dashed":true}],"points":[{"at":[0,0],"label":"Vertex (0, 0)"},{"at":[0,0.25],"label":"Focus (0, 1/4)"}],"texts":[{"at":[-2.05,3],"text":"Axis of symmetry","anchor":"end"}]}
+{"ariaLabel":"An upward-opening parabola with its vertex marked at (0, 0) and its focus marked at (0, 1/4), directly above the vertex. The y-axis, which passes through the vertex and the focus, is labeled as the axis of symmetry.","unit":180,"xMin":-1,"xMax":1,"yMin":-0.4,"yMax":1.2,"grid":false,"tickLabels":false,"quadratics":[{"a":1}],"points":[{"at":[0,0],"label":"Vertex (0, 0)","labelSide":"sw"},{"at":[0,0.25],"label":"Focus (0, 1/4)","labelSide":"ne","labelNudge":[-4,-12]}],"texts":[{"at":[-0.06,1.05],"text":"Axis of symmetry","anchor":"end"}]}
 {{< /apfigure >}}
 
 ### Graph parabolas with vertices not at the origin
@@ -547,37 +572,41 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="Rewrite $y^2+12x-6y+21=0$ in standard form by completing the square."
   answer="(y-3)^2=-12(x+1)"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$(y-3)^2=-12(x+1)$"
   hint="Isolate the $y$-terms on one side, complete the square in $y$, and collect the $x$-terms on the other side."
 >}}
 
 {{< fillin
-  question="For the parabola $y^2+12x-6y+21=0$, rewritten in standard form as $(y-3)^2=-12(x+1)$, give the vertex as an ordered pair."
+  question="For the same parabola $y^2+12x-6y+21=0$, give the vertex as an ordered pair."
   answer="(-1,3)"
+  answerForm="decimal"
   answerDisplay="$(-1,3)$"
-  hint="Match $(y-3)^2=-12(x+1)$ to $(y-k)^2=4p(x-h)$; the vertex is $(h,k)$."
+  hint="Match your standard form to $(y-k)^2=4p(x-h)$; the vertex is $(h,k)$."
 >}}
 
 {{< fillin
-  question="For the parabola $y^2+12x-6y+21=0$, rewritten in standard form as $(y-3)^2=-12(x+1)$, give the equation of the directrix, as an equation."
+  question="For the same parabola $y^2+12x-6y+21=0$, give the equation of the directrix, as an equation."
   answer="x=2"
+  answerForm="solved:x decimal"
   answerDisplay="$x=2$"
-  hint="With $(h,k)=(-1,3)$ and $4p=-12$, the directrix is $x=h-p$."
+  hint="Read $h$ and $4p$ off your standard form; the directrix is $x=h-p$."
 >}}
 
 {{< fillin
   question="Rewrite $x^2-4x+2y-6=0$ in standard form by completing the square, then give the coordinates of the focus as an ordered pair."
-  answer="(2,4.5)"
+  answer="(2,\frac{9}{2})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(2,\tfrac{9}{2}\right)$"
-  hint="Completing the square gives $(x-2)^2=-2(y-5)$; match it to $(x-h)^2=4p(y-k)$, and the focus is $(h,k+p)$."
+  hint="Isolate the $x$-terms, complete the square in $x$, and factor the $y$-side to reach $(x-h)^2=4p(y-k)$; the focus is $(h,k+p)$."
 >}}
 
 {{< fillin
-  question="For the parabola $x^2-4x+2y-6=0$, rewritten in standard form as $(x-2)^2=-2(y-5)$, give the axis of symmetry, as an equation."
-  answer="x=2"
-  answerDisplay="$x=2$"
-  hint="With $(h,k)=(2,5)$, the axis of symmetry parallel to the $y$-axis is $x=h$."
+  question="For the same parabola $x^2-4x+2y-6=0$, give the equation of the directrix, as an equation."
+  answer="y=\frac{11}{2}"
+  answerForm="solved:y lowest-terms"
+  answerDisplay="$y=\tfrac{11}{2}$"
+  hint="Read $k$ and $4p$ off your standard form; the directrix is $y=k-p$."
 >}}
 
 ### Solve applied problems involving parabolas
@@ -585,6 +614,7 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="The mirror in an automobile headlight has a parabolic cross-section with the light bulb at the focus. On a schematic, the equation of the parabola is given as $x^2=4y$. At what coordinates should you place the light bulb?"
   answer="(0,1)"
+  answerForm="decimal"
   answerDisplay="$(0,1)$"
   hint="Match $x^2=4y$ to $x^2=4py$ to find $p$; the focus is $(0,p)$."
 >}}
@@ -592,6 +622,7 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="A satellite dish is shaped like a paraboloid of revolution, formed by rotating a parabola around its axis of symmetry, with the receiver at the focus. If the dish is $12$ feet across at its opening and $4$ feet deep at its center, how many feet above the vertex should the receiver be placed?"
   answer="2.25"
+  answerForm="lowest-terms"
   answerDisplay="$2.25$ feet"
   hint="With the vertex at the origin and the axis of symmetry vertical, the rim point $(6,4)$ satisfies $x^2=4py$; solve for $p$."
 >}}
@@ -599,19 +630,19 @@ The dish is about $0.74$ inches deep.
 {{< fillin
   question="An arch is in the shape of a parabola. It has a span of $100$ feet and a maximum height of $20$ feet. Find the equation of the parabola, with the vertex at the top of the arch and the ends of the span on the $x$-axis, in standard form."
   answer="x^2=-125(y-20)"
-  answerForm="parabola-standard-form"
+  answerForm="parabola-standard-form no-like-terms"
   answerDisplay="$x^2=-125(y-20)$"
   hint="The vertex is $(0,20)$ and the arch meets the $x$-axis at $(\pm50,0)$; substitute one endpoint into $(x-h)^2=4p(y-k)$ to solve for $p$."
 >}}
 
 {{< fillin
-  question="Using the arch equation $x^2=-125(y-20)$, determine the height of the arch $40$ feet from the center, rounded to one decimal place."
+  question="For the same arch (span $100$ feet, maximum height $20$ feet), use your equation to determine the height of the arch, in feet, $40$ feet from the center."
   answer="7.2"
-  answerForm="decimal"
+  answerForm="lowest-terms"
   answerDisplay="$7.2$ feet"
   hint="Substitute $x=40$ into the standard-form equation and solve for $y$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 10.3: The Parabola](https://openstax.org/books/precalculus-2e/pages/10-3-the-parabola) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own two-objective review of graphing vertical and horizontal parabolas from general or standard form, keyed to Intermediate Algebra 11.2.1/11.2.2, complete with its own worked examples and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 1042 (true PDF index 1052), where Real-World Applications exercise 70 of the previous section runs directly into the "10.3 The Parabola" heading with no corequisite-skills material between them. Omitted the credit photograph of Katherine Johnson, keeping the two biographical paragraphs that introduce it. Recreated every instructional figure as an accessible spec-first SVG, each independently checked against the rendered PDF: the double-cone "Parabola" formation figure (Figure 2), drawn as an exact schematic — a right double cone and a cutting plane parallel to one generator, with the base circles, the cone silhouettes, and the parabolic trace all computed from the cone equation under a fixed oblique projection, hidden portions dashed — and corrected to match the section's own prose ("If the plane is parallel to the edge of the cone, an unbounded curve is formed") and the rendered art (a plane crossing only one nappe) rather than the pinned CNXML's alt text for that figure — a source defect, detailed below; the generic key-features figure (Figure 3) and the point-on-the-parabola derivation figure (Figure 4), both drawn with representative numbers since the source states them symbolically; the four-panel standard-forms-at-the-origin figure (Figure 5) and its vertex-$(h,k)$ counterpart (Figure 9), each panel independently re-derived from $p=\pm2$ (and $h=k=1$ for Figure 9) rather than traced from the source art, with the negative-$p$ panels' latus-rectum labels kept in the source's own $\lvert 2p\rvert$ form; the tangent-lines figure (Figure 6); both Example figures for the origin case (Figures 7 and 8) and both for the vertex-$(h,k)$ case (Figures 10 and 11); the reflecting-property schematic (Figure 12), with three representative parallel rays reflecting to the focus (the source's exact ray count and angles are not stated); and the fire-starter cross-section (Figure 13), the given diagram for that example, drawn to the stated $1.7$-inch focus height and $4.5$-inch width with its own (shorter, unlabeled) depth marked separately, matching the source's convention of leaving the solved depth off the given figure. Kept the "Media" callout's introductory sentence but omitted its four external video links, matching house precedent elsewhere in this book. Every "write in standard form" fill-in declares `answerForm="parabola-standard-form"` (added to the grading engine for this chapter), replayed against its own general-form span to confirm the token reports `form` rather than `correct`; focus and vertex are keyed as ordered pairs, directrix and axis of symmetry as equations ("as an equation" stated in the question, since a bare number also grades correct against the equation but the reverse does not hold), and latus rectum endpoints as an `answerMode="unordered"` two-member list, per this book's established convention for a `\pm`-unparseable pair. Two end-of-section "given vertex, focus, and directrix" items (exercises 47 and 49 in the Graphical set) were independently solved but not used: both have an irrational $4p$ (a $\sqrt2$ or $\sqrt5$ coefficient on the linear term), and `parabola-standard-form`'s coefficient pattern accepts only an integer, decimal, or written fraction — the correct keyed answer for either item reports `form` against itself, so neither is retype-safe under the token this chapter requires. The three algebraic "rewrite in standard form, then determine the vertex, focus, and directrix" exercises used for the vertex-at-the-origin objective keep only the standard-form rewrite and one non-trivial feature (focus, directrix, or latus rectum) as components, omitting a redundant "give the vertex" component, since the vertex is $(0,0)$ for every exercise in that family by construction and restating it tests nothing the standard-form component does not already require. "Determine the equation for the parabola from its graph" exercise 51 (vertex $(0,0)$, focus $\left(0,\tfrac14\right)$, both printed directly on the source's own graph) was recreated as an accessible given-figure feeding a standard-form fill-in, the same treatment the fire-starter's given diagram receives; two sibling items in that set (exercises 52, 54) carry no printed solution and were not used. Eleven selected end-of-section exercises were adapted into eighteen interactive Practice components across four objective groups, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 10.3: The Parabola](https://openstax.org/books/precalculus-2e/pages/10-3-the-parabola) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own two-objective review of graphing vertical and horizontal parabolas from general or standard form, keyed to Intermediate Algebra 11.2.1/11.2.2, complete with its own worked examples and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 1042 (true PDF index 1052), where Real-World Applications exercise 70 of the previous section runs directly into the "10.3 The Parabola" heading with no corequisite-skills material between them. Omitted the credit photograph of Katherine Johnson, keeping the two biographical paragraphs that introduce it. Recreated every instructional figure as an accessible spec-first SVG, each independently checked against the rendered PDF: the double-cone "Parabola" formation figure (Figure 2), drawn as an exact schematic — a right double cone and a cutting plane parallel to one generator, with the base circles, the cone silhouettes, and the parabolic trace all computed from the cone equation under a fixed oblique projection, hidden portions dashed — and corrected to match the section's own prose ("If the plane is parallel to the edge of the cone, an unbounded curve is formed") and the rendered art (a plane crossing only one nappe) rather than the pinned CNXML's alt text for that figure, which describes a hyperbola; the generic key-features figure (Figure 3) and the point-on-the-parabola derivation figure (Figure 4), both drawn with representative numbers since the source states them symbolically; the four-panel standard-forms-at-the-origin figure (Figure 5) and its vertex-$(h,k)$ counterpart (Figure 9), each panel independently re-derived from $p=\pm2$ (and $h=k=1$ for Figure 9) rather than traced from the source art, with the negative-$p$ panels' latus-rectum labels kept in the source's own $\lvert 2p\rvert$ form; the tangent-lines figure (Figure 6); both Example figures for the origin case (Figures 7 and 8) and both for the vertex-$(h,k)$ case (Figures 10 and 11), each with its dashed latus rectum as in the source art; the reflecting-property schematic (Figure 12), with three representative parallel rays reflecting to the focus (the source's exact ray count and angles are not stated); and the fire-starter cross-section (Figure 13), the given diagram for that example, drawn on coordinate axes with the dish's vertex at the origin (as the example assumes) to the stated $1.7$-inch focus height and $4.5$-inch width with its own (shorter, unlabeled) depth marked separately, matching the source's convention of leaving the solved depth off the given figure. Kept the "Media" callout's introductory sentence and its four video titles but omitted their external links, matching house precedent elsewhere in this book. Focus and vertex are keyed as ordered pairs, a directrix as an equation ("as an equation" stated in the question), and the two latus rectum endpoints as an unordered two-member list. Two end-of-section "given vertex, focus, and directrix" items with an irrational $4p$ (exercises 47 and 49 in the Graphical set) were not used. The three algebraic "rewrite in standard form, then determine the vertex, focus, and directrix" exercises used for the vertex-at-the-origin objective keep only the standard-form rewrite and one non-trivial feature (the focus, the directrix, or — not in the source key, derived from its focus — the latus rectum's endpoints) as components, omitting a redundant "give the vertex" component, since the vertex is $(0,0)$ for every exercise in that family by construction and restating it tests nothing the standard-form component does not already require. "Determine the equation for the parabola from its graph" exercise 51 (vertex $(0,0)$, focus $\left(0,\tfrac14\right)$, both printed directly on the source's own graph) was recreated as an accessible given-figure feeding a standard-form fill-in, the same treatment the fire-starter's given diagram receives, with its description written from the drawing (the pinned CNXML's alt text for that image describes a pencil-and-string ellipse drawing); two sibling items in that set (exercises 52, 54) carry no printed solution and were not used. Eleven selected end-of-section exercises were adapted into eighteen interactive Practice components across four objective groups, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key.</small>

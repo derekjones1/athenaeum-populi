@@ -53,7 +53,7 @@ The solution set to a three-by-three system is an ordered triple $\{(x,y,z)\}$. 
 The figures below illustrate the possible solution scenarios. Three planes intersecting at a single point represent a system with a single solution — the marked point is the one ordered triple satisfying all three equations:
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Three planes drawn as translucent parallelograms — one horizontal, one vertical seen edge-on, and one facing the reader — overlapping at the center, with a single point marked where all three meet.","unit":52,"polygons":[{"points":[[-2.467,-0.378],[1.333,-0.378],[2.467,0.378],[-1.333,0.378]],"fill":true},{"points":[[-0.567,-1.628],[0.567,-0.872],[0.567,1.628],[-0.567,0.872]],"fill":true},{"points":[[-1.9,-1.25],[1.9,-1.25],[1.9,1.25],[-1.9,1.25]],"fill":true}],"points":[{"at":[0,0],"r":3.5}]}
+{"ariaLabel":"Three planes drawn as translucent parallelograms — one horizontal, one vertical running from front to back, and one facing the reader — overlapping at the center, with a single point marked where all three meet.","unit":52,"polygons":[{"points":[[-2.467,-0.378],[1.333,-0.378],[2.467,0.378],[-1.333,0.378]],"fill":true},{"points":[[-0.567,-1.628],[0.567,-0.872],[0.567,1.628],[-0.567,0.872]],"fill":true},{"points":[[-1.9,-1.25],[1.9,-1.25],[1.9,1.25],[-1.9,1.25]],"fill":true}],"points":[{"at":[0,0],"r":3.5}]}
 {{< /apfigure >}}
 
 Three planes intersecting in a line represent a system with infinitely many solutions — every point along the marked line satisfies all three equations:
@@ -62,7 +62,7 @@ Three planes intersecting in a line represent a system with infinitely many solu
 {"ariaLabel":"Three translucent planes, each containing the same vertical line, fanned at different angles around it; a vertical double-headed arrow runs along the shared line of intersection.","unit":48,"polygons":[{"points":[[-0.567,-1.878],[0.567,-1.122],[0.567,1.878],[-0.567,1.122]],"fill":true},{"points":[[-1.704,-1.836],[1.704,-1.164],[1.704,1.836],[-1.704,1.164]],"fill":true},{"points":[[-0.812,-1.108],[0.812,-1.892],[0.812,1.108],[-0.812,1.892]],"fill":true}],"segments":[{"from":[0,-2.1],"to":[0,2.1],"arrow":"both"}]}
 {{< /apfigure >}}
 
-A system with no solution can arrange its three planes three ways. The planes may intersect each other pairwise, with no point common to all three:
+A system with no solution has no point common to all three planes, and the figures below show three ways that can happen. The planes may intersect each other pairwise, with no point common to all three:
 
 {{< apfigure kind="figure" >}}
 {"ariaLabel":"Two slanted translucent bands crossing in an X and a horizontal band lower down crossing each of them; each pair of planes overlaps in its own region, but no region is common to all three.","unit":48,"polygons":[{"points":[[-2.3,-1.5],[-1.1,-1.5],[2.3,1.7],[1.1,1.7]],"fill":true},{"points":[[1.1,-1.5],[2.3,-1.5],[-1.1,1.7],[-2.3,1.7]],"fill":true},{"points":[[-2.7,-1.35],[2.7,-1.35],[2.7,-0.65],[-2.7,-0.65]],"fill":true}]}
@@ -71,7 +71,7 @@ A system with no solution can arrange its three planes three ways. The planes ma
 Two of the planes may be parallel, each intersecting the third — but never each other:
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Two parallel horizontal translucent planes, one above the other, with a vertical plane passing through both.","unit":48,"polygons":[{"points":[[-2.467,-1.178],[1.333,-1.178],[2.467,-0.422],[-1.333,-0.422]],"fill":true},{"points":[[-2.467,0.422],[1.333,0.422],[2.467,1.178],[-1.333,1.178]],"fill":true},{"points":[[-0.567,-1.978],[0.567,-1.222],[0.567,1.978],[-0.567,1.222]],"fill":true}]}
+{"ariaLabel":"Two parallel horizontal translucent planes, one above the other, with a vertical plane passing through both.","unit":48,"polygons":[{"points":[[-2.467,-1.178],[1.333,-1.178],[2.467,-0.422],[-1.333,-0.422]],"fill":true},{"points":[[-2.467,0.422],[1.333,0.422],[2.467,1.178],[-1.333,1.178]],"fill":true},{"points":[[-0.567,-2.278],[0.567,-1.522],[0.567,2.278],[-0.567,1.522]],"fill":true}]}
 {{< /apfigure >}}
 
 Or all three planes may be parallel, sharing no point at all:
@@ -150,7 +150,7 @@ The second step is multiplying equation (1) by $-2$ and adding the result to equ
 
 $$
 \begin{array}{lrcl}
-& -2x+4y-6z &=& -18 \quad\text{(1) multiplied by }-2 \\[4pt]
+& -2x+4y-6z &=& -18 \quad\text{(1) multiplied by }{-2} \\[4pt]
 & 2x-5y+5z &=& 17 \quad(3) \\[4pt]
 \text{Add the two equations.} & -y-z &=& -1 \quad(5)
 \end{array}
@@ -196,10 +196,10 @@ $$
 \end{array}
 $$
 
-The solution is the ordered triple $(1,-1,2)$. Graphically, the planes $x=1$, $y=-2$, and $z=2$ meet at exactly that point:
+The solution is the ordered triple $(1,-1,2)$. Graphically, the planes $x=1$, $y=-1$, and $z=2$ meet at exactly that point:
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"Three translucent planes labeled x = 1, y = −2, and z = 2 — one horizontal, one vertical seen edge-on, and one facing the reader — meeting at a single marked point, with a leader line to the label (1, −1, 2).","unit":52,"polygons":[{"points":[[-2.467,-0.378],[1.333,-0.378],[2.467,0.378],[-1.333,0.378]],"fill":true},{"points":[[-0.567,-1.628],[0.567,-0.872],[0.567,1.628],[-0.567,0.872]],"fill":true},{"points":[[-1.9,-1.25],[1.9,-1.25],[1.9,1.25],[-1.9,1.25]],"fill":true}],"points":[{"at":[0,0],"r":3.5}],"segments":[{"from":[0.06,0.1],"to":[0.75,1.55]}],"texts":[{"at":[0.8,1.62],"text":"(1, −1, 2)","anchor":"start"},{"at":[0.62,-1.72],"text":"x = 1","anchor":"start"},{"at":[2.55,0.28],"text":"z = 2","anchor":"start"},{"at":[-1.6,-1.45],"text":"y = −2","anchor":"start"}]}
+{"ariaLabel":"Three translucent planes meeting at a single marked point: the plane x = 1, vertical and running from front to back; the plane y = −1, facing the reader; and the plane z = 2, horizontal. A leader line runs from the point to the label (1, −1, 2).","unit":52,"polygons":[{"points":[[-2.467,-0.378],[1.333,-0.378],[2.467,0.378],[-1.333,0.378]],"fill":true},{"points":[[-0.567,-1.628],[0.567,-0.872],[0.567,1.628],[-0.567,0.872]],"fill":true},{"points":[[-1.9,-1.25],[1.9,-1.25],[1.9,1.25],[-1.9,1.25]],"fill":true}],"points":[{"at":[0,0],"r":3.5}],"segments":[{"from":[0.06,0.09],"to":[1.0,1.5]}],"texts":[{"at":[1.05,1.57],"text":"(1, −1, 2)","anchor":"start"},{"at":[-0.567,-1.98],"text":"x = 1","anchor":"middle"},{"at":[2.55,0.28],"text":"z = 2","anchor":"start"},{"at":[-2.02,-1.0],"text":"y = −1","anchor":"end"}]}
 {{< /apfigure >}}
 
 **Example.** In the problem posed at the beginning of the section, Jordi invested his inheritance of \$12,000 in three different funds: part in a money-market fund paying 3% interest annually; part in municipal bonds paying 4% annually; and the rest in mutual funds paying 7% annually. Jordi invested \$4,000 more in mutual funds than he invested in municipal bonds. The total interest earned in one year was \$670. How much did he invest in each type of fund?
@@ -304,8 +304,9 @@ Jordi invested \$2,000 in a money-market fund, \$3,000 in municipal bonds, and \
 {{< fillin
   question="Solve the system of equations in three variables, as an ordered triple $(x,y,z)$. $\begin{cases}2x+y-2z=-1\\3x-3y-z=5\\x-2y+3z=6\end{cases}$"
   answer="(1,-1,1)"
+  answerForm="decimal"
   answerDisplay="$(1,-1,1)$"
-  hint="Eliminate x from a pair of equations, then eliminate x again from a different pair, to get a two-by-two system in y and z."
+  hint="Eliminate $x$ from a pair of equations, then eliminate $x$ again from a different pair, to get a two-by-two system in $y$ and $z$."
 >}}
 
 ### Identifying Inconsistent Systems of Equations Containing Three Variables
@@ -336,7 +337,7 @@ Next, we multiply equation (1) by $-5$ and add it to equation (3).
 
 $$
 \begin{array}{lrcl}
-& -5x+15y-5z &=& -20 \quad\text{(1) multiplied by }-5 \\[4pt]
+& -5x+15y-5z &=& -20 \quad\text{(1) multiplied by }{-5} \\[4pt]
 & 5x-13y+13z &=& 8 \quad(3) \\[4pt]
 \text{Add the two equations.} & 2y+8z &=& -12 \quad(5)
 \end{array}
@@ -352,14 +353,14 @@ $$
 \end{array}
 $$
 
-The final equation $0=2$ is a contradiction, so we conclude that the system of equations in inconsistent and, therefore, has no solution.
+The final equation $0=2$ is a contradiction, so we conclude that the system of equations is inconsistent and, therefore, has no solution.
 
 **Analysis.** In this system, each plane intersects the other two, but not at the same location. Therefore, the system is inconsistent.
 
 {{< multiplechoice
   question="Solve the system of three equations in three variables. $\begin{cases}x+y+z=2\\y-3z=1\\2x+y+5z=0\end{cases}$ How many solutions does the system have?"
   answer="no solution — the system is inconsistent"
-  hint="Eliminate x using equations (1) and (3), then compare the resulting two-variable equation with equation (2)."
+  hint="Eliminate $x$ using the first and third equations, then compare the resulting equation in $y$ and $z$ with the second equation."
 >}}
 no solution — the system is inconsistent
 one solution — the system is independent
@@ -384,7 +385,7 @@ $$
 
 $$
 \begin{array}{lrcl}
-& -4x-2y+6z &=& 0 \quad\text{equation (1) multiplied by }-2 \\[4pt]
+& -4x-2y+6z &=& 0 \quad\text{equation (1) multiplied by }{-2} \\[4pt]
 & 4x+2y-6z &=& 0 \quad(2) \\[4pt]
 \text{Add the two equations.} & 0 &=& 0
 \end{array}
@@ -439,8 +440,9 @@ So the general solution is $\left(x,\tfrac{5}{2}x,\tfrac{3}{2}x\right)$. In this
 {{< fillin
   question="Solve the following system, expressing the general solution as an ordered triple $(x,y,z)$ in terms of $x$. $\begin{cases}x+y+z=7\\3x-2y-z=4\\x+6y+5z=24\end{cases}$"
   answer="(x,4x-11,-5x+18)"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$(x,4x-11,-5x+18)$"
-  hint="Add equations to eliminate z first, then eliminate it again from a different pair to get two equations relating x and y alone."
+  hint="Add two equations to eliminate $z$, then eliminate $z$ again from a different pair to get equations relating $x$ and $y$ alone. Solve for $y$ in terms of $x$, then substitute back to find $z$."
 >}}
 
 ## Key concepts
@@ -460,7 +462,7 @@ So the general solution is $\left(x,\tfrac{5}{2}x,\tfrac{3}{2}x\right)$. In this
 {{< multiplechoice
   question="Determine whether the ordered triple $(3,-3,-5)$ is a solution to the given system. $\begin{cases}6x-y+3z=6\\3x+5y+2z=0\\x+y=0\end{cases}$"
   answer="not a solution"
-  hint="Substitute x=3, y=-3, z=-5 into all three equations; if any one fails, the triple is not a solution."
+  hint="Substitute $x=3$, $y=-3$, $z=-5$ into all three equations; if any one fails, the triple is not a solution."
 >}}
 a solution
 not a solution
@@ -469,7 +471,7 @@ not a solution
 {{< multiplechoice
   question="Determine whether the ordered triple $(4,4,-1)$ is a solution to the given system. $\begin{cases}x-y=0\\x-z=5\\x-y+z=-1\end{cases}$"
   answer="a solution"
-  hint="Substitute x=4, y=4, z=-1 into all three equations and check that each one is true."
+  hint="Substitute $x=4$, $y=4$, $z=-1$ into all three equations and check that each one is true."
 >}}
 a solution
 not a solution
@@ -478,15 +480,17 @@ not a solution
 {{< fillin
   question="Solve the system by elimination, as an ordered triple $(x,y,z)$. $\begin{cases}3x-4y+2z=-15\\2x+4y+z=16\\2x+3y+5z=20\end{cases}$"
   answer="(-1,4,2)"
+  answerForm="decimal"
   answerDisplay="$(-1,4,2)$"
-  hint="Add the first two equations to eliminate y, then combine a different pair of equations to eliminate y again."
+  hint="Add the first two equations to eliminate $y$, then combine a different pair of equations to eliminate $y$ again."
 >}}
 
 {{< fillin
   question="Solve the system by Gaussian elimination, as an ordered triple $(x,y,z)$. $\begin{cases}2x-y+3z=17\\-5x+4y-2z=-46\\2y+5z=-7\end{cases}$"
   answer="(4,-6,1)"
+  answerForm="decimal"
   answerDisplay="$(4,-6,1)$"
-  hint="The third equation already has x eliminated; eliminate x from the first two equations to get a second equation in y and z."
+  hint="The third equation already has $x$ eliminated; eliminate $x$ from the first two equations to get a second equation in $y$ and $z$."
 >}}
 
 ### Identify inconsistent systems of equations containing three variables
@@ -494,7 +498,7 @@ not a solution
 {{< multiplechoice
   question="Solve the system by any method. $\begin{cases}x+y+z=14\\2y+3z=-14\\-16y-24z=-112\end{cases}$ How many solutions does the system have?"
   answer="no solution"
-  hint="Compare the second equation to the third by multiplying the second equation by -8."
+  hint="Compare the second equation to the third by multiplying the second equation by $-8$."
 >}}
 no solution
 one solution
@@ -504,7 +508,7 @@ infinitely many solutions
 {{< multiplechoice
   question="True or false: if the ordered triple $(0,0,0)$ does not satisfy every equation of $\begin{cases}2x+3y-6z=1\\-4x-6y+12z=-2\\x+2y+5z=10\end{cases}$, then the system has no solution."
   answer="False"
-  hint="A triple failing to check is not a solution itself, but the system could still have one solution, no solution, or infinitely many — try solving the system instead of testing a single guess."
+  hint="Decide whether this system has any solution at all: compare the first two equations, then use the third equation to eliminate a variable."
 >}}
 True
 False
@@ -514,21 +518,22 @@ False
 
 {{< fillin
   question="Solve the system, expressing the general solution as an ordered triple $(x,y,z)$ in terms of $x$. $\begin{cases}2x+3y-6z=1\\-4x-6y+12z=-2\\x+2y+5z=10\end{cases}$"
-  answer="(x,(65-16x)/27,(x+28)/27)"
+  answer="(x,\frac{65-16x}{27},\frac{x+28}{27})"
+  answerForm="no-like-terms"
   answerDisplay="$\left(x,\tfrac{65-16x}{27},\tfrac{x+28}{27}\right)$"
-  hint="Notice the second equation is -2 times the first, so it contributes no new information; use the first and third equations to solve for y and z in terms of x."
+  hint="Compare the first two equations. Then eliminate $y$ between the first and third equations to write $z$ in terms of $x$, and substitute back to find $y$."
 >}}
 
 {{< multiplechoice
   question="Three coworkers work for the same employer. Their jobs are warehouse manager, office manager, and truck driver. The sum of the annual salaries of the warehouse manager and office manager is \$82,000. The office manager makes \$4,000 more than the truck driver annually. The annual salaries of the warehouse manager and the truck driver total \$78,000. Setting up a system of three equations in three variables for the three salaries, how many solutions does the system have?"
-  answer="infinitely many solutions — the system is dependent, so more information is needed"
-  hint="Write the three salary equations and check whether one of them can be obtained by combining the other two."
+  answer="infinitely many solutions — the system is dependent"
+  hint="Write one equation for each salary fact. Eliminate one salary using two different pairs of equations, then compare the two equations that remain."
 >}}
-no solution
-exactly one solution
-infinitely many solutions — the system is dependent, so more information is needed
+no solution — the system is inconsistent
+one solution — the system is independent
+infinitely many solutions — the system is dependent
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.2: Systems of Linear Equations: Three Variables](https://openstax.org/books/precalculus-2e/pages/9-2-systems-of-linear-equations-three-variables) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the section's `coreq-skills` block, an Intermediate Algebra-flavored duplicate of this same material (its own learning objectives, worked example, and two "Practice Makes Perfect" exercise sets) that is not part of the printed Precalculus 2e page — the printed section opens directly with the coin-photo figure and the Jordi word problem, confirmed against the rendered PDF; omitted that opening coin photograph, which carries no mathematics; recreated the source's four schematic 3D plane-intersection illustrations (the "Number of Possible Solutions" overview pair, drawn here as five single-panel figures, and the individual figures attached to Examples 2 and 5) as accessible inline figures: each plane is a translucent parallelogram whose corners are computed from the plane's own 3D rectangle under a fixed oblique projection (or drawn as a flat band where the source itself uses flat band art), with overlapping fills reading darker exactly where planes cross, and the marked point, intersection line, and equation labels matching the source panels; the source's color coding is rendered monochrome, matching every other figure in this book. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. Converted the three "Try It" checks into interactive components: a fill-in keyed to the ordered-triple solution for the elimination Try It, a multiple choice (no solution / one solution / infinitely many solutions) for the inconsistent-system Try It, since a solution count is categorical and cannot be graded as a math expression, and a fill-in keyed to the general solution in terms of $x$ for the dependent-system Try It. Adapted eight selected end-of-section exercises, independently re-derived and checked by substituting each solution into all three printed equations (by running the arithmetic), into the closing Practice block, one group per objective: two solution-verification items (Algebraic #7 and #9) and two elimination items (Algebraic #11 and #17) for the first objective; the no-solution elimination item (Algebraic #23) and a true/false item built from the printed counterexample system in Verbal #3 for the second objective; and the dependent Gaussian-elimination item (Algebraic #19) for the third objective. The Real-World Applications salary word problem (#57) is genuinely a dependent 3×3 system — the office-manager/truck-driver relation combines with the other two equations to leave the sum of warehouse-manager and office-manager salaries as the only independent constraint tying all three variables, matching the source's own "infinitely many solutions; we need more information" key. It is posed as a multiple choice about the number of solutions because that categorical statement is the source's own printed key — the source does not print a parameterized general solution for it, unlike Algebraic #19, whose printed solution supports the general-solution fill-in.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.2: Systems of Linear Equations: Three Variables](https://openstax.org/books/precalculus-2e/pages/9-2-systems-of-linear-equations-three-variables) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted the section's `coreq-skills` block, an Intermediate Algebra-flavored duplicate of this same material (its own learning objectives, worked example, and two "Practice Makes Perfect" exercise sets) that is not part of the printed Precalculus 2e page — the printed section opens directly with the coin-photo figure and the Jordi word problem, confirmed against the rendered PDF; omitted that opening coin photograph, which carries no mathematics; recreated the source's four schematic 3D plane-intersection illustrations (the "Number of Possible Solutions" overview pair, drawn here as five single-panel figures, and the individual figures attached to Examples 2 and 5) as accessible inline figures: each plane is a translucent parallelogram whose corners are computed from the plane's own 3D rectangle under a fixed oblique projection (or drawn as a flat band where the source itself uses flat band art), with overlapping fills reading darker exactly where planes cross, and the marked point, intersection line, and equation labels matching the source panels — except that the Example 2 figure labels the third plane $y=-1$ where the source art prints $y=-2$, since the planes $x=1$, $y=-2$, and $z=2$ meet at $(1,-2,2)$, not at the labeled solution $(1,-1,2)$; the sentence introducing that figure names the same three planes. The source's color coding is rendered monochrome, matching every other figure in this book. Omitted the "Media" callout and its two external video links. Corrected the source's "the system of equations in inconsistent" to "is inconsistent" in Example 4. Converted the three "Try It" checks into interactive components: a fill-in keyed to the ordered-triple solution for the elimination Try It, a multiple choice (no solution / one solution / infinitely many solutions) for the inconsistent-system Try It, since a solution count is categorical and cannot be graded as a math expression, and a fill-in keyed to the general solution in terms of $x$ for the dependent-system Try It. Adapted eight selected end-of-section exercises, each re-derived and checked by substituting its solution into all three printed equations, into the closing Practice block, one group per objective: two solution-verification items (Algebraic #7 and #9) and two solve items (Algebraic #11, by elimination, and #17, by Gaussian elimination) for the first objective; the no-solution item (Algebraic #23) and a true/false item built from the printed counterexample system in Verbal #3 for the second objective; and, for the third objective, the dependent Gaussian-elimination item (Algebraic #19), a fill-in of the general solution in terms of $x$, as its printed answer is written, and the Real-World Applications salary problem (#57), posed as a multiple choice about the number of solutions because its printed answer, "There are infinitely many solutions; we need more information," is that categorical statement and prints no general solution.</small>

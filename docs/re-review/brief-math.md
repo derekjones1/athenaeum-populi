@@ -384,6 +384,53 @@ multiple of the worked example directly above it (Precalculus 7.3's
 $10\cos^4x$ under the $\cos^4x$ example) prints its key; swap it for a keyed
 exercise of the same objective, as for an exact repeat.
 
+Since the Precalculus chapters 9–10 re-review (October 6, 2026): a finished
+monomial passes `expanded` as a numeral does (`z`, `-2z`, `\frac12x^3y`;
+`(2)(z)`, `x^2x^3`, `x(x+1)` still fail), so a dependent-system general
+solution keys the source's writing (`(x,\frac{x+3}{2})`, `(x,2(7x-6))`,
+`(2z-6,z+1,z)`) with `no-like-terms`, which refuses `\frac{2x+6}{4}`,
+`\frac{4z-12}{2}`, `1z`, `z+0`, `z\cdot1`, a minus left against another on a
+fraction (`\frac{-x-3}{-2}`, `-\frac{-x-3}{2}`) and a coefficient with a
+factor still to cancel against the sum it multiplies (`\frac13(6x+15)`,
+`6(\frac73x-2)`; `\frac12(x+3)` passes); `expanded distributed no-like-terms`
+would refuse the source's own `\frac{x+3}{2}`. A dependent-system word problem
+whose source prints only "infinitely many solutions" stays a how-many
+multiple choice keyed to that answer; the general-solution fill-in (the
+Intermediate Algebra 4.4 ruling) applies only where the source prints the
+tuple (Precalculus 9.2's salary problem, 9.8's; ruling October 6, 2026). A
+primed letter alone in parentheses is the primed letter (`(x')^2`,
+`\left(x^{\prime}\right)^2` pass `conic-standard-form` against `x'^2`).
+`reduced-fraction` reads a trigonometric application as one variable
+(`\frac{12}{2+4\cos\theta}` is `form` against `\frac{6}{1+2\cos\theta}`), and
+`no-like-terms`/`distributed` require each term's fraction over a polynomial
+to have its polynomial factors cancelled, so a partial-fraction key under
+`expanded no-like-terms` refuses `\frac{6x-6}{(x-1)^2}-\frac{5}{(x-1)^2}` and
+the half-done `\frac{3}{x+2}+\frac{x^2+3x+2}{(x+2)(x^2+x+3)}` (`expanded`
+alone passes `\frac{8-7}{x+1}`). `expanded`, `distributed`, `no-like-terms`
+and `polynomial` read each side of an equation key, and under
+`no-like-terms` an equation may not write like terms on both sides: a
+general-form conic key (`7x'^2+9y'^2-4=0`) takes `expanded distributed
+no-like-terms` (rearranged and scaled equations pass; the typed rotation
+substitution and `8x'^2-x'^2+…` are `form`), and a polar-to-rectangular key
+(`3x^2+4y^2-2x-1=0`) takes `expanded no-like-terms`, which refuses
+`4x^2+4y^2=(1+x)^2` and `4x^2+4y^2=1+2x+x^2`. A parabola key takes
+`parabola-standard-form no-like-terms`: the token alone passed an unworked
+$4p$ (`x^2=-\frac{2500}{20}(y-20)`). A polar conic keyed in the source's
+fraction-cleared form (`r=\frac{12}{2+3\sin\theta}`) takes `solved:r
+no-like-terms` with the stem pinning whole-number coefficients — no token
+enforces the constant-1 standard form, and no 10.5 item asks for it. A
+`\mp` beside a `\pm` pairs the signs (`(\pm a,\mp b)` is two points), and a
+fraction typed with a unit against a decimal key reports `unit`. Stem trap: a
+follow-up item that prints the previous item's key in its own stem
+("rewritten in standard form as …, give the directrix") leaks it; say "For
+the same parabola $y^2+12x-6y+21=0$, give …" and restate the given data
+(Precalculus 10.3, eight stems). A "graph the inequality" exercise split
+into a computed fill-in and a recognition multiple choice must not ask a
+feature the choice's graphs draw (a vertex, an intercept): every option
+draws the same boundary, so the fill-in is read off them. Pose the fill-in
+on a sibling exercise whose boundary is not drawn (Precalculus 9.3's
+$x^2+y<9$ vertex → $x^2+y^2<4$ radius, October 7, 2026).
+
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
 `$-10$` in the wording of a +10 source item pairs with it and fails

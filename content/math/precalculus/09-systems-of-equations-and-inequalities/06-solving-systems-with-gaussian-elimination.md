@@ -72,6 +72,7 @@ $$\left[\begin{array}{ccc|c}1&2&-1&3\\2&-1&2&6\\1&-3&3&4\end{array}\right]$$
 {{< fillin
   question="Write the system $\begin{cases}4x-3y=11\\3x+2y=4\end{cases}$ as an augmented matrix. Enter row 2 of the matrix as a comma-separated list of three numbers."
   answer="3, 2, 4"
+  answerForm="decimal"
   hint="Row 2 holds the coefficients of $x$ and $y$ in the second equation, then its constant."
 >}}
 
@@ -90,6 +91,7 @@ $$\left[\begin{array}{ccc|c}1&-3&-5&-2\\2&-5&-4&5\\-3&5&4&6\end{array}\right]\to
 {{< fillin
   question="The augmented matrix $\left[\begin{array}{ccc|c}1&-1&1&5\\2&-1&3&1\\0&1&1&-9\end{array}\right]$ corresponds to a system of equations. Enter the coefficients of $x$, $y$, and $z$, and the constant, in the second equation, as a comma-separated list of four numbers."
   answer="2, -1, 3, 1"
+  answerForm="decimal"
   hint="Row 2 of the matrix is the second equation: the first three entries are the coefficients of $x$, $y$, and $z$, and the last entry is the constant."
 >}}
 
@@ -106,7 +108,7 @@ We use row operations corresponding to equation operations to obtain a new matri
 1. In any nonzero row, the first nonzero number is a $1$. It is called a *leading* $1$.
 2. Any all-zero rows are placed at the bottom of the matrix.
 3. Any leading $1$ is below and to the right of a previous leading $1$.
-4. Any column containing a leading $1$ has zeros in all other positions in the column.
+4. Any column containing a leading $1$ has zeros in all positions below the leading $1$.
 
 To solve a system of equations we can perform the following row operations to convert the coefficient matrix to row-echelon form and do back-substitution to find the solution.
 
@@ -170,6 +172,7 @@ The solution is the point $\left(\tfrac32,1\right)$.
 {{< fillin
   question="Solve the given system by Gaussian elimination: $\begin{cases}4x+3y=11\\x-3y=-1\end{cases}$. Enter the solution as an ordered pair $(x,y)$."
   answer="(2,1)"
+  answerForm="decimal"
   answerDisplay="$(2,1)$"
   hint="Use row operations to get a leading $1$ in row 1, then a zero below it in column 1, then back-substitute."
 >}}
@@ -237,6 +240,7 @@ $$\left[\begin{array}{ccc|c}1&-3&4&3\\0&1&-2&0\\0&0&4&15\end{array}\right]\xrigh
 {{< fillin
   question="Use row operations to write the system $\begin{cases}x-2y+3z=9\\-x+3y=-4\\2x-5y+5z=17\end{cases}$ in row-echelon form, then use back-substitution to solve it. Enter the solution as an ordered triple $(x,y,z)$."
   answer="(1,-1,2)"
+  answerForm="decimal"
   answerDisplay="$(1,-1,2)$"
   hint="Eliminate $x$ from equations 2 and 3 using row 1, obtain a leading $1$ in row 2, eliminate below it, then back-substitute starting from row 3."
 >}}
@@ -316,6 +320,7 @@ The generic solution is $\left(x,\tfrac{2-2x}{3},\tfrac{1-x}{3}\right)$.
 {{< fillin
   question="Solve the system using matrices: $\begin{cases}x+4y-z=4\\2x+5y+8z=15\\x+3y-3z=1\end{cases}$. Enter the solution as an ordered triple $(x,y,z)$."
   answer="(1,1,1)"
+  answerForm="decimal"
   answerDisplay="$(1,1,1)$"
   hint="Row-reduce the augmented matrix to row-echelon form, then back-substitute starting from the last row."
 >}}
@@ -422,21 +427,27 @@ $$
 The answer is \$3,000 invested at $5\%$ interest, \$1,000 invested at $8\%$, and \$6,000 invested at $9\%$ interest.
 
 {{< fillin
-  question="A small shoe company took out a loan of \$1,500,000 to expand their inventory. Part of the money was borrowed at 7% interest, part was borrowed at 8% interest, and part was borrowed at 10% interest. The amount borrowed at 10% was four times the amount borrowed at 7%, and the annual interest on all three loans was \$130,500. Use matrices to find how much was borrowed at 7% interest. Enter your answer as a plain number, without a dollar sign or commas."
+  question="A small shoe company took out a loan of \$1,500,000 to expand their inventory. Part of the money was borrowed at 7%, part was borrowed at 8%, and part was borrowed at 10%. The amount borrowed at 10% was four times the amount borrowed at 7%, and the annual interest on all three loans was \$130,500. Use matrices to find the amount borrowed at each rate. How many dollars were borrowed at 7%?"
   answer="150000"
-  hint="Let $x$, $y$, $z$ be the amounts at 7%, 8%, and 10%. Then $z=4x$, $x+y+z=1{,}500{,}000$, and $0.07x+0.08y+0.10z=130{,}500$."
+  answerForm="decimal"
+  answerDisplay="\$150,000"
+  hint="Let $x$, $y$, and $z$ be the amounts borrowed at 7%, 8%, and 10%. Write one equation for the total borrowed, one for the total interest, and one relating the 10% and 7% amounts; then row-reduce the augmented matrix and back-substitute."
 >}}
 
 {{< fillin
-  question="A small shoe company took out a loan of \$1,500,000 to expand their inventory. Part of the money was borrowed at 7% interest, part was borrowed at 8% interest, and part was borrowed at 10% interest. The amount borrowed at 10% was four times the amount borrowed at 7%, and the annual interest on all three loans was \$130,500. Use matrices to find how much was borrowed at 8% interest. Enter your answer as a plain number, without a dollar sign or commas."
+  question="A small shoe company took out a loan of \$1,500,000 to expand their inventory. Part of the money was borrowed at 7%, part was borrowed at 8%, and part was borrowed at 10%. The amount borrowed at 10% was four times the amount borrowed at 7%, and the annual interest on all three loans was \$130,500. Use matrices to find the amount borrowed at each rate. How many dollars were borrowed at 8%?"
   answer="750000"
+  answerForm="decimal"
+  answerDisplay="\$750,000"
   hint="Once you have found the amount borrowed at 7% interest, the total of \$1,500,000 minus the 7% and 10% amounts gives the 8% amount."
 >}}
 
 {{< fillin
-  question="A small shoe company took out a loan of \$1,500,000 to expand their inventory. Part of the money was borrowed at 7% interest, part was borrowed at 8% interest, and part was borrowed at 10% interest. The amount borrowed at 10% was four times the amount borrowed at 7%, and the annual interest on all three loans was \$130,500. Use matrices to find how much was borrowed at 10% interest. Enter your answer as a plain number, without a dollar sign or commas."
+  question="A small shoe company took out a loan of \$1,500,000 to expand their inventory. Part of the money was borrowed at 7%, part was borrowed at 8%, and part was borrowed at 10%. The amount borrowed at 10% was four times the amount borrowed at 7%, and the annual interest on all three loans was \$130,500. Use matrices to find the amount borrowed at each rate. How many dollars were borrowed at 10%?"
   answer="600000"
-  hint="The amount borrowed at 10% is four times the amount borrowed at 7%."
+  answerForm="decimal"
+  answerDisplay="\$600,000"
+  hint="Let $x$, $y$, and $z$ be the amounts borrowed at 7%, 8%, and 10%; row-reduce the augmented matrix of the system and back-substitute to find $z$."
 >}}
 
 ## Key concepts
@@ -457,13 +468,15 @@ The answer is \$3,000 invested at $5\%$ interest, \$1,000 invested at $8\%$, and
 {{< fillin
   question="Write the system $\begin{cases}16y=4\\9x-y=2\end{cases}$ as an augmented matrix. Enter row 1 of the matrix as a comma-separated list of three numbers."
   answer="0, 16, 4"
-  hint="Equation 1 has no $x$-term, so its coefficient is $0$; list the coefficients of $x$ and $y$, then the constant."
+  answerForm="decimal"
+  hint="List the coefficients of $x$ and $y$ in the first equation, in that order, then its constant; a variable that does not appear has coefficient $0$."
 >}}
 
 {{< fillin
   question="Write the system $\begin{cases}x+5y+8z=19\\12x+3y=4\\3x+4y+9z=-7\end{cases}$ as an augmented matrix. Enter row 2 of the matrix as a comma-separated list of four numbers."
   answer="12, 3, 0, 4"
-  hint="Equation 2 has no $z$-term, so its coefficient is $0$; list the coefficients of $x$, $y$, and $z$, then the constant."
+  answerForm="decimal"
+  hint="List the coefficients of $x$, $y$, and $z$ in the second equation, in that order, then its constant; a variable that does not appear has coefficient $0$."
 >}}
 
 ### Write the system of equations from an augmented matrix
@@ -471,12 +484,14 @@ The answer is \$3,000 invested at $5\%$ interest, \$1,000 invested at $8\%$, and
 {{< fillin
   question="The augmented matrix $\left[\begin{array}{cc|c}-2&5&5\\6&-18&26\end{array}\right]$ corresponds to a system of two equations in $x$ and $y$. Enter the coefficients of $x$ and $y$, and the constant, in the second equation, as a comma-separated list of three numbers."
   answer="6, -18, 26"
+  answerForm="decimal"
   hint="Row 2 of the matrix is the second equation: the first two entries are the coefficients of $x$ and $y$, and the last entry is the constant."
 >}}
 
 {{< fillin
   question="The augmented matrix $\left[\begin{array}{ccc|c}3&2&0&3\\-1&-9&4&-1\\8&5&7&8\end{array}\right]$ corresponds to a system of three equations in $x$, $y$, and $z$. Enter the coefficients of $x$, $y$, and $z$, and the constant, in the third equation, as a comma-separated list of four numbers."
   answer="8, 5, 7, 8"
+  answerForm="decimal"
   hint="Row 3 of the matrix is the third equation: the first three entries are the coefficients of $x$, $y$, and $z$, and the last entry is the constant."
 >}}
 
@@ -485,21 +500,23 @@ The answer is \$3,000 invested at $5\%$ interest, \$1,000 invested at $8\%$, and
 {{< fillin
   question="Starting from the augmented matrix $\left[\begin{array}{cc|c}9&3&0\\1&-2&6\end{array}\right]$, interchange rows 1 and 2, then multiply the new row 1 by $-9$ and add the result to row 2. Enter the resulting row 2 as a comma-separated list of three numbers."
   answer="0, 21, -54"
-  hint="After interchanging, row 1 is $[1,-2\mid6]$; multiply each of its entries by $-9$ and add the result to the matching entry of row 2."
+  answerForm="decimal"
+  hint="Interchange the rows first. Then multiply each entry of the new row 1, including the entry after the bar, by $-9$ and add it to the matching entry of the new row 2."
 >}}
 
 {{< fillin
   question="Starting from the augmented matrix $\left[\begin{array}{cc|c}9&3&0\\1&-2&6\end{array}\right]$ (without interchanging rows), multiply row 1 by $\tfrac19$. Enter the resulting row 1 as a comma-separated list of three numbers."
-  answer="1, 1/3, 0"
+  answer="1, \frac{1}{3}, 0"
+  answerForm="lowest-terms"
   hint="Divide every entry of row 1, including the entry after the bar, by $9$."
 >}}
 
 ### Solve a system of linear equations using matrices
 
 {{< multiplechoice
-  question="If the row-echelon form of an augmented matrix has a row of all zero entries to the left of the vertical bar, how many solutions can the system have?"
+  question="A system has as many equations as variables. If the row-echelon form of its augmented matrix has a row of all zero entries to the left of the vertical bar, how many solutions can the system have?"
   answer="No solution, or infinitely many solutions"
-  hint="A zero row means an equation reduced to $0=0$ (dependent) or $0=$ a nonzero number (inconsistent) — never a single value for a variable."
+  hint="Write out the equation that the zero row represents, consider each value its entry after the bar could take, and ask whether the rows above it can still fix every variable."
 >}}
 Exactly one solution
 No solution, or infinitely many solutions
@@ -510,6 +527,7 @@ The system must be inconsistent
 {{< fillin
   question="Solve the system by Gaussian elimination: $\begin{cases}2x-3y=-9\\5x+4y=58\end{cases}$. Enter the solution as an ordered pair $(x,y)$."
   answer="(6,7)"
+  answerForm="decimal"
   answerDisplay="$(6,7)$"
   hint="Eliminate one variable using row operations on the augmented matrix, then back-substitute."
 >}}
@@ -517,10 +535,11 @@ The system must be inconsistent
 {{< fillin
   question="The augmented matrix $\left[\begin{array}{ccc|c}1&0&0&31\\0&1&1&45\\0&0&1&87\end{array}\right]$ is already in row-echelon form for a system in $x$, $y$, and $z$. Use back-substitution to solve it. Enter the solution as an ordered triple $(x,y,z)$."
   answer="(31,-42,87)"
+  answerForm="decimal"
   answerDisplay="$(31,-42,87)$"
   hint="Row 3 gives $z$ directly; substitute into row 2 to find $y$, then into row 1 to find $x$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.6: Solving Systems with Gaussian Elimination](https://openstax.org/books/precalculus-2e/pages/9-6-solving-systems-with-gaussian-elimination) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1"/"Objective 2" review of row operations and solving with matrices, keyed to Intermediate Algebra 4.5, complete with its own Learning Objectives list and two "Practice Makes Perfect" exercise sets) — the printed PDF (pages 969–981, folios 959–971) runs straight from the chapter's Gaussian-elimination introduction into the Carl Friedrich Gauss portrait and biographical paragraph, with no corequisite-skills material before it; this joins the same prepended-block pattern recurring in §§4.3–4.8 and §9.5. Omitted the decorative portrait photograph of Carl Friedrich Gauss, which carries no mathematics, and the "Access these online resources" media links. **The grader cannot take a matrix-shaped answer** (the MathLive matrix-entry path is menu-only and untested for learners), so — following house precedent from Intermediate Algebra 4.5 and this book's own §9.5 — every retained Try It and Practice item whose source answer is a full augmented matrix is re-posed as a row-entry fill-in ("enter row N of the matrix as a comma-separated list of N numbers"). The Try It that asks to "write the system... in row-echelon form" (module id `ti_09_06_04`) could not be re-posed this way at all: row-echelon form is not unique, and independently re-deriving it by ordinary elimination (leaving row 1 as the pivot equation) produces a different, equally valid row-echelon matrix than the one the source's own solution prints — confirmed by checking that both matrices back-substitute to the same solution $(1,-1,2)$. Any single row asked for would therefore have more than one correct answer depending on the learner's chosen operations; this Try It is re-posed as "use row operations to write the system in row-echelon form, then use back-substitution to solve," graded on the resulting ordered triple, which is unique. The Verbal exercise asking whether there is "only one correct method" of row-reducing a given matrix (its own solution walks through two distinct valid operation sequences) is adapted into the "Perform row operations on a matrix" Practice group as two fill-ins, one per method the source's solution demonstrates, since neither method alone is more than half the source item and both are independently correct. The "can a matrix with an all-zero row have one solution" Verbal exercise is adapted into a `multiplechoice`, since its answer is a categorical fact about solvability, not a number. The shoe-company loan Try It's three-way dollar answer (\$150,000/\$750,000/\$600,000, module id `ti_09_06_06`) is split into three plain-number fill-ins, each restating the full word problem, because the grader re-absorbs digit-grouping commas and a combined comma list of six-figure amounts is not reliably enterable. Every retained answer was independently re-derived from the printed system or word problem (by running the row reduction or the linear system in Node, not by reading the source key) before being checked against the CNXML solution; all matched. Eight selected end-of-section exercises with a solution present in the CNXML Answer Key were adapted into the closing Practice block's nine items, one or two per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.6: Solving Systems with Gaussian Elimination](https://openstax.org/books/precalculus-2e/pages/9-6-solving-systems-with-gaussian-elimination) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1"/"Objective 2" review of row operations and solving with matrices, keyed to Intermediate Algebra 4.5, complete with its own Learning Objectives list and two "Practice Makes Perfect" exercise sets) — the printed PDF (pages 969–981, folios 959–971) runs straight from the chapter's Gaussian-elimination introduction into the Carl Friedrich Gauss portrait and biographical paragraph, with no corequisite-skills material before it; this joins the same prepended-block pattern recurring in §§4.3–4.8 and §9.5. Omitted the decorative portrait photograph of Carl Friedrich Gauss, which carries no mathematics, and the "Access these online resources" media links. **The grader cannot take a matrix-shaped answer** (the MathLive matrix-entry path is menu-only and untested for learners), so — following house precedent from Intermediate Algebra 4.5 and this book's own §9.5 — every retained Try It and Practice item whose source answer is a full augmented matrix is re-posed as a row-entry fill-in ("enter row N of the matrix as a comma-separated list of N numbers"), and every one whose source answer is a system of equations asks for the coefficients and constant of one of its equations as such a list. The Try It that asks to "write the system... in row-echelon form" (module id `ti_09_06_04`) could not be re-posed this way at all: row-echelon form is not unique, and independently re-deriving it by ordinary elimination (leaving row 1 as the pivot equation) produces a different, equally valid row-echelon matrix than the one the source's own solution prints — confirmed by checking that both matrices back-substitute to the same solution $(1,-1,2)$. Any single row asked for would therefore have more than one correct answer depending on the learner's chosen operations; this Try It is re-posed as "use row operations to write the system in row-echelon form, then use back-substitution to solve," graded on the resulting ordered triple, which is unique. The Verbal exercise asking whether there is "only one correct method" of row-reducing a given matrix (its own solution walks through two distinct valid operation sequences) is adapted into the "Perform row operations on a matrix" Practice group as two fill-ins: the first carries out the solution's method (1) (interchange the rows, then $R_2-9R_1$), the second the closing step of its method (2) (divide row 1 by $9$), because method (2)'s first step, $R_1-9R_2$ into row 2, gives the same row 2 as method (1). The "can a matrix with an all-zero row have one solution" Verbal exercise is adapted into a `multiplechoice`, since its answer is a categorical fact about solvability, not a number; its stem pins a system with as many equations as variables, since a system with more equations than variables can reduce to a zero row and still have exactly one solution. The shoe-company loan Try It's three-way dollar answer (\$150,000/\$750,000/\$600,000, module id `ti_09_06_06`) is split into three fill-ins, one per rate, each restating the full word problem and asking for one amount in dollars. Every retained answer was independently re-derived from the printed system or word problem (by running the row reduction or the linear system in Node, not by reading the source key) before being checked against the CNXML solution; all matched. Eight selected end-of-section exercises with a solution present in the CNXML Answer Key were adapted into the closing Practice block's nine items, one to three exercises per objective. Corrected four slips in the source's worked steps: Example 7's last row operation, printed $-\tfrac{1}{57}R_3=R_3$, is $\tfrac{1}{57}R_3=R_3$ (its printed result row is $0\ 0\ 1\mid1$); Example 8's final matrix prints row 2's constant as $1$, where $R_2+R_3=R_3$ leaves it $0$ (the next display reads $y-2z=0$); Example 9's first augmented matrix prints the third constant as $-1$, where the system and the calculator matrix $[A]$ have $1$; and Example 11's matrix after $\tfrac{1}{0.03}R_2=R_2$ prints row 1 as $0\ 1\ 1\mid10{,}000$, where it stays $1\ 1\ 1\mid10{,}000$. The fourth row-echelon guideline, which the source states as "zeros in all other positions in the column" (the condition for reduced row-echelon form, which the section's own row-echelon matrices do not meet), reads "zeros in all positions below the leading $1$."</small>

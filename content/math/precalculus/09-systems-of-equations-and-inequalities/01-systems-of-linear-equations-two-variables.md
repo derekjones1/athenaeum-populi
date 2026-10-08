@@ -53,13 +53,13 @@ Another type of system of linear equations is an *inconsistent system*, which is
 The figures below compare graphical representations of each type of system.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two lines with different slopes crossing at a single point, one falling from upper left to lower right and one rising from lower left to upper right, intersecting at (7/5, -11/5).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"lines":[{"slope":-2,"intercept":0.6},{"slope":1.5,"intercept":-4.3}],"points":[{"at":[1.4,-2.2],"label":"(7/5, -11/5)"}]}
+{"ariaLabel":"Two lines with different slopes crossing at a single point: y = -x + 2, falling from upper left to lower right, and y = 2x - 5, rising from lower left to upper right, intersecting at (7/3, -1/3).","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"tickLabels":true,"lines":[{"slope":-1,"intercept":2},{"slope":2,"intercept":-5}],"points":[{"at":[2.3333333333333335,-0.3333333333333333],"label":"(7/3, -1/3)","labelSide":"se","labelNudge":[22,2]}]}
 {{< /apfigure >}}
 
 *Independent system.*
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parallel lines with the same steep positive slope and different y-intercepts, never crossing.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"lines":[{"slope":3,"intercept":1},{"slope":3,"intercept":-2}]}
+{"ariaLabel":"Two parallel lines, y = 2x + 3 and y = 2x - 1, with the same positive slope and different y-intercepts, never crossing.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"lines":[{"slope":2,"intercept":3},{"slope":2,"intercept":-1}]}
 {{< /apfigure >}}
 
 *Inconsistent system.*
@@ -95,13 +95,13 @@ The ordered pair $(5,1)$ satisfies both equations, so it is the solution to the 
 **Analysis.** We can see the solution clearly by plotting the graph of each equation. Since the solution is an ordered pair that satisfies both equations, it is a point on both of the lines and thus the point of intersection of the two lines.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two lines, x + 3y = 8 and 2x - 9 = y, crossing at (5, 1).","xMin":-2,"xMax":10,"yMin":-5,"yMax":5,"tickLabels":true,"lines":[{"slope":-0.3333333333333333,"intercept":2.6666666666666665,"label":"x + 3y = 8"},{"slope":2,"intercept":-9,"label":"2x - 9 = y"}],"points":[{"at":[5,1],"label":"(5, 1)"}]}
+{"ariaLabel":"Two lines, x + 3y = 8 and 2x - 9 = y, crossing at (5, 1).","xMin":-2,"xMax":12,"yMin":-5,"yMax":5,"tickLabels":true,"lines":[{"slope":-0.3333333333333333,"intercept":2.6666666666666665,"label":"x + 3y = 8","labelAt":0.28,"labelSide":"left"},{"slope":2,"intercept":-9,"label":"2x - 9 = y","labelAt":0.85,"labelSide":"right"}],"points":[{"at":[5,1],"label":"(5, 1)"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="Determine whether the ordered pair $(8,5)$ is a solution to the following system. $\begin{cases}5x-4y=20\\2x+1=3y\end{cases}$"
   answer="not a solution"
-  hint="Substitute x=8, y=5 into both equations; if either one fails, the pair is not a solution to the system."
+  hint="Substitute $x=8$ and $y=5$ into both equations; the pair solves the system only if both equations come out true."
 >}}
 a solution
 not a solution
@@ -136,7 +136,7 @@ $$
 Graph both equations on the same set of axes, as below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two lines, y = x + 1 and y = -2x - 8, crossing at (-3, -2).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"lines":[{"slope":1,"intercept":1,"label":"y = x + 1"},{"slope":-2,"intercept":-8,"label":"y = -2x - 8"}],"points":[{"at":[-3,-2],"label":"(-3, -2)"}]}
+{"ariaLabel":"Two lines, y = x + 1 and y = -2x - 8, crossing at (-3, -2).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"lines":[{"slope":1,"intercept":1,"label":"y = x + 1"},{"slope":-2,"intercept":-8,"label":"y = -2x - 8","labelAt":0.15}],"points":[{"at":[-3,-2],"label":"(-3, -2)"}]}
 {{< /apfigure >}}
 
 The lines appear to intersect at the point $(-3,-2)$. We can check to make sure that this is the solution to the system by substituting the ordered pair into both equations.
@@ -154,7 +154,7 @@ The solution to the system is the ordered pair $(-3,-2)$, so the system is indep
   question="Solve the following system of equations by graphing. $\begin{cases}2x-5y=-25\\-4x+5y=35\end{cases}$"
   answerDisplay="$(-5,3)$"
   ariaLabel="A blank coordinate grid from -10 to 10 on both axes."
-  hint="Solve each equation for y: 2x-5y=-25 becomes y=0.4x+5, and -4x+5y=35 becomes y=0.8x+7. Use each line's slope and y-intercept to place two points on it."
+  hint="Solve each equation for $y$, then use each line's slope and $y$-intercept to place two points on it."
 >}}
 {"answer": {"system": [{"slope": 0.4, "intercept": 5}, {"slope": 0.8, "intercept": 7}]}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 10}}
 {{< /graphplot >}}
@@ -226,8 +226,9 @@ $$
 {{< fillin
   question="Solve the following system of equations by substitution, as an ordered pair $(x,y)$. $\begin{cases}x=y+3\\4=3x-2y\end{cases}$"
   answer="(-2,-5)"
+  answerForm="decimal"
   answerDisplay="$(-2,-5)$"
-  hint="Substitute y+3 for x in the second equation, then solve for y."
+  hint="Substitute $y+3$ for $x$ in the second equation, then solve for $y$."
 >}}
 
 {{< callout type="info" >}}
@@ -312,7 +313,7 @@ $$\begin{cases}3x+5y=-11\\x-2y=11\end{cases}$$
 
 $$
 \begin{array}{lrcl}
-\text{Multiply both sides by }-3. & -3(x-2y) &=& -3(11) \\[4pt]
+\text{Multiply both sides by }{-3}. & -3(x-2y) &=& -3(11) \\[4pt]
 \text{Use the distributive property.} & -3x+6y &=& -33
 \end{array}
 $$
@@ -351,14 +352,15 @@ $$
 $$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two lines, 3x + 5y = -11 and x - 2y = 11, crossing at (3, -4).","xMin":-1,"xMax":6,"yMin":-6,"yMax":1,"tickLabels":true,"lines":[{"slope":-0.6,"intercept":-2.2,"label":"3x + 5y = -11"},{"slope":0.5,"intercept":-5.5,"label":"x - 2y = 11"}],"points":[{"at":[3,-4],"label":"(3, -4)"}]}
+{"ariaLabel":"Two lines, 3x + 5y = -11 and x - 2y = 11, crossing at (3, -4).","xMin":-2,"xMax":7,"yMin":-7,"yMax":2,"tickLabels":true,"lines":[{"slope":0.5,"intercept":-5.5,"label":"x - 2y = 11","labelAt":0.85,"labelSide":"right"}],"segments":[{"from":[-1.5,-1.3],"to":[7,-6.4],"arrows":true}],"texts":[{"at":[1,-2.06],"text":"3x + 5y = -11"}],"points":[{"at":[3,-4],"label":"(3, -4)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Solve the system of equations by addition, as an ordered pair $(x,y)$. $\begin{cases}2x-7y=2\\3x+y=-20\end{cases}$"
   answer="(-6,-2)"
+  answerForm="decimal"
   answerDisplay="$(-6,-2)$"
-  hint="Multiply the second equation by 7 so the y-terms add to zero, then add the two equations."
+  hint="Multiply the second equation by $7$ so the $y$-terms add to zero, then add the two equations."
 >}}
 
 **Example.** Solve the given system of equations in two variables by addition.
@@ -410,7 +412,7 @@ $$
 $$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two lines, 2x + 3y = -16 and 5x - 10y = 30, crossing at (-2, -4).","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"tickLabels":true,"lines":[{"slope":-0.6666666666666666,"intercept":-5.333333333333333,"label":"2x + 3y = -16"},{"slope":0.5,"intercept":-3,"label":"5x - 10y = 30"}],"points":[{"at":[-2,-4],"label":"(-2, -4)"}]}
+{"ariaLabel":"Two lines, 2x + 3y = -16 and 5x - 10y = 30, crossing at (-2, -4).","xMin":-6,"xMax":6,"yMin":-7,"yMax":5,"tickLabels":true,"lines":[{"slope":-0.6666666666666666,"intercept":-5.333333333333333,"label":"2x + 3y = -16","labelAt":0.85,"labelSide":"left"}],"segments":[{"from":[-6,-6],"to":[3.5,-1.25],"arrows":true}],"texts":[{"at":[4,-2.6],"text":"5x - 10y = 30","anchor":"middle"}],"points":[{"at":[-2,-4],"label":"(-2, -4)"}]}
 {{< /apfigure >}}
 
 **Example.** Solve the given system of equations in two variables by addition.
@@ -473,8 +475,9 @@ $$
 {{< fillin
   question="Solve the system of equations by addition, as an ordered pair $(x,y)$. $\begin{cases}2x+3y=8\\3x+5y=10\end{cases}$"
   answer="(10,-4)"
+  answerForm="decimal"
   answerDisplay="$(10,-4)$"
-  hint="Multiply the first equation by 5 and the second by -3, then add to eliminate y."
+  hint="Multiply the first equation by $5$ and the second by $-3$, then add to eliminate $y$."
 >}}
 
 ### Identifying Inconsistent Systems of Equations Containing Two Variables
@@ -523,13 +526,13 @@ Comparing the equations, we see that they have the same slope but different $y$-
 **Analysis.** Writing the equations in slope-intercept form confirms that the system is inconsistent because all lines will intersect eventually unless they are parallel. Parallel lines will never intersect; thus, the two lines have no points in common. The graphs of the equations in this example are shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"Two parallel lines with slope -1/2 and different y-intercepts, never crossing.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"xTickStep":2,"yTickStep":2,"lines":[{"slope":-0.5,"intercept":4.5,"label":"y = -x/2 + 9/2"},{"slope":-0.5,"intercept":6.5,"label":"y = -x/2 + 13/2"}]}
+{"ariaLabel":"Two parallel lines, y = -x/2 + 9/2 and y = -x/2 + 13/2, with slope -1/2 and different y-intercepts, never crossing.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"xTickStep":2,"yTickStep":2,"segments":[{"from":[-9,9],"to":[8,0.5],"arrows":true,"label":"y = -x/2 + 9/2","labelSide":"sw"},{"from":[-7,10],"to":[9,2],"arrows":true,"label":"y = -x/2 + 13/2","labelSide":"ne"}]}
 {{< /apfigure >}}
 
 {{< multiplechoice
   question="Solve the following system of equations in two variables. $\begin{cases}2y-2x=2\\2y-2x=6\end{cases}$"
   answer="no solution — the system is inconsistent"
-  hint="Solve each equation for y and compare slopes and y-intercepts."
+  hint="Solve each equation for $y$ and compare slopes and $y$-intercepts."
 >}}
 no solution — the system is inconsistent
 infinitely many solutions — the system is dependent
@@ -583,14 +586,15 @@ $$
 Notice the results are the same. The general solution to the system is $\left(x,-\tfrac{1}{3}x+\tfrac{2}{3}\right)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A single line through the points (2, 0) and (-4, 2), since the two equations graph as the same line.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"lines":[{"slope":-0.3333333333333333,"intercept":0.6666666666666666}],"texts":[{"at":[-4.6,2.5],"text":"x + 3y = 2"},{"at":[1.2,-1.7],"text":"3x + 9y = 6"}]}
+{"ariaLabel":"A single line through the points (2, 0) and (-4, 2), labeled with both equations, x + 3y = 2 and 3x + 9y = 6, since the two equations graph as the same line.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"tickLabels":true,"segments":[{"from":[-4,2],"to":[4,-0.6666666666666666],"arrows":true}],"texts":[{"at":[-4.6,2.7],"text":"x + 3y = 2"},{"at":[2.6,-1.6],"text":"3x + 9y = 6"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Solve the following system of equations in two variables. Express the general solution as an ordered pair $(x,y)$ in terms of $x$. $\begin{cases}y-2x=5\\-3y+6x=-15\end{cases}$"
   answer="(x,2x+5)"
+  answerForm="polynomial no-like-terms"
   answerDisplay="$(x,2x+5)$"
-  hint="Solve the first equation for y in terms of x, then check that the second equation is a multiple of the first."
+  hint="Add a multiple of one equation to the other; when $0=0$ results, the equations describe the same line, so solve either one for $y$."
 >}}
 
 ### Using Systems of Equations to Investigate Profits
@@ -600,12 +604,12 @@ Using what we have learned about systems of equations, we can return to the skat
 The **cost function** is the function used to calculate the costs of doing business. It includes fixed costs, such as rent and salaries, and variable costs, such as utilities. The cost function and revenue function are shown together below, with quantity in hundreds of units on the $x$-axis and cost or revenue in hundreds of dollars on the $y$-axis.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A cost line and a steeper revenue line crossing at the break-even point (7, 33), quantity in hundreds of units on the horizontal axis and money in hundreds of dollars on the vertical axis.","xMin":0,"xMax":20,"yMin":-10,"yMax":70,"tickLabels":true,"xLabel":"Quantity (hundreds of units)","yLabel":"Money (hundreds of dollars)","lines":[{"slope":1.8571428571428572,"intercept":20,"label":"Cost"},{"slope":4.714285714285714,"intercept":0,"label":"Revenue"}],"points":[{"at":[7,33],"label":"(7, 33)"}]}
+{"ariaLabel":"A cost line and a steeper revenue line crossing at the break-even point (7, 33), quantity in hundreds of units on the horizontal axis and money in hundreds of dollars on the vertical axis.","xMin":0,"xMax":20,"yMin":-10,"yMax":70,"xUnit":16,"yUnit":4,"xGridStep":1,"yGridStep":5,"tickLabels":true,"xTickStep":5,"yTickStep":10,"xLabel":"Quantity (hundreds of units)","yLabel":"Money (hundreds of dollars)","lines":[{"slope":1.8571428571428572,"intercept":20,"arrows":false,"label":"Cost","labelAt":0.12,"labelSide":"left"},{"slope":4.714285714285714,"intercept":0,"arrows":false,"label":"Revenue","labelAt":0.85,"labelSide":"left"}],"points":[{"at":[7,33],"label":"(7, 33)","labelSide":"nw"}]}
 {{< /apfigure >}}
 
 The point at which the two lines intersect is called the **break-even point**. We can see from the graph that if 700 units are produced, the cost is \$3,300 and the revenue is also \$3,300. In other words, the company breaks even if they produce and sell 700 units. They neither make money nor lose money.
 
-The shaded region to the right of the break-even point represents quantities for which the company makes a profit. The shaded region to the left represents quantities for which the company suffers a loss. The **profit function** is the revenue function minus the cost function, written as $P(x)=R(x)-C(x)$. Clearly, knowing the quantity for which the cost equals the revenue is of great importance to businesses.
+The region between the two lines to the right of the break-even point, where revenue is above cost, represents quantities for which the company makes a profit. The region between them to the left, where cost is above revenue, represents quantities for which the company suffers a loss. The **profit function** is the revenue function minus the cost function, written as $P(x)=R(x)-C(x)$. Clearly, knowing the quantity for which the cost equals the revenue is of great importance to businesses.
 
 **Example.** Given the cost function $C(x)=0.85x+35{,}000$ and the revenue function $R(x)=1.55x$, find the break-even point and the profit function.
 
@@ -643,13 +647,13 @@ The profit function is $P(x)=0.7x-35{,}000$.
 **Analysis.** The cost to produce 50,000 units is \$77,500, and the revenue from the sales of 50,000 units is also \$77,500. To make a profit, the business must produce and sell more than 50,000 units.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A cost line and a revenue line crossing at the break-even point (50,000, 77,500), quantity in units on the horizontal axis and dollars on the vertical axis.","xMin":0,"xMax":100000,"yMin":0,"yMax":100000,"xUnit":0.006,"yUnit":0.006,"margin":40,"grid":false,"tickLabels":true,"xTickStep":20000,"yTickStep":20000,"xLabel":"Quantity","yLabel":"Dollars","lines":[{"slope":0.85,"intercept":35000,"label":"Cost"},{"slope":1.55,"intercept":0,"label":"Revenue"}],"points":[{"at":[50000,77500],"label":"(50,000, 77,500)"}]}
+{"ariaLabel":"A cost line and a revenue line crossing at the break-even point (50,000, 77,500), quantity in units on the horizontal axis and dollars on the vertical axis.","xMin":0,"xMax":100000,"yMin":0,"yMax":100000,"xUnit":0.004,"yUnit":0.003,"margin":40,"grid":false,"tickLabels":true,"xTickStep":20000,"yTickStep":20000,"xLabel":"Quantity","yLabel":"Dollars","segments":[{"from":[0,35000],"to":[76470.58823529411,100000],"arrows":"end","label":"Cost","labelSide":"nw"},{"from":[0,0],"to":[64516.129032258064,100000],"arrows":"end","label":"Revenue","labelSide":"se"}],"points":[{"at":[50000,77500],"label":"(50,000, 77,500)","labelSide":"se"}]}
 {{< /apfigure >}}
 
 We see from the graph below that the profit function has a negative value until $x=50{,}000$, when the graph crosses the $x$-axis. Then, the graph emerges into positive $y$-values and continues on this path as the profit function is a straight line. This illustrates that the break-even point for businesses occurs when the profit function is $0$. The area to the left of the break-even point represents operating at a loss.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The profit line P(x) = 0.7x - 35,000, crossing the horizontal axis at the break-even point (50,000, 0).","xMin":-20000,"xMax":120000,"yMin":-40000,"yMax":60000,"xUnit":0.0045,"yUnit":0.0045,"margin":40,"grid":false,"tickLabels":true,"xTickStep":20000,"yTickStep":20000,"xLabel":"Quantity","yLabel":"Dollars profit","lines":[{"slope":0.7,"intercept":-35000,"label":"Profit"}],"points":[{"at":[50000,0],"label":"(50,000, 0)"}]}
+{"ariaLabel":"The profit line P(x) = 0.7x - 35,000, crossing the horizontal axis at the break-even point (50,000, 0).","xMin":-20000,"xMax":120000,"yMin":-40000,"yMax":60000,"xUnit":0.0045,"yUnit":0.0045,"margin":40,"grid":false,"tickLabels":true,"xTickStep":20000,"yTickStep":20000,"xLabel":"Quantity","yLabel":"Dollars profit","lines":[{"slope":0.7,"intercept":-35000,"label":"Profit"}],"points":[{"at":[50000,0],"label":"(50,000, 0)","labelSide":"se","labelNudge":[0,22]}]}
 {{< /apfigure >}}
 
 **Example.** The cost of a ticket to the circus is \$25.00 for children and \$50.00 for adults. On a certain day, attendance at the circus is 2,000 and the total gate revenue is \$70,000. How many children and how many adults bought tickets?
@@ -702,15 +706,17 @@ We find that 1,200 children and 800 adults bought tickets to the circus that day
 {{< fillin
   question="Meal tickets at the circus cost \$4.00 for children and \$12.00 for adults. If 1,650 meal tickets were bought for a total of \$14,200, how many children bought meal tickets?"
   answer="700"
+  answerForm="decimal"
   answerDisplay="700 children"
-  hint="Let c be the number of children and a the number of adults; solve the system c+a=1,650 and 4c+12a=14,200."
+  hint="Let $c$ be the number of children and $a$ the number of adults; write one equation for the number of tickets and one for the total cost, then solve the system."
 >}}
 
 {{< fillin
   question="Using that same circus meal-ticket data, how many adults bought meal tickets?"
   answer="950"
+  answerForm="decimal"
   answerDisplay="950 adults"
-  hint="Substitute the number of children you just found into c+a=1,650 and solve for a."
+  hint="Substitute the number of children you just found into the ticket-count equation and solve for the number of adults."
 >}}
 
 ## Key concepts
@@ -743,7 +749,7 @@ dependent with infinitely many solutions
 {{< multiplechoice
   question="Graph the system $\begin{cases}3x-2y=5\\-9x+6y=-15\end{cases}$. Is it consistent with one solution, inconsistent with no solution, or dependent with infinitely many solutions?"
   answer="dependent with infinitely many solutions"
-  hint="Divide the second equation by -3 and compare it with the first equation."
+  hint="Divide the second equation by $-3$ and compare it with the first equation."
 >}}
 consistent with one solution
 inconsistent with no solution
@@ -755,15 +761,17 @@ dependent with infinitely many solutions
 {{< fillin
   question="Solve the system by substitution, as an ordered pair $(x,y)$. $\begin{cases}x+3y=5\\2x+3y=4\end{cases}$"
   answer="(-1,2)"
+  answerForm="decimal"
   answerDisplay="$(-1,2)$"
-  hint="Subtract the first equation from the second to eliminate y, then solve for x."
+  hint="Solve the first equation for $x$ in terms of $y$, substitute that expression into the second equation, and solve for $y$."
 >}}
 
 {{< fillin
   question="Solve the system by substitution, as an ordered pair $(x,y)$. $\begin{cases}4x+2y=-10\\3x+9y=0\end{cases}$"
   answer="(-3,1)"
+  answerForm="decimal"
   answerDisplay="$(-3,1)$"
-  hint="Solve the second equation for x in terms of y, then substitute into the first equation."
+  hint="Solve the second equation for $x$ in terms of $y$, then substitute into the first equation."
 >}}
 
 ### Solve systems of equations by addition
@@ -771,30 +779,33 @@ dependent with infinitely many solutions
 {{< fillin
   question="Solve the system by addition, as an ordered pair $(x,y)$. $\begin{cases}-2x+5y=-42\\7x+2y=30\end{cases}$"
   answer="(6,-6)"
+  answerForm="decimal"
   answerDisplay="$(6,-6)$"
-  hint="Multiply the first equation by 7 and the second by 2, then subtract to eliminate x."
+  hint="Multiply the first equation by $7$ and the second by $2$, then add to eliminate $x$."
 >}}
 
 {{< fillin
   question="Solve the system by addition, as an ordered pair $(x,y)$. $\begin{cases}5x-y=-2.6\\-4x-6y=1.4\end{cases}$"
-  answer="(-1/2,1/10)"
+  answer="(-\frac{1}{2},\frac{1}{10})"
+  answerForm="lowest-terms"
   answerDisplay="$\left(-\tfrac{1}{2},\tfrac{1}{10}\right)$"
-  hint="Multiply the first equation by -6 and add it to the second equation to eliminate y."
+  hint="Multiply the first equation by $-6$ and add it to the second equation to eliminate $y$."
 >}}
 
 {{< fillin
-  question="An investor invests a total of \$1.1 million into two land investments, Swan Peak and Riverside Community. On Swan Peak, her return was a 110% increase on the money invested; on Riverside, she earned 50% over what she invested. If her total profit was \$1 million, how many dollars did she invest in each? Enter the Swan Peak amount, then the Riverside amount, separated by a comma."
+  question="An investor invested 1.1 million dollars into two land investments. On the first investment, Swan Peak, her return was a 110% increase on the money she invested. On the second investment, Riverside Community, she earned 50% over what she invested. If she earned \$1 million in profits, how much did she invest in each of the land deals? Enter the Swan Peak amount, then the Riverside amount, in dollars, separated by a comma."
   answer="750000,350000"
+  answerForm="decimal"
   answerDisplay="Swan Peak: \$750,000; Riverside: \$350,000"
-  hint="Let s and r be the two investments; solve the system s+r=1,100,000 and 1.1s+0.5r=1,000,000 by addition."
+  hint="Let $s$ and $r$ be the amounts invested in Swan Peak and Riverside; write one equation for the total invested and one for the total profit, then solve the system by addition."
 >}}
 
 ### Identify inconsistent systems of equations containing two variables
 
 {{< multiplechoice
-  question="Solve the system by any method. $\begin{cases}3x+5y=9\\30x+50y=-90\end{cases}$ How many solutions does the system have?"
+  question="Solve the system by substitution. $\begin{cases}3x+5y=9\\30x+50y=-90\end{cases}$ How many solutions does the system have?"
   answer="no solution"
-  hint="Multiply the first equation by 10 and compare it to the second equation."
+  hint="Multiply the first equation by $10$ and compare it to the second equation."
 >}}
 no solution
 one solution
@@ -804,7 +815,7 @@ infinitely many solutions
 {{< multiplechoice
   question="Solve the system by addition. $\begin{cases}-x+2y=-1\\5x-10y=6\end{cases}$ How many solutions does the system have?"
   answer="no solution"
-  hint="Multiply the first equation by 5 and compare it to the second equation."
+  hint="Multiply the first equation by $5$ and compare it to the second equation."
 >}}
 no solution
 one solution
@@ -815,28 +826,30 @@ infinitely many solutions
 
 {{< fillin
   question="Solve the system by addition. Express the general solution as an ordered pair $(x,y)$ in terms of $x$. $\begin{cases}-0.2x+0.4y=0.6\\x-2y=-3\end{cases}$"
-  answer="(x,(x+3)/2)"
+  answer="(x,\frac{x+3}{2})"
+  answerForm="no-like-terms"
   answerDisplay="$\left(x,\tfrac{x+3}{2}\right)$"
-  hint="Solve the second equation for y in terms of x, then confirm the first equation is a multiple of the second."
+  hint="Multiply the first equation by $5$ and add it to the second; when $0=0$ results, solve either equation for $y$."
 >}}
 
 {{< fillin
-  question="Solve the system by addition. Express the general solution as an ordered pair $(x,y)$ in terms of $x$. $\begin{cases}\tfrac{7}{3}x-\tfrac{1}{6}y=2\\-\tfrac{21}{6}x+\tfrac{3}{12}y=-3\end{cases}$"
+  question="Solve the system by any method. Express the general solution as an ordered pair $(x,y)$ in terms of $x$. $\begin{cases}\tfrac{7}{3}x-\tfrac{1}{6}y=2\\-\tfrac{21}{6}x+\tfrac{3}{12}y=-3\end{cases}$"
   answer="(x,2(7x-6))"
+  answerForm="polynomial no-like-terms"
   answerDisplay="$(x,2(7x-6))$"
-  hint="Solve the first equation for y in terms of x, then confirm the second equation is a multiple of the first."
+  hint="Clear the fractions in each equation first; adding the results gives $0=0$, so solve either cleared equation for $y$."
 >}}
 
 {{< multiplechoice
   question="Admission into an amusement park for 4 children and 2 adults is \$116.90. For 6 children and 3 adults, the admission is \$175.35. Assuming a different price for children and adults, how many solutions does this system have for the two ticket prices?"
-  answer="infinitely many solutions — the system is dependent, so more information is needed"
+  answer="infinitely many solutions — more information is needed to find the prices"
   hint="Write the two equations and check whether one is a multiple of the other."
 >}}
-infinitely many solutions — the system is dependent, so more information is needed
-exactly one solution
-no solution
+infinitely many solutions — more information is needed to find the prices
+exactly one solution — the two prices are determined
+no solution — no pair of prices fits both totals
 {{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 9.1: Systems of Linear Equations: Two Variables](https://openstax.org/books/precalculus-2e/pages/9-1-systems-of-linear-equations-two-variables) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every coordinate-plane figure as an accessible inline graph generated from its exact equations — the three-panel independent/inconsistent/dependent overview (the independent panel's crossing lines were fitted to pass exactly through the printed point $(7/5,-11/5)$, and the inconsistent panel's parallel lines and the dependent panel's coincident line were fitted to the printed slopes and labeled points, since the source draws these three panels schematically with no equations given); the ordered-pair-solution graph $x+3y=8$ and $2x-9=y$; the graphing-method example $y=x+1$ and $y=-2x-8$; the three addition-method examples' graphs; the inconsistent-system graph $y=-\tfrac12x+\tfrac92$ and $y=-\tfrac12x+\tfrac{13}{2}$; the dependent-system graph, labeled with both coincident equations; and the cost/revenue and profit graphs of the break-even discussion (the introductory schematic break-even figure and Example 10's cost/revenue and profit graphs) — omitting the source's shaded profit/loss wedge between the two lines, which the figure engine cannot render for a region bounded by two intersecting lines rather than a single boundary line, and disclosing that omission here; omitted the section's opening skateboarder photograph, which carries no mathematics; converted the Try Its into interactive exercises with instant feedback — a multiple choice for the ordered-pair-solution check, a graphing exercise for the graphing-method Try It, fill-ins with ordered-pair answers for the substitution- and addition-method Try Its, a multiple choice for the inconsistent-system Try It (recast from a "how many solutions" prose answer into named categorical options, since a solution count cannot be graded as a math expression), a fill-in keyed to the general-solution ordered pair for the dependent-system Try It, and two consecutive fill-ins (children, then adults) for the circus-meal-tickets Try It, split so that neither three-digit count is misread as a digit-grouped six-digit number; and adapted thirteen selected end-of-section exercises with answers confirmed in the Answer Key — two graphical-classification items, two substitution items, three addition items (including the Swan Peak/Riverside land-investment word problem as a two-amount comma list — the grader reads a digit-grouped spelling such as 750,000, 350,000 at the keyed member count), two inconsistent-system items, and three dependent-system items (including the amusement-park ticket-price word problem) — into interactive components in a closing Practice block, one group per objective.</small>
+<small>This section is adapted from [Precalculus 2e, Section 9.1: Systems of Linear Equations: Two Variables](https://openstax.org/books/precalculus-2e/pages/9-1-systems-of-linear-equations-two-variables) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every coordinate-plane figure as an accessible inline graph generated from its exact equations — the three-panel independent/inconsistent/dependent overview, drawn from the lines the source panels plot ($y=-x+2$ and $y=2x-5$; $y=2x+3$ and $y=2x-1$; $y=2x$), with the independent panel's crossing labeled $(7/3,-1/3)$, where the source's drawn lines and dot meet, in place of the source's printed label $(7/5,-11/5)$, which is not on the drawn line $y=-x+2$; the ordered-pair-solution graph $x+3y=8$ and $2x-9=y$; the graphing-method example $y=x+1$ and $y=-2x-8$; the three addition-method examples' graphs; the inconsistent-system graph $y=-\tfrac12x+\tfrac92$ and $y=-\tfrac12x+\tfrac{13}{2}$; the dependent-system graph, labeled with both coincident equations; and the cost/revenue and profit graphs of the break-even discussion (the introductory schematic break-even figure, its lines fitted through the labeled point $(7,33)$ that the text reads as 700 units and \$3,300, and Example 10's cost/revenue and profit graphs) — omitting the source's shaded profit/loss wedge between the two lines, which the figure engine cannot render for a region bounded by two intersecting lines rather than a single boundary line, so the sentences after the introductory figure describe the profit and loss regions as the regions between the two lines rather than as shaded regions; omitted the section's opening skateboarder photograph, which carries no mathematics, and its three Media links to external tutorials; converted the Try Its into interactive exercises with instant feedback — a multiple choice for the ordered-pair-solution check, a graphing exercise for the graphing-method Try It, fill-ins with ordered-pair answers for the substitution- and addition-method Try Its, a multiple choice for the inconsistent-system Try It (recast from a "how many solutions" prose answer into named categorical options, since a solution count cannot be graded as a math expression), a fill-in keyed to the general-solution ordered pair for the dependent-system Try It, and two consecutive fill-ins (children, then adults) for the circus-meal-tickets Try It, split so that neither three-digit count is misread as a digit-grouped six-digit number; and adapted twelve selected end-of-section exercises with answers confirmed in the Answer Key — two graphical-classification items, two substitution items, three addition items (including the Swan Peak/Riverside land-investment word problem as a two-amount comma list — the grader reads a digit-grouped spelling such as 750,000, 350,000 at the keyed member count), two inconsistent-system items, and three dependent-system items (including the amusement-park ticket-price word problem) — into interactive components in a closing Practice block, one group per objective.</small>
