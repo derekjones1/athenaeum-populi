@@ -354,7 +354,7 @@ All the numbers we use in elementary algebra are real numbers. The figure
 below illustrates how the number sets we've discussed in this section fit
 together.
 
-<svg viewBox="0 0 520 300" role="img" aria-label="A nested diagram of the real numbers. The outer box is labeled Real Numbers. Inside it, a left region labeled Rational Numbers contains a smaller region labeled Integers, which contains a smaller region labeled Whole Numbers, which contains the smallest region labeled Counting Numbers. To the right, a separate region labeled Irrational Numbers is disjoint from the rational numbers." style="max-width: 480px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 520 300" role="img" aria-label="A nested diagram of the real numbers. The outer box is labeled Real Numbers. Inside it, a left region labeled Rational Numbers contains a smaller region labeled Integers, which contains a smaller region labeled Whole Numbers, which contains the smallest region labeled Counting Numbers. To the right, a separate region labeled Irrational Numbers is disjoint from the rational numbers." style="max-width: 480px; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="500" height="280" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="260" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">Real Numbers</text>
   <rect x="30" y="45" width="270" height="225" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -471,65 +471,9 @@ $$\frac{7}{4} = 1\frac{3}{4} \qquad {-\frac{9}{2}} = -4\frac{1}{2} \qquad \frac{
 
 The figure below shows the number line with all the points plotted.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -6 to 6 with points plotted at -5, -9/2 (halfway between -5 and -4), -4/5 (between -1 and 0), 1/5 (between 0 and 1), 7/4 (between 1 and 2), 8/3 (between 2 and 3), and 3." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="8" y1="45" x2="612" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-frac1)" marker-start="url(#arrow-frac1-start)" />
-  <defs>
-    <marker id="arrow-frac1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
-    <marker id="arrow-frac1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
-  </defs>
-  <g>
-      <line x1="20" y1="38" x2="20" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="20" y="70" text-anchor="middle" font-size="14" fill="currentColor">-6</text>
-    </g><g>
-      <line x1="68.3" y1="38" x2="68.3" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="68.3" y="70" text-anchor="middle" font-size="14" fill="currentColor">-5</text>
-    </g><g>
-      <line x1="116.6" y1="38" x2="116.6" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="116.6" y="70" text-anchor="middle" font-size="14" fill="currentColor">-4</text>
-    </g><g>
-      <line x1="164.89999999999998" y1="38" x2="164.89999999999998" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="164.89999999999998" y="70" text-anchor="middle" font-size="14" fill="currentColor">-3</text>
-    </g><g>
-      <line x1="213.2" y1="38" x2="213.2" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="213.2" y="70" text-anchor="middle" font-size="14" fill="currentColor">-2</text>
-    </g><g>
-      <line x1="261.5" y1="38" x2="261.5" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="261.5" y="70" text-anchor="middle" font-size="14" fill="currentColor">-1</text>
-    </g><g>
-      <line x1="309.79999999999995" y1="38" x2="309.79999999999995" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="309.79999999999995" y="70" text-anchor="middle" font-size="14" fill="currentColor">0</text>
-    </g><g>
-      <line x1="358.09999999999997" y1="38" x2="358.09999999999997" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="358.09999999999997" y="70" text-anchor="middle" font-size="14" fill="currentColor">1</text>
-    </g><g>
-      <line x1="406.4" y1="38" x2="406.4" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="406.4" y="70" text-anchor="middle" font-size="14" fill="currentColor">2</text>
-    </g><g>
-      <line x1="454.7" y1="38" x2="454.7" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="454.7" y="70" text-anchor="middle" font-size="14" fill="currentColor">3</text>
-    </g><g>
-      <line x1="503" y1="38" x2="503" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="503" y="70" text-anchor="middle" font-size="14" fill="currentColor">4</text>
-    </g><g>
-      <line x1="551.3" y1="38" x2="551.3" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="551.3" y="70" text-anchor="middle" font-size="14" fill="currentColor">5</text>
-    </g><g>
-      <line x1="599.5999999999999" y1="38" x2="599.5999999999999" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="599.5999999999999" y="70" text-anchor="middle" font-size="14" fill="currentColor">6</text>
-    </g>
-  <circle cx="68.3" cy="45" r="5" fill="currentColor" />
-  <circle cx="92.45" cy="45" r="5" fill="currentColor" />
-  <text x="92.45" y="20" text-anchor="middle" font-size="13" fill="currentColor">-9/2</text>
-  <circle cx="271.15999999999997" cy="45" r="5" fill="currentColor" />
-  <text x="271.15999999999997" y="20" text-anchor="middle" font-size="13" fill="currentColor">-4/5</text>
-  <circle cx="319.46" cy="45" r="5" fill="currentColor" />
-  <text x="319.46" y="20" text-anchor="middle" font-size="13" fill="currentColor">1/5</text>
-  <circle cx="394.325" cy="45" r="5" fill="currentColor" />
-  <text x="394.325" y="20" text-anchor="middle" font-size="13" fill="currentColor">7/4</text>
-  <circle cx="438.6" cy="45" r="5" fill="currentColor" />
-  <text x="438.6" y="20" text-anchor="middle" font-size="13" fill="currentColor">8/3</text>
-  <circle cx="454.7" cy="45" r="5" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from -6 to 6 with points plotted at -5, -9/2 (halfway between -5 and -4), -4/5 (between -1 and 0), 1/5 (between 0 and 1), 7/4 (between 1 and 2), 8/3 (between 2 and 3), and 3.","min":-6,"max":6,"points":[{"at":-5},{"at":-4.5,"label":"−9/2"},{"at":-0.8,"label":"−4/5"},{"at":0.2,"label":"1/5"},{"at":1.75,"label":"7/4"},{"at":2.6666666666666665,"label":"8/3"},{"at":3}]}
+{{< /apfigure >}}
 
 **Example.** Locate and label the following on a number line: $4,
 \tfrac{3}{4}, -\tfrac{1}{4}, -3, \tfrac{6}{5}, -\tfrac{5}{2}$, and
@@ -712,48 +656,9 @@ $1$ into $10$ equal parts. Now label the parts $0.1, 0.2, 0.3, 0.4, 0.5,
 0.6, 0.7, 0.8, 0.9, 1.0$. We write $0$ as $0.0$ and $1$ as $1.0$, so that the
 numbers are consistently in tenths. Finally, mark $0.4$ on the number line.
 
-<svg viewBox="0 0 620 80" role="img" aria-label="A number line from 0.0 to 1.0, divided into tenths, each tick labeled, with a point plotted on the 0.4 mark." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-dec1)" marker-start="url(#arrow-dec1-start)" />
-  <defs>
-    <marker id="arrow-dec1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
-    <marker id="arrow-dec1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
-  </defs>
-  <g>
-      <line x1="40" y1="28" x2="40" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="40" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.0</text>
-    </g><g>
-      <line x1="93" y1="28" x2="93" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="93" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.1</text>
-    </g><g>
-      <line x1="146" y1="28" x2="146" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="146" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
-    </g><g>
-      <line x1="199" y1="28" x2="199" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="199" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.3</text>
-    </g><g>
-      <line x1="252" y1="28" x2="252" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="252" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.4</text>
-    </g><g>
-      <line x1="305" y1="28" x2="305" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="305" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.5</text>
-    </g><g>
-      <line x1="358" y1="28" x2="358" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="358" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.6</text>
-    </g><g>
-      <line x1="411" y1="28" x2="411" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="411" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.7</text>
-    </g><g>
-      <line x1="464" y1="28" x2="464" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="464" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.8</text>
-    </g><g>
-      <line x1="517" y1="28" x2="517" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="517" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.9</text>
-    </g><g>
-      <line x1="570" y1="28" x2="570" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="570" y="60" text-anchor="middle" font-size="13" fill="currentColor">1.0</text>
-    </g>
-  <circle cx="252" cy="35" r="5" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 0.0 to 1.0, divided into tenths, each tick labeled, with a point plotted on the 0.4 mark.","min":0,"max":1,"step":0.1,"points":[{"at":0.4}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Locate $0.6$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."

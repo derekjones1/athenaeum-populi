@@ -34,7 +34,7 @@ of every $100$ community college students are female. Out of $100$ equal
 squares in a grid, $57$ would be shaded, which we write as the ratio
 $\tfrac{57}{100}$.
 
-<svg viewBox="0 0 220 220" role="img" aria-label="A 10 by 10 grid of 100 small squares. 57 of the squares, filling the first five full rows plus 7 squares of the sixth row, are shaded to represent 57 percent." style="max-width: 220px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 220 220" role="img" aria-label="A 10 by 10 grid of 100 small squares. 57 of the squares, filling the first five full rows plus 7 squares of the sixth row, are shaded to represent 57 percent." style="max-width: 220px; display: block; margin: 1.5rem auto">
   <rect x="0" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
   <rect x="22" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
   <rect x="44" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />

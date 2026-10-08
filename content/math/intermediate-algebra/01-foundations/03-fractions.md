@@ -27,7 +27,7 @@ $\tfrac{2}{3}$ represents two of three equal parts. In the fraction
 $\tfrac{2}{3}$, the $2$ is called the **numerator** and the $3$ is called the
 **denominator**. The line is called the fraction bar.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="A circle divided into three equal sectors, with two of the three sectors shaded to represent the fraction two-thirds." style="max-width: 160px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 160" role="img" aria-label="A circle divided into three equal sectors, with two of the three sectors shaded to represent the fraction two-thirds." style="max-width: 160px; display: block; margin: 1.5rem auto">
   <path d="M80 80 L80 10 A70 70 0 0 1 140.6 115 Z" fill="currentColor" opacity="0.5" />
   <path d="M80 80 L140.6 115 A70 70 0 0 1 19.4 115 Z" fill="currentColor" opacity="0.5" />
   <circle cx="80" cy="80" r="70" fill="none" stroke="currentColor" stroke-width="1.5" />

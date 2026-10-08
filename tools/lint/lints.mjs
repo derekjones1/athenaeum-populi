@@ -48,6 +48,92 @@ const UNLABELABLE_FAMILIES = Object.freeze([
 const LABEL_KEYS = Object.freeze(['label', 'labelSide', 'labelAt', 'labelNudge']);
 
 /**
+ * figure-hand-ticks — tick digits and tick marks faked by hand. Until
+ * October 6, 2026 the engine printed decimal tick digits only, so 54 graph
+ * specs on eight Precalculus and Intermediate Algebra pages spelled π/4,
+ * 3π/2 … (and 7.6's 1/40, 3/40) as a row of `texts` under `tickLabels: "y"`
+ * (IA 3.6's three drew x in π/2 units, which this rule cannot see). Those
+ * print at the 13px label size instead of the 11px tick size, at offsets the
+ * author guessed, outside the tick-digit knockout, never relocated — and the
+ * layout checker scores them as full labels, so authors pushed them below
+ * the curve's trough. `xTickFormat: "pi" | "fraction"` (and the y twin) now
+ * prints them as real tick digits.
+ *
+ * A row (shared at[1]) or column (shared at[0]) of three plain tick-shaped
+ * texts, or of two π-shaped ones, is a hand tick row. Two plain numbers on
+ * one row are not: a unit circle labels (1, 0) and (−1, 0) legitimately.
+ * Only a text whose position ALONG the row (at[0]) or column (at[1]) is its
+ * own value counts — |position − value| ≤ max(0.1, 0.12·|value|), π
+ * multiples read as n/d·π — because a tick label sits on its tick. That
+ * keeps a unit circle's and a polar grid's angle labels out (5.1, 7.2, 8.3
+ * put π/6 and 5π/6 at the same y, at (cos θ, sin θ), not on an axis), and a
+ * group mixing π texts with nonzero plain numbers (a unit circle's "1" and
+ * "−1" beside "π/6") is not a tick row at all. A zero is neutral: it is the
+ * origin of both scales, and a π row may start at "0".
+ * Three short segments straddling an axis (|coordinate| ≤ 0.3 on both ends,
+ * opposite signs or one end on the axis) are hand-drawn tick marks.
+ */
+const HAND_TICK_PLAIN = /^[−–+-]?(?:\d+(?:[.,]\d+)?|\d+\/\d+)$/;
+const HAND_TICK_PI = /^[−–+-]?\d*π(?:\/\d+)?$/;
+const HAND_TICK_REACH = 0.3;
+
+/** The values a tick-shaped text can mean: π multiples as n/d·π, and a comma read both ways (1,5 or 2,200). */
+function handTickValues(text) {
+  const t = text.replace(/^[−–]/, '-');
+  const pi = /^([+-]?)(\d*)π(?:\/(\d+))?$/.exec(t);
+  if (pi) return [(pi[1] === '-' ? -1 : 1) * Number(pi[2] || 1) / Number(pi[3] || 1) * Math.PI];
+  const frac = /^([+-]?\d+)\/(\d+)$/.exec(t);
+  if (frac) return [Number(frac[1]) / Number(frac[2])];
+  return [...new Set([Number(t.replace(',', '.')), Number(t.replace(',', ''))])].filter(Number.isFinite);
+}
+
+function handTickErrors(spec) {
+  const errors = [];
+  const shown = (v) => String(+Number(v).toFixed(3));
+  const texts = (Array.isArray(spec.texts) ? spec.texts : [])
+    .filter((t) => t && typeof t === 'object' && Array.isArray(t.at) && typeof t.text === 'string')
+    .map((t) => {
+      const text = t.text.trim();
+      const shape = HAND_TICK_PI.test(text) ? 'pi' : HAND_TICK_PLAIN.test(text) ? 'plain' : null;
+      return { text, shape, values: shape ? handTickValues(text) : [], at: t.at };
+    })
+    .filter((t) => t.shape);
+  for (const [line, coord, letter, advice] of [
+    ['row', 1, 'y', 'xTickStep / xTickFormat'], ['column', 0, 'x', 'yTickStep / yTickFormat'],
+  ]) {
+    const groups = new Map();
+    for (const t of texts) {
+      const v = Number(t.at[coord]);
+      const along = Number(t.at[1 - coord]);
+      if (!Number.isFinite(v) || !Number.isFinite(along)) continue;
+      if (!t.values.some((value) => Math.abs(along - value) <= Math.max(0.1, 0.12 * Math.abs(value)))) continue;
+      if (!groups.has(v)) groups.set(v, []);
+      groups.get(v).push(t);
+    }
+    for (const [v, group] of groups) {
+      const pi = group.filter((t) => t.shape === 'pi').length;
+      const plainNonzero = group.filter((t) => t.shape === 'plain' && !t.values.includes(0)).length;
+      if (pi && plainNonzero) continue;
+      if (pi < 2 && group.length - pi < 3) continue;
+      errors.push(`figure-hand-ticks: ${group.length} texts entries (${group.map((t) => t.text).join(', ')}) `
+        + `share the ${line} ${letter} = ${shown(v)} — hand-placed tick labels: use tickLabels with ${advice}`);
+    }
+  }
+  const straddles = (a, b) => Number.isFinite(a) && Number.isFinite(b) && a !== b
+    && Math.abs(a) <= HAND_TICK_REACH && Math.abs(b) <= HAND_TICK_REACH && a * b <= 0;
+  const segs = (Array.isArray(spec.segments) ? spec.segments : [])
+    .filter((s) => s && Array.isArray(s.from) && Array.isArray(s.to));
+  const onX = segs.filter((s) => s.from[0] === s.to[0] && straddles(s.from[1], s.to[1])).map((s) => s.from[0]);
+  const onY = segs.filter((s) => s.from[1] === s.to[1] && straddles(s.from[0], s.to[0])).map((s) => s.from[1]);
+  for (const [marks, axis, letter] of [[onX, 'x', 'x'], [onY, 'y', 'y']]) {
+    if (marks.length < 3) continue;
+    errors.push(`figure-hand-ticks: ${marks.length} segments are short tick marks straddling the ${axis}-axis `
+      + `(at ${letter} = ${marks.map(shown).join(', ')}) — hand-drawn tick marks: the engine draws ticks`);
+  }
+  return errors;
+}
+
+/**
  * Validate one figure spec — an apfigure body, or a spec-JSON graph option in
  * a multiplechoice. One implementation for both callers, so the two rules can
  * never drift (tools/lib/content.mjs is the precedent: one shortcode grammar per
@@ -85,6 +171,7 @@ function figureSpecErrors(rawJson, kindFromParam) {
         }
       }
     }
+    errors.push(...handTickErrors(spec));
   }
   try {
     APFIGURE_BUILDERS[kind](spec);

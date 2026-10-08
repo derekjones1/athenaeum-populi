@@ -121,3 +121,82 @@ Figure and alt work runs on Opus, never Sonnet.
 7. **Close:** tick the row (Fixed, Errata, Commit), note the cost, and
    commit the chapter ("Re-review <Book> chapter N to the A&P standard").
    A new defect class becomes a lint, test, or playbook rule.
+
+## Figure conversion rows (after the Precalculus rows)
+
+Decided October 7, 2026: the hand-written inline `<svg>` figures that the
+engine CAN draw — coordinate graphs (lines, parabolas, plotted points,
+shaded inequality regions, slope triangles) and plain geometry (triangles,
+rectangles, trapezoids, circles with radius and diameter, right-angle
+marks) — are converted to spec-first `apfigure` figures in their own
+tracker rows, run LAST, after the Precalculus rows and the two Precalculus
+checks. The queue is the content itself:
+
+```
+npm run figures:status -- content/math/<book>
+```
+
+Only pages carrying `hand-written SVG (no spec)` are in scope. A figure the
+engine has no primitive for (counters, base-10 blocks, geoboards, factor
+trees, fraction circles, percent grids, bar charts, function machines,
+mapping ovals, balance scales) is PICTORIAL: it keeps its SVG and carries
+`data-pictorial` on its `<svg>` open tag, which takes it off the queue.
+Mark one only when a figure is genuinely a picture, never to skip a graph;
+extending `graph-core` with a new primitive is Derek's call, not a fixer's.
+The number lines the `numberline` builder could express were converted by
+`tools/figures/convert-inline-numberlines.mjs` the same day; what that tool
+skipped (decimal tick ranges, annotation arrows, sign charts) is listed in
+its `--dry-run` output and stays in these rows.
+
+**The row.** One tracker row per book chapter group, each page's figure
+count from `figures:status`. One Opus fixer per 15–25 figures (a page with
+18 parabolas is one agent). Figure work never runs on Sonnet.
+
+**Per figure, the fixer:**
+
+1. Renders the page's hand SVGs to PNG:
+   `node tools/figures/render-page-figures.mjs <page> $SP/render/<stem> --svg-only`
+   and READS each `L<line>.png` beside its `aria-label`. The drawing is the
+   authority for what is plotted; the page's prose and exercise tell it which
+   equation the drawing is of — check the two agree, and report a drawing
+   that contradicts its page rather than "fixing" either silently.
+2. Recovers the spec from the SVG geometry: the axis range and tick spacing
+   give `xMin`/`xMax`/`yMin`/`yMax` and `unit`; every plotted object becomes
+   its analytic primitive (`lines` through the drawn points or by
+   slope/intercept, `quadratics` from the vertex and a second point,
+   `points`, `regions` for shading, `slopeTriangles`, `segments`,
+   `guides`; `figure` kind `polygons` with `edgeLabels`/`vertexLabels`/
+   `rightAngles`/`dashedEdges`, `circles` with `radius`/`diameter`). Never
+   `smoothCurves`, never a polygon faked from segments, never hand `texts`
+   for tick labels (`tickLabels` with `xTickStep`/`xTickFormat`; the lint
+   refuses a hand tick row). `ariaLabel` is the old `aria-label`, re-read
+   against the new render.
+3. Replaces the `<svg>…</svg>` — and its `<div class="ap-figure">` wrapper
+   when the wrapper holds only that svg — with the shortcode, one blank
+   line on each side:
+   ```
+   {{< apfigure kind="graph" >}}
+   {…}
+   {{< /apfigure >}}
+   ```
+4. Renders the spec (`node tools/figures/render-figure.mjs graph '<json>'`
+   prints SVG; to see it, paste the SVGs into a scratch `.md` and run
+   `render-page-figures.mjs` on that page, which is how the parent
+   eyeballed the legacy conversion gallery) and compares old PNG and new
+   PNG image-first: every point, intercept, curve, arrow end, shaded side,
+   and label text present and in the same place mathematically. Label
+   placement may differ; geometry may not.
+5. Gates the page: `node tools/figures/check-figure-overlaps.mjs <page>`
+   (clean, and the page's remaining inline count is what the row expects),
+   `npm run verify-section -- <page>`, `npm run lint`.
+
+**The parent:** reads every converted figure's spec against its old PNG
+(image-first, as in the figure passes — fixers have shipped the wrong
+parabola before), runs `figures:status` to confirm each page in the row is
+`converted`, runs `npm test`, and runs the browser suite
+(`tests/figures.spec.mjs`) once per row, since the spec-first figures
+render client-side. Keys and exercises are untouched by these rows, so the
+ledger, solve, and errata steps of the loop above do not apply; a drawing
+that contradicts its source page is logged in `docs/openstax-errata.md`
+only when the CNXML image is the one that is wrong. Expect about 6–10k
+Opus tokens a figure, so about 1.2–1.8M for the whole backlog.

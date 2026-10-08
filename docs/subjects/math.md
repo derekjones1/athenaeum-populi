@@ -457,6 +457,19 @@ alone, in three ways *(October 6, 2026)*:
    axis, because the author has placed the digits. Use them where a curve
    crosses the digit row on both sides (the sound wave of 7.4: digits below
    the trough). Never hand-draw ticks as `segments` or digits as `texts`.
+4. **`xTickFormat` / `yTickFormat`** (`'pi'` or `'fraction'`, October 7,
+   2026) print an axis in the units the mathematics uses, so a trigonometric
+   graph never fakes its π ticks with `texts`. On a `'pi'` axis that axis's
+   `xTickStep` and `xGridStep` (and the `tickStep` / `gridStep` they default
+   from) are in units of π — `xTickStep: 0.5` ticks every π/2,
+   `xGridStep: 0.25` draws gridlines every π/4 — and each digit prints as a
+   reduced fraction of π (`π/4`, `π`, `3π/2`, `−2π`); `'fraction'` keeps
+   plain units and prints reduced fractions (`1/40`, `3/40`, `−1/2`;
+   integers stay plain). The step is snapped once to the nearest n/d with
+   d ≤ 64, so `0.166667` is π/6 exactly. These are ordinary tick digits —
+   tick size, knockout, relocation, offsets — and the `figure-hand-ticks`
+   lint refuses a row or column of `texts` that spell tick values at their
+   positions, or three short `segments` straddling an axis.
 
 **Write line labels with no `labelSide`/`labelAt` pins first** and let the
 engine choose — a pin is honored even into a collision, so state one only to
@@ -557,8 +570,10 @@ records this. Start from the queue:
 npm run figures:status -- content/math/<book>/<chapter>
 ```
 
-Pages listed `converted` are finished — do not touch them. Everything else
-carries one of two unconverted forms, each with its own procedure.
+Pages listed `converted` are finished — do not touch them. Every inline
+`<svg>` on a page counts, inside a `<div class="ap-figure">` or bare in the
+markdown. Everything else carries one of two unconverted forms, each with
+its own procedure — or a pictorial figure, which is not debt (below).
 
 **Legacy `data-spec` divs — run the converter,** never hand-edit:
 
@@ -597,12 +612,26 @@ source art prints the equation or name beside the curve, restore it as a
 write-the-equation exercise, where printing the answer on the graph would
 defeat it). Run the page back through `check:figures` after adding `texts`.
 
-**Hand-written SVG in a bare `<div class="ap-figure">`** (no `data-spec`) has
-nothing to copy: recover the grid, objects, and labels from the SVG geometry
-and fit analytic primitives (never `smoothCurves`). Where the engine has no
-primitive for the shape (bar charts, schematic diagrams with funnels and
-mapping arrows), extend `graph-core` with one rather than hand-assembling
-the picture out of `polygons` and `texts`.
+**Hand-written SVG** (in a bare `<div class="ap-figure">` or loose in the
+markdown, no `data-spec`) has nothing to copy: recover the grid, objects,
+and labels from the SVG geometry and fit analytic primitives (never
+`smoothCurves`). Number lines go through the converter first —
+`npm run figures:numberlines -- --dry-run <path>`, then without the flag —
+which rewrites a hand number line as a `numberline` spec only when the
+rebuilt spec reproduces the drawing's ticks, marker, shade, points, and
+title, and prints a reason for each one it skips. The rest is
+reconstruction by hand; the re-review campaign runs it as its own rows
+(`docs/re-review/README.md`, "Figure conversion rows"). Never
+hand-assemble a picture out of `polygons` and `texts`: where the engine has
+no primitive for the shape, either extend `graph-core` (Derek's call) or,
+for a figure that is genuinely a picture — counters, base-10 blocks,
+geoboards, factor trees, fraction circles, percent grids, bar charts,
+function machines, mapping ovals, balance scales — keep the SVG and put
+`data-pictorial` on its `<svg>` open tag. The queue then lists it as
+`pictorial SVG (kept)` and the page can still be `converted`; the layout
+gate keeps reading it. (Decision of October 7, 2026: about a hundred such
+figures stay hand SVG; they have no ticks or curves for the engine to
+improve.)
 
 Then gate the page before moving on: `npm run verify-section -- <page>`,
 `node tools/figures/check-figure-overlaps.mjs <page>` (it also reports the
@@ -678,6 +707,10 @@ than 1,975. Where the source numbers only one axis, `tickLabels` also takes
 move the digit row down / the digit column left, off an axis a curve runs
 along on both sides; `tickKnockout: false` prints strokes over the digits
 instead of behind them (the default is behind; see the graph-core rules above).
+`xTickFormat` / `yTickFormat` (`'pi'` or `'fraction'`) print that axis's
+digits as reduced fractions of π or of 1, with the π axis's steps given in
+units of π (`"tickLabels":true,"xTickFormat":"pi","xTickStep":0.5` is the
+sine-graph axis marked every π/2).
 
 Gridlines sit on multiples of the grid step, as tick labels sit on multiples
 of the tick step — never at `xMin`, `xMin + step`, … *(October 4, 2026)*. So
@@ -694,7 +727,20 @@ grid is meant to show.
 compound set — $(-\infty,2)\cup(2,\infty)$, $[1,3]\cup(5,\infty)$ — with
 `intervals`: one entry per heavy stretch, each `{ from?, to?, fromType?,
 toType? }`. Omit `from` or `to` to run that end to the arrow, and mark
-excluded endpoints `'open'` so they render hollow.
+excluded endpoints `'open'` so they render hollow. `fromType`/`toType` also
+take `'paren'` or `'bracket'`, which draw the interval-notation glyph on
+the axis instead of a circle — `(` or `[` at a `from`, `)` or `]` at a
+`to` — with the stretch running from the glyph and, under a paren, no tick
+*(October 7, 2026)*. The layout checker exempts a lone `(` `)` `[` `]`
+glyph crossed by the solid axis, its tick, or the shaded ray, as the inline
+pass always did. Two more props from the same day: `step` — tick spacing
+(default 1); with it, `min` and `max` may be any finite numbers so long as
+(max − min) / step is a whole number, and labels print with as many
+decimals as the longest of min, max, and step carries — 0..1 by 0.1 reads
+0.0 … 1.0, −1..0 by 0.01 reads −1.00 … 0.00, an integer step on integer
+ends prints plain; and `labelEvery` — label every k-th tick counting from
+min (default 1, a positive integer); the unlabelled ticks between are minor
+ticks, drawn shorter (±4 px against ±6 px).
 
 **A "generic" source curve is still a function: fit a formula, then render
 the formula.** When the source shows a freeform-looking curve (a wavy

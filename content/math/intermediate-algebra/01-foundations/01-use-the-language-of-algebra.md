@@ -201,7 +201,7 @@ $6$. Neither $4$ nor $6$ is prime, so we break each into two factors: $4$ into
 $2$ and $2$, and $6$ into $2$ and $3$. Now $2$, $2$, $2$, and $3$ are all
 prime, so we circle them.
 
-<svg viewBox="0 0 320 210" role="img" aria-label="A factor tree for 48. 48 branches into 2 and 24; the 2 is circled because it is prime. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 320px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 320 210" role="img" aria-label="A factor tree for 48. 48 branches into 2 and 24; the 2 is circled because it is prime. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 320px; display: block; margin: 1.5rem auto">
   <text x="160" y="25" text-anchor="middle" font-size="16" fill="currentColor">48</text>
   <line x1="150" y1="32" x2="110" y2="61" stroke="currentColor" stroke-width="1.5" />
   <line x1="170" y1="32" x2="210" y2="62" stroke="currentColor" stroke-width="1.5" />

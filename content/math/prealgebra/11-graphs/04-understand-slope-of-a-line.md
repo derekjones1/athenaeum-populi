@@ -40,7 +40,7 @@ discover how to find the slope of a line.
 We start by stretching a rubber band between two pegs to make a line, as
 shown below.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="A geoboard of five rows of five pegs, with a rubber band stretched diagonally from a peg on the left to a peg up and to the right, forming a line." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 160" role="img" aria-label="A geoboard of five rows of five pegs, with a rubber band stretched diagonally from a peg on the left to a peg up and to the right, forming a line." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="140" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="110" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
 </svg>
@@ -50,7 +50,7 @@ up from the left peg and around a third peg to make the sides of a right
 triangle. We carefully make a $90^\circ$ angle around the third peg, so that one
 side is vertical and the other is horizontal.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="140" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="110" x2="20" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="50" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
@@ -85,7 +85,7 @@ spaces on the vertical leg. Be sure to count the spaces between the pegs
 rather than the pegs themselves! The rubber band goes across $3$ spaces on
 the horizontal leg, so the run is $3$ units.
 
-<svg viewBox="0 0 160 170" role="img" aria-label="The geoboard triangle with the horizontal leg labeled 3 above it and the vertical leg labeled 2 to its left." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 170" role="img" aria-label="The geoboard triangle with the horizontal leg labeled 3 above it and the vertical leg labeled 2 to its left." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="120" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="60" x2="110" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
@@ -116,7 +116,7 @@ rise first and then the run.
 
 **Example.** What is the slope of the line on the geoboard shown?
 
-<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: horizontal leg of 4 units on top and vertical leg of 3 units on the left, with the diagonal hypotenuse connecting the bottom-left peg to the peg 4 spaces right and 3 spaces up." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: horizontal leg of 4 units on top and vertical leg of 3 units on the left, with the diagonal hypotenuse connecting the bottom-left peg to the peg 4 spaces right and 3 spaces up." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="150" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="60" x2="140" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
@@ -147,7 +147,7 @@ peg and make a right triangle by stretching the rubber band to the peg on
 the right. This time we need to stretch the rubber band down to make the
 vertical leg, so the rise is negative.
 
-<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: from a peg on the left, the rubber band goes down 1 space, then 3 spaces to the right, with the diagonal hypotenuse sloping down from the starting peg to the peg on the right." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: from a peg on the left, the rubber band goes down 1 space, then 3 spaces to the right, with the diagonal hypotenuse sloping down from the starting peg to the peg on the right." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="90" x2="20" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="120" x2="110" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
@@ -200,7 +200,7 @@ So the rise is $1$ unit and the run is $2$ units. Start at a peg in the
 lower left of the geoboard. Stretch the rubber band up $1$ unit, and then
 right $2$ units.
 
-<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle modeling slope one half: a rise of 1 unit up and a run of 2 units to the right, with the diagonal hypotenuse connecting the two ends." style="max-width: 200px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle modeling slope one half: a rise of 1 unit up and a run of 2 units to the right, with the diagonal hypotenuse connecting the two ends." style="max-width: 200px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="150" x2="20" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="120" x2="80" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
@@ -227,7 +227,7 @@ So the rise is $-1$ and the run is $4$. Since the rise is negative, we
 choose a starting peg on the upper left that will give us room to count
 down. We stretch the rubber band down $1$ unit, then to the right $4$ units.
 
-<svg viewBox="0 0 190 170" role="img" aria-label="A geoboard triangle modeling slope negative one fourth: a rise of 1 unit going down and a run of 4 units to the right, with the diagonal hypotenuse connecting the two ends." style="max-width: 220px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 190 170" role="img" aria-label="A geoboard triangle modeling slope negative one fourth: a rise of 1 unit going down and a run of 4 units to the right, with the diagonal hypotenuse connecting the two ends." style="max-width: 220px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="150" r="3" fill="currentColor" opacity="0.5" />
   <line x1="20" y1="30" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
   <line x1="20" y1="60" x2="140" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
@@ -936,101 +936,9 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 
 ### Find the slope of a line from its graph
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, -4) and (10, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,-4],[10,0]]}]}'>
-<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, -4) and (10, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 452" width="452" height="452" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="426" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="426" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="426" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="426" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="426" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="426" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="426" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="426" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="426" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="426" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="426" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="426" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="426" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="426" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="426" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="426" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="366" y1="426" x2="366" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="386" y1="426" x2="386" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="406" y1="426" x2="406" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="426" y1="426" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="426" x2="426" y2="426" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="406" x2="426" y2="406" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="386" x2="426" y2="386" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="366" x2="426" y2="366" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="426" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="426" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="426" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="426" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="426" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="426" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="426" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="426" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="426" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="426" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="426" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="426" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="426" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="426" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="426" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="226" x2="428" y2="226" stroke="currentColor" stroke-width="1"/>
-  <line x1="226" y1="24" x2="226" y2="428" stroke="currentColor" stroke-width="1"/>
-  <polygon points="438,226 428,231 428,221" fill="currentColor"/>
-  <polygon points="226,14 231,24 221,24" fill="currentColor"/>
-  <polygon points="14,226 24,221 24,231" fill="currentColor"/>
-  <polygon points="226,438 221,428 231,428" fill="currentColor"/>
-  <text x="436" y="218" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="234" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="223" x2="26" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="241" font-size="11" fill="currentColor" text-anchor="middle">−10</text>
-  <line x1="66" y1="223" x2="66" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="241" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="106" y1="223" x2="106" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="241" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="146" y1="223" x2="146" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="241" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="186" y1="223" x2="186" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="241" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="266" y1="223" x2="266" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="241" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="306" y1="223" x2="306" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="241" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="346" y1="223" x2="346" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="241" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="386" y1="223" x2="386" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="386" y="241" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="426" y1="223" x2="426" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="426" y="241" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="223" y1="426" x2="229" y2="426" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="430" font-size="11" fill="currentColor" text-anchor="end">−10</text>
-  <line x1="223" y1="386" x2="229" y2="386" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="390" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="223" y1="346" x2="229" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="350" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="223" y1="306" x2="229" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="310" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="223" y1="266" x2="229" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="270" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="223" y1="186" x2="229" y2="186" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="190" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="223" y1="146" x2="229" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="150" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="223" y1="106" x2="229" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="110" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="223" y1="66" x2="229" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="70" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="223" y1="26" x2="229" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <line x1="29.3" y1="384.7" x2="422.7" y2="227.3" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="432,223.6 424.6,232 420.9,222.7" fill="currentColor"/>
-  <polygon points="20,388.4 27.4,380 31.1,389.3" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, -4) and (10, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,-4],[10,0]]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the slope of the line shown above, as a fraction."
@@ -1040,101 +948,9 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
   hint="Pick two points where the line crosses grid intersections, count the rise and the run from the left point to the right one, and simplify $\tfrac{\text{rise}}{\text{run}}$."
 >}}
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 2) and (6, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,2],[6,0]]}]}'>
-<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 2) and (6, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 452" width="452" height="452" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="426" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="426" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="426" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="426" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="426" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="426" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="426" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="426" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="426" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="426" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="426" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="426" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="426" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="426" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="426" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="426" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="366" y1="426" x2="366" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="386" y1="426" x2="386" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="406" y1="426" x2="406" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="426" y1="426" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="426" x2="426" y2="426" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="406" x2="426" y2="406" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="386" x2="426" y2="386" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="366" x2="426" y2="366" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="426" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="426" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="426" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="426" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="426" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="426" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="426" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="426" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="426" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="426" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="426" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="426" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="426" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="426" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="426" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="226" x2="428" y2="226" stroke="currentColor" stroke-width="1"/>
-  <line x1="226" y1="24" x2="226" y2="428" stroke="currentColor" stroke-width="1"/>
-  <polygon points="438,226 428,231 428,221" fill="currentColor"/>
-  <polygon points="226,14 231,24 221,24" fill="currentColor"/>
-  <polygon points="14,226 24,221 24,231" fill="currentColor"/>
-  <polygon points="226,438 221,428 231,428" fill="currentColor"/>
-  <text x="436" y="218" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="234" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="223" x2="26" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="241" font-size="11" fill="currentColor" text-anchor="middle">−10</text>
-  <line x1="66" y1="223" x2="66" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="241" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="106" y1="223" x2="106" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="241" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="146" y1="223" x2="146" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="241" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="186" y1="223" x2="186" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="241" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="266" y1="223" x2="266" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="241" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="306" y1="223" x2="306" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="241" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="346" y1="223" x2="346" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="241" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="386" y1="223" x2="386" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="386" y="219" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="426" y1="223" x2="426" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="426" y="241" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="223" y1="426" x2="229" y2="426" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="430" font-size="11" fill="currentColor" text-anchor="end">−10</text>
-  <line x1="223" y1="386" x2="229" y2="386" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="390" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="223" y1="346" x2="229" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="350" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="223" y1="306" x2="229" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="310" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="223" y1="266" x2="229" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="270" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="223" y1="186" x2="229" y2="186" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="190" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="223" y1="146" x2="229" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="150" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="223" y1="106" x2="229" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="110" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="223" y1="66" x2="229" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="70" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="223" y1="26" x2="229" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <line x1="29.5" y1="120.5" x2="422.5" y2="251.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="432,254.7 420.9,256.2 424.1,246.8" fill="currentColor"/>
-  <polygon points="20,117.3 31.1,115.8 27.9,125.2" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 2) and (6, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,2],[6,0]]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the slope of the line shown above, as a fraction."
@@ -1144,101 +960,9 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
   hint="Pick two points where the line crosses grid intersections, count the rise and the run from the left point to the right one, and simplify $\tfrac{\text{rise}}{\text{run}}$."
 >}}
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 6) and (8, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,6],[8,0]]}]}'>
-<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 6) and (8, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 452" width="452" height="452" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="426" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="426" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="426" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="426" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="426" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="426" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="426" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="426" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="426" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="426" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="426" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="426" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="426" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="426" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="426" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="346" y1="426" x2="346" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="366" y1="426" x2="366" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="386" y1="426" x2="386" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="406" y1="426" x2="406" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="426" y1="426" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="426" x2="426" y2="426" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="406" x2="426" y2="406" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="386" x2="426" y2="386" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="366" x2="426" y2="366" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="426" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="426" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="426" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="426" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="426" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="426" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="426" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="426" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="426" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="426" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="426" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="426" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="426" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="426" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="426" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="426" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="226" x2="428" y2="226" stroke="currentColor" stroke-width="1"/>
-  <line x1="226" y1="24" x2="226" y2="428" stroke="currentColor" stroke-width="1"/>
-  <polygon points="438,226 428,231 428,221" fill="currentColor"/>
-  <polygon points="226,14 231,24 221,24" fill="currentColor"/>
-  <polygon points="14,226 24,221 24,231" fill="currentColor"/>
-  <polygon points="226,438 221,428 231,428" fill="currentColor"/>
-  <text x="436" y="218" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="234" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="223" x2="26" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="241" font-size="11" fill="currentColor" text-anchor="middle">−10</text>
-  <line x1="66" y1="223" x2="66" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="241" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
-  <line x1="106" y1="223" x2="106" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="241" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="146" y1="223" x2="146" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="241" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="186" y1="223" x2="186" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="241" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="266" y1="223" x2="266" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="241" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="306" y1="223" x2="306" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="306" y="241" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="346" y1="223" x2="346" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="346" y="241" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="386" y1="223" x2="386" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="386" y="241" font-size="11" fill="currentColor" text-anchor="middle">8</text>
-  <line x1="426" y1="223" x2="426" y2="229" stroke="currentColor" stroke-width="1"/>
-  <text x="426" y="241" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="223" y1="426" x2="229" y2="426" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="430" font-size="11" fill="currentColor" text-anchor="end">−10</text>
-  <line x1="223" y1="386" x2="229" y2="386" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="390" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="223" y1="346" x2="229" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="350" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="223" y1="306" x2="229" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="310" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="223" y1="266" x2="229" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="270" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="223" y1="186" x2="229" y2="186" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="190" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="223" y1="146" x2="229" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="150" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="223" y1="106" x2="229" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="110" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="223" y1="66" x2="229" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="70" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="223" y1="26" x2="229" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="220" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <line x1="119.3" y1="26" x2="424" y2="254.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="432,260.5 421,258.5 427,250.5" fill="currentColor"/>
-  <polygon points="111.3,20 122.3,22 116.3,30" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A rectangular coordinate plane with both axes running from -10 to 10. A line passes through the points (0, 6) and (8, 0).","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"tickLabels":true,"tickStep":2,"lines":[{"through":[[0,6],[8,0]]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the slope of the line shown above, as a fraction."

@@ -42,37 +42,9 @@ the solution to the inequality $x > 3$ is any number greater than $3$. We
 showed this on the number line by shading in the number line to the right of
 $3$, and putting an open parenthesis at $3$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line showing x greater than 3, with an open parenthesis at 3 and shading to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 76" width="320" height="76" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="30" x2="304" y2="30" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 23 L 16 30 L 24 37" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 23 L 304 30 L 296 37" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="239.2" y1="30" x2="304" y2="30" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="24" x2="28" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="55" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="24" x2="54.4" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="55" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="24" x2="80.8" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="55" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="24" x2="107.2" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="55" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="24" x2="133.6" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="55" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="24" x2="160" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="55" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="24" x2="186.4" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="55" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="24" x2="212.8" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="55" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="24" x2="239.2" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="55" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="24" x2="265.6" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="55" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="24" x2="292" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="55" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="37" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line showing x greater than 3, with an open parenthesis at 3 and shading to the right.","min":-5,"max":5,"marker":{"at":3,"type":"paren"},"shade":"right"}
+{{< /apfigure >}}
 
 Similarly, linear inequalities in two variables have many solutions. Any
 ordered pair $(x,y)$ that makes an inequality true when we substitute in the

@@ -703,17 +703,9 @@ the lengths of the legs and $c$ is the length of the hypotenuse.
 
 ### Use the Pythagorean Theorem
 
-<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A right triangle modeling a string of lights. The vertical leg is a 12-foot pole, the hypotenuse is a 13-foot string, and the horizontal leg from the pole to the anchor point is unknown.","unit":18,"padding":38,"segments":[{"from":[0,0],"to":[5,0]},{"from":[0,0],"to":[0,12],"label":"12 ft","labelSide":"left"},{"from":[0,12],"to":[5,0],"label":"13 ft"}],"rightAngles":[{"at":[0,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[2.5,0],"text":"?","anchor":"middle","dy":18}]}'>
-<svg role="img" aria-label="A right triangle modeling a string of lights. The vertical leg is a 12-foot pole, the hypotenuse is a 13-foot string, and the horizontal leg from the pole to the anchor point is unknown." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 292" width="166" height="292" font-family="Helvetica, Arial, sans-serif">
-  <line x1="38" y1="254" x2="128" y2="254" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="38" y1="254" x2="38" y2="38" stroke="currentColor" stroke-width="1.5"/>
-  <text x="26" y="150" text-anchor="end" font-size="13" fill="currentColor">12 ft</text>
-  <line x1="38" y1="38" x2="128" y2="254" stroke="currentColor" stroke-width="1.5"/>
-  <text x="94.1" y="139.4" text-anchor="start" font-size="13" fill="currentColor">13 ft</text>
-  <path d="M 48 254 L 48 244 L 38 244" fill="none" stroke="currentColor" stroke-width="1.2"/>
-  <text x="83" y="272" font-size="13" fill="currentColor" text-anchor="middle">?</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle modeling a string of lights. The vertical leg is a 12-foot pole, the hypotenuse is a 13-foot string, and the horizontal leg from the pole to the anchor point is unknown.","unit":18,"padding":38,"segments":[{"from":[0,0],"to":[5,0]},{"from":[0,0],"to":[0,12],"label":"12 ft","labelSide":"left"},{"from":[0,12],"to":[5,0],"label":"13 ft"}],"rightAngles":[{"at":[0,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[2.5,0],"text":"?","anchor":"middle","dy":18}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="A 13-foot string of lights will be attached to the top of a 12-foot pole for a holiday display, as shown. How far from the base of the pole should the end of the string of lights be anchored, in feet?"
@@ -723,17 +715,9 @@ the lengths of the legs and $c$ is the length of the hypotenuse.
   hint="The pole meets the ground at a right angle, so the string is the hypotenuse. Solve $a^2 + b^2 = c^2$ for the missing leg."
 >}}
 
-<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A square flower garden with side length 10 feet and a diagonal path from one corner to the opposite corner.","unit":22,"padding":38,"polygons":[{"points":[[0,0],[10,0],[10,10],[0,10]],"edgeLabels":["10 ft",null,null,null]}],"segments":[{"from":[0,0],"to":[10,10],"label":"path"}]}'>
-<svg role="img" aria-label="A square flower garden with side length 10 feet and a diagonal path from one corner to the opposite corner." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 296" width="296" height="296" font-family="Helvetica, Arial, sans-serif">
-  <line x1="38" y1="258" x2="258" y2="258" stroke="currentColor" stroke-width="1.5"/>
-  <text x="148" y="280" text-anchor="middle" font-size="13" fill="currentColor">10 ft</text>
-  <line x1="258" y1="258" x2="258" y2="38" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="258" y1="38" x2="38" y2="38" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="38" y1="38" x2="38" y2="258" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="38" y1="258" x2="258" y2="38" stroke="currentColor" stroke-width="1.5"/>
-  <text x="139.5" y="137.5" text-anchor="end" font-size="13" fill="currentColor">path</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A square flower garden with side length 10 feet and a diagonal path from one corner to the opposite corner.","unit":22,"padding":38,"polygons":[{"points":[[0,0],[10,0],[10,10],[0,10]],"edgeLabels":["10 ft",null,null,null]}],"segments":[{"from":[0,0],"to":[10,10],"label":"path"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Chi is planning to put a path of paving stones through her flower garden, as shown. The flower garden is a square with side 10 feet. What will the length of the path be, in feet? Round to the nearest tenth."

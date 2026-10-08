@@ -542,7 +542,10 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
    of every stroke and relocates a crossed digit to the clear side of its
    axis, so a checker never hand-draws ticks as `segments` or digits as
    `texts`: the fix for a curve across the digit row is `xTickOffset` /
-   `yTickOffset`, and a polar grid (rings and spokes) is `faint: true`.
+   `yTickOffset`, a π-marked axis is `xTickFormat: 'pi'` with `xTickStep`
+   in units of π (fraction ticks: `'fraction'`), and a polar grid (rings
+   and spokes) is `faint: true`. The `figure-hand-ticks` lint refuses a
+   hand tick row.
 5. The footer `Changes:` clause: counts from a tally of the page, claims
    true; never where a correction is logged or who it was reported to.
 6. After your edits, re-check every edited item's neighbours for new

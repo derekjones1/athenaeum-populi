@@ -46,7 +46,7 @@ represents the number of equal parts the whole has been divided into, and
 the numerator $a$ represents how many of those parts are included. The
 denominator $b$ cannot equal zero because division by zero is undefined.
 
-<svg viewBox="0 0 120 90" role="img" aria-label="A circle divided into three equal parts, each labeled one-third." style="max-width: 160px; display: block; margin: 1rem auto">
+<svg data-pictorial viewBox="0 0 120 90" role="img" aria-label="A circle divided into three equal parts, each labeled one-third." style="max-width: 160px; display: block; margin: 1rem auto">
   <circle cx="60" cy="45" r="40" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="60" y1="5" x2="60" y2="45" stroke="currentColor" stroke-width="1.5" />
   <line x1="60" y1="45" x2="94" y2="65" stroke="currentColor" stroke-width="1.5" />
@@ -426,7 +426,7 @@ unchanged.
 
 ### Understand the meaning of fractions
 
-<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 4 equal wedges, with 1 wedge shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 92 100" role="img" aria-label="A circle divided into 4 equal wedges, with 1 wedge shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
@@ -442,7 +442,7 @@ unchanged.
   hint="Count the equal wedges for the denominator, then count the shaded ones for the numerator."
 >}}
 
-<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 4 equal wedges, with 3 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 92 100" role="img" aria-label="A circle divided into 4 equal wedges, with 3 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
@@ -458,7 +458,7 @@ unchanged.
   hint="Count the equal wedges for the denominator, then count the shaded ones for the numerator."
 >}}
 
-<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 8 equal wedges, with 3 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 92 100" role="img" aria-label="A circle divided into 8 equal wedges, with 3 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 74.28 21.72 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 74.28 21.72 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 74.28 78.28 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
@@ -478,7 +478,7 @@ unchanged.
   hint="Count the equal wedges first — there are more of them now — and then the shaded ones."
 >}}
 
-<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 8 equal wedges, with 5 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 92 100" role="img" aria-label="A circle divided into 8 equal wedges, with 5 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 74.28 21.72 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 74.28 21.72 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 74.28 78.28 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
@@ -498,7 +498,7 @@ unchanged.
   hint="Count all the equal wedges first, then count the shaded ones."
 >}}
 
-<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 6 equal wedges, with 5 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 92 100" role="img" aria-label="A circle divided into 6 equal wedges, with 5 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 80.64 30.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 80.64 30.00 A 40.0 40.0 0 0 1 80.64 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 80.64 70.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
@@ -534,7 +534,7 @@ unchanged.
   hint="Group the pieces into full circles; the pieces left over make the fraction part."
 >}}
 
-<svg viewBox="0 0 184 100" role="img" aria-label="Two circles, each divided into 4 equal wedges. All 4 wedges of the left circle are shaded, and 1 wedge of the right circle is shaded." style="max-width: 320px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 184 100" role="img" aria-label="Two circles, each divided into 4 equal wedges. All 4 wedges of the left circle are shaded, and 1 wedge of the right circle is shaded." style="max-width: 320px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
   <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />

@@ -56,107 +56,19 @@ For the compound inequality $x>-3$ and $x\leq2$, we graph each inequality. We
 then look for where the graphs “overlap.” The numbers that are shaded on both
 graphs will be shaded on the graph of the solution of the compound inequality.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded to the right of an open parenthesis at negative three." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="80.8" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="80.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; −3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded to the right of an open parenthesis at negative three.","min":-5,"max":5,"title":"x > −3","marker":{"at":-3,"type":"paren"},"shade":"right"}
+{{< /apfigure >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded to the left of a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="212.8" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="212.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded to the left of a closed bracket at two.","min":-5,"max":5,"title":"x ≤ 2","marker":{"at":2,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 The overlap is $-3<x\leq2$, or $(-3,2]$ in interval notation.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded between an open parenthesis at negative three and a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="80.8" y1="45" x2="212.8" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; −3 and x ≤ 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded between an open parenthesis at negative three and a closed bracket at two.","min":-5,"max":5,"title":"x > −3 and x ≤ 2","intervals":[{"from":-3,"fromType":"paren","to":2,"toType":"bracket"}]}
+{{< /apfigure >}}
 
 We can see that the numbers between $-3$ and $2$ are shaded on both of the
 first two graphs. They will then be shaded on the solution graph.
@@ -185,107 +97,19 @@ Graph each solution. Then graph the numbers that make both inequalities true.
 The final graph will show all the numbers that make both inequalities true—the
 numbers shaded on *both* of the first two graphs.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded left from an open parenthesis at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="212.8" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
-  <text x="212.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded left from an open parenthesis at two.","min":-5,"max":5,"title":"x < 2","marker":{"at":2,"type":"paren"},"shade":"left"}
+{{< /apfigure >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded right from a closed bracket at negative three." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="80.8" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="80.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ −3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded right from a closed bracket at negative three.","min":-5,"max":5,"title":"x ≥ −3","marker":{"at":-3,"type":"bracket"},"shade":"right"}
+{{< /apfigure >}}
 
 The overlap is $-3\leq x<2$, or $[-3,2)$ in interval notation.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded between a closed bracket at negative three and an open parenthesis at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="80.8" y1="45" x2="212.8" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2 and x ≥ −3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded between a closed bracket at negative three and an open parenthesis at two.","min":-5,"max":5,"title":"x < 2 and x ≥ −3","intervals":[{"from":-3,"fromType":"bracket","to":2,"toType":"paren"}]}
+{{< /apfigure >}}
 
 All the numbers that make both inequalities true are the solution to the
 compound inequality.
@@ -321,38 +145,9 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded left from a closed bracket at one half, the overlap of the two inequalities." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="173.2" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="173.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="173.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 1/2 and x &lt; 4</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded left from a closed bracket at one half, the overlap of the two inequalities.","min":-5,"max":5,"title":"x ≤ 1/2 and x < 4","marker":{"at":0.5,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(-\infty,\tfrac12]$.
 
@@ -413,39 +208,9 @@ $$
 The graph is shaded from a closed bracket at $1$ to an open parenthesis at
 $5$. In interval notation, the solution is $[1,5)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line from negative two to eight shaded between a closed bracket at one and an open parenthesis at five." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="107.2" y1="45" x2="212.8" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">7</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">8</text>
-  <text x="107.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">1 ≤ x &lt; 5</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from negative two to eight shaded between a closed bracket at one and an open parenthesis at five.","min":-2,"max":8,"title":"1 ≤ x < 5","intervals":[{"from":1,"fromType":"bracket","to":5,"toType":"paren"}]}
+{{< /apfigure >}}
 
 When written as a double inequality, $1\leq x<5$, it is easy to see that the
 solutions are the numbers caught between one and five, including one, but not
@@ -492,108 +257,19 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded left from a closed bracket at negative three halves." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="120.4" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="120.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="120.4" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −3/2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded left from a closed bracket at negative three halves.","min":-5,"max":5,"title":"x ≤ −3/2","marker":{"at":-1.5,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded right from a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="212.8" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="212.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded right from a closed bracket at two.","min":-5,"max":5,"title":"x ≥ 2","marker":{"at":2,"type":"bracket"},"shade":"right"}
+{{< /apfigure >}}
 
 Together the graphs give $(-\infty,-\tfrac32]\cup[2,\infty)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line shaded left from a closed bracket at negative three halves and right from a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="120.4" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="212.8" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="120.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −3/2 or x ≥ 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line shaded left from a closed bracket at negative three halves and right from a closed bracket at two.","min":-5,"max":5,"title":"x ≤ −3/2 or x ≥ 2","intervals":[{"to":-1.5,"toType":"bracket"},{"from":2,"fromType":"bracket"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Solve the compound inequality. Write the solution in interval notation: $1-2x\leq-3$ or $7+3x\leq4$."
@@ -621,29 +297,9 @@ $$
 The solution covers all real numbers, so in interval notation it is
 $(-\infty,\infty)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line from negative twelve to twelve shaded along its entire length, with arrows at both ends." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="304" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−12</text>
-  <line x1="72" y1="39" x2="72" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="72" y="70" text-anchor="middle" font-size="12" fill="currentColor">−8</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="248" y1="39" x2="248" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="248" y="70" text-anchor="middle" font-size="12" fill="currentColor">8</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">12</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 21/2 or x ≥ −12</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from negative twelve to twelve shaded along its entire length, with arrows at both ends.","min":-12,"max":12,"step":4,"title":"x ≤ 21/2 or x ≥ −12","intervals":[{}]}
+{{< /apfigure >}}
 
 ## Solve applications with compound inequalities
 

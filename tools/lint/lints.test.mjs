@@ -2194,6 +2194,53 @@ test('apfigure builds every spec through the real engine and reports what fails'
     .errors.some((e) => /unclosed|closing/.test(e)));
 });
 
+// figure-hand-ticks: Precalculus 6.1 and 7.6 faked π and fraction tick digits
+// with rows of `texts`; the engine prints them now (xTickFormat).
+const handTicks = (json) => lintHugo(APFIG('graph', json), SECTION).errors.filter((e) => e.includes('figure-hand-ticks'));
+const SINE = '"ariaLabel":"A sine wave.","xMin":-0.4,"xMax":6.8,"yMin":-1.9,"yMax":1.8,"grid":false,"tickLabels":"y","curves":[{"kind":"sine"}]';
+
+test('figure-hand-ticks: two π texts on one row are a hand tick row', () => {
+  const errors = handTicks(`{${SINE},"texts":[{"at":[3.14159,-1.35],"text":"π"},{"at":[6.28319,-1.35],"text":"2π"}]}`);
+  assert.equal(errors.length, 1, errors.join('; '));
+  assert.match(errors[0], /^L1: apfigure: figure-hand-ticks: 2 texts entries \(π, 2π\) share the row y = -1\.35 — hand-placed tick labels: use tickLabels with xTickStep \/ xTickFormat$/);
+});
+
+test('figure-hand-ticks: three plain numbers on a row or column are a hand tick row, two are not', () => {
+  const row = handTicks(`{${SINE},"texts":[{"at":[0.025,-0.3],"text":"1/40"},{"at":[0.05,-0.3],"text":"1/20"},{"at":[0.075,-0.3],"text":"3/40"}]}`);
+  assert.equal(row.length, 1, row.join('; '));
+  assert.match(row[0], /3 texts entries \(1\/40, 1\/20, 3\/40\) share the row y = -0\.3/);
+  const column = handTicks(`{${SINE},"texts":[{"at":[-0.2,-1],"text":"−1"},{"at":[-0.2,0.5],"text":"0.5"},{"at":[-0.2,1],"text":"1"}]}`);
+  assert.equal(column.length, 1, column.join('; '));
+  assert.match(column[0], /share the column x = -0\.2 — hand-placed tick labels: use tickLabels with yTickStep \/ yTickFormat/);
+  // a unit circle labels (1, 0) and (−1, 0): two numbers on a row are legitimate
+  assert.deepEqual(handTicks('{"ariaLabel":"The unit circle.","xMin":-1.5,"xMax":1.5,"yMin":-1.5,"yMax":1.5,'
+    + '"circles":[{"at":[0,0],"r":1}],"texts":[{"at":[1.05,-0.15],"text":"1"},{"at":[-1.05,-0.15],"text":"−1"}]}'), []);
+});
+
+test('figure-hand-ticks: a unit circle\'s angle labels are not tick rows', () => {
+  // 5.1, 7.2, and 8.3 put π/6 and 5π/6 at the same y — at (cos θ, sin θ), not
+  // on their ticks — and set "1" and "−1" beside them on the x-axis row.
+  const c = (deg) => Math.cos(deg * Math.PI / 180).toFixed(3), s = (deg) => Math.sin(deg * Math.PI / 180).toFixed(3);
+  assert.deepEqual(handTicks('{"ariaLabel":"The unit circle with special angles.","xMin":-1.5,"xMax":1.5,"yMin":-1.5,"yMax":1.5,'
+    + '"circles":[{"at":[0,0],"r":1}],"texts":['
+    + `{"at":[${c(30)},${s(30)}],"text":"π/6"},{"at":[${c(150)},${s(150)}],"text":"5π/6"},`
+    + `{"at":[${c(210)},${s(210)}],"text":"7π/6"},{"at":[${c(330)},${s(330)}],"text":"11π/6"},`
+    + '{"at":[0.05,1.1],"text":"π/2"},{"at":[0.05,-1.1],"text":"3π/2"},'
+    + '{"at":[1.05,0],"text":"1"},{"at":[-1.05,0],"text":"−1"},{"at":[3.14,0],"text":"π"}]}'), []);
+});
+
+test('figure-hand-ticks: three short segments straddling an axis are hand-drawn tick marks', () => {
+  const ticks = [1.5708, 3.1416, 4.7124].map((x) => `{"from":[${x},-0.15],"to":[${x},0.15]}`).join(',');
+  const errors = handTicks(`{${SINE},"segments":[${ticks}]}`);
+  assert.equal(errors.length, 1, errors.join('; '));
+  assert.match(errors[0], /3 segments are short tick marks straddling the x-axis \(at x = 1\.571, 3\.142, 4\.712\) — hand-drawn tick marks: the engine draws ticks/);
+  // two marks, or longer strokes, are something else
+  assert.deepEqual(handTicks(`{${SINE},"segments":[{"from":[1,-0.15],"to":[1,0.15]},{"from":[2,-0.15],"to":[2,0.15]},{"from":[3,-1],"to":[3,1]}]}`), []);
+  // the engine's own π ticks pass clean
+  assert.deepEqual(lintHugo(APFIG('graph', `{${SINE.replace('"tickLabels":"y"', '"tickLabels":true,"xTickFormat":"pi","xTickStep":0.25')}}`), SECTION)
+    .errors.filter((e) => e.includes('apfigure')), []);
+});
+
 test('a label the engine cannot draw is rejected, not dropped in silence', () => {
   // Precalculus 3.2 carried eight parabolas whose `label` named the equation
   // the author meant printed beside the curve. `buildGraph` labels only lines,
@@ -2479,6 +2526,11 @@ test('spec-JSON graph options lint clean, and a prerendered <svg> option is refu
   // closed — an <svg> option now fails the lint (and the template errorf's).
   const legacy = lintHugo(MC_GRAPH([LINE_SPEC, LEGACY_SVG]), SECTION).errors;
   assert(legacy.some((e) => e.includes('option 1: must be a graph-core spec JSON object — prerendered <svg> options are no longer accepted')), legacy.join('; '));
+});
+
+test('figure-hand-ticks reads a mode="graph" option spec like an apfigure body', () => {
+  assert(lintHugo(MC_GRAPH([LINE_SPEC, `{${SINE},"texts":[{"at":[1.5708,-1.5],"text":"π/2"},{"at":[3.1416,-1.5],"text":"π"}]}`]), SECTION)
+    .errors.some((e) => e.includes('option 1: figure-hand-ticks: 2 texts entries (π/2, π)')));
 });
 
 test('a spec-JSON graph option is validated like an apfigure body', () => {

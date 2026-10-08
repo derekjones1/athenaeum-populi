@@ -156,3 +156,45 @@ row needs relocation, since the halo alone leaves the row struck through
 (3.7's $1/x$). The re-review tracker's four Open notes on this (Precalculus 1,
 6, 7, 8) closed with it; 7.4's and 8.8's hand-drawn ticks and 8.3/8.4's grids
 were re-authored.
+
+## Figure engine: π ticks, the conversion queue, and number lines (October 7, 2026)
+
+A census of the 326 inline `<svg>` figures the four math books still carried
+(all authored July 21, 2026, before the engine existed) split them into 18
+legacy `data-spec` divs, 171 hand SVGs inside bare `ap-figure` divs, and 137
+bare SVGs in no wrapper that `figures:status` had never counted. By engine
+fit: about a hundred were pictorial (counters, base-10 blocks, geoboards,
+factor trees, fraction circles, percent grids, bar charts, function
+machines, mapping ovals, balance scales), about seventy number lines, and the
+rest coordinate graphs and plain geometry. Derek's decision: the legacy
+figures go through the converter (18, one command, 0 investigations), the
+number lines through a new converter, the pictorial figures stay hand SVG
+and leave the queue, and the graphs and geometry become re-review rows after
+the Precalculus rows (`docs/re-review/README.md`, "Figure conversion rows").
+
+The same day closed the π tick gap the October 6 entry left open. 61 graph
+specs on 9 pages (6.1 alone 21) faked π ticks with hand `texts` below the
+axis and `tickLabels:"y"` — at the 13 px label size, at author-chosen
+offsets, outside the knockout, and read by the layout checker as full-size
+labels, which is why authors had pushed them below the curve's trough —
+and 13 of them hand-drew the tick marks as `segments`. `xTickFormat` /
+`yTickFormat` (`'pi'`, `'fraction'`) landed in `graph-core.mjs`: on a π axis
+the tick and grid steps are in units of π and the step is snapped once to
+the nearest n/d with d ≤ 64 (so a decimal `0.166667` is exactly π/6 and the
+400th tick still prints exactly); every tick is k·n/d. A `figure-hand-ticks`
+lint error refuses a row or column of `texts` that spell tick values at
+their positions (two for π, three for plain numbers; unit-circle angle
+labels at (cos θ, sin θ) are not at their values and pass) and three short
+`segments` straddling an axis. The 61 specs were re-authored by a parent
+script (step = rational gcd of the hand labels), three IA 3.6 waves drawn on
+a π/2-unit axis were rescaled to radians by hand, and 7.5's sixths figure
+went to thirds because twelve π/6 labels collide at any width the page can
+show. `figures:status` now counts every inline `<svg>`, wrapped or bare, and
+reports `data-pictorial` ones as kept. The number-line converter
+(`figures:numberlines`) recovers a `numberline` spec from the hand SVG's
+geometry and writes it only when the rebuilt spec reproduces the drawing's
+tick labels, marker glyph and position, shade, points, and title; its first
+pass exposed that the spec checker had no 'bracket on axis' exemption (the
+inline pass had one), closed with a test, and two builder extensions it
+measured — paren/bracket interval ends and a decimal tick step with
+unlabelled minor ticks — followed in the same session.

@@ -421,6 +421,86 @@ test('number-line intervals mark included endpoints solid and validate their bou
   assert.throws(() => buildNumberLine({ min: 0, max: 5, intervals: [{ from: 1, fromType: 'hollow' }] }), /open.*closed/);
 });
 
+const nlTicks = (out) => out.els.filter((e) => e.tag === 'line' && e.attrs.strokeWidth === '1.5' && e.attrs.x1 === e.attrs.x2);
+const nlLabels = (out) => out.els.filter((e) => e.tag === 'text' && e.attrs.fontSize === '12').map((e) => e.text);
+
+test('number-line paren and bracket interval ends draw the interval-notation glyph', () => {
+  // (−2, 1]: the glyph sits on the axis exactly as a marker's does, the
+  // stretch runs from glyph to glyph, and only the paren loses its tick
+  const out = buildNumberLine({
+    min: -3, max: 3, ariaLabel: '−2 < x ≤ 1.',
+    intervals: [{ from: -2, fromType: 'paren', to: 1, toType: 'bracket' }],
+  });
+  // X(v) = 28 + (v + 3) * 44
+  const glyphs = out.els.filter((e) => e.tag === 'text' && e.attrs.fontSize === '22');
+  assert.deepEqual(glyphs.map((g) => [g.text, g.attrs.x, g.attrs.y, g.attrs.fontWeight]), [['(', '72', '37', '600'], [']', '204', '37', '600']]);
+  assert.deepEqual(heavy(out), [[72, 204]], 'the stretch runs from the glyph positions, not inset');
+  assert.equal(out.els.filter((e) => e.tag === 'circle').length, 0, 'glyph ends draw no circle');
+  const tickXs = nlTicks(out).map((t) => t.attrs.x1);
+  assert.ok(!tickXs.includes('72'), 'no tick under the paren');
+  assert.ok(tickXs.includes('204'), 'the bracket keeps its tick');
+  // the two-ray form: (−∞, −1] ∪ (2, ∞)
+  const rays = buildNumberLine({
+    min: -3, max: 3, ariaLabel: 'x ≤ −1 or x > 2.',
+    intervals: [{ to: -1, toType: 'bracket' }, { from: 2, fromType: 'paren' }],
+  });
+  assert.deepEqual(rays.els.filter((e) => e.attrs.fontSize === '22').map((g) => g.text), [']', '(']);
+  assert.deepEqual(heavy(rays), [[16, 116], [248, 304]]);
+});
+
+test('a tenths number line labels every tick with one decimal', () => {
+  const out = buildNumberLine({ min: 0, max: 1, step: 0.1, ariaLabel: 'Tenths.', marker: { at: 0.3, type: 'paren' }, shade: 'right' });
+  assert.deepEqual(nlLabels(out), ['0.0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1.0']);
+  // 0.1 * 3 is 0.30000000000000004: the hollow comparison is within 1e-9
+  assert.equal(nlTicks(out).length, 10, 'the tick under the paren at 0.3 is skipped');
+  assert.ok(nlTicks(out).every((t) => Number(t.attrs.y2) - Number(t.attrs.y1) === 12), 'every labelled tick is a major tick');
+  assert.equal(out.els.find((e) => e.text === '(').attrs.x, String(28 + 0.3 * 264));
+});
+
+test('a hundredths number line labelled every ten draws short minor ticks between', () => {
+  const out = buildNumberLine({ min: -1, max: 0, step: 0.01, labelEvery: 10, ariaLabel: 'Hundredths.' });
+  assert.deepEqual(nlLabels(out), ['−1.00', '−0.90', '−0.80', '−0.70', '−0.60', '−0.50', '−0.40', '−0.30', '−0.20', '−0.10', '0.00'],
+    'two decimals from the step, U+2212 minus, and no −0.00');
+  const ticks = nlTicks(out);
+  assert.equal(ticks.length, 101);
+  const lengths = ticks.map((t) => Number(t.attrs.y2) - Number(t.attrs.y1));
+  assert.equal(lengths.filter((l) => l === 12).length, 11, 'labelled ticks keep ±6');
+  assert.equal(lengths.filter((l) => l === 8).length, 90, 'minor ticks are ±4');
+  assert.deepEqual(nlLabels(buildNumberLine({ min: 2.7, max: 2.8, step: 0.01, ariaLabel: 'x' })),
+    ['2.70', '2.71', '2.72', '2.73', '2.74', '2.75', '2.76', '2.77', '2.78', '2.79', '2.80']);
+  assert.deepEqual(nlLabels(buildNumberLine({ min: -12, max: 12, step: 4, ariaLabel: 'x' })),
+    ['−12', '−8', '−4', '0', '4', '8', '12'], 'an integer step on integer ends prints plain');
+});
+
+test('the default step leaves an integer number line byte-for-byte as it was', () => {
+  // Frozen October 6, 2026, before `step` existed: every number line in the
+  // corpus renders through this path, so the default must not move a pixel.
+  const spec = { ariaLabel: 'A number line from 70 to 80 with a dot at 76.', min: 70, max: 80, points: [{ at: 76 }] };
+  const tick = (x, v) => `  <line x1="${x}" y1="24" x2="${x}" y2="36" stroke="currentColor" stroke-width="1.5"/>\n`
+    + `  <text x="${x}" y="55" text-anchor="middle" font-size="12" fill="currentColor">${v}</text>`;
+  const xs = ['28', '54.4', '80.8', '107.2', '133.6', '160', '186.4', '212.8', '239.2', '265.6', '292'];
+  const expected = [
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 76" width="320" height="76" font-family="Helvetica, Arial, sans-serif">',
+    '  <line x1="16" y1="30" x2="304" y2="30" stroke="currentColor" stroke-width="1.5"/>',
+    '  <path d="M 24 23 L 16 30 L 24 37" fill="none" stroke="currentColor" stroke-width="1.5"/>',
+    '  <path d="M 296 23 L 304 30 L 296 37" fill="none" stroke="currentColor" stroke-width="1.5"/>',
+    ...xs.map((x, i) => tick(x, 70 + i)),
+    '  <circle cx="186.4" cy="30" r="4" fill="currentColor"/>',
+    '</svg>',
+  ].join('\n');
+  assert.equal(toSvgString(spec, { builder: buildNumberLine, color: null }), expected);
+  assert.equal(toSvgString({ ...spec, step: 1 }, { builder: buildNumberLine, color: null }), expected, 'an explicit step: 1 is the default');
+});
+
+test('number-line step and labelEvery validate, naming what is wrong', () => {
+  assert.throws(() => buildNumberLine({ min: 0, max: 1, step: 0.3, ariaLabel: 'x' }), /step 0\.3 does not divide 0\.\.1/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 1, step: 0, ariaLabel: 'x' }), /step must be a positive number/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 1, step: 0.1, labelEvery: 0, ariaLabel: 'x' }), /labelEvery must be a positive integer/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 4, labelEvery: 1.5, ariaLabel: 'x' }), /labelEvery must be a positive integer/);
+  assert.throws(() => buildNumberLine({ min: 0.5, max: 4, ariaLabel: 'x' }), /integer min < max/, 'without a step the ends stay integers');
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, intervals: [{ to: 2, toType: 'brace' }] }), /'open', 'closed', 'paren', or 'bracket'/);
+});
+
 test('figure segment arrows trim the shaft and point at the true target', () => {
   const out = buildFigure({
     unit: 40,
@@ -1452,4 +1532,127 @@ test('faint segments draw in the gridline style between their endpoints, refuse 
   const withSolid = buildGraph({ ariaLabel: 't', points: [{ at: [1, 1], label: 'P' }], segments: [flat] });
   assert.deepEqual(label(withFaint), label(bare));
   assert.notDeepEqual(label(withSolid), label(bare), 'the same segment at full weight is an obstacle');
+});
+
+// ---------------------------------------------------------------------------
+// Tick formats (October 6, 2026): a trig axis counts in π and a small-step
+// axis in fractions. Precalculus 6.1 and 7.6 faked those digits with hand
+// `texts` rows — 13px labels at author-chosen offsets, outside the knockout,
+// never relocated — because the engine printed decimals only.
+
+/** the x tick digits (centred under their ticks), in axis order */
+const xDigitTexts = (out) => digitEls(out).filter((d) => d.attrs.textAnchor === 'middle').map((d) => d.text);
+const yDigitTexts = (out) => digitEls(out).filter((d) => d.attrs.textAnchor !== 'middle').map((d) => d.text);
+const PI_AXIS = { ariaLabel: 't', yMin: -1.9, yMax: 1.8, grid: false, tickLabels: true, xTickFormat: 'pi' };
+
+test("xTickFormat 'pi' ticks in units of π and prints reduced fractions of π on the true positions", () => {
+  const out = buildGraph({ ...PI_AXIS, xMin: -0.4, xMax: 6.8, xTickStep: 0.25, unit: 45 });
+  const xs = digitEls(out).filter((d) => d.attrs.textAnchor === 'middle');
+  assert.deepEqual(xs.map((d) => d.text), ['π/4', 'π/2', '3π/4', 'π', '5π/4', '3π/2', '7π/4', '2π']);
+  xs.forEach((d, i) => {
+    assert.equal(+d.attrs.x, +out.map.toPx([(i + 1) * Math.PI / 4, 0])[0].toFixed(1), `${d.text} sits on its tick`);
+    assert.equal(d.attrs.fontSize, String(Math.min(...digitEls(out).map((e) => +e.attrs.fontSize))), 'a π digit is tick-size');
+  });
+  // the y axis keeps its decimal digits
+  assert.deepEqual(yDigitTexts(out), ['−1', '1']);
+});
+
+test("a 'pi' axis signs its negatives and drops the origin's zero exactly as a decimal axis does", () => {
+  const halves = xDigitTexts(buildGraph({ ...PI_AXIS, xMin: -7.3, xMax: 7.3, xTickStep: 0.5, unit: 30 }));
+  for (const t of ['−2π', '−3π/2', '−π', '−π/2', 'π/2', 'π', '3π/2', '2π']) assert.ok(halves.includes(t), t);
+  assert.ok(!halves.includes('0'), 'the axes cross at the origin');
+  assert.deepEqual(xDigitTexts(buildGraph({ ...PI_AXIS, xMin: -14.6, xMax: 14.6, xTickStep: 2, unit: 10 })),
+    ['−4π', '−2π', '2π', '4π']);
+  // axes that do not cross at the origin keep the zero tick, printed 0
+  assert.deepEqual(xDigitTexts(buildGraph({ ...PI_AXIS, yMin: 1, yMax: 3, xMin: -1, xMax: 7, xTickStep: 0.5, unit: 30 })),
+    ['0', 'π/2', 'π', '3π/2', '2π']);
+});
+
+test("xTickFormat 'fraction' keeps plain-unit positions and prints reduced fractions", () => {
+  const spec = { ariaLabel: 't', xMin: 0, xMax: 0.1, yMin: -1, yMax: 1, xUnit: 2000, yUnit: 40, grid: false, tickLabels: 'x', xTickStep: 0.025 };
+  const out = buildGraph({ ...spec, xTickFormat: 'fraction' });
+  assert.deepEqual(xDigitTexts(out), ['1/40', '1/20', '3/40', '1/10']);
+  const decimal = buildGraph(spec);
+  assert.deepEqual(digitEls(out).map((d) => d.attrs.x), digitEls(decimal).map((d) => d.attrs.x), 'same positions as the decimal axis');
+  // integers stay plain and negatives take the math minus; grouping never applies
+  assert.deepEqual(xDigitTexts(buildGraph({ ...spec, xMin: -2, xMax: 2, xUnit: 40, xTickStep: 0.5, xTickFormat: 'fraction' })),
+    ['−2', '−3/2', '−1', '−1/2', '1/2', '1', '3/2', '2']);
+});
+
+test("yTickFormat 'pi' labels the y axis the same way, and a shared tickStep is scaled only on the π axis", () => {
+  const out = buildGraph({ ariaLabel: 't', xMin: -2, xMax: 2, yMin: -7.3, yMax: 7.3, unit: 30, grid: false, tickLabels: true, tickStep: 0.5, yTickFormat: 'pi' });
+  assert.deepEqual(yDigitTexts(out), ['−2π', '−3π/2', '−π', '−π/2', 'π/2', 'π', '3π/2', '2π']);
+  const ys = digitEls(out).filter((d) => d.attrs.textAnchor !== 'middle');
+  assert.equal(+ys[0].attrs.y, +(out.map.toPx([0, -2 * Math.PI])[1] + 4).toFixed(1), '−2π sits on its tick');
+  assert.deepEqual(xDigitTexts(out), ['−2', '−1.5', '−1', '−0.5', '0.5', '1', '1.5', '2'], 'the x axis keeps plain half-unit steps');
+});
+
+test("a 'pi' axis scales its grid step too, and the grid's thinning still lands on the π ticks", () => {
+  const out = buildGraph({ ariaLabel: 't', xMin: -7, xMax: 7, yMin: -2, yMax: 2, unit: 30, grid: true, xGridStep: 0.5, xTickFormat: 'pi' });
+  const { grid } = gridAndTicks(out);
+  const expected = [-4, -3, -2, -1, 1, 2, 3, 4].map((k) => +out.map.toPx([k * Math.PI / 2, 0])[0].toFixed(1));
+  assert.deepEqual(grid.x, expected, 'vertical gridlines at k·π/2, less the y-axis');
+  // π/4 at 10px per unit is 7.9px — too dense — so the grid thins to the
+  // smallest multiple that clears 10px AND divides the π tick step: π/2.
+  const thinOut = buildGraph({
+    ariaLabel: 't', xMin: -7, xMax: 7, yMin: -2, yMax: 2, unit: 10, grid: true,
+    xGridStep: 0.25, tickLabels: 'x', xTickStep: 1, xTickFormat: 'pi',
+  });
+  const thin = gridAndTicks(thinOut);
+  assert.deepEqual(thin.grid.x, [-4, -3, -2, -1, 1, 2, 3, 4].map((k) => +thinOut.map.toPx([k * Math.PI / 2, 0])[0].toFixed(1)));
+  for (const tick of thin.ticks.x) assert.ok(thin.grid.x.includes(tick), `the π tick at ${tick}px has a gridline`);
+});
+
+test('a π digit is a tick digit: knocked out, relocated off a crossing stroke, masked', () => {
+  // A solid segment crosses the digit π below the axis; the room above it is
+  // empty, so it moves there like any crossed digit. Its neighbours stay.
+  const spec = {
+    ariaLabel: 't', xMin: -0.5, xMax: 6.8, yMin: -1.5, yMax: 1.5, unit: 40, grid: false,
+    tickLabels: 'x', xTickFormat: 'pi', xTickStep: 0.5, segments: [{ from: [Math.PI, -1.2], to: [Math.PI, -0.1] }],
+  };
+  const out = buildGraph(spec);
+  const digits = digitEls(out);
+  assert.equal(out.knockout.texts.length, digits.length);
+  digits.forEach((d, i) => assert.equal(out.knockout.texts[i], d, 'the SAME objects as in els'));
+  const sides = digitSides(out).x;
+  assert.deepEqual(sides, { 'π/2': 'below', π: 'above', '3π/2': 'below', '2π': 'below' });
+  const halos = [...toSvgString(spec).matchAll(/<mask [^]*?<\/mask>/g)][0][0];
+  assert.match(halos, />π<\/text>/, 'the π digit has its glyph halo');
+  assert.match(halos, />3π\/2<\/text>/);
+});
+
+test('tick formats reject anything but pi and fraction, and a value no small fraction states', () => {
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: true, xTickFormat: 'degrees' }), /xTickFormat must be 'pi', 'fraction', or omitted/);
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: true, yTickFormat: 'π' }), /yTickFormat must be 'pi', 'fraction', or omitted/);
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: true, xTickFormat: null }), /xTickFormat/);
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: 'x', xTickFormat: 'fraction', xTickStep: 0.0123, xMin: 0, xMax: 0.05, xUnit: 2000 }),
+    /denominator of 64 or less/);
+  assert.doesNotThrow(() => buildGraph({ ...GRID, tickLabels: true, xTickFormat: undefined, yTickFormat: 'fraction' }));
+});
+
+test('a decimal step on a π or fraction axis snaps once to its fraction, and no tick drifts with k', () => {
+  // Content can write π/6 only as 0.166667; k · 0.166667 is off π-multiples
+  // by 3.3e-7·k, so the step is rationalized once and every tick is k × 1/6.
+  // (−0.4..6.5: a −0.75..7.05 window would also hold −π/6 and 13π/6)
+  const sixths = buildGraph({ ...PI_AXIS, xMin: -0.4, xMax: 6.5, xTickStep: 0.166667, unit: 40 });
+  assert.deepEqual(xDigitTexts(sixths),
+    ['π/6', 'π/3', 'π/2', '2π/3', '5π/6', 'π', '7π/6', '4π/3', '3π/2', '5π/3', '11π/6', '2π'], 'the origin zero is skipped');
+  digitEls(sixths).filter((d) => d.attrs.textAnchor === 'middle').forEach((d, i) => {
+    assert.equal(+d.attrs.x, +sixths.map.toPx([(i + 1) * Math.PI / 6, 0])[0].toFixed(1), `${d.text} sits at exactly ${i + 1}π/6`);
+  });
+  assert.deepEqual(xDigitTexts(buildGraph({ ...PI_AXIS, xMin: -0.75, xMax: 7.05, xTickStep: 0.333333, unit: 40 })),
+    ['π/3', '2π/3', 'π', '4π/3', '5π/3', '2π']);
+  // far from the origin the 400th sixth is still exact: 0.166667 · 400 would be 66.6668
+  assert.deepEqual(xDigitTexts(buildGraph({ ...PI_AXIS, xMin: 208.9, xMax: 209.8, xTickStep: 0.166667, unit: 40, yMin: 1, yMax: 3 })),
+    ['133π/2', '200π/3']);
+  // the snapped grid on a π axis lands on the snapped ticks
+  const gridded = gridAndTicks(buildGraph({ ...PI_AXIS, grid: true, xMin: -0.75, xMax: 7.05, xTickStep: 0.333333, xGridStep: 0.166667, unit: 40 }));
+  for (const tick of gridded.ticks.x) assert.ok(gridded.grid.x.includes(tick), `the π/3 tick at ${tick}px has a gridline`);
+  // a step already exact is untouched
+  assert.deepEqual(xDigitTexts(buildGraph({
+    ariaLabel: 't', xMin: 0, xMax: 0.1, yMin: -1, yMax: 1, xUnit: 2000, yUnit: 40, grid: false, tickLabels: 'x', xTickStep: 0.025, xTickFormat: 'fraction',
+  })), ['1/40', '1/20', '3/40', '1/10']);
+  // a step no fraction with d ≤ 64 states within 1e-5 still throws, naming the step
+  assert.throws(() => buildGraph({ ...PI_AXIS, xMin: -0.75, xMax: 7.05, xTickStep: 0.1667 }), /xTickStep 0\.1667 on a 'pi' axis is not within 1e-5/);
+  assert.throws(() => buildGraph({ ...PI_AXIS, grid: true, xMin: -0.75, xMax: 7.05, xTickStep: 0.5, xGridStep: 0.0123 }), /xGridStep 0\.0123/);
 });

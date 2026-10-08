@@ -388,7 +388,7 @@ the process of approximating a number to a given place value.
 
 ### Model whole numbers
 
-<svg viewBox="0 0 560 100" role="img" aria-label="Base-10 blocks: five squares of one hundred blocks each, ten blocks wide and ten blocks tall; six horizontal rods of ten blocks each; and one individual block." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 100" role="img" aria-label="Base-10 blocks: five squares of one hundred blocks each, ten blocks wide and ten blocks tall; six horizontal rods of ten blocks each; and one individual block." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-hundred" fill="none" stroke="currentColor" stroke-width="0.6">
     <line x1="7" y1="0" x2="7" y2="70" />
@@ -445,7 +445,7 @@ the process of approximating a number to a given place value.
   hint="Each large square is worth 100, each rod is worth 10, and each small block is worth 1 — total the three kinds, then add."
 >}}
 
-<svg viewBox="0 0 560 100" role="img" aria-label="Base-10 blocks: four squares of one hundred blocks each, ten blocks wide and ten blocks tall, and seven individual blocks." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 100" role="img" aria-label="Base-10 blocks: four squares of one hundred blocks each, ten blocks wide and ten blocks tall, and seven individual blocks." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-hundred-b" fill="none" stroke="currentColor" stroke-width="0.6">
     <line x1="7" y1="0" x2="7" y2="70" />

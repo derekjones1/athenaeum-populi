@@ -102,7 +102,7 @@ workspace must equal the right side, but the counters in the envelopes are
 "hidden." To find how many are in each envelope, separate the $6$
 counters into $2$ equal groups: $6 \div 2 = 3$ counters in each envelope.
 
-<svg viewBox="0 0 260 110" role="img" aria-label="Two identical envelopes on the left, each holding an unknown number of counters, balanced against six loose counters on the right. The equation is 2x = 6." style="max-width: 260px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 110" role="img" aria-label="Two identical envelopes on the left, each holding an unknown number of counters, balanced against six loose counters on the right. The equation is 2x = 6." style="max-width: 260px; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="80" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="90" stroke="currentColor" stroke-width="1.5" />
   <rect x="25" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -312,7 +312,7 @@ yes
 
 ### Model the Division Property of Equality
 
-<svg viewBox="0 0 260 150" role="img" aria-label="Three identical envelopes stacked on the left side of a divided box, each holding an unknown number of counters, and six loose counters arranged in two columns of three on the right side." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 150" role="img" aria-label="Three identical envelopes stacked on the left side of a divided box, each holding an unknown number of counters, and six loose counters arranged in two columns of three on the right side." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="115" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="125" stroke="currentColor" stroke-width="1.5" />
   <rect x="25" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -334,7 +334,7 @@ yes
   hint="Each envelope holds $x$ counters, so set the number of envelopes times $x$ equal to the number of counters, then divide both sides by the number of envelopes."
 >}}
 
-<svg viewBox="0 0 260 160" role="img" aria-label="Two identical envelopes on the left side of a divided box, each holding an unknown number of counters, and eight loose counters arranged in two columns of four on the right side." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 160" role="img" aria-label="Two identical envelopes on the left side of a divided box, each holding an unknown number of counters, and eight loose counters arranged in two columns of four on the right side." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="125" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="135" stroke="currentColor" stroke-width="1.5" />
   <rect x="25" y="42" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />

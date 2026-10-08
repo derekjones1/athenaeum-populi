@@ -20,12 +20,20 @@
  *   - hand-written inline <svg> figures, read from the markup itself
  *     (svg-geometry.mjs) and named page:line — the L<line> that
  *     render-page-figures.mjs names its PNG. Their overlaps fail the run
- *     (INLINE_SVG_GATES, promoted September 28, 2026).
+ *     (INLINE_SVG_GATES, promoted September 28, 2026). EVERY inline svg is
+ *     read here, bare or wrapped, `data-pictorial` included.
  *
  * `--status` skips the geometry entirely and prints the figure-engine
  * CONVERSION QUEUE instead: per page, whether its figures are all
- * spec-first (`converted` — skip it), still legacy `data-spec` divs
- * (`TODO`), or a mix (`mixed`). The state is read from the content itself —
+ * spec-first (`converted` — skip it), still legacy `data-spec` divs or
+ * hand-written SVG (`TODO`), or a mix (`mixed`). The queue counts every
+ * `<svg>` open tag on the page — in an `ap-figure` div or bare in no wrapper
+ * — except the frozen render inside a legacy `data-spec` div (already one
+ * `legacy` figure). An `<svg data-pictorial>` (counters, base-10 blocks,
+ * geoboards, factor trees, fraction circles, percent grids, bar charts,
+ * function machines: no engine primitive, kept hand-drawn by decision of
+ * October 7, 2026) is counted apart as `pictorial SVG (kept)` and never
+ * keeps a page off `converted`. The state is read from the content itself —
  * there is no separate ledger to drift — so "convert this chapter" starts
  * with this command and touches only the pages it lists as unconverted.
  *
@@ -40,7 +48,7 @@ import { textBox, arcPoints, svgInk, apply, invert } from './svg-geometry.mjs'
 import { extractRenderables } from './render-page-figures.mjs'
 import { parseCliArgs } from '../lib/cli.mjs'
 import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs'
-import { decodeHtmlEntities, openTagRe, htmlAttribute } from '../lib/html.mjs'
+import { decodeHtmlEntities, openTagRe, openTagSource, htmlAttribute } from '../lib/html.mjs'
 
 let cli
 try {
@@ -244,7 +252,13 @@ function collisions(built) {
   const sizes = texts.map((t) => Number(t.attrs.fontSize))
   const maxSize = Math.max(...sizes, 0)
   const boxes = texts.map((t) => ({ text: t.text, bb: grow(specTextBox(t), NEAR), digit: Number(t.attrs.fontSize) < maxSize }))
-  return overlaps(boxes, strokeSegments(built.els), { tolerate: (t, kind) => t.digit && kind !== 'dashed line' })
+  // A number line's `(` `)` `[` `]` marker is drawn ON its axis by design —
+  // the book's interval-notation convention, the same exemption the inline
+  // pass grants ('bracket on axis') — so the solid axis, its tick, and the
+  // heavy shaded ray through the glyph are not findings. Nothing dashed is
+  // exempt, and no other text is.
+  const tolerate = (t, kind) => (t.digit && kind !== 'dashed line') || (BRACKET.test(t.text) && kind === 'line')
+  return overlaps(boxes, strokeSegments(built.els), { tolerate })
 }
 
 // ---------------------------------------------------------------------------
@@ -352,16 +366,51 @@ function figureSpecs(src) {
   for (const m of src.matchAll(divRe)) {
     specs.push({ kind: null, json: decodeHtmlEntities(m[1] ?? m[2]), where: 'legacy div', legacy: true })
   }
-  // The oldest form of all: an `ap-figure` div holding hand-written SVG with
-  // no `data-spec` at all. Nothing here can build it, so it is invisible to
-  // every geometry gate — which is exactly why the queue has to count it. A
-  // page carrying one is NOT converted, however many spec-first figures sit
-  // beside it.
-  let unspecced = 0
-  for (const m of src.matchAll(openTagRe('div'))) {
-    if (/class="ap-figure"/.test(m[0]) && !htmlAttribute(m[0], 'data-spec')) unspecced++
+  // The oldest form of all: hand-written SVG with no `data-spec` — in an
+  // `ap-figure` div, or bare in no wrapper at all. Nothing here can build it,
+  // so it is invisible to every geometry gate — which is exactly why the
+  // queue has to count it. A page carrying one is NOT converted, however many
+  // spec-first figures sit beside it. Every `<svg>` open tag is walked, minus
+  // the ones inside a legacy `data-spec` block (the frozen render of a spec
+  // already counted above). An `<svg data-pictorial>` is the exception: a
+  // counter, base-10 block, geoboard, factor tree, fraction circle, percent
+  // grid, bar chart or function machine has no engine primitive and STAYS
+  // hand-drawn by decision, so it is counted apart and never blocks
+  // `converted`. (The overlap gate reads every inline svg regardless.)
+  const legacyBlocks = legacyDivBlocks(src)
+  let handwritten = 0, pictorial = 0
+  for (const m of src.matchAll(openTagRe('svg'))) {
+    if (legacyBlocks.some(([from, to]) => m.index >= from && m.index < to)) continue
+    // present in any form: `data-pictorial`, `data-pictorial=""`, `data-pictorial="true"`
+    if (/(?:^|\s)data-pictorial(?=[\s=>/])/i.test(m[0])) pictorial++
+    else handwritten++
   }
-  return { specs, unspecced }
+  return { specs, handwritten, pictorial }
+}
+
+/**
+ * [from, to) of every legacy `<div class="ap-figure" data-spec=…>` block —
+ * from its open tag to the `</div>` that closes it (nested divs counted). A
+ * block its page never closes ends after the first `</svg>` that follows, so
+ * one malformed figure cannot swallow every svg below it.
+ */
+function legacyDivBlocks(src) {
+  const blocks = []
+  const stack = []
+  for (const m of src.matchAll(new RegExp(`${openTagSource('div')}|</div\\s*>`, 'gi'))) {
+    if (m[0][1] !== '/') {
+      stack.push({ from: m.index, legacy: /class="ap-figure"/.test(m[0]) && !!htmlAttribute(m[0], 'data-spec') })
+    } else {
+      const open = stack.pop()
+      if (open?.legacy) blocks.push([open.from, m.index + m[0].length])
+    }
+  }
+  for (const open of stack) {
+    if (!open.legacy) continue
+    const close = src.indexOf('</svg>', open.from)
+    blocks.push([open.from, close < 0 ? src.length : close + '</svg>'.length])
+  }
+  return blocks
 }
 
 // ---------------------------------------------------------------------------
@@ -370,13 +419,14 @@ if (statusMode) {
   const rows = []
   for (const file of roots.flatMap((root) => walkMarkdown(root))) {
     const src = maskCode(readFileSync(file, 'utf8'))
-    const { specs, unspecced } = figureSpecs(src)
+    const { specs, handwritten, pictorial } = figureSpecs(src)
     const legacy = specs.filter((s) => s.legacy).length
     const specFirst = specs.length - legacy
-    if (!specs.length && !unspecced) continue // no figures — nothing to convert
-    const behind = legacy + unspecced
+    if (!specs.length && !handwritten && !pictorial) continue // no figures — nothing to convert
+    // A pictorial svg is kept hand-drawn by decision: it is never behind.
+    const behind = legacy + handwritten
     const state = behind === 0 ? 'converted' : specFirst === 0 ? 'TODO' : 'mixed'
-    rows.push({ file, specFirst, legacy, unspecced, state })
+    rows.push({ file, specFirst, legacy, handwritten, pictorial, state })
   }
   if (asJson) {
     console.log(JSON.stringify({ pages: rows }, null, 2))
@@ -385,16 +435,21 @@ if (statusMode) {
       const parts = []
       if (r.specFirst) parts.push(`${r.specFirst} spec-first`)
       if (r.legacy) parts.push(`${r.legacy} legacy`)
-      if (r.unspecced) parts.push(`${r.unspecced} hand-written SVG (no spec)`)
+      if (r.handwritten) parts.push(`${r.handwritten} hand-written SVG (no spec)`)
+      if (r.pictorial) parts.push(`${r.pictorial} pictorial SVG (kept)`)
       console.log(`${r.state.padEnd(9)} ${r.file}  (${parts.join(', ')})`)
     }
     const todo = rows.filter((r) => r.state !== 'converted')
-    const unspecced = rows.reduce((n, r) => n + r.unspecced, 0)
+    const handwritten = rows.reduce((n, r) => n + r.handwritten, 0)
+    const pictorial = rows.reduce((n, r) => n + r.pictorial, 0)
     console.log(`\n${rows.length} page(s) with figures: `
-      + `${rows.length - todo.length} converted, ${todo.length} still carrying legacy or pre-spec figures.`)
-    if (unspecced) {
-      console.log(`${unspecced} of those are hand-written SVG with no spec at all — `
+      + `${rows.length - todo.length} converted, ${todo.length} still carrying legacy or hand-written figures.`)
+    if (handwritten) {
+      console.log(`${handwritten} of those are hand-written SVG with no spec at all — `
         + 'reconstruct the spec from the drawing (no data-spec to copy), or extend graph-core if the shape has no primitive.')
+    }
+    if (pictorial) {
+      console.log(`${pictorial} pictorial SVG(s) are kept as hand-drawn by decision (data-pictorial) and are not conversion debt.`)
     }
   }
   process.exit(0)

@@ -28,7 +28,7 @@ each part is one of the three equal parts. The fraction $\tfrac{2}{3}$
 represents two of three equal parts. In the fraction $\tfrac{2}{3}$, the $2$
 is called the **numerator** and the $3$ is called the **denominator**.
 
-<svg viewBox="0 0 300 130" role="img" aria-label="Two circles. The circle on the left is divided into 3 equal wedges, each labeled one third. The circle on the right is divided into 3 equal wedges with 2 of the 3 wedges shaded, representing two thirds." style="max-width: 300px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 300 130" role="img" aria-label="Two circles. The circle on the left is divided into 3 equal wedges, each labeled one third. The circle on the right is divided into 3 equal wedges with 2 of the 3 wedges shaded, representing two thirds." style="max-width: 300px; display: block; margin: 1.5rem auto">
   <circle cx="75" cy="65" r="55" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="75" y1="65" x2="75" y2="10" stroke="currentColor" stroke-width="1.5" />
   <line x1="75" y1="65" x2="27.4" y2="92.5" stroke="currentColor" stroke-width="1.5" />

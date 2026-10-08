@@ -566,7 +566,7 @@ the counting numbers sit inside the whole numbers, which sit inside the
 integers, which sit inside the rational numbers; the rational numbers together
 with the irrational numbers make up the real numbers.
 
-<svg viewBox="0 0 320 300" role="img" aria-label="A diagram of the real number sets, with arrows pointing from each set to the set that contains it: counting numbers (1, 2, 3, …) point to whole numbers (0, 1, 2, 3, …), whole numbers point to integers (…, −2, −1, 0, 1, 2, …), integers point to rational numbers, and rational numbers and irrational numbers both point to real numbers." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 320 300" role="img" aria-label="A diagram of the real number sets, with arrows pointing from each set to the set that contains it: counting numbers (1, 2, 3, …) point to whole numbers (0, 1, 2, 3, …), whole numbers point to integers (…, −2, −1, 0, 1, 2, …), integers point to rational numbers, and rational numbers and irrational numbers both point to real numbers." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <rect x="100" y="8" width="120" height="30" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="160" y="27" text-anchor="middle" font-size="13" fill="currentColor">Real numbers</text>
   <line x1="136" y1="40" x2="95" y2="62" stroke="currentColor" stroke-width="1.5" />
@@ -812,34 +812,9 @@ $0.2$, $0.3$, $0.4$, $0.5$, $0.6$, $0.7$, $0.8$, $0.9$, $1.0$. We write $0$ as
 $0.0$ and $1$ as $1.0$, so that the numbers are consistently in tenths. Finally,
 mark $0.4$ on the number line.
 
-<svg viewBox="0 0 620 76" role="img" aria-label="A number line from 0.0 to 1.0 labeled in steps of 0.1. A point is plotted at 0.4." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,40 30,35 30,45" fill="currentColor" />
-  <polygon points="600,40 590,35 590,45" fill="currentColor" />
-  <line x1="60" y1="35" x2="60" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="60" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.0</text>
-  <line x1="110" y1="35" x2="110" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="110" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.1</text>
-  <line x1="160" y1="35" x2="160" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="160" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.2</text>
-  <line x1="210" y1="35" x2="210" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="210" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.3</text>
-  <line x1="260" y1="35" x2="260" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="260" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.4</text>
-  <line x1="310" y1="35" x2="310" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="310" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.5</text>
-  <line x1="360" y1="35" x2="360" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="360" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.6</text>
-  <line x1="410" y1="35" x2="410" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="410" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.7</text>
-  <line x1="460" y1="35" x2="460" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="460" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.8</text>
-  <line x1="510" y1="35" x2="510" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="510" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.9</text>
-  <line x1="560" y1="35" x2="560" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="560" y="61" text-anchor="middle" font-size="11" fill="currentColor">1.0</text>
-  <circle cx="260" cy="40" r="4" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 0.0 to 1.0 labeled in steps of 0.1. A point is plotted at 0.4.","min":0,"max":1,"step":0.1,"points":[{"at":0.4}]}
+{{< /apfigure >}}
 
 (b) The decimal $-0.74$ is equivalent to $-\tfrac{74}{100}$, so it is located
 between $0$ and $-1$. On a number line, mark off the hundredths in the interval

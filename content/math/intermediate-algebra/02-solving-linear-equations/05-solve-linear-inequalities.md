@@ -33,38 +33,9 @@ upper end to the solution to this inequality. In interval notation, we
 express $x>3$ as $(3,\infty)$. The symbol $\infty$ is read as **“infinity.”**
 It is not an actual number.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 5 to 5 with a parenthesis at 3 and shading to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="239.2" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; 3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 5 to 5 with a parenthesis at 3 and shading to the right.","min":-5,"max":5,"title":"x > 3","marker":{"at":3,"type":"paren"},"shade":"right"}
+{{< /apfigure >}}
 
 We use the left parenthesis symbol, $($, to show that the endpoint of the
 inequality is not included. The left bracket symbol, $[$, shows that the
@@ -79,38 +50,9 @@ There is no lower end to those numbers. We write $x\leq1$ in interval
 notation as $(-\infty,1]$. The symbol $-\infty$ is read as “negative
 infinity.”
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 5 to 5 with a bracket at 1 and shading to the left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="186.4" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="186.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="186.4" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 1</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 5 to 5 with a bracket at 1 and shading to the left.","min":-5,"max":5,"title":"x ≤ 1","marker":{"at":1,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 The notation for inequalities on a number line and in interval notation use
 the same symbols to express the endpoints of intervals.
@@ -122,70 +64,25 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
 
 (a) Shade to the right of $-3$, and put a bracket at $-3$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 4 to negative 1 with a bracket at negative 3 and shading right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="116" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <text x="116" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="116" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ −3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 4 to negative 1 with a bracket at negative 3 and shading right.","min":-4,"max":-1,"title":"x ≥ −3","marker":{"at":-3,"type":"bracket"},"shade":"right"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $[-3,\infty)$.
 
 (b) Shade to the left of $2.5$ and put a parenthesis at $2.5$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from 0 to 3 with a parenthesis at 2.5 and shading left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="248" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="248" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
-  <text x="248" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2.5</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from 0 to 3 with a parenthesis at 2.5 and shading left.","min":0,"max":3,"title":"x < 2.5","marker":{"at":2.5,"type":"paren"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(-\infty,2.5)$.
 
 (c) Shade to the left of $-\tfrac35$, and put a bracket at $-\tfrac35$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 2 to 1 with a bracket at negative three fifths and shading left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="151.2" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <text x="151.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="151.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −3/5</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 2 to 1 with a bracket at negative three fifths and shading left.","min":-2,"max":1,"title":"x ≤ −3/5","marker":{"at":-0.6,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $\left(-\infty,-\tfrac35\right]$.
 
@@ -346,24 +243,9 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from 0 to 3 with a bracket at nine eighths and shading left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="127" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="127" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="127" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 9/8</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from 0 to 3 with a bracket at nine eighths and shading left.","min":0,"max":3,"title":"x ≤ 9/8","marker":{"at":1.125,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $\left(-\infty,\tfrac98\right]$.
 
@@ -377,24 +259,9 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from 4 to 7 with a parenthesis at 6 and shading left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="204" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">7</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
-  <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">y &lt; 6</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from 4 to 7 with a parenthesis at 6 and shading left.","min":4,"max":7,"title":"y < 6","marker":{"at":6,"type":"paren"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(-\infty,6)$.
 
@@ -409,24 +276,9 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 26 to negative 23 with a parenthesis at negative 25 and shading right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="116" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−26</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−25</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−24</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−23</text>
-  <text x="116" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="116" y="16" text-anchor="middle" font-size="14" fill="currentColor">z &gt; −25</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 26 to negative 23 with a parenthesis at negative 25 and shading right.","min":-26,"max":-23,"title":"z > −25","marker":{"at":-25,"type":"paren"},"shade":"right"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(-25,\infty)$.
 
@@ -452,24 +304,9 @@ the inequality reverses.
 
 $$\frac{-13m}{-13}\leq\frac{65}{-13},\qquad m\leq-5.$$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 7 to negative 4 with a bracket at negative 5 and shading left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="204" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−7</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">m ≤ −5</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 7 to negative 4 with a bracket at negative 5 and shading left.","min":-7,"max":-4,"title":"m ≤ −5","marker":{"at":-5,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(-\infty,-5]$.
 
@@ -478,24 +315,9 @@ the inequality reverses.
 
 $$-2\left(\frac n{-2}\right)\leq-2(8),\qquad n\leq-16.$$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 18 to negative 15 with a bracket at negative 16 and shading left." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="204" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−18</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−17</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−16</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−15</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">n ≤ −16</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 18 to negative 15 with a bracket at negative 16 and shading left.","min":-18,"max":-15,"title":"n ≤ −16","marker":{"at":-16,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(-\infty,-16]$.
 
@@ -527,24 +349,9 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 5 to negative 2 with a bracket at negative seventeen fifths and shading right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="168.8" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <text x="168.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="168.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">y ≥ −17/5</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 5 to negative 2 with a bracket at negative seventeen fifths and shading right.","min":-5,"max":-2,"title":"y ≥ −17/5","marker":{"at":-3.4,"type":"bracket"},"shade":"right"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $\left[-\tfrac{17}{5},\infty\right)$.
 
@@ -581,24 +388,9 @@ $$
 \end{array}
 $$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from 0 to 3 with a parenthesis at 2 and shading right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="204" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="116" y1="39" x2="116" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="116" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="204" y1="39" x2="204" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">p &gt; 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from 0 to 3 with a parenthesis at 2 and shading right.","min":0,"max":3,"title":"p > 2","marker":{"at":2,"type":"paren"},"shade":"right"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $(2,\infty)$.
 
@@ -700,26 +492,9 @@ and write the solution in interval notation.
 
 $$x-27+27\geq48+27,\qquad x\geq75.$$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from 73 to 77 with a bracket at 75 and shading right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="160" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">73</text>
-  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">74</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">75</text>
-  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">76</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">77</text>
-  <text x="160" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ 75</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from 73 to 77 with a bracket at 75 and shading right.","min":73,"max":77,"title":"x ≥ 75","marker":{"at":75,"type":"bracket"},"shade":"right"}
+{{< /apfigure >}}
 
 In interval notation, the solution is $[75,\infty)$.
 

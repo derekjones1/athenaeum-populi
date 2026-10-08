@@ -49,7 +49,7 @@ represents $10$. Let's model the expression we just considered, $7 - 3$. We
 start with $7$ ones blocks, circle $3$ of them to show we are taking them
 away, and count what remains:
 
-<svg viewBox="0 0 560 70" role="img" aria-label="Seven small squares in a row. The first three are circled to show they are taken away, leaving four squares." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 70" role="img" aria-label="Seven small squares in a row. The first three are circled to show they are taken away, leaving four squares." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="20" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="470" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
   <ellipse cx="110" cy="35" rx="108" ry="31" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
@@ -255,7 +255,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
 
 ### Model subtraction of whole numbers
 
-<svg viewBox="0 0 445 70" role="img" aria-label="Six single base-10 blocks in a row. The first three are circled to show that they are being taken away." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 445 70" role="img" aria-label="Six single base-10 blocks in a row. The first three are circled to show that they are being taken away." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="20" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="20" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
   <ellipse cx="110" cy="35" rx="108" ry="31" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
@@ -267,7 +267,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
   hint="Count the blocks that are not circled."
 >}}
 
-<svg viewBox="0 0 530 70" role="img" aria-label="Base-10 blocks: one rod of ten blocks and eight single blocks. Five of the single blocks are circled to show that they are being taken away." style="max-width: 530px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 530 70" role="img" aria-label="Base-10 blocks: one rod of ten blocks and eight single blocks. Five of the single blocks are circled to show that they are being taken away." style="max-width: 530px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-sub-rod-b" fill="none" stroke="currentColor" stroke-width="0.6">
     <line x1="20" y1="0" x2="20" y2="20" />
@@ -301,7 +301,7 @@ three hundred fifty minus six hundred seventy-five; the difference of three hund
   hint="Count each rod that is not circled as 10 and each single block that is not circled as 1."
 >}}
 
-<svg viewBox="0 0 450 140" role="img" aria-label="Base-10 blocks: three rods of ten blocks each and five single blocks. The bottom rod and three of the single blocks are circled to show that they are being taken away." style="max-width: 450px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 450 140" role="img" aria-label="Base-10 blocks: three rods of ten blocks each and five single blocks. The bottom rod and three of the single blocks are circled to show that they are being taken away." style="max-width: 450px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-sub-rod-c" fill="none" stroke="currentColor" stroke-width="0.6">
     <line x1="20" y1="0" x2="20" y2="20" />

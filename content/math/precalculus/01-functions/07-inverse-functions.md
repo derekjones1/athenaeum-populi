@@ -31,7 +31,7 @@ diagram below provides a visual representation of this question. In this
 section, we will consider the reverse nature of functions.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Two function machines side by side. In the left machine, labelled f, an input x flows in at the top and an output y flows out at the bottom. The right machine is the same funnel turned upside down and labelled with a question mark: y flows in at the top and x flows out at the bottom." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 236" width="360" height="236" font-family="Helvetica, Arial, sans-serif">
+<svg data-pictorial role="img" aria-label="Two function machines side by side. In the left machine, labelled f, an input x flows in at the top and an output y flows out at the bottom. The right machine is the same funnel turned upside down and labelled with a question mark: y flows in at the top and x flows out at the bottom." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 236" width="360" height="236" font-family="Helvetica, Arial, sans-serif">
   <text x="66" y="24" font-size="13" fill="currentColor" text-anchor="middle" font-style="italic">x</text>
   <text x="66" y="230" font-size="13" fill="currentColor" text-anchor="middle" font-style="italic">y</text>
   <text x="24" y="122" font-size="13" fill="currentColor" text-anchor="middle" font-style="italic">f</text>
@@ -256,7 +256,7 @@ the outputs of $f^{-1}$, the domain of $f$ is the range of $f^{-1}$. We can
 visualize the situation as below.
 
 <div class="ap-figure">
-<svg role="img" aria-label="Two ovals side by side. The left oval is labelled the domain of f, which is also the range of f inverse; the right oval is labelled the range of f, which is also the domain of f inverse. An arrow labelled f arcs from the left oval to the right one, and an arrow labelled f inverse arcs back from the right oval to the left one." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 226" width="380" height="226" font-family="Helvetica, Arial, sans-serif">
+<svg data-pictorial role="img" aria-label="Two ovals side by side. The left oval is labelled the domain of f, which is also the range of f inverse; the right oval is labelled the range of f, which is also the domain of f inverse. An arrow labelled f arcs from the left oval to the right one, and an arrow labelled f inverse arcs back from the right oval to the left one." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 226" width="380" height="226" font-family="Helvetica, Arial, sans-serif">
   <ellipse cx="72" cy="110" rx="52" ry="62" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <ellipse cx="308" cy="110" rx="52" ry="62" fill="none" stroke="currentColor" stroke-width="1.5"/>
   <text x="72" y="104" font-size="12" fill="currentColor" text-anchor="middle">Domain</text>

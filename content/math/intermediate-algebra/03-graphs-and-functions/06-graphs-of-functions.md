@@ -544,7 +544,7 @@ math classes.
 **Example 3.59.** Use the graph of the function to find the indicated values.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A wave on a grid from −2π to 2π on the x-axis, marked every π/2 along its lower edge, and −3 to 3 on the y-axis. It crosses the x-axis at −2π, −π, 0, π, and 2π; its highest points, (−3π/2, 1) and (π/2, 1), and its lowest points, (−π/2, −1) and (3π/2, −1), are marked and labeled; arrows show it continues in both directions.","xMin":-4,"xMax":4,"yMin":-3,"yMax":3,"xUnit":40,"yUnit":24,"tickLabels":"y","yTickStep":1,"curves":[{"kind":"sine","b":1.5707963267948966,"arrows":true}],"points":[{"at":[-3,1],"label":"(−3π/2, 1)"},{"at":[1,1],"label":"(π/2, 1)"},{"at":[-1,-1],"label":"(−π/2, −1)"},{"at":[3,-1],"label":"(3π/2, −1)"}],"texts":[{"at":[-4,-3.75],"text":"−2π","anchor":"middle"},{"at":[-3,-3.75],"text":"−3π/2","anchor":"middle"},{"at":[-2,-3.75],"text":"−π","anchor":"middle"},{"at":[-1,-3.75],"text":"−π/2","anchor":"middle"},{"at":[1,-3.75],"text":"π/2","anchor":"middle"},{"at":[2,-3.75],"text":"π","anchor":"middle"},{"at":[3,-3.75],"text":"3π/2","anchor":"middle"},{"at":[4,-3.75],"text":"2π","anchor":"middle"}]}
+{"ariaLabel":"A wave on a grid from −2π to 2π on the x-axis, marked every π/2, and −3 to 3 on the y-axis. It crosses the x-axis at −2π, −π, 0, π, and 2π; its highest points, (−3π/2, 1) and (π/2, 1), and its lowest points, (−π/2, −1) and (3π/2, −1), are marked and labeled; arrows show it continues in both directions.","xMin":-6.3,"xMax":6.3,"yMin":-3,"yMax":3,"xUnit":25.5,"yUnit":24,"xGridStep":0.5,"tickLabels":true,"xTickFormat":"pi","xTickStep":0.5,"yTickStep":1,"curves":[{"kind":"sine","arrows":true}],"points":[{"at":[-4.712389,1],"label":"(−3π/2, 1)"},{"at":[1.570796,1],"label":"(π/2, 1)"},{"at":[-1.570796,-1],"label":"(−π/2, −1)"},{"at":[4.712389,-1],"label":"(3π/2, −1)"}]}
 {{< /apfigure >}}
 
 (a) Find: $f(0)$.
@@ -589,7 +589,7 @@ interval notation is $(-\infty,\infty)$.
 range, in interval notation, is $[-1,1]$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A wave on a grid from −2π to 2π on the x-axis, marked every π/2 along its lower edge, and −3 to 3 on the y-axis. It crosses the x-axis at −2π, −π, 0, π, and 2π, rising as it leaves the origin to the right. Its highest points are at height 2 and its lowest points at height −2, and arrows show it continues in both directions.","xMin":-4,"xMax":4,"yMin":-3,"yMax":3,"xUnit":40,"yUnit":24,"tickLabels":"y","yTickStep":2,"curves":[{"kind":"sine","a":2,"b":1.5707963267948966,"arrows":true}],"texts":[{"at":[-4,-3.75],"text":"−2π","anchor":"middle"},{"at":[-3,-3.75],"text":"−3π/2","anchor":"middle"},{"at":[-2,-3.75],"text":"−π","anchor":"middle"},{"at":[-1,-3.75],"text":"−π/2","anchor":"middle"},{"at":[1,-3.75],"text":"π/2","anchor":"middle"},{"at":[2,-3.75],"text":"π","anchor":"middle"},{"at":[3,-3.75],"text":"3π/2","anchor":"middle"},{"at":[4,-3.75],"text":"2π","anchor":"middle"}]}
+{"ariaLabel":"A wave on a grid from −2π to 2π on the x-axis, marked every π/2, and −3 to 3 on the y-axis. It crosses the x-axis at −2π, −π, 0, π, and 2π, rising as it leaves the origin to the right. Its highest points are at height 2 and its lowest points at height −2, and arrows show it continues in both directions.","xMin":-6.3,"xMax":6.3,"yMin":-3,"yMax":3,"xUnit":25.5,"yUnit":24,"xGridStep":0.5,"tickLabels":true,"xTickFormat":"pi","xTickStep":0.5,"yTickStep":2,"curves":[{"kind":"sine","a":2,"arrows":true}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -601,7 +601,7 @@ range, in interval notation, is $[-1,1]$.
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A wave on a grid from −2π to 2π on the x-axis, marked every π/2 along its lower edge, and −3 to 3 on the y-axis. Starting at height 1 at the left edge, x = −2π, it falls through the x-axis at −3π/2 to its lowest value, −1, at −π, rises through −π/2 to a high point on the y-axis, falls through π/2 to −1 at π, and rises through 3π/2 to height 1 at 2π; arrows show it continues in both directions.","xMin":-4,"xMax":4,"yMin":-3,"yMax":3,"xUnit":40,"yUnit":24,"tickLabels":"y","yTickStep":2,"curves":[{"kind":"cosine","b":1.5707963267948966,"arrows":true}],"texts":[{"at":[-4,-3.75],"text":"−2π","anchor":"middle"},{"at":[-3,-3.75],"text":"−3π/2","anchor":"middle"},{"at":[-2,-3.75],"text":"−π","anchor":"middle"},{"at":[-1,-3.75],"text":"−π/2","anchor":"middle"},{"at":[1,-3.75],"text":"π/2","anchor":"middle"},{"at":[2,-3.75],"text":"π","anchor":"middle"},{"at":[3,-3.75],"text":"3π/2","anchor":"middle"},{"at":[4,-3.75],"text":"2π","anchor":"middle"}]}
+{"ariaLabel":"A wave on a grid from −2π to 2π on the x-axis, marked every π/2, and −3 to 3 on the y-axis. Starting at height 1 at the left edge, x = −2π, it falls through the x-axis at −3π/2 to its lowest value, −1, at −π, rises through −π/2 to a high point on the y-axis, falls through π/2 to −1 at π, and rises through 3π/2 to height 1 at 2π; arrows show it continues in both directions.","xMin":-6.3,"xMax":6.3,"yMin":-3,"yMax":3,"xUnit":25.5,"yUnit":24,"xGridStep":0.5,"tickLabels":true,"xTickFormat":"pi","xTickStep":0.5,"yTickStep":2,"curves":[{"kind":"cosine","arrows":true}]}
 {{< /apfigure >}}
 
 {{< fillin

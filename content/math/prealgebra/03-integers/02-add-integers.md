@@ -30,7 +30,7 @@ represents a positive $1$, and a red counter represents a negative $1$.
 If we have one positive counter and one negative counter, their values
 add to zero — together they form a **neutral pair**.
 
-<svg viewBox="0 0 260 90" role="img" aria-label="One blue positive counter and one red negative counter, circled together, showing that 1 + (-1) = 0." style="max-width: 260px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 90" role="img" aria-label="One blue positive counter and one red negative counter, circled together, showing that 1 + (-1) = 0." style="max-width: 260px; display: block; margin: 1.5rem auto">
   <circle cx="60" cy="27" r="16" fill="none" stroke="#2b7fb8" stroke-width="2.5" />
   <circle cx="60" cy="63" r="16" fill="none" stroke="#c0392b" stroke-width="2.5" />
   <ellipse cx="60" cy="45" rx="26" ry="40" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -45,7 +45,7 @@ $5+3$, $-5+(-3)$, $-5+3$, and $5+(-3)$.
 Start with $5$ positives. Add $3$ more positives. Count the total: $8$
 positives. So $5 + 3 = 8$.
 
-<svg viewBox="0 0 340 60" role="img" aria-label="Five blue positive counters, plus three more blue positive counters, totaling eight positive counters." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 340 60" role="img" aria-label="Five blue positive counters, plus three more blue positive counters, totaling eight positive counters." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="190" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="220" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="250" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
 </svg>
@@ -62,7 +62,7 @@ positives. So $5 + 3 = 8$.
 Start with $5$ negatives. Add $3$ more negatives. Count the total: $8$
 negatives. So $-5 + (-3) = -8$.
 
-<svg viewBox="0 0 340 60" role="img" aria-label="Five red negative counters, plus three more red negative counters, totaling eight negative counters." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 340 60" role="img" aria-label="Five red negative counters, plus three more red negative counters, totaling eight negative counters." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="190" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="220" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="250" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
 </svg>
@@ -86,7 +86,7 @@ negative to form a neutral pair, which we remove. Two negatives are left
 over, so $-5 + 3 = -2$. Notice there were more negatives than positives,
 so the result is negative.
 
-<svg viewBox="0 0 340 100" role="img" aria-label="Five red negative counters and three blue positive counters. Three red-and-blue neutral pairs are circled with dashed outlines, and two red negative counters stand apart unpaired." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 340 100" role="img" aria-label="Five red negative counters and three blue positive counters. Three red-and-blue neutral pairs are circled with dashed outlines, and two red negative counters stand apart unpaired." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <g>
       <ellipse cx="20" cy="45" rx="17" ry="35" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" />
       <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
@@ -116,7 +116,7 @@ so the result is negative.
 Start with $5$ positives. Add $3$ negatives. Three neutral pairs form
 and are removed, leaving $2$ positives. So $5 + (-3) = 2$.
 
-<svg viewBox="0 0 340 100" role="img" aria-label="Five blue positive counters and three red negative counters. Three blue-and-red neutral pairs are circled with dashed outlines, and two blue positive counters stand apart unpaired." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 340 100" role="img" aria-label="Five blue positive counters and three red negative counters. Three blue-and-red neutral pairs are circled with dashed outlines, and two blue positive counters stand apart unpaired." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <g>
       <ellipse cx="20" cy="45" rx="17" ry="35" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" />
       <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
@@ -366,7 +366,7 @@ of the number with the larger absolute value.
 
 ### Model addition of integers
 
-<svg viewBox="0 0 360 60" role="img" aria-label="A row of blue positive counters, separated into a group of seven and a group of four." style="max-width: 360px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 360 60" role="img" aria-label="A row of blue positive counters, separated into a group of seven and a group of four." style="max-width: 360px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="170" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="200" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="250" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="280" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="310" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="340" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
 </svg>
@@ -378,7 +378,7 @@ of the number with the larger absolute value.
   hint="All the counters are positive, so no neutral pairs form — just count the whole row."
 >}}
 
-<svg viewBox="0 0 300 60" role="img" aria-label="A row of red negative counters, separated into a group of six and a group of three." style="max-width: 300px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 300 60" role="img" aria-label="A row of red negative counters, separated into a group of six and a group of three." style="max-width: 300px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="220" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="250" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="280" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
 </svg>
@@ -390,7 +390,7 @@ of the number with the larger absolute value.
   hint="Every counter is negative, so count them all and keep the negative sign."
 >}}
 
-<svg viewBox="0 0 220 90" role="img" aria-label="Two rows of counters: a top row of seven red negative counters and a bottom row of five blue positive counters." style="max-width: 220px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 220 90" role="img" aria-label="Two rows of counters: a top row of seven red negative counters and a bottom row of five blue positive counters." style="max-width: 220px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="200" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="20" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
 </svg>
@@ -402,7 +402,7 @@ of the number with the larger absolute value.
   hint="Each column that holds one counter of each color is a neutral pair worth $0$. Remove those pairs and count the color that is left over."
 >}}
 
-<svg viewBox="0 0 250 90" role="img" aria-label="Two rows of counters: a top row of eight blue positive counters and a bottom row of seven red negative counters." style="max-width: 250px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 250 90" role="img" aria-label="Two rows of counters: a top row of eight blue positive counters and a bottom row of seven red negative counters." style="max-width: 250px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="170" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="200" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="230" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="20" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="200" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
 </svg>

@@ -108,6 +108,76 @@ test('--status counts a spec-less ap-figure div, which no geometry gate can see'
 });
 
 // ---------------------------------------------------------------------------
+// The queue counts every inline <svg>, bare or wrapped, and sets the pictorial
+// ones (data-pictorial: no engine primitive, kept hand-drawn by decision)
+// apart so they never block `converted` (October 7, 2026).
+
+const specFirstPage = () => page({
+  ariaLabel: 'clean', xMin: -5, xMax: 5, yMin: -5, yMax: 5,
+  lines: [{ slope: 1, intercept: 0 }],
+});
+const bareSvg = (attrs = '') => `\n<svg role="img" aria-label="counters"${attrs} viewBox="0 0 40 20"><circle cx="10" cy="10" r="4"/></svg>\n`;
+
+test('--status counts a bare <svg> in no wrapper as hand-written, which keeps the page mixed', () => {
+  const { code, out } = runOn(specFirstPage() + bareSvg(), ['--status']);
+  assert.equal(code, 0, out);
+  assert.match(out, /mixed\s+.*page\.md/, 'one bare svg keeps a spec-first page off the converted list');
+  assert.match(out, /1 spec-first, 1 hand-written SVG \(no spec\)/);
+  assert.match(out, /1 page\(s\) with figures: 0 converted, 1 still carrying legacy or hand-written figures\./);
+  assert.match(out, /1 of those are hand-written SVG with no spec at all/);
+  assert.doesNotMatch(out, /pictorial/, 'no pictorial wording when nothing is pictorial');
+});
+
+test('--status sets a data-pictorial <svg> apart: kept hand-drawn, the page reads converted', () => {
+  const { code, out } = runOn(specFirstPage() + bareSvg(' data-pictorial'), ['--status']);
+  assert.equal(code, 0, out);
+  assert.match(out, /converted\s+.*page\.md/, 'a pictorial svg does not block converted');
+  assert.match(out, /1 spec-first, 1 pictorial SVG \(kept\)/);
+  assert.doesNotMatch(out, /hand-written SVG/, 'a pictorial svg is not hand-written conversion debt');
+  assert.match(out, /1 page\(s\) with figures: 1 converted, 0 still carrying/);
+  assert.match(out, /1 pictorial SVG\(s\) are kept as hand-drawn by decision \(data-pictorial\) and are not conversion debt\./);
+  // every spelling of the attribute counts, and a page of only pictorial svgs is listed (converted), not dropped
+  for (const attr of [' data-pictorial=""', ' data-pictorial="true"', " data-pictorial='true'"]) {
+    const only = runOn(`---\ntitle: T\n---\n${bareSvg(attr)}`, ['--status']).out;
+    assert.match(only, /converted\s+.*page\.md\s+\(1 pictorial SVG \(kept\)\)/, attr);
+  }
+});
+
+test('--status counts a legacy data-spec div once, not again for its frozen <svg>', () => {
+  const legacy = '---\ntitle: L\n---\n\n'
+    + '<div class="ap-figure" data-spec=\'{"type":"graph","ariaLabel":"old","lines":[{"slope":1,"intercept":0}]}\'>\n'
+    + '  <div class="inner"><svg role="img" aria-label="old" viewBox="0 0 10 10"><line x1="0" y1="0" x2="1" y2="1"/></svg></div>\n'
+    + '</div>\n';
+  const { out } = runOn(legacy, ['--status']);
+  assert.match(out, /TODO\s+.*page\.md\s+\(1 legacy\)/, `the frozen render is the spec's own, not a second figure:\n${out}`);
+  assert.doesNotMatch(out, /hand-written SVG/);
+  const json = JSON.parse(runOn(legacy, ['--status', '--json']).out).pages[0];
+  assert.deepEqual([json.specFirst, json.legacy, json.handwritten, json.pictorial], [0, 1, 0, 0]);
+  // a bare svg AFTER the legacy block is outside it and still counts
+  const after = JSON.parse(runOn(legacy + bareSvg(), ['--status', '--json']).out).pages[0];
+  assert.deepEqual([after.legacy, after.handwritten], [1, 1]);
+});
+
+test('--status counts an ap-figure div with no data-spec as one hand-written svg', () => {
+  const wrapped = '---\ntitle: W\n---\n\n<div class="ap-figure">\n'
+    + '<svg role="img" aria-label="hand-drawn" viewBox="0 0 10 10"><line x1="0" y1="0" x2="1" y2="1"/></svg>\n</div>\n';
+  const { out } = runOn(wrapped, ['--status']);
+  assert.match(out, /TODO\s+.*page\.md\s+\(1 hand-written SVG \(no spec\)\)/, out);
+  const json = JSON.parse(runOn(wrapped, ['--status', '--json']).out).pages[0];
+  assert.deepEqual([json.legacy, json.handwritten, json.pictorial], [0, 1, 0]);
+});
+
+test('a data-pictorial <svg> is kept out of the queue but never out of the overlap gate', () => {
+  const body = '<text x="60" y="50" font-size="13" fill="currentColor">y = 2x + 1</text>\n<text x="70" y="54" font-size="13" fill="currentColor">(3, 7)</text>';
+  const pictorial = `---\ntitle: T\n---\n\n<svg role="img" aria-label="fixture" data-pictorial viewBox="0 0 200 120" width="200" height="120">\n${body}\n</svg>\n`;
+  const { code, out } = runOn(pictorial, ['--json']);
+  assert.equal(code, 1, 'overlapping labels in a pictorial svg still fail the run');
+  const inline = JSON.parse(out).inline;
+  assert.equal(inline.figures, 1);
+  assert.equal(inline.dirty, 1);
+});
+
+// ---------------------------------------------------------------------------
 // Hand-written inline SVG: read from the markup, gating since September 28,
 // 2026 (INLINE_SVG_GATES in the tool). Each fixture is one figure; the verdict is
 // read from --json so a test pins the exact finding, not console wording.
@@ -229,6 +299,27 @@ test('inline SVG findings gate: the console names them and the run fails', () =>
 
 // ---------------------------------------------------------------------------
 // Faint strokes (October 6, 2026): hairlines of any shape are background.
+
+test('a spec-first number line may draw its bracket marker on the axis (the inline exemption, spec side)', () => {
+  // The hand-written inequality number lines of IA 2.5–2.7 converted to
+  // `numberline` specs on October 7, 2026, and every one was blocked by its
+  // own `(` or `[` glyph crossing the axis, the tick, and the shaded ray.
+  const numberline = (spec) => `---\ntitle: T\n---\n\n{{< apfigure kind="numberline" >}}\n${JSON.stringify(spec)}\n{{< /apfigure >}}\n`;
+  for (const [type, shade] of [['paren', 'right'], ['bracket', 'left']]) {
+    const { code, out } = runOn(numberline({
+      ariaLabel: 'x > 3', min: -5, max: 5, marker: { at: 3, type }, shade, title: 'x > 3',
+    }));
+    assert.equal(code, 0, `${type} marker on its axis must exit 0, got:\n${out}`);
+    assert.match(out, /0 with real overlaps/);
+  }
+  // The exemption is the glyph's alone: a full-size label on the axis is still a finding.
+  const { code, out } = runOn(numberline({
+    ariaLabel: 'bad', min: -5, max: 5, marker: { at: 3, type: 'paren' }, shade: 'right',
+    points: [{ at: 0, label: 'x' }],
+  }));
+  assert.equal(code, 0, out);
+  assert.match(out, /0 with real overlaps/);
+});
 
 test('a faint ring through a tick digit is not a finding; the same ring at full weight is', () => {
   // r = 3 crosses the x-axis at the "3" tick, straight through its digit.

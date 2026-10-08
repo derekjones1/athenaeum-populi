@@ -471,7 +471,7 @@ color (red) represents negative counters. If we have one positive counter
 and one negative counter, the value of the pair is zero — they form a
 **neutral pair**.
 
-<svg viewBox="0 0 220 90" role="img" aria-label="One blue counter above one red counter, both circled together, labeled 1 + (-1) = 0. Together they form a neutral pair with value zero." style="max-width: 220px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 220 90" role="img" aria-label="One blue counter above one red counter, both circled together, labeled 1 + (-1) = 0. Together they form a neutral pair with value zero." style="max-width: 220px; display: block; margin: 1.5rem auto">
   <ellipse cx="45" cy="45" rx="34" ry="38" fill="none" stroke="currentColor" stroke-width="1.5" />
   <circle cx="45" cy="27" r="16" fill="#bfe3f0" stroke="currentColor" stroke-width="1.5" />
   <circle cx="45" cy="63" r="16" fill="#f0c4b0" stroke="currentColor" stroke-width="1.5" />
@@ -486,7 +486,7 @@ positive counters, giving $8$ positives. Likewise, to add $-5 + (-3)$, we
 start with $5$ negative counters, then add $3$ more negative counters,
 giving $8$ negatives.
 
-<svg viewBox="0 0 460 120" role="img" aria-label="Left: 8 blue counters in a row labeled 8 positives, 5 + 3 = 8. Right: 8 red counters in a row labeled 8 negatives, -5 + (-3) = -8." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 460 120" role="img" aria-label="Left: 8 blue counters in a row labeled 8 positives, 5 + 3 = 8. Right: 8 red counters in a row labeled 8 negatives, -5 + (-3) = -8." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <circle cx="26" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="50" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="74" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="98" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="122" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="146" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="170" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="194" cy="30" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" />
   <text x="112" y="58" text-anchor="middle" font-size="13" fill="currentColor">8 positives</text>
   <text x="112" y="76" text-anchor="middle" font-size="13" fill="currentColor">5 + 3 = 8</text>
@@ -528,7 +528,7 @@ Now add the last combination, $5 + (-3)$. Start with $5$ positive counters,
 then add $3$ negative counters. Three neutral pairs form and are removed,
 leaving $2$ positives, so $5 + (-3) = 2$.
 
-<svg viewBox="0 0 460 135" role="img" aria-label="Left: -5 + 3. Five red counters and three blue counters; three red-blue pairs are circled as neutral pairs to remove, and 2 red counters stand outside the circles. Captions: more negatives — sum is negative; -5 + 3 = -2. Right: 5 + (-3). Five blue counters and three red counters; three blue-red pairs are circled to remove, and 2 blue counters stand outside the circles. Captions: more positives — sum is positive; 5 + (-3) = 2." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 460 135" role="img" aria-label="Left: -5 + 3. Five red counters and three blue counters; three red-blue pairs are circled as neutral pairs to remove, and 2 red counters stand outside the circles. Captions: more negatives — sum is negative; -5 + 3 = -2. Right: 5 + (-3). Five blue counters and three red counters; three blue-red pairs are circled to remove, and 2 blue counters stand outside the circles. Captions: more positives — sum is positive; 5 + (-3) = 2." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <text x="108" y="14" text-anchor="middle" font-size="13" fill="currentColor">-5 + 3</text>
   <g>
       <ellipse cx="34" cy="55" rx="19" ry="30" fill="none" stroke="#b03060" stroke-width="1.3" />
@@ -689,7 +689,7 @@ To subtract $-5-(-3)$, restate it as "$-5$ take away $-3$": start with $5$
 negative counters, take away $3$ negative counters, and $2$ negatives are
 left. The difference of $-5$ and $-3$ is $-2$.
 
-<svg viewBox="0 0 460 130" role="img" aria-label="Left: 5 - 3 = 2. Five blue counters in a row; the first three are circled, with a curved arrow below showing them taken away, and the caption reads 2 positives left. Right: -5 - (-3) = -2. Five red counters in a row; the first three are circled, with a curved arrow below showing them taken away, and the caption reads 2 negatives left." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 460 130" role="img" aria-label="Left: 5 - 3 = 2. Five blue counters in a row; the first three are circled, with a curved arrow below showing them taken away, and the caption reads 2 positives left. Right: -5 - (-3) = -2. Five red counters in a row; the first three are circled, with a curved arrow below showing them taken away, and the caption reads 2 negatives left." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <text x="112" y="16" text-anchor="middle" font-size="13" fill="currentColor">5 - 3 = 2</text>
   <circle cx="30" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="56" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="82" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="108" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" /><circle cx="134" cy="45" r="11" fill="#bfe3f0" stroke="currentColor" stroke-width="1.2" />
   <ellipse cx="56" cy="45" rx="41" ry="18" fill="none" stroke="#b03060" stroke-width="1.3" />
@@ -749,7 +749,7 @@ with $5$ positives. We need to take away $3$ negatives, but there are no
 negatives to take away, so we add $3$ neutral pairs, giving us $3$ negatives
 to take away. Removing them leaves $8$ positives: $5-(-3) = 8$.
 
-<svg viewBox="0 0 460 140" role="img" aria-label="Left: -5 - 3 = -8. Five red counters, then 3 neutral pairs added beside them, each pair a red counter above a blue counter. The 3 blue counters are circled to be removed; the caption reads removing the 3 positives leaves 8 negatives. Right: 5 - (-3) = 8. Five blue counters, then 3 neutral pairs added beside them, each pair a blue counter above a red counter. The 3 red counters are circled to be removed; the caption reads removing the 3 negatives leaves 8 positives." style="max-width: 460px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 460 140" role="img" aria-label="Left: -5 - 3 = -8. Five red counters, then 3 neutral pairs added beside them, each pair a red counter above a blue counter. The 3 blue counters are circled to be removed; the caption reads removing the 3 positives leaves 8 negatives. Right: 5 - (-3) = 8. Five blue counters, then 3 neutral pairs added beside them, each pair a blue counter above a red counter. The 3 red counters are circled to be removed; the caption reads removing the 3 negatives leaves 8 positives." style="max-width: 460px; display: block; margin: 1.5rem auto">
   <text x="112" y="14" text-anchor="middle" font-size="13" fill="currentColor">-5 - 3 = -8</text>
   <circle cx="26" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="48" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="70" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="92" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="114" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />
   <circle cx="148" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="172" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" /><circle cx="196" cy="40" r="10" fill="#f0c4b0" stroke="currentColor" stroke-width="1.1" />

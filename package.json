@@ -23,6 +23,7 @@
     "check:figures": "node tools/figures/check-figure-overlaps.mjs content",
     "figures:status": "node tools/figures/check-figure-overlaps.mjs --status",
     "figures:convert": "node tools/figures/convert-figures.mjs",
+    "figures:numberlines": "node tools/figures/convert-inline-numberlines.mjs",
     "lint": "node tools/lint/lint-all.mjs content",
     "validate": "node tools/lint/validate-content.mjs content",
     "verify:content": "node tools/verify/verify-all.mjs content",

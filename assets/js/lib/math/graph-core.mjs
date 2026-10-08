@@ -44,6 +44,24 @@
  *                        row (7.4's sound wave: digits below the trough)
  *   yTickOffset          px (default 0, finite, ≥ 0): moves the y digit column
  *                        LEFT the same way
+ *   xTickFormat          'pi' → the x axis counts in units of π: xTickStep
+ *                        and xGridStep (and the tickStep / gridStep they
+ *                        default from) are multiplied by π, so xTickStep: 0.5
+ *                        ticks every π/2 and xGridStep: 0.25 draws gridlines
+ *                        every π/4, and each digit prints as a reduced
+ *                        fraction of π (π/4, π, 3π/2, −2π); 'fraction' →
+ *                        positions in plain units, digits printed as reduced
+ *                        fractions (1/40, 3/40, −1/2; integers stay plain).
+ *                        Omitted → decimal digits. The tick step (and a π
+ *                        axis's grid step) snaps once to the nearest n/d
+ *                        with d ≤ 64 within a relative 1e-5, else throws —
+ *                        so xTickStep: 0.166667 is π/6 — and every tick is
+ *                        exactly k·n/d. Grouping is ignored, and the origin
+ *                        rule is the decimal one. These are ordinary tick
+ *                        digits — tick size, knockout, relocation, offsets —
+ *                        so never fake π or fraction ticks with `texts`
+ *                        (lint figure-hand-ticks)
+ *   yTickFormat          the same for the y axis (yTickStep, yGridStep)
  *   tickKnockout         false → strokes print over the tick digits. By
  *                        default every stroke passes BEHIND them: buildGraph
  *                        returns the digits as `knockout.texts`, and the
@@ -272,6 +290,9 @@ function stepCount(min, max, step, label) {
   return count
 }
 
+/** greatest common divisor of two integers (a tick fraction's reduction) */
+const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a))
+
 // ---------------------------------------------------------------------------
 // small vector helpers
 const sub = (a, b) => [a[0] - b[0], a[1] - b[1]]
@@ -311,17 +332,62 @@ export function buildGraph(props) {
     margin = 26,
     caption,
     xLabel = 'x', yLabel = 'y',
-    grid = true, gridStep = 1, xGridStep = gridStep, yGridStep = gridStep,
+    grid = true, gridStep = 1, xGridStep: xGridUnits = gridStep, yGridStep: yGridUnits = gridStep,
     tickLabels = false, tickStep,
-    xTickStep = tickStep ?? xGridStep, yTickStep = tickStep ?? yGridStep,
+    xTickStep: xTickUnits = tickStep ?? xGridUnits, yTickStep: yTickUnits = tickStep ?? yGridUnits,
     tickGrouping = true, xTickGrouping = tickGrouping, yTickGrouping = tickGrouping,
-    tickKnockout = true, xTickOffset = 0, yTickOffset = 0,
+    tickKnockout = true, xTickOffset = 0, yTickOffset = 0, xTickFormat, yTickFormat,
     quadrantLabels = false,
     points = [], lines = [], quadratics = [], cubics = [], polynomials = [], rationals = [],
     smoothCurves = [], segments = [], guides = [],
     circles = [], hyperbolas = [], polylines = [], curves = [],
     slopeTriangles = [], regions = [], texts = [],
   } = props
+
+  // A 'pi' axis states its steps in units of π: xTickStep 0.5 ticks every
+  // π/2. Every step on that axis — tick and grid alike, including the
+  // tickStep/gridStep they default from — is scaled once, here, so all the
+  // code below (gridValues, spacedStep's thinning, the tick loop) sees plain
+  // math units and never needs to know. A non-number is passed through
+  // unscaled so the step validation below still names it.
+  for (const [name, format] of [['xTickFormat', xTickFormat], ['yTickFormat', yTickFormat]]) {
+    if (format !== undefined && format !== 'pi' && format !== 'fraction') {
+      throw new Error(`${name} must be 'pi', 'fraction', or omitted`)
+    }
+  }
+  // Content can write π/6 only as the decimal 0.166667, and per-value
+  // rounding drifts with k (k · 0.166667 · 6 is off by 2e-6·k). So a 'pi' or
+  // 'fraction' axis rationalizes its labeled tick step — and a 'pi' axis its
+  // grid step — ONCE, to the nearest n/d with d ≤ 64 within a relative 1e-5;
+  // every tick is then the integer k × n/d, its label the exact reduced k·n/d
+  // and its position that rational times π (or 1). A step that is not a
+  // positive finite number is left for the step validation below to name.
+  const rationalStep = (step, name, format) => {
+    if (typeof step !== 'number' || !Number.isFinite(step) || step <= 0) return null
+    let best = null
+    for (let d = 1; d <= 64; d++) {
+      const n = Math.round(step * d)
+      const err = Math.abs(step - n / d)
+      if (n > 0 && (!best || err < best.err)) best = { n, d, err }
+    }
+    if (!best || best.err > 1e-5 * step) {
+      throw new Error(`${name} ${step} on a '${format}' axis is not within 1e-5 of a fraction with a denominator of 64 or less`)
+    }
+    const g = gcd(best.n, best.d)
+    return [best.n / g, best.d / g]
+  }
+  const labelsX = tickLabels === true || tickLabels === 'x'
+  const labelsY = tickLabels === true || tickLabels === 'y'
+  const xTickRational = xTickFormat && labelsX ? rationalStep(xTickUnits, 'xTickStep', xTickFormat) : null
+  const yTickRational = yTickFormat && labelsY ? rationalStep(yTickUnits, 'yTickStep', yTickFormat) : null
+  const xGridRational = xTickFormat === 'pi' && grid ? rationalStep(xGridUnits, 'xGridStep', 'pi') : null
+  const yGridRational = yTickFormat === 'pi' && grid ? rationalStep(yGridUnits, 'yGridStep', 'pi') : null
+  const snapped = (rational, raw) => (rational ? rational[0] / rational[1] : raw)
+  const piScaled = (step, format) => (format === 'pi' && typeof step === 'number' ? step * Math.PI : step)
+  const xGridStep = piScaled(snapped(xGridRational, xGridUnits), xTickFormat)
+  const yGridStep = piScaled(snapped(yGridRational, yGridUnits), yTickFormat)
+  const xTickStep = piScaled(snapped(xTickRational, xTickUnits), xTickFormat)
+  const yTickStep = piScaled(snapped(yTickRational, yTickUnits), yTickFormat)
 
   if (![xMin, xMax, yMin, yMax, ux, uy, margin].every(Number.isFinite)
     || xMin >= xMax || yMin >= yMax || ux <= 0 || uy <= 0 || margin < 0) {
@@ -662,33 +728,62 @@ export function buildGraph(props) {
     if (!Number.isFinite(yTickStep) || yTickStep <= 0) throw new Error('yTickStep must be a positive number')
     // Digit grouping is right for counts and money and wrong for years, so
     // each axis can opt out: 1975 must not render as 1,975.
-    const fmtTick = (n, grouped) => mathMinus(grouped
+    const fmtDecimal = (n, grouped) => mathMinus(grouped
       ? (+n.toFixed(6)).toLocaleString('en-US')
       : String(+n.toFixed(6)))
+    // A π or fraction axis prints the exact rational k·n/d of its tick,
+    // reduced. Grouping never applies to a fraction.
+    const fmtRational = (kn, d, format) => {
+      const g = gcd(kn, d)
+      const num = kn / g, den = d / g
+      if (num === 0) return '0'
+      if (format === 'fraction') return mathMinus(den === 1 ? String(num) : `${num}/${den}`)
+      const sign = num < 0 ? '-' : ''
+      const coef = Math.abs(num) === 1 ? '' : String(Math.abs(num))
+      return mathMinus(`${sign}${coef}π${den === 1 ? '' : `/${den}`}`)
+    }
+    // One axis's ticks as [math position, label]. A decimal axis counts from
+    // its first multiple of the step; a π or fraction axis counts integer k
+    // over its rationalized step n/d (the 1e-9 only absorbs float noise at
+    // a window edge that IS a tick).
+    const axisTicks = (min, max, step, grouped, format, rational, name) => {
+      if (format === undefined) {
+        const first = Math.ceil(min / step) * step
+        if (first > max) return []
+        return Array.from({ length: stepCount(first, max, step, name) }, (_, index) => {
+          const m = first + index * step
+          return [m, fmtDecimal(m, grouped)]
+        })
+      }
+      const [n, d] = rational
+      const scale = format === 'pi' ? Math.PI : 1
+      const firstK = Math.ceil(min / step - 1e-9), lastK = Math.floor(max / step + 1e-9)
+      if (firstK > lastK) return []
+      return Array.from({ length: stepCount(firstK, lastK, 1, name) }, (_, index) => {
+        const k = firstK + index
+        return [k * n / d * scale, fmtRational(k * n, d, format)]
+      })
+    }
     // Ticks ride the drawn axis, not the line y = 0 / x = 0, so data ranges
     // that never reach the origin (years 1973..2008, barrels 0..2200) still
     // get labeled axes. The origin label is dropped only when both axes
     // actually cross there and the single "0" would be ambiguous.
     const originShown = xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0
     const xDigits = [], yDigits = []
-    const firstX = Math.ceil(xMin / xTickStep) * xTickStep
-    const xCount = wantX && firstX <= xMax ? stepCount(firstX, xMax, xTickStep, 'xTickStep') : 0
-    for (let index = 0; index < xCount; index++) {
-      const mx = firstX + index * xTickStep
+    const xTicks = wantX ? axisTicks(xMin, xMax, xTickStep, xTickGrouping, xTickFormat, xTickRational, 'xTickStep') : []
+    for (const [mx, text] of xTicks) {
       if (originShown && Math.abs(mx) < GEOMETRY_EPSILON) continue
       const cx = px([mx, 0])[0]
       add('line', segAttrs([cx, axisY - 3], [cx, axisY + 3], { strokeWidth: '1' }))
-      const el = { tag: 'text', attrs: { x: fmt(cx), y: fmt(axisY + 4 + tickFS + xTickOffset), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, text: fmtTick(mx, xTickGrouping) }
+      const el = { tag: 'text', attrs: { x: fmt(cx), y: fmt(axisY + 4 + tickFS + xTickOffset), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, text }
       els.push(el); xDigits.push(el)
     }
-    const firstY = Math.ceil(yMin / yTickStep) * yTickStep
-    const yCount = wantY && firstY <= yMax ? stepCount(firstY, yMax, yTickStep, 'yTickStep') : 0
-    for (let index = 0; index < yCount; index++) {
-      const my = firstY + index * yTickStep
+    const yTicks = wantY ? axisTicks(yMin, yMax, yTickStep, yTickGrouping, yTickFormat, yTickRational, 'yTickStep') : []
+    for (const [my, text] of yTicks) {
       if (originShown && Math.abs(my) < GEOMETRY_EPSILON) continue
       const cy = px([0, my])[1]
       add('line', segAttrs([axisX - 3, cy], [axisX + 3, cy], { strokeWidth: '1' }))
-      const el = { tag: 'text', attrs: { x: fmt(axisX - 6 - yTickOffset), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, text: fmtTick(my, yTickGrouping) }
+      const el = { tag: 'text', attrs: { x: fmt(axisX - 6 - yTickOffset), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, text }
       els.push(el); yDigits.push(el)
     }
     // On a dense grid the x digit and y digit nearest the origin share the
@@ -1510,7 +1605,16 @@ export function buildGraph(props) {
  * buildNumberLine(props) — same contract as buildGraph, for number lines.
  *
  * Props (values in MATH units):
- *   min, max      integer endpoints of the visible ticks (required)
+ *   min, max      endpoints of the visible ticks (required): integers by
+ *                 default; any finite numbers once `step` is given, so long
+ *                 as (max − min) / step is a whole number
+ *   step          tick spacing (default 1). Labels print with as many
+ *                 decimals as the longest of min, max, and step carries —
+ *                 0..1 by 0.1 reads 0.0, 0.1, … 1.0; −1..0 by 0.01 reads
+ *                 −1.00 … 0.00; an integer step on integer ends prints plain
+ *   labelEvery    label every k-th tick counting from min (default 1, a
+ *                 positive integer); the unlabelled ticks between are minor
+ *                 ticks, drawn shorter (±4px against ±6px)
  *   ariaLabel     REQUIRED — human prose description
  *   title         optional text (e.g. 'x > 3'), centered above the marker
  *                 if there is one, else above the middle
@@ -1525,20 +1629,39 @@ export function buildGraph(props) {
  *                 runs the stretch to the left arrow (−∞); omitting `to` runs
  *                 it to the right arrow (∞); `{}` is therefore the whole line,
  *                 (−∞, ∞). fromType/toType are 'open' or
- *                 'closed' (default 'closed') and draw the endpoint circle;
- *                 an unbounded end takes no circle.
+ *                 'closed' (default 'closed') and draw the endpoint circle,
+ *                 or 'paren' / 'bracket', which draw the interval-notation
+ *                 glyph on the axis instead — ( or [ at a `from`, ) or ] at a
+ *                 `to` — with the stretch running from the glyph and, under
+ *                 a paren, no tick; an unbounded end takes no mark.
  *   points        [{ at, label? }] plain plotted points (labels above;
  *                 house rule: only off-tick points need labels)
  *
  * Layout matches the house style: 280px line regardless of range, chevron
- * arrows, every integer ticked and labeled. All positions are computed
- * from `at` values — never hand-placed.
+ * arrows, every tick at `step` (default: every integer), labeled every
+ * `labelEvery` ticks. All positions are computed from `at` values — never
+ * hand-placed.
  */
 export function buildNumberLine(props) {
-  const { min, max, marker, shade, title, points = [], intervals = [] } = props
-  if (!Number.isSafeInteger(min) || !Number.isSafeInteger(max) || max <= min) {
-    throw new Error('NumberLine needs integer min < max')
+  const { min, max, marker, shade, title, points = [], intervals = [], labelEvery = 1 } = props
+  const stepped = props.step !== undefined
+  const step = stepped ? props.step : 1
+  if (!stepped) {
+    if (!Number.isSafeInteger(min) || !Number.isSafeInteger(max) || max <= min) {
+      throw new Error('NumberLine needs integer min < max')
+    }
+  } else {
+    if (!Number.isFinite(step) || step <= 0) throw new Error(`NumberLine step must be a positive number — got ${step}`)
+    if (!Number.isFinite(min) || !Number.isFinite(max) || max <= min) throw new Error('NumberLine needs finite min < max')
+    const steps = (max - min) / step
+    if (Math.abs(steps - Math.round(steps)) > 1e-9) {
+      throw new Error(`NumberLine step ${step} does not divide ${min}..${max} into whole steps`)
+    }
   }
+  if (!Number.isSafeInteger(labelEvery) || labelEvery < 1) {
+    throw new Error(`NumberLine labelEvery must be a positive integer — got ${labelEvery}`)
+  }
+  const END_TYPES = ['open', 'closed', 'paren', 'bracket']
   for (const iv of intervals) {
     // {} is the deliberate spelling of all real numbers, (−∞, ∞)
     const bounded = ['from', 'to'].filter((k) => iv[k] !== undefined)
@@ -1546,15 +1669,27 @@ export function buildNumberLine(props) {
       if (!Number.isFinite(iv[key])) throw new Error(`NumberLine interval ${key} must be a finite number`)
       if (iv[key] < min || iv[key] > max) throw new Error(`NumberLine interval ${key} ${iv[key]} falls outside ${min}..${max}`)
       const type = iv[`${key}Type`]
-      if (type !== undefined && type !== 'open' && type !== 'closed') {
-        throw new Error(`NumberLine interval ${key}Type must be 'open' or 'closed'`)
+      if (type !== undefined && !END_TYPES.includes(type)) {
+        throw new Error(`NumberLine interval ${key}Type must be 'open', 'closed', 'paren', or 'bracket'`)
       }
     }
     if (bounded.length === 2 && !(iv.to > iv.from)) {
       throw new Error('NumberLine interval needs from < to')
     }
   }
-  const tickCount = stepCount(min, max, 1, 'NumberLine range')
+  const tickCount = stepCount(0, Math.round((max - min) / step), 1, 'NumberLine range')
+  // as many decimals as the longest of min, max, step carries (1e-7 counts 7)
+  const decimalsOf = (n) => {
+    if (Number.isInteger(n)) return 0
+    const [mantissa, exp = '0'] = String(n).split('e')
+    return Math.max(0, (mantissa.split('.')[1] ?? '').length - Number(exp))
+  }
+  const decimals = Math.max(decimalsOf(min), decimalsOf(max), decimalsOf(step))
+  const tickText = (v) => {
+    if (!decimals) return mathMinus(String(Math.round(v)))
+    const text = v.toFixed(decimals)
+    return mathMinus(/^-0\.0+$/.test(text) ? text.slice(1) : text)
+  }
   const LINE = 264, X0 = 28, EXT = 12 // line overshoots ticks by EXT each side
   const u = LINE / (max - min)
   const X = (v) => X0 + (v - min) * u
@@ -1582,6 +1717,7 @@ export function buildNumberLine(props) {
   // heavy stretches for compound sets; an unbounded end runs to the chevron.
   // An excluded end stops short of its hollow circle so the circle reads as
   // hollow in both themes without needing a background fill to paint over.
+  // A paren or bracket end runs the stretch to the glyph, as `marker` does.
   const DOT_R = 5
   for (const iv of intervals) {
     const from = iv.from === undefined ? L0 : X(iv.from) + (iv.fromType === 'open' ? DOT_R : 0)
@@ -1592,21 +1728,28 @@ export function buildNumberLine(props) {
   // Positions a hollow endpoint will sit on. Their ticks are skipped: a tick
   // showing through an unfilled circle reads as a crosshair, and painting the
   // circle with a background colour would break in one theme or the other.
-  const hollowAt = new Set()
-  if (marker && (marker.type === 'open' || marker.type === 'paren')) hollowAt.add(marker.at)
+  // A paren is hollow the same way: a tick through it reads as a cross.
+  const hollowAt = []
+  if (marker && (marker.type === 'open' || marker.type === 'paren')) hollowAt.push(marker.at)
   for (const iv of intervals) {
     for (const key of ['from', 'to']) {
-      if (iv[key] !== undefined && iv[`${key}Type`] === 'open') hollowAt.add(iv[key])
+      const type = iv[`${key}Type`]
+      if (iv[key] !== undefined && (type === 'open' || type === 'paren')) hollowAt.push(iv[key])
     }
   }
+  const isHollow = (v) => hollowAt.some((h) => Math.abs(h - v) < 1e-9)
 
-  // ticks + integer labels
+  // ticks + labels; the unlabelled ticks between labels are minor and shorter
   for (let index = 0; index < tickCount; index++) {
-    const v = min + index
-    if (!hollowAt.has(v)) {
-      add('line', { x1: fmtN(X(v)), y1: String(yLine - 6), x2: fmtN(X(v)), y2: String(yLine + 6), stroke: 'currentColor', strokeWidth: '1.5' })
+    const v = stepped ? min + index * step : min + index
+    const labelled = index % labelEvery === 0
+    const half = labelled ? 6 : 4
+    if (!isHollow(v)) {
+      add('line', { x1: fmtN(X(v)), y1: String(yLine - half), x2: fmtN(X(v)), y2: String(yLine + half), stroke: 'currentColor', strokeWidth: '1.5' })
     }
-    add('text', { x: fmtN(X(v)), y: String(yLine + 25), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, mathMinus(String(v)))
+    if (labelled) {
+      add('text', { x: fmtN(X(v)), y: String(yLine + 25), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, tickText(v))
+    }
   }
 
   // boundary marker
@@ -1630,11 +1773,20 @@ export function buildNumberLine(props) {
     }
   }
 
-  // interval endpoint circles, drawn over the ticks they may land on
+  // interval endpoint circles (or glyphs), drawn over the ticks they may land on
   for (const iv of intervals) {
     for (const key of ['from', 'to']) {
-      if (iv[key] === undefined) continue // unbounded ends carry no circle
-      const open = iv[`${key}Type`] === 'open'
+      if (iv[key] === undefined) continue // unbounded ends carry no mark
+      const type = iv[`${key}Type`]
+      if (type === 'paren' || type === 'bracket') {
+        const glyph = type === 'paren' ? (key === 'from' ? '(' : ')') : (key === 'from' ? '[' : ']')
+        add('text', {
+          x: fmtN(X(iv[key])), y: String(yLine + 7), textAnchor: 'middle',
+          fontSize: '22', fontWeight: '600', fill: 'currentColor',
+        }, glyph)
+        continue
+      }
+      const open = type === 'open'
       add('circle', {
         cx: fmtN(X(iv[key])), cy: String(yLine), r: String(DOT_R),
         ...(open

@@ -74,8 +74,14 @@ operative.
   figures are previewed as their eventual spec-first re-renders, non-gating
 - `npm run figures:status -- <dir>` — the figure-engine conversion queue:
   which pages are already spec-first (skip them) and which still carry
-  legacy `data-spec` figures or hand-written SVG with no spec; "convert this
-  chapter" starts here (workflow in `docs/subjects/math.md`)
+  legacy `data-spec` figures or hand-written SVG with no spec — every inline
+  `<svg>` counts, wrapped or bare; one carrying `data-pictorial` is a
+  picture the engine has no primitive for, kept by decision and not debt;
+  "convert this chapter" starts here (workflow in `docs/subjects/math.md`)
+- `npm run figures:numberlines -- [--dry-run] [--gallery out.html] <path>` —
+  rewrites hand-written number-line SVGs as `numberline` shortcodes when the
+  recovered spec reproduces the drawing (ticks, marker, shade, points,
+  title); skips, with a reason, what the builder cannot draw
 - `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
   rewrites legacy `data-spec` divs as `apfigure` shortcodes and diffs each
   re-render against the SVG it replaces: label drift is expected, geometry

@@ -35,75 +35,17 @@ shading in all the numbers to the right of 3, to show that all numbers
 greater than 3 are solutions. Because the number 3 itself is not a solution,
 we put an open parenthesis at 3.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 5 to 5 with an open parenthesis at 3 and shading extending to the right toward positive infinity, labeled x greater than 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="239.2" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-  <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; 3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 5 to 5 with an open parenthesis at 3 and shading extending to the right toward positive infinity, labeled x greater than 3.","min":-5,"max":5,"title":"x > 3","marker":{"at":3,"type":"paren"},"shade":"right"}
+{{< /apfigure >}}
 
 The graph of $x \geq 3$ is very much like the graph of $x > 3$, but now we
 need to show that 3 is a solution, too. We do that by putting a bracket at
 $x = 3$ instead of a parenthesis.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 5 to 5 with a closed bracket at 3 and shading extending to the right toward positive infinity, labeled x greater than or equal to 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="239.2" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="39" x2="54.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="39" x2="80.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="39" x2="107.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="39" x2="133.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="39" x2="186.4" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="39" x2="212.8" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="39" x2="239.2" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="39" x2="265.6" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ 3</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 5 to 5 with a closed bracket at 3 and shading extending to the right toward positive infinity, labeled x greater than or equal to 3.","min":-5,"max":5,"title":"x ≥ 3","marker":{"at":3,"type":"bracket"},"shade":"right"}
+{{< /apfigure >}}
 
 Notice that the open parenthesis symbol, $($, shows that the endpoint of the
 inequality is not included. The closed bracket symbol, $[$, shows that the
@@ -309,26 +251,9 @@ $$a \leq -5$$
 
 The solution in interval notation is $(-\infty, -5]$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Number line from negative 7 to negative 3 with a closed bracket at negative 5 and shading extending to the left toward negative infinity, labeled a less than or equal to negative 5." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="160" y1="45" x2="16" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−7</text>
-  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <text x="160" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">a ≤ −5</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line from negative 7 to negative 3 with a closed bracket at negative 5 and shading extending to the left toward negative infinity, labeled a less than or equal to negative 5.","min":-7,"max":-3,"title":"a ≤ −5","marker":{"at":-5,"type":"bracket"},"shade":"left"}
+{{< /apfigure >}}
 
 {{< fillin
   question="Solve the inequality $-8q < 32$. Enter the solution as an inequality."

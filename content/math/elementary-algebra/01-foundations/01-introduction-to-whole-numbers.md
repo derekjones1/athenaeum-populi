@@ -448,7 +448,7 @@ Since $2$ is prime, that branch is complete. $24$ is not prime, so we break
 it into $4$ and $6$. Neither is prime, so we break $4$ into $2$ and $2$, and
 $6$ into $2$ and $3$. All of these are prime, so we circle them:
 
-<svg viewBox="0 0 420 220" role="img" aria-label="A factor tree for 48. 48 branches into 2 (circled, prime) and 24. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 420px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 420 220" role="img" aria-label="A factor tree for 48. 48 branches into 2 (circled, prime) and 24. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 420px; display: block; margin: 1.5rem auto">
   <text x="200" y="20" text-anchor="middle" font-size="16" fill="currentColor">48</text>
   <line x1="190" y1="27" x2="124" y2="52" stroke="currentColor" stroke-width="1.5" />
   <line x1="210" y1="27" x2="285" y2="64" stroke="currentColor" stroke-width="1.5" />
@@ -504,7 +504,7 @@ We find two factors of $252$ that are not prime — $12$ and $21$ — and
 break each into two more factors. Continuing until all branches end in a
 prime:
 
-<svg viewBox="0 0 340 200" role="img" aria-label="A factor tree for 252. 252 branches into 12 and 21. 12 branches into 2 (circled) and 6; 6 branches into 2 and 3, both circled. 21 branches into 3 (circled) and 7 (circled)." style="max-width: 340px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 340 200" role="img" aria-label="A factor tree for 252. 252 branches into 12 and 21. 12 branches into 2 (circled) and 6; 6 branches into 2 and 3, both circled. 21 branches into 3 (circled) and 7 (circled)." style="max-width: 340px; display: block; margin: 1.5rem auto">
   <text x="170" y="20" text-anchor="middle" font-size="16" fill="currentColor">252</text>
   <line x1="156" y1="27" x2="100" y2="55" stroke="currentColor" stroke-width="1.5" />
   <line x1="184" y1="27" x2="240" y2="55" stroke="currentColor" stroke-width="1.5" />

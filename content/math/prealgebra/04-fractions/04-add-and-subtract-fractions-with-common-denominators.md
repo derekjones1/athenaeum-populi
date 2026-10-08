@@ -249,7 +249,7 @@ numerators and keep the denominator.
 
 ### Model fraction addition
 
-<svg viewBox="0 0 140 140" role="img" aria-label="A circle divided into 10 equal pie-shaped pieces. A group of 3 pieces is shaded dark, the next 4 pieces are shaded light, and the remaining pieces are unshaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 140 140" role="img" aria-label="A circle divided into 10 equal pie-shaped pieces. A group of 3 pieces is shaded dark, the next 4 pieces are shaded light, and the remaining pieces are unshaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 70 70 L 70.00 10.00 A 60 60 0 0 1 105.27 21.46 Z" fill="currentColor" fill-opacity="0.6" stroke="currentColor" stroke-width="1.4" />
   <path d="M 70 70 L 105.27 21.46 A 60 60 0 0 1 127.06 51.46 Z" fill="currentColor" fill-opacity="0.6" stroke="currentColor" stroke-width="1.4" />
   <path d="M 70 70 L 127.06 51.46 A 60 60 0 0 1 127.06 88.54 Z" fill="currentColor" fill-opacity="0.6" stroke="currentColor" stroke-width="1.4" />
@@ -270,7 +270,7 @@ numerators and keep the denominator.
   hint="Every piece is one tenth: count the dark and light pieces together and write that count over $10$."
 >}}
 
-<svg viewBox="0 0 140 140" role="img" aria-label="A circle divided into 8 equal pie-shaped pieces. A group of 3 pieces is shaded dark, the next 3 pieces are shaded light, and the remaining pieces are unshaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 140 140" role="img" aria-label="A circle divided into 8 equal pie-shaped pieces. A group of 3 pieces is shaded dark, the next 3 pieces are shaded light, and the remaining pieces are unshaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 70 70 L 70.00 10.00 A 60 60 0 0 1 112.43 27.57 Z" fill="currentColor" fill-opacity="0.6" stroke="currentColor" stroke-width="1.4" />
   <path d="M 70 70 L 112.43 27.57 A 60 60 0 0 1 130.00 70.00 Z" fill="currentColor" fill-opacity="0.6" stroke="currentColor" stroke-width="1.4" />
   <path d="M 70 70 L 130.00 70.00 A 60 60 0 0 1 112.43 112.43 Z" fill="currentColor" fill-opacity="0.6" stroke="currentColor" stroke-width="1.4" />
@@ -333,7 +333,7 @@ numerators and keep the denominator.
 
 ### Model fraction subtraction
 
-<svg viewBox="0 0 140 140" role="img" aria-label="A circle divided into 6 equal pie-shaped pieces. 5 of the pieces are shaded, 2 of those shaded pieces are crossed out, and 1 piece is unshaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 140 140" role="img" aria-label="A circle divided into 6 equal pie-shaped pieces. 5 of the pieces are shaded, 2 of those shaded pieces are crossed out, and 1 piece is unshaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
   <path d="M 70 70 L 70.00 10.00 A 60 60 0 0 1 121.96 40.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
   <path d="M 70 70 L 121.96 40.00 A 60 60 0 0 1 121.96 100.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
   <path d="M 70 70 L 121.96 100.00 A 60 60 0 0 1 70.00 130.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />

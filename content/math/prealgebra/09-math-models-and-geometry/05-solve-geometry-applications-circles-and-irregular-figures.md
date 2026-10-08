@@ -327,23 +327,9 @@ found by splitting it into rectangles, triangles, trapezoids, and circles
 
 ### Find the area of irregular figures
 
-<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A sideways U-shaped figure: a square 6 units on each side with a rectangular notch cut into the middle of its right side. The top edge is labeled 6, the left edge is labeled 6, the upper right vertical edge is labeled 2, the lower right vertical edge is labeled 2, and the notch&#39;s upper horizontal edge is labeled 3.","unit":34,"polygons":[{"points":[[0,0],[6,0],[6,2],[3,2],[3,4],[6,4],[6,6],[0,6]],"edgeLabels":[null,"2",null,null,null,"2","6","6"]}],"texts":[{"at":[4.5,3.45],"text":"3","anchor":"middle"}]}'>
-<svg role="img" aria-label="A sideways U-shaped figure: a square 6 units on each side with a rectangular notch cut into the middle of its right side. The top edge is labeled 6, the left edge is labeled 6, the upper right vertical edge is labeled 2, the lower right vertical edge is labeled 2, and the notch's upper horizontal edge is labeled 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276 276" width="276" height="276" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="240" x2="240" y2="240" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="240" y1="240" x2="240" y2="172" stroke="currentColor" stroke-width="1.5"/>
-  <text x="252" y="210" text-anchor="start" font-size="13" fill="currentColor">2</text>
-  <line x1="240" y1="172" x2="138" y2="172" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="138" y1="172" x2="138" y2="104" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="138" y1="104" x2="240" y2="104" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="240" y1="104" x2="240" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="252" y="74" text-anchor="start" font-size="13" fill="currentColor">2</text>
-  <line x1="240" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="138" y="22" text-anchor="middle" font-size="13" fill="currentColor">6</text>
-  <line x1="36" y1="36" x2="36" y2="240" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="142" text-anchor="end" font-size="13" fill="currentColor">6</text>
-  <text x="189" y="122.7" font-size="13" fill="currentColor" text-anchor="middle">3</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A sideways U-shaped figure: a square 6 units on each side with a rectangular notch cut into the middle of its right side. The top edge is labeled 6, the left edge is labeled 6, the upper right vertical edge is labeled 2, the lower right vertical edge is labeled 2, and the notch's upper horizontal edge is labeled 3.","unit":34,"polygons":[{"points":[[0,0],[6,0],[6,2],[3,2],[3,4],[6,4],[6,6],[0,6]],"edgeLabels":[null,"2",null,null,null,"2","6","6"]}],"texts":[{"at":[4.5,3.45],"text":"3","anchor":"middle"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the area of the irregular figure shown above, in square units."

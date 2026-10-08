@@ -61,7 +61,7 @@ $17$ is $1$ ten and $7$ ones; $26$ is $2$ tens and $6$ ones. Combined, that's
 $3$ tens and $13$ ones. Exchange $10$ of those ones for another ten, leaving
 $4$ tens and $3$ ones — that is, $40 + 3 = 43$. So $17 + 26 = 43$.
 
-<svg viewBox="0 0 530 104" role="img" aria-label="Base-10 blocks for 17 + 26. The first group, labeled 17, is one tens rod and seven ones blocks. A plus sign joins it to the second group, labeled 26: two tens rods and six ones blocks. An equals sign leads to the result, labeled 43: four tens rods and three ones blocks, the combined 3 tens and 13 ones after ten of the ones are exchanged for one more tens rod." style="max-width: 530px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 530 104" role="img" aria-label="Base-10 blocks for 17 + 26. The first group, labeled 17, is one tens rod and seven ones blocks. A plus sign joins it to the second group, labeled 26: two tens rods and six ones blocks. An equals sign leads to the result, labeled 43: four tens rods and three ones blocks, the combined 3 tens and 13 ones after ten of the ones are exchanged for one more tens rod." style="max-width: 530px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-rod-0102-ex" fill="none" stroke="currentColor" stroke-width="0.6">
       <line x1="12" y1="0" x2="12" y2="12" />
@@ -398,7 +398,7 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 
 ### Model addition of whole numbers
 
-<svg viewBox="0 0 340 56" role="img" aria-label="Base-10 blocks modeling an addition: a group of eight ones blocks, a plus sign, and a group of four ones blocks." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 340 56" role="img" aria-label="Base-10 blocks modeling an addition: a group of eight ones blocks, a plus sign, and a group of four ones blocks." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
   <rect x="34" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
   <rect x="58" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
@@ -421,7 +421,7 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
   hint="Count all the blocks. If there are 10 or more, exchange 10 ones for 1 tens rod, then read off the tens and the ones."
 >}}
 
-<svg viewBox="0 0 500 70" role="img" aria-label="Base-10 blocks modeling an addition: a group of one tens rod and six ones blocks, a plus sign, and a group of two tens rods and five ones blocks." style="max-width: 500px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 500 70" role="img" aria-label="Base-10 blocks modeling an addition: a group of one tens rod and six ones blocks, a plus sign, and a group of two tens rods and five ones blocks." style="max-width: 500px; width: 100%; display: block; margin: 1.5rem auto">
   <defs>
     <g id="ap-rod-0102" fill="none" stroke="currentColor" stroke-width="0.6">
       <line x1="12" y1="0" x2="12" y2="12" />

@@ -33,7 +33,7 @@ section, we will investigate methods for determining the domain and range of
 functions such as these.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A bar graph titled “Top-Five Grossing Horror Movies for years 2000 to 2013.” The vertical axis is inflation-adjusted gross in millions of dollars, from 0 to 350. I am Legend (2007) grossed about 291, Hannibal (2001) about 228, The Ring (2002) about 176, The Grudge (2004) about 141, and The Conjuring (2013) about 139." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 369" width="394" height="369" font-family="Helvetica, Arial, sans-serif">
+<svg data-pictorial role="img" aria-label="A bar graph titled “Top-Five Grossing Horror Movies for years 2000 to 2013.” The vertical axis is inflation-adjusted gross in millions of dollars, from 0 to 350. I am Legend (2007) grossed about 291, Hannibal (2001) about 228, The Ring (2002) about 176, The Grudge (2004) about 141, and The Conjuring (2013) about 139." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 369" width="394" height="369" font-family="Helvetica, Arial, sans-serif">
   <text x="227" y="18" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle">Top-Five Grossing Horror Movies</text>
   <text x="227" y="36" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle">for years 2000–2013</text>
   <line x1="74" y1="310.0" x2="380" y2="310.0" stroke="currentColor" stroke-width="0.4" opacity="0.25"/>
@@ -87,7 +87,7 @@ functions such as these.
 </div>
 
 <div class="ap-figure">
-<svg role="img" aria-label="A bar graph titled “Market Share of Horror Movies, by Year.” The vertical axis runs from 0% to 8%. Market share is about 4.4% in 2000, 4.8% in 2001, 3.2% in 2002, 4.8% in 2003, 5.1% in 2004, 5.7% in 2005, 6.0% in 2006, 7.1% in 2007, 2.9% in 2008, 5.5% in 2009, 4.7% in 2010, 4.0% in 2011, 2.6% in 2012, and 4.1% in 2013." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 372" width="430" height="372" font-family="Helvetica, Arial, sans-serif">
+<svg data-pictorial role="img" aria-label="A bar graph titled “Market Share of Horror Movies, by Year.” The vertical axis runs from 0% to 8%. Market share is about 4.4% in 2000, 4.8% in 2001, 3.2% in 2002, 4.8% in 2003, 5.1% in 2004, 5.7% in 2005, 6.0% in 2006, 7.1% in 2007, 2.9% in 2008, 5.5% in 2009, 4.7% in 2010, 4.0% in 2011, 2.6% in 2012, and 4.1% in 2013." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 372" width="430" height="372" font-family="Helvetica, Arial, sans-serif">
   <text x="229" y="18" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle">Market Share of Horror Movies,</text>
   <text x="229" y="36" font-size="14" font-weight="600" fill="currentColor" text-anchor="middle">by Year</text>
   <line x1="42" y1="310.0" x2="416" y2="310.0" stroke="currentColor" stroke-width="0.4" opacity="0.25"/>
@@ -170,7 +170,7 @@ for a "function machine" and the range as another "holding area" for the
 machine's products.
 
 <div class="ap-figure">
-<svg role="img" aria-label="A diagram of how a function relates two sets. A left oval labelled Domain holds a, b, and c; a right oval labelled Range holds x, y, and z. An arrow runs from b in the left oval into a funnel labelled Function machine, and a second arrow runs from the funnel to y in the right oval." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 208" width="360" height="208" font-family="Helvetica, Arial, sans-serif">
+<svg data-pictorial role="img" aria-label="A diagram of how a function relates two sets. A left oval labelled Domain holds a, b, and c; a right oval labelled Range holds x, y, and z. An arrow runs from b in the left oval into a funnel labelled Function machine, and a second arrow runs from the funnel to y in the right oval." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 208" width="360" height="208" font-family="Helvetica, Arial, sans-serif">
   <text x="70" y="34" font-size="13" fill="currentColor" text-anchor="middle">Domain</text>
   <text x="290" y="34" font-size="13" fill="currentColor" text-anchor="middle">Range</text>
   <text x="180" y="60" font-size="13" fill="currentColor" text-anchor="middle">Function</text>

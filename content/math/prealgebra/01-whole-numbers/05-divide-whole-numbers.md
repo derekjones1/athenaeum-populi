@@ -293,7 +293,7 @@ sixty-three times seven; the product of sixty-three and seven
 
 ### Model division of whole numbers
 
-<svg viewBox="0 0 560 130" role="img" aria-label="Fifteen round counters separated into groups of five, each group enclosed in its own outline." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 130" role="img" aria-label="Fifteen round counters separated into groups of five, each group enclosed in its own outline." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="25" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="200" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="375" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -314,7 +314,7 @@ sixty-three times seven; the product of sixty-three and seven
   hint="The divisor tells you how many counters go in each group; the quotient is the number of groups you can count."
 >}}
 
-<svg viewBox="0 0 560 230" role="img" aria-label="Twenty round counters separated into groups of four, each group enclosed in its own outline." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 230" role="img" aria-label="Twenty round counters separated into groups of four, each group enclosed in its own outline." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="25" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="200" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
   <rect x="375" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />

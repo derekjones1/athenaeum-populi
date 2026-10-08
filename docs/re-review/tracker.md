@@ -148,6 +148,27 @@ here on September 27: chapter 1 (2 items) and chapter 3 (1).
 | [ ] | KC `knowledge-check-01-06` | — | | | | |
 | [ ] | KC `knowledge-check-07-12` | — | | | | |
 
+## Figure conversion (after every row above)
+
+Hand-written inline SVG graphs and geometry become spec-first figures, one
+row per group, following "Figure conversion rows" in [README.md](README.md).
+Counts are the `hand-written SVG (no spec)` totals of `npm run figures:status
+-- content/math/<book>` on October 7, 2026 (166 in all); pictorial figures
+carry `data-pictorial` and are not counted. Re-run the status before a row
+and treat its output, not this table, as the list. The number lines the
+converter skipped (decimal labels over hundredth ticks, annotation arrows
+and braces, sign charts, posed-question points) are in these counts.
+
+| | Group | Pages (figures) | Fixed | Errata | Commit | Notes |
+|---|---|---|---|---|---|---|
+| [ ] | Prealgebra ch1, 5, 9 | 1.1 (2), 5.1 (6), 5.2 (1), 5.3 (1), 9.3 (6), 9.4 (1) — 17 | | | | number lines with annotations, geometry |
+| [ ] | Prealgebra ch11 | 11.1 (3), 11.2 (6), 11.3 (10), 11.4 (7) — 26 | | | | lines on grids |
+| [ ] | Elementary Algebra ch1, 3 | 1.1 (1), 1.3 (4), 1.8 (4), 3.4 (6) — 15 | | | | number lines with annotations, triangles and rectangles |
+| [ ] | Elementary Algebra ch4–5 | 4.2 (9), 4.3 (10), 4.4 (4), 5.1 (3), 5.4 (1), 5.6 (3) — 30 | | | | lines, intercepts, slope triangles, shaded systems |
+| [ ] | Elementary Algebra ch7–10 | 7.6 (1), 8.7 (2), 10.4 (6), 10.5 (18) — 27 | | | | geometry applications, parabolas |
+| [ ] | Intermediate Algebra ch1–7 | 1.2 (3), 1.4 (3), 2.3 (4), 2.7 (1), 3.4 (1), 4.2 (2), 4.3 (1), 6.5 (2), 7.6 (1) — 18 | | | | number lines with annotations, geometry, a sign chart |
+| [ ] | Intermediate Algebra ch9–10 | 9.6 (18), 9.7 (14), 10.1 (1) — 33 | | | | parabolas by properties and transformations |
+
 ## Completed
 
 Biology 2e (47 chapters, 8 unit checks) and Microbiology (26 chapters, 5

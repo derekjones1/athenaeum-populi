@@ -243,7 +243,7 @@ numbers sit inside whole numbers, which sit inside integers, which sit
 inside rational numbers; rational numbers and irrational numbers together
 make up the real numbers.
 
-<svg viewBox="0 0 480 320" role="img" aria-label="A nested diagram of the real numbers. The outer box, real numbers, splits into two regions: rational numbers and irrational numbers. Inside rational numbers is a smaller nested box for integers, inside that a box for whole numbers, and inside that a box for counting numbers." style="max-width: 420px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 480 320" role="img" aria-label="A nested diagram of the real numbers. The outer box, real numbers, splits into two regions: rational numbers and irrational numbers. Inside rational numbers is a smaller nested box for integers, inside that a box for whole numbers, and inside that a box for counting numbers." style="max-width: 420px; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="460" height="300" fill="none" stroke="currentColor" stroke-width="1.5" />
   <text x="20" y="28" font-size="14" fill="currentColor">Real Numbers</text>
   <rect x="20" y="40" width="270" height="260" fill="none" stroke="currentColor" stroke-width="1.5" />

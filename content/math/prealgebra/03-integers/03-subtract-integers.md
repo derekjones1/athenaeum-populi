@@ -33,7 +33,7 @@ $-5-3$, and $5-(-3)$.
 **Example.** Model $5 - 3$. Start with $5$ positives. Take away $3$
 positives. There are $2$ positives left, so $5 - 3 = 2$.
 
-<svg viewBox="0 0 220 70" role="img" aria-label="Five blue positive counters in a row; the first three are circled to show they are taken away, and the last two are set apart." style="max-width: 220px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 220 70" role="img" aria-label="Five blue positive counters in a row; the first three are circled to show they are taken away, and the last two are set apart." style="max-width: 220px; display: block; margin: 1.5rem auto">
   <ellipse cx="58" cy="35" rx="55" ry="24" fill="none" stroke="currentColor" stroke-width="1.5" />
   <circle cx="26" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="58" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="90" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="154" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="186" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
@@ -360,7 +360,7 @@ the same as adding its opposite.
 
 ### Model subtraction of integers
 
-<svg viewBox="0 0 280 70" role="img" aria-label="A row of eight blue positive counters. The first two are circled to show that they are being taken away, and are set apart from the rest." style="max-width: 280px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 280 70" role="img" aria-label="A row of eight blue positive counters. The first two are circled to show that they are being taken away, and are set apart from the rest." style="max-width: 280px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="100" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="132" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="164" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="196" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="228" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="260" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <ellipse cx="36" cy="35" rx="34" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
@@ -372,7 +372,7 @@ the same as adding its opposite.
   hint="Take the two circled positives away and count the positives that are left."
 >}}
 
-<svg viewBox="0 0 180 70" role="img" aria-label="A row of five red negative counters. The first one is circled to show that it is being taken away, and is set apart from the rest." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 180 70" role="img" aria-label="A row of five red negative counters. The first one is circled to show that it is being taken away, and is set apart from the rest." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="21" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="64" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="96" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="128" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="160" cy="35" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <ellipse cx="21" cy="35" rx="19" ry="22" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
@@ -384,7 +384,7 @@ the same as adding its opposite.
   hint="Take the circled negative away, then count the negatives that are left."
 >}}
 
-<svg viewBox="0 0 324 110" role="img" aria-label="Five red negative counters, and beside them four added neutral pairs: four red negative counters above four blue positive counters. The four blue counters are circled to show that they are being taken away." style="max-width: 324px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 324 110" role="img" aria-label="Five red negative counters, and beside them four added neutral pairs: four red negative counters above four blue positive counters. The four blue counters are circled to show that they are being taken away." style="max-width: 324px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="52" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="84" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="116" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="148" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="200" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="232" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="264" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="296" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
   <circle cx="200" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="232" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="264" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="296" cy="78" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
@@ -398,7 +398,7 @@ the same as adding its opposite.
   hint="Take the circled positives away, then count the counters that are left and note their color."
 >}}
 
-<svg viewBox="0 0 420 110" role="img" aria-label="Eight blue positive counters, and beside them four added neutral pairs: four blue positive counters above four red negative counters. The four red counters are circled to show that they are being taken away." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 420 110" role="img" aria-label="Eight blue positive counters, and beside them four added neutral pairs: four blue positive counters above four red negative counters. The four red counters are circled to show that they are being taken away." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
   <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="84" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="116" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="148" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="180" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="212" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="244" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="296" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="328" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="360" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="392" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
   <circle cx="296" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="328" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="360" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="392" cy="78" r="13" fill="none" stroke="#c0392b" stroke-width="2" />

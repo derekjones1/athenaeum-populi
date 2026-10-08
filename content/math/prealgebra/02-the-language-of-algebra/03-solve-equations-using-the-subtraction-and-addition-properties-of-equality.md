@@ -89,7 +89,7 @@ the right side. Both sides of the desk have the same number of counters, but
 some counters are hidden in the envelope. Can you tell how many counters are
 in the envelope?
 
-<svg viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with three loose counters below it. On the right side, eight loose counters: a group of five above a group of three." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with three loose counters below it. On the right side, eight loose counters: a group of five above a group of three." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -104,7 +104,7 @@ right, so I can take them away from both sides. That leaves five counters on
 the right, so there must be $5$ counters in the envelope." The figure below
 shows this process.
 
-<svg viewBox="0 0 560 175" role="img" aria-label="Two divided boxes joined by an arrow. In the first box, the three counters below the envelope on the left and the group of three counters at the bottom of the right side are circled, each with an arrow showing it taken out of the box. In the second box, the envelope is alone on the left and five counters remain on the right." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 175" role="img" aria-label="Two divided boxes joined by an arrow. In the first box, the three counters below the envelope on the left and the group of three counters at the bottom of the right side are circled, each with an arrow showing it taken out of the box. In the second box, the envelope is alone on the left and five counters remain on the right." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -132,7 +132,7 @@ counters on the left side of the desk is $x + 3$. On the right side of the
 desk are $8$ counters. We are told that $x + 3$ is equal to $8$, so our
 equation is $x + 3 = 8$.
 
-<svg viewBox="0 0 260 175" role="img" aria-label="The same divided box: an envelope and three loose counters on the left, eight loose counters on the right. Below the box, the left side is labeled x + 3, the dividing line is labeled with an equal sign, and the right side is labeled 8, so the model is the equation x + 3 = 8." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 175" role="img" aria-label="The same divided box: an envelope and three loose counters on the left, eight loose counters on the right. Below the box, the left side is labeled x + 3, the dividing line is labeled with an equal sign, and the right side is labeled 8, so the model is the equation x + 3 = 8." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -152,7 +152,7 @@ is correct — five counters in the envelope plus three more equals eight.
 **Example.** Write an equation modeled by the envelopes and counters, and
 then solve the equation:
 
-<svg viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with four loose counters below it. On the right side, five loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with four loose counters below it. On the right side, five loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -165,7 +165,7 @@ counters, so we have $x + 4$. On the right, there are $5$ counters. The two
 sides are equal: $x + 4 = 5$. Solve the equation by subtracting $4$ counters
 from each side:
 
-<svg viewBox="0 0 560 175" role="img" aria-label="Two divided boxes joined by an arrow. In the first box, the four counters below the envelope on the left and four of the five counters on the right are circled, each group with an arrow showing it taken out of the box. In the second box, the envelope is alone on the left and one counter remains on the right." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 560 175" role="img" aria-label="Two divided boxes joined by an arrow. In the first box, the four counters below the envelope on the left and four of the five counters on the right are circled, each group with an arrow showing it taken out of the box. In the second box, the envelope is alone on the left and one counter remains on the right." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -191,7 +191,7 @@ $x + 4 - 4 = 5 - 4$, so $x = 1$. **Check:** substitute $1$ for $x$:
 $1 + 4 = 5$. ✓ Since $x = 1$ makes the statement true, $1$ is indeed a
 solution.
 
-<svg viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with one loose counter below it. On the right side, seven loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with one loose counter below it. On the right side, seven loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -207,7 +207,7 @@ solution.
   hint="Write $x$ plus the loose counters on the left, set it equal to the counters on the right, then take the same number of counters away from each side."
 >}}
 
-<svg viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with three loose counters below it. On the right side, four loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with three loose counters below it. On the right side, four loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -451,7 +451,7 @@ yes
 
 ### Model the Subtraction Property of Equality
 
-<svg viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with two loose counters below it. On the right side, five loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with two loose counters below it. On the right side, five loose counters." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
@@ -467,7 +467,7 @@ yes
   hint="The left side is $x$ plus the loose counters beside the envelope; set it equal to the right side, then subtract the loose counters from both sides."
 >}}
 
-<svg viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with three loose counters below it. On the right side, six loose counters in two columns of three." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 0 260 155" role="img" aria-label="A box divided in half by a vertical line. On the left side, an envelope holding an unknown number of counters, with three loose counters below it. On the right side, six loose counters in two columns of three." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
   <rect x="10" y="10" width="240" height="135" fill="none" stroke="currentColor" stroke-width="1.5" />
   <line x1="130" y1="10" x2="130" y2="145" stroke="currentColor" stroke-width="1.5" />
   <rect x="30" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />

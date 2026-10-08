@@ -82,7 +82,7 @@ Some people picture a balance scale when they solve equations: one mass on
 each side is balanced; two masses on each side is balanced; but one mass on
 one side and two masses on the other is unbalanced.
 
-<svg viewBox="0 40 420 116" role="img" aria-label="Three balance scales. The first has one mass on each end of its beam and the beam is level: balanced. The second has two masses on each end and the beam is level: balanced. The third has one mass on the left end and two masses on the right end, and the beam tips down on the right, the side with two masses: unbalanced." style="max-width: 420px; display: block; margin: 1.5rem auto">
+<svg data-pictorial viewBox="0 40 420 116" role="img" aria-label="Three balance scales. The first has one mass on each end of its beam and the beam is level: balanced. The second has two masses on each end and the beam is level: balanced. The third has one mass on the left end and two masses on the right end, and the beam tips down on the right, the side with two masses: unbalanced." style="max-width: 420px; display: block; margin: 1.5rem auto">
   <line x1="42" y1="110" x2="98" y2="110" stroke="currentColor" stroke-width="2" />
   <polygon points="70,72 56,110 84,110" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
   <g>
