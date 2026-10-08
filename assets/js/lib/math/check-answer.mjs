@@ -439,6 +439,8 @@ const primeSubscript = (marks) => {
   for (const mark of marks.match(PRIME_MARK) ?? []) count += mark === '\\doubleprime' ? 2 : 1;
   return `_{${'p'.repeat(count)}}`;
 };
+/** A symbol foldPrimes() has folded: `x_{p}`, `\\theta_{pp}`. */
+const PRIMED_SYMBOL = String.raw`(?:\\[a-zA-Z]+|[a-zA-Z])_\{p+\}`;
 export function foldPrimes(raw) {
   const symbol = String.raw`((?:\\[a-zA-Z]+|[a-zA-Z]))`;
   return String(raw ?? '')
@@ -451,6 +453,22 @@ export function foldPrimes(raw) {
     .replace(
       new RegExp(String.raw`${symbol}((?:\s*\^?(?:'|(?:\\doubleprime|\\prime)(?![a-zA-Z])))+)`, 'g'),
       (m, v, marks) => `${v}${primeSubscript(marks)}`,
+    )
+    // A primed letter alone in parentheses: the group only holds the prime
+    // apart from the exponent, so `(x')^2` — MathLive's
+    // `\left(x^{\prime}\right)^2`, brace-wrapped `{(x')}^2` — is `x'^2`. Read
+    // as a group, it failed `conic-standard-form` against the rotated-axes key
+    // `\frac{x'^2}{4}-\frac{y'^2}{9}=1` (Precalculus chapters 9–10 re-review,
+    // October 6, 2026). Never after a letter, which would be an application.
+    // A command name before the group (`\cdot`, `\sin`) is no application;
+    // a space keeps the letter off its name.
+    .replace(
+      new RegExp(String.raw`(?<![}a-zA-Z])\{\s*(?:\\left\s*)?\(\s*(${PRIMED_SYMBOL})\s*(?:\\right\s*)?\)\s*\}(?=\s*\^)`, 'g'),
+      '$1',
+    )
+    .replace(
+      new RegExp(String.raw`(?<!(?<!\\[a-zA-Z]*)[a-zA-Z])(?:\\left\s*)?\(\s*(${PRIMED_SYMBOL})\s*(?:\\right\s*)?\)`, 'g'),
+      (m, primed, offset, text) => `${/[a-zA-Z]$/.test(text.slice(0, offset)) ? ' ' : ''}${primed}`,
     );
 }
 
@@ -2500,9 +2518,23 @@ function exprToPolynomial(expr, vars) {
       for (let i = 0; i < exponent.re; i += 1) power = polyMul(power, base, depth);
       return power;
     }
+    // A trigonometric application is one opaque variable when the caller
+    // names it among `vars` (reducedPolynomialQuotient): the `\cos\theta` of
+    // `2+4\cos\theta`.
+    if (TRIG_OPERATORS.has(e.operator)) {
+      const index = vars.indexOf(trigAtomName(e));
+      return index === -1 ? null : polyVariable(index, depth);
+    }
     return null;
   };
   return convert(expr);
+}
+
+/** The pseudo-variable name a trigonometric application reads as. */
+const trigAtomName = (expr) => `#${expr.toString()}`;
+function collectTrigAtoms(expr, out) {
+  if (TRIG_OPERATORS.has(expr.operator)) out.add(trigAtomName(expr));
+  else for (const op of expr.ops ?? []) collectTrigAtoms(op, out);
 }
 
 /**
@@ -2514,7 +2546,15 @@ function reducedPolynomialQuotient(numeratorExpr, denominatorExpr) {
   const vars = new Set();
   collectSymbols(numeratorExpr, vars);
   collectSymbols(denominatorExpr, vars);
-  const sorted = [...vars].sort();
+  // Each trigonometric application reads as one more variable, so a common
+  // factor across a trig sum is seen: the unreduced polar conic
+  // `\frac{12}{2+4\cos\theta}` failed open (the reader returned null on
+  // `\cos`) and passed `reduced-fraction` against `\frac{6}{1+2\cos\theta}`
+  // (Precalculus chapters 9–10 re-review, October 6, 2026).
+  const atoms = new Set();
+  collectTrigAtoms(numeratorExpr, atoms);
+  collectTrigAtoms(denominatorExpr, atoms);
+  const sorted = [...[...vars].sort(), ...[...atoms].sort()];
   const numerator = exprToPolynomial(numeratorExpr, sorted);
   const denominator = exprToPolynomial(denominatorExpr, sorted);
   if (numerator === null || denominator === null) return true;
@@ -3568,6 +3608,80 @@ function loneFactor(text) {
 /** A decimal point between digits, or opening/closing a numeral — anywhere at all. */
 const WRITES_A_DECIMAL = /\d\s*\.|\.\s*\d/;
 
+/** Top-level terms, each keeping the sign written before it. */
+function signedTopLevelTerms(text) {
+  const terms = [];
+  let depth = 0;
+  let term = '';
+  for (const char of text) {
+    if (char === '{' || char === '(' || char === '[') depth += 1;
+    else if (char === '}' || char === ')' || char === ']') depth -= 1;
+    if (depth === 0 && (char === '+' || char === '-') && term.trim() && !/[+-]\s*$/.test(term)) {
+      terms.push(term.trim());
+      term = '';
+    }
+    term += char;
+  }
+  if (term.trim()) terms.push(term.trim());
+  return terms;
+}
+
+/**
+ * A minus sign left written against another on a fraction: a one-term
+ * denominator with a minus (`\frac{-x-3}{-2}`, `\frac{5}{-2x}`), or a
+ * numerator whose terms are all negative under a minus before the fraction or
+ * over an all-negative denominator (`-\frac{-x-3}{2}`, `x-\frac{-3}{2}`).
+ * The half-worked solve of x-2y=-3 for y passed `no-like-terms` against the
+ * dependent-system key `(x,\frac{x+3}{2})` (Precalculus 9.1, October 6,
+ * 2026). One sign is finished writing: `\frac{-x-3}{2}`, `-\frac{x+3}{2}`.
+ */
+function writesUnreducedFractionSign(bare) {
+  const allNegative = (half) => {
+    const terms = signedTopLevelTerms(half.trim());
+    return terms.length > 0 && terms.every((term) => term.startsWith('-'));
+  };
+  for (const opener of bare.matchAll(/\\[tdc]?frac(?![a-zA-Z])/g)) {
+    const numerator = readTexArgument(bare, opener.index + opener[0].length);
+    const denominator = numerator && readTexArgument(bare, numerator[1]);
+    if (!denominator) continue;
+    const below = signedTopLevelTerms(denominator[0].trim());
+    if (below.length === 1 && below[0].startsWith('-')) return true;
+    if (allNegative(numerator[0])
+      && (/-\s*$/.test(bare.slice(0, opener.index)) || allNegative(denominator[0]))) return true;
+  }
+  return false;
+}
+
+/**
+ * A coefficient standing before a parenthesized sum with a factor it has in
+ * common still uncancelled: `\frac13(6x+15)` (the 3 divides the sum's
+ * content) and `6(\frac73x-2)` (the 6 shares the 3 of a fraction inside) are
+ * `2x+5` and `14x-12` with the distribution left undone, and passed
+ * `no-like-terms` against `(x,2x+5)` and `(x,2(7x-6))` (Precalculus 9.1,
+ * October 6, 2026). A finished factored coefficient stays legal:
+ * `2(7x-6)`, `\frac12(x+3)`, `3(\frac12x+1)`.
+ */
+function writesUncancelledCoefficient(bare) {
+  for (const written of signedTopLevelTerms(bare)) {
+    const factors = parseShapeFactors(written.replace(/^[+-]\s*/, ''));
+    if (!factors || factors.length !== 2 || !isExactScalarFactor(factors[0])) continue;
+    const group = factors[1];
+    if (group.exponent !== null || group.atom.kind !== 'group' || splitTopLevelTerms(group.atom.text).filter((t) => t.trim()).length < 2) continue;
+    const scalar = factors[0].atom;
+    const top = scalar.kind === 'number' ? Number(scalar.text) : Number(scalar.numerator);
+    const bottom = scalar.kind === 'number' ? 1 : Number(scalar.denominator);
+    const content = integerContent(group.atom.text);
+    if (bottom > 1 && Number.isInteger(content) && content > 0 && gcd(bottom, content) > 1) return true;
+    for (const fraction of group.atom.text.matchAll(NUMERAL_FRACTION_ANY_BRACING)) {
+      const opener = fraction[0].match(/^\\[tdc]?frac/)[0].length;
+      const over = readTexArgument(fraction[0], opener);
+      const under = over && Number(readTexArgument(fraction[0], over[1])?.[0].trim());
+      if (top > 1 && Number.isInteger(under) && gcd(top, under) > 1) return true;
+    }
+  }
+  return false;
+}
+
 /**
  * Is every numeral-coefficient fraction the response writes in lowest terms,
  * with integer halves? Read per top-level term, on each `\frac{A}{B}` outside
@@ -3584,6 +3698,7 @@ const WRITES_A_DECIMAL = /\d\s*\.|\.\s*\d/;
  * `distributed` and `no-like-terms`, the tokens those asks declare.
  */
 function termFractionsReduced(latex) {
+  if (writesUnreducedFractionSign(bareLatex(latex))) return false;
   for (const term of splitTopLevelTerms(bareLatex(latex))) {
     let depth = 0;
     for (let i = 0; i < term.length; i += 1) {
@@ -3632,6 +3747,21 @@ function termFractionsReduced(latex) {
         if (halves.some((half) => /\\[tdc]?frac(?![a-zA-Z])/.test(half))) return false;
         const contents = halves.map(integerContent);
         if (contents.every(Number.isInteger) && gcd(contents[0], contents[1]) > 1) return false;
+        // …and its polynomial factors cancelled: a partial-fraction term
+        // split but not reduced, `\frac{6x-6}{(x-1)^2}` or `\frac{x-2}{(x-2)^2}`,
+        // and the half-done `\frac{x^2+3x+2}{(x+2)(x^2+x+3)}` beside
+        // `\frac{3}{x+2}`, passed `expanded no-like-terms` against their
+        // decompositions (Precalculus 9.4, October 6, 2026). The polynomial
+        // gcd fails open on a half it cannot read, as `reduced-fraction` does.
+        const parsed = halves.map((half) => {
+          try {
+            const expr = parseLatex(preprocess(half));
+            return expr.isValid ? expr : null;
+          } catch {
+            return null;
+          }
+        });
+        if (parsed.every(Boolean) && !reducedPolynomialQuotient(parsed[0], parsed[1])) return false;
       }
       i = denominator[1] - 1;
     }
@@ -5157,6 +5287,14 @@ const FORM_PREDICATES = {
     // sum (writesUnfinishedTerms, Precalculus chapters 5–6 re-review,
     // October 4, 2026).
     if (writesUnfinishedTerms(bareLatex(latex))) return false;
+    // …and a factor of 1 written after the term, as `1x` is refused before
+    // it: `z\cdot1` passed as the free coordinate of the dependent-system key
+    // `(2z-6,z+1,z)` (Precalculus chapters 9–10 re-review, October 6, 2026).
+    // Scientific notation's mantissa 1 (`1\times10^{-3}`) is its own writing.
+    if (WRITES_TIMES_ONE.test(bareLatex(latex).replace(/(?<![\d.])1\s*(?:\\cdot|\\times)\s*10\s*\^/g, '10^'))) return false;
+    // …and a coefficient before a sum with a factor still to cancel
+    // (writesUncancelledCoefficient): `\frac13(6x+15)`, `6(\frac73x-2)`.
+    if (writesUncancelledCoefficient(bareLatex(latex))) return false;
     // …and a trigonometric function's argument is a sum of terms too, held to
     // the same rules: `4\sin(\frac{2\pi}{10}x-\frac{\pi}{5})+4` and
     // `4\tan(\frac{\pi}{\frac{\pi}{2}}x)` passed against
@@ -5207,23 +5345,7 @@ const FORM_PREDICATES = {
     if (expr.operator !== 'Add') return true; // a single term has nothing to combine
     const signatures = new Set();
     for (const term of expr.ops) {
-      const parts = [];
-      const walk = (e) => {
-        if (e.operator === 'Multiply') e.ops.forEach(walk);
-        else if (e.operator === 'Negate') walk(e.ops[0]);
-        else if (e.isNumberLiteral) parts.push(...radicalParts(e.json));
-        else if (e.operator === 'Divide' && e.ops[1].isNumberLiteral && radicalParts(e.ops[1].json).length === 0) {
-          // A numeral denominator is part of the coefficient:
-          // `\frac{\sqrt2}{2}` and `\frac{3\sqrt2}{4}` are like terms.
-          walk(e.ops[0]);
-        } else {
-          const base = e.operator === 'Power' ? e.ops[0] : e;
-          const power = e.operator === 'Power' ? e.ops[1].toString() : '1';
-          parts.push(`${base.toString()}^${power}`);
-        }
-      };
-      walk(term);
-      const signature = parts.sort().join('*') || 'constant';
+      const signature = likeTermSignature(term);
       if (signatures.has(signature)) return false;
       signatures.add(signature);
     }
@@ -5280,6 +5402,17 @@ const FORM_PREDICATES = {
     // 2026, round 2) — slope-intercept form's `2x-(-3)` rule, here for every
     // term. A group holding a sum (`-(x+1)`) is not this.
     if (writesSignedGroupTerm(bare)) return false;
+    // A finished monomial is already in expanded form, as the bare numeral
+    // is: the dependent-system key `(2z-6,z+1,z)` failed `expanded` against
+    // itself for its free coordinate `z` (a lone term parses as no sum), so
+    // the polynomial-tuple composition `expanded distributed no-like-terms`
+    // refused every general solution (Precalculus chapters 9–10 re-review,
+    // October 6, 2026). Only ONE written term that `single-term` passes and
+    // that writes no product of factors: `(2)(z)`, `z\cdot2`, `(2x)(3x^2)`,
+    // `x^2x^3`, `x(x+1)`, `(x+1)^2` and `\frac{4z}{2}` still fail, and the
+    // padded `z+0` is two written terms, read below.
+    if (splitTopLevelTerms(bare).length === 1 && !writesFactorProduct(bare)
+      && FORM_PREDICATES['single-term'](latex)) return true;
     const written = terms.length === 1 && terms[0] !== bare ? terms[0] : latex;
     try {
       const expr = parseLatex(preprocess(written));
@@ -6565,6 +6698,27 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
   const { tokens, valid } = parseAnswerForm(spec);
   const general = describeAnswerForm(spec);
   if (!valid || !tokens.length) return general;
+  // A `solved:<v>` composition whose response is already solved for v is told
+  // only what the side still needs: `r=\frac{24}{4+6\sin\theta}` was told
+  // "now write it solved for r, with r alone on one side with like terms
+  // combined" (Precalculus 10.5, October 6, 2026).
+  const solvedToken = tokens.find((token) => SOLVED_TOKEN.test(token));
+  if (solvedToken && tokens.length > 1 && !tokens.some((token) => EQUATION_FORM_TOKENS.has(token))) {
+    const variable = solvedToken.match(SOLVED_TOKEN)[1];
+    const side = solvedForSide(preprocess(studentRaw ?? ''), variable);
+    if (side !== null) {
+      const keySide = answerRaw === undefined ? undefined : solvedForSide(preprocess(answerRaw), variable) ?? answerRaw;
+      return describeFormFeedback(side, tokens.filter((token) => token !== solvedToken).join(' '), keySide);
+    }
+  }
+  // A fraction left unreduced, or written inside a fraction, is what
+  // `no-like-terms` and `distributed` refused, not uncombined terms: say so
+  // (the partial-fraction term `\frac{6x-6}{(x-1)^2}`, the polar
+  // `\frac{6}{1+\frac32\sin\theta}`; Precalculus chapters 9–10 re-review).
+  if (tokens.some((token) => token === 'no-like-terms' || token === 'distributed')
+    && (!termFractionsReduced(studentRaw ?? '') || writesCompoundFraction(bareLatex(studentRaw ?? '')))) {
+    return 'That value is right — now reduce each fraction in it, with no fraction written inside a fraction.';
+  }
   if (tokens.includes('exponential-model') && answerRaw !== undefined && overPreciseModel(studentRaw, answerRaw)) {
     return 'That model is right — now round each number in it to the places the question asks for.';
   }
@@ -7147,11 +7301,28 @@ function independentCoordinateSigns(member, marks) {
 function plusMinusBranches(member) {
   const marks = member.match(PLUS_MINUS) ?? [];
   if (marks.length === 0) return [member];
+  // A `\mp` beside a `\pm` pairs the signs: `(\pm\frac{3\sqrt2}{2},\mp\frac{3\sqrt2}{2})`
+  // is the two points of a key, the upper sign of each mark together and the
+  // lower together. It graded `incorrect` against that two-point key
+  // (Precalculus 9.3, October 6, 2026).
+  if (marks.length > 1 && marks.some((mark) => mark === '\\mp' || mark === '∓')) return correlatedSignBranches(member);
   if (marks.length > 1) {
     if (!independentCoordinateSigns(member, marks)) return null;
     return firstSignBranches(member, marks[0]).flatMap(plusMinusBranches);
   }
   return firstSignBranches(member, marks[0]);
+}
+
+function correlatedSignBranches(member) {
+  const branch = (upper) => {
+    let text = member;
+    for (let mark = text.match(new RegExp(PLUS_MINUS.source)); mark; mark = text.match(new RegExp(PLUS_MINUS.source))) {
+      const [negative, positive] = firstSignBranches(text, mark[0]);
+      text = ((mark[0] === '\\mp' || mark[0] === '∓') === upper) ? negative : positive;
+    }
+    return text;
+  };
+  return [branch(true), branch(false)];
 }
 
 function firstSignBranches(member, mark) {
@@ -7230,6 +7401,10 @@ export function checkForm(studentRaw, spec, answerRaw) {
     && !EQUATION_FORM_TOKENS.has(token) && !SOLVED_TOKEN.test(token);
   const endpoints = coordinates === null && tokens.some((token) => ENDPOINT_FORM_TOKENS.has(token))
     ? solutionSetEndpoints(studentRaw, answerRaw) : null;
+  // A polynomial shape token reads each side of an equation key (SIDE_FORM_TOKENS).
+  const equationSides = coordinates === null && answerRaw !== undefined
+    && tokens.some((token) => SIDE_FORM_TOKENS.has(token)) && topLevelEquationSides(preprocess(answerRaw)) !== null
+    ? topLevelEquationSides(studentRaw) : null;
   return tokens.every((token) => {
     if (bounds !== null && distributesOverBounds(token)) {
       return bounds.every((bound) => checkFormToken(bound, token, answerRaw));
@@ -7247,8 +7422,76 @@ export function checkForm(studentRaw, spec, answerRaw) {
         && PLAIN_NUMBER_KEY.test(preprocess(keyMembers[i]).trim()) && PLAIN_NUMBER_KEY.test(preprocess(member).trim());
       return coordinates.every((member, i) => roundedPlace(member, i) || checkFormToken(member, token, keyMembers[i]));
     }
+    if (equationSides !== null && SIDE_FORM_TOKENS.has(token)) {
+      if (token === 'no-like-terms' && likeTermsAcrossSides(equationSides)) return false;
+      return equationSides.every((side) => checkFormToken(side, token, answerRaw));
+    }
     return checkFormToken(studentRaw, token, answerRaw);
   });
+}
+
+/**
+ * What a parsed term is a multiple of — its variable and radical part with
+ * the numeral coefficient dropped (`'constant'` for a number): two terms with
+ * one signature are like terms. `\frac{\sqrt2}{2}` and `\frac{3\sqrt2}{4}`
+ * share one, a numeral denominator being part of the coefficient.
+ */
+function likeTermSignature(term) {
+  const parts = [];
+  const walk = (e) => {
+    if (e.operator === 'Multiply') e.ops.forEach(walk);
+    else if (e.operator === 'Negate') walk(e.ops[0]);
+    else if (e.isNumberLiteral) parts.push(...radicalParts(e.json));
+    else if (e.operator === 'Divide' && e.ops[1].isNumberLiteral && radicalParts(e.ops[1].json).length === 0) {
+      walk(e.ops[0]);
+    } else {
+      const base = e.operator === 'Power' ? e.ops[0] : e;
+      const power = e.operator === 'Power' ? e.ops[1].toString() : '1';
+      parts.push(`${base.toString()}^${power}`);
+    }
+  };
+  walk(term);
+  return parts.sort().join('*') || 'constant';
+}
+
+/**
+ * Like terms written on BOTH sides of an equation, a collection not yet made:
+ * `4x^2+4y^2=1+2x+x^2` passed `no-like-terms` read side by side against the
+ * polar-to-rectangular key `3x^2+4y^2-2x-1=0` (Precalculus 10.5, October 6,
+ * 2026). A side written as 0 holds no term.
+ */
+function likeTermsAcrossSides(sides) {
+  const sets = [];
+  for (const side of sides) {
+    let expr;
+    try {
+      expr = parseLatex(preprocess(side));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    const terms = (expr.operator === 'Add' ? expr.ops : [expr]).filter((term) => !(term.isNumberLiteral && term.re === 0 && (term.im ?? 0) === 0));
+    sets.push(new Set(terms.map(likeTermSignature)));
+  }
+  return [...sets[0]].some((signature) => sets[1].has(signature));
+}
+
+/**
+ * The polynomial shape tokens read each side of an equation key: the
+ * general-form keys of rotated conics (`7x'^2+9y'^2-4=0`) failed `expanded`
+ * against themselves — an equation parses as no sum — and `no-like-terms`
+ * took the whole equation as one term, so the rotation substitution typed
+ * unworked and `8x'^2-x'^2+9y'^2-4=0` graded `correct` under every token a
+ * key could declare (Precalculus 10.4, October 6, 2026). Read only when the
+ * key and the response are each exactly one equation; a one-letter label is
+ * stripped before the form check ever sees it (variableLabelValue).
+ */
+const SIDE_FORM_TOKENS = new Set(['expanded', 'distributed', 'no-like-terms', 'polynomial']);
+function topLevelEquationSides(latex) {
+  const text = String(latex ?? '');
+  if (/[<>]|\\(?:le|ge|leq|geq|leqslant|geqslant|ne|neq|lt|gt|approx)(?![a-zA-Z])|[≤≥≠]/.test(text)) return null;
+  const sides = splitAtTopLevel(text, /^=/);
+  return sides.length === 2 && sides.every((side) => side.trim()) ? sides.map((side) => side.trim()) : null;
 }
 
 /**
@@ -7894,7 +8137,9 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
     .replace(CURRENCY_PREFIX, '$1');
   const verdict = gradeResponse(unpriced, answerRaw, options);
   if (verdict !== 'incorrect' && verdict !== 'invalid') return verdict;
-  const tail = preprocess(unpriced).match(UNIT_TAIL);
+  // A fraction with the unit, `\frac{9}{4}\text{ feet}` against `2.25`, is
+  // the right number with a unit too (Precalculus 10.3, October 6, 2026).
+  const tail = preprocess(unpriced).match(UNIT_TAIL) ?? String(unpriced ?? '').trim().match(FRACTION_UNIT_TAIL);
   if (tail && gradeResponse(tail[1], answerRaw, options) === 'correct') return 'unit';
   return verdict;
 }

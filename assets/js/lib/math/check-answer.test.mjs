@@ -3475,7 +3475,10 @@ const precalculusChapter3 = [
   ['3\\cdot5', '15', 'expanded', 'form'],
   ['(2)(3)', '6', 'expanded', 'form'],
   ['2^3', '8', 'expanded', 'form'],
-  ['x', 'x', 'expanded', 'form'],
+  // Was 'form' (only the numeral was exempt); since the chapters 9–10
+  // re-review (October 6, 2026) a finished monomial is expanded too — the
+  // dependent-system key `(2z-6,z+1,z)` refused itself for its `z`.
+  ['x', 'x', 'expanded', 'correct'],
   ['2', '3', 'expanded', 'incorrect'],
   // Round 2 — a fraction inside a remainder's divisor.
   ['4x^2-8x+15-\\frac{78}{4(x+\\frac54)}', '4x^2-8x+15-\\frac{78}{4x+5}', 'expanded no-like-terms', 'form'],
@@ -4301,4 +4304,166 @@ test('Precalculus chapters 7–8 grader gaps', async (t) => {
       assert.equal(checkAnswer(typed, key, { form, mode }), expected);
     });
   }
+});
+
+// Precalculus chapters 9–10 re-review (October 6, 2026).
+const precalculusChapters9And10 = [
+  // G1: a finished monomial is already expanded, so a dependent-system tuple
+  // with a bare free coordinate passes its own polynomial-tuple composition
+  ['(2z-6,z+1,z)', '(2z-6,z+1,z)', 'expanded no-like-terms', undefined, 'correct'],
+  ['(2z-6,z+1,z)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'correct'],
+  ['(z,2z-6,z+1)', '(z,2z-6,z+1)', 'expanded distributed no-like-terms', undefined, 'correct'],
+  ['(-6+2z,1+z,z)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'correct'],
+  ['\\left(2z-6,z+1,z\\right)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'correct'],
+  ['x=2z-6,y=z+1,z=z', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'correct'],
+  ['(\\frac{4z-12}{2},z+1,z)', '(2z-6,z+1,z)', 'expanded no-like-terms', undefined, 'form'],
+  ['(2(z-3),z+1,z)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'form'],
+  ['(2z-6,z+1,1z)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'form'],
+  ['(2z-6,z+1,z+0)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'form'],
+  ['(2z-6,z+1,\\frac{2z}{2})', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'form'],
+  ['(2z-3-3,z+1,z)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'form'],
+  ['(2z-6,z+1,z\\cdot1)', '(2z-6,z+1,z)', 'expanded distributed no-like-terms', undefined, 'form'],
+  // …the lone monomial still refuses every written product
+  ['-35y^{11}', '-35y^{11}', 'expanded', undefined, 'correct'],
+  ['(5y^7)(-7y^4)', '-35y^{11}', 'expanded', undefined, 'form'],
+  ['5y^7\\cdot(-7y^4)', '-35y^{11}', 'expanded', undefined, 'form'],
+  ['x^2x^3', 'x^5', 'expanded', undefined, 'form'],
+  ['(2)(z)', '2z', 'expanded', undefined, 'form'],
+  ['z\\cdot2', '2z', 'expanded', undefined, 'form'],
+  ['\\frac{4z}{2}', '2z', 'expanded', undefined, 'form'],
+  ['x(x+1)', 'x^2+x', 'expanded', undefined, 'form'],
+  ['(x+1)^2', 'x^2+2x+1', 'expanded', undefined, 'form'],
+  ['\\frac{8x+9}{x^2+3x+2}', '\\frac{1}{x+1}+\\frac{7}{x+2}', 'expanded', undefined, 'form'],
+  // …a source-shaped general solution keeps its writing under no-like-terms
+  ['(x,\\frac{x+3}{2})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'correct'],
+  ['(x,\\frac{1}{2}x+\\frac{3}{2})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'correct'],
+  ['(x,\\frac{2x+6}{4})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'form'],
+  ['(x,\\frac{x+1+2}{2})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'form'],
+  ['(x,2(7x-6))', '(x,2(7x-6))', 'no-like-terms', undefined, 'correct'],
+  ['(x,14x-12)', '(x,2(7x-6))', 'no-like-terms', undefined, 'correct'],
+  ['(x,14x-6\\cdot2)', '(x,2(7x-6))', 'no-like-terms', undefined, 'form'],
+  ['(2z-6,z+1,z\\cdot1)', '(2z-6,z+1,z)', 'no-like-terms', undefined, 'form'],
+  ['1\\times10^{5}', '1\\times10^{5}', 'no-like-terms', undefined, 'correct'],
+  // G2: a primed letter alone in parentheses is the primed letter
+  ["\\frac{(x')^2}{4}-\\frac{(y')^2}{9}=1", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'correct'],
+  ["\\frac{\\left(x^{\\prime}\\right)^2}{4}-\\frac{\\left(y^{\\prime}\\right)^2}{9}=1", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'correct'],
+  ["\\frac{{(x^{\\prime})}^2}{4}-\\frac{{(y^{\\prime})}^2}{9}=1", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'correct'],
+  ["(x')^2/4-(y')^2/9=1", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'correct'],
+  ["\\frac{(x')^2}{4}+(y')^2=1", "\\frac{x'^2}{4}+\\frac{y'^2}{1}=1", 'conic-standard-form', undefined, 'correct'],
+  ["9(x')^2-4(y')^2=36", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'form'],
+  ["\\frac{(x')^2}{2^2}-\\frac{(y')^2}{3^2}=1", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'form'],
+  ["\\frac{(x')^2}{4}-\\frac{(y')^2}{9}=\\frac{36}{36}", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'form'],
+  ["\\frac{x^2}{4}-\\frac{y^2}{9}=1", "\\frac{x'^2}{4}-\\frac{y'^2}{9}=1", 'conic-standard-form', undefined, 'incorrect'],
+  ["(y')^2=4(x')", "y'^2=4x'", 'parabola-standard-form', undefined, 'correct'],
+  ["3(x')^2+2(x')(y')-5(y')^2+1=0", "3x'^2+2x'y'-5y'^2+1=0", undefined, undefined, 'correct'],
+  // G3: reduced-fraction reads a trigonometric application as one variable
+  ['r=\\frac{12}{2+4\\cos\\theta}', 'r=\\frac{6}{1+2\\cos\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'form'],
+  ['r=\\frac{18}{3+6\\cos\\theta}', 'r=\\frac{6}{1+2\\cos\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'form'],
+  ['r=\\frac{6\\cos\\theta}{\\cos\\theta+2\\cos^2\\theta}', 'r=\\frac{6}{1+2\\cos\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'form'],
+  ['r=\\frac{6}{1+2\\cos\\theta}', 'r=\\frac{6}{1+2\\cos\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'correct'],
+  ['r=\\frac{6}{2\\cos(\\theta)+1}', 'r=\\frac{6}{1+2\\cos\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'correct'],
+  ['r=\\frac{12}{2+3\\sin\\theta}', 'r=\\frac{12}{2+3\\sin\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'correct'],
+  ['r=\\frac{24}{4+6\\sin\\theta}', 'r=\\frac{12}{2+3\\sin\\theta}', 'solved:r single-fraction reduced-fraction', undefined, 'form'],
+  ['r=\\frac{6}{1+\\frac{3}{2}\\sin\\theta}', 'r=\\frac{12}{2+3\\sin\\theta}', undefined, undefined, 'correct'],
+  ['\\frac{2-2\\cos(4x)}{16}', '\\frac{1-\\cos(4x)}{8}', 'single-fraction reduced-fraction', undefined, 'form'],
+  ['\\frac{\\sin x\\cos x}{\\cos^2 x}', '\\frac{\\sin x}{\\cos x}', 'reduced-fraction', undefined, 'form'],
+  ['\\frac{\\sin x}{\\cos x}', '\\frac{\\sin x}{\\cos x}', 'reduced-fraction', undefined, 'correct'],
+  // G4: a term's fraction over a polynomial has its polynomial factors cancelled
+  ['\\frac{6x-6}{(x-1)^2}-\\frac{5}{(x-1)^2}', '\\frac{6}{x-1}-\\frac{5}{(x-1)^2}', 'expanded no-like-terms', undefined, 'form'],
+  ['\\frac{6(x-1)}{(x-1)^2}-\\frac{5}{(x-1)^2}', '\\frac{6}{x-1}-\\frac{5}{(x-1)^2}', 'expanded no-like-terms', undefined, 'form'],
+  ['\\frac{x-2}{(x-2)^2}+\\frac{2}{(x-2)^2}', '\\frac{1}{x-2}+\\frac{2}{(x-2)^2}', 'expanded no-like-terms', undefined, 'form'],
+  ['\\frac{3}{x+2}+\\frac{x^2+3x+2}{(x+2)(x^2+x+3)}', '\\frac{x+1}{x^2+x+3}+\\frac{3}{x+2}', 'expanded no-like-terms', undefined, 'form'],
+  ['\\frac{4}{x-1}+\\frac{x-1}{x^3-1}', '\\frac{1}{x^2+x+1}+\\frac{4}{x-1}', 'expanded no-like-terms', undefined, 'form'],
+  ['\\frac{3}{x-1}+\\frac{2x^2-6x+4}{(x-1)(x^2+1)}', '\\frac{3}{x-1}+\\frac{2x-4}{x^2+1}', 'expanded no-like-terms', undefined, 'form'],
+  ['x+1+\\frac{x^2+4x+3}{(x+1)(x^2+x+3)}', 'x+1+\\frac{x+3}{x^2+x+3}', 'expanded no-like-terms', undefined, 'form'],
+  ['\\frac{6}{x-1}-\\frac{5}{(x-1)^2}', '\\frac{6}{x-1}-\\frac{5}{(x-1)^2}', 'expanded no-like-terms', undefined, 'correct'],
+  ['-\\frac{5}{(x-1)^2}+\\frac{6}{x-1}', '\\frac{6}{x-1}-\\frac{5}{(x-1)^2}', 'expanded no-like-terms', undefined, 'correct'],
+  ['\\frac{6}{x-1}-\\frac{5}{x^2-2x+1}', '\\frac{6}{x-1}-\\frac{5}{(x-1)^2}', 'expanded no-like-terms', undefined, 'correct'],
+  ['\\frac{3}{x-1}+\\frac{2(x-2)}{x^2+1}', '\\frac{3}{x-1}+\\frac{2x-4}{x^2+1}', 'expanded no-like-terms', undefined, 'correct'],
+  ['\\frac{3}{x+2}+\\frac{1+x}{3+x+x^2}', '\\frac{x+1}{x^2+x+3}+\\frac{3}{x+2}', 'expanded no-like-terms', undefined, 'correct'],
+  ['\\frac{5}{2(x+3)}+\\frac{5}{2(x-3)}', '\\frac{5}{2(x+3)}+\\frac{5}{2(x-3)}', 'expanded no-like-terms', undefined, 'correct'],
+  ['x^3-3x^2+2x+1+\\frac{3}{x+3}', 'x^3-3x^2+2x+1+\\frac{3}{x+3}', 'expanded no-like-terms', undefined, 'correct'],
+  // G5: the polynomial shape tokens read each side of an equation key
+  ["7x'^2+9y'^2-4=0", "7x'^2+9y'^2-4=0", 'expanded no-like-terms', undefined, 'correct'],
+  ["7x'^2+9y'^2=4", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'correct'],
+  ["\\frac72x'^2+\\frac92y'^2-2=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'correct'],
+  ["-7x'^2-9y'^2+4=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'correct'],
+  ["7(x')^2+9(y')^2-4=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'correct'],
+  ["4\\left(\\frac{x'-y'}{\\sqrt2}\\right)^2-\\frac{x'-y'}{\\sqrt2}\\cdot\\frac{x'+y'}{\\sqrt2}+4\\left(\\frac{x'+y'}{\\sqrt2}\\right)^2-2=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'form'],
+  ["2(x'-y')^2-\\frac{(x'-y')(x'+y')}{2}+2(x'+y')^2-2=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'form'],
+  ["8x'^2-x'^2+9y'^2-4=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'form'],
+  ["7x'^2+9y'^2-6+2=0", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'form'],
+  ["7x'^2+9y'^2=2\\cdot2", "7x'^2+9y'^2-4=0", 'expanded distributed no-like-terms', undefined, 'form'],
+  ["-2\\left(\\frac{x'-y'}{\\sqrt2}\\right)^2+8\\cdot\\frac{x'-y'}{\\sqrt2}\\cdot\\frac{x'+y'}{\\sqrt2}+1=0", "3x'^2+2x'y'-5y'^2+1=0", 'expanded distributed no-like-terms', undefined, 'form'],
+  ["3x'^2+2x'y'-5y'^2=-1", "3x'^2+2x'y'-5y'^2+1=0", 'expanded distributed no-like-terms', undefined, 'correct'],
+  ["11x'^2-y'^2+\\sqrt{3}x'+y'=4", "11x'^2-y'^2+\\sqrt3x'+y'-4=0", 'expanded distributed no-like-terms', undefined, 'correct'],
+  ['x^2=7\\cdot2y', 'x^2=14y', 'parabola-standard-form no-like-terms', undefined, 'form'],
+  ['(y+1)^2=12(x+3)', '(y+1)^2=12(x+3)', 'parabola-standard-form no-like-terms', undefined, 'correct'],
+  ['x(x+2)=y', 'y=x^2+2x', 'expanded', undefined, 'form'],
+  ['x^2+2x=y', 'y=x^2+2x', 'expanded', undefined, 'correct'],
+  // G6: no-like-terms on an equation refuses like terms written on both sides
+  ['4-8x+3x^2-y^2=0', '4-8x+3x^2-y^2=0', 'expanded no-like-terms', undefined, 'correct'],
+  ['3x^2-8x+4=y^2', '4-8x+3x^2-y^2=0', 'expanded no-like-terms', undefined, 'correct'],
+  ['x^2+y^2=(2-2x)^2', '4-8x+3x^2-y^2=0', 'expanded no-like-terms', undefined, 'form'],
+  ['x^2+y^2=4-8x+4x^2', '4-8x+3x^2-y^2=0', 'expanded no-like-terms', undefined, 'form'],
+  ['3x^2+4y^2-2x-1=0', '3x^2+4y^2-2x-1=0', 'expanded no-like-terms', undefined, 'correct'],
+  ['3x^2+4y^2=2x+1', '3x^2+4y^2-2x-1=0', 'expanded no-like-terms', undefined, 'correct'],
+  ['4x^2+4y^2=(1+x)^2', '3x^2+4y^2-2x-1=0', 'expanded no-like-terms', undefined, 'form'],
+  ['4x^2+4y^2=1+2x+x^2', '3x^2+4y^2-2x-1=0', 'expanded no-like-terms', undefined, 'form'],
+  ['x^2+y^2=4x', 'x^2+y^2=4x', 'expanded no-like-terms', undefined, 'correct'],
+  ["7x'^2+9y'^2+1=5", "7x'^2+9y'^2-4=0", 'expanded no-like-terms', undefined, 'form'],
+  // G8: a minus left against another on a fraction, and a coefficient with a factor to cancel
+  ['(x,\\frac{-x-3}{-2})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'form'],
+  ['(x,-\\frac{-x-3}{2})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'form'],
+  ['(x,\\frac{x}{2}-\\frac{-3}{2})', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'form'],
+  ['(x,\\frac14(2x+6))', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'form'],
+  ['(x,\\frac12x+\\frac32)', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'correct'],
+  ['(x,0.5x+1.5)', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'correct'],
+  ['(x,\\frac{1}{2}(x+3))', '(x,\\frac{x+3}{2})', 'no-like-terms', undefined, 'correct'],
+  ['\\frac{-x-3}{2}', '-\\frac{x+3}{2}', 'no-like-terms', undefined, 'correct'],
+  ['(x,\\frac13(6x+15))', '(x,2x+5)', 'no-like-terms', undefined, 'form'],
+  ['(x,6(\\frac73x-2))', '(x,2(7x-6))', 'no-like-terms', undefined, 'form'],
+  ['(x,-6(2-\\frac73x))', '(x,2(7x-6))', 'no-like-terms', undefined, 'form'],
+  ['(x,4(\\frac72x-3))', '(x,2(7x-6))', 'no-like-terms', undefined, 'form'],
+  ['3(\\frac12x+1)', '\\frac32x+3', 'no-like-terms', undefined, 'correct'],
+  // G10: a \mp beside a \pm pairs the signs
+  ['(\\pm\\frac{3\\sqrt2}{2},\\mp\\frac{3\\sqrt2}{2})', '\\left(\\frac{3\\sqrt{2}}{2},-\\frac{3\\sqrt{2}}{2}\\right),\\left(-\\frac{3\\sqrt{2}}{2},\\frac{3\\sqrt{2}}{2}\\right)', 'simplified-radical', 'unordered', 'correct'],
+  ['(\\pm\\frac{3\\sqrt2}{2},\\pm\\frac{3\\sqrt2}{2})', '\\left(\\frac{3\\sqrt{2}}{2},-\\frac{3\\sqrt{2}}{2}\\right),\\left(-\\frac{3\\sqrt{2}}{2},\\frac{3\\sqrt{2}}{2}\\right)', 'simplified-radical', 'unordered', 'incorrect'],
+  ['(\\pm\\frac{6\\sqrt2}{4},\\mp\\frac{3\\sqrt2}{2})', '\\left(\\frac{3\\sqrt{2}}{2},-\\frac{3\\sqrt{2}}{2}\\right),\\left(-\\frac{3\\sqrt{2}}{2},\\frac{3\\sqrt{2}}{2}\\right)', 'simplified-radical', 'unordered', 'form'],
+  ['(\\pm3,\\mp4)', '(3,-4),(-3,4)', undefined, 'unordered', 'correct'],
+  ['(\\pm3,\\mp4)', '(3,4),(-3,-4)', undefined, 'unordered', 'incorrect'],
+  ['(\\pm3,\\pm4)', '(3,4),(3,-4),(-3,4),(-3,-4)', undefined, 'unordered', 'correct'],
+  ['2\\pm3\\mp1', '4,0', undefined, 'unordered', 'correct'],
+  // G11: a fraction with a unit word against a decimal key
+  ['\\frac{9}{4}\\text{ feet}', '2.25', 'lowest-terms', undefined, 'unit'],
+  ['2\\frac14\\text{ feet}', '2.25', undefined, undefined, 'unit'],
+  ['\\frac{9}{5}\\text{ feet}', '2.25', undefined, undefined, 'incorrect'],
+];
+test('Precalculus chapters 9–10 grader gaps', async (t) => {
+  for (const [typed, key, form, mode, expected] of precalculusChapters9And10) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form, mode }), expected);
+    });
+  }
+});
+
+test('foldPrimes unwraps a primed letter alone in parentheses, never an application', () => {
+  assert.equal(foldPrimes("(x')^2"), 'x_{p}^2');
+  assert.equal(foldPrimes('\\left(x^{\\prime}\\right)^2'), 'x_{p}^2');
+  assert.equal(foldPrimes('{(x^{\\prime})}^2'), 'x_{p}^2');
+  assert.equal(foldPrimes("2\\cdot(x')^2"), '2\\cdot x_{p}^2');
+  assert.equal(foldPrimes("\\cos\\left(\\theta'\\right)"), '\\cos \\theta_{p}');
+  assert.equal(foldPrimes("f(x')"), 'f(x_{p})');
+  assert.equal(foldPrimes("(x'+1)^2"), '(x_{p}+1)^2');
+  assert.equal(foldPrimes("(x',y')"), '(x_{p},y_{p})');
+});
+
+test('form feedback names the unreduced fraction, and drops a solved: phrase the response meets', () => {
+  const reduce = 'That value is right — now reduce each fraction in it, with no fraction written inside a fraction.';
+  assert.equal(describeFormFeedback('r=\\frac{24}{4+6\\sin\\theta}', 'solved:r no-like-terms', 'r=\\frac{12}{2+3\\sin\\theta}'), reduce);
+  assert.equal(describeFormFeedback('r=\\frac{6}{1+\\frac{3}{2}\\sin\\theta}', 'solved:r no-like-terms', 'r=\\frac{12}{2+3\\sin\\theta}'), reduce);
+  assert.equal(describeFormFeedback('\\frac{6x-6}{(x-1)^2}-\\frac{5}{(x-1)^2}', 'expanded no-like-terms', '\\frac{6}{x-1}-\\frac{5}{(x-1)^2}'), reduce);
+  assert.equal(describeFormFeedback('y=12q^2+9q^2', 'solved:y no-like-terms', 'y=21q^2'), describeAnswerForm('no-like-terms'));
+  assert.equal(describeFormFeedback('r(2+3\\sin\\theta)=12', 'solved:r no-like-terms', 'r=\\frac{12}{2+3\\sin\\theta}'),
+    describeAnswerForm('solved:r no-like-terms'));
 });
