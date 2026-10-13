@@ -1667,6 +1667,17 @@ export function buildGraph(props) {
  *                 own values. One colour only (currentColor): a pair of
  *                 arrows is told apart by its labels and sides, not by red
  *                 and blue
+ *   rows          [{ side?, label?, signs: [{ at, text }] }] a sign chart:
+ *                 each row prints its `signs` (a '+' or '−' per interval,
+ *                 centred on the VALUE `at`) on its own line above (default)
+ *                 or `side: 'below'` the number line, 20px per row, with
+ *                 `label` ("x − 1", "(x − 1)/(x + 3)") right-aligned left of
+ *                 the line's left chevron. Rows are listed in reading order,
+ *                 top to bottom, on each side. A side carries rows OR
+ *                 annotations, not both
+ *   dividers      [{ at, dashed? }] vertical lines at the values that split
+ *                 the chart (the zero partition numbers), dashed by default,
+ *                 spanning from the top row to the bottom row
  *
  * Layout matches the house style: 280px line regardless of range (or
  * `width` + 16), chevron arrows, every tick at `step` (default: every
@@ -1675,7 +1686,7 @@ export function buildGraph(props) {
  * renders byte for byte as before.
  */
 export function buildNumberLine(props) {
-  const { min, max, marker, shade, title, points = [], intervals = [], labelEvery = 1, annotations = [] } = props
+  const { min, max, marker, shade, title, points = [], intervals = [], labelEvery = 1, annotations = [], rows = [], dividers = [] } = props
   const stepped = props.step !== undefined
   const LINE = props.width === undefined ? 264 : props.width
   if (!Number.isFinite(LINE) || LINE < 120 || LINE > 720) {
@@ -1703,6 +1714,30 @@ export function buildNumberLine(props) {
       if (typeof a.label !== 'string' || !a.label.trim()) throw new Error(`NumberLine ${a.kind} needs a label`)
     }
     if (a.label !== undefined && typeof a.label !== 'string') throw new Error('NumberLine annotation label must be a string')
+  }
+  if (!Array.isArray(rows)) throw new Error('NumberLine rows must be an array')
+  if (!Array.isArray(dividers)) throw new Error('NumberLine dividers must be an array')
+  for (const r of rows) {
+    if (!r || typeof r !== 'object' || !Array.isArray(r.signs) || !r.signs.length) {
+      throw new Error('NumberLine row needs a signs array of { at, text }')
+    }
+    if (r.side !== undefined && r.side !== 'above' && r.side !== 'below') {
+      throw new Error(`NumberLine row side must be 'above' or 'below' — got ${JSON.stringify(r.side)}`)
+    }
+    if (r.label !== undefined && (typeof r.label !== 'string' || !r.label.trim())) throw new Error('NumberLine row label must be a string')
+    for (const g of r.signs) {
+      if (!g || !inRange(g.at)) throw new Error(`NumberLine row sign needs at within ${min}..${max}`)
+      if (typeof g.text !== 'string' || !g.text.trim()) throw new Error('NumberLine row sign needs a text')
+    }
+  }
+  for (const d of dividers) {
+    if (!d || !inRange(d.at)) throw new Error(`NumberLine divider needs at within ${min}..${max}`)
+  }
+  for (const side of ['above', 'below']) {
+    const sideOfX = (x) => x.side === 'below' ? 'below' : 'above'
+    if (rows.some((r) => sideOfX(r) === side) && annotations.some((a) => sideOfX(a) === side)) {
+      throw new Error(`NumberLine rows and annotations cannot share the ${side} side`)
+    }
   }
   for (const p of points) {
     if (p.labelSide !== undefined && p.labelSide !== 'above' && p.labelSide !== 'below') {
@@ -1780,8 +1815,14 @@ export function buildNumberLine(props) {
   // annotations above the line push it down so they keep clear of the title
   // row; below ones only grow the box (fitViewBox covers every element)
   const ABOVE_ROOM = 34
-  const yLine = (hasTitle ? 45 : 30) + (above.length ? ABOVE_ROOM : 0)
-  const H = (hasTitle ? 90 : 76) + (above.length ? ABOVE_ROOM : 0) + (below.length ? 40 : 0)
+  // sign-chart rows stack outward from the line, 20px each; the above rows
+  // push the line down like annotations do, the below rows grow the box
+  const ROW = 20
+  const rowsAbove = rows.filter((r) => sideOf(r) === 'above')
+  const rowsBelow = rows.filter((r) => sideOf(r) === 'below')
+  const yLine = (hasTitle ? 45 : 30) + (above.length ? ABOVE_ROOM : 0) + rowsAbove.length * ROW
+  const H = (hasTitle ? 90 : 76) + (above.length ? ABOVE_ROOM : 0) + rowsAbove.length * ROW
+    + (below.length ? 40 : 0) + (rowsBelow.length ? 40 + (rowsBelow.length - 1) * ROW : 0)
   const W = LINE + 56
   const L0 = X0 - EXT, L1 = X0 + LINE + EXT
   const els = []
@@ -1949,6 +1990,38 @@ export function buildNumberLine(props) {
       label(x, up ? tailY - 5 : tailY + 14, a.label)
     } else {
       label(X(a.at), up ? yLine - 16 : yLine + 46, a.label)
+    }
+  }
+
+  // sign-chart rows (reading order, top to bottom) and their dividers
+  const rowY = (r) => {
+    const i = rowsAbove.indexOf(r)
+    if (i >= 0) return yLine - 16 - (rowsAbove.length - 1 - i) * ROW
+    return yLine + 46 + rowsBelow.indexOf(r) * ROW
+  }
+  if (dividers.length) {
+    const top = rowsAbove.length ? rowY(rowsAbove[0]) - 12 : yLine - 14
+    const bottom = rowsBelow.length ? rowY(rowsBelow[rowsBelow.length - 1]) + 5 : yLine + 32
+    for (const d of dividers) {
+      // the divider skips the line band (an interval glyph sits on it) and the
+      // tick digits under it, so it never strikes a glyph or a digit
+      const spans = [[top, yLine - 12]]
+      if (bottom > yLine + 34) spans.push([yLine + 30, bottom])
+      for (const [y1, y2] of spans) {
+        add('line', {
+          x1: fmtN(X(d.at)), y1: fmtN(y1), x2: fmtN(X(d.at)), y2: fmtN(y2),
+          stroke: 'currentColor', strokeWidth: '1.2', ...(d.dashed === false ? {} : { strokeDasharray: '4 3' }),
+        })
+      }
+    }
+  }
+  for (const r of rows) {
+    const y = rowY(r)
+    if (r.label) {
+      add('text', { x: fmtN(L0 - 10), y: fmtN(y), textAnchor: 'end', fontSize: '12', fill: 'currentColor' }, mathMinus(r.label))
+    }
+    for (const g of r.signs) {
+      add('text', { x: fmtN(X(g.at)), y: fmtN(y), textAnchor: 'middle', fontSize: '14', fill: 'currentColor' }, mathMinus(g.text))
     }
   }
 

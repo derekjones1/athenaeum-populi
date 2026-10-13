@@ -121,9 +121,15 @@ function handTickErrors(spec) {
   }
   // a numberline's 'text' annotations are captions; three plain numbers each
   // sitting at its own value are a hand tick row (use step / labelEvery)
+  // (a sign chart's row signs are '+' / '−'; a numeric sign text is the same hand tick)
+  const rowSigns = (Array.isArray(spec.rows) ? spec.rows : [])
+    .flatMap((r) => (r && Array.isArray(r.signs) ? r.signs : []))
+    .filter((g) => g && typeof g.text === 'string' && Number.isFinite(g.at))
+    .map((g) => ({ text: g.text.trim(), at: g.at }));
   const captions = (Array.isArray(spec.annotations) ? spec.annotations : [])
     .filter((a) => a && a.kind === 'text' && typeof a.label === 'string' && Number.isFinite(a.at))
     .map((a) => ({ text: a.label.trim(), at: a.at }))
+    .concat(rowSigns)
     .filter((a) => HAND_TICK_PLAIN.test(a.text)
       && handTickValues(a.text).some((value) => Math.abs(a.at - value) <= Math.max(0.1, 0.12 * Math.abs(value))));
   if (captions.length >= 3) {

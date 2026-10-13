@@ -538,6 +538,37 @@ test('number-line point labels take a side, a nudge, and a leader', () => {
   assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', points: [{ at: 2, label: 'p', labelSide: 'left' }] }), /labelSide must be 'above' or 'below'/);
 });
 
+test('number-line rows and dividers draw a sign chart: stacked sign rows, labels left of the line, dashed partitions', () => {
+  const spec = {
+    min: -6, max: 6, ariaLabel: 'x', width: 528,
+    intervals: [{ to: -3, toType: 'paren' }, { from: 1, fromType: 'bracket' }],
+    dividers: [{ at: -3 }, { at: 1 }],
+    rows: [
+      { label: 'x − 1', signs: [{ at: -4.5, text: '−' }, { at: -1, text: '-' }, { at: 3.5, text: '+' }] },
+      { label: 'x + 3', signs: [{ at: -4.5, text: '−' }, { at: -1, text: '+' }, { at: 3.5, text: '+' }] },
+      { side: 'below', label: '(x − 1)/(x + 3)', signs: [{ at: -4.5, text: '+' }, { at: -1, text: '−' }, { at: 3.5, text: '+' }] },
+    ],
+  };
+  const out = buildNumberLine(spec);
+  // two rows above push the line down 40px: y = 30 + 2 · 20
+  assert.equal(out.els[0].attrs.y1, '70');
+  const labels = out.els.filter((e) => e.tag === 'text' && e.attrs.textAnchor === 'end');
+  assert.deepEqual(labels.map((e) => [e.text, e.attrs.x, e.attrs.y]), [['x − 1', '6', '34'], ['x + 3', '6', '54'], ['(x − 1)/(x + 3)', '6', '116']],
+    'rows read top to bottom: the first above row is the topmost, the below row sits under the tick digits');
+  const signs = out.els.filter((e) => e.tag === 'text' && e.attrs.fontSize === '14');
+  assert.equal(signs.length, 9);
+  assert.deepEqual(signs.slice(0, 3).map((e) => [e.text, e.attrs.x]), [['−', '94'], ['−', '248'], ['+', '446']], 'X(−4.5) = 28 + 1.5 · 44; an ASCII minus prints as U+2212');
+  const dashed = out.els.filter((e) => e.tag === 'line' && e.attrs.strokeDasharray === '4 3');
+  assert.equal(dashed.length, 4, 'each divider is drawn in two pieces, skipping the line band and the tick digits');
+  assert.deepEqual(dashed.slice(0, 2).map((e) => [e.attrs.x1, e.attrs.y1, e.attrs.y2]), [['160', '22', '58'], ['160', '100', '121']]);
+  assert.ok(out.box.x < 0, 'the row labels left of the chevron widen the viewBox');
+  assert.throws(() => buildNumberLine({ ...spec, annotations: [{ kind: 'text', at: 0, label: 'c' }] }), /rows and annotations cannot share the above side/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', rows: [{ signs: [{ at: 7, text: '+' }] }] }), /sign needs at within 0\.\.5/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', dividers: [{ at: 9 }] }), /divider needs at within 0\.\.5/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', rows: [{ side: 'left', signs: [{ at: 1, text: '+' }] }] }), /row side must be 'above' or 'below'/);
+  assert.deepEqual(buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', rows: [], dividers: [] }).els, buildNumberLine({ min: 0, max: 5, ariaLabel: 'x' }).els, 'empty rows and dividers change nothing');
+});
+
 test('number-line annotations draw arrows, arcs, pointers, and captions at their values', () => {
   const out = buildNumberLine({
     min: -4, max: 4, ariaLabel: 'x', width: 528,

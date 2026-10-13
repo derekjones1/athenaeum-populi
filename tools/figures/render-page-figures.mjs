@@ -113,6 +113,9 @@ async function main() {
       }
       const { w, h } = viewBoxSize(svg);
       const drawn = Math.min(600, w);
+      // a spec wider than the column (a 528px number line with row labels)
+      // scales down to it on the page, so draw it at the column width here too
+      if (drawn < w) svg = svg.replace(/ width="[\d.]+" height="[\d.]+"/, ` width="${drawn}" height="${(h * drawn / w).toFixed(1)}"`);
       const html = join(out, `A${line}.html`);
       writeFileSync(html, `<!doctype html><html><body style="${BODY};width:600px">${svg}</body></html>`);
       shoot(html, join(out, `A${line}.png`), 620, Math.ceil(h * (drawn / w)) + 60);

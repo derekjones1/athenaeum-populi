@@ -71,7 +71,10 @@ label, superscripts, blank lines). The builders are in
      carries; a point's `labelNudge` + `leader` where two labels collide;
      `annotations` for arrows, arcs, pointers, and captions above or below
      the line, positioned by value. A source's red/blue pair becomes an
-     above/below pair. Never `title` for an end caption.
+     above/below pair. Never `title` for an end caption. A sign chart is
+     `rows` (one `{label, signs:[{at,text}]}` per factor row, reading
+     order, `side:"below"` for the quotient row) plus `dividers` at the
+     partition numbers and `intervals` for the shaded solution.
    Never `smoothCurves`, never a polygon faked from `segments`, never
    hand `texts` or `segments` for tick marks or tick digits (the lint
    refuses them, and three numeric `text` annotations on their values). Exponents are superscript characters (`x²`), never TeX.

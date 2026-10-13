@@ -82,61 +82,9 @@ $$(-\infty,-3)\cup[1,\infty).$$
 
 The sign chart puts the signs of the factors above the number line and the sign of the quotient below it, and shades the solution:
 
-<div class="ap-figure">
-<svg role="img" aria-label="A sign chart on a number line from negative 6 to 6, with dashed vertical lines at the zero partition numbers negative 3 and 1. Above the line, x minus 1 is negative, negative, positive and x plus 3 is negative, positive, positive across the three intervals; below it, the quotient of x minus 1 over x plus 3 is positive, negative, positive. The line is shaded to the left of a parenthesis at negative 3 and to the right of a bracket at 1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 175" width="460" height="175" font-family="Helvetica, Arial, sans-serif">
-  <line x1="80" y1="95" x2="450" y2="95" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 88 88 L 80 95 L 88 102" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 442 88 L 450 95 L 442 102" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="80" y1="95" x2="182.5" y2="95" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="292.5" y1="95" x2="450" y2="95" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="100" y1="89" x2="100" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="100" y="117" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
-  <line x1="127.5" y1="89" x2="127.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="127.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="155" y1="89" x2="155" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="155" y="117" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="182.5" y1="89" x2="182.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="182.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="210" y1="89" x2="210" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="210" y="117" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="237.5" y1="89" x2="237.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="237.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="265" y1="89" x2="265" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265" y="117" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="292.5" y1="89" x2="292.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="320" y1="89" x2="320" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="320" y="117" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="347.5" y1="89" x2="347.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="347.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="375" y1="89" x2="375" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="375" y="117" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="402.5" y1="89" x2="402.5" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="402.5" y="117" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <line x1="430" y1="89" x2="430" y2="101" stroke="currentColor" stroke-width="1.5"/>
-  <text x="430" y="117" text-anchor="middle" font-size="12" fill="currentColor">6</text>
-  <line x1="182.5" y1="10" x2="182.5" y2="83" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
-  <line x1="182.5" y1="124" x2="182.5" y2="170" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
-  <line x1="292.5" y1="10" x2="292.5" y2="83" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
-  <line x1="292.5" y1="124" x2="292.5" y2="170" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
-  <path d="M 178.5 85 Q 186.5 95 178.5 105" fill="none" stroke="currentColor" stroke-width="2.5"/>
-  <path d="M 297.5 85 L 292.5 85 L 292.5 105 L 297.5 105" fill="none" stroke="currentColor" stroke-width="2.5"/>
-  <text x="40" y="30" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> − 1</text>
-  <text x="141.25" y="30" text-anchor="middle" font-size="15" fill="currentColor">−</text>
-  <text x="237.5" y="30" text-anchor="middle" font-size="15" fill="currentColor">−</text>
-  <text x="361.25" y="30" text-anchor="middle" font-size="15" fill="currentColor">+</text>
-  <text x="40" y="54" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> + 3</text>
-  <text x="141.25" y="54" text-anchor="middle" font-size="15" fill="currentColor">−</text>
-  <text x="237.5" y="54" text-anchor="middle" font-size="15" fill="currentColor">+</text>
-  <text x="361.25" y="54" text-anchor="middle" font-size="15" fill="currentColor">+</text>
-  <text x="40" y="140" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> − 1</text>
-  <line x1="22" y1="145" x2="58" y2="145" stroke="currentColor" stroke-width="1"/>
-  <text x="40" y="160" text-anchor="middle" font-size="13" fill="currentColor"><tspan font-style="italic">x</tspan> + 3</text>
-  <text x="141.25" y="150" text-anchor="middle" font-size="15" fill="currentColor">+</text>
-  <text x="237.5" y="150" text-anchor="middle" font-size="15" fill="currentColor">−</text>
-  <text x="361.25" y="150" text-anchor="middle" font-size="15" fill="currentColor">+</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A sign chart on a number line from negative 6 to 6, numbered every unit, with dashed vertical lines at the zero partition numbers negative 3 and 1. Above the line, the row labeled x minus 1 reads negative, negative, positive and the row labeled x plus 3 reads negative, positive, positive across the three intervals; below it, the row labeled the quotient of x minus 1 over x plus 3 reads positive, negative, positive. The line is shaded to the left of a parenthesis at negative 3 and to the right of a bracket at 1.","min":-6,"max":6,"width":528,"intervals":[{"to":-3,"toType":"paren"},{"from":1,"fromType":"bracket"}],"dividers":[{"at":-3},{"at":1}],"rows":[{"label":"x − 1","signs":[{"at":-4.5,"text":"−"},{"at":-1,"text":"−"},{"at":3.5,"text":"+"}]},{"label":"x + 3","signs":[{"at":-4.5,"text":"−"},{"at":-1,"text":"+"},{"at":3.5,"text":"+"}]},{"side":"below","label":"(x − 1)/(x + 3)","signs":[{"at":-4.5,"text":"+"},{"at":-1,"text":"−"},{"at":3.5,"text":"+"}]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Solve $\tfrac{x-2}{x+4}\ge0$. Enter the solution in interval notation."

@@ -762,6 +762,18 @@ blue arrow pair becomes an above/below pair told apart by its labels. The
 lint reads three numeric `text` annotations sitting on their own values as
 a hand tick row, like three `texts` on a graph.
 
+A sign chart *(October 13, 2026, Intermediate Algebra 7.6)* is a number line
+with `rows` — `[{ side?, label?, signs: [{ at, text }] }]`, each row a line
+of `+` / `−` signs centred on the VALUES `at` (one per interval), 20 px per
+row above (default) or `side: 'below'` the line, listed in reading order top
+to bottom, with `label` ("x − 1", "(x − 1)/(x + 3)" — flat, no fraction bar)
+right-aligned left of the left chevron — and `dividers` —
+`[{ at, dashed? }]`, dashed verticals at the zero partition numbers spanning
+the rows and skipping the tick-digit band. The solution set is the usual
+`intervals` with `paren` / `bracket` ends. A side carries rows or
+annotations, never both; the lint reads a numeric row sign like a numeric
+caption.
+
 **A "generic" source curve is still a function: fit a formula, then render
 the formula.** When the source shows a freeform-looking curve (a wavy
 vertical-line-test graph, a smooth curve through labeled points), fit a
