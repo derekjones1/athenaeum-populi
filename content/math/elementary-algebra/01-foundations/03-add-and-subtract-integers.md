@@ -25,44 +25,9 @@ accidentally overdrawn your checking account, you are already familiar with
 negative numbers. **Negative numbers** are numbers less than $0$. The
 negative numbers are to the left of zero on the number line.
 
-<svg viewBox="0 0 460 90" role="img" aria-label="A number line from -4 to 4, with an arrow above 0 marking zero. The numbers to the left of zero are labeled negative numbers; the numbers to the right are labeled positive numbers." style="max-width: 460px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="30" x2="440" y2="30" stroke="currentColor" stroke-width="1.5" />
-  <path d="M20 30 L28 25 L28 35 Z" fill="currentColor" />
-  <path d="M440 30 L432 25 L432 35 Z" fill="currentColor" />
-  <g>
-      <line x1="46" y1="24" x2="46" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="46" y="54" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
-    </g><g>
-      <line x1="92" y1="24" x2="92" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="92" y="54" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
-    </g><g>
-      <line x1="138" y1="24" x2="138" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="138" y="54" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
-    </g><g>
-      <line x1="184" y1="24" x2="184" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="184" y="54" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
-    </g><g>
-      <line x1="230" y1="24" x2="230" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="230" y="54" text-anchor="middle" font-size="15" fill="currentColor">0</text>
-    </g><g>
-      <line x1="276" y1="24" x2="276" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="276" y="54" text-anchor="middle" font-size="15" fill="currentColor">1</text>
-    </g><g>
-      <line x1="322" y1="24" x2="322" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="322" y="54" text-anchor="middle" font-size="15" fill="currentColor">2</text>
-    </g><g>
-      <line x1="368" y1="24" x2="368" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="368" y="54" text-anchor="middle" font-size="15" fill="currentColor">3</text>
-    </g><g>
-      <line x1="414" y1="24" x2="414" y2="36" stroke="currentColor" stroke-width="1.5" />
-      <text x="414" y="54" text-anchor="middle" font-size="15" fill="currentColor">4</text>
-    </g>
-  <path d="M230 14 L230 22" stroke="currentColor" stroke-width="1.5" marker-end="none" />
-  <path d="M230 22 L226 12 M230 22 L234 12" stroke="currentColor" stroke-width="1.5" fill="none" />
-  <text x="230" y="8" text-anchor="middle" font-size="12" fill="currentColor">zero</text>
-  <text x="112" y="75" text-anchor="middle" font-size="13" fill="currentColor">Negative numbers</text>
-  <text x="348" y="75" text-anchor="middle" font-size="13" fill="currentColor">Positive numbers</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 4, with an arrow above 0 marking zero. The numbers to the left of zero are labeled negative numbers; the numbers to the right are labeled positive numbers.","min":-4,"max":4,"width":528,"annotations":[{"kind":"pointer","at":0,"label":"zero"},{"kind":"text","at":-2.5,"side":"below","label":"Negative numbers"},{"kind":"text","at":2.5,"side":"below","label":"Positive numbers"}]}
+{{< /apfigure >}}
 
 The arrows on the ends of the number line indicate that the numbers keep
 going forever. There is no biggest positive number, and there is no
@@ -76,45 +41,9 @@ Consider how numbers are ordered on the number line. Going from left to
 right, the numbers increase in value. Going from right to left, the numbers
 decrease in value.
 
-<svg viewBox="0 0 460 100" role="img" aria-label="A number line from -4 to 4. Above the line, a blue arrow labeled larger starts at -1 and points right, past 4. Below the line, a red arrow labeled smaller starts at 1 and points left, past -4." style="max-width: 460px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="440" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <path d="M20 40 L28 35 L28 45 Z" fill="currentColor" />
-  <path d="M440 40 L432 35 L432 45 Z" fill="currentColor" />
-  <g>
-      <line x1="46" y1="34" x2="46" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="46" y="64" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
-    </g><g>
-      <line x1="92" y1="34" x2="92" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="92" y="64" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
-    </g><g>
-      <line x1="138" y1="34" x2="138" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="138" y="64" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
-    </g><g>
-      <line x1="184" y1="34" x2="184" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="184" y="64" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
-    </g><g>
-      <line x1="230" y1="34" x2="230" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="230" y="64" text-anchor="middle" font-size="15" fill="currentColor">0</text>
-    </g><g>
-      <line x1="276" y1="34" x2="276" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="276" y="64" text-anchor="middle" font-size="15" fill="currentColor">1</text>
-    </g><g>
-      <line x1="322" y1="34" x2="322" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="322" y="64" text-anchor="middle" font-size="15" fill="currentColor">2</text>
-    </g><g>
-      <line x1="368" y1="34" x2="368" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="368" y="64" text-anchor="middle" font-size="15" fill="currentColor">3</text>
-    </g><g>
-      <line x1="414" y1="34" x2="414" y2="46" stroke="currentColor" stroke-width="1.5" />
-      <text x="414" y="64" text-anchor="middle" font-size="15" fill="currentColor">4</text>
-    </g>
-  <line x1="184" y1="20" x2="430" y2="20" stroke="#2b8fd6" stroke-width="2" />
-  <path d="M430 20 L420 15 L420 25 Z" fill="#2b8fd6" />
-  <text x="307" y="12" text-anchor="middle" font-size="13" fill="#2b8fd6">larger</text>
-  <line x1="276" y1="80" x2="30" y2="80" stroke="#d6522b" stroke-width="2" />
-  <path d="M30 80 L40 75 L40 85 Z" fill="#d6522b" />
-  <text x="153" y="94" text-anchor="middle" font-size="13" fill="#d6522b">smaller</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 4. Above the line, an arrow labeled larger starts at −1 and points right, to 4. Below the line, an arrow labeled smaller starts at 1 and points left, to −4.","min":-4,"max":4,"width":528,"annotations":[{"kind":"arrow","from":-1,"to":4,"label":"larger"},{"kind":"arrow","from":1,"to":-4,"side":"below","label":"smaller"}]}
+{{< /apfigure >}}
 
 Remember that we use the notation $a < b$ (read "$a$ is less than $b$") when
 $a$ is to the left of $b$ on the number line, and $a > b$ (read "$a$ is
@@ -125,7 +54,7 @@ numbers marked by points on the number line below are called the
 **integers**. The integers are the numbers $\dots {-3}, -2, -1, 0, 1, 2, 3 \dots$
 
 {{< apfigure kind="numberline" >}}
-{"ariaLabel":"A number line from −4 to 4 with a dot on every integer: −4, −3, −2, −1, 0, 1, 2, 3, and 4.","min":-4,"max":4,"points":[{"at":-4},{"at":-3},{"at":-2},{"at":-1},{"at":0},{"at":1},{"at":2},{"at":3},{"at":4}]}
+{"ariaLabel":"A number line from −4 to 4 with a dot on every integer: −4, −3, −2, −1, 0, 1, 2, 3, and 4.","min":-4,"max":4,"width":528,"points":[{"at":-4},{"at":-3},{"at":-2},{"at":-1},{"at":0},{"at":1},{"at":2},{"at":3},{"at":4}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -183,45 +112,9 @@ numbers $2$ and $-2$ are the same distance from zero, they are called
   distance from zero on the number line, but on the opposite side of zero.
 {{< /callout >}}
 
-<svg viewBox="0 0 460 80" role="img" aria-label="A number line from -4 to 4 with dots at -3 and 3. Two arcs above the line, each labeled 3, span from -3 to 0 and from 0 to 3, illustrating that the opposite of 3 is -3." style="max-width: 460px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="45" x2="440" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <path d="M20 45 L28 40 L28 50 Z" fill="currentColor" />
-  <path d="M440 45 L432 40 L432 50 Z" fill="currentColor" />
-  <g>
-      <line x1="46" y1="39" x2="46" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="46" y="69" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
-    </g><g>
-      <line x1="92" y1="39" x2="92" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="92" y="69" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
-    </g><g>
-      <line x1="138" y1="39" x2="138" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="138" y="69" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
-    </g><g>
-      <line x1="184" y1="39" x2="184" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="184" y="69" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
-    </g><g>
-      <line x1="230" y1="39" x2="230" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="230" y="69" text-anchor="middle" font-size="15" fill="currentColor">0</text>
-    </g><g>
-      <line x1="276" y1="39" x2="276" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="276" y="69" text-anchor="middle" font-size="15" fill="currentColor">1</text>
-    </g><g>
-      <line x1="322" y1="39" x2="322" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="322" y="69" text-anchor="middle" font-size="15" fill="currentColor">2</text>
-    </g><g>
-      <line x1="368" y1="39" x2="368" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="368" y="69" text-anchor="middle" font-size="15" fill="currentColor">3</text>
-    </g><g>
-      <line x1="414" y1="39" x2="414" y2="51" stroke="currentColor" stroke-width="1.5" />
-      <text x="414" y="69" text-anchor="middle" font-size="15" fill="currentColor">4</text>
-    </g>
-  <path d="M92 25 Q 161 12 230 25" stroke="currentColor" stroke-width="1.5" fill="none" />
-  <text x="161" y="10" text-anchor="middle" font-size="13" fill="currentColor">3</text>
-  <path d="M230 25 Q 299 12 368 25" stroke="currentColor" stroke-width="1.5" fill="none" />
-  <text x="299" y="10" text-anchor="middle" font-size="13" fill="currentColor">3</text>
-  <circle cx="92" cy="45" r="5" fill="currentColor" />
-  <circle cx="368" cy="45" r="5" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 4 with dots at −3 and 3. Two arcs above the line, each labeled 3, span from −3 to 0 and from 0 to 3, illustrating that the opposite of 3 is −3.","min":-4,"max":4,"width":528,"points":[{"at":-3},{"at":3}],"annotations":[{"kind":"arc","from":-3,"to":0,"label":"3"},{"kind":"arc","from":0,"to":3,"label":"3"}]}
+{{< /apfigure >}}
 
 Sometimes in algebra the same symbol has different meanings. Just like some
 words in English, the specific meaning becomes clear by looking at how it is
@@ -304,29 +197,9 @@ The distance between $0$ and any number on the number line is called the
 For example, $-5$ is $5$ units away from $0$, so $\lvert -5\rvert = 5$. And $5$ is $5$
 units away from $0$, so $|5| = 5$.
 
-<svg viewBox="0 0 460 100" role="img" aria-label="A number line from -5 to 5 with a tick at every integer and labels at -5, 0, and 5. One arc above the line spans from -5 to 0 and another from 0 to 5; each arc is labeled 5 units, showing that both -5 and 5 are 5 units from zero." style="max-width: 460px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="55" x2="440" y2="55" stroke="currentColor" stroke-width="1.5" />
-  <path d="M20 55 L28 50 L28 60 Z" fill="currentColor" />
-  <path d="M440 55 L432 50 L432 60 Z" fill="currentColor" />
-  <line x1="45" y1="49" x2="45" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <text x="45" y="79" text-anchor="middle" font-size="15" fill="currentColor">-5</text>
-  <line x1="82" y1="49" x2="82" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="119" y1="49" x2="119" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="156" y1="49" x2="156" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="193" y1="49" x2="193" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="230" y1="49" x2="230" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <text x="230" y="79" text-anchor="middle" font-size="15" fill="currentColor">0</text>
-  <line x1="267" y1="49" x2="267" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="304" y1="49" x2="304" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="341" y1="49" x2="341" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="378" y1="49" x2="378" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <line x1="415" y1="49" x2="415" y2="61" stroke="currentColor" stroke-width="1.5" />
-  <text x="415" y="79" text-anchor="middle" font-size="15" fill="currentColor">5</text>
-  <path d="M45 38 Q 137.5 24 230 38" stroke="#d6522b" stroke-width="1.5" fill="none" />
-  <text x="137.5" y="22" text-anchor="middle" font-size="12" fill="#d6522b">5 units</text>
-  <path d="M230 38 Q 322.5 24 415 38" stroke="#2b8fd6" stroke-width="1.5" fill="none" />
-  <text x="322.5" y="22" text-anchor="middle" font-size="12" fill="#2b8fd6">5 units</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −5 to 5 with a tick at every integer and labels at −5, 0, and 5. One arc above the line spans from −5 to 0 and another from 0 to 5; each arc is labeled 5 units, showing that both −5 and 5 are 5 units from zero.","min":-5,"max":5,"labelEvery":5,"width":528,"annotations":[{"kind":"arc","from":-5,"to":0,"label":"5 units"},{"kind":"arc","from":0,"to":5,"label":"5 units"}]}
+{{< /apfigure >}}
 
 The absolute value of a number is never negative (because distance cannot
 be negative). The only number with absolute value equal to zero is the

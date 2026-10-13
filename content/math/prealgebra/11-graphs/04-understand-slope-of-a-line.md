@@ -588,10 +588,10 @@ We can check this line by starting at any point on it and counting up $3$
 and to the right $4$ — we should get to another point on the line.
 
 {{< fillin
-  question="A line passes through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting out the rise and run, what point do you land on? Enter it as an ordered pair."
-  answer="(5, 2)" answerForm="decimal"
-  answerDisplay="$(5, 2)$"
-  hint="Read the rise and the run from the slope, then add the rise to the $y$-coordinate and the run to the $x$-coordinate."
+  question="A line passes through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting out the rise and run twice in a row, what point do you land on? Enter it as an ordered pair."
+  answer="(8, 6)" answerForm="decimal"
+  answerDisplay="$(8, 6)$"
+  hint="Read the rise and the run from the slope. Each count adds the rise to the $y$-coordinate and the run to the $x$-coordinate; do it twice."
 >}}
 
 **Example.** Graph the line with $y\text{-intercept}$ $(0, 2)$ and slope
@@ -886,4 +886,4 @@ undefined
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.4: Understand Slope of a Line](https://openstax.org/books/prealgebra-2e/pages/11-4-understand-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the geoboard rubber-band diagrams and coordinate-plane line graphs as accessible graphics; omitted the Self Check checklist, Be Prepared quiz, Manipulative Mathematics callouts, and media links; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, restating the geoboard and "model a line with the given slope" Try Its as rise-and-run questions, two "graph the line" Try Its as questions about the point reached by counting out the rise and run, and one as a choice among graphs; and adapted selected end-of-section exercises into the interactive Practice block, recreating three exercise graphs as accessible graphics, restating the geoboard exercises as rise-and-run questions, restating the roof-slope measurement from its figure, and splitting the road-grade exercise into its two parts, with the run given in the second.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.4: Understand Slope of a Line](https://openstax.org/books/prealgebra-2e/pages/11-4-understand-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the geoboard rubber-band diagrams and coordinate-plane line graphs as accessible graphics; omitted the Self Check checklist, Be Prepared quiz, Manipulative Mathematics callouts, and media links; converted a selection of the practice problems ("Try Its") into interactive exercises with instant feedback, restating the geoboard and "model a line with the given slope" Try Its as rise-and-run questions, two "graph the line" Try Its as questions about the point reached by counting out the rise and run (twice in a row for the second, so the example graph above it does not print the answer), and one as a choice among graphs; and adapted selected end-of-section exercises into the interactive Practice block, recreating three exercise graphs as accessible graphics, restating the geoboard exercises as rise-and-run questions, restating the roof-slope measurement from its figure, and splitting the road-grade exercise into its two parts, with the run given in the second.</small>

@@ -472,7 +472,7 @@ $$\frac{7}{4} = 1\frac{3}{4} \qquad {-\frac{9}{2}} = -4\frac{1}{2} \qquad \frac{
 The figure below shows the number line with all the points plotted.
 
 {{< apfigure kind="numberline" >}}
-{"ariaLabel":"A number line from -6 to 6 with points plotted at -5, -9/2 (halfway between -5 and -4), -4/5 (between -1 and 0), 1/5 (between 0 and 1), 7/4 (between 1 and 2), 8/3 (between 2 and 3), and 3.","min":-6,"max":6,"points":[{"at":-5},{"at":-4.5,"label":"−9/2"},{"at":-0.8,"label":"−4/5"},{"at":0.2,"label":"1/5"},{"at":1.75,"label":"7/4"},{"at":2.6666666666666665,"label":"8/3"},{"at":3}]}
+{"ariaLabel":"A number line from −6 to 6 with points plotted at −5, −9/2 (halfway between −5 and −4), −4/5 (between −1 and 0), 1/5 (between 0 and 1), 7/4 (between 1 and 2), 8/3 (between 2 and 3), and 3.","min":-6,"max":6,"width":528,"points":[{"at":-5},{"at":-4.5,"label":"−9/2"},{"at":-0.8,"label":"−4/5"},{"at":0.2,"label":"1/5"},{"at":1.75,"label":"7/4"},{"at":2.6666666666666665,"label":"8/3"},{"at":3}]}
 {{< /apfigure >}}
 
 **Example.** Locate and label the following on a number line: $4,
@@ -491,65 +491,9 @@ numbers and then plot them as described above:
 $\tfrac{6}{5} = 1\tfrac{1}{5}, -\tfrac{5}{2} = -2\tfrac{1}{2},
 \tfrac{7}{3} = 2\tfrac{1}{3}$.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -6 to 6 with points plotted at -3, -5/2 (between -3 and -2), -1/4 (between -1 and 0), 3/4 (between 0 and 1), 6/5 (between 1 and 2), 7/3 (between 2 and 3), and 4." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="8" y1="45" x2="612" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-frac2)" marker-start="url(#arrow-frac2-start)" />
-  <defs>
-    <marker id="arrow-frac2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
-    <marker id="arrow-frac2-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
-  </defs>
-  <g>
-      <line x1="20" y1="38" x2="20" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="20" y="70" text-anchor="middle" font-size="14" fill="currentColor">-6</text>
-    </g><g>
-      <line x1="68.3" y1="38" x2="68.3" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="68.3" y="70" text-anchor="middle" font-size="14" fill="currentColor">-5</text>
-    </g><g>
-      <line x1="116.6" y1="38" x2="116.6" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="116.6" y="70" text-anchor="middle" font-size="14" fill="currentColor">-4</text>
-    </g><g>
-      <line x1="164.89999999999998" y1="38" x2="164.89999999999998" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="164.89999999999998" y="70" text-anchor="middle" font-size="14" fill="currentColor">-3</text>
-    </g><g>
-      <line x1="213.2" y1="38" x2="213.2" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="213.2" y="70" text-anchor="middle" font-size="14" fill="currentColor">-2</text>
-    </g><g>
-      <line x1="261.5" y1="38" x2="261.5" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="261.5" y="70" text-anchor="middle" font-size="14" fill="currentColor">-1</text>
-    </g><g>
-      <line x1="309.79999999999995" y1="38" x2="309.79999999999995" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="309.79999999999995" y="70" text-anchor="middle" font-size="14" fill="currentColor">0</text>
-    </g><g>
-      <line x1="358.09999999999997" y1="38" x2="358.09999999999997" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="358.09999999999997" y="70" text-anchor="middle" font-size="14" fill="currentColor">1</text>
-    </g><g>
-      <line x1="406.4" y1="38" x2="406.4" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="406.4" y="70" text-anchor="middle" font-size="14" fill="currentColor">2</text>
-    </g><g>
-      <line x1="454.7" y1="38" x2="454.7" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="454.7" y="70" text-anchor="middle" font-size="14" fill="currentColor">3</text>
-    </g><g>
-      <line x1="503" y1="38" x2="503" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="503" y="70" text-anchor="middle" font-size="14" fill="currentColor">4</text>
-    </g><g>
-      <line x1="551.3" y1="38" x2="551.3" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="551.3" y="70" text-anchor="middle" font-size="14" fill="currentColor">5</text>
-    </g><g>
-      <line x1="599.5999999999999" y1="38" x2="599.5999999999999" y2="52" stroke="currentColor" stroke-width="1.5" />
-      <text x="599.5999999999999" y="70" text-anchor="middle" font-size="14" fill="currentColor">6</text>
-    </g>
-  <circle cx="164.89999999999998" cy="45" r="5" fill="currentColor" />
-  <circle cx="189.04999999999998" cy="45" r="5" fill="currentColor" />
-  <text x="189.04999999999998" y="20" text-anchor="middle" font-size="13" fill="currentColor">-5/2</text>
-  <circle cx="297.72499999999997" cy="45" r="5" fill="currentColor" />
-  <text x="297.72499999999997" y="20" text-anchor="middle" font-size="13" fill="currentColor">-1/4</text>
-  <circle cx="346.025" cy="45" r="5" fill="currentColor" />
-  <text x="341" y="20" text-anchor="middle" font-size="13" fill="currentColor">3/4</text>
-  <circle cx="367.76" cy="45" r="5" fill="currentColor" />
-  <text x="373" y="20" text-anchor="middle" font-size="13" fill="currentColor">6/5</text>
-  <circle cx="422.5" cy="45" r="5" fill="currentColor" />
-  <text x="422.5" y="20" text-anchor="middle" font-size="13" fill="currentColor">7/3</text>
-  <circle cx="503" cy="45" r="5" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −6 to 6 with points plotted at −3, −5/2 (between −3 and −2), −1/4 (between −1 and 0), 3/4 (between 0 and 1), 6/5 (between 1 and 2), 7/3 (between 2 and 3), and 4. The labels 3/4 and 6/5 sit apart, each joined to its point by a leader line.","min":-6,"max":6,"width":528,"points":[{"at":-3},{"at":-2.5,"label":"−5/2"},{"at":-0.25,"label":"−1/4"},{"at":0.75,"label":"3/4","labelNudge":[-12,0],"leader":true},{"at":1.2,"label":"6/5","labelNudge":[12,0],"leader":true},{"at":2.3333333333333335,"label":"7/3"},{"at":4}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Locate the following on a number line, then give the value that is farthest to the left: $-1$, $\tfrac{1}{3}$, $\tfrac{6}{5}$, $-\tfrac{7}{4}$, $\tfrac{9}{2}$, $5$, $-\tfrac{8}{3}$."
@@ -574,40 +518,9 @@ $>$: (a) $-\tfrac{2}{3}\ \_\_\_\ -1$ (b) $-3\tfrac{1}{2}\ \_\_\_\ -3$
 It may help to refer to the number line below, which plots all of these
 numbers.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -4 to 1 with points plotted at -3 1/2 (halfway between -4 and -3), -3, -8/3 (between -3 and -2, closer to -3), -2, -1, -3/4, -2/3, and -1/4 (the last three between -1 and 0, in that order from left to right)." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="18" y1="45" x2="612" y2="45" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-ord1)" marker-start="url(#arrow-ord1-start)" />
-  <defs>
-    <marker id="arrow-ord1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
-    <marker id="arrow-ord1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
-  </defs>
-  <line x1="40" y1="38" x2="40" y2="52" stroke="currentColor" stroke-width="1.5" />
-  <text x="40" y="70" text-anchor="middle" font-size="14" fill="currentColor">-4</text>
-  <line x1="150" y1="38" x2="150" y2="52" stroke="currentColor" stroke-width="1.5" />
-  <text x="150" y="70" text-anchor="middle" font-size="14" fill="currentColor">-3</text>
-  <line x1="260" y1="38" x2="260" y2="52" stroke="currentColor" stroke-width="1.5" />
-  <text x="260" y="70" text-anchor="middle" font-size="14" fill="currentColor">-2</text>
-  <line x1="370" y1="38" x2="370" y2="52" stroke="currentColor" stroke-width="1.5" />
-  <text x="370" y="70" text-anchor="middle" font-size="14" fill="currentColor">-1</text>
-  <line x1="480" y1="38" x2="480" y2="52" stroke="currentColor" stroke-width="1.5" />
-  <text x="480" y="70" text-anchor="middle" font-size="14" fill="currentColor">0</text>
-  <line x1="590" y1="38" x2="590" y2="52" stroke="currentColor" stroke-width="1.5" />
-  <text x="590" y="70" text-anchor="middle" font-size="14" fill="currentColor">1</text>
-  <circle cx="95" cy="45" r="4" fill="currentColor" />
-  <text x="95" y="20" text-anchor="middle" font-size="13" fill="currentColor">-3 1/2</text>
-  <circle cx="150" cy="45" r="4" fill="currentColor" />
-  <circle cx="186.67" cy="45" r="4" fill="currentColor" />
-  <text x="186.67" y="20" text-anchor="middle" font-size="13" fill="currentColor">-8/3</text>
-  <circle cx="260" cy="45" r="4" fill="currentColor" />
-  <circle cx="370" cy="45" r="4" fill="currentColor" />
-  <circle cx="397.5" cy="45" r="4" fill="currentColor" />
-  <text x="385" y="20" text-anchor="middle" font-size="13" fill="currentColor">-3/4</text>
-  <line x1="385" y1="25" x2="397.5" y2="39" stroke="currentColor" stroke-width="1" />
-  <circle cx="406.67" cy="45" r="4" fill="currentColor" />
-  <text x="419" y="20" text-anchor="middle" font-size="13" fill="currentColor">-2/3</text>
-  <line x1="419" y1="25" x2="406.67" y2="39" stroke="currentColor" stroke-width="1" />
-  <circle cx="452.5" cy="45" r="4" fill="currentColor" />
-  <text x="452.5" y="20" text-anchor="middle" font-size="13" fill="currentColor">-1/4</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 1 with points plotted at −3 1/2 (halfway between −4 and −3), −3, −8/3 (between −3 and −2, closer to −3), −2, −1, −3/4, −2/3, and −1/4 (the last three between −1 and 0, in that order from left to right). The labels −3/4 and −2/3 sit apart, each joined to its point by a leader line.","min":-4,"max":1,"width":528,"points":[{"at":-3.5,"label":"−3 1/2"},{"at":-3},{"at":-2.6666666666666665,"label":"−8/3"},{"at":-2},{"at":-1},{"at":-0.75,"label":"−3/4","labelNudge":[-13,0],"leader":true},{"at":-0.6666666666666666,"label":"−2/3","labelNudge":[13,0],"leader":true},{"at":-0.25,"label":"−1/4"}]}
+{{< /apfigure >}}
 
 (a) $-\tfrac{2}{3}$ is to the right of $-1$ on the number line, so
 $-\tfrac{2}{3} > -1$.
@@ -657,7 +570,7 @@ $1$ into $10$ equal parts. Now label the parts $0.1, 0.2, 0.3, 0.4, 0.5,
 numbers are consistently in tenths. Finally, mark $0.4$ on the number line.
 
 {{< apfigure kind="numberline" >}}
-{"ariaLabel":"A number line from 0.0 to 1.0, divided into tenths, each tick labeled, with a point plotted on the 0.4 mark.","min":0,"max":1,"step":0.1,"points":[{"at":0.4}]}
+{"ariaLabel":"A number line from 0.0 to 1.0, divided into tenths, each tick labeled, with a point plotted on the 0.4 mark.","min":0,"max":1,"step":0.1,"width":528,"points":[{"at":0.4}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -682,50 +595,9 @@ The decimal $-0.74$ is equivalent to $-\tfrac{74}{100}$, so it is located
 between $0$ and $-1$. On a number line, mark off and label the hundredths in
 the interval between $0$ and $-1$.
 
-<svg viewBox="0 0 620 80" role="img" aria-label="A number line from -1.00 to 0.00 with a tick mark at every hundredth and a label at every tenth, and a point plotted and labeled at -0.74, between -0.80 and -0.70." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-dec2)" marker-start="url(#arrow-dec2-start)" />
-  <defs>
-    <marker id="arrow-dec2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
-    <marker id="arrow-dec2-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
-  </defs>
-  <path d="M45.3 31 V39 M50.6 31 V39 M55.9 31 V39 M61.2 31 V39 M66.5 31 V39 M71.8 31 V39 M77.1 31 V39 M82.4 31 V39 M87.7 31 V39 M98.3 31 V39 M103.6 31 V39 M108.9 31 V39 M114.2 31 V39 M119.5 31 V39 M124.8 31 V39 M130.1 31 V39 M135.4 31 V39 M140.7 31 V39 M151.3 31 V39 M156.6 31 V39 M161.9 31 V39 M167.2 31 V39 M172.5 31 V39 M177.8 31 V39 M183.1 31 V39 M188.4 31 V39 M193.7 31 V39 M204.3 31 V39 M209.6 31 V39 M214.9 31 V39 M220.2 31 V39 M225.5 31 V39 M230.8 31 V39 M236.1 31 V39 M241.4 31 V39 M246.7 31 V39 M257.3 31 V39 M262.6 31 V39 M267.9 31 V39 M273.2 31 V39 M278.5 31 V39 M283.8 31 V39 M289.1 31 V39 M294.4 31 V39 M299.7 31 V39 M310.3 31 V39 M315.6 31 V39 M320.9 31 V39 M326.2 31 V39 M331.5 31 V39 M336.8 31 V39 M342.1 31 V39 M347.4 31 V39 M352.7 31 V39 M363.3 31 V39 M368.6 31 V39 M373.9 31 V39 M379.2 31 V39 M384.5 31 V39 M389.8 31 V39 M395.1 31 V39 M400.4 31 V39 M405.7 31 V39 M416.3 31 V39 M421.6 31 V39 M426.9 31 V39 M432.2 31 V39 M437.5 31 V39 M442.8 31 V39 M448.1 31 V39 M453.4 31 V39 M458.7 31 V39 M469.3 31 V39 M474.6 31 V39 M479.9 31 V39 M485.2 31 V39 M490.5 31 V39 M495.8 31 V39 M501.1 31 V39 M506.4 31 V39 M511.7 31 V39 M522.3 31 V39 M527.6 31 V39 M532.9 31 V39 M538.2 31 V39 M543.5 31 V39 M548.8 31 V39 M554.1 31 V39 M559.4 31 V39 M564.7 31 V39" stroke="currentColor" stroke-width="1" fill="none" />
-  <g>
-      <line x1="40" y1="28" x2="40" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="40" y="60" text-anchor="middle" font-size="12" fill="currentColor">-1.00</text>
-    </g><g>
-      <line x1="93" y1="28" x2="93" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="93" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.90</text>
-    </g><g>
-      <line x1="146" y1="28" x2="146" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="146" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.80</text>
-    </g><g>
-      <line x1="199" y1="28" x2="199" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="199" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.70</text>
-    </g><g>
-      <line x1="252" y1="28" x2="252" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="252" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.60</text>
-    </g><g>
-      <line x1="305" y1="28" x2="305" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="305" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.50</text>
-    </g><g>
-      <line x1="358" y1="28" x2="358" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="358" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.40</text>
-    </g><g>
-      <line x1="411" y1="28" x2="411" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="411" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.30</text>
-    </g><g>
-      <line x1="464" y1="28" x2="464" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="464" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.20</text>
-    </g><g>
-      <line x1="517" y1="28" x2="517" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="517" y="60" text-anchor="middle" font-size="12" fill="currentColor">-0.10</text>
-    </g><g>
-      <line x1="570" y1="28" x2="570" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="570" y="60" text-anchor="middle" font-size="12" fill="currentColor">0.00</text>
-    </g>
-  <circle cx="177.8" cy="35" r="5" fill="currentColor" />
-  <text x="177.8" y="16" text-anchor="middle" font-size="12" fill="currentColor">-0.74</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −1.00 to 0.00 with a tick mark at every hundredth and a label at every tenth, and a point plotted and labeled at −0.74, between −0.80 and −0.70.","min":-1,"max":0,"step":0.01,"labelEvery":10,"width":528,"points":[{"at":-0.74,"label":"−0.74"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Locate $-0.6$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."
@@ -751,40 +623,9 @@ $$0.40 > 0.04$$
 Again, we can use the number line to order numbers. Where are $0.04$ and
 $0.40$ located on the number line?
 
-<svg viewBox="0 0 620 80" role="img" aria-label="A number line from 0.0 to 1.0 with a tick mark at every hundredth and a label at every tenth, and points plotted and labeled at 0.04, between 0.0 and 0.1, and at 0.40, on the 0.4 mark." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-dec3)" marker-start="url(#arrow-dec3-start)" />
-  <defs>
-    <marker id="arrow-dec3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
-    <marker id="arrow-dec3-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
-  </defs>
-  <path d="M45.3 31 V39 M50.6 31 V39 M55.9 31 V39 M61.2 31 V39 M66.5 31 V39 M71.8 31 V39 M77.1 31 V39 M82.4 31 V39 M87.7 31 V39 M98.3 31 V39 M103.6 31 V39 M108.9 31 V39 M114.2 31 V39 M119.5 31 V39 M124.8 31 V39 M130.1 31 V39 M135.4 31 V39 M140.7 31 V39 M151.3 31 V39 M156.6 31 V39 M161.9 31 V39 M167.2 31 V39 M172.5 31 V39 M177.8 31 V39 M183.1 31 V39 M188.4 31 V39 M193.7 31 V39 M204.3 31 V39 M209.6 31 V39 M214.9 31 V39 M220.2 31 V39 M225.5 31 V39 M230.8 31 V39 M236.1 31 V39 M241.4 31 V39 M246.7 31 V39 M257.3 31 V39 M262.6 31 V39 M267.9 31 V39 M273.2 31 V39 M278.5 31 V39 M283.8 31 V39 M289.1 31 V39 M294.4 31 V39 M299.7 31 V39 M310.3 31 V39 M315.6 31 V39 M320.9 31 V39 M326.2 31 V39 M331.5 31 V39 M336.8 31 V39 M342.1 31 V39 M347.4 31 V39 M352.7 31 V39 M363.3 31 V39 M368.6 31 V39 M373.9 31 V39 M379.2 31 V39 M384.5 31 V39 M389.8 31 V39 M395.1 31 V39 M400.4 31 V39 M405.7 31 V39 M416.3 31 V39 M421.6 31 V39 M426.9 31 V39 M432.2 31 V39 M437.5 31 V39 M442.8 31 V39 M448.1 31 V39 M453.4 31 V39 M458.7 31 V39 M469.3 31 V39 M474.6 31 V39 M479.9 31 V39 M485.2 31 V39 M490.5 31 V39 M495.8 31 V39 M501.1 31 V39 M506.4 31 V39 M511.7 31 V39 M522.3 31 V39 M527.6 31 V39 M532.9 31 V39 M538.2 31 V39 M543.5 31 V39 M548.8 31 V39 M554.1 31 V39 M559.4 31 V39 M564.7 31 V39" stroke="currentColor" stroke-width="1" fill="none" />
-  <line x1="40" y1="28" x2="40" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="40" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.0</text>
-  <line x1="93" y1="28" x2="93" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="93" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.1</text>
-  <line x1="146" y1="28" x2="146" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="146" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
-  <line x1="199" y1="28" x2="199" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="199" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.3</text>
-  <line x1="252" y1="28" x2="252" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="252" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.4</text>
-  <line x1="305" y1="28" x2="305" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="305" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.5</text>
-  <line x1="358" y1="28" x2="358" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="358" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.6</text>
-  <line x1="411" y1="28" x2="411" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="411" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.7</text>
-  <line x1="464" y1="28" x2="464" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="464" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.8</text>
-  <line x1="517" y1="28" x2="517" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="517" y="60" text-anchor="middle" font-size="13" fill="currentColor">0.9</text>
-  <line x1="570" y1="28" x2="570" y2="42" stroke="currentColor" stroke-width="1.5" />
-  <text x="570" y="60" text-anchor="middle" font-size="13" fill="currentColor">1.0</text>
-  <circle cx="61.2" cy="35" r="5" fill="currentColor" />
-  <text x="61.2" y="16" text-anchor="middle" font-size="12" fill="currentColor">0.04</text>
-  <circle cx="252" cy="35" r="5" fill="currentColor" />
-  <text x="252" y="16" text-anchor="middle" font-size="12" fill="currentColor">0.40</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 0.0 to 1.0 with a tick mark at every hundredth and a label at every tenth, and points plotted and labeled at 0.04, between 0.0 and 0.1, and at 0.40, on the 0.4 mark.","min":0,"max":1,"step":0.01,"labelEvery":10,"labelDecimals":1,"width":528,"points":[{"at":0.04,"label":"0.04"},{"at":0.4,"label":"0.40"}]}
+{{< /apfigure >}}
 
 We see that $0.40$ is to the right of $0.04$ on the number line. This is
 another way to demonstrate that $0.40 > 0.04$.

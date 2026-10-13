@@ -42,35 +42,9 @@ $$0, 1, 2, 3, 4, 5, \dots$$
 
 Counting numbers and whole numbers can be visualized on a **number line**:
 
-<svg viewBox="0 0 560 70" role="img" aria-label="A number line from 0 to 6 in increments of one. Numbers increase from left to right — larger to the right, smaller to the left." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="35" x2="540" y2="35" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="540,35 530,30 530,40" fill="currentColor" />
-  <polygon points="20,35 30,30 30,40" fill="currentColor" />
-  <g>
-      <line x1="60" y1="28" x2="60" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="60" y="62" text-anchor="middle" font-size="15" fill="currentColor">0</text>
-    </g><g>
-      <line x1="133" y1="28" x2="133" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="133" y="62" text-anchor="middle" font-size="15" fill="currentColor">1</text>
-    </g><g>
-      <line x1="206" y1="28" x2="206" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="206" y="62" text-anchor="middle" font-size="15" fill="currentColor">2</text>
-    </g><g>
-      <line x1="279" y1="28" x2="279" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="279" y="62" text-anchor="middle" font-size="15" fill="currentColor">3</text>
-    </g><g>
-      <line x1="352" y1="28" x2="352" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="352" y="62" text-anchor="middle" font-size="15" fill="currentColor">4</text>
-    </g><g>
-      <line x1="425" y1="28" x2="425" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="425" y="62" text-anchor="middle" font-size="15" fill="currentColor">5</text>
-    </g><g>
-      <line x1="498" y1="28" x2="498" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="498" y="62" text-anchor="middle" font-size="15" fill="currentColor">6</text>
-    </g>
-  <text x="530" y="18" text-anchor="end" font-size="12" fill="currentColor">larger →</text>
-  <text x="30" y="18" font-size="12" fill="currentColor">← smaller</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 0 to 6 in increments of one. Numbers increase from left to right — larger to the right, smaller to the left.","min":0,"max":6,"width":528,"annotations":[{"kind":"text","at":0.5,"label":"← smaller"},{"kind":"text","at":5.5,"label":"larger →"}]}
+{{< /apfigure >}}
 
 The numbers on the number line increase from left to right and decrease from
 right to left. The point labeled $0$ is called the **origin**. The points are
@@ -257,44 +231,9 @@ process of approximating a number is called **rounding**.
 The number line helps you see how rounding works. Suppose we want to round
 $76$ to the nearest ten. Is $76$ closer to $70$ or to $80$?
 
-<svg viewBox="0 0 560 70" role="img" aria-label="A number line from 70 to 80 in increments of one, with a dot marked at 76. The dot at 76 is closer to 80 than to 70." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="35" x2="540" y2="35" stroke="currentColor" stroke-width="1.5" />
-  <g>
-      <line x1="40" y1="28" x2="40" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="40" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="bold">70</text>
-    </g><g>
-      <line x1="88" y1="28" x2="88" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="88" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">71</text>
-    </g><g>
-      <line x1="136" y1="28" x2="136" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="136" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">72</text>
-    </g><g>
-      <line x1="184" y1="28" x2="184" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="184" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">73</text>
-    </g><g>
-      <line x1="232" y1="28" x2="232" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="232" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">74</text>
-    </g><g>
-      <line x1="280" y1="28" x2="280" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="280" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">75</text>
-    </g><g>
-      <line x1="328" y1="28" x2="328" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="328" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">76</text>
-    </g><g>
-      <line x1="376" y1="28" x2="376" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="376" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">77</text>
-    </g><g>
-      <line x1="424" y1="28" x2="424" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="424" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">78</text>
-    </g><g>
-      <line x1="472" y1="28" x2="472" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="472" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="normal">79</text>
-    </g><g>
-      <line x1="520" y1="28" x2="520" y2="42" stroke="currentColor" stroke-width="1.5" />
-      <text x="520" y="62" text-anchor="middle" font-size="14" fill="currentColor" font-weight="bold">80</text>
-    </g>
-  <circle cx="328" cy="35" r="6" fill="var(--ap-error, #b42318)" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 70 to 80 in increments of one, with a dot marked at 76. The dot at 76 is closer to 80 than to 70.","min":70,"max":80,"points":[{"at":76}]}
+{{< /apfigure >}}
 
 $76$ is closer to $80$, so $76$ rounded to the nearest ten is $80$. Likewise
 $72$ is closer to $70$, so $72$ rounded to the nearest ten is $70$.

@@ -33,43 +33,9 @@ the pattern continues endlessly.
 We can visualize counting numbers and whole numbers on a **number line**,
 which gets larger from left to right and smaller from right to left:
 
-<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 6, marked at every whole number. Above it, an arrow labeled smaller runs left from 3 toward 0, and an arrow labeled larger runs right from just past 3 to 6." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
-  <text x="140" y="16" text-anchor="middle" font-size="14" fill="currentColor">smaller</text>
-  <line x1="270" y1="20" x2="60" y2="20" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowLeft)" />
-  <text x="440" y="16" text-anchor="middle" font-size="14" fill="currentColor">larger</text>
-  <line x1="310" y1="20" x2="520" y2="20" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowRight)" />
-  <defs>
-    <marker id="arrowLeft" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
-    </marker>
-    <marker id="arrowRight" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
-    </marker>
-  </defs>
-  <line x1="40" y1="55" x2="540" y2="55" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowRight)" />
-  <g>
-      <line x1="40" y1="48" x2="40" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="40" y="80" text-anchor="middle" font-size="14" fill="currentColor">0</text>
-    </g><g>
-      <line x1="120" y1="48" x2="120" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="120" y="80" text-anchor="middle" font-size="14" fill="currentColor">1</text>
-    </g><g>
-      <line x1="200" y1="48" x2="200" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="200" y="80" text-anchor="middle" font-size="14" fill="currentColor">2</text>
-    </g><g>
-      <line x1="280" y1="48" x2="280" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="280" y="80" text-anchor="middle" font-size="14" fill="currentColor">3</text>
-    </g><g>
-      <line x1="360" y1="48" x2="360" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="360" y="80" text-anchor="middle" font-size="14" fill="currentColor">4</text>
-    </g><g>
-      <line x1="440" y1="48" x2="440" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="440" y="80" text-anchor="middle" font-size="14" fill="currentColor">5</text>
-    </g><g>
-      <line x1="520" y1="48" x2="520" y2="62" stroke="currentColor" stroke-width="1.5" />
-      <text x="520" y="80" text-anchor="middle" font-size="14" fill="currentColor">6</text>
-    </g>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 0 to 6, marked at every whole number, with an arrow at each end. Above it, an arrow labeled smaller runs left from just before 3 toward 0, and an arrow labeled larger runs right from just past 3 to 6.","min":0,"max":6,"width":528,"annotations":[{"kind":"arrow","from":2.875,"to":0.25,"label":"smaller"},{"kind":"arrow","from":3.375,"to":6,"label":"larger"}]}
+{{< /apfigure >}}
 
 While this number line shows only the whole numbers $0$ through $6$, the
 numbers keep going without end.

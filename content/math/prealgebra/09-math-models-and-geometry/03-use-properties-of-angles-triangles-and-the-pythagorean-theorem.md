@@ -27,14 +27,9 @@ Are you familiar with the phrase "do a $180$"? It means to turn so that you
 face the opposite direction — it comes from the fact that the measure of an
 angle that makes a straight line is $180$ degrees.
 
-<svg viewBox="0 0 260 90" role="img" aria-label="A straight line with an arrow at each end and a point marked in the middle. An arc from one side of the point to the other is labeled 180 degrees." style="max-width: 260px; display: block; margin: 1.5rem auto">
-  <line x1="28" y1="70" x2="232" y2="70" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,70 30,65 30,75" fill="currentColor" />
-  <polygon points="240,70 230,65 230,75" fill="currentColor" />
-  <circle cx="130" cy="70" r="3" fill="currentColor" />
-  <path d="M 70 70 A 60 60 0 0 1 190 70" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="130" y="35" text-anchor="middle" font-size="15" fill="currentColor">180°</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A straight line with an arrow at each end and a point marked in the middle. An arc from one side of the point to the other is labeled 180 degrees.","segments":[{"from":[-3.6667,0],"to":[3.6667,0],"arrow":"both"}],"points":[{"at":[0,0]}],"circles":[{"at":[0,0],"r":2,"from":0,"to":180}],"texts":[{"at":[0,1.1667],"text":"180°","anchor":"middle"}]}
+{{< /apfigure >}}
 
 An **angle** is formed by two rays that share a common endpoint. Each ray
 is called a side of the angle, and the common endpoint is called the
@@ -42,13 +37,9 @@ is called a side of the angle, and the common endpoint is called the
 $\angle A$ is the angle with vertex at point $A$. The measure of $\angle A$
 is written $m\angle A$.
 
-<svg viewBox="0 0 220 100" role="img" aria-label="Angle A: two rays sharing vertex A, one horizontal and one sloping upward." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <line x1="30" y1="80" x2="192" y2="80" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="200,80 190,75 190,85" fill="currentColor" />
-  <line x1="30" y1="80" x2="182" y2="23" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="190,20 182.4,28.2 178.9,18.8" fill="currentColor" />
-  <text x="20" y="90" text-anchor="middle" font-size="15" fill="currentColor">A</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Angle A: two rays sharing vertex A, one horizontal and one sloping upward.","segments":[{"from":[0,0],"to":[5.6667,0],"arrow":true},{"from":[0,0],"to":[5.3333,2],"arrow":true}],"texts":[{"at":[-0.3333,-0.3333],"text":"A","anchor":"middle"}]}
+{{< /apfigure >}}
 
 We measure angles in degrees, using the symbol ° to represent degrees, and
 the abbreviation $m$ for the *measure* of an angle. So if $\angle A$ is
@@ -154,15 +145,9 @@ vertices. The triangle below is called $\Delta ABC$, read "triangle ABC."
 Each side is labeled with a lowercase letter to match the uppercase letter
 of the opposite vertex.
 
-<svg viewBox="0 0 220 170" role="img" aria-label="Triangle ABC with vertices A, B, and C, and sides a (opposite A), b (opposite B), and c (opposite C)." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <polygon points="40,140 190,140 140,20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <text x="30" y="152" text-anchor="middle" font-size="15" fill="currentColor">A</text>
-  <text x="200" y="152" text-anchor="middle" font-size="15" fill="currentColor">C</text>
-  <text x="140" y="14" text-anchor="middle" font-size="15" fill="currentColor">B</text>
-  <text x="115" y="157" text-anchor="middle" font-size="14" fill="currentColor">b</text>
-  <text x="179" y="78" text-anchor="middle" font-size="14" fill="currentColor">a</text>
-  <text x="73" y="78" text-anchor="middle" font-size="14" fill="currentColor">c</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Triangle ABC with vertices A, B, and C, and sides a (opposite A), b (opposite B), and c (opposite C).","polygons":[{"points":[[0,0],[5,0],[3.3333,4]],"vertexLabels":["A","C","B"],"edgeLabels":["b","a","c"]}]}
+{{< /apfigure >}}
 
 The three angles of a triangle are related in a special way: the sum of
 their measures is $180^\circ$.
@@ -212,11 +197,9 @@ degrees.
 A **right triangle** has one $90^\circ$ angle, often marked with a small square
 in the corner.
 
-<svg viewBox="0 0 180 130" role="img" aria-label="A right triangle with the 90 degree angle marked at the bottom-left corner with a small square." style="max-width: 180px; display: block; margin: 1.5rem auto">
-  <polygon points="30,110 170,110 30,15" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="30" y="97" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <text x="60" y="93" text-anchor="middle" font-size="14" fill="currentColor">90°</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with the 90 degree angle marked at the bottom-left corner with a small square.","polygons":[{"points":[[0,0],[4.6667,0],[0,3.1667]],"rightAngles":[0]}],"texts":[{"at":[1,0.5667],"text":"90°","anchor":"middle"}]}
+{{< /apfigure >}}
 
 If we know a triangle is a right triangle, one angle measures $90^\circ$, so we
 only need the measure of one of the other angles to find the third.
@@ -382,13 +365,9 @@ mathematician Pythagoras. In a right triangle, the side opposite the $90^\circ$
 angle is called the **hypotenuse**, and the other two sides are called the
 **legs**.
 
-<svg viewBox="0 0 200 150" role="img" aria-label="A right triangle with legs a and b and hypotenuse c, the right angle marked at the bottom-left." style="max-width: 200px; display: block; margin: 1.5rem auto">
-  <polygon points="30,130 170,130 30,20" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <rect x="30" y="117" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <text x="15" y="78" text-anchor="middle" font-size="14" fill="currentColor">a</text>
-  <text x="100" y="146" text-anchor="middle" font-size="14" fill="currentColor">b</text>
-  <text x="115" y="65" text-anchor="middle" font-size="14" fill="currentColor">c</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with legs a and b and hypotenuse c, the right angle marked at the bottom-left.","polygons":[{"points":[[0,0],[4.6667,0],[0,3.6667]],"rightAngles":[0],"edgeLabels":["b","c","a"]}]}
+{{< /apfigure >}}
 
 The Pythagorean Theorem tells how the lengths of the three sides of a right
 triangle relate to each other: in any right triangle, the sum of the
@@ -480,14 +459,9 @@ distances from the corner to each end of the bracket are equal. How far
 below the corner should he fasten the bracket? Approximate to the nearest
 tenth of an inch.
 
-<svg viewBox="0 0 180 165" role="img" aria-label="The top corner of a gazebo frame, where a horizontal beam meets a vertical post at a right angle. A diagonal brace labeled 10 in joins the post and the beam; its ends are a distance x below the corner on the post and a distance x from the corner along the beam." style="max-width: 180px; display: block; margin: 1.5rem auto">
-  <polyline points="165,25 30,25 30,155" fill="none" stroke="currentColor" stroke-width="1.5" />
-  <line x1="30" y1="125" x2="130" y2="25" stroke="currentColor" stroke-width="2.5" />
-  <rect x="30" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <text x="18" y="80" text-anchor="middle" font-size="14" fill="currentColor">x</text>
-  <text x="80" y="17" text-anchor="middle" font-size="14" fill="currentColor">x</text>
-  <text x="92" y="98" text-anchor="start" font-size="14" fill="currentColor">10 in</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"The top corner of a gazebo frame, where a horizontal beam meets a vertical post at a right angle. A diagonal brace labeled 10 in joins the post and the beam; its ends are a distance x below the corner on the post and a distance x from the corner along the beam.","polygons":[{"points":[[0,0],[3.3333,0],[0,-3.3333]],"rightAngles":[0],"edgeLabels":["x","10 in","x"]}],"segments":[{"from":[3.3333,0],"to":[4.5,0]},{"from":[0,-3.3333],"to":[0,-4.3333]}]}
+{{< /apfigure >}}
 
 Let $x =$ the distance from the corner along each side. Since both legs are
 equal:

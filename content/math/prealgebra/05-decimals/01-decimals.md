@@ -309,7 +309,7 @@ $0.0$ and $1$ as $1.0$, so that the numbers are consistently in tenths.
 Finally, mark $0.4$ on the number line.
 
 {{< apfigure kind="numberline" >}}
-{"ariaLabel":"A number line from 0.0 to 1.0 marked and labeled in tenths, with a point plotted at 0.4.","min":0,"max":1,"step":0.1,"points":[{"at":0.4}]}
+{"ariaLabel":"A number line from 0.0 to 1.0 marked and labeled in tenths, with a point plotted at 0.4.","min":0,"max":1,"step":0.1,"width":528,"points":[{"at":0.4}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -327,47 +327,9 @@ between $0$ and $-1$. On a number line, mark off and label the multiples of
 $-0.10$ in the interval between $0$ and $-1$ ($-0.10, -0.20$, etc.) and
 mark $-0.74$ between $-0.70$ and $-0.80$, a little closer to $-0.70$.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −1.00 to 0.00 marked and labeled in tenths, with a point labeled −0.74 plotted between −0.80 and −0.70, a little closer to −0.70." style="max-width: 560px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="600,40 590,34 590,46" fill="currentColor" />
-  <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g>
-        <line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">−1.00</text>
-      </g><g>
-        <line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.90</text>
-      </g><g>
-        <line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.80</text>
-      </g><g>
-        <line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.70</text>
-      </g><g>
-        <line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.60</text>
-      </g><g>
-        <line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.50</text>
-      </g><g>
-        <line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.40</text>
-      </g><g>
-        <line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.30</text>
-      </g><g>
-        <line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.20</text>
-      </g><g>
-        <line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.10</text>
-      </g><g>
-        <line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" />
-        <text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.00</text>
-      </g>
-  <circle cx="170.4" cy="40" r="6" fill="currentColor" />
-  <text x="170.4" y="22" text-anchor="middle" font-size="15" fill="currentColor">−0.74</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −1.0 to 0.0 marked and labeled in tenths, with a point labeled −0.74 plotted between −0.8 and −0.7, a little closer to −0.7.","min":-1,"max":0,"step":0.1,"width":528,"points":[{"at":-0.74,"label":"−0.74"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Locate $-0.25$ on a number line divided into hundredths. Which hundredths fraction marks that point? Enter it with denominator $100$."
@@ -391,7 +353,7 @@ of $b$ on the number line. Where are $0.04$ and $0.40$ located on the
 number line?
 
 {{< apfigure kind="numberline" >}}
-{"ariaLabel":"A number line from 0.0 to 1.0 marked and labeled in tenths, with a point labeled 0.04 plotted between 0.0 and 0.1, close to 0.0, and a second point plotted at 0.4.","min":0,"max":1,"step":0.1,"points":[{"at":0.04,"label":"0.04"},{"at":0.4}]}
+{"ariaLabel":"A number line from 0.0 to 1.0 marked and labeled in tenths, with a point labeled 0.04 plotted between 0.0 and 0.1, close to 0.0, and a second point plotted at 0.4.","min":0,"max":1,"step":0.1,"width":528,"points":[{"at":0.04,"label":"0.04"},{"at":0.4}]}
 {{< /apfigure >}}
 
 We see that $0.40$ is to the right of $0.04$, so we know $0.40 > 0.04$.
@@ -502,44 +464,13 @@ closer to \$2 or to \$3? What if we wanted to round \$2.72 to the nearest
 ten cents — is it closer to \$2.70 or to \$2.80? The number lines below can
 help us answer those questions.
 
-<svg viewBox="0 0 620 100" role="img" aria-label="Number line (a): from 2 to 3, marked and labeled in tenths, with a point labeled 2.72 plotted between 2.7 and 2.8, a little closer to 2.7." style="max-width: 560px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="600,40 590,34 590,46" fill="currentColor" />
-  <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">2</text></g>
-  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.1</text></g>
-  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.2</text></g>
-  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.3</text></g>
-  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.4</text></g>
-  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.5</text></g>
-  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.6</text></g>
-  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.7</text></g>
-  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.8</text></g>
-  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.9</text></g>
-  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">3</text></g>
-  <circle cx="418.8" cy="40" r="6" fill="currentColor" />
-  <text x="418.8" y="22" text-anchor="middle" font-size="15" fill="currentColor">2.72</text>
-  <text x="310" y="92" text-anchor="middle" font-size="15" fill="currentColor">(a)</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line (a): from 2.0 to 3.0, marked and labeled in tenths, with a point labeled 2.72 plotted between 2.7 and 2.8, a little closer to 2.7.","min":2,"max":3,"step":0.1,"width":528,"title":"(a)","points":[{"at":2.72,"label":"2.72"}]}
+{{< /apfigure >}}
 
-<svg viewBox="0 0 620 100" role="img" aria-label="Number line (b): from 2.70 to 2.80, marked and labeled in hundredths, with a point plotted at 2.72." style="max-width: 560px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="600,40 590,34 590,46" fill="currentColor" />
-  <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.70</text></g>
-  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.71</text></g>
-  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.72</text></g>
-  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.73</text></g>
-  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.74</text></g>
-  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.75</text></g>
-  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.76</text></g>
-  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.77</text></g>
-  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.78</text></g>
-  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.79</text></g>
-  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">2.80</text></g>
-  <circle cx="138" cy="40" r="6" fill="currentColor" />
-  <text x="310" y="92" text-anchor="middle" font-size="15" fill="currentColor">(b)</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"Number line (b): from 2.70 to 2.80, marked and labeled in hundredths, with a point plotted at 2.72.","min":2.7,"max":2.8,"step":0.01,"width":528,"title":"(b)","points":[{"at":2.72}]}
+{{< /apfigure >}}
 
 On number line (a), we see that $2.72$ is closer to $3$ than to $2$, so
 $2.72$ rounded to the nearest whole number is $3$. On number line (b), we
@@ -713,22 +644,9 @@ negative seventy-one and nine tenths
 
 ### Locate decimals on the number line
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked in tenths, with a point plotted at the eighth mark to the right of 0.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="600,40 590,34 590,46" fill="currentColor" />
-  <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.0</text></g>
-  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.5</text></g>
-  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="462" cy="40" r="6" fill="currentColor" /></g>
-  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">1.0</text></g>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 0.0 to 1.0 marked in tenths and labeled at 0.0, 0.5, and 1.0, with a point plotted at the eighth mark to the right of 0.0.","min":0,"max":1,"step":0.1,"labelEvery":5,"points":[{"at":0.8}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="What decimal is plotted on the number line above?"
@@ -737,22 +655,9 @@ negative seventy-one and nine tenths
   hint="The interval from 0 to 1 is divided into ten equal parts, so each tick is one tenth. Count the ticks from 0."
 >}}
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −1.0 to 0.0 marked in tenths, with a point plotted at the second mark to the left of 0.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="600,40 590,34 590,46" fill="currentColor" />
-  <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">−1.0</text></g>
-  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">−0.5</text></g>
-  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="462" cy="40" r="6" fill="currentColor" /></g>
-  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.0</text></g>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −1.0 to 0.0 marked in tenths and labeled at −1.0, −0.5, and 0.0, with a point plotted at the second mark to the left of 0.0.","min":-1,"max":0,"step":0.1,"labelEvery":5,"points":[{"at":-0.2}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="What decimal is plotted on the number line above?"
@@ -761,22 +666,9 @@ negative seventy-one and nine tenths
   hint="Each tick is one tenth. The point is to the left of 0, so the value is negative — count the ticks back from 0."
 >}}
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 3.0 to 4.0 marked in tenths, with a point plotted at the first mark to the right of 3.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="600,40 590,34 590,46" fill="currentColor" />
-  <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">3.0</text></g>
-  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="84" cy="40" r="6" fill="currentColor" /></g>
-  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">3.5</text></g>
-  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
-  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">4.0</text></g>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from 3.0 to 4.0 marked in tenths and labeled at 3.0, 3.5, and 4.0, with a point plotted at the first mark to the right of 3.0.","min":3,"max":4,"step":0.1,"labelEvery":5,"points":[{"at":3.1}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="What decimal is plotted on the number line above?"

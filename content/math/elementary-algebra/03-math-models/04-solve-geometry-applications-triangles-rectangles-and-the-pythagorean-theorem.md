@@ -52,19 +52,9 @@ The plural of the word *vertex* is *vertices*. All triangles have three
 vertices. Triangles are named by their vertices: the triangle below is
 called $\triangle ABC$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Triangle ABC. Vertex A is at the bottom left, vertex C is at the bottom right, and vertex B is at the top. The side opposite A (BC) is labeled a, the side opposite B (AC) is labeled b, and the side opposite C (AB) is labeled c." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 186" width="252" height="186" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="150" x2="216" y2="150" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="172" text-anchor="middle" font-size="13" fill="currentColor">b</text>
-  <line x1="216" y1="150" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="196.6" y="85.4" text-anchor="start" font-size="13" fill="currentColor">a</text>
-  <line x1="156" y1="36" x2="36" y2="150" stroke="currentColor" stroke-width="1.5"/>
-  <text x="87.7" y="82.3" text-anchor="end" font-size="13" fill="currentColor">c</text>
-  <text x="23.8" y="164.6" text-anchor="end" font-size="13" fill="currentColor">A</text>
-  <text x="227.7" y="165.6" text-anchor="start" font-size="13" fill="currentColor">C</text>
-  <text x="159.3" y="21.4" text-anchor="middle" font-size="13" fill="currentColor">B</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Triangle ABC. Vertex A is at the bottom left, vertex C is at the bottom right, and vertex B is at the top. The side opposite A (BC) is labeled a, the side opposite B (AC) is labeled b, and the side opposite C (AB) is labeled c.","unit":18,"polygons":[{"points":[[0,0],[10,0],[6.67,6.33]],"edgeLabels":["b","a","c"],"vertexLabels":["A","C","B"]}]}
+{{< /apfigure >}}
 
 The three angles of a triangle are related in a special way: the sum of
 their measures is $180\degree$. We read $m\angle A$ as "the measure of angle
@@ -81,22 +71,9 @@ To find the area of a triangle, we need to know its base and height. The
 height is a line that connects the base to the opposite vertex and makes a
 $90\degree$ angle with the base.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The same triangle ABC, now with a dashed height segment h drawn from vertex B straight down to the base, meeting it at a right angle marked with a small square." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 186" width="252" height="186" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="150" x2="216" y2="150" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="172" text-anchor="middle" font-size="13" fill="currentColor">b</text>
-  <line x1="216" y1="150" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="196.6" y="85.4" text-anchor="start" font-size="13" fill="currentColor">a</text>
-  <line x1="156" y1="36" x2="36" y2="150" stroke="currentColor" stroke-width="1.5"/>
-  <text x="87.7" y="82.3" text-anchor="end" font-size="13" fill="currentColor">c</text>
-  <text x="23.8" y="164.6" text-anchor="end" font-size="13" fill="currentColor">A</text>
-  <text x="227.7" y="165.6" text-anchor="start" font-size="13" fill="currentColor">C</text>
-  <text x="159.3" y="21.4" text-anchor="middle" font-size="13" fill="currentColor">B</text>
-  <line x1="156" y1="36" x2="156" y2="150" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="168" y="97" text-anchor="start" font-size="13" fill="currentColor">h</text>
-  <path d="M 146 150 L 146 140 L 156 140" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"The same triangle ABC, now with a dashed height segment h drawn from vertex B straight down to the base, meeting it at a right angle marked with a small square.","unit":18,"polygons":[{"points":[[0,0],[10,0],[6.67,6.33]],"edgeLabels":["b","a","c"],"vertexLabels":["A","C","B"]}],"segments":[{"from":[6.67,6.33],"to":[6.67,0],"dashed":true,"label":"h"}],"rightAngles":[{"at":[6.67,0],"dirs":[[-1,0],[0,1]]}]}
+{{< /apfigure >}}
 
 The formula for the area of $\triangle ABC$ is $A = \tfrac{1}{2}bh$, where
 $b$ is the base and $h$ is the height.
@@ -281,17 +258,9 @@ the corner. The side of the triangle opposite the $90\degree$ angle is
 called the **hypotenuse**, and each of the other two sides is called a
 **leg**.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with the right angle at the bottom left, marked with a small square. The vertical left side and the horizontal bottom side are both labeled leg. The slanted side opposite the right angle is labeled hypotenuse." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 162" width="198" height="162" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="126" x2="162" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="99" y="148" text-anchor="middle" font-size="13" fill="currentColor">leg</text>
-  <line x1="162" y1="126" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="106" y="69.2" text-anchor="start" font-size="13" fill="currentColor">hypotenuse</text>
-  <line x1="36" y1="36" x2="36" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="85" text-anchor="end" font-size="13" fill="currentColor">leg</text>
-  <path d="M 46 126 L 46 116 L 36 116" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with the right angle at the bottom left, marked with a small square. The vertical left side and the horizontal bottom side are both labeled leg. The slanted side opposite the right angle is labeled hypotenuse.","unit":18,"polygons":[{"points":[[0,0],[7,0],[0,5]],"edgeLabels":["leg","hypotenuse","leg"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 The Pythagorean Theorem tells how the lengths of the three sides of a right
 triangle relate to each other. It states that in any right triangle, the
@@ -306,17 +275,9 @@ the length of the hypotenuse.
   hypotenuse.
 {{< /callout >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with legs a (vertical, left side) and b (horizontal, bottom side), hypotenuse c (the slanted side), and the right angle marked at the bottom left corner." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 162" width="198" height="162" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="126" x2="162" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="99" y="148" text-anchor="middle" font-size="13" fill="currentColor">b</text>
-  <line x1="162" y1="126" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="106" y="69.2" text-anchor="start" font-size="13" fill="currentColor">c</text>
-  <line x1="36" y1="36" x2="36" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="85" text-anchor="end" font-size="13" fill="currentColor">a</text>
-  <path d="M 46 126 L 46 116 L 36 116" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with legs a (vertical, left side) and b (horizontal, bottom side), hypotenuse c (the slanted side), and the right angle marked at the bottom left corner.","unit":18,"polygons":[{"points":[[0,0],[7,0],[0,5]],"edgeLabels":["b","c","a"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 To solve exercises that use the Pythagorean Theorem, we need to find square
 roots. Recall the definition: if $m = n^2$, then $\sqrt{m} = n$, for
@@ -390,17 +351,9 @@ the brace are the same distance from the corner. What is the length of the
 legs of the right triangle formed? Approximate to the nearest tenth of an
 inch.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with the right angle at the bottom left corner. Both legs are labeled x because they are equal in length, and the hypotenuse (the diagonal brace) is labeled 10 inches." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 174" width="174" height="174" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="138" x2="138" y2="138" stroke="currentColor" stroke-width="1.5"/>
-  <text x="87" y="160" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <line x1="138" y1="138" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="95.5" y="76.5" text-anchor="start" font-size="13" fill="currentColor">10 in</text>
-  <line x1="36" y1="36" x2="36" y2="138" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="91" text-anchor="end" font-size="13" fill="currentColor">x</text>
-  <path d="M 46 138 L 46 128 L 36 128" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with the right angle at the bottom left corner. Both legs are labeled x because they are equal in length, and the hypotenuse (the diagonal brace) is labeled 10 inches.","unit":18,"polygons":[{"points":[[0,0],[6,0],[0,6]],"edgeLabels":["x","10 in","x"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 Let $x = $ the distance from the corner. Since both legs are equal,
 
@@ -437,18 +390,9 @@ have four sides and four right ($90\degree$) angles. The opposite sides of
 a rectangle are the same length. We refer to one side of the rectangle as
 the length, $L$, and its adjacent side as the width, $W$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangle. The top and bottom sides are both labeled L for length. The left and right sides are both labeled W for width." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 177" width="252" height="177" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="141" x2="216" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="163" text-anchor="middle" font-size="13" fill="currentColor">L</text>
-  <line x1="216" y1="141" x2="216" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="228" y="92.5" text-anchor="start" font-size="13" fill="currentColor">W</text>
-  <line x1="216" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">L</text>
-  <line x1="36" y1="36" x2="36" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="92.5" text-anchor="end" font-size="13" fill="currentColor">W</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A rectangle. The top and bottom sides are both labeled L for length. The left and right sides are both labeled W for width.","unit":18,"polygons":[{"points":[[0,0],[10,0],[10,5.83],[0,5.83]],"edgeLabels":["L","W","L","W"]}]}
+{{< /apfigure >}}
 
 The distance around this rectangle is $L + W + L + W$, or $2L + 2W$. This is
 the perimeter, $P$, of the rectangle:

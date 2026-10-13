@@ -308,18 +308,9 @@ circle. A line segment that passes through a circle's center connecting two
 points on the circle is called a **diameter**. The diameter is twice as long
 as the radius.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A circle with its radius drawn from the center to a point on the circle, its diameter drawn as a horizontal dashed line through the center, and its circumference labeled as the distance around the circle." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 262" width="252" height="262" font-family="Helvetica, Arial, sans-serif">
-  <circle cx="126" cy="126" r="90" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="126" y1="126" x2="196.9" y2="70.6" stroke="currentColor" stroke-width="1.5"/>
-  <text x="154.7" y="87.6" text-anchor="end" font-size="13" fill="currentColor">radius</text>
-  <circle cx="126" cy="126" r="2.5" fill="currentColor"/>
-  <line x1="216" y1="126" x2="36" y2="126" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="126" y="146" text-anchor="middle" font-size="13" fill="currentColor">diameter</text>
-  <line x1="126" y1="219" x2="126" y2="231" stroke="currentColor" stroke-width="1"/>
-  <text x="126" y="247" text-anchor="middle" font-size="13" fill="currentColor">circumference</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A circle with its radius drawn from the center to a point on the circle, its diameter drawn as a horizontal dashed line through the center, and its circumference labeled as the distance around the circle.","circles":[{"at":[0,0],"r":3,"radius":{"angle":38,"label":"radius"},"diameter":{"angle":0,"label":"diameter","dashed":true},"label":{"text":"circumference","angle":-90}}]}
+{{< /apfigure >}}
 
 The size of a circle can be measured in two ways. The distance around a
 circle is called its **circumference**. Archimedes discovered that for

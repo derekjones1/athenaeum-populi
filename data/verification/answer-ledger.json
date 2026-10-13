@@ -3145,6 +3145,14 @@
     "result": "agrees"
    }
   },
+  "0791df35a643931a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "07978bcf01c78796": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662911256 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -21292,14 +21300,6 @@
     "result": "agrees"
    }
   },
-  "359f53a392931330": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
   "359fbc019c37812e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23661,14 +23661,6 @@
   },
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
-  },
-  "3bad69fa7dd5a995": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
   },
   "3bb404e154d03bcc": {
    "verdict": "ok",
@@ -34114,6 +34106,14 @@
   "568de472439e14f6": {
    "verdict": "ok",
    "note": "a1=1,d=5: iterated by loop -> 1,6,11,16,21. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "568e312abd01074e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
   },
   "5694a1ff1e3bab27": {
    "verdict": "ok",
@@ -47229,6 +47229,14 @@
     "result": "agrees"
    }
   },
+  "7a390565815f9192": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "7a39e913aab782a0": {
    "verdict": "ok",
    "solved": {
@@ -53465,14 +53473,6 @@
    "verdict": "ok"
   },
   "8a485d4496ed1a7e": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "8a493b418cce03d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -68603,6 +68603,14 @@
     "result": "agrees"
    }
   },
+  "b2049744ccc405c6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
   "b20fa94b49d7a51e": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Only finished mRNAs that have undergone 5' capping, 3' polyadenylation, and intron splicing are exported from the nucleus to the cytoplasm.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -71759,14 +71767,6 @@
   "b9e31788407c941c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator-solver",
-    "result": "agrees"
-   }
-  },
-  "b9e8b3566b49a122": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
