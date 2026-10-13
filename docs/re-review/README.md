@@ -5,7 +5,8 @@ chapters 1–2 set *(September 22, 2026)*, one chapter per request, ticked
 off in [tracker.md](tracker.md). Biology 2e and Microbiology are done
 (September 24, 2026; their rows are in `docs/history/`), and the four math
 books' chapter and knowledge-check rows closed on October 12, 2026 with the
-Precalculus checks; the figure conversion rows remain. The bar is "ideal": a learner can genuinely learn the topic
+Precalculus checks, and the seven figure conversion rows closed on October
+13, 2026 with the Intermediate Algebra rows. The bar is "ideal": a learner can genuinely learn the topic
 from the page. When every row of a book is `[x]`, add one line under the
 book's subject playbook heading: "Re-reviewed to the A&P standard,
 completed <date>."
@@ -138,7 +139,8 @@ shaded inequality regions, slope triangles) and plain geometry (triangles,
 rectangles, trapezoids, circles with radius and diameter, right-angle
 marks) — are converted to spec-first `apfigure` figures in their own
 tracker rows, run LAST, after the Precalculus rows and the two Precalculus
-checks. The queue is the content itself:
+checks (all seven rows closed October 13, 2026; `figures:status` reports
+every math page converted). The queue is the content itself:
 
 ```
 npm run figures:status -- content/math/<book>
