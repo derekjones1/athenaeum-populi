@@ -743,6 +743,25 @@ ends prints plain; and `labelEvery` — label every k-th tick counting from
 min (default 1, a positive integer); the unlabelled ticks between are minor
 ticks, drawn shorter (±4 px against ±6 px).
 
+Four more props *(October 13, 2026, for the hand number lines the converter
+skipped)*: `width` — px length of the line (default 264; the hand drawings
+run 528, and eleven two-decimal labels or hundredth ticks collide at 264,
+so a tenths-or-finer line takes 528); `labelDecimals` — the decimals every
+tick label prints, refused unless every labelled value is exact at that
+precision (step 0.01 labelled every 10 may print 0.0 … 1.0); on `points`,
+`labelSide: 'below'`, `labelNudge: [dx, dy]` px, and `leader: true` (a
+hairline from the dot to a nudged label — 3/4 beside 6/5 part this way);
+and `annotations` — `[{ kind, side?, label?, from?, to?, at?, arrows? }]`
+with kinds `arrow` (from → to, head at `to`, or `arrows: 'start' | 'both'`),
+`arc` (from < to, label at the apex: a distance "3", a jump "0.2"),
+`pointer` (a short arrow at `at`, label beyond it: "zero"), and `text` (a
+caption centred at `at`: "Negative numbers", "← smaller"). Positions are
+values on the line, never px; `side` is `'above'` (default, which drops
+the line 34 px to make room) or `'below'`. One colour: a source's red and
+blue arrow pair becomes an above/below pair told apart by its labels. The
+lint reads three numeric `text` annotations sitting on their own values as
+a hand tick row, like three `texts` on a graph.
+
 **A "generic" source curve is still a function: fit a formula, then render
 the formula.** When the source shows a freeform-looking curve (a wavy
 vertical-line-test graph, a smooth curve through labeled points), fit a

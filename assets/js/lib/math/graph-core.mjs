@@ -1634,17 +1634,85 @@ export function buildGraph(props) {
  *                 glyph on the axis instead — ( or [ at a `from`, ) or ] at a
  *                 `to` — with the stretch running from the glyph and, under
  *                 a paren, no tick; an unbounded end takes no mark.
- *   points        [{ at, label? }] plain plotted points (labels above;
- *                 house rule: only off-tick points need labels)
+ *   points        [{ at, label?, labelSide?, labelNudge?, leader? }] plain
+ *                 plotted points (labels above by default; house rule: only
+ *                 off-tick points need labels). `labelSide: 'below'` puts the
+ *                 label under the tick digits; `labelNudge: [dx, dy]` moves it
+ *                 by px (two labels 10px apart — 3/4 beside 6/5 — part this
+ *                 way); `leader: true` draws a hairline from the dot to a
+ *                 nudged label so it still reads as that dot's
+ *   width         px length of the line between the end ticks (default 264;
+ *                 120–720). A hundredths line labelled every tenth, or any
+ *                 line with more than ten two-decimal labels, needs 528 —
+ *                 the hand drawings' width — or its labels collide
+ *   labelDecimals decimals every tick label prints (default: as many as the
+ *                 longest of min, max, step carries). Every labelled value
+ *                 must be exact at that precision: step 0.01 labelled every
+ *                 10 may print one decimal (0.0 … 1.0), step 0.1 may not print
+ *                 zero
+ *   annotations   [{ kind, side?, label?, from?, to?, at? }] prose-level marks
+ *                 above (default) or `side: 'below'` the line, every position
+ *                 a VALUE on the line:
+ *                   'arrow'   a horizontal arrow from `from` to `to` (head at
+ *                             `to`; `arrows: 'start' | 'end' | 'both'`), its
+ *                             label centred over (under) it — "larger",
+ *                             "smaller"
+ *                   'arc'     a shallow arc from `from` to `to`, label at the
+ *                             apex — a distance "3", a jump "0.2"
+ *                   'pointer' a short arrow pointing at `at` from outside the
+ *                             line, label beyond it — "zero"
+ *                   'text'    a caption centred at `at` — "Negative numbers"
+ *                 Labels are prose or a count, never tick digits: the lint
+ *                 refuses three numeric 'text' annotations sitting on their
+ *                 own values. One colour only (currentColor): a pair of
+ *                 arrows is told apart by its labels and sides, not by red
+ *                 and blue
  *
- * Layout matches the house style: 280px line regardless of range, chevron
- * arrows, every tick at `step` (default: every integer), labeled every
- * `labelEvery` ticks. All positions are computed from `at` values — never
- * hand-placed.
+ * Layout matches the house style: 280px line regardless of range (or
+ * `width` + 16), chevron arrows, every tick at `step` (default: every
+ * integer), labeled every `labelEvery` ticks. All positions are computed
+ * from `at` values — never hand-placed. A spec using none of the new keys
+ * renders byte for byte as before.
  */
 export function buildNumberLine(props) {
-  const { min, max, marker, shade, title, points = [], intervals = [], labelEvery = 1 } = props
+  const { min, max, marker, shade, title, points = [], intervals = [], labelEvery = 1, annotations = [] } = props
   const stepped = props.step !== undefined
+  const LINE = props.width === undefined ? 264 : props.width
+  if (!Number.isFinite(LINE) || LINE < 120 || LINE > 720) {
+    throw new Error(`NumberLine width must be a number from 120 to 720 — got ${props.width}`)
+  }
+  if (!Array.isArray(annotations)) throw new Error('NumberLine annotations must be an array')
+  const ANN_KINDS = ['arrow', 'arc', 'pointer', 'text']
+  const inRange = (v) => Number.isFinite(v) && v >= min && v <= max
+  for (const a of annotations) {
+    if (!a || typeof a !== 'object' || !ANN_KINDS.includes(a.kind)) {
+      throw new Error(`NumberLine annotation kind must be 'arrow', 'arc', 'pointer', or 'text' — got ${JSON.stringify(a && a.kind)}`)
+    }
+    if (a.side !== undefined && a.side !== 'above' && a.side !== 'below') {
+      throw new Error(`NumberLine annotation side must be 'above' or 'below' — got ${JSON.stringify(a.side)}`)
+    }
+    if (a.kind === 'arrow' || a.kind === 'arc') {
+      if (!inRange(a.from) || !inRange(a.to)) throw new Error(`NumberLine ${a.kind} needs from and to within ${min}..${max}`)
+      if (a.from === a.to) throw new Error(`NumberLine ${a.kind} needs from ≠ to`)
+      if (a.kind === 'arc' && !(a.to > a.from)) throw new Error('NumberLine arc needs from < to')
+      if (a.arrows !== undefined && !['start', 'end', 'both'].includes(a.arrows)) {
+        throw new Error(`NumberLine arrow arrows must be 'start', 'end', or 'both' — got ${JSON.stringify(a.arrows)}`)
+      }
+    } else {
+      if (!inRange(a.at)) throw new Error(`NumberLine ${a.kind} needs at within ${min}..${max}`)
+      if (typeof a.label !== 'string' || !a.label.trim()) throw new Error(`NumberLine ${a.kind} needs a label`)
+    }
+    if (a.label !== undefined && typeof a.label !== 'string') throw new Error('NumberLine annotation label must be a string')
+  }
+  for (const p of points) {
+    if (p.labelSide !== undefined && p.labelSide !== 'above' && p.labelSide !== 'below') {
+      throw new Error(`NumberLine point labelSide must be 'above' or 'below' — got ${JSON.stringify(p.labelSide)}`)
+    }
+    if (p.labelNudge !== undefined && !(Array.isArray(p.labelNudge) && p.labelNudge.length === 2 && p.labelNudge.every(Number.isFinite))) {
+      throw new Error('NumberLine point labelNudge must be [dx, dy] in px')
+    }
+    if ((p.labelNudge || p.labelSide || p.leader) && !p.label) throw new Error('NumberLine point labelSide/labelNudge/leader need a label')
+  }
   const step = stepped ? props.step : 1
   if (!stepped) {
     if (!Number.isSafeInteger(min) || !Number.isSafeInteger(max) || max <= min) {
@@ -1684,19 +1752,37 @@ export function buildNumberLine(props) {
     const [mantissa, exp = '0'] = String(n).split('e')
     return Math.max(0, (mantissa.split('.')[1] ?? '').length - Number(exp))
   }
-  const decimals = Math.max(decimalsOf(min), decimalsOf(max), decimalsOf(step))
+  let decimals = Math.max(decimalsOf(min), decimalsOf(max), decimalsOf(step))
+  if (props.labelDecimals !== undefined) {
+    const d = props.labelDecimals
+    if (!Number.isSafeInteger(d) || d < 0 || d > 8) throw new Error(`NumberLine labelDecimals must be an integer from 0 to 8 — got ${d}`)
+    const count = Math.round((max - min) / step) + 1
+    for (let index = 0; index < count; index += labelEvery) {
+      const v = stepped ? min + index * step : min + index
+      if (Math.abs(v - Number(v.toFixed(d))) > 1e-9) {
+        throw new Error(`NumberLine labelDecimals ${d} cannot print the labelled value ${v} exactly — raise it or label fewer ticks`)
+      }
+    }
+    decimals = d
+  }
   const tickText = (v) => {
     if (!decimals) return mathMinus(String(Math.round(v)))
     const text = v.toFixed(decimals)
     return mathMinus(/^-0\.0+$/.test(text) ? text.slice(1) : text)
   }
-  const LINE = 264, X0 = 28, EXT = 12 // line overshoots ticks by EXT each side
+  const X0 = 28, EXT = 12 // line overshoots ticks by EXT each side
   const u = LINE / (max - min)
   const X = (v) => X0 + (v - min) * u
   const hasTitle = title !== undefined
-  const yLine = hasTitle ? 45 : 30
-  const H = hasTitle ? 90 : 76
-  const W = 320
+  const sideOf = (a) => a.side === 'below' ? 'below' : 'above'
+  const above = annotations.filter((a) => sideOf(a) === 'above')
+  const below = annotations.filter((a) => sideOf(a) === 'below')
+  // annotations above the line push it down so they keep clear of the title
+  // row; below ones only grow the box (fitViewBox covers every element)
+  const ABOVE_ROOM = 34
+  const yLine = (hasTitle ? 45 : 30) + (above.length ? ABOVE_ROOM : 0)
+  const H = (hasTitle ? 90 : 76) + (above.length ? ABOVE_ROOM : 0) + (below.length ? 40 : 0)
+  const W = LINE + 56
   const L0 = X0 - EXT, L1 = X0 + LINE + EXT
   const els = []
   const add = (tag, attrs, text) => { els.push(text === undefined ? { tag, attrs } : { tag, attrs, text }) }
@@ -1798,9 +1884,71 @@ export function buildNumberLine(props) {
 
   // plain plotted points
   for (const p of points) {
-    add('circle', { cx: fmtN(X(p.at)), cy: String(yLine), r: '4', fill: 'currentColor' })
+    const px = X(p.at)
+    add('circle', { cx: fmtN(px), cy: String(yLine), r: '4', fill: 'currentColor' })
     if (p.label) {
-      add('text', { x: fmtN(X(p.at)), y: String(yLine - 12), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, mathMinus(p.label))
+      const [dx, dy] = p.labelNudge || [0, 0]
+      // below: under the tick digits (which end about yLine + 29)
+      const ly = (p.labelSide === 'below' ? yLine + 42 : yLine - 12) + dy
+      const lx = px + dx
+      add('text', { x: fmtN(lx), y: fmtN(ly), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, mathMinus(p.label))
+      if (p.leader) {
+        // hairline from the dot's rim to just outside the label's box, so the
+        // label reads as this dot's without the line crossing its glyphs
+        const labelAbove = p.labelSide !== 'below'
+        const fromY = labelAbove ? yLine - 5 : yLine + 5
+        const toY = labelAbove ? ly + 5 : ly - 12
+        add('line', { x1: fmtN(px), y1: String(fromY), x2: fmtN(lx), y2: fmtN(toY), stroke: 'currentColor', strokeWidth: '1' })
+      }
+    }
+  }
+
+  // annotations: prose-level marks above or below the line, positioned by value
+  const AH = 8, AW = 4 // annotation arrowhead length and half-width
+  const head = (tip, dir) => {
+    const bx = tip[0] - AH * dir[0], by = tip[1] - AH * dir[1]
+    const tri = [tip, [bx - AW * dir[1], by + AW * dir[0]], [bx + AW * dir[1], by - AW * dir[0]]]
+    add('polygon', { points: tri.map((q) => q.map((n) => +n.toFixed(1)).join(',')).join(' '), fill: 'currentColor' })
+  }
+  const label = (x, y, text) => {
+    add('text', { x: fmtN(x), y: fmtN(y), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, mathMinus(text))
+  }
+  for (const a of annotations) {
+    const up = sideOf(a) === 'above'
+    if (a.kind === 'arrow') {
+      const y = up ? yLine - 20 : yLine + 44
+      const x1 = X(a.from), x2 = X(a.to)
+      const dir = x2 > x1 ? [1, 0] : [-1, 0]
+      const arrows = a.arrows || 'end'
+      const atStart = arrows === 'start' || arrows === 'both'
+      const atEnd = arrows === 'end' || arrows === 'both'
+      // the shaft stops short of each head so the round cap stays inside it
+      const sx = atStart ? x1 + dir[0] * (AH - 1) : x1
+      const ex = atEnd ? x2 - dir[0] * (AH - 1) : x2
+      add('line', { x1: fmtN(sx), y1: String(y), x2: fmtN(ex), y2: String(y), stroke: 'currentColor', strokeWidth: '1.5' })
+      if (atEnd) head([x2, y], dir)
+      if (atStart) head([x1, y], [-dir[0], 0])
+      if (a.label) label((x1 + x2) / 2, up ? y - 7 : y + 16, a.label)
+    } else if (a.kind === 'arc') {
+      const x1 = X(a.from), x2 = X(a.to)
+      const base = up ? yLine - 10 : yLine + 36
+      const rise = up ? -12 : 12
+      const pts = []
+      for (let i = 0; i <= 16; i++) {
+        const t = i / 16
+        pts.push([x1 + (x2 - x1) * t, base + rise * Math.sin(Math.PI * t)])
+      }
+      add('polyline', { points: pts.map((q) => q.map((n) => +n.toFixed(1)).join(',')).join(' '), fill: 'none', stroke: 'currentColor', strokeWidth: '1.5' })
+      if (a.label) label((x1 + x2) / 2, up ? base + rise - 6 : base + rise + 15, a.label)
+    } else if (a.kind === 'pointer') {
+      const x = X(a.at)
+      const tipY = up ? yLine - 9 : yLine + 33
+      const tailY = up ? yLine - 26 : yLine + 50
+      add('line', { x1: fmtN(x), y1: String(tailY), x2: fmtN(x), y2: fmtN(tipY + (up ? -(AH - 1) : AH - 1)), stroke: 'currentColor', strokeWidth: '1.5' })
+      head([x, tipY], up ? [0, 1] : [0, -1])
+      label(x, up ? tailY - 5 : tailY + 14, a.label)
+    } else {
+      label(X(a.at), up ? yLine - 16 : yLine + 46, a.label)
     }
   }
 
@@ -1814,7 +1962,8 @@ export function buildNumberLine(props) {
     viewBox: `${box.x} ${box.y} ${box.w} ${box.h}`,
     width: box.w, height: box.h,
     box,
-    maxWidth: props.maxWidth ?? 420,
+    // a wider line keeps its width on the page instead of shrinking to 420
+    maxWidth: props.maxWidth ?? Math.max(420, box.w + 20),
     ariaLabel: props.ariaLabel || 'A number line.',
     els,
   }

@@ -64,9 +64,17 @@ label, superscripts, blank lines). The builders are in
    - geometry on no grid (`kind="figure"`): `polygons` with `points`,
      `edgeLabels`, `vertexLabels`, `rightAngles`, `dashedEdges`;
      `circles` with `radius` / `diameter`.
+   - a number line (`kind="numberline"`): `min`/`max`/`step`/`labelEvery`
+     from the ticks; `width: 528` whenever the drawing is that wide or the
+     labels are tenths or finer (eleven labels collide at the default 264);
+     `labelDecimals` when the drawing prints fewer decimals than the step
+     carries; a point's `labelNudge` + `leader` where two labels collide;
+     `annotations` for arrows, arcs, pointers, and captions above or below
+     the line, positioned by value. A source's red/blue pair becomes an
+     above/below pair. Never `title` for an end caption.
    Never `smoothCurves`, never a polygon faked from `segments`, never
    hand `texts` or `segments` for tick marks or tick digits (the lint
-   refuses them). Exponents are superscript characters (`x²`), never TeX.
+   refuses them, and three numeric `text` annotations on their values). Exponents are superscript characters (`x²`), never TeX.
    Minus signs in labels are `−` (U+2212) as the drawing prints them.
 3. **Ticks.** The hand drawings in these rows mostly print an unnumbered
    grid. The engine convention on every converted page is numbered axes:

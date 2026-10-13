@@ -119,6 +119,17 @@ function handTickErrors(spec) {
         + `share the ${line} ${letter} = ${shown(v)} — hand-placed tick labels: use tickLabels with ${advice}`);
     }
   }
+  // a numberline's 'text' annotations are captions; three plain numbers each
+  // sitting at its own value are a hand tick row (use step / labelEvery)
+  const captions = (Array.isArray(spec.annotations) ? spec.annotations : [])
+    .filter((a) => a && a.kind === 'text' && typeof a.label === 'string' && Number.isFinite(a.at))
+    .map((a) => ({ text: a.label.trim(), at: a.at }))
+    .filter((a) => HAND_TICK_PLAIN.test(a.text)
+      && handTickValues(a.text).some((value) => Math.abs(a.at - value) <= Math.max(0.1, 0.12 * Math.abs(value))));
+  if (captions.length >= 3) {
+    errors.push(`figure-hand-ticks: ${captions.length} text annotations (${captions.map((t) => t.text).join(', ')}) `
+      + 'sit on their own values — hand-placed tick labels: the engine labels ticks (step / labelEvery / labelDecimals)');
+  }
   const straddles = (a, b) => Number.isFinite(a) && Number.isFinite(b) && a !== b
     && Math.abs(a) <= HAND_TICK_REACH && Math.abs(b) <= HAND_TICK_REACH && a * b <= 0;
   const segs = (Array.isArray(spec.segments) ? spec.segments : [])
@@ -173,6 +184,7 @@ function figureSpecErrors(rawJson, kindFromParam) {
     }
     errors.push(...handTickErrors(spec));
   }
+  if (kind === 'numberline') errors.push(...handTickErrors(spec));
   try {
     APFIGURE_BUILDERS[kind](spec);
   } catch (error) {

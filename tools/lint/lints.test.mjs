@@ -2229,6 +2229,14 @@ test('apfigure builds every spec through the real engine and reports what fails'
 const handTicks = (json) => lintHugo(APFIG('graph', json), SECTION).errors.filter((e) => e.includes('figure-hand-ticks'));
 const SINE = '"ariaLabel":"A sine wave.","xMin":-0.4,"xMax":6.8,"yMin":-1.9,"yMax":1.8,"grid":false,"tickLabels":"y","curves":[{"kind":"sine"}]';
 
+test('figure-hand-ticks: three numeric text annotations on their own values are a hand tick row on a number line', () => {
+  const nl = (json) => lintHugo(APFIG('numberline', json), SECTION).errors.filter((e) => e.includes('figure-hand-ticks'));
+  assert.equal(nl('{"ariaLabel":"x.","min":0,"max":1,"step":0.25,"annotations":[{"kind":"text","at":0.25,"label":"0.25"},{"kind":"text","at":0.5,"label":"0.5"},{"kind":"text","at":0.75,"label":"0.75"}]}').length, 1);
+  // captions, counts off their value, and two numbers are not tick rows
+  assert.deepEqual(nl('{"ariaLabel":"x.","min":-4,"max":4,"annotations":[{"kind":"text","at":-2.5,"side":"below","label":"Negative numbers"},{"kind":"text","at":2.5,"side":"below","label":"Positive numbers"},{"kind":"arc","from":-3,"to":0,"label":"3"}]}'), []);
+  assert.deepEqual(nl('{"ariaLabel":"x.","min":0,"max":6,"annotations":[{"kind":"text","at":0.5,"label":"← smaller"},{"kind":"text","at":5.5,"label":"larger →"}]}'), []);
+});
+
 test('figure-hand-ticks: two π texts on one row are a hand tick row', () => {
   const errors = handTicks(`{${SINE},"texts":[{"at":[3.14159,-1.35],"text":"π"},{"at":[6.28319,-1.35],"text":"2π"}]}`);
   assert.equal(errors.length, 1, errors.join('; '));

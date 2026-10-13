@@ -501,6 +501,77 @@ test('number-line step and labelEvery validate, naming what is wrong', () => {
   assert.throws(() => buildNumberLine({ min: 0, max: 5, intervals: [{ to: 2, toType: 'brace' }] }), /'open', 'closed', 'paren', or 'bracket'/);
 });
 
+test('number-line width stretches the line and keeps its page width; the default is byte-identical', () => {
+  const base = buildNumberLine({ min: 0, max: 6, ariaLabel: 'x' });
+  const wide = buildNumberLine({ min: 0, max: 6, ariaLabel: 'x', width: 528 });
+  assert.deepEqual(buildNumberLine({ min: 0, max: 6, ariaLabel: 'x', width: 264 }).els, base.els, 'width 264 is the default');
+  const xs = (out) => nlTicks(out).map((t) => Number(t.attrs.x1));
+  assert.deepEqual(xs(base), [28, 72, 116, 160, 204, 248, 292]);
+  assert.deepEqual(xs(wide), [28, 116, 204, 292, 380, 468, 556], 'X(v) = 28 + (v − min) · width/(max − min)');
+  assert.equal(base.maxWidth, 420);
+  assert.ok(wide.maxWidth > 560, 'a wider line is not shrunk back to 420 on the page');
+  assert.throws(() => buildNumberLine({ min: 0, max: 6, ariaLabel: 'x', width: 60 }), /width must be a number from 120 to 720/);
+});
+
+test('number-line labelDecimals overrides the printed decimals only when every labelled value is exact', () => {
+  const out = buildNumberLine({ min: 0, max: 1, step: 0.01, labelEvery: 10, labelDecimals: 1, ariaLabel: 'x' });
+  assert.deepEqual(nlLabels(out), ['0.0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1.0']);
+  assert.deepEqual(nlLabels(buildNumberLine({ min: 2, max: 3, step: 0.1, labelEvery: 5, labelDecimals: 1, ariaLabel: 'x' })), ['2.0', '2.5', '3.0']);
+  assert.throws(() => buildNumberLine({ min: 0, max: 1, step: 0.1, labelDecimals: 0, ariaLabel: 'x' }), /cannot print the labelled value 0\.1 exactly/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 1, step: 0.1, labelDecimals: 1.5, ariaLabel: 'x' }), /labelDecimals must be an integer/);
+});
+
+test('number-line point labels take a side, a nudge, and a leader', () => {
+  const out = buildNumberLine({
+    min: -6, max: 6, ariaLabel: 'x', width: 528,
+    points: [{ at: 0.75, label: '3/4', labelNudge: [-12, 0], leader: true }, { at: 1.2, label: '6/5', labelSide: 'below' }],
+  });
+  const texts = out.els.filter((e) => e.tag === 'text' && !/^[−-]?\d$/.test(e.text));
+  const t34 = texts.find((e) => e.text === '3/4'), t65 = texts.find((e) => e.text === '6/5');
+  // X(0.75) = 28 + 6.75 · 44 = 325; the nudge moves the label, never the dot
+  assert.equal(t34.attrs.x, '313'); assert.equal(t34.attrs.y, '18');
+  assert.equal(out.els.find((e) => e.tag === 'circle' && e.attrs.cx === '325').attrs.cx, '325');
+  assert.equal(t65.attrs.y, '72', 'below sits under the tick digits');
+  const leader = out.els.find((e) => e.tag === 'line' && e.attrs.strokeWidth === '1');
+  assert.deepEqual([leader.attrs.x1, leader.attrs.y1, leader.attrs.x2, leader.attrs.y2], ['325', '25', '313', '23'], 'from the dot rim to just under the label box');
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', points: [{ at: 2, labelNudge: [3, 0] }] }), /need a label/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', points: [{ at: 2, label: 'p', labelSide: 'left' }] }), /labelSide must be 'above' or 'below'/);
+});
+
+test('number-line annotations draw arrows, arcs, pointers, and captions at their values', () => {
+  const out = buildNumberLine({
+    min: -4, max: 4, ariaLabel: 'x', width: 528,
+    annotations: [
+      { kind: 'arrow', from: -1, to: 4, label: 'larger' },
+      { kind: 'arrow', from: 1, to: -4, side: 'below', label: 'smaller' },
+      { kind: 'arc', from: -3, to: 0, label: '3' },
+      { kind: 'pointer', at: 0, label: 'zero' },
+      { kind: 'text', at: 2.5, side: 'below', label: 'Positive numbers' },
+    ],
+  });
+  // X(v) = 28 + (v + 4) · 66; an above annotation drops the line to y = 64
+  const line = out.els[0];
+  assert.equal(line.attrs.y1, '64', 'above annotations push the line down to clear them');
+  const heads = out.els.filter((e) => e.tag === 'polygon');
+  assert.equal(heads.length, 3, 'two arrows and a pointer each carry one head');
+  assert.ok(heads[0].attrs.points.startsWith('556,44'), 'the larger head tip sits at X(4) on the above row');
+  assert.ok(heads[1].attrs.points.startsWith('28,108'), 'the smaller head tip sits at X(−4) on the below row');
+  const arc = out.els.find((e) => e.tag === 'polyline');
+  const pts = arc.attrs.points.split(' ').map((q) => q.split(',').map(Number));
+  assert.equal(pts[0][0], 94); assert.equal(pts.at(-1)[0], 292);
+  assert.equal(Math.min(...pts.map((q) => q[1])), 42, 'the arc peaks 12px above its base');
+  // the tick digit "3" sits under the line; the arc label "3" sits above it
+  const label = (t) => out.els.filter((e) => e.tag === 'text' && e.text === t).sort((a, b) => Number(a.attrs.y) - Number(b.attrs.y))[0].attrs;
+  assert.equal(label('3').x, '193', 'arc label at the apex');
+  assert.equal(label('zero').x, '292'); assert.ok(Number(label('zero').y) < 40);
+  assert.equal(label('Positive numbers').x, '457'); assert.equal(label('Positive numbers').y, '110');
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'brace', from: 0, to: 2 }] }), /kind must be 'arrow', 'arc', 'pointer', or 'text'/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'arc', from: 2, to: 1 }] }), /arc needs from < to/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'arrow', from: 0, to: 9 }] }), /within 0\.\.5/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'text', at: 1 }] }), /text needs a label/);
+  assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'text', at: 1, label: 'q', side: 'left' }] }), /side must be 'above' or 'below'/);
+});
+
 test('figure segment arrows trim the shaft and point at the true target', () => {
   const out = buildFigure({
     unit: 40,
