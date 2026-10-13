@@ -158,7 +158,14 @@ its `--dry-run` output and stays in these rows.
 
 **The row.** One tracker row per book chapter group, each page's figure
 count from `figures:status`. One Opus fixer per 15–25 figures (a page with
-18 parabolas is one agent). Figure work never runs on Sonnet.
+18 parabolas is one agent), briefed with
+`docs/re-review/brief-figure-conversion-math.md` (written on the Prealgebra
+chapter 11 row, October 12, 2026; the parent renders every hand svg to
+`$SP/figconv/render/<unit>/` first, with `--svg-only`, so the fixer and
+the parent compare against the same pre-edit PNGs). Figure work never runs
+on Sonnet. The converted figures print numbered axes even where the hand
+drawing's grid was unnumbered — the engine convention wins, and the
+`ariaLabel` says so.
 
 **Per figure, the fixer:**
 

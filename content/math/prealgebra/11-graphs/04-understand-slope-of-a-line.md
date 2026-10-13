@@ -61,20 +61,9 @@ To find the slope of the line, we measure the distance along the vertical
 and horizontal legs of the triangle. The vertical distance is called the
 **rise** and the horizontal distance is called the **run**, as shown below.
 
-<svg viewBox="-20 0 220 110" role="img" aria-label="A right angle with an upward arrow labeled rise on the vertical side and a rightward arrow labeled run on the horizontal side, meeting at the corner." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <line x1="30" y1="90" x2="30" y2="26" stroke="currentColor" stroke-width="2" marker-end="url(#arrow1)" />
-  <line x1="30" y1="20" x2="160" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)" />
-  <text x="20" y="60" text-anchor="end" font-size="15" fill="currentColor">rise</text>
-  <text x="95" y="12" text-anchor="middle" font-size="15" fill="currentColor">run</text>
-  <defs>
-    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
-    </marker>
-    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
-    </marker>
-  </defs>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right angle with an upward arrow labeled rise on the vertical side and a rightward arrow labeled run on the horizontal side, meeting at the corner.","segments":[{"from":[0,0],"to":[0,2.2],"arrow":true,"label":"rise"},{"from":[0,2.4],"to":[4.4,2.4],"arrow":true,"label":"run"}]}
+{{< /apfigure >}}
 
 It may help to remember the rise like a hot air balloon that goes straight
 up, as if along the $y\text{-axis}$, and the run like a jogger who runs
@@ -166,20 +155,9 @@ Notice that the first line has positive slope and the second line has
 negative slope. As you read from left to right, a line with positive slope
 is going up, and a line with negative slope is going down.
 
-<svg viewBox="0 0 320 100" role="img" aria-label="Two arrows side by side: the left arrow points up and to the right, labeled positive slope; the right arrow points down and to the right, labeled negative slope." style="max-width: 340px; display: block; margin: 1.5rem auto">
-  <line x1="30" y1="70" x2="110" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrowA)" />
-  <text x="70" y="95" text-anchor="middle" font-size="14" fill="currentColor">Positive slope</text>
-  <line x1="210" y1="20" x2="290" y2="70" stroke="currentColor" stroke-width="2" marker-end="url(#arrowB)" />
-  <text x="250" y="95" text-anchor="middle" font-size="14" fill="currentColor">Negative slope</text>
-  <defs>
-    <marker id="arrowA" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
-    </marker>
-    <marker id="arrowB" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
-    </marker>
-  </defs>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Two arrows side by side: the left arrow points up and to the right, labeled positive slope; the right arrow points down and to the right, labeled negative slope.","segments":[{"from":[0,0],"to":[2.67,1.67],"arrow":true},{"from":[6,1.67],"to":[8.67,0],"arrow":true}],"texts":[{"at":[1.33,-0.85],"text":"Positive slope","anchor":"middle"},{"at":[7.33,-0.85],"text":"Negative slope","anchor":"middle"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="A geoboard triangle has a rise of $-2$ units and a run of $3$ units, counted left to right with the vertical leg stretched down. What is the slope of the line, as a fraction?"
@@ -260,48 +238,9 @@ rise and run.
 **Example.** Find the slope of the line through the points $(0, -3)$ and
 $(5, 1)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with a line through (0, -3) and (5, 1). A right triangle is sketched from (0, -3) up to (0, 1) and across to (5, 1), showing a rise of 4 and a run of 5." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 232" width="252" height="232" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="206" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="206" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="206" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="206" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="206" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="206" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="206" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="206" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="206" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="206" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="226" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="226" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="226" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="226" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="226" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="106" x2="228" y2="106" stroke="currentColor" stroke-width="1"/>
-  <line x1="86" y1="24" x2="86" y2="208" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,106 228,111 228,101" fill="currentColor"/>
-  <polygon points="86,14 91,24 81,24" fill="currentColor"/>
-  <polygon points="14,106 24,101 24,111" fill="currentColor"/>
-  <polygon points="86,218 81,208 91,208" fill="currentColor"/>
-  <text x="236" y="98" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="94" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="36.3" y1="205.8" x2="224.2" y2="55.4" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="232,49.2 227.3,59.4 221.1,51.5" fill="currentColor"/>
-  <polygon points="28.5,212 33.2,201.8 39.4,209.7" fill="currentColor"/>
-  <line x1="86" y1="166" x2="86" y2="86" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="86" y1="86" x2="186" y2="86" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="86" cy="166" r="4" fill="currentColor"/>
-  <circle cx="186" cy="86" r="4" fill="currentColor"/>
-  <text x="97.2" y="186.2" font-size="13" fill="currentColor" text-anchor="start">(0, −3)</text>
-  <text x="174.8" y="74.8" font-size="13" fill="currentColor" text-anchor="end">(5, 1)</text>
-  <text x="72" y="130" font-size="13" fill="currentColor" text-anchor="end">rise 4</text>
-  <text x="124.8" y="74.8" font-size="13" fill="currentColor" text-anchor="end">run 5</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −3 to 7 and y from −5 to 4, numbered every 1 unit, with a line through the labeled points (0, −3) and (5, 1). A right triangle is sketched from (0, −3) up to (0, 1) and across to (5, 1), with the vertical leg labeled rise 4 and the horizontal leg labeled run 5.","xMin":-3,"xMax":7,"yMin":-5,"yMax":4,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-3],[5,1]]}],"points":[{"at":[0,-3],"label":"(0, −3)"},{"at":[5,1],"label":"(5, 1)"}],"slopeTriangles":[{"from":[0,-3],"to":[5,1],"riseLabel":"rise 4","runLabel":"run 5","riseNudge":[-4,10],"runNudge":[-18,-30]}]}
+{{< /apfigure >}}
 
 Starting with the point on the left, $(0, -3)$, sketch a right triangle,
 going from the first point to the second point, $(5, 1)$. The rise is $4$
@@ -349,46 +288,9 @@ since the line slants upward from left to right.
 **Example.** Find the slope of the line shown, which passes through $(0,
 5)$ and $(3, 3)$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with a line through (0, 5) and (3, 3), slanting downward. A right triangle is sketched from (0, 5) down to (0, 3) and across to (3, 3), showing a rise of negative 2 and a run of 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 212" width="232" height="212" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="186" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="186" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="186" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="186" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="186" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="186" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="186" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="186" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="186" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="206" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="206" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="206" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="206" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="206" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="206" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="206" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="208" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="86" y1="24" x2="86" y2="188" stroke="currentColor" stroke-width="1"/>
-  <polygon points="218,166 208,171 208,161" fill="currentColor"/>
-  <polygon points="86,14 91,24 81,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="86,198 81,188 91,188" fill="currentColor"/>
-  <text x="216" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="94" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.3" y1="27.5" x2="203.7" y2="144.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="212,150 200.9,148.6 206.5,140.3" fill="currentColor"/>
-  <polygon points="20,22 31.1,23.4 25.5,31.7" fill="currentColor"/>
-  <line x1="86" y1="66" x2="86" y2="106" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="86" y1="106" x2="146" y2="106" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="86" cy="66" r="4" fill="currentColor"/>
-  <circle cx="146" cy="106" r="4" fill="currentColor"/>
-  <text x="74.8" y="86.2" font-size="13" fill="currentColor" text-anchor="end">(0, 5)</text>
-  <text x="157.2" y="94.8" font-size="13" fill="currentColor" text-anchor="start">(3, 3)</text>
-  <text x="74.8" y="106.2" font-size="13" fill="currentColor" text-anchor="end">rise −2</text>
-  <text x="116" y="129" font-size="13" fill="currentColor" text-anchor="middle">run 3</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −3 to 6 and y from −1 to 7, numbered every 1 unit, with a line through the labeled points (0, 5) and (3, 3), slanting downward. A right triangle is sketched from (0, 5) down to (0, 3) and across to (3, 3), with the vertical leg labeled rise −2 and the horizontal leg labeled run 3.","xMin":-3,"xMax":6,"yMin":-1,"yMax":7,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,5],[3,3]]}],"points":[{"at":[0,5],"label":"(0, 5)"},{"at":[3,3],"label":"(3, 3)"}],"slopeTriangles":[{"from":[0,5],"to":[3,3],"riseLabel":"rise −2","runLabel":"run 3","riseNudge":[-8,0]}]}
+{{< /apfigure >}}
 
 Starting with the point on the left, $(0, 5)$, sketch a right triangle to
 $(3, 3)$. The rise is $-2$ and the run is $3$.
@@ -633,46 +535,9 @@ We'll call $(-2, -3)$ point #1 and $(-7, 4)$ point #2.
 
 $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{4 - (-3)}{-7 - (-2)} = \frac{7}{-5} = -\frac{7}{5}$$
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing a line through (-7, 4) and (-2, -3), slanting downward from upper left to lower right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 272" width="252" height="272" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="246" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="246" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="246" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="246" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="246" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="246" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="246" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="246" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="246" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="246" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="226" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="226" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="226" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="226" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="226" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="226" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="226" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="146" x2="228" y2="146" stroke="currentColor" stroke-width="1"/>
-  <line x1="186" y1="24" x2="186" y2="248" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,146 228,151 228,141" fill="currentColor"/>
-  <polygon points="186,14 191,24 181,24" fill="currentColor"/>
-  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
-  <polygon points="186,258 181,248 191,248" fill="currentColor"/>
-  <text x="236" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="194" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="25.8" y1="37.7" x2="173" y2="243.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="178.9,252 169,246.8 177.1,241" fill="currentColor"/>
-  <polygon points="20,29.6 29.9,34.8 21.7,40.6" fill="currentColor"/>
-  <circle cx="46" cy="66" r="4" fill="currentColor"/>
-  <circle cx="146" cy="206" r="4" fill="currentColor"/>
-  <text x="57.2" y="54.8" font-size="13" fill="currentColor" text-anchor="start">(−7, 4)</text>
-  <text x="134.8" y="226.2" font-size="13" fill="currentColor" text-anchor="end">(−2, −3)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −8 to 2 and y from −5 to 6, numbered every 1 unit, showing a line through the labeled points (−7, 4) and (−2, −3), slanting downward from upper left to lower right.","xMin":-8,"xMax":2,"yMin":-5,"yMax":6,"tickLabels":true,"tickStep":1,"lines":[{"through":[[-7,4],[-2,-3]]}],"points":[{"at":[-7,4],"label":"(−7, 4)"},{"at":[-2,-3],"label":"(−2, −3)"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the slope of the line through the pair of points: $(-3, 4)$ and $(2, -1)$."
@@ -715,48 +580,9 @@ at the point we plotted, count out the rise and run to mark the second
 point: $3$ units up and $4$ units right, landing on $(5, 2)$. Then connect
 the points with a line and draw arrows at the ends to show it continues.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with the point (1, -1) plotted, a path going up 3 and right 4 to reach (5, 2), and a line drawn through both points." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 232" width="252" height="232" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="206" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="206" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="206" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="206" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="206" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="206" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="206" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="206" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="206" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="206" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="226" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="226" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="226" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="226" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="226" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="126" x2="228" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="86" y1="24" x2="86" y2="208" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,126 228,131 228,121" fill="currentColor"/>
-  <polygon points="86,14 91,24 81,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="86,218 81,208 91,208" fill="currentColor"/>
-  <text x="236" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="94" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28" y1="204.5" x2="224" y2="57.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="232,51.5 227,61.5 221,53.5" fill="currentColor"/>
-  <polygon points="20,210.5 25,200.5 31,208.5" fill="currentColor"/>
-  <line x1="106" y1="146" x2="106" y2="86" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="106" y1="86" x2="186" y2="86" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="106" cy="146" r="4" fill="currentColor"/>
-  <circle cx="186" cy="86" r="4" fill="currentColor"/>
-  <text x="117.2" y="166.2" font-size="13" fill="currentColor" text-anchor="start">(1, −1)</text>
-  <text x="197.2" y="106.2" font-size="13" fill="currentColor" text-anchor="start">(5, 2)</text>
-  <text x="117.2" y="104.8" font-size="13" fill="currentColor" text-anchor="start">3</text>
-  <text x="146" y="72" font-size="13" fill="currentColor" text-anchor="middle">4</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −3 to 7 and y from −4 to 5, numbered every 1 unit, with the point (1, −1) plotted, a dashed path going up 3 and right 4 to reach (5, 2), and a line drawn through both points.","xMin":-3,"xMax":7,"yMin":-4,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"through":[[1,-1],[5,2]]}],"points":[{"at":[1,-1],"label":"(1, −1)"},{"at":[5,2],"label":"(5, 2)","labelNudge":[36,15]}],"slopeTriangles":[{"from":[1,-1],"to":[5,2],"riseLabel":"3","runLabel":"4","riseNudge":[26,-14],"runNudge":[0,-32]}]}
+{{< /apfigure >}}
 
 We can check this line by starting at any point on it and counting up $3$
 and to the right $4$ — we should get to another point on the line.
@@ -776,47 +602,9 @@ formula: $m = -\tfrac{2}{3}$, so the rise is $-2$ and the run is $3$.
 Starting at $(0, 2)$, count down $2$ and to the right $3$ to mark the second
 point, $(3, 0)$. Connect the points with a line.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid with the y-intercept (0, 2) plotted, a path going down 2 and right 3 to reach (3, 0), and a line drawn through both points sloping downward." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 212" width="252" height="212" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="186" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="186" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="186" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="186" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="186" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="186" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="186" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="186" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="186" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="186" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="226" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="226" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="226" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="226" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="126" x2="228" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="106" y1="24" x2="106" y2="188" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,126 228,131 228,121" fill="currentColor"/>
-  <polygon points="106,14 111,24 101,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="106,198 101,188 111,188" fill="currentColor"/>
-  <text x="236" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="114" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.3" y1="34.2" x2="223.7" y2="164.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="232,170 220.9,168.6 226.5,160.3" fill="currentColor"/>
-  <polygon points="20,28.7 31.1,30.1 25.5,38.4" fill="currentColor"/>
-  <line x1="106" y1="86" x2="106" y2="126" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="106" y1="126" x2="166" y2="126" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="106" cy="86" r="4" fill="currentColor"/>
-  <circle cx="166" cy="126" r="4" fill="currentColor"/>
-  <text x="94.8" y="106.2" font-size="13" fill="currentColor" text-anchor="end">(0, 2)</text>
-  <text x="177.2" y="114.8" font-size="13" fill="currentColor" text-anchor="start">(3, 0)</text>
-  <text x="112" y="110" font-size="13" fill="currentColor" text-anchor="start">−2</text>
-  <text x="136" y="142" font-size="13" fill="currentColor" text-anchor="middle">3</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with x from −4 to 6 and y from −3 to 5, numbered every 1 unit, with the y-intercept (0, 2) plotted, a dashed path going down 2 and right 3 to reach (3, 0), and a line drawn through both points sloping downward.","xMin":-4,"xMax":6,"yMin":-3,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,2],[3,0]]}],"points":[{"at":[0,2],"label":"(0, 2)"},{"at":[3,0],"label":"(3, 0)"}],"slopeTriangles":[{"from":[0,2],"to":[3,0],"riseLabel":"−2","runLabel":"3","riseNudge":[34,2],"runNudge":[0,6]}]}
+{{< /apfigure >}}
 
 {{< multiplechoice
   question="Which graph shows the line with $y$-intercept $4$ and slope $m = -\tfrac{5}{2}$?"
