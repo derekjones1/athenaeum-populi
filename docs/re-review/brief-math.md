@@ -440,9 +440,14 @@ to …" trips the answer check's re-expression rule; ask "What is $-10$ … in
 
 Figures and display math: `node tools/figures/render-page-figures.mjs
 <page> SP/render/<page-stem>` renders every inline `<svg>` to
-`L<line>.png` and every `$$…$$` block to `B<line>.png` (Read them; re-run
-after an edit — it clears the old renders). An `apfigure` spec renders
-with `node tools/figures/render-figure.mjs <graph|numberline|figure>
+`L<line>.png`, every `apfigure` spec to `A<line>.png` (since October 12,
+2026 — before that the tool skipped specs, and a checker who ran only it
+saw none of a page's spec-first figures), and every `$$…$$` block to
+`B<line>.png` (Read them; re-run after an edit — it clears the old
+renders). A page's figure inventory is every `L` and every `A` file: count
+them against the page's `<svg` and `{{< apfigure` tags before you start,
+and say in your report how many of each you read. A single spec renders by
+hand with `node tools/figures/render-figure.mjs <graph|numberline|figure>
 '<spec json>'`.
 
 ## Per page
@@ -582,10 +587,13 @@ with `node tools/figures/render-figure.mjs <graph|numberline|figure>
    the prose explains, as `apfigure`s on the source window — never a Try
    It's or exercise's answer graph (Intermediate Algebra 9.8 and 10.1–10.2,
    October 3, 2026; chapter 11's five pages, 77 figures, October 4, 2026).
-   The parent then runs an Opus figure checker over every fixer-drawn
-   figure: on chapter 11 the checkers made 35 legibility fixes (arrowheads
-   on arrowheads, strokes through tick digits, labels on ink) and found no
-   math errors. Since October 6, 2026 the engine knocks the tick digits out
+   The parent then runs an Opus figure checker over every figure on the
+   page — fixer-drawn or not — with `docs/re-review/brief-figure-check-math.md`,
+   after the page's fixer has finished: on Intermediate Algebra chapter 11
+   the checkers made 35 legibility fixes (arrowheads on arrowheads, strokes
+   through tick digits, labels on ink) and found no math errors; on
+   Precalculus chapters 11–12 they made 48 fixes including three geometry
+   refits the fixers had missed. Since October 6, 2026 the engine knocks the tick digits out
    of every stroke and relocates a crossed digit to the clear side of its
    axis, so a checker never hand-draws ticks as `segments` or digits as
    `texts`: the fix for a curve across the digit row is `xTickOffset` /

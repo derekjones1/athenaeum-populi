@@ -6,7 +6,8 @@
  *
  *   node tools/figures/render-page-figures.mjs <page.md> <outdir> [--svg-only|--math-only]
  *
- * Writes `<outdir>/L<line>.png` per inline SVG and `<outdir>/B<line>.png`
+ * Writes `<outdir>/L<line>.png` per inline SVG, `<outdir>/A<line>.png` per
+ * `apfigure` spec (`--svg-only` keeps both figure kinds), and `<outdir>/B<line>.png`
  * per display block (line = the page line the figure or block starts on),
  * clearing that directory's old renders first so a line shift after an edit
  * never leaves a stale image under a live name. Prints one line per render:
@@ -20,7 +21,13 @@
  * shim the browser suites use); nothing here runs in `npm test` except the
  * pure extraction below.
  *
- * `apfigure` specs are not rendered here: use `render-figure.mjs`.
+ * `apfigure` shortcodes render too, to `<outdir>/A<line>.png` (line = the
+ * shortcode's open tag; the spec is the JSON line after it), through the same
+ * graph-core builders the browser uses. Until October 12, 2026 they did not:
+ * the Precalculus chapters 11–12 re-review's figure checkers found the brief
+ * pointing here and wrote their own helper, so a reviewer who only ran this
+ * tool saw a page's inline SVGs and none of its spec-first figures. A single
+ * spec renders by hand with `render-figure.mjs`.
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -30,13 +37,24 @@ import { pathToFileURL, fileURLToPath } from 'node:url';
 const ROOT = resolve(fileURLToPath(new URL('../..', import.meta.url)));
 const SHIM = join(ROOT, 'tools/build/chrome-stdio-shim.sh');
 
-/** Inline SVG figures and display-math blocks, each with its 1-based start line. */
+/** Inline SVG figures, `apfigure` specs, and display-math blocks, each with its 1-based start line. */
 export function extractRenderables(markdown) {
   const lines = markdown.split('\n');
   const svgs = [];
+  const specs = [];
   const blocks = [];
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
+    const ap = line.match(/^\{\{<\s*apfigure\s+kind="(graph|numberline|figure)"\s*>\}\}/);
+    if (ap) {
+      // The spec is the next non-blank line; a malformed one is reported, not thrown.
+      let j = i + 1;
+      while (j < lines.length && !lines[j].trim()) j++;
+      let spec = null; let error = null;
+      try { spec = JSON.parse(lines[j] || ''); } catch (err) { error = err.message; }
+      specs.push({ line: i + 1, kind: ap[1], spec, error });
+      continue;
+    }
     if (/<svg[\s>]/.test(line)) {
       let j = i;
       while (j < lines.length && !lines[j].includes('</svg>')) j++;
@@ -53,7 +71,7 @@ export function extractRenderables(markdown) {
       if (one) blocks.push({ line: i + 1, tex: one[1] });
     }
   }
-  return { svgs, blocks };
+  return { svgs, specs, blocks };
 }
 
 function viewBoxSize(svg) {
@@ -77,9 +95,30 @@ async function main() {
     console.error('usage: node tools/figures/render-page-figures.mjs <page.md> <outdir> [--svg-only|--math-only]');
     process.exit(2);
   }
-  const { svgs, blocks } = extractRenderables(readFileSync(page, 'utf8'));
+  const { svgs, specs, blocks } = extractRenderables(readFileSync(page, 'utf8'));
   mkdirSync(out, { recursive: true });
-  for (const f of readdirSync(out)) if (/^[LB]\d+\.(html|png)$/.test(f)) rmSync(join(out, f));
+  for (const f of readdirSync(out)) if (/^[LAB]\d+\.(html|png)$/.test(f)) rmSync(join(out, f));
+
+  if (!args.includes('--math-only') && specs.length) {
+    const core = await import(pathToFileURL(join(ROOT, 'assets/js/lib/math/graph-core.mjs')).href);
+    const builders = { graph: core.buildGraph, numberline: core.buildNumberLine, figure: core.buildFigure };
+    for (const { line, kind, spec, error } of specs) {
+      if (error) { console.log(`A${line} SPEC ERROR: ${error}`); continue; }
+      let svg;
+      try {
+        svg = core.toSvgString(spec, { builder: builders[kind], color: null });
+      } catch (err) {
+        console.log(`A${line} BUILD ERROR: ${err.message}`);
+        continue;
+      }
+      const { w, h } = viewBoxSize(svg);
+      const drawn = Math.min(600, w);
+      const html = join(out, `A${line}.html`);
+      writeFileSync(html, `<!doctype html><html><body style="${BODY};width:600px">${svg}</body></html>`);
+      shoot(html, join(out, `A${line}.png`), 620, Math.ceil(h * (drawn / w)) + 60);
+      console.log(`A${line} ${spec.ariaLabel || '(no ariaLabel)'}`);
+    }
+  }
 
   if (!args.includes('--math-only')) {
     for (const { line, text } of svgs) {

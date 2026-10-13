@@ -58,7 +58,10 @@ Figure and alt work runs on Opus, never Sonnet.
    chapter 1, September 26, 2026); before launch the parent extracts each
    module's source images to `$SP/media/<mid>/` as the brief's header says,
    and fixers render figures and display math with
-   `tools/figures/render-page-figures.mjs`. A math section costs about
+   `tools/figures/render-page-figures.mjs` (inline SVGs, `apfigure` specs,
+   and display blocks alike, since October 12, 2026). Every math row also
+   runs Opus figure checkers after the fixers, one per 15–25 figures, with
+   `docs/re-review/brief-figure-check-math.md`. A math section costs about
    140–160k Opus fixer tokens — about double a life-sciences section — and
    the pilot chapter averaged 25 fixes a section. The life-sciences rows cost about
    60–80k Opus fixer tokens per section, a shared Fable solve of 50–150k
@@ -72,6 +75,10 @@ Figure and alt work runs on Opus, never Sonnet.
    the snapshot inside `$SP/headtree`.
 2. **Fan out:** one Opus agent per two or three sections, fixing in place,
    reporting defects by class in ten lines, the report appended as it goes.
+   Math rows then launch a figure checker per group of pages as their
+   fixers finish (checkers edit only spec and `aria` lines, so the parent
+   reads the item diffs while they run); a fixer resumed after its checker
+   is told which regions the checker touched.
    Briefs forbid every git command, read-only ones included (one shared
    worktree). Launch in a rolling window of about ten to twelve live
    agents — fourteen at once hit the session limit, which any concurrent

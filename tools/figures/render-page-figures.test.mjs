@@ -24,3 +24,23 @@ test('finds multi-line SVGs, fenced and one-line display blocks, with start line
   assert.equal(blocks[1].tex, 'a + b = b + a');
   assert.match(blocks[0].tex, /overset/);
 });
+
+test('finds apfigure shortcodes with their kind and parsed spec, and reports a bad spec', () => {
+  const page = [
+    '{{< apfigure kind="graph" >}}', // 1
+    '{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1}]}', // 2
+    '{{< /apfigure >}}', // 3
+    '', // 4
+    '{{< apfigure kind="figure" >}}', // 5
+    '{not json', // 6
+    '{{< /apfigure >}}', // 7
+  ].join('\n');
+  const { svgs, specs, blocks } = extractRenderables(page);
+  assert.deepEqual(svgs, []);
+  assert.deepEqual(blocks, []);
+  assert.deepEqual(specs.map((s) => [s.line, s.kind]), [[1, 'graph'], [5, 'figure']]);
+  assert.equal(specs[0].spec.lines[0].slope, 2);
+  assert.equal(specs[0].error, null);
+  assert.equal(specs[1].spec, null);
+  assert.match(specs[1].error, /JSON/);
+});
