@@ -134,6 +134,46 @@ pass"). What it changed for this book:
   agent's totals; and after a sweep only what the ledger carry rule does
   not carry is re-solved.
 
+## Chapter 3 (October 13, 2026)
+
+Six sections, one wave of six Sonnet authors and six Opus checkers (the
+first chapter run with Opus checkers), one Sonnet claim pass, the blind
+solve in a fresh Fable subagent, Sonnet prep, pins, and errata agents, an
+Opus alt-errata verifier, and a Sonnet tool-fix agent. Authors reported
+Practice items per page of 15 (3.1), 14 (3.2), 13 (3.3), 14 (3.4), 16
+(3.5), and 8 (3.6); every one of the 42 source exercises reached its page.
+Of the five Interactive Link Questions two were graded and three stand as
+prompts (3.6 has none). The book's first `## References` list (3.2) was
+accepted by the lints unchanged. Checkers found about 39 defects on
+lint-clean pages: accept gaps, hints that state the key's dimension or
+fact, author items built on headline terms or re-asking a source item,
+"directly above" leaks (one of them across a group heading, 3.3's
+histone), footer miscounts and false exclusion clauses, and about fifteen
+alt/`longdesc` image errors that the checkers applied themselves.
+
+The claim pass found six in-book or cited contradictions, each corrected
+on the page with a Source note: a dopamine receptor described as an ion
+channel, "coding strand" used for the transcribed strand, germ cells
+excluded from mitosis, mesenchymal stem cells producing muscle, "each
+cell" and "all cells" given a nucleus, and iPSCs derived from adult stem
+cells. It also flagged 3.4's Review stem "not entirely or mostly made out
+of RNA" and 3.2's double-keyed swimming-pool analogy, whose option was
+replaced. The blind solve agreed 65/67 on the first pass; the one
+disagreement was the double-keyed analogy (the solver chose the source's
+second correct option), and the one flag was adjudicated for the source
+key. The rewritten item re-solved 1/1, and the solver's side notes added
+two accepts. Errata 1807–1841 (35: 8 claim, key, or option; 1 misspelled
+key; 16 typos and inconsistencies; 10 alt, caption, or artwork). The map
+now carries chapter 3.
+
+Lessons folded in: Source notes and footers never cite erratum numbers
+(now a lint); the directly-above lint reads across group headings (three
+Biology hits cleared: two reorders and one headline-term item replaced);
+a `kind: 'solution'` deviation is usually stale; the author brief's PDF
+instruction was not followed by two authors (figures checked against the
+WebPs only), and the checker's PDF read covered it; and the first-wave
+author on 3.6 wrote exactly the floor.
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

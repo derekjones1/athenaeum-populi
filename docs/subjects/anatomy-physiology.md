@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, and chapter 2 the same day.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, and chapter 3 on October 13, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -243,7 +243,9 @@ fails, reorder with a deterministic seeded shuffle and say so in
 Lessons — baseline rules this book's vocabulary makes easy to break:
 
 - **The "directly above" leak** and **hints that print the key or its root**
-  are the life-sciences rules, linted since September 22, 2026; order a group
+  are the life-sciences rules, linted since September 22, 2026 (since
+  October 13, 2026 the lint also reads across a `###` group heading: the last
+  item of one group is "directly above" the first of the next); order a group
   so every recall item comes before the items that print its key, and word
   hints by role, not by term (e.g. X-rays/X-ray, prone/supine; *pronation*
   for prone).

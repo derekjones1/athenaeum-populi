@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 2,
-      "mappedSections": 12,
+      "localChapters": 3,
+      "mappedSections": 18,
       "units": [
         {
           "index": 1,
@@ -359,6 +359,60 @@
       "moduleId": "m46008",
       "sourceTitle": "Organic Compounds Essential to Human Functioning",
       "moduleSha256": "1989ccbdc34935418fc101a395e1fe4278f85fbc4fa45d42a9988b7d96d53cba"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/01-the-cell-membrane.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "3.1",
+      "moduleId": "m46021",
+      "sourceTitle": "The Cell Membrane",
+      "moduleSha256": "c4d213640689cc5e145a92643a9b26f4510637c88b458d59f3822587efdc60da"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/02-the-cytoplasm-and-cellular-organelles.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "3.2",
+      "moduleId": "m46023",
+      "sourceTitle": "The Cytoplasm and Cellular Organelles",
+      "moduleSha256": "457bd794f415235fc33537520b58af9253aed67a874d82597813c9900be3c3fe"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/03-the-nucleus-and-dna-replication.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "3.3",
+      "moduleId": "m46073",
+      "sourceTitle": "The Nucleus and DNA Replication",
+      "moduleSha256": "6c7bb9bba97904841a7c3a2ed0cb6fc46845c444788f745ed056f337884b98ff"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/04-protein-synthesis.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "3.4",
+      "moduleId": "m46032",
+      "sourceTitle": "Protein Synthesis",
+      "moduleSha256": "b503ca897910820499d413c6f3b9a37ab8e67648219ca32d8eb4250158bf1942"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/05-cell-growth-and-division.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "3.5",
+      "moduleId": "m46034",
+      "sourceTitle": "Cell Growth and Division",
+      "moduleSha256": "75ae36e054c9860846777c7db5d9b9aba7b1021a8d9dd97654b807fc4d4fada4"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/06-cellular-differentiation.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "3.6",
+      "moduleId": "m46036",
+      "sourceTitle": "Cellular Differentiation",
+      "moduleSha256": "53969064e0fb16d8ec0fce913ce049fdace54af4aef8cf92cea54c23c6c29cbb"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

@@ -51,7 +51,7 @@ once).
    to feature-box questions and to Interactive Link Questions), the table →
    `sortbins` rule and its item-building rules, **"No source exercise is
    ever dropped, and 'duplicate' is a claim to prove"**, "Leaks across the
-   page", and "What the first retrofit's checkers caught".
+   page", and "Defect classes the checkers find".
 4. `docs/authoring-playbook.md` — **§0 rules 4–5 only; in §3 only the
    Multiple choice (text mode), Callouts, Text recall, Self-check, Sort
    into bins, and Media figure paragraphs and "The section-final

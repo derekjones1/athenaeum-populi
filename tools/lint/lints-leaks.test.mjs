@@ -134,7 +134,8 @@ test('a key printed by a non-adjacent item, across a heading, or outside Practic
   const neutral = mc('Which gas is exhaled?', 'carbon dioxide', ['carbon dioxide', 'argon']);
   assert(!hasError(practice(recall, printer), /directly above/), 'recall item first');
   assert(!hasError(practice(printer, neutral, recall), /directly above/), 'two items above');
-  assert(!hasError(`## Practice\n\n### One\n\n${printer}\n\n### Two\n\n${recall}\n`, /directly above/), 'a heading between them');
+  assert(hasError(`## Practice\n\n### One\n\n${printer}\n\n### Two\n\n${recall}\n`, /directly above/), 'a group heading between them no longer ends the adjacency');
+  assert(!hasError(`## Practice\n\n### One\n\n${printer}\n\n### Two\n\n${textin('Name the unrelated thing.', 'osmosis')}\n`, /directly above/), 'across a heading, an unrelated key is clean');
   assert(!hasError(`## Nutrients\n\n${printer}\n\n${recall}\n\n## Practice\n\n### A\n\n${neutral}\n`, /directly above/), 'body items');
   const kc = `### 1.1 The Science of Biology\n\n${printer}\n\n${recall}\n`;
   assert(hasError(kc, /directly above/, KC), 'a Knowledge Check is all Practice');

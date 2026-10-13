@@ -177,17 +177,17 @@ Complementary base pairing allows for easy editing of both strands of DNA.
 ### Explain RNA's structure and roles
 
 {{< textin
-  question="The RNA that carries activated amino acids to the site of protein synthesis on the ribosome is called ________."
-  answer="tRNA"
-  accept="transfer RNA|transfer ribonucleic acid"
-  hint="Reread the paragraph after the ribosome figure."
->}}
-
-{{< textin
   question="The ________ regulates using mRNA for protein synthesis."
   answer="microRNA"
   accept="miRNA"
   hint="Reread the summary's closing sentence."
+>}}
+
+{{< textin
+  question="The RNA that carries activated amino acids to the site of protein synthesis on the ribosome is called ________."
+  answer="tRNA"
+  accept="transfer RNA|transfer ribonucleic acid"
+  hint="Reread the paragraph after the ribosome figure."
 >}}
 
 {{< selfcheck question="What are the four types of RNA and how do they function?" hint="Reread the second paragraph of RNA and the paragraph after the ribosome figure." >}}

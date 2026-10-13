@@ -1981,6 +1981,120 @@
       "status": "correct-local-source-defect",
       "errataEntry": 1039,
       "rationale": "The medical-terms table defines a bulla as “fluid-filled blister no more than 5 mm in diameter,” which describes a vesicle and duplicates the table's own vesicle row. This book's own §21.2 (m58907, paragraph fs-id1167663536370) says “Bullae are large, fluid-filled blisters that measure at least 5 mm in diameter.” The page's table reads “at least 5 mm in diameter,” matching §21.2, with a visible Source note beside it and disclosure in the footer. Found by the Microbiology chapter 21 re-review, September 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/01-the-cell-membrane.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46021",
+      "sourceElementIds": [
+        "fs-id1417839"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1808,
+      "rationale": "The Cell Membrane module's receptor paragraph (para fs-id1417839) says \"When a dopamine molecule binds to a dopamine receptor protein, a channel within the transmembrane protein opens to allow certain ions to flow into the cell\", but the dopamine receptors (D1–D5) are G protein-coupled receptors, not ion channels (Beaulieu and Gainetdinov, Pharmacol Rev 2011), and the book's own Section 12.5 (m46503) names the nicotinic receptor for acetylcholine as its ligand-gated-channel example. The page changes the example to acetylcholine and the nicotinic acetylcholine receptor with a visible Source note and a footer sentence. Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/04-protein-synthesis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46032",
+      "sourceElementIds": [
+        "fs-id2166515",
+        "fs-id955046",
+        "fs-id1330322",
+        "fs-id1539157",
+        "fs-id865731",
+        "fs-id2152202"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1809,
+      "rationale": "The Protein Synthesis module (para fs-id2166515) says \"One strand, referred to as the coding strand, becomes the template\" and aligns nucleotides \"with its complementary base on the coding strand of DNA\", and the Critical Thinking solution (exercise fs-id955046, solution fs-id865731) says \"the coding (i.e., sense) strand will be used as a template\"; the coding (sense) strand is the non-transcribed strand, RNA polymerase reads the template (antisense) strand, and the module's own genetic-code figure labels the transcribed strand \"Template strand\" (J Biol Chem 2018, doi:10.1074/jbc.RA117.000971). The page calls the transcribed strand the template strand with a visible Source note, changes the model answer to \"the template (i.e., antisense) strand\", and discloses both in the footer. Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/05-cell-growth-and-division.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46034",
+      "sourceElementIds": [
+        "fs-id1177766"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1810,
+      "rationale": "The Cell Growth and Division Chapter Review (para fs-id1177766) says mitosis \"takes place in all normally dividing cells of the body except for the germ cells that produce eggs and sperm\", but this book's Sections 28.1 (m46400, fs-id2919041) and 27.2 (m46392, fs-id2016221) say spermatogonia and oogonia divide by mitosis; only the final divisions that make gametes are meiosis. The page says the germ cells also divide by mitosis before their final divisions, which use meiosis, with a visible Source note and a footer sentence. Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/06-cellular-differentiation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46036",
+      "sourceElementIds": [
+        "fs-id1554790"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1811,
+      "rationale": "The Cellular Differentiation module (para fs-id1554790) says mesenchymal stem cells \"give rise to the different types of muscle cells\", but this book's Section 18.5 (m46691, fs-id1514207) says the mesenchymal cell \"develops only into types of connective tissue, including fibrous connective tissue, bone, cartilage, and blood, but not epithelium, muscle, and nervous tissue\". The page reads \"connective tissue cells such as bone, cartilage, and fat cells\" with a visible Source note and a footer sentence. Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/03-the-nucleus-and-dna-replication.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46073",
+      "sourceElementIds": [
+        "fs-id1715438"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1812,
+      "rationale": "The Nucleus and DNA Replication introduction (para fs-id1715438) says \"Each cell in your body (with the exception of germ cells) contains the complete set of your DNA\", but the same module says mature red blood cells have no nucleus (\"Other cells, such as mammalian red blood cells (RBCs), do not contain nuclei at all\"), and red blood cells are somatic, so germ cells are not the only exception. The page reads \"Each nucleated cell\" with a visible Source note and a footer sentence. The same erratum covers the Cytoplasm and Cellular Organelles opening sentence \"All living cells … contain … a nucleus\" (m46023, para fs-id2256994), which the 3.2 page corrects to \"nearly all a nucleus\" with its own entry. Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/02-the-cytoplasm-and-cellular-organelles.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46023",
+      "sourceElementIds": [
+        "fs-id2256994"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1812,
+      "rationale": "The Cytoplasm and Cellular Organelles opening paragraph (para fs-id2256994) says \"All living cells in multicellular organisms contain an internal cytoplasmic compartment, and a nucleus within the cytoplasm\", but mature red blood cells have no nucleus, as this book's Section 3.3 (m46073) explains. The page reads \"nearly all a nucleus\" with a visible Source note and a footer sentence. Same erratum as the Section 3.3 sentence \"Each cell in your body (with the exception of germ cells)\". Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/06-cellular-differentiation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46036",
+      "sourceElementIds": [
+        "fs-id1534313"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1813,
+      "rationale": "The Cellular Differentiation Everyday Connection (para fs-id1534313) says induced pluripotent stem cells were developed \"from mouse and human adult stem cells\" and are \"genetically reprogrammed multipotent adult cells\", but iPSCs were made from differentiated fibroblasts (Takahashi and Yamanaka, Cell 2006;126:663-676, doi:10.1016/j.cell.2006.07.024). The page reads \"from mouse and human adult cells such as skin fibroblasts\" and \"genetically reprogrammed differentiated adult cells\" with a visible Source note and a footer sentence. Found by the chapter 3 prose claim pass, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/02-the-cytoplasm-and-cellular-organelles.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46023",
+      "sourceElementIds": [
+        "fs-id1514835",
+        "fs-id1302583",
+        "fs-id1302609",
+        "fs-id1163314",
+        "fs-id2152231",
+        "fs-id1435471"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1814,
+      "rationale": "Review Question fs-id1514835 (cytoplasm is to cytosol as a swimming pool containing chlorine and flotation toys is to ____) keys \"the water\" (D), but option B, \"the pool water containing chlorine\", is a second correct completion, because the module's Chapter Review (para fs-id1639757) says the cytosol \"consists mainly of water, but also contains various dissolved nutrients and other molecules\". The page prints \"the chlorine\" in place of option B, keeps the key and the other options, and discloses the change in the footer. Found by the chapter 3.2 checker and the blind solve, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/04-protein-synthesis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46032",
+      "sourceElementIds": [
+        "fs-id1087021",
+        "fs-id1236189",
+        "fs-id1177728",
+        "fs-id1212218",
+        "fs-id1209339",
+        "fs-id1542501"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1815,
+      "rationale": "Review Question fs-id1087021 asks which is \"not entirely or mostly made out of RNA\" and keys the ribosome (B), but ribosomes are mostly RNA by mass (the module says rRNA, \"together with proteins, composes the structure of the ribosome\"), so under \"or mostly\" no option is correct. The page asks only \"not entirely made out of RNA\" with a visible Source note and a footer sentence, and prints the options and key B as printed. Found by the chapter 3.4 checker, adjudicated by the orchestrator, October 13, 2026."
     }
   ]
 }

@@ -716,6 +716,20 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 611,
     reason: 'the source option "skin infection acquired from a dog bite" is also noncommunicable by the module\'s definition (not spread from one person to another), so it double-keys the question; the page prints "gonorrhea acquired through intimate contact with an infected person" in its place (key unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/06-cellular-differentiation.md',
+    exercise: 'fs-id1183443',
+    kind: 'key',
+    erratum: 1807,
+    reason: 'the source misspells "pluripotency" as "pleuripotency" in the stem and in every option of the ordering item (the module body spells it pluripotency); the page prints the corrected spelling in the stem, the options, and the key — the keyed option (D) and its order are unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/02-the-cytoplasm-and-cellular-organelles.md',
+    exercise: 'fs-id1514835',
+    kind: 'options',
+    erratum: 1814,
+    reason: 'the source option "the pool water containing chlorine" is a second correct completion of the cytoplasm-is-to-cytosol analogy, because the module\'s Summary says the cytosol "consists mainly of water, but also contains various dissolved nutrients and other molecules"; the page prints "the chlorine" in its place (key "the water" unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

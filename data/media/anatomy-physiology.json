@@ -114,6 +114,741 @@
       "caption": "High energy electromagnetic radiation allows the internal structures of the body, such as bones, to be seen in X-rays like these. (credit: Trace Meek/flickr)",
       "transparent": false
     },
+    "0300_Flourescence_Stained_new": {
+      "source": "media/0300_Flourescence_Stained_new.jpg",
+      "sourceSha256": "9c2be48b3586f89e5b1b4ca4977ebdf39e25517161a1e14517b65b904a2eaf69",
+      "module": "m46016",
+      "kind": "photo",
+      "width": 1144,
+      "height": 524,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "0300_Flourescence_Stained_new-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 524,
+          "file": "0300_Flourescence_Stained_new-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this image, a fluorescently stained cell is shown undergoing mitosis. The cell membrane is stained red and the green stains show the mitotic spindles inside the cell. The chromosomes are shown in blue.",
+      "caption": "A lung cell from a newt, commonly studied for its similarity to human lung cells, is stained with fluorescent dyes. The green stain reveals mitotic spindles, red is the cell membrane and part of the cytoplasm, and the structures that appear light blue are chromosomes. This cell is in anaphase of mitosis. (credit: “Mortadelo2005”/Wikimedia Commons)"
+    },
+    "0301_Phospholipid_Structure": {
+      "source": "media/0301_Phospholipid_Structure.jpg",
+      "sourceSha256": "360317a680c32be3be591609b4e3d4fd3d65de78b280e39a0142afc907bd393e",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 510,
+      "height": 609,
+      "variants": [
+        {
+          "width": 510,
+          "height": 609,
+          "file": "0301_Phospholipid_Structure-510.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of a phospholipid. The hydrophilic head group is shown as a pink sphere and the two tails are shown as yellow rectangles.",
+      "caption": "A phospholipid molecule consists of a polar phosphate “head,” which is hydrophilic and a non-polar lipid “tail,” which is hydrophobic. Unsaturated fatty acids result in kinks in the hydrophobic tails."
+    },
+    "0302_Phospholipid_Bilayer": {
+      "source": "media/0302_Phospholipid_Bilayer.jpg",
+      "sourceSha256": "97dbd861af579b5cc71969bad20fc2d5e378df59ce9cf44103550a019b5ea4a5",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 457,
+      "height": 308,
+      "variants": [
+        {
+          "width": 457,
+          "height": 308,
+          "file": "0302_Phospholipid_Bilayer-457.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a phospholipid bilayer. Two sets of phospholipids are arranged such that the hydrophobic tails are facing each other and the hydrophilic heads are facing the extracellular environment.",
+      "caption": "The phospholipid bilayer consists of two adjacent sheets of phospholipids, arranged tail to tail. The hydrophobic tails associate with one another, forming the interior of the membrane. The polar heads contact the fluid inside and outside of the cell."
+    },
+    "0303_Lipid_Bilayer_With_Various_Components": {
+      "source": "media/0303_Lipid_Bilayer_With_Various_Components.jpg",
+      "sourceSha256": "58ecc91cc7d957f1dcc1c53b9f3451182656130236076b0cb83bd6a062c26ac9",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 875,
+      "height": 400,
+      "variants": [
+        {
+          "width": 800,
+          "height": 365,
+          "file": "0303_Lipid_Bilayer_With_Various_Components-800.webp"
+        },
+        {
+          "width": 875,
+          "height": 400,
+          "file": "0303_Lipid_Bilayer_With_Various_Components-875.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a lipid bilayer with different types of proteins, lipids and cholesterol embedded in it.",
+      "caption": "The cell membrane of the cell is a phospholipid bilayer containing many different molecular components, including proteins and cholesterol, some with carbohydrate groups attached."
+    },
+    "0305_Simple_Diffusion_Across_Plasma_Membrane": {
+      "source": "media/0305_Simple_Diffusion_Across_Plasma_Membrane.jpg",
+      "sourceSha256": "800482a02904c04fe7b47f14682a4f71b847ec5c3985319c11beabc4b06e8761",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 810,
+      "height": 339,
+      "variants": [
+        {
+          "width": 800,
+          "height": 335,
+          "file": "0305_Simple_Diffusion_Across_Plasma_Membrane-800.webp"
+        },
+        {
+          "width": 810,
+          "height": 339,
+          "file": "0305_Simple_Diffusion_Across_Plasma_Membrane-810.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the simple diffusion of small non-polar molecules across the plasma membrane. A red horizontal arrow pointing towards the right indicates the progress of time. The nonpolar molecules are shown in blue and are present in higher numbers in the extracellular fluid. There are a few nonpolar molecules in the cytoplasm and their number increases with time.",
+      "caption": "The structure of the lipid bilayer allows small, uncharged substances such as oxygen and carbon dioxide, and hydrophobic molecules such as lipids, to pass through the cell membrane, down their concentration gradient, by simple diffusion."
+    },
+    "0306_Facilitated_Diffusion": {
+      "source": "media/0306_Facilitated_Diffusion.jpg",
+      "sourceSha256": "eea465835ce6c9168df9c7cb356bcc9243e9d60d734d65853b020fab2cde6e54",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 781,
+      "height": 987,
+      "variants": [
+        {
+          "width": 781,
+          "height": 987,
+          "file": "0306_Facilitated_Diffusion-781.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the different means of facilitated diffusion across the plasma membrane. In the top panel, a channel protein is shown to allow the transport of solutes across the membrane. In the bottom panel, the membrane contains carrier proteins in addition to channel proteins.",
+      "caption": "(a) Facilitated diffusion of substances crossing the cell (plasma) membrane takes place with the help of proteins such as channel proteins and carrier proteins. Channel proteins are less selective than carrier proteins, and usually mildly discriminate between their cargo based on size and charge. (b) Carrier proteins are more selective, often only allowing one particular type of molecule to cross."
+    },
+    "0307_Osmosis": {
+      "source": "media/0307_Osmosis.jpg",
+      "sourceSha256": "05edd42b6f0528a8854829ba4bcc7361dc9f479883c5342b3d610bce5f1e9f29",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 544,
+      "height": 308,
+      "variants": [
+        {
+          "width": 544,
+          "height": 308,
+          "file": "0307_Osmosis-544.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the diffusion of water through osmosis. The left panel shows a beaker with water and different solute concentrations. A semipermeable membrane is present in the middle of the beaker. In the right panel, the water concentration is higher to the right of the semipermeable membrane.",
+      "caption": "Osmosis is the diffusion of water through a semipermeable membrane down its concentration gradient. If a membrane is permeable to water, though not to a solute, water will equalize its own concentration by diffusing to the side of lower water concentration (and thus the side of higher solute concentration). In the beaker on the left, the solution on the right side of the membrane is hypertonic."
+    },
+    "0308_Sodium_Potassium_Pump": {
+      "source": "media/0308_Sodium_Potassium_Pump.jpg",
+      "sourceSha256": "ddef1958bddfa67fa20170c8b68f6f4a183b76ff431035b3509633582caf606a",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 1052,
+      "height": 500,
+      "variants": [
+        {
+          "width": 800,
+          "height": 380,
+          "file": "0308_Sodium_Potassium_Pump-800.webp"
+        },
+        {
+          "width": 1052,
+          "height": 500,
+          "file": "0308_Sodium_Potassium_Pump-1052.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows many sodium potassium pumps embedded in the membrane. Potassium is pumped into the cytoplasm and sodium is pumped out of the cytoplasm.",
+      "caption": "The sodium-potassium pump is found in many cell (plasma) membranes. Powered by ATP, the pump moves sodium and potassium ions in opposite directions, each against its concentration gradient. In a single cycle of the pump, three sodium ions are extruded from and two potassium ions are imported into the cell."
+    },
+    "0309_Three_Forms_of_Endocytosis": {
+      "source": "media/0309_Three_Forms_of_Endocytosis.jpg",
+      "sourceSha256": "8f2fc02a0a9615273e9dc1369c86230e912174f20a391eaa9bcf457882aa8391",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 2250,
+      "height": 1117,
+      "variants": [
+        {
+          "width": 800,
+          "height": 397,
+          "file": "0309_Three_Forms_of_Endocytosis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 794,
+          "file": "0309_Three_Forms_of_Endocytosis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the three different types of endocytosis. The left panel shows phagocytosis, where a large particle is seen to be engulfed by the membrane into a vacuole. In the middle panel, pinocytosis is shown, where a small particle is engulfed into a vesicle. In the right panel, receptor-mediated endocytosis is shown; the ligand binds to the receptor and is then engulfed into a coated vesicle.",
+      "caption": "Endocytosis is a form of active transport in which a cell envelopes extracellular materials using its cell membrane. (a) In phagocytosis, which is relatively nonselective, the cell takes in a large particle. (b) In pinocytosis, the cell takes in small particles in fluid. (c) In contrast, receptor-mediated endocytosis is quite selective. When external receptors bind a specific ligand, the cell responds by endocytosing the ligand."
+    },
+    "0310_Exocytosis": {
+      "source": "media/0310_Exocytosis.jpg",
+      "sourceSha256": "fd57a7e17e43921dd6fd62862edf393470c25a8f73cf4f3771565ee14fffda73",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 544,
+      "height": 612,
+      "variants": [
+        {
+          "width": 544,
+          "height": 612,
+          "file": "0310_Exocytosis-544.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the process of exocytosis. A vesicle is shown fusing with the membrane and then releasing its contents into the extracellular fluid.",
+      "caption": "Exocytosis is much like endocytosis in reverse. Material destined for export is packaged into a vesicle inside the cell. The membrane of the vesicle fuses with the cell membrane, and the contents are released into the extracellular space."
+    },
+    "0311_Pancreatic_Cells_Micrograph": {
+      "source": "media/0311_Pancreatic_Cells_Micrograph.jpg",
+      "sourceSha256": "296110223c5e30cdb1baecfed0d0ff8817d9151fe37d7d70446b0a27113a032c",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 822,
+      "height": 390,
+      "variants": [
+        {
+          "width": 800,
+          "height": 379,
+          "file": "0311_Pancreatic_Cells_Micrograph-800.webp"
+        },
+        {
+          "width": 822,
+          "height": 390,
+          "file": "0311_Pancreatic_Cells_Micrograph-822.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows the structure of a pancreatic acinar cell and the location of secretory vesicles.",
+      "caption": "The pancreatic acinar cells produce and secrete many enzymes that digest food. The tiny black granules in this electron micrograph are secretory vesicles filled with enzymes that will be exported from the cells via exocytosis. LM × 2900. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "0312_Animal_Cell_and_Components": {
+      "source": "media/0312_Animal_Cell_and_Components.jpg",
+      "sourceSha256": "9a1a2f87c541e1caff38b0c639ffd807832d6745983301f6311455bfffc61fa5",
+      "module": "m46023",
+      "kind": "photo",
+      "width": 813,
+      "height": 645,
+      "variants": [
+        {
+          "width": 800,
+          "height": 634,
+          "file": "0312_Animal_Cell_and_Components-800.webp"
+        },
+        {
+          "width": 813,
+          "height": 645,
+          "file": "0312_Animal_Cell_and_Components-813.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows an animal cell with all the intracellular organelles labeled.",
+      "caption": "While this image is not indicative of any one particular human cell, it is a prototypical example of a cell containing the primary organelles and internal structures."
+    },
+    "0313_Endoplasmic_Reticulum": {
+      "source": "media/0313_Endoplasmic_Reticulum.jpg",
+      "sourceSha256": "9ca192478ba1d4e8e5737e2b1fed1bf10d1341b7e666465b97ea2d11f016f496",
+      "module": "m46023",
+      "kind": "photo",
+      "width": 1102,
+      "height": 892,
+      "variants": [
+        {
+          "width": 800,
+          "height": 647,
+          "file": "0313_Endoplasmic_Reticulum-800.webp"
+        },
+        {
+          "width": 1102,
+          "height": 892,
+          "file": "0313_Endoplasmic_Reticulum-1102.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows structure of the endoplasmic reticulum. The diagram highlights the rough and smooth endoplasmic reticulum and the nucleus is labeled. Two micrographs show the structure of the endoplasmic reticulum in detail. The left micrograph shows the rough endoplasmic reticulum in a pancreatic cell and the right micrograph shows a smooth endoplasmic reticulum.",
+      "caption": "(a) The ER is a winding network of thin membranous sacs found in close association with the cell nucleus. The smooth and rough endoplasmic reticula are very different in appearance and function (source: mouse tissue). (b) Rough ER is studded with numerous ribosomes, which are sites of protein synthesis (source: mouse tissue). EM × 110,000. (c) Smooth ER synthesizes phospholipids, steroid hormones, regulates the concentration of cellular Ca ++ , metabolizes some carbohydrates, and breaks down certain toxins (source: mouse tissue). EM × 110,510. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "0314_Golgi_Apparatus": {
+      "source": "media/0314_Golgi_Apparatus.jpg",
+      "sourceSha256": "4b9e6741c94002c57909166e221542c93be859ea5419d1b60f49860d06aac72e",
+      "module": "m46023",
+      "kind": "photo",
+      "width": 1124,
+      "height": 754,
+      "variants": [
+        {
+          "width": 800,
+          "height": 536,
+          "file": "0314_Golgi_Apparatus-800.webp"
+        },
+        {
+          "width": 1124,
+          "height": 754,
+          "file": "0314_Golgi_Apparatus-1124.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the Golgi apparatus. The diagram in the left panel shows the location and structure of the Golgi apparatus. The right panel shows a micrograph showing the folds of the Golgi in detail.",
+      "caption": "(a) The Golgi apparatus manipulates products from the rough ER, and also produces new organelles called lysosomes. Proteins and other products of the ER are sent to the Golgi apparatus, which organizes, modifies, packages, and tags them. Some of these products are transported to other areas of the cell and some are exported from the cell through exocytosis. Enzymatic proteins are packaged as new lysosomes (or packaged and sent for fusion with existing lysosomes). (b) An electron micrograph of the Golgi apparatus."
+    },
+    "0315_Mitochondrion_new": {
+      "source": "media/0315_Mitochondrion_new.jpg",
+      "sourceSha256": "6e995d29c329812a8ca0b1956b84b278145ebd63e89de6f25acc66ffe2c6a24a",
+      "module": "m46023",
+      "kind": "photo",
+      "width": 2233,
+      "height": 991,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "0315_Mitochondrion_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 710,
+          "file": "0315_Mitochondrion_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of a mitochondrion. The inner and outer membrane, the cristae and the intermembrane space are labeled. The right panel shows a micrograph with the structure of a mitochondrion in detail.",
+      "caption": "The mitochondria are the energy-conversion factories of the cell. (a) A mitochondrion is composed of two separate lipid bilayer membranes. Along the inner membrane are various molecules that work together to produce ATP, the cell’s major energy currency. (b) An electron micrograph of mitochondria. EM × 236,000. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "0316_Peroxisome": {
+      "source": "media/0316_Peroxisome.jpg",
+      "sourceSha256": "d4ae503d5afa5ee11f7949fb7aa69662b26bdd3f08a9a20a311fd67638955110",
+      "module": "m46023",
+      "kind": "photo",
+      "width": 541,
+      "height": 443,
+      "variants": [
+        {
+          "width": 541,
+          "height": 443,
+          "file": "0316_Peroxisome-541.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a peroxisome, which is a vesicular structure with a lipid bilayer on the outside and a crystalline core on the inside.",
+      "caption": "Peroxisomes are membrane-bound organelles that contain an abundance of enzymes for detoxifying harmful substances and lipid metabolism."
+    },
+    "0317_Cytoskeletal_Components": {
+      "source": "media/0317_Cytoskeletal_Components.jpg",
+      "sourceSha256": "787e33c5220871f4f1e73b4e292d14a6398c7d2f06647f04812bf3d90b071ba6",
+      "module": "m46023",
+      "kind": "photo",
+      "width": 1109,
+      "height": 554,
+      "variants": [
+        {
+          "width": 800,
+          "height": 399,
+          "file": "0317_Cytoskeletal_Components-800.webp"
+        },
+        {
+          "width": 1109,
+          "height": 554,
+          "file": "0317_Cytoskeletal_Components-1109.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different cytoskeletal components in an animal cell. The left panel shows the microtubules with the structure of the column formed by tubulin dimers. The middle panel shows the actin filaments and the helical structure formed by the filaments. The right panel shows the fibrous structure of the intermediate filaments with the different keratins coiled together.",
+      "caption": "The cytoskeleton consists of (a) microtubules, (b) microfilaments, and (c) intermediate filaments. The cytoskeleton plays an important role in maintaining cell shape and structure, promoting cellular movement, and aiding cell division."
+    },
+    "0318_Nucleus": {
+      "source": "media/0318_Nucleus.jpg",
+      "sourceSha256": "30cc95ec90e38486390fe542126af6ce3cf33b7caa414342ebfe025020a744b9",
+      "module": "m46073",
+      "kind": "photo",
+      "width": 777,
+      "height": 599,
+      "variants": [
+        {
+          "width": 777,
+          "height": 599,
+          "file": "0318_Nucleus-777.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the nucleus. The nucleolus is inside the nucleus, surrounded by the chromatin and covered by the nuclear envelope.",
+      "caption": "The nucleus is the control center of the cell. The nucleus of living cells contains the genetic material that determines the entire structure and function of that cell."
+    },
+    "0319_Multinucleate_Muscle_Tissue_Micrograph": {
+      "source": "media/0319_Multinucleate_Muscle_Tissue_Micrograph.jpg",
+      "sourceSha256": "951c74600dc6646d36c5ab018936029e599775980b110772d1178f8f90058251",
+      "module": "m46073",
+      "kind": "photo",
+      "width": 710,
+      "height": 487,
+      "variants": [
+        {
+          "width": 710,
+          "height": 487,
+          "file": "0319_Multinucleate_Muscle_Tissue_Micrograph-710.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows a muscle cell with multiple nuclei.",
+      "caption": "Unlike cardiac muscle cells and smooth muscle cells, which have a single nucleus, a skeletal muscle cell contains many nuclei, and is referred to as “multinucleated.” These muscle cells are long and fibrous (often referred to as muscle fibers). During development, many smaller cells fuse to form a mature muscle fiber. The nuclei of the fused cells are conserved in the mature cell, thus imparting a multinucleate characteristic to mature muscle cells. LM × 104.3. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "0320_RBC_Extruding_Nucleus_Micrograph": {
+      "source": "media/0320_RBC_Extruding_Nucleus_Micrograph.jpg",
+      "sourceSha256": "f18d86b1409c995c7a4f013004367d5fb9fcdb71cb5d0ba3d32a3df31a962c01",
+      "module": "m46073",
+      "kind": "photo",
+      "width": 1117,
+      "height": 384,
+      "variants": [
+        {
+          "width": 800,
+          "height": 275,
+          "file": "0320_RBC_Extruding_Nucleus_Micrograph-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 384,
+          "file": "0320_RBC_Extruding_Nucleus_Micrograph-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This set of micrographs shows a red blood cell extruding its nucleus. In the left panel, the nucleus is partially extruded from the red blood cell and in the right panel, the nucleus is completely extruded from the cell.",
+      "caption": "Mature red blood cells lack a nucleus. As they mature, erythroblasts extrude their nucleus, making room for more hemoglobin. The two panels here show an erythroblast before and after ejecting its nucleus, respectively. (credit: modification of micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "0321_DNA_Macrostructure": {
+      "source": "media/0321_DNA_Macrostructure.jpg",
+      "sourceSha256": "ddda4c2ef6a04580a140840adf074f08bbbe8e1db448d36f7356dc975dbebef6",
+      "module": "m46073",
+      "kind": "photo",
+      "width": 743,
+      "height": 584,
+      "variants": [
+        {
+          "width": 743,
+          "height": 584,
+          "file": "0321_DNA_Macrostructure-743.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the macrostructure of DNA. A chromosome and its component chromatin are shown to expand into nucleosomes with histones, which further unravel into a DNA helix and finally into a DNA ladder.",
+      "caption": "Strands of DNA are wrapped around supporting histones. These proteins are increasingly bundled and condensed into chromatin, which is packed tightly into chromosomes when the cell is ready to divide."
+    },
+    "0322_DNA_Nucleotides": {
+      "source": "media/0322_DNA_Nucleotides.jpg",
+      "sourceSha256": "1c9de95c5c1b9fc6b9cd8c71f2563919c53848e3343fbe5ada140515118c5da7",
+      "module": "m46073",
+      "kind": "photo",
+      "width": 817,
+      "height": 822,
+      "variants": [
+        {
+          "width": 800,
+          "height": 805,
+          "file": "0322_DNA_Nucleotides-800.webp"
+        },
+        {
+          "width": 817,
+          "height": 822,
+          "file": "0322_DNA_Nucleotides-817.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the DNA double helix on the top left panel. The different nucleotides are color-coded. In the top right panel, the interaction between the nucleotides through the hydrogen bonds and the location of the sugar-phosphate backbone is shown. In the bottom panel, the structure of a nucleotide is described in detail.",
+      "caption": "The DNA double helix is composed of two complementary strands. The strands are bonded together via their nitrogenous base pairs using hydrogen bonds."
+    },
+    "0323_DNA_Replication": {
+      "source": "media/0323_DNA_Replication.jpg",
+      "sourceSha256": "9800ba08a6e763b80257d9b43a1da2a9323481095d34684e2318556549604e4c",
+      "module": "m46073",
+      "kind": "photo",
+      "width": 819,
+      "height": 506,
+      "variants": [
+        {
+          "width": 800,
+          "height": 494,
+          "file": "0323_DNA_Replication-800.webp"
+        },
+        {
+          "width": 819,
+          "height": 506,
+          "file": "0323_DNA_Replication-819.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the process of DNA replication. A chromosome is shown expanding into the original template DNA and unwinding at the replication fork. The helicase is present at the replication fork. DNA polymerases are shown adding nucleotides to the leading and lagging strands.",
+      "caption": "DNA replication faithfully duplicates the entire genome of the cell. During DNA replication, a number of different enzymes work together to pull apart the two strands so each strand can be used as a template to synthesize new complementary strands. The two new daughter DNA molecules each contain one pre-existing strand and one newly synthesized strand. Thus, DNA replication is said to be “semiconservative.”"
+    },
+    "0324_DNA_Translation_and_Codons": {
+      "source": "media/0324_DNA_Translation_and_Codons.jpg",
+      "sourceSha256": "5b1e862f60214eb3186d137fda2516fa3a3377225891bfd65fe8c6d6b7d361ab",
+      "module": "m46032",
+      "kind": "photo",
+      "width": 1599,
+      "height": 779,
+      "variants": [
+        {
+          "width": 800,
+          "height": 389,
+          "file": "0324_DNA_Translation_and_Codons-800.webp"
+        },
+        {
+          "width": 1599,
+          "height": 779,
+          "file": "0324_DNA_Translation_and_Codons-1599.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the translation of RNA into proteins. A DNA template strand is shown to become an RNA strand through transcription. Then the RNA strand undergoes translation and becomes proteins.",
+      "caption": "DNA holds all of the genetic information necessary to build a cell’s proteins. The nucleotide sequence of a gene is ultimately translated into an amino acid sequence of the gene’s corresponding protein."
+    },
+    "0325_Transcription": {
+      "source": "media/0325_Transcription.jpg",
+      "sourceSha256": "33b33235bf8a3c413fb8f287a36f514c22c1476b05f57a7d0fa65769b2308358",
+      "module": "m46032",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1102,
+      "variants": [
+        {
+          "width": 800,
+          "height": 452,
+          "file": "0325_Transcription-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 904,
+          "file": "0325_Transcription-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this diagram, RNA polymerase is shown transcribing a DNA template strand into its corresponding RNA transcript.",
+      "caption": "In the first of the two stages of making protein from DNA, a gene on the DNA molecule is transcribed into a complementary mRNA molecule."
+    },
+    "0326_Splicing": {
+      "source": "media/0326_Splicing.jpg",
+      "sourceSha256": "c666061230dfd64dd1add0a6820a7fd6245f124f7141ac50d404f5095144d32f",
+      "module": "m46032",
+      "kind": "photo",
+      "width": 580,
+      "height": 667,
+      "variants": [
+        {
+          "width": 580,
+          "height": 667,
+          "file": "0326_Splicing-580.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this diagram, a pre-mRNA transcript is shown in the top of a flowchart. This pre-mRNA transcript contains introns and exons. In the next step, the intron is in a structure called the spliceosome. In the last step, the intron is shown separated from the spliced RNA.",
+      "caption": "In the nucleus, a structure called a spliceosome cuts out introns (noncoding regions) within a pre-mRNA transcript and reconnects the exons."
+    },
+    "0327_Translation": {
+      "source": "media/0327_Translation.jpg",
+      "sourceSha256": "435e32aef28086b4626266e7a234e38092717aab81bb0a4f772e9dff0cd6c00f",
+      "module": "m46032",
+      "kind": "photo",
+      "width": 1084,
+      "height": 2051,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1513,
+          "file": "0327_Translation-800.webp"
+        },
+        {
+          "width": 1084,
+          "height": 2051,
+          "file": "0327_Translation-1084.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top part of this figure shows a large ribosomal subunit coming into contact with the mRNA that already has the small ribosomal subunit attached. A tRNA and an anticodon are in proximity. In the second panel, the tRNA also binds to the same site as the ribosomal subunits. In the bottom panel, a polypeptide chain is shown emerging from the complex.",
+      "caption": "During translation, the mRNA transcript is “read” by a functional complex consisting of the ribosome and tRNA molecules. tRNAs bring the appropriate amino acids in sequence to the growing polypeptide chain by matching their anti-codons with codons on the mRNA strand."
+    },
+    "0328_Transcription-translation_Summary": {
+      "source": "media/0328_Transcription-translation_Summary.jpg",
+      "sourceSha256": "f80f93b0538ab2baa28e61674a2cf8285f4d0591b8999ba6ee5c1eaba73bb212",
+      "module": "m46032",
+      "kind": "photo",
+      "width": 548,
+      "height": 525,
+      "variants": [
+        {
+          "width": 548,
+          "height": 525,
+          "file": "0328_Transcription-translation_Summary-548.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a schematic of a cell where transcription from DNA to mRNA takes place inside the nucleus and translation from mRNA to protein takes place in the cytoplasm.",
+      "caption": "Transcription within the cell nucleus produces an mRNA molecule, which is modified and then sent into the cytoplasm for translation. The transcript is decoded into a protein with the help of a ribosome and tRNA molecules."
+    },
+    "0329_Cell_Cycle": {
+      "source": "media/0329_Cell_Cycle.jpg",
+      "sourceSha256": "bb4010c6e4bda4845c45e9a5ec6b3b0a4cc7ac490069231352464c4bbe404343",
+      "module": "m46034",
+      "kind": "photo",
+      "width": 531,
+      "height": 433,
+      "variants": [
+        {
+          "width": 531,
+          "height": 433,
+          "file": "0329_Cell_Cycle-531.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different stages of the cell cycle. The G0 phase where the cells are not actively dividing is also labeled.",
+      "caption": "The two major phases of the cell cycle include mitosis (designated M), when the cell divides, and interphase, when the cell grows and performs all of its normal functions. Interphase is further subdivided into G 1 , S, and G 2 phases."
+    },
+    "0330_Homologous_Pair_of_Chromosomes": {
+      "source": "media/0330_Homologous_Pair_of_Chromosomes.jpg",
+      "sourceSha256": "d3bffb72bc1c03a62362198d678ea38a862637f1046c2c2b258671a01776764c",
+      "module": "m46034",
+      "kind": "photo",
+      "width": 1850,
+      "height": 1150,
+      "variants": [
+        {
+          "width": 800,
+          "height": 497,
+          "file": "0330_Homologous_Pair_of_Chromosomes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 994,
+          "file": "0330_Homologous_Pair_of_Chromosomes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a pair of chromosomes. The major parts such as the homologous chromosomes, kinetochore and the sister chromatids are labeled.",
+      "caption": "The red and blue colors correspond to a homologous pair of chromosomes. Each member of the pair was separately inherited from one parent. Each chromosome in the homologous pair is also bound to an identical sister chromatid, which is produced by DNA replication, and results in the familiar “X” shape."
+    },
+    "0331_Stages_of__Mitosis_and_Cytokinesis": {
+      "source": "media/0331_Stages_of _Mitosis_and_Cytokinesis.jpg",
+      "sourceSha256": "b443aaeafcacc8062bb0e3b840f2b5d3e257a06b030075ba5e4c1f040cf71ebc",
+      "module": "m46034",
+      "kind": "photo",
+      "width": 2236,
+      "height": 1722,
+      "variants": [
+        {
+          "width": 800,
+          "height": 616,
+          "file": "0331_Stages_of__Mitosis_and_Cytokinesis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1232,
+          "file": "0331_Stages_of__Mitosis_and_Cytokinesis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This tabular image shows the different stages of mitosis and cytokinesis using both drawings and text. The top panel is a series of schematics for each step, followed by text listing the important aspects of that step. The bottom panel shows fluorescent micrographs for the corresponding stage.",
+      "caption": "The stages of cell division oversee the separation of identical genetic material into two new nuclei, followed by the division of the cytoplasm."
+    },
+    "0332_Cell_Cycle_With_Cyclins_and_Checkpoints": {
+      "source": "media/0332_Cell_Cycle_With_Cyclins_and_Checkpoints.jpg",
+      "sourceSha256": "09b95421162b76bf8b2dc78ba48b317a7f0cf8e1dae5d159eeeb61dd6b7c5b86",
+      "module": "m46034",
+      "kind": "photo",
+      "width": 666,
+      "height": 583,
+      "variants": [
+        {
+          "width": 666,
+          "height": 583,
+          "file": "0332_Cell_Cycle_With_Cyclins_and_Checkpoints-666.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the different stages of the cell cycle along with the checkpoints between them and the cyclins responsible for the checkpoint at each stage.",
+      "caption": "Cells proceed through the cell cycle under the control of a variety of molecules, such as cyclins and cyclin-dependent kinases. These control molecules determine whether or not the cell is prepared to move into the following stage."
+    },
+    "0337_Hematopoiesis_new": {
+      "source": "media/0337_Hematopoiesis_new.jpg",
+      "sourceSha256": "1d64208f45813d992dea59df252441e0807e21452dcde1404a0825d13c33a9fd",
+      "module": "m46036",
+      "kind": "photo",
+      "width": 2307,
+      "height": 1896,
+      "variants": [
+        {
+          "width": 800,
+          "height": 657,
+          "file": "0337_Hematopoiesis_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1315,
+          "file": "0337_Hematopoiesis_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the differentiation of a hemocytoblast, a stem cell, into the different types of cells found in blood.",
+      "caption": "The process of hematopoiesis involves the differentiation of multipotent cells into blood and immune cells. The multipotent hematopoietic stem cells give rise to many different cell types, including the cells of the immune system and red blood cells."
+    },
+    "0338_RNA_Polymerase_Binding": {
+      "source": "media/0338_RNA_Polymerase_Binding.jpg",
+      "sourceSha256": "34967f9c02567c0542285baee1a46d4a9c41b4ee98350b696077252528ca8af2",
+      "module": "m46036",
+      "kind": "photo",
+      "width": 1118,
+      "height": 245,
+      "variants": [
+        {
+          "width": 800,
+          "height": 175,
+          "file": "0338_RNA_Polymerase_Binding-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 245,
+          "file": "0338_RNA_Polymerase_Binding-1118.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows transcription factors and then RNA polymerase binding to a stretch of RNA to initiate transcription.",
+      "caption": "While each body cell contains the organism’s entire genome, different cells regulate gene expression with the use of various transcription factors. Transcription factors are proteins that affect the binding of RNA polymerase to a particular gene on the DNA molecule."
+    },
+    "0346_Concentration_of_Solutions": {
+      "source": "media/0346_Concentration_of_Solutions.jpg",
+      "sourceSha256": "4651c37e4b64eb3e82da88b4327198f5e95dde443a7e70ed8cb8b19df4421e43",
+      "module": "m46021",
+      "kind": "photo",
+      "width": 460,
+      "height": 238,
+      "variants": [
+        {
+          "width": 460,
+          "height": 238,
+          "file": "0346_Concentration_of_Solutions-460.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows how a red blood cell responds to the tonicity of solution. The left panel shows the hypertonic case, the middle panel shows the isotonic case and the right panel shows the hypotonic case.",
+      "caption": "A hypertonic solution has a solute concentration higher than another solution. An isotonic solution has a solute concentration equal to another solution. A hypotonic solution has a solute concentration lower than another solution."
+    },
     "100_Blood_Pressure": {
       "source": "media/100_Blood_Pressure.jpg",
       "sourceSha256": "4208ffda42be7333bba1df148d96797d109bed1a56a901ca7611c1d707836633",
@@ -1133,6 +1868,29 @@
       "alt": "R is single bonded to C, C is double bonded to one O and single bonded to another O. The second O is single bonded to H.",
       "caption": "",
       "transparent": false
+    },
+    "422_Feature_Stem_Cell_new": {
+      "source": "media/422_Feature_Stem_Cell_new.png",
+      "sourceSha256": "ca6055af2969dfa817e1b1908fa5378f22f4e8d2523e19a945080467d02013b0",
+      "module": "m46036",
+      "kind": "diagram",
+      "width": 1336,
+      "height": 1523,
+      "variants": [
+        {
+          "width": 800,
+          "height": 912,
+          "file": "422_Feature_Stem_Cell_new-800.webp"
+        },
+        {
+          "width": 1336,
+          "height": 1523,
+          "file": "422_Feature_Stem_Cell_new-1336.webp"
+        }
+      ],
+      "transparent": true,
+      "alt": "This flow chart shows the differentiation of stem cells into different cell types. The top layer shows a totipotent stem cell, which becomes a pluripotent stem cell and then a multipotent stem cell. A multipotent stem cell can then differentiate into different cell types.",
+      "caption": "The capacity of stem cells to differentiate into specialized cells make them potentially valuable in therapeutic applications designed to replace damaged cells of different body tissues."
     }
   }
 }

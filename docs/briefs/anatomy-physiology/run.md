@@ -189,7 +189,14 @@ then applies the accepted ones (Source note, `reconciliation-decisions.json`
 entry, footer sentence, erratum), lists the rest under "Reviewed and *not*
 errata". After correcting a value on a page, grep the page, the book's
 Knowledge Checks, and sibling pages for the OLD value: a hint, filler, or
-check item built on it is now wrong.
+check item built on it is now wrong. A Source note and a footer clause state the
+correction, never the erratum number — the footer-machinery lint rejects
+"(erratum NNNN)" on a page, and a fixer brief that asks for it fails every
+page at once *(chapter 3)*. Hand the accepted findings to one Sonnet fixer
+with the exact old and new sentences; a `kind: 'solution'` deviation for a
+model-answer wording change is usually stale (the selfcheck compare
+tolerates it) — add a DISCLOSED_DEVIATIONS line only when the keys gate
+asks for one.
 
 ## 3. The blind solve
 

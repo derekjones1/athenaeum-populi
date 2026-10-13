@@ -282,12 +282,10 @@ export function lintLeaks(src, filename = '') {
     }
   }
 
-  // ---- items in page order, with their heading group -----------------------
+  // ---- items in page order -----------------------
   const KINDS = ['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck', 'sortbins'];
   const items = KINDS.flatMap((kind) => [...shortcodes(text, kind)].map((sc) => ({ kind, ...sc })))
     .sort((a, b) => a.index - b.index);
-  const headings = [...text.matchAll(/^#{1,6}[ \t]+\S.*$/gm)].map((h) => h.index);
-  const groupOf = (index) => headings.filter((h) => h < index).length;
   // The Practice block (`## Practice` to the next `## `), or the whole of a
   // Knowledge Check. A body item sits under prose that prints its topic
   // anyway, at the source's own note position, so adjacency means nothing
@@ -323,8 +321,10 @@ export function lintLeaks(src, filename = '') {
     // not this rule: measured September 2026, "anywhere on the page" hit
     // topic words by the hundred and was rejected (docs/subjects/
     // microbiology.md). "Directly above" is the previous interactive item
-    // under the same `###` group of a Practice block or Knowledge Check; a
-    // heading between the two ends the adjacency. It landed with the A&P
+    // of a Practice block or Knowledge Check, across a `###` group heading too:
+    // the last item of one group and the first textin of the next sit one
+    // above the other on the page (Biology 3.3: an option "histones" over a
+    // `histone` cloze). It landed with the A&P
     // hits fixed by that book's own re-review and 289 Biology and
     // Microbiology groups (Knowledge Checks included) cleared: 285 by
     // moving recall items up the group, which leaves every source item's
@@ -333,7 +333,7 @@ export function lintLeaks(src, filename = '') {
     // pass it — order the group so the recall item comes before the items
     // that print its key.
     const prev = items[k - 1];
-    const leak = prev && inPractice(item.index) && groupOf(prev.index) === groupOf(item.index) ? directlyAboveLeak(prev, item) : null;
+    const leak = prev && inPractice(item.index) && inPractice(prev.index) ? directlyAboveLeak(prev, item) : null;
     if (leak?.option) {
       // The documented special case, with its own message: a whole option
       // that IS the key (a distractor, or the same fact keyed twice back to

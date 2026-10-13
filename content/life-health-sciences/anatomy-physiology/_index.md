@@ -45,14 +45,17 @@ reproduction, development, and inheritance.
   human body: matter, elements, and subatomic particles; ionic, covalent,
   and hydrogen bonds; how chemical reactions store and release energy; and
   the inorganic and organic compounds essential to human functioning.
+- **The Cellular Level of Organization** — the cell membrane and how it
+  regulates what enters and leaves, the organelles of the cytoplasm, the
+  nucleus and DNA replication, protein synthesis, the cell cycle and
+  division, and cellular differentiation.
 
 ## Planned contents
 
-The remaining 26 chapters of Anatomy and Physiology 2e's six units will
+The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 1: Levels of Organization** — The Cellular Level of Organization;
-  The Tissue Level of Organization.
+- **Unit 1: Levels of Organization** — The Tissue Level of Organization.
 - **Unit 2: Support and Movement** — The Integumentary System; Bone Tissue and
   the Skeletal System; Axial Skeleton; The Appendicular Skeleton; Joints;
   Muscle Tissue; The Muscular System.

@@ -405,6 +405,15 @@ export const LISTED_EXERCISES = Object.freeze([
     ],
     reason: "Short Answer on hemolysis in complement fixation folded into the body CYU (graded multiplechoice); footer discloses",
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/03-the-cellular-level-of-organization/06-cellular-differentiation.md',
+    exercise: 'fs-id1183443',
+    kind: 'conversion',
+    questions: [
+      "Arrange the following terms in order of increasing specialization: oligopotency, pluripotency, unipotency, multipotency.",
+    ],
+    reason: "Review Question rendered as the same multiplechoice with the source's \"pleuripotency\" corrected to \"pluripotency\" in the stem and every option (erratum 1807; DISCLOSED_DEVIATIONS kind key); footer discloses",
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

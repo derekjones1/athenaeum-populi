@@ -546,7 +546,8 @@ in the core (§3); the rules specific to a term-built item:
   topic — never the key, a root or derivative of it, the fact the correct
   option asserts, or a fact the module never states; and nothing in the item
   directly above a `textin` — its stem, its options, or its hint — prints
-  its key. The lint catches the literal forms
+  its key (a `###` group heading between them does not break the pair). The
+  lint catches the literal forms
   (`tools/lint/lints-leaks.mjs`); a hint that states the correct option's
   fact instead of pointing at it, or a fact the module never states, is a
   checker read against its own key and options. It is the largest defect

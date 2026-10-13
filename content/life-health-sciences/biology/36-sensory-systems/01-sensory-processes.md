@@ -156,12 +156,6 @@ special senses require specialized organs
 ### Describe three important steps in sensory perception
 
 {{< textin
-  question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
-  answer="sensory receptor"
-  hint="See the section's second opening paragraph, on the two types of cellular systems that perform sensory transduction."
->}}
-
-{{< textin
   question="Sensory receptors are either specialized cells associated with sensory neurons or the specialized ends of sensory neurons that are a part of the ________."
   answer="peripheral nervous system"
   accept="PNS"
@@ -184,6 +178,12 @@ special senses require specialized organs
   question="The individual interpretation of a sensation, which is a brain function, is called ________."
   answer="perception"
   hint="See the first sentence of the subsection that follows Encoding and Transmission of Sensory Information."
+>}}
+
+{{< textin
+  question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
+  answer="sensory receptor"
+  hint="See the section's second opening paragraph, on the two types of cellular systems that perform sensory transduction."
 >}}
 
 {{< textin

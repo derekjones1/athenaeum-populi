@@ -16,12 +16,12 @@
 
 ## Coverage
 
-- Mapped local sections: 621
+- Mapped local sections: 627
 - Sections changed upstream: 40
 - Content-level changes: 32
 - Markup/metadata-only changes: 8
 - Changed Try It records: 3
-- Changed Try Its where local math matches the PDF-era form: 1
+- Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
 
 ## Baselines
@@ -32,7 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 12 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 18 sections mapped
 
 ## Changed mapped sections
 
@@ -159,10 +159,10 @@ Module `m82470`; content-changed. Changed lanes: tries.
 
 Decision: **retain-local-upstream-inconsistent.** Current upstream changes the right side from negative three-fifths to positive three-fifths but leaves a solution graphic saying contradiction/no solution. Positive three-fifths makes the inequality an identity. The local negative-three-fifths prompt and contradiction answer are mathematically correct and match the PDF-era source.
 
-- Try It `fs-id1168345426388` (authored-baseline)
+- Try It `fs-id1168345426388` (current-upstream)
   - Before: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​−(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
   - Current: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​+(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
-  - Local: Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Which describes its solution?
+  - Local: Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z + \tfrac{3}{5}$. Which describes its solution?
 
 ### elementary-algebra 4.6 — [content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md](../../content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md)
 
