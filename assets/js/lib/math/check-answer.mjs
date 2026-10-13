@@ -734,7 +734,13 @@ function fractionTimesSymbolQuotient(expr) {
 const NUMERAL_PRODUCT = /\d\s*(?:\\cdot|\\times|\*)\s*\(?\s*-?\s*\d/;
 const NUMERAL_FRACTION = /\\[tdc]?frac\s*\{\s*-?\s*\d+(?:\.\d+)?\s*\}\s*\{\s*\d+(?:\.\d+)?\s*\}/g;
 const EXPONENT_ARITHMETIC = /\^\s*\{[^{}]*\d\s*(?:[-+*]|\\cdot|\\times)\s*\(?\s*-?\s*\d[^{}]*\}/;
-const NUMERAL_POWER = /(?:^|[^\w\\}])(?:\(\s*-?\s*\d+(?:\.\d+)?\s*\)|\d+(?:\.\d+)?)\s*\^(?!\s*\{?\s*\\circ)/;
+// The power may follow `\pi`, the number a substituted formula keeps
+// (`4\pi(3)^2`, `4\pi3^2` for `36\pi`), and a parenthesized numeral may
+// follow a lone letter (`x(3)^2` for `9x`): the lookbehind that keeps a
+// subscript or a number's tail out read the `i` of `\pi` and the letter as
+// word characters, so both graded `correct` under `single-term` (Precalculus
+// chapters 11–12 re-review, October 12, 2026).
+const NUMERAL_POWER = /(?:^|[^\w\\}]|\\pi|(?<![\\a-zA-Z])[a-zA-Z](?=\())(?:\(\s*-?\s*\d+(?:\.\d+)?\s*\)|\d+(?:\.\d+)?)\s*\^(?!\s*\{?\s*\\circ)/;
 /** The braced numerator and denominator of a leading `\frac{…}{…}`, or []. */
 function fracHalves(bare) {
   const head = bare.match(/^\\[tdc]?frac\s*/);
@@ -766,9 +772,15 @@ function fracHalves(bare) {
 // A powered group is a base, not a factor: `10(0.85)^{t}` is the damped
 // model's finished coefficient and base (same re-review).
 const NUMERAL_GROUP_PRODUCT = /\d\s*\(\s*-?\s*\d+(?:\.\d+)?\s*\)(?!\s*\^)|\(\s*-?\s*\d+(?:\.\d+)?\s*\)\s*\(?\s*-?\s*\d|\)\s*\(\s*-?\s*\d+(?:\.\d+)?\s*\)/;
+// A coefficient on each side of `\pi` is the same product, `\pi` standing
+// between the numerals: `4\pi(9)`, `4\pi 9` and `\frac43\pi(27)` graded
+// `correct` against `36\pi` under `single-term` (Precalculus chapters 11–12
+// re-review, October 12, 2026). A lone coefficient after `\pi`, `\pi(36)`,
+// is one coefficient, and a power of the numeral is writesNumeralPower's.
+const PI_NUMERAL_PRODUCT = /(?:\d|\})\s*\\pi\s*(?:\(\s*-?\s*)?\d/;
 const writesNumeralProduct = (bare) => {
   const text = bare.replace(NUMERAL_FRACTION, '1');
-  return NUMERAL_PRODUCT.test(text) || NUMERAL_GROUP_PRODUCT.test(text);
+  return NUMERAL_PRODUCT.test(text) || NUMERAL_GROUP_PRODUCT.test(text) || PI_NUMERAL_PRODUCT.test(bare);
 };
 const writesExponentArithmetic = (bare) => EXPONENT_ARITHMETIC.test(bare);
 const writesNumeralPower = (bare) => NUMERAL_POWER.test(bare);
@@ -5953,15 +5965,27 @@ const FORM_PREDICATES = {
   // side is a label there, as the value grader already reads it; a letter
   // that is one (`t=100-10t`, or the solved-for-x line against a bare key in
   // x) still is not.
+  //
+  // A subscripted label (`T_n=10+4n`, `a_n=53-3n`) is a sequence's term
+  // named the way the book writes it, and reads the same way: its BASE
+  // letter is what must be a variable of neither side (the index `n` is the
+  // input). It graded `form` against the bare key `10+4n`, the label
+  // neither read nor stripped (Precalculus chapters 11–12 re-review,
+  // October 12, 2026). Never `y`'s free pass: `y_1=` is a name, not y.
   'slope-intercept-form': (latex, answer) => {
-    const letterLabel = (text) => bareLatex(text).match(/^([a-zA-Z])\s*=(?![=<>])/)?.[1];
+    const labelOf = (text) => bareLatex(text)
+      .match(/^([a-zA-Z])(_(?:[a-zA-Z0-9]|\{\s*[a-zA-Z0-9]+\s*\}))?\s*=(?![=<>])/);
     const writtenLetters = (text) => bareLatex(text).replace(/\\[a-zA-Z]+/g, ' ').match(/[a-zA-Z]/g) ?? [];
-    const label = letterLabel(latex);
-    const keyLabel = answer ? letterLabel(answer) : undefined;
-    const bare = stripWrittenLabel(bareLatex(latex));
-    const namesBareKey = answer !== undefined && answer !== null && keyLabel === undefined
+    const labelMatch = labelOf(latex);
+    const label = labelMatch?.[1];
+    const subscripted = Boolean(labelMatch?.[2]);
+    const fullLabel = labelMatch?.[0].replace(/\s*=$/, '').replace(/[{}\s]/g, '');
+    const keyMatch = answer ? labelOf(answer) : null;
+    const keyLabel = keyMatch?.[0].replace(/\s*=$/, '').replace(/[{}\s]/g, '');
+    const bare = subscripted ? bareLatex(latex).slice(labelMatch[0].length).trim() : stripWrittenLabel(bareLatex(latex));
+    const namesBareKey = answer !== undefined && answer !== null && keyMatch == null
       && !writtenLetters(bare).includes(label) && !writtenLetters(answer).includes(label);
-    if (label !== undefined && label !== 'y' && label !== keyLabel && !namesBareKey) return false;
+    if (label !== undefined && !(label === 'y' && !subscripted) && fullLabel !== keyLabel && !namesBareKey) return false;
     if (bare.includes('=')) return false;
     let expr;
     try {

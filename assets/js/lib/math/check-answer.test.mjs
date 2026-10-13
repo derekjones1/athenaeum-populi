@@ -4467,3 +4467,46 @@ test('form feedback names the unreduced fraction, and drops a solved: phrase the
   assert.equal(describeFormFeedback('r(2+3\\sin\\theta)=12', 'solved:r no-like-terms', 'r=\\frac{12}{2+3\\sin\\theta}'),
     describeAnswerForm('solved:r no-like-terms'));
 });
+
+// Precalculus chapters 11–12 re-review (October 12, 2026): grader gaps G1, …
+const precalculusChapters11And12 = [
+  // G1: a subscripted label strips under slope-intercept-form when its base
+  // letter is a variable of neither side
+  ['T_n=10+4n', '10+4n', 'slope-intercept-form', 'correct'],
+  ['a_n=-3n+53', '53-3n', 'slope-intercept-form', 'correct'],
+  ['a_{n}=-3n+53', '53-3n', 'slope-intercept-form', 'correct'],
+  ['a_n=53-3n', 'a_n=53-3n', 'slope-intercept-form', 'correct'],
+  ['T_n=2(5+2n)', '10+4n', 'slope-intercept-form', 'form'],
+  ['T_n=6+4+4n', '10+4n', 'slope-intercept-form', 'form'],
+  ['n_1=10+4n', '10+4n', 'slope-intercept-form', 'form'],
+  ['x_1=2x+3', '2x+3', 'slope-intercept-form', 'form'],
+  // G2: `solved:a_n` names no form (single-letter variables only), so the
+  // page's `no-like-terms` alone is the form that reads the recursion
+  ['a_n=\\frac46a_{n-1}', 'a_n=\\frac23a_{n-1}', 'no-like-terms', 'form'],
+  ['a_n=\\frac23a_{n-1}', 'a_n=\\frac23a_{n-1}', 'no-like-terms', 'correct'],
+  // G3: a numeral power or a second coefficient after `\pi` is unworked
+  ['4\\pi(3)^2', '36\\pi', 'exact single-term', 'form'],
+  ['4\\pi3^2', '36\\pi', 'exact single-term', 'form'],
+  ['4\\pi(3)^2', '36\\pi', 'exact single-term no-like-terms', 'form'],
+  ['4\\pi(9)', '36\\pi', 'exact single-term', 'form'],
+  ['4\\pi 9', '36\\pi', 'exact single-term', 'form'],
+  ['\\frac{4}{3}\\pi(3)^3', '36\\pi', 'exact single-term', 'form'],
+  ['x(3)^2', '9x', 'single-term', 'form'],
+  ['36\\pi', '36\\pi', 'exact single-term', 'correct'],
+  ['36 \\pi', '36\\pi', 'exact single-term no-like-terms', 'correct'],
+  ['\\pi(36)', '36\\pi', 'exact single-term', 'correct'],
+  ['2\\pi^2', '2\\pi^2', 'single-term', 'correct'],
+  ['10(0.85)^t', '10(0.85)^t', 'no-like-terms', 'correct'],
+];
+test('Precalculus chapters 11–12 grader gaps', async (t) => {
+  for (const [typed, key, form, expected] of precalculusChapters11And12) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+
+test('G2: solved: takes a single-letter variable, so solved:a_n is an unknown token', () => {
+  assert.equal(parseAnswerForm('solved:a_n no-like-terms').valid, false);
+  assert.deepEqual(parseAnswerForm('solved:a_n no-like-terms').unknown, ['solved:a_n']);
+});
