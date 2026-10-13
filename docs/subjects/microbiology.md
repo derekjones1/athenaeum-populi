@@ -49,19 +49,12 @@ again.
 
 ## Where the files go
 
-```
-content/life-health-sciences/microbiology/_index.md                  book cover
-content/life-health-sciences/microbiology/NN-<chapter-slug>/_index.md chapter landing (intro module)
-content/life-health-sciences/microbiology/NN-<chapter-slug>/NN-<section-slug>.md
-static/media/microbiology/<stem>-<width>.webp                        vendored figures
-data/media/microbiology.json                                         media manifest
-```
-
-`NN` is the upstream chapter number (01–26) and, inside a chapter, the
+The paths are life-sciences "Where the files go" with `microbiology` as the
+book. `NN` is the upstream chapter number (01–26) and, inside a chapter, the
 upstream section number. The cover lists chapters as plain bullets under
 `## Chapters` — no unit headings; the source has none, and none are
-invented. The lock's `authoringStatus` is `complete` (since September 14,
-2026), and the cover carries no `authoring_status`.
+invented. The lock's `authoringStatus` is `complete`, and the cover carries no
+`authoring_status`.
 
 ## What is different from Biology 2e
 
@@ -150,11 +143,8 @@ Biology keyed every exercise. Microbiology keys some sets and not others:
 | Check Your Understanding | `note.check-your-understanding` in the body (up to 10 per section) | **no** | a body item at the note's position — graded (`multiplechoice`, `textin`, `sortbins`) when the module fixes the answer, else `selfcheck` — see 3 |
 | Art Connection | an `<exercise>` whose problem holds a figure | mostly | `mediafigure` first, then the item, as biology's Visual Connections |
 
-The graded items are keyed from the source and go through biology's three
-readings (author keys from the CNXML; checker re-derives; the orchestrator
-answers with `solve:emit` / `solve:compare` and
-`verify:ledger --require-solved`); `verify:source-keys` confirms them
-against the source.
+The graded items are keyed from the source and take the three readings in
+life-sciences "Verification".
 
 **An author-written model answer is allowed only under these conditions**,
 all of them:
@@ -182,27 +172,12 @@ all of them:
   the model answer hidden; a disagreement is settled by the module's
   sentences, never by what a microbiologist would add.
 
-**Which unkeyed questions are graded anyway** *(Sep 6 2026; replaces the
-pilot's "never key a question the source does not key")*. The
-life-sciences "Unkeyed source questions: graded when the module fixes the
-answer" rule applies: an unkeyed Short Answer, Critical Thinking, or Check
-Your Understanding question becomes a `multiplechoice`, `textin`, or
-`sortbins` when ONE sentence, table, or lettered figure of the module
-fixes its whole answer, and stays a `selfcheck` when the answer is a
-paragraph, a speculation, a long list, or an inference. Its checker applies
-the life-sciences "What the first retrofit's checkers caught" list. Example
-of "the question offers its own alternatives": §2.1's lettered Critical
-Thinking item ("which of the following has the lowest energy?") is a
-`multiplechoice` over its four printed alternatives, keyed by the module's
-energy–wavelength sentence. Nothing upstream fixes an accept list, so a
+**Which unkeyed questions are graded anyway.** Life-sciences "Unkeyed
+source questions: graded when the module fixes the answer" applies
+unchanged, with its "Defect classes the checkers find" list. A
 converted `textin` is used only for a defined term or a name the sentence
 prints verbatim; anything else that converts is a `multiplechoice` or a
 `sortbins`, whose options and bins the module prints.
-
-Two life-sciences rules came from this book's chapter 3: a source
-question may use a word the module never uses (§3.1's Pasteur "control
-group", the intact swan-neck flask), and a "select all that apply" item
-becomes a `sortbins` (§3.3's adherence item, keyed C, D).
 
 **A Short Answer that the body's Check Your Understanding already asks is
 folded into that body item** *(chapter 3)* — only when the two are the same
@@ -215,9 +190,7 @@ gate.
 Rules about which source items can be used at all:
 
 - **An item whose options differ only in typography is not gradable**
-  *(pilot)*: §1.2's binomial-nomenclature item (`Homo Sapiens`, *homo
-  sapiens*, *Homo sapiens*, *Homo Sapiens*) is the case the life-sciences
-  Multiple choice rule was written from.
+  (life-sciences Multiple choice).
 - **A two-blank Fill in the Blank splits on whether the order is the
   point** *(pilot)*. "Haeckel proposed adding the kingdoms ___ and ___"
   (*Protista and Monera*) is unordered: a `textin` whose `accept` carries
@@ -276,7 +249,7 @@ questions that end most Clinical Focus parts. Neither has a source answer.
 
 | CNXML `<note class="microbiology …">` | Callout | Notes |
 |---|---|---|
-| `clinical-focus` | `{{</* callout type="info" */>}}` **Clinical Focus.** *Part N* / *Resolution* | The box's `<title>` follows the bold name in italics. One case runs through a chapter, one part per section; the source's "Jump to the next Clinical Focus box" link becomes a plain sentence naming where the case continues ("The case continues in [A Systematic Approach](/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach/).") — an **absolute site-root Markdown link**, never a Hugo `relref` (`check:build` validates routes), plain text when the target page does not exist. The source's "go back" link points at the PREVIOUS part, which is not where the case BEGAN once a case runs past two sections. Transcribe the box in document order — the closing question can precede the box's figure. |
+| `clinical-focus` | `{{</* callout type="info" */>}}` **Clinical Focus.** *Part N* / *Resolution* | The box's `<title>` follows the bold name in italics. One case runs through a chapter, one part per section; the source's "Jump to the next Clinical Focus box" link becomes a plain sentence naming where the case continues ("The case continues in [A Systematic Approach](/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach/).") — the life-sciences absolute site-root link, plain text when the target page does not exist. The source's "go back" link points at the PREVIOUS part, which is not where the case BEGAN once a case runs past two sections. Transcribe the box in document order — the closing question can precede the box's figure. |
 | `micro-connection` | **Micro Connection.** *Title* | |
 | `eye-on-ethics` | **Eye on Ethics.** *Title* | |
 | `case-in-point` | **Case in Point.** *Title* | |
@@ -352,11 +325,11 @@ micro sign, organism names, primes, immunology and genetics notation), plus:
   case per occurrence.
 - **Footnotes** become inline parenthetical citations (core §2) with author
   names, initials, title, and journal verbatim ("E.O. List, D.E.
-  Berryman", not "List, Berryman") *(chapter 12)*.
+  Berryman", not "List, Berryman").
 
 ## Media
 
-Biology's media section applies verbatim, with `--book microbiology`:
+The life-sciences media section applies, with `--book microbiology`:
 
 ```sh
 npm run source:media -- --book microbiology --chapter 1 --dry-run
@@ -364,9 +337,9 @@ npm run source:media -- --book microbiology --chapter 1
 ```
 
 - **Almost every source file is a JPEG**, diagrams included, so the
-  manifest's `kind` guess ("JPEG = photo") is wrong for every drawn figure.
-  Set `kind` explicitly on **every** `mediafigure` after looking at the
-  image; a missing `kind` is a checker defect.
+  manifest's `kind` guess is wrong for every drawn figure: set `kind`
+  explicitly on every `mediafigure` after looking at the image (life-sciences
+  Media).
 - A split figure (§1.3's six drawn shape icons above six micrographs) is
   a `diagram` under the life-sciences composite rule; record the call in
   the ledger *(pilot)*.
@@ -400,13 +373,9 @@ of Nonspecific Innate Immune Defenses", *chapters 17–18*).
 
 ## Verification
 
-Everything in the life-sciences Verification section applies, and the
-general rules this book's chapter runs learned — page-wide leaks, the
-conversion rules, `sortbins` construction, `accept` lists, cloze shapes,
-figure and notation rules — now live in `docs/subjects/life-sciences.md`,
-where every later book reads them. What stays here is this book's own; the
-narrative behind each rule is in `docs/history/microbiology.md`
-("Verification lessons by chapter").
+Everything in the life-sciences Verification section applies; the general
+rules this book's runs learned now live in `docs/subjects/life-sciences.md`.
+What stays here is this book's own.
 
 ### Gates and readings
 
@@ -501,12 +470,7 @@ are in the life-sciences edition's "Content rules".
 
 ## How a chapter is run
 
-The book is complete; nothing here is run again. Its chapter kit was
-retired on September 26, 2026 (the runs are in
-`docs/history/microbiology.md`; the files are in git history), and
-`docs/briefs/anatomy-physiology/` — the same process with Anatomy and
-Physiology's content rules — is the one maintained. An edit to a finished
-page follows `docs/re-review/README.md`.
+The book is complete; an edit to a finished page follows `docs/re-review/README.md`.
 
 ## Done checklist (in addition to the core and life-sciences checklists)
 
@@ -516,8 +480,5 @@ page follows `docs/re-review/README.md`.
 - [ ] every Check Your Understanding bullet a body item at its position; no Practice item re-asks one; a stem repeated by the source reworded to name its referent
 - [ ] every Disease Profile table transcribed as Markdown; every other figure vendored with an explicit, image-checked `kind`
 - [ ] Clinical Focus parts titled and chained with an absolute site-root link or plain text, never a dangling link, and never calling the previous part the beginning of the case
-- [ ] every hint read against every other key on the page, forwards and backwards
 - [ ] every single-word departure from the CNXML named in the footer AND logged as an erratum
 - [ ] every source item the page did not use named in the footer with its reason
-- [ ] `solve:emit`/`solve:compare` run and merged; `verify:ledger` green
-- [ ] `build-map` rerun, the lock's `authoringStatus` updated, `npm run baseline:update` committed with the content

@@ -6,20 +6,17 @@ records: `docs/history/microbiology.md`, `docs/history/biology.md`
 ("Figure-alt pass", "Practice sweep and long-description pass", "Alt-only
 figure pass").
 
-**Revised September 22, 2026: inventory, Opus, `longdesc` first.** Earlier
-image-first passes missed detail — an arrow's far end, a panel row, a
-bracket endpoint, a printed label — because the checker described the
-image in a few lines and never traced an edge; a later read of every
-`longdesc` figure found most of them wrong (errata 898–982). The checker
-brief therefore requires a full inventory (every label, every count, every
-arrow as `source → target` with both ends zoomed) before the words are
-read, and a claim-by-claim check against it.
+The pass is required at a book's completion, and a figure fixed by the
+earlier passes is still re-read. The checker brief requires a full
+inventory (every label, every count, every arrow as `source → target` with
+both ends zoomed) before the words are read, and a claim-by-claim check
+against it.
 
-**Opus only, never Sonnet** *(September 23, 2026)*: about 70% of Sonnet
-fixers' "clean" verdicts were wrong and most of their fixes regressed;
-Sonnet plus an Opus check cost more than Opus alone. Whatever model runs
-the first unit of a new task, the parent opens the image for one of its
-"clean" verdicts before launching the rest.
+**Opus only, never Sonnet.** Whatever model runs the first unit of a new
+task, the parent opens the image for one of its "clean" verdicts before
+launching the rest.
+
+History: `docs/history/re-review.md`, Alt-only figure pass.
 
 ## Run shape
 
@@ -45,10 +42,9 @@ the first unit of a new task, the parent opens the image for one of its
    phylogenies, and other networks; then multi-row mechanism diagrams;
    then scale and range charts with brackets; then labeled anatomy — since
    figure kind predicts defects and chapter does not; then the alt-only
-   figures (`--longdesc without`). Alt-only is not low-risk: after a
-   Sonnet image-first pass, Opus still fixed 282 of 1,027 alt-only figures
-   in Biology 2e and Microbiology (September 24–26, 2026), photographs as
-   often as diagrams — body sites, counts, colours, and scale claims.
+   figures (`--longdesc without`). Alt-only is not low-risk: Opus still
+   finds defects in alt-only figures after an image-first pass, photographs
+   as often as diagrams — body sites, counts, colours, and scale claims.
    The packet tool writes one packet per chapter; regroup its lines into
    packets of 30–45 figures, which is what one agent finishes.
 3. The parent opens the image for EVERY flag before editing (crop and

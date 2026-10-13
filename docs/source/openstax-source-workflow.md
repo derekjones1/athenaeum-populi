@@ -62,7 +62,7 @@ What those commands do:
   `sources/openstax/`. For each bundle it checks out the locked commit and
   materializes the sparse text files for the inferred PDF-era commits. It does
   not download the large `media/` tree.
-- `source:verify` works offline. It confirms that every local numbered math
+- `source:verify` works offline. It confirms that every book's local numbered
   section has exactly one committed module mapping, that the map agrees with
   the local paths and `source_section` frontmatter, and that each book's
   recorded bundle and authoring status match the lock.
@@ -195,7 +195,7 @@ chapter (26) authored September 14, 2026 — and `verify-map` prints
 `26/26 chapters, 127/127 sections mapped`. Its subject playbook is
 `docs/subjects/microbiology.md`; the collection is flat (no units), so the
 map records no `units` key for it. The authoring log is in
-`docs/history/openstax-source-workflow.md`.
+`docs/history/microbiology.md` ("Pinning log (from the source workflow)").
 
 ## Anatomy and Physiology 2e
 
@@ -232,7 +232,9 @@ build date of 2026-04-20 — the inference rule that reproduces the algebra
 books' baselines exactly, but still a comparison candidate, not a proven
 OpenStax build ID.
 
-**Scaffolded chapters (any future book).** An unwritten chapter landing
+## Scaffolded chapters (any future book)
+
+An unwritten chapter landing
 declares `authoring_status: scaffolded` in its frontmatter — the marker that
 lets an empty `## Sections` overview past the chapter-landing lint and the
 content validator's bullets-match-pages check; `build-map` refuses one on a
@@ -246,6 +248,34 @@ for a finished one. When a future book's every section exists, change its
 `authoringStatus` to `complete` in the lock; from then on the tooling
 enforces full chapter-by-chapter parity with the upstream collection and the
 book joins the audited section matrix.
+
+## Important upstream inconsistency (Elementary Algebra 2.7)
+
+Elementary Algebra 2e section 2.7 needs special treatment. Current OpenStax
+changes the Try It inequality's right-hand constant from `−3/5` to `+3/5` but
+retains a solution graphic saying “Contradiction / No solution.” With `+3/5`
+the result is an identity. The local PDF-era `−3/5` prompt and contradiction
+answer are internally correct, so the decision file retains the local
+version. This is why updates stop for review.
+
+Other confirmed upstream defects are not enumerated here. The local pages
+follow the PDF and the modules' own mathematics; where a local sentence had
+to be corrected the page carries a visible source note beside it. The
+defects go in `docs/openstax-errata.md` — a gitignored local file holding
+submission-ready write-ups (module id, element id, current text, why it is
+wrong, suggested correction) plus the cases already reviewed and dismissed.
+
+**Logging a confirmed defect there is automatic and requires no approval.**
+Whenever an authoring pass confirms a source defect against the raw CNXML plus
+one independent check, write it up in `docs/openstax-errata.md` before handing
+the work back — do not ask whether to log it, and do not report it only in
+prose. A dismissed suspicion goes in the file's "Reviewed and *not* errata"
+list with its reason, so it is not re-investigated later.
+
+When section work is split across subagents, each worker is scoped to its own
+content file and cannot write here; the parent collects the defects from every
+worker's report and logs them. This does not replace recording the *local*
+handling here or in `data/openstax/reconciliation-decisions.json`.
 
 ## Biology 2e
 
@@ -279,6 +309,8 @@ reports that lane as `n/a` rather than `0/0`. The audit's local-interaction
 scan recognizes `textin`, `selfcheck`, and `sortbins` alongside
 `multiplechoice`.
 
+## Vendoring media (every life-sciences book)
+
 Once a chapter's modules are ready to vendor, `npm run source:media` renders
 the raster figures a chapter references into `static/media/<book>/` as WebP at
 ≤800/≤1600 px and records them in `data/media/<book>.json`:
@@ -292,34 +324,6 @@ It reads blobs with `git show <commit>:media/<file>` from the blobless
 sparse clone, so it needs the fetch's commit to actually hold the referenced
 media blob; it is local-only tooling and needs `sips` and `cwebp` on the
 machine running it.
-
-### Important upstream inconsistency
-
-Elementary Algebra 2e section 2.7 needs special treatment. Current OpenStax
-changes the Try It inequality's right-hand constant from `−3/5` to `+3/5` but
-retains a solution graphic saying “Contradiction / No solution.” With `+3/5`
-the result is an identity. The local PDF-era `−3/5` prompt and contradiction
-answer are internally correct, so the decision file retains the local
-version. This is why updates stop for review.
-
-Other confirmed upstream defects are not enumerated here. The local pages
-follow the PDF and the modules' own mathematics; where a local sentence had
-to be corrected the page carries a visible source note beside it. The
-defects go in `docs/openstax-errata.md` — a gitignored local file holding
-submission-ready write-ups (module id, element id, current text, why it is
-wrong, suggested correction) plus the cases already reviewed and dismissed.
-
-**Logging a confirmed defect there is automatic and requires no approval.**
-Whenever an authoring pass confirms a source defect against the raw CNXML plus
-one independent check, write it up in `docs/openstax-errata.md` before handing
-the work back — do not ask whether to log it, and do not report it only in
-prose. A dismissed suspicion goes in the file's "Reviewed and *not* errata"
-list with its reason, so it is not re-investigated later.
-
-When section work is split across subagents, each worker is scoped to its own
-content file and cannot write here; the parent collects the defects from every
-worker's report and logs them. This does not replace recording the *local*
-handling here or in `data/openstax/reconciliation-decisions.json`.
 
 ## Reading the pinned sources
 
@@ -402,7 +406,7 @@ agree with another.
 
 ## What the audit does not yet certify
 
-The initial pass establishes provenance, structural mapping, upstream drift,
+The audit establishes provenance, structural mapping, upstream drift,
 and high-confidence instructional metadata coverage. It does not by itself
 prove every local equation, worked step, interactive answer, inline SVG, or
 Knowledge Check item correct. Those require the existing section verifier,

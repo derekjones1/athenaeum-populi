@@ -35049,6 +35049,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5909809ba783b58e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5914d031a182f417": {
    "verdict": "ok",
    "note": "body CYU, selfcheck; model answer assembled from § Ribosomes. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -42478,10 +42486,6 @@
     "result": "agrees"
    }
   },
-  "6e483fd72c562c18": {
-   "verdict": "ok",
-   "note": "d = 16-18 = -2, confirmed by iterating the sequence. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
-  },
   "6e49760346a5e2cb": {
    "verdict": "ok",
    "note": "key-term recall: lumbar puncture; printed in § Meningitis and Encephalitis: \"To determine whether the inflammation is caused by a pathogen, a lumbar puncture is performed to obtain a sample of CSF .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -44334,10 +44338,6 @@
   },
   "730877ff50a4d014": {
    "verdict": "ok"
-  },
-  "730d8d26f294b158": {
-   "verdict": "ok",
-   "note": "Common ratio of -6,-12,-24,-48,-96,... = -12/-6 = 2, confirmed across all consecutive pairs. Matches CNXML Algebraic #9 solution r=2. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
   "731d3ffc42531296": {
    "verdict": "ok",
@@ -60925,14 +60925,6 @@
     "result": "agrees"
    }
   },
-  "9e480ae89d4cbb41": {
-   "verdict": "ok",
-   "note": "Common ratio of 100,20,4,4/5,... = 20/100 = 1/5, confirmed by dividing every consecutive pair; matches CNXML solution r=1/5. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
-   "solved": {
-    "by": "fable-solver",
-    "result": "agrees"
-   }
-  },
   "9e49c5bef1e724ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -63619,6 +63611,14 @@
    }
   },
   "a4da30bee364b984": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a4e3cd756cbc021f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -92983,6 +92983,14 @@
   "f2f3a9de9996ccff": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 573): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "f2fba42cbc9e3783": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f3114e9b98847973": {
    "verdict": "ok",

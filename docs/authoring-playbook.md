@@ -214,7 +214,7 @@ The content lint enforces the descriptive bullet shape.
 ## 2. Writing patterns
 
 Notation, math, and table conventions are per subject: `docs/subjects/math.md`
-§2 for the math books, `docs/subjects/life-sciences.md` "Notation" for the life sciences.
+"Writing patterns" for the math books, `docs/subjects/life-sciences.md` "Notation" for the life sciences.
 
 **Footnotes.** A source `<footnote>` that is a citation becomes an inline
 parenthetical citation after the sentence it supports — author, title,

@@ -41,6 +41,12 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology/',
   },
   {
+    name: 'anatomy and physiology section (feature boxes, mediafigures)',
+    path:
+      '/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/' +
+      '07-medical-imaging/',
+  },
+  {
     name: 'sort-bins exercise',
     path: '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/',
   },

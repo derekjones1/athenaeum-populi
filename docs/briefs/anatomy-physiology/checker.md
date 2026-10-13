@@ -20,8 +20,8 @@ a parent decision is not defective for it), then
 `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md` —
 the rules you check against; anatomy-physiology wins where they differ; the
 life-sciences sections "Unkeyed source questions" (with the conversion
-rules the chapter runs sharpened), "Leaks across the page", "What the
-first retrofit's checkers caught", and the anatomy-physiology
+rules the chapter runs sharpened), "Leaks across the page", "Defect classes
+the checkers find", and the anatomy-physiology
 "Verification" list are the defect classes you hunt.
 
 ## 1. Enumerate

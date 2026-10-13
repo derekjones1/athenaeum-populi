@@ -99,70 +99,44 @@ candidate.
 
 ## Where the files go
 
-```
-content/life-health-sciences/anatomy-physiology/_index.md                      book cover
-content/life-health-sciences/anatomy-physiology/NN-<chapter-slug>/_index.md    chapter landing (intro module)
-content/life-health-sciences/anatomy-physiology/NN-<chapter-slug>/NN-<section-slug>.md
-static/media/anatomy-physiology/<stem>-<width>.webp                            vendored figures
-data/media/anatomy-physiology.json                                             media manifest
-```
-
-`NN` is the upstream chapter number (01–28) and, inside a chapter, the
-upstream section number. **The book's structure is the source's structure,
-for all six units**, as for Biology 2e: the cover lists each authored
-chapter under a `### Unit N: <title>` heading inside `## Chapters`, in
-source order with the source's titles; `build-map` records the grouping as
-the book's `units` list in `data/openstax/source-map.json`; `verify-map`
-checks it; the sidebar nests chapters under their unit; URLs do not carry
-the unit. A chapter moves from the cover's "Planned contents" list to its
-unit heading when its first section lands, never earlier. The lock's
-`authoringStatus` is `in-progress` and becomes `complete` when the 169th
-section lands. That flip is a close-out step of its own, pinned in: the
-lock's `authoringStatus`, the cover's `authoring_status` frontmatter (`npm
-run source:verify` requires it to equal the lock's word for word, and to be
-absent once the lock says `complete`), the assertions in
-`tools/source/openstax-source.test.mjs`, and the status prose in
-`AGENTS.md`, `README.md`, and `docs/source/openstax-source-workflow.md`.
-The chapter landing carries the intro module's paragraph and splash photo
-plus the chapter-objectives note as a list.
+The paths are life-sciences "Where the files go" with `anatomy-physiology`
+as the book. `NN` is the upstream chapter number (01–28) and, inside a
+chapter, the upstream section number. **The book's structure is the
+source's structure, for all six units**, as for Biology 2e: the cover lists
+each authored chapter under a `### Unit N: <title>` heading inside
+`## Chapters`, in source order with the source's titles; the grouping is the
+book's `units` list in `data/openstax/source-map.json`; URLs do not carry the
+unit. A chapter moves from the cover's "Planned contents" list to its unit
+heading when its first section lands, never earlier. The lock's
+`authoringStatus` flips to `complete` when the 169th section lands, as
+life-sciences "Where the files go" describes. The chapter landing carries the
+intro module's paragraph and splash photo plus the chapter-objectives note as
+a list.
 
 ## What is the same as Biology 2e
 
-In every respect that shaped a Microbiology rule, this book is
-Biology-shaped, so the baseline applies as written:
+The baseline applies as written. The A&P-specific counts and facts:
 
 - **Every exercise carries a `<solution>`** — 1,226 of 1,226 (714 Review
   Questions keyed by letter, 370 Critical Thinking model answers, 142
-  Interactive Link answers). `verify-source-keys` should report no
-  `unkeyed` status, and `unmatched` only for a question an author writes
-  from a feature box.
-- **A per-module `<glossary>`** in 168 of the 169 sections; `## Key terms`
-  is built from it, one bulleted item per definition in source order, and
-  the `textin` recall items come from it. The one section without a
-  glossary is 17.11 *Development and Aging of the Endocrine System*
-  (`m46658`): no `## Key terms` block, no recall items, and the footer says
-  so. Body `<term>` tags (all class-less) outnumber the definitions two to
-  one, so a bolded term is not evidence of a key term — the glossary is.
-- **Review Questions are four-option `multiplechoice`** (706 of 714). Six
-  items in chapter 25 have two options, one has three, one has five: keep
-  the source's option count.
-- **Critical Thinking Questions → `selfcheck`** with the source solution as
-  the model answer; **a `section.summary` per section**; comparison tables
-  → `sortbins` under the baseline's both-orientations rule (expect
-  merged-cell transcription work; 2.5's functional-groups table has
-  structure *images* in its cells, which must be vendored or the table
-  restructured).
+  Interactive Link answers); `verify-source-keys` reports `unmatched` only
+  for a question an author writes from a feature box.
+- **A per-module `<glossary>`** in 168 of the 169 sections; the one without
+  is 17.11 *Development and Aging of the Endocrine System* (`m46658`): no
+  `## Key terms` block, no recall items, and the footer says so. Body
+  `<term>` tags outnumber the definitions two to one, so a bolded term is not
+  evidence of a key term.
+- **Review Questions are four-option `multiplechoice`** (706 of 714); six
+  items in chapter 25 have two options, one has three, one has five: keep the
+  source's option count.
+- 2.5's functional-groups table has structure *images* in its cells, which
+  must be vendored or the table restructured.
 - The practice floor is **3 exercises per objective group and 8 per section**,
-  with `distinctItems` on, published in `BOOK_RULES` as the
-  `life-health-sciences/anatomy-physiology` profile.
-- **Figures** use `<figure>` + `<media alt>` + `<image>` with occasional
-  `<subfigure>`s — the same `mediafigure` pipeline; `npm run
-  source:media -- --book anatomy-physiology --chapter N` vendors a
-  chapter's images. The checkout is blobless and excludes `media/`; the
-  tool reads each blob from the pinned commit over the network.
+  with `distinctItems` on (`BOOK_RULES`).
+- `npm run source:media -- --book anatomy-physiology --chapter N` vendors a
+  chapter's images; the checkout is blobless and excludes `media/`.
 - **Math** is minor: 59 `<m:math>` elements in 13 modules (2.3, 20.2, 22.5,
-  26.3, 26.4, the renal sections), transcribed with the baseline's notation
-  rules.
+  26.3, 26.4, the renal sections).
 
 ## What is different from Biology 2e
 
@@ -266,23 +240,13 @@ The corpus-wide answer-position gate measures the book on its own; if it
 fails, reorder with a deterministic seeded shuffle and say so in
 `Changes:`.
 
-Lessons *(chapters 1–2 and their Opus re-review, September 22, 2026)* —
-baseline rules this book's vocabulary makes easy to break:
+Lessons — baseline rules this book's vocabulary makes easy to break:
 
-- **The "directly above" leak is the top class, and stems are the gap.**
-  Nothing in the item directly above a `textin` — its stem, its options,
-  OR its hint — prints the `textin`'s key, or its root, singular, or plural
-  (X-rays/X-ray, prone/supine, thoracic cavity). Source stems and options
-  are never edited; order the group so every recall item comes before the
-  items that print its key, and word hints by role, not by term. Grep the
-  Practice block for every `textin` key before filing.
-- **A hint says WHERE to look — the subsection, figure, or table — never
-  the key, a root or derivative of it (*pronation* for prone, *nutrient*
-  for micronutrients), the fact the correct option asserts, or a fact the
-  module never states** (e.g. "uracil is a pyrimidine and appears in only
-  one nucleic acid" above options B and C). Read every hint against its own
-  key and options, and against the stem, options, and hint of the item
-  above; the checker reads them again.
+- **The "directly above" leak** and **hints that print the key or its root**
+  are the life-sciences rules, linted since September 22, 2026; order a group
+  so every recall item comes before the items that print its key, and word
+  hints by role, not by term (e.g. X-rays/X-ray, prone/supine; *pronation*
+  for prone).
 - **Headline glossary terms are not recall items.** A term that sibling
   items necessarily print (1.1's *anatomy* and *physiology*; 1.5's
   *negative*/*positive feedback*) stays a Key-terms bullet only; the footer
@@ -291,33 +255,19 @@ baseline rules this book's vocabulary makes easy to break:
   (life-sciences "Each thing once"); a term the group's own objective
   heading or the page title prints is avoided when the objective offers
   another, as a preference, not a defect (life-sciences "Text recall").
-- **Footer numbers come from a tally, never from memory.** The floor is 3
-  per objective and 8 per section — never quote 12 or 15. Every
-  figure-reference edit ("see the figure below, panel a" for a `<link>`) is
-  a disclosed departure; a dropped one is a defect.
-- **Figures are described from the drawing, never from the source alt or
-  from memory.** A source alt reused as a `longdesc` is read against the
-  image first; left/right is the subject's (1.6's arm arrow is on the
-  woman's LEFT arm); bands, views, and panels are counted in the image.
-- **A one-word typo is footer + ledger only, never a Source note** (core §0
-  rule 4); a claim-level correction gets one. A figure's file name is not
-  reader-visible content and gets no note.
-- **Lint-enforced since September 22, 2026:** HTML entities in shortcode
-  params; ASCII chemistry (`H2O`, `Na+`) anywhere on a page, alts included —
-  Unicode sub/superscripts only; an MC option above a `textin` that prints
-  its key; an acronym spelled out before its blank; a hint that prints the
-  key; a `textin` key in its own hint or in the preceding item; a `textin`
-  hint word built on a five-letter-plus key's root (*pronation* for
-  `prone`); an MC hint naming a subsection whose title is the key. The fact
-  the correct option asserts, a fact the module never states, and other
-  paraphrases remain the author's and checker's.
+- **Footer numbers come from a tally**, never from memory; the floor is 3
+  per objective and 8 per section. A figure-reference edit is a disclosed
+  departure (e.g. "see the figure below, panel a" for a `<link>`).
+- **Figures are described from the drawing, never from the source alt**
+  (life-sciences Media), e.g. 1.6's arm arrow is on the woman's LEFT arm.
+- **A one-word typo is footer + ledger only**; a claim-level correction gets
+  a Source note (core §0 rule 4).
 - **Source section titles vary** ("Review Chapter", "Critical Thinking
   Question" in 1.6) — they are the same `multiple-choice` /
   `free-response` classes.
 - **A source file name with parentheses** (`102_Organ_Systems_of_Body(Page1).jpg`)
   is folded to `…-Page1` by `vendor-media`, because Hugo percent-encodes the
-  parentheses and the build audit then cannot match the variant file
-  *(pilot)*.
+  parentheses and the build audit then cannot match the variant file.
 
 The three readings and the blind solve run as
 `docs/briefs/anatomy-physiology/run.md` describes.
@@ -363,8 +313,9 @@ at the book root) and shifts +1 when that check lands.
 
 ## Build budgets
 
-The build-size caps live in `tools/build/audit-build.mjs`. At the scan the
-site was ~306 MB against the 350 MiB total-HTML cap and this book projects
-~60 MB more, so **the cap will trip mid-book** — raise it deliberately with
-a measurement when it does, never in advance. The 20,000-file Cloudflare
-ceiling is not at risk (~1,700 files for this book on top of ~4,800).
+The build-size caps live in `tools/build/audit-build.mjs`. Measured at the
+September 22, 2026 scan, the site was ~306 MB against the 350 MiB total-HTML
+cap and this book projects ~60 MB more, so **the cap will trip mid-book** —
+raise it deliberately with a measurement when it does, never in advance. The
+20,000-file Cloudflare ceiling is not at risk (~1,700 files for this book on
+top of ~4,800, measured at the same scan).

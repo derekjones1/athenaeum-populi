@@ -282,6 +282,54 @@ function fitViewBox(els, W, H) {
   return { x, y, w: Math.ceil(x1) - x, h: Math.ceil(y1) - y }
 }
 
+/** The no-break space that holds a drawn bar's place in its label: an ordinary
+    space would collapse against a neighbour or be trimmed at either end. */
+const BAR_GAP = ' '
+
+/**
+ * Draw every `|` in a label as a bar, not as the font's glyph *(October 13,
+ * 2026, Precalculus 10.3)*. Helvetica's `|` is a plain stem the height of an
+ * `l`, so the latus-rectum label `(p, |2p|)` read "(p, l2pl)". Fallback glyphs
+ * (U+2223 ∣, U+FF5C ｜, U+23D0 ⏐) come from whatever symbol font a platform
+ * has, at whatever height and width it gives them. So the label keeps a
+ * no-break space where each bar stood, and a filled rect — the bar — is drawn
+ * in that gap from the parenthesis depth below the baseline to the
+ * parenthesis height above it, as an absolute-value bar is set beside `(`.
+ * Positions come from the same measured advances that placed the label (the
+ * Helvetica, Arial, and Liberation Sans advances agree). A rect is fill, not
+ * stroke: it is never masked behind a tick digit or read by the overlap
+ * checker as a line through its own label, and `currentColor` keeps it in
+ * the label's colour in dark mode. An italic label keeps its glyph — an
+ * upright bar would not match a slanted run. Run once per builder, before the
+ * fit pass; it mutates the text els in place, so `knockout` identities hold.
+ */
+function drawLabelBars(els) {
+  for (let i = 0; i < els.length; i++) {
+    const el = els[i]
+    if (el.tag !== 'text' || !String(el.text).includes('|') || el.attrs.fontStyle === 'italic') continue
+    const chars = Array.from(String(el.text).replaceAll('|', BAR_GAP))
+    const bars = Array.from(String(el.text)).flatMap((ch, k) => (ch === '|' ? [k] : []))
+    const size = Number(el.attrs.fontSize || FONT)
+    const w = measureTextWidth(chars.join(''), size)
+    const X = Number(el.attrs.x), Y = Number(el.attrs.y)
+    const x0 = el.attrs.textAnchor === 'middle' ? X - w / 2 : el.attrs.textAnchor === 'end' ? X - w : X
+    const gap = measureTextWidth(BAR_GAP, size), stem = 0.085 * size
+    const rects = bars.map((k) => {
+      const cx = x0 + measureTextWidth(chars.slice(0, k).join(''), size) + gap / 2
+      return {
+        tag: 'rect',
+        attrs: {
+          x: (cx - stem / 2).toFixed(2), y: (Y - 0.74 * size).toFixed(2),
+          width: stem.toFixed(2), height: (0.95 * size).toFixed(2), fill: el.attrs.fill || 'currentColor',
+        },
+      }
+    })
+    el.text = chars.join('')
+    els.splice(i + 1, 0, ...rects)
+    i += rects.length
+  }
+}
+
 function stepCount(min, max, step, label) {
   const count = Math.floor((max - min) / step) + 1
   if (!Number.isFinite(count) || count > MAX_GENERATED_STEPS) {
@@ -424,8 +472,13 @@ export function buildGraph(props) {
   // grid rectangle in px
   const gx0 = px([xMin, 0])[0], gx1 = px([xMax, 0])[0]
   const gy0 = px([0, yMax])[1], gy1 = px([0, yMin])[1]
-  // axes overshoot the grid a little, arrowheads at the tips
-  const OVER = 12, AH = 10, AW = 5
+  // axes overshoot the grid a little, arrowheads at the tips. Every head is
+  // AH long and 2·AW wide — 10 × 7, apex 39° (October 13, 2026): a 10 × 10
+  // head has a 53° apex, so on a line at its half-angle — the x′-axis of
+  // Precalculus 10.4, at 26.57° — one edge lies flat and the head reads as a
+  // ▲ / ▶ glyph sitting on the line, not as the line's arrow. The axes take
+  // the same head so every arrow in a figure is one shape.
+  const OVER = 12, AH = 10, AW = 3.5, HEAD_HW = AW
 
   const els = []
   const allLines = [...lines] // regions append their boundary lines
@@ -492,13 +545,15 @@ export function buildGraph(props) {
     }
   }
 
-  function arrowhead(tip, dir) {
+  /** A filled head with its apex ON `tip`, its axis exactly along `dir`,
+      AH long and 2·hw wide (HEAD_HW for graphed objects, AW for the axes). */
+  function arrowhead(tip, dir, hw = HEAD_HW) {
     const [ux, uy] = norm(dir)
     const bx = tip[0] - AH * ux, by = tip[1] - AH * uy
     const tri = [
       tip,
-      [bx - AW * uy, by + AW * ux],
-      [bx + AW * uy, by - AW * ux],
+      [bx - hw * uy, by + hw * ux],
+      [bx + hw * uy, by - hw * ux],
     ].map((q) => q.map((n) => +n.toFixed(1)))
     arrowTips.push(tip)
     arrowHeads.push(tri)
@@ -690,10 +745,10 @@ export function buildGraph(props) {
   const yA1 = yMin < 0 ? gy1 + OVER - AH : axisY
   add('line', segAttrs([xA0, axisY], [gx1 + OVER - AH, axisY], { strokeWidth: '1' }))
   add('line', segAttrs([axisX, gy0 - OVER + AH], [axisX, yA1], { strokeWidth: '1' }))
-  arrowhead([gx1 + OVER, axisY], [1, 0])
-  arrowhead([axisX, gy0 - OVER], [0, -1])
-  if (xMin < 0) arrowhead([gx0 - OVER, axisY], [-1, 0])
-  if (yMin < 0) arrowhead([axisX, gy1 + OVER], [0, 1])
+  arrowhead([gx1 + OVER, axisY], [1, 0], AW)
+  arrowhead([axisX, gy0 - OVER], [0, -1], AW)
+  if (xMin < 0) arrowhead([gx0 - OVER, axisY], [-1, 0], AW)
+  if (yMin < 0) arrowhead([axisX, gy1 + OVER], [0, 1], AW)
   obstacles.push([[gx0 - OVER, axisY], [gx1 + OVER, axisY]], [[axisX, gy0 - OVER], [axisX, gy1 + OVER]])
   solidInk.push([[xA0, axisY], [gx1 + OVER - AH, axisY]], [[axisX, gy0 - OVER + AH], [axisX, yA1]])
   // Tight ink box of a text node, for collision scoring. Exact advance
@@ -1559,6 +1614,7 @@ export function buildGraph(props) {
 
   // --- 9. raw text annotations (attrs computed above, before placement) -----
   for (const t of textAnnotations) add('text', t.attrs, t.text)
+  drawLabelBars(els) // every placed label's `|` becomes a drawn bar
 
   // --- 10. tick-digit knockout ----------------------------------------------
   // Every stroke passes BEHIND the tick digits: the renderers (figure-svg.mjs)
@@ -1945,7 +2001,7 @@ export function buildNumberLine(props) {
   }
 
   // annotations: prose-level marks above or below the line, positioned by value
-  const AH = 8, AW = 4 // annotation arrowhead length and half-width
+  const AH = 8, AW = 2.8 // annotation arrowhead length and half-width (the 10 : 7 graph head, scaled)
   const head = (tip, dir) => {
     const bx = tip[0] - AH * dir[0], by = tip[1] - AH * dir[1]
     const tri = [tip, [bx - AW * dir[1], by + AW * dir[0]], [bx + AW * dir[1], by - AW * dir[0]]]
@@ -2030,6 +2086,7 @@ export function buildNumberLine(props) {
     add('text', { x: fmtN(tx), y: '16', textAnchor: 'middle', fontSize: '14', fill: 'currentColor' }, mathMinus(title))
   }
 
+  drawLabelBars(els)
   const box = fitViewBox(els, W, H)
   return {
     viewBox: `${box.x} ${box.y} ${box.w} ${box.h}`,
@@ -2198,7 +2255,7 @@ export function buildFigure(props) {
   }
 
   /** filled arrowhead at px point `tip`, pointing along px direction `dir` */
-  function arrowMark(tip, dir, size = 8, width = 4) {
+  function arrowMark(tip, dir, size = 8, width = 2.8) {
     const [ax, ay] = norm(dir)
     const bx = tip[0] - size * ax, by = tip[1] - size * ay
     const pts = [
@@ -2323,6 +2380,7 @@ export function buildFigure(props) {
     }, mathMinus(t.text))
   }
 
+  drawLabelBars(els)
   const box = fitViewBox(els, W, H)
   return {
     viewBox: `${box.x} ${box.y} ${box.w} ${box.h}`,

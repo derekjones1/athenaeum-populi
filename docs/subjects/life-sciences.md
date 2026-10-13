@@ -78,11 +78,11 @@ assertions in `tools/source/openstax-source.test.mjs`, and the status
 prose in `AGENTS.md`, `README.md`, and
 `docs/source/openstax-source-workflow.md`. `npm run source:verify` is not
 part of `npm test`; it runs at close-out and in CI (after `npm run
-source:fetch`). The mapped-section *count* is stated once, in
-`docs/source/openstax-source-workflow.md`
-(`tools/build/documentation.test.mjs` checks it against
-`data/openstax/source-map.json`); every other doc says "the committed
-section map" rather than restating the number.
+source:fetch`). The mapped-section *count* comes from the map: `npm run source:verify`
+prints it. The doc test (`tools/build/documentation.test.mjs`) checks
+`docs/source/openstax-upstream-history-audit.md`'s "Mapped local sections"
+against `data/openstax/source-map.json` and refuses a hand-written doc that
+restates a count; every other doc says "the committed section map".
 
 ## The section page, in order
 
@@ -173,10 +173,10 @@ section map" rather than restating the number.
    page with the tally in front of you: every sentence is a claim a reader
    can check, and no reason ("the module gives nothing to answer it with")
    stands in for a rendered exercise. **The clause names departures from
-   the source, and only those** *(September 23, 2026)*: correcting the
+   the source, and only those**: correcting the
    page's own earlier alt, `longdesc`, hint, or item text is not narrated
    there. **It states the correction and why, never its bookkeeping**
-   *(September 23, 2026)*: no "reported as a source defect", "also
+  : no "reported as a source defect", "also
    reported", "reported below", "(erratum N)", or "this book's errata" —
    the errata file and `DISCLOSED_DEVIATIONS` carry the numbers. A source
    defect the page keeps as printed is "a source defect, kept as printed".
@@ -194,7 +194,7 @@ numbers:
 `5 µm`, `37 °C`, `1,000` with a plain comma in prose. Never put math in a
 `textin` question or answer — the lint rejects it.
 
-The lint enforces this since September 22, 2026: an ASCII formula or ion
+The lint enforces this: an ASCII formula or ion
 (`CO2`, `H+`, `Ca2+`, `NO3-`, `NADP+`) in prose, item params and options,
 captions, alt, or longdesc is an error, with the Unicode spelling in the
 message. Exempt: `accept` members (what a learner types), `$…$` math, code,
@@ -351,7 +351,7 @@ that use them.
   vendored file has transparent pixels (the manifest's `transparent`, which
   `vendor-media` records) gets the plate whatever its `kind`: its panel
   letters and labels are black ink on transparency and vanished on the dark
-  page (39 photo-kind figures, found September 26, 2026), so `kind` stays a
+  page, so `kind` stays a
   statement about what the image is, not a dark-mode workaround. A
   composite is a `diagram` when any panel is genuinely drawn (a schematic,
   a map, a morphology icon, a labelled chart) and a `photo` when every
@@ -409,8 +409,7 @@ that use them.
   as printed with the correct name beside it, and logged. When a source
   alt gets a figure's data wrong, the data are read off the image and
   carried — totals in the alt, the full values in a `longdesc` — never
-  dropped, which would leave them unreachable (Derek, September 24, 2026:
-  the Ebola map).
+  dropped, which would leave them unreachable.
 - **Draft a multi-panel mechanism's `longdesc` first**, then the alt: the
   walk-through overshoots the 600-character cap. A static panel gets no
   before/after narrative, and a shared panel is not dropped.
@@ -435,9 +434,8 @@ How a book's source exercise sets map onto components is the book's table
 differ — Biology 2e and Anatomy and Physiology key every exercise,
 Microbiology keys some sets and not others. The component rules below are
 shared. A figure question is always a `mediafigure` followed by its item:
-a figure-bound choice component was built and reverted (August 31, 2026,
-the sticky figure hid the options), and another needs a design decision
-from Derek first.
+a figure-bound choice component was built and reverted (the sticky figure
+hid the options), and another needs a design decision from Derek first.
 
 **Multiple choice.** Options are the source's, in the source's order, each
 on its own line of the shortcode body; `answer` is the keyed option verbatim.
@@ -498,8 +496,7 @@ the model answer's own words in the model answer's own inflections:
 use, drops a short clause under the bar. Copy the clause rather than
 restating it; a checkpoint that compresses one answer sentence (a dropped
 connector, a joined clause) and adds no claim is acceptable, not a defect
-— there is no rubric sweep, and the 0.8 bar stays (Derek, September 21,
-2026). A checkpoint states something the learner's answer should contain;
+— there is no rubric sweep, and the 0.8 bar stays. A checkpoint states something the learner's answer should contain;
 a remark about the source ("the module does not say…") belongs in the
 model answer, never in `===CHECKS===`.
 
@@ -515,7 +512,7 @@ in the core (§3); the rules specific to a term-built item:
 - One to four words; the lint rejects longer answers — a definition is not a
   recall item. An `accept` member may run to seven words, so the full form of
   a correct answer is credited ("central dogma of molecular biology",
-  "major histocompatibility complex class I") *(September 23, 2026)*.
+  "major histocompatibility complex class I").
 - `accept` lists the spellings a correct learner might type, `|`-separated
   (`accept="a|b|c"` — a comma joins the items into one member the grader
   can never match, and the lint rejects it): an irregular plural or singular
@@ -529,8 +526,7 @@ in the core (§3); the rules specific to a term-built item:
   It also reads a term typed with its abbreviation or expansion in
   parentheses (`cyclic AMP (cAMP)`) as correct when each half grades correct
   on its own, so a combined `accept` member like `catabolite activator
-  protein (CAP)` is unnecessary once both halves are listed *(September 23,
-  2026)*. An accept member that normalizes to the answer (hyphen versus
+  protein (CAP)` is unnecessary once both halves are listed. An accept member that normalizes to the answer (hyphen versus
   space, a leading article, `400 X` versus `400 x`) is rejected by
   `verify-section` — list only spellings the grader would otherwise miss.
   There is no typo tolerance by design: `ribozyme` must not pass for
@@ -538,7 +534,7 @@ in the core (§3); the rules specific to a term-built item:
 - The answer must not appear in the question — the lint refuses the retype
   hazard — so a prompt for `cell theory` cannot say "the theory of cells".
   Rephrase the meaning or pick a different term. The same rule covers the
-  hint (the lint checks both since August 31, 2026): a hint that prints the
+  hint (the lint checks both): a hint that prints the
   answer or an accept member ("The section abbreviates this process BNF"
   beside `accept="BNF"`) hands the item to exactly the learner who opens
   it. The same care extends to the OTHER items' hints on the page: adding
@@ -550,7 +546,7 @@ in the core (§3); the rules specific to a term-built item:
   topic — never the key, a root or derivative of it, the fact the correct
   option asserts, or a fact the module never states; and nothing in the item
   directly above a `textin` — its stem, its options, or its hint — prints
-  its key. The lint catches the literal forms since September 22, 2026
+  its key. The lint catches the literal forms
   (`tools/lint/lints-leaks.mjs`); a hint that states the correct option's
   fact instead of pointing at it, or a fact the module never states, is a
   checker read against its own key and options. It is the largest defect
@@ -563,7 +559,7 @@ in the core (§3); the rules specific to a term-built item:
   saying the answer was "not the human-specific" abbreviation, so a correct
   `HLA` graded wrong). The author's test: cover the options, read the stem
   and hint alone, and if they answer the item, cut the hint to the
-  location. Two of these forms are lint errors since September 23, 2026
+  location. Two of these forms are lint errors
   (`tools/lint/lints-leaks.mjs`): a `selfcheck` hint that covers two or
   more of its own `===CHECKS===` clauses (phrase coverage ≥ 0.8), and a
   `textin` hint that says "not X" of the key or an accept member, or "not
@@ -575,18 +571,18 @@ in the core (§3); the rules specific to a term-built item:
   cloze, use that. When it does not, the item stays: the heading is true
   content the learner has just read, and the item still reinforces it. A
   source item stays as printed either way. **This is an authoring
-  preference, not a defect** *(September 23, 2026)*: checkers do not flag
+  preference, not a defect**: checkers do not flag
   it, no lint checks it, and existing hits stay as they are.
 - **Fix a leak without changing the item's type.** Reorder the group
   (recall items first), then reword the author item that prints the key,
   then reword the leaking `textin`'s own stem from its glossary sentence;
   never convert a `textin` to a multiple choice or drop it to escape a
   leak. The glossary and summary `textin`s are the part of the block
-  `verify-source-keys` confirms against the module *(Sep 22, 2026)*.
+  `verify-source-keys` confirms against the module.
 - A multiple-choice hint may not print the keyed option (normalized, plural
   and singular folded) unless it names a distractor the same way (a
   contrast) or the stem already prints the key; a count key is exempt. Lint
-  error since September 22, 2026. The same rule covers a hint that names a
+  error. The same rule covers a hint that names a
   subsection whose title is the key ("the Copper, Nickel, and Zinc
   discussion") — point at it by position instead.
 - Never a textin whose answer is a number, a formula, or a sentence: numbers
@@ -594,7 +590,7 @@ in the core (§3); the rules specific to a term-built item:
   number (`two`, `three`), and so is a measurement (`5.0 µm`). When a
   summary cloze's blank would fall on a count, blank a different phrase of
   the sentence, or make the count a `multiplechoice` whose options are
-  counts. Lint error since September 23, 2026: a `textin` answer that is
+  counts. Lint error: a `textin` answer that is
   digits, a number word, or a number with a unit (or holds a
   number-and-unit run, `every 10 years`).
 - **A `textin` key is printed in the module's BODY.** Grep the body — not
@@ -688,7 +684,7 @@ it and move on. Syntax and the interleave/giveaway rules are in the core
 playbook §3.
 
 **Both table orientations qualify, and every qualifying table gets its
-sortbins** *(Sep 6 2026)*. The categories may run along
+sortbins**. The categories may run along
 the columns (prokaryote | eukaryote) or down the rows (a "Vegetative
 Cells" row against an "Endospores" row; a stain-type column whose 2–4 rows
 are the categories and whose other columns are their attributes) —
@@ -704,7 +700,7 @@ way: enumerate its Markdown tables, skip the quantity/unit/step tables,
 and give each remaining one a sortbins under the objective it serves or in
 the self-check it already answers.
 
-Building the items *(Microbiology ch. 5–24)*:
+Building the items:
 
 - **Every item is true of exactly one bin against EVERY cell of the
   table**, not only its own column (ETEC's "watery diarrhea" is a
@@ -731,7 +727,7 @@ Building the items *(Microbiology ch. 5–24)*:
   the comparison table under the objective it serves is the practice form.
 
 **Unkeyed source questions: graded when the module fixes the answer**
-*(Sep 6 2026)*. Some books (Microbiology) print no key for whole question
+. Some books (Microbiology) print no key for whole question
 sets. Keep the question count where the source puts it and change the
 ANSWER FORM wherever a deterministic one is honest: an unkeyed source
 question becomes a graded item when ONE artifact of the same module fixes
@@ -784,8 +780,7 @@ Understanding item, graded or `selfcheck` — ONLY when the two stems are the
 same question in reworded form ("Name at least two factors that can
 compromise…" against "What are some factors that alter…"): the page then
 asks it once, in the body, and a second copy in Practice would be a
-duplicate ask (Derek, September 26, 2026; seven of the thirteen folds on
-the shelf are into self-checks). A shared topic is not a duplicate ("Why is the soil a
+duplicate ask. A shared topic is not a duplicate ("Why is the soil a
 reservoir for antimicrobial resistance genes?" and "Why do
 antimicrobial-producing microbes commonly also have resistance genes?" are
 different asks). Quote both stems in the ledger note when claiming the
@@ -794,8 +789,7 @@ without counting it. The same holds for wording and order: a source stem
 or option is transcribed verbatim, and every reorder that changes two
 source items' relative order is named in the footer.
 
-**Restoring a question its own module cannot answer** *(September 23,
-2026)*: it goes back as a `selfcheck` in source position. Its model answer
+**Restoring a question its own module cannot answer**: it goes back as a `selfcheck` in source position. Its model answer
 may draw on the section that teaches the point, with a cross-link and a
 sentence saying so (Microbiology 7.2's isomer and dextrose questions,
 answered from 7.1). A question the module DOES address keeps a model answer
@@ -815,7 +809,7 @@ sentence of the module and converts; "Explain how historical
 understandings of disease contributed to attempts to treat and contain
 disease" is five and does not.
 
-The rules the chapter runs sharpened *(Microbiology ch. 3–26)*:
+The rules the chapter runs sharpened:
 
 - **The one-sentence rule is literal.** Two sentences, a paragraph
   boundary, an inference, or a word the module never prints (grep for the
@@ -877,8 +871,9 @@ defect, reported with the sentence that is missing. A hint on a converted
 item follows the usual rules and must not print the key or the bin
 assignment.
 
-**What the first retrofit's checkers caught** *(Sep 6 2026)*, so the next
-run checks for them on purpose:
+### Defect classes the checkers find
+
+The next run checks for them on purpose:
 
 - **A pre-existing hint becomes a leak the moment a self-check turns
   graded.** A hint on an untouched Practice item that stated "the other
@@ -942,7 +937,7 @@ and the Practice block alike — is distinct under the practice-index signature
 multiple choices may, if their option sets differ), and no two clozes
 reconstruct to the same sentence with the blank moved. The lint reports the
 later item as an error (`distinctItems` in the book's `practice` profile,
-`BOOK_RULES`; every life-sciences book is opted in) *(September 4, 2026)*.
+`BOOK_RULES`; every life-sciences book is opted in).
 Life sciences only: the signature reads words and drops signs and
 operators, so a math stem's `2 + 4` and `-2 + (-4)` are one stem to it,
 and the math books are not opted in. A thin objective group reaches for a
@@ -1001,13 +996,11 @@ duplicate-stem lint catches an exact collision, not a reworded one).
   with the erratum number — never a shipped `defect`, which fails
   `verify:ledger`.
 - **Independent checker.** One per section, briefed by the book's kit
-  (`docs/briefs/<book>/checker.md`): re-read every Practice item against
+  (the live kit, `docs/briefs/anatomy-physiology/checker.md`, is the template for the next book): re-read every Practice item against
   the raw CNXML exercise and solution (not the page), every figure against
   its image, and every key-term item against the source definition; report
   defects to the parent, which owns the errata file and the ledger merge.
-  **It runs on Opus** *(September 22, 2026)*: Sonnet checkers passed pages
-  with 7–10 confirmed defects each; keys held everywhere, so the gap is the
-  leak, hint, accept, and figure reading, which is model-bound. Three
+  **Checkers run on Opus.** Three
   duties no gate performs: (1) answer every graded item with the key
   covered BEFORE comparing — a distractor the module also makes true is
   common on section pages and checks alike; (2) run the real grader on
@@ -1020,7 +1013,7 @@ duplicate-stem lint catches an exact collision, not a reworded one).
   not name is a defect — and counts every source exercise off by hand:
   `verify:source-coverage` refuses a drop but cannot tell an honest fold
   from a dishonest one.
-- **Prose claim pass** *(chapter 4 of Microbiology, September 6, 2026)*.
+- **Prose claim pass.**
   The key, transcription, and figure readings above prove the page says
   what the module says; none of them asks whether the module is right.
   This fourth reading is required, not optional:
@@ -1046,7 +1039,7 @@ duplicate-stem lint catches an exact collision, not a reworded one).
     same list. Distractors are claims too: a distractor that is true — by
     the module, the book, or a citation — is a double-keyed item (see the
     text-mode distractor rule); replace it, disclose it, log it. The
-    fill-in half *(September 23, 2026)*: when the module lets a second
+    fill-in half: when the module lets a second
     word fill a source Fill in the Blank or `textin` blank, add it as an
     `accept` member; an erratum only when the source's own solution is
     wrong.
@@ -1055,7 +1048,7 @@ duplicate-stem lint catches an exact collision, not a reworded one).
     pass status (Biology's record is its errata headings),
     date, and errata; update it when a chapter lands.
   - **Who.** One checker per chapter, briefed by the book's kit
-    (`docs/briefs/<book>/claim-pass.md`), after the section checkers and
+    (the live kit, `docs/briefs/anatomy-physiology/claim-pass.md`, is the template for the next book), after the section checkers and
     before the orchestrator's solve; it also reads the chapter landing
     page, which no other reader sees. Claim-pass checkers over-report by
     about half (textbook simplifications, priority disputes), so the
@@ -1117,11 +1110,7 @@ judging its alt and longdesc; the parent verifies every flag on the image
 or the module. The audit also runs `npm run source:check -- --bundle
 <bundle>`, which must report every chapter, section, and heading located,
 and a book-wide `npm run check:external-links`, every dead destination
-already un-linked and disclosed. No audit has found a wrong source key;
-the rest depends on
-the reader's model. Opus samples found 7–10 confirmed defects per page,
-two-thirds of them hints, where a Sonnet sample had found about 1 in 90
-items. Plan the sample on Opus and by the Opus rate.
+already un-linked and disclosed. Checkers run on Opus.
 
 **Image-first alt pass (required).** The sample is not the end of the
 figure work: after it, every `mediafigure` in the book gets one more
@@ -1138,17 +1127,13 @@ defects cluster. The kit is `docs/briefs/alt-pass/` (checker brief, run
 shape) with `tools/source/alt-pass-packets.py <book> <out-dir>` building
 the packets; the records are in `docs/history/biology.md` and
 `docs/history/microbiology.md` ("Figure-alt pass", "Practice sweep and
-long-description pass", "Alt-only figure pass"). Plan by their rate:
-after a Sonnet image-first pass, Opus still found about one alt-only
-figure in four wrong. A book whose section checkers already read every
+long-description pass", "Alt-only figure pass"). A book whose section checkers already read every
 figure on Opus by inventory (Anatomy and Physiology) still runs the pass.
 
-**Image-first is not enough for a `longdesc`: read it by inventory**
-*(September 22, 2026)*. After both passes, most `longdesc` figures were
-still wrong — arrows joined to the wrong box or pointing the wrong way,
-a panel row dropped, bracket endpoints off, a structure the art does not
-draw, printed labels left out. Image-first readers missed detail, not
-order. So a `longdesc` is written and checked against an inventory taken
+**Image-first is not enough for a `longdesc`: read it by inventory.**
+Image-first readers miss detail, not order: arrows joined to the wrong box
+or pointing the wrong way, a panel row dropped, bracket endpoints off, a
+structure the art does not draw, printed labels left out. So a `longdesc` is written and checked against an inventory taken
 from the image before any words are read: every panel and row, every
 printed label and number, every count, and every arrow as `source →
 target` with both ends zoomed (crop and upscale small print with PIL);
@@ -1158,9 +1143,7 @@ alt, `longdesc`, caption, or an adjacent table. The alt-pass kit runs this
 method on Opus, `longdesc` figures first.
 
 **Figure, alt, and `longdesc` reading and fixing run on Opus, never
-Sonnet** *(September 23, 2026)*: an Opus second read found most Sonnet
-"clean" verdicts wrong and most Sonnet fixes regressions, and Sonnet plus
-an Opus check cost more than Opus alone. Sonnet stays right for
+Sonnet.** Sonnet stays right for
 checklist-shaped text work (compiling lists, drafting errata from
 verdicts). Whatever model a task is first delegated to, the parent
 spot-checks one "clean" verdict against the image after its first unit.

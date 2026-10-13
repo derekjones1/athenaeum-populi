@@ -791,6 +791,36 @@ const writesNumeralProduct = (bare) => {
   return NUMERAL_PRODUCT.test(text) || NUMERAL_GROUP_PRODUCT.test(text) || PI_NUMERAL_PRODUCT.test(bare);
 };
 const writesExponentArithmetic = (bare) => EXPONENT_ARITHMETIC.test(bare);
+// An exponent of 1 written out (`z^1`, `3x^{1}`) is a power not yet dropped,
+// as `^0` is a factor not yet dropped; the engine folds it, so `z^1` passed
+// `no-like-terms`, `expanded`, `distributed` and `single-term` against `z`
+// (grader residuals, October 13, 2026). `^{12}`, `^{1/5}` and `^{-1}` are
+// other exponents.
+const UNIT_EXPONENT = /\^\s*(?:\{\s*1\s*\}|1(?![\d.]))/;
+const writesUnitExponent = (bare) => UNIT_EXPONENT.test(bare);
+/**
+ * A fraction both of whose halves open with a minus — `\frac{-1}{-1+\cos\theta}`
+ * for `\frac{1}{1-\cos\theta}`, `\frac{-x+1}{-x-2}` — writes a factor −1 over
+ * itself, the sign not yet cleared (grader residuals, October 13, 2026).
+ * Every `\frac` at any depth is read; a lone minus in one half
+ * (`\frac{-1}{\cos\theta-1}`, `\frac{-3}{x-2}`) is a sign written once.
+ */
+function writesSignedFractionHalves(bare) {
+  for (let i = 0; i < bare.length; i += 1) {
+    if (bare[i] !== '\\') continue;
+    const command = bare.slice(i).match(/^\\[tdc]?frac(?![a-zA-Z])/);
+    if (!command) {
+      i += bare.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1;
+      continue;
+    }
+    const numerator = readTexArgument(bare, i + command[0].length);
+    const denominator = numerator && readTexArgument(bare, numerator[1]);
+    if (!denominator) return false;
+    if ([numerator[0], denominator[0]].every((half) => /^\s*[-−]/.test(half))) return true;
+    i += command[0].length - 1;
+  }
+  return false;
+}
 /**
  * Two numeral coefficients written in one product term, with letters or a
  * dot between them: `5x\cdot13y` and `x\cdot5\cdot y\cdot13` (and the
@@ -1270,6 +1300,22 @@ function irreducibleLogArgument(argument) {
     }
   }
   return false;
+}
+
+/**
+ * A logarithm's argument with one leading minus taken off when what it
+ * negates is a single atom (`-x`, `-3`) or one parenthesized sum
+ * (`-(x-1)`, read as `x-1`) — the reflection `\log_2(-(x-1))` writes.
+ * Anything else comes back as written.
+ */
+function unnegatedLogArgument(argument) {
+  const arg = argument.replace(/\s+/g, '');
+  if (/^-(?:\d+(?:\.\d+)?|[a-zA-Z])$/.test(arg)) return arg.slice(1);
+  if (arg.startsWith('-(') && matchingParenIndex(arg, 1) === arg.length - 1) {
+    const inner = arg.slice(2, -1);
+    if (splitTopLevelTerms(inner).filter((term) => term.trim()).length > 1) return inner;
+  }
+  return argument;
 }
 
 /**
@@ -2915,8 +2961,12 @@ function exprToRationalTerms(expr, vars) {
  * the integers, whether every coefficient it wrote was an integer, and the
  * sign of its monomial part (`negative`: the constants, minus signs, and
  * one-term factors written outside the polynomial factors multiply to a
- * negative) — or null when some factor cannot be read as a
- * rational-coefficient polynomial.
+ * negative), whether it writes a numeral factor other than ±1 (`numeral`)
+ * or a bare variable factor (`monomial`: the `x` of `x(x+2)`),
+ * and whether some polynomial factor leads negative (`negativeLead`: every
+ * term of its highest total degree negative, `-x-2`, `1-2x`; `y-x` does
+ * not) — or null when some factor cannot be read as a rational-coefficient
+ * polynomial.
  */
 function factorProfile(latex) {
   let expr;
@@ -2929,7 +2979,9 @@ function factorProfile(latex) {
   const symbols = new Set();
   collectSymbols(expr, symbols);
   const vars = [...symbols].sort();
-  const profile = { count: 0, primitive: true, integral: true, negative: false };
+  const profile = {
+    count: 0, primitive: true, integral: true, negative: false, numeral: false, monomial: false, negativeLead: false,
+  };
   const flip = (multiplicity) => {
     if (multiplicity % 2 === 1) profile.negative = !profile.negative;
   };
@@ -2941,9 +2993,18 @@ function factorProfile(latex) {
       return false;
     }
   };
+  const unitConstant = (e) => {
+    try {
+      const value = e.isNumberLiteral ? e : e.N();
+      return value.im === 0 && Math.abs(value.re) === 1;
+    } catch {
+      return false;
+    }
+  };
   const walk = (e, multiplicity) => {
     if (isConstantExpr(e)) {
       if (negativeConstant(e)) flip(multiplicity);
+      if (!unitConstant(e)) profile.numeral = true;
       return true;
     }
     const ops = e.ops ?? [];
@@ -2964,6 +3025,7 @@ function factorProfile(latex) {
     }
     if (e.symbol) {
       profile.count += multiplicity;
+      profile.monomial = true;
       return true;
     }
     const terms = exprToRationalTerms(e, vars);
@@ -2981,10 +3043,38 @@ function factorProfile(latex) {
     const integerCoefficients = entries.every(([, [, d]]) => d === 1n);
     const commonVariable = vars.some((_, i) => entries.every(([exponents]) => exponents[i] > 0));
     if (!integerCoefficients || content !== 1n || commonVariable) profile.primitive = false;
+    const degreeOf = ([exponents]) => exponents.reduce((sum, power) => sum + power, 0);
+    const top = Math.max(...entries.map(degreeOf));
+    if (entries.filter((entry) => degreeOf(entry) === top).every(([, [n]]) => n < 0n)) profile.negativeLead = true;
     profile.count += multiplicity;
     return true;
   };
   return walk(expr, 1) ? profile : null;
+}
+
+/**
+ * Does a factor after the first carry a written sign — a parenthesized
+ * single term that opens with a minus (`(x+2)(-2)`, `2(-(x+2))`), or a minus
+ * straight after a written `\cdot`/`\times`? The parse moves every such sign
+ * to the front (`(x+2)(-2)` and `-2(x+2)` box alike), so it is read off the
+ * writing. A group that opens the response is the leading factor and may
+ * carry it; a group inside an exponent or a fraction is not a factor.
+ */
+function writesTrailingFactorSign(latex) {
+  const bare = withoutExponents(bareLatex(latex)).replace(/\s+/g, '');
+  if (/\\(?:cdot|times)-/.test(bare)) return true;
+  let braces = 0;
+  for (let i = 0; i < bare.length; i += 1) {
+    if (bare[i] === '{') braces += 1;
+    else if (bare[i] === '}') braces -= 1;
+    if (bare[i] !== '(' || braces > 0 || i === 0) continue;
+    const close = matchingParenIndex(bare, i);
+    if (close === -1) return false;
+    const inner = bare.slice(i + 1, close);
+    if (inner.startsWith('-') && splitTopLevelTerms(inner).filter((term) => term.trim()).length === 1) return true;
+    i = close;
+  }
+  return false;
 }
 
 /**
@@ -5414,6 +5504,7 @@ const FORM_PREDICATES = {
     // every trigonometric key graded `form` against itself (Precalculus
     // chapters 7–8 re-review, October 5, 2026).
     if (/[()]/.test(bareLatex(latex).replace(FUNCTION_ARGUMENT_GROUP, ''))) return false;
+    if (writesUnitExponent(bareLatex(latex))) return false;
     if (!termFractionsReduced(latex)) return false;
     let expr;
     try {
@@ -5470,6 +5561,10 @@ const FORM_PREDICATES = {
     // like terms (Intermediate Algebra 8.8, October 3, 2026).
     if (writesNumeralLikeTerms(bareLatex(latex))) return false;
     if (writesImaginaryPower(bareLatex(latex)) || writesImaginaryDenominator(bareLatex(latex))) return false;
+    // …and an exponent of 1 written out, and a fraction whose halves both
+    // carry a minus (writesUnitExponent, writesSignedFractionHalves; grader
+    // residuals, October 13, 2026).
+    if (writesUnitExponent(bareLatex(latex)) || writesSignedFractionHalves(bareLatex(latex))) return false;
     // …and a numeral exponent still to work out is a term not yet combined:
     // `e^{\frac{10}{2}}-1` and `e^{10-5}-1` passed against `e^{5}-1`, where
     // `single-term` already refused `e^{10-6}` alone (Precalculus 4.6,
@@ -5592,7 +5687,7 @@ const FORM_PREDICATES = {
     // `3\cdot5`, `(2)(3)` and `2^3` still fail below.
     if (PLAIN_NUMERAL.test(bare)) return true;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
-    if (writesImaginaryPower(bare)) return false;
+    if (writesImaginaryPower(bare) || writesUnitExponent(bare)) return false;
     const terms = loadBearingTerms(bare);
     if (terms.length > 1 && terms.some(writesFactorProduct)) return false;
     // A sign stacked on a parenthesized single term is the sign not yet
@@ -5641,8 +5736,9 @@ const FORM_PREDICATES = {
     if (PLAIN_NUMERAL.test(bare)) return !/^[-−]\s*0*\.?0*$/.test(bareLatex(latex));
     // A factor raised to the zero power is a written-out `1` the learner was
     // asked to remove ("Simplify: $7x^2y^0$" → `7x^2`); the engine folds it, so
-    // it too has to be caught on the LaTeX.
-    if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
+    // it too has to be caught on the LaTeX. So is an exponent of 1
+    // (writesUnitExponent).
+    if (/\^\s*\{?\s*0\s*\}?/.test(bare) || writesUnitExponent(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     if (writesUnreducedExponent(bare) || writesImaginaryPower(bare) || writesPerfectNumeralRoot(bare)) return false;
     // Two numeral coefficients in the one product (`5xy13` for `65xy`), and
@@ -5881,12 +5977,27 @@ const FORM_PREDICATES = {
   // Use it where the ask is "Factor" / "Factor completely" and the key is
   // complete; a GCF-only ask takes `gcf-factored`, composed with `factored`
   // when its key is not complete (see the ruling above).
+  //
+  // …and the sign is carried in front when a numeral can carry it. `2(-x-2)`,
+  // `(-x-2)\cdot2` and `(x+2)(-2)` graded `correct` against `-2(x+2)`: each
+  // factor is primitive up to a unit, and Gauss's lemma is blind to where
+  // the −1 sits (grader residuals, October 13, 2026). With a numeral factor
+  // other than ±1 or a bare variable factor written (`2(-x-2)`, `x(-x-2)`),
+  // and the key's own polynomial factors leading positive, no polynomial
+  // factor may lead negative (every term of its highest degree negative) and
+  // no factor after the first may carry a written sign
+  // (writesTrailingFactorSign). The rule is read against the key so a source
+  // key written `x(1-2x)` still grades itself; with no monomial to absorb it
+  // the sign stays free: `(1-2x)(x+3)`, `-(2-x)(x+3)`; and `-x(x+2)`,
+  // `-(x+2)\cdot2` write their sign in front.
   'factored-completely': (latex, answer) => {
     if (!FORM_PREDICATES.factored(latex)) return false;
     const key = answer ? factorProfile(answer) : null;
     if (key === null || !key.integral) return true;
     const response = factorProfile(latex);
-    return response !== null && response.primitive && response.count >= key.count;
+    if (response === null || !response.primitive || response.count < key.count) return false;
+    if (key.negativeLead) return true;
+    return !((response.numeral || response.monomial) && (response.negativeLead || writesTrailingFactorSign(latex)));
   },
   // "Factor the greatest common factor from $8a^3b+2a^2b^2-6ab^3$" answers
   // `2ab(4a^2+ab-3b^2)`, which is not complete, so it keeps `factored` — and
@@ -6359,7 +6470,14 @@ const FORM_PREDICATES = {
     const bare = bareLatex(latex);
     const writing = logWriting(bare);
     if (writing === null) return false;
-    for (const { argument, after, base } of writing.calls) {
+    for (const { argument: written, after, base } of writing.calls) {
+      // A negated argument is a reflection, and no log rule splits it: the
+      // key `\log_2(-(x-1))` graded `form` against itself, its leading sign
+      // read as a product left to break apart (grader residuals, October 13,
+      // 2026). The sign comes off one atom (`-x`) or one parenthesized sum
+      // (`-(x-1)`), which is then read as any argument is, so
+      // `-(x^2-1)` still fails on its factor; `-(x)` and `-2x` stay refused.
+      const argument = unnegatedLogArgument(written);
       if (!irreducibleLogArgument(argument) || /^\s*\^/.test(after)) return false;
       if (logEvaluatesRationally(base, argument.replace(/\s+/g, ''))) return false;
       if (reduciblePolynomialArgument(argument)) return false;
@@ -6960,6 +7078,13 @@ export function describeFormFeedback(studentRaw, spec, answerRaw) {
     }
   }
   if (tokens.length === 1 && tokens[0] === 'factored-completely' && checkFormAsGraded(studentRaw, 'factored')) {
+    // Complete but for where the sign sits (`2(-x-2)`, `(x+2)(-2)`): say that.
+    const response = factorProfile(studentRaw);
+    const key = answerRaw === undefined ? null : factorProfile(answerRaw);
+    if (response !== null && key !== null && response.primitive && response.count >= key.count
+      && response.numeral && (response.negativeLead || writesTrailingFactorSign(studentRaw))) {
+      return 'That value is right and it is factored — now write the negative sign in front, with the number, so each factor keeps a positive leading coefficient.';
+    }
     return 'That value is right and it is factored — now keep factoring: one of its factors can still be factored further.';
   }
   if (!tokens.every((token) => NUMBER_SHAPE_TOKENS.has(token) || DENOMINATOR_TOKEN.test(token))) return general;

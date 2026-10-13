@@ -27,5 +27,5 @@ close-out step (run-facts draft, landing pages, errata draft, pins) to a
 Sonnet agent as run.md prescribes — without being asked. That kit is also
 the template for the next life-sciences book.
 
-To re-review a finished book's chapter to the A&P standard, follow
-`docs/re-review/README.md` and tick the row in `docs/re-review/tracker.md`.
+To edit or re-review a finished book's page, follow `docs/re-review/README.md`
+and record the run in the subject's `docs/history/` file.

@@ -836,16 +836,6 @@ export function unworkedKey(answer) {
 }
 
 /**
- * Pages whose fill-ins have not yet had the answerForm sweep: the Precalculus
- * chapters whose row in docs/re-review/tracker.md is still open (Derek,
- * September 26, 2026: the sweep is done row by row, each form checked
- * against the grader; October 4, 2026: the rule below is an error for every
- * other page now). Each row deletes its entry when it closes; the last row
- * deletes the list.
- */
-export const VALUE_FORM_SWEEP_PENDING = Object.freeze([]);
-
-/**
  * Standalone values printed in a fillin question, for the trivial-answer
  * check. Grading is value-based, so a prompt whose target value appears in
  * the question is trivially satisfiable: typing 86 passes "Find the prime
@@ -2558,8 +2548,7 @@ export function lintHugo(src, filename = '', options = {}) {
     // and a rule that guessed which prompts are hazards from their wording
     // would miss the next word problem phrased like a rounding ask (Derek,
     // October 4, 2026).
-    const unworked = VALUE_FORM_SWEEP_PENDING.some((page) => filename.replace(/\\/g, '/').includes(page))
-      ? null : unworkedKey(params.answer || '');
+    const unworked = unworkedKey(params.answer || '');
     if (unworked !== null) {
       let verdict;
       try {

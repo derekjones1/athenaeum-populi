@@ -196,7 +196,7 @@ never corrections to our own earlier text.
 
 The practice sweep above ran chapters 1–17 and 18.1 at full scope (commit
 a145b91); the narrow-scope remainder — chapters 18.2–47 and all eight unit Knowledge Checks — was re-read at
-full scope one row per request from `docs/re-review/tracker.md`,
+full scope one row per request from `docs/history/re-review.md`,
 following `docs/re-review/README.md` with `brief-life-sciences.md` (and
 `brief-knowledge-check.md` for the checks). Opus fixers, one per two or
 three sections, fixed in place; a fresh Fable subagent blind-solved each
@@ -339,3 +339,22 @@ deliberately with the new numbers, never by rounding up in advance.
   objective and heading located, 0 unresolved review items — and a heading
   the audit cannot locate is the signal that a page renamed or dropped a
   source section.
+
+## Dated notes moved from the life-sciences playbook (October 13, 2026)
+
+The rule each note came from stays in `docs/subjects/life-sciences.md` or `docs/knowledge-check-playbook-life-sciences.md`, undated.
+
+- **Transparent figures get the plate.** 39 photo-kind figures with transparent pixels were found on September 26, 2026; panel letters and labels were black ink on transparency and vanished on the dark page.
+- **Source alt with wrong data.** Derek, September 24, 2026: the Ebola map. Its source alt got the data wrong; the totals went in the alt and the full values in a `longdesc`, never dropped.
+- **Figure-bound choice component.** Built and reverted on August 31, 2026, because the sticky figure hid the options.
+- **No rubric sweep.** Derek, September 21, 2026: the 0.8 bar stays and a checkpoint that compresses one answer sentence is acceptable.
+- **Fold into body self-check.** Derek, September 26, 2026: seven of the thirteen folds on the shelf were into self-checks.
+- **Sortbins item-building rules** were tagged Microbiology ch. 5–24; the **sharpened chapter rules** were tagged Microbiology ch. 3–26. Both lists are the rules themselves.
+- **Defect classes the checkers find.** The block was first written as "What the first retrofit's checkers caught" (September 6, 2026).
+- **Checkers run on Opus (September 22, 2026).** Sonnet checkers passed pages with 7–10 confirmed defects each; keys held everywhere, so the gap was the leak, hint, accept, and figure reading, which is model-bound.
+- **Completion-audit rates.** No audit found a wrong source key. Opus samples found 7–10 confirmed defects per page, two-thirds of them hints, where a Sonnet sample had found about 1 in 90 items. After a Sonnet image-first pass, Opus still found about one alt-only figure in four wrong.
+- **`longdesc` by inventory (September 22, 2026).** After both passes, most `longdesc` figures were still wrong: arrows joined to the wrong box or pointing the wrong way, a panel row dropped, bracket endpoints off, a structure the art does not draw, printed labels left out.
+- **Figure, alt, and `longdesc` work on Opus (September 23, 2026).** An Opus second read found most Sonnet "clean" verdicts wrong and most Sonnet fixes regressions, and Sonnet plus an Opus check cost more than Opus alone.
+- **Prose claim pass** began with chapter 4 of Microbiology on September 6, 2026.
+- **Knowledge-check playbook dates.** Microbiology's five blocks were decided September 15, 2026; the duplicate-stem lint began September 5, 2026; the reverse-recall re-open rule dates from September 22, 2026; the spelled-out-before-the-blank and above-item key lints from September 22, 2026; all 61 leak candidates on thirteen finished checks read as shared vocabulary (September 26, 2026); about 390 check records lost their provenance tie to a solve placeholder before September 26, 2026 and were restored with `npm run ledger:provenance`; "the carrier derived from riboflavin" keyed FAD, but Biology 7.4 derives FMN from vitamin B₂ too (September 23, 2026); the Opus checker rule dates from September 22, 2026.
+- **Tags removed from the life-sciences playbook, October 13, 2026.** The rules stay undated. September 23, 2026: the source-only correction and "reported as a source defect" bans, the accept-list notes (MHC class I; CAP), the title-prints-key preference, the lint errors for two hint forms and for a `textin` answer shape, and the restored-question `selfcheck` rule. September 22, 2026: the ASCII formula lint, the literal-form leak lint, the `verify-source-keys` confirmation, and the multiple-choice hint-prints-key lint error. August 31, 2026: the hint lint began checking both forms. September 6, 2026: the sortbins and unkeyed-question conversion rules from the first retrofit. September 4, 2026: `BOOK_RULES` opted every life-sciences book in. September 23, 2026: the fill-in half of the second-fact rule.

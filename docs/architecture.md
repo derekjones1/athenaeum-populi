@@ -33,9 +33,8 @@ the production architecture.
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
   browser by the `<ap-figure>` component (measured text metrics plus a
-  viewBox fit pass, so labels cannot clip); older pages still carry
-  prerendered SVG with its generating `data-spec`, and both forms are
-  lint-validated. Interactive practice uses the `fillin`, `multiplechoice`,
+  viewBox fit pass, so labels cannot clip); every figure is spec-first
+  or a `data-pictorial` hand SVG, and both forms are lint-validated. Interactive practice uses the `fillin`, `multiplechoice`,
   `graphplot`, `textin`, `selfcheck`, and `sortbins` shortcodes; graph-mode
   multiplechoice options are authored as the same spec JSON and render
   through `<ap-figure>`.
@@ -204,7 +203,7 @@ ceiling); and `npm run ci` composes them with the replay gate and the
 Playwright suites —
 the GitHub workflow runs exactly that script, so the pipeline is encoded
 once. What each gate contains is `package.json`'s `test`, `check:build`, and
-`ci` scripts, and AGENTS.md §Commands describes every command; this document
+`ci` scripts, and AGENTS.md §Commands and the playbooks together name every command; this document
 keeps only the two facts that are architectural:
 
 - The one gate that reads the pinned CNXML itself, `verify:source-keys`,

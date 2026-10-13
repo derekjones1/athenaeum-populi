@@ -1,20 +1,142 @@
-# Re-review tracker
+# Re-review campaign (September 22 – October 13, 2026)
 
-Procedure, standard, and the prompt to paste: [README.md](README.md). One row
-per request; tick it only when every step of the README's loop is done and
-committed. Fill `Fixed` with the defect count, `Errata` with the numbers
-logged (or `—`), `Commit` with the short hash, and Notes with the cost and
-anything the next row should know.
+The campaign brought every finished book (Biology 2e, Microbiology, Prealgebra 2e, Elementary Algebra 2e, Intermediate Algebra 2e, Precalculus 2e, their knowledge checks, and the math figure-conversion rows) to the standard set by Anatomy and Physiology 2e chapters 1–2. The operative procedure for any later edit is `docs/re-review/README.md`. Biology and Microbiology rows are in `docs/history/biology.md` and `docs/history/microbiology.md`.
 
-Status: `[ ]` pending · `[~]` in progress (note the section reached) · `[x]` done
+## Open at close
 
-## Reference: Anatomy and Physiology 2e
+Recorded on October 13, 2026, and worked the same day:
+
+- **Grader** (`assets/js/lib/math/check-answer.mjs`, closed): `2(-x-2)`,
+  `(-x-2)\cdot2` and `(x+2)(-2)` now grade `form` against `-2(x+2)` under
+  `factored-completely` (beside a numeral or a bare variable factor the sign
+  goes in front, read against the key: `x(-x-2)` is `form` against
+  `-x(x+2)` while a source key `x(1-2x)` grades itself); `expanded-logarithms` reads a
+  negated atom or parenthesized sum as a reflection, so `\log_2(-(x-1))`
+  passes itself; `no-like-terms` refuses a fraction with a minus opening both
+  halves (`\frac{-1}{-1+\cos\theta}`) and an exponent of 1 (`z^1`, also under
+  `expanded`, `distributed`, `single-term`). Precalculus 3.7's
+  `\frac{8+2t}{300+20t}` stays `single-fraction`: the ask is "find the
+  function", the source prints it unreduced, and `reduced-fraction` would
+  fail the key against itself. Precalculus 4.4's reflected-log key stays
+  formless (a write-the-equation ask, not a re-expression).
+- **Engine** (closed): graphed-object arrowheads are 10 × 7 (the 10 × 10 head's
+  53° apex lay flat on 10.4's 26.57° line and read as ▼); the axis heads,
+  the `figure` arrow marks and the number-line annotation heads took the
+  same 10 : 7 proportion the same day (Derek), so every arrow is one shape. A `|` in a label is drawn as a paren-height
+  bar (`drawLabelBars`); Helvetica's glyph read as `l`. The cone schematic's
+  dashing dropped the last hidden segment on an even count (not an endpoint
+  gap); `cone-schematic.mjs` ends every hidden run on a dash, takes
+  `rimSamples` / `traceSamples`, and the seven chapter-10 cone specs were
+  regenerated.
+- **Content** (closed): Precalculus 11.2 (one pair) and 11.3 (two pairs)
+  re-posed the "common difference / ratio of that same sequence" fill-ins
+  on keyed source exercises (15.8, 18.5, 21.2 → 2.7; −1, ½, −¼ → −½; 0.8,
+  4, 20 → 5), blind-solved 3/3. Prealgebra 11.4's landing-point item had
+  been re-keyed (8, 6) in 51546f3.
+
+## How the campaign was run
+
+### The README as it stood
+
+Bring every finished book to the standard Anatomy and Physiology 2e
+chapters 1–2 set *(September 22, 2026)*, one chapter per request, ticked
+off in [tracker.md](tracker.md). Biology 2e and Microbiology are done
+(September 24, 2026; their rows are in `docs/history/`), and the four math
+books' chapter and knowledge-check rows closed on October 12, 2026 with the
+Precalculus checks, and the seven figure conversion rows closed on October
+13, 2026 with the Intermediate Algebra rows. The bar is "ideal": a learner can genuinely learn the topic
+from the page. When every row of a book is `[x]`, add one line under the
+book's subject playbook heading: "Re-reviewed to the A&P standard,
+completed <date>."
+
+### Figure conversion rows (the README section)
+
+Decided October 7, 2026: the hand-written inline `<svg>` figures that the
+engine CAN draw — coordinate graphs (lines, parabolas, plotted points,
+shaded inequality regions, slope triangles) and plain geometry (triangles,
+rectangles, trapezoids, circles with radius and diameter, right-angle
+marks) — are converted to spec-first `apfigure` figures in their own
+tracker rows, run LAST, after the Precalculus rows and the two Precalculus
+checks (all seven rows closed October 13, 2026; `figures:status` reports
+every math page converted). The queue is the content itself:
+
+The number lines the `numberline` builder could express were converted by
+`tools/figures/convert-inline-numberlines.mjs` the same day; what that tool
+skipped (decimal tick ranges, annotation arrows, sign charts) is listed in
+its `--dry-run` output and stays in these rows.
+
+only when the CNXML image is the one that is wrong. Expect about 6–10k
+Opus tokens a figure, so about 1.2–1.8M for the whole backlog.
+
+### Figure conversion rows (procedure as run)
+
+**The row.** One tracker row per book chapter group, each page's figure
+count from `figures:status`. One Opus fixer per 15–25 figures (a page with
+18 parabolas is one agent), briefed with
+`docs/re-review/brief-figure-conversion-math.md` (written on the Prealgebra
+chapter 11 row, October 12, 2026; the parent renders every hand svg to
+`$SP/figconv/render/<unit>/` first, with `--svg-only`, so the fixer and
+the parent compare against the same pre-edit PNGs). Figure work never runs
+on Sonnet. The converted figures print numbered axes even where the hand
+drawing's grid was unnumbered — the engine convention wins, and the
+`ariaLabel` says so.
+
+**Per figure, the fixer:**
+
+1. Renders the page's hand SVGs to PNG:
+   `node tools/figures/render-page-figures.mjs <page> $SP/render/<stem> --svg-only`
+   and READS each `L<line>.png` beside its `aria-label`. The drawing is the
+   authority for what is plotted; the page's prose and exercise tell it which
+   equation the drawing is of — check the two agree, and report a drawing
+   that contradicts its page rather than "fixing" either silently.
+2. Recovers the spec from the SVG geometry: the axis range and tick spacing
+   give `xMin`/`xMax`/`yMin`/`yMax` and `unit`; every plotted object becomes
+   its analytic primitive (`lines` through the drawn points or by
+   slope/intercept, `quadratics` from the vertex and a second point,
+   `points`, `regions` for shading, `slopeTriangles`, `segments`,
+   `guides`; `figure` kind `polygons` with `edgeLabels`/`vertexLabels`/
+   `rightAngles`/`dashedEdges`, `circles` with `radius`/`diameter`). Never
+   `smoothCurves`, never a polygon faked from segments, never hand `texts`
+   for tick labels (`tickLabels` with `xTickStep`/`xTickFormat`; the lint
+   refuses a hand tick row). `ariaLabel` is the old `aria-label`, re-read
+   against the new render.
+3. Replaces the `<svg>…</svg>` — and its `<div class="ap-figure">` wrapper
+   when the wrapper holds only that svg — with the shortcode, one blank
+   line on each side:
+   ```
+   {{< apfigure kind="graph" >}}
+   {…}
+   {{< /apfigure >}}
+   ```
+4. Renders the spec (`node tools/figures/render-figure.mjs graph '<json>'`
+   prints SVG; to see it, paste the SVGs into a scratch `.md` and run
+   `render-page-figures.mjs` on that page, which is how the parent
+   eyeballed the legacy conversion gallery) and compares old PNG and new
+   PNG image-first: every point, intercept, curve, arrow end, shaded side,
+   and label text present and in the same place mathematically. Label
+   placement may differ; geometry may not.
+5. Gates the page: `node tools/figures/check-figure-overlaps.mjs <page>`
+   (clean, and the page's remaining inline count is what the row expects),
+   `npm run verify-section -- <page>`, `npm run lint`.
+
+**The parent:** reads every converted figure's spec against its old PNG
+(image-first, as in the figure passes — fixers have shipped the wrong
+parabola before), runs `figures:status` to confirm each page in the row is
+`converted`, runs `npm test`, and runs the browser suite
+(`tests/figures.spec.mjs`) once per row, since the spec-first figures
+render client-side. Keys and exercises are untouched by these rows, so the
+ledger, solve, and errata steps of the loop above do not apply; a drawing
+that contradicts its source page is logged in `docs/openstax-errata.md`
+
+## The tracker at close
+
+### Reference: Anatomy and Physiology 2e
 
 Chapters 1–2 are the standard (authored with the full kit and re-reviewed by
 Opus on September 22, 2026). New A&P chapters meet it by being authored with
 `docs/briefs/anatomy-physiology/run.md`, so they are not tracked here.
 
-## Prealgebra 2e
+### Prealgebra 2e
 
 `content/math/prealgebra` · 11 chapters, 60 section pages, 2 knowledge checks
 
@@ -42,7 +164,7 @@ domain lists) took a form then.
 | [x] | KC `knowledge-check-01-06` | — | 62 | — | 5c15279 | Run with KC 07-11 (September 27, 2026): new `brief-knowledge-check-math.md`; three Opus fixers here (118–156k each), one Opus second checker for both checks (143k), Fable solve 86k for both (122/122 agree). Keys all right; `answerForm` retype was the top class. 6.1's "1/3 to a percent" was keyed 33.333% under an invented rounding ask and duplicated a worked example; replaced by the CDC 2/5 item. Parent kept 4.6's 5 8/11 + 2 4/11 (the only regrouping item) although its stem prints 4.1's key below it (Biology precedent). Fraction and mixed-number percents now grade (c15ba80). |
 | [x] | KC `knowledge-check-07-11` | — | 92 | 1251 | 5c15279 | Three Opus fixers (142–215k each). 11.4's slope figure was invented (rise −12/run 6) and 11.3's item had no key; both now redraw Practice Test figures. Five keyed Review Exercises added for chapter 9 coverage; split pairs merged into lists. Footer and callout disclose Janice 9.32 (erratum 1190) and the cone in cm³ (1222). `single-power`/`single-fraction` gaps closed (c15ba80). Floors: min-verified −1, min-replayed −46 (named in the commit). Prealgebra 2e COMPLETE. |
 
-## Elementary Algebra 2e
+### Elementary Algebra 2e
 
 `content/math/elementary-algebra` · 10 chapters, 71 section pages, 2 knowledge checks
 
@@ -76,7 +198,7 @@ Factoring asks take `factored-completely` (chapter 7 and knowledge check
 | [x] | KC `knowledge-check-01-05` | — | 94 | 1416–1420 | a424eab | Four Opus fixers by chapter block (122–189k), one Opus second checker for both checks (141k). Retype was the top class; keys all right. Chapter 2's replacement x−2y=5 exposed a wrong source key ((5−x)/2; erratum 1416): keyed (x−5)/2 and disclosed in footer and callout. 4.2's "which pair is not on the line" re-asked the pairs above it and was removed; the 4.7 boundary-line asks take `solved:y` / the new `line-standard-form`. Footer and callout now say Review Exercises are used where a section's Practice Test is thin or repeats the section page. |
 | [x] | KC `knowledge-check-06-10` | — | 63 | 1421 | a424eab | Three Opus fixers (138–173k). All 11 remaining factoring asks now `factored-completely`, and the two GCF asks too (their keys are complete; `2(7y-21)` used to pass). Duplicates of section items replaced by keyed Review Exercises ((2q³)⁴(3q)², (−5)⁻³, √57 ≈ 7.55). 10.5's rendered-graph MC printed the vertex the fill-ins above ask for and became up/down. The fixer's `(6u)^{-3}` probe found the engine hang. Floor: min-verified −1 (√57 rounding ask). Elementary Algebra 2e COMPLETE. |
 
-## Intermediate Algebra 2e
+### Intermediate Algebra 2e
 
 `content/math/intermediate-algebra` · 12 chapters, 70 section pages, 2 knowledge checks
 
@@ -114,7 +236,7 @@ ask whose key is complete (Elementary Algebra chapter 7, September 27,
 | [x] | KC `knowledge-check-01-06` | — | ~75 | 1638–1640, 1646 | 462d000 | Run with KC 7–12 (October 4, 2026): three Opus fixers by chapter pair (169–191k, ~550k), one Opus second checker for both checks' 28 replaced or parent-changed items (182k, 0 defects), one Opus errata compiler-verifier (104k, 9 drafts → 8 entries), Fable solvers (~140k for both): 55/55 after one adjudication. Keys all right but one: the blind solve answered Sara's costume budget 55.55 where the source keys "at most \$55.56" (18 × 55.56 is over the \$1,000 budget; erratum 1646): re-keyed, asked "without going over", disclosed in callout and footer, and a round-down rule in math.md. Retype was the top class (every fill-in now declares a form; the seven `factored` asks are `factored-completely`). Six items repeated a section-page item and are keyed Review Exercises (2.6, 2.7, 4.5 — now the augmented matrix's first row — 4.6 ×2, 6.3). 3.2's graphplot answer display printed 3.3's key; 3.5's domain MC offered the range key directly above the range MC (parent). Smaller/larger solution pairs (2.7, 6.5) are one unordered item. Two items are now hash twins of Elementary Algebra knowledge check 6–10 (9s²−12s+4, 3x²−75y²). |
 | [x] | KC `knowledge-check-07-12` | — | ~95 | 1641–1645 | 462d000 | Five Opus fixers, one per chapter but 7–8 together (157–217k, ~940k); 64/64 agree on the first pass. No wrong keys. Retype and duplicates top: 7.2 ×2, 8.7's domain/graph/range set, 11.1's circle pair, 12.2, 12.4 ×2 replaced by keyed Review Exercises; 12.3's MC sat directly above "find the common ratio" of the same sequence. 9.6's "which graph" MC labelled its options with the vertex and maximum the fill-ins above ask: now a graphplot (the source asks to graph it). 11.3's two ellipse MCs drew the correct ellipse a few pixels wide on a ±50/±90 window forced by a forgot-the-square-root distractor; redrawn on ±10 with distractors that fit (parent, rendered). 9.1–9.4's four smaller/larger pairs and 11.5's elimination pair are one unordered item each; shared "For the next N questions" lead-ins are folded into every stem (both checks). Footer discloses the "watts per square meter" correction (erratum 1600). Three fixers rewrote the whole file with Python splices while others edited (nothing lost; the addendum now says Edit tool only). Floors: min-exercises −9 (seven merged pairs across both checks, two cross-book hash twins), min-replayed −56 (KC 1–6 −33, KC 7–12 −23: the new forms reject printed spans). Intermediate Algebra 2e COMPLETE. |
 
-## Precalculus 2e
+### Precalculus 2e
 
 `content/math/precalculus` · 12 chapters, 73 section pages, 2 knowledge checks
 
@@ -148,7 +270,7 @@ here on September 27: chapter 1 (2 items) and chapter 3 (1).
 | [x] | KC `knowledge-check-01-06` | — | ~67 | 1792–1795 | 2a3fa1c | Run with KC 7–12 (October 12, 2026): four Opus fixers by chapter block (165–191k, ~0.70M), one Opus second checker for both checks' 17 replaced or converted items (145k, 0 defects), one Opus figure checker for both (132k), one Opus errata compiler-verifier for both (134k, 14/14 confirmed → 1792–1805; the parent added 1806), one standing Opus grader + lint agent for both (196k, G1–G9 + the `\sqrt17` lint), one Fable solver for both (101k): 56/56 agree plus 10 flags adjudicated for the key. No wrong keys here. Retype top (every fill-in now has a form; 25 lint exposures cleared; `VALUE_FORM_SWEEP_PENDING` is now empty and its test fixture asserts the check fires), then leaks: 1.3's increasing/decreasing MC pair offered each other's keys and 1.2's domain and 1.6's absolute-value MCs existed only for the old grader → four fill-ins; 3.4's multiplicity stem printed a member of the zeros key above (→ Chapter Test fs-id1165135453256); 1.5's two even/odd items repeated the section Practice (→ Practice Test items); 5.2's sin π/3 repeated the section Try It and 5.3's tan π/4 stem printed 5.2's reference-angle key (→ sin 5π/4, tan(−t)); 4.8 gained its only other keyed exercise (fs-id1761662) after the table MC moved to 4.7. Figures: the 1.3 parabola refit to the source image (a = 7/8, y-intercept 1.5). Neither check carried a `<small>` provenance footer: both now do (addendum rule). Floors: min-verified −2 (the 5.2/5.3 swaps), min-replayed −82 (retyped spans form-rejected). |
 | [x] | KC `knowledge-check-07-12` | — | ~97 | 1796–1806 | 2a3fa1c | Six Opus fixers, one per chapter (177–224k, ~1.17M). One wrong key: 9.3's four-point intersection list wrote `\sqrt17`, which the grader read as √1·7 (braced, `simplified-radical`; new lint error for an unbraced two-digit radicand, digit-then-letter stays legal). Retype top (32 lint exposures cleared; partial fractions `expanded no-like-terms`, dependent tuple `no-like-terms`, conic keys per the chapter 10 row, binomial term `single-term`), then leaks: 10.3's focus item was the next item's parabola shifted with its key in the stem (→ fs-id2613227); 11.2/11.3's "common difference/ratio of that same sequence" fill-ins assumed the yes/no MC above (re-posed in source wording, fs-id1663060/1646955/1639009; the 11.2 and 11.3 section pages use the same pattern — not in scope, flagged); 12.2's DNE distractor was the fill-in key directly above; 8.1's repeated section MC and 8.4's r=3−3cosθ graph (same equation as the 8.4 page) swapped for Practice Test items; 7.4's sum-to-product MC → fill-in under `trig-product`; 9.7's inverse MC offered matrices for a yes/no ask. 7.3's half-angle stem dropped the leg the source leaves unknown; 10.4's rotated equation restored to the source's `x'^2+3y'^2-12=0`; 8.7's ellipse keyed from the Answer Key's graph (disclosed). Grader: `single-logarithm`/`single-term` refuse written numeral products and powered groups, `no-like-terms` reads same-denominator fractions as like terms, list keys report units, `simplified-radical` takes `\sqrt{2(2+\sqrt2)}`, Greek coordinate labels and `\mathbf{i}`/`\mathbf{j}` read; polar form stays a documented limit (math.md table). Errata 1805: the chapter 12 Practice Test solutions 9–28 are each shifted one exercise, in the print PDF too. Precalculus 2e COMPLETE; next: the figure conversion rows. |
 
-## Figure conversion (after every row above)
+### Figure conversion rows (tracker table)
 
 Hand-written inline SVG graphs and geometry become spec-first figures, one
 row per group, following "Figure conversion rows" in [README.md](README.md).
@@ -169,7 +291,7 @@ and braces, sign charts, posed-question points) are in these counts.
 | [x] | Intermediate Algebra ch1–7 | 1.2 (3), 1.4 (3), 2.3 (4), 2.7 (1), 3.4 (1), 4.2 (2), 4.3 (1), 6.5 (2), 7.6 (1) — 18 | 18 | — | c0a05c8 (sign chart + builder ad02154) | October 13, 2026 (run with the Intermediate Algebra ch9–10 row, four Opus fixers in one wave, ~526k in all): 1.2/1.4/2.7/3.4 (~105k, eight number lines), 2.3/4.2/4.3/6.5 (~95k, eight geometry figures + the 4.3 break-even graph); the parent read every old-vs-new render pair. Geometry identical on 17: `kind="figure"` polygons with edge labels, a dashed height with its own `rightAngles` mark, "Perimeter = 360 feet" as `texts`, the 4.2 angle letters as `texts` inside the triangle; 4.3's unequal window (x 0..100, y 0..15,000) at `xUnit` 3 / `yUnit` 0.02 with per-axis tick steps, slope/intercept lines, a guided labelled point and `texts` captions. The number lines: 1.2's braces became `arc` annotations and "Negative/Positive numbers" `text` captions with a "Zero" `pointer` (the bracket strokes are not drawn); 1.4's fraction labels print flat with nudges + leaders, the hundredths line at width 528, and the page's older 0..1 spec widened to 528 to match; 2.7's "2/5" prints as a caption under the digit row; 3.4's two arrows run 2.9→0 and 3.1→5 at width 528 (the old divider stroke above 3 is not drawn). Parent decisions: 1.4's labels on on-tick points (−5, 3, −3, 4) are dropped per the house rule (the tick digits show them); 1.2's −5..5 line keeps ticks only at −5, 0, 5 (`step` 5) as drawn. The 7.6 sign chart was the row's primitive gap: `buildNumberLine` gained `rows` (stacked sign rows with a label left of the chevron, reading order) and `dividers` (dashed verticals at the partition numbers that skip the line band and the digits); test, lint (numeric row signs count as hand ticks), math.md and the brief updated; `render-page-figures` now scales a spec wider than the column instead of clipping it. No fill-in re-hashed (carry plan 0/0). Gates: `npm test` green, browser figure suite green. |
 | [x] | Intermediate Algebra ch9–10 | 9.6 (18), 9.7 (14), 10.1 (1) — 33 | 33 | — | c0a05c8 | October 13, 2026 (run with the Intermediate Algebra ch1–7 row): one Opus fixer for 9.6 (~146k) and one for 9.7 + 10.1 (~180k); the parent checked vertex, axis of symmetry, y-intercept, marked points and captions against the old PNG and the page's equation on all 33 — all agree. Every parabola is `quadratics` from its equation, one entry per family member (9.7 draws up to four shifted or stretched curves on one spec); dashed axes of symmetry are `lines` `{"x":c,"dashed":true,"arrows":false}`; captions inside the old svgs are `texts` above the grid (U+2011 in "x‑intercept"). Parent decisions: 9.6's ±10 windows at unit 14 numbered every 2, its ±6 and uneven windows at the default unit every 1; the five generic sketches (three discriminant panels, minimum/maximum) stay gridless and unnumbered as on EA 10.5; 9.7 keeps the page's unit 24 except the −2..20 window at 20 (height), and labels on L182/L1028/L619 are pinned below the digit row or outside the outer curve where the engine put them on ink; 10.1 at unit 34 to match its sibling mirror spec, and the y = x line gains the engine's arrows. Engine digit relocations (9.6 A632 "2"/"4", knocked-out −4/2 on A841, 9.7 A54 "1") accepted as drawn. No fill-in re-hashed (carry plan 0/0). Gates: `npm test` green, browser figure suite green. |
 
-## Completed
+### Completed (the tracker's closing note)
 
 Biology 2e (47 chapters, 8 unit checks) and Microbiology (26 chapters, 5
 block checks) were re-reviewed to this standard September 22–24, 2026, and
@@ -178,3 +300,161 @@ September 24–26, 2026. Their rows — fixes, errata, commits, costs, and
 each row's notes — are in `docs/history/biology.md` and
 `docs/history/microbiology.md` ("Re-review to the A&P standard" and
 "Alt-only figure pass"); the lessons are in the playbooks and the README.
+
+## Figure conversion brief (retired October 13, 2026)
+
+### Figure conversion brief — math
+
+Converts a page's hand-written inline `<svg>` graphs and geometry to
+spec-first `apfigure` figures. Run on Opus, one fixer per 15–25 figures,
+for the "Figure conversion" rows of `docs/re-review/tracker.md`; the
+parent's recipe is "Figure conversion rows" in `docs/re-review/README.md`.
+Written for the Prealgebra chapter 11 row (October 12, 2026). The parent
+fills `SP` (its scratchpad) and the page list.
+
+You convert figures only. Working rules:
+
+1. **No git commands at all**, not even read-only (the tree holds other
+   agents' uncommitted work).
+2. Edit ONLY the hand-written `<svg>` blocks on your pages (and the bare
+   `<div class="ap-figure">` wrapper when it holds nothing but that svg) —
+   never a question, key, hint, option, prose line, or an existing
+   `apfigure`. An `<svg` carrying `data-pictorial` is kept as drawn; an
+   `<svg` carrying `data-spec` is not yours (the converter tool handles
+   those). A finding outside your scope (prose that contradicts its
+   figure, a hand figure that duplicates a spec-first figure already on
+   the page, a shape the engine has no primitive for) goes under "needs
+   parent" in your report, with the line numbers.
+3. Re-read a region right before editing it; after your last edit re-read
+   the page's figure blocks once more.
+4. Do not run `ledger:*`, `baseline:update`, `npm run build`, `npm test`,
+   Playwright, or `git`; do not spawn sub-agents. `npm run lint` and the
+   two per-page gates below are yours.
+
+Read first: the "Static figures" block in `docs/authoring-playbook.md`
+(the shortcode and `ariaLabel` rule) and "Static figures: graph-core
+rules" in `docs/subjects/math.md` (placement, ticks, what can carry a
+label, superscripts, blank lines). The builders are in
+`assets/js/lib/math/graph-core.mjs` (`buildGraph` for `kind="graph"`,
+`buildFigure` for `kind="figure"`, `buildNumberLine` for
+`kind="numberline"`); the header comment of each lists its keys.
+
+### Per figure
+
+1. **Read the drawing.** The parent rendered every hand svg of your pages
+   to `SP/figconv/render/<unit>/L<line>.png`. Read the PNG at full size
+   beside the svg's `aria-label` and the prose, example, or exercise
+   around it. The drawing is the authority for what is plotted; the page
+   tells you which equation it is a drawing of. Check the two agree. A
+   drawing that contradicts its page is reported, never silently "fixed"
+   either way.
+2. **Recover the spec from the geometry.** Count grid cells for the window
+   (`xMin`/`xMax`/`yMin`/`yMax`) and read the svg's own coordinates for
+   anything the label does not state. Every plotted object becomes its
+   analytic primitive:
+   - a line: `{"slope":m,"intercept":b}`, `{"through":[[x1,y1],[x2,y2]]}`,
+     or `{"x":c}` for a vertical line; the engine draws the arrows;
+   - plotted points: `points` with `at` and the printed `label`
+     (`open: true` for a hollow dot); `labelSide` only where the drawing's
+     side carries meaning;
+   - a rise/run sketch: `slopeTriangles` with `from`, `to`, `order`
+     (`vh` = vertical leg first, the default; `hv` = horizontal first),
+     `riseLabel`, `runLabel`; the legs draw dashed;
+   - dashed drop lines to the axes: `guides: [[x,y]]`;
+   - a shaded side: `regions`; a plain segment: `segments` with `from`,
+     `to`, optional `dashed`, `arrows` (`true`, `'start'`, `'end'`),
+     `label`;
+   - free text (a quadrant name, an equation beside its line): `texts`
+     with `at` (graph units), `text`, optional `anchor`;
+   - geometry on no grid (`kind="figure"`): `polygons` with `points`,
+     `edgeLabels`, `vertexLabels`, `rightAngles`, `dashedEdges`;
+     `circles` with `radius` / `diameter`.
+   - a number line (`kind="numberline"`): `min`/`max`/`step`/`labelEvery`
+     from the ticks; `width: 528` whenever the drawing is that wide or the
+     labels are tenths or finer (eleven labels collide at the default 264);
+     `labelDecimals` when the drawing prints fewer decimals than the step
+     carries; a point's `labelNudge` + `leader` where two labels collide;
+     `annotations` for arrows, arcs, pointers, and captions above or below
+     the line, positioned by value. A source's red/blue pair becomes an
+     above/below pair. Never `title` for an end caption. A sign chart is
+     `rows` (one `{label, signs:[{at,text}]}` per factor row, reading
+     order, `side:"below"` for the quotient row) plus `dividers` at the
+     partition numbers and `intervals` for the shaded solution.
+   Never `smoothCurves`, never a polygon faked from `segments`, never
+   hand `texts` or `segments` for tick marks or tick digits (the lint
+   refuses them, and three numeric `text` annotations on their values). Exponents are superscript characters (`x²`), never TeX.
+   Minus signs in labels are `−` (U+2212) as the drawing prints them.
+3. **Ticks.** The hand drawings in these rows mostly print an unnumbered
+   grid. The engine convention on every converted page is numbered axes:
+   use `"tickLabels":true` with the `tickStep` the page's existing
+   `apfigure` specs use (1 on a ±6 or ±7 window, 2 on ±8 or ±10), and say
+   "numbered every N units" in the `ariaLabel`. This is the one place the
+   new figure may print more than the old one.
+4. **Write the label.** `ariaLabel` is the old `aria-label`, re-read
+   against the new render: every point, line, arrow, leg, and text it
+   names must be in the new figure, and nothing it names may be missing.
+   It never states a key an item below the figure asks for.
+5. **Replace the markup.** The `<svg>…</svg>` — and its
+   `<div class="ap-figure">` wrapper when the wrapper holds only that svg
+   — becomes, with one blank line on each side:
+   ```
+   {{< apfigure kind="graph" >}}
+   {"ariaLabel":"…","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":1,"lines":[…],"points":[…]}
+   {{< /apfigure >}}
+   ```
+   Keep the spec on ONE line. Keep `unit` only when a sibling spec on the
+   page sets it, matching that value, so the page's figures stay one size
+   (if that unit makes 1-unit tick digits collide at the origin, use the
+   default and say so in the report).
+   A hand svg inside a `<div style="display: flex …">` panel row stays in
+   that wrapper: the shortcodes become its direct children, each with a
+   blank line on both sides. The spec-first panels are wider than the
+   hand ones, so give the wrapper `max-width: 30rem; margin: 0 auto` and
+   four panels wrap two by two instead of three and one (Prealgebra
+   11.3). The parent screenshots the built page to confirm.
+6. **Compare old and new, image-first.** Render your converted page:
+   `node tools/figures/render-page-figures.mjs <page> SP/figconv/after/<unit> --svg-only`
+   writes each spec as `A<line>.png` (the line is the `{{< apfigure` line
+   now). Read the new PNG beside the old `L<line>.png` and check every
+   point, intercept, arrow end, leg, shaded side, and label text is
+   present and in the same place mathematically. Label placement may
+   differ; geometry may not. A label the engine puts on ink or off the
+   grid is moved with `labelSide`, `labelNudge`, or a `texts` entry, never
+   by changing the mathematics.
+
+### Per page, when its figures are done
+
+- `node tools/figures/check-figure-overlaps.mjs <page>` — clean, and the
+  page's inline count is only its `data-pictorial` figures.
+- `npm run verify-section -- <page>` and `npm run lint` — clean.
+- `grep -c '<svg' <page>` equals the page's pictorial count.
+
+### Report (ten lines)
+
+Pages and figure counts converted; each `needs parent` item with its line
+and the reason (duplicate of a spec-first figure, a shape with no
+primitive, prose that contradicts its drawing); any geometry you could not
+reproduce exactly and what you did instead; the gate results. Append the
+report to `SP/figconv/reports/<unit>.md` as you go, not only at the end.
+
+## Alt-only figure pass
+
+**Revised September 22, 2026: inventory, Opus, `longdesc` first.** Earlier
+image-first passes missed detail — an arrow's far end, a panel row, a
+bracket endpoint, a printed label — because the checker described the
+image in a few lines and never traced an edge; a later read of every
+`longdesc` figure found most of them wrong (errata 898–982). The checker
+brief therefore requires a full inventory (every label, every count, every
+arrow as `source → target` with both ends zoomed) before the words are
+read, and a claim-by-claim check against it.
+
+**Opus only, never Sonnet** *(September 23, 2026)*: about 70% of Sonnet
+fixers' "clean" verdicts were wrong and most of their fixes regressed;
+Sonnet plus an Opus check cost more than Opus alone. Whatever model runs
+the first unit of a new task, the parent opens the image for one of its
+"clean" verdicts before launching the rest.
+
+   figures (`--longdesc without`). Alt-only is not low-risk: after a
+   Sonnet image-first pass, Opus still fixed 282 of 1,027 alt-only figures
+   in Biology 2e and Microbiology (September 24–26, 2026), photographs as
+   often as diagrams — body sites, counts, colours, and scale claims.

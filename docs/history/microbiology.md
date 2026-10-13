@@ -1589,7 +1589,7 @@ Biology ran the same sweep in the same session
 
 The practice sweep above ran chapters 1–13 and 14.1–14.4 at full scope (commit
 a145b91); the narrow-scope remainder — chapters 14.5–26 and all five block Knowledge Checks — was re-read at
-full scope one row per request from `docs/re-review/tracker.md`,
+full scope one row per request from `docs/history/re-review.md`,
 following `docs/re-review/README.md` with `brief-life-sciences.md` (and
 `brief-knowledge-check.md` for the checks). Opus fixers, one per two or
 three sections, fixed in place; a fresh Fable subagent blind-solved each
@@ -1674,3 +1674,130 @@ Decided by Derek (September 24, 2026), applied: the `microbiology/06-acellular-p
 | [x] | Microbiology | 7.3–14.1 (packets 06–08) | 105 | 32 | 1060–1065 | 2af7809 | 32 of 105 flagged (12/6/14), all confirmed on the image; artwork errata: beta-carotene's missing central C=C (1060), API 20E strip captioned 20NE (1061), UV figure G–G/C–C pairs (1064); source-alt errata: dGTP "labeled triphosphate" (1062), electroporation charge signs (1063), triclosan oxygens (1065); pasteurization organisms now in a longdesc; five items re-hashed (4 blind re-solved, 1 selfcheck parent re-read); run Sep 26, 2026, about 470k checker tokens |
 | [x] | Microbiology | 14.1–21.3 (packets 09–11) | 105 | 24 | 1066–1069 | aaf9e15 | 24 of 105 flagged (11/5/8), all confirmed on the image; two body sites softened where the image cannot settle them (boil lesions, necrotizing fasciitis leg) and one scale claim to "less than 1 µm"; source-alt errata: lab-on-a-chip called a computer chip (1066), sterol double bonds (1067), P. falciparum shape and sickled smear (1068), Snow's map bars called dots (1069); no graded item re-hashed; run Sep 26, 2026, about 445k checker tokens |
 | [x] | Microbiology | 21.3–26 (packets 12–15) | 123 | 41 | 1072, 1075–1077, 1086–1087; 769 withdrawn | 453891d | 41 of 123 flagged (14/12/10/5), all confirmed on the image; Microbiology alt-only pass COMPLETE. Erratum 769 withdrawn: nothing in the HIV micrograph says which cell is the lymphocyte, and the caption's "top right" is the blue cell. Other source-alt errata: *Vibrio* "1 micrometer" (2.5 µm), dermatophyte colony "fuzzy" (1075; 696's aside amended), artwork "submucusa", pneumococcal "clearing", plague "chipmunks" (the figure also gained a longdesc), Burkitt aspirate called a "blood smear". No graded item re-hashed. Run Sep 26, 2026, about 585k checker tokens |
+
+## Dated notes moved from the playbook (October 13, 2026)
+
+Cut verbatim from `docs/subjects/microbiology.md`; the rules they illustrate stay there or in `docs/subjects/life-sciences.md`.
+
+**Which unkeyed questions are graded anyway** *(Sep 6 2026; replaces the
+pilot's "never key a question the source does not key")*. The
+life-sciences "Unkeyed source questions: graded when the module fixes the
+answer" rule applies: an unkeyed Short Answer, Critical Thinking, or Check
+Your Understanding question becomes a `multiplechoice`, `textin`, or
+`sortbins` when ONE sentence, table, or lettered figure of the module
+fixes its whole answer, and stays a `selfcheck` when the answer is a
+paragraph, a speculation, a long list, or an inference. Its checker applies
+the life-sciences "What the first retrofit's checkers caught" list. Example
+of "the question offers its own alternatives": §2.1's lettered Critical
+Thinking item ("which of the following has the lowest energy?") is a
+`multiplechoice` over its four printed alternatives, keyed by the module's
+energy–wavelength sentence. Nothing upstream fixes an accept list, so a
+converted `textin` is used only for a defined term or a name the sentence
+prints verbatim; anything else that converts is a `multiplechoice` or a
+`sortbins`, whose options and bins the module prints.
+
+Two life-sciences rules came from this book's chapter 3: a source
+question may use a word the module never uses (§3.1's Pasteur "control
+group", the intact swan-neck flask), and a "select all that apply" item
+becomes a `sortbins` (§3.3's adherence item, keyed C, D).
+
+- **An item whose options differ only in typography is not gradable**
+  *(pilot)*: §1.2's binomial-nomenclature item (`Homo Sapiens`, *homo
+  sapiens*, *Homo sapiens*, *Homo Sapiens*) is the case the life-sciences
+  Multiple choice rule was written from.
+
+----
+— an **absolute site-root Markdown link**, never a Hugo `relref` (`check:build` validates routes), plain text when the target page does not exist.
+
+Biology's media section applies verbatim, with `--book microbiology`:
+
+```sh
+npm run source:media -- --book microbiology --chapter 1 --dry-run
+npm run source:media -- --book microbiology --chapter 1
+```
+
+- **Almost every source file is a JPEG**, diagrams included, so the
+  manifest's `kind` guess ("JPEG = photo") is wrong for every drawn figure.
+  Set `kind` explicitly on **every** `mediafigure` after looking at the
+  image; a missing `kind` is a checker defect.
+
+----
+Everything in the life-sciences Verification section applies, and the
+general rules this book's chapter runs learned — page-wide leaks, the
+conversion rules, `sortbins` construction, `accept` lists, cloze shapes,
+figure and notation rules — now live in `docs/subjects/life-sciences.md`,
+where every later book reads them. What stays here is this book's own; the
+narrative behind each rule is in `docs/history/microbiology.md`
+("Verification lessons by chapter").
+
+
+----
+## How a chapter is run
+
+The book is complete; nothing here is run again. Its chapter kit was
+retired on September 26, 2026 (the runs are in
+`docs/history/microbiology.md`; the files are in git history), and
+`docs/briefs/anatomy-physiology/` — the same process with Anatomy and
+Physiology's content rules — is the one maintained. An edit to a finished
+page follows `docs/re-review/README.md`.
+
+```
+content/life-health-sciences/microbiology/_index.md                  book cover
+content/life-health-sciences/microbiology/NN-<chapter-slug>/_index.md chapter landing (intro module)
+content/life-health-sciences/microbiology/NN-<chapter-slug>/NN-<section-slug>.md
+static/media/microbiology/<stem>-<width>.webp                        vendored figures
+data/media/microbiology.json                                         media manifest
+```
+
+## Prose claim pass rows
+
+The Microbiology rows of `docs/source/claim-pass-ledger.md`, moved October 13, 2026.
+
+| Book | Chapter | Sections | Status | Errata |
+|---|---|---|---|---|
+| Microbiology | 01-an-invisible-world | 3 | done Sep 6 2026 | 377–378; Koch kept |
+| Microbiology | 02-how-we-see-the-invisible-world | 4 | done Sep 6 2026 | 374 |
+| Microbiology | 03-the-cell | 4 | done Sep 6 2026 | 379–381; pentaglycine kept |
+| Microbiology | 04-prokaryotic-diversity | 6 | done Sep 6 2026 (author's own pass + review) | 367–368, 373 |
+| Microbiology | 05-the-eukaryotes-of-microbiology | 5 | done Sep 7 2026 (in the authoring run) | 467–468, 470–471; Volvox and the supergroup scheme kept |
+| Microbiology | 06-acellular-pathogens | 4 | done Sep 7 2026 (in the authoring run) | 483, 487–488; ICTV year and the Duncan contact counts kept |
+| Microbiology | 07-microbial-biochemistry | 5 | done Sep 7 2026 (in the authoring run) | none; polypeptide "up to ~50" vs Glossary "20 to 50" and the CF phenylalanine-deletion simplification kept |
+| Microbiology | 09-microbial-growth | 6 | done Sep 8 2026 (in the authoring run) | 532–533; the singlet-oxygen radical notation and the 20% listeriosis mortality figure kept |
+| Microbiology | 10-biochemistry-of-the-genome | 4 | done Sep 8 2026 (in the authoring run) | 545–546 (pX02 capsule; viral genome-size floor vs the module's own chart), 537 (Griffith citation pages); nothing kept |
+| Microbiology | 11-mechanisms-of-microbial-genetics | 7 | done Sep 8 2026 (in the authoring run) | 550–551 (pol ε/δ strands; topoisomerase IV break type); nothing kept |
+| Microbiology | 12-modern-applications-of-microbial-genetics | 4 | done Sep 8 2026 (in the authoring run) | 556–557 (the *Xenopus* cloning year; Sanger dideoxy year); the RFLP "definitively determine" forensic sentence kept as an introductory simplification |
+| Microbiology | 08-microbial-metabolism | 7 | done Sep 7 2026 (in the authoring run) | 512, 518; lithotroph/organotroph Glossary equivalences, the 5–10% meningococcal fatality figure, the anaerobic-respiration ATP ranges, and the *Nitrosomonas* attribution kept |
+| Microbiology | 13-control-of-microbial-growth | 4 | done Sep 12 2026 (in the authoring run) | none; the germicidal-lamp "260 nm" wavelength kept (the module teaches the DNA absorption maximum, not a lamp's emission line) |
+| Microbiology | 14-antimicrobial-drugs | 7 | done Sep 12 2026 (in the authoring run) | 587 (Albert Schatz), 595 (oxazolidinone translocation), 597–598 (artemisinin "antifungal"; chloroquine and G6PD deficiency), 602 (*Streptomyces clavuligerus*), 607 (teixobactin from Maine, not Mount Ararat); the PCP 10%-of-HIV-deaths figure, the superseded *S. avermectinius* name, and ivermectin "nontoxic to humans" kept |
+| Microbiology | 15-microbial-mechanisms-of-pathogenicity | 4 | done Sep 12 2026 (in the authoring run) | 608–610 |
+| Microbiology | 16-disease-and-epidemiology | 4 | done Sep 12 2026 (in the authoring run) | none |
+| Microbiology | 17-innate-nonspecific-host-defenses | 5 | done Sep 13 2026 (in the authoring run) | 622–623; "laudable pus" kept |
+| Microbiology | 18-adaptive-specific-host-defenses | 5 | done Sep 13 2026 (in the authoring run) | 624–626 |
+| Microbiology | 19-diseases-of-the-immune-system | 5 | done Sep 13 2026 (in the authoring run) | none from the claim pass; erratum 659 — §19.2's Addison-disease "lymphocytosis" gloss corrected from "decreased levels of white blood cells" to "increased levels of lymphocytes" (found by the author, adjudicated by the parent, not the claim pass) |
+| Microbiology | 20-laboratory-analysis-of-the-immune-response | 5 | done Sep 13 2026 (in the authoring run) | erratum 663 — §20.3's Widal-test sentence corrected from the source's "Salmonella enterica subspecies typhi" to "serovar Typhi" (claim pass finding, adjudicated by the parent) |
+| Microbiology | 21-skin-and-eye-infections | 5 | done Sep 14 2026 (in the authoring run) | none; the necrotizing-fasciitis glossary "exotoxin A" finding adjudicated not an error |
+| Microbiology | 22-respiratory-system-infections | 4 | done Sep 14 2026 (in the authoring run) | 678–679 — Q fever's "rickettsia" classification and the MERS 2013→2012 date, both claim pass findings adjudicated by the parent |
+| Microbiology | 23-urogenital-system-infections | 6 | done Sep 14 2026 (in the authoring run), report `claims-ch23.md` | 720 (23.4 trigeminal ganglion), 721 (23.2 IgA protease/H2O2), both claim pass findings adjudicated by the parent |
+| Microbiology | 24-digestive-system-infections | 6 | done Sep 14 2026 (in the authoring run) | 735–754 (743 the accepted Treponema vincentii spelling; no claim corrections); Typhoid Mary case count reviewed and not errata |
+| Microbiology | 25-circulatory-and-lymphatic-system-infections | 4 | done Sep 14 2026 (in the authoring run) | errata 755–775; three claim corrections accepted this run: 25.2's rat-bite fever causative genus (766, and 767 for the source exercise option), 25.2's tick body regions (765), and 25.3's HTLV/HIV conflation (768), all adjudicated by the parent; two suspicions reviewed and not errata |
+| Microbiology | 26-nervous-system-infections | 4 + landing | done Sep 14 2026 (in the authoring run) | 4 findings: 3 claim corrections accepted this run — 26.1's arachnoid mater/CSF Source note, 26.2's neonatal meningitis 3-months Source note, and 26.2's Listeria 45 °C Source note — all adjudicated by the parent; 1 suspicion reviewed and not an erratum: 26.4's neurocysticercosis source key D stands |
+
+## Pinning log (from the source workflow)
+
+# OpenStax source workflow — history
+
+Dated per-chapter pinning and authoring records moved out of the operative
+workflow doc, kept for provenance. Cut verbatim from
+`docs/source/openstax-source-workflow.md`'s "Microbiology" section.
+
+## Microbiology chapter-by-chapter log (September 5–7, 2026)
+
+The book was `scaffolded` until its pilot chapter — chapter 1, *An
+Invisible World* — was authored on September 5, 2026, and is `in-progress`
+from that day: `content/life-health-sciences/microbiology/_index.md` lists
+chapters 1–6 under `## Chapters` with the remaining twenty on its
+"Planned contents" list (chapter 2, *How We See the Invisible World*, landed
+the same day, chapters 3, *The Cell*, and 4, *Prokaryotic Diversity*, on
+September 6, and chapters 5, *The Eukaryotes of Microbiology*, 6,
+*Acellular Pathogens*, and 7, *Microbial Biochemistry*, on September 7), and
+`verify-map` prints `7/26 chapters, 31/127 sections mapped`.

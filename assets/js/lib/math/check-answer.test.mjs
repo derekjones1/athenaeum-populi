@@ -1055,7 +1055,9 @@ const formCases = [
   ['2(x+2)^2', '2(x+2)^2', 'factored-completely', 'correct'],
   ['2(x+2)(x+2)', '2(x+2)^2', 'factored-completely', 'correct'],
   ['(x+2)^2\\cdot2', '2(x+2)^2', 'factored-completely', 'correct'],
-  ['2(-x-2)^2', '2(x+2)^2', 'factored-completely', 'correct'],
+  // a numeral carries the sign in front, not a factor (grader residuals,
+  // October 13, 2026: was `correct`)
+  ['2(-x-2)^2', '2(x+2)^2', 'factored-completely', 'form'],
   ['(2x+4)(x+2)', '2(x+2)^2', 'factored-completely', 'form'],
   ['(x+2)(2x+4)', '2(x+2)^2', 'factored-completely', 'form'],
   ['2(x^2+4x+4)', '2(x+2)^2', 'factored-completely', 'form'],
@@ -1070,7 +1072,7 @@ const formCases = [
   // constants are free: the content may be split or signed
   ['4(m+1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'correct'],
   ['2\\cdot2(m+1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'correct'],
-  ['-4(-m-1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'correct'],
+  ['-4(-m-1)(m-2)', '4(m+1)(m-2)', 'factored-completely', 'form'], // sign in a factor beside a numeral (October 13, 2026)
   ['(2m+2)(2m-4)', '4(m+1)(m-2)', 'factored-completely', 'form'],
   ['2(m+1)(2m-4)', '4(m+1)(m-2)', 'factored-completely', 'form'],
   // sign-flipped factors, a leading −1, any order
@@ -1114,7 +1116,7 @@ const formCases = [
   ['7a(-a^2+3a-2)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'form'],
   ['-7a(a-1)(a-2)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'correct'],
   ['-4b(b^2-4b+2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'correct'],
-  ['4b(-b^2+4b-2)', '-4b(b^2-4b+2)', 'factored-completely', 'correct'],
+  ['4b(-b^2+4b-2)', '-4b(b^2-4b+2)', 'factored-completely', 'form'], // sign in a factor beside a numeral (October 13, 2026)
   ['4b(-b^2+4b-2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'form'],
   ['-(4b)(b^2-4b+2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'correct'],
   ['3(x+2)', '3(x+2)', 'factored gcf-factored', 'correct'],
@@ -4572,4 +4574,86 @@ test('Precalculus knowledge-check grader gaps', async (t) => {
       assert.equal(checkAnswer(typed, key, { form }), expected);
     });
   }
+});
+
+// Grader residuals (October 13, 2026): the sign a factorization leaves inside
+// a factor, a reflected logarithm's negated argument, and a sign or an
+// exponent of 1 left written.
+const graderResiduals = [
+  // R1: `factored-completely` — with a numeral factor to absorb it, the sign
+  // is carried in front, never by a later factor
+  ['2(-x-2)', '-2(x+2)', 'factored-completely', 'form'],
+  ['(-x-2)\\cdot2', '-2(x+2)', 'factored-completely', 'form'],
+  ['(x+2)(-2)', '-2(x+2)', 'factored-completely', 'form'],
+  ['(x+2)\\cdot(-2)', '-2(x+2)', 'factored-completely', 'form'],
+  ['2(-(x+2))', '-2(x+2)', 'factored-completely', 'form'],
+  ['3(1-2x)(x+3)', '-3(2x-1)(x+3)', 'factored-completely', 'form'],
+  ['-(x+2)\\cdot2', '-2(x+2)', 'factored-completely', 'correct'],
+  ['-2(x+2)', '-2(x+2)', 'factored-completely', 'correct'],
+  ['2(x+2)', '2(x+2)', 'factored-completely', 'correct'],
+  ['(x-3)(x+2)', '(x-3)(x+2)', 'factored-completely', 'correct'],
+  ['-x(x+2)', '-x(x+2)', 'factored-completely', 'correct'],
+  // a bare variable factor absorbs the sign like a numeral does, read against
+  // the key: `x(-x-2)` is the same miss as `2(-x-2)`, while a source key
+  // that itself leads negative (`x(1-2x)`) keeps grading itself.
+  ['x(-x-2)', '-x(x+2)', 'factored-completely', 'form'],
+  ['(-x-2)x', '-x(x+2)', 'factored-completely', 'form'],
+  ['x(x+2)(-1)', '-x(x+2)', 'factored-completely', 'form'],
+  ['x(1-2x)', 'x(1-2x)', 'factored-completely', 'correct'],
+  ['-x(2x-1)', 'x(1-2x)', 'factored-completely', 'correct'],
+  ['x(1-2x)', '-x(2x-1)', 'factored-completely', 'form'],
+  ['2x(x-3)(x+1)', '2x(x-3)(x+1)', 'factored-completely', 'correct'],
+  ['2x(3-x)(x+1)', '-2x(x-3)(x+1)', 'factored-completely', 'form'],
+  ['(1-2x)(x+3)', '(1-2x)(x+3)', 'factored-completely', 'correct'],
+  ['-(2x-1)(x+3)', '-(2x-1)(x+3)', 'factored-completely', 'correct'],
+  ['(1-2x)(x+3)', '-(2x-1)(x+3)', 'factored-completely', 'correct'],
+  ['(-2x+1)(x+3)', '-(2x-1)(x+3)', 'factored-completely', 'correct'],
+  ['9(4p-q)(4p+q)', '9(4p-q)(4p+q)', 'factored-completely', 'correct'],
+  ['125(4m^2+2mn+n^2)(2m-n)', '125(4m^2+2mn+n^2)(2m-n)', 'factored-completely', 'correct'],
+  ['-4b(b^2-4b+2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'correct'],
+  ['4b(-b^2+4b-2)', '-4b(b^2-4b+2)', 'factored-completely gcf-factored', 'form'],
+  ['-7a(a-1)(a-2)', '-7a(a^2-3a+2)', 'factored gcf-factored', 'correct'],
+  // R2: `expanded-logarithms` — a negated argument is the reflection, not a
+  // product left to split
+  ['\\log_{2}(-(x-1))', '\\log_{2}(-(x-1))', 'expanded-logarithms', 'correct'],
+  ['\\log_2(-(x-1))', '\\log_{2}(-(x-1))', 'expanded-logarithms', 'correct'],
+  ['\\log_2(1-x)', '\\log_{2}(-(x-1))', 'expanded-logarithms', 'correct'],
+  ['\\log_2(-x+1)', '\\log_{2}(-(x-1))', 'expanded-logarithms', 'correct'],
+  ['\\log_2(-x)', '\\log_2(-x)', 'expanded-logarithms', 'correct'],
+  ['\\log_2(-(x^2-1))', '\\log_2(-(x^2-1))', 'expanded-logarithms', 'form'],
+  ['\\log_2(-(2x-2))', '\\log_2(-(2x-2))', 'expanded-logarithms', 'form'],
+  ['\\log_2(-(x))', '\\log_2(-x)', 'expanded-logarithms', 'form'],
+  ['\\log_2(-2x)', '\\log_2(-2x)', 'expanded-logarithms', 'form'],
+  // R3: a sign both halves of a fraction carry, and an exponent of 1
+  ['\\frac{-1}{-1+\\cos\\theta}', '\\frac{1}{1-\\cos\\theta}', 'no-like-terms', 'form'],
+  ['\\frac{-x+1}{-x-2}', '\\frac{x-1}{x+2}', 'no-like-terms', 'form'],
+  ['\\frac{1}{1-\\cos\\theta}', '\\frac{1}{1-\\cos\\theta}', 'no-like-terms', 'correct'],
+  ['\\frac{-1}{\\cos\\theta-1}', '\\frac{1}{1-\\cos\\theta}', 'no-like-terms', 'correct'],
+  ['\\frac{-3}{x-2}', '\\frac{-3}{x-2}', 'no-like-terms', 'correct'],
+  ['z^1', 'z', 'no-like-terms', 'form'],
+  ['z^{1}', 'z', 'no-like-terms', 'form'],
+  ['3x^1+2', '3x+2', 'no-like-terms', 'form'],
+  ['z^1', 'z', 'expanded', 'form'],
+  ['3x^1+2', '3x+2', 'expanded', 'form'],
+  ['z^1', 'z', 'distributed', 'form'],
+  ['3x^{1}+2', '3x+2', 'distributed', 'form'],
+  ['z^1', 'z', 'single-term', 'form'],
+  ['3x^{1}', '3x', 'single-term', 'form'],
+  ['z', 'z', 'no-like-terms', 'correct'],
+  ['8x^{1/5}', '8x^{1/5}', 'single-term', 'correct'],
+  ['x^{12}+1', 'x^{12}+1', 'expanded distributed no-like-terms', 'correct'],
+  ['5x^{10}', '5x^{10}', 'single-term', 'correct'],
+];
+test('Grader residuals (October 13, 2026)', async (t) => {
+  for (const [typed, key, form, expected] of graderResiduals) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});
+test('a factorization complete but for its sign is told where the sign goes', () => {
+  const sign = 'now write the negative sign in front, with the number, so each factor keeps a positive leading coefficient';
+  assert.ok(describeFormFeedback('2(-x-2)', 'factored-completely', '-2(x+2)').includes(sign));
+  assert.ok(describeFormFeedback('(x+2)(-2)', 'factored-completely', '-2(x+2)').includes(sign));
+  assert.ok(!describeFormFeedback('(2x+4)(x+2)', 'factored-completely', '2(x+2)^2').includes(sign));
 });

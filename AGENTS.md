@@ -24,8 +24,8 @@ pin postdates its PDF; a chapter is run from
 `docs/briefs/anatomy-physiology/run.md` (the parent's recipe) with the
 agent briefs beside it — versioned there, not re-derived per session. Dated
 narrative — retrospectives, per-chapter logs, closed programmes — lives in
-`docs/history/`, one file per playbook; the playbooks keep only what is
-operative.
+`docs/history/`, one file per playbook; `docs/history/re-review.md` records
+the re-review campaign; the playbooks keep only what is operative.
 
 ## Stack and constraints
 
@@ -70,22 +70,17 @@ operative.
   CI, the source gates (`verify:source-keys`, `verify:fillin-residual`) run
   strict against the fetched checkouts instead of skipping
 - `npm run check:figures` — build every spec-first figure and fail on any
-  label printed across other ink (part of `npm test`); legacy `data-spec`
-  figures are previewed as their eventual spec-first re-renders, non-gating
-- `npm run figures:status -- <dir>` — the figure-engine conversion queue:
-  which pages are already spec-first (skip them) and which still carry
-  legacy `data-spec` figures or hand-written SVG with no spec — every inline
-  `<svg>` counts, wrapped or bare; one carrying `data-pictorial` is a
-  picture the engine has no primitive for, kept by decision and not debt;
-  "convert this chapter" starts here (workflow in `docs/subjects/math.md`)
+  label printed across other ink (part of `npm test`)
+- `npm run figures:status -- <dir>` — the figure-engine conversion check:
+  every math page is spec-first or carries `data-pictorial`; a hand `<svg>`
+  with no spec is a regression, fixed by authoring the spec (workflow in
+  `docs/subjects/math.md`)
 - `npm run figures:numberlines -- [--dry-run] [--gallery out.html] <path>` —
-  rewrites hand-written number-line SVGs as `numberline` shortcodes when the
-  recovered spec reproduces the drawing (ticks, marker, shade, points,
-  title); skips, with a reason, what the builder cannot draw
+  the number-line converter (the conversion backlog closed October 2026;
+  `docs/history/re-review.md`)
 - `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
-  rewrites legacy `data-spec` divs as `apfigure` shortcodes and diffs each
-  re-render against the SVG it replaces: label drift is expected, geometry
-  drift is a bug and a non-zero exit
+  the legacy `data-spec` converter (the conversion backlog closed October
+  2026; `docs/history/re-review.md`)
 - `npm run verify:replay` — replay every printed question span (source and
   MathLive-normalized spellings) through the grader so no exercise is passable
   by retyping its own prompt; holds a `--min-replayed` FLOOR (parallel,
@@ -140,7 +135,9 @@ operative.
   subagent reads instead of the live page — prefixing a basename that
   collides across books with its chapter folder); the orchestrator — or,
   for a chapter run, a fresh Fable subagent briefed by
-  `docs/briefs/<book>/solve.md` — answers them in writing; `compare` grades
+  `docs/briefs/<book>/solve.md` (math: `docs/re-review/solve-math.md`) —
+  answers them in writing; `emit` writes no `graphplot`, which the parent
+  re-derives and records by hand; `compare` grades
   the answers against the live keys (the real text grader for textin),
   prints every disagreement and "also defensible" flag, refuses to record
   one until it carries an `adjudicated` note settled against the CNXML, and
@@ -250,6 +247,10 @@ $SP/ledger-before.json content --out $SP/carry` writes a merge-ready
 re-read. (Its snapshot holds each dependency block's hash; `ledger:list`
 output does not, so it cannot stand in for one.)
 
+A hint that points by position is not in its item's hash; hashing the page
+body around an item was considered and deferred (October 2026) until pages
+are revised routinely — re-read positional hints by hand after a reorder.
+
 Three verdicts: `ok`, `defect` (fails the gate — a known-wrong answer must not
 ship), and `unverifiable` (read, but undeterminable from the exercise text
 alone — a figure or table read). The `--max-unverifiable` ceiling keeps the
@@ -356,7 +357,9 @@ paths and emit with `--only`; hold `/tmp/athenaeum-build.lock` (holder's
 name inside) for build, `check:build`, `serve:public`, and screenshots.
 The first committer commits the ledger and the package.json baselines
 whole and names the other session's deltas. Re-run `git status` before
-listing uncommitted files — the session-start snapshot is stale.
+listing uncommitted files — the session-start snapshot is stale. To commit
+only your own hunks of a shared file, stage them with `git hash-object -w`
+and `git update-index --cacheinfo` rather than `git add -p`.
 
 ## Browsers (never run `npx playwright install`)
 

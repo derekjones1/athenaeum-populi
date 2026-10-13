@@ -62,6 +62,15 @@ when both halves do; do not list either in `accept`).
      asserts, a definition that is the key, a paraphrase that eliminates
      distractors by name, "not X" of an accepted form, anything the module
      does not say, or a heading whose title is the key. Keep hints short.
+     Test it by covering the options and the key: if the stem plus hint
+     answers the item, it is a defect.
+   - **textin keys against the body**: grep the module BODY (not the
+     glossary, not the solutions) for every `textin` key; a key the body
+     never prints needs `multiplechoice`. A numeric key (a digit, a number
+     word, a measurement) is a defect in itself.
+   - **composite keys** are checked word by word: quote the ONE sentence
+     that fixes the key and diff the key against it; any word the key
+     carries from a second sentence fails.
    - **nearby leaks**: the stem, options, hint, rubric, or figure alt of
      the items and figures around a `textin`/MC — especially the item
      directly above — never print its key. A key printed by the item's own

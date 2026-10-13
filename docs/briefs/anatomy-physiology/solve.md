@@ -25,7 +25,9 @@ figures say. Read each masked page once, then answer its items.
 
 ## Output
 
-`answers.json` at the path in your task:
+`answers.json` at the path in your task, **written once, at the end** — a
+solver killed by a session limit is relaunched fresh, so leave no partial
+file:
 
 ```json
 {"by":"orchestrator-solver","answers":[
@@ -44,6 +46,10 @@ figures say. Read each masked page once, then answer its items.
 - `sortbins`: the full label→bin mapping as an object, `{"<label>":"<bin>", …}`.
 - Answer every item. An item you cannot settle from the page gets your best
   answer plus `"unsure": true` and the reason in `note`.
+- Anything wrong on the page outside your item — a table with fewer rows
+  than its prose promises, a stem that prints another item's answer, a
+  claim the module contradicts — goes in the nearest item's `note` with
+  the line it sits on: solvers find defects the checkers missed.
 
 **Final message: two lines** — the answers path and the counts (items
 answered, `alsoDefensible` flagged, unsure).

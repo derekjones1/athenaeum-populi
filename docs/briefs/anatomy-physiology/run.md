@@ -56,7 +56,13 @@ alt-errata verifier (§4 step 0). Hence:
   editing") — it continues from its transcript. Respawn only if the resume
   errors ("No transcript found"), and never skip a killed pass. Every
   brief has its agent append its report as it goes, so a killed reader
-  loses little.
+  loses little. A NEW session cannot resume the old session's agent ids:
+  relaunch with "a prior run died; treat the page as it stands" and point
+  the agent at PARENT-NOTES and its predecessor's appended report.
+- **Prompts are files** (`$SP/prompt-<unit>.md`; the launch prompt names
+  the file in three lines), generated with `str.replace`, never `.format`
+  or an unquoted heredoc — both eat `$` and braces, and a `$4x` once
+  vanished from an erratum draft that way.
 - **Scripts that edit a page or data file** assert that the computed
   target is non-empty and matches exactly once (a `str.replace('')` once
   wrote a 5 MB page), rewrite JSON with `ensure_ascii=False` and the
@@ -221,9 +227,14 @@ masked page and has reported real source defects outside its own item
 contradiction goes to the claim-pass handling. A compare that hits ONE
 unresolved disagreement writes NOTHING for the whole file — re-run it after
 adjudicating. Its results are merged in §4 step 5. A page edited after its solve re-hashes: re-emit that page
-and solve it again. After a sweep, re-solve only what the carry rule in
-AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
-`npm run ledger:carry` applies it; snapshot BEFORE the sweep's first edit.
+and solve it again — or, for a one-item edit after the solve, remap the
+solver's answer to the new hash with a parent note, and for a form-only
+edit write a one-item answers file. Adjacent answers shifted by one (a hash
+slip) are realigned from the solver's `note`s, not re-solved. After a
+sweep, re-solve only what the carry rule in AGENTS.md ("The answer
+ledger") does not carry — `npm run ledger:carry` applies it; snapshot
+BEFORE the sweep's first edit, and one snapshot serves every carry plan in
+the session.
 
 ## 4. Close-out, in this order
 
@@ -242,7 +253,12 @@ AGENTS.md ("The answer ledger") does not carry *(September 23, 2026)* —
    `$SP/alt-errata.md`, `claims-chNN.md`, and PARENT-NOTES, writes
    `$SP/errata-block.md` and `$SP/decisions-entries.json` (claim
    corrections only get decisions entries; alt and typo errata do not) and
-   reports every footer that does not disclose what its erratum says; (c) a
+   reports every footer that does not disclose what its erratum says —
+   the math re-review runs merged (a) and (b) into ONE Opus errata
+   compiler-verifier that drafts from every report AND verifies each draft
+   against the image and the CNXML (95–180k a run); use that shape when the
+   chapter's alt-vs-image claims are few, and grep its drafts for odd `$`
+   counts before inserting; (c) a
    pins agent — step 3 below, with the old→new values in its report; it
    leaves the claim-pass-ledger errata column to the parent, who fills it
    from `$SP/errata-block.md` (claim errata only) once numbered; (d)

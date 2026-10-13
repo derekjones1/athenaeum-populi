@@ -43,7 +43,7 @@ What is specific to a unit-level check:
   carries the chapter range the validator reads
   (`Knowledge Check: Unit 1 — Chapters 1–3`).
 - **Weights shift.** Chapters and Knowledge Checks share one sequential
-  weight order (authoring playbook, "Where the files go"), so landing a unit's
+  weight order (authoring playbook, "1. Where the file goes"), so landing a unit's
   check moves every later chapter's `weight` up by one. Biology 2e's table:
 
   | Unit | Chapters | Chapter weights | File | KC weight |
@@ -66,16 +66,15 @@ What is specific to a unit-level check:
 
   **A flat book (no `units` list) uses blocks instead of units.** OpenStax
   Microbiology has no units, so its checks are one page per block of
-  chapters — five pages, decided September 15, 2026 — weighted after the
+  chapters — five pages — weighted after the
   block's last chapter and rendered flat in the sidebar like a math book's.
   The block table lives in `docs/subjects/microbiology.md` §Knowledge
   checks; every other rule in this edition applies to it unchanged.
   Anatomy and Physiology 2e's six-unit table is in its playbook, and its
   checks run from `docs/briefs/anatomy-physiology/kc-run.md`.
 
-  A check's section count comes from the content tree (or the source map)
-  on the day it is authored, never from a table in a playbook — two
-  Microbiology block tables were wrong.
+  The weight table in the book's playbook records the decision; live
+  section counts come from the map (`npm run source:verify`).
 
 ## Content rules
 
@@ -134,9 +133,9 @@ What is specific to a unit-level check:
   (case, punctuation, blanks, Markdown emphasis, and math delimiters
   ignored) equals the stem of any item on any section page of the book,
   body self-checks included, or on any of the book's other Knowledge
-  Checks *(since September 5, 2026; the check under lint is dropped by file
+  Checks (the check under lint is dropped by file
   name, so a scratch copy is never compared with the committed page of its
-  own range)*, unless both are multiple choices with different option
+  own range), unless both are multiple choices with different option
   sets; or when a cloze's stem with its answer written back into the blank
   equals a section cloze's, so moving the blank along one summary sentence
   is still the same item. Near-paraphrase
@@ -205,7 +204,7 @@ What is specific to a unit-level check:
   second checker against the CNXML and the section page (body self-checks
   included), and is blind-solved before it is ledgered like any other item.
   A section-page edit re-opens the reverse-recall read for that section's
-  check items *(September 22, 2026)*, and a section-page claim correction
+  check items, and a section-page claim correction
   re-opens them for the corrected value too: a check item built on the old
   sentence is now wrong.
 - **Format tells.** The key must sit in the distractors' case, length band,
@@ -256,7 +255,7 @@ What is specific to a unit-level check:
   already prints ("...Act of 2008, abbreviated ________" when the stem has
   already spelled out the initials it wants back); ask for the full name
   instead, or blank a different fact. The spelled-out-before-the-blank
-  shape is a lint error since September 22, 2026, and so is a `textin`
+  shape is a lint error, and so is a `textin`
   whose key the item directly above it in its `### N.M` section prints.
   Grep the whole assembled page for every key and accept after every
   replacement round, not just the one section's page and not just once —
@@ -268,8 +267,7 @@ What is specific to a unit-level check:
   option beside the spelled-out ask (Microbiology block 2's "OTC"). A term
   the other item uses in another context, a distractor, or a hidden rubric
   clause that does not state the fact is shared vocabulary, not a leak:
-  all 61 candidates on the shelf's thirteen finished checks read that way
-  (September 26, 2026). In a unit organised by body
+  all candidates on the shelf's finished checks read that way. In a unit organised by body
   system, avoid keying a name every chapter's stems print (Microbiology's
   major pathogens; an organ or hormone in Anatomy and Physiology).
 - The attribution footer follows the section-page form (licence, deep link
@@ -296,9 +294,7 @@ record is written (Verify, step 3), its `note` starts with
 `KC <unit> <N.M> § <subsection>` so the tie survives in the committed data.
 `npm run kc -- notes` writes those notes from the authors' provenance
 files, and `npm run ledger:provenance` derives the tie for any check
-record still without one (about 390 of the shelf's check records had lost
-it to a solve placeholder before September 26, 2026, and were restored
-that way).
+record still without one.
 
 Inspect the pinned CNXML module as the semantic source; the PDF is the
 edition and visual evidence for figures and tables. If the module's summary,
@@ -313,13 +309,13 @@ frames p53 as a transcription factor, chapter 10 as a G1-checkpoint
 regulator, so "a cell-cycle checkpoint protein" is a second key by the
 book's own framing. The same holds for a `textin` descriptor: grep the
 whole unit for a second thing it describes, and pin the stem to the one
-referent *(September 23, 2026: "the carrier derived from riboflavin" keyed
-FAD, but Biology 7.4 derives FMN from vitamin B₂ too)*.
+referent ("the carrier derived from riboflavin" keyed FAD, but FMN is
+derived from vitamin B₂ too).
 
 ## Verify
 
 The biology triple check applies unchanged: author, then an independent
-checker (on Opus since September 22, 2026 — the life-sciences
+checker (on Opus — the life-sciences
 "Independent checker" rule), then the orchestrator answers every graded
 item with the keys hidden. The checker answers each item with its key
 covered before comparing, and runs every natural variant of each `textin`

@@ -101,6 +101,36 @@ test('quadratic and smooth curves never let the stroke poke past an arrowhead', 
   }));
 });
 
+// October 13, 2026 (Precalculus 10.4): a 10 × 10 head has a 53° apex, so on
+// the x′-axis of cot 2θ = 3/4 — 26.57°, the head's own half-angle — one edge
+// lay flat and the head read as a ▼ / ▶ glyph beside the line. Graphed-object
+// heads are now 10 long and 7 wide, tip on the line's end, axis exactly along
+// the line; the axis heads, the figure arrow marks, and the number-line
+// annotation heads take the same proportions, so every arrow is one shape.
+test('object arrowheads are narrow, tipped on the line, and aligned with it; axis heads match', () => {
+  const out = buildGraph({ ...GRID, lines: [{ through: [[0, 0], [2, 1]], dashed: true }] });
+  const heads = polygons(out);
+  assert.equal(heads.length, 6, '4 axis heads + 2 line heads');
+  const geom = ([tip, w1, w2]) => {
+    const mid = [(w1[0] + w2[0]) / 2, (w1[1] + w2[1]) / 2];
+    return { tip, len: dist(tip, mid), hw: dist(w1, w2) / 2, axis: [(tip[0] - mid[0]) / dist(tip, mid), (tip[1] - mid[1]) / dist(tip, mid)] };
+  };
+  for (const h of heads.slice(0, 4).map(geom)) {
+    assert.ok(Math.abs(h.len - 10) < 0.15 && Math.abs(h.hw - 3.5) < 0.15, 'axis heads are 10 × 7 too');
+  }
+  const origin = out.map.toPx([0, 0]);
+  const u = [2 / Math.sqrt(5), -1 / Math.sqrt(5)]; // the line's px direction
+  for (const h of heads.slice(4).map(geom)) {
+    assert.ok(Math.abs(h.len - 10) < 0.15, `head length ${h.len}`);
+    assert.ok(Math.abs(h.hw - 3.5) < 0.15, `head half-width ${h.hw}`);
+    assert.ok(h.len >= 2.5 * h.hw, 'a head is at least 2.5× as long as its half-width (apex ≤ 44°)');
+    // the tip sits on the line, and the head's axis runs along it
+    const rel = [h.tip[0] - origin[0], h.tip[1] - origin[1]];
+    assert.ok(Math.abs(rel[0] * u[1] - rel[1] * u[0]) < 0.15, 'tip on the line');
+    assert.ok(Math.abs(h.axis[0] * u[1] - h.axis[1] * u[0]) < 0.02, 'head axis parallel to the line');
+  }
+});
+
 test('sqrt curve starts exactly at its endpoint with no arrow there', () => {
   const out = buildGraph({ ...GRID, curves: [{ kind: 'sqrt' }] });
   // 4 axis arrowheads + exactly 1 curve arrowhead (far end only)
@@ -601,6 +631,40 @@ test('number-line annotations draw arrows, arcs, pointers, and captions at their
   assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'arrow', from: 0, to: 9 }] }), /within 0\.\.5/);
   assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'text', at: 1 }] }), /text needs a label/);
   assert.throws(() => buildNumberLine({ min: 0, max: 5, ariaLabel: 'x', annotations: [{ kind: 'text', at: 1, label: 'q', side: 'left' }] }), /side must be 'above' or 'below'/);
+});
+
+// October 13, 2026 (Precalculus 10.3): Helvetica's `|` is an `l`-height stem,
+// so "(p, |2p|)" read "(p, l2pl)". Every builder draws a label's bar as a
+// filled rect in a no-break-space gap, from paren depth to paren height.
+test('a label | is drawn as a bar in a no-break-space gap, in every builder', () => {
+  const g = buildGraph({ ...GRID, points: [{ at: [2, 2], label: '(p, |2p|)' }] });
+  const t = g.els.find((e) => e.tag === 'text' && e.text.includes('2p'));
+  assert.equal(t.text, '(p,  2p )', 'each | becomes a no-break space');
+  const i = g.els.indexOf(t);
+  const bars = g.els.slice(i + 1, i + 3);
+  assert.deepEqual(bars.map((e) => e.tag), ['rect', 'rect'], 'one rect per bar, right after its label');
+  const size = Number(t.attrs.fontSize);
+  const w = measureTextWidth(t.text, size);
+  const x0 = t.attrs.textAnchor === 'middle' ? Number(t.attrs.x) - w / 2 : t.attrs.textAnchor === 'end' ? Number(t.attrs.x) - w : Number(t.attrs.x);
+  const gap = measureTextWidth(' ', size);
+  [4, 7].forEach((k, j) => {
+    const a = bars[j].attrs;
+    const cx = Number(a.x) + Number(a.width) / 2;
+    const want = x0 + measureTextWidth(t.text.slice(0, k), size) + gap / 2;
+    assert.ok(Math.abs(cx - want) < 0.02, `bar ${j} centred in its gap`);
+    assert.ok(Math.abs(Number(a.y) - (Number(t.attrs.y) - 0.74 * size)) < 0.01, 'top at paren height');
+    assert.ok(Math.abs(Number(a.y) + Number(a.height) - (Number(t.attrs.y) + 0.21 * size)) < 0.01, 'bottom at paren depth');
+    assert.equal(a.fill, 'currentColor', 'the label colour, so dark mode follows');
+  });
+  // buildFigure texts and buildNumberLine annotations take the same pass
+  const f = buildFigure({ texts: [{ at: [0, 0], text: 'y = |x|' }], polygons: [{ points: [[0, 0], [1, 0], [0, 1]] }] });
+  assert.equal(f.els.filter((e) => e.tag === 'rect').length, 2);
+  const n = buildNumberLine({ min: -3, max: 3, ariaLabel: 'n', annotations: [{ kind: 'arc', from: 0, to: 3, label: '|3|' }] });
+  assert.equal(n.els.filter((e) => e.tag === 'rect').length, 2);
+  // a label with no bar is untouched; the serialized SVG carries the bars
+  const plain = buildGraph({ ...GRID, points: [{ at: [2, 2], label: 'P' }] });
+  assert.equal(plain.els.filter((e) => e.tag === 'rect').length, 0);
+  assert.ok(toSvgString({ ...GRID, points: [{ at: [2, 2], label: '|z|' }] }).includes('<rect '));
 });
 
 test('figure segment arrows trim the shaft and point at the true target', () => {
@@ -1421,7 +1485,10 @@ test('plotted dots stay outside the mask, and the digits paint last', () => {
 });
 
 // Captured from the engine BEFORE the knockout existed: a figure with no tick
-// digits must serialize byte for byte as it always did.
+// digits must serialize byte for byte as it always did. The three non-axis
+// arrowheads were re-captured on October 13, 2026, when graphed-object heads
+// narrowed from 10 × 10 to 10 × 7 (see the arrowhead test below); nothing
+// else in the document moved.
 const NO_DIGIT_SPEC = {
   ariaLabel: 'no digits', xMin: -3, xMax: 3, yMin: -3, yMax: 3, unit: 20,
   lines: [{ slope: 1, intercept: 1, label: 'y = x + 1' }, { x: 2, dashed: true, arrows: false }],
@@ -1447,18 +1514,18 @@ const NO_DIGIT_SVG_BEFORE = [
   '  <line x1="26" y1="26" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>',
   '  <line x1="24" y1="86" x2="148" y2="86" stroke="currentColor" stroke-width="1"/>',
   '  <line x1="86" y1="24" x2="86" y2="148" stroke="currentColor" stroke-width="1"/>',
-  '  <polygon points="158,86 148,91 148,81" fill="currentColor"/>',
-  '  <polygon points="86,14 91,24 81,24" fill="currentColor"/>',
-  '  <polygon points="14,86 24,81 24,91" fill="currentColor"/>',
-  '  <polygon points="86,158 81,148 91,148" fill="currentColor"/>',
+  '  <polygon points="158,86 148,89.5 148,82.5" fill="currentColor"/>',
+  '  <polygon points="86,14 89.5,24 82.5,24" fill="currentColor"/>',
+  '  <polygon points="14,86 24,82.5 24,89.5" fill="currentColor"/>',
+  '  <polygon points="86,158 82.5,148 89.5,148" fill="currentColor"/>',
   '  <text x="156" y="78" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>',
   '  <text x="94" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>',
   '  <line x1="27.1" y1="124.9" x2="124.9" y2="27.1" stroke="currentColor" stroke-width="1.8"/>',
-  '  <polygon points="132,20 128.5,30.6 121.4,23.5" fill="currentColor"/>',
-  '  <polygon points="20,132 23.5,121.4 30.6,128.5" fill="currentColor"/>',
+  '  <polygon points="132,20 127.4,29.5 122.5,24.6" fill="currentColor"/>',
+  '  <polygon points="20,132 24.6,122.5 29.5,127.4" fill="currentColor"/>',
   '  <line x1="126" y1="146" x2="126" y2="26" stroke="currentColor" stroke-width="1.8" stroke-dasharray="6 5"/>',
   '  <polyline points="26,66 46,106 78.8,122.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>',
-  '  <polygon points="86,126 74.8,126 79.3,117.1" fill="currentColor"/>',
+  '  <polygon points="86,126 75.5,124.7 78.6,118.4" fill="currentColor"/>',
   '  <ellipse cx="86" cy="86" rx="20" ry="20" fill="none" stroke="currentColor" stroke-width="1.8"/>',
   '  <path d="M 126 86 A 40 40 0 0 0 86 46" fill="none" stroke="currentColor" stroke-width="1.8"/>',
   '  <line x1="46" y1="126" x2="66" y2="126" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>',
