@@ -311,18 +311,9 @@ He wants the length of the fenced yard (parallel to the house wall) to be 5
 feet more than four times as long as the width. Find the length and the
 width.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangle representing the fenced yard. The top side is dashed and labeled house wall. The other three sides are solid, for the fence: the bottom side, parallel to the house wall, is labeled L for length, and the two vertical sides are each labeled W for width." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 168" width="252" height="168" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="132" x2="216" y2="132" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="152" text-anchor="middle" font-size="13" fill="currentColor">L</text>
-  <line x1="216" y1="132" x2="216" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="228" y="88" text-anchor="start" font-size="13" fill="currentColor">W</text>
-  <line x1="216" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">house wall</text>
-  <line x1="36" y1="36" x2="36" y2="132" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="88" text-anchor="end" font-size="13" fill="currentColor">W</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A rectangle representing the fenced yard. The top side is dashed and labeled house wall. The other three sides are solid, for the fence: the bottom side, parallel to the house wall, is labeled L for length, and the two vertical sides are each labeled W for width.","polygons":[{"points":[[0,0],[6,0],[6,3.2],[0,3.2]],"edgeLabels":["L","W","house wall","W"],"dashedEdges":[2]}]}
+{{< /apfigure >}}
 
 We are looking for the length and width of the fenced yard. Let $L =$ the
 length of the fenced yard and $W =$ the width of the fenced yard.

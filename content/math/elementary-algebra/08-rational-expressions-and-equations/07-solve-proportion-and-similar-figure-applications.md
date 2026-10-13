@@ -260,28 +260,9 @@ $\triangle XYZ$:
 
 $$\frac{16}{4} = \frac{20}{5} = \frac{12}{3} = 4$$
 
-<div class="ap-figure">
-<svg role="img" aria-label="Two similar triangles side by side. The larger triangle ABC has vertex A at bottom left, C at bottom right, and B at the top; side AB is 12, side BC is 16, and side AC is 20. The smaller triangle XYZ, one quarter the size and the same shape, has vertex X at bottom left, Z at bottom right, and Y at the top; side XY is 3, side YZ is 4, and side XZ is 5." xmlns="http://www.w3.org/2000/svg" viewBox="0 30 334 132" width="334" height="132" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="130" x2="90" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="90" y1="58" x2="186" y2="130" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="186" y1="130" x2="36" y2="130" stroke="currentColor" stroke-width="1.5"/>
-  <text x="55" y="92.5" text-anchor="end" font-size="13" fill="currentColor">12</text>
-  <text x="144" y="90.5" text-anchor="start" font-size="13" fill="currentColor">16</text>
-  <text x="111" y="150.5" text-anchor="middle" font-size="13" fill="currentColor">20</text>
-  <text x="25.6" y="138.2" text-anchor="end" font-size="13" fill="currentColor">A</text>
-  <text x="86.9" y="51.9" text-anchor="middle" font-size="13" fill="currentColor">B</text>
-  <text x="196.6" y="137.6" text-anchor="start" font-size="13" fill="currentColor">C</text>
-  <line x1="258" y1="130" x2="271.5" y2="112" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="271.5" y1="112" x2="295.5" y2="130" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="295.5" y1="130" x2="258" y2="130" stroke="currentColor" stroke-width="1.5"/>
-  <text x="256.8" y="119.5" text-anchor="end" font-size="13" fill="currentColor">3</text>
-  <text x="289.5" y="117.5" text-anchor="start" font-size="13" fill="currentColor">4</text>
-  <text x="276.8" y="150.5" text-anchor="middle" font-size="13" fill="currentColor">5</text>
-  <text x="247.6" y="138.2" text-anchor="end" font-size="13" fill="currentColor">X</text>
-  <text x="268.4" y="105.9" text-anchor="middle" font-size="13" fill="currentColor">Y</text>
-  <text x="306.1" y="137.6" text-anchor="start" font-size="13" fill="currentColor">Z</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Two similar triangles side by side. The larger triangle ABC has vertex A at bottom left, C at bottom right, and B at the top; side AB is 12, side BC is 16, and side AC is 20. The smaller triangle XYZ, one quarter the size and the same shape, has vertex X at bottom left, Z at bottom right, and Y at the top; side XY is 3, side YZ is 4, and side XZ is 5.","unit":7.5,"polygons":[{"points":[[0,0],[20,0],[7.2,9.6]],"edgeLabels":["20","16","12"],"vertexLabels":["A","C","B"]},{"points":[[29.6,0],[34.6,0],[31.4,2.4]],"edgeLabels":["5","4","3"],"vertexLabels":["X","Z","Y"]}]}
+{{< /apfigure >}}
 
 {{< callout type="info" >}}
   **Property of Similar Triangles.** If $\triangle ABC$ is similar to
@@ -306,28 +287,9 @@ sentence.
 **Example.** $\triangle ABC$ is similar to $\triangle XYZ$. The lengths of
 two sides of each triangle are given. Find the lengths of the third sides.
 
-<div class="ap-figure">
-<svg role="img" aria-label="Two similar triangles side by side. The larger triangle ABC has vertex C at bottom left, B at bottom right, and A at the top; side AB is 4, side AC is 3.2, and the third side BC is labeled a. The smaller triangle XYZ has vertex Z at bottom left, Y at bottom right, and X at the top; side XY is 3, side YZ is 4.5, and the third side XZ is labeled y." xmlns="http://www.w3.org/2000/svg" viewBox="0 58 344 92" width="344" height="92" font-family="Helvetica, Arial, sans-serif">
-  <line x1="86.4" y1="80.6" x2="156" y2="120" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="120" x2="36" y2="120" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="36" y1="120" x2="86.4" y2="80.6" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126.1" y="96.1" text-anchor="start" font-size="13" fill="currentColor">4</text>
-  <text x="96" y="140.5" text-anchor="middle" font-size="13" font-style="italic" fill="currentColor">a</text>
-  <text x="55" y="96.9" text-anchor="end" font-size="13" fill="currentColor">3.2</text>
-  <text x="83.8" y="74.4" text-anchor="middle" font-size="13" fill="currentColor">A</text>
-  <text x="166.8" y="126.7" text-anchor="start" font-size="13" fill="currentColor">B</text>
-  <text x="25.3" y="127" text-anchor="end" font-size="13" fill="currentColor">C</text>
-  <line x1="253.8" y1="90.4" x2="306" y2="120" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="306" y1="120" x2="216" y2="120" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="216" y1="120" x2="253.8" y2="90.4" stroke="currentColor" stroke-width="1.5"/>
-  <text x="284.8" y="101" text-anchor="start" font-size="13" fill="currentColor">3</text>
-  <text x="261" y="140.5" text-anchor="middle" font-size="13" fill="currentColor">4.5</text>
-  <text x="228.7" y="101.8" text-anchor="end" font-size="13" font-style="italic" fill="currentColor">y</text>
-  <text x="251.2" y="84.2" text-anchor="middle" font-size="13" fill="currentColor">X</text>
-  <text x="316.8" y="126.7" text-anchor="start" font-size="13" fill="currentColor">Y</text>
-  <text x="205.3" y="127" text-anchor="end" font-size="13" fill="currentColor">Z</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Two similar triangles side by side. The larger triangle ABC has vertex C at bottom left, B at bottom right, and A at the top; side AB is 4, side AC is 3.2, and the third side BC is labeled a. The smaller triangle XYZ has vertex Z at bottom left, Y at bottom right, and X at the top; side XY is 3, side YZ is 4.5, and the third side XZ is labeled y.","unit":20,"polygons":[{"points":[[0,0],[6,0],[2.52,1.97221]],"edgeLabels":["a","4","3.2"],"vertexLabels":["C","B","A"]},{"points":[[9,0],[13.5,0],[10.89,1.47915]],"edgeLabels":["4.5","3","y"],"vertexLabels":["Z","Y","X"]}]}
+{{< /apfigure >}}
 
 Let $a$ be the length of the third side of $\triangle ABC$ and $y$ the length
 of the third side of $\triangle XYZ$. Since the triangles are similar, the

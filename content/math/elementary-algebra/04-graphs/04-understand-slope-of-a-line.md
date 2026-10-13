@@ -64,14 +64,9 @@ To find the slope of the line, we measure the distance along the vertical and
 horizontal sides of the triangle. The vertical distance is called the
 **rise** and the horizontal distance is called the **run**.
 
-<svg viewBox="0 0 200 110" role="img" aria-label="Two perpendicular arrows meeting at a corner: one points straight up and is labeled rise; the other points straight right and is labeled run." style="max-width: 220px; display: block; margin: 1.5rem auto">
-  <line x1="50" y1="95" x2="50" y2="30" stroke="currentColor" stroke-width="2" />
-  <polygon points="50,20 45,31 55,31" fill="currentColor" />
-  <line x1="50" y1="30" x2="170" y2="30" stroke="currentColor" stroke-width="2" />
-  <polygon points="180,30 169,25 169,35" fill="currentColor" />
-  <text x="42" y="68" text-anchor="end" font-size="15" fill="currentColor">rise</text>
-  <text x="110" y="20" text-anchor="middle" font-size="15" fill="currentColor">run</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Two perpendicular arrows meeting at a corner: one points straight up and is labeled rise; the other points straight right and is labeled run.","segments":[{"from":[0,0],"to":[0,2.5],"arrow":true,"label":"rise"},{"from":[0,2.17],"to":[4.33,2.17],"arrow":true,"label":"run"}]}
+{{< /apfigure >}}
 
 On our geoboard, the rise is $2$: the rubber band goes up $2$ units. (Each
 space between pegs is one unit.) The rubber band goes across $3$ units, so
@@ -202,14 +197,9 @@ We "read" a line from left to right just like we read words in English. As
 you read from left to right, the line in (a) is going up; it has **positive
 slope**. The line in (b) is going down; it has **negative slope**.
 
-<svg viewBox="0 0 320 100" role="img" aria-label="Two lines side by side: the left line rises from left to right and is labeled positive slope; the right line drops from left to right and is labeled negative slope." style="max-width: 340px; display: block; margin: 1.5rem auto">
-  <line x1="30" y1="70" x2="102" y2="25" stroke="currentColor" stroke-width="2" />
-  <polygon points="110,20 97.4,21.4 102.7,29.9" fill="currentColor" />
-  <text x="70" y="95" text-anchor="middle" font-size="14" fill="currentColor">Positive slope</text>
-  <line x1="210" y1="20" x2="282" y2="65" stroke="currentColor" stroke-width="2" />
-  <polygon points="290,70 277.3,68.6 282.6,60.1" fill="currentColor" />
-  <text x="250" y="95" text-anchor="middle" font-size="14" fill="currentColor">Negative slope</text>
-</svg>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Two lines side by side: the left line rises from left to right and is labeled positive slope; the right line drops from left to right and is labeled negative slope.","segments":[{"from":[1,1],"to":[3.67,2.67],"arrow":true},{"from":[7,2.67],"to":[9.67,1],"arrow":true}],"texts":[{"at":[2.33,0.17],"text":"Positive slope","anchor":"middle"},{"at":[8.33,0.17],"text":"Negative slope","anchor":"middle"}]}
+{{< /apfigure >}}
 
 **Example.** Use a geoboard to model a line with slope $\tfrac{1}{2}$.
 
@@ -275,53 +265,9 @@ the rise and the run.
 
 **Example.** Find the slope of the line shown.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A line graphed on the xy-plane through the points (0, -3) and (5, 1). A rise of 4 and a run of 5 are marked between the two points." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="126" x2="308" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,126 308,131 308,121" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="116.3" y1="225.8" x2="304.2" y2="75.4" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,69.2 307.3,79.4 301.1,71.5" fill="currentColor"/>
-  <polygon points="108.5,232 113.2,221.8 119.4,229.7" fill="currentColor"/>
-  <line x1="166" y1="186" x2="166" y2="106" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="166" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="166" cy="186" r="4" fill="currentColor"/>
-  <circle cx="266" cy="106" r="4" fill="currentColor"/>
-  <text x="177.2" y="206.2" font-size="13" fill="currentColor" text-anchor="start">(0, −3)</text>
-  <text x="254.8" y="94.8" font-size="13" fill="currentColor" text-anchor="end">(5, 1)</text>
-  <text x="152" y="150" font-size="13" fill="currentColor" text-anchor="end">rise = 4</text>
-  <text x="206" y="121" font-size="13" fill="currentColor" text-anchor="middle">run = 5</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A line graphed on a coordinate grid with x from −7 to 7 and y from −5 to 5, numbered every 1 unit, through the points (0, −3) and (5, 1). A rise of 4 and a run of 5 are marked between the two points.","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-3],[5,1]]}],"slopeTriangles":[{"from":[0,-3],"to":[5,1],"riseLabel":"rise = 4","runLabel":"run = 5","riseNudge":[-6,10],"runNudge":[-20,-30]}],"points":[{"at":[0,-3],"label":"(0, −3)"},{"at":[5,1],"label":"(5, 1)"}]}
+{{< /apfigure >}}
 
 We locate two points with integer coordinates, $(0, -3)$ and $(5, 1)$. Starting
 at the point on the left, $(0, -3)$, we sketch a right triangle to $(5, 1)$.
@@ -489,53 +435,9 @@ We plot $(1, -1)$. The slope $m = \tfrac{3}{4}$ gives rise $= 3$ and
 run $= 4$. Starting at $(1, -1)$, we count up $3$ and right $4$ to mark the
 second point, $(5, 2)$, then connect the two points with a line.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A line through the points (1, -1) and (5, 2), with a rise of 3 and a run of 4 marked between them." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 252" width="332" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="226" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="226" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="226" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="226" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="226" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="226" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="226" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="226" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="226" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="226" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="226" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="306" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="126" x2="308" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,126 308,131 308,121" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="166,238 161,228 171,228" fill="currentColor"/>
-  <text x="316" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="79.3" y1="226" x2="304" y2="57.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,51.5 307,61.5 301,53.5" fill="currentColor"/>
-  <polygon points="71.3,232 76.3,222 82.3,230" fill="currentColor"/>
-  <line x1="186" y1="146" x2="186" y2="86" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="186" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="186" cy="146" r="4" fill="currentColor"/>
-  <circle cx="266" cy="86" r="4" fill="currentColor"/>
-  <text x="197.2" y="166.2" font-size="13" fill="currentColor" text-anchor="start">(1, −1)</text>
-  <text x="277.2" y="106.2" font-size="13" fill="currentColor" text-anchor="start">(5, 2)</text>
-  <text x="181" y="121" font-size="13" fill="currentColor" text-anchor="end">3</text>
-  <text x="226" y="78" font-size="13" fill="currentColor" text-anchor="middle">4</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A line on a coordinate grid with x from −7 to 7 and y from −5 to 5, numbered every 1 unit, through the points (1, −1) and (5, 2), with a rise of 3 and a run of 4 marked between them.","xMin":-7,"xMax":7,"yMin":-5,"yMax":5,"tickLabels":true,"tickStep":1,"lines":[{"through":[[1,-1],[5,2]]}],"slopeTriangles":[{"from":[1,-1],"to":[5,2],"riseLabel":"3","runLabel":"4","riseNudge":[6,0]}],"points":[{"at":[1,-1],"label":"(1, −1)"},{"at":[5,2],"label":"(5, 2)"}]}
+{{< /apfigure >}}
 
 {{< multiplechoice
   question="Which graph shows the line through $(2, -2)$ with slope $m = \tfrac{4}{3}$?"

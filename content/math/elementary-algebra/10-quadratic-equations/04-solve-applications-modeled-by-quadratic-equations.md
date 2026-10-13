@@ -121,17 +121,9 @@ We will use the formula for the area of a triangle to solve the next example.
   area, $A$, is given by the formula $A=\tfrac{1}{2}bh$.
 {{< /callout >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A triangle with horizontal base b and a perpendicular height h drawn from the top vertex to the base." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 177" width="252" height="177" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="141" x2="216" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="163" text-anchor="middle" font-size="13" fill="currentColor">b</text>
-  <line x1="216" y1="141" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="36" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="156" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="168" y="92.5" text-anchor="start" font-size="13" fill="currentColor">h</text>
-  <path d="M 146 141 L 146 131 L 156 131" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A triangle with horizontal base b and a perpendicular height h drawn from the top vertex to the base.","polygons":[{"points":[[0,0],[6,0],[4,3.5]],"edgeLabels":["b",null,null]}],"segments":[{"from":[4,3.5],"to":[4,0],"label":"h"}],"rightAngles":[{"at":[4,0],"dirs":[[-1,0],[0,1]]}]}
+{{< /apfigure >}}
 
 Recall that, when we solve geometry applications, it is helpful to draw the figure.
 
@@ -149,17 +141,9 @@ to be 4 feet more than twice the height. Find the height and width of the window
 **Step 3. Name** what we are looking for. Let $h=$ the height of the triangle
 and $2h+4=$ the width of the triangle.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A triangular window with perpendicular height h and horizontal width 2h plus 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 177" width="252" height="177" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="141" x2="216" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="163" text-anchor="middle" font-size="13" fill="currentColor">2h+4</text>
-  <line x1="216" y1="141" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="36" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="156" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="168" y="92.5" text-anchor="start" font-size="13" fill="currentColor">h</text>
-  <path d="M 146 141 L 146 131 L 156 131" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A triangular window with perpendicular height h and horizontal width 2h plus 4.","polygons":[{"points":[[0,0],[6,0],[4,3.5]],"edgeLabels":["2h+4",null,null]}],"segments":[{"from":[4,3.5],"to":[4,0],"label":"h"}],"rightAngles":[{"at":[4,0],"dirs":[[-1,0],[0,1]]}]}
+{{< /apfigure >}}
 
 **Step 4. Translate.** We know the area. Write the formula for the area of a
 triangle, $A=\tfrac12bh$.
@@ -226,17 +210,9 @@ right triangle. We will use the Pythagorean Theorem to solve the next example.
   lengths of the legs and $c$ is the length of the hypotenuse, $a^2+b^2=c^2$.
 {{< /callout >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle whose legs are labeled a and b and whose hypotenuse is labeled c." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="156" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="96" y="178" text-anchor="middle" font-size="13" fill="currentColor">b</text>
-  <line x1="156" y1="156" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="104.5" y="85.5" text-anchor="start" font-size="13" fill="currentColor">c</text>
-  <line x1="36" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">a</text>
-  <path d="M 46 156 L 46 146 L 36 146" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle whose legs are labeled a and b and whose hypotenuse is labeled c.","polygons":[{"points":[[0,0],[4,0],[0,4]],"edgeLabels":["b","c","a"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 **Example 10.40.** Rene is setting up a holiday light display. He wants to make
 a ‘tree’ in the shape of two right triangles, as shown below, and has two 10-foot
@@ -244,22 +220,9 @@ strings of lights to use for the sides. He will attach the lights to the top of
 a pole and to two stakes on the ground. He wants the height of the pole to be the
 same as the distance from the base of the pole to each stake. How tall should the pole be?
 
-<div class="ap-figure">
-<svg role="img" aria-label="Two congruent right triangles form a tree shape. The central vertical pole and each horizontal distance to a stake are x; each sloping light string is 10 feet." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 192" width="312" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="88" y="90" text-anchor="end" font-size="13" fill="currentColor">10</text>
-  <line x1="156" y1="36" x2="276" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="224" y="90" text-anchor="start" font-size="13" fill="currentColor">10</text>
-  <line x1="156" y1="36" x2="156" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="166" y="100" text-anchor="start" font-size="13" fill="currentColor">x</text>
-  <line x1="36" y1="156" x2="156" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="96" y="178" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <line x1="156" y1="156" x2="276" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="216" y="178" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <path d="M 146 156 L 146 146 L 156 146" fill="none" stroke="currentColor" stroke-width="1.2"/>
-  <path d="M 166 156 L 166 146 L 156 146" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"Two congruent right triangles form a tree shape. The central vertical pole and each horizontal distance to a stake are x; each sloping light string is 10 feet.","polygons":[{"points":[[0,0],[4,0],[4,4]],"edgeLabels":["x","x","10"],"rightAngles":[1]},{"points":[[4,0],[8,0],[4,4]],"edgeLabels":["x","10",null],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 **Solution.**
 
@@ -273,17 +236,9 @@ the pole. $x=$ the distance from the pole to stake.
 
 Each side is a right triangle. We draw a picture of one of them.
 
-<div class="ap-figure">
-<svg role="img" aria-label="One of the right triangles in the light display. Its two legs are each x and its hypotenuse is 10." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="156" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="96" y="178" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <line x1="156" y1="156" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="104.5" y="85.5" text-anchor="start" font-size="13" fill="currentColor">10</text>
-  <line x1="36" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">x</text>
-  <path d="M 46 156 L 46 146 L 36 146" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"One of the right triangles in the light display. Its two legs are each x and its hypotenuse is 10.","polygons":[{"points":[[0,0],[4,0],[0,4]],"edgeLabels":["x","10","x"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 **Step 4. Translate** into an equation. We can use the Pythagorean Theorem to
 solve for $x$. Write the Pythagorean Theorem, $a^2+b^2=c^2$.
@@ -337,18 +292,9 @@ than three times the width. Find the length and width. Round to the nearest tent
 **Step 3. Name** what we are looking for. Let $w=$ the width of the rectangle.
 $3w-1=$ the length of the rectangle.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangle with vertical width w and horizontal length 3w minus 1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 147" width="252" height="147" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="111" x2="216" y2="111" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="133" text-anchor="middle" font-size="13" fill="currentColor">3w−1</text>
-  <line x1="216" y1="111" x2="216" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="228" y="77.5" text-anchor="start" font-size="13" fill="currentColor">w</text>
-  <line x1="216" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">3w−1</text>
-  <line x1="36" y1="36" x2="36" y2="111" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="77.5" text-anchor="end" font-size="13" fill="currentColor">w</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A rectangle with vertical width w and horizontal length 3w minus 1.","polygons":[{"points":[[0,0],[6,0],[6,2.5],[0,2.5]],"edgeLabels":["3w−1","w","3w−1","w"]}]}
+{{< /apfigure >}}
 
 **Step 4. Translate** into an equation. We know the area. Write the formula for
 the area of a rectangle, $A=L\cdot W$.

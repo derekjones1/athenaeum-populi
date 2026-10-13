@@ -492,17 +492,9 @@ shape of a right triangle, as shown below. The hypotenuse will be $17$ feet
 long. The length of one side will be $7$ feet less than the length of the
 other side. Find the lengths of the sides of the deck.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with the right angle at the bottom-left corner. The vertical left leg is labeled x minus 7, the horizontal bottom leg is labeled x, and the hypotenuse joining the top of the left leg to the right end of the bottom leg is labeled 17." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 546 336" width="546" height="336" font-family="Helvetica, Arial, sans-serif">
-  <line x1="48" y1="288" x2="498" y2="288" stroke="currentColor" stroke-width="1.5"/>
-  <text x="273" y="310" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <line x1="498" y1="288" x2="48" y2="48" stroke="currentColor" stroke-width="1.5"/>
-  <text x="278.6" y="155.4" text-anchor="start" font-size="13" fill="currentColor">17</text>
-  <line x1="48" y1="48" x2="48" y2="288" stroke="currentColor" stroke-width="1.5"/>
-  <text x="36" y="172" text-anchor="end" font-size="13" fill="currentColor">x − 7</text>
-  <path d="M 58 288 L 58 278 L 48 278" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with the right angle at the bottom-left corner. The vertical left leg is labeled x minus 7, the horizontal bottom leg is labeled x, and the hypotenuse joining the top of the left leg to the right end of the bottom leg is labeled 17.","polygons":[{"points":[[0,0],[15,0],[0,8]],"edgeLabels":["x","17","x − 7"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 Let $x =$ the length of one side of the deck. Then $x - 7 =$ the length of
 the other side. Since this is a right triangle, we use the Pythagorean

@@ -37,153 +37,24 @@ line.
 
 Let's look at the graphs of the lines in the figure below.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 0.5rem">
-  <div class="ap-figure">
-<svg role="img" aria-label="The line 2x + y = 6 crosses the y-axis at (0, 6) and the x-axis at (3, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 183" width="135" height="183" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="161" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="161" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="61" y1="161" x2="61" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="161" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="161" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="161" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="161" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="161" x2="113" y2="161" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="148" x2="113" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="113" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="109" x2="113" y2="109" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="96" x2="113" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="83" x2="113" y2="83" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="70" x2="113" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="113" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="67.5" y="14" font-size="13" fill="currentColor" text-anchor="middle">a) 2x + y = 6</text>
-  <line x1="20" y1="135" x2="115" y2="135" stroke="currentColor" stroke-width="1"/>
-  <line x1="48" y1="42" x2="48" y2="163" stroke="currentColor" stroke-width="1"/>
-  <polygon points="125,135 115,140 115,130" fill="currentColor"/>
-  <polygon points="48,32 53,42 43,42" fill="currentColor"/>
-  <polygon points="10,135 20,130 20,140" fill="currentColor"/>
-  <polygon points="48,173 43,163 53,163" fill="currentColor"/>
-  <text x="123" y="127" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="56" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="43" y1="46.9" x2="98.5" y2="158.1" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="103,167 94.1,160.3 103,155.8" fill="currentColor"/>
-  <polygon points="38.5,38 47.4,44.7 38.5,49.2" fill="currentColor"/>
-  <circle cx="48" cy="57" r="4" fill="currentColor"/>
-  <circle cx="87" cy="135" r="4" fill="currentColor"/>
-  <text x="62" y="61" font-size="13" fill="currentColor" text-anchor="start">(0, 6)</text>
-  <text x="83" y="123" font-size="13" fill="currentColor" text-anchor="start">(3, 0)</text>
-</svg>
-</div>
-  <div class="ap-figure">
-<svg role="img" aria-label="The line 3x - 4y = 12 crosses the y-axis at (0, -3) and the x-axis at (4, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 170" width="148" height="170" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="148" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="148" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="61" y1="148" x2="61" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="148" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="148" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="148" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="148" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="148" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="148" x2="126" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="135" x2="126" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="126" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="109" x2="126" y2="109" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="96" x2="126" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="70" x2="126" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="126" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="74" y="14" font-size="13" fill="currentColor" text-anchor="middle">b) 3x − 4y = 12</text>
-  <line x1="20" y1="83" x2="128" y2="83" stroke="currentColor" stroke-width="1"/>
-  <line x1="48" y1="42" x2="48" y2="150" stroke="currentColor" stroke-width="1"/>
-  <polygon points="138,83 128,88 128,78" fill="currentColor"/>
-  <polygon points="48,32 53,42 43,42" fill="currentColor"/>
-  <polygon points="10,83 20,78 20,88" fill="currentColor"/>
-  <polygon points="48,160 43,150 53,150" fill="currentColor"/>
-  <text x="136" y="75" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="56" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="24" y1="140" x2="124" y2="65" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="132,59 127,69 121,61" fill="currentColor"/>
-  <polygon points="16,146 21,136 27,144" fill="currentColor"/>
-  <circle cx="48" cy="122" r="4" fill="currentColor"/>
-  <circle cx="100" cy="83" r="4" fill="currentColor"/>
-  <text x="59.2" y="142.2" font-size="13" fill="currentColor" text-anchor="start">(0, −3)</text>
-  <text x="100" y="106" font-size="13" fill="currentColor" text-anchor="middle">(4, 0)</text>
-</svg>
-</div>
-  <div class="ap-figure">
-<svg role="img" aria-label="The line x - y = 5 crosses the y-axis at (0, -5) and the x-axis at (5, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161 183" width="161" height="183" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="161" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="161" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="61" y1="161" x2="61" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="161" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="161" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="161" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="161" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="161" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="139" y1="161" x2="139" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="161" x2="139" y2="161" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="148" x2="139" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="135" x2="139" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="139" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="109" x2="139" y2="109" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="96" x2="139" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="83" x2="139" y2="83" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="139" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="139" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="80.5" y="14" font-size="13" fill="currentColor" text-anchor="middle">c) x − y = 5</text>
-  <line x1="20" y1="70" x2="141" y2="70" stroke="currentColor" stroke-width="1"/>
-  <line x1="48" y1="42" x2="48" y2="163" stroke="currentColor" stroke-width="1"/>
-  <polygon points="151,70 141,75 141,65" fill="currentColor"/>
-  <polygon points="48,32 53,42 43,42" fill="currentColor"/>
-  <polygon points="10,70 20,65 20,75" fill="currentColor"/>
-  <polygon points="48,173 43,163 53,163" fill="currentColor"/>
-  <text x="149" y="62" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="56" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="23.1" y1="159.9" x2="137.9" y2="45.1" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="145,38 141.5,48.6 134.4,41.5" fill="currentColor"/>
-  <polygon points="16,167 19.5,156.4 26.6,163.5" fill="currentColor"/>
-  <circle cx="48" cy="135" r="4" fill="currentColor"/>
-  <circle cx="113" cy="70" r="4" fill="currentColor"/>
-  <text x="59.2" y="155.2" font-size="13" fill="currentColor" text-anchor="start">(0, −5)</text>
-  <text x="101.8" y="58.8" font-size="13" fill="currentColor" text-anchor="end">(5, 0)</text>
-</svg>
-</div>
-  <div class="ap-figure">
-<svg role="img" aria-label="The line y = -2x crosses both axes at the origin (0, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 196" width="148" height="196" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="174" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="174" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="48" y1="174" x2="48" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="61" y1="174" x2="61" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="174" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="174" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="174" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="174" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="174" x2="126" y2="174" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="161" x2="126" y2="161" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="148" x2="126" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="135" x2="126" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="126" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="96" x2="126" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="83" x2="126" y2="83" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="70" x2="126" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="126" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="74" y="14" font-size="13" fill="currentColor" text-anchor="middle">d) y = −2x</text>
-  <line x1="20" y1="109" x2="128" y2="109" stroke="currentColor" stroke-width="1"/>
-  <line x1="74" y1="42" x2="74" y2="176" stroke="currentColor" stroke-width="1"/>
-  <polygon points="138,109 128,114 128,104" fill="currentColor"/>
-  <polygon points="74,32 79,42 69,42" fill="currentColor"/>
-  <polygon points="10,109 20,104 20,114" fill="currentColor"/>
-  <polygon points="74,186 69,176 79,176" fill="currentColor"/>
-  <text x="136" y="101" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="82" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="43" y1="46.9" x2="105" y2="171.1" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="109.5,180 100.6,173.3 109.5,168.8" fill="currentColor"/>
-  <polygon points="38.5,38 47.4,44.7 38.5,49.2" fill="currentColor"/>
-  <circle cx="74" cy="109" r="4" fill="currentColor"/>
-  <text x="62.8" y="129.2" font-size="13" fill="currentColor" text-anchor="end">(0, 0)</text>
-</svg>
-</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 0.5rem; max-width: 30rem; margin: 0 auto">
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Line a, 2x + y = 6, crosses the y-axis at (0, 6) and the x-axis at (3, 0), on a grid with both axes numbered every 1 unit.","xMin":-2,"xMax":5,"yMin":-2,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,6],[3,0]]}],"points":[{"at":[0,6],"label":"(0, 6)"},{"at":[3,0],"label":"(3, 0)"}],"texts":[{"at":[1.5,8.6],"text":"a) 2x + y = 6","anchor":"middle"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Line b, 3x − 4y = 12, crosses the y-axis at (0, −3) and the x-axis at (4, 0), on a grid with both axes numbered every 1 unit.","xMin":-2,"xMax":6,"yMin":-5,"yMax":3,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-3],[4,0]]}],"points":[{"at":[0,-3],"label":"(0, −3)"},{"at":[4,0],"label":"(4, 0)"}],"texts":[{"at":[2,4.6],"text":"b) 3x − 4y = 12","anchor":"middle"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Line c, x − y = 5, crosses the y-axis at (0, −5) and the x-axis at (5, 0), on a grid with both axes numbered every 1 unit.","xMin":-2,"xMax":7,"yMin":-7,"yMax":2,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-5],[5,0]]}],"points":[{"at":[0,-5],"label":"(0, −5)"},{"at":[5,0],"label":"(5, 0)"}],"texts":[{"at":[2.5,3.6],"text":"c) x − y = 5","anchor":"middle"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Line d, y = −2x, crosses both axes at the origin (0, 0), on a grid with both axes numbered every 1 unit.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"slope":-2,"intercept":0}],"points":[{"at":[0,0],"label":"(0, 0)"}],"texts":[{"at":[0,6.6],"text":"d) y = −2x","anchor":"middle"}]}
+{{< /apfigure >}}
+
 </div>
 
 First, notice where each of these lines crosses the $x$-axis:
@@ -225,119 +96,20 @@ line. The $y$-intercept occurs when $x$ is zero.
 
 **Example.** Find the $x$- and $y$-intercepts on each graph.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 0.5rem">
-  <div class="ap-figure">
-<svg role="img" aria-label="The line x + 2y = 4 crosses the x-axis at (4, 0) and the y-axis at (0, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 157" width="148" height="157" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="135" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="135" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="61" y1="135" x2="61" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="135" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="135" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="135" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="135" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="135" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="135" x2="126" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="126" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="109" x2="126" y2="109" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="83" x2="126" y2="83" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="70" x2="126" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="126" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="74" y="14" font-size="13" fill="currentColor" text-anchor="middle">a)</text>
-  <line x1="20" y1="96" x2="128" y2="96" stroke="currentColor" stroke-width="1"/>
-  <line x1="48" y1="42" x2="48" y2="137" stroke="currentColor" stroke-width="1"/>
-  <polygon points="138,96 128,101 128,91" fill="currentColor"/>
-  <polygon points="48,32 53,42 43,42" fill="currentColor"/>
-  <polygon points="10,96 20,91 20,101" fill="currentColor"/>
-  <polygon points="48,147 43,137 53,137" fill="currentColor"/>
-  <text x="136" y="88" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="56" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="123.1" y1="107.5" x2="24.9" y2="58.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="16,54 27.2,54 22.7,62.9" fill="currentColor"/>
-  <polygon points="132,112 120.8,112 125.3,103.1" fill="currentColor"/>
-  <circle cx="100" cy="96" r="4" fill="currentColor"/>
-  <circle cx="48" cy="70" r="4" fill="currentColor"/>
-  <text x="100" y="119" font-size="13" fill="currentColor" text-anchor="middle">(4, 0)</text>
-  <text x="59.2" y="58.8" font-size="13" fill="currentColor" text-anchor="start">(0, 2)</text>
-</svg>
-</div>
-  <div class="ap-figure">
-<svg role="img" aria-label="The line 3x - y = 6 crosses the x-axis at (2, 0) and the y-axis at (0, -6)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 209" width="148" height="209" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="187" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="187" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="48" y1="187" x2="48" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="187" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="187" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="187" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="113" y1="187" x2="113" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="187" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="187" x2="126" y2="187" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="174" x2="126" y2="174" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="161" x2="126" y2="161" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="148" x2="126" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="135" x2="126" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="126" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="109" x2="126" y2="109" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="96" x2="126" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="83" x2="126" y2="83" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="126" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="74" y="14" font-size="13" fill="currentColor" text-anchor="middle">b)</text>
-  <line x1="20" y1="70" x2="128" y2="70" stroke="currentColor" stroke-width="1"/>
-  <line x1="61" y1="42" x2="61" y2="189" stroke="currentColor" stroke-width="1"/>
-  <polygon points="138,70 128,75 128,65" fill="currentColor"/>
-  <polygon points="61,32 66,42 56,42" fill="currentColor"/>
-  <polygon points="10,70 20,65 20,75" fill="currentColor"/>
-  <polygon points="61,199 56,189 66,189" fill="currentColor"/>
-  <text x="136" y="62" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="69" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="94.5" y1="47.5" x2="51.47" y2="176.6" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="48.3,186.1 46.73,175.02 56.21,178.18" fill="currentColor"/>
-  <polygon points="97.7,38 99.2,49.1 89.8,45.9" fill="currentColor"/>
-  <circle cx="87" cy="70" r="4" fill="currentColor"/>
-  <circle cx="61" cy="148" r="4" fill="currentColor"/>
-  <text x="93" y="88" font-size="13" fill="currentColor" text-anchor="start">(2, 0)</text>
-  <text x="75" y="152" font-size="13" fill="currentColor" text-anchor="start">(0, −6)</text>
-</svg>
-</div>
-  <div class="ap-figure">
-<svg role="img" aria-label="The line x + y = -5 crosses the x-axis at (-5, 0) and the y-axis at (0, -5)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161 183" width="161" height="183" font-family="Helvetica, Arial, sans-serif">
-  <line x1="22" y1="161" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="35" y1="161" x2="35" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="48" y1="161" x2="48" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="61" y1="161" x2="61" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="74" y1="161" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="87" y1="161" x2="87" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="100" y1="161" x2="100" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="161" x2="126" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="139" y1="161" x2="139" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="161" x2="139" y2="161" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="148" x2="139" y2="148" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="135" x2="139" y2="135" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="122" x2="139" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="109" x2="139" y2="109" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="96" x2="139" y2="96" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="83" x2="139" y2="83" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="57" x2="139" y2="57" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="22" y1="44" x2="139" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <text x="80.5" y="14" font-size="13" fill="currentColor" text-anchor="middle">c)</text>
-  <line x1="20" y1="70" x2="141" y2="70" stroke="currentColor" stroke-width="1"/>
-  <line x1="113" y1="42" x2="113" y2="163" stroke="currentColor" stroke-width="1"/>
-  <polygon points="151,70 141,75 141,65" fill="currentColor"/>
-  <polygon points="113,32 118,42 108,42" fill="currentColor"/>
-  <polygon points="10,70 20,65 20,75" fill="currentColor"/>
-  <polygon points="113,173 108,163 118,163" fill="currentColor"/>
-  <text x="149" y="62" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="121" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="23.1" y1="45.1" x2="137.9" y2="159.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="145,167 134.4,163.5 141.5,156.4" fill="currentColor"/>
-  <polygon points="16,38 26.6,41.5 19.5,48.6" fill="currentColor"/>
-  <circle cx="48" cy="70" r="4" fill="currentColor"/>
-  <circle cx="113" cy="135" r="4" fill="currentColor"/>
-  <text x="59.2" y="58.8" font-size="13" fill="currentColor" text-anchor="start">(−5, 0)</text>
-  <text x="101.8" y="155.2" font-size="13" fill="currentColor" text-anchor="end">(0, −5)</text>
-</svg>
-</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 0.5rem; max-width: 30rem; margin: 0 auto">
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Panel a: the line x + 2y = 4 crosses the x-axis at (4, 0) and the y-axis at (0, 2), on a grid with both axes numbered every 1 unit.","xMin":-2,"xMax":6,"yMin":-3,"yMax":4,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[4,0],[0,2]]}],"points":[{"at":[4,0],"label":"(4, 0)"},{"at":[0,2],"label":"(0, 2)"}],"texts":[{"at":[2,5.6],"text":"a)","anchor":"middle"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Panel b: the line 3x − y = 6 crosses the x-axis at (2, 0) and the y-axis at (0, −6), on a grid with both axes numbered every 1 unit.","xMin":-3,"xMax":5,"yMin":-9,"yMax":2,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[2,0],[0,-6]]}],"points":[{"at":[2,0],"label":"(2, 0)"},{"at":[0,-6],"label":"(0, −6)"}],"texts":[{"at":[1,3.6],"text":"b)","anchor":"middle"}]}
+{{< /apfigure >}}
+
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Panel c: the line x + y = −5 crosses the x-axis at (−5, 0) and the y-axis at (0, −5), on a grid with both axes numbered every 1 unit.","xMin":-7,"xMax":2,"yMin":-7,"yMax":2,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[-5,0],[0,-5]]}],"points":[{"at":[-5,0],"label":"(−5, 0)"},{"at":[0,-5],"label":"(0, −5)"}],"texts":[{"at":[-2.5,3.6],"text":"c)","anchor":"middle"}]}
+{{< /apfigure >}}
+
 </div>
 
 (a) The graph crosses the $x$-axis at the point $(4, 0)$. The $x$-intercept
@@ -579,55 +351,9 @@ A third point is $(2, 4)$.
 
 **Step 4. Draw the line.**
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the line -x + 2y = 6 through the points (-6, 0), (0, 3), and (2, 4)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.9" y1="174.5" x2="303.1" y2="37.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,33 305.3,41.9 300.8,33" fill="currentColor"/>
-  <polygon points="20,179 26.7,170.1 31.2,179" fill="currentColor"/>
-  <circle cx="46" cy="166" r="4" fill="currentColor"/>
-  <circle cx="166" cy="106" r="4" fill="currentColor"/>
-  <circle cx="206" cy="86" r="4" fill="currentColor"/>
-  <text x="57.2" y="186.2" font-size="13" fill="currentColor" text-anchor="start">(−6, 0)</text>
-  <text x="177.2" y="126.2" font-size="13" fill="currentColor" text-anchor="start">(0, 3)</text>
-  <text x="217.2" y="106.2" font-size="13" fill="currentColor" text-anchor="start">(2, 4)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered every 1 unit from −7 to 7, showing the line −x + 2y = 6 through the points (−6, 0), (0, 3), and (2, 4).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[-6,0],[2,4]]}],"points":[{"at":[-6,0],"label":"(−6, 0)"},{"at":[0,3],"label":"(0, 3)"},{"at":[2,4],"label":"(2, 4)"}]}
+{{< /apfigure >}}
 
 {{< multiplechoice
   question="Which graph shows $x - 2y = 4$?"
@@ -664,55 +390,9 @@ We list the points in the table below and show the graph.
 | $0$ | $-4$ | $(0, -4)$ |
 | $6$ | $4$ | $(6, 4)$ |
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the line 4x - 3y = 12 through the points (3, 0), (0, -4), and (6, 4)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="306" y1="59.3" x2="122.5" y2="304" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="116.5,312 118.5,301 126.5,307" fill="currentColor"/>
-  <polygon points="312,51.3 310,62.3 302,56.3" fill="currentColor"/>
-  <circle cx="226" cy="166" r="4" fill="currentColor"/>
-  <circle cx="166" cy="246" r="4" fill="currentColor"/>
-  <circle cx="286" cy="86" r="4" fill="currentColor"/>
-  <text x="237.2" y="186.2" font-size="13" fill="currentColor" text-anchor="start">(3, 0)</text>
-  <text x="177.2" y="266.2" font-size="13" fill="currentColor" text-anchor="start">(0, −4)</text>
-  <text x="274.8" y="74.8" font-size="13" fill="currentColor" text-anchor="end">(6, 4)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered every 1 unit from −7 to 7, showing the line 4x − 3y = 12 through the points (3, 0), (0, −4), and (6, 4).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"through":[[0,-4],[6,4]]}],"points":[{"at":[3,0],"label":"(3, 0)"},{"at":[0,-4],"label":"(0, −4)"},{"at":[6,4],"label":"(6, 4)"}]}
+{{< /apfigure >}}
 
 {{< graphplot
   question="Graph $5x - 2y = 10$ using the intercepts."
@@ -748,55 +428,9 @@ Let $x = 1$: $y = 5(1) = 5$. Let $x = -1$: $y = 5(-1) = -5$.
 
 Plot the three points, check that they line up, and draw the line.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid showing the steep line y = 5x through the origin and the points (1, 5) and (-1, -5)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="138.8" y1="302.2" x2="193.2" y2="29.8" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="195.2,20 198.1,30.8 188.3,28.8" fill="currentColor"/>
-  <polygon points="136.8,312 133.9,301.2 143.7,303.2" fill="currentColor"/>
-  <circle cx="166" cy="166" r="4" fill="currentColor"/>
-  <circle cx="186" cy="66" r="4" fill="currentColor"/>
-  <circle cx="146" cy="266" r="4" fill="currentColor"/>
-  <text x="177.2" y="186.2" font-size="13" fill="currentColor" text-anchor="start">(0, 0)</text>
-  <text x="200" y="70" font-size="13" fill="currentColor" text-anchor="start">(1, 5)</text>
-  <text x="132" y="270" font-size="13" fill="currentColor" text-anchor="end">(−1, −5)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid with both axes numbered every 1 unit from −7 to 7, showing the steep line y = 5x through the origin and the points (1, 5) and (−1, −5).","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"slope":5,"intercept":0}],"points":[{"at":[0,0],"label":"(0, 0)"},{"at":[1,5],"label":"(1, 5)"},{"at":[-1,-5],"label":"(−1, −5)"}]}
+{{< /apfigure >}}
 
 {{< graphplot
   question="Graph $y = 4x$ using the intercepts."
