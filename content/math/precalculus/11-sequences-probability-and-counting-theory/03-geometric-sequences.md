@@ -42,6 +42,7 @@ $$1\xrightarrow{\ \times6\ }6\xrightarrow{\ \times6\ }36\xrightarrow{\ \times6\ 
 **Example.** Is the sequence geometric? If so, find the common ratio.
 
 a. $1,2,4,8,16,\ldots$
+
 b. $48,12,4,2,\ldots$
 
 **Solution.** Divide each term by the previous term to determine whether a common ratio exists.
@@ -57,11 +58,11 @@ b. $$\tfrac{12}{48}=\tfrac{1}{4}\qquad\tfrac{4}{12}=\tfrac{1}{3}\qquad\tfrac{2}{
 **Analysis.** The graph of each sequence is shown below. It seems from the graphs that both (a) and (b) appear to have the form of the graph of an exponential function in this viewing window. However, we know that (a) is geometric and so this interpretation holds, but (b) is not.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of five points showing a geometric sequence, labeled (a): (1, 1), (2, 2), (3, 4), (4, 8), and (5, 16), rising steeply as n increases.","xMin":0,"xMax":6,"yMin":0,"yMax":20,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"unit":44,"yUnit":10,"yGridStep":4,"yTickStep":4,"points":[{"at":[1,1]},{"at":[2,2]},{"at":[3,4]},{"at":[4,8]},{"at":[5,16]}]}
+{"ariaLabel":"Panel (a): a scatter plot of five points, (1, 1), (2, 2), (3, 4), (4, 8), and (5, 16), rising more steeply as n increases.","xMin":0,"xMax":6,"yMin":0,"yMax":20,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"unit":44,"yUnit":10,"yGridStep":4,"yTickStep":4,"points":[{"at":[1,1]},{"at":[2,2]},{"at":[3,4]},{"at":[4,8]},{"at":[5,16]}],"texts":[{"at":[3,-4],"text":"(a)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of four points showing a non-geometric sequence, labeled (b): (1, 48), (2, 12), (3, 4), and (4, 2), dropping sharply as n increases.","xMin":0,"xMax":6,"yMin":0,"yMax":60,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"unit":44,"yUnit":4,"yGridStep":12,"yTickStep":12,"points":[{"at":[1,48]},{"at":[2,12]},{"at":[3,4]},{"at":[4,2]}]}
+{"ariaLabel":"Panel (b): a scatter plot of four points, (1, 48), (2, 12), (3, 4), and (4, 2), dropping sharply and then leveling off as n increases.","xMin":0,"xMax":6,"yMin":0,"yMax":60,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"unit":44,"yUnit":4,"yGridStep":12,"yTickStep":12,"points":[{"at":[1,48]},{"at":[2,12]},{"at":[3,4]},{"at":[4,2]}],"texts":[{"at":[3,-10],"text":"(b)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -91,9 +92,9 @@ not geometric
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the common ratio of the geometric sequence $100,20,4,\tfrac{4}{5},\ldots$, as a fraction."
-  answer="\tfrac{1}{5}"
-  answerForm="fraction"
+  question="Find the common ratio of the geometric sequence $100,20,4,\tfrac{4}{5},\ldots$, as a fraction in lowest terms."
+  answer="\frac{1}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{5}$"
   hint="Divide the second term by the first term."
 >}}
@@ -138,7 +139,8 @@ The first four terms are $5,-10,20,-40$.
 
 {{< fillin
   question="List the first five terms of the geometric sequence with $a_1=18$ and $r=\tfrac{1}{3}$. Enter the first five terms, in order, separated by commas."
-  answer="18,6,2,2/3,2/9"
+  answer="18,6,2,\frac{2}{3},\frac{2}{9}"
+  answerForm="lowest-terms"
   answerDisplay="$18,6,2,\tfrac{2}{3},\tfrac{2}{9}$"
   hint="Multiply each term by $\tfrac13$ to get the next one, starting from $a_1=18$."
 >}}
@@ -192,14 +194,9 @@ $$
 {{< /callout >}}
 
 {{< fillin
-  question="Find the initial term $a_1$ of the geometric sequence $2,\tfrac{4}{3},\tfrac{8}{9},\tfrac{16}{27},\ldots$."
-  answer="2"
-  hint="The initial term is simply the first number listed."
->}}
-
-{{< fillin
   question="Find the recursive formula for the geometric sequence $2,\tfrac{4}{3},\tfrac{8}{9},\tfrac{16}{27},\ldots$, in the form $a_n=\ldots$ (in terms of $a_{n-1}$) for $n\ge2$."
-  answer="a_n=\tfrac{2}{3}a_{n-1}"
+  answer="a_n=\frac{2}{3}a_{n-1}"
+  answerForm="no-like-terms"
   answerDisplay="$a_n=\tfrac{2}{3}a_{n-1}$"
   hint="Divide the second term by the first term to find the common ratio, then substitute it into $a_n=ra_{n-1}$."
 >}}
@@ -249,9 +246,9 @@ Find the second term by multiplying the first term by the common ratio.
 
 $$
 \begin{array}{lrcl}
-a_2 &=& 2a_1 \\[4pt]
-&=& 2(3) \\[4pt]
-&=& 6
+& a_2 &=& 2a_1 \\[4pt]
+& &=& 2(3) \\[4pt]
+& &=& 6
 \end{array}
 $$
 
@@ -260,6 +257,7 @@ $$
 {{< fillin
   question="Given a geometric sequence with $a_2=4$ and $a_3=32$, find $a_6$."
   answer="16384"
+  answerForm="decimal"
   answerDisplay="$a_6=16{,}384$"
   hint="Find $r$ from $\tfrac{a_3}{a_2}$, then find $a_1$ and multiply forward to $a_6$, or scale $a_2$ by $r^4$."
 >}}
@@ -303,6 +301,7 @@ $$a_n=a_0r^n$$
 **Example.** In 2013, the number of students in a small school is 284. It is estimated that the student population will increase by 4% each year.
 
 a. Write a formula for the student population.
+
 b. Estimate the student population in 2020.
 
 **Solution.**
@@ -325,9 +324,10 @@ b. We can find the number of years since 2013 by subtracting.
 
 {{< fillin
   question="A business starts a new website. Initially the number of hits is 293 due to the curiosity factor. The business estimates the number of hits will increase by 2.6% per week. Write a formula for the number of hits after $n$ weeks."
-  answer="P_n=293\cdot1.026^n"
+  answer="293\cdot1.026^n"
+  answerForm="exponential-model"
   answerDisplay="$P_n=293\cdot1.026^n$"
-  hint="The number of hits is 102.6% of the prior week's, so the common ratio is 1.026; use the explicit formula with an initial term of $a_0=293$."
+  hint="Turn the weekly percent increase into a growth factor, then use $a_n=a_0r^n$ with the initial number of hits as $a_0$."
 >}}
 
 {{< fillin
@@ -365,6 +365,7 @@ b. We can find the number of years since 2013 by subtracting.
 {{< fillin
   question="Find the common ratio for the geometric sequence $-0.125,0.25,-0.5,1,-2,\ldots$."
   answer="-2"
+  answerForm="decimal"
   hint="Divide the second term by the first term."
 >}}
 
@@ -381,6 +382,7 @@ not geometric
 {{< fillin
   question="Find the common ratio of the geometric sequence $-6,-12,-24,-48,-96,\ldots$."
   answer="2"
+  answerForm="decimal"
   hint="Divide any term by the term immediately before it."
 >}}
 
@@ -388,7 +390,8 @@ not geometric
 
 {{< fillin
   question="Write the first five terms of the geometric sequence with $a_1=5$ and $r=\tfrac{1}{5}$. Enter the first five terms, in order, separated by commas."
-  answer="5,1,1/5,1/25,1/125"
+  answer="5,1,\frac{1}{5},\frac{1}{25},\frac{1}{125}"
+  answerForm="lowest-terms"
   answerDisplay="$5,1,\tfrac{1}{5},\tfrac{1}{25},\tfrac{1}{125}$"
   hint="Multiply each term by $\tfrac15$ to get the next one, starting from $a_1=5$."
 >}}
@@ -396,6 +399,7 @@ not geometric
 {{< fillin
   question="A geometric sequence with a positive common ratio has $a_6=25$ and $a_8=6.25$. Write the first five terms of the sequence, in order, separated by commas."
   answer="800,400,200,100,50"
+  answerForm="decimal"
   hint="Use $a_8=a_6r^2$ to solve for the positive common ratio, then find $a_1$ from $a_6=a_1r^5$ and multiply forward."
 >}}
 
@@ -404,18 +408,14 @@ not geometric
 {{< fillin
   question="A geometric sequence has $a_1=7$ and recursive formula $a_n=0.2a_{n-1}$. Write the first five terms of the sequence, in order, separated by commas."
   answer="7,1.4,0.28,0.056,0.0112"
+  answerForm="decimal"
   hint="Start at $a_1=7$ and repeatedly multiply by $0.2$."
 >}}
 
 {{< fillin
-  question="Find the initial term $a_1$ of the geometric sequence $-32,-16,-8,-4,\ldots$."
-  answer="-32"
-  hint="The initial term is simply the first number listed."
->}}
-
-{{< fillin
   question="Find the recursive formula for the geometric sequence $-32,-16,-8,-4,\ldots$, in the form $a_n=\ldots$ (in terms of $a_{n-1}$) for $n\ge2$."
-  answer="a_n=\tfrac{1}{2}a_{n-1}"
+  answer="a_n=\frac{1}{2}a_{n-1}"
+  answerForm="no-like-terms"
   answerDisplay="$a_n=\tfrac{1}{2}a_{n-1}$"
   hint="Divide a term by the one before it to find the common ratio, then substitute it into $a_n=ra_{n-1}$."
 >}}
@@ -424,7 +424,8 @@ not geometric
 
 {{< fillin
   question="Write the first five terms of the geometric sequence $a_n=12\cdot\left(-\tfrac{1}{2}\right)^{n-1}$. Enter the first five terms, in order, separated by commas."
-  answer="12,-6,3,-3/2,3/4"
+  answer="12,-6,3,-\frac{3}{2},\frac{3}{4}"
+  answerForm="lowest-terms"
   answerDisplay="$12,-6,3,-\tfrac{3}{2},\tfrac{3}{4}$"
   hint="Substitute $n=1,2,3,4,5$ into the formula."
 >}}
@@ -438,4 +439,4 @@ not geometric
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.3: Geometric Sequences](https://openstax.org/books/precalculus-2e/pages/11-3-geometric-sequences) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Learning Objectives" keyed to Intermediate Algebra 12.3.1–12.3.2, with a "Determine if a sequence is geometric" / "Find the general term" pair of objectives, an antibiotic-dosage Try It, and "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, true page 1126 (printed page 1116), where the previous section's Extensions exercises run directly into the "11.3 Geometric Sequences" heading, objectives, and the salary-increase paragraph with no corequisite-skills material between them; the same prepended-block pattern recurring in other chapters' opening modules. Recreated the introductory arrows-and-labels figure ($1\xrightarrow{\times6}6\xrightarrow{\times6}36\cdots$, showing the sequence $\{1,6,36,216,1{,}296,\ldots\}$ with each arrow marked "×6") as an inline KaTeX display using `\xrightarrow`, since the arrows encode no information beyond the constant-factor relationship already stated in the surrounding sentence, and the figure engine has no primitive for annotated inline arrows between numerals. Recreated the four remaining instructional figures as accessible spec-first scatter plots, each `points`-only with no connecting curve (matching the source art exactly): the two-panel Figure 1 (Example 1's Analysis) as two separate `apfigure`s per house convention for a two-panel source figure, both unlabeled per point exactly as the source prints them, and the three single-panel figures (Example 3's Analysis, and the two graphs shown in the "Using Explicit Formulas for Geometric Sequences" subsection) likewise unlabeled per point. Every figure's `unit`/`yUnit` pair was chosen to keep the plotted window close to square per this chapter's convention, compared against its source page, and re-rendered until no label overlapped another label, a point, or an axis tick. Corrected a source typo in the How To numbered list under "Given the first term and the common factor, find the first four terms of a geometric sequence" (step 3 prints "Write the terms separated by commons within brackets," which is an evident spelling defect for "commas," corrected here) and a source typo in the closing application Try It, whose printed formula key is "$P_{n}=293\cdot1.026a^{n}$" (an extraneous "a" inconsistent with the pattern of the immediately preceding worked Example 6, $P_n=284\cdot1.04^n$, and with the printed answer of "about 333" hits, which only follows from $P_n=293\cdot1.026^n$, independently confirmed by computing $P_5=293\cdot1.026^5\approx333.12$); both are non-mathematical transcription slips, reproduced here in corrected form since they are locally-authored-adjacent scaffolding (a procedural instruction and a keyed formula), not printed exposition requiring a visible source note. Omitted the three external-resource links under the Media callout, keeping its introductory sentence, matching this book's prevailing convention (most authored sections in this book omit the list; a minority keep one item). "Is the sequence geometric?" asks are `multiplechoice` (categorical, never a coded digit), with the common ratio keyed as a separate `fillin` whenever the source also asks for it; the one ratio result that is a proper fraction ($\tfrac15$) states "as a fraction" and declares `answerForm="fraction"`, confirmed against the real grader to refuse a bare decimal retype. Every recursive-formula Try It and Practice item pins the requested shape ("in the form $a_n=\ldots$, in terms of $a_{n-1}$, for $n\ge2$") and keys the initial term as its own separate fill-in, since the grader accepts reordered and rescaled restatements of a correct recursive rule but treats a shifted index or a wrong sign as a different rule; the source's own Algebraic-exercise key states both parts together (e.g. "$a_1=-32,a_n=\tfrac12a_{n-1}$"), split here into two components per the multipart-expansion rule. Algebraic exercise #17 ("write the first five terms of the geometric sequence, given any two terms," $a_6=25,a_8=6.25$) is mathematically satisfied by two common ratios, $r=\pm0.5$, since only $r^2$ is determined by the given terms; the source's own key ($800,400,200,100,50$) uses the positive branch only, so the question here states "a geometric sequence with a positive common ratio" to pin that choice, per the rule for an answer that depends on a choice the source leaves open. Eight selected end-of-section Algebraic exercises were adapted into the interactive components of the closing Practice block, one Practice group per objective, every one independently re-derived — including by running the arithmetic in Node with exact-rational tracking for every fraction — rather than read off the source key; the two Graphical-section exercises ("determine whether the graph shown represents a geometric sequence") were not used, since incorporating them would have required two additional figures beyond this section's four, and the section's four objectives are fully covered without them.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.3: Geometric Sequences](https://openstax.org/books/precalculus-2e/pages/11-3-geometric-sequences) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Learning Objectives" keyed to Intermediate Algebra 12.3.1–12.3.2, with a "Determine if a sequence is geometric" / "Find the general term" pair of objectives, an antibiotic-dosage Try It, and "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, true page 1126 (printed page 1116), where the previous section's Extensions exercises run directly into the "11.3 Geometric Sequences" heading, objectives, and the salary-increase paragraph with no corequisite-skills material between them; the same prepended-block pattern recurring in other chapters' opening modules. Recreated the introductory arrows-and-labels figure ($1\xrightarrow{\times6}6\xrightarrow{\times6}36\cdots$, showing the sequence $\{1,6,36,216,1{,}296,\ldots\}$ with each arrow marked "×6") as an inline KaTeX display using `\xrightarrow`, since the arrows encode no information beyond the constant-factor relationship already stated in the surrounding sentence, and the figure engine has no primitive for annotated inline arrows between numerals. Recreated the four remaining instructional figures as accessible spec-first scatter plots, each `points`-only with no connecting curve (matching the source art exactly): the two-panel Figure 1 (Example 1's Analysis) as two separate `apfigure`s per house convention for a two-panel source figure, each carrying its panel label "(a)" or "(b)" beneath its axis as the source does, both unlabeled per point exactly as the source prints them, and the three single-panel figures (Example 3's Analysis, and the two graphs shown in the "Using Explicit Formulas for Geometric Sequences" subsection) likewise unlabeled per point. Every figure's `unit`/`yUnit` pair was chosen to keep the plotted window close to square per this chapter's convention, compared against its source page, and re-rendered until no label overlapped another label, a point, or an axis tick. Corrected a source typo in the How To numbered list under "Given the first term and the common factor, find the first four terms of a geometric sequence" (step 3 prints "Write the terms separated by commons within brackets," which is an evident spelling defect for "commas," corrected here) and a source typo in the closing application Try It, whose printed formula key is "$P_{n}=293\cdot1.026a^{n}$" (an extraneous "a" inconsistent with the pattern of the immediately preceding worked Example 6, $P_n=284\cdot1.04^n$, and with the printed answer of "about 333" hits, which only follows from $P_n=293\cdot1.026^n$, independently confirmed by computing $P_5=293\cdot1.026^5\approx333.12$); both are non-mathematical transcription slips, reproduced here in corrected form. Three further slips are corrected the same way: Example 1's Analysis reads "appear to have the form" where the source prints "appear have the form"; the same How To's step 2 reads "using $a_2$ to find $a_3$ and then $a_3$ to find $a_4$" where the source prints "using $a_n=a_2$ to find $a_3$" and a stray comma inside the subscript of $a_4$; and Example 4's first step reads "Write the fourth term of the sequence in terms of $a_1$ and $r$" where the source prints "of sequence in terms of $\alpha_1$" (a Greek alpha for $a$). Omitted the three external-resource links under the Media callout, keeping its introductory sentence, matching this book's prevailing convention (most authored sections in this book omit the list; a minority keep one item). "Is the sequence geometric?" asks are `multiplechoice` (categorical, never a coded digit), with the common ratio keyed as a separate `fillin` whenever the source also asks for it; the one ratio result that is a proper fraction ($\tfrac15$) states "as a fraction in lowest terms" and declares `answerForm="fraction lowest-terms"`, confirmed against the real grader to refuse both a decimal and the unreduced quotient $\tfrac{20}{100}$. Every recursive-formula Try It and Practice item pins the requested shape ("in the form $a_n=\ldots$, in terms of $a_{n-1}$, for $n\ge2$"), since the grader accepts reordered and rescaled restatements of a correct recursive rule but treats a shifted index or a wrong sign as a different rule; the source's own Algebraic-exercise key states the initial term beside the rule (e.g. "$a_1=-32,a_n=\tfrac12a_{n-1}$"), and the initial term, which is the first listed term, is not asked as a separate fill-in. Algebraic exercise #17 ("write the first five terms of the geometric sequence, given any two terms," $a_6=25,a_8=6.25$) is mathematically satisfied by two common ratios, $r=\pm0.5$, since only $r^2$ is determined by the given terms; the source's own key ($800,400,200,100,50$) uses the positive branch only, so the question here states "a geometric sequence with a positive common ratio" to pin that choice, per the rule for an answer that depends on a choice the source leaves open. Eight selected end-of-section Algebraic exercises were adapted into the interactive components of the closing Practice block, one Practice group per objective, every one independently re-derived — including by running the arithmetic in Node with exact-rational tracking for every fraction — rather than read off the source key; the two Graphical-section exercises ("determine whether the graph shown represents a geometric sequence") were not used, since incorporating them would have required two additional figures beyond this section's four, and the section's four objectives are fully covered without them.</small>

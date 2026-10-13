@@ -80,9 +80,9 @@ Knowing the properties of limits allows us to compute limits directly. We can ad
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to3}(2x+5)=\lim\limits_{x\to3}(2x)+\lim\limits_{x\to3}(5) & \text{Sum of functions property} \\
-=2\lim\limits_{x\to3}(x)+\lim\limits_{x\to3}(5) & \text{Constant times a function property} \\
-=2(3)+5 & \text{Evaluate} \\
+\lim\limits_{x\to3}(2x+5)=\lim\limits_{x\to3}(2x)+\lim\limits_{x\to3}(5) & \text{Sum of functions property} \\[4pt]
+=2\lim\limits_{x\to3}(x)+\lim\limits_{x\to3}(5) & \text{Constant times a function property} \\[4pt]
+=2(3)+5 & \text{Evaluate} \\[4pt]
 =11 &
 \end{array}
 $$
@@ -114,8 +114,8 @@ Not all functions or their limits involve simple addition, subtraction, or multi
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to3}(5x^2)=5\lim\limits_{x\to3}(x^2) & \text{Constant times a function property} \\
-=5(3^2) & \text{Function raised to an exponent property} \\
+\lim\limits_{x\to3}(5x^2)=5\lim\limits_{x\to3}(x^2) & \text{Constant times a function property} \\[4pt]
+=5(3^2) & \text{Function raised to an exponent property} \\[4pt]
 =45 &
 \end{array}
 $$
@@ -134,9 +134,9 @@ $$
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to5}(2x^3-3x+1)=\lim\limits_{x\to5}(2x^3)-\lim\limits_{x\to5}(3x)+\lim\limits_{x\to5}(1) & \text{Sum of functions} \\
-=2\lim\limits_{x\to5}(x^3)-3\lim\limits_{x\to5}(x)+\lim\limits_{x\to5}(1) & \text{Constant times a function} \\
-=2(5^3)-3(5)+1 & \text{Function raised to an exponent} \\
+\lim\limits_{x\to5}(2x^3-3x+1)=\lim\limits_{x\to5}(2x^3)-\lim\limits_{x\to5}(3x)+\lim\limits_{x\to5}(1) & \text{Sum of functions} \\[4pt]
+=2\lim\limits_{x\to5}(x^3)-3\lim\limits_{x\to5}(x)+\lim\limits_{x\to5}(1) & \text{Constant times a function} \\[4pt]
+=2(5^3)-3(5)+1 & \text{Function raised to an exponent} \\[4pt]
 =236 & \text{Evaluate}
 \end{array}
 $$
@@ -159,9 +159,9 @@ When a limit includes a power or a root, we need another property to help us eva
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to2}(3x+1)^5=\left(\lim\limits_{x\to2}(3x+1)\right)^5 & \\
-=(3(2)+1)^5 & \\
-=7^5 & \\
+\lim\limits_{x\to2}(3x+1)^5=\left(\lim\limits_{x\to2}(3x+1)\right)^5 & \\[4pt]
+=(3(2)+1)^5 & \\[4pt]
+=7^5 & \\[4pt]
 =16{,}807 &
 \end{array}
 $$
@@ -175,7 +175,7 @@ $$
 >}}
 
 {{< callout type="info" >}}
-  **Q&A.** *If we can't directly apply the properties of a limit, for example in $\lim_{x\to2}\left(\tfrac{x^2+6x+8}{x-2}\right)$, can we still determine the limit of the function as $x$ approaches $a$?*
+  **Q&A.** *If we can't directly apply the properties of a limit, for example in $\lim_{x\to2}\left(\tfrac{x^2-6x+8}{x-2}\right)$, can we still determine the limit of the function as $x$ approaches $a$?*
 
   Yes. Some functions may be algebraically rearranged so that one can evaluate the limit of a simplified equivalent form of the function.
 {{< /callout >}}
@@ -198,8 +198,8 @@ Finding the limit of a function expressed as a quotient can be more complicated.
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to2}\left(\tfrac{x^2-6x+8}{x-2}\right)=\lim\limits_{x\to2}\left(\tfrac{(x-2)(x-4)}{x-2}\right) & \text{Factor the numerator} \\
-=\lim\limits_{x\to2}(x-4) & \text{Cancel the common factors} \\
+\lim\limits_{x\to2}\left(\tfrac{x^2-6x+8}{x-2}\right)=\lim\limits_{x\to2}\left(\tfrac{(x-2)(x-4)}{x-2}\right) & \text{Factor the numerator} \\[4pt]
+=\lim\limits_{x\to2}(x-4) & \text{Cancel the common factors} \\[4pt]
 =2-4=-2 &
 \end{array}
 $$
@@ -211,7 +211,7 @@ $$
   answer="-3"
   answerForm="decimal"
   answerDisplay="$-3$"
-  hint="Factor the numerator as $(x-4)(x-7)$ and rewrite $7-x$ as $-(x-7)$ before canceling."
+  hint="Factor the numerator, write $7-x$ as $-(x-7)$, and cancel the common factor before substituting."
 >}}
 
 **Example.** Evaluate $\lim_{x\to5}\left(\tfrac{\tfrac1x-\tfrac15}{x-5}\right)$.
@@ -220,12 +220,12 @@ $$
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to5}\left(\tfrac{\tfrac1x-\tfrac15}{x-5}\right)=\lim\limits_{x\to5}\left(\tfrac{5x\left(\tfrac1x-\tfrac15\right)}{5x(x-5)}\right) & \text{Multiply the numerator and denominator by the LCD} \\
-=\lim\limits_{x\to5}\left(\tfrac{5x\left(\tfrac1x\right)-5x\left(\tfrac15\right)}{5x(x-5)}\right) & \text{Apply the distributive property} \\
-=\lim\limits_{x\to5}\left(\tfrac{5-x}{5x(x-5)}\right) & \text{Simplify} \\
-=\lim\limits_{x\to5}\left(\tfrac{-1(x-5)}{5x(x-5)}\right) & \text{Factor the numerator} \\
-=\lim\limits_{x\to5}\left(-\tfrac{1}{5x}\right) & \text{Cancel the common factor} \\
-=-\tfrac{1}{5(5)} & \text{Evaluate for } x=5 \\
+\lim\limits_{x\to5}\left(\tfrac{\tfrac1x-\tfrac15}{x-5}\right)=\lim\limits_{x\to5}\left(\tfrac{5x\left(\tfrac1x-\tfrac15\right)}{5x(x-5)}\right) & \text{Multiply the numerator and denominator by the LCD} \\[4pt]
+=\lim\limits_{x\to5}\left(\tfrac{5x\left(\tfrac1x\right)-5x\left(\tfrac15\right)}{5x(x-5)}\right) & \text{Apply the distributive property} \\[4pt]
+=\lim\limits_{x\to5}\left(\tfrac{5-x}{5x(x-5)}\right) & \text{Simplify} \\[4pt]
+=\lim\limits_{x\to5}\left(\tfrac{-1(x-5)}{5x(x-5)}\right) & \text{Factor the numerator} \\[4pt]
+=\lim\limits_{x\to5}\left(-\tfrac{1}{5x}\right) & \text{Cancel the common factor} \\[4pt]
+=-\tfrac{1}{5(5)} & \text{Evaluate for } x=5 \\[4pt]
 =-\tfrac{1}{25} &
 \end{array}
 $$
@@ -256,11 +256,11 @@ $$
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to0}\left(\tfrac{\sqrt{25-x}-5}{x}\right)=\lim\limits_{x\to0}\left(\tfrac{\sqrt{25-x}-5}{x}\cdot\tfrac{\sqrt{25-x}+5}{\sqrt{25-x}+5}\right) & \text{Multiply the numerator and denominator by the conjugate} \\
-=\lim\limits_{x\to0}\left(\tfrac{(25-x)-25}{x(\sqrt{25-x}+5)}\right) & \text{Multiply: }(\sqrt{25-x}-5)(\sqrt{25-x}+5)=(25-x)-25 \\
-=\lim\limits_{x\to0}\left(\tfrac{-x}{x(\sqrt{25-x}+5)}\right) & \text{Combine like terms} \\
-=\lim\limits_{x\to0}\left(\tfrac{-1}{\sqrt{25-x}+5}\right) & \text{Simplify }\tfrac{-x}{x}=-1 \\
-=\tfrac{-1}{\sqrt{25-0}+5} & \text{Evaluate} \\
+\lim\limits_{x\to0}\left(\tfrac{\sqrt{25-x}-5}{x}\right)=\lim\limits_{x\to0}\left(\tfrac{\sqrt{25-x}-5}{x}\cdot\tfrac{\sqrt{25-x}+5}{\sqrt{25-x}+5}\right) & \text{Multiply the numerator and denominator by the conjugate} \\[4pt]
+=\lim\limits_{x\to0}\left(\tfrac{(25-x)-25}{x(\sqrt{25-x}+5)}\right) & \text{Multiply: }(\sqrt{25-x}-5)(\sqrt{25-x}+5)=(25-x)-25 \\[4pt]
+=\lim\limits_{x\to0}\left(\tfrac{-x}{x(\sqrt{25-x}+5)}\right) & \text{Combine like terms} \\[4pt]
+=\lim\limits_{x\to0}\left(\tfrac{-1}{\sqrt{25-x}+5}\right) & \text{Simplify }\tfrac{-x}{x}=-1 \\[4pt]
+=\tfrac{-1}{\sqrt{25-0}+5} & \text{Evaluate} \\[4pt]
 =\tfrac{-1}{5+5}=-\tfrac{1}{10} &
 \end{array}
 $$
@@ -281,10 +281,10 @@ $$
 
 $$
 \begin{array}{ll}
-\lim\limits_{x\to4}\left(\tfrac{4-x}{\sqrt{x}-2}\right)=\lim\limits_{x\to4}\left(\tfrac{(2+\sqrt{x})(2-\sqrt{x})}{\sqrt{x}-2}\right) & \text{Factor} \\
-=\lim\limits_{x\to4}\left(\tfrac{(2+\sqrt{x})(2-\sqrt{x})}{-(2-\sqrt{x})}\right) & \text{Factor }-1\text{ out of the denominator; simplify} \\
-=\lim\limits_{x\to4}-(2+\sqrt{x}) & \text{Evaluate} \\
-=-(2+\sqrt4) & \\
+\lim\limits_{x\to4}\left(\tfrac{4-x}{\sqrt{x}-2}\right)=\lim\limits_{x\to4}\left(\tfrac{(2+\sqrt{x})(2-\sqrt{x})}{\sqrt{x}-2}\right) & \text{Factor} \\[4pt]
+=\lim\limits_{x\to4}\left(\tfrac{(2+\sqrt{x})(2-\sqrt{x})}{-(2-\sqrt{x})}\right) & \text{Factor }{-1}\text{ out of the denominator; simplify} \\[4pt]
+=\lim\limits_{x\to4}-(2+\sqrt{x}) & \text{Evaluate} \\[4pt]
+=-(2+\sqrt4) & \\[4pt]
 =-4 &
 \end{array}
 $$
@@ -317,16 +317,13 @@ Right-hand limit: $\tfrac{|7.1-7|}{7.1-7}=\tfrac{|7.01-7|}{7.01-7}=\tfrac{|7.001
 
 Since the left- and right-hand limits are not equal, there is no limit.
 
-{{< multiplechoice
-  question="Evaluate $\lim_{x\to6^+}\tfrac{6-x}{|x-6|}$ (the right-hand limit as $x$ approaches $6$)."
+{{< fillin
+  question="Evaluate the right-hand limit of $\tfrac{6-x}{|x-6|}$ as $x$ approaches $6$."
   answer="-1"
-  hint="For $x$ slightly greater than $6$, $x-6>0$, so $|x-6|=x-6$; simplify the resulting quotient."
+  answerForm="decimal"
+  answerDisplay="$-1$"
+  hint="For $x$ slightly greater than $6$, decide the sign of $x-6$, rewrite the absolute value without its bars, and simplify the quotient."
 >}}
-1
--1
-0
-does not exist
-{{< /multiplechoice >}}
 
 ## Key concepts
 
@@ -345,26 +342,19 @@ does not exist
 ### Find the limit of a sum, a difference, and a product
 
 {{< fillin
-  question="For the limit $\lim_{x\to3}(2x+5)=11$, worked out using the Sum of functions and Constant times a function properties, identify $a$."
-  answer="3"
-  answerForm="decimal"
-  answerDisplay="$a=3$"
-  hint="$a$ is the value $x$ approaches, printed under the $\lim$."
+  question="Evaluate: $\lim_{x\to2}\left(\tfrac{-5x}{x^2-1}\right)$. Enter the answer as a fraction in lowest terms."
+  answer="-\frac{10}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{10}{3}$"
+  hint="Find the limit of the numerator with the constant-times-a-function property and of the denominator with the difference property; the denominator's limit is not zero, so divide the two."
 >}}
 
 {{< fillin
-  question="For the limit $\lim_{x\to3}(2x+5)=11$, identify $f(x)$."
-  answer="2x+5"
-  answerDisplay="$f(x)=2x+5$"
-  hint="$f(x)$ is the expression inside the limit, before any property is applied."
->}}
-
-{{< fillin
-  question="For the limit $\lim_{x\to3}(2x+5)=11$, identify $L$, the value of the limit."
-  answer="11"
-  answerForm="decimal"
-  answerDisplay="$L=11$"
-  hint="$L$ is the number the limit evaluates to."
+  question="Given $\lim_{x\to c}f(x)=3$ and $\lim_{x\to c}g(x)=5$, evaluate $\lim_{x\to c}\left[2f(x)+\sqrt{g(x)}\right]$."
+  answer="6+\sqrt{5}"
+  answerForm="exact simplified-radical no-like-terms"
+  answerDisplay="$6+\sqrt{5}$"
+  hint="Apply the constant-multiple and sum properties to $2f(x)$, and the root property to $\sqrt{g(x)}$, then substitute the given limits."
 >}}
 
 {{< multiplechoice
@@ -392,11 +382,11 @@ A polynomial function
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Let $f(x)=\begin{cases} 2x^2+2x+1, & x\le0 \\ x-3, & x>0 \end{cases}$. Find $\lim_{x\to0^+}f(x)$."
+  question="Let $f(x)=\begin{cases} 2x^2+2x+1, & x\le0 \\ x-3, & x>0 \end{cases}$. Find the right-hand limit of $f(x)$ as $x$ approaches $0$."
   answer="-3"
   answerForm="decimal"
   answerDisplay="$-3$"
-  hint="For $x>0$, $f(x)=x-3$; evaluate this polynomial branch at $x=0$."
+  hint="Use the branch that defines $f$ for inputs just to the right of $0$; its limit is found by direct substitution."
 >}}
 
 {{< multiplechoice
@@ -413,34 +403,27 @@ The limit exists and equals the value of the $x>0$ branch at $x=0$
 ### Find the limit of a power or a root
 
 {{< fillin
-  question="Given $\lim_{x\to c}f(x)=3$ and $\lim_{x\to c}g(x)=5$, evaluate $\lim_{x\to c}\left[2f(x)+\sqrt{g(x)}\right]$."
-  answer="6+\sqrt{5}"
-  answerForm="exact"
-  answerDisplay="$6+\sqrt{5}$"
-  hint="Apply the constant-multiple and sum properties to $2f(x)$, and the root property to $\sqrt{g(x)}$, then substitute the given limits."
->}}
-
-{{< fillin
-  question="For the limit $\lim_{x\to2}(3x+1)^5=16{,}807$, identify $a$."
-  answer="2"
+  question="Evaluate: $\lim_{h\to0}\left(\tfrac{(2-h)^3-8}{h}\right)$."
+  answer="-12"
   answerForm="decimal"
-  answerDisplay="$a=2$"
-  hint="$a$ is the value $x$ approaches, printed under the $\lim$."
+  answerDisplay="$-12$"
+  hint="Expand the cube, cancel the constant terms in the numerator, divide every remaining term by $h$, then let $h\to0$."
 >}}
 
 {{< fillin
-  question="For the limit $\lim_{x\to2}(3x+1)^5=16{,}807$, identify $f(x)$, the function whose limit is being taken."
-  answer="(3x+1)^5"
-  answerDisplay="$f(x)=(3x+1)^5$"
-  hint="$f(x)$ is the entire expression inside the limit, including the power."
->}}
-
-{{< fillin
-  question="For the limit $\lim_{x\to2}(3x+1)^5=16{,}807$, identify $L$, the value of the limit."
-  answer="16807"
+  question="Evaluate: $\lim_{x\to9}\left(\tfrac{x^2-81}{3-\sqrt{x}}\right)$."
+  answer="-108"
   answerForm="decimal"
-  answerDisplay="$16{,}807$"
-  hint="$L$ is the number the limit evaluates to."
+  answerDisplay="$-108$"
+  hint="Factor the numerator as a difference of squares, then treat $x-9$ as a difference of squares in $\sqrt{x}$ so a factor cancels with $3-\sqrt{x}$; watch the sign."
+>}}
+
+{{< fillin
+  question="Evaluate: $\lim_{x\to0}\left(\tfrac{x}{\sqrt{1+2x}-1}\right)$."
+  answer="1"
+  answerForm="decimal"
+  answerDisplay="$1$"
+  hint="Multiply the numerator and denominator by the conjugate of the denominator, simplify, and cancel the factor of $x$ before substituting."
 >}}
 
 ### Find the limit of a quotient
@@ -475,7 +458,7 @@ The limit does not exist because the expression is unbounded as $x$ approaches $
 {{< fillin
   question="For $f(x)=x^2+4x-100$, find the average rate of change $\tfrac{f(x+h)-f(x)}{h}$."
   answer="2x+h+4"
-  answerForm="polynomial"
+  answerForm="polynomial no-like-terms"
   answerDisplay="$2x+h+4$"
   hint="Expand $f(x+h)$, subtract $f(x)$, then divide every term by $h$."
 >}}
@@ -502,7 +485,7 @@ $\sqrt{x+h}-\sqrt{x}$
 {{< multiplechoice
   question="Which equation could be represented by the graph below?"
   answer="$f(x)=\tfrac{x^2+5x+6}{x+3}$"
-  hint="The graph is the line $y=x+2$ with a hole at $x=-3$; a rational function whose numerator and denominator share the factor $x+3$ is undefined exactly there."
+  hint="Read the line and the hole from the graph; the right quotient reduces to that line and is undefined only at the hole's $x$-value."
 >}}
 $f(x)=\tfrac{x^2+x-6}{x-2}$
 $f(x)=x+2$
@@ -511,7 +494,7 @@ $f(x)=\tfrac{x^2+5x+6}{x+2}$
 {{< /multiplechoice >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A line rising left to right through the plotted grid, drawn with an open circle at the point (−3, −1) where the function is undefined.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":40,"gridStep":1,"tickStep":1,"tickLabels":true,"lines":[{"slope":1,"intercept":2}],"points":[{"at":[-3,-1],"open":true}]}
+{"ariaLabel":"A line rising left to right with slope 1, crossing the x-axis at −2 and the y-axis at 2, drawn with an open circle at the point (−3, −1) where the function is undefined.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":40,"gridStep":1,"tickStep":1,"tickLabels":true,"lines":[{"slope":1,"intercept":2}],"points":[{"at":[-3,-1],"open":true}]}
 {{< /apfigure >}}
 
 For the following exercise, refer to the graph below.
@@ -533,4 +516,4 @@ Does not exist because the left- and right-hand limits disagree
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 12.2: Finding Limits: Properties of Limits](https://openstax.org/books/precalculus-2e/pages/12-2-finding-limits-properties-of-limits) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated Figures 1 and 2 (the hole in $f(x)=\tfrac{x^2-6x-7}{x-7}$ at $x=7$ and the continuous line $g(x)=x+1$) as accessible spec-first SVGs, each an exact line with slope $1$ and intercept $1$, checked against the rendered PDF, page 1188 (true PDF index 1198). The pinned CNXML's `<solution>` for Example 6 ("Evaluating the Limit of a Quotient by Finding the LCD") is a single JPEG image of the worked steps rather than transcribable text or MathML, so its seven-row step table was transcribed instead from the rendered PDF, page 1192 (true PDF index 1202), and independently re-derived; the numeric result, $-\tfrac{1}{25}$, matches both the image and the independent derivation. Omitted the "Media" callout's one external video link, matching house precedent elsewhere in this book. Every "evaluate the limit" fill-in declares an `answerForm` (`decimal` for an integer or terminating-decimal result, `fraction` for a fraction result with "enter the answer as a fraction" stated in the question, `exact-radical` for a bare radical result) because the grading engine evaluates a retyped `\lim` expression rather than merely comparing it to the printed span — confirmed by replaying each printed limit span against its own key — and a limit whose value is "does not exist" is a `multiplechoice` throughout, since MathLive cannot type words and the engine cannot grade text. One-sided limits (the Try It following Example 9, and the Practice item reading the section's third recreated graph) are asked in words rather than with the unparseable $\lim_{x\to a^+}$ notation, per this book's established convention. The two Verbal exercises with solutions (on what an undefined limit means, and on which function type satisfies $\lim_{x\to a}f(x)=f(a)$) were adapted into multiple-choice questions for the "sum, difference, and product" and "polynomial" objective groups, since the Algebraic exercise set turned out, on inspection, to contain no plain sum/difference/product or pure-polynomial limit beyond what the worked examples already cover — every numbered Algebraic exercise with a solution is a rational-function quotient. The "sum, difference, and product" and "power or root" groups are filled out with an "identify $a$, $f(x)$, and $L$" notation-reading triple of fill-ins apiece, drawn from Examples 1 and 4 of this section — the fallback this book's authoring playbook names for a thin objective group with no dedicated source exercise. The "polynomial" objective's group repurposes Algebraic exercises 37 and 39 (the piecewise function's right-hand and two-sided limits at $x=0$), whose branches are themselves polynomials evaluated by direct substitution. Thirteen selected end-of-section Algebraic, Graphical, and Verbal exercises with a printed official answer were adapted into interactive Practice components across the four objective groups; the two Graphical exercises without a solution in the Answer Key (exercise 54, "find an equation represented by" the removable-discontinuity graph at $(2,3)$, and exercise 56, the same graph's right-hand limit) were independently derivable but omitted per this book's exercise-selection rule, which uses only items whose answer is visibly present in the source. The Practice item for $f(x)=\sqrt{x}$'s average rate of change is a multiple choice, since every declared `answerForm` fails open on the retyped difference-quotient span — confirmed by replay — and its correct option, $\tfrac{1}{\sqrt{x+h}+\sqrt{x}}$, corrects a sign error in the pinned CNXML's own printed key, $\tfrac{-1}{\sqrt{x+h}+\sqrt{x}}$ (the difference quotient of $\sqrt{x}$ rationalizes to $\tfrac{h}{h(\sqrt{x+h}+\sqrt{x})}$, which is positive); the distractor options include the source's own printed (incorrect) sign. The Graphical exercise "find an equation that could be represented by" the graph with a hole at $(-3,-1)$ is a multiple choice rather than a fill-in, because the grading engine proves a rational function equal to its reduced form — $x+2$, and even a quotient whose removable hole sits at a different $x$, grade equal to the keyed $\tfrac{x^2+5x+6}{x+3}$ — so no fill-in could distinguish the answer from a function without the hole.</small>
+<small>This section is adapted from [Precalculus 2e, Section 12.2: Finding Limits: Properties of Limits](https://openstax.org/books/precalculus-2e/pages/12-2-finding-limits-properties-of-limits) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: the Q&A before the factoring example reads $\tfrac{x^2-6x+8}{x-2}$ where the source prints $\tfrac{x^2+6x+8}{x-2}$, whose numerator has no factor $x-2$ and whose limit at $2$ does not exist — the example it introduces evaluates $\tfrac{x^2-6x+8}{x-2}$; recreated Figures 1 and 2 (the hole in $f(x)=\tfrac{x^2-6x-7}{x-7}$ at $x=7$ and the continuous line $g(x)=x+1$) as accessible spec-first SVGs, each an exact line with slope $1$ and intercept $1$, checked against the rendered PDF, page 1188 (true PDF index 1198). The pinned CNXML's `<solution>` for Example 6 ("Evaluating the Limit of a Quotient by Finding the LCD") is a single JPEG image of the worked steps rather than transcribable text or MathML, so its seven-row step table was transcribed instead from the rendered PDF, page 1192 (true PDF index 1202), and independently re-derived; the numeric result, $-\tfrac{1}{25}$, matches both the image and the independent derivation. Omitted the "Media" callout's one external video link, matching house precedent elsewhere in this book. Every "evaluate the limit" fill-in declares an `answerForm` (`decimal` for an integer or terminating-decimal result, `fraction` for a fraction result with "enter the answer as a fraction" stated in the question, `exact-radical` for a bare radical result, and `exact simplified-radical no-like-terms` for the one radical sum, $6+\sqrt{5}$) because the grading engine evaluates a retyped `\lim` expression rather than merely comparing it to the printed span — confirmed by replaying each printed limit span against its own key — and a limit whose value is "does not exist" is a `multiplechoice` throughout, since MathLive cannot type words and the engine cannot grade text. One-sided limits (the Try It following Example 9, a fill-in; the piecewise Practice item; and the Practice item reading the section's third recreated graph) are asked in words rather than with the unparseable $\lim_{x\to a^+}$ notation, per this book's established convention. The two Verbal exercises with solutions (on what an undefined limit means, and on which function type satisfies $\lim_{x\to a}f(x)=f(a)$) were adapted into multiple-choice questions for the "sum, difference, and product" and "polynomial" objective groups. The "sum, difference, and product" group also carries the Algebraic exercises $\lim_{x\to2}\tfrac{-5x}{x^2-1}$ (a product over a difference, evaluated by the properties since the denominator's limit is not zero) and the given-limits sum $2f(x)+\sqrt{g(x)}$; the "power or root" group carries the Algebraic exercises on $(2-h)^3$, $\tfrac{x^2-81}{3-\sqrt{x}}$, and $\tfrac{x}{\sqrt{1+2x}-1}$. The "polynomial" objective's group repurposes Algebraic exercises 37 and 39 (the piecewise function's right-hand and two-sided limits at $x=0$), whose branches are themselves polynomials evaluated by direct substitution. Seventeen selected end-of-section Algebraic, Graphical, and Verbal exercises with a printed official answer were adapted into interactive Practice components across the four objective groups; the two Graphical exercises without a solution in the Answer Key (exercise 54, "find an equation represented by" the removable-discontinuity graph at $(2,3)$, and exercise 56, the same graph's right-hand limit) were independently derivable but omitted per this book's exercise-selection rule, which uses only items whose answer is visibly present in the source. The Practice item for $f(x)=\sqrt{x}$'s average rate of change is a multiple choice, since every declared `answerForm` fails open on the retyped difference-quotient span — confirmed by replay — and its correct option, $\tfrac{1}{\sqrt{x+h}+\sqrt{x}}$, corrects a sign error in the pinned CNXML's own printed key, $\tfrac{-1}{\sqrt{x+h}+\sqrt{x}}$ (the difference quotient of $\sqrt{x}$ rationalizes to $\tfrac{h}{h(\sqrt{x+h}+\sqrt{x})}$, which is positive); the distractor options include the source's own printed (incorrect) sign. The Graphical exercise "find an equation that could be represented by" the graph with a hole at $(-3,-1)$ is a multiple choice rather than a fill-in, because the grading engine proves a rational function equal to its reduced form — $x+2$, and even a quotient whose removable hole sits at a different $x$, grade equal to the keyed $\tfrac{x^2+5x+6}{x+3}$ — so no fill-in could distinguish the answer from a function without the hole.</small>

@@ -62,7 +62,7 @@ Assign probabilities to each outcome in the sample space by determining a ratio 
   question="Which probability model correctly describes tossing a fair coin?"
   mode="text"
   answer="Heads $\tfrac12$; Tails $\tfrac12$"
-  hint="A fair coin has two equally likely outcomes, and the probabilities in a model must always sum to 1."
+  hint="Follow the How To: identify every outcome, count the possible outcomes, and compare each outcome to that total."
 >}}
 Heads $1$; Tails $0$
 Heads $\tfrac12$; Tails $\tfrac12$
@@ -105,7 +105,7 @@ $$P(E\cup F)=P(E)+P(F)-P(E\cap F)$$
 Suppose the spinner shown below is spun. We want to find the probability of spinning orange or spinning a $b$.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A spinner divided into six equal sections: two sections labeled a, both orange; one section labeled b, orange; another section labeled b, red; one section labeled d, blue; and one section labeled c, green.","unit":45,"circles":[{"at":[0,0],"r":2.2}],"segments":[{"from":[0,0],"to":[0,2.2],"arrow":true},{"from":[0,0],"to":[1.9053,1.1]},{"from":[0,0],"to":[1.9053,-1.1]},{"from":[0,0],"to":[0,-2.2]},{"from":[0,0],"to":[-1.9053,-1.1]},{"from":[0,0],"to":[-1.9053,1.1]}],"texts":[{"at":[0.775,1.3423],"text":"a (orange)","anchor":"middle"},{"at":[1.55,0],"text":"b (red)","anchor":"middle"},{"at":[0.775,-1.3423],"text":"c (green)","anchor":"middle"},{"at":[-0.775,-1.3423],"text":"d (blue)","anchor":"middle"},{"at":[-1.55,0],"text":"a (orange)","anchor":"middle"},{"at":[-0.775,1.3423],"text":"b (orange)","anchor":"middle"}]}
+{"ariaLabel":"A spinner divided into six equal sections, with an arrow pointing straight up from the center. Clockwise from the arrow: a (orange), b (red), c (green), d (blue), a (orange), b (orange).","unit":45,"circles":[{"at":[0,0],"r":2.6}],"segments":[{"from":[0,0],"to":[0,2.6],"arrow":true},{"from":[0,0],"to":[2.2517,1.3]},{"from":[0,0],"to":[2.2517,-1.3]},{"from":[0,0],"to":[0.0,-2.6]},{"from":[0,0],"to":[-2.2517,-1.3]},{"from":[0,0],"to":[-2.2517,1.3]}],"texts":[{"at":[0.8,1.6056],"text":"a","anchor":"middle"},{"at":[0.8,1.1656],"text":"(orange)","anchor":"middle"},{"at":[1.6,0.22],"text":"b","anchor":"middle"},{"at":[1.6,-0.22],"text":"(red)","anchor":"middle"},{"at":[0.8,-1.1656],"text":"c","anchor":"middle"},{"at":[0.8,-1.6056],"text":"(green)","anchor":"middle"},{"at":[-0.8,-1.1656],"text":"d","anchor":"middle"},{"at":[-0.8,-1.6056],"text":"(blue)","anchor":"middle"},{"at":[-1.6,0.22],"text":"a","anchor":"middle"},{"at":[-1.6,-0.22],"text":"(orange)","anchor":"middle"},{"at":[-0.8,1.6056],"text":"b","anchor":"middle"},{"at":[-0.8,1.1656],"text":"(orange)","anchor":"middle"}]}
 {{< /apfigure >}}
 
 There are a total of 6 sections, and 3 of them are orange. So the probability of spinning orange is $\tfrac36=\tfrac12$. There are a total of 6 sections, and 2 of them have a $b$. So the probability of spinning a $b$ is $\tfrac26=\tfrac13$. If we added these two probabilities, we would be counting the sector that is both orange and a $b$ twice. To find the probability of spinning an orange or a $b$, we need to subtract the probability that the sector is both orange and has a $b$.
@@ -141,7 +141,7 @@ The probability of drawing a heart or a 7 is $\tfrac{4}{13}$.
   answer="\frac{7}{13}"
   answerForm="fraction"
   answerDisplay="$\tfrac{7}{13}$"
-  hint="Add $P(\text{red})$ and $P(\text{ace})$, then subtract $P(\text{red ace})$ so the two red aces are not counted twice."
+  hint="Add $P(\text{red})$ and $P(\text{ace})$, then subtract $P(\text{red ace})$ so the red aces are not counted twice."
 >}}
 
 ### Computing the Probability of Mutually Exclusive Events
@@ -189,7 +189,7 @@ $$\tfrac14+\tfrac14=\tfrac12$$
   answer="\frac{2}{13}"
   answerForm="fraction"
   answerDisplay="$\tfrac{2}{13}$"
-  hint="Drawing an ace and drawing a king are mutually exclusive, so add their two probabilities directly."
+  hint="Decide whether one card can be both an ace and a king, then use the matching formula for the probability of a union."
 >}}
 
 ### Using the Complement Rule to Compute Probabilities
@@ -243,7 +243,7 @@ $$
   answer="\frac{5}{6}"
   answerForm="fraction"
   answerDisplay="$\tfrac56$"
-  hint="First find the probability that the sum is 10 or more (there are only 6 such outcomes out of 36), then subtract that probability from 1."
+  hint="Count the outcomes in the two-dice table whose sum is 10 or more, find that probability, then subtract it from 1."
 >}}
 
 ### Computing Probability Using Counting Theory
@@ -282,7 +282,7 @@ c. It is often easiest to solve "at least" problems using the Complement Rule. W
 
    $$\tfrac{C(9,5)}{C(14,5)}=\tfrac{63}{1{,}001}$$
 
-   If there is 1 dog chosen, then 4 toys must come from the 9 toys that are not dogs, and 1 must come from the 5 dogs. Since we are choosing both dogs and other toys at the same time, we will use the Multiplication Principle. There are $C(5,1)\cdot C(9,4)$ ways to choose 1 dog and 1 other toy.
+   If there is 1 dog chosen, then 4 toys must come from the 9 toys that are not dogs, and 1 must come from the 5 dogs. Since we are choosing both dogs and other toys at the same time, we will use the Multiplication Principle. There are $C(5,1)\cdot C(9,4)$ ways to choose 1 dog and 4 other toys.
 
    $$\tfrac{C(5,1)C(9,4)}{C(14,5)}=\tfrac{5\cdot126}{2{,}002}=\tfrac{315}{1{,}001}$$
 
@@ -318,6 +318,10 @@ c. It is often easiest to solve "at least" problems using the Complement Rule. W
   hint="Use the Complement Rule: subtract the probability that no yellow gumballs are selected from 1."
 >}}
 
+{{< callout type="info" >}}
+  **Media.** Access these online resources for additional instruction and practice with probability.
+{{< /callout >}}
+
 ## Key equations
 
 | probability of an event with equally likely outcomes | $P(E)=\tfrac{n(E)}{n(S)}$ |
@@ -344,10 +348,10 @@ c. It is often easiest to solve "at least" problems using the Complement Rule. W
   question="What term is used to express the likelihood of an event occurring, and what values can that term take?"
   mode="text"
   answer="Probability, a number between $0$ and $1$ inclusive"
-  hint="This term is restricted to values between 0 and 1, inclusive of 0 and 1."
+  hint="Reread the second paragraph of the section's first subsection: it names the likelihood of an event and states which numbers it can be."
 >}}
 Sample space, a set listing every possible result
-Outcome
+Probability, any nonnegative real number
 Probability, a number between $0$ and $1$ inclusive
 Odds, any nonnegative real number
 {{< /multiplechoice >}}
@@ -356,7 +360,7 @@ Odds, any nonnegative real number
   question="What is an experiment, in the sense used to build a probability model?"
   mode="text"
   answer="An activity with an observable result"
-  hint="Rolling a die or tossing a coin are both examples; the term names the activity itself, not its results."
+  hint="Reread the opening paragraph of Constructing Probability Models, where rolling a number cube is given as an example of one."
 >}}
 An activity with an observable result
 A subset of a sample space
@@ -389,7 +393,7 @@ A number between $0$ and $1$ that describes a likelihood
   answer="\frac{5}{8}"
   answerForm="fraction"
   answerDisplay="$\tfrac58$"
-  hint="Add $P(\text{heads})$ and $P(\text{club})$, then subtract $P(\text{heads and a club})$, since the two events are independent."
+  hint="Add $P(\text{heads})$ and $P(\text{club})$, then subtract $P(\text{heads and a club})$; the coin and the card are independent, so that last probability is the product of the two."
 >}}
 
 {{< fillin
@@ -400,17 +404,17 @@ A number between $0$ and $1$ that describes a likelihood
   hint="Add $P(\text{heads})$ and $P(\text{face card})$, then subtract $P(\text{heads and a face card})$."
 >}}
 
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A spinner divided into eight equal sections, with an arrow pointing straight up from the center. Clockwise from the arrow: A (blue), B (purple), I (green), D (blue), E (red), C (orange), O (yellow), F (green).","unit":40,"circles":[{"at":[0,0],"r":3.0}],"segments":[{"from":[0,0],"to":[0,3.0],"arrow":true},{"from":[0,0],"to":[2.1213,2.1213]},{"from":[0,0],"to":[3.0,0.0]},{"from":[0,0],"to":[2.1213,-2.1213]},{"from":[0,0],"to":[0.0,-3.0]},{"from":[0,0],"to":[-2.1213,-2.1213]},{"from":[0,0],"to":[-3.0,-0.0]},{"from":[0,0],"to":[-2.1213,2.1213]}],"texts":[{"at":[0.8228,2.2063],"text":"A","anchor":"middle"},{"at":[0.8228,1.7663],"text":"(blue)","anchor":"middle"},{"at":[1.9863,1.0428],"text":"B","anchor":"middle"},{"at":[1.9863,0.6028],"text":"(purple)","anchor":"middle"},{"at":[1.9863,-0.6028],"text":"I","anchor":"middle"},{"at":[1.9863,-1.0428],"text":"(green)","anchor":"middle"},{"at":[0.8228,-1.7663],"text":"D","anchor":"middle"},{"at":[0.8228,-2.2063],"text":"(blue)","anchor":"middle"},{"at":[-0.8228,-1.7663],"text":"E","anchor":"middle"},{"at":[-0.8228,-2.2063],"text":"(red)","anchor":"middle"},{"at":[-1.9863,-0.6028],"text":"C","anchor":"middle"},{"at":[-1.9863,-1.0428],"text":"(orange)","anchor":"middle"},{"at":[-1.9863,1.0428],"text":"O","anchor":"middle"},{"at":[-1.9863,0.6028],"text":"(yellow)","anchor":"middle"},{"at":[-0.8228,2.2063],"text":"F","anchor":"middle"},{"at":[-0.8228,1.7663],"text":"(green)","anchor":"middle"}]}
+{{< /apfigure >}}
+
 {{< fillin
   question="Using the spinner shown, find the probability of landing on purple or landing on a vowel (A, E, I, O, or U). Enter the probability as a fraction."
   answer="\frac{5}{8}"
   answerForm="fraction"
   answerDisplay="$\tfrac58$"
-  hint="Purple and the vowels share no sector, so add the probability of landing on purple to the probability of landing on a vowel."
+  hint="Check whether any sector is both purple and a vowel, then apply the matching formula for the probability of a union."
 >}}
-
-{{< apfigure kind="figure" >}}
-{"ariaLabel":"A spinner divided into eight equal sections, one for each letter A, B, C, D, E, F, I, and O: A and D are blue, B is purple, C is orange, E is red, F and I are green, and O is yellow.","unit":38,"circles":[{"at":[0,0],"r":2.8}],"segments":[{"from":[0,0],"to":[0,2.8],"arrow":true},{"from":[0,0],"to":[1.9799,1.9799]},{"from":[0,0],"to":[2.8,0]},{"from":[0,0],"to":[1.9799,-1.9799]},{"from":[0,0],"to":[0,-2.8]},{"from":[0,0],"to":[-1.9799,-1.9799]},{"from":[0,0],"to":[-2.8,0]},{"from":[0,0],"to":[-1.9799,1.9799]}],"texts":[{"at":[0.7654,1.8478],"text":"A (blue)","anchor":"middle"},{"at":[1.8478,0.7654],"text":"B (purple)","anchor":"middle"},{"at":[1.8478,-0.7654],"text":"I (green)","anchor":"middle"},{"at":[0.7654,-1.8478],"text":"D (blue)","anchor":"middle"},{"at":[-0.7654,-1.8478],"text":"E (red)","anchor":"middle"},{"at":[-1.8478,-0.7654],"text":"C (orange)","anchor":"middle"},{"at":[-1.8478,0.7654],"text":"O (yellow)","anchor":"middle"},{"at":[-0.7654,1.8478],"text":"F (green)","anchor":"middle"}]}
-{{< /apfigure >}}
 
 ### Use the complement rule to find probabilities
 
@@ -437,7 +441,7 @@ A number between $0$ and $1$ that describes a likelihood
   answer="\frac{1}{2162}"
   answerForm="fraction"
   answerDisplay="$\tfrac{1}{2{,}162}$"
-  hint="Divide the number of ways to choose 5 blue M&Ms, $C(12,5)$, by the number of ways to choose any 5 of the 48 M&Ms, $C(48,5)$."
+  hint="Count the ways to choose 5 of the blue M&Ms, and divide by the ways to choose any 5 M&Ms from the whole bag."
 >}}
 
 {{< fillin
@@ -445,9 +449,9 @@ A number between $0$ and $1$ that describes a likelihood
   answer="\frac{175}{2162}"
   answerForm="fraction"
   answerDisplay="$\tfrac{175}{2{,}162}$"
-  hint="Use the Multiplication Principle: multiply the ways to choose 3 of the 12 blue M&Ms, $C(12,3)$, by the ways to choose the other 2 from the remaining 36, $C(36,2)$, then divide by $C(48,5)$."
+  hint="Use the Multiplication Principle: multiply the ways to choose the 3 blue M&Ms by the ways to choose the other 2 from the M&Ms that are not blue, then divide by the ways to choose any 5."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.7: Probability](https://openstax.org/books/precalculus-2e/pages/11-7-probability) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1" review of sample spaces and basic probability, keyed to Intermediate Algebra 12.4.1, complete with its own worked example and a "Practice Makes Perfect" exercise set) — confirmed against the rendered PDF, page 1154 (true PDF index 1164), where the "Graphical"/"Extensions" exercises of the previous section (11.6, Binomial Theorem) run directly into the "11.7 Probability" heading and Learning Objectives with no corequisite-skills material between them, matching the chapter's other modules. This module (m49450) also carries the chapter's own Chapter Review Exercises and Practice Test appended after its Section Exercises; those chapter-level items were not transcribed and no Practice item was drawn from them — including that Practice Test's own numbered 7-section spinner figure and its accompanying "construct a probability model" exercises, which accordingly do not appear on this page. Omitted the credited "spaghetti model" hurricane-forecast photograph (a stock illustrative map, not a mathematical figure), keeping the paragraph that introduces it. Kept the Media callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. Recreated the section's two pie-chart/spinner figures as accessible spec-first `figure` diagrams — a rim circle, six or eight equal sectors drawn as spokes from the center, and each sector labeled with its letter and color in place of a color fill, since the figure engine has no sector-fill primitive: the six-section spinner (two orange sectors labeled a, one orange and one red sector labeled b, one blue sector labeled d, one green sector labeled c) illustrating the union and mutually-exclusive-union examples, and the eight-section lettered spinner (A, D blue; B purple; C orange; E red; F, I green; O yellow) used by the Practice block's "purple or a vowel" item, both matching the sector arrangement and colors the source figures print. The two-dice sample-space table in the Complement Rule example (36 outcome pairs, needed to see how "sum of 3 or less" is counted) is transcribed as a Markdown table. Every "construct a probability model" and vocabulary ask (naming the term for the likelihood of an event, and what an experiment is) is a `multiplechoice`, since a learner cannot type back a whole model or a word definition; every probability answer is keyed as a bare fraction exactly as the source solution gives it, since none of the retained exercises are stated in lowest-terms, decimal, or percent form. Eleven selected end-of-section Verbal, Numeric, and Real-World Applications exercises were adapted into the interactive components of the closing Practice block, one Practice group per objective, every one independently re-derived — including by running exact-rational and combinatorial arithmetic in Node with BigInt — rather than read off the source key; the "purple or a vowel" and "coin and a card" items inline their spinner and deck context directly into the question text, and the M&M items inline the bag's contents, so each question is self-contained.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.7: Probability](https://openstax.org/books/precalculus-2e/pages/11-7-probability) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1" review of sample spaces and basic probability, keyed to Intermediate Algebra 12.4.1, complete with its own worked example and a "Practice Makes Perfect" exercise set) — confirmed against the rendered PDF, page 1154 (true PDF index 1164), where the "Graphical"/"Extensions" exercises of the previous section (11.6, Binomial Theorem) run directly into the "11.7 Probability" heading and Learning Objectives with no corequisite-skills material between them, matching the chapter's other modules. This module (m49450) also carries the chapter's own Chapter Review Exercises and Practice Test appended after its Section Exercises; those chapter-level items were not transcribed and no Practice item was drawn from them — including that Practice Test's own numbered 7-section spinner figure and its accompanying "construct a probability model" exercises, which accordingly do not appear on this page. Omitted the credited "spaghetti model" hurricane-forecast photograph (a stock illustrative map, not a mathematical figure), keeping the paragraph that introduces it. Kept the Media callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. Recreated the section's two pie-chart/spinner figures as accessible spec-first `figure` diagrams — a rim circle, six or eight equal sectors drawn as spokes from the center, and each sector labeled with its letter and, beneath it, its color in place of a color fill, since the figure engine has no sector-fill primitive: the six-section spinner (two orange sectors labeled a, one orange and one red sector labeled b, one blue sector labeled d, one green sector labeled c) illustrating the union and mutually-exclusive-union examples, and the eight-section lettered spinner (A, D blue; B purple; C orange; E red; F, I green; O yellow) used by the Practice block's "purple or a vowel" item, both matching the sector arrangement of the source figures; the source image prints the eight-section spinner's B sector in a darker blue, and it is labeled purple here, as the source's alt text and its exercise keys ("purple or a vowel" is 5/8, "green or blue" is 1/2) require. In the counting-theory example, the source's "ways to choose 1 dog and 1 other toy" reads "1 dog and 4 other toys" here, matching its own count C(5,1)·C(9,4). The two-dice sample-space table in the Complement Rule example (36 outcome pairs, needed to see how "sum of 3 or less" is counted) is transcribed as a Markdown table. Every "construct a probability model" and vocabulary ask (naming the term for the likelihood of an event, and what an experiment is) is a `multiplechoice`, since a learner cannot type back a whole model or a word definition; every probability answer is keyed as a bare fraction exactly as the source solution gives it, since none of the retained exercises are stated in lowest-terms, decimal, or percent form. Eleven selected end-of-section Verbal and Numeric exercises were adapted into the interactive components of the closing Practice block, one Practice group per objective, every one independently re-derived — including by running exact-rational and combinatorial arithmetic in Node with BigInt — rather than read off the source key; the "purple or a vowel" item sits directly below its own copy of the eight-section spinner, the "coin and a card" items restate their deck context in the question text, and the M&M items inline the bag's contents, so each question is self-contained.</small>

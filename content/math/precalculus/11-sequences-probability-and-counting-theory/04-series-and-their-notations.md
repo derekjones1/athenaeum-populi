@@ -40,6 +40,14 @@ $$
 
 **Summation notation** is used to represent series. Summation notation is often known as sigma notation because it uses the Greek capital letter **sigma**, $\Sigma$, to represent the sum. Summation notation includes an explicit formula and specifies the first and last terms in the series. An explicit formula for each term of the series is given to the right of the sigma. A variable called the **index of summation** is written below the sigma. The index of summation is set equal to the **lower limit of summation**, which is the number used to generate the first term in the series. The number above the sigma, called the **upper limit of summation**, is the number used to generate the last term in a series.
 
+$$
+\begin{array}{rcl}
+\text{upper limit of summation}\ \longrightarrow & 5 & \\[4pt]
+& \displaystyle\sum & 2k\ \longleftarrow\ \text{explicit formula for }k\text{th term of series} \\[4pt]
+\text{index of summation}\ \longrightarrow & k=1 & \longleftarrow\ \text{lower limit of summation}
+\end{array}
+$$
+
 If we interpret the given notation, we see that it asks us to find the sum of the terms in the series $a_k=2k$ for $k=1$ through $k=5$. We can begin by substituting the terms for $k$ and listing out the terms of this series.
 
 $$
@@ -335,11 +343,11 @@ b. Find $a_1$ by substituting $k=1$ into the given explicit formula.
    $$
 
 {{< fillin
-  question="Find $S_{20}$ for the series $1000+500+250+\ldots$, rounded to the nearest cent. Enter the number only, without a dollar sign."
+  question="Find $S_{20}$ for the series $1{,}000+500+250+\ldots$, rounded to two decimal places."
   answer="2000.00"
   answerForm="decimal"
-  answerDisplay="\$2{,}000.00"
-  hint="This geometric series has $a_1=1000$ and $r=\tfrac12$; substitute $a_1$, $r$, and $n=20$ into $S_n=\tfrac{a_1(1-r^n)}{1-r}$."
+  answerDisplay="$2{,}000.00$"
+  hint="This geometric series has $a_1=1{,}000$ and $r=\tfrac12$; substitute $a_1$, $r$, and $n=20$ into $S_n=\tfrac{a_1(1-r^n)}{1-r}$."
 >}}
 
 {{< fillin
@@ -441,7 +449,7 @@ The series is not geometric.
   question="Determine whether the sum of the infinite series $\sum_{k=1}^{\infty}15\cdot(-0.3)^k$ is defined."
   mode="text"
   answer="The series is geometric, and the sum is defined."
-  hint="The series is geometric with $r=-0.3$; compare $r$ with $-1$ and $1$."
+  hint="Write out the first few terms and divide each by the one before it; if the ratio is constant, compare it with $-1$ and $1$."
 >}}
 The series is not geometric.
 The series is geometric, but the sum is not defined.
@@ -532,7 +540,11 @@ d. The formula is exponential, so the series is geometric, but $r>1$. The sum do
 
 $$0.\overline3=0.3+0.03+0.003+\ldots$$
 
-Looking for a pattern, we rewrite the sum, noticing that we see the first term multiplied by $0.1$ in the second term, and the second term multiplied by $0.1$ in the third term. Notice the pattern; we multiply each consecutive term by a common ratio of $0.1$ starting with the first term of $0.3$. So, substituting into our formula for an infinite geometric sum, we have
+Looking for a pattern, we rewrite the sum, noticing that we see the first term multiplied by $0.1$ in the second term, and the second term multiplied by $0.1$ in the third term.
+
+$$0.\overline3=0.3+(0.1)\underbrace{(0.3)}_{\text{First Term}}+(0.1)\underbrace{(0.1)(0.3)}_{\text{Second Term}}+\ldots$$
+
+Notice the pattern; we multiply each consecutive term by a common ratio of $0.1$ starting with the first term of $0.3$. So, substituting into our formula for an infinite geometric sum, we have
 
 $$S_n=\tfrac{a_1}{1-r}=\tfrac{0.3}{1-0.1}=\tfrac{0.3}{0.9}=\tfrac13$$
 
@@ -548,7 +560,7 @@ $$S_n=\tfrac{a_1}{1-r}=\tfrac{0.3}{1-0.1}=\tfrac{0.3}{0.9}=\tfrac13$$
   question="Determine whether the sum of the infinite series $\sum_{k=1}^{\infty}(0.76k+1)$ is defined."
   mode="text"
   answer="The series is not geometric."
-  hint="Compute the ratio of consecutive terms; if it is not constant, the series is not geometric at all, and the infinite-sum formula does not apply."
+  hint="Write out the first few terms and divide each by the one before it; check whether the ratio is constant before comparing it with $-1$ and $1$."
 >}}
 The series is geometric, and the sum is defined.
 The series is not geometric.
@@ -556,9 +568,9 @@ The series is geometric, but the sum is not defined.
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the sum, if it exists, as a fraction: $\sum_{k=1}^{\infty}\left(-\tfrac38\right)^k$."
-  answer="-\tfrac{3}{11}"
-  answerForm="fraction"
+  question="Find the sum, if it exists, as a fraction in lowest terms: $\sum_{k=1}^{\infty}\left(-\tfrac38\right)^k$."
+  answer="-\frac{3}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{11}$"
   hint="This is an infinite geometric series with $a_1=-\tfrac38$ and $r=-\tfrac38$; substitute into $S=\tfrac{a_1}{1-r}$."
 >}}
@@ -607,6 +619,10 @@ So the account has \$19{,}351.43 after the last deposit is made.
 
 {{< callout type="info" >}}
   **Media.** Access these online resources for additional instruction and practice with series.
+
+  - Arithmetic Series
+  - Geometric Series
+  - Summation Notation
 {{< /callout >}}
 
 ## Key equations
@@ -637,15 +653,15 @@ So the account has \$19{,}351.43 after the last deposit is made.
   answer="\sum_{k=1}^{5}4"
   answerForm="summation"
   answerDisplay="$\sum_{k=1}^{5}4$"
-  hint="Each term is the constant $4$; write a sigma with lower limit $1$, upper limit $5$, and summand $4$."
+  hint="Let the index run from $1$ to the number of times the number is added; the summand does not depend on the index."
 >}}
 
 {{< fillin
-  question="Express the arithmetic sum $10+18+26+\ldots+162$ using summation notation."
+  question="Express the arithmetic sum $10+18+26+\ldots+162$ using summation notation. Put the general term in parentheses."
   answer="\sum_{k=1}^{20}(8k+2)"
   answerForm="summation"
   answerDisplay="$\sum_{k=1}^{20}(8k+2)$"
-  hint="Find the common difference and the number of terms to write the explicit formula $8k+2$, and enclose it in parentheses after the sigma."
+  hint="Use the common difference and the first term to write the explicit formula for the $k$th term, then find which $k$ gives the last term $162$."
 >}}
 
 ### Use the formula for the sum of the first $n$ terms of an arithmetic series
@@ -659,7 +675,7 @@ So the account has \$19{,}351.43 after the last deposit is made.
 >}}
 
 {{< fillin
-  question="A boulder rolled down a mountain, traveling $6$ feet in the first second. Each successive second, its distance increased by $8$ feet. How far did the boulder travel after $10$ seconds?"
+  question="A boulder rolled down a mountain, traveling $6$ feet in the first second. Each successive second, its distance increased by $8$ feet. How far did the boulder travel after $10$ seconds? Give the distance in feet."
   answer="420"
   answerForm="decimal"
   answerDisplay="$420$ feet"
@@ -677,9 +693,9 @@ So the account has \$19{,}351.43 after the last deposit is made.
 ### Use the formula for the sum of the first $n$ terms of a geometric series
 
 {{< fillin
-  question="Use the formula for the sum of the first $n$ terms of a geometric series to find the sum $9+3+1+\tfrac13+\tfrac19$, as a fraction."
-  answer="\tfrac{121}{9}"
-  answerForm="fraction"
+  question="Use the formula for the sum of the first $n$ terms of a geometric series to find the sum $9+3+1+\tfrac13+\tfrac19$, as a fraction in lowest terms."
+  answer="\frac{121}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{121}{9}$"
   hint="This geometric series has $a_1=9$, $r=\tfrac13$, and $n=5$; substitute into $S_n=\tfrac{a_1(1-r^n)}{1-r}$."
 >}}
@@ -688,7 +704,7 @@ So the account has \$19{,}351.43 after the last deposit is made.
   question="Use the formula for the sum of the first $n$ terms of a geometric series to find $S_7$ for the series $0.4-2+10-50+\ldots$"
   answer="5208.4"
   answerForm="decimal"
-  answerDisplay="$5208.4$"
+  answerDisplay="$5{,}208.4$"
   hint="This series has $a_1=0.4$ and $r=-5$; substitute $a_1$, $r$, and $n=7$ into $S_n=\tfrac{a_1(1-r^n)}{1-r}$."
 >}}
 
@@ -703,15 +719,15 @@ So the account has \$19{,}351.43 after the last deposit is made.
 >}}
 
 {{< fillin
-  question="Find the sum, if it exists, of the infinite geometric series $-1-\tfrac14-\tfrac{1}{16}-\tfrac{1}{64}-\ldots$, as a fraction."
-  answer="-\tfrac{4}{3}"
-  answerForm="fraction"
+  question="Find the sum, if it exists, of the infinite geometric series $-1-\tfrac14-\tfrac{1}{16}-\tfrac{1}{64}-\ldots$, as a fraction in lowest terms."
+  answer="-\frac{4}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac43$"
   hint="This series has $a_1=-1$ and $r=\tfrac14$; substitute into $S=\tfrac{a_1}{1-r}$."
 >}}
 
 {{< fillin
-  question="A pendulum travels a distance of $3$ feet on its first swing. On each successive swing, it travels $\tfrac34$ the distance of the previous swing. What is the total distance traveled by the pendulum when it stops swinging?"
+  question="A pendulum travels a distance of $3$ feet on its first swing. On each successive swing, it travels $\tfrac34$ the distance of the previous swing. What is the total distance traveled by the pendulum when it stops swinging? Give the distance in feet."
   answer="12"
   answerForm="decimal"
   answerDisplay="$12$ feet"
@@ -738,4 +754,4 @@ So the account has \$19{,}351.43 after the last deposit is made.
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.4: Series and Their Notations](https://openstax.org/books/precalculus-2e/pages/11-4-series-and-their-notations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own two "Objective N" reviews of summation notation and arithmetic-series sums, keyed to Intermediate Algebra 12.1.5 and 12.2.3, each with its own worked example and "Practice Makes Perfect" exercise set, including one exercise whose printed sequence "7, 10, 13, 13, 19,…" repeats a term and cannot be arithmetic as printed) — confirmed against the rendered PDF, page 1124 (true PDF index 1134), where "11.4 Series and Their Notations" and its Learning Objectives begin at the top of the page with no corequisite-skills material before them; the same prepended-block pattern recurs from earlier chapters, and this section needs no separate entry for it, since the flawed exercise lives entirely inside the omitted block and was never transcribed onto this page. Omitted three purely-typographic illustrations: two of summation-notation vocabulary (labelled call-outs pointing arrows from "upper limit of summation," "lower limit of summation," "index of summation," and "explicit formula for $k$th term" to the parts of $\sum_{k=1}^{5}2k$) and one that brackets the first two terms of the repeating-decimal expansion $0.\overline{3}=0.3+(0.1)(0.3)+\ldots$ as "First Term" and "Second Term", since the surrounding prose, transcribed in full, already states each label in words. Kept the "Media" callout's introductory sentence but omitted its three external resource links, matching house precedent elsewhere in this book. Every retained Try It is a real `fillin` or `multiplechoice` component; the four "determine whether the sum of the infinite series is defined" Try Its are posed as multiple choice among the same three categorical outcomes (not geometric; geometric and defined; geometric but not defined) used in the worked example directly above them, since a categorical judgment is not a fill-in answer. Every "evaluate the sum"/"find the sum" fill-in that prints a fully expanded or summation-notation span declares `decimal` or `fraction` (with "as a fraction" stated in the question) so the engine's own evaluation of the printed span cannot pass as a retype; every "write in summation notation" fill-in declares `summation`, with a hint to parenthesize a sum-shaped summand where the source's own key needs it (10+18+26+…+162). Annuity answers are `decimal`, keyed to the source's own rounding (nearest cent or nearest dollar as each problem states), with "enter the number only, without a dollar sign" in the question since a `\$` in a response is invalid to the grading engine; every annuity value was independently computed at full precision and against the source's own stated rounding, and the two rounds agreed in every case used here. The Key Equations table's third row is reproduced as the pinned CNXML prints it — $S_n=\tfrac{a_1}{1-r},\ r\ne1$ under the heading "sum of an infinite geometric series with $-1<r<1$" — even though the module's own body text states the formula as $S=\tfrac{a_1}{1-r}$ (no subscript, since the sum is not a partial sum) with the $-1<r<1$ condition, so the row carries the finite-series boilerplate by copy; the printed book omits this section's Key Equations entirely, so the CNXML row is the only source spelling and it is kept as printed and recorded as a source note rather than silently repaired. Twelve selected end-of-section exercises were adapted into interactive Practice components, one or more groups per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key; three of them (the boulder, pendulum, and Karl's-car-fund exercises) sit on PDF page 1147, one page past this run's assigned 1134–1146 range, but they are still this section's own end-of-section exercises (module m49447, "Extensions" and "Real-World Applications" subsections) rather than the next section's.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.4: Series and Their Notations](https://openstax.org/books/precalculus-2e/pages/11-4-series-and-their-notations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own two "Objective N" reviews of summation notation and arithmetic-series sums, keyed to Intermediate Algebra 12.1.5 and 12.2.3, each with its own worked example and "Practice Makes Perfect" exercise set, including one exercise whose printed sequence "7, 10, 13, 13, 19,…" repeats a term and cannot be arithmetic as printed) — confirmed against the rendered PDF, page 1124 (true PDF index 1134), where "11.4 Series and Their Notations" and its Learning Objectives begin at the top of the page with no corequisite-skills material before them; the same prepended-block pattern recurs from earlier chapters; the omitted block's exercise that lists an arithmetic sequence with a repeated term lives entirely inside it and was never transcribed onto this page. Set the section's two typographic illustrations as display math: the labelled parts of $\sum_{k=1}^{5}2k$ (arrows from "upper limit of summation," "index of summation," "lower limit of summation," and "explicit formula for $k$th term of series"), which the prose after it calls "the given notation," and the repeating-decimal expansion $0.\overline{3}=0.3+(0.1)(0.3)+(0.1)(0.1)(0.3)$ with its "First Term" and "Second Term" braces, adding the closing $+\ldots$ the equation needs; the omitted corequisite block's identical copy of the summation illustration goes with that block. Kept the "Media" callout's introductory sentence and its three resource titles but omitted their external links, matching house precedent elsewhere in this book. Every retained Try It is a real `fillin` or `multiplechoice` component; the four "determine whether the sum of the infinite series is defined" Try Its are posed as multiple choice among the same three categorical outcomes (not geometric; geometric and defined; geometric but not defined) used in the worked example directly above them, since a categorical judgment is not a fill-in answer. Every "evaluate the sum"/"find the sum" fill-in that prints a fully expanded or summation-notation span declares `decimal` or `fraction lowest-terms` (with "as a fraction in lowest terms" stated in the question) so the engine's own evaluation of the printed span cannot pass as a retype; every "write in summation notation" fill-in declares `summation`, with a hint to parenthesize a sum-shaped summand where the source's own key needs it (10+18+26+…+162). Annuity answers are `decimal`, keyed to the source's own rounding (nearest cent or nearest dollar as each problem states), with "enter the number only, without a dollar sign" in the question; the $S_{20}$ Try It, which is not money, asks for two decimal places (the source's $\approx2{,}000.00$), and the boulder and pendulum exercises ask for the distance in feet; every annuity value was independently computed at full precision and against the source's own stated rounding, and the two rounds agreed in every case used here. The Key Equations table's third row is reproduced as the pinned CNXML prints it — $S_n=\tfrac{a_1}{1-r},\ r\ne1$ under the heading "sum of an infinite geometric series with $-1<r<1$" — even though the module's own body text states the formula as $S=\tfrac{a_1}{1-r}$ (no subscript, since the sum is not a partial sum) with the $-1<r<1$ condition, so the row carries the finite-series boilerplate by copy; the printed book omits this section's Key Equations entirely, so the CNXML row is the only source spelling and it is kept as printed and recorded as a source note rather than silently repaired. Twelve selected end-of-section exercises were adapted into interactive Practice components, one group per objective, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key; three of them (the boulder, pendulum, and Karl's-car-fund exercises) sit on PDF page 1147, one page past this run's assigned 1134–1146 range, but they are still this section's own end-of-section exercises (module m49447, "Extensions" and "Real-World Applications" subsections) rather than the next section's.</small>

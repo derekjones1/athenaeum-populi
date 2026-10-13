@@ -101,6 +101,7 @@ no
 {{< fillin
   question="Find the common difference of the arithmetic sequence $18,16,14,12,10,\ldots$."
   answer="-2"
+  answerForm="decimal"
   answerDisplay="$-2$"
   hint="Subtract the first term from the second term."
 >}}
@@ -145,6 +146,7 @@ The first five terms are $\{17,14,11,8,5\}$.
 {{< fillin
   question="List the first five terms of the arithmetic sequence with $a_1=1$ and $d=5$. Enter the first five terms, in order, separated by commas."
   answer="1,6,11,16,21"
+  answerForm="decimal"
   answerDisplay="$1,6,11,16,21$"
   hint="Start at $1$ and repeatedly add $5$."
 >}}
@@ -183,6 +185,7 @@ $$a_5=a_4+2=16$$
 {{< fillin
   question="Given $a_3=7$ and $a_5=17$, find $a_2$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$a_2=2$"
   hint="Find the common difference from $a_3$ to $a_5$ over two steps, then subtract it once from $a_3$."
 >}}
@@ -236,15 +239,9 @@ $$
 {{< /callout >}}
 
 {{< fillin
-  question="The arithmetic sequence $25,37,49,61,\ldots$ is defined by a recursive formula. Find its initial term $a_1$."
-  answer="25"
-  answerDisplay="$a_1=25$"
-  hint="The initial term is simply the first number listed."
->}}
-
-{{< fillin
   question="Find the recursive rule for the sequence $25,37,49,61,\ldots$, in the form $a_n=\ldots$ (in terms of $a_{n-1}$) for $n\ge2$."
   answer="a_n=a_{n-1}+12"
+  answerForm="no-like-terms"
   answerDisplay="$a_n=a_{n-1}+12$"
   hint="Subtract the first term from the second term to find the common difference."
 >}}
@@ -292,9 +289,9 @@ $$\{2,12,22,32,42,\ldots\}$$
 
 $$
 \begin{array}{lrcl}
-d &=& a_2-a_1 \\[4pt]
-&=& 12-2 \\[4pt]
-&=& 10
+& d &=& a_2-a_1 \\[4pt]
+& &=& 12-2 \\[4pt]
+& &=& 10
 \end{array}
 $$
 
@@ -310,12 +307,13 @@ $$
 **Analysis.** The graph of this sequence, shown below, shows a slope of $10$ and a vertical intercept of $-8$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of five points showing an increasing arithmetic sequence at n equals 1 through 5, forming a straight line.","xMin":0,"xMax":10,"yMin":0,"yMax":50,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"yTickStep":10,"yGridStep":10,"unit":40,"yUnit":4,"points":[{"at":[1,2]},{"at":[2,12]},{"at":[3,22]},{"at":[4,32]},{"at":[5,42]}]}
+{"ariaLabel":"A scatter plot of five points showing an increasing arithmetic sequence at n equals 1 through 5, forming a straight line.","xMin":0,"xMax":10,"yMin":-10,"yMax":50,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"yTickStep":10,"yGridStep":10,"unit":40,"yUnit":4,"points":[{"at":[1,2]},{"at":[2,12]},{"at":[3,22]},{"at":[4,32]},{"at":[5,42]}]}
 {{< /apfigure >}}
 
 {{< fillin
-  question="Write an explicit formula for the arithmetic sequence $50,47,44,41,\ldots$."
+  question="Write an explicit formula for the arithmetic sequence $50,47,44,41,\ldots$. Simplify the formula."
   answer="53-3n"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a_n=53-3n$"
   hint="Find the common difference, then substitute it and the first term into $a_n=a_1+d(n-1)$ and simplify."
 >}}
@@ -364,6 +362,7 @@ There are eight terms in the sequence.
 {{< fillin
   question="Find the number of terms in the finite arithmetic sequence $6,11,16,\ldots,56$."
   answer="11"
+  answerForm="decimal"
   answerDisplay="$11$"
   hint="Find the common difference, write the $n$th-term formula, then substitute $56$ for $a_n$ and solve for $n$."
 >}}
@@ -403,10 +402,11 @@ b. We can find the number of years since age $5$ by subtracting.
 >}}
 
 {{< fillin
-  question="Using the formula $T_n=10+4n$ for the length, in minutes, of the woman's daily run after $n$ weeks, how long will her daily run be 8 weeks from today?"
+  question="The same woman runs 10 minutes a day this week and adds 4 minutes to her daily run each week. How long, in minutes, will her daily run be 8 weeks from today?"
   answer="42"
+  answerForm="decimal"
   answerDisplay="$42$ minutes"
-  hint="Substitute $8$ for $n$ in the formula."
+  hint="Substitute $8$ for $n$ in the formula you wrote for $T_n$."
 >}}
 
 ## Key equations
@@ -452,8 +452,9 @@ no
 ### Write terms of an arithmetic sequence
 
 {{< fillin
-  question="Write the first five terms of the arithmetic sequence given the first term $a_1=0$ and common difference $d=\tfrac23$. Enter the first five terms, in order, separated by commas."
-  answer="0,2/3,4/3,2,8/3"
+  question="Write the first five terms of the arithmetic sequence given the first term $a_1=0$ and common difference $d=\tfrac23$. Enter the first five terms, in order, separated by commas, with each fraction in lowest terms."
+  answer="0,\frac{2}{3},\frac{4}{3},2,\frac{8}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$0,\tfrac{2}{3},\tfrac{4}{3},2,\tfrac{8}{3}$"
   hint="Start at $0$ and repeatedly add $\tfrac23$."
 >}}
@@ -461,6 +462,7 @@ no
 {{< fillin
   question="An arithmetic sequence has $a_{13}=-60$ and $a_{33}=-160$. Write its first five terms, in order, separated by commas."
   answer="0,-5,-10,-15,-20"
+  answerForm="decimal"
   answerDisplay="$0,-5,-10,-15,-20$"
   hint="Use the two given terms to find the common difference, then work backward from $a_{13}$ to find $a_1$."
 >}}
@@ -470,20 +472,15 @@ no
 {{< fillin
   question="Use the recursive formula $a_1=-19,\ a_n=a_{n-1}-1.4,$ for $n\ge2$, to write the first five terms of the arithmetic sequence. Enter the first five terms, in order, separated by commas."
   answer="-19,-20.4,-21.8,-23.2,-24.6"
+  answerForm="decimal"
   answerDisplay="$-19,-20.4,-21.8,-23.2,-24.6$"
   hint="Start at $-19$ and repeatedly subtract $1.4$."
 >}}
 
 {{< fillin
-  question="The arithmetic sequence $17,26,35,\ldots$ is defined by a recursive formula. Find its initial term $a_1$."
-  answer="17"
-  answerDisplay="$a_1=17$"
-  hint="The initial term is simply the first number listed."
->}}
-
-{{< fillin
   question="Find the recursive rule for the sequence $17,26,35,\ldots$, in the form $a_n=\ldots$ (in terms of $a_{n-1}$) for $n\ge2$."
   answer="a_n=a_{n-1}+9"
+  answerForm="no-like-terms"
   answerDisplay="$a_n=a_{n-1}+9$"
   hint="Subtract the first term from the second term to find the common difference."
 >}}
@@ -493,13 +490,15 @@ no
 {{< fillin
   question="Write the first five terms of the arithmetic sequence defined by the explicit formula $a_n=24-4n$. Enter the first five terms, in order, separated by commas."
   answer="20,16,12,8,4"
+  answerForm="decimal"
   answerDisplay="$20,16,12,8,4$"
   hint="Substitute $n=1,2,3,4,5$ in turn into the formula."
 >}}
 
 {{< fillin
-  question="Write an explicit formula for the arithmetic sequence $3,5,7,\ldots$."
+  question="Write an explicit formula for the arithmetic sequence $3,5,7,\ldots$. Simplify the formula."
   answer="2n+1"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a_n=2n+1$"
   hint="Find the common difference, then substitute it and the first term into $a_n=a_1+d(n-1)$ and simplify."
 >}}
@@ -507,10 +506,11 @@ no
 {{< fillin
   question="Find the number of terms in the finite arithmetic sequence $3,-4,-11,\ldots,-60$."
   answer="10"
+  answerForm="decimal"
   answerDisplay="$10$"
   hint="Find the common difference, write the $n$th-term formula, then substitute $-60$ for $a_n$ and solve for $n$."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.2: Arithmetic Sequences](https://openstax.org/books/precalculus-2e/pages/11-2-arithmetic-sequences) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Learning Objectives" keyed to Intermediate Algebra 12.2.1–12.2.2, with two short "Determine if a sequence is arithmetic" and "Find the general term" examples and their own "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, true page 1114 (printed page 1104), where an unrelated exercise from the prior section runs directly into the "11.2 Arithmetic Sequences" heading, objectives, and the depreciation paragraph with no corequisite-skills material between them; this is the same prepended-block pattern recurring in other chapters' opening modules. Recreated all six instructional figures as accessible spec-first scatter plots, points-only (no connecting curve), matching the source art exactly: the two-panel Analysis figure after Example 1 (comparing a non-arithmetic and an arithmetic sequence) is authored as two separate `apfigure`s, each carrying its own panel label ("(a)"/"(b)") as a `texts` entry beneath the axis, since a two-panel source figure is two figures per house convention. None of this section's own scatter plots carry per-point coordinate labels, matching the source exactly (unlike the labelled points in Section 11.1's figures) — every plotted value is already stated in the surrounding prose or the worked solution, so no answer is hidden by the omission. **One suspected source defect, confirmed against the raw PDF (true page 1116) and independent computation, corrected locally:** the Analysis figure following Example 2 ("Write the first five terms of the arithmetic sequence with $a_1=17$ and $d=-3$", terms $17,14,11,8,5$) prints the *same* raster image used later in the module's "Using Explicit Formulas" discussion — a y-axis scaled $0$ to $250$ with five points at $(1,200),(2,150),(3,100),(4,50),(5,0)$, which is a different sequence entirely (the $a_1=200,d=-50$ sequence discussed several paragraphs later) and does not depict $17,14,11,8,5$ at any scale. The local page recreates the correct scatter plot for the printed example ($1,17),(2,14),(3,11),(4,8),(5,5)$ on a $0$–$20$ axis instead of reproducing the mismatched source image; the later, correctly-scaled $200/150/100/50/0$ figure is recreated faithfully in its own place. Omitted the two small raster illustrations of the depreciation and $+3$ example sequences (informal arrow diagrams, not numbered figures in the source) and the two raster images inside Example 1's solution showing the four subtraction computations for each part; all of this arithmetic is recreated as ordinary KaTeX (a labelled sequence display for the two intro sequences, and a `\begin{array}{lrcl}` step table for each part of Example 1's solution), preserving every computed step rather than the finished result alone. Every "is the sequence arithmetic?" ask is a `multiplechoice` (yes/no); where the source's own Try It also asks for the common difference, it splits into the multiple choice plus a separate fill-in, per this book's established pattern. Every "find a recursive formula" fill-in pins the requested shape ("in the form $a_n=\ldots$, in terms of $a_{n-1}$, for $n\ge2$") and keys the initial term as its own separate fill-in, since the grader accepts reordered and rescaled restatements of a correct recursive rule but treats a shifted index or a wrong sign as a different rule; the source's own algebraic answer key states both parts together (e.g. "$a_1=17;a_n=a_{n-1}+9,n\ge2$"), split here into two components per the multipart-expansion rule. The one fraction-valued single-value fill-in (the common difference of $0,\tfrac12,1,\tfrac32,2,\ldots$) declares `answerForm="fraction"` and its question says "as a fraction," confirmed against the real grader: a rounded decimal reports `form`, not `correct`, once the token is declared. Nine selected end-of-section exercises were adapted into the interactive components of the closing Practice block, one Practice group per objective, every answer independently re-derived — including by running the arithmetic in Node with exact-rational tracking for every fraction — rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.2: Arithmetic Sequences](https://openstax.org/books/precalculus-2e/pages/11-2-arithmetic-sequences) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Learning Objectives" keyed to Intermediate Algebra 12.2.1–12.2.2, with two short "Determine if a sequence is arithmetic" and "Find the general term" examples and their own "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, true page 1114 (printed page 1104), where an unrelated exercise from the prior section runs directly into the "11.2 Arithmetic Sequences" heading, objectives, and the depreciation paragraph with no corequisite-skills material between them; this is the same prepended-block pattern recurring in other chapters' opening modules. Recreated all six instructional figures as accessible spec-first scatter plots, points-only (no connecting curve), matching the source art exactly: the two-panel Analysis figure after Example 1 (comparing a non-arithmetic and an arithmetic sequence) is authored as two separate `apfigure`s, each carrying its own panel label ("(a)"/"(b)") as a `texts` entry beneath the axis, since a two-panel source figure is two figures per house convention. None of this section's own scatter plots carry per-point coordinate labels, matching the source exactly (unlike the labelled points in Section 11.1's figures) — every plotted value is already stated in the surrounding prose or the worked solution, so no answer is hidden by the omission. **One suspected source defect, confirmed against the raw PDF (true page 1116) and independent computation, corrected locally:** the Analysis figure following Example 2 ("Write the first five terms of the arithmetic sequence with $a_1=17$ and $d=-3$", terms $17,14,11,8,5$) prints the *same* raster image used later in the module's "Using Explicit Formulas" discussion — a y-axis scaled $0$ to $250$ with five points at $(1,200),(2,150),(3,100),(4,50),(5,0)$, which is a different sequence entirely (the $a_1=200,d=-50$ sequence discussed several paragraphs later) and does not depict $17,14,11,8,5$ at any scale. The local page recreates the correct scatter plot for the printed example ($1,17),(2,14),(3,11),(4,8),(5,5)$ on a $0$–$20$ axis instead of reproducing the mismatched source image; the later, correctly-scaled $200/150/100/50/0$ figure is recreated faithfully in its own place. Omitted the two small raster illustrations of the depreciation and $+3$ example sequences (informal arrow diagrams, not numbered figures in the source) and the two raster images inside Example 1's solution showing the four subtraction computations for each part; all of this arithmetic is recreated as ordinary KaTeX (a labelled sequence display for the two intro sequences, and a `\begin{array}{lrcl}` step table for each part of Example 1's solution), preserving every computed step rather than the finished result alone. Every "is the sequence arithmetic?" ask is a `multiplechoice` (yes/no); where the source's own Try It also asks for the common difference, it splits into the multiple choice plus a separate fill-in, per this book's established pattern. Every "find a recursive formula" fill-in pins the requested shape ("in the form $a_n=\ldots$, in terms of $a_{n-1}$, for $n\ge2$"), since the grader accepts reordered and rescaled restatements of a correct recursive rule but treats a shifted index or a wrong sign as a different rule; the source's own algebraic answer key states the initial term beside the rule (e.g. "$a_1=17;a_n=a_{n-1}+9,n\ge2$"), and the initial term, which is the first listed term, is not asked as a separate fill-in. The Try It on the woman's daily run splits the same way into a formula fill-in and a separate fill-in for her run 8 weeks from today, whose question restates the run's starting length and weekly increase rather than printing the formula. The two "write an explicit formula" asks add "Simplify the formula." after the source wording, and the first-five-terms ask for $a_1=0$, $d=\tfrac23$ adds "with each fraction in lowest terms." The one fraction-valued single-value fill-in (the common difference of $0,\tfrac12,1,\tfrac32,2,\ldots$) declares `answerForm="fraction"` and its question says "as a fraction," confirmed against the real grader: a rounded decimal reports `form`, not `correct`, once the token is declared. Nine selected end-of-section exercises were adapted into the interactive components of the closing Practice block, one Practice group per objective, every answer independently re-derived — including by running the arithmetic in Node with exact-rational tracking for every fraction — rather than read off the source key.</small>

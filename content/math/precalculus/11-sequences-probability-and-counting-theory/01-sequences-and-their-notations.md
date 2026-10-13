@@ -34,7 +34,7 @@ The **ellipsis** ($\ldots$) indicates that the sequence continues indefinitely. 
 
 Listing all of the terms for a sequence can be cumbersome. For example, finding the number of hits on the website at the end of the month would require listing out as many as 31 terms. A more efficient way to determine a specific term is by writing a formula to define the sequence.
 
-One type of formula is an **explicit formula**, which defines the terms of a sequence using their position in the sequence. Explicit formulas are helpful if we want to find a specific term of a sequence without finding all of the previous terms. We can use the formula to find the **$n$th term of the sequence**, where $n$ is any positive number. In our example, each number in the sequence is double the previous number, so we can use powers of 2 to write a formula for the $n$th term.
+One type of formula is an **explicit formula**, which defines the terms of a sequence using their position in the sequence. Explicit formulas are helpful if we want to find a specific term of a sequence without finding all of the previous terms. We can use the formula to find the **$n$th term of the sequence**, where $n$ is any positive integer. In our example, each number in the sequence is double the previous number, so we can use powers of 2 to write a formula for the $n$th term.
 
 The first term of the sequence is $2^1=2$, the second term is $2^2=4$, the third term is $2^3=8$, and so on. The $n$th term of the sequence can be found by raising 2 to the $n$th power. An explicit formula for a sequence is named by a lower case letter $a,b,c\ldots$ with the subscript $n$. The explicit formula for this sequence is
 
@@ -120,12 +120,13 @@ The first five terms are $5,2,-1,-4,-7$.
 A graph can be made from this table of values. From the graph below, we can see that this sequence represents a linear function, but notice the graph is not continuous because the domain is over the positive integers only.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of five points showing a decreasing linear sequence: (1, 5), (2, 2), (3, -1), (4, -4), and (5, -7).","xMin":-1,"xMax":6,"yMin":-8,"yMax":6,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"points":[{"at":[1,5],"label":"(1, 5)"},{"at":[2,2],"label":"(2, 2)"},{"at":[3,-1],"label":"(3, -1)"},{"at":[4,-4],"label":"(4, -4)"},{"at":[5,-7],"label":"(5, -7)"}]}
+{"ariaLabel":"A scatter plot of five points showing a decreasing linear sequence: (1, 5), (2, 2), (3, -1), (4, -4), and (5, -7).","xMin":-1,"xMax":6,"yMin":-8,"yMax":6,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"unit":32,"points":[{"at":[1,5],"label":"(1, 5)"},{"at":[2,2],"label":"(2, 2)"},{"at":[3,-1],"label":"(3, -1)"},{"at":[4,-4],"label":"(4, -4)"},{"at":[5,-7],"label":"(5, -7)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write the first five terms of the sequence defined by the explicit formula $t_n=5n-4$. Enter the first five terms, in order, separated by commas."
   answer="1,6,11,16,21"
+  answerForm="decimal"
   answerDisplay="$1,6,11,16,21$"
   hint="Substitute $n=1,2,3,4,5$ in turn into the formula."
 >}}
@@ -167,7 +168,7 @@ The first five terms are $-\tfrac{1}{2},\tfrac{4}{3},-\tfrac{9}{4},\tfrac{16}{5}
 **Analysis.** The graph of this function, shown below, looks different from the ones we have seen previously in this section because the terms of the sequence alternate between positive and negative values.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of five points showing an alternating sequence: (1, -1/2), (2, 4/3), (3, -9/4), (4, 16/5), and (5, -25/6), alternating between negative and positive values.","xMin":-1,"xMax":6,"yMin":-5,"yMax":4,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"points":[{"at":[1,-0.5],"label":"(1, -1/2)"},{"at":[2,1.3333],"label":"(2, 4/3)"},{"at":[3,-2.25],"label":"(3, -9/4)"},{"at":[4,3.2],"label":"(4, 16/5)"},{"at":[5,-4.1667],"label":"(5, -25/6)"}]}
+{"ariaLabel":"A scatter plot of five points showing an alternating sequence: (1, -1/2), (2, 4/3), (3, -9/4), (4, 16/5), and (5, -25/6), alternating between negative and positive values.","xMin":-1,"xMax":6,"yMin":-5,"yMax":4,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"unit":44,"yUnit":52,"points":[{"at":[1,-0.5],"label":"(1, -1/2)","labelSide":"s"},{"at":[2,1.3333],"label":"(2, 4/3)"},{"at":[3,-2.25],"label":"(3, -9/4)"},{"at":[4,3.2],"label":"(4, 16/5)"},{"at":[5,-4.1667],"label":"(5, -25/6)"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -178,9 +179,10 @@ The first five terms are $-\tfrac{1}{2},\tfrac{4}{3},-\tfrac{9}{4},\tfrac{16}{5}
 
 {{< fillin
   question="Write the first five terms of the sequence $a_n=\tfrac{4n}{(-2)^n}$. Enter the first five terms, in order, separated by commas."
-  answer="-2,2,-3/2,1,-5/8"
+  answer="-2,2,-\frac{3}{2},1,-\frac{5}{8}"
+  answerForm="lowest-terms"
   answerDisplay="$-2,2,-\tfrac{3}{2},1,-\tfrac{5}{8}$"
-  hint="Substitute $n=1,2,3,4,5$; the sign of each term is set by $(-2)^n$ in the denominator."
+  hint="Substitute $n=1,2,3,4,5$ in turn, evaluate the power $(-2)^n$ in the denominator, and reduce each fraction."
 >}}
 
 ### Investigating Piecewise Explicit Formulas
@@ -225,6 +227,7 @@ The first six terms are $1,4,1,16,25,2$.
 {{< fillin
   question="Write the first six terms of the sequence $a_n=\begin{cases}2n^3 & \text{if }n\text{ is odd} \\ \tfrac{5n}{2} & \text{if }n\text{ is even}\end{cases}$. Enter the first six terms, in order, separated by commas."
   answer="2,5,54,10,250,15"
+  answerForm="decimal"
   answerDisplay="$2,5,54,10,250,15$"
   hint="Use $2n^3$ when $n$ is odd and $\tfrac{5n}{2}$ when $n$ is even; check each $n$ from 1 through 6 against both conditions."
 >}}
@@ -266,21 +269,21 @@ c. The terms are powers of $e$. For $n=1$, the first term is $e^4$ so the expone
   question="Write an explicit formula for the $n$th term of the sequence $9,-81,729,-6{,}561,59{,}049,\ldots$."
   answer="(-1)^{n+1}9^n"
   answerDisplay="$(-1)^{n+1}9^n$"
-  hint="The terms alternate in sign and are powers of 9; test your formula for $n=1$ and $n=2$."
+  hint="Look for one pattern in the sizes of the terms and a separate pattern in their signs; test your formula for $n=1$ and $n=2$."
 >}}
 
 {{< fillin
   question="Write an explicit formula for the $n$th term of the sequence $-\tfrac{3}{4},-\tfrac{9}{8},-\tfrac{27}{12},-\tfrac{81}{16},-\tfrac{243}{20},\ldots$."
-  answer="-3^n/(4n)"
+  answer="-\frac{3^n}{4n}"
   answerDisplay="$-\tfrac{3^n}{4n}$"
-  hint="The numerators are powers of 3 and the denominators are multiples of 4; every term is negative."
+  hint="Look for a separate pattern among the numerators and among the denominators, then account for the sign of the terms."
 >}}
 
 {{< fillin
   question="Write an explicit formula for the $n$th term of the sequence $\tfrac{1}{e^2},\tfrac{1}{e},1,e,e^2,\ldots$."
   answer="e^{n-3}"
   answerDisplay="$e^{n-3}$"
-  hint="The terms are powers of $e$; find the exponent that gives $-2$ when $n=1$."
+  hint="Write every term as a power of $e$, then find an expression in $n$ that gives each exponent."
 >}}
 
 ### Writing the Terms of a Sequence Defined by a Recursive Formula
@@ -368,12 +371,13 @@ $$
 The first five terms are $9,7,1,-17,-71$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of five points showing a decreasing recursive sequence: (1, 9), (2, 7), (3, 1), (4, -17), and (5, -71).","xMin":-1,"xMax":6,"yMin":-80,"yMax":20,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"yTickStep":20,"unit":45,"yUnit":3,"points":[{"at":[1,9],"label":"(1, 9)"},{"at":[2,7],"label":"(2, 7)"},{"at":[3,1],"label":"(3, 1)"},{"at":[4,-17],"label":"(4, -17)"},{"at":[5,-71],"label":"(5, -71)"}]}
+{"ariaLabel":"A scatter plot of five points showing a decreasing recursive sequence: (1, 9), (2, 7), (3, 1), (4, -17), and (5, -71).","xMin":-1,"xMax":6,"yMin":-80,"yMax":20,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"yTickStep":20,"yGridStep":10,"unit":45,"yUnit":3,"points":[{"at":[1,9],"label":"(1, 9)"},{"at":[2,7],"label":"(2, 7)"},{"at":[3,1],"label":"(3, 1)"},{"at":[4,-17],"label":"(4, -17)"},{"at":[5,-71],"label":"(5, -71)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write the first five terms of the sequence defined by the recursive formula $a_1=2,\ a_n=2a_{n-1}+1,$ for $n\ge2$. Enter the first five terms, in order, separated by commas."
   answer="2,5,11,23,47"
+  answerForm="decimal"
   answerDisplay="$2,5,11,23,47$"
   hint="Start from $a_1=2$ and repeatedly substitute the previous term into $a_n=2a_{n-1}+1$."
 >}}
@@ -411,12 +415,13 @@ $$
 The first six terms are $1,2,10,38,154,614$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A scatter plot of six points showing a rapidly increasing recursive sequence: (1, 1), (2, 2), (3, 10), (4, 38), (5, 154), and (6, 614).","xMin":0,"xMax":7,"yMin":0,"yMax":700,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"yTickStep":100,"unit":45,"yUnit":0.5,"points":[{"at":[1,1],"label":"(1, 1)"},{"at":[2,2],"label":"(2, 2)"},{"at":[3,10],"label":"(3, 10)"},{"at":[4,38],"label":"(4, 38)"},{"at":[5,154],"label":"(5, 154)"},{"at":[6,614],"label":"(6, 614)"}]}
+{"ariaLabel":"A scatter plot of six points showing a rapidly increasing recursive sequence: (1, 1), (2, 2), (3, 10), (4, 38), (5, 154), and (6, 614).","xMin":0,"xMax":7,"yMin":0,"yMax":700,"xLabel":"n","yLabel":"aₙ","tickLabels":true,"yTickStep":100,"yGridStep":100,"unit":45,"yUnit":0.5,"points":[{"at":[1,1],"label":"(1, 1)"},{"at":[2,2],"label":"(2, 2)"},{"at":[3,10],"label":"(3, 10)"},{"at":[4,38],"label":"(4, 38)"},{"at":[5,154],"label":"(5, 154)"},{"at":[6,614],"label":"(6, 614)"}]}
 {{< /apfigure >}}
 
 {{< fillin
   question="Write the first eight terms of the sequence defined by the recursive formula $a_1=0,\ a_2=1,\ a_3=1,\ a_n=\tfrac{a_{n-1}}{a_{n-2}}+a_{n-3},$ for $n\ge4$. Enter the first eight terms, in order, separated by commas."
-  answer="0,1,1,1,2,3,5/2,17/6"
+  answer="0,1,1,1,2,3,\frac{5}{2},\frac{17}{6}"
+  answerForm="lowest-terms"
   answerDisplay="$0,1,1,1,2,3,\tfrac{5}{2},\tfrac{17}{6}$"
   hint="The first three terms are given; for each later term divide the two preceding terms and add the term before those."
 >}}
@@ -436,7 +441,7 @@ An example of a formula containing a **factorial** is $a_n=(n+1)!$. The sixth te
 
 $$a_6=(6+1)!=7!=7\cdot6\cdot5\cdot4\cdot3\cdot2\cdot1=5{,}040$$
 
-The factorial of any whole number $n$ is $n(n-1)!$. We can therefore also think of $5!$ as $5\cdot4!$.
+The factorial of any positive integer $n$ is $n(n-1)!$. We can therefore also think of $5!$ as $5\cdot4!$.
 
 {{< callout type="info" >}}
   **$n$ Factorial.** **$n$ factorial** is a mathematical operation that can be defined using a recursive formula. The factorial of $n$, denoted $n!$, is defined for a positive integer $n$ as:
@@ -482,7 +487,8 @@ The first five terms are $\tfrac{5}{6},\tfrac{5}{12},\tfrac{1}{8},\tfrac{1}{36},
 
 {{< fillin
   question="Write the first five terms of the sequence defined by the explicit formula $a_n=\tfrac{(n+1)!}{2n}$. Enter the first five terms, in order, separated by commas."
-  answer="1,3/2,4,15,72"
+  answer="1,\frac{3}{2},4,15,72"
+  answerForm="lowest-terms"
   answerDisplay="$1,\tfrac{3}{2},4,15,72$"
   hint="Substitute $n=1,2,3,4,5$; expand each factorial before dividing by $2n$."
 >}}
@@ -515,30 +521,33 @@ The first five terms are $\tfrac{5}{6},\tfrac{5}{12},\tfrac{1}{8},\tfrac{1}{36},
 
 {{< fillin
   question="Write the first four terms of the sequence $a_n=\tfrac{2^n}{n^3}$. Enter the first four terms, in order, separated by commas."
-  answer="2,1/2,8/27,1/4"
+  answer="2,\frac{1}{2},\frac{8}{27},\frac{1}{4}"
+  answerForm="lowest-terms"
   answerDisplay="$2,\tfrac{1}{2},\tfrac{8}{27},\tfrac{1}{4}$"
-  hint="Substitute $n=1,2,3,4$ and simplify each power-of-2-over-cube fraction."
+  hint="Substitute $n=1,2,3,4$ in turn and reduce each fraction to lowest terms."
 >}}
 
 {{< fillin
   question="Write the first four terms of the sequence $a_n=1.25\cdot(-4)^{n-1}$. Enter the first four terms, in order, separated by commas."
   answer="1.25,-5,20,-80"
+  answerForm="decimal"
   answerDisplay="$1.25,-5,20,-80$"
-  hint="Substitute $n=1,2,3,4$; the sign alternates because the base is negative."
+  hint="Substitute $n=1,2,3,4$ in turn; evaluate the power of $-4$ first, then multiply by $1.25$."
 >}}
 
 {{< fillin
   question="Write the first eight terms of the piecewise sequence $a_n=\begin{cases}\tfrac{n^2}{2n+1} & \text{if }n\le5 \\ n^2-5 & \text{if }n>5\end{cases}$. Enter the first eight terms, in order, separated by commas."
-  answer="1/3,4/5,9/7,16/9,25/11,31,44,59"
+  answer="\frac{1}{3},\frac{4}{5},\frac{9}{7},\frac{16}{9},\frac{25}{11},31,44,59"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{3},\tfrac{4}{5},\tfrac{9}{7},\tfrac{16}{9},\tfrac{25}{11},31,44,59$"
   hint="Use the first formula for $n=1$ through $5$, then switch to the second formula for $n=6,7,8$."
 >}}
 
 {{< fillin
   question="Write an explicit formula for the $n$th term of the sequence $1,1,\tfrac{4}{3},2,\tfrac{16}{5},\ldots$."
-  answer="2^{n-1}/n"
+  answer="\frac{2^{n-1}}{n}"
   answerDisplay="$\tfrac{2^{n-1}}{n}$"
-  hint="Compare each term's numerator to a power of 2 and its denominator to $n$."
+  hint="Rewrite every term as a fraction so that the denominators follow a simple pattern, then look for a separate pattern among the numerators."
 >}}
 
 ### Write the terms of a sequence defined by a recursive formula
@@ -546,22 +555,17 @@ The first five terms are $\tfrac{5}{6},\tfrac{5}{12},\tfrac{1}{8},\tfrac{1}{36},
 {{< fillin
   question="Write the first five terms of the sequence defined by the recursive formula $a_1=3,\ a_n=(-3)a_{n-1},$ for $n\ge2$. Enter the first five terms, in order, separated by commas."
   answer="3,-9,27,-81,243"
+  answerForm="decimal"
   answerDisplay="$3,-9,27,-81,243$"
   hint="Start from $a_1=3$ and multiply each term by $-3$ to get the next one."
 >}}
 
 {{< fillin
   question="Write the first five terms of the sequence defined by the recursive formula $a_1=-1,\ a_n=\tfrac{(-3)^{n-1}}{a_{n-1}-2},$ for $n\ge2$. Enter the first five terms, in order, separated by commas."
-  answer="-1,1,-9,27/11,891/5"
+  answer="-1,1,-9,\frac{27}{11},\frac{891}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$-1,1,-9,\tfrac{27}{11},\tfrac{891}{5}$"
   hint="At each step, subtract 2 from the previous term and divide it into $(-3)^{n-1}$."
->}}
-
-{{< fillin
-  question="The sequence $-8,-6,-3,1,6,\ldots$ is defined by a recursive formula. Find its initial term $a_1$."
-  answer="-8"
-  answerDisplay="$a_1=-8$"
-  hint="The initial term is simply the first number listed."
 >}}
 
 {{< fillin
@@ -591,18 +595,20 @@ The first five terms are $\tfrac{5}{6},\tfrac{5}{12},\tfrac{1}{8},\tfrac{1}{36},
 
 {{< fillin
   question="Write the first four terms of the sequence $a_n=\tfrac{n!}{n^2}$. Enter the first four terms, in order, separated by commas."
-  answer="1,1/2,2/3,3/2"
+  answer="1,\frac{1}{2},\frac{2}{3},\frac{3}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$1,\tfrac{1}{2},\tfrac{2}{3},\tfrac{3}{2}$"
   hint="Substitute $n=1,2,3,4$; expand each factorial before dividing by $n^2$."
 >}}
 
 {{< fillin
   question="Write the first four terms of the sequence $a_n=\tfrac{n!}{n^2-n-1}$. Enter the first four terms, in order, separated by commas."
-  answer="-1,2,6/5,24/11"
+  answer="-1,2,\frac{6}{5},\frac{24}{11}"
+  answerForm="lowest-terms"
   answerDisplay="$-1,2,\tfrac{6}{5},\tfrac{24}{11}$"
-  hint="Substitute $n=1,2,3,4$; watch the sign of the denominator when $n=1$."
+  hint="Substitute $n=1,2,3,4$ in turn; evaluate the factorial and the denominator $n^2-n-1$ separately before dividing."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.1: Sequences and Their Notations](https://openstax.org/books/precalculus-2e/pages/11-1-sequences-and-their-notations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Learning Objectives" keyed to Intermediate Algebra 12.1.1–12.1.2, with an antibiotic-dosage lead-in example and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, true page 1099 (printed page 1089), where the chapter-opener lottery-ticket page runs directly into the "11.1 Sequences and Their Notations" heading, objectives, and the video-game-hits paragraph with no corequisite-skills material between them; this is the same prepended-block pattern recurring in other chapters' opening modules. Omitted the credit photograph of the SuperLotto Plus lottery ticket on the chapter-opener page (not part of this section). Recreated all seven instructional figures as accessible spec-first scatter plots: the introductory $a_n=2^n$ plot and every subsequent worked-example plot are `points`-only (no connecting curve or continuous-function overlay, matching the source art exactly), each point labelled with its coordinate pair exactly where the source labels one — fraction-valued coordinates written with a slash (`(1, 5/6)`) rather than the source's occasional mixed-number rendering — and the piecewise-sequence plot left unlabelled, matching the source. Five figures (the opening powers-of-two scatter, the piecewise worked-example scatter, the two recursive-sequence scatters, and the factorial-sequence scatter) carry an explicit `unit`/`yUnit` pair so that terms far larger than the $n$-range still plot in a roughly square window, with `labelSide` pins on the factorial figure's three crowded labels; every figure was compared against its source page and re-rendered until no label overlapped another label, a point, or an axis tick. Every "write the first $n$ terms" fill-in states the order explicitly and is graded as an ordered list; no list answer's members reach $1{,}000$ in magnitude — the two piecewise Section Exercises used in the closing Practice block (Algebraic #17 here) were chosen over faster-growing alternatives for exactly that reason. Every "find a recursive formula" Practice item pins the requested shape ("in the form $a_n=\ldots$, in terms of $a_{n-1}$, for $n\ge2$") and keys the initial term as its own separate fill-in, since the grader accepts reordered and rescaled restatements of a correct recursive rule but treats a shifted index or a wrong sign as a different rule; the source's own algebraic answer key states both parts together (e.g. "$a_1=-8,a_n=a_{n-1}+n$"), split here into two components per the multipart-expansion rule. Every evaluate-a-factorial and evaluate-a-factorial-quotient fill-in ($6!$, $\tfrac{12!}{6!}$) declares `answerForm="decimal"`, confirmed against the real grader: retyping the printed factorial expression itself grades `form`, not `correct`, once the token is declared, while the bare evaluated integer (grouped or not) grades `correct`. Eleven selected end-of-section exercises were adapted into the twelve interactive components of the closing Practice block (one recursive-formula exercise split into its initial-term and recursive-rule parts), one Practice group per objective, every answer independently re-derived — including by running the arithmetic in Node with exact-rational tracking for every fraction — rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.1: Sequences and Their Notations](https://openstax.org/books/precalculus-2e/pages/11-1-sequences-and-their-notations) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Learning Objectives" keyed to Intermediate Algebra 12.1.1–12.1.2, with an antibiotic-dosage lead-in example and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, true page 1099 (printed page 1089), where the chapter-opener lottery-ticket page runs directly into the "11.1 Sequences and Their Notations" heading, objectives, and the video-game-hits paragraph with no corequisite-skills material between them; this is the same prepended-block pattern recurring in other chapters' opening modules. Omitted the credit photograph of the SuperLotto Plus lottery ticket on the chapter-opener page (not part of this section). Recreated all seven instructional figures as accessible spec-first scatter plots: the introductory $a_n=2^n$ plot and every subsequent worked-example plot are `points`-only (no connecting curve or continuous-function overlay, matching the source art exactly), each point labelled with its coordinate pair exactly where the source labels one — fraction-valued coordinates written with a slash (`(1, 5/6)`) rather than the source's occasional mixed-number rendering — and the piecewise-sequence plot left unlabelled, matching the source. Six figures (the opening powers-of-two scatter, the alternating-sequence scatter, the piecewise worked-example scatter, the two recursive-sequence scatters, and the factorial-sequence scatter) carry an explicit `unit`/`yUnit` pair so that every term plots legibly in a roughly square window, with `labelSide` pins on the factorial figure's three crowded labels and on the alternating figure's $(1,-\tfrac12)$ label, set below its point clear of the $n$-axis; every figure was compared against its source page and re-rendered until no label overlapped another label, a point, or an axis tick. Every "write the first $n$ terms" fill-in states the order explicitly and is graded as an ordered list; no list answer's members reach $1{,}000$ in magnitude — the piecewise Section Exercise used in the closing Practice block was chosen over faster-growing alternatives for exactly that reason. The "find a recursive formula" Practice item pins the requested shape ("in the form $a_n=\ldots$, in terms of $a_{n-1}$, for $n\ge2$"), since the grader accepts reordered and rescaled restatements of a correct recursive rule but treats a shifted index or a wrong sign as a different rule; the source's own algebraic answer key states the initial term beside the rule (e.g. "$a_1=-8,a_n=a_{n-1}+n$"), and the initial term, which is the first listed term, is not asked as a separate fill-in. Every fill-in whose answer is a number or a list of numbers declares a value form — `decimal` for integers and decimals, `lowest-terms` for a list holding fractions — so an unworked term (a retyped $6!$ or $\tfrac{12!}{6!}$, a substitution such as $5(1)-4$, an unreduced $\tfrac{6}{4}$) grades `form`, not `correct`, while the evaluated value (grouped or not, a fraction as a decimal or mixed number) grades `correct`. Two prose claims are made exact: the source says $n$ in the $n$th term may be "any positive number" and that "the factorial of any whole number $n$ is $n(n-1)!$"; both read "positive integer" here, since a term's position is a counting number and $0!$ is not $0\cdot(-1)!$. "An example of formula containing a factorial" reads "An example of a formula". Eleven selected end-of-section exercises were adapted into the eleven interactive components of the closing Practice block, one Practice group per objective, every answer independently re-derived — including by running the arithmetic in Node with exact-rational tracking for every fraction — rather than read off the source key.</small>

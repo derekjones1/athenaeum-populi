@@ -427,8 +427,10 @@ test('a numeric, bound, or coordinate key needs a value form that refuses it unw
   assert(lint(fillin('(-\\infty,107]')).some(unworked), 'an interval endpoint fires');
   assert(lint(fillin('(2,\\frac{3}{2})')).some(unworked), 'a pair coordinate fires');
   assert.equal(lint(fillin('(2,\\frac{3}{2})', 'lowest-terms')).filter(unworked).length, 0, 'lowest-terms reaches each coordinate');
-  assert.equal(lint(fillin('105'), 'content/math/precalculus/11-sequences-probability-and-counting-theory/01-sequences-and-their-notations.md').filter(unworked).length, 0,
-    'a Precalculus chapter whose re-review row is open is not yet held to it');
+  assert.equal(lint(fillin('105'), 'content/math/precalculus/knowledge-check-01-06.md').filter(unworked).length, 0,
+    'a Precalculus knowledge check whose re-review row is open is not yet held to it');
+  assert(lint(fillin('105'), 'content/math/precalculus/11-sequences-probability-and-counting-theory/01-sequences-and-their-notations.md').some(unworked),
+    'a Precalculus chapter whose row has closed is held to it (chapters 11-12, October 12, 2026)');
 });
 
 test('unworkedKey restates only the numbers a value form can reach', () => {

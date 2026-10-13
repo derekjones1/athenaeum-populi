@@ -39,6 +39,7 @@ The company that sells customizable cases offers cases for tablets and smartphon
 {{< fillin
   question="A student is shopping for a new computer. He is deciding among 3 desktop computers and 4 laptop computers. What is the total number of computer options?"
   answer="7"
+  answerForm="decimal"
   answerDisplay="$7$"
   hint="The two groups share no common option, so add the number of desktops to the number of laptops."
 >}}
@@ -48,11 +49,11 @@ The company that sells customizable cases offers cases for tablets and smartphon
 The **Multiplication Principle** applies when we are making more than one selection. Suppose we are choosing an appetizer, an entrée, and a dessert. If there are 2 appetizer options, 3 entrée options, and 2 dessert options on a fixed-price dinner menu, there are a total of 12 possible choices of one each, as shown in the tree diagram below.
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A tree diagram for the soup appetizer branch. Soup leads to three entree choices, chicken, fish, and steak; each entree leads to two dessert choices, cake and pudding, for six soup-branch dinners.","unit":44,"texts":[{"at":[2.7,2],"text":"Soup","anchor":"middle"},{"at":[0.5,1],"text":"Chicken","anchor":"middle"},{"at":[2.7,1],"text":"Fish","anchor":"middle"},{"at":[4.9,1],"text":"Steak","anchor":"middle"},{"at":[0,0],"text":"Cake","anchor":"middle"},{"at":[1,0],"text":"Pudding","anchor":"middle"},{"at":[2.2,0],"text":"Cake","anchor":"middle"},{"at":[3.2,0],"text":"Pudding","anchor":"middle"},{"at":[4.4,0],"text":"Cake","anchor":"middle"},{"at":[5.4,0],"text":"Pudding","anchor":"middle"}],"segments":[{"from":[2.7,2],"to":[0.5,1],"gapTexts":true},{"from":[2.7,2],"to":[2.7,1],"gapTexts":true},{"from":[2.7,2],"to":[4.9,1],"gapTexts":true},{"from":[0.5,1],"to":[0,0],"gapTexts":true},{"from":[0.5,1],"to":[1,0],"gapTexts":true},{"from":[2.7,1],"to":[2.2,0],"gapTexts":true},{"from":[2.7,1],"to":[3.2,0],"gapTexts":true},{"from":[4.9,1],"to":[4.4,0],"gapTexts":true},{"from":[4.9,1],"to":[5.4,0],"gapTexts":true}]}
+{"ariaLabel":"A tree diagram for the soup appetizer branch. Soup leads to three entree choices, chicken, fish, and steak; each entree leads to two dessert choices, cake and pudding, for six soup-branch dinners.","unit":44,"texts":[{"at":[4.3,2.6],"text":"Soup","anchor":"middle"},{"at":[1.1,1.3],"text":"Chicken","anchor":"middle"},{"at":[4.3,1.3],"text":"Fish","anchor":"middle"},{"at":[7.5,1.3],"text":"Steak","anchor":"middle"},{"at":[0.4,0],"text":"Cake","anchor":"middle"},{"at":[1.8,0],"text":"Pudding","anchor":"middle"},{"at":[3.6,0],"text":"Cake","anchor":"middle"},{"at":[5.0,0],"text":"Pudding","anchor":"middle"},{"at":[6.8,0],"text":"Cake","anchor":"middle"},{"at":[8.2,0],"text":"Pudding","anchor":"middle"}],"segments":[{"from":[4.3,2.6],"to":[1.1,1.3],"gapTexts":true},{"from":[4.3,2.6],"to":[4.3,1.3],"gapTexts":true},{"from":[4.3,2.6],"to":[7.5,1.3],"gapTexts":true},{"from":[1.1,1.3],"to":[0.4,0],"gapTexts":true},{"from":[1.1,1.3],"to":[1.8,0],"gapTexts":true},{"from":[4.3,1.3],"to":[3.6,0],"gapTexts":true},{"from":[4.3,1.3],"to":[5.0,0],"gapTexts":true},{"from":[7.5,1.3],"to":[6.8,0],"gapTexts":true},{"from":[7.5,1.3],"to":[8.2,0],"gapTexts":true}]}
 {{< /apfigure >}}
 
 {{< apfigure kind="figure" >}}
-{"ariaLabel":"A tree diagram for the salad appetizer branch. Salad leads to three entree choices, chicken, fish, and steak; each entree leads to two dessert choices, cake and pudding, for six salad-branch dinners.","unit":44,"texts":[{"at":[2.7,2],"text":"Salad","anchor":"middle"},{"at":[0.5,1],"text":"Chicken","anchor":"middle"},{"at":[2.7,1],"text":"Fish","anchor":"middle"},{"at":[4.9,1],"text":"Steak","anchor":"middle"},{"at":[0,0],"text":"Cake","anchor":"middle"},{"at":[1,0],"text":"Pudding","anchor":"middle"},{"at":[2.2,0],"text":"Cake","anchor":"middle"},{"at":[3.2,0],"text":"Pudding","anchor":"middle"},{"at":[4.4,0],"text":"Cake","anchor":"middle"},{"at":[5.4,0],"text":"Pudding","anchor":"middle"}],"segments":[{"from":[2.7,2],"to":[0.5,1],"gapTexts":true},{"from":[2.7,2],"to":[2.7,1],"gapTexts":true},{"from":[2.7,2],"to":[4.9,1],"gapTexts":true},{"from":[0.5,1],"to":[0,0],"gapTexts":true},{"from":[0.5,1],"to":[1,0],"gapTexts":true},{"from":[2.7,1],"to":[2.2,0],"gapTexts":true},{"from":[2.7,1],"to":[3.2,0],"gapTexts":true},{"from":[4.9,1],"to":[4.4,0],"gapTexts":true},{"from":[4.9,1],"to":[5.4,0],"gapTexts":true}]}
+{"ariaLabel":"A tree diagram for the salad appetizer branch. Salad leads to three entree choices, chicken, fish, and steak; each entree leads to two dessert choices, cake and pudding, for six salad-branch dinners.","unit":44,"texts":[{"at":[4.3,2.6],"text":"Salad","anchor":"middle"},{"at":[1.1,1.3],"text":"Chicken","anchor":"middle"},{"at":[4.3,1.3],"text":"Fish","anchor":"middle"},{"at":[7.5,1.3],"text":"Steak","anchor":"middle"},{"at":[0.4,0],"text":"Cake","anchor":"middle"},{"at":[1.8,0],"text":"Pudding","anchor":"middle"},{"at":[3.6,0],"text":"Cake","anchor":"middle"},{"at":[5.0,0],"text":"Pudding","anchor":"middle"},{"at":[6.8,0],"text":"Cake","anchor":"middle"},{"at":[8.2,0],"text":"Pudding","anchor":"middle"}],"segments":[{"from":[4.3,2.6],"to":[1.1,1.3],"gapTexts":true},{"from":[4.3,2.6],"to":[4.3,1.3],"gapTexts":true},{"from":[4.3,2.6],"to":[7.5,1.3],"gapTexts":true},{"from":[1.1,1.3],"to":[0.4,0],"gapTexts":true},{"from":[1.1,1.3],"to":[1.8,0],"gapTexts":true},{"from":[4.3,1.3],"to":[3.6,0],"gapTexts":true},{"from":[4.3,1.3],"to":[5.0,0],"gapTexts":true},{"from":[7.5,1.3],"to":[6.8,0],"gapTexts":true},{"from":[7.5,1.3],"to":[8.2,0],"gapTexts":true}]}
 {{< /apfigure >}}
 
 The possible choices are:
@@ -78,13 +79,14 @@ $$\text{\# of appetizer options}\times\text{\# of entree options}\times\text{\# 
   **The Multiplication Principle.** According to the Multiplication Principle, if one event can occur in $m$ ways and a second event can occur in $n$ ways after the first event has occurred, then the two events can occur in $m\times n$ ways. This is also known as the **Fundamental Counting Principle**.
 {{< /callout >}}
 
-**Example.** Diane packed 2 skirts, 4 blouses, and 2 sweaters for her business trip. She will need to choose a skirt and a blouse for each outfit and decide whether to wear the sweater. Use the Multiplication Principle to find the total number of possible outfits.
+**Example.** Diane packed 2 skirts, 4 blouses, and 2 sweaters for her business trip. She will need to choose a skirt and a blouse for each outfit and decide which sweater to wear. Use the Multiplication Principle to find the total number of possible outfits.
 
 **Solution.** To find the total number of outfits, find the product of the number of skirt options, the number of blouse options, and the number of sweater options: $2\times4\times2=16$. There are 16 possible outfits.
 
 {{< fillin
   question="A restaurant offers a breakfast special that includes a breakfast sandwich, a side dish, and a beverage. There are 3 types of breakfast sandwiches, 4 side dish options, and 5 beverage choices. Find the total number of possible breakfast specials."
   answer="60"
+  answerForm="decimal"
   answerDisplay="$60$"
   hint="Multiply the number of sandwich options by the number of side options by the number of beverage options."
 >}}
@@ -131,22 +133,25 @@ A family of five is having portraits taken. Use the Multiplication Principle to 
 {{< fillin
   question="A family of five is having portraits taken. How many ways can the family line up for the portrait?"
   answer="120"
+  answerForm="decimal"
   answerDisplay="$120$"
-  hint="All 5 family members are being placed in order, so the count is $5!$."
+  hint="Count the choices left for each spot in the line, one spot at a time, and multiply."
 >}}
 
 {{< fillin
   question="A family of five is having portraits taken. How many ways can the photographer line up 3 of the 5 family members?"
   answer="60"
+  answerForm="decimal"
   answerDisplay="$60$"
-  hint="There are 5 choices for the first spot, 4 for the second, and 3 for the third."
+  hint="Count the family members available for each of the 3 spots in turn, and multiply."
 >}}
 
 {{< fillin
   question="A family of five is having portraits taken. How many ways can the family line up for the portrait if the parents are required to stand on each end?"
   answer="12"
+  answerForm="decimal"
   answerDisplay="$12$"
-  hint="There are 2 ways to arrange the parents on the two ends, then arrange the 3 children in the middle 3 spots."
+  hint="Count the ways to place the parents on the two ends, then the ways to arrange the rest of the family in the middle spots, and multiply."
 >}}
 
 #### Finding the Number of Permutations of $n$ Distinct Objects Using a Formula
@@ -202,15 +207,17 @@ A play has a cast of 7 actors preparing to make their curtain call. Use the perm
 {{< fillin
   question="A play has a cast of 7 actors preparing to make their curtain call. How many ways can the 7 actors line up?"
   answer="5040"
+  answerForm="decimal"
   answerDisplay="$5{,}040$"
-  hint="All 7 actors are placed in order, so use $P(7,7)$."
+  hint="Every actor is placed in the line, so $r$ equals $n$ in the permutation formula."
 >}}
 
 {{< fillin
   question="A play has a cast of 7 actors preparing to make their curtain call. How many ways can 5 of the 7 actors be chosen to line up?"
   answer="2520"
+  answerForm="decimal"
   answerDisplay="$2{,}520$"
-  hint="Use the permutation formula $P(n,r)=\tfrac{n!}{(n-r)!}$ with $n=7$ and $r=5$."
+  hint="Identify $n$, the actors available, and $r$, the actors placed in the line, then use $P(n,r)=\tfrac{n!}{(n-r)!}$."
 >}}
 
 ### Find the Number of Combinations Using the Formula
@@ -255,8 +262,9 @@ b. We want to choose 3 side dishes from 5 options: $C(5,3)=\tfrac{5!}{3!(5-3)!}=
 {{< fillin
   question="An ice cream shop offers 10 flavors of ice cream. How many ways are there to choose 3 flavors for a banana split?"
   answer="120"
+  answerForm="decimal"
   answerDisplay="$120$"
-  hint="Order does not matter here, so use the combination formula $C(10,3)$."
+  hint="Order does not matter, so use $C(n,r)=\tfrac{n!}{r!(n-r)!}$ with $n$ the flavors offered and $r$ the flavors chosen."
 >}}
 
 ### Finding the Number of Subsets of a Set
@@ -291,8 +299,9 @@ There are 16 possible ways to order a potato.
 {{< fillin
   question="A sundae bar at a wedding has 6 toppings to choose from. Any number of toppings can be chosen. How many different sundaes are possible?"
   answer="64"
+  answerForm="decimal"
   answerDisplay="$64$"
-  hint="A set of 6 distinct toppings has $2^6$ subsets, including the subset with no toppings."
+  hint="Each topping is either on the sundae or not, so use the formula for the number of subsets of a set; count the sundae with no toppings too."
 >}}
 
 ### Finding the Number of Permutations of $n$ Non-Distinct Objects
@@ -324,8 +333,9 @@ There are 10,080 arrangements.
 {{< fillin
   question="Find the number of rearrangements of the letters in the word CARRIER."
   answer="840"
+  answerForm="decimal"
   answerDisplay="$840$"
-  hint="There are 7 letters, and the letter R repeats 3 times; divide $7!$ by $3!$."
+  hint="Count the letters and how many times each letter repeats, then use $\tfrac{n!}{r_1!r_2!\ldots r_k!}$."
 >}}
 
 {{< callout type="info" >}}
@@ -349,7 +359,7 @@ There are 10,080 arrangements.
 - A selection of objects where the order does not matter is a combination.
 - Given $n$ distinct objects, the number of ways to select $r$ objects from the set is $C(n,r)$, and can be found using a formula.
 - A set containing $n$ distinct objects has $2^n$ subsets.
-- A permutation of $n$ non-distinct objects, where $r_1$ are alike, $r_2$ are alike, and so on through $r_k$, is found by dividing $n!$ by $r_1!r_2!\ldots r_k!$.
+- For counting problems involving non-distinct objects, we need to divide to avoid counting duplicate permutations.
 
 ## Practice
 
@@ -359,7 +369,7 @@ There are 10,080 arrangements.
   question="Two separate events are joined by the word \"or\" when counting their combined outcomes. Which counting principle applies?"
   mode="text"
   answer="Addition Principle"
-  hint="The word \"or\" signals that the events' outcome counts should be combined, not multiplied."
+  hint="Compare how the two principles describe the events they count, in the boxed statements or the Key concepts."
 >}}
 Addition Principle
 Multiplication Principle
@@ -370,13 +380,15 @@ Combination formula
 {{< fillin
   question="Let the set $B=\{-23,-16,-7,-2,20,36,48,72\}$. How many ways are there to choose a positive number or an odd number from $B$?"
   answer="6"
+  answerForm="decimal"
   answerDisplay="$6$"
-  hint="Count the positive numbers, count the odd numbers, and add — no number in $B$ is both positive and odd."
+  hint="Count the positive numbers and the odd numbers in $B$, and check whether any number is in both before you combine the counts."
 >}}
 
 {{< fillin
   question="How many ways are there to pick a paint color from 5 shades of green, 4 shades of blue, or 7 shades of yellow?"
   answer="16"
+  answerForm="decimal"
   answerDisplay="$16$"
   hint="The three color groups share no shade, so add the three counts."
 >}}
@@ -386,6 +398,7 @@ Combination formula
 {{< fillin
   question="How many outcomes are possible from tossing a coin and rolling a 6-sided die?"
   answer="12"
+  answerForm="decimal"
   answerDisplay="$12$"
   hint="Multiply the number of coin outcomes by the number of die outcomes."
 >}}
@@ -393,13 +406,15 @@ Combination formula
 {{< fillin
   question="How many ways are there to construct a string of 3 digits if digits can be repeated?"
   answer="1000"
-  answerDisplay="$1000$"
-  hint="There are 10 choices for each of the 3 positions; multiply $10\times10\times10$."
+  answerForm="decimal"
+  answerDisplay="$1{,}000$"
+  hint="Count the choices for each of the 3 positions — a digit may be used again — and multiply."
 >}}
 
 {{< fillin
   question="A wholesale T-shirt company offers sizes small, medium, large, and extra-large in organic or non-organic cotton and colors white, black, gray, blue, and red. How many different T-shirts are there to choose from?"
   answer="40"
+  answerForm="decimal"
   answerDisplay="$40$"
   hint="Multiply the number of sizes by the number of cotton types by the number of colors."
 >}}
@@ -409,6 +424,7 @@ Combination formula
 {{< fillin
   question="Evaluate $P(5,2)$."
   answer="20"
+  answerForm="decimal"
   answerDisplay="$20$"
   hint="Use $P(n,r)=\tfrac{n!}{(n-r)!}$ with $n=5$ and $r=2$."
 >}}
@@ -416,6 +432,7 @@ Combination formula
 {{< fillin
   question="Evaluate $P(11,5)$."
   answer="55440"
+  answerForm="decimal"
   answerDisplay="$55{,}440$"
   hint="Use $P(n,r)=\tfrac{n!}{(n-r)!}$ with $n=11$ and $r=5$."
 >}}
@@ -423,8 +440,9 @@ Combination formula
 {{< fillin
   question="How many ways can a baseball coach arrange the order of 9 batters if there are 15 players on the team?"
   answer="1816214400"
+  answerForm="decimal"
   answerDisplay="$1{,}816{,}214{,}400$"
-  hint="The batting order matters and not every player bats, so use $P(15,9)$."
+  hint="The batting order matters and not every player bats: identify $n$ and $r$, then use the permutation formula."
 >}}
 
 ### Solve counting problems using combinations
@@ -444,6 +462,7 @@ factorial
 {{< fillin
   question="Evaluate $C(12,4)$."
   answer="495"
+  answerForm="decimal"
   answerDisplay="$495$"
   hint="Use $C(n,r)=\tfrac{n!}{r!(n-r)!}$ with $n=12$ and $r=4$."
 >}}
@@ -451,8 +470,9 @@ factorial
 {{< fillin
   question="A motorcycle shop has 10 choppers, 6 bobbers, and 5 café racers — different types of vintage motorcycles. How many ways can the shop choose 3 choppers, 5 bobbers, and 2 café racers for a weekend showcase?"
   answer="7200"
+  answerForm="decimal"
   answerDisplay="$7{,}200$"
-  hint="Order does not matter within each type, so multiply $C(10,3)\times C(6,5)\times C(5,2)$."
+  hint="Order does not matter within a type: count the choices for each type with the combination formula, then multiply the three counts."
 >}}
 
 ### Find the number of subsets of a given set
@@ -460,13 +480,15 @@ factorial
 {{< fillin
   question="Find the number of subsets of the set $\{1,2,3,4,5,6,7,8,9,10\}$."
   answer="1024"
-  answerDisplay="$1024$"
-  hint="A set of 10 distinct objects has $2^{10}$ subsets."
+  answerForm="decimal"
+  answerDisplay="$1{,}024$"
+  hint="Count the elements of the set, then use the formula for the number of subsets."
 >}}
 
 {{< fillin
   question="Find the number of subsets of a set containing 5 distinct numbers, 4 distinct letters, and 3 distinct symbols."
   answer="4096"
+  answerForm="decimal"
   answerDisplay="$4{,}096$"
   hint="Count the total number of distinct objects in the set, then raise 2 to that power."
 >}}
@@ -474,6 +496,7 @@ factorial
 {{< fillin
   question="Find the number of subsets of the set of two-digit numbers between 1 and 100 that contain the digit 0."
   answer="512"
+  answerForm="decimal"
   answerDisplay="$512$"
   hint="First count how many two-digit numbers contain the digit 0 (they all end in 0), then raise 2 to that count."
 >}}
@@ -483,24 +506,27 @@ factorial
 {{< fillin
   question="Find the distinct number of arrangements of the letters in the word \"academia.\""
   answer="6720"
+  answerForm="decimal"
   answerDisplay="$6{,}720$"
-  hint="The word has 8 letters with the letter a repeated 3 times; divide $8!$ by $3!$."
+  hint="Count the letters and how many times each letter repeats, then use $\tfrac{n!}{r_1!r_2!\ldots r_k!}$."
 >}}
 
 {{< fillin
   question="Find the distinct number of arrangements of the symbols in the string #,#,#,@,@,\$,\$,\$,%,%,%,%."
   answer="277200"
+  answerForm="decimal"
   answerDisplay="$277{,}200$"
-  hint="There are 12 symbols with # repeated 3 times, @ repeated 2 times, \$ repeated 3 times, and % repeated 4 times; divide $12!$ by the product of those factorials."
+  hint="Count the symbols and how many times each symbol repeats, then divide the factorial of the total by the factorial of each repeat count."
 >}}
 
 {{< fillin
   question="Suni bought 20 plants to arrange along the border of her garden. How many distinct arrangements can she make if the plants are comprised of 6 tulips, 6 roses, and 8 daisies?"
   answer="116396280"
+  answerForm="decimal"
   answerDisplay="$116{,}396{,}280$"
-  hint="Divide $20!$ by $6!\,6!\,8!$ to remove the duplicate orderings within each identical flower type."
+  hint="Plants of one kind are identical: use the formula for permutations of non-distinct objects, with $n$ the total number of plants."
 >}}
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.5: Counting Principles](https://openstax.org/books/precalculus-2e/pages/11-5-counting-principles) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1" and "Objective 2" review of the Addition and Multiplication Principles, keyed to Intermediate Algebra 12.4, complete with its own worked example and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 1137 (true PDF index 1147), where the previous section's last Real-World Applications exercise (11.4, exercise 62) runs directly into the "11.5 Counting Principles" heading with no corequisite-skills material between them; the same prepended-block pattern recurs in other chapter-11 modules and this section joins that list. Omitted the source's Figure 1 (a photograph-style illustration of 3 tablets plus 5 phones equaling 8 total device options): the figure is purely decorative — the count it illustrates is already fully stated in the surrounding prose ($3+5=8$) — so it is not recreated, per this book's convention of omitting decorative photographs. Recreated the source's Figure 2 (the tree diagram of the 12 appetizer/entrée/dessert dinner combinations) as two accessible spec-first figures, one for the Soup branch and one for the Salad branch, each drawn with the figure engine's segment and text primitives (segments routed behind the node labels via `gapTexts`) rather than as a single wide diagram, to keep each figure under the composite-width guidance for this chapter; the row category labels ("Appetizers" / "Entrées" / "Desserts") printed beside the source's tree are omitted since the branch structure itself (Soup/Salad → Chicken/Fish/Steak → Cake/Pudding) carries the same information. Every informal "photograph of typeset arithmetic" image the source uses inside worked-example solutions (the addition/multiplication diagrams with underlined option counts, the factorial products, and so on) is transcribed as ordinary KaTeX rather than recreated as a figure, since each is a plain arithmetic statement with no diagrammatic content of its own. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. Both Try Its following the multiplication-principle-formula example (the actor line-up questions) and the single Try It following the combinations example (the ice cream banana split) are kept exactly as the source poses them. **Every count in this section is a plain-number answer with no `answerForm` token**, since `\binom{n}{k}`, `C(n,r)`, `P(n,r)`, and `{}_nC_r` all parse as invalid or grade `incorrect` against their own value on the pinned grading engine (confirmed by replay), so printing $P(n,r)$ or $C(n,r)$ in a question is never itself a retype hazard; a learner who instead types the equivalent factorial quotient (e.g. `\frac{5!}{2!3!}`) still grades correct, which is expected and fine. The two "which term applies" Verbal exercises (adapted from the source's own explanatory exercises on distinguishing the Addition Principle from the Multiplication Principle, and on naming the unordered-selection arrangement) are recast as `multiplechoice` items over the source's own explanations, since a free-form justification cannot be graded as a math expression. Eighteen selected end-of-section exercises (16 numeric fill-ins and 2 explanatory items recast as multiple choice) were adapted into interactive Practice components, one group per objective; the section's ten in-page Try Its are additionally kept as the source poses them, one component per Try It. Every retained answer — the 18 Practice items and the 10 Try Its alike — was independently re-derived, including by running the arithmetic in Node with exact (BigInt) factorials, rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.5: Counting Principles](https://openstax.org/books/precalculus-2e/pages/11-5-counting-principles) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1" and "Objective 2" review of the Addition and Multiplication Principles, keyed to Intermediate Algebra 12.4, complete with its own worked example and two "Practice Makes Perfect" exercise sets) — confirmed against the rendered PDF, page 1137 (true PDF index 1147), where the previous section's last Real-World Applications exercise (11.4, exercise 62) runs directly into the "11.5 Counting Principles" heading with no corequisite-skills material between them. Omitted the source's Figure 1 (a photograph-style illustration of 3 tablets plus 5 phones equaling 8 total device options): the figure is purely decorative — the count it illustrates is already fully stated in the surrounding prose ($3+5=8$) — so it is not recreated, per this book's convention of omitting decorative photographs. Recreated the source's Figure 2 (the tree diagram of the 12 appetizer/entrée/dessert dinner combinations) as two accessible spec-first figures, one for the Soup branch and one for the Salad branch, each drawn with the figure engine's segment and text primitives (segments routed behind the node labels via `gapTexts`) rather than as a single wide diagram, to keep each figure under the composite-width guidance for this chapter; the row category labels ("Appetizers" / "Entrées" / "Desserts") printed beside the source's tree are omitted since the branch structure itself (Soup/Salad → Chicken/Fish/Steak → Cake/Pudding) carries the same information. Every informal "photograph of typeset arithmetic" image the source uses inside worked-example solutions (the addition/multiplication diagrams with underlined option counts, the factorial products, and so on) is transcribed as ordinary KaTeX rather than recreated as a figure, since each is a plain arithmetic statement with no diagrammatic content of its own. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. The three family-portrait and two curtain-call Try Its each restate the shared setup sentence in their own question, and the second portrait Try It reads "3 of the 5 family members" for the source's "3 family members". Corrected two source typos in the body ("the formula stills works"; "$3!$ ways to order the moon", now "the moons"). In the skirts-and-blouses example the source says Diane will "decide whether to wear the sweater" although she packed 2 sweaters, which would give 3 sweater choices (none or either one), while its solution counts 2; the page reads "decide which sweater to wear", the choice the source's $2\times4\times2=16$ counts. Section Exercise 8 defines the set $B$ and then asks about "$A$"; the Practice item asks about $B$, the set the source's answer of 6 is counted from. Every count is a plain number graded with `answerForm="decimal"`, so a product, power, or factorial quotient typed unevaluated ($5!$, $2^6$, $\tfrac{7!}{3!}$) is sent back to be finished; $P(n,r)$ and $C(n,r)$ typed as notation grade incorrect against their values, so the printed notation in a question is not a retype hazard. The two "which term applies" Verbal exercises (adapted from the source's own explanatory exercises on distinguishing the Addition Principle from the Multiplication Principle, and on naming the unordered-selection arrangement) are recast as `multiplechoice` items over the source's own explanations, since a free-form justification cannot be graded as a math expression. Eighteen selected end-of-section exercises (16 numeric fill-ins and 2 explanatory items recast as multiple choice) were adapted into interactive Practice components, one group per objective; the section's ten in-page Try Its are kept with the source's numbers, one component per Try It. Every retained answer — the 18 Practice items and the 10 Try Its alike — was independently re-derived rather than read off the source key.</small>

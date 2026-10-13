@@ -58,6 +58,7 @@ $$\binom{n}{r}=\binom{n}{n-r}$$
 {{< fillin
   question="Find the binomial coefficient $\binom{7}{3}$."
   answer="35"
+  answerForm="decimal"
   answerDisplay="$35$"
   hint="Use $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ with $n=7$ and $r=3$."
 >}}
@@ -65,6 +66,7 @@ $$\binom{n}{r}=\binom{n}{n-r}$$
 {{< fillin
   question="Find the binomial coefficient $\binom{11}{4}$."
   answer="330"
+  answerForm="decimal"
   answerDisplay="$330$"
   hint="Use $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ with $n=11$ and $r=4$."
 >}}
@@ -217,17 +219,17 @@ b. Substitute $n=4$ into the formula. Evaluate the $k=0$ through $k=4$ terms. No
 **Analysis.** Notice the alternating signs in part b. This happens because $(-y)$ raised to odd powers is negative, but $(-y)$ raised to even powers is positive. This will occur whenever the binomial contains a subtraction sign.
 
 {{< fillin
-  question="Write $(x-y)^5$ in expanded form."
-  answer="x^5-5x^4y+10x^3y^2-10x^2y^3+5xy^4-y^5"
-  answerForm="expanded"
-  answerDisplay="$x^5-5x^4y+10x^3y^2-10x^2y^3+5xy^4-y^5$"
-  hint="Substitute $n=5$ into the Binomial Theorem with $-y$ in place of $y$, evaluate the $k=0$ through $k=5$ terms, then simplify."
+  question="Use the Binomial Theorem to expand $(4x-3y)^5$."
+  answer="1024x^5-3840x^4y+5760x^3y^2-4320x^2y^3+1620xy^4-243y^5"
+  answerForm="expanded distributed no-like-terms"
+  answerDisplay="$1{,}024x^5-3{,}840x^4y+5{,}760x^3y^2-4{,}320x^2y^3+1{,}620xy^4-243y^5$"
+  hint="Substitute $n=5$ into the Binomial Theorem with $4x$ in place of $x$ and $-3y$ in place of $y$, evaluate the $k=0$ through $k=5$ terms, then simplify each one."
 >}}
 
 {{< fillin
   question="Write $(2x+5y)^3$ in expanded form."
   answer="8x^3+60x^2y+150xy^2+125y^3"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$8x^3+60x^2y+150xy^2+125y^3$"
   hint="Substitute $n=3$ into the Binomial Theorem with $2x$ in place of $x$ and $5y$ in place of $y$, evaluate the $k=0$ through $k=3$ terms, then simplify."
 >}}
@@ -272,8 +274,9 @@ $$\binom{16}{9}x^{16-9}(2y)^9=5{,}857{,}280x^7y^9$$
 {{< fillin
   question="Find the sixth term of $(3x-y)^9$ without fully expanding the binomial."
   answer="-10206x^4y^5"
+  answerForm="single-term"
   answerDisplay="$-10{,}206x^4y^5$"
-  hint="The sixth term has $r+1=6$, so $r=5$; use $\binom{n}{r}x^{n-r}y^r$ with $n=9$, $x=3x$, and $y=-y$."
+  hint="Find $r$ from $r+1=6$, then substitute into $\binom{n}{r}x^{n-r}y^r$ with $n=9$, $3x$ in place of $x$, and $-y$ in place of $y$, and simplify."
 >}}
 
 ## Key equations
@@ -295,6 +298,7 @@ $$\binom{16}{9}x^{16-9}(2y)^9=5{,}857{,}280x^7y^9$$
 {{< fillin
   question="Evaluate the binomial coefficient $\binom{6}{2}$."
   answer="15"
+  answerForm="decimal"
   answerDisplay="$15$"
   hint="Use $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ with $n=6$ and $r=2$."
 >}}
@@ -302,6 +306,7 @@ $$\binom{16}{9}x^{16-9}(2y)^9=5{,}857{,}280x^7y^9$$
 {{< fillin
   question="Evaluate the binomial coefficient $\binom{17}{6}$."
   answer="12376"
+  answerForm="decimal"
   answerDisplay="$12{,}376$"
   hint="Use $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ with $n=17$ and $r=6$; the shared $11!$ cancels before you multiply out the rest."
 >}}
@@ -309,38 +314,40 @@ $$\binom{16}{9}x^{16-9}(2y)^9=5{,}857{,}280x^7y^9$$
 {{< fillin
   question="Use the Binomial Theorem to expand $(4a-b)^3$."
   answer="64a^3-48a^2b+12ab^2-b^3"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$64a^3-48a^2b+12ab^2-b^3$"
-  hint="Substitute $n=3$ into the Binomial Theorem with $x=4a$ and $y=-b$, evaluate the $k=0$ through $k=3$ terms, then simplify."
+  hint="Substitute $n=3$ into the Binomial Theorem with $4a$ in place of $x$ and $-b$ in place of $y$, evaluate the $k=0$ through $k=3$ terms, then simplify."
 >}}
 
 {{< fillin
   question="Use the Binomial Theorem to write the first three terms of $(a+b)^{17}$."
   answer="a^{17}+17a^{16}b+136a^{15}b^2"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$a^{17}+17a^{16}b+136a^{15}b^2$"
-  hint="Use $\binom{n}{k}x^{n-k}y^k$ for $k=0,1,2$ with $n=17$, $x=a$, and $y=b$."
+  hint="Use $\binom{n}{k}x^{n-k}y^k$ for $k=0,1,2$ with $n=17$, $a$ in place of $x$, and $b$ in place of $y$."
 >}}
 
 {{< fillin
   question="Find the fourth term of $(3x-2y)^5$ without fully expanding the binomial."
   answer="-720x^2y^3"
+  answerForm="single-term"
   answerDisplay="$-720x^2y^3$"
-  hint="The fourth term has $r+1=4$, so $r=3$; use $\binom{n}{r}x^{n-r}y^r$ with $n=5$, $x=3x$, and $y=-2y$."
+  hint="Find $r$ from $r+1=4$, then substitute into $\binom{n}{r}x^{n-r}y^r$ with $n=5$, $3x$ in place of $x$, and $-2y$ in place of $y$, and simplify."
 >}}
 
 {{< fillin
   question="In the expansion of $(5x+3y)^n$, each term has the form $\binom{n}{k}(5x)^{n-k}(3y)^k$, where $k$ successively takes on the value $0,1,2,\ldots,n$. If $\binom{n}{k}=\binom{7}{2}$, what is the corresponding term?"
   answer="590625x^5y^2"
+  answerForm="single-term"
   answerDisplay="$590{,}625x^5y^2$"
-  hint="Since $\binom{n}{k}=\binom{7}{2}$, take $n=7$ and $k=2$; the term is $\binom{7}{2}(5x)^{7-2}(3y)^2$."
+  hint="Match $\binom{n}{k}$ with $\binom{7}{2}$ to read off $n$ and $k$, substitute both into the term's form, and simplify."
 >}}
 
 {{< multiplechoice
-  question="Which expression cannot be expanded using the Binomial Theorem?"
+  question="Which expression cannot be expanded using the Binomial Theorem? (The theorem expands any expression that can be rewritten as a binomial raised to a power.)"
   mode="text"
   answer="$(x^3+2y^2-z)^5$"
-  hint="The Binomial Theorem expands a two-term expression raised to a power; check whether the base inside each set of parentheses truly has only two terms."
+  hint="Try to rewrite each expression as a two-term expression raised to a power: combine like terms, or factor a perfect-square trinomial."
 >}}
 $(x^2-2x+1)$
 $(\sqrt{a}+4\sqrt{a}-5)^8$
@@ -350,4 +357,4 @@ $(3x^2-\sqrt{2y^3})^{12}$
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 11.6: Binomial Theorem](https://openstax.org/books/precalculus-2e/pages/11-6-binomial-theorem) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1: Use Pascal's Triangle to expand a binomial" review, keyed to Intermediate Algebra 12.4.1, complete with three worked examples and one "Practice Makes Perfect" exercise set of three items) — confirmed against the rendered PDF, page 1148 (true PDF index 1158), where the previous section's last Real-World Applications exercise (11.5, exercise 54) runs directly into the "11.6 Binomial Theorem" heading with no corequisite-skills material between them; the same prepended-block pattern, including this module by name, recurs as not a defect (the block belongs to a corequisite title the bundle ships alongside Precalculus). The source's Figure 1 (an image captioned "Pascal's Triangle" but actually a table of the exponent pattern and term count for $(x+y)^1$ through $(x+y)^4$ and $(x+y)^n$, with a breakdown of the $n=4$ row's five terms by exponent sum) is recreated as two Markdown tables rather than as a figure, since it is tabular data, not a diagram; its alt text ("Graph of the function f_2") does not describe a table at all and matches the alt text of a later, unrelated answer graph in this same module's Graphical exercises — a suspected mislabeling, not corrected on the page since no figure is being reproduced. The source's Figure 2 (Pascal's Triangle, six rows) and the uncaptioned media immediately following it (Pascal's Triangle with each row's coefficients pointing to the matching $(x+y)^n$ expansion) are recreated as, respectively, a centered KaTeX array and a two-column Markdown table, per this book's convention of setting "stacked numbers" displays as KaTeX rather than as figures; the red addition-rule annotation arrows drawn on the source's Figure 2 (illustrating $1+2=3$ and $6+4=10$) are not reproduced, since the addition rule they illustrate is already stated in the following paragraph's prose. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. **Binomial coefficient values are never keyed as `\binom{n}{r}`, `C(n,r)`, `P(n,r)`, or `{}_nC_r`**, since all four parse as invalid or grade incorrect against their own value on the pinned grading engine (confirmed by replay) — every binomial-coefficient and specific-term answer here is a plain number or a simplified monomial with no `answerForm` token, while $\binom{n}{r}$ and $C(n,r)$ notation is displayed freely in questions and worked examples, since only submitted answers are restricted. Every "expand" and "write the first three terms" fill-in keys `answerForm="expanded"`, since the printed power itself reports `form` under that token (confirmed by replay) and the expansion is otherwise passable by retyping the prompt. The two Try Its following the binomial-coefficient and expansion examples are kept as the source poses their two parts, one fill-in per part; the third Try It (a single specific-term ask) is a single fill-in. The Extensions exercise asking "which expression cannot be expanded using the Binomial Theorem" is recast as a `multiplechoice` over the source's own four printed expressions, since a free-form justification cannot be graded as a math expression. Seven selected end-of-section exercises (six numeric fill-ins and one explanatory item recast as multiple choice) were adapted into interactive Practice components under the section's single objective; the section's three in-page Try Its are additionally kept as the source poses them, one component per Try It part. Every retained answer — the seven Practice items and the five Try It parts alike — was independently re-derived, including by running the arithmetic in Node with exact (BigInt) factorial and binomial-expansion arithmetic, rather than read off the source key.</small>
+<small>This section is adapted from [Precalculus 2e, Section 11.6: Binomial Theorem](https://openstax.org/books/precalculus-2e/pages/11-6-binomial-theorem) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: omitted a `coreq-skills` block the pinned CNXML prepends before the section proper (its own "Objective 1: Use Pascal's Triangle to expand a binomial" review, keyed to Intermediate Algebra 12.4.1, complete with three worked examples and one "Practice Makes Perfect" exercise set of three items) — confirmed against the rendered PDF, page 1148 (true PDF index 1158), where the previous section's last Real-World Applications exercise (11.5, exercise 54) runs directly into the "11.6 Binomial Theorem" heading with no corequisite-skills material between them (the block belongs to a corequisite title the bundle ships alongside Precalculus). The source's Figure 1 (an image titled "Pascal's Triangle" but actually a table of the exponent pattern and term count for $(x+y)^1$ through $(x+y)^4$ and $(x+y)^n$, with a breakdown of the $n=4$ row's five terms by exponent sum) is recreated as two Markdown tables rather than as a figure, since it is tabular data, not a diagram; its alt text ("Graph of the function f_2") does not describe a table at all and matches the alt text of a later, unrelated answer graph in this same module's Graphical exercises — a suspected mislabeling, not corrected on the page since no figure is being reproduced. The source's Figure 2 (Pascal's Triangle, six rows) and the uncaptioned media immediately following it (Pascal's Triangle with each row's coefficients pointing to the matching $(x+y)^n$ expansion) are recreated as, respectively, a centered KaTeX array and a two-column Markdown table, per this book's convention of setting "stacked numbers" displays as KaTeX rather than as figures; the red addition-rule annotation arrows drawn on the source's Figure 2 (illustrating $1+2=3$ and $6+4=10$) are not reproduced, since the addition rule they illustrate is already stated in the following paragraph's prose. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book. Binomial-coefficient answers are entered as whole numbers and specific-term answers as one simplified monomial, never in $\binom{n}{r}$ or $C(n,r)$ notation, and the factorial quotient or the substituted term left unworked is not accepted; expansions and first-three-terms answers must be fully multiplied out with like terms combined. The Try It after the binomial-coefficient example is kept as the source poses its two parts, one fill-in per part; of the expansion Try It's two parts, part b, $(2x+5y)^3$, is kept, and part a, $(x-y)^5$ — the worked $(x+y)^5$ expansion printed directly above with its signs alternated, as the Analysis note says — is replaced by the section exercise $(4x-3y)^5$; the third Try It (a single specific-term ask) is a single fill-in. The Extensions exercise on $(5x+3y)^n$ writes each term's form as $\binom{n}{k}(5x)^{n-k}(3y)^k$, where the source writes $\binom{n}{k}a^{n-k}b^k$ without saying what $a$ and $b$ stand for. The Extensions exercise asking "which expression cannot be expanded using the Binomial Theorem" is recast as a `multiplechoice` over the source's own four printed expressions, since a free-form justification cannot be graded as a math expression; its question adds that the theorem expands any expression that can be rewritten as a binomial raised to a power, because the source's first option, $(x^2-2x+1)$, prints no exponent and could otherwise be read as the expression that cannot be expanded. Seven selected end-of-section exercises (six numeric fill-ins and one explanatory item recast as multiple choice) were adapted into interactive Practice components under the section's single objective; the section's three in-page Try Its add five components, one per Try It part. Every answer — the seven Practice items and the five Try It components alike — was independently re-derived rather than read off the source key.</small>

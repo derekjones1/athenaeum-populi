@@ -38,14 +38,14 @@ The graph below represents the function $f(x)=x^3-4x$. We can see the slope at v
 - slope at $x=2$ is $8$
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x cubed minus 4x, with tangent lines drawn at x = -2, x = -1, and x = 2, each labeled with its slope.","xMin":-3.2,"xMax":3.2,"yMin":-6,"yMax":6,"unit":26,"cubics":[{"a":1,"c":-4}],"lines":[{"through":[[-2,0],[-1,8]],"arrows":false,"label":"m = 8"},{"through":[[-1,3],[0,2]],"arrows":false,"label":"m = -1"},{"through":[[2,0],[3,8]],"arrows":false,"label":"m = 8"}],"points":[{"at":[-2,0]},{"at":[-1,3]},{"at":[2,0]}]}
+{"ariaLabel":"The graph of f(x) = x cubed minus 4x, with tangent lines drawn at x = -2, x = -1, and x = 2, each labeled with its slope.","xMin":-4,"xMax":4,"yMin":-6,"yMax":6,"unit":36,"yUnit":22,"tickLabels":true,"xTickStep":1,"yTickStep":2,"cubics":[{"a":1,"c":-4}],"lines":[{"through":[[-2,0],[-1,8]],"arrows":false,"label":"m = 8","labelAt":0.22,"labelSide":"left"},{"through":[[-1,3],[0,2]],"arrows":false,"label":"m = -1","labelAt":0.12,"labelSide":"right"},{"through":[[2,0],[3,8]],"arrows":false,"label":"m = 8","labelAt":0.22,"labelSide":"right"}],"points":[{"at":[-2,0]},{"at":[-1,3]},{"at":[2,0]}]}
 
 {{< /apfigure >}}
 
 Let's imagine a point on the curve of function $f$ at $x=a$, as shown below. The coordinates of the point are $(a,f(a))$. Connect this point with a second point on the curve a little to the right of $x=a$, with an $x$-value increased by some small real number $h$. The coordinates of this second point are $(a+h,f(a+h))$ for some positive value $h$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A curve rising through point (a, f(a)) and a second point (a+h, f(a+h)) further along the curve, connected by a secant line; a dashed horizontal segment marks h between the two x-values and a dashed vertical segment marks the change in the function value.","xMin":-1,"xMax":5.6,"yMin":-1,"yMax":6,"unit":45,"quadratics":[{"a":0.5}],"points":[{"at":[1,0.5],"label":"(a, f(a))"},{"at":[3,4.5],"label":"(a+h, f(a+h))"}],"segments":[{"from":[1.05,0.25],"to":[3,0.25],"dashed":true,"label":"h"},{"from":[3.3,0.5],"to":[3.3,4.5],"dashed":true,"label":"f(a+h) - f(a)","labelSide":"e"}],"lines":[{"through":[[1,0.5],[3,4.5]],"arrows":"end"}]}
+{"ariaLabel":"A curve rising through point (a, f(a)) and a second point (a+h, f(a+h)) further along the curve, connected by a secant line; a dashed right triangle under the secant has a horizontal leg labeled h, from (a, f(a)) across to x = a+h, and a vertical leg labeled f(a+h) - f(a), up to (a+h, f(a+h)).","xMin":-1,"xMax":6,"yMin":-1,"yMax":8,"unit":45,"quadratics":[{"a":0.5,"b":-1,"c":1.5,"from":-1,"to":4.5}],"points":[{"at":[2,1.5],"label":"(a, f(a))","labelSide":"nw"},{"at":[4,5.5],"label":"(a+h, f(a+h))","labelSide":"nw"}],"segments":[{"from":[2,1.5],"to":[4,1.5],"dashed":true,"label":"h","labelSide":"s"},{"from":[4,1.5],"to":[4,5.5],"dashed":true,"label":"f(a+h) - f(a)","labelSide":"e"}],"lines":[{"through":[[2,1.5],[4,5.5]],"arrows":true}],"yUnit":32}
 
 {{< /apfigure >}}
 
@@ -104,7 +104,7 @@ $$
 Now that we can find the average rate of change, suppose we make $h$ smaller and smaller. Then $a+h$ will approach $a$ as $h$ gets smaller, getting closer and closer to $0$. Likewise, the second point $(a+h,f(a+h))$ will approach the first point, $(a,f(a))$. As a consequence, the connecting line between the two points, called the secant line, will get closer and closer to being a tangent to the function at $x=a$, and the slope of the secant line will get closer and closer to the slope of the tangent at $x=a$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A curve rising through point P at (a, f(a)); two secant lines connect P to nearby points Q1 and Q2 on the curve, and a tangent line at P is drawn alongside them.","xMin":-1,"xMax":5,"yMin":-1,"yMax":7,"unit":40,"quadratics":[{"a":0.5}],"points":[{"at":[1,0.5],"label":"P"},{"at":[2,2],"label":"Q1"},{"at":[3.5,6.125],"label":"Q2"}],"lines":[{"through":[[1,0.5],[2,1.5]],"arrows":true,"label":"Tangent line at x = a"},{"through":[[1,0.5],[2,2]],"arrows":false,"label":"Secant line P to Q1"},{"through":[[1,0.5],[3.5,6.125]],"arrows":false,"label":"Secant line P to Q2"}]}
+{"ariaLabel":"A curve rising through point P at (a, f(a)); two secant lines connect P to nearby points Q1 and Q2 on the curve, and a tangent line at P is drawn alongside them.","xMin":-1,"xMax":6,"yMin":-1,"yMax":8,"unit":45,"yUnit":32,"quadratics":[{"a":0.5,"b":-1,"c":1.5,"from":-1,"to":4.6}],"points":[{"at":[2,1.5],"label":"P","labelSide":"nw"},{"at":[3,3],"label":"Q1","labelSide":"nw"},{"at":[4,5.5],"label":"Q2","labelSide":"nw"}],"segments":[{"from":[-0.5,-1],"to":[5.3,4.8],"arrows":true},{"from":[0.5,-0.75],"to":[4.9,5.85],"arrows":true},{"from":[1,-0.5],"to":[4.5,6.5],"arrows":true}],"texts":[{"at":[5.45,4.8],"text":"Tangent line at x = a"},{"at":[5.05,5.85],"text":"Secant line P to Q1"},{"at":[4.65,6.5],"text":"Secant line P to Q2"}]}
 
 {{< /apfigure >}}
 
@@ -170,7 +170,7 @@ $$
 {{< fillin
   question="Find the derivative of the function $f(x)=3x^2+7x$ at $x=a$."
   answer="6a+7"
-  answerForm="polynomial"
+  answerForm="polynomial expanded no-like-terms"
   answerDisplay="$f'(a)=6a+7$"
   hint="Substitute $f(a+h)=3(a+h)^2+7(a+h)$ and $f(a)=3a^2+7a$ into the difference quotient, then simplify and let $h\to0$."
 >}}
@@ -235,9 +235,9 @@ f'(36)=\tfrac{2}{\sqrt{36}} & \text{Evaluate the derivative at }x=36. \\[4pt]
 $$
 
 {{< fillin
-  question="Find the derivative of the function $f(x)=9\sqrt{x}$ at $x=9$. Enter the answer as a fraction."
+  question="Find the derivative of the function $f(x)=9\sqrt{x}$ at $x=9$. Enter the answer as a fraction in lowest terms."
   answer="\frac{3}{2}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{2}$"
   hint="Multiply the difference quotient by the conjugate $\tfrac{9\sqrt{a+h}+9\sqrt{a}}{9\sqrt{a+h}+9\sqrt{a}}$ before letting $h\to0$."
 >}}
@@ -247,7 +247,7 @@ $$
 Many applications of the derivative involve determining the rate of change at a given instant of a function with the independent variable time — which is why the term **instantaneous** is used. Consider the height of a ball tossed upward with an initial velocity of $64$ feet per second, given by $s(t)=-16t^2+64t+6$, where $t$ is measured in seconds and $s(t)$ is measured in feet. We know the path is that of a parabola. The derivative will tell us how the height is changing at any given point in time. The height of the ball is shown below as a function of time. In physics, we call this the "$s$-$t$ graph."
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A downward-opening parabola of height versus time, with vertex at (2, 70) and two points marked at (1, 55) and (3, 55).","xMin":-1,"xMax":6,"yMin":-5,"yMax":78,"unit":38,"yUnit":4.6,"xLabel":"t","yLabel":"s(t)","tickLabels":true,"xTickStep":1,"yTickStep":10,"quadratics":[{"a":-16,"b":64,"c":6}],"points":[{"at":[1,55]},{"at":[3,55]}]}
+{"ariaLabel":"A downward-opening parabola of height versus time, starting at height 6 when t = 0 and coming back down to the t-axis just after t = 4, with vertex at (2, 70) and two points marked at (1, 54) and (3, 54).","xMin":-1,"xMax":6,"yMin":-5,"yMax":78,"unit":38,"yUnit":3.6,"xLabel":"t","yLabel":"s(t)","tickLabels":true,"xTickStep":1,"yTickStep":10,"quadratics":[{"a":-16,"b":64,"c":6,"from":0,"to":4.0917,"arrows":false}],"points":[{"at":[1,54]},{"at":[3,54]}]}
 
 {{< /apfigure >}}
 
@@ -259,10 +259,10 @@ $$
 \begin{array}{ll}
 s'(t)=\lim\limits_{h\to0}\tfrac{s(t+h)-s(t)}{h} & \\[4pt]
 \phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{-16(t+h)^2+64(t+h)+6-(-16t^2+64t+6)}{h} & \text{Substitute }s(t+h)\text{ and }s(t). \\[4pt]
-\phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{-16t^2-32ht-h^2+64t+64h+6+16t^2-64t-6}{h} & \text{Distribute.} \\[4pt]
-\phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{-32ht-h^2+64h}{h} & \text{Simplify.} \\[4pt]
-\phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{h(-32t-h+64)}{h} & \text{Factor the numerator.} \\[4pt]
-\phantom{s'(t)}=\lim\limits_{h\to0}-32t-h+64 & \text{Cancel out the common factor }h. \\[4pt]
+\phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{-16t^2-32ht-16h^2+64t+64h+6+16t^2-64t-6}{h} & \text{Distribute.} \\[4pt]
+\phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{-32ht-16h^2+64h}{h} & \text{Simplify.} \\[4pt]
+\phantom{s'(t)}=\lim\limits_{h\to0}\tfrac{h(-32t-16h+64)}{h} & \text{Factor the numerator.} \\[4pt]
+\phantom{s'(t)}=\lim\limits_{h\to0}(-32t-16h+64) & \text{Cancel out the common factor }h. \\[4pt]
 s'(t)=-32t+64 & \text{Evaluate the limit by letting }h=0.
 \end{array}
 $$
@@ -283,7 +283,7 @@ The velocity of the ball after $1$ second is $32$ feet per second, as it is on t
 The velocity of the ball after $3$ seconds is $-32$ feet per second, as it is on the way down.
 
 {{< fillin
-  question="The position of the ball is given by $s(t)=-16t^2+64t+6$. What is its velocity $2$ seconds into flight? Enter the number only."
+  question="The position of the ball is given by $s(t)=-16t^2+64t+6$. What is its velocity $2$ seconds into flight? Enter the number only, in ft/s."
   answer="0"
   answerForm="decimal"
   answerDisplay="$0$ ft/s"
@@ -304,7 +304,7 @@ We can estimate an instantaneous rate of change at $x=a$ by observing the slope 
 **Example.** From the graph of the function $y=f(x)$ presented below, estimate each of the following: $f(0)$, $f(2)$, $f'(0)$, $f'(2)$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of y = f(x), a curve with a local high point at (0, 1) and passing through (2, 1) on its way up.","xMin":-2.2,"xMax":3.2,"yMin":-5,"yMax":6,"unit":38,"cubics":[{"a":1,"b":-2,"d":1}],"points":[{"at":[0,1],"label":"(0, 1)"},{"at":[2,1],"label":"(2, 1)"}]}
+{"ariaLabel":"The graph of y = f(x), a curve with a local high point at (0, 1) and passing through (2, 1) on its way up.","xMin":-2.2,"xMax":3.2,"yMin":-5,"yMax":6,"unit":44,"tickLabels":true,"yTickStep":2,"cubics":[{"a":1,"b":-2,"d":1}],"points":[{"at":[0,1],"label":"(0, 1)"},{"at":[2,1],"label":"(2, 1)","labelSide":"e"}],"yUnit":26}
 
 {{< /apfigure >}}
 
@@ -313,7 +313,7 @@ We can estimate an instantaneous rate of change at $x=a$ by observing the slope 
 To find the derivative at $x=a$, $f'(a)$, draw a tangent line at $x=a$, and estimate the slope of that tangent line. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same curve with a horizontal tangent line drawn at (0, 1), labeled m = 0, and a steeper tangent line drawn at (2, 1), labeled m = 4.","xMin":-2.2,"xMax":3.2,"yMin":-5,"yMax":6,"unit":38,"cubics":[{"a":1,"b":-2,"d":1}],"points":[{"at":[0,1],"label":"(0, 1)"},{"at":[2,1],"label":"(2, 1)"}],"lines":[{"y":1,"arrows":false,"label":"m = 0"},{"through":[[2,1],[3,5]],"arrows":true,"label":"m = 4"}]}
+{"ariaLabel":"The same curve with a horizontal tangent line drawn at (0, 1), labeled m = 0, and a steeper tangent line drawn at (2, 1), labeled m = 4.","xMin":-2.2,"xMax":3.2,"yMin":-5,"yMax":6,"unit":44,"tickLabels":true,"yTickStep":2,"cubics":[{"a":1,"b":-2,"d":1}],"points":[{"at":[0,1],"label":"(0, 1)"},{"at":[2,1],"label":"(2, 1)","labelSide":"se","labelNudge":[0,-3]}],"lines":[{"y":1,"arrows":false,"label":"m = 0"},{"through":[[2,1],[3,5]],"arrows":true,"label":"m = 4","labelSide":"right","labelAt":0.75}],"yUnit":26}
 
 {{< /apfigure >}}
 
@@ -339,7 +339,7 @@ To find the derivative at $x=a$, $f'(a)$, draw a tangent line at $x=a$, and esti
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x cubed minus 3x, viewed on the window from -4 to 4 on the x-axis and -5 to 7 on the y-axis.","xMin":-4,"xMax":4,"yMin":-5,"yMax":7,"unit":36,"cubics":[{"a":1,"c":-3}]}
+{"ariaLabel":"The graph of f(x) = x cubed minus 3x, viewed on the window from -4 to 4 on the x-axis and -5 to 7 on the y-axis.","xMin":-4,"xMax":4,"yMin":-5,"yMax":7,"unit":36,"yUnit":26,"tickLabels":true,"cubics":[{"a":1,"c":-3}]}
 
 {{< /apfigure >}}
 
@@ -412,26 +412,26 @@ To understand where a function's derivative does not exist, we need to recall wh
 Look at the graph below. The closer we zoom in on the point, the more linear the curve appears.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A downward-opening parabola, with a small box marking a point on its right branch where the curve will be zoomed in.","xMin":-6,"xMax":6,"yMin":-2,"yMax":5,"unit":32,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.3,"c":4}],"segments":[{"from":[1.85,2.55],"to":[2.15,2.55]},{"from":[2.15,2.55],"to":[2.15,3.05]},{"from":[2.15,3.05],"to":[1.85,3.05]},{"from":[1.85,3.05],"to":[1.85,2.55]}]}
+{"ariaLabel":"A downward-opening parabola, with a small box around a point on its right branch where the curve will be zoomed in.","xMin":-6,"xMax":6,"yMin":-2,"yMax":5,"unit":32,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.3,"c":4}],"segments":[{"from":[1.75,2.55],"to":[2.25,2.55]},{"from":[2.25,2.55],"to":[2.25,3.05]},{"from":[2.25,3.05],"to":[1.75,3.05]},{"from":[1.75,3.05],"to":[1.75,2.55]}],"points":[{"at":[2,2.8]}]}
 
 {{< /apfigure >}}
 
-{{< apfigure kind="graph" >}}
-{"ariaLabel":"An extreme close-up on the boxed point, magnified ten times: at this zoom level the curve appears as a straight line falling to the right, with a dot marking the point.","xMin":-1,"xMax":1,"yMin":-1.3,"yMax":1.3,"unit":90,"grid":false,"tickLabels":false,"quadratics":[{"a":-0.03,"b":-1.2,"c":0,"arrows":false}],"points":[{"at":[0,0]}]}
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"An extreme close-up on the boxed point, drawn as a square window: at this zoom level the curve appears as a straight line falling to the right, with a dot marking the point at the center.","unit":75,"padding":30,"polygons":[{"points":[[-1,-1],[1,-1],[1,1],[-1,1]]}],"segments":[{"from":[-0.8333,1],"to":[0.8333,-1]}],"points":[{"at":[0,0],"r":6}],"texts":[{"at":[0,-1],"text":"The graph appears linear","anchor":"middle","dy":22}]}
 
 {{< /apfigure >}}
 
 We might presume the same thing would happen with any continuous function, but that is not so. The function $f(x)=\lvert x\rvert$, for example, is continuous at $x=0$, but not differentiable at $x=0$. As we zoom in close to $0$ in the figure below, the graph does not approach a straight line. No matter how close we zoom in, the graph maintains its sharp corner.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = the absolute value of x, with x-axis from -0.1 to 0.1 and y-axis from -0.1 to 0.1; the graph still shows a sharp corner at the origin.","xMin":-0.1,"xMax":0.1,"yMin":-0.1,"yMax":0.1,"unit":1800,"tickLabels":true,"xTickStep":0.1,"yTickStep":0.1,"segments":[{"from":[-0.1,0.1],"to":[0,0],"arrows":"start"},{"from":[0,0],"to":[0.1,0.1],"arrows":"end"}]}
+{"ariaLabel":"The graph of f(x) = the absolute value of x, with x-axis from -0.1 to 0.1 and y-axis from -0.1 to 0.1; the graph still shows a sharp corner at the origin.","xMin":-0.12,"xMax":0.12,"yMin":-0.12,"yMax":0.12,"unit":1250,"tickLabels":true,"xTickStep":0.1,"yTickStep":0.1,"segments":[{"from":[-0.11000000000000001,0.11000000000000001],"to":[0,0],"arrows":"start"},{"from":[0,0],"to":[0.11000000000000001,0.11000000000000001],"arrows":"end"}]}
 
 {{< /apfigure >}}
 
 We zoom in closer by narrowing the range to produce the graph below, and continue to observe the same shape. This graph does not appear linear at $x=0$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = the absolute value of x, with x-axis from -0.001 to 0.001 and y-axis from -0.001 to 0.001; the graph still shows the same sharp corner at the origin, unchanged by the closer zoom.","xMin":-0.001,"xMax":0.001,"yMin":-0.001,"yMax":0.001,"unit":180000,"tickLabels":true,"xTickStep":0.001,"yTickStep":0.001,"segments":[{"from":[-0.001,0.001],"to":[0,0],"arrows":"start"},{"from":[0,0],"to":[0.001,0.001],"arrows":"end"}]}
+{"ariaLabel":"The graph of f(x) = the absolute value of x, with x-axis from -0.001 to 0.001 and y-axis from -0.001 to 0.001; the graph still shows the same sharp corner at the origin, unchanged by the closer zoom.","xMin":-0.0012,"xMax":0.0012,"yMin":-0.0012,"yMax":0.0012,"unit":125000,"tickLabels":true,"xTickStep":0.001,"yTickStep":0.001,"segments":[{"from":[-0.0011,0.0011],"to":[0,0],"arrows":"start"},{"from":[0,0],"to":[0.0011,0.0011],"arrows":"end"}]}
 
 {{< /apfigure >}}
 
@@ -444,7 +444,7 @@ $$f(x)=\begin{cases} x^2, & x\le2 \\ 8-x, & x>2 \end{cases}$$
 below. Notice that, as $x$ approaches $2$ from the left, the left-hand limit may be observed to be $4$, while as $x$ approaches $2$ from the right, the right-hand limit may be observed to be $6$. We see that it has a discontinuity at $x=2$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of the piecewise function x squared for x less than or equal to 2, and 8 minus x for x greater than 2; the parabola rises from the left to a filled point at (2, 4), and a separate line begins at an open point at (2, 6) and falls to the right.","xMin":-3,"xMax":5,"yMin":-4,"yMax":8,"unit":34,"tickLabels":true,"quadratics":[{"a":1,"from":-3,"to":2,"arrows":"start"}],"segments":[{"from":[2,6],"to":[5,3],"arrows":"end"}],"points":[{"at":[2,4]},{"at":[2,6],"open":true}]}
+{"ariaLabel":"The graph of the piecewise function x squared for x less than or equal to 2, and 8 minus x for x greater than 2; the parabola comes down from the upper left through the origin and rises to a filled point at (2, 4), and a separate line begins at an open point at (2, 6) and falls to the right.","xMin":-3,"xMax":5,"yMin":-4,"yMax":8,"unit":34,"yUnit":20,"tickLabels":true,"yTickStep":2,"quadratics":[{"a":1,"from":-3,"to":2,"arrows":"start"}],"segments":[{"from":[2,6],"to":[5,3],"arrows":"end"}],"points":[{"at":[2,4]},{"at":[2,6],"open":true}]}
 
 {{< /apfigure >}}
 
@@ -458,14 +458,14 @@ We see the graph of $f(x)=\lvert x\rvert$ below. We see that the graph has a cor
 We see that the graph of $f(x)=x^{\tfrac{2}{3}}$ below has a cusp at $x=0$. A cusp has a unique feature. Moving away from the cusp, both the left-hand and right-hand limits approach either infinity or negative infinity. Notice the tangent lines as $x$ approaches $0$ from both the left and the right appear to get increasingly steeper, but one has a negative slope, the other has a positive slope.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x to the two-thirds power, with a cusp point at the origin where both branches rise steeply.","xMin":-3,"xMax":3,"yMin":-2,"yMax":3,"unit":48,"tickLabels":true,"polylines":[{"through":[[-3,2.08],[-2.85,2.01],[-2.7,1.939],[-2.55,1.866],[-2.4,1.793],[-2.25,1.717],[-2.1,1.64],[-1.95,1.561],[-1.8,1.48],[-1.65,1.396],[-1.5,1.31],[-1.35,1.221],[-1.2,1.129],[-1.05,1.033],[-0.9,0.932],[-0.75,0.825],[-0.6,0.711],[-0.45,0.587],[-0.3,0.448],[-0.15,0.282],[0,0],[0.15,0.282],[0.3,0.448],[0.45,0.587],[0.6,0.711],[0.75,0.825],[0.9,0.932],[1.05,1.033],[1.2,1.129],[1.35,1.221],[1.5,1.31],[1.65,1.396],[1.8,1.48],[1.95,1.561],[2.1,1.64],[2.25,1.717],[2.4,1.793],[2.55,1.866],[2.7,1.939],[2.85,2.01],[3,2.08]],"arrows":true}]}
+{"ariaLabel":"The graph of f(x) = x to the two-thirds power, with a cusp point at the origin where both branches rise steeply.","xMin":-3,"xMax":3,"yMin":-2,"yMax":3,"unit":48,"tickLabels":true,"polylines":[{"through":[[-3.0,2.0801],[-2.9352,2.05],[-2.8284,2.0],[-2.723,1.95],[-2.619,1.9],[-2.5163,1.85],[-2.415,1.8],[-2.315,1.75],[-2.2165,1.7],[-2.1195,1.65],[-2.0239,1.6],[-1.9297,1.55],[-1.8371,1.5],[-1.746,1.45],[-1.6565,1.4],[-1.5686,1.35],[-1.4822,1.3],[-1.3975,1.25],[-1.3145,1.2],[-1.2332,1.15],[-1.1537,1.1],[-1.0759,1.05],[-1.0,1.0],[-0.9259,0.95],[-0.8538,0.9],[-0.7837,0.85],[-0.7155,0.8],[-0.6495,0.75],[-0.5857,0.7],[-0.524,0.65],[-0.4648,0.6],[-0.4079,0.55],[-0.3536,0.5],[-0.3019,0.45],[-0.253,0.4],[-0.2071,0.35],[-0.1643,0.3],[-0.125,0.25],[-0.0894,0.1999],[-0.0581,0.15],[-0.0316,0.1],[-0.0112,0.0501],[0.0,0.0],[0.0112,0.0501],[0.0316,0.1],[0.0581,0.15],[0.0894,0.1999],[0.125,0.25],[0.1643,0.3],[0.2071,0.35],[0.253,0.4],[0.3019,0.45],[0.3536,0.5],[0.4079,0.55],[0.4648,0.6],[0.524,0.65],[0.5857,0.7],[0.6495,0.75],[0.7155,0.8],[0.7837,0.85],[0.8538,0.9],[0.9259,0.95],[1.0,1.0],[1.0759,1.05],[1.1537,1.1],[1.2332,1.15],[1.3145,1.2],[1.3975,1.25],[1.4822,1.3],[1.5686,1.35],[1.6565,1.4],[1.746,1.45],[1.8371,1.5],[1.9297,1.55],[2.0239,1.6],[2.1195,1.65],[2.2165,1.7],[2.315,1.75],[2.415,1.8],[2.5163,1.85],[2.619,1.9],[2.723,1.95],[2.8284,2.0],[2.9352,2.05],[3.0,2.0801]],"arrows":true}]}
 
 {{< /apfigure >}}
 
 We see that the graph of $f(x)=x^{\tfrac{1}{3}}$ below has a vertical tangent at $x=0$. Recall that vertical tangents are vertical lines, so where a vertical tangent exists, the slope of the line is undefined. This is why the derivative, which measures the slope, does not exist there.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x to the one-third power, with a vertical tangent at the origin shown as a dashed vertical line.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":48,"tickLabels":true,"curves":[{"kind":"cbrt"}],"lines":[{"x":0,"dashed":true,"arrows":true}]}
+{"ariaLabel":"The graph of f(x) = x to the one-third power, rising through the origin, where the curve turns vertical; the vertical tangent there lies along the y-axis and is labeled vertical tangent x = 0.","xMin":-3,"xMax":3,"yMin":-3,"yMax":3,"unit":48,"tickLabels":true,"curves":[{"kind":"cbrt"}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"vertical tangent x = 0","labelAt":0.85,"labelSide":"right"}]}
 
 {{< /apfigure >}}
 
@@ -483,29 +483,30 @@ We see that the graph of $f(x)=x^{\tfrac{1}{3}}$ below has a vertical tangent at
 **Example.** Using the graph below, determine where the function is (a) continuous, (b) discontinuous, (c) differentiable, (d) not differentiable. At the points where the graph is discontinuous or not differentiable, state why.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A piecewise-linear graph with an open circle at (-2, -1), a flat segment to a corner at (-1, -1), a rising segment through the origin to a filled point at (1, 1), an open circle at (1, 2), a segment up to a peak at (2, 3), then a segment falling steeply off the bottom right.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":38,"tickLabels":true,"segments":[{"from":[-4.5,-6],"to":[-2,-1],"arrows":"start"},{"from":[-2,-1],"to":[-1,-1]},{"from":[-1,-1],"to":[1,1]},{"from":[1,2],"to":[2,3]},{"from":[2,3],"to":[4.67,-5],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-1,-1]},{"at":[1,1]},{"at":[1,2],"open":true},{"at":[2,3]}],"texts":[{"at":[3.3,-2.3],"text":"f"}]}
+{"ariaLabel":"A piecewise-linear graph: a ray rising from the lower left to an open circle at (-2, -1), a flat segment to a corner at (-1, -1), a rising segment through the origin to a filled point at (1, 1), an open circle at (1, 2), a segment up to a peak at (2, 3), then a segment falling steeply off the bottom right.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":40,"tickLabels":true,"segments":[{"from":[-4.5,-6],"to":[-2,-1],"arrows":"start"},{"from":[-2,-1],"to":[-1,-1]},{"from":[-1,-1],"to":[1,1]},{"from":[1,2],"to":[2,3]},{"from":[2,3],"to":[4.67,-5],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-1,-1]},{"at":[1,1]},{"at":[1,2],"open":true},{"at":[2,3]}],"texts":[{"at":[3.3,-2.3],"text":"f"}],"yUnit":34}
 
 {{< /apfigure >}}
 
 **Solution.** The graph of $f(x)$ is continuous on $(-\infty,-2)\cup(-2,1)\cup(1,\infty)$. The graph of $f(x)$ has a removable discontinuity at $x=-2$ and a jump discontinuity at $x=1$. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same piecewise graph, with the x-axis marked off into the three intervals where the function is continuous: from negative infinity to -2, from -2 to 1, and from 1 to infinity.","xMin":-5,"xMax":5,"yMin":-8,"yMax":6,"unit":34,"tickLabels":true,"segments":[{"from":[-4.5,-6],"to":[-2,-1],"arrows":"start"},{"from":[-2,-1],"to":[-1,-1]},{"from":[-1,-1],"to":[1,1]},{"from":[1,2],"to":[2,3]},{"from":[2,3],"to":[4.67,-5],"arrows":"end"},{"from":[-5,-6.8],"to":[-2.15,-6.8],"arrows":"start"},{"from":[-1.85,-6.8],"to":[0.85,-6.8],"arrows":false},{"from":[1.15,-6.8],"to":[5,-6.8],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-1,-1]},{"at":[1,1]},{"at":[1,2],"open":true},{"at":[2,3]}],"texts":[{"at":[3.3,-2.3],"text":"f"},{"at":[-3.5,-7.6],"text":"(-∞, -2)"},{"at":[-1.5,-7.6],"text":"(-2, 1)"},{"at":[3,-7.6],"text":"(1, ∞)"}]}
+{"ariaLabel":"The same piecewise graph, with a bar below it marked off into the three intervals where the function is continuous: from negative infinity to -2, from -2 to 1, and from 1 to infinity.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":40,"tickLabels":true,"segments":[{"from":[-4.5,-6],"to":[-2,-1],"arrows":"start"},{"from":[-2,-1],"to":[-1,-1]},{"from":[-1,-1],"to":[1,1]},{"from":[1,2],"to":[2,3]},{"from":[2,3],"to":[4.67,-5],"arrows":"end"},{"from":[-5,-7.4],"to":[-2.12,-7.4],"arrows":"start"},{"from":[-1.88,-7.4],"to":[0.88,-7.4]},{"from":[1.12,-7.4],"to":[5,-7.4],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-1,-1]},{"at":[1,1]},{"at":[1,2],"open":true},{"at":[2,3]}],"texts":[{"at":[3.3,-2.3],"text":"f"},{"at":[-3.5,-8.1],"text":"(−∞, −2)"},{"at":[-0.5,-8.1],"text":"(−2, 1)"},{"at":[3,-8.1],"text":"(1, ∞)"}],"yUnit":34}
 
 {{< /apfigure >}}
 
 The graph of $f$ is differentiable on $(-\infty,-2)\cup(-2,-1)\cup(-1,1)\cup(1,2)\cup(2,\infty)$. The graph of $f(x)$ is not differentiable at $x=-2$ because it is a point of discontinuity, at $x=-1$ because of a sharp corner, at $x=1$ because it is a point of discontinuity, and at $x=2$ because of a sharp corner. See the figure below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same piecewise graph labeled with sharp corners at (-1, -1) and (2, 3), discontinuities at (-2, -1) and (1, 1), and the x-axis marked off into the five intervals where the function is differentiable.","xMin":-5,"xMax":5,"yMin":-9,"yMax":6,"unit":34,"tickLabels":true,"segments":[{"from":[-4.5,-6],"to":[-2,-1],"arrows":"start"},{"from":[-2,-1],"to":[-1,-1]},{"from":[-1,-1],"to":[1,1]},{"from":[1,2],"to":[2,3]},{"from":[2,3],"to":[4.67,-5],"arrows":"end"},{"from":[-5,-7.6],"to":[-2.15,-7.6],"arrows":"start"},{"from":[-1.85,-7.6],"to":[-1.15,-7.6],"arrows":false},{"from":[-0.85,-7.6],"to":[0.85,-7.6],"arrows":false},{"from":[1.15,-7.6],"to":[1.85,-7.6],"arrows":false},{"from":[2.15,-7.6],"to":[5,-7.6],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-1,-1]},{"at":[1,1]},{"at":[1,2],"open":true},{"at":[2,3]}],"texts":[{"at":[3.3,-2.3],"text":"f"},{"at":[-4.9,5.7],"text":"Discontinuity at (-2, -1)","anchor":"start"},{"at":[-1.7,0.6],"text":"Sharp corner","anchor":"end"},{"at":[2.6,4.3],"text":"Sharp corner","anchor":"start"},{"at":[-4.9,5],"text":"Discontinuity at (1, 1)","anchor":"start"},{"at":[-3.3,-8.7],"text":"(-∞,-2)"},{"at":[-1.5,-8.7],"text":"(-2,-1)"},{"at":[0,-8.7],"text":"(-1,1)"},{"at":[1.5,-8.7],"text":"(1,2)"},{"at":[3.5,-8.7],"text":"(2,∞)"}]}
+{"ariaLabel":"The same piecewise graph with labels: sharp corners at (-1, -1) and (2, 3), a discontinuity at the open circle (-2, -1), and a discontinuity arrow pointing to the jump between (1, 1) and (1, 2); a bar below the graph is marked off into the five intervals where the function is differentiable: from negative infinity to -2, -2 to -1, -1 to 1, 1 to 2, and 2 to infinity.","xMin":-5,"xMax":5,"yMin":-6,"yMax":6,"unit":40,"tickLabels":true,"segments":[{"from":[-4.5,-6],"to":[-2,-1],"arrows":"start"},{"from":[-2,-1],"to":[-1,-1]},{"from":[-1,-1],"to":[1,1]},{"from":[1,2],"to":[2,3]},{"from":[2,3],"to":[4.67,-5],"arrows":"end"},{"from":[-5,-7.4],"to":[-2.12,-7.4],"arrows":"start"},{"from":[-1.88,-7.4],"to":[-1.12,-7.4]},{"from":[-0.88,-7.4],"to":[0.88,-7.4]},{"from":[1.12,-7.4],"to":[1.88,-7.4]},{"from":[2.12,-7.4],"to":[5,-7.4],"arrows":"end"},{"from":[-0.8,3],"to":[0.85,1.55],"arrows":"end"},{"from":[-1.55,-3.1],"to":[-1.06,-1.18],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true,"label":"Discontinuity","labelSide":"w"},{"at":[-1,-1]},{"at":[1,1]},{"at":[1,2],"open":true},{"at":[2,3],"label":"Sharp corner","labelSide":"e"}],"texts":[{"at":[3.3,-2.3],"text":"f"},{"at":[-0.9,3.1],"text":"Discontinuity","anchor":"end"},{"at":[-1.6,-3.55],"text":"Sharp corner","anchor":"middle"},{"at":[-3.5,-8.1],"text":"(−∞, −2)"},{"at":[-1.5,-6.85],"text":"(−2, −1)"},{"at":[0,-8.1],"text":"(−1, 1)"},{"at":[1.5,-6.85],"text":"(1, 2)"},{"at":[3.5,-8.1],"text":"(2, ∞)"}],"yUnit":34}
 
 {{< /apfigure >}}
 
 {{< fillin
-  question="Using the graph of $y=f(x)$ shown below, state the interval(s) on which $f$ is continuous."
+  question="Using the graph of $y=f(x)$ shown below, state the interval(s) on which $f$ is continuous. Enter the answer in interval notation, joining intervals with $\cup$."
   answer="(-\infty,1)\cup(1,3)\cup(3,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-\infty,1)\cup(1,3)\cup(3,\infty)$"
-  hint="The graph breaks only where the open circles sit, at $x=1$ and $x=3$."
+  hint="Find each $x$-value where the graph jumps or leaves a gap, and leave those values out of the intervals."
 >}}
 
 {{< fillin
@@ -518,7 +519,7 @@ The graph of $f$ is differentiable on $(-\infty,-2)\cup(-2,-1)\cup(-1,1)\cup(1,2
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A graph with three pieces: a line falling from a filled point at (1, 8) toward the lower left with an arrow, a curve from an open point near (1, 0.7) down to an open point near (3, -2.8), and a curve rising from a filled point at (3, 2) toward the upper right with an arrow.","xMin":-5,"xMax":5,"yMin":-4,"yMax":8,"unit":36,"tickLabels":true,"segments":[{"from":[1,8],"to":[-3,4],"arrows":"end"}],"quadratics":[{"a":-0.15,"b":-1.15,"c":2,"from":1,"to":3,"arrows":false},{"a":1.2,"b":-7.2,"c":12.8,"from":3,"to":4.6,"arrows":"end"}],"points":[{"at":[1,8]},{"at":[1,0.7],"open":true},{"at":[3,-2.8],"open":true},{"at":[3,2]}],"texts":[{"at":[0.15,4.3],"text":"y = f(x)"}]}
+{"ariaLabel":"A graph with three pieces: a line falling from a filled point at (1, 8) toward the lower left with an arrow, a curve from an open point near (1, 0.7) down to an open point near (3, -2.8), and a curve rising from a filled point at (3, 2) toward the upper right with an arrow.","xMin":-5,"xMax":5,"yMin":-4,"yMax":8,"unit":36,"yUnit":28,"tickLabels":true,"segments":[{"from":[1,8],"to":[-3,4],"arrows":"end"}],"quadratics":[{"a":-0.15,"b":-1.15,"c":2,"from":1,"to":3,"arrows":false},{"a":1.2,"b":-7.2,"c":12.8,"from":3,"to":4.6,"arrows":"end"}],"points":[{"at":[1,8]},{"at":[1,0.7],"open":true},{"at":[3,-2.8],"open":true},{"at":[3,2]}],"texts":[{"at":[2.2,4.3],"text":"y = f(x)","anchor":"middle"}]}
 
 {{< /apfigure >}}
 
@@ -552,8 +553,8 @@ $$y=f'(a)(x-a)+f(a)$$
 $$
 \begin{array}{ll}
 f'(a)=\lim\limits_{h\to0}\tfrac{(a+h)(a+h)-4(a+h)-(a^2-4a)}{h} & \\[4pt]
-\phantom{f'(a)}=\lim\limits_{h\to0}\tfrac{a^2+2ah+h^2-4a-4h-a^2+4a}{h} & \text{Remove parentheses and combine like terms.} \\[4pt]
-\phantom{f'(a)}=\lim\limits_{h\to0}\tfrac{2ah+h^2-4h}{h} & \\[4pt]
+\phantom{f'(a)}=\lim\limits_{h\to0}\tfrac{a^2+2ah+h^2-4a-4h-a^2+4a}{h} & \text{Remove parentheses.} \\[4pt]
+\phantom{f'(a)}=\lim\limits_{h\to0}\tfrac{2ah+h^2-4h}{h} & \text{Combine like terms.} \\[4pt]
 \phantom{f'(a)}=\lim\limits_{h\to0}\tfrac{h(2a+h-4)}{h} & \text{Factor out }h. \\[4pt]
 f'(a)=2a-4 & \text{Evaluate the limit.} \\[4pt]
 f'(3)=2(3)-4=2 &
@@ -574,7 +575,7 @@ $$
 **Analysis.** We can use a graphing utility to graph the function and the tangent line. In so doing, we can observe the point of tangency at $x=3$ as shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f(x) = x squared minus 4x, an upward parabola, with the tangent line y = 2x - 9 drawn touching the curve at the point (3, -3).","xMin":-1,"xMax":7,"yMin":-5,"yMax":4,"unit":52,"tickLabels":true,"quadratics":[{"a":1,"b":-4}],"lines":[{"through":[[3,-3],[4,-1]],"arrows":true,"label":"y = 2x - 9"}],"points":[{"at":[3,-3]}],"texts":[{"at":[0.6,3.5],"text":"f(x) = x² - 4x"}]}
+{"ariaLabel":"The graph of f(x) = x squared minus 4x, an upward parabola, with the tangent line y = 2x - 9 drawn touching the curve at the point (3, -3).","xMin":-1,"xMax":7,"yMin":-5,"yMax":4,"unit":44,"yUnit":40,"tickLabels":true,"quadratics":[{"a":1,"b":-4}],"lines":[{"through":[[3,-3],[4,-1]],"arrows":true,"label":"y = 2x - 9"}],"points":[{"at":[3,-3]}],"texts":[{"at":[0.6,3.5],"text":"f(x) = x² - 4x"}]}
 
 {{< /apfigure >}}
 
@@ -621,7 +622,7 @@ $$
 **Analysis.** This result means that at time $t=2$ seconds, the ball is dropping at a rate of $28$ ft/sec.
 
 {{< fillin
-  question="A fireworks rocket is shot upward out of a pit $12$ ft below the ground at a velocity of $60$ ft/sec. Its height in feet after $t$ seconds is given by $s=-16t^2+60t-12$. What is its instantaneous velocity after $4$ seconds? Enter the number only."
+  question="A fireworks rocket is shot upward out of a pit $12$ ft below the ground at a velocity of $60$ ft/sec. Its height in feet after $t$ seconds is given by $s=-16t^2+60t-12$. What is its instantaneous velocity after $4$ seconds? Enter the number of feet per second only."
   answer="-68"
   answerForm="decimal"
   answerDisplay="$-68$ ft/s"
@@ -654,7 +655,7 @@ $$
 {{< fillin
   question="Use the definition of the derivative, $\lim_{h\to0}\tfrac{f(x+h)-f(x)}{h}$, to find the derivative of $f(x)=-2x+1$."
   answer="-2"
-  answerForm="polynomial"
+  answerForm="decimal"
   answerDisplay="$f'(x)=-2$"
   hint="Substitute $f(x+h)=-2(x+h)+1$ and $f(x)=-2x+1$ into the difference quotient, then simplify."
 >}}
@@ -662,7 +663,7 @@ $$
 {{< fillin
   question="Use the definition of the derivative to find the derivative of $f(x)=2x^2+x-3$."
   answer="4x+1"
-  answerForm="polynomial"
+  answerForm="polynomial expanded no-like-terms"
   answerDisplay="$f'(x)=4x+1$"
   hint="Expand $f(x+h)-f(x)$, divide by $h$, then let $h\to0$."
 >}}
@@ -676,7 +677,7 @@ $$
 >}}
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A piecewise graph: a horizontal ray at y = -1 ending in an open circle at (-2, -1), a rising segment from an open circle at (-2, -4) to a filled point at (0, 0), a flat segment from an open circle at (0, 1) to a filled point at (2, 1), then a segment falling steeply to the lower right with an arrow.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":42,"tickLabels":true,"segments":[{"from":[-5,-1],"to":[-2,-1],"arrows":"start"},{"from":[-2,-4],"to":[0,0]},{"from":[0,1],"to":[2,1]},{"from":[2,1],"to":[4.33,-5],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-2,-4],"open":true},{"at":[0,0]},{"at":[0,1],"open":true},{"at":[2,1]}],"texts":[{"at":[3.3,-2],"text":"f(x)"}]}
+{"ariaLabel":"A piecewise graph: a horizontal ray at y = -1 ending in an open circle at (-2, -1), a rising segment from an open circle at (-2, -4) to a filled point at (0, 0), a flat segment from an open circle at (0, 1) to a filled point at (2, 1), then a segment falling steeply to the lower right with an arrow.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":42,"tickLabels":true,"yTickOffset":5,"segments":[{"from":[-5,-1],"to":[-2,-1],"arrows":"start"},{"from":[-2,-4],"to":[0,0]},{"from":[0,1],"to":[2,1]},{"from":[2,1],"to":[4,-5],"arrows":"end"}],"points":[{"at":[-2,-1],"open":true},{"at":[-2,-4],"open":true},{"at":[0,0]},{"at":[0,1],"open":true},{"at":[2,1]}],"texts":[{"at":[3.3,-2],"text":"f(x)"}]}
 
 {{< /apfigure >}}
 
@@ -699,15 +700,15 @@ $$
   answer="5"
   answerForm="decimal"
   answerDisplay="$x=5$"
-  hint="Find the single open circle that starts a new, disconnected piece of the graph."
+  hint="Look for an $x$-value where the graph breaks into separate pieces."
 >}}
 
 ### Find instantaneous rates of change
 
 {{< fillin
-  question="Find the average rate of change between the points $(4,-3)$ and $(-2,-1)$. Enter the answer as a fraction."
+  question="Find the average rate of change between the points $(4,-3)$ and $(-2,-1)$. Enter the answer as a fraction in lowest terms."
   answer="-\frac{1}{3}"
-  answerForm="fraction"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{3}$"
   hint="Divide the change in $y$ by the change in $x$."
 >}}
@@ -715,7 +716,7 @@ $$
 {{< multiplechoice
   question="Find the average rate of change between the points $(7,-2)$ and $(7,10)$."
   answer="undefined"
-  hint="The two points share the same $x$-coordinate."
+  hint="Find the change in $x$ before you divide."
 >}}
 undefined
 $0$
@@ -734,9 +735,9 @@ At 12:30 p.m., the tank is losing 20 gallons per minute.
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="The volume $V$ of a sphere with respect to its radius $r$ is given by $V=\tfrac{4}{3}\pi r^3$. Find the instantaneous rate of change of $V$ when $r=3$ cm. Give the exact answer in terms of $\pi$."
+  question="The volume $V$ of a sphere with respect to its radius $r$ is given by $V=\tfrac{4}{3}\pi r^3$. Find the instantaneous rate of change of $V$ when $r=3$ cm. Give the exact answer in terms of $\pi$, in cubic centimeters per centimeter."
   answer="36\pi"
-  answerForm="exact"
+  answerForm="exact single-term"
   answerDisplay="$36\pi\text{ cm}^3\text{ per cm}$"
   hint="Find $\tfrac{dV}{dr}$ and evaluate it at $r=3$."
 >}}
@@ -757,19 +758,27 @@ At 12:30 p.m., the tank is losing 20 gallons per minute.
   answerMode="unordered"
   answerForm="decimal"
   answerDisplay="$k=-10$ or $k=2$"
-  hint="Set $f'(x)=2x-k$ equal to the line's slope $4$, and set $f(x)$ equal to the line's output at that $x$, then solve the two equations together."
+  hint="At the point of tangency, $f'(x)$ equals the line's slope and $f(x)$ equals the line's output; solve those two equations together for $k$."
 >}}
 
 ### Find the instantaneous velocity of a particle
+
+{{< fillin
+  question="A car traveled 110 miles during the time period from 2:00 p.m. to 4:00 p.m. What was the car's average velocity? Enter the number of miles per hour only."
+  answer="55"
+  answerForm="decimal"
+  answerDisplay="$55$ miles per hour"
+  hint="Divide the distance traveled by the elapsed time in hours."
+>}}
 
 {{< multiplechoice
   question="A car traveled 110 miles during the time period from 2:00 p.m. to 4:00 p.m. At exactly 2:30 p.m., the speed of the car registered exactly 62 miles per hour. What is another name for the speed of the car at 2:30 p.m., and why does it differ from the average velocity?"
   answer="It is the instantaneous velocity; it differs because average velocity gives the velocity over an interval, while instantaneous velocity is the velocity at one instant."
   hint="Average velocity uses total distance over total time; a single instant does not."
 >}}
-It is the average velocity; it differs because instantaneous velocity is always higher than average velocity.
+It is the average velocity; it does not differ, because both are measured in miles per hour.
 It is the instantaneous velocity; it differs because average velocity gives the velocity over an interval, while instantaneous velocity is the velocity at one instant.
-It is the marginal velocity; it is identical to the average velocity for any car.
+It is the instantaneous velocity; it differs because instantaneous velocity is measured over the whole trip, while average velocity is measured at one instant.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -794,4 +803,4 @@ The projectile's velocity is zero at $t=0$ and at $t=5$ seconds.
 
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 12.4: Derivatives](https://openstax.org/books/precalculus-2e/pages/12-4-derivatives) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all 22 instructional figures as accessible spec-first SVGs, each independently checked against the rendered PDF (true pages 1221–1242). The generic secant/tangent-construction figures (the curve through $(a,f(a))$ and $(a+h,f(a+h))$, and the tangent-vs-two-secants figure) are unnamed in the source, so both are fitted to the same representative parabola $f(x)=0.5x^2$ with explicit sample points, disclosed here since the source states them symbolically. The zoom-sequence figure illustrating linearity at a differentiable point (originally one image combining a wide view and an inset) is split into two sequential figures — a wide view with a marked zoom box, then a close-up at that box's window — since the engine has no inset-with-callout-arrow primitive; the boxed function is a representative downward parabola, not a source-named one. $f(x)=x^3-2x^2+1$ (Example 6's graph) was fitted by solving for the cubic's four coefficients from the two turning points and slopes the source prints, then confirmed against every printed solution value the figure feeds (all matched exactly); the source's Graphical-section turning-point figure (printed exercises 35–44) is not recreated here, since none of its items is used. The two "For the following exercises, consider the graph of the function $f$" items whose `<problem>` is empty in the pinned CNXML (the source poses the question through a printed figure the transcription tool cannot extract) were reconstructed as exact piecewise-linear graphs from the rendered PDF art, corner and jump coordinates read directly off the page, and both are used above as fill-ins; Example 9's three-stage piecewise graph and the Try It graph that follows it were likewise reconstructed from the printed art, since their CNXML alt text gives no coordinates asking for the $x$-value(s) of discontinuity — the only ask their non-differentiability solutions can source independently. Every "explain the notation/function in words" item is a multiple choice whose correct option is the source's own printed sentence, since a fill-in cannot grade a categorical explanation. Fourteen selected end-of-section exercises were adapted, one apiece, into fourteen interactive Practice components across the section's four objective groups, every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key; the Algebraic set's derivative-by-definition items keep only the derivative itself as the graded response, since the definition the exercise names is process, not answer. Kept the "Media" callout's introductory sentence but omitted its two external video links, matching house precedent elsewhere in this book.</small>
+<small>This section is adapted from [Precalculus 2e, Section 12.4: Derivatives](https://openstax.org/books/precalculus-2e/pages/12-4-derivatives) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all 22 instructional figures as accessible spec-first SVGs, each independently checked against the rendered PDF (true pages 1221–1242). The generic secant/tangent-construction figures (the curve through $(a,f(a))$ and $(a+h,f(a+h))$, and the tangent-vs-two-secants figure) are unnamed in the source, so both are fitted to the same representative parabola $f(x)=0.5x^2$ with explicit sample points, disclosed here since the source states them symbolically. The zoom-sequence figure illustrating linearity at a differentiable point (originally one image combining a wide view and an inset) is split into two sequential figures — a wide view with a marked zoom box, then a close-up at that box's window — since the engine has no inset-with-callout-arrow primitive; the boxed function is a representative downward parabola, not a source-named one. $f(x)=x^3-2x^2+1$ (Example 6's graph) was fitted by solving for the cubic's four coefficients from the two turning points and slopes the source prints, then confirmed against every printed solution value the figure feeds (all matched exactly); the source's Graphical-section turning-point figure (printed exercises 35–44) is not recreated here, since none of its items is used. The two "For the following exercises, consider the graph of the function $f$" items whose `<problem>` is empty in the pinned CNXML (the source poses the question through a printed figure the transcription tool cannot extract) were reconstructed as exact piecewise-linear graphs from the rendered PDF art, corner and jump coordinates read directly off the page, and both are used above as fill-ins; Example 9's piecewise graph and the Try It graph that follows it were likewise reconstructed from the printed art, since their CNXML alt text does not give every coordinate; that Try It is posed as two items, the intervals on which $f$ is continuous and the $x$-values at which it is not differentiable. Every "explain the notation/function in words" item is a multiple choice whose correct option is the source's printed answer, condensed to one sentence, since a fill-in cannot grade a categorical explanation. Fourteen selected end-of-section exercises were adapted into fifteen interactive Practice components across the section's four objective groups (the car exercise's average velocity and its question about the speed at 2:30 p.m. are separate items), every one independently re-derived (including by running the arithmetic in Node) rather than read off the source key; the Algebraic set's derivative-by-definition items keep only the derivative itself as the graded response, since the definition the exercise names is process, not answer. Omitted the "Media" callout and its two external video links, matching house precedent elsewhere in this book. Two source slips are corrected: the $s$-$t$ graph marks its two points at $(1,54)$ and $(3,54)$, the values $s(1)=s(3)=54$ the function gives (the source's figure and alt text say 55), and Example 5's expansion carries $-16h^2$ in the four rows where the source prints $-h^2$ (the derivative it reaches is unchanged).</small>
