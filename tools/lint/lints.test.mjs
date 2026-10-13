@@ -427,8 +427,8 @@ test('a numeric, bound, or coordinate key needs a value form that refuses it unw
   assert(lint(fillin('(-\\infty,107]')).some(unworked), 'an interval endpoint fires');
   assert(lint(fillin('(2,\\frac{3}{2})')).some(unworked), 'a pair coordinate fires');
   assert.equal(lint(fillin('(2,\\frac{3}{2})', 'lowest-terms')).filter(unworked).length, 0, 'lowest-terms reaches each coordinate');
-  assert.equal(lint(fillin('105'), 'content/math/precalculus/knowledge-check-01-06.md').filter(unworked).length, 0,
-    'a Precalculus knowledge check whose re-review row is open is not yet held to it');
+  assert(lint(fillin('105'), 'content/math/precalculus/knowledge-check-01-06.md').some(unworked),
+    'the last open rows closed with the Precalculus knowledge checks (October 12, 2026): every page is held to it');
   assert(lint(fillin('105'), 'content/math/precalculus/11-sequences-probability-and-counting-theory/01-sequences-and-their-notations.md').some(unworked),
     'a Precalculus chapter whose row has closed is held to it (chapters 11-12, October 12, 2026)');
 });
@@ -1193,6 +1193,34 @@ test('an unbraced multi-digit exponent grades as a different value', () => {
     ['10^{-3}', 'a braced negative exponent is unaffected by this rule'],
   ]) {
     assert.equal(errorsFor(answer).length, 0, reason);
+  }
+});
+
+// ---- an unbraced multi-digit radicand renders and grades as a different value
+// TeX's `\sqrt` takes one token, so `\sqrt17` is `\sqrt1` followed by `7`: a
+// Precalculus knowledge-check key rendered √1·7 and graded as 7 (October 12,
+// 2026). The key is read in the fill-in rules, every other spelling in page
+// math; a digit then a letter (`\sqrt3x`, √3·x) is the meaning intended.
+test('an unbraced multi-digit radicand renders and grades as a different value', () => {
+  const radicand = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md')
+    .errors.filter((error) => error.includes('unbraced multi-digit radicand'));
+  const keyed = (answer, display = '$\\sqrt{17}$') => `{{< fillin question="Simplify: $\\sqrt{68}/2$." answer="${answer}" answerDisplay="${display}" hint="Factor out 4." >}}`;
+  for (const [source, reason] of [
+    [keyed('\\sqrt17'), 'a bare two-digit radicand in the key is an error'],
+    [keyed('2\\sqrt[3]{2}+\\sqrt[3]25'), 'an indexed radical takes one token too'],
+    [keyed('\\sqrt{17}', '$\\sqrt17$'), 'the answerDisplay is page math'],
+    ['The length is $\\sqrt 17$ units.\n', 'prose math, with a space before the digits'],
+    ['{{< multiplechoice question="Which is exact?" options="$\\sqrt{17}$|$\\sqrt17$" answer="$\\sqrt{17}$" hint="Braces." >}}\n', 'a multiple-choice option'],
+  ]) {
+    assert.equal(radicand(source).length, 1, reason);
+  }
+  for (const [source, reason] of [
+    [keyed('\\sqrt{17}'), 'a braced radicand is correct'],
+    [keyed('\\sqrt2'), 'a single-digit radicand needs no braces'],
+    ['The sides are $s,\\sqrt3s,2s$ and $2\\sqrt3x$.\n', 'a digit then a letter is the intended √3·s'],
+    [keyed('\\sqrt[3]{25}', '$\\sqrt[3]{25}$'), 'a braced indexed radicand is correct'],
+  ]) {
+    assert.equal(radicand(source).length, 0, reason);
   }
 });
 

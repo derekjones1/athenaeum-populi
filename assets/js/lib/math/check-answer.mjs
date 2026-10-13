@@ -491,7 +491,15 @@ export function preprocess(raw) {
     // symbolic — an `exact` answer — while saying the decimal that token
     // exists to refuse.
     .replace(/(?<!\\)\\(?:qquad|quad|thinspace|enspace|space| )(?![a-zA-Z])/g, ' ')
-    .replace(/~/g, ' ');
+    .replace(/~/g, ' ')
+    // A bold single letter is the letter: the textbook writes its basis
+    // vectors `\mathbf{i}`, `\mathbf{j}`, and the unit-vector key
+    // `-\frac{3\sqrt{10}}{10}i-\frac{\sqrt{10}}{10}j` graded the bold
+    // spelling `incorrect` (Precalculus knowledge checks re-review, October
+    // 12, 2026). The letter keeps exactly the reading the plain spelling has
+    // (a space parts it from a command name before it, `\sin\mathbf{x}`).
+    .replace(/\\(?:mathbf|boldsymbol|bm)\s*(?:\{\s*([a-zA-Z])\s*\}|([a-zA-Z])(?![a-zA-Z]))/g,
+      (match, braced, bare, at, text) => `${/\\[a-zA-Z]+$/.test(text.slice(0, at)) ? ' ' : ''}${braced ?? bare}`);
   return fixLoneDifferentialNumerator(despaced)
     .replace(/(^|[^\d.\w])(\d+) +(\d+)\/(\d+)/g, '$1$2\\frac{$3}{$4}')
     // A mixed number that multiplies by juxtaposition loses its whole part in
@@ -783,6 +791,90 @@ const writesNumeralProduct = (bare) => {
   return NUMERAL_PRODUCT.test(text) || NUMERAL_GROUP_PRODUCT.test(text) || PI_NUMERAL_PRODUCT.test(bare);
 };
 const writesExponentArithmetic = (bare) => EXPONENT_ARITHMETIC.test(bare);
+/**
+ * Two numeral coefficients written in one product term, with letters or a
+ * dot between them: `5x\cdot13y` and `x\cdot5\cdot y\cdot13` (and the
+ * juxtaposed `5xy13`) for `65xy`. NUMERAL_PRODUCT sees a numeral only
+ * directly beside the dot, and the engine folds every spelling into one
+ * coefficient, so `single-logarithm` passed `\log_8(5x\cdot13y)` against
+ * `\log_8(65xy)` and `single-term` passed `5xy13` (Precalculus knowledge
+ * checks re-review, October 12, 2026).
+ *
+ * Read on ONE additive term: a numeral run, a parenthesized lone numeral
+ * (`(13)`) and a numeral fraction each count once, and a numeral with a
+ * numeral fraction after it is one mixed number. Exponents, subscripts,
+ * radicands, a fraction holding a letter, and every other group are stepped
+ * over (their own terms are read by the caller), and a function name ends
+ * the term — what follows it is its argument, so `2\sin3x` is one coefficient.
+ */
+const COEFFICIENT_ENDING_FUNCTION = /^(?:arc)?(?:sin|cos|tan|csc|sec|cot)h?$|^(?:log|ln|exp|lg)$/;
+function writesSecondNumeral(term) {
+  // A slash numeral fraction (`x^{1/2}`) is one numeral, as `\frac12` is.
+  const text = term.replace(/(\d)\s*\{,\}\s*(?=\d)/g, '$1').replace(/\d+(?:\.\d+)?\s*\/\s*\d+(?:\.\d+)?/g, '1');
+  const isNumeral = (piece) => /^\s*-?\s*\d+(?:\.\d+)?\s*$/.test(piece);
+  let numerals = 0;
+  let i = 0;
+  const numeralFractionAt = (at) => {
+    const head = text.slice(at).match(/^\s*\\[tdc]?frac(?![a-zA-Z])/);
+    if (!head) return null;
+    const numerator = readTexArgument(text, at + head[0].length);
+    const denominator = numerator && readTexArgument(text, numerator[1]);
+    if (!denominator) return null;
+    return isNumeral(numerator[0]) && isNumeral(denominator[0]) ? denominator[1] : null;
+  };
+  while (i < text.length) {
+    const char = text[i];
+    if (char === '^' || char === '_') {
+      i = readTexArgument(text, i + 1)?.[1] ?? text.length;
+      continue;
+    }
+    if (char === '\\') {
+      const command = text.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0];
+      const name = command.slice(1);
+      if (COEFFICIENT_ENDING_FUNCTION.test(name)) break;
+      if (/^[tdc]?frac$/.test(name)) {
+        const end = numeralFractionAt(i);
+        if (end !== null) {
+          numerals += 1;
+          i = end;
+          continue;
+        }
+        const numerator = readTexArgument(text, i + command.length);
+        i = (numerator && readTexArgument(text, numerator[1])?.[1]) ?? text.length;
+        continue;
+      }
+      if (name === 'sqrt') {
+        let at = i + command.length;
+        while (text[at] === ' ') at += 1;
+        if (text[at] === '[') at = text.indexOf(']', at) + 1 || text.length;
+        i = readTexArgument(text, at)?.[1] ?? text.length;
+        continue;
+      }
+      i += command.length;
+      continue;
+    }
+    if (char === '(' || char === '{') {
+      const group = readDelimitedGroup(text, i);
+      if (!group) return false;
+      if (char === '(' && isNumeral(group[0])) numerals += 1;
+      i = group[1];
+      continue;
+    }
+    const run = text.slice(i).match(/^\d+(?:\.\d+)?|^\.\d+/);
+    if (run) {
+      numerals += 1;
+      i += run[0].length;
+      const mixed = numeralFractionAt(i);
+      if (mixed !== null) i = mixed;
+      continue;
+    }
+    i += 1;
+  }
+  return numerals > 1;
+}
+/** writesSecondNumeral() on every additive term, at the top level and in every group. */
+const writesScatteredNumerals = (bare) => [bare, ...writtenGroups(bare)]
+  .some((text) => splitTopLevelTerms(text).some((term) => writesSecondNumeral(term.trim().replace(/^[+-]\s*/, ''))));
 const writesNumeralPower = (bare) => NUMERAL_POWER.test(bare);
 // The imaginary unit written as a letter of its own — not inside a command
 // name (`\pi`, `\infty`, `\sin`) and not the head of a longer word.
@@ -1878,7 +1970,7 @@ function checkOrderedList(studentRaw, answerRaw) {
     sawParseable = true;
     if (matches(students)) return { verdict: 'correct', members: reading };
   }
-  if (plain && unitlessReadings(readings).some((reading) => matchesParsed(reading, matches))) {
+  if (quantityMembers(answerParts) && unitlessReadings(readings).some((reading) => matchesParsed(reading, matches))) {
     return { verdict: 'unit', members: null };
   }
   return { verdict: sawParseable ? 'incorrect' : 'invalid', members: null };
@@ -1908,6 +2000,21 @@ function plainNumberMembers(answerParts) {
   return answerParts.every((part) => PLAIN_NUMBER_KEY.test(preprocess(part)));
 }
 
+/**
+ * The unit rule's wider key: every member a bare number OR one numeral
+ * fraction or mixed number, the quantity the scalar rule already reads
+ * (`\frac16\text{ hours}` reports `unit`). `3,2,\frac{1}{2} Hz` against
+ * `3,2,\frac{1}{2}` graded `incorrect` where the same entry against
+ * `3,2,0.5` reported `unit` (Precalculus knowledge checks re-review,
+ * October 12, 2026). The money sign stays a bare-number rule.
+ */
+function quantityMembers(answerParts) {
+  return answerParts.every((part) => {
+    const text = preprocess(part);
+    return PLAIN_NUMBER_KEY.test(text) || asFraction(text) !== null || asMixedNumber(text) !== null;
+  });
+}
+
 function unpricedMembers(reading, plain) {
   return plain ? reading.map((member) => member.replace(CURRENCY_PREFIX, '$1')) : reading;
 }
@@ -1917,7 +2024,9 @@ function unitlessReadings(readings) {
   return readings.flatMap((reading) => {
     let stripped = false;
     const members = reading.map((member) => {
-      const tail = preprocess(member).match(UNIT_TAIL);
+      // A numeral fraction or mixed number carries a unit the same way,
+      // read off the writing as the scalar rule reads it.
+      const tail = preprocess(member).match(UNIT_TAIL) ?? String(member).trim().match(FRACTION_UNIT_TAIL);
       if (!tail) return member;
       stripped = true;
       return tail[1];
@@ -1967,7 +2076,7 @@ function checkUnordered(studentRaw, answerRaw) {
     sawParseable = true;
     if (matches(students)) return { verdict: 'correct', members: reading };
   }
-  if (plain && unitlessReadings(readings.filter((reading) => reading.length >= 2))
+  if (quantityMembers(answerParts) && unitlessReadings(readings.filter((reading) => reading.length >= 2))
     .some((reading) => matchesParsed(reading, matches))) {
     return { verdict: 'unit', members: null };
   }
@@ -3279,6 +3388,67 @@ function writesNumeralGroupPower(bare) {
     if (monomial && /\d/.test(inner.replace(/\^\s*(?:\{[^{}]*\}|\S)/g, ''))) return true;
   }
   return false;
+}
+
+/**
+ * A parenthesized single term raised to a whole-number power, `(x^2)^7`,
+ * `(-\frac12)^6`, `(3x)^2`: a power of a power or of a product left
+ * unmerged, the step `single-term` exists to see done. A function's
+ * argument (`\sin(x)^2`) is not this; a group holding a sum is a factor the
+ * monomial parse already refuses, and a symbolic or fractional exponent
+ * (`(0.85)^t`, `(4x)^{\frac13}`) is a base or a root, not a power to merge.
+ */
+function writesPoweredSingleTermGroup(bare) {
+  for (let i = 0; i < bare.length; i += 1) {
+    if (bare[i] === '\\') {
+      i += bare.slice(i).match(/^\\(?:[a-zA-Z]+|[\s\S])?/)[0].length - 1;
+      continue;
+    }
+    if (bare[i] !== '(') continue;
+    const group = readDelimitedGroup(bare, i);
+    if (!group) return false;
+    if (/\\[a-zA-Z]+\s*(?:\^\s*(?:\{[^{}]*\}|\S))?\s*$/.test(bare.slice(0, i))) continue;
+    if (!/^\s*\^\s*(?:\{\s*-?\s*\d+\s*\}|\d)/.test(bare.slice(group[1]))) continue;
+    if (splitTopLevelTerms(group[0].trim().replace(/^[-+]\s*/, '')).filter((term) => term.trim()).length === 1) return true;
+  }
+  return false;
+}
+
+/**
+ * Do two top-level terms each consist of one fraction over the same written
+ * denominator, a denominator holding a letter? `\frac{x}{x^2-2}-\frac{4}{x^2-2}`
+ * is `\frac{x-4}{x^2-2}` with its numerators not yet combined. A numeral
+ * denominator is not this — `\frac{x}{2}+\frac{1}{2}` is a linear key's own
+ * coefficient and constant — and the denominators are compared as written,
+ * spacing aside.
+ */
+function writesSharedDenominator(bare) {
+  const denominators = new Set();
+  for (const term of splitTopLevelTerms(bare)) {
+    const body = term.trim().replace(/^[+-]\s*/, '');
+    const head = body.match(/^\\[tdc]?frac(?![a-zA-Z])/);
+    if (!head) continue;
+    const numerator = readTexArgument(body, head[0].length);
+    const denominator = numerator && readTexArgument(body, numerator[1]);
+    if (!denominator || body.slice(denominator[1]).trim()) continue;
+    if (!/[a-zA-Z]/.test(denominator[0].replace(/\\[a-zA-Z]+/g, ' '))) continue;
+    const written = denominator[0].replace(/\s+/g, '');
+    if (denominators.has(written)) return true;
+    denominators.add(written);
+  }
+  return false;
+}
+
+/** The indices of the radicals a term writes outside every radicand, `2` for a square root. */
+function outerRadicalIndices(term) {
+  const indices = [];
+  let inside = -1;
+  for (const opener of term.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/g)) {
+    if (opener.index < inside) continue;
+    indices.push(opener[1] ?? '2');
+    inside = readDelimitedGroup(term, opener.index + opener[0].length - 1)?.[1] ?? term.length;
+  }
+  return indices;
 }
 
 function loadBearingTerms(bare) {
@@ -4917,8 +5087,13 @@ const FORM_PREDICATES = {
     if (body[at] === '_') at = readTexArgument(body, at + 1)?.[1] ?? body.length;
     const argument = readNotationArgument(body, at);
     const written = argument ? `${argument[0]}${body.slice(argument[1])}` : body.slice(at);
+    // Nor may two numerals stand in one product of the argument:
+    // `\log_8(5x\cdot13y)`, `\log_8(x\cdot5\cdot y\cdot13)` and
+    // `\log_8(5xy13)` for `\log_8(65xy)` (writesScatteredNumerals,
+    // Precalculus knowledge checks re-review, October 12, 2026).
     return !writesNumeralPower(written) && !writesNumeralProduct(written)
       && !writesExponentArithmetic(written) && !writesUnreducedExponent(written)
+      && !writesScatteredNumerals(written)
       && termFractionsReduced(written) && numeralFractionsReduced(written);
   },
   'mixed-number': (latex) => {
@@ -5057,8 +5232,14 @@ const FORM_PREDICATES = {
       // shapes below are rejected only OUTSIDE a fraction term.
       if (/^\\[tdc]?frac/.test(flat.trim())) continue;
       // A radical multiplying a parenthesized group with a same-index
-      // radical distributes: `\sqrt6(1+3\sqrt6)`.
-      if (hasSameIndexPair && /[()]/.test(flat)) return false;
+      // radical distributes: `\sqrt6(1+3\sqrt6)`. Only radicals outside
+      // every radicand pair up here: a radical NESTED in another's radicand
+      // multiplies nothing, and the textbook's factored nested radical
+      // `\sqrt{2(2+\sqrt2)}` (sec 3π/8) graded `form` against
+      // `\sqrt{4+2\sqrt2}` where `\sqrt{2(2+x)}` passed (Precalculus
+      // knowledge checks re-review, October 12, 2026).
+      const outerIndices = outerRadicalIndices(flat);
+      if (outerIndices.length > new Set(outerIndices).size && /[()]/.test(flat)) return false;
       // A parenthesized group containing a radical, raised to a power, is an
       // unexpanded product: `(6-\sqrt5)^2` must not pass the form its own
       // expanded answer (`41-12\sqrt5`) declares.
@@ -5346,6 +5527,12 @@ const FORM_PREDICATES = {
       if (radicalConstants.has(signature)) return false;
       radicalConstants.add(signature);
     }
+    // …and two fractions over the same symbolic denominator are like terms
+    // the engine keeps apart: `\frac{x}{x^2-2}-\frac{4}{x^2-2}+\frac{5x+3}{(x^2-2)^2}`
+    // passed against the partial-fraction key `\frac{x-4}{x^2-2}+…`
+    // (writesSharedDenominator, Precalculus knowledge checks re-review,
+    // October 12, 2026).
+    if (writesSharedDenominator(bareLatex(latex))) return false;
     if (!termFractionsReduced(latex)) return false;
     let expr;
     try {
@@ -5458,6 +5645,12 @@ const FORM_PREDICATES = {
     if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
     if (writesNumeralProduct(bare) || writesExponentArithmetic(bare) || writesNumeralPower(bare)) return false;
     if (writesUnreducedExponent(bare) || writesImaginaryPower(bare) || writesPerfectNumeralRoot(bare)) return false;
+    // Two numeral coefficients in the one product (`5xy13` for `65xy`), and
+    // a parenthesized single term raised to a whole-number power — the
+    // binomial term `1716x^{14}(-\frac12)^6` and `\frac{429}{16}(x^2)^7` for
+    // `\frac{429x^{14}}{16}`, the numeral or nested power the engine folds
+    // (Precalculus knowledge checks re-review, October 12, 2026).
+    if (writesScatteredNumerals(bare) || writesPoweredSingleTermGroup(bare)) return false;
     // A coefficient fraction left unreduced is a division left undone:
     // `y=\frac{20}{4}x^2`, `\frac{20x^2}{4}` and `\frac{5}{1}x^2` passed
     // against `y=5x^2`, the variation constant not yet divided out
@@ -6960,7 +7153,6 @@ function sameWrittenQuantity(side, given) {
   }
 }
 
-const LABELLED_MEMBER = /^([a-zA-Z])\s*=(?![=<>])\s*([\s\S]+)$/;
 
 /**
  * The coordinates of a solution typed as labelled equations — `x=6, y=1`, or
@@ -6983,11 +7175,14 @@ function labelledCoordinates(raw, arity) {
   for (const reading of readings) {
     const labelled = reading.map((part) => part.trim().match(LABELLED_MEMBER));
     if (reading.length < 2 || labelled.some((match) => !match)) continue;
-    const letters = labelled.map((match) => match[1]);
+    const letters = labelled.map((match) => match[1].replace(/\s+/g, ''));
     if (new Set(letters).size !== letters.length) continue;
+    // A polar pair is keyed (r,θ), so `\theta=…, r=…` is the same pair.
+    const polar = letters.length === 2 && letters.includes('r') && letters.includes('\\theta');
     const ordered = letters.every((letter) => 'xyz'.includes(letter))
       ? [...labelled].sort((a, b) => a[1].localeCompare(b[1]))
-      : labelled;
+      : polar ? [...labelled].sort((a, b) => Number(b[1] === 'r') - Number(a[1] === 'r'))
+        : labelled;
     return ordered.map((match) => stripGroupingCommas(match[2].trim()));
   }
   return null;
@@ -7764,6 +7959,11 @@ function readsEquations(spec) {
 const GREEK_LABEL_LETTER = String.raw`\\(?:alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|rho|sigma|tau|upsilon|phi|varphi|chi|psi|omega)(?![a-zA-Z])`;
 const LABEL_LETTER = String.raw`(?:[a-zA-Z]|${GREEK_LABEL_LETTER})`;
 const SUBSCRIPTED_LETTER = String.raw`${LABEL_LETTER}(?:_(?:[a-zA-Z0-9]|\{\s*[a-zA-Z0-9]+\s*\}))?`;
+// A coordinate's label in labelledCoordinates(): one letter, or a Greek
+// one — the polar pair typed `r=9.8489,\theta=203.96^\circ` graded
+// `incorrect` against `(9.8489,203.96^\circ)` where `x=6, y=1` grades
+// against `(6,1)` (Precalculus knowledge checks re-review, October 12, 2026).
+const LABELLED_MEMBER = new RegExp(String.raw`^(${LABEL_LETTER})\s*=(?![=<>])\s*([\s\S]+)$`);
 const LEADING_VARIABLE_LABEL = new RegExp(String.raw`^\s*${SUBSCRIPTED_LETTER}\s*=(?![=<>])`);
 const TRAILING_VARIABLE_LABEL = new RegExp(String.raw`(?<![=<>!])=\s*${SUBSCRIPTED_LETTER}\s*$`);
 

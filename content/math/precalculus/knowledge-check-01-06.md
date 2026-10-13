@@ -35,66 +35,58 @@ No
 {{< fillin
   question="For $f(x)=-2x^2+3x$, evaluate $f(-3)$."
   answer="-27"
+  answerForm="decimal"
 >}}
 
 ### 1.2 Domain and Range
 
-{{< multiplechoice
-  question="Find the domain of $f(x)=\tfrac{x-3}{x^2-4x-12}$, in interval notation."
-  answer="$(-\infty,-2)\cup(-2,6)\cup(6,\infty)$"
+{{< fillin
+  question="Find the domain of $f(x)=\tfrac{x-3}{x^2-4x-12}$. Enter it in interval notation, joining the intervals with $\cup$."
+  answer="(-\infty,-2)\cup(-2,6)\cup(6,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,-2)\cup(-2,6)\cup(6,\infty)$"
 >}}
-$(-\infty,-2)\cup(6,\infty)$
-$(-2,6)$
-$(-\infty,-2)\cup(-2,6)\cup(6,\infty)$
-$(-\infty,6)\cup(6,\infty)$
-{{< /multiplechoice >}}
 
 ### 1.3 Rates of Change and Behavior of Graphs
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"A parabola opening upward with vertex at (2, −2), crossing the y-axis at (0, 2), falling from the upper left and rising to the upper right.","xMin":-2,"xMax":6,"yMin":-3,"yMax":7,"unit":36,"tickLabels":true,"tickStep":1,"quadratics":[{"a":1,"b":-4,"c":2}]}
+{"ariaLabel":"A parabola opening upward with vertex at (2, −2), crossing the y-axis at (0, 1.5).","xMin":-2,"xMax":6,"yMin":-3,"yMax":7,"unit":36,"tickLabels":true,"tickStep":1,"quadratics":[{"a":0.875,"b":-3.5,"c":1.5}]}
 {{< /apfigure >}}
 
-{{< multiplechoice
-  question="The graph above shows a function. On which interval is the function increasing?"
-  answer="$(2,\infty)$"
+{{< fillin
+  question="The graph above shows a function. On which interval is the function increasing? Enter the answer in interval notation."
+  answer="(2,\infty)"
+  answerForm="decimal"
+  answerDisplay="$(2,\infty)$"
 >}}
-$(-\infty,2)$
-$(2,\infty)$
-$(-\infty,\infty)$
-$(-2,\infty)$
-{{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Using the same graph, on which interval is the function decreasing?"
-  answer="$(-\infty,2)$"
+{{< fillin
+  question="Using the same graph, on which interval is the function decreasing? Enter the answer in interval notation."
+  answer="(-\infty,2)"
+  answerForm="decimal"
+  answerDisplay="$(-\infty,2)$"
 >}}
-$(2,\infty)$
-$(-\infty,\infty)$
-$(-2,\infty)$
-$(-\infty,2)$
-{{< /multiplechoice >}}
 
 ### 1.4 Composition of Functions
 
 {{< fillin
   question="Find $(f\circ g)(x)$ for $f(x)=3x+2$ and $g(x)=5-6x$."
   answer="17-18x"
-  answerForm="distributed"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$17-18x$"
 >}}
 
 {{< fillin
   question="Using the same functions, find $(g\circ f)(x)$."
   answer="-7-18x"
-  answerForm="distributed"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$-7-18x$"
 >}}
 
 ### 1.5 Transformation of Functions
 
 {{< multiplechoice
-  question="Is the function $f(x)=3x^4$ even, odd, or neither?"
+  question="Is the function $f(x)=-\tfrac{5}{x^2}+9x^6$ even, odd, or neither?"
   answer="even"
 >}}
 odd
@@ -103,7 +95,7 @@ even
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is the function $h(x)=\tfrac{1}{x}+3x$ even, odd, or neither?"
+  question="Is the function $f(x)=\tfrac{1}{x}$ even, odd, or neither?"
   answer="odd"
 >}}
 odd
@@ -117,30 +109,29 @@ even
   question="Solve $\lvert x+4\rvert=18$. Enter both solutions, separated by a comma."
   answer="-22,14"
   answerMode="unordered"
+  answerForm="decimal"
   answerDisplay="$x=-22$ or $x=14$"
 >}}
 
-{{< multiplechoice
-  question="Solve $\lvert 3x-2\rvert<7$, in interval notation."
-  answer="$(-\tfrac{5}{3},3)$"
+{{< fillin
+  question="Solve $\lvert 3x-2\rvert<7$. Enter the solution in interval notation."
+  answer="(-\frac{5}{3},3)"
+  answerForm="lowest-terms"
+  answerDisplay="$\left(-\tfrac{5}{3},3\right)$"
 >}}
-$(-\tfrac{5}{3},3)$
-$x\le-\tfrac{5}{3}$ or $x\ge3$
-$(-3,\tfrac{5}{3})$
-$[-\tfrac{5}{3},3]$
-{{< /multiplechoice >}}
 
 ### 1.7 Inverse Functions
 
 {{< fillin
   question="Find $f^{-1}(x)$ for $f(x)=9+10x$."
   answer="\frac{x-9}{10}"
-  answerDisplay="$f^{-1}(x)=\frac{x-9}{10}$"
+  answerDisplay="$f^{-1}(x)=\tfrac{x-9}{10}$"
 >}}
 
 {{< fillin
   question="If $f(5)=2$ for a one-to-one function $f$, find $f^{-1}(2)$."
   answer="5"
+  answerForm="decimal"
 >}}
 
 ## Chapter 2: Linear Functions
@@ -193,18 +184,20 @@ perpendicular
 {{< fillin
   question="A town's population increases at a constant rate. In 2010 the population was 55,000. By 2012 the population had increased to 76,000. If this trend continues, predict the population in 2016."
   answer="118000"
+  answerForm="decimal"
   answerDisplay="118,000"
 >}}
 
 {{< fillin
   question="The median home value in the Pima Central subdivision (adjusted for inflation) was \$32,000 in 1970 and \$85,000 in 2010. Assume the value changed linearly over that period. If this trend continues, what would be the median home value in Pima Central in 2015, in dollars?"
   answer="91625"
+  answerForm="decimal"
   answerDisplay="\$91,625"
 >}}
 
 ### 2.4 Fitting Linear Models to Data
 
-The table below shows a city's population, by year, over a ten-year span. Assume the population changed linearly.
+The table below shows a city's population, by year, from 1990 to 2010.
 
 | **Year** | 1990 | 1995 | 2000 | 2005 | 2010 |
 | :--- | ---: | ---: | ---: | ---: | ---: |
@@ -225,7 +218,7 @@ Interpolation
 {{< fillin
   question="Perform the indicated operation and express the result as a simplified complex number: $(4+3i)+(-2-5i)$."
   answer="2-2i"
-  answerForm="no-like-terms"
+  answerForm="expanded no-like-terms"
   answerDisplay="$2-2i$"
 >}}
 
@@ -233,20 +226,23 @@ Interpolation
   question="Solve $x^2-4x+5=0$ over the complex number system. Enter both solutions, separated by a comma."
   answer="2+i,2-i"
   answerMode="unordered"
+  answerForm="expanded no-like-terms"
   answerDisplay="$x=2+i$ or $x=2-i$"
 >}}
 
 ### 3.2 Quadratic Functions
 
 {{< fillin
-  question="A rectangular plot of land is to be enclosed by fencing. One side is along a river and so needs no fence. If the total fencing available is 600 meters, find the length of the side parallel to the river that gives the plot maximum area."
+  question="A rectangular plot of land is to be enclosed by fencing. One side is along a river and so needs no fence. If the total fencing available is 600 meters, find the length of the side parallel to the river that gives the plot maximum area. Give the length in meters."
   answer="300"
+  answerForm="decimal"
   answerDisplay="300 meters"
 >}}
 
 {{< fillin
-  question="A rectangular plot of land is to be enclosed by fencing. One side is along a river and so needs no fence. If the total fencing available is 600 meters, find the width of the plot (the length of each side perpendicular to the river) that gives the plot maximum area."
+  question="A rectangular plot of land is to be enclosed by fencing. One side is along a river and so needs no fence. If the total fencing available is 600 meters, find the width of the plot (the length of each side perpendicular to the river) that gives the plot maximum area. Give the width in meters."
   answer="150"
+  answerForm="decimal"
   answerDisplay="150 meters"
 >}}
 
@@ -263,25 +259,29 @@ Interpolation
 {{< fillin
   question="Identify the degree of the polynomial function $f(x)=4x^5-3x^3+2x-1$."
   answer="5"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Identify the leading coefficient of that same polynomial function, $f(x)=4x^5-3x^3+2x-1$."
   answer="4"
+  answerForm="decimal"
 >}}
 
 ### 3.4 Graphs of Polynomial Functions
 
 {{< fillin
-  question="Find all zeros of $f(x)=(x+3)^2(2x-1)(x+1)^3$. Enter all of them, separated by commas."
-  answer="-3,1/2,-1"
+  question="Find all zeros of $f(x)=(x+3)^2(2x-1)(x+1)^3$. Enter each zero once, separated by commas."
+  answer="-3,\frac{1}{2},-1"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-3$, $x=\tfrac12$, or $x=-1$"
 >}}
 
 {{< fillin
-  question="What is the multiplicity of the zero $x=-1$ for that same function, $f(x)=(x+3)^2(2x-1)(x+1)^3$?"
-  answer="3"
+  question="Find all zeros of $f(x)=2x^6-12x^5+18x^4$, noting multiplicities. What is the multiplicity of the zero $x=3$?"
+  answer="2"
+  answerForm="decimal"
 >}}
 
 ### 3.5 Dividing Polynomials
@@ -289,21 +289,23 @@ Interpolation
 {{< fillin
   question="Divide $x^3-2x^2+4x+4$ by $x-2$ using long division. Give the quotient."
   answer="x^2+4"
-  answerForm="expanded"
+  answerForm="expanded distributed no-like-terms"
   answerDisplay="$x^2+4$"
 >}}
 
 {{< fillin
   question="Give the remainder from that same division of $x^3-2x^2+4x+4$ by $x-2$."
   answer="12"
+  answerForm="decimal"
 >}}
 
 ### 3.6 Zeros of Polynomial Functions
 
 {{< fillin
   question="Use the Rational Zero Theorem to solve $2x^3-3x^2-18x-8=0$. Enter all solutions, separated by commas."
-  answer="-2,4,-1/2"
+  answer="-2,4,-\frac{1}{2}"
   answerMode="unordered"
+  answerForm="lowest-terms"
   answerDisplay="$x=-2$, $x=4$, or $x=-\tfrac12$"
 >}}
 
@@ -322,11 +324,13 @@ Interpolation
 {{< fillin
   question="Find the vertical asymptote of $f(x)=\tfrac{x+2}{x-5}$."
   answer="x=5"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Find the horizontal asymptote of that same function, $f(x)=\tfrac{x+2}{x-5}$."
   answer="y=1"
+  answerForm="decimal"
 >}}
 
 {{< graphplot
@@ -342,11 +346,12 @@ Interpolation
 {{< fillin
   question="Find the inverse of $f(x)=(x-2)^2$, given that its domain is restricted to $x\ge2$."
   answer="\sqrt{x}+2"
+  answerForm="simplified-radical no-like-terms"
   answerDisplay="$f^{-1}(x)=\sqrt{x}+2$"
 >}}
 
 {{< fillin
-  question="Find the inverse of $f(x)=\sqrt{4x+5}-3$."
+  question="Find the inverse of $f(x)=\sqrt{4x+5}-3$. Enter just the formula for $f^{-1}(x)$, without its domain."
   answer="\frac{(x+3)^2-5}{4}"
   answerDisplay="$f^{-1}(x)=\tfrac{(x+3)^2-5}{4},\ x\ge-3$"
 >}}
@@ -356,11 +361,13 @@ Interpolation
 {{< fillin
   question="$y$ varies directly as the square of $x$. If $x=3$ gives $y=36$, find $y$ when $x=4$."
   answer="64"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="$y$ varies jointly as the cube of $x$ and as $z$. If $x=1$ and $z=2$ give $y=6$, find $y$ when $x=2$ and $z=3$."
   answer="72"
+  answerForm="decimal"
 >}}
 
 ## Chapter 4: Exponential and Logarithmic Functions
@@ -373,12 +380,13 @@ Interpolation
 >}}
 exponential growth
 exponential decay
-neither, this is linear
+neither
 {{< /multiplechoice >}}
 
 {{< fillin
   question="Find an exponential equation that passes through the points $(2,2.25)$ and $(5,60.75)$."
   answer="0.25(3)^x"
+  answerForm="exponential-model"
   answerDisplay="$y=0.25(3)^x$"
 >}}
 
@@ -387,12 +395,14 @@ neither, this is linear
 {{< fillin
   question="What is the range of $f(x)=3.5(2)^x$? Write your answer in interval notation."
   answer="(0,\infty)"
+  answerForm="decimal"
   answerDisplay="$(0,\infty)$"
 >}}
 
 {{< fillin
   question="The graph of $f(x)=6.5^x$ is reflected about the $y$-axis and stretched vertically by a factor of $7$. What is the equation of the new function, $g(x)$?"
   answer="7(6.5)^{-x}"
+  answerForm="exponential-model"
   answerDisplay="$g(x)=7(6.5)^{-x}$"
 >}}
 
@@ -401,12 +411,13 @@ neither, this is linear
 {{< fillin
   question="Solve for $x$: $\log_{64}(x)=\tfrac{1}{3}$."
   answer="4"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Evaluate $\log(0.000001)$ without using a calculator."
   answer="-6"
-  answerForm="evaluated-logarithm"
+  answerForm="evaluated-logarithm decimal"
 >}}
 
 ### 4.4 Graphs of Logarithmic Functions
@@ -414,12 +425,14 @@ neither, this is linear
 {{< fillin
   question="What is the domain of $g(x)=\ln(4x+20)-17$? Write your answer in interval notation."
   answer="(-5,\infty)"
+  answerForm="decimal"
   answerDisplay="$(-5,\infty)$"
 >}}
 
 {{< fillin
-  question="What is the vertical asymptote of that same function, $g(x)=\ln(4x+20)-17$?"
+  question="What is the vertical asymptote of $g(x)=\ln(4x+20)-17$? Enter it as an equation."
   answer="x=-5"
+  answerForm="decimal"
   answerDisplay="$x=-5$"
 >}}
 
@@ -444,6 +457,7 @@ neither, this is linear
 {{< fillin
   question="Solve $\tfrac{125}{\left(\tfrac{1}{625}\right)^{-x-3}}=5^3$ for $x$."
   answer="-3"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -469,8 +483,6 @@ neither, this is linear
   answerDisplay="$3.43$ mg"
 >}}
 
-### 4.8 Fitting Exponential Models to Data
-
 {{< multiplechoice
   question="A table of values for $f(x)$ includes $(1,3.05)$, $(2,4.42)$, $(3,6.4)$, $(4,9.28)$, $(5,13.46)$, $(6,19.52)$, $(7,28.3)$, $(8,41.04)$, $(9,59.5)$, and $(10,86.28)$. Does this data best fit a linear, logarithmic, or exponential model?"
   answer="exponential"
@@ -478,6 +490,17 @@ neither, this is linear
 linear
 logarithmic
 exponential
+{{< /multiplechoice >}}
+
+### 4.8 Fitting Exponential Models to Data
+
+{{< multiplechoice
+  question="A table of values for $f(x)$ gives $(0.15,36.21)$, $(0.25,28.88)$, $(0.5,24.39)$, $(0.75,18.28)$, $(1,16.5)$, $(1.5,12.99)$, $(2,9.91)$, $(2.25,8.57)$, $(2.75,7.23)$, $(3,5.99)$, and $(3.5,4.81)$. Use a graphing utility to create a scatter diagram of the data. Is the data best described by an exponential, logarithmic, or logistic model?"
+  answer="logarithmic"
+>}}
+exponential
+logarithmic
+logistic
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -493,13 +516,13 @@ exponential
 
 {{< fillin
   question="Convert $-210^\circ$ to radians."
-  answer="-7\pi/6"
-  answerForm="radians"
+  answer="-\frac{7\pi}{6}"
+  answerForm="radians single-term"
   answerDisplay="$-\tfrac{7\pi}{6}$"
 >}}
 
 {{< fillin
-  question="Find the length of an arc in a circle of radius 7 meters subtended by a central angle of $85^\circ$. Round your answer to three decimal places."
+  question="Find the length of an arc in a circle of radius 7 meters subtended by a central angle of $85^\circ$. Give the length in meters, rounded to three decimal places."
   answer="10.385"
   answerForm="decimal"
   answerDisplay="$10.385$ meters"
@@ -508,46 +531,46 @@ exponential
 ### 5.2 Unit Circle: Sine and Cosine Functions
 
 {{< fillin
-  question="Find the exact value of $\sin\left(\tfrac{\pi}{3}\right)$."
-  answer="\sqrt3/2"
-  answerForm="evaluated-trig"
-  answerDisplay="$\tfrac{\sqrt3}{2}$"
+  question="State the reference angle for $\tfrac{3\pi}{4}$."
+  answer="\frac{\pi}{4}"
+  answerForm="radians single-term"
+  answerDisplay="$\tfrac{\pi}{4}$"
 >}}
 
 {{< fillin
-  question="State the reference angle for $\tfrac{3\pi}{4}$."
-  answer="\pi/4"
-  answerForm="radians"
-  answerDisplay="$\tfrac{\pi}{4}$"
+  question="Compute sine of $\tfrac{5\pi}{4}$. Enter the exact value."
+  answer="-\frac{\sqrt2}{2}"
+  answerForm="evaluated-trig simplified-radical"
+  answerDisplay="$-\tfrac{\sqrt2}{2}$"
 >}}
 
 ### 5.3 The Other Trigonometric Functions
 
 {{< fillin
-  question="Find the exact value of $\tan\left(\tfrac{\pi}{4}\right)$."
-  answer="1"
-  answerForm="evaluated-trig"
-  answerDisplay="$1$"
+  question="Use reference angles to evaluate $\sec(315^\circ)$. Enter the exact value."
+  answer="\sqrt2"
+  answerForm="evaluated-trig simplified-radical"
+  answerDisplay="$\sqrt2$"
 >}}
 
 {{< fillin
-  question="Use reference angles to evaluate $\sec(315^\circ)$."
-  answer="\sqrt2"
-  answerForm="evaluated-trig"
-  answerDisplay="$\sqrt2$"
+  question="If $\tan(t)=-0.6$, what is $\tan(-t)$?"
+  answer="0.6"
+  answerForm="decimal"
+  answerDisplay="$0.6$"
 >}}
 
 ### 5.4 Right Triangle Trigonometry
 
 {{< fillin
-  question="Fill in the missing angle, in degrees: $\cos\left(\tfrac{\pi}{2}\right)=\sin\left(\underline{\qquad}\right)$."
+  question="Fill in the missing angle, in degrees: $\cos\left(\tfrac{\pi}{2}\right)=\sin\left(\underline{\qquad}\right)$. Use the cofunction identity."
   answer="0^\circ"
   answerForm="degrees"
   answerDisplay="$0^\circ$"
 >}}
 
 {{< fillin
-  question="A 15-ft ladder leans against a building so that the angle between the ground and the ladder is $70^\circ$. How high does the ladder reach up the side of the building? Round to four decimal places."
+  question="A 15-ft ladder leans against a building so that the angle between the ground and the ladder is $70^\circ$. How high does the ladder reach up the side of the building, in feet? Round to four decimal places."
   answer="14.0954"
   answerForm="decimal"
   answerDisplay="$14.0954$ ft"
@@ -560,12 +583,14 @@ exponential
 {{< fillin
   question="Find the period of $y=\sin\left(\tfrac{\pi}{6}x+\pi\right)-3$."
   answer="12"
+  answerForm="decimal"
   answerDisplay="$12$"
 >}}
 
 {{< fillin
   question="Determine the phase shift for $y=\sin\left(\tfrac{\pi}{6}x+\pi\right)-3$ as a signed value (positive = right, negative = left)."
   answer="-6"
+  answerForm="decimal"
   answerDisplay="$-6$"
 >}}
 
@@ -573,14 +598,15 @@ exponential
 
 {{< fillin
   question="What is the period of $g(x)=3\tan(6x+42)$?"
-  answer="\pi/6"
-  answerForm="radians"
+  answer="\frac{\pi}{6}"
+  answerForm="radians single-term"
   answerDisplay="$\tfrac{\pi}{6}$"
 >}}
 
 {{< fillin
-  question="What is the horizontal shift of $g(x)=3\tan(6x+42)$?"
+  question="What is the horizontal shift of $g(x)=3\tan(6x+42)$? Enter it as a signed value (positive = right, negative = left)."
   answer="-7"
+  answerForm="decimal"
   answerDisplay="$-7$"
 >}}
 
@@ -588,14 +614,16 @@ exponential
 
 {{< fillin
   question="Find the exact value of $\cos^{-1}\left(\tfrac{\sqrt3}{2}\right)$."
-  answer="\pi/6"
-  answerForm="evaluated-trig radians"
+  answer="\frac{\pi}{6}"
+  answerForm="evaluated-trig radians single-term"
   answerDisplay="$\tfrac{\pi}{6}$"
 >}}
 
 {{< fillin
   question="Find the exact value of $\tan\left(\cos^{-1}\left(\tfrac{5}{13}\right)\right)$."
-  answer="12/5"
-  answerForm="evaluated-trig"
+  answer="\frac{12}{5}"
+  answerForm="evaluated-trig lowest-terms"
   answerDisplay="$\tfrac{12}{5}$"
 >}}
+
+<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/precalculus-2e/pages/1-review-exercises) of Precalculus 2e by Jay Abramson, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: selected questions from each chapter's Review Exercises, with a few drawn from the Practice Tests (substituting other questions where a Review Exercise repeated one on the section page or gave away another question's answer), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises or kept a single part of them, and rephrased explanation, word-answer, and categorical questions as value, interval-notation, and multiple-choice questions, with unit, exact-value, and slope-intercept-form wording added where the source left the form open. Graphing questions are drawn on an interactive grid, and the graph the source prints beside its increasing-and-decreasing question is recreated as an accessible inline figure. One correction: the Chapter 4 drug-decay question gives the dose in milligrams, so its answer is $3.43$ mg, where the source prompt asks for “the nearest hundredth of a gram” and its Answer Key prints “3.43 g”. All other answers come from the book's Answer Key.</small>

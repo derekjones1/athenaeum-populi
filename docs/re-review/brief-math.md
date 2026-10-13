@@ -431,6 +431,30 @@ draws the same boundary, so the fill-in is read off them. Pose the fill-in
 on a sibling exercise whose boundary is not drawn (Precalculus 9.3's
 $x^2+y<9$ vertex → $x^2+y^2<4$ radius, October 7, 2026).
 
+Since the Precalculus knowledge-check re-review (October 12, 2026):
+`single-logarithm` and `single-term` refuse two numeral coefficients left in
+one product (`\log_8(5x\cdot13y)`, `5xy13` for `65xy`); `no-like-terms`
+reads two fractions over the same variable denominator as like terms
+(`\frac{x}{x^2-2}-\frac{4}{x^2-2}` for `\frac{x-4}{x^2-2}`; numeral
+denominators such as `\frac{x}{2}+\frac12` are left alone); `single-term`
+refuses a parenthesized term raised to a whole power
+(`1716x^{14}(-\frac12)^6`, `\frac{429}{16}(x^2)^7`), so a binomial-term key
+takes `single-term` alone; a list of bare numbers or numeral fractions with
+a unit word typed after it reports `unit` (`3,2,\frac12 Hz`);
+`simplified-radical` takes a factored radicand whose factor is not a perfect
+square (`\sqrt{2(2+\sqrt2)}` for `\sqrt{4+2\sqrt2}`; `\sqrt{4(1+\sqrt2)}` is
+still `form`); a Greek letter is a coordinate label (`r=9.85,\theta=204^\circ`
+grades against `(9.85,204^\circ)` in either order); and `\mathbf{i}`,
+`\mathbf{j}` (`\boldsymbol`, `\bm`) around one letter read as the plain
+letter. A polar-form key has no token (math.md's notation table). New lint:
+`\sqrt` followed by two or more unbraced digits (`\sqrt17` renders and grades
+as $\sqrt1\,7$) is an error; `\sqrt3x` stays legal (it is $\sqrt3\,x$).
+Knowledge-check lesson: a check item whose stem says "that same sequence /
+function" after a yes/no multiple choice assumes the MC's answer — re-pose
+it in the source's own wording or on another keyed exercise (Precalculus
+11.2, 11.3); and a `\sqrt` key typed without braces around a two-digit
+radicand graded a wrong value correct (9.3) — the lint now refuses it.
+
 Gate traps (Elementary Algebra chapter 1, September 27, 2026): the source-key
 matcher in `verify-section` compares magnitudes, so an item whose stem prints
 `$-10$` in the wording of a +10 source item pairs with it and fails

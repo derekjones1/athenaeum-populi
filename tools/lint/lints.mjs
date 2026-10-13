@@ -373,6 +373,9 @@ function controlSequenceStarts(source) {
  * environments. `\\` is the row separator inside one and an escaping bug
  * outside one, and a single span can hold both.
  */
+// `\sqrt` (or `\sqrt[n]`) followed by two or more digits without braces.
+const UNBRACED_MULTI_DIGIT_RADICAND = /\\sqrt(?![a-zA-Z])\s*(?:\[[^\]]*\]\s*)?\d{2,}/;
+
 function blankMathEnvironments(source, blank) {
   let out = source;
   let depth = 0;
@@ -822,10 +825,7 @@ export function unworkedKey(answer) {
  * other page now). Each row deletes its entry when it closes; the last row
  * deletes the list.
  */
-export const VALUE_FORM_SWEEP_PENDING = Object.freeze([
-  'math/precalculus/knowledge-check-01-06.md',
-  'math/precalculus/knowledge-check-07-12.md',
-]);
+export const VALUE_FORM_SWEEP_PENDING = Object.freeze([]);
 
 /**
  * Standalone values printed in a fillin question, for the trivial-answer
@@ -1745,6 +1745,16 @@ export function lintHugo(src, filename = '', options = {}) {
       err(span.index + (span.display ? 2 : 1) + m.index, `bare \`${m[1]}\` in math — KaTeX sets it as italic letters; write \`\\${m[1]}\``);
     }
   }
+  // An unbraced multi-digit radicand in page math — question, hint,
+  // answerDisplay, options — renders `\sqrt17` as √1 followed by 7 and
+  // never throws (the fill-in `answer` key, bare TeX, is read in the fill-in
+  // rules). A digit then a letter (`\sqrt3x`) is √3·x, the meaning every
+  // corpus use intends, and is left alone.
+  for (const span of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
+    for (const m of span.tex.matchAll(new RegExp(UNBRACED_MULTI_DIGIT_RADICAND.source, 'g'))) {
+      err(span.index + (span.display ? 2 : 1) + m.index, `unbraced multi-digit radicand \`${m[0]}\` in math — TeX takes one token, so \`\\sqrt17\` renders √1 followed by 7; write \\sqrt{17}`);
+    }
+  }
   // A sign spaced as subtraction. KaTeX's `|` is an ORDINARY symbol, so the
   // minus after the bar that opens an absolute value is set as a binary
   // operator: `$|-5|$` renders "| − 5|" and `$-|-9|$` "−| − 9|". It never
@@ -2571,6 +2581,14 @@ export function lintHugo(src, filename = '', options = {}) {
     if (params.answer && /\^\d{2,}/.test(params.answer)) {
       const shown = params.answer.match(/\S*\^\d{2,}\S*/)[0];
       err(index, `${where}: answer ${JSON.stringify(shown)} has an unbraced multi-digit exponent — TeX reads \`^10\` as \`^1\` followed by \`0\`, so it grades as a different value; write y^{10}`);
+    }
+    // ---- unbraced multi-digit radicand: the same defect under a radical.
+    // `\sqrt17` is `\sqrt1` followed by `7` — TeX takes one token — so it
+    // renders √1·7 and grades as 7; a KC 07-12 key shipped it (Precalculus
+    // knowledge checks re-review, October 12, 2026). Page math is read below.
+    if (params.answer && UNBRACED_MULTI_DIGIT_RADICAND.test(params.answer)) {
+      const shown = params.answer.match(UNBRACED_MULTI_DIGIT_RADICAND)[0];
+      err(index, `${where}: answer ${JSON.stringify(shown)} has an unbraced multi-digit radicand — TeX reads \`\\sqrt17\` as \`\\sqrt1\` followed by \`7\`, so it renders and grades as a different value; write \\sqrt{17}`);
     }
     if (/\\ne(?:q)?\b/.test(params.answer || '')) {
       err(index, `${where}: answer is a true/false statement (contains \\neq) — ungradeable; ask for a value or use multiplechoice`);

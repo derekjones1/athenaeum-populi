@@ -3,8 +3,9 @@
 Bring every finished book to the standard Anatomy and Physiology 2e
 chapters 1–2 set *(September 22, 2026)*, one chapter per request, ticked
 off in [tracker.md](tracker.md). Biology 2e and Microbiology are done
-(September 24, 2026; their rows are in `docs/history/`); the four math
-books remain. The bar is "ideal": a learner can genuinely learn the topic
+(September 24, 2026; their rows are in `docs/history/`), and the four math
+books' chapter and knowledge-check rows closed on October 12, 2026 with the
+Precalculus checks; the figure conversion rows remain. The bar is "ideal": a learner can genuinely learn the topic
 from the page. When every row of a book is `[x]`, add one line under the
 book's subject playbook heading: "Re-reviewed to the A&P standard,
 completed <date>."

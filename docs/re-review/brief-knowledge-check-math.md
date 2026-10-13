@@ -70,7 +70,15 @@ these differences:
   Practice Test (never an end-of-section exercise — those belong to the
   section page); grep the whole check and the section page for its numbers.
 - **Footer:** the check's `Changes:` clause stays true (odd/even key parity,
-  Review-Exercise substitution, conversions).
+  Review-Exercise substitution, conversions). A check page without a
+  `<small>` provenance footer at all (both Precalculus checks, October 12,
+  2026) gets one at close, written by the parent: every fixer ends its
+  report with a `## Footer facts` list (each conversion, substitution,
+  split or merge, corrected key, or graph-read key, one line with the source
+  exercise id), a Sonnet agent drafts the two footers from those lists in
+  the style of the other books' checks, and the parent edits and appends
+  them after the second checker and the figure checker have finished (the
+  footer must stay the page's last block).
 - Check with `npm run verify-section -- <check page path>` and `npm run
   lint` (errors from chapters outside yours may be another agent's
   in-flight edit — re-run once, and report rather than fix them).

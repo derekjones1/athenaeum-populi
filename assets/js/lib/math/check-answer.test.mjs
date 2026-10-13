@@ -4510,3 +4510,66 @@ test('G2: solved: takes a single-letter variable, so solved:a_n is an unknown to
   assert.equal(parseAnswerForm('solved:a_n no-like-terms').valid, false);
   assert.deepEqual(parseAnswerForm('solved:a_n no-like-terms').unknown, ['solved:a_n']);
 });
+
+// Precalculus knowledge checks re-review (October 12, 2026): grader gaps G1, …
+const precalculusKnowledgeChecks = [
+  // G1: two numerals in one product of a logarithm's argument are unworked
+  ['\\log_8(5x\\cdot13y)', '\\log_8(65xy)', 'single-logarithm', 'form'],
+  ['\\log_8(x\\cdot5\\cdot y\\cdot13)', '\\log_8(65xy)', 'single-logarithm', 'form'],
+  ['\\log_8(5xy13)', '\\log_8(65xy)', 'single-logarithm', 'form'],
+  ['\\log_8(65xy)', '\\log_8(65xy)', 'single-logarithm', 'correct'],
+  ['\\log_8(65yx)', '\\log_8(65xy)', 'single-logarithm', 'correct'],
+  ['\\log_8 65xy', '\\log_8(65xy)', 'single-logarithm', 'correct'],
+  ['\\log(2x+3)', '\\log(2x+3)', 'single-logarithm', 'correct'],
+  ['\\log_2(x^3(x-1)^2)', '\\log_2(x^3(x-1)^2)', 'single-logarithm', 'correct'],
+  // …and so does `single-term`
+  ['5xy13', '65xy', 'single-term', 'form'],
+  ['65xy', '65xy', 'single-term', 'correct'],
+  ['2\\frac{1}{2}x', '\\frac52x', 'single-term', 'correct'],
+  ['\\frac{x^{1/2}}{3}', '\\frac{x^{1/2}}{3}', 'single-term', 'correct'],
+  // G2: two fractions over one symbolic denominator are like terms
+  ['\\frac{x}{x^2-2}-\\frac{4}{x^2-2}+\\frac{5x+3}{(x^2-2)^2}', '\\frac{x-4}{x^2-2}+\\frac{5x+3}{(x^2-2)^2}', 'expanded no-like-terms', 'form'],
+  ['\\frac{x-4}{x^2-2}+\\frac{5x+3}{(x^2-2)^2}', '\\frac{x-4}{x^2-2}+\\frac{5x+3}{(x^2-2)^2}', 'expanded no-like-terms', 'correct'],
+  ['\\frac{5x+3}{(x^2-2)^2}+\\frac{x-4}{x^2-2}', '\\frac{x-4}{x^2-2}+\\frac{5x+3}{(x^2-2)^2}', 'expanded no-like-terms', 'correct'],
+  ['\\frac{x}{2}+\\frac{1}{2}', '\\frac{x}{2}+\\frac{1}{2}', 'no-like-terms', 'correct'],
+  // G3: a fraction list member with a unit word reports `unit`
+  ['3,2,\\frac{1}{2} Hz', '3,2,\\frac{1}{2}', 'lowest-terms', 'unit'],
+  ['3,2,0.5 Hz', '3,2,\\frac{1}{2}', 'lowest-terms', 'unit'],
+  ['3,2,\\frac{1}{2}\\text{ Hz}', '3,2,\\frac{1}{2}', 'lowest-terms', 'unit'],
+  ['3,2,\\frac{1}{3} Hz', '3,2,\\frac{1}{2}', 'lowest-terms', 'incorrect'],
+  ['3,2,\\frac{1}{2}', '3,2,\\frac{1}{2}', 'lowest-terms', 'correct'],
+  // G4: a radical nested in a factored radicand multiplies nothing
+  ['\\sqrt{2(2+\\sqrt2)}', '\\sqrt{4+2\\sqrt2}', 'evaluated-trig simplified-radical', 'correct'],
+  ['\\sqrt{4+2\\sqrt2}', '\\sqrt{4+2\\sqrt2}', 'evaluated-trig simplified-radical', 'correct'],
+  ['\\sqrt{4(1+\\sqrt2)}', '2\\sqrt{1+\\sqrt2}', 'simplified-radical', 'form'],
+  ['\\sqrt6(1+3\\sqrt6)', '\\sqrt6+18', 'simplified-radical', 'form'],
+  // G5: a powered single-term group under `single-term`
+  ['1716x^{14}\\left(-\\frac12\\right)^6', '\\frac{429x^{14}}{16}', 'single-term', 'form'],
+  ['\\frac{429}{16}(x^2)^7', '\\frac{429x^{14}}{16}', 'single-term', 'form'],
+  ['(3x)^2', '9x^2', 'single-term', 'form'],
+  ['\\frac{429}{16}x^{14}', '\\frac{429x^{14}}{16}', 'single-term', 'correct'],
+  ['\\frac{429x^{14}}{16}', '\\frac{429x^{14}}{16}', 'single-term', 'correct'],
+  // G6: the polar pair's missing degree mark is `form` (already held)
+  ['(9.8489,203.96)', '(9.8489,203.96^\\circ)', 'degrees', 'form'],
+  ['(9.8489,203.96^\\circ)', '(9.8489,203.96^\\circ)', 'degrees', 'correct'],
+  // G7: Greek coordinate labels, and a polar pair's (r,θ) order
+  ['r=9.8489,\\theta=203.96^\\circ', '(9.8489,203.96^\\circ)', 'degrees', 'correct'],
+  ['\\theta=203.96^\\circ,r=9.8489', '(9.8489,203.96^\\circ)', 'degrees', 'correct'],
+  ['r=9.8489,\\theta=203.96', '(9.8489,203.96^\\circ)', 'degrees', 'form'],
+  ['r=9.8489,\\theta=204^\\circ', '(9.8489,203.96^\\circ)', 'degrees', 'incorrect'],
+  // G8: bold basis letters are the letters
+  ['-\\frac{3\\sqrt{10}}{10}\\mathbf{i}-\\frac{\\sqrt{10}}{10}\\mathbf{j}', '-\\frac{3\\sqrt{10}}{10}i-\\frac{\\sqrt{10}}{10}j', 'expanded simplified-radical no-like-terms', 'correct'],
+  ['-\\frac{3\\sqrt{10}}{10}\\mathbf i-\\frac{\\sqrt{10}}{10}\\mathbf j', '-\\frac{3\\sqrt{10}}{10}i-\\frac{\\sqrt{10}}{10}j', 'expanded simplified-radical no-like-terms', 'correct'],
+  ['-\\frac{3}{\\sqrt{10}}\\mathbf{i}-\\frac{1}{\\sqrt{10}}\\mathbf{j}', '-\\frac{3\\sqrt{10}}{10}i-\\frac{\\sqrt{10}}{10}j', 'expanded simplified-radical no-like-terms', 'form'],
+  ['\\sin\\mathbf{x}', '\\sin x', undefined, 'correct'],
+  // G9: a polar-form key passes its rectangular value and an out-of-range
+  // angle (documented limit — no polar-form token)
+  ['-\\frac{5\\sqrt2}{2}+\\frac{5\\sqrt2}{2}i,\\frac{5\\sqrt2}{2}-\\frac{5\\sqrt2}{2}i', '5(\\cos\\frac{3\\pi}{4}+i\\sin\\frac{3\\pi}{4}),5(\\cos\\frac{7\\pi}{4}+i\\sin\\frac{7\\pi}{4})', 'simplified-radical no-like-terms', 'correct'],
+];
+test('Precalculus knowledge-check grader gaps', async (t) => {
+  for (const [typed, key, form, expected] of precalculusKnowledgeChecks) {
+    await t.test(`${typed}  vs  ${key}  [${form ?? ''}]`, () => {
+      assert.equal(checkAnswer(typed, key, { form }), expected);
+    });
+  }
+});

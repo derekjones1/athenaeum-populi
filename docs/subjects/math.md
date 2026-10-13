@@ -10,6 +10,7 @@ section.
 Prealgebra 2e re-reviewed to the A&P standard, completed September 27, 2026.
 Elementary Algebra 2e re-reviewed to the A&P standard, completed September 28, 2026.
 Intermediate Algebra 2e re-reviewed to the A&P standard, completed October 4, 2026.
+Precalculus 2e re-reviewed to the A&P standard, completed October 12, 2026.
 
 ## 2. Writing patterns
 
@@ -785,6 +786,7 @@ or extend `preprocess()` first and add the test with it.
 | `2(4i-3j)-(2i-j)` (an unsimplified vector combination) | vectors (Precalculus §8.8) | `i` is the engine's imaginary unit and its complex arithmetic is wrong (see `tools/verify/verify-answers.mjs` `hasComplexDivision`), so a parenthesized combination grades `incorrect` against its keyed result. The distributed spelling (`8i-6j-2i+j`) and the simplified result grade correct — key vector results as bare $ai+bj$. Folding `i`/`j` into basis symbols would make every "compute $2\mathbf{u}-\mathbf{v}$" item passable by retyping its prompt, so it would need a form token on each of those keys |
 | `D`, `N` as variables | `D` for distance, `N` for a count | reserved by the engine as the derivative and numeric-evaluation operators; any answer using them is ungradeable. Rename the variable (`d`, `n`). |
 | `x'`, `x^{\prime}` (a primed variable) | rotated axes (Precalculus §10.4) | **taken since August 28, 2026**, by folding: `preprocess()` rewrites every spelling of a primed letter — `x'`, MathLive's `x^{\prime}` / `x^{\doubleprime}` / `x^{\prime2}`, `\theta'` — onto one subscripted symbol (`x_{p}`, `x_{pp}`) on both sides, so a primed answer grades on value and shape. A genuine `f'(x)` derivative is folded too (the symbol $f_p$ applied to $x$), so derivative answers key the resulting expression. Since August 29, 2026 a learner's written label is stripped before grading the way `f(x)=` is: `f'(x)=2x+3`, `f^{\prime}\left(x\right)=2x+3`, `f'(3)=6`, `f(2)=5` (a numeral argument is a label, never the output $y$), and `\frac{dy}{dx}=2x+3` all grade on the value that follows |
+| a polar-form key `r(\cos\theta+i\sin\theta)` (products, quotients, roots; Precalculus §8.5) | complex numbers in polar form | **no `polar-form` token** (ruling, October 12, 2026): the key grades by value, so the rectangular $a+bi$ entry and a coterminal argument outside $[0,2\pi)$ both grade `correct`; the 8.5 page and the chapter 7–12 knowledge check accept that and say so in their footers |
 
 `^\circ` is exact: the engine converts it, so `30^\circ` and `\frac{\pi}{6}`
 are the same value and each is accepted for the other. A prompt that must
