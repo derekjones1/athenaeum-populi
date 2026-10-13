@@ -676,63 +676,9 @@ $$\frac{7}{4} = 1\tfrac{3}{4} \qquad -\frac{9}{2} = -4\tfrac{1}{2} \qquad \frac{
 
 The number line below shows all seven points plotted.
 
-<svg viewBox="0 0 700 104" role="img" aria-label="A number line from −6 to 6 with seven points plotted and labeled: −5; −9/2, halfway between −5 and −4; −4/5, between −1 and 0; 1/5, between 0 and 1; 7/4, between 1 and 2; 8/3, between 2 and 3; and 3." style="max-width: 700px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="74" x2="680" y2="74" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,74 30,69 30,79" fill="currentColor" />
-  <polygon points="680,74 670,69 670,79" fill="currentColor" />
-  <line x1="50" y1="69" x2="50" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="50" y="96" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
-  <line x1="100" y1="69" x2="100" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="100" y="96" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="150" y1="69" x2="150" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="150" y="96" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="200" y1="69" x2="200" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="200" y="96" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="250" y1="69" x2="250" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="250" y="96" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="300" y1="69" x2="300" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="300" y="96" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="350" y1="69" x2="350" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="350" y="96" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="400" y1="69" x2="400" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="400" y="96" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="450" y1="69" x2="450" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="450" y="96" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="500" y1="69" x2="500" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="500" y="96" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="550" y1="69" x2="550" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="550" y="96" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="600" y1="69" x2="600" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="600" y="96" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <line x1="650" y1="69" x2="650" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="650" y="96" text-anchor="middle" font-size="12" fill="currentColor">6</text>
-  <circle cx="100" cy="74" r="4" fill="currentColor" />
-  <circle cx="125" cy="74" r="4" fill="currentColor" />
-  <circle cx="310" cy="74" r="4" fill="currentColor" />
-  <circle cx="360" cy="74" r="4" fill="currentColor" />
-  <circle cx="437.5" cy="74" r="4" fill="currentColor" />
-  <circle cx="483.33" cy="74" r="4" fill="currentColor" />
-  <circle cx="500" cy="74" r="4" fill="currentColor" />
-  <text x="100" y="58" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <text x="125" y="46" text-anchor="middle" font-size="11" fill="currentColor">9</text>
-  <line x1="120" y1="49" x2="130" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="125" y="60" text-anchor="middle" font-size="11" fill="currentColor">2</text>
-  <text x="116" y="53" text-anchor="middle" font-size="11" fill="currentColor">−</text>
-  <text x="310" y="46" text-anchor="middle" font-size="11" fill="currentColor">4</text>
-  <line x1="305" y1="49" x2="315" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="310" y="60" text-anchor="middle" font-size="11" fill="currentColor">5</text>
-  <text x="301" y="53" text-anchor="middle" font-size="11" fill="currentColor">−</text>
-  <text x="360" y="46" text-anchor="middle" font-size="11" fill="currentColor">1</text>
-  <line x1="355" y1="49" x2="365" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="360" y="60" text-anchor="middle" font-size="11" fill="currentColor">5</text>
-  <text x="437.5" y="46" text-anchor="middle" font-size="11" fill="currentColor">7</text>
-  <line x1="432.5" y1="49" x2="442.5" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="437.5" y="60" text-anchor="middle" font-size="11" fill="currentColor">4</text>
-  <text x="483.33" y="46" text-anchor="middle" font-size="11" fill="currentColor">8</text>
-  <line x1="478.33" y1="49" x2="488.33" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="483.33" y="60" text-anchor="middle" font-size="11" fill="currentColor">3</text>
-  <text x="500" y="58" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −6 to 6 with seven points plotted: −5; −9/2, halfway between −5 and −4; −4/5, between −1 and 0; 1/5, between 0 and 1; 7/4, between 1 and 2; 8/3, between 2 and 3; and 3. The five fractions are labeled above their points.","min":-6,"max":6,"width":528,"points":[{"at":-5},{"at":-4.5,"label":"−9/2"},{"at":-0.8,"label":"−4/5"},{"at":0.2,"label":"1/5"},{"at":1.75,"label":"7/4"},{"at":2.6666666666666665,"label":"8/3"},{"at":3}]}
+{{< /apfigure >}}
 
 **Example.** Locate and label the following on a number line: $4$,
 $\tfrac{3}{4}$, $-\tfrac{1}{4}$, $-3$, $\tfrac{6}{5}$, $-\tfrac{5}{2}$, and
@@ -745,63 +691,9 @@ improper fractions, convert to mixed numbers first: $\tfrac{6}{5} = 1\tfrac{1}{5
 $-\tfrac{5}{2} = -2\tfrac{1}{2}$, and $\tfrac{7}{3} = 2\tfrac{1}{3}$. Then plot
 each in its interval.
 
-<svg viewBox="0 0 700 104" role="img" aria-label="A number line from −6 to 6 with seven points plotted and labeled: −3; −5/2, halfway between −3 and −2; −1/4, between −1 and 0; 3/4, between 0 and 1; 6/5, between 1 and 2; 7/3, between 2 and 3; and 4." style="max-width: 700px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="74" x2="680" y2="74" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,74 30,69 30,79" fill="currentColor" />
-  <polygon points="680,74 670,69 670,79" fill="currentColor" />
-  <line x1="50" y1="69" x2="50" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="50" y="96" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
-  <line x1="100" y1="69" x2="100" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="100" y="96" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="150" y1="69" x2="150" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="150" y="96" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="200" y1="69" x2="200" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="200" y="96" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="250" y1="69" x2="250" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="250" y="96" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="300" y1="69" x2="300" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="300" y="96" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="350" y1="69" x2="350" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="350" y="96" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="400" y1="69" x2="400" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="400" y="96" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="450" y1="69" x2="450" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="450" y="96" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="500" y1="69" x2="500" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="500" y="96" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="550" y1="69" x2="550" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="550" y="96" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="600" y1="69" x2="600" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="600" y="96" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <line x1="650" y1="69" x2="650" y2="79" stroke="currentColor" stroke-width="1.5" />
-  <text x="650" y="96" text-anchor="middle" font-size="12" fill="currentColor">6</text>
-  <circle cx="200" cy="74" r="4" fill="currentColor" />
-  <circle cx="225" cy="74" r="4" fill="currentColor" />
-  <circle cx="337.5" cy="74" r="4" fill="currentColor" />
-  <circle cx="387.5" cy="74" r="4" fill="currentColor" />
-  <circle cx="410" cy="74" r="4" fill="currentColor" />
-  <circle cx="466.67" cy="74" r="4" fill="currentColor" />
-  <circle cx="550" cy="74" r="4" fill="currentColor" />
-  <text x="200" y="58" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <text x="225" y="46" text-anchor="middle" font-size="11" fill="currentColor">5</text>
-  <line x1="220" y1="49" x2="230" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="225" y="60" text-anchor="middle" font-size="11" fill="currentColor">2</text>
-  <text x="216" y="53" text-anchor="middle" font-size="11" fill="currentColor">−</text>
-  <text x="337.5" y="46" text-anchor="middle" font-size="11" fill="currentColor">1</text>
-  <line x1="332.5" y1="49" x2="342.5" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="337.5" y="60" text-anchor="middle" font-size="11" fill="currentColor">4</text>
-  <text x="328.5" y="53" text-anchor="middle" font-size="11" fill="currentColor">−</text>
-  <text x="387.5" y="46" text-anchor="middle" font-size="11" fill="currentColor">3</text>
-  <line x1="382.5" y1="49" x2="392.5" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="387.5" y="60" text-anchor="middle" font-size="11" fill="currentColor">4</text>
-  <text x="410" y="46" text-anchor="middle" font-size="11" fill="currentColor">6</text>
-  <line x1="405" y1="49" x2="415" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="410" y="60" text-anchor="middle" font-size="11" fill="currentColor">5</text>
-  <text x="466.67" y="46" text-anchor="middle" font-size="11" fill="currentColor">7</text>
-  <line x1="461.67" y1="49" x2="471.67" y2="49" stroke="currentColor" stroke-width="1" />
-  <text x="466.67" y="60" text-anchor="middle" font-size="11" fill="currentColor">3</text>
-  <text x="550" y="58" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −6 to 6 with seven points plotted: −3; −5/2, halfway between −3 and −2; −1/4, between −1 and 0; 3/4, between 0 and 1; 6/5, between 1 and 2; 7/3, between 2 and 3; and 4. The five fractions are labeled above their points; the labels 3/4 and 6/5 sit apart, each joined to its point by a leader line.","min":-6,"max":6,"width":528,"points":[{"at":-3},{"at":-2.5,"label":"−5/2"},{"at":-0.25,"label":"−1/4"},{"at":0.75,"label":"3/4","labelNudge":[-12,0],"leader":true},{"at":1.2,"label":"6/5","labelNudge":[12,0],"leader":true},{"at":2.3333333333333335,"label":"7/3"},{"at":4}]}
+{{< /apfigure >}}
 
 **Example.** Locate on the number line: (a) $0.4$, (b) $-0.74$.
 
@@ -813,7 +705,7 @@ $0.0$ and $1$ as $1.0$, so that the numbers are consistently in tenths. Finally,
 mark $0.4$ on the number line.
 
 {{< apfigure kind="numberline" >}}
-{"ariaLabel":"A number line from 0.0 to 1.0 labeled in steps of 0.1. A point is plotted at 0.4.","min":0,"max":1,"step":0.1,"points":[{"at":0.4}]}
+{"ariaLabel":"A number line from 0.0 to 1.0 labeled in steps of 0.1. A point is plotted at 0.4.","min":0,"max":1,"step":0.1,"width":528,"points":[{"at":0.4}]}
 {{< /apfigure >}}
 
 (b) The decimal $-0.74$ is equivalent to $-\tfrac{74}{100}$, so it is located
@@ -821,125 +713,9 @@ between $0$ and $-1$. On a number line, mark off the hundredths in the interval
 between $0$ and $-1$, labeling every tenth, and plot $-0.74$ between $-0.80$ and
 $-0.70$, four hundredths to the left of $-0.70$.
 
-<svg viewBox="0 0 620 76" role="img" aria-label="A number line from −1.00 to 0.00 with a tick at every hundredth, labeled at every tenth. A point labeled −0.74 is plotted four hundredths to the left of −0.70, between −0.80 and −0.70." style="max-width: 620px; display: block; margin: 1.5rem auto">
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,40 30,35 30,45" fill="currentColor" />
-  <polygon points="600,40 590,35 590,45" fill="currentColor" />
-  <line x1="65" y1="37" x2="65" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="70" y1="37" x2="70" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="75" y1="37" x2="75" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="80" y1="37" x2="80" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="85" y1="37" x2="85" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="90" y1="37" x2="90" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="95" y1="37" x2="95" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="100" y1="37" x2="100" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="105" y1="37" x2="105" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="115" y1="37" x2="115" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="120" y1="37" x2="120" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="125" y1="37" x2="125" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="130" y1="37" x2="130" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="135" y1="37" x2="135" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="140" y1="37" x2="140" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="145" y1="37" x2="145" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="150" y1="37" x2="150" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="155" y1="37" x2="155" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="165" y1="37" x2="165" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="170" y1="37" x2="170" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="175" y1="37" x2="175" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="180" y1="37" x2="180" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="185" y1="37" x2="185" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="190" y1="37" x2="190" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="195" y1="37" x2="195" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="200" y1="37" x2="200" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="205" y1="37" x2="205" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="215" y1="37" x2="215" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="220" y1="37" x2="220" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="225" y1="37" x2="225" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="230" y1="37" x2="230" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="235" y1="37" x2="235" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="240" y1="37" x2="240" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="245" y1="37" x2="245" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="250" y1="37" x2="250" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="255" y1="37" x2="255" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="265" y1="37" x2="265" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="270" y1="37" x2="270" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="275" y1="37" x2="275" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="280" y1="37" x2="280" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="285" y1="37" x2="285" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="290" y1="37" x2="290" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="295" y1="37" x2="295" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="300" y1="37" x2="300" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="305" y1="37" x2="305" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="315" y1="37" x2="315" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="320" y1="37" x2="320" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="325" y1="37" x2="325" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="330" y1="37" x2="330" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="335" y1="37" x2="335" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="340" y1="37" x2="340" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="345" y1="37" x2="345" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="350" y1="37" x2="350" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="355" y1="37" x2="355" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="365" y1="37" x2="365" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="370" y1="37" x2="370" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="375" y1="37" x2="375" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="380" y1="37" x2="380" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="385" y1="37" x2="385" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="390" y1="37" x2="390" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="395" y1="37" x2="395" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="400" y1="37" x2="400" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="405" y1="37" x2="405" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="415" y1="37" x2="415" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="420" y1="37" x2="420" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="425" y1="37" x2="425" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="430" y1="37" x2="430" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="435" y1="37" x2="435" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="440" y1="37" x2="440" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="445" y1="37" x2="445" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="450" y1="37" x2="450" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="455" y1="37" x2="455" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="465" y1="37" x2="465" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="470" y1="37" x2="470" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="475" y1="37" x2="475" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="480" y1="37" x2="480" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="485" y1="37" x2="485" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="490" y1="37" x2="490" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="495" y1="37" x2="495" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="500" y1="37" x2="500" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="505" y1="37" x2="505" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="515" y1="37" x2="515" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="520" y1="37" x2="520" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="525" y1="37" x2="525" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="530" y1="37" x2="530" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="535" y1="37" x2="535" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="540" y1="37" x2="540" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="545" y1="37" x2="545" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="550" y1="37" x2="550" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="555" y1="37" x2="555" y2="43" stroke="currentColor" stroke-width="1" />
-  <line x1="60" y1="35" x2="60" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="60" y="61" text-anchor="middle" font-size="11" fill="currentColor">−1.00</text>
-  <line x1="110" y1="35" x2="110" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="110" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.90</text>
-  <line x1="160" y1="35" x2="160" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="160" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.80</text>
-  <line x1="210" y1="35" x2="210" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="210" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.70</text>
-  <line x1="260" y1="35" x2="260" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="260" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.60</text>
-  <line x1="310" y1="35" x2="310" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="310" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.50</text>
-  <line x1="360" y1="35" x2="360" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="360" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.40</text>
-  <line x1="410" y1="35" x2="410" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="410" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.30</text>
-  <line x1="460" y1="35" x2="460" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="460" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.20</text>
-  <line x1="510" y1="35" x2="510" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="510" y="61" text-anchor="middle" font-size="11" fill="currentColor">−0.10</text>
-  <line x1="560" y1="35" x2="560" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <text x="560" y="61" text-anchor="middle" font-size="11" fill="currentColor">0.00</text>
-  <circle cx="190" cy="40" r="4" fill="currentColor" />
-  <text x="190" y="28" text-anchor="middle" font-size="12" fill="currentColor">−0.74</text>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −1.00 to 0.00 with a tick at every hundredth, labeled at every tenth. A point labeled −0.74 is plotted four hundredths to the left of −0.70, between −0.80 and −0.70.","min":-1,"max":0,"step":0.01,"labelEvery":10,"width":528,"points":[{"at":-0.74,"label":"−0.74"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="A point is plotted at the decimal that is equivalent to $\frac{6}{10}$ on a number line divided into tenths between $0$ and $1$. What decimal is it?"

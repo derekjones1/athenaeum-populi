@@ -367,47 +367,9 @@ We just noted that if $f(x)$ is a one-to-one function whose ordered pairs are of
 
 So if a point $(a,b)$ is on the graph of a function $f(x),$ then the ordered pair $(b,a)$ is on the graph of ${f}^{-1}(x).$ See the figure below.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The line y equals x with the reflected points (3, 1) and (1, 3), joined by a dashed segment." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220" font-family="Helvetica, Arial, sans-serif">
-  <line x1="68" y1="194" x2="68" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="110" y1="194" x2="110" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="152" y1="194" x2="152" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="194" y1="194" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="152" x2="194" y2="152" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="110" x2="194" y2="110" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="68" x2="194" y2="68" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="194" x2="196" y2="194" stroke="currentColor" stroke-width="1"/>
-  <line x1="26" y1="24" x2="26" y2="194" stroke="currentColor" stroke-width="1"/>
-  <polygon points="206,194 196,199 196,189" fill="currentColor"/>
-  <polygon points="26,14 31,24 21,24" fill="currentColor"/>
-  <text x="204" y="186" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="34" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="68" y1="191" x2="68" y2="197" stroke="currentColor" stroke-width="1"/>
-  <text x="68" y="209" font-size="11" fill="currentColor" text-anchor="middle">1</text>
-  <line x1="110" y1="191" x2="110" y2="197" stroke="currentColor" stroke-width="1"/>
-  <text x="110" y="209" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="152" y1="191" x2="152" y2="197" stroke="currentColor" stroke-width="1"/>
-  <text x="152" y="209" font-size="11" fill="currentColor" text-anchor="middle">3</text>
-  <line x1="194" y1="191" x2="194" y2="197" stroke="currentColor" stroke-width="1"/>
-  <text x="194" y="209" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="23" y1="152" x2="29" y2="152" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="156" font-size="11" fill="currentColor" text-anchor="end">1</text>
-  <line x1="23" y1="110" x2="29" y2="110" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="114" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="23" y1="68" x2="29" y2="68" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="72" font-size="11" fill="currentColor" text-anchor="end">3</text>
-  <line x1="23" y1="26" x2="29" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="30" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="20" y1="200" x2="200" y2="20" stroke="currentColor" stroke-width="1.8"/>
-  <line x1="152" y1="152" x2="68" y2="68" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="152" cy="152" r="4" fill="currentColor"/>
-  <circle cx="68" cy="68" r="4" fill="currentColor"/>
-  <text x="163.2" y="172.2" font-size="13" fill="currentColor" text-anchor="start">(3, 1)</text>
-  <text x="56.8" y="56.8" font-size="13" fill="currentColor" text-anchor="end">(1, 3)</text>
-  <text x="171.7" y="74.9" font-size="13" fill="currentColor" text-anchor="start">y = x</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The line y equals x with the reflected points (3, 1) and (1, 3), joined by a dashed segment; axes numbered every 1 unit.","xMin":0,"xMax":4,"yMin":0,"yMax":4,"unit":34,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":0,"label":"y = x"}],"segments":[{"from":[3,1],"to":[1,3],"dashed":true}],"points":[{"at":[3,1],"label":"(3, 1)"},{"at":[1,3],"label":"(1, 3)"}]}
+{{< /apfigure >}}
 
 The distance between any two pairs $(a,b)$ and $(b,a)$ is cut in half by the line $y=x.$ So we say the points are mirror images of each other through the line $y=x.$
 

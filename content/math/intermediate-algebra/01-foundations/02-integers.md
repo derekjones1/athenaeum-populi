@@ -26,31 +26,9 @@ weight: 2
 A **negative number** is a number less than $0$. The negative numbers are to
 the left of zero on the number line. See the figure below.
 
-<svg viewBox="0 0 440 100" role="img" aria-label="A number line from negative 4 to 4 with 0 in the middle. A bracket under negative 4 through negative 1 is labeled Negative numbers, a bracket under 1 through 4 is labeled Positive numbers, and an arrow points up to 0, labeled Zero." style="max-width: 440px; display: block; margin: 1.5rem auto">
-  <line x1="45" y1="35" x2="395" y2="35" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="45,35 55,31 55,39" fill="currentColor" />
-  <polygon points="395,35 385,31 385,39" fill="currentColor" />
-  <g fill="currentColor" font-size="13" text-anchor="middle">
-    <line x1="80" y1="30" x2="80" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="80" y="55">−4</text>
-    <line x1="115" y1="30" x2="115" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="115" y="55">−3</text>
-    <line x1="150" y1="30" x2="150" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="150" y="55">−2</text>
-    <line x1="185" y1="30" x2="185" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="185" y="55">−1</text>
-    <line x1="220" y1="30" x2="220" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="220" y="55">0</text>
-    <line x1="255" y1="30" x2="255" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="255" y="55">1</text>
-    <line x1="290" y1="30" x2="290" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="290" y="55">2</text>
-    <line x1="325" y1="30" x2="325" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="325" y="55">3</text>
-    <line x1="360" y1="30" x2="360" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="360" y="55">4</text>
-  </g>
-  <path d="M80,63 v4 h105 v-4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <path d="M255,63 v4 h105 v-4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <line x1="220" y1="76" x2="220" y2="66" stroke="currentColor" stroke-width="1.2" />
-  <polygon points="220,61 216.5,68 223.5,68" fill="currentColor" />
-  <g fill="currentColor" font-size="11" text-anchor="middle">
-    <text x="132.5" y="86">Negative numbers</text>
-    <text x="220" y="89">Zero</text>
-    <text x="307.5" y="86">Positive numbers</text>
-  </g>
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 4 with 0 in the middle. Below the line, the numbers −4 through −1 are labeled Negative numbers and the numbers 1 through 4 are labeled Positive numbers, and an arrow points up to 0, labeled Zero.","min":-4,"max":4,"annotations":[{"kind":"text","at":-2.5,"side":"below","label":"Negative numbers"},{"kind":"pointer","at":0,"side":"below","label":"Zero"},{"kind":"text","at":2.5,"side":"below","label":"Positive numbers"}]}
+{{< /apfigure >}}
 
 You may have noticed that, on the number line, the negative numbers are a
 mirror image of the positive numbers, with zero in the middle. Because the
@@ -65,30 +43,9 @@ $-2$ is $2$.
 
 The figure below illustrates the definition.
 
-<svg viewBox="0 0 400 80" role="img" aria-label="A number line from negative 4 to 4. Points are marked at negative 3 and at 3. A bracket labeled 3 spans from negative 3 to 0, and another bracket labeled 3 spans from 0 to 3, showing that negative 3 and 3 are each three units from zero." style="max-width: 400px; display: block; margin: 1.5rem auto">
-  <g fill="currentColor" font-size="13" text-anchor="middle">
-    <text x="147.5" y="18">3</text>
-    <text x="252.5" y="18">3</text>
-  </g>
-  <path d="M95,28 v-4 h105 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <path d="M200,28 v-4 h105 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <line x1="25" y1="45" x2="375" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="25,45 35,41 35,49" fill="currentColor" />
-  <polygon points="375,45 365,41 365,49" fill="currentColor" />
-  <g fill="currentColor" font-size="13" text-anchor="middle">
-    <line x1="60" y1="40" x2="60" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="60" y="65">−4</text>
-    <line x1="95" y1="40" x2="95" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="95" y="65">−3</text>
-    <line x1="130" y1="40" x2="130" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="130" y="65">−2</text>
-    <line x1="165" y1="40" x2="165" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="165" y="65">−1</text>
-    <line x1="200" y1="40" x2="200" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="200" y="65">0</text>
-    <line x1="235" y1="40" x2="235" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="235" y="65">1</text>
-    <line x1="270" y1="40" x2="270" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="270" y="65">2</text>
-    <line x1="305" y1="40" x2="305" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="305" y="65">3</text>
-    <line x1="340" y1="40" x2="340" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="340" y="65">4</text>
-  </g>
-  <circle cx="95" cy="45" r="3.5" fill="currentColor" />
-  <circle cx="305" cy="45" r="3.5" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −4 to 4. Points are marked at −3 and at 3. An arc labeled 3 spans from −3 to 0, and another arc labeled 3 spans from 0 to 3, showing that −3 and 3 are each three units from zero.","min":-4,"max":4,"points":[{"at":-3},{"at":3}],"annotations":[{"kind":"arc","from":-3,"to":0,"label":"3"},{"kind":"arc","from":0,"to":3,"label":"3"}]}
+{{< /apfigure >}}
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em">The opposite of $3$ is $-3$.</p>
 
@@ -121,24 +78,9 @@ $$\begin{array}{l} -5 \text{ is } 5 \text{ units away from } 0, \text{ so } \lve
 
 The figure below illustrates this idea.
 
-<svg viewBox="0 0 360 90" role="img" aria-label="A number line with points marked at negative 5 and 5. A bracket labeled 5 units spans from negative 5 to 0, and another bracket labeled 5 units spans from 0 to 5, showing that 5 and negative 5 are each five units from zero." style="max-width: 360px; display: block; margin: 1.5rem auto">
-  <g fill="currentColor" font-size="12" text-anchor="middle">
-    <text x="115" y="20">5 units</text>
-    <text x="245" y="20">5 units</text>
-  </g>
-  <path d="M50,28 v-4 h130 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <path d="M180,28 v-4 h130 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
-  <line x1="20" y1="45" x2="340" y2="45" stroke="currentColor" stroke-width="1.5" />
-  <polygon points="20,45 30,41 30,49" fill="currentColor" />
-  <polygon points="340,45 330,41 330,49" fill="currentColor" />
-  <g fill="currentColor" font-size="13" text-anchor="middle">
-    <line x1="50" y1="40" x2="50" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="50" y="65">−5</text>
-    <line x1="180" y1="40" x2="180" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="180" y="65">0</text>
-    <line x1="310" y1="40" x2="310" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="310" y="65">5</text>
-  </g>
-  <circle cx="50" cy="45" r="3.5" fill="currentColor" />
-  <circle cx="310" cy="45" r="3.5" fill="currentColor" />
-</svg>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line with ticks at −5, 0, and 5 and points marked at −5 and 5. An arc labeled 5 units spans from −5 to 0, and another arc labeled 5 units spans from 0 to 5, showing that 5 and −5 are each five units from zero.","min":-5,"max":5,"step":5,"points":[{"at":-5},{"at":5}],"annotations":[{"kind":"arc","from":-5,"to":0,"label":"5 units"},{"kind":"arc","from":0,"to":5,"label":"5 units"}]}
+{{< /apfigure >}}
 
 The absolute value of a number is never negative because distance cannot be
 negative. The only number with absolute value equal to zero is the number zero

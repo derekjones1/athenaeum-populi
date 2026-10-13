@@ -189,44 +189,9 @@ separated that number line into two parts. On one side of $3$ are all the
 numbers less than $3$. On the other side of $3$ all the numbers are greater
 than $3$.
 
-<div class="ap-figure">
-<svg role="img" aria-label="The number line from negative 5 to 5 showing x greater than 3, with an open parenthesis at 3 and shading to the right. Above the line, an arrow pointing left from 3 is labeled numbers less than 3, and an arrow pointing right from 3 is labeled numbers greater than 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 98" width="372" height="98" font-family="Helvetica, Arial, sans-serif">
-  <text x="235" y="13" text-anchor="end" font-size="11" fill="currentColor">numbers less than 3</text>
-  <text x="243.4" y="13" text-anchor="start" font-size="11" fill="currentColor">numbers greater than 3</text>
-  <line x1="239.2" y1="17" x2="239.2" y2="29" stroke="currentColor" stroke-width="1.2"/>
-  <line x1="162" y1="23" x2="236" y2="23" stroke="currentColor" stroke-width="1.2"/>
-  <path d="M 167 19 L 161 23 L 167 27" fill="none" stroke="currentColor" stroke-width="1.2"/>
-  <line x1="242.4" y1="23" x2="301" y2="23" stroke="currentColor" stroke-width="1.2"/>
-  <path d="M 296 19 L 302 23 L 296 27" fill="none" stroke="currentColor" stroke-width="1.2"/>
-  <line x1="16" y1="52" x2="304" y2="52" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 45 L 16 52 L 24 59" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 45 L 304 52 L 296 59" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="239.2" y1="52" x2="304" y2="52" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="46" x2="28" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="77" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
-  <line x1="54.4" y1="46" x2="54.4" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="54.4" y="77" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <line x1="80.8" y1="46" x2="80.8" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="80.8" y="77" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
-  <line x1="107.2" y1="46" x2="107.2" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="107.2" y="77" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <line x1="133.6" y1="46" x2="133.6" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="133.6" y="77" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="160" y1="46" x2="160" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="77" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="186.4" y1="46" x2="186.4" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="186.4" y="77" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="212.8" y1="46" x2="212.8" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="212.8" y="77" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="239.2" y1="46" x2="239.2" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="239.2" y="77" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <line x1="265.6" y1="46" x2="265.6" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="265.6" y="77" text-anchor="middle" font-size="12" fill="currentColor">4</text>
-  <line x1="292" y1="46" x2="292" y2="58" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="77" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="59" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"The number line from −5 to 5 showing x greater than 3, with an open parenthesis at 3 and shading to the right. Above the line, an arrow pointing left from 3 is labeled numbers less than 3, and an arrow pointing right from 3 is labeled numbers greater than 3.","min":-5,"max":5,"width":528,"marker":{"at":3,"type":"paren"},"shade":"right","annotations":[{"kind":"arrow","from":2.9,"to":0,"label":"numbers less than 3"},{"kind":"arrow","from":3.1,"to":5,"label":"numbers greater than 3"}]}
+{{< /apfigure >}}
 
 Similarly, the line $y=x+4$ separates the plane into two regions. On one side
 of the line are points with $y<x+4$. On the other side of the line are the

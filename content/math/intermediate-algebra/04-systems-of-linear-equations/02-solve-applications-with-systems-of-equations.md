@@ -289,16 +289,9 @@ the other two angles.
 ten more than three times the measure of the other small angle. Find the
 measures of both angles.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with the right angle at the bottom-left corner, marked with a small square. The acute angle at the top vertex is labeled a and the acute angle at the bottom-right vertex is labeled b." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 162" width="198" height="162" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="126" x2="162" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="162" y1="126" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="36" y1="36" x2="36" y2="126" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="121" text-anchor="end" font-size="13" fill="currentColor">b</text>
-  <text x="41" y="57" text-anchor="start" font-size="13" fill="currentColor">a</text>
-  <path d="M 46 126 L 46 116 L 36 116" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with the right angle at the bottom-left corner, marked with a small square. The acute angle at the top vertex is labeled a and the acute angle at the bottom-right vertex is labeled b.","polygons":[{"points":[[0,0],[4.2,0],[0,3]],"rightAngles":[0]}],"texts":[{"at":[0.17,2.3],"text":"a","anchor":"start"},{"at":[3,0.17],"text":"b","anchor":"end"}]}
+{{< /apfigure >}}
 
 We are looking for the measures of the angles. Let $a=$ the measure of the
 first angle and $b=$ the measure of the second angle.
@@ -348,18 +341,9 @@ fourth side will be the wall of the house. He wants the length of the
 fenced yard (parallel to the house wall) to be 5 feet more than four times
 as long as the width. Find the length and the width.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangle representing the fenced yard. The top side, along the house wall, is dashed and labeled house wall. The bottom side and the two vertical sides, which are the fenced sides, are solid; the bottom side is labeled L and the vertical sides are each labeled W." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 168" width="252" height="168" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="132" x2="216" y2="132" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="216" y1="132" x2="216" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="228" y="88" text-anchor="start" font-size="13" fill="currentColor">W</text>
-  <line x1="216" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="126" y="22" text-anchor="middle" font-size="13" fill="currentColor">house wall</text>
-  <text x="126" y="152" text-anchor="middle" font-size="13" fill="currentColor">L</text>
-  <line x1="36" y1="36" x2="36" y2="132" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="88" text-anchor="end" font-size="13" fill="currentColor">W</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A rectangle representing the fenced yard. The top side, along the house wall, is dashed and labeled house wall. The bottom side and the two vertical sides, which are the fenced sides, are solid; the bottom side is labeled L and the vertical sides are each labeled W.","polygons":[{"points":[[0,0],[6,0],[6,3.2],[0,3.2]],"edgeLabels":["L","W","house wall","W"],"dashedEdges":[2]}]}
+{{< /apfigure >}}
 
 We are looking for the length and width of the fenced yard. Let $L=$ the
 length of the fenced yard and $W=$ the width of the fenced yard.

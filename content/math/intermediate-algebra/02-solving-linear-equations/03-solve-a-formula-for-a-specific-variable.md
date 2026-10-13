@@ -191,17 +191,9 @@ The next example involves the area of a triangle. The area of a triangle is
 one-half the base times the height. We can write this as
 $A=\tfrac{1}{2}bh$, where $b=$ length of the base and $h=$ height.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A triangle with horizontal base b and a dashed perpendicular height h drawn from the top vertex to the base." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 177" width="252" height="177" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="141" x2="216" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <text x="126" y="163" text-anchor="middle" font-size="13" fill="currentColor">b</text>
-  <line x1="216" y1="141" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="36" y2="141" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="156" y1="36" x2="156" y2="141" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="168" y="92.5" text-anchor="start" font-size="13" fill="currentColor">h</text>
-  <path d="M 146 141 L 146 131 L 156 131" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A triangle with horizontal base b and a dashed perpendicular height h drawn from the top vertex to the base.","polygons":[{"points":[[0,0],[6,0],[4,3.5]],"edgeLabels":["b",null,null]}],"segments":[{"from":[4,3.5],"to":[4,0],"dashed":true,"label":"h"}],"rightAngles":[{"at":[4,0],"dirs":[[-1,0],[0,1]]}]}
+{{< /apfigure >}}
 
 **Example.** The area of a triangular painting is 126 square inches. The base
 is 18 inches. What is the height?
@@ -292,17 +284,9 @@ We will use the Pythagorean Theorem in the next example.
 **Example.** Use the Pythagorean Theorem to find the length of the other leg in
 the right triangle whose leg is 12 and whose hypotenuse is 13.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with one leg 12, the hypotenuse 13, and the other leg a." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 160" width="282" height="160" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="123.5" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="84" text-anchor="end" font-size="13" fill="currentColor">a</text>
-  <line x1="36" y1="36" x2="246" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="22" text-anchor="middle" font-size="13" fill="currentColor">12</text>
-  <line x1="246" y1="36" x2="36" y2="123.5" stroke="currentColor" stroke-width="1.5"/>
-  <text x="146" y="101" text-anchor="start" font-size="13" fill="currentColor">13</text>
-  <path d="M 36 46 L 46 46 L 46 36" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with one leg 12, the hypotenuse 13, and the other leg a.","unit":35,"polygons":[{"points":[[0,0],[0,2.5],[6,2.5]],"edgeLabels":["a","12","13"],"rightAngles":[1]}]}
+{{< /apfigure >}}
 
 **Solution.**
 
@@ -449,19 +433,9 @@ length is 40 feet more than the width. Find the length and width.
    the width. Draw the figure and label it with the given information. Let
    $w=$ width and $w+40=$ length; perimeter $=360$ feet.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangle for the soccer field with each width labeled w, each length labeled w plus 40, and the words Perimeter = 360 feet inside." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 192" width="282" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="246" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="178" text-anchor="middle" font-size="13" fill="currentColor">w+40</text>
-  <line x1="246" y1="156" x2="246" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="258" y="100" text-anchor="start" font-size="13" fill="currentColor">w</text>
-  <line x1="246" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="141" y="22" text-anchor="middle" font-size="13" fill="currentColor">w+40</text>
-  <line x1="36" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">w</text>
-  <text x="141" y="100" text-anchor="middle" font-size="13" fill="currentColor">Perimeter = 360 feet</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A rectangle for the soccer field with each width labeled w, each length labeled w plus 40, and the words Perimeter = 360 feet inside.","polygons":[{"points":[[0,0],[7,0],[7,4],[0,4]],"edgeLabels":["w+40","w","w+40","w"]}],"texts":[{"at":[3.5,2],"text":"Perimeter = 360 feet","anchor":"middle"}]}
+{{< /apfigure >}}
 
 4. **Translate.** Write the appropriate formula and substitute:
    $P=2L+2W$ and $360=2(w+40)+2w$.
@@ -505,17 +479,9 @@ equal? Approximate to the nearest tenth of an inch.
    with the given information. Let $x=$ the distance from the corner.
 4. **Translate.** Write the appropriate formula and substitute.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangular corner brace with two equal perpendicular legs labeled x and a diagonal brace labeled 10." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="156" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="100" text-anchor="end" font-size="13" fill="currentColor">x</text>
-  <line x1="36" y1="36" x2="156" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="96" y="22" text-anchor="middle" font-size="13" fill="currentColor">x</text>
-  <line x1="156" y1="36" x2="36" y2="156" stroke="currentColor" stroke-width="1.5"/>
-  <text x="104.5" y="114.5" text-anchor="start" font-size="13" fill="currentColor">10</text>
-  <path d="M 36 46 L 46 46 L 46 36" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangular corner brace with two equal perpendicular legs labeled x and a diagonal brace labeled 10.","polygons":[{"points":[[0,0],[0,4],[4,4]],"edgeLabels":["x","x","10"],"rightAngles":[1]}]}
+{{< /apfigure >}}
 
 $$
 \begin{array}{rcl}

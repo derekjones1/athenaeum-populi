@@ -480,18 +480,9 @@ length is four feet more than the width. Find the dimensions.
 
 Let $w$ be the width, so $w+4$ is the length.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A rectangle with width w and length w plus 4." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 216" width="280" height="216" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="180" x2="244" y2="180" stroke="currentColor" stroke-width="1.5"/>
-  <text x="140" y="202" text-anchor="middle" font-size="13" fill="currentColor">w + 4</text>
-  <line x1="244" y1="180" x2="244" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="256" y="112" text-anchor="start" font-size="13" fill="currentColor">w</text>
-  <line x1="244" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="140" y="22" text-anchor="middle" font-size="13" fill="currentColor">w + 4</text>
-  <line x1="36" y1="36" x2="36" y2="180" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="112" text-anchor="end" font-size="13" fill="currentColor">w</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A rectangle with width w and length w plus 4.","unit":16,"polygons":[{"points":[[0,0],[13,0],[13,9],[0,9]],"edgeLabels":["w + 4","w","w + 4","w"]}]}
+{{< /apfigure >}}
 
 Using $A=l\cdot w$ gives
 
@@ -534,17 +525,9 @@ side lengths.
 
 Let $x$ be one leg and $x-7$ the other leg.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A right triangle with legs x and x minus 7 and hypotenuse 17." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 312" width="200" height="312" font-family="Helvetica, Arial, sans-serif">
-  <line x1="36" y1="276" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
-  <text x="24" y="160" text-anchor="end" font-size="13" fill="currentColor">x</text>
-  <line x1="36" y1="36" x2="164" y2="276" stroke="currentColor" stroke-width="1.5"/>
-  <text x="111" y="155" text-anchor="start" font-size="13" fill="currentColor">17</text>
-  <line x1="164" y1="276" x2="36" y2="276" stroke="currentColor" stroke-width="1.5"/>
-  <text x="100" y="298" text-anchor="middle" font-size="13" fill="currentColor">x − 7</text>
-  <path d="M 36 266 L 46 266 L 46 276" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle with legs x and x minus 7 and hypotenuse 17.","unit":16,"polygons":[{"points":[[0,0],[8,0],[0,15]],"edgeLabels":["x − 7","17","x"],"rightAngles":[0]}]}
+{{< /apfigure >}}
 
 $$
 \begin{array}{lrcl}

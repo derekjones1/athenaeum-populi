@@ -423,75 +423,9 @@ the origin $(0,0)$ and climbs more steeply, since $245 > 105$. Because the
 revenue line starts lower but climbs faster, the two lines cross exactly
 once — at the break-even point:
 
-<div class="ap-figure">
-<svg role="img" aria-label="A graph with benches on the horizontal axis, from 0 to 100, and dollars on the vertical axis, from 0 to 15,000. The cost line C(x) = 105x + 7,000 starts at (0, 7,000) and climbs gently; the revenue line R(x) = 245x starts at the origin and climbs more steeply. The two lines cross at the break-even point (50, 12,250)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 388" width="388" height="388" font-family="Helvetica, Arial, sans-serif">
-  <line x1="74" y1="344" x2="74" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="104" y1="344" x2="104" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="134" y1="344" x2="134" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="164" y1="344" x2="164" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="194" y1="344" x2="194" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="224" y1="344" x2="224" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="254" y1="344" x2="254" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="284" y1="344" x2="284" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="314" y1="344" x2="314" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="344" y1="344" x2="344" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="324" x2="344" y2="324" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="304" x2="344" y2="304" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="284" x2="344" y2="284" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="264" x2="344" y2="264" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="244" x2="344" y2="244" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="224" x2="344" y2="224" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="204" x2="344" y2="204" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="184" x2="344" y2="184" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="164" x2="344" y2="164" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="144" x2="344" y2="144" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="124" x2="344" y2="124" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="104" x2="344" y2="104" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="84" x2="344" y2="84" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="64" x2="344" y2="64" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="44" x2="344" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="44" y1="344" x2="346" y2="344" stroke="currentColor" stroke-width="1"/>
-  <line x1="44" y1="42" x2="44" y2="344" stroke="currentColor" stroke-width="1"/>
-  <polygon points="356,344 346,349 346,339" fill="currentColor"/>
-  <polygon points="44,32 49,42 39,42" fill="currentColor"/>
-  <text x="354" y="336" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="52" y="42" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="104" y1="341" x2="104" y2="347" stroke="currentColor" stroke-width="1"/>
-  <text x="104" y="359" font-size="11" fill="currentColor" text-anchor="middle">20</text>
-  <line x1="164" y1="341" x2="164" y2="347" stroke="currentColor" stroke-width="1"/>
-  <text x="164" y="359" font-size="11" fill="currentColor" text-anchor="middle">40</text>
-  <line x1="224" y1="341" x2="224" y2="347" stroke="currentColor" stroke-width="1"/>
-  <text x="224" y="359" font-size="11" fill="currentColor" text-anchor="middle">60</text>
-  <line x1="284" y1="341" x2="284" y2="347" stroke="currentColor" stroke-width="1"/>
-  <text x="284" y="359" font-size="11" fill="currentColor" text-anchor="middle">80</text>
-  <line x1="344" y1="341" x2="344" y2="347" stroke="currentColor" stroke-width="1"/>
-  <text x="344" y="359" font-size="11" fill="currentColor" text-anchor="middle">100</text>
-  <line x1="41" y1="294" x2="47" y2="294" stroke="currentColor" stroke-width="1"/>
-  <text x="38" y="298" font-size="11" fill="currentColor" text-anchor="end">2,500</text>
-  <line x1="41" y1="244" x2="47" y2="244" stroke="currentColor" stroke-width="1"/>
-  <text x="38" y="248" font-size="11" fill="currentColor" text-anchor="end">5,000</text>
-  <line x1="41" y1="194" x2="47" y2="194" stroke="currentColor" stroke-width="1"/>
-  <text x="38" y="198" font-size="11" fill="currentColor" text-anchor="end">7,500</text>
-  <line x1="41" y1="144" x2="47" y2="144" stroke="currentColor" stroke-width="1"/>
-  <text x="38" y="148" font-size="11" fill="currentColor" text-anchor="end">10,000</text>
-  <line x1="41" y1="94" x2="47" y2="94" stroke="currentColor" stroke-width="1"/>
-  <text x="38" y="98" font-size="11" fill="currentColor" text-anchor="end">12,500</text>
-  <line x1="41" y1="44" x2="47" y2="44" stroke="currentColor" stroke-width="1"/>
-  <text x="38" y="48" font-size="11" fill="currentColor" text-anchor="end">15,000</text>
-  <line x1="194" y1="344" x2="194" y2="99" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>
-  <line x1="44" y1="99" x2="194" y2="99" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>
-  <line x1="46.2" y1="202.5" x2="273" y2="43.7" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="281.1,38 275.8,47.8 270.1,39.6" fill="currentColor"/>
-  <polygon points="38,208.2 43.3,198.4 49.1,206.6" fill="currentColor"/>
-  <line x1="45.5" y1="341.5" x2="226.1" y2="46.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="231.3,38 230.4,49.1 221.9,43.9" fill="currentColor"/>
-  <polygon points="40.3,350 41.3,338.9 49.8,344.1" fill="currentColor"/>
-  <circle cx="194" cy="99" r="4" fill="currentColor"/>
-  <text x="205.2" y="119.2" font-size="13" fill="currentColor" text-anchor="start">(50, 12,250)</text>
-  <text x="236.8" y="92.6" font-size="13" fill="currentColor" text-anchor="start">C(x) = 105x + 7,000</text>
-  <text x="111.3" y="268.8" font-size="13" fill="currentColor" text-anchor="start">R(x) = 245x</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A graph with benches on the horizontal axis, from 0 to 100, numbered every 20, and dollars on the vertical axis, from 0 to 15,000, numbered every 2,500. The cost line C(x) = 105x + 7,000 starts at (0, 7,000) and climbs gently; the revenue line R(x) = 245x starts at the origin and climbs more steeply. The two lines cross at the break-even point (50, 12,250), with dashed guides from that point to both axes.","xMin":0,"xMax":100,"yMin":0,"yMax":15000,"xUnit":3,"yUnit":0.02,"xGridStep":10,"yGridStep":1000,"tickLabels":true,"xTickStep":20,"yTickStep":2500,"lines":[{"slope":105,"intercept":7000},{"slope":245,"intercept":0}],"guides":[[50,12250]],"points":[{"at":[50,12250],"label":"(50, 12,250)","labelSide":"se"}],"texts":[{"at":[64.3,12570],"text":"C(x) = 105x + 7,000","anchor":"start"},{"at":[22.4,3760],"text":"R(x) = 245x","anchor":"start"}]}
+{{< /apfigure >}}
 
 (d) To find the actual value, remember the break-even point occurs when
 costs equal revenue:

@@ -293,28 +293,9 @@ $$
 On the number line, shade the segment from $\tfrac{2}{5}$ through 2 and place
 a closed bracket at each endpoint.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A number line from negative one to three shaded between a closed bracket at two fifths, labeled 2/5, and a closed bracket at two." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" font-family="Helvetica, Arial, sans-serif">
-  <line x1="16" y1="45" x2="304" y2="45" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 24 38 L 16 45 L 24 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 296 38 L 304 45 L 296 52" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="120.4" y1="45" x2="226" y2="45" stroke="currentColor" stroke-width="3.5"/>
-  <line x1="28" y1="39" x2="28" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="28" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <line x1="94" y1="39" x2="94" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="94" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
-  <line x1="160" y1="39" x2="160" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="160" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <line x1="226" y1="39" x2="226" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
-  <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
-  <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="120.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
-  <text x="226" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
-  <text x="120.4" y="70" text-anchor="middle" font-size="12" fill="currentColor">2/5</text>
-  <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">2/5 ≤ x ≤ 2</text>
-</svg>
-</div>
+{{< apfigure kind="numberline" >}}
+{"ariaLabel":"A number line from −1 to 3 shaded between a closed bracket at 2/5, labeled 2/5 below the line, and a closed bracket at 2.","min":-1,"max":3,"title":"2/5 ≤ x ≤ 2","intervals":[{"from":0.4,"fromType":"bracket","to":2,"toType":"bracket"}],"annotations":[{"kind":"text","at":0.4,"side":"below","label":"2/5"}]}
+{{< /apfigure >}}
 
 The solution using interval notation is $\left[\tfrac{2}{5},2\right]$.
 Check: The check is left to you.
