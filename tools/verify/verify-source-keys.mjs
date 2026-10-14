@@ -730,6 +730,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1814,
     reason: 'the source option "the pool water containing chlorine" is a second correct completion of the cytoplasm-is-to-cytosol analogy, because the module\'s Summary says the cytosol "consists mainly of water, but also contains various dissolved nutrients and other molecules"; the page prints "the chlorine" in its place (key "the water" unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/06-tissue-injury-and-aging.md',
+    exercise: 'fs-id1467980',
+    kind: 'options',
+    erratum: 1842,
+    reason: 'the source distractor "meylin" is a misspelling of "myelin" (the §4.5 module m46057 defines myelin in its glossary; m46058 never prints the word); the page prints "myelin" and the footer discloses the one-word correction',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

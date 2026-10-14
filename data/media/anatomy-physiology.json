@@ -1869,6 +1869,474 @@
       "caption": "",
       "transparent": false
     },
+    "400_Micrograph_of_Cervical_Tissue_updated": {
+      "source": "media/400_Micrograph_of_Cervical_Tissue_updated.jpg",
+      "sourceSha256": "b7f46b81d1081b06b8cf36b8864bb46298a4013a60a9c7416c1c181220cc33f6",
+      "module": "m46045",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "400_Micrograph_of_Cervical_Tissue_updated-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "400_Micrograph_of_Cervical_Tissue_updated-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows tissue surrounding several empty spaces. The epithelial tissue occurs at the border between the rest of the tissue and the empty spaces. The normal epithelium is composed of rectangular-shaped cells neatly organized side by side. Dark purple nuclei are clear at the bottom of the epithelial cells, where they attach to the rest of the tissue. The abnormal epithelium appears as a tangled area of purple nuclei, much thicker than the normal epithelium although no distinct cells are discernible.",
+      "caption": "This figure is a view of the regular architecture of normal tissue contrasted with the irregular arrangement of cancerous cells. (credit: “Haymanj”/Wikimedia Commons)"
+    },
+    "401_Types_of_Tissue": {
+      "source": "media/401_Types_of_Tissue.jpg",
+      "sourceSha256": "8c1070ee0898da2ecc849932126b74349cd0b21023dd15ef404de61f595263b0",
+      "module": "m46046",
+      "kind": "photo",
+      "width": 1428,
+      "height": 1540,
+      "variants": [
+        {
+          "width": 800,
+          "height": 862,
+          "file": "401_Types_of_Tissue-800.webp"
+        },
+        {
+          "width": 1428,
+          "height": 1540,
+          "file": "401_Types_of_Tissue-1428.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the silhouette of a female surrounded by four micrographs of tissue. Each micrograph has arrows pointing to the organs where that tissue is found. The upper left micrograph shows nervous tissue that is whitish with several large, purple, irregularly-shaped neurons embedded throughout. Nervous tissue is found in the brain, spinal cord and nerves. The upper right micrograph shows muscle tissue that is red with elongated cells and prominent, purple nuclei. Cardiac muscle is found in the heart. Smooth muscle is found in muscular internal organs, such as the stomach. Skeletal muscle is found in parts that are moved voluntarily, such as the arms. The lower left micrograph shows epithelial tissue. This tissue is purple with many round, purple cells with dark purple nuclei. Epithelial tissue is found in the lining of GI tract organs and other hollow organs such as the small intestine. Epithelial tissue also composes the outer layer of the skin, known as the epidermis. Finally, the lower right micrograph shows connective tissue, which is composed of very loosely packed purple cells and fibers. There are large open spaces between clumps of cells and fibers. Connective tissue is found in the leg within fat and other soft padding tissue as well as bones and tendons.",
+      "caption": "The four types of tissues are exemplified in nervous tissue, stratified squamous epithelial tissue, cardiac muscle tissue, and connective tissue. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "402_Types_of_Cell_Junctions_new": {
+      "source": "media/402_Types_of_Cell_Junctions_new.jpg",
+      "sourceSha256": "307d409839c4569b8ae4fb54d1d04b8c17cfce20359d18178a62606032d272f5",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 4597,
+      "height": 5366,
+      "variants": [
+        {
+          "width": 800,
+          "height": 934,
+          "file": "402_Types_of_Cell_Junctions_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1867,
+          "file": "402_Types_of_Cell_Junctions_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "These three illustrations each show the edges of two vertical cell membranes. The cell membranes are viewed partially from the side so that the inside edge of the right cell membrane is visible. The upper left image shows a tight junction. The two cell membranes are bound by transmembrane protein strands. The proteins travel the inside edge of the right cell membrane and cross over to the left cell membrane, cinching the two membranes together. The cell membranes are still somewhat separated in between neighboring strands, creating intercellular spaces. The upper right diagram shows a gap junction. The gap junctions are composed of two interlocking connexins, which are round, hollow tubes that extend through the cell membranes. Two connexins, one from the left cell membrane and the other from the right cell membrane, meet between the two cells, forming a connexon. Even at the site of the connexon, there is a small gap between the cell membranes. On the inside edge of the right cell membrane, the gap junction appears as a depression. Three connexins are embedded into the membranes like buttons on a shirt. The bottom images show the three types of anchoring junctions. The left image shows a desmosome. Here, the inside edge of both the right and left cell membranes have brown, round plaques. Each plaque has tentacle-like intermediate filaments (keratin) that extend into each cell’s cytoplasm. The two plaques are connected across the intercellular space by several interlocking transmembrane glycoproteins (cadherin). The connected glycoproteins look similar to a zipped-up zipper between the right and left cell membranes. The right image shows an adheren. These are similar to desmosomes, with two plaques on the inside edge of each cell membrane connected across the intercellular space by glycoproteins. However, the plaques do not contain the tentacle-like intermediate filaments branching into the cytoplasm. Instead, the plaques are ribbed with green actin filaments. The filaments are neatly arranged in parallel, horizontal strands on the surface of the plaque facing the cytoplasm. The bottom image shows a hemidesmosome. Rather than located between two neighboring cells, the hemidesmosome is located between the bottom of a cell and the basement membrane. A hemidesmosome contains a single plaque on the inside edge of the cell membrane. Like the desmosome, intermediate filaments project from the plaque into the cytoplasm. The opposite side of the plaque has purple, knob-shaped integrins extending out to the basal lamina of the basement membrane.",
+      "caption": "The three basic types of cell-to-cell junctions are tight junctions, gap junctions, and anchoring junctions."
+    },
+    "403_Epithelial_Tissue": {
+      "source": "media/403_Epithelial_Tissue.jpg",
+      "sourceSha256": "875950207ab011fa3b726ce0a31019486cb11c26e54e3cdb61f5216ed211df45",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 1209,
+      "height": 970,
+      "variants": [
+        {
+          "width": 800,
+          "height": 642,
+          "file": "403_Epithelial_Tissue-800.webp"
+        },
+        {
+          "width": 1209,
+          "height": 970,
+          "file": "403_Epithelial_Tissue-1209.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure is a table showing the appearance of squamous, cuboidal and columnar epithelial tissues. Simple and compound forms are shown for each tissue type. In a simple squamous epithelium, the cells are flattened and single layered. In a simple cuboidal epithelium, the cells are cube shaped and single layered. In a simple columnar epithelium, the cells are rectangular and are attached to the basement membrane on one of their narrow sides, so that each cell is standing up like a column. There is only one layer of cells. In a pseudostratified columnar epithelium, the cells are column-like in appearance, but they vary in height. The taller cells bend over the tops of the shorter cells so that the top of the epithelial tissue is continuous. There is only one layer of cells. A stratified squamous epithelium contains many layers of flattened cells. Stratified cuboidal epithelium contains many layers of cube-shaped cells. Stratified columnar epithelium contains many layers of rectangular, column-shaped cells.",
+      "caption": "Simple epithelial tissue is organized as a single layer of cells and stratified epithelial tissue is formed by several layers of cells."
+    },
+    "404_Goblet_Cell_new": {
+      "source": "media/404_Goblet_Cell_new.jpg",
+      "sourceSha256": "35a5189867bc355371f60fbc45586197da36f28fdcecec9040c5086fd1271717",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 2539,
+      "height": 4722,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1488,
+          "file": "404_Goblet_Cell_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2975,
+          "file": "404_Goblet_Cell_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a diagram of a goblet cell. The goblet cell is shaped roughly like an upside down vase. The enlarged end at the top contains six finger like projections labeled microvilli. Between the microvilli, secretary vesicles containing mucin are moving from the upper half of the cell toward the microvilli. Below the secretory vesicles are several rough endoplasmic reticula and an irregularly shaped Golgi apparatus with secretory vesicles budding off of it. The narrow, lower half of the cell contains the oval-shaped nucleus as well as a few mitochondria and segments of the endoplasmic reticulum.",
+      "caption": "(a) In the lining of the small intestine, columnar epithelium cells are interspersed with goblet cells. (b) The arrows in this micrograph point to the mucus-secreting goblet cells. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "404b_Goblet_Cell_new": {
+      "source": "media/404b_Goblet_Cell_new.jpg",
+      "sourceSha256": "6d6dff3e3928f4cf86a534c673f8d2a6b1b8191fafb165cbfebb76ed0639e84e",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 2299,
+      "height": 2231,
+      "variants": [
+        {
+          "width": 800,
+          "height": 776,
+          "file": "404b_Goblet_Cell_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1552,
+          "file": "404b_Goblet_Cell_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The second image is a micrograph of the innermost lining of the small intestine. This innermost lining is a simple columnar epithelium, with a single layer of rectangular cells oriented in a line. Occasionally, the line of epithelial cells is interrupted by a goblet cell. Goblet cells are thinner than the epithelial cells and appear roughly pill shaped. In this micrograph, the cells did not stain as darkly as the epithelial cells.",
+      "caption": "(a) In the lining of the small intestine, columnar epithelium cells are interspersed with goblet cells. (b) The arrows in this micrograph point to the mucus-secreting goblet cells. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "405_Modes_of_Secretion_by_Glands_updated": {
+      "source": "media/405_Modes_of_Secretion_by_Glands_updated.jpg",
+      "sourceSha256": "6f4a65b704eb911f7b13ebc8bcc74d9fa64d39340efeeba5273b273dafdf7c15",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 1654,
+      "height": 1683,
+      "variants": [
+        {
+          "width": 800,
+          "height": 814,
+          "file": "405_Modes_of_Secretion_by_Glands_updated-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1628,
+          "file": "405_Modes_of_Secretion_by_Glands_updated-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "These three diagrams show the three modes of secretion. All three diagrams show three orange cells in a line with attached to a basement membrane. Each cell has a large nucleus in its lower half. The upper half of each cell contains a Golgi apparatus, which appears like an upside down jellyfish. Yellow secretory vesicles are budding from the top end of the Golgi apparatus. Each vesicle contains several orange circles, which are the secreted substance. In merocrine secretion, the secretory vesicles travel to the top edge of the cells and release the secretion from the cell by melding with the cell membrane. In apocrine secretion, the top third of the cell, which contains the secretory vesicles, pinches in at the sides and then completely disconnects above the Golgi complex. The pinched off portion of the cell is the secretion, as it contains the majority of the secretory vesicles. In holocrine secretion, the upper third of the cell, just above the Golgi complex, forms many finger like projections. Each projection contains several vesicles. The tips of the projections that contain secretory vesicles bud off from the cell. In this method of secretion, the mature cell eventually dies and becomes the secretory product.",
+      "caption": "(a) In merocrine secretion, the cell remains intact. (b) In apocrine secretion, the apical portion of the cell is released, as well. (c) In holocrine secretion, the cell is destroyed as it releases its product and the cell itself becomes part of the secretion."
+    },
+    "406_Types_of_Glands": {
+      "source": "media/406_Types_of_Glands.jpg",
+      "sourceSha256": "0d1de198e96e462283d68cbb14b4cccd358a0d2f571f4cecd5514500672e95c6",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 1117,
+      "height": 1210,
+      "variants": [
+        {
+          "width": 800,
+          "height": 866,
+          "file": "406_Types_of_Glands-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 1210,
+          "file": "406_Types_of_Glands-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the different types of exocrine glands: alveolar (acinar) versus tubular and those with simple ducts versus compound ducts. Each diagram shows a single layer of columnar epithelial cells with a line of cells travelling along the surface of a tissue (surface epithelium) and then dipping into a hole in the tissue. The cells travel down the right side of the hole until they reach the bottom, then curve around the bottom of the hole and then travel up the left side. Finally, the cells emerge back onto the surface of the tissue. The surface epithelial cells are those that are on the surface of the tissue; the duct cells are those that line both walls of the hole. The gland cells are those that line the bottom of the hole. The shape of the hole differs in each gland. In the simple alvelolar (acinar) gland, the duct and gland cells are bulb shaped with the gland cells being the larger end of the bulb. Simple alveolar glands are not found in adults, as these represent an early developmental stage of simple, branched glands. In simple tubular glands, the duct and gland cells are U shaped. Simple tubular glands are found in the intestinal glands. In simple branched alveolar glands, the gland cells form three bulbs at the end of the duct, similar in appearance to a clover leaf. The sebaceous (oil) glands are examples of simple branched alveolar glands. In simple coiled tubular glands, the duct and gland cells form a U, however, the bottom of the U, which is all gland cells, is curved up to the right. Merocrine sweat glands are examples of simple coiled tubular glands. In simple branched tubular glands, the duct is very short and the gland cells divide into three lobes, similar in appearance to a bird’s foot. The gastric glands of the stomach and mucous glands of the esophagus, tongue and duodenum are examples of simple branched tubular glands. Among the glands with compound ducts, compound alveolar (acinar) glands have three sets of clover leaf bulbs, for a total of six bulbs. Two of the clover leaf shaped structures extend parallel to the surface epithelium in opposite directions to each other. The third clover leaf extends down into the tissue, perpendicular to the surface. The duct is cross-shaped. The mammary glands are an example of compound alveolar glands. Compound tubular glands have a similar structure to compound alveolar glands. However, instead of three cloverleaf shaped bulbs, the compound tubular gland has three bird’s foot shaped bulbs. The duct is also cross-shaped in the compound tubular gland. The mucous glands of the mouth and the bulbourethral glands of the male reproductive system are examples of compound tubular glands, which are also found in the seminiferous tubules of the testis. Compound tubuloalveolar glands are a hybrid between the compound alveolar gland and the compound tubular gland. The two sets of bulbs that run parallel to the surface are bird-foot shaped; however, the set of bulbs that runs perpendicularly below the surface is cloverleaf shaped. The salivary glands, glands of the respiratory passages and glands of the pancreas are all compound tubuloalveolar glands.",
+      "caption": "Exocrine glands are classified by their structure."
+    },
+    "407_Sebaceous_Glands": {
+      "source": "media/407_Sebaceous_Glands.jpg",
+      "sourceSha256": "cf2cf1fb3a74bd43654601a52c93fcba8e60ce59c12816ab4d8224748313805c",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 1120,
+      "height": 609,
+      "variants": [
+        {
+          "width": 800,
+          "height": 435,
+          "file": "407_Sebaceous_Glands-800.webp"
+        },
+        {
+          "width": 1120,
+          "height": 609,
+          "file": "407_Sebaceous_Glands-1120.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Image A depicts a cross section of the skin layers. The surface of the skin is at the top of the diagram, with the outer layer occupying about one fifth of the cross section. The outer layer has an irregular border with the inner skin layer, which occupies the remainder of the cross section. A hair follicle is embedded within the inner layer. However, the outer layer actually invaginates into the inner layer around the outside of the follicle, completely sheathing the follicle. The follicle has a bulb at its bottom that is connected to blood vessels. The hair projects from the bulb and travels through the sheath to erupt from the skin surface. The sebaceous gland is an irregular, yellow structure attached at the midpoint of the hair shaft near the border between the inner and outer layers of skin. Its duct actually connects into the side of the hair follicle. Image B shows a micrograph of a sebaceous gland connected to a hair follicle. The bulb of the hair follicle is evident in the micrograph as a bundle of cell surrounding the growing hair at its center. The sebaceous gland is connected to the right of the follicle bulb. The gland appears as an oval shaped mass of pink staining, cube shaped cells with purple nuclei.",
+      "caption": "These glands secrete oils that lubricate and protect the skin. They are holocrine glands and they are destroyed after releasing their contents. New glandular cells form to replace the cells that are lost. LM × 400. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "408_Connective_Tissue": {
+      "source": "media/408_Connective_Tissue.jpg",
+      "sourceSha256": "e05e4940a766a561542ea9233fe9f86227fe31299de0a1912fde49ec6cb0ad60",
+      "module": "m46049",
+      "kind": "photo",
+      "width": 1212,
+      "height": 375,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "408_Connective_Tissue-800.webp"
+        },
+        {
+          "width": 1212,
+          "height": 375,
+          "file": "408_Connective_Tissue-1212.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left image shows a diagram of connective tissue. As a whole, the connective tissue appears somewhat disorganized, with fibers and cells mixed together heterogeneously. There are many open spaces between the embedded elements, suggesting that the connective tissue is somewhat loosely packed. The thickest fibers are collagen fibers; the thinner fibers are elastic fibers. Both the collagen fibers and the elastic fibers crisscross randomly throughout the tissue. In addition, a net of reticular fibers appear in the upper part of the diagram. Two yellow and oval shaped adipocytes are embedded below the reticular fiber net, with a small dark nucleus squeezed into one corner of the cell. A mesenchymal cell is next to one of the adipocytes. The cell is rectangular and has four projections stemming from each corner of the cell. The projections appear to attach to the nearby collagen fibers. A fibroblast is located at the center of the diagram. The fibroblast appears similar to the mesenchymal cell, except that it is larger and has more projections. Finally, a white macrophage is in the lower right of the diagram. The macrophage is a white, oval shaped disc with a prominent nucleus. The right diagram is a micrograph of connective tissue. The tissue is mostly stained pink, however, the thick collagen fibers crisscrossing the tissue are white. Five adipocytes also appear white, except for their cell membrane and nucleus, which stained dark. A mesenchymal cell occupies the space between two adipocytes. It stains a very deep purple, but its shape is unclear in the micrograph. A fibrocyte is also visible as an oval shaped cell with a deep purple nucleus.",
+      "caption": "Fibroblasts produce this fibrous tissue. Connective tissue proper includes the fixed cells fibrocytes, adipocytes, and mesenchymal cells. LM × 400. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "409_Adipose_Tissue": {
+      "source": "media/409_Adipose_Tissue.jpg",
+      "sourceSha256": "873ab0a6133cfb85bf731f7f1cdabc57441c21ba6a222223451ca0db1d20d8ea",
+      "module": "m46049",
+      "kind": "photo",
+      "width": 2180,
+      "height": 875,
+      "variants": [
+        {
+          "width": 800,
+          "height": 321,
+          "file": "409_Adipose_Tissue-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 642,
+          "file": "409_Adipose_Tissue-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Image A shows a collection of yellow adipocytes that do not have a consistent shape or size, however, most have the general appearance of a kernel of corn with a wide end that tapers to a point. Each adipocyte has a nucleus occupying a small area on one side of the cell. Nothing else is visible within the cells. Image B shows a micrograph of adipose tissue. Here, the adipocytes are stained purple. However, only their edges and their nuclei stain, giving the adipose tissue a honeycomb appearance. The adipocytes in the micrograph are large and round, but still show a diversity of shapes and sizes. The nucleus appears as a dark staining area very close to the cell membrane.",
+      "caption": "This is a loose connective tissue that consists of fat cells with little extracellular matrix. It stores fat for energy and provides insulation. LM × 800. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "410_Reticular_Tissue": {
+      "source": "media/410_Reticular_Tissue.jpg",
+      "sourceSha256": "b3da70a9dd3ed14ac88faf1199c980bb80e54e70ab72a73660cf2ec4f38efcc2",
+      "module": "m46049",
+      "kind": "photo",
+      "width": 1992,
+      "height": 746,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "410_Reticular_Tissue-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 599,
+          "file": "410_Reticular_Tissue-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows reticular tissue alongside a micrograph. The diagram shows a series of small, oval cells embedded in a yellowish matrix. Thin reticular fibers spread and crisscross throughout the matrix. In the micrograph, the reticular fibers are thin, dark, and seem to travel between the many deeply stained cells.",
+      "caption": "This is a loose connective tissue made up of a network of reticular fibers that provides a supportive framework for soft organs. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "411_Reg_Dense-Irregular_Dense": {
+      "source": "media/411_Reg_Dense-Irregular_Dense.jpg",
+      "sourceSha256": "0b7256898dc43b2200e05725609d8215c14d6a3531f58ef9e399e29d087fb399",
+      "module": "m46049",
+      "kind": "photo",
+      "width": 1972,
+      "height": 1372,
+      "variants": [
+        {
+          "width": 800,
+          "height": 556,
+          "file": "411_Reg_Dense-Irregular_Dense-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1113,
+          "file": "411_Reg_Dense-Irregular_Dense-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A shows a diagram of regular dense connective tissue alongside a micrograph. The tissue is composed of parallel, thread-like collagen fibers running vertically through the diagram. Between the vertical fibers, several dark, oval shaped fibroblast nuclei are visible. In the micrograph, the whitish collagen strands run horizontally. Several dark purple fibroblast nuclei are embedded in the lightly stained matrix. Part B shows a diagram of irregular dense connective tissue on the left and a micrograph on the right. In the diagram, the collagen fibers are arranged in bundles that curve and loop throughout the tissue. The fibers within a bundle run parallel to each other, but separate bundles crisscross throughout the tissue. Because of this, the irregular dense connective tissue appears less organized than the regular dense connective tissue. This is also evident in the micrograph, where the white collagen bundles radiate throughout the micrograph in all directions. The fibroblasts are visible as red stained cells with dark purple nuclei.",
+      "caption": "(a) Dense regular connective tissue consists of collagenous fibers packed into parallel bundles. (b) Dense irregular connective tissue consists of collagenous fibers interwoven into a mesh-like network. From top, LM × 1000, LM × 200. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "412_Types_of_Cartilage-new": {
+      "source": "media/412_Types_of_Cartilage-new.jpg",
+      "sourceSha256": "25e6e4b4d81353cef9847e71b75a70035ad5101a19cb4223eb016d229fd7f57e",
+      "module": "m46049",
+      "kind": "photo",
+      "width": 1927,
+      "height": 2280,
+      "variants": [
+        {
+          "width": 800,
+          "height": 946,
+          "file": "412_Types_of_Cartilage-new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1893,
+          "file": "412_Types_of_Cartilage-new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A of this diagram is a drawing and a micrograph of hyaline cartilage. The cartilage contains chondrocytes encapsulated in lacunae. Several of the lacunae are joined into groups or small stacks and embedded in the surrounding matrix. The micrograph shows the lacunae as white rings surrounding the purple staining chondrocytes. Some occur as joined pairs while others are embedded singly within the pink staining matrix. Image B shows a diagram and a micrograph of fibrocartilage that contains many fine collagen fibers embedded in the matrix. The collagen fibers are roughly parallel to each but run through the matrix in a wavy fashion. There are also four round chondrocyte cells embedded within the matrix. In the micrograph, the matrix is shaded red and the collagen fibers are visible in white. The lacunae are clearly visible as a faint purple ring containing several dark purple chondrocytes. Part C shows a diagram and micrograph of elastic cartilage. In the diagram, fine elastic fibers are seen crisscrossing the matrix. Many of the elastic fibers branch off from each other, unlike the collagen fibers depicted in parts A and B. The lacunae are clearly visible as white rings containing stained chondrocytes. The fibers stain deeply in this micrograph and can been seen crisscrossing through the tissue.",
+      "caption": "Cartilage is a connective tissue consisting of collagenous fibers embedded in a firm matrix of chondroitin sulfates. (a) Hyaline cartilage provides support with some flexibility. The example is from dog tissue. (b) Fibrocartilage provides some compressibility and can absorb pressure. (c) Elastic cartilage provides firm but elastic support. From top, LM × 300, LM × 1200, LM × 1016. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "413_Types_of_Membranes": {
+      "source": "media/413_Types_of_Membranes.jpg",
+      "sourceSha256": "3c102780a911b110f49e72f5e341f2a27d1d9b2fe241ebb9aa41aa44f809c39b",
+      "module": "m46046",
+      "kind": "photo",
+      "width": 548,
+      "height": 800,
+      "variants": [
+        {
+          "width": 548,
+          "height": 800,
+          "file": "413_Types_of_Membranes-548.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustrations shows the silhouette of a human female from an anterior view. Several organs are showing in her neck, thorax, abdomen left arm and right leg. Text boxes point out and describe the mucous membranes in several different organs. The topmost box points to the mouth and trachea. It states that mucous membranes line the digestive, respiratory, urinary and reproductive tracts. They are coated with the secretions of mucous glands. The second box points to the outside edge of the lungs as well as the large intestine and states that serous membranes line body cavities that are closed to the exterior of the body, including the peritoneal, pleural and pericardial cavities. The third box points to the skin of the hand. It states that cutaneous membrane, also known as the skin, covers the body surface. The fourth box points to the right knee. It states that synovial membranes line joint cavities and produce the fluid within the joint.",
+      "caption": "The two broad categories of tissue membranes in the body are (1) connective tissue membranes, which include synovial membranes, and (2) epithelial membranes, which include mucous membranes, serous membranes, and the cutaneous membrane, in other words, the skin."
+    },
+    "414_Skeletal_Smooth_Cardiac": {
+      "source": "media/414_Skeletal_Smooth_Cardiac.jpg",
+      "sourceSha256": "f3f98e7f67f13fb890a173475630db029586e16527215ee30ba280397f5db66e",
+      "module": "m46055",
+      "kind": "photo",
+      "width": 635,
+      "height": 1068,
+      "variants": [
+        {
+          "width": 635,
+          "height": 1068,
+          "file": "414_Skeletal_Smooth_Cardiac-635.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This shows three micrographs, each depicting one of the three muscle tissues. Picture A shows skeletal muscle tissue, which is dense strips of pink tissue that somewhat resemble bacon in appearance. Many small nuclei are dispersed throughout the tissues. The nuclei are flat and elongated, with multiple nuclei clustered into each cell. Picture B shows smooth muscle, which is densely packed and looks similar to skeletal muscle except that each cell only has one oval-shaped nucleus. Picture C shows cardiac muscle. Unlike skeletal and smooth muscle cells, cardiac muscle cells are not densely packed. The cardiac cells are branched, creating a large amount of space between each muscle cell.",
+      "caption": "(a) Skeletal muscle cells have prominent striation and nuclei on their periphery. (b) Smooth muscle cells have a single nucleus and no visible striations. (c) Cardiac muscle cells appear striated and have a single nucleus. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "415_Neuron": {
+      "source": "media/415_Neuron.jpg",
+      "sourceSha256": "cda28af4cbfe308e71e0cf85b46fcdef911a226a309730d795a9edf6be2dc3c9",
+      "module": "m46057",
+      "kind": "photo",
+      "width": 891,
+      "height": 579,
+      "variants": [
+        {
+          "width": 800,
+          "height": 520,
+          "file": "415_Neuron-800.webp"
+        },
+        {
+          "width": 891,
+          "height": 579,
+          "file": "415_Neuron-891.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a diagram of a neuron and a micrograph showing two neuron cells. The body of the neuron contains a single, purple nucleus. The cell is irregularly shaped, having many projections emerging from its surface. Six sets of dendrites project from the top, right, and bottom edges of the cell. The dendrites are yellow and branch many times after leaving the cell, taking on the appearance of tiny trees. The axon projects from the left edge of the cell. The axon is a long cable like structure that branches into several finger like projections at its end. This is where the neuron makes contact with other cells. A label also notes that the area where the axon emerges from the cell body contains microfibrils and microtubules. The micrograph is considerably less magnified than the diagram. The neurons stain darkly and their nuclei are clearly visible. Their irregular cell body is also visible, along with the beginning of the axons.",
+      "caption": "The cell body of a neuron, also called the soma, contains the nucleus and mitochondria. The dendrites transfer the nerve impulse to the soma. The axon carries the action potential away to another excitable cell. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "416_Nervous_Tissue-new": {
+      "source": "media/416_Nervous_Tissue-new.jpg",
+      "sourceSha256": "f9a9a5b0c160d9f7656f801866796d6695fa0870046fdaa51e5be384daaaa6bf",
+      "module": "m46057",
+      "kind": "photo",
+      "width": 2246,
+      "height": 847,
+      "variants": [
+        {
+          "width": 800,
+          "height": 301,
+          "file": "416_Nervous_Tissue-new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 603,
+          "file": "416_Nervous_Tissue-new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A of this diagram shows various types of nerve cells. The largest cell is a neuron. The central body of the neuron contains a single nucleus. Six sets of dendrites project from the top, left and right, edges of the neuron. The dendrites are yellow and branch many times after leaving the cell, taking on the appearance of tiny trees. The axon projects from the bottom edge of the cell and is covered with purple sheaths labeled the myelin sheath. The sheath is not continuous, but instead is a series of equally spaced segments along the axon. Another cell, called an oligodendrocyte, is spider like in appearance, with its leg-like projections each connecting to a segment of the neuron’s myelin sheath. Above the neuron are three astrocytes. They are much smaller than the neuron and have no axons, and are also irregularly shaped cells with many dendrites projecting from the central body. Finally, a microglial cell is shown above the neuron. It is the smallest of the cells in this figure and is an elongated cell with many fine, tentacle-like projections. The projections are concentrated at the two ends of the cell, with the middle area lacking any projections. The micrograph of the neural tissue shows that this tissue is very heterogenous, with both large and small cells embedded in the matrix. Much of the space between the cells is occupied by threadlike nerve fibers.",
+      "caption": "Nervous tissue is made up of neurons and neuroglia. The cells of nervous tissue are specialized to transmit and receive impulses. LM × 872. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "417_Tissue_Repair": {
+      "source": "media/417_Tissue_Repair.jpg",
+      "sourceSha256": "9e9c8dc8c9b5ad111c86d7dfda6a1d1dd20535a1aceec5d1afc8829e300041f5",
+      "module": "m46058",
+      "kind": "photo",
+      "width": 1128,
+      "height": 549,
+      "variants": [
+        {
+          "width": 800,
+          "height": 389,
+          "file": "417_Tissue_Repair-800.webp"
+        },
+        {
+          "width": 1128,
+          "height": 549,
+          "file": "417_Tissue_Repair-1128.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the wound healing process in three steps. Each step shows a cross section of wounded skin. The wound extends through the upper layer of skin, labeled the epidermis, about halfway through the dermis, the lower deeper layer of skin. At the base of the cross section, an artery runs horizontally through fatty tissue below the dermis. Several small capillaries branch from the artery and travel into the upper regions of the dermis. In the first step of healing, inflammatory chemicals, symbolized with green dots, are released from the injury site. The chemicals travel through the dermis and enter the horizontal artery. Clotting proteins and plasma proteins also initiate clotting within the wound, forming a scab, which is clearly visible in the second step as a black and brown mass covering the upper regions of the wound. Below the scab, epithelial cells in the epidermis multiply and begin to fill in the wound. In the dermis, three fibrocytes are binding the wound area with white tissue. This tissue is granulation tissue. Laying down granulation tissue restores the vascular supply, as indicated by capillaries growing around the wounded area. In the third step, the scab is gone and the epidermis has grown in and contracted to seal the upper portion of the wound. In the deeper regions, the wound is now completely filled with granulation tissue with is now considered scar tissue.",
+      "caption": "During wound repair, collagen fibers are laid down randomly by fibroblasts that move into repair the area."
+    },
+    "418_Development_of_Cancer": {
+      "source": "media/418_Development_of_Cancer.jpg",
+      "sourceSha256": "03b27d835634eafbfc34fc95893e25cc4bfac92f67cff52ef6781f0fdde201f8",
+      "module": "m46058",
+      "kind": "photo",
+      "width": 572,
+      "height": 1218,
+      "variants": [
+        {
+          "width": 572,
+          "height": 1218,
+          "file": "418_Development_of_Cancer-572.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This series of three diagrams shows the development of cancer in epithelial cells. In all three diagrams, layers of epithelial tissue cover a generic underlying tissue. In the first diagram, an injury kills a section of the epithelial cells. In the second image, new epithelial cells have completely filled in the wounded area. However, cell division is still accelerating. In the lowest diagram, the epithelial cells have continued to divide and have now expanded beyond the original wound area. The group of dividing cells, now called a carcinoma, breaks into the layer of underlying tissue.",
+      "caption": "Note the change in cell size, nucleus size, and organization in the tissue."
+    },
+    "419_420_421_Table_04_01_updated": {
+      "source": "media/419_420_421_Table_04_01_updated.jpg",
+      "sourceSha256": "cc0745b41e376d99d23ec38cba4328874ae2a09e2fcd1d1f12d68c98b3d56dec",
+      "module": "m46046",
+      "kind": "photo",
+      "width": 1988,
+      "height": 2263,
+      "variants": [
+        {
+          "width": 800,
+          "height": 910,
+          "file": "419_420_421_Table_04_01_updated-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1821,
+          "file": "419_420_421_Table_04_01_updated-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a two column-table containing both text and illustrations. The left column is titled germ layer while the right column is titled “Gives rise to.” The germ layer in the first row is ectoderm. Ectoderm gives rise to epidermis, glands on the skin, some cranial bones, the pituitary and adrenal medulla, the nervous system, the tissue between the cheeks and gums, and the anus. This row contains three pictures. The leftmost picture illustrates several layers of yellow, oval-shaped skin cells with purple nuclei. The middle diagram shows a neuron, which is a yellow, star shaped cell with finger like branches at its corners. The neuron also has a purple nucleus and a yellow tube that connects to the bottom of the cell. The right image in this row shows a brown pigment cell embedded at the bottom layer of several skin cells. It is secreting dark-colored pigment into the skin cells from tentacle-like projections. The germ layer in the second row is mesoderm. Mesoderm gives rise to connective tissues, bone, cartilage, blood, the endothelium of blood vessels, muscle, synovial membranes, serous membranes that line body cavities, the kidneys, and the lining of the gonads. Five images are given in this row to illustrate. The leftmost image is cardiac muscle, which is cylindrical and curved. There are many open spaces between neighboring cardiac muscles. The next image shows skeletal muscle, which is a series of closely stacked cylinders with well defined horizontal striping. The middle image shows three tubule cells of the kidney, which are square shaped and contain a brown nucleus. The fourth image shows a series of red blood cells, which are red and saucer shaped with a slight depression at the center. The fifth image shows smooth muscles which are tightly packed, diamond shaped cells with oval-shaped nuclei. Endoderm gives rise to the lining of the airways and digestive system (except the mouth and distal part of digestive system). Also, the rectum and anal canal, digestive glands, endocrine glands, and adrenal cortex all develop from endoderm. The leftmost image in this row shows a lung cell, which is a large, purple, trapezoid-shaped cell. The middle image shows a pair of thyroid cells, which are rectangle-shaped with the upper edge of each cell having a row of finger like projections, similar in appearance to carpet. The rightmost image in this row shows a pancreatic cell, which is large and wedge-shaped. The pancreatic cell has small indentations throughout its cell membrane.",
+      "caption": ""
+    },
     "422_Feature_Stem_Cell_new": {
       "source": "media/422_Feature_Stem_Cell_new.png",
       "sourceSha256": "ca6055af2969dfa817e1b1908fa5378f22f4e8d2523e19a945080467d02013b0",
@@ -1891,6 +2359,546 @@
       "transparent": true,
       "alt": "This flow chart shows the differentiation of stem cells into different cell types. The top layer shows a totipotent stem cell, which becomes a pluripotent stem cell and then a multipotent stem cell. A multipotent stem cell can then differentiate into different cell types.",
       "caption": "The capacity of stem cells to differentiate into specialized cells make them potentially valuable in therapeutic applications designed to replace damaged cells of different body tissues."
+    },
+    "423_Table_04_02_Summary_of_Epithelial_Tissue_CellsN": {
+      "source": "media/423_Table_04_02_Summary_of_Epithelial_Tissue_CellsN.jpg",
+      "sourceSha256": "525ae4fbee85b76a8a7f1247326d87f49d37d5203abf421891fcbca6cd69feec",
+      "module": "m46048",
+      "kind": "photo",
+      "width": 1867,
+      "height": 3000,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1285,
+          "file": "423_Table_04_02_Summary_of_Epithelial_Tissue_CellsN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2571,
+          "file": "423_Table_04_02_Summary_of_Epithelial_Tissue_CellsN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure is a table with three columns and eight rows. The leftmost column is titled cells, and contains a drawing in each row showing how epithelial cells are arranged above a basement membrane. The middle column is titled location, while the rightmost column is titled function. In a simple squamous epithelium, the cells are flattened and single-layered. Simple squamous cells are found in the air sacs of the lungs, in the lining of the heart, blood vessels and lymphatic vessels. Their function is to allow materials to pass through by diffusion and filtration, as well as to secrete lubricating substances. In a simple cuboidal epithelium, the cells are cube shaped and single layered and located in ducts and secretory portions of small glands as well as in the kidney tubules. The function of simple cuboidal epithelium is to secrete and absorb. In a simple columnar epithelium, the cells are rectangular and are attached to the basement membrane on one of their narrow sides, so that each cell is standing up like a column. There is only one layer of cells. Simple columnar epithelium is found in ciliated tissues including the larger bronchioles, uterine tubes, and uterus, as well as in smooth, nonciliated tissues such as the digestive tract bladder. The function of simple columnar epithelium is to absorb substances but also to secrete mucous and enzymes. In a pseudostratified columnar epithelium, the cells are column-like in appearance, but they vary in height. The taller cells bend over the tops of the shorter cells so that the top of the epithelial tissue is continuous. There is only one layer of cells. Pseudostratified columnar epithelium lines the bronchi, the trachea, and much of the upper respiratory tract. The function of pseudostratified columnar epithelium is to secrete mucous and also move that mucus using the hair like cilia projecting from the top of each cell. A stratified squamous epithelium contains many layers of flattened cells. Stratified squamous epithelium lines the esophagus, mouth, and vagina. The function of stratified squamous epithelium is to protect against abrasion. Stratified cuboidal epithelium contains many layers of cube-shaped cells. Stratified cuboidal epithelium is found in the sweat glands, salivary glands, and mammary glands. The function of stratified cuboidal epithelium is to protect other tissues of the body. Stratified columnar epithelium contains many layers of rectangular, column-shaped cells. Stratified columnar epithelium is located in the male and female urethrae and the ducts of some glands. The function of stratified columnar epithelium is to secrete and protect. Transitional epithelium consists of many layers of irregularly shaped cells with diverse sizes. Transitional epithelium is found lining the bladder, urethra and ureters. The function of transitional epithelium is to allow the urinary organs to expand and stretch.",
+      "caption": ""
+    },
+    "424_Blood_A_Fluid_Connective_Tissue-new": {
+      "source": "media/424_Blood_A_Fluid_Connective_Tissue-new.jpg",
+      "sourceSha256": "35d5b28d152fec94f8ee73051af270f8655d59b6e0fa9b0332c6f23f7981dfc8",
+      "module": "m46049",
+      "kind": "photo",
+      "width": 1439,
+      "height": 760,
+      "variants": [
+        {
+          "width": 800,
+          "height": 422,
+          "file": "424_Blood_A_Fluid_Connective_Tissue-new-800.webp"
+        },
+        {
+          "width": 1439,
+          "height": 760,
+          "file": "424_Blood_A_Fluid_Connective_Tissue-new-1439.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph of a blood smear shows a group of red blood cells and a single white blood cell. The red cells are small discs which have a slight depression at their centers with no nuclei present. The white blood cell is larger and more darkly stained and has a large, prominent nucleus that is also darkly stained.",
+      "caption": "Blood is a fluid connective tissue containing erythrocytes and various types of leukocytes that circulate in a liquid extracellular matrix. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "500_Splash_Image": {
+      "source": "media/500_Splash_Image.jpg",
+      "sourceSha256": "067500ab5d7fc8837d62ff00485b0da79cc611bc82e7ba551e99f790b225e8e3",
+      "module": "m46059",
+      "kind": "photo",
+      "width": 1144,
+      "height": 372,
+      "variants": [
+        {
+          "width": 800,
+          "height": 260,
+          "file": "500_Splash_Image-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 372,
+          "file": "500_Splash_Image-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Photo A shows a person getting a tattoo on the foot. Photo B shows a woman getting her eyebrows groomed.",
+      "caption": "Your skin is a vital part of your life and appearance (a–b). Some people choose to embellish it with tattoos (a) or makeup (b). (credit a: Steve Teo; credit b: “spaceodissey”/flickr)"
+    },
+    "501_Structure_of_the_skin": {
+      "source": "media/501_Structure_of_the_skin.jpg",
+      "sourceSha256": "daabe7012c17ae8c9a053934275102f4c676a08c047621fed058202fb4eb546d",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 2391,
+      "height": 1873,
+      "variants": [
+        {
+          "width": 800,
+          "height": 626,
+          "file": "501_Structure_of_the_skin-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1253,
+          "file": "501_Structure_of_the_skin-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a cross section of skin tissue. The outermost layer is called the epidermis, and occupies one fifth of the cross section. Several hairs are emerging from the surface. The epidermis dives around one of the hairs, forming a follicle. The middle layer is called the dermis, which occupies four fifths of the cross section. The dermis contains an erector pilli muscle connected to one of the follicles. The dermis also contains an eccrine sweat gland, composed of a bunch of tubules. One tubule travels up from the bunch, through the epidermis, opening onto the surface a pore. There are two string-like nerves travelling vertically through the dermis. The right nerve is attached to a Pacinian corpuscle, which is a yellow structure consisting of concentric ovals similar to an onion. The lowest level of the skin, the hypodermis, contains fatty tissue, arteries, and veins. Blood vessels travel from the hypodermis and connect to hair follicles and erector pilli muscle in the dermis.",
+      "caption": "The skin is composed of two main layers: the epidermis, made of closely packed epithelial cells, and the dermis, made of dense, irregular connective tissue that houses blood vessels, hair follicles, sweat glands, and other structures. Beneath the dermis lies the hypodermis, which is composed mainly of loose connective and fatty tissues."
+    },
+    "502_Layers_of_epidermis": {
+      "source": "media/502_Layers_of_epidermis.jpg",
+      "sourceSha256": "2a546d98bff712ceb67bed6ad0e03d5d9b98cb0de54ca6f3f0deec025c26a074",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 1080,
+      "height": 854,
+      "variants": [
+        {
+          "width": 800,
+          "height": 632,
+          "file": "502_Layers_of_epidermis-800.webp"
+        },
+        {
+          "width": 1080,
+          "height": 854,
+          "file": "502_Layers_of_epidermis-1080.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a cross section of the epidermis. The cells of the innermost layer, the stratum basale, are large and have a purple nucleus. The stratum basale curls around the dermis, which projects into the epidermis. The stratum basale contains four layers of large, triangle-shaped keratinocytes. Fibers are visible within the spaces between keratinocytes in the stratum basale. A melanocyte is also present in this layer. The melanocyte possesses finger-like projections extending from its main cell body. The projections branch through the extracellular spaces between nearby keratinocytes. Above the stratum basale is the stratum spinosum which consists of 8 layers of oval-shaped keratinocytes. The nucleus is present in these keratinocytes, but has faded to a lighter purple. The stratum granulosum contains five layers of keratinocytes, each containing spots in its cytoplasm, labeled the lamellar granules. The stratum lucidium contains 4 layers of diamond-shaped cells with no nucleus. The stratum corneum contains 9 layers of keratinocytes with no nucleus , nor cytoplasm. A few of the cells in the topmost layer of the stratum corneum are flaking off from the skin.",
+      "caption": "The epidermis of thick skin has five layers: stratum basale, stratum spinosum, stratum granulosum, stratum lucidum, and stratum corneum."
+    },
+    "502ab_Thin_Skin_versus_Thick_Skin": {
+      "source": "media/502ab_Thin_Skin_versus_Thick_Skin.jpg",
+      "sourceSha256": "36f53f8d0fb72c98fec0129adef450f312dcd1432bcbd73ed398b582780c1109",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 1950,
+      "height": 712,
+      "variants": [
+        {
+          "width": 800,
+          "height": 292,
+          "file": "502ab_Thin_Skin_versus_Thick_Skin-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 584,
+          "file": "502ab_Thin_Skin_versus_Thick_Skin-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A is a micrograph showing a cross section of thin skin. The topmost layer is a thin, translucent layer with irregular texture and areas where cells are sloughing off. The deepest layer is dark purple and extends into the third layer with finger like projections. The third light purple layer contains thin bands of fibers and small, dark cells. The fourth, and deepest layer, is darker than the third layer, but is still light purple. It contains thick fiber bands that are loosely packed. Part B is a magnified view of the epidermis of thick skin. It shows the topmost layer is five times thicker than the topmost layer of thin skin. The topmost layer of thick skin is also denser and less translucent than the topmost layer of thin skin.",
+      "caption": "These slides show cross-sections of the epidermis and dermis of (a) thin and (b) thick skin. Note the significant difference in the thickness of the epithelial layer of the thick skin. From top, LM × 40, LM × 40. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "503_Epidermis": {
+      "source": "media/503_Epidermis.jpg",
+      "sourceSha256": "45e6e5d7fbb85ae5f7d67e6179356bbd1487150fa040b46ad8eaad7992a25f82",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 540,
+      "height": 368,
+      "variants": [
+        {
+          "width": 540,
+          "height": 368,
+          "file": "503_Epidermis-540.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The outer layer of cells in this micrograph is the thinnest layer and stained deep purple due to full keratinization of dead cells. The next layer occupies one quarter of the micrograph, is lightly stained, and is a dense collection of cells. The third layer from the top is mostly white, with lightly stained, loosely-packed strands radiating in random directions. The bottom-most layer is densely-packed, with thick bands of highly organized muscle tissue that are darkly stained.",
+      "caption": "The epidermis is epithelium composed of multiple layers of cells. The basal layer consists of cuboidal cells, whereas the outer layers are squamous, keratinized cells, so the whole epithelium is often described as being keratinized stratified squamous epithelium. LM × 40. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "504_Melanocytes": {
+      "source": "media/504_Melanocytes.jpg",
+      "sourceSha256": "50ecae650edcbb1e6343c205e497a9fd30c4db4621d2b7092eea81f1ac8591e3",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 1133,
+      "height": 894,
+      "variants": [
+        {
+          "width": 800,
+          "height": 631,
+          "file": "504_Melanocytes-800.webp"
+        },
+        {
+          "width": 1133,
+          "height": 894,
+          "file": "504_Melanocytes-1133.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure consists of two diagrams side by side. The right diagram shows development of light colored skin; the left shows development of dark-colored skin. In both, a brown melanocyte sits at the border between the dermis and epidermis. The melanocyte has a large nucleus and six finger-like extensions. These reach between cells of the stratum basalis. Sections of the extensions detach and travel through the skins. These are melanosomes. In the left diagram, both the melanocyte and melanosomes contain melanin particles, shown as dark dots. Melanosomes travel upwards to outer skin layers, releasing melanin. As a result, keratinocytes in the left diagram contain several melanin particles that darken skin color. In light colored skin, the melanocyte contains no melanin. It still releases melanosomes into upper layers of the skin; however, these melanosomes contain no melanin. Therefore, the skin does not darken and remains light.",
+      "caption": "The relative coloration of the skin depends on the amount of melanin produced by melanocytes in the stratum basale and taken up by keratinocytes."
+    },
+    "505_Cells_of_the_Epidermis": {
+      "source": "media/505_Cells_of_the_Epidermis.jpg",
+      "sourceSha256": "19cbb8753614540abf5cb48ec91133ce28a55b4245f93f3807abe07401e0e9fe",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 1731,
+      "height": 1393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 643,
+          "file": "505_Cells_of_the_Epidermis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1287,
+          "file": "505_Cells_of_the_Epidermis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph of the epidermis shows stratum corneum as a rough, darkened layer. The next layer, the stratum granulosum, contains white cells with areas of black in their cytoplasm, equal in thickness to the stratum corneum. The third layer, the stratum spinosum, contains large, grayish cells. The stratum spinosum is the thickest layer, occupying half of the micrograph. A hair follicle is embedded in this layer, which is a round structure with black, concentric spots. The fourth layer is the stratum basalis, which contains grayish cells with clear, dark nuclei, similar in thickness to the stratum corneum. The dermis is the deepest layer, and is lightly-colored with interspersed gray cells. A cross-section of a capillary is visible within the dermis.",
+      "caption": "The cells in the different layers of the epidermis originate from basal cells located in the stratum basale, yet the cells of each layer are distinctively different. EM × 2700. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "506_Hair": {
+      "source": "media/506_Hair.jpg",
+      "sourceSha256": "4b4d950ab86273a0e67c5dd498344cea625a972986b16002412f3bac14620b6d",
+      "module": "m46062",
+      "kind": "photo",
+      "width": 614,
+      "height": 749,
+      "variants": [
+        {
+          "width": 614,
+          "height": 749,
+          "file": "506_Hair-614.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a cross section of the skin containing a hair follicle. The follicle is teardrop shaped. Its enlarged base, labeled the hair bulb, is embedded in the hypodermis. The outermost layer of the follicle is the epidermis, which invaginates from the skin surface to envelope the follicle. Within the epidermis is the outer root sheath, which is only present on the hair bulb. It does not extend up the shaft of the hair. Within the outer root sheath is the inner root sheath. The inner root sheath extends about half of the way up the hair shaft, ending midway through the dermis. The hair matrix is the innermost layer. The hair matrix surrounds the bottom of the hair shaft where it is embedded within the hair bulb. The hair shaft, in itself, contains three layers: the outermost cuticle, a middle layer called the cortex, and an innermost layer called the medulla.",
+      "caption": "Hair follicles originate in the epidermis and have many different parts."
+    },
+    "506_Layers_of_the_Dermis": {
+      "source": "media/506_Layers_of_the_Dermis.jpg",
+      "sourceSha256": "224d2918f3b230c9eee673b7ad9a01effd6847ef599264057a5a47a5f7a3df2c",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 523,
+      "height": 674,
+      "variants": [
+        {
+          "width": 523,
+          "height": 674,
+          "file": "506_Layers_of_the_Dermis-523.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows layers of skin in a cross section. The papillary layer of the dermis extends between the downward fingers of the darkly stained epidermis. The papillary layer appears finer than the reticular layer, consisting of smaller, densely-packed fibers. The reticular layer is three times thicker than the papillary layer and contains larger, thicker fibers. The fibers seem more loosely packed than those of the papillary layer, with some separated by empty spaces. Both layers of the dermis contain cells with darkly stained nuclei.",
+      "caption": "This stained slide shows the two components of the dermis—the papillary layer and the reticular layer. Both are made of connective tissue with fibers of collagen extending from one to the other, making the border between the two somewhat indistinct. The dermal papillae extending into the epidermis belong to the papillary layer, whereas the dense collagen fiber bundles below belong to the reticular layer. LM × 10. (credit: modification of work by “kilbad”/Wikimedia Commons)"
+    },
+    "507_Nails": {
+      "source": "media/507_Nails.jpg",
+      "sourceSha256": "48841080b34e999ca501fedb7479a88b8d7ebb6924322b6460bee0df6604a6b5",
+      "module": "m46062",
+      "kind": "photo",
+      "width": 1610,
+      "height": 582,
+      "variants": [
+        {
+          "width": 800,
+          "height": 289,
+          "file": "507_Nails-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 578,
+          "file": "507_Nails-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "These two images show anatomy of the fingernail region. The top image shows a dorsal view of a finger. The proximal nail fold is the part underneath where the skin of the finger connects with the edge of the nail. The eponychium is a thin, pink layer between the white proximal edge of the nail (the lunula), and the edge of the finger skin. The lunula appears as a crescent-shaped white area at the proximal edge of the pink-shaded nail. The lateral nail folds are where the sides of the nail contact the finger skin. The distal edge of the nail is white and is called the free edge. An arrow indicates that the nail grows distally out from the proximal nail fold. The lower image shows a lateral view of the nail bed anatomy. In this view, one can see how the edge of the nail is located just proximal to the nail fold. This end of the nail, from which the nail grows, is called the nail root.",
+      "caption": "The nail is an accessory structure of the integumentary system."
+    },
+    "508_Eccrine_gland": {
+      "source": "media/508_Eccrine_gland.jpg",
+      "sourceSha256": "af1f056e2640144b3a9c3d518137568730041add04ce7713ec34528580547d45",
+      "module": "m46062",
+      "kind": "photo",
+      "width": 673,
+      "height": 648,
+      "variants": [
+        {
+          "width": 673,
+          "height": 648,
+          "file": "508_Eccrine_gland-673.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows an eccrine sweat gland embedded in a cross section of skin tissue. The eccrine sweat gland is a bundle of white tubes embedded in the dermis. A single white tube travels up from the bundle and opens on to the surface of the epidermis. The opening is called a pore. There are several pores on the small block of skin portrayed in this diagram.",
+      "caption": "Eccrine glands are coiled glands in the dermis that release sweat that is mostly water."
+    },
+    "508_Moles": {
+      "source": "media/508_Moles.jpg",
+      "sourceSha256": "53f0bfe2082bc6763eddff65241f54790340cee49904f5b9e6cb331b5890a44f",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 931,
+      "height": 889,
+      "variants": [
+        {
+          "width": 800,
+          "height": 764,
+          "file": "508_Moles-800.webp"
+        },
+        {
+          "width": 931,
+          "height": 889,
+          "file": "508_Moles-931.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Five photos of moles. The three upper photos show moles that are small, flat, and dark brown. The bottom left photo shows a dark black mole that is raised above the skin. The bottom right photo shows a large, raised, reddish mole with protruding hairs.",
+      "caption": "Moles range from benign accumulations of melanocytes to melanomas. These structures populate the landscape of our skin. (credit: the National Cancer Institute)"
+    },
+    "509_Vitiligo": {
+      "source": "media/509_Vitiligo.jpg",
+      "sourceSha256": "7926b32c7f1ffff8ca05e11a706d1592c94be6b0367b0ddcc47c65c7db61d0fe",
+      "module": "m46060",
+      "kind": "photo",
+      "width": 1139,
+      "height": 782,
+      "variants": [
+        {
+          "width": 800,
+          "height": 549,
+          "file": "509_Vitiligo-800.webp"
+        },
+        {
+          "width": 1139,
+          "height": 782,
+          "file": "509_Vitiligo-1139.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "(a) This photo shows the back of a man’s neck. There is a large, discolored patch of skin at the base of his hairline. The discolored area extends over the ears onto the cheeks, toward the front of the face. The man’s head and facial hair are mostly gray, but white patches of hair are seen above the discolored skin. (b) A photograph of the model Winnie Harlow, who has patches of unpigmented skin around her mouth and face.",
+      "caption": "Individuals with vitiligo experience depigmentation that results in lighter colored patches of skin. The condition is especially noticeable on darker skin. (credit: (a) Klaus D. Peter (b) Owl Bridge Media / Wikimedia.)"
+    },
+    "511_Hair_Follicle": {
+      "source": "media/511_Hair_Follicle.jpg",
+      "sourceSha256": "1cb9c667eff708770154e03be5c887fe1ee56c79c600332dedb6e07386a75f65",
+      "module": "m46062",
+      "kind": "photo",
+      "width": 545,
+      "height": 379,
+      "variants": [
+        {
+          "width": 545,
+          "height": 379,
+          "file": "511_Hair_Follicle-545.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph is of the base of a hair follicle. The protruding hair is largely transparent, with only its dark outline visible. The inner root sheath is visible surrounding the very bottom of the hair as a circle of cells with dark-staining nuclei. The inner sheath extends up the hair shaft. The outer root sheath is much thicker than the inner root sheath, consisting of a large oval of lighter staining cells. The oval surrounds the bottom of the hair and extends into the hypodermis.",
+      "caption": "The slide shows a cross-section of a hair follicle. Basal cells of the hair matrix in the center differentiate into cells of the inner root sheath. Basal cells at the base of the hair root form the outer root sheath. LM × 4. (credit: modification of work by “kilbad”/Wikimedia Commons)"
+    },
+    "513_Degree_of_burns": {
+      "source": "media/513_Degree_of_burns.jpg",
+      "sourceSha256": "e59a863ebb1e4496a9cf501e6a946d98e8282552d3a3b57dcdd35e56abb6cb73",
+      "module": "m46066",
+      "kind": "photo",
+      "width": 696,
+      "height": 780,
+      "variants": [
+        {
+          "width": 696,
+          "height": 780,
+          "file": "513_Degree_of_burns-696.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram depicts the percentage of the total body area burned when a victim suffers complete burns to regions of the body. Complete burning of the face, head and neck account for 19% of the total body area. Burning of the chest, abdomen and entire back above the waist accounts for 36% of the total body area. Anterior and posterior surfaces of the arms and hands account for 18% of the total body area (9% for each arm). The anterior and posterior surface of both legs, along with the buttocks, accounts for 36% of the total body area (18% for each leg). Finally, the anterior and posterior surfaces of the genitalia account for 1% of the total body area.",
+      "caption": "The size of a burn will guide decisions made about the need for specialized treatment. Specific parts of the body are associated with a percentage of body area."
+    },
+    "514_Light_Micrograph_of_a_Meissner_Corpuscle": {
+      "source": "media/514_Light_Micrograph_of_a_Meissner_Corpuscle.jpg",
+      "sourceSha256": "b43ceef9afd73e3d0adc20492e4c46a624b88d36e90a8bc8f267dd1c5b8737cd",
+      "module": "m46064",
+      "kind": "photo",
+      "width": 800,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "514_Light_Micrograph_of_a_Meissner_Corpuscle-800.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows a skin cross section at low magnification. The Meissner’s corpuscle is a large, oval-shaped structure located in the papillary layer of the dermis, under the lowest deepest layer of the epidermis. The corpuscle contains a dark staining oval within the outer, light staining oval. Several horizontal bars are arranged vertically within the inner oval. Also, several cells with dark purple nuclei can be seen scattered throughout the corpuscle.",
+      "caption": "In this micrograph of a skin cross-section, you can see a Meissner corpuscle (arrow), a type of touch receptor located in a dermal papilla adjacent to the basement membrane and stratum basale of the overlying epidermis. LM × 100. (credit: “Wbensmith”/Wikimedia Commons)"
+    },
+    "515_Acne_formation": {
+      "source": "media/515_Acne_formation.jpg",
+      "sourceSha256": "b41e2f3c728aada67dcbe2ec19d82c2fd69fc10317e27b1d2cf495186fd55723",
+      "module": "m46066",
+      "kind": "photo",
+      "width": 820,
+      "height": 446,
+      "variants": [
+        {
+          "width": 800,
+          "height": 435,
+          "file": "515_Acne_formation-800.webp"
+        },
+        {
+          "width": 820,
+          "height": 446,
+          "file": "515_Acne_formation-820.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three diagrams show the progression of acne in three steps from left to right. All three depict a cross section of skin containing a hair follicle. In the left diagram, the follicle has a swollen area about halfway up the hair shaft, just above a sebaceous gland. The follicle is plugged with sebum, depicted as a yellowish substance. In the middle diagram, the follicle has become more swollen, as a label indicates that bacteria are reproducing within the blockage. The surrounding epidermis becomes inflamed as a result of the bacterial infection. In the rightmost image, the blockage has swollen to about five times its original size and has broken the surrounding epidermis, which is now red and inflamed.",
+      "caption": "Acne is a result of over-productive sebaceous glands, which leads to formation of blackheads and inflammation of the skin."
+    },
+    "515_Thermoregulation": {
+      "source": "media/515_Thermoregulation.jpg",
+      "sourceSha256": "b3eb931f3e37ac3ace814275c07d944d53d1e8f066328e6f52c8de2552c00164",
+      "module": "m46064",
+      "kind": "photo",
+      "width": 1117,
+      "height": 494,
+      "variants": [
+        {
+          "width": 800,
+          "height": 354,
+          "file": "515_Thermoregulation-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 494,
+          "file": "515_Thermoregulation-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A is a photo of a man skiing with several snow-covered trees in the background. Part B is a diagram with a right and left half. The left half is titled “ Heat is retained by the body,” while the right half is titled “Heat loss through radiation and convection.” Both show blood flowing from an artery through three capillary beds within the skin. The beds are arranged vertically, with the topmost bed located along the boundary of the dermis and epidermis. The bottommost bed is located deep in the hypodermis. The middle bed is evenly spaced between the topmost and bottommost beds. In each bed, oxygenated blood (red) enters the bed on the left and deoxygenated blood (blue) leaves the bed on the right. The left diagram shows a picture of snowflakes above the capillary beds, indicating that the weather is cold. Blood is only flowing through the deepest of the three capillary beds, as the upper beds are closed off to reduce heat loss from the outer layers of the skin. The right diagram shows a picture of the sun above the capillary beds, indicating that the weather is hot. Blood is flowing through all three capillary beds, allowing heat to radiate out of the blood, increasing heat loss. Part C is a photo of a man running through a forested trail on a summer day.",
+      "caption": "During strenuous physical activities, such as skiing (a) or running (c), the dermal blood vessels dilate and sweat secretion increases (b). These mechanisms prevent the body from overheating. In contrast, the dermal blood vessels constrict to minimize heat loss in response to low temperatures (b). (credit a: “Trysil”/flickr; credit c: Ralph Daily)"
+    },
+    "516_Aging": {
+      "source": "media/516_Aging.jpg",
+      "sourceSha256": "b6fc6f29dd33481527636d3f73fbf84da253c31c945f85ce750f15f5e36b01a5",
+      "module": "m46064",
+      "kind": "photo",
+      "width": 975,
+      "height": 689,
+      "variants": [
+        {
+          "width": 800,
+          "height": 565,
+          "file": "516_Aging-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 689,
+          "file": "516_Aging-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure consists of two photos. One photo shows a young woman on the phone. Her skin is smooth and unwrinkled. The other photo shows an elderly women in the same posture while on the phone. The skin of her hands and forearms is wrinkled.",
+      "caption": "Generally, skin, especially on the face and hands, starts to display the first noticeable signs of aging, as it loses its elasticity over time. (credit: Janet Ramsden)"
+    },
+    "517_Basal_Cell_Carcinoma": {
+      "source": "media/517_Basal_Cell_Carcinoma.jpg",
+      "sourceSha256": "90f9ce03548f11eab6bc803db52226f0b1c19248b930cedced33cee37078516d",
+      "module": "m46066",
+      "kind": "photo",
+      "width": 975,
+      "height": 649,
+      "variants": [
+        {
+          "width": 800,
+          "height": 532,
+          "file": "517_Basal_Cell_Carcinoma-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 649,
+          "file": "517_Basal_Cell_Carcinoma-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows an enlarged view of a basal cell carcinoma, a large, pink, irregular bump on the skin. The carcinoma is marked with irregular, dark-red stripes that resemble tiny blood vessels. The surrounding skin is the same pink color as the carcinoma, but without the red striping or raised appearance",
+      "caption": "Basal cell carcinoma can take several different forms. Similar to other forms of skin cancer, it is readily cured if caught early and treated. (credit: John Hendrix, MD)"
+    },
+    "518_Squamous_Cell_Carcinoma": {
+      "source": "media/518_Squamous_Cell_Carcinoma.jpg",
+      "sourceSha256": "1107f1cd6bcbfab76a610762364b982b3c270665101e9e590154f4faf78c2477",
+      "module": "m46066",
+      "kind": "photo",
+      "width": 975,
+      "height": 650,
+      "variants": [
+        {
+          "width": 800,
+          "height": 533,
+          "file": "518_Squamous_Cell_Carcinoma-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 650,
+          "file": "518_Squamous_Cell_Carcinoma-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a man’s nose. The squamous cell carcinoma is located just above the tip of the nose and appears as a deep red, irregularly-shaped sore that spans almost the entire bridge of his nose.",
+      "caption": "Squamous cell carcinoma presents here as a lesion on an individual’s nose. (credit: the National Cancer Institute)"
+    },
+    "519_Melanoma": {
+      "source": "media/519_Melanoma.jpg",
+      "sourceSha256": "62d6e43b97d50df7de845e352f54c0c9e220aeca3d0ddf87f5470db969cf806a",
+      "module": "m46066",
+      "kind": "photo",
+      "width": 1162,
+      "height": 535,
+      "variants": [
+        {
+          "width": 800,
+          "height": 368,
+          "file": "519_Melanoma-800.webp"
+        },
+        {
+          "width": 1162,
+          "height": 535,
+          "file": "519_Melanoma-1162.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a patch of fair skin containing a large melanoma. The melanoma is black and splotchy in appearance.",
+      "caption": "Melanomas typically present as large brown or black patches with uneven borders and a raised surface. (credit: the National Cancer Institute / Centers for Disease Control)"
+    },
+    "520_Eczema": {
+      "source": "media/520_Eczema.jpg",
+      "sourceSha256": "fabdd0dc302065433fbd56e1835ca444070fa1335825dedcb261522f2bdaaa6d",
+      "module": "m46066",
+      "kind": "photo",
+      "width": 1464,
+      "height": 549,
+      "variants": [
+        {
+          "width": 800,
+          "height": 300,
+          "file": "520_Eczema-800.webp"
+        },
+        {
+          "width": 1464,
+          "height": 549,
+          "file": "520_Eczema-1464.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a person with eczema on the ventral skin of the forearms. The person is White, but his or her light skin is mottled with many red marks, giving it the appearance of a rash. In some areas, the skin is breaking and peeling.",
+      "caption": "Eczema is a common skin disorder that presents as a red, flaky rash. (credit: “Jambula” Wikimedia Commons / NIAID, Flickr)"
     }
   }
 }

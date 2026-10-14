@@ -109,6 +109,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/microbiology/knowledge-check-21-26/',
   },
   {
+    name: 'anatomy-physiology section page (Interactive Link, Everyday Connection and Disorders callouts, figure inside a callout, longdescs, sortbins, body selfchecks)',
+    path: '/life-health-sciences/anatomy-physiology/05-the-integumentary-system/01-layers-of-the-skin/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

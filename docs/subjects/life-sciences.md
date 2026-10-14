@@ -1062,7 +1062,10 @@ duplicate-stem lint catches an exact collision, not a reworded one).
   printed in the content tree and classifies the answer: `ok`, `blocked` (a
   403/406/429 to a script is a bot wall, not a dead page), `unreachable`
   (a TLS or DNS failure in Node's fetch — confirm with `curl -L` before
-  believing it), `error`, or `dead` (404/410). A confirmed dead link is not kept as a link: the callout keeps the
+  believing it), `error`, or `dead` (404/410) — confirm a `dead` verdict
+  with `curl -sS -L -o /dev/null -w '%{http_code}'` too: a cancer.org PDF
+  the checker printed as 404 answered curl with 406, a bot wall, and stayed
+  linked *(Anatomy and Physiology chapter 5)*. A confirmed dead link is not kept as a link: the callout keeps the
   sentence and names the resource and its site in plain text ("the 3-D
   animation of an ice lattice structure (*Ice Movie Resources* at
   janewhitney.com)") so a reader can search for it, the footer's

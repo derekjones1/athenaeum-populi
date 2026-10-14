@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 3,
-      "mappedSections": 18,
+      "localChapters": 5,
+      "mappedSections": 28,
       "units": [
         {
           "index": 1,
@@ -413,6 +413,96 @@
       "moduleId": "m46036",
       "sourceTitle": "Cellular Differentiation",
       "moduleSha256": "53969064e0fb16d8ec0fce913ce049fdace54af4aef8cf92cea54c23c6c29cbb"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/01-types-of-tissues.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "4.1",
+      "moduleId": "m46046",
+      "sourceTitle": "Types of Tissues",
+      "moduleSha256": "6a82d5a64ea9f50e62e1c3c0440c1db23468614ba322c979057cad88c0a7c29f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/02-epithelial-tissue.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "4.2",
+      "moduleId": "m46048",
+      "sourceTitle": "Epithelial Tissue",
+      "moduleSha256": "79b7a47a907019f29522c6b09063f41a7e19ffcf710e8c7a5ff9835618b29208"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/03-connective-tissue-supports-and-protects.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "4.3",
+      "moduleId": "m46049",
+      "sourceTitle": "Connective Tissue Supports and Protects",
+      "moduleSha256": "4e3f3c0c8892bda33ff9f04b6a091f839d093aa8b82f0a0ef00742a683827e88"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/04-muscle-tissue-and-motion.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "4.4",
+      "moduleId": "m46055",
+      "sourceTitle": "Muscle Tissue and Motion",
+      "moduleSha256": "b0eefe311842905aeaee44cbbac99c36afc67e59eb1fb2415c82eb205cd3dd37"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/05-nervous-tissue-mediates-perception-and-response.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "4.5",
+      "moduleId": "m46057",
+      "sourceTitle": "Nervous Tissue Mediates Perception and Response",
+      "moduleSha256": "af05f18f2597acaab917fdd1edf7cc1ab3d00a09ecbbd0609a1db3caad0538c5"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/06-tissue-injury-and-aging.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "4.6",
+      "moduleId": "m46058",
+      "sourceTitle": "Tissue Injury and Aging",
+      "moduleSha256": "e929d216853702e97069d5d1c35f73deaac0b4a267d374a8fd6c5874855ab586"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/01-layers-of-the-skin.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "5.1",
+      "moduleId": "m46060",
+      "sourceTitle": "Layers of the Skin",
+      "moduleSha256": "3e387e5ca827937c4ed8591adb74fae25b87f8a85168fca442e445d1076dd73a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/02-accessory-structures-of-the-skin.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "5.2",
+      "moduleId": "m46062",
+      "sourceTitle": "Accessory Structures of the Skin",
+      "moduleSha256": "e802b71b96c6d18569cddb237a8a8ffd35c0d2ecf62433f3eb5a97051bcc999f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/03-functions-of-the-integumentary-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "5.3",
+      "moduleId": "m46064",
+      "sourceTitle": "Functions of the Integumentary System",
+      "moduleSha256": "18db55484be64df85e770c1ba406157a7bab7e4a4dd817ba3c3d007379a2bbd5"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/04-diseases-disorders-and-injuries-of-the-integumentary-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "5.4",
+      "moduleId": "m46066",
+      "sourceTitle": "Diseases, Disorders, and Injuries of the Integumentary System",
+      "moduleSha256": "feac317c0808cf61eb8661b687da1dda49e947607289d9c8ee73bb11c1785213"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

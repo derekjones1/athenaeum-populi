@@ -38,6 +38,8 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 01-an-introduction-to-the-human-body | 7 | done Sep 22 2026 (in the authoring run) | 857–859 |
 | Anatomy and Physiology | 02-the-chemical-level-of-organization | 5 | done Sep 22 2026 (in the authoring run) | 877 |
 | Anatomy and Physiology | 03-the-cellular-level-of-organization | 6 | done Oct 13 2026 (in the authoring run) | 1808–1815 |
+| Anatomy and Physiology | 04-the-tissue-level-of-organization | 6 | done Oct 13 2026 (in the authoring run) | 1843, 1844, 1853, 1859, 1860, 1863, 1867, 1872, 1875, 1884, 1886 |
+| Anatomy and Physiology | 05-the-integumentary-system | 4 | done Oct 14 2026 (in the authoring run) | 1901, 1906, 1908, 1914, 1917, 1918, 1923, 1927, 1928 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

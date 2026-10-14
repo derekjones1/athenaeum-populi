@@ -85,6 +85,11 @@ them.
 3. **PDF pages.** Find the chapter's true PDF index range with `pdftotext`
    (printed folio = index − 16 held for chapters 1–2; re-check), then
    `pdftoppm -f A -l B -r 110 -png sources/anatomy-and-physiology-2e_-_WEB.pdf $SP/pdf/chNN/p`.
+   The parent's per-section ranges are a first read: the step-6 drafter
+   verifies each one by viewing the boundary pages, and a section's last
+   page must include its last figure (the parent's first read stopped one
+   page short twice in chapter 5, once in chapter 4). Part C names a figure
+   by its full stem — two chapter 5 stems began `506_`.
    **The PDF predates the pin** (playbook "Source and authority"): for a
    module in the September-8 table, the PDF shows the old text or image;
    the CNXML wins and the table row explains it — not an erratum.
@@ -122,6 +127,9 @@ them.
    `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md`
    for every form Part C names and quote the rule beside the decision.
    Part B quotes the extractor's key line verbatim and never infers a key.
+   Part C never names a shortcode parameter it has not checked against
+   `SHORTCODE_PARAMS` ("the figure title as the figure's title" asked for a
+   `mediafigure` param that does not exist, *chapter 4*).
    **Part C names WHICH rule and WHICH sentence, never a concrete `accept`
    list** — say "grader-check the members" and let the author verify. A
    decision about a figure reads its letters, labels, and counts off the
@@ -278,7 +286,10 @@ the session.
 3. Pins: chapter and section counts are NOT restated in prose — `npm run
    source:verify` prints them from the map, the A&P test in
    `tools/source/openstax-source.test.mjs` reads them from disk, and
-   `documentation.test.mjs` fails a doc that restates one. Update: the
+   `documentation.test.mjs` fails a doc that restates one — but the
+   "committed provenance maps all N local sections" test in the same
+   file hard-codes the corpus total and the book's count: raise both
+   literals by the chapter's section count *(chapter 5)*. Update: the
    book cover (the chapter moves from "Planned contents" to its `### Unit
    N` heading under `## Chapters`), `docs/source/claim-pass-ledger.md`
    rows, the playbook header sentence for the chapter. When the book's

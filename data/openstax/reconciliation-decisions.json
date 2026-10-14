@@ -2095,6 +2095,189 @@
       "status": "correct-local-source-defect",
       "errataEntry": 1815,
       "rationale": "Review Question fs-id1087021 asks which is \"not entirely or mostly made out of RNA\" and keys the ribosome (B), but ribosomes are mostly RNA by mass (the module says rRNA, \"together with proteins, composes the structure of the ribosome\"), so under \"or mostly\" no option is correct. The page asks only \"not entirely made out of RNA\" with a visible Source note and a footer sentence, and prints the options and key B as printed. Found by the chapter 3.4 checker, adjudicated by the orchestrator, October 13, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/01-types-of-tissues.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46046",
+      "sourceElementIds": [
+        "fig-ch04_01_02",
+        "fs-id1533593",
+        "fig-ch04_01_03",
+        "fs-id1308830",
+        "fs-id1522633",
+        "fs-id1110348",
+        "fs-id951649",
+        "fs-id1164738",
+        "fs-id969372",
+        "fs-id1183962",
+        "fs-id1524138",
+        "fs-id686640",
+        "fs-id922105"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1843,
+      "rationale": "The Types of Tissues germ-layer table (figure fig-ch04_01_02, an image with no caption) lists the adrenal cortex among the endoderm's glands, and its alt (media fs-id1533593) repeats it (\"digestive glands, endocrine glands, and adrenal cortex all develop from endoderm\"), but this book's Section 17.11 (m46658, fs-id1231476) says \"the adrenal cortex from the mesoderm and the adrenal medulla from ectoderm neural cells\" and names the thyroid, parathyroid, pancreas, and thymus as the endodermal glands. The page's Markdown transcription of the table moves the adrenal cortex to the mesoderm row and names the endoderm's endocrine glands as the thyroid, parathyroid, and pancreas, with a visible Source note after the table and a footer sentence; the image and its longdesc keep the table as printed, and the sort-into-bins member \"Adrenal cortex\" is replaced by \"Thyroid\" (Endoderm). Found by the chapter 4 prose claim pass, October 13, 2026. ALSO (erratum 1844): the same image's endoderm row excludes \"distal part of digestive system (rectum and anal canal)\" from the endoderm's lining, but the rectum and the anal canal above the pectinate line are endodermal hindgut (Sections 28.2 m46319 fs-id2269746, 28.3 m46316 fs-id2686721, and 23.5 m46512 fs-id1355386), as the figure's own alt states; the transcription reads \"except the mouth and the lowest part of the anal canal\" under the same Source note."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/02-epithelial-tissue.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46048",
+      "sourceElementIds": [
+        "fs-id1508253",
+        "fig-ch04_02_01",
+        "fs-id1528157",
+        "fig-ch04_02_02",
+        "fs-id1500182",
+        "fig-ch04_02_03",
+        "fs-id1662320",
+        "fs-id1283151",
+        "fig-ch04_02_04",
+        "fs-id1058261",
+        "fs-id1211565",
+        "fs-id1243567",
+        "fig-ch04_02_05",
+        "fs-id1491101",
+        "fs-id1527637",
+        "fs-id1483950",
+        "fig-ch04_02_07",
+        "fs-id1154760",
+        "fs-id1163314",
+        "fs-id1230068",
+        "fs-id1284242",
+        "fs-id1331288",
+        "fs-id1242592",
+        "fs-id1056868"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1853,
+      "rationale": "The Epithelial Tissue opening paragraph (para fs-id1508253) says body cavities \"which includes, blood vessels and serous membranes, are lined by endothelium\", but the same module (para fs-id1321611) keeps endothelium for vessels and says \"The mesothelium … forms the surface layer of the serous membrane\", as does Section 4.1 (m46046, fs-id1110348). The page reads \"lined by endothelium (plural = endothelia) and mesothelium, respectively\" with a visible Source note and a footer sentence. Found by the chapter 4 prose claim pass, October 13, 2026. ALSO (erratum 1859): para fs-id1283151 says transitional epithelium is found \"specifically the ureters and urinary bladder\", leaving out the proximal urethra that the module's own summary table and Section 25.2 (m46427, fs-id2108795) line with it; the page adds \"and proximal urethra\" under the Source note after the summary table. ALSO (erratum 1860): the summary-table image (figure fig-ch04_02_04) and its alt (media fs-id1058261) put the \"bladder\" under simple columnar epithelium, but the urinary bladder is transitional (same table; Section 25.2 m46427 fs-id2978014) and the gallbladder simple columnar (Section 23.6 m46496 fs-id2240105); the page's Markdown table and longdesc read \"the digestive tract and gallbladder\" under the same Source note. ALSO (erratum 1863): para fs-id1243567 calls the lining of the abdominal and chest cavities \"multicellular exocrine glands known as serous glands\", breaking the module's own definition of an exocrine gland (para fs-id1311216) and its later use of \"serous gland\" for salivary glands (para fs-id1180315); the page replaces the two sentences with one on the mesothelium of serous membranes, rewords the serous gland Key terms entry (glossary fs-id1242592), and adds a visible Source note and a footer sentence."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/03-connective-tissue-supports-and-protects.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46049",
+      "sourceElementIds": [
+        "fs-id1452398",
+        "tbl-ch04_03_01",
+        "fs-id1503431",
+        "fig-ch04_03_01",
+        "fs-id1523156",
+        "fig-ch04_03_02",
+        "fs-id1432129",
+        "fs-id1475912",
+        "fig-ch04_03_04",
+        "fs-id1180315",
+        "fs-id1178027",
+        "fs-id1141589",
+        "fig-ch04_03_05",
+        "fs-id1058496",
+        "fs-id1073343",
+        "fs-id1091806",
+        "fs-id1312469",
+        "fs-id1119780",
+        "fs-id1243625",
+        "fs-id320000"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1867,
+      "rationale": "The Connective Tissue module (para fs-id1452398) says \"All connective tissues derive from the mesodermal layer of the embryo\", and its Chapter Review (para fs-id1091806) says \"They originate in the mesodermal germ layer\", but the germ-layer table the sentence cites (m46046, fig-ch04_01_02, alt fs-id1533593) gives \"some cranial bones\" to the ectoderm, and this book's Section 13.1 (m46535, fs-id1527851) says the neural crest gives rise to \"cartilage and bone of the face and cranium\". The page reads \"Most connective tissues derive from the mesodermal layer of the embryo; some bones and cartilage of the skull and face derive from the ectoderm, through the neural crest\" with a visible Source note, and the Summary reads \"They originate mostly in the mesodermal germ layer\", both disclosed in the footer. Found by the chapter 4 prose claim pass, October 13, 2026. ALSO (erratum 1872): para fs-id1475912 says epithelial membranes \"are described further in a later section\", but they are described in Section 4.1 Types of Tissues, an earlier section; the page reads \"which are described in Types of Tissues\" with a link, disclosed in the footer. ALSO (erratum 1875): para fs-id1141589 demonstrates elastic cartilage by tugging at the ear lobes, but the lobule has no cartilage (Gray's Anatomy, 1918, \"It is absent from the lobule\"); the page uses the upper rim of the ear and says \"The external ear, except the lobe, contains elastic cartilage\", with a visible Source note and a footer sentence."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/05-nervous-tissue-mediates-perception-and-response.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46057",
+      "sourceElementIds": [
+        "fs-id1488244",
+        "fig-ch04_05_02",
+        "fs-id1535036",
+        "fs-id1432938",
+        "fs-id1501456",
+        "fs-id1189854",
+        "fs-id787711"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1884,
+      "rationale": "The Nervous Tissue module (para fs-id1488244) says microglia \"are not nervous tissue because they are related to macrophages\", but its own Chapter Review (para fs-id1098367) lists microglia among \"Other cells in the nervous tissue, the neuroglia\", its figure fig-ch04_05_02 labels a microglial cell in nervous tissue, and this book's Section 12.2 (m46509, fs-id1197943) names microglia among the CNS glia. The page reads \"Microglia protect the nervous system against infection; unlike the other neuroglia, they are related to macrophages\" with a visible Source note and a footer sentence. Found by the chapter 4 prose claim pass, October 13, 2026. ALSO (erratum 1886): the first reference (para fs-id1432938) cites \"Stern, P. … Science … 3(147):330-773\", but the article at its URL (para fs-id1501456) is Elizabeth M. Adler's \"Focus Issue: Getting Excited About Glia\", Science Signaling 3(147):eg11, doi:10.1126/scisignal.3147eg11 (Crossref); the page prints the corrected citation with a visible Source note and a footer sentence."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/01-layers-of-the-skin.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46060",
+      "sourceElementIds": [
+        "fs-id1205993"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1901,
+      "rationale": "The Layers of the Skin module (para fs-id1205993) says keratohyalin \"accumulates as lamellar granules within the cells\", but the same paragraph's next sentence says the protein granules of keratohyalin \"are different from the lamellar bodies, which contain glycolipids\", and the figure the sentence cites (fig-ch05_01_04) labels those glycolipid carriers \"Lamellar granules\". The page reads \"accumulates as keratohyalin granules\" with a visible Source note and a footer sentence. Found by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/01-layers-of-the-skin.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46060",
+      "sourceElementIds": [
+        "fs-id1554158"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1906,
+      "rationale": "The Layers of the Skin Chapter Review (para fs-id1554158) says the reticular layer is \"composed of loose connective tissue\", but the module's body (para fs-id1490919) says \"the much thicker reticular layer, composed of dense, irregular connective tissue\", the caption of figure fig-ch05_01_01 says the dermis is \"made of dense, irregular connective tissue\", and para fs-id1198448 makes the papillary layer the loose, areolar one. The page's Summary reads \"composed of dense, irregular connective tissue\" with a visible Source note and a footer sentence. Raised in the chapter 5 run facts, evidenced by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/01-layers-of-the-skin.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46060",
+      "sourceElementIds": [
+        "fs-id1205864",
+        "fs-id1211768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1908,
+      "rationale": "The Layers of the Skin glossary defines a desmosome (definition fs-id1205864, meaning fs-id1211768) as a \"structure that forms an impermeable junction between cells\", but Section 4.2 (m46048, para fs-id1211959) names desmosomes among \"three types of anchoring junctions\" and gives the impermeable barrier to tight junctions (glossary fs-id804309, Chapter Review fs-id1053236), and this module's body (para fs-id1689574) says desmosomes \"strengthen the bond between the cells\". The page's Key terms bullet reads \"structure that forms an anchoring junction between cells, holding them together\" with a visible Source note and a footer sentence. Raised in the chapter 5 run facts, evidenced by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/03-functions-of-the-integumentary-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46064",
+      "sourceElementIds": [
+        "fs-id1467214",
+        "fs-id1534723"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1917,
+      "rationale": "The Tattoos and Piercings box (note fs-id1467214, para fs-id1534723) lists \"blood-borne diseases, such as tetanus, hepatitis C, and hepatitis D\", but tetanus is a wound infection by Clostridium tetani spores and is not carried in blood (CDC, Epidemiology and Prevention of Vaccine-Preventable Diseases, 14th ed., 2021, chapter 21: \"Transmission is primarily by contaminated wounds\"; \"Tetanus is not contagious from person-to-person\"). The page reads \"skin infections, including tetanus; blood-borne diseases, such as hepatitis C and hepatitis D\" with a visible Source note and a footer sentence. Raised by the chapter 5.3 author, evidenced by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/03-functions-of-the-integumentary-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46064",
+      "sourceElementIds": [
+        "fs-id1239604"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1918,
+      "rationale": "The Thermoregulation paragraph (para fs-id1239604) says \"The sympathetic nervous system is continuously monitoring body temperature and initiating appropriate motor responses\", but this book places temperature sensing and the set point in the hypothalamus (Section 24.6, m46456, fs-id1589133 and fs-id2165326; Section 1.5, m45989, fs-id775958), with the sympathetic nervous system as the effector pathway. The page reads \"The hypothalamus continuously monitors body temperature and, through the sympathetic nervous system, initiates appropriate motor responses\" with a visible Source note and a footer sentence. Raised by the chapter 5.3 author, evidenced by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/04-diseases-disorders-and-injuries-of-the-integumentary-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46066",
+      "sourceElementIds": [
+        "fs-id1521254"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1923,
+      "rationale": "The Melanoma paragraph (para fs-id1521254) says \"Typically, a melanoma develops from a mole\", but most melanomas arise de novo: a meta-analysis of 38 studies found 29.1% nevus-associated and 70.9% de novo (Pampena R et al., J Am Acad Dermatol 2017;77(5):938-945.e4, doi:10.1016/j.jaad.2017.06.149). The page reads \"A melanoma can develop from an existing mole, although most arise in skin where no mole was present\" with a visible Source note and a footer sentence. Found by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/05-the-integumentary-system/04-diseases-disorders-and-injuries-of-the-integumentary-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46066",
+      "sourceElementIds": [
+        "fs-id1942557"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1928,
+      "rationale": "The Burns paragraph (para fs-id1942557) says third-degree burns \"require medical attention and will heal slowly without it\", but the module defines a third-degree burn as full-thickness (glossary fs-id1960167, meaning fs-id1960172) and the same paragraph says \"Full-thickness burns cannot be repaired by the body\". The page reads \"they require medical attention, because the body cannot repair them on its own\" with a visible Source note and a footer sentence. Found by the chapter 5.4 author, evidenced by the chapter 5 prose claim pass, October 14, 2026."
     }
   ]
 }

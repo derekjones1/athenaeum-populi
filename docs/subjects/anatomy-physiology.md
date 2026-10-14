@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, and chapter 3 on October 13, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, and chapter 5 on October 14, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -219,6 +219,17 @@ from the first section (life-sciences "Media: vendored figures" and
 "Completion audit"). The 1,600-pixel cap
 absorbs the large source files; the ~220 source `media/` files no module
 references are never vendored.
+
+**A table the source prints as an image** (4.1's germ-layer table, 4.2's
+epithelium summary) follows the baseline form (life-sciences "Tables"):
+the figure's `<title>` as a bold line, the Markdown table transcribed from
+the image under it, then the `mediafigure` (`kind="diagram"`, a `longdesc`
+that transcribes the rows as printed, no caption line when the CNXML
+caption is empty or missing). `mediafigure` has no title parameter — a
+run-facts decision never names a shortcode parameter it has not checked
+against `SHORTCODE_PARAMS` *(chapter 4)*. When the claim pass corrects a
+value in such a table, the Markdown table carries the correction with a
+Source note, and the `longdesc` keeps the image's text marked "as printed".
 
 ### 5. External links
 

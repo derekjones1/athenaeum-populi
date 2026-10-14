@@ -210,6 +210,14 @@ playbooks. Apply them literally; these are the recurring failures:
   options, then against the stem, options, and hint of the item above;
   then cover the options — if the stem and hint alone answer it, cut the
   hint to the location.
+  "The item above" crosses `###` group headings (the lint reads across
+  them): a recall item placed first in its group still has the previous
+  group's last item above it, so a footer may not claim "nothing sits
+  directly above it" — say what is true, that no item above prints the
+  key, its root, or its plural *(chapter 5)*. A cloze whose stem defines
+  the blank in apposition ("fat-storing cells called ________") or prints
+  the key's root ("Adipose … adipocytes") self-answers; pick another
+  sentence.
 - The literal forms of these leaks and ASCII chemistry are lint-enforced
   (playbook, end of "Exercises"); the fact the correct option asserts, a
   fact the module never states, and other paraphrases are yours to catch.

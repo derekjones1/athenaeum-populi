@@ -174,6 +174,124 @@ instruction was not followed by two authors (figures checked against the
 WebPs only), and the checker's PDF read covered it; and the first-wave
 author on 3.6 wrote exactly the floor.
 
+## Chapter 4 (October 13, 2026)
+
+Six sections, one wave, on Opus throughout at Derek's request: six Opus
+authors (the first chapter run with Opus authors), six Opus checkers, an
+Opus claim pass, Opus prep and close-out agents (run facts, landing page,
+pins, alt-errata verifier, errata drafter), and the blind solve in a fresh
+Fable subagent as always. Authors reported Practice items per page of 19
+(4.1), 15 (4.2), 12 (4.3), 9 (4.4), 8 (4.5), and 18 (4.6); every one of the
+44 source exercises reached its page. Of the six Interactive Link Questions
+two were graded (4.4, 4.5) and four stand as prompts (4.3 has none); 4.6's
+tumor question, whose source key "cancer cells" contradicts the module's
+benign tumors, stayed a prompt with a Source note. Checkers found 16
+defects on lint-clean pages (4.1: 2, 4.2: 3, 4.3: 2, 4.4: 4, 4.5: 0, 4.6:
+5) plus concerns: mostly alt/`longdesc` image reads, accept gaps, one
+two-sentence filler MC (replaced), and one false hint claim. Each page's
+author applied its own checker's fixes, so every page kept one writer.
+
+The claim pass found eleven real problems, all accepted and each corrected
+on the page with a Source note: the germ-layer table image putting the
+adrenal cortex under endoderm (a sortbins member moved with it) and
+excluding the rectum and anal canal (the image wrong, its alt right);
+serous membranes "lined by endothelium"; the bladder under simple columnar
+in the epithelium table image; the proximal urethra left out of
+transitional epithelium's sites; mesothelium called a "serous gland"; "All
+connective tissues" derived from mesoderm, against neural-crest bone and
+cartilage; the ear lobe offered as the elastic-cartilage demonstration;
+microglia "not nervous tissue"; a reference given as Stern in *Science*
+that is Adler, *Science Signaling* eg11; and a "later section" pointer to
+an earlier section. 4.4's mitochondria Review Question option "nuclei" and
+4.5's "neuroglia" option were judged arguable second answers and left
+keyed under a solve watch. The blind solve agreed 67/67 with no flags,
+choosing the source key on both watched items. Errata 1842–1895 (54: 11
+claim; 2 key or option; 22 typos, grammar, and inconsistencies; 19 alt,
+caption, or artwork). The map now carries chapter 4.
+
+Lessons folded in: Part C named a `mediafigure` title parameter that does
+not exist, so run.md now has a line on it and the playbook a clause (a
+table image gets a bold title line and a Markdown table from the image
+above the figure, and no caption line when the CNXML caption is empty);
+the parent's "germ layers" accept ruling on the cell-lineages cloze was
+wrong (the module says each lineage *forms* a germ layer) and was
+withdrawn after the author and checker pushed back, a ruling built on a
+heading the parent misread; `baseline:update` still does not manage
+`--min-covered` (hand-edited 2855 → 2899); the run-facts PDF range for 4.5
+stopped one page short of its last figure; and the keys gate needs the
+`DISCLOSED_DEVIATIONS` entry and its erratum number reserved before
+`npm test` (1842 was reserved for 4.6's "meylin" option at the first gate
+run).
+
+## Chapter 5 (October 14, 2026)
+
+Four sections, one wave, on Opus throughout at Derek's request (authors,
+checkers, claim pass, prep and close-out agents), the blind solve in a
+fresh Fable subagent as always. The Unit 1 Knowledge Check was still
+pending when Derek asked for the next chapter, so it follows this run.
+Authors reported Practice items per page of 18 (5.1, plus two graded
+Interactive Link selfchecks in the body), 13 (5.2), 12 (5.3), and 11
+(5.4); every one of the 28 source exercises reached its page. Of the four
+Interactive Link Questions (all 5.1's) two were graded and two stand as
+prompts; the three-layer-functions question stayed a prompt because the
+module never calls the epidermis protective, and the stratum spinosum
+question was graded on the pooled exercise's question after the parent
+found that the note's own printed question is a copy of the previous
+note's (the PDF prints the same) — rule 1's differing-pair form, a Source
+note, and an erratum. The run-facts drafter (Opus) corrected the parent's
+first PDF ranges twice (each one page short of a section's last figure)
+and drew up 35 Part B items; the parent read five flagged figures off the
+vendored images for Part C (the burn chart prints head and neck 9 percent
+where its source alt says 19; the pigmentation drawing puts dark skin on
+the left with a melanocyte drawn with pale granules, not empty; the
+electron micrograph's labels read "Stratum basale or germinativum" and
+"Remnants of cross-sectioned shed hair and its follicle").
+
+Checkers found ten defects on lint-clean pages (5.1: 4, 5.2: 3, 5.3: 1,
+5.4: 2) plus concerns: a self-answering cloze whose stem defined the blank
+in apposition and printed the key's root ("Adipose … adipocytes"), a
+footer claim that nothing sits "directly above" a recall item that was
+false across group headings, two accept gaps, a hint that named the
+section whose title sat in the keyed option, a false footer reason for a
+Key-terms exclusion, and three alt or `longdesc` image errors the parent
+zoom-confirmed (the hair figure's outer-root-sheath leader ends in the
+peach follicle wall, not the blue-gray band; the eccrine-gland surface
+shows three pores and an S-curved duct; the basal keratinocytes between
+the melanocyte's processes hold few or no granules). Each page's author
+applied its own checker's fixes.
+
+The claim pass found nine evidenced problems; eight were corrected with
+Source notes and one disclosed: the 5.1 summary's reticular layer as
+"loose" connective tissue (dense irregular in the body); the desmosome
+glossary entry as an "impermeable junction" (anchoring, per 4.2);
+keratohyalin accumulating "as lamellar granules" (the next sentence
+distinguishes the two); the sympathetic nervous system "monitoring" body
+temperature (the hypothalamus does, per 1.5 and 24.6); tetanus listed as
+blood-borne (a wound infection, CDC); "Typically, a melanoma develops
+from a mole" (most arise de novo, Pampena 2017); third-degree burns that
+"will heal slowly without" care against the same paragraph's "cannot be
+repaired by the body"; and the rule of nines as "a factor of nine" (a
+one-word correction, footer only). The 5.2 claim that all sweat glands
+are merocrine, against 4.2's apocrine sweat-gland example, was kept as
+printed with a Source note naming the disagreement, since current
+histology sides with 5.2. The blind solve agreed 46/46 with one flag
+adjudicated: the 5.3 protection item whose "Merkel cells" option the
+parent had put under a solve watch — the solver chose the source key and
+the option set stands. Errata 1896–1929 (34: 7 claim; 1 option, kept as printed; 9 typos, grammar, and inconsistencies, the merocrine disclosure among them; 17 alt or caption). The map now
+carries chapter 5; the axe suite gained its first Anatomy and Physiology
+route (5.1).
+
+Lessons folded in: the "committed provenance maps all N local sections"
+test hard-codes the corpus total and the book's count (run.md step 3
+names both literals); the step-6 drafter verifies the PDF ranges and Part
+C names figures by full stem (two chapter 5 stems began `506_`); a `dead`
+verdict from `check:external-links` is confirmed with curl before a link
+is removed (a cancer.org PDF answered 406, a bot wall, and stayed
+linked); the author brief now says the "directly above" rule crosses
+group headings and that an appositive cloze self-answers; and the parent
+adds an accept list to any author cloze whose key is a two-word phrase a
+learner would shorten ("genetic factors": genetics, genes, heredity).
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

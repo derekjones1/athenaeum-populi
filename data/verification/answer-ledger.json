@@ -1571,6 +1571,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "03759858ebec64da": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1005699, key A; fs-id1709565 barrier against water loss in the stratum corneum",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "037d7306776ea36c": {
    "verdict": "ok",
    "note": "KC 5 21.1 § body Discovery and Detection (fs-idp52409104), m66534 — parent re-read against the module",
@@ -1861,6 +1869,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "04634b6f11dc91d6": {
+   "verdict": "ok",
+   "note": "source solution verbatim (ILQ/CT), re-read against CNXML"
   },
   "0464efffe36c75f3": {
    "verdict": "ok",
@@ -2494,6 +2506,10 @@
   "05c10165da452df8": {
    "verdict": "ok"
   },
+  "05c1b2cc68e0a08a": {
+   "verdict": "ok",
+   "note": "fs-id1733362 CT, model answer = solution fs-id1511799 verbatim"
+  },
   "05c2c3207598e382": {
    "verdict": "ok",
    "note": "body cloze from § Levels of Ecological Study: \"Ecologists interested in the factors that influence the survival of an endangered species might use mathematical models to predict how curr…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -2813,6 +2829,14 @@
   "06b61c797a570b80": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "06bc3525abe0e077": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1092855; body fs-id1527637",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "06bc85c11415fdb4": {
    "verdict": "ok",
@@ -3177,6 +3201,14 @@
     "result": "agrees"
    }
   },
+  "078885cf7c69cfea": {
+   "verdict": "ok",
+   "note": "Author sortbins from the germ-layer table as corrected on the page (claim pass F1/F2): Ectoderm Epidermis/Nervous system/Glands on skin; Mesoderm Cartilage/Blood/Kidneys/Muscle; Endoderm Lining of airways/Thyroid/Digestive glands. Adrenal cortex removed.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0791df35a643931a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3199,6 +3231,14 @@
   "07a245fedc837d9f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "07aca4fe40da328c": {
+   "verdict": "ok",
+   "note": "Review fs-id865633, key B axon; options in source order; body fs-id1315893 and caption fig-ch04_05_01",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -4741,6 +4781,10 @@
     "result": "agrees"
    }
   },
+  "0b71d1fa3a074d0f": {
+   "verdict": "ok",
+   "note": "CT fs-id1199120, model answer = source solution verbatim."
+  },
   "0b7aa87715c534d5": {
    "verdict": "ok",
    "solved": {
@@ -5339,6 +5383,14 @@
    "note": "KC 8 47.1 § glossary biodiversity hotspot (fs-idm76502624), m66707 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0cf5d3aa03556978": {
+   "verdict": "ok",
+   "note": "fs-id1304639 key C; options verbatim in source order; key confirmed against raw CNXML and the module body",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -7525,6 +7577,14 @@
     "result": "agrees"
    }
   },
+  "127574241dbc611f": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1511546; stem = meaning; accept tactile corpuscle (body synonym), Meissner's corpuscle, Meissner; variants run through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1276ca6acb7ddc29": {
    "verdict": "ok",
    "note": "source FIB fs-id1167661268558 as textin, key 'Alveolar macrophages'; accept 'Alveolar macrophage' (plural key lists singular) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -8229,6 +8289,14 @@
    "verdict": "ok",
    "note": "CT fs-idp76047552: model answer transcribes solution fs-idp64739856 verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "140c12c02b47a808": {
+   "verdict": "ok",
+   "note": "cloze from module sentence; key printed in body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "14137783a843e69f": {
    "verdict": "ok",
    "note": "glossary textin, term 'menstrual cycle' (def fs-idm23279920) — prompt paraphrases the meaning, answer matches the term.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -8281,6 +8349,14 @@
     "result": "agrees"
    }
   },
+  "142b87665b0c925d": {
+   "verdict": "ok",
+   "note": "author-written from fs-id1211959 \"Hemidesmosomes ... link cells to the extracellular matrix\"; adherens excluded as defensible; desmosomes/tight/gap are cell-cell",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "142bfdc1a0cedb74": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8296,6 +8372,14 @@
   "142e168a38dd81ec": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "142e403d4d309be7": {
+   "verdict": "ok",
+   "note": "RQ fs-id1514097 key A stratum spinosum (fs-id1689574)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "142ea59eaef33be5": {
    "verdict": "ok",
@@ -9216,6 +9300,14 @@
     "result": "agrees"
    }
   },
+  "1655cd88358ea656": {
+   "verdict": "ok",
+   "note": "multiplechoice line 253: malignant — key re-read against m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "165b14c89337158e": {
    "verdict": "ok",
    "note": "body cloze from § Type IV Hypersensitivities: \"Exposure to hapten antigens in poison ivy can cause contact dermatitis, a type IV hypersensitivity.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -9678,6 +9770,14 @@
     "result": "agrees"
    }
   },
+  "175682fb9cc33eaf": {
+   "verdict": "ok",
+   "note": "multiplechoice line 114: fever — key re-read against m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1757abd26e4a9127": {
    "verdict": "ok",
    "note": "key-term recall: vaginosis; printed in § General Signs and Symptoms of Urogenital Infections: \"Bacterial infections of the vagina are called bacterial vaginosis , whereas fungal infections (typically involving Candida spp.) are called…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -9697,6 +9797,14 @@
   "175eb51d4853cb2c": {
    "verdict": "ok",
    "note": "Selfcheck matches CNXML Critical Thinking exercise fs-idm140854400; model answer is the source solution verbatim, checks decompose its two sentences with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "1760e9055ab995d1": {
+   "verdict": "ok",
+   "note": "fs-id1303296 key B adipose tissue; fs-id1323875",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "17627c1a72fbe6b4": {
    "verdict": "ok"
@@ -9907,6 +10015,10 @@
     "result": "agrees"
    }
   },
+  "17ec25ba3018d4b9": {
+   "verdict": "ok",
+   "note": "selfcheck line 216: model answer — model answer re-read against m46058 solution"
+  },
   "17f056fd7770f558": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -10039,6 +10151,14 @@
   "1841e1b1edec911f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "184a1feedfe44f91": {
+   "verdict": "ok",
+   "note": "fs-id1200625 key C; options verbatim in source order; key confirmed against raw CNXML and the module body",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -10766,6 +10886,14 @@
     "result": "agrees"
    }
   },
+  "19ecfa7746e5dc38": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1960073 (callus); body fs-id1942692",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "19f4eec4132ea65b": {
    "verdict": "ok",
    "note": "key-term recall: Lactobacillus; printed in § Normal Microbiota of the Urogenital System: \"For the majority of females, the lactic-acid–producing bacteria in the vagina are dominated by a variety of species of Lactobacillus .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -11053,6 +11181,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1a8ec4be3dc8819b": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id1233775 histology; body fs-id1524079 prints it.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -11372,6 +11508,10 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
+  },
+  "1b53e34b432a2a26": {
+   "verdict": "ok",
+   "note": "source solution verbatim (ILQ/CT), re-read against CNXML"
   },
   "1b57706f096e1c1b": {
    "verdict": "ok",
@@ -11840,6 +11980,10 @@
     "result": "agrees"
    }
   },
+  "1c5fc005fa8e7e56": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1102254 (solution fs-id1143779) verbatim minus leading figure link; fixed by fs-id1282569 'dead and regularly slough away' + fs-id1205993 'nuclei ... disintegrate as the cells die'"
+  },
   "1c66537deeab2538": {
    "verdict": "ok",
    "note": "KC 2 11.7 § Prokaryotic Gene Regulation, m58846 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -12147,6 +12291,10 @@
     "result": "agrees"
    }
   },
+  "1d3a2cf3e9dd09cf": {
+   "verdict": "ok",
+   "note": "fs-id1738716 Critical Thinking; model answer = source solution verbatim; checks are clauses of it"
+  },
   "1d3b5f284c98038d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -12206,6 +12354,14 @@
   "1d56be38fbf6b201": {
    "verdict": "ok",
    "note": "m66374 solution fs-id1777919 (normal saline/lactated Ringer's isotonicity importance): model answer verbatim match. Two CHECKS clauses restate no osmotic-balance perturbation and no water taken from/added to tissues. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "1d6a3f0d468c76b1": {
+   "verdict": "ok",
+   "note": "RQ fs-id1492729 key B structure (fs-id1490919 'Collagen fibers provide structure')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1d702b0d8e0825b7": {
    "verdict": "ok",
@@ -13536,6 +13692,10 @@
     "result": "agrees"
    }
   },
+  "20a1bdd808f909c2": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1273966; model answer = solution fs-id1037880 verbatim"
+  },
   "20a232d3958740ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13692,6 +13852,14 @@
   "2100cc98b59eb5d5": {
    "verdict": "ok",
    "note": "source SA fs-id1167662758072, hint REWORDED (checker defects 3-4: the prior hint 'Compare how extracellular lipases/phospholipases and extracellular proteases each act...' printed both the textin key 'phospholipases' [was 2c, since replaced] and the source MC key 'extracellular protease'). New hint: 'Compare how the lipid-degrading and protein-degrading enzymes each act on a macromolecule outside the cell before smaller products are taken up.' Model answer and CHECKS unchanged (module-supported). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "210d469ea9940f58": {
+   "verdict": "ok",
+   "note": "Review fs-id1509790, source key A (fs-id1486348); body fs-id1319983 basal elongated nucleus, tall column-like cells",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "210f8d93355484cf": {
    "verdict": "ok",
@@ -14333,6 +14501,14 @@
   "22b9e28f53f470e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "22be7cbab3afe12a": {
+   "verdict": "ok",
+   "note": "fs-id1498609 key D; options verbatim in source order; key confirmed against raw CNXML and the module body",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -15419,6 +15595,14 @@
     "result": "agrees"
    }
   },
+  "25c28d879f1849bd": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1494288 verbatim; accept frost bite",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "25c3efb5ee13444b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -15525,6 +15709,14 @@
   "25ee88013d4edb3f": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "25efe529979ab664": {
+   "verdict": "ok",
+   "note": "source key confirmed against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "25f3f8e2d87437fc": {
    "verdict": "ok",
@@ -16388,6 +16580,14 @@
   "28560c8c9e70a64e": {
    "verdict": "ok"
   },
+  "28622590a833f492": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1960128 (metastasis); body fs-id691867 prints the term; re-read against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "28665394172992d8": {
    "verdict": "ok"
   },
@@ -16792,6 +16992,14 @@
   },
   "29637d5a7d223337": {
    "verdict": "ok"
+  },
+  "296cf590374ae210": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was 8f21e25096257ffe] body cloze fs-id1318566 (Lipid Storage box): 'depends on hormones (testosterone, estrogen, insulin, glucagon, leptin, and others), as well as genetic factors'; replaces the adipocytes cloze (checker: self-answering)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "296f616684762934": {
    "verdict": "ok",
@@ -18402,6 +18610,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2dad1f1dc761aa90": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1211455; body fs-id1454989; accept cell-to-cell junction (section title and 402 caption form), grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2db4a76e677cf4a3": {
    "verdict": "ok",
    "note": "KC 2 8.1 § glossary granum (fs-idp519792), m66473 — parent re-read against the module",
@@ -18770,6 +18986,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2e8c20c6472ef6b7": {
+   "verdict": "ok",
+   "note": "author sortbins: epidermis items fs-id1511323 (keratinized stratified squamous; four or five layers), fs-id1059498 (Merkel cells, melanocytes in stratum basale); dermis items fs-id1146438 (hair follicles, sweat glands; elastin/collagenous mesh by fibroblasts), fs-id1198448 (Meissner corpuscles)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -19968,6 +20192,14 @@
    "verdict": "ok",
    "note": "selfcheck, antigenic-variation paragraph, multi-sentence mechanism | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "31be5ee929724c1f": {
+   "verdict": "ok",
+   "note": "textin line 101: loss of function — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "31c0701aef81dac2": {
    "verdict": "ok",
    "note": "Body VC1 (fig-ch14_02_01, note id fs-id1978249): the CNXML has no <exercise>/<solution> for this visual-connection note — only the second one (fs-id1973249) is keyed under Visual Connection Questions. Model answer composed strictly from the section's own definitions (nitrogenous = nitrogen-bearing; purine double ring vs pyrimidine single ring, verbatim from eip-837/caption; nucleoside vs nucleotide, verbatim from fs-id1912233) plus a general reading of the figure's own purine/pyrimidine ring drawings for how one base differs from another within its family. No claim beyond the section's text and the figure as drawn. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -20267,6 +20499,14 @@
    "verdict": "ok",
    "note": "Infinite geometric a1=2,r=1/3; S=a1/(1-r)=3 (node); matches CNXML ti_11_04_12."
   },
+  "3272a6777e94977a": {
+   "verdict": "ok",
+   "note": "fs-id1211308 key D osteocytes; fs-id1286153",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3275b914b19d4576": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20421,6 +20661,14 @@
   "32dbf7d2c49e07ca": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "32dec2beebea8685": {
+   "verdict": "ok",
+   "note": "fs-id1163437 key B; source options verbatim in source order, keyed option matches CNXML solution; module supports key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "32eb4e5a6740f864": {
    "verdict": "ok",
@@ -21415,6 +21663,14 @@
    "verdict": "ok",
    "note": "Biology 7.4 source visual-connection selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (proton pumping into the intermembrane space per the chemiosmosis caption; visible Source note corrects the source's 'electrons')"
   },
+  "358c5c527c9a3c2d": {
+   "verdict": "ok",
+   "note": "RQ fs-id1433317, key C embryonic; the module names four categories: epithelial, connective, muscle, nervous.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "35947b23b861b082": {
    "verdict": "ok",
    "note": "Glossary recall for 'reduction' (fs-idm8415920). Prompt is the glossary meaning; answer matches the term; no source alternate spelling to accept. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -21771,6 +22027,14 @@
   },
   "36519b6af083d99b": {
    "verdict": "ok"
+  },
+  "3653465803377e9e": {
+   "verdict": "ok",
+   "note": "fs-id1183908 key B; source options verbatim in source order, keyed option matches CNXML solution; module supports key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3653c5e69087f1a2": {
    "verdict": "ok",
@@ -22329,6 +22593,14 @@
    "note": "body cloze from § Life Cycle of Viruses with Plant Hosts: \"Viruses that infect plants are considered biotrophic parasites, which means that they can establish an infection without killing the host,…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "37b2922db26dfa22": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1037242, key A, source options verbatim; module fs-id1320162",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -23573,6 +23845,14 @@
     "result": "agrees"
    }
   },
+  "3af394a83a5dda16": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1128152; accept lamellated corpuscle (body synonym), Pacinian",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3afb33d6a60268c5": {
    "verdict": "ok"
   },
@@ -23843,6 +24123,14 @@
    "note": "glossary recall: resistance (fs-idm54530672) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3bca91e736da32d8": {
+   "verdict": "ok",
+   "note": "Author MC from summary fs-id1466200: Connective tissue integrates the various parts of the body and provides support and protection to organs.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -25055,6 +25343,14 @@
     "result": "agrees"
    }
   },
+  "3eecc38eab9e2973": {
+   "verdict": "ok",
+   "note": "Author MC, figure-keyed: 401 labels Brain and Spinal cord under Nervous tissue.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3eee73b6f4a0e5df": {
    "verdict": "ok",
    "note": "body cloze from § Effects of Mutations on Protein Structure and Function: \"Sometimes the effects of missense mutations may be only apparent under certain environmental conditions; such missense mutations are called…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -25817,6 +26113,14 @@
   "40951c2af6c4f8db": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "40974ef7e19313ba": {
+   "verdict": "ok",
+   "note": "Review fs-id730244, source key C (fs-id1524316); body fs-id1492560/fs-id1508184 cilia move particles",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -27153,6 +27457,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "43e3c41145df9f03": {
+   "verdict": "ok",
+   "note": "CT fs-id1051549, model answer = solution fs-id1452724 verbatim; rubric clauses copied from it"
   },
   "43f7354c1bf82667": {
    "verdict": "ok",
@@ -28620,6 +28928,10 @@
     "result": "agrees"
    }
   },
+  "478421cd34996fbd": {
+   "verdict": "ok",
+   "note": "fs-id1107187 CT, model answer = solution fs-id1516773 verbatim"
+  },
   "47868ef85ecd0e08": {
    "verdict": "ok",
    "note": "KC 2 10.2 § § DNA Structure, m58836",
@@ -28836,6 +29148,14 @@
   },
   "481e199fbdc81654": {
    "verdict": "ok"
+  },
+  "48248c757755b00a": {
+   "verdict": "ok",
+   "note": "textin line 174: primary union — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "482723c039e8da6a": {
    "verdict": "ok",
@@ -31973,6 +32293,14 @@
     "result": "agrees"
    }
   },
+  "501b1c167c0e9425": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1163314 (noun corrected to mucus); body fs-id1510537",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "501c3f5983d432f8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32191,6 +32519,14 @@
    "verdict": "ok",
    "note": "m66459 CT exercise fs-id1768714, solution fs-id1594532: model answer matches source verbatim (spontaneous = negative ΔG; need not be fast; can take long due to large activation energy). All 3 CHECKS clauses restate it, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "50c03e787167d8e4": {
+   "verdict": "ok",
+   "note": "fs-id912818 key C; source options verbatim in source order, keyed option matches CNXML solution; module supports key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "50c3d3c2e0dcd6ad": {
    "verdict": "ok"
   },
@@ -32211,6 +32547,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "50e17ca823da4f87": {
+   "verdict": "ok",
+   "note": "selfcheck line 125: model answer — model answer re-read against m46058 solution"
   },
   "50ea75f8f7f693ee": {
    "verdict": "ok",
@@ -32299,6 +32639,14 @@
   "5138cf1c53f274bc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5139f383252b3748": {
+   "verdict": "ok",
+   "note": "Glossary term serous membrane, from body fs-id1110348: These membranes line the coelomic cavities... that do not open to the outside.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32419,6 +32767,14 @@
   "517ed9280bcdc351": {
    "verdict": "ok",
    "note": "source Critical Thinking fs-id1167741272348, unkeyed, model answer from the somatic-vs-germ-line paragraph | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "518b1b9dc2043905": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1960088 (eczema), meaning as printed; body fs-id1943913",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5197b707ef1fb255": {
    "verdict": "ok",
@@ -32658,6 +33014,14 @@
   "523cc6f5ef586f23": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "523d4d92ba43af31": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1212032: \"Each of these fluids has a role to play in maintaining homeostasis.\" (preceding sentence kept as referent); accept homoeostasis (British spelling)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32966,6 +33330,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "53023149c2476460": {
+   "verdict": "ok",
+   "note": "CT fs-id1432129 solution fs-id890816 verbatim; rubric clauses copied from it"
   },
   "530f217bc99e0d73": {
    "verdict": "ok",
@@ -33386,6 +33754,14 @@
     "result": "agrees"
    }
   },
+  "5400e4218b7b8f58": {
+   "verdict": "ok",
+   "note": "textin line 180: wound contraction — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "540a238e0b97be8f": {
    "verdict": "ok"
   },
@@ -33594,6 +33970,14 @@
    "verdict": "ok",
    "note": "m66466 critical-thinking solution fs-id1482920 (universality of glycolysis supporting its antiquity) matches the page's model answer verbatim; all three checks restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "549e69877d9a5a93": {
+   "verdict": "ok",
+   "note": "RQ fs-id1543027 key C source of blood vessels in the epidermis (fs-id1511323 avascular epidermis); option D wording as printed; hint now points only at the Hypodermis section and its box",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "549e7dfc78298470": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: Focus (0,1/4) -> 4p=1 -> x^2=y; matches source exercise fs-id1525645's key exactly (item 51 of the Graphical set, whose own graph prints Vertex (0,0) and Focus (0,1/4)). Self-checked correct under the token.",
@@ -33698,6 +34082,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "54ec6b5fa5adfe8c": {
+   "verdict": "ok",
+   "note": "fs-id1959993 Critical Thinking; model answer = source solution verbatim; checks are clauses of it"
   },
   "54f6a872e5227b86": {
    "verdict": "ok",
@@ -34969,6 +35357,14 @@
     "result": "agrees"
    }
   },
+  "582bf4264a896f30": {
+   "verdict": "ok",
+   "note": "cloze from module sentence; key printed in body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "582f08e112ca1eb6": {
    "verdict": "ok",
    "note": "Practice selfcheck, source Critical Thinking fs-id1167661730304, unkeyed; module explains the type IV/memory-T-cell mechanism but not BCG itself, model answer states what the module gives and stops | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -35170,6 +35566,14 @@
   "58b649b57a8b51c1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "58c3d7766b3bde00": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1496238, key C; 5.1 Stratum Spinosum: Langerhans cell engulfs bacteria",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35819,6 +36223,10 @@
     "result": "agrees"
    }
   },
+  "5a4e7ed288014a74": {
+   "verdict": "ok",
+   "note": "CT fs-id1501578; model answer = solution fs-id1408007 verbatim ('blood-brain-barrier' as printed)"
+  },
   "5a55dc70e8e2f60c": {
    "verdict": "ok",
    "note": "glossary recall: salamander (fs-idm190166624) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -35864,6 +36272,14 @@
    "note": "source exercise eip-929 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5a6dc217214d31cc": {
+   "verdict": "ok",
+   "note": "Summary cloze fs-id1466200: Epithelial tissues act as coverings controlling the movement of materials across the surface.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -36001,6 +36417,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5abd26c58359ea10": {
+   "verdict": "ok",
+   "note": "Summary cloze fs-id1466200: Nervous tissues propagate information; accept list from body fs-id1312224 electrochemical signals / nerve impulses.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5ac0b20943673905": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -36016,6 +36440,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5ac37d800c7da4a5": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1454333; model answer = solution fs-id1436027 verbatim"
   },
   "5ac7c138d7b15454": {
    "verdict": "ok",
@@ -36370,6 +36798,10 @@
     "result": "agrees"
    }
   },
+  "5ba42ade5264d33d": {
+   "verdict": "ok",
+   "note": "CT fs-id951649, source solution verbatim except in to -> into (one-word correction, footer)."
+  },
   "5ba4945ebaaf403a": {
    "verdict": "ok",
    "note": "KC 3 14.5 § introduction, m66391 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -36445,6 +36877,14 @@
   "5bdbf66b885dac6a": {
    "verdict": "ok",
    "note": "unkeyed SA, model quotes the HIV-specific prevalence>incidence sentence and discloses it does not generalize to epidemics | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5be1c479b9ba636d": {
+   "verdict": "ok",
+   "note": "textin line 247: cancer stem cells — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5bf04c1647c7d72d": {
    "verdict": "ok",
@@ -36574,6 +37014,14 @@
    "note": "glossary recall, definition fs-id1957596 (GC-rich box).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5c327b3cf0bc8946": {
+   "verdict": "ok",
+   "note": "textin line 107: edema — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -36809,6 +37257,14 @@
    "note": "KC 8 45.4 § body Density-Dependent Regulation (fs-idm21187472), m66691 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5d02c6888abaa6c4": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1960112 (keloid); accept hypertrophic scar|keloid scar from body fs-id1942644 \"a raised or hypertrophic scar called a keloid\"",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -37898,6 +38354,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "5fc9b8d1777cb997": {
+   "verdict": "ok",
+   "note": "CT fs-id1535494; model answer = solution fs-id1419501 verbatim"
   },
   "5fcd183aaf2305d0": {
    "verdict": "ok",
@@ -39505,6 +39965,14 @@
    "verdict": "ok",
    "note": "Practice selfcheck, unkeyed SA fs-id1167663712531 — model answer assembles the direct-HA titer sentence and the HIA titer sentence, contrasting what is diluted (virus vs. antibody) in each. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "650b5431cdae254e": {
+   "verdict": "ok",
+   "note": "body sentence fs-id1523476 vitiligo (glossary fs-id1444947)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "650dd15276eb601b": {
    "verdict": "ok",
    "note": "m66554 critical-thinking exercise fs-idp61504304: model answer is the CNXML solution verbatim (Giardia/G. lamblia italicized per source emphasis, checkpoints reworded plain since checkpoints render as plain text). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -39985,6 +40453,14 @@
    "note": "MC fs-id2642317: 'first level of DNA organization maintained by which molecule?' answer='histone' matches keyed solution D, matches section text (histone proteins form the nucleosome, the first level of compaction). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6666785b23d45666": {
+   "verdict": "ok",
+   "note": "fs-id920234 key D hyaline cartilage; fs-id1141589 'Under the microscope, tissue samples appear clear'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -40501,6 +40977,14 @@
   "67baee095e369dfa": {
    "verdict": "ok",
    "note": "Microbiology 14.2 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Spectrum of Activity superinfection paragraph; states the yeast-specific reason is not given)"
+  },
+  "67c9c14773e9af61": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1119252 first sentence: 'Nervous tissue is characterized as being excitable and capable of sending and receiving electrochemical signals that provide the body with information.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "67ce6ece70fcbcf5": {
    "verdict": "ok",
@@ -41044,6 +41528,14 @@
   "693ae73d37e09f0b": {
    "verdict": "ok",
    "note": "Precalculus 3.2 Practice graphplot, re-derived by the parent in the October 4, 2026 chapter 3 re-review: f(x)=x^2-2x is the quadratic a=1, b=-2, c=0 (vertex (1,-1), x-intercepts (0,0) and (2,0), symmetric points (-1,3), (3,3)), all lattice points inside the -7..7 grid; the key {quadratic a=1,b=-2,c=0, plotPoints 3} matches. The answerDisplay no longer prints the vertex the fill-in below asks for."
+  },
+  "6943042a132d7579": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1284176, key C; 5.1 m46060: epidermis avascular, papillary layer has small blood vessels",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "694529d7ef274109": {
    "verdict": "ok",
@@ -44970,6 +45462,14 @@
     "result": "agrees"
    }
   },
+  "740171f11bd3800b": {
+   "verdict": "ok",
+   "note": "cloze from m46062 fs-id1541120: \"The rest of the hair, which is anchored in the follicle, lies below the surface of the skin and is referred to as the hair root.\"",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7405253f67af90e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47070,6 +47570,14 @@
     "result": "agrees"
    }
   },
+  "793b5c9266d6ce8d": {
+   "verdict": "ok",
+   "note": "tbl-ch04_04_01; every label from one row cell, true of one tissue only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7941f300bed7c62e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47357,6 +47865,10 @@
   "79eef584ea39546b": {
    "verdict": "ok",
    "note": "Critical Thinking eip-923; model answer is the source solution near-verbatim (rhizome weathering rock, network preventing erosion). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "79f12712d04e49a9": {
+   "verdict": "ok",
+   "note": "source solution verbatim (ILQ/CT), re-read against CNXML"
   },
   "79f1710e6af06325": {
    "verdict": "ok",
@@ -47770,6 +48282,14 @@
   "7ab27535ffc7863b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7ab64ea5d6eb7326": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1315893: 'The synapse is the gap between nerve cells, or between a nerve cell and its target, for example, a muscle or a gland, across which the impulse is transmitted by chemical compounds known as neurotransmitters.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48582,6 +49102,14 @@
   },
   "7c7118e8a8a456a0": {
    "verdict": "ok"
+  },
+  "7c7300c778e374b0": {
+   "verdict": "ok",
+   "note": "RQ fs-id1524093, key A differentiation.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7c740544727c5b80": {
    "verdict": "ok"
@@ -51254,6 +51782,14 @@
     "result": "agrees"
    }
   },
+  "836f4838d9ddd1db": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id1432081: covered with dead, keratinized cells; referent this membrane -> the skin.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "83714e59049ad420": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Biologists often associate microfilaments with myosin.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -51328,6 +51864,14 @@
    "note": "source exercise fs-id1167663697644 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "83a03fb32c7d251e": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1093962 verbatim; accept subcutaneous layer|superficial fascia (5.1 synonyms)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51806,6 +52350,14 @@
     "result": "agrees"
    }
   },
+  "84bcb39b7254dfac": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1518990; stem = body defining clause fs-id1320162",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "84c1fdae16b182ef": {
    "verdict": "ok"
   },
@@ -52123,6 +52675,10 @@
   "858101605f401651": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "858a8cd80f8867ed": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1173409 (solution fs-id1187632) verbatim minus leading figure link; fixed by fs-id1689574 spiny ... desmosome"
   },
   "858b02269aebfd86": {
    "verdict": "ok",
@@ -52458,6 +53014,14 @@
   "867ad99e81f9ec77": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "867c0f604064e423": {
+   "verdict": "ok",
+   "note": "RQ fs-id1058496, key D mucosa; fs-id1522633 mucous membrane, sometimes called mucosae, lines passageways open to the external environment.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53240,6 +53804,14 @@
     "result": "agrees"
    }
   },
+  "88dfa2116f20f333": {
+   "verdict": "ok",
+   "note": "fs-id1272771 key B; source options verbatim in source order, keyed option matches CNXML solution; module supports key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "88e1ec5106a3837a": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100922415 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -53391,6 +53963,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "8932439e9c3bd794": {
+   "verdict": "ok",
+   "note": "multiplechoice line 194: loss of mass — key re-read against m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8933bd4876003edf": {
    "verdict": "ok",
    "note": "glossary recall: monogamy (fs-idp158367088) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -53502,6 +54082,22 @@
    "note": "KC 6 32.2 § body Seed Germination (fs-idp42182512), m66608 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8965eb781d638a48": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1334592; body fs-id1283151",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "89671ae6bf56cde9": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1235652; body fs-id1311216; accept endocrine|ductless gland",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -58540,6 +59136,14 @@
     "result": "agrees"
    }
   },
+  "969b7e7118b58ef5": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1448861 'It is not strictly a part of the skin'; distractors dermis/epidermis/papillary layer are skin layers per module",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "96a0366cbe819aae": {
    "verdict": "ok",
    "note": "author-built from § Patterns of Incidence, Check Your Understanding: \"Explain the difference between sporadic and endemic disease.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -59183,6 +59787,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "987197a7a8a13546": {
+   "verdict": "ok",
+   "note": "fs-id1461935 model answer = sol fs-id1315258 verbatim"
   },
   "98734e98043216a9": {
    "verdict": "ok",
@@ -59879,6 +60487,14 @@
     "result": "agrees"
    }
   },
+  "9a4cc9e0f106b980": {
+   "verdict": "ok",
+   "note": "fs-id1667854 key D; source options verbatim in source order, keyed option matches CNXML solution; module supports key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9a54f743242dd135": {
    "verdict": "ok",
    "note": "selfcheck: CYU malaria-importance bullet; module gives no single fixing sentence (distribution claim + separate WHO case/death-count sentence), model answer and checkpoints quote both, per Part C item 3. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -59982,6 +60598,10 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
+  },
+  "9aa31554137ae4af": {
+   "verdict": "ok",
+   "note": "selfcheck line 227: model answer — model answer re-read against m46058 solution"
   },
   "9aa8cbfa27b8c625": {
    "verdict": "ok",
@@ -61005,6 +61625,14 @@
     "result": "agrees"
    }
   },
+  "9d662e0d0e66e58f": {
+   "verdict": "ok",
+   "note": "textin line 143: vasodilation (accept vasodilatation, printed in m46400; grader-checked) — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9d7350e1868ba38a": {
    "verdict": "ok",
    "note": "author-built from § Platyhelminths (Flatworms): \"The other medically important group of platyhelminths are commonly known as tapeworms ( cestodes ) and are segmented flatworms that may hav…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -61966,6 +62594,14 @@
     "result": "agrees"
    }
   },
+  "a020e7a798eb3e9e": {
+   "verdict": "ok",
+   "note": "author-written from fs-id1211959, fs-id1535229, summary fs-id1053236; each item true of one bin only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a023fa0edaddc32d": {
    "verdict": "ok",
    "note": "Review fs-id1526011 key C",
@@ -62495,6 +63131,14 @@
     "result": "agrees"
    }
   },
+  "a17903839d89357b": {
+   "verdict": "ok",
+   "note": "Review fs-id1493258, source key C (fs-id1274159); body fs-id1321611 endothelium single layer of squamous cells",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a17b9ab1ca65684d": {
    "verdict": "ok",
    "note": "m66554 exercise fs-idp130461296 (Review Q3): keyed option B 'a cilium' matches the CNXML solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -62975,6 +63619,14 @@
   "a26172b5dfcd9146": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "a2687c9fc1105752": {
+   "verdict": "ok",
+   "note": "RQ fs-id1476034 key C connective tissue (fs-id1146438)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a27349338f989f78": {
    "verdict": "ok",
@@ -64895,6 +65547,14 @@
   "a70ba0b748db28f1": {
    "verdict": "ok",
    "note": "Annuity a1=150,r=1+0.03/12=1.0025,n=24; Sn=3705.4227 (node), rounds to 3705.42; matches CNXML fs-id1165135205791 solution (3,705.42)."
+  },
+  "a71872a3b8a17a89": {
+   "verdict": "ok",
+   "note": "multiplechoice line 205: genetic factors — key re-read against m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a71b21fed736a170": {
    "verdict": "ok",
@@ -67388,6 +68048,14 @@
     "result": "agrees"
    }
   },
+  "adc74d5d57d3d95b": {
+   "verdict": "ok",
+   "note": "fs-id1139303 key C dense regular connective tissue; fs-id1180376",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "adc85ddd3b0e7ea4": {
    "verdict": "ok",
    "note": "textin: answer 'anabolic' (accept 'anabolism') matches glossary definition id fs-id2187720 verbatim ('pathways that require an energy input to synthesize complex molecules from simpler ones'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -68240,6 +68908,14 @@
    "note": "glossary recall: trophoblast (fs-idm528192) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "afe4e27c14ebd059": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1828260 'too much melanin can interfere with the production of vitamin D'; folic acid and calcium are the module's other nutrients, neither stated as interfered with",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69135,6 +69811,14 @@
     "result": "agrees"
    }
   },
+  "b25dcd6e9325ac5c": {
+   "verdict": "ok",
+   "note": "fs-id999856 key B; options verbatim in source order; key confirmed against raw CNXML and the module body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b26046598824d4b0": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: fluorochromes (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -69392,6 +70076,14 @@
   "b2f37c0135e7f63d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b2f6e1d0c3d666d7": {
+   "verdict": "ok",
+   "note": "cloze from module sentence; key printed in body",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70078,6 +70770,14 @@
     "result": "agrees"
    }
   },
+  "b49b44cbbbb2bf7b": {
+   "verdict": "ok",
+   "note": "textin line 186: adult stem cells — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b49db2542912ab62": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -70697,6 +71397,14 @@
     "result": "agrees"
    }
   },
+  "b61744d88dd386a9": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1448861 '(also called the subcutaneous layer or superficial fascia)'; accept adds 'subcutaneous tissue' (term printed in other chapters)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b630cb2ffde30524": {
    "verdict": "ok",
    "note": "source exercise fs-id1172101888699 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -70899,6 +71607,10 @@
   "b6c45cc9ace2fb95": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "b6c87f16cf97dba0": {
+   "verdict": "ok",
+   "note": "CT fs-id1284242 solution fs-id1541273 verbatim; rubric clauses copied from it"
   },
   "b6cb6254774df422": {
    "verdict": "ok",
@@ -71966,6 +72678,14 @@
    "verdict": "ok",
    "note": "PA KC 07-11 §11.1, Ch.11 Practice Test 'Plot and label these points' (m81354), whose key prints the answer graph with all five points. Re-derived by inspection of the printed prompt: the five ordered pairs are (2,5), (-1,-3), (-4,0), (3,-5) and (-2,1), and a points answer grades exactly the placement of those five. All five are distinct, on the snap-1 lattice and inside the -7..7 grid; the component grades them order-agnostically with partial-credit feedback."
   },
+  "b921b5436e7ae1d2": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch04_03_01; 11 items each in exactly one column; dense Elastic dropped as ambiguous",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b9227d0d306d4eee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72976,6 +73696,14 @@
     "result": "agrees"
    }
   },
+  "bbe08c465c4857b2": {
+   "verdict": "ok",
+   "note": "glossary recall: sudoriferous gland (fs-id1613614 \"sweat gland\"); body prints \"sudoriferous glands\" fs-id1171634",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bbe16d369dc97b20": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73194,6 +73922,14 @@
   "bc68422ccbc6f28a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bc6ba4dce498aa68": {
+   "verdict": "ok",
+   "note": "author-written from fs-id1539274 (four accessory structures) + fs-id1319983 (medulla, cortex), fs-id1200286 (eponychium, lunula), fs-id1509858 (dermcidin), fs-id1449977 (antiperspirant block in sweat gland duct), fs-id1107478 (stratum corneum pliable; fatty acids of sebum antibacterial); each item true of one bin only",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -75296,6 +76032,14 @@
     "result": "agrees"
    }
   },
+  "c210078ded3bdf24": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1196804; body fs-id1178293",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c2154b223616c4b6": {
    "verdict": "ok",
    "note": "Review Question fs-id2075108, solution fs-id1910465: keyed option B, RNA primer. Matches the section: 'RNA primase, synthesizes an RNA segment ... appropriately called the primer.' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -75307,6 +76051,15 @@
   "c218c8a9c9496ac4": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c219351ed07df894": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1331186, key C as source keys; option D Merkel cells under solve watch (module calls them touch receptors only)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "source key 'folic acid synthesis' stands: the module gives the skin no folic-acid-synthesizing role (5.1 says melanin protects folic acid from breakdown; 5.3 names vitamin D synthesis), so it is the one option that is not a skin function at all; Merkel cells are touch receptors under Sensory Function and the solver itself picked the source key; parent solve-watch closed, option set left as the source prints it"
+   }
   },
   "c21bbc42aacb5fcd": {
    "verdict": "ok",
@@ -75602,6 +76355,22 @@
     "result": "agrees"
    }
   },
+  "c2d4ecaa178786b7": {
+   "verdict": "ok",
+   "note": "glossary recall mucous connective tissue (fs-id1212812); body fs-id1452398 prints key and Wharton’s jelly; accept Wharton’s jelly|Wharton jelly, grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c2deb06c9b798ef2": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1536358 Schwann cell; body fs-id1488244 prints 'the Schwann cell produces myelin in the peripheral nervous system'; accept Schwann grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c2e016108ec1cdec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -75845,6 +76614,14 @@
    "note": "body cloze from § Lipid Catabolism: \"The four fused rings are sequentially broken in a multistep process facilitated by specific enzymes, and the resulting products, including…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c38cef516640783f": {
+   "verdict": "ok",
+   "note": "source key confirmed against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -76571,6 +77348,14 @@
   "c521f5475730d452": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 64): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "c522011a95c2e5b4": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1187499 keratohyalin; body prints key fs-id1205993",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c526e1931d0fdc81": {
    "verdict": "ok",
@@ -77388,6 +78173,10 @@
     "result": "agrees"
    }
   },
+  "c783c540e2ffb918": {
+   "verdict": "ok",
+   "note": "CT fs-id1472548, model answer = source solution verbatim."
+  },
   "c78a024a1f6d07eb": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -77554,6 +78343,10 @@
     "result": "agrees"
    }
   },
+  "c80838719361009f": {
+   "verdict": "ok",
+   "note": "selfcheck line 160: model answer — model answer re-read against m46058 solution"
+  },
   "c80f771c7c1fde52": {
    "verdict": "ok",
    "note": "source exercise fs-id2813837 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -77585,6 +78378,14 @@
   "c81d9ab98c212343": {
    "verdict": "ok",
    "note": "source Critical Thinking fs-id1167660227530 (no source key); model answer assembled from the module's separate antibiotic-disruption sentence and proton-pump-inhibitor sentence, two checkpoints | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c8248d6140ede6e8": {
+   "verdict": "ok",
+   "note": "Author MC from fs-id1534105: Note that epithelial tissue originates in all three layers.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c82cc6c7f6449bf8": {
    "verdict": "ok",
@@ -80421,6 +81222,14 @@
     "result": "agrees"
    }
   },
+  "cf9405142ba67b4b": {
+   "verdict": "ok",
+   "note": "Review fs-id1272057, key A neurons; options in source order; body fs-id1119252",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cf977539c5032b65": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -80682,6 +81491,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "d04b737e7f2342a6": {
+   "verdict": "ok",
+   "note": "fs-id1511808 model answer = sol fs-id1515603 verbatim"
   },
   "d04d8a76da3a6504": {
    "verdict": "ok",
@@ -81085,6 +81898,14 @@
   "d1648fa91402bd26": {
    "verdict": "ok",
    "note": "cotangent is odd: cot(-t)=-cot(t)=-√3 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d1761ed34f2bbfff": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id1534105: three major cell lineages are established within the embryo; accept lineages.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d17a352259aefd49": {
    "verdict": "ok",
@@ -81856,6 +82677,14 @@
   "d3d9e2f87d49bece": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d3df903732ba26ee": {
+   "verdict": "ok",
+   "note": "fs-id1076026 key B mesenchyme; fs-id1452398 mesenchymal cells supply replacement cells in adult tissue",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -82731,6 +83560,14 @@
     "result": "agrees"
    }
   },
+  "d5ff0456c6cf9040": {
+   "verdict": "ok",
+   "note": "Review fs-id1436751, key D astrocytes; options in source order; body fs-id1488244 and glossary",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d608111cd46df7d9": {
    "verdict": "ok"
   },
@@ -82879,6 +83716,14 @@
   },
   "d66f3b1253534f5d": {
    "verdict": "ok"
+  },
+  "d67767ea629d915c": {
+   "verdict": "ok",
+   "note": "fs-id1200668 key C; options verbatim in source order; key confirmed against raw CNXML and the module body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d67f44f8d9a605c5": {
    "verdict": "ok",
@@ -83391,6 +84236,14 @@
   "d796421c4b3034ec": {
    "verdict": "ok",
    "note": "Continuation of the same system as 9cc802ddb8c238dd: a=1650-700=950. Node-verified. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d799752c4da028ba": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id942515; body fs-id1454989 prints apical; accept apical surface grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d799cd47ef0e6050": {
    "verdict": "ok",
@@ -85745,6 +86598,14 @@
   "de41467a00e089de": {
    "verdict": "ok"
   },
+  "de46d107c1d2a3ee": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1053044 stratum lucidum; body prints key fs-id1511323/fs-id1330935",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "de53e7f096199642": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -87786,6 +88647,14 @@
     "result": "agrees"
    }
   },
+  "e32cf5d82673131a": {
+   "verdict": "ok",
+   "note": "cloze from fs-id969372; mast cells release histamine",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e33329993a3b1be5": {
    "verdict": "ok",
    "note": "source exercise fs-id2250378 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -88817,6 +89686,14 @@
     "result": "agrees"
    }
   },
+  "e59aad4f3d3c7ef0": {
+   "verdict": "ok",
+   "note": "body sentence fs-id1805681 melanosome (glossary fs-id1052419); not keyed on 'intercellular'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e5a268f5fdb9b9b7": {
    "verdict": "ok",
    "note": "glossary fs-id1712432: antiporter = two different ions/molecules, different directions.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -89071,6 +89948,14 @@
     "result": "agrees"
    }
   },
+  "e64c3f031b85e302": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1174758; body fs-id1454989; accept basal laminae (irregular plural)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e656aca1034875c0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89222,6 +90107,14 @@
   "e6c3e579f6456ec2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e6c6768190276e3b": {
+   "verdict": "ok",
+   "note": "Glossary term cutaneous membrane, from body fs-id1432081: The skin is an epithelial membrane also called the cutaneous membrane.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -90111,6 +91004,14 @@
    "verdict": "ok",
    "note": "source Short Answer fs-id1167741460473, unkeyed, model answer from the risks paragraph | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "e9727954efaa3b27": {
+   "verdict": "ok",
+   "note": "textin line 137: necrosis — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e9778cc63322cb48": {
    "verdict": "ok",
    "note": "source exercise fs-idp32331328 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -90130,6 +91031,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e97ccabf0a0003b8": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1437139; model answer = solution fs-id1300309 verbatim; fixed by body para fs-id1315893 'three main parts' (cell body, dendrites, axon) and the summary"
   },
   "e97f96e49cb4266f": {
    "verdict": "ok",
@@ -91607,6 +92512,14 @@
     "note": "key stands: the m66552 summary says 'descended from an archaean ancestor'; 'archaeal|archean' already in accept"
    }
   },
+  "ed69934da5262931": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1640324 'The skin and its accessory structures make up the integumentary system'; accept 'accessory organs' = fs-id1178368 wording",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ed7a16f65aa221b2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91872,6 +92785,14 @@
   },
   "ee11e06c01284d05": {
    "verdict": "ok"
+  },
+  "ee23026b0293dece": {
+   "verdict": "ok",
+   "note": "cloze from m46062 fs-id1539274 (opening paragraph): \"These structures embryologically originate from the epidermis and can extend down through the dermis into the hypodermis.\"; accept subcutaneous layer|superficial fascia = 5.1 m46060 fs-id1448861 synonyms; re-read against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ee26fed8a947bc5b": {
    "verdict": "ok",
@@ -92930,6 +93851,14 @@
     "note": "source key A kept on source authority: m66707 Visual Connection fs-idp3595520 keys A; the module never discusses fern spores, so the page cannot settle it and the printed key stands (docs/openstax-errata.md Reviewed-and-not-errata entry; footer discloses). Solver unsure by construction."
    }
   },
+  "f14949f8fb9c0f57": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id1435343: arranged in an orderly pattern that achieves the tissue functions.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f149fac2b8e90a9f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93370,6 +94299,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f29af242e2110b0d": {
+   "verdict": "ok",
+   "note": "Review fs-id1103469, source key A (fs-id1527042); body fs-id1483950/fs-id1188122",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f29b240a0a5b7ec9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93633,6 +94570,14 @@
   "f334ac75f83f21b7": {
    "verdict": "ok",
    "note": "KC 1 2.2 § Early Microscopes (Micro Connection: Who Invented the Microscope?), m58786",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f3367cc6452873f2": {
+   "verdict": "ok",
+   "note": "body sentence fs-id1059498 defining basal cell (glossary fs-id1805140)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -94404,6 +95349,14 @@
    "verdict": "ok",
    "note": "Microbiology 1.3 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the first Viruses paragraph)"
   },
+  "f4e4fe1d1686034a": {
+   "verdict": "ok",
+   "note": "RQ fs-id1264875 key D stratum basale (fs-id1198448 'projects into the stratum basale')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f4e70838bec0b654": {
    "verdict": "ok",
    "note": "Domain of any b^x is all reals; (-\\infty,\\infty). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -94646,6 +95599,14 @@
   "f599974a21a908ba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f59af239937595f0": {
+   "verdict": "ok",
+   "note": "glossary recall: anagen (fs-id1500079 \"active phase of the hair growth cycle\"); body fs-id961934",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95067,6 +96028,14 @@
     "result": "agrees"
    }
   },
+  "f6bb3b772fd2ac4c": {
+   "verdict": "ok",
+   "note": "multiplechoice line 149: histamine — key re-read against m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f6bf080aac1d508e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95138,6 +96107,14 @@
   "f6e1de7903885413": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L391 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "f6eaabc42007cd49": {
+   "verdict": "ok",
+   "note": "source key confirmed against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f6ee1bbd878cf767": {
    "verdict": "ok",
@@ -96730,6 +97707,14 @@
     "result": "agrees"
    }
   },
+  "fade3d3f7bd88e52": {
+   "verdict": "ok",
+   "note": "fs-id1153084 key B cells, ground substance, and protein fibers; matches intro para fs-id1514526",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fade5026bc97b721": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662771044 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -96967,6 +97952,14 @@
    "note": "source exercise eip-827 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fb6982f16dd78434": {
+   "verdict": "ok",
+   "note": "textin line 241: sarcomas — re-read against m46058 and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -97452,6 +98445,14 @@
   "fc921d3b09cc3938": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fc9621e720115203": {
+   "verdict": "ok",
+   "note": "glossary recall parenchyma (fs-id1525808); body fs-id1205809",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98346,6 +99347,14 @@
   "feaa08fdffe87f4d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "feaaacf7e99f6ad7": {
+   "verdict": "ok",
+   "note": "RQ fs-id1097582, key B ectoderm, mesoderm, and endoderm; fs-id1534105 and summary.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

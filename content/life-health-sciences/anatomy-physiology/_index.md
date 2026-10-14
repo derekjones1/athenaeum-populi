@@ -49,16 +49,27 @@ reproduction, development, and inheritance.
   regulates what enters and leaves, the organelles of the cytoplasm, the
   nucleus and DNA replication, protein synthesis, the cell cycle and
   division, and cellular differentiation.
+- **The Tissue Level of Organization** — how cells organize into tissues:
+  the four main tissue types and their embryonic origins, tissue membranes,
+  epithelial tissue and glands, connective, muscle, and nervous tissue, and
+  how tissues respond to injury, aging, and cancer.
+
+### Unit 2: Support and Movement
+
+- **The Integumentary System** — the skin and its accessory structures: the
+  layers of the skin and the hypodermis, hair, nails, and sweat and
+  sebaceous glands, the functions of the skin including temperature
+  regulation, and common diseases, disorders, and injuries of the skin and
+  how it heals.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 1: Levels of Organization** — The Tissue Level of Organization.
-- **Unit 2: Support and Movement** — The Integumentary System; Bone Tissue and
-  the Skeletal System; Axial Skeleton; The Appendicular Skeleton; Joints;
-  Muscle Tissue; The Muscular System.
+- **Unit 2: Support and Movement** — Bone Tissue and the Skeletal System;
+  Axial Skeleton; The Appendicular Skeleton; Joints; Muscle Tissue; The
+  Muscular System.
 - **Unit 3: Regulation, Integration, and Control** — The Nervous System and
   Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System;
   The Autonomic Nervous System; The Neurological Exam; The Endocrine System.
