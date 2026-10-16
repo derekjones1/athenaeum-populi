@@ -292,6 +292,115 @@ group headings and that an appositive cloze self-answers; and the parent
 adds an accept list to any author cloze whose key is a two-word phrase a
 learner would shorten ("genetic factors": genetics, genes, heredity).
 
+## Chapter 6 (October 15, 2026)
+
+Seven sections, one wave, the first run on the model roster that
+AGENTS.md "Which model runs which agent" now tabulates (Author = Opus,
+Blind solver = Fable, Clerk = Sonnet): seven Opus authors launched
+together, an Opus checker for each page as its author reported, one Opus
+claim pass, an Opus alt-errata verifier, and the blind solve in a fresh
+Fable subagent with masked pages. Sonnet clerks did the checklist work
+the parent used to hold: the landing page, the run facts, the pins, the
+errata draft, and this history. Authors reported Practice items per page
+of 8 (6.1), 8 (6.2), 25 (6.3), 17 (6.4), 10 (6.5), 12 (6.6), and 8 (6.7),
+88 in all; every source exercise reached its page, and the chapter has no
+Interactive Link Questions (6.5's quiz link is a callout). The run-facts
+clerk corrected the parent's first PDF ranges: the introduction is one
+page, not two, and 6.7 ends a page earlier than the first read; the
+parent verified both against the rendered pages. It also drew up the Part
+B items, and the parent read the flagged figures off the vendored images
+for Part C.
+
+Two Part C lines were the parent's own errors, both caught by an author
+and confirmed on the image. The first read of 612 repeated the drafter's
+inference that a healthy bone is drawn beside the fractures; the image
+shows eight fractured legs and no healthy bone, so the caption's "Compare
+healthy bone with…" dangles (a source defect, kept as printed and
+disclosed). The Bone Markings table was described as printing no class
+rows; it prints three (Articulations, Projections, Holes), and the body
+and figure 602 carry the same three. Part C's eye-read of 615 was also
+off at the steep drop (1069 g at 52, 823 at 60, 750 at 65 by pixel
+measurement), and the checker's trace, not the brief, went into the
+erratum.
+
+Checkers found 14 defects on lint-clean pages (6.1: 3, 6.2: 1, 6.3: 6,
+6.4: 1, 6.5: 1, 6.6: 1, 6.7: 1) plus concerns. The top classes: stem and
+cloze leaks (a compound key whose stem printed its parts, "muscular …
+skeletal"; a young-adulthood cloze leaked by a Critical Thinking stem),
+hints that state the key (6.3 twice, 6.6's foods hint, 6.5's "adult"
+qualifier), accept gaps ("bone remodeling" rejected by the remodeling
+cloze; the hypo-/hyper- hyphenation fold), Source notes that name the
+key they re-key, and a sortbins whose plural bin held the only
+base-form verbs (a verb-number tell no lint catches). Footers stating
+alt claims the verifier later rejected were the other recurring class.
+Each page's author applied its own checker's fixes.
+
+Five source-key departures were approved by the parent, each with a
+Source note, a footer clause, a `DISCLOSED_DEVIATIONS` entry, and an
+erratum: 6.3's compact-bone option replaced by "articular cartilage"
+(1930), the mitosis item re-keyed to osteogenic cells (1931), the
+osteoclast item re-keyed to osteoclasts (1932), the lamellae item
+re-keyed to perforating canals because figure 606 draws lamellae in
+spongy bone (1933), and the "bone remodeling" option replaced (1941).
+One more disclosure was a `solution` deviation (1939): rewording 6.4's
+second Critical Thinking model answer for the claim correction left the
+selfcheck at 48 percent of the source's words, and the keys gate asked
+for the entry.
+
+The claim pass found seven problems, all accepted: the 618 caption's
+"non-traumatic injury"; fingers and toes where the bones are of the hands
+and feet; tendon "sheaths"; the summary calling hydroxyapatite organic;
+the fetal-skeleton cartilage sentence; the Critical Thinking model answer's
+"two of them" (typically one center in each epiphysis; a phalanx has one, the femur several); and "lack of poor air exchange"
+(a one-word class, no Source note). The growth-stop ages (16–18 against
+18–21), the vitamin D and PTH summary line, and a clavicle wording that
+tensions with a later chapter were reviewed and left as printed; the
+clavicle is flagged for that chapter's claim pass. Three true distractors
+were ruled after the solve. "Calcitonin and calcitriol" (6.6) and "spongy
+bone" in the diaphysis (6.3, figure 624 labels it) were kept as printed
+with the solve as tie-breaker, recorded as reviewed, not errata. "Bone
+remodeling" as an option on the epiphysis item was replaced after the
+checker, the claim pass, and the verifier agreed, though the solver had
+picked the key. The first replacement, "fat storage," was withdrawn by
+the author, who saw it would sit directly above an item keyed "fat
+stores"; "osteon formation," false of spongy bone by the summary, took
+its place.
+
+The alt-errata verifier gave 65 verdicts: 17 held, 9 typos, 35 rejected,
+4 already filed. It rejected three of the parent's 618 readings (the
+parent spot-checked the image: a frontal view with a translucent
+braincase) and corrected three footers that stated rejected claims (6.1's
+brain-drawing and femur clauses, 6.3's 607 sides and 604 panel order, 6.4's
+623 clause, reworded by panel). The blind solve agreed 74/74 with no
+flags and no disagreements; the option swap on the epiphysis item was
+carried by a one-item remap (1 agree). The harness refused three
+subagents' report-file writes ("Subagents should return findings as
+text" — the 6.5 and 6.6 authors and the pins clerk), so the parent saved
+those reports from the agents' final messages. Errata 1930–1957 (28: 7 claim; 5 key or option; 2 typos; 1
+caption; 13 alt or artwork). The map now carries chapter 6; the axe suite
+gained its 6.3 route. Baselines moved to 7,276 replayed, 15,045
+exercises, and 5,157 confirmed (5,158 before the last option swap moved
+one answer to the disclosed list — a deliberate `--allow-decrease`),
+`--min-covered` hand-edited 2931 → 2983;
+the build audit reports 5,150 files.
+
+Lessons folded in: the brief names the exemplar page (all seven authors
+used 5.1 because Part C named none); a Source note after a graded item
+never names the page's key or eliminates an option, and the double-key
+hunt reads the module's figures as a source of a second key; the
+checker's page-wide grep covers selfcheck model answers and CHECKS, not
+only stems and hints; a sortbins plural-bin verb-number tell and the
+hyphenated-prefix accept fold are hand checks until a lint exists; a
+two-word key whose half is printed is a root leak only when the printed
+half is the distinguishing word; the parent restates no drafter inference
+about a figure without viewing the image; `rebuild-ledger-results.py` on
+a second run answered "6.1: expected one page, found []" and wrote
+nothing, so the author's raw 6.3 record was merged instead; and
+verify-section's facts line reads "model answers author-written" for a
+selfcheck whose answer is the source solution verbatim, so the label now
+reads "selfchecks total N (each model answer read against its source
+solution or, where author-written, the module)".
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

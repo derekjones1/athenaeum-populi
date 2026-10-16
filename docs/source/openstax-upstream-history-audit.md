@@ -16,9 +16,9 @@
 
 ## Coverage
 
-- Mapped local sections: 637
-- Sections changed upstream: 41
-- Content-level changes: 33
+- Mapped local sections: 644
+- Sections changed upstream: 42
+- Content-level changes: 34
 - Markup/metadata-only changes: 8
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
@@ -32,13 +32,18 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 28 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 35 sections mapped
 
 ## Changed mapped sections
 
 ### anatomy-physiology 4.2 — [content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/02-epithelial-tissue.md](../../content/life-health-sciences/anatomy-physiology/04-the-tissue-level-of-organization/02-epithelial-tissue.md)
 
 Module `m46048`; content-changed. Changed lanes: instructionalText.
+
+
+### anatomy-physiology 6.4 — [content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md](../../content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md)
+
+Module `m46301`; content-changed. Changed lanes: instructionalText.
 
 
 ### biology 13.2 — [content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md)

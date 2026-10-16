@@ -61,15 +61,18 @@ reproduction, development, and inheritance.
   sebaceous glands, the functions of the skin including temperature
   regulation, and common diseases, disorders, and injuries of the skin and
   how it heals.
+- **Bone Tissue and the Skeletal System** — the functions of the skeletal
+  system, bone classification and structure, bone formation and
+  development, fracture repair, the effects of exercise, nutrition, and
+  hormones on bone, and calcium homeostasis.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 2: Support and Movement** — Bone Tissue and the Skeletal System;
-  Axial Skeleton; The Appendicular Skeleton; Joints; Muscle Tissue; The
-  Muscular System.
+- **Unit 2: Support and Movement** — Axial Skeleton; The Appendicular
+  Skeleton; Joints; Muscle Tissue; The Muscular System.
 - **Unit 3: Regulation, Integration, and Control** — The Nervous System and
   Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System;
   The Autonomic Nervous System; The Neurological Exam; The Endocrine System.

@@ -314,6 +314,40 @@ Re-run the pass's calibration — provably-wrong answers seeded into a blind
 sample, every one caught with no false alarm on the rest — whenever the
 method changes.
 
+## Which model runs which agent
+
+The parent (orchestrator) session runs on Fable. Every subagent it launches
+is one of three kinds, and the kind fixes the model — the `model` argument
+of the Agent tool, never left to default. Set October 15, 2026 (Derek);
+every run recipe and brief names the kind, not a model, so a change is made
+here once.
+
+| Kind | Model | `model:` | What it covers |
+|---|---|---|---|
+| **Author** — writes or judges content: a section author, a per-section checker, a claim-pass reader, a Knowledge Check author or checker, a reverse-recall sweep, a re-review fixer, any agent that reads a figure, alt, or `longdesc` against its image (the alt-errata verifier, the alt-pass checkers, the errata compiler-verifier) | Opus 5.5 | `opus` | anything whose output is a page, a key, an accept list, a hint, a figure description, or a verdict on one |
+| **Blind solver** — the orchestrator's own third reading, in a fresh subagent with only the masked packets in its context | Fable 5.1 | `fable` | `solve.md` / `solve-math.md` only; one per chapter or batch, never reused |
+| **Clerk** — checklist-shaped text work from material already verified: the landing page, the run-facts drafter (Parts A and B), the errata drafter from verdicts, the pins and cover updater, the history writer, a media sweep, a footer tally, any fixer applying exact old→new sentences the parent has already accepted | Sonnet 5.5 | `sonnet` | reads and rearranges text; makes no judgment about content, keys, or images |
+
+Three rules decide the border cases:
+
+1. **Judgment is Author work; transcription is Clerk work.** A task that
+   can be wrong without any text being mis-copied (a key, an accept
+   member, whether an alt matches the drawing, whether a claim is one the
+   module makes) runs on Opus. A task that can only be wrong by mis-copying
+   runs on Sonnet. When in doubt, Opus — a Sonnet checker passed about 80
+   defects on Anatomy and Physiology chapters 1–2 that an Opus re-review
+   found; about 70 percent of Sonnet "clean" `longdesc` verdicts were wrong.
+2. **Images are never Clerk work** (`docs/subjects/life-sciences.md`
+   "Figure, alt, and `longdesc` reading and fixing run on Opus"). The one
+   exception is viewing a PDF page to confirm a section boundary, which the
+   run-facts Clerk does.
+3. **The solver is always fresh and always Fable.** Its reading replaces
+   the parent's; a Sonnet or Opus solve, or a solver that has seen the live
+   page, is not the third reading.
+
+After the first unit of any agent on a task new to its model, the parent
+spot-checks one of its "clean" verdicts itself.
+
 ## Reviews and verification protocol
 
 A periodic review is only worth running on what the machines cannot assert.

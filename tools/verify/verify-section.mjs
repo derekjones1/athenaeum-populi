@@ -154,7 +154,7 @@ function factsPanel(src, interactiveSrc) {
     + `practice items ${practiceTotal} (multiplechoice ${multiplechoice}, textin ${textin}, `
     + `selfcheck ${practiceSelfchecks}, sortbins ${sortbins}), `
     + `key terms ${keyTermsCount}, `
-    + `model answers author-written: selfchecks total ${bodySelfchecks + practiceSelfchecks}, `
+    + `selfchecks total ${bodySelfchecks + practiceSelfchecks} (each model answer read against its source solution or, where author-written, the module), `
     + `cross-links ${crossLinks}`;
 }
 

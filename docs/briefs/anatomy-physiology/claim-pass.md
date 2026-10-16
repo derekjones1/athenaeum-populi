@@ -77,7 +77,7 @@ suspicions / true distractors / claims examined), and the finding titles.
 ## The chapter landing page (`_index.md`)
 
 Your task also names the chapter's landing page and its intro module. It is
-written by a Sonnet agent and no other pass reads it, so give it a
+written by a Clerk (Sonnet) and no other pass reads it, so give it a
 transcription check as well as the claim reading: (1) the body prose is the
 intro module's text verbatim (diff it against the CNXML paragraphs; quote
 any word that differs); (2) each **Sections** bullet names a real section

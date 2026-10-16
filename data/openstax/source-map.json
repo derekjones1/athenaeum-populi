@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 5,
-      "mappedSections": 28,
+      "localChapters": 6,
+      "mappedSections": 35,
       "units": [
         {
           "index": 1,
@@ -503,6 +503,69 @@
       "moduleId": "m46066",
       "sourceTitle": "Diseases, Disorders, and Injuries of the Integumentary System",
       "moduleSha256": "feac317c0808cf61eb8661b687da1dda49e947607289d9c8ee73bb11c1785213"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/01-the-functions-of-the-skeletal-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.1",
+      "moduleId": "m46341",
+      "sourceTitle": "The Functions of the Skeletal System",
+      "moduleSha256": "d269cb391b19f75b5d6447af1c94e051c65205a20697efb9dd88fd69b305d7c4"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/02-bone-classification.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.2",
+      "moduleId": "m46282",
+      "sourceTitle": "Bone Classification",
+      "moduleSha256": "760881c58c58077eefb1e8b7535ea3029e868ed8baac9137481b0143d70a3719"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.3",
+      "moduleId": "m46281",
+      "sourceTitle": "Bone Structure",
+      "moduleSha256": "0dd9d3d2367fb7460eae9f81479edc5e806eff657628f78dc31d44ab676f583b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.4",
+      "moduleId": "m46301",
+      "sourceTitle": "Bone Formation and Development",
+      "moduleSha256": "60a9a63f6abf27b8d38a561142ee4a0dc5704954d913ed45f9c0d655b4ba7ed1"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/05-fractures-bone-repair.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.5",
+      "moduleId": "m46342",
+      "sourceTitle": "Fractures: Bone Repair",
+      "moduleSha256": "39102ff95de8c1e819a641f64fc3c0d4441c44362395af73d8b02b8b369479f8"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/06-exercise-nutrition-hormones-and-bone-tissue.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.6",
+      "moduleId": "m46305",
+      "sourceTitle": "Exercise, Nutrition, Hormones, and Bone Tissue",
+      "moduleSha256": "0cb62f196c6235ed45541355ea50cee2009b54737bf2d696b13c462e0621ac9d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/07-calcium-homeostasis-interactions-of-the-skeletal-system-and-other-organ-systems.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "6.7",
+      "moduleId": "m46295",
+      "sourceTitle": "Calcium Homeostasis: Interactions of the Skeletal System and Other Organ Systems",
+      "moduleSha256": "74897d1caa81591f0373fe43eb44754d142b462da5027d3954a7d1b3f8b0fd8d"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

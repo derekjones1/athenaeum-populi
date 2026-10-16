@@ -1,4 +1,4 @@
-claude# Re-reviewing or editing a finished page
+# Re-reviewing or editing a finished page
 
 Every book but Anatomy and Physiology 2e is complete and has been read to
 the standard below (the campaign that did it, row by row with costs and
@@ -43,7 +43,8 @@ An Opus read at full scope, fixing in place:
 
 Figure and alt work runs on Opus, never Sonnet. Fixers run on Opus;
 checklist-shaped work (an errata tally, a footer drafter, a media sweep)
-runs on Sonnet.
+runs on Sonnet; the blind solver is a fresh Fable agent. The roster and
+its border rules: `AGENTS.md` "Which model runs which agent".
 
 ## The briefs
 

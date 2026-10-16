@@ -72,7 +72,9 @@ stem also fit "ciliated epithelium" until the blank moved).
 
 ## 2. The wave
 
-**Authors:** one agent per chapter (Opus on Unit 1, by Derek's choice; Sonnet is the Biology/Microbiology precedent), launched together. Prompt:
+**Authors:** one Opus agent per chapter (`AGENTS.md` "Which model runs
+which agent": Author kind; Sonnet was the Biology/Microbiology precedent,
+retired with that table), launched together. Prompt:
 the chapter, its sections with module ids, the scratch path, "read
 `docs/knowledge-check-playbook-life-sciences.md` 'Content rules' and
 'Source and answer audit', and `docs/subjects/life-sciences.md`

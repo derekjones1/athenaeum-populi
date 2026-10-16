@@ -2899,6 +2899,1237 @@
       "transparent": false,
       "alt": "This photo shows a person with eczema on the ventral skin of the forearms. The person is White, but his or her light skin is mottled with many red marks, giving it the appearance of a rash. In some areas, the skin is breaking and peeling.",
       "caption": "Eczema is a common skin disorder that presents as a red, flaky rash. (credit: “Jambula” Wikimedia Commons / NIAID, Flickr)"
+    },
+    "600_Child_Looking_at_Bones": {
+      "source": "media/600_Child_Looking_at_Bones.jpg",
+      "sourceSha256": "20936d8f2223456ead020ae8793639475ca674e1e9041c347fba534cca78955e",
+      "module": "m46290",
+      "kind": "photo",
+      "width": 1144,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "600_Child_Looking_at_Bones-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 525,
+          "file": "600_Child_Looking_at_Bones-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a boy looking at a museum exhibit that contains two fossilized crocodile skeletons embedded within a large boulder. The skull, spine and forelimbs of one of the crocodiles are visible.",
+      "caption": "Bone is a living tissue. Unlike the bones of a fossil made inert by a process of mineralization, a child’s bones will continue to grow and develop while contributing to the support and function of other body systems. (credit: James Emery)"
+    },
+    "601_Bone_Classification": {
+      "source": "media/601_Bone_Classification.jpg",
+      "sourceSha256": "2b2d52d4e01ba3bd79d004bceecfb4bdd0348b4266b7e8d1e56627fc03715df0",
+      "module": "m46282",
+      "kind": "photo",
+      "width": 1012,
+      "height": 1173,
+      "variants": [
+        {
+          "width": 800,
+          "height": 927,
+          "file": "601_Bone_Classification-800.webp"
+        },
+        {
+          "width": 1012,
+          "height": 1173,
+          "file": "601_Bone_Classification-1012.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows an anterior view of a human skeleton with call outs of five bones. The first call out is the sternum, or breast bone, which lies along the midline of the thorax. The sternum is the bone to which the ribs connect at the front of the body. It is classified as a flat bone and appears somewhat like a tie, with an enlarged upper section and a thin, tapering, lower section. The next callout is the right femur, which is the thigh bone. The inferior end of the femur is broad where it connects to the knee while the superior edge is ball-shaped where it attaches to the hip socket. The femur is an example of a long bone. The next callout is of the patella or kneecap. It is a small, wedge-shaped bone that sits on the anterior side of the knee. The kneecap is an example of a sesamoid bone. The next callout is a dorsal view of the right foot. The lateral, intermediate and medial cuneiform bones are small, square-shaped bones of the top of the foot. These bones lie between the proximal edge of the toe bones and the inferior edge of the shin bones. The lateral cuneiform is proximal to the fourth toe while the medial cuneiform is proximal to the great toe. The intermediate cuneiform lies between the lateral and medial cuneiform. These bones are examples of short bones. The fifth callout shows a superior view of one of the lumbar vertebrae. The vertebra has a kidney-shaped body connected to a triangle of bone that projects above the body of the vertebra. Two spines project off of the triangle at approximately 45 degree angles. The vertebrae are examples of irregular bones.",
+      "caption": "Bones are classified according to their shape."
+    },
+    "602_Bone_Markings": {
+      "source": "media/602_Bone_Markings.jpg",
+      "sourceSha256": "584a3c6747c4b85373971cc3a8ac03135340ab90a9a9884cb1cce2889bdc168d",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 992,
+      "height": 1065,
+      "variants": [
+        {
+          "width": 800,
+          "height": 859,
+          "file": "602_Bone_Markings-800.webp"
+        },
+        {
+          "width": 992,
+          "height": 1065,
+          "file": "602_Bone_Markings-992.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration contains three diagrams. The left diagram is titled examples of processes formed where tendons or ligaments attach. The image shows an anterior view of the femur and an anterior view of the humerus. For the femur, the distal epiphysis contains a smaller lateral bulge and a larger medial bulge. These are examples of condyles. The inner halves of the two condyles as well as the groove between them compose a facet. An oval-shaped ridge on the medial surface of the distal metaphysis is an example of a tubercle. On the proximal epiphysis of the femur, the large knob that attaches to the hip socket is an example of a head. The tip of the head contains a small depression, an example of a fovea called the fovea capitis. On the humerus, the distal epiphysis contains a central depression that is an example of a fossa. Two condyles are located on the right and left sides of the fossa. The diaphysis of the humerus contains a small ridge running up the shaft that is an example of a tuberosity. The proximal epiphysis of the humerus contains a lateral and a medial bulge that are both examples of tubercles. Finally, a narrow groove runs from the center of the proximal metaphysis in between the medial and lateral condyles. This is an example of a sulcus. The middle image is entitled elevations or depressions. It shows an anterior view of the hip bones. The hip bones are shaped like two wings that join at the bottom. The crest along the upper edge of each hip bones, at the tip of each “wing” is an example of an elevation. A depression on the inner surface of both hip bones just under the crest is called out as a fossa. The right image is entitled examples of openings and shows an anterior view of the skull. The bone underlying the chin is an example of a protuberance while two small holes above each eye socket are examples of foramen. Five green sinuses surround the nose cavity are colored green. These are sinuses because they are hollowed out cavities within the skull bones. A small channel leads into the corner of each eye where the tear ducts occur. These two channels are both examples of a canal. Finally, the bones that form the posterior wall of the eye socket have a small crack running diagonally away from the nose. These are examples of fissures.",
+      "caption": "The surface features of bones depend on their function, location, attachment of ligaments and tendons, or the penetration of blood vessels and nerves."
+    },
+    "603_Anatomy_of_a_Long_Bone": {
+      "source": "media/603_Anatomy_of_a_Long_Bone.jpg",
+      "sourceSha256": "90a6e89b195c57d27a0434b2fcacfcf189b1fafffbaca3fba9d8e18d2ff20298",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 1369,
+      "height": 2312,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1351,
+          "file": "603_Anatomy_of_a_Long_Bone-800.webp"
+        },
+        {
+          "width": 1369,
+          "height": 2312,
+          "file": "603_Anatomy_of_a_Long_Bone-1369.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration depicts an anterior view of the right femur, or thigh bone. The inferior end that connects to the knee is at the bottom of the diagram and the superior end that connects to the hip is at the top of the diagram. The bottom end of the bone contains a smaller lateral bulge and a larger medial bulge. A blue articular cartilage covers the inner half of each bulge as well as the small trench that runs between the bulges. This area of the inferior end of the bone is labeled the distal epiphysis. Above the distal epiphysis is the metaphysis, where the bone tapers from the wide epiphysis into the relatively thin shaft. The entire length of the shaft is the diaphysis. The superior half of the femur is cut away to show its internal contents. The bone is covered with an outer translucent sheet called the periosteum. At the midpoint of the diaphysis, a nutrient artery travels through the periosteum and into the inner layers of the bone. The periosteum surrounds a white cylinder of solid bone labeled compact bone. The cavity at the center of the compact bone is called the medullary cavity. The inner layer of the compact bone that lines the medullary cavity is called the endosteum. Within the diaphysis, the medullary cavity contains a cylinder of yellow bone marrow that is penetrated by the nutrient artery. The superior end of the femur is also connected to the diaphysis by a metaphysis. In this upper metaphysis, the bone gradually widens between the diaphysis and the proximal epiphysis. The proximal epiphysis of the femur is roughly hexagonal in shape. However, the upper right side of the hexagon has a large, protruding knob. The femur connects and rotates within the hip socket at this knob. The knob is covered with a blue colored articular cartilage. The internal anatomy of the upper metaphysis and proximal epiphysis are revealed. The medullary cavity in these regions is filled with the mesh like spongy bone. Red bone marrow occupies the many cavities within the spongy bone. There is a clear, white line separating the spongy bone of the upper metaphysis with that of the proximal epiphysis. This line is labeled the epiphyseal line.",
+      "caption": "A typical long bone shows the gross anatomical characteristics of bone."
+    },
+    "604_Bone_cells": {
+      "source": "media/604_Bone_cells.jpg",
+      "sourceSha256": "0ecb7be4e7c93d338785b69c24a3aab64cde0cd1fa9f253fc6670acb0d93cdd1",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 807,
+      "height": 567,
+      "variants": [
+        {
+          "width": 800,
+          "height": 562,
+          "file": "604_Bone_cells-800.webp"
+        },
+        {
+          "width": 807,
+          "height": 567,
+          "file": "604_Bone_cells-807.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top of this diagram shows the cross section of a generic bone with three zoom in boxes. The first box is on the periosteum. The second box is on the middle of the compact bone layer. The third box is on the inner edge of the compact bone where it transitions into the spongy bone. The callout in the periosteum points to two images. In the first image, four osteoblast cells are sitting end to end on the periosteum. The osteoblasts are roughly square shaped, except for one of the cells which is developing small, finger like projections. The caption says, “Osteoblasts form the matrix of the bone.” The second image called out from the periosteum shows a large, amorphous osteogenic cell sitting on the periosteum. The osteogenic cell is surrounded on both sides by a row of much smaller osteoblasts. The cell is shaped like a mushroom cap and also has finger like projections. The cell is a stem cell that develops into other bone cells. The box in the middle of the compact bone layer is pointing to an osteocyte. The osteocyte is a thin cell, roughly diamond shaped, with many branching, finger-like projections. The osteoctyes maintain bone tissue. The box at the inner edge of the compact bone is pointing to an osteoclast. The osteoclast is a large, round cell with multiple nuclei. It also has rows of fine finger like projections on its lower surface where it is sitting on the compact bone. The osteoclast reabsorbs bone.",
+      "caption": "Four types of cells are found within bone tissue. Osteogenic cells are undifferentiated and develop into osteoblasts. When osteoblasts get trapped within the calcified matrix, their structure and function changes, and they become osteocytes. Osteoclasts develop from monocytes and macrophages and differ in appearance from other bone cells."
+    },
+    "606_Spongy_Bone": {
+      "source": "media/606_Spongy_Bone.jpg",
+      "sourceSha256": "a5974857388e86e2ce1d8afbc2b8e46a5928b6e878a57239497c9bfbaecac15a",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 1119,
+      "height": 743,
+      "variants": [
+        {
+          "width": 800,
+          "height": 531,
+          "file": "606_Spongy_Bone-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 743,
+          "file": "606_Spongy_Bone-1119.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows the spongy bone within the proximal epiphysis of the femur in two successively magnified images. The lower-magnification image shows two layers of crisscrossing trabeculae. The surface of each is dotted with small black holes which are the openings of the canaliculi. One of the trabeculae is in a cross section to show its internal layers. The outermost covering of the lamellae is called the endosteum. This endosteum surrounds several layers of concentric lamellae. The higher-magnification image shows the cross section of the trabeculae more clearly. Three concentric lamellae are shown in this view, each possessing perpendicular black lines. These lines are the canaliculi and are oriented on the round lamellae similar to the spokes of a wheel. In between the lamellae are small cavities called lacunae which house cells called osteocytes. In addition, two large osteoclasts are seated on the outer edge of the outermost lamellae. The outermost lamellae are also surrounded by groups of small, white, osteoblasts.",
+      "caption": "Spongy bone is composed of trabeculae that contain the osteocytes. Red marrow fills the spaces in some bones."
+    },
+    "607_Periosteum_and_Endosteum": {
+      "source": "media/607_Periosteum_and_Endosteum.jpg",
+      "sourceSha256": "26694372486fcea19aa5a50432d16f291d4e29c671df3f7e35049b6f48007b6c",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 1071,
+      "height": 535,
+      "variants": [
+        {
+          "width": 800,
+          "height": 399,
+          "file": "607_Periosteum_and_Endosteum-800.webp"
+        },
+        {
+          "width": 1071,
+          "height": 535,
+          "file": "607_Periosteum_and_Endosteum-1071.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top of this illustration shows an anterior view of the proximal end of the femur. The top image has two zoom in boxes. The left box is situated on the border between the diaphysis and the metaphysis. Its callout magnifies the periosteum on the right side of the femur. The view shows that the periosteum contains an outer fibrous layer composed of yellow fibers. The inner layer of the periosteum is called the cellular layer, which is composed of irregularly shaped cells. The cellular layer gradually shrinks in width as it transitions from the metaphysis to the diaphysis. A small blood vessel runs through both layers and enters the bone. The right zoom in box magnifies the endosteum on the left side of the bone. The box is situated just inferior to the border between the diaphysis and the metaphysic. It calls out the inner edge of the compact bone layer. The magnified view shows concentric circles of dark colored bone matrix. Between the circles are small cavities containing orange, diamond-shaped cells labeled osteocytes. The left edge of the bone matrix is lined with a single layer of flattened cells called the endosteum. There is a large cell, labeled an osteoclast, between two of the endosteum cells. The osteoclast is cutting a depression into the bony matrix under the endosteum. At another part of the endosteum, three smaller osteoblasts are secreting a blue substance that builds up the outermost layer of the bony matrix.",
+      "caption": "The periosteum forms the outer surface of bone, and the endosteum lines the medullary cavity."
+    },
+    "608_Endochrondal_Ossification": {
+      "source": "media/608_Endochrondal_Ossification.jpg",
+      "sourceSha256": "ad66f275872b403b9a93676027c84a7ef1137e3f93606b2974ff25a95602875c",
+      "module": "m46301",
+      "kind": "photo",
+      "width": 1133,
+      "height": 1512,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1067,
+          "file": "608_Endochrondal_Ossification-800.webp"
+        },
+        {
+          "width": 1133,
+          "height": 1512,
+          "file": "608_Endochrondal_Ossification-1133.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Image A shows a small piece of hyaline cartilage that looks like a bone but without the characteristic enlarged ends. The hyaline cartilage is surrounded by a thin perichondrium. In image B, the hyaline cartilage has increased in size and the ends have begun to bulge outwards. A group of dark granules form at the center of the cartilage. This is labeled the calcified matrix, as opposed to the rest of the cartilage, which is uncalcified matrix. In image C, the hyaline cartilage has again increased in size and spongy bone has formed at the calcified matrix. This is now called the primary ossification center. A nutrient artery has invaded the ossification center and is growing through the cavities of the new spongy bone. In image D, the cartilage now looks like a bone, as it has greatly increased in size and each end has two bulges. Only the proximal half of the bone is shown in all of the remaining images. In image D, spongy bone has completely developed in the medullary cavity, which is surrounded, on both sides, by compact bone. Now, the calcified matrix is located at the border between the proximal metaphysis and the proximal epiphysis. The epiphysis is still composed of uncalcified matrix. In image E, arteries and veins have now invaded the epiphysis, forming a calcified matrix at its center. This is called a secondary ossification center. In image F, the interior of the epiphysis is now completely calcified into bone. The outer edge of the epiphysis remains as cartilage, forming the articular cartilage at the joint. In addition, the border between the epiphysis and the metaphysis remains uncalcified, forming the epiphyseal plate.",
+      "caption": "Endochondral ossification follows five steps. (a) Mesenchymal cells differentiate into chondrocytes. (b) The cartilage model of the future bony skeleton and the perichondrium form. (c) Capillaries penetrate cartilage. Perichondrium transforms into periosteum. Periosteal collar develops. Primary ossification center develops. (d) Cartilage and chondrocytes continue to grow at ends of the bone. (e) Secondary ossification centers develop. (f) Cartilage remains at epiphyseal (growth) plate and at joint surface as articular cartilage."
+    },
+    "609_Body_Supply_to_the_Bone": {
+      "source": "media/609_Body_Supply_to_the_Bone.jpg",
+      "sourceSha256": "e26109373d6ca5f94b80dea72814fb39622772c91bc97a16a54478d80ecd56c2",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 1087,
+      "height": 1620,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1192,
+          "file": "609_Body_Supply_to_the_Bone-800.webp"
+        },
+        {
+          "width": 1087,
+          "height": 1620,
+          "file": "609_Body_Supply_to_the_Bone-1087.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows an anterior view if the right femur. The femur is split in half lengthwise to show its internal anatomy. The outer covering of the femur is labeled the periosteum. Within it is a thin layer of compact bone that surrounds a central cavity called the medullary or marrow cavity. This cavity is filled with spongy bone at both epiphyses. A nutrient artery and vein travels through the periosteum and compact bone at the center of the diaphysis. After entering the bone, the nutrient arteries and veins spread throughout the marrow cavity in both directions. Some of the arteries and veins in the marrow cavity also spread into the spongy bone within the distal and proximal epiphyses. However, additional blood vessels called the metaphyseal arteries and the metaphyseal veins enter into the metaphysis from outside of the bone.",
+      "caption": "Blood vessels and nerves enter the bone through the nutrient foramen."
+    },
+    "610_Feature_Pagets_Disease": {
+      "source": "media/610_Feature_Pagets_Disease.png",
+      "sourceSha256": "aa0d953574cab05c39efa6db438a88c8261a7aa37892bd6963c9d578e1ff055b",
+      "module": "m46281",
+      "kind": "diagram",
+      "width": 1205,
+      "height": 1243,
+      "variants": [
+        {
+          "width": 800,
+          "height": 825,
+          "file": "610_Feature_Pagets_Disease-800.webp"
+        },
+        {
+          "width": 1205,
+          "height": 1243,
+          "file": "610_Feature_Pagets_Disease-1205.webp"
+        }
+      ],
+      "transparent": true,
+      "alt": "This illustration shows the normal skeletal structure of the legs from an anterior view. The flesh of the legs and feet are outlined around the skeleton for reference. A second illustration shows the legs of someone with Paget’s disease. The affected person’s left femur is curved outward, causing the left leg to be bowed and shorter than the right leg.",
+      "caption": "Normal leg bones are relatively straight, but those affected by Paget’s disease are porous and curved."
+    },
+    "611_Intramembraneous_Ossification": {
+      "source": "media/611_Intramembraneous_Ossification.jpg",
+      "sourceSha256": "4f97b1e7bfa1c98417ba153fb339fbfcf21346eae9db23a77bae5f32d20a7324",
+      "module": "m46301",
+      "kind": "photo",
+      "width": 1213,
+      "height": 847,
+      "variants": [
+        {
+          "width": 800,
+          "height": 558,
+          "file": "611_Intramembraneous_Ossification-800.webp"
+        },
+        {
+          "width": 1213,
+          "height": 847,
+          "file": "611_Intramembraneous_Ossification-1213.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Image A shows seven osteoblasts, cells with small, finger like projections. They are surrounded by granules of osteoid. Both the cells and the osteoid are contained within a blue, circular, ossification center that is surrounded by a “socket” of dark, string-like collagen fibers and gray mesenchymal cells. The cells are generally amorphous, similar in appearance to an amoeba. In image B, the ossification center is no longer surrounded by a ring of osteoblasts. The osteoblasts have secreted bone into the ossification center, creating a new bone matrix. There are also five osteocytes embedded in the new bone matrix. The osteocytes are thin, oval-shaped cells with many fingerlike projections. Osteoid particles are still embedded in the bony matrix in image B. In image C, the ring of osteoblasts surrounding the ossification center has separated, forming an upper and lower layer of osteoblasts sandwiched between the two layers of mesenchyme cells. A label indicates that the mesenchyme cells and the surrounding collagen fibers form the periosteum. The osteoblasts secrete spongy bone into the space between the two osteoblast rows. Therefore, the accumulating spongy bone pushes the upper and lower rows of osteoblasts away from each other. In this image, most of the spongy bone has been secreted by the osteoblasts, as the trabeculae are visible. In addition, an artery has already broken through the periosteum and invaded the spongy bone. Image D looks similar to image C, except that the rows of osteoblasts are now secreting layers of compact bone between the spongy bone and the periosteum. The artery has now branched and spread throughout the spongy bone. A label indicates that the cavities between the trabeculae now contain red bone marrow.",
+      "caption": "Intramembranous ossification follows four steps. (a) Mesenchymal cells group into clusters, and ossification centers form. (b) Secreted osteoid traps osteoblasts, which then become osteocytes. (c) Trabecular matrix and periosteum form. (d) Compact bone develops superficial to the trabecular bone, and crowded blood vessels condense into red marrow."
+    },
+    "612_Types_of_Fractures": {
+      "source": "media/612_Types_of_Fractures.jpg",
+      "sourceSha256": "993daf6276d0c4ac3c6a5547286356e86031d7299c2fe963efd5f958a84e750b",
+      "module": "m46342",
+      "kind": "photo",
+      "width": 686,
+      "height": 1300,
+      "variants": [
+        {
+          "width": 686,
+          "height": 1300,
+          "file": "612_Types_of_Fractures-686.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this illustration, each type of fracture is shown on the right femur from an anterior view. In the closed fracture, the femur is broken in the middle of the shaft with the upper and lower halves of the bone completely separated. However, the two halves of the bones are still aligned in that the broken edges are still facing each other. In an open fracture, the femur is broken in the middle of the shaft with the upper and lower halves of the bone completely separated. Unlike the closed fracture, in the open fracture, the two bone halves are misaligned. The lower half is turned laterally and it has protruded through the skin of the thigh. The broken ends no longer line up with each other. In a transverse fracture, the bone has a crack entirely through its width, however, the broken ends are not separated. The crack is perpendicular to the long axis of the bone. Arrows indicate that this is usually caused by compression of the bone in a superior-inferior direction. A spiral fracture travels diagonally through the diameter of the bone. In a comminuted fracture, the bone has several connecting cracks at its middle. It is possible that the bone could splinter into several small pieces at the site of the comminuted fracture. In an impacted fracture, the crack zig zags throughout the width of the bone like a lightning bolt. An arrow indicates that these are usually caused by an impact that pushes the femur up into the body. A greenstick fracture is a small crack that does not extend through the entire width of the bone. The oblique fracture shown here is travelling diagonally through the shaft of the femur at about a thirty degree angle.",
+      "caption": "Compare healthy bone with different types of fractures: (a) closed fracture, (b) open fracture, (c) transverse fracture, (d) spiral fracture, (e) comminuted fracture, (f) impacted fracture, (g) greenstick fracture, and (h) oblique fracture."
+    },
+    "613_Stages_of_Fracture_Repair": {
+      "source": "media/613_Stages_of_Fracture_Repair.jpg",
+      "sourceSha256": "2689f456869344741a6a9b0fcb2e16b315483e56150179f867c7bc15456dc272",
+      "module": "m46342",
+      "kind": "photo",
+      "width": 1036,
+      "height": 400,
+      "variants": [
+        {
+          "width": 800,
+          "height": 309,
+          "file": "613_Stages_of_Fracture_Repair-800.webp"
+        },
+        {
+          "width": 1036,
+          "height": 400,
+          "file": "613_Stages_of_Fracture_Repair-1036.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a left to right progression of bone repair. The break is shown in the leftmost image, where the femur has an oblique, closed fracture in the middle of its shaft. The next image magnifies the break, showing that blood has filled the area between the broken bones. Blood has also filled in around the lateral and medial sides of the break. The influx of blood causes the broken area to swell, creating a hematoma. In the next image, the hematoma has been replaced with an external callus between the two broken ends. Within the internal callus, the blood vessels have reconnected and some spongy bone has regenerated in the gap between the two bone halves. In the next image, spongy bone has completely regenerated, connecting the two broken ends, referred to as the bony callus. The external callus still remains on the lateral and medial sides of the break, as the compact bone has not yet regenerated. In the final image, the compact bone has fully regenerated, encapsulating the bony callus and completely reconnecting the two bone halves. The bone has a slight bulge at the location of the healed fracture, which is clearly shown in the final image, which shows a zoomed out image of the completely healed femur.",
+      "caption": "The healing of a bone fracture follows a series of progressive steps: (a) A fracture hematoma forms. (b) Internal and external calli form. (c) Cartilage of the calli is replaced by trabecular bone. (d) Remodeling occurs."
+    },
+    "614_Synthesis_of_Vitamin_D": {
+      "source": "media/614_Synthesis_of_Vitamin_D.jpg",
+      "sourceSha256": "eee963fa36038efdb60f48f5b75c21fe58595d9371ea9427cb06f82ed9abac21",
+      "module": "m46305",
+      "kind": "photo",
+      "width": 658,
+      "height": 865,
+      "variants": [
+        {
+          "width": 658,
+          "height": 865,
+          "file": "614_Synthesis_of_Vitamin_D-658.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration resembles a flow chart. It begins with the sun shining on a silhouette of a man. One arrow leads from the sun to the man’s skin, stating that Vitamin D is manufactured in the skin after the absorption of sunlight. Another arrow points into the man’s mouth and states that Vitamin D is ingested through food and supplements, absorbed by the intestines, and carried to the liver via the bloodstream. A call out of the liver states that, in the liver, Vitamin D turns into 25 (OH) D, also known as calcidiol, the primary form of circulating Vitamin D. Another callout of the right kidney states that, in the kidneys, Vitamin D is transformed into 1 25 OH (D2). This is also known as calcitriol, a biologically active form of Vitamin D. The synthesis of Vitamin D facilitates calcium absorption from the small intestine, calcium re-absorption from the kidneys, and the rebuilding of bone tissue.",
+      "caption": "Sunlight is one source of vitamin D."
+    },
+    "615_Age_and_Bone_Mass": {
+      "source": "media/615_Age_and_Bone_Mass.jpg",
+      "sourceSha256": "0a8a8dafb979a74a7e5b5434765c4ab3d7cf1e4b7b666d0e98f9a8f557ee1595",
+      "module": "m46305",
+      "kind": "photo",
+      "width": 860,
+      "height": 553,
+      "variants": [
+        {
+          "width": 800,
+          "height": 514,
+          "file": "615_Age_and_Bone_Mass-800.webp"
+        },
+        {
+          "width": 860,
+          "height": 553,
+          "file": "615_Age_and_Bone_Mass-860.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows bone mass (total mass of skeletal calcium in grams) on the Y axis. The Y axis scale goes from 0 up to 1500. The x axis displays age in years from 0 to 100 years. Two plot lines are shown: a blue line for males and a pink line for females. Male bone mass climbs rapidly from 0 grams to 1500 grams between age 0 and age 25. Bone mass then slowly drops to 1000 grams between age 25 and age 100. Female bone loss climbs rapidly from 0 grams to about 1200 grams between age 0 and age 28. Female bone mass then drops very slowly from 1200 grams to 1000 grams between age 29 and age 55. Bone mass then drops steeply from 1000 grams to 750 grams between ages 55 and 60. This is labeled on the graph as bone loss due to menopause. After this steep drop, the female line again levels somewhat, but still drops gradually, much like that of the male. Between age 60 and age 100, female bone density drops from 750 grams to about 625 grams.",
+      "caption": "Bone density peaks at about 30 years of age. Females lose bone mass more rapidly than males."
+    },
+    "617_Bone_Support_Movement": {
+      "source": "media/617_Bone_Support_Movement.jpg",
+      "sourceSha256": "34d7314d25a2ffaad966f2aa7fad38995605d23db177125599a04a54fc2a2952",
+      "module": "m46341",
+      "kind": "photo",
+      "width": 544,
+      "height": 811,
+      "variants": [
+        {
+          "width": 544,
+          "height": 811,
+          "file": "617_Bone_Support_Movement-544.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a man exercising on a leg press machine at a gym.",
+      "caption": "Bones act as levers when muscles span a joint and contract. (credit: Benjamin J. DeLong)"
+    },
+    "618_Bones_Protect_Brain": {
+      "source": "media/618_Bones_Protect_Brain.jpg",
+      "sourceSha256": "a0777da3ce04bd89e030f912abea17e4d31d8b724d4a6f54d963e3284e111243",
+      "module": "m46341",
+      "kind": "photo",
+      "width": 621,
+      "height": 805,
+      "variants": [
+        {
+          "width": 621,
+          "height": 805,
+          "file": "618_Bones_Protect_Brain-621.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows how the cranium protects and surrounds the brain. Only the outline of the cranium is visible, which is made transparent to show how the brain sits in the skull. There is a small amount of space between the brain and the cranium but the top and sides of the brain are completely protected by the cranial bones. The bottom of the brain extends below the cranial bones, with the base of the cerebellum seated just above the roof of the mouth. The medulla extends to the bottom of the skull where it meets with the spinal cord.",
+      "caption": "The cranium completely surrounds and protects the brain from non-traumatic injury."
+    },
+    "619_Red_and_Yellow_Bone_Marrow": {
+      "source": "media/619_Red_and_Yellow_Bone_Marrow.jpg",
+      "sourceSha256": "b7ed905233036564b2101e6c0ff76972a9cb3aae9422377431f53b2d3c85f94b",
+      "module": "m46341",
+      "kind": "photo",
+      "width": 679,
+      "height": 418,
+      "variants": [
+        {
+          "width": 679,
+          "height": 418,
+          "file": "619_Red_and_Yellow_Bone_Marrow-679.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows the head of the femur detached from the rest of the bone. The compact bone at the surface of the head has been removed to show the spongy bone beneath. Rather than being solid, like the compact bone, the spongy bone is mesh like with many open spaces, giving it the appearance of a sponge. A circle of yellow marrow is located at the exact center of the spongy bone. The red marrow surrounds the yellow marrow, occupying most of the interior space of the head.",
+      "caption": "The head of the femur contains both yellow and red marrow. Yellow marrow stores fat. Red marrow is responsible for hematopoiesis. (credit: modification of work by “stevenfruitsmaak”/Wikimedia Commons)"
+    },
+    "620_Arms_Brace": {
+      "source": "media/620_Arms_Brace.jpg",
+      "sourceSha256": "dcdde49072bbd4c367741ff00921004f02646b73752cddee0f8367bf4f763d10",
+      "module": "m46341",
+      "kind": "photo",
+      "width": 1251,
+      "height": 939,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "620_Arms_Brace-800.webp"
+        },
+        {
+          "width": 1251,
+          "height": 939,
+          "file": "620_Arms_Brace-1251.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Photo shows a leg in a complex brace, bent at a nintey degree angle.",
+      "caption": "An orthopedist will sometimes prescribe the use of a brace that reinforces the underlying bone structure it is being used to support. (credit: Becky Stern/Flickr)"
+    },
+    "621_Anatomy_of_a_Flat_Bone": {
+      "source": "media/621_Anatomy_of_a_Flat_Bone.jpg",
+      "sourceSha256": "1e3be21ca1f10a7c26baf0b39851fd42ecfd3b350c1ae36f1c917803ee0ef0fe",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 812,
+      "height": 411,
+      "variants": [
+        {
+          "width": 800,
+          "height": 405,
+          "file": "621_Anatomy_of_a_Flat_Bone-800.webp"
+        },
+        {
+          "width": 812,
+          "height": 411,
+          "file": "621_Anatomy_of_a_Flat_Bone-812.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a cross section of a cranial bone, constructed somewhat like a sandwich. The topmost and bottommost layers are the thin, translucent, periosteum. The upper and lower periosteum cover an upper and lower layer of compact bone, respectively. The compact bone is solid, with each layer occupying about one tenth of the thickness of the cranial bone. The majority of the cross section is occupied by the spongy bone, or diploe, sandwiched between the upper and lower compact bone. The spongy bone contains many crisscrossing threads of bone. Dark air spaces occur between the threads, giving the bone a porous appearance, much like that of a sponge or Swiss cheese.",
+      "caption": "This cross-section of a flat bone shows the spongy bone (diploë) lined on either side by a layer of compact bone."
+    },
+    "622_Longitudinal_Bone_Growth": {
+      "source": "media/622_Longitudinal_Bone_Growth.jpg",
+      "sourceSha256": "8c2f901afca6e0990c7cae5de5fb99acf6c7d86e2672b70752a136eaada86745",
+      "module": "m46301",
+      "kind": "photo",
+      "width": 800,
+      "height": 1246,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1246,
+          "file": "622_Longitudinal_Bone_Growth-800.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows the zones bordering the epiphyseal plate of the epiphysis. The topmost layer of the epiphysis is the reserve zone, which is colored blue because it is made of cartilage. Two arteries are shown travelling through this zone to supply nutrients to the second zone: the proliferative zone. Here, five chondrocytes are undergoing mitosis. They continually divide, producing five long rows of chondrocytes. The next zone is the zone of maturation and hypertrophy. Here, lipids, glycogen and alkaline phosphatase accumulate, causing the cartilaginous matrix to calcify. This zone consists of five rows of ten chondrocytes which are increasing in size as one moves down a row. The next zone is the calcified matrix. Here, the chondrocytes have hardened and die as the matrix around them has calcified. The bottommost row is the zone of ossification. This zone is actually part of the metaphysis. Arteries from the metaphysis branch through the newly-formed trabeculae in this zone. The newly deposited bone tissue at the top of the zone of ossification is called the primary spongiosa. The older bone at the bottom of the zone of ossification is labeled the secondary spongiosa.",
+      "caption": "The epiphyseal plate is responsible for longitudinal bone growth."
+    },
+    "623_Epiphyseal_Plate-Line": {
+      "source": "media/623_Epiphyseal_Plate-Line.jpg",
+      "sourceSha256": "c89ffadc52a584be3634ff69c158d8528f512d53875235d4d05d901d4a18923e",
+      "module": "m46301",
+      "kind": "photo",
+      "width": 790,
+      "height": 625,
+      "variants": [
+        {
+          "width": 790,
+          "height": 625,
+          "file": "623_Epiphyseal_Plate-Line-790.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows anterior views of a right and left femur. The left femur possesses a growth plate at the border of its distal metaphysis and distal epiphysis. The proximal epiphysis has two growth plates. The first is located below the head of the femur while the second is located below the trochanter, which is the bump on the lateral side of the femur. The right femur has the same plates as the left femur. However, the left femur represents a mature long bone. Here, growth is completed and the epiphyseal plate has degraded to a thin, faint, epiphyseal line.",
+      "caption": "As a bone matures, the epiphyseal plate progresses to an epiphyseal line. (a) Epiphyseal plates are visible in a growing bone. (b) Epiphyseal lines are the remnants of epiphyseal plates in a mature bone."
+    },
+    "624_Diagram_of_Compact_Bone-new": {
+      "source": "media/624_Diagram_of_Compact_Bone-new.jpg",
+      "sourceSha256": "063660e36aa496a3a069afc51b44c61b80f2fda9bc841f6abb8ce37e03663d8c",
+      "module": "m46281",
+      "kind": "photo",
+      "width": 1413,
+      "height": 1664,
+      "variants": [
+        {
+          "width": 800,
+          "height": 942,
+          "file": "624_Diagram_of_Compact_Bone-new-800.webp"
+        },
+        {
+          "width": 1413,
+          "height": 1664,
+          "file": "624_Diagram_of_Compact_Bone-new-1413.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A generic long bone is shown at the top of this illustration. The bone is split in half lengthwise to show its internal anatomy. The outer gray covering of the bone is labeled the periosteum. Within the periosteum is a thin layer of compact bone. The compact bone surrounds a central cavity called the medullary cavity. The medullary cavity is filled with spongy bone at the two epiphyses. A callout box shows that the main image is zooming in on the compact bone on the left side of the bone. On the main image, the periosteum is being peeled back to show its two layers. The outer layer of the periosteum is the outer fibrous layer. This layer has a periosteal artery and a periosteal vein running along its outside edge. The inner layer of the periosteum is labeled the inner osteogenic layer. The compact bone lies to the right of the periosteum and occupies the majority of the main image. Two flat layers of compact bone line the inner surface of the ostegenic periosteum. These sheets of compact bone are called the circumferential lamellae. The majority of the compact bone has lamellae running perpendicular to that of the circumferential lamellae. These concentric lamellae are arranged in a series of concentric tubes. There are small cavities between the layers of concentric lamellae called lacunae. The centermost concentric lamella surrounds a hollow central canal. A blue vein, a red artery, a yellow nerve and a green lymph vessel run vertically through the central canal. A set of concentric lamellae, its associated lacunae and the vessels and nerves of the central canal are collectively called an osteon. The front edge of the diagram shows a longitudinal cross section of one of the osteons. The vessels and nerve are visible running through the center of the osteon throughout its length. In addition, blood vessels can run from the periosteum through the sides of the osteons and connect with the vessels of the central canal. The blood vessels travel through the sides of the osteons via a perforating canal. The open areas between neighboring osteons are also filled with compact bone. This “filler” bone is referred to as the interstitial lamellae. At the far right of the compact bone, the edge of the spongy bone is visible. The spongy bone is a series of crisscrossing bony arches called trabeculae. There are many open spaces between the trabeculae, giving the spongy bone its sponge-like appearance.",
+      "caption": "(a) This cross-sectional view of compact bone shows the basic structural unit, the osteon. (b) In this micrograph of the osteon, you can clearly see the concentric lamellae and central canals. LM × 40. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "625_Calcium_Homeostasis": {
+      "source": "media/625_Calcium_Homeostasis.jpg",
+      "sourceSha256": "ede8ac3ea97dc188fb8d1ad559f9d77dff2bd1bc958f36d6c323dc98fa27432b",
+      "module": "m46295",
+      "kind": "photo",
+      "width": 825,
+      "height": 737,
+      "variants": [
+        {
+          "width": 800,
+          "height": 714,
+          "file": "625_Calcium_Homeostasis-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 737,
+          "file": "625_Calcium_Homeostasis-825.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this illustration, the two mechanisms that maintain calcium homeostasis are shown as two semicircles that are combined, one on top of each other, to make a complete circle. Homeostasis occurs along the diameter of the circle, at the border between the two semicircles. At homoeostasis, normal calcium levels are 10 milligrams per deciliter. The upper semicircle represents the mechanism that reduces elevated calcium levels in the blood when the levels are too high. First, the thyroid gland releases calcitonin. Calcitonin activity inhibits osteoclasts and decreases the reabsorption of calcium ions in the kidney. These two actions cause calcium ion levels in the blood to drop back to homeostasis. The lower semicircle represents the mechanisms that increase calcium levels in the blood when the levels are too low. First, the parathyroid glands release PTH. PTH stimulates osteoclast activity, causing calcium ions to be released from bone. PTH also increases the reabsorption of calcium by the kidney. In addition, PTH also increases calcium absorption in the small intestines via Vitamin D synthesis. These three actions cause calcium ion levels in the blood to increase.",
+      "caption": "The body regulates calcium homeostasis with two pathways; one is signaled to turn on when blood calcium levels drop below normal and one is the pathway that is signaled to turn on when blood calcium levels are elevated."
+    },
+    "700_Lateral_View_of_Skull-01": {
+      "source": "media/700_Lateral_View_of_Skull-01.jpg",
+      "sourceSha256": "885e05f3bea6a44f27badb076ea11d53683ab1a0a9bc1767736fda69e49d9be6",
+      "module": "m46347",
+      "kind": "photo",
+      "width": 2288,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "700_Lateral_View_of_Skull-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 629,
+          "file": "700_Lateral_View_of_Skull-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a side view of the human skull. The major parts of the cell are labeled.",
+      "caption": ""
+    },
+    "701_Axial_Skeleton-01": {
+      "source": "media/701_Axial_Skeleton-01.jpg",
+      "sourceSha256": "f5e7413f39743c22825c4ae7d0ded091991393c23526d7841c743f64292eb405",
+      "module": "m46344",
+      "kind": "photo",
+      "width": 2406,
+      "height": 2447,
+      "variants": [
+        {
+          "width": 800,
+          "height": 813,
+          "file": "701_Axial_Skeleton-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1627,
+          "file": "701_Axial_Skeleton-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the human skeleton and identifies the major bones. The left panel shows the anterior view (from the front) and the right panel shows the posterior view (from the back).",
+      "caption": "The axial skeleton supports the head, neck, back, and chest and thus forms the vertical axis of the body. It consists of the skull, vertebral column (including the sacrum and coccyx), and the thoracic cage, formed by the ribs and sternum. The appendicular skeleton is made up of all bones of the upper and lower limbs."
+    },
+    "702_Newborn_Skull-01": {
+      "source": "media/702_Newborn_Skull-01.jpg",
+      "sourceSha256": "087e262a123dbcc155ef54d583e4e5f304f353c7c4d733950a8c1a55371e3e8c",
+      "module": "m46348",
+      "kind": "photo",
+      "width": 2383,
+      "height": 803,
+      "variants": [
+        {
+          "width": 800,
+          "height": 269,
+          "file": "702_Newborn_Skull-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 539,
+          "file": "702_Newborn_Skull-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the image of a newborn human skull. The major parts of the skull are labeled. The left panel shows the superior view (from the top) and the right side shows the lateral view (from the side).",
+      "caption": "The bones of the newborn skull are not fully ossified and are separated by large areas called fontanelles, which are filled with fibrous connective tissue. The fontanelles allow for continued growth of the skull after birth. At the time of birth, the facial bones are small and underdeveloped, and the mastoid process has not yet formed."
+    },
+    "703_Parts_of_Skull-01": {
+      "source": "media/703_Parts_of_Skull-01.jpg",
+      "sourceSha256": "769bcfb10f4698348dfd15392fcfeedaf231869086645bc2257abebfcb24a9a7",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 1664,
+      "height": 1378,
+      "variants": [
+        {
+          "width": 800,
+          "height": 662,
+          "file": "703_Parts_of_Skull-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1325,
+          "file": "703_Parts_of_Skull-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this image, the lateral view of the human skull is shown and the brain case and facial bones are labeled.",
+      "caption": "The skull consists of the rounded brain case that houses the brain and the facial bones that form the upper and lower jaws, nose, orbits, and other facial structures."
+    },
+    "704_Skull-01": {
+      "source": "media/704_Skull-01.jpg",
+      "sourceSha256": "7eecc087c4660c09ec2e145fe9daf051aa23f6b48e9591fe0142036497bbce8e",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 2437,
+      "height": 2062,
+      "variants": [
+        {
+          "width": 800,
+          "height": 677,
+          "file": "704_Skull-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1353,
+          "file": "704_Skull-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the anterior view (from the front) of the human skull. The major bones on the skull are labeled.",
+      "caption": "An anterior view of the skull shows the bones that form the forehead, orbits (eye sockets), nasal cavity, nasal septum, and upper and lower jaws."
+    },
+    "705_Lateral_View_of_Skull-01": {
+      "source": "media/705_Lateral_View_of_Skull-01.jpg",
+      "sourceSha256": "6c4c4d3a09d782416d92ad33ac45c48e33d75df7582955992571020977d1eea2",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 2450,
+      "height": 1681,
+      "variants": [
+        {
+          "width": 800,
+          "height": 549,
+          "file": "705_Lateral_View_of_Skull-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1097,
+          "file": "705_Lateral_View_of_Skull-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the lateral view of the human skull and identifies the major parts.",
+      "caption": "The lateral skull shows the large rounded brain case, zygomatic arch, and the upper and lower jaws. The zygomatic arch is formed jointly by the zygomatic process of the temporal bone and the temporal process of the zygomatic bone. The shallow space above the zygomatic arch is the temporal fossa. The space inferior to the zygomatic arch and deep to the posterior mandible is the infratemporal fossa."
+    },
+    "706_Sagittal_Section_of_Skull-01": {
+      "source": "media/706_Sagittal_Section_of_Skull-01.jpg",
+      "sourceSha256": "47411834dd134ca2ad2cddfcdeec0477689bb9dbfed16b48d69b7f95f794500b",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 2454,
+      "height": 1696,
+      "variants": [
+        {
+          "width": 800,
+          "height": 553,
+          "file": "706_Sagittal_Section_of_Skull-01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1105,
+          "file": "706_Sagittal_Section_of_Skull-01-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the sagittal section of the skull and identifies the major bones and cavities.",
+      "caption": "This midline view of the sagittally sectioned skull shows the nasal septum."
+    },
+    "707_Superior-Inferior_View_of_Skull_Base": {
+      "source": "media/707_Superior-Inferior_View_of_Skull_Base.jpg",
+      "sourceSha256": "4cad69d92aa415d95593bda411832bc837fd4e4819b1a094a1b9733329bd2e4a",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 2165,
+      "height": 3070,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1134,
+          "file": "707_Superior-Inferior_View_of_Skull_Base-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2269,
+          "file": "707_Superior-Inferior_View_of_Skull_Base-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the superior and inferior view of the skull base. In the top panel, the inferior view is shown. A small image of the skull shows the viewing direction on the left. In the inferior view, the maxilla and the associated bones are shown. In the bottom panel, the superior view shows the ethmoid and sphenoid bones and their subparts.",
+      "caption": "(a) The hard palate is formed anteriorly by the palatine processes of the maxilla bones and posteriorly by the horizontal plate of the palatine bones. (b) The complex floor of the cranial cavity is formed by the frontal, ethmoid, sphenoid, temporal, and occipital bones. The lesser wing of the sphenoid bone separates the anterior and middle cranial fossae. The petrous ridge (petrous portion of temporal bone) separates the middle and posterior cranial fossae."
+    },
+    "708_Temporal_Bone": {
+      "source": "media/708_Temporal_Bone.jpg",
+      "sourceSha256": "f684bc4712cea9540260c44bc39b515620863e174a7563fefd01b3fb155cd269",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 774,
+      "height": 555,
+      "variants": [
+        {
+          "width": 774,
+          "height": 555,
+          "file": "708_Temporal_Bone-774.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the location of the temporal bone. A small image of the skull on the top left shows the temporal bone highlighted in pink and a magnified view of this region then highlights the important parts of the temporal bone.",
+      "caption": "A lateral view of the isolated temporal bone shows the squamous, mastoid, and zygomatic portions of the temporal bone."
+    },
+    "709_Sphenoid_Bone": {
+      "source": "media/709_Sphenoid_Bone.jpg",
+      "sourceSha256": "5bcafebfb7d5ba65bfadfd277aaccff876e3e5bfea5915af54806bbf295bea49",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 634,
+      "height": 820,
+      "variants": [
+        {
+          "width": 634,
+          "height": 820,
+          "file": "709_Sphenoid_Bone-634.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the location and structure of the sphenoid bone. A small image of the skull on the top left shows the sphenoid bone highlighted in ochre yellow. The top panel shows the superior view of the sphenoid bone and the bottom panel shows the posterior view of the sphenoid bone.",
+      "caption": "Shown in isolation in (a) superior and (b) posterior views, the sphenoid bone is a single midline bone that forms the anterior walls and floor of the middle cranial fossa. It has a pair of lesser wings and a pair of greater wings. The sella turcica surrounds the hypophyseal fossa. Projecting downward are the medial and lateral pterygoid plates. The sphenoid has multiple openings for the passage of nerves and blood vessels, including the optic canal, superior orbital fissure, foramen rotundum, foramen ovale, and foramen spinosum."
+    },
+    "710_Ethmoid_Bone": {
+      "source": "media/710_Ethmoid_Bone.jpg",
+      "sourceSha256": "b4f92e91c7fc1614c1d505936fb895a545defe5397f1619ceebafe867a8f7a4d",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 825,
+      "height": 637,
+      "variants": [
+        {
+          "width": 800,
+          "height": 617,
+          "file": "710_Ethmoid_Bone-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 637,
+          "file": "710_Ethmoid_Bone-825.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the location and structure of the ethmoid bone. A small image of the skull on the top left shows the ethmoid bone colored in pink. A magnified image shows the inferior view of the ethmoid bone.",
+      "caption": "The unpaired ethmoid bone is located at the midline within the central skull. It has an upward projection, the crista galli, and a downward projection, the perpendicular plate, which forms the upper nasal septum. The cribriform plates form both the roof of the nasal cavity and a portion of the anterior cranial fossa floor. The lateral sides of the ethmoid bone form the lateral walls of the upper nasal cavity, part of the medial orbit wall, and give rise to the superior and middle nasal conchae. The ethmoid bone also contains the ethmoid air cells."
+    },
+    "711_Maxilla": {
+      "source": "media/711_Maxilla.jpg",
+      "sourceSha256": "2de6f3c9901056a84aac1b79d32f3c90399f1d3cd65277ae1423f2c032196e67",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 784,
+      "height": 601,
+      "variants": [
+        {
+          "width": 784,
+          "height": 601,
+          "file": "711_Maxilla-784.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the location and structure of the maxilla. A small image of the skull on the top left shows the maxilla in ochre yellow. A magnified view shows the detailed structure of the maxilla.",
+      "caption": "The maxillary bone forms the upper jaw and supports the upper teeth. Each maxilla also forms the lateral floor of each orbit and the majority of the hard palate."
+    },
+    "712_Hyoid_Bone": {
+      "source": "media/712_Hyoid_Bone.jpg",
+      "sourceSha256": "4e7d3be3152cf9bb011e04ac467e9bb7d8129bc8122e01f3b97efe03d46043d1",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 727,
+      "height": 1138,
+      "variants": [
+        {
+          "width": 727,
+          "height": 1138,
+          "file": "712_Hyoid_Bone-727.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this image, the location and structure of the hyoid bone are shown. The top panel shows a person’s face and neck, with the hyoid bone highlighted in grey. The middle panel shows the anterior view and the bottom panel shows the right anterior view.",
+      "caption": "The hyoid bone is located in the upper neck and does not join with any other bone. It provides attachments for muscles that act on the tongue, larynx, and pharynx."
+    },
+    "713_Bones_Forming_Orbit": {
+      "source": "media/713_Bones_Forming_Orbit.jpg",
+      "sourceSha256": "f0d7c2645130952a9792c539867b70d9dda8e48ca2a0c244bf77f1d65b7b63bb",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 965,
+      "height": 457,
+      "variants": [
+        {
+          "width": 800,
+          "height": 379,
+          "file": "713_Bones_Forming_Orbit-800.webp"
+        },
+        {
+          "width": 965,
+          "height": 457,
+          "file": "713_Bones_Forming_Orbit-965.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this image, the different bones forming the orbit for the eyes are shown and labeled.",
+      "caption": "Seven skull bones contribute to the walls of the orbit. Opening into the posterior orbit from the cranial cavity are the optic canal and superior orbital fissure."
+    },
+    "714_Bone_of_Nasal_Cavity": {
+      "source": "media/714_Bone_of_Nasal_Cavity.jpg",
+      "sourceSha256": "c7618adb7289016f5b0a554fd5e1c880d1897d6957804629bca2cf3f019d0c02",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 1111,
+      "height": 749,
+      "variants": [
+        {
+          "width": 800,
+          "height": 539,
+          "file": "714_Bone_of_Nasal_Cavity-800.webp"
+        },
+        {
+          "width": 1111,
+          "height": 749,
+          "file": "714_Bone_of_Nasal_Cavity-1111.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the sagittal section of the bones that comprise the nasal cavity.",
+      "caption": "The nasal septum is formed by the perpendicular plate of the ethmoid bone and the vomer bone. The septal cartilage fills the gap between these bones and extends into the nose."
+    },
+    "715_Vertebral_Column-408a": {
+      "source": "media/715_Vertebral_Column-408a.jpg",
+      "sourceSha256": "da7ed5fc7e9e72a223bedf69eb186f03b2f50df1bf9b7d80a54238a7616b9ab1",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1092,
+      "height": 1042,
+      "variants": [
+        {
+          "width": 800,
+          "height": 763,
+          "file": "715_Vertebral_Column-408a-800.webp"
+        },
+        {
+          "width": 1092,
+          "height": 1042,
+          "file": "715_Vertebral_Column-408a-1092.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the vertebral column. The left panel shows the front view of the vertebral column and the right panel shows the side view of the vertebral column.",
+      "caption": "The adult vertebral column consists of 24 vertebrae, plus the sacrum and coccyx. The vertebrae are divided into three regions: cervical C1–C7 vertebrae, thoracic T1–T12 vertebrae, and lumbar L1–L5 vertebrae. The vertebral column is curved, with two primary curvatures (thoracic and sacrococcygeal curves) and two secondary curvatures (cervical and lumbar curves)."
+    },
+    "716_Intervertebral_Disk": {
+      "source": "media/716_Intervertebral_Disk.jpg",
+      "sourceSha256": "ad43c705fae186adb57ff366612b74c5c2269e37ca64e136387019a0bccef4b3",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1000,
+      "height": 471,
+      "variants": [
+        {
+          "width": 800,
+          "height": 377,
+          "file": "716_Intervertebral_Disk-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 471,
+          "file": "716_Intervertebral_Disk-1000.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the intervertebral disk. The left panel shows the lateral view and the right panel shows the superior view.",
+      "caption": "The bodies of adjacent vertebrae are separated and united by an intervertebral disc, which provides padding and allows for movements between adjacent vertebrae. The disc consists of a fibrous outer layer called the anulus fibrosus and a gel-like center called the nucleus pulposus. The intervertebral foramen is the opening formed between adjacent vertebrae for the exit of a spinal nerve. See the section on Intervertebral Discs and Ligaments of the Vertebral Column for more information."
+    },
+    "717_Abnormal_Curves_of_Vertebral_Column": {
+      "source": "media/717_Abnormal_Curves_of_Vertebral_Column.jpg",
+      "sourceSha256": "565ee2c442e9b9f10f0acd99cd97fa9483bb9b1f86b195ccfeec6b04501255a0",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1611,
+      "height": 618,
+      "variants": [
+        {
+          "width": 800,
+          "height": 307,
+          "file": "717_Abnormal_Curves_of_Vertebral_Column-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 613,
+          "file": "717_Abnormal_Curves_of_Vertebral_Column-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the changes to the abnormal curves of the vertebral columns in different diseases. The left panel shows the change in the curve of the vertebral column in scoliosis, the middle panel shows the change in the curve of the vertebral column in kyphosis, and the right panel shows the change in the curve of the vertebral column in lordosis.",
+      "caption": "(a) Scoliosis is an abnormal lateral bending of the vertebral column. (b) An excessive curvature of the upper thoracic vertebral column is called kyphosis. (c) Lordosis is an excessive curvature in the lumbar region of the vertebral column."
+    },
+    "718_Vertebra": {
+      "source": "media/718_Vertebra.jpg",
+      "sourceSha256": "b87557c67238f63bd279cd74194855e11e51ab0484eb5c947a6661ee1eca3970",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1092,
+      "height": 475,
+      "variants": [
+        {
+          "width": 800,
+          "height": 348,
+          "file": "718_Vertebra-800.webp"
+        },
+        {
+          "width": 1092,
+          "height": 475,
+          "file": "718_Vertebra-1092.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the detailed structure of each vertebra. The left panel shows the superior view of the vertebra and the right panel shows the left posterolateral view.",
+      "caption": "A typical vertebra consists of a body and a vertebral arch. The arch is formed by the paired pedicles and paired laminae. Arising from the vertebral arch are the transverse, spinous, superior articular, and inferior articular processes. The vertebral foramen provides for passage of the spinal cord. Each spinal nerve exits through an intervertebral foramen, located between adjacent vertebrae. Intervertebral discs unite the bodies of adjacent vertebrae."
+    },
+    "719_Thoracic_Vertebra": {
+      "source": "media/719_Thoracic_Vertebra.jpg",
+      "sourceSha256": "c770c10215d0655161bfd92b9692e2845d85bfe52f59b8d037eb33672eec05aa",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1686,
+      "height": 1267,
+      "variants": [
+        {
+          "width": 800,
+          "height": 601,
+          "file": "719_Thoracic_Vertebra-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1202,
+          "file": "719_Thoracic_Vertebra-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the thoracic vertebra. The left panel shows the vertebral column with the thoracic vertebrae highlighted in pink. The right panel shows the detailed structure of a single thoracic vertebra.",
+      "caption": "A typical thoracic vertebra is distinguished by the spinous process, which is long and projects downward to overlap the next inferior vertebra. It also has articulation sites (facets) on the vertebral body and a transverse process for rib attachment."
+    },
+    "720_Sacrum_and_Coccyx": {
+      "source": "media/720_Sacrum_and_Coccyx.jpg",
+      "sourceSha256": "572a6cf004ad56fc724f170f34c91c7fe52316e3c04bedccfab6e87a478efacd",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1186,
+      "height": 530,
+      "variants": [
+        {
+          "width": 800,
+          "height": 357,
+          "file": "720_Sacrum_and_Coccyx-800.webp"
+        },
+        {
+          "width": 1186,
+          "height": 530,
+          "file": "720_Sacrum_and_Coccyx-1186.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the sacrum and coccyx. The left panel shows the vertebral column with the sacrum and coccyx highlighted in pink. The middle panel shows the anterior view and the right panel shows the posterior view of the sacrum and coccyx.",
+      "caption": "The sacrum is formed from the fusion of five sacral vertebrae, whose lines of fusion are indicated by the transverse ridges. The fused spinous processes form the median sacral crest, while the lateral sacral crest arises from the fused transverse processes. The coccyx is formed by the fusion of four small coccygeal vertebrae."
+    },
+    "721_Rib_Cage": {
+      "source": "media/721_Rib_Cage.jpg",
+      "sourceSha256": "e96908d8ba6c22e50e5dab87ecc1012b64598bdb7fa82412237a5903a114c771",
+      "module": "m46350",
+      "kind": "photo",
+      "width": 1146,
+      "height": 678,
+      "variants": [
+        {
+          "width": 800,
+          "height": 473,
+          "file": "721_Rib_Cage-800.webp"
+        },
+        {
+          "width": 1146,
+          "height": 678,
+          "file": "721_Rib_Cage-1146.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the skeletal structure of the rib cage. The left panel shows the anterior view of the sternum and the right panel shows the anterior panel of the sternum including the entire rib cage.",
+      "caption": "The thoracic cage is formed by the (a) sternum and (b) 12 pairs of ribs with their costal cartilages. The ribs are anchored posteriorly to the 12 thoracic vertebrae. The sternum consists of the manubrium, body, and xiphoid process. The ribs are classified as true ribs (1–7) and false ribs (8–12). The last two pairs of false ribs are also known as floating ribs (11–12)."
+    },
+    "722_Feature_Osteoprosis_of_Spine": {
+      "source": "media/722_Feature_Osteoprosis_of_Spine.jpg",
+      "sourceSha256": "f42fe2d7f4dca02cf0c8930fc21c0b8a0d737cd539da1677d3c173ce3e880e33",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 610,
+      "height": 492,
+      "variants": [
+        {
+          "width": 610,
+          "height": 492,
+          "file": "722_Feature_Osteoprosis_of_Spine-610.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the changes to the spine in osteoporosis. The left panel shows the structure of normal vertebrae and the right panel shows the curved vertebrae in osteoporosis.",
+      "caption": "Osteoporosis is an age-related disorder that causes the gradual loss of bone density and strength. When the thoracic vertebrae are affected, there can be a gradual collapse of the vertebrae. This results in kyphosis, an excessive curvature of the thoracic region."
+    },
+    "723_Cervical_Vertebrae": {
+      "source": "media/723_Cervical_Vertebrae.jpg",
+      "sourceSha256": "ea9c341453384008ef594aed994d2daf2f81a2982184030bbba1d31e292e2d19",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 1083,
+      "height": 1240,
+      "variants": [
+        {
+          "width": 800,
+          "height": 916,
+          "file": "723_Cervical_Vertebrae-800.webp"
+        },
+        {
+          "width": 1083,
+          "height": 1240,
+          "file": "723_Cervical_Vertebrae-1083.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the cervical vertebrae. The left panel shows the location of the cervical vertebrae in green along the vertebral column. The middle panel shows the structure of a typical cervical vertebra and the right panel shows the superior and anterior view of the axis.",
+      "caption": "A typical cervical vertebra has a small body, a bifid spinous process, transverse processes that have a transverse foramen and are curved for spinal nerve passage. The atlas (C1 vertebra) does not have a body or spinous process. It consists of an anterior and a posterior arch and elongated transverse processes. The axis (C2 vertebra) has the upward projecting dens, which articulates with the anterior arch of the atlas."
+    },
+    "724_Paranasal_Sinuses": {
+      "source": "media/724_Paranasal_Sinuses.jpg",
+      "sourceSha256": "9db64e23458dfabaefa2655f198f775d1b74176a0c2ea8559721713dc597faaa",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 827,
+      "height": 558,
+      "variants": [
+        {
+          "width": 800,
+          "height": 539,
+          "file": "724_Paranasal_Sinuses-800.webp"
+        },
+        {
+          "width": 827,
+          "height": 558,
+          "file": "724_Paranasal_Sinuses-827.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a woman’s face and the location of the paranasal sinuses. The left panel shows the anterior view of the woman’s face with the sinuses labeled. The right panel shows the lateral view of the woman’s face with the same parts labeled.",
+      "caption": "The paranasal sinuses are hollow, air-filled spaces named for the skull bone that each occupies. The most anterior is the frontal sinus, located in the frontal bone above the eyebrows. The largest are the maxillary sinuses, located in the right and left maxillary bones below the orbits. The most posterior is the sphenoid sinus, located in the body of the sphenoid bone, under the sella turcica. The ethmoid air cells are multiple small spaces located in the right and left sides of the ethmoid bone, between the medial wall of the orbit and lateral wall of the upper nasal cavity."
+    },
+    "725_Lumbar_Vertebrae": {
+      "source": "media/725_Lumbar_Vertebrae.jpg",
+      "sourceSha256": "53f5b9bbe7d9ad36e749cac9d5ea40811335b1f930c99db87e9b31de23726a80",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 638,
+      "height": 588,
+      "variants": [
+        {
+          "width": 638,
+          "height": 588,
+          "file": "725_Lumbar_Vertebrae-638.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the location and structure of the lumbar vertebrae. The left panel shows the location of the lumbar vertebrae (highlighted in green) along the vertebral column. The right panel shows the inferior articular process and the major parts are labeled.",
+      "caption": "Lumbar vertebrae are characterized by having a large, thick body and a short, rounded spinous process."
+    },
+    "726_Mandible": {
+      "source": "media/726_Mandible.jpg",
+      "sourceSha256": "7b6a8324e7538430ace7c7904ef31c146316cb676e334aec5ea046a2c0b814eb",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 818,
+      "height": 627,
+      "variants": [
+        {
+          "width": 800,
+          "height": 613,
+          "file": "726_Mandible-800.webp"
+        },
+        {
+          "width": 818,
+          "height": 627,
+          "file": "726_Mandible-818.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the mandible. On the top left, a lateral view of the skull shows the location of the mandible in purple. A magnified image shows the right lateral view of the mandible with the major parts labeled.",
+      "caption": "The mandible is the only moveable bone of the skull."
+    },
+    "727_Cranial_Fossae": {
+      "source": "media/727_Cranial_Fossae.jpg",
+      "sourceSha256": "f5f8a11574e485295c81a0c28d3786c535afdb2630d60ee6c64bfe928caa90d6",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 629,
+      "height": 841,
+      "variants": [
+        {
+          "width": 629,
+          "height": 841,
+          "file": "727_Cranial_Fossae-629.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the cranial fossae. The top panel shows the superior view and the bottom panel shows the lateral view. In both panels, the major parts are labeled.",
+      "caption": "The bones of the brain case surround and protect the brain, which occupies the cranial cavity. The base of the brain case, which forms the floor of cranial cavity, is subdivided into the shallow anterior cranial fossa, the middle cranial fossa, and the deep posterior cranial fossa."
+    },
+    "728_Herniated_Disk": {
+      "source": "media/728_Herniated_Disk.jpg",
+      "sourceSha256": "cc0e929616c5e9373ef17b108c95d4dc9bfd720b2189b0a706f22084133791f3",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 934,
+      "height": 475,
+      "variants": [
+        {
+          "width": 800,
+          "height": 407,
+          "file": "728_Herniated_Disk-800.webp"
+        },
+        {
+          "width": 934,
+          "height": 475,
+          "file": "728_Herniated_Disk-934.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a herniated disk. The left panel shows the superior view highlighting how the herniated disk compresses the nerve. The right panel shows a photograph of a herniated disk.",
+      "caption": "Weakening of the anulus fibrosus can result in herniation (protrusion) of the nucleus pulposus and compression of a spinal nerve, resulting in pain and/or muscle weakness in the body regions supplied by that nerve."
+    },
+    "729_Ligaments_of_Vertebral_Column": {
+      "source": "media/729_Ligaments_of_Vertebral_Column.jpg",
+      "sourceSha256": "0db2d374b00aaa9666bb6a013590eb7a4e178cf348972d9eeafd508311d3cf97",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 621,
+      "height": 777,
+      "variants": [
+        {
+          "width": 621,
+          "height": 777,
+          "file": "729_Ligaments_of_Vertebral_Column-621.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this image, a lateral view of the skull and the upper part of the vertebral column is shown. The ligaments that connect the different bones are shown in light blue and are labeled.",
+      "caption": "The anterior longitudinal ligament runs the length of the vertebral column, uniting the anterior sides of the vertebral bodies. The supraspinous ligament connects the spinous processes of the thoracic and lumbar vertebrae. In the posterior neck, the supraspinous ligament enlarges to form the nuchal ligament, which attaches to the cervical spinous processes and to the base of the skull."
+    },
+    "730_Posterior_View_Skull": {
+      "source": "media/730_Posterior_View_Skull.jpg",
+      "sourceSha256": "d27939bdf099bdaaa51227a1d267a8cc5a66d2c7b35deea6b881d8b44d50faab",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 810,
+      "height": 631,
+      "variants": [
+        {
+          "width": 800,
+          "height": 623,
+          "file": "730_Posterior_View_Skull-800.webp"
+        },
+        {
+          "width": 810,
+          "height": 631,
+          "file": "730_Posterior_View_Skull-810.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the posterior view of the skull and the major parts are labeled.",
+      "caption": "This view of the posterior skull shows attachment sites for muscles and joints that support the skull."
+    },
+    "731_Nasal_Cavity": {
+      "source": "media/731_Nasal_Cavity.jpg",
+      "sourceSha256": "39c18a5f23a4a1e2173cc0f9ecc5ae4d19fbdf2c210bd239f6c6bf4c4f15fcae",
+      "module": "m46355",
+      "kind": "photo",
+      "width": 825,
+      "height": 637,
+      "variants": [
+        {
+          "width": 800,
+          "height": 617,
+          "file": "731_Nasal_Cavity-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 637,
+          "file": "731_Nasal_Cavity-825.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the nasal cavity. A lateral view of the human skull is shown on the top left with the nasal cavity highlighted in purple. A magnified view of the nasal cavity shows the various bones present and their location.",
+      "caption": "The three nasal conchae are curved bones that project from the lateral walls of the nasal cavity. The superior nasal concha and middle nasal concha are parts of the ethmoid bone. The inferior nasal concha is an independent bone of the skull."
+    },
+    "732_Thoracic_Vertebra_and_Rib": {
+      "source": "media/732_Thoracic_Vertebra_and_Rib.jpg",
+      "sourceSha256": "642e271f2fe2da467037a2c8f029b68eecc27fd71a288382e7bd269e2eefbefd",
+      "module": "m46352",
+      "kind": "photo",
+      "width": 738,
+      "height": 555,
+      "variants": [
+        {
+          "width": 738,
+          "height": 555,
+          "file": "732_Thoracic_Vertebra_and_Rib-738.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how the thoracic vertebra connects to the angle of the rib. The major parts of the vertebra and the processes connecting the vertebra to the rib are labeled.",
+      "caption": "Thoracic vertebrae have superior and inferior articular facets on the vertebral body for articulation with the head of a rib, and a transverse process facet for articulation with the rib tubercle."
     }
   }
 }

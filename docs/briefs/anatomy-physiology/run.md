@@ -17,18 +17,22 @@ with that book's content rules swapped for this book's: each module's own
 Understanding or Clinical Focus boxes; instead the Interactive Link
 Questions rule, the References list, the figure `kind` check, and the
 September-8 table (playbook "Source and authority"). The process — parent
-context kept small, Sonnet prep and close-out agents, one Sonnet author per
+context kept small, Clerk prep and close-out agents, one Author per
 section, a claim pass per chapter, the blind solve in a fresh Fable
-subagent with masked pages — is unchanged, except that **the per-section
-checker runs on Opus**, not Sonnet (§0).
+subagent with masked pages — is unchanged.
 
 ## 0. Shape, and why
 
-The checkers and claim pass find defects on lint-clean pages, so they
-stay. On chapters 1–2 an Opus re-review found about 80 defects the Sonnet
-checkers had passed (leaks, alt-vs-image errors), so the checker runs on
-Opus; authors, prep, and close-out agents stay Sonnet, except the
-alt-errata verifier (§4 step 0). Hence:
+**Which model runs which agent is fixed in `AGENTS.md` ("Which model
+runs which agent")**, not here: every agent below is an **Author**
+(Opus — section authors, checkers, the claim pass, the alt-errata
+verifier), the **Blind solver** (Fable, fresh), or a **Clerk** (Sonnet —
+landing page, run-facts drafter, errata drafter, pins, history, a fixer
+applying accepted old→new sentences). The checkers and claim pass find
+defects on lint-clean pages, so they stay: on chapters 1–2 an Opus
+re-review found about 80 defects the Sonnet checkers had passed (leaks,
+alt-vs-image errors); on chapter 4 the first Opus authors applied their own
+checker fixes and twice pushed back correctly on a parent ruling. Hence:
 
 - **Parent context stays small.** Every note goes to `$SP/PARENT-NOTES.md`,
   not to the conversation. Every long command output goes to a file and
@@ -96,16 +100,16 @@ them.
 4. **Extraction, per module** (`tools/source/anatomy-physiology-prep.py`):
    `keys <moduleId> > $SP/keys-N.M.txt` and `terms <moduleId> >
    $SP/terms-N.M.md`. The parent does NOT read the keys files whole; a
-   Sonnet agent reads them for step 6. Authors key from the raw CNXML.
+   Clerk reads them for step 6. Authors key from the raw CNXML.
 5. **Landing page** `content/…/NN-<slug>/_index.md` from the intro module,
    in final form (bullets naming the sections; the chapter-objectives note
-   as a list; no `authoring_status`). **Delegated:** one Sonnet agent,
+   as a list; no `authoring_status`). **Delegated:** one Clerk (Sonnet),
    prompt = the chapter 1 and 2 landings as exemplars (Sections bullets are
    plain text, never links), the intro module id, the section list, the
    OpenStax deep link; it views the splash image for the alt. Launched
    together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
-   **Delegated, in two parts**: one Sonnet agent fills PART A (every
+   **Delegated, in two parts**: one Clerk (Sonnet) fills PART A (every
    factual field, from the `keys` files and the raw CNXML; every count an
    element count in the CNXML, never a grep over the keys files) in
    `$SP/run-facts.md`, and writes PART B, "DECISIONS NEEDED", to a
@@ -136,16 +140,23 @@ them.
    vendored image, never the source alt, which can describe a different
    version of the drawing — for the four September-8 images replaced in
    place, the old one *(an alt's lettering restated in Part C was built
-   on by an author, Microbiology ch. 26)*.
+   on by an author, Microbiology ch. 26)* — **and never Part B's inference
+   about the image either**: Part C told the 6.5 author the fractures
+   figure draws a healthy bone because Part B had read the caption; the
+   drawing has none *(chapter 6)*. The same holds for a table: Part C
+   said the Bone Markings table "prints no class rows" from a Part B
+   summary; the raw rows showed it does. Open the image or the CNXML
+   for every figure and table decision. Part C also names the exemplar
+   page the authors copy (chapter 6's authors asked).
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
 The parent's own prep work is then: the baseline, the media pull, the PDF
 render, the extraction commands, PART C, and reading two ten-line reports.
-Everything checklist-shaped goes to a Sonnet agent, every run, without
+Everything checklist-shaped goes to a Clerk (Sonnet), every run, without
 being asked *(September 12, 2026)*. Checklist-shaped means text: anything that reads or fixes a figure, alt,
-or `longdesc` against its image runs on Opus (life-sciences "Figure, alt,
-and `longdesc` reading and fixing run on Opus", *September 23, 2026*),
+or `longdesc` against its image is Author work on Opus (`AGENTS.md`
+"Which model runs which agent", rule 2),
 and after the first unit of any agent on a task new to its model the
 parent spot-checks one of its "clean" verdicts against the image. A
 run-specific correction to a brief is an edit to the repo copy, then the
@@ -153,18 +164,19 @@ scratchpad copy — never a fork.
 
 ## 2. The wave
 
-One Sonnet author per section, launched together, each prompt three lines:
-section number, module id, output path, PDF page range, "read
-`$SP/author.md` first". Names cannot contain a dot (`author-1-1`).
+One Author (Opus, `model: "opus"`) per section, launched together, each
+prompt three lines: section number, module id, output path, PDF page
+range, "read `$SP/author.md` first". Names cannot contain a dot
+(`author-1-1`).
 
-As each author reports: launch its checker (one **Opus** agent per
+As each author reports: launch its checker (one Author-kind agent per
 section, `model: "opus"`, prompt = page path + "read `$SP/checker.md`").
 **A prompt line naming one item for "specific attention" narrows a checker
 to that item alone** — say "run the FULL pass, and in addition…", never a
 bare pointer. When a chapter's last page is on disk: launch its claim-pass
-checker (one Sonnet per chapter, prompt = the page paths with module ids,
+checker (one Opus agent per chapter, prompt = the page paths with module ids,
 PLUS the landing page path with its intro module id — the landing page is
-Sonnet-written and this is its only reading — + "read
+Clerk-written and this is its only reading — + "read
 `$SP/claim-pass.md`", report path `$SP/claims-chNN.md`). Before launching
 it, `grep -n 'Anatomy' docs/openstax-errata.md > $SP/ap-errata.txt` (the
 book's existing errata and "Reviewed and *not* errata" lines) and name
@@ -178,6 +190,14 @@ page by page.
 
 Checker defects go back to the page's author by `SendMessage` (authors are
 resumable by raw agent id); the parent applies only one-line fixes itself.
+A replacement distractor is grepped against the keys of the items above
+and below it before it is accepted: "fat storage" landed directly above an
+item keyed "fat stores" *(chapter 6; the author caught it)*. The harness
+may refuse an agent's Write of its report file ("Subagents should return
+findings as text"): the brief still says append-as-you-go, and when the
+write is refused the report is the final message, which the parent saves
+to `$SP/report-<unit>.md` itself before launching the checker *(chapter 6,
+three of seven authors)*.
 Read every changed `question=` line and every replaced option in the diff
 — the gates do not read prose, and fixes have shipped garbled stems and
 stems that print a neighbour's key above or below — and give the parent's
@@ -200,8 +220,9 @@ Knowledge Checks, and sibling pages for the OLD value: a hint, filler, or
 check item built on it is now wrong. A Source note and a footer clause state the
 correction, never the erratum number — the footer-machinery lint rejects
 "(erratum NNNN)" on a page, and a fixer brief that asks for it fails every
-page at once *(chapter 3)*. Hand the accepted findings to one Sonnet fixer
-with the exact old and new sentences; a `kind: 'solution'` deviation for a
+page at once *(chapter 3)*. Hand the accepted findings to each page's
+author while it is still resumable (chapter 4), else to one Clerk fixer
+(Sonnet) with the exact old and new sentences; a `kind: 'solution'` deviation for a
 model-answer wording change is usually stale (the selfcheck compare
 tolerates it) — add a DISCLOSED_DEVIATIONS line only when the keys gate
 asks for one.
@@ -253,11 +274,11 @@ the session.
 
 ## 4. Close-out, in this order
 
-0. **Delegate the mechanical close-out to Sonnet agents, launched together
-   once the pages are stable**. Agents are addressed by their raw agent id
-   for `SendMessage`, never by their description string — record each
-   author's id when it is launched. (a) an alt-errata verifier, **on
-   Opus** (it reads images; see §1; kept although the checkers read every
+0. **Delegate the mechanical close-out to Clerks (Sonnet), launched
+   together once the pages are stable**. Agents are addressed by their raw
+   agent id for `SendMessage`, never by their description string — record
+   each author's id when it is launched. (a) an alt-errata verifier, **on
+   Opus** (Author kind: it reads images; see §1; kept although the checkers read every
    figure, as a low-cost safety check — Derek, September 23, 2026) — every
    author/checker "suspected source defect" and every alt-vs-image claim,
    checked against the vendored image, the CNXML, AND the September-8

@@ -2278,6 +2278,73 @@
       "status": "correct-local-source-defect",
       "errataEntry": 1928,
       "rationale": "The Burns paragraph (para fs-id1942557) says third-degree burns \"require medical attention and will heal slowly without it\", but the module defines a third-degree burn as full-thickness (glossary fs-id1960167, meaning fs-id1960172) and the same paragraph says \"Full-thickness burns cannot be repaired by the body\". The page reads \"they require medical attention, because the body cannot repair them on its own\" with a visible Source note and a footer sentence. Found by the chapter 5.4 author, evidenced by the chapter 5 prose claim pass, October 14, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/01-the-functions-of-the-skeletal-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46341",
+      "sourceElementIds": [
+        "fig-ch06_01_02"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1934,
+      "rationale": "The Bones Protect Brain caption (figure fig-ch06_01_02) says the cranium protects the brain \"from non-traumatic injury\", but bone protects against mechanical, that is traumatic, injury: the same module's body (para fs-id1554131) says bones \"protect internal organs from injury by covering or surrounding them\", its Critical Thinking solution (para fs-id1856835) says \"Any trauma to these organs has to be mediated through the skeletal system\", and Section 7.2 (m46355) describes the skull's role against \"traumatic brain injuries\". The page reads \"The cranium completely surrounds and protects the brain from injury\" with a visible Source note and a footer sentence. Raised by the chapter 6.1 author, evidenced by the chapter 6 prose claim pass, October 15, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/02-bone-classification.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46282",
+      "sourceElementIds": [
+        "fs-id856306"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1935,
+      "rationale": "The Long Bones paragraph (para fs-id856306) places long bones \"in the fingers (metacarpals, phalanges) and toes (metatarsals, phalanges)\", but this book's Section 8.2 (m46368, fs-id1583435) says \"The five metacarpal bones form the palm of the hand\" and the fingers contain the phalanges, and Section 8.4 (m46364, fs-id2649587) says the anterior half of the foot is formed by the five metatarsal bones, between the tarsals and the phalanges of the toes. The page reads \"in the hands (metacarpals, phalanges) and feet (metatarsals, phalanges)\" with a visible Source note and a footer sentence. Evidenced by the chapter 6 prose claim pass, October 15, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/02-bone-classification.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46282",
+      "sourceElementIds": [
+        "fs-id773871"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1936,
+      "rationale": "The Sesamoid Bones paragraph (para fs-id773871) glosses tendons as \"the sheaths of tissue that connect bones to muscles\", but Section 4.3 (m46049, fs-id1516014) defines a tendon as \"the thick band of fibrous connective tissue that attaches a muscle to a bone\" and Section 9.4 (m46394) defines a tendon sheath as the connective tissue sac that surrounds a tendon. The page reads \"the bands of dense connective tissue that connect muscles to bones\" with a visible Source note and a footer sentence. Evidenced by the chapter 6 prose claim pass, October 15, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46281",
+      "sourceElementIds": [
+        "fs-id1716294"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1937,
+      "rationale": "The Bone Structure Chapter Review (para fs-id1716294) says bone matrix consists of collagen fibers and \"organic ground substance, primarily hydroxyapatite\", but the module's body says collagen fibers provide a surface \"for inorganic salt crystals to adhere\" that \"create hydroxyapatite\", and Section 4.3 (m46049, fs-id1286153) puts hydroxyapatite in the mineralized, inorganic component of the matrix. The page's Summary reads \"an inorganic ground substance, primarily hydroxyapatite\" with a visible Source note and a footer sentence. Evidenced by the chapter 6 prose claim pass, October 15, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46301",
+      "sourceElementIds": [
+        "fs-id1491929"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1938,
+      "rationale": "The endochondral ossification paragraph (para fs-id1491929) says \"By the time the fetal skeleton is fully formed, cartilage only remains at the joint surface … and … the epiphyseal plate\", then describes secondary ossification centers forming in the epiphyses after birth, and Section 8.5 (m46376, fs-id1397163 and fs-id1972676) says secondary centers appear \"usually after birth\", so most epiphyses are still cartilage at the end of fetal life. The page reads \"Eventually, cartilage remains only at the joint surface … and … the epiphyseal plate\" with a visible Source note and a footer sentence. Evidenced by the chapter 6 prose claim pass, October 15, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46301",
+      "sourceElementIds": [
+        "fs-id1514097",
+        "fs-id1492144"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1939,
+      "rationale": "The Critical Thinking solution (exercise fs-id1514097, para fs-id1492144) says secondary ossification centers \"form later, and there are two of them, one in each epiphysis\", but Section 8.5 (m46376, fs-id1972676) says small bones such as the phalanges \"will develop only one secondary ossification center\" and large bones such as the femur \"will develop several\", and the question asks about a long bone in general. The page's model answer says they form later, usually after birth, in the epiphyses, typically one in each epiphysis, with a phalanx having one and the femur several, with a visible Source note and a footer sentence; the rubric checkpoint grades the location, not the count. Evidenced by the chapter 6 prose claim pass, October 15, 2026."
     }
   ]
 }

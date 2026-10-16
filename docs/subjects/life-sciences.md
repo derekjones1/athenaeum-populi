@@ -1149,8 +1149,11 @@ method on Opus, `longdesc` figures first.
 **Figure, alt, and `longdesc` reading and fixing run on Opus, never
 Sonnet.** Sonnet stays right for
 checklist-shaped text work (compiling lists, drafting errata from
-verdicts). Whatever model a task is first delegated to, the parent
-spot-checks one "clean" verdict against the image after its first unit.
+verdicts). The full roster — which agent kind runs on which model, and the
+three rules for border cases — is `AGENTS.md` "Which model runs which
+agent"; a brief names the kind, not a model. Whatever model a task is
+first delegated to, the parent spot-checks one "clean" verdict against the
+image after its first unit.
 
 ## Done checklist (in addition to the core checklist)
 

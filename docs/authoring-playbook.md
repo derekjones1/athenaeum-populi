@@ -109,7 +109,9 @@ Before writing:
    playbook, inspect its own source module and PDF pages, run its section
    verifier, and return its source ledger plus any upstream defects it found.
    The parent reconciles every section, logs the defects, and runs the
-   book-wide gates.
+   book-wide gates. Which model each worker runs on is fixed by its kind —
+   Author, Blind solver, or Clerk — in `AGENTS.md` "Which model runs which
+   agent"; a brief or recipe names the kind.
 
 The pre-July-22-2026 grandfathering record is in
 `docs/history/authoring-playbook.md`. New sections and substantive revisions

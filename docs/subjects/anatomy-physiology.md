@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, and chapter 5 on October 14, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, and chapter 6 on October 15, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.

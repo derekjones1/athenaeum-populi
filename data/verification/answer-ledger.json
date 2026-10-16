@@ -941,6 +941,14 @@
     "result": "agrees"
    }
   },
+  "022e33b5139f4c52": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1271559; body fs-id1189148 prints term; accept growth plate (glossary/body alt name)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0236433e014e069e": {
    "verdict": "ok"
   },
@@ -2327,6 +2335,14 @@
   "053cfe3539f865b2": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "054355ba71289973": {
+   "verdict": "ok",
+   "note": "m46341 fs-id1184558, key B 'cartilage'; body: 'In the areas of the skeleton where bones move ..., cartilage ... provides flexibility and smooth surfaces for movement.' Checker concern on red marrow: the module places red marrow in the interior of bone (fs-id814095), and only cartilage 'in the areas of the skeleton where bones move'; source key B stands.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "05449eb3f97bdab1": {
    "verdict": "ok",
@@ -5560,6 +5576,14 @@
     "result": "agrees"
    }
   },
+  "0d38380715278314": {
+   "verdict": "ok",
+   "note": "glossary fs-id1141871 fracture hematoma; body fs-id691880",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0d3ab254867939ba": {
    "verdict": "ok",
    "note": "IA KC 07-12 §11.1, converted from prose options to rendered figures. Re-derived: completing the square, x^2+10x + y^2+6y = -30 becomes (x+5)^2-25 + (y+3)^2-9 = -30, i.e. (x+5)^2+(y+3)^2 = 4 — a circle centered (-5,-3) of radius 2, which is option 0 and agrees with the standard-form fill-in above it on the same page. The distractors render the printed prose distractors exactly: the sign-flipped centre (5,3) (1), an ellipse at the correct centre (2), and radius 4 instead of 2 (3). Order and answer position unchanged."
@@ -8631,6 +8655,14 @@
     "result": "agrees"
    }
   },
+  "14a7e72978e8d7cf": {
+   "verdict": "ok",
+   "note": "Review fs-id1059498 key C; body fs-id1331361",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "14b2d8c5f7ec5a06": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8658,6 +8690,14 @@
   "14bb3c9558680357": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "14bdb4234aa8e355": {
+   "verdict": "ok",
+   "note": "Review fs-id1233565, key A (solution fs-id1569371); body fs-id1304639: people who exercise regularly have thicker bones; options verbatim in source order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -11639,6 +11679,14 @@
     "result": "agrees"
    }
   },
+  "1b74ff7ab608df44": {
+   "verdict": "ok",
+   "note": "author MC from table tbl-ch06_02 row Sinus: Air-filled space in bone; distractors table rows",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1b7a550b6ff98fe2": {
    "verdict": "ok",
    "note": "Microbiology 9.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the optimum-temperature and mesophile paragraphs; states the section does not fix the optimum)"
@@ -12148,6 +12196,14 @@
    "note": "source exercise fs-idp26179632 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1caeaf2129755333": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1692399: The calli eventually unite, remodeling occurs; accept adds bone remodeling/remodelling (6.3, 6.6 print bone remodeling)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -13105,6 +13161,14 @@
     "result": "agrees"
    }
   },
+  "1f016e3b3b5bdc9c": {
+   "verdict": "ok",
+   "note": "Review fs-id320806: SOURCE KEY C (osteocytes) WRONG; re-keyed D per body fs-id1468489 and fs-id723536, Source note (erratum 1931)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1f0327c9217e7002": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -14035,6 +14099,14 @@
   "2133420b1c075c29": {
    "verdict": "ok",
    "note": "KC 2 5.1 § body Proteins (fs-id1786880), m66373 — parent re-read against the module"
+  },
+  "21361b3cc2c3104c": {
+   "verdict": "ok",
+   "note": "Review fs-id1107187: SOURCE KEY D (osteoprogenitor cells) WRONG; re-keyed B per body fs-id1270226, Source note (erratum 1932)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "21396d876cbcb6e9": {
    "verdict": "ok"
@@ -15260,6 +15332,14 @@
     "result": "agrees"
    }
   },
+  "24b2b17c87a3106f": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1513558",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "24b78efdd8b0c14e": {
    "verdict": "ok"
   },
@@ -16383,6 +16463,14 @@
    "verdict": "ok",
    "note": "Practice (Descartes). Sign changes of x^4-x^2-1 (signs +,0,-,0,-1 -> effectively +,-,-): 1 change (1 positive); f(-x) is the same polynomial (only even powers plus a constant), also 1 change (1 negative). Matches CNXML solution for fs-id1165134061970."
   },
+  "276d6716b7741b75": {
+   "verdict": "ok",
+   "note": "Review fs-id1828403, key C leafy green vegetables (solution fs-id1432938); body: green leafy vegetables are a calcium source (fs-id1868136) and a good source of vitamin K (fs-id1554460)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2773d096c39095d1": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -16769,6 +16857,14 @@
   },
   "288dbc3d81b18864": {
    "verdict": "ok"
+  },
+  "2890a29e9040fd62": {
+   "verdict": "ok",
+   "note": "Review fs-id1804706, solution fs-id1812183 key B calcitonin; body fs-id1569683",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2892e46da0fb8d28": {
    "verdict": "ok"
@@ -18714,6 +18810,14 @@
     "result": "agrees"
    }
   },
+  "2d9520eaa5e1007a": {
+   "verdict": "ok",
+   "note": "6.4 author reading: body cloze fs-id1967042: matrix produced by chondroblasts; body prints the key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2d9673dca8d64863": {
    "verdict": "ok",
    "note": "author-built from § Oxygen Requirements of Microorganisms, Check Your Understanding: \"Which bacteria grow at the top of a thioglycolate tube, and which grow at the bottom of the tube?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -18747,6 +18851,14 @@
    "note": "KC 2 8.1 § glossary granum (fs-idp519792), m66473 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2db635d7a0ea2fd8": {
+   "verdict": "ok",
+   "note": "Review fs-id1509482 key C; body fs-id1331361 hematopoiesis in spongy bone red marrow; option B bone remodeling (second key by figure 606 + body fs-id1270226) replaced by osteon formation, false of spongy bone per summary fs-id1716294 and body fs-id1331361 (erratum 1941), key C kept; re-read against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -19124,6 +19236,14 @@
   "2e8ded93daadad33": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2e91170a6d245f6f": {
+   "verdict": "ok",
+   "note": "author sortbins from tbl-ch06_04, 2 items per row cell for Spiral/Comminuted/Impacted/Greenstick; each item true of one row only",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19625,6 +19745,14 @@
   "2fa98a465d6ecbf4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2facb113ff9d80f3": {
+   "verdict": "ok",
+   "note": "m46341 fs-id1500247, key C 'make blood cells'; body: 'Red marrow is where hematopoiesis—the production of blood cells—takes place.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21357,6 +21485,14 @@
     "result": "agrees"
    }
   },
+  "3455d6ee0df00712": {
+   "verdict": "ok",
+   "note": "m46341 fs-id774002, key A 'an area of fat storage'; body: 'Yellow marrow contains adipose tissue'; caption 'Yellow marrow stores fat.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3459323365bf5df6": {
    "verdict": "ok",
    "note": "source exercise fs-idp117088800 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -22476,6 +22612,14 @@
     "result": "agrees"
    }
   },
+  "37197d01a97a5f66": {
+   "verdict": "ok",
+   "note": "source Review Question; key re-read against CNXML solution (line 70: Most of the bones of the arms and hands are long bones; howe)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "371f0d481bc5e62c": {
    "verdict": "ok",
    "note": "author-built from § introduction, Check Your Understanding: \"What temperature requirements do most bacterial human pathogens have?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -22503,6 +22647,10 @@
   "3727c07c5b7d656b": {
    "verdict": "ok",
    "note": "m66473 critical-thinking solution fs-idp37862384 (full/empty energy carriers, incl. 'Both ATP and NADPH are produced in the stroma'). Page model answer matches verbatim. Checked the stroma claim against biology: ATP synthase's catalytic head and NADP+ reductase both face the stromal side of the thylakoid membrane, so the source statement is accurate, not a defect. Three CHECKS clauses restate the solution with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "37287a78d635f4a0": {
+   "verdict": "ok",
+   "note": "CT fs-id1484489 solution fs-id1286839 verbatim; rubric clauses from it"
   },
   "37294ae3ce65f734": {
    "verdict": "ok",
@@ -24013,6 +24161,14 @@
     "result": "agrees"
    }
   },
+  "3af0a4185aeaa681": {
+   "verdict": "ok",
+   "note": "key-term cloze; m46341 body fs-id1641272: 'Bone, or osseous tissue, is a hard, dense connective tissue that forms most of the adult skeleton, the support structure of the body.' The clause 'is a hard, dense connective tissue that' is left out of the stem (it is Review fs-id1516749's key). Glossary fs-id756448 'osseous tissue'. accept 'osseous'; grader: 'osseous-tissue', 'osseous tissues', 'the osseous tissue' correct, 'bone tissue' incorrect.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3af394a83a5dda16": {
    "verdict": "ok",
    "note": "glossary recall fs-id1128152; accept lamellated corpuscle (body synonym), Pacinian",
@@ -24235,6 +24391,14 @@
   "3b93f9f499524a50": {
    "verdict": "ok",
    "note": "locally built selfcheck paraphrasing one paragraph (Ecosystem Ecology para 1) with no new claim: extension of the other three levels, biotic/abiotic components with examples, nutrients/energy movement — all three checkpoints are clauses of that one source paragraph's sentences. Disclosed in footer as a local item. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "3b9523365c6464ae": {
+   "verdict": "ok",
+   "note": "6.4 author reading: glossary recall fs-id757155 \"completely ossified remnant of the epiphyseal plate\" = epiphyseal line; body fs-id1500108 prints the key; grader: epiphyseal lines/the epiphyseal line correct, line/epiphyseal plate incorrect",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3b957d05b0a6f9b3": {
    "verdict": "ok",
@@ -25694,6 +25858,14 @@
    "verdict": "ok",
    "note": "(x-3)^2/25-(y+4)^2/4=1: a=5,b=2, horizontal axis, slope=+-b/a=+-2/5 -> y=2/5(x-3)-4,y=-2/5(x-3)-4; matches source fs-id2301300. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "3f30b29798f9f5d6": {
+   "verdict": "ok",
+   "note": "author MC from table tbl-ch06_02 row Tuberosity: Rough surface; distractors table rows",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3f3a0932884afcad": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"Above all, eukaryotic cells are defined by the presence of a nucleus surrounded by a complex nuclear membrane.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -26584,6 +26756,10 @@
    "verdict": "ok",
    "note": "KC 3 15.5 § body Aminoacyl tRNA Synthetases (fs-id1720501), m66501 — parent re-read against the module"
   },
+  "41389bc6a725f0e7": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1739710, model answer = solution fs-id1554131 verbatim; checkpoints are its clauses"
+  },
   "413b9180ceebc0b8": {
    "verdict": "ok",
    "note": "body cloze from § Parent Material: \"Other soils form in materials that came from elsewhere, such as sand and glacial drift.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -27338,6 +27514,14 @@
   "431088fdfe33bcbe": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "4310a62d61e2d65e": {
+   "verdict": "ok",
+   "note": "6.4 author reading: body cloze fs-id1639567: nor are the sutures of the skull closed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "431b7e1f1d6ebfd5": {
    "verdict": "ok",
@@ -28599,6 +28783,14 @@
     "result": "agrees"
    }
   },
+  "461cf77dc0724826": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1331361 key B; fs-id1121829: osteoblasts produce new bone tissue beneath the periosteum",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "461f255a53d6719c": {
    "verdict": "ok",
    "note": "KC 6 32.3 § body Natural Methods of Asexual Reproduction (fs-idm102566384), m66609 — parent re-read against the module",
@@ -28913,6 +29105,14 @@
   "46cc429f667f9434": {
    "verdict": "ok",
    "note": "source FIB fs-id1167661329888 as textin, key 'mucociliary escalator' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "46cf225b0dffdd6f": {
+   "verdict": "ok",
+   "note": "m46341 fs-id1258255, key B 'bones and cartilage'; body: 'The skeletal system is the body system composed of bones and cartilage'.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -29460,6 +29660,14 @@
   "48743f597b1ce5b1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "488314c3b3b2cd1d": {
+   "verdict": "ok",
+   "note": "table tbl-ch06_02 class rows + body fs-id1239338 + summary fs-id1075174; each item placed by its own class row/sentence",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34915,6 +35123,14 @@
     "result": "agrees"
    }
   },
+  "567a6ff9a6379f27": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1524394",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "567b892498747f0e": {
    "verdict": "ok",
    "note": "KC 5 24.5 § Cyclosporiasis, m58931 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -36190,6 +36406,14 @@
     "result": "agrees"
    }
   },
+  "59ac745aa94be2fb": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1511799 key A; fs-id1709561/fs-id1491929: epiphyseal plate is the area of growth / responsible for longitudinal growth",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "59b778ccea3e131d": {
    "verdict": "ok",
    "note": "author-built from § Lenses and Refraction: \"A convex lens can be used to magnify because it can focus at closer range than the human eye, producing a larger image.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -37438,6 +37662,14 @@
   "5ca28b4653999b22": {
    "verdict": "ok",
    "note": "IA KC 07-12 §11.4, converted from prose options to rendered figures. Re-derived: 9(x^2-4x) - 25(y^2+2y) = 214 becomes 9(x-2)^2 - 36 - 25(y+1)^2 + 25 = 214, i.e. 9(x-2)^2 - 25(y+1)^2 = 225, so (x-2)^2/25 - (y+1)^2/9 = 1 — a hyperbola centered (2,-1) opening left and right with a=5 and vertices (-3,-1) and (7,-1), which is option 2 and agrees with the standard-form fill-in above it on the same page. The distractors render the printed prose distractors exactly: an ellipse at the same centre (0), the sign-flipped centre (-2,1) (1), and the up-down orientation with vertices (2,-4) and (2,2) (3). Order and answer position unchanged."
+  },
+  "5ca6b3f609da72cd": {
+   "verdict": "ok",
+   "note": "author MC from body fs-id1508198",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5ca759b2a9b390f9": {
    "verdict": "ok"
@@ -39920,6 +40152,14 @@
     "result": "agrees"
    }
   },
+  "63f9b2645bb21990": {
+   "verdict": "ok",
+   "note": "6.4 author reading: body cloze fs-id1121829: This is called appositional growth; accept appositional growth",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "640898b28252e88b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40619,6 +40859,14 @@
   "663510a6934c8019": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "663aae1b594d1048": {
+   "verdict": "ok",
+   "note": "source Review Question; key re-read against CNXML solution (line 92: Bones that surround the spinal cord are classified as ______)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41508,6 +41756,14 @@
   "688515d5647d52b4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "688672c816f96d86": {
+   "verdict": "ok",
+   "note": "textin resistance training; cloze from m46305 para fs-id1931512 'Any type of exercise will stimulate the deposition of more bone tissue, but resistance training has a greater effect than cardiovascular activities.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42767,6 +43023,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "6c6f2404b97a67b6": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source CT fs-id1514097; model answer = solution fs-id1492144 with the claim-pass correction (parent-accepted) from m46376: secondary centers form later, usually after birth, in the epiphyses, one per epiphysis typically, one in a phalanx, several in the femur; Source note inside the model answer; checkpoint 4 now \"usually after birth, in the epiphyses\""
   },
   "6c75409555bf6b10": {
    "verdict": "ok",
@@ -44835,6 +45095,14 @@
    "verdict": "ok",
    "note": "Practice #15 (fs-id1165135367787): C=[[16,3,7,18],[90,5,3,29]]; -4C computed in Node = [[-64,-12,-28,-72],[-360,-20,-12,-116]], row 1 = -64,-12,-28,-72. Matches CNXML solution exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "71bad90b4a8b2a35": {
+   "verdict": "ok",
+   "note": "author-built from tbl-ch06_01 and the Short/Flat/Irregular/Sesamoid subsections; each label true of exactly one row (line 114: Assign each feature or example to the class of bone it belon)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "71bbb03f6c05b3ab": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -46395,6 +46663,14 @@
   "75861b786501e06c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "75904278c5af62d2": {
+   "verdict": "ok",
+   "note": "6.4 author reading: summary cloze; m46301 summary fs-id1829786 first sentence prints replacement; one blank, no other term fits",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48253,6 +48529,14 @@
   "7a1da97da2be80c5": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: microtiter plates (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7a1e1eee077b99c7": {
+   "verdict": "ok",
+   "note": "Review fs-id1286871 key A; body fs-id942186",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -50588,6 +50872,14 @@
     "result": "agrees"
    }
   },
+  "7f8fee23157ec571": {
+   "verdict": "ok",
+   "note": "summary cloze, m46295 fs-id1016222 sentence 2 'Hypocalcemia can result in problems with blood coagulation, muscle contraction, nerve functioning, and bone strength.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7f901dfb48c59372": {
    "verdict": "ok",
    "note": "Practice: x=sqrt(y)+2y with y(t)=t substituted directly gives x(t)=sqrt(t)+2t; matches CNXML solution; retype of printed y-form confirmed graded incorrect against the t-keyed answer."
@@ -50876,6 +51168,14 @@
     "result": "agrees"
    }
   },
+  "8036bb2015121c10": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch06_06 + body fs-id1999803: epiphyseal plate->line and end of longitudinal growth -> Sex hormones; produced by kidneys and phosphate absorption -> Calcitriol; osteoclast proliferation and kidney-tubule reabsorption -> PTH; inhibits osteoclast activity and calcium uptake by bones -> Calcitonin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "80468975a529e845": {
    "verdict": "ok",
    "note": "summary-derived cloze (m66491 fs-id1506798, relative positions and distances of linked genes), checker-verified; accept extended with the single nouns after the orchestrator blind-solve answered a bare distances and was graded wrong — a correct learner types one noun | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -51085,6 +51385,14 @@
     "result": "agrees"
    }
   },
+  "80d88588e0a5129f": {
+   "verdict": "ok",
+   "note": "fs-id1738815 key B yellow marrow exposed and damaged; verbatim; hint now location-only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "80d923342cb19bf0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51157,6 +51465,10 @@
   },
   "8116ede627dcf829": {
    "verdict": "ok"
+  },
+  "8118b3208d7a595b": {
+   "verdict": "ok",
+   "note": "6.4 author reading: author-written selfcheck from fs-id774002 (Bone Remodeling para 1); model answer its own sentences, no new claim"
   },
   "811d0a94c247cec0": {
    "verdict": "ok",
@@ -52289,6 +52601,14 @@
   "83f06d87ded7cd2f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "83f52333ebabf9d2": {
+   "verdict": "ok",
+   "note": "Review fs-id756448 key A; body fs-id1239338 hole definition + fs-id1147496",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54144,6 +54464,10 @@
     "result": "agrees"
    }
   },
+  "88f4399180612c4c": {
+   "verdict": "ok",
+   "note": "source Critical Thinking; model answer = CNXML solution verbatim (line 155: What are the structural and functional differences between t)"
+  },
   "88f4da8c2b24e1dc": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -54633,6 +54957,14 @@
   },
   "8a17c7e91275faeb": {
    "verdict": "ok"
+  },
+  "8a19285ab18341b7": {
+   "verdict": "ok",
+   "note": "Review fs-id1639450, key A estrogen and testosterone (solution fs-id1942453); body fs-id1999803",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8a195120f5ac54c1": {
    "verdict": "ok"
@@ -58364,6 +58696,14 @@
   "93e46ea9614058f5": {
    "verdict": "ok"
   },
+  "93e4fe76efc694a5": {
+   "verdict": "ok",
+   "note": "fs-id1752391 key D broken bone pierces the skin; verbatim; table Open (or compound) row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "93e8fe6f1edc2693": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -58394,6 +58734,14 @@
   "93fa10fbda37765c": {
    "verdict": "ok",
    "note": "x=y+3, 4=3x-2y -> substituting x=y+3 gives 4=3(y+3)-2y=y+9 -> y=-5, x=-2. Node-verified (-2,-5) satisfies both equations. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "93fc7b62fd6eb1da": {
+   "verdict": "ok",
+   "note": "author-written from m46295 fs-id1977482 'The only way it can enter the body is through the diet.'; distractors bones, kidneys, urine are module terms and none is a route of entry by the module's words",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9401b3835702e1f5": {
    "verdict": "ok"
@@ -60255,6 +60603,14 @@
     "result": "agrees"
    }
   },
+  "98e90afa8c48c1d8": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1235745 key D; fs-id1804592: flat bones of the face, most of the cranial bones; metatarsals/femur long bones = endochondral (fs-id1966864)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "98e982b78e101494": {
    "verdict": "ok",
    "note": "KC 2 11.6 § Consequences and Applications of Conjugation, m58845 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -60535,6 +60891,14 @@
     "result": "agrees"
    }
   },
+  "99882b2766c89006": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1525656 key B; fs-id1522787: calcified matrix -> chondrocyte death; spaces combine to become the medullary cavity (loose but module-supported)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "998f8e0b5c986b2f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60652,6 +61016,14 @@
   "99ef6b6c893c892d": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3\\sin(2\\theta)$ for symmetry. Which sym)"
+  },
+  "99f1904594d9b90e": {
+   "verdict": "ok",
+   "note": "table tbl-ch06_03 cells + body fs-id723536/fs-id1468489/fs-id1270226; each item true of one cell type",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9a093a81f31fbeaa": {
    "verdict": "ok"
@@ -61099,6 +61471,14 @@
   "9b1fc83a9543976c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9b20b10b42ac01ba": {
+   "verdict": "ok",
+   "note": "m46341 fs-id1073754, key B 'protection of internal organs'; body: 'Bones also protect internal organs from injury by covering or surrounding them.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63825,6 +64205,14 @@
     "result": "agrees"
    }
   },
+  "a216d332d66d659a": {
+   "verdict": "ok",
+   "note": "textin magnesium; cloze from para fs-id1091621 'While magnesium is only found in trace amounts in the human body, more than 60 percent of it is in the skeleton, suggesting it plays a role in the structure of bone.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a218db8b93d597f9": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 901): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -66546,6 +66934,14 @@
     "result": "agrees"
    }
   },
+  "a8c321e829394555": {
+   "verdict": "ok",
+   "note": "fs-id1121987 key C spongy; body fs-id1594571 and figure label Bony callus of spongy bone",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a8cf4d5b84e23892": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66652,6 +67048,14 @@
   },
   "a8fb1b2db98fdaf2": {
    "verdict": "ok"
+  },
+  "a8fe1b660831a14f": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1331361",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a8fe22d49a0bc4b3": {
    "verdict": "ok",
@@ -68012,6 +68416,10 @@
   "acd8c440dc1159a7": {
    "verdict": "ok"
   },
+  "acde7107027a9bc3": {
+   "verdict": "ok",
+   "note": "m46341 fs-id1212983 / solution fs-id1733952, five paragraphs transcribed verbatim as the model answer; 6 checkpoints are clauses of it. The stem asks for three functions, but the source solution covers all five, so the rubric keeps one checkpoint per function (six in all: two for the fifth), and a learner who chooses three ticks three."
+  },
   "ace196e91d44c0f3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68542,6 +68950,14 @@
     "note": "Flag withdrawn: the module's vocabulary makes a protein's fold its tertiary structure ('unique three-dimensional structure'); the α→β conversion in prion disease is a specialist secondary-structure reading the section never gives, so (b) is not module-supported."
    }
   },
+  "ae0606f5e3ed5ab7": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id970485 (This system -> referent); accept waste products, grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ae0e73c656fd8acc": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -68608,6 +69024,10 @@
   "ae4a7816b6542304": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "ae50be1f2d6dbff6": {
+   "verdict": "ok",
+   "note": "fs-id1570061 model answer = solution fs-id1205690 verbatim"
   },
   "ae564051c1d06417": {
    "verdict": "ok",
@@ -69656,6 +70076,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b111a81ddaa8addc": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1740117, model answer = solution fs-id1179935 verbatim"
   },
   "b111e760a6dcdfd7": {
    "verdict": "ok",
@@ -71741,6 +72165,14 @@
   "b5f69484a3020963": {
    "verdict": "ok"
   },
+  "b5faaf444daca7c8": {
+   "verdict": "ok",
+   "note": "m46341 fs-id1516749, key D 'dense, hard connective tissue'; body: 'Bone, or osseous tissue, is a hard, dense connective tissue'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b5ffc2632848d644": {
    "verdict": "ok",
    "note": "KC 5 27.4 § body Pre-Cambrian Animal Life (fs-idm154943648), m66586 — parent re-read against the module"
@@ -72412,6 +72844,10 @@
   "b7c0ffeec2a616c2": {
    "verdict": "ok"
   },
+  "b7c26a46182abde7": {
+   "verdict": "ok",
+   "note": "source Critical Thinking; model answer = CNXML solution verbatim (line 143: What are the structural and functional differences between a)"
+  },
   "b7c58feddd105cb1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72920,6 +73356,14 @@
    "note": "source exercise fs-id1168328173507 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b8c374d8823496c2": {
+   "verdict": "ok",
+   "note": "textin carbonate (accept calcium carbonate); cloze from para fs-id1942371 'You already know that calcium is a critical component of bone, especially in the form of calcium phosphate and calcium carbonate.'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -73491,6 +73935,10 @@
    "verdict": "ok",
    "note": "P=2\\pi/(\\pi/3)=6 (Try It 9 period part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "ba616ac8ffc253c3": {
+   "verdict": "ok",
+   "note": "fs-id1518525 model answer = solution fs-id1533571 verbatim"
+  },
   "ba619bf24600d8ad": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -73510,6 +73958,14 @@
   "ba771c6cde0f83b0": {
    "verdict": "ok",
    "note": "m66408 Critical Thinking fs-idp41212752 (pineal gland/SCN); model answer reuses the source solution's own sentences verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ba867c23b939262e": {
+   "verdict": "ok",
+   "note": "Review fs-id704483, key D calcitonin and parathyroid hormone (solution fs-id2035794); body fs-id852197 'their opposing functions'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ba86989a50a97023": {
    "verdict": "ok",
@@ -74274,6 +74730,14 @@
   "bc5873aef81db5a2": {
    "verdict": "ok",
    "note": "Critical Thinking selfcheck fs-idp108238624; model answer is the CNXML solution verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "bc5990c32ff1ae40": {
+   "verdict": "ok",
+   "note": "fs-id1475727 key B open and transverse; verbatim; body: an open transverse fracture",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bc5d29ceab57a976": {
    "verdict": "ok",
@@ -75433,6 +75897,14 @@
    "verdict": "ok",
    "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "bf658413a79a7554": {
+   "verdict": "ok",
+   "note": "source Review Question; key re-read against CNXML solution (line 103: Which category of bone is among the most numerous in the ske)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bf65b51eb6715144": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -76053,6 +76525,10 @@
     "result": "agrees"
    }
   },
+  "c0bef3aeb8da00a8": {
+   "verdict": "ok",
+   "note": "CT fs-id657034 solution fs-id1856754 verbatim; rubric clauses from it"
+  },
   "c0bfff79ae25d919": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -76643,6 +77119,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 928): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "c28a5967d0f21b42": {
+   "verdict": "ok",
+   "note": "source Review Question; key re-read against CNXML solution (line 132: Long bones enable body movement by acting as a ________.)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c28bc0a4b49b0d00": {
    "verdict": "ok",
    "note": "source selfcheck: exercise fs-idp316645872 (Critical Thinking), question and model answer transcribed verbatim from the CNXML solution; checkpoints are its three sentences verbatim, no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -76965,6 +77449,14 @@
     "result": "agrees"
    }
   },
+  "c364520e09184a1a": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch06_05 + body: sunlight & northern latitudes -> Vitamin D (fs-id1495448); hydroxyapatite -> Calcium (table cell); broccoli/nuts/beans/seeds -> Calcium (fs-id1868136); bone mineralization -> Vitamin K (table); inflammation/osteoblast and new osseous tissue -> Omega-3 (table, fs-id969752). Each unique among the four bins by module words",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c367680dbdd91b34": {
    "verdict": "ok",
    "note": "source exercise fs-idp39504416 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -77181,6 +77673,14 @@
   "c3ef1afbe50cb2ac": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c3f75fe75e78fbfa": {
+   "verdict": "ok",
+   "note": "Review fs-id1284795, solution fs-id755495 key D nervous system; options and order as printed",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -77485,6 +77985,10 @@
     "result": "agrees"
    }
   },
+  "c4a3291237cd13df": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1805294, model answer = solution fs-id1319720 verbatim"
+  },
   "c4a652b2a5bf24a8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77772,6 +78276,14 @@
   "c52d309271af1dd2": {
    "verdict": "ok",
    "note": "KC 2 7.3 § Citric Acid Cycle, m66467 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c52d63a133bb8611": {
+   "verdict": "ok",
+   "note": "6.4 author reading: body cloze fs-id691904: others will become osteogenic cells and then osteoblasts; accept osteogenic (head noun dropped)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -78384,6 +78896,14 @@
   "c6ced815f7632209": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c6d5b88599399d26": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1315185",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -81065,6 +81585,14 @@
     "result": "agrees"
    }
   },
+  "ce0affd56c598fc1": {
+   "verdict": "ok",
+   "note": "Review fs-id1521592 key B kept; option D compact bone replaced by articular cartilage (also-true distractor, body fs-id1025647/fs-id1524394), Source note (erratum 1930); Q2 hint now location-only; Source note withholds key/options",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ce0bc973fd4df502": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81104,6 +81632,14 @@
   "ce228a26e929256b": {
    "verdict": "ok",
    "note": "m66441 CT solution fs-idm40512358 (fatty acids vs glycogen energy storage) verbatim aside from footer-disclosed spacing fix (9kcal/gram -> 9 kcal/gram); four CHECKS clauses restate its content. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "ce235bae6b9e4bd7": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id886679; body fs-id1239779",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ce271c2525741f51": {
    "verdict": "ok",
@@ -81876,6 +82412,14 @@
    "verdict": "ok",
    "note": "KC 7 43.4 § The Ovarian Cycle and the Menstrual Cycle, m66674 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 33-43 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the corpus luteum and endometrium sentences of the ovarian-cycle paragraph)"
   },
+  "d03b2d53255be15e": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1857810 key C; fs-id1967042: cartilage is avascular ... why damaged cartilage does not repair itself readily; other options unsupported",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d03c853f3a080299": {
    "verdict": "ok",
    "note": "Practice long-division item 1 (quotient): ran long division of 3x^2+23x+14 by x+7 in node; quotient 3x+2, remainder 0, matching the CNXML solution (fs-id1165135643143). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -82609,6 +83153,14 @@
     "result": "agrees"
    }
   },
+  "d271673ab3e07930": {
+   "verdict": "ok",
+   "note": "summary cloze, m46295 fs-id1016222 sentence 3 'Hypercalcemia can result in lethargy, sluggish reflexes, constipation and loss of appetite, confusion, and coma.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d275a0ae4365d8ca": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: naïve mature B cell (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -83110,6 +83662,14 @@
     "result": "agrees"
    }
   },
+  "d3f840f425a581c0": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1147496; accept artery|nutrient artery|nutrient arteries, grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d3fa97e446a286b7": {
    "verdict": "ok",
    "note": "body cloze from § Immunofiltration and Immunochromatographic Assays: \"Immunohistochemistry: Used to stain specific cells in a tissue\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -83383,6 +83943,14 @@
   "d47836643095e2ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d4789be0a20c8ffe": {
+   "verdict": "ok",
+   "note": "Review fs-id1829377, solution fs-id1180259 key A thyroxine; body fs-id1977482 'regulated by PTH, vitamin D, and calcitonin'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -84857,6 +85425,14 @@
     "result": "agrees"
    }
   },
+  "d80f833166be5350": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1491618 key D; fs-id691904: they will ultimately be spread out by the formation of bone tissue (early osteoblasts in the ossification center)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d8126e8c073245c4": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -85132,6 +85708,14 @@
   "d8e7772ce31a173e": {
    "verdict": "ok",
    "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d8f138962867b16c": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1147496",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d8f392c0263779ae": {
    "verdict": "ok",
@@ -86486,6 +87070,14 @@
     "result": "agrees"
    }
   },
+  "dcbb293e2bdb87a4": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1270226; accept remodeling|remodelling|re-shaping (module calls the process remodeling), grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dcc941a2184746ee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86609,6 +87201,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "dcff7ad4161f9b73": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source CT fs-id1812566; model answer = solution fs-id1173842 verbatim; 6 checks are its clauses"
   },
   "dd0af5d8d234318f": {
    "verdict": "ok",
@@ -87312,6 +87908,14 @@
   "df251b15cf307a25": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "df2a372b25519d46": {
+   "verdict": "ok",
+   "note": "Review fs-id1506178, key A vitamin D (solution fs-id1334270); body fs-id1942371 'calcium cannot be absorbed from the small intestine without vitamin D'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88359,6 +88963,14 @@
   "e172d462377c3350": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e175f2728312e1fc": {
+   "verdict": "ok",
+   "note": "Review fs-id1419507 key D; body fs-id970485 + fs-id1331361; option C lamellae (second key by figure 606) replaced by perforating canals (body fs-id1508198 places them only in compact bone), key D kept (erratum 1933); hint location-only",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -89522,6 +90134,14 @@
   "e444bef9c9f4a1ec": {
    "verdict": "ok",
    "note": "sin(11pi/12)=sin(pi-pi/12)=sin(pi/12)=(sqrt6-sqrt2)/4; Math.sin vs key agree to 1e-12. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "e4452a57f2245f98": {
+   "verdict": "ok",
+   "note": "6.4 author reading: source fs-id1282027 key C; zones reserve->proliferative->maturation->calcified moving toward diaphysis (fs-id1709561, fs-id1212983, fs-id1265774), reversed toward epiphysis = C",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e4483626c1129577": {
    "verdict": "ok",
@@ -91335,6 +91955,10 @@
     "result": "agrees"
    }
   },
+  "e93980ae2c103887": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1640031, model answer = solution fs-id1968878 verbatim; checkpoints are its clauses"
+  },
   "e9453f64ea1acfee": {
    "verdict": "ok",
    "note": "KC 5 23.4 § Trypanosomes, m66556 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -92959,6 +93583,14 @@
   "ed69934da5262931": {
    "verdict": "ok",
    "note": "body cloze fs-id1640324 'The skin and its accessory structures make up the integumentary system'; accept 'accessory organs' = fs-id1178368 wording",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ed6cf9c46c65636b": {
+   "verdict": "ok",
+   "note": "source Review Question; key re-read against CNXML solution (line 81: Sesamoid bones are found embedded in ________.)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -94744,6 +95376,14 @@
    "note": "source exercise fs-idm129887328 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f2892a53c476d0ad": {
+   "verdict": "ok",
+   "note": "fs-id2036066 key B trabecular bone; body fs-id1804989",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -98945,6 +99585,14 @@
   "fc991be2b18b578b": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idm63567952; model answer reuses the source solution's wording, with its inline P_O2 math spans rewritten as the section's own P<sub>O₂</sub> inline form. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "fc9959d101f67e2c": {
+   "verdict": "ok",
+   "note": "6.4 author reading: body cloze fs-id1500108: rate of growth is controlled by hormones",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fc9f0b28557bce89": {
    "verdict": "ok"

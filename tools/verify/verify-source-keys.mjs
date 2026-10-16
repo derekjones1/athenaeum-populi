@@ -737,6 +737,48 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1842,
     reason: 'the source distractor "meylin" is a misspelling of "myelin" (the §4.5 module m46057 defines myelin in its glossary; m46058 never prints the word); the page prints "myelin" and the footer discloses the one-word correction',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md',
+    exercise: 'fs-id1521592',
+    kind: 'options',
+    erratum: 1930,
+    reason: 'the source distractor "compact bone" is a second correct completion of "The diaphysis contains ________" — the module says "The walls of the diaphysis are composed of dense and hard compact bone"; the page prints "articular cartilage" in its place (key "fat stores" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md',
+    exercise: 'fs-id320806',
+    kind: 'key',
+    erratum: 1931,
+    reason: 'the source keys "osteocytes" for "Which of the following cells are capable of undergoing mitosis?", but the module says osteocytes "lack mitotic activity" and that osteogenic cells "are the only bone cells that divide"; the page keys "osteogenic cells"',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md',
+    exercise: 'fs-id1107187',
+    kind: 'key',
+    erratum: 1932,
+    reason: 'the source keys "osteoprogenitor cells" for "Which cells do not originate from osteogenic cells?", but the module says osteoclasts "originate from monocytes and macrophages, two types of white blood cells, not from osteogenic cells", and osteoprogenitor cells are the osteogenic cells themselves; the page keys "osteoclasts"',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md',
+    exercise: 'fs-id1419507',
+    kind: 'options',
+    erratum: 1933,
+    reason: 'the source distractor "lamellae" is a second correct answer to "Which of the following are found in compact bone and cancellous bone?" — the module\'s own spongy-bone figure (606_Spongy_Bone) labels lamellae inside a trabecula and its alt describes "concentric lamellae" there; the page prints "perforating canals" in its place (the body places them only in compact bone; key "lacunae" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md',
+    exercise: 'fs-id1514097',
+    kind: 'solution',
+    erratum: 1939,
+    reason: 'the source model answer says secondary ossification centers "form later, and there are two of them, one in each epiphysis", a fixed count the book\'s own §8.5 module m46376 contradicts ("Small bones, such as the phalanges, will develop only one secondary ossification center… Large bones, such as the femur, will develop several"); the page\'s model answer says they form later, usually after birth, in the epiphyses — typically one in each epiphysis, with a phalanx having one and the femur several — and the rubric checkpoint grades the location, not the count',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure.md',
+    exercise: 'fs-id1509482',
+    kind: 'options',
+    erratum: 1941,
+    reason: 'the source distractor "bone remodeling" is a second correct answer to "Which of the following occurs in the spongy bone of the epiphysis?" — the module\'s own spongy-bone figure (606_Spongy_Bone) boxes the femoral head and draws osteoclasts and osteoblasts on a trabecula there, and the body says "Osteoclasts are continually breaking down old bone while osteoblasts are continually forming new bone"; the page prints "osteon formation" in its place (the module says "Compact bone is dense and composed of osteons, while spongy bone is less dense and made up of trabeculae", whose osteocytes "are not arranged in concentric circles"; key "hematopoiesis" unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

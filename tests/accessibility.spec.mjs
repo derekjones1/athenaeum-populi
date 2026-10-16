@@ -113,6 +113,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/anatomy-physiology/05-the-integumentary-system/01-layers-of-the-skin/',
   },
   {
+    name: 'anatomy-physiology section page (Aging callout with a figure inside it, Interactive Link callout, two sortbins, nine mediafigures with longdescs)',
+    path: '/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',
