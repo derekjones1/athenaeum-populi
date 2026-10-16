@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 6,
-      "mappedSections": 35,
+      "localChapters": 7,
+      "mappedSections": 40,
       "units": [
         {
           "index": 1,
@@ -566,6 +566,51 @@
       "moduleId": "m46295",
       "sourceTitle": "Calcium Homeostasis: Interactions of the Skeletal System and Other Organ Systems",
       "moduleSha256": "74897d1caa81591f0373fe43eb44754d142b462da5027d3954a7d1b3f8b0fd8d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/01-divisions-of-the-skeletal-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "7.1",
+      "moduleId": "m46344",
+      "sourceTitle": "Divisions of the Skeletal System",
+      "moduleSha256": "44534233b13ac87a4326537f1f84cc4bc500f70d936c7cfec874f8af90af5cf5"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "7.2",
+      "moduleId": "m46355",
+      "sourceTitle": "The Skull",
+      "moduleSha256": "10ad76c5dea46add758f5626a97c873cea266af46536f365d45dc76748775efa"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/03-the-vertebral-column.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "7.3",
+      "moduleId": "m46352",
+      "sourceTitle": "The Vertebral Column",
+      "moduleSha256": "b51919d4054f97a5188cb4dc1bcaf576c3e5b8b40f002bd9565ebd7927f8819d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/04-the-thoracic-cage.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "7.4",
+      "moduleId": "m46350",
+      "sourceTitle": "The Thoracic Cage",
+      "moduleSha256": "67e208606f3de542da1a5c222a8c4ef01941970bfe72b395b22d9b8fe4c0ebd9"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/05-embryonic-development-of-the-axial-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "7.5",
+      "moduleId": "m46348",
+      "sourceTitle": "Embryonic Development of the Axial Skeleton",
+      "moduleSha256": "00b7c1b994f1ae691180a35cfcea303efae6f1f55003766696c4096655fc39bf"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

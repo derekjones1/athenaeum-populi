@@ -106,8 +106,11 @@ them.
    as a list; no `authoring_status`). **Delegated:** one Clerk (Sonnet),
    prompt = the chapter 1 and 2 landings as exemplars (Sections bullets are
    plain text, never links), the intro module id, the section list, the
-   OpenStax deep link; it views the splash image for the alt. Launched
-   together with the step-6 drafter.
+   OpenStax deep link. The splash alt is image work (AGENTS.md rule 2):
+   the parent views the image and writes the alt itself, BEFORE reading the
+   Clerk's draft — on chapter 7 the parent tightened a Clerk alt whose
+   colour-by-division reading was wrong, and the claim pass caught it.
+   Launched together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Clerk (Sonnet) fills PART A (every
    factual field, from the `keys` files and the raw CNXML; every count an
@@ -131,6 +134,10 @@ them.
    `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md`
    for every form Part C names and quote the rule beside the decision.
    Part B quotes the extractor's key line verbatim and never infers a key.
+   A sentence Part C names as the one that fixes an Interactive Link answer
+   is grepped in the raw CNXML OUTSIDE the `<solution>` before it is named —
+   chapter 7's Part C named the item's own solution sentence as "the Chapter
+   Review"; the author found the body sentence instead.
    Part C never names a shortcode parameter it has not checked against
    `SHORTCODE_PARAMS` ("the figure title as the figure's title" asked for a
    `mediafigure` param that does not exist, *chapter 4*).
@@ -171,6 +178,8 @@ range, "read `$SP/author.md` first". Names cannot contain a dot
 
 As each author reports: launch its checker (one Author-kind agent per
 section, `model: "opus"`, prompt = page path + "read `$SP/checker.md`").
+The prompt never names the author's report file — `checker.md` forbids
+reading it, and a prompt that names it invites the read *(chapter 7)*.
 **A prompt line naming one item for "specific attention" narrows a checker
 to that item alone** — say "run the FULL pass, and in addition…", never a
 bare pointer. When a chapter's last page is on disk: launch its claim-pass
@@ -266,7 +275,14 @@ adjudicating. Its results are merged in §4 step 5. A page edited after its solv
 and solve it again — or, for a one-item edit after the solve, remap the
 solver's answer to the new hash with a parent note, and for a form-only
 edit write a one-item answers file. Adjacent answers shifted by one (a hash
-slip) are realigned from the solver's `note`s, not re-solved. After a
+slip) are realigned from the solver's `note`s, not re-solved. The packets
+hold the auto-graded items only: a `selfcheck` model-answer correction
+re-hashes nothing in the solve, and an option swap re-hashes one item —
+diff a fresh `solve:emit` into a second directory against the first to
+list exactly which hashes moved *(chapter 7: two of 63)*. Graded
+Interactive Link `selfcheck`s read "unmatched" in `verify-source-keys`
+on every chapter of this book; that is normal and no `solution`
+deviation is owed for one. After a
 sweep, re-solve only what the carry rule in AGENTS.md ("The answer
 ledger") does not carry — `npm run ledger:carry` applies it; snapshot
 BEFORE the sweep's first edit, and one snapshot serves every carry plan in
@@ -342,7 +358,10 @@ the session.
 6. `npm run check:external-links` BEFORE the errata drafter (step 0b), so
    dead-link errata land in the run's block (a 403 is a bot wall and stays
    linked; a 404 through the `openstax.org/l/` redirect is un-linked and
-   filed). Then `npm run baseline:update`; `npm test > $SP/test-final.log
+   filed). The checker can report a 404 against the wrong URL on a page
+   that carries two cdc.gov links: the page's author confirms each with
+   its own full GET before un-linking *(chapter 7: the printed URL
+   answered 200; the References link was the dead one)*. Then `npm run baseline:update`; `npm test > $SP/test-final.log
    2>&1`; read the tail. `npm run source:verify`. Then `npm run build >
    $SP/build.log 2>&1 && npm run check:build >> $SP/build.log 2>&1`; read
    the tail — a green `npm test` is not a buildable site (a bare `$4

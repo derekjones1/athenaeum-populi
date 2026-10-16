@@ -1651,6 +1651,10 @@
    "verdict": "ok",
    "note": "re-derived: f(x)=(x-4)^2=x^2-8x+16, vertex (4,0) on lattice; matches CNXML Try It (fs-id1169148837213); grid 0..8/-2..8 gives 5 reachable points (gpcheck slack 2)."
   },
+  "03a0dce7d5dfd981": {
+   "verdict": "ok",
+   "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — Why may a basilar fracture be life threatening?"
+  },
   "03a7477e822a5e24": {
    "verdict": "ok",
    "note": "body cloze from § Etiology: \"Robert Koch was the first scientist to specifically demonstrate the causative agent of a disease (anthrax) in the late 1800s.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -1758,6 +1762,14 @@
   "03f39365b3da209e": {
    "verdict": "ok",
    "note": "source exercise fs-id1167583620629 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "03f9ea3cd86177f3": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2346368 hyoid bone; body-bolded in fs-id2228791",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -2474,6 +2486,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "05a1584889aba4bf": {
+   "verdict": "ok",
+   "note": "7.5 Critical Thinking fs-id1416796; model answer = solution fs-id1933674 verbatim; checkpoints copied from it."
   },
   "05a1ee11a9b57795": {
    "verdict": "ok",
@@ -3737,6 +3753,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "08c385caa0d805fa": {
+   "verdict": "ok",
+   "note": "7.5 body cloze, m46348 fs-id1547037: 'The fontanelles are the soft spots on an infant’s head.' Key soft spots; grader folds soft spot.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "08c437e0f868a325": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3909,6 +3933,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "093a16190e0fbceb": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"ramus\" — The infratemporal fossa is located below the zygomatic arch and deep to the ____",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5080,6 +5112,14 @@
   "0c1683337d38a938": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0c1bc454698120e7": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1599794 sternum; body-bolded in fs-id2228791",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8364,6 +8404,14 @@
   "140a45d318c9daf9": {
    "verdict": "ok",
    "note": "CT fs-idp76047552: model answer transcribes solution fs-idp64739856 verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "140a93f2a3ff3c95": {
+   "verdict": "ok",
+   "note": "Review fs-id1888088, source key B; body fs-id2023511 'forms the vertical, central axis of the body'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "140c12c02b47a808": {
    "verdict": "ok",
@@ -12155,6 +12203,10 @@
     "result": "agrees"
    }
   },
+  "1c8d67a40fed8cce": {
+   "verdict": "ok",
+   "note": "7.5 Critical Thinking fs-id1384205; model answer = solution fs-id1891522 verbatim; checkpoints copied from it."
+  },
   "1c939fb08c6d3313": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13623,6 +13675,14 @@
     "result": "agrees"
    }
   },
+  "2007542fb899c8c2": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2252996 scoliosis",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2009e5669dce6086": {
    "verdict": "ok",
    "note": "KC 1 4.1 § body Epithelial Membranes (fs-id1514999), m46046",
@@ -13816,6 +13876,14 @@
   "208573e57e50c44b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "208abe668bd19678": {
+   "verdict": "ok",
+   "note": "Review fs-id2637677, source key D 'vertebral column'; body fs-id2228791",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14747,6 +14815,14 @@
   "23212861d58adf8b": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L381 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "232ce50edcd2e4eb": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"air-filled spaces found within the frontal, maxilla, sphenoid, and ethmoid bones only\" — The paranasal sinuses are ________.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "23366b99716cf6f9": {
    "verdict": "ok",
@@ -17880,6 +17956,14 @@
     "result": "agrees"
    }
   },
+  "2b3038027debf3f1": {
+   "verdict": "ok",
+   "note": "Review fs-id2079599 key A",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b3451b03215220d": {
    "verdict": "ok",
    "note": "glossary recall: lamina (fs-idp51486288) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -18508,6 +18592,14 @@
   "2cd8b658e903c84e": {
    "verdict": "ok",
    "note": "key-term recall: cementum; printed in § Anatomy and Normal Microbiota of the Oral Cavity: \"The root of the tooth and some of the crown are covered with cementum , which works with the periodontal ligament to anchor the tooth in pl…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2cd959b13edd5d02": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"pterion\" — An H-shaped suture junction region that unites the frontal, parietal, temporal, ",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -22502,6 +22594,14 @@
     "result": "agrees"
    }
   },
+  "36e5dcf01b166fbe": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1339348 water content",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "36e628e093888901": {
    "verdict": "ok",
    "note": "selfcheck matches CNXML exercise fs-idm71000692 solution verbatim (Critical Thinking Q3: metamorphosis and gas exchange). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -23439,6 +23539,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: Practice item, source exercise fs-id1165134159676. Computed 3x3 inverse via cofactor/adjugate in exact rational arithmetic: det=209, A^-1 row1=[47/209,-57/209,69/209]. Matches source's printed (1/209)[[47,-57,69],...] exactly (unreduced fractions kept, same value).",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "395313db8bca45de": {
+   "verdict": "ok",
+   "note": "7.5 glossary recall fs-id2170415 somite; stem = glossary meaning; body bolds somite (fs-id2402689).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -24685,6 +24793,14 @@
     "result": "agrees"
    }
   },
+  "3c6610222708ae9a": {
+   "verdict": "ok",
+   "note": "sortbins re-read against m46355: every item binned by the module sentences listing the eight brain-case bones and the paired/unpaired facial bones — Sort each bone under the part of the skull it belongs to.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3c66c22279130d17": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24747,6 +24863,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "3ca760cdfe81a4a1": {
+   "verdict": "ok",
+   "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — Describe the anterior, middle, and posterior cranial fossae and their boundaries"
   },
   "3ca9d642315650e7": {
    "verdict": "ok",
@@ -24950,6 +25070,14 @@
   "3d1a4d850e69a145": {
    "verdict": "ok",
    "note": "a_n=1.25*(-4)^(n-1) for n=1..4, computed by loop: 1.25,-5,20,-80 (source Algebraic #12, printed solution matches). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3d1a8787ec7b468c": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"peripheral vision\" — The medial walls of the two orbits are parallel to each other but each lateral w",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3d268bacfa325fb1": {
    "verdict": "ok",
@@ -25210,6 +25338,14 @@
   "3de7ea03d0f8bbf1": {
    "verdict": "ok",
    "note": "KC 1 5.1 § Chromalveolata, m58802 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3df178e3b83ff01f": {
+   "verdict": "ok",
+   "note": "7.5 body cloze, m46348 fs-id1652582: 'The manubrium and body of the sternum are converted into bone first, with the xiphoid process remaining as cartilage until late in life.' accept xiphoid.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -26129,6 +26265,14 @@
     "result": "agrees"
    }
   },
+  "3fc21fc27d40eee3": {
+   "verdict": "ok",
+   "note": "body cloze, m46344 fs-id2081511: '...important minerals such as calcium and phosphate.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3fccc9ea75290110": {
    "verdict": "ok",
    "note": "selfcheck 'What cells are responsible for GVHD?' — model answer is fs-id1167663537564's APC-recognition clause plus the following sentence's donor-T-cell-attack clause; two adjacent sentences, so kept as selfcheck rather than graded. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -26172,6 +26316,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3fe6a47b3b1efe85": {
+   "verdict": "ok",
+   "note": "CT fs-id1389511, model = solution fs-id1397476 verbatim; rubric clause 5 keeps 'Ribs 8–10' scope"
   },
   "3fe7fddbcf5096a8": {
    "verdict": "ok",
@@ -28051,6 +28199,14 @@
     "result": "agrees"
    }
   },
+  "44664ad2b1a063d1": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"sella turcica\" — Parts of the sphenoid bone include the ________.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4471b7606406d2ca": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29221,11 +29377,27 @@
     "result": "agrees"
    }
   },
+  "472610c6341675f2": {
+   "verdict": "ok",
+   "note": "7.5 Review fs-id1894914, source key B (fs-id1401274) unchanged; option A replaced: source 'intramembranous ossification, which forms the facial bones.' is true by §6.4 (m46301 fs-id1173842) -> 'intramembranous ossification, which forms the vertebrae' (false: fs-id1898924 vertebrae ossify by endochondral ossification); DISCLOSED_DEVIATIONS kind options, erratum 1958; B only supportable; C, D contradicted by fs-id1898924/fs-id1547037.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "47299c2315efa851": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "472b8d974fefc813": {
+   "verdict": "ok",
+   "note": "Review fs-id1282419 key B",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -29526,6 +29698,14 @@
   "48101d522dd16451": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "48169cc1613d97dd": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"calvaria\" — The rounded top of the skull, also called the skullcap, is the ________.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33968,6 +34148,10 @@
     "result": "agrees"
    }
   },
+  "53a258ba1358b4b5": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1226922: source solution, anterior->posterior per module fs-id1475033/fs-id2251576 (C1), Source note after item"
+  },
   "53ae0107dab2fd3d": {
    "verdict": "ok",
    "note": "source exercise fs-id1171360229175 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -34726,6 +34910,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5579ffc95db5d0bb": {
+   "verdict": "ok",
+   "note": "CT fs-id1700964, model = solution fs-id1432864 with claim correction (parent-accepted F7): 'largest portion' -> 'most posterior extent' per fs-id2251383, glossary fs-id1883617, summary fs-id1701760; Source note after the item"
   },
   "558b38a78a5c3738": {
    "verdict": "ok",
@@ -35503,6 +35691,14 @@
   "578a8c406241ed0b": {
    "verdict": "ok",
    "note": "author-built from § Narrow Range of Atmospheric Pressure: \"In all cases, DCS is brought about by a reduction in barometric pressure.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "578e217bbcd23ba5": {
+   "verdict": "ok",
+   "note": "Review fs-id2005953, source key D; fs-id1879764 'The costal cartilage from each of these ribs attaches directly to the sternum'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -37777,6 +37973,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5d1dfea1eec11dfd": {
+   "verdict": "ok",
+   "note": "Review fs-id1752256 key C",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5d24ce3f41c8e1df": {
    "verdict": "ok",
    "note": "KC 1 1.2 § Bergey's Manuals — Micro Connection: Same Name, Different Strain, m58782 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -38544,6 +38748,10 @@
   "5ed34c1bb01fc080": {
    "verdict": "ok"
   },
+  "5ee41a73cff1bdba": {
+   "verdict": "ok",
+   "note": "CT fs-id2024686, model = solution fs-id2097029 verbatim"
+  },
   "5ee42c4fefcbb473": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -38859,6 +39067,10 @@
     "result": "agrees"
    }
   },
+  "5fde0f398c8bf05e": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2276568, model answer = solution fs-id2230632 verbatim; hint now points at the second paragraph of the page"
+  },
   "5fde4cb925fe825b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38880,6 +39092,14 @@
    "note": "body cloze from § Organic Precursors: \"During digestion, digestible carbohydrates are ultimately broken down into glucose and used to provide energy through metabolic pathways.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5febcb476d6405c6": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"butterfly\" — The large, diagonally positioned petrous ridges give the middle cranial fossa a ",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -39234,6 +39454,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "60ebe2195203ab67": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2080519: source solution verbatim; fixed by fs-id1390282"
   },
   "60ee0af1c7d35cc3": {
    "verdict": "ok",
@@ -41446,6 +41670,10 @@
     "result": "agrees"
    }
   },
+  "67ab2cd012c96234": {
+   "verdict": "ok",
+   "note": "7.5 Critical Thinking fs-id1976228; model answer = solution fs-id1845535 verbatim except 'The facial bones and base of the skull arise' -> 'The base of the skull arises' (claim correction F1: §6.4 m46301 fs-id1173842 forms the flat bones of the face by intramembranous ossification); stem verbatim, Source note after the item; checkpoints copied."
+  },
   "67b246301979aca9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41630,6 +41858,10 @@
    "verdict": "ok",
    "note": "KC 5 29.5 § body The Evolution of Flight in Birds (fs-idm634017), m66592 — parent re-read against the module"
   },
+  "683d510bc8d429f9": {
+   "verdict": "ok",
+   "note": "CT fs-id2202569 solution verbatim"
+  },
   "683f5cc7d9617670": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -41724,6 +41956,14 @@
   "6867207cf382effd": {
    "verdict": "ok",
    "note": "Leading term -2x^2, leading coefficient -2. Matches CNXML fs-id1165134380913 (\"Coefficient = -2\"). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "6869125813a90f03": {
+   "verdict": "ok",
+   "note": "Review fs-id1927640, source key C 'supports trunk of body'; caption: axial skeleton supports the head, neck, back, and chest",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "686929be50ae1d8b": {
    "verdict": "ok",
@@ -42044,6 +42284,14 @@
   "6946051d84526a00": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "6948adeab04bae04": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1917504 sacral hiatus",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "694ae5ef67a3d579": {
    "verdict": "ok",
@@ -42587,6 +42835,14 @@
    "verdict": "ok",
    "note": "199e^(-.625t)=1 -> t=ln199/.625=8.469 -> 8.5; key p1316 #59"
   },
+  "6ae941f037ed541a": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1999423 herniated disc; accepts module-printed variants",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6aeb8d51d45b575a": {
    "verdict": "ok",
    "note": "KC 5 24.1 § Anatomy and Normal Microbiota of the GI Tract, m58924",
@@ -42646,6 +42902,14 @@
   "6b0ec46a4a828335": {
    "verdict": "ok",
    "note": "unkeyed CNXML exercise fs-id1167662418534 (section class=critical-thinking, no <solution>). Stays a selfcheck: the module never discusses minimal-glucose vs. trypticase-soy media, so the answer requires applying the genotype/phenotype/environment principle (fs-id1167662406607) to a new scenario the module does not itself describe — an inference, not a single named artifact. Model answer and rubric built only from that paragraph's sentences plus the question's own scenario terms. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "6b14f17b1af4b1c9": {
+   "verdict": "ok",
+   "note": "Review fs-id2267142, source key A; fs-id2251383 tubercle 'articulates with the facet located on the transverse process'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6b20b7a56876fd84": {
    "verdict": "ok",
@@ -42971,6 +43235,14 @@
   "6c46c4c9cc9fde13": {
    "verdict": "ok",
    "note": "m66487 solution fs-id1506540 (round/wrinkled test cross, rr x unknown, 3 round offspring) matches page verbatim (minor added comma only). Re-derived: heterozygous parent x rr gives 1/2 round per offspring, (1/2)^3 = 1/8, matching the stated one-eighth probability. CHECKS clauses restate the solution with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "6c4c37c910c5f5fc": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2265115 'There are 126 bones in the appendicular skeleton of an adult.'; distractors 80, 206, 22 are the module's other counts",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6c56c231bdb1d5ba": {
    "verdict": "ok",
@@ -44955,6 +45227,14 @@
     "result": "agrees"
    }
   },
+  "71584f6a06d02e0f": {
+   "verdict": "ok",
+   "note": "7.5 body cloze, m46348 fs-id2402689: 'The sclerotomes consist of an embryonic tissue called mesenchyme, which will give rise to the fibrous connective tissues, cartilages, and bones of the body.' Key sclerotomes; grader folds sclerotome.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "715b944b0d6aaaed": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -46218,6 +46498,14 @@
   "749f00787c305ae1": {
    "verdict": "ok"
   },
+  "74a1abc280e084ff": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2464619 'The thoracic cage (rib cage) forms the thorax (chest) portion of the body'; distractors neck (fs-id1989589) and abdomen (fs-id1879764), module body regions",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "74a1fbbbd274a1ca": {
    "verdict": "ok",
    "note": "body cloze from § Effects of Mutations on Protein Structure and Function: \"Because ribosomes read the mRNA in triplet codons, frameshift mutations can change every amino acid after the point of the mutation.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -47009,6 +47297,14 @@
    "verdict": "ok",
    "note": "m66491 critical-thinking solution fs-id2491136: 'The Chromosomal Theory of Inheritance proposed that genes reside on chromosomes. The understanding that chromosomes are linear arrays of genes explained linkage, and crossing over explained recombination.' Page model answer is verbatim. Four CHECKS clauses each restate a fragment of that sentence, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "76659fc8695e963e": {
+   "verdict": "ok",
+   "note": "author sortbins: Skull, Ear ossicles, Sacrum and coccyx -> Axial (fs-id2228791); upper limbs, lower limbs -> Appendicular (fs-id2265115)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "766752ea471cfeb0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -47028,6 +47324,14 @@
   "767365bf14842d71": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "767d942ef7497dbc": {
+   "verdict": "ok",
+   "note": "Review fs-id2051547 key A seven vertebrae",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47218,6 +47522,14 @@
   "76fc3bb4bbf3a570": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "76ffe6ad00656c6f": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1248877 neck of the rib; body fs-id2251383 'Lateral to the head is the narrowed neck of the rib'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48019,6 +48331,14 @@
    "note": "glossary recall: mycetismus (fs-idm186127504) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "78ecf0101cb35bd4": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"jugular foramen\" — An irregularly shaped opening located in the lateral floor of the posterior cran",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -50132,6 +50452,14 @@
   "7d88a5896d4825cc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7d8ae7809d96df61": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"foramen lacerum\" — An irregular opening in the base of the skull, located inferior to the exit of t",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53980,6 +54308,14 @@
     "result": "agrees"
    }
   },
+  "878170e41f8c4d48": {
+   "verdict": "ok",
+   "note": "7.5 Review fs-id1888187, source key D (fs-id1917835); options verbatim, source order; body fs-id1547037 + caption + glossary support D only.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "87899fdf650f1351": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55903,6 +56239,14 @@
     "result": "agrees"
    }
   },
+  "8caaecb9510e40c3": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2176036: 33 vertebrae",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8cab18c67651f41c": {
    "verdict": "ok",
    "note": "source exercise fs-id1167741301615 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -56687,6 +57031,10 @@
     "result": "agrees"
    }
   },
+  "8eb479b21a88992b": {
+   "verdict": "ok",
+   "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — Identify the major sutures of the skull, their locations, and the bones united b"
+  },
   "8eb80acdce8ab5c0": {
    "verdict": "ok",
    "note": "Summary cloze from m66497 section.summary sentence 3 ('Genes are used to make mRNA by the process of transcription; mRNA is used to synthesize proteins by the process of translation.'); blanks the one content phrase 'transcription', which does not appear elsewhere in the surviving prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -56981,6 +57329,10 @@
     "result": "agrees"
    }
   },
+  "8f7128ec9636d499": {
+   "verdict": "ok",
+   "note": "CT fs-id1480270 solution verbatim minus Answer: prefix"
+  },
   "8f7518b7c19ba90e": {
    "verdict": "ok",
    "note": "Review Question eip-788, source key B matches section text (\"Enhancers and silencers affect the efficiency of transcription but are not necessary for transcription to proceed\"). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -57117,6 +57469,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8fc907297859934d": {
+   "verdict": "ok",
+   "note": "figure-keyed selfcheck, 701_Axial_Skeleton-01: Clavicle and Scapula under 'Pectoral (shoulder) girdle', 'Pelvic girdle (hip bones)' label; girdles-attach-limbs from glossary fs-id1040329; 2 checkpoints (key-shading checkpoint removed per checker)"
   },
   "8fd18ec9504f25e8": {
    "verdict": "ok",
@@ -58014,6 +58370,14 @@
    "verdict": "ok",
    "note": "f(x)=2ln(x+3)-1: asymptote x=-3 matches the graphed asymptote; checked f(0)=2ln3-1≈1.2, f(5)=2ln8-1≈3.16 against the plotted curve's height at those x-values (visually consistent with the source PDF figure). Matches CNXML eip-id1525883/ti_04_04_11 solution f(x)=2ln(x+3)-1. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "923d4a623b2cfc80": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1374982 ribs; body-bolded in fs-id2228791",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "92411b37debff7cd": {
    "verdict": "ok",
    "note": "m66378 exercise fs-id1584266: keyed B, 'Ions are charged particles and cannot diffuse through the hydrophobic interior of the membrane,' matches the source solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -58422,6 +58786,14 @@
    "note": "KC 1 1.2 § body Adaptation (adaptation), m66428 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9342827c868887f3": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1859011 elastic fibers",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -58911,6 +59283,14 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9484be7ec60b891a": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"inferior nasal concha\" — Which of the nasal conchae is an independent bone of the skull?",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -60203,6 +60583,14 @@
    "verdict": "ok",
    "note": "m66601 exercise fs-idp14544880 (Critical Thinking): model answer reuses the source solution verbatim; checkpoints decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "97addb1741e53158": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1477724 dens; accept dens of axis (723 label)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "97b413f3885e1c60": {
    "verdict": "ok",
    "note": "f(x)=x^3-2x-15 is a polynomial; polynomial functions are continuous on all of (-infty,infty). Matches source exercise fs-id1165135684888 solution 'Continuous on (-infty,infty)'. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -60654,6 +61042,14 @@
   "98fdc668fba051ac": {
    "verdict": "ok",
    "note": "KC 4 18.5 § Variolation and Vaccination, m58888 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "98fdd76f63d37dc4": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"maxillary sinus\" — The largest sinus is the ________.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -61375,6 +61771,14 @@
     "result": "agrees"
    }
   },
+  "9ad9298bad015a57": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1367709 whiplash",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9ade4db617b6695c": {
    "verdict": "ok",
    "note": "Review Question eip-794, solution eip-637: keyed option B, DNA pol II. The section states DNA pol I 'is an important accessory enzyme in DNA replication, and along with DNA pol II, is primarily required for repair' — DNA pol II is the option among the four (DNA ligase, DNA pol II, primase, DNA pol I) most specifically tied to repair fidelity by that sentence, so many replication errors point to it; not contradicted by the section's own text. Reviewed, not an erratum. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -61741,6 +62145,14 @@
   "9be826ed74a85ded": {
    "verdict": "ok"
   },
+  "9bf05559d13b3fc2": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"moisturize\" — The nasal conchae serve to swirl the incoming air, which helps to warm and _____",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9bf65a4b81edef3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62031,6 +62443,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "9cbb12f7f406eed8": {
+   "verdict": "ok",
+   "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — Define and list the bones that form the brain case or support the facial structu"
   },
   "9cbe09751a4dce94": {
    "verdict": "ok",
@@ -62567,6 +62983,14 @@
    "verdict": "ok",
    "note": "CNXML fs-id1167663963423 (Short Answer, source prints no key). Stays a selfcheck: honest answer assembles the light-harvesting-complex paragraph's absorption sentence and its energy-transfer-to-reaction-center sentence (two sentences, not one). Model answer and rubric from § Photosynthetic Structures in Eukaryotes and Prokaryotes. Unchanged by the checker's fix round. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "9e0537ecd39ab6d8": {
+   "verdict": "ok",
+   "note": "Review fs-id2573730, source key D; fs-id1392096 confirms",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9e06799cdc2ae44d": {
    "verdict": "ok"
   },
@@ -62800,6 +63224,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "9ea7693e60a8dd1b": {
+   "verdict": "ok",
+   "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — Describe the parts of the nasal septum in both the dry and living skull."
   },
   "9ea90e8558ddcd87": {
    "verdict": "ok",
@@ -63080,6 +63508,14 @@
   "9f5a7288776a8c91": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "9f5bd7e1a48c414d": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"muscles\" — The hyoid bone is located in the upper neck and does not join with any other bon",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9f5d9cc17323c343": {
    "verdict": "ok",
@@ -65309,6 +65745,14 @@
     "result": "agrees"
    }
   },
+  "a47ed77da36993a4": {
+   "verdict": "ok",
+   "note": "7.5 summary cloze fs-id1351784: 'The notochord largely disappears, but remnants of the notochord contribute to formation of the intervertebral discs.' accept intervertebral disks|intervertebral.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a48216a8238ef4a4": {
    "verdict": "ok"
   },
@@ -65529,6 +65973,14 @@
   "a51b48b957c23fe4": {
    "verdict": "ok",
    "note": "author-built from § Transduction: \"During the process of excision from the host chromosome, a phage may occasionally remove some bacterial DNA near the site of viral integrat…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a522e14879c8e4c1": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"frontal bone\" — Which bone forms the roof of the orbit?",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66692,6 +67144,14 @@
   "a815fa215c653e95": {
    "verdict": "ok",
    "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "a81767c350aa4331": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"parietal bone\" — Which of the following is a bone of the brain case?",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a81f515e11255c34": {
    "verdict": "ok",
@@ -69579,6 +70039,14 @@
    "verdict": "ok",
    "note": "x^2=8y: p=2, latus endpoints (2p,p)=(4,2) and (-2p,p)=(-4,2); matches source TI2. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "afa713e0c5828cf4": {
+   "verdict": "ok",
+   "note": "Review fs-id1855309, source key B; fs-id1392096 'The manubrium and body join together at the sternal angle'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "afad86aa599ac249": {
    "verdict": "ok",
    "note": "Bio 23.3 Ulva/Caulerpa selfcheck: model answer restored verbatim (\"actually are\") to source solution fs-idp73414448 (m66555); parent re-read Sep 23 2026"
@@ -70143,6 +70611,14 @@
   "b146796bfd444f3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b146a68d0e7ce41c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1900010 spinal column",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -72702,6 +73178,14 @@
    "verdict": "ok",
    "note": "#39 (fs-id2155191): cos58°+cos12°=2cos35°cos23°; computed in node: 2*cos(35°)*cos(23°)=1.5080668649670106, rounds to 1.5081, matches CNXML solution '2cos(35°)cos(23°), 1.5081'."
   },
+  "b7592b83a144f20b": {
+   "verdict": "ok",
+   "note": "sortbins from fs-id2157005/fs-id2266978/fs-id2135102; each label true of exactly one region",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b75f9030fc63140f": {
    "verdict": "ok",
    "note": "source exercise fs-id1172098544345 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -72961,6 +73445,14 @@
   "b7ef245899aeeda1": {
    "verdict": "ok",
    "note": "Microbiology 5.1 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the historical informal groupings and the evolutionary-history basis of current protist taxonomy)"
+  },
+  "b7ef884e3867144e": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"hypoglossal canal, which is located in the posterior cranial fossa\" — The bony openings of the skull include the ________.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b7f65df26837e19d": {
    "verdict": "ok",
@@ -73930,6 +74422,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "ba580096b01a7729": {
+   "verdict": "ok",
+   "note": "CT fs-id1961118 solution verbatim"
   },
   "ba5f6d5911fff6bb": {
    "verdict": "ok",
@@ -78026,6 +78522,10 @@
     "result": "agrees"
    }
   },
+  "c4b4deadcba9bebf": {
+   "verdict": "ok",
+   "note": "CT fs-id1422627, model = solution fs-id1976779 verbatim"
+  },
   "c4b63b3b9d24bf71": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78390,6 +78890,14 @@
   "c56dca002cdc9af6": {
    "verdict": "ok",
    "note": "body cloze from § Processes and Patterns of Evolution: \"For example, flight has evolved in both bats and insects, and they both have structures we refer to as wings, which are adaptations to flig…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c57054e3fe84d7c5": {
+   "verdict": "ok",
+   "note": "cloze from m46350 fs-id2237365: 'These cartilages are made of hyaline cartilage and can extend for several inches.' (referent 'The costal cartilages')",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79002,6 +79510,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c72ff2328b6be19a": {
+   "verdict": "ok",
+   "note": "CT fs-id1488651 solution verbatim"
   },
   "c731064456b3ae2b": {
    "verdict": "ok"
@@ -79987,6 +80499,10 @@
     "by": "fable-solver",
     "result": "agrees"
    }
+  },
+  "c9e2b4276245442d": {
+   "verdict": "ok",
+   "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — In the video of the rotating skull above, which bone (yellow) is centrally locat"
   },
   "c9e73c409579ec3c": {
    "verdict": "ok",
@@ -81773,6 +82289,14 @@
     "result": "agrees"
    }
   },
+  "ce5d52b0fbf68f1e": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"has the foramen rotundum, foramen ovale, and foramen spinosum\" — The middle cranial fossa ________.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ce6a176e7a6226b9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -83386,6 +83910,14 @@
     "result": "agrees"
    }
   },
+  "d32bf3b133c1b993": {
+   "verdict": "ok",
+   "note": "body cloze, m46344 fs-id1902734: 'The lower portion of the skeleton is specialized for stability during walking or running.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d32d56e115dbec36": {
    "verdict": "ok",
    "note": "RE#39 m49353 (fs-id1165137863121, intercepts/asymptotes/sketch -> asymptotes part): den (x+2)(x-1) zero at 1,-2 with num -24,-15 nonzero -> VA x=1,x=-2; equal degrees -> HA y=3/1=3; key p1298 #39 prints exactly these with the graph"
@@ -83651,6 +84183,14 @@
    "note": "glossary recall: haze-effect cooling (fs-idp7436272) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "d3ee6c2a0a6638e4": {
+   "verdict": "ok",
+   "note": "cloze from fs-id1392096: '...the second rib is the highest rib that can be identified by palpation.' accept palpating",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -84098,6 +84638,14 @@
   "d4d8cd7633d6517f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d4dacf3a29ae67cf": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1388902 fibrocartilaginous; accept fibrocartilage",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87298,6 +87846,14 @@
     "result": "agrees"
    }
   },
+  "dd55e93da6288849": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"occipital bone\" — The lambdoid suture joins the parietal bone to the ________.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dd58431222b25323": {
    "verdict": "ok",
    "note": "glossary recall: skull (fs-idm79829200) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -87838,6 +88394,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "dee6dba7f911e9aa": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2329194, model answer = solution fs-id2311187 verbatim"
   },
   "dee6e282ec926467": {
    "verdict": "ok"
@@ -89525,6 +90085,14 @@
     "result": "agrees"
    }
   },
+  "e2aad60074fc5a67": {
+   "verdict": "ok",
+   "note": "glossary recall lordosis",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e2b2c5c02e4f7aae": {
    "verdict": "ok",
    "note": "CNXML Critical Thinking exercise fs-id1172099892493; source prints no key. Model answer assembled from § Cell Wall (peptidoglycan-as-antibiotic-target sentence)."
@@ -90446,6 +91014,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e4f9d40a4ed3207b": {
+   "verdict": "ok",
+   "note": "CT fs-id1884598 solution verbatim"
   },
   "e4fee3390673c98a": {
    "verdict": "ok",
@@ -96994,6 +97566,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 777): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f67a4e6f59c8e990": {
+   "verdict": "ok",
+   "note": "Review fs-id2051547 key A seven vertebrae",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f67b67f07d87d6c8": {
    "verdict": "ok",
    "note": "glossary recall: antigen-presenting cell — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -97667,6 +98247,14 @@
   "f7d29c5be4622364": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f7d43720f37716bf": {
+   "verdict": "ok",
+   "note": "textin re-read against m46355 CNXML and page text; key \"frontal sinus\" — The ________ is the most anterior of the paranasal sinuses.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -99333,6 +99921,14 @@
   "fbeb37d6a79dedd4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fbece138868d08b5": {
+   "verdict": "ok",
+   "note": "multiplechoice re-read against m46355 CNXML and page text; key \"sphenoid bone\" — Which bone forms the posterior orbit?",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

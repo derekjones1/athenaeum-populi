@@ -2345,6 +2345,145 @@
       "status": "correct-local-source-defect",
       "errataEntry": 1939,
       "rationale": "The Critical Thinking solution (exercise fs-id1514097, para fs-id1492144) says secondary ossification centers \"form later, and there are two of them, one in each epiphysis\", but Section 8.5 (m46376, fs-id1972676) says small bones such as the phalanges \"will develop only one secondary ossification center\" and large bones such as the femur \"will develop several\", and the question asks about a long bone in general. The page's model answer says they form later, usually after birth, in the epiphyses, typically one in each epiphysis, with a phalanx having one and the femur several, with a visible Source note and a footer sentence; the rubric checkpoint grades the location, not the count. Evidenced by the chapter 6 prose claim pass, October 15, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/05-embryonic-development-of-the-axial-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46348",
+      "sourceElementIds": [
+        "fs-id2251103",
+        "fs-id2096817",
+        "fs-id1976228",
+        "fs-id1858475",
+        "fs-id1894914"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1958,
+      "rationale": "The module says the facial bones form by endochondral ossification (para fs-id2251103, Chapter Review para fs-id2096817, Critical Thinking solution para fs-id1858475), but Section 6.4 (m46301, fs-id1804592, fs-id1639567, fs-id1173842) says the flat bones of the face form by intramembranous ossification and only the bones at the base of the skull by endochondral ossification; Review Question fs-id1894914 option A, \"intramembranous ossification, which forms the facial bones.\", is therefore a second correct answer. The page reads \"produces the floor of the brain case (the cranial base)\", \"the cranial base is produced\", and \"The base of the skull arises\" (the question keeps its printed wording) with visible Source notes, and prints \"intramembranous ossification, which forms the vertebrae\" as option A (a DISCLOSED_DEVIATIONS entry of kind options, key B unchanged), with a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fs-id1989047"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1959,
+      "rationale": "The Orbit paragraph (para fs-id1989047) says the superior orbital fissure \"provides passage for the artery that supplies the eyeball\", but the same module lists only \"Nerves to the eyeball and associated muscles, and sensory nerves to the forehead\" for the fissure (para fs-id2026215) and Gray's Anatomy (20th U.S. ed., 1918) has the ophthalmic artery enter the orbit through the optic canal with the optic nerve. The page gives the artery to the optic canal and leaves the fissure its nerves with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fs-id1965938"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1960,
+      "rationale": "The palatine bone paragraph (para fs-id1965938) says the bone contributes to \"the medial wall of each orbit\", but the module's orbit text (para fs-id1887927) gives the medial floor to the maxilla with a small contribution from the palatine bone and the medial wall to the ethmoid and lacrimal bones, and the glossary meaning (fs-id1520692) puts the palatine bone in \"floor of the orbit\". The page reads \"the floor of each orbit\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fig-ch07_02_12"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1961,
+      "rationale": "The maxillary bone figure caption says each maxilla forms \"the lateral floor of each orbit\", but the module's body (para fs-id2307253) says the maxilla forms \"the medial floor of the orbit\" and (para fs-id1887927) gives the zygomatic bone the lateral floor. The page caption reads \"the medial floor of each orbit\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fs-id1248497"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1962,
+      "rationale": "The suture paragraph (para fs-id1248497) says the lambdoid suture joins the occipital bone to \"the right and left parietal and temporal bones\", but the same module's glossary (fs-id2123001), Summary (fs-id2227615), and Critical Thinking solution (fs-id2346224) say parietal bones only, and the posterior-view figure draws it between the parietal and occipital bones. The page reads \"the right and left parietal bones\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fs-id1391977"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1963,
+      "rationale": "The jugular foramen paragraph (para fs-id1391977) calls it the exit \"for all the venous return blood leaving the brain\", but Section 20.5 (m46646, fs-id3004294, fs-id977085, glossary fs-id2142383) says the sinuses lead to either the internal jugular or the vertebral vein and that the internal jugular vein \"primarily\" drains the brain. The page reads \"for most of the venous blood leaving the brain\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/04-the-thoracic-cage.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46350",
+      "sourceElementIds": [
+        "fs-id1700964",
+        "fs-id1894288"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1964,
+      "rationale": "The Critical Thinking solution (exercise fs-id1700964, para fs-id1894288) says the rib angle \"forms the largest portion of the thoracic cage\", but the module (para fs-id2251383, glossary fs-id1883617, Summary fs-id1701760) says the angles of the ribs form the most posterior extent of the thoracic cage. The page's model answer reads \"forms the most posterior extent of the thoracic cage\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fs-id1882870"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1965,
+      "rationale": "The paranasal sinuses paragraph (para fs-id1882870) says \"The sphenoid sinus is a single, midline sinus\", but the sphenoid body holds right and left sphenoidal sinuses separated by a septum (Gray's Anatomy, 20th U.S. ed., 1918); the book is silent on the count. The page reads \"The sphenoid sinus is paired, a right and left space separated by a thin midline septum\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/03-the-vertebral-column.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46352",
+      "sourceElementIds": [
+        "fs-id2135102"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1966,
+      "rationale": "The Lumbar Vertebrae paragraph (para fs-id2135102) says lumbar vertebrae have \"short transverse processes\", but Gray's Anatomy (20th U.S. ed., 1918) describes them as \"long, slender, and horizontal\" in the upper three lumbar vertebrae; the book is silent on their length. The page reads \"long, slender transverse processes\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46355",
+      "sourceElementIds": [
+        "fs-id875993"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1967,
+      "rationale": "The Skeletal System disorders box (para fs-id875993) says \"The majority of head injuries involve falls\", but the CDC's 2010 report that the paragraph cites (Faul et al., Traumatic Brain Injury in the United States 2002-2006; press release of March 17, 2010) puts falls at 35.2 percent, the leading cause and not a majority. The page reads \"Falls are the most common cause of head injuries\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/05-embryonic-development-of-the-axial-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46348",
+      "sourceElementIds": [
+        "fs-id2339105",
+        "fs-id1031698"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1968,
+      "rationale": "The Craniosynostosis box (paras fs-id2339105 and fs-id1031698) says \"Primary craniosynostosis\" involves the early fusion of one suture, but one suture makes craniosynostosis simple (compound or complex for several) while primary and secondary classify its cause (Kabbani and Raghuveer, Am Fam Physician 2004;69:2863-70). The page reads \"Simple craniosynostosis\" and \"simple craniosynostosis\" with a visible Source note and a footer sentence. Evidenced by the chapter 7 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/07-axial-skeleton/03-the-vertebral-column.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46352",
+      "sourceElementIds": [
+        "fs-id1226922",
+        "fs-id2328646"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1969,
+      "rationale": "The Interactive Link solution (exercise fs-id1226922, para fs-id2328646) calls kyphosis \"an enhanced anterior curvature of the thoracic vertebral column\", but the module defines kyphosis twice as \"an excessive posterior curvature of the thoracic region\" (Curvatures text term-00008 and the Disorders box) and the glossary agrees. The page's model answer says posterior with a visible Source note and a footer sentence. Found by the chapter 7.3 author, confirmed by the chapter 7 alt-errata verifier, October 16, 2026."
     }
   ]
 }

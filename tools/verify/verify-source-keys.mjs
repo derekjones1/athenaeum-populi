@@ -779,6 +779,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1941,
     reason: 'the source distractor "bone remodeling" is a second correct answer to "Which of the following occurs in the spongy bone of the epiphysis?" — the module\'s own spongy-bone figure (606_Spongy_Bone) boxes the femoral head and draws osteoclasts and osteoblasts on a trabecula there, and the body says "Osteoclasts are continually breaking down old bone while osteoblasts are continually forming new bone"; the page prints "osteon formation" in its place (the module says "Compact bone is dense and composed of osteons, while spongy bone is less dense and made up of trabeculae", whose osteocytes "are not arranged in concentric circles"; key "hematopoiesis" unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/07-axial-skeleton/05-embryonic-development-of-the-axial-skeleton.md',
+    exercise: 'fs-id1894914',
+    kind: 'options',
+    erratum: 1958,
+    reason: 'the source distractor "intramembranous ossification, which forms the facial bones." is a second correct answer to "Embryonic development of the axial skeleton involves ________." — the book\'s own §6.4 module m46301 says "The flat bones of the face, most of the cranial bones, and a good deal of the clavicles (collarbones) are formed via intramembranous ossification, while bones at the base of the skull and the long bones form via endochondral ossification"; the page prints "intramembranous ossification, which forms the vertebrae" in its place (the module says the vertebral cartilage models "ossify into bone through the process of endochondral ossification"; key "endochondral ossification, which forms the ribs and sternum" unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

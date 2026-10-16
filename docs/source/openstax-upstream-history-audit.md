@@ -16,10 +16,10 @@
 
 ## Coverage
 
-- Mapped local sections: 644
-- Sections changed upstream: 42
+- Mapped local sections: 649
+- Sections changed upstream: 43
 - Content-level changes: 34
-- Markup/metadata-only changes: 8
+- Markup/metadata-only changes: 9
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
 - Local-impact drift decisions recorded: 4
@@ -32,7 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 35 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 40 sections mapped
 
 ## Changed mapped sections
 
@@ -44,6 +44,11 @@ Module `m46048`; content-changed. Changed lanes: instructionalText.
 ### anatomy-physiology 6.4 — [content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md](../../content/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/04-bone-formation-and-development.md)
 
 Module `m46301`; content-changed. Changed lanes: instructionalText.
+
+
+### anatomy-physiology 7.2 — [content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md](../../content/life-health-sciences/anatomy-physiology/07-axial-skeleton/02-the-skull.md)
+
+Module `m46355`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
 ### biology 13.2 — [content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md)

@@ -1972,6 +1972,15 @@ export function lintHugo(src, filename = '', options = {}) {
     if (m.index > 0 && htmlMediaSrc[m.index - 1] === '\\') continue;
     err(m.index, `placeholder link target ${JSON.stringify(m[0])} — give the link a real destination or quote it as plain text`);
   }
+  // ---- prep-tool scaffold comments -----------------------------------------
+  // The life-sciences `terms` extractors append an HTML comment to a Key-terms
+  // bullet whose term the body never bolds ("glossary term never bolded…").
+  // The comment is a prompt to the author, never page content; one shipped on
+  // Anatomy and Physiology 7.2 and only the checker saw it (HTML comments are
+  // masked for every other rule above, so nothing else fires on it).
+  for (const m of src.matchAll(/<!--\s*glossary term never bolded[\s\S]*?-->/g)) {
+    err(m.index, 'prep-tool scaffold comment left on the page ("glossary term never bolded…") — resolve the check it asks for and delete the comment');
+  }
   // ---- figure curve precision ----------------------------------------------
   // Legacy figures — a pasted `<div class="ap-figure">` — carry their
   // generating JSON in a data-spec attribute. When present it must parse, and

@@ -401,6 +401,142 @@ selfcheck whose answer is the source solution verbatim, so the label now
 reads "selfchecks total N (each model answer read against its source
 solution or, where author-written, the module)".
 
+## Chapter 7 (October 16, 2026)
+
+Five sections, one wave, on the roster AGENTS.md tabulates (Author = Opus,
+Blind solver = Fable, Clerk = Sonnet). Chapter 6 was committed first, at
+Derek's request, so the wave started on a clean tree. Five Opus authors
+launched together, an Opus checker for each page as its author reported,
+one Opus claim pass launched when the last page landed, an Opus alt-errata
+verifier, and the blind solve in a fresh Fable subagent with masked pages.
+Sonnet clerks did the checklist work: the landing page, the run facts, the
+pins, the errata draft, and this history. The parent ran the map build
+early, once four pages were on disk, so the source-keys and coverage gates
+read chapter 7 while the checkers worked. Authors reported Practice items
+per page of 13 (7.1), 25 (7.2), 22 (7.3), 12 (7.4), and 10 (7.5), 82 in
+all; every source exercise reached its page. The run-facts clerk corrected
+five of the parent's first PDF ranges, each verified by viewing the
+boundary page: the introduction runs two pages, not one; 7.3 begins at the
+foot of the page before the one the parent named; 7.4 ends a page earlier
+and 7.5 starts a page earlier; and the Key Terms run one page longer.
+
+Part C settled six Interactive Link Questions. Four are graded
+`selfcheck`s after their callouts, because the module text fixes the
+answer (the sphenoid, the basilar fracture, kyphosis, the herniated disc);
+the ligament-thickness item (7.3) and the two-mechanisms item (7.5) are
+prompts only, the second by the 1.7 precedent: its answer needs two
+sentences stitched together and the solution's "bones of the limbs" is off
+the module. The kyphosis model answer was corrected before the wave
+(anterior to posterior, as the module defines the term twice), with a
+Source note and an erratum. The chapter has no tables. 7.2 is the one row
+of the September-8 table (the skull-base image 707 was replaced upstream),
+so the vendored image is the new one, the PDF shows the old, and the entry
+is not a defect. One Part C line was the parent's own error: it named the
+sphenoid item's "fixing sentence" as a Chapter Review sentence, but that
+sentence ("joins with most other bones of the skull") is the item's own
+solution. The 7.2 author caught it and cited the body sentence "joins with
+almost every other bone of the skull", which fixes the answer without
+being the key.
+
+Checkers found 15 defects on lint-clean pages (7.1: 2, 7.2: 3, 7.3: 3,
+7.4: 4, 7.5: 3) plus concerns. The top classes: alt and longdesc errors
+that misread the drawing (7.5 called the lateral view the skull's left
+side when it is the right; 7.3's 732 leader lines ended on the wrong
+vertebra and its 723 alt said "upper neck vertebrae" for all seven; 7.4's
+longdesc put ribs 11 and 12 at the wrong end; 7.1's 701 alt never named the
+divisions the colours stand for), accept gaps where the module's own
+phrase was graded wrong ("vertical portion" for the ramus, "small
+muscles", "disc herniation" and "slipped disc", "palpating"), a backward
+leak (7.5's sclerotome stem printed the key of the somite item just above
+it, and reordering could not fix it, so the author item was rebuilt from a
+sentence without "somite"), a headline-term multiple choice (7.4's sternum
+item, the H2 of the objective that follows it), rubric clauses outside the
+question (7.1's girdles selfcheck, whose third checkpoint remarked on the
+figure's shading; 7.4's CT4, whose "these ribs" widened to 8–12 once an
+intervening sentence was dropped), and a leftover prep-tool HTML comment in
+7.2's Key terms that no lint catches. Concerns included a hint that steered
+to its key (7.2's third Review Question: "including the list of openings")
+and a footer that gave a false reason for the notochord exclusion. The
+author's flag on 7.1 (the count item keyed "126" against a Review
+distractor "consists of 126 bones") was ruled a shared number, not a leak:
+the distractor does not state the fact the count item tests. Each page's
+author applied its own checker's fixes.
+
+The claim pass examined 344 claims and made 11 findings, all accepted. F1
+was the largest: 7.5 says the facial bones form by endochondral
+ossification, while §6.4 says they are membrane bones, so a Review
+distractor ("intramembranous ossification, which forms the facial bones")
+was true on the book's own terms. The body, the Summary, and the Critical
+Thinking model answer were corrected in four places and the distractor
+replaced; because a Review option changed, the entry is a `DISCLOSED_DEVIATIONS`
+option deviation and an erratum (1958). The seven 7.2 corrections were the
+superior orbital fissure's "artery that supplies the eyeball" (that artery
+runs in the optic canal), the palatine bone's "medial wall" of the orbit
+(the floor), the maxilla caption's "lateral floor" (medial), the lambdoid
+suture's "parietal and temporal bones" (parietal only), the jugular
+foramen as the exit for "all" venous return, the sphenoid sinus as a
+"single" midline sinus, and the CDC 2010 attribution of a "majority" of
+head injuries to falls (about a third). The others were the lumbar
+"short transverse processes" (7.3), the rib angle that "forms the largest
+portion" (7.4, where the module says most posterior), and craniosynostosis
+terminology (7.5, where primary and complex are not paired terms). The
+roof-of-orbit item lost its sphenoid distractor (the lesser wing forms the
+posterior roof, a borderline second key) and took the palatine bone instead. The clavicle flag carried from chapter
+6 resolved as no defect: 6.1 has no such sentence, and 7.1 agrees with
+§8.1. Further readings were recorded as reviewed, not errata,
+among them the fontanelle "first year" against "by age 2", the hard
+palate's three-quarters and one quarter, the CDC's 30 percent, the
+glabella "depression", the internal acoustic meatus, the nasolacrimal
+"behind", sagittal synostosis growth direction, "vertebrochondral" for
+ribs 8–12, and the foramen lacerum's "nothing passes".
+
+The alt-errata verifier gave 38 verdicts: 10 held, 18 typos, 10 rejected,
+none already filed. The parent corrected three footer clauses that stated
+claims the verifier rejected (7.2's hyoid grey, 7.3's lumbar inferior
+articular process, 7.3's sacrum pink). The blind solve agreed 63/63 with
+no disagreements and no flags after two one-item remaps, both for items
+the claim pass had re-hashed (7.5's Review option A and 7.2's roof-of-orbit
+item); the solver's notes proposed accept candidates the pages already
+covered and a trailing-period remark that stayed as printed. 7.2's
+References link to the CDC statistics page answers 404. The checker
+had read the printed address, but the CNXML's link text and href differ,
+and the author's own GET showed the linked target is the dead one; the
+page keeps the citation as printed and drops the link (1970). The landing
+page's splash alt was re-written twice by the parent: first on the clerk's
+reading of the colours, then on the claim pass's, which found the drawing
+is tinted bone by bone, not by cranial and facial, and the parent checked
+that against the image (sphenoid and maxilla yellow-green, zygomatic
+white, temporal and mandible mauve). Its source alt says "The major parts
+of the cell are labeled" (1971). The harness refused three authors'
+report-file writes (7.1, 7.2, and 7.5), so the parent saved those reports
+from the agents' final messages.
+
+Graded Interactive Link selfchecks read as "unmatched" in the keys gate
+across the whole book (1.7, 3.2, 3.3, 4.5, and 6.4 are the precedents) and
+the coverage gate counts them as graded-il, so the corrected kyphosis
+model answer owes no `solution` deviation entry; one checker's note that
+it did was moot. Errata 1958–1997 (40: 11 claim, 1 kyphosis solution, 1
+dead link, 9 alt, artwork, or duplication, 18 typos), the duplicated
+7.1 sentence among them (1972). The map now carries chapter 7; the axe
+suite gained its 7.3 route. Baselines moved to 7,310 replayed, 15,131
+exercises, and 5,229 confirmed, with `--min-covered` hand-edited 2983 → 3027 (`baseline:update` does not touch it); the build audit reports 5,221 files. The
+one test failure before the errata were filed was the expected one (the
+option deviation cited 1958 before the errata file carried it).
+
+Lessons folded in: a Part C line that names a "fixing sentence" is checked
+against the block it came from (a solution is not the Chapter Review)
+before it reaches the authors; a backward leak is fixed by rebuilding the
+author item, not by reordering; a checker's dead-link verdict is checked
+against the href, not the printed address; a source defect that makes a
+Review distractor true is an option deviation, so the replacement, the
+Source note, the footer clause, and the erratum travel together and the
+solve takes a one-item remap; the `terms` extractor's scaffold comment
+(`<!-- glossary term never bolded… -->`) is now a lint error, since one
+passed verify-section; a colour claim in an alt is read per bone, not per group,
+before it is written; the report-file refusal means agents return their
+reports as text for the parent to save; and the graded Interactive Link
+selfchecks never owe a solution deviation.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

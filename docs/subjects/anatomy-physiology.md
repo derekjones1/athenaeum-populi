@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, and chapter 6 on October 15, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, and chapter 6 on October 15, 2026, and chapter 7 on October 16, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -260,6 +260,10 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   so every recall item comes before the items that print its key, and word
   hints by role, not by term (e.g. X-rays/X-ray, prone/supine; *pronation*
   for prone).
+- **The `terms` extractor's scaffold comment is not page content.** Its
+  `<!-- glossary term never bolded… -->` flag on a Key-terms bullet is a
+  prompt to the author; one shipped on 7.2 and only the checker saw it, so
+  the lint rejects it (October 16, 2026).
 - **Headline glossary terms are not recall items.** A term that sibling
   items necessarily print (1.1's *anatomy* and *physiology*; 1.5's
   *negative*/*positive feedback*) stays a Key-terms bullet only; the footer

@@ -3387,6 +3387,14 @@ test('an exercise that names a figure, graph, or table must have one to resolve 
   assert.match(dangling[0], /"Use the graph" names a figure, graph, or table, but no apfigure, mediafigure, inline <svg>, Markdown table, or image sits above it/);
 });
 
+test('a prep-tool scaffold comment left on a Key-terms bullet is an error', () => {
+  const src = '# T\n\n## Key terms\n\n- **greater wings of sphenoid bone** — lateral projections.   <!-- glossary term never bolded as a body <term>: check the body; bold its defining occurrence if the module prints it -->\n';
+  const errors = lintHugo(src, 'content/life-health-sciences/anatomy-physiology/07-a/02-b.md').errors.filter((e) => e.includes('prep-tool scaffold comment'));
+  assert.equal(errors.length, 1, errors.join('\n'));
+  const ok = '# T\n\n## Key terms\n\n- **greater wings of sphenoid bone** — lateral projections.\n\n<!-- an author annotation about an item choice -->\n';
+  assert.deepEqual(lintHugo(ok, 'content/life-health-sciences/anatomy-physiology/07-a/02-b.md').errors.filter((e) => e.includes('prep-tool scaffold comment')), []);
+});
+
 test('a Markdown link whose target is an ellipsis, blank, or a TODO marker is a placeholder', () => {
   for (const target of ['…', '...', '', '#', 'TODO', 'TBD: link 16.1']) {
     const src = `# T\n\nThe case began in [The Language of Epidemiologists](${target}).\n`;

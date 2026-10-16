@@ -117,6 +117,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/anatomy-physiology/06-bone-tissue-and-the-skeletal-system/03-bone-structure/',
   },
   {
+    name: 'anatomy-physiology section page (Disorders callout with two figures inside it, Career Connection callout, three Interactive Link callouts with two graded body selfchecks, a sortbins, twelve mediafigures with longdescs)',
+    path: '/life-health-sciences/anatomy-physiology/07-axial-skeleton/03-the-vertebral-column/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',
