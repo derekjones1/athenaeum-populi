@@ -10,8 +10,18 @@ files, ten-line reports, no git from agents, helper files named by unit).
 It is distilled from the thirteen life-sciences check runs — Biology's
 eight unit checks and Microbiology's five block checks
 (`docs/history/biology.md`, `docs/history/microbiology.md`, "Knowledge
-Check N") — and has not yet run on this book: tune it after Unit 1 and
-fold what the run teaches back here and into the playbook.
+Check N") — and first ran on this book for Unit 1 (October 14, 2026,
+`docs/history/anatomy-physiology.md` "Knowledge Check 1"): every step
+below ran as written. What that run measured, on all-Opus authors:
+checkers 13 findings on 72 items, sweeps 2 (both already among the
+checker's), parent read 0 beyond them, second checker 2 of 5
+replacements rejected — so with Opus authors the checker and the second
+checker carry the yield, and a second replacement round is normal, not a
+failure. Two tells the briefs did not name: a page's **objective heading
+or description** printing the key with its fact is a reverse recall (the
+"eleven organ systems" count), and a re-aimed cloze must blank what the
+module sentence **names**, not its subject (the "mucociliary escalator"
+stem also fit "ciliated epithelium" until the blank moved).
 
 ## 0. What the runs measured
 
@@ -62,7 +72,7 @@ fold what the run teaches back here and into the playbook.
 
 ## 2. The wave
 
-**Authors:** one Sonnet agent per chapter, launched together. Prompt:
+**Authors:** one agent per chapter (Opus on Unit 1, by Derek's choice; Sonnet is the Biology/Microbiology precedent), launched together. Prompt:
 the chapter, its sections with module ids, the scratch path, "read
 `docs/knowledge-check-playbook-life-sciences.md` 'Content rules' and
 'Source and answer audit', and `docs/subjects/life-sciences.md`

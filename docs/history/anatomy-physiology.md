@@ -292,6 +292,54 @@ group headings and that an appositive cloze self-answers; and the parent
 adds an accept list to any author cloze whose key is a two-word phrase a
 learner would shorten ("genetic factors": genetics, genes, heredity).
 
+## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
+
+The first Anatomy and Physiology check, and the first run from
+`docs/briefs/anatomy-physiology/kc-run.md`; the recipe ran as written
+(assemble, weights, leaks and notes tools all worked first time).
+`knowledge-check-01-04.md`, "Knowledge Check: Unit 1 — Chapters 1–4",
+weight 5; chapter 5 shifted 5 → 6 by `npm run kc -- weights --write`. 24
+sections, 72 items: 25 multiplechoice, 25 textin, 22 selfcheck (every one
+with a rubric), 0 sortbins — no module in chapters 1–4 has a comparison
+table the Practice blocks had not already used.
+
+Run shape, all Opus except the solve: four authors (one per chapter,
+~185–216k tokens, 9–11 min), four checkers launched as each author
+reported (124–167k), two reverse-recall sweeps on the finished scratch
+blocks (ch1–2, ch3–4; ~105k each), one second checker over the
+replacements (two rounds), and a blind solve in a fresh Fable subagent
+(286k) reading the 51 graded packets beside the 24 masked section pages.
+The parent read every block before assembly.
+
+- **Checker yield:** 13 findings (ch1 5, ch2 3, ch3 1 soft, ch4 4): 2
+  reverse recalls, 1 double key (4.2 mucociliary escalator — "ciliated
+  epithelium" fit the blank), 1 stem spelling its key (macronutrients), 1
+  stem naming its options (childbirth loop), 3 accept gaps, 5 soft spread
+  notes.
+- **Sweeps:** 2 flags, both chapter 1 and both the same two reverse recalls
+  the checkers found (1.2 "eleven organ systems" printed in the page's
+  objective heading; 1.5 "control center" printed with its fact in a page
+  rubric). The parent read found 0 beyond the checkers.
+- **Replacements:** 2 of the 5 first-round replacements were rejected by
+  the second checker (gangrene repeated a sibling distractor; positive
+  feedback was given away by the neighbouring negative-feedback selfcheck);
+  round 2 (amino acids, perfusion) passed. The amino-acids "given away by
+  chapter 2" note was ruled cross-chapter reinforcement, not a leak.
+  Whole-page `kc leaks`: 5 hits, all shared vocabulary.
+- **Blind solve:** 51/51 agree, 0 alsoDefensible, 0 unsure. The solver's one
+  cross-page note (2.4 "as much as 70 percent" body water vs 1.4's
+  corrected 50–60) is erratum 857's already-adjudicated case. No errata
+  filed by this run.
+- **Lessons:**
+  - Replacements repeat the tells (2 of 5 here), so the second checker
+    stays on every replacement and a second round is normal.
+  - An objective heading or page description printing the key with its fact
+    is a reverse recall, not only stems and hints.
+  - A re-aimed cloze must blank the thing the module sentence names, not
+    its subject (the escalator fix).
+  - A solver's "cross-page defect" note is grepped against the errata file
+    before anything is filed.
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

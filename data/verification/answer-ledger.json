@@ -1391,6 +1391,10 @@
     "result": "agrees"
    }
   },
+  "03171e9e78adbd67": {
+   "verdict": "ok",
+   "note": "KC 1 1.4 § body Narrow Range of Atmospheric Pressure (fs-id1618558), paragraph fs-id1648023, m45988"
+  },
   "03183ff36a4f9595": {
    "verdict": "ok"
   },
@@ -1449,6 +1453,14 @@
    "note": "KC 8 44.5 § body Present Climate Change (fs-idp129694320), m66419 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "033146e66365b093": {
+   "verdict": "ok",
+   "note": "KC 1 2.5 § Nucleic Acids, m46008",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -2265,6 +2277,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
+  "0530d3a9e194863d": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § body DNA Replication (fs-id1512606), m46073",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -3109,6 +3129,14 @@
    "verdict": "ok",
    "note": "re-read against CNXML m46034 and the page text"
   },
+  "0745f57d7fdf6a23": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § Elements and Compounds, m45998",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "074b3d699393dd4b": {
    "verdict": "ok",
    "note": "source exercise fs-idp236033616 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -3227,6 +3255,14 @@
   },
   "079ee29c4a99875d": {
    "verdict": "ok"
+  },
+  "079fbe1811ef213e": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § Ions and Ionic Bonds, m46000",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "07a245fedc837d9f": {
    "verdict": "ok",
@@ -3726,6 +3762,14 @@
    "note": "author-built from § introduction: \"They are found in permanently cold environments such as the deep waters of the oceans.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "08ed5083850f1bc1": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § glossary nucleosome (fs-id1526263), body Organization of the Nucleus and Its DNA (fs-id1103264), m46073",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5533,6 +5577,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
+  "0d45283dbc305c14": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § The Behavior of Electrons, m45998",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -9916,6 +9968,10 @@
     "result": "agrees"
    }
   },
+  "17a92b1ff34aa3a8": {
+   "verdict": "ok",
+   "note": "KC 1 4.1 § body section opener (fs-id1435343), m46046"
+  },
   "17b41505f4718eb2": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -10170,6 +10226,14 @@
   "184bf2e72087fd09": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "184c6eeceddb274a": {
+   "verdict": "ok",
+   "note": "KC 1 2.5 § Shape of Proteins, m46008",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12035,6 +12099,14 @@
     "result": "agrees"
    }
   },
+  "1c8a60bc5e206ead": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § body Metabolism (fs-id2305458), paragraph fs-id2578934, m45986",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1c939fb08c6d3313": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13487,6 +13559,14 @@
     "result": "agrees"
    }
   },
+  "2009e5669dce6086": {
+   "verdict": "ok",
+   "note": "KC 1 4.1 § body Epithelial Membranes (fs-id1514999), m46046",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "201035d9cb153f78": {
    "verdict": "ok"
   },
@@ -13789,6 +13869,14 @@
     "result": "agrees"
    }
   },
+  "20d5e05d9cc1f7a4": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § body introduction, physiology paragraph (fs-id1707081), m45983",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "20d85e0912bc92c6": {
    "verdict": "ok",
    "note": "Body CYU selfcheck, fs-id1172098382783 bullet 2 (\"How did Joseph Lister's work contribute...\"); model answer from § The Germ Theory of Disease's Lister paragraph (fs-id1172100932077). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -13812,6 +13900,14 @@
   "20e4681a2b37ad17": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "20e5259d723e998e": {
+   "verdict": "ok",
+   "note": "KC 1 4.2 § body Stratified Epithelium (fs-id1243625), m46048",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14173,6 +14269,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "21df65936b4b2c76": {
+   "verdict": "ok",
+   "note": "KC 1 4.2 § body section introduction (fs-id1508318), m46048"
   },
   "21e345c9a0055ca5": {
    "verdict": "ok",
@@ -14793,6 +14893,14 @@
    "note": "author-built from § Oxygenic and Anoxygenic Photosynthesis, Check Your Understanding: \"Why would a photosynthetic bacterium have different pigments?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "23acbfc7427636f6": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § glossary interstitial fluid (IF) (fs-id1543027), body Structure and Composition of the Cell Membrane (fs-id2259833), m46021",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -15562,6 +15670,14 @@
   "25b6cf11b8af5133": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "25b921f404170460": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § Atomic Structure and Energy, m45998",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18365,6 +18481,14 @@
     "result": "agrees"
    }
   },
+  "2d008df1768da844": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § body cardiac muscle paragraph (fs-id1269818), m46055",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2d04f6061c3efde6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19701,6 +19825,10 @@
    "verdict": "ok",
    "note": "selfcheck — CT question fs-idp20301104; model answer is the CNXML solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "305d9015258abbfb": {
+   "verdict": "ok",
+   "note": "KC 1 1.7 § body Modern Medical Imaging (fs-id2017522), paragraph fs-id2694909, m45991"
+  },
   "305daff2edc8dcb4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20220,6 +20348,14 @@
     "result": "agrees"
    }
   },
+  "31c9962db4cc5237": {
+   "verdict": "ok",
+   "note": "KC 1 4.6 § body Tissue Injury and Repair (fs-id1515794), m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "31ccb89dc746ca9c": {
    "verdict": "ok",
    "note": "author-built from § B-Cell Receptors: \"Whereas TCRs can only interact with antigenic epitopes that are presented within the antigen-binding cleft of MHC I or MHC II , BCRs do not…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20626,6 +20762,14 @@
     "result": "agrees"
    }
   },
+  "32cb0230fba2dc8e": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § body The Cytoskeleton (fs-id1595483), m46023",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32d07ce93813c5a2": {
    "verdict": "ok",
    "note": "key-term recall: polyribosome; printed in § Ribosomes: \"The complete structure containing an mRNA with multiple associated ribosomes is called a polyribosome (or polysome ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -20962,6 +21106,14 @@
     "result": "agrees"
    }
   },
+  "33cf15f856b28c8a": {
+   "verdict": "ok",
+   "note": "KC 1 3.5 § glossary mitotic spindle (fs-id1448648), body Mitosis and Cytokinesis (fs-id1977749), m46034",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "33db77343cd6c8db": {
    "verdict": "ok",
    "note": "Review Q3 (fs-id2077372/fs-id1434276): keyed option D = 'Inhibit quorum sensing', matches option text verbatim; the other options are unsupported or contradicted by the section text (antibiotics are undercut by biofilms per the surrounding prose). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -21170,6 +21322,14 @@
    "note": "source exercise fs-id1172099485192 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3446b11d8c6c46bd": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § glossary exon (fs-id1860099), m46032",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -23773,6 +23933,14 @@
     "result": "agrees"
    }
   },
+  "3acad6c7e2872107": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § body From RNA to Protein: Translation (fs-id1527007), m46032",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3acbf01f6c91c089": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24134,6 +24302,10 @@
     "result": "agrees"
    }
   },
+  "3bd8a5b940fde0ae": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § body Movement (fs-id2621560), paragraph fs-id1960688, m45986"
+  },
   "3bd97bf82b713661": {
    "verdict": "ok",
    "solved": {
@@ -24144,6 +24316,10 @@
   "3bda6ec3fd802fd9": {
    "verdict": "ok",
    "note": "RE#21 m49327 (fs-id1165135205940, \"Sketch a graph of f(t)=2t-5\", variable t->x for the grid): slope 2, intercept -5; key p1279 #21 graph marks (0,-5) and (2.5,0), both on y=2x-5; 8 reachable lattice points on -7..7 for plotPoints 3"
+  },
+  "3bdcdcbb0da7210f": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § body Classification of Connective Tissues (fs-id1503245) + Dense Connective Tissue (fs-id1269615), m46049"
   },
   "3be0c00ae2c8d02f": {
    "verdict": "ok",
@@ -25478,6 +25654,14 @@
   "3f1e075377333383": {
    "verdict": "ok",
    "note": "unkeyed SA fs-id1172098527018, source prints no key; model answer assembled from skin-barrier, cell-junction, and mucociliary-escalator-disruption sentences of this module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "3f20c7038c28f253": {
+   "verdict": "ok",
+   "note": "KC 1 1.3 § body Development, growth and reproduction (fs-id2246955), paragraph fs-id2002399; glossary reproduction (fs-id2069839), m45986",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3f2163a6c2b3d19e": {
    "verdict": "ok",
@@ -28611,6 +28795,10 @@
     "result": "agrees"
    }
   },
+  "4680740508e50a02": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § body Membrane Proteins (fs-id1476432), m46021"
+  },
   "46814bf9431d564e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29090,6 +29278,14 @@
   "47f13cb190fe45c9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "47fa89af8515ad28": {
+   "verdict": "ok",
+   "note": "KC 1 4.5 § body neuron morphology paragraph (fs-id1315893), m46057",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -29594,6 +29790,14 @@
    "note": "glossary recall: brumation (fs-idp100271680) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "49524816dd51ab28": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § body Loose Connective Tissue (fs-id1139056), m46049",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -30963,6 +31167,14 @@
     "result": "agrees"
    }
   },
+  "4cc8d494b5372496": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § body Mitochondria (fs-id1334972), m46023",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4ccf5107277865bb": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-27: spec system slope -4 through the origin and horizontal y = -4 match y = -4x and y = -4"
@@ -31002,6 +31214,14 @@
   "4ce0b99f8556282e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4ce6130d6813b303": {
+   "verdict": "ok",
+   "note": "KC 1 3.6 § body Differentiation (fs-id1521639), Everyday Connection Stem Cell Research (fs-id704569), m46036",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33938,6 +34158,10 @@
     "result": "agrees"
    }
   },
+  "548aad58e897a84a": {
+   "verdict": "ok",
+   "note": "KC 1 3.6 § body Differentiation (fs-id1521639), Everyday Connection Stem Cell Research (fs-id704569), m46036"
+  },
   "548ab3a47a1b55e3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34176,6 +34400,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "552b0a1b22478ebc": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § body From DNA to RNA: Transcription (fs-id2235180), m46032"
   },
   "55347e7cef7be04e": {
    "verdict": "ok",
@@ -36649,6 +36877,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5b4b2c9e4ac7d068": {
+   "verdict": "ok",
+   "note": "KC 1 3.5 § body The Structure of Chromosomes (fs-id1278929), m46034",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5b4dd4725cb770a1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38314,6 +38550,10 @@
   "5fb09eac8adbdf84": {
    "verdict": "ok",
    "note": "body CYU 4, selfcheck; the three anti-AChR mechanisms (complement binding, accelerated endocytosis, functional blocking) transcribed from the module's own bulleted list under Myasthenia Gravis. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5fb38c34c9e3f0d5": {
+   "verdict": "ok",
+   "note": "KC 1 3.5 § body The Cell Cycle Out of Control: Implications (fs-id1865047), m46034"
   },
   "5fb884da2bd02e04": {
    "verdict": "ok",
@@ -41807,6 +42047,10 @@
    "verdict": "ok",
    "note": "x=-4(y+2)^2+4: vertex (h,k)=(4,-2); y-intercepts (x=0): (y+2)^2=1 -> y=-1,-3 -> (0,-1),(0,-3), re-derived by node. Matches CNXML solution image alt text ('vertex (4,-2)... y intercepts (0,-1) and (0,-3)'). Distinct from worked Example 11.17 (x=-4(y+1)^2+4, vertex (4,-1)) immediately above -- different numbers, no leakage. Points inside grid -2..6/-6..2, integer lattice."
   },
+  "6a3447355666fc61": {
+   "verdict": "ok",
+   "note": "KC 1 1.5 § body introduction (eip-991), m45989"
+  },
   "6a385f45bccf8b7d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -41983,6 +42227,14 @@
   "6a8d328951e262fb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6a9240ca76accc93": {
+   "verdict": "ok",
+   "note": "KC 1 3.6 § body Stem Cells (fs-id2316924), glossary unipotent (fs-id1523364), m46036",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42405,6 +42657,14 @@
   "6c229774230fb7c3": {
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "6c24d3820f042abc": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § Hydrogen Bonds, m46000",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6c253ff394962942": {
    "verdict": "ok",
@@ -43570,6 +43830,10 @@
     "result": "agrees"
    }
   },
+  "6f4ecefa363d3d23": {
+   "verdict": "ok",
+   "note": "KC 1 4.6 § body Tissue Injury and Repair (fs-id1515794), m46058"
+  },
   "6f543bf3cf38098e": {
    "verdict": "ok",
    "note": "Point plot -3-3i; no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -44352,6 +44616,14 @@
   "713da0bfe6f750eb": {
    "verdict": "ok",
    "note": "KC 3 13.1 § Genetic Linkage and Distances, m66491 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "713f39ca31b88cb5": {
+   "verdict": "ok",
+   "note": "KC 1 1.4 § body Nutrients (fs-id2395044), paragraph fs-id2269270, m45988",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47386,6 +47658,14 @@
     "result": "agrees"
    }
   },
+  "78b9c43e7782e020": {
+   "verdict": "ok",
+   "note": "KC 1 4.5 § summary (fs-id1098367), m46057",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78bd347aa67ce163": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48994,6 +49274,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "7c4100e492bda361": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § body opening paragraph (fs-id1524010), m46055"
   },
   "7c4498a87213c785": {
    "verdict": "ok",
@@ -51738,6 +52022,14 @@
     "result": "agrees"
    }
   },
+  "835a4c2c18815bfe": {
+   "verdict": "ok",
+   "note": "KC 1 4.6 § body Tissue and Aging (fs-id787713), m46058",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "835a760af4f1c8ba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52404,6 +52696,14 @@
   "84d1270fc315b784": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "84d2672ba6fc9713": {
+   "verdict": "ok",
+   "note": "KC 1 1.6 § body Abdominal Regions and Quadrants (fs-id1207231), paragraph fs-id1927339, m45990",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56063,6 +56363,10 @@
     "result": "agrees"
    }
   },
+  "8ebe2ad446602f39": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § body introduction, form-and-function paragraph (fs-id2104406), m45983"
+  },
   "8ec2a42eafe91d23": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -56928,6 +57232,14 @@
   "91131c0d792cefb1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "91135a8175e13bae": {
+   "verdict": "ok",
+   "note": "KC 1 1.6 § body Body Planes (fs-id2576027), transverse plane list item (term-00022); glossary transverse plane (fs-id2132463), m45990",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58945,6 +59257,14 @@
     "result": "agrees"
    }
   },
+  "9619c98b4f22c855": {
+   "verdict": "ok",
+   "note": "KC 1 4.4 § body opening paragraph (fs-id1524010), m46055",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "96204d363fb2b7d1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59232,6 +59552,14 @@
   "96ef0cb6d1ac22c5": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: endergonic reaction (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "96f72ca162fd781e": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § Water as a Heat Sink, m46006",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60396,6 +60724,14 @@
     "result": "agrees"
    }
   },
+  "9a24467dc5cf070e": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § The Role of Energy in Chemical Reactions, m46004",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9a27d0c2ed0b762d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -60506,6 +60842,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "9a5f6032c229bf2c": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § body The Levels of Organization (fs-id1688531), paragraph para-00002, m45985"
   },
   "9a64b3493aced352": {
    "verdict": "ok",
@@ -60900,6 +61240,14 @@
   "9b8823e9d509475b": {
    "verdict": "ok",
    "note": "MC: 'or' of two disjoint events uses the Addition Principle; matches source Section Exercise 3's own explanation. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "9b8c79261f93f418": {
+   "verdict": "ok",
+   "note": "KC 1 4.3 § body Cartilage (fs-id1333453), m46049",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9b8d9ef5975e5014": {
    "verdict": "ok",
@@ -62120,6 +62468,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
+  "9ed4b7025f87b1e2": {
+   "verdict": "ok",
+   "note": "KC 1 4.1 § body Epithelial Membranes (fs-id1514999) + glossary lamina propria (fs-id961853), m46046",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -65749,6 +66105,14 @@
   "a79ff4cf470977e8": {
    "verdict": "ok",
    "note": "KC 3 15.3 § body Promoter Structures for RNA Polymerases I and III (fs-id2730804), m66499 — parent re-read against the module"
+  },
+  "a7a0855c9dbfd195": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § body Active Transport (fs-id850990), m46021",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a7a2b3f35bdc35e9": {
    "verdict": "ok",
@@ -69450,6 +69814,10 @@
    "verdict": "ok",
    "note": "checker fix D3: source Short Answer fs-id1167663986207 ('nearly universal'), unkeyed upstream, reverted from an invented-distractor multiplechoice to a selfcheck; model answer assembled from § The Genetic Code's own sentences (the 'nearly universal' claim plus the selenocysteine/pyrrolysine exceptions the module actually prints). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "b1789a0d94c6a788": {
+   "verdict": "ok",
+   "note": "KC 1 1.6 § body Membranes of the Anterior (Ventral) Body Cavity (fs-id1364871), paragraph fs-id1465748, m45990"
+  },
   "b17d59a86d882b21": {
    "verdict": "ok",
    "note": "selfcheck, converted unkeyed CT fs-id1167662442840 per run-facts Part C item 2; model assembles the Normal Microbiota protective-role sentence and the Infections-of-the-Skin opportunistic-pathogen sentence, both this module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -69763,6 +70131,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b251624d736a941e": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § body introduction (fs-id1955355), m46073"
+  },
   "b25473d02af7d620": {
    "verdict": "ok",
    "note": "Try It #1 (x=sqrt t, y=2t+3, 0<=t<=3): eliminated t=x^2 (x>=0), y=2x^2+3; independently derived right-half-upward-parabola vertex (0,3) to (sqrt3,9), matches source solution alt-text 'right half of an upward opening parabola'. Distractors (full parabola, downward-opening) independently checked as wrong shapes. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -69858,6 +70230,14 @@
   "b26aa3ef2c4f6cd4": {
    "verdict": "ok",
    "note": "body CYU converted to a 2-bin sortbins (compare-and-contrast pair): primary vs secondary cutaneous aspergillosis, from the Cutaneous Aspergillosis paragraph's own sentences | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b26d433489bc5de6": {
+   "verdict": "ok",
+   "note": "KC 1 2.5 § Polysaccharides, m46008",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71166,6 +71546,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "b58a5570b0404c52": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § body Endoplasmic Reticulum (fs-id1751556), m46023",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -76208,6 +76596,14 @@
     "result": "agrees"
    }
   },
+  "c26e5bf60d67d00c": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § Acids, m46006",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c27438bb4aa89631": {
    "verdict": "ok"
   },
@@ -78228,6 +78624,14 @@
   "c7adfbb141158a23": {
    "verdict": "ok",
    "note": "author-built from § Chemical and Enzymatic Mediators Found in Body Fluids, Check Your Understanding: \"Explain the difference between endogenous and exogenous mediators\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c7ae6b86e18c0d65": {
+   "verdict": "ok",
+   "note": "KC 1 1.5 § body Positive Feedback (fs-id1946828), paragraphs fs-id2104151 and fs-id2570988, m45989",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -82798,6 +83202,14 @@
     "result": "agrees"
    }
   },
+  "d41b50f30d39d55b": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § body The Levels of Organization (fs-id1688531), figure fig-ch01_02_03 Organ Systems of the Human Body (continued), media eip-id2162133, m45985",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d423c655e985779d": {
    "verdict": "ok",
    "note": "glossary recall: polyp (fs-idm244410240) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -83845,6 +84257,14 @@
   "d6c43fe8485cc386": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "d6c4b9cbef59b7cf": {
+   "verdict": "ok",
+   "note": "KC 1 1.4 § body Narrow Range of Temperature (fs-id2352651), paragraph fs-id1688531, m45988",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d6c4c94334074908": {
    "verdict": "ok",
@@ -87750,6 +88170,14 @@
     "result": "agrees"
    }
   },
+  "e0e249f6d721bbef": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § glossary organism (fs-id1855299), body The Levels of Organization (fs-id2242359), m45985",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e0ebb0dcf1e1b692": {
    "verdict": "ok",
    "note": "Practice selfcheck, unkeyed Short Answer fs-id1167663652655 — model answer assembled from the neutralizing-antibody definition sentence and the plaque-reduction-assay/titer sentences, which sit in different paragraphs; rewritten per checker finding so antibody-virus complex formation (removed by phagocytosis) and receptor-blocking read as the module's two parallel outcomes of virion coating, not one causing the other. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -87787,6 +88215,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e10a7d6d5f47f10c": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § Polar Covalent Bonds, m46000"
   },
   "e10ca0a1c45c3502": {
    "verdict": "ok",
@@ -88257,6 +88689,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e22c995727ad6f01": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Enzymes and Other Catalysts, m46004"
   },
   "e22ff6c6ac1a727d": {
    "verdict": "ok",
@@ -91737,6 +92173,14 @@
   "eb8b9728688d51e9": {
    "verdict": "ok"
   },
+  "eba19c0a52ab47e2": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § body introduction, branches of physiology paragraph (fs-id2297149), m45983",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eba63cfc3a6cce17": {
    "verdict": "ok",
    "note": "sortbins, converted from unkeyed Short Answer fs-id1172100984608 ('What are some differences in chromosomal structures between prokaryotes and eukaryotes?') under the life-sciences 'comparison/compare-and-contrast pair fixes a category assignment' rule. Bins: Eukaryotic cells / Prokaryotic cells. All 8 items are the module's own distinguishing phrases (§ Organization of Eukaryotic Chromosome: linear, multiple chromosomes, diploid/two copies, nucleus; § Organization of Prokaryotic Chromosomes: circular, single chromosome, haploid/one copy, nucleoid). Interleaved, no bin-label word ('eukaryotic'/'prokaryotic') on any item; renamed bins from 'chromosomes' to 'cells' after the lint flagged the word collision with item text. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -93763,6 +94207,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 495): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "f105e9c6bb283c29": {
+   "verdict": "ok",
+   "note": "KC 1 4.2 § body The Epithelial Cell (fs-id1168010), m46048",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f10ddba0e52eaf60": {
    "verdict": "ok",
    "note": "key-term recall: Helicobacter pylori; printed in § Epsilonproteobacteria: \"Helicobacter pylori can cause chronic gastritis, which can lead to ulcers and stomach cancer.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -94052,6 +94504,14 @@
   },
   "f1fb84852bf6f974": {
    "verdict": "ok"
+  },
+  "f1fd5e47388008ca": {
+   "verdict": "ok",
+   "note": "KC 1 1.5 § body Positive Feedback (fs-id1946828), paragraph fs-id2239774, m45989",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f1fd86a56664e2b1": {
    "verdict": "ok",
@@ -95541,6 +96001,10 @@
     "result": "agrees"
    }
   },
+  "f56e6e306f2b2dc1": {
+   "verdict": "ok",
+   "note": "KC 1 4.5 § body neuron morphology paragraph (fs-id1315893) + summary (fs-id1098367), m46057"
+  },
   "f5701060eb1a4cad": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663529755 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -95679,6 +96143,14 @@
   "f5ec4763d93abf5c": {
    "verdict": "ok",
    "note": "source exercise fs-id1409734 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f5f50632e84df6bf": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § Characteristics of Chemical Reactions, m46004",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95945,6 +96417,14 @@
   "f68ad4d129fc6ac8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f69341462dad4080": {
+   "verdict": "ok",
+   "note": "KC 1 1.7 § body Magnetic Resonance Imaging (fs-id1364876), paragraph fs-id2523214, m45991",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96946,6 +97426,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f8e75e78b59d53e3": {
+   "verdict": "ok",
+   "note": "KC 1 2.4 § Salts, m46006"
   },
   "f8f3eea50813df00": {
    "verdict": "ok",
@@ -99072,6 +99556,14 @@
    "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 33.03 line 216; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fe0c08f117014f0e": {
+   "verdict": "ok",
+   "note": "KC 1 1.7 § body X-Rays (fs-id2622766), paragraph fs-id1431659, m45991",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

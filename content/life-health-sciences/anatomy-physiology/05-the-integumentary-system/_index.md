@@ -2,7 +2,7 @@
 title: The Integumentary System
 description: The skin and its accessory structures — the layers of the skin and the hypodermis, hair, nails, and sweat and sebaceous glands, the functions of the skin including temperature regulation, and common diseases, disorders, and injuries of the skin and how it heals.
 source_chapter: "5"
-weight: 5
+weight: 6
 ---
 
 {{< mediafigure src="anatomy-physiology/500_Splash_Image" kind="photo" alt="Two photographs side by side. Panel a, in black and white: a bald tattoo artist in a white T-shirt, his own forearm covered in tattoos, sits bent forward in a studio and holds a tattoo machine in a gloved hand against the bare foot of a client, whose leg reaches in from the left with the foot resting on a cushioned support. Panel b, in color against a dark background: a close-up of a dark-haired woman's face in profile, wearing a drop earring, as another person's hands work on her eyebrow with a fine brush while holding a small palette of four eye-shadow shades just above her face." eager="true" >}}
