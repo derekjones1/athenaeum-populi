@@ -159,6 +159,11 @@ them.
    summary; the raw rows showed it does. Open the image or the CNXML
    for every figure and table decision. Part C also names the exemplar
    page the authors copy (chapter 6's authors asked).
+   When Part C does the floor arithmetic for a thin section, it counts a
+   glossary term as a recall item only after checking that no source item
+   on the page keys or prints it: 9.3's two terms and 9.7's one were all
+   headline exclusions, and both authors had to find more items than Part
+   C promised *(chapter 9)*.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
@@ -195,7 +200,11 @@ it, `grep -n 'Anatomy' docs/openstax-errata.md > $SP/ap-errata.txt` (the
 book's existing errata and "Reviewed and *not* errata" lines) and name
 that file in the prompt.
 
-After the last author reports, grep every page of the wave for plain-text
+After the last author reports, run `node tools/source/openstax-source.mjs
+build-map` at once: `verify:source-coverage` and `verify:source-keys`
+silently skip a chapter with no `source-map.json` rows, and every chapter
+9 checker had to hand-count its page's coverage because the map was built
+only at close-out *(chapter 9)*. Then grep every page of the wave for plain-text
 cross-references to sibling sections that are now on disk — authors
 launched together cannot link pages that did not exist yet — and have the
 authors convert them to real links before the checkers repeat the finding
@@ -330,7 +339,9 @@ the session.
 3. Pins: chapter and section counts are NOT restated in prose — `npm run
    source:verify` prints them from the map, the A&P test in
    `tools/source/openstax-source.test.mjs` reads them from disk, and
-   `documentation.test.mjs` fails a doc that restates one — but the
+   `documentation.test.mjs` fails a doc that restates one — the file is
+   `node:test`, so the pins Clerk runs `node --test tools/source/openstax-source.test.mjs`,
+   not vitest *(chapter 9)* — but the
    "committed provenance maps all N local sections" test in the same
    file hard-codes the corpus total and the book's count: raise both
    literals by the chapter's section count *(chapter 5)*. Update: the

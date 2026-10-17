@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 8,
-      "mappedSections": 45,
+      "localChapters": 9,
+      "mappedSections": 52,
       "units": [
         {
           "index": 1,
@@ -656,6 +656,69 @@
       "moduleId": "m46376",
       "sourceTitle": "Development of the Appendicular Skeleton",
       "moduleSha256": "5da44f14b57ecff54dbfa5a4dc296f9638ac98a6a44275f8a8d07941f7ce411a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/01-classification-of-joints.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.1",
+      "moduleId": "m46383",
+      "sourceTitle": "Classification of Joints",
+      "moduleSha256": "58be2b482056565697b8e539e3db1f1cf3ab6f694ad7d3fdcf132759c1f3ec2a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/02-fibrous-joints.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.2",
+      "moduleId": "m46403",
+      "sourceTitle": "Fibrous Joints",
+      "moduleSha256": "69a7ac4edb201531eee4aee5190937e6c4e044ce363d69ee2cb4b05fcd697af7"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/03-cartilaginous-joints.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.3",
+      "moduleId": "m46381",
+      "sourceTitle": "Cartilaginous Joints",
+      "moduleSha256": "c4f616e12b3ac2a9a5b2457dd04c6797d6a0b8d7d55b22e8d36a24101e7ef5d3"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/04-synovial-joints.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.4",
+      "moduleId": "m46394",
+      "sourceTitle": "Synovial Joints",
+      "moduleSha256": "023e130729c0054206479e83abde417dc2eefbcee67823c05542adf9b479756a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/05-types-of-body-movements.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.5",
+      "moduleId": "m46398",
+      "sourceTitle": "Types of Body Movements",
+      "moduleSha256": "b4e8e167fcb2b35b64cb31ebd5fce12f3fc31e0b0341b0d91d602971faa049f0"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/06-anatomy-of-selected-synovial-joints.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.6",
+      "moduleId": "m46377",
+      "sourceTitle": "Anatomy of Selected Synovial Joints",
+      "moduleSha256": "6bcd3fe72a29f27ba7b86135862a51c30e181ec2b1f52a1aa7cc7a33aeda383a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/07-development-of-joints.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "9.7",
+      "moduleId": "m46388",
+      "sourceTitle": "Development of Joints",
+      "moduleSha256": "0754ad2dfaf82a6f026f3a9eb46fccfe3d0bac1ac695129341176d0e79863ede"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

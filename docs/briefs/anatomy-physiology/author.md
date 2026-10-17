@@ -154,7 +154,10 @@ do not print or what authors most often get wrong.
    say so in the footer); `## Practice` last; then `---` and the `<small>`
    footer whose `Changes:` clause names EVERY adaptation and is true of the
    page — counts of graded items and `selfcheck`s, the Interactive Link
-   Questions graded vs standing as prompts, every filler item and its
+   Questions graded vs standing as prompts (the reason per prompt comes
+   from the run facts — "the answer is only in the linked media" and "no
+   single module sentence fixes it" are different reasons, and one blanket
+   clause for all of a page's prompts was false on 9.6), every filler item and its
    sentence, every one-word correction, every reordered item, every
    author-written caption, every reworded figure reference. Every number
    comes from your ledger's tally (§5), written after the last

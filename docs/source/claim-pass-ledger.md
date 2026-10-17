@@ -43,6 +43,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 06-bone-tissue-and-the-skeletal-system | 7 | done Oct 15 2026 (in the authoring run) | 1934–1940 |
 | Anatomy and Physiology | 07-axial-skeleton | 5 | done Oct 16 2026 (in the authoring run) | 1958–1969 |
 | Anatomy and Physiology | 08-the-appendicular-skeleton | 5 | done Oct 16 2026 (in the authoring run) | 1999, 2003, 2009, 2013, 2014, 2015 |
+| Anatomy and Physiology | 09-joints | 7 | done Oct 16 2026 (in the authoring run) | 2017–2023 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

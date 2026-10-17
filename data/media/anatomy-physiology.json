@@ -849,6 +849,29 @@
       "alt": "This image shows how a red blood cell responds to the tonicity of solution. The left panel shows the hypertonic case, the middle panel shows the isotonic case and the right panel shows the hypotonic case.",
       "caption": "A hypertonic solution has a solute concentration higher than another solution. An isotonic solution has a solute concentration equal to another solution. A hypotonic solution has a solute concentration lower than another solution."
     },
+    "0910_Oateoarthritis_Hip": {
+      "source": "media/0910_Oateoarthritis_Hip.jpg",
+      "sourceSha256": "188dacbc4ba5fe7c0e11f83258b1b08156119b01618e3e91665209e42f4a0f41",
+      "module": "m46394",
+      "kind": "photo",
+      "width": 1702,
+      "height": 803,
+      "variants": [
+        {
+          "width": 800,
+          "height": 377,
+          "file": "0910_Oateoarthritis_Hip-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 755,
+          "file": "0910_Oateoarthritis_Hip-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel in this figure shows a normal hip joint, and the bottom panel shows a hip joint with osteoarthritis.",
+      "caption": "Osteoarthritis of a synovial joint results from aging or prolonged joint wear and tear. These cause erosion and loss of the articular cartilage covering the surfaces of the bones, resulting in inflammation that causes joint stiffness and pain."
+    },
     "100_Blood_Pressure": {
       "source": "media/100_Blood_Pressure.jpg",
       "sourceSha256": "4208ffda42be7333bba1df148d96797d109bed1a56a901ca7611c1d707836633",
@@ -4593,6 +4616,466 @@
       "transparent": false,
       "alt": "The top panel of this figure shows the different types of fracture in the humerus, and the bottom panel shows the different types of fracture in the radius.",
       "caption": "Falls or direct blows can result in fractures of the surgical neck or shaft of the humerus. Falls onto the elbow can fracture the distal humerus. A Colles fracture of the distal radius is the most common forearm fracture."
+    },
+    "900_Girl_Kayaking": {
+      "source": "media/900_Girl_Kayaking.jpg",
+      "sourceSha256": "c0ee3711474cbd741aa41fba0dacd8d6f07e2186f95a17ca2344435bc40b422c",
+      "module": "m46402",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "900_Girl_Kayaking-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "900_Girl_Kayaking-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This picture shows a girl kayaking in the ocean.",
+      "caption": "Without joints, body movements would be impossible. (credit: Graham Richardson/flickr.com)"
+    },
+    "901_Skull_Sutures": {
+      "source": "media/901_Skull_Sutures.jpg",
+      "sourceSha256": "eb2a96ac7d609e9b21c82bd9150a3c620a69bc98482be4239e4e430720e864e2",
+      "module": "m46383",
+      "kind": "photo",
+      "width": 1405,
+      "height": 1201,
+      "variants": [
+        {
+          "width": 800,
+          "height": 684,
+          "file": "901_Skull_Sutures-800.webp"
+        },
+        {
+          "width": 1405,
+          "height": 1201,
+          "file": "901_Skull_Sutures-1405.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the lateral view of the human skeleton. The lambdoid, coronal, and squamous sutures are labeled.",
+      "caption": "The suture joints of the skull are an example of a synarthrosis, an immobile or essentially immobile joint."
+    },
+    "902_Intervertebral_Disk-02": {
+      "source": "media/902_Intervertebral_Disk-02.jpg",
+      "sourceSha256": "e918c7a31915b12c318c34cbd86977cf5de62ede2504d08be9fc5626ec349b88",
+      "module": "m46383",
+      "kind": "photo",
+      "width": 1185,
+      "height": 855,
+      "variants": [
+        {
+          "width": 800,
+          "height": 577,
+          "file": "902_Intervertebral_Disk-02-800.webp"
+        },
+        {
+          "width": 1185,
+          "height": 855,
+          "file": "902_Intervertebral_Disk-02-1185.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the lateral view of the intervertebral disc located between two vertebral discs.",
+      "caption": "An intervertebral disc unites the bodies of adjacent vertebrae within the vertebral column. Each disc allows for limited movement between the vertebrae and thus functionally forms an amphiarthrosis type of joint. Intervertebral discs are made of fibrocartilage and thereby structurally form a symphysis type of cartilaginous joint."
+    },
+    "903_Multiaxial_Joint": {
+      "source": "media/903_Multiaxial_Joint.jpg",
+      "sourceSha256": "d10ca7f34a80eaf2658c66e08708782500d722e7d210fea160052f48e347d087",
+      "module": "m46383",
+      "kind": "photo",
+      "width": 1791,
+      "height": 1071,
+      "variants": [
+        {
+          "width": 800,
+          "height": 478,
+          "file": "903_Multiaxial_Joint-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 956,
+          "file": "903_Multiaxial_Joint-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a multiaxial joint. The left panel shows the acetabulum of the hip bone and the head of the femur. The right panel shows a simplified ball-and-socket joint structure to illustrate the movement of the hip joint.",
+      "caption": "A multiaxial joint, such as the hip joint, allows for three types of movement: anterior-posterior, medial-lateral, and rotational."
+    },
+    "904_Fibrous_Joints": {
+      "source": "media/904_Fibrous_Joints.jpg",
+      "sourceSha256": "e9328954deb3baf350836cd1bddce309e48aa874a10bb26c2c88381006f11e46",
+      "module": "m46403",
+      "kind": "photo",
+      "width": 2535,
+      "height": 1115,
+      "variants": [
+        {
+          "width": 800,
+          "height": 352,
+          "file": "904_Fibrous_Joints-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 703,
+          "file": "904_Fibrous_Joints-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different types of fibrous joints. The right panel shows sutures, the middle panel shows an interosseous membrane, and the left panel shows a gomphosis.",
+      "caption": "Fibrous joints form strong connections between bones. (a) Sutures join most bones of the skull. (b) An interosseous membrane forms a syndesmosis between the radius and ulna bones of the forearm. (c) A gomphosis is a specialized fibrous joint that anchors a tooth to its socket in the jaw."
+    },
+    "905_The_Newborn_Skull": {
+      "source": "media/905_The_Newborn_Skull.jpg",
+      "sourceSha256": "df9c900e40eae97036afc59d2d28bef6df086e59f75e210184c8bcf6be5a191f",
+      "module": "m46403",
+      "kind": "photo",
+      "width": 1281,
+      "height": 856,
+      "variants": [
+        {
+          "width": 800,
+          "height": 534,
+          "file": "905_The_Newborn_Skull-800.webp"
+        },
+        {
+          "width": 1281,
+          "height": 856,
+          "file": "905_The_Newborn_Skull-1281.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the lateral view of the newborn skull with the major parts labeled.",
+      "caption": "The fontanelles of a newborn’s skull are broad areas of fibrous connective tissue that form fibrous joints between the bones of the skull."
+    },
+    "906_Cartilaginous_Joints": {
+      "source": "media/906_Cartilaginous_Joints.jpg",
+      "sourceSha256": "2506ebfafdfa19b3688c8a306657732e382fa1e631ac114b3086433e88d39681",
+      "module": "m46381",
+      "kind": "photo",
+      "width": 2274,
+      "height": 1078,
+      "variants": [
+        {
+          "width": 800,
+          "height": 379,
+          "file": "906_Cartilaginous_Joints-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 758,
+          "file": "906_Cartilaginous_Joints-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the cartilaginous joints. The left panel shows a hyaline cartilage joint, and the right panel shows the fibrocartilaginous joint of the pubic symphisis.",
+      "caption": "At cartilaginous joints, bones are united by hyaline cartilage to form a synchondrosis or by fibrocartilage to form a symphysis. (a) The hyaline cartilage of the epiphyseal plate (growth plate) forms a synchondrosis that unites the shaft (diaphysis) and end (epiphysis) of a long bone and allows the bone to grow in length. (b) The pubic portions of the right and left hip bones of the pelvis are joined together by fibrocartilage, forming the pubic symphysis."
+    },
+    "907_Synovial_Joints": {
+      "source": "media/907_Synovial_Joints.jpg",
+      "sourceSha256": "eb9480413f02feb90c913e0b866d9ded54c0f9bab21f20f28c3b27186f79570d",
+      "module": "m46394",
+      "kind": "photo",
+      "width": 1409,
+      "height": 1593,
+      "variants": [
+        {
+          "width": 800,
+          "height": 904,
+          "file": "907_Synovial_Joints-800.webp"
+        },
+        {
+          "width": 1409,
+          "height": 1593,
+          "file": "907_Synovial_Joints-1409.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a synovial joint. The cavity between two bones contains the synovial fluid which lubricates the two joints.",
+      "caption": "Synovial joints allow for smooth movements between the adjacent bones. The joint is surrounded by an articular capsule that defines a joint cavity filled with synovial fluid. The articulating surfaces of the bones are covered by a thin layer of articular cartilage. Ligaments support the joint by holding the bones together and resisting excess or abnormal joint motions."
+    },
+    "908_Bursa": {
+      "source": "media/908_Bursa.jpg",
+      "sourceSha256": "96fa1a9603c58a9a67bfa6e56e0e750f752ecd225016700b15e7afc08e3dacf6",
+      "module": "m46394",
+      "kind": "photo",
+      "width": 1360,
+      "height": 1091,
+      "variants": [
+        {
+          "width": 800,
+          "height": 641,
+          "file": "908_Bursa-800.webp"
+        },
+        {
+          "width": 1360,
+          "height": 1091,
+          "file": "908_Bursa-1360.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the location of the bursae which are fluid filled sacs in a bone joint. The major parts of the joint are labeled.",
+      "caption": "Bursae are fluid-filled sacs that serve to prevent friction between skin, muscle, or tendon and an underlying bone. Three major bursae and a fat pad are part of the complex joint that unites the femur and tibia of the leg."
+    },
+    "909_Types_of_Synovial_Joints": {
+      "source": "media/909_Types_of_Synovial_Joints.jpg",
+      "sourceSha256": "d60470b3a632e13e43f2faebe3defabb9c36c0b33e96908bf56511cae9cec512",
+      "module": "m46394",
+      "kind": "photo",
+      "width": 2354,
+      "height": 2806,
+      "variants": [
+        {
+          "width": 800,
+          "height": 953,
+          "file": "909_Types_of_Synovial_Joints-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1907,
+          "file": "909_Types_of_Synovial_Joints-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This composite image shows the different types of synovial joints in the body. In the center of the figure is a skeleton, and call outs from each joint show their names and locations.",
+      "caption": "The six types of synovial joints allow the body to move in a variety of ways. (a) Pivot joints allow for rotation around an axis, such as between the first and second cervical vertebrae, which allows for side-to-side rotation of the head. (b) The hinge joint of the elbow works like a door hinge. (c) The articulation between the trapezium carpal bone and the first metacarpal bone at the base of the thumb is a saddle joint. (d) Plane joints, such as those between the tarsal bones of the foot, allow for limited gliding movements between bones. (e) The radiocarpal joint of the wrist is a condyloid joint. (f) The hip and shoulder joints are the only ball-and-socket joints of the body."
+    },
+    "911_Body_Movements-Page_1": {
+      "source": "media/911_Body_Movements(Page 1).jpg",
+      "sourceSha256": "c4b4b60d2f724c409bbde1a5db98f57230ee56f1ae3e66d04c596b35cab50331",
+      "module": "m46398",
+      "kind": "photo",
+      "width": 2430,
+      "height": 2878,
+      "variants": [
+        {
+          "width": 800,
+          "height": 947,
+          "file": "911_Body_Movements-Page_1-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1895,
+          "file": "911_Body_Movements-Page_1-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multi-part image shows different types of movements that are possible by different joints in the body.",
+      "caption": "Synovial joints give the body many ways in which to move. (a)–(b) Flexion and extension motions are in the sagittal (anterior–posterior) plane of motion. These movements take place at the shoulder, hip, elbow, knee, wrist, metacarpophalangeal, metatarsophalangeal, and interphalangeal joints. (c)–(d) Anterior bending of the head or vertebral column is flexion, while any posterior-going movement is extension. (e) Abduction and adduction are motions of the limbs, hand, fingers, or toes in the coronal (medial–lateral) plane of movement. Moving the limb or hand laterally away from the body, or spreading the fingers or toes, is abduction. Adduction brings the limb or hand toward or across the midline of the body, or brings the fingers or toes together. Circumduction is the movement of the limb, hand, or fingers in a circular pattern, using the sequential combination of flexion, adduction, extension, and abduction motions. Adduction/abduction and circumduction take place at the shoulder, hip, wrist, metacarpophalangeal, and metatarsophalangeal joints. (f) Turning of the head side to side or twisting of the body is rotation. Medial and lateral rotation of the upper limb at the shoulder or lower limb at the hip involves turning the anterior surface of the limb toward the midline of the body (medial or internal rotation) or away from the midline (lateral or external rotation)."
+    },
+    "911_Body_Movements-Page_2": {
+      "source": "media/911_Body_Movements(Page 2).jpg",
+      "sourceSha256": "1e3e96813e2f8efa4230cdaaf4295ad89d6309ccb8781b5171d325c6d42185bc",
+      "module": "m46398",
+      "kind": "photo",
+      "width": 2459,
+      "height": 2655,
+      "variants": [
+        {
+          "width": 800,
+          "height": 863,
+          "file": "911_Body_Movements-Page_2-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1727,
+          "file": "911_Body_Movements-Page_2-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multi-part image shows different types of movements that are possible by different joints in the body.",
+      "caption": "(g) Supination of the forearm turns the hand to the palm forward position in which the radius and ulna are parallel, while forearm pronation turns the hand to the palm backward position in which the radius crosses over the ulna to form an \"X.\" (h) Dorsiflexion of the foot at the ankle joint moves the top of the foot toward the leg, while plantar flexion lifts the heel and points the toes. (i) Eversion of the foot moves the bottom (sole) of the foot away from the midline of the body, while foot inversion faces the sole toward the midline. (j) Protraction of the mandible pushes the chin forward, and retraction pulls the chin back. (k) Depression of the mandible opens the mouth, while elevation closes it. (l) Opposition of the thumb brings the tip of the thumb into contact with the tip of the fingers of the same hand and reposition brings the thumb back next to the index finger."
+    },
+    "912_Atlantoaxial_Joint": {
+      "source": "media/912_Atlantoaxial_Joint.jpg",
+      "sourceSha256": "d0c0977b2f2adf98f6e1ad672b8d0cfd64c54c5dbf48bf47450435aee3a2e8fd",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 1228,
+      "height": 793,
+      "variants": [
+        {
+          "width": 800,
+          "height": 516,
+          "file": "912_Atlantoaxial_Joint-800.webp"
+        },
+        {
+          "width": 1228,
+          "height": 793,
+          "file": "912_Atlantoaxial_Joint-1228.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the atlantoaxial joint.",
+      "caption": "The atlantoaxial joint is a pivot type of joint between the dens portion of the axis (C2 vertebra) and the anterior arch of the atlas (C1 vertebra), with the dens held in place by a ligament."
+    },
+    "913_Tempomandibular_Joint": {
+      "source": "media/913_Tempomandibular_Joint.jpg",
+      "sourceSha256": "a6652e869061306dfdf1d1bd050e6350125b53b7a43163a1358741350482a55b",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 1313,
+      "height": 1240,
+      "variants": [
+        {
+          "width": 800,
+          "height": 755,
+          "file": "913_Tempomandibular_Joint-800.webp"
+        },
+        {
+          "width": 1313,
+          "height": 1240,
+          "file": "913_Tempomandibular_Joint-1313.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the location and structure of the temporomandibular joint. On the top right, a lateral view of the skull is shown and the tempomandibular joint is highlighted in grey. A magnified view shows the structure of the joint with the main parts labeled.",
+      "caption": "The temporomandibular joint is the articulation between the temporal bone of the skull and the condyle of the mandible, with an articular disc located between these bones. During depression of the mandible (opening of the mouth), the mandibular condyle moves both forward and hinges downward as it travels from the mandibular fossa onto the articular tubercle."
+    },
+    "914_Shoulder_Joint": {
+      "source": "media/914_Shoulder_Joint.jpg",
+      "sourceSha256": "9e38f2daa7c1c0840208131cbf8da028963d44bd5ed2da0ae2515d80f65d9d40",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 1376,
+      "height": 1006,
+      "variants": [
+        {
+          "width": 800,
+          "height": 585,
+          "file": "914_Shoulder_Joint-800.webp"
+        },
+        {
+          "width": 1376,
+          "height": 1006,
+          "file": "914_Shoulder_Joint-1376.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the shoulder joint. The main ligaments and parts are labeled.",
+      "caption": "The glenohumeral (shoulder) joint is a ball-and-socket joint that provides the widest range of motions. It has a loose articular capsule and is supported by ligaments and the rotator cuff muscles."
+    },
+    "915_Elbow_Joint": {
+      "source": "media/915_Elbow_Joint.jpg",
+      "sourceSha256": "8598dc3a8e6a820535011478af11104bee65673209491854e9c6cc3c3b3a865f",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 2251,
+      "height": 1922,
+      "variants": [
+        {
+          "width": 800,
+          "height": 683,
+          "file": "915_Elbow_Joint-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1366,
+          "file": "915_Elbow_Joint-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the elbow joint. The top, left panel shows the medial sagittal section of the right elbow joint. The top, right panel shows the lateral view of the right elbow joint, and the bottom, left panel shows the medial view of the right elbow joint.",
+      "caption": "(a) The elbow is a hinge joint that allows only for flexion and extension of the forearm. (b) It is supported by the ulnar and radial collateral ligaments. (c) The annular ligament supports the head of the radius at the proximal radioulnar joint, the pivot joint that allows for rotation of the radius."
+    },
+    "916_Hip_Joint": {
+      "source": "media/916_Hip_Joint.jpg",
+      "sourceSha256": "76746f0bdf6f3f3db999f499b6f8d86bfa8645700c10bdb69700fca4ebdce239",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 1105,
+      "height": 2030,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1469,
+          "file": "916_Hip_Joint-800.webp"
+        },
+        {
+          "width": 1105,
+          "height": 2030,
+          "file": "916_Hip_Joint-1105.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows different views of the hip joint. The top panel shows the frontal view of the right hip joint, the middle panel shows the anterior view, and the bottom panel shows the posterior view.",
+      "caption": "(a) The ball-and-socket joint of the hip is a multiaxial joint that provides both stability and a wide range of motion. (b–c) When standing, the supporting ligaments are tight, pulling the head of the femur into the acetabulum."
+    },
+    "917_Knee_Joint": {
+      "source": "media/917_Knee_Joint.jpg",
+      "sourceSha256": "bfb947719cb6b0ea5a61b94fa9d50d425d40b692ab4b05dfb848d19d337028b9",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 2250,
+      "height": 1725,
+      "variants": [
+        {
+          "width": 800,
+          "height": 613,
+          "file": "917_Knee_Joint-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1226,
+          "file": "917_Knee_Joint-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the different views of the knee joint. The top, left panel shows the sagittal view of the right knee joint. The top, left panel shows the superior view of the right tibia, identifying the ligaments. The bottom, right panel shows the anterior view of the right knee.",
+      "caption": "(a) The knee joint is the largest joint of the body. (b)–(c) It is supported by the tibial and fibular collateral ligaments located on the sides of the knee outside of the articular capsule, and the anterior and posterior cruciate ligaments found inside the capsule. The medial and lateral menisci provide padding and support between the femoral condyles and tibial condyles."
+    },
+    "918_Knee_Injury": {
+      "source": "media/918_Knee_Injury.jpg",
+      "sourceSha256": "7662840db5437a53cc9dd52d7302230915b5a0fc7a93b95f84f1e497ab95f3b7",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 1518,
+      "height": 908,
+      "variants": [
+        {
+          "width": 800,
+          "height": 478,
+          "file": "918_Knee_Injury-800.webp"
+        },
+        {
+          "width": 1518,
+          "height": 908,
+          "file": "918_Knee_Injury-1518.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows an injured knee joint. A red arrow points from left to right showing the direction of force that caused the injury.",
+      "caption": "A strong blow to the lateral side of the extended knee will cause three injuries, in sequence: tearing of the tibial collateral ligament, damage to the medial meniscus, and rupture of the anterior cruciate ligament."
+    },
+    "919_Ankle_Feet_Joints": {
+      "source": "media/919_Ankle_Feet_Joints.jpg",
+      "sourceSha256": "4897a372bf34201b04ccafe9b8b06e76fa80a8556aefee48df19d735123f4b59",
+      "module": "m46377",
+      "kind": "photo",
+      "width": 1481,
+      "height": 1677,
+      "variants": [
+        {
+          "width": 800,
+          "height": 906,
+          "file": "919_Ankle_Feet_Joints-800.webp"
+        },
+        {
+          "width": 1481,
+          "height": 1677,
+          "file": "919_Ankle_Feet_Joints-1481.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the ankle and feet joints. The top panel shows the medial view of the ankle joint, and the bottom panel shows the lateral view.",
+      "caption": "The talocrural (ankle) joint is a uniaxial hinge joint that only allows for dorsiflexion or plantar flexion of the foot. Movements at the subtalar joint, between the talus and calcaneus bones, combined with motions at other intertarsal joints, enables eversion/inversion movements of the foot. Ligaments that unite the medial or lateral malleolus with the talus and calcaneus bones serve to support the talocrural joint and to resist excess eversion or inversion of the foot."
     }
   }
 }

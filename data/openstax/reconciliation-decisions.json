@@ -2553,6 +2553,89 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2015,
       "rationale": "The module says the clavicle \"does not develop via endochondral ossification\" and develops \"through the process of intramembranous ossification\" (para fs-id1375181, Chapter Review para fs-id1641196, Critical Thinking solution para fs-id1424068) yet is \"not complete until age 25,\" but ossification at 25 is the fusion of a sternal-end secondary center, which forms in cartilage, and Section 6.4 (m46301, fs-id1173842, fs-id1639567) says only a good deal of the clavicles forms intramembranously (Ogata and Uhthoff, Acta Orthop Scand 1990;61:330-334; Gray's Anatomy, 1918). The page reads \"develops largely through intramembranous ossification\" and \"not complete until about age 25, when a secondary ossification center at its sternal end, which forms in cartilage, fuses with the rest of the bone,\" matched in the Summary and the model answer, with a visible Source note and a footer sentence. Settles the chapter 6 claim pass's flag. Evidenced by the chapter 8 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/01-classification-of-joints.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46383",
+      "sourceElementIds": [
+        "fs-id2044686",
+        "fs-id2058706",
+        "fs-id2346796",
+        "fs-id2303902",
+        "fs-id1378612"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2017,
+      "rationale": "The module gives the manubriosternal joint as its example of a synarthrosis (para fs-id2044686, Chapter Review para fs-id2058706, Critical Thinking solution para fs-id2346796) and keys Review Question fs-id2303902 (options fs-id1378612) to it, but Section 9.3 (m46381, fs-id2527402, fs-id1837923) classes it as a symphysis and every symphysis as an amphiarthrosis, so the question has no correct option on the book's own terms (Sarcinelli et al., Surg Radiol Anat 2019, doi:10.1007/s00276-018-2154-6: a symphysis). The page reads \"the first sternocostal joint, the cartilaginous joint (a synchondrosis) that anchors the first rib to the manubrium of the sternum\" (a synchondrosis and so a synarthrosis by Section 9.3, fs-id2265909), drops the body clause \"for protection of the heart\", and prints \"the first sternocostal joint\" as option B (key B unchanged; DISCLOSED_DEVIATIONS entry of kind key), each with a visible Source note and a footer sentence. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/02-fibrous-joints.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46403",
+      "sourceElementIds": [
+        "fs-id2293668"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2018,
+      "rationale": "The module says the frontal and maxillary halves joined by sutures at birth \"disappear by the age of 14-15 in females and 15-16 in males\" (para fs-id2293668), but Section 7.5 (m46348, fs-id1241553) says \"During early childhood ... the two halves of the mandible and frontal bone fuse together to form single bones\", so the adolescent ages can stand only for the maxillae. The page keeps the ages for the maxillary halves and has the frontal halves fuse during early childhood, with a visible Source note citing Section 7.5 and a footer sentence; the maxillary cloze stops before the changed clause and is untouched. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/04-synovial-joints.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46394",
+      "sourceElementIds": [
+        "fs-id2584481"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2019,
+      "rationale": "The module says ischial bursitis occurs in the bursa that \"separates the skin from the ischial tuberosity\" (Bursitis box para fs-id2584481), but the ischial (ischiogluteal) bursa lies deep to the gluteus maximus, a submuscular bursa on the module's own scheme (Cho et al., Korean J Radiol 2004;5(4):280-286, doi:10.3348/kjr.2004.5.4.280: \"located deep to the gluteus muscles\"). The page reads \"separates the gluteus maximus muscle from the ischial tuberosity\" with a visible Source note and a footer sentence; no Practice item rests on the old wording. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/05-types-of-body-movements.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46398",
+      "sourceElementIds": [
+        "fs-id1979479"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2020,
+      "rationale": "The module says medial and lateral rotation \"can only occur at the multiaxial shoulder and hip joints\" (para fs-id1979479), but Section 9.6 (m46377, fs-id2227441, fs-id2526857, and the Summary fs-id1433963) describes a slight medial and lateral rotation of the femur at the knee, a hinge joint, and some rotation of the leg when the knee is flexed. The page reads \"which occur mainly at the multiaxial shoulder and hip joints\" with a visible Source note linking Section 9.6 and a footer sentence; no Practice item rests on \"only\". Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/06-anatomy-of-selected-synovial-joints.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46377",
+      "sourceElementIds": [
+        "fs-id1894060"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2021,
+      "rationale": "The module says \"most dislocations of the humerus occur in an inferior direction\" (para fs-id1894060), but about 95 percent of shoulder dislocations are anterior and fewer than 1 percent inferior (Kooshesh and Garmel, Perm J 2011;15(1):66-67, doi:10.7812/tpp/10-093); the head escapes through the weaker inferior capsule and comes to rest in front of the glenoid. The page reads that \"most dislocations of the humerus are anterior (anteroinferior) dislocations\" with a visible Source note and a footer sentence; no Practice item is built on the direction. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/06-anatomy-of-selected-synovial-joints.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46377",
+      "sourceElementIds": [
+        "fs-id2096998"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2022,
+      "rationale": "The Chapter Review says \"Only rotation is allowed in the thoracic region\" (para fs-id2096998), but the module's own body (fs-id1966899) says the overlapping spinous processes and thoracic cage \"greatly limit flexion, extension, and lateral flexion\", a limitation, not a prohibition. The page reads \"flexion, extension, and lateral flexion are greatly limited\" with a visible Source note and a footer sentence; no Practice item rests on the old wording. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/09-joints/07-development-of-joints.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46388",
+      "sourceElementIds": [
+        "fs-id2226322",
+        "fs-id1961436",
+        "fs-id2531951"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2023,
+      "rationale": "The module says \"The bones that form the base and facial regions of the skull develop through the process of endochondral ossification\" (para fs-id2226322) and its Critical Thinking solution (fs-id2531951, para fs-id1961436) says \"The remaining skull bones and the bones of the limbs are formed by endochondral ossification\", but Section 6.4 (m46301, fs-id1804592, fs-id1639567, fs-id1173842) says the flat bones of the face form by intramembranous ossification and only the bones at the base of the skull by endochondral ossification (the same defect as entry 1958 on m46348). The page reads \"The bones that form the base of the skull\" and \"The bones at the base of the skull and the bones of the limbs are formed by endochondral ossification\", each with a visible Source note, and a footer sentence; Review Question fs-id1380698 keeps its options because its option c stays false as a whole. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
     }
   ]
 }

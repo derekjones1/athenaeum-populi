@@ -637,6 +637,102 @@ footer is still the placeholder, which both the 8.2 and 8.4 authors hit.
 And a selfcheck model answer can print the key of a later graded item, the
 8.4 forward leak. A separate agent measured a lint for that second gap.
 
+## Chapter 9 (October 16–17, 2026)
+
+One wave on the AGENTS.md roster, started on a clean tree after chapter 8
+was committed first (4ee3c2c). Seven Opus authors launched together, an
+Opus checker per page as its author reported, one Opus claim pass over the
+seven pages and the Clerk-written landing page, an Opus alt-errata
+verifier, and the blind solve in a fresh Fable subagent with masked pages.
+Sonnet clerks did the landing page, the run facts, the pins, the errata
+draft, and this history. Authors reported Practice items per page of 10
+(9.1), 10 (9.2), 9 (9.3), 12 (9.4), 11 (9.5), 14 (9.6), and 8 (9.7), 74 in
+all, 60 of them auto-graded, plus four graded Interactive Link
+self-checks in the bodies of 9.4 and 9.6. The chapter's 66 source
+exercises (33 Review, 14 Critical Thinking, 19 Interactive Link) all
+reached their pages.
+
+Part C settled the nineteen Interactive Link Questions as four graded
+`selfcheck`s and fifteen prompts. The four graded ones are fixed by one
+artifact each: the rheumatoid-arthritis question by 9.4's Aging box, the
+shoulder-movements and lateral-ankle-ligaments questions by 9.6's Chapter
+Review sentences, and the femoral-neck-fracture question by a 9.6 body
+sentence. The synovial-joint range-of-motion question is fixed by a 9.4
+body sentence too, but a source Review Question on the same page grades
+the identical question, so it stands as a prompt under each-thing-once.
+The chapter's one table, Movements of the Joints in 9.5, became a
+four-bin `sortbins` over Pivot, Hinge, Plane, and Ball-and-socket: the
+Condyloid and Saddle rows share one Movement cell word for word, so no
+item from that cell could be true of exactly one bin, and dropping those
+two groups fit the four-bin cap. 9.1's author built a second `sortbins`
+from prose alone (structural versus functional classes); its checker
+judged it honest and found the same form on seven earlier pages, and the
+life-sciences playbook now admits it. The three feature boxes titled only
+"Joints" print as "Aging and the Joints" and "Disorders of the Joints"
+with no invented topic.
+
+Checkers found 25 defects on lint-clean pages (9.1: 3, 9.2: 4, 9.3: 4,
+9.4: 1, 9.5: 5, 9.6: 4, 9.7: 1) and the parent verified each image
+finding against the vendored WebP before relaying it. The classes: alt or
+`longdesc` clauses that misread the drawing (9.1's femoral head drawn out
+of its socket, 9.2's single tooth in panel c, 9.3's epiphysis wider than
+the shaft, 9.4's exploded hinge model and arrow counts, 9.5's solid-versus-
+faint convention, abduction arrow, and two head-rotation arrows); accept
+gaps for the module's own forms ("pivot joint", "facet joints",
+"opposition of the thumb", "small movements", "planes of motion",
+"embryonic limb bud"); a hint naming the subsection whose title was the
+item's key (9.2); a cloze that re-asked a Critical Thinking clause (9.1);
+a two-sentence cloze (9.2); and footer clauses that overstated (9.3,
+9.5) or gave one false blanket reason for ten Interactive Link prompts
+(9.6). Each page's author applied its own checker's fixes. The verifier
+later found two page alt defects the checkers had passed (9.2's locator
+box sits on the front teeth of both jaws; 9.6's elbow panel c is the left
+elbow, not "the same joint"), which the parent applied, and two 9.2
+source typos the author had transcribed verbatim.
+
+The claim pass raised six findings and the parent accepted all six: 9.1
+gives the manubriosternal joint as a synarthrosis while 9.3 classes it a
+symphysis and every symphysis an amphiarthrosis, which touched a source
+Review key, so the first sternocostal joint (a synchondrosis) stands in
+for it in the body, Summary, model answer, and option, disclosed as a key
+deviation in the 7.5 shape; 9.2 assigns the maxillae's adolescent fusion
+ages to the frontal bone too, against 7.5's early childhood; 9.4 puts the
+ischial bursa under the skin when it lies deep to the gluteus maximus; 9.5
+says medial and lateral rotation occur "only" at the shoulder and hip
+while 9.6 rotates the femur at the knee; 9.6 says most shoulder
+dislocations are inferior when about 95 percent are anterior; and 9.6's
+Summary turns the thoracic region's "greatly limited" flexion into
+"only rotation". The 9.7 checker added a seventh, the facial bones formed
+by endochondral ossification, the same defect as erratum 1958 on 7.5,
+corrected the same way. The landing page's objectives lead-in had been
+normalized to "After studying this chapter"; the intro module alone
+prints "After this chapter", and the parent restored it. Nine suspicions
+had no evidence and were not acted on; a Review distractor the module
+half-supports ("a narrow fibrous joint" for a syndesmosis) was ruled not
+errata.
+
+The blind solve agreed 59 of 60 with one flag, adjudicated for the key:
+9.7's "Synovial joints ________" is keyed to the interzone, and the
+distractor "are produced by endochondral ossification" rests on a loose
+topic sentence the paragraph then narrows. The solver also noticed that
+9.5's "panels a–d" pointer for limb flexion covers two neck panels, which
+the source's own "a-d" prints; reviewed, not errata. The verifier was
+killed by an Opus weekly limit after 9.5 and resumed from its transcript
+the next day. Three Interactive Link targets answered badly on the link
+check: the childhand radiograph's host returns 500 and stays linked with
+a footer clause and an erratum; the gout and hip-replacement pages are
+403 bot walls and need nothing. Errata 2017–2053 (37: 7 claim, 1 link, 10 alt or artwork, 19 typo).
+
+Lessons folded in: the life-sciences "Sort into bins" paragraph admits a
+prose-built classification sortbins; the author brief wants the reason
+per Interactive Link prompt, not a blanket clause; run.md builds the
+source map right after the wave so the checkers' coverage and keys gates
+read the new pages, tells the pins Clerk the source test is `node:test`,
+and has Part C check headline exclusions before it counts a glossary
+term toward a thin section's floor. A CNXML element id can repeat across
+modules (`fs-id2309987` is a paragraph in m46381 and an exercise in
+m46377); the gates key per module, so nothing broke.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

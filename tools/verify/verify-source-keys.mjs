@@ -786,6 +786,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 1958,
     reason: 'the source distractor "intramembranous ossification, which forms the facial bones." is a second correct answer to "Embryonic development of the axial skeleton involves ________." — the book\'s own §6.4 module m46301 says "The flat bones of the face, most of the cranial bones, and a good deal of the clavicles (collarbones) are formed via intramembranous ossification, while bones at the base of the skull and the long bones form via endochondral ossification"; the page prints "intramembranous ossification, which forms the vertebrae" in its place (the module says the vertebral cartilage models "ossify into bone through the process of endochondral ossification"; key "endochondral ossification, which forms the ribs and sternum" unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/09-joints/01-classification-of-joints.md',
+    exercise: 'fs-id2303902',
+    kind: 'key',
+    erratum: 2017,
+    reason: 'the source keys B "the manubriosternal joint" for "Which of these joints is classified as a synarthrosis?"; the book\'s own §9.3 module m46381 says "A narrow symphysis is found at the manubriosternal joint" and "a symphysis is functionally classified as an amphiarthrosis", so on the book\'s terms that joint is an amphiarthrosis; the page prints and keys option B as "the first sternocostal joint", which m46381 makes a synchondrosis ("Permanent synchondroses that do not ossify are found at the first sternocostal joint") and "functionally classified as a synarthrosis" (distractors unchanged)',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

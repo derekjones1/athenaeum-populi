@@ -684,6 +684,14 @@ units, or steps rather than categories is not sortbins material — transcribe
 it and move on. Syntax and the interleave/giveaway rules are in the core
 playbook §3.
 
+**A module with no comparison table may still carry one `sortbins`**
+when the module's own prose fixes a two-to-four-way classification and
+every item is a label the module prints that falls in exactly one bin
+(Anatomy and Physiology 9.1's structural versus functional joint classes;
+earlier pages from 3.1 to 7.3 use the same form). It counts as an
+author-written item: the footer names the sentences it is built from, and
+it adds no claim the module does not make *(ruled October 17, 2026)*.
+
 **Both table orientations qualify, and every qualifying table gets its
 sortbins**. The categories may run along
 the columns (prokaryote | eukaryote) or down the rows (a "Vegetative

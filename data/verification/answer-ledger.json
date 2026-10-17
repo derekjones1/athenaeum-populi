@@ -309,6 +309,14 @@
     "result": "agrees"
    }
   },
+  "00a56f1974ba34a5": {
+   "verdict": "ok",
+   "note": "Review fs-id1380698, key B 'produces the bones of the top and sides of the skull'; body fs-id1249870 confirms",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "00a6a6d69e641c24": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3473,6 +3481,10 @@
   },
   "0800c8a9d6000f96": {
    "verdict": "ok"
+  },
+  "08025a9ca6e0cd71": {
+   "verdict": "ok",
+   "note": "IL fs-id1367709 graded selfcheck; model = source solution verbatim; fixed by body fs-id2307204 necrosis sentence"
   },
   "080485a695682bc9": {
    "verdict": "ok",
@@ -10533,6 +10545,14 @@
     "result": "agrees"
    }
   },
+  "18ac11e6229f2fa0": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "18b02ee4fcb7f7cc": {
    "verdict": "ok",
    "note": "author-built from § Plate Count: \"The results are usually expressed as colony-forming unit s per milliliter (CFU/mL) rather than cells per milliliter because more than one c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -12243,6 +12263,15 @@
     "result": "agrees"
    }
   },
+  "1c8a41179e51e5e2": {
+   "verdict": "ok",
+   "note": "Review fs-id1645676, key C 'develop at an interzone site'; body fs-id2226764 'synovial joints will form ... in an area called the joint interzone'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Key stands. m46388 fs-id2226322 (third paragraph) opens with the loose topic sentence 'A similar process of endochondral ossification gives rise to the bones and joints of the limbs' and then narrows it: the cartilage models convert to bone by endochondral ossification, while 'The synovial joints will form between the adjacent cartilage models, in an area called the joint interzone' and the cavity forms by interzone cell death. The source keys the interzone option and prints the ossification option as a distractor; the topic sentence is recorded as reviewed, not errata (parent, October 16, 2026)."
+   }
+  },
   "1c8a60bc5e206ead": {
    "verdict": "ok",
    "note": "KC 1 1.3 § body Metabolism (fs-id2305458), paragraph fs-id2578934, m45986",
@@ -12377,6 +12406,14 @@
   "1cd751add5ea6d68": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp29686736: model answer transcribes the CNXML solution verbatim in three checkpoint clauses, no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "1cdd58c30c47f168": {
+   "verdict": "ok",
+   "note": "fs-id1927730 key A metacarpophalangeal joint (body fs-id2155865)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1ce0a3e3c9221e96": {
    "verdict": "ok",
@@ -15499,6 +15536,10 @@
     "result": "agrees"
    }
   },
+  "24c6511d7b0b0dc8": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2024053 solution fs-id1423119 verbatim; checkpoints are its own clauses"
+  },
   "24ce0db3517896b9": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -16126,6 +16167,10 @@
     "result": "agrees"
    }
   },
+  "2629a516ed4713ce": {
+   "verdict": "ok",
+   "note": "CT fs-id1853781; model = source solution verbatim; disorders box fs-id2338900"
+  },
   "2629beb34bb5e065": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16256,6 +16301,14 @@
   "268d19ec18965406": {
    "verdict": "ok",
    "note": "KC 1 3.3 § Ribosomes, m58792",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "269527d1701411f1": {
+   "verdict": "ok",
+   "note": "body cloze, m46381 fs-id2379304: 'The gap separating the bones at a symphysis may be narrow or wide.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16753,6 +16806,14 @@
     "result": "agrees"
    }
   },
+  "27be48916026e3e1": {
+   "verdict": "ok",
+   "note": "body cloze, m46381 fs-id1837923: 'numerous bundles of thick collagen fibers'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "27bfe8abfae65110": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16813,6 +16874,10 @@
   },
   "27f1af3d74409f3a": {
    "verdict": "ok"
+  },
+  "27f438db5b488092": {
+   "verdict": "ok",
+   "note": "model answer = source solution verbatim; checks are its clauses"
   },
   "27fe47fb65c489ef": {
    "verdict": "ok",
@@ -19038,6 +19103,14 @@
     "result": "agrees"
    }
   },
+  "2dd073fe20283989": {
+   "verdict": "ok",
+   "note": "Review fs-id2094763 key B cervical; body fs-id1966899",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2dd5bc41877e9985": {
    "verdict": "ok",
    "note": "source exercise fs-idm106393392 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -19272,6 +19345,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "2e4a46d879d546a0": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2753197, model answer = solution fs-id1890680 verbatim"
   },
   "2e52af19b0393c6c": {
    "verdict": "ok",
@@ -21791,6 +21868,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "34bc7c3b0636748c": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2623484 solution fs-id1221046 verbatim; checkpoints are its own clauses"
   },
   "34bfad343a1e9fcc": {
    "verdict": "ok",
@@ -24618,6 +24699,14 @@
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
   },
+  "3bb278fbce604447": {
+   "verdict": "ok",
+   "note": "cloze, § Suture fs-id2293668: At the time of birth, the frontal and maxillary bones…",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3bb404e154d03bcc": {
    "verdict": "ok",
    "note": "m66443 CT solution fs-id1479424 (RNA vs DNA structural differences) verbatim; five CHECKS clauses restate its sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -26325,6 +26414,14 @@
     "result": "agrees"
    }
   },
+  "3fba2550b9950f4c": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch09_01 Example cells; each item unique to its row across all six rows; Condyloid/Saddle rows left out",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3fbb6693e0fd7416": {
    "verdict": "ok",
    "note": "KC 6 30.3 § body, intro paragraph (fs-idp64743840), m66598 — parent re-read against the module"
@@ -26649,6 +26746,10 @@
     "result": "adjudicated",
     "note": "key stands: solver typed the accepted abbreviation plus the key in parentheses; grader gap for the \"X (Y)\" form (proposed grader fold, Sep 23), not a key defect"
    }
+  },
+  "407834eb63b720b6": {
+   "verdict": "ok",
+   "note": "CT fs-id1513483; model = source solution verbatim"
   },
   "4079c0413038f0a0": {
    "verdict": "ok",
@@ -27904,6 +28005,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 618): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "437c1d2c4c334282": {
+   "verdict": "ok",
+   "note": "glossary recall protraction (fs-id1413843); body fs-id1909134",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4385e074c973bce6": {
    "verdict": "ok",
    "note": "source exercise fs-idm78036128 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -28508,6 +28617,14 @@
     "result": "agrees"
    }
   },
+  "44e90d6dc2cbf433": {
+   "verdict": "ok",
+   "note": "Review fs-id1893478, key A matches solution fs-id1393855; body fs-id1339315",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "44eedaeed32a81b3": {
    "verdict": "ok",
    "note": "x^2=4y: 4p=4->p=1; focus=(0,1); matches source exercise fs-id1931374's key exactly. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -28721,6 +28838,10 @@
   "457749e4c0d593f7": {
    "verdict": "ok",
    "note": "re-derived: f(x)=(x-3)^2+1=x^2-6x+10, vertex (3,1) on lattice; matches CNXML Try It (fs-id1169148957608); grid -1..7/-1..9 gives 5 reachable points (gpcheck slack 2). | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "4579838a17efae40": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1425438, model answer = solution fs-id1762382 verbatim"
   },
   "4579ea4b70ba1d43": {
    "verdict": "ok",
@@ -30059,6 +30180,14 @@
     "result": "agrees"
    }
   },
+  "48dabdd44e48e0b2": {
+   "verdict": "ok",
+   "note": "Summary cloze fs-id2166265 'based on how the bones are held together and articulate with each other'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "48db2dba05bd54ba": {
    "verdict": "ok",
    "note": "re-read against CNXML m46023 and current page",
@@ -30473,6 +30602,10 @@
   "49dedcf746ed5a7d": {
    "verdict": "ok",
    "note": "Visual Connection exercise fs-idp163052304/fs-idp122564624 (m66392): model answer is the source solution verbatim except the source's 'wont' corrected to 'won't' (typo fix, reported as a source defect). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "49e352c1521717a8": {
+   "verdict": "ok",
+   "note": "CT fs-id1288186, model answer = solution fs-id2602543 verbatim; rubric clauses copied"
   },
   "49e8a6c9b95c531f": {
    "verdict": "ok",
@@ -31667,6 +31800,10 @@
     "result": "agrees"
    }
   },
+  "4cc6cd210b170952": {
+   "verdict": "ok",
+   "note": "Interactive Link fs-id1910573 graded per run facts Part C; fixed by Aging box fs-id1372881; model answer = solution fs-id1412545 verbatim"
+  },
   "4cc8d494b5372496": {
    "verdict": "ok",
    "note": "KC 1 3.2 § body Mitochondria (fs-id1334972), m46023",
@@ -32157,6 +32294,14 @@
     "result": "agrees"
    }
   },
+  "4dfbf4c837c17ced": {
+   "verdict": "ok",
+   "note": "Review fs-id2607694 key A annular ligament; body fs-id2602265",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4e0427b84bcec45b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32407,6 +32552,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "4eaae1eb21c70e91": {
+   "verdict": "ok",
+   "note": "model answer = source solution verbatim; checks are its clauses"
   },
   "4ead883de45a29cd": {
    "verdict": "ok",
@@ -34264,6 +34413,14 @@
     "result": "agrees"
    }
   },
+  "53966e67ff4350ad": {
+   "verdict": "ok",
+   "note": "fs-id1476098 key C amphiarthrosis; stem typo invertebral->intervertebral disclosed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5396babbfa76acfd": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -35621,6 +35778,14 @@
     "result": "agrees"
    }
   },
+  "570ab35d23070af4": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2236961; key pivot; accept pivot joint",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "570c0db13d78c93b": {
    "verdict": "ok",
    "note": "Review Question 1 (fs-id2024549); keyed option C 'deoxyribose, thymine, and a phosphate group' matches CNXML solution fs-id1812286; independently confirmed against PDF p-0116 (Q18). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -35997,6 +36162,14 @@
   "57c5e1aac2ebe085": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "57c7ccd0a4dcb484": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2299103; acetabulum printed in body fs-id2352177",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "57c8249dedaff1d5": {
    "verdict": "ok",
@@ -37834,6 +38007,14 @@
    "note": "summary cloze from § summary: \"Leaf tissue consists of the epidermis, which forms the outermost cell layer, and mesophyll and vascular tissue, which make up the inner por…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5c33cfb46508a3e0": {
+   "verdict": "ok",
+   "note": "Review fs-id2307902, key A matches solution fs-id2226690; body fs-id1963516",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -40726,6 +40907,14 @@
     "result": "agrees"
    }
   },
+  "64ba086f40eb45ac": {
+   "verdict": "ok",
+   "note": "cloze, § Suture fs-id2663393: The suture is frequently convoluted…",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "64c1ddbe1399baaf": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661364287 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -41123,6 +41312,14 @@
   },
   "65e71021e18e2596": {
    "verdict": "ok"
+  },
+  "65e7c195b0aa51dd": {
+   "verdict": "ok",
+   "note": "Review fs-id2058403, key D circumduction; body fs-id1909515",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "65e97c7000238ea2": {
    "verdict": "ok",
@@ -42664,6 +42861,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "6a0e2baf8a8c7b3d": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1652743, model answer = solution fs-id2153480 verbatim; 4 checks are its clauses"
+  },
   "6a10261d0d9e8cdc": {
    "verdict": "ok",
    "note": "KC 5 22.2 § introduction, m66545 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -43083,6 +43284,10 @@
    "verdict": "ok",
    "note": "Source Short Answer fs-id1167585133075 (verbatim stem 'Explain how helminths evade the immune system.'), no source key; per parent adjudication, restored as its own Practice selfcheck rather than folded into the similarly worded body CYU bullet. Model answer and 4-checkpoint rubric cover all four of this module's mechanisms: size (immune system ineffective against large helminths), tough cuticle (roundworms), varying surface characteristics/glycan mimicry, and active suppression (S. mansoni degrading host antibodies with proteases plus the general immune-overwhelm sentence) — assembled only from this module's own sentences, no new claim. Hint corrected per checker concern 1: the four reasons come from three module paragraphs (size+cuticle; glycan mimicry; active suppression), not two. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
   },
+  "6b322006f2c3cb33": {
+   "verdict": "ok",
+   "note": "IL fs-id1906424 graded selfcheck; model = source solution verbatim; fixed by Summary fs-id2237266 and body fs-id1761752"
+  },
   "6b4299091a487d01": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -43161,6 +43366,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "6b862232064964e8": {
+   "verdict": "ok",
+   "note": "cloze, § Syndesmosis fs-id2230731: …functionally classified as an amphiarthrosis",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44201,6 +44414,14 @@
   "6e4c6fa927fd7fea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6e4d3b8093827460": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1720297 \"which does not contain blood vessels\"",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45809,6 +46030,14 @@
   "7265490a2c470978": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "726da0a442d68088": {
+   "verdict": "ok",
+   "note": "Review fs-id2063165 key D; body fs-id2200858/fs-id1353360",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -47976,6 +48205,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "7780cd44acab14eb": {
+   "verdict": "ok",
+   "note": "body cloze, m46388 fs-id1249870 last sentence: 'the fontanelles are reduced to suture joints in which the bones are united by a narrow layer of fibrous connective tissue'; 'sutures' grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "77842ca3b5a4afa0": {
    "verdict": "ok",
    "note": "KC 3 14.1 § summary (fs-id2984818), m66386 — parent re-read against the module",
@@ -48995,6 +49232,14 @@
    "note": "summary cloze from § summary: \"Hormonal cues help the kidneys synchronize the osmotic needs of the body.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7a127172a7486f25": {
+   "verdict": "ok",
+   "note": "Review fs-id1269346, key A; glossary supination and body fs-id1837207",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51921,6 +52166,14 @@
     "result": "agrees"
    }
   },
+  "80d92848609efca0": {
+   "verdict": "ok",
+   "note": "author select-the-term; fs-id2291906 'multiaxial joints (for movement in all three anatomical planes)'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "80e33d5a800db932": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53137,6 +53390,14 @@
   "83fc86ab7987485c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8407fc48451e3a04": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55185,6 +55446,14 @@
    "verdict": "ok",
    "note": "selfcheck, two-sentence BBB-crossing mechanism | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "89555ce048723d43": {
+   "verdict": "ok",
+   "note": "Review fs-id1374760, key A, options/order verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "89558b53c2bdba08": {
    "verdict": "ok",
    "note": "body CYU selfcheck (BV box); model answer joins the causative-agent sentence and the Lactobacillus/pH sentence | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -56623,6 +56892,14 @@
     "result": "agrees"
    }
   },
+  "8d09214320f85c50": {
+   "verdict": "ok",
+   "note": "glossary fs-id2265793 meaning; body term-00003 prints key; accept fontanel grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8d12bbfe5f607de7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56892,6 +57169,14 @@
   "8de612cb7249ea08": {
    "verdict": "ok",
    "note": "KC 8 46.3 § The Phosphorus Cycle, m66705 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-44-47.md:400): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
+  "8de676ef1fb8c79f": {
+   "verdict": "ok",
+   "note": "fs-id2226764 key D; options and order verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8decce78ddbe6cf9": {
    "verdict": "ok",
@@ -57788,6 +58073,14 @@
    "verdict": "ok",
    "note": "Vertex form from vertex (-4,7) and point (0,0): a(0+4)^2+7=0 => a=-7/16; matches CNXML solution."
   },
+  "9039507bac69bebb": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "903b480c84eec8a0": {
    "verdict": "ok",
    "note": "source exercise fs-idm26244160 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -58250,6 +58543,14 @@
   "91579db358d3bfbb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "915ae0e4f924a5ea": {
+   "verdict": "ok",
+   "note": "author MC from body fs-id2431430; distractors module joints",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60970,6 +61271,14 @@
    "verdict": "ok",
    "note": "Practice obj2-1a: x^2/16+y^2/9=1, a^2=16>b^2=9 major axis x, vertices (+-4,0); matches CNXML fs-id1331349 solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "9830f8fbc76d5846": {
+   "verdict": "ok",
+   "note": "Review fs-id2242062, key A, options/order verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "98385ba55d6729b5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -61838,6 +62147,14 @@
   "9a7805c5c97ca8ac": {
    "verdict": "ok",
    "note": "author-built from § The Blood-Brain Barrier: \"The blood-brain barrier protects the cerebrospinal fluid from contamination, and can be quite effective at excluding potential microbial pa…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9a791e967678ba8c": {
+   "verdict": "ok",
+   "note": "fs-id2303902; source key B 'the manubriosternal joint' replaced by 'the first sternocostal joint' (parent-accepted claim correction: m46381 makes the manubriosternal joint a symphysis = amphiarthrosis; the first sternocostal joint a synchondrosis = synarthrosis); DISCLOSED_DEVIATIONS kind key",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64153,6 +64470,14 @@
     "result": "agrees"
    }
   },
+  "a08967649350acb3": {
+   "verdict": "ok",
+   "note": "Review fs-id2020365, key C eversion; matches body fs-id1700353",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a08a80096df10f3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -66099,6 +66424,14 @@
     "result": "agrees"
    }
   },
+  "a4e7f1ebb36b45f2": {
+   "verdict": "ok",
+   "note": "Review fs-id2623907, key D, options/order verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a4e8340ae6b3db1b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -67345,6 +67678,14 @@
    "verdict": "ok",
    "note": "Matches m66455 exercise fs-id1731390, solution fs-id1810085 (extracellular matrix function). Model answer verbatim; CHECKS restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "a7fb534cd902be5f": {
+   "verdict": "ok",
+   "note": "glossary recall deltoid ligament; body fs-id1761752",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a7fb902c76f9e8e6": {
    "verdict": "ok",
    "note": "Glossary textin, definition id fs-idm244920544: 'long-term depression (LTD)' = 'prolonged decrease in synaptic coupling between a pre- and postsynaptic cell' — matches, accept covers LTD. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -68544,6 +68885,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ab316418cba2d36e": {
+   "verdict": "ok",
+   "note": "IL fs-id2634184 graded selfcheck; model = source solution verbatim; fixed by Summary fs-id2176349 and glossary glenohumeral joint"
   },
   "ab380d900439599d": {
    "verdict": "ok",
@@ -76470,6 +76815,14 @@
     "result": "agrees"
    }
   },
+  "bec2b96ef0ac9d9c": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1335682; key articular tubercle printed in body fs-id1380884",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "becb5f2a2c15027a": {
    "verdict": "ok",
    "note": "Review Question fs-id2739491; CNXML solution fs-id2075482 keys option D, 'telomerase' — matches. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -76937,6 +77290,14 @@
   "c0106e68a576459c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c013d635cfb264da": {
+   "verdict": "ok",
+   "note": "body cloze, m46381 fs-id1837923: 'can still allow for limited movement to occur'; 'This' -> referent 'The strength of fibrocartilage' (disclosed); accept small movement (module fs-id1339315 prints 'small movements')",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79953,6 +80314,14 @@
     "result": "agrees"
    }
   },
+  "c7b5cea6403755b7": {
+   "verdict": "ok",
+   "note": "glossary recall zygapophysial joints; accept facet joints (module prints it, body fs-id1933550 and glossary), facet and zygapophysial (head noun dropped); zygapophyseal not printed by module, not accepted",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c7bee360f115752d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -80623,6 +80992,14 @@
     "result": "agrees"
    }
   },
+  "c97f0e1c95fcab6e": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c9814e7753d809c1": {
    "verdict": "ok"
   },
@@ -81241,6 +81618,14 @@
   "cade83f3c63eb0d2": {
    "verdict": "ok",
    "note": "author-built from § HGT in Eukaryotes: \"Transposons or “jumping genes” have shown a transfer between rice and millet plant species.\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cae0d4d07b4d5f25": {
+   "verdict": "ok",
+   "note": "Review fs-id1548317 key C rotator cuff muscles; body fs-id2429784",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -82741,6 +83126,14 @@
     "result": "agrees"
    }
   },
+  "ceebeca7cbe8f43b": {
+   "verdict": "ok",
+   "note": "glossary recall lateral excursion (fs-id1838348); body fs-id1373917",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ceee26c4c6c410bc": {
    "verdict": "ok",
    "note": "multiplechoice from Review Question fs-id1511651; solution label A = 'protein' (proteins can be integral/embedded or peripheral/surface per section text). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -83179,6 +83572,14 @@
   "d01e841ed9b6c5a2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d021b498f367b86d": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -84218,6 +84619,14 @@
    "verdict": "ok",
    "note": "RE#39 m49353 (fs-id1165137863121, intercepts/asymptotes/sketch -> asymptotes part): den (x+2)(x-1) zero at 1,-2 with num -24,-15 nonzero -> VA x=1,x=-2; equal degrees -> HA y=3/1=3; key p1298 #39 prints exactly these with the graph"
   },
+  "d33583ce13467e36": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2129921 sentence 4 limb bud; accept bud|embryonic limb bud added (body says bud, glossary embryonic limb bud)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d33b4dafde8d9dc5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -84463,6 +84872,14 @@
    "note": "key-term recall: planktonic; printed in § Biofilm Formation: \"Free-floating microbial cells that live in an aquatic environment are called planktonic cells.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d3d62300f57d8964": {
+   "verdict": "ok",
+   "note": "Review fs-id1640590, key D matches solution fs-id1748848; body fs-id2265909 + summary support it",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -84755,6 +85172,14 @@
   "d45f4bf57bd5e55c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d46696dc0eba4623": {
+   "verdict": "ok",
+   "note": "author MC from body fs-id1482831 (talus and calcaneus bones); distractors navicular, cuboid (same para), tibia",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -86805,6 +87230,14 @@
     "result": "agrees"
    }
   },
+  "d99a32bfe5dbbc8d": {
+   "verdict": "ok",
+   "note": "Review fs-id2229016 key C uniaxial hinge; body fs-id1838236",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d9a40a51690e28d3": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. 'What number is 35% of 250?' had TWO correct options: n/250=35/100 and n/35=250/100 are the same proportion by alternation (both give n=87.5). The alternated distractor was replaced with n/100=35/250 (n=14); the four options now yield 714.29, 87.50, 14.00, 714.29 so only the declared answer is correct. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -88381,6 +88814,14 @@
     "result": "agrees"
    }
   },
+  "dde262246712eaa6": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2291906 'based on the number of axes of motion provided by each'; accept planes of motion (summary fs-id3038250 'three planes of motions') and planes (fs-id2291906 'one plane'/'two planes')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dde6361d989dcc0b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -89952,6 +90393,14 @@
     "result": "agrees"
    }
   },
+  "e1a3a6e9fa5b4773": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e1a9b54baebc1716": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The action potential is then propagated along a myelinated axon to the axon terminals.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -90440,6 +90889,14 @@
   "e2b2c5c02e4f7aae": {
    "verdict": "ok",
    "note": "CNXML Critical Thinking exercise fs-id1172099892493; source prints no key. Model answer assembled from § Cell Wall (peptidoglycan-as-antibiotic-target sentence)."
+  },
+  "e2bd132625a8fc8b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1844994 pivot joint; accept pivot",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e2bd44482f0c075b": {
    "verdict": "ok",
@@ -92556,6 +93013,14 @@
     "result": "agrees"
    }
   },
+  "e852a3bb828bdee1": {
+   "verdict": "ok",
+   "note": "glossary recall opposition (fs-id2337977); body fs-id1354267 prints it; accept thumb opposition and opposition of the thumb, both module phrasings",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e86347f955c77ff3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -94040,6 +94505,14 @@
     "result": "agrees"
    }
   },
+  "ec4674e2b80bbe9b": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ec4d6d25215fbf8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95386,6 +95859,14 @@
    "verdict": "ok",
    "note": "Body CYU 1/2, § Fermented Foods and Beverages: model answer and both checkpoints assembled from the section's own sentences (bread/yeast, wine/fermentation)."
   },
+  "efdaf72f6959eb31": {
+   "verdict": "ok",
+   "note": "source RQ: stem, options, order, key match CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "efde26378133f9f0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95516,6 +95997,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f048e5f82bc75d41": {
+   "verdict": "ok",
+   "note": "Review fs-id1909302, key C abduction; body fs-id1751608",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0498078b7ea868c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -95576,6 +96065,10 @@
     "result": "agrees"
    }
   },
+  "f061b5c82ce7a757": {
+   "verdict": "ok",
+   "note": "fs-id1415962 model answer = solution fs-id1765034 with 'manubriosternal joint' -> 'first sternocostal joint' (claim correction, Source note after item)"
+  },
   "f062ab07a2a2ab4e": {
    "verdict": "ok",
    "note": "Review Question fs-id1236114, keyed option D (\"a unique set of proteins present in a diseased state\") per source <solution>; matches glossary def of protein signature. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -95595,6 +96088,14 @@
   "f07697a987b60a14": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f07dbe4c3359077d": {
+   "verdict": "ok",
+   "note": "Review fs-id1643864, key B matches solution fs-id1647989; options verbatim, source order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95622,6 +96123,14 @@
   },
   "f090072d61f2a3b6": {
    "verdict": "ok"
+  },
+  "f09088b637a5188e": {
+   "verdict": "ok",
+   "note": "author sortbins; fibrous/cartilaginous/synovial = 'three structural classifications' (fs-id2266063); synarthrosis/amphiarthrosis/diarthrosis = 'functionally classified as' (fs-id2080563)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f098481c3aa1795f": {
    "verdict": "ok",
@@ -96558,6 +97067,10 @@
     "result": "agrees"
    }
   },
+  "f31d1880a0bd0c0e": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2350771, solution fs-id2531951 with claim correction: remaining skull bones -> bones at the base of the skull (6.4; 7.5 ruling); Source note after item"
+  },
   "f31d93f824dcef20": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -97136,6 +97649,14 @@
     "result": "agrees"
    }
   },
+  "f4450179f5c45dd1": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2129921 last sentence: 'covering the ends of the adult bone as the articular cartilage'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f445acda7b48548b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -97636,6 +98157,14 @@
     "result": "agrees"
    }
   },
+  "f592418873fff82a": {
+   "verdict": "ok",
+   "note": "Review fs-id2176080, key A lateral flexion; body fs-id1469460 (plane joints between articular processes) and table Plane row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f5978413ee24116b": {
    "verdict": "ok",
    "note": "KC 3 12.3 § Alleles Can Be Dominant or Recessive, m66488 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -97864,6 +98393,14 @@
    "note": "Glossary recall: alkaliphile, meaning transcribed from the glossary definition (pH nine or above).; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f62121cb716423a8": {
+   "verdict": "ok",
+   "note": "Review fs-id2060975, key C, options/order verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -98723,6 +99260,10 @@
     "result": "agrees"
    }
   },
+  "f80f036fe404441a": {
+   "verdict": "ok",
+   "note": "CT fs-id1700352, model answer = solution fs-id1473954 verbatim; rubric clauses copied"
+  },
   "f81330b1a93bb3a6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98859,6 +99400,10 @@
   "f857a141022313ad": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "f85f3b24fbdaaa8a": {
+   "verdict": "ok",
+   "note": "fs-id2662141 model answer = solution fs-id1879885 verbatim"
   },
   "f86dd50c8d6ebe77": {
    "verdict": "ok",
@@ -100880,6 +101425,14 @@
   "fd49804b2825a7a4": {
    "verdict": "ok",
    "note": "source exercise fs-id1435474 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fd5637603d66ca9e": {
+   "verdict": "ok",
+   "note": "Review fs-id2130927, key A 'the process that replaces hyaline cartilage with bone tissue'; body fs-id2226322 'displaced by bone'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
