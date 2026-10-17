@@ -537,6 +537,106 @@ before it is written; the report-file refusal means agents return their
 reports as text for the parent to save; and the graded Interactive Link
 selfchecks never owe a solution deviation.
 
+## Chapter 8 (October 16, 2026)
+
+One wave on the roster AGENTS.md tabulates (Author = Opus, Blind solver =
+Fable, Clerk = Sonnet), started on a clean tree after chapter 7 was
+committed. Five Opus authors launched together, an Opus checker for each
+page as its author reported, one Opus claim pass once the last page was on
+disk, an Opus alt-errata verifier, and the blind solve in a fresh Fable
+subagent with masked pages. Sonnet clerks did the checklist work: the
+landing page, the run facts, the pins, the errata draft, and this history.
+Authors reported Practice items per page of 10 (8.1), 12 (8.2), 12 (8.3),
+11 (8.4), and 8 (8.5), 53 in all, of which 43 are auto-graded. The coverage
+gate counts two more source rows than the run facts did, because the one
+Interactive Link Question in 8.5 carries lettered sub-asks and the gate
+splits each into its own row; the footer's count of one was right.
+
+Part C settled all nine Interactive Link Questions as prompts inside their
+callouts, none as a graded `selfcheck`. The parent grepped each key against
+the raw CNXML outside the solution, and no body sentence fixes any of them:
+the arthritis and surgery questions are answered only in the linked videos,
+the three arches of the hand are never named in the module, and the 3-D
+pelvis question needs the superior and inferior pubic rami, which the body
+does not say bound the obturator foramen. The chapter's one table, Table
+8.1 on the female and male pelvis, became a `sortbins`, but with the
+subpubic angle row left out: Review Question 5 already keys that fact, and
+a row keyed by a source Review Question is not asked a second time.
+Figures sit inside two callouts (the Runner's Knee imbalance and the
+Clubfoot disorder), where the CNXML puts them, and the 8.5 pointer to "the
+chapter on bone tissue" links to 6.4. The Part C line that justified that
+link was wrong in detail. It said 7.5 had linked the same pointer, but 7.5's
+link to 6.4 sits inside a Source note. The decision stood on the External
+links rule (a page that exists is linked, not left as plain text), and the
+precedent claim was corrected in the parent's notes.
+
+Checkers found 8 defects on lint-clean pages (8.1: 1, 8.2: 3, 8.3: 0, 8.4:
+2, 8.5: 2), plus concerns the parent ruled on. The classes: a hint that
+named one of the two answers its stem asked for (8.1's second Critical
+Thinking item, whose hint pointed to the clavicle fracture paragraph);
+accept gaps where the module's own compound form graded wrong ("triquetrum
+bone" and "deltoid tuberosity of the humerus" in 8.2, "fibular notch of the
+tibia" and "sustentaculum tali of the calcaneus" in 8.4, "apoptosis" and
+"programmed cell death" in 8.5); a longdesc that misplaced a leader (8.2's
+humerus drawing, where the lesser tubercle sits beside the head, not below
+it); a forward leak (8.4's first Critical Thinking model answer printed the
+keys of two Review Questions that follow it, fixed by moving the item
+after them); a footer that misquoted its own correction (8.5); and a footer
+overclaim (8.2). The parent ruled English glosses are not accepted, dropped
+the subpubic pair from 8.3's sortbins, corrected the 8.3 pelvis alt (the
+female brim dips too, which the parent confirmed against the image), and
+kept the pubic-tubercle stem by the 6.3 ruling. Each page's author applied
+its own checker's fixes.
+
+The claim pass raised five findings and the parent accepted all five: the
+lesser trochanter's fusion ages (8.5), the clavicle forming largely by
+intramembranous ossification with a sternal-end secondary center (8.5, which
+contradicts 6.4 and settles the chapter 6 clavicle flag), "nine tendons"
+against the caption's own "nine muscle tendons" (8.2), "the most commonly
+fractured bone" softened to "one of the most" (8.1), and the cuneiforms'
+plantar surface (8.4). The parent added a sixth of his own, from the 8.5
+checker's concern about the embryo caption: the photograph shows simple
+limb buds with no paddles or digit rays, the module's fifth week, and the
+photographer's record gives seven weeks of gestational age, so the caption
+now reads about five weeks of development, with the gestational age beside
+it. The Review distractor "medial condyle" for the femur's muscle
+attachment site is true of the gastrocnemius in the book's own 11.6, but on
+8.4's definition of a condyle the key stands, so it was ruled not errata and
+recorded for the 11.6 run. Nine further suspicions had no evidence and were
+not acted on. The verifier gave 17 source verdicts (and four checks of the pages' own alts): 7 held, 5 typos, and 5
+rejected (the foot figure's "phalange" labels and group label, and three thin
+source alts on the pelvis, ligament, and Q-angle figures). The parent fixed
+two 8.2 footer clauses the verifier caught: the Colles figure shows one
+fracture in a side view and a palm view, each beside a normal wrist, not
+four views of fractures, and the carpal tunnel figure's alt misdescribes a
+section of nine tendons and one nerve as "the nerves", which the footer had
+omitted.
+
+Three Interactive Link targets are unreachable and stay linked, per the
+External links rule: the fractures video and the bunion page redirect to
+bones.emedtv.com, whose host does not resolve, and the foot-bones link
+fails TLS with a certificate for another name. None is a confirmed 404, so
+none was un-linked; each gets a dead-link erratum recording the redirect
+and the failure. The blind solve agreed 43/43 with no flags and no
+unrecognized or missing answers. It ran before the claim fixes, which touched
+only prose, captions, and model answers, and a second emit confirmed no
+packet hash had moved. The solver's two notes (the ischium "posteroinferior"
+in the body against "posterolateral" in the Chapter Review, and the
+glossary's "fourth or fifth week") are recorded as reviewed, not errata.
+Errata 1998–2016 (19: 6 claim, 3 unreachable links, 5 alt or artwork, 5
+typos).
+
+Lessons folded in: the life-sciences External links rule now says a host
+that does not resolve, or fails TLS, is treated like a chain that never
+lands, so it stays linked and noted; a `sortbins` row keyed by a source
+Review Question is left out; run.md now has the parent grep a Part C
+precedent before citing it; and lettered sub-asks count as several coverage
+rows, so the baseline floors are read from the gate, not from the run
+facts. Two tool gaps were reported. `verify-section` passes a page whose
+footer is still the placeholder, which both the 8.2 and 8.4 authors hit.
+And a selfcheck model answer can print the key of a later graded item, the
+8.4 forward leak. A separate agent measured a lint for that second gap.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

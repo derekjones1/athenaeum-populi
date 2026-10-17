@@ -107,16 +107,16 @@ it acts directly on the nephrons and decreases GFR
 ### Describe how hormones like epinephrine, norepinephrine, renin-angiotensin, aldosterone, anti-diuretic hormone, and atrial natriuretic peptide help regulate waste elimination, maintain correct osmolarity, and perform other osmoregulatory functions
 
 {{< textin
+  question="A compound that increases the diameter of blood vessels is called a ________."
+  answer="vasodilator"
+  hint="Look at the first sentence of the last subsection."
+>}}
+
+{{< textin
   question="The enzyme that converts angiotensin I to angiotensin II is called ________."
   answer="angiotensin converting enzyme"
   accept="ACE"
   hint="Look in the paragraph on the renin pathway, just after renin's own step."
->}}
-
-{{< textin
-  question="A compound that increases the diameter of blood vessels is called a ________."
-  answer="vasodilator"
-  hint="Look at the first sentence of the last subsection."
 >}}
 
 {{< textin

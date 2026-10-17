@@ -203,6 +203,13 @@ Binds directly to the active site and mimics the substrate.
   hint="Reread the second paragraph of the section's first main heading."
 >}}
 
+{{< textin
+  question="A small organic molecule, such as a vitamin or its derivative, required to enhance an enzyme's activity is called a(n) ________."
+  answer="coenzyme"
+  accept="co-enzyme"
+  hint="Reread the paragraph that follows the Everyday Connection box."
+>}}
+
 {{< selfcheck question="With regard to enzymes, why are vitamins necessary for good health? Give examples." hint="Reread the paragraph that follows the Everyday Connection box, and the vitamin figure." >}}
 Most vitamins and minerals act as coenzymes and cofactors for enzyme action. Many enzymes require the binding of certain cofactors or coenzymes to be able to catalyze their reactions. Since enzymes catalyze many important reactions, it is critical to obtain sufficient vitamins and minerals from the diet and from supplements. Vitamin C (ascorbic acid) is a coenzyme necessary for the action of enzymes that build collagen, an important protein component of connective tissue throughout the body. Magnesium ion (Mg²⁺) is an important cofactor that is necessary for the enzyme pyruvate dehydrogenase to catalyze part of the pathway that breaks down sugar to produce energy. Vitamins cannot be produced in the human body and therefore must be obtained in the diet.
 ===CHECKS===
@@ -212,13 +219,6 @@ vitamin C (ascorbic acid) is a coenzyme necessary for the action of enzymes that
 magnesium ion (Mg²⁺) is an important cofactor necessary for the enzyme pyruvate dehydrogenase to catalyze part of the pathway that breaks down sugar to produce energy
 vitamins cannot be produced in the human body and must be obtained in the diet
 {{< /selfcheck >}}
-
-{{< textin
-  question="A small organic molecule, such as a vitamin or its derivative, required to enhance an enzyme's activity is called a(n) ________."
-  answer="coenzyme"
-  accept="co-enzyme"
-  hint="Reread the paragraph that follows the Everyday Connection box."
->}}
 
 ---
 

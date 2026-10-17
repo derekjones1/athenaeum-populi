@@ -452,6 +452,14 @@
     "result": "agrees"
    }
   },
+  "01160d462231c338": {
+   "verdict": "ok",
+   "note": "Review fs-id1284315, key B ischial tuberosity; body fs-id1906683",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "011b9bfc08654517": {
    "verdict": "ok",
    "note": "author-built from § Planctomycetes: \"Planctomycetes are unusual in that they reproduce by budding, meaning that instead of one maternal cell splitting into two equal daughter c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -1576,6 +1584,14 @@
    "note": "KC 7 42.2 § body T and B Lymphocytes (fs-idm27018880), m66664 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "036a9b6131c0ec5d": {
+   "verdict": "ok",
+   "note": "summary cloze, m46375 fs-id1977414: 'The pelvis has a pronounced anterior tilt.'; body fs-id1907417 prints 'anterior tilt'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5172,6 +5188,14 @@
     "result": "agrees"
    }
   },
+  "0c2e1f01114bb154": {
+   "verdict": "ok",
+   "note": "fs-id1861683 key A acromion; body fs-id1475196 extending laterally from the spine",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0c2eb95696f28a18": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -7934,6 +7958,14 @@
     "result": "agrees"
    }
   },
+  "12fe455ea60c2acb": {
+   "verdict": "ok",
+   "note": "Review fs-id2480582, key A ilium; body fs-id2303942 'fan-like, superior region'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1303bc7cde942e25": {
    "verdict": "ok",
    "note": "glossary recall: emergent vegetation (fs-idp6812512) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -9781,6 +9813,14 @@
   "16ffdb2221a12cc9": {
    "verdict": "ok",
    "note": "KC 3 16.1 § Prokaryotic versus Eukaryotic Gene Expression, m66503 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1700068c74a9ff94": {
+   "verdict": "ok",
+   "note": "Review fs-id1701110, key C = capitulum, source order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12172,6 +12212,14 @@
    "verdict": "ok",
    "note": "d=(a5-a3)/2=(17-7)/2=5; a2=a3-d=7-5=2. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "1c74dd7eae51dcbc": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2336594 sustentaculum tali; accept talar shelf = the figure 812 label's parenthetical; accept sustentaculum tali of the calcaneus (summary fs-id1917836 prints it)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1c753fb65345c9b7": {
    "verdict": "ok",
    "note": "KC 7 40.4 § body How Blood Flows Through the Body (fs-idp97175712), m66654 — parent re-read against the module",
@@ -13708,6 +13756,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "20157ace45ced657": {
+   "verdict": "ok",
+   "note": "CT fs-id2166873 model = solution fs-id1478362 with claim correction F1 (lesser trochanter plate disappears mid-to-late teens; age between about 10 and the mid-teens); Source note on body paragraph"
   },
   "201e16442fc525f5": {
    "verdict": "ok",
@@ -19496,6 +19548,10 @@
    "verdict": "ok",
    "note": "Practice, § Explain how certain individuals…, selfcheck. Source exercise fs-id1172098548728 (Critical Thinking) — unkeyed, source prints no <solution>. Model answer built by inverting the module's own intact-vs-broken-neck prediction (§ Disproving Spontaneous Generation): this is the one item on the page whose answer requires one step of logical inversion of module sentences rather than only recombining them — flag for checker attention. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "2ef77129cf602485": {
+   "verdict": "ok",
+   "note": "fs-id2018304 model answer = solution fs-id1254323 verbatim"
+  },
   "2ef8ffa640b1f052": {
    "verdict": "ok",
    "note": "author-built from § Characteristics of Birds: \"This gland is an essential to preening (a virtually continuous activity) in most birds because it produces an oily substance that birds use…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -20033,6 +20089,14 @@
    "verdict": "ok",
    "note": "REVISED (checker D4): Source exercise fs-id1167662720542 (Short Answer, no source key) reverted from multiplechoice to selfcheck. Answering 'How can human activity lead to eutrophication?' needs § Nitrogen Cycle paragraph 3's two sentences (fs-id1167662374743) assembled — the first sentence only reaches surface runoff, the second only starts from 'fertilizer runoff' — and the former MC's distractors (sulfate reduction, CO2/rivers) were invented rather than drawn from the module. Model answer is both sentences verbatim; all 3 rubric checkpoints are literal clauses of it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "3046ee787426b540": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2252142; key apical ectodermal ridge printed verbatim in summary and body fs-id2649587",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "304e5dda43b49f39": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20119,6 +20183,14 @@
   "307edc22d71a641a": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 221): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "30808986fb9434c5": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1352026 pollex '(also, thumb) digit 1 of the hand'; body term-00062",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3089d0fef45728c4": {
    "verdict": "ok",
@@ -27182,6 +27254,14 @@
     "result": "agrees"
    }
   },
+  "41d434b62465ac2f": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1192235 strut; referent the clavicle added",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "41db51b24862fe93": {
    "verdict": "ok",
    "note": "point (0,-1): tan t=y/x=-1/0, undefined (x=0); MC option 'Undefined' correct, matches restructuring rationale in front-matter changelog | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -27205,6 +27285,14 @@
   "41e82b18e2bbaf2f": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "41e835149d8dd400": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2271452 nerves and blood vessels; accept: reordered compound (body fs-id1866400 prints blood vessels and nerves), comma-list forms, singular nerve, vessels shortenings; all grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "41f04842b32c7c2d": {
    "verdict": "ok",
@@ -29769,6 +29857,14 @@
     "result": "agrees"
    }
   },
+  "484c03de6d045e9c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2649587, two sentences joined, ridge named as the limb bud's end; key proximal-to-distal verbatim; accept proximodistal (checker fix)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "484ee56abb04d03b": {
    "verdict": "ok",
    "note": "glossary recall: tissue (fs-id1700226) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -30161,6 +30257,14 @@
   "4943998424cb1bd5": {
    "verdict": "ok",
    "note": "graded from bone marrow/thymus/secondary-lymphoid sentences of § T Cell Production and Maturation | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "494770e0af67184d": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2622590 'On the lateral side of the distal tibia is a wide groove called the fibular notch'; accept fibular notch of the tibia (body fs-id1954125 prints it)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "49482f7baa576622": {
    "verdict": "ok",
@@ -31092,6 +31196,14 @@
   "4ba06af4631b9769": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4ba1d147b9f21fee": {
+   "verdict": "ok",
+   "note": "fs-id1211722 key C coracoid process; body fs-id1475196 hook-like, projects anteriorly",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32120,6 +32232,14 @@
   "4e2971ea7127f3c6": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 339): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "4e341095b3b84bc8": {
+   "verdict": "ok",
+   "note": "glossary recall subscapular fossa; body fs-id1989073 prints it; accept irregular plural; graded variants checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4e353161f11e136f": {
    "verdict": "ok",
@@ -33994,6 +34114,14 @@
     "result": "agrees"
    }
   },
+  "533e564bcb065727": {
+   "verdict": "ok",
+   "note": "Review fs-id2020647 key C medial condyle of the tibia; body fs-id2254604 tibial condyles articulate with femoral condyles to form the knee joint",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "53468fa452bac96e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35469,6 +35597,14 @@
     "result": "agrees"
    }
   },
+  "570669490f98d87e": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2337491 verbatim; key cell death; accept selective cell death printed in summary fs-id2252142; accept adds apoptosis|programmed cell death (checker fix, book 4.6 glossary)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5706751b6a8ce32b": {
    "verdict": "ok",
    "note": "KC 2 10.1 § Eukaryotic Chromosomal Structure and Compaction, m66477 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -35589,6 +35725,14 @@
     "result": "agrees"
    }
   },
+  "57440bca1068b7af": {
+   "verdict": "ok",
+   "note": "Review fs-id1909786 key C; fs-id1397163 epiphyseal plate growth lengthens bone",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5746c9df06af0c6e": {
    "verdict": "ok",
    "note": "-17*pi/6 + 12*pi/6 = -5*pi/6 (still negative), + 12*pi/6 again = 7*pi/6, which lies in [0,2*pi) | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -35611,6 +35755,10 @@
   "574ca72de7378281": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "574f6379642491f2": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1571448, model answer = solution fs-id1899363 verbatim"
   },
   "5750461356a2be3d": {
    "verdict": "ok",
@@ -41658,6 +41806,10 @@
    "verdict": "ok",
    "note": "P(11,5)=11*10*9*8*7=55440 (node BigInt); confirmed retyping 'P(11,5)' grades incorrect via checkAnswer. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "67a1aab8567effa2": {
+   "verdict": "ok",
+   "note": "fs-id1311342 model answer = solution fs-id1195292 verbatim"
+  },
   "67a5a91dca38c173": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -42109,6 +42261,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-blind-solver",
+    "result": "agrees"
+   }
+  },
+  "68be3a3138a5f968": {
+   "verdict": "ok",
+   "note": "glossary recall pubic tubercle; body fs-id1424173 'Located superiorly on the pubic body is a small bump called the pubic tubercle'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -47535,6 +47695,14 @@
     "result": "agrees"
    }
   },
+  "770102978c37c3e5": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2661064 acetabulum; body fs-id2661119",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "77031e840114f67e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50143,6 +50311,14 @@
     "result": "agrees"
    }
   },
+  "7cc409923b781613": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2143966 linea aspera; meaning = stem; body fs-id1853818 prints the term",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7cc5c334ac9b7fee": {
    "verdict": "ok",
    "note": "source exercise fs-id1167582472838 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -51460,6 +51636,14 @@
     "result": "agrees"
    }
   },
+  "80245dfa73fe794e": {
+   "verdict": "ok",
+   "note": "Review fs-id1547569, key C; body fs-id1906683 'separating the lesser sciatic notch and greater sciatic notch'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "80270ed702efc313": {
    "verdict": "ok",
    "note": "body selfcheck humoral vs cellular; model traces to fs-id1167660394510 (B cells/antibodies = humoral; T cells/intracellular pathogens = cellular). Distinct from the Practice SA item on the same topic (different wording, not folded, per run-facts C4). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -51639,6 +51823,14 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8092fb169f347449": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1610861 deltoid tuberosity; body term-00018 prints it (accept deltoid tuberosity of the humerus)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -62086,6 +62278,14 @@
    "verdict": "ok",
    "note": "m66620 Critical Thinking fs-idp59208528, model answer reuses the source solution verbatim ('Neurons contain organelles common to all cells... axons that can send these signals to other cells'); checkpoints decompose it with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "9bd22e2cca88f3b5": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1977414: 'The small, rounded pisiform bone articulates with the anterior surface of the triquetrum bone.' (accept triquetrum bone)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9bd9fe7c4bc9e59d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -63418,6 +63618,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "9f1b208dbca54689": {
+   "verdict": "ok",
+   "note": "Review fs-id1689617 key D talus; body fs-id1469365 talus articulates with the tibia and fibula to form the ankle joint",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9f1b9c7d2741bd2b": {
    "verdict": "ok",
    "note": "KC 5 27.1 § Processes of Animal Reproduction and Embryonic Development, m66577 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology knowledge check 21-29 author (KC) selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the incomplete/complete metamorphosis paragraph, Section 27.1)"
@@ -63605,6 +63813,10 @@
     "result": "agrees"
    }
   },
+  "9f9cc1c7f57f5783": {
+   "verdict": "ok",
+   "note": "CT fs-id1751550 model = solution fs-id2094304 with claim correction F2 (largely intramembranous; about 25 with sternal-end cartilage secondary center); rubric matched"
+  },
   "9fa22eb12abd6e8f": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -63761,6 +63973,14 @@
   "a011de8c8648f850": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a01292dbb8af7209": {
+   "verdict": "ok",
+   "note": "Review fs-id2004911 key A; fs-id1375181 clavicle intramembranous",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64147,6 +64367,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a10f77729898d53b": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1892718, model answer = solution fs-id1406236 verbatim; checks are its clauses"
+  },
   "a114110d93758099": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64386,6 +64610,14 @@
   "a195fd63ad9800b3": {
    "verdict": "ok",
    "note": "10.3 Short Answer (m58837 fs-id1172098391477, unkeyed) restored Sep 22 2026 after a dropped-exercise finding; the module does not discuss RNA interference, so per microbiology.md \"says what the module gives and stops\" the model answer quotes the RNA-as-Hereditary-Information dsRNA sentences; parent checked against m58837."
+  },
+  "a199673a4317c287": {
+   "verdict": "ok",
+   "note": "fs-id1383481 key D supraspinous fossa; body fs-id1989073 superior to the spine",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a19ee576cbe905ff": {
    "verdict": "ok",
@@ -65759,6 +65991,14 @@
   "a4862a99ca59a1b9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a4866835b3d52e6c": {
+   "verdict": "ok",
+   "note": "fs-id1326592 key C acromioclavicular joint; body fs-id1200622 shoulder separation = AC dislocation",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67936,6 +68176,14 @@
   "aa355d2d231dfea6": {
    "verdict": "ok",
    "note": "source exercise fs-id1167661419638 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "aa3650aad257de07": {
+   "verdict": "ok",
+   "note": "Review fs-id2203573, key D = 60, options 20/30/40/60 in source order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76065,6 +76313,14 @@
   "be4dcc8f4d822230": {
    "verdict": "ok"
   },
+  "be55d2efe45ea048": {
+   "verdict": "ok",
+   "note": "Review fs-id1424133, key A; body fs-id1764952 subpubic angle larger in females; B/C/D false per fs-id1468745, fs-id2661119/fs-id1956779, fs-id1907417",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "be5bf5455a48c0c6": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"In conservative replication, the parental DNA remains together, and the newly formed daughter strands are together.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -76100,6 +76356,10 @@
   "be69160275e20820": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "be6c27fca9e3193f": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1838361, model answer = solution fs-id1989698 verbatim"
   },
   "be7484b2f1d74dfe": {
    "verdict": "ok",
@@ -77219,6 +77479,14 @@
    "note": "glossary recall: hyperextension (fs-idp247082832) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c16a6a6ca5b6d30b": {
+   "verdict": "ok",
+   "note": "Review fs-id1266074, key B = has a head that articulates with the radial notch of the ulna, source order",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -80156,6 +80424,14 @@
     "result": "agrees"
    }
   },
+  "c92b37174383d7a2": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2010118 soleal line; meaning = stem; body fs-id2253056 (4th Tibia paragraph) prints it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c930a009c70bf676": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 73): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -81250,6 +81526,10 @@
   "cb904c89c78c5ca4": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "cb9471e91cfb14fc": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1752976, model answer = solution fs-id1891151 verbatim; checks are its clauses; moved to objective 2 after Review fs-id1689617"
   },
   "cb9839547d8dcce0": {
    "verdict": "ok",
@@ -83144,6 +83424,14 @@
     "result": "agrees"
    }
   },
+  "d0cc51496c88a7fc": {
+   "verdict": "ok",
+   "note": "Review fs-id1845404 key D the rotation of the limbs; fs-id1898814 seventh week rotation",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d0ce796371d32600": {
    "verdict": "ok"
   },
@@ -83578,6 +83866,14 @@
   "d2029f86c6102952": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d21642023035f5e0": {
+   "verdict": "ok",
+   "note": "Review fs-id2030135 key B lesser trochanter; body fs-id1387348 'A single, powerful muscle attaches to the lesser trochanter'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d2192e0f2d8a86ba": {
    "verdict": "ok",
@@ -84043,6 +84339,14 @@
   "d38fcd1aad6ddf8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d390b7cabf946383": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1956779 'The superior opening is the greater sciatic foramen'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85048,6 +85352,14 @@
    "verdict": "ok",
    "note": "Matches m66446 visual-connection note fs-id1456208, solution fs-id1299772 (second half, on large cell size — split from the small-cell-size selfcheck per the footer's disclosure). Model answer verbatim; CHECKS restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "d5e3fb5bc526a198": {
+   "verdict": "ok",
+   "note": "Review fs-id1648525 key C 26; body: 7 tarsal + 5 metatarsal + 14 phalanges",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5e4771886ff4564": {
    "verdict": "ok",
    "note": "selfcheck, two sentences joined by however (asymptomatic vs immunocompromised) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -86000,6 +86312,14 @@
   "d81f4e418d8d773e": {
    "verdict": "ok",
    "note": "Matches m66455 exercise fs-id1725733, solution fs-id1775312 (plasmodesma vs. gap junction structure). Reworded antecedent ('They'→'Plasmodesmata and gap junctions') with no added claim; all three CHECKS restate the solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "d8235529a963a43c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2080518: 'The proximal end of the ulna resembles a crescent wrench with its large, C-shaped trochlear notch.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d827e85945a8f7c3": {
    "verdict": "ok",
@@ -87682,6 +88002,14 @@
     "result": "agrees"
    }
   },
+  "dce815301b3aac8e": {
+   "verdict": "ok",
+   "note": "Review fs-id2309520, key D = scaphoid, source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dce980cc2b28800c": {
    "verdict": "ok",
    "note": "KC 2 10.5 § body Binary Fission, bidirectional-replication sentence (parent replacement of the origin recall), m66481 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -88088,6 +88416,14 @@
   "ddf9353119410ec3": {
    "verdict": "ok",
    "note": "unkeyed source SA fs-id1172100719799; per run-facts C4 #12 stays selfcheck (two adjacent module sentences, not one); model answer = those two sentences. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ddfc6f8d0ba5f7d1": {
+   "verdict": "ok",
+   "note": "table tbl-ch08_01, 8 cells binned by column (subpubic-angle row left out: Review fs-id1424133 keys it); 'of the pelvis' dropped from the two pelvic-weight cells (bin word)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ddfe46a9af7e1ea4": {
    "verdict": "ok",
@@ -88504,6 +88840,14 @@
   "df3bb0011dfaad77": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "df40572444af33f6": {
+   "verdict": "ok",
+   "note": "Review fs-id1378753, key B = 3; body fs-id2654201 'formed by three separate bones'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -92744,6 +93088,14 @@
    "verdict": "ok",
    "note": "Practice (source fs-id1165135664922, building height, angles 35/53deg, 250ft closer): angle at closer point (interior)=180-53=127; angle at top=180-35-127=18; distance from closer point to top=250*sin(35)/sin(18)=464.033; height=that*sin(53)=370.593 -> 371 ft (nearest foot). Matches CNXML answer 371 ft."
   },
+  "e9bf5efa61fd7992": {
+   "verdict": "ok",
+   "note": "fs-id1470998 key B sternal end; body fs-id2241809 sternal end articulates with manubrium",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e9bfddbfd520c128": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93346,6 +93698,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "eb7d77604fcc5134": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1475287, model answer = solution fs-id1892295 verbatim"
   },
   "eb7e2fd8cbea16d9": {
    "verdict": "ok"
@@ -94054,6 +94410,14 @@
   "ed35547e235522c0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ed3a5b2409a47fed": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1513538 surgical neck; body term-00016",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95282,6 +95646,14 @@
     "result": "agrees"
    }
   },
+  "f0aad06c920780ab": {
+   "verdict": "ok",
+   "note": "Review fs-id2051628, key A = greater tubercle, source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0b157501f6fd7fd": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -95724,6 +96096,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f2013fbbf11d1455": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1473044, model answer = solution fs-id2081069 verbatim"
   },
   "f20c2f5f13565778": {
    "verdict": "ok"
@@ -99559,6 +99935,14 @@
   "fb26928d407605ce": {
    "verdict": "ok",
    "note": "e^{3x-5}=(47-7.9)/7=5.5857...; x=(ln(5.5857...)+5)/3=2.24007... rounds to 2.2401 (nearest ten-thousandth). Computed via node. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "fb2e77c8ac362798": {
+   "verdict": "ok",
+   "note": "Review fs-id2350603 key C; body fs-id2253056 interosseous membrane unites tibia and fibula; distractors are fibula facts",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fb33e3ab0702b9bf": {
    "verdict": "ok",

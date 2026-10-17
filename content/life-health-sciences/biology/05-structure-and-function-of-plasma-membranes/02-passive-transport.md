@@ -298,15 +298,6 @@ no water taken from tissues or added to them from the blood
   hint="Reread the opening paragraph of the section's fifth main heading."
 >}}
 
-{{< selfcheck question="A cell develops a mutation in its potassium channels that prevents the ions from leaving the cell. If the cell's aquaporins are still active, what will happen to the cell? Be sure to describe the tonicity and osmolarity of the cell." hint="Reread the Tonicity paragraph on osmolarity and the Channels subsection on aquaporins." >}}
-Without functional potassium channels, the potassium ions that are pumped into the cell will accumulate. This increases the osmolarity inside the cell, creating a hypotonic solution. Since the plasma membrane is still selectively permeable to water by the aquaporins, water will flow into the cell. If the potassium concentration is high enough, enough water will eventually flow into the cell to lyse it.
-===CHECKS===
-the potassium ions that are pumped into the cell will accumulate
-this increases the osmolarity inside the cell, creating a hypotonic solution
-water will flow into the cell
-enough water will eventually flow into the cell to lyse it
-{{< /selfcheck >}}
-
 {{< textin
   question="A solution whose osmolarity is lower than the cell's cytoplasm, causing water to enter the cell, is called ________ relative to the cell."
   answer="hypotonic"
@@ -318,6 +309,15 @@ enough water will eventually flow into the cell to lyse it
   answer="isotonic"
   hint="Reread the third subsection under the section's fifth main heading."
 >}}
+
+{{< selfcheck question="A cell develops a mutation in its potassium channels that prevents the ions from leaving the cell. If the cell's aquaporins are still active, what will happen to the cell? Be sure to describe the tonicity and osmolarity of the cell." hint="Reread the Tonicity paragraph on osmolarity and the Channels subsection on aquaporins." >}}
+Without functional potassium channels, the potassium ions that are pumped into the cell will accumulate. This increases the osmolarity inside the cell, creating a hypotonic solution. Since the plasma membrane is still selectively permeable to water by the aquaporins, water will flow into the cell. If the potassium concentration is high enough, enough water will eventually flow into the cell to lyse it.
+===CHECKS===
+the potassium ions that are pumped into the cell will accumulate
+this increases the osmolarity inside the cell, creating a hypotonic solution
+water will flow into the cell
+enough water will eventually flow into the cell to lyse it
+{{< /selfcheck >}}
 
 ---
 

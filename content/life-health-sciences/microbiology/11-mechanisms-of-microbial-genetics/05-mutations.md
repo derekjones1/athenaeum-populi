@@ -412,6 +412,10 @@ compounds identified as mutagenic are further tested for their potential carcino
 
 ### Analyze sequences of DNA and identify examples of types of mutations
 
+{{< textin question="Nonsense mutations produce ________ and frequently nonfunctional proteins." answer="truncated" accept="shorter" hint="Reread the Summary's third bullet." >}}
+
+{{< textin question="Because ribosomes read the mRNA in ________ codons, frameshift mutations can change every amino acid after the point of the mutation." answer="triplet" hint="Reread the second paragraph of Effects of Mutations on Protein Structure and Function." >}}
+
 {{< selfcheck question="Below are several DNA sequences that are mutated compared with the wild-type sequence, `3′-T A C T G A C T G A C G A T C-5′`. Envision that each is a section of a DNA molecule that has separated in preparation for transcription, so you are only seeing the template strand. Construct the complementary DNA sequence (indicating 5′ and 3′ ends) for each mutated DNA sequence, then transcribe (indicating 5′ and 3′ ends) the template strand, and translate the mRNA molecule using the genetic code, recording the resulting amino acid sequence (indicating the N and C termini). What type of mutation is each? Mutated Template Strand #1: `3′-T A C T G T C T G A C G A T C-5′`. Mutated Template Strand #2: `3′-T A C G G A C T G A C G A T C-5′`. Mutated Template Strand #3: `3′-T A C T G A C T G A C T A T C-5′`. Mutated Template Strand #4: `3′-T A C G A C T G A C T A T C-5′`." hint="Work the wild-type strand first, then each mutated strand the same way, and compare codon by codon; the codon table is the genetic-code figure in Section 11.4." >}}
 Using the wild-type template `3′-T A C T G A C T G A C G A T C-5′`, the wild-type complementary DNA strand is `5′-A T G A C T G A C T G C T A G-3′`, the wild-type mRNA is `5′-A U G A C U G A C U G C U A G-3′` (codons AUG-ACU-GAC-UGC-UAG), and the wild-type peptide, N-terminus to C-terminus, is fMet-Thr-Asp-Cys, followed immediately by a stop codon.
 
@@ -429,10 +433,6 @@ The fourth codon, UGA, is a stop codon where wild type has UGC (cysteine), so tr
 This is a frameshift mutation: the reading frame is shifted, so every amino acid after the deletion differs from wild type
 the wild-type peptide, N-terminus to C-terminus, is fMet-Thr-Asp-Cys
 {{< /selfcheck >}}
-
-{{< textin question="Nonsense mutations produce ________ and frequently nonfunctional proteins." answer="truncated" accept="shorter" hint="Reread the Summary's third bullet." >}}
-
-{{< textin question="Because ribosomes read the mRNA in ________ codons, frameshift mutations can change every amino acid after the point of the mutation." answer="triplet" hint="Reread the second paragraph of Effects of Mutations on Protein Structure and Function." >}}
 
 ---
 

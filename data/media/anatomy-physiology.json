@@ -4130,6 +4130,469 @@
       "transparent": false,
       "alt": "This diagram shows how the thoracic vertebra connects to the angle of the rib. The major parts of the vertebra and the processes connecting the vertebra to the rib are labeled.",
       "caption": "Thoracic vertebrae have superior and inferior articular facets on the vertebral body for articulation with the head of a rib, and a transverse process facet for articulation with the rib tubercle."
+    },
+    "800_Dancer": {
+      "source": "media/800_Dancer.jpg",
+      "sourceSha256": "816fef0873fd1d86a21f027f24a67bc676f27f36a00e856330596632b2c608b9",
+      "module": "m46370",
+      "kind": "photo",
+      "width": 1144,
+      "height": 466,
+      "variants": [
+        {
+          "width": 800,
+          "height": 326,
+          "file": "800_Dancer-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 466,
+          "file": "800_Dancer-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a dancer striking a pose.",
+      "caption": "The appendicular skeleton consists of the upper and lower limb bones, the bones of the hands and feet, and the bones that anchor the limbs to the axial skeleton. (credit: Melissa Dooley/flickr)"
+    },
+    "801_Appendicular_Skeleton": {
+      "source": "media/801_Appendicular_Skeleton.jpg",
+      "sourceSha256": "9420125ba3f887812be7d629eb1ba787eef3892ddfb703b6ab186dfb767f3905",
+      "module": "m46374",
+      "kind": "photo",
+      "width": 1190,
+      "height": 1211,
+      "variants": [
+        {
+          "width": 800,
+          "height": 814,
+          "file": "801_Appendicular_Skeleton-800.webp"
+        },
+        {
+          "width": 1190,
+          "height": 1211,
+          "file": "801_Appendicular_Skeleton-1190.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the human skeleton. The left panel shows the anterior view, and the right panel shows the posterior view.",
+      "caption": "The axial skeleton forms the central axis of the body and consists of the skull, vertebral column, and thoracic cage. The appendicular skeleton consists of the pectoral and pelvic girdles, the limb bones, and the bones of the hands and feet."
+    },
+    "802_Pectoral_Girdle": {
+      "source": "media/802_Pectoral_Girdle.jpg",
+      "sourceSha256": "170537b6af4bbd41b2180ba057887964af59e03fb80e942fe44f1d2eafc2844c",
+      "module": "m46374",
+      "kind": "photo",
+      "width": 985,
+      "height": 1358,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1103,
+          "file": "802_Pectoral_Girdle-800.webp"
+        },
+        {
+          "width": 985,
+          "height": 1358,
+          "file": "802_Pectoral_Girdle-985.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the rib change. The top left panel shows the anterior view, and the top right panel shows the posterior view. The bottom panel shows two bones.",
+      "caption": "The pectoral girdle consists of the clavicle and the scapula, which serve to attach the upper limb to the sternum of the axial skeleton."
+    },
+    "803_The_Scapula": {
+      "source": "media/803_The_Scapula.jpg",
+      "sourceSha256": "9468c9e0e4c07a9c16a44c6e6b717e34a6f3bd4181518f1ac6170fad065b61b9",
+      "module": "m46374",
+      "kind": "photo",
+      "width": 972,
+      "height": 641,
+      "variants": [
+        {
+          "width": 800,
+          "height": 527,
+          "file": "803_The_Scapula-800.webp"
+        },
+        {
+          "width": 972,
+          "height": 641,
+          "file": "803_The_Scapula-972.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the anterior and posterior view of the scapula.",
+      "caption": "The isolated scapula is shown here from its anterior (deep) side and its posterior (superficial) side."
+    },
+    "804_Humerus_and_Elbow": {
+      "source": "media/804_Humerus_and_Elbow.jpg",
+      "sourceSha256": "635c9e6bbea1237c28d81fb3808fd8e8a09ce4bbfb4d9b669e95da30fb43a175",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 676,
+      "height": 853,
+      "variants": [
+        {
+          "width": 676,
+          "height": 853,
+          "file": "804_Humerus_and_Elbow-676.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the bones of the upper arm and the elbow joint. The left panel shows the anterior view, and the right panel shows the posterior view.",
+      "caption": "The humerus is the single bone of the upper arm region. It articulates with the radius and ulna bones of the forearm to form the elbow joint."
+    },
+    "805_Ulna_and_Radius": {
+      "source": "media/805_Ulna_and_Radius.jpg",
+      "sourceSha256": "43a0a941123d0324e04d4690e9d4bf1651a66d51b2a2cf52c1bd563e7e4b3dca",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 1271,
+      "height": 1720,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1082,
+          "file": "805_Ulna_and_Radius-800.webp"
+        },
+        {
+          "width": 1271,
+          "height": 1720,
+          "file": "805_Ulna_and_Radius-1271.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the bones of the lower arm.",
+      "caption": "The ulna is located on the medial side of the forearm, and the radius is on the lateral side. These bones are attached to each other by an interosseous membrane."
+    },
+    "806_Hand_and_Wrist": {
+      "source": "media/806_Hand_and_Wrist.jpg",
+      "sourceSha256": "0b3da03ee853cdf675bb9cfd38b30716bb221284236b401cc2228eb7cbca500c",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 1954,
+      "height": 1573,
+      "variants": [
+        {
+          "width": 800,
+          "height": 644,
+          "file": "806_Hand_and_Wrist-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1288,
+          "file": "806_Hand_and_Wrist-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the bones in the hand and wrist joints. The left panel shows the anterior view, and the right panel shows the posterior view.",
+      "caption": "The eight carpal bones form the base of the hand. These are arranged into proximal and distal rows of four bones each. The metacarpal bones form the palm of the hand. The thumb and fingers consist of the phalanx bones."
+    },
+    "807_Pelvis": {
+      "source": "media/807_Pelvis.jpg",
+      "sourceSha256": "d080ebfd8df4f13ce9d95777085dddcbb156c3535b06d6046150b515a02e1ea3",
+      "module": "m46375",
+      "kind": "photo",
+      "width": 1153,
+      "height": 785,
+      "variants": [
+        {
+          "width": 800,
+          "height": 544,
+          "file": "807_Pelvis-800.webp"
+        },
+        {
+          "width": 1153,
+          "height": 785,
+          "file": "807_Pelvis-1153.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the bone of the pelvis.",
+      "caption": "The pelvic girdle is formed by a single hip bone. The hip bone attaches the lower limb to the axial skeleton through its articulation with the sacrum. The right and left hip bones, plus the sacrum and the coccyx, together form the pelvis."
+    },
+    "808_Hip_Bone": {
+      "source": "media/808_Hip_Bone.jpg",
+      "sourceSha256": "e052dabc0e924acb1969edceb0b76d6c0db4f721a0c2f9f9fce627662f8d8dbc",
+      "module": "m46375",
+      "kind": "photo",
+      "width": 974,
+      "height": 700,
+      "variants": [
+        {
+          "width": 800,
+          "height": 575,
+          "file": "808_Hip_Bone-800.webp"
+        },
+        {
+          "width": 974,
+          "height": 700,
+          "file": "808_Hip_Bone-974.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the right hip bone. The left panel shows the lateral view, and the right panel shows the medial view.",
+      "caption": "The adult hip bone consists of three regions. The ilium forms the large, fan-shaped superior portion, the ischium forms the posteroinferior portion, and the pubis forms the anteromedial portion."
+    },
+    "809_Male_Female_Pelvic_Girdle": {
+      "source": "media/809_Male_Female_Pelvic_Girdle.jpg",
+      "sourceSha256": "d905f86b610f4978ae767195f220a5c8b2f17ce32851c2422fe6a5b5d460be65",
+      "module": "m46375",
+      "kind": "photo",
+      "width": 956,
+      "height": 448,
+      "variants": [
+        {
+          "width": 800,
+          "height": 375,
+          "file": "809_Male_Female_Pelvic_Girdle-800.webp"
+        },
+        {
+          "width": 956,
+          "height": 448,
+          "file": "809_Male_Female_Pelvic_Girdle-956.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the female pelvic girdle on the left and the male pelvic girdle on the right.",
+      "caption": "The female pelvis is adapted for childbirth and is broader, with a larger subpubic angle, a rounder pelvic brim, and a wider and more shallow lesser pelvic cavity than the male pelvis."
+    },
+    "810_Femur_and_Patella": {
+      "source": "media/810_Femur_and_Patella.jpg",
+      "sourceSha256": "c31f74c3e1c434be2edb1a87024bd9a15ab2e36a278071dd109def92ced4435c",
+      "module": "m46364",
+      "kind": "photo",
+      "width": 824,
+      "height": 1289,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1251,
+          "file": "810_Femur_and_Patella-800.webp"
+        },
+        {
+          "width": 824,
+          "height": 1289,
+          "file": "810_Femur_and_Patella-824.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the bones of the femur and the patella. The left panel shows the anterior view, and the right panel shows the posterior view.",
+      "caption": "The femur is the single bone of the thigh region. It articulates superiorly with the hip bone at the hip joint, and inferiorly with the tibia at the knee joint. The patella only articulates with the distal end of the femur."
+    },
+    "811_Tibia_and_fibula": {
+      "source": "media/811_Tibia_and_fibula.jpg",
+      "sourceSha256": "e0fc60967842c8541a84d5bf7e3dce64661063fedbd3d084cffea9794f48cf93",
+      "module": "m46364",
+      "kind": "photo",
+      "width": 1698,
+      "height": 2100,
+      "variants": [
+        {
+          "width": 800,
+          "height": 989,
+          "file": "811_Tibia_and_fibula-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1978,
+          "file": "811_Tibia_and_fibula-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the tibia and the fibula. The left panel shows the anterior view, and the right panel shows the posterior view.",
+      "caption": "The tibia is the larger, weight-bearing bone located on the medial side of the leg. The fibula is the slender bone of the lateral side of the leg and does not bear weight."
+    },
+    "812_Bones_of_the_Foot": {
+      "source": "media/812_Bones_of_the_Foot.jpg",
+      "sourceSha256": "9d6210bf1ac41081e8dd14177cdeb72da152e9aaefea494c0120bdd727ef9b2e",
+      "module": "m46364",
+      "kind": "photo",
+      "width": 2232,
+      "height": 1640,
+      "variants": [
+        {
+          "width": 800,
+          "height": 588,
+          "file": "812_Bones_of_the_Foot-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1175,
+          "file": "812_Bones_of_the_Foot-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the bones of the foot. The left panel shows the superior view, the top right panel shows the medial view, and the bottom right panel shows the lateral view.",
+      "caption": "The bones of the foot are divided into three groups. The posterior foot is formed by the seven tarsal bones. The mid-foot has the five metatarsal bones. The toes contain the phalanges."
+    },
+    "813_Clubfoot": {
+      "source": "media/813_Clubfoot.jpg",
+      "sourceSha256": "c02cff788d7983f4822457f37b61032871f0fc46ccdeb8cadc45b82ce944cc59",
+      "module": "m46376",
+      "kind": "photo",
+      "width": 529,
+      "height": 750,
+      "variants": [
+        {
+          "width": 529,
+          "height": 750,
+          "file": "813_Clubfoot-529.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a baby with a clubfoot.",
+      "caption": "Clubfoot is a common deformity of the ankle and foot that is present at birth. Most cases are corrected without surgery, and affected individuals will grow up to lead normal, active lives. (credit: James W. Hanson)"
+    },
+    "814_Radiograph_of_Hand": {
+      "source": "media/814_Radiograph_of_Hand.jpg",
+      "sourceSha256": "41e7c10ffedee484791a5b498ebc133a71a4af70ca1b88cd066c027f7e3a7625",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 968,
+      "height": 639,
+      "variants": [
+        {
+          "width": 800,
+          "height": 528,
+          "file": "814_Radiograph_of_Hand-800.webp"
+        },
+        {
+          "width": 968,
+          "height": 639,
+          "file": "814_Radiograph_of_Hand-968.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a radiograph of a human hand.",
+      "caption": "This radiograph shows the position of the bones within the hand. Note the carpal bones that form the base of the hand. (credit: modification of work by Trace Meek)"
+    },
+    "815_The_Carpal_Tunnel": {
+      "source": "media/815_The_Carpal_Tunnel.jpg",
+      "sourceSha256": "2de05d8082dc6943f0a973a929bb458efe696a4a726598df1a000fbb57d50c8f",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 1277,
+      "height": 893,
+      "variants": [
+        {
+          "width": 800,
+          "height": 559,
+          "file": "815_The_Carpal_Tunnel-800.webp"
+        },
+        {
+          "width": 1277,
+          "height": 893,
+          "file": "815_The_Carpal_Tunnel-1277.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a hand and a cross-section image of the nerves at the wrist.",
+      "caption": "The carpal tunnel is the passageway by which nine muscle tendons and a major nerve enter the hand from the anterior forearm. The walls and floor of the carpal tunnel are formed by the U-shaped grouping of the carpal bones, and the roof is formed by the flexor retinaculum, a strong ligament that anteriorly unites the bones."
+    },
+    "816_Hand_Gripping": {
+      "source": "media/816_Hand_Gripping.jpg",
+      "sourceSha256": "3c56183ca1b8bb2ea68dc9864d84642ef7fa4357600e7778cf0408f93a80ece7",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 1163,
+      "height": 356,
+      "variants": [
+        {
+          "width": 800,
+          "height": 245,
+          "file": "816_Hand_Gripping-800.webp"
+        },
+        {
+          "width": 1163,
+          "height": 356,
+          "file": "816_Hand_Gripping-1163.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows a hand gripping a motorcycle handle loosely, and the right panel shows a hand gripping a motorcycle handle tightly.",
+      "caption": "During tight gripping—compare (b) to (a)—the fourth and, particularly, the fifth metacarpal bones are pulled anteriorly. This increases the contact between the object and the medial side of the hand, thus improving the firmness of the grip."
+    },
+    "817_Ligaments_of_Pelvis": {
+      "source": "media/817_Ligaments_of_Pelvis.jpg",
+      "sourceSha256": "b7fa088def011e1ed463c2b170a5850dbb23bbf07543c474be5b42cbfbe9b939",
+      "module": "m46375",
+      "kind": "photo",
+      "width": 873,
+      "height": 523,
+      "variants": [
+        {
+          "width": 800,
+          "height": 479,
+          "file": "817_Ligaments_of_Pelvis-800.webp"
+        },
+        {
+          "width": 873,
+          "height": 523,
+          "file": "817_Ligaments_of_Pelvis-873.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the pelvic bone. The ligaments in the pelvis are labeled.",
+      "caption": "The posterior sacroiliac ligament supports the sacroiliac joint. The sacrospinous ligament spans the sacrum to the ischial spine, and the sacrotuberous ligament spans the sacrum to the ischial tuberosity. The sacrospinous and sacrotuberous ligaments contribute to the formation of the greater and lesser sciatic foramina."
+    },
+    "818_Femur_Q_Angle": {
+      "source": "media/818_Femur_Q_Angle.jpg",
+      "sourceSha256": "b301c7208d9ca0611fef6a01a5ce1f235df9291c8988d4aae9076986ef25e895",
+      "module": "m46364",
+      "kind": "photo",
+      "width": 430,
+      "height": 1065,
+      "variants": [
+        {
+          "width": 430,
+          "height": 1065,
+          "file": "818_Femur_Q_Angle-430.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the anterior view of the femur.",
+      "caption": "The Q-angle is a measure of the amount of lateral deviation of the femur from the vertical line of the tibia. Adult females have a larger Q-angle due to their wider pelvis than adult males."
+    },
+    "819_Embryo_at_Seven_Weeks": {
+      "source": "media/819_Embryo_at_Seven_Weeks.jpg",
+      "sourceSha256": "3a8cc45ef4ac7bf7aaffd44e5ccfe30c502df4cb38157263587634ee57cdec31",
+      "module": "m46376",
+      "kind": "photo",
+      "width": 702,
+      "height": 750,
+      "variants": [
+        {
+          "width": 702,
+          "height": 750,
+          "file": "819_Embryo_at_Seven_Weeks-702.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a seven-week embryo which derived from an ectopic pregnancy.",
+      "caption": "Limb buds are visible in an embryo at the end of the seventh week of development (embryo derived from an ectopic pregnancy). (credit: Ed Uthman/flickr)"
+    },
+    "820_Humerus_Radius_Fractures": {
+      "source": "media/820_Humerus_Radius_Fractures.jpg",
+      "sourceSha256": "2d8ecea8d25b4b3cd5b44f29590a9e73bd1a93a5f9326d0d769a4a93e506782f",
+      "module": "m46368",
+      "kind": "photo",
+      "width": 836,
+      "height": 1174,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1123,
+          "file": "820_Humerus_Radius_Fractures-800.webp"
+        },
+        {
+          "width": 836,
+          "height": 1174,
+          "file": "820_Humerus_Radius_Fractures-836.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows the different types of fracture in the humerus, and the bottom panel shows the different types of fracture in the radius.",
+      "caption": "Falls or direct blows can result in fractures of the surgical neck or shaft of the humerus. Falls onto the elbow can fracture the distal humerus. A Colles fracture of the distal radius is the most common forearm fracture."
     }
   }
 }

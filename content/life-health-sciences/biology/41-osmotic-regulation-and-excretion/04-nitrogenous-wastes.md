@@ -102,6 +102,13 @@ arid conditions probably led to the evolution of the uric acid pathway as a mean
 ### Compare the major byproduct of ammonia metabolism in vertebrate animals to that of birds, insects, and reptiles
 
 {{< textin
+  question="An agent that protects cells from being destroyed by reactive oxygen species is called a(n) ________."
+  answer="antioxidant"
+  accept="anti-oxidant"
+  hint="Look in the Everyday Connection on gout."
+>}}
+
+{{< textin
   question="The byproduct of ammonia metabolism in birds, insects, and reptiles is called ________."
   answer="uric acid"
   hint="Look at the opening sentences of the second subsection, or the last sentence of the Summary."
@@ -112,13 +119,6 @@ arid conditions probably led to the evolution of the uric acid pathway as a mean
   answer="urea cycle"
   accept="ornithine cycle"
   hint="Look at the first sentence under the first section heading, and at the flow-chart figure's caption."
->}}
-
-{{< textin
-  question="An agent that protects cells from being destroyed by reactive oxygen species is called a(n) ________."
-  answer="antioxidant"
-  accept="anti-oxidant"
-  hint="Look in the Everyday Connection on gout."
 >}}
 
 {{< multiplechoice

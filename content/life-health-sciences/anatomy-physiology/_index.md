@@ -68,14 +68,16 @@ reproduction, development, and inheritance.
 - **Axial Skeleton** — the divisions of the skeletal system, the bones and
   openings of the skull, the regions and curves of the vertebral column, the
   thoracic cage, and the embryonic development of these structures.
+- **The Appendicular Skeleton** — the pectoral girdle and bones of the upper
+  limb, the pelvic girdle and pelvis, the bones of the lower limb, and the
+  embryonic development of the limbs.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 2: Support and Movement** — The Appendicular
-  Skeleton; Joints; Muscle Tissue; The Muscular System.
+- **Unit 2: Support and Movement** — Joints; Muscle Tissue; The Muscular System.
 - **Unit 3: Regulation, Integration, and Control** — The Nervous System and
   Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System;
   The Autonomic Nervous System; The Neurological Exam; The Endocrine System.

@@ -445,7 +445,15 @@ max(4, length − 2) letters (*pronation* for `prone`, *lignified* for
 `lignin`). And an acronym `textin` may not have its expansion spelled out
 right before the blank ("…fluorescence-activated cell sorter, or
 ________" keyed `FACS`); ask "…known by the four-letter abbreviation
-________" instead. A hint says where to look — a subsection, figure, or
+________" instead. The leak also runs FORWARD out of a `selfcheck`: its
+model answer or a rubric clause may not print the key of the graded item
+that follows it (a Critical Thinking answer naming the condyles and the
+talus above the Review items keyed to them, *Anatomy and Physiology 8.4*);
+`selfcheckForwardLeak` rejects it, and a reveal that prints a distractor
+beside the key is a contrast and exempt *(October 16, 2026; 12 shipped
+pages reordered)*. A section page's closing `<small>` footer must be the
+real attribution — the OpenStax link, the licence link, at least 200
+characters — a `FOOTER` placeholder once passed `verify-section`. A hint says where to look — a subsection, figure, or
 table — and a subsection whose title IS the key is named by position ("the
 last of the Heavy Metals subsections"), not by title; it never states the
 fact the correct option asserts. One leak no lint sees yet: a glossary

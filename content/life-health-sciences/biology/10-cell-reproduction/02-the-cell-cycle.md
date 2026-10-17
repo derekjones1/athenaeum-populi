@@ -238,17 +238,6 @@ in G2 the cell continues to grow and duplicates some organelles
 ### Discuss the behavior of chromosomes during karyokinesis/mitosis
 
 {{< multiplechoice
-  question="The mitotic spindles arise from which cell structure?"
-  answer="centrosome"
-  hint="Reread the S Phase subsection."
->}}
-centromere
-centrosome
-kinetochore
-cleavage furrow
-{{< /multiplechoice >}}
-
-{{< multiplechoice
   question="Attachment of the mitotic spindle fibers to the kinetochores is a characteristic of which stage of mitosis?"
   answer="prometaphase"
   hint="Use the stage-by-stage walkthrough under the mitosis figure."
@@ -257,6 +246,17 @@ prophase
 prometaphase
 metaphase
 anaphase
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="The mitotic spindles arise from which cell structure?"
+  answer="centrosome"
+  hint="Reread the S Phase subsection."
+>}}
+centromere
+centrosome
+kinetochore
+cleavage furrow
 {{< /multiplechoice >}}
 
 {{< multiplechoice

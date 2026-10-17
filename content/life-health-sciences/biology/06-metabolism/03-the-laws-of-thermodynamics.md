@@ -82,19 +82,19 @@ i. high, ii. low, iii. high
 i. high, ii. low, iii. low
 {{< /multiplechoice >}}
 
-{{< selfcheck question="Imagine an elaborate ant farm with tunnels and passageways through the sand where ants live in a large community. Now imagine that an earthquake shook the ground and demolished the ant farm. In which of these two scenarios, before or after the earthquake, was the ant farm system in a state of higher or lower entropy?" hint="Reread the bedroom example under the section's second main heading." >}}
-The ant farm had lower entropy before the earthquake because it was a highly ordered system. After the earthquake, the system became much more disordered and had higher entropy.
-===CHECKS===
-the ant farm had lower entropy before the earthquake because it was a highly ordered system
-after the earthquake, the system became much more disordered and had higher entropy
-{{< /selfcheck >}}
-
 {{< textin
   question="It takes energy to make a system ________."
   answer="more ordered"
   accept="ordered|more orderly"
   hint="Reread the summary's first paragraph."
 >}}
+
+{{< selfcheck question="Imagine an elaborate ant farm with tunnels and passageways through the sand where ants live in a large community. Now imagine that an earthquake shook the ground and demolished the ant farm. In which of these two scenarios, before or after the earthquake, was the ant farm system in a state of higher or lower entropy?" hint="Reread the bedroom example under the section's second main heading." >}}
+The ant farm had lower entropy before the earthquake because it was a highly ordered system. After the earthquake, the system became much more disordered and had higher entropy.
+===CHECKS===
+the ant farm had lower entropy before the earthquake because it was a highly ordered system
+after the earthquake, the system became much more disordered and had higher entropy
+{{< /selfcheck >}}
 
 ### Explain the first and second laws of thermodynamics
 

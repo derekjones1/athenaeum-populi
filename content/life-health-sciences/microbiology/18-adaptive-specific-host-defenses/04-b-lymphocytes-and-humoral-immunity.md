@@ -294,15 +294,15 @@ the T cell-independent response would still let B cells secrete IgM as plasma ce
 ### Compare the primary and secondary antibody responses
 
 {{< textin
-  question="During the primary response, some of the cloned B cells are differentiated into ________ programmed to respond to subsequent exposures."
-  answer="memory B cells"
-  accept="memory cells"
+  question="During the secondary response, the lag period is decreased to only a few days and the production of ________ is significantly higher than observed for the primary response."
+  answer="IgG"
   hint="Reread the second paragraph of Primary and Secondary Responses."
 >}}
 
 {{< textin
-  question="During the secondary response, the lag period is decreased to only a few days and the production of ________ is significantly higher than observed for the primary response."
-  answer="IgG"
+  question="During the primary response, some of the cloned B cells are differentiated into ________ programmed to respond to subsequent exposures."
+  answer="memory B cells"
+  accept="memory cells"
   hint="Reread the second paragraph of Primary and Secondary Responses."
 >}}
 

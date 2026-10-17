@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
 import assert from 'node:assert/strict';
-import { directlyAboveLeak, lintLeaks, numericKey, unicodeFormula } from './lints-leaks.mjs';
+import { directlyAboveLeak, lintLeaks, numericKey, selfcheckForwardLeak, unicodeFormula } from './lints-leaks.mjs';
 
 const BIO = 'content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md';
 const AP = 'content/life-health-sciences/anatomy-physiology/01-an-introduction-to-the-human-body/07-medical-imaging.md';
@@ -252,4 +252,76 @@ test('a contrast "not" naming something else is not a contradiction', () => {
   assert(!hasError(practice(textin('The CD8 T cell is ________.', 'cytotoxic', 'This class of T cell expresses CD8, not CD4.')), /rules out/));
   assert(!hasError(practice(textin('Its full name is the ________.', 'major histocompatibility complex', 'Spell it out, not the abbreviation.')), /rules out/),
     'no abbreviation is accepted, so naming one is no contradiction');
+});
+
+// ---- a selfcheck answer that prints the key of the item below it ---------------------
+
+const answered = (modelAnswer, checks = ['the first point', 'the second point']) =>
+  `{{< selfcheck question="Explain what happens to the cell." hint="Reread the Tonicity paragraph." >}}\n${modelAnswer}\n===CHECKS===\n${checks.join('\n')}\n{{< /selfcheck >}}`;
+const FORWARD = /printed \(as "[^"]+"\) in the (?:model answer|rubric clause) of the selfcheck directly above it/;
+
+test('a selfcheck model answer or rubric that prints the key of the next item is an error', () => {
+  // Biology 5.2: "…creating a hypotonic solution" over a `hypotonic` cloze.
+  assert(hasError(practice(
+    answered('The osmolarity inside the cell rises, creating a hypotonic solution, so water flows in.'),
+    textin('A solution whose osmolarity is lower than the cell\'s cytoplasm is called ________ relative to the cell.', 'hypotonic'),
+  ), /textin \(A solution whose osmolarity.*key "hypotonic" is printed \(as "hypotonic"\) in the model answer of the selfcheck directly above it/));
+  // The plural folds, and an accept member counts (Microbiology 18.4's memory B cells).
+  assert(hasError(practice(
+    answered('The response would produce no memory B cells.'),
+    textin('Some cloned B cells become ________.', 'memory B cell', 'Reread the paragraph.', 'memory cell'),
+  ), /key "memory B cell" is printed \(as "memory b cells"\)/));
+  // A rubric clause is printed to the learner too.
+  assert(hasError(practice(
+    answered('Model answer.', ['vitamins act as coenzymes', 'they come from the diet']),
+    textin('A small organic molecule that enhances an enzyme is a(n) ________.', 'coenzyme'),
+  ), /in the rubric clause of the selfcheck directly above it/));
+  // Biology 4.5: a multiple-choice key the model answer names with no distractor beside it.
+  assert(hasError(practice(
+    answered('In plant and bacteria cells, a cell wall surrounds the plasma membrane.'),
+    mc('Which structure is present in prokaryotic and plant cells but absent in animal cells?', 'Cell wall', ['Cell wall', 'Mitochondria', 'Golgi apparatus']),
+  ), /multiplechoice \(Which structure.*key "Cell wall" is printed \(as "cell wall"\) in the model answer/));
+  // Across a group heading: the last selfcheck of one group sits right above the first item of the next.
+  assert(hasError(`## Practice\n\n### One\n\n${answered('Arid conditions led to the uric acid pathway.')}\n\n### Two\n\n${textin('The byproduct of ammonia metabolism in birds is ________.', 'uric acid')}\n`, FORWARD));
+  // A Knowledge Check is all Practice.
+  assert(hasError(`### 41.4 Nitrogenous Wastes\n\n${answered('Arid conditions led to the uric acid pathway.')}\n\n${textin('The byproduct in birds is ________.', 'uric acid')}\n`, FORWARD, KC));
+});
+
+test('a contrast, a later item, a count, an own-stem key, a body item, or an unprinted key is not a forward leak', () => {
+  // The model answer also prints a distractor: a contrast, not a giveaway.
+  assert(!hasError(practice(
+    answered('Lysosomes and peroxisomes both break down molecules.'),
+    mc('Which organelle is not part of the endomembrane system?', 'peroxisome', ['lysosome', 'peroxisome', 'Golgi apparatus']),
+  ), FORWARD), 'distractor printed too');
+  // Only the next shortcode: an item two below is the topic, not the reveal.
+  assert(!hasError(practice(
+    answered('Water flows in through aquaporins, creating a hypotonic solution.'),
+    textin('Water moves across a membrane by ________.', 'osmosis'),
+    textin('A solution with lower osmolarity than the cell is ________.', 'hypotonic'),
+  ), FORWARD), 'two items below');
+  // The recall item first is the fix.
+  assert(!hasError(practice(
+    textin('A solution with lower osmolarity than the cell is ________.', 'hypotonic'),
+    answered('Water flows in, creating a hypotonic solution.'),
+  ), FORWARD), 'recall item above');
+  assert(!hasError(practice(
+    answered('Nitrogen has two electron shells.'),
+    mc('How many electron shells does nitrogen have?', 'two', ['one', 'two', 'three']),
+  ), FORWARD), 'count');
+  assert(!hasError(practice(
+    answered('A hypotonic solution forms.'),
+    mc('Which solution is hypotonic to the cell?', 'hypotonic', ['hypotonic', 'isotonic']),
+  ), FORWARD), 'the stem prints its own key');
+  assert(!hasError(`## Tonicity\n\n${answered('A hypotonic solution forms.')}\n\n${textin('Lower osmolarity is ________.', 'hypotonic')}\n\n## Practice\n\n### A\n\n${textin('Name it.', 'osmosis')}\n`, FORWARD), 'body items');
+  assert(!hasError(practice(
+    answered('The cell swells and may lyse.'),
+    textin('A solution with lower osmolarity than the cell is ________.', 'hypotonic'),
+  ), FORWARD), 'key not printed');
+});
+
+test('selfcheckForwardLeak names the field and the spelling it found', () => {
+  const sc = { kind: 'selfcheck', closed: true, params: {}, inner: '\nIt leads to toxicity.\n===CHECKS===\nreduced clearance\n' };
+  assert.deepEqual(selfcheckForwardLeak(sc, { kind: 'textin', params: { answer: 'toxicity' } }), { field: 'model answer', member: 'toxicity', norm: 'toxicity' });
+  assert.equal(selfcheckForwardLeak(sc, { kind: 'textin', params: { answer: 'allergic reactions' } }), null);
+  assert.equal(selfcheckForwardLeak(sc, { kind: 'sortbins', params: {}, inner: '{}' }), null);
 });

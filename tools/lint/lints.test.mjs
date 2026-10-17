@@ -4,6 +4,10 @@ import { BOOK_RULES, bookRulesFor, lintHugo, NAMED_FORM_ASKS, unworkedKey } from
 import { buildPracticeIndex, practiceItems } from '../lib/practice-index.mjs';
 import { checkAnswer, parseAnswerForm } from '../../assets/js/lib/math/check-answer.mjs';
 
+// A whole-page fixture (one with leading frontmatter) on a section, Knowledge
+// Check, or chapter-landing path must close on a real attribution footer.
+const ATTRIBUTION = '<small>This section is adapted from [Book 2e, Section 1.1: A Section](https://openstax.org/books/book-2e/pages/1-1-a-section) by A. Author and B. Author, © OpenStax, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: none.</small>';
+
 const imageCases = [
   '![plot](/images/plot.webp)',
   '![plot](/images/plot.png "A plotted curve")',
@@ -1339,6 +1343,8 @@ weight: 3
   Relations** — interpret graphs and apply the vertical line test.
 
 ---
+
+${ATTRIBUTION}
 `;
   assert.equal(
     lintHugo(validChapterSections, 'content/math/book/03-functions/_index.md').errors.length,
@@ -1355,7 +1361,7 @@ weight: 3
 `;
   assert.equal(
     lintHugo(
-      `${scaffoldedChapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
+      `${scaffoldedChapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n\n${ATTRIBUTION}\n`,
       'content/math/book/03-functions/_index.md',
     ).errors.length,
     0,
@@ -2846,6 +2852,8 @@ Body prose.
 ### Identify the shared terms
 
 ${textins}
+
+${ATTRIBUTION}
 `;
 };
 
@@ -2962,6 +2970,7 @@ const kcPage = (counts, kind) => [
   `### 1.2 Second\n\n${kcItems(counts[1], kind, 'b')}`,
   '## Chapter 2: Two',
   `### 2.1 Third\n\n${kcItems(counts[2], kind, 'c')}`,
+  ATTRIBUTION,
 ].join('\n\n');
 const bioKC = 'content/life-health-sciences/biology/knowledge-check-01-02.md';
 const mathKC = 'content/math/precalculus/knowledge-check-01-02.md';
@@ -3047,6 +3056,7 @@ const kcGroup = (...items) => [
   '---\ntitle: "Knowledge Check: Chapters 1–1"\n---',
   '## Chapter 1: One',
   `### 1.1 First\n\n${[...items, kcMC('filler', 1), kcMC('filler', 2)].slice(0, 3).join('\n\n')}`,
+  ATTRIBUTION,
 ].join('\n\n');
 const duplicateErrors = (src) => lintKC(src, bioKC, withSections).errors.filter((e) => e.includes('duplicates a section Practice item'));
 
@@ -3455,7 +3465,7 @@ test('a Media callout with no link is an error; one with a link is fine', () => 
 });
 
 test('the attribution footer must be the last thing on the page, and there is only one', () => {
-  const footer = '<small>This section is adapted from [Book, Section 1.1] by Authors and OpenStax. Changes: none.</small>';
+  const footer = ATTRIBUTION;
   const ok = `# T\n\nProse.\n\n---\n\n${footer}\n`;
   const rule = (e) => e.includes('attribution footer');
   assert.deepEqual(lintHugo(ok, 'content/x/y/01-a/01-b.md').errors.filter(rule), []);
@@ -3464,6 +3474,45 @@ test('the attribution footer must be the last thing on the page, and there is on
   assert.equal(lintHugo(spliced, 'content/x/y/01-a/01-b.md').errors.filter(rule).length, 1);
   const twice = `# T\n\n${footer}\n\nProse.\n\n${footer}\n`;
   assert.ok(lintHugo(twice, 'content/x/y/01-a/01-b.md').errors.some((e) => e.includes('second attribution footer')));
+});
+
+// Anatomy and Physiology chapter 8 (October 16, 2026) reached verify-section
+// green with its footer still the scaffold placeholder.
+test('a section, Knowledge Check, or chapter landing must close on a real attribution footer', () => {
+  const rule = (e) => e.includes('not an attribution footer') || e.includes('has no attribution footer');
+  const page = (tail) => `---\ntitle: T\n---\n\nProse.\n\n---\n\n${tail}\n`;
+  const paths = [
+    'content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/01-the-pectoral-girdle.md',
+    'content/life-health-sciences/anatomy-physiology/knowledge-check-01-04.md',
+    'content/math/precalculus/01-functions/_index.md',
+  ];
+  for (const path of paths) {
+    const placeholder = lintHugo(page('<small>FOOTER</small>'), path).errors.filter(rule);
+    assert.equal(placeholder.length, 1, `${path}: the placeholder footer is an error: ${JSON.stringify(placeholder)}`);
+    assert.match(placeholder[0], /lacks the name OpenStax, .*link to the source page, .*license link, at least 200 characters \(it has 6\)/);
+    assert.equal(lintHugo(page('Closing prose with no footer.'), path).errors.filter(rule).length, 1, `${path}: a missing footer is an error`);
+    assert.deepEqual(lintHugo(page(ATTRIBUTION), path).errors.filter(rule), [], `${path}: a real footer is clean`);
+  }
+  // Each element is required on its own: a footer missing only the license
+  // link, or only the source link, still fails.
+  const noLicense = ATTRIBUTION.replace('[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)', 'CC BY 4.0');
+  assert.match(lintHugo(page(noLicense), paths[0]).errors.filter(rule)[0] ?? '', /lacks a `\]\(https:\/\/creativecommons/);
+  const noSource = ATTRIBUTION.replace(/\]\(https:\/\/openstax\.org[^)]*\)/, ']');
+  assert.match(lintHugo(page(noSource), paths[0]).errors.filter(rule)[0] ?? '', /link to the source page/);
+  // The openings the corpus actually uses are all accepted: the rule reads
+  // the footer's content, not its first words.
+  for (const opening of ['This knowledge check is drawn from', 'Adapted from', 'This page adapts', 'This chapter overview is adapted from']) {
+    assert.deepEqual(lintHugo(page(ATTRIBUTION.replace('This section is adapted from', opening)), paths[0]).errors.filter(rule), []);
+  }
+  // An earlier `<small>` aside does not stand in for the footer, and the
+  // footer is judged even when it is not the first `<small>` on the page.
+  assert.equal(lintHugo(page(`${ATTRIBUTION}\n\n<small>FOOTER</small>`), paths[0]).errors.filter(rule).length, 1);
+  assert.deepEqual(lintHugo(page(`<small>An aside.</small>\n\n${ATTRIBUTION}`), paths[0]).errors.filter(rule), []);
+  // A snippet (no frontmatter) has no footer without that being a defect,
+  // and a book landing or non-book page is out of scope.
+  assert.deepEqual(lintHugo('Prose.', paths[0]).errors.filter(rule), []);
+  assert.deepEqual(lintHugo(page('No footer.'), 'content/math/precalculus/_index.md').errors.filter(rule), []);
+  assert.deepEqual(lintHugo(page('No footer.'), 'content/about.md').errors.filter(rule), []);
 });
 
 // Carries set as their own right-aligned row sit over the wrong columns.

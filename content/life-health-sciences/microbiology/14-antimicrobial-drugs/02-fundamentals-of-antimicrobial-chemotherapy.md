@@ -235,8 +235,6 @@ reduced drug metabolism or clearance from the body, resulting in increased drug 
 
 ### Identify factors and variables that can influence the side effects of a drug
 
-{{< textin question="The amount of medication given during a certain time interval is the dosage, and it must be determined carefully to ensure that optimum therapeutic drug levels are achieved at the site of infection without causing significant ________ (side effects) to the patient." answer="toxicity" hint="Reread the first sentence of Dosage and Route of Administration." >}}
-
 {{< multiplechoice
   question="According to this section, what is the goal when selecting a drug's dosage?"
   answer="To select the dosage that will minimize the risk of side effects while still achieving clinical cure"
@@ -247,6 +245,8 @@ To select the dosage that will minimize the risk of side effects while still ach
 To give the lowest possible dose, even if clinical cure is not achieved
 To give every patient the same dose and interval, whatever the drug's half-life
 {{< /multiplechoice >}}
+
+{{< textin question="The amount of medication given during a certain time interval is the dosage, and it must be determined carefully to ensure that optimum therapeutic drug levels are achieved at the site of infection without causing significant ________ (side effects) to the patient." answer="toxicity" hint="Reread the first sentence of Dosage and Route of Administration." >}}
 
 {{< textin question="Despite best efforts to optimize dosing, ________ and other potentially serious side effects do occur." answer="allergic reactions" hint="Reread the first paragraph of Dosage and Route of Administration." >}}
 

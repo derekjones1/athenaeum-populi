@@ -696,7 +696,11 @@ self-check or a Short Answer already asks the table's contrast ("What kinds
 of specimens are best examined using TEM? SEM?"), convert THAT item into
 the sortbins rather than adding a second item beside it — each thing is
 asked once (`distinctItems`), and the aim is a more deterministic answer
-form, not a longer Practice block. An older page is retrofitted the same
+form, not a longer Practice block. When a SOURCE Review Question on the
+page already keys one row's contrast (8.3's "subpubic angle that is larger
+in females"), that row is left out of the sortbins and the footer says so;
+the source item cannot move, and the row would ask the same fact twice
+*(Anatomy and Physiology 8.3, October 16, 2026)*. An older page is retrofitted the same
 way: enumerate its Markdown tables, skip the quantity/unit/step tables,
 and give each remaining one a sortbins under the objective it serves or in
 the self-check it already answers.
@@ -1072,7 +1076,11 @@ duplicate-stem lint catches an exact collision, not a reworded one).
   `Changes:` clause discloses the redirect, the destination, and the date
   it returned 404, and the erratum records the same. A 302/redirect chain
   that never lands is left linked and noted, not removed — only a
-  confirmed 404/410 on a full GET counts.
+  confirmed 404/410 on a full GET counts. A redirect target whose host
+  does not resolve (curl 6, `ENOTFOUND`) or whose TLS certificate does not
+  match (curl 60) is such a chain: it stays linked, the footer clause
+  names the target, the failure, and the date, and the erratum records the
+  same *(Anatomy and Physiology 8.2 and 8.4, October 16, 2026)*.
 - **Errata.** Confirmed source defects (a keyed answer the section
   contradicts, a distractor that is also true, a caption credit that names
   the wrong image) go in `docs/openstax-errata.md` without asking, with the

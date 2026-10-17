@@ -224,16 +224,6 @@ when flagella are present, a cell has just one or two
 
 ### Summarize the differences among the components of prokaryotic cells, animal cells, and plant cells
 
-{{< selfcheck question="Compare and contrast the boundaries that plant, animal, and bacteria cells use to separate themselves from their surrounding environment." hint="Use the table above together with the previous sections' descriptions of each cell type." >}}
-All three cell types have a plasma membrane that borders the cytoplasm on its interior side. In animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment. However, in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane. In plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan. Gram-negative bacteria also have an additional outer membrane containing lipopolysaccharides that surrounds their cell wall. *(Source note: the source solution calls this layer a "capsule made of lipopolysaccharides"; this book's Structure of Prokaryotes section describes it as an outer envelope containing lipopolysaccharides and treats the capsule as a separate, optional structure.)*
-===CHECKS===
-all three cell types have a plasma membrane that borders the cytoplasm on its interior side
-in animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment
-in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane
-in plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan
-Gram-negative bacteria also have an additional outer membrane containing lipopolysaccharides that surrounds their cell wall
-{{< /selfcheck >}}
-
 {{< multiplechoice
   question="According to the table above, which cell structure is present in prokaryotic cells and in plant cells, but absent in animal cells?"
   answer="Cell wall"
@@ -255,6 +245,16 @@ Ribosomes
 Nucleolus
 Cytoskeleton
 {{< /multiplechoice >}}
+
+{{< selfcheck question="Compare and contrast the boundaries that plant, animal, and bacteria cells use to separate themselves from their surrounding environment." hint="Use the table above together with the previous sections' descriptions of each cell type." >}}
+All three cell types have a plasma membrane that borders the cytoplasm on its interior side. In animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment. However, in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane. In plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan. Gram-negative bacteria also have an additional outer membrane containing lipopolysaccharides that surrounds their cell wall. *(Source note: the source solution calls this layer a "capsule made of lipopolysaccharides"; this book's Structure of Prokaryotes section describes it as an outer envelope containing lipopolysaccharides and treats the capsule as a separate, optional structure.)*
+===CHECKS===
+all three cell types have a plasma membrane that borders the cytoplasm on its interior side
+in animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment
+in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane
+in plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan
+Gram-negative bacteria also have an additional outer membrane containing lipopolysaccharides that surrounds their cell wall
+{{< /selfcheck >}}
 
 ---
 

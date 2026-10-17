@@ -247,12 +247,6 @@ the proportions therefore are 1:1:1:1
 
 ### Explain the effect of linkage and recombination on gamete genotypes
 
-{{< textin
-  question="Although chromosomes sort independently into gametes during meiosis, Mendel’s law of independent assortment refers to ________, not chromosomes."
-  answer="genes"
-  hint="Reread the start of the section summary's second paragraph."
->}}
-
 {{< multiplechoice
   question="Which of the following situations does **not** follow the Law of Independent Assortment?"
   answer="Men are more likely to experience hemophilia than women."
@@ -263,6 +257,12 @@ A white cow crossed with a brown bull produces roan cattle.
 Mating a hog with a sow produces six female piglets.
 Men are more likely to experience hemophilia than women.
 {{< /multiplechoice >}}
+
+{{< textin
+  question="Although chromosomes sort independently into gametes during meiosis, Mendel’s law of independent assortment refers to ________, not chromosomes."
+  answer="genes"
+  hint="Reread the start of the section summary's second paragraph."
+>}}
 
 
 {{< selfcheck question="A heterozygous pea plant produces violet flowers and yellow, round seeds. Describe the expected genotypes of the gametes produced by Mendelian inheritance. If all three genes are found on the same arm of one chromosome should a scientist predict that inheritance patterns will follow Mendelian genetics?" hint="Reread Rules for Multihybrid Fertilization and the part of the section that follows it." >}}

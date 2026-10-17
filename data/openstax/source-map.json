@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 7,
-      "mappedSections": 40,
+      "localChapters": 8,
+      "mappedSections": 45,
       "units": [
         {
           "index": 1,
@@ -611,6 +611,51 @@
       "moduleId": "m46348",
       "sourceTitle": "Embryonic Development of the Axial Skeleton",
       "moduleSha256": "00b7c1b994f1ae691180a35cfcea303efae6f1f55003766696c4096655fc39bf"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/01-the-pectoral-girdle.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "8.1",
+      "moduleId": "m46374",
+      "sourceTitle": "The Pectoral Girdle",
+      "moduleSha256": "e2f85106d1eba55de153b9c7157d8e955f49f9581be7f1df44b91307c7d69811"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/02-bones-of-the-upper-limb.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "8.2",
+      "moduleId": "m46368",
+      "sourceTitle": "Bones of the Upper Limb",
+      "moduleSha256": "17b77da893dc05b91dae6b168d9e41965c766809a736f558300eea39338c6cd2"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/03-the-pelvic-girdle-and-pelvis.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "8.3",
+      "moduleId": "m46375",
+      "sourceTitle": "The Pelvic Girdle and Pelvis",
+      "moduleSha256": "976c4811667fdcd664e7b503a16348ea8cecc1edd42a7c6acf430d914849eed7"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/04-bones-of-the-lower-limb.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "8.4",
+      "moduleId": "m46364",
+      "sourceTitle": "Bones of the Lower Limb",
+      "moduleSha256": "7c67bc23409f47d51776f0a3190d633fb0b53eb380b23ef6a0ea41340ff4e73b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/05-development-of-the-appendicular-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "8.5",
+      "moduleId": "m46376",
+      "sourceTitle": "Development of the Appendicular Skeleton",
+      "moduleSha256": "5da44f14b57ecff54dbfa5a4dc296f9638ac98a6a44275f8a8d07941f7ce411a"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

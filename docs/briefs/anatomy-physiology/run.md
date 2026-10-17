@@ -141,6 +141,10 @@ them.
    Part C never names a shortcode parameter it has not checked against
    `SHORTCODE_PARAMS` ("the figure title as the figure's title" asked for a
    `mediafigure` param that does not exist, *chapter 4*).
+   A precedent Part C cites ("7.5 linked the same pointer") is grepped on
+   that page before it is written — chapter 8's Part C cited a 7.5 body
+   link that was in fact inside a Source note; the decision stood on the
+   rule, not the precedent, but the author had to say so.
    **Part C names WHICH rule and WHICH sentence, never a concrete `accept`
    list** — say "grader-check the members" and let the author verify. A
    decision about a figure reads its letters, labels, and counts off the
@@ -282,7 +286,10 @@ diff a fresh `solve:emit` into a second directory against the first to
 list exactly which hashes moved *(chapter 7: two of 63)*. Graded
 Interactive Link `selfcheck`s read "unmatched" in `verify-source-keys`
 on every chapter of this book; that is normal and no `solution`
-deviation is owed for one. After a
+deviation is owed for one. An Interactive Link Question with lettered
+sub-asks (8.5's (a)(b)(c)) is ONE item on the page and in the footer but
+several rows in `verify:source-coverage`, so the coverage floor rises by
+more than the chapter's exercise count *(chapter 8: 44 for 42)*. After a
 sweep, re-solve only what the carry rule in AGENTS.md ("The answer
 ledger") does not carry — `npm run ledger:carry` applies it; snapshot
 BEFORE the sweep's first edit, and one snapshot serves every carry plan in

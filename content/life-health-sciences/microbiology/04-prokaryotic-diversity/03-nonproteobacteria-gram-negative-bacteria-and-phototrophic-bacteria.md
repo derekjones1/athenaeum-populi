@@ -231,6 +231,13 @@ avid fermenters
 
 ### Give an example of a nonproteobacteria bacterium in each category
 
+{{< textin
+  question="The bacterium that causes syphilis is called ________."
+  answer="Treponema pallidum pallidum"
+  accept="T. pallidum pallidum|Treponema pallidum|T. pallidum"
+  hint="Reread the second paragraph of Spirochetes."
+>}}
+
 {{< multiplechoice
   question="Which of the following bacteria are the most prevalent in the human gut?"
   answer="*Bacteroides*"
@@ -241,13 +248,6 @@ staphylococci
 *Borrelia*
 *Bacteroides*
 {{< /multiplechoice >}}
-
-{{< textin
-  question="The bacterium that causes syphilis is called ________."
-  answer="Treponema pallidum pallidum"
-  accept="T. pallidum pallidum|Treponema pallidum|T. pallidum"
-  hint="Reread the second paragraph of Spirochetes."
->}}
 
 {{< multiplechoice
   question="Name and briefly describe the bacterium that causes Lyme disease."

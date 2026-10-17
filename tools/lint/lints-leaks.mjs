@@ -31,6 +31,14 @@
  *   - a `textin` hint that says "not X" where X is a graded spelling, or
  *     "not the … abbreviation" beside an abbreviation accept (every book;
  *     0 hits — the one known case, Microbiology 19.3's HLA, was fixed first)
+ *
+ * Landed October 16, 2026, with the corpus clean:
+ *
+ *   - a `selfcheck` model answer or rubric clause that prints the key of
+ *     the graded item directly below it (every book; 12 hits, all read and
+ *     all true, fixed by reordering within their objective groups — 8
+ *     Biology pages, 4 Microbiology; "any later item" measured 151 and was
+ *     rejected)
  */
 import { bookKeyOf, blankPreservingOffsets, maskCode, shortcodes, SHORTCODE_PARAMS } from '../lib/content.mjs';
 // The real textin grading normalizer, so a "printed key" here means printed
@@ -226,6 +234,39 @@ export function directlyAboveLeak(prev, textin) {
   for (const [field, value] of printedFields(prev)) {
     const haystack = normalizedLines(value);
     const hit = spellings.find((s) => containsWholeWordRun(haystack, s.norm));
+    if (hit) return { field, member: hit.member, norm: hit.norm };
+  }
+  return null;
+}
+
+/**
+ * Does the closed `selfcheck` `sc` print, in its model answer or one of its
+ * rubric clauses, the key of `next` — the graded item directly below it?
+ * Returns null or `{ field, member, norm }`. `count` is the MC hint rule's
+ * count pattern. Exported for the reorder tooling that fixes a hit.
+ */
+export function selfcheckForwardLeak(sc, next, count = /^(?:\d+|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)$/) {
+  const parts = sc.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m);
+  const fields = [['model answer', normalizedLines(parts[0])]];
+  for (const clause of (parts[1] || '').split('\n').map((c) => c.trim()).filter(Boolean)) {
+    fields.push(['rubric clause', normalizeText(clause)]);
+  }
+  const stem = normalizeText(next.params.question || '');
+  let spellings;
+  if (next.kind === 'textin') {
+    spellings = gradedSpellings(next.params);
+  } else if (next.kind === 'multiplechoice' && next.params.mode !== 'graph' && next.closed) {
+    const key = normalizeText((next.params.answer || '').replace(/\.$/, ''));
+    if (!key || count.test(key)) return null;
+    spellings = [key, ...foldedForms(key)].map((norm) => ({ member: next.params.answer, norm }));
+    if (spellings.some((s) => containsWholeWordRun(stem, s.norm))) return null;
+    const distractors = next.inner.split('\n').map((s) => normalizeText(s.replace(/\.$/, ''))).filter((o) => o && o !== key);
+    if (distractors.some((o) => [o, ...foldedForms(o)].some((f) => fields.some(([, hay]) => containsWholeWordRun(hay, f))))) return null;
+  } else {
+    return null;
+  }
+  for (const [field, hay] of fields) {
+    const hit = spellings.find((s) => containsWholeWordRun(hay, s.norm));
     if (hit) return { field, member: hit.member, norm: hit.norm };
   }
   return null;
@@ -470,6 +511,39 @@ export function lintLeaks(src, filename = '') {
       .filter((c) => phraseCoverage(c, item.params.hint) >= 0.8);
     if (covered.length >= 2) {
       err(item.index, `${labelOf('selfcheck', item.params)}: the hint restates ${covered.length} of its rubric clauses (${covered.map((c) => JSON.stringify(c)).join(', ')}) — a hint says WHERE to look (the subsection, paragraph, or figure), never the points the answer must make`);
+    }
+  }
+
+  // ---- a selfcheck answer that prints the key of the item below it ---------
+  // The forward twin of the "directly above" rule. A selfcheck's model
+  // answer and its ===CHECKS=== rubric are shown the moment the learner
+  // reveals them, so when the very next item of the Practice block (or
+  // Knowledge Check) is a `textin` or `multiplechoice` whose key the reveal
+  // prints, that item is answered by copying what was just read: Biology
+  // 5.2's "…the surrounding fluid becomes hypotonic…" over a `hypotonic`
+  // cloze, 6.5's vitamins-as-coenzymes answer over a `coenzyme` cloze.
+  // A key here is exactly the key of the rules above: a textin's graded
+  // spellings (members and their plural folds); a multiple choice's keyed
+  // option (trailing period dropped, plurals folded), with the MC hint rule's
+  // exemptions — a count, a graph-mode item, a key the item's own stem
+  // already prints, and a contrast: a reveal that also prints a distractor
+  // ("lysosomes … peroxisomes") does not single the key out. Only the NEXT
+  // shortcode is this rule: measured October 16, 2026, "any later item in
+  // the block" found 151 hits that were mostly topic words a long answer
+  // names in passing, items further down. Fix by reordering within the
+  // `###` objective group — the recall item above the selfcheck, or the
+  // selfcheck to the group's end; keys, stems, and model answers are never
+  // edited to pass it.
+  {
+    const COUNT = /^(?:\d+|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)$/;
+    for (let k = 0; k + 1 < items.length; k += 1) {
+      const sc = items[k];
+      const next = items[k + 1];
+      if (sc.kind !== 'selfcheck' || !sc.closed || !inPractice(sc.index) || !inPractice(next.index)) continue;
+      const leak = selfcheckForwardLeak(sc, next, COUNT);
+      if (leak) {
+        err(next.index, `${labelOf(next.kind, next.params)}: its key ${JSON.stringify(leak.member)} is printed (as ${JSON.stringify(leak.norm)}) in the ${leak.field} of the selfcheck directly above it — the reveal answers it; order the group so this item comes before the selfcheck, or the selfcheck goes to the group's end (keys and model answers are never edited)`);
+      }
     }
   }
 

@@ -1801,3 +1801,7 @@ the same day, chapters 3, *The Cell*, and 4, *Prokaryotic Diversity*, on
 September 6, and chapters 5, *The Eukaryotes of Microbiology*, 6,
 *Acellular Pathogens*, and 7, *Microbial Biochemistry*, on September 7), and
 `verify-map` prints `7/26 chapters, 31/127 sections mapped`.
+
+## Forward-leak lint (October 16, 2026)
+
+- The new `lints-leaks.mjs` rule (a `selfcheck` model answer or rubric clause printing the key of the graded item directly below it) fired on four Microbiology pages, all reordered within their objective groups, no key, stem, or model answer edited: 4.3 (syphilis cloze above the *Bacteroides* multiple choice), 11.5 (mutated-strands self-check to its group's end), 14.2 (toxicity cloze below the dosage-goal multiple choice), and 18.4 (IgG cloze above the memory-B-cell cloze).

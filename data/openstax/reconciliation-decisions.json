@@ -2484,6 +2484,75 @@
       "status": "correct-local-source-defect",
       "errataEntry": 1969,
       "rationale": "The Interactive Link solution (exercise fs-id1226922, para fs-id2328646) calls kyphosis \"an enhanced anterior curvature of the thoracic vertebral column\", but the module defines kyphosis twice as \"an excessive posterior curvature of the thoracic region\" (Curvatures text term-00008 and the Disorders box) and the glossary agrees. The page's model answer says posterior with a visible Source note and a footer sentence. Found by the chapter 7.3 author, confirmed by the chapter 7 alt-errata verifier, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/01-the-pectoral-girdle.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46374",
+      "sourceElementIds": [
+        "fs-id1866400"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 1999,
+      "rationale": "The module says \"The clavicle is the most commonly fractured bone in the body\" (para fs-id1866400), but distal radius fractures are the most common fractures in adults, at 17.5 percent of all fractures (Candela et al., J Orthop Traumatol 2022;23:43, citing Court-Brown and Caesar, Injury 2006;37:691-697); the line is a widely repeated textbook simplification, so this is the softest claim correction. The page reads \"one of the most commonly fractured bones in the body\" with a visible Source note and a footer sentence. Evidenced by the chapter 8 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/02-bones-of-the-upper-limb.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46368",
+      "sourceElementIds": [
+        "fs-id2329218"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2003,
+      "rationale": "The module says \"The tendons of nine muscles of the anterior forearm\" pass through the carpal tunnel (para fs-id2329218), but the tunnel carries nine tendons from three muscles (flexor digitorum superficialis, flexor digitorum profundus, flexor pollicis longus), the module's own Carpal Tunnel caption (fig-ch08_02_05) says \"nine muscle tendons,\" and Section 11.5 (m46495, fs-id2483384) names only six muscles in the anterior forearm (Presazzi et al., J Ultrasound 2011;14:40-46). The page reads \"Nine muscle tendons of the anterior forearm\" with a visible Source note and a footer sentence. Evidenced by the chapter 8 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/04-bones-of-the-lower-limb.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46364",
+      "sourceElementIds": [
+        "fs-id1401595"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2009,
+      "rationale": "The module says each of the three cuneiform bones \"has a broad superior surface and a narrow inferior surface\" (para fs-id1401595), but the medial cuneiform's plantar surface is the broad base of the wedge and its dorsal surface the narrow end (Gray's Anatomy, 1918, The First Cuneiform Bone). The page reads \"The intermediate and lateral cuneiforms each have a broad superior surface and a narrow inferior surface, which help produce\" the curvature, with a visible Source note and a footer sentence. Evidenced by the chapter 8 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/05-development-of-the-appendicular-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46376",
+      "sourceElementIds": [
+        "fig-ch08_05_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2013,
+      "rationale": "The caption of fig-ch08_05_01 says the embryo is shown \"at the end of the seventh week of development,\" but the photographer's record (Ed Uthman, Flickr, \"Tubal pregnancy with embryo\"; WikiJournal of Medicine) dates it at about five weeks after ovulation, seven weeks being its gestational age, and the photograph shows simple limb buds without the hand and foot plates that the module places in the sixth week (para fs-id2337491). The page reads \"at about five weeks of development (seven weeks of gestational age; …)\" with a visible Source note and a footer sentence, and its alt matches. Evidenced by the chapter 8.5 checker and the parent, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/05-development-of-the-appendicular-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46376",
+      "sourceElementIds": [
+        "fs-id1972676",
+        "fs-id2636426"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2014,
+      "rationale": "The module says the lesser trochanter fuses \"at the onset of puberty (around 11 years of age), followed by the greater trochanter approximately 1 year later\" (para fs-id1972676) and its Critical Thinking solution (fs-id2636426) has the plate disappear \"at puberty (approximately 11 years of age)\" and a radiograph with the plate indicate \"an approximate age of 10 years,\" but the trochanteric apophyses fuse in the mid-to-late teens (Han et al., J Korean Orthop Assoc 1982;17:12-21, lesser trochanter 13-19 years; Gray's Anatomy, 1918: not united until after puberty). The page reads \"doing so in the teenage years after puberty, followed by the greater trochanter\" with a visible Source note, and the model answer reads \"disappears in the mid-to-late teens\" and \"an age between about 10 years and the mid-teens,\" with a footer sentence. Evidenced by the chapter 8 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/08-the-appendicular-skeleton/05-development-of-the-appendicular-skeleton.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46376",
+      "sourceElementIds": [
+        "fs-id1375181",
+        "fs-id1641196",
+        "fs-id1424068"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2015,
+      "rationale": "The module says the clavicle \"does not develop via endochondral ossification\" and develops \"through the process of intramembranous ossification\" (para fs-id1375181, Chapter Review para fs-id1641196, Critical Thinking solution para fs-id1424068) yet is \"not complete until age 25,\" but ossification at 25 is the fusion of a sternal-end secondary center, which forms in cartilage, and Section 6.4 (m46301, fs-id1173842, fs-id1639567) says only a good deal of the clavicles forms intramembranously (Ogata and Uhthoff, Acta Orthop Scand 1990;61:330-334; Gray's Anatomy, 1918). The page reads \"develops largely through intramembranous ossification\" and \"not complete until about age 25, when a secondary ossification center at its sternal end, which forms in cartilage, fuses with the rest of the bone,\" matched in the Summary and the model answer, with a visible Source note and a footer sentence. Settles the chapter 6 claim pass's flag. Evidenced by the chapter 8 prose claim pass, October 16, 2026."
     }
   ]
 }

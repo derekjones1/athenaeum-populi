@@ -1432,6 +1432,11 @@ function elementSuppliesName(block, id) {
   return false;
 }
 
+// The shortest shipped attribution footer is 322 characters (a chapter
+// `_index.md`); a section footer is never under 500. 200 refuses a stub
+// with room to spare.
+const MIN_FOOTER_CHARS = 200;
+
 export function lintHugo(src, filename = '', options = {}) {
   const errors = [];
   // Lazy and cached per call: only touch disk if a mediafigure shortcode is
@@ -3207,6 +3212,43 @@ export function lintHugo(src, filename = '', options = {}) {
       const close = src.indexOf('</small>', footers[footers.length - 1].index);
       if (close >= 0 && src.slice(close + '</small>'.length).trim()) {
         err(close, 'content follows the attribution footer — the `<small>` footer must be the last thing on the page');
+      }
+    }
+  }
+
+  // ---- attribution footer: present and real --------------------------------
+  // Every book page — a section, a Knowledge Check, a chapter `_index.md` —
+  // closes on a `<small>` attribution that links the OpenStax source page
+  // and the Creative Commons license. All 802 shipped footers (October 16,
+  // 2026) carry `OpenStax`, a `](https://openstax.org/books/…)` link and a
+  // `creativecommons.org/licenses/` link, and the shortest is 322
+  // characters; their openings vary ("This section is adapted from", "This
+  // knowledge check is drawn from", "Adapted from", "This page adapts"),
+  // so the rule checks the content, not the first words. Anatomy and
+  // Physiology chapter 8 reached verify-section green with its footer still
+  // the scaffold placeholder `<small>FOOTER</small>` — the "last thing on
+  // the page" rule above keys on `<small>This` and never saw it.
+  {
+    const isChapterIndex = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\][^/\\]+[/\\]_index\.md$/i
+      .test(filename.replace(/^\.?[/\\]?/, '/'));
+    if (isRegularSection || isKnowledgeCheck || isChapterIndex) {
+      const smalls = [...mediaSrc.matchAll(/<small>([\s\S]*?)<\/small>/g)];
+      const last = smalls.at(-1);
+      const body = last ? last[1].trim() : '';
+      const missing = [];
+      if (!/OpenStax/.test(body)) missing.push('the name OpenStax');
+      if (!/\]\(https:\/\/openstax\.org\/books\/[^)\s]+\)/.test(body)) missing.push('a `](https://openstax.org/books/…)` link to the source page');
+      if (!/\]\(https:\/\/creativecommons\.org\/licenses\/[^)\s]+\)/.test(body)) missing.push('a `](https://creativecommons.org/licenses/…)` license link');
+      if (body.length < MIN_FOOTER_CHARS) missing.push(`at least ${MIN_FOOTER_CHARS} characters (it has ${body.length})`);
+      // A missing footer is a claim about a whole PAGE, so — like the
+      // missing-Practice rule — it is made only where leading frontmatter
+      // marks one; a snippet or another rule's test case has no footer
+      // without that being a defect. A `<small>` that is present is judged
+      // wherever it appears.
+      if (!last) {
+        if (/^---\r?\n/.test(src)) err(src.length, 'page has no attribution footer — close it with `<small>This section is adapted from [Book, Section N.M](https://openstax.org/books/…) by …, © OpenStax, licensed under [CC BY …](https://creativecommons.org/licenses/…). Changes: ….</small>`');
+      } else if (missing.length) {
+        err(last.index, `the last \`<small>\` (${JSON.stringify(body.slice(0, 40))}) is not an attribution footer — it lacks ${missing.join(', ')}; write the real footer (a placeholder such as \`<small>FOOTER</small>\` never ships)`);
       }
     }
   }
