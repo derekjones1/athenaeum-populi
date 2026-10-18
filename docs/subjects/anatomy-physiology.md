@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, and chapters 7, 8, and 9 on October 16, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, and chapter 10 on October 18, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -279,6 +279,12 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   (life-sciences Media), e.g. 1.6's arm arrow is on the woman's LEFT arm.
 - **A one-word typo is footer + ledger only**; a claim-level correction gets
   a Source note (core §0 rule 4).
+- **The footer describes a source glyph it may not print.** The Greek-mu
+  lint reads the whole page, footer included, so a `Changes:` clause that
+  quotes the source's "μm" fails; write "the italic Greek letter mu of the
+  source's micrometre unit is set as the upright micro sign (µm)" *(chapter
+  10, two authors)*. The ASCII-ion rule does exempt the footer; this one
+  does not, on purpose (Pagefind indexes the glyphs separately).
 - **Source section titles vary** ("Review Chapter", "Critical Thinking
   Question" in 1.6) — they are the same `multiple-choice` /
   `free-response` classes.

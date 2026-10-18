@@ -110,6 +110,10 @@ them.
    the parent views the image and writes the alt itself, BEFORE reading the
    Clerk's draft — on chapter 7 the parent tightened a Clerk alt whose
    colour-by-division reading was wrong, and the claim pass caught it.
+   View the largest vendored width and zoom before writing: the chapter 10
+   parent described a racket "flat just above the court" that the image
+   holds at shoulder height, and a knee "under the body" that is out in a
+   split — the claim pass rewrote the alt.
    Launched together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Clerk (Sonnet) fills PART A (every
@@ -132,7 +136,13 @@ them.
    names the playbook rule it applies, and a shape the playbook already
    fixes is NOT re-decided: before the wave, grep
    `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md`
-   for every form Part C names and quote the rule beside the decision.
+   for every form Part C names and quote the rule beside the decision —
+   the HOUSE rule, never a sibling book's precedent Part B found (chapter
+   10's Part C took Microbiology's `Pᵢ` from Part B's grep; life-sciences
+   "Cases later chapters settled" keeps `P<sub>i</sub>`, and the parent
+   re-edited two pages). A callout heading's form is copied byte for byte
+   from the exemplar page (`**Interactive Link**` has no period; Part C
+   wrote one and three authors had to say so).
    Part B quotes the extractor's key line verbatim and never infers a key.
    A sentence Part C names as the one that fixes an Interactive Link answer
    is grepped in the raw CNXML OUTSIDE the `<solution>` before it is named —
@@ -212,7 +222,11 @@ page by page.
 
 Checker defects go back to the page's author by `SendMessage` (authors are
 resumable by raw agent id); the parent applies only one-line fixes itself.
-A replacement distractor is grepped against the keys of the items above
+A source notation the house re-sets inside a keyed option or key
+(`Ca<sup>++</sup>` → `Ca²⁺`, 10.1) is a fold in `normalizeText`
+(`tools/lib/openstax-source.mjs`, with a test), never a `key` deviation —
+the keys gate reports it as a key-differs until the fold lands *(chapter
+10)*. A replacement distractor is grepped against the keys of the items above
 and below it before it is accepted: "fat storage" landed directly above an
 item keyed "fat stores" *(chapter 6; the author caught it)*. The harness
 may refuse an agent's Write of its report file ("Subagents should return
@@ -379,7 +393,9 @@ the session.
    filed). The checker can report a 404 against the wrong URL on a page
    that carries two cdc.gov links: the page's author confirms each with
    its own full GET before un-linking *(chapter 7: the printed URL
-   answered 200; the References link was the dead one)*. Then `npm run baseline:update`; `npm test > $SP/test-final.log
+   answered 200; the References link was the dead one)*. Then `npm run baseline:update` (since chapter 10 it moves the
+   `--min-covered` coverage floor too; before that the floor was edited by
+   hand); `npm test > $SP/test-final.log
    2>&1`; read the tail. `npm run source:verify`. Then `npm run build >
    $SP/build.log 2>&1 && npm run check:build >> $SP/build.log 2>&1`; read
    the tail — a green `npm test` is not a buildable site (a bare `$4

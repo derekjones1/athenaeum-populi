@@ -130,6 +130,13 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/10-muscle-tissue/06-exercise-and-muscle-performance.md',
+    exercise: 'fs-id1285054',
+    kind: 'options',
+    erratum: 2065,
+    reason: 'the source distractor "Fast fibers have many mitochondria" is true of fast oxidative fibers by the book\'s own 10.5 ("possess high amounts of mitochondria"); the page narrows it to "Fast glycolytic fibers have many mitochondria" (key unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/microbiology/21-skin-and-eye-infections/02-bacterial-infections-of-the-skin-and-eyes.md',
     exercise: 'fs-id1167663644101',
     kind: 'options',

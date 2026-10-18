@@ -468,6 +468,14 @@
     "result": "agrees"
    }
   },
+  "01181b36d548cff3": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2052461 sentence 3, blank 'periosteum'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "011b9bfc08654517": {
    "verdict": "ok",
    "note": "author-built from § Planctomycetes: \"Planctomycetes are unusual in that they reproduce by budding, meaning that instead of one maternal cell splitting into two equal daughter c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -1615,6 +1623,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "03744c2d72cf2046": {
+   "verdict": "ok",
+   "note": "author selfcheck from fs-id2110999 sentences 1-4"
+  },
   "03759858ebec64da": {
    "verdict": "ok",
    "note": "Review Question fs-id1005699, key A; fs-id1709565 barrier against water loss in the stratum corneum",
@@ -1925,10 +1937,6 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
-  },
-  "04634b6f11dc91d6": {
-   "verdict": "ok",
-   "note": "source solution verbatim (ILQ/CT), re-read against CNXML"
   },
   "0464efffe36c75f3": {
    "verdict": "ok",
@@ -3964,6 +3972,10 @@
     "result": "agrees"
    }
   },
+  "092fdd0a127b2b58": {
+   "verdict": "ok",
+   "note": "source fs-id2253367, solution fs-id1707039 verbatim as model answer"
+  },
   "093a16190e0fbceb": {
    "verdict": "ok",
    "note": "textin re-read against m46355 CNXML and page text; key \"ramus\" — The infratemporal fossa is located below the zygomatic arch and deep to the ____",
@@ -4104,6 +4116,14 @@
   "099c93674edff878": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "09a0bdfce6c79527": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id957575 perimysium; body bolds it in fs-id2278076",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -5106,6 +5126,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "0bf26f7a0c113457": {
+   "verdict": "ok",
+   "note": "CT fs-id1211287 solution verbatim"
   },
   "0bf2b5d13dbb2243": {
    "verdict": "ok",
@@ -8909,6 +8933,14 @@
     "result": "agrees"
    }
   },
+  "15011109ddfef191": {
+   "verdict": "ok",
+   "note": "Source fs-id2025849, key D striated; fs-id2020397 'creates a pattern, or stripes, called striations'; nonstriated is smooth muscle, elastic and excitable are qualities, not appearances.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "15039a08417ee0d0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9935,6 +9967,14 @@
    "note": "a1=18, r=1/3: 18, 18*(1/3)=6, 6*(1/3)=2, 2*(1/3)=2/3, (2/3)*(1/3)=2/9. Matches CNXML solution {18,6,2,2/3,2/9}. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "173f7452ae62eb4f": {
+   "verdict": "ok",
+   "note": "Source Review fs-id1939556, key B (fs-id2254399) = exhaustion of energy reserves and buildup of lactic acid levels; options verbatim in source order; 10.3 muscle-fatigue paragraph supports.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -12544,6 +12584,14 @@
     "result": "agrees"
    }
   },
+  "1d35319b6bfb2aad": {
+   "verdict": "ok",
+   "note": "creatine: fs-id2240374 sentence 1; distractors module phrases of EPO, myoglobin, hGH",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1d35cc469593f569": {
    "verdict": "ok",
    "note": "KC 3 16.2 § The trp Operon: A Repressible Operon, m66504 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -12830,6 +12878,14 @@
   "1dd98bb77515af99": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662894791 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1ddfaec93b9d26fd": {
+   "verdict": "ok",
+   "note": "Body cloze from fs-id2017239 'Contractility allows muscle tissue to pull on its attachment points and shorten with force'; singular folds; 'points of attachment' is not graded (the module never prints it). accept: points of attachment|point of attachment|attachments (reordered compound and head-word form, which the grader does not fold); all grade correct.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -15021,6 +15077,10 @@
     "result": "agrees"
    }
   },
+  "2363d512fb602eaf": {
+   "verdict": "ok",
+   "note": "source CT fs-id2326285, model answer = solution fs-id1389497 verbatim"
+  },
   "236dacd94d0f5cf3": {
    "verdict": "ok",
    "note": "Practice, Obj2. Source Critical Thinking fs-id1172099524007, unkeyed upstream. Stays selfcheck: honest answer needs the reader to connect a stomach-acidity fact to a drug mechanism, not one fixing sentence. Model answer assembled from § opening paragraph ('Environments with pH values below 7.0 are considered acidic') and § neutrophile paragraph ('Most familiar bacteria... are neutrophiles and do not fare well in the acidic pH of the stomach'). Stem corrects source's 'proton pumps inhibitors' to 'proton pump inhibitors' (one-word source typo, logged). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -16139,6 +16199,14 @@
     "result": "agrees"
    }
   },
+  "2614dc5f36bc763f": {
+   "verdict": "ok",
+   "note": "Source Review fs-id1349513, key B (fs-id1707608) = phosphate bonds; 10.3: 'Creatine phosphate is a molecule that can store energy in its phosphate bonds.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2615518296299dd0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16411,6 +16479,14 @@
   "26c8f47984700805": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "26cc15b0d50a4160": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1401616 synaptic cleft; body fs-id2023666",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -16857,6 +16933,14 @@
    "verdict": "ok",
    "note": "Algebraic exercise 31 (fs-id1165135406979): 2*lim f(x) + sqrt(lim g(x)) = 2(3)+sqrt(5) = 6+sqrt(5); matches CNXML solution. Verified via checkAnswer that the abstract symbolic printed subject '2f(x)+\\sqrt{g(x)}' does not grade correct against '6+\\sqrt5' (checkAnswer -> incorrect), so this is not a retype hazard; exact form declared defensively to block a decimal-approximation entry (verified 'form' under exact for a full-precision decimal). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "27d853140c7e83bb": {
+   "verdict": "ok",
+   "note": "Review Q11 fs-id1364700, source key B; m46476 defines the plasma membrane of muscle fibers as the sarcolemma.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "27e032b39f0eb60e": {
    "verdict": "ok",
    "note": "parent edit after checker/claim-pass review (Sep 7 2026) re-hashed this selfcheck — re-read against the CNXML and the page: Given the life cycle of the *Schistosoma* parasite, suggest a method of prevention of the disease."
@@ -17164,6 +17248,14 @@
    "verdict": "ok",
    "note": "CT fs-id1183899 verbatim, rejection corrected"
   },
+  "28d40deccc2c8535": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1254931 troponin; body fs-id2141504 bolds it; no source item or ILQ prints it (replaces sarcomere per checker)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "28d470dbdffec429": {
    "verdict": "ok",
    "note": "author-built from § Biofilm Formation: \"The mechanism by which cells in a biofilm coordinate their activities in response to environmental stimuli is called quorum sensing .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -17235,6 +17327,14 @@
   "28fc96954c0d04e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2903444d782031eb": {
+   "verdict": "ok",
+   "note": "key \"less tension is produced\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -17965,6 +18065,14 @@
   },
   "2afeeba38b2cdcae": {
    "verdict": "ok"
+  },
+  "2b044f7ec836c2ae": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1389642 'The remainder of the intercalated disc is composed of desmosomes'; distractors sarcomere (fs-id1978114), mitochondria (fs-id1978114), SR (fs-id1285162); key at B",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2b05f160c8ef4abd": {
    "verdict": "ok",
@@ -21178,6 +21286,14 @@
   "32dec2beebea8685": {
    "verdict": "ok",
    "note": "fs-id1163437 key B; source options verbatim in source order, keyed option matches CNXML solution; module supports key",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "32e1fd799aebd51b": {
+   "verdict": "ok",
+   "note": "Review Q14 fs-id1481100, source key D; body fs-id1632981/fs-id2341110 and summary: sarcomeres are the contractile units within myofibrils.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25312,9 +25428,21 @@
    "verdict": "ok",
    "note": "Microbiology 3.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the labeled generalized eukaryotic cell earlier in the section, positions read off both images)"
   },
+  "3d51abe0a97b36cc": {
+   "verdict": "ok",
+   "note": "Body cloze from fs-id1388147 'when a protein called actin is pulled by a protein called myosin'; one-word key, no accept needed.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3d5e6c6b1ae6ae31": {
    "verdict": "ok",
    "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3d634b799575c83d": {
+   "verdict": "ok",
+   "note": "CT fs-id1725306, model answer = solution fs-id1705936 verbatim"
   },
   "3d64d4b3887083db": {
    "verdict": "ok",
@@ -29515,6 +29643,14 @@
    "verdict": "ok",
    "note": "loop diuretics VC selfcheck; model answer and checkpoints reuse the source solution's clauses verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "46ed1f81eaf68c54": {
+   "verdict": "ok",
+   "note": "key \"contraction phase\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "46f92e7e59339abf": {
    "verdict": "ok",
    "note": "Independently derived: 1/x^2 is even, so both sides of x=0 go to +inf and both tails go to 0; matches CNXML Try It 1. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -32617,6 +32753,10 @@
    "verdict": "ok",
    "note": "15.4 Aspergillus self-check: model answer and rubric corrected Sep 22 2026 so catalase is no longer called a protease (erratum 893, Source note on page); parent re-read."
   },
+  "4ed85225e8624665": {
+   "verdict": "ok",
+   "note": "Source fs-id2277173, model answer is solution fs-id2036297 verbatim; two rubric clauses split from it; fs-id2017239 supports it."
+  },
   "4ed8c7ca109b29c0": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -33460,6 +33600,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5106307cb9f11283": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1639931, model answer = solution fs-id2336490 verbatim; checks are its clauses"
   },
   "511b221d0b0d2f86": {
    "verdict": "ok",
@@ -34800,6 +34944,10 @@
   "5476050fef5cb61a": {
    "verdict": "ok"
   },
+  "5478e9205d7e75a1": {
+   "verdict": "ok",
+   "note": "model answer is the CNXML solution verbatim; checkpoints are its own clauses"
+  },
   "54790e2ef92de1d3": {
    "verdict": "ok",
    "note": "m66709 fs-idm2997248 (Critical Thinking): source solution reused verbatim as the model answer; four checkpoints decompose its four clauses (unsustainable resource use -> habitat destruction; unsustainable fishing/hunting; fossil fuels -> global warming) with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -35153,6 +35301,14 @@
   "555def72d700be7a": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp59027664: model answer transcribes the source solution, with 'made up tracheids' corrected to 'made up of tracheids' (missing preposition in the printed solution) — reported as a source defect; checkpoints are its clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5560fdc51a50dc42": {
+   "verdict": "ok",
+   "note": "adipose tissue: note fs-id2267886 sentence",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "55619336a768b310": {
    "verdict": "ok",
@@ -35615,6 +35771,10 @@
   "568387fa42ed108e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "568d907f03da46b3": {
+   "verdict": "ok",
+   "note": "source CT fs-id1399066, model answer = solution fs-id2068349 verbatim"
   },
   "568de472439e14f6": {
    "verdict": "ok",
@@ -36800,6 +36960,14 @@
     "result": "agrees"
    }
   },
+  "595b733197a9c337": {
+   "verdict": "ok",
+   "note": "key \"isometric contraction\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5960a805f13da2f0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -37692,6 +37860,14 @@
     "result": "agrees"
    }
   },
+  "5b75e61f4c49afe4": {
+   "verdict": "ok",
+   "note": "testosterone: fs-id2030648",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5b75fa0d7bedb91d": {
    "verdict": "ok",
    "note": "source exercise fs-idp21100560 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -37810,6 +37986,14 @@
   "5bb482cc0bdd8cd9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5bb5931ddd5d74f5": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1433438 autorhythmicity; body prints it (fs-id2254456); no source item keys or prints it",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39556,6 +39740,14 @@
     "result": "agrees"
    }
   },
+  "6042097d2fa52709": {
+   "verdict": "ok",
+   "note": "Review fs-id2020356, key D 'contain intercalated discs' (solution fs-id1424748); options verbatim in source order; body fs-id1978114 supports",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "60420cc410d1b1b7": {
    "verdict": "ok",
    "note": "selfcheck = CT question fs-idm33830096; model answer is the CNXML solution verbatim (hagfishes/cranium evolved before lampreys/vertebral column); checkpoints decompose the same two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -40023,6 +40215,14 @@
     "result": "agrees"
    }
   },
+  "618ee46394db25a9": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id1905202; body fs-id2142755 bolds Glycolysis; accept anaerobic glycolysis (fs-id2072704).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "61a166964c4f8f05": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40281,6 +40481,14 @@
     "result": "agrees"
    }
   },
+  "6282351c275a306c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1864819: 'As scar tissue accumulates, the heart loses its ability to pump because of the loss of contractile power'; accept 'pump blood' (checker)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "628f88202dbace37": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663732098 (Short Answer), source prints no key. Reverted from a multiplechoice (hash dd39b451692b4e9b) to a selfcheck per the checker's D1 finding: the two mechanisms (alarmones, an alternate σ factor) live in two different subsections, not one fixing sentence, so the pair-shaped-key rule does not apply. Model answer and rubric are assembled from one sentence each of § Alarmones and § Alternate σ Factors. Group 2 still meets the 3-item floor and keeps two auto-graded items (the MC and textin beside it), so no filler was added. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -40386,6 +40594,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "62de5cbd79315072": {
+   "verdict": "ok",
+   "note": "CT 35 fs-id1469365, model = solution fs-id810144 verbatim."
   },
   "62e67e95b59e73ed": {
    "verdict": "ok",
@@ -40547,6 +40759,14 @@
   "635fea103722893c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "636d2b2baac308a8": {
+   "verdict": "ok",
+   "note": "source fs-id2131239, key A kept; module: no striations and sarcomeres (fs-id2041917); voluntary control contradicted by fs-id2337983; actin and myosin present",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -40807,6 +41027,14 @@
     "result": "agrees"
    }
   },
+  "643af25a8a3f0539": {
+   "verdict": "ok",
+   "note": "key \"80 percent to 120 percent\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "643bdadbd19093b8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40886,6 +41114,14 @@
   "649686cd80cc709f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "649cac578c0fea14": {
+   "verdict": "ok",
+   "note": "key \"recruitment\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41163,6 +41399,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "6581c0f22105a466": {
+   "verdict": "ok",
+   "note": "CT fs-id1953951, model answer = solution fs-id1321085 verbatim"
   },
   "65830be3a9dca388": {
    "verdict": "ok",
@@ -42067,6 +42307,14 @@
     "result": "agrees"
    }
   },
+  "67d04c9c5fc459d3": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1472727 triad; body fs-id1698692",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "67d6d43acc7b0334": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"In an unstable or unpredictable environment asexually-reproducing species may be at a disadvantage because all the offspring are geneticall…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -42713,6 +42961,10 @@
    "verdict": "ok",
    "note": "multi-sentence cAMP/chloride-channel/osmotic mechanism, stays selfcheck; stem corrects the source's 'V. cholera' typo to 'V. cholerae' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "69a9ab25428ef4d5": {
+   "verdict": "ok",
+   "note": "model answer is the CNXML solution verbatim; checkpoints are its own clauses"
+  },
   "69a9ebe61a46e6ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -42927,6 +43179,14 @@
   "6a3bdec2e67ce0ff": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6a3e28e9da6c3e71": {
+   "verdict": "ok",
+   "note": "key \"increases\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43316,6 +43576,14 @@
     "result": "agrees"
    }
   },
+  "6b542a82b25ac0c6": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1342417 aponeurosis; body fs-id2052461; irregular plural aponeuroses (summary) in accept",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6b549932f225828b": {
    "verdict": "ok",
    "note": "KC 5 28.6 § body Subphylum Crustacea (fs-idp97897024), m66399 — parent re-read against the module"
@@ -43459,6 +43727,14 @@
   "6bc6d3457c4e97d9": {
    "verdict": "ok",
    "note": "Try It: x=y^3-2y with y(t)=t substituted directly gives x(t)=t^3-2t; matches CNXML solution."
+  },
+  "6bc9c16b10f87b55": {
+   "verdict": "ok",
+   "note": "prose-built sortbins from fs-id1233172 (single-unit) and fs-id1950516 (multiunit); each label true of exactly one bin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6bcfb9b92cc550a2": {
    "verdict": "ok",
@@ -45514,6 +45790,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7139e7b6421703f9": {
+   "verdict": "ok",
+   "note": "source fs-id2444302, solution fs-id1720124 verbatim as model answer"
+  },
   "713a78bf0f1c277e": {
    "verdict": "ok",
    "note": "author-built from § The lac Operon: Activation by Catabolite Activator Protein: \"Thus, in the case of the lac operon, for transcription to occur, lactose must be present (removing the lac repressor protein) and glucose l…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -45733,6 +46013,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=-\\theta$. What is the name of th)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "71a831c9e2a185d4": {
+   "verdict": "ok",
+   "note": "structural proteins: summary fs-id1880898 first sentence; distractors false per module",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -46299,6 +46587,14 @@
   },
   "730877ff50a4d014": {
    "verdict": "ok"
+  },
+  "731342652fb4a5d9": {
+   "verdict": "ok",
+   "note": "source fs-id2165423 key B verified",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "731d3ffc42531296": {
    "verdict": "ok",
@@ -48739,6 +49035,14 @@
     "result": "agrees"
    }
   },
+  "78ea370e587131de": {
+   "verdict": "ok",
+   "note": "source fs-id1285054 key C verified; option d narrowed to fast glycolytic (options deviation, parent files); 10.5 FG paragraph",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78ecf0101cb35bd4": {
    "verdict": "ok",
    "note": "textin re-read against m46355 CNXML and page text; key \"jugular foramen\" — An irregularly shaped opening located in the lateral floor of the posterior cran",
@@ -49054,6 +49358,14 @@
    "note": "TI6b: f(x)=x^3-3x, f'(x)=3x^2-3, f'(0)=-3 by direct substitution; confirmed numerically node central-difference -2.9999999999990004. Matches source Try It solution's fourth value (-3). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "79abcac90cb8ea06": {
+   "verdict": "ok",
+   "note": "key \"overlap\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51316,6 +51628,14 @@
    "verdict": "ok",
    "note": "Microbiology 10.2 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the deoxyribose carbon numbering and the free 5' phosphate / 3' hydroxyl sentence)"
   },
+  "7ebba8d4e90cf77d": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1389642 last sentence: 'so the cells do not pull apart during the stress of individual fibers contracting'; accept separate|come apart|tear apart|break apart (grader-checked)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7ebe16ae90f44c17": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51733,6 +52053,10 @@
    "verdict": "ok",
    "note": "KC 3 15.2 § Elongation and Termination in Prokaryotes, m66498 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
   },
+  "7fc4f5f94bd98f9d": {
+   "verdict": "ok",
+   "note": "Source Critical Thinking fs-id1844803; model answer is solution fs-id1383650 verbatim; rubric three clauses copied from it. '36 ATP' vs 10.3 'approximately 36'; 'two ATP' is glycolysis's net gain (10.3 also prints 'four from glycolysis', the gross) — defensible, kept."
+  },
   "7fc7e0f55174892e": {
    "verdict": "ok",
    "note": "Practice #17 (fs-id1165137896991): D=[[18,12,13],[8,14,6],[7,4,21]]; 100D computed in Node = [[1800,1200,1300],[800,1400,600],[700,400,2100]], row 2 = 800,1400,600. Matches CNXML solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -52047,6 +52371,14 @@
     "result": "agrees"
    }
   },
+  "807e241e29b52bab": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2010798: 'a low concentration of calcium remains in the sarcoplasm to maintain muscle tone'; accept tone",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "807f2dfd2c58ba59": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -52068,6 +52400,14 @@
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "809235fb60741535": {
+   "verdict": "ok",
+   "note": "source fs-id2305580 key A verified against CNXML (re-hashed after checker fixes)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -53040,6 +53380,14 @@
     "result": "agrees"
    }
   },
+  "8336a8f53e95533c": {
+   "verdict": "ok",
+   "note": "Source Review fs-id1394945, key D (fs-id1279730) = none of the above; source option kept (not added locally); glycogen use still requires regenerating ATP from ADP and phosphate, so C is not a second key.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "83375c4912fa22db": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -53600,6 +53948,14 @@
     "result": "agrees"
    }
   },
+  "846eec8a7caab582": {
+   "verdict": "ok",
+   "note": "Review Q12 fs-id1615887, source key C; body fs-id1639118: ATP-driven pumps move Ca2+ back into the SR.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "846f2259788df4e0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53931,6 +54287,10 @@
     "result": "agrees"
    }
   },
+  "85363c6231e6fbef": {
+   "verdict": "ok",
+   "note": "CT fs-id1339892, model answer = solution fs-id1898243 verbatim"
+  },
   "853873a47c10a0d9": {
    "verdict": "ok",
    "note": "source exercise fs-idm42465184 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -54064,6 +54424,14 @@
   },
   "857c1af9cc4c4221": {
    "verdict": "ok"
+  },
+  "857f930e1858bb3d": {
+   "verdict": "ok",
+   "note": "Review Q10 fs-id1194380, source key D; body fs-id2292610: first step is Ca2+ binding troponin.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "857f98fa5dfa3339": {
    "verdict": "ok",
@@ -54832,6 +55200,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "87b792bd6de936c8": {
+   "verdict": "ok",
+   "note": "CT fs-id1725236, model answer = solution fs-id1200448 with Unicode Na+/K+ and 'Action Potential' lower-cased"
   },
   "87bd383ab318c784": {
    "verdict": "ok",
@@ -56073,6 +56445,14 @@
   "8aeea65f9fdc036b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8af4862e18d14e5e": {
+   "verdict": "ok",
+   "note": "Review fs-id1390996, key B (solution fs-id1353886), options in source order",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58692,6 +59072,14 @@
    "verdict": "ok",
    "note": "fs-id2029871: source solution transcribed verbatim as model answer."
   },
+  "91c4a3128bb1fff0": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id1231453; body fs-id1909043 bolds Aerobic respiration; accept cellular respiration (fig-ch10_03_05 panel c label).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "91c7a4f1f6077c25": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -58884,6 +59272,14 @@
    "note": "Exercise fs-id685962; key D 'either increase or decrease' matches source solution 'D' and the section text ('can increase or decrease the stability... depending on the specific RBP'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9244044b2efe67b1": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2266493 somites 'blocks of paraxial mesoderm cells'; body para fs-id1959103 prints 'somites'; accept 'mesodermal somites' (body fs-id1959103 prints it); re-read after claim correction F11 (fs-id1959103 sentence): stem and hint make no trunk/limb/head claim, still ok",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -59092,6 +59488,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-C",
+    "result": "agrees"
+   }
+  },
+  "92a527a2a050201c": {
+   "verdict": "ok",
+   "note": "Review Q13 fs-id1220928, source key B; body fs-id1236880 (second paragraph below fig-ch10_03_04): ATP binding causes the myosin head to detach.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -59584,6 +59988,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "93f0acecc5b0e1f5": {
+   "verdict": "ok",
+   "note": "CT 36 fs-id1368944, model = solution fs-id1351927 with one-word agreement fix cause->causes."
   },
   "93f6e4dfd8d221be": {
    "verdict": "ok",
@@ -60328,6 +60736,14 @@
    "verdict": "ok",
    "note": "re-derived: 4y^2-9x^2=36 -> y^2/9-x^2/4=1, vertical transverse axis, a=3, b=2, asymptotes y=+-(a/b)x=+-1.5x; matches recorded answer. Each member reaches 5 lattice points in [-6,6]x[-6,6] at x=-4,-2,0,2,4 (y=-6,-3,0,3,6 resp. mirrored), well above the >=2 asymptote minimum; rendered and visually confirmed both lines are distinct from each other and from the axes, meeting only at the origin. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "95d02ed1e0ac1566": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2142612 latch-bridges; body prints it (fs-id1990264)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "95d859d9442b7100": {
    "verdict": "ok",
    "note": "KC 8 46.2 § body Consequences of Food Webs: Biological Magnification, PCBs sentence (fs-idp13422016), m66702 — parent re-read against the module",
@@ -60833,6 +61249,10 @@
   "970dcbfcea9b6651": {
    "verdict": "ok",
    "note": "Practice, objective 1 (Verbal exercise fs-id1662244): categorical, recast as multiplechoice. Source solution: 'An experiment is an activity with an observable result.' | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "970e04d90110a8d3": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1890801, model answer = solution fs-id2338234 verbatim; checks are its clauses"
   },
   "970f92afa2642914": {
    "verdict": "ok",
@@ -62518,6 +62938,14 @@
     "result": "agrees"
    }
   },
+  "9b782f7981f6091a": {
+   "verdict": "ok",
+   "note": "red blood cells: fs-id1216986 sentence 1 (re-hashed after checker fixes)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9b857e31870c25db": {
    "verdict": "ok",
    "note": "textin re-read against CNXML/page after checker fixes: DNA polymerase",
@@ -62797,6 +63225,14 @@
   "9c665901041be7ad": {
    "verdict": "ok",
    "note": "3(5-6x)+2=17-18x; key p1271 #35 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "9c66c4d7b6e6904c": {
+   "verdict": "ok",
+   "note": "Review fs-id1255244, key A (solution fs-id2350570), options in source order; consistent with fs-id2023666",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9c68decc0e75fdea": {
    "verdict": "ok",
@@ -63842,6 +64278,14 @@
   },
   "9ee43cc1ab79532b": {
    "verdict": "ok"
+  },
+  "9ee643eb120c1f30": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2329008: 'These cells are located outside the sarcolemma and are stimulated to grow and fuse with muscle cells by growth factors that are released by muscle fibers under certain forms of stress' (These cells -> Satellite cells)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "9ee6bdd9e8829c21": {
    "verdict": "ok",
@@ -65057,6 +65501,14 @@
     "result": "agrees"
    }
   },
+  "a1ca2960167c83dc": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2241332 endomysium; body bolds it in fs-id2278076",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a1ced4aac08f2136": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65270,6 +65722,14 @@
   "a23c05d6683a5f45": {
    "verdict": "ok",
    "note": "sin²xcos²x=(sinxcosx)²=(1/2 sin2x)²=1/4 sin²2x=1/4·(1-cos4x)/2=(1-cos4x)/8; confirmed numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "a23c5954200b27c8": {
+   "verdict": "ok",
+   "note": "Review fs-id1432203, key C 'stop contracting' (solution fs-id1752497); options verbatim in source order; body: ATP produced primarily through aerobic metabolism",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a23ef49a92b1e8ff": {
    "verdict": "ok",
@@ -68569,6 +69029,14 @@
     "result": "agrees"
    }
   },
+  "aa73fae14449bd73": {
+   "verdict": "ok",
+   "note": "key \"the release of more Ca²⁺ ions\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aa79155a3dfae2c8": {
    "verdict": "ok",
    "note": "Review Question exercise fs-idp149139024: keyed A ('to decipher accurate phylogenies'), matches the section's framing of maximum parsimony as a tool for accurate phylogenies. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -68933,6 +69401,14 @@
   "ab519041facde388": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ab533e3e05ed0090": {
+   "verdict": "ok",
+   "note": "key \"graded muscle response\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69323,6 +69799,14 @@
   "ac81f555f5fefc36": {
    "verdict": "ok",
    "note": "KC 3 14.6 § Dilution Tests (Clinical Focus: Resolution), m58864",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ac82bf7b0cfef330": {
+   "verdict": "ok",
+   "note": "Body cloze from m46473 fs-id2336777: 'Smooth muscle in the walls of arteries is a critical component that regulates blood pressure necessary to push blood through the circulatory system'; the only blank is blood pressure; grader takes blood-pressure and the plural.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -70361,6 +70845,14 @@
   "aee5b670e4bbe063": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "aee8ecb30096643d": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1521188 sarcoplasm; body fs-id2125518",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71783,6 +72275,14 @@
   "b287f86f77266f69": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b290276611e6746e": {
+   "verdict": "ok",
+   "note": "source fs-id1637254 key A (false statement) verified; 10.5 SO paragraph",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76205,6 +76705,14 @@
     "result": "agrees"
    }
   },
+  "bd3256d2e5e6c5db": {
+   "verdict": "ok",
+   "note": "source fs-id1405502, key A kept; module fs-id1990264 supports (function for long periods without rest, low energy use)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bd33c579534fdc2a": {
    "verdict": "ok",
    "note": "source exercise fs-idm39473840 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -76454,6 +76962,14 @@
   "bdcf24b0ba69425d": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: Ghon complex (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bdd9bdf20fb3982e": {
+   "verdict": "ok",
+   "note": "author MC; key = glossary fs-id1891445 'replacement of muscle fibers by scar tissue'; distractors from career box fs-id1645648 and body fs-id1959103, none true of fibrosis",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -76840,6 +77356,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-C",
+    "result": "agrees"
+   }
+  },
+  "bed36856dbbeac4e": {
+   "verdict": "ok",
+   "note": "source Review fs-id1898701, key C myoblast cells (fs-id2348363); body fs-id1959103 'A myoblast is a muscle-forming stem cell'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -79600,6 +80124,10 @@
     "result": "agrees"
    }
   },
+  "c5cbf2b3c596811e": {
+   "verdict": "ok",
+   "note": "CT 37 fs-id1247126, model = solution fs-id1374320 minus the writer’s cramps sentence (claim correction F7, Source note after the item); 3 checks."
+  },
   "c5cdbf86a9fa9eb6": {
    "verdict": "ok",
    "note": "m66408 glossary textin: 'myopia' — '(also, nearsightedness) visual defect in which the image focus falls in front of the retina…'; accept=nearsightedness is the section's own printed synonym (body para: 'Myopia (nearsightedness) occurs when an eyeball is elongated…'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -79932,6 +80460,14 @@
     "result": "agrees"
    }
   },
+  "c6883e26ac974b2b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1474184 calmodulin; body fs-id2176324",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c68863cae1fa8abe": {
    "verdict": "ok",
    "note": "source exercise fs-idp156578576 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -80019,6 +80555,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c6ca6c8d6a072e01": {
+   "verdict": "ok",
+   "note": "Author cloze from m46480 fs-id1640470: 'The oxidative fibers contain many more mitochondria than the glycolytic fibers'; unique (FO lacks significant myoglobin, so myoglobin does not fit); mitochondrion is the irregular singular, grader-tested.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -80146,6 +80690,14 @@
   },
   "c731064456b3ae2b": {
    "verdict": "ok"
+  },
+  "c731b0623cfda6cd": {
+   "verdict": "ok",
+   "note": "key \"incomplete tetanus\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c744b725449b5927": {
    "verdict": "ok",
@@ -82538,6 +83090,14 @@
     "result": "agrees"
    }
   },
+  "cd81fdbf56def20a": {
+   "verdict": "ok",
+   "note": "key \"myogram\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text; stem reworded per claim correction F9 (a myogram is the recording), key unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cd82a7876d131bda": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -83375,6 +83935,10 @@
     "result": "agrees"
    }
   },
+  "cf9c0d595924a7f9": {
+   "verdict": "ok",
+   "note": "CT fs-id2337391 solution verbatim"
+  },
   "cfa14be16bc0c0d2": {
    "verdict": "ok",
    "note": "Author-written from § The Birth of Microbiology (Short Answer fs-id1171359056517 prints no key); model answer uses only that subsection's microscope/Leeuwenhoek/Koch sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -84121,6 +84685,10 @@
   },
   "d1a0eb513107bf30": {
    "verdict": "ok"
+  },
+  "d1ad6eb10a5ea57b": {
+   "verdict": "ok",
+   "note": "author selfcheck, first in objective-2 group; model answer paraphrases fs-id1389642 sentences 3-4 ('allows the quick transmission of action potentials and the coordinated contraction of the entire heart'; 'functional unit of contraction called a syncytium'); prints neither 'pull apart' nor 'intercalated discs'"
   },
   "d1bc350f58c3f102": {
    "verdict": "ok",
@@ -85464,6 +86032,14 @@
     "result": "agrees"
    }
   },
+  "d5009b3235a483fc": {
+   "verdict": "ok",
+   "note": "sarcopenia: glossary fs-id1399107 + body fs-id1584189",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d50494e506301abc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -85511,6 +86087,14 @@
   "d528efe29a4f3a8e": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L297 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "d52e29eec596917c": {
+   "verdict": "ok",
+   "note": "Review Q9 fs-id1882564, source key D; body fs-id1645190: tropomyosin covers the myosin-binding sites.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d5344d6c11a317c6": {
    "verdict": "ok",
@@ -87351,6 +87935,14 @@
     "result": "agrees"
    }
   },
+  "da03d3bc25024604": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2176324: 'which then pull on the intermediate filaments networks throughout the sarcoplasm'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "da048e080c1d6890": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -88925,6 +89517,14 @@
    "verdict": "ok",
    "note": "m66468 visual-connection solution fs-idm54987296 (DNP uncoupling, proton gradient, hyperthermia) matches the page's model answer verbatim; all six checks restate it faithfully. Correctly rendered as a prose-keyed selfcheck rather than a lettered visualcheck, matching the footer's disclosure that both VCs are prose-keyed. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "de1c32dc180d1b30": {
+   "verdict": "ok",
+   "note": "Source fs-id1604812, key B calcium; option set Ca2+ for the source's Ca++ (notation only); fs-id1388147 binding sites exposed in response to calcium ions with troponin and tropomyosin.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "de27d2bd71b0a6d1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -90365,6 +90965,14 @@
    "verdict": "ok",
    "note": "m66440 CT solution fs-idm40512356 (isomerases; center-carbon ketose, first/third-carbon aldose) adapted from a drawing task to a worded description per the footer's disclosed deviation; 'middle carbon'/'end carbon' restate 'center carbon'/'first or third carbon' with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "e1965980a0263028": {
+   "verdict": "ok",
+   "note": "source Critical Thinking (4.4) selfcheck, model answer 'Skeletal muscle cells are striated' verbatim; re-read Oct 18 2026 (chapter 10 run): re-hashed when the shared 414 figure's alt and longdesc were corrected from the image (nuclei in the gaps between fibers); the question, model answer, and hint are unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e19abf09fe63b2b6": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -91658,6 +92266,14 @@
   "e497c81ce7136ba8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e4a3e1280dd24039": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1352107 pacesetter cell; accept pacesetter",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -93461,6 +94077,14 @@
     "result": "agrees"
    }
   },
+  "e9787db8e45af58c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1864819 last sentence ('However,' dropped): 'stem cells found in the blood that occasionally enter cardiac tissue'; accept 'bloodstream|blood stream' (checker; space does not fold)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e97a66dfff13228b": {
    "verdict": "ok",
    "note": "CT fs-id1241719 verbatim"
@@ -93836,6 +94460,14 @@
     "result": "agrees"
    }
   },
+  "ea9fcd9098073e41": {
+   "verdict": "ok",
+   "note": "Prose-built sortbins from fs-id1640470 (myoglobin gives SO fibers their red color), fs-id2460105 (SO useful in maintaining posture), fs-id1424369 (FO sometimes called intermediate fibers; FO used primarily for movements such as walking), fs-id1207069 (FG white color; FG rapid, forceful contractions to make quick, powerful movements). Each label is attributed to one type only; FO and FG explicitly lack significant myoglobin.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eaa206cabe4bb127": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"However, the parasitic species often have limited digestive tracts, nervous systems, and locomotor abilities.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -94020,6 +94652,14 @@
    "verdict": "ok",
    "note": "Practice (Remainder Theorem). Evaluated -3x^2+6x+24 at x=4 via node: 0. Matches CNXML solution for fs-id1165135571875. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "eb0a4642ce3a79da": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2176324 last sentence: 'bulge in a corkscrew motion'; 'This arrangement' given referent",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eb12dbf4b66d8ab1": {
    "verdict": "ok",
    "note": "node: 1/Math.cos(310°·π/180)=1.5557238268604126, rounds to 1.556; matches CNXML solution 1.556 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -94080,6 +94720,14 @@
   "eb34eff89536958b": {
    "verdict": "ok",
    "note": "glossary recall: hydrophilic (fs-idp14233760) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "eb36b634959e5eb3": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was c53bde134d3b7b66] Author cloze from fs-id1905669: 'resulting in much quicker cross-bridge cycling (which pulls the thin filaments toward the center of the sarcomeres at a faster rate)'; blank before its parenthetical gloss; accept crossbridge cycling (unhyphenated, does not fold) and cross-bridge cycle; grader-tested.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -94561,6 +95209,14 @@
     "result": "agrees"
    }
   },
+  "ec6d131e4f2bfc10": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2329008 last sentence, 'endurance' printed verbatim; opening clause 'Because scar tissue cannot contract,' dropped (checker: it answered CT fs-id1399066)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ec6eb07a92ad6397": {
    "verdict": "ok",
    "note": "Review Question fs-idm137736528 (m66622); source solution D = 'occipital'. Section text: 'The occipital lobe is located at the back of the brain. It is primarily involved in vision.' No other option (frontal, parietal, temporal) is described as containing the visual cortex. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -94756,6 +95412,14 @@
   "ecd4d024c9842af8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ecd859b58593a10d": {
+   "verdict": "ok",
+   "note": "key \"the muscle shortens to move a load\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95016,6 +95680,14 @@
   "ed82b105cb04d67c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ed884478a7b9e5e6": {
+   "verdict": "ok",
+   "note": "Source Review fs-id2068349, key A (fs-id1905850) = anaerobic metabolism in the muscles of the sprinter; options verbatim in source order.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96444,6 +97116,14 @@
     "result": "agrees"
    }
   },
+  "f1677de3e6d19bab": {
+   "verdict": "ok",
+   "note": "Author-written from fs-id2020397 'Skeletal muscle fibers are multinucleated structures'; distractors are the module's cardiac ('one to two nuclei') and smooth ('which has only a single nucleus') phrasings; key in position 3 of 3. Re-keyed from cardiac after the checker: 10.7 and 4.4 give cardiac fibers a single nucleus, so 'only a single nucleus' was also defensible; the book everywhere calls skeletal fibers multinucleated (e.g. 10.2 caption).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f168de9c08d3093f": {
    "verdict": "ok",
    "note": "matches CNXML CT fs-idp72621264 solution verbatim (van Helmont) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -96589,6 +97269,14 @@
   },
   "f1fb84852bf6f974": {
    "verdict": "ok"
+  },
+  "f1fd24853a29c693": {
+   "verdict": "ok",
+   "note": "key \"staircase effect\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f1fd5e47388008ca": {
    "verdict": "ok",
@@ -98064,6 +98752,14 @@
    "verdict": "ok",
    "note": "Using the same table: f(3)=8, then g(8)=4, so g(f(3))=4, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f536f45ae9d3f696": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1700679 varicosity; accept varicosities (irregular plural), bouton (caption synonym)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f548bfd0b577e254": {
    "verdict": "ok"
   },
@@ -98579,6 +99275,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f6a069e9864e06d6": {
+   "verdict": "ok",
+   "note": "source Review fs-id1483312, key D satellite cells (fs-id1471315); body fs-id2329008 'satellite cells help to repair skeletal muscle cells'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f6a1321d2dad4df2": {
    "verdict": "ok",
    "note": "source exercise fs-id1172100492390 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -98942,6 +99646,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idm188257296; model answer is the source solution verbatim, checkpoints decompose its three sentences with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "f774398a885f2661": {
+   "verdict": "ok",
+   "note": "Source fs-id2168542, key C; fs-id1388147 confines the troponin/tropomyosin shielding to striated muscle (skeletal and cardiac), smooth muscle uses Ca2+-activated enzymes; excitability (fs-id1840923 'All three muscle tissues'), ATP ('All muscles require'), and elasticity (a quality of muscle tissue) are common. Re-read after claim correction F1 (relaxation re-shielding now stated for striated muscle only): key unchanged and better supported.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f774fb5f2fe82677": {
    "verdict": "ok",
    "note": "body cloze from § Protein Catabolism: \"When grown on skim milk agar, production of the extracellular protease caseinase causes degradation of casein, which appears as a zone of c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -99146,6 +99858,14 @@
    "note": "glossary recall: monosomy (fs-id1015417) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f7c7c1e80a2d7608": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1389642: 'This joining is called electric coupling'; preceding sentence kept as referent; accept 'electrical coupling' natural variant",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -99656,6 +100376,14 @@
     "result": "agrees"
    }
   },
+  "f9215053048c62d2": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2147580 hyperplasia, stem reworded to contrast hypertrophy (size) with hyperplasia (number of cells) per body fs-id2166530, so 'cell division' does not fit",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f929d1ad510d3b2b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99983,6 +100711,14 @@
    "note": "source exercise fs-id1167662519418 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f9c87c019b0c0128": {
+   "verdict": "ok",
+   "note": "key \"latent period\": textin key re-read against the CNXML glossary/body/summary sentence named in ledger-10.4.md; accept members run through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -101326,6 +102062,14 @@
     "result": "agrees"
    }
   },
+  "fd0dbb6af20e951a": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id1384346; body fs-id1471902 bolds power stroke.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fd0dc23de6ddca50": {
    "verdict": "ok",
    "note": "textin, glossary term fs-id1428215 \"oxidative phosphorylation\"; prompt is the glossary meaning verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -101461,6 +102205,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fd5cc4154ae86d29": {
+   "verdict": "ok",
+   "note": "Source Critical Thinking fs-id2267554; model answer is solution fs-id2240374 verbatim; rubric two clauses copied from it."
   },
   "fd5deddf15f1e168": {
    "verdict": "ok",
@@ -101949,6 +102697,14 @@
   "fe7e79abb2e8b23f": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "fe7f692a0bba2855": {
+   "verdict": "ok",
+   "note": "body cloze, m46478 fs-id2041917: 'A dense body is analogous to the Z-discs of skeletal and cardiac muscle fibers'; accept Z-line (10.2 body synonym), Z-disk",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "fe802bb1ff9b66d6": {
    "verdict": "ok"

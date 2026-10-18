@@ -733,6 +733,110 @@ term toward a thin section's floor. A CNXML element id can repeat across
 modules (`fs-id2309987` is a paragraph in m46381 and an exercise in
 m46377); the gates key per module, so nothing broke.
 
+## Chapter 10 (October 18, 2026)
+
+One wave on the AGENTS.md roster, started on a clean tree after chapter 9
+was committed first (08f6f1d). Nine Opus authors launched together, an Opus
+checker per page as its author reported, one Opus claim pass over the nine
+pages and the Clerk-written landing page, an Opus alt-errata verifier, and
+the blind solve in a fresh Fable subagent with masked pages. Sonnet clerks
+did the landing page, the run facts, the pins, the errata draft, and this
+history. Authors reported Practice items per page of 8 (10.1), 14 (10.2), 12
+(10.3), 16 (10.4), 9 (10.5), 13 (10.6), 9 (10.7), 14 (10.8), and 10 (10.9),
+105 in all, 83 of them auto-graded. The chapter's 49 source exercises (3
+Interactive Link, 26 Review, 20 Critical Thinking) all reached their pages,
+split 4, 8, 10, 3, 6, 6, 4, 4, and 4 across the nine sections. The source map
+was built right after the wave so the checkers' gates read the new pages.
+
+Part C settled the three Interactive Link Questions as prompts, none graded:
+each is a multi-part question and no module sentence outside a solution
+fixes the whole answer (10.2's micromacro question needs the video's own
+"junction points" and "double strand of pearls"; its skelmuscfiber question
+keys the motor-unit definition that lives in 10.4; 10.3's calciumrole
+question asks what T-tubules are, which only 10.2 prints). The footers give
+the reason per item, and the 10.2 pair, whose note and exercise differ in
+lettering, discloses the difference without a second sentence. The chapter
+has no table, so no sortbins is built from one; 10.8's author built a
+prose-only one over single-unit and multiunit smooth muscle, and 10.5's
+author built another over the three fiber types. The feature boxes titled
+only "Muscular System" print as "Disorders of the Muscular System" with no
+invented topic, 10.6's Everyday Connection keeps its figure inside the box,
+and the two histology-slide boxes carry no question and no item. Two of
+Part C's own lines were wrong and the authors caught them: it set the
+inorganic phosphate as a Unicode subscript where the playbook keeps the
+inline HTML subscript, and it printed a period in the Interactive Link label
+the whole corpus prints without one. The parent corrected the first on 10.3
+and 10.8 and the run facts for both.
+
+Checkers found 15 defects on lint-clean pages (10.1: 1, 10.2: 2, 10.3: 0,
+10.4: 4, 10.5: 1, 10.6: 0, 10.7: 1, 10.8: 2, 10.9: 4), and the parent
+checked each image finding against the vendored WebP before relaying it. The
+classes: accept gaps for a learner's own correct form ("crossbridge cycle",
+"pull apart", "pace-setter", "mesodermal somites", "pump blood",
+"bloodstream", the British "fibre"); items that answered or re-asked another
+item on the page (10.2's sarcomere recall against the Interactive Link
+prompt, 10.2's periosteum cloze above the tendons Critical Thinking item,
+10.9's endurance stem above the question it restates, 10.1's cardiac-nuclei
+multiple choice, double-keyed by 10.7); alt and `longdesc` clauses that
+misread the drawing (10.4's isometric row, 10.4's tetanus plateau, which
+spans about 40 to 82 percent rather than the middle third, and 10.8's
+second cell behind the contracted one); and a hint naming the two headings
+that were its rubric's checkpoints (10.4). A concern on 10.1's micrograph
+alt proved right on the parent's crop, several nuclei lie in the white gaps
+of panel c, so the clause was fixed on 10.1 and on the same figure's
+chapter 4 page. Each page's author applied its own checker's fixes.
+
+The claim pass raised eleven findings and the parent accepted all eleven:
+10.1 says all three muscle tissues relax when the actin-binding sites are
+re-shielded, which smooth muscle lacks; 10.2 puts the sartorius in the
+upper leg; 10.3's cross-bridge caption releases the phosphate twice, calls
+NAD⁺ an enzyme, compares aerobic respiration's 36 ATP with four from
+glycolysis where the module's net yield is two, says the number of fibers
+"does not change" though the book has them die, and a Critical Thinking
+answer blames ATP depletion for writer's cramps in a live person; 10.4 holds
+isotonic tension constant in a paragraph whose own examples raise and lower
+it, and calls a myogram an instrument; 10.6 gives growth hormone's main role
+as healing muscle; and 10.9 has the limb muscles develop from general
+mesoderm rather than somites. The one true distractor was 10.6's Review
+option "Fast fibers have many mitochondria", also true of fast oxidative
+fibers, so it is narrowed to "Fast glycolytic fibers" and disclosed as an
+options deviation. The landing alt the clerk wrote was wrong on three points
+(the racket, the right leg, a sponsor's lettering); the parent had first
+described the photo from an 800-pixel view without zooming, and rewrote it
+from the 1144-pixel file. Thirteen suspicions had no evidence and were not
+acted on, and four author flags (the "contractibility" objective, 10.5's
+"anaerobic respiration (glycolysis)", 10.9's "somites fuse", 10.7's "large
+percentage" of extracellular calcium) were ruled reviewed, not errata.
+
+The blind solve agreed 83 of 83 with no flags and none unsure; it folded
+"intermediate filaments" to the singular and settled 10.8's "lack
+myofibrils" option by elimination, a source option and not actionable. The
+verifier confirmed ten source alt misdescriptions (1007, 1022, 1003, 1023,
+1010a, 1010b, 1006, 1008, 1021, 1029), declined the eleventh that the
+author and 10.8's footer had claimed (1028), found two page alt defects the
+checkers had passed (the 414 alt on 10.1 and chapter 4, and the end of the
+length-tension curve in 1011), and counted twelve source typos, one of them
+subsumed by the 10.9 claim correction, so eleven are filed. Both
+histology-slide links, cardmuscleMG and smoothmuscMG, redirect to a host
+whose certificate has expired, so they stay linked with a footer clause and
+an erratum each; the other three external links answered. Errata 2054–2088
+(35: 12 claim, 2 link, 10 alt or artwork, 11 typo).
+
+Lessons folded in: `normalizeText` folds the source's "++" to "2+" so a keyed
+option printing "calcium (Ca++)" matches the Ca²⁺ the page sets, with a
+test beside the other normalizer tests, and run.md §2 says such a notation
+fold is a tool change, never a `key` deviation; run.md step 6 now has Part
+C quote the HOUSE notation rule (life-sciences "Cases later chapters
+settled"), never a sibling book's precedent, and copy a callout heading's
+bytes from the exemplar page, since two of its lines were wrong; the
+anatomy-physiology playbook's lessons say the footer describes a source
+glyph it may not print, because the micro-sign lint reads the footer too;
+run.md step 5 has the parent zoom the largest vendored width before
+writing the splash alt; and a longdesc written for one chapter's figure is
+re-read against the image before a later chapter reuses it, since 4.4's
+passed twice with the nuclei-in-gaps error. A CNXML paragraph in m46664 (19.2) contradicts itself
+on the source of cardiac calcium; it is noted for that chapter's run.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

@@ -91,6 +91,22 @@ export function applyMinConfirmed(packageJsonText, confirmed) {
   return packageJsonText.replace(MIN_CONFIRMED_RE, `--min-confirmed ${confirmed}`);
 }
 
+/** The wired source-exercise coverage floor in package.json. The coverage
+ * gate wants the count EXACTLY (a drop is a dropped source exercise), so this
+ * floor moves with every authored chapter, the same way as the others. */
+export const MIN_COVERED_RE = /--min-covered (\d+)/;
+
+export function readMinCovered(packageJsonText) {
+  const match = packageJsonText.match(MIN_COVERED_RE);
+  if (!match) throw new Error('package.json no longer carries a --min-covered floor');
+  return Number(match[1]);
+}
+
+export function applyMinCovered(packageJsonText, covered) {
+  readMinCovered(packageJsonText); // throw before touching anything
+  return packageJsonText.replace(MIN_COVERED_RE, `--min-covered ${covered}`);
+}
+
 /**
  * The lines each tool prints its count on, and the pattern that reads it.
  * Both tools print ONLY on their success path, so a failed run has no number
@@ -145,6 +161,17 @@ export const BASELINE_SOURCES = Object.freeze([
     apply: applyMinConfirmed,
     fell: 'confirmed source-key count fell',
     why: 'That is the source cross-check matching fewer page items to their pinned modules, not growth.',
+  },
+  {
+    name: '--min-covered',
+    label: 'verify-source-coverage',
+    tool: 'tools/verify/verify-source-coverage.mjs',
+    pattern: /source-exercise coverage: (\d+) of \d+ source exercises rendered/,
+    literal: 'source exercises rendered',
+    read: readMinCovered,
+    apply: applyMinCovered,
+    fell: 'covered source-exercise count fell',
+    why: 'That is a source exercise no longer rendered on its page, which the coverage gate refuses, not growth.',
   },
 ]);
 

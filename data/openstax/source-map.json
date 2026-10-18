@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 9,
-      "mappedSections": 52,
+      "localChapters": 10,
+      "mappedSections": 61,
       "units": [
         {
           "index": 1,
@@ -719,6 +719,87 @@
       "moduleId": "m46388",
       "sourceTitle": "Development of Joints",
       "moduleSha256": "0754ad2dfaf82a6f026f3a9eb46fccfe3d0bac1ac695129341176d0e79863ede"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/01-overview-of-muscle-tissues.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.1",
+      "moduleId": "m46473",
+      "sourceTitle": "Overview of Muscle Tissues",
+      "moduleSha256": "6b75b82a78a9f92f6c8f25ef1533252823a84142953fc569cdfc5603a8f25b4b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/02-skeletal-muscle.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.2",
+      "moduleId": "m46476",
+      "sourceTitle": "Skeletal Muscle",
+      "moduleSha256": "37b0cc4c4054f49065f3d54a4df58d2af6144ef91b2f39596b872c5f8773c501"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/03-muscle-fiber-contraction-and-relaxation.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.3",
+      "moduleId": "m46447",
+      "sourceTitle": "Muscle Fiber Contraction and Relaxation",
+      "moduleSha256": "0a5f93eaa48c4e47ddd1b73b4adfba21b961e6c705e91d7084d5616193793813"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/04-nervous-system-control-of-muscle-tension.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.4",
+      "moduleId": "m46470",
+      "sourceTitle": "Nervous System Control of Muscle Tension",
+      "moduleSha256": "32efdbc066baf8f1ba22a85af6c45da9ef625acbb57017f0bf6e363791d9303d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/05-types-of-muscle-fibers.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.5",
+      "moduleId": "m46480",
+      "sourceTitle": "Types of Muscle Fibers",
+      "moduleSha256": "076946beff3d637cf176dce7d175ba4f7fbb73322ba32e49978d3c0cf2f7a0a7"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/06-exercise-and-muscle-performance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.6",
+      "moduleId": "m46438",
+      "sourceTitle": "Exercise and Muscle Performance",
+      "moduleSha256": "9ad4ba0de07a47511cf0ca8932e983e5bded6d2b83d788a376339d2eedded539"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/07-cardiac-muscle-tissue.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.7",
+      "moduleId": "m46404",
+      "sourceTitle": "Cardiac Muscle Tissue",
+      "moduleSha256": "abf30ea71716a3fc0d25e1c090f8bbdfcbaed219c8e899cdbb291d0e15479a5e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/08-smooth-muscle.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.8",
+      "moduleId": "m46478",
+      "sourceTitle": "Smooth Muscle",
+      "moduleSha256": "ded5160d2da693fb2d78781aaaa8eac499347456075faff8e1a44e9d3993933e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/09-development-and-regeneration-of-muscle-tissue.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "10.9",
+      "moduleId": "m46407",
+      "sourceTitle": "Development and Regeneration of Muscle Tissue",
+      "moduleSha256": "720fb811aab5a14df73a75069a5427a9de3548fedf5714406862868e2eb5f89c"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

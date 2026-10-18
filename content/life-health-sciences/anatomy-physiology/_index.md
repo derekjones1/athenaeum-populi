@@ -74,13 +74,18 @@ reproduction, development, and inheritance.
 - **Joints** — the classification of joints, fibrous, cartilaginous, and
   synovial joints, the types of body movements, the anatomy of selected
   synovial joints, and the development of joints.
+- **Muscle Tissue** — the three types of muscle tissue, skeletal muscle and
+  its connective tissue layers, how a muscle fiber contracts and relaxes,
+  the nervous system's control of muscle tension, the types of muscle fibers,
+  exercise and muscle performance, cardiac muscle tissue, smooth muscle, and
+  the development and regeneration of muscle tissue.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 2: Support and Movement** — Muscle Tissue; The Muscular System.
+- **Unit 2: Support and Movement** — The Muscular System.
 - **Unit 3: Regulation, Integration, and Control** — The Nervous System and
   Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System;
   The Autonomic Nervous System; The Neurological Exam; The Endocrine System.

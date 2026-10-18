@@ -2636,6 +2636,143 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2023,
       "rationale": "The module says \"The bones that form the base and facial regions of the skull develop through the process of endochondral ossification\" (para fs-id2226322) and its Critical Thinking solution (fs-id2531951, para fs-id1961436) says \"The remaining skull bones and the bones of the limbs are formed by endochondral ossification\", but Section 6.4 (m46301, fs-id1804592, fs-id1639567, fs-id1173842) says the flat bones of the face form by intramembranous ossification and only the bones at the base of the skull by endochondral ossification (the same defect as entry 1958 on m46348). The page reads \"The bones that form the base of the skull\" and \"The bones at the base of the skull and the bones of the limbs are formed by endochondral ossification\", each with a visible Source note, and a footer sentence; Review Question fs-id1380698 keeps its options because its option c stays false as a whole. Evidenced by the chapter 9 prose claim pass, October 16, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/01-overview-of-muscle-tissues.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46473",
+      "sourceElementIds": [
+        "fs-id1388147"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2054,
+      "rationale": "The module says all muscles \"relax when the Ca++ is removed and the actin-binding sites are re-shielded\" (para fs-id1388147), but the same paragraph confines the shielding proteins to striated muscle, smooth muscle uses Ca++ to activate enzymes (m46478, fs-id2176324, fs-id1990264), and the module's own Review Question fs-id2152835 keys shielding as not common to all three tissues. The page reads \"they all relax when the Ca²⁺ is removed (in striated muscle, the actin-binding sites are then re-shielded)\" with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/02-skeletal-muscle.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46476",
+      "sourceElementIds": [
+        "fs-id2122814"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2055,
+      "rationale": "The module places the sartorius in \"the upper leg\" (para fs-id2122814), but the book defines the leg as the region below the knee (m46364, fs-id1400685) and places the sartorius in the thigh (m46482, fs-id2591754, fs-id1748045). The page reads \"the sartorius of the thigh\", lower-case as the muscle chapter prints it, with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/03-muscle-fiber-contraction-and-relaxation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46447",
+      "sourceElementIds": [
+        "fig-ch10_03_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2056,
+      "rationale": "The caption of figure fig-ch10_03_04, part (c), has the phosphate released at the power stroke and again afterward (\"after which the attached ADP and phosphate group are released\"), but the body releases Pi before the stroke and only ADP after it (fs-id1471902, fs-id2004997). The page reads \"after which the attached ADP is released\" with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/03-muscle-fiber-contraction-and-relaxation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46447",
+      "sourceElementIds": [
+        "fs-id2346865"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2057,
+      "rationale": "The module calls NAD⁺ \"the enzyme NAD⁺\" (para fs-id2346865), but NAD⁺ is a coenzyme (m46451, fs-id1539388; m46489, fs-id865591). The page reads \"the coenzyme NAD⁺\" with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/03-muscle-fiber-contraction-and-relaxation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46447",
+      "sourceElementIds": [
+        "fs-id1909043"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2058,
+      "rationale": "The module compares aerobic respiration's 36 ATP with \"four from glycolysis\" (para fs-id1909043), a gross yield against a net one, while the same module gives glycolysis \"a net gain of two ATPs\" (fs-id2346865) and m46480 and m46451 agree. The page reads \"versus two from glycolysis\" with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/03-muscle-fiber-contraction-and-relaxation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46447",
+      "sourceElementIds": [
+        "fs-id1725236"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2059,
+      "rationale": "The module says the number of skeletal muscle fibers \"does not change\" and that atrophy spares it (para fs-id1725236), but Section 10.6 (m46438, fs-id2267886, fs-id1880898) and Section 10.9 (m46407, fs-id1645648, fs-id2329008) say fibers die with age and prolonged atrophy and that only the formation of new fibers is closed. The page reads \"set during development and does not increase\" and \"(but not, at first, the number of muscle fibers)\" with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/03-muscle-fiber-contraction-and-relaxation.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46447",
+      "sourceElementIds": [
+        "fs-id1247126",
+        "fs-id1373466",
+        "fs-id1374320"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2060,
+      "rationale": "The Critical Thinking solution (fs-id1374320) says ATP depletion in a live person can cause \"writer's cramps\", but writer's cramp is a focal task-specific dystonia, not stiffness from a loss of ATP (Stahl and Frucht, J Neurol 2017, doi:10.1007/s00415-016-8373-z). The page's model answer drops the sentence and its matching rubric checkpoint, with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/04-nervous-system-control-of-muscle-tension.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46470",
+      "sourceElementIds": [
+        "fs-id2110034"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2061,
+      "rationale": "The module defines isotonic contractions as those \"where the tension in the muscle stays constant\" and as shortening (para fs-id2110034), but the same paragraph's concentric example has increasing tension and its eccentric contraction has diminishing tension and a lengthening muscle. The page reads \"In isotonic contractions, a load is moved as the length of the muscle changes\" with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/04-nervous-system-control-of-muscle-tension.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46470",
+      "sourceElementIds": [
+        "fs-id1989390",
+        "fs-id2396754"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2062,
+      "rationale": "The module calls a myogram \"an instrument that measures the amount of tension produced over time\" (para fs-id1989390) and \"instrument used to measure twitch tension\" (glossary fs-id2396754), but a myogram is the recording and the instrument is a myograph (MeSH D009213; the module's own figure is a graph titled \"A Myogram of a Muscle Twitch\"). The page reads \"recorded as a myogram, a graph of the amount of tension produced over time\" and \"recording of twitch tension over time\", and re-asks the recall item, with a visible Source note and a footer sentence. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/06-exercise-and-muscle-performance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46438",
+      "sourceElementIds": [
+        "fs-id1216986"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2063,
+      "rationale": "The module says growth hormone's \"main role is to promote the healing of muscle and other tissues\" (para fs-id1216986), but Section 17.3 (m46699, fs-id1141648) gives its primary function as anabolic, promoting protein synthesis and tissue building. The page reads \"it promotes protein synthesis and the building of muscle mass, and it is also used to promote the healing of muscle and other tissues after strenuous exercise\" with a visible Source note and a footer sentence; the author-written item that keyed the old phrase was rebuilt. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/09-development-and-regeneration-of-muscle-tissue.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46407",
+      "sourceElementIds": [
+        "fs-id1959103"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2064,
+      "rationale": "The module says skeletal muscle of the head and limbs \"develop[s] from general mesoderm\" (para fs-id1959103), but limb muscle forms from progenitor cells that migrate from the somites and only some head muscles come from non-somitic mesoderm (Buckingham et al., J Anat 2003, doi:10.1046/j.1469-7580.2003.00139.x). The page reads \"Skeletal muscles of the trunk and limbs develop from mesodermal somites, whereas most skeletal muscles of the head develop from unsegmented mesoderm\" with a visible Source note and a footer sentence; the source's agreement slip \"develop\" is inside the replaced clause. Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/10-muscle-tissue/06-exercise-and-muscle-performance.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46438",
+      "sourceElementIds": [
+        "fs-id1285054",
+        "fs-id1408130",
+        "fs-id1838530"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2065,
+      "rationale": "The module's Review Question fs-id1285054 (\"Which of the following statements is true?\", options fs-id1838530) keys C, \"Fast fibers have large glycogen reserves\", but option D, \"Fast fibers have many mitochondria\", is also true: Section 10.5 (m46480, fs-id1424369) says the fast oxidative fibers \"possess high amounts of mitochondria\". The page narrows option D to \"Fast glycolytic fibers have many mitochondria\" (false by Section 10.5), key C unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 10 prose claim pass, October 18, 2026."
     }
   ]
 }

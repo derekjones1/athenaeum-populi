@@ -225,6 +225,11 @@ export function normalizeText(value) {
     // The source writes the increment operator (U+2206 ∆) where the page
     // writes the Greek capital delta (U+0394 Δ); the two are the same "ΔG".
     .replace(/\u2206/g, '\u0394')
+    // Anatomy and Physiology writes a doubled plus for a divalent cation
+    // (`Ca<sup>++</sup>`, which prints "Ca ++" once its tags are stripped)
+    // where the house form is the Unicode "Ca²⁺"; both read as "ca 2+", so a
+    // keyed option "calcium (Ca++)" matches the page's "calcium (Ca²⁺)".
+    .replace(/\s*\+\+(?=\s|\)|$)/g, ' 2+')
     .normalize('NFKC')
     .toLocaleLowerCase('en-US')
     .replace(/[−–—]/g, '-')

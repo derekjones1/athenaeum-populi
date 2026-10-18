@@ -262,11 +262,11 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 661 local sections exactly once', () => {
+test('committed provenance maps all 670 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 661);
-  assert.equal(result.actualCount, 661);
+  assert.equal(result.expectedCount, 670);
+  assert.equal(result.actualCount, 670);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
@@ -274,7 +274,7 @@ test('committed provenance maps all 661 local sections exactly once', () => {
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
   assert.equal(counts.microbiology.length, 127);
-  assert.equal(counts['anatomy-physiology'].length, 52);
+  assert.equal(counts['anatomy-physiology'].length, 61);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -512,6 +512,15 @@ test('normalizeText tokenizes a Unicode sub/superscript digit the way a stripped
   assert.equal(normalizeText('G₀ Phase'), normalizeText('G 0 Phase'));
   assert.equal(normalizeText('10⁻⁷'), normalizeText('10 - 7'));
   assert.notEqual(normalizeText('CO₂'), normalizeText('CO'));
+});
+
+test('normalizeText folds the source\'s doubled-plus divalent cation (Ca<sup>++</sup>) onto the page\'s Ca²⁺', () => {
+  // Anatomy and Physiology 10.1 keys a Review option "calcium (Ca<sup>++</sup>)",
+  // which reads "calcium (Ca ++ )" once its tags are stripped; the page prints
+  // the house form "calcium (Ca²⁺)". Both are one answer.
+  assert.equal(normalizeText('calcium (Ca ++ )'), normalizeText('calcium (Ca²⁺)'));
+  assert.equal(normalizeText('Ca++ binds to troponin'), normalizeText('Ca²⁺ binds to troponin'));
+  assert.notEqual(normalizeText('Ca²⁺'), normalizeText('Ca⁺'));
 });
 
 test('normalizeText folds the prime family so a source 5ʹ (U+02B9) key matches a page 5′ (U+2032) answer', () => {

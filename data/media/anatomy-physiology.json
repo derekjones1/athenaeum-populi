@@ -872,6 +872,144 @@
       "alt": "The top panel in this figure shows a normal hip joint, and the bottom panel shows a hip joint with osteoarthritis.",
       "caption": "Osteoarthritis of a synovial joint results from aging or prolonged joint wear and tear. These cause erosion and loss of the articular cartilage covering the surfaces of the bones, resulting in inflammation that causes joint stiffness and pain."
     },
+    "1000_Tennis_Player": {
+      "source": "media/1000_Tennis_Player.jpg",
+      "sourceSha256": "3c1f1c5c869b51a5cf20f05ef7d8385687ec452137683a407362922845cf3c6e",
+      "module": "m46450",
+      "kind": "photo",
+      "width": 1144,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "1000_Tennis_Player-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 525,
+          "file": "1000_Tennis_Player-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a man playing tennis.",
+      "caption": "Athletes rely on toned skeletal muscles to supply the force required for movement. (credit: Emmanuel Huybrechts/flickr)"
+    },
+    "1003_Thick_and_Thin_Filaments": {
+      "source": "media/1003_Thick_and_Thin_Filaments.jpg",
+      "sourceSha256": "6f1270e289b592e393ca33e33d98989565da2de9fbe53f18150d15279331c379",
+      "module": "m46476",
+      "kind": "photo",
+      "width": 830,
+      "height": 765,
+      "variants": [
+        {
+          "width": 800,
+          "height": 737,
+          "file": "1003_Thick_and_Thin_Filaments-800.webp"
+        },
+        {
+          "width": 830,
+          "height": 765,
+          "file": "1003_Thick_and_Thin_Filaments-830.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of thick and thin filaments. On the top of the image a sarcomere is shown with the H zone, Z line and M lines labeled. To the right of the bottom panel, the structure of the thick filament is shown in detail. To the left of the bottom panel, the structure of a thin filament is shown in detail.",
+      "caption": "The sarcomere, the region from one Z-line to the next Z-line, is the functional unit of a skeletal muscle fiber."
+    },
+    "1006_Sliding_Filament_Model_of_Muscle_Contraction": {
+      "source": "media/1006_Sliding_Filament_Model_of_Muscle_Contraction.jpg",
+      "sourceSha256": "e997fea47e308a0a97eed7dda8439a25c64c9a51059e973ca3becce35d10b292",
+      "module": "m46447",
+      "kind": "photo",
+      "width": 1650,
+      "height": 1510,
+      "variants": [
+        {
+          "width": 800,
+          "height": 732,
+          "file": "1006_Sliding_Filament_Model_of_Muscle_Contraction-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1464,
+          "file": "1006_Sliding_Filament_Model_of_Muscle_Contraction-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how muscle contracts. The top panel shows the stretched filaments and the bottom panel shows the compressed filaments.",
+      "caption": "When a sarcomere contracts, the Z lines move closer together, and the I band becomes smaller. The A band stays the same width. At full contraction, the thin and thick filaments overlap completely."
+    },
+    "1007_Muscle_Fibes_-large": {
+      "source": "media/1007_Muscle_Fibes_(large).jpg",
+      "sourceSha256": "581d22667618b22ba3d76504bf0664cb54dd1938c627e26464a051745a6368ce",
+      "module": "m46476",
+      "kind": "photo",
+      "width": 1435,
+      "height": 1482,
+      "variants": [
+        {
+          "width": 800,
+          "height": 826,
+          "file": "1007_Muscle_Fibes_-large-800.webp"
+        },
+        {
+          "width": 1435,
+          "height": 1482,
+          "file": "1007_Muscle_Fibes_-large-1435.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of muscle fibers. The top panel shows a skeleton muscle fiber, and a magnified view of the muscle fascicles are shown. The middle panel shows a magnified view of the muscle fascicles with the muscle fibers, perimysium and the endomysium. The bottom panel shows the structure of the muscle fiber with the sarcolemma highlighted.",
+      "caption": "Bundles of muscle fibers, called fascicles, are covered by the perimysium. Muscle fibers are covered by the endomysium."
+    },
+    "1008_Skeletal_Muscle_Contraction": {
+      "source": "media/1008_Skeletal_Muscle_Contraction.jpg",
+      "sourceSha256": "1cc7aed8055abd1b7168ca16a29397e9bd04689a5bb28ca32e225a07eaf52e96",
+      "module": "m46447",
+      "kind": "photo",
+      "width": 811,
+      "height": 1259,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1242,
+          "file": "1008_Skeletal_Muscle_Contraction-800.webp"
+        },
+        {
+          "width": 811,
+          "height": 1259,
+          "file": "1008_Skeletal_Muscle_Contraction-811.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multipart figure shows the mechanism of skeletal muscle contraction. In the top panel, the ADP and inorganic phosphate molecules are bound to the myosin motor head. In the middle panel, the ADP and phosphate come off the myosin motor and the direction of the power stroke is shown. In the bottom panel, a molecule of ATP is shown to bind the myosin motor head and the motor is reset.",
+      "caption": "(a) The active site on actin is exposed as calcium binds to troponin. (b) The myosin head is attracted to actin, and myosin binds actin at its actin-binding site, forming the cross-bridge. (c) During the power stroke, the phosphate generated in the previous contraction cycle is released. This results in the myosin head pivoting toward the center of the sarcomere, after which the attached ADP and phosphate group are released. (d) A new molecule of ATP attaches to the myosin head, causing the cross-bridge to detach. (e) The myosin head hydrolyzes ATP to ADP and phosphate, which returns the myosin to the cocked position."
+    },
+    "1009_Motor_End_Plate_and_Innervation": {
+      "source": "media/1009_Motor_End_Plate_and_Innervation.jpg",
+      "sourceSha256": "98e46d414a2bf79eca8ede69ebbc3252ca817e7a74e5fa2c364000b26eac2b97",
+      "module": "m46476",
+      "kind": "photo",
+      "width": 1462,
+      "height": 2548,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1394,
+          "file": "1009_Motor_End_Plate_and_Innervation-800.webp"
+        },
+        {
+          "width": 1462,
+          "height": 2548,
+          "file": "1009_Motor_End_Plate_and_Innervation-1462.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "At the NMJ, the axon terminal releases ACh. The motor end-plate is the location of the ACh-receptors in the muscle fiber sarcolemma. When ACh molecules are released, they diffuse across a minute space called the synaptic cleft and bind to the receptors.",
+      "caption": "At the NMJ, the axon terminal releases ACh. The motor end-plate is the location of the ACh-receptors in the muscle fiber sarcolemma. When ACh molecules are released, they diffuse across a minute space called the synaptic cleft and bind to the receptors."
+    },
     "100_Blood_Pressure": {
       "source": "media/100_Blood_Pressure.jpg",
       "sourceSha256": "4208ffda42be7333bba1df148d96797d109bed1a56a901ca7611c1d707836633",
@@ -895,6 +1033,142 @@
       "caption": "A proficiency in anatomy and physiology is fundamental to any career in the health professions. (credit: Bryan Mason/flickr)",
       "transparent": false
     },
+    "1010a_Contraction_new": {
+      "source": "media/1010a_Contraction_new.jpg",
+      "sourceSha256": "a4583a9b53a0657225c326f2cfb3e107d891e6cdaf828c84e228ec759f456fba",
+      "module": "m46447",
+      "kind": "photo",
+      "width": 838,
+      "height": 1105,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1055,
+          "file": "1010a_Contraction_new-800.webp"
+        },
+        {
+          "width": 838,
+          "height": 1105,
+          "file": "1010a_Contraction_new-838.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel in this figure shows the interaction of a motor neuron with a muscle fiber and how the release of acetylcholine into the muscle cells leads to the release of calcium. The middle panel shows how calcium release activates troponin and leads to muscle contraction. The bottom panel shows an image of a muscle fiber being shortened and producing tension.",
+      "caption": "A cross-bridge forms between actin and the myosin heads triggering contraction. As long as Ca ++ ions remain in the sarcoplasm to bind to troponin, and as long as ATP is available, the muscle fiber will continue to shorten."
+    },
+    "1010b_Relaxation_new": {
+      "source": "media/1010b_Relaxation_new.jpg",
+      "sourceSha256": "3edafb6ae73697f3fe11ee17d600431c3dc02fe2d87e51e6d71f3b23035cd8bb",
+      "module": "m46447",
+      "kind": "photo",
+      "width": 750,
+      "height": 914,
+      "variants": [
+        {
+          "width": 750,
+          "height": 914,
+          "file": "1010b_Relaxation_new-750.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel in this figure shows the interaction of a motor neuron with a muscle fiber and how calcium is being absorbed into the muscle fiber. This results in the relaxation of the thin and thick filaments as shown in the bottom panel.",
+      "caption": "Ca ++ ions are pumped back into the SR, which causes the tropomyosin to reshield the binding sites on the actin strands. A muscle may also stop contracting when it runs out of ATP and becomes fatigued."
+    },
+    "1011_Muscle_Length_and_Tension": {
+      "source": "media/1011_Muscle_Length_and_Tension.jpg",
+      "sourceSha256": "76304f34bcaada4056843b28e7dd9528522ccc10640cab8fdccd5eee8ef7a6b4",
+      "module": "m46470",
+      "kind": "photo",
+      "width": 634,
+      "height": 479,
+      "variants": [
+        {
+          "width": 634,
+          "height": 479,
+          "file": "1011_Muscle_Length_and_Tension-634.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph shows the percent sarcomere length on the x-axis and tension on the y-axis. As the length of the sarcomere increases, the tension first increases, and then decreases.",
+      "caption": "Sarcomeres produce maximal tension when thick and thin filaments overlap between about 80 percent to 120 percent."
+    },
+    "1012_Muscle_Twitch_Myogram": {
+      "source": "media/1012_Muscle_Twitch_Myogram.jpg",
+      "sourceSha256": "2bd38e8fddd40ad8e13732777f06c4f0b0170d4b8e7085319c2c615e88985919",
+      "module": "m46470",
+      "kind": "photo",
+      "width": 789,
+      "height": 506,
+      "variants": [
+        {
+          "width": 789,
+          "height": 506,
+          "file": "1012_Muscle_Twitch_Myogram-789.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph shows the relation between tension and time during muscle twitches. The curve first increases and then decreases with increasing time.",
+      "caption": "A single muscle twitch has a latent period, a contraction phase when tension increases, and a relaxation phase when tension decreases. During the latent period, the action potential is being propagated along the sarcolemma. During the contraction phase, Ca ++ ions in the sarcoplasm bind to troponin, tropomyosin moves from actin-binding sites, cross-bridges between actin and myosin form, and sarcomeres shorten. During the relaxation phase, tension decreases as Ca ++ ions are pumped out of the sarcoplasm and cross-bridge cycling stops."
+    },
+    "1013_Summation_Tetanus": {
+      "source": "media/1013_Summation_Tetanus.jpg",
+      "sourceSha256": "b9c38d14688d893f761192c27f86eee2005223342bae60caeb6b0d6d49ee44b8",
+      "module": "m46470",
+      "kind": "photo",
+      "width": 763,
+      "height": 314,
+      "variants": [
+        {
+          "width": 763,
+          "height": 314,
+          "file": "1013_Summation_Tetanus-763.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two graphs of tension versus time. The left panel shows wave summation and the right panel shows tetanus summation.",
+      "caption": "(a) The excitation-contraction coupling effects of successive motor neuron signaling is added together which is referred to as wave summation. The bottom of each wave, the end of the relaxation phase, represents the point of stimulus. (b) When the stimulus frequency is so high that the relaxation phase disappears completely, the contractions become continuous; this is called tetanus."
+    },
+    "1015_Types_of_Contraction_new": {
+      "source": "media/1015_Types_of_Contraction_new.jpg",
+      "sourceSha256": "452cfd2a06b4fa864369446cb7450eeaee4ce10041f0a67ee9333369d6f785fd",
+      "module": "m46470",
+      "kind": "photo",
+      "width": 741,
+      "height": 1083,
+      "variants": [
+        {
+          "width": 741,
+          "height": 1083,
+          "file": "1015_Types_of_Contraction_new-741.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different types of muscle contraction and the associated body movements. The top panel shows concentric contraction, the middle panel shows eccentric contraction, and the bottom panel shows isometric contraction.",
+      "caption": "During isotonic contractions, muscle length changes to move a load. During isometric contractions, muscle length does not change because the load exceeds the tension the muscle can generate."
+    },
+    "1016_Muscle_Metabolism": {
+      "source": "media/1016_Muscle_Metabolism.jpg",
+      "sourceSha256": "523a7350da879d68e1a0f970e81be5e2254bd1c33d94e4784f378d4f29820a79",
+      "module": "m46447",
+      "kind": "photo",
+      "width": 902,
+      "height": 1014,
+      "variants": [
+        {
+          "width": 800,
+          "height": 899,
+          "file": "1016_Muscle_Metabolism-800.webp"
+        },
+        {
+          "width": 902,
+          "height": 1014,
+          "file": "1016_Muscle_Metabolism-902.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the metabolic processes in muscle. The top panel shows the reactions in resting muscle. The middle panel shows glycolysis and aerobic respiration and the bottom panel shows cellular respiration in mitochondria.",
+      "caption": "(a) Some ATP is stored in a resting muscle. As contraction starts, it is used up in seconds. More ATP is generated from creatine phosphate for about 15 seconds. (b) Each glucose molecule produces two ATP and two molecules of pyruvic acid, which can be used in aerobic respiration or converted to lactic acid. If oxygen is not available, pyruvic acid is converted to lactic acid, which may contribute to muscle fatigue. This occurs during strenuous exercise when high amounts of energy are needed but oxygen cannot be sufficiently delivered to muscle. (c) Aerobic respiration is the breakdown of glucose in the presence of oxygen (O 2 ) to produce carbon dioxide, water, and ATP. Approximately 95 percent of the ATP required for resting or moderately active muscles is provided by aerobic respiration, which takes place in mitochondria."
+    },
     "101_Levels_of_Org_in_Body": {
       "source": "media/101_Levels_of_Org_in_Body.jpg",
       "sourceSha256": "5a30ed75a2d11de0b4263ae8b6613f9d97554430fcc7f36f92930a5fab6ed998",
@@ -917,6 +1191,216 @@
       "alt": "This illustration shows biological organization as a pyramid. The chemical level is at the apex of the pyramid where atoms bond to form molecules with three dimensional structures. An example is shown with two white hydrogen atoms bonding to a red oxygen atom to create water. The next level down on the pyramid is the cellular level, as illustrated with a long, tapered, smooth muscle cell. At this level, a variety of molecules combine to form the interior fluid and organelles of a body cell. The next level down is the tissue level. A community of similar cells forms body tissue. The example given here is a section of smooth muscle tissue, which contains many smooth muscle cells closely bound side by side. The next level down is the organ level, as illustrated with the bladder and urethra. The bladder contains smooth muscle while the urethra contains skeletal muscle. These are both examples of muscle tissues. The next level down is the organ system level, as illustrated by the entire urinary system containing the kidney, ureters, bladder and urethra. At this level, two or more organs work closely together to perform the functions of a body system. At the base of the pyramid is the organismal level illustrated with a woman drinking water. At this level, many organ systems work harmoniously together to perform the functions of an independent organism.",
       "caption": "The organization of the body often is discussed in terms of six distinct levels of increasing complexity, from the smallest chemical building blocks to a unique human organism.",
       "transparent": false
+    },
+    "1020_Cardiac_Muscle": {
+      "source": "media/1020_Cardiac_Muscle.jpg",
+      "sourceSha256": "a21d30462afc04f7e7d38b7403bd7aea40149cdbe9cf466b38334d13848a8550",
+      "module": "m46404",
+      "kind": "photo",
+      "width": 1018,
+      "height": 476,
+      "variants": [
+        {
+          "width": 800,
+          "height": 374,
+          "file": "1020_Cardiac_Muscle-800.webp"
+        },
+        {
+          "width": 1018,
+          "height": 476,
+          "file": "1020_Cardiac_Muscle-1018.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the cardiac muscle. A small image of the heart is shown on the top left of the figure and then a magnified view of the cardiac muscle is shown, with the nucleus and the cardiac muscle fiber labeled. A further magnification shows the structure of the intercalated discs with the desmosome and gap junction.",
+      "caption": "Intercalated discs are part of the cardiac muscle sarcolemma and they contain gap junctions and desmosomes."
+    },
+    "1021_Smooth_Muscle_new": {
+      "source": "media/1021_Smooth_Muscle_new.jpg",
+      "sourceSha256": "3e8bf6f0ad57ff342bb9d9abd93f07d9d21e38c9a43adfe1ad1a8d118a61260e",
+      "module": "m46478",
+      "kind": "photo",
+      "width": 1087,
+      "height": 923,
+      "variants": [
+        {
+          "width": 800,
+          "height": 679,
+          "file": "1021_Smooth_Muscle_new-800.webp"
+        },
+        {
+          "width": 1087,
+          "height": 923,
+          "file": "1021_Smooth_Muscle_new-1087.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of smooth muscle. To the left of the figure, a small diagram of the stomach is shown. To its immediate right, a magnified view of the muscle fibers are shown and a further magnification highlights the structure of these cells. Below these drawings is a micrograph showing smooth muscle tissue cells.",
+      "caption": "Smooth muscle tissue is found around organs in the digestive, respiratory, reproductive tracts and the iris of the eye. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1022_Muscle_Fibers_-small": {
+      "source": "media/1022_Muscle_Fibers_(small).jpg",
+      "sourceSha256": "8ff04287269b2688b7765eb7f6287bc2b9b3366b5bf08d8ae71861fee251b72d",
+      "module": "m46476",
+      "kind": "photo",
+      "width": 801,
+      "height": 642,
+      "variants": [
+        {
+          "width": 800,
+          "height": 641,
+          "file": "1022_Muscle_Fibers_-small-800.webp"
+        },
+        {
+          "width": 801,
+          "height": 642,
+          "file": "1022_Muscle_Fibers_-small-801.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of the muscle fibers. In the top panel, a sarcolemma is shown with the major parts labeled. In the bottom panel, a magnified view of a single myofibril is shown and the major parts are labeled.",
+      "caption": "A skeletal muscle fiber is surrounded by a plasma membrane called the sarcolemma, which contains sarcoplasm, the cytoplasm of muscle cells. A muscle fiber is composed of many fibrils, which give the cell its striated appearance."
+    },
+    "1023_T-tubule": {
+      "source": "media/1023_T-tubule.jpg",
+      "sourceSha256": "39cf6fe21e09cd5b508f7d0f972abe253fa8d2340091ff35ca5c978efc7d0c74",
+      "module": "m46476",
+      "kind": "photo",
+      "width": 577,
+      "height": 368,
+      "variants": [
+        {
+          "width": 577,
+          "height": 368,
+          "file": "1023_T-tubule-577.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram illustrates the key components of a skeletal muscle fiber, including the sarcolemma, sarcoplasmic reticulum, terminal cisternae, and T-tubules, which together form the crucial triad for muscle contraction.",
+      "caption": "Narrow T-tubules permit the conduction of electrical impulses. The SR functions to regulate intracellular levels of calcium. Two terminal cisternae (where enlarged SR connects to the T-tubule) and one T-tubule comprise a triad—a “threesome” of membranes, with those of SR on two sides and the T-tubule sandwiched between them."
+    },
+    "1024_Treppe": {
+      "source": "media/1024_Treppe.jpg",
+      "sourceSha256": "dae4c60c035ea659bfa9bd82ec6e43519a32db4176ab97d52fecd847f541a029",
+      "module": "m46470",
+      "kind": "photo",
+      "width": 371,
+      "height": 314,
+      "variants": [
+        {
+          "width": 371,
+          "height": 314,
+          "file": "1024_Treppe-371.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "A graph shows tension as a function of time. The curve looks like a waveform.",
+      "caption": "When muscle tension increases in a graded manner that looks like a set of stairs, it is called treppe. The bottom of each wave represents the point of stimulus."
+    },
+    "1025_Atrophy": {
+      "source": "media/1025_Atrophy.png",
+      "sourceSha256": "24a7691b3827aeac68d2caa2297ae196d17cdeabf2e466aba258e152dcc6e6de",
+      "module": "m46438",
+      "kind": "diagram",
+      "width": 1135,
+      "height": 672,
+      "variants": [
+        {
+          "width": 800,
+          "height": 473,
+          "file": "1025_Atrophy-800.webp"
+        },
+        {
+          "width": 1135,
+          "height": 672,
+          "file": "1025_Atrophy-1135.webp"
+        }
+      ],
+      "transparent": true,
+      "alt": "This image shows muscle atrophy. The left panel shows normal muscle and the right panel shows atrophied muscle.",
+      "caption": "Muscle mass is reduced as muscles atrophy with disuse."
+    },
+    "1026_Marathoners": {
+      "source": "media/1026_Marathoners.jpg",
+      "sourceSha256": "5ed8aedb0af2705e4e4d5ef9228b7d35ac456dda75c6ef4e51bee7e0ad09c0f6",
+      "module": "m46438",
+      "kind": "photo",
+      "width": 750,
+      "height": 515,
+      "variants": [
+        {
+          "width": 750,
+          "height": 515,
+          "file": "1026_Marathoners-750.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows some runners in a race.",
+      "caption": "Long-distance runners have a large number of SO fibers and relatively few FO and FG fibers. (credit: “Tseo2”/Wikimedia Commons)"
+    },
+    "1027_Hypertrophy": {
+      "source": "media/1027_Hypertrophy.jpg",
+      "sourceSha256": "86af06da4ce2ff772f4ee78080480bde32cd7ccefe7ac3a93b0c9d06f535909e",
+      "module": "m46438",
+      "kind": "photo",
+      "width": 750,
+      "height": 500,
+      "variants": [
+        {
+          "width": 750,
+          "height": 500,
+          "file": "1027_Hypertrophy-750.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a man flexing his muscles.",
+      "caption": "Body builders have a large number of FG fibers and relatively few FO and SO fibers. (credit: Lin Mei/flickr)"
+    },
+    "1028_Smooth_Muscle_Contraction": {
+      "source": "media/1028_Smooth_Muscle_Contraction.jpg",
+      "sourceSha256": "b2c3488536924cc6c62ae9da2e6b1c6f5a36764aab44b4fcf2af05d594d8bd88",
+      "module": "m46478",
+      "kind": "photo",
+      "width": 1126,
+      "height": 233,
+      "variants": [
+        {
+          "width": 800,
+          "height": 165,
+          "file": "1028_Smooth_Muscle_Contraction-800.webp"
+        },
+        {
+          "width": 1126,
+          "height": 233,
+          "file": "1028_Smooth_Muscle_Contraction-1126.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows smooth muscle contraction. The left panel shows the structure of relaxed muscle and the right panel shows contracted muscle cells.",
+      "caption": "The dense bodies and intermediate filaments are networked through the sarcoplasm, which cause the muscle fiber to contract."
+    },
+    "1029_Smooth_Muscle_Motor_Units": {
+      "source": "media/1029_Smooth_Muscle_Motor_Units.jpg",
+      "sourceSha256": "366a7372a916db13e7d4e67c0b4f7b5c24496c76d8c5584fe47d79ea4b87efcf",
+      "module": "m46478",
+      "kind": "photo",
+      "width": 1012,
+      "height": 434,
+      "variants": [
+        {
+          "width": 800,
+          "height": 343,
+          "file": "1029_Smooth_Muscle_Motor_Units-800.webp"
+        },
+        {
+          "width": 1012,
+          "height": 434,
+          "file": "1029_Smooth_Muscle_Motor_Units-1012.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the left panel shows a neuron with vesicles containing neurotransmitters. The right panel shows a bundle of smooth muscle cells with neurons wound around them.",
+      "caption": "A series of axon-like swelling, called varicosities or “boutons,” from autonomic neurons form motor units through the smooth muscle."
     },
     "102_Organ_Systems_of_Body-Page1": {
       "source": "media/102_Organ_Systems_of_Body(Page1).jpg",
@@ -2249,6 +2733,24 @@
       "transparent": false,
       "alt": "This shows three micrographs, each depicting one of the three muscle tissues. Picture A shows skeletal muscle tissue, which is dense strips of pink tissue that somewhat resemble bacon in appearance. Many small nuclei are dispersed throughout the tissues. The nuclei are flat and elongated, with multiple nuclei clustered into each cell. Picture B shows smooth muscle, which is densely packed and looks similar to skeletal muscle except that each cell only has one oval-shaped nucleus. Picture C shows cardiac muscle. Unlike skeletal and smooth muscle cells, cardiac muscle cells are not densely packed. The cardiac cells are branched, creating a large amount of space between each muscle cell.",
       "caption": "(a) Skeletal muscle cells have prominent striation and nuclei on their periphery. (b) Smooth muscle cells have a single nucleus and no visible striations. (c) Cardiac muscle cells appear striated and have a single nucleus. (Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "414c_Cardiacmuscle": {
+      "source": "media/414c_Cardiacmuscle.jpg",
+      "sourceSha256": "60c6322f30bd0fd8b3531d2d47925582ccd5a341e3d3f6c693ef7d8a3baefe38",
+      "module": "m46404",
+      "kind": "photo",
+      "width": 591,
+      "height": 403,
+      "variants": [
+        {
+          "width": 591,
+          "height": 403,
+          "file": "414c_Cardiacmuscle-591.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image is a micrograph of cardiac muscle cells.",
+      "caption": "Cardiac muscle tissue is only found in the heart. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
     },
     "415_Neuron": {
       "source": "media/415_Neuron.jpg",
