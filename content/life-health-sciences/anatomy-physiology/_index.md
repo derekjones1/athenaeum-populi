@@ -79,13 +79,17 @@ reproduction, development, and inheritance.
   the nervous system's control of muscle tension, the types of muscle fibers,
   exercise and muscle performance, cardiac muscle tissue, smooth muscle, and
   the development and regeneration of muscle tissue.
+- **The Muscular System** — how skeletal muscles interact, their fascicle
+  arrangements and lever systems, how muscles are named, the axial muscles
+  of the head, neck, back, abdominal wall, and thorax, and the appendicular
+  muscles of the pectoral girdle, upper limbs, pelvic girdle, and lower
+  limbs.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 2: Support and Movement** — The Muscular System.
 - **Unit 3: Regulation, Integration, and Control** — The Nervous System and
   Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System;
   The Autonomic Nervous System; The Neurological Exam; The Endocrine System.

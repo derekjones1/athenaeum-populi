@@ -1581,6 +1581,213 @@
       "caption": "The three planes most commonly used in anatomical and medical imaging are the sagittal, frontal (or coronal), and transverse plane. Oblique planes provide unique perspectives for viewing anatomical structures and movements.",
       "transparent": false
     },
+    "1100_Body_in_Motion": {
+      "source": "media/1100_Body_in_Motion.jpg",
+      "sourceSha256": "cd8e6b3ba9b0c3cfb6c82b15218c652f6627e458a5ad3fab0d07e7c62c6dca27",
+      "module": "m46492",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1049,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "1100_Body_in_Motion-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 733,
+          "file": "1100_Body_in_Motion-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a man executing a yoga pose.",
+      "caption": "The muscular system allows us to move, flex and contort our bodies. Practicing yoga, as pictured here, is a good example of the voluntary use of the muscular system. (credit: Dmitry Yanchylenko)"
+    },
+    "1101_Biceps_Muscle": {
+      "source": "media/1101_Biceps_Muscle.jpg",
+      "sourceSha256": "825facb528b81b1441bba339365453121597a3a3ce507f8d579c36398fb45e58",
+      "module": "m46487",
+      "kind": "photo",
+      "width": 1584,
+      "height": 1249,
+      "variants": [
+        {
+          "width": 800,
+          "height": 631,
+          "file": "1101_Biceps_Muscle-800.webp"
+        },
+        {
+          "width": 1584,
+          "height": 1249,
+          "file": "1101_Biceps_Muscle-1584.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows two separate hands holding a glass of liquid. The biceps muscles are highlighted in pink.",
+      "caption": "The biceps brachii flex the lower arm. The brachoradialis, in the forearm, and brachialis, located deep to the biceps in the upper arm, are both synergists that aid in this motion."
+    },
+    "1102_Fascicle_Muscle_Shapes": {
+      "source": "media/1102_Fascicle_Muscle_Shapes.jpg",
+      "sourceSha256": "fae8275701681b8aec3e6b9416383c603e6a49e19eab7231905ca5d3305ecd93",
+      "module": "m46487",
+      "kind": "photo",
+      "width": 2186,
+      "height": 2150,
+      "variants": [
+        {
+          "width": 800,
+          "height": 787,
+          "file": "1102_Fascicle_Muscle_Shapes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1573,
+          "file": "1102_Fascicle_Muscle_Shapes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the human body with the major muscle groups labeled.",
+      "caption": "The skeletal muscles of the body typically come in seven different general shapes."
+    },
+    "1103_Biceps_Brachii_Muscle_Contraction": {
+      "source": "media/1103_Biceps_Brachii_Muscle_Contraction.jpg",
+      "sourceSha256": "56eced53a51999f38a35f3a84d9d4a7f4c4fe6a1365b0bc89d0bf86e2daacadc",
+      "module": "m46487",
+      "kind": "photo",
+      "width": 1642,
+      "height": 1463,
+      "variants": [
+        {
+          "width": 800,
+          "height": 712,
+          "file": "1103_Biceps_Brachii_Muscle_Contraction-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1425,
+          "file": "1103_Biceps_Brachii_Muscle_Contraction-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a person flexing her biceps.",
+      "caption": "The large mass at the center of a muscle is called the belly. Tendons emerge from both ends of the belly and connect the muscle to the bones, allowing the skeleton to move. The tendons of the bicep connect to the upper arm and the forearm. (credit: Victoria Garcia)"
+    },
+    "1105_Anterior_and_Posterior_Views_of_Muscles": {
+      "source": "media/1105_Anterior_and_Posterior_Views_of_Muscles.jpg",
+      "sourceSha256": "f03d8c7d494e9dc0fcf74faa502f5f0305532702f410f4e953a9ace350d78da8",
+      "module": "m46498",
+      "kind": "photo",
+      "width": 1265,
+      "height": 2853,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1804,
+          "file": "1105_Anterior_and_Posterior_Views_of_Muscles-800.webp"
+        },
+        {
+          "width": 1265,
+          "height": 2853,
+          "file": "1105_Anterior_and_Posterior_Views_of_Muscles-1265.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows the anterior view of the human body with the major muscles labeled. The bottom panel shows the posterior view of the human body with the major muscles labeled.",
+      "caption": "On the anterior and posterior views of the muscular system above, superficial muscles (those at the surface) are shown on the right side of the body while deep muscles (those underneath the superficial muscles) are shown on the left half of the body. For the legs, superficial muscles are shown in the anterior view while the posterior view shows both superficial and deep muscles."
+    },
+    "1106_Front_and_Side_Views_of_the_Muscles_of_Facial_Expressions": {
+      "source": "media/1106_Front_and_Side_Views_of_the_Muscles_of_Facial_Expressions.jpg",
+      "sourceSha256": "1b08eea0fbfb073612e9e8b8715de3466c7a7cd365886be7d8f01887a960bd6d",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2407,
+      "height": 1460,
+      "variants": [
+        {
+          "width": 800,
+          "height": 485,
+          "file": "1106_Front_and_Side_Views_of_the_Muscles_of_Facial_Expressions-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 970,
+          "file": "1106_Front_and_Side_Views_of_the_Muscles_of_Facial_Expressions-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel in this figure shows the anterior view of the facial muscles, and the right panel shows the lateral view.",
+      "caption": "Many of the muscles of facial expression insert into the skin surrounding the eyelids, nose and mouth, producing facial expressions by moving the skin rather than bones."
+    },
+    "1107_The_Extrinsic_Eye_Muscles": {
+      "source": "media/1107_The_Extrinsic_Eye_Muscles.jpg",
+      "sourceSha256": "0d0a5ff2ebfbdbcf9c22dfee706ed3abf4c8d8c95dc318d708e6684fb4a5c7b5",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2296,
+      "height": 1100,
+      "variants": [
+        {
+          "width": 800,
+          "height": 383,
+          "file": "1107_The_Extrinsic_Eye_Muscles-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 766,
+          "file": "1107_The_Extrinsic_Eye_Muscles-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the lateral view of the muscles for the right eye, and the right panel shows the anterior view of the muscles for the right eye.",
+      "caption": "(a) The extrinsic eye muscles originate outside of the eye on the skull. (b) Each muscle inserts onto the eyeball."
+    },
+    "1108_Muscle_that_Move_the_Lower_Jaw": {
+      "source": "media/1108_Muscle_that_Move_the_Lower_Jaw.jpg",
+      "sourceSha256": "38d3dbe8b7549d15a49e9e7b37993a09b283e9829e8361336fcbf76c1f0d4766",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2175,
+      "height": 1067,
+      "variants": [
+        {
+          "width": 800,
+          "height": 392,
+          "file": "1108_Muscle_that_Move_the_Lower_Jaw-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 785,
+          "file": "1108_Muscle_that_Move_the_Lower_Jaw-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the superficial chewing muscles in face, and the right panel shows the deep chewing muscles.",
+      "caption": "The muscles that move the lower jaw are typically located within the cheek and originate from processes in the skull. This provides the jaw muscles with the large amount of leverage needed for chewing."
+    },
+    "1109_Muscles_that_Move_the_Tongue": {
+      "source": "media/1109_Muscles_that_Move_the_Tongue.jpg",
+      "sourceSha256": "e9cd66669d4510df2c13c47cac6d5aca35be7e9645fa52be6775ad3447e16387",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2292,
+      "height": 1213,
+      "variants": [
+        {
+          "width": 800,
+          "height": 423,
+          "file": "1109_Muscles_that_Move_the_Tongue-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 846,
+          "file": "1109_Muscles_that_Move_the_Tongue-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Anatomy of the tongue: (a) Extrinsic muscles including styloglossus, hyoglossus, and genioglossus, anchored to bones like the mandible. (b) Superior view showing papillae, palatine tonsil, and palatoglossus.",
+      "caption": ""
+    },
     "110_Dorsal_Ventral_Body_Cavities": {
       "source": "media/110_Dorsal_Ventral_Body_Cavities.jpg",
       "sourceSha256": "b6a0ee52e6f2e2788b7c640e5de8a89ff084ad38f77a7609ca92fe162950a838",
@@ -1603,6 +1810,236 @@
       "alt": "This illustration shows a lateral and anterior view of the body and highlights the body cavities with different colors. The cranial cavity is a large, bean-shaped cavity filling most of the upper skull where the brain is located. The vertebral cavity is a very narrow, thread-like cavity running from the cranial cavity down the entire length of the spinal cord. Together the cranial cavity and vertebral cavity can be referred to as the dorsal body cavity. The thoracic cavity consists of three cavities that fill the interior area of the chest. The two pleural cavities are situated on both sides of the body, anterior to the spine and lateral to the breastbone. The superior mediastinum is a wedge-shaped cavity located between the superior regions of the two thoracic cavities. The pericardial cavity within the mediastinum is located at the center of the chest below the superior mediastinum. The pericardial cavity roughly outlines the shape of the heart. The diaphragm divides the thoracic and the abdominal cavities. The abdominal cavity occupies the entire lower half of the trunk, anterior to the spine. Just under the abdominal cavity, anterior to the buttocks, is the pelvic cavity. The pelvic cavity is funnel shaped and is located inferior and anterior to the abdominal cavity. Together the abdominal and pelvic cavity can be referred to as the abdominopelvic cavity while the thoracic, abdominal, and pelvic cavities together can be referred to as the ventral body cavity.",
       "caption": "The ventral cavity includes the thoracic and abdominopelvic cavities and their subdivisions. The dorsal cavity includes the cranial and spinal cavities.",
       "transparent": false
+    },
+    "1110_Muscle_of_the_Anterior_Neck": {
+      "source": "media/1110_Muscle_of_the_Anterior_Neck.jpg",
+      "sourceSha256": "589f1cd9ae10eaa9a86c11131ebff4fb1c7953d851941f97f02a9d9de298139c",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 1683,
+      "height": 1406,
+      "variants": [
+        {
+          "width": 800,
+          "height": 668,
+          "file": "1110_Muscle_of_the_Anterior_Neck-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1336,
+          "file": "1110_Muscle_of_the_Anterior_Neck-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the front view of a person’s neck with the major muscle groups labeled.",
+      "caption": "The anterior muscles of the neck facilitate swallowing and speech. The suprahyoid muscles originate from above the hyoid bone in the chin region. The infrahyoid muscles originate below the hyoid bone in the lower neck."
+    },
+    "1111_Posterior_and_Side_Views_of_the_Neck": {
+      "source": "media/1111_Posterior_and_Side_Views_of_the_Neck.jpg",
+      "sourceSha256": "e67fea31d470ca9d2f6d5acc8a0d6f0e430176b205d89d4ffa277313426bffca",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2475,
+      "height": 850,
+      "variants": [
+        {
+          "width": 800,
+          "height": 274,
+          "file": "1111_Posterior_and_Side_Views_of_the_Neck-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 549,
+          "file": "1111_Posterior_and_Side_Views_of_the_Neck-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the lateral view of the neck. The middle panel shows the superficial neck muscles, and the right panel shows the deep neck muscles",
+      "caption": "The superficial and deep muscles of the neck are responsible for moving the head, cervical vertebrae, and scapulas."
+    },
+    "1112_Muscles_of_the_Abdomen": {
+      "source": "media/1112_Muscles_of_the_Abdomen.jpg",
+      "sourceSha256": "9d2436009c5f5c429372ec10b1b1e26788aef92d27b0674478745ea511ac3823",
+      "module": "m46485",
+      "kind": "photo",
+      "width": 1046,
+      "height": 1351,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1033,
+          "file": "1112_Muscles_of_the_Abdomen-800.webp"
+        },
+        {
+          "width": 1046,
+          "height": 1351,
+          "file": "1112_Muscles_of_the_Abdomen-1046.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows the lateral view of the superficial and deep abdominal muscles. The bottom panel shows the anterior view of the posterior abdominal muscles.",
+      "caption": "(a) The anterior abdominal muscles include the medially located rectus abdominis, which is covered by a sheet of connective tissue called the rectus sheath. On the flanks of the body, medial to the rectus abdominis, the abdominal wall is composed of three layers. The external oblique muscles form the superficial layer, while the internal oblique muscles form the middle layer, and the transversus abdominis forms the deepest layer. (b) The muscles of the lower back move the lumbar spine but also assist in femur movements."
+    },
+    "1113_The_Diaphragm": {
+      "source": "media/1113_The_Diaphragm.jpg",
+      "sourceSha256": "27484e59c586120fb888a14451989193603779fc934c5d522a51730b7f42de40",
+      "module": "m46485",
+      "kind": "photo",
+      "width": 1863,
+      "height": 1363,
+      "variants": [
+        {
+          "width": 800,
+          "height": 585,
+          "file": "1113_The_Diaphragm-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1170,
+          "file": "1113_The_Diaphragm-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the inferior view of the diaphragm with the major parts labeled.",
+      "caption": "The diaphragm separates the thoracic and abdominal cavities."
+    },
+    "1114_Thorax": {
+      "source": "media/1114_Thorax.jpg",
+      "sourceSha256": "3d713a04f60bb9a9ba462f74ee5a383020b24d08fa9745af264963c736d00722",
+      "module": "m46485",
+      "kind": "photo",
+      "width": 2275,
+      "height": 1273,
+      "variants": [
+        {
+          "width": 800,
+          "height": 447,
+          "file": "1114_Thorax-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 895,
+          "file": "1114_Thorax-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the muscles in the thorax. The left panel shows the ribs, the major bones, and the muscles connecting them. The right panel shows a magnified view of the sternum and labels the muscles.",
+      "caption": "The external intercostals are located laterally on the sides of the body. The internal intercostals are located medially near the sternum. The innermost intercostals are located deep to both the internal and external intercostals."
+    },
+    "1115_Muscles_of_the_Pelvic_Floor": {
+      "source": "media/1115_Muscles_of_the_Pelvic_Floor.jpg",
+      "sourceSha256": "20ab5c2dcb4ab10c233467d3567039a2e4d90105ec29bb7c6756892e99c5a5fc",
+      "module": "m46485",
+      "kind": "photo",
+      "width": 1917,
+      "height": 1396,
+      "variants": [
+        {
+          "width": 800,
+          "height": 582,
+          "file": "1115_Muscles_of_the_Pelvic_Floor-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1165,
+          "file": "1115_Muscles_of_the_Pelvic_Floor-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the superior view of the pelvic diaphragm.",
+      "caption": "The pelvic floor muscles support the pelvic organs, resist intra-abdominal pressure, and work as sphincters for the urethra, rectum, and vagina."
+    },
+    "1116_Muscle_of_the_Perineum": {
+      "source": "media/1116_Muscle_of_the_Perineum.jpg",
+      "sourceSha256": "9c8fc4d73430a4be1fdb0f23b45bab55564aebc2b4b246031928dee71202fb74",
+      "module": "m46485",
+      "kind": "photo",
+      "width": 2118,
+      "height": 1305,
+      "variants": [
+        {
+          "width": 800,
+          "height": 493,
+          "file": "1116_Muscle_of_the_Perineum-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 986,
+          "file": "1116_Muscle_of_the_Perineum-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the muscles of the perineum in the male, and the right panel shows the muscles of the perineum in the female.",
+      "caption": "The perineum muscles play roles in urination in both sexes, ejaculation in males, and vaginal contraction in females."
+    },
+    "1117_Muscles_of_the_Neck_and_Back": {
+      "source": "media/1117_Muscles_of_the_Neck_and_Back.jpg",
+      "sourceSha256": "2f7b9a1d64cf54dbd409551764e5e6858ec54027150c07f1a5bf096f8e6c441f",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2252,
+      "height": 2617,
+      "variants": [
+        {
+          "width": 800,
+          "height": 929,
+          "file": "1117_Muscles_of_the_Neck_and_Back-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1859,
+          "file": "1117_Muscles_of_the_Neck_and_Back-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left panel shows a lateral view of the muscles of the neck, and the bottom left panel shows the posterior view of the superficial and deep muscles of the neck. The center panel shows the deep muscles of the back, and the right panel shows the deep spinal muscles.",
+      "caption": "The large, complex muscles of the neck and back move the head, shoulders, and vertebral column."
+    },
+    "1118_Muscles_that_Position_the_Pectoral_Girdle": {
+      "source": "media/1118_Muscles_that_Position_the_Pectoral_Girdle.jpg",
+      "sourceSha256": "4c15f7e808efeca26f4ba5e79ba1439c55bb3715569a6c5f97148483ef9c4999",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 2192,
+      "height": 1004,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "1118_Muscles_that_Position_the_Pectoral_Girdle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 733,
+          "file": "1118_Muscles_that_Position_the_Pectoral_Girdle-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the anterior lateral view of the pectoral girdle muscle, and the right panel shows the posterior view of the pectoral girdle muscle.",
+      "caption": "The muscles that stabilize the pectoral girdle make it a steady base on which other muscles can move the arm. Note that the pectoralis major and deltoid, which move the humerus, are cut here to show the deeper positioning muscles."
+    },
+    "1119_Muscles_that_Move_the_Humerus": {
+      "source": "media/1119_Muscles_that_Move_the_Humerus.jpg",
+      "sourceSha256": "22f8d9e34a35c2819f3cf9fe7244f81136c5d8b20c6f6210248a1209b0d8318d",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 2229,
+      "height": 2371,
+      "variants": [
+        {
+          "width": 800,
+          "height": 851,
+          "file": "1119_Muscles_that_Move_the_Humerus-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1702,
+          "file": "1119_Muscles_that_Move_the_Humerus-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left panel shows the lateral view of the pectoral and back muscles. The top right panel shows the posterior view of the right deltoid and the left back muscle. The bottom left panel shows the anterior view of the deep muscles of the left shoulder, and the bottom right panel shows the deep muscles of the left shoulder.",
+      "caption": "(a, c) The muscles that move the humerus anteriorly are generally located on the anterior side of the body and originate from the sternum (e.g., pectoralis major) or the anterior side of the scapula (e.g., subscapularis). (b) The muscles that move the humerus superiorly generally originate from the superior surfaces of the scapula and/or the clavicle (e.g., deltoids). The muscles that move the humerus inferiorly generally originate from middle or lower back (e.g., latissiumus dorsi). (d) The muscles that move the humerus posteriorly are generally located on the posterior side of the body and insert into the scapula (e.g., infraspinatus)."
     },
     "111_Abdominal_Quadrant_Regions": {
       "source": "media/111_Abdominal_Quadrant_Regions.jpg",
@@ -1627,6 +2064,236 @@
       "caption": "There are (a) nine abdominal regions and (b) four abdominal quadrants in the peritoneal cavity.",
       "transparent": false
     },
+    "1120_Muscles_that_Move_the_Forearm": {
+      "source": "media/1120_Muscles_that_Move_the_Forearm.jpg",
+      "sourceSha256": "a3163421dc0a9d7013812232b88596750aaefc78048eadd0411f2191d4dcbedb",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 2381,
+      "height": 2938,
+      "variants": [
+        {
+          "width": 800,
+          "height": 987,
+          "file": "1120_Muscles_that_Move_the_Forearm-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1974,
+          "file": "1120_Muscles_that_Move_the_Forearm-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multipart figure shows the different muscles that move the forearm. The major muscle groups are labeled.",
+      "caption": "The muscles originating in the upper arm flex, extend, pronate, and supinate the forearm. The muscles originating in the forearm move the wrists, hands, and fingers."
+    },
+    "1121_Intrinsic_Muscles_of_the_Hand": {
+      "source": "media/1121_Intrinsic_Muscles_of_the_Hand.jpg",
+      "sourceSha256": "b02203c22b3f29b9dcd0ee26b5638607df35e37120433403e01d66d87f58f05b",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 2083,
+      "height": 2033,
+      "variants": [
+        {
+          "width": 800,
+          "height": 780,
+          "file": "1121_Intrinsic_Muscles_of_the_Hand-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1561,
+          "file": "1121_Intrinsic_Muscles_of_the_Hand-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multipart figure shows the intrinsic muscles of the hand with the major muscle groups labeled.",
+      "caption": "The intrinsic muscles of the hand both originate and insert within the hand. These muscles provide the fine motor control of the fingers by flexing, extending, abducting, and adducting the more distal finger and thumb segments."
+    },
+    "1122_Gluteal_Muscles_that_Move_the_Femur": {
+      "source": "media/1122_Gluteal_Muscles_that_Move_the_Femur.jpg",
+      "sourceSha256": "e2078005e84ef9e103ac38237ceff1b3385b1174279bedee09fc261b76b5240a",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 1713,
+      "height": 2175,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1015,
+          "file": "1122_Gluteal_Muscles_that_Move_the_Femur-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2031,
+          "file": "1122_Gluteal_Muscles_that_Move_the_Femur-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the superficial pelvic and thigh muscles, the center panel shows the deep pelvic and thigh muscles. The right panel shows the posterior view of the pelvic and thigh muscles.",
+      "caption": "The large and powerful muscles of the hip that move the femur generally originate on the pelvic girdle and insert into the femur. The muscles that move the lower leg typically originate on the femur and insert into the bones of the knee joint. The anterior muscles of the femur extend the lower leg but also aid in flexing the thigh. The posterior muscles of the femur flex the lower leg but also aid in extending the thigh. A combination of gluteal and thigh muscles also adduct, abduct, and rotate the thigh and lower leg."
+    },
+    "1123_Muscles_of_the_Leg_that_Move_the_Foot_and_Toes": {
+      "source": "media/1123_Muscles_of_the_Leg_that_Move_the_Foot_and_Toes.jpg",
+      "sourceSha256": "861ed5951aa6beaa991a06e08a9b4859fb2ecfaa57e600ea86dd8c7b3c91bfe1",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 2279,
+      "height": 1358,
+      "variants": [
+        {
+          "width": 800,
+          "height": 476,
+          "file": "1123_Muscles_of_the_Leg_that_Move_the_Foot_and_Toes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 953,
+          "file": "1123_Muscles_of_the_Leg_that_Move_the_Foot_and_Toes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the superficial muscles that move the feet and the center panel shows the posterior view of the same muscles. The right panel shows the deep muscles of the right lower leg.",
+      "caption": "The muscles of the anterior compartment of the lower leg are generally responsible for dorsiflexion, and the muscles of the posterior compartment of the lower leg are generally responsible for plantar flexion. The lateral and medial muscles in both compartments invert, evert, and rotate the foot."
+    },
+    "1124_Intrinsic_Muscles_of_the_Foot": {
+      "source": "media/1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "sourceSha256": "3ff14d4e30792dc53f5728765d8939b280c6f4a9319c9a4c32993d6ec1270d75",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 2083,
+      "height": 1592,
+      "variants": [
+        {
+          "width": 800,
+          "height": 611,
+          "file": "1124_Intrinsic_Muscles_of_the_Foot-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1223,
+          "file": "1124_Intrinsic_Muscles_of_the_Foot-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the muscles of the foot. The top panel shows the lateral view of the dorsal muscles. The bottom left panel shows the superficial muscles of the left sole, the center panel shows the intermediate muscles of the left sole, and the right panel shows the deep muscles of the left sole.",
+      "caption": "The muscles along the dorsal side of the foot (a) generally extend the toes while the muscles of the plantar side of the foot (b, c, d) generally flex the toes. The plantar muscles exist in four layers, providing the foot the strength to counterbalance the weight of the body. In this diagram, three of the layers are shown from a plantar view beginning with the bottom-most layer just under the plantar skin of the foot (b) and ending with the top-most layer (d) located just inferior to the foot and toe bones."
+    },
+    "1125_Muscles_in_Facial_Expression": {
+      "source": "media/1125_Muscles_in_Facial_Expression.jpg",
+      "sourceSha256": "6f38e27ab460f0aa22a3fe4fbd65347ed39fedaa8eec3a879bc55a2073206764",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2021,
+      "height": 2658,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1052,
+          "file": "1125_Muscles_in_Facial_Expression-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2104,
+          "file": "1125_Muscles_in_Facial_Expression-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the muscles used in facial expressions. To raise the eyebrows, as when showing surprise, the skin of the scalp moves in an anterior direction. The prime mover is the occipitofrontalis frontal belly, which originates from the epicraneal aponeurosis and inserts underneath the skin of the forehead. To tense and retract the scalp, the skin of the scalp moves in the posterior direction. The prime mover is the occipitofrontalis occipital belly, which originates from the occipital bone and the mastoid process of the temporal bone and inserts into the epicraneal aponeurosis. To lower the eyebrows, as when scowling or frowning, the skin underneath the eyebrows moves in an inferior direction. The prime mover is the corrugator supercilii, which originates from the frontal bone and inserts into the skin underneath the eyebrow. To flare the nostrils, the nasal cartilage is compressed in an inferior and posterior direction. The prime mover is the nasalis, which originates from the maxilla and inserts into the nasal bone. Raising the upper lip involves elevating the upper lip tissue. The prime mover is the levator labii superioris, which originates from the maxilla and inserts underneath the skin at the corners of the mouth and also into the orbicularis oris. Lowering the lower lip involves depressing the lip and also moving it laterally. The prime mover is the depressor angulus oris, which originates from the mandible and inserts underneath the skin of the lower lip. Opening the mouth and sliding the lower jaw left and right involves depressing the lower jaw and also moving it laterally. The prime mover is thecdepressor angulus oris, which originates from the mandible and inserts underneath the skin at the corners of the mouth. Smiling involves elevating the corners of the mouth and also moving them in a lateral direction. The prime mover is the zygomaticus major, which originates from the zygomatic bone and inserts underneath the skin at the corners of the mouth in the dimple area, and also into the orbicularis oris. Shaping of the lips as during speech involves moving the lips in multiple directions. The prime mover is the orbicularis oris which originates from the tissue surrounding the lips and inserts underneath the skin at the corners of the mouth. Lateral movement of the cheeks such as when sucking on a straw or to compress air in the mouth while blowing involves moving the cheeks in a lateral direction. The prime mover is the buccinator, which originates from the maxilla, the mandible, and the sphenoid bone via the pterygomandibular raphae, and inserts into the orbicularis oris. Pursing of the lips by straightening them laterally involves moving the corners of the mouth in a lateral direction. The prime mover is the risorius, which originates from the fascia of the parotid salivary gland and inserts underneath the skin at the corners of the mouth. Protrusion of the lower lip, as when making a pouting expression, involves protracting the lower lip and the skin of the chin. The prime mover is the mentalis, which originates from the mandible and inserts underneath the skin of the chin.",
+      "caption": ""
+    },
+    "1126_Understand_A_Muscle_from_the_Latin": {
+      "source": "media/1126_Understand_A_Muscle_from_the_Latin.jpg",
+      "sourceSha256": "276d0a7de32ccb309667951169dbbcd0bfdddcd0e7bc29b24cf75ce32d3998d5",
+      "module": "m46498",
+      "kind": "photo",
+      "width": 1933,
+      "height": 758,
+      "variants": [
+        {
+          "width": 800,
+          "height": 313,
+          "file": "1126_Understand_A_Muscle_from_the_Latin-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 627,
+          "file": "1126_Understand_A_Muscle_from_the_Latin-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows two examples of muscle names and how to translate them based on their Latin roots. The first row uses abductor digiti minimi as an example. The word abductor comes from the Latin roots ab, which means away from, and duct, which means to move. Therefore an abductor is a muscle that moves away from something. The word digiti comes from the Latin root digititus, which means digit and refers to a finger or toe. The word minimi comes from the Latin root minimus, which means minimum, tiny, or little. Therefore, the abductor digiti minimi is a muscle that moves the little finger or toe away. The second row uses the adductor digiti minimi as an example. The word adductor comes from the Latin root ad, which means to or toward, and duct, which means to move. Therefore an adductor is a muscle that moves toward something. As with the abductor digiti minimi, digiti refers to a finger or toe and minimi refers to something that is little. Therefore the adductor digiti minimi is a muscle that moves the little finger or toe forward.",
+      "caption": ""
+    },
+    "1127_Muscles_for_Tongue_Movement_Swallowing_and_Speech": {
+      "source": "media/1127_Muscles_for_Tongue_Movement_Swallowing_and_Speech.jpg",
+      "sourceSha256": "4292d679c90c5cdaafb71018da784ac8a1bbce6fd2752a2ea5be8b069c60cb84",
+      "module": "m46484",
+      "kind": "photo",
+      "width": 2088,
+      "height": 2717,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1041,
+          "file": "1127_Muscles_for_Tongue_Movement_Swallowing_and_Speech-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2082,
+          "file": "1127_Muscles_for_Tongue_Movement_Swallowing_and_Speech-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the muscles used in tongue movement, swallowing, and speech. The genioglossus moves the tongue down and sticks the tongue out of the mouth. It originates in the mandible. The styloglossus moves the tongue up and retracts the tongue back into the mouth. It originates in the temporal bone. The hyoglossus flattens the tongue. It originates in the hyoid bone. The palatoglossus bulges the tongue. It originates in the soft palate. The digastric raises the hyoid bone in a way that also raises the larynx, allowing the epiglottis to cover the glottis during deglutition; it also assists in opening the mouth by depressing the mandible. It originates in the mandible and temporal bone. The stylohyoid raises and retracts the hyoid bone in a way that elongates the oral cavity during deglutition. It originates in the temporal bone. The mylohyoid raises the hyoid bone in a way that presses the tongue against the roof of the mouth, pushing food back into the pharynx during deglutition. It originates in the mandible. The geniohyoid raises and moves the hyoid bone forward, widening the pharynx during deglutition. It originates in the mandible. The ornohyoid retracts the hyoid bone and moves it down during later phases of deglutition. It originates in the scapula. The sternohyoid depresses the hyoid bone during swallowing and speaking. It originates in the clavicle. The thyrohyoid shrinks the distance between thyroid cartilage and the hyoid bone, allowing production of high-pitch vocalizations. It originates in the hyroid cartilage. The sternothyroid depresses the larynx, thyroid cartilage, and hyoid bone to create different vocal tones. It originates in the sternum. The sternocleidomastoid and semispinalis capitis rotate and tilt the head to the side and forward. They originate in the sternum and clavicle. The splenius capitis and longissimus capitis rotate and tilt the head to the side and backwards.",
+      "caption": ""
+    },
+    "1128_Muscles_of_the_Perineum_Common_to_Men_and_Women": {
+      "source": "media/1128_Muscles_of_the_Perineum_Common_to_Men_and_Women.jpg",
+      "sourceSha256": "9bd81ed25b389df09349c6791a4f63a0058dfa0a3f345fcccea65b84c18ea436",
+      "module": "m46485",
+      "kind": "photo",
+      "width": 1944,
+      "height": 1905,
+      "variants": [
+        {
+          "width": 800,
+          "height": 784,
+          "file": "1128_Muscles_of_the_Perineum_Common_to_Men_and_Women-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1568,
+          "file": "1128_Muscles_of_the_Perineum_Common_to_Men_and_Women-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the muscles of the perineum that are common to men and women. The levator ani pubococcygeus and levator ani iliococcygeus control movements during defaction, urination, coughing, and giving birth. They originate in the pubis and ischium. The superficial transverse perineal supports the perineal body maintaining the anus at the center of the perineum. It originates in the ischium. The bulbospongiosus is a superficial muscle that causes an involuntary response that compresses the urethra when excreting urine in both sexes or while ejaculating in males; it also aids in erection of the penis in males. It originates in the perineal body. The ischiocavernosus is a superficial muscle that compresses veins to maintain erection of the penis in males and erection of the clitoris in females. It originates in the ischium, ischial rami, and pubic rami. The external uretral sphincter is a deep muscle that voluntarily compresses the urethra during urination. It originates in the ischial rami and pubic rami. The external anal sphincter is a deep muscle that closes the anus. It originates in the anoccoccygeal ligament.",
+      "caption": ""
+    },
+    "1129_Muscles_that_Moves_the_Humerus": {
+      "source": "media/1129_Muscles_that_Moves_the_Humerus.jpg",
+      "sourceSha256": "dd37977c8b4211bd87e38b1318067c405febab75c9545bd3ed0bfdee14ee9fa7",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 1940,
+      "height": 2181,
+      "variants": [
+        {
+          "width": 800,
+          "height": 899,
+          "file": "1129_Muscles_that_Moves_the_Humerus-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1798,
+          "file": "1129_Muscles_that_Moves_the_Humerus-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the muscles that move the humerus. The pectoralis major is an axial muscle that brings the elbows together and moves the elbows up (as during an uppercut punch). It originates in the clavicle, sternum, cartilage of ribs 1 through 6 or 1 through 7, and the aponeurosis of the external oblique muscle. The latissimus dorsi is an axial muscle that moves the elbow back (as in elbowing someone standing behind you) or spreads the elbows apart. It originates in the thoracic vertebrae (T7 through T12), the lower vertebrae, ribs 9 through 12, and the iliac crest. The deltoid is a scapular muscle that lifts arms at the shoulder. It originates in the trapezius, clavicle, acromion, and spine of scapula. The subscapularis is a scapular muscle that assists the pectoralis major in bringing the elbows together and stabilizes the shoulder joint during movement of the pectoral girdle. It originates in the subscapular fossa of the scapula. The supraspinatus is a scapular muscle that rotates the elbow outwards, as during a tennis swing. It originates in the supraspinous fossa of the scapula. The infraspinatus is a scapular muscle that rotates the elbow outwards, as during a tennis swing. It originates in the infraspinous fossa of the scapula. The teres major is a scapular muscle that assists with medial rotation at the shoulder. It originates in the posterior surface of the scapula. The teres minor is a scapular muscle that assists the infraspinatus in rotating the elbow outwards. It originates in the lateral border of the dorsal scapular surface. The coracobra chialis is a scapular muscle that moves the elbow up and across the body, as when putting a hand on the chest. It originates in the coracoid process of the scapula.",
+      "caption": ""
+    },
     "112_Serous_Membrane_new": {
       "source": "media/112_Serous_Membrane_new.jpg",
       "sourceSha256": "ff767aa9b7a323605dfb66e837f2e929192d66a503470db5e3098ed5d8bdfb0a",
@@ -1649,6 +2316,144 @@
       "alt": "This diagram shows the pericardium on the left next to an analogy of a hand punching a balloon on the right. The pericardium is a two-layered sac that surrounds the entire heart except where the blood vessels emerge on the heart’s superior side. The pericardium has two layers because it folds over itself in the shape of the letter U. The inner layer that borders the heart is the visceral pericardium while the outer layer is the parietal pericardium. The space between the two layers is called the pericardial cavity. The heart sits in the cavity much like a fist punching into a balloon. The balloon surrounds the lower part of the fist with a two-layered sac, with the top of the balloon, where it contacts the fist, being analogous to the visceral pericardium. The bottom of the balloon, where it is tied off, is analogous to the parietal pericardium. The air within the balloon is analogous to the pericardial cavity.",
       "caption": "Serous membrane lines the pericardial cavity and reflects back to cover the heart—much the same way that an underinflated balloon would form two layers surrounding a fist.",
       "transparent": false
+    },
+    "1130_Muscles_that_Move_the_Forearm": {
+      "source": "media/1130_Muscles_that_Move_the_Forearm.jpg",
+      "sourceSha256": "2da509a04ab708f4a3c271ef420d7fe44769935164c24f3580a0ad88e6fa2cca",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 1971,
+      "height": 1983,
+      "variants": [
+        {
+          "width": 800,
+          "height": 805,
+          "file": "1130_Muscles_that_Move_the_Forearm-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1609,
+          "file": "1130_Muscles_that_Move_the_Forearm-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the muscles that move the forearm. The biceps brachii are anterior muscles that perform a bicep curl; they also allow the palm of the hand to point toward the body while flexing. They originate in the coracoid process and the tubercle above the glenoid cavity. The brachialis originates in the front of the distal humerus. The brachioradialis is an anterior muscle that assists and stablizes the elbow during bicep-curl motion. It originates in the lateral supracondylar ridge at the distal end of the humerus. The triceps brachii are posterior muscles that extend the forearm, as during a punch. They originate in the infraglenoid tubercle of the scapula, the posterior shaft of the humerus, and the posterior humeral shaft distal to the radial groove. The aconeus is a posterior muscle that assists in extending the forearm; it also allows the forearm to extend away from the body. It originates in the lateral epicondyle of the humerus. The pronator teres is an anterior muscle that turns the hand palm-down. It originates in the medial epicondyle of the humerus and the coronoid process of the ulna. The pronator quadratus is an anterior muscle that assists in turning the hand palm-down. It originates in the distal portion of the anterior ulnar shaft. The supinator is a posterior muscle that turns the hand palm-down. It originates in the lateral epicondyle of the humerus and the proximal ulna.",
+      "caption": ""
+    },
+    "1131_Muscles_that_Moves_the_Wrist_Hands_and_Fingers": {
+      "source": "media/1131_Muscles_that_Moves_the_Wrist_Hands_and_Fingers.jpg",
+      "sourceSha256": "7ff5ee612e29363c8a8db255aa273ecc590c595394d35d96872fbee0047862b0",
+      "module": "m46495",
+      "kind": "photo",
+      "width": 2250,
+      "height": 3048,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1083,
+          "file": "1131_Muscles_that_Moves_the_Wrist_Hands_and_Fingers-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2167,
+          "file": "1131_Muscles_that_Moves_the_Wrist_Hands_and_Fingers-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the muscles that move the wrist, hands, and forearm. These muscles make up the superficial anterior compartment of the forearm. The flexor carpi radialis bends the wrist toward the body; it also tilts the hand to the side away from the body. It originates in the medial epicondyle of the humerus. The palmaris longus assists in bending the hand up toward the shoulder. It originates in the medial epicondyle of the humerus. The flexor carpi ulnaris assists in bending the hand up toward the shoulder; it also tilts the hand to the side away from the body and stabilizes the wrist. It originates in the medial epicondyle of the humerus, the olecranon process, and the posterior surface of the ulna. The flexor digitorum superficialis bends the fingers to make a fist. It originates in the medial epicondyle of the humerus, the coronoid process of the ulna, and the shaft of the radius. These muscles make up the deep anterior compartment of the forearm. The flexor pollicis longus bends the tip of the thumb. It originates in the anterior surface of the radius and the interosseous membrane. The flexor digitorum profundus bends the fingers to make a fist; it also bends the wrist toward the body. It originates in the coronoid process, the anteromedial surface of the ulna, and the interosseous membrane. These muscles make up the superficial posterior compartment of the forearm. The extensor radialis longus straightens the wrist away from the body; it also tilts the hand to the side away from the body. It originates in the lateral supracondylar ridge of the humerus. The extensor carpi radialis brevis assists the extensor radialis longus in extending and abducting the wrist; it also stabilizes the hand during finger flexion. It originates in the lateral epicondyle of the humerus. The extensor digitorum opens the fingers and moves them sideways away from the body. It originates in the lateral epicondyle of the humerus. The extensor digiti minimi extends the little finger. It originates in the lateral epicondyle of the humerus. The extensor carpi ulnaris straightens the wrist away from the body; it also tilts the hand to the side toward the body. It originates in the lateral epicondyle of the humerus and the posterior of the ulna. These muscles make up the deep posterior compartment of the forearm. The abductor pollicis longus moves the thumb sideways toward the body; it also extends the thumb and moves the hand sideways toward the body. It originates in the posterior surface of the radius and ulna and in the interosseous membrane. The extensor pollicis brevis extends the thumb. It originates in the dorsal shaft of the radius and ulna and in the interosseous membrane. The extensor pollicis longus extends the thumb. It originates in the dorsal shaft of the radius and ulna and in the interosseous membrane. The extensor indicis extends the index finger; it also straightens the wrist away from the body. It originates in the posterior surface of the distal ulna and in the interosseous membrane.",
+      "caption": ""
+    },
+    "1132_Gluteal_Region_Muscles_that_Move_the_Femur": {
+      "source": "media/1132_Gluteal_Region_Muscles_that_Move_the_Femur.jpg",
+      "sourceSha256": "0820e5155b4618b29eef29a7eb903ff5e8cfe388a301e211b2581b58e2446633",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 2275,
+      "height": 3425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1204,
+          "file": "1132_Gluteal_Region_Muscles_that_Move_the_Femur-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2408,
+          "file": "1132_Gluteal_Region_Muscles_that_Move_the_Femur-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes gluteal region muscles that move the femur. These muscles make up the iliopsoas group. The psoas major raises the knee at the hip, as if performing a knee attack; it also assists the lateral rotators in twisting the thigh (and lower leg) outward, and assists with bending over and maintaining posture. It originates in the lumbar vertebrae (L1 through L5) and thoracic vertebra (T12). The iliacus raises the knee at the hip, as if performing a knee attack; it also assists the lateral rotators in twisting the thigh (and lower leg) outward, and assists with bending over and maintaining posture. It originates in the iliac fossa, iliac crest, and lateral sacrum. These muscles make up the gluteal group. The gluteous maximus lowers the knee and moves the thigh back, as when getting ready to kick a ball. It originates in the dorsal ilium, sacrum, and coccyx. The gluteus medius opens the thigh, as when doing a split. It originates in the lateral surface of the ilium. The gluteus minimus brings the thighs back together. It originates in the external surface of the ilium. The tensor fascia lata assists with raising the knee at the hip and opening the thighs; it also maintains posture by stabilizing the iliotibial track, which connects to the knee. It originates in the anterior aspect of the iliac crest and the anterior superior iliac spine. These muscles make up the lateral rotators. The piriformis twists the thigh (and lower leg) outward; it also maintains posture by stabilizing the hip joint. It originates in the anterolateral surface of the sacrum. The obturator internus twists the thigh (and lower leg) outward; it also maintains posture by stabilizing the hip joint. It originates in the inner surface of the obturator membrane, the greater sciatic notch, and the margins of the obturator foramen. The superior gemellus twists the thigh (and lower leg) outward; it also maintains posture by stabilizing the hip joint. It originates in the ischial spine. The inferior gemellus twists the thigh (and lower leg) outward; it also maintains posture by stabilizing the hip joint. It originates in the ischial tuberosity. The quatratus femoris twists the thigh (and lower leg) outward; it also maints posture by stabilizing the hip joint. It originates in the ischial tuberosity. These muscles are adductors. The adductor longus brings the thighs back together; it also assists with raising the knee. It originates in the pubis near the pubic symphysis. The adductor brevis brings the thighs back together; it also assists with raising the knee. It originates in teh body of the pubis and in the inferior ramus of the pubis. The adductor magnus brings the thighs back together; it also assists with raising the knee and moving the thigh back. It originates in the ischial rami, the pubic rami, and the ischial tuberosity. The pectineus opens the thigh; it also assists with raising the knee and turning the thigh (and lower leg) inward. It originates in the pectineal line of the pubis.",
+      "caption": ""
+    },
+    "1133_Thigh_Muscles_that_Moves_the_Femur_Tibia_and_Fibula": {
+      "source": "media/1133_Thigh_Muscles_that_Moves_the_Femur_Tibia_and_Fibula.jpg",
+      "sourceSha256": "19fb973491ff162370b45144cd46c617b2cdb65e6cfbdb931e732900c165c255",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 1971,
+      "height": 2746,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1114,
+          "file": "1133_Thigh_Muscles_that_Moves_the_Femur_Tibia_and_Fibula-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2229,
+          "file": "1133_Thigh_Muscles_that_Moves_the_Femur_Tibia_and_Fibula-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the thigh muscles that move the femur, tibia, and fibula. The medial compartment of the thigh consists of the gracilis, which moves the back of the lower legs up toward the buttocks, as when kneeling; it also assists in opening the thighs. It originates in the inferior ramus, the body of the pubis, and the ischial ramus. These muscles, the quadriceps femoris group, make up the anterior compartment of the thigh. The rectus femoris moves the lower leg out in front of the body, as when kicking; it also assists in raising the knee. It originates in the anterior inferior iliac spine and in the superior margin of the acetabulum. The vastus lateralis moves the lower leg out in front of the body, as when kicking. It originates in the greater trochanter, the intertrochanteric line, and the linea aspera. The vastus medialis moves the lower leg out in front of the body, as when kicking. It originates in the linea aspera and the intertrochanteric line. The vastus intermedius moves the lower leg out in front of the body, as when kicking. It originates in the proximal femur shaft. The sartorius moves the back of the lower legs up and back toward the buttocks, as when kneeling; it also assists in moving the thigh diagonally upward and outward as when mounting a bike. It originates in the anterior superior iliac spine. These muscles, the hamstring group, make up the posterior compartment of the thigh. The biceps femoris moves the back of the lower leg up and back toward the buttocks, as when kneeling; it also moves the thigh down and back and twists the thigh (and lower leg) outward. It originates in the ischial tuberosity, linea aspera, and distal femur. The semitendinosus moves the back of the lower legs up toward the buttocks, as when kneeling; it also moves the thigh down and back and twists the thigh (and lower leg) inward. It originates in the ischial tuberosity. The semi-membranosus moves the back of the lower legs up and back toward the buttocks, as when kneeling; it also moves the thigh down and back and twists the thigh (and lower leg) inward. It originates in the ischial tuberosity.",
+      "caption": ""
+    },
+    "1134_Muscles_that_Moves_the_Feet_and_Toes": {
+      "source": "media/1134_Muscles_that_Moves_the_Feet_and_Toes.jpg",
+      "sourceSha256": "09c89f0cf2669f5336a106da95dd20085532a3e674974d1f71ac6ee8bf0c260a",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 2239,
+      "height": 3075,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1098,
+          "file": "1134_Muscles_that_Moves_the_Feet_and_Toes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2197,
+          "file": "1134_Muscles_that_Moves_the_Feet_and_Toes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This tables describes the muscles that move the feet and toes. These muscles make up the anterior compartment of the leg. The tibialis anterior raises the sole of the foot off the ground, as when preparing to foot-tap; it also bends the inside of the foot upwards, as when catching your balance while falling laterally toward the opposite side as the balancing foot. It originates in the lateral condyle and upper tibial shaft and in the interosseous membrane. The extensor hallucis longus raises the sole of the foot off the ground, as when preparing to foot-tap; it also extends the big toe. It originates in the anteromedial fibula shaft and interosseous membrane. The extensor digitorum longus raises the sole of the foot off the ground, as when preparing to foot-tap; it also extends the toes. It originates in the lateral condyle of the tibia, the proximal portion of the fibula, and the interosseous membrane. These muscles make up the lateral compartment of the leg. The fibularis longus lowers the sole of the foot to the ground, as when foot-tapping or jumping; it also bends the inside of the foot downwards, as when catching your balance while falling laterally toward the same side as the balancing foot. It originates in the upper portion of the lateral fibula. The fibularis (peroneus) brevis lowers the side of the foot to the ground, as when foot-tapping or jumping; it also bends the inside of the foot downward, as when catching your balance while falling laterally toward the same side as the balancing foot. It originates in the distal fibula shaft. These superficial muscles make up the posterior compartment of the leg. The gastrocnemius lowers the sole of the foot to the ground, as when foot-tapping or jumping; it also assists in moving the back of the lower legs up and back toward the buttocks. It originates in the medial and lateral condyles of the femur. The soleus lowers the sole of the foot the ground, as when foot-tapping or jumping; it also maintains posture while walking. It originates in the superior tibia, fibula, and interosseous membrane. The plantaris lowers the sole of the foot to the ground, as when foot-tapping or jumping; it also assists in moving the back of the lower legs up and back toward the buttocks. It originates in the posterior femur above the lateral condyle. The tibialis posterior lowers the sole of the foot to the ground, as when foot-tapping or jumping. It originates in the superior tibia and fibula and in the interosseous membrane. These deep muscles also make up the posterior compartment of the leg. The popliteus moves the back of the lower legs up and back toward the buttocks; it also assists in rotation of the leg at the knee and thigh. It originates in the lateral condyle of the femur and the lateral meniscus. The flexor digitorum longus lowers the sole of the foot to the ground, as when foot-tapping or jumping; it also bends the inside of the foot upward and flexes the toes. It originates in the posterior tibia. The flexor hallicis longus flexes the big toe. It originates in the midshaft of the fibula and in the interosseous membrane.",
+      "caption": ""
+    },
+    "1135_Intrinsic_Muscles_in_the_Foot": {
+      "source": "media/1135_Intrinsic_Muscles_in_the_Foot.jpg",
+      "sourceSha256": "e942f320416147d2dca836d45d0d7c6899f3c4e172c4755341e7becf13c3a190",
+      "module": "m46482",
+      "kind": "photo",
+      "width": 1958,
+      "height": 2753,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1125,
+          "file": "1135_Intrinsic_Muscles_in_the_Foot-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2249,
+          "file": "1135_Intrinsic_Muscles_in_the_Foot-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes intrinsic muscles in the foot. The dorsal group consists of the extensor digitorum brevis, which extends toes 2 through 5. It originates in the calcaneus and the extensor retinaculum. These muscles make up layer 1 of the plantar group. The abductor hallucis abducts and flexes the big toe. It originates in the calcaneal tuberosity and flexor retinaculum. The flexor digitorum brevis flexes toes 2 through 4. It originates in the calcaneal tuberosity. The abductor digiti minimi abducts and flexes the small toe. It originates in the calcaneal tuberosity. These muscles make up layer 2 of the plantar group. The quadratus plantae assists in flexing toes 2 through 5. It originates in the medial and lateral sides of the calcaneus. The lumbricals extend toes 2 through 5 at the interphalangeal joints; they also flex the small toes at the metatarsophalangeal joints. They originate in the tendons of the flexor digitorum longus. These muscles make up layer 3 of the plantar group. The flexor hallucis brevis flexes the big toe. It originates in the lateral cuneiform and in the cuboid bones. The adductor hallucis adducts and flexes the big toe. It originates in the bases of metatarsals 2 through 4, in the fibularis longus tendon sheath, and in the ligament across the metatarsophalangeal joints. The flexor digiti minimi brevis flexes the small toe. It originates in the base of metatarsal 5 and in the tendon sheath of the fibularis longus. These muscles make up layer 4 of the plantar group. The dorsal interossei abducts and flexes the middle toes at the metatarsophalangeal joints; it also extends the middle toes at the interphalangeal joints. It originates in the sides of the metatarsals. The plantar interossei abducts toes 3 through 5; it also flexes the proximal phalanges and extends the distal phalanges. It originates in the side of each metatarsal that faces metatarsal 2 (absent from metatarsal 2).",
+      "caption": ""
     },
     "113abcd_Medical_Imaging_Techniques": {
       "source": "media/113abcd_Medical_Imaging_Techniques.jpg",

@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 10,
-      "mappedSections": 61,
+      "localChapters": 11,
+      "mappedSections": 67,
       "units": [
         {
           "index": 1,
@@ -800,6 +800,60 @@
       "moduleId": "m46407",
       "sourceTitle": "Development and Regeneration of Muscle Tissue",
       "moduleSha256": "720fb811aab5a14df73a75069a5427a9de3548fedf5714406862868e2eb5f89c"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "11.1",
+      "moduleId": "m46487",
+      "sourceTitle": "Interactions of Skeletal Muscles, Their Fascicle Arrangement, and Their Lever Systems",
+      "moduleSha256": "60ae83c0a5ba867956e56a2570a998864d9a71467871cea589ae7109b176a597"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/02-naming-skeletal-muscles.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "11.2",
+      "moduleId": "m46498",
+      "sourceTitle": "Naming Skeletal Muscles",
+      "moduleSha256": "dca40c905824f58d16e6f74fd58d2b043abf490fabb5e3ae35b8026172dc0ac6"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "11.3",
+      "moduleId": "m46484",
+      "sourceTitle": "Axial Muscles of the Head, Neck, and Back",
+      "moduleSha256": "18e63f6287d7e996d2e8bcc20c6e0bc42761581326ccd38744cd47ada049a7da"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "11.4",
+      "moduleId": "m46485",
+      "sourceTitle": "Axial Muscles of the Abdominal Wall, and Thorax",
+      "moduleSha256": "59d9878560ebcacc2f28ab4c087670adb3997d5cb0de4eb1c7d8d3db6121a233"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "11.5",
+      "moduleId": "m46495",
+      "sourceTitle": "Muscles of the Pectoral Girdle and Upper Limbs",
+      "moduleSha256": "59f36cddc5fb885b1c1c5a82a3b6ada34bd08ac7d829113b0efa5a15f74bdb93"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "11.6",
+      "moduleId": "m46482",
+      "sourceTitle": "Appendicular Muscles of the Pelvic Girdle and Lower Limbs",
+      "moduleSha256": "e1f977e7eb556d989fd0fb54928800b8687389133780f9fe25481e9f257a6c11"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

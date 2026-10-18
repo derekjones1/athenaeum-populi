@@ -2773,6 +2773,505 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2065,
       "rationale": "The module's Review Question fs-id1285054 (\"Which of the following statements is true?\", options fs-id1838530) keys C, \"Fast fibers have large glycogen reserves\", but option D, \"Fast fibers have many mitochondria\", is also true: Section 10.5 (m46480, fs-id1424369) says the fast oxidative fibers \"possess high amounts of mitochondria\". The page narrows option D to \"Fast glycolytic fibers have many mitochondria\" (false by Section 10.5), key C unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 10 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/02-naming-skeletal-muscles.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46498",
+      "sourceElementIds": [
+        "fs-id4354529",
+        "fs-id1616273",
+        "fs-id2430153"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2089,
+      "rationale": "The module's Review Question fs-id4354529 (\"The location of a muscle's insertion and origin can determine ________.\", options fs-id2430153) keys A, \"action\", but option C, \"muscle name\", is also true: para fs-id2279191 says \"The location of a muscle's attachment can also appear in its name\" and the Summary says \"The origin and/or insertion can also be features used to name a muscle\". The page prints \"fascicle arrangement\" in its place (described in Section 11.1, m46487, and never tied to attachment location in m46498), key A unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 11.2 author and checker, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46487",
+      "sourceElementIds": [
+        "fs-id2761928",
+        "fs-id2797282",
+        "fs-id2306342"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2090,
+      "rationale": "The module's Review Question fs-id2761928 (\"Which of the following helps an agonist work?\", options fs-id2306342) keys A, \"a synergist\", but option B, \"a fixator\", is also true: the glossary (fs-id2684417) defines a fixator as a \"synergist that assists an agonist\" and para fs-id2684650 says a synergist can be a fixator that stabilizes the origin. The page prints \"a load\" in its place, the module's own lever term, key A unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 11.1 author and checker, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46485",
+      "sourceElementIds": [
+        "fs-id2442596",
+        "fs-id2000060",
+        "fs-id2844496"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2091,
+      "rationale": "The module's Review Question fs-id2442596 (options fs-id2844496) prints the distractors \"interior oblique\" and \"exterior oblique\", but the module names the muscles the \"internal oblique\" and \"external oblique\" throughout (para fs-id2830198, tbl-ch11_06, glossary). The page prints the module's spellings, key A (\"quadratus lumborum\") unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 11.4 author and parent, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "fs-id2471871",
+        "fs-id2489577",
+        "fs-id2383267"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2092,
+      "rationale": "The module's Review Question fs-id2471871 (\"What is the function of the erector spinae?\", options fs-id2383267) keys C, \"postural support\", but option D, \"rotating of the vertebral column\", is also true: para fs-id2586421 says the erector spinae group \"controls flexion, lateral flexion, and rotation of the vertebral column\". The page prints \"elevation of the mandible\" in its place (the module gives it to the masseter, fs-id2101141, and the temporalis, tbl-ch11_04), key C unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 11.3 checker, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fs-id1469672",
+        "fs-id1481233",
+        "fs-id2595209"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2093,
+      "rationale": "The module's Review Question fs-id1469672 (\"What is the largest muscle in the lower leg?\", options fs-id2595209) keys B, \"gastrocnemius\", but the module never says which leg muscle is largest (para fs-id2421915 calls the gastrocnemius only \"The most superficial and visible muscle of the calf\") and by volume the soleus is larger (Albracht et al., J Biomech 2008, doi:10.1016/j.jbiomech.2008.04.020). The page prints \"popliteus\" in place of \"soleus\", key B unchanged, with a visible Source note and a footer sentence; the exercise is in DISCLOSED_DEVIATIONS (kind options). Evidenced by the chapter 11 prose claim pass and the chapter 11.6 author, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46487",
+      "sourceElementIds": [
+        "fs-id1949887"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2094,
+      "rationale": "A fixator stabilizes the agonist's origin, not its insertion, and the module says so three times. Paragraph fs-id2684650: \"A synergist can also be a fixator that stabilizes the bone that is the attachment for the prime mover's origin.\" The glossary (fs-id2684417): \"…thereby stabilizing the origin of the agonist.\" The Critical Thinking solutions fs-id1516671 and fs-id2875140: \"fixators stabilize a muscle's origin.\" The page reads \"A synergist that makes the origin site more stable is called a fixator\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46487",
+      "sourceElementIds": [
+        "fs-id2360657",
+        "fs-id1894108",
+        "fs-id2927141"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2095,
+      "rationale": "Abduction is movement in the coronal (frontal) plane; sagittal-plane movement at the shoulder is flexion and extension, which the same paragraph names (\"flex (move anteriorly…)\"). m46398 (§9.5), glossary entry fs-id2364470: abduction is \"movement in the coronal plane that moves a limb laterally away from the body; spreading of the fingers.\" The page reads \"coronal plane\" in both the deltoid paragraph and the glossary meaning of abduct with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46487",
+      "sourceElementIds": [
+        "fs-id2166217"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2096,
+      "rationale": "The Latin root meaning \"straight\" is *rectus*; *rector* is a different word (a ruler, a guide), and the muscle name it glosses is printed with the right form. m46498 (§11.2), glossary entry fs-id2582097: \"rectus — straight,\" and its table of Latin roots tbl-ch11_02 glosses rectus as straight. The page reads \"rectus = “straight”\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46487",
+      "sourceElementIds": [
+        "fig-ch11_01_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2097,
+      "rationale": "The biceps brachii's two proximal tendons attach to the scapula (the coracoid process and the supraglenoid tubercle), not to the upper arm, which is why the book says the muscle \"crosses the shoulder and elbow joints.\" Only its insertion, the radial tuberosity, is in the forearm. m46495 (§11.5), the forearm table fig-ch11_05_05 (origin \"Coracoid process; tubercle above glenoid cavity,\" insertion \"Radial tuberosity\") and the glossary entry fs-id2164006. The page reads \"The tendons of the biceps connect to the scapula at the shoulder and to the forearm\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "fs-id2500664",
+        "fs-id2872925",
+        "fs-id1762152"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2098,
+      "rationale": "The module's own facial-expression table (fig-ch11_03_02) gives raising the eyebrows to the occipitofrontalis (frontal belly) and only lowering them (\"scowling, frowning\") to the corrugator supercilii; paragraph fs-id2361275 says \"The occipitofrontalis muscle moves up the scalp and eyebrows.\" The corrugator does not raise the brows. The page reads \"the prime mover in lowering the eyebrows\" in the body and the Key terms, with the instruction to feel its action keeping only the lowering movement with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "fig-ch11_03_02",
+        "fs-id2319967"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2099,
+      "rationale": "The depressor anguli oris is a muscle of facial expression that inserts in the skin at the corner of the mouth; it depresses the angle of the mouth and cannot move the mandible, as the row's own insertion cell says. m46484 paragraph fs-id2928107: \"Because the muscles insert in the skin rather than on bone, when they contract, the skin moves to create facial expression.\" The module gives jaw movements to the pterygoids (tbl-ch11_04). Gray's Anatomy, 41st ed. (Standring, 2016), ch. 30, as given by e-Anatomy: action \"Depresses the angle of the mouth,\" insertion \"Modiolus of mouth.\" The page reads \"Lowering corners of mouth (e.g., frowning)\" and \"Corners of mouth\" in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "tbl-ch11_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2100,
+      "rationale": "Protraction is anterior motion, and the same rows' Movement cells say \"pushes lower jaw out under upper jaw.\" m46398 (§9.5), glossary entry for protraction fs-id1490120: \"anterior motion of the scapula or mandible,\" and its caption \"(j) Protraction of the mandible pushes the chin forward.\" The temporalis row of the same table uses \"posterior (retracts)\" correctly. The page reads \"anterior (protracts)\" in both pterygoid rows with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "tbl-ch11_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2101,
+      "rationale": "The medial pterygoid inserts on the medial surface of the ramus and angle of the mandible; the muscle that attaches to the temporomandibular joint (articular disc and capsule) is the lateral pterygoid, so the joint attachment is on the wrong row. The book is silent on pterygoid insertions elsewhere (m46355 names only the plates' origins). Gray's Anatomy, 41st ed. (Standring, 2016), ch. 32, as given by e-Anatomy: medial pterygoid, \"Medial surface of the ramus and angle of the mandible\"; lateral pterygoid, \"pterygoid fovea of the mandibular neck, the articular disc, and the TMJ capsule.\" (Moderate confidence on the citation form, high on the anatomy.) The page reads \"Mandible; temporomandibular joint (articular disc)\" for the lateral pterygoid and \"Mandible (medial surface of ramus and angle)\" for the medial pterygoid with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "fig-ch11_03_05",
+        "fs-id1917122"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2102,
+      "rationale": "The semispinalis capitis extends the head and arises from vertebral processes, not from the sternum and clavicle, and a muscle that \"tilts head backwards\" does not flex bilaterally. The module's own tbl-ch11_05 gives the semispinalis capitis \"Rotates and tilts head backward … bilaterally: extension\" with vertebral origins, and the splenius capitis and longissimus capitis \"bilaterally: extension\"; paragraph fs-id2455581: \"both [sternocleidomastoid] muscles working together are the flexors of the head.\" The page reads the semispinalis capitis left out of the sternocleidomastoid row and \"bilaterally: posterior (extends)\" in the splenius capitis and longissimus capitis row with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "fig-ch11_03_03",
+        "fs-id2230508"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2103,
+      "rationale": "The module's table tbl-ch11_03 gives the superior oblique \"Moves eyes down and away from nose … Inferior (depresses); lateral (abducts)\" and the inferior oblique \"Moves eyes up and away from nose … Superior (elevates); lateral (abducts).\" The figure swaps the two obliques' motions, and its paired up and down labels should read superior rectus with inferior oblique and inferior rectus with superior oblique. The rectus arrows agree with the table. The page reads a Source note under the figure saying that panel (b) gives each oblique muscle the other's motion, with the alt and longdesc describing the arrows as drawn with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46484",
+      "sourceElementIds": [
+        "fs-id2367016",
+        "fs-id1616901",
+        "fs-id2360500"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2104,
+      "rationale": "There is no styloid bone; the styloid is a process of the temporal bone. The module's own table image fig-ch11_03_05 gives the styloglossus origin as \"Temporal bone (styloid process),\" and m46355 (§7.2) describes \"an elongated, downward bony projection called the styloid process.\" Low severity. The page reads \"originates on the styloid process of the temporal bone\" in the body and the Key terms with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46485",
+      "sourceElementIds": [
+        "fig-ch11_04_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2105,
+      "rationale": "The flanks lie lateral to the rectus abdominis, and the caption's own first sentence calls the rectus \"medially located.\" Paragraph fs-id2241972: the four pairs \"cover the anterior and lateral abdominal region and meet at the anterior midline,\" and the drawing places the external oblique on the flank and the rectus beside the midline. The page reads \"lateral to the rectus abdominis\" in the caption with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46485",
+      "sourceElementIds": [
+        "tbl-ch11_06"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2106,
+      "rationale": "Supination is a forearm movement; twisting the vertebral column is rotation. m46398 (§9.5), glossary entries: supination (fs-id1724302) is \"forearm motion that moves the palm of the hand from the palm backward to the palm forward position,\" and rotation (fs-id2227439) includes \"twisting of the vertebral column.\" Paragraph fs-id2830198 says the layers allow \"various movements and rotations of the trunk.\" The page reads \"Rotation; lateral flexion\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46485",
+      "sourceElementIds": [
+        "tbl-ch11_06"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2107,
+      "rationale": "The quadratus lumborum is a posterior-wall muscle running from the iliac crest to the twelfth rib and the lumbar transverse processes; it has no attachment to ribs 5–10. The module is silent beyond the row's own insertion (rib 12). Gray's Anatomy of the Human Body, 20th U.S. ed. (1918), as given by e-Anatomy: it \"arises by aponeurotic fibers from the iliolumbar ligament and the adjacent portion of the iliac crest\"; insertion \"Last rib and transverse processes of lumbar vertebrae.\" The page reads \"Ilium (iliac crest); iliolumbar ligament\" as the quadratus lumborum's origin with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46485",
+      "sourceElementIds": [
+        "tbl-ch11_07"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2108,
+      "rationale": "Ribs 6–12 are seven ribs. Paragraph fs-id2304478: the diaphragm has \"a number of origins including the xiphoid process of the sternum anteriorly, the inferior six ribs and their cartilages laterally, and the lumbar vertebrae and 12th ribs posteriorly.\" The inferior six ribs are 7–12. The page reads \"Sternum; ribs 7–12; lumbar vertebrae\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46485",
+      "sourceElementIds": [
+        "tbl-ch11_07"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2109,
+      "rationale": "The external intercostals elevate the ribs, an inspiratory action, and expiration is the internal intercostals' (the next row, \"Forced exhalation\"); the row's own direction cell says \"expands thoracic cavity.\" Paragraph fs-id2586421: \"The 11 pairs of superficial external intercostal muscles aid in inspiration of air during breathing because when they contract, they raise the rib cage, which expands it. The 11 pairs of internal intercostal muscles … are used for expiration.\" The missing space after the semicolon is also the source's. The page reads \"Inhalation\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id1397217"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2110,
+      "rationale": "The pectoral girdle is the clavicle and scapula only; the humerus is the arm bone the girdle attaches, and muscles are not part of a skeletal girdle. m46374 (§8.1), paragraph fs-id2271452: \"The pectoral girdle, consisting of the clavicle and the scapula, attaches each upper limb to the axial skeleton.\" This module's own glossary (\"shoulder girdle, made up of the clavicle and scapula\") and Summary (\"The clavicle and scapula make up the pectoral girdle\") say the same. The page reads the pectoral girdle as the clavicle and scapula, which the proximal humerus and the covering muscles join in stabilizing the shoulder joint with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id2008704"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2111,
+      "rationale": "The latissimus dorsi arises from the lower back through the thoracolumbar aponeurosis and inserts on the humerus; the aponeurosis belongs to its origin. The module's own table image fig-ch11_05_03 gives its origin \"Thoracic vertebrae (T7–T12); lumbar vertebrae; lower ribs (9–12); iliac crest\" and its insertion \"Intertubercular sulcus of humerus.\" The page reads \"originates from\" its aponeurosis with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fig-ch11_05_02",
+        "fs-id2789953"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2112,
+      "rationale": "A muscle that moves the humerus inserts on the humerus; the infraspinatus originates on the scapula. The module's table image fig-ch11_05_03 gives the infraspinatus origin \"Infraspinous fossa of scapula\" and insertion \"Greater tubercle of humerus,\" and the body says \"The rest of the shoulder muscles originate on the scapula.\" The page reads \"originate from the scapula\" in caption (d) with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fig-ch11_05_03",
+        "fs-id1234943"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2113,
+      "rationale": "The Movement text and the direction cell are crossed. The module's body says the supraspinatus and infraspinatus \"abduct the arm, and laterally rotate the arm, respectively,\" and the glossary has the supraspinatus \"abducts the arm\" and the infraspinatus \"laterally rotates the arm\"; the teres minor row reads \"Assists infraspinatus in rotating elbow outwards.\" The infraspinatus direction cell gives neither lateral rotation nor anything its own movement text describes. The page reads \"Lifts arm away from side of body\" for the supraspinatus Movement and \"Lateral rotation\" for the infraspinatus direction in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id2271811"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2114,
+      "rationale": "Pronation and supination are rotations at the radioulnar joints, not hinge motions at the elbow. The module's paragraph fs-id2831016 has the biceps \"supinating the forearm at the radioulnar joints\"; m46398 (§9.5): pronation \"is produced by rotation of the radius at the proximal radioulnar joint, accompanied by movement of the radius at the distal radioulnar joint,\" and \"The proximal radioulnar joint is a pivot joint.\" The page reads \"flexion and extension at the hinge of the elbow joint, and pronation and supination at the radioulnar joints\" with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id2271811",
+        "fs-id2443705"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2115,
+      "rationale": "The biceps brachii also supinates, and the module says so: paragraph fs-id2831016 has it \"also taking part in supinating the forearm at the radioulnar joints\"; the table image fig-ch11_05_05 gives it \"Flexion; supination\"; the glossary entry fs-id2164006 says \"assisting in supinating it.\" The page reads the supinator turning the forearm anteriorly assisted by the biceps brachii, in the body and the Summary with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id3304716",
+        "fs-id2241757",
+        "fs-id1967900"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2116,
+      "rationale": "The deep anterior muscles arise from the radius and ulna, not the humerus. The module's table image fig-ch11_05_06 gives the flexor pollicis longus \"Anterior surface of radius; interosseous membrane\" and the flexor digitorum profundus \"Coronoid process; anteromedial surface of ulna; interosseous membrane.\" The posterior counterpart paragraph distinguishes superficial (humerus) from deep (radius and ulna) origins. Low severity. The page reads the superficial muscles originating on the humerus and the deep muscles on the radius and ulna, in the body and the Key terms entry with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id1629728",
+        "fs-id2515987",
+        "fig-ch11_05_06",
+        "fs-id2253581",
+        "fs-id2969915",
+        "fs-id1882857",
+        "fs-id1880091"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2117,
+      "rationale": "The muscle is the extensor carpi radialis longus, the pair of the extensor carpi radialis brevis named in the same list. The module's Summary prints \"The extensor carpi radialis longus, extensor carpi radialis brevis, extensor digitorum…\", and the label of figure fig-ch11_05_04 reads \"Extensor carpi radialis longus and Extensor carpi radialis brevis.\" The page reads \"extensor carpi radialis longus\" in the body, two rows of the transcription, and two Key terms entries with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fig-ch11_05_06",
+        "fs-id1908413"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2118,
+      "rationale": "The same table uses \"away from body\" for abduction and \"toward body\" for adduction (flexor carpi radialis \"tilts hand to side away from body | Flexion; abduction\"; extensor carpi ulnaris \"tilts hand to side toward body | Extension; adduction\"). By that convention the flexor carpi ulnaris, an adductor, tilts the hand toward the body, and the abductor pollicis longus moves the thumb and hand away from it. The glossary has the flexor carpi ulnaris \"flexes and adducts the hand at the wrist.\" The page reads \"toward body\" for the flexor carpi ulnaris and \"away from body\" for the abductor pollicis longus in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id2018640",
+        "fs-id1410039"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2119,
+      "rationale": "The palmar interossei adduct the fingers; the dorsal interossei abduct them. The module's table tbl-ch11_09 gives the palmar interossei \"Adducts and flexes each finger at metacarpo-phalangeal joints … | Adduction; flexion; extension\" and the dorsal interossei \"Abducts….\" The page reads \"adduct\" in the Key terms entry with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46495",
+      "sourceElementIds": [
+        "fs-id2264083",
+        "fs-id2590271"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2120,
+      "rationale": "The question and the module concern the shoulders and upper limbs, and the section's opening paragraph fs-id1397217 names \"muscles that stabilize and position the pectoral girdle.\" The pelvic girdle belongs to Section 11.6. The page reads \"pectoral girdle\" in the model answer with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fig-ch11_06_02",
+        "fs-id2786015"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2121,
+      "rationale": "Each Movement text describes the opposite of its own direction cell. The table's convention is fixed by its other rows: the gluteus medius \"Opens thighs, as when doing a split | Abduction,\" and the adductor longus, brevis, and magnus \"Brings the thighs back together … Adduction.\" Paragraph fs-id2875826: \"The pectineus adducts and flexes the femur at the hip as well\"; the Summary has the gluteus maximus, medius, and minimus \"extend and abduct the femur.\" The page reads \"Opens thighs\" for the gluteus minimus and \"Brings the thighs together\" for the pectineus in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fig-ch11_06_03",
+        "fs-id2026297"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2122,
+      "rationale": "\"Opening thighs\" is abduction in the preceding table's convention (gluteus medius), but the gracilis adducts. The module's body says \"the strap-like gracilis adducts the thigh in addition to flexing the leg at the knee,\" and the glossary has it \"adducts the thigh and flexes the leg at the knee.\" The page reads \"assists in bringing the thighs together\" in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fs-id1976093",
+        "fs-id2497071"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2123,
+      "rationale": "The pectineus adducts. Paragraph fs-id2875826: \"The pectineus adducts and flexes the femur at the hip as well\"; the Summary: \"The pectineus muscle adducts and flexes the femur at the hip\"; the table image fig-ch11_06_02: \"Adduction; flexion; medial rotation.\" The page reads \"adducts\" in the Key terms entry with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fs-id2112549",
+        "fs-id2952345",
+        "fs-id2610149",
+        "fs-id1516476"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2124,
+      "rationale": "Both are dense connective tissue (fascia), not muscle. Paragraph fs-id2472929 has the tensor \"pulling on the iliotibial tract (band)\" and the table image fig-ch11_06_02 has the gluteus maximus and tensor fascia lata inserting into the \"iliotibial tract\"; paragraph fs-id1364833: \"The principal support for the longitudinal arch of the foot is a deep fascia called plantar aponeurosis.\" The page reads the iliotibial tract as a band of deep fascia on the lateral thigh into which the gluteus maximus and tensor fasciae latae insert, and the plantar aponeurosis as a deep fascia with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fig-ch11_06_03",
+        "fs-id2026297"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2125,
+      "rationale": "The quadriceps femoris is four muscles; the sartorius is an anterior-compartment muscle outside it. Paragraph fs-id2591754: \"This compartment contains the quadriceps femoris group, which actually comprises four muscles … In addition to the quadriceps femoris, the sartorius is a band-like muscle…\"; the Summary fs-id1748045: \"The quadriceps femoris is made of four muscles: the rectus femoris, the vastus lateralis, the vastus medialis, and the vastus intermedius.\" The page reads the sartorius set under \"Anterior compartment of thigh\" alone in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fig-ch11_06_05",
+        "fs-id2980597"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2126,
+      "rationale": "The tibialis posterior is a deep posterior muscle. Paragraph fs-id2421915: \"There are four deep muscles in the posterior compartment of the leg as well: the popliteus, flexor digitorum longus, flexor hallucis longus, and tibialis posterior,\" and \"The superficial muscles in the posterior compartment of the leg all insert onto the calcaneal tendon\"; the tibialis posterior row inserts on \"Several tarsals and metatarsals 2–4.\" The Summary and the glossary place it in the deep posterior compartment. The page reads the tibialis posterior moved to the deep muscles in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fig-ch11_06_07",
+        "fs-id2772615"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2127,
+      "rationale": "The row's own Movement text and the muscle's name say abduction, and the adductor of the big toe is a separate row (\"Adducts and flexes big toe | … | Adduction; flexion | Adductor hallucis\"). m46498 (§11.2): an abductor \"moves the bone away from the midline.\" The page reads \"Abduction; flexion\" in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fig-ch11_06_07",
+        "fs-id2772615"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2128,
+      "rationale": "Muscles that insert on the side of each toe facing toe 2 pull toes 3–5 toward toe 2, the axis of the foot: adduction. The abductors are the dorsal interossei (the row above, inserting \"on side opposite toe 2\"). The module is silent elsewhere on the foot's interossei, but its hand table tbl-ch11_09 gives the palmar interossei, their homologues, as adductors. Gray's Anatomy of the Human Body, 20th U.S. ed. (1918), as given by e-Anatomy: action \"Adduct toes.\" (Moderate confidence on the citation form.) The page reads \"Adducts toes 3–5\" and \"Adduction; flexion; extension\" in the transcription with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46482",
+      "sourceElementIds": [
+        "fs-id2012638",
+        "fs-id2015922",
+        "fs-id2467464",
+        "fs-id2875826",
+        "fs-id2264301",
+        "fs-id2487148"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2129,
+      "rationale": "In the book's regional terms the hamstrings lie on the back of the thigh and the femoral triangle is at the junction of the abdomen and the thigh; the leg is the region below the knee. m46364 (§8.4), paragraph fs-id1400685: \"The thigh is the region located between the hip and knee joints. … The leg is the region between the knee and ankle joints.\" The module's own table image fig-ch11_06_03 groups the hamstrings under \"Posterior compartment of thigh.\" The same class as erratum 2055 (m46476, the sartorius \"of the upper leg\"). The page reads \"on the back of the thigh\" in the body and the glossary, and \"between the hip and the thigh\" in the body, the glossary, and the page's femoral-triangle cloze with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
     }
   ]
 }

@@ -285,6 +285,14 @@
     "result": "agrees"
    }
   },
+  "0092d8c1c829d393": {
+   "verdict": "ok",
+   "note": "textin 'plantar aponeurosis' re-read against m46482 glossary/body; accept checked through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "009778efbac2eeb3": {
    "verdict": "ok",
    "note": "node: Math.exp(-0.5) = 0.6065306... -> 0.60653; matches CNXML solution."
@@ -3419,6 +3427,14 @@
   "07d12b64ab0cabb7": {
    "verdict": "ok"
   },
+  "07d26844ae24e20c": {
+   "verdict": "ok",
+   "note": "textin 'femoral triangle' cloze from m46482 fs-id2875826 with the claim-corrected 'between the hip and the thigh' (source: 'the leg'; Source note in body); key printed in the body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "07d2c861b21229dd": {
    "verdict": "ok",
    "note": "source exercise fs-idm71000698 (options-differ) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -4309,6 +4325,14 @@
    "note": "source exercise fs-idp101132192 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "09f7d3ebc751a428": {
+   "verdict": "ok",
+   "note": "RQ2 fs-id2761928 key A a synergist re-read vs CNXML; option b a fixator replaced by a load per parent ruling (options deviation, Source note); a load does not help the agonist (fs-id1702969)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5676,6 +5700,15 @@
     "result": "agrees"
    }
   },
+  "0d308e36780c74d3": {
+   "verdict": "ok",
+   "note": "RQ fs-id1850372 key A axial and scapular; body fs-id2008704 'Similar to the muscles that position the pectoral girdle ... include both axial and scapular muscles'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "adjudicated: source key stands — m46495 says the muscles that position the pectoral girdle, like those that move the humerus, \"include both axial and scapular muscles\"; \"axial\" alone is incomplete."
+   }
+  },
   "0d38380715278314": {
    "verdict": "ok",
    "note": "glossary fs-id1141871 fracture hematoma; body fs-id691880",
@@ -6379,6 +6412,14 @@
     "result": "agrees"
    }
   },
+  "0ee3f5e9a2bdb109": {
+   "verdict": "ok",
+   "note": "RQ4 fs-id2109061 (m46487) key A the origin; body fs-id2874718",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0ee7502be52fc150": {
    "verdict": "ok",
    "note": "glossary recall: untranslated region (fs-id2929520) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -6660,6 +6701,14 @@
   "0f90fd6438fde588": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0f9c4a57b0c14202": {
+   "verdict": "ok",
+   "note": "RQ fs-id1516671, key C sternocleidomastoid; body fs-id2455581 'both muscles working together are the flexors of the head'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -7740,6 +7789,14 @@
   "1269a094511cee54": {
    "verdict": "ok",
    "note": "selfcheck kept deliberately: reverse-recall of neurocysticercosis/epilepsy MC (avoid distinctItems collision) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "126c8e824083854b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1837795 orbicularis oculi 'circular muscle that closes the eye' = body fs-id2361275",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "126e4dae34a197cc": {
    "verdict": "ok",
@@ -10219,6 +10276,14 @@
     "result": "agrees"
    }
   },
+  "17dabbd9872006b4": {
+   "verdict": "ok",
+   "note": "textin 'iliotibial tract' re-read against m46482 glossary/body; accept checked through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "17dc7d1997781d14": {
    "verdict": "ok",
    "note": "source exercise fs-id1167741589785 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -12560,6 +12625,14 @@
     "result": "agrees"
    }
   },
+  "1d0c66b1ae0898d8": {
+   "verdict": "ok",
+   "note": "RQ6 fs-id2790910 key C parallel; body fs-id2292670",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1d0cee474e27fcf2": {
    "verdict": "ok",
    "note": "glossary recall: cornea (fs-idp125147952) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -13649,6 +13722,14 @@
     "result": "agrees"
    }
   },
+  "1fa73e937d5b192f": {
+   "verdict": "ok",
+   "note": "Summary cloze, fs-id2592756: \"…used to describe muscles of the body midline\"; mid-line accepted.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1fb04b6c0c604cf9": {
    "verdict": "ok",
    "note": "selfcheck; § Stationary Phase lists waste accumulation, nutrient depletion, oxygen depletion as limiting factors"
@@ -14312,6 +14393,14 @@
   "2133420b1c075c29": {
    "verdict": "ok",
    "note": "KC 2 5.1 § body Proteins (fs-id1786880), m66373 — parent re-read against the module"
+  },
+  "2133c5b183865517": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2738851 'This part of the core plays a key role in stabilizing the rest of the body and maintaining posture', referent named; accept 'body posture' (intro fs-id2310613 'body posture will be compromised') grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "21361b3cc2c3104c": {
    "verdict": "ok",
@@ -17389,6 +17478,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "291b911d19035bd5": {
+   "verdict": "ok",
+   "note": "Review fs-id2109061 (m46498) key D; minimus (smallest) and longus (long) contradict, fs-id1290061.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2925def7eac682a5": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -17912,6 +18009,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "2a9639f7f5a75c90": {
+   "verdict": "ok",
+   "note": "source Critical Thinking model answer verbatim from m46482 solution"
   },
   "2a96d270e7c2e140": {
    "verdict": "ok",
@@ -19373,6 +19474,14 @@
     "result": "agrees"
    }
   },
+  "2e234fe6ea8aa91b": {
+   "verdict": "ok",
+   "note": "RQ fs-id2044616 key B triceps brachii; body fs-id2271811 'The extensors are the triceps brachii and anconeus'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e25abd781b297d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): No damping, raised 5cm (max at t=0 -> cosine), first returns to highest position after one full period T=1/3s -> omega=2*pi/(1/3)=6*pi; y=5cos(6*pi t). Matches CNXML Try It solution.",
@@ -19529,6 +19638,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2e677a2d811132ed": {
+   "verdict": "ok",
+   "note": "CT fs-id2151945, model answer = solution fs-id2717807 verbatim; matches body fs-id2421860"
   },
   "2e68e10ade4d14f3": {
    "verdict": "ok",
@@ -20622,6 +20735,14 @@
    "verdict": "ok",
    "note": "vertices (1,-2),(1,8): center k=3, a=5, a^2=25; foci (1,-10),(1,16): c=13, c^2=169; b^2=169-25=144 -> (y-3)^2/25-(x-1)^2/144=1; matches source Try It 3, verified in Node. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "314b3a23065753e3": {
+   "verdict": "ok",
+   "note": "RQ fs-id2017162, key B 'in the eye socket'; body fs-id2454763 'located inside the eye socket'; options source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3150f10417446562": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20679,6 +20800,14 @@
   "3172f8b428cb8b02": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "31764824a4bea98e": {
+   "verdict": "ok",
+   "note": "RQ fs-id2123552 key C trapezius; stem/options verbatim; figure 1118 posterior view shows rhomboids beside the trapezius",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3178355d02f1f5c6": {
    "verdict": "ok",
@@ -21905,6 +22034,10 @@
     "result": "agrees"
    }
   },
+  "3478a0e294a92adc": {
+   "verdict": "ok",
+   "note": "CT fs-id2413389, model = solution fs-id2405233 verbatim"
+  },
   "3479d817e0cc47f2": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -22475,6 +22608,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "35d539ea5558c5ca": {
+   "verdict": "ok",
+   "note": "RQ7 fs-id3088365 key A both sides; body fs-id2434368",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "adjudicated: source key stands — m46487 says \"A bipennate muscle has fascicles on both sides of the tendon\", the key verbatim; option D adds \"at the opposite angle\", wording the module never states, so it is the source distractor, not a second key."
    }
   },
   "35d88cea9805c343": {
@@ -24835,6 +24977,10 @@
    "verdict": "ok",
    "note": "KC 7 37.2 § body Plasma Membrane Hormone Receptors (fs-idp54512752), m66628 — parent re-read against the module"
   },
+  "3bc3738590b811be": {
+   "verdict": "ok",
+   "note": "CT1 fs-id1999493 model answer = solution fs-id2444227 verbatim"
+  },
   "3bca81de3f073a16": {
    "verdict": "ok",
    "note": "glossary recall: resistance (fs-idm54530672) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -26447,6 +26593,14 @@
     "result": "agrees"
    }
   },
+  "3f8c1448f771d457": {
+   "verdict": "ok",
+   "note": "Review fs-id2365924 key D; fs-id2279191 abductor (moves the bone away from the midline).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3f934f1cc87f20c6": {
    "verdict": "ok",
    "note": "body cloze from § Superantigens and Unregulated Activation of T Cells: \"This can lead to a dangerous decrease in blood pressure, shock, multi-organ failure, and potentially, death.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -27036,6 +27190,14 @@
   },
   "40ddc17efd595415": {
    "verdict": "ok"
+  },
+  "40e5493ab15ef56e": {
+   "verdict": "ok",
+   "note": "author sortbins from image table 1127 (fig-ch11_03_05): Tongue=genioglossus, styloglossus, hyoglossus, palatoglossus; Swallowing and speaking=geniohyoid, stylohyoid, mylohyoid, digastric, omohyoid — read off the image's group rows",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "40e6879c2bdab102": {
    "verdict": "ok",
@@ -29551,6 +29713,14 @@
     "result": "agrees"
    }
   },
+  "46a8f5a82009b4b7": {
+   "verdict": "ok",
+   "note": "RQ3 fs-id2874612 key B decreased; glossary flexion fs-id1255072",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "46b369a74a5f7222": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29965,6 +30135,14 @@
     "result": "agrees"
    }
   },
+  "47dd35cb0b839942": {
+   "verdict": "ok",
+   "note": "glossary recall scalene muscles 'flex, laterally flex, and rotate the head; contribute to deep inhalation' = body fs-id2080091; 'scalenes' from summary fs-id1953872",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "47de71828920d367": {
    "verdict": "ok"
   },
@@ -30295,6 +30473,14 @@
   "48b15b300b10b240": {
    "verdict": "ok",
    "note": "author-built from § Antigen Presentation with MHC II Molecules, Check Your Understanding: \"What are the three kinds of APCs?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "48b33e442fb67093": {
+   "verdict": "ok",
+   "note": "textin 'superior extensor retinaculum' re-read against m46482 glossary/body; accept checked through check-text",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -32303,6 +32489,14 @@
   "4d9b67bd9b5d7bcc": {
    "verdict": "ok",
    "note": "KC 5 23.1 § General Causes and Modes of Transmission of Urogenital Infections, m58917"
+  },
+  "4d9d6025a5cccdb3": {
+   "verdict": "ok",
+   "note": "glossary fusiform fs-id1398144; body fs-id2292670 prints fusiform; accept fusiform muscle|parallel-fusiform (figure label), grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4dab20b3f12435d4": {
    "verdict": "ok",
@@ -36153,6 +36347,14 @@
     "result": "agrees"
    }
   },
+  "5781ff493c1257c8": {
+   "verdict": "ok",
+   "note": "source Review fs-id1469672 keyed B gastrocnemius (fs-id2451156); option a 'soleus' replaced by 'popliteus' (options deviation, erratum 2093, Source note); verify-source-keys reports 1 disclosed correction",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "578460c54e08f689": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -38528,6 +38730,14 @@
   "5d3edf3006787387": {
    "verdict": "ok"
   },
+  "5d40aa5c67a8c07d": {
+   "verdict": "ok",
+   "note": "RQ1 fs-id2595266 key D re-read vs CNXML; options verbatim, source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5d411fb46b581706": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40740,6 +40950,14 @@
     "result": "agrees"
    }
   },
+  "6358578071594ef2": {
+   "verdict": "ok",
+   "note": "RQ fs-id2471871, key C 'postural support' unchanged; option D 'rotating of the vertebral column' replaced by 'elevation of the mandible' (double-key: fs-id2586421 'controls ... rotation of the vertebral column'); options deviation erratum 2092, Source note under item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6358c7ecee0c40f0": {
    "verdict": "ok",
    "note": "Review Question, module m66420 exercise fs-idp82347056. Source solution keys 'D' = the fourth listed option 'tropical wet forests', matching this item's answer exactly — no departure. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -40955,6 +41173,14 @@
   },
   "640af6f5cd149547": {
    "verdict": "ok"
+  },
+  "640b6360789de57c": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2511784 palmaris longus; body fs-id3304716 prints the term; accept '<name> muscle' grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "641279a27120964e": {
    "verdict": "ok",
@@ -42008,6 +42234,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "671f9bb09ce31964": {
+   "verdict": "ok",
+   "note": "source Critical Thinking model answer verbatim from m46482 solution"
   },
   "67228cfeaa7df6a2": {
    "verdict": "ok",
@@ -44287,6 +44517,14 @@
     "result": "agrees"
    }
   },
+  "6d4c906cdf6b16ed": {
+   "verdict": "ok",
+   "note": "glossary recall temporalis 'muscle that retracts the mandible' = body fs-id2101141",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6d4f08ad5cce5687": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -45061,6 +45299,14 @@
   "6f679a34ef46b5e5": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: memory B cell (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6f6c83639c8a78d4": {
+   "verdict": "ok",
+   "note": "Author-built from fs-id1290061: size (maximus, medius, minimus), length (brevis, longus), position relative to the midline (lateralis, medialis), direction of the fibers (rectus, oblique); each item in exactly one bin.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48066,6 +48312,14 @@
     "result": "agrees"
    }
   },
+  "76a3a1a0d7313f85": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch11_09 Muscle column; matches body fs-id2345635/fs-id1983771",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "76a98318d55a41f9": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Fungi, as food, play a role in human nutrition in the form of mushrooms, and also as agents of fermentation in the production of bread, che…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -49341,6 +49595,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7997daf2fef59f11": {
+   "verdict": "ok",
+   "note": "author sortbins from table image; every item re-read against the image group rows and the body; no item fits two bins",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "79984ad73cbcc636": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -50398,6 +50660,14 @@
     "result": "agrees"
    }
   },
+  "7beb707880068009": {
+   "verdict": "ok",
+   "note": "textin 'popliteal fossa' re-read against m46482 glossary/body; accept checked through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7bee5c967bf52b11": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -50429,6 +50699,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "7bf38b92f75cf8a5": {
+   "verdict": "ok",
+   "note": "CT fs-id2480537, model = solution fs-id2282974 verbatim"
   },
   "7bf431dba9852366": {
    "verdict": "ok",
@@ -53932,6 +54206,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "8463d4d27a49c1f6": {
+   "verdict": "ok",
+   "note": "Review fs-id2442596 key A quadratus lumborum; options C/D one-word corrected interior/exterior oblique -> internal/external oblique; body fs-id2738851 and summary place QL in the posterior wall",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "846c2cf176f21f65": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54030,6 +54312,10 @@
   "849a0c98a7315caf": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165135550012, a=5,c=6,beta=35): Area=0.5*5*6*sin(35)=8.6036 -> 8.6. Matches CNXML answer 8.6."
+  },
+  "849ed231a4fcd2ce": {
+   "verdict": "ok",
+   "note": "CT fs-id2196608, solution fs-id2516114 with 'pelvic girdle' corrected to 'pectoral girdle' (parent ruling, Source note after the item; body fs-id1397217); four rubric clauses"
   },
   "849f03b298306980": {
    "verdict": "ok",
@@ -56686,6 +56972,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "8b9f629a237d4b2b": {
+   "verdict": "ok",
+   "note": "RQ fs-id1854434 key B medial epicondyle; table image 1131 origin cells for the superficial anterior flexors",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ba08e5e3ed4bf03": {
    "verdict": "ok",
    "note": "body cloze from § Constructing an Animal Phylogenetic Tree: \"All other Eumetazoa are members of the Bilateria clade.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -58604,6 +58898,14 @@
    "verdict": "ok",
    "note": "selfcheck Pseudomonas skin infections — hot tub rash and otitis externa sentences are two separate sentences, stays selfcheck. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "90a2a13b8b6461de": {
+   "verdict": "ok",
+   "note": "author sortbins from table image; every item re-read against the image group rows and the body; no item fits two bins",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "90a73abc1d2fad5e": {
    "verdict": "ok",
    "note": "author-built from § Natural Killer Cells: \"Natural killer cell with perforin-containing granules.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -58967,6 +59269,14 @@
   "91757ca492b2cf8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "91778bc9f4a1d13d": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch11_01 Agonist/Antagonist columns; each muscle in exactly one column",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59597,6 +59907,14 @@
   "92eaf8c9636ad4a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "92ee71b4bf9a03c9": {
+   "verdict": "ok",
+   "note": "Review fs-id2589732 key D 'diaphragm, scalene' as printed; diaphragm's breathing role in fs-id2974297, scalene from 11.3",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -60716,6 +61034,14 @@
     "result": "agrees"
    }
   },
+  "95a743dce64a57ab": {
+   "verdict": "ok",
+   "note": "glossary belly fs-id2488639; body fs-id2292670 prints belly",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "95b6885cbdaeae96": {
    "verdict": "ok",
    "note": "KC 5 21.2 § glossary cytopathic (fs-idm104588112), m66535 — parent re-read against the module | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -61120,6 +61446,14 @@
   "96a4330396002343": {
    "verdict": "ok"
   },
+  "96ac88bb11377115": {
+   "verdict": "ok",
+   "note": "author sortbins from image table 1125 (fig-ch11_03_02): Brow=occipitofrontalis frontal+occipital bellies, corrugator supercilii; Nose=nasalis; Mouth=zygomaticus major, mentalis, risorius, levator labii superioris, buccinator — each read off the image's group rows",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "96b025a872b3dfce": {
    "verdict": "ok",
    "note": "author-built from § Dosage and Route of Administration: \"For most drugs, the plasma levels achieved by intravenous administration is substantially higher than levels achieved by oral or intramuscu…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -61166,6 +61500,10 @@
   },
   "96cd7d75c5dee834": {
    "verdict": "ok"
+  },
+  "96d23c3cc3b0929d": {
+   "verdict": "ok",
+   "note": "CT3 fs-id2661166 model answer = solution fs-id2168014 verbatim"
   },
   "96d3e1bc7fbdc0ed": {
    "verdict": "ok"
@@ -64861,6 +65199,14 @@
    "verdict": "ok",
    "note": "Re-derived each target: f(x)=log2(x)+2 gives f(1/2)=-1+2=1, f(1)=0+2=2, f(2)=1+2=3, f(4)=2+2=4, f(8)=3+2=5; all five on the 0.5 snap lattice and inside [-2,9]x[-1,7]. Matches source Try It (m49364) 'Sketch a graph of f(x)=log_2(x)+2 alongside its parent function'. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "a059f54cf54e1544": {
+   "verdict": "ok",
+   "note": "source Review MC keyed 'gluteal' matches m46482 solution letter; options in source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a05f543ad8c69549": {
    "verdict": "ok",
    "note": "body cloze from § Sex Determination: \"Sex determination in some crocodiles and turtles, for example, is often dependent on the temperature during critical periods of egg develop…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -67393,6 +67739,10 @@
     "result": "agrees"
    }
   },
+  "a60c101f8c40056a": {
+   "verdict": "ok",
+   "note": "CT2 fs-id2567607 model answer = solution fs-id1481914 verbatim"
+  },
   "a60ce7f3e9a98405": {
    "verdict": "ok",
    "note": "multiplechoice re-read against CNXML/page after checker fixes: ribosomes",
@@ -69207,6 +69557,14 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
   },
+  "aad649c9d2db7a20": {
+   "verdict": "ok",
+   "note": "RQ5 fs-id2361712 key C pectoralis major; body fs-id1290061",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aad8c56874cbd33e": {
    "verdict": "ok",
    "note": "Cloze textin built from the Section Summary sentence 'Saliva contains an enzyme called amylase that breaks down carbohydrates.' Blanks the single content word 'amylase'; accept list adds 'salivary amylase', the compound form the Oral Cavity subsection itself uses for the same enzyme. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -69647,6 +70005,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ac08932af1639581": {
+   "verdict": "ok",
+   "note": "Glossary tri (fs-id2824942) cut from body fs-id2762982 \"…and tri indicates three origins\".",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -70623,6 +70989,14 @@
    "note": "glossary recall: extracellular digestion (fs-idm106365360) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ae69cd9ebe9a3624": {
+   "verdict": "ok",
+   "note": "sortbins from table image 1131 compartment rows; matches body fs-id3304716/fs-id1629728/fs-id2515987 and glossary",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -71779,6 +72153,10 @@
     "result": "agrees"
    }
   },
+  "b16406a428cd4859": {
+   "verdict": "ok",
+   "note": "CT fs-id2133649, model = solution fs-id2325220 verbatim"
+  },
   "b173d22f58251dfd": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: microbiome (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -72195,6 +72573,14 @@
   "b26411f38502e88c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b265fbeef437399d": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1288273 perineum; body fs-id2570487 prints 'The perineum is the diamond-shaped space between the pubic symphysis…, the coccyx…, and the ischial tuberosities'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -75370,6 +75756,14 @@
     "result": "agrees"
    }
   },
+  "ba103a4cef29180a": {
+   "verdict": "ok",
+   "note": "Review fs-id2525672 key C; temporalis named for the temporal bone (bone-naming criterion, fs-id1290061).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba11fb0fb26ded42": {
    "verdict": "ok",
    "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -76512,6 +76906,14 @@
     "result": "agrees"
    }
   },
+  "bcb7c2a21a8e1b09": {
+   "verdict": "ok",
+   "note": "RQ fs-id2261272, key B chewing; body fs-id2101141 'main muscle used for chewing'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bcb9c5cd28d68dd4": {
    "verdict": "ok",
    "note": "body cloze from § Leaf Adaptations: \"Carnivorous plants, such as the Venus flytrap and the pitcher plant ( ), grow in bogs where the soil is low in nitrogen.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -76736,6 +77138,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "bd3c920bede08eec": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2515935, model answer = solution fs-id2612229 verbatim; rubric = its clauses"
   },
   "bd3e00759a6e48bd": {
    "verdict": "ok"
@@ -77268,6 +77674,14 @@
   "be996079e30d3b9d": {
    "verdict": "ok",
    "note": "KC 5 21.4 § Prions, m66540 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "be9b7aa4e89e33df": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1708376 epicranial aponeurosis; body fs-id2361275 prints it with 'or galea aponeurosis' (accept)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79503,6 +79917,14 @@
     "result": "agrees"
    }
   },
+  "c4748e59669e653b": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2723900 sentence 1 'moves the vertebral column'; body table 11.6 prints Vertebral column; accept 'spine' (caption 'lumbar spine') grader-checked",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c474d24c1020c6dd": {
    "verdict": "ok",
    "note": "body selfcheck, IgA location; model traces to fs-id1167658393442 (mucus secretions; also breast milk, tears, saliva) — a list, correctly left selfcheck. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -80818,6 +81240,14 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
   },
+  "c79c043063e794db": {
+   "verdict": "ok",
+   "note": "author sortbins from image table 1128 (fig-ch11_04_06): Bulbospongiosus and Ischiocavernosus under 'Superficial muscles'; External urethral sphincter and External anal sphincter under 'Deep muscles' (read from the 1600 px WebP and PDF p-0451)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c7a03eec692f8802": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81270,6 +81700,14 @@
    "note": "Glossary textin: answer 'homeostasis' matches glossary term; meaning ('dynamic equilibrium maintaining appropriate body functions') is the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c8fc0385974bf1e3": {
+   "verdict": "ok",
+   "note": "RQ fs-id2493246, key B '-glossus'; body fs-id2367016 'word root glossus'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -81784,6 +82222,14 @@
   "ca16f9b5ae1af8c7": {
    "verdict": "ok"
   },
+  "ca18cd009bf01533": {
+   "verdict": "ok",
+   "note": "Review fs-id1383746 key B as printed; body fs-id2429994 calls the linea alba a white fibrous band at the anterior midline (source key defensible as printed)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ca1b51b27c25b5cb": {
    "verdict": "ok",
    "note": "Locally written MC, disclosed in the footer (\"one multiple choice written locally under the second objective, reading the feedback-control table's own electron-transport-chain row (elevated ATP decreases pathway activity, disclosed in the ledger)\"). m66471's Summary of Feedback Controls table, electron transport chain row: effector \"ATP\" -> effect \"decrease\". Confirms answer \"decrease the rate of electron transport\"; re-derived independently from the table before reading the key, and no distractor is supported by that row.",
@@ -82228,6 +82674,14 @@
    "note": "source multiplechoice: exercise fs-idp132626720 (Review Question), source options in source order (wind/disease-causing microbe/temperature/soil particle size), source solution key B = 'disease-causing microbe' — the only living thing among the four options, consistent with the glossary's 'biotic' = living components. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cb02cf77c302e04d": {
+   "verdict": "ok",
+   "note": "textin 'calcaneal tendon' cloze from m46482 fs-id2421915 ('The superficial muscles in the posterior compartment of the leg all insert onto the calcaneal tendon (Achilles tendon)…'); accept Achilles tendon|Achilles checked through check-text",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -82686,6 +83140,14 @@
     "result": "agrees"
    }
   },
+  "cc49b718c149c882": {
+   "verdict": "ok",
+   "note": "author sortbins from table image; every item re-read against the image group rows and the body; no item fits two bins",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc512ba87c077f32": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -82697,6 +83159,14 @@
   "cc552df333260cdc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cc62ca61602418c5": {
+   "verdict": "ok",
+   "note": "Review fs-id4354529, source key A \"action\" kept; source option c \"muscle name\" replaced by \"fascicle arrangement\" per parent ruling (double key: fs-id2279191 \"The location of a muscle’s attachment can also appear in its name\"), Source note under the item, DISCLOSED_DEVIATIONS kind options (erratum 2089, provisional number). Only the key is true on the module. Hint re-pointed to this module's attachment-naming paragraph (checker finding).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83242,6 +83712,14 @@
     "note": "format only: the solver wrote the protein's full name, which contains the key ICP 34.5 verbatim; m58920 prints 'infected cell protein (ICP) 34.5'; the full-name accept fails the four-word cap, ICP34.5 is accepted"
    }
   },
+  "cdcfc8e731a54a80": {
+   "verdict": "ok",
+   "note": "source Review MC keyed 'rectus femoris' matches m46482 solution letter; options in source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cddb6bc12de5d478": {
    "verdict": "ok",
    "note": "Practice, objective 1; Critical Thinking fs-id1167793389907, unkeyed — model answer from §Brightfield Microscopes (coarse/fine knob sentence) and the Micro Connection maintenance list | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -83741,6 +84219,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "cf0b9baf410e6709": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1856351, model answer = solution fs-id2336693 verbatim; rubric = its clauses"
   },
   "cf147b1311ad3684": {
    "verdict": "ok",
@@ -86456,6 +86938,14 @@
    "verdict": "ok",
    "note": "body selfcheck, common bacterium for septic arthritis and osteomyelitis, § Osteomyelitis — S. aureus stated as most common cause in both sections"
   },
+  "d62261a19e7e1e70": {
+   "verdict": "ok",
+   "note": "cloze from fs-id1702969: '...acting as fulcrums'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d624bf5c12f4cbd1": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -86529,6 +87019,14 @@
    "note": "source exercise fs-id1167793478986 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d658cb3a95f6624b": {
+   "verdict": "ok",
+   "note": "Body cloze, fs-id2715245 definitional sentence; only term fits.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -86817,6 +87315,14 @@
   "d6fd30a279176cc4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d702be5b4a91ea71": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2020233 opponens pollicis; body fs-id2345635 prints the term; accept '<name> muscle' grader-checked",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88366,6 +88872,14 @@
   "daeaf37129bae72e": {
    "verdict": "ok",
    "note": "source Multiple Choice fs-id1167661486071, key A (itraconazole) verbatim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "daeb496575c6accb": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch11_08 Position in the thorax column; 5 items, each row's value",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -90686,6 +91200,14 @@
   "e0d09eeed91cf71d": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662665461 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e0d317b59c8836b3": {
+   "verdict": "ok",
+   "note": "sortbins from table image 1129 group rows Axial/Scapular, read off the WebP",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -94704,6 +95226,14 @@
   "eb2650d495dded23": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 766): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "eb2ab049128ae21a": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2584249 intercostal muscles 'muscles that span the spaces between the ribs'; body fs-id2494693 bolds intercostal muscles; accept 'intercostal' grader-checked (intercostals, intercostal muscle)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "eb2b9ca533e5e9e1": {
    "verdict": "ok",
@@ -100454,6 +100984,14 @@
     "result": "agrees"
    }
   },
+  "f944fe91b9185a52": {
+   "verdict": "ok",
+   "note": "source Review MC keyed 'the sartorius' matches m46482 solution letter; options in source order",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f948780936c2fe9e": {
    "verdict": "ok",
    "note": "KC 7 41.3 § Contractile Vacuoles in Microorganisms, m66659 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:991): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
@@ -102417,6 +102955,10 @@
   },
   "fdd5d596569c3448": {
    "verdict": "ok"
+  },
+  "fddd6fe7dd371805": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2279054; model answer = solution fs-id2572688 verbatim; 3 clauses from it."
   },
   "fddfeaaaeb9e78f0": {
    "verdict": "ok",

@@ -837,6 +837,115 @@ re-read against the image before a later chapter reuses it, since 4.4's
 passed twice with the nuclei-in-gaps error. A CNXML paragraph in m46664 (19.2) contradicts itself
 on the source of cardiac calcium; it is noted for that chapter's run.
 
+## Chapter 11 (October 18, 2026)
+
+One wave on the AGENTS.md roster, started on a clean tree after chapter 10
+was committed first (4604857). Six Opus authors launched together, one per
+section, an Opus checker per page as its author reported, one Opus claim pass
+over the six pages, an Opus alt-errata verifier, and the blind solve in a
+fresh Fable subagent with masked pages. Sonnet clerks did the landing page,
+the run facts, the pins, the errata draft, and this history. Authors reported
+Practice items per page of 14 (11.1), 9 (11.2), 14 (11.3), 10 (11.4), 12
+(11.5), and 15 (11.6), 74 in all, 61 of them auto-graded. The chapter's 40
+source exercises (27 Review, 13 Critical Thinking, 0 Interactive Link) all
+reached their pages, split 10, 5, 8, 5, 6, and 6 across the six sections. The
+chapter has no Interactive Link notes at all, so each footer says 0 and 0
+rather than staying silent. Two modules carry a September 8 upstream row
+(11.2's replaced image 1105, whose PDF page shows the old picture, and 11.5's
+"rotests", already "rotates" in the CNXML); neither was logged again. The run
+facts miscounted one table, giving tbl-ch11_08 four body rows where the CNXML
+has six because the PDF splits it across two pages, and the 11.5 author
+caught it.
+
+Part C settled the tables before the wave. The six-column attribute tables
+(Movement, Target, direction, Prime mover, Origin, Insertion) and the Latin-
+roots tables were transcribed only; the grouped tables and the eleven muscle
+tables the book prints as images (1125 to 1135) became sortbins whose bins
+were the table's own group labels, with the image's full-width group rows
+carried into the Markdown as a leading column, the chapter 4 image-table
+form. Part C expected five sortbins on 11.5 and four on 11.6. The checkers
+removed two of them: 11.5's forearm-movement sortbins, because four of its six
+items carried their bin's word (Pronator under Pronation, Supinator under
+Supination), and 11.6's gluteal-region sortbins, because Gluteus medius under
+the Gluteal group and Psoas major under the Iliopsoas group share a root with
+their bin and the bin-word lint, which is word-exact, passes them. Final
+sortbins stand at 1, 1, 2, 1, 4, and 3 across the six pages. 11.2's is
+prose-built because that module has no comparison table. Four of the five
+Review options the run changed are the double-keyed or misspelled kind:
+11.1's "a fixator" (the glossary defines a fixator as a synergist that assists
+an agonist), 11.2's "muscle name" (the module says attachment appears in a
+muscle's name), 11.3's "rotating of the vertebral column" (the erector spinae
+"controls ... rotation"), and 11.4's "interior oblique" and "exterior oblique"
+(misspellings of the internal and external obliques). Each became an options
+deviation with a visible Source note, the key unchanged.
+
+Checkers found 19 defects on lint-clean pages (11.1: 2, 11.2: 2, 11.3: 3,
+11.4: 2, 11.5: 7, 11.6: 3). The classes: a Source note that answered the very
+item it disclosed (11.1); accept gaps for a learner's own correct form (the
+figure's own "Parallel-fusiform", and "opponens pollicis muscle" and "palmaris
+longus muscle", on 11.1 and 11.5); footer claims that were untrue or
+contradicted themselves (11.2's two, 11.4's floor-of-three claim); longdesc
+misreads (11.3's side view is the subject's left, and "clockwise" was false
+for the eye-muscle labels; 11.4 misquoted "Anoccoccygeal"); a recall item
+double-keyed by the page's own table (11.6's tibialis posterior, replaced by
+the calcaneal tendon); the two sortbins giveaways above; a hint that handed
+over the next sortbins' bin and two that pointed at group rows the Markdown
+tables do not have (11.5); a Critical Thinking model answer that kept the
+source's "pelvic girdle" for the pectoral girdle with no disclosure (11.5); a
+doubled period; and an image-table typo kept with no disclosure (11.6). The
+parent ruled each finding before relaying it, and each author applied its own
+checker's fixes.
+
+The claim pass raised 37 findings and the parent accepted 36, each checked
+against the cited module sentence. On 11.1: the Summary's fixator
+"insertion" (origin), abduction in the "sagittal" plane (coronal), "rector"
+(rectus), and the biceps tendons said to connect to the wrong bones. On 11.3:
+the corrugator as "prime mover of the eyebrows", the depressor anguli oris
+row, the pterygoid "posterior (protracts)", the medial pterygoid's insertion,
+the head-mover rows of the tongue and swallowing table, the oblique arrows
+in the eye-muscle figure, and "styloid bone". On 11.4: the caption's
+"medial", "Supination" for the obliques, the quadratus lumborum origin, the
+diaphragm's "ribs 6-12", and the external intercostals' "exhalation". On 11.5:
+the pectoral girdle sentence, the latissimus "inserts into", caption (d), the
+supraspinatus and infraspinatus cells, pronation "at the hinge of the elbow",
+"the supinator is the only one", the anterior forearm origins, the missing
+"carpi", the wrist table's directions, the glossary's palmar interossei
+"abduct", and the pelvic-girdle Critical Thinking answer. On 11.6: the
+gluteus minimus, gracilis, and pectineus rows and glossary entry, the
+glossary's "muscle" for the iliotibial tract and plantar aponeurosis, the
+sartorius under the quadriceps, the tibialis posterior filed superficial, the
+abductor hallucis and plantar interossei cells, and "back of the knee" for the
+hamstrings. The one true distractor was 11.6's "soleus" as an option for the
+largest muscle in the lower leg, since by volume the soleus is larger; it
+became "popliteus" and the source key, gastrocnemius, stands. Rejected as
+conventions or not evidenced: the brachioradialis in the "anterior compartment
+of the arm", and the claim pass's own suspicion lines.
+
+The blind solve agreed 59 of 61 and flagged 2, both adjudicated with the
+source key standing: 11.1's bipennate option D, whose "at the opposite angle"
+the module never states, and 11.5's "axial" alone, where the module says both
+axial and scapular muscles. None disagreed. The verifier confirmed 14 source
+alt defects and declined the rest, confirmed 34 source typos, and found two
+page alt defects the checkers had passed (1110's left column does include a
+muscle, and 1120 omits the two retinacula), which the parent applied. The
+landing page the clerk wrote was checked by the parent, alt verbatim. Chapter
+11 has no external links. Errata 2089-2172 (84: 5 options deviations, 36 claim
+corrections, 14 source alt defects and 11 artwork typos, 18 text typos of
+which 7 are kept as printed).
+
+Lessons folded in: a grouped muscle table is a sortbins only when its group
+labels share no root with its member names (Gluteal/gluteus,
+Iliopsoas/iliacus, Pronation/pronator), which the checkers caught twice and
+the word-exact lint does not; a table image's group rows become a leading
+Markdown column headed with the grouping word; a double-keyed or misspelled
+source Review option is an options deviation whose erratum number the parent
+assigns in the ruling, because the deviation entry cites it and the keys test
+fails on a placeholder; verify-section takes page paths, not a directory; the
+checker brief's ban on reading ledgers is defeated by a grep over the scratch
+directory, so authors' files belong in a subdirectory next run; and the claim
+pass found 36 evidenced errors in one chapter, most in the muscle tables'
+Movement and direction cells and in the glossary's "muscle" for fascia.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, and chapter 10 on October 18, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, and chapters 10 and 11 on October 18, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -230,6 +230,12 @@ run-facts decision never names a shortcode parameter it has not checked
 against `SHORTCODE_PARAMS` *(chapter 4)*. When the claim pass corrects a
 value in such a table, the Markdown table carries the correction with a
 Source note, and the `longdesc` keeps the image's text marked "as printed".
+A table image's full-width group rows (compartments, layers, regions)
+become a LEADING Markdown column headed with the grouping word, its value
+repeated on each row — the source's own grouped CALS tables (11.5's
+"Position in the thorax", "Muscle") use that shape — and the footer says
+so; when the image prints no heading for the column, the author names it
+from the body's word and discloses the choice *(chapter 11)*.
 
 ### 5. External links
 
@@ -277,6 +283,20 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   departure (e.g. "see the figure below, panel a" for a `<link>`).
 - **Figures are described from the drawing, never from the source alt**
   (life-sciences Media), e.g. 1.6's arm arrow is on the woman's LEFT arm.
+- **A grouped muscle table is a `sortbins` only when its group labels share
+  no root with its member names.** "Gluteal group" over three gluteus
+  muscles, "Iliopsoas group" over iliacus and psoas major, and "Pronation"
+  over two pronators are giveaways item by item; the checkers removed two
+  such sortbins Part C had decided, and the bin-word lint matches equal
+  words only, not roots. Check every bin label against every member name
+  before deciding, and transcribe such a table only *(chapter 11)*.
+- **A double-keyed or misspelled source Review option is an `options`
+  deviation whose erratum number the parent assigns IN the ruling**: the
+  `DISCLOSED_DEVIATIONS` entry cites it and the keys test fails on a
+  placeholder, so an author left `0` and another guessed the next number;
+  chapter 11 had four such items (a true distractor on 11.1, 11.2, and
+  11.3, misspelled muscle names on 11.4) and a fifth from the claim pass
+  *(chapter 11)*.
 - **A one-word typo is footer + ledger only**; a claim-level correction gets
   a Source note (core §0 rule 4).
 - **The footer describes a source glyph it may not print.** The Greek-mu

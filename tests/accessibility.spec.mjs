@@ -121,6 +121,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/anatomy-physiology/07-axial-skeleton/03-the-vertebral-column/',
   },
   {
+    name: 'anatomy-physiology section page (muscle tables printed as images transcribed as Markdown tables with a leading group column, several sortbins, a 60-term Key terms block)',
+    path: '/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

@@ -130,6 +130,13 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md',
+    exercise: 'fs-id2761928',
+    kind: 'options',
+    erratum: 2090,
+    reason: 'the source distractor "a fixator" is also true by the module\'s own glossary ("synergist that assists an agonist"); the page replaces it with "a load", the module\'s own lever term for "an object being lifted or any resistance to a movement" (key "a synergist" unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/10-muscle-tissue/06-exercise-and-muscle-performance.md',
     exercise: 'fs-id1285054',
     kind: 'options',
@@ -799,6 +806,34 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'key',
     erratum: 2017,
     reason: 'the source keys B "the manubriosternal joint" for "Which of these joints is classified as a synarthrosis?"; the book\'s own §9.3 module m46381 says "A narrow symphysis is found at the manubriosternal joint" and "a symphysis is functionally classified as an amphiarthrosis", so on the book\'s terms that joint is an amphiarthrosis; the page prints and keys option B as "the first sternocostal joint", which m46381 makes a synchondrosis ("Permanent synchondroses that do not ossify are found at the first sternocostal joint") and "functionally classified as a synarthrosis" (distractors unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/11-the-muscular-system/02-naming-skeletal-muscles.md',
+    exercise: 'fs-id4354529',
+    kind: 'options',
+    erratum: 2089,
+    reason: 'the source distractor "muscle name" is a second correct answer to "The location of a muscle’s insertion and origin can determine ________." — the module\'s own fs-id2279191 says "The location of a muscle’s attachment can also appear in its name" and its summary "The origin and/or insertion can also be features used to name a muscle"; the page prints "fascicle arrangement" in its place (described in §11.1 m46487, never tied to attachment location in m46498; key "action" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/11-the-muscular-system/04-axial-muscles-of-the-abdominal-wall-and-thorax.md',
+    exercise: 'fs-id2442596',
+    kind: 'options',
+    erratum: 2091,
+    reason: 'the source distractors "interior oblique" and "exterior oblique" misspell the muscle names the module m46485 prints throughout as "internal oblique" and "external oblique" ("Which of the following abdominal muscles is not a part of the anterior abdominal wall?"); the page prints the module\'s spellings; key "quadratus lumborum" unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/11-the-muscular-system/03-axial-muscles-of-the-head-neck-and-back.md',
+    exercise: 'fs-id2471871',
+    kind: 'options',
+    erratum: 2092,
+    reason: 'the source distractor "rotating of the vertebral column" is a second correct answer to "What is the function of the erector spinae?" — the module\'s own fs-id2586421 says the erector spinae group "controls flexion, lateral flexion, and rotation of the vertebral column"; the page prints "elevation of the mandible" in its place (the module gives it to the masseter, fs-id2101141, and the temporalis, tbl-ch11_04, never to the erector spinae; key "postural support" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/11-the-muscular-system/06-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs.md',
+    exercise: 'fs-id1469672',
+    kind: 'options',
+    erratum: 2093,
+    reason: 'the source distractor "soleus" is defensible as an answer to "What is the largest muscle in the lower leg?" — the module m46482 never says which leg muscle is largest (fs-id2421915 calls the gastrocnemius only "The most superficial and visible muscle of the calf"), and by volume the soleus is larger; the page prints "popliteus" in its place (one of the "four deep muscles in the posterior compartment of the leg" fs-id2421915 names, never called large; key "gastrocnemius" unchanged)',
   },
 ]);
 

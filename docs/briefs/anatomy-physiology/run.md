@@ -174,6 +174,11 @@ them.
    on the page keys or prints it: 9.3's two terms and 9.7's one were all
    headline exclusions, and both authors had to find more items than Part
    C promised *(chapter 9)*.
+   A table Part C makes a `sortbins` is checked bin by bin against its
+   member names first: a group label that shares a root with its members
+   (Gluteal/gluteus, Iliopsoas/iliacus, Pronation/pronator) is a giveaway
+   the lint does not catch, and the checkers removed two such items on
+   chapter 11; "transcribe only" is the decision for that table.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
@@ -226,7 +231,11 @@ A source notation the house re-sets inside a keyed option or key
 (`Ca<sup>++</sup>` → `Ca²⁺`, 10.1) is a fold in `normalizeText`
 (`tools/lib/openstax-source.mjs`, with a test), never a `key` deviation —
 the keys gate reports it as a key-differs until the fold lands *(chapter
-10)*. A replacement distractor is grepped against the keys of the items above
+10)*. A double-keyed source option is ruled as an `options` deviation with the
+erratum number assigned in the ruling message (the parent keeps a running
+reserved list in PARENT-NOTES; the errata drafter numbers those first):
+an entry with a placeholder number fails the keys test, and two chapter 11
+authors each guessed one. A replacement distractor is grepped against the keys of the items above
 and below it before it is accepted: "fat storage" landed directly above an
 item keyed "fat stores" *(chapter 6; the author caught it)*. The harness
 may refuse an agent's Write of its report file ("Subagents should return
