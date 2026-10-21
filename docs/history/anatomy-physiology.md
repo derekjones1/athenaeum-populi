@@ -994,6 +994,57 @@ The parent read every block before assembly.
   - A solver's "cross-page defect" note is grepped against the errata file
     before anything is filed.
 
+## Knowledge Check 2 — Unit 2, chapters 5–11 (October 20, 2026)
+
+The second Anatomy and Physiology check, run from
+`docs/briefs/anatomy-physiology/kc-run.md`. `knowledge-check-05-11.md`,
+"Knowledge Check: Unit 2 — Chapters 5–11", weight 13; no later chapter
+shifted, since chapter 12 is unauthored. 43 sections, 129 items: 47
+multiplechoice, 37 textin, 42 selfcheck (every one with a rubric), 3
+sortbins.
+
+Run shape: seven Opus authors (one per chapter), seven Opus checkers
+launched as each author reported, three Opus reverse-recall sweeps on the
+finished blocks (A ch5/8/11, B ch6/7, C ch9/10), one Opus second checker in
+two rounds, and a blind Fable solve; the parent read every block.
+
+- **Checker yield (hard/soft):** ch5 0/3, ch6 1/6, ch7 3/2, ch8 2/4, ch9
+  1/7, ch10 2/8, ch11 3/7.
+- **Sweep yield (hard/soft):** A 1/11 (45 items), B 2/14 (36 items), C 1/11
+  (48 items). Sweep C's one hard flag (10.1 excitability) was kept as a
+  distractor with no defining fact.
+- **Second checker:** round 1, 40 read / 36 pass / 4 fail; round 2, 9 read /
+  8 pass / 1 soft (11.5 spread, accepted and ledgered).
+- **Replacements** (13 items stand, from 15 replacement events; 6.7 and 11.5
+  were each replaced twice):
+  - 6.2 selfcheck: bone-count selfcheck replaced by sesamoid bones.
+  - 6.2 MC: long-bone shape-not-size MC replaced by short bones (stability and support).
+  - 6.7 selfcheck: storage-site selfcheck, then the body-systems selfcheck, replaced by calcium abundance, roles and normal blood level.
+  - 7.3 selfcheck: disc-thickness selfcheck replaced by the vertebral-column ligaments.
+  - 7.4 MC: first-ribs-to-manubrium MC replaced by floating-rib costal cartilages.
+  - 8.3 selfcheck: pelvis-immobility selfcheck replaced by the forensic anthropologist's steps.
+  - 9.1 MC: pubic-symphysis MC replaced by the functional classification of fibrous joints.
+  - 9.4 textin: "extrinsic" ligament textin replaced by gout.
+  - 9.7 selfcheck: mesenchyme selfcheck replaced by the limb-bud and ossification timeline.
+  - 10.2 MC: epimysium MC replaced by multiple nuclei and gene copies.
+  - 10.5 MC: two-criteria MC replaced by why FO fibers produce high tension.
+  - 10.7 textin: mitochondria textin replaced by the heart's conduction system.
+  - 11.5: thenar-eminence textin replaced by median nerve, then by a nine-muscles MC (type changed textin to MC, parent-authorized).
+- **Blind solve:** 87/87 agree, 0 disagree, 0 flagged, 0 unrecognized,
+  0 missing, 0 unanswered, read against the 43 masked section pages. Errata:
+  none filed; one "Reviewed and not errata" note in
+  `docs/openstax-errata.md` (§9.7 "twelfth week of embryonic development"
+  against §8.5 "twelfth fetal week", the book's loose generic usage).
+- **Lessons** (the last five bullets of `kc-run.md` §0):
+  - Grep the page description and objective headings first, in the order description, objective headings, Practice stems, options, hints, rubrics, sortbins, body self-checks.
+  - Read each finished block against the other finished blocks; Unit 2 had three cross-chapter twins and one stem printing another block's key.
+  - A replacement may change type when the section page leaves no clean key of that type (11.5), authorized by the parent and recorded in the ledger.
+  - Trial-assemble in the scratchpad once the blocks are checker-clean and before the second checker, to see leak candidates and key-position spread cheaply.
+  - The sweeps earned their wave here: 4 hard flags on 129 items, all missed by the per-chapter checkers.
+- **Costs:** authors 177–325k tokens including fix rounds, checkers
+  123–209k, sweeps 156–182k, second checker 268k over two rounds, solver
+  127k, close-out clerk 74k; about 3 h wall.
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

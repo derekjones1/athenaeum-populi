@@ -346,6 +346,10 @@ Unit 1 landed October 14, 2026: `knowledge-check-01-04.md`, 72 items over 24
 sections, chapter 5 shifted to weight 6. The run is recorded in
 `docs/history/anatomy-physiology.md`.
 
+Unit 2 landed October 20, 2026: `knowledge-check-05-11.md`, 129 items over 43
+sections, weight 13; no chapter shifted (chapter 12 is not yet authored). The
+run is recorded in `docs/history/anatomy-physiology.md`.
+
 A chapter authored before the previous unit's check exists takes the next
 sequential weight (`npm run validate` requires strictly sequential weights
 at the book root) and shifts +1 when that check lands.

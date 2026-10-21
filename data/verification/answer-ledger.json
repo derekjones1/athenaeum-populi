@@ -508,6 +508,10 @@
     "result": "agrees"
    }
   },
+  "01234d96f0def2a2": {
+   "verdict": "ok",
+   "note": "KC 2 6.5 § body introduction (fs-id1236995), m46342"
+  },
   "0126adff95a31dfc": {
    "verdict": "ok",
    "note": "Inverse annuity: goal=10000,r=1+0.042/12,n=24; solved a1=goal*(1-r)/(1-r^n)=400.14 (node), rounds to nearest dollar 400; matches CNXML fs-id1165135191500 solution ($400 per month)."
@@ -954,6 +958,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
+  "02206879ae3961e5": {
+   "verdict": "ok",
+   "note": "KC 2 10.8 § body introduction, single-unit paragraph (fs-id1233172) and varicosity paragraph (fs-id2080149), m46478",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -2241,6 +2253,14 @@
     "result": "agrees"
    }
   },
+  "0504b4f98ec46df2": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § Ulna (fs-id1349886), paragraph fs-id1483561, m46368",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0504f2bf9a7b6058": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -2902,6 +2922,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "06a03dab731aa85c": {
+   "verdict": "ok",
+   "note": "KC 2 8.1 § body section introduction (fs-id1841505), m46374"
+  },
   "06a68d47e06e8c20": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3133,6 +3157,14 @@
   "070fc023f05d4c3d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0710eaeb45c5bd97": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Muscles That Move the Forearm, m46495",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -4549,6 +4581,14 @@
   "0a832f2311ee0ddc": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp124184832 (what are essential nutrients): model answer is the source solution verbatim; checkpoints decompose its two clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "0a83f4dc565c93ba": {
+   "verdict": "ok",
+   "note": "KC 2 10.9 § body introduction, development paragraph (fs-id1959103); distractors fs-id1605365, fs-id2329008, m46407",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0a88146416d8901a": {
    "verdict": "ok"
@@ -6340,6 +6380,10 @@
     "result": "agrees"
    }
   },
+  "0ec49b55c037fc60": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Muscles That Move the Humerus, m46495"
+  },
   "0ecb483c2c51b624": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6625,6 +6669,10 @@
   "0f58f1fae20da418": {
    "verdict": "ok",
    "note": "CYU body selfcheck, § Preparing Specimens for Electron Microscopy — model joins the TEM ethanol/resin sentence with the SEM critical-point-drying/sputter-coating sentences."
+  },
+  "0f5b37950f58253c": {
+   "verdict": "ok",
+   "note": "KC 2 7.5 § body Development of the Vertebral Column and Thoracic cage (fs-id2662269), Homeostatic Imbalances: Craniosynostosis (fs-id2578821), paragraphs fs-id2339105 and fs-id2080729, m46348"
   },
   "0f68102bf2f0996f": {
    "verdict": "ok",
@@ -7072,6 +7120,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "1075f32279d30eb6": {
+   "verdict": "ok",
+   "note": "KC 2 6.7 § body introduction, hypocalcemia paragraph (fs-id1858508), m46295"
   },
   "10872ac497cd37d6": {
    "verdict": "ok",
@@ -11671,6 +11723,10 @@
     "result": "agrees"
    }
   },
+  "1af319c432f5b9d5": {
+   "verdict": "ok",
+   "note": "KC 2 5.2 § Hair, m46062"
+  },
   "1af5dc0a9ae68792": {
    "verdict": "ok",
    "note": "Recall from glossary term 'hypotonic' (fs-id1395502). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -11726,6 +11782,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "1b2224bff595f2bc": {
+   "verdict": "ok",
+   "note": "KC 2 9.6 § Temporomandibular Joint, m46377"
   },
   "1b28efb035054964": {
    "verdict": "ok",
@@ -11975,6 +12035,14 @@
    "note": "source exercise fs-idp115912912 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1baf9c7910a5cfe1": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § Patterns of Fascicle Organization, m46487",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -13943,6 +14011,14 @@
     "result": "agrees"
    }
   },
+  "20226a34fc51e66d": {
+   "verdict": "ok",
+   "note": "KC 2 9.6 § Shoulder Joint, m46377",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2025ba1e55a25823": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -15190,6 +15266,14 @@
     "result": "agrees"
    }
   },
+  "2375a46fcba03baa": {
+   "verdict": "ok",
+   "note": "KC 2 8.5 § Limb Growth (fs-id1864956), paragraph fs-id1898814, m46376",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "237e2e183f777155": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -16412,6 +16496,14 @@
     "result": "agrees"
    }
   },
+  "265433b223b0409d": {
+   "verdict": "ok",
+   "note": "KC 2 6.3 § body Compact and Spongy Bone (fs-id1510727), Paget's disease box (fs-id1614462), paragraph fs-id1282000, m46281",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "266b754ddab53470": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16931,6 +17023,14 @@
   "27acfd273079c622": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "27ad6a0cb9b82f64": {
+   "verdict": "ok",
+   "note": "KC 2 6.5 § body Types of Fractures (fs-id1137254), table tbl-ch06_04 Transverse row, m46342",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -17658,6 +17758,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2999ffb4a7e305d0": {
+   "verdict": "ok",
+   "note": "KC 2 5.3 § Protection, m46064"
   },
   "299d4d65454271f4": {
    "verdict": "ok",
@@ -18915,6 +19019,14 @@
     "result": "agrees"
    }
   },
+  "2cd79ca5011f102c": {
+   "verdict": "ok",
+   "note": "KC 2 5.1 § Papillary Layer, m46060",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2cd8b658e903c84e": {
    "verdict": "ok",
    "note": "key-term recall: cementum; printed in § Anatomy and Normal Microbiota of the Oral Cavity: \"The root of the tooth and some of the crown are covered with cementum , which works with the periodontal ligament to anchor the tooth in pl…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -19667,6 +19779,14 @@
     "result": "agrees"
    }
   },
+  "2e7e63dad4ccc9e5": {
+   "verdict": "ok",
+   "note": "KC 2 11.4 § The Intercostal Muscles, m46485",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e8c20c6472ef6b7": {
    "verdict": "ok",
    "note": "author sortbins: epidermis items fs-id1511323 (keratinized stratified squamous; four or five layers), fs-id1059498 (Merkel cells, melanocytes in stratum basale); dermis items fs-id1146438 (hair follicles, sweat glands; elastin/collagenous mesh by fibroblasts), fs-id1198448 (Meissner corpuscles)",
@@ -20159,6 +20279,10 @@
     "result": "agrees"
    }
   },
+  "2f98309610bf9b03": {
+   "verdict": "ok",
+   "note": "KC 2 10.2 § The Neuromuscular Junction (fs-id1990056), paragraph fs-id1854958, m46476"
+  },
   "2f9e3615b077cb66": {
    "verdict": "ok",
    "note": "33.1 CT selfcheck; Sep 23 2026 close-out: hint replaced with a location (Energy Requirements Related to Body Size subsection and the mouse-and-elephant photos); model answer, rubric, and hint re-read against the module"
@@ -20257,6 +20381,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "2fd9d191e6880e69": {
+   "verdict": "ok",
+   "note": "KC 2 11.4 § Muscles of the Pelvic Floor and Perineum, m46485"
   },
   "2fe434de041391fa": {
    "verdict": "ok",
@@ -22851,6 +22979,14 @@
     "result": "agrees"
    }
   },
+  "366020e010348a46": {
+   "verdict": "ok",
+   "note": "KC 2 11.3 § Muscles of the Posterior Neck and the Back, m46484",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3665a169ce7d0f1c": {
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Without rotating axes, identify the conic for $10x^2-9xy+4y^ | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -22890,6 +23026,14 @@
   "368609881e2539df": {
    "verdict": "ok",
    "note": "body cloze from § Bacteriostatic Versus Bactericidal: \"Regardless of the immune status of the patient, life-threatening infections such as acute endocarditis require the use of a bactericidal dr…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "368fef50f565525b": {
+   "verdict": "ok",
+   "note": "KC 2 11.6 § Muscles That Move the Feet and Toes, m46482",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24175,6 +24319,10 @@
     "result": "agrees"
    }
   },
+  "39dad96a1ee75c05": {
+   "verdict": "ok",
+   "note": "KC 2 9.1 § Diarthrosis, m46383"
+  },
   "39dcd5bd80b1f554": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -25267,6 +25415,14 @@
   "3c85dbff82c196a7": {
    "verdict": "ok"
   },
+  "3c88f45c9dbe2ec4": {
+   "verdict": "ok",
+   "note": "KC 2 5.1 § Stratum Lucidum, m46060",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3c907efc8b81f381": {
    "verdict": "ok",
    "note": "KC 2 8.3 § The Calvin Cycle, m66475 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -25334,6 +25490,10 @@
   "3cb7e7a1e3547dda": {
    "verdict": "ok",
    "note": "a1=2, a_n=2a_(n-1)+1 for n=2..5, computed by loop: 2,5,11,23,47 (CNXML Try It ti_11_01_07). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "3cbcb2f6c2170165": {
+   "verdict": "ok",
+   "note": "KC 2 10.5 § body introduction, speed and metabolism paragraph (fs-id1905669), m46480"
   },
   "3cbe5dba45b5237d": {
    "verdict": "ok",
@@ -25686,6 +25846,10 @@
     "result": "agrees"
    }
   },
+  "3d9b456c0b5623a7": {
+   "verdict": "ok",
+   "note": "KC 2 8.3 § Comparison of the Female and Male Pelvis (fs-id1477613), Career Connection box (fs-id1905932), paragraph fs-id2336294, m46375"
+  },
   "3d9c43c0ef69e647": {
    "verdict": "ok",
    "note": "Source FIB fs-id1167663591185, KEY 'transposon or transposable element' -> answer 'transposon', accept='transposable element' per brief, plus (checker D5) 'jumping gene' — the module's own body synonym ('jumping genes'); verified with check-text.mjs that the singular accept member also grades the plural correct (fold is one-directional, so only the singular is listed, matching the lint's duplicate-plural rule). Hint reworded (checker verify-section finding) to stop printing 'jumping gene' verbatim as a retype hazard. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -25832,6 +25996,14 @@
    "note": "Visual Connection part 1 (fs-idp7053584): tetracycline blocks the A site, which is where an incoming tRNA binds; matches source solution 'Tetracycline: a' = tRNA binding to the ribosome. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3e00c4671ba275c0": {
+   "verdict": "ok",
+   "note": "KC 2 6.6 § body Hormones That Influence Osteoblasts and/or Maintain the Matrix (fs-id969608), paragraph fs-id1999803, m46305",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -26501,6 +26673,14 @@
     "result": "agrees"
    }
   },
+  "3f4bcfd6fb06ce54": {
+   "verdict": "ok",
+   "note": "KC 2 5.4 § Scars and Keloids, m46066",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3f4cb256f941ae86": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -27064,6 +27244,14 @@
   "4090a23e285c43d0": {
    "verdict": "ok",
    "note": "x - 2y = 4 solves to y = 0.5x - 2, with intercepts (4,0) and (0,-2); option 1 draws slope 0.5 intercept -2 and marks both. Option 0 flips the slope sign to cross at (-4,0); option 2 swaps the intercepts to (-2,0) and (0,4). Rendered and inspected."
+  },
+  "4090aa185d2c05ae": {
+   "verdict": "ok",
+   "note": "KC 2 7.5 § body Development of the Vertebral Column and Thoracic cage (fs-id2662269), paragraph fs-id1652582, m46348",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4092c677a109631d": {
    "verdict": "ok",
@@ -28303,6 +28491,14 @@
     "result": "agrees"
    }
   },
+  "4380a106e01af38b": {
+   "verdict": "ok",
+   "note": "KC 2 11.3 § Muscles That Create Facial Expression, m46484",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4385e074c973bce6": {
    "verdict": "ok",
    "note": "source exercise fs-idm78036128 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -29332,6 +29528,10 @@
     "result": "agrees"
    }
   },
+  "45ebf2c1551c8cf6": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § Interactions of Skeletal Muscles in the Body, m46487"
+  },
   "45f16e620762c635": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29935,6 +30135,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4755f0e48e243dcd": {
+   "verdict": "ok",
+   "note": "KC 2 9.5 § Superior Rotation and Inferior Rotation, m46398"
   },
   "475afbfbe8de300d": {
    "verdict": "ok"
@@ -31008,6 +31212,14 @@
     "result": "agrees"
    }
   },
+  "4a0efe79b78af848": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § Humerus (fs-id1424173), paragraph fs-id2444175, m46368",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4a1097d2d19de6ee": {
    "verdict": "ok",
    "note": "body cloze from § Essential Nutrients: \"The omega-3 alpha-linolenic acid and the omega-6 linoleic acid are essential fatty acids needed to make some membrane phospholipids.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -31507,6 +31719,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "4b594cad7b285d2a": {
+   "verdict": "ok",
+   "note": "KC 2 6.1 § body Support, Movement, and Protection (fs-id1828191), paragraph fs-id1082253, m46341"
   },
   "4b5a3d700579d800": {
    "verdict": "ok",
@@ -32300,6 +32516,14 @@
     "result": "agrees"
    }
   },
+  "4d0f37479c3eb08c": {
+   "verdict": "ok",
+   "note": "KC 2 10.1 § body introduction, excitability paragraph (fs-id1840923), m46473",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4d0f87ea6d0c9d30": {
    "verdict": "ok",
    "note": "TI6a: f(x)=x^3-3x, f(1)=1-3=-2 by direct substitution. Matches source Try It solution's first value (-2). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -32735,6 +32959,14 @@
   "4e402e35b5770b25": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4e40825acbf62c99": {
+   "verdict": "ok",
+   "note": "KC 2 10.9 § body introduction, innervation paragraph (fs-id1605365); distractors fs-id1959103, m46407",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33622,11 +33854,23 @@
     "result": "agrees"
    }
   },
+  "50638b50bdfa5541": {
+   "verdict": "ok",
+   "note": "KC 2 11.3 § Muscles That Move the Tongue, m46484"
+  },
   "5068504007e51845": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "507c252bbb527e82": {
+   "verdict": "ok",
+   "note": "KC 2 11.4 § Muscles of the Abdomen, m46485",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -34420,6 +34664,14 @@
     "result": "agrees"
    }
   },
+  "52a33403aa1ccaac": {
+   "verdict": "ok",
+   "note": "KC 2 10.7 § body introduction, plateau paragraph (fs-id1285162); distractors fs-id1389642, fs-id2254456, m46404",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "52a7e69a83fb2f7b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34840,6 +35092,14 @@
   "53c0c5158f2e4471": {
    "verdict": "ok",
    "note": "body cloze from § Indirect Fluorescent Antibody Techniques: \"For example, an IFA test for the diagnosis of syphilis uses T. pallidum cells isolated from a lab animal (the bacteria cannot be grown on l…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "53c439312b99341c": {
+   "verdict": "ok",
+   "note": "KC 2 10.6 § Resistance Exercise (fs-id2250448), paragraph fs-id1849854; distractors fs-id1849854, fs-id2364284, fs-id2264056, m46438",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35721,6 +35981,14 @@
     "result": "agrees"
    }
   },
+  "55dbdefa724ef2c6": {
+   "verdict": "ok",
+   "note": "KC 2 8.3 § Ilium (fs-id1399017), paragraph fs-id1950495, m46375",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "55e58dd20ed0fd04": {
    "verdict": "ok"
   },
@@ -35880,6 +36148,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "56408de024a93d78": {
+   "verdict": "ok",
+   "note": "KC 2 6.7 § body introduction, calcium paragraph (fs-id1286750), m46295"
   },
   "56440204286fea39": {
    "verdict": "ok",
@@ -36945,6 +37217,14 @@
    "verdict": "ok",
    "note": "parent: r=2sqrt3*2=4sqrt3, theta=116+82=198; rect product cross-checked numerically | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "58e651df251f494e": {
+   "verdict": "ok",
+   "note": "KC 2 9.5 § Flexion and Extension, m46398",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "58e77acb4b5152d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -37208,6 +37488,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "597478758408af84": {
+   "verdict": "ok",
+   "note": "KC 2 7.3 § body Ligaments of the Vertebral Column (fs-id1471237), paragraphs fs-id2298074, fs-id1367709, fs-id1854748 and fs-id1859011, m46352"
   },
   "597a7205bbeef81b": {
    "verdict": "ok",
@@ -39492,6 +39776,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): y=3sin(3x) first max for x>0: 3x=pi/2 -> x=pi/6, y=3, matching the source's own five-key-point table (pi/6, 3).",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "5f0482c03a503a63": {
+   "verdict": "ok",
+   "note": "KC 2 6.6 § body Other Nutrients (fs-id1283296), paragraph fs-id1091621, m46305",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -42685,6 +42977,14 @@
    "verdict": "ok",
    "note": "KC 5 29.5 § body The Evolution of Flight in Birds (fs-idm634017), m66592 — parent re-read against the module"
   },
+  "68377b9d5039e045": {
+   "verdict": "ok",
+   "note": "KC 2 9.1 § body introduction, first paragraph, m46383",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "683d510bc8d429f9": {
    "verdict": "ok",
    "note": "CT fs-id2202569 solution verbatim"
@@ -43203,6 +43503,14 @@
     "result": "agrees"
    }
   },
+  "69aa3fa1f0fac08b": {
+   "verdict": "ok",
+   "note": "KC 2 8.1 § Clavicle (fs-id1421107), paragraph fs-id2241809, m46374",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "69b0a682dd90e80a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -43549,6 +43857,14 @@
    "note": "author-built from § Effects of Mutations on DNA Sequence, Check Your Understanding: \"What type of a mutation occurs when a gene has two fewer nucleotides in its sequence?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6a81c89d4f00c01d": {
+   "verdict": "ok",
+   "note": "KC 2 5.2 § Nails, m46062",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -44123,6 +44439,14 @@
     "result": "agrees"
    }
   },
+  "6c525b2985752c10": {
+   "verdict": "ok",
+   "note": "KC 2 9.5 § Dorsiflexion and Plantar Flexion, m46398",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6c56c231bdb1d5ba": {
    "verdict": "ok",
    "note": "KC 4 17.3 § Hematopoiesis, m58879",
@@ -44675,6 +44999,14 @@
     "result": "agrees"
    }
   },
+  "6da14f07b7ef0139": {
+   "verdict": "ok",
+   "note": "KC 2 10.3 § Muscle Strength (fs-id2094906), Disorders of the Muscular System box (fs-id1409378), paragraph fs-id1932393, m46447",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6da7c96cfe1eb194": {
    "verdict": "ok",
    "note": "Review Question fs-idp83445088, solution A = cell body. Keyed as source. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -44757,6 +45089,14 @@
   "6dd98bddb4b8c348": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Others modify proteins and induce them to change their location in the cell.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6ddb981bb29ddc1f": {
+   "verdict": "ok",
+   "note": "KC 2 7.2 § glossary lingula (fs-id2203574), body Mandible (fs-id1368493), m46355",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45801,6 +46141,14 @@
    "verdict": "ok",
    "note": "Visual Connection selfcheck, m66628 exercise fs-idp147588368 (identical note/exercise wording); model answer is the source solution verbatim ('Proteins unfold, or denature, at higher temperatures.'). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "70a7aeea78e195ed": {
+   "verdict": "ok",
+   "note": "KC 2 7.4 § body Rib Classifications (fs-id2339576), paragraph fs-id1879764, m46350",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "70a88b4afdc9663c": {
    "verdict": "ok",
    "note": "m66518 Critical Thinking fs-idp6173936; model answer is the source solution verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -46076,6 +46424,14 @@
     "result": "agrees"
    }
   },
+  "71432ea79500a065": {
+   "verdict": "ok",
+   "note": "KC 2 6.5 § body Bone Repair (fs-id1286916), paragraph fs-id691880, m46342",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7145e9917ad8319a": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -46275,6 +46631,14 @@
    "note": "KC 7 39.2 § body Gas Pressure and Respiration (fs-idm84147776), m66646 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "71add0896a3107d8": {
+   "verdict": "ok",
+   "note": "KC 2 7.4 § body Sternum (fs-id2094432), paragraph fs-id1989589, m46350",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -47148,6 +47512,14 @@
     "result": "agrees"
    }
   },
+  "73ee2845e978f2b4": {
+   "verdict": "ok",
+   "note": "KC 2 8.4 § Patella (fs-id1632817), Runner’s Knee box (fs-id2640204), paragraph fs-id2339721, m46364",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "73f018238f98ef6e": {
    "verdict": "ok",
    "note": "KC 6 31.3 § Nitrogen Fixation: Root and Bacteria Interactions, m66605 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-30-32.md:238): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
@@ -47458,6 +47830,14 @@
    "note": "Review Question fs-id3095300: solution A. Section text states viruses 'are not made of cells'; it separately states viruses CAN reproduce (by hijacking a host cell), so option D is not also true. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "74aada765bc99213": {
+   "verdict": "ok",
+   "note": "KC 2 5.4 § Eczema, m46066",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -48219,6 +48599,14 @@
   },
   "763698b5110f5858": {
    "verdict": "ok"
+  },
+  "763eb2a6f8edeca3": {
+   "verdict": "ok",
+   "note": "KC 2 8.4 § Femur (fs-id2661070), paragraph fs-id1387348, m46364",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "764b5998c0b621f6": {
    "verdict": "ok",
@@ -49588,6 +49976,14 @@
    "note": "m66441 Summary: 'Phospholipids comprise the membrane's matrix.' textin answer 'matrix' matches exactly; term not present in the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "799203be13e9c234": {
+   "verdict": "ok",
+   "note": "KC 2 10.2 § Excitation-Contraction Coupling (fs-id1909043), paragraph fs-id1374666, m46476",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -51507,6 +51903,14 @@
    "verdict": "ok",
    "note": "Model answer names the three test types the diagnosis paragraph gives, in the module's own order: serological antibody test confirmed by Western blot/PCR; fourth-generation antibody-antigen test; nucleic acid test (NAT). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "7d9f7cafe8ffc17b": {
+   "verdict": "ok",
+   "note": "KC 2 6.3 § glossary endosteum (fs-id1481378), body Gross Anatomy of Bone (fs-id824226), paragraph fs-id942186, m46281",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7da04dceaa6b1778": {
    "verdict": "ok",
    "note": "Glossary recall (fs-id2349106 autoinducer): prompt paraphrases the module's own glossary meaning; answer is the term; accept covers the plural used throughout the section prose.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -51633,6 +52037,10 @@
   "7df70284e0f41b05": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "7df77873dd106a52": {
+   "verdict": "ok",
+   "note": "KC 2 10.8 § body introduction, single-unit paragraph (fs-id1233172), m46478"
   },
   "7dfb0e5fd5f29ea5": {
    "verdict": "ok",
@@ -54091,6 +54499,10 @@
     "result": "agrees"
    }
   },
+  "8438cf4c0366c9c4": {
+   "verdict": "ok",
+   "note": "KC 2 5.4 § Basal Cell Carcinoma, m46066"
+  },
   "843bf4aed0b85209": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54289,6 +54701,10 @@
   "8494fe8c6d264706": {
    "verdict": "ok",
    "note": "In-page Try It (ti_09_07_01) recast as MC. Computed AB and BA in exact rational arithmetic (Node): both equal I. Matches source solution."
+  },
+  "8496ab317294d0b0": {
+   "verdict": "ok",
+   "note": "KC 2 7.2 § body Palatine Bone (fs-id1372192), Homeostatic Imbalances: Cleft Lip and Cleft Palate (fs-id2023065), paragraph fs-id1547568, m46355"
   },
   "8496b476c57098cf": {
    "verdict": "ok",
@@ -54617,6 +55033,14 @@
     "result": "agrees"
    }
   },
+  "853d0b6206f55b59": {
+   "verdict": "ok",
+   "note": "KC 2 9.7 § body introduction, skull-base paragraph, m46388",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "853fa823601bcc0f": {
    "verdict": "ok",
    "note": "Practice selfcheck, source fs-id1167661760195 (SA, unkeyed), three forms of plague and how contracted — model answer built from the three plague-form paragraphs | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -54672,6 +55096,14 @@
   "85615b6ad931438d": {
    "verdict": "ok",
    "note": "selfcheck fs-idm89669536: model answer is the source solution verbatim (systemic circulation), decomposed into 4 checkpoints, no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "85675bb94559ef18": {
+   "verdict": "ok",
+   "note": "KC 2 9.7 § body introduction, limb paragraph, m46388",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "856a36ad822f9e44": {
    "verdict": "ok",
@@ -54846,6 +55278,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "85e73134a4122a3c": {
+   "verdict": "ok",
+   "note": "KC 2 6.6 § body Aging and the Skeletal System box on osteoporosis (fs-id1299380), paragraph fs-id1057151, m46305"
   },
   "85e7d6da0d9d068e": {
    "verdict": "ok",
@@ -55474,6 +55910,10 @@
   "87a186cc3b125c54": {
    "verdict": "ok",
    "note": "Arithmetic series a1=13,d=8,an=69,n=8; Sn=328 (node); matches CNXML ti_11_04_03."
+  },
+  "87af09011c371fd5": {
+   "verdict": "ok",
+   "note": "KC 2 11.2 § module body (no subsections), m46498"
   },
   "87b162d116d04683": {
    "verdict": "ok",
@@ -56318,6 +56758,14 @@
     "result": "agrees"
    }
   },
+  "89d718b2917eef33": {
+   "verdict": "ok",
+   "note": "KC 2 6.7 § body calcitonin paragraph (fs-id1569683), m46295",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "89dad1b3b6dfbff6": {
    "verdict": "ok",
    "note": "The figure is an ellipse centered at (-2,1) with rx=1, ry=2 (confirmed from cx=86,cy=86,rx=20,ry=40 on the given axes); a vertical line at x=-2 hits it at y=-1 and y=3, so it fails the vertical line test and is 'not a function', matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -56341,6 +56789,10 @@
   "89e8ceb2578ea45a": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
+  },
+  "89e8d7822b718717": {
+   "verdict": "ok",
+   "note": "KC 2 8.2 § Carpal Bones (fs-id2444484), paragraph fs-id2329218, m46368"
   },
   "89f1cfc6067e2fa0": {
    "verdict": "ok",
@@ -59462,6 +59914,10 @@
     "result": "agrees"
    }
   },
+  "91f1f4351287ef60": {
+   "verdict": "ok",
+   "note": "KC 2 11.6 § Introduction (fs-id2797217) and Muscles of the Thigh, m46482"
+  },
   "91f47ffeebd03780": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -59782,6 +60238,14 @@
    "note": "source exercise fs-idp115289728 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "92954b887ae0eabc": {
+   "verdict": "ok",
+   "note": "KC 2 11.5 § Summary (Chapter Review), m46495",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -60464,6 +60928,10 @@
   "946bef9f0859e9de": {
    "verdict": "ok",
    "note": "body selfcheck, mouth-inhospitable factors; model assembles the chewing/saliva-mixing, lysozyme, and immunoglobulin/phagocytic-cell sentences — three sentences, correctly a selfcheck not graded | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "946fd3eaa383b076": {
+   "verdict": "ok",
+   "note": "KC 2 10.7 § body introduction, pacemaker paragraph (fs-id1853723), m46404"
   },
   "946ffbd7c5f5cd7a": {
    "verdict": "ok",
@@ -61767,6 +62235,14 @@
     "result": "agrees"
    }
   },
+  "97743b47716eadde": {
+   "verdict": "ok",
+   "note": "KC 2 11.2 § module body (no subsections), m46498",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "97764e7ae8cf84fa": {
    "verdict": "ok",
    "note": "KC 3 17.1 § Reproductive Cloning, m66511 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -62095,6 +62571,10 @@
    "verdict": "ok",
    "note": "CNXML eip-50/eip-756 solution transcribed verbatim as model answer. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "9859d032eca5fbc3": {
+   "verdict": "ok",
+   "note": "KC 2 10.9 § Career Connection Physical Therapist box (fs-id2148167), paragraph fs-id1645648, m46407"
+  },
   "986b58e249c92a13": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -62182,6 +62662,14 @@
   "989dec7e1cd706ad": {
    "verdict": "ok",
    "note": "glossary recall: ionic bond (fs-id1890738) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "98a1c916a63142dd": {
+   "verdict": "ok",
+   "note": "KC 2 10.3 § ATP and Muscle Contraction (fs-id1582849), paragraph fs-id1236880 and cross-bridge figure caption (e); distractors fs-id2292610, fs-id1471902, fs-id2004997, m46447",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63751,6 +64239,14 @@
    "verdict": "ok",
    "note": "Section Exercises Algebraic #11 (fs-id1165137823124), system {3x-4y+2z=-15;2x+4y+z=16;2x+3y+5z=20}. Independently solved by elimination and confirmed via node that (-1,4,2) satisfies all three equations exactly. Matches CNXML solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "9cbfddf9a1b624ea": {
+   "verdict": "ok",
+   "note": "KC 2 6.4 § body Intramembranous Ossification (fs-id919994), paragraph fs-id1987349, m46301",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9cc26ceb0fa57832": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): Try It ti_07_01_05 (CNXML source): cos(t)/(1+sin t) = (1-sin t)/cos t, proved by multiplying by (1-sin t)/(1-sin t) and using 1-sin^2t=cos^2t; confirmed numerically at t=1 (0.2934079930260234 both sides). Distractors (1+sin t)/cos t, (sin t-1)/cos t, (1-sin t)/sin t all confirmed numerically distinct.",
@@ -64123,6 +64619,14 @@
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
   },
+  "9dacfe5417f95fb2": {
+   "verdict": "ok",
+   "note": "KC 2 7.1 § glossary ear ossicles (fs-id2573592), body The Axial Skeleton (fs-id2228791), m46344",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9dad63d8f2e7ed89": {
    "verdict": "ok",
    "note": "body CYU, unmatched; module's PAMP bullet list has 5 items, question asks for 4 — no single-answer graded form fits a 'name N of M' list, stays selfcheck; model answer lists all 5 verbatim from the module's bulleted list. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -64288,6 +64792,14 @@
   "9e09c7a1bc0bd7dd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9e0ce4244b8ecaa3": {
+   "verdict": "ok",
+   "note": "KC 2 5.2 § Sweat Glands, m46062",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -64550,6 +65062,10 @@
   "9ebe72d9ac5ff453": {
    "verdict": "ok",
    "note": "m66373 solution fs-id1404963/fs-id1967384 ('Why is it advantageous for the cell membrane to be fluid...'): model answer verbatim match. Three CHECKS clauses restate flexibility, motion of membrane components, and requirement for membrane transport — all in the solution text. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "9ec0161fb7bfbc85": {
+   "verdict": "ok",
+   "note": "KC 2 5.1 § Pigmentation, m46060"
   },
   "9ecd4a317c35acb2": {
    "verdict": "ok"
@@ -66211,6 +66727,10 @@
     "result": "agrees"
    }
   },
+  "a284e1c0c3425db8": {
+   "verdict": "ok",
+   "note": "KC 2 7.1 § body introduction (fs-id1902734), m46344"
+  },
   "a287dbfc6982b53c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66731,6 +67251,14 @@
     "result": "agrees"
    }
   },
+  "a3adb39e19bdbe2d": {
+   "verdict": "ok",
+   "note": "KC 2 5.3 § Sensory Function, m46064",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a3b1f64caba64856": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66832,6 +67360,14 @@
   "a3f5eb54b14087b3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a3f9d41f1a4193d3": {
+   "verdict": "ok",
+   "note": "KC 2 6.2 § body Flat Bones (fs-id1016222), paragraph fs-id1739295, m46282",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67907,6 +68443,14 @@
     "result": "agrees"
    }
   },
+  "a68c98f3ac85e9e8": {
+   "verdict": "ok",
+   "note": "KC 2 10.1 § body introduction, contraction paragraph (fs-id1388147), m46473",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a68edb6979d71244": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68221,6 +68765,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "a7472b38a990da73": {
+   "verdict": "ok",
+   "note": "KC 2 10.3 § Sources of ATP (fs-id2164808), paragraph fs-id1841712, m46447"
   },
   "a747b51c56a6baed": {
    "verdict": "ok",
@@ -68793,6 +69341,14 @@
     "result": "agrees"
    }
   },
+  "a8cb2d20a78fe64b": {
+   "verdict": "ok",
+   "note": "KC 2 7.1 § body The Axial Skeleton (fs-id1633012), paragraph fs-id2228791, m46344",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a8cf4d5b84e23892": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -69080,6 +69636,18 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a95c6c86f9ccec91": {
+   "verdict": "ok",
+   "note": "KC 2 9.4 § Saddle Joint, m46394",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a95d95d4433e994d": {
+   "verdict": "ok",
+   "note": "KC 2 6.4 § body Diseases of the Skeletal System box (fs-id1445281), paragraphs fs-id1531263, fs-id1805522, fs-id2040568, m46301"
   },
   "a95e6eb9773ade49": {
    "verdict": "ok",
@@ -71362,6 +71930,14 @@
     "result": "agrees"
    }
   },
+  "af2c3ee8cb92fe06": {
+   "verdict": "ok",
+   "note": "KC 2 8.4 § Arches of the Foot (fs-id2306452), paragraph fs-id1480344, m46364",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "af31a0eb4c6ee7a8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72324,6 +72900,14 @@
     "result": "agrees"
    }
   },
+  "b1d1fc9aad5009ba": {
+   "verdict": "ok",
+   "note": "KC 2 11.6 § Thigh Muscles That Move the Femur, Tibia, and Fibula, m46482",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b1d87c4b39adc948": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72448,6 +73032,14 @@
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b220c6995e6520dc": {
+   "verdict": "ok",
+   "note": "KC 2 9.4 § Additional Structures Associated with Synovial Joints, m46394",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -74068,6 +74660,14 @@
     "result": "agrees"
    }
   },
+  "b5d5d850aa2745ec": {
+   "verdict": "ok",
+   "note": "KC 2 10.8 § body introduction, calcium paragraph (fs-id2308688); distractors fs-id2337983, fs-id2041917, m46478",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b5e04fc0ec5276ba": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Unchecked human population growth could have dire long-term effects on our environment.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -74346,6 +74946,14 @@
   "b6a21b3e305390fd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b6adb50f6570f91f": {
+   "verdict": "ok",
+   "note": "KC 2 7.3 § glossary transverse foramen (fs-id1491897), body Cervical Vertebrae (fs-id2350051), paragraph fs-id2157005, m46352",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -75440,6 +76048,14 @@
   "b9099a2bcb6865b5": {
    "verdict": "ok",
    "note": "re-read against CNXML m46023 and current page"
+  },
+  "b90c8cb4dbcbb1ac": {
+   "verdict": "ok",
+   "note": "KC 2 10.5 § body introduction, FG paragraph (fs-id1207069), m46480",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b90d07f4280da77b": {
    "verdict": "ok",
@@ -77285,6 +77901,14 @@
     "result": "agrees"
    }
   },
+  "bd8e537cefb11c9e": {
+   "verdict": "ok",
+   "note": "KC 2 10.2 § Skeletal Muscle Fibers (fs-id1374544), paragraph fs-id2122814; distractors fs-id2125518, fs-id2141504, fs-id1361245, m46476",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bd8e7e773293d3cf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78935,6 +79559,14 @@
     "result": "agrees"
    }
   },
+  "c1f6bdd16860e18a": {
+   "verdict": "ok",
+   "note": "KC 2 10.5 § body introduction, FO paragraph (fs-id1424369); distractors fs-id1207069, fs-id1640470, m46480",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c1f851a1e49496a7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78950,6 +79582,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c20ca59bd3a905d5": {
+   "verdict": "ok",
+   "note": "KC 2 6.3 § body Bone Markings (fs-id1183302), paragraph fs-id1239338, m46281"
   },
   "c20e9647aef3cc78": {
    "verdict": "ok",
@@ -79110,6 +79746,14 @@
   "c263003aae77da69": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c264851be4a5ca40": {
+   "verdict": "ok",
+   "note": "KC 2 9.3 § Synchondrosis (fs-id2519680), hip-bone paragraph, m46381",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c265423d3c31eb01": {
    "verdict": "ok",
@@ -80538,6 +81182,14 @@
     "result": "agrees"
    }
   },
+  "c5cb66d64b49a37c": {
+   "verdict": "ok",
+   "note": "KC 2 10.6 § Endurance Exercise (fs-id1195292), paragraph fs-id2296979, m46438",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c5cb9c8b7f65ade6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81106,6 +81758,10 @@
     "result": "agrees"
    }
   },
+  "c72d45af540877c6": {
+   "verdict": "ok",
+   "note": "KC 2 10.4 § Treppe (fs-id2141526), paragraphs fs-id1217311 and fs-id2339576, m46470"
+  },
   "c72ff2328b6be19a": {
    "verdict": "ok",
    "note": "CT fs-id1488651 solution verbatim"
@@ -81116,6 +81772,14 @@
   "c731b0623cfda6cd": {
    "verdict": "ok",
    "note": "key \"incomplete tetanus\": key re-read against the CNXML sentence (or Review solution) named in ledger-10.4.md; distractors are module statements false for the stem",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c74279e4719b95bf": {
+   "verdict": "ok",
+   "note": "KC 2 6.4 § body How Bones Grow in Length (fs-id1536130), paragraph fs-id1709561, m46301",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83239,6 +83903,14 @@
   "cc9bb4129d230d63": {
    "verdict": "ok"
   },
+  "cca10a2f8033425c": {
+   "verdict": "ok",
+   "note": "KC 2 8.1 § Scapula (fs-id1254545), paragraph fs-id1725063, m46374",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ccaa9ee00b1f572e": {
    "verdict": "ok",
    "note": "g(0)=-2*0.25^0=-2, so y-intercept (0,-2); matches CNXML solution exactly. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -83444,6 +84116,14 @@
     "result": "agrees"
    }
   },
+  "cd41e7e503e4d476": {
+   "verdict": "ok",
+   "note": "KC 2 9.2 § Gomphosis, m46403",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cd437be072e99df0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -83463,6 +84143,14 @@
   "cd46e80a239d0af7": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1172098273378 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cd48abd81f393074": {
+   "verdict": "ok",
+   "note": "KC 2 10.4 § Muscle Tone (fs-id2160696), paragraphs fs-id2268838 and fs-id2341110, m46470",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -83645,6 +84333,14 @@
    "note": "KC 8 44.2 § body Temperature (fs-idm14018672), m66411 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cda9edb11e72e75f": {
+   "verdict": "ok",
+   "note": "KC 2 6.2 § body Short Bones (fs-id1639531), paragraph fs-id962590, m46282",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -84051,6 +84747,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ce9a1c6bc56c6110": {
+   "verdict": "ok",
+   "note": "KC 2 10.1 § summary (fs-id2097179, fs-id1616494), m46473"
   },
   "ce9a236ecfc7f9df": {
    "verdict": "ok",
@@ -84594,6 +85294,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d0082fc25f3d9087": {
+   "verdict": "ok",
+   "note": "KC 2 9.7 § body introduction, limb paragraph, m46388"
   },
   "d00a9dd0fcb98cb0": {
    "verdict": "ok",
@@ -86140,6 +86844,10 @@
     "result": "agrees"
    }
   },
+  "d43b600fe55e8be1": {
+   "verdict": "ok",
+   "note": "KC 2 6.2 § body Sesamoid Bones (fs-id1170424), paragraph fs-id773871, m46282"
+  },
   "d43dde54d2e3966d": {
    "verdict": "ok",
    "note": "body cloze from § Viroids: \"Unlike viruses, viroids do not have a protein coat to protect their genetic information.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -86485,6 +87193,14 @@
   "d4f219c20975b09c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d4f61d5b07322512": {
+   "verdict": "ok",
+   "note": "KC 2 7.5 § body Development of the Skull (fs-id1339325), paragraph fs-id2402689, m46348",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87252,6 +87968,14 @@
     "result": "agrees"
    }
   },
+  "d6e36b18c30d319e": {
+   "verdict": "ok",
+   "note": "KC 2 9.3 § Synchondrosis (fs-id2519680), epiphyseal-plate paragraph, m46381",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d6e5d920260cea6c": {
    "verdict": "ok",
    "note": "KC 5 23.6 § introduction, m58922 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Microbiology KC re-review Sep 24 2026 (KC 13-14, 15-20, 21-26): parent re-read of the replacement/reworded self-check; model answer is the module sentences, rubric decomposes it"
@@ -87571,6 +88295,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "d78aefdf0146065d": {
+   "verdict": "ok",
+   "note": "KC 2 10.6 § Everyday Connection Aging and Muscle Tissue (fs-id1253907), paragraph fs-id2267886, m46438"
   },
   "d78ecd483341ae22": {
    "verdict": "ok",
@@ -88396,6 +89124,10 @@
     "result": "agrees"
    }
   },
+  "d9ec608055908da2": {
+   "verdict": "ok",
+   "note": "KC 2 7.4 § body Parts of a Typical Rib (fs-id1490113), paragraph fs-id2251383, m46350"
+  },
   "d9ed51469a7625f6": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -89048,6 +89780,14 @@
   "db616d5a798f900d": {
    "verdict": "ok",
    "note": "KC 7 43.7 § Organogenesis, m66679 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-33-43.md:1333): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
+  },
+  "db6290297bd148be": {
+   "verdict": "ok",
+   "note": "KC 2 10.4 § Motor Units (fs-id2125273), paragraph fs-id1968479; distractors fs-id1861281, fs-id1968479, fs-id2252591, m46470",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "db648d68e57905a0": {
    "verdict": "ok"
@@ -91065,6 +91805,10 @@
     "result": "agrees"
    }
   },
+  "e08a4df7d75ff818": {
+   "verdict": "ok",
+   "note": "KC 2 9.2 § Suture, m46403"
+  },
   "e08d4e608442de48": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91470,6 +92214,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "e182a4912bef6b4a": {
+   "verdict": "ok",
+   "note": "KC 2 9.3 § Synchondrosis (fs-id2519680), thoracic-cage paragraph, m46381"
   },
   "e18d4212cecfc806": {
    "verdict": "ok",
@@ -92079,6 +92827,14 @@
   "e2df9f184ff4502e": {
    "verdict": "ok",
    "note": "unkeyed CT fs-id1167661289550 (smokers) selfcheck; model answer drawn from this module's OWN Case in Point 'Smoking-Associated Pneumonia' box (contrary to a run-facts note claiming 22.1 never mentions smoking -- it does, in its own Case in Point) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "e2e08e366f882328": {
+   "verdict": "ok",
+   "note": "KC 2 11.1 § The Lever System of Muscle and Bone Interactions, m46487",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e2f6875811d54ae3": {
    "verdict": "ok",
@@ -93631,6 +94387,14 @@
     "result": "agrees"
    }
   },
+  "e69edda7856d984a": {
+   "verdict": "ok",
+   "note": "KC 2 7.2 § body Sutures of the Skull (fs-id1268258), paragraph fs-id1195048, m46355",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e6a0c6ae32ce3165": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -94715,6 +95479,14 @@
     "result": "agrees"
    }
   },
+  "e9c116b48f1765c0": {
+   "verdict": "ok",
+   "note": "KC 2 9.4 § Aging and the Joints feature box (fs-id1892978), m46394",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e9c3084f89d47f54": {
    "verdict": "ok",
    "note": "body cloze from § Macronutrients and Micronutrients: \"Potassium (K) is important because of its role in regulating stomatal opening and closing.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -95226,6 +95998,14 @@
   "eb2650d495dded23": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 766): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "eb284e27d5021cab": {
+   "verdict": "ok",
+   "note": "KC 2 9.1 § Functional Classification of Joints (fs-id2349325), m46383",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "eb2ab049128ae21a": {
    "verdict": "ok",
@@ -97349,6 +98129,14 @@
    "verdict": "ok",
    "note": "Practice: x=4cos t,y=5sin t -> x^2/16+y^2/25=1 by Pythagorean identity; node-verified residual ~0 over t=0..6; matches CNXML solution."
   },
+  "f0a5e1085496223e": {
+   "verdict": "ok",
+   "note": "KC 2 9.6 § Knee Joint, m46377",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0a6a058b9506b5e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98245,6 +99033,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 573): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f2f6c49b6abfc4fd": {
+   "verdict": "ok",
+   "note": "KC 2 10.7 § body introduction, pacemaker-wave paragraph (fs-id2254456), m46404",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f2fba42cbc9e3783": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98836,6 +99632,14 @@
     "result": "agrees"
    }
   },
+  "f437fe392cb99f4d": {
+   "verdict": "ok",
+   "note": "KC 2 8.5 § Ossification of Appendicular Bones (fs-id1700387), paragraph fs-id1972676, m46376",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f43849daaf352972": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99254,6 +100058,14 @@
   "f52c299da946b544": {
    "verdict": "ok",
    "note": "(2t+5)(5t-3) expands to 10t^2+19t-15 (sympy). Distractor (2t-5)(5t+3) expands to 10t^2-19t-15; 'It is prime' is false since it factors. Exactly one option is correct. | carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "f52c35a50413a732": {
+   "verdict": "ok",
+   "note": "KC 2 5.3 § Thermoregulation, m46064",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f52d58349a41f7ca": {
    "verdict": "ok",
@@ -99931,6 +100743,14 @@
     "result": "agrees"
    }
   },
+  "f6d84b4de44c9969": {
+   "verdict": "ok",
+   "note": "KC 2 6.1 § body Mineral Storage, Energy Storage, and Hematopoiesis (fs-id1143103), paragraph fs-id1265514, m46341",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f6d991296bf6f41b": {
    "verdict": "ok",
    "note": "selfcheck (Critical Thinking fs-idm63806336, solution fs-idm123593568) — model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -100579,6 +101399,14 @@
    "note": "key-term recall from the Glossary appendix: numerical aperture (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f8365190e833f038": {
+   "verdict": "ok",
+   "note": "KC 2 6.1 § glossary orthopedist (fs-id1692399), body Career Connection box Orthopedist (fs-id1614722), paragraph fs-id1284942, m46341",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -101432,6 +102260,14 @@
    "verdict": "ok",
    "note": "KC 2 7.4 § body Complex IV (fs-id2300410), m66468 — parent re-read against the module"
   },
+  "fa6f0cfee5d1c7ac": {
+   "verdict": "ok",
+   "note": "KC 2 11.2 § table tbl-ch11_02 Mnemonic Device for Latin Roots, m46498",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fa704bc426438d06": {
    "verdict": "ok",
    "note": "source exercise fs-idm41201088 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -101666,6 +102502,14 @@
     "result": "agrees"
    }
   },
+  "faee356b77f00996": {
+   "verdict": "ok",
+   "note": "KC 2 8.3 § Pelvis (fs-id1431270), paragraph fs-id1907417, m46375",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "faeec405433cce0a": {
    "verdict": "ok",
    "note": "source Critical Thinking fs-id1167660287120 (no source key); model answer synthesizes the module's own treatment-difference sentences for staph food poisoning (intoxication), EHEC (infection, antibiotics not recommended), and severe shigellosis (infection, antibiotics used) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -101830,6 +102674,14 @@
   "fb46d401f92d1972": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fb46ec559d9bb5ad": {
+   "verdict": "ok",
+   "note": "KC 2 7.3 § body Curvatures of the Vertebral Column (fs-id2102983), paragraph fs-id806646, m46352",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -103375,6 +104227,14 @@
     "result": "agrees"
    }
   },
+  "fed9adab5a930dee": {
+   "verdict": "ok",
+   "note": "KC 2 9.2 § Syndesmosis, m46403",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "feec289561c0ccd8": {
    "verdict": "ok",
    "note": "Matches CNXML exercise fs-id1242488 solution fs-id1769754 (\"A\" = turning on a light switch). Independently reasoned: flipping a switch merely closes a circuit and is not itself an energy-form conversion, whereas solar panels (light→electrical) and static-electricity formation (friction→electrical) are transformations; option D (none of the above) would be wrong since A does qualify as the exception. Defensible as printed. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -103615,6 +104475,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "ff48ffebb68f9a38": {
+   "verdict": "ok",
+   "note": "KC 2 8.5 § Ossification of Appendicular Bones (fs-id1700387), Congenital Clubfoot box (fs-id1279438), paragraphs fs-id810564 and fs-id2058867, m46376"
   },
   "ff4d472f430387c9": {
    "verdict": "ok",

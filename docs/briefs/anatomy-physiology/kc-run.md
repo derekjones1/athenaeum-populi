@@ -21,7 +21,12 @@ failure. Two tells the briefs did not name: a page's **objective heading
 or description** printing the key with its fact is a reverse recall (the
 "eleven organ systems" count), and a re-aimed cloze must blank what the
 module sentence **names**, not its subject (the "mucociliary escalator"
-stem also fit "ciliated epithelium" until the blank moved).
+stem also fit "ciliated epithelium" until the blank moved). The second run, Unit 2 (October 20, 2026, 43 sections,
+129 items, "Knowledge Check 2" in the history), measured: checkers 12 hard
+and about 45 soft across seven chapters, sweeps 4 hard, the parent read 1
+(a cross-chapter twin), second checker 4 of 40 then 1 of 9 soft, blind solve
+87/87 with 0 alsoDefensible, no errata; the sweep and cross-block lessons
+below come from it.
 
 ## 0. What the runs measured
 
@@ -48,6 +53,34 @@ stem also fit "ciliated epithelium" until the blank moved).
 - **Count the tree.** Two Microbiology block tables stated the wrong
   section count; the unit's sections are the `### N.M` headings the
   content tree implies, counted when the run starts.
+
+- **Grep the page's frontmatter `description` and objective headings
+  first** (Unit 2, October 20, 2026). The brief named both; a chapter 6
+  author still grepped only the Practice block, and the sweep found the
+  6.7 description printing the item's whole answer. Authors, checkers and
+  sweeps grep in this order: description, objective headings, Practice
+  stems, options, hints and rubrics, sortbins bins and labels, body
+  self-checks.
+- **Read each finished block against the other finished blocks**, not only
+  within itself: Unit 2 had three cross-chapter twins (6.2 and 7.1 both
+  asked the adult bone count; 8.3 and 11.6 both asked why the pelvis is
+  immobile; 8.2 and 11.5 both graded the carpal tunnel), and a stem in one
+  block printed the key of another (8.3 → 9.1 "weight-bearing stability").
+  Checkers get the sibling blocks' paths for the same reason.
+- **A replacement may change type when the section page leaves no clean
+  key of that type** — 11.5's sortbins print every muscle name the module
+  has, so its textin became a count multiple choice. The parent authorizes
+  it in the fix message and the ledger records why; the section keeps an
+  auto-graded item either way.
+- **Trial-assemble in the scratchpad** (`kc assemble` to a mirrored scratch
+  path, then `verify-section` and `kc leaks`) once the chapter blocks are
+  checker-clean and before the second checker: it costs a minute and shows
+  the whole-page leak candidates and the key-position spread while fixes
+  are still cheap.
+- **The sweeps earned their wave on Unit 2** where on Unit 1 they found
+  nothing new: 4 hard flags on 129 items (a page sortbins bin naming the
+  key's root, a page description, a Practice sortbins label plus rubric, a
+  sibling section's item re-asked), all missed by the per-chapter checkers.
 
 ## 1. Before the wave
 
