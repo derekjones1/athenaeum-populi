@@ -2478,6 +2478,1147 @@
       "caption": "(a) The results of a CT scan of the head are shown as successive transverse sections. (b) An MRI machine generates a magnetic field around a patient. (c) PET scans use radiopharmaceuticals to create images of active blood flow and physiologic activity of the organ or organs being targeted. (d) Ultrasound technology is used to monitor pregnancies because it is the least invasive of imaging techniques and uses no electromagnetic radiation. (credit a: Akira Ohgaki/flickr; credit b: “Petmr”/Wikimedia Commons; credit c: “Raziel”/Wikimedia Commons; credit d: “Isis”/Wikimedia Commons)",
       "transparent": false
     },
+    "1200_Robotic_Arms": {
+      "source": "media/1200_Robotic_Arms.jpg",
+      "sourceSha256": "93930d09670f494faa3d03846151c8e97a85a3290a7603c27da93e632d854b12",
+      "module": "m46504",
+      "kind": "photo",
+      "width": 1144,
+      "height": 526,
+      "variants": [
+        {
+          "width": 800,
+          "height": 368,
+          "file": "1200_Robotic_Arms-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 526,
+          "file": "1200_Robotic_Arms-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a person playing foosball. The person has had both of their lower arms amputated. The left arm was replaced with a replica of a human hand and the right arm was replaced with a manipulator that resembles a pair of tongs.",
+      "caption": "As the neural circuitry of the nervous system has become more fully understood and robotics more sophisticated, it is now possible to integrate technology with the body and restore abilities following traumatic events. At some point in the future, will this type of technology lead to the ability to augment our nervous systems? (credit: U.S. Army/Wikimedia Commons)"
+    },
+    "1201_Overview_of_Nervous_System": {
+      "source": "media/1201_Overview_of_Nervous_System.jpg",
+      "sourceSha256": "b07f0cd6d1ce02b95b1a5e6d3f720b48554083cf9966b0c95c95cde1a88a2e7a",
+      "module": "m46500",
+      "kind": "photo",
+      "width": 841,
+      "height": 760,
+      "variants": [
+        {
+          "width": 800,
+          "height": 723,
+          "file": "1201_Overview_of_Nervous_System-800.webp"
+        },
+        {
+          "width": 841,
+          "height": 760,
+          "file": "1201_Overview_of_Nervous_System-841.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a silhouette of a human highlighting the nervous system. The central nervous system is composed of the brain and spinal cord. The brain is a large mass of ridged and striated tissue within the head. The spinal cord extends down from the brain and travels through the torso, ending in the pelvis. Pairs of enlarged nervous tissue, labeled ganglia, flank the spinal cord as it travels through the rib area. The ganglia are part of the peripheral nervous system, along with the many thread-like nerves that radiate from the spinal cord and ganglia through the arms, abdomen and legs.",
+      "caption": "The structures of the PNS are referred to as ganglia and nerves, which can be seen as distinct structures. The equivalent structures in the CNS are not obvious from this overall perspective and are best examined in prepared tissue under the microscope."
+    },
+    "1202_White_and_Gray_Matter": {
+      "source": "media/1202_White_and_Gray_Matter.jpg",
+      "sourceSha256": "7629845c6f159c0cc44529dfc0b92db37b8b0431dc94d5fa1bd91ca1ec0bf3e0",
+      "module": "m46500",
+      "kind": "photo",
+      "width": 975,
+      "height": 714,
+      "variants": [
+        {
+          "width": 800,
+          "height": 586,
+          "file": "1202_White_and_Gray_Matter-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 714,
+          "file": "1202_White_and_Gray_Matter-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows an enlarged view of the dorsal side of a human brain. The right side of the occipital lobe has been shaved to reveal the white and gray matter beneath the surface blood vessels. The white matter branches though the shaved section like the limbs of a tree. The gray matter branches and curves on outside of the white matter, creating a buffer between the outer edges of the occipital lobe and the internal white matter.",
+      "caption": "A brain removed during an autopsy, with a partial section removed, shows white matter surrounded by gray matter. Gray matter makes up the outer cortex of the brain. (credit: modification of work by “Suseno”/Wikimedia Commons)"
+    },
+    "1203_Concept_of_NucleusN": {
+      "source": "media/1203_Concept_of_NucleusN.jpg",
+      "sourceSha256": "00c7a9d4b2938f02c6f7970a38893b6e11462e56bca5563ddef2343e8a4a0e00",
+      "module": "m46500",
+      "kind": "photo",
+      "width": 1854,
+      "height": 979,
+      "variants": [
+        {
+          "width": 800,
+          "height": 422,
+          "file": "1203_Concept_of_NucleusN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 845,
+          "file": "1203_Concept_of_NucleusN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows two diagrams and a photo, labeled A, B, and C. Image A shows an atom composed of two neutrons and two protons surrounded by a hazy electron cloud. The nucleus of the atom is where the protons and neutrons are located. Image B shows a trumpet shaped cell with a large, oval nucleus near its narrow end. This is the nucleus of a cell. Image C shows an MRI capture of the brain. Two red areas near the center of the brain are highlighted in red. These are the nuclei within the brain.",
+      "caption": "(a) The nucleus of an atom contains its protons and neutrons. (b) The nucleus of a cell is the organelle that contains DNA. (c) A nucleus in the CNS is a localized center of function with the cell bodies of several neurons, shown here circled in red. (credit c: “Was a bee”/Wikimedia Commons)"
+    },
+    "1204_Optic_Nerve_vs_Optic_Tract": {
+      "source": "media/1204_Optic_Nerve_vs_Optic_Tract.jpg",
+      "sourceSha256": "da61928922e2433600ca256e827c22c8d566c7e6eef5d209a23e3c5fcd7a9237",
+      "module": "m46500",
+      "kind": "photo",
+      "width": 787,
+      "height": 615,
+      "variants": [
+        {
+          "width": 787,
+          "height": 615,
+          "file": "1204_Optic_Nerve_vs_Optic_Tract-787.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a superior view of a cross section of the brain. The anterior side of the brain is at the top of the diagram with the two eyes clearly visible. Each eye contains a left nerve tract and a right nerve tract. In the left eye, the left nerve tract travels straight back to the right side of the thalamus. It then enters the left occipital lobe. Conversely, the right nerve tract crosses to the right side of the brain through the optic chiasma. It travels through the right side of the thalamus and enters the right occipital lobe. In the right eye, the opposite is true. The left nerve tract crosses over to the left side of the brain at the optic chiasma, traveling into the left side of the thalamus and the left side of the occipital lobe. However, the right nerve tract leads straight back to the right side of the thalamus and the right occipital lobe. Therefore, the optic chiasma is where the right nerve tract from the right eye crosses over the left nerve tract from the left eye.",
+      "caption": "This drawing of the connections of the eye to the brain shows the optic nerve extending from the eye to the chiasm, where the structure continues as the optic tract. The same axons extend from the eye to the brain through these two bundles of fibers, but the chiasm represents the border between peripheral and central."
+    },
+    "1205_Somatic_Autonomic_Enteric_StructuresN": {
+      "source": "media/1205_Somatic_Autonomic_Enteric_StructuresN.jpg",
+      "sourceSha256": "8952cc5102320fb8f327c3904e2ce4627aebb64dddf23d758cfcad08af36aa33",
+      "module": "m46500",
+      "kind": "photo",
+      "width": 993,
+      "height": 546,
+      "variants": [
+        {
+          "width": 800,
+          "height": 440,
+          "file": "1205_Somatic_Autonomic_Enteric_StructuresN-800.webp"
+        },
+        {
+          "width": 993,
+          "height": 546,
+          "file": "1205_Somatic_Autonomic_Enteric_StructuresN-993.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows a silhouette of a human with only the brain, spinal cord, PNS ganglia, nerves and a section of the digestive tract visible. The brain, which is part of the CNS, is the area of perception and processing of sensory stimuli (somatic/autonomic), the execution of voluntary motor responses (somatic), and the regulation of homeostatic mechanisms (autonomic). The spinal cord, which is part of the CNS, is the area where reflexes are initiated. The gray matter of the ventral horn initiates somatic reflexes while the gray matter of the lateral horn initiates autonomic reflexes. The spinal cord is also the somatic and autonomic pathway for sensory and motor functions between the PNS and the brain. The nerves, which are part of the PNS, are the fibers of sensory and motor neurons, which can be either somatic or autonomic. The ganglia, which are part of the PNS, are the areas for the reception of somatic and autonomic sensory stimuli. These are received by the dorsal root ganglia and cranial ganglia. The autonomic ganglia are also the relay for visceral motor responses. The digestive tract is part of the enteric nervous system, the ENS, which is located in the digestive tract and is responsible for autonomous function. The ENS can operate independent of the brain and spinal cord.",
+      "caption": "Somatic structures include the spinal nerves, both motor and sensory fibers, as well as the sensory ganglia (posterior root ganglia and cranial nerve ganglia). Autonomic structures are found in the nerves also, but include the sympathetic and parasympathetic ganglia. The enteric nervous system includes the nervous tissue within the organs of the digestive tract."
+    },
+    "1206_FMRI": {
+      "source": "media/1206_FMRI.jpg",
+      "sourceSha256": "8d2bdc8e538f7f60c0f5244bfac56b037b0edef914a0053c74f4c8973e404276",
+      "module": "m46500",
+      "kind": "photo",
+      "width": 544,
+      "height": 452,
+      "variants": [
+        {
+          "width": 544,
+          "height": 452,
+          "file": "1206_FMRI-544.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This MRI image shows a grainy computer readout of a cross section of the brain. The anterior side of the brain, located on the right hand side of the image, has a large area lighting up with yellow, indicating neural stimulation. Two smaller regions at the center of the brain are also yellow. The two small areas are in the same relative location but in opposite hemispheres of the brain.",
+      "caption": "This fMRI shows activation of the visual cortex in response to visual stimuli. (credit: “Superborsuk”/Wikimedia Commons)"
+    },
+    "1206_The_Neuron": {
+      "source": "media/1206_The_Neuron.jpg",
+      "sourceSha256": "626691d5718e4928b4b85001dcbd2c5d47ecb5cbec57cb70b12e7f74874567d1",
+      "module": "m46509",
+      "kind": "photo",
+      "width": 825,
+      "height": 552,
+      "variants": [
+        {
+          "width": 800,
+          "height": 535,
+          "file": "1206_The_Neuron-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 552,
+          "file": "1206_The_Neuron-825.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows the anatomy of a neuron. The neuron has a very irregular cell body (soma) containing a purple nucleus. There are six projections protruding from the top, bottom and left side of the cell body. Each of the projections branches many times, forming small, tree-shaped structures protruding from the cell body. The right side of the cell body tapers into a long cord called the axon. The axon is insulated by segments of myelin sheath, which resemble a semitransparent toilet paper roll wound around the axon. The myelin sheath is not continuous, but is separated into equally spaced segments. The bare axon segments between the sheath segments are called nodes of Ranvier. An oligodendrocyte is reaching its two arm like projections onto two myelin sheath segments. The axon branches many times at its end, where it connects to the dendrites of another neuron. Each connection between an axon branch and a dendrite is called a synapse. The cell membrane completely surrounds the cell body, dendrites, and its axon. The axon of another nerve is seen in the upper left of the diagram connecting with the dendrites of the central neuron.",
+      "caption": "The major parts of the neuron are labeled on a multipolar neuron from the CNS."
+    },
+    "1207_Neuron_Shape_Classification": {
+      "source": "media/1207_Neuron_Shape_Classification.jpg",
+      "sourceSha256": "95dba717708baca8d9af123453bcae5aa15ec4cfadbd37c5a1815afdbe8965e7",
+      "module": "m46509",
+      "kind": "photo",
+      "width": 893,
+      "height": 566,
+      "variants": [
+        {
+          "width": 800,
+          "height": 507,
+          "file": "1207_Neuron_Shape_Classification-800.webp"
+        },
+        {
+          "width": 893,
+          "height": 566,
+          "file": "1207_Neuron_Shape_Classification-893.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Three illustrations show some of the possible shapes that neurons can take. In the unipolar neuron, the dendrite enters from the left and merges with the axon into a common pathway, which is connected to the cell body. The axon leaves the cell body through the common pathway, the branches off to the right, in the opposite direction as the dendrite. Therefore, this neuron is T shaped. In the bipolar neuron, the dendrite enters into the left side of the cell body while the axon emerges from the opposite (right) side. In a multipolar neuron, multiple dendrites enter into the cell body. The only part of the cell body that does not have dendrites is the part that elongates into the axon.",
+      "caption": "Unipolar cells have one process that includes both the axon and dendrite. Bipolar cells have two processes, the axon and a dendrite. Multipolar cells have more than two processes, the axon and two or more dendrites."
+    },
+    "1208_Other_Types_of_Neurons": {
+      "source": "media/1208_Other_Types_of_Neurons.jpg",
+      "sourceSha256": "868b2cc26ace48d24fb83d0e21b2ab22a04ec61ffd7af89e0d9a2f907a275fc1",
+      "module": "m46509",
+      "kind": "photo",
+      "width": 864,
+      "height": 553,
+      "variants": [
+        {
+          "width": 800,
+          "height": 512,
+          "file": "1208_Other_Types_of_Neurons-800.webp"
+        },
+        {
+          "width": 864,
+          "height": 553,
+          "file": "1208_Other_Types_of_Neurons-864.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram contains three black and white drawings of more specialized nerve cells. Part A shows a pyramidal cell of the cerebral cortex, which has two, long, nerve tracts attached to the top and bottom of the cell body. However, the cell body also has many shorter dendrites projecting out a short distance from the cell body. Part B shows a Purkinje cell of the cerebellar cortex. This cell has a single, long, nerve tract entering the bottom of the cell body. Two large nerve tracts leave the top of the cell body but immediately branch many times to form a large web of nerve fibers. Therefore, the purkinje cell somewhat resembles a shrub or coral in shape. Part C shows the olfactory cells in the olfactory epithelium and olfactory bulbs. It contains several cell groups linked together. At the bottom, there is a row of olfactory epithelial cells that are tightly packed, side-by-side, somewhat resembling the slats on a fence. There are six neurons embedded in this epithelium. Each neuron connects to the epithelium through branching nerve fibers projecting from the bottom of their cell bodies. A single nerve fiber projects from the top of each neuron and synapses with nerve fibers from the neurons above. These upper neurons are cross shaped, with one nerve fiber projecting from the bottom, top, right and left sides. The upper cells synapse with the epithelial nerve cells using the nerve tract projecting from the bottom of their cell body. The nerve tract projecting from the top continues the pathway, making a ninety degree turn to the right and continuing to the right border of the image.",
+      "caption": "Three examples of neurons that are classified on the basis of other criteria. (a) The pyramidal cell is a multipolar cell with a cell body that is shaped something like a pyramid. (b) The Purkinje cell in the cerebellum was named after the scientist who originally described it. (c) Olfactory neurons are named for the functional group with which they belong."
+    },
+    "1209_Glial_Cells_of_the_CNS-02": {
+      "source": "media/1209_Glial_Cells_of_the_CNS-02.jpg",
+      "sourceSha256": "d7d03e29c0262859ea911d5622165736075e0e41ca8eff39118c24d556e88797",
+      "module": "m46509",
+      "kind": "photo",
+      "width": 825,
+      "height": 637,
+      "variants": [
+        {
+          "width": 800,
+          "height": 617,
+          "file": "1209_Glial_Cells_of_the_CNS-02-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 637,
+          "file": "1209_Glial_Cells_of_the_CNS-02-825.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows several types of nervous system cells associated with two multipolar neurons. Astrocytes are star shaped-cells with many dendrite like projections but no axon. They are connected with the multipolar neurons and other cells in the diagram through their dendrite like projections. Ependymal cells have a teardrop shaped cell body and a long tail that branches several times before connecting with astrocytes and the multipolar neuron. Microglial cells are small cells with rectangular bodies and many dendrite like projections stemming from their shorter sides. The projections are so extensive that they give the microglial cell a fuzzy appearance. The oligodendrocytes have circular cell bodies with four dendrite like projections. Each projection is connected to a segment of myelin sheath on the axons of the multipolar neurons. The oligodendrocytes are the same color as the myelin sheath segment and are adding layers to the sheath using their projections.",
+      "caption": "The CNS has astrocytes, oligodendrocytes, microglia, and ependymal cells that support the neurons of the CNS in several ways."
+    },
+    "1210_Glial_Cells_of_the_PNS": {
+      "source": "media/1210_Glial_Cells_of_the_PNS.jpg",
+      "sourceSha256": "fec6f7212926d06ab2639bb4897e53433e5fe035e785dbdf51f8ff69415c8dca",
+      "module": "m46509",
+      "kind": "photo",
+      "width": 790,
+      "height": 494,
+      "variants": [
+        {
+          "width": 790,
+          "height": 494,
+          "file": "1210_Glial_Cells_of_the_PNS-790.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a collection of PNS glial cells. The largest cell is a unipolar peripheral ganglionic neuron which has a common nerve tract projecting from the bottom of its cell body. The common nerve tract then splits into the axon, going off to the left, and the dendrite, going off to the right. The cell body of the neuron is covered with several satellite cells that are irregular, flattened, and take on the appearance of fried eggs. Schwann cells wrap around each myelin sheath segment on the axon, with their nucleus creating a small bump on each segment.",
+      "caption": "The PNS has satellite cells and Schwann cells."
+    },
+    "1211_Myelinated_Neuron": {
+      "source": "media/1211_Myelinated_Neuron.jpg",
+      "sourceSha256": "55434cbd14a9ec48fc0d91ae4a36aa821908fa9cdaad121bc80b7f34f234fa39",
+      "module": "m46509",
+      "kind": "photo",
+      "width": 827,
+      "height": 941,
+      "variants": [
+        {
+          "width": 800,
+          "height": 910,
+          "file": "1211_Myelinated_Neuron-800.webp"
+        },
+        {
+          "width": 827,
+          "height": 941,
+          "file": "1211_Myelinated_Neuron-827.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This three-part diagram shows the process of myelination. In step A, the cell membrane of a cylindrical Schwann cell, which has a blue nucleus, has indented around an axon. An upper and lower lip of the cell membrane is visible where the membrane indents around the axon. In part B, the lower lip of the cell membrane dives under the upper lip and wraps around the axon. In part C, the process in part B has continued, forming many layers of myelin that wrap around the axon. The nucleus of the Schwann cell is still visible in the outermost layer, just to the left of the upper lip. The area of the axon next to the Schwann cell, which has no myelin, is labeled as a node of Ranvier.",
+      "caption": "Myelinating glia wrap several layers of cell membrane around the cell membrane of an axon segment. A single Schwann cell insulates a segment of a peripheral nerve, whereas in the CNS, an oligodendrocyte may provide insulation for a few separate axon segments. EM × 1,460,000. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1212_Sensory_Neuron_Test_Water": {
+      "source": "media/1212_Sensory_Neuron_Test_Water.jpg",
+      "sourceSha256": "c7b1ee043c88b740ec33519d804432038b4b9ef0f747d2ace75f41016888037d",
+      "module": "m46531",
+      "kind": "photo",
+      "width": 2350,
+      "height": 1654,
+      "variants": [
+        {
+          "width": 800,
+          "height": 563,
+          "file": "1212_Sensory_Neuron_Test_Water-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1126,
+          "file": "1212_Sensory_Neuron_Test_Water-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the complete pathway a nerve impulse takes when a person tests the temperature of shower water with their hand. First, a sensory nerve ending in the index finger sends a nerve impulse to the spinal cord. A cross section of one segment of the vertebrae is shown from a superior view. The sensory nerve connected to the nerve ending is located in the dorsal root ganglion. The nerve ending is a dendrite of the sensory neuron, as it also has an axon that synapses with an interneuron. The interneuron then synapses with a second interneuron in the thalamus. This second interneuron synapses with brain tissue in the cerebral cortex, allowing conscious perception of the water temperature. The brain then initiates a motor command by stimulating an upper motor neuron in the cerebral cortex. The axon of the upper motor neuron extends all the way to the spinal cord, where it synapses with a lower motor neuron in the gray matter of the spinal cord. The impulse then travels down the lower motor neuron back to the hand where it synapses with the skeletal muscles of the hand. This triggers the muscle contractions that turn the dials of the shower to adjust the water temperature.",
+      "caption": "(1) The sensory neuron has endings in the skin that sense a stimulus such as water temperature. The strength of the signal that starts here is dependent on the strength of the stimulus. (2) The graded potential from the sensory endings, if strong enough, will initiate an action potential at the initial segment of the axon (which is immediately adjacent to the sensory endings in the skin). (3) The axon of the peripheral sensory neuron enters the spinal cord and contacts another neuron in the gray matter. The contact is a synapse where another graded potential is caused by the release of a chemical signal from the axon terminals. (4) An action potential is initiated at the initial segment of this neuron and travels up the sensory pathway to a region of the brain called the thalamus. Another synapse passes the information along to the next neuron. (5) The sensory pathway ends when the signal reaches the cerebral cortex. (6) After integration with neurons in other parts of the cerebral cortex, a motor command is sent from the precentral gyrus of the frontal cortex. (7) The upper motor neuron sends an action potential down to the spinal cord. The target of the upper motor neuron is the dendrites of the lower motor neuron in the gray matter of the spinal cord. (8) The axon of the lower motor neuron emerges from the spinal cord in a nerve and connects to a muscle through a neuromuscular junction to cause contraction of the target muscle."
+    },
+    "1213_Sensory_Input_Test_Water": {
+      "source": "media/1213_Sensory_Input_Test_Water.jpg",
+      "sourceSha256": "4edbe642102ded8ad9e139e38484de84f3807f4a25eab43e2e2172cd9176bd4b",
+      "module": "m46531",
+      "kind": "photo",
+      "width": 733,
+      "height": 399,
+      "variants": [
+        {
+          "width": 733,
+          "height": 399,
+          "file": "1213_Sensory_Input_Test_Water-733.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the first step of the previous figure. A hand is placed under flowing water, causing a sensory receptor in the index finger to send a nerve impulse down the arm, to the spinal cord.",
+      "caption": "Receptors in the skin sense the temperature of the water."
+    },
+    "1214_Motor_Response_Test_Water": {
+      "source": "media/1214_Motor_Response_Test_Water.jpg",
+      "sourceSha256": "23dbaf1912a1db546bd7376975bd092edd58647efd94737de20e45b91164d2a5",
+      "module": "m46531",
+      "kind": "photo",
+      "width": 825,
+      "height": 637,
+      "variants": [
+        {
+          "width": 800,
+          "height": 617,
+          "file": "1214_Motor_Response_Test_Water-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 637,
+          "file": "1214_Motor_Response_Test_Water-825.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the later steps of Figure 12.13. A hand is placed under flowing water. The axon of a motor neuron travels down the forearm and then branches as it reaches the hand. Each branch synapses with a different skeletal muscle in the hand. The synapse between the axon branches and the muscle is a neuromuscular junction. An impulse travelling down the motor neuron will cause the skeletal muscles to contract, resulting in muscle movement. In this case, the movement results in the person adjusting the faucet dials to change the temperature of the water.",
+      "caption": "On the basis of the sensory input and the integration in the CNS, a motor response is formulated and executed."
+    },
+    "1215_Cell_Membrane_Channels": {
+      "source": "media/1215_Cell_Membrane_Channels.jpg",
+      "sourceSha256": "6d288d59b49d56fa6f13e85bea73f8b372f1d9f8fb8814a4bc280ef878725b9e",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 1143,
+      "height": 544,
+      "variants": [
+        {
+          "width": 800,
+          "height": 380,
+          "file": "1215_Cell_Membrane_Channels-800.webp"
+        },
+        {
+          "width": 1143,
+          "height": 544,
+          "file": "1215_Cell_Membrane_Channels-1143.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a cross section of a cell membrane. The cell membrane proteins are large, blocky, objects. Peripheral proteins are not embedded in the phospholipid bilayer. The peripheral protein shown here is attached to the outside surface of another protein on the extracellular fluid side. Integral proteins are embedded between the phospholipids of the cell membrane. The transmembrane integral protein extends through both phospholipids layers. The opposite ends of this protein project into the cytosol and the extracellular fluid. A second, smaller integral protein only extends into the inner phospholipid layer. Its opposite end projects into the cytosol. This second protein is, therefore, not a transmembrane protein. The channel protein is cylinder shaped with a hollow internal tube labeled the pore. The sides of the channel protein can bulge inward to close the pore.",
+      "caption": "The cell membrane is composed of a phospholipid bilayer and has many transmembrane proteins, including different types of channel proteins that serve as ion channels."
+    },
+    "1216_Ligand-gated_Channels": {
+      "source": "media/1216_Ligand-gated_Channels.jpg",
+      "sourceSha256": "5f2d24f7cc373c15aba795c01fd4e67b6a7bac72d0a3e784f97cb3048766c7de",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 1176,
+      "height": 611,
+      "variants": [
+        {
+          "width": 800,
+          "height": 415,
+          "file": "1216_Ligand-gated_Channels-800.webp"
+        },
+        {
+          "width": 1176,
+          "height": 611,
+          "file": "1216_Ligand-gated_Channels-1176.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "These two diagrams each show a channel protein embedded in the cell membrane. In the left diagram, there is a large number of sodium ions (NA plus) and calcium ions (CA two plus) in the extracellular fluid. Within the cytosol, there is a large number of potassium ions (K plus) but only a few sodium ions. In this diagram, the channel is closed. Two ACH molecules are floating in the extracellular fluid. Their label indicates that a neurotransmitter, a ligand, is required to open the ion channel. The neurotransmitter receptor site on the extracellular fluid side of the channel protein matches the shape of the ACH molecules. In the right diagram, the two ACH molecules attach to the neurotransmitter receptor sites on the channel protein. This opens the channel and the sodium and calcium ions diffuse through the channel and into the cytosol, down their concentration gradient. The potassium ions also diffuse through the channel in the opposite direction down their concentration gradient (out of the cell and into the extracellular fluid).",
+      "caption": "When the ligand, in this case the neurotransmitter acetylcholine, binds to a specific location on the extracellular surface of the channel protein, the pore opens to allow select ions through. The ions, in this case, are cations of sodium, calcium, and potassium."
+    },
+    "1217_Mechanically-gated_Channels_new": {
+      "source": "media/1217_Mechanically-gated_Channels_new.jpg",
+      "sourceSha256": "69e4c0680dc421bcfc289939e2fedebaef4551a9117d2d6bb50866a9f50b652a",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 2256,
+      "height": 1051,
+      "variants": [
+        {
+          "width": 800,
+          "height": 372,
+          "file": "1217_Mechanically-gated_Channels_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 745,
+          "file": "1217_Mechanically-gated_Channels_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "These two diagrams each show a channel protein embedded in the cell membrane. In the left diagram, there are a large number of sodium ions in the extracellular fluid, but only a few sodium ions in the cytosol. There is a large number of calcium ions in the cytosol but only a few calcium ions in the extracellular fluid. In this diagram, the channel is closed, as the extracellular side has a lid, somewhat resembling that on a trash can, that is closed over the channel opening. In the right diagram, the mechanically gated channel is open. This allows the sodium ions to flow from the extracellular fluid into the cell, down their concentration gradient. At the same time, the calcium ions are moving from the cytosol into the extracellular fluid, down their concentration gradient.",
+      "caption": "When a mechanical change occurs in the surrounding tissue, such as pressure or touch, the channel is physically opened. Thermoreceptors work on a similar principle. When the local tissue temperature changes, the protein reacts by physically opening the channel."
+    },
+    "1218_Voltage-gated_Channels": {
+      "source": "media/1218_Voltage-gated_Channels.jpg",
+      "sourceSha256": "ec529cd88244492c7b1c32b262ac78fe7f0e4b581925d9eeb2af4c9e8e215de7",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 1102,
+      "height": 548,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "1218_Voltage-gated_Channels-800.webp"
+        },
+        {
+          "width": 1102,
+          "height": 548,
+          "file": "1218_Voltage-gated_Channels-1102.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a two part diagram. Both diagrams show a voltage gated channel embedded in the lipid membrane bilayer. The channel contains a sphere shaped gate that is attached to a filament. In the first diagram there are several ions in the cytosol but only one ion in the extracellular fluid. The voltage across the membrane is currently minus seventy millivolts and the voltage gated channel is closed. In the second diagram, the voltage in the cytosol is minus fifty millivolts. This voltage change has caused the voltage gated channel to open, as the small sphere is no longer occluding the channel. One of the ions is moving through the channel, down its concentration gradient, and out into the extracellular fluid.",
+      "caption": "Voltage-gated channels open when the transmembrane voltage changes around them. Amino acids in the structure of the protein are sensitive to charge and cause the pore to open to the selected ion."
+    },
+    "1219_Leakage_Channels": {
+      "source": "media/1219_Leakage_Channels.jpg",
+      "sourceSha256": "f5a4daf8bb6e70f4538d55302e6854b5d39ac24e79a0f4d050d14cca7364ab0b",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 1119,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 375,
+          "file": "1219_Leakage_Channels-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 525,
+          "file": "1219_Leakage_Channels-1119.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This is a two part diagram. Both diagrams show a leakage channel embedded in the lipid membrane bilayer. The leakage channel is cylindrical with a large, central opening. In the first diagram there are several ions in the cytosol but only one ion in the extracellular fluid. No ions are moving through the leakage channel because the channel is closed. In the second diagram, the leakage channel randomly opens, allowing two ions to travel through the channel, down their concentration gradient, and out into the extracellular fluid.",
+      "caption": "In certain situations, ions need to move across the membrane randomly. The particular electrical properties of certain cells are modified by the presence of this type of channel."
+    },
+    "1220_Resting_Membrane_Potential": {
+      "source": "media/1220_Resting_Membrane_Potential.jpg",
+      "sourceSha256": "eb02bc7a52b5c50459257be570ff6b2accbfd7c07f8bb33de98df4ffde23da6a",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 1119,
+      "height": 541,
+      "variants": [
+        {
+          "width": 800,
+          "height": 386,
+          "file": "1220_Resting_Membrane_Potential-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 541,
+          "file": "1220_Resting_Membrane_Potential-1119.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a cross section of a cell membrane. The extracellular fluid side of the cell membrane is positively charged while the cytosol side of the membrane is negatively charged. There is a microelectrode embedded in the cell membrane. The microelectrode is attached to a voltmeter, which also has a reference electrode on the extracellular fluid side. The readout of the voltmeter is negative 70 millivolts.",
+      "caption": "A recording electrode is inserted into the cell and a reference electrode is outside the cell. By comparing the charge measured by these two electrodes, the transmembrane voltage is determined. It is conventional to express that value for the cytosol relative to the outside."
+    },
+    "1221_Action_Potential": {
+      "source": "media/1221_Action_Potential.jpg",
+      "sourceSha256": "ee8a019cdb55f9c0db491f0e75dcee3a9591e62612e991142284b8298cd766a9",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 686,
+      "height": 435,
+      "variants": [
+        {
+          "width": 686,
+          "height": 435,
+          "file": "1221_Action_Potential-686.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph has membrane potential, in millivolts, on the X axis, ranging from negative 70 to positive thirty. Time is on the X axis. The plot line starts steadily at negative seventy and then increases to negative 55 millivolts. The plot line then increases quickly, peaking at positive thirty. This is the depolarization phase. The plot line then quickly drops back to negative seventy millivolts. This is the repolarization phase. The plot line continues to drop but then gradually increases back to negative seventy millivolts. The area where the plot line is below negative seventy millivolts is the hyperpolarization phase.",
+      "caption": "Plotting voltage measured across the cell membrane against time, the action potential begins with depolarization, followed by repolarization, which goes past the resting potential into hyperpolarization, and finally the membrane returns to rest."
+    },
+    "1222_Action_Potential_Labels": {
+      "source": "media/1222_Action_Potential_Labels.jpg",
+      "sourceSha256": "eb786680ca01555a763221378110ba10a911e7174581cf963c0863989cfc48d1",
+      "module": "m46526",
+      "kind": "photo",
+      "width": 739,
+      "height": 435,
+      "variants": [
+        {
+          "width": 739,
+          "height": 435,
+          "file": "1222_Action_Potential_Labels-739.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph has membrane potential, in millivolts, on the X axis, ranging from negative 70 to positive thirty. Time is on the X axis. In step one, which is labeled at rest, the plot line is steady at negative seventy millivolts. In step 2, a stimulus is applied, causing the plot line to increase to positive 30 millivolts. The curve sharply increases at step three, labeled voltage rises. After peaking at positive thirty, the plot line then quickly drops back to negative 70. This is the fourth step, labeled voltage falls. The plot line continues to drop below negative 70 and this is step 5, labeled end of action potential. Finally, the plot line gradually increases back to negative seventy millivolts, which is step 6, labeled return to rest.",
+      "caption": "Plotting voltage measured across the cell membrane against time, the events of the action potential can be related to specific changes in the membrane voltage. (1) At rest, the membrane voltage is -70 mV. (2) The membrane begins to depolarize when an external stimulus is applied. (3) The membrane voltage begins a rapid rise toward +30 mV. (4) The membrane voltage starts to return to a negative value. (5) Repolarization continues past the resting membrane voltage, resulting in hyperpolarization. (6) The membrane voltage returns to the resting value shortly after hyperpolarization."
+    },
+    "1223_Graded_Potentials-02": {
+      "source": "media/1223_Graded_Potentials-02.jpg",
+      "sourceSha256": "5c39864877169b4f52f9b30c67193b19edec97adc3b321cd77b33bcf6c60c72f",
+      "module": "m46503",
+      "kind": "photo",
+      "width": 947,
+      "height": 570,
+      "variants": [
+        {
+          "width": 800,
+          "height": 481,
+          "file": "1223_Graded_Potentials-02-800.webp"
+        },
+        {
+          "width": 947,
+          "height": 570,
+          "file": "1223_Graded_Potentials-02-947.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The graph has membrane potential, in millivolts, on the X axis, ranging from negative 90 to positive 30. Time is on the X axis. The left half of the plot line is labeled the depolarizing graded potential. The plot has four progressively larger peaks, with each starting at the resting membrane potential of negative 70. The lowest peak reaches to about negative 65 and is narrow in width, as this represents a small stimulus that causes a small depolarization of the cell membrane. The second peak reaches to about negative 60 but is still narrow. This represents a larger stimulus causing more depolarization. The third peak also reaches to negative 60, but is about twice as wide as the other two peaks. This represents a stimulus of longer duration, which causes a longer lasting depolarization. However, this stimulus is not greater in strength than the previous stimulus. The rightmost peak among the depolarizing graded potentials reaches above the threshold line to about negative 51. This represents a stimulus of sufficient strength to trigger an action potential. The right half of the plot is labeled the hyperpolarizing graded potential. The plot line in this half begins at the resting potential of negative 70, but then drops to more negative membrane potentials. The first peak drops to negative 75 EV, the second peak drops to negative 80 EV and the third peak drops to negative 88 EV. These peaks represent a stimulus that results in hyperpolarization, which is triggered by the activation of specific ion channels in the cell membrane.",
+      "caption": "Graded potentials are temporary changes in the membrane voltage, the characteristics of which depend on the size of the stimulus. Some types of stimuli cause depolarization of the membrane, whereas others cause hyperpolarization. It depends on the specific ion channels that are activated in the cell membrane."
+    },
+    "1224_Post_Synaptic_Potential_Summation": {
+      "source": "media/1224_Post_Synaptic_Potential_Summation.jpg",
+      "sourceSha256": "db4f7d227aaed48db7588862068f4c62e226a9a57d13cf1383ed272a69afde8f",
+      "module": "m46503",
+      "kind": "photo",
+      "width": 1608,
+      "height": 1033,
+      "variants": [
+        {
+          "width": 800,
+          "height": 514,
+          "file": "1224_Post_Synaptic_Potential_Summation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1028,
+          "file": "1224_Post_Synaptic_Potential_Summation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph has membrane potential, in millivolts, on the X axis, ranging from negative 90 to negative 40. Time is on the X axis. The plot line is moving up and down between the resting membrane potential of minus 70 EV and the threshold potential of minus 55 EV. An EPSP causes the plot line to move higher, closer to the threshold potential. An IPSP causes the plot line to move lower, further away from the threshold potential. Toward the right side of the graph, the neuron receives an EPSP that pushes the membrane potential above the threshold, triggering an action potential that causes the plot line to quickly rise above positive 30 EV. The plot line then quickly drops back below minus 70 EV but then gradually increases back to minus 70. A picture of a neuron indicates that excitatory post synaptic potentials are commonly provided by synapses on the neuron’s dendrites. Inhibitory post synaptic potentials are commonly provided by synapses near the neuron’s axon hillock.",
+      "caption": "The result of summation of postsynaptic potentials is the overall change in the membrane potential. At point A, several different excitatory postsynaptic potentials add up to a large depolarization. At point B, a mix of excitatory and inhibitory postsynaptic potentials result in a different end result for the membrane potential."
+    },
+    "1225_Chemical_Synapse": {
+      "source": "media/1225_Chemical_Synapse.jpg",
+      "sourceSha256": "3996594def76234d0a91c1371bb74007a94b49032ae38f6a5b28b11f7d4a2c57",
+      "module": "m46503",
+      "kind": "photo",
+      "width": 1005,
+      "height": 930,
+      "variants": [
+        {
+          "width": 800,
+          "height": 740,
+          "file": "1225_Chemical_Synapse-800.webp"
+        },
+        {
+          "width": 1005,
+          "height": 930,
+          "file": "1225_Chemical_Synapse-1005.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a postsynaptic neuron. An axon from a presynaptic neuron is synapsing with the dendrites on the post synaptic neuron. The axon of the presynaptic neuron branches into several club shaped axon terminals. A magnified view of one of the synapses reveals that the axon terminal does not contact the dendrite of the postsynaptic neuron. Instead, there is a small space between the two structures, called the synaptic cleft. The axon terminal of the presynaptic neuron contains several synaptic vesicles, each holding about a dozen neurotransmitter particles. The synaptic vesicles travel to the edge of the axon terminal and release their neurotransmitters into the synaptic clefts The neurotransmitters travel through the synaptic cleft and bind to carrier proteins on the postsynaptic neuron that contain receptors foe neurotransmitters.",
+      "caption": "The synapse is a connection between a neuron and its target cell (which is not necessarily a neuron). The presynaptic element is the synaptic end bulb of the axon where Ca 2+ enters the bulb to cause vesicle fusion and neurotransmitter release. The neurotransmitter diffuses across the synaptic cleft to bind to its receptor. The neurotransmitter is cleared from the synapse either by enzymatic degradation, neuronal reuptake, or glial reuptake."
+    },
+    "1226_Receptor_Types": {
+      "source": "media/1226_Receptor_Types.jpg",
+      "sourceSha256": "e10c3b38e59e64dc0ca9dac8a11792b63a30dc8b55dbb733c24174af5532b3f8",
+      "module": "m46503",
+      "kind": "photo",
+      "width": 985,
+      "height": 1210,
+      "variants": [
+        {
+          "width": 800,
+          "height": 982,
+          "file": "1226_Receptor_Types-800.webp"
+        },
+        {
+          "width": 985,
+          "height": 1210,
+          "file": "1226_Receptor_Types-985.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram contains two images, labeled A and B. Both images show a cross section of a postsynaptic membrane. There are two proteins embedded in each of the two membrane cross sections. In diagram A, direct activation brings about an immediate response. Here, both of the membrane proteins are ion channels. Several hexagonal neurotransmitters bind to ionotropic receptors on the extracellular fluid side of the channels. The binding of neurotransmitters causes the channels to open, allowing ions to flow from the extracellular fluid into the cytosol. Image B shows indirect activation, which involves a prolonged response, amplified over time. Here, one of the cell membrane proteins is solid while the other is a channel. Neurotransmitters bind to metabotropic receptors on the extracellular side of the solid protein. This triggers the solid protein to activate a G protein in the cytoplasm. The G protein binds to an effector protein in the cytoplasm, which results in the production of several second messenger particles. The second messenger activates enzymes that open the channel protein, allowing ions to enter the cytoplasm.",
+      "caption": "(a) An ionotropic receptor is a channel that opens when the neurotransmitter binds to it. (b) A metabotropic receptor is a complex that causes metabolic changes in the cell when the neurotransmitter binds to it (1). After binding, the G protein hydrolyzes ATP and moves to the effector protein (2). When the G protein contacts the effector protein, the latter is activated. In the case shown, the effector protein then acts on ATP to generate a second messenger, cAMP (3). The second messenger can then go on to cause changes in the neuron, such as opening or closing ion channels, metabolic changes, and changes in gene transcription."
+    },
+    "1300_Human_Nervous_System": {
+      "source": "media/1300_Human_Nervous_System.jpg",
+      "sourceSha256": "92372112df277ba30ffdcb245e638cbc41a98d319c52dc2613437c61d579d2e8",
+      "module": "m46528",
+      "kind": "photo",
+      "width": 1144,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "1300_Human_Nervous_System-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 525,
+          "file": "1300_Human_Nervous_System-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a man balancing on a tightrope.",
+      "caption": "The ability to balance like an acrobat combines functions throughout the nervous system. The central and peripheral divisions coordinate control of the body using the senses of balance, body position, and touch on the soles of the feet. (credit: Rhett Sutphin)"
+    },
+    "1301_Neural_Tube_Dev": {
+      "source": "media/1301_Neural_Tube_Dev.jpg",
+      "sourceSha256": "9abf75b89f4b3cd64aeba873a8a6066d87accdcf0244beab301601e3f73d5361",
+      "module": "m46535",
+      "kind": "photo",
+      "width": 1171,
+      "height": 441,
+      "variants": [
+        {
+          "width": 800,
+          "height": 301,
+          "file": "1301_Neural_Tube_Dev-800.webp"
+        },
+        {
+          "width": 1171,
+          "height": 441,
+          "file": "1301_Neural_Tube_Dev-1171.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the development of the neural tube in an embryo. The left panel shows the formation of a neural fold in the neuroectoderm. The middle panel shows the formation of the neural plate and the right panel shows the formation of the neural crest and neural tube.",
+      "caption": "The neuroectoderm begins to fold inward to form the neural groove. As the two sides of the neural groove converge, they form the neural tube, which lies beneath the ectoderm. The anterior end of the neural tube will develop into the brain, and the posterior portion will become the spinal cord. The neural crest develops into peripheral structures."
+    },
+    "1302_Brain_Vesicle_DevN": {
+      "source": "media/1302_Brain_Vesicle_DevN.jpg",
+      "sourceSha256": "109859c7def2edfd921bccf1fb945b5ba9f31887401985196dc9d1a7590bdabc",
+      "module": "m46535",
+      "kind": "photo",
+      "width": 1204,
+      "height": 431,
+      "variants": [
+        {
+          "width": 800,
+          "height": 286,
+          "file": "1302_Brain_Vesicle_DevN-800.webp"
+        },
+        {
+          "width": 1204,
+          "height": 431,
+          "file": "1302_Brain_Vesicle_DevN-1204.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the developmental stages of the brain. The left panel shows a lateral view and an anterior view of the brain of a three-to-four week old embryo The three regions are labeled. The right panel shows the anterio and lateral view of a five-week embryo and the five regions are labeled.",
+      "caption": "The embryonic brain develops complexity through enlargements of the neural tube called vesicles; (a) The primary vesicle stage has three regions, and (b) the secondary vesicle stage has five regions."
+    },
+    "1303_Human_Neuroaxis": {
+      "source": "media/1303_Human_Neuroaxis.jpg",
+      "sourceSha256": "13f1308a30ddb2b4af4e27963bf8f2c333a9349a46d2f5ba5518e3254f7d6a2a",
+      "module": "m46535",
+      "kind": "photo",
+      "width": 812,
+      "height": 652,
+      "variants": [
+        {
+          "width": 800,
+          "height": 642,
+          "file": "1303_Human_Neuroaxis-800.webp"
+        },
+        {
+          "width": 812,
+          "height": 652,
+          "file": "1303_Human_Neuroaxis-812.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the neuroaxis in a human being in the left panel and a dog in the right panel.",
+      "caption": "The mammalian nervous system is arranged with the neural tube running along an anterior to posterior axis, from nose to tail for a four-legged animal like a dog. Humans, as two-legged animals, have a bend in the neuraxis between the brain stem and the diencephalon, along with a bend in the neck, so that the eyes and the face are oriented forward."
+    },
+    "1304_Spina_BifidaN": {
+      "source": "media/1304_Spina_BifidaN.jpg",
+      "sourceSha256": "c0547d0577f902eac93576057fa1f443e22343fca7277b3aab88057c196b0f72",
+      "module": "m46535",
+      "kind": "photo",
+      "width": 893,
+      "height": 1023,
+      "variants": [
+        {
+          "width": 800,
+          "height": 916,
+          "file": "1304_Spina_BifidaN-800.webp"
+        },
+        {
+          "width": 893,
+          "height": 1023,
+          "file": "1304_Spina_BifidaN-893.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the spinal cord in spina bifida, a birth defect. In the top panel, four different spinal cords are shown. The leftmost panel shows a normal spinal cord. The remaining panels show the spinal cord in various stages of spina bifida. The bottom panel shows an ultrasound image, with a white arrow showing the region of the defect.",
+      "caption": "(a) Spina bifida is a birth defect of the spinal cord caused when the neural tube does not completely close, but the rest of development continues. The result is the emergence of meninges and neural tissue through the vertebral column. (b) Fetal myelomeningocele is evident in this ultrasound taken at 21 weeks."
+    },
+    "1305_CerebrumN": {
+      "source": "media/1305_CerebrumN.jpg",
+      "sourceSha256": "1d843bbb82ea185855a8029e021c5042dfd7f70c328afac7c0ddf295211d4980",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 1119,
+      "height": 521,
+      "variants": [
+        {
+          "width": 800,
+          "height": 372,
+          "file": "1305_CerebrumN-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 521,
+          "file": "1305_CerebrumN-1119.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the lateral view on the left panel and anterior view on the right panel of the brain. The major parts including the cerebrum are labeled.",
+      "caption": "The cerebrum is a large component of the CNS in humans, and the most obvious aspect of it is the folded surface called the cerebral cortex."
+    },
+    "1306_Lobes_of_Cerebral_CortexN": {
+      "source": "media/1306_Lobes_of_Cerebral_CortexN.jpg",
+      "sourceSha256": "c94c06b5bfbf1ce18d71f5a6f7664432d169b51570d28f85d55b477ab411c392",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 733,
+      "height": 621,
+      "variants": [
+        {
+          "width": 733,
+          "height": 621,
+          "file": "1306_Lobes_of_Cerebral_CortexN-733.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the lateral view of the brain and the major lobes are labeled.",
+      "caption": "The cerebral cortex is divided into four lobes. Extensive folding increases the surface area available for cerebral functions."
+    },
+    "1307_Brodmann_Areas-f2ed": {
+      "source": "media/1307_Brodmann_Areas-f2ed.jpg",
+      "sourceSha256": "4a6cb18fdbea654f034edbf2a10b1d55ee78b545a9e3c2050841e13f769e3e69",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 2328,
+      "height": 1370,
+      "variants": [
+        {
+          "width": 800,
+          "height": 470,
+          "file": "1307_Brodmann_Areas-f2ed-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 941,
+          "file": "1307_Brodmann_Areas-f2ed-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure, the Brodmann areas, identifying the functional regions of the brain, are mapped. The left panel shows the lateral surface of the brain and the right panel shows the medial surface.",
+      "caption": "Brodmann mapping of functionally distinct regions of the cortex was based on its cytoarchitecture at a microscopic level."
+    },
+    "1308_Frontal_Section_Basal_Nuclei": {
+      "source": "media/1308_Frontal_Section_Basal_Nuclei.jpg",
+      "sourceSha256": "dcacfeb5c9193ff5d6df8248426a4e38b4e674788ba8a10be508c69be7b3e401",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 684,
+      "height": 535,
+      "variants": [
+        {
+          "width": 684,
+          "height": 535,
+          "file": "1308_Frontal_Section_Basal_Nuclei-684.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the frontal section of the brain and identifies the major components of the basal nuclei.",
+      "caption": "The major components of the basal nuclei, shown in a frontal section of the brain, are the caudate (just lateral to the lateral ventricle), the putamen (inferior to the caudate and separated by the large white-matter structure called the internal capsule), and the globus pallidus (medial to the putamen)."
+    },
+    "1309_Basal_Nuclei_Connections": {
+      "source": "media/1309_Basal_Nuclei_Connections.jpg",
+      "sourceSha256": "f512c1dc23da8c878c6e47f081718c34789c5ed3f1ed75148ad15013b9a0d435",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 500,
+      "height": 496,
+      "variants": [
+        {
+          "width": 500,
+          "height": 496,
+          "file": "1309_Basal_Nuclei_Connections-500.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the connection between the different regions of the brain such as the cortex, striatum and the thalamus.",
+      "caption": "Input to the basal nuclei is from the cerebral cortex, which is an excitatory connection releasing glutamate as a neurotransmitter. This input is to the striatum, or the caudate and putamen. In the direct pathway, the striatum projects to the internal segment of the globus pallidus and the substantia nigra pars reticulata (GPi/SNr). This is an inhibitory pathway, in which GABA is released at the synapse, and the target cells are hyperpolarized and less likely to fire. The output from the basal nuclei is to the thalamus, which is an inhibitory projection using GABA. The diagram also includes the substantia nigra compacta (SNc), globus pallidus external segment (GPe), and subthalamic nucleus (STN)."
+    },
+    "1310_Diencephalon": {
+      "source": "media/1310_Diencephalon.jpg",
+      "sourceSha256": "d64f5ccd2b885e61ced2db288b4ad4d0acebea4439ad92851eb788d2ee3dec0a",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 869,
+      "height": 689,
+      "variants": [
+        {
+          "width": 800,
+          "height": 634,
+          "file": "1310_Diencephalon-800.webp"
+        },
+        {
+          "width": 869,
+          "height": 689,
+          "file": "1310_Diencephalon-869.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the location of the thalamus, hypothalamus and pituitary gland in the brain.",
+      "caption": "The diencephalon is composed primarily of the thalamus and hypothalamus, which together define the walls of the third ventricle. The thalami are two elongated, ovoid structures on either side of the midline that make contact in the middle. The hypothalamus is inferior and anterior to the thalamus, culminating in a sharp angle to which the pituitary gland is attached."
+    },
+    "1311_Brain_Stem": {
+      "source": "media/1311_Brain_Stem.jpg",
+      "sourceSha256": "9da8c3dbbdb6240c923d1325e4f6f740765e41d625a5e3d28e6be97cf1e374e4",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 906,
+      "height": 685,
+      "variants": [
+        {
+          "width": 800,
+          "height": 605,
+          "file": "1311_Brain_Stem-800.webp"
+        },
+        {
+          "width": 906,
+          "height": 685,
+          "file": "1311_Brain_Stem-906.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the location of the midbrain, pons and the medulla in the brain.",
+      "caption": "The brain stem comprises three regions: the midbrain, the pons, and the medulla."
+    },
+    "1312_CerebellumN": {
+      "source": "media/1312_CerebellumN.jpg",
+      "sourceSha256": "2fa0dab29dead55af8f35f8ea0961d607969c4827684467dced2a2c90f9c0340",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 875,
+      "height": 1080,
+      "variants": [
+        {
+          "width": 800,
+          "height": 987,
+          "file": "1312_CerebellumN-800.webp"
+        },
+        {
+          "width": 875,
+          "height": 1080,
+          "file": "1312_CerebellumN-875.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the location of the cerebellum in the brain. In the top panel, a lateral view labels the location of the cerebellum and the deep cerebellar white matter. In the bottom panel, a photograph of a brain, with the cerebellum in pink is shown.",
+      "caption": "The cerebellum is situated on the posterior surface of the brain stem. Descending input from the cerebellum enters through the large white matter structure of the pons. Ascending input from the periphery and spinal cord enters through the fibers of the inferior olive. Output goes to the midbrain, which sends a descending signal to the spinal cord."
+    },
+    "1313_Spinal_Cord_Cross_Section": {
+      "source": "media/1313_Spinal_Cord_Cross_Section.jpg",
+      "sourceSha256": "fe8415b361505ba745b9063c29ad192549ecd5300ed44ae3ada0132c779da8e6",
+      "module": "m46533",
+      "kind": "photo",
+      "width": 1642,
+      "height": 1883,
+      "variants": [
+        {
+          "width": 800,
+          "height": 917,
+          "file": "1313_Spinal_Cord_Cross_Section-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1835,
+          "file": "1313_Spinal_Cord_Cross_Section-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the cross section of the spinal cord. The top panel shows a diagram of the cross section and the major parts are labeled. The bottom panel shows an ultrasound image of the spinal cord cross section.",
+      "caption": "The cross-section of a thoracic spinal cord segment shows the posterior, anterior, and lateral horns of gray matter, as well as the posterior, anterior, and lateral columns of white matter. LM × 40. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1314_Circle_of_WillisN": {
+      "source": "media/1314_Circle_of_WillisN.jpg",
+      "sourceSha256": "4ee355c537f8796bb2862c469dbd0bda29aa45b8978c239c17422f1ab92df646",
+      "module": "m46719",
+      "kind": "photo",
+      "width": 546,
+      "height": 920,
+      "variants": [
+        {
+          "width": 546,
+          "height": 920,
+          "file": "1314_Circle_of_WillisN-546.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a series of interconnected blood vessels and capillaries.",
+      "caption": "The blood supply to the brain enters through the internal carotid arteries and the vertebral arteries, eventually giving rise to the circle of Willis."
+    },
+    "1315_Brain_Sinuses": {
+      "source": "media/1315_Brain_Sinuses.jpg",
+      "sourceSha256": "5b5d7b8ec12ba5c3373355e697446f2cc994557a5f0ede70f9dd63e7be661065",
+      "module": "m46719",
+      "kind": "photo",
+      "width": 1090,
+      "height": 826,
+      "variants": [
+        {
+          "width": 800,
+          "height": 606,
+          "file": "1315_Brain_Sinuses-800.webp"
+        },
+        {
+          "width": 1090,
+          "height": 826,
+          "file": "1315_Brain_Sinuses-1090.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a lateral view of the brain and labels the location of the different sinuses.",
+      "caption": "Blood drains from the brain through a series of sinuses that connect to the jugular veins."
+    },
+    "1316_Meningeal_LayersN": {
+      "source": "media/1316_Meningeal_LayersN.jpg",
+      "sourceSha256": "8e8c5d14d098828242c11cd3042e786f6ec27cf1d5daf5872b5c41adfbfe7062",
+      "module": "m46719",
+      "kind": "photo",
+      "width": 949,
+      "height": 515,
+      "variants": [
+        {
+          "width": 800,
+          "height": 434,
+          "file": "1316_Meningeal_LayersN-800.webp"
+        },
+        {
+          "width": 949,
+          "height": 515,
+          "file": "1316_Meningeal_LayersN-949.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a cross-section through the brain. The different meningeal layers are labeled.",
+      "caption": "The layers of the meninges in the longitudinal fissure of the superior sagittal sinus are shown, with the dura mater adjacent to the inner surface of the cranium, the pia mater adjacent to the surface of the brain, and the arachnoid and subarachnoid space between them. An arachnoid villus is shown emerging into the dural sinus to allow CSF to filter back into the blood for drainage."
+    },
+    "1317_CFS_Circulation": {
+      "source": "media/1317_CFS_Circulation.jpg",
+      "sourceSha256": "e44a9dc042ff6f3da87ec32993b04377f15e26b4776f0715882592b1cf68a4f3",
+      "module": "m46719",
+      "kind": "photo",
+      "width": 1065,
+      "height": 693,
+      "variants": [
+        {
+          "width": 800,
+          "height": 520,
+          "file": "1317_CFS_Circulation-800.webp"
+        },
+        {
+          "width": 1065,
+          "height": 693,
+          "file": "1317_CFS_Circulation-1065.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the cross section of the brain and the major parts are labeled. Arrows on the figure show the direction of circulation of the cerebro-spinal fluid.",
+      "caption": "The choroid plexus in the four ventricles produce CSF, which is circulated through the ventricular system and then enters the subarachnoid space through the median and lateral apertures. The CSF is then reabsorbed into the blood at the arachnoid granulations, where the arachnoid membrane emerges into the dural sinuses."
+    },
+    "1318b_DRG": {
+      "source": "media/1318b_DRG.jpg",
+      "sourceSha256": "be4db44f52b313f414b92325179580f62708e38ade8d0adcae17ec7183a1356a",
+      "module": "m46553",
+      "kind": "photo",
+      "width": 1975,
+      "height": 1046,
+      "variants": [
+        {
+          "width": 800,
+          "height": 423,
+          "file": "1318b_DRG-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 847,
+          "file": "1318b_DRG-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows a magnified view of the dorsal root ganglion, showing the satellite cells and the cell bodies of sensory neurons.",
+      "caption": "The slide includes both a cross-section of the lumbar spinal cord and a section of the dorsal root ganglion (see also ) (tissue source: canine). LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1318b_Dorsal_Root_Ganglion": {
+      "source": "media/1318b_Dorsal_Root_Ganglion.jpg",
+      "sourceSha256": "eedc3d7eaf80d450b09f6e3e97c4c9f1a7b99eee2744b3900c989f7be00a6d6a",
+      "module": "m46553",
+      "kind": "photo",
+      "width": 1621,
+      "height": 921,
+      "variants": [
+        {
+          "width": 800,
+          "height": 454,
+          "file": "1318b_Dorsal_Root_Ganglion-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 909,
+          "file": "1318b_Dorsal_Root_Ganglion-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows the structure of the dorsal root ganglion. The cell bodies of the neurons and the axon bundles are also labeled.",
+      "caption": "The cell bodies of sensory neurons, which are unipolar neurons by shape, are seen in this photomicrograph. Also, the fibrous region is composed of the axons of these neurons that are passing through the ganglion to be part of the dorsal nerve root (tissue source: canine). LM × 40. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1319B_Nerve_Mag": {
+      "source": "media/1319B_Nerve_Mag.jpg",
+      "sourceSha256": "e974723595fcc32ae402a9098557a37464a4202cd932119ffa5e00f9deca40e8",
+      "module": "m46553",
+      "kind": "photo",
+      "width": 1975,
+      "height": 958,
+      "variants": [
+        {
+          "width": 800,
+          "height": 388,
+          "file": "1319B_Nerve_Mag-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 776,
+          "file": "1319B_Nerve_Mag-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows a magnified view of the nerve. The perineurium and the endoneurium are labeled.",
+      "caption": "Zoom in on this slide of a nerve trunk to examine the endoneurium, perineurium, and epineurium in greater detail (tissue source: simian). LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1319_Nerve_Structure": {
+      "source": "media/1319_Nerve_Structure.jpg",
+      "sourceSha256": "57511e55f64af320cab339c044e808eeec6db684592a448f63fd11a181a95b35",
+      "module": "m46553",
+      "kind": "photo",
+      "width": 1856,
+      "height": 2119,
+      "variants": [
+        {
+          "width": 800,
+          "height": 913,
+          "file": "1319_Nerve_Structure-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1826,
+          "file": "1319_Nerve_Structure-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of a nerve. The top panel shows the cross section of a spinal nerve and the major parts are labeled. The bottom panel shows a micrograph of the cross-section of a spinal nerve.",
+      "caption": "The structure of a nerve is organized by the layers of connective tissue on the outside, around each fascicle, and surrounding the individual nerve fibers (tissue source: simian). LM × 40. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1320_The_Cranial_Nerves": {
+      "source": "media/1320_The_Cranial_Nerves.jpg",
+      "sourceSha256": "4ef58bb2a85419d3fcf6f5384aacd08859efba3471195edce5ccd114418f8060",
+      "module": "m46553",
+      "kind": "photo",
+      "width": 784,
+      "height": 491,
+      "variants": [
+        {
+          "width": 784,
+          "height": 491,
+          "file": "1320_The_Cranial_Nerves-784.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagrams shows the brain and the main nerves in the brain are labeled.",
+      "caption": "The anatomical arrangement of the roots of the cranial nerves observed from an inferior view of the brain."
+    },
+    "1321_Spinal_Nerve_Plexuses": {
+      "source": "media/1321_Spinal_Nerve_Plexuses.jpg",
+      "sourceSha256": "76db089a1e50517cbbb7bb75c06f889833e692b6e1f21f7179982bd43b935a0e",
+      "module": "m46553",
+      "kind": "photo",
+      "width": 1516,
+      "height": 2518,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1328,
+          "file": "1321_Spinal_Nerve_Plexuses-800.webp"
+        },
+        {
+          "width": 1516,
+          "height": 2518,
+          "file": "1321_Spinal_Nerve_Plexuses-1516.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a torso of a human body. The spinal cord is shown in the body and the main nerves along the spinal cord are labeled.",
+      "caption": "There are four main nerve plexuses in the human body. The cervical plexus supplies nerves to the posterior head and neck, as well as to the diaphragm. The brachial plexus supplies nerves to the arm. The lumbar plexus supplies nerves to the anterior leg. The sacral plexus supplies nerves to the posterior leg."
+    },
     "200_DNA_Double_Helix-02": {
       "source": "media/200_DNA_Double_Helix-02.jpg",
       "sourceSha256": "b5924062069c273a31198aaf9584be612373553c089df2c4a2925d5da900a45b",

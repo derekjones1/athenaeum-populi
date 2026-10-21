@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 11,
-      "mappedSections": 67,
+      "localChapters": 12,
+      "mappedSections": 72,
       "units": [
         {
           "index": 1,
@@ -854,6 +854,51 @@
       "moduleId": "m46482",
       "sourceTitle": "Appendicular Muscles of the Pelvic Girdle and Lower Limbs",
       "moduleSha256": "e1f977e7eb556d989fd0fb54928800b8687389133780f9fe25481e9f257a6c11"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/01-basic-structure-and-function-of-the-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "12.1",
+      "moduleId": "m46500",
+      "sourceTitle": "Basic Structure and Function of the Nervous System",
+      "moduleSha256": "b1ce757f7850f9fe378059d9d7d0ee6319902f9462bd364c06355edf63fb73c9"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/02-nervous-tissue.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "12.2",
+      "moduleId": "m46509",
+      "sourceTitle": "Nervous Tissue",
+      "moduleSha256": "13bd7db4fcd4a09e98a108d948fbf676dec6e509999a1e60798faa26241e8d5d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/03-the-function-of-nervous-tissue.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "12.3",
+      "moduleId": "m46531",
+      "sourceTitle": "The Function of Nervous Tissue",
+      "moduleSha256": "40a295230dd719f6da801f7b52fbc2558d5b500602d64a2d3e0e94ef99060b1b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/04-the-action-potential.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "12.4",
+      "moduleId": "m46526",
+      "sourceTitle": "The Action Potential",
+      "moduleSha256": "803ca88b182812e26137405b167ac25712b08ac556e14c36642bf54abc539dba"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/05-communication-between-neurons.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "12.5",
+      "moduleId": "m46503",
+      "sourceTitle": "Communication Between Neurons",
+      "moduleSha256": "8989f1169d6f59b0930297bc9d067f56d9e4556e2719c9cff3f5d56356b1f21b"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

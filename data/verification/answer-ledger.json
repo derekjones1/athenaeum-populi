@@ -1184,6 +1184,10 @@
     "result": "agrees"
    }
   },
+  "02914be7ccd9b3a3": {
+   "verdict": "ok",
+   "note": "CT fs-id1583106; model answer = source solution fs-id1367999 verbatim; checks are its clauses. Hint reworded by role (second paragraph of Basic Functions), checker D1."
+  },
   "0291f0394650d85e": {
    "verdict": "ok",
    "note": "body cloze from § Antibody Classes: \"The constant region of an antibody molecule determines its class, or isotype .\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -2814,6 +2818,14 @@
   "063e771318180865": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0646594bec04609f": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1501758 receptor potential; body term-00002",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -5732,6 +5744,14 @@
     "result": "agrees"
    }
   },
+  "0d2cd7b61859487e": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1284216 (initial segment); body fs-id1455946; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0d2e1eb01378f03a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8162,6 +8182,14 @@
   "131fc386ee089d48": {
    "verdict": "ok",
    "note": "Bio 41.5 selfcheck \"How does the renin-angiotensin-aldosterone mechani\": hint location-only, model answer and rubric checked against the module; parent re-read Sep 24 2026"
+  },
+  "1327318b7a7353ec": {
+   "verdict": "ok",
+   "note": "Review fs-id1862585, key D 'cerebral cortex'; body fs-id1521110 'Within the cerebral cortex, information is processed among many neurons, integrating…'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "13279c8f350a3402": {
    "verdict": "ok",
@@ -11593,6 +11621,14 @@
     "result": "agrees"
    }
   },
+  "1aa11d212ad47165": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2186503 integration; stem = glossary meaning.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1aaa20804abac7a8": {
    "verdict": "ok"
   },
@@ -12362,6 +12398,14 @@
    "note": "Glossary recall (fs-id2229089, term ATP = 'adenosine triphosphate, the cell's energy currency'). Locally authored prompt describes the meaning without naming ATP or 'adenosine triphosphate'; answer/accept match the glossary term and its expansion. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1c51fe86901a0a3c": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1435918, key A = microglia; body fs-id1490290 CNS-resident macrophages; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -13571,6 +13615,14 @@
    "note": "glossary recall: apomixis (fs-idm139696656) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1f3c0c057d298743": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2151899 'each extension is generally referred to as a process'; key printed in body; glossary term process. accept \"cell process\" added (checker D3).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16262,6 +16314,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "25d36a361e081370": {
+   "verdict": "ok",
+   "note": "RQ fs-id1696554 key A sodium; body para fs-id755131",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -19727,6 +19787,10 @@
     "result": "agrees"
    }
   },
+  "2e62d5c38aeec5dd": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1495328 graded selfcheck; model answer = solution fs-id690331 verbatim; fixed by body paras fs-id755131 (Na+ concentration gradient, factor of 10) and fs-id1667874 (K+ channels open at +30 mV, concentration gradient acts on K+, K+ leaves) and fs-id1229076 (K+ equilibrium)"
+  },
   "2e64be499aa3723e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -20276,6 +20340,14 @@
    "note": "Filler cloze textin, no source exercise — built from the Key Concepts and Summary sentence 'Transposons are molecules of DNA with inverted repeats at their ends that also encode the enzyme transposase...'. Fills the third objective's Practice group to the three-item floor. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2f9335d2a1b2bb46": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id756623 electrochemical exclusion; body para fs-id2104509",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -21581,6 +21653,14 @@
    "note": "glossary recall: monoecious (fs-idp21537072) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "32fe9a21799e5f5d": {
+   "verdict": "ok",
+   "note": "Review fs-id1830454, key C 'molecules', options and order as printed",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -27092,6 +27172,14 @@
     "result": "agrees"
    }
   },
+  "4045350c515e25f8": {
+   "verdict": "ok",
+   "note": "RQ fs-id2070100, key D = nerve; body fs-id2109899 'the same thing in the PNS would be called a nerve'; table row 2.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4045b224dac2aba7": {
    "verdict": "ok",
    "note": "key-term recall: antibiogram; printed in § The Kirby-Bauer Disk Diffusion Test: \"An antibiogram is a compilation of local antibiotic susceptibility data broken down by bacterial pathogen.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -30524,6 +30612,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 723): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "485897c6864226ed": {
+   "verdict": "ok",
+   "note": "CT fs-id2158166; model answer = source solution fs-id2102056 verbatim; checks are its clauses."
+  },
   "485e0622d3f80c51": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32196,6 +32288,14 @@
     "result": "agrees"
    }
   },
+  "4c7d96b7d741c511": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1332564; body fs-id1110182; accept nodes of Ranvier (first-word plural, grader does not fold); re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4c7e776ab6b7ccc4": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -33715,6 +33815,14 @@
   "50161fffd09274e1": {
    "verdict": "ok",
    "note": "author-built from § The Diversity of Life: \"Nodes and branches comprise a phylogenetic tree.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5016b829ef8bf95c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1860007: True unipolar cells are only found in invertebrate animals; re-read against m46509 CNXML and the page (re-hashed after checker fix: hyphen accept / hint reworded)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -37969,6 +38077,10 @@
     "result": "agrees"
    }
   },
+  "5a9b0996f1fd67b7": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2041756, graded selfcheck; model answer = source solution fs-id1369777 verbatim; fixed by the note's own sentences (fat tissue and water appear as different shades; white matter fatty from myelin, gray matter not, easily distinguished in MRI)."
+  },
   "5a9c46f58fbdc0d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -39490,6 +39602,14 @@
     "result": "agrees"
    }
   },
+  "5e319da2c8fae556": {
+   "verdict": "ok",
+   "note": "RQ fs-id1490421 key D thick, myelinated; body para fs-id1492164",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5e34cd8d4097e1ff": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -39609,6 +39729,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5e767c06bfdd52d2": {
+   "verdict": "ok",
+   "note": "source CT fs-id1243214 (MS); model answer = solution fs-id1526500 verbatim; re-read against m46509 CNXML and the page"
   },
   "5e781cbbd03547d7": {
    "verdict": "ok",
@@ -40923,6 +41047,14 @@
     "result": "agrees"
    }
   },
+  "623e82ef2ea5ed34": {
+   "verdict": "ok",
+   "note": "RQ fs-id1859771 key B (+15 mV); body fs-id2259667 'positive 15 mV ... threshold'; option d hyphen set as minus",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "623f66815e3c3dda": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -41568,6 +41700,14 @@
   "6443408ea1d72173": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6447ab66e117835d": {
+   "verdict": "ok",
+   "note": "RQ fs-id1125844 key A physical stimulus; body para fs-id1805702 'physical distortion' and fs-id1187632 'physical stimulus'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -42410,6 +42550,10 @@
     "result": "agrees"
    }
   },
+  "66d4b7622bd08690": {
+   "verdict": "ok",
+   "note": "CT fs-id1445102 model answer = solution fs-id2092195 verbatim; stem 'axon potential' corrected to 'action potential' (one-word)"
+  },
   "66e4e269fd12e93d": {
    "verdict": "ok",
    "note": "re-read against CNXML m46034 and the page text"
@@ -43172,6 +43316,14 @@
    "verdict": "ok",
    "note": "body CYU1 selfcheck; model answer assembled from the ancient-societies subsection's three examples (Nubia beer, herbalists/Youyou, moldy bread), no new claim | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "689b8e3e4efd48c1": {
+   "verdict": "ok",
+   "note": "source RQ fs-id696587, key D = white blood cells; body fs-id1519090; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "689b9ad4f4ad2eb6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -43705,6 +43857,14 @@
   "6a3447355666fc61": {
    "verdict": "ok",
    "note": "KC 1 1.5 § body introduction (eip-991), m45989"
+  },
+  "6a3779b00e2b308e": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1953899: Multipolar neurons are all of the neurons that are not unipolar or bipolar; re-read against m46509 CNXML and the page (re-hashed after checker fix: hyphen accept / hint reworded)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6a385f45bccf8b7d": {
    "verdict": "ok",
@@ -45169,6 +45329,14 @@
     "result": "agrees"
    }
   },
+  "6e15e834683889d4": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch12_02: astrocyte, ependymal cell -> CNS glia; Schwann cell, satellite cell -> PNS glia (cells read off the table); oligodendrocyte and microglia left out (RQ keys); re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6e16cba4655ab8bb": {
    "verdict": "ok",
    "note": "Glossary textin, term 'thermocline' (fs-idm143618064). Prompt is the glossary meaning verbatim; answer matches the glossary term. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -45376,6 +45544,14 @@
   "6e9d8a7d85c6db61": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6eab7536f7491d55": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1505883 neuropeptide; body term-00016; accept neuro-peptide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6eb1fe25cfa93f64": {
    "verdict": "ok"
@@ -46824,6 +47000,14 @@
   "721d9ca894e80292": {
    "verdict": "ok",
    "note": "author-built from § Preparing Specimens for Light Microscopy: \"In other words, two organisms in a differentially stained sample may appear to be different colors.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "721fa61afc3acbd6": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1138759 excitable membrane; body term-00001 in opening para fs-id1496599; accept excitable cell membrane (grader-checked)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -50011,6 +50195,22 @@
     "result": "agrees"
    }
   },
+  "79a5f94c65258196": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1499204: a Schwann cell wraps around a portion of only one axon segment and no others; distractors from fs-id1595146; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "79a885fbaf1e32d2": {
+   "verdict": "ok",
+   "note": "RQ fs-id1942313 key B threshold; body para fs-id1512518",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "79a9350db71298f8": {
    "verdict": "ok",
    "note": "TI6b: f(x)=x^3-3x, f'(x)=3x^2-3, f'(0)=-3 by direct substitution; confirmed numerically node central-difference -2.9999999999990004. Matches source Try It solution's fourth value (-3). | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -51028,6 +51228,14 @@
     "result": "agrees"
    }
   },
+  "7bdbf0be7e7c3e6d": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1613476 leakage channel; prompt built from body para fs-id1241528 (opens and closes at random, intrinsic switching rate, contributes to resting transmembrane voltage), prints neither gated nor leak; accept non-gated channel|nongated channel (grader-checked)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7bdf94234c92a99f": {
    "verdict": "ok",
    "note": "body CYU box2 bullet1: matches the emerging-disease definition sentence and its 'implies the need to apply resources' clause | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -51454,6 +51662,10 @@
     "result": "agrees"
    }
   },
+  "7c9bb6e07c620891": {
+   "verdict": "ok",
+   "note": "CT fs-id1146501 model answer = solution fs-id1960453 verbatim"
+  },
   "7ca2b834a6a9bfae": {
    "verdict": "ok",
    "note": "body cloze from § Oversight of Gene Therapy: \"Along with several local agencies, these federal agencies interact with the institutional review board to ensure that protocols are in plac…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -51800,6 +52012,14 @@
   "7d62d4136bd834aa": {
    "verdict": "ok",
    "note": "y = 4x is slope 4 through the origin, both intercepts at (0,0). Grid widened -7..7 -> -14..14 for plotPoints slack (7 reachable, was exactly 3). | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "7d6976a0efddb80f": {
+   "verdict": "ok",
+   "note": "RQ fs-id890519 key C hyperpolarizing; body fs-id2056346",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "7d6a1e6a807fbf30": {
    "verdict": "ok",
@@ -53492,6 +53712,14 @@
     "result": "agrees"
    }
   },
+  "81cacf1ddea3172c": {
+   "verdict": "ok",
+   "note": "Review fs-id1533571, key C 'fraction of a second'; body fs-id1860007 'All of this occurs in a fraction of a second'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "81cdf3e7eb0859ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation: (y-3)^2=-12(x+1): h=-1,k=3 -> vertex (-1,3); matches source key V:(-1,3).",
@@ -53503,6 +53731,14 @@
   "81cea78d17cb9799": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "81d2780d84eee464": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2610614 stimulus; stem = glossary meaning; accept stimuli (irregular plural, printed in body).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -53682,6 +53918,14 @@
    "note": "Review Q (fs-idm150416560), keyed C matches source solution and reverse-transcriptase paragraph. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "823924be1d6c9def": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1632888 glial cell; stem = glossary meaning; accept glial (head noun dropped); key printed in body fs-id2151899. accept now glial|glia|neuroglia (checker D3).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -55163,6 +55407,10 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "8588864ad720231c": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1318756, model answer = solution fs-id1543336 verbatim"
+  },
   "858a8cd80f8867ed": {
    "verdict": "ok",
    "note": "ILQ fs-id1173409 (solution fs-id1187632) verbatim minus leading figure link; fixed by fs-id1689574 spiny ... desmosome"
@@ -55523,6 +55771,14 @@
    "note": "glossary recall: heritability (fs-idp195637184) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8685c6dc45016118": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2055816: performing similar functions in the periphery as astrocytes do in the CNS; distractors the other CNS glia; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -56175,6 +56431,14 @@
   "8876770865e8e267": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "88799b652bd09488": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1707224 sensation; stem = glossary meaning; accept 'sensory functions' (module's parenthetical synonym, fs-id1390772).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56876,6 +57140,14 @@
   "8a195120f5ac54c1": {
    "verdict": "ok"
   },
+  "8a1eec4af055fd86": {
+   "verdict": "ok",
+   "note": "source RQ fs-id757155, key C = lipids and proteins; body fs-id1170598; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8a21c5ba7f4ea06f": {
    "verdict": "ok",
    "note": "author-built from § Multidrug-Resistant Microbes and Cross Resistance: \"MDRs are colloquially known as “ superbugs ” and carry one or more resistance mechanism(s), making them resistant to multiple antimicrobial…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -57420,6 +57692,14 @@
     "result": "agrees"
    }
   },
+  "8b9c538162901fbd": {
+   "verdict": "ok",
+   "note": "summary cloze, summary para fs-id1051549: 'A slight overshoot of hyperpolarization marks the end of the action potential.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8b9e729886cb749b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -57728,6 +58008,10 @@
     "result": "agrees"
    }
   },
+  "8c66999dfcbe688e": {
+   "verdict": "ok",
+   "note": "source CT fs-id1531347 (bipolar relay); model answer = solution fs-id1173816 verbatim; re-read against m46509 CNXML and the page"
+  },
   "8c6959088737562e": {
    "verdict": "ok",
    "note": "19.1 allele frequency: hint reworded to drop 'gene frequency'; answer unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -58013,6 +58297,14 @@
   "8d05af446eb1c90a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8d08dc463b05b7da": {
+   "verdict": "ok",
+   "note": "RQ fs-id2002542, key D = axon; body 'axon, which is the fiber that connects a neuron with its target'; glossary axon 'carries an electrical signal ... toward a target cell'.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58913,6 +59205,14 @@
     "result": "agrees"
    }
   },
+  "8f64502be1d8990a": {
+   "verdict": "ok",
+   "note": "RQ fs-id1433059, key B = autonomic; body fs-id2025833 (ANS: involuntary control, motor output to cardiac muscle; sweat glands controlled by the autonomic system); options and order as source.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8f6759855a8a2757": {
    "verdict": "ok",
    "note": "Model answer combines the rapid-spread sentence with the SIRS/sepsis sentence, both from this module. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -59721,6 +60021,14 @@
   "91757ca492b2cf8e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9177613546350c9a": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1999667 temporal summation; body term-00008",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66186,6 +66494,10 @@
    "verdict": "ok",
    "note": "det2([[2,-5],[-1,6]]) = 2*6-(-1)*(-5) = 12-5 = 7, run in Node; matches CNXML solution 7 (source exercise fs-id1434436). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "a184b417b485b81f": {
+   "verdict": "ok",
+   "note": "CT fs-id1188256; model = solution fs-id1868224 verbatim"
+  },
   "a1870de88f8794d9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68459,6 +68771,14 @@
     "result": "agrees"
    }
   },
+  "a69026f2fa717e13": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1218166 inactivation gate; body para fs-id1050208",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a693220a877ecd28": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -69860,6 +70180,10 @@
     "result": "agrees"
    }
   },
+  "aa142b2dab9d29b3": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2543289 graded selfcheck; model = solution fs-id2317987 (Ca2+ in Unicode); fixing sentence fs-id2211233"
+  },
   "aa173196d44b3738": {
    "verdict": "ok",
    "note": "lim_{x->1}(10-10x^2)/(x^2-3x+2) = -10(1+x)/(x-2) at x=1 = 20 exactly; node-sampled and algebraically simplified; matches the printed solution for fs-id1165137770148 (source exercise 35, printed 20.00)."
@@ -70009,6 +70333,14 @@
   },
   "aa9919607f2c01c4": {
    "verdict": "ok"
+  },
+  "aa9a796c1e627fde": {
+   "verdict": "ok",
+   "note": "summary cloze, m46531 fs-id1860019 first sentence 'Sensation starts with the activation of a sensory ending, such as the thermoreceptor…'; accept 'sensory receptor' from body fs-id2081554 'a type of sensory receptor … called a thermoreceptor'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "aa9b8fc7c749d202": {
    "verdict": "ok",
@@ -71571,6 +71903,14 @@
   "ae6a1ed11afa7930": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "ae6c7766fd5a264e": {
+   "verdict": "ok",
+   "note": "RQ fs-id1532169 key D metabotropic receptor; body fs-id1943508",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ae729638cc552362": {
    "verdict": "ok",
@@ -74839,6 +75179,14 @@
   "b64b3369611f1c96": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b64c3496e15094cf": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1526539 'neurotransmitter'; meaning verbatim; accept neuro-transmitter; placed before action potential",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b657a2a7e2fed428": {
    "verdict": "ok",
@@ -78848,6 +79196,10 @@
   "c0022972d8d2b178": {
    "verdict": "ok",
    "note": "m66651 fs-idm32162688 CTQ, model answer reuses source solution fs-idm85451968 verbatim; 3 checkpoints each a clause of it. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c00e048a93ea91ca": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1639687 graded selfcheck; model = solution fs-id2543284 verbatim; fixing sentences fs-id1966997 (Summation) per Part C"
   },
   "c0106e68a576459c": {
    "verdict": "ok",
@@ -83489,6 +83841,14 @@
     "result": "agrees"
    }
   },
+  "cb468e389571f9dd": {
+   "verdict": "ok",
+   "note": "RQ fs-id1989047, key A = myelinated axons; body fs-id2151899 'white matter (the regions with many axons)... axons are insulated by... myelin'; glossary white matter 'mostly myelinated axons'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cb4c742b93eb59c1": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -83807,6 +84167,14 @@
   "cc49b718c149c882": {
    "verdict": "ok",
    "note": "author sortbins from table image; every item re-read against the image group rows and the body; no item fits two bins",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cc4f658a9eaad8f2": {
+   "verdict": "ok",
+   "note": "RQ fs-id1661528 key D '-80 mv' (set as −80 mV, one-word case fix); body fs-id1517328 relative phase during K+ outflow / hyperpolarization below −70 mV (fs-id1229076)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85967,6 +86335,14 @@
     "result": "agrees"
    }
   },
+  "d1e260098f0ac623": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id1860007 first two sentences verbatim; glossary term fs-id1667047 'precentral gyrus of the frontal cortex'; full name, pre-central gyrus, precentral gyri accepted",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d1e341610f312cb3": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: hepatitis (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -86672,6 +87048,14 @@
   "d3f14f08252aafd2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d3f3c99016c4c019": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1535172 'action potential'; meaning verbatim (semicolon → comma)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87539,6 +87923,14 @@
     "result": "agrees"
    }
   },
+  "d5d0534a6eb78a4a": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1640624 (axon hillock); body fs-id1455946 prints it; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d5d7e24c6487299e": {
    "verdict": "ok",
    "note": "selfcheck model answer is the Live Attenuated Vaccines disadvantages paragraph, quoted near-verbatim. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
@@ -88259,6 +88651,14 @@
   "d76ef0b1a3769d8c": {
    "verdict": "ok",
    "note": "key-term recall: erythema; printed in § Acute Inflammation: \"They also contribute to the five observable signs associated with the inflammatory response: erythema (redness), edema (swelling), heat, pa…\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d77f3b6a24c35298": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1142742, key A = oligodendrocyte; re-read against m46509 CNXML and the page (re-hashed after checker fix: hyphen accept / hint reworded)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -89860,6 +90260,10 @@
     "result": "agrees"
    }
   },
+  "db9ad5f37dcf190d": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1491206, model answer = solution fs-id1543673 verbatim"
+  },
   "db9d541507f53748": {
    "verdict": "ok",
    "note": "author-built from § Oxygen Requirements of Microorganisms, Check Your Understanding: \"Which bacteria grow at the top of a thioglycolate tube, and which grow at the bottom of the tube?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -91236,6 +91640,14 @@
    "note": "orchestrator solve (solve-check.mjs) Options reordered by the parent after the mc-distribution test (key moved off the first position); key text unchanged. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "df74fdfd061c0a25": {
+   "verdict": "ok",
+   "note": "RQ fs-id1689714 key B binding of a neurotransmitter; body para fs-id2092152",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -95451,6 +95863,14 @@
     "result": "agrees"
    }
   },
+  "e9ab88f2e5403b5a": {
+   "verdict": "ok",
+   "note": "RQ fs-id1828568 key D acetylcholine; body fs-id2259831",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e9aec5ba34133c21": {
    "verdict": "ok",
    "note": "textin 'exergonic' — prompt paraphrases the glossary definition ('describes chemical reactions that release free energy') without using the answer word. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -95842,6 +96262,14 @@
   "eacbb386a4db5f32": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "eacbc27746fb345c": {
+   "verdict": "ok",
+   "note": "RQ fs-id2317736 key A GABA; body fs-id1153487 + table Postsynaptic effect row",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97190,6 +97618,14 @@
     "result": "agrees"
    }
   },
+  "ee04704b29afb359": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch12_01 row 1 (Nucleus CNS / Ganglion PNS) + body: spinal cord (fs-id2384338 'CNS is the brain and spinal cord') CNS; enteric nervous system (fs-id1407099 'It is a large part of the PNS'; summary 'exclusively found in the periphery') PNS. Row 2 (tract/nerve) left out: RQ fs-id2070100 keys nerve.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ee0528ac052a077c": {
    "verdict": "ok",
    "note": "source exercise fs-id2310144 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -97378,6 +97814,14 @@
   },
   "ee8a8c8efc2ea061": {
    "verdict": "ok"
+  },
+  "ee8b1f2fce5200ea": {
+   "verdict": "ok",
+   "note": "source RQ fs-id721912, key B = soma; options in source order; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ee8ba4f56c5077bf": {
    "verdict": "ok"
@@ -98298,6 +98742,14 @@
     "result": "agrees"
    }
   },
+  "f111347fe4fcc030": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1433218; body fs-id1302583; re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f119f0e7e11ae1ef": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98350,6 +98802,14 @@
    "note": "Glossary 'digestion' (fs-idp6181568): 'mechanical and chemical breakdown of food into small organic fragments' — matches. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f1314ced455c4662": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1860007: the cell bodies of unipolar neurons are always found in ganglia; distractors retina/olfactory epithelium (fs-id1960444), cerebellum (fs-id1266184); re-read against m46509 CNXML and the page",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -101426,6 +101886,14 @@
     "result": "agrees"
    }
   },
+  "f83cbab1addeec80": {
+   "verdict": "ok",
+   "note": "RQ fs-id2480516, key C = cranial; body fs-id2384338 'The brain is contained within the cranial cavity of the skull'; options and order as source.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f83e23123131e144": {
    "verdict": "ok",
    "note": "glossary recall: stele (fs-idp131596048) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -102203,6 +102671,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fa3987637b7ad61f": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1516812, graded selfcheck; model answer = source solution fs-id1549332 verbatim (somatic nervous system); fixed by body fs-id1640652 'The somatic nervous system (SNS) is responsible for conscious perception and voluntary motor responses.' The key answers the question as asked."
   },
   "fa40d440d703723e": {
    "verdict": "ok",
@@ -103280,6 +103752,14 @@
     "result": "agrees"
    }
   },
+  "fcb4f8aeed20a736": {
+   "verdict": "ok",
+   "note": "Review fs-id1805294, key B 'lower motor neuron'; caption step 7 'The target of the upper motor neuron is the dendrites of the lower motor neuron'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fcb5c798328cc4a2": {
    "verdict": "ok",
    "note": "source exercise fs-id1167584933938 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -103784,6 +104264,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "fdaeca2f858a9685": {
+   "verdict": "ok",
+   "note": "CT fs-id891267; model = solution fs-id1143996, minus signs Unicode, labels plain (EPSP 3 written EPSP3)"
   },
   "fdb4ed3c66a7ff13": {
    "verdict": "ok",

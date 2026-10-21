@@ -3272,6 +3272,72 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2129,
       "rationale": "In the book's regional terms the hamstrings lie on the back of the thigh and the femoral triangle is at the junction of the abdomen and the thigh; the leg is the region below the knee. m46364 (§8.4), paragraph fs-id1400685: \"The thigh is the region located between the hip and knee joints. … The leg is the region between the knee and ankle joints.\" The module's own table image fig-ch11_06_03 groups the hamstrings under \"Posterior compartment of thigh.\" The same class as erratum 2055 (m46476, the sartorius \"of the upper leg\"). The page reads \"on the back of the thigh\" in the body and the glossary, and \"between the hip and the thigh\" in the body, the glossary, and the page's femoral-triangle cloze with a visible Source note and a footer sentence. Evidenced by the chapter 11 prose claim pass, October 18, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/01-basic-structure-and-function-of-the-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46500",
+      "sourceElementIds": [
+        "fs-id1701704"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2173,
+      "rationale": "The optic-nerve-driven reflexive response of smooth muscle is the pupillary light reflex, which relays through the pretectal nucleus of the midbrain to the Edinger–Westphal nucleus, not through the hypothalamus. m46607 (§16.3), fs-id1582811: \"When light hits the retina, specialized photosensitive ganglion cells send a signal along the optic nerve to the pretectal nucleus in the superior midbrain.\" The book splits (m46581, §15.4, fs-id2000325 and fs-id1987861, sides with the module), so Sun and May, J Comp Neurol 2014;522(18):3960–3977, doi:10.1002/cne.23602, settles it. The page reads \"…reflexive responses of smooth muscle tissue, such as constriction of the pupil, that are processed through the midbrain\" with a visible Source note and a footer sentence. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/02-nervous-tissue.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46509",
+      "sourceElementIds": [
+        "fs-id1299478"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2174,
+      "rationale": "The human brain holds about 86 billion neurons and the spinal cord and enteric nervous system add about 1 percent, so the total is about ten times short of one trillion; the book gives no other count. Azevedo et al., J Comp Neurol 2009;513(5):532–541, doi:10.1002/cne.21974: \"86.1 ± 8.1 billion NeuN-positive cells ('neurons')\". The page reads \"a number in the tens of billions (about 86 billion in the brain alone)\" with a visible Source note and a footer sentence. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/02-nervous-tissue.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46509",
+      "sourceElementIds": [
+        "fs-id1302583"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2175,
+      "rationale": "The comparison with epithelium is about the space between cells, as the sentence's own \"tight connections between adjacent cells\" says; \"intracellular\" says the cells have little room inside themselves. m46049 (§4.3), fs-id1514526: \"…epithelial tissue, which is composed of cells closely packed with little or no extracellular space in between\"; m46048 (§4.2), fs-id1053236. The page reads \"little intercellular space\" with a visible Source note and a footer sentence. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/02-nervous-tissue.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46509",
+      "sourceElementIds": [
+        "fig-ch12_02_06"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2176,
+      "rationale": "At ×1,460,000 a 1 µm object prints 1.46 m wide, yet the micrograph shows a whole myelinated axon with about 30 resolvable myelin lamellae inside a figure narrower than a page, and the module's own paragraph fs-id1422169 gives axon diameters of \"1 to 20 micrometers\"; the panel is a slide-viewer screenshot whose header reads \"mag 20X\". The same reasoning was accepted for erratum 1832 (§3.1). The page drops \"EM × 1,460,000\" from the caption with a visible Source note and a footer sentence. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/03-the-function-of-nervous-tissue.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46531",
+      "sourceElementIds": [
+        "fs-id2081554"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2177,
+      "rationale": "The sensory neuron in the thermoreceptor example has no cell body between its endings and its axon, so its action potential begins at an initial segment beside the endings, not at an axon hillock. The module's first-figure caption, step (2): \"…will initiate an action potential at the initial segment of the axon (which is immediately adjacent to the sensory endings in the skin)\"; m46503 (§12.5), fs-id1952572: \"For sensory neurons, which do not have a cell body between the dendrites and the axon, the initial segment is directly adjacent to the dendritic endings.\" The page reads \"from the initial segment, next to the sensory endings,\" with a visible Source note and a footer sentence; the later second-neuron \"axon hillock\" sentence (fs-id2104719) is kept as printed. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/12-the-nervous-system-and-nervous-tissue/05-communication-between-neurons.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46503",
+      "sourceElementIds": [
+        "fig-ch12_05_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2178,
+      "rationale": "G proteins bind and hydrolyze GTP, not ATP; in the same caption ATP is the effector's substrate for cAMP, a different step. The module's body, fs-id1943508: \"The G protein is a guanosine triphosphate (GTP) hydrolase that physically moves from the receptor protein to the effector protein to activate the latter,\" and its glossary entry for G protein says the same. The page reads \"the G protein hydrolyzes GTP\" with a visible Source note and a footer sentence. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
     }
   ]
 }

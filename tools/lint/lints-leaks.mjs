@@ -122,9 +122,12 @@ const DIATOMIC_ETC = new Set(['O2', 'N2', 'H2', 'O3', 'I2', 'S8', 'P4', 'Cl2', '
 /**
  * Tokens that parse as element runs with digits but name something else:
  * vaccine and virus designations, a Creative Commons licence, a histone
- * variant. Influenza subtypes (`H1N1`, `H5N1`) are matched by shape below.
+ * variant, the numbered postsynaptic potentials of a summation worked
+ * example (`IPSP1`, `IPSP2` — I, P, S are all elements; `EPSP1` never
+ * matched because E is not). Influenza subtypes (`H1N1`, `H5N1`) are
+ * matched by shape below.
  */
-const NOT_FORMULAS = new Set(['PCV13', 'PPSV23', 'SV40', 'CC0', 'HSV1', 'HSV2', 'H2A', 'H2B', 'H3', 'H4', 'F0', 'F1', 'F1F0', 'F0F1', 'C3', 'C4', 'C5']);
+const NOT_FORMULAS = new Set(['PCV13', 'PPSV23', 'SV40', 'CC0', 'HSV1', 'HSV2', 'H2A', 'H2B', 'H3', 'H4', 'F0', 'F1', 'F1F0', 'F0F1', 'C3', 'C4', 'C5', 'IPSP1', 'IPSP2', 'IPSP3']);
 
 /** The bare-sign ions a lone symbol may form, by symbol. */
 const ION_CHARGES = { H: '+', K: '+', Na: '+', Li: '+', Ag: '+', Cl: '-', Br: '-', I: '-', F: '+-' };

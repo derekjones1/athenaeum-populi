@@ -85,14 +85,20 @@ reproduction, development, and inheritance.
   muscles of the pectoral girdle, upper limbs, pelvic girdle, and lower
   limbs.
 
+### Unit 3: Regulation, Integration, and Control
+
+- **The Nervous System and Nervous Tissue** — the basic structure and
+  function of the nervous system, nervous tissue, the function of nervous
+  tissue, the action potential, and communication between neurons.
+
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 3: Regulation, Integration, and Control** — The Nervous System and
-  Nervous Tissue; Anatomy of the Nervous System; The Somatic Nervous System;
-  The Autonomic Nervous System; The Neurological Exam; The Endocrine System.
+- **Unit 3: Regulation, Integration, and Control** — Anatomy of the Nervous
+  System; The Somatic Nervous System; The Autonomic Nervous System; The
+  Neurological Exam; The Endocrine System.
 - **Unit 4: Fluids and Transport** — The Cardiovascular System: Blood; The
   Cardiovascular System: The Heart; The Cardiovascular System: Blood Vessels
   and Circulation; The Lymphatic and Immune System.

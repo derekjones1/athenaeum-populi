@@ -46,7 +46,7 @@ test('unicodeFormula spells counts as subscripts and charges as superscripts', (
   assert.equal(unicodeFormula('NADP+'), 'NADP⁺');
   assert.equal(unicodeFormula('F−'), 'F⁻');
   assert.equal(unicodeFormula('O2'), 'O₂');
-  for (const notChemistry of ['H1N1', 'B12', 'C3', 'SV40', 'PCV13', 'CD4', 'O+', 'B-', 'K-', 'NAD', 'CO₂', 'ATP']) {
+  for (const notChemistry of ['H1N1', 'B12', 'C3', 'SV40', 'PCV13', 'IPSP1', 'IPSP2', 'CD4', 'O+', 'B-', 'K-', 'NAD', 'CO₂', 'ATP']) {
     assert.equal(unicodeFormula(notChemistry), null, notChemistry);
   }
 });

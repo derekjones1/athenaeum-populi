@@ -46,6 +46,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 09-joints | 7 | done Oct 16 2026 (in the authoring run) | 2017–2023 |
 | Anatomy and Physiology | 10-muscle-tissue | 9 | done Oct 18 2026 (in the authoring run) | 2054–2064 |
 | Anatomy and Physiology | 11-the-muscular-system | 6 | done Oct 18 2026 (in the authoring run) | 2089–2129 |
+| Anatomy and Physiology | 12-the-nervous-system-and-nervous-tissue | 5 | done Oct 20 2026 (in the authoring run) | 2173–2178 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

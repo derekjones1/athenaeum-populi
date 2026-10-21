@@ -946,6 +946,79 @@ directory, so authors' files belong in a subdirectory next run; and the claim
 pass found 36 evidenced errors in one chapter, most in the muscle tables'
 Movement and direction cells and in the glossary's "muscle" for fascia.
 
+## Chapter 12 (October 20, 2026)
+
+One wave on the AGENTS.md roster, started on a clean tree at 6e49ebb (the
+Unit 2 Knowledge Check committed). Five Opus authors launched together, one
+per section, an Opus checker per page as its author reported, one Opus claim
+pass over the five pages and the landing page, an Opus alt-errata verifier,
+and the blind solve in a fresh Fable subagent with masked pages. Sonnet
+clerks did the landing page, the run facts (Parts A and B), the pins, the
+errata draft, and the footer one-liners. Authors reported Practice items per
+page of 13 (12.1), 17 (12.2), 10 (12.3), 13 (12.4), and 10 (12.5), 63 in all,
+53 of them auto-graded, plus five graded Interactive Link self-checks in the
+bodies. The chapter's 43 source exercises (25 Review, 10 Critical Thinking, 8
+Interactive Link) all reached their pages. No module is in the September 8
+table. The chapter is the first of Unit 3; the next run is chapter 13.
+
+Part C graded five of the eight Interactive Link Questions (12.1's two, 12.4's
+driving-force question, 12.5's two) on module sentences named in the run
+facts and left three as prompts (12.2's two, 12.4's leech lab). 12.2's two
+pooled items have no in-module note at all, a shape the book had not shown
+before: each got an Interactive Link callout built from the pooled item's own
+text at the position of the source's exercise set, and the rule is now in the
+playbook. Two tables became sortbins (12.1's CNS/PNS structures, 12.2's glial
+cells by location); 12.5's neurotransmitter-systems table was transcribed
+only because its "Cholinergic" column shares a root with "acetylcholine" and
+its cells carry bare Greek letters. The 12.1 author left the tract/nerve row
+out of its sortbins because a Review Question keys "nerve"; the 12.2 author
+dropped only the two keyed cells and kept Schwann cell, and the parent
+confirmed that reading (each cell is its own sorted member).
+
+Part C was wrong three times and the authors said so: it told the authors
+"no period after the bold heading", a note that applies to **Interactive
+Link** only (titled boxes print `**Homeostatic Imbalances.** *Title.*` and a
+Disorders box `**Disorders of the Joints.**`), so 12.2 and 12.5 had to be
+sent back; it named 10.4 as the callout exemplar on the strength of a grep
+that had matched a footer clause (10.4 has no callouts); and it allowed
+"Na+" inside an alt, which the ASCII-ion lint rejects (the authors spelled
+the ions out). It also said the PDF prints "Creutzfeldt-Jacob" where it
+prints "Creutzfeld-Jacob" like the CNXML. A lint false positive surfaced on
+12.5: the ASCII-chemistry rule read "IPSP1" as a formula (I, P, S are
+elements) while passing "EPSP1"; the author subscripted all five labels to
+get past it, the parent narrowed the lint and had the plain labels restored.
+
+The checkers found 9 defects on lint-clean pages, every one applied by the
+page's author: five accept-list gaps (neuro-transmitter, precentral gyri,
+neuro-peptide, uni-/multi-polar, glia/neuroglia/cell process, excitable cell
+membrane, nongated channel), two hint leaks (12.1's "the Sensation
+paragraph" naming a later key; 12.2's first Review hint eliminating two
+options), one stem giveaway (12.4's leakage channel "not gated"), one
+longdesc side error (12.1's 1205 ganglia leader, confirmed by the parent on
+a crop), and one false footer clause (12.5's "all seven keep source order").
+The claim pass found six evidenced errors, all accepted: the optic nerve's
+smooth-muscle reflex "processed through the hypothalamus" (midbrain
+pretectum; §15.4 m46581 repeats it and is to be re-tested when chapter 15
+is authored), neurons "in the trillions" (about 86 billion), ependymal
+"intracellular" space (intercellular), a myelinated-axon micrograph captioned
+"EM × 1,460,000" (a WebScope screenshot at "mag 20X"; the number cannot
+belong to the image and is dropped), the thermoreceptor neuron's action
+potential starting "from the axon hillock" (the initial segment beside the
+endings, by the module's own caption), and "the G protein hydrolyzes ATP"
+(GTP). The blind solve agreed on 53 of 53 with no flags. The verifier
+confirmed 26 source defects (16 alts, 3 artwork, 7 text) and rejected 21
+claims, and found one page fix the checker had passed (1204's occipital
+leaders end beside the midline, not at the back). Errata 2173–2204; the six
+claim corrections carry decisions entries. The one chapter 12 external-link
+flag is a connect timeout on the 12.2 histology-slide redirect, not a 404,
+so it stays linked.
+
+Outside the chapter, the session fixed the large-push failure: Homebrew git
+links the system libcurl, whose LibreSSL backend corrupts a pack over about
+20 MB ("bad record mac"); `http.sslBackend secure-transport` in the repo's
+local config pushed a 25 MB test branch in two seconds, and run.md step 8
+now says so.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

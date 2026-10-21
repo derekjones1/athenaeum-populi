@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, and chapters 10 and 11 on October 18, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, and chapter 12 on October 20, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -170,7 +170,12 @@ callouts. The checker reads each converted item's model answer against the
 module text, as for any unkeyed-to-keyed conversion in the baseline. An
 Interactive Link Question whose printed key answers a different question
 stays a prompt, with a Source note and an erratum; no key is written for
-it *(chapter 2)*.
+it *(chapter 2)*. A pooled Interactive Link Question whose module prints
+NO `anatomy interactive` note (12.2's two) gets an **Interactive Link**
+callout built from the pooled item's own text, placed where the source's
+`interactive-exercise` set sits (after the last body subsection, before
+`## Summary`), its URL kept when it has one; the footer says the source
+prints no in-module note *(ruled October 20, 2026, chapter 12)*.
 
 ### 2. Feature boxes
 
@@ -299,6 +304,13 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   *(chapter 11)*.
 - **A one-word typo is footer + ledger only**; a claim-level correction gets
   a Source note (core §0 rule 4).
+- **The ASCII-ion lint reads `alt` and `longdesc` too.** Chapter 12's run
+  facts allowed "Na+" inside an attribute; the lint rejected it, and the
+  authors spelled the ions out in alts ("sodium ions") and used Unicode
+  `Na⁺` in `longdesc` labels, both of which pass. A bare Greek letter in
+  an option string still fails the unicode-math lint; the ASCII-chemistry
+  lint's not-a-formula list carries `IPSP1`–`IPSP3` (I, P, S are all
+  element symbols) since October 20, 2026 *(chapter 12)*.
 - **The footer describes a source glyph it may not print.** The Greek-mu
   lint reads the whole page, footer included, so a `Changes:` clause that
   quotes the source's "μm" fails; write "the italic Greek letter mu of the

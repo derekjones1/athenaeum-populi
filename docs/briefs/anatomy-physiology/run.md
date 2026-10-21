@@ -142,7 +142,11 @@ them.
    "Cases later chapters settled" keeps `P<sub>i</sub>`, and the parent
    re-edited two pages). A callout heading's form is copied byte for byte
    from the exemplar page (`**Interactive Link**` has no period; Part C
-   wrote one and three authors had to say so).
+   wrote one and three authors had to say so — and a titled box is
+   `**Homeostatic Imbalances.** *Potassium Concentration.*` and a Disorders
+   box whose title names only the system is `**Disorders of the Joints.**`,
+   periods inside the bold; chapter 12's Part C over-applied the
+   Interactive Link note and two authors had to be sent back).
    Part B quotes the extractor's key line verbatim and never infers a key.
    A sentence Part C names as the one that fixes an Interactive Link answer
    is grepped in the raw CNXML OUTSIDE the `<solution>` before it is named —
@@ -168,7 +172,10 @@ them.
    said the Bone Markings table "prints no class rows" from a Part B
    summary; the raw rows showed it does. Open the image or the CNXML
    for every figure and table decision. Part C also names the exemplar
-   page the authors copy (chapter 6's authors asked).
+   page the authors copy (chapter 6's authors asked) — and greps that page
+   for each shape it is cited for, since a `grep -l 'Interactive Link'`
+   matches a footer clause too: chapter 12's Part C named 10.4 for its
+   callouts and 10.4 has none *(chapter 12)*.
    When Part C does the floor arithmetic for a thin section, it counts a
    glossary term as a recall item only after checking that no source item
    on the page keys or prints it: 9.3's two terms and 9.7's one were all
@@ -418,5 +425,12 @@ the session.
 7. New lessons: a one-line rule into the playbook section it belongs to;
    the narrative into `docs/history/anatomy-physiology.md`; a lint or test
    where one can hold it. Then the session memory file.
-8. Commit only when asked. A large push may fail from the sandbox — try
-   once, then hand it to Derek.
+8. Commit only when asked. A large push used to fail from the session with
+   `LibreSSL … bad record mac`: the system libcurl's LibreSSL backend
+   corrupts a pack over ~20 MB, and `http.sslBackend secure-transport` in
+   the repo's local config fixes it (set October 20, 2026; the one-off form
+   is `git -c http.sslBackend=secure-transport push`). Run `git ls-remote
+   origin HEAD` once before a big push so credentials are cached — the
+   first big POST of a session otherwise fails with "unable to rewind rpc
+   post data" and hangs. If a push still fails, try once, then hand it to
+   Derek.
