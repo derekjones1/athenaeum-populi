@@ -1,5 +1,5 @@
 /**
- * Keyboard access to wide display equations.
+ * Keyboard access to wide display equations and tables.
  *
  * `custom.css` lets a `.katex-display` block scroll horizontally rather than
  * paint over the right-hand rail, which makes an overflowing equation a
@@ -7,13 +7,16 @@
  * cannot be scrolled (WCAG 2.1.1; axe reports it as
  * `scrollable-region-focusable`, serious). The graded-state axe scan of a
  * graph-plot page found three such equations on the first page it visited.
+ * Hextra's typography styles every prose table the same way (`display:
+ * block; overflow-x: auto`), so a wide table is the same failure: the
+ * transcribed muscle tables of A&P 11.5 overflow under CI's Linux fonts.
  *
  * Only the blocks that actually overflow become focusable: a tab stop on
  * every equation of a math page would be hundreds of stops for nothing. The
  * check re-runs when the viewport resizes and once the KaTeX fonts arrive,
  * because both change an equation's width.
  */
-const SELECTOR = '.content .katex-display';
+const SELECTOR = '.content .katex-display, .content table';
 
 function markScrollable() {
   for (const block of document.querySelectorAll(SELECTOR)) {

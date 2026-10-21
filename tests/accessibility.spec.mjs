@@ -776,6 +776,38 @@ test('the longest lesson does not overflow horizontally at 390px', async ({
   expect(overflow, 'horizontal scroll on mobile viewport').toBe(0);
 });
 
+test('a table wide enough to scroll is keyboard-focusable, and a narrow one is not', async ({
+  page,
+}) => {
+  // Hextra styles every prose table as a horizontal scroller. A&P 11.5's
+  // muscle tables overflowed only under CI's Linux fonts, so the full-width
+  // axe scan passed locally and failed scrollable-region-focusable in CI.
+  // A 1000px viewport makes the overflow deterministic on every platform.
+  await page.setViewportSize({ width: 1000, height: 900 });
+  const path =
+    '/life-health-sciences/anatomy-physiology/11-the-muscular-system/' +
+    '05-muscles-of-the-pectoral-girdle-and-upper-limbs/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const tables = await page.locator('.content table').evaluateAll((elements) =>
+    elements.map((table) => ({
+      scrolls: table.scrollWidth > table.clientWidth + 1,
+      tabindex: table.getAttribute('tabindex'),
+    })),
+  );
+  expect(tables.some((table) => table.scrolls), 'a table overflows at 1000px').toBe(true);
+  for (const table of tables) {
+    expect(table.tabindex).toBe(table.scrolls ? '0' : null);
+  }
+
+  const results = await new AxeBuilder({ page })
+    .withRules(['scrollable-region-focusable'])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});
+
 test('sidebar disclosure controls have at least 24 by 24 pixel targets', async ({
   page,
 }) => {

@@ -27,9 +27,10 @@ the production architecture.
   browser suite pins both halves: shim shipped, inert on a healthy engine,
   and every display block's rows on the math axis. A display equation wider
   than the article scrolls horizontally rather than painting over the rail,
-  and `assets/js/scrollable-math.js` makes exactly the blocks that overflow
-  keyboard-focusable (a scrollable region a keyboard user cannot reach fails
-  WCAG 2.1.1).
+  and `assets/js/scrollable-regions.js` makes exactly the blocks that
+  overflow keyboard-focusable — display equations and prose tables, which
+  the theme also styles as horizontal scrollers (a scrollable region a
+  keyboard user cannot reach fails WCAG 2.1.1).
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
   browser by the `<ap-figure>` component (measured text metrics plus a
