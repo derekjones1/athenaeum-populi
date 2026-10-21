@@ -60,7 +60,9 @@ checker fixes and twice pushed back correctly on a parent ruling. Hence:
   editing") — it continues from its transcript. Respawn only if the resume
   errors ("No transcript found"), and never skip a killed pass. Every
   brief has its agent append its report as it goes, so a killed reader
-  loses little. A NEW session cannot resume the old session's agent ids:
+  loses little (chapter 13: a 2:30 am reset killed four checkers and the
+  claim pass at once; all five resumed by `SendMessage` and lost
+  nothing). A NEW session cannot resume the old session's agent ids:
   relaunch with "a prior run died; treat the page as it stands" and point
   the agent at PARENT-NOTES and its predecessor's appended report.
 - **Prompts are files** (`$SP/prompt-<unit>.md`; the launch prompt names
@@ -113,7 +115,10 @@ them.
    View the largest vendored width and zoom before writing: the chapter 10
    parent described a racket "flat just above the court" that the image
    holds at shoulder height, and a knee "under the body" that is out in a
-   split — the claim pass rewrote the alt.
+   split — the claim pass rewrote the alt. Crop EACH limb separately
+   before stating its position: the chapter 13 parent wrote "left arm
+   bent behind the back" from a whole-figure zoom, and the claim pass and
+   the verifier both read the crop as held out to the side *(chapter 13)*.
    Launched together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Clerk (Sonnet) fills PART A (every
@@ -264,8 +269,12 @@ it still stands as a prompt in its callout and is counted in the footer.
 Verify every checker finding against the image or the raw CNXML before
 relaying it — some are wrong.
 
-Claim-pass findings: the parent verifies each against the cited evidence,
-then applies the accepted ones (Source note, `reconciliation-decisions.json`
+Claim-pass findings: the parent verifies each against the cited evidence
+(a same-book quote is confirmed with the CNXML's tags stripped first — a
+bare `grep -c` of a sentence that spans a `<term>` returns 0 and looks
+like a misquote, *chapter 13*; an external citation is checked for being a
+standard reference, Gray's 1918 or a primary paper with a DOI, not a
+blog), then applies the accepted ones (Source note, `reconciliation-decisions.json`
 entry, footer sentence, erratum), lists the rest under "Reviewed and *not*
 errata". After correcting a value on a page, grep the page, the book's
 Knowledge Checks, and sibling pages for the OLD value: a hint, filler, or

@@ -1168,6 +1168,10 @@
     "result": "agrees"
    }
   },
+  "0281f31149a1a132": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2611531 (bloodflow1): model answer = solution fs-id721912 verbatim; graded per run facts Part C, fixing sentence fs-id1333836 (circle of Willis maintains perfusion despite a blockage) ; checks now rest on the fixing sentence (blood around the circle reaches the artery), not reversal/anterior vessel"
+  },
   "0284a17f654e597c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -2240,6 +2244,14 @@
   },
   "04fd683a1c8adfc4": {
    "verdict": "ok"
+  },
+  "04ff5d469c8de16d": {
+   "verdict": "ok",
+   "note": "Glossary recall metencephalon: 'secondary vesicle of the embryonic brain that develops into the pons and the cerebellum'; bolded in body fs-id1293272.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "04ffa8599cc7e232": {
    "verdict": "ok",
@@ -3786,6 +3798,10 @@
     "result": "agrees"
    }
   },
+  "0882755f248976c1": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1521213 graded selfcheck; model answer = solution fs-id1508104 verbatim; fixing sentences fs-id1475986 (indirect pathway reinforces inhibition of thalamus; thalamus fails to excite cortex)."
+  },
   "0883594314941c1e": {
    "verdict": "ok",
    "note": "KC 4 16.1 § The Role of Public Health Organizations, table (fs-id1167660338485), m58871",
@@ -3852,6 +3868,14 @@
   "08c385caa0d805fa": {
    "verdict": "ok",
    "note": "7.5 body cloze, m46348 fs-id1547037: 'The fontanelles are the soft spots on an infant’s head.' Key soft spots; grader folds soft spot.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "08c3f7028c44fc46": {
+   "verdict": "ok",
+   "note": "RQ fs-id1398237, key A dura mater (solution fs-id1857259); body fs-id1559822 'The dura also surrounds and supports the venous sinuses.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -4697,6 +4721,14 @@
    "note": "glossary textin, term meroblastic; prompt built from glossary definition. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0acbdbcccacef93e": {
+   "verdict": "ok",
+   "note": "RQ fs-id1119780 key A; body fs-id1599097 thalamus, hypothalamus, and the eye cup that becomes the retina develop from the diencephalon.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -5836,6 +5868,14 @@
   "0d5f7635a44dc741": {
    "verdict": "ok",
    "note": "body cloze from § Lyme Disease: \"A presumptive diagnosis of Lyme disease can be made based solely on the presence of a bull’s-eye rash at the site of infection, if it is pr…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0d6a8d43c3b2c4e6": {
+   "verdict": "ok",
+   "note": "box cloze fs-id1243214: 'Related to strokes are transient ischemic attacks (TIAs), which can also be called mini-strokes.'; accept TIA (module abbreviation); + British transient ischaemic attacks",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -7551,6 +7591,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "119c1ea2c6620b87": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1120163: 'The single exception is the system associated with olfaction, or the sense of smell, which connects directly with the cerebrum'; referent added, gloss to accept.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -10269,6 +10317,14 @@
    "verdict": "ok",
    "note": "KC 8 45.5 § body Long-Term Consequences of Exponential Human Population Growth (fs-idm270377024), m66696 — parent re-read against the module"
   },
+  "178dbf3c7f12cc11": {
+   "verdict": "ok",
+   "note": "glossary recall sciatic nerve fs-id1531254; body fs-id1472046; sciatica graded incorrect.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1798a3102d566f61": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -12604,6 +12660,14 @@
     "result": "agrees"
    }
   },
+  "1cd4871c3227d6bb": {
+   "verdict": "ok",
+   "note": "RQ fs-id1432212, key C internal carotid artery (solution fs-id1662111); options/order as source; body fs-id1333836 'The internal carotid artery enters the cranium'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1cd48c18205ea91a": {
    "verdict": "ok",
    "note": "source exercise fs-idm2671184 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -14116,6 +14180,10 @@
     "by": "fable-solver-2",
     "result": "agrees"
    }
+  },
+  "20409640820cae47": {
+   "verdict": "ok",
+   "note": "CT fs-id1544723; model = solution fs-id1303398 verbatim; checks decompose it."
   },
   "20468dc2342fe282": {
    "verdict": "ok",
@@ -15921,6 +15989,14 @@
     "result": "agrees"
    }
   },
+  "24ff6d7d87af3428": {
+   "verdict": "ok",
+   "note": "glossary recall phrenic nerve fs-id1433950; body fs-id1472046.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "250da66ddf537ea4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16012,6 +16088,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-id1511123; selfcheck model answer is the source solution verbatim; rubric checkpoints are verbatim clauses of the model answer, no new claims. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "2543c15c00c4e52c": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1298164: 'a sulcus (plural = sulci) is the groove between two gyri'; referent added for 'those wrinkles'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2545e650b3248f8c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16075,6 +16159,14 @@
     "by": "orchestrator-solver",
     "result": "adjudicated",
     "note": "parent Sep 23 2026: synonym of the key, already graded correct by the accept list/plural fold; key stands"
+   }
+  },
+  "2574ec748e49651e": {
+   "verdict": "ok",
+   "note": "RQ fs-id1494511 key D craniofacial bone; body fs-id2582077 'Many tissues that are not part of the nervous system also arise from the neural crest, such as craniofacial cartilage and bone'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "257921d28a3501ff": {
@@ -17307,6 +17399,10 @@
     "result": "agrees"
    }
   },
+  "2854aab2901fa2bd": {
+   "verdict": "ok",
+   "note": "CT fs-id1506920; model = solution fs-id1497736 verbatim; checks decompose it. Retina-as-PNS claim kept as printed (listed for claim pass)."
+  },
   "28560c8c9e70a64e": {
    "verdict": "ok"
   },
@@ -17463,6 +17559,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "28c0151151f187e3": {
+   "verdict": "ok",
+   "note": "glossary recall brachial plexus fs-id1174724; body fs-id1472046.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "28c1865d543803ec": {
    "verdict": "ok",
    "note": "Practice selfcheck, source Short Answer fs-id1167663984242, unkeyed; model answer from fs-id1167663902567, the 'why' clause needs the following sentences too so it stays a selfcheck | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -17500,6 +17604,14 @@
   "28d40deccc2c8535": {
    "verdict": "ok",
    "note": "glossary recall fs-id1254931 troponin; body fs-id2141504 bolds it; no source item or ILQ prints it (replaces sarcomere per checker)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "28d44392434dba7d": {
+   "verdict": "ok",
+   "note": "RQ fs-id1272771, source key B gastric plexus; body fs-id1124389 (enteric nervous system, incl. gastric plexuses, does not require CNS input). Stem kept as printed though the module names the CNS (parent ruling, erratum 2206 filed by drafter); hint points at the ENS paragraph by role.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19739,6 +19851,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-id2753197, model answer = solution fs-id1890680 verbatim"
   },
+  "2e50beb391009a87": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch13_03 Function (S/M/B) column + fs-id1830197; 11 names as printed, oculomotor excluded (bin word); each item checked against its row.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2e52af19b0393c6c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20104,6 +20224,14 @@
   "2f1a291e23ceab2c": {
    "verdict": "ok",
    "note": "Try It 4: csc(pi/6) and sec(pi/3) are cofunctions of complementary angles pi/6+pi/3=pi/2, so sec(pi/3)=csc(pi/6)=2; matches CNXML solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "2f1ca834086bc5b0": {
+   "verdict": "ok",
+   "note": "RQ fs-id2007793, source key D vagus; body fs-id1490633 + fs-id674898 (vagus targets thoracic and upper abdominal organs).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2f263edc9dccc60f": {
    "verdict": "ok",
@@ -21495,6 +21623,14 @@
   "329348aed680ba5b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3293c9ac37348961": {
+   "verdict": "ok",
+   "note": "Author sortbins from tbl-ch13_01: Primary vesicle bins vs Adult structures/Ventricles cells, each item checked against every cell; posterior row and secondary column excluded (Part C).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23314,6 +23450,14 @@
   "3701518cf0dfe59c": {
    "verdict": "ok",
    "note": "Model answer states the module gives no comparative verdict, then lays out each disease's own module-stated facts (yellow fever: eliminated from the US, vaccine but no treatment; Ebola: 2014 West Africa epidemic scale, no approved treatment) without asserting either is the bigger US threat. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "3705e3e03e4f9ea1": {
+   "verdict": "ok",
+   "note": "author MC from body fs-id1119780 \"The motor fibers, both somatic and autonomic, emerge as the ventral nerve root\"; distractors are module terms, none true of motor fibers.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3706cec6a717e03f": {
    "verdict": "ok",
@@ -25135,6 +25279,14 @@
     "result": "agrees"
    }
   },
+  "3b92c6a67b5293cd": {
+   "verdict": "ok",
+   "note": "cloze from body fs-id1144493 sentence verbatim plus a parenthetical referent from the Summary fs-id1733362 (\"terminal ganglia near or within the organs\"), fixing the blank to the module term; accept plural ganglia, grader-checked.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3b93f9f499524a50": {
    "verdict": "ok",
    "note": "locally built selfcheck paraphrasing one paragraph (Ecosystem Ecology para 1) with no new claim: extension of the other three levels, biotic/abiotic components with examples, nutrients/energy movement — all three checkpoints are clauses of that one source paragraph's sentences. Disclosed in footer as a local item. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -25750,6 +25902,14 @@
     "result": "agrees"
    }
   },
+  "3d2a58a808526ba7": {
+   "verdict": "ok",
+   "note": "Author MC from fs-id1497167 'In the adult brain, the cerebellum seems close to the cerebrum, but there is no direct connection between them.' Distractors pons/medulla/midbrain stated connected in the same paragraph.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3d2f745a43e89a16": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -26339,6 +26499,14 @@
   "3e82ff356b61ec90": {
    "verdict": "ok",
    "note": "atan2(5,6) in degrees = 39.8056 deg (Q1, no adjustment), rounds to 39.806 deg. node -e dirDeg(6,5)=39.8056."
+  },
+  "3e85efef80e62d64": {
+   "verdict": "ok",
+   "note": "RQ fs-id2091911, source key C autonomic ganglion; body fs-id1553818/fs-id1144493 (autonomic ganglia regulate homeostatic mechanisms).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3e86dc7a12dbb9d2": {
    "verdict": "ok",
@@ -27834,6 +28002,14 @@
   "4193c4fc93f57593": {
    "verdict": "ok",
    "note": "CTQ (fs-idm29174080): model answer transcribes the source solution verbatim; TH1/TH2 spelled plain (no <sub>) in the checkpoint lines only, since checkpoints render as escaped plain text. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "41963c49a680d3c3": {
+   "verdict": "ok",
+   "note": "Author MC from fs-id674898 'The four ventricles and the tubular spaces associated with them can be linked back to the hollow center of the embryonic brain.' Count options.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4196b7ba71f63f67": {
    "verdict": "ok",
@@ -30242,6 +30418,14 @@
   "475f06c8dfabf407": {
    "verdict": "ok",
    "note": "KC 4 18.2 § Antigen-Presenting Cells (APCs), m58885 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4767225c1ea39e0b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1506288 longitudinal fissure; body fs-id1476424 prints it.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41801,6 +41985,14 @@
     "result": "agrees"
    }
   },
+  "64b5e4a582a01184": {
+   "verdict": "ok",
+   "note": "RQ fs-id1233440 key A neural crest; body fs-id2582077 neural crest 'develops into several parts of the peripheral nervous system (PNS)'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "64ba086f40eb45ac": {
    "verdict": "ok",
    "note": "cloze, § Suture fs-id2663393: The suture is frequently convoluted…",
@@ -41971,6 +42163,14 @@
   "655a1a6a9d2605ed": {
    "verdict": "ok",
    "note": "Practice #9 (Algebraic): f(x)=2x^2+x-3, f'(x)=4x+1 by the definition; confirmed numerically node at x=3: 13.0000000027 vs formula 4(3)+1=13. Matches source exercise 9 solution. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "655ade1fd35a59f1": {
+   "verdict": "ok",
+   "note": "RQ fs-id1481306, key B pons (fs-id767938); options in source order.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "655da9809db06f6f": {
    "verdict": "ok"
@@ -42222,6 +42422,14 @@
   "65e97c7000238ea2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "65ecbaef680c0d88": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1333836: 'The vertebral arteries enter the cranium through the foramen magnum of the occipital bone.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -43643,6 +43851,14 @@
    "verdict": "ok",
    "note": "multi-sentence cAMP/chloride-channel/osmotic mechanism, stays selfcheck; stem corrects the source's 'V. cholera' typo to 'V. cholerae' | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "69848f6a187f05ea": {
+   "verdict": "ok",
+   "note": "Author MC from tbl-ch13_01 row 2: Diencephalon -> Third ventricle; distractors the table's other brain ventricular spaces.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "69a9ab25428ef4d5": {
    "verdict": "ok",
    "note": "model answer is the CNXML solution verbatim; checkpoints are its own clauses"
@@ -44090,6 +44306,14 @@
   "6a9682d8efd96b2f": {
    "verdict": "ok",
    "note": "body CYU, why boiling not used; selfcheck, two reasons across two sentences | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "6a96db148990baaa": {
+   "verdict": "ok",
+   "note": "RQ fs-id1954936 key B mesencephalon; body fs-id2168764 'The mesencephalon does not differentiate into any finer divisions.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6aa19680f937667d": {
    "verdict": "ok",
@@ -45296,6 +45520,10 @@
   },
   "6dfc74e6b94a2dfa": {
    "verdict": "ok"
+  },
+  "6e0099f7c3dd0f96": {
+   "verdict": "ok",
+   "note": "CT fs-id1514097; model answer = solution fs-id1739073 verbatim; checks are its clauses."
   },
   "6e0425877d38750f": {
    "verdict": "ok",
@@ -48279,6 +48507,14 @@
     "result": "agrees"
    }
   },
+  "7513c731de837496": {
+   "verdict": "ok",
+   "note": "box cloze fs-id1488700: 'Severe or limited memory loss can be the result of a temporal lobe stroke.' (replaces the lobe MC: frontal was defensible via 13.2 prefrontal memory); accept temporal lobe",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7519623158d7a6cf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49845,6 +50081,14 @@
     "result": "agrees"
    }
   },
+  "78e343f1e6b3b43e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs); parent remap: the 13.4 paravertebral-ganglia cloze was rebuilt on the claim-pass-corrected sentence (F22) after the solve; same key, solver answered paravertebral ganglia",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "78e625f60ffc6202": {
    "verdict": "ok",
    "note": "author-built from § Flagella and Cilia: \"Whereas the prokaryotic flagellum is a stiff, rotating structure, a eukaryotic flagellum is more like a flexible whip composed of nine para…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -50362,6 +50606,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "79ffd1ce5a8b892c": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1943845: 'From the arachnoid granulations, CSF is reabsorbed into the blood...'; accept arachnoid villus (caption fs fig-ch13_03_03), villi, and the figure label 'Arachnoid granulation villi'; + arachnoid granulation villus",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -55475,6 +55727,14 @@
     "result": "agrees"
    }
   },
+  "85b3ab8c81863f6a": {
+   "verdict": "ok",
+   "note": "RQ fs-id1493258, source key D trigeminal ganglion; options/order as printed; body fs-id1334448 + fs-id1271098 support it; hint reworded by role (checker finding).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "85b5544c862b49a5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -56396,6 +56656,10 @@
     "result": "agrees"
    }
   },
+  "8862ba33748dccfd": {
+   "verdict": "ok",
+   "note": "CT fs-id1286153; model answer = solution fs-id1639522 verbatim; checks are its clauses."
+  },
   "8865c2ef04e81b6d": {
    "verdict": "ok",
    "note": "KC 4 16.4 § The World Health Organization (WHO) (fs-id1167656896594), m58874",
@@ -56966,6 +57230,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "89ad51d26e05e46b": {
+   "verdict": "ok",
+   "note": "CT fs-id1805124, model answer = solution fs-id1197943 verbatim; checks are its clauses."
   },
   "89b083ccf0932f47": {
    "verdict": "ok",
@@ -57920,6 +58188,14 @@
     "result": "agrees"
    }
   },
+  "8c2d227c5bc3a010": {
+   "verdict": "ok",
+   "note": "RQ fs-id1085828, key A anterior horn (fs-id1621419); options in source order; hint by position.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8c2ea86b2e6819c2": {
    "verdict": "ok",
    "note": "gamma=113 between a,b; b=10,c=32 known; quadratic in a from c^2=a^2+b^2-2ab cos(gamma): a^2+7.815a-924=0, positive root a=26.74 -> 26.7, matches source key; other root negative and discarded."
@@ -58394,6 +58670,14 @@
    "verdict": "ok",
    "note": "parent re-record after option shuffle: f'(20)=-10 is a velocity, 10 ft/s westward at t=20 s (source Try It solution d)."
   },
+  "8d2fc9298db87326": {
+   "verdict": "ok",
+   "note": "glossary recall endoneurium fs-id1094713; body prints the term in fs-id1287072.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8d31a1fd37062e13": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -58420,6 +58704,14 @@
   "8d3f1f0dd609e021": {
    "verdict": "ok",
    "note": "glossary recall m46021 amphipathic; stem is the glossary meaning; body prints the term",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8d3f1fe2af043824": {
+   "verdict": "ok",
+   "note": "RQ fs-id1259435, key B third ventricle (solution fs-id2190800); body fs-id1490421 and table Third ventricle = Diencephalon",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59709,6 +60001,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "90c38520b7f1e8c3": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1136775 graded selfcheck; model answer = solution fs-id1491101 verbatim; fixing sentence body fs-id1475986 (disinhibition definition). Also fixed by glossary disinhibition fs-id1118747 (\"disynaptic connection in which the first synapse inhibits the second cell, which then stops inhibiting the final target\")."
   },
   "90c53bdf700199e4": {
    "verdict": "ok",
@@ -61596,6 +61892,14 @@
    "verdict": "ok",
    "note": "k=-ln(2)/30; solving 1/200=e^{kt} gives t=229.3157<230, so 'less than'; matches CNXML. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "951f072c7e336f3a": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1333836: 'The two vertebral arteries then merge into the basilar artery, which gives rise to branches to the brain stem and cerebellum.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "951f6f610adba3eb": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -62645,6 +62949,10 @@
   "97b76c61429769e0": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "97ba44321d784284": {
+   "verdict": "ok",
+   "note": "CT fs-id2611881: model answer = solution fs-id1517050 verbatim; module fs-id981313 supports it"
   },
   "97c032c5c1652ba1": {
    "verdict": "ok",
@@ -63914,6 +64222,14 @@
   "9affe62ba0cd9741": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9b0c18f3625c6d97": {
+   "verdict": "ok",
+   "note": "RQ fs-id1113573, key D disruption of blood to the brain (solution fs-id2564012); box fs-id1488700 'The common name for a disruption of blood supply to the brain is a stroke.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67023,6 +67339,14 @@
     "result": "agrees"
    }
   },
+  "a277c6aa9dd9b9ed": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1136775: 'The fourth ventricle then narrows into the central canal of the spinal cord.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a27937d16d9d016e": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"The new virions transport the viral genome to another host cell to carry out another round of infection. summarizes the properties of virus…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -67552,6 +67876,14 @@
    "note": "Review Q (eip-379), keyed D matches source solution; consistent with the module's viral-receptor/attachment teaching. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a3a1b728ae2d31de": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1541158 inferior olive; body fs-id1315185 prints it.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -68664,6 +68996,14 @@
   "a64a600905b626dc": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "a64cda5de634c6c5": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1490421 '...opens into the cerebral aqueduct that passes through the midbrain'; table tbl-ch13_02 Cerebral aqueduct = Midbrain; distractors are the paragraph's other portions, none in the midbrain",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a65175b3d551d785": {
    "verdict": "ok",
@@ -70769,6 +71109,14 @@
    "verdict": "ok",
    "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.9823 (matches source's own 1.9823 for this Try It)."
   },
+  "aba36b9a9f786262": {
+   "verdict": "ok",
+   "note": "RQ fs-id1205727, key A ependymal cell (solution fs-id1863594); body fs-id1335013 'Ependymal cells ... filter the blood to make CSF'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aba4dfc44bdacd77": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -71912,6 +72260,14 @@
     "result": "agrees"
    }
   },
+  "ae6da2324a451046": {
+   "verdict": "ok",
+   "note": "author sortbins from fs-id2167378 (dopamine activates direct/inhibits indirect), fs-id1475986 (indirect via GPe and STN; direct projection vs intervening nuclei), note fs-id1860514 (direct = shorter pathway). Each item true of one bin only.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ae729638cc552362": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -72285,6 +72641,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "af322d4e8d6b3b30": {
+   "verdict": "ok",
+   "note": "CT fs-id739946: model answer = solution fs-id1264945 verbatim; checks are its clauses"
   },
   "af342368660065cc": {
    "verdict": "ok",
@@ -74068,6 +74428,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "b3abc9d713d79683": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1953153 (lumbarpuncture): model answer = solution fs-id1118719 verbatim; fixing sentence fs-id320754 'Because the spinal cord does not extend through the lower lumbar region...'"
   },
   "b3b21276a8b9d050": {
    "verdict": "ok",
@@ -77599,6 +77963,14 @@
     "result": "agrees"
    }
   },
+  "bc3340b2ae1a6696": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1812692 striatum; body fs-id1433950 'Together, the caudate and putamen are called the striatum'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bc34b6cd174d84e0": {
    "verdict": "ok"
   },
@@ -79902,6 +80274,14 @@
   "c1d2bc8c1d0cef94": {
    "verdict": "ok",
    "note": "Try It 1. Ran synthetic division / Horner evaluation for f(x)=2x^5-3x^4-9x^3+8x^2+2 at x=-3 via node: f(-3)=-412. Matches CNXML ti_03_06_01 solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "c1e9b91c4035bfc4": {
+   "verdict": "ok",
+   "note": "RQ fs-id1052419, key D frontal (fs-id1476784); options in source order.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c1ea5a654c8cc33d": {
    "verdict": "ok",
@@ -85240,6 +85620,14 @@
     "result": "agrees"
    }
   },
+  "ceecc60ed1a97a3d": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1303398 posterior columns; stem location from glossary posterior horn \"in which sensory input arrives\", prints no word of the key; accept dorsal column (glossary), posterior (dorsal) column (fig 02_09 label).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ceee26c4c6c410bc": {
    "verdict": "ok",
    "note": "multiplechoice from Review Question fs-id1511651; solution label A = 'protein' (proteins can be integral/embedded or peripheral/surface per section text). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -85785,6 +86173,14 @@
   "d05b96068804af5e": {
    "verdict": "ok",
    "note": "P(0)=90/(1+5)=15, so y-intercept (0,15), matching CNXML fs-id1697174 (Numeric #15). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d061a8995030a51a": {
+   "verdict": "ok",
+   "note": "RQ fs-id1211731 key C integumentary; body fs-id2127657 'Finally the ectoderm ... develops into the integumentary system (the skin) and the nervous system.' Options/order as source.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d062236092dc2c0c": {
    "verdict": "ok",
@@ -87056,6 +87452,14 @@
   "d3f3c99016c4c019": {
    "verdict": "ok",
    "note": "glossary recall fs-id1535172 'action potential'; meaning verbatim (semicolon → comma)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d3f7367d91c9c973": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2317903 substantia nigra pars compacta; SNc from caption fs ch13_02_05, 'substantia nigra compacta' caption form.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -92754,6 +93158,14 @@
     "result": "agrees"
    }
   },
+  "e1cd87032a86357e": {
+   "verdict": "ok",
+   "note": "RQ fs-id2168882, source key A fascicle; body fs-id1287072 \"axons are further bundled into fascicles\".",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e1cff2923a84c4ad": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -94173,6 +94585,14 @@
   "e5156e4942d084f5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e51bd1ca1cc009f6": {
+   "verdict": "ok",
+   "note": "RQ fs-id1311379, key C hypothalamus (fs-id1492144); options in source order.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97567,6 +97987,10 @@
    "verdict": "ok",
    "note": "m66457 CT exercise fs-id1287110, solution fs-id1827057: model answer is the source solution verbatim (\"Physical exercise involves both anabolic and catabolic processes...This is anabolism.\"). Both CHECKS clauses (catabolism via ATP for muscle contraction; anabolism via muscle repair) restate the model answer with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "edebddd678d49f1d": {
+   "verdict": "ok",
+   "note": "CT fs-id1163437, model answer = solution fs-id1681701 verbatim."
+  },
   "edede55d8db1d575": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -98263,6 +98687,14 @@
     "by": "fable-solver",
     "result": "adjudicated",
     "note": "Key stands: (x^2-2x+1)=(x-1)^2 is a binomial raised to a power, which the stem's parenthetical says the theorem expands; recorded under 'Reviewed and not errata' in docs/openstax-errata.md (October 12, 2026)."
+   }
+  },
+  "efd42e7731e33694": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1144077 ascending tract; accept ascending pathway from body fs-id1510727 \"The major ascending and descending pathways between the spinal cord and brain\"; hint by position.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "efd4e88eea95f7f3": {
@@ -102264,6 +102696,14 @@
    "verdict": "ok",
    "note": "C/B=(\\pi/3)/(1/3)=\\pi (Try It 5 phase-shift part, matches CNXML). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f93ce5dd447289f0": {
+   "verdict": "ok",
+   "note": "Summary cloze fs-id1334770: '...called the ventricles, where cerebrospinal fluid is found.' accept CSF; grader-checked.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f93f0427431a47bd": {
    "verdict": "ok",
    "note": "KC 2 8.5 § Lipid Catabolism, m58823 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -104714,6 +105154,14 @@
   "fed9adab5a930dee": {
    "verdict": "ok",
    "note": "KC 2 9.2 § Syndesmosis, m46403",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fedf9cf82303e8da": {
+   "verdict": "ok",
+   "note": "RQ fs-id1455480, key B cerebral cortex (fs-id1120527); options in source order.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 12,
-      "mappedSections": 72,
+      "localChapters": 13,
+      "mappedSections": 76,
       "units": [
         {
           "index": 1,
@@ -899,6 +899,42 @@
       "moduleId": "m46503",
       "sourceTitle": "Communication Between Neurons",
       "moduleSha256": "8989f1169d6f59b0930297bc9d067f56d9e4556e2719c9cff3f5d56356b1f21b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/01-the-embryologic-perspective.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "13.1",
+      "moduleId": "m46535",
+      "sourceTitle": "The Embryologic Perspective",
+      "moduleSha256": "f2d3d3ea08641557903a959ee39203271ffe2df7d5cebec24f9e7c4eed03cb18"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "13.2",
+      "moduleId": "m46533",
+      "sourceTitle": "The Central Nervous System",
+      "moduleSha256": "89af1b51cd8b17359429794ab079edfa772d213d50dc9729ceaca07b063e6697"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "13.3",
+      "moduleId": "m46719",
+      "sourceTitle": "Circulation and the Central Nervous System",
+      "moduleSha256": "83b8713bb5dad6d8096e633f53d639f7e4b452fc6066f43ff9baff71373d541e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "13.4",
+      "moduleId": "m46553",
+      "sourceTitle": "The Peripheral Nervous System",
+      "moduleSha256": "fac0025982ed7441ae8ab13a593e3bb6f1c5b58fe3934d23c9c504fb20d4c268"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

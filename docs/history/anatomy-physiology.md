@@ -1019,6 +1019,82 @@ links the system libcurl, whose LibreSSL backend corrupts a pack over about
 local config pushed a 25 MB test branch in two seconds, and run.md step 8
 now says so.
 
+## Chapter 13 (October 21, 2026)
+
+One wave on the AGENTS.md roster, started after chapter 12 was committed
+(fbf60ae). Four Opus authors launched together, one per section, an Opus
+checker per page as its author reported, one Opus claim pass over the four
+pages and the landing page, an Opus alt-errata verifier, and the blind solve
+in a fresh Fable subagent with masked pages. Sonnet clerks did the landing
+page, the run facts (Parts A and B), the pins, and the errata draft. Authors
+reported Practice items per page of 13 (13.1), 16 (13.2), 14 (13.3), and 15
+(13.4), 58 in all, 50 of them auto-graded, plus four graded Interactive Link
+self-checks in the bodies. The chapter's 40 source exercises (20 Review, 8
+Critical Thinking, 12 Interactive Link) all reached their pages. No module
+is in the September 8 table. The next run is chapter 14.
+
+Part C graded four of the twelve Interactive Link Questions on module
+sentences verified in the raw CNXML (13.2's two basal-nuclei questions,
+13.3's circle of Willis and lumbar puncture) and left eight as prompts.
+13.1's "whitematter" item is the book's first pooled Interactive Link
+Question that asks no question at all and carries a key answering one
+nobody asked; it stands as a prompt with a Source note (erratum 2205).
+Two tables became sortbins: 13.1's vesicle stages (bins the three primary
+vesicles, members the adult structures and ventricles, the posterior
+neural-tube row left out) and 13.4's cranial nerves by Sensory, Motor, and
+Mixed, with the oculomotor nerve left out because its name prints the bin
+word; 13.3's two-row CSF table was transcribed only. 13.3 yielded no
+glossary recall item at all — every one of its 34 meanings prints its term,
+a root, or a translation — so its recall items are body and summary clozes,
+and that is now a playbook rule.
+
+A 2:30 am session reset killed all four checkers and the claim pass at
+once; every one resumed from its transcript by `SendMessage` and lost
+nothing. The checkers found seven defects on lint-clean pages (13.1 none):
+an undisclosed Review-Question reorder and a false footer alt-reason on
+13.4; a recall stem printing half its key ("posterior horns" for posterior
+columns) and an alt calling a skull-stripped brain "the head" on 13.2; and
+on 13.3 an author-written memory-loss MC whose "frontal" distractor 13.2
+makes true (prefrontal lobe, short-term memory) — it became a cloze of the
+module's own sentence — plus two accept-list gaps. The parent ruled 13.4's
+fifth Review Question stem ("not under direct control of the peripheral
+nervous system", where the module says the enteric system needs no CNS
+input) printed as the source has it with a footer clause (erratum 2206);
+the blind solver's one "unsure" was the same item.
+
+The claim pass was the largest yet: 26 evidenced findings, all accepted,
+nine of them on 13.4 (plexus levels contradicting the module's own figure,
+the axillary nerve "branching" from the radial, the geniculate ganglion in
+the glossopharyngeal row, the hypoglossal row's larynx and pharynx,
+cranial ganglia "outside the skull", paravertebral ganglia as a set above
+the chain, the fibular nerve in the posterior leg, the glossopharyngeal
+moving tongue muscles, and "thoracic nerves in no plexus"), nine on 13.2
+(the cerebellum caption's "from the cerebellum", the indirect pathway's
+"pars compacta", a disinhibition parenthetical that describes reciprocal
+inhibition, Area 22 labelled primary auditory cortex in the Brodmann
+artwork, a cortex of "one square meter", pontine nuclei in the tegmentum,
+tegmentum "from the Latin for floor", and two glossary entries), six on
+13.3 (stroke as embolus only, baroreceptors at the base of the common
+carotids, the dural infoldings, the basilar artery "dorsal", the
+occipital sinus along the occipital lobes, and an inverted caption), and
+13.1's myelomeningocele "life expectancy is not reduced". Each page's
+author applied its own corrections with Source notes; one cloze (13.4's
+paravertebral ganglia) was rebuilt on the corrected sentence and its solve
+record remapped. The pass also caught the parent's own splash alt (the
+left arm is held out to the side, not behind the back), which the verifier
+confirmed; run.md now says to crop each limb before placing it. The
+verifier confirmed 19 source defects (6 alts, 4 artwork, 2 captions, 7
+text) and rejected 9, among them the "(see also )" empty link, which the
+PDF prints as a figure number and is therefore a CNXML gap, not an
+erratum; it found one page fix the checker had passed (1307's "seven
+areas" over eight colored patches). The blind solve agreed on 50 of 50.
+Errata 2205–2251: 25 claim, 6 alt, 4 artwork, 2 caption, 10 text; the
+claim corrections carry decisions entries. The chapter's three flagged
+external links are bot walls or a redirect loop, not 404s, and stay
+linked. The parent also added the two Anatomy and Physiology Knowledge
+Check routes to the axe suite, which run.md had asked for as each check
+landed.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

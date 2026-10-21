@@ -3338,6 +3338,279 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2178,
       "rationale": "G proteins bind and hydrolyze GTP, not ATP; in the same caption ATP is the effector's substrate for cAMP, a different step. The module's body, fs-id1943508: \"The G protein is a guanosine triphosphate (GTP) hydrolase that physically moves from the receptor protein to the effector protein to activate the latter,\" and its glossary entry for G protein says the same. The page reads \"the G protein hydrolyzes GTP\" with a visible Source note and a footer sentence. Evidenced by the chapter 12 prose claim pass, October 20, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/01-the-embryologic-perspective.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46535",
+      "sourceElementIds": [
+        "fs-id691448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2207,
+      "rationale": "The note's closing sentence says life expectancy with myelomeningocele \"is not reduced\", but open spina bifida carries high mortality through childhood and adult life: Oakeshott et al., Dev Med Child Neurol 2010;52(8):749-753, doi:10.1111/j.1469-8749.2009.03543.x, abstract: \"One in three of the cohort (40/117) died before the age of 5 years. A further 26% (31/117) died during the next 35 years, over 10 times the national average.\" The book is silent elsewhere. The page reads \"…and life expectancy is reduced, most of all when the defect is high on the spinal cord\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id1300741"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2215,
+      "rationale": "Measured human neocortical area is about 973 cm² per hemisphere (Van Essen et al., Cereb Cortex 2012;22(10):2241-2262, doi:10.1093/cercor/bhr291), about 0.2 m² for both, a fifth of the \"roughly equal to one square meter\" the paragraph gives; the book is silent elsewhere. The page reads \"roughly 0.2 square meters (about 2,000 square centimeters)\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id1475986"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2216,
+      "rationale": "The parenthesis \"inhibition of one cell on a target cell that then inhibits the first cell\" describes reciprocal inhibition, not disinhibition. The module's glossary (fs-id1118747): \"disynaptic connection in which the first synapse inhibits the second cell, which then stops inhibiting the final target\", and its Interactive Link answer: \"The first cell inhibits the second one. Therefore, the second cell can no longer inhibit its target.\" The page reads \"inhibition of one cell on a second cell, which then stops inhibiting its own target\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id890816"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2217,
+      "rationale": "Tectum is Latin for roof but tegmentum is Latin for a covering, not a floor (Lewis and Short, A Latin Dictionary, 1879: \"tegumentum … a covering, cover\"); the anatomical statement that the tegmentum is the floor of the aqueduct (same paragraph, and m46719) is true, so only the etymology is wrong. The page reads \"from the Latin words for roof and covering; the tectum forms the roof of the cerebral aqueduct and the tegmentum its floor\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id1179935"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2218,
+      "rationale": "The neurons that receive corticopontine input and project to the cerebellum are the pontine nuclei, which lie among the transverse fibers of the basilar (ventral) pons, not in the tegmentum (Gray's Anatomy of the Human Body, 1918, \"The Pons — Structure\": \"the basilar or ventral portion consists for the most part of fibers arranged in transverse and longitudinal bundles, together with a small amount of gray substance; while the dorsal tegmental portion is a continuation of the reticular formation of the medulla oblongata\"). The book is silent on their location. The page reads \"Gray matter scattered among the bridge-like fibers of the pons, the pontine nuclei,\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fig-ch13_02_08"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2219,
+      "rationale": "The descending input that enters the cerebellum through the pons comes from the cerebrum, not the cerebellum. The module's body, fs-id1315185: \"Descending fibers from the cerebrum have branches that connect to neurons in the pons. Those neurons project into the cerebellum, providing a copy of motor commands sent to the spinal cord,\" and the Summary says the same. The page's caption reads \"Descending input from the cerebrum enters through the large white matter structure of the pons\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id1542501",
+        "fs-id1088309"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2220,
+      "rationale": "The indirect pathway ends at GPi/SNr, the substantia nigra pars reticulata; the pars compacta is the dopaminergic input to the striatum. The module's body, fs-id1475986: \"The indirect pathway is the projection of axons from the striatum to the globus pallidus external segment (GPe), then to the subthalamic nucleus (STN), and finally to GPi/SNr\", with SNr defined as \"substantia nigra pars reticulata\"; fs-id1120163: the pars compacta \"projects to the striatum and releases the neurotransmitter dopamine.\" The page's Key terms bullet reads \"substantia nigra pars reticulata\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id1177244",
+        "fs-id1243804"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2221,
+      "rationale": "Ascending tracts carry sensory information to the brain; motor commands only descend. The module's body, fs-id1173979: \"Ascending tracts of nervous system fibers in these columns carry sensory information up to the brain, whereas descending tracts carry motor commands from the brain\", and \"the latter carrying motor commands down from the brain\". The page's Key terms bullet reads \"carrying sensory information to the brain and motor commands from it\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/02-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46533",
+      "sourceElementIds": [
+        "fs-id1085968",
+        "fs-id1211768"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2222,
+      "rationale": "The limbic structures border the cerebrum around the diencephalon, all within the forebrain; none lies at a forebrain-hindbrain boundary, where the midbrain sits. m46581 glossary (limbic lobe, fs-id2379210): \"structures arranged around the edges of the cerebrum that are involved in memory and emotion\"; this module's body places the hippocampus and amygdala in the cerebrum (fs-id793857). The page's Key terms bullet reads \"structures at the edge (limit) of the cerebrum, bordering the diencephalon\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46719",
+      "sourceElementIds": [
+        "fs-id1828457"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2230,
+      "rationale": "The carotid baroreceptors lie in the carotid sinus at the base of the internal carotid artery, not at the base of the common carotid. m46603 (§20.4), fs-id1479752: \"the carotid sinuses are in the base of the internal carotid arteries\"; m46646 (§20.5): \"The internal carotid artery initially forms an expansion known as the carotid sinus, containing the carotid baroreceptors and chemoreceptors.\" The page reads \"The bases of the internal carotids\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46719",
+      "sourceElementIds": [
+        "fig-ch13_03_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2231,
+      "rationale": "The caption inverts the relation: the superior sagittal sinus runs in the groove of the longitudinal fissure (the module's body, fs-id1432161: \"The superior sagittal sinus runs in the groove of the longitudinal fissure\"; glossary: \"dural sinus that runs along the top of the longitudinal fissure\"), not the fissure in the sinus. The page's caption reads \"at the superior sagittal sinus, over the longitudinal fissure\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46719",
+      "sourceElementIds": [
+        "fs-id1559822"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2232,
+      "rationale": "The two infoldings in the midline separations of the cerebrum and cerebellum are the falx cerebri and falx cerebelli; the tentorium cerebelli (the shelf-like tent) and the diaphragma sellae (over the pituitary) are two further processes, so the sentence compresses four into two and names the wrong pair. Gray's Anatomy of the Human Body (1918), \"The Dura Mater — Processes\": \"The processes of the cranial dura mater … are four in number: the falx cerebri, the tentorium cerebelli, the falx cerebelli, and the diaphragma sellae.\" The page names four infoldings, with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46719",
+      "sourceElementIds": [
+        "fs-id1488700"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2233,
+      "rationale": "As a universal statement it omits hemorrhagic stroke and makes every ischemic blockage embolic. m46594 (§16.1), fs-id1571384: \"There are two main types of stroke, depending on how the blood supply is compromised: ischemic and hemorrhagic. An ischemic stroke is the loss of blood flow to an area because vessels are blocked or narrowed. This is often caused by an embolus… Ischemia may also be the result of thickening of the blood vessel wall.\" The page reads \"most often caused by a blockage… often from some type of embolus… a stroke can also be caused by bleeding from a ruptured vessel\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46719",
+      "sourceElementIds": [
+        "fs-id1205735",
+        "fs-id783351"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2234,
+      "rationale": "The basilar artery runs along the ventral (anterior) surface of the pons, in the basilar groove; the dorsal surface of the pons is the floor of the fourth ventricle (this module, fs-id1136775: \"The floor of the fourth ventricle is the dorsal surface of the pons and upper medulla\"). m46646 (§20.5): \"The paired vertebral arteries join together to form the large basilar artery at the base of the medulla oblongata\"; Gray's Anatomy (1918): \"In the middle line is the sulcus basilaris for the lodgement of the basilar artery.\" The page's Key terms bullet reads \"ventral (anterior) surface\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/03-circulation-and-the-central-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46719",
+      "sourceElementIds": [
+        "fs-id1942158",
+        "fs-id2211612"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2235,
+      "rationale": "The occipital sinus lies in the attached margin of the falx cerebelli beside the cerebellum and drains into the confluence of sinuses; it does not run along the occipital lobes of the cerebrum. m46646 glossary (fs-id2221250): \"enlarged vein that drains the occipital region near the falx cerebelli and flows into the left and right transverse sinuses\"; Gray's Anatomy (1918): \"It is situated in the attached margin of the falx cerebelli … and ends in the confluence of the sinuses.\" The page's Key terms bullet reads \"dural sinuses in the falx cerebelli, along the internal occipital crest beside the cerebellum, that drain into the confluence of sinuses\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1334448"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2240,
+      "rationale": "The trigeminal ganglion lies inside the cranial cavity, in a dural cavity on the petrous temporal bone, so cranial nerve ganglia are not as a rule \"outside the skull\" and the ganglion is not \"superficial to the temporal bone\". Gray's Anatomy of the Human Body (1918): \"The Semilunar Ganglion (ganglion semilunare [Gasseri]; Gasserian ganglion) occupies a cavity (cavum Meckelii) in the dura mater covering the trigeminal impression near the apex of the petrous part of the temporal bone.\" The page reads \"The ganglia of cranial nerves lie along the nerves, close to where they leave the cranium… rests on the temporal bone in the floor of the cranial cavity\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1553818",
+        "fs-id2211597",
+        "fs-id1284229"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2241,
+      "rationale": "\"Paravertebral ganglia\" is another name for the sympathetic chain ganglia as a whole, and the three cervical ganglia belong to the chain; the source puts them \"superior to\" it. m46582 (§15.1), fs-id2990238: \"Ganglia, which are part of the sympathetic chain ganglia, are also called the paravertebral ganglia.\" The page reads \"The sympathetic chain ganglia, also called paravertebral ganglia… The chain ganglia extend up into the cervical region as three cervical ganglia\" and the Key terms bullet \"autonomic ganglia of the sympathetic chain, alongside the vertebral column, including three in the cervical region\", with visible Source notes and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "tbl-ch13_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2242,
+      "rationale": "The geniculate ganglion is the facial nerve's sensory ganglion (the same table's row VII: \"Facial muscles, Geniculate ganglion, Pterygopalatine ganglion (autonomic)\"); the glossopharyngeal nerve's sensory ganglia are the superior and inferior (petrosal) ganglia (Gray's Anatomy of the Human Body, 1918: \"The sensory fibers arise from the cells of the superior and petrous ganglia, which are situated on the trunk of the nerve\"). The page's table row IX reads \"Pharyngeal muscles, Superior and inferior (petrosal) ganglia, Otic ganglion (autonomic)\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "tbl-ch13_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2243,
+      "rationale": "The hypoglossal nerve is the motor nerve of the tongue; the muscles of the larynx and pharynx belong to the vagus (the module's glossary: hypoglossal nerve \"responsible for contraction of muscles of the tongue\"; m46581 (§15.3), fs-id2295140: the nucleus ambiguus \"targets muscles in the pharynx and larynx for swallowing and speech\"; Gray's Anatomy, 1918: \"The hypoglossal nerve is the motor nerve of the tongue\"). The page's table row XII reads \"Motor – tongue (M)\" and \"Muscles of the tongue\" with a visible Source note and a footer sentence; the body sentence fs-id1271098 (\"the muscles of the lower throat and tongue\") is kept as printed. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1472046"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2244,
+      "rationale": "The cervical plexus is C1-C4 and the lumbar plexus L1-L4 (L5 joins the sacral plexus through the lumbosacral trunk, and the same paragraph gives L5 to the sacral plexus), and the module's own figure fig-ch13_04_06 brackets Cervical C1 to C4, Brachial C5 to T1, Lumbar L1 to L4. Gray's Anatomy of the Human Body (1918): \"The cervical plexus is formed by the anterior divisions of the upper four cervical nerves\"; the lumbar plexus by \"the first three and the greater part of the fourth lumbar nerves\". The page reads \"C1 through C4\", \"C5 through T1\", and \"L1 through L4\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1472046"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2245,
+      "rationale": "The axillary nerve does not branch from the radial nerve; both are terminal branches of the posterior cord of the brachial plexus, and the module's own figure fig-ch13_04_06 draws the axillary, median, radial, and ulnar as four separate nerve ends. Gray's Anatomy of the Human Body (1918): \"The Axillary Nerve … arises from the posterior cord of the brachial plexus\"; \"The Radial Nerve … is the continuation of the posterior cord of the plexus.\" The page reads \"Large nerves from this plexus include the axillary nerve, which goes to the shoulder, and the radial nerve\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1594972"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2246,
+      "rationale": "T1 belongs to the brachial plexus, so \"Thoracic spinal nerves are not part of any plexus\" is false of T1; the module's own body says the brachial plexus takes \"C4 through T1\" and \"Spinal nerves of the thoracic region, T2 through T11, are not part of the plexuses\", and its glossary has the brachial plexus \"associated with the lower cervical spinal nerves and first thoracic spinal nerve\". The page reads \"Thoracic spinal nerves T2 through T11 are not part of any plexus\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1523511",
+        "fs-id1205735"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2247,
+      "rationale": "After the sciatic nerve divides, the fibular nerve winds around the neck of the fibula and supplies the lateral and anterior compartments of the leg; the posterior leg is the tibial nerve's (the tibial entry carries the same wording, correctly). The book is silent elsewhere on the fibular nerve. Gray's Anatomy of the Human Body (1918): the common peroneal nerve \"winds around the neck of the fibula … and divides beneath the muscle into the superficial and deep peroneal nerves\". The page's Key terms bullet reads \"systemic nerve of the lateral and anterior leg that begins as part of the sciatic nerve\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/13-anatomy-of-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46553",
+      "sourceElementIds": [
+        "fs-id1524984",
+        "fs-id1286130"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2248,
+      "rationale": "The glossopharyngeal nerve moves no tongue muscle (its one muscle is the stylopharyngeus); the module gives the tongue to the hypoglossal nerve (glossary: \"responsible for contraction of muscles of the tongue\") and the glossopharyngeal nerve only \"muscles in the oral cavity and upper throat\" (body, fs-id1271098) and \"Pharyngeal muscles\" in the table. Gray's Anatomy of the Human Body (1918): \"The Muscular Branch (ramus stylopharyngeus) is distributed to the Stylopharyngeus.\" The page's Key terms bullet reads \"responsible for contraction of a muscle of the throat\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
     }
   ]
 }

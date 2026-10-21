@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, and chapter 12 on October 20, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, and chapter 13 on October 21, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -317,6 +317,21 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   source's micrometre unit is set as the upright micro sign (µm)" *(chapter
   10, two authors)*. The ASCII-ion rule does exempt the footer; this one
   does not, on purpose (Pagefind indexes the glyphs separately).
+- **A module whose every glossary meaning prints its own term (or a root
+  or translation of it) yields no glossary recall item**: 13.3's 34 terms
+  ("foramen magnum — large opening…", "arachnoid granulations…") all leaked,
+  so its recall items are body and summary clozes of sentences that print
+  the term, and the footer names the mechanism for every excluded term.
+  That is the rule, not a floor defect *(chapter 13)*.
+- **An author-written distractor is grepped against the chapter's sibling
+  modules, not only its own.** 13.3's "memory loss … which lobe" MC offered
+  "frontal", and 13.2 gives the prefrontal lobe short-term memory; the
+  checker caught it and the item became a cloze of the module's own
+  sentence *(chapter 13)*.
+- **An empty in-module `<link>` ("(see also )") is a CNXML rendering gap,
+  not a source defect**: the PDF prints the figure number. It is reworded
+  like any other figure reference and disclosed; the verifier rejects it
+  as an erratum *(chapter 13)*.
 - **Source section titles vary** ("Review Chapter", "Critical Thinking
   Question" in 1.6) — they are the same `multiple-choice` /
   `free-response` classes.

@@ -90,14 +90,16 @@ reproduction, development, and inheritance.
 - **The Nervous System and Nervous Tissue** — the basic structure and
   function of the nervous system, nervous tissue, the function of nervous
   tissue, the action potential, and communication between neurons.
+- **Anatomy of the Nervous System** — the embryologic perspective, the
+  central nervous system, circulation and the central nervous system, and
+  the peripheral nervous system.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 3: Regulation, Integration, and Control** — Anatomy of the Nervous
-  System; The Somatic Nervous System; The Autonomic Nervous System; The
+- **Unit 3: Regulation, Integration, and Control** — The Somatic Nervous System; The Autonomic Nervous System; The
   Neurological Exam; The Endocrine System.
 - **Unit 4: Fluids and Transport** — The Cardiovascular System: Blood; The
   Cardiovascular System: The Heart; The Cardiovascular System: Blood Vessels
