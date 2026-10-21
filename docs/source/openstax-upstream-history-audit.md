@@ -16,9 +16,9 @@
 
 ## Coverage
 
-- Mapped local sections: 685
-- Sections changed upstream: 44
-- Content-level changes: 35
+- Mapped local sections: 688
+- Sections changed upstream: 45
+- Content-level changes: 36
 - Markup/metadata-only changes: 9
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 0
@@ -32,7 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 76 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 79 sections mapped
 
 ## Changed mapped sections
 
@@ -54,6 +54,11 @@ Module `m46355`; markup-or-metadata-only. Changed lanes: raw XML only.
 ### anatomy-physiology 11.5 — [content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md](../../content/life-health-sciences/anatomy-physiology/11-the-muscular-system/05-muscles-of-the-pectoral-girdle-and-upper-limbs.md)
 
 Module `m46495`; content-changed. Changed lanes: instructionalText.
+
+
+### anatomy-physiology 14.3 — [content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md](../../content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md)
+
+Module `m46574`; content-changed. Changed lanes: instructionalText.
 
 
 ### biology 13.2 — [content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md)

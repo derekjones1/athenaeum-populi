@@ -190,7 +190,18 @@ them.
    member names first: a group label that shares a root with its members
    (Gluteal/gluteus, Iliopsoas/iliacus, Pronation/pronator) is a giveaway
    the lint does not catch, and the checkers removed two such items on
-   chapter 11; "transcribe only" is the decision for that table.
+   chapter 11; "transcribe only" is the decision for that table. Then each
+   member is checked against every cell of the OTHER bins' rows, not only
+   its own: a member whose text is contained in another row's cell sorts
+   under two bins and the author drops it (14.1's "Dermis, joint capsules"
+   sat inside the free-nerve-endings Location cell) *(chapter 14)*.
+   A figure's panel count is read off the vendored image, never inferred
+   from the module's caption credits: four `LM ×` credits in 14.1 belong
+   to four figures, and Part C told the author 1427 was "four panels" of
+   one micrograph. A "sub-title" Part B reports inside a feature box is
+   checked in the CNXML before Part C asks for a bold line: 14.2's
+   "Retinal Disparity" was the in-box figure's `<title>`, which this book
+   never prints *(chapter 14)*.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
@@ -247,7 +258,12 @@ the keys gate reports it as a key-differs until the fold lands *(chapter
 erratum number assigned in the ruling message (the parent keeps a running
 reserved list in PARENT-NOTES; the errata drafter numbers those first):
 an entry with a placeholder number fails the keys test, and two chapter 11
-authors each guessed one. A replacement distractor is grepped against the keys of the items above
+authors each guessed one. A replacement item's stem is grepped against every
+alt and `longdesc` on the page, not only against the keys: 14.2's
+replacement cloze ("information similar to that carried by spinothalamic
+tract, such as ________ sensations") was answered by a printed label in
+the ascending-pathways `longdesc`, and the parent's own read caught it
+after the author's key grep had passed *(chapter 14)*. A replacement distractor is grepped against the keys of the items above
 and below it before it is accepted: "fat storage" landed directly above an
 item keyed "fat stores" *(chapter 6; the author caught it)*. The harness
 may refuse an agent's Write of its report file ("Subagents should return

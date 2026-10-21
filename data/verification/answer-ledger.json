@@ -373,6 +373,14 @@
    "verdict": "ok",
    "note": "Practice selfcheck for unkeyed SA [fs-id1167660590020]; model assembled from fs-id1167662424366 (ADCC paragraph, Fab binds pathogen -> Fc receptors on effector cell bind Fc -> cytotoxin release); source prints no key, correctly selfcheck (run-facts C4 #22). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "00c3aede70b81e8d": {
+   "verdict": "ok",
+   "note": "glossary recall: alkaloid; body bolds Alkaloids",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "00c975733de8c977": {
    "verdict": "ok",
    "note": "Review Question fs-idp270948128, source solution C 'duodenum'. Section text (Small Intestine): 'Digestive juices from the pancreas, liver, and gallbladder ... enter the duodenum.' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -1639,6 +1647,14 @@
     "result": "agrees"
    }
   },
+  "036c6f31cda4dfe2": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2174387 key B nociceptor; body Functional Receptor Types para 2 supports it; distractors are other receptor classes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "036d3ebe0d7568df": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -2898,6 +2914,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "06851e0d424a8cc4": {
+   "verdict": "ok",
+   "note": "RQ fs-id2609107, key A ventral horn (fs-id2505059); fs-id2627639 lower motor neurons in the ventral horn.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0689f335058c2084": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3232,6 +3256,14 @@
   "07288bdf9e532934": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "072dc5d16e8a7b46": {
+   "verdict": "ok",
+   "note": "RQ fs-id1406518, key A homunculus (fs-id1849742); fs-id2796985 topographical map, homunculus, similar to primary somatosensory cortex.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -3815,6 +3847,14 @@
    "note": "glossary recall: rhizome (fs-idm4778864) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "088e403038a00e00": {
+   "verdict": "ok",
+   "note": "author-written from tbl-ch14_01 Location(s)/Stimuli cells of four rows (Part C), 7 items; each read against every cell; Dermis, joint capsules dropped as true of two rows",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -4977,6 +5017,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "0b5dc6316451ce84": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1582992 graded per Part C; fixing text caption fig-ch14_01_05 + fs-id2744243, fs-id2479589; model = source solution verbatim"
   },
   "0b5f69083014b07d": {
    "verdict": "ok",
@@ -7863,6 +7907,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "1240511af0a3e800": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id1587708 fasciculus gracilis; meaning as stem; body fs-id2139366 prints the term.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1241e6e0fe9332fb": {
    "verdict": "ok",
    "note": "4*Math.cos(7pi/6)=-3.4641016151377553=-2*sqrt(3); 4*Math.sin(7pi/6)=-1.999999999999999=-2. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -7878,6 +7930,14 @@
   "125201caeda6d83e": {
    "verdict": "ok",
    "note": "KC 7 38.3 § Ball-and-Socket Joints, m66639 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "12553d8b74357ffa": {
+   "verdict": "ok",
+   "note": "glossary recall: inner segment (m46577 glossary; body photoreceptor para bolds it); replaces the photon recall item, which the photoisomerization cloze answered",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8694,6 +8754,14 @@
     "result": "agrees"
    }
   },
+  "141f09fd9634e8d5": {
+   "verdict": "ok",
+   "note": "glossary recall: otolithic membrane; body Equilibrium para 2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "142003eb083c7cd1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -8905,6 +8973,14 @@
     "result": "agrees"
    }
   },
+  "146c842bf497282d": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2458260, key Betz cells: \"The two descending pathways travelled by the axons of Betz cells are the corticobulbar tract and the corticospinal tract, respectively.\"",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "146e9be07d12afd7": {
    "verdict": "ok",
    "note": "Solved y=(3x+4)/(5-4x) for x by cross-multiplying and collecting x terms: x(3+4y)=5y-4 => x=(5y-4)/(4y+3), so f^{-1}(x)=(5x-4)/(4x+3). Verified by node composition f(f^{-1}(x))=x for x=0,1,2,-3,7.5 (exact match). Matches CNXML exercise fs-id1165135333251 (source #27), which has a solution. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -9090,6 +9166,14 @@
   "14e43d59aefb9117": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "14ee620eb3176911": {
+   "verdict": "ok",
+   "note": "glossary recall Broca’s area (fs-id1640098); body fs-id2492676.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14582,6 +14666,14 @@
     "result": "agrees"
    }
   },
+  "212ca528ef489fa8": {
+   "verdict": "ok",
+   "note": "RQ fs-id2136699, key C audition; audition relays through the medial geniculate nucleus (fs-id2413700), gustation through the ventral posterior nucleus (fs-id1885696). Options and order as source.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "212f5cd69daeafcf": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -15579,6 +15671,14 @@
    "verdict": "ok",
    "note": "Domain of log(x-5)+2: solve x-5>0 -> x>5 -> (5,inf). Matches CNXML ti_04_04_02 solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "24011d1187690193": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id2371617 last sentence: '...larger than the areas processing peripheral vision.' accept peripheral | peripheral visual field. accept extended: peripheral field | peripheral region.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2404bb3fefc70214": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"Finally, lichens produce compounds that have antibacterial effects, and further research may discover compounds that are medically useful t…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -15741,6 +15841,14 @@
    "note": "source exercise fs-idp96311840 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "24761f39f33d334c": {
+   "verdict": "ok",
+   "note": "author-written sortbins from fs-id2071044, fs-id2256441, fs-id2765700, fs-id2875718; each item one module sentence, unique to its tract; medial item cut to \"Its lower motor neurons are located in the medial regions\" (no ventral horn).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16937,6 +17045,14 @@
    "verdict": "ok",
    "note": "Critical Thinking eip-927; model answer is the source solution verbatim, checkpoints decompose its four sentences with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2705fd48bbb09871": {
+   "verdict": "ok",
+   "note": "glossary recall: auricle; pinna accepted (body: Some sources will also refer to this structure as the pinna)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2709c5876667b231": {
    "verdict": "ok",
    "note": "body cloze from § The Germ Theory of Disease: \"For example, the ancient Greeks proposed the miasma theory , which held that disease originated from particles emanating from decomposing m…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -17704,6 +17820,14 @@
   "29058f558446500f": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663991434 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2905ac73095d3af2": {
+   "verdict": "ok",
+   "note": "glossary recall working memory (fs-id2145126); body bolds it in fs-id2441635.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19819,6 +19943,10 @@
   "2e3136ff9fade39f": {
    "verdict": "ok",
    "note": "c^2=4+81=85 -> foci (0,sqrt85),(0,-sqrt85); matches source fs-id1688303. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "2e31cceec36ecb77": {
+   "verdict": "ok",
+   "note": "CT fs-id2639955; model answer = solution fs-id2260103 verbatim."
   },
   "2e32bf23c8341147": {
    "verdict": "ok",
@@ -26706,6 +26834,14 @@
     "result": "agrees"
    }
   },
+  "3eef7a870e35470f": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id1381644: '...travel through the cranial nerves—specifically, the trigeminal system.' Key cranial nerves.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3ef3dea97c35680f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -26912,6 +27048,14 @@
   "3f466c19b3db5870": {
    "verdict": "ok",
    "note": "body CYU, unkeyed (note.check-your-understanding, no source solution). Stays selfcheck: ED-pathway clause from § Other Glycolytic Pathways ('Although some bacteria ... contain only the ED pathway for glycolysis, other bacteria ... have the ability to use either the ED pathway or the EMP pathway') and PPP clause from the same subsection ('this glycolytic pathway may be favored when the cell has need for nucleic acid and/or protein synthesis') — two separate sentences, not one, so it does not convert per the honest-conversion test. Unchanged by the checker's fixes. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "3f474df16d05dde5": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2740806 key D facial; body: facial nerve connects to taste buds in anterior two thirds; olfactory/trochlear/trigeminal not gustatory in module",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3f4a2820ca5da2b8": {
    "verdict": "ok",
@@ -35413,6 +35557,14 @@
     "result": "agrees"
    }
   },
+  "53ca9dca94f41cc9": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1904177 key D; body: axons of RGCs collect at the optic disc and leave the eye as the optic nerve",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "53cbf6d4c22561cd": {
    "verdict": "ok",
    "note": "source exercise fs-idm132740496 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -36101,6 +36253,14 @@
   "5579ffc95db5d0bb": {
    "verdict": "ok",
    "note": "CT fs-id1700964, model = solution fs-id1432864 with claim correction (parent-accepted F7): 'largest portion' -> 'most posterior extent' per fs-id2251383, glossary fs-id1883617, summary fs-id1701760; Source note after the item"
+  },
+  "5580cf3416c1c5f6": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id1367985 nucleus cuneatus; meaning as stem; body fs-id2404377 prints the term.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "558b38a78a5c3738": {
    "verdict": "ok",
@@ -39276,6 +39436,14 @@
     "result": "agrees"
    }
   },
+  "5d237e8bf33ded83": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2349137, key interneuron: \"An inhibitory interneuron, activated by a collateral branch of the nociceptor fiber, will inhibit the motor neurons of the gastrocnemius and soleus muscles to cancel plantar flexion.\"",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5d24ce3f41c8e1df": {
    "verdict": "ok",
    "note": "KC 1 1.2 § Bergey's Manuals — Micro Connection: Same Name, Different Strain, m58782 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -40818,6 +40986,14 @@
     "result": "agrees"
    }
   },
+  "6104e95075235e9a": {
+   "verdict": "ok",
+   "note": "RQ fs-id2279372, key C withdrawal reflex (fs-id1410057); fs-id2349137 withdrawal reflex on stepping on a tack.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6106578bd41269c3": {
    "verdict": "ok",
    "note": "m66405 eip-172 keyed C (foods that might contain essential amino acids); module text: umami is 'attributable to the taste of the amino acid L-glutamate' and 'savory substances tend to be high in protein'. No departure. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -41071,6 +41247,10 @@
   "61bd2892c560220c": {
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "61bf059ff2f692cf": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2302528 graded per Part C; fixing sentences fs-id2011468 and fs-id1354741; model = source solution verbatim"
   },
   "61c1aa3317be4b6f": {
    "verdict": "ok",
@@ -41585,6 +41765,14 @@
   "635fea103722893c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6368bab962d4662c": {
+   "verdict": "ok",
+   "note": "glossary recall internal capsule (fs-id2201382); body fs-id1723870.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45173,6 +45361,14 @@
     "result": "agrees"
    }
   },
+  "6d28a53b9875ee74": {
+   "verdict": "ok",
+   "note": "RQ fs-id2488211, key A inferior right; fs-id2371617 left field -> right visual cortex; superior cortex processes the inferior field and vice versa.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6d2c26a9de67da08": {
    "verdict": "ok",
    "note": "KC 2 11.7 § Alternate σ Factors, m58846",
@@ -45346,6 +45542,14 @@
   "6d88547c4dfc28c6": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662747086 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6d898ba60658784f": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2024484 key C mechanoreceptor; body: sound and body position (balance) are interpreted through a mechanoreceptor",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45837,6 +46041,14 @@
   },
   "6ed1d6df0b58e607": {
    "verdict": "ok"
+  },
+  "6edb32e6ed1793ce": {
+   "verdict": "ok",
+   "note": "body cloze, Vision para 1, verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6edbc8af44a0d3fd": {
    "verdict": "ok",
@@ -46675,6 +46887,14 @@
   "70de7adeff0defe9": {
    "verdict": "ok",
    "note": "IA KC 07-12 §10.1, Ch.10 Practice Test 'Determine whether each graph is the graph of a function and if so, is it one-to-one' part (a) (m81450), whose problem prints a figure captioned 'a parabola opening to the right with vertex (negative 3, 0)' and whose key reads 'Not a function'. The local page had described that figure in prose; it is now recreated as the sideways parabola x = y^2 - 3, matching the source's stated vertex. Re-derived: x = y^2 - 3 has two y-values for every x > -3 (e.g. x=1 gives y=±2), so it fails the vertical line test and is not a function. Options and answer unchanged."
+  },
+  "70e4eb6476b195a9": {
+   "verdict": "ok",
+   "note": "RQ fs-id2593232, key B vestibulospinal tract (fs-id1956721); fs-id2144788 equilibrium information from the vestibular system.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "70edeefc16fce782": {
    "verdict": "ok",
@@ -50036,6 +50256,14 @@
   "78c0176a6662da23": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "78c070761eca4af6": {
+   "verdict": "ok",
+   "note": "RQ fs-id2297388, key D primary motor cortex (fs-id1632350); fs-id1383807 Betz cells of the primary motor cortex activate cranial/spinal lower motor neurons.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55569,6 +55797,14 @@
     "result": "agrees"
    }
   },
+  "8556f4bd8f3fd6e6": {
+   "verdict": "ok",
+   "note": "glossary recall: vestibule; body Audition para after ear figure",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "855762d57fa54e9e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -55925,6 +56161,14 @@
   "8639e78721358dbc": {
    "verdict": "ok",
    "note": "t=2ln(11/3)=2.598565968... rounds to 2.5986. Computed via node; verified with checkAnswer."
+  },
+  "863fd3b8e7c878d9": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1435300, key precentral gyrus; accept = figure label Pre-central gyrus.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8648fcfc61ac4fd4": {
    "verdict": "ok",
@@ -56482,6 +56726,14 @@
   "87d4216bcb8d6d36": {
    "verdict": "ok",
    "note": "author-built from § Measuring Biodiversity: \"DNA barcoding is one molecular genetic method, which takes advantage of rapid evolution in a mitochondrial gene (cytochrome c oxidase 1) pr…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "87e00087d54c64c7": {
+   "verdict": "ok",
+   "note": "RQ fs-id2450524, key A lips; fs-id2789471 exaggerates fingers and lower face; figure 1421 draws the lips largest of the options (thigh not labeled, elbow and neck small).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57207,6 +57459,10 @@
   "8996e6bf5fab9b49": {
    "verdict": "ok",
    "note": "re-derived: line through (2,-2) slope 4/3 -> y=(4/3)x-14/3 (intercept -14/3=-4.666666666666667); grid xMin-7..11 yMin-8..10 gives 5 reachable snap-lattice points [(-1,-6),(2,-2),(5,2),(8,6),(11,10)] for plotPoints:3, slack 2 (gpcheck). | carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "8999dcc8a71d5c4b": {
+   "verdict": "ok",
+   "note": "CT fs-id1232554; model answer = solution fs-id2262067 verbatim; rubric decomposes it."
   },
   "899abdf2e44c3d71": {
    "verdict": "ok"
@@ -58522,6 +58778,14 @@
     "result": "agrees"
    }
   },
+  "8ce305c4d7d2c05d": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2589425 key B sour; body: Sour taste is the perception of H+ concentration ... lowering saliva pH",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8ce698756d203951": {
    "verdict": "ok",
    "note": "Review Question fs-idm162787312 (module m66417), source-keyed B, 'salt water and fresh water', supported by the module's opening sentence on estuaries. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -58887,6 +59151,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "8deaa2747c6f4b42": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2643898 graded selfcheck; model answer = solution fs-id2608795 verbatim; fixed by fs-id2584331 (facial nerve innervates orbicularis oculi bilaterally)."
   },
   "8decce78ddbe6cf9": {
    "verdict": "ok",
@@ -60988,6 +61256,10 @@
     "result": "agrees"
    }
   },
+  "92f4830d34a7549c": {
+   "verdict": "ok",
+   "note": "CT fs-id2297940; model answer = solution fs-id2637966 verbatim; rubric decomposes it."
+  },
   "92f499b321ea2d9a": {
    "verdict": "ok",
    "note": "source exercise fs-id2308224 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -62121,6 +62393,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "95b1e038d467afa3": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2609114 graded selfcheck; model answer = solution fs-id2844592 verbatim + Prosopagnosia box sentence fs-id2771316 (voice, distinct facial features, hair color) per run facts Part C; rubric clauses all from the model answer. Rubric reworded (checker): one clause for the source cues, one listing every cue as alternatives."
   },
   "95b6885cbdaeae96": {
    "verdict": "ok",
@@ -64787,6 +65063,14 @@
    "verdict": "ok",
    "note": "m66609 CT exercise fs-idm126240912: model answer is the source solution verbatim (annuals/biennials/perennials definitions), checkpoints decompose its four clauses with no new claims. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "9ca36287368def4e": {
+   "verdict": "ok",
+   "note": "glossary recall cerebral peduncles (fs-id2100083); body fs-id1723870.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9ca3bb82fbb170d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65647,6 +65931,14 @@
   "9ea3bbc4c27137d1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9ea6cf0c03ed94d3": {
+   "verdict": "ok",
+   "note": "body cloze, Gustation umami para: The molecule that activates this receptor is the amino acid L-glutamate",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -67922,6 +68214,10 @@
     "result": "agrees"
    }
   },
+  "a3bed8953ac9ee11": {
+   "verdict": "ok",
+   "note": "source CT fs-id2663099; model answer = source solution verbatim; checks are its clauses"
+  },
   "a3c4337299effcf0": {
    "verdict": "ok",
    "note": "source exercise fs-id1172101039318 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -68798,6 +69094,14 @@
   "a5a4b12b75121e98": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a5a5219cd033890c": {
+   "verdict": "ok",
+   "note": "Glossary recall fs-id2168151 binocular depth cues; body fs-id2484040; accept binocular cues (Everyday box fs-id2532277).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69744,6 +70048,14 @@
    "verdict": "ok",
    "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "a816126818c3d935": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2533513, key red nucleus; referent the extrapyramidal system for this system.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a81767c350aa4331": {
    "verdict": "ok",
    "note": "multiplechoice re-read against m46355 CNXML and page text; key \"parietal bone\" — Which of the following is a bone of the brain case?",
@@ -70511,6 +70823,14 @@
   "aa06fc17418e6be5": {
    "verdict": "ok",
    "note": "unkeyed Critical-Thinking fs-id1167663617624, stays selfcheck; model answer synthesizes the amantadine/rimantadine and neuraminidase-inhibitor paragraphs, both confirmed against the CNXML. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "aa0ccc229d16ebf5": {
+   "verdict": "ok",
+   "note": "body cloze, retinal para: This process is called photoisomerization; British and hyphenated spellings accepted (re-hashed from 327f93047974d8d2 after the accept list grew)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "aa13d7ce2fc6d7b1": {
    "verdict": "ok",
@@ -73502,6 +73822,14 @@
     "note": "key stands: m58859 \"such as tapeworms treated with niclosamide, or for decontaminating the bowel, as with colistin\" — the module ties bowel decontamination to colistin only; niclosamide is its intestinal-tapeworm example"
    }
   },
+  "b19da5893129b09a": {
+   "verdict": "ok",
+   "note": "glossary recall pyramidal decussation (fs-id2277258); accept = figure 1426 label Decussation of pyramids.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b1a6b95356661020": {
    "verdict": "ok",
    "note": "KC 2 7.5 § body Other Types of Fermentation (fs-id811872), m66469 — parent re-read against the module | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -74159,6 +74487,14 @@
   "b2feb781ee88ae44": {
    "verdict": "ok",
    "note": "Body selfcheck, CYU bullet 4 (urinary-infection conditions). Model answer assembled from the cystitis/urethritis paragraph and the pyelonephritis/glomerulonephritis paragraphs."
+  },
+  "b2fecadc190849e5": {
+   "verdict": "ok",
+   "note": "RQ fs-id1395460, key B cerebellum; fs-id2122117 'Some axons project from the vestibular ganglion directly to the cerebellum'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b301853ff9f1eeac": {
    "verdict": "ok",
@@ -75552,6 +75888,14 @@
     "result": "agrees"
    }
   },
+  "b653edc7991d8af0": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id1979175: 'The spinal trigeminal nucleus of the medulla receives information similar to that carried by spinothalamic tract, such as pain and temperature sensations.' Key spinal trigeminal nucleus; accept spinal trigeminal nuclei. Placed first in its group. Replaces the pain-and-temperature cloze (leaked by the 1417 longdesc label).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b657a2a7e2fed428": {
    "verdict": "ok",
    "note": "body selfcheck, IgG crosses placenta; model traces to fs-id1167662885726. Left selfcheck because the Matching set's row A ('only one that can cross the placenta' -> IgG) already grades the identical fact as a Practice multiplechoice. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -76425,6 +76769,14 @@
     "result": "agrees"
    }
   },
+  "b8439179f25719dd": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id2225935 'These surrounding areas are the visual association cortex', referent from the previous sentence (areas V2 and V3); accepts association cortex, visual association regions (same paragraph), visual association area, association area (fs-id2484040 class term). accept extended: visual association cortices | association cortices.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b8456535f7ace419": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77258,6 +77610,10 @@
     "result": "agrees"
    }
   },
+  "ba6a36aee4e154d0": {
+   "verdict": "ok",
+   "note": "CT fs-id2260825; model answer = solution fs-id2110324 verbatim."
+  },
   "ba76da8d0507f047": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -78073,6 +78429,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "bc62e8bea2cf88ee": {
+   "verdict": "ok",
+   "note": "source CT fs-id2061794; model answer = source solution verbatim; checks are its clauses"
   },
   "bc65e0370dfb7ca5": {
    "verdict": "ok",
@@ -79092,6 +79452,14 @@
   "bec2b96ef0ac9d9c": {
    "verdict": "ok",
    "note": "summary cloze fs-id1335682; key articular tubercle printed in body fs-id1380884",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bec51588671c564b": {
+   "verdict": "ok",
+   "note": "RQ fs-id1708310, key D cochlear nucleus; fs-id1615812 cochlear nuclei of the superior medulla, fs-id2413700 auditory processing continues to the inferior colliculus. Hint reworded to location only.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -80705,6 +81073,14 @@
     "result": "agrees"
    }
   },
+  "c2e7f6bb00e889d1": {
+   "verdict": "ok",
+   "note": "Body cloze fs-id1979175: 'First, axons from the trigeminal ganglion enter the brain stem at the level of the pons.' ('First,' dropped).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c2ea794e7d324e10": {
    "verdict": "ok",
    "note": "Microbiology 9.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the hyperthermophile paragraph and the mesophile-pathogen sentence; states the section does not answer the health-care question)"
@@ -81004,6 +81380,14 @@
   "c3b00c119bc0d4a6": {
    "verdict": "ok",
    "note": "y-intercept 3 with slope -2/5 gives y = -0.4x + 3; the hint's (5,1) and (-5,5) both satisfy it. Grid widened -7..7 -> -14..14 for plotPoints slack (5 reachable lattice points, was exactly 3). | carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "c3b2c9631c8eb0e8": {
+   "verdict": "ok",
+   "note": "glossary recall: ciliary body; ciliary bodies accepted (irregular plural)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c3b2df2c7c6d5002": {
    "verdict": "ok",
@@ -85751,6 +86135,14 @@
     "result": "agrees"
    }
   },
+  "cf45659d6641fc5f": {
+   "verdict": "ok",
+   "note": "Author-written sortbins from fs-id2225935: ventral identifies stimuli/significance, uses temporal lobe structures, memories; dorsal locates objects in space, enters parietal lobe, influences frontal lobe activity.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cf45b921ba33f989": {
    "verdict": "ok"
   },
@@ -86628,6 +87020,14 @@
   "d19c3869c1a472b9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d1a028d34ec1f29d": {
+   "verdict": "ok",
+   "note": "glossary recall: rhodopsin; body photoreceptor para",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88701,6 +89101,14 @@
     "result": "agrees"
    }
   },
+  "d6bf0c2ede468d31": {
+   "verdict": "ok",
+   "note": "glossary recall: transduction (m46577 glossary); body bolds it in Sensory Receptors para 1",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d6c43fe8485cc386": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -89199,6 +89607,14 @@
   "d7c478d383fcd6f6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d7c6e0bd51ac5fb3": {
+   "verdict": "ok",
+   "note": "glossary recall: cupula; body Equilibrium para 3",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -90229,6 +90645,14 @@
     "result": "agrees"
    }
   },
+  "daa118cb7034e3f6": {
+   "verdict": "ok",
+   "note": "glossary recall: olfactory bulb; body Olfaction para 2",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "daa6387ea105afa7": {
    "verdict": "ok",
    "note": "Review Q8 (fs-id1414671), solution A = cell plate; matches the plant-cytokinesis paragraph ('this structure is called a cell plate'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -90655,6 +91079,10 @@
   "db92cb4075f193c6": {
    "verdict": "ok",
    "note": "a=14,b=13,c=20, angle C: acos((14^2+13^2-20^2)/(2*14*13))=95.52deg -> 95.5, matches source key."
+  },
+  "db952e97600b562e": {
+   "verdict": "ok",
+   "note": "ILQ fs-id2525792 graded per Part C; fixing text caption fig-ch14_01_09; model = source solution verbatim"
   },
   "db98a36a0cf7348e": {
    "verdict": "ok",
@@ -96455,6 +96883,14 @@
     "result": "agrees"
    }
   },
+  "ea110ff073b81c91": {
+   "verdict": "ok",
+   "note": "body cloze, visual transduction para, verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ea1c3772f0a831dc": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165137676536: k=45/(100*3^3)=1/60; solve 60=(1/60)*150*d^3 => d^3=24 => d=cbrt(24)=2.884499... rounds to 2.88 inches. Verified with node arithmetic; matches CNXML solution '≈2.88 inches'; rounding disclosed in the question text. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -100440,6 +100876,14 @@
   "f405ebac4b8c2607": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f40be7748fd35050": {
+   "verdict": "ok",
+   "note": "glossary recall: proprioceptor; body Structural Receptor Types para 2",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

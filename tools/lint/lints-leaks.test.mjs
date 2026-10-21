@@ -67,6 +67,7 @@ test('accept members, math, quotations, gene symbols, footers, and non-chemistry
     'The genes *USP14* and *ROCK1* are adjacent.',
     'The concept of K- and r-selected species. Blood type O+ and B-.',
     'Helper cells carry CD4; vitamin B12; complement C3.',
+    'StatPearls, NCBI Bookshelf NBK555891; the review is PMC1234567.',
     'The code `CO2` is documentation.',
     '<small>Changes: set in Unicode where the source prints "H+" and CO2.</small>',
   ].join('\n\n');

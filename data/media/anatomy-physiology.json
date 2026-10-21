@@ -3619,6 +3619,645 @@
       "alt": "This figure shows a torso of a human body. The spinal cord is shown in the body and the main nerves along the spinal cord are labeled.",
       "caption": "There are four main nerve plexuses in the human body. The cervical plexus supplies nerves to the posterior head and neck, as well as to the diaphragm. The brachial plexus supplies nerves to the arm. The lumbar plexus supplies nerves to the anterior leg. The sacral plexus supplies nerves to the posterior leg."
     },
+    "1400_CO_Photo": {
+      "source": "media/1400_CO_Photo.jpg",
+      "sourceSha256": "772d207d8a1f2afefcfbea1f768021802fda0c5894009b930243a100e3fea05d",
+      "module": "m46561",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1051,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "1400_CO_Photo-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 735,
+          "file": "1400_CO_Photo-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a red hot electric stove top.",
+      "caption": "When high temperature is sensed in the skin, a reflexive withdrawal is initiated by the muscles of the arm. Sensory neurons are activated by a stimulus, which is sent to the central nervous system, and a motor response is sent out to the skeletal muscles that control this movement."
+    },
+    "1401_Receptor_Types": {
+      "source": "media/1401_Receptor_Types.jpg",
+      "sourceSha256": "e7ddc3b0d9e5b7bc4de1c50603aa36a6861be55c01cbe324a7f6e00160d7c26f",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2092,
+      "height": 1038,
+      "variants": [
+        {
+          "width": 800,
+          "height": 397,
+          "file": "1401_Receptor_Types-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 794,
+          "file": "1401_Receptor_Types-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different types of receptors. The top panel shows a neuron receptor with free receptor endings, the middle panel shows a neuron receptor with encapsulated nerve endings, and the bottom panel shows a specialized receptor cell.",
+      "caption": "Receptor cell types can be classified on the basis of their structure. Sensory neurons can have either (a) free nerve endings or (b) encapsulated endings. Photoreceptors in the eyes, such as rod cells, are examples of (c) specialized receptor cells. These cells release neurotransmitters onto a bipolar cell, which then synapses with the optic nerve neurons."
+    },
+    "1402_The_Tongue": {
+      "source": "media/1402_The_Tongue.jpg",
+      "sourceSha256": "76ad78318537d4eb07d219cd57160f0e881b52d25e00296a94571abd1b00dc1f",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2229,
+      "height": 1875,
+      "variants": [
+        {
+          "width": 800,
+          "height": 673,
+          "file": "1402_The_Tongue-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1346,
+          "file": "1402_The_Tongue-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the image of a tongue with callouts that show magnified views of different parts of the tongue. The top right panel shows a micrograph of the circumvallate papilla, and the bottom right panel shows the structure of a taste bud.",
+      "caption": "The tongue is covered with small bumps, called papillae, which contain taste buds that are sensitive to chemicals in ingested food or drink. Different types of papillae are found in different regions of the tongue. The taste buds contain specialized gustatory receptor cells that respond to chemical stimuli dissolved in the saliva. These receptor cells activate sensory neurons that are part of the facial and glossopharyngeal nerves. LM × 1600. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1403_Olfaction": {
+      "source": "media/1403_Olfaction.jpg",
+      "sourceSha256": "69f10e4a4af0399409e8317d0a7c5dee3f2750702e4c2ab4c1a97bd0b9a23844",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2196,
+      "height": 2246,
+      "variants": [
+        {
+          "width": 800,
+          "height": 818,
+          "file": "1403_Olfaction-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1636,
+          "file": "1403_Olfaction-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left panel of this image shows the side view of a person’s face with a cup containing a beverage underneath the nose. The image shows how the aroma of the beverage passes through the nasal cavity. The top right panel shows a detailed ultrastructure of the olfactory bulb. The bottom panel shows a micrograph of the nasal cavity.",
+      "caption": "(a) The olfactory system begins in the peripheral structures of the nasal cavity. (b) The olfactory receptor neurons are within the olfactory epithelium. (c) Axons of the olfactory receptor neurons project through the cribriform plate of the ethmoid bone and synapse with the neurons of the olfactory bulb (tissue source: simian). LM × 812. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1404_The_Structures_of_the_Ear": {
+      "source": "media/1404_The_Structures_of_the_Ear.jpg",
+      "sourceSha256": "c3764391e0ede9d66432fa71c03af1c11190e244c81fe7c83acbac0d1f93eca0",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1126,
+      "height": 719,
+      "variants": [
+        {
+          "width": 800,
+          "height": 511,
+          "file": "1404_The_Structures_of_the_Ear-800.webp"
+        },
+        {
+          "width": 1126,
+          "height": 719,
+          "file": "1404_The_Structures_of_the_Ear-1126.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the structure of the ear with the major parts labeled.",
+      "caption": "The external ear contains the auricle, ear canal, and tympanic membrane. The middle ear contains the ossicles and is connected to the pharynx by the Eustachian tube. The inner ear contains the cochlea and vestibule, which are responsible for audition and equilibrium, respectively."
+    },
+    "1405_Sound_Waves_and_the_Ear": {
+      "source": "media/1405_Sound_Waves_and_the_Ear.jpg",
+      "sourceSha256": "037006cc918add4f7b2a158c85ba382bb473c8dd14086e4430a98b51d9c52512",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2158,
+      "height": 1604,
+      "variants": [
+        {
+          "width": 800,
+          "height": 594,
+          "file": "1405_Sound_Waves_and_the_Ear-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1189,
+          "file": "1405_Sound_Waves_and_the_Ear-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how sound waves travel through the ear, and each step details the process.",
+      "caption": "A sound wave causes the tympanic membrane to vibrate. This vibration is amplified as it moves across the malleus, incus, and stapes. The amplified vibration is picked up by the oval window causing pressure waves in the fluid of the scala vestibuli and scala tympani. The complexity of the pressure waves is determined by the changes in amplitude and frequency of the sound waves entering the ear."
+    },
+    "1406_Cochlea": {
+      "source": "media/1406_Cochlea.jpg",
+      "sourceSha256": "aab2af25f042623a979e90546ad674f9fba30d349c68393b2585ca8ae0a604bf",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2063,
+      "height": 996,
+      "variants": [
+        {
+          "width": 800,
+          "height": 386,
+          "file": "1406_Cochlea-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 772,
+          "file": "1406_Cochlea-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of the cochlea in the inner ear.",
+      "caption": "The three major spaces within the cochlea are highlighted. The scala tympani and scala vestibuli lie on either side of the cochlear duct. The organ of Corti, containing the mechanoreceptor hair cells, is adjacent to the scala tympani, where it sits atop the basilar membrane."
+    },
+    "1407_The_Hair_Cell": {
+      "source": "media/1407_The_Hair_Cell.jpg",
+      "sourceSha256": "9ce05db088866e95e756e1af2448eb2ff83fb10549e37e1521049c1280b61863",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2188,
+      "height": 971,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "1407_The_Hair_Cell-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 710,
+          "file": "1407_The_Hair_Cell-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of the hair cell. The right panel shows a magnified view of the hair cell.",
+      "caption": "The hair cell is a mechanoreceptor with an array of stereocilia emerging from its apical surface. The stereocilia are tethered together by proteins that open ion channels when the array is bent toward the tallest member of their array, and closed when the array is bent toward the shortest member of their array."
+    },
+    "1408_Frequency_Coding_in_The_Cochlea": {
+      "source": "media/1408_Frequency_Coding_in_The_Cochlea.jpg",
+      "sourceSha256": "1d18ccf1edbd54e8d8d62908dc8562950bfbbfdad6b007bed637a1ed7e46bcef",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1450,
+      "height": 983,
+      "variants": [
+        {
+          "width": 800,
+          "height": 542,
+          "file": "1408_Frequency_Coding_in_The_Cochlea-800.webp"
+        },
+        {
+          "width": 1450,
+          "height": 983,
+          "file": "1408_Frequency_Coding_in_The_Cochlea-1450.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how different sound frequencies are coded in the cochlea.",
+      "caption": "The standing sound wave generated in the cochlea by the movement of the oval window deflects the basilar membrane on the basis of the frequency of sound. Therefore, hair cells at the base of the cochlea are activated only by high frequencies, whereas those at the apex of the cochlea are activated only by low frequencies."
+    },
+    "1409_Maculae_and_Equilibrium": {
+      "source": "media/1409_Maculae_and_Equilibrium.jpg",
+      "sourceSha256": "23e4a6d45b32eb5abf9cb0c26be3f8d7d0bb77b92296fc7a10b705a7f48a2f62",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1188,
+      "height": 626,
+      "variants": [
+        {
+          "width": 800,
+          "height": 421,
+          "file": "1409_Maculae_and_Equilibrium-800.webp"
+        },
+        {
+          "width": 1188,
+          "height": 626,
+          "file": "1409_Maculae_and_Equilibrium-1188.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how the macula orients itself to allow for equilibrium. The top left panel shows the inner ear. The bottom left panel shows the cellular structure of the macula. In the top right panel, a person’s head is shown in the side view along with the orientation of the macula. In the bottom right panel, a person’s head is shown with the head tilted forward and depicts the orientation of the macula to account for the tilt.",
+      "caption": "The maculae are specialized for sensing linear acceleration, such as when gravity acts on the tilting head, or if the head starts moving in a straight line. The difference in inertia between the hair cell stereocilia and the otolithic membrane in which they are embedded leads to a shearing force that causes the stereocilia to bend in the direction of that linear acceleration."
+    },
+    "1410_Equilibrium_and_Semicircular_Canals": {
+      "source": "media/1410_Equilibrium_and_Semicircular_Canals.jpg",
+      "sourceSha256": "75baf6b09833e619f4d727840a1847f58e5727fa86929212057b682576fc0fce",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2256,
+      "height": 1112,
+      "variants": [
+        {
+          "width": 800,
+          "height": 394,
+          "file": "1410_Equilibrium_and_Semicircular_Canals-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 788,
+          "file": "1410_Equilibrium_and_Semicircular_Canals-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this image shows a person’s head in a still position. Underneath this, the ampullary nerve is shown. The right panel shows a person rotating his head, and the below that, the direction of movement of the cupula is shown.",
+      "caption": "Rotational movement of the head is encoded by the hair cells in the base of the semicircular canals. As one of the canals moves in an arc with the head, the internal fluid moves in the opposite direction, causing the cupula and stereocilia to bend. The movement of two canals within a plane results in information about the direction in which the head is moving, and activation of all six canals can give a very precise indication of head movement in three dimensions."
+    },
+    "1411_Eye_in_The_Orbit": {
+      "source": "media/1411_Eye_in_The_Orbit.jpg",
+      "sourceSha256": "50a6a75c25fda119b9035172e8827d8bfba2004d0bf2c063b33249b3fd72a44f",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1742,
+      "height": 1140,
+      "variants": [
+        {
+          "width": 800,
+          "height": 523,
+          "file": "1411_Eye_in_The_Orbit-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1047,
+          "file": "1411_Eye_in_The_Orbit-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the lateral view of the eye. The major parts are labeled.",
+      "caption": "The eye is located within the orbit and surrounded by soft tissues that protect and support its function. The orbit is surrounded by cranial bones of the skull."
+    },
+    "1412_Extraocular_Muscles": {
+      "source": "media/1412_Extraocular_Muscles.jpg",
+      "sourceSha256": "1932dbd70c22af87d8e5e6fadad9c1600a72f3627c44824c01d0558a3006bc3b",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2252,
+      "height": 866,
+      "variants": [
+        {
+          "width": 800,
+          "height": 307,
+          "file": "1412_Extraocular_Muscles-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 615,
+          "file": "1412_Extraocular_Muscles-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the muscles surrounding the eye. The left panel shows the lateral view, and the right panel shows the anterior view of the right eye.",
+      "caption": "The extraocular muscles move the eye within the orbit."
+    },
+    "1413_Structure_of_the_Eye": {
+      "source": "media/1413_Structure_of_the_Eye.jpg",
+      "sourceSha256": "f8b98bdfa2bd68b17fb2c1e975ede1d571269348f49cdaca6d0851712d377dff",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2150,
+      "height": 1338,
+      "variants": [
+        {
+          "width": 800,
+          "height": 498,
+          "file": "1413_Structure_of_the_Eye-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 995,
+          "file": "1413_Structure_of_the_Eye-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of the eye with the major parts labeled.",
+      "caption": "The sphere of the eye can be divided into anterior and posterior chambers. The wall of the eye is composed of three layers: the fibrous tunic, vascular tunic, and neural tunic. Within the neural tunic is the retina, with three layers of cells and two synaptic layers in between. The center of the retina has a small indentation known as the fovea."
+    },
+    "1414_Rods_and_Cones": {
+      "source": "media/1414_Rods_and_Cones.jpg",
+      "sourceSha256": "7dc0cd60639dba109de99ae698d545a52092f26e37a1d9f71bfba48cfdff6cb8",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1050,
+      "height": 1542,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1175,
+          "file": "1414_Rods_and_Cones-800.webp"
+        },
+        {
+          "width": 1050,
+          "height": 1542,
+          "file": "1414_Rods_and_Cones-1050.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows the cellular structure of the different cells in the eye. The bottom panel shows a micrograph of the cellular structure.",
+      "caption": "(a) All photoreceptors have inner segments containing the nucleus and other important organelles and outer segments with membrane arrays containing the photosensitive opsin molecules. Rod outer segments are long columnar shapes with stacks of membrane-bound discs that contain the rhodopsin pigment. Cone outer segments are short, tapered shapes with folds of membrane in place of the discs in the rods. (b) Tissue of the retina shows a dense layer of nuclei of the rods and cones. LM × 800. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1415_Retinal_Isomers": {
+      "source": "media/1415_Retinal_Isomers.jpg",
+      "sourceSha256": "c44a91bcc3d83d878af19b93e26efc0b6dda4eae7efd50c1efaead58d413a952",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 2237,
+      "height": 2112,
+      "variants": [
+        {
+          "width": 800,
+          "height": 755,
+          "file": "1415_Retinal_Isomers-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1510,
+          "file": "1415_Retinal_Isomers-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a rod cell on the left and then shows a magnified view of the discs in the rod cells. Further magnified images show the reaction cycle required to convert cis-retinal to trans-retinal. Chemical structures of both these molecules are shown.",
+      "caption": "The retinal molecule has two isomers, (a) one before a photon interacts with it and (b) one that is altered through photoisomerization."
+    },
+    "1416_Color_Sensitivity": {
+      "source": "media/1416_Color_Sensitivity.jpg",
+      "sourceSha256": "900cf66999ab7bb38b857b34896365aec7f9dbfad65f11948f3c5dfb613a2999",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1488,
+      "height": 971,
+      "variants": [
+        {
+          "width": 800,
+          "height": 522,
+          "file": "1416_Color_Sensitivity-800.webp"
+        },
+        {
+          "width": 1488,
+          "height": 971,
+          "file": "1416_Color_Sensitivity-1488.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows the normalized absorbance versus wavelength for different cell types in the eye.",
+      "caption": "Comparing the peak sensitivity and absorbance spectra of the four photopigments suggests that they are most sensitive to particular wavelengths."
+    },
+    "1417_Ascending_Pathways_of_Spinal_Cord": {
+      "source": "media/1417_Ascending_Pathways_of_Spinal_Cord.jpg",
+      "sourceSha256": "b315d0d14e126ab53b5727f151f40b397dc022ac51564312a5aa31f1fe6e68fd",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 2230,
+      "height": 2290,
+      "variants": [
+        {
+          "width": 800,
+          "height": 821,
+          "file": "1417_Ascending_Pathways_of_Spinal_Cord-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1643,
+          "file": "1417_Ascending_Pathways_of_Spinal_Cord-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the dorsal column system and its connection to the brain. The right column shows the spinothalamic tract and its connection to the brain.",
+      "caption": "The dorsal column system and spinothalamic tract are the major ascending pathways that connect the periphery with the brain."
+    },
+    "1418_Auditory_Brainstem_Mechanisms": {
+      "source": "media/1418_Auditory_Brainstem_Mechanisms.jpg",
+      "sourceSha256": "0199eddf995c0f202abf366392f0c3d90dac59c39b63912ea9f39c7eec2d2572",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 728,
+      "height": 1698,
+      "variants": [
+        {
+          "width": 728,
+          "height": 1698,
+          "file": "1418_Auditory_Brainstem_Mechanisms-728.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows a person hearing a sound source that arrives in both his ears at the same time with the same intensity. The bottom panel shows a sound source that is not centered and arrives at different times with different intensities in each ear.",
+      "caption": "Localizing sound in the horizontal plane is achieved by processing in the medullary nuclei of the auditory system. Connections between neurons on either side are able to compare very slight differences in sound stimuli that arrive at either ear and represent interaural time and intensity differences."
+    },
+    "1419_Vestibulo-Ocular_Reflex": {
+      "source": "media/1419_Vestibulo-Ocular_Reflex.jpg",
+      "sourceSha256": "7402b1f3d4192f1fcdc9b8ef7338ca3083e8fd480c25cfbdd67d036385b2b849",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 1808,
+      "height": 1938,
+      "variants": [
+        {
+          "width": 800,
+          "height": 857,
+          "file": "1419_Vestibulo-Ocular_Reflex-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1715,
+          "file": "1419_Vestibulo-Ocular_Reflex-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows how the excitation of eye muscles on one side, the inhibition of these muscles on the other side, and the compensating eye movements work together in vestibular ocular reflex.",
+      "caption": "Connections between the vestibular system and the cranial nerves controlling eye movement keep the eyes centered on a visual stimulus, even though the head is moving. During head movement, the eye muscles move the eyes in the opposite direction as the head movement, keeping the visual stimulus centered in the field of view."
+    },
+    "1420_Optical_Fields": {
+      "source": "media/1420_Optical_Fields.jpg",
+      "sourceSha256": "a527b01877874971f32aa76dd1d87b95009f14c4c75883d7cdb3daecedb3f6f2",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 1473,
+      "height": 1545,
+      "variants": [
+        {
+          "width": 800,
+          "height": 839,
+          "file": "1420_Optical_Fields-800.webp"
+        },
+        {
+          "width": 1473,
+          "height": 1545,
+          "file": "1420_Optical_Fields-1473.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the right and left visual fields in the brain. It describes how the optical fields map to different sides of the brain.",
+      "caption": "Contralateral visual field information from the lateral retina projects to the ipsilateral brain, whereas ipsilateral visual field information has to decussate at the optic chiasm to reach the opposite side of the brain. (Note that this is an inferior view.)"
+    },
+    "1421_Sensory_Homunculus": {
+      "source": "media/1421_Sensory_Homunculus.jpg",
+      "sourceSha256": "8ee2cf787cfc692c9a22fa2ed4582b56fd817084646520e0d8ba04217dfe06dc",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 1599,
+      "height": 1593,
+      "variants": [
+        {
+          "width": 800,
+          "height": 797,
+          "file": "1421_Sensory_Homunculus-800.webp"
+        },
+        {
+          "width": 1599,
+          "height": 1593,
+          "file": "1421_Sensory_Homunculus-1599.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the areas of the brain that control and respond to the different senses.",
+      "caption": "A cartoon representation of the sensory homunculus arranged adjacent to the cortical region in which the processing takes place."
+    },
+    "1422_Topographical_Image_on_Retina": {
+      "source": "media/1422_Topographical_Image_on_Retina.jpg",
+      "sourceSha256": "595b19b4f597ae6fce97773e8b7ab7af7dd9f2c88f64f2a4bbff5a5257949c5c",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 1379,
+      "height": 2263,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1313,
+          "file": "1422_Topographical_Image_on_Retina-800.webp"
+        },
+        {
+          "width": 1379,
+          "height": 2263,
+          "file": "1422_Topographical_Image_on_Retina-1379.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the mapping of the right and left visual fields on the brain. It also explains how the brain merges images from both visual fields.",
+      "caption": "The visual field projects onto the retina through the lenses and falls on the retinae as an inverted, reversed image. The topography of this image is maintained as the visual information travels through the visual pathway to the cortex."
+    },
+    "1423_Retinal_Disparity": {
+      "source": "media/1423_Retinal_Disparity.jpg",
+      "sourceSha256": "635b65bfdcf70cd20efaee288787def2d1cb3f2e0273cf7e89244db7ba7cf092",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 1108,
+      "height": 1917,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1384,
+          "file": "1423_Retinal_Disparity-800.webp"
+        },
+        {
+          "width": 1108,
+          "height": 1917,
+          "file": "1423_Retinal_Disparity-1108.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows how the left and right eye view objects that are closer and farther away.",
+      "caption": "Because of the interocular distance, which results in objects of different distances falling on different spots of the two retinae, the brain can extract depth perception from the two-dimensional information of the visual field."
+    },
+    "1424_Visual_Streams": {
+      "source": "media/1424_Visual_Streams.jpg",
+      "sourceSha256": "cf523efe1021a21438d9ff347044a1e00ced148a5d16ce74a0e4ed144603b43e",
+      "module": "m46557",
+      "kind": "photo",
+      "width": 2146,
+      "height": 1033,
+      "variants": [
+        {
+          "width": 800,
+          "height": 385,
+          "file": "1424_Visual_Streams-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 770,
+          "file": "1424_Visual_Streams-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the side of the human brain and maps different regions to different visual functions.",
+      "caption": "From the primary visual cortex in the occipital lobe, visual processing continues in two streams—one into the temporal lobe and one into the parietal lobe."
+    },
+    "1425_Phineas_Gage": {
+      "source": "media/1425_Phineas_Gage.jpg",
+      "sourceSha256": "aa2d22d6b2be1ca486fb775e28bd5961147684ddab47e15d1f472b633428e39a",
+      "module": "m46574",
+      "kind": "photo",
+      "width": 883,
+      "height": 1483,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1343,
+          "file": "1425_Phineas_Gage-800.webp"
+        },
+        {
+          "width": 883,
+          "height": 1483,
+          "file": "1425_Phineas_Gage-883.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows Phineas Gage holding the metal spike that impaled his prefrontal cortex.",
+      "caption": "The victim of an accident while working on a railroad in 1848, Phineas Gage had a large iron rod impaled through the prefrontal cortex of his frontal lobe. After the accident, his personality appeared to change, but he eventually learned to cope with the trauma and lived as a coach driver even after such a traumatic event. (credit b: John M. Harlow, MD)"
+    },
+    "1426_Corticospinal_Pathway": {
+      "source": "media/1426_Corticospinal_Pathway.jpg",
+      "sourceSha256": "a562a96882d8402f399e0430cc02954d01d584895cdcc97bd1bf5f1ad958115b",
+      "module": "m46574",
+      "kind": "photo",
+      "width": 1163,
+      "height": 2546,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1751,
+          "file": "1426_Corticospinal_Pathway-800.webp"
+        },
+        {
+          "width": 1163,
+          "height": 2546,
+          "file": "1426_Corticospinal_Pathway-1163.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how the motor neurons thread their way through the spinal cord and into the brain. It also shows the different connections they make along the way.",
+      "caption": "The major descending tract that controls skeletal muscle movements is the corticospinal tract. It is composed of two neurons, the upper motor neuron and the lower motor neuron. The upper motor neuron has its cell body in the primary motor cortex of the frontal lobe and synapses on the lower motor neuron, which is in the ventral horn of the spinal cord and projects to the skeletal muscle in the periphery."
+    },
+    "1427_Cochlea_Micrograph": {
+      "source": "media/1427_Cochlea_Micrograph.jpg",
+      "sourceSha256": "b48006ecc786afc376d169902fc9b1ceba135e1aaef907e10dc61a57f6e0ad6d",
+      "module": "m46577",
+      "kind": "photo",
+      "width": 1621,
+      "height": 992,
+      "variants": [
+        {
+          "width": 800,
+          "height": 489,
+          "file": "1427_Cochlea_Micrograph-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 979,
+          "file": "1427_Cochlea_Micrograph-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This micrograph shows the ultrastructure of the cochlea.",
+      "caption": "LM × 412. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
     "200_DNA_Double_Helix-02": {
       "source": "media/200_DNA_Double_Helix-02.jpg",
       "sourceSha256": "b5924062069c273a31198aaf9584be612373553c089df2c4a2925d5da900a45b",
@@ -7524,6 +8163,24 @@
       "transparent": false,
       "alt": "This figure shows the structure of the ankle and feet joints. The top panel shows the medial view of the ankle joint, and the bottom panel shows the lateral view.",
       "caption": "The talocrural (ankle) joint is a uniaxial hinge joint that only allows for dorsiflexion or plantar flexion of the foot. Movements at the subtalar joint, between the talus and calcaneus bones, combined with motions at other intertarsal joints, enables eversion/inversion movements of the foot. Ligaments that unite the medial or lateral malleolus with the talus and calcaneus bones serve to support the talocrural joint and to resist excess eversion or inversion of the foot."
+    },
+    "Phineas_gage_-_1868_skull_diagram": {
+      "source": "media/Phineas_gage_-_1868_skull_diagram.jpg",
+      "sourceSha256": "cbefbfe0728c676113cfe03e0c8d22656f07b4dc9c440e4ba14d5cc4eaa0b71f",
+      "module": "m46574",
+      "kind": "photo",
+      "width": 165,
+      "height": 234,
+      "variants": [
+        {
+          "width": 165,
+          "height": 234,
+          "file": "Phineas_gage_-_1868_skull_diagram-165.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The image on the right shows a drawing of the skull with the metal spike inserted like it would have been when he was injured.",
+      "caption": "The victim of an accident while working on a railroad in 1848, Phineas Gage had a large iron rod impaled through the prefrontal cortex of his frontal lobe. After the accident, his personality appeared to change, but he eventually learned to cope with the trauma and lived as a coach driver even after such a traumatic event. (credit b: John M. Harlow, MD)"
     }
   }
 }

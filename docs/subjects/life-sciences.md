@@ -606,8 +606,10 @@ in the core (§3); the rules specific to a term-built item:
   source wording and whose distractors are other orderings or tuples of
   the module's own terms — never clozes that rebuild the same sentence.
 - **What `accept` still has to list**, beyond the grader's folds: a
-  Greek or Latin plural's `-um`/`-on`/`-us`/`-is` singular and an `-oes`
-  key's `-o` singular; a hyphen between letters, which does not fold, so a
+  Greek or Latin plural's `-um`/`-on`/`-us`/`-is` singular, an `-oes`
+  key's `-o` singular, and an `-ex`/`-ix` key's `-ices` plural (`visual
+  association cortices`, Anatomy and Physiology 14.2); a hyphen between
+  letters, which does not fold, so a
   prefixed key lists its hyphenated spelling (`semi-conservative`); the
   ASCII formula of a compound the page prints
   in Unicode (`H2O2`); the abbreviated binomial; the correct spelling
@@ -690,7 +692,10 @@ every item is a label the module prints that falls in exactly one bin
 (Anatomy and Physiology 9.1's structural versus functional joint classes;
 earlier pages from 3.1 to 7.3 use the same form). It counts as an
 author-written item: the footer names the sentences it is built from, and
-it adds no claim the module does not make *(ruled October 17, 2026)*.
+it adds no claim the module does not make *(ruled October 17, 2026)*. One
+is the cap, not a floor: a second prose-built sortbins on the same page was
+removed (Anatomy and Physiology 14.2, whose second also hid a root
+giveaway) *(chapter 14)*.
 
 **Both table orientations qualify, and every qualifying table gets its
 sortbins**. The categories may run along

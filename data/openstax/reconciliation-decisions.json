@@ -3611,6 +3611,215 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2248,
       "rationale": "The glossopharyngeal nerve moves no tongue muscle (its one muscle is the stylopharyngeus); the module gives the tongue to the hypoglossal nerve (glossary: \"responsible for contraction of muscles of the tongue\") and the glossopharyngeal nerve only \"muscles in the oral cavity and upper throat\" (body, fs-id1271098) and \"Pharyngeal muscles\" in the table. Gray's Anatomy of the Human Body (1918): \"The Muscular Branch (ramus stylopharyngeus) is distributed to the Stylopharyngeus.\" The page's Key terms bullet reads \"responsible for contraction of a muscle of the throat\" with a visible Source note and a footer sentence. Evidenced by the chapter 13 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2464299"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2252,
+      "rationale": "Aspirin (acetylsalicylic acid, C9H8O4, PubChem CID 2244), tannins (polyphenols; tannic acid, PubChem CID 16129778, C76H52O46), and the bitter acids of hops (humulone, C21H30O5) contain no nitrogen, so none is or carries an alkaloid on the sentence's own definition \"nitrogen containing molecules\"; only coffee and tea (caffeine) fit. The book is silent elsewhere. The page reads \"…commonly found in bitter-tasting plant products, such as coffee and tea.\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, the hops half added by the orchestrator, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2351449",
+        "fs-id2817840"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2253,
+      "rationale": "The axons of the olfactory neurons that cross the cribriform plate and end in the bulb are the olfactory nerve (cranial nerve I); the olfactory tract is the bulb's output. The module's glossary (fs-id1546432): olfactory sensory neuron, \"the axons of which compose the first cranial nerve\"; olfactory bulb (fs-id1903485), \"central target of the first cranial nerve\"; the same box says \"within the olfactory nerve\"; the figure labels the fibers below the ethmoid \"Filaments of olfactory nerve\"; m46557 fs-id2627536: \"The olfactory tract axons from the olfactory bulb project directly to the cerebral cortex\"; m46553 fs-id1521213: anosmia \"is often the result of the olfactory nerve being severed.\" The page reads \"The group of axons called the olfactory nerve connect to the olfactory bulb\" and \"the olfactory nerve axons may be sheared apart\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2011468",
+        "fs-id1354741"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2254,
+      "rationale": "There is one organ of Corti, a continuous spiral strip along the cochlear duct. The module uses the singular in the caption of fig-ch14_01_06 (\"The organ of Corti, containing the mechanoreceptor hair cells, is adjacent to the scala tympani\") and in its glossary; MeSH D009925 (NLM), Organ of Corti: \"The spiral EPITHELIUM containing sensory AUDITORY HAIR CELLS and supporting cells in the cochlea.\" The page reads \"The cochlear duct contains the organ of Corti, a spiral strip that transduces…\" and the singular in the three sentences that follow with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id1521130"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2255,
+      "rationale": "37 °C is normal body temperature; the capsaicin receptor (TRPV1) opens at noxious heat, about 43 °C, and a channel opening above 37 °C would fire in the body core, against the paragraph's own \"Temperature receptors are stimulated when local temperatures differ from body temperature.\" Tominaga M., \"The Role of TRP Channels in Thermosensation\" (CRC Press, 2007), NBK5244, PMID 21204494: \"a discrete threshold near 43°C\" (citing Caterina et al., Nature 1997, doi:10.1038/39807). The book is silent elsewhere. The page reads \"sensitive to temperatures above about 43 °C\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2757863"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2256,
+      "rationale": "The superior oblique rotates the eye medially and the inferior oblique laterally; as printed both rotate it laterally yet are \"in opposition.\" The module's glossary: superior oblique, \"extraocular muscle responsible for medial rotation of the eye\" (fs-id2304283); inferior oblique, \"extraocular muscle responsible for lateral rotation of the eye\" (fs-id1397845). The page reads \"contraction of the superior oblique rotates the eye medially\" with a visible Source note and a footer sentence. Raised by the chapter 14.1 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2757863"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2257,
+      "rationale": "The superior rectus is offset by the inferior oblique and the inferior rectus by the superior oblique; the inferior oblique elevates, so it cannot compensate the inferior rectus on downgaze. m46484 (§11.3) table tbl-ch11_03: inferior rectus \"Moves eyes down and toward nose,\" superior oblique \"Moves eyes down and away from nose,\" inferior oblique \"Moves eyes up and away from nose\"; erratum 2103 rules the same pairing. The page reads \"the inferior rectus, which is compensated by contraction of the superior oblique\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fig-ch14_01_14",
+        "fs-id2294606",
+        "fs-id2752965"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2258,
+      "rationale": "The posterior chamber is the aqueous-filled space between iris and lens, part of the anterior cavity; the vitreous fills the posterior cavity (vitreous chamber). The figure prints \"Posterior cavity — Vitreous chamber\" and \"Anterior cavity (contains aqueous humor): Posterior chamber, Anterior chamber\"; the body, fs-id1865776: \"The eye is also divided into two cavities: the anterior cavity and the posterior cavity… The posterior cavity is filled with a more viscous fluid called the vitreous humor.\" The page's caption reads \"divided into anterior and posterior cavities\" and its Key terms bullet \"viscous fluid that fills the posterior cavity (vitreous chamber) of the eye\" with visible Source notes and a footer sentence. Raised by the chapter 14.1 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2473902"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2259,
+      "rationale": "380 nm, the short end of the visible range, is violet; the module's own figure fig-ch14_01_17 prints a wavelength color bar with \"Violet\" below 400 nm and \"Blue\" around 420–480 nm. The page reads \"Light with a wavelength of 380 nm is violet…All other colors fall between violet and red\" with a visible Source note and a footer sentence. Raised by the chapter 14.1 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id1364985"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2260,
+      "rationale": "The dorsal root ganglion holds the sensory neurons' own unipolar cell bodies and is not a relay. m46553 (§13.4) fs-id2831695: the ganglion cells \"include the cell bodies of the neurons, as well as bundles of fibers\"; m46557 (§14.2) fs-id2753132: the spinothalamic neurons \"extend their axons to the dorsal horn, where they synapse with the second neuron\"; Shinder V, Amir R, Devor M, NeuroReport 1998;9(18):3997-4000, doi:10.1097/00001756-199812210-00002: \"Synaptic contacts are extremely rare in DRGs.\" The page reads \"Some of the branches will synapse with local neurons in the posterior (dorsal) horn, or even the anterior (ventral) horn\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id1517547",
+        "fs-id1748920"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2261,
+      "rationale": "Amacrine cells work in the inner synaptic layer, where bipolar cells meet ganglion cells. The module's body, fs-id1405591: \"It is the bipolar cell in the retina that connects a photoreceptor to a retinal ganglion cell (RGC) in the inner synaptic layer. There, amacrine cells additionally contribute to retinal processing.\" The page's Key terms bullet reads \"connects to the bipolar cells and RGCs in the inner synaptic layer\" with a visible Source note and a footer sentence. Raised by the chapter 14.1 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id1588524",
+        "fs-id2593483"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2262,
+      "rationale": "The aqueous humor fills the anterior cavity, not an \"anterior chamber containing the cornea, iris, ciliary body, and lens\"; the anterior chamber lies between the cornea and the iris and contains neither the cornea nor the lens. The module's body, fs-id1865776: \"The anterior cavity is the space between the cornea and lens, including the iris and ciliary body. It is filled with a watery fluid called the aqueous humor\"; the figure places both the anterior and the posterior chamber inside the anterior cavity. The page's Key terms bullet reads \"watery fluid that fills the anterior cavity of the eye, the space between the cornea and the lens that includes the iris and ciliary body\" with a visible Source note and a footer sentence. Raised by the chapter 14 blind solver and confirmed against the CNXML by the orchestrator, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id1838526",
+        "fs-id2524333",
+        "fs-id2145302",
+        "fs-id1410477"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2263,
+      "rationale": "The body, fs-id2097241: \"Tears are produced by the lacrimal gland, located just inside the orbit, superior and lateral to the eyeball. Tears produced by this gland flow through the lacrimal ducts, then over the surface of the eyeball and conjunctiva to the medial corner of the eye.\" The glossary's lacrimal duct (drainage at the medial corner into the nasal cavity) and lacrimal gland (\"lateral to the orbit\") disagree with the body's ducts and its gland inside the orbit. The page's Key terms bullets read \"one of the ducts that carry tears from the lacrimal gland onto the surface of the eye\" and \"gland in the superolateral orbit that produces tears to wash across the surface of the eye\" with visible Source notes and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2673956",
+        "fs-id2470634"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2264,
+      "rationale": "The maculae are the sensory patches of the utricle and saccule; the enlargement at the base of a semicircular canal is the ampulla. The module's body, fs-id2714961: \"The utricle and saccule are both largely composed of macula tissue\"; the caption of fig-ch14_01_10: \"The maculae are specialized for sensing linear acceleration\"; the glossary's ampulla (fs-id1470668): \"the structure at the base of a semicircular canal that contains the hair cells and cupula.\" The page's Key terms bullet reads \"sensory patch of hair cells and support cells in the utricle and saccule, beneath the otolithic membrane, that transduces linear acceleration and head position\" with a visible Source note and a footer sentence. Raised by the chapter 14.1 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fs-id2815440",
+        "fs-id2382907"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2265,
+      "rationale": "The conjunctiva stops at the corneal margin; neither its palpebral nor its bulbar part covers the cornea. The module's body, fs-id2097241: \"The inner surface of each lid is a thin membrane known as the palpebral conjunctiva. The conjunctiva extends over the white areas of the eye (the sclera), connecting the eyelids to the eyeball\"; the figure of the eye in the orbit (fig-ch14_01_12) labels Palpebral conjunctiva, Conjunctiva, and Cornea separately. The page's Key terms bullet reads \"membrane attached to the inner surface of the eyelids that is continuous with the conjunctiva over the sclera\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46577",
+      "sourceElementIds": [
+        "fig-ch14_01_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2267,
+      "rationale": "The caption gives panel (c), a light micrograph of the olfactory epithelium (no bone, cribriform plate, or bulb in it), the sentence \"Axons of the olfactory receptor neurons project through the cribriform plate of the ethmoid bone and synapse with the neurons of the olfactory bulb,\" which describes the drawing in panel (b). The page reads \"(c) A light micrograph of the olfactory epithelium (tissue source: simian). LM × 812.\" with a visible Source note and a footer sentence. Found by the chapter 14 alt-errata verifier and confirmed on the image by the orchestrator, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/02-central-processing.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46557",
+      "sourceElementIds": [
+        "fs-id2122117"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2276,
+      "rationale": "Movements are initiated by the cerebral cortex; the cerebellum compares commands with feedback and coordinates or corrects them. m46574 (§14.3) fs-id2340954: \"The premotor cortex and supplemental motor area then feed into the primary motor cortex that initiates movements\"; fs-id1543169: the cerebellum \"compares cerebral motor commands with proprioceptive feedback\"; m46533 (§13.2) fs-id1315185: a copy of the command sent to initiate walking goes to the cerebellum, where it is compared with sensory feedback. The page reads \"The cerebellum uses equilibrium information to coordinate and correct movements.\" with a visible Source note and a footer sentence. Raised by the chapter 14.2 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46574",
+      "sourceElementIds": [
+        "fs-id1383807"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2281,
+      "rationale": "Corticobulbar input to most cranial motor nuclei is bilateral (the lower-face part of the facial nucleus is the classic contralateral exception), not ipsilateral; the book is silent elsewhere. Bhardwaj N, Yadala S, \"Neuroanatomy, Corticobulbar Tract,\" StatPearls (2023), NBK555891, PMID 32310351: \"Corticobulbar tract supplies input bilaterally to trigeminal, facial, and hypoglossal nerve nuclei.\" The page reads \"The axons of the corticobulbar tract are largely bilateral, projecting from the cortex to motor nuclei on both sides of the brain stem\" with a visible Source note and a footer sentence. Raised by the chapter 14.3 author and the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46574",
+      "sourceElementIds": [
+        "fs-id2144788"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2282,
+      "rationale": "The tectum is the midbrain roof made of both the superior and inferior colliculi; the superior colliculus is part of it, not a synonym. m46533 (§13.2) glossary: tectum, \"region of the midbrain, thought of as the roof of the cerebral aqueduct, which is subdivided into the inferior and superior colliculi\" (fs-id1830365); superior colliculus, \"half of the midbrain tectum\" (fs-id1566988); body fs-id1282943: \"The tectum is composed of four bumps known as the colliculi.\" The page reads \"The name of the tract comes from the tectum, the roof of the midbrain, of which the superior colliculus is a part\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
     }
   ]
 }

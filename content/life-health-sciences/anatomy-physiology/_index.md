@@ -93,14 +93,16 @@ reproduction, development, and inheritance.
 - **Anatomy of the Nervous System** — the embryologic perspective, the
   central nervous system, circulation and the central nervous system, and
   the peripheral nervous system.
+- **The Somatic Nervous System** — sensory perception, central processing,
+  and motor responses.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 3: Regulation, Integration, and Control** — The Somatic Nervous System; The Autonomic Nervous System; The
-  Neurological Exam; The Endocrine System.
+- **Unit 3: Regulation, Integration, and Control** — The Autonomic Nervous
+  System; The Neurological Exam; The Endocrine System.
 - **Unit 4: Fluids and Transport** — The Cardiovascular System: Blood; The
   Cardiovascular System: The Heart; The Cardiovascular System: Blood Vessels
   and Circulation; The Lymphatic and Immune System.

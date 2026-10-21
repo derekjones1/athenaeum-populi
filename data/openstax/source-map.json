@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 13,
-      "mappedSections": 76,
+      "localChapters": 14,
+      "mappedSections": 79,
       "units": [
         {
           "index": 1,
@@ -935,6 +935,33 @@
       "moduleId": "m46553",
       "sourceTitle": "The Peripheral Nervous System",
       "moduleSha256": "fac0025982ed7441ae8ab13a593e3bb6f1c5b58fe3934d23c9c504fb20d4c268"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/01-sensory-perception.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "14.1",
+      "moduleId": "m46577",
+      "sourceTitle": "Sensory Perception",
+      "moduleSha256": "5a05bff21b58321ac3851a5bfef6eadae77a220b12907f6912348a6222a3a99a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/02-central-processing.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "14.2",
+      "moduleId": "m46557",
+      "sourceTitle": "Central Processing",
+      "moduleSha256": "67ae9518aae7d5569216eb3d4879f4dfc97ef0639b7d252ffba1efbb1cc6ba1c"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/14-the-somatic-nervous-system/03-motor-responses.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "14.3",
+      "moduleId": "m46574",
+      "sourceTitle": "Motor Responses",
+      "moduleSha256": "817ed3b295584d96404ab5fe5cddd73f32d53abd4429acd81a3af73ba9f43440"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

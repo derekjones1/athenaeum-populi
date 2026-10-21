@@ -1095,6 +1095,64 @@ linked. The parent also added the two Anatomy and Physiology Knowledge
 Check routes to the axe suite, which run.md had asked for as each check
 landed.
 
+## Chapter 14 (October 21, 2026)
+
+One wave on the AGENTS.md roster, started after chapter 13 was committed
+(609d481). Three Opus authors launched together, one per section, an Opus
+checker per page as its author reported, one Opus claim pass over the three
+pages and the landing page, an Opus alt-errata verifier, and the blind solve
+in a fresh Fable subagent with masked pages. Sonnet clerks did the landing
+page, the run facts (Parts A and B), the pins, and the errata draft. Authors
+reported Practice items per page of 23 (14.1), 16 (14.2), and 17 (14.3), 56
+in all, 50 of them auto-graded, plus five graded Interactive Link
+self-checks in the bodies. The chapter's 32 source exercises (15 Review, 6
+Critical Thinking, 11 Interactive Link) all reached their pages. Module
+m46574 (14.3) is in the September 8 table (the PDF prints "Walter"
+Penfield; the pinned text prints Wilder and wins). The next run is chapter
+15, the last of Unit 3, and then the Unit 3 Knowledge Check.
+
+Part C graded five of the eleven Interactive Link Questions: 14.1's
+cochlea, ossicles, and frequency-coding questions (the last two on figure
+captions the page prints, named as such in the footers), 14.2's
+prosopagnosia question on the Disorders box's own sentence with the rubric
+built as alternatives, and 14.3's corneal reflex on the body sentence; six
+stand as prompts. The mechanoreceptor table became a four-bin sortbins
+(free nerve endings, tactile, lamellated, and bulbous corpuscles) over the
+location and stimulus cells only, since every eponym prints the bin word
+"corpuscle" and the hair, muscle, and tendon rows print theirs; the author
+dropped one member Part C had listed because it sat inside another row's
+cell. The two-image Phineas Gage figure was split into two media figures on
+the 4.2 precedent.
+
+Part C was wrong three times, and the authors said so: 1427 is one
+micrograph, not the "four panels" Part C inferred from four `LM ×`
+credits; "Retinal Disparity" was the in-box figure's `<title>`, which this
+book never prints, not a sub-title; and the sortbins member "Dermis, joint
+capsules" sorted under two bins. All three are now in run.md.
+
+The checkers found fourteen defects (three on 14.3, four on 14.2, seven on
+14.1) — two cross-item leaks, one of them a stem BELOW an item printing its
+key, which settled that the forwards-and-backwards rule does not license a
+later stem to print an earlier key; a trigeminal sortbins dropped for a
+spin-/spino- root giveaway and because a table-less module carries one
+prose-built sortbins, not two; five longdesc miscounts and leader
+mis-targets on 14.1's figures; and accept gaps (the `-ices` plural, the
+hyphenated prefix). The parent's read of a replacement cloze caught a leak
+the author's key grep had passed: its clue was answered by a printed label
+in the ascending-pathways longdesc. The ASCII-chemistry lint read the
+Bookshelf id NBK555891 as a formula; the lint now exempts NBK and PMC ids.
+
+The claim pass found sixteen evidenced errors and the parent accepted all
+sixteen, thirteen of them on 14.1 (both oblique muscles rotating the eye
+laterally, the inferior rectus paired with the inferior oblique, the
+olfactory tract where the nerve is meant, tannins and aspirin as alkaloids,
+the capsaicin channel's threshold at body temperature, synapses in the
+dorsal root ganglion, and six glossary entries contradicting the body);
+the blind solver added a seventeenth (the aqueous humor entry's "anterior
+chamber"). The authors applied their own with Source notes; no graded item
+re-hashed. The solve agreed on 50 of 50 items with no flags. Errata
+2252–2284.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

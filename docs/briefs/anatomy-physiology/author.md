@@ -191,7 +191,11 @@ playbooks. Apply them literally; these are the recurring failures:
   `textin`'s key or the key's root, singular, or plural. Order the group
   so every recall item comes first. (2) Grep every stem, hint,
   option list, alt, caption, and `longdesc` on the page for every key,
-  forwards and backwards. (3) A figure whose alt or `longdesc` names the
+  forwards and backwards — a stem BELOW an item may not print that item's
+  key either; the recall-first ordering decides only what sits directly
+  above a `textin`, it does not license a later stem to print an earlier
+  key (chapter 14's interneuron cloze printed the foot-reflex key below
+  it and was rebuilt). (3) A figure whose alt or `longdesc` names the
   answer sends that item back to `selfcheck` or gets a rewritten alt —
   anatomy figures label everything, so this bites every labelling item.
   (4) A glossary term that sibling items necessarily print, or that a

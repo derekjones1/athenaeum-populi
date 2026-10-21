@@ -165,7 +165,10 @@ export function unicodeFormula(token) {
   if (COFACTORS.has(base)) return charge ? base + [...charge].map((c) => SUP[c]).join('') : null;
   const parts = base.match(/[A-Z][a-z]?\d*/g) || [];
   if (!parts.length || !parts.every((p) => ELEMENTS.has(p.replace(/\d+/g, '')))) return null;
-  if (/^H\d+N\d+$/.test(base) || NOT_FORMULAS.has(base)) return null;
+  // Influenza subtypes, and the NCBI Bookshelf (`NBK555891`) and PubMed
+  // Central (`PMC1234567`) ids a Source note cites — N, B, K, P, M, C are
+  // all elements (Anatomy and Physiology 14.3).
+  if (/^H\d+N\d+$/.test(base) || /^(?:NBK|PMC)\d+$/.test(base) || NOT_FORMULAS.has(base)) return null;
   // `Ca2` + `+`: the regex is lazy, so a lone element's digit lands in the
   // charge group already; a compound's trailing count stays in the base.
   const hasDigit = /\d/.test(base + charge.replace(/[+\-−]/, ''));
