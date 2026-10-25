@@ -2746,6 +2746,36 @@ test('sortbins giveaway rule — a bin word printed on an item is rejected', () 
   );
 });
 
+test('sortbins giveaway rule — a one-token bin label of three characters or fewer still counts', () => {
+  const giveaway = JSON.stringify({
+    bins: ['A', 'B', 'AB', 'O'],
+    items: [
+      { label: 'Plasma antibodies: anti-B only', bin: 0 },
+      { label: 'Plasma antibodies: anti-A only', bin: 1 },
+      { label: 'Plasma antibodies: none', bin: 2 },
+      { label: 'Plasma antibodies: both anti-A and anti-B', bin: 3 },
+      { label: 'Erythrocyte antigens: A only', bin: 0 },
+    ],
+  });
+  const { errors } = lintHugo(sortbinsWrap('question="Sort these." hint="h"', giveaway), 'content/test.md');
+  assert(
+    errors.some((e) => e.includes('bin "A" word "a"') && e.includes('gives its assignment away')),
+    'a one-letter bin label printed on an item is a giveaway (the length filter is for stopwords inside multi-word labels)',
+  );
+  const clean = JSON.stringify({
+    bins: ['CNS', 'PNS'],
+    items: [
+      { label: 'Brain and spinal cord', bin: 0 },
+      { label: 'Nerves and ganglia', bin: 1 },
+    ],
+  });
+  assert(
+    !lintHugo(sortbinsWrap('question="Sort these." hint="h"', clean), 'content/test.md')
+      .errors.some((e) => e.includes('gives its assignment away')),
+    'a short bin label that no item prints is fine',
+  );
+});
+
 test('sortbins must be blank-line separated, or Goldmark parses it inline', () => {
   const exercise = sortbinsWrap('question="Sort these." hint="h"');
   const before = `Some prose.\n${exercise}\n\nMore prose.`;

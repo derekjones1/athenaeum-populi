@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 17,
-      "mappedSections": 99,
+      "localChapters": 18,
+      "mappedSections": 105,
       "units": [
         {
           "index": 1,
@@ -1142,6 +1142,60 @@
       "moduleId": "m46658",
       "sourceTitle": "Development and Aging of the Endocrine System",
       "moduleSha256": "ce5a5974962a3c2ad87b3cb827d9d0fb2528b137042463873c7be46cb9c688e6"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/01-an-overview-of-blood.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "18.1",
+      "moduleId": "m46710",
+      "sourceTitle": "An Overview of Blood",
+      "moduleSha256": "4b1a45e586d105f4315a1623cc0947acdd76dac63020e92785d742926ac950b7"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/02-production-of-the-formed-elements.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "18.2",
+      "moduleId": "m46691",
+      "sourceTitle": "Production of the Formed Elements",
+      "moduleSha256": "464f05efea3054c414adaf4ef62694ae60925de134660731bf3807c779ab3f66"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "18.3",
+      "moduleId": "m46707",
+      "sourceTitle": "Erythrocytes",
+      "moduleSha256": "6cdab5c38fc55e683122eb660327e467276806920e9f6efbf85b177b3437526d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/04-leukocytes-and-platelets.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "18.4",
+      "moduleId": "m46701",
+      "sourceTitle": "Leukocytes and Platelets",
+      "moduleSha256": "fff698d929481cb87f4bc1ac48a2d7018cdf9cf320236b23d91702e8a7d3f41a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/05-hemostasis.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "18.5",
+      "moduleId": "m46705",
+      "sourceTitle": "Hemostasis",
+      "moduleSha256": "31ad708ca296f57e4b77469cefe3f2d1e400895c90495d86c99713b4aef86796"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/06-blood-typing.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "18.6",
+      "moduleId": "m46708",
+      "sourceTitle": "Blood Typing",
+      "moduleSha256": "2ffbfe6b3060fd21fe24c1bc145fca305672197402937e39cc7e2794e0c51d8d"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

@@ -5380,6 +5380,392 @@
       "alt": "This photo shows a woman with a goiter, which is an extreme, irregular swelling on the anterior side of the neck.",
       "caption": "(credit: “Almazi”/Wikimedia Commons)"
     },
+    "1900_Blood_cells": {
+      "source": "media/1900_Blood_cells.jpg",
+      "sourceSha256": "e1794c72fda6101a07dc6591aa24e03691352f893c24e0c84a65178b80fb7e70",
+      "module": "m46703",
+      "kind": "photo",
+      "width": 2296,
+      "height": 1051,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "1900_Blood_cells-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 732,
+          "file": "1900_Blood_cells-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a red blood cell and a white blood cell.",
+      "caption": "A single drop of blood contains millions of red blood cells, platelets, and white blood cells. One of each type is shown here, isolated from a scanning electron micrograph."
+    },
+    "1901_Composition_of_Blood": {
+      "source": "media/1901_Composition_of_Blood.jpg",
+      "sourceSha256": "a9a16fb839235ef6be3559b08607eaced6523bc67df2554498cbdd2ec81dd10d",
+      "module": "m46710",
+      "kind": "photo",
+      "width": 1517,
+      "height": 950,
+      "variants": [
+        {
+          "width": 800,
+          "height": 501,
+          "file": "1901_Composition_of_Blood-800.webp"
+        },
+        {
+          "width": 1517,
+          "height": 950,
+          "file": "1901_Composition_of_Blood-1517.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three test tubes with a red and yellow liquid in them. The left panel shows normal blood, the center panel shows anemic blood and the right panel shows polycythemic blood.",
+      "caption": "The cellular elements of blood include a vast number of erythrocytes and comparatively fewer leukocytes and platelets. Plasma is the fluid in which the formed elements are suspended. A sample of blood spun in a centrifuge reveals that plasma is the lightest component. It floats at the top of the tube separated from the heaviest elements, the erythrocytes, by a buffy coat of leukocytes and platelets. Hematocrit is the percentage of the total sample that is comprised of erythrocytes. Depressed and elevated hematocrit levels are shown for comparison."
+    },
+    "1902_Hemopoiesis": {
+      "source": "media/1902_Hemopoiesis.jpg",
+      "sourceSha256": "0b9040bac5bbb3d67a50bf41d34298a97af1bb6f4d0f43ebd43cc8d5feaac3b2",
+      "module": "m46691",
+      "kind": "photo",
+      "width": 2271,
+      "height": 1725,
+      "variants": [
+        {
+          "width": 800,
+          "height": 607,
+          "file": "1902_Hemopoiesis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1215,
+          "file": "1902_Hemopoiesis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the pathways in which a multipotent hemotopoietic stem cell differentiates into the different cell types found in blood.",
+      "caption": "Hemopoiesis is the proliferation and differentiation of the formed elements of blood."
+    },
+    "1903_Shape_of_Red_Blood_Cells": {
+      "source": "media/1903_Shape_of_Red_Blood_Cells.jpg",
+      "sourceSha256": "817ffacd4afc8aba1479af2adf279b2ba8561be5cead6dc55b31de5d6b25d402",
+      "module": "m46707",
+      "kind": "photo",
+      "width": 614,
+      "height": 706,
+      "variants": [
+        {
+          "width": 614,
+          "height": 706,
+          "file": "1903_Shape_of_Red_Blood_Cells-614.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a few red blood cells.",
+      "caption": "Erythrocytes are biconcave discs with very shallow centers. This shape optimizes the ratio of surface area to volume, facilitating gas exchange. It also enables them to fold up as they move through narrow blood vessels."
+    },
+    "1904_Hemoglobin": {
+      "source": "media/1904_Hemoglobin.jpg",
+      "sourceSha256": "6baea94fa24d02395f6fe2e52bcbc5e57cd3c21a5b46153428b48850355fe754",
+      "module": "m46707",
+      "kind": "photo",
+      "width": 2271,
+      "height": 1146,
+      "variants": [
+        {
+          "width": 800,
+          "height": 403,
+          "file": "1904_Hemoglobin-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 807,
+          "file": "1904_Hemoglobin-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the structure of hemoglobin. The left panel shows the protein structure and the right panel shows the chemical formula.",
+      "caption": "(a) A molecule of hemoglobin contains four globin proteins, each of which is bound to one molecule of the iron-containing pigment heme. (b) A single erythrocyte can contain 300 million hemoglobin molecules, and thus more than 1 billion oxygen molecules."
+    },
+    "1905_Erythrocyte_Life_Cycle": {
+      "source": "media/1905_Erythrocyte_Life_Cycle.jpg",
+      "sourceSha256": "76c3d1f710bcb00353ff12c854db695b894506763497999e81463d83481a7bf1",
+      "module": "m46707",
+      "kind": "photo",
+      "width": 2167,
+      "height": 2817,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1040,
+          "file": "1905_Erythrocyte_Life_Cycle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2080,
+          "file": "1905_Erythrocyte_Life_Cycle-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows the life cycle of a red blood cell. The first step is the hemopoeisis of erythrocytes in the bone marrow. Further steps in this diagram show the passage of erythrocytes through the blood stream, the breakdown of heme protein, and liver function.",
+      "caption": "Erythrocytes are produced in the bone marrow and sent into the circulation. At the end of their lifecycle, they are destroyed by macrophages, and their components are recycled."
+    },
+    "1906_Emigration": {
+      "source": "media/1906_Emigration.jpg",
+      "sourceSha256": "2059954126db962206aba4f5528edb3f17ef33d32151a1f9cb1ce7b859fcc273",
+      "module": "m46701",
+      "kind": "photo",
+      "width": 1990,
+      "height": 2496,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1003,
+          "file": "1906_Emigration-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2007,
+          "file": "1906_Emigration-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows how leukocytes respond to chemical signals from injured cells. The top panel shows chemical signals sent out by the injured cells. The middle panel shows leukocytes migrating to the injured cells. The bottom panel shows macrophages phagocytosing the pathogens.",
+      "caption": "Leukocytes exit the blood vessel and then move through the connective tissue of the dermis toward the site of a wound. Some leukocytes, such as the eosinophil and neutrophil, are characterized as granular leukocytes. They release chemicals from their granules that destroy pathogens; they are also capable of phagocytosis. The monocyte, an agranular leukocyte, differentiates into a macrophage that then phagocytizes the pathogens."
+    },
+    "1907_Granular_Leukocytes": {
+      "source": "media/1907_Granular_Leukocytes.jpg",
+      "sourceSha256": "20df7980bfe626dfd39f901c6a329b8c1f16d54ae74760ad33ffc0df15d1d290",
+      "module": "m46701",
+      "kind": "photo",
+      "width": 1454,
+      "height": 475,
+      "variants": [
+        {
+          "width": 800,
+          "height": 261,
+          "file": "1907_Granular_Leukocytes-800.webp"
+        },
+        {
+          "width": 1454,
+          "height": 475,
+          "file": "1907_Granular_Leukocytes-1454.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left image shows a neutrophil, the middle image shows an eosinophil, and the right image shows a basophil.",
+      "caption": "A neutrophil has small granules that stain light lilac and a nucleus with two to five lobes. An eosinophil’s granules are slightly larger and stain reddish-orange, and its nucleus has two to three lobes. A basophil has large granules that stain dark blue to purple and a two-lobed nucleus."
+    },
+    "1908_Platelet_Development": {
+      "source": "media/1908_Platelet_Development.jpg",
+      "sourceSha256": "9e45c9f210abc0982d535dadeea16862e54a994d0a1cef27ae622ac98444b100",
+      "module": "m46701",
+      "kind": "photo",
+      "width": 846,
+      "height": 1225,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1158,
+          "file": "1908_Platelet_Development-800.webp"
+        },
+        {
+          "width": 846,
+          "height": 1225,
+          "file": "1908_Platelet_Development-846.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows a myeloid stem cell differentiating into platelets.",
+      "caption": "Platelets are derived from cells called megakaryocytes."
+    },
+    "1909_Blood_Clotting": {
+      "source": "media/1909_Blood_Clotting.jpg",
+      "sourceSha256": "8aaba912079b7b10655f3a8a96f87acc936a26b5a33c2039b62899741623a6ee",
+      "module": "m46705",
+      "kind": "photo",
+      "width": 2125,
+      "height": 2558,
+      "variants": [
+        {
+          "width": 800,
+          "height": 963,
+          "file": "1909_Blood_Clotting-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1926,
+          "file": "1909_Blood_Clotting-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure details the steps in the clotting of blood. Each step is shown along with a detailed text box describing the steps on the left. On the right, a signaling pathway shows the different chemical signals involved in the clotting process.",
+      "caption": "(a) An injury to a blood vessel initiates the process of hemostasis. Blood clotting involves three steps. First, vascular spasm constricts the flow of blood. Next, a platelet plug forms to temporarily seal small openings in the vessel. Coagulation then enables the repair of the vessel wall once the leakage of blood has stopped. (b) The synthesis of fibrin in blood clots involves either an intrinsic pathway or an extrinsic pathway, both of which lead to a common pathway. (credit a: Kevin MacKenzie)"
+    },
+    "1910_Erythroblastosis_Fetalis": {
+      "source": "media/1910_Erythroblastosis_Fetalis.jpg",
+      "sourceSha256": "5a1ac9b3b7133e11a2a0594e61e31fcd4705e3658faec9cc044c5c4b578098ff",
+      "module": "m46708",
+      "kind": "photo",
+      "width": 2242,
+      "height": 2050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 731,
+          "file": "1910_Erythroblastosis_Fetalis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1463,
+          "file": "1910_Erythroblastosis_Fetalis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows an umbilical artery and vein passing through the placenta on the top left. The top right panel shows the first exposure to Rh+ antibodies in the mother. The bottom right panel shows the response when the second exposure in the form of another fetus takes place. Textboxes detail the steps in each process.",
+      "caption": "The first exposure of an Rh − person to Rh + erythrocytes during pregnancy induces sensitization. Anti-Rh antibodies begin to circulate in the pregnant person's bloodstream. A second exposure occurs with a subsequent pregnancy with an Rh + fetus in the uterus. During that subsequent pregnancy, the pregnant person's anti-Rh antibodies may cross the placenta and enter the fetal bloodstream, causing agglutination and hemolysis of fetal erythrocytes."
+    },
+    "1911_Sickle_Cells": {
+      "source": "media/1911_Sickle_Cells.jpg",
+      "sourceSha256": "e770abbb396fce0f3d0f297d3019aeb14cff5956a685c7413edb904445a1e43d",
+      "module": "m46707",
+      "kind": "photo",
+      "width": 1679,
+      "height": 1896,
+      "variants": [
+        {
+          "width": 800,
+          "height": 903,
+          "file": "1911_Sickle_Cells-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1806,
+          "file": "1911_Sickle_Cells-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows red blood cells of a person suffering from sickle cell anemia. Instead of being discoid shaped like healthy blood cells, sickle red blood cells are shaped like a sickle.",
+      "caption": "Sickle cell anemia is caused by a mutation in one of the hemoglobin genes. Erythrocytes produce an abnormal type of hemoglobin, which causes the cell to take on a sickle or crescent shape. (credit: Janice Haney Carr)"
+    },
+    "1912_Cross_Matching_Blood_Types": {
+      "source": "media/1912_Cross_Matching_Blood_Types.jpg",
+      "sourceSha256": "4057d6efede4f9c9daef9c96e0b0e88f350530e07dbdf0c3c31e830345235a34",
+      "module": "m46708",
+      "kind": "photo",
+      "width": 1933,
+      "height": 786,
+      "variants": [
+        {
+          "width": 800,
+          "height": 325,
+          "file": "1912_Cross_Matching_Blood_Types-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 650,
+          "file": "1912_Cross_Matching_Blood_Types-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three different red blood cells with different blood types.",
+      "caption": "This sample of a commercially produced “bedside” card enables quick typing of both a recipient’s and donor’s blood before transfusion. The card contains three reaction sites or wells. One is coated with an anti-A antibody, one with an anti-B antibody, and one with an anti-D antibody (tests for the presence of Rh factor D). Mixing a drop of blood and saline into each well enables the blood to interact with a preparation of type-specific antibodies, also called anti-seras. Agglutination of RBCs in a given site indicates a positive identification of the blood antigens, in this case A and Rh antigens for blood type A + . For the purpose of transfusion, the donor’s and recipient’s blood types must match."
+    },
+    "1913_ABO_Blood_Groups": {
+      "source": "media/1913_ABO_Blood_Groups.jpg",
+      "sourceSha256": "88f9143c3a7508df6cd37c6b517b3d599f9dafaaa49a09f53e41ac624a2349a9",
+      "module": "m46708",
+      "kind": "photo",
+      "width": 1792,
+      "height": 1376,
+      "variants": [
+        {
+          "width": 800,
+          "height": 614,
+          "file": "1913_ABO_Blood_Groups-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1228,
+          "file": "1913_ABO_Blood_Groups-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the different blood types, the antibodies in plasma, the antigens in the red blood cell, and the blood compatible blood types in an emergency.",
+      "caption": "This chart summarizes the characteristics of the blood types in the ABO blood group. See the text for more on the concept of a universal donor or recipient."
+    },
+    "1914_Table_19_3_1": {
+      "source": "media/1914_Table_19_3_1.jpg",
+      "sourceSha256": "8500ebba83b8528c480c11d57df13f5ae5d32f1e68e1ac81be72cf772760092a",
+      "module": "m46707",
+      "kind": "photo",
+      "width": 2263,
+      "height": 3383,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1196,
+          "file": "1914_Table_19_3_1-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2392,
+          "file": "1914_Table_19_3_1-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the different types of cells present in blood, the number of cells, their appearance, and a summary of their function.",
+      "caption": ""
+    },
+    "1915_Table_19_01_Major_Blood_Components": {
+      "source": "media/1915_Table_19_01_Major_Blood_Components.jpg",
+      "sourceSha256": "02c5a86ad7e5c086d75f30b33ba009fb7932301672ac59e3292c1b35b93808f2",
+      "module": "m46710",
+      "kind": "photo",
+      "width": 975,
+      "height": 1106,
+      "variants": [
+        {
+          "width": 800,
+          "height": 907,
+          "file": "1915_Table_19_01_Major_Blood_Components-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 1106,
+          "file": "1915_Table_19_01_Major_Blood_Components-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table lists the components of blood, the percentage of each component, their site of production, and their major functions.",
+      "caption": ""
+    },
+    "1916_Leukocyte_Key": {
+      "source": "media/1916_Leukocyte_Key.jpg",
+      "sourceSha256": "7ea94e6b0d0daa366f7327654420c9fce63737d78ab3aacccc9a6c9d39ae67e3",
+      "module": "m46701",
+      "kind": "photo",
+      "width": 1988,
+      "height": 467,
+      "variants": [
+        {
+          "width": 800,
+          "height": 188,
+          "file": "1916_Leukocyte_Key-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 376,
+          "file": "1916_Leukocyte_Key-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows micrographs of the different types of leukocytes. From left to right, the order of leukocytes shown are: basophil, eosinophil, neutrophil, monocyte, and lymphocyte.",
+      "caption": "(Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
+    },
     "200_DNA_Double_Helix-02": {
       "source": "media/200_DNA_Double_Helix-02.jpg",
       "sourceSha256": "b5924062069c273a31198aaf9584be612373553c089df2c4a2925d5da900a45b",

@@ -4176,6 +4176,155 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2378,
       "rationale": "The model answer says the thymus atrophies \"because the immune system is already developed\", a cause the module's body does not state (fs-id1906303: it \"begins to atrophy as we age\") and the book's immune chapter contradicts: m46563 (§21.1) fs-id2176174 treats thymic involution as \"one major cause of age-related immune deficiencies\", and fs-id2070568 as genetically programmed and alterable by hormone levels. The page's model answer and last rubric checkpoint end at \"During adulthood, the thymus gland atrophies\", with a visible Source note after the self-check and a footer sentence; the keys gate does not flag the solution, so no disclosed-deviation entry exists. Evidenced by the chapter 17 prose claim pass (F9), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "fs-id1546796",
+        "fs-id2143869",
+        "fs-id2143870"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2383,
+      "rationale": "The source distractor \"myeoblasts\" (option a of \"Aging and damaged erythrocytes are removed from the circulation by ________.\") misspells \"myeloblasts\", the granulocyte precursor the module names in 18.2 and 18.4, so it names no cell. The page prints \"myeloblasts\" with the key letter C (macrophages), the other options, and their order unchanged and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Raised by the run facts and the chapter 18.3 author and ruled by the orchestrator, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/01-an-overview-of-blood.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46710",
+      "sourceElementIds": [
+        "fs-id2123844"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2386,
+      "rationale": "The globulin level \"1.0–1.5 g/dL blood\" contradicts the same list: albumin at about 54 percent of plasma protein is given as 3.5–5.0 g/dL, so globulins at about 38 percent imply about 2.5–3.5 g/dL, and 1.0–1.5 g/dL would be about 20 percent. Walker HK, Hall WD, Hurst JW (eds.), Clinical Methods, 3rd ed. (Butterworths, 1990), ch. 101: total serum protein 6 to 8 g/dL and albumin 3.5 to 5.0 g/dL with the remainder globulins. The page prints \"2.0–3.5 g/dL\" with a visible Source note after the list and a footer sentence. Evidenced by the chapter 18 prose claim pass (F1), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/02-production-of-the-formed-elements.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46691",
+      "sourceElementIds": [
+        "fs-id2230318",
+        "fs-id2752896"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2390,
+      "rationale": "The glossary defines the hematopoietic stem cell as a \"type of pluripotent stem cell\", but the module's hierarchy (fs-id1514207) puts the pluripotent stem cell at one level, the mesenchymal cell \"beneath this level\", and the hematopoietic stem cell \"one step lower\", and figure 1902 labels the cell \"Multipotent hematopoietic stem cell (hemocytoblast)\". The page's Key terms bullet reads \"type of multipotent stem cell\" with a visible Source note after the list and a footer sentence. Raised by the chapter 18.2 author, held back as a suspicion by the claim pass (older literature says pluripotent HSC), confirmed by the alt-errata verifier on the module's own usage and ruled by the orchestrator, October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "fs-id2057378"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2394,
+      "rationale": "Red blood cells are the large majority of human cells by count, not about a quarter. Sender R, Fuchs S, Milo R, PLoS Biol 2016;14(8):e1002533, doi:10.1371/journal.pbio.1002533: \"The cell count is dominated by red blood cells (84%)\". The page reads \"more than 80 percent\" with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F2), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "fs-id2056826"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2395,
+      "rationale": "The 180 liters a day is glomerular filtrate, formed from plasma, not blood, and the 20 percent is the kidneys' share of the resting cardiac output, not of blood volume (180 L is about 36 times the roughly 5 L blood volume). m46433 (25.3) fs-id1963376: \"about 180 L/day in males and 150 L/day in females\"; its GFR table: \"Cardiac output is about 5000 mL/minute, of which 21 percent flows through the kidney\" and \"The GFR is the amount of plasma entering Bowman's capsule per minute\"; m46429 (25.2): \"about 25 percent of the cardiac output at rest\". The page says the kidneys receive about 20 percent of the resting cardiac output and filter about 180 liters of plasma, with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F3), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "fs-id1953896"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2396,
+      "rationale": "Hephaestin is a membrane-bound ferroxidase of the intestinal cell, not a plasma protein, and it lets iron leave the cell for the blood rather than enter it. Vulpe CD, Kuo YM, Murphy TL, et al., Nat Genet 1999;21(2):195–199, doi:10.1038/5979: uptake into the cell is normal in the mutant while exit into the circulation is diminished. The page calls hephaestin and ceruloplasmin two proteins and says hephaestin, in the membranes of the intestinal cells, lets absorbed iron pass out of those cells into the blood, with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F4), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "eip-id2505294"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2397,
+      "rationale": "Most aplastic anemia is acquired and immune-mediated, and the disease is a failure of the hematopoietic stem cells as a whole, not of red-cell stem cells alone. Young NS, N Engl J Med 2018;379(17):1643–1656, doi:10.1056/NEJMra1413485: \"Almost all sporadic aplastic anemia, especially when severe and acute, appears to be immune-mediated\"; about 5% of children and adults screened had genetic mutations. The page reads \"deficient numbers of hematopoietic stem cells\" and \"usually acquired, most often through an immune attack on the marrow… less often it is inherited\", with a visible Source note (shared with erratum 2398, the same list) and a footer sentence. Evidenced by the chapter 18 prose claim pass (F6), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "eip-id2505294"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2398,
+      "rationale": "The paints that expose people to lead are lead-based paints; iron-containing paint is no source of lead, so the item contradicts itself. Centers for Disease Control and Prevention, About Lead in Paint, https://www.cdc.gov/lead-prevention/prevention/paint.html, names lead-based paint and lead-contaminated dust among the most hazardous sources of lead exposure. The page reads \"lead-containing paints\" with a visible Source note (shared with erratum 2397, the same list) and a footer sentence. Evidenced by the chapter 18 prose claim pass (F5), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46707",
+      "sourceElementIds": [
+        "fs-id2587908",
+        "fs-id2786110"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2399,
+      "rationale": "The glossary has biliverdin converted to bilirubin in the liver, but the module's own Lifecycle of Erythrocytes list (fs-id1405027) has heme degraded to biliverdin and then to bilirubin, and bilirubin, bound to albumin, travelling in the blood to the liver; m46496 (23.6) fs-id1884700 agrees. The page's Key terms bullet reads \"converted to bilirubin before it is carried to the liver\" with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F7), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/04-leukocytes-and-platelets.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46701",
+      "sourceElementIds": [
+        "fs-id2567838"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2408,
+      "rationale": "150,000 is the bottom of the normal platelet range, not a typical value, and the module's range is only 10,000 wide; the book's own summary table of formed elements (m46707, figure 1914) gives platelets as 350,000 (150,000–500,000). The page prints \"150,000–500,000 per µL\" with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F8), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/04-leukocytes-and-platelets.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46701",
+      "sourceElementIds": [
+        "fs-id2181512",
+        "fs-id2971611"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2409,
+      "rationale": "Hemophilia is an inherited deficiency of a clotting factor, not a shortage of platelets: m46705 (18.5) fs-id2078704 (\"the genetic disorder hemophilia… inability to synthesize sufficient quantities of factor VIII\") and fs-id2486921, which treats thrombocytopenia separately. The page's Key terms bullet ends \"resulting in abnormal bleeding.\" with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F9), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/05-hemostasis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46705",
+      "sourceElementIds": [
+        "fs-id2268071"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2411,
+      "rationale": "Vitamin K is not a clotting factor. The module's Clotting Factors table (tbl-ch19_01) lists twelve factors, I through XIII without VI, including Ca2+ (factor IV) but no vitamin K, and marks the vitamin-K-dependent factors with an asterisk; the next sentence says the liver needs vitamin K to produce many of them. The page reads \"including Ca²⁺ (see the table below), and several of them require vitamin K for their synthesis\" with a visible Source note and a footer sentence. Evidenced by the chapter 18 prose claim pass (F11), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/05-hemostasis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46705",
+      "sourceElementIds": [
+        "tbl-ch19_01",
+        "fs-id2490127"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2412,
+      "rationale": "The name is antihemophilic factor, the factor whose deficiency causes hemophilia: the table's own Pathway(s) cells say \"deficiency results in hemophilia A\", \"B\", and \"C\" for factors VIII, IX, and XI. \"Antihemolytic\" means preventing hemolysis. National Library of Medicine, Medical Subject Headings, descriptor Factor VIII: \"Antihemophilic factor that is part of the factor VIII/von Willebrand factor complex.\" The page prints \"antihemophilic\" in table rows VIII, IX, and XI, in the Intrinsic Pathway paragraph, and in the sort-into-bins labels, with a visible Source note under the table and a footer sentence. Evidenced by the chapter 18 prose claim pass (F10), October 24, 2026."
     }
   ]
 }

@@ -1415,6 +1415,133 @@ rounds), checkers 108–178k, the claim pass 210k, the verifier 175k, the
 errata drafter 225k, the solver 144k, and the Clerks 47–190k (run facts
 190k).
 
+## Chapter 18 (October 25, 2026)
+
+*The Cardiovascular System: Blood*, the first chapter of Unit 4, *Fluids
+and Transport*: six sections (m46710, m46691, m46707, m46701, m46705,
+m46708; intro m46703), prepped the evening of October 24 and run the next
+day from `docs/briefs/anatomy-physiology/run.md`, with six Opus authors
+launched together, six Opus checkers, one Opus claim pass, one Opus
+alt-errata verifier, a fresh Fable blind solver, and Sonnet Clerks for the
+landing page, run facts, pins, errata draft, and this entry. It has 39
+source exercises (22 Review, 13 Critical Thinking, 4 Interactive Link),
+every Review Question four-option, and 17 vendored images (1900–1916),
+three of them table images (1915, 1914, 1913) and one (1916) inside an
+Interactive Link callout; 18.6 carries the chapter's only References
+list. The pages carry 72 Practice items (13, 10, 10, 16, 10, 13), 59 of
+them auto-graded and 13 self-checks, and the blind solver agreed on all
+59, flagging and contradicting none. Errata 2380–2423 (44 entries): four
+parent rulings, twelve claim corrections, five source alts, three
+artwork defects, two captions, and eighteen one-word or typographic text
+defects. Derek asked this session to commit after every run, and this run
+is committed. The next run is the Unit 3 Knowledge Check (chapters
+12–17), then chapter 19.
+
+Part C graded none of the four Interactive Link Questions, and each
+prompts only. 18.1's key lists blood-gas measurements for a glucose
+question (a Source note, erratum 2380), and its `openstax.org/l/normallevels`
+link redirects to an NBME PDF that returns 404, so the link is un-linked
+in the life-sciences form (2381). 18.2's key names stroke and embolism,
+which the module never mentions; 18.4's is a cell count on the linked
+slides; and 18.5's pooled item is a statement with no question, whose key
+answers an unasked one (a Source note, 2382). An 18.3 Review Question
+distractor, "myeoblasts", became "myeloblasts" as an `options` deviation
+(2383). The three table images take the rule-4 form (bold title, a
+Markdown table from the image, and a `mediafigure` whose longdesc
+transcribes the rows), while 18.5's clotting-factors table and 18.6's
+ABO and Rh percentage table are transcribed only. Sortbins were ruled
+for 18.3 from the 1914 table (erythrocytes, leukocytes, platelets) and
+18.6 from the 1913 chart (A, B, AB, O); 18.4 has a prose-built granular
+and agranular one, 18.5 a prose-built extrinsic, intrinsic, and common
+pathway one, and 18.1 a prose-built one over the three Functions of Blood
+subsections, the author's choice. The notation is Unicode blood types and
+Rh (A⁺ through O⁻, Rh⁺, Rh⁻, the first corpus use of the superscript
+forms), Fe²⁺ and Fe³⁺, Ca²⁺, O₂ and CO₂, B₁₂, the upright micro sign for
+the source's italic mu in µL, and mm Hg with the space. One key ruling
+came before the wave: 18.4's allergy item keyed basophils stands, since
+the module ties basophils to histamine and allergies and eosinophils are
+not an option, and the solver agreed.
+
+Part C got four things wrong. Its 18.6 sortbins members printed their own
+bin letter ("Erythrocyte antigens: A only" under A); the author declined
+the item with evidence, the parent re-ruled a letter-free member set,
+only three of six survived the key check, and the author replaced the
+sortbins with one multiple choice built from the chart's antibody row.
+The bin-word lint had skipped tokens of three characters or fewer, so it
+now reads a one-token bin label whole (`tools/lint/lints.mjs`, with a
+test). Part C also suggested the member "lifespan of approximately 120
+days" for 18.3, which falsified Review Question 1's "4 days" distractor;
+the checker caught it and it was removed. It called 1907 "micrographs"
+from its stem, and the author set `kind="diagram"` from the image, since
+it is a drawing. And its PO₂ ruling would have printed "PO₂ or PO₂" where
+the source contrasts two notations in one sentence, so the 18.3 author
+kept P<sub>O₂</sub> beside PO₂.
+
+The checkers' defects were few and small: accept lists (thymus gland,
+granulocyte CSFs, carbamino-haemoglobin, blood typing, and body, B cells,
+and plasma cells for the anti-Rh cloze); a coagulation cloze passable by
+retyping its stem, rebuilt as a body cloze; a hint that named a rubric
+checkpoint and one that named a paragraph by the key's word; the 18.4
+Interactive Link text "normal blood smears", which answered its own
+prompt; and a prothrombinase sortbins member that asked Review Question
+2's fact. They also found two alt readings (1909's bound-platelets leader
+ends on an arrow, and 1905's globin arrow returns to the marrow only) and
+the 1914 alt's "under" wording, all confirmed by the authors on crops.
+18.1 and 18.3 had no defects.
+
+The claim pass raised eleven findings, all accepted and applied with
+Source notes, footer clauses, and decisions entries. 18.1's globulins
+"1.0–1.5 g/dL" became 2.0–3.5, the module's own albumin figures. 18.3
+took six: erythrocytes as "25 percent of the body's cells" became more
+than 80 percent (Sender, Fuchs, and Milo 2016); the kidneys "filter 180
+liters of blood ... 20 percent of the total resting volume" became 180
+liters of plasma and one-fifth of resting cardiac output (section 25.3);
+hephaestin became a membrane ferroxidase for iron egress and not a plasma
+protein for uptake (Vulpe 1999); "iron-containing paints" became
+lead-containing; aplastic anemia became usually acquired and
+immune-mediated, a failure of hematopoietic stem cells (Young 2018); and
+the biliverdin glossary lost "in the liver". 18.4's platelet count
+"150,000–160,000 per µL" became the 18.3 table's 150,000–500,000, and
+the thrombocytopenia glossary lost "(hemophilia)". 18.5's "antihemolytic"
+became "antihemophilic" factors A, B, and C in the table and the
+paragraph, and vitamin K left the list of clotting factors. A twelfth
+followed the verifier: 18.2's glossary "pluripotent" hematopoietic stem
+cell became multipotent, matching the module's own hierarchy and figure
+label. The landing page's objective 7, "AB and Rh blood groups", was
+corrected to "ABO" by the parent with a footer clause. Two internal
+inconsistencies stand as printed with footer clauses and errata: 18.1
+Review Question 1's keyed "slightly more viscous" against the module's
+"five times", and 18.5's lost-word "has both circular layers" sentence.
+18.6's placeholder "(Seek more content for additional information on
+immunity.)" became a plain reference to the lymphatic and immune system
+chapter. Nineteen suspicions were not acted on; the drafter lists the
+solver's and claim pass's reviewed-not-errata points (ABO hemolytic
+disease as a distractor, the eosinophil "antihistamine molecules", the
+1800-cell cutoff that the 18.3 table does print, and table row XII
+"activates plasmin").
+
+The verifier read 55 claims: 29 confirmed, 4 ruled, 21 not errata, and 1
+rejected. The confirmed source alts, all already rewritten on the pages,
+are the splash 1900, which omits the platelet; 1902 "hemotopoietic";
+1905 "hemopoeisis"; 1910 "Rh+ antibodies" for Rh⁺ fetal cells; and 1912
+"three red blood cells" for a typing card. The confirmed artwork and
+caption defects are in print: 1915 prints "Platelets <1 percent" twice,
+1905's step 6 says heme is recycled where the body calls it waste,
+1913's "O is the universal donor" has no Rh sign, 1904's caption (b)
+describes cell counts where panel (b) draws heme, and 1912's
+"anti-seras". The solver agreed on all 59 items and noted the viscosity
+option, the undefined "MT", and row XII's "activates plasmin" in its
+notes.
+
+The ledger merged 72 author records and 59 solve records, pruned none,
+and found 0 low-confidence provenance. The claim-pass ledger row carries
+2386, 2390, 2394–2399, 2408–2409, 2411–2412. The build is green at
+5860 of 20000 files and 551.1 MiB; the keys gate baseline rose from 5906
+to 5972 and the coverage floor from 3484 to 3523 (`baseline:update`).
+Authors ran 181–229k tokens over up to four rounds, checkers 147–168k,
+the claim pass 192k, the verifier 201k, the solver 135k, and the Clerks
+47–198k.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

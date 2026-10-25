@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, and chapter 18 on October 25, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -300,6 +300,14 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   such sortbins Part C had decided, and the bin-word lint matches equal
   words only, not roots. Check every bin label against every member name
   before deciding, and transcribe such a table only *(chapter 11)*.
+- **A sortbins member must not print its own bin's label, however short,
+  nor falsify a sibling item's distractor.** Bins named A / B / AB / O
+  (18.6's ABO chart) cannot carry "antigens: A only"; the bin-word lint
+  reads a one-token bin label whole since October 25, 2026 (its
+  three-character filter is for stopwords inside multi-word labels). A
+  member stating a fact a sibling Review Question offers as a distractor
+  ("lifespan of approximately 120 days" beside "survive for an average of
+  4 days") eliminates that option and is removed *(chapter 18)*.
 - **A double-keyed or misspelled source Review option is an `options`
   deviation whose erratum number the parent assigns IN the ruling** — and
   when the misspelled option is the KEYED one, the kind is `key`, not

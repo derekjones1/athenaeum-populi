@@ -133,6 +133,13 @@ const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md',
+    exercise: 'fs-id1546796',
+    kind: 'options',
+    erratum: 2383,
+    reason: 'the source distractor "myeoblasts" misspells "myeloblasts" ("Aging and damaged erythrocytes are removed from the circulation by ________."); the page prints "myeloblasts"; key "macrophages" unchanged',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/05-the-coordination-and-gait-exams.md',
     exercise: 'fs-id1481522',
     kind: 'key',

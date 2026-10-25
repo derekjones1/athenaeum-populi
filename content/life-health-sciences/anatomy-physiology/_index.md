@@ -107,14 +107,20 @@ reproduction, development, and inheritance.
   the endocrine pancreas, organs with secondary endocrine functions, and the
   development and aging of the endocrine system.
 
+### Unit 4: Fluids and Transport
+
+- **The Cardiovascular System: Blood** — an overview of blood, the production
+  of the formed elements, erythrocytes, leukocytes and platelets, hemostasis,
+  and blood typing.
+
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 4: Fluids and Transport** — The Cardiovascular System: Blood; The
-  Cardiovascular System: The Heart; The Cardiovascular System: Blood Vessels
-  and Circulation; The Lymphatic and Immune System.
+- **Unit 4: Fluids and Transport** — The Cardiovascular System: The Heart;
+  The Cardiovascular System: Blood Vessels and Circulation; The Lymphatic and
+  Immune System.
 - **Unit 5: Energy, Maintenance, and Environmental Exchange** — The
   Respiratory System; The Digestive System; Metabolism and Nutrition; The
   Urinary System; Fluid, Electrolyte, and Acid-Base Balance.

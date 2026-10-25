@@ -212,6 +212,20 @@ them.
    its own: a member whose text is contained in another row's cell sorts
    under two bins and the author drops it (14.1's "Dermis, joint capsules"
    sat inside the free-nerve-endings Location cell) *(chapter 14)*.
+   A sortbins whose bins are letters or short codes (18.6's A / B / AB /
+   O) is checked member by member for the bin's own token: "Erythrocyte
+   antigens: A only" under A is a giveaway the bin-word lint skipped until
+   October 25, 2026 (it filtered tokens of three characters or fewer as
+   stopwords; it now reads a one-token bin label whole), and a member that
+   falsifies a sibling Review Question's distractor ("lifespan of 120
+   days" beside "survive for an average of 4 days") eliminates options the
+   same way — both 18.6's and 18.3's Part C members had to be removed
+   *(chapter 18)*. Part C names a figure's `kind` only after viewing the
+   image: chapter 18's Part C called 1907 "micrographs" from its stem and
+   it is a drawing; "the author sets `kind` from the image" is the safer
+   line. A source sentence that prints two notations to contrast them
+   (18.3's "P<sub>O2</sub> or PO2") keeps both; a house form that merges
+   them would print "PO₂ or PO₂" *(chapter 18)*.
    A figure's panel count is read off the vendored image, never inferred
    from the module's caption credits: four `LM ×` credits in 14.1 belong
    to four figures, and Part C told the author 1427 was "four panels" of

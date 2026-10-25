@@ -2948,7 +2948,13 @@ export function lintHugo(src, filename = '', options = {}) {
       // that item's assignment (or a misdirection) without engaging the
       // material.
       for (const bin of cfg.bins) {
-        const words = normalizeText(bin).split(' ').filter((w) => w.length > 3);
+        const whole = normalizeText(bin);
+        const words = whole.split(' ').filter((w) => w.length > 3);
+        // The length filter skips stopwords inside a multi-word bin label;
+        // a bin whose whole label is one short token ("A", "AB", "CNS") is
+        // still a giveaway when an item prints it (Anatomy and Physiology
+        // 18.6's ABO chart, October 25, 2026).
+        if (!whole.includes(' ') && whole && !words.includes(whole)) words.push(whole);
         for (const item of cfg.items) {
           const label = normalizeText(item.label);
           for (const word of words) {

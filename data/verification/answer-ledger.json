@@ -1224,6 +1224,14 @@
     "result": "agrees"
    }
   },
+  "028f8fa9e874fda8": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2454712; key glycoproteins as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "02914be7ccd9b3a3": {
    "verdict": "ok",
    "note": "CT fs-id1583106; model answer = source solution fs-id1367999 verbatim; checks are its clauses. Hint reworded by role (second paragraph of Basic Functions), checker D1."
@@ -2138,6 +2146,14 @@
   "0491cbef5ee205ed": {
    "verdict": "ok",
    "note": "author-built from § Staphylococcal Food Poisoning, Check Your Understanding: \"How can S. aureus cause food intoxication?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "04955687b0fccfb3": {
+   "verdict": "ok",
+   "note": "carbaminohemoglobin: glossary recall; key matches m46707 glossary and body term",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -4364,6 +4380,14 @@
   "09a2f36c97813299": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
+  },
+  "09a46e51a7142024": {
+   "verdict": "ok",
+   "note": "RQ fs-id4201161 key B; module: 'Albumin is the most abundant of the plasma proteins'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "09a645ae44d22d63": {
    "verdict": "ok",
@@ -9553,6 +9577,14 @@
   "154eead9c324cdf3": {
    "verdict": "ok"
   },
+  "1553f51e8b4756e5": {
+   "verdict": "ok",
+   "note": "RQ fs-id2991363 key A; EPO prompts production of erythrocytes, secreted by kidneys",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "155557da2c8671b4": {
    "verdict": "ok",
    "note": "m66405 fs-idp316672320 critical thinking; selfcheck model answer is the source solution verbatim. No departure. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -10336,6 +10368,10 @@
     "result": "agrees"
    }
   },
+  "16f88e9c34e55f74": {
+   "verdict": "ok",
+   "note": "model answer = source solution verbatim; rubric clauses from it"
+  },
   "16f91d6b289399ca": {
    "verdict": "ok"
   },
@@ -10412,6 +10448,14 @@
    "note": "glossary recall: cypris (fs-idp78054176) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "172319c75cd84821": {
+   "verdict": "ok",
+   "note": "18.5 glossary recall hemorrhage (fs-id2450327 'excessive bleeding'); body fs-id2492434 'hemorrhage—excessive bleeding'; haemorrhage British spelling accepted.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -12609,6 +12653,10 @@
     "result": "agrees"
    }
   },
+  "1be52231a31072e9": {
+   "verdict": "ok",
+   "note": "CT fs-id2177227, solution fs-id1841012 verbatim"
+  },
   "1be534dee2f78750": {
    "verdict": "ok",
    "solved": {
@@ -13535,6 +13583,14 @@
     "result": "agrees"
    }
   },
+  "1dfb4c47f1ae6b91": {
+   "verdict": "ok",
+   "note": "RQ fs-id2813781 key C platelets; myeloid bullet 'megakaryocytes that produce platelets'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1dfbcf4a6e4909f4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -14389,6 +14445,14 @@
     "result": "agrees"
    }
   },
+  "1fd3007d94e127a0": {
+   "verdict": "ok",
+   "note": "summary fs-id1983955 'Leukemia and lymphoma are malignancies involving leukocytes'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1fdac79de89ea0b1": {
    "verdict": "ok",
    "note": "key-term recall: cytoskeleton; printed in § introduction: \"Organelles such as mitochondria, the endoplasmic reticulum (ER), Golgi apparatus, lysosomes, and peroxisomes are held in place by the cytos…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -14424,6 +14488,14 @@
   "1ffb92145d2b5c8f": {
    "verdict": "ok",
    "note": "glossary recall: wax (fs-id1429764) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1fff08f61f762a54": {
+   "verdict": "ok",
+   "note": "18.5 body cloze coagulation: fs-id2344330 \"buys the body time while more sophisticated and durable repairs are being made\" + fs-id2651116 \"Those more sophisticated and more durable repairs are collectively called coagulation\"; accept blood clotting|clotting from fs-id2492434 \"coagulation (blood clotting)\"; stem prints neither clot nor clotting.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21870,6 +21942,14 @@
     "note": "the source keys chemoautotrophs; the module's own sentence makes autotrophs the encompassing category (erratum, DISCLOSED_DEVIATIONS); page keys autotrophs"
    }
   },
+  "31b647d92b0cbd8b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2517227 red blood cells (RBCs), also erythrocytes; RBCs and erythrocytes accepted",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "31b83ab031f614df": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -23650,6 +23730,14 @@
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id2318195 (m66477) verbatim; rubric checkpoints are clauses of that solution, no new claims | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "35f8cbfc4c2e737f": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2396137 bullet 3; key kidneys as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "35fb335d425e46c4": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -24150,6 +24238,14 @@
   "37153dc446ef27f0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3718ff75341cb992": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2396137 bullet 2; key small blood vessels as printed",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25845,6 +25941,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "3b4d52351d444ee0": {
+   "verdict": "ok",
+   "note": "RQ fs-id1638969 key B; fs-id1431891/fs-id1207017 most common, granular, preference for bacteria",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3b55c86150682141": {
    "verdict": "ok",
    "note": "KC 5 26.4 § table Plant Origin of Medicinal Compounds and Medical Applications (tab-ch26_04_02), m66575 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -26482,6 +26586,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "3ccd9ab4b43af063": {
+   "verdict": "ok",
+   "note": "CT fs-id2622617, model answer = solution fs-id2473069 verbatim"
   },
   "3cd6177a3f8b5a43": {
    "verdict": "ok",
@@ -29279,6 +29387,14 @@
     "result": "agrees"
    }
   },
+  "42da008286b79c2f": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1899114 first sentence; key preformed; module equates naturally formed (fs-id2468186)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "42db3e11d2ea25ae": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660276851 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -30523,6 +30639,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "45bada2b27297b8b": {
+   "verdict": "ok",
+   "note": "CT fs-id1639620, model answer = solution fs-id2472616 verbatim"
   },
   "45bb3691cf84a6de": {
    "verdict": "ok",
@@ -31893,6 +32013,10 @@
     "result": "agrees"
    }
   },
+  "48fbf8cab7a1da56": {
+   "verdict": "ok",
+   "note": "CT fs-id1855380 model = source solution verbatim"
+  },
   "48fc47eaff1f8a72": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32486,6 +32610,14 @@
   "4a6b5c5047dc009c": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "4a6df858b6d3209f": {
+   "verdict": "ok",
+   "note": "germinal centers: fs-id2527894 verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4a6fbda8d894ef2a": {
    "verdict": "ok",
@@ -34100,6 +34232,14 @@
     "result": "agrees"
    }
   },
+  "4e3f0d01ec7dff72": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2541716",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4e402e35b5770b25": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34533,6 +34673,14 @@
   "4f6fc16b476d090f": {
    "verdict": "ok",
    "note": "orchestrator read (prose claim pass, September 6, 2026): model answer corrected from the source solution's 'capsule made of lipopolysaccharides' to outer membrane per m66545; erratum 388, DISCLOSED_DEVIATIONS kind solution; rubric clause updated to match | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "4f72782b3a260f32": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1475686",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "4f75f33bfd9cdea5": {
    "verdict": "ok",
@@ -34979,6 +35127,14 @@
    "verdict": "ok",
    "note": "period of A csc(Bx-C) is 2pi/|B|; B=pi/3 gives P=6; matches source's own printed solution (stretching factor 6, period 6). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "50480239d30e7b93": {
+   "verdict": "ok",
+   "note": "copper, zinc, and vitamin B₁₂: source Review Question re-read against CNXML; key letter and option order match",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "504a11f6dbea2916": {
    "verdict": "ok"
   },
@@ -35187,6 +35343,14 @@
   "50ea75f8f7f693ee": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "50eba1c9d0356735": {
+   "verdict": "ok",
+   "note": "glossary fs-id3034338 lysozyme; body fs-id1207017 prints lysozyme",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35514,6 +35678,14 @@
   "51ca45588026bfa1": {
    "verdict": "ok",
    "note": "period of csc x equals period of sin x = 2pi; matches source's printed solution to the analogous verbal exercise. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "51d0724d77df4bae": {
+   "verdict": "ok",
+   "note": "18.5 RQ fs-id2291510 key C common pathway; fs-id1931116 prothrombinase converts prothrombin into thrombin in the common pathway; table row II 'Common; converted into thrombin'.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "51d14df458ab5c65": {
    "verdict": "ok",
@@ -38247,6 +38419,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "585b8ae12a1d4045": {
+   "verdict": "ok",
+   "note": "body cloze, Transportation fs-id2518753 last sentence; key bile printed verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "585cc211de634342": {
    "verdict": "ok",
    "note": "glossary textin, term zona pellucida; prompt built from glossary definition 'protective layer of glycoproteins on the mammalian egg'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -38286,6 +38466,14 @@
   "5871d67331c5ed56": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "5873f3bafaf2b8c9": {
+   "verdict": "ok",
+   "note": "author MC from figure 1913 Antibodies in Plasma row (Anti-B under A) and fs-id2468186 'Individuals with type A blood ... have naturally-formed antibodies to the B antigen'; distractors are the row's other cells",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "587deacd738c5205": {
    "verdict": "ok",
@@ -38403,6 +38591,10 @@
     "result": "agrees"
    }
   },
+  "58b434ce2f2a42bc": {
+   "verdict": "ok",
+   "note": "CT fs-id2363711; model answer = solution fs-id2042200 verbatim"
+  },
   "58b649b57a8b51c1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38518,6 +38710,14 @@
    "note": "glossary recall: vestibular sense — 'sense of spatial orientation and balance'; accept covers the body's 'vestibular sensation' wording. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "58f7eb96f2c53055": {
+   "verdict": "ok",
+   "note": "differential: fs-id2581982 'the differential counts of the types and percentages of leukocytes'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -41308,6 +41508,10 @@
     "result": "agrees"
    }
   },
+  "5fa2081ecf1cfef8": {
+   "verdict": "ok",
+   "note": "18.5 CT fs-id2610878; model answer = solution fs-id2626087 verbatim; checks are its clauses; hint re-pointed by position, names no pathway."
+  },
   "5faa45f0bf29b509": {
    "verdict": "ok",
    "solved": {
@@ -42536,6 +42740,14 @@
     "result": "agrees"
    }
   },
+  "62f808472ce1ca25": {
+   "verdict": "ok",
+   "note": "prose-built sortbins; each item restates one sentence of its own subsection (fs-id2518753, fs-id2252310, fs-id2458701, fs-id2108450, fs-id2308069); bins are the subsection titles",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "62fc2f282ce7e88a": {
    "verdict": "ok",
    "note": "The table above (x=3,6,9,13,14; f(x)=1,4,7,12,16) reversed gives f^{-1}(1)=3, f^{-1}(4)=6, f^{-1}(7)=9, f^{-1}(12)=13, f^{-1}(16)=14, matching the declared answer '3,6,9,13,14' exactly. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -42800,6 +43012,14 @@
   "63c902fea5cf66f1": {
    "verdict": "ok",
    "note": "KC 3 16.6 § body Chemical Modifications, Protein Activity, and Longevity (fs-id1956507), m66508 — parent re-read against the module"
+  },
+  "63ca369a87140c8c": {
+   "verdict": "ok",
+   "note": "18.5 glossary recall thrombosis (fs-id2790959 'excessive clot formation'); body fs-id2577985.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "63dd548c0e47b81a": {
    "verdict": "ok"
@@ -44533,6 +44753,14 @@
     "result": "agrees"
    }
   },
+  "6863f8d8c71cba87": {
+   "verdict": "ok",
+   "note": "fs-id2567838 'approximately one-third migrate to the spleen'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "686612954e1e3317": {
    "verdict": "ok",
    "note": "source exercise fs-idm56024624 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -45464,6 +45692,14 @@
    "note": "glossary recall: Hylonomus (fs-idp83687456) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6ab9b4de700c20bc": {
+   "verdict": "ok",
+   "note": "RQ fs-id2663985 key D; interleukins in hemopoiesis, immunity and inflammation",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -48075,6 +48311,14 @@
     "result": "agrees"
    }
   },
+  "715c60fcb1e675a9": {
+   "verdict": "ok",
+   "note": "RQ fs-id2174184 key D; fs-id1899114 and summary fs-id2582234 state it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "715c6eab76f75208": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -48206,6 +48450,14 @@
   "71add0896a3107d8": {
    "verdict": "ok",
    "note": "KC 2 7.4 § body Sternum (fs-id2094432), paragraph fs-id1989589, m46350",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "71b14f4325364953": {
+   "verdict": "ok",
+   "note": "18.5 glossary recall embolus (fs-id2766257); body fs-id2410112; irregular plural emboli accepted; embolism (trapped embolus) correctly not accepted.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -51984,6 +52236,10 @@
     "result": "agrees"
    }
   },
+  "7a44d48ef1f6d3ab": {
+   "verdict": "ok",
+   "note": "CT fs-id2686791 model = source solution verbatim; 1800 threshold from solution only"
+  },
   "7a47da0fb2e9aa72": {
    "verdict": "ok",
    "note": "parent re-read after a checker-driven edit (accept list, wording, or description); key unchanged and re-checked against the CNXML solution/glossary — 35.02 line 217 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -54568,6 +54824,14 @@
     "result": "agrees"
    }
   },
+  "801aba51c7516fe5": {
+   "verdict": "ok",
+   "note": "fs-id2300846 'particularly connective tissue'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "801aed93253cc805": {
    "verdict": "ok",
    "note": "glossary recall: prone (fs-id2752934) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -56142,6 +56406,10 @@
     "result": "agrees"
    }
   },
+  "8405f20983e09a0f": {
+   "verdict": "ok",
+   "note": "CT fs-id2268108, model answer = solution fs-id2295986 verbatim"
+  },
   "8407fc48451e3a04": {
    "verdict": "ok",
    "note": "source RQ: stem, options, order, key match CNXML",
@@ -57453,6 +57721,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "86ef91de8f555ec2": {
+   "verdict": "ok",
+   "note": "18.5 CT fs-id2138549; model answer = solution fs-id2390379 verbatim; checks are its clauses."
   },
   "86f18706da12d1d1": {
    "verdict": "ok",
@@ -61029,6 +61301,14 @@
   "8fc907297859934d": {
    "verdict": "ok",
    "note": "figure-keyed selfcheck, 701_Axial_Skeleton-01: Clavicle and Scapula under 'Pectoral (shoulder) girdle', 'Pelvic girdle (hip bones)' label; girdles-attach-limbs from glossary fs-id1040329; 2 checkpoints (key-shading checkpoint removed per checker)"
+  },
+  "8fcbeb40351d7ea1": {
+   "verdict": "ok",
+   "note": "glossary fs-id811144 recall; accept spellings plus blood typing/typing (parent ruling: 'cross matching to identify blood type')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8fd18ec9504f25e8": {
    "verdict": "ok",
@@ -65487,6 +65767,14 @@
     "result": "agrees"
    }
   },
+  "9a97434a8529bd9c": {
+   "verdict": "ok",
+   "note": "18.5 prose-built sortbins: III, VII extrinsic (fs-id2717475, table); XII, XI, IX, VIII intrinsic (fs-id2490127, table); fibrinogen (factor I) and fibrin protein strands common (fs-id1931116 \"thrombin converts factor I, the soluble fibrinogen, into the insoluble fibrin protein strands\"; table row I). Prothrombinase dropped (RQ fs-id2291510 keys that fact). Labels for VIII, IX, XI print \"antihemophilic\" (claim correction F10).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9a9992f466475073": {
    "verdict": "ok",
    "note": "Body CYU, Transduction section (fs-id1167663636244), bullet 1. Textin keyed by 'Viruses that infect bacteria (bacteriophages) may also move short pieces of chromosomal DNA...in a process called transduction.' accept='bacteriophage|phage' (checker D4: the fold is one-directional — a learner's plural 'phages'/'bacteriophages' folds to the singular accept members, but a singular typed answer needs the singular listed; verified 'bacteriophage', 'phage', and 'phages' all grade correct with node's check-text.mjs; lint rejects listing 'phages' too since it is the regular plural of accept member 'phage'). | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -66447,6 +66735,10 @@
     "result": "agrees"
    }
   },
+  "9cff6311279cfd60": {
+   "verdict": "ok",
+   "note": "CT fs-id2589668, solution fs-id2793438 verbatim; fs-id2711132 extramedullary hemopoiesis"
+  },
   "9cffd213407aa31f": {
    "verdict": "ok",
    "note": "author-built from § Classification by Staining Patterns: \"In contrast, gram-negative bacteria possess a thin peptidoglycan cell wall that does not prevent the crystal violet from washing away durin…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -66805,6 +67097,14 @@
    "note": "KC 7 42.2 § glossary clonal selection (fs-idp21067840); body B Lymphocytes (fs-idm78332688), m66664 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9de80651127992e5": {
+   "verdict": "ok",
+   "note": "polycythemia: source Review Question re-read against CNXML; key letter and option order match",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69685,6 +69985,14 @@
     "result": "agrees"
    }
   },
+  "a42bb149ab882c72": {
+   "verdict": "ok",
+   "note": "reticulocyte: glossary recall; key matches m46707 glossary and body term",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a42c77f01c60a685": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"Eukaryotic cells have a nucleus surrounded by a complex nuclear membrane that contains multiple, rod-shaped chromosomes.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -70626,6 +70934,14 @@
     "result": "agrees"
    }
   },
+  "a67611f952f594e6": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2643758 lymphoid bullet, last sentence; accept thymus gland (checker fix)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a677ac35c2a2fba9": {
    "verdict": "ok",
    "note": "4x + 2y = 8 solves to y = -2x + 4, matching the authored slope -2 and intercept 4; 13 snap-1 lattice points are reachable on the -12..12 grid against plotPoints 3, checkGraphPlot grades three of them correct, and the preceding example's table points (0,-2),(3,0),(6,2) now grade incorrect. Equation restored to the pinned CNXML Try It (m82481) that follows the 2x-3y=6 example."
@@ -71198,6 +71514,14 @@
   "a7d7700b90cc88b4": {
    "verdict": "ok",
    "note": "glossary recall: anaerobic (fs-id1313248) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a7d8c6833d073246": {
+   "verdict": "ok",
+   "note": "RQ fs-id2016087 key C emigration; fs-id2757674 defines emigration/diapedesis",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -73253,6 +73577,10 @@
    "verdict": "ok",
    "note": "Selfcheck fs-id2025518 (excess activator); model answer is the source solution verbatim; rubric clauses copy its own wording. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "acf6075c2a31bd08": {
+   "verdict": "ok",
+   "note": "model answer = source solution verbatim; rubric clauses from it"
+  },
   "ad00ad7ec5b007d0": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
@@ -73725,6 +74053,14 @@
   "ae00774bedea217f": {
    "verdict": "ok",
    "note": "selfcheck, body Visual Connection; source-keyed prose solution unchanged, rubric clauses unchanged; parent re-read Sep 23 2026 (Biology ch18 re-review): only the hint changed, now a location in the figure above"
+  },
+  "ae0263654382258e": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1899114; key immune system; accept body (fs-id2582234 'their body may begin to produce anti-Rh antibodies'), B cells/B lymphocytes (parent ruling); plasma cells (fs-id1952985 \"B lymphocytes called plasma cells\")",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ae05d78aea19bc5b": {
    "verdict": "ok",
@@ -77699,6 +78035,14 @@
     "result": "agrees"
    }
   },
+  "b756b56c9bc56991": {
+   "verdict": "ok",
+   "note": "fs-id1892370 'In chronic leukemia, mature leukocytes accumulate and fail to die'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b756c3822b64f314": {
    "verdict": "ok",
    "note": "#39 (fs-id2155191): cos58°+cos12°=2cos35°cos23°; computed in node: 2*cos(35°)*cos(23°)=1.5080668649670106, rounds to 1.5081, matches CNXML solution '2cos(35°)cos(23°), 1.5081'."
@@ -78988,6 +79332,14 @@
    "verdict": "ok",
    "note": "fs-id1518525 model answer = solution fs-id1533571 verbatim"
   },
+  "ba617b9941e50b94": {
+   "verdict": "ok",
+   "note": "body cloze, Characteristics fs-id1910265; key hemoglobin verbatim; haemoglobin British spelling accepted",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba619bf24600d8ad": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -79800,6 +80152,14 @@
     "result": "agrees"
    }
   },
+  "bc4e5d421eb05cbc": {
+   "verdict": "ok",
+   "note": "body cloze, Other Plasma Solutes fs-id2338114; key electrolytes verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bc5873aef81db5a2": {
    "verdict": "ok",
    "note": "Critical Thinking selfcheck fs-idp108238624; model answer is the CNXML solution verbatim, checks decompose its two clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -80524,6 +80884,14 @@
    "note": "source exercise fs-idp11895824 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bde450cd271868b1": {
+   "verdict": "ok",
+   "note": "RQ fs-id1517312 key B; fs-id2454712 and fs-id2468186 state type O lacks A and B",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -81342,6 +81710,14 @@
   "bff92a9f0c157ff4": {
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Identify the graph of the nondegenerate conic section $16x^2 | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "bff94f083100beee": {
+   "verdict": "ok",
+   "note": "RQ fs-id2621758 key B; fs-id2338423 'involved in specific immunity'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "bffe4a0b589a0d25": {
    "verdict": "ok",
@@ -84020,6 +84396,14 @@
     "result": "agrees"
    }
   },
+  "c65f2c9652f55d85": {
+   "verdict": "ok",
+   "note": "glossary fs-id1415860 memory cell; body fs-id2338423",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c65fb05c1c9f1263": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -84463,6 +84847,14 @@
    "note": "source exercise fs-id1172100577825 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c793dd6096d3666e": {
+   "verdict": "ok",
+   "note": "18.5 RQ fs-id2766568 key A vascular spasm; fs-id2492434 lists vascular spasm first; options/order as source.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -85401,6 +85793,14 @@
    "verdict": "ok",
    "note": "selfcheck re-read against m46355; model answer is the source solution verbatim — In the video of the rotating skull above, which bone (yellow) is centrally locat"
   },
+  "c9e6f67324ab65b6": {
+   "verdict": "ok",
+   "note": "RQ fs-id2443596 key C; module: 'Blood is viscous', 'viscosity approximately five times greater than water'; summary 'more viscous than water'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c9e73c409579ec3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86139,6 +86539,14 @@
     "result": "agrees"
    }
   },
+  "cb59014c91cf9d6e": {
+   "verdict": "ok",
+   "note": "body cloze, Maintenance of Homeostasis fs-id2308069; key buffers printed verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cb6891018794a143": {
    "verdict": "ok"
   },
@@ -86690,6 +87098,14 @@
   "cd150507a3315af8": {
    "verdict": "ok",
    "note": "source RQ fs-id1599720, key A; body fs-id2764618 nicotinic receptors on all ganglionic neurons",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "cd19ead006158a1c": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1379084; accept members equated by fs-id1514207",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -87909,6 +88325,14 @@
     "result": "agrees"
    }
   },
+  "cfedbf6fa1b5299e": {
+   "verdict": "ok",
+   "note": "RQ fs-id2307982 key C agglutination; bullet 1 defines it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cff1b45b7b5e9c83": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 57): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -88341,6 +88765,14 @@
   "d0f84a78e6f2b9dd": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d0fc9b46672c6552": {
+   "verdict": "ok",
+   "note": "macrophages: source Review Question re-read against CNXML; key letter and option order match",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d0fe5587ccdc5ae7": {
    "verdict": "ok",
@@ -91198,6 +91630,14 @@
     "result": "agrees"
    }
   },
+  "d7cae89f5710219b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2459221; accept CSF + granulocyte CSFs + granulocyte colony-stimulating factors (module: granulocyte CSFs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d7cf457564d876ae": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -91870,6 +92310,14 @@
    "verdict": "ok",
    "note": "unkeyed SA fs-id1167662689608; module gives 3 sentences (empiric therapy, polymicrobic/prophylaxis, narrow-spectrum failure) so stays selfcheck per the one-sentence rule; model answer assembled from those 3 sentences only."
   },
+  "d9c1c262a80f4dc6": {
+   "verdict": "ok",
+   "note": "prose sortbins: fs-id2202454, fs-id2269567, fs-id2654774, fs-id2582134, fs-id2516224, fs-id1841939; each label one bin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d9c1de71cccca5aa": {
    "verdict": "ok",
    "note": "multiplechoice, source-keyed. CNXML exercise fs-id1172100849685, KEY C (plasmids); options verbatim source order. Confirmed against the Extrachromosomal DNA section: 'some prokaryotes also have smaller loops of DNA called plasmids.' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -92158,6 +92606,14 @@
    "note": "source exercise fs-idm58176 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "da6a46ed903c49b2": {
+   "verdict": "ok",
+   "note": "body cloze, Characteristics fs-id2271392; key friction verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -93043,6 +93499,14 @@
     "result": "agrees"
    }
   },
+  "dca45160bc3512c5": {
+   "verdict": "ok",
+   "note": "They have no nucleus.: source Review Question re-read against CNXML; key letter and option order match",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dcac0f97aae4efb4": {
    "verdict": "ok",
    "note": "KC 5 23.2 § Cystitis, m58918 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -93106,6 +93570,14 @@
   "dcd36edb8c60054b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dcd90adf41532de1": {
+   "verdict": "ok",
+   "note": "11 labels cut from the 1914 table image top-level row cells (lifespan member dropped per ruling); re-read against the image; true of exactly one row",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97237,6 +97709,10 @@
     "result": "agrees"
    }
   },
+  "e6587423fa6765f8": {
+   "verdict": "ok",
+   "note": "CT fs-id2591033; model answer = solution fs-id2062672 verbatim"
+  },
   "e65b509ab1c6889a": {
    "verdict": "ok",
    "note": "source exercise fs-idp45710736 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -98356,6 +98832,14 @@
   "e97f96e49cb4266f": {
    "verdict": "ok",
    "note": "body CYU selfcheck, model answer assembled from the desensitization-therapy paragraphs (fs-id1167663923057, fs-id1167661745244) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "e9822737988be059": {
+   "verdict": "ok",
+   "note": "RQ fs-id1491368 key A basophils; fs-id2582134 histamines, allergies; run-facts ruling stands",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "e98732a432574418": {
    "verdict": "ok",
@@ -100025,6 +100509,14 @@
     "result": "agrees"
    }
   },
+  "ed9932e146bd1467": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2822281; key placental as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ed9c9cd2f28f3b74": {
    "verdict": "ok",
    "note": "key-term recall: alkaliphile; printed in § introduction: \"At the other end of the spectrum are alkaliphile s, microorganisms that grow best at pH between 8.0 and 10.5.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -100576,6 +101068,14 @@
    "note": "parent re-verdict after accept gained the module's own compound form 'genomic fusion' and the plural; answer unchanged, re-read against m66532 glossary and prose; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ef0121579bab5a49": {
+   "verdict": "ok",
+   "note": "RQ fs-id2643719 key D; module: 'immunoglobulins are produced by specialized leukocytes known as plasma cells'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -103168,6 +103668,14 @@
   "f524ec4bff5281c7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f526c6688bfd6ed9": {
+   "verdict": "ok",
+   "note": "consists of four globin proteins, each bound to a molecule of heme: source Review Question re-read against CNXML; key letter and option order match",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -107282,6 +107790,14 @@
     "result": "agrees"
    }
   },
+  "fe7954327f2b6279": {
+   "verdict": "ok",
+   "note": "RQ fs-id2767040 key D platelets; fs-id1372052",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fe7cf60acbd294e4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -107877,6 +108393,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "ffbb2aac12d2968f": {
+   "verdict": "ok",
+   "note": "18.5 RQ fs-id2123883 key B; fs-id2078704 hemophilia = inadequate production of one or more clotting factors; glossary fs-id2335865.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
