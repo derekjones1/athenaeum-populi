@@ -49,6 +49,9 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 12-the-nervous-system-and-nervous-tissue | 5 | done Oct 20 2026 (in the authoring run) | 2173–2178 |
 | Anatomy and Physiology | 13-anatomy-of-the-nervous-system | 4 | done Oct 21 2026 (in the authoring run) | 2207, 2215–2222, 2230–2235, 2240–2249 |
 | Anatomy and Physiology | 14-the-somatic-nervous-system | 3 | done Oct 21 2026 (in the authoring run) | 2252–2265, 2267, 2276, 2281–2282 |
+| Anatomy and Physiology | 15-the-autonomic-nervous-system | 4 | done Oct 21 2026 (in the authoring run) | 2287–2290, 2296–2297, 2304–2305, 2309–2310 |
+| Anatomy and Physiology | 16-the-neurological-exam | 5 | done Oct 24 2026 (in the authoring run) | 2321–2323, 2329–2331, 2336–2337 |
+| Anatomy and Physiology | 17-the-endocrine-system | 11 | done Oct 24 2026 (in the authoring run) | 2348–2349, 2354, 2367–2368, 2373–2374, 2378 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

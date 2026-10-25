@@ -1,0 +1,292 @@
+---
+title: The Cranial Nerve Exam
+description: >-
+  The functional groups of the twelve cranial nerves and the subtests that
+  probe them: smell, vision, hearing and balance, facial sensation, gaze
+  control and the vestibulo-ocular reflex, taste, the gag reflex and the
+  tongue, and the muscles of the neck — adapted from OpenStax Anatomy and
+  Physiology 2e, Section 16.3.
+source_section: "16.3"
+weight: 3
+---
+
+{{< callout type="info" >}}
+**By the end of this section, you will be able to:**
+
+- Describe the functional grouping of cranial nerves
+- Match the regions of the forebrain and brain stem that are connected to each cranial nerve
+- Suggest diagnoses that would explain certain losses of function in the cranial nerves
+- Relate cranial nerve deficits to damage of adjacent, unrelated structures
+{{< /callout >}}
+
+The twelve cranial nerves are typically covered in introductory anatomy courses, and memorizing their names is facilitated by numerous mnemonics developed by students over the years of this practice. But knowing the names of the nerves in order often leaves much to be desired in understanding what the nerves do. The nerves can be categorized by functions, and subtests of the cranial nerve exam can clarify these functional groupings.
+
+Three of the nerves are strictly responsible for special senses whereas four others contain fibers for special and general senses. Three nerves are connected to the extraocular muscles resulting in the control of gaze. Four nerves connect to muscles of the face, oral cavity, and pharynx, controlling facial expressions, mastication, swallowing, and speech. Four nerves make up the cranial component of the parasympathetic nervous system responsible for pupillary constriction, salivation, and the regulation of the organs of the thoracic and upper abdominal cavities. Finally, one nerve controls the muscles of the neck, assisting with spinal control of the movement of the head and neck.
+
+The cranial nerve exam allows directed tests of forebrain and brain stem structures. The twelve cranial nerves serve the head and neck. The vagus nerve (cranial nerve X) has autonomic functions in the thoracic and superior abdominal cavities. The special senses are served through the cranial nerves, as well as the general senses of the head and neck. The movement of the eyes, face, tongue, throat, and neck are all under the control of cranial nerves. Preganglionic parasympathetic nerve fibers that control pupillary size, salivary glands, and the thoracic and upper abdominal viscera are found in four of the nerves. Tests of these functions can provide insight into damage to specific regions of the brain stem and may uncover deficits in adjacent regions.
+
+## Sensory Nerves
+
+The olfactory, optic, and vestibulocochlear nerves (cranial nerves I, II, and VIII) are dedicated to four of the special senses: smell, vision, equilibrium, and hearing, respectively. Taste sensation is relayed to the brain stem through fibers of the facial and glossopharyngeal nerves. The trigeminal nerve is a mixed nerve that carries the general somatic senses from the head, similar to those coming through spinal nerves from the rest of the body.
+
+Testing smell is straightforward, as common smells are presented to one nostril at a time. The patient should be able to recognize the smell of coffee or mint, indicating the proper functioning of the olfactory system. Loss of the sense of smell is called anosmia and can be lost following blunt trauma to the head or through aging. The short axons of the first cranial nerve regenerate on a regular basis. The neurons in the olfactory epithelium have a limited life span, and new cells grow to replace the ones that die off. The axons from these neurons grow back into the CNS by following the existing axons—representing one of the few examples of such growth in the mature nervous system. If all of the fibers are sheared when the brain moves within the cranium, such as in a motor vehicle accident, then no axons can find their way back to the olfactory bulb to re-establish connections. If the nerve is not completely severed, the anosmia may be temporary as new neurons can eventually reconnect.
+
+Olfaction is not the pre-eminent sense, but its loss can be quite detrimental. The enjoyment of food is largely based on our sense of smell. Anosmia means that food will not seem to have the same taste, though the gustatory sense is intact, and food will often be described as being bland. However, the taste of food can be improved by adding ingredients (e.g., salt) that stimulate the gustatory sense.
+
+Testing vision relies on the tests that are common in an optometry office. The **Snellen chart** (see the figure below) demonstrates visual acuity by presenting standard Roman letters in a variety of sizes. The result of this test is a rough generalization of the acuity of a person based on the normal accepted acuity, such that a letter that subtends a visual angle of 5 minutes of an arc at 20 feet can be seen. To have 20/60 vision, for example, means that the smallest letters that a person can see at a 20-foot distance could be seen by a person with normal acuity from 60 feet away. Testing the extent of the visual field means that the examiner can establish the boundaries of peripheral vision as simply as holding their hands out to either side and asking the patient when the fingers are no longer visible without moving the eyes to track them. If it is necessary, further tests can establish the perceptions in the visual fields. Physical inspection of the optic disk, or where the optic nerve emerges from the eye, can be accomplished by looking through the pupil with an ophthalmoscope.
+
+{{< mediafigure src="anatomy-physiology/1606_Snellen_Chart-02" kind="diagram" eager="true" alt="An eye chart of black capital letters on white, in eleven numbered rows that shrink from top to bottom: one large E in row 1, then two, three, four, five, six, and seven letters in rows 2 to 7, eight letters in each of rows 8 to 10, and nine in row 11. A column at the right gives the acuity of rows 1 to 8: 20/200, 20/100, 20/70, 20/50, 20/40, 20/30, 20/25, and 20/20; rows 9 to 11 have no value." >}}
+The Snellen chart for visual acuity presents a limited number of Roman letters in lines of decreasing size. The line with letters that subtend 5 minutes of an arc from 20 feet represents the smallest letters that a person with normal acuity should be able to read at that distance. The different sizes of letters in the other lines represent rough approximations of what a person of normal acuity can read at different distances. For example, the line that represents 20/200 vision would have larger letters so that they are legible to the person with normal acuity at 200 feet.
+{{< /mediafigure >}}
+
+The optic nerves from both sides enter the cranium through the respective optic canals and meet at the optic chiasm at which fibers sort such that the two halves of the visual field are processed by the opposite sides of the brain. Deficits in visual field perception often suggest damage along the length of the optic pathway between the orbit and the diencephalon. For example, loss of peripheral vision may be the result of a pituitary tumor pressing on the optic chiasm (see the figure below). The pituitary, seated in the sella turcica of the sphenoid bone, is directly inferior to the optic chiasm. The axons that decussate in the chiasm are from the medial retinae of either eye, and therefore carry information from the peripheral visual field.
+
+{{< mediafigure src="anatomy-physiology/1614_Pituitary_Tumor-02" kind="diagram" alt="Three panels. Left: a frontal (coronal) section through the head, showing the folded cerebral cortex, the ventricles, and, at the base of the brain, a small white structure above a rounded gland, framed by a square; a grey arrow leads from the square to the middle panel. Middle: the framed region enlarged, labeled Normal pituitary underneath, with a thin white bar above a stalk and a small rounded gland in a bony seat. Right: the same view, labeled Pituitary tumor underneath, where a much larger gland fills the seat and presses up against the white bar." longdesc="Labels, as printed. Middle panel, captioned Normal pituitary: Optic nerve (as printed; the leader ends on the optic chiasm in both panels, which the caption and text name), to the white bar crossing above the stalk; Sella turcica, to the dark grey area beside the stalk, above the gland. Right panel, captioned Pituitary tumor: Optic nerve (as printed; the leader ends on the optic chiasm), to the white bar, which here is flattened against the top of the enlarged gland; Sella turcica, to the dark region beside the gland. The left panel carries no labels." >}}
+The pituitary gland is located in the sella turcica of the sphenoid bone within the cranial floor, placing it immediately inferior to the optic chiasm. If the pituitary gland develops a tumor, it can press against the fibers crossing in the chiasm. Those fibers are conveying peripheral visual information to the opposite side of the brain, so the patient will experience “tunnel vision”—meaning that only the central visual field will be perceived.
+{{< /mediafigure >}}
+
+The vestibulocochlear nerve (CN VIII) carries both equilibrium and auditory sensations from the inner ear to the medulla. Though the two senses are not directly related, anatomy is mirrored in the two systems. Problems with balance, such as vertigo, and deficits in hearing may both point to problems with the inner ear. Within the petrous region of the temporal bone is the bony labyrinth of the inner ear. The vestibule is the portion for equilibrium, composed of the utricle, saccule, and the three semicircular canals. The cochlea is responsible for transducing sound waves into a neural signal. The sensory nerves from these two structures travel side-by-side as the vestibulocochlear nerve, though they are really separate divisions. They both emerge from the inner ear, pass through the internal auditory meatus, and synapse in nuclei of the superior medulla. Though they are part of distinct sensory systems, the vestibular nuclei and the cochlear nuclei are close neighbors with adjacent inputs. Deficits in one or both systems could occur from damage that encompasses structures close to both. Damage to structures near the two nuclei can result in deficits to one or both systems.
+
+Balance or hearing deficits may be the result of damage to the middle or inner ear structures. Ménière's disease is a disorder that can affect both equilibrium and audition in a variety of ways. The patient can suffer from vertigo, a low-frequency ringing in the ears, or a loss of hearing. From patient to patient, the exact presentation of the disease can be different. Additionally, within a single patient, the symptoms and signs may change as the disease progresses. Use of the neurological exam subtests for the vestibulocochlear nerve illuminates the changes a patient may go through. The disease appears to be the result of accumulation, or over-production, of fluid in the inner ear, in either the vestibule or cochlea.
+
+Tests of equilibrium are important for coordination and gait and are related to other aspects of the neurological exam. The vestibulo-ocular reflex involves the cranial nerves for gaze control. Balance and equilibrium, as tested by the Romberg test, are part of spinal and cerebellar processes and involved in those components of the neurological exam, as discussed later.
+
+Hearing is tested by using a tuning fork in a couple of different ways. The **Rinne test** involves using a tuning fork to distinguish between **conductive hearing** and **sensorineural hearing**. Conductive hearing relies on vibrations being conducted through the ossicles of the middle ear. Sensorineural hearing is the transmission of sound stimuli through the neural components of the inner ear and cranial nerve. A vibrating tuning fork is placed on the mastoid process and the patient indicates when the sound produced from this is no longer present. Then the fork is immediately moved to just next to the ear canal so the sound travels through the air. If the sound is not heard through the ear, meaning the sound is conducted better through the temporal bone than through the ossicles, a conductive hearing deficit is present. The **Weber test** also uses a tuning fork to differentiate between conductive versus sensorineural hearing loss. In this test, the tuning fork is placed at the top of the skull, and the sound of the tuning fork reaches both inner ears by travelling through bone. In a healthy patient, the sound would appear equally loud in both ears. With unilateral conductive hearing loss, however, the tuning fork sounds louder in the ear with hearing loss. This is because the sound of the tuning fork has to compete with background noise coming from the outer ear, but in conductive hearing loss, the background noise is blocked in the damaged ear, allowing the tuning fork to sound relatively louder in that ear. With unilateral sensorineural hearing loss, however, damage to the cochlea or associated nervous tissue means that the tuning fork sounds quieter in that ear.
+
+The trigeminal system of the head and neck is the equivalent of the ascending spinal cord systems of the dorsal column and the spinothalamic pathways. Somatosensation of the face is conveyed along the nerve to enter the brain stem at the level of the pons. Synapses of those axons, however, are distributed across nuclei found throughout the brain stem. The mesencephalic nucleus processes proprioceptive information of the face, which is the movement and position of facial muscles. It is the sensory component of the **jaw-jerk reflex**, a stretch reflex of the masseter muscle. The chief nucleus, located in the pons, receives information about light touch as well as proprioceptive information about the mandible, which are both relayed to the thalamus and, ultimately, to the postcentral gyrus of the parietal lobe. The spinal trigeminal nucleus, located in the medulla, receives information about crude touch, pain, and temperature to be relayed to the thalamus and cortex. Essentially, the projection through the chief nucleus is analogous to the dorsal column pathway for the body, and the projection through the spinal trigeminal nucleus is analogous to the spinothalamic pathway.
+
+Subtests for the sensory component of the trigeminal system are the same as those for the sensory exam targeting the spinal nerves. The primary sensory subtest for the trigeminal system is sensory discrimination. A cotton-tipped applicator, which is cotton attached to the end of a thin wooden stick, can be used easily for this. The wood of the applicator can be snapped so that a pointed end is opposite the soft cotton-tipped end. The cotton end provides a touch stimulus, while the pointed end provides a painful, or sharp, stimulus. While the patient’s eyes are closed, the examiner touches the two ends of the applicator to the patient’s face, alternating randomly between them. The patient must identify whether the stimulus is sharp or dull. These stimuli are processed by the trigeminal system separately. Contact with the cotton tip of the applicator is a light touch, relayed by the chief nucleus, but contact with the pointed end of the applicator is a painful stimulus relayed by the spinal trigeminal nucleus. Failure to discriminate these stimuli can localize problems within the brain stem. If a patient cannot recognize a painful stimulus, that might indicate damage to the spinal trigeminal nucleus in the medulla. The medulla also contains important regions that regulate the cardiovascular, respiratory, and digestive systems, as well as being the pathway for ascending and descending tracts between the brain and spinal cord. Damage, such as a stroke, that results in changes in sensory discrimination may indicate these unrelated regions are affected as well.
+
+## Gaze Control
+
+The three nerves that control the extraocular muscles are the oculomotor, trochlear, and abducens nerves, which are the third, fourth, and sixth cranial nerves. As the name suggests, the abducens nerve is responsible for abducting the eye, which it controls through contraction of the lateral rectus muscle. The trochlear nerve controls the superior oblique muscle to rotate the eye along its axis in the orbit medially, which is called **intorsion**, and is a component of focusing the eyes on an object close to the face. The oculomotor nerve controls all the other extraocular muscles, as well as a muscle of the upper eyelid. Movements of the two eyes need to be coordinated to locate and track visual stimuli accurately. When moving the eyes to locate an object in the horizontal plane, or to track movement horizontally in the visual field, the lateral rectus muscle of one eye and medial rectus muscle of the other eye are both active. The lateral rectus is controlled by neurons of the abducens nucleus in the pons, whereas the medial rectus is controlled by neurons in the oculomotor nucleus of the midbrain. *(Source note: the source places the abducens nucleus in the superior medulla; the nucleus lies in the pons, as this section’s own figure of the vestibulo-ocular reflex labels it, so the page says pons.)*
+
+Coordinated movement of both eyes through different nuclei requires integrated processing through the brain stem. In the midbrain, the superior colliculus integrates visual stimuli with motor responses to initiate eye movements. The **paramedian pontine reticular formation (PPRF)** will initiate a rapid eye movement, or **saccade**, to bring the eyes to bear on a visual stimulus quickly. These areas are connected to the oculomotor, trochlear, and abducens nuclei by the **medial longitudinal fasciculus (MLF)** that runs through the majority of the brain stem. The MLF allows for **conjugate gaze**, or the movement of the eyes in the same direction, during horizontal movements that require the lateral and medial rectus muscles. Control of conjugate gaze strictly in the vertical direction is contained within the oculomotor complex. To elevate the eyes, the oculomotor nerve on either side stimulates the contraction of both superior rectus muscles; to depress the eyes, the oculomotor nerve on either side stimulates the contraction of both inferior rectus muscles.
+
+Purely vertical movements of the eyes are not very common. Movements are often at an angle, so some horizontal components are necessary, adding the medial and lateral rectus muscles to the movement. The rapid movement of the eyes used to locate and direct the fovea onto visual stimuli is called a saccade. Notice that the paths that are traced in the figure below are not strictly vertical. The movements between the nose and the mouth are closest, but still have a slant to them. Also, the superior and inferior rectus muscles are not perfectly oriented with the line of sight. The origin for both muscles is medial to their insertions, so elevation and depression may require the lateral rectus muscles to compensate for the slight adduction inherent in the contraction of those muscles, requiring MLF activity as well.
+
+{{< mediafigure src="anatomy-physiology/1607_Saccadic_Movements" kind="diagram" alt="A black line drawing of a woman’s face seen from the front, framed in a rectangle, with magenta lines and dots traced over it. Dense clusters of short loops and lines gather on each eye, many lines run straight across between the two eyes, bundles of lines run down from the eyes to the nostrils and the upper lip, and a few long lines sweep around the outline of the face, the hair, and the chin." >}}
+Saccades are rapid, conjugate movements of the eyes to survey a complicated visual stimulus, or to follow a moving visual stimulus. This image represents the shifts in gaze typical of a person studying a face. Notice the concentration of gaze on the major features of the face and the large number of paths traced between the eyes or around the mouth.
+{{< /mediafigure >}}
+
+Testing eye movement is simply a matter of having the patient track the tip of a pen as it is passed through the visual field. This may appear similar to testing visual field deficits related to the optic nerve, but the difference is that the patient is asked to not move the eyes while the examiner moves a stimulus into the peripheral visual field. Here, the extent of movement is the point of the test. The examiner is watching for conjugate movements representing proper function of the related nuclei and the MLF. Failure of one eye to adduct while the other abducts in a horizontal movement is referred to as **internuclear ophthalmoplegia**. When this occurs, the patient will experience **diplopia**, or double vision, as the two eyes are temporarily pointed at different stimuli. Diplopia is not restricted to failure of the lateral rectus, because any of the extraocular muscles may fail to move one eye in perfect conjugation with the other. *(Source note: the source defines internuclear ophthalmoplegia as the failure of one eye to abduct while the other adducts, and its glossary blames the lateral rectus and the abducens nerve; damage to the MLF, which links the abducens nucleus to the opposite oculomotor nucleus as described above, leaves the medial rectus of one eye unable to adduct while the other eye abducts (Fiester et al., Cureus 2020, doi:10.7759/cureus.9959), so the page and its Key terms entry give the adduction failure.)*
+
+The final aspect of testing eye movements is to move the tip of the pen in toward the patient’s face. As visual stimuli move closer to the face, the two medial recti muscles cause the eyes to move in the one nonconjugate movement that is part of gaze control. When the two eyes move to look at something closer to the face, they both adduct, which is referred to as **convergence**. To keep the stimulus in focus, the eye also needs to change the shape of the lens, which is controlled through the parasympathetic fibers of the oculomotor nerve. The change in focal power of the eye is referred to as **accommodation**. Accommodation ability changes with age; focusing on nearer objects, such as the written text of a book or on a computer screen, may require corrective lenses later in life. Coordination of the skeletal muscles for convergence and coordination of the smooth muscles of the ciliary body for accommodation are referred to as the **accommodation–convergence reflex**.
+
+A crucial function of the cranial nerves is to keep visual stimuli centered on the fovea of the retina. The **vestibulo-ocular reflex (VOR)** coordinates all of the components (see the figure below), both sensory and motor, that make this possible. If the head rotates in one direction—for example, to the right—the horizontal pair of semicircular canals in the inner ear indicate the movement by increased activity on the right and decreased activity on the left. The information is sent to the abducens nuclei and oculomotor nuclei on either side to coordinate the lateral and medial rectus muscles. The left lateral rectus and right medial rectus muscles will contract, rotating the eyes in the opposite direction of the head, while nuclei controlling the right lateral rectus and left medial rectus muscles will be inhibited to reduce antagonism of the contracting muscles. These actions stabilize the visual field by compensating for the head rotation with opposite rotation of the eyes in the orbits. Deficits in the VOR may be related to vestibular damage, such as in Ménière’s disease, or from dorsal brain stem damage that would affect the eye movement nuclei or their connections through the MLF.
+
+{{< mediafigure src="anatomy-physiology/1608_Vestibulo-Ocular_Reflex-02" kind="diagram" alt="A schematic of the reflex: two eyeballs seen from above at the top, each with a teal muscle and a pink muscle; two inner ears at the bottom, marked Right on the viewer’s left and Left on the viewer’s right; and between them a pink excitatory pathway and a teal inhibitory pathway that rise through paired nuclei, cross, and end on the eye muscles. A large circular arrow labeled Head rotation runs around the drawing, and a curved arrow above each eye, labeled Compensating eye movement, points toward the viewer’s right." longdesc="Labels, as printed. Key, bottom right: teal square, Inhibition; pink square, Excitation. Top: Compensating eye movement, over two curved black arrows above the eyes, each pointing toward the viewer’s right. Upper left: Excitation of extraocular muscles on one side; upper right: Inhibition of extraocular muscles on the other side. Eye on the viewer’s left: Lateral rectus, to the teal muscle on its outer side; Medial rectus, to the pink muscle on its inner side. The eye on the viewer’s right has a teal muscle on its inner side and a pink muscle on its outer side. Bottom: the inner ear labeled Right, on the viewer’s left, with a curved arrow in its canal turning upward, and the inner ear labeled Left, on the viewer’s right, with a curved arrow turning downward; beside the Left ear, Detection of rotation as a result of fluid movement in canal. A pink line runs up from the Right ear through two pink circles, one above the other; from the upper circle one pink branch runs up the right side to the pink outer muscle of the eye on the viewer’s right, and another crosses to a pink oval and on to the pink inner muscle of the eye on the viewer’s left. A teal line runs up from the Left ear through two teal circles; from the upper one a teal branch runs up the left side to the teal outer muscle of the eye on the viewer’s left, and another crosses to a teal oval and on to the teal inner muscle of the eye on the viewer’s right. Vestibular nucleus (pons), at left, to the lower pink circle; Abducens nucleus (pons), at right, to the upper teal circle; Oculomotor nucleus (midbrain), at right, to the pink oval; MLF, at left, to the teal line just below the teal oval. Head rotation, along the bottom of the large black circular arrow, which runs down the left side, across the bottom toward the right, and up the right side." >}}
+If the head is turned in one direction, the coordination of that movement with the fixation of the eyes on a visual stimulus involves a circuit that ties the vestibular sense with the eye movement nuclei through the MLF.
+{{< /mediafigure >}}
+
+## Nerves of the Face and Oral Cavity
+
+An iconic part of a doctor’s visit is the inspection of the oral cavity and pharynx, suggested by the directive to “open your mouth and say ‘ah.’” This is followed by inspection, with the aid of a tongue depressor, of the back of the mouth, or the opening of the oral cavity into the pharynx known as the **fauces**. Whereas this portion of a medical exam inspects for signs of infection, such as in tonsillitis, it is also the means to test the functions of the cranial nerves that are associated with the oral cavity.
+
+The facial and glossopharyngeal nerves convey gustatory stimulation to the brain. Testing this is as simple as introducing salty, sour, bitter, or sweet stimuli to either side of the tongue. The patient should respond to the taste stimulus before retracting the tongue into the mouth. Stimuli applied to specific locations on the tongue will dissolve into the saliva and may stimulate taste buds connected to either the left or right of the nerves, masking any lateral deficits. Along with taste, the glossopharyngeal nerve relays general sensations from the pharyngeal walls. These sensations, along with certain taste stimuli, can stimulate the gag reflex. If the examiner moves the tongue depressor to contact the lateral wall of the fauces, this should elicit the gag reflex. Stimulation of either side of the fauces should elicit an equivalent response. The motor response, through contraction of the muscles of the pharynx, is mediated through the vagus nerve. Normally, the vagus nerve is considered autonomic in nature. The vagus nerve directly stimulates the contraction of skeletal muscles in the pharynx and larynx to contribute to the swallowing and speech functions. Further testing of vagus motor function has the patient repeating consonant sounds that require movement of the muscles around the fauces. The patient is asked to say “lah-kah-pah” or a similar set of alternating sounds while the examiner observes the movements of the soft palate and arches between the palate and tongue.
+
+The facial and glossopharyngeal nerves are also responsible for the initiation of salivation. Neurons in the salivary nuclei of the medulla project through these two nerves as preganglionic fibers, and synapse in ganglia located in the head. The parasympathetic fibers of the facial nerve synapse in the submandibular ganglion, which projects to the submandibular gland and sublingual gland, and in the pterygopalatine ganglion, which projects to the lacrimal gland. The parasympathetic fibers of the glossopharyngeal nerve synapse in the otic ganglion, which projects to the parotid gland. Salivation in response to food in the oral cavity is based on a visceral reflex arc within the facial or glossopharyngeal nerves. Other stimuli that stimulate salivation are coordinated through the hypothalamus, such as the smell and sight of food. *(Source note: the source sends the facial nerve’s fibers for the submandibular and sublingual glands through the pterygopalatine ganglion; they synapse in the submandibular ganglion, and the pterygopalatine ganglion projects to the lacrimal gland, as the book’s Section 15.1 figure of the parasympathetic connections draws it (Muo et al., Cureus 2023, doi:10.7759/cureus.33775), so the page names both ganglia.)*
+
+The hypoglossal nerve is the motor nerve that controls the muscles of the tongue, except for the palatoglossus muscle, which is controlled by the vagus nerve. There are two sets of muscles of the tongue. The **extrinsic muscles of the tongue** are connected to other structures, whereas the **intrinsic muscles of the tongue** are completely contained within the lingual tissues. While examining the oral cavity, movement of the tongue will indicate whether hypoglossal function is impaired. The test for hypoglossal function is the “stick out your tongue” part of the exam. The genioglossus muscle is responsible for protrusion of the tongue. If the hypoglossal nerves on both sides are working properly, then the tongue will stick straight out. If the nerve on one side has a deficit, the tongue will stick out to that side—pointing to the side with damage. Loss of function of the tongue can interfere with speech and swallowing. Additionally, because the location of the hypoglossal nerve and nucleus is near the cardiovascular center, inspiratory and expiratory areas for respiration, and the vagus nuclei that regulate digestive functions, a tongue that protrudes incorrectly can suggest damage in adjacent structures that have nothing to do with controlling the tongue.
+
+{{< callout type="info" >}}
+**Interactive Link**
+
+Watch this short [video of a facial nerve examination](http://openstax.org/l/facialnerve) to see an examination of the facial nerve using some simple tests. The facial nerve controls the muscles of facial expression. Severe deficits will be obvious in watching someone use those muscles for normal control. One side of the face might not move like the other side. But directed tests, especially for contraction against resistance, require a formal testing of the muscles. The muscles of the upper and lower face need to be tested. The strength test in this video involves the patient squeezing her eyes shut and the examiner trying to pry her eyes open. Why does the examiner ask her to try a second time?
+{{< /callout >}}
+
+## Motor Nerves of the Neck
+
+The accessory nerve, also referred to as the spinal accessory nerve, innervates the sternocleidomastoid and trapezius muscles (see the figure below). When both the sternocleidomastoids contract, the head flexes forward; individually, they cause rotation to the opposite side. The trapezius can act as an antagonist, causing extension and hyperextension of the neck. These two superficial muscles are important for changing the position of the head. Both muscles also receive input from cervical spinal nerves. Along with the spinal accessory nerve, these nerves contribute to elevating the scapula and clavicle through the trapezius, which is tested by asking the patient to shrug both shoulders, and watching for asymmetry. For the sternocleidomastoid, those spinal nerves are primarily sensory projections, whereas the trapezius also has lateral insertions to the clavicle and scapula, and receives motor input from the spinal cord. Calling the nerve the spinal accessory nerve suggests that it is aiding the spinal nerves. Though that is not precisely how the name originated, it does help make the association between the function of this nerve in controlling these muscles and the role these muscles play in movements of the trunk or shoulders.
+
+{{< mediafigure src="anatomy-physiology/1610_Muscles_Controlled_by_the_Accessory_Nerve-02" kind="diagram" alt="An illustration of the left side of a person’s head and neck, the face turned toward the viewer’s left, with the skin of the neck removed. A long red muscle runs diagonally down from the bone behind the ear to the collarbone at the front of the neck, and a broad red sheet of muscle runs from the back of the skull down the back of the neck to the shoulder, with grey deeper muscles between them and the jawbone above." longdesc="Labels, as printed, from top: Mastoid process, at right, to the pale bone behind and below the ear, where the long diagonal muscle attaches; Mandible, at left, to the pale jawbone; Sternocleidomastoid, at left, to the long red muscle running diagonally down the side of the neck; Trapezius, at right, to the broad red muscle along the back of the neck that widens toward the shoulder; Clavicle, at left, to the pale bone at the base of the neck between the lower ends of the two red muscles." >}}
+The accessory nerve innervates the sternocleidomastoid and trapezius muscles, both of which attach to the head and to the trunk and shoulders. They can act as antagonists in head flexion and extension, and as synergists in lateral flexion toward the shoulder.
+{{< /mediafigure >}}
+
+To test these muscles, the patient is asked to flex and extend the neck or shrug the shoulders against resistance, testing the strength of the muscles. Lateral flexion of the neck toward the shoulder tests both at the same time. Any difference on one side versus the other would suggest damage on the weaker side. These strength tests are common for the skeletal muscles controlled by spinal nerves and are a significant component of the motor exam. Deficits associated with the accessory nerve may have an effect on orienting the head, as described with the VOR.
+
+{{< callout type="info" >}}
+**Homeostatic Imbalances.** *The Pupillary Light Response.*
+
+The autonomic control of pupillary size in response to a bright light involves the sensory input of the optic nerve and the parasympathetic motor output of the oculomotor nerve. When light hits the retina, specialized photosensitive ganglion cells send a signal along the optic nerve to the pretectal nucleus in the superior midbrain. A neuron from this nucleus projects to the Edinger–Westphal nuclei in the oculomotor complex in both sides of the midbrain. Neurons in this nucleus give rise to the preganglionic parasympathetic fibers that project through the oculomotor nerve to the ciliary ganglion in the posterior orbit. The postganglionic parasympathetic fibers from the ganglion project to the iris, where they release acetylcholine onto circular fibers that constrict the pupil to reduce the amount of light hitting the retina. The sympathetic nervous system is responsible for dilating the pupil when light levels are low.
+
+Shining light in one eye will elicit constriction of both pupils. The efferent limb of the pupillary light reflex is bilateral. Light shined in one eye causes a constriction of that pupil, as well as constriction of the contralateral pupil. Shining a penlight in the eye of a patient is a very artificial situation, as both eyes are normally exposed to the same light sources. Testing this reflex can illustrate whether the optic nerve or the oculomotor nerve is damaged. If shining the light in one eye results in no changes in pupillary size but shining light in the opposite eye elicits a normal, bilateral response, the damage is associated with the optic nerve on the nonresponsive side. If light in either eye elicits a response in only one eye, the problem is with the oculomotor system.
+
+If light in the right eye only causes the left pupil to constrict, the direct reflex is lost and the consensual reflex is intact, which means that the right oculomotor nerve (or Edinger–Westphal nucleus) is damaged. Damage to the right oculomotor connections will be evident when light is shined in the left eye. In that case, the direct reflex is intact but the consensual reflex is lost, meaning that the left pupil will constrict while the right does not.
+{{< /callout >}}
+
+## Summary
+
+- The cranial nerves can be separated into four major groups associated with the subtests of the cranial nerve exam. First are the sensory nerves, then the nerves that control eye movement, the nerves of the oral cavity and superior pharynx, and the nerve that controls movements of the neck.
+- The olfactory, optic, and vestibulocochlear nerves are strictly sensory nerves for smell, sight, and balance and hearing, whereas the trigeminal, facial, and glossopharyngeal nerves carry somatosensation of the face, and taste—separated between the anterior two-thirds of the tongue and the posterior one-third. Special senses are tested by presenting the particular stimuli to each receptive organ. General senses can be tested through sensory discrimination of touch versus painful stimuli.
+- The oculomotor, trochlear, and abducens nerves control the extraocular muscles and are connected by the medial longitudinal fasciculus to coordinate gaze. Testing conjugate gaze is as simple as having the patient follow a visual target, like a pen tip, through the visual field ending with an approach toward the face to test convergence and accommodation. Along with the vestibular functions of the eighth nerve, the vestibulo-ocular reflex stabilizes gaze during head movements by coordinating equilibrium sensations with the eye movement systems.
+- The trigeminal nerve controls the muscles of chewing, which are tested for stretch reflexes. Motor functions of the facial nerve are usually obvious if facial expressions are compromised, but can be tested by having the patient raise their eyebrows, smile, and frown. Movements of the tongue, soft palate, or superior pharynx can be observed directly while the patient swallows, while the gag reflex is elicited, or while the patient says repetitive consonant sounds. The motor control of the gag reflex is largely controlled by fibers in the vagus nerve and constitutes a test of that nerve because the parasympathetic functions of that nerve are involved in visceral regulation, such as regulating the heartbeat and digestion.
+- Movement of the head and neck using the sternocleidomastoid and trapezius muscles is controlled by the accessory nerve. Flexing of the neck and strength testing of those muscles reviews the function of that nerve.
+
+## Key terms
+
+- **accommodation** — in vision, a change in the ability of the eye to focus on objects at different distances.
+- **accommodation–convergence reflex** — coordination of somatic control of the medial rectus muscles of either eye with the parasympathetic control of the ciliary bodies to maintain focus while the eyes converge on visual stimuli near to the face.
+- **conductive hearing** — hearing dependent on the conduction of vibrations of the tympanic membrane through the ossicles of the middle ear.
+- **conjugate gaze** — coordinated movement of the two eyes simultaneously in the same direction.
+- **convergence** — in vision, the movement of the eyes so that they are both pointed at the same point in space, which increases for stimuli that are closer to the subject.
+- **diplopia** — double vision resulting from a failure in conjugate gaze.
+- **extrinsic muscles of the tongue** — muscles that are connected to other structures, such as the hyoid bone or the mandible, and control the position of the tongue.
+- **fauces** — opening from the oral cavity into the pharynx.
+- **internuclear ophthalmoplegia** — deficit of conjugate lateral gaze because the medial rectus muscle of one eye does not contract, resulting from damage to the MLF.
+- **intorsion** — medial rotation of the eye around its axis.
+- **intrinsic muscles of the tongue** — muscles that originate out of, and insert into, other tissues within the tongue and control the shape of the tongue.
+- **jaw-jerk reflex** — stretch reflex of the masseter muscle.
+- **medial longitudinal fasciculus (MLF)** — fiber pathway that connects structures involved in the control of eye and head position, from the superior colliculus to the vestibular nuclei and cerebellum.
+- **paramedian pontine reticular formation (PPRF)** — region of the brain stem adjacent to the motor nuclei for gaze control that coordinates rapid, conjugate eye movements.
+- **Rinne test** — use of a tuning fork to test conductive hearing loss versus sensorineural hearing loss.
+- **saccade** — small, rapid movement of the eyes used to locate and direct the fovea onto visual stimuli.
+- **sensorineural hearing** — hearing dependent on the transduction and propagation of auditory information through the neural components of the peripheral auditory structures.
+- **Snellen chart** — standardized arrangement of letters in decreasing size presented to a subject at a distance of 20 feet to test visual acuity.
+- **vestibulo-ocular reflex (VOR)** — reflex based on connections between the vestibular system and the cranial nerves of eye movements that ensures that images are stabilized on the retina as the head and body move.
+- **Weber test** — use of a tuning fork to test the laterality of hearing loss by placing it at several locations on the midline of the skull.
+
+## Practice
+
+### Describe the functional grouping of cranial nerves
+
+{{< multiplechoice
+  question="Which of the following cranial nerves is *not* part of the VOR?"
+  answer="optic"
+  hint="Check each nerve against the paragraph on the vestibulo-ocular reflex at the end of the Gaze Control section and the reflex diagram that follows it."
+>}}
+optic
+oculomotor
+abducens
+vestibulocochlear
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which nerve is responsible for controlling the muscles that result in the gag reflex?"
+  answer="vagus"
+  hint="Look in the second paragraph of the Nerves of the Face and Oral Cavity section."
+>}}
+trigeminal
+facial
+glossopharyngeal
+vagus
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which nerve is responsible for taste, as well as salivation, in the anterior oral cavity?"
+  answer="facial"
+  hint="Look in the paragraphs on taste and on salivation in the Nerves of the Face and Oral Cavity section."
+>}}
+facial
+glossopharyngeal
+vagus
+hypoglossal
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which of the following nerves controls movements of the neck?"
+  answer="spinal accessory"
+  hint="Look in the first paragraph of the last section of the body."
+>}}
+oculomotor
+vestibulocochlear
+spinal accessory
+hypoglossal
+{{< /multiplechoice >}}
+
+### Match the regions of the forebrain and brain stem that are connected to each cranial nerve
+
+{{< textin
+  question="The region of the brain stem adjacent to the motor nuclei for gaze control that coordinates rapid, conjugate eye movements is the ________."
+  answer="paramedian pontine reticular formation"
+  accept="PPRF"
+  hint="Look in the second paragraph of the Gaze Control section."
+>}}
+
+{{< textin
+  question="The ________ processes proprioceptive information of the face, which is the movement and position of facial muscles."
+  answer="mesencephalic nucleus"
+  accept="mesencephalic|mesencephalic nuclei"
+  hint="Look in the paragraph on the trigeminal system near the end of the Sensory Nerves section."
+>}}
+
+{{< textin
+  question="In the midbrain, the ________ integrates visual stimuli with motor responses to initiate eye movements."
+  answer="superior colliculus"
+  accept="superior colliculi"
+  hint="Look at the start of the second paragraph of the Gaze Control section."
+>}}
+
+{{< selfcheck
+  question="When a patient flexes their neck, the head tips to the right side. Also, their tongue sticks out slightly to the left when they try to stick it straight out. Where is the damage to the brain stem most likely located?"
+  hint="Reread the paragraph on the tongue in the Nerves of the Face and Oral Cavity section and the first paragraph of the Motor Nerves of the Neck section."
+>}}
+The medulla is where the accessory nerve, which controls the sternocleidomastoid muscle, and the hypoglossal nerve, which controls the genioglossus muscle, are both located. The weakness of the left side of the neck, and the tendency of the tongue to point to that side, both show that the damage is on the left side of the brain stem.
+===CHECKS===
+The medulla is where the accessory nerve and the hypoglossal nerve are both located
+the accessory nerve, which controls the sternocleidomastoid muscle
+the hypoglossal nerve, which controls the genioglossus muscle
+the damage is on the left side of the brain stem
+{{< /selfcheck >}}
+
+### Suggest diagnoses that would explain certain losses of function in the cranial nerves
+
+{{< textin
+  question="Double vision resulting from a failure in conjugate gaze is called ________."
+  answer="diplopia"
+  hint="Look in the paragraph on testing eye movement, just after the figure of saccadic eye movements."
+>}}
+
+{{< textin
+  question="A deficit of conjugate lateral gaze because the medial rectus muscle of one eye does not contract, resulting from damage to the MLF, is called ________."
+  answer="internuclear ophthalmoplegia"
+  hint="Look in the paragraph on testing eye movement, just after the figure of saccadic eye movements."
+>}}
+
+{{< multiplechoice
+  question="Without olfactory sensation to complement gustatory stimuli, food will taste bland unless it is seasoned with which substance?"
+  answer="salt"
+  hint="Look in the third paragraph of the Sensory Nerves section."
+>}}
+salt
+thyme
+garlic
+olive oil
+{{< /multiplechoice >}}
+
+{{< selfcheck
+  question="As a person ages, their ability to focus on near objects (accommodation) changes. If a person is already myopic (near-sighted), why would corrective lenses not be necessary to read a book or computer screen?"
+  hint="Reread the paragraph on moving the pen toward the patient’s face in the Gaze Control section."
+>}}
+If the person already has problems focusing on far objects, and wears corrective lenses to see farther objects, then as accommodation changes, focusing on a reading surface might still be in their naturally near-sighted range.
+===CHECKS===
+the person already has problems focusing on far objects
+wears corrective lenses to see farther objects
+as accommodation changes, focusing on a reading surface might still be in their naturally near-sighted range
+{{< /selfcheck >}}
+
+### Relate cranial nerve deficits to damage of adjacent, unrelated structures
+
+{{< textin
+  question="Because the location of the hypoglossal nerve and nucleus is near the ________ center, inspiratory and expiratory areas for respiration, and the vagus nuclei that regulate digestive functions, a tongue that protrudes incorrectly can suggest damage in adjacent structures that have nothing to do with controlling the tongue."
+  answer="cardiovascular"
+  accept="cardiovascular center|cardiovascular centre"
+  hint="Look in the last sentence of the paragraph on the muscles of the tongue."
+>}}
+
+{{< textin
+  question="If a patient cannot recognize a painful stimulus, that might indicate damage to the ________ in the medulla."
+  answer="spinal trigeminal nucleus"
+  accept="spinal trigeminal|spinal trigeminal nuclei"
+  hint="Look near the end of the last paragraph of the Sensory Nerves section."
+>}}
+
+{{< textin
+  question="Damage, such as a stroke, that results in changes in ________ may indicate that unrelated regions of the medulla are affected as well."
+  answer="sensory discrimination"
+  hint="Look in the last sentence of the Sensory Nerves section."
+>}}
+
+---
+
+<small>This section is adapted from [Anatomy and Physiology 2e, Section 16.3: The Cranial Nerve Exam](https://openstax.org/books/anatomy-and-physiology-2e/pages/16-3-the-cranial-nerve-exam) by J. Gordon Betts, Peter Desaix, Eddie Johnson, Jody E. Johnson, Oksana Korol, Dean Kruse, Brandon Poe, James A. Wise, Mark Womble, Kelly A. Young, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/anatomy-and-physiology-2e). Changes: figures re-encoded as WebP; all 5 figures set to “diagram” from the image rather than the media manifest’s file-type “photo” guess, since each is a drawing or a printed chart; every alt rewritten from the image: the Snellen chart’s “a chart that is used for eye exams” now gives its eleven rows and the acuity column; the pituitary figure’s “top view of the brain”, where the left panel is a frontal section through the head; the saccade figure’s “left panel” and “right panel”, where the image is a single drawing with the gaze paths traced over it; the vestibulo-ocular reflex figure’s one-line summary; and the neck figure’s “with the different muscles labeled”, which named no label; a longdesc added to 3 figures (the pituitary, vestibulo-ocular reflex, and neck figures) listing every printed label and where its leader ends; the 5 in-text figure cross-references are reworded as “see the figure below” or “the figure below”, since Hugo does not number figures; the module’s 2 feature boxes are rendered as callouts: the Pupillary Light Response box headed Homeostatic Imbalances, transcribed in full, and 1 Interactive Link note whose bare “video” link is given descriptive text; the section has 1 Interactive Link Question, identical to its note, and it is not graded: it stands as a prompt in its callout, since the module never names the orbicularis oculi nor says why the examiner asks for a second try, so 0 are graded self-checks; the source’s summary section is the Summary, its five paragraphs as five bullets; the module’s glossary of 20 terms is the Key terms block; the module has no tables, no footnotes, and no References section; the 5 end-of-section Review Questions and 2 Critical Thinking Questions are adapted into the Practice block as 5 multiple choice (source options, option order, and keys kept) and 2 self-checks (the source solution as the model answer, with rubric checkpoints that decompose it with no new claims), placed by objective: the second to fifth Review Questions, on the VOR, the gag reflex, taste and salivation, and the neck, under the first objective; the second Critical Thinking Question, on locating the brain stem damage, under the second; the first Review Question, on seasoning food without smell, and the first Critical Thinking Question, on a myopic reader, under the third; so the first Review Question comes after the other four, and the second Critical Thinking Question comes before the first; 8 author-written items are added: 3 key-term recall items from the glossary (paramedian pontine reticular formation, with “PPRF” also accepted; diplopia; internuclear ophthalmoplegia) and 5 body clozes: mesencephalic nucleus, with “mesencephalic” and “mesencephalic nuclei” also accepted (“The mesencephalic nucleus processes proprioceptive information of the face, which is the movement and position of facial muscles”), superior colliculus, with “superior colliculi” also accepted (“In the midbrain, the superior colliculus integrates visual stimuli with motor responses to initiate eye movements”), cardiovascular, with “cardiovascular center” and “cardiovascular centre” also accepted (“Additionally, because the location of the hypoglossal nerve and nucleus is near the cardiovascular center, inspiratory and expiratory areas for respiration, and the vagus nuclei that regulate digestive functions, a tongue that protrudes incorrectly can suggest damage in adjacent structures that have nothing to do with controlling the tongue”, without the opening “Additionally”), spinal trigeminal nucleus, with “spinal trigeminal” and “spinal trigeminal nuclei” also accepted (“If a patient cannot recognize a painful stimulus, that might indicate damage to the spinal trigeminal nucleus in the medulla”), and sensory discrimination (“Damage, such as a stroke, that results in changes in sensory discrimination may indicate these unrelated regions are affected as well”, with “these unrelated regions” given the referent “that unrelated regions of the medulla”); each recall item and cloze comes before the multiple choice and self-checks of its group, and no item above it, including across a group heading, prints its key, the key’s root, or its plural in a stem, option, or hint; the other 17 glossary terms are Key terms bullets only, among them accommodation, which the first Critical Thinking Question’s stem prints, vestibulo-ocular reflex, which the second Review Question’s stem prints as VOR, conjugate gaze, which the diplopia and internuclear ophthalmoplegia stems print, and medial longitudinal fasciculus, which the internuclear ophthalmoplegia stem prints as MLF; the Practice block holds 15 items, 4 under each of the first three objectives and 3 under the fourth, 13 of them auto-graded; no one-word corrections. Three corrected claims carry a visible inline Source note. The abducens nucleus is placed in the pons rather than the superior medulla, as the section’s own figure of the vestibulo-ocular reflex labels it. Internuclear ophthalmoplegia is defined, in the body, in the Key terms entry, and in the recall item built from that entry, as the failure of one eye to adduct while the other abducts, from damage to the MLF, rather than as a failure of the lateral rectus to abduct from damage to the abducens nerve or the MLF. The parasympathetic fibers of the facial nerve are given as synapsing in the submandibular ganglion for the submandibular and sublingual glands and in the pterygopalatine ganglion for the lacrimal gland, rather than in the pterygopalatine ganglion for the two salivary glands, as the book’s Section 15.1 draws them The pituitary figure’s two “Optic nerve” labels are transcribed as printed and marked in the longdesc, since each leader ends on the optic chiasm that the caption and text name.</small>

@@ -119,6 +119,9 @@ export const MATCH_FLOOR = 0.5;
  * reformattings the life-sciences playbook allows score ≥ 0.8; a model answer that
  * brings its own claims falls well under. */
 export const MODEL_COVERAGE_FLOOR = 0.7;
+/** A source solution of this many words or fewer is a key, not a model answer (see judgeSelfcheck). */
+export const SHORT_SOLUTION_WORDS = 4;
+const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s+/).filter(Boolean).length;
 
 /**
  * Keys the page deliberately changes from the pinned source, each backed by a
@@ -129,6 +132,27 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  * sortbins bins an item against the source table (exercise = the table id).
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/05-the-coordination-and-gait-exams.md',
+    exercise: 'fs-id1481522',
+    kind: 'key',
+    erratum: 2316,
+    reason: 'the keyed option "processing visual information" (what cannot be attributed to the cerebellum) is attributed to the cerebellum by the module itself ("Visual cortex information is also part of the processing that occurs in the cerebrocerebellum", fs-id1335742); the page prints the keyed option as "primary visual perception", the cortical function (key D and option order unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/04-drugs-that-affect-the-autonomic-system.md',
+    exercise: 'fs-id1632365',
+    kind: 'options',
+    erratum: 2286,
+    reason: 'the source distractor "anticholinergic drug" is also correct by the module (Table 15.2 gives anticholinergics "Increase sympathetic tone"; the body says sympathetic action dilates the bronchioles) and in practice (inhaled muscarinic antagonists are bronchodilators); the page replaces it with the module term "nicotinic agonist" (Table 15.2: conflicting signals cancel); key B "sympathomimetic drug" unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/01-divisions-of-the-autonomic-nervous-system.md',
+    exercise: 'fs-id2766993',
+    kind: 'key',
+    erratum: 2285,
+    reason: 'the source option "intermural ganglion" misspells the module\'s own term "intramural ganglia" (fs-id2754854); the page prints the option as "intramural ganglion" (key A unchanged)',
+  },
   {
     page: 'content/life-health-sciences/anatomy-physiology/11-the-muscular-system/01-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems.md',
     exercise: 'fs-id2761928',
@@ -835,6 +859,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 2093,
     reason: 'the source distractor "soleus" is defensible as an answer to "What is the largest muscle in the lower leg?" — the module m46482 never says which leg muscle is largest (fs-id2421915 calls the gastrocnemius only "The most superficial and visible muscle of the calf"), and by volume the soleus is larger; the page prints "popliteus" in its place (one of the "four deep muscles in the posterior compartment of the leg" fs-id2421915 names, never called large; key "gastrocnemius" unchanged)',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/08-gonadal-and-placental-hormones.md',
+    exercise: 'fs-id1399907',
+    kind: 'options',
+    erratum: 2344,
+    reason: 'the source distractor "peptide hormones" is a second correct answer to "The gonads produce what class of hormones?" — the module m46670\'s own fs-id1423637 says "the testes produce the peptide hormone inhibin"; the page prints "glycoprotein hormones" in its place (a class m46667 names, given to no gonadal hormone in this book); key "steroid hormones" unchanged',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -1302,8 +1333,17 @@ export function judgeSelfcheck(item, source) {
   // sample answer ("Responses will vary. A possible answer is …") is still
   // compared.
   if (OPEN_ANSWER_RE.test(normalizeWhitespace(exercise.solution))) return { status: 'unkeyed', exercise };
+  // A short source solution — an Interactive Link key such as "Cortisol." —
+  // cannot carry the 2–6 rubric checkpoints a life-sciences selfcheck needs,
+  // so the page's model answer wraps it in one sentence that restates the
+  // question. Measuring that sentence by how many of ITS words come from the
+  // solution fails every such item; the whole key being present is the test.
   const coverage = phraseCoverage(item.model, exercise.solution);
   if (coverage >= 0.95) return { status: 'verbatim', exercise, coverage };
+  if (shortSolutionWords(exercise.solution) <= SHORT_SOLUTION_WORDS
+    && phraseCoverage(exercise.solution, item.model) >= 0.95) {
+    return { status: 'reworded', exercise, coverage, detail: 'short source solution carried whole in the model answer' };
+  }
   if (coverage >= MODEL_COVERAGE_FLOOR) return { status: 'reworded', exercise, coverage };
   return {
     status: 'diverges',

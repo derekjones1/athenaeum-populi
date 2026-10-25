@@ -309,6 +309,14 @@
     "result": "agrees"
    }
   },
+  "00a09ab3e419cff0": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2152546: 'through frontal lobe inputs' ; hint fixed to third sentence",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "00a43ced941793b3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -427,6 +435,14 @@
   "00f51b2bb2947ec1": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "00f7148b69cbbfbf": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2292530: 'Diseases that result in UMN lesions include cerebral palsy or MS, or it may be the result of a stroke.' key stroke printed in body only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "00fe62b6356c07dd": {
    "verdict": "ok",
@@ -731,6 +747,10 @@
     "result": "agrees"
    }
   },
+  "017e120177275a3d": {
+   "verdict": "ok",
+   "note": "fs-id1409033 solution verbatim; fs-id1592604 dermatomes"
+  },
   "017f59e089bc1072": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -780,6 +800,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-B",
+    "result": "agrees"
+   }
+  },
+  "019a964433531d13": {
+   "verdict": "ok",
+   "note": "RQ fs-id1932618 key A '0'; body fs-id1953873 'The posterior pituitary gland does not produce hormones'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -1388,6 +1416,14 @@
     "result": "agrees"
    }
   },
+  "02f70994bbe3d456": {
+   "verdict": "ok",
+   "note": "RQ fs-id1643874 key D 'increased stomach motility'; fs-id2724048 'The digestive system shuts down'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "02f8eee9671564d2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -1399,6 +1435,14 @@
   "02f9478cf508feb1": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "02fed5ea704b2554": {
+   "verdict": "ok",
+   "note": "fs-id1493090 key A; fs-id2199319 route: deep white matter of the cerebrum, midbrain, pons, medulla, lateral column — cerebellum not in it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "03057c8362f67bc7": {
    "verdict": "ok",
@@ -1532,6 +1576,14 @@
     "result": "agrees"
    }
   },
+  "03314920df2ac56e": {
+   "verdict": "ok",
+   "note": "RQ fs-id2094567 key A salt",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "033385aefc0ee647": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1639,6 +1691,14 @@
     "result": "agrees"
    }
   },
+  "036971f36f6ef6eb": {
+   "verdict": "ok",
+   "note": "Review fs-id1376839 key A chromaffin cells; body fs-id1375277",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "036a9b6131c0ec5d": {
    "verdict": "ok",
    "note": "summary cloze, m46375 fs-id1977414: 'The pelvis has a pronounced anterior tilt.'; body fs-id1907417 prints 'anterior tilt'",
@@ -1695,9 +1755,25 @@
     "result": "agrees"
    }
   },
+  "03849b9458bea189": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2242058 sentence 1",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "038d8e67a728437c": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "0390dc90a060c8b9": {
+   "verdict": "ok",
+   "note": "RQ fs-id2593908 key B 'nerve axons'; options/order verbatim; body fs-id1953873/eip-118 axons descend as hypothalamic–hypophyseal tract",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "0391b6b5c9ec565d": {
    "verdict": "ok",
@@ -2309,6 +2385,14 @@
     "result": "agrees"
    }
   },
+  "0507c0e9cee41361": {
+   "verdict": "ok",
+   "note": "glossary recall chromaffin cells; body fs-id2871600 prints the term; stem = glossary meaning",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "050b49614c305f52": {
    "verdict": "ok",
    "note": "Critical Thinking Question 2 (m66521 exercise fs-idm59561840); model answer transcribes the CNXML <solution> verbatim; checked against the Reconnection paragraph on fit-or-more-fit hybrids fusing the two species. Printed PDF p.489 Q25 confirms wording. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -2375,6 +2459,10 @@
   },
   "05276cea84066da3": {
    "verdict": "ok"
+  },
+  "052b17fab57ae129": {
+   "verdict": "ok",
+   "note": "source CT fs-id1358220; model answer = source solution verbatim; checks are its clauses"
   },
   "053066168f142b8d": {
    "verdict": "ok",
@@ -2453,6 +2541,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "0544fcdc157d1f3f": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2372679: 'They primarily work as an antagonist to the adrenergic receptors.' referent 'Sympatholytic drugs' from the preceding sentence",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -3120,6 +3216,14 @@
     "result": "agrees"
    }
   },
+  "06e5d5c1a5c4c2e0": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1641247: 'the central and peripheral structures associated with them' — key peripheral, re-read against CNXML",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "06ea6e05f04308f2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3669,6 +3773,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "082ce02878be8717": {
+   "verdict": "ok",
+   "note": "CT fs-id2571630, stem verbatim; model answer = solution fs-id2512188 verbatim"
   },
   "082de53265442eac": {
    "verdict": "ok",
@@ -4377,6 +4485,14 @@
     "note": "module: \"The undigested food material enters the colon, where most of the water is reabsorbed\" — key stands"
    }
   },
+  "09d17c6f2b0d6c4f": {
+   "verdict": "ok",
+   "note": "fs-id1382723 key A; body: hPL 'plays a role in preparing the breasts for lactation'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "09d22ece8c7411fb": {
    "verdict": "ok",
    "note": "author-built from § Transfer RNAs, Check Your Understanding: \"In what direction is the mRNA template read?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -4439,6 +4555,14 @@
   "09f7d3ebc751a428": {
    "verdict": "ok",
    "note": "RQ2 fs-id2761928 key A a synergist re-read vs CNXML; option b a fixator replaced by a load per parent ruling (options deviation, Source note); a load does not help the agonist (fs-id1702969)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "09fa13ab7bdbf5e3": {
+   "verdict": "ok",
+   "note": "cloze enteric from fs-id2101505",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -5758,6 +5882,14 @@
     "result": "agrees"
    }
   },
+  "0d1274a36b7628cb": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2685156: 'Nicotine is not a drug that is used therapeutically, except for smoking cessation.' ; accept 'cessation of smoking'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0d14698675f14237": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6063,6 +6195,14 @@
     "result": "agrees"
    }
   },
+  "0dbcef6de19ae1ea": {
+   "verdict": "ok",
+   "note": "glossary recall: exogenous chemical (m46587 glossary); body fs-id2144392 bolds it ; accept exogenous",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0dc9e49700502fdb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6195,6 +6335,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0e15d32dd5a61162": {
+   "verdict": "ok",
+   "note": "fs-id2051709 key B; fs-id2623052 partial loss of voluntary muscle control is paresis",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -6536,6 +6684,14 @@
     "result": "agrees"
    }
   },
+  "0ed7c38abe5dfa36": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1356782 edema ; accept oedema",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0ed95e05ba2db684": {
    "verdict": "ok",
    "note": "Review Question fs-id2709296, source options/order kept, key D = 'uracil' matches the section's own text (DNA has thymine, not uracil; only RNA has uracil). | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -6612,6 +6768,14 @@
     "result": "agrees"
    }
   },
+  "0f025363b9a1f19a": {
+   "verdict": "ok",
+   "note": "Body fs-id1515603: A hormone’s half-life is the time required for half the concentration of the hormone to be degraded.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0f04a759d4cc4ba8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -6623,6 +6787,14 @@
   "0f08fc2242a2bf35": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0f0bcd0f9b046ba6": {
+   "verdict": "ok",
+   "note": "RQ fs-id2225878, key D cardiac accelerator nerve; body fs-id2979548 last sentence",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -6651,6 +6823,10 @@
     "by": "fable-solver-A",
     "result": "agrees"
    }
+  },
+  "0f17d92fbea3535d": {
+   "verdict": "ok",
+   "note": "Critical Thinking model answer verbatim from the CNXML solution (fs-id1485631); rubric clauses copied from it."
   },
   "0f191ef35a53c580": {
    "verdict": "ok",
@@ -6929,6 +7105,14 @@
   "0fbae7776dfe7526": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "0fc41e9db81e76d6": {
+   "verdict": "ok",
+   "note": "RQ fs-id2302721 key C spinal accessory",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -7355,6 +7539,14 @@
   "10db807a6bb0ce67": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "10df1fa3b0dff24e": {
+   "verdict": "ok",
+   "note": "source fs-id2602113 key A language; fs-id2595084 language deficits point to the left cerebral cortex ; moved to obj 2 group, ahead of Review 5",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -8307,6 +8499,14 @@
     "result": "agrees"
    }
   },
+  "13285aa24e503874": {
+   "verdict": "ok",
+   "note": "RQ fs-id1120911 key B 'antidiuretic hormone'; body fs-id1715012 ADH increases water reabsorption, reducing solute concentration",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1331603a2c41bdc2": {
    "verdict": "ok",
    "note": "source exercise fs-idm147867984 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -8553,6 +8753,14 @@
   "13c2d05513461fd2": {
    "verdict": "ok",
    "note": "Point (-4,2) matches the answer JSON and checkGraphPlot grades it correct; matches the original multiplechoice's coordinates exactly. | carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "13c4b30668640bd6": {
+   "verdict": "ok",
+   "note": "Body cloze, m46687 fs-id1372354: 'The function of one type of parathyroid cells, the oxyphil cells, is not clear.' Chief cells' function is stated, so only oxyphil fits.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "13c5187deb98a337": {
    "verdict": "ok",
@@ -9100,6 +9308,14 @@
     "result": "agrees"
    }
   },
+  "14c41858dafbb4a2": {
+   "verdict": "ok",
+   "note": "author MC from table tbl-ch18_04 Calcitonin row Peptide",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "14c4e4d24ade6a3e": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"They have a glycerol or sphingosine backbone to which two fatty acid chains and a phosphate-containing group are attached.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -9295,6 +9511,14 @@
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1539ba5db5738e96": {
+   "verdict": "ok",
+   "note": "glossary recall: endogenous chemical (m46587 glossary); body fs-id2144392 bolds it ; accept endogenous (15.1 glosses the adjective)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -10263,6 +10487,14 @@
     "result": "agrees"
    }
   },
+  "175475601dd1ecfb": {
+   "verdict": "ok",
+   "note": "fs-id1394735 key D inhibin; body: inhibin 'inhibits the secretion of FSH from the anterior pituitary gland'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1755853a740126f1": {
    "verdict": "ok",
    "note": "glossary recall: Anthophyta (fs-idm105471168) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -10401,6 +10633,14 @@
    "verdict": "ok",
    "note": "KC 8 45.5 § body Long-Term Consequences of Exponential Human Population Growth (fs-idm270377024), m66696 — parent re-read against the module"
   },
+  "178cf8a39afc0317": {
+   "verdict": "ok",
+   "note": "RQ fs-id1637999 key A facial",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "178dbf3c7f12cc11": {
    "verdict": "ok",
    "note": "glossary recall sciatic nerve fs-id1531254; body fs-id1472046; sciatica graded incorrect.",
@@ -10535,6 +10775,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "17e68a0068133357": {
+   "verdict": "ok",
+   "note": "fs-id1339977 solution fs-id1260896 verbatim; two full-clause checkpoints"
   },
   "17ec25ba3018d4b9": {
    "verdict": "ok",
@@ -11268,6 +11512,14 @@
     "note": "accept gap: the module names the form \"Emsleyan/Mertensian mimicry\" and a learner who types either half is right; accept widened"
    }
   },
+  "1998fe1ec4b407d5": {
+   "verdict": "ok",
+   "note": "summary cloze, fs-id2123442 last sentence; key 'nucleus ambiguus' verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "199dfcdbcd8c1fd4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -11307,6 +11559,10 @@
   "19b69f50ec426cb3": {
    "verdict": "ok",
    "note": "Microbiology 3.3 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the labeled prokaryotic cutaway earlier in the section and this figure's alt and longdesc)"
+  },
+  "19b7a7feefd380d1": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; rubric clauses copied from it; re-read against CNXML (A patient’s performance of the majority of the men)"
   },
   "19b9f6f78c99dd4d": {
    "verdict": "ok",
@@ -11724,6 +11980,14 @@
   "1a8ec4be3dc8819b": {
    "verdict": "ok",
    "note": "Glossary recall fs-id1233775 histology; body fs-id1524079 prints it.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1a8ecc2382d72153": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1410292 \"FSH also promotes egg maturation and LH signals the secretion of the sex hormones\"; body prints LH (fs-id1217142); accept luteinizing/luteinising hormone grader-checked",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -12685,6 +12949,14 @@
     "result": "agrees"
    }
   },
+  "1cae0b3796a2b8c7": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1752975 'a gradual decline in cellular insulin sensitivity'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1caeaf2129755333": {
    "verdict": "ok",
    "note": "summary cloze fs-id1692399: The calli eventually unite, remodeling occurs; accept adds bone remodeling/remodelling (6.3, 6.6 print bone remodeling)",
@@ -12928,6 +13200,14 @@
   "1d35cc469593f569": {
    "verdict": "ok",
    "note": "KC 3 16.2 § The trp Operon: A Repressible Operon, m66504 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
+  },
+  "1d391a7fb2a3875b": {
+   "verdict": "ok",
+   "note": "body cloze, Skin fs-id1400782: 'When cholesterol present in the epidermis is exposed to ultraviolet radiation, it is converted to cholecalciferol'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "1d393659ad9a563f": {
    "verdict": "ok",
@@ -13490,6 +13770,14 @@
   "1ea85091cc354663": {
    "verdict": "ok",
    "note": "KC 2 9.1 § glossary chemical synapse (fs-id1482664), m66378 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1ea8f0d32bd4c1de": {
+   "verdict": "ok",
+   "note": "author MC from fs-id555341 opening sentence; distractors module products",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -14219,6 +14507,14 @@
     "result": "agrees"
    }
   },
+  "20259bfb252d0885": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (precentral)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2025ba1e55a25823": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
@@ -14587,6 +14883,14 @@
    "verdict": "ok",
    "note": "source SA fs-id1167662758072, hint REWORDED (checker defects 3-4: the prior hint 'Compare how extracellular lipases/phospholipases and extracellular proteases each act...' printed both the textin key 'phospholipases' [was 2c, since replaced] and the source MC key 'extracellular protease'). New hint: 'Compare how the lipid-degrading and protein-degrading enzymes each act on a macromolecule outside the cell before smaller products are taken up.' Model answer and CHECKS unchanged (module-supported). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "21017367756d032e": {
+   "verdict": "ok",
+   "note": "Glossary fs-id1471246; body fs-id1531254.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "210d469ea9940f58": {
    "verdict": "ok",
    "note": "Review fs-id1509790, source key A (fs-id1486348); body fs-id1319983 basal elongated nucleus, tall column-like cells",
@@ -14893,12 +15197,28 @@
     "result": "agrees"
    }
   },
+  "21c484c784218d0d": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2199319; accept pre-central gyrus, precentral gyri, primary motor cortex (next sentence of fs-id2199319 names the same region)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "21c6f63ee04000a3": {
    "verdict": "ok"
   },
   "21c8e4205614f51f": {
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Which conic section is represented by $x^2-10x+4y-10=0$? | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "21d1a3feb7997a65": {
+   "verdict": "ok",
+   "note": "table tbl-ch18_08 rows: Kidneys Renin/Erythropoietin; Liver IGF-1/Angiotensinogen/Thrombopoietin/Hepcidin; GI Secretin, cholecystokinin, GLP-1; Skeleton FGF23/Osteocalcin; each name in exactly one row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "21d2412e8ec72e3f": {
    "verdict": "ok",
@@ -15303,6 +15623,14 @@
     "result": "agrees"
    }
   },
+  "22ed2fe0f70dbda3": {
+   "verdict": "ok",
+   "note": "source stem, options, option order, and key letter re-read against the raw CNXML (your last birthday party)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "22fa6db4d0eb1810": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Determine whether the vectors $\\mathbf{u}$ and $\\mathbf{v}$ )"
@@ -15318,6 +15646,14 @@
   "2305132f86390381": {
    "verdict": "ok",
    "note": "Body VC selfcheck (fig-ch33_03_04 / exercise fs-idp77964000, pyrogen): model answer is the source solution verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "23085df8cf6d8269": {
+   "verdict": "ok",
+   "note": "cloze adrenergic from fs-id2525262, referent added; accept adrenergic receptor|α-adrenergic|alpha-adrenergic",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "23152123e29bf5fe": {
    "verdict": "ok"
@@ -15667,6 +16003,14 @@
   "23f423034e794498": {
    "verdict": "ok"
   },
+  "23f6c34f9407ea5f": {
+   "verdict": "ok",
+   "note": "tbl-ch18_01 rows Primary chemical signal, Distance traveled, Response time; each item true of one column only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "23fb12fb247bc85e": {
    "verdict": "ok",
    "note": "Domain of log(x-5)+2: solve x-5>0 -> x>5 -> (5,inf). Matches CNXML ti_04_04_02 solution. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -15942,6 +16286,14 @@
     "result": "agrees"
    }
   },
+  "24afcd6ab4ded608": {
+   "verdict": "ok",
+   "note": "body cloze fs-id555341 + list fs-id842681 item 2, It given referent (calcitonin = parafollicular hormone, fs-id555341)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "24b10f5e94315b44": {
    "verdict": "ok",
    "note": "KC 5 22.3 § SARS and MERS, m58914",
@@ -16038,6 +16390,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): tan^2x-sqrt3 tan x=0 -> tan x(tan x-sqrt3)=0 -> tan x=0 (0,pi) or tan x=sqrt3 (pi/3,4pi/3); union sorted matches source key.",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "24e70953f3fd7044": {
+   "verdict": "ok",
+   "note": "fs-id2528969 key D; fs-id2242057 Romberg test concentrates on proprioception",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -16191,6 +16551,14 @@
   },
   "253e7dbf4023a6d9": {
    "verdict": "ok"
+  },
+  "25409a052ab9ea8b": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1632365, key B; fs-id2242184 phenylephrine, a sympathomimetic, dilates bronchioles ; distractor 'anticholinergic drug' replaced by 'nicotinic agonist' (options deviation, erratum 2286): Table 15.2 gives anticholinergics 'Increase sympathetic tone', making the source option a second key ; hint re-pointed at the Source note in fs-id2242184 (claim F8), which states that bronchodilation is a beta2 effect of sympathomimetic beta2 agonists used in asthma",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2541cfb5faf878cf": {
    "verdict": "ok",
@@ -17138,6 +17506,14 @@
     "result": "agrees"
    }
   },
+  "275b558c967edcb6": {
+   "verdict": "ok",
+   "note": "RQ fs-id1085968 key C 'TSH'; body fs-id2092251 lists TSH among anterior pituitary hormones; ADH/oxytocin posterior, cortisol adrenal",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "275e6a62145ffab1": {
    "verdict": "ok"
   },
@@ -17420,6 +17796,14 @@
    "verdict": "ok",
    "note": "model answer = source solution verbatim; checks are its clauses"
   },
+  "27f9a00c2cb0919f": {
+   "verdict": "ok",
+   "note": "body fs-id1388310 sentence prints 'gonadotropins'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "27fe47fb65c489ef": {
    "verdict": "ok",
    "note": "EA 10.5 Practice graphplot, replaced in the September 28, 2026 re-review (the old y=x^2+4x+3 was drawn three times in the body). Source exercise m82559 (CNXML: y=-x^2-4x+2; solution y-int (0,2), x-ints (-4.4,0),(0.4,0), axis x=-2, vertex (-2,6)). Re-derived: a=-1<0 opens down; axis x=-b/2a=-(-4)/(2(-1))=-2; y(-2)=-4+8+2=6, vertex (-2,6); y-int (0,2), symmetric point (-4,2); roots -2±√6 ≈ -4.45, 0.45. The key {quadratic a=-1,b=-4,c=2} matches; vertex and (0,2),(-4,2) lie on the snap lattice inside the -7..7 grid (plotPoints 3). Figure checker read it image-first."
@@ -17561,6 +17945,14 @@
     "result": "agrees"
    }
   },
+  "28723ed7336a16b2": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1478128, key B station; fs-id1547688 ; hint reworded neutral",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "287c6699cda6bab9": {
    "verdict": "ok",
    "note": "Glossary recall; answer matches glossary term fs-id1519661 'RNA editing'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -17620,6 +18012,14 @@
    "note": "source exercise eip-60 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "28954cc251b32c72": {
+   "verdict": "ok",
+   "note": "Body cloze, m46687 fs-id1469316: 'the steroid hormone calcitriol (also known as 1,25-dihydroxyvitamin D), which is the active form of vitamin D3, in the kidneys' (parenthetical dropped, accepted).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -17697,6 +18097,14 @@
   },
   "28c8750b87020f39": {
    "verdict": "ok"
+  },
+  "28cd3617447e392d": {
+   "verdict": "ok",
+   "note": "glossary fs-id1417672 alarm reaction",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "28d1354815ac72e2": {
    "verdict": "ok",
@@ -17984,6 +18392,14 @@
     "result": "agrees"
    }
   },
+  "295cc821bd45222c": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1236458 key C; box para fs-id1081468",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2960b3f5b875238c": {
    "verdict": "ok",
    "note": "reverted to selfcheck per checker defect 1 / parent ruling: source SA stem restored verbatim; the key needs both adjacent BSL-3 sentences (potential for lethal inhalation infection; indigenous or exotic), not one, so it is not gradable as multiplechoice; model + rubric from those two sentences. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -18149,6 +18565,10 @@
   "29cbe8322d32d366": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
+  },
+  "29cd38d549546207": {
+   "verdict": "ok",
+   "note": "CT fs-id2354914 solution verbatim"
   },
   "29d35335965d87ee": {
    "verdict": "ok",
@@ -18417,6 +18837,14 @@
   "2a96d270e7c2e140": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2a98c7ae86063d3a": {
+   "verdict": "ok",
+   "note": "Source fs-id1225564, key D (solution fs-id1471643); body: 'PTH secretion causes the release of calcium from the bones by stimulating osteoclasts'. Options verbatim, source order.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18778,6 +19206,14 @@
     "result": "agrees"
    }
   },
+  "2b535cea9bb6deeb": {
+   "verdict": "ok",
+   "note": "fs-id1954035, key A (fs-id1477753) = oral ectoderm; body fs-id1231476: 'the anterior pituitary gland arises from the oral ectoderm'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2b5ec0bacaef9621": {
    "verdict": "ok",
    "note": "16.2 source CT selfcheck; Sep 23 2026 close-out: visible Source note added for the trp receptor -> trp operon correction (footer already disclosed); model answer and rubric re-read against the module"
@@ -19069,6 +19505,14 @@
     "result": "agrees"
    }
   },
+  "2c24e334c2afd77f": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id1941930 sentence 2; key 'memory' verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2c2eddaf18f03494": {
    "verdict": "ok",
    "note": "Review Question fs-id2641842 / solution fs-id2186884 (answer D, 'p21'). Matches 'Mutated p53 might lose its ability to trigger p21 production... there is no effective block on Cdk activation.' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -19171,6 +19615,14 @@
   },
   "2c88f71663963877": {
    "verdict": "ok"
+  },
+  "2c8ad25a94de7bb4": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1553818 'oxytocin is necessary for the milk ejection reflex (commonly referred to as “let-down”) in breastfeeding people'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "2c9080da1265d6bc": {
    "verdict": "ok",
@@ -19387,6 +19839,14 @@
     "result": "agrees"
    }
   },
+  "2cf52237b2cc4c1c": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2019046 embolus; accept emboli (irregular plural)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2cf627f9b3fcb631": {
    "verdict": "ok",
    "note": "author-built from § Scanning Probe Microscopy, Check Your Understanding: \"Which has higher magnification, a light microscope or a scanning probe microscope?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -19525,6 +19985,14 @@
    "verdict": "ok",
    "note": "m66554 critical-thinking exercise eip-299: model answer is the CNXML solution's own sentences (definition-by-exclusion plus the two example lists), no new claim added. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2d59d7e696a1a08e": {
+   "verdict": "ok",
+   "note": "glossary recall PPRF fs-id1692675",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2d610c556b7f9a4f": {
    "verdict": "ok"
   },
@@ -19569,6 +20037,14 @@
    "note": "Body Visual Connection, module m66420 exercise fs-idp44965632 (note copy and exercise copy identical). Source solution: 'C. Boreal forests are not dominated by deciduous trees.' Keyed to option C's text verbatim, matching the source key exactly — no departure. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2d6f670ec5670985": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1321262 key C; list item 1 actively transport",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -20298,6 +20774,14 @@
     "result": "agrees"
    }
   },
+  "2f0338b0b1341b19": {
+   "verdict": "ok",
+   "note": "glossary recall Edinger–Westphal nucleus; body fs-id2493227; accept 'Edinger–Westphal' (term without head noun)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2f0586699dceaaec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20508,6 +20992,10 @@
     "result": "agrees"
    }
   },
+  "2f604dce9c99c62b": {
+   "verdict": "ok",
+   "note": "fs-id1255046 model answer verbatim from fs-id801955"
+  },
   "2f631768da26c5ac": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -20531,6 +21019,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "2f709c0c8eb38d48": {
+   "verdict": "ok",
+   "note": "fs-id1417789 solution verbatim"
   },
   "2f7357c642534ac4": {
    "verdict": "ok",
@@ -21123,6 +21615,10 @@
     "result": "agrees"
    }
   },
+  "3129fe4c38c4fd09": {
+   "verdict": "ok",
+   "note": "Critical Thinking model answer verbatim from the CNXML solution (fs-id723536); rubric clauses copied from it."
+  },
   "312bbfe30d5be98a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -21268,6 +21764,14 @@
   "3178355d02f1f5c6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3178feeb0cb9a937": {
+   "verdict": "ok",
+   "note": "cloze fs-id2427159 mesencephalic nucleus; accept mesencephalic|mesencephalic nuclei",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -21441,6 +21945,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "31d59f303efece77": {
+   "verdict": "ok",
+   "note": "CT fs-id2675467; model answer = source solution fs-id2404359 verbatim"
   },
   "31da1350d913586c": {
    "verdict": "ok",
@@ -22088,6 +22596,14 @@
     "result": "agrees"
    }
   },
+  "336f093d88a59cf7": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2796380 last sentence ('...the amygdala, which is found beneath the cerebral cortex of the temporal lobe and plays a role in our ability to remember and feel emotions'), amygdala given as 'A brain structure', 'remember and' dropped; key 'temporal lobe', accept 'temporal'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "336fac27d22b116c": {
    "verdict": "ok",
    "note": "m66671 glossary 'spermatheca' (fs-idp11586624); prompt is the glossary meaning, answer is the term. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -22354,6 +22870,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "343942a64cb27176": {
+   "verdict": "ok",
+   "note": "fs-id1421708 model answer verbatim from fs-id849154"
   },
   "343c3d321e8ea7cf": {
    "verdict": "ok",
@@ -22658,6 +23178,14 @@
     "result": "agrees"
    }
   },
+  "34eca0f6d7c925f2": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (anterograde amnesia)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "34ee674890bbaf06": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22881,6 +23409,14 @@
   "355f4df0ba5e59fa": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "35623911932224b3": {
+   "verdict": "ok",
+   "note": "glossary recall leptin (m46680 fs-id2292545); body Adipose Tissue bolds leptin",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -23125,6 +23661,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "3601e3efb4539805": {
+   "verdict": "ok",
+   "note": "source fs-id1933534 key A; Thymus: thymosins contribute to development and differentiation of T lymphocytes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "360372ff515a5394": {
    "verdict": "ok",
    "note": "glossary recall: ureotelic (fs-idp136284272) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -23291,6 +23835,14 @@
   "364946ddb39e0bf8": {
    "verdict": "ok",
    "note": "glossary recall: chemical bond (fs-idp140338806035024) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "364cf4954567d8d5": {
+   "verdict": "ok",
+   "note": "fs-id1399907 key C steroid hormones; option B replaced peptide -> glycoprotein hormones per parent ruling, erratum 2344, DISCLOSED_DEVIATIONS options",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24198,6 +24750,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-03 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "38bb934975abd4ec": {
+   "verdict": "ok",
+   "note": "Source fs-id1205466; model answer is solution fs-id1374247 verbatim; checks are its clauses."
+  },
   "38bd07fe12e1151f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24383,6 +24939,14 @@
   "39184b40a69d507a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "39364a4ba8e69c0d": {
+   "verdict": "ok",
+   "note": "body cloze eip-269 'insulin and glucagon'; referent 'endocrine glands' for 'these glands'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -24843,6 +25407,10 @@
     "result": "agrees"
    }
   },
+  "3a2fb706431330e0": {
+   "verdict": "ok",
+   "note": "source CT fs-id2395687, model answer = solution fs-id1618294 verbatim"
+  },
   "3a36b7df923fb498": {
    "verdict": "ok",
    "note": "source exercise fs-id1167584917588 (prose-key) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -25060,11 +25628,27 @@
     "result": "agrees"
    }
   },
+  "3ab032911f6b4c49": {
+   "verdict": "ok",
+   "note": "Source fs-id1398516, key B (solution fs-id1263208); body: 'Hyperparathyroidism can significantly decrease bone density, leading to spontaneous fractures or deformities.' Convulsions are a hypoparathyroidism sign; bone deposition is decreased, so 'all of the above' is false.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3ab0adcc0e740328": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"The highest temperature at which growth can occur is its maximum growth temperature .\" (low confidence) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3ab0eadea5a1d1db": {
+   "verdict": "ok",
+   "note": "source fs-id1638408 key C coordination exam; body fs-id1641247 gait exam 'can be considered part of the coordination exam'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -25531,6 +26115,18 @@
     "by": "fable-blind-solve",
     "result": "agrees"
    }
+  },
+  "3be0f22130761695": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2306534 sentence 1",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "3be24d36cb8266eb": {
+   "verdict": "ok",
+   "note": "CT fs-id1180174 source solution verbatim; checks are its clauses"
   },
   "3be7e926645c1037": {
    "verdict": "ok",
@@ -26030,6 +26626,10 @@
     "result": "agrees"
    }
   },
+  "3d29ab08a7e8c268": {
+   "verdict": "ok",
+   "note": "CT fs-id2340300 model = fs-id1479478 text fs-id2250410"
+  },
   "3d2a58a808526ba7": {
    "verdict": "ok",
    "note": "Author MC from fs-id1497167 'In the adult brain, the cerebellum seems close to the cerebrum, but there is no direct connection between them.' Distractors pons/medulla/midbrain stated connected in the same paragraph.",
@@ -26478,6 +27078,14 @@
    "verdict": "ok",
    "note": "multi-sentence urease/mucus/gastritis mechanism, stays selfcheck | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "3e34665909e293f1": {
+   "verdict": "ok",
+   "note": "cloze fs-id1865012 cardiovascular; accept center|centre",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3e3f60f5347f6c6c": {
    "verdict": "ok",
    "note": "KC 3 15.1 § glossary central dogma (fs-id2123902), m66497 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -26627,6 +27235,14 @@
   "3e82ff356b61ec90": {
    "verdict": "ok",
    "note": "atan2(5,6) in degrees = 39.8056 deg (Q1, no adjustment), rounds to 39.806 deg. node -e dirDeg(6,5)=39.8056."
+  },
+  "3e84d624581549ca": {
+   "verdict": "ok",
+   "note": "source fs-id1641299 key C; Kidneys: EPO 'increasing oxygen delivery to tissues', performance-enhancing drug",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3e85efef80e62d64": {
    "verdict": "ok",
@@ -28468,6 +29084,14 @@
     "result": "agrees"
    }
   },
+  "4267b352d97c647a": {
+   "verdict": "ok",
+   "note": "Source fs-id1486055 key B; body fs-id1121215 activated G protein activates adenylyl cyclase (Step 3).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "426efa41642eae9f": {
    "verdict": "ok",
    "note": "24.3 CYU selfcheck; Sep 23 2026 close-out: hint replaced with a location; rubric lines rewritten as verbatim clauses of the model answer (Typhi \"but also Paratyphi\", not \"specifically ... Paratyphi A\"); model answer, rubric, and hint re-read against the module"
@@ -29369,6 +29993,14 @@
    "verdict": "ok",
    "note": "CT fs-idm63771376: selfcheck model answer transcribes the source solution verbatim (spongy vs compact bone differences). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "448d46fa8de92458": {
+   "verdict": "ok",
+   "note": "source fs-id2737161 key D left cerebral hemisphere; fs-id2595084 'language function is localized to the left hemisphere'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "448dc12d432343d1": {
    "verdict": "ok",
    "note": "pattern-fit to 1/e^2,1/e,1,e,e^2,...; exponent sequence n-3 gives -2,-1,0,1,2, matching (CNXML Try It ti_11_01_06). | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -29741,6 +30373,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "457b9a820bf1cc51": {
+   "verdict": "ok",
+   "note": "glossary fs-id1137125 acromegaly; body fs-id1243625",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "457db476bbde7fc7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29982,6 +30622,14 @@
   "4602d818dfabb7e7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4606b8631491e70b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2122946 inferior olive",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -30707,6 +31355,14 @@
     "result": "agrees"
    }
   },
+  "47b7fbf79b427115": {
+   "verdict": "ok",
+   "note": "Review fs-id1247068 key C kidneys; body fs-id1381419",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "47b9cedcf80deb64": {
    "verdict": "ok",
    "note": "author-built from § Fever, Check Your Understanding: \"Explain the difference between exogenous and endogenous pyrogens.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -30984,6 +31640,14 @@
     "result": "agrees"
    }
   },
+  "48705a6d459e7a0b": {
+   "verdict": "ok",
+   "note": "summary cloze, fs-id1230452: 'Neural communication includes both electrical and chemical signaling'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "487096719733474c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31023,6 +31687,14 @@
   "4889b0108c272381": {
    "verdict": "ok",
    "note": "L=46; independently recomputed 2*5^2-4=46 via node."
+  },
+  "488a7582a5b84d9c": {
+   "verdict": "ok",
+   "note": "Prose-built: melatonin/epinephrine amine (fs-id1509674), ADH peptide (fs-id1863392) and oxytocin peptide (fig-ch18_02_01 table row), growth hormone protein (fs-id1863392; FSH dropped as glycoprotein), aldosterone and cortisol steroid (fs-id1569493).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "488c899885195827": {
    "verdict": "ok",
@@ -31313,6 +31985,14 @@
     "result": "agrees"
    }
   },
+  "493630fdd57c7951": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1478312 hyperglycemia; body bolds term-00010",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "493ae3427aeb86a6": {
    "verdict": "ok",
    "note": "Critical Thinking Q2 (fs-id2321141/fs-id1987001, module m66514) — model answer is the keyed solution verbatim; checkpoints restate it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -31553,6 +32233,14 @@
    "verdict": "ok",
    "note": "CT fs-id1288186, model answer = solution fs-id2602543 verbatim; rubric clauses copied"
   },
+  "49e87789d35d8b78": {
+   "verdict": "ok",
+   "note": "RQ fs-id2871108 key C baroreception; module: baroreceptor not part of conscious perception (fs-id2455581)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "49e8a6c9b95c531f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31708,6 +32396,14 @@
     "result": "agrees"
    }
   },
+  "4a3cc47795a311f3": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1475474 'as fibrous tissue increases, the production of cortisol and aldosterone decreases'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4a411d672ed347bd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -31750,6 +32446,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4a4955af82befd2c": {
+   "verdict": "ok",
+   "note": "IL fs-id1495328 (key 'Thyroid-stimulating hormone.' fs-id1436858); fixed by fs-id2161906 'The activity of the thyroid gland is regulated by thyroid-stimulating hormone (TSH), also called thyrotropin.'; model answer is the key as a sentence, no added claim"
   },
   "4a4ea085b5727298": {
    "verdict": "ok",
@@ -32548,6 +33248,14 @@
   "4c537c220f750d3b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4c59cafbf38755ed": {
+   "verdict": "ok",
+   "note": "table tbl-ch18_05: aldosterone/steroid/Na+ cortex; epi/norepi/amine/fight-or-flight medulla; each item true of one bin only",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -33360,6 +34068,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 339): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "4e33b691f5aceef2": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2913972: 'They are associated with controlling organs in the abdominal cavity, and are also considered part of the enteric nervous system' ('They' -> 'Collateral ganglia'); accept 'enteric'; replaces the myenteric plexus recall item",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4e341095b3b84bc8": {
    "verdict": "ok",
    "note": "glossary recall subscapular fossa; body fs-id1989073 prints it; accept irregular plural; graded variants checked",
@@ -33904,6 +34620,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "4fa21e4c76c71610": {
+   "verdict": "ok",
+   "note": "glossary fs-id2301816 hypophyseal portal system; body fs-id1211186 bolds it",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4fab082e48f61473": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34354,12 +35078,29 @@
     "result": "agrees"
    }
   },
+  "5098b4c54bc13bb6": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1481522, key D; REVISED parent ruling: keyed option corrected to \"primary visual perception\" (module fs-id1335742 attributes visual processing to the cerebrocerebellum), Source note on page, DISCLOSED_DEVIATIONS kind key, erratum 2316",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "50a1cffad4115184": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "50a2940702672071": {
+   "verdict": "ok",
+   "note": "RQ fs-id2181456 key A; fs-id2754854 'the preganglionic fibers are long and the postganglionic fibers are short' (parasympathetic)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "source key stands (m46582 fs-id2766993 sibling set, Review Question keyed A 'preganglionic parasympathetic'). The module ranks only within each division ('postganglionic sympathetic fibers are long' is 'compared with the preganglionic fibers' of the same division, from a chain ganglion beside the vertebral column; parasympathetic preganglionic fibers run from the brain stem or sacral cord to terminal ganglia 'close to—and sometimes within—the target effectors'), so the parasympathetic preganglionic fiber is the longest on the module's own geography. Reviewed and not errata."
    }
   },
   "50a3c7d867d32eaf": {
@@ -34611,6 +35352,14 @@
     "result": "agrees"
    }
   },
+  "515b778c07231c3b": {
+   "verdict": "ok",
+   "note": "glossary fs-id1173446 gigantism; body fs-id1243625",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "515e0522838516e3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -34704,6 +35453,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-A",
+    "result": "agrees"
+   }
+  },
+  "51a6842716e64024": {
+   "verdict": "ok",
+   "note": "RQ fs-id2473251 key C; parasympathetic (ACh) increases motility to digest (fs-id2101505); A,B,D stated in fs-id2825202/fs-id2525262/fs-id2364402",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -35272,6 +36029,14 @@
   },
   "53261cd1a3a6acb1": {
    "verdict": "ok"
+  },
+  "532eec19a1da1a85": {
+   "verdict": "ok",
+   "note": "glossary recall internuclear ophthalmoplegia fs-id2002281, stem from the corrected definition (claim correction)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "53381ad4c953bc65": {
    "verdict": "ok",
@@ -37353,6 +38118,14 @@
     "result": "agrees"
    }
   },
+  "5805e3c78b446f6d": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (praxis)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "580f6cefb6a126ef": {
    "verdict": "ok",
    "note": "b^3=60.75/2.25=27 -> b=3, a=2.25/9=0.25; key p1315 #3 | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -37466,6 +38239,10 @@
     "result": "agrees"
    }
   },
+  "58553d855b19dc9b": {
+   "verdict": "ok",
+   "note": "fs-id1297233, model answer = solution fs-id1959370 with one-word fix woman -> women"
+  },
   "585545a89fe8c863": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -37509,6 +38286,22 @@
   "5871d67331c5ed56": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "587deacd738c5205": {
+   "verdict": "ok",
+   "note": "Glossary fs-id1073343; body fs-id1531254.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "588688e3266b0ea2": {
+   "verdict": "ok",
+   "note": "cloze fs-id1383725 'Renin then catalyzes the conversion of ... angiotensinogen ... to angiotensin I' (checker fixes applied)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5889dee1e1babbfb": {
    "verdict": "ok",
@@ -37648,6 +38441,14 @@
   },
   "58d6bc7bce90256f": {
    "verdict": "ok"
+  },
+  "58d708989ec69e07": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1354718",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "58d7df365e31bc20": {
    "verdict": "ok",
@@ -37922,9 +38723,21 @@
    "verdict": "ok",
    "note": "Same chamber: c=sqrt(57600-25600)=sqrt(32000)=178.885...; 2c=357.77...->358 feet; matches CNXML fs-id1403957 part (b); full-precision and rounded-intermediate paths agree (no discrepancy). | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "5964cb1318c200e8": {
+   "verdict": "ok",
+   "note": "source CT fs-id2240134, model answer = solution fs-id2576560 verbatim"
+  },
   "59657eee8c55ebe1": {
    "verdict": "ok",
    "note": "source exercise fs-id1897403 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "596c84913a3fe1ce": {
+   "verdict": "ok",
+   "note": "source fs-id1335873 key B developmental disorder; summary fs-id1844958 'broader effects in … developmental disorders may result in general losses'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -38418,6 +39231,14 @@
    "note": "glossary recall: karyogamy (fs-idp60740480) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5a96717836d3590f": {
+   "verdict": "ok",
+   "note": "glossary recall varicosity; accept 'varicosities' (summary fs-id1638226 prints it; -ity plural not folded)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -39270,6 +40091,14 @@
    "verdict": "ok",
    "note": "sqrt(6^2+5^2)=sqrt(61)=7.8102..., rounds to 7.810. node -e Math.sqrt(61)=7.810249675906654."
   },
+  "5c869395b34602ae": {
+   "verdict": "ok",
+   "note": "sortbins from tbl-ch15_02: Example(s) drugs binned by the Overall result cell of their row; each drug name occurs in one row only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5c895e1c4755aef3": {
    "verdict": "ok",
    "note": "Matches the printed solution for fs-id1165137794235 (does not exist, source exercise 13): the left branch reaches the filled point (4,4) while the separate hooked piece beyond x=4 starts at an unrelated open circle near (4.3,5.7), so the two branches disagree. | carried Oct 12 2026 (Precalculus ch11–12 re-review): re-hashed by a form, stem, or hint edit, key unchanged; re-solved blind (fable-solver, 77/77)",
@@ -39344,6 +40173,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "5ccc3c2962ab9690": {
+   "verdict": "ok",
+   "note": "CT fs-id2277157 solution verbatim"
   },
   "5cd9a5e7dd7476a2": {
    "verdict": "ok",
@@ -39525,6 +40358,14 @@
   "5d515d6bad768db7": {
    "verdict": "ok",
    "note": "key-term recall: pharmacogenomics; printed in § Genomics, Transcriptomics, and Proteomics: \"Another up-and-coming clinical application of genomics and transcriptomics is pharmacogenomics , also called toxicogenomics , which involve…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5d52811747c5763f": {
+   "verdict": "ok",
+   "note": "body cloze of para fs-id1907359: 'Although it is primarily an exocrine gland, secreting a variety of digestive enzymes, the pancreas has an endocrine function.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -40169,6 +41010,10 @@
     "result": "agrees"
    }
   },
+  "5ea7a9f3be23d4ea": {
+   "verdict": "ok",
+   "note": "fs-id1232448 solution fs-id1399923 verbatim"
+  },
   "5ea8e963e2d3c3b2": {
    "verdict": "ok",
    "note": "parent: add -> 8x^2=72 -> x=+-3, y=0 | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -40561,6 +41406,14 @@
   "5fde0f398c8bf05e": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2276568, model answer = solution fs-id2230632 verbatim; hint now points at the second paragraph of the page"
+  },
+  "5fde30be1b607476": {
+   "verdict": "ok",
+   "note": "glossary recall referred pain fs-id2487503; body bolds it in fs-id2394801",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5fde4cb925fe825b": {
    "verdict": "ok",
@@ -41041,6 +41894,14 @@
     "result": "agrees"
    }
   },
+  "612d762c12d9255f": {
+   "verdict": "ok",
+   "note": "source stem, options, option order, and key letter re-read against the raw CNXML (superior temporal gyrus)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "612e70eb0f7a8fcb": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"If the egg develops outside the body, it usually has a protective covering over it.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -41204,6 +42065,14 @@
   "618ee46394db25a9": {
    "verdict": "ok",
    "note": "Glossary recall fs-id1905202; body fs-id2142755 bolds Glycolysis; accept anaerobic glycolysis (fs-id2072704).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6190716052ff8a96": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1243032",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -41427,6 +42296,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "62484ba3b8d4f1c8": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (thalamus)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "624d8ab4834abb29": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -41434,6 +42311,14 @@
   "62590154933e41e1": {
    "verdict": "ok",
    "note": "Try It 2: 3*4*5=60, multiplication principle. | carried 2026-10-13 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "625e3e00e555782e": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1956663",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6264843e175554ac": {
    "verdict": "ok",
@@ -41536,6 +42421,14 @@
    "note": "author-built from § Classification by Carbon and Energy Source: \"Hydrogen-, sulfur-, iron-, nitrogen-, and carbon monoxide-oxidizing bacteria\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "62a54e2a6ed92981": {
+   "verdict": "ok",
+   "note": "source stem, options, option order, and key letter re-read against the raw CNXML (receptive aphasia)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -41658,6 +42551,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "6304f5515f782ebf": {
+   "verdict": "ok",
+   "note": "CT fs-id1221096 solution verbatim"
   },
   "6312421d54908213": {
    "verdict": "ok",
@@ -42077,6 +42974,14 @@
     "result": "agrees"
    }
   },
+  "6443f715dab1e43d": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2006177, key D as printed (the only sympatholytic option; fs-id2642884 alpha-blockers sentence); clonidine is called an alpha-agonist in fs-id2152968 - flagged for the claim pass",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6447ab66e117835d": {
    "verdict": "ok",
    "note": "RQ fs-id1125844 key A physical stimulus; body para fs-id1805702 'physical distortion' and fs-id1187632 'physical stimulus'",
@@ -42305,6 +43210,14 @@
    "note": "key-term recall from the Glossary appendix: bioremediation (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6533a9ad1cfba327": {
+   "verdict": "ok",
+   "note": "fs-id2297726 key D as printed; stem corrected per the parent's ruling (senses -> reflexes, options/order/key unchanged); both somatic and visceral reflex efferents leave via the ventral root (15.2 comparison figure), skeletal muscle contraction somatic only, ganglion near effector visceral only, cerebral input not required",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -43244,6 +44157,14 @@
   "676f0a4125963b6b": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1435268 (m66480) verbatim; rubric checkpoints are clauses of that solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "67715a60b38824b3": {
+   "verdict": "ok",
+   "note": "cloze fs-id1433491 'inner medulla of nervous tissue'; accept neuroendocrine from fs-id1391330 (checker fixes applied)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "67759002d1006431": {
    "verdict": "ok",
@@ -44787,6 +45708,14 @@
     "result": "agrees"
    }
   },
+  "6b97d3d9bc3cee60": {
+   "verdict": "ok",
+   "note": "Author MC, m46687 fs-id1372354: 'Most people have four parathyroid glands'; figure 1814 draws four.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6b996e5ad64a68f5": {
    "verdict": "ok",
    "note": "author-built from § introduction: \"The nervous system is rudimentary, with nerve cells organized in a network scattered across the body.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -44956,6 +45885,14 @@
   "6c253ff394962942": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "6c2fb8909d14a5dc": {
+   "verdict": "ok",
+   "note": "summary cloze; m46700 summary fs-id1282489 first sentence prints butterfly-shaped; body first sentence agrees",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "6c335167ec9ea879": {
    "verdict": "ok",
@@ -46740,6 +47677,14 @@
   "709571c12b1d98ec": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "709fcebb5c619f08": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1475474 'the production and secretion of epinephrine and norepinephrine remain normal'; distractors all stated to decline: human growth hormone (eip-324), estrogen and progesterone (fs-id1962840), thyroid hormones (fs-id1890419)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -48923,6 +49868,10 @@
     "result": "agrees"
    }
   },
+  "7592e2e7d9405f32": {
+   "verdict": "ok",
+   "note": "CT fs-id1076484, model answer = solution fs-id1299241 verbatim; checks are its clauses"
+  },
   "7594e5190d1eea3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -49049,6 +49998,14 @@
   "75da5b5d93330220": {
    "verdict": "ok",
    "note": "KC 7 42.1 § Cytokine Release Effect, m66663 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "75dcb9c5b43cac68": {
+   "verdict": "ok",
+   "note": "cloze fs-id2640277 spinal trigeminal nucleus; accept spinal trigeminal|spinal trigeminal nuclei",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -49525,6 +50482,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "77061f9aa9d8fdea": {
+   "verdict": "ok",
+   "note": "CT fs-id1474798 solution verbatim"
   },
   "77079b9c2b965e72": {
    "verdict": "ok",
@@ -50096,6 +51057,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "784032d45021ac76": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1200690, solution fs-id1388730 verbatim except the stray ' ,' after 'which' removed"
   },
   "7840f2c19b480c5d": {
    "verdict": "ok",
@@ -51716,6 +52681,14 @@
     "result": "agrees"
    }
   },
+  "7bdd66bd341a8d31": {
+   "verdict": "ok",
+   "note": "body fs-id1355539 sentence prints 'thalamus' at the blank",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7bdf94234c92a99f": {
    "verdict": "ok",
    "note": "body CYU box2 bullet1: matches the emerging-disease definition sentence and its 'implies the need to apply resources' clause | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -52906,6 +53879,14 @@
    "verdict": "ok",
    "note": "KC 5 25.4 § Babesiosis, m58938"
   },
+  "7e62a9dd3eb1c28d": {
+   "verdict": "ok",
+   "note": "fs-id1246774 key C; stem corrected to trigeminal per Part C; fs-id1640836 deep tendon reflex = stretch reflex; 16.3 m46607 jaw-jerk is a stretch reflex of the masseter",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7e7c226c83cfea52": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -53522,6 +54503,14 @@
   "7ffd489c41f30ef8": {
    "verdict": "ok",
    "note": "glossary recall: tRNA — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8000de5c8121da0d": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id2685156: 'Cardiac muscle is intrinsically active and is modulated by the autonomic system.' with the preceding sentence as context",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54258,6 +55247,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "81df2c5c7c567360": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; rubric clauses copied from it; re-read against CNXML (A patient responds to the question “What is your n)"
   },
   "81e3328747245187": {
    "verdict": "ok",
@@ -55533,6 +56526,14 @@
     "result": "agrees"
    }
   },
+  "84c0b564a8d30514": {
+   "verdict": "ok",
+   "note": "Review fs-id1219310, key B; body para fs-id1431968 'support the movement of intracellular vesicles containing facilitative glucose transporters to the cell membrane'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "84c1fdae16b182ef": {
    "verdict": "ok"
   },
@@ -55808,6 +56809,14 @@
   "855762d57fa54e9e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "855aade6c4e02eb9": {
+   "verdict": "ok",
+   "note": "summary cloze, fs-id2378847 sentence 1; key 'higher cognitive processes' verbatim",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56225,6 +57234,14 @@
   "866b73458c98f9b1": {
    "verdict": "ok",
    "note": "KC 4 19.1 § ABO Blood Group Incompatibility, m58892 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "866bf232891451a8": {
+   "verdict": "ok",
+   "note": "Review fs-id1378590 key D reduced mental activity; fs-id1377759 lists the other three effects",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56691,6 +57708,14 @@
    "verdict": "ok",
    "note": "CT fs-id1725236, model answer = solution fs-id1200448 with Unicode Na+/K+ and 'Action Potential' lower-cased"
   },
+  "87baf64e2d171b54": {
+   "verdict": "ok",
+   "note": "body cloze, fs-id2307969: 'divided between the red nucleus in the midbrain and the thalamus'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "87bd383ab318c784": {
    "verdict": "ok",
    "note": "KC 4 20.2 § Molecular Comparisons, m66531 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -56770,6 +57795,14 @@
   "87eada2958b05b98": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "87ee047547599970": {
+   "verdict": "ok",
+   "note": "Summary cloze, m46687 fs-id1368146: '...trigger secretion of the thyroid hormone calcitonin.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56856,6 +57889,14 @@
   "88318dcb4ba5fe12": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "883244d388eaf8dc": {
+   "verdict": "ok",
+   "note": "Glossary recall, m46687 definition fs-id2349525; body bolds hypoparathyroidism in fs-id1475434. Accept adds 'hypo-parathyroidism' and 'parathyroid hormone deficiency' (fs-id1475434: 'parathyroid hormone deficiency, called hypoparathyroidism').",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -57814,6 +58855,10 @@
     "result": "agrees"
    }
   },
+  "8a7598e0d87992fa": {
+   "verdict": "ok",
+   "note": "CT fs-id1520716 source solution verbatim; body: neurotransmitters act only locally within the synaptic cleft"
+  },
   "8a789ad9a870c393": {
    "verdict": "ok"
   },
@@ -58161,6 +59206,14 @@
   "8b569ae872f800f7": {
    "verdict": "ok",
    "note": "selfcheck, converted unkeyed SA fs-id1167660291741 per run-facts Part C item 2; model is the two keratin sentences verbatim | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "8b6130c8a38f7ba3": {
+   "verdict": "ok",
+   "note": "cloze vagus from fs-id2101505 last sentence, referent added; accept vagus nerve|cranial nerve X|CN X",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8b64a4d2a44b529e": {
    "verdict": "ok",
@@ -58555,6 +59608,14 @@
   "8c712b3a8973ff23": {
    "verdict": "ok",
    "note": "source exercise fs-id1167663612092 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "8c712f0d10c32a3e": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1845483 meaning",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -58965,6 +60026,14 @@
     "result": "agrees"
    }
   },
+  "8d3b875ad842a906": {
+   "verdict": "ok",
+   "note": "Source fs-id1173979 key C; body fs-id1183709 sympathetic neurons signal adrenal glands (neural stimuli).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8d3f1f0dd609e021": {
    "verdict": "ok",
    "note": "glossary recall m46021 amphipathic; stem is the glossary meaning; body prints the term",
@@ -59334,6 +60403,14 @@
   "8e53d8e2ecdb609e": {
    "verdict": "ok"
   },
+  "8e55eabe645e8a27": {
+   "verdict": "ok",
+   "note": "summary fs-id1481350 first clause prints 'diencephalon'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8e5a047e07158d04": {
    "verdict": "ok",
    "note": "KC 8 44.3 § body Temperate Forests (fs-idp19162496), m66420 — parent re-read against the module"
@@ -59402,6 +60479,14 @@
     "result": "agrees"
    }
   },
+  "8e748e23f2b4d4dc": {
+   "verdict": "ok",
+   "note": "Review fs-id216955, key D glucagon; body: 'The alpha cell produces the hormone glucagon'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8e79c158de75f469": {
    "verdict": "ok",
    "note": "unkeyed SA fs-id1167584726495; selfcheck, model answer assembled from the ethylene-oxide cold-sterilization sentence plus the adjacent penetration/examples sentence | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -59409,6 +60494,14 @@
   "8e8e275056ede713": {
    "verdict": "ok",
    "note": "model answer assembles the IHC-definition sentence and the ICC-contrast sentence, both fs-id1167662791403/fs-id1167662674522 | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "8e8fd6c1ebb8ffb5": {
+   "verdict": "ok",
+   "note": "cloze vasodilators from fs-id3088381",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "8e90a0f6dc749a92": {
    "verdict": "ok",
@@ -61236,6 +62329,10 @@
     "result": "agrees"
    }
   },
+  "92e129e59edc5c7b": {
+   "verdict": "ok",
+   "note": "[hash rebuilt after a parent edit; was 23b3d146035cf815] source fs-id1858844 solution verbatim; checks are its clauses"
+  },
   "92e319aa3f5a77e6": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -61717,6 +62814,14 @@
     "result": "agrees"
    }
   },
+  "942923096771392c": {
+   "verdict": "ok",
+   "note": "RQ fs-id2299695, key A hypothalamus; body fs-id2000325 'The hypothalamus is the control center for many homeostatic mechanisms. It regulates both autonomic function and endocrine function.'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "942abf37b3dc9065": {
    "verdict": "ok",
    "note": "source exercise fs-idp7922736 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -61865,6 +62970,14 @@
     "result": "agrees"
    }
   },
+  "94879690dd08f911": {
+   "verdict": "ok",
+   "note": "glossary recall diplopia fs-id2402507",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "948908c0a6aed2e5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -61953,6 +63066,14 @@
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "94c354345b7689b7": {
+   "verdict": "ok",
+   "note": "Body list fs-id1521639 item 2: two hormones with similar effects produce an amplified response; options are the list’s three effects.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -62628,6 +63749,14 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "963c6115fdaf10de": {
+   "verdict": "ok",
+   "note": "RQ fs-id1602322 key B acetylcholine; fs-id2825202 ACh onto circular fibers -> constriction",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "963eebc71873a249": {
    "verdict": "ok",
    "note": "author-written selfcheck assembling § Causes of Mutations (mutagen/carcinogen sentence) with § The Ames Test (mutation-rate and further-testing sentences); two-sentence draw, so stays a selfcheck rather than a graded item. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -62987,6 +64116,14 @@
   "973d3bc81e4764d0": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "973dc5c9c6ddd1aa": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (homunculus)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63579,6 +64716,14 @@
     "result": "agrees"
    }
   },
+  "98ad0a984bb20723": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1483088, key C, options and order as printed",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "98bc9031f5ec3ea4": {
    "verdict": "ok"
   },
@@ -63677,6 +64822,10 @@
     "by": "fable-solver-2",
     "result": "agrees"
    }
+  },
+  "98fd93e4dc748990": {
+   "verdict": "ok",
+   "note": "source CT fs-id1351788; model answer = source solution verbatim; checks are its clauses"
   },
   "98fdc668fba051ac": {
    "verdict": "ok",
@@ -64498,6 +65647,14 @@
   "9affe62ba0cd9741": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9b08f86f7885dad8": {
+   "verdict": "ok",
+   "note": "fs-id1414216 key B; body fs-id1391140: light on retinas -> production of melatonin is inhibited",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -65587,6 +66744,10 @@
     "result": "agrees"
    }
   },
+  "9dc4158102522e63": {
+   "verdict": "ok",
+   "note": "IL fs-id1983807 selfcheck; model = source solution fs-id1393149; fixed by fs-id2825202 + Figure 15.9 caption"
+  },
   "9dc474516d54cf86": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -65878,6 +67039,14 @@
   "9e6e2f60b7047d53": {
    "verdict": "ok"
   },
+  "9e740d57e96e707b": {
+   "verdict": "ok",
+   "note": "cloze fs-id1381419 'left and right suprarenal veins' (checker fixes applied)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9e7884e8cfbd1a9c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -66073,6 +67242,14 @@
     "result": "agrees"
    }
   },
+  "9eef2f3b91a38a2b": {
+   "verdict": "ok",
+   "note": "summary cloze sweat glands fs-id1916246",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9eef5f3dae01daf8": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -66124,6 +67301,14 @@
   "9f0cd88abc6ddb72": {
    "verdict": "ok",
    "note": "key-term recall: indirect ELISA; printed in § summary: \"Indirect ELISA is used to detect antibodies in patient serum by attaching antigen to the well of a microtiter plate, allowing the patient (…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "9f1194d4ea065676": {
+   "verdict": "ok",
+   "note": "RQ fs-id2229746 key D short reflex; fs-id2129527",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -66284,11 +67469,27 @@
   "9f6e6776202014b8": {
    "verdict": "ok"
   },
+  "9f6e9f86349d5b3a": {
+   "verdict": "ok",
+   "note": "RQ fs-id1604554 key B; fs-id2493227 salivatory nuclei project through the facial and glossopharyngeal nerves",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "9f8080f85e9e66e7": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9f83222f2ee53624": {
+   "verdict": "ok",
+   "note": "Body fs-id1211750 first sentence prints lipid bilayer of the cell membrane; accept adds bilayer and phospholipid bilayer.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -66453,6 +67654,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "9fe8d0d9c52fd832": {
+   "verdict": "ok",
+   "note": "CT fs-id1765597; model answer = source solution fs-id2525162 verbatim; checks are its clauses"
   },
   "9fee59144acea9b7": {
    "verdict": "ok",
@@ -67010,6 +68215,14 @@
     "result": "agrees"
    }
   },
+  "a14f0bf9e5cbf42d": {
+   "verdict": "ok",
+   "note": "RQ fs-id2019800 key A optic",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a156e579d635e5fc": {
    "verdict": "ok",
    "note": "author-built from § Lactic Acid Fermentation: \"This type of fermentation is used routinely in mammalian red blood cells, which do not have mitochondria, and in skeletal muscle that has a…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -67501,6 +68714,14 @@
     "result": "agrees"
    }
   },
+  "a238e7a8529d8bb1": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1699116; central canal printed in body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a23c05d6683a5f45": {
    "verdict": "ok",
    "note": "sin²xcos²x=(sinxcosx)²=(1/2 sin2x)²=1/4 sin²2x=1/4·(1-cos4x)/2=(1-cos4x)/8; confirmed numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -67847,6 +69068,18 @@
     "result": "agrees"
    }
   },
+  "a2e69c3d3569b3b0": {
+   "verdict": "ok",
+   "note": "IL fs-id1387510 key Cortisol; fixed by zona fasciculata paragraph (fs-id1474330)"
+  },
+  "a2edeac093589dee": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1632853: 'He is put on aspirin therapy to limit the possibility of blood clots forming' — key aspirin",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a2fd671a2d1ce0e3": {
    "verdict": "ok",
    "note": "Glossary textin, term 'transversion substitution' (fs-id1450506): prompt restates the glossary meaning; answer matches the glossary term exactly.; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -68054,6 +69287,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a36f6f063743a924": {
+   "verdict": "ok",
+   "note": "RQ fs-id2766993 key A, option printed 'intramural' for source 'intermural' (run facts: options deviation, erratum 2285); intramural ganglia are parasympathetic (fs-id2754854); hint narrowed in checker round (hash changed)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a370699592a23f26": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -68133,6 +69374,15 @@
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
+   }
+  },
+  "a384740d312e22a9": {
+   "verdict": "ok",
+   "note": "source RQ fs-id994926 key D; module states location, parathyroid embedding, and three hormones (T3, T4, calcitonin)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "source key stands (m46700 Review Question 1, keyed 'all of the above'): the solver's answer agrees with the key; its alsoDefensible flag only notes that the first option is true by the module ('located anterior to the trachea, just inferior to the larynx'), which is exactly why the all-of-the-above key is right — no disagreement."
    }
   },
   "a38bd86a50910a42": {
@@ -68365,6 +69615,14 @@
     "result": "agrees"
    }
   },
+  "a418ea2176b83a68": {
+   "verdict": "ok",
+   "note": "RQ fs-id2454860 key C acetylcholine; fs-id2430550 postganglionic parasympathetic fibers release ACh; summary rest-and-digest",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a41a3f7f7c9e8140": {
    "verdict": "ok",
    "note": "Body CYU 3/3 (fs-id1167663901904). Selfcheck — answer is the three-item enumerated list (Transformation/Transduction/Conjugation with their one-line definitions); kept as selfcheck rather than a textin because a three-term comma answer is a fragile key and rather than a sortbins because the CNXML's 4-row summary table (with Transposition) is reserved as this page's ONE sortbins per brief."
@@ -68460,6 +69718,14 @@
   },
   "a4401a8d8f154997": {
    "verdict": "ok"
+  },
+  "a44385d5c6ce93a9": {
+   "verdict": "ok",
+   "note": "body cloze from § introduction: \"Each of the thyroid lobes are embedded with parathyroid glands, primarily on their posterior surfaces.\" — provenance backfilled 2026-10-24 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "a444aaad1c125813": {
    "verdict": "ok",
@@ -68659,6 +69925,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
+  "a4bf57053bf4dcc9": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1863415 '...which is actually the neurotransmitter dopamine...'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -69825,6 +71099,14 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "a78fc87a8c825960": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2158108 ischemic stroke ; accept ischaemic stroke",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a797df78cb2bbca5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70175,6 +71457,14 @@
     "result": "agrees"
    }
   },
+  "a86eee4868bc1656": {
+   "verdict": "ok",
+   "note": "source stem, options, option order, and key letter re-read against the raw CNXML (number of neurons per square millimeter)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a877fbaf268d377c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -70507,6 +71797,14 @@
   "a9259c078bb4a201": {
    "verdict": "ok",
    "note": "author-built from § Viral Structures: \"At the tips of these spikes are structures that allow the virus to attach and enter a cell, like the influenza virus hemagglutinin spikes (…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a92ab3fdd8ef8967": {
+   "verdict": "ok",
+   "note": "source stem, options, option order, and key letter re-read against the raw CNXML (Wernicke’s area)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -71612,6 +72910,14 @@
     "result": "agrees"
    }
   },
+  "ac1a4a930aafc395": {
+   "verdict": "ok",
+   "note": "Review fs-id1812561 key B paracrine; verbatim; body 'paracrine ... induces a response in neighboring cells'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ac1c0a99a26d42ac": {
    "verdict": "ok"
   },
@@ -71642,6 +72948,14 @@
   "ac378af274f5ede2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ac391f7d1b053e7b": {
+   "verdict": "ok",
+   "note": "RQ fs-id2016044 key A adrenal medulla; fs-id2525262 hormones from adrenal medulla",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -72672,6 +73986,14 @@
    "verdict": "ok",
    "note": "m66566 critical-thinking eip-346, solution's bulleted list reformatted into complete sentences, no new claim added. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "ae9eeb8065ece4cb": {
+   "verdict": "ok",
+   "note": "glossary recall testosterone (fs-id1399194), meaning minus \"steroid\", \"testes\" reworded \"male gonads\" (glossary inhibin meaning prints \"male and female gonads\")",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aea2b1adbd75e749": {
    "verdict": "ok",
    "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3 | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -73225,6 +74547,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "afe867393ea172ba": {
+   "verdict": "ok",
+   "note": "CT fs-id2017092, stem verbatim; model answer = solution fs-id2175829 verbatim"
   },
   "afee17f52bdda9da": {
    "verdict": "ok",
@@ -73805,6 +75131,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b19013ea3ce2d6b0": {
+   "verdict": "ok",
+   "note": "CT fs-id1415323 solution verbatim"
+  },
   "b195860e558b8870": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -73825,6 +75155,14 @@
   "b19da5893129b09a": {
    "verdict": "ok",
    "note": "glossary recall pyramidal decussation (fs-id2277258); accept = figure 1426 label Decussation of pyramids.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "b1a58f6a3625da4d": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2576109 s1, key 'visceral reflexes'; accept 'autonomic reflexes' (m46579 fs-id2101790 'a visceral reflex, which is an autonomic reflex')",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -74781,6 +76119,14 @@
    "verdict": "ok",
    "note": "Body Visual Connection m66654 fs-idm62414080 (varicose veins); model answer transcribes the <solution> verbatim; note copy and <exercise> copy are word-identical. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "b3b4975b637f0d32": {
+   "verdict": "ok",
+   "note": "cloze hypertension from fs-id3088381, referent “Both of the box’s medications that affect fluid balance”; accept systemic hypertension|high blood pressure",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b3ba250306ca87fb": {
    "verdict": "ok",
    "note": "fs-id2595511 (CNXML solution: False). csc^2(x)(1+sin^2 x) = csc^2 x + 1 = cot^2 x + 2, not cot^2 x; confirmed numerically at x=1 (2.412282927437392 vs cot^2(1)=0.41228292743739187, not equal)."
@@ -74804,6 +76150,14 @@
   "b3d567be10dacb9e": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b3d5c31286cd055a": {
+   "verdict": "ok",
+   "note": "prose-built from fs-id1231476: gonads, adrenal cortex -> mesoderm; posterior pituitary, pineal, adrenal medulla -> ectoderm; thyroid, parathyroid, pancreas, thymus -> endoderm; anterior pituitary omitted (RQ fs-id1954035 keys it)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b3d7a3dc3aae85f7": {
    "verdict": "ok"
@@ -75741,6 +77095,14 @@
     "result": "agrees"
    }
   },
+  "b5edc58bc77990bd": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2278782, key C; fs-id2695577 antidote is pilocarpine, table classes it a muscarinic agonist",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b5eeb8c8173b0c1e": {
    "verdict": "ok",
    "note": "KC 3 13.2 § Autoclaves, m58854",
@@ -75988,6 +77350,14 @@
     "result": "agrees"
    }
   },
+  "b692e72e3019b285": {
+   "verdict": "ok",
+   "note": "Glossary fs-id1235452 enzyme that initiates a phosphorylation cascade upon activation; body fs-id1121215.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b698e76533bc76f4": {
    "verdict": "ok"
   },
@@ -76134,6 +77504,10 @@
     "result": "agrees"
    }
   },
+  "b6f4a11e9f52b97b": {
+   "verdict": "ok",
+   "note": "Source fs-id1040855; model answer is solution fs-id1081468 verbatim; checks are its clauses."
+  },
   "b6f5ca7c41f4b052": {
    "verdict": "ok",
    "note": "glossary recall: thigmomorphogenesis (fs-idp26782400) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -76241,6 +77615,14 @@
    "note": "source exercise fs-id1167662451034 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b73f76bdaf213de8": {
+   "verdict": "ok",
+   "note": "RQ fs-id2821212, key B medial forebrain bundle; body fs-id2796380 'The olfactory cortex, the septal nuclei of the basal forebrain, and the amygdala project into the hypothalamus through the medial forebrain bundle' and fs-id1987861 output tracts to brain stem",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -76423,6 +77805,10 @@
   "b78c8f3fc86c7b6c": {
    "verdict": "ok",
    "note": "Microbiology 13.2 source CYU selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the Membrane Filters and HEPA filter paragraphs)"
+  },
+  "b794479a53329e17": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1917636, solution fs-id1850370 verbatim"
   },
   "b795bf115549cb56": {
    "verdict": "ok",
@@ -77626,6 +79012,10 @@
    "verdict": "ok",
    "note": "m66408 Critical Thinking fs-idp41212752 (pineal gland/SCN); model answer reuses the source solution's own sentences verbatim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "ba830305a51a0ac5": {
+   "verdict": "ok",
+   "note": "source CT fs-id1652519, solution fs-id1225394 verbatim"
+  },
   "ba867c23b939262e": {
    "verdict": "ok",
    "note": "Review fs-id704483, key D calcitonin and parathyroid hormone (solution fs-id2035794); body fs-id852197 'their opposing functions'",
@@ -77792,6 +79182,14 @@
   "bb04192f350297ea": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bb0469ea3c99823c": {
+   "verdict": "ok",
+   "note": "RQ fs-id2489364, key C optic; body fs-id2000325 'Another projection of the optic nerve, however, goes to the hypothalamus.'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -78711,6 +80109,14 @@
     "result": "agrees"
    }
   },
+  "bceac55864830446": {
+   "verdict": "ok",
+   "note": "source fs-id1897050 key B; Heart paragraph: wall of the atria secrete ANP",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bceecfe4b4d7c963": {
    "verdict": "ok",
    "note": "Vertex of f(x)=x^2-2x: h=1,k=f(1)=-1, so (1,-1); computed via node, matches printed function. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -79028,6 +80434,14 @@
   "bda8e865630332bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bdaaf5d48207d1c4": {
+   "verdict": "ok",
+   "note": "Body fs-id1569493: Steroid hormones are derived from the lipid cholesterol.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -79921,6 +81335,10 @@
    "verdict": "ok",
    "note": "CNXML exercise fs-id1167793571136 (Critical Thinking, unkeyed) — model answer author-written from § Gram Staining, no source key."
   },
+  "bff547c872f59218": {
+   "verdict": "ok",
+   "note": "source CT fs-id2606105, model answer = solution fs-id1616496 verbatim"
+  },
   "bff92a9f0c157ff4": {
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Identify the graph of the nondegenerate conic section $16x^2 | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -80100,6 +81518,14 @@
   "c04e6d8f55cb1b60": {
    "verdict": "ok",
    "note": "signs +--+ = 2 changes -> 2 or 0 positive; f(-x) 1 change -> 1 negative; key p1297 #35"
+  },
+  "c0528f441d39f155": {
+   "verdict": "ok",
+   "note": "body fs-id1492434 sentence prints 'jet lag'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c0562e18c0bb6734": {
    "verdict": "ok",
@@ -80760,6 +82186,14 @@
     "result": "agrees"
    }
   },
+  "c222f74a0b3e8ec5": {
+   "verdict": "ok",
+   "note": "body cloze list fs-id805721 item 3",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c225fa75f4a4d77b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -81186,6 +82620,14 @@
   },
   "c33b3951804de136": {
    "verdict": "ok"
+  },
+  "c33c00ea934d06e7": {
+   "verdict": "ok",
+   "note": "author MC from fs-id1431797 'The hCG hormone promotes progesterone synthesis and reduces the mother’s immune function...'; distractors hPL, relaxin, estrogens assigned other roles",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c33e0c4115a68a54": {
    "verdict": "ok",
@@ -82780,6 +84222,14 @@
     "result": "agrees"
    }
   },
+  "c6eb3a6f85c1ec03": {
+   "verdict": "ok",
+   "note": "Review fs-id1398516 key B high cortisol; body fs-id1475149 'caused by hypersecretion of cortisol'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c6eb86d0ac66eeab": {
    "verdict": "ok",
    "note": "glossary recall: distraction display (fs-idm25990688) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -82863,6 +84313,14 @@
    "note": "body cloze from § Detection of a Virus: \"Regardless of the method of cultivation, once a virus has been introduced into a whole host organism, embryo, or tissue-culture cell, a sam…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c723841765000c31": {
+   "verdict": "ok",
+   "note": "Glossary fs-id1503697; body fs-id1475912 cAMP is quickly deactivated by the enzyme phosphodiesterase (PDE).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -83199,6 +84657,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "c819deb605a59d41": {
+   "verdict": "ok",
+   "note": "caption cloze, fig-ch16_05_02: 'two basic regions: the midline and the hemispheres' ; accept midline region",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -83812,6 +85278,14 @@
     "result": "agrees"
    }
   },
+  "c98f5c1c6ded4a42": {
+   "verdict": "ok",
+   "note": "cloze bleaching from fs-id2463524",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c98ffc0f90b2f183": {
    "verdict": "ok",
    "note": "Source MC fs-id1167660269926, solution D verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -83954,6 +85428,22 @@
   "c9fa154390673e01": {
    "verdict": "ok",
    "note": "KC 7 43.6 § Gastrulation, m66678 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c9fad283cbc9f393": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1231476 sentence 3 (connector In contrast dropped) 'endocrine glands that arise from the endoderm and ectoderm produce the amine, peptide, and protein hormones'; steroid hormones are the mesoderm glands' (sentence 2)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ca0025a5fd53b3be": {
+   "verdict": "ok",
+   "note": "box cloze fs-id2532220 s1, referent 'The response to exercise'; key 'set points'; accept setpoints|homeostatic set points",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85197,11 +86687,27 @@
    "verdict": "ok",
    "note": "Matches m66445 exercise fs-idm71000707, solution fs-idm40512362 (cell theory + adult human formation). Page recombines the solution's numbered list into prose with no added claim; all five CHECKS clauses restate solution content (theory's three tenets, gamete fusion to fertilized egg, cells arise from division of existing cells). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "cd150507a3315af8": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1599720, key A; body fs-id2764618 nicotinic receptors on all ganglionic neurons",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cd20c522d1cb5ca4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-1",
+    "result": "agrees"
+   }
+  },
+  "cd231e0eaaf957a2": {
+   "verdict": "ok",
+   "note": "glossary fs-id922126 infundibulum; body eip-577 'a stem called the infundibulum (or pituitary stalk)'; accept pituitary stalk (module synonym), infundibula (Latin plural)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -85835,6 +87341,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "ce7923a6de84f0ae": {
+   "verdict": "ok",
+   "note": "source CT fs-id1425312, solution fs-id2875839 verbatim"
   },
   "ce797987e9288b4c": {
    "verdict": "ok",
@@ -86535,6 +88045,14 @@
     "result": "agrees"
    }
   },
+  "d048c05f389286ac": {
+   "verdict": "ok",
+   "note": "fs-id1351515 key B pinealocytes; body: 'The pinealocyte cells ... produce and secrete ... melatonin'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d0493f7ecb4d10af": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -86565,6 +88083,14 @@
   "d05b96068804af5e": {
    "verdict": "ok",
    "note": "P(0)=90/(1+5)=15, so y-intercept (0,15), matching CNXML fs-id1697174 (Numeric #15). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "d061a2eff6e6fea6": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1524394 'The posterior lobe houses the axon terminals of hypothalamic neurons.'; accept axons (fs-id1953873: hormones travel along the axons; checker fix)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d061a8995030a51a": {
    "verdict": "ok",
@@ -86688,6 +88214,14 @@
   "d09ef34b292bb292": {
    "verdict": "ok",
    "note": "m66566 critical-thinking fs-idp13659584, solution verbatim as model answer. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "d09f08c8a0c730a7": {
+   "verdict": "ok",
+   "note": "glossary recall hemisection; body fs-id1339554; accept hemi-section",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d09f58f456f8493e": {
    "verdict": "ok",
@@ -87356,6 +88890,14 @@
     "result": "agrees"
    }
   },
+  "d2957d4d8d65d019": {
+   "verdict": "ok",
+   "note": "table tbl-ch18_03 rows: GH, PRL, ACTH, FSH, LH = Anterior; ADH, Oxytocin = Posterior; MSH = Intermediate zone; TSH row left out (RQ fs-id1085968 keys it)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d2983964179e28ed": {
    "verdict": "ok",
    "note": "textin built from m66376 glossary definition fs-id1439064 (exocytosis); prompt is the source meaning, answer is the glossary term, term does not appear in the prompt. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -87592,6 +89134,14 @@
     "result": "agrees"
    }
   },
+  "d3684e46c496f2ae": {
+   "verdict": "ok",
+   "note": "RQ fs-id2139714, key B amygdala; fs-id1941930 amygdala sends signals to hypothalamus when anxious or scared, stress hormones",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d368b6cfcbf02383": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -87820,6 +89370,14 @@
   "d3df903732ba26ee": {
    "verdict": "ok",
    "note": "fs-id1076026 key B mesenchyme; fs-id1452398 mesenchymal cells supply replacement cells in adult tissue",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d3dfbec2fd1b8fee": {
+   "verdict": "ok",
+   "note": "body cloze, m46604 fs-id2252793 sentence 1: 'centered on the pons'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88198,6 +89756,14 @@
   "d48221e616be5863": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "d48a5c052f2df13e": {
+   "verdict": "ok",
+   "note": "cloze fs-id2640277 sensory discrimination (re-blanked from stroke)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -88655,6 +90221,10 @@
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "d5af4ef87dcd2a23": {
+   "verdict": "ok",
+   "note": "source CT fs-id1842503, model answer = solution fs-id1917104 verbatim"
+  },
   "d5b7a16019b2a370": {
    "verdict": "ok",
    "note": "re-read against m46032 CNXML and page text",
@@ -88953,6 +90523,14 @@
   "d65b22adc8c29f4c": {
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Which conic section is represented by $3x^2+6xy+3y^2-36y-125"
+  },
+  "d65d699814a6417a": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2523907 hemorrhagic stroke ; accept haemorrhagic stroke",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d65f72c486ac0f99": {
    "verdict": "ok"
@@ -90496,6 +92074,14 @@
     "result": "agrees"
    }
   },
+  "da3e371da8c8684a": {
+   "verdict": "ok",
+   "note": "source RQ fs-id2081476, key C; fs-id2307969 MCP part of cortico-ponto-cerebellar pathway",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "da41db84e17c714e": {
    "verdict": "ok",
    "note": "KC 5 21.3 § Vaccines for Prevention, m66537 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | Biology KC re-review Sep 24 2026 (knowledge-check-21-29.md:92): self-check replaced or its model answer/rubric edited by an Opus fixer; model answer re-read by the parent against the module CNXML sentences it quotes, rubric clauses checked against the model answer; second Opus checker over all replacements"
@@ -90799,6 +92385,14 @@
    "verdict": "ok",
    "note": "Names the three arboviral diseases this module discusses (yellow fever, dengue fever, chikungunya fever) and the arthropod-borne/mosquito-vector naming rationale from the section-opening sentence and each subsection's own vector sentence. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "dadccc4a3ce90d10": {
+   "verdict": "ok",
+   "note": "glossary recall spinocerebellar tract; body fs-id2242057; accept spinocerebellar, spino-cerebellar tract",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dae0311d1d68eaec": {
    "verdict": "ok",
    "solved": {
@@ -90871,6 +92465,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "dafb2b904c3f8116": {
+   "verdict": "ok",
+   "note": "IL fs-id2145937 selfcheck; model = source solution fs-id2673580; fixed by Orthostatic box fs-id2262542"
   },
   "dafcc1ae1f4d4e75": {
    "verdict": "ok",
@@ -91036,6 +92634,14 @@
     "result": "agrees"
    }
   },
+  "db7a2b33715c89de": {
+   "verdict": "ok",
+   "note": "summary cloze, fs-id2123442 sentence 1, 'These higher centers' given as 'The higher centers of the brain'; key 'medulla' verbatim",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "db7b5036fde6555b": {
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -91134,6 +92740,10 @@
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
     "result": "agrees"
    }
+  },
+  "dbbc3f272bd9e4c3": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; rubric clauses copied from it; re-read against CNXML (At the hospital, a neurologist administers the men)"
   },
   "dbcac5436965dcfb": {
    "verdict": "ok",
@@ -91896,6 +93506,14 @@
     "result": "agrees"
    }
   },
+  "dde0c387ba8a1e84": {
+   "verdict": "ok",
+   "note": "cloze fs-id2364152 superior colliculus",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dde262246712eaa6": {
    "verdict": "ok",
    "note": "body cloze fs-id2291906 'based on the number of axes of motion provided by each'; accept planes of motion (summary fs-id3038250 'three planes of motions') and planes (fs-id2291906 'one plane'/'two planes')",
@@ -91968,6 +93586,14 @@
   "de013bfd968cb26c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (carried by hand, October 4, 2026 re-review): Read from the option specs, not the old key. Option 1 is the only one that matches f(x)=x^3 for x<-1 (cubic ending at an OPEN circle at (-1,-1)), f(x)=-2 for -1<x<4 (segment at y=-2, open at both ends), f(x)=sqrt(x) for x>4 (sqrt drawn from x=4 with an open circle at (4,2), since sqrt(4)=2). Option 0 draws the sqrt piece from the origin; option 2 puts the middle piece at y=+2. answerIndex 1 confirmed.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "de0279507691423a": {
+   "verdict": "ok",
+   "note": "source fs-id1765862 key D; Kidneys: RAAS reabsorption 'increases blood flow and blood pressure'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -92937,6 +94563,14 @@
    "verdict": "ok",
    "note": "Body Visual Connection selfcheck; matches CNXML m66708 exercise fs-idp4784704 solution verbatim (\"The ground is permanently frozen so the seeds will keep even if the electricity fails.\"). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "e048f350c76ae286": {
+   "verdict": "ok",
+   "note": "Body fs-id1863415: Such hormonal stimuli often involve the hypothalamus, which produces releasing and inhibiting hormones.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e04ca8e889c47e44": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -93155,6 +94789,14 @@
     "by": "orchestrator-solver",
     "result": "adjudicated",
     "note": "parent Sep 23 2026: synonym of the key, already graded correct by the accept list/plural fold; key stands"
+   }
+  },
+  "e0c898a51dde8ebe": {
+   "verdict": "ok",
+   "note": "body cloze, m46604 fs-id2250789: 'cerebellar role in procedural memory' ; accept procedural memory|motor|motor memory (next sentence: procedural memory is motor memory)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
    }
   },
   "e0cb745e45b75333": {
@@ -93459,6 +95101,14 @@
     "result": "agrees"
    }
   },
+  "e18222916e8ad43b": {
+   "verdict": "ok",
+   "note": "glossary plantar reflex; fs-id1907883",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e182a4912bef6b4a": {
    "verdict": "ok",
    "note": "KC 2 9.3 § Synchondrosis (fs-id2519680), thoracic-cage paragraph, m46381"
@@ -93523,6 +95173,14 @@
     "result": "agrees"
    }
   },
+  "e1a8b8f0af40d3c8": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2644060: 'nerves that connect to the diencephalon and brain stem' — key diencephalon",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e1a9b54baebc1716": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"The action potential is then propagated along a myelinated axon to the axon terminals.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -93552,6 +95210,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "e1bd80ef3992683c": {
+   "verdict": "ok",
+   "note": "source fs-id2030074 key D coordination exam; fs-id2644060 'coordination exam … assess the functions of the cerebellum'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -94758,6 +96424,10 @@
    "verdict": "ok",
    "note": "carried 2026-09-28 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "e48be8ab9bfb077c": {
+   "verdict": "ok",
+   "note": "model answer is the source solution verbatim; rubric clauses copied from it; re-read against CNXML (If the left cerebral hemisphere is dominant in the)"
+  },
   "e48cddca87203823": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -94823,6 +96493,14 @@
   "e4b67dbaf5e17084": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e4bb2e9431cba1f5": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1418043, key A vermis; fs-id2152546 vermis receives dorsal column/spinocerebellar input",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -95089,6 +96767,10 @@
    "verdict": "ok",
    "note": "300*0.83^24=3.4276 -> 3.43 mg; key p1316 #55 prints \"3.43 g\" - source unit erratum, mg is correct (300 mg shrinking), logged in errata file"
   },
+  "e539a8693414bacf": {
+   "verdict": "ok",
+   "note": "CT fs-id2212370, model answer = solution fs-id1514710 verbatim; body fs-id2582199 mammary glands"
+  },
   "e53b83891edc5c5f": {
    "verdict": "ok",
    "note": "Bio 21.1 rabies/HIV-1 selfcheck: HIV-1 checkpoint made verbatim to the source solution (m66534); parent re-read Sep 23 2026"
@@ -95228,6 +96910,14 @@
   "e58dd0595c531836": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e5926d35bb10b621": {
+   "verdict": "ok",
+   "note": "fs-id1382612, key B (fs-id1841153) = decreased basal metabolic rate; body fs-id1890419",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -96015,6 +97705,14 @@
    "verdict": "ok",
    "note": "3.2+3.4+...+5.6: a1=3.2,d=0.2,an=5.6,n=13 (node); Sn=57.2; matches CNXML fs-id1165137745115 solution S13=13(3.2+5.6)/2=57.2."
   },
+  "e7a8a9e0c52a8859": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (insula)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e7ac648ef3910fc2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -96479,6 +98177,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver-2",
+    "result": "agrees"
+   }
+  },
+  "e931b3d2ab7dac08": {
+   "verdict": "ok",
+   "note": "bins from fs-id1376888 (UMN list) and fs-id2623052 (LMN list, flaccid paralysis); 8 items, 4/4; decreased control of movement dropped (reads as LMN partial loss of voluntary control too)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -97390,6 +99096,14 @@
   "eb6fad34d37482ad": {
    "verdict": "ok"
   },
+  "eb71bf6a1143f8c6": {
+   "verdict": "ok",
+   "note": "glossary recall: mydriasis; body fs-id2502386 bolds it; accept mydriases (irregular -is/-es plural, grader-checked)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eb72e0f976ff2254": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -97715,6 +99429,14 @@
     "result": "agrees"
    }
   },
+  "ec35542316b05fae": {
+   "verdict": "ok",
+   "note": "summary-built MC fs-id1393639: 'The mental status exam is concerned with the cerebrum…'; distractors are the module's other exam sections; only mental status exam is tied to the cerebrum",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ec37918f216b874a": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 564): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -97862,6 +99584,14 @@
     "result": "agrees"
    }
   },
+  "ec7ad0c8d01f9453": {
+   "verdict": "ok",
+   "note": "body cloze eip-269 even bone tissue has endocrine functions; accept adds osseous, osseous tissue (6.3 synonym)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ec7e02805ea8ef86": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Medically important species exist in the four fungal groups Zygomycota, Ascomycota, Basidiomycota, and Microsporidia\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -97990,6 +99720,14 @@
   "ecc914887438b77a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ecc95b439bccc458": {
+   "verdict": "ok",
+   "note": "glossary recall exogenous; body fs-id2315962",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98746,6 +100484,14 @@
     "result": "agrees"
    }
   },
+  "eea9e248e25c2962": {
+   "verdict": "ok",
+   "note": "summary cloze fs-id1884720: 'Dysfunction of the production of insulin or target cell resistance to the effects of insulin causes diabetes mellitus...'; accept responsiveness from fs-id1845479 (checker)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eeb6970587008c5d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99457,6 +101203,14 @@
     "result": "agrees"
    }
   },
+  "f0a9a28646f55cd3": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (posterior parietal cortex)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f0aad06c920780ab": {
    "verdict": "ok",
    "note": "Review fs-id2051628, key A = greater tubercle, source order",
@@ -99605,6 +101359,14 @@
   "f10ddba0e52eaf60": {
    "verdict": "ok",
    "note": "key-term recall: Helicobacter pylori; printed in § Epsilonproteobacteria: \"Helicobacter pylori can cause chronic gastritis, which can lead to ulcers and stomach cancer.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f10ea43c3f135142": {
+   "verdict": "ok",
+   "note": "Summary fs-id1273482: Regulation of hormone release is primarily achieved through negative feedback.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -99877,6 +101639,14 @@
    "verdict": "ok",
    "note": "body CYU2 (fs-id1167660313108), unchanged, stays selfcheck: honest answer needs the general sentence plus both the gelatinase and caseinase examples, § Protein Catabolism. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "f1cea7d6a39b29af": {
+   "verdict": "ok",
+   "note": "key re-read against the module body sentence / glossary in the raw CNXML; grader-checked accept members (stereognosis)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f1d12464f3bb7114": {
    "verdict": "ok",
    "note": "re-read against CNXML m58913; keyed sentence/table checks out | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -99962,6 +101732,14 @@
   "f2107da7ffc879fa": {
    "verdict": "ok",
    "note": "Both numerator and denominator expand to degree 3; leading-coefficient ratio 1/2; matches CNXML Try It 8. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "f211a982be8ea6b2": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1881166, key C antibiotics; fs-id2242058 lists alcohol, mercury, hereditary",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "f212e5bd4c104cb4": {
    "verdict": "ok",
@@ -100309,6 +102087,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f2d11e2ff7f053a6": {
+   "verdict": "ok",
+   "note": "source fs-id1706649 solution verbatim; checks are its clauses"
   },
   "f2d3198a13eaecee": {
    "verdict": "ok",
@@ -101148,6 +102930,10 @@
     "result": "agrees"
    }
   },
+  "f487befa76045367": {
+   "verdict": "ok",
+   "note": "CT fs-id2336089 model = fs-id2254240"
+  },
   "f489c04aced9f8f8": {
    "verdict": "ok",
    "note": "KC 5 21.1 § body The Challenge of Virus Classification (fs-idp177454736), m66534 — parent re-read against the module"
@@ -101211,6 +102997,14 @@
   "f4aee428a8be892b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f4b654ccae4bb30e": {
+   "verdict": "ok",
+   "note": "Body cloze, m46687 fs-id1372354: 'The primary functional cells of the parathyroid glands are the chief cells.' Accept adds 'parathyroid chief cells' (figure 1814 label 'Parathyroid (chief) cell').",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -102523,9 +104317,21 @@
   "f7acadcdf3415a19": {
    "verdict": "ok"
   },
+  "f7b9f5b77559ed4d": {
+   "verdict": "ok",
+   "note": "CT fs-id1517525 source solution verbatim; checks are its clauses"
+  },
   "f7bab781905de88d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f7bc6f391560479f": {
+   "verdict": "ok",
+   "note": "Source fs-id805158 key B = thyroid hormone; fs-id1885599/fs-id1524427 put thyroid hormone receptors inside the cell.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -102923,6 +104729,14 @@
   "f8b41e16ec6f757d": {
    "verdict": "ok",
    "note": "sortbins from table fs-id1167584986614 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "f8b53713a1746b02": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1325392 delta cell; body bolds term-00005; accept delta (checker)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -103845,6 +105659,14 @@
   "faeae6343e8917af": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "faebcc7057ebb403": {
+   "verdict": "ok",
+   "note": "RQ fs-id1363683 key D vagus",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -105161,6 +106983,14 @@
     "result": "agrees"
    }
   },
+  "fdb82c299adaaddd": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2673650: 'make the difference with respect to proper treatment and the extent of recovery' — key treatment ; accept therapy (module: \"the most effective therapy\", fs-id2147627)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fdc1bf88943d64e9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -105381,6 +107211,14 @@
    "verdict": "ok",
    "note": "KC 5 22.5 § body Cooperation between Bacteria and Eukaryotes: Nitrogen Fixation (fs-idp165163504), m66549 — parent re-read against the module"
   },
+  "fe4e8e1770bac5db": {
+   "verdict": "ok",
+   "note": "Review fs-id1513874 key C; verbatim; body: ductless glands, blood vessels transport the hormones",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fe4f02290f8fd05e": {
    "verdict": "ok",
    "note": "carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -105482,6 +107320,14 @@
   "fe87b0f95878cbc1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fe886824548d4128": {
+   "verdict": "ok",
+   "note": "source RQ fs-id1422524 key B; fs-id1073276",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -106047,6 +107893,14 @@
    "note": "source exercise fs-idp22443296 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "ffc12a58f945b5b1": {
+   "verdict": "ok",
+   "note": "cloze sacral from fs-id2796380",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },

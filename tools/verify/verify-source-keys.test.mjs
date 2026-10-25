@@ -76,6 +76,8 @@ const MODULE = `<document xmlns="http://cnx.rice.edu/cnxml">
 <exercise id="ex-key"><problem><para>Which complex is not involved in the establishment of conditions for ATP synthesis?</para>
 <list list-type="enumerated" number-style="lower-alpha"><item>photosystem I</item><item>ATP synthase</item><item>photosystem II</item><item>cytochrome complex</item></list></problem>
 <solution><para>C</para></solution></exercise>
+<exercise id="ex-short"><problem><para>Which hormone produced by the adrenal glands is responsible for mobilization of energy stores?</para></problem>
+<solution><para>Cortisol.</para></solution></exercise>
 <exercise id="ex-prose"><problem><para>Describe the pathway of electron transfer from photosystem II to photosystem I.</para></problem>
 <solution><para>Electrons leave photosystem II, pass through plastoquinone to the cytochrome complex, then plastocyanin, and arrive at photosystem I.</para></solution></exercise>
 </content>
@@ -88,9 +90,10 @@ const MODULE = `<document xmlns="http://cnx.rice.edu/cnxml">
 const source = readModule(MODULE);
 
 test('readModule reads exercises, option keys, glossary alternates, and bolded terms', () => {
-  assert.equal(source.exercises.length, 2);
+  assert.equal(source.exercises.length, 3);
   assert.equal(source.exercises[0].keyed, 2);
-  assert.equal(source.exercises[1].keyed, null);
+  assert.equal(source.exercises[1].keyed, null); // "Cortisol." is a phrase, not a lettered key
+  assert.equal(source.exercises[2].keyed, null);
   assert.ok(source.glossary.has(compact('deductive reasoning')));
   assert.ok(source.terms.has(compact('photon')));
 });
@@ -289,6 +292,22 @@ test('a source solution that only says the answer is open keys nothing', () => {
   assert.equal(judge('Briefly discuss the most interesting or surprising thing you learned about viruses.', 'A good answer names a specific virus and explains why it surprised the learner.'), 'unkeyed');
   // a solution that goes on to give a sample answer is still compared
   assert.equal(judge('Describe how a prokaryote in a deep-sea vent obtains its energy and carbon.', 'Lytic phages burst their host cells after assembling new virions.'), 'diverges');
+});
+
+test('a one-phrase source solution carried whole in a sentence-long model answer is reworded, not diverging', () => {
+  // Anatomy and Physiology 17.6: the Interactive Link key "Cortisol." has to be
+  // wrapped in a sentence so the selfcheck rubric can hold two checkpoints.
+  const selfcheck = (model) => judgeSelfcheck({
+    type: 'selfcheck',
+    question: 'Which hormone produced by the adrenal glands is responsible for mobilization of energy stores?',
+    model,
+  }, source);
+  const wrapped = selfcheck('Cortisol is the hormone produced by the adrenal glands that is responsible for mobilization of energy stores.');
+  assert.equal(wrapped.status, 'reworded');
+  assert.equal(wrapped.exercise.id, 'ex-short');
+  assert.equal(selfcheck('Cortisol.').status, 'verbatim');
+  // a wrong hormone in the same sentence still diverges
+  assert.equal(selfcheck('Aldosterone is the hormone produced by the adrenal glands that is responsible for mobilization of energy stores.').status, 'diverges');
 });
 
 test('isLifeSciencesPage scopes the body-print gate to biology and microbiology, not math', () => {

@@ -3820,6 +3820,362 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2282,
       "rationale": "The tectum is the midbrain roof made of both the superior and inferior colliculi; the superior colliculus is part of it, not a synonym. m46533 (§13.2) glossary: tectum, \"region of the midbrain, thought of as the roof of the cerebral aqueduct, which is subdivided into the inferior and superior colliculi\" (fs-id1830365); superior colliculus, \"half of the midbrain tectum\" (fs-id1566988); body fs-id1282943: \"The tectum is composed of four bumps known as the colliculi.\" The page reads \"The name of the tract comes from the tectum, the roof of the midbrain, of which the superior colliculus is a part\" with a visible Source note and a footer sentence. Evidenced by the chapter 14 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/01-divisions-of-the-autonomic-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46582",
+      "sourceElementIds": [
+        "fs-id2493227",
+        "fs-id2463785",
+        "fs-id2848797"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2287,
+      "rationale": "The plexus inside the wall of the digestive tract is the myenteric (Auerbach) plexus; the mesenteric plexuses are sympathetic plexuses around the mesenteric arteries. m46579 (§15.2) fs-id2101505: \"There are a few myenteric plexuses in which the nervous tissue in the wall of the digestive tract organs can directly influence digestive function\"; m46506 (§23.1) fs-id1838265: \"The myenteric plexus (plexus of Auerbach) lies in the muscularis layer of the alimentary canal\"; no other module uses \"mesenteric plexus.\" The page reads \"myenteric plexus\" in the body and the Key terms entry with visible Source notes and a footer sentence, and the author-written recall item keys \"myenteric plexus.\" Evidenced by the chapter 15.1 checker and the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/01-divisions-of-the-autonomic-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46582",
+      "sourceElementIds": [
+        "fs-id2008905"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2288,
+      "rationale": "Adrenalin is a currently marketed, FDA-labeled brand of epinephrine injection (NDA 204640, Initial U.S. Approval 1939, label revision 2026), so \"Though the drug is no longer sold\" is false. The book is silent elsewhere. The page keeps the sentence as printed and adds a visible Source note after it and a footer sentence. Evidenced by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/01-divisions-of-the-autonomic-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46582",
+      "sourceElementIds": [
+        "fs-id2673103",
+        "fs-id2045361"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2289,
+      "rationale": "The lesser splanchnic nerve ends in the celiac plexus region, not the inferior mesenteric ganglion, which the lumbar splanchnic nerves reach. The module's own Figure 15.2 (1501) runs the bundle labeled \"Lesser splanchnic\" from T9-T11 to the \"Celiac ganglion\"; only T12-L2 reach the \"Inferior mesenteric ganglion.\" The page reads \"…project onto the celiac ganglion\" in the Key terms entry with a visible Source note and a footer sentence. Evidenced by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/01-divisions-of-the-autonomic-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46582",
+      "sourceElementIds": [
+        "fs-id2584576",
+        "fs-id2071615"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2290,
+      "rationale": "\"Paravertebral ganglia\" is another name for the sympathetic chain ganglia as a whole, not a set above them. The module's body fs-id2990238: \"Ganglia, which are part of the sympathetic chain ganglia, are also called the paravertebral ganglia,\" and its glossary entry superior cervical ganglion (fs-id2622947): \"one of the paravertebral ganglia.\" Same ruling as erratum 2241 (m46553). The page reads \"part of the sympathetic chain ganglia\" in the Key terms entry with a visible Source note and a footer sentence. Raised by the chapter 15.1 author and confirmed by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/02-autonomic-reflexes-and-homeostasis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46579",
+      "sourceElementIds": [
+        "fs-id2101790"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2296,
+      "rationale": "\"effere\" is not a Latin word; the root meaning \"to carry\" is ferre, and efferre already contains the prefix ef-, so the sentence needs \"ferre\" (Lewis and Short, A Latin Dictionary, entry effero). The page reads \"ferre\" with a visible Source note and a footer sentence. Ruled by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/02-autonomic-reflexes-and-homeostasis.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46579",
+      "sourceElementIds": [
+        "fs-id2676672"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2297,
+      "rationale": "The afferent limb of the orthostatic reflex is the arterial baroreceptors, not proprioceptors. m46719 (§13.3) fs-id1828457: \"The bases of the common carotids contain stretch receptors that immediately respond to the drop in blood pressure upon standing. The orthostatic reflex is a reaction to this change in body position\"; this module's Afferent Branch paragraph fs-id2455581 names the baroreceptor as an important afferent branch of the cardiovascular and vasomotor reflexes; m46672 (§19.4) fs-id1559549 names the baroreceptor reflex. The page names the baroreceptors of the carotid sinuses and aortic arch with a visible Source note and a footer sentence. Evidenced by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/03-central-control.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46581",
+      "sourceElementIds": [
+        "fs-id1987861",
+        "fs-id2000325"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2304,
+      "rationale": "The parasympathetic pupillary light reflex relays through the pretectal nucleus to the Edinger-Westphal nucleus, not the hypothalamus; re-tests erratum 2173 (m46500), which asked for the point to be re-tested in chapter 15. The module's own Figure 15.10 (1509) notes: \"Action potentials from right eye reach both right and left pretectal nuclei\"; m46607 (§16.3) fs-id1582811 gives the same relay; Sun and May 2014, doi:10.1002/cne.23602. The page transcribes the two sentences of fs-id1987861 as printed with a visible Source note giving the relay (the sympathetic sentence after them is defensible and left without a note) and a footer sentence; fs-id2000325 leans on the same claim and is transcribed with only a verb-agreement fix (erratum 2307). Chapter 15.3 author and chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/03-central-control.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46581",
+      "sourceElementIds": [
+        "fs-id2979548",
+        "fs-id2650102",
+        "fs-id2654585",
+        "fs-id3033506",
+        "fs-id2368301",
+        "fs-id2225878",
+        "fs-id2487502"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2305,
+      "rationale": "The fibers that reach the heart and vessel walls and release norepinephrine are postganglionic. m46672 (§19.4) fs-id862646: the cardioaccelerator center sends fibers \"forming the cardiac nerves via sympathetic ganglia (the cervical ganglia plus superior thoracic ganglia T1-T4)\" and sympathetic stimulation releases norepinephrine at the cardiac nerves; m46582 (§15.1) fs-id2430550: \"All preganglionic fibers, both sympathetic and parasympathetic, release ACh.\" The page prints \"postganglionic\" in the body and both Key terms entries with visible Source notes; the Review Question stem keeps the source's \"preganglionic\" with its key unchanged; footer sentence. Evidenced by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/04-drugs-that-affect-the-autonomic-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46587",
+      "sourceElementIds": [
+        "fs-id2242184"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2309,
+      "rationale": "Bronchodilation is a beta-2 effect; phenylephrine is an alpha-1 agonist with minimal beta activity and relieves congestion by constricting nasal-mucosa vessels. Swedish Medical Products Agency public assessment report, Fenylefrin Abcur: phenylephrine \"can also activate β-adrenergic receptors but at concentrations more elevated than for the α1-adrenergic receptors\"; Johnson, J Allergy Clin Immunol 2006;117:18, doi:10.1016/j.jaci.2005.11.012. The book is silent on which receptor dilates bronchi. The page says phenylephrine opens the nasal passages by constricting the nasal blood vessels, with a visible Source note and a footer sentence. Evidenced by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/04-drugs-that-affect-the-autonomic-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46587",
+      "sourceElementIds": [
+        "fs-id2642884"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2310,
+      "rationale": "Vascular beta-2 receptors mediate vasodilation and vasoconstriction is alpha-1 mediated, so beta-blockers do not \"block the β-receptors associated with vasoconstriction\" or work \"by allowing blood vessels to dilate\"; the cardioacceleration half (beta-1) is right. m46603 (§20.4) fs-id2106767: neurons that control vasodilation in brain and skeletal-muscle vessels \"release norepinephrine that binds to β2 receptors\"; m46672 (§19.4) fs-id1604780: beta blockers block beta-1 receptors, \"thereby slowing HR.\" The page ties beta-blockers to cardioacceleration only, with a visible Source note and a footer sentence. Evidenced by the chapter 15 prose claim pass, October 21, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/04-the-sensory-and-motor-exams.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46640",
+      "sourceElementIds": [
+        "fs-id1246774",
+        "fs-id503718",
+        "fs-id503719"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2314,
+      "rationale": "The jaw-jerk reflex is the stretch reflex of the masseter, a muscle of chewing, and the trigeminal nerve controls those muscles; the vestibulocochlear nerve is a special-sense nerve. m46607 (§16.3) glossary fs-id1471364: jaw-jerk reflex, \"stretch reflex of the masseter muscle\"; fs-id1610997: \"The trigeminal nerve controls the muscles of chewing, which are tested for stretch reflexes\"; fs-id1540714: the vestibulocochlear nerve is dedicated to equilibrium and hearing. The page reads \"trigeminal nerve\" in the Review Question stem with a visible Source note and a footer sentence; the options, their order, and the key are unchanged. Found in the chapter 16 run facts (Part C), applied by the 16.4 author and ruled by the orchestrator, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/04-the-sensory-and-motor-exams.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46640",
+      "sourceElementIds": [
+        "fs-id2297726",
+        "fs-id2105016",
+        "fs-id2105017"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2315,
+      "rationale": "The keyed option, an axon in the ventral nerve root, is a feature of the motor side of a reflex arc, not of senses: m46640 fs-id2308487 associates sensory functions with the dorsal regions of the spinal cord and motor function with the ventral side, and fs-id1956663 has the stretch signal enter the cord through the dorsal root; the four options are the contrasts the book draws between somatic and visceral reflexes (m46579 §15.2, fs-id2101790). The page reads \"reflexes\" in the stem with a visible Source note and a footer sentence; the options, their order, and the key are unchanged. Found by the 16.4 author and ruled by the orchestrator, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/05-the-coordination-and-gait-exams.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46604",
+      "sourceElementIds": [
+        "fs-id1481522",
+        "fs-id2036310",
+        "fs-id1926526"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2316,
+      "rationale": "The keyed option \"processing visual information\" is a function the module attributes to the cerebellum: fs-id1335742 \"Visual cortex information is also part of the processing that occurs in the cerebrocerebellum\"; fs-id2152546 the vermis and flocculonodular lobe \"are involved in comparing visual information, equilibrium, and proprioceptive feedback\"; fs-id2264756 balance \"coordinates proprioceptive, vestibular, and visual information in the cerebellum.\" The page reads \"primary visual perception\" in option D with the key letter, the other options, and their order unchanged, a visible Source note, and a footer sentence; the keys gate's disclosed-deviation list records it as kind key. The 16.5 author first kept the printed key; the chapter 16 prose claim pass contested it on the module's own sentences and the orchestrator revised the ruling, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/02-the-mental-status-exam.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46650",
+      "sourceElementIds": [
+        "fs-id1221013"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2321,
+      "rationale": "Brodmann published his map in 1909, around the turn of the twentieth century, not the nineteenth. m46533 (§13.2) fs-id1163314: \"In the early 1900s, a German neuroscientist named Korbinian Brodmann performed an extensive study\"; its glossary fs-id1258215: \"as described by Brodmann in the early 1900s\"; this module's Figure 16.4 (1603) prints \"Brodmann's cytotechtonic map (1909).\" The page reads \"twentieth century\" with a visible Source note and a footer sentence. Raised by the chapter 16.2 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/02-the-mental-status-exam.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46650",
+      "sourceElementIds": [
+        "fs-id1605801",
+        "fs-id1236660"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2322,
+      "rationale": "The primary auditory cortex is Brodmann's areas 41 and 42; area 22 is auditory association cortex and area 23 is posterior cingulate cortex. m46533 (§13.2) fs-id2055928: \"The temporal lobe is associated with primary auditory sensation, known as Brodmann's areas 41 and 42 in the superior temporal lobe\"; erratum 2223 logs the same mistake in the §13.2 figure label. The page reads \"Areas 41 and 42 are the primary auditory cortex, and they are followed by area 22\" and lists the primary areas as 1, 2, 3, 4, 17, 41, and 42, with one visible Source note and a footer sentence; the figure's label \"Area 22 Primary auditory cortex\" stays as printed in the longdesc (erratum 2325). Raised by the chapter 16.2 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/02-the-mental-status-exam.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46650",
+      "sourceElementIds": [
+        "fs-id2299097"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2323,
+      "rationale": "The body describes the prefrontal lobotomy, in which connections are severed (fs-id2168791); a lobectomy removes the lobe, which is the procedure the module uses for HM (fs-id2464354). The page reads \"prefrontal lobotomy\" in the Summary bullet with a visible Source note and a footer sentence. Raised by the chapter 16.2 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/03-the-cranial-nerve-exam.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46607",
+      "sourceElementIds": [
+        "fs-id2337668"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2329,
+      "rationale": "The abducens nucleus lies in the pons, not the superior medulla; the module's own Figure 16.10 (1608, viewed at 1600 px) labels the nucleus \"Abducens nucleus (pons).\" The page reads \"in the pons\" with a visible Source note and a footer sentence; the vestibulocochlear sentence that also says \"superior medulla\" is left as printed. Raised by the chapter 16.3 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/03-the-cranial-nerve-exam.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46607",
+      "sourceElementIds": [
+        "fs-id1475678",
+        "fs-id2002281",
+        "fs-id2005952"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2330,
+      "rationale": "In internuclear ophthalmoplegia the eye on the side of the MLF lesion fails to adduct because the medial rectus loses its input from the opposite abducens nucleus, while the other eye abducts; failure of abduction from abducens-nerve damage is a sixth-nerve palsy. The module's own MLF account (fs-id2364152, fs-id1984224) joins the abducens and oculomotor nuclei for the lateral and medial rectus muscles. Fiester et al., Cureus 2020;12(8):e9959, doi:10.7759/cureus.9959: INO is \"lack of adduction of the ipsilateral eye with preservation of abduction of the contralateral eye.\" The page reads \"Failure of one eye to adduct while the other abducts\" in the body (one visible Source note) and \"because the medial rectus muscle of one eye does not contract, resulting from damage to the MLF\" in the Key terms entry, the author-written recall item is restated to match, and a footer sentence discloses it. Raised by the chapter 16.3 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/03-the-cranial-nerve-exam.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46607",
+      "sourceElementIds": [
+        "fs-id1698585"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2331,
+      "rationale": "The salivary fibers of the facial nerve synapse in the submandibular ganglion; the pterygopalatine ganglion supplies the lacrimal gland and the nasal and palatal mucosa. The book's own Figure 15.4 (m46582 §15.1, 1503) wires CN VII through the pterygopalatine ganglion to the lacrimal gland and nasal and palatal mucosa and through the submandibular ganglion to the submaxillary and sublingual glands; Muo et al., Cureus 2023;15(1):e33775, doi:10.7759/cureus.33775. The page reads \"synapse in the submandibular ganglion, which projects to the submandibular gland and sublingual gland, and in the pterygopalatine ganglion, which projects to the lacrimal gland\" with a visible Source note and a footer sentence. Raised by the chapter 16.3 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/04-the-sensory-and-motor-exams.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46640",
+      "sourceElementIds": [
+        "fs-id2162243"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2336,
+      "rationale": "The head of the ulna is the distal end of the bone, at the wrist, not the elbow; m46368 (§8.2) glossary fs-id2339903: \"small, rounded distal end of the ulna\"; fs-id1266017: \"The small, rounded area that forms the distal end is the head of the ulna.\" The page reads \"the head of the ulna on the medial aspect of the wrist\" with a visible Source note linking §8.2 and a footer sentence; the same paragraph's \"can be testing\" is a separate one-word fix (erratum 2340). Raised by the chapter 16.4 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/04-the-sensory-and-motor-exams.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46640",
+      "sourceElementIds": [
+        "fs-id2292530"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2337,
+      "rationale": "On the module's own usage a negative result is the normal finding (fs-id1907883: \"a negative Babinski sign is the expected response\") and pronator drift is listed among the signs of a UMN lesion (fs-id1376888; glossary fs-id2723861), so the UMN sign is a positive result in the pronator-drift subtest. The page reads \"a positive result\" with a visible Source note and a footer sentence. Raised by the chapter 16.4 author and evidenced by the chapter 16 prose claim pass, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/08-gonadal-and-placental-hormones.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46670",
+      "sourceElementIds": [
+        "fs-id1399907",
+        "fs-id1433120",
+        "fs-id1422999"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2344,
+      "rationale": "The module calls a gonadal hormone a peptide hormone: fs-id1423637 \"the testes produce the peptide hormone inhibin\", and the glossary entry fs-id1172712 has inhibin secreted by \"the male and female gonads\", so the distractor \"peptide hormones\" is a second correct answer to \"The gonads produce what class of hormones?\" (key C, steroid hormones). The page reads \"glycoprotein hormones\" in option B with the key letter, the other options, and their order unchanged, a visible Source note, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Raised by the chapter 17.8 author and checker and ruled by the orchestrator, October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/02-hormones.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46667",
+      "sourceElementIds": [
+        "fig-ch18_02_01",
+        "fs-id1739789"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2348,
+      "rationale": "The benzene ring is tyrosine's own side chain, present before any modification; norepinephrine is made by decarboxylation, so its carboxyl group is lost and nothing replaces it. m46667 fs-id1259347: \"the original structure of the amino acid is modified such that a –COOH, or carboxyl, group is removed, whereas the –NH₃⁺, or amine, group remains\"; the catecholamines are tyrosine derivatives. Montioli R, Borri Voltattorni C, Int J Mol Sci 2021;22(6):3146, doi:10.3390/ijms22063146. The page transcribes the table image as a Markdown table and prints \"is removed\" in the norepinephrine cell with a visible Source note under the table and a footer sentence; the longdesc keeps the image's wording marked as printed. Evidenced by the chapter 17 prose claim pass (F1), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/02-hormones.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46667",
+      "sourceElementIds": [
+        "tbl-ch18_02"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2349,
+      "rationale": "Prolactin is a single-chain protein of about 199 amino acids, longer than growth hormone, which the row above classes as a protein; on this module's own definition (peptide hormones are short chains, protein hormones are longer polypeptides) the table's \"Peptide\" for prolactin is wrong. Freeman ME, Kanyicska B, Lerant A, Nagy G, Physiol Rev 2000;80(4):1523–1631, doi:10.1152/physrev.2000.80.4.1523: \"Prolactin is a protein hormone of the anterior pituitary gland.\" The page prints Protein in the prolactin row with a visible Source note under the table and a footer sentence; the same row in m46699 (tbl-ch18_03) is handled by its own entry. Evidenced by the chapter 17 prose claim pass (F3), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/03-the-pituitary-gland-and-hypothalamus.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46699",
+      "sourceElementIds": [
+        "tbl-ch18_03"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2349,
+      "rationale": "Prolactin is a single-chain protein of about 199 amino acids, longer than growth hormone, which the row above classes as a protein; on the book's own definition in m46667 (peptide hormones are short chains, protein hormones are longer polypeptides) the table's \"Peptide\" for prolactin is wrong. Freeman ME, Kanyicska B, Lerant A, Nagy G, Physiol Rev 2000;80(4):1523–1631, doi:10.1152/physrev.2000.80.4.1523. The page prints Protein in the prolactin row with a visible Source note under the table and a footer sentence; the same row in m46667 (tbl-ch18_02) is handled by its own entry. Evidenced by the chapter 17 prose claim pass (F3), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/06-the-adrenal-glands.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46684",
+      "sourceElementIds": [
+        "fs-id1383725",
+        "fs-id1350273"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2367,
+      "rationale": "The sentence \"Angiotensin II has three major functions:\" introduces the enumerated list fs-id1350273, which has five items (vasoconstriction; NaCl and water reabsorption; aldosterone release; thirst and salt appetite; ADH release), in both the CNXML and the printed page. The page reads \"five major functions\" with a visible Source note after the list and a footer sentence. Evidenced by the chapter 17 prose claim pass (F5), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/06-the-adrenal-glands.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46684",
+      "sourceElementIds": [
+        "fs-id1475149"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2368,
+      "rationale": "The pituitary makes no cortisol; a pituitary tumor drives cortisol excess by secreting ACTH. m46413 (§26.5) fs-id1249408: \"Cushing’s disease, which is the chronic hypersecretion of adrenocorticotropic hormone (ACTH) by the anterior pituitary gland\"; this module's own zona fasciculata paragraph fs-id1474330 makes cortisol the most important glucocorticoid of the adrenal cortex, released in response to ACTH. The page reads \"a pituitary tumor that secretes ACTH in abnormally high amounts\" with a visible Source note and a footer sentence. Evidenced by the chapter 17 prose claim pass (F6), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/09-the-endocrine-pancreas.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46685",
+      "sourceElementIds": [
+        "fs-id1489225"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2373,
+      "rationale": "Cells that take up glucose without insulin are not thereby cells without insulin receptors, and the liver is a principal insulin target. m46667 (§17.2) fs-id886859: a hormone \"will affect the activity only of its target cells; that is, cells with receptors for that particular hormone\"; this module's fs-id1886347: insulin \"stimulates the liver to convert excess glucose into glycogen for storage, and it inhibits enzymes involved in glycogenolysis and gluconeogenesis\"; m45989 (§1.5) fs-id1291623 and m46466 fs-id1413275 have insulin acting on liver cells. The page prints the sentence without the \"do not have insulin receptors on their cell membranes\" clause, with a visible Source note and a footer sentence. Evidenced by the chapter 17 prose claim pass (F7), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/09-the-endocrine-pancreas.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46685",
+      "sourceElementIds": [
+        "tbl-ch18_07"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2374,
+      "rationale": "The table classes somatostatin as \"Protein\", but this module's islet list (fs-id1977301) says the delta cell \"secretes the peptide hormone somatostatin\", and on m46667's definitions (short chains are peptides) the list is right. The page prints Peptide in the somatostatin row with a visible Source note under the table and a footer sentence. Evidenced by the chapter 17 prose claim pass (F8), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/10-organs-with-secondary-endocrine-functions.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46680",
+      "sourceElementIds": [
+        "fs-id1858844",
+        "fs-id1370960",
+        "fs-id1408324"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2378,
+      "rationale": "The model answer says the thymus atrophies \"because the immune system is already developed\", a cause the module's body does not state (fs-id1906303: it \"begins to atrophy as we age\") and the book's immune chapter contradicts: m46563 (§21.1) fs-id2176174 treats thymic involution as \"one major cause of age-related immune deficiencies\", and fs-id2070568 as genetically programmed and alterable by hormone levels. The page's model answer and last rubric checkpoint end at \"During adulthood, the thymus gland atrophies\", with a visible Source note after the self-check and a footer sentence; the keys gate does not flag the solution, so no disclosed-deviation entry exists. Evidenced by the chapter 17 prose claim pass (F9), October 24, 2026."
     }
   ]
 }

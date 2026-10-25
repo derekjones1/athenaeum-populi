@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, and chapters 13 and 14 on October 21, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -170,7 +170,12 @@ callouts. The checker reads each converted item's model answer against the
 module text, as for any unkeyed-to-keyed conversion in the baseline. An
 Interactive Link Question whose printed key answers a different question
 stays a prompt, with a Source note and an erratum; no key is written for
-it *(chapter 2)*. A pooled Interactive Link Question whose module prints
+it *(chapter 2)*. A graded one whose source solution is a single word or
+phrase ("Cortisol.") has a model answer of one sentence that carries the
+key and restates the question — the selfcheck rubric needs two
+checkpoints, which one word cannot give — and the footer says so; the
+keys gate accepts a solution of four words or fewer carried whole in the
+model answer *(chapter 17)*. A pooled Interactive Link Question whose module prints
 NO `anatomy interactive` note (12.2's two) gets an **Interactive Link**
 callout built from the pooled item's own text, placed where the source's
 `interactive-exercise` set sits (after the last body subsection, before
@@ -296,7 +301,11 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   words only, not roots. Check every bin label against every member name
   before deciding, and transcribe such a table only *(chapter 11)*.
 - **A double-keyed or misspelled source Review option is an `options`
-  deviation whose erratum number the parent assigns IN the ruling**: the
+  deviation whose erratum number the parent assigns IN the ruling** — and
+  when the misspelled option is the KEYED one, the kind is `key`, not
+  `options`: `verify-source-keys` compares the keyed text first and rejects
+  an `options` entry for it as stale (15.1's "intermural" → "intramural",
+  *chapter 15*). The
   `DISCLOSED_DEVIATIONS` entry cites it and the keys test fails on a
   placeholder, so an author left `0` and another guessed the next number;
   chapter 11 had four such items (a true distractor on 11.1, 11.2, and
@@ -328,6 +337,28 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   "frontal", and 13.2 gives the prefrontal lobe short-term memory; the
   checker caught it and the item became a cloze of the module's own
   sentence *(chapter 13)*.
+- **A source Review stem that misnames a structure is corrected in place,
+  not transcribed.** 16.4 asked which reflex the jaw-jerk reflex is "for
+  the vestibulocochlear nerve" (16.3: trigeminal) and what "somatic and
+  visceral senses" share, keyed to the ventral root (the module: sensory
+  function is dorsal; the options describe reflex arcs). The page prints
+  the corrected stem with a Source note and a footer clause; options and
+  key are unchanged, so the keys gate needs no `DISCLOSED_DEVIATIONS` entry
+  (it has no stem kind); the ruling reserves the erratum and the drafter
+  writes the decisions entry *(chapter 16, errata 2314–2315)*.
+- **A sentence the module equates with the key is an accept member.** "In
+  fact, procedural memory is motor memory" makes "motor" a right answer to
+  a cloze keyed `procedural`; the author brief's variant list names
+  abbreviations and Latin pairs, not "X is Y" equations, and the checker
+  found it *(chapter 16)*.
+- **A hint that counts sentences ("the second sentence of the paragraph
+  that…") is checked by counting them**: no lint resolves an ordinal, and
+  16.5's pointed at the sentence before the one that prints the key. Prefer
+  naming the paragraph or subsection *(chapter 16)*.
+- **A cloze on an EXAMPLE ("Damage, such as a ________, …") is
+  under-determined** — tumor, trauma, and lesion were all true for 16.3's
+  "stroke" blank; blank the sentence on its determined phrase instead
+  *(chapter 16)*.
 - **An empty in-module `<link>` ("(see also )") is a CNXML rendering gap,
   not a source defect**: the PDF prints the figure number. It is reworded
   like any other figure reference and disclosed; the verifier rejects it

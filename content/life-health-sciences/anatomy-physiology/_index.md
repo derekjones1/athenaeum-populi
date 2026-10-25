@@ -95,14 +95,23 @@ reproduction, development, and inheritance.
   the peripheral nervous system.
 - **The Somatic Nervous System** — sensory perception, central processing,
   and motor responses.
+- **The Autonomic Nervous System** — the divisions of the autonomic nervous
+  system, autonomic reflexes and homeostasis, central control, and drugs
+  that affect the autonomic system.
+- **The Neurological Exam** — an overview of the neurological exam, the mental
+  status exam, the cranial nerve exam, the sensory and motor exams, and the
+  coordination and gait exams.
+- **The Endocrine System** — an overview of the endocrine system, hormones,
+  the pituitary gland and hypothalamus, the thyroid gland, the parathyroid
+  glands, the adrenal glands, the pineal gland, gonadal and placental hormones,
+  the endocrine pancreas, organs with secondary endocrine functions, and the
+  development and aging of the endocrine system.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 3: Regulation, Integration, and Control** — The Autonomic Nervous
-  System; The Neurological Exam; The Endocrine System.
 - **Unit 4: Fluids and Transport** — The Cardiovascular System: Blood; The
   Cardiovascular System: The Heart; The Cardiovascular System: Blood Vessels
   and Circulation; The Lymphatic and Immune System.

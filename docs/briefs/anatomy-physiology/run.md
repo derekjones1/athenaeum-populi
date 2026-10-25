@@ -119,7 +119,9 @@ them.
    before stating its position: the chapter 13 parent wrote "left arm
    bent behind the back" from a whole-figure zoom, and the claim pass and
    the verifier both read the crop as held out to the side *(chapter 13)*.
-   Launched together with the step-6 drafter.
+   Keep the alt at or under 600 characters — `verify-section` caps it, and
+   the chapter 16 parent's first draft ran 817 and failed the Clerk's
+   verify *(chapter 16)*. Launched together with the step-6 drafter.
 6. **Run facts** — copy `run-facts-template.md` to `$SP/run-facts.md`.
    **Delegated, in two parts**: one Clerk (Sonnet) fills PART A (every
    factual field, from the `keys` files and the raw CNXML; every count an
@@ -152,6 +154,21 @@ them.
    box whose title names only the system is `**Disorders of the Joints.**`,
    periods inside the bold; chapter 12's Part C over-applied the
    Interactive Link note and two authors had to be sent back).
+   Part B also greps `$SP/ap-errata.txt` for the chapter's module ids: an
+   earlier run's erratum may name a sentence in this chapter and ask for a
+   re-test (the ch13 block asked for 15.3's pupillary-reflex sentence), and
+   Part C rules on it before the authors write, not after the claim pass
+   finds it again *(chapter 15)*.
+   An Interactive Link answer is fixed by module TEXT (a sentence, a
+   paragraph, a caption): a figure LABEL alone does not fix it — 16.4's
+   dermatome figure prints "T10" beside the navel, but the key is
+   "T9–T11, approximately", and the item stood as a prompt *(chapter 16)*.
+   A source Review Question whose STEM misnames a structure (16.4's
+   jaw-jerk reflex "for the vestibulocochlear nerve"; "somatic and visceral
+   senses" keyed to the ventral root) is corrected in place with a Source
+   note, a footer clause, a decisions entry, and an erratum reserved in the
+   ruling — options and key unchanged, so no `DISCLOSED_DEVIATIONS` entry
+   (the gate has no stem kind) *(chapter 16, two items)*.
    Part B quotes the extractor's key line verbatim and never infers a key.
    A sentence Part C names as the one that fixes an Interactive Link answer
    is grepped in the raw CNXML OUTSIDE the `<solution>` before it is named —
@@ -201,7 +218,16 @@ them.
    one micrograph. A "sub-title" Part B reports inside a feature box is
    checked in the CNXML before Part C asks for a bold line: 14.2's
    "Retinal Disparity" was the in-box figure's `<title>`, which this book
-   never prints *(chapter 14)*.
+   never prints *(chapter 14)*. A "missing space after a full stop" Part B
+   reports is grepped in the raw CNXML before Part C lists it as a one-word
+   defect: 17.8's "athletes.Commonly" and "mass.The" were paragraph
+   boundaries in the drafter's stripped dump, and the real one ("FSH.During")
+   was elsewhere — two authors had to say so. And the panel-count rule above
+   binds Part C's figure lines too: chapter 17's Part C copied Part B's
+   "two-part" 1811, and the image has three panels *(chapter 17)*.
+   A checker can stumble on Part B while reading the run facts (17.10's did):
+   `checker.md` now names the file as off-limits, and the drafter may be
+   told to write it to `$SP/parent-only/` instead.
 7. Copy the three agent briefs unchanged to `$SP/` (`author.md`,
    `checker.md`, `claim-pass.md`) so the agents' paths are one directory.
 
@@ -234,9 +260,17 @@ checker (one Opus agent per chapter, prompt = the page paths with module ids,
 PLUS the landing page path with its intro module id — the landing page is
 Clerk-written and this is its only reading — + "read
 `$SP/claim-pass.md`", report path `$SP/claims-chNN.md`). Before launching
-it, `grep -n 'Anatomy' docs/openstax-errata.md > $SP/ap-errata.txt` (the
-book's existing errata and "Reviewed and *not* errata" lines) and name
-that file in the prompt.
+it, `grep -n -E 'Anatomy|^### [0-9]+\. m4[56]' docs/openstax-errata.md >
+$SP/ap-errata.txt` (the book's block headings, every entry headline — the
+book's module ids all begin `m45`/`m46` — and the "Reviewed and *not*
+errata" lines) and name that file in the prompt. A bare `grep 'Anatomy'`
+catches only the headings, and the chapter 16 Part B drafter had to re-grep
+the whole file to find the three entries that quote chapter 16 sentences
+*(chapter 16)*. A parent ruling that a source KEY stands is provisional
+until the claim pass has read the module: chapter 16's parent ruled 16.5's
+"processing visual information" key sound, and the claim pass found the
+module's own sentence attributing visual processing to the cerebrocerebellum,
+so the keyed option was changed (kind `key`, erratum 2316) *(chapter 16)*.
 
 After the last author reports, run `node tools/source/openstax-source.mjs
 build-map` at once: `verify:source-coverage` and `verify:source-keys`
@@ -297,7 +331,12 @@ Knowledge Checks, and sibling pages for the OLD value: a hint, filler, or
 check item built on it is now wrong. A Source note and a footer clause state the
 correction, never the erratum number — the footer-machinery lint rejects
 "(erratum NNNN)" on a page, and a fixer brief that asks for it fails every
-page at once *(chapter 3)*. Hand the accepted findings to each page's
+page at once *(chapter 3)*. A correction that changes a TERM (15.1's "mesenteric" → myenteric plexus)
+cannot be keyed by an author-written item afterwards — `verify:source-keys`
+accepts only a glossary term, a bolded term, or a phrase the module prints,
+and the corrected word is none of these — so the author replaces that item
+(and the parent re-solves the replacement alone) rather than re-keying it
+*(chapter 15)*. Hand the accepted findings to each page's
 author while it is still resumable (chapter 4), else to one Clerk fixer
 (Sonnet) with the exact old and new sentences; a `kind: 'solution'` deviation for a
 model-answer wording change is usually stale (the selfcheck compare
@@ -350,7 +389,14 @@ diff a fresh `solve:emit` into a second directory against the first to
 list exactly which hashes moved *(chapter 7: two of 63)*. Graded
 Interactive Link `selfcheck`s read "unmatched" in `verify-source-keys`
 on every chapter of this book; that is normal and no `solution`
-deviation is owed for one. An Interactive Link Question with lettered
+deviation is owed for one. A graded one whose source key is a single
+word or phrase ("Cortisol.", "Thyroid-stimulating hormone.") carries that
+key in a one-sentence model answer that restates the question, so the
+rubric can hold its two checkpoints; the keys gate once scored that
+sentence "diverges" (7% of its words from the solution) and now reports
+it `reworded` when a solution of four words or fewer is carried whole
+(`SHORT_SOLUTION_WORDS`, with a test) — never a `solution` deviation
+*(chapter 17)*. An Interactive Link Question with lettered
 sub-asks (8.5's (a)(b)(c)) is ONE item on the page and in the footer but
 several rows in `verify:source-coverage`, so the coverage floor rises by
 more than the chapter's exercise count *(chapter 8: 44 for 42)*. After a

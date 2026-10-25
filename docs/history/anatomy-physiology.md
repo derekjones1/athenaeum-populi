@@ -1153,6 +1153,268 @@ chamber"). The authors applied their own with Source notes; no graded item
 re-hashed. The solve agreed on 50 of 50 items with no flags. Errata
 2252–2284.
 
+## Chapter 15 (October 21, 2026)
+
+*The Autonomic Nervous System*: four sections (m46582, m46579, m46581,
+m46587; intro m46590), run from `docs/briefs/anatomy-physiology/run.md` on
+the AGENTS.md roster, straight after chapter 14 in the same day. No module
+is in the September 8 table. The chapter has 34 pooled source exercises
+(20 Review, 8 Critical Thinking, 6 Interactive Link); the pages carry 56
+Practice items, 48 of them auto-graded, and the blind Fable solver agreed
+on 47 of 48, with its one flag (15.1's "longest fiber", where the module
+calls two fibers long without ranking them) adjudicated for the source key.
+Errata 2285–2313: ten claim corrections, one double-keyed Review Question,
+four source alts, seven artwork defects, seven text defects. The next run
+is chapter 16, then the Unit 3 Knowledge Check after chapter 17.
+
+Part C graded two of the six Interactive Link Questions, both on 15.2: the
+orthostatic question on one box sentence, and the pupil-dilation question
+on a three-sentence paragraph plus the figure caption — the first time a
+paragraph rather than a single sentence fixed an answer, and the rule's
+"module text fixes the answer" covers it. The other four stand as prompts
+(the liver-glucose half, the hypothalamus–pituitary half, the urethral
+sphincter, and the 3-D screen are all in the linked media only). Table
+15.1's two-by-two signaling grid was transcribed only; Table 15.2 became a
+sortbins on the example DRUGS by overall result, never the drug-type names,
+three of which share a root with the bin labels. 15.2's fifth objective
+("drugs that affect autonomic function") is not delivered by the module's
+body; its group was filled from the Orthostatic Hypotension box's
+medication sentences and the gap filed as a text erratum.
+
+Part C was wrong twice and the gates and authors said so: the misspelled
+keyed option "intermural" (2285) needed `DISCLOSED_DEVIATIONS` kind `key`,
+not `options`, because the keyed option's own text changed (the playbook
+sentence now says so); and an earlier erratum's "re-test when chapter 15
+is authored" note had to be found by the parent — Part B now greps the
+book's errata for the chapter's module ids. The checkers found nine
+defects on lint-clean pages: a double-keyed asthma item on 15.4 (the
+module's own table makes anticholinergics bronchodilators too; distractor
+replaced, 2286), a 1512 longdesc with the left chain's direction wrong, a
+hint that printed "Hypotension" above a blank keyed hypertension, a hint
+clause that left only the one parasympathetic ganglion among the options,
+an author MC that re-asked the Review Question directly below it, a 1511
+longdesc with the lilac arc in the wrong ring, a missed second solid line
+in 1502 row (c), and two false footer sentences.
+
+The claim pass found eight, all accepted: "mesenteric plexus" for the
+myenteric plexus (the book's own 15.2 and 23.1), the lesser splanchnic
+nerve routed to the inferior mesenteric ganglion against the module's own
+figure, "Adrenalin is no longer sold" (the FDA label is current),
+proprioceptors as the orthostatic trigger (13.3 names the carotid
+baroreceptors), the Latin root "effere", cardiac accelerator and vasomotor
+nerves called preganglionic (19.4 and 15.1's own ACh rule), β-receptors
+"associated with vasoconstriction" (20.4), and phenylephrine dilating
+bronchioles. Two consequences worth remembering: a corrected sentence can
+orphan a hint — the asthma item's hint pointed at the phenylephrine
+sentence and was re-pointed at its Source note — and **a corrected term
+cannot be an author item's key**: the re-keyed "myenteric plexus" recall
+item failed `verify:source-keys` (not a phrase the module prints) and was
+replaced by a body cloze, re-solved alone in a fresh Fable agent. The
+alt-errata verifier confirmed 11 of 19 claims (1508's "cervical vertebra"
+and "ciliary ganglion of prevertebral ganglia", 1507's two "dorsal root
+ganglion" labels on the autonomic ganglion, 1510's "Oculomotor cortex
+(includes Eddinger–Westphal nucleus)", 1503's "Super salivatory nucleus",
+1502's gray-ramus leader and "spinal ganglion", 1513's one-eye alt). No
+429 this run; authors ran 204–254k tokens over three rounds, checkers
+142–165k, the claim pass 181k, the verifier 142k, the solver 114k plus 63k
+for the one-item re-solve, the Clerks 49–219k.
+
+## Chapter 16 (October 24, 2026)
+
+*The Neurological Exam*: five sections (m46594, m46650, m46607, m46640,
+m46604; intro m46593), run from `docs/briefs/anatomy-physiology/run.md` on
+the AGENTS.md roster, three days after chapter 15. No module is in the
+September 8 table, and the chapter has no tables, footnotes, subfigures,
+or References sections. It has 43 pooled source exercises (25 Review, 10
+Critical Thinking, 8 Interactive Link); the pages carry 76 Practice items
+(16, 15, 15, 15, 15), 66 of them auto-graded, and the blind Fable solver
+agreed on all 66 with none flagged and none unsure, the first clean solve
+of the book. Errata 2314–2342: three Review Question rulings (2314–2316),
+eight claim corrections, six source alts, four artwork defects, six
+one-word typos, one terminology slip, one sentence fragment, and twelve
+"Reviewed and not errata" lines. The next run is chapter 17, then the
+Unit 3 Knowledge Check.
+
+Part C graded two of the eight Interactive Link Questions, both on 16.2:
+the three-word-recall question, fixed by two episodic-memory sentences,
+and the right-handedness question, fixed by the Everyday Connection box's
+paragraph. The other six stand as prompts, among them a half-fixed one
+(two-point discrimination) and one the dermatome figure's T10 label
+almost fixes; Part C ruled that a figure label alone is not module text.
+There are no table sortbins, and one prose-built sortbins on 16.4, upper
+versus lower motor neuron signs, from which the checker removed one
+two-way item. Two source Review stems on 16.4 were defective: the
+jaw-jerk reflex asked "for the vestibulocochlear nerve", and "somatic and
+visceral senses" keyed to the ventral root. Both were corrected in place
+with Source notes, a new handling class: no `DISCLOSED_DEVIATIONS` kind
+exists for a stem, so the ruling reserves the erratum (2314, 2315) and
+the decisions entry carries the change.
+
+Part C was overruled once, by the claim pass. 16.5's Review key
+"processing visual information" (cannot be attributed to the cerebellum)
+was ruled sound in Part C and again after the checker contested it; but
+the module's own sentence says visual-cortex information "is part of the
+processing that occurs in the cerebrocerebellum", so the keyed option
+became "primary visual perception" (kind `key`, erratum 2316). A parent
+ruling on a key is provisional until the claim pass has read the module.
+Two process slips were caught and fixed in the kit: the run.md
+`grep 'Anatomy'` errata extract was too narrow, and the parent's splash
+alt ran 817 characters against the 600 cap.
+
+The checkers found 15 defects on lint-clean pages: a hint printing a word
+of a multi-word key ("trigeminal"), a hint pointing at the wrong sentence
+ordinal, three missing synonym, British, plural, or hyphen accept sets, a
+module-equated synonym ("procedural memory is motor memory"), a movable
+"language" leak that had been left disclosed instead of reordered, an
+example-blank cloze (stroke, tumor, trauma), a recall stem translating
+its key's prefix (hyperflexia), a two-way sortbins item, and four
+figure-reading errors (1613's orange lobe position, 1605's four lines
+rather than five, 1604's one auditory leader rather than two crossing
+Wernicke's oval, and a 1613 hint steer). The author accept list now gains
+British spelling and the module-equated synonym.
+
+The claim pass raised 10 findings and the parent accepted 9: Brodmann's
+century; areas 41 and 42, not 22, for primary auditory cortex (twice);
+lobotomy, not lobectomy; the abducens nucleus in the pons; internuclear
+ophthalmoplegia defined backwards (body, glossary, and the author's
+recall item all rewritten); the submandibular, not pterygopalatine,
+ganglion for the salivary glands; the head of the ulna at the wrist; and
+pronator drift positive, not negative. The tenth, antibiotics as "not a
+cause" of ataxia, is a module-scope item with a metronidazole aside, and
+went to "Reviewed and not errata".
+
+The alt-errata verifier confirmed 18 of 31 claims, ruled 10 not errata,
+and left 3 to the rulings: 6 source alts (including the splash alt's
+"dentist" for the caption's air force nurse), 4 artwork defects (1603's
+"cytotechtonic" and "Area 22 Primary auditory cortex", the latter
+repeating 2223 and 2224 in a new module; 1613's "Midsaggital"; 1614's
+"Optic nerve" leader on the chiasm), and 8 text defects. Authors ran
+198–217k tokens in the first round plus two or three fix rounds (final
+203–232k), checkers 141–186k, the claim pass 191k, the verifier 149k, the
+solver 125k, and the Clerks 46–236k (run-facts 236k, landing 50k, pins
+46k); the errata drafter ran 197k.
+
+## Chapter 17 (October 24, 2026)
+
+*The Endocrine System*: eleven sections (m46656, m46667, m46699, m46700,
+m46687, m46684, m46693, m46670, m46685, m46680, m46658; intro m46682),
+run from `docs/briefs/anatomy-physiology/run.md` on the AGENTS.md roster
+the same day chapter 16 closed, with eleven Opus authors launched
+together, the largest wave of the book. No module is in the September 8
+table; there are no References sections and no cross-module links, and
+17.11 is the one module with no glossary. It has 60 pooled source
+exercises (32 Review, 23 Critical Thinking, 5 Interactive Link), 19
+vendored images (1800–1823, five numbers absent from the module set), and
+8 tables; the pages carry 117 Practice items (9, 16, 14, 15, 10, 12, 8,
+8, 8, 9, 8), 94 of them auto-graded, and the blind Fable solver agreed on
+93 with one flagged, none disagreeing, and none unsure. Errata 2343–2379:
+two ruled exercises (2343, 2344), seven claim corrections, one internal
+inconsistency with a Source note only, three artwork defects, thirteen
+source alts, and eleven one-word text defects. The next run is the Unit 3
+Knowledge Check (chapters 12–17), then chapter 18.
+
+Part C graded two of the five Interactive Link Questions, 17.3's
+roleofhypo (on the TSH sentence) and 17.6's adrenalglands (on the
+cortisol-catabolism paragraph), and made two prompts: 17.1's cAMP, whose
+answer is in 17.2 and not in its own module, and 17.7's "turning on the
+lights". 17.9's pancreas1 is a prompt with a Source note and erratum
+2343, because the printed key "Insulin is overproduced." names the
+compensatory response where the module says the cells become resistant.
+Table sortbins were ruled for 17.1 (endocrine against nervous, two rows
+out as substrings), 17.3 (lobes), 17.6 (cortex and medulla, the cort-
+row out), 17.8 (gland bins), and 17.10 (four organ bins of sixteen
+rows); 17.2's recap table is transcribe-only with an optional prose-built
+hormone-class sortbins; 17.9 was the author's call; and 17.11 has a
+prose-built germ-layer sortbins with the anterior pituitary out because a
+Review Question keys it. The notation is T₃/T₄, IP₃, Ca²⁺, I⁻ for the
+source's en-dash iodide, vitamin D₃, and the 17.2 MathML amine group set
+as the text –NH₃⁺ beside –COOH. The chapter has a Career Connection
+(Endocrinologist), a Disorders of the Endocrine System heading with an
+italic topic, and three University of Michigan histology-slide boxes set
+as Interactive Link callouts.
+
+Part C got several things wrong, and the authors caught them. It listed
+17.8's "athletes.Commonly" and "mass.The" as missing spaces, but those
+were paragraph breaks in the drafter's stripped dump; the author found
+the real one, "FSH.During". It called 1811 "two-part" from Part B, and
+the author read the image and found three panels. It told 17.3 to drop
+every hormone a Review Question keys; the author kept ADH, whose question
+keys its role and not its lobe, and the parent accepted the narrower
+reading. It decided a 17.8 gland sortbins that the author showed could
+not be built, since every row overlaps another row or the body, and a
+17.9 sortbins the author declined for the same reason. A 17.10 checker
+also read run-facts-B.md, which is not its input; checker.md now forbids
+it.
+
+The eleven checkers accepted 13 defects and raised about 20 concerns.
+They added accept lists (British spellings and module-equated synonyms:
+"parathyroid hormone deficiency", "neuroendocrine tissue", "osseous
+tissue", "epithalamus", "responsiveness", "FSH and LH"); fixed hints that
+described a paragraph's content or pointed by position at the subsection
+titled with the key (17.7, 17.3, 17.11, and 17.6's paragraph count); and
+removed a root giveaway in a sortbins (17.10, Gastrin under
+Gastrointestinal tract). They moved self-answering and leaking neighbours
+(17.11's epinephrine item; 17.4's "all of the above" Review Question,
+moved to lead its group; 17.3's Review Question, moved ahead of the
+sortbins that steered it; 17.5's self-check, moved across a group
+heading), replaced an example-blank cloze (17.8, estrone to LH), and
+rebuilt an ambiguous summary cloze as a body cloze (17.2, cholesterol).
+They also caught longdesc errors against the image (17.5's 1817 cycle
+direction, 17.2's 1804 arrows, 17.9's 1820 duct arrows, 17.4's artery
+forks) and a 17.1 footer that misstated which labels a source alt omits.
+One finding was wrong: 17.3's "head faces right" on 1808, where the head
+faces left, as the parent confirmed from the image. Two source Review
+Questions were ruled. 17.8's "The gonads produce what class of hormones?"
+is double-keyed by the module's own "peptide hormone inhibin", so the
+options deviate, with the distractor replaced by "glycoprotein hormones"
+(erratum 2344). 17.8's FSH–inhibin question and 17.3's ADH question have
+distractors true only through other chapters or indirectly; the keys
+stand, filed as Reviewed and not errata.
+
+The claim pass read about 302 claims and raised 9 findings and 13
+suspicions. The parent accepted F1 (17.2's table-image cell "carboxyl
+group is replaced with a benzene ring", where the module's own amine
+paragraph says removed), F3 (prolactin Peptide to Protein in the 17.2 and
+17.3 tables), F5 (17.6's "three major functions" above a five-item list),
+F6 (17.6's Cushing's pituitary tumor "secretes cortisol or ACTH" to
+ACTH, per 26.5), F7 (17.9's liver and brain cells "do not have insulin
+receptors", dropped on 17.2's target-cell definition and the module's own
+liver sentences), F8 (17.9 somatostatin Protein to Peptide), and F9
+(17.10's model answer "because the immune system is already developed",
+dropped per 21.1). F2, oxytocin's Asp and Glu for Asn and Gln on 1802, is
+an artwork erratum with longdesc marks, and F4, 17.3's "seven hormones"
+against the module's own six, is a Source note with the text kept, filed
+as an internal inconsistency. The pass also caught the parent's landing
+alt: "both arms" became one visible arm, and "pond" became "still water".
+The fix wave was killed mid-task by the weekly Opus limit; all five
+authors resumed by SendMessage after the reset and lost nothing, because
+no edit had landed.
+
+The keys gate failed the two graded Interactive Link self-checks as
+"diverges": a one-word source solution padded into a sentence has few
+solution words. It was folded into the tool (SHORT_SOLUTION_WORDS = 4,
+with the status reworded when the solution is carried whole) and a test,
+and it is not a deviation. The one flagged solver item was 17.4's "all of
+the above", where the solver agreed with the key and noted that option a
+is true; adjudicated, the key stands. Author results merged 119 items (1
+rebuilt), the solve merged 94, prune found 0, and provenance found 0
+low-confidence.
+
+The alt-errata verifier checked 59 distinct claims (36 confirmed, 10
+rejected, 13 not errata) and found that 1807's PINNED image prints the
+nucleus labels reversed where the printed book has them right, an
+artwork erratum of the pinned media. The errata block is 37 entries with
+nine decisions entries: 2 ruled exercises (2343, 2344), 7 claim
+corrections (2348, 2349, 2367, 2368, 2373, 2374, 2378), 1 internal
+inconsistency with a Source note only (2354), 3 artwork (2351, 2356,
+2369), 13 source alts, and 11 one-word text defects. The claim-pass
+ledger row carries 2348–2349, 2354, 2367–2368, 2373–2374, and 2378.
+`check:external-links` finds no dead link on a chapter 17 page. Authors
+ran 134–257k tokens (first round 134–247k, plus two or three fix
+rounds), checkers 108–178k, the claim pass 210k, the verifier 175k, the
+errata drafter 225k, the solver 144k, and the Clerks 47–190k (run facts
+190k).
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

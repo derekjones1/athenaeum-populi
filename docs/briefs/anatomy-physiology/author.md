@@ -115,7 +115,16 @@ do not print or what authors most often get wrong.
    correctly WITHOUT an inline note (never a Source note, whatever the run
    facts seem to say) but named in the footer AND in your ledger. Every
    figure cross-reference you reword ("see the figure below, panel a" for a
-   `<link>` + "a") is named in the footer — none dropped, none silent;
+   `<link>` + "a") is named in the footer — none dropped, none silent; a
+   Practice HINT never says "the figure below" (`verify-section` rejects it
+   there — the figure is above the Practice block): name the figure by its
+   subject ("the blood calcium homeostasis figure") *(chapter 17)*; a cloze
+   whose blank is one member of a printed list ("estradiol, estriol, and
+   ________") is an example-blank cloze and is not written — any list
+   member fits the slot and the stem prints the key's root *(chapters 16
+   and 17)*; a hint that points "by position" at the subsection whose
+   title is the key is the named-subsection leak by another route — point
+   at a table column or a different paragraph instead *(chapter 17)*;
    **a factual claim you believe wrong is transcribed as printed**
    and listed under "suspected claim errors" — the claim pass and the
    parent adjudicate it.
@@ -232,7 +241,10 @@ playbooks. Apply them literally; these are the recurring failures:
   neither question nor hint; `accept` is `|`-separated and lists only what
   the grader would otherwise miss (an irregular plural or singular, a
   module abbreviation, a Latin/English pair the module prints, a hyphen
-  between letters). The grader folds a regular plural BOTH ways — a plural
+  between letters, a British spelling, and a synonym the module itself
+  equates with the key — "procedural memory is motor memory" makes
+  `motor` right for a cloze keyed `procedural`, *chapter 16*). The grader
+  folds a regular plural BOTH ways — a plural
   key accepts its singular and a singular key its plural — so never list
   either; a member that normalizes to the answer is rejected. Run every
   member, and every natural variant a correct learner types (the full name

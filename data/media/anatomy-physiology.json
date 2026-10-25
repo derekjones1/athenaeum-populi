@@ -4258,6 +4258,1128 @@
       "alt": "This micrograph shows the ultrastructure of the cochlea.",
       "caption": "LM × 412. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
     },
+    "1500_Fight_or_Flight": {
+      "source": "media/1500_Fight_or_Flight.jpg",
+      "sourceSha256": "83c801e66def199f5c14227d5dfbf66ee4c3702e6c80c7503a93e92973070e23",
+      "module": "m46590",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1049,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "1500_Fight_or_Flight-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 733,
+          "file": "1500_Fight_or_Flight-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a lioness.",
+      "caption": "Though the threats that modern humans face are not large predators, the autonomic nervous system is adapted to this type of stimulus. The modern world presents stimuli that trigger the same response. (credit: Vernon Swanepoel)"
+    },
+    "1501_Connections_of_the_Sympathetic_Nervous_System": {
+      "source": "media/1501_Connections_of_the_Sympathetic_Nervous_System.jpg",
+      "sourceSha256": "6f628ab1c140555b81a298edb890dbb9faf3a36bcf444a5d21e4f1e0509d954c",
+      "module": "m46582",
+      "kind": "photo",
+      "width": 1940,
+      "height": 2858,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1178,
+          "file": "1501_Connections_of_the_Sympathetic_Nervous_System-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2357,
+          "file": "1501_Connections_of_the_Sympathetic_Nervous_System-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the spinal cord, and the connections from the spinal cord to the different target organs. The target organs are listed on the right.",
+      "caption": "Neurons from the lateral horn of the spinal cord (preganglionic nerve fibers - solid lines) project to the chain ganglia on either side of the vertebral column or to collateral (prevertebral) ganglia that are anterior to the vertebral column in the abdominal cavity. Axons from these ganglionic neurons (postganglionic nerve fibers - dotted lines) then project to target effectors throughout the body."
+    },
+    "1502_Symphatetic_Connections_and_the_Ganglia_new": {
+      "source": "media/1502_Symphatetic_Connections_and_the_Ganglia_new.jpg",
+      "sourceSha256": "db28c05b1c9221bc25441eaf838732c1bc464b43dc1acf6c5cecf7a936693595",
+      "module": "m46582",
+      "kind": "photo",
+      "width": 1913,
+      "height": 2282,
+      "variants": [
+        {
+          "width": 800,
+          "height": 954,
+          "file": "1502_Symphatetic_Connections_and_the_Ganglia_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1908,
+          "file": "1502_Symphatetic_Connections_and_the_Ganglia_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the connections between the spinal cord and the ganglia. The top panel shows the connection between a central neuron and a chain ganglion at the same lever. The center panel shows the connection between a central neuron and a synapse with a superior or inferior ganglion. The bottom panel shows the projection of a central neuron into the white ramus.",
+      "caption": "The axon from a central sympathetic neuron in the spinal cord can project to the periphery in a number of different ways. (a) The fiber can project out to the ganglion at the same level and synapse on a ganglionic neuron. (b) A branch can project to more superior or inferior ganglion in the chain. (c) A branch can project through the white ramus communicans, but not terminate on a ganglionic neuron in the chain. Instead, it projects through one of the splanchnic nerves to a collateral ganglion or the adrenal medulla (not pictured)."
+    },
+    "1503_Connections_of_the_Parasympathetic_Nervous_System": {
+      "source": "media/1503_Connections_of_the_Parasympathetic_Nervous_System.jpg",
+      "sourceSha256": "e98d53b5219f7f7f689aaa0f6a61b4d795903ecc22d66b727de514ff83d8e2ff",
+      "module": "m46582",
+      "kind": "photo",
+      "width": 1950,
+      "height": 3000,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1230,
+          "file": "1503_Connections_of_the_Parasympathetic_Nervous_System-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2461,
+          "file": "1503_Connections_of_the_Parasympathetic_Nervous_System-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the spinal cord and has different central nerves emerging from it. The central nerves target different effector organs that are listed on the right.",
+      "caption": "Neurons from brain-stem nuclei, or from the lateral horn of the sacral spinal cord, project to terminal ganglia near or within the various organs of the body. Axons from these ganglionic neurons then project the short distance to those target effectors."
+    },
+    "1504_Autonomic_Varicosities": {
+      "source": "media/1504_Autonomic_Varicosities.jpg",
+      "sourceSha256": "73c7d2830e74d1dc554c0fc07cfcf11331a63b6675f8b18e19aa8325dc39b531",
+      "module": "m46582",
+      "kind": "photo",
+      "width": 1971,
+      "height": 846,
+      "variants": [
+        {
+          "width": 800,
+          "height": 343,
+          "file": "1504_Autonomic_Varicosities-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 686,
+          "file": "1504_Autonomic_Varicosities-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the connection between autonomic fibers and the target effectors. The left image shows a slice of smooth muscle with the postganglionic varicosities and the postganglionic axons labeled. The right panel shows a magnified view of the synaptic vesicles, neurotransmitters, and the sarcolemma.",
+      "caption": "The connection between autonomic fibers and target effectors is not the same as the typical synapse, such as the neuromuscular junction. Instead of a synaptic end bulb, a neurotransmitter is released from swellings along the length of a fiber that makes an extended network of connections in the target effector."
+    },
+    "1505_Comparison_of_Somatic_and_Visceral_Reflexes": {
+      "source": "media/1505_Comparison_of_Somatic_and_Visceral_Reflexes.jpg",
+      "sourceSha256": "f8c4f0919eddf6202c855b78bd7d64a66a56bdb8a77714610dd2960049dddffb",
+      "module": "m46579",
+      "kind": "photo",
+      "width": 1983,
+      "height": 2717,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1096,
+          "file": "1505_Comparison_of_Somatic_and_Visceral_Reflexes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2192,
+          "file": "1505_Comparison_of_Somatic_and_Visceral_Reflexes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel in this figure shows the autonomic efferent pathway. The spinal cord is shown on the left, and a myelinated axon is shown going from the spinal cord to the central neuron. An unmyelinated axon is shown going from the central neuron to the target effector. The bottom panel shows the somatic efferent pathway. The spinal cord is shown on the left, and a myelinated axon is shown going from the spinal cord to the target effector director. In both cases, magnified images show the synapses.",
+      "caption": "The afferent inputs to somatic and visceral reflexes are essentially the same, whereas the efferent branches are different. Somatic reflexes, for instance, involve a direct connection from the ventral horn of the spinal cord to the skeletal muscle. Visceral reflexes involve a projection from the central neuron to a ganglion, followed by a second projection from the ganglion to the target effector."
+    },
+    "1506_Referred_Pain_Chart": {
+      "source": "media/1506_Referred_Pain_Chart.jpg",
+      "sourceSha256": "c60228482a6bb574e76955951c56f868d9427fa27b8234ba1393eb1563083e34",
+      "module": "m46579",
+      "kind": "photo",
+      "width": 1983,
+      "height": 1392,
+      "variants": [
+        {
+          "width": 800,
+          "height": 561,
+          "file": "1506_Referred_Pain_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1123,
+          "file": "1506_Referred_Pain_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The figure shows the different organs in the human body. The left panel shows the front view, and the right panel shows the back view.",
+      "caption": "Conscious perception of visceral sensations map to specific regions of the body, as shown in this chart. Some sensations are felt locally, whereas others are perceived as affecting areas that are quite distant from the involved organ."
+    },
+    "1507_Short_and_Long_Reflexes": {
+      "source": "media/1507_Short_and_Long_Reflexes.jpg",
+      "sourceSha256": "e225c84a70be1c0110d0d62420aee499db6081119376d5098790f6d713e479ee",
+      "module": "m46579",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1881,
+      "variants": [
+        {
+          "width": 800,
+          "height": 771,
+          "file": "1507_Short_and_Long_Reflexes-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1543,
+          "file": "1507_Short_and_Long_Reflexes-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel in this figure shows a long reflex, where the spinal cord is connected to the sensory receptor cell and the peripheral ganglion. The bottom panel shows a short reflex, where the sensory receptor cell is directly connected to the peripheral ganglion.",
+      "caption": "Sensory input can stimulate either a short or a long reflex. A sensory neuron can project to the CNS or to an autonomic ganglion. The short reflex involves the direct stimulation of a postganglionic fiber by the sensory neuron, whereas the long reflex involves integration in the spinal cord or brain."
+    },
+    "1508_Autonomic_Control_of_Pupil_Size": {
+      "source": "media/1508_Autonomic_Control_of_Pupil_Size.jpg",
+      "sourceSha256": "3b4c9bc6c0d7edbf1086f6cca51ce9354505107227215aced3d5b0c4d8c6d538",
+      "module": "m46579",
+      "kind": "photo",
+      "width": 2231,
+      "height": 2299,
+      "variants": [
+        {
+          "width": 800,
+          "height": 824,
+          "file": "1508_Autonomic_Control_of_Pupil_Size-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1648,
+          "file": "1508_Autonomic_Control_of_Pupil_Size-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how the size of pupils is regulated. The top level of this image shows an eye and the axons going to the brain via the optic nerve. The second level shows the effects of dim light, which results in pupils dilating. The third level shows the effect of bright light, which results in pupils constricting.",
+      "caption": "Activation of the pupillary reflex comes from the amount of light activating the retinal ganglion cells, as sent along the optic nerve. The output of the sympathetic system projects through the superior cervical ganglion, whereas the parasympathetic system originates out of the midbrain and projects through the oculomotor nerve to the ciliary ganglion, which then projects to the iris. The postganglionic fibers of either division release neurotransmitters onto the smooth muscles of the iris to cause changes in the pupillary size. Norepinephrine results in dilation and ACh results in constriction."
+    },
+    "1509_Pupillary_Reflex_Pathways": {
+      "source": "media/1509_Pupillary_Reflex_Pathways.jpg",
+      "sourceSha256": "ee6bd566f062af73dbe5c87c27b8c2a3b2944f8220bd6e2fc0680ff822050a1e",
+      "module": "m46581",
+      "kind": "photo",
+      "width": 2129,
+      "height": 1305,
+      "variants": [
+        {
+          "width": 800,
+          "height": 490,
+          "file": "1509_Pupillary_Reflex_Pathways-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 980,
+          "file": "1509_Pupillary_Reflex_Pathways-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the connections between the different nerves and pathways in the eyes. A hand is shown shining a light on the right eye, and arrows and text callouts indicate the different pathways that are activated.",
+      "caption": "The pupil is under competing autonomic control in response to light levels hitting the retina. The sympathetic system will dilate the pupil when the retina is not receiving enough light, and the parasympathetic system will constrict the pupil when too much light hits the retina."
+    },
+    "1510_Fiber_Tracts_of_the_Central_Autonomic_System": {
+      "source": "media/1510_Fiber_Tracts_of_the_Central_Autonomic_System.jpg",
+      "sourceSha256": "3c178b1781b8e6afeb93c0841e6d8db4be1a82d4f742008865146c8cb6c61f71",
+      "module": "m46581",
+      "kind": "photo",
+      "width": 1663,
+      "height": 1488,
+      "variants": [
+        {
+          "width": 800,
+          "height": 716,
+          "file": "1510_Fiber_Tracts_of_the_Central_Autonomic_System-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1431,
+          "file": "1510_Fiber_Tracts_of_the_Central_Autonomic_System-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the human brain on the left panel, and a magnified image shows the location of the medial forebrain bundle and the dorsal longitudinal fasciculus in the brain.",
+      "caption": "The hypothalamus is the source of most of the central control of autonomic function. It receives input from cerebral structures and projects to brain stem and spinal cord structures to regulate the balance of sympathetic and parasympathetic input to the organ systems of the body. The main pathways for this are the medial forebrain bundle and the dorsal longitudinal fasciculus."
+    },
+    "1511_The_Limbic_Lobe": {
+      "source": "media/1511_The_Limbic_Lobe.jpg",
+      "sourceSha256": "3c120438b70f5a67915f3b578898d71900e99ff4fd84b61b6d00abee0a208ace",
+      "module": "m46581",
+      "kind": "photo",
+      "width": 1950,
+      "height": 1111,
+      "variants": [
+        {
+          "width": 800,
+          "height": 455,
+          "file": "1511_The_Limbic_Lobe-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 911,
+          "file": "1511_The_Limbic_Lobe-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the location of the limbic lobe and its major parts in the human brain.",
+      "caption": "Structures arranged around the edge of the cerebrum constitute the limbic lobe, which includes the amygdala, hippocampus, and cingulate gyrus, and connects to the hypothalamus."
+    },
+    "1512_Connections_to_Heart": {
+      "source": "media/1512_Connections_to_Heart.jpg",
+      "sourceSha256": "c90ff2f3de1ee3b3d5f93511773ce04de7517034377d3c02f8778a50cc719826",
+      "module": "m46587",
+      "kind": "photo",
+      "width": 1813,
+      "height": 1570,
+      "variants": [
+        {
+          "width": 800,
+          "height": 692,
+          "file": "1512_Connections_to_Heart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1385,
+          "file": "1512_Connections_to_Heart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the spinal cord and the different nerves that connect to the heart, which is the target organ shown on the right.",
+      "caption": "The nicotinic receptor is found on all autonomic ganglia, but the cardiovascular connections are particular, and do not conform to the usual competitive projections that would just cancel each other out when stimulated by nicotine. The opposing signals to the heart would both depolarize and hyperpolarize the heart cells that establish the rhythm of the heartbeat, likely causing arrhythmia. Only the sympathetic system governs systemic blood pressure so nicotine would cause an increase."
+    },
+    "1513_Mydriasis": {
+      "source": "media/1513_Mydriasis.jpg",
+      "sourceSha256": "f90b9336e3a79afa9a34e294ac8058827af7a22380f2d1f2a886404a3eac6d62",
+      "module": "m46587",
+      "kind": "photo",
+      "width": 1507,
+      "height": 525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 278,
+          "file": "1513_Mydriasis-800.webp"
+        },
+        {
+          "width": 1507,
+          "height": 525,
+          "file": "1513_Mydriasis-1507.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a person’s eye with a relatively large pupil.",
+      "caption": "The sympathetic system causes pupillary dilation when norepinephrine binds to an adrenergic receptor in the radial fibers of the iris smooth muscle. Phenylephrine mimics this action by binding to the same receptor when drops are applied onto the surface of the eye in a doctor’s office. (credit: Corey Theiss / Vulegenda/Wikimedia Commons)"
+    },
+    "1514_Belladona_Plant": {
+      "source": "media/1514_Belladona_Plant.jpg",
+      "sourceSha256": "ba908f0faea33e69aa041484b7884802b497713e13458ac383615419dbce75e3",
+      "module": "m46587",
+      "kind": "photo",
+      "width": 1633,
+      "height": 1233,
+      "variants": [
+        {
+          "width": 800,
+          "height": 604,
+          "file": "1514_Belladona_Plant-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1208,
+          "file": "1514_Belladona_Plant-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows a belladonna plant.",
+      "caption": "The plant from the genus Atropa , which is known as belladonna or deadly nightshade, was used cosmetically to dilate pupils, but can be fatal when ingested. The berries on the plant may seem attractive as a fruit, but they contain the same anticholinergic compounds as the rest of the plant."
+    },
+    "1600__Examination_of_the_Oral_Cavity-02": {
+      "source": "media/1600_ Examination_of_the_Oral_Cavity-02.jpg",
+      "sourceSha256": "81d76717ee79fd4b8ea3420186e9dbe4736c5544d33c167c9db383325b5126b6",
+      "module": "m46593",
+      "kind": "photo",
+      "width": 1399,
+      "height": 479,
+      "variants": [
+        {
+          "width": 800,
+          "height": 274,
+          "file": "1600__Examination_of_the_Oral_Cavity-02-800.webp"
+        },
+        {
+          "width": 1399,
+          "height": 479,
+          "file": "1600__Examination_of_the_Oral_Cavity-02-1399.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "(left) This photograph shows a dentist looking into a woman’s mouth. (right) Photo shows an adult and child in a medical setting.",
+      "caption": "Health care professionals, such as this air force nurse, can rapidly assess the neurological functions of a patient using the neurological exam. One part of the exam is the inspection of the oral cavity and pharynx, which enables the doctor to not only inspect the tissues for signs of infection, but also provides a means to test the functions of the cranial nerves associated with the oral cavity. (credit: U.S. Department of Defense / AMISOM Public Information/Flickr)"
+    },
+    "1601_Anatomical_Underpinnings_of_the_Neurological_Exam-02": {
+      "source": "media/1601_Anatomical_Underpinnings_of_the_Neurological_Exam-02.jpg",
+      "sourceSha256": "3803d0e1676d96267a122279e6e263fb81d9cf988e7334ecfa6d9e43944060ef",
+      "module": "m46594",
+      "kind": "photo",
+      "width": 1256,
+      "height": 1500,
+      "variants": [
+        {
+          "width": 800,
+          "height": 955,
+          "file": "1601_Anatomical_Underpinnings_of_the_Neurological_Exam-02-800.webp"
+        },
+        {
+          "width": 1256,
+          "height": 1500,
+          "file": "1601_Anatomical_Underpinnings_of_the_Neurological_Exam-02-1256.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a picture of the brain connected to the spinal cord.",
+      "caption": "The different regions of the CNS relate to the major sections of the neurological exam: the mental status exam, cranial nerve exam, sensory exam, motor exam, and coordination exam (including the gait exam)."
+    },
+    "1602_The_Hemorrhagic_Stroke-02": {
+      "source": "media/1602_The_Hemorrhagic_Stroke-02.jpg",
+      "sourceSha256": "c5972fbc2f4447bae66ea01a523f8e986aae00cc421e242343513eb5ec5ccd4a",
+      "module": "m46594",
+      "kind": "photo",
+      "width": 2035,
+      "height": 1323,
+      "variants": [
+        {
+          "width": 800,
+          "height": 520,
+          "file": "1602_The_Hemorrhagic_Stroke-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1040,
+          "file": "1602_The_Hemorrhagic_Stroke-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this image shows an image of the brain with a region in red. Arrows pointing towards this region indicate a hemorrhage associated with a stroke. The right panel shows a hemorrhage as it might appear on a CT scan.",
+      "caption": "(a) A hemorrhage into the tissue of the cerebrum results in a large accumulation of blood with an additional edema in the adjacent tissue. The hemorrhagic area causes the entire brain to be disfigured as suggested here by the lateral ventricles being squeezed into the opposite hemisphere. (b) A CT scan shows an intraparenchymal hemorrhage within the parietal lobe. (credit b: James Heilman)"
+    },
+    "1603_Brodmann_Areas-02": {
+      "source": "media/1603_Brodmann_Areas-02.jpg",
+      "sourceSha256": "18c5ae24c244150d951c120741d9a119df6d74cd0f5ff93c9dce4ac71fff362a",
+      "module": "m46650",
+      "kind": "photo",
+      "width": 2333,
+      "height": 1369,
+      "variants": [
+        {
+          "width": 800,
+          "height": 469,
+          "file": "1603_Brodmann_Areas-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 939,
+          "file": "1603_Brodmann_Areas-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a brain with the different regions highlighted in different colors. The left panel shows the lateral surface of the brain. The right panel shows the medial surface of the brain. The same color scheme is used to identify the different regions in both panels.",
+      "caption": "On the basis of cytoarchitecture, the anatomist Korbinian Brodmann described the extensive array of cortical regions, as illustrated in this figure. Subsequent investigations found that these areas corresponded very well to functional differences in the cerebral cortex. (credit: modification of work by “Looie496”/Wikimedia Commons, based on original work by Korvinian Brodmann)"
+    },
+    "1604_Types_of_Cortical_Areas-02": {
+      "source": "media/1604_Types_of_Cortical_Areas-02.jpg",
+      "sourceSha256": "a8a11f5be7b177ba42081f1b21c4b45e3be8f7916c85de39524696d05d55f044",
+      "module": "m46650",
+      "kind": "photo",
+      "width": 1915,
+      "height": 989,
+      "variants": [
+        {
+          "width": 800,
+          "height": 413,
+          "file": "1604_Types_of_Cortical_Areas-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 826,
+          "file": "1604_Types_of_Cortical_Areas-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the brain with the different regions colored differently. Text callouts from each region show the function of that particular region.",
+      "caption": "The cerebral cortex can be described as containing three types of processing regions: primary, association, and integration areas. The primary cortical areas are where sensory information is initially processed, or where motor commands emerge to go to the brain stem or spinal cord. Association areas are adjacent to primary areas and further process the modality-specific input. Multimodal integration areas are found where the modality-specific regions meet; they can process multiple modalities together or different modalities on the basis of similar functions, such as spatial processing in vision or somatosensation."
+    },
+    "1605_Brocas_and_Wernickes_Areas-02": {
+      "source": "media/1605_Brocas_and_Wernickes_Areas-02.jpg",
+      "sourceSha256": "49066681e54e9678ee25534801d8f4f2d1058f7ee3cb3897ab1f47f8acafb608",
+      "module": "m46650",
+      "kind": "photo",
+      "width": 1463,
+      "height": 992,
+      "variants": [
+        {
+          "width": 800,
+          "height": 542,
+          "file": "1605_Brocas_and_Wernickes_Areas-02-800.webp"
+        },
+        {
+          "width": 1463,
+          "height": 992,
+          "file": "1605_Brocas_and_Wernickes_Areas-02-1463.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the brain. Two labels mark the Broca’s and Wernicke’s areas.",
+      "caption": "Two important integration areas of the cerebral cortex associated with language function are Broca’s and Wernicke’s areas. The two areas are connected through the deep white matter running from the posterior temporal lobe to the frontal lobe."
+    },
+    "1606_Snellen_Chart-02": {
+      "source": "media/1606_Snellen_Chart-02.jpg",
+      "sourceSha256": "cad8fc7fe9b13df3d21a6616dc8a6acd19272eca71883a19c1eee7bf9b2a485b",
+      "module": "m46607",
+      "kind": "photo",
+      "width": 1058,
+      "height": 1757,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1328,
+          "file": "1606_Snellen_Chart-02-800.webp"
+        },
+        {
+          "width": 1058,
+          "height": 1757,
+          "file": "1606_Snellen_Chart-02-1058.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a chart that is used for eye exams.",
+      "caption": "The Snellen chart for visual acuity presents a limited number of Roman letters in lines of decreasing size. The line with letters that subtend 5 minutes of an arc from 20 feet represents the smallest letters that a person with normal acuity should be able to read at that distance. The different sizes of letters in the other lines represent rough approximations of what a person of normal acuity can read at different distances. For example, the line that represents 20/200 vision would have larger letters so that they are legible to the person with normal acuity at 200 feet."
+    },
+    "1607_Saccadic_Movements": {
+      "source": "media/1607_Saccadic_Movements.jpg",
+      "sourceSha256": "a1715f987ace2e4eb566f94e53ef80bc3e77706870f0eb47a1a296ea801a86a6",
+      "module": "m46607",
+      "kind": "photo",
+      "width": 925,
+      "height": 1250,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1081,
+          "file": "1607_Saccadic_Movements-800.webp"
+        },
+        {
+          "width": 925,
+          "height": 1250,
+          "file": "1607_Saccadic_Movements-925.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows a painting of a woman’s face, and the right panel shows lines traced over the painting. These lines represent the shifts in the gaze of a person looking at another face.",
+      "caption": "Saccades are rapid, conjugate movements of the eyes to survey a complicated visual stimulus, or to follow a moving visual stimulus. This image represents the shifts in gaze typical of a person studying a face. Notice the concentration of gaze on the major features of the face and the large number of paths traced between the eyes or around the mouth."
+    },
+    "1608_Vestibulo-Ocular_Reflex-02": {
+      "source": "media/1608_Vestibulo-Ocular_Reflex-02.jpg",
+      "sourceSha256": "37f07786d59d959c4b0f7b3e09e8616271530319dc5761ec3ad63564914fdf99",
+      "module": "m46607",
+      "kind": "photo",
+      "width": 1779,
+      "height": 1911,
+      "variants": [
+        {
+          "width": 800,
+          "height": 859,
+          "file": "1608_Vestibulo-Ocular_Reflex-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1718,
+          "file": "1608_Vestibulo-Ocular_Reflex-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the compensating movement of the eyes in response to head rotation.",
+      "caption": "If the head is turned in one direction, the coordination of that movement with the fixation of the eyes on a visual stimulus involves a circuit that ties the vestibular sense with the eye movement nuclei through the MLF."
+    },
+    "1610_Muscles_Controlled_by_the_Accessory_Nerve-02": {
+      "source": "media/1610_Muscles_Controlled_by_the_Accessory_Nerve-02.jpg",
+      "sourceSha256": "77a741413e26e3a17a47a6944b8ff51d1c62a4d780262b9b9c8cf26f1015de68",
+      "module": "m46607",
+      "kind": "photo",
+      "width": 859,
+      "height": 713,
+      "variants": [
+        {
+          "width": 800,
+          "height": 664,
+          "file": "1610_Muscles_Controlled_by_the_Accessory_Nerve-02-800.webp"
+        },
+        {
+          "width": 859,
+          "height": 713,
+          "file": "1610_Muscles_Controlled_by_the_Accessory_Nerve-02-859.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the side view of a person’s neck with the different muscles labeled.",
+      "caption": "The accessory nerve innervates the sternocleidomastoid and trapezius muscles, both of which attach to the head and to the trunk and shoulders. They can act as antagonists in head flexion and extension, and as synergists in lateral flexion toward the shoulder."
+    },
+    "1611_Dermatomes-02": {
+      "source": "media/1611_Dermatomes-02.jpg",
+      "sourceSha256": "f308b60d3f66815c1cc5bead79f8055029203764969f194109e97c8a52881b45",
+      "module": "m46640",
+      "kind": "photo",
+      "width": 1242,
+      "height": 2279,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1468,
+          "file": "1611_Dermatomes-02-800.webp"
+        },
+        {
+          "width": 1242,
+          "height": 2279,
+          "file": "1611_Dermatomes-02-1242.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Both panels in this image show the front view of a human body. The left image shows different regions in different colors. In both images, different parts are labeled.",
+      "caption": "The surface of the skin can be divided into topographic regions that relate to the location of sensory endings in the skin based on the spinal nerve that contains those fibers. (credit: modification of work by Mikael Häggström)"
+    },
+    "1612_Cerebellar_Peduncles-02": {
+      "source": "media/1612_Cerebellar_Peduncles-02.jpg",
+      "sourceSha256": "cd4e3ef8c71ef5010a44a767484e3564fb1f7b3b6a59d0bba26ffc660f4848dc",
+      "module": "m46604",
+      "kind": "photo",
+      "width": 1421,
+      "height": 1083,
+      "variants": [
+        {
+          "width": 800,
+          "height": 609,
+          "file": "1612_Cerebellar_Peduncles-02-800.webp"
+        },
+        {
+          "width": 1421,
+          "height": 1083,
+          "file": "1612_Cerebellar_Peduncles-02-1421.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the cerebellum with the major parts including the peduncles labeled.",
+      "caption": "The connections to the cerebellum are the three cerebellar peduncles, which are close to each other. The ICP arises from the medulla—specifically from the inferior olive, which is visible as a bulge on the ventral surface of the brain stem. The MCP is the ventral surface of the pons. The SCP projects into the midbrain."
+    },
+    "1613_Major_Regions_of_the_Cerebellum-02": {
+      "source": "media/1613_Major_Regions_of_the_Cerebellum-02.jpg",
+      "sourceSha256": "d3eb0b281ffc64e59a18164c6d4f00744dfcd4e20fc099c0d00bdcecd04b3956",
+      "module": "m46604",
+      "kind": "photo",
+      "width": 2248,
+      "height": 1167,
+      "variants": [
+        {
+          "width": 800,
+          "height": 415,
+          "file": "1613_Major_Regions_of_the_Cerebellum-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 830,
+          "file": "1613_Major_Regions_of_the_Cerebellum-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the midsagittal section of the cerebellum, and the right panel shows the superior view. In both panels, the major parts are labeled.",
+      "caption": "The cerebellum can be divided into two basic regions: the midline and the hemispheres. The midline is composed of the vermis and the flocculonodular lobe, and the hemispheres are the lateral regions."
+    },
+    "1614_Pituitary_Tumor-02": {
+      "source": "media/1614_Pituitary_Tumor-02.jpg",
+      "sourceSha256": "d34cff9a06d1a9b887f63524733de367dd7543f41be65dff4059d99d05bb3103",
+      "module": "m46607",
+      "kind": "photo",
+      "width": 2040,
+      "height": 785,
+      "variants": [
+        {
+          "width": 800,
+          "height": 308,
+          "file": "1614_Pituitary_Tumor-02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 615,
+          "file": "1614_Pituitary_Tumor-02-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the top view of the brain. The center panel shows the magnified view of a normal pituitary, and the right panel shows a pituitary tumor.",
+      "caption": "The pituitary gland is located in the sella turcica of the sphenoid bone within the cranial floor, placing it immediately inferior to the optic chiasm. If the pituitary gland develops a tumor, it can press against the fibers crossing in the chiasm. Those fibers are conveying peripheral visual information to the opposite side of the brain, so the patient will experience “tunnel vision”—meaning that only the central visual field will be perceived."
+    },
+    "1615_Locations_Spinal_Fiber_Tracts": {
+      "source": "media/1615_Locations_Spinal_Fiber_Tracts.jpg",
+      "sourceSha256": "3f1694557d5b85c403183791b13d4f29b403fb36960e329ae8f0c9ed5e9fe5ec",
+      "module": "m46640",
+      "kind": "photo",
+      "width": 1440,
+      "height": 1452,
+      "variants": [
+        {
+          "width": 800,
+          "height": 806,
+          "file": "1615_Locations_Spinal_Fiber_Tracts-800.webp"
+        },
+        {
+          "width": 1440,
+          "height": 1452,
+          "file": "1615_Locations_Spinal_Fiber_Tracts-1440.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the spinal fiber tracts connecting the brain and the spinal cord.",
+      "caption": ""
+    },
+    "1800_Child_Catching_Leaf_new": {
+      "source": "media/1800_Child_Catching_Leaf_new.jpg",
+      "sourceSha256": "bb619140161c7f06491ece587d37036efc4e1d9cde33dd3c28b15b58865d7dff",
+      "module": "m46682",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "1800_Child_Catching_Leaf_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "1800_Child_Catching_Leaf_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a young girl reaching for an orange leaf on an oak tree. She is on a walkway near a creek. The opposite shore is a deep slope covered with more trees in autumn colors.",
+      "caption": "Hormones of the endocrine system coordinate and control growth, metabolism, temperature regulation, the stress response, reproduction, and many other functions. (credit: “seenthroughmylense”/flickr.com)"
+    },
+    "1801_The_Endocrine_System": {
+      "source": "media/1801_The_Endocrine_System.jpg",
+      "sourceSha256": "4e3033af025d1f90aa7dec61396e27d03fedff60a7664e6fa059b79887c90a6a",
+      "module": "m46656",
+      "kind": "photo",
+      "width": 1852,
+      "height": 1728,
+      "variants": [
+        {
+          "width": 800,
+          "height": 746,
+          "file": "1801_The_Endocrine_System-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1493,
+          "file": "1801_The_Endocrine_System-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the endocrine glands and cells that are located throughout the body. The endocrine system organs include the pineal gland and pituitary gland in the brain. The pituitary is located on the anterior side of the hypothalamus while the pineal gland is located on the posterior side of the hypothalamus. The thyroid gland is a butterfly-shaped gland that wraps around the trachea within the neck. Four small, disc-shaped parathyroid glands are embedded into the posterior side of the thyroid. The adrenal glands are located on top of the kidneys. The pancreas is located at the center of the abdomen. In females, the two ovaries are connected to the uterus by two long, curved, tubes in the pelvic region. In males, the two testes are located in the scrotum below the penis.",
+      "caption": "Endocrine glands and cells are located throughout the body and play an important role in homeostasis."
+    },
+    "1802_Examples_of_Amine_Peptide_Protein_and_Steroid_Hormone_Structure": {
+      "source": "media/1802_Examples_of_Amine_Peptide_Protein_and_Steroid_Hormone_Structure.jpg",
+      "sourceSha256": "8b37531ce29ab7e805d1abcdc91c7db0063cc501c8e95c6ef9028a33fe61d705",
+      "module": "m46667",
+      "kind": "photo",
+      "width": 1046,
+      "height": 1329,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1016,
+          "file": "1802_Examples_of_Amine_Peptide_Protein_and_Steroid_Hormone_Structure-800.webp"
+        },
+        {
+          "width": 1046,
+          "height": 1329,
+          "file": "1802_Examples_of_Amine_Peptide_Protein_and_Steroid_Hormone_Structure-1046.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the chemical structure of amine hormones, peptide hormones, protein hormones, and steroid hormones. Amine hormones are amino acids with modified side groups. The example given is norepinephrine, which contains the NH two group typical of an amino acid, along with a hydroxyl (OH) group. The carboxyl group typical of most amino acids is replaced with a benzene ring, depicted as a hexagon of carbons that are connected by alternating single and double bonds. Peptide hormones are composed of short chains of amino acids. The example given is oxytocin, which has a chain of the following amino acids: GLY, LEU, PRO. The PRO is the bottom of the chain, which connects to a ring of the following amino acids: CYS, CYS, TYR, ILE, GLU, and ASP. Protein hormones are composed of long chains of linked amino acids. The example given is human growth hormone, which is composed of a bundle of amino acid strands, some thread-like, some coiled, and some in flat, folded sheets. Finally, steroid hormones are derived from the lipid cholesterol. Testosterone and progesterone are given as examples, which each contain several hexagonal and pentagonal carbon rings linked together.",
+      "caption": ""
+    },
+    "1803_Binding_of_Lipid-Soluble_Hormones": {
+      "source": "media/1803_Binding_of_Lipid-Soluble_Hormones.jpg",
+      "sourceSha256": "e8fc2396bcbe9323f0c47e7709ab56a976d7ff7f69e6cdf78d14fd6ca1243310",
+      "module": "m46667",
+      "kind": "photo",
+      "width": 1874,
+      "height": 1253,
+      "variants": [
+        {
+          "width": 800,
+          "height": 535,
+          "file": "1803_Binding_of_Lipid-Soluble_Hormones-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1069,
+          "file": "1803_Binding_of_Lipid-Soluble_Hormones-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows the steps involved with the binding of lipid-soluble hormones. Lipid-soluble hormones, such as steroid hormones, easily diffuse through the cell membrane. The hormone binds to its receptor in the cytosol, forming a receptor-hormone complex. The receptor-hormone complex then enters the nucleus and binds to the target gene on the cell’s DNA. Transcription of the gene creates a messenger RNA that is translated into the desired protein within the cytoplasm. It is these proteins that alter the cell’s activity.",
+      "caption": "A steroid hormone directly initiates the production of proteins within a target cell. Steroid hormones easily diffuse through the cell membrane. The hormone binds to its receptor in the cytosol, forming a receptor–hormone complex. The receptor–hormone complex then enters the nucleus and binds to the target gene on the DNA. Transcription of the gene creates a messenger RNA that is translated into the desired protein within the cytoplasm."
+    },
+    "1804_Binding_of_Water-Soluble_Hormones": {
+      "source": "media/1804_Binding_of_Water-Soluble_Hormones.jpg",
+      "sourceSha256": "127c1e274719a27fe134d68ec5ab32d581c0049fc3841dfeca60f6122f547dfb",
+      "module": "m46667",
+      "kind": "photo",
+      "width": 965,
+      "height": 731,
+      "variants": [
+        {
+          "width": 800,
+          "height": 606,
+          "file": "1804_Binding_of_Water-Soluble_Hormones-800.webp"
+        },
+        {
+          "width": 965,
+          "height": 731,
+          "file": "1804_Binding_of_Water-Soluble_Hormones-965.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows the binding of water-soluble hormones. Water-soluble hormones cannot diffuse through the cell membrane. These hormones must bind to a receptor on the outer surface of the cell membrane. The receptor then activates a G protein in the cytoplasm, which travels to and activates adenylyl cyclase. Adenylyl cyclase catalyzes the conversion of ATP to CAMP, the secondary messenger in this pathway. CAMP, in turn, activates protein kinases, which phosphorylate proteins in the cytoplasm. This phosphorylation, shown as a P being added to a polypeptide chain, activates the proteins, allowing them to alter cell activity.",
+      "caption": "Water-soluble hormones cannot diffuse through the cell membrane. These hormones must bind to a surface cell-membrane receptor. The receptor then initiates a cell-signaling pathway within the cell involving G proteins, adenylyl cyclase, the secondary messenger cyclic AMP (cAMP), and protein kinases. In the final step, these protein kinases phosphorylate proteins in the cytoplasm. This activates proteins in the cell that carry out the changes specified by the hormone."
+    },
+    "1805_Negative_Feedback_Loop": {
+      "source": "media/1805_Negative_Feedback_Loop.jpg",
+      "sourceSha256": "f03a41c34b0a89d8f6ac8b631c029f22cf2d2c980864207925728b2223c2e95a",
+      "module": "m46667",
+      "kind": "photo",
+      "width": 1117,
+      "height": 1094,
+      "variants": [
+        {
+          "width": 800,
+          "height": 783,
+          "file": "1805_Negative_Feedback_Loop-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 1094,
+          "file": "1805_Negative_Feedback_Loop-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a negative feedback loop using the example of glucocorticoid regulation in the blood. Step 1 in the cycle is when an imbalance occurs. The hypothalamus perceives low blood concentrations of glucocorticoids in the blood. This is illustrated by there being only 5 glucocorticoids floating in a cross section of an artery. Step 2 in the cycle is hormone release, where the hypothalamus releases corticotropin-releasing hormone (CRH). Step 3 is labeled correction. Here, the CRH release starts a hormone cascade that triggers the adrenal gland to release glucocorticoid into the blood. This allows the blood concentration of glucocorticoid to increase, as illustrated by 8 glucocorticoid molecules now being present in the cross section of the artery. Step 4 is labeled negative feedback. Here, the hypothalamus perceives normal concentrations of glucocorticoids in the blood and stops releasing CRH. This brings blood glucocorticoid levels back to homeostasis.",
+      "caption": "The release of adrenal glucocorticoids is stimulated by the release of hormones from the hypothalamus and pituitary gland. This signaling is inhibited when glucocorticoid levels become elevated by causing negative signals to the pituitary gland and hypothalamus."
+    },
+    "1806_The_Hypothalamus-Pituitary_Complex": {
+      "source": "media/1806_The_Hypothalamus-Pituitary_Complex.jpg",
+      "sourceSha256": "2c44dfbbad90124e0971494b1da017f3ac7ee4488d6503575d44736a5e8564f3",
+      "module": "m46699",
+      "kind": "photo",
+      "width": 1077,
+      "height": 626,
+      "variants": [
+        {
+          "width": 800,
+          "height": 465,
+          "file": "1806_The_Hypothalamus-Pituitary_Complex-800.webp"
+        },
+        {
+          "width": 1077,
+          "height": 626,
+          "file": "1806_The_Hypothalamus-Pituitary_Complex-1077.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration shows the hypothalamus-pituitary complex, which is located at the base of the brain and shown here from a lateral view. The hypothalamus lies inferior and anterior to the thalamus, which is sits atop the brainstem. The hypothalamus connects to the pituitary gland by the stalk-like infundibulum. The pituitary gland looks like a sac containing two balls hanging from the infundibulum. The “balls” are the anterior and posterior lobes of the pituitary. Each lobe secretes different hormones in response to signals from the hypothalamus.",
+      "caption": "The hypothalamus region lies inferior and anterior to the thalamus. It connects to the pituitary gland by the stalk-like infundibulum. The pituitary gland consists of an anterior and posterior lobe, with each lobe secreting different hormones in response to signals from the hypothalamus."
+    },
+    "1807_The_Posterior_Pituitary_Complex": {
+      "source": "media/1807_The_Posterior_Pituitary_Complex.jpg",
+      "sourceSha256": "fcefb7cadbab0ce791e6a54c25980202b3f163d4f814ec66c955495c2338c57a",
+      "module": "m46699",
+      "kind": "photo",
+      "width": 2194,
+      "height": 1768,
+      "variants": [
+        {
+          "width": 800,
+          "height": 644,
+          "file": "1807_The_Posterior_Pituitary_Complex-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1289,
+          "file": "1807_The_Posterior_Pituitary_Complex-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration zooms in on the hypothalamus and the attached pituitary gland. The posterior pituitary is highlighted. Two nuclei in the hypothalamus contain neurosecretory cells that release different hormones. The neurosecretory cells of the paraventricular nucleus release oxytocin (OT) while the neurosecretory cells of the supraoptic nucleus release anti-diuretic hormone (ADH). The neurosecretory cells stretch down the infundibulum into the posterior pituitary. The tube-like extensions of the neurosecretory cells within the infundibulum are labeled the hypothalamophypophyseal tracts. These tracts connect with a web-like network of blood vessels in the posterior pituitary called the capillary plexus. From the capillary plexus, the posterior pituitary secretes the OT or ADH into a single vein that exits the pituitary.",
+      "caption": "Neurosecretory cells in the hypothalamus release oxytocin (OT) or ADH into the posterior lobe of the pituitary gland. These hormones are stored or released into the blood via the capillary plexus."
+    },
+    "1808_The_Anterior_Pituitary_Complex": {
+      "source": "media/1808_The_Anterior_Pituitary_Complex.jpg",
+      "sourceSha256": "0e5e2b1a1f87ebb1b82f0bae1deed5c415c742fe40a0ae02c0e1539d274941f3",
+      "module": "m46699",
+      "kind": "photo",
+      "width": 1154,
+      "height": 996,
+      "variants": [
+        {
+          "width": 800,
+          "height": 690,
+          "file": "1808_The_Anterior_Pituitary_Complex-800.webp"
+        },
+        {
+          "width": 1154,
+          "height": 996,
+          "file": "1808_The_Anterior_Pituitary_Complex-1154.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This illustration zooms in on the hypothalamus and the attached pituitary gland. The anterior pituitary is highlighted. Three neurosecretory cells are secreting hormones into a web-like network of arteries within the infundibulum. The artery net is labeled the primary capillary plexus of the hypophyseal portal system. The superior hypophysel artery enters the primary capillary plexus from outside of the infundibulum. The hypophyseal portal vein runs down from the primary capillary plexus, through the infundibulum, and connects to the secondary capillary plexus of the hypophyseal portal system. The secondary capillary plexus is located within the anterior pituitary. The hormones released from the neurosecretory cells of the hypothalamus travel through the primary capillary plexus, down the hypophyseal portal vein, and into the secondary capillary plexus. There, the hypothalamus hormones stimulate the anterior pituitary to release its hormones. The anterior pituitary hormones leave the primary capillary plexus from a single vein at the bottom of the anterior lobe.",
+      "caption": "The anterior pituitary manufactures seven hormones. The hypothalamus produces separate hormones that stimulate or inhibit hormone production in the anterior pituitary. Hormones from the hypothalamus reach the anterior pituitary via the hypophyseal portal system."
+    },
+    "1809_Hormonal_Regulation_of_Growth": {
+      "source": "media/1809_Hormonal_Regulation_of_Growth.jpg",
+      "sourceSha256": "37b884e2183cd7e1985344c944001f902a5a8f1ffe956c1a5bb4c304a10d50e0",
+      "module": "m46699",
+      "kind": "photo",
+      "width": 1188,
+      "height": 1009,
+      "variants": [
+        {
+          "width": 800,
+          "height": 679,
+          "file": "1809_Hormonal_Regulation_of_Growth-800.webp"
+        },
+        {
+          "width": 1188,
+          "height": 1009,
+          "file": "1809_Hormonal_Regulation_of_Growth-1188.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart illustrates the hormone cascade that stimulates human growth. In step 1, the hypothalamus releases growth hormone-releasing hormone (GHRH). GHRH travels into the primary capillary plexus of the anterior pituitary, where it stimulates the anterior pituitary to release growth hormone (GH). The release of growth hormone causes three types of effects. In the glucose-sparing effect, GH stimulates adipose cells to break down stored fat, fueling the growth effects (discussed next). The target cells for the glucose-sparing effects are adipose cells. In the growth effects, GH increases the uptake of amino acids from the blood and enhances cellular proliferation while also reducing apoptosis. The target cells for the growth effects are bone cells, muscle cells, nervous system cells, and immune system cells. In the diabetogenic effect, GH stimulates the liver to break down glycogen into glucose, fueling the growth effects. The liver also releases IGF in response to GH. The IGF further stimulates the growth effects but also negatively feeds back to the hypothalamus. When high IGF one levels are perceived by the hypothalamus, it releases growth hormone inhibiting hormone (GHIH). GHIH inhibits GH release by the anterior pituitary.",
+      "caption": "Growth hormone (GH) directly accelerates the rate of protein synthesis in skeletal muscle and bones. Insulin-like growth factor 1 (IGF-1) is activated by growth hormone and indirectly supports the formation of new proteins in muscle cells and bone."
+    },
+    "1810_Major_Pituitary_Hormones": {
+      "source": "media/1810_Major_Pituitary_Hormones.jpg",
+      "sourceSha256": "77e52e5017c2f2d22d16aeb14fcd85f932be289b8beae78334807ecf76243b3c",
+      "module": "m46699",
+      "kind": "photo",
+      "width": 1164,
+      "height": 1232,
+      "variants": [
+        {
+          "width": 800,
+          "height": 846,
+          "file": "1810_Major_Pituitary_Hormones-800.webp"
+        },
+        {
+          "width": 1164,
+          "height": 1232,
+          "file": "1810_Major_Pituitary_Hormones-1164.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "These two diagrammatic tables show the major pituitary hormones, their releasing hormone from the hypothalamus, their target organs, and their effects. The top part of the diagram shows the posterior pituitary hormones. ADH is produced by the hypothalamus and stored in the posterior pituitary. The targets of ADH are the kidneys, sweat glands and circulatory system, as this hormone affects water balance. OT is produced by the posterior pituitary and has no releasing hormone. Its target is the female reproductive system, as this hormone triggers uterine contractions during childbirth. The anterior pituitary hormones are listed in the lower diagram. The release of LH by the anterior pituitary is triggered by the release of GNRH from the hypothalamus. The target of LH is the reproductive system, as this hormone stimulates the production of sex hormones by the gonads. The release of FSH by the anterior pituitary is triggered by the release of GNRH from the hypothalamus. The target of FSH is the reproductive system, as this hormone stimulates the production of sperm and eggs. The release of TSH by the anterior pituitary is triggered by the release of TRH from the hypothalamus. The target of TSH is the thyroid gland, as this hormone stimulates the release of thyroid hormone (TH). TH regulates metabolism. The release of PRL by the anterior pituitary is triggered by the release of PRH and inhibited by the release of PIH from the hypothalamus. The target of PRL is the mammary glands, as this hormone promotes milk production. The release of GH by the anterior pituitary is triggered by the release of GHRH and inhibited by the release of GHIH from the hypothalamus. The targets of GH are the liver, bones and muscles, as it induces its targets to produce insulin-like growth factors (IGH), as this hormone stimulates body growth and a higher metabolic rate. The release of ACTH by the anterior pituitary is triggered by the release of CRH from the hypothalamus. The targets of ACTH are the adrenal glands, as this hormone induces its targets to produce glucocorticoids, which regulate metabolism and the stress response.",
+      "caption": "Major pituitary hormones and their target organs."
+    },
+    "1811_The_Thyroid_Gland": {
+      "source": "media/1811_The_Thyroid_Gland.jpg",
+      "sourceSha256": "f956a9fc58ca589ebfd91ee889a9686ddaaac32001b53fa03f6b7ed5b4640138",
+      "module": "m46700",
+      "kind": "photo",
+      "width": 737,
+      "height": 1410,
+      "variants": [
+        {
+          "width": 737,
+          "height": 1410,
+          "file": "1811_The_Thyroid_Gland-737.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A of this figure is a diagram of the anterior view of the thyroid gland. The thyroid gland is a butterfly-shaped gland wrapping around the trachea. It narrows at its center, just under the thyroid cartilage of the larynx. This narrow area is called the isthmus of the thyroid. Two large arteries, the common carotid arteries, run parallel to the trachea on the outer border of the thyroid. A small artery enters the superior edge of the thyroid, near the isthmus, and branches throughout the two “wings” of the thyroid. Part B of this figure is a posterior view of the thyroid. The posterior view shows that the thyroid does not completely wrap around the posterior of the trachea. The posterior sides of the thyroid wings can be seen protruding from under the cricoid cartilage of the larynx. The posterior sides of the thyroid “wings” each contain two small, disc-shaped parathyroid glands embedded in the thyroid tissue. Within each wing, one disc is located superior to the other. These are labeled the left and right parathyroid glands. Just under the inferior parathyroid glands are two arteries that bring blood to the thyroid from the left and right subclavian arteries. Part C of this figure is a micrograph of thyroid tissue. The thyroid follicle cells are cuboidal epithelial cells. These cells form a ring around irregular-shaped cavities called follicles. The follicles contain light colored colloid. A larger parafollicular cell is embedded between two of the follicular cells near the edge of a follicle.",
+      "caption": "The thyroid gland is located in the neck where it wraps around the trachea. (a) Anterior view of the thyroid gland. (b) Posterior view of the thyroid gland. (c) The glandular tissue is composed primarily of thyroid follicles. The larger parafollicular cells often appear within the matrix of follicle cells. LM × 1332. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1813_A_Classic_Negative_Feedback_Loop": {
+      "source": "media/1813_A_Classic_Negative_Feedback_Loop.jpg",
+      "sourceSha256": "a54cba495794b2be4e81c8fcc9f71166ff662d4d32251d41ce608e375bfca3c2",
+      "module": "m46700",
+      "kind": "photo",
+      "width": 1122,
+      "height": 1097,
+      "variants": [
+        {
+          "width": 800,
+          "height": 782,
+          "file": "1813_A_Classic_Negative_Feedback_Loop-800.webp"
+        },
+        {
+          "width": 1122,
+          "height": 1097,
+          "file": "1813_A_Classic_Negative_Feedback_Loop-1122.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram illustrates a negative feedback loop. It shows the general steps of a negative feedback loop at the center (imbalance, hormone release, correction, and negative feedback) using the example of the hormone cascade that regulates metabolic rate. The hypothalamus releases TRH in response to low metabolic rate and or low T three and T four concentrations in the blood (imbalance). This triggers TSH release by the pituitary (hormone release). The TSH travels to the thyroid where it triggers T three and T four release by the thyroid cells. T three and T four increase basal metabolic rate of the body cells and cause a rise in body temperature (the calorigenic effect). T three and T four then feed back to the hypothalamus and inhibits TRH and TSH release. If metabolic rate is high and or T three and T four concentrations are low, then the hypothalamus stops releasing TRH (negative feedback). As a result, the anterior pituitary will not release TSH and no T three or T four will be produced by the thyroid.",
+      "caption": "A classic negative feedback loop controls the regulation of thyroid hormone levels."
+    },
+    "1814_The_Parathyroid_Glands": {
+      "source": "media/1814_The_Parathyroid_Glands.jpg",
+      "sourceSha256": "0271be642513c0c32ed448d48b9728cf71504d1ff9673656630dcf63f8e31d27",
+      "module": "m46687",
+      "kind": "photo",
+      "width": 1117,
+      "height": 408,
+      "variants": [
+        {
+          "width": 800,
+          "height": 292,
+          "file": "1814_The_Parathyroid_Glands-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 408,
+          "file": "1814_The_Parathyroid_Glands-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "Part A of this diagram shows the four, small, disc-shaped parathyroid glands embedded in the posterior surface of the thyroid gland. Part B shows a micrograph of parathyroid tissue. The tissue is largely composed of cube-shaped chief cells encircling a central blood vessel. A few larger and darker-staining oxyphil cells are embedded within the many chief cells.",
+      "caption": "The small parathyroid glands are embedded in the posterior surface of the thyroid gland. LM × 760. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1817_The_Role_of_Parathyroid_Hormone_in_Maintaining_Blood_Calcium_Homeostasis": {
+      "source": "media/1817_The_Role_of_Parathyroid_Hormone_in_Maintaining_Blood_Calcium_Homeostasis.jpg",
+      "sourceSha256": "c9747bfa29983c59b4b67848427e6ee64f13483868d63ab8bbbf8ee9fdaa1146",
+      "module": "m46687",
+      "kind": "photo",
+      "width": 1186,
+      "height": 1425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 961,
+          "file": "1817_The_Role_of_Parathyroid_Hormone_in_Maintaining_Blood_Calcium_Homeostasis-800.webp"
+        },
+        {
+          "width": 1186,
+          "height": 1425,
+          "file": "1817_The_Role_of_Parathyroid_Hormone_in_Maintaining_Blood_Calcium_Homeostasis-1186.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the role of parathyroid hormone in maintaining blood calcium homeostasis. When blood calcium concentration drops, chief cells of the parathyroid gland release parathyroid hormone (PTH). PTH affects bone, the kidneys and the intestines. In regards to bone, PTH inhibits osteoblasts and stimulates osteoclasts. This results in compact bone being broken down, as illustrated by an osteoclast burrowing into the surface of a bone. The break down releases calcium ions into a nearby blood vessel. The osteoblasts are inactive in this stage. In regards to the kidneys, PTH stimulates kidney tubule cells to recover waste calcium from the urine. PTH also stimulates kidney tubule cells to release calcitrol. This is illustrated with a cross section of a kidney tubule, showing the cells of the tubule wall. Urine is running to the left of the tubule wall cells while an artery is to the right. The right edge of the tubule wall cells and the left edge of the artery are separated by a small region of interstitial space. The cells are removing calcium from the urine and pumping it into the interstitial fluid, after which the calcium enters the artery. The cells are also pumping calcitrol into the blood vessel. In regards to the intestine, PTH stimulates the intestines to absorb calcium from digesting food. A cross section of an intestinal cell is shown, which is cube-shaped but with finger-like projections on the intestinal lumen side (top). Beneath the intestinal cell is an artery. Calcitrol is leaving the artery and entering the intestinal cell, stimulating it to absorb calcium from food in the intestinal lumen. The effects of PTH on bone, the kidneys and the intestines all cause blood calcium levels to increase. High calcium concentrations in the blood stimulate the parafollicular cells in the thyroid to release calcitonin. Calcitonin reverses the effects of PTH by stimulating osteoblasts and inhibiting osteoclasts in bone tissue. This is illustrated by calcium ions leaving a blood vessel and traveling to osteoblasts on a section of compact bone. The osteoblasts are thickening the compact bone layer while, in this stage, the osteoclasts are inactive.",
+      "caption": "Parathyroid hormone increases blood calcium levels when they drop too low. Conversely, calcitonin, which is released from the thyroid gland, decreases blood calcium levels when they become too high. These two mechanisms constantly maintain blood calcium concentration at homeostasis."
+    },
+    "1818_The_Adrenal_Glands": {
+      "source": "media/1818_The_Adrenal_Glands.jpg",
+      "sourceSha256": "0e133ab3278e87efffcf1f580f85e0c279bdfbdc9f85c61909596b045dbfb8f0",
+      "module": "m46684",
+      "kind": "photo",
+      "width": 1102,
+      "height": 316,
+      "variants": [
+        {
+          "width": 800,
+          "height": 229,
+          "file": "1818_The_Adrenal_Glands-800.webp"
+        },
+        {
+          "width": 1102,
+          "height": 316,
+          "file": "1818_The_Adrenal_Glands-1102.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the left adrenal gland located atop the left kidney. The gland is composed of an outer cortex and an inner medulla all surrounded by a connective tissue capsule. The cortex can be subdivided into additional zones, all of which produce different types of hormones. The outermost layer is the zona glomerulosa, which releases mineralcorticoids, such as aldosterone, that regulate mineral balance. Underneath this layer is the zona fasciculate, which releases glucocorticoids, such as cortisol, corticosterone and cortisone, that regulate glucose metabolism. Underneath this layer is the zona reticularis, which releases androgens, such as dehydroepiandrosterone, that stimulate masculinization. Below this layer is the adrenal medulla, which releases stress hormones, such as epinephrine and norepinephrine, that stimulate the sympathetic ANS.",
+      "caption": "Both adrenal glands sit atop the kidneys and are composed of an outer cortex and an inner medulla, all surrounded by a connective tissue capsule. The cortex can be subdivided into additional zones, all of which produce different types of hormones. LM × 204. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1820_The_Pancreas": {
+      "source": "media/1820_The_Pancreas.jpg",
+      "sourceSha256": "89a8287339af0236e3e6e3478d97684e00e65df1c4468684393025cf87372ff2",
+      "module": "m46685",
+      "kind": "photo",
+      "width": 2185,
+      "height": 1102,
+      "variants": [
+        {
+          "width": 800,
+          "height": 403,
+          "file": "1820_The_Pancreas-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 807,
+          "file": "1820_The_Pancreas-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the anatomy of the pancreas. The left, larger side of the pancreas is seated within the curve of the duodenum of the small intestine. The smaller, rightmost tip of the pancreas is located near the spleen. The splenic artery is seen travelling to the spleen, however, it has several branches connecting to the pancreas. An interior view of the pancreas shows that the pancreatic duct is a large tube running through the center of the pancreas. It branches throughout its length in to several horseshoe- shaped pockets of acinar cells. These cells secrete digestive enzymes, which travel down the bile duct and into the small intestine. There are also small pancreatic islets scattered throughout the pancreas. The pancreatic islets secrete the pancreatic hormones insulin and glucagon into the splenic artery. An inset micrograph shows that the pancreatic islets are small discs of tissue consisting of a thin, outer ring called the exocrine acinus, a thicker, inner ring of beta cells and a central circle of alpha cells.",
+      "caption": "The pancreatic exocrine function involves the acinar cells secreting digestive enzymes that are transported into the small intestine by the pancreatic duct. Its endocrine function involves the secretion of insulin (produced by beta cells) and glucagon (produced by alpha cells) within the pancreatic islets. These two hormones regulate the rate of glucose metabolism in the body. The micrograph reveals pancreatic islets. LM × 760. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "1822_The_Homostatic_Regulation_of_Blood_Glucose_Levels": {
+      "source": "media/1822_The_Homostatic_Regulation_of_Blood_Glucose_Levels.jpg",
+      "sourceSha256": "98fa9b2bfd76c1366c53dbf5d6e2ea2b151354e5b530687eeb935296194ad4af",
+      "module": "m46685",
+      "kind": "photo",
+      "width": 2101,
+      "height": 2952,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1124,
+          "file": "1822_The_Homostatic_Regulation_of_Blood_Glucose_Levels-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2248,
+          "file": "1822_The_Homostatic_Regulation_of_Blood_Glucose_Levels-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the homeostatic regulation of blood glucose levels. Blood glucose concentration is tightly maintained between 70 milligrams per deciliter and 110 milligrams per deciliter. If blood glucose concentration rises above this range (hyperglycemia), insulin is released from the pancreas. Insulin triggers body cells to take up glucose from the blood and utilize it in cellular respiration. Insulin also inhibits glycogenolysis, in that glucose is removed from the blood and stored as glycogen in the liver. Insulin also inhibits gluconeogenesis, in that amino acids and free glycerol are not converted to glucose in the ER. If blood glucose concentration drops below this range, glucagon is released, which stimulates body cells to release glucose into the blood. All of these actions cause blood glucose concentration to decrease. When blood glucose concentration is low (hypoglycemia), alpha cells of the pancreas release glucagon. Glucagon inhibits body cells from taking up glucose from the blood and utilizing it in cellular respiration. Glucagon also stimulates glycogenolysis, in that glycogen in the liver is broken down into glucose and released into the blood. Glucagon also stimulates glucogenogenesis, in that amino acids and free glycerol are converted to glucose in the ER and released into the blood. All of these actions cause blood glucose concentrations to increase.",
+      "caption": "Blood glucose concentration is tightly maintained between 70 mg/dL and 100 mg/dL. If blood glucose concentration rises above this range, insulin is released, which stimulates body cells to remove glucose from the blood. If blood glucose concentration drops below this range, glucagon is released, which stimulates body cells to release glucose into the blood."
+    },
+    "1823_Goiter": {
+      "source": "media/1823_Goiter.jpg",
+      "sourceSha256": "b764d6c9a851d8cfe0b5c17b0771f90051e57a9814ec54518fb452732d434091",
+      "module": "m46700",
+      "kind": "photo",
+      "width": 975,
+      "height": 731,
+      "variants": [
+        {
+          "width": 800,
+          "height": 599,
+          "file": "1823_Goiter-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 731,
+          "file": "1823_Goiter-975.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a woman with a goiter, which is an extreme, irregular swelling on the anterior side of the neck.",
+      "caption": "(credit: “Almazi”/Wikimedia Commons)"
+    },
     "200_DNA_Double_Helix-02": {
       "source": "media/200_DNA_Double_Helix-02.jpg",
       "sourceSha256": "b5924062069c273a31198aaf9584be612373553c089df2c4a2925d5da900a45b",

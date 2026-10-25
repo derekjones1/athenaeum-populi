@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 14,
-      "mappedSections": 79,
+      "localChapters": 17,
+      "mappedSections": 99,
       "units": [
         {
           "index": 1,
@@ -962,6 +962,186 @@
       "moduleId": "m46574",
       "sourceTitle": "Motor Responses",
       "moduleSha256": "817ed3b295584d96404ab5fe5cddd73f32d53abd4429acd81a3af73ba9f43440"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/01-divisions-of-the-autonomic-nervous-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "15.1",
+      "moduleId": "m46582",
+      "sourceTitle": "Divisions of the Autonomic Nervous System",
+      "moduleSha256": "6dbda8871e1b4a9d7445df3b1303d557fb89a8c9819127079333b2311478e9a0"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/02-autonomic-reflexes-and-homeostasis.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "15.2",
+      "moduleId": "m46579",
+      "sourceTitle": "Autonomic Reflexes and Homeostasis",
+      "moduleSha256": "7a96c3e4d7c467c63114d467991108310c4b58d9752436e4ed2f1437ad5f77b4"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/03-central-control.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "15.3",
+      "moduleId": "m46581",
+      "sourceTitle": "Central Control",
+      "moduleSha256": "ec740f73a35f959773ebc72aba56c9878d7bc483775f03f25eba43e6830b3543"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/15-the-autonomic-nervous-system/04-drugs-that-affect-the-autonomic-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "15.4",
+      "moduleId": "m46587",
+      "sourceTitle": "Drugs that Affect the Autonomic System",
+      "moduleSha256": "2e6906ead78c247349276bb821b2f80b0fb0a1ac7223b05a0323567267fcb05f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/01-overview-of-the-neurological-exam.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "16.1",
+      "moduleId": "m46594",
+      "sourceTitle": "Overview of the Neurological Exam",
+      "moduleSha256": "f84cacd3bdb89c588fe686478615136804a75ce62afc61ad2e7f89dbfaf0e59b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/02-the-mental-status-exam.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "16.2",
+      "moduleId": "m46650",
+      "sourceTitle": "The Mental Status Exam",
+      "moduleSha256": "c189a9a7bea3d0d0dfc941d731bbfc609773ce4f1d35c555ecf468c0ffcc3856"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/03-the-cranial-nerve-exam.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "16.3",
+      "moduleId": "m46607",
+      "sourceTitle": "The Cranial Nerve Exam",
+      "moduleSha256": "621c507129504536fe553fa6fbe30e7dcb00ad093063143fcb14520b4a4d675a"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/04-the-sensory-and-motor-exams.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "16.4",
+      "moduleId": "m46640",
+      "sourceTitle": "The Sensory and Motor Exams",
+      "moduleSha256": "0979ae6d2a0f074a5458f390529ae496eb12b917d7bba91a055050aa97226950"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/16-the-neurological-exam/05-the-coordination-and-gait-exams.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "16.5",
+      "moduleId": "m46604",
+      "sourceTitle": "The Coordination and Gait Exams",
+      "moduleSha256": "cd9550dfc5bbd1d552ed045266e6bea7d52d7fcb03180291b79a63090f309633"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/01-an-overview-of-the-endocrine-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.1",
+      "moduleId": "m46656",
+      "sourceTitle": "An Overview of the Endocrine System",
+      "moduleSha256": "fbe95dc1908c53fbb9dd06353e43f6bc378af1d6257168f4e5670f0435f4468b"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/02-hormones.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.2",
+      "moduleId": "m46667",
+      "sourceTitle": "Hormones",
+      "moduleSha256": "a145882e11d5857ac6a87c047251b53f1d23039b812ff283c328936869465f7e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/03-the-pituitary-gland-and-hypothalamus.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.3",
+      "moduleId": "m46699",
+      "sourceTitle": "The Pituitary Gland and Hypothalamus",
+      "moduleSha256": "75d1ac917d36421550050cda9669908e904d40217b4173098f671c42c3f040a4"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/04-the-thyroid-gland.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.4",
+      "moduleId": "m46700",
+      "sourceTitle": "The Thyroid Gland",
+      "moduleSha256": "201b9b57fa6bd438ce48062cec46f5fd25b2e3132a71b76e5e28b63fe07dc6dc"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/05-the-parathyroid-glands.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.5",
+      "moduleId": "m46687",
+      "sourceTitle": "The Parathyroid Glands",
+      "moduleSha256": "5ac76f5a88a2f74a825727e3d506d4c7465e9a4836460a22ad5f804faf5c0c1c"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/06-the-adrenal-glands.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.6",
+      "moduleId": "m46684",
+      "sourceTitle": "The Adrenal Glands",
+      "moduleSha256": "5fb10392bda17b097815d8089acbcd6c4d4c45e019943b488e735e0421de49fa"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/07-the-pineal-gland.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.7",
+      "moduleId": "m46693",
+      "sourceTitle": "The Pineal Gland",
+      "moduleSha256": "4aa4887a043cd4f16a57dc89a9a817a1290de0622f933396cef7b4389dd85c69"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/08-gonadal-and-placental-hormones.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.8",
+      "moduleId": "m46670",
+      "sourceTitle": "Gonadal and Placental Hormones",
+      "moduleSha256": "109961ab983662439c0c99165db890850184e1da6cfd981c05b1fbfc850b270e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/09-the-endocrine-pancreas.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.9",
+      "moduleId": "m46685",
+      "sourceTitle": "The Endocrine Pancreas",
+      "moduleSha256": "b2057eb127db0f43143f7d0bde9445e1f0be2752ef1b30af561ebe97971d0a7f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/10-organs-with-secondary-endocrine-functions.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.10",
+      "moduleId": "m46680",
+      "sourceTitle": "Organs with Secondary Endocrine Functions",
+      "moduleSha256": "54ec2de41077c2a5bea28b16c27d4ea526a6693818d6e66ee1c196ea622c3653"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/17-the-endocrine-system/11-development-and-aging-of-the-endocrine-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "17.11",
+      "moduleId": "m46658",
+      "sourceTitle": "Development and Aging of the Endocrine System",
+      "moduleSha256": "ce5a5974962a3c2ad87b3cb827d9d0fb2528b137042463873c7be46cb9c688e6"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

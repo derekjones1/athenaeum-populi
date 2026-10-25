@@ -15,6 +15,9 @@ the author's ledger, results, or report** (`$SP/ledger-*`). You may read
 answer to an item, as a cross-check (the extractor drops cross-references —
 read the raw CNXML).
 
+Never open `$SP/run-facts-B.md` (the drafter's raw list of candidate
+defects, which would anchor your reading); the run facts you read are
+`$SP/run-facts.md` only.
 Read first: `$SP/run-facts.md` (this run's decisions — a page that follows
 a parent decision is not defective for it), then
 `docs/subjects/anatomy-physiology.md` and `docs/subjects/life-sciences.md` —
