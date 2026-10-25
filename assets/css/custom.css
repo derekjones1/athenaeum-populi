@@ -752,3 +752,13 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
 html:not(.dark) .content [class~="hx:bg-blue-100"] a:not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   color: #1e40af;
 }
+
+/* --- Home-page library grid -------------------------------------------------
+   The six subject cards carry a title and at most a one-line status. A card
+   with no status (a live subject) otherwise parks its title in the bottom
+   corner through the theme's `mt-auto`, so the live and the coming-soon
+   cards sit at different heights. Centre the text block on both axes;
+   `content/_index.md` wraps the grid in `.ap-library` so the book grids on
+   the subject landing pages keep the theme's left-aligned layout. */
+.ap-library .hextra-card > div { margin: auto; text-align: center; }
+.ap-library .hextra-card-icon { justify-content: center; }
