@@ -133,6 +133,27 @@ const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md',
+    exercise: 'fs-id2481331',
+    kind: 'key',
+    erratum: 2426,
+    reason: 'the source keys B "Only cardiac muscle has gap junctions." for "Which of the following is unique to cardiac muscle cells?", which no sentence of the module asserts and which 10.8 contradicts ("Single-unit smooth muscle tissue contains gap junctions", m46478); the module fixes C: "This property is known as autorhythmicity. Neither smooth nor skeletal muscle can do this." (fs-id1754472); the page keys option C "Only cardiac muscle is capable of autorhythmicity" (options and option order unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/03-cardiac-cycle.md',
+    exercise: 'fs-id2672256',
+    kind: 'options',
+    erratum: 2425,
+    reason: 'the source distractor B "ventricular systole" is also correct by the module ("S1 is the sound created by the closing of the atrioventricular valves during ventricular contraction", fs-id2624692) for "The first heart sound represents which portion of the cardiac cycle?"; the page replaces it with the module phrase "opening of the atrioventricular valves" (summary fs-id1246209: "opening the atrioventricular valves"); key C "closing of the atrioventricular valves" and option order unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/05-development-of-the-heart.md',
+    exercise: 'fs-id1985735',
+    kind: 'key',
+    erratum: 2424,
+    reason: 'the source keys D "cardiogenic tubes" for "The two tubes that eventually fuse to form the heart are referred to as the ________.", a name the module never uses; the module says the lumened cardiogenic cords "are referred to as endocardial tubes. The two tubes migrate together and fuse to form a single primitive heart tube" (fs-id2485730), and its glossary defines endocardial tubes; the page keys option B "endocardial tubes" (options and option order unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/18-the-cardiovascular-system-blood/03-erythrocytes.md',
     exercise: 'fs-id1546796',
     kind: 'options',

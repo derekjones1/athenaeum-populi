@@ -4325,6 +4325,264 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2412,
       "rationale": "The name is antihemophilic factor, the factor whose deficiency causes hemophilia: the table's own Pathway(s) cells say \"deficiency results in hemophilia A\", \"B\", and \"C\" for factors VIII, IX, and XI. \"Antihemolytic\" means preventing hemolysis. National Library of Medicine, Medical Subject Headings, descriptor Factor VIII: \"Antihemophilic factor that is part of the factor VIII/von Willebrand factor complex.\" The page prints \"antihemophilic\" in table rows VIII, IX, and XI, in the Intrinsic Pathway paragraph, and in the sort-into-bins labels, with a visible Source note under the table and a footer sentence. Evidenced by the chapter 18 prose claim pass (F10), October 24, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/05-development-of-the-heart.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46673",
+      "sourceElementIds": [
+        "fs-id1985735",
+        "fs-id2124672",
+        "fs-id1719016",
+        "fs-id1621164",
+        "fs-id1884366"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2424,
+      "rationale": "The source keys D \"cardiogenic tubes\" for \"The two tubes that eventually fuse to form the heart are referred to as the ________.\", a name the module never uses; its own sentence says the lumened cardiogenic cords \"are referred to as endocardial tubes. The two tubes migrate together and fuse to form a single primitive heart tube\" (fs-id2485730), and its glossary defines endocardial tubes (fs-id1620238) and the primitive heart tube as the fusion of \"the two endocardial tubes\" (fs-id2120724). The page keys option B \"endocardial tubes\" with the options and their order unchanged, a visible Source note, and a footer sentence; the keys gate's disclosed-deviation list records it as kind key. Raised by the run facts and the chapter 19.5 author and ruled by the orchestrator, October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/03-cardiac-cycle.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46661",
+      "sourceElementIds": [
+        "fs-id2672256",
+        "fs-id1816400",
+        "fs-id1339164",
+        "fs-id2868883"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2425,
+      "rationale": "The source distractor b \"ventricular systole\" is also correct for \"The first heart sound represents which portion of the cardiac cycle?\": the module says \"S1 is the sound created by the closing of the atrioventricular valves during ventricular contraction\" (fs-id2624692), and its Summary has the ventricles begin to contract (ventricular systole) with the first heart sound produced as blood flows toward the atria (fs-id1246209). The page prints \"opening of the atrioventricular valves\", the Summary's own phrase (\"opening the atrioventricular valves\"), in its place, with key C (closing of the atrioventricular valves), the other options, and their order unchanged and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Raised by the chapter 19.3 checker and ruled by the orchestrator, October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46664",
+      "sourceElementIds": [
+        "fs-id2481331",
+        "fs-id1246189",
+        "fs-id2955636",
+        "fs-id1253699",
+        "fs-id1551799"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2426,
+      "rationale": "The source keys B \"Only cardiac muscle has gap junctions.\" for \"Which of the following is unique to cardiac muscle cells?\", which no sentence of the module asserts and which the book's smooth muscle section contradicts: m46478 (§10.8) says \"Single-unit smooth muscle tissue contains gap junctions to synchronize membrane depolarization and contractions\" and (fs-id1866256) \"Single-unit smooth muscle cells contract synchronously, they are coupled by gap junctions\". The module fixes option C: \"This property is known as autorhythmicity. Neither smooth nor skeletal muscle can do this.\" (fs-id1754472; that sentence is itself in tension with §10.8's pacesetter cells, erratum 2442, but it is the only option the module asserts). The page keys option C with the options and their order unchanged, a visible Source note, and a footer sentence; the keys gate's disclosed-deviation list records it as kind key. Raised by the chapter 19.2 author, checked by the 19.2 checker and the prose claim pass, and ruled by the orchestrator, October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id1894016"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2428,
+      "rationale": "The paragraph's own figures give a different daily and yearly volume: 70 mL × 75 beats a minute is 5.25 liters a minute, 5.25 × 1,440 minutes is 7,560 liters a day, and × 365 is about 2.76 million liters, about 730,000 US gallons. The printed 14,000 liters a day fits both ventricles together while 5.25 liters a minute is one chamber, and 14,000 × 365 is 5.1 million liters, not 10 million. The page reads \"approximately 7,500 liters per day\" and \"about 2.75 million liters, or 730,000 gallons\", with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F1), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id1984262"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2429,
+      "rationale": "The module names the right ventricle's three papillary muscles as \"the anterior, posterior, and septal muscles\", and its glossary (fs-id1542976, meaning fs-id1640396) says the moderator band \"crosses to the anterior papillary muscle\"; no inferior papillary muscle is named. The page reads \"connect with the anterior papillary muscle\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F2), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id2718087"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2430,
+      "rationale": "The atrioventricular valves open and close with pressure changes; the module's own paragraph fs-id1291612 says backflow closes the cusps and the papillary muscles' tension on the chordae tendineae is \"helping to hold the cusps of the atrioventricular valves in place and preventing them from being blown back into the atria\", and m46661 (§19.3) fs-id1988682 says rising ventricular pressure \"causes blood to flow back toward the atria, closing the tricuspid and mitral valves\". The page reads \"the papillary muscles, which hold the closed cusps in place and keep them from being forced back into the atria\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F13), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id2045458"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2431,
+      "rationale": "Rheumatic fever and scarlet fever are not synonyms: scarlet fever is the acute rash illness from the erythrogenic toxin of Streptococcus pyogenes, and rheumatic fever is the later autoimmune sequela. m46566 (§21) fs-id2256343 ties the cross-reacting M-protein antibodies to rheumatic fever alone; OpenStax Microbiology §22.2 (m58913), Key Concepts and Summary (list fs-id1167663980370): \"Streptococcus pyogenes causes strep throat, an infection of the pharynx that also causes high fever and can lead to scarlet fever, acute rheumatic fever, and acute glomerulonephritis\". The page drops \"or scarlet fever\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F6), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id1247110"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2432,
+      "rationale": "The epicardial coronary arteries lie on the surface of the heart, in its sulci; an artery has no sulci. The module's glossary (fs-id1885019, meaning fs-id2670184) defines them as \"surface arteries of the heart that generally follow the sulci\". The page reads \"remain on the surface of the heart\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F4), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id2354686"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2433,
+      "rationale": "Aspirin is an antiplatelet drug that limits clot formation, not a thrombolytic; the same paragraph assigns dissolving the clot to \"thrombolytic agents such as streptokinase\", and m46594 (§16) fs-id1632853 has a patient on \"aspirin therapy to limit the possibility of blood clots forming\". Becker RC, Harrington RA (eds.), Fibrinolytic and Antithrombotic Therapy, 2nd ed., Oxford University Press, aspirin chapter (https://academic.oup.com/book/41958/chapter/355222564): aspirin \"irreversibly acetylates cyclooxygenase (COX), impairing prostaglandin metabolism and thromboxane A2 (TXA2) synthesis. As a result, platelet aggregation in response to collagen, adenosine diphosphate (ADP), and thrombin (in low concentrations) is attenuated.\" The page reads \"aspirin to limit further clot formation\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F5), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46676",
+      "sourceElementIds": [
+        "fs-id2197060"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2434,
+      "rationale": "The small cardiac vein does not drain into the great cardiac vein: the module's glossary says it \"parallels the right coronary artery and drains blood from the posterior surfaces of the right atrium and ventricle; drains into the coronary sinus, middle cardiac vein, or right atrium\". The page lists only the posterior cardiac vein and the middle cardiac vein among the great cardiac vein's major branches, with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F3), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46664",
+      "sourceElementIds": [
+        "fs-id2868561"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2443,
+      "rationale": "The sentence that the sarcoplasmic reticulum \"stores few calcium ions, so most of the calcium ions must come from outside the cells\" contradicts the module's Calcium Ions subsection (fs-id2318959): \"Approximately 20 percent of the calcium required for contraction is supplied by the influx of Ca2+ during the plateau phase. The remaining Ca2+ for contraction is released from storage in the sarcoplasmic reticulum.\" The page reads \"the sarcoplasmic reticulum is less extensive than in skeletal muscle, and its calcium release is triggered by calcium that enters from outside the cell during the action potential\" with a visible Source note and a footer sentence. Raised by the chapter 19.2 author and evidenced by the chapter 19 prose claim pass (F8), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46664",
+      "sourceElementIds": [
+        "fs-id2533079"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2444,
+      "rationale": "The module's stage times add to 250 ms, not the printed 225 ms: about 50 ms from the SA node to the AV node (fs-id1535485), about 100 ms through the AV node (fs-id1729268), about 25 ms through the bundle and its branches (fs-id1273399), and about 75 ms through the Purkinje fibers (fs-id2533079). The page reads \"approximately 250 ms\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F11), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46664",
+      "sourceElementIds": [
+        "fs-id1507308"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2445,
+      "rationale": "The chapter's own definition sets bradycardia at a resting rate below 60 bpm, and 50 bpm is the level above which most patients stay asymptomatic: m46672 (§19.4) fs-id1775301, \"Bradycardia is the condition in which resting rate drops below 60 bpm\". The page reads \"resting rates lower than 60 beats per minute\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F9), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46664",
+      "sourceElementIds": [
+        "fs-id1856568"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2446,
+      "rationale": "A first-degree block is not the \"partial\" one and is not a delay \"between the SA and AV nodes\": the module's figure caption calls the second-degree block \"partial\" and the paragraph itself calls second-degree \"incomplete\", and the module defines AV nodal blocks as occurring \"within the AV node\" (fs-id2059534). The page reads \"A first-degree block indicates a delay in conduction through the AV node; every impulse still reaches the ventricles\" with a visible Source note and a footer sentence; the figure caption's \"second-degree or partial\" is kept as printed. Raised by the chapter 19.2 author and checker and evidenced by the chapter 19 prose claim pass (F10), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/03-cardiac-cycle.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46661",
+      "sourceElementIds": [
+        "fs-id1246209",
+        "fs-id1449656",
+        "fs-id1518947"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2458,
+      "rationale": "The dicrotic notch is a mechanical event in the arterial pressure tracing, not an ECG deflection, and the backflow from the arteries is toward the ventricles: the module's body (fs-id2105014) says \"blood flows back toward the heart, producing the dicrotic notch (small dip) seen in blood pressure tracings\", and its glossary meaning (fs-id1518947) says blood \"attempts to flow back into the ventricles\". The page's Summary bullet reads \"back into the ventricles\" and \"the dicrotic notch in the arterial pressure tracing\", and the Key terms bullet reads \"the dicrotic notch of the blood pressure tracing\", each with a visible Source note, and a footer sentence. Evidenced by the chapter 19 prose claim pass (F12), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46672",
+      "sourceElementIds": [
+        "fs-id2122863"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2460,
+      "rationale": "Exercise cardiac output of 19.5 L/min is nearly 4 times, not 4–5 times, the module's own resting mean of 5.25 L/min (19.5 ÷ 5.25 ≈ 3.7). The page reads \"nearly 4 times the resting rate\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F19), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46672",
+      "sourceElementIds": [
+        "fs-id862646",
+        "fs-id1368552",
+        "fs-id1269584"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2461,
+      "rationale": "The beta-1 adrenergic receptor that NE and epinephrine bind and the muscarinic receptor that ACh binds on the heart are G protein–coupled receptors, not ligand-gated channels: m46582 (§15.1) fs-id1473713, \"All of them are G protein–coupled receptors\" (the alpha- and beta-adrenergic receptors), and fs-id2430550, \"the receptors on their targets are muscarinic receptors, which are G protein–coupled receptors\". The page reads \"binds to beta-1 receptors, G protein–coupled receptors that, through second messengers, open sodium and calcium ion channels\" (fs-id862646), \"binding to muscarinic receptors, G protein–coupled receptors that open potassium ion channels\" (fs-id1368552), and \"binding to the beta-1 receptors, G protein–coupled receptors that, through second messengers, open sodium and calcium ion channels\" (fs-id1269584), each with a visible Source note, and a footer sentence. Evidenced by the chapter 19 prose claim pass (F16), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46672",
+      "sourceElementIds": [
+        "fs-id1559549"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2462,
+      "rationale": "The carotid bodies hold chemoreceptors; the carotid baroreceptors are in the carotid sinuses, as the book says elsewhere: m46579 (§15.4) fs-id2455581, \"a baroreceptor, in the walls of the aorta and carotid sinuses\"; m46603 (§20.4) glossary fs-id1992803 (meaning fs-id1733888), the carotid sinuses are \"the locations of the baroreceptors and chemoreceptors\"; m46646 fs-id1351490, \"the carotid sinus, containing the carotid baroreceptors and chemoreceptors\"; m46434 fs-id2471150, \"baroreceptors in the aortic arch and carotid sinuses\". The page reads \"the aortic sinus, carotid sinuses, the venae cavae\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F15), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46672",
+      "sourceElementIds": [
+        "fs-id1268700"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2464,
+      "rationale": "Epinephrine and NE come from the adrenal medulla, as the module says twice: fs-id1269584, \"The catecholamines, epinephrine and NE, secreted by the adrenal medulla\", and fs-id1370577, \"In addition to the catecholamines from the adrenal medulla\". The page reads \"stimulates the adrenal medulla to secrete epinephrine and NE\" with a visible Source note and a footer sentence. Raised by the chapter 19.4 author and evidenced by the chapter 19 prose claim pass (F14), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46672",
+      "sourceElementIds": [
+        "fs-id1370577"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2465,
+      "rationale": "Digitalis acts by inhibiting the sarcolemmal Na+/K+ pump; the resulting rise in intracellular sodium slows calcium extrusion and raises intracellular calcium, rather than blocking calcium's sequestering into the sarcoplasmic reticulum. British Pharmacological Society, Pharmacology Education, \"Positive inotropic drugs: Cardiac glycosides (digoxin)\", https://www.pharmacologyeducation.org/positive-inotropic-drugs-cardiac-glycosides-digoxin: inhibition of the pump \"causes an elevation of the intracellular concentration of Na+\" and the reduced sodium gradient \"secondarily reduces the expulsion of Ca2+ from the cytoplasm during diastole\". The page reads \"acting as a positive inotropic agent by inhibiting the Na+/K+ pump; the resulting rise in intracellular sodium slows calcium removal from the cell, raising intracellular calcium and the strength of contraction\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F20), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46672",
+      "sourceElementIds": [
+        "fs-id1448800"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2466,
+      "rationale": "The module ties contractility and afterload to end systolic volume and only preload to end diastolic volume: its Contractility subsection calls contractility \"the primary parameter for impacting ESV\", and its stroke-volume table lists contractility and afterload under end systolic volume and preload under end diastolic volume. The page reads \"Contractility impacts ESV, as does afterload.\" with a visible Source note and a footer sentence. Evidenced by the chapter 19 prose claim pass (F17), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/05-development-of-the-heart.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46673",
+      "sourceElementIds": [
+        "fs-id2179193",
+        "fs-id2213898"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2477,
+      "rationale": "The heart bulge is a surface feature of the embryo, not of the heart: the module's body (fs-id2058606) says \"the prominent heart bulge that appears on the anterior surface of the embryo\" and its Summary says \"visible as a prominent heart bulge on the surface of the embryo\". The page's Key terms bullet reads \"prominent feature on the anterior surface of the embryo\" with a visible Source note after the Key terms block and a footer sentence. Raised by the chapter 19.5 author and evidenced by the chapter 19 prose claim pass (F21), October 25, 2026."
     }
   ]
 }

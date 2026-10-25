@@ -53,6 +53,7 @@ record. No Biology chapter is outstanding.
 | Anatomy and Physiology | 16-the-neurological-exam | 5 | done Oct 24 2026 (in the authoring run) | 2321–2323, 2329–2331, 2336–2337 |
 | Anatomy and Physiology | 17-the-endocrine-system | 11 | done Oct 24 2026 (in the authoring run) | 2348–2349, 2354, 2367–2368, 2373–2374, 2378 |
 | Anatomy and Physiology | 18-the-cardiovascular-system-blood | 6 | done Oct 25 2026 (in the authoring run) | 2386, 2390, 2394–2399, 2408–2409, 2411–2412 |
+| Anatomy and Physiology | 19-the-cardiovascular-system-the-heart | 5 | done Oct 25 2026 (in the authoring run) | 2428–2434, 2443–2446, 2458, 2460–2462, 2464–2466, 2477 |
 
 The Microbiology rows (26 chapters) are in `docs/history/microbiology.md`
 under "Prose claim pass rows". Knowledge-check pages (`knowledge-check-*.md`) carry no source prose and are

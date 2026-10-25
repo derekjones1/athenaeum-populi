@@ -5766,6 +5766,236 @@
       "alt": "This figure shows micrographs of the different types of leukocytes. From left to right, the order of leukocytes shown are: basophil, eosinophil, neutrophil, monocyte, and lymphocyte.",
       "caption": "(Micrographs provided by the Regents of University of Michigan Medical School © 2012)"
     },
+    "2000_Human_Heart_Photo": {
+      "source": "media/2000_Human_Heart_Photo.jpg",
+      "sourceSha256": "b9e3df1938bcf5130dbcefce91e758034dc7d68375ab170acdaf918c9c5e1b0e",
+      "module": "m46679",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "2000_Human_Heart_Photo-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "2000_Human_Heart_Photo-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a human heart.",
+      "caption": "This artist’s conception of the human heart suggests a powerful engine—not inappropriate for a muscular pump that keeps the body continually supplied with blood. (credit: Patrick J. Lynch)"
+    },
+    "2001_Heart_Position_in_ThoraxN": {
+      "source": "media/2001_Heart_Position_in_ThoraxN.jpg",
+      "sourceSha256": "443fe084ca98a5a819725ef1bf8891c5a37c5d8d3ea9ba55b5890483887eae58",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 2177,
+      "height": 1974,
+      "variants": [
+        {
+          "width": 800,
+          "height": 725,
+          "file": "2001_Heart_Position_in_ThoraxN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1451,
+          "file": "2001_Heart_Position_in_ThoraxN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the location of the heart in the thorax.",
+      "caption": "The heart is located within the thoracic cavity, medially between the lungs in the mediastinum. It is about the size of a fist, is broad at the top (called the base), and tapers toward the apex."
+    },
+    "2002_CPR_Technique": {
+      "source": "media/2002_CPR_Technique.jpg",
+      "sourceSha256": "b1dab4e091ecfbbe26c51378bf0e341c5d31155e28cd77a8bb1a19d7247d6af4",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1481,
+      "height": 1031,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "2002_CPR_Technique-800.webp"
+        },
+        {
+          "width": 1481,
+          "height": 1031,
+          "file": "2002_CPR_Technique-1481.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows a schematic of a person performing CPR and demarcates the region in the chest where the compression must be performed. The bottom panel shows a photo of a person performing CPR on a dummy.",
+      "caption": "If the heart should stop, CPR can maintain the flow of blood until the heart resumes beating. By applying pressure to the sternum, the blood within the heart will be squeezed out of the heart and into the circulation. Proper positioning of the hands on the sternum to perform CPR would be between the lines at T4 and T9."
+    },
+    "2003_Dual_System_of_Human_Circulation": {
+      "source": "media/2003_Dual_System_of_Human_Circulation.jpg",
+      "sourceSha256": "f5fac6a9b82c4e96c7a52cc6e58c305913f1d40e3e663d7e59e1067d2d0e4094",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 2287,
+      "height": 2525,
+      "variants": [
+        {
+          "width": 800,
+          "height": 883,
+          "file": "2003_Dual_System_of_Human_Circulation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1766,
+          "file": "2003_Dual_System_of_Human_Circulation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows the human heart with the arteries and veins labeled. The bottom panel shows the human circulatory system.",
+      "caption": "Blood flows from the right atrium to the right ventricle, where it is pumped into the pulmonary circuit. The blood in the pulmonary artery branches is low in oxygen but relatively high in carbon dioxide. Gas exchange occurs in the pulmonary capillaries (oxygen into the blood, carbon dioxide out), and blood high in oxygen and low in carbon dioxide is returned to the left atrium. From here, blood enters the left ventricle, which pumps it into the systemic circuit. Following exchange in the systemic capillaries (oxygen and nutrients out of the capillaries and carbon dioxide and wastes in), blood returns to the right atrium and the cycle is repeated."
+    },
+    "2004_Heart_Wall": {
+      "source": "media/2004_Heart_Wall.jpg",
+      "sourceSha256": "9643362e94d00685c0db97bdc940c7e4d3727edf597ff5316df26310e72f18ed",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1993,
+      "height": 1365,
+      "variants": [
+        {
+          "width": 800,
+          "height": 548,
+          "file": "2004_Heart_Wall-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1096,
+          "file": "2004_Heart_Wall-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a magnified view of the structure of the heart wall.",
+      "caption": "The pericardial membrane that surrounds the heart consists of three layers and the pericardial cavity. The heart wall also consists of three layers. The pericardial membrane and the heart wall share the epicardium."
+    },
+    "2005_Surface_Anatomy_of_the_Heart": {
+      "source": "media/2005_Surface_Anatomy_of_the_Heart.jpg",
+      "sourceSha256": "c60d5f5bf9047453e098e3524f1da181340115a32ca26535ed0fd207a7d48834",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 2233,
+      "height": 2100,
+      "variants": [
+        {
+          "width": 800,
+          "height": 752,
+          "file": "2005_Surface_Anatomy_of_the_Heart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1504,
+          "file": "2005_Surface_Anatomy_of_the_Heart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows the anterior view of the heart and the bottom panel shows the posterior view of the human heart. In both panels, the main parts of the heart are labeled.",
+      "caption": "Inside the pericardium, the surface features of the heart are visible."
+    },
+    "2006_Heart_Musculature": {
+      "source": "media/2006_Heart_Musculature.jpg",
+      "sourceSha256": "b753a14e1b10e6f45035d1f8d9a224fd1ddfbdba7c1354b17d23daaa400f25ef",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1025,
+      "height": 1014,
+      "variants": [
+        {
+          "width": 800,
+          "height": 791,
+          "file": "2006_Heart_Musculature-800.webp"
+        },
+        {
+          "width": 1025,
+          "height": 1014,
+          "file": "2006_Heart_Musculature-1025.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the muscles in the heart.",
+      "caption": "The swirling pattern of cardiac muscle tissue contributes significantly to the heart’s ability to pump blood effectively."
+    },
+    "2007_Ventricular_Muscle_Thickness": {
+      "source": "media/2007_Ventricular_Muscle_Thickness.jpg",
+      "sourceSha256": "38808d98c7793805eda9f6c2799e3051f310451727d0cc46839eb4625879b3a7",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 2025,
+      "height": 1181,
+      "variants": [
+        {
+          "width": 800,
+          "height": 466,
+          "file": "2007_Ventricular_Muscle_Thickness-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 933,
+          "file": "2007_Ventricular_Muscle_Thickness-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure the left panel shows the muscles of the heart in the relaxed position, and the right panel shows the muscles of the heart in contracted position.",
+      "caption": "The myocardium in the left ventricle is significantly thicker than that of the right ventricle. Both ventricles pump the same amount of blood, but the left ventricle must generate a much greater pressure to overcome greater resistance in the systemic circuit. The ventricles are shown in both relaxed and contracting states. Note the differences in the relative size of the lumens, the region inside each ventricle where the blood is contained."
+    },
+    "2008_Internal_Anatomy_of_the_HeartN": {
+      "source": "media/2008_Internal_Anatomy_of_the_HeartN.jpg",
+      "sourceSha256": "5d962a658cab2538378fa846e2276c67389902c51968d64950873b9850938437",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1656,
+      "height": 1159,
+      "variants": [
+        {
+          "width": 800,
+          "height": 560,
+          "file": "2008_Internal_Anatomy_of_the_HeartN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1120,
+          "file": "2008_Internal_Anatomy_of_the_HeartN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure the top panel shows the image of the heart with the major parts labeled. The bottom left panel shows a photo of the heart with the surface layer peeled off. The images on the bottom right show detailed musculature inside the heart.",
+      "caption": "This anterior view of the heart shows the four chambers, the major vessels and their early branches, as well as the valves. The presence of the pulmonary trunk and aorta covers the interatrial septum, and the atrioventricular septum is cut away to show the atrioventricular valves."
+    },
+    "2009_Congenital_Heart_Defects": {
+      "source": "media/2009_Congenital_Heart_Defects.jpg",
+      "sourceSha256": "023c32619b3669c918a360eed2a1cf25f8bc01de3c1cdb9459b72d24360cd4c5",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 2221,
+      "height": 1346,
+      "variants": [
+        {
+          "width": 800,
+          "height": 485,
+          "file": "2009_Congenital_Heart_Defects-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 969,
+          "file": "2009_Congenital_Heart_Defects-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the structure of the heart with different congenital defects. The top left panel shows patent foramen ovale, the top right panel shows coarctation of the aorta, the bottom left panel shows patent ductus ateriosus and the bottom right shows tetralogy of fallot.",
+      "caption": "(a) A patent foramen ovale defect is an abnormal opening in the interatrial septum, or more commonly, a failure of the foramen ovale to close. (b) Coarctation of the aorta is an abnormal narrowing of the aorta. (c) A patent ductus arteriosus is the failure of the ductus arteriosus to close. (d) Tetralogy of Fallot includes an abnormal opening in the interventricular septum."
+    },
     "200_DNA_Double_Helix-02": {
       "source": "media/200_DNA_Double_Helix-02.jpg",
       "sourceSha256": "b5924062069c273a31198aaf9584be612373553c089df2c4a2925d5da900a45b",
@@ -5788,6 +6018,213 @@
       "alt": "This figure shows a double helix.",
       "caption": "Human DNA is described as a double helix that resembles a molecular spiral staircase. In humans the DNA is organized into 46 chromosomes.",
       "transparent": false
+    },
+    "2010_Chordae_Tendinae_Papillary_Muscles": {
+      "source": "media/2010_Chordae_Tendinae_Papillary_Muscles.jpg",
+      "sourceSha256": "e30b0170516dbd1995bd43b96f1390e8d89c6a7838b59b30e9fb53b91df57595",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1606,
+      "height": 1112,
+      "variants": [
+        {
+          "width": 800,
+          "height": 554,
+          "file": "2010_Chordae_Tendinae_Papillary_Muscles-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1108,
+          "file": "2010_Chordae_Tendinae_Papillary_Muscles-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows the inside of the heart with the main muscles labeled.",
+      "caption": "In this frontal section, you can see papillary muscles attached to the tricuspid valve on the right as well as the mitral valve on the left via chordae tendineae. (credit: modification of work by “PV KS”/flickr.com)"
+    },
+    "2011_Heart_Valves": {
+      "source": "media/2011_Heart_Valves.jpg",
+      "sourceSha256": "a47a1417bca0a29b588af0e2c330bf112537d92289d7e3027400066a9244f177",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1525,
+      "height": 1217,
+      "variants": [
+        {
+          "width": 800,
+          "height": 638,
+          "file": "2011_Heart_Valves-800.webp"
+        },
+        {
+          "width": 1525,
+          "height": 1217,
+          "file": "2011_Heart_Valves-1525.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the anterior view of the heart with the different heart valves labeled.",
+      "caption": "With the atria and major vessels removed, all four valves are clearly visible, although it is difficult to distinguish the three separate cusps of the tricuspid valve."
+    },
+    "2012_Blood_Flow_Relaxed_Ventricles": {
+      "source": "media/2012_Blood_Flow_Relaxed_Ventricles.jpg",
+      "sourceSha256": "0d094680c541e01ed57b10a528ae5dec87121c0524b8b3d59bc185d8a538ac9c",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1991,
+      "height": 1919,
+      "variants": [
+        {
+          "width": 800,
+          "height": 771,
+          "file": "2012_Blood_Flow_Relaxed_Ventricles-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1542,
+          "file": "2012_Blood_Flow_Relaxed_Ventricles-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the anterior view of the heart with the different valves, and the right panel of this figure shows the location of the mitral valve in the open position in the heart.",
+      "caption": "(a) A transverse section through the heart illustrates the four heart valves. The two atrioventricular valves are open; the two semilunar valves are closed. The atria and vessels have been removed. (b) A frontal section through the heart illustrates blood flow through the mitral valve. When the mitral valve is open, it allows blood to move from the left atrium to the left ventricle. The aortic semilunar valve is closed to prevent backflow of blood from the aorta to the left ventricle."
+    },
+    "2013_Blood_Flow_Contracted_Ventricles": {
+      "source": "media/2013_Blood_Flow_Contracted_Ventricles.jpg",
+      "sourceSha256": "228624219ea39c3f7411501e4fa96b8a07a82ecc2dc2be3f17798a312c9fcaa5",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1985,
+      "height": 1912,
+      "variants": [
+        {
+          "width": 800,
+          "height": 770,
+          "file": "2013_Blood_Flow_Contracted_Ventricles-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1541,
+          "file": "2013_Blood_Flow_Contracted_Ventricles-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the anterior view of the heart with the different valves, and the right panel of this figure shows the location of the mitral valve in the closed position in the heart.",
+      "caption": "(a) A transverse section through the heart illustrates the four heart valves during ventricular contraction. The two atrioventricular valves are closed, but the two semilunar valves are open. The atria and vessels have been removed. (b) A frontal view shows the closed mitral (bicuspid) valve that prevents backflow of blood into the left atrium. The aortic semilunar valve is open to allow blood to be ejected into the aorta."
+    },
+    "2014ab_Coronary_Blood_Vessels": {
+      "source": "media/2014ab_Coronary_Blood_Vessels.jpg",
+      "sourceSha256": "6829cfea192becc42a68a4d2d19daa740e9816724fe324295d8d69296acc67cd",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 2283,
+      "height": 2096,
+      "variants": [
+        {
+          "width": 800,
+          "height": 734,
+          "file": "2014ab_Coronary_Blood_Vessels-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1469,
+          "file": "2014ab_Coronary_Blood_Vessels-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows the anterior view of the heart while the bottom panel shows the posterior view of the heart. The different blood vessels are labeled.",
+      "caption": "The anterior view of the heart shows the prominent coronary surface vessels. The posterior view of the heart shows the prominent coronary surface vessels."
+    },
+    "2016_Occluded_Coronay_Arteries": {
+      "source": "media/2016_Occluded_Coronay_Arteries.jpg",
+      "sourceSha256": "9ea6a267ebc827ab1826162b321239e415f03d2ef3fd4fc66e91c016c65f1393",
+      "module": "m46676",
+      "kind": "photo",
+      "width": 1165,
+      "height": 1165,
+      "variants": [
+        {
+          "width": 800,
+          "height": 800,
+          "file": "2016_Occluded_Coronay_Arteries-800.webp"
+        },
+        {
+          "width": 1165,
+          "height": 1165,
+          "file": "2016_Occluded_Coronay_Arteries-1165.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a blockage in the coronary artery and in the circumflex artery.",
+      "caption": "In this coronary angiogram (X-ray), the dye makes visible two occluded coronary arteries. Such blockages can lead to decreased blood flow (ischemia) and insufficient oxygen (hypoxia) delivered to the cardiac tissues. If uncorrected, this can lead to cardiac muscle death (myocardial infarction)."
+    },
+    "2017abc_Cardiac_Muscle": {
+      "source": "media/2017abc_Cardiac_Muscle.jpg",
+      "sourceSha256": "542a99ee1118ec9568b1a17ef1edffd7f658fa6391a1850003048b7a625e0391",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 1983,
+      "height": 1975,
+      "variants": [
+        {
+          "width": 800,
+          "height": 796,
+          "file": "2017abc_Cardiac_Muscle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1593,
+          "file": "2017abc_Cardiac_Muscle-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left panel of this figure shows the cross structure of cardiac muscle with the major parts labeled. The top right panel shows a micrograph of cardiac muscle. The bottom panel shows the structure of intercalated discs.",
+      "caption": "(a) Cardiac muscle cells have myofibrils composed of myofilaments arranged in sarcomeres, T tubules to transmit the impulse from the sarcolemma to the interior of the cell, numerous mitochondria for energy, and intercalated discs that are found at the junction of different cardiac muscle cells. (b) A photomicrograph of cardiac muscle cells shows the nuclei and intercalated discs. (c) An intercalated disc connects cardiac muscle cells and consists of desmosomes and gap junctions. LM × 1600. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2018_Conduction_System_of_Heart": {
+      "source": "media/2018_Conduction_System_of_Heart.jpg",
+      "sourceSha256": "6ee6ac5fad0cc6223eb07e7c0f76eb2a9dfc650b6e601e4b3fdd2feae2982645",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 2021,
+      "height": 1354,
+      "variants": [
+        {
+          "width": 800,
+          "height": 536,
+          "file": "2018_Conduction_System_of_Heart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1072,
+          "file": "2018_Conduction_System_of_Heart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the anterior view of the frontal section of the heart with the major parts labeled.",
+      "caption": "Specialized conducting components of the heart include the sinoatrial node, the internodal pathways, the atrioventricular node, the atrioventricular bundle, the right and left bundle branches, and the Purkinje fibers."
+    },
+    "2019_Cardiac_ConductionN": {
+      "source": "media/2019_Cardiac_ConductionN.jpg",
+      "sourceSha256": "c094ee7adff2f2ae75b7ce8642d79f657e8e825edb9ad762515657179ba87a46",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 1421,
+      "height": 1426,
+      "variants": [
+        {
+          "width": 800,
+          "height": 803,
+          "file": "2019_Cardiac_ConductionN-800.webp"
+        },
+        {
+          "width": 1421,
+          "height": 1426,
+          "file": "2019_Cardiac_ConductionN-1421.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the different stages in the conduction cycle of the heart.",
+      "caption": "(1) The sinoatrial (SA) node and the remainder of the conduction system are at rest. (2) The SA node initiates the action potential, which sweeps across the atria. (3) After reaching the atrioventricular node, there is a delay of approximately 100 ms that allows the atria to complete pumping blood before the impulse is transmitted to the atrioventricular bundle. (4) Following the delay, the impulse travels through the atrioventricular bundle and bundle branches to the Purkinje fibers, and also reaches the right papillary muscle via the moderator band. (5) The impulse spreads to the contractile fibers of the ventricle. (6) Ventricular contraction begins."
     },
     "201_Elements_of_the_Human_Body-01": {
       "source": "media/201_Elements_of_the_Human_Body-01.jpg",
@@ -5812,6 +6249,236 @@
       "caption": "The main elements that compose the human body are shown from most abundant to least abundant.",
       "transparent": false
     },
+    "2020_SA_Node_Tracing": {
+      "source": "media/2020_SA_Node_Tracing.jpg",
+      "sourceSha256": "8b367e48518c876a8e3361a90cb2f901fad1298fd855cc721c53b67724139666",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 1667,
+      "height": 800,
+      "variants": [
+        {
+          "width": 800,
+          "height": 384,
+          "file": "2020_SA_Node_Tracing-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 768,
+          "file": "2020_SA_Node_Tracing-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows the change in membrane potential as a function of time.",
+      "caption": "The prepotential is due to a slow influx of sodium ions until the threshold is reached followed by a rapid depolarization and repolarization. The prepotential accounts for the membrane reaching threshold and initiates the spontaneous depolarization and contraction of the cell. Note the lack of a resting potential."
+    },
+    "2021_ECG_Placement_of_Electrodes": {
+      "source": "media/2021_ECG_Placement_of_Electrodes.jpg",
+      "sourceSha256": "dbcb4e0e871a2dedb45dfbe9cab2235ffebc11949d257748b120a9f712025a84",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 1069,
+      "height": 1769,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1324,
+          "file": "2021_ECG_Placement_of_Electrodes-800.webp"
+        },
+        {
+          "width": 1069,
+          "height": 1769,
+          "file": "2021_ECG_Placement_of_Electrodes-1069.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the points where electrodes are placed on the body for an ECG.",
+      "caption": "In a 12-lead ECG, six electrodes are placed on the chest, and four electrodes are placed on the limbs."
+    },
+    "2022_Electrocardiogram": {
+      "source": "media/2022_Electrocardiogram.jpg",
+      "sourceSha256": "8724312e0aad2b5d9a6b2ebab5a65340b51ba501ff54abe68ef9dcdca09f38d0",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 1638,
+      "height": 1064,
+      "variants": [
+        {
+          "width": 800,
+          "height": 519,
+          "file": "2022_Electrocardiogram-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1039,
+          "file": "2022_Electrocardiogram-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a graph of millivolts over time and the heart cycles during an ECG.",
+      "caption": "A normal tracing shows the P wave, QRS complex, and T wave. Also indicated are the PR, QT, QRS, and ST intervals, plus the P-R and S-T segments."
+    },
+    "2023_ECG_Tracing_with_Heart_ContractionN": {
+      "source": "media/2023_ECG_Tracing_with_Heart_ContractionN.jpg",
+      "sourceSha256": "84b34f711409a87fa2ff8ce967116524fb3ef564ee76f9140155e1af8f381342",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 2206,
+      "height": 1613,
+      "variants": [
+        {
+          "width": 800,
+          "height": 585,
+          "file": "2023_ECG_Tracing_with_Heart_ContractionN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1170,
+          "file": "2023_ECG_Tracing_with_Heart_ContractionN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the different stages of heart contraction and relaxation along with the stages in the QT cycle.",
+      "caption": "This diagram correlates an ECG tracing with the electrical and mechanical events of a heart contraction. Each segment of an ECG tracing corresponds to one event in the cardiac cycle."
+    },
+    "2024_Cardiac_Arrhythmias": {
+      "source": "media/2024_Cardiac_Arrhythmias.jpg",
+      "sourceSha256": "7a059885e31be254d4f4ea4112a3ba2c7a7d61e081d9d649bdfb8e8fbdf7a2a7",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 2000,
+      "height": 2050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 820,
+          "file": "2024_Cardiac_Arrhythmias-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1640,
+          "file": "2024_Cardiac_Arrhythmias-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this image the QT cycle for different heart conditions are shown. From top to bottom, the arrhythmias shown are second-degree partial block, atrial fibrillation, ventricular tachycardia, ventricular fibrillation and third degree block.",
+      "caption": "(a) In a second-degree or partial block, one-half of the P waves are not followed by the QRS complex and T waves while the other half are. (b) In atrial fibrillation, the electrical pattern is abnormal prior to the QRS complex, and the frequency between the QRS complexes has increased. (c) In ventricular tachycardia, the shape of the QRS complex is abnormal. (d) In ventricular fibrillation, there is no normal electrical activity. (e) In a third-degree block, there is no correlation between atrial activity (the P wave) and ventricular activity (the QRS complex)."
+    },
+    "2025ab_Defribillators": {
+      "source": "media/2025ab_Defribillators.jpg",
+      "sourceSha256": "a7ab7b9e22fa583d4dc787bdd0ebe0a8fb3251f2dbd9fab5010dbec2e4ce72ed",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 2275,
+      "height": 956,
+      "variants": [
+        {
+          "width": 800,
+          "height": 336,
+          "file": "2025ab_Defribillators-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 672,
+          "file": "2025ab_Defribillators-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In this figure two photographs of defibrillators are shown.",
+      "caption": "(a) An external automatic defibrillator can be used by nonmedical personnel to reestablish a normal sinus rhythm in a person with fibrillation. (b) Defibrillator paddles are more commonly used in hospital settings. (credit b: “widerider107”/flickr.com)"
+    },
+    "2026_Action_Potential_Heart_Contraction": {
+      "source": "media/2026_Action_Potential_Heart_Contraction.jpg",
+      "sourceSha256": "2e631db3847765b96d9f296e32b4ce32ba335da660e8963596b9fa1bfd2fc1e9",
+      "module": "m46664",
+      "kind": "photo",
+      "width": 1796,
+      "height": 1982,
+      "variants": [
+        {
+          "width": 800,
+          "height": 883,
+          "file": "2026_Action_Potential_Heart_Contraction-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1765,
+          "file": "2026_Action_Potential_Heart_Contraction-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows millivolts as a function of time with the various stages labeled. The bottom left panel shows action potential and tension as a function of time for skeletal muscle, and the bottom right panel shows the action potential and tension as a function of time for cardiac muscle.",
+      "caption": "(a) Note the long plateau phase due to the influx of calcium ions. The extended refractory period allows the cell to fully contract before another electrical event can occur. (b) The action potential for heart muscle is compared to that of skeletal muscle."
+    },
+    "2027_Phases_of_the_Cardiac_Cycle": {
+      "source": "media/2027_Phases_of_the_Cardiac_Cycle.jpg",
+      "sourceSha256": "353ba313f03f01b0a8e061cf5ca1ec4fee92f7b2ac5fefe25812424a57972594",
+      "module": "m46661",
+      "kind": "photo",
+      "width": 1963,
+      "height": 2169,
+      "variants": [
+        {
+          "width": 800,
+          "height": 884,
+          "file": "2027_Phases_of_the_Cardiac_Cycle-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1768,
+          "file": "2027_Phases_of_the_Cardiac_Cycle-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This pie chart shows the different phases of the cardiac cycle and details the atrial and ventricular stages.",
+      "caption": "The cardiac cycle begins with atrial systole and progresses to ventricular systole, atrial diastole, and ventricular diastole, when the cycle begins again. Correlations to the ECG are highlighted."
+    },
+    "2028_Cardiac_Cycle_vs_Electrocardiogram": {
+      "source": "media/2028_Cardiac_Cycle_vs_Electrocardiogram.jpg",
+      "sourceSha256": "9b5092a05edc8b192bc83863de78a36c10aab239a40ea51cab9bac876d940aba",
+      "module": "m46661",
+      "kind": "photo",
+      "width": 1683,
+      "height": 800,
+      "variants": [
+        {
+          "width": 800,
+          "height": 380,
+          "file": "2028_Cardiac_Cycle_vs_Electrocardiogram-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 760,
+          "file": "2028_Cardiac_Cycle_vs_Electrocardiogram-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the correlation between the cardiac cycle and the different stages in a electrocardiogram.",
+      "caption": "Initially, both the atria and ventricles are relaxed (diastole). The P wave represents depolarization of the atria and is followed by atrial contraction (systole). Atrial systole extends until the QRS complex, at which point, the atria relax. The QRS complex represents depolarization of the ventricles and is followed by ventricular contraction. The T wave represents the repolarization of the ventricles and marks the beginning of ventricular relaxation."
+    },
+    "2029_Cardiac_Cycle_vs_Heart_Sounds": {
+      "source": "media/2029_Cardiac_Cycle_vs_Heart_Sounds.jpg",
+      "sourceSha256": "c14410fd6964e2e6edb28923f543a73a4ff144e9302479346008031c22385025",
+      "module": "m46661",
+      "kind": "photo",
+      "width": 1566,
+      "height": 1183,
+      "variants": [
+        {
+          "width": 800,
+          "height": 604,
+          "file": "2029_Cardiac_Cycle_vs_Heart_Sounds-800.webp"
+        },
+        {
+          "width": 1566,
+          "height": 1183,
+          "file": "2029_Cardiac_Cycle_vs_Heart_Sounds-1566.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows a graph of the blood pressure with the different stages labeled. Under the graph, a line shows the different sounds made by the beating heart.",
+      "caption": "In this illustration, the x-axis reflects time with a recording of the heart sounds. The y-axis represents pressure."
+    },
     "202_Two_Models_of_Atomic_Structure": {
       "source": "media/202_Two_Models_of_Atomic_Structure.jpg",
       "sourceSha256": "a9f386122c5eb092fa613b3f3d78382ffdbbaa64ea8b75736f8e0a912780e7d5",
@@ -5834,6 +6501,167 @@
       "alt": "The top panel of this figure shows two electrons orbiting around the nucleus of a Helium atom. The bottom panel of this figure shows a cloud of electrons surrounding the nucleus of a Helium atom.",
       "caption": "(a) In the planetary model, the electrons of helium are shown in fixed orbits, depicted as rings, at a precise distance from the nucleus, somewhat like planets orbiting the sun. (b) In the electron cloud model, the electrons of helium are shown in the variety of locations they would have at different distances from the nucleus over time.",
       "transparent": false
+    },
+    "2030_Stethoscope_Placement": {
+      "source": "media/2030_Stethoscope_Placement.jpg",
+      "sourceSha256": "c9e613ff7d1a372cacedfd5b7a5f7e58d962377b6d5fdb50925a5b8d734252e4",
+      "module": "m46661",
+      "kind": "photo",
+      "width": 1671,
+      "height": 1323,
+      "variants": [
+        {
+          "width": 800,
+          "height": 633,
+          "file": "2030_Stethoscope_Placement-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1266,
+          "file": "2030_Stethoscope_Placement-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the points on the human chest where the stethoscope can be placed to hear the heart beat.",
+      "caption": "Proper placement of the bell of the stethoscope facilitates auscultation. At each of the four locations on the chest, a different valve can be heard."
+    },
+    "2031_Factors_in_Cardiac_Output": {
+      "source": "media/2031_Factors_in_Cardiac_Output.jpg",
+      "sourceSha256": "cdb1cc30778b838f3188282aa86bd62ce00734f0f592c60f59603ef3460c431c",
+      "module": "m46672",
+      "kind": "photo",
+      "width": 1508,
+      "height": 883,
+      "variants": [
+        {
+          "width": 800,
+          "height": 468,
+          "file": "2031_Factors_in_Cardiac_Output-800.webp"
+        },
+        {
+          "width": 1508,
+          "height": 883,
+          "file": "2031_Factors_in_Cardiac_Output-1508.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure lists the different factors affecting the heart rate and stroke volume. It also shows how they both affect the cardiac output.",
+      "caption": "Cardiac output is influenced by heart rate and stroke volume, both of which are also variable."
+    },
+    "2032_Automatic_Innervation": {
+      "source": "media/2032_Automatic_Innervation.jpg",
+      "sourceSha256": "a4a4ff89f5086eb1c4184694b2a11c77d0412163f04596728aa23779bacff6bc",
+      "module": "m46672",
+      "kind": "photo",
+      "width": 1081,
+      "height": 2037,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1507,
+          "file": "2032_Automatic_Innervation-800.webp"
+        },
+        {
+          "width": 1081,
+          "height": 2037,
+          "file": "2032_Automatic_Innervation-1081.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the brain and the nerves connecting the brain to the heart.",
+      "caption": "Cardioaccelerator and cardioinhibitory areas are components of the paired cardiac centers located in the medulla oblongata of the brain. They innervate the heart via sympathetic cardiac nerves that increase cardiac activity and vagus (parasympathetic) nerves that slow cardiac activity."
+    },
+    "2033_Depolarization_in_Sinus_Rhythm": {
+      "source": "media/2033_Depolarization_in_Sinus_Rhythm.jpg",
+      "sourceSha256": "2cb728cceb221a4af5c77a6d493b1d0a61f0f0cedd893f2a517b32f191c1774c",
+      "module": "m46672",
+      "kind": "photo",
+      "width": 1408,
+      "height": 2121,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1205,
+          "file": "2033_Depolarization_in_Sinus_Rhythm-800.webp"
+        },
+        {
+          "width": 1408,
+          "height": 2121,
+          "file": "2033_Depolarization_in_Sinus_Rhythm-1408.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three graphs. The top panel shows the normal or resting potential with time. The middle panel shows membrane potential with time in a parasympathetic stimulation where the heart rate is decreased. The bottom panel shows membrane potential with time in a sympathetic stimulation with increased heart rate.",
+      "caption": "The wave of depolarization in a normal sinus rhythm shows a stable resting HR. Following parasympathetic stimulation, HR slows. Following sympathetic stimulation, HR increases."
+    },
+    "2035_Factors_in_Stroke_Volume": {
+      "source": "media/2035_Factors_in_Stroke_Volume.jpg",
+      "sourceSha256": "6998c683306781cf5a85ae5819d4c24a593ec43cb7585e1dd2ad1155fe36fd08",
+      "module": "m46672",
+      "kind": "photo",
+      "width": 2196,
+      "height": 1222,
+      "variants": [
+        {
+          "width": 800,
+          "height": 445,
+          "file": "2035_Factors_in_Stroke_Volume-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 890,
+          "file": "2035_Factors_in_Stroke_Volume-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes major factors influencing stroke volume. Preload may be raised due to longer filling time or increased venous return. These factors increase end diastolic volume and increase stroke volume. Preload may be lowered due to decreased thyroid hormones, decreased calcium ions, high or low potassium ions, high or low sodium, low body temperature, hypoxia, abnormal pH balance, or drugs (for example, calcium channel blockers). These factors decrease end diastolic volume and decrease stroke volume. Contractility may be raised due to sympathetic stimulation, epinephrine and norepinephrine, high intracellular calcium ions, high blood calcium level, thyroid hormones, or glucagon. These factors decrease end systolic volume and increase stroke volume. Contractility may be lowered due to parasympathetic stimulation, acetylcholine, hypoxia, or hyperkalemia. These factors increase end systolic volume and decrease stroke volume. Afterload may be raised due to increased vascular resistance or semilunar valve damage. These factors increase end systolic volume and decrease stroke volume. Afterload may be lowered due to decreased vascular resistance. This factor decreases end systolic volume and increases stroke volume.",
+      "caption": "Multiple factors impact preload, afterload, and contractility, and are the major considerations influencing SV."
+    },
+    "2036_Summary_of_Factors_in_Cardiac_Output": {
+      "source": "media/2036_Summary_of_Factors_in_Cardiac_Output.jpg",
+      "sourceSha256": "40e84263e9f7f457fb4333cacca472c7eba0f6d46a41b2afc2698b59a3a97081",
+      "module": "m46672",
+      "kind": "photo",
+      "width": 2267,
+      "height": 1292,
+      "variants": [
+        {
+          "width": 800,
+          "height": 456,
+          "file": "2036_Summary_of_Factors_in_Cardiac_Output-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 912,
+          "file": "2036_Summary_of_Factors_in_Cardiac_Output-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart lists all the important factors that affect cardiac output.",
+      "caption": "The primary factors influencing HR include autonomic innervation plus endocrine control. Not shown are environmental factors, such as electrolytes, metabolic products, and temperature. The primary factors controlling SV include preload, contractility, and afterload. Other factors such as electrolytes may be classified as either positive or negative inotropic agents."
+    },
+    "2037_Embryonic_Development_of_Heart": {
+      "source": "media/2037_Embryonic_Development_of_Heart.jpg",
+      "sourceSha256": "513105a3635aacd55a32e67c333d1d995f6f8dab59971dbba74e71ec03abbc07",
+      "module": "m46673",
+      "kind": "photo",
+      "width": 2267,
+      "height": 1954,
+      "variants": [
+        {
+          "width": 800,
+          "height": 689,
+          "file": "2037_Embryonic_Development_of_Heart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1379,
+          "file": "2037_Embryonic_Development_of_Heart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "In the top panel of this figure the different stages in the development of the heart in the embryo is shown. The bottom panel shows how the heart is partitioned into four chambers.",
+      "caption": "This diagram outlines the embryological development of the human heart during the first eight weeks and the subsequent formation of the four heart chambers."
     },
     "203_Periodic_Table-02": {
       "source": "media/203_Periodic_Table-02.jpg",

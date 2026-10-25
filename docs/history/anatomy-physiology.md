@@ -1542,6 +1542,168 @@ Authors ran 181–229k tokens over up to four rounds, checkers 147–168k,
 the claim pass 192k, the verifier 201k, the solver 135k, and the Clerks
 47–198k.
 
+## Chapter 19 (October 25, 2026)
+
+*The Cardiovascular System: The Heart*, the second chapter of Unit 4,
+*Fluids and Transport*: five sections (m46676, m46664, m46661, m46672,
+m46673; intro m46679), run the same day as chapter 18 from
+`docs/briefs/anatomy-physiology/run.md`, with five Opus authors launched
+together, five Opus checkers, one Opus claim pass, one Opus alt-errata
+verifier, a fresh Fable blind solver, and Sonnet Clerks for the landing
+page, run facts, pins, errata draft, and this entry. It has 37 source
+exercises (25 Review, 11 Critical Thinking, 1 Interactive Link), every
+Review Question four-option, and 36 vendored images (2000–2037, with no
+2015 and no 2034), one of them a table image (2035) and two of them
+flowcharts (2031, 2036); 19.4 carries the chapter's only References list
+and four source tables. The pages carry 85 Practice items (21, 18, 13,
+23, 10), 74 of them auto-graded and 11 self-checks, and the blind solver
+agreed on 73 and flagged 1. Errata 2424–2477 (54 entries): 19 claim
+corrections, 2 internal inconsistencies kept as printed, 3 parent
+rulings, 11 alt and artwork defects, and 19 one-word or typographic text
+defects. The run is committed (Derek: commit after every run). The
+Unit 3 Knowledge Check (chapters 12–17) is still pending, because Derek
+asked for the next chapter first.
+
+Part C graded none of the chapter's Interactive Link Questions. 19.1's
+one question, the heartvalve note's why the chordae tendineae matter more
+for the atrioventricular valves, prompts only: its printed key rests on a
+pressure-gradient comparison that the module states only inside the
+solutions. The six other interactive notes ask nothing and became plain
+Interactive Link callouts; the parent curled every redirect, and the
+cardiotech link to the Bureau of Labor Statistics answered 403, a bot
+wall and not a dead link, so it stays linked. Three source keys were
+ruled before the wave, with their errata numbers reserved: 19.5's Review
+Question keyed "cardiogenic tubes", a name the module never uses, became
+"endocardial tubes", the module's own sentence and glossary term (kind
+`key`, 2424); 19.3's third Review Question was double-keyed, since the
+first heart sound is made during ventricular systole as well, and the
+distractor was replaced (an `options` deviation, 2425, found by the 19.3
+checker); and 19.2's first Review Question, keyed "only cardiac muscle
+has gap junctions", contradicted section 10.8's single-unit smooth
+muscle, so it was re-keyed to the module's autorhythmicity sentence (kind
+`key`, 2426, found by the 19.2 checker). The two heart-rate tables
+(factors increasing and decreasing heart rate and force of contraction)
+yield one sortbins, Raises and Lowers, with the calcium rows left out
+because a Review Question keys Ca²⁺; the two cardiac-response tables are
+transcribed only, since their last two rows repeat across both columns;
+and 2035, a table image, takes the rule-4 form, transcribed only and not
+a sortbins, since hypoxia and calcium sit in more than one cell. The
+notation is Unicode throughout (Ca²⁺, T₃ and T₄, S₁ and S₂, an en dash
+for the minus sign in millivolt values normalized to the paragraph's
+other values), "Disorders of the Heart" headings copied from the
+exemplar pages, and a plain "Diseases of the Heart" heading for the
+myocardial infarction box.
+
+Part C left four things for the wave to settle. It called 2008 one panel
+where the source alt describes three, which the verifier confirmed
+(2436). Its sortbins sketch for 19.3 was cut by the checker, who showed
+that Figure 19.28 puts the T wave wholly inside the ventricular systole
+bar, so the T wave member (and the QRS member with it) was dropped. A
+reblank of the 19.3 action-potential cloze to "ventricles" was rejected by
+the parent, since six stems print that word, and the author replaced the
+item with a tricuspid cloze. And the run facts welcomed a numeric
+cardiac-output fill-in that the brief and the life-sciences playbook
+forbid, so the 19.4 author wrote the calculation as multiple choice.
+
+The checkers found 17 defects and 22 concerns, the five reports
+together. 19.1 had four defects: Figure 19.3's longdesc said the lung
+capillaries shade red to blue where the drawing runs blue on the
+pulmonary-artery side and red on the vein side, the reverse and the
+section's teaching point; the fossa ovalis leader and the forked arrow
+of panel (d) of the congenital-defects figure were misdescribed (the
+verifier later ruled the artwork itself correct and the longdesc the only
+fault); and "marginal artery" was graded wrong though Figure 19.6 prints
+it. 19.2 had six: the first Review Question's key (2426), the third's
+double key (the glossary says the QRS complex includes the atria's
+repolarization, so "QRS complex" is supportable; the parent kept key D,
+"none of the above", as the source's intended trap), two accept lists
+(pacemaker for the SA node, skeleton of the heart), a hint printing
+"junction", and a footer count of Critical Thinking placements that was
+false. 19.3 had two: the double-keyed third Review Question and the T
+wave sortbins member. 19.4 had three: the baroreceptor multiple choice
+named no baroreceptor, so the atrial reflex answered it equally; the
+glucagon cloze's stem settled four sortbins members, and the sortbins was
+re-cut; and "ventricular filling time" was graded wrong. 19.5 had two:
+the author's first two multiple choices re-asked one sentence, and the
+second's options answered the first, and the third Review Question's hint
+restated its key's glossary definition. All were accepted and fixed in a
+round. The author of 19.5 declined the five-region sortbins with
+evidence, since five bins exceed the form's cap of four.
+
+The claim pass raised 21 findings and 28 suspicions, and 19 findings were
+applied with Source notes, footer clauses, and decisions entries. 19.1
+took seven: the yearly volume of blood (10,000,000 liters, against the
+paragraph's own 14,000 liters a day) became about 2.75 million liters,
+the moderator band's "inferior papillary muscle" became the anterior one,
+the great cardiac vein no longer receives the small cardiac vein, the
+epicardial arteries stay on the surface of the heart, aspirin prevents
+and does not break up clots, rheumatic fever and scarlet fever are no
+longer one disease, and the papillary muscles no longer "control" the
+valves. 19.2 took four (the calcium stores, the bradycardia threshold, the
+first-degree block wording, and the total conduction time), 19.3 one (the dicrotic notch and the isovolumic
+relaxation wording), 19.4 six (the adrenal cortex named where the module
+elsewhere says medulla, the carotid bodies, the ligand-gated channel
+wording, "contractility impacts EDV", the 19.5 L/min multiple, and
+digitalis), and 19.5 one (the heart bulge's surface). F7 and F18 stand as
+printed with footer clauses and errata (2442, 2463). F7 found that
+19.2's "Neither smooth nor skeletal muscle can do this" is contradicted by
+section 10.8's pacesetter cells, but it could not be applied: the
+corrected sentence would have falsified the only true option of 19.2's
+first Review Question, whose key the parent had just moved to that very
+sentence, leaving the item with no answer. F18 found that the factor
+tables' one-directional sodium rows contradict the text's "both
+hyponatremia and hypernatremia", and the tables are kept as printed
+because the sortbins members and the transcription both read them. The
+parent also reworded the landing alt (dropping "seen from the front", the
+colour peach, no vessel names) and rejected nothing from the claim pass.
+
+The solver (Fable, 160k tokens) agreed on 73 of the 74 graded items and
+flagged one: 19.2's third Review Question, where "QRS complex" is also
+defensible. The parent adjudicated against m46664: the body says atrial
+repolarization "occurs during the QRS complex" and is masked by it, which
+is what the keyed option states, so the source key stands and B is the
+source's intended trap; the glossary's looser wording is recorded as
+Reviewed-not-errata. The solver also noted that the Source notes under
+19.2's and 19.5's re-keyed items name the corrected key (the chapter 16
+precedent, kept), and that 19.1's Summary generalizes the cardiac veins
+as parallel to the small cardiac arteries.
+
+The verifier read 58 claims: 31 confirmed, 3 rejected, and 24 not errata.
+The rejections are the Bayes Business School (renamed in 2021, current and
+correct), a 19.2 papillary-muscle reading (a right-ventricle name, not a
+conflict), and 19.3's semilunar openings "in the atrioventricular septum"
+(the book's own definition puts all four valve openings there). The
+confirmed items became the chapter's alt, artwork, and text errata, among
+them the splash figure's "photo" for an artist's conception (2427), the
+CPR and internal-structures alts that describe panels the drawings lack
+(2435, 2436), "arteriosus" and lower-case "fallot" (2437), view-from-above
+alts called "anterior view" (2438), the electrocardiogram caption's QRS
+and ST intervals (2448), and "Bachman's bundle" in the artwork (2447).
+After the verifier the parent amended 19.4: the stale cross-reference
+that sent the reader to the heart-rate tables for preload, contractility,
+and afterload now points at the stroke-volume and cardiac-output figures
+(2474, 2475), and the footer gained clauses for what stands as printed:
+the stroke-volume table image's factor list under lowered preload (2468),
+the atria in both cardiac-response tables (2476), and the Broken Heart
+Syndrome box's "critical circulation" (2472). 19.1's footer also gained
+the fallot capitalization (2437), and the 2032 label was recorded (2467).
+
+Lessons written to the playbook and `run.md`: a claim correction that
+would falsify a source item's only true option is not applied, and the
+sentence stands with a footer clause and an internal-inconsistency
+erratum (the 18.1 viscosity shape), with Part C grepping the sibling
+chapter a Part B note names before ruling a key "stands"; a Source note
+under a re-keyed multiple choice names the corrected key, and a run that
+wants it hidden moves the naming clause to the footer; and a checker fix
+that re-blanks a cloze is read like a new item (19.3).
+
+The ledger merged 85 author records and 74 solve records and found 0
+low-confidence provenance. The claim-pass ledger row for the chapter is
+filled, 22 decisions entries were appended, and `baseline:update` raised
+the keys gate baseline and the coverage floor. Authors ran 184–300k
+tokens, checkers 111–221k, the claim pass 219k, the verifier 257k, the
+solver 160k, and the Clerks 46–289k.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

@@ -319,6 +319,11 @@ findings as text"): the brief still says append-as-you-go, and when the
 write is refused the report is the final message, which the parent saves
 to `$SP/report-<unit>.md` itself before launching the checker *(chapter 6,
 three of seven authors)*.
+A checker fix that RE-BLANKS a cloze is read like a new item: 19.3's author
+reblanked an under-determined cloze to "ventricles", a word six other stems on
+the page print, and disclosed the leak in the footer — a disclosure cures a
+leak only on an unmovable SOURCE item; an author item is replaced *(chapter
+19)*.
 Read every changed `question=` line and every replaced option in the diff
 — the gates do not read prose, and fixes have shipped garbled stems and
 stems that print a neighbour's key above or below — and give the parent's

@@ -16,7 +16,7 @@
 
 ## Coverage
 
-- Mapped local sections: 714
+- Mapped local sections: 719
 - Sections changed upstream: 45
 - Content-level changes: 36
 - Markup/metadata-only changes: 9
@@ -32,7 +32,7 @@
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 - microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382`
-- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 105 sections mapped
+- anatomy-physiology (`anatomy-physiology`): `716383a4c6c16037b14d75a156c65145e75e895e` — in-progress, 110 sections mapped
 
 ## Changed mapped sections
 

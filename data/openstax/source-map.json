@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 18,
-      "mappedSections": 105,
+      "localChapters": 19,
+      "mappedSections": 110,
       "units": [
         {
           "index": 1,
@@ -1196,6 +1196,51 @@
       "moduleId": "m46708",
       "sourceTitle": "Blood Typing",
       "moduleSha256": "2ffbfe6b3060fd21fe24c1bc145fca305672197402937e39cc7e2794e0c51d8d"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/01-heart-anatomy.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "19.1",
+      "moduleId": "m46676",
+      "sourceTitle": "Heart Anatomy",
+      "moduleSha256": "429840d8aefb5430ffa434d4d1afeefa49b6e7e7026147a2969f71d92fd06313"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "19.2",
+      "moduleId": "m46664",
+      "sourceTitle": "Cardiac Muscle and Electrical Activity",
+      "moduleSha256": "b17dd41b50d11ff89a5723d7ff4046c7395cba60682b422049947fbf9b85fe02"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/03-cardiac-cycle.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "19.3",
+      "moduleId": "m46661",
+      "sourceTitle": "Cardiac Cycle",
+      "moduleSha256": "bfdfa146f0ad1f52dd46b28cd2a1ae55d884a1770d51fe21fda0411a14912549"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/04-cardiac-physiology.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "19.4",
+      "moduleId": "m46672",
+      "sourceTitle": "Cardiac Physiology",
+      "moduleSha256": "a261eddcf0189db7c85cd1573517fc0d6457f99e6a8d14b7521f50d94ef02010"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/05-development-of-the-heart.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "19.5",
+      "moduleId": "m46673",
+      "sourceTitle": "Development of the Heart",
+      "moduleSha256": "47881acdc6063cec7284bba31d88e1c4d0160e450dc26c6db5470dddb9e759b1"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

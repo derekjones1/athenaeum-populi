@@ -3703,6 +3703,14 @@
     "result": "agrees"
    }
   },
+  "07eac7a8cdef0433": {
+   "verdict": "ok",
+   "note": "RQ fs-id1795973, source key C; body: It is marked by the presence of four openings",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "07f96c6f3499ccee": {
    "verdict": "ok",
    "note": "source exercise fs-id1167793953497 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -7228,6 +7236,14 @@
     "result": "agrees"
    }
   },
+  "0fe924783fb49df2": {
+   "verdict": "ok",
+   "note": "glossary recall: pulmonary trunk (paraphrase of the meaning without printing pulmonary arteries)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "0fec5acacfbb9a97": {
    "verdict": "ok"
   },
@@ -9221,6 +9237,14 @@
    "verdict": "ok",
    "note": "KC 4 16.1 § Patterns of Incidence (fs-id1167660340074), m58871"
   },
+  "147d70d35a1ef9b1": {
+   "verdict": "ok",
+   "note": "fs-id2028442: Negative inotropic agents include hypoxia; dopamine, isoproterenol, digitalis are positive (fs-id1370577).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "147fcbda7f08efdd": {
    "verdict": "ok",
    "note": "m66624 fs-idm56364512 critical-thinking solution transcribed as the selfcheck model answer verbatim (disruptive memory loss, confusion about time or place, difficulties planning or executing tasks, poor judgment, personality changes); five checkpoints, each one clause. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -10052,6 +10076,14 @@
   "165b14c89337158e": {
    "verdict": "ok",
    "note": "body cloze from § Type IV Hypersensitivities: \"Exposure to hapten antigens in poison ivy can cause contact dermatitis, a type IV hypersensitivity.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "16649c469a11e267": {
+   "verdict": "ok",
+   "note": "RQ fs-id1228297, source key A; order follows the module pathway",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -11422,6 +11454,14 @@
    "verdict": "ok",
    "note": "selfcheck; two adjacent module sentences (composition, size) — stays selfcheck per one-sentence rule. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "193f105b4bc78dc8": {
+   "verdict": "ok",
+   "note": "RQ fs-id2672256 key C; distractor B replaced by opening of the atrioventricular valves (options deviation, erratum 2425)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "1942be5df21405e2": {
    "verdict": "ok",
    "note": "key-term recall from the Glossary appendix: rubella (m58950) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -12357,6 +12397,14 @@
   "1b477c54d08125fb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "1b51ed8690fddd78": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed positive feedback",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -15050,6 +15098,14 @@
     "result": "agrees"
    }
   },
+  "212e836390ea69cc": {
+   "verdict": "ok",
+   "note": "coronary sinus: body cloze of fs-id1453676",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "212f5cd69daeafcf": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -15639,6 +15695,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "22a03c6291714354": {
+   "verdict": "ok",
+   "note": "CT fs-id2410405: model answer is the source solution verbatim; rubric clauses cut from it"
   },
   "22a458e5978c3aee": {
    "verdict": "ok",
@@ -17329,6 +17389,14 @@
     "result": "agrees"
    }
   },
+  "26b8faa1763ccc6a": {
+   "verdict": "ok",
+   "note": "author MC from fs-id2870488 sentence 2 (veins higher in pressure)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "26b986c2feced080": {
    "verdict": "ok",
    "note": "source exercise fs-idp90580688 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -17934,6 +18002,14 @@
   "283780a236431427": {
    "verdict": "ok",
    "note": "KC 1 2.2 § lead paragraph (before Early Microscopes), m58786",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "283bdb095e1582ce": {
+   "verdict": "ok",
+   "note": "cloze of fs-id1892589 sentence 1: The human heart is located within the thoracic cavity, medially between the lungs in the space known as the mediastinum.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18745,6 +18821,14 @@
   "2a189c2fedf902bf": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2a1edb35dd052522": {
+   "verdict": "ok",
+   "note": "fs-id2535633: To calculate ejection fraction, SV is divided by EDV.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -20042,6 +20126,14 @@
    "note": "KC 7 36.2 § body Thermoreception (fs-idm160095024), m66404 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2d52ddd56decfc38": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text after checker edits (accept/hint): textin keyed cardiac skeleton",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -22360,6 +22452,14 @@
     "result": "agrees"
    }
   },
+  "32a419dfdf17a4d3": {
+   "verdict": "ok",
+   "note": "glossary recall: circumflex artery (branch of the left coronary artery that follows coronary sulcus)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "32af630629e64f33": {
    "verdict": "ok",
    "note": "re-read against m46032 CNXML and page text"
@@ -23537,6 +23637,14 @@
    "verdict": "ok",
    "note": "Parent-authored graphplot replacing an answer-figure-plus-fillin pair the section's conversion agent left behind. Re-derived from the printed question: f(x)=x^2+2x-8 has axis x=-b/2a=-1 and vertex (-1,-9), and factors as (x+4)(x-2) so the x-intercepts are (-4,0) and (2,0); f(0)=-8. On the authored grid (-6..4 by -10..8) the answer parabola reaches 9 snap-lattice points against plotPoints 3, so there is real slack and the vertex itself is on the lattice inside the grid. The worked example immediately above graphs f(x)=x^2-6x+8, a different equation, so the exercise is not transcription; the deleted static figure had named this vertex in its aria-label, directly above the fillin that asked for it."
   },
+  "358041cf78015135": {
+   "verdict": "ok",
+   "note": "RQ fs-id1846332 key D truncus arteriosus; fs-id2343117 'give rise to the ascending aorta and pulmonary trunk'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "35807000ddce2ce4": {
    "verdict": "ok",
    "note": "Biology 7.4 source visual-connection selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (proton pumping into the intermembrane space per the chemiosmosis caption; visible Source note corrects the source's 'electrons')"
@@ -24582,6 +24690,14 @@
   "37cb1814597548c6": {
    "verdict": "ok",
    "note": "source exercise fs-id1167662404622 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "37ccb9158eafcb7a": {
+   "verdict": "ok",
+   "note": "glossary recall: anastomosis; plural anastomoses printed by glossary",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -25889,6 +26005,14 @@
   },
   "3b03925cae03e0db": {
    "verdict": "ok"
+  },
+  "3b080b2a85505fe4": {
+   "verdict": "ok",
+   "note": "RQ fs-id2060926 key B; fs-id1718792",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3b0a3e35a7e64361": {
    "verdict": "ok",
@@ -28460,6 +28584,14 @@
     "result": "agrees"
    }
   },
+  "40c9106ed9fcf54f": {
+   "verdict": "ok",
+   "note": "RQ fs-id2161526 key A; fs-id1754280.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "40cc4f2e92492a5a": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"FAD/FADH 2 , NAD + /NADH , and NADP + /NADPH are important electron carriers.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -29591,6 +29723,14 @@
     "result": "agrees"
    }
   },
+  "435d567a6ad90575": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed junctional rhythm",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "436167dae70db622": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30124,6 +30264,14 @@
   "448feef6ed5c9b40": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4491a3eb6108a036": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: multiplechoice keyed Purkinje fibers",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -30991,6 +31139,14 @@
    "note": "author-built from § Indirect Cell Counts: \"Once the calibration curve has been produced, it can be used to estimate cell counts for all samples obtained or cultured under similar con…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "466476b8a1c45839": {
+   "verdict": "ok",
+   "note": "fs-id2041955 sentence verbatim.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -32520,6 +32676,14 @@
     "result": "agrees"
    }
   },
+  "4a3658cf0b29ed0b": {
+   "verdict": "ok",
+   "note": "glossary recall: pericardial cavity (m46676 glossary); body fs-id1892589 bolds it; accept pericardial space from the tamponade box (fs-id2111508 uses the phrase for the same space)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4a3cc47795a311f3": {
    "verdict": "ok",
    "note": "cloze of fs-id1475474 'as fibrous tissue increases, the production of cortisol and aldosterone decreases'",
@@ -32813,6 +32977,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "4ae78bf185a0a156": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: selfcheck keyed (model answer = source solution)"
   },
   "4ae8ec3208ab8b36": {
    "verdict": "ok",
@@ -35190,6 +35358,14 @@
     "result": "agrees"
    }
   },
+  "507cff41f5d7221d": {
+   "verdict": "ok",
+   "note": "RQ fs-id2515169, source key B; Layers: endothelins secreted by the endothelium of the endocardium; endocardium is not among the backflow structures",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5080be7f57565718": {
    "verdict": "ok",
    "note": "author-built from § Type III Hypersensitivities: \"A unique characteristic of type III hypersensitivity is antibody excess (primarily IgG), coupled with a relatively low concentration of ant…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -35910,6 +36086,10 @@
    "verdict": "ok",
    "note": "Critical Thinking Question eip-795; model answer is the source solution verbatim (preamble kept), checkpoints are its three clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "5279d40b11cfd0a3": {
+   "verdict": "ok",
+   "note": "CT fs-id2404448: model answer is the source solution verbatim; rubric clauses cut from it"
+  },
   "527aa993cdce283f": {
    "verdict": "ok",
    "note": "fs-idm71000708: keyed option D (E. coli) matches the source solution; amoeba/charophyte algae are eukaryotic protists and influenza A virus is not a cell. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -36396,6 +36576,14 @@
     "result": "agrees"
    }
   },
+  "53a1b8bd9a37259c": {
+   "verdict": "ok",
+   "note": "fs-id862646 sentence verbatim.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "53a258ba1358b4b5": {
    "verdict": "ok",
    "note": "ILQ fs-id1226922: source solution, anterior->posterior per module fs-id1475033/fs-id2251576 (C1), Source note after item"
@@ -36676,6 +36864,14 @@
   "543746b207dc4c91": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5438709bb3d73ab8": {
+   "verdict": "ok",
+   "note": "RQ fs-id1532146 key D heart; fs-id2058606 'first functional organ to develop'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -37311,6 +37507,15 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "55c2a6317785ac88": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text after checker edits (accept/hint): multiplechoice keyed none of the above: atrial repolarization is masked by ventricular depolarization",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "Parent, October 25, 2026, against m46664: the body sentence says atrial repolarization 'occurs during the QRS complex' and is masked by it, which is exactly what the keyed option states; the source key D stands. The glossary's 'includes, as a component, the repolarization of the atria' is loose wording recorded for the errata drafter as Reviewed-not-errata; option B is the source's intended trap, not a second key."
+   }
+  },
   "55c2b00e686b819a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form",
@@ -37373,6 +37578,14 @@
   "55dbdefa724ef2c6": {
    "verdict": "ok",
    "note": "KC 2 8.3 § Ilium (fs-id1399017), paragraph fs-id1950495, m46375",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "55e023ee994de573": {
+   "verdict": "ok",
+   "note": "fs-id1559549 verbatim; stem gains referent In the baroreceptor reflex so the atrial-reflex response (fs-id1716578) cannot fit (checker ruling).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -39296,6 +39509,14 @@
     "result": "agrees"
    }
   },
+  "5a4510d168eb16ba": {
+   "verdict": "ok",
+   "note": "fs-id1370577: These include thyroid hormones and glucagon from the pancreas; stem re-cut to name neither catecholamines nor thyroid hormones (checker ruling).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5a4706f793585912": {
    "verdict": "ok",
    "solved": {
@@ -40232,11 +40453,27 @@
   "5c5580bb9a468274": {
    "verdict": "ok"
   },
+  "5c55aca227b29dbb": {
+   "verdict": "ok",
+   "note": "author MC; key = fs-id2485730 'From head to tail, these include the truncus arteriosus, bulbus cordis, primitive ventricle, primitive atrium, and the sinus venosus'; distractors other orderings",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "5c56f545087d0f3c": {
    "verdict": "ok",
    "note": "summary cloze from § summary: \"Classification of viruses is based on morphology, type of nucleic acid, host range, cell specificity, and enzymes carried within the virion.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5c5ab45cc998b66c": {
+   "verdict": "ok",
+   "note": "RQ fs-id2481331 re-keyed to C per parent ruling (erratum 2426, DISCLOSED_DEVIATIONS kind key): module fs-id1754472 \"Neither smooth nor skeletal muscle can do this\"; options unchanged; Source note under item.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -41238,6 +41475,10 @@
     "result": "agrees"
    }
   },
+  "5ebdd6b8da749e6e": {
+   "verdict": "ok",
+   "note": "CT fs-id1301582, solution fs-id1594893 verbatim; 4 checks are its clauses"
+  },
   "5ebde30eafe031b0": {
    "verdict": "ok",
    "note": "22.4 MRSA MC: 'aureus' italicized per CNXML emphasis; key per source solution | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -42122,6 +42363,14 @@
     "result": "agrees"
    }
   },
+  "613a39137f291861": {
+   "verdict": "ok",
+   "note": "prose sortbins, 3/3 after ECG members dropped (ruling 2); re-read vs fs-id2187775, fs-id2217804, fs-id1718792, fs-id2105014",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "613fefa770344639": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L373 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
@@ -42789,6 +43038,14 @@
    "note": "source exercise fs-idp26322320 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6335afa400e64b62": {
+   "verdict": "ok",
+   "note": "glossary recall: mesothelium (meaning verbatim)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -46232,6 +46489,14 @@
     "result": "agrees"
    }
   },
+  "6c68102ddae31730": {
+   "verdict": "ok",
+   "note": "glossary fs-id1323778; body fs-id2503535 prints target HR and target heart rate range; accept target HR|target heart rate range|target HR range (checker ruling).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6c6ba93b280641f4": {
    "verdict": "ok",
    "note": "a=2000 from (0,2000); b^2=20/2000=0.01 so b=0.1 exactly; matches CNXML solution f(x)=2000(0.1)^x. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -47006,6 +47271,14 @@
     "result": "agrees"
    }
   },
+  "6e401157b690af73": {
+   "verdict": "ok",
+   "note": "tbl-ch20_03 Target row, Chemoreceptors column.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6e469129cac635ee": {
    "verdict": "ok",
    "note": "source exercise fs-id1468785 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged",
@@ -47390,6 +47663,14 @@
    "verdict": "ok",
    "note": "KC 1 4.6 § body Tissue Injury and Repair (fs-id1515794), m46058"
   },
+  "6f543ab9e6dc5f87": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed leads",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6f543bf3cf38098e": {
    "verdict": "ok",
    "note": "Point plot -3-3i; no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -47662,6 +47943,14 @@
   "6ff059b94a44f23f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "6ff1083f9d1bce58": {
+   "verdict": "ok",
+   "note": "70 mL x 75 bpm = 5,250 mL/min = 5.25 L/min; fs-id1795077 prints 5.25 L/min.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -49169,6 +49458,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "73743ee0cd84a8b2": {
+   "verdict": "ok",
+   "note": "CT model answer = source solution verbatim; checks are its clauses."
   },
   "737690c6f980a482": {
    "verdict": "ok"
@@ -51670,6 +51963,14 @@
     "result": "agrees"
    }
   },
+  "7933101f266cef1d": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text after checker edits (accept/hint): textin keyed sinoatrial node",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "793b5c9266d6ce8d": {
    "verdict": "ok",
    "note": "tbl-ch04_04_01; every label from one row cell, true of one tissue only",
@@ -51694,6 +51995,14 @@
     "result": "agrees"
    }
   },
+  "794663262ec18032": {
+   "verdict": "ok",
+   "note": "RQ fs-id2001918 key D; stem one-word fix refer to",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "794c09e74bd4418a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51713,6 +52022,14 @@
   "795980e26a965e98": {
    "verdict": "ok",
    "note": "body cloze from § Plant Parasites: \"Other parasitic plants (hemiparasites) are fully photosynthetic and only use the host for water and minerals.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "795fb0672244fa53": {
+   "verdict": "ok",
+   "note": "fs-id1277497: 220 minus age; 40-year-old approximately 180.",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -54624,6 +54941,14 @@
     "result": "agrees"
    }
   },
+  "7f9aefd413528b59": {
+   "verdict": "ok",
+   "note": "aorta: body cloze of fs-id2217804",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7fa4576e4aa273cb": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): quotient: r=2sqrt3/2=sqrt3, angle=150-30=120; node: sqrt3*Math.cos(2pi/3)=-0.866...=-sqrt3/2, sqrt3*Math.sin(2pi/3)=1.5=3/2.",
@@ -55226,6 +55551,14 @@
     "result": "agrees"
    }
   },
+  "811dfb624cc59918": {
+   "verdict": "ok",
+   "note": "glossary recall: pulmonary capillaries (meaning verbatim); singular in accept (irregular -ies)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "81281ac5ad78ce6a": {
    "verdict": "ok",
    "note": "Practice ex23/Fig26 (fs-id1165137658354): amplitude read from the plotted f(x)=2sin(pi/2 x)-3, node scanExtrema confirms max -1 at x=-3,1 and min -5 at x=-1,3, matching CNXML's printed amplitude 2. | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -55555,6 +55888,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "820244bbcee2e2df": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: selfcheck keyed (model answer = source solution)"
   },
   "8202ebb86024f153": {
    "verdict": "ok",
@@ -56062,6 +56399,14 @@
   "833a1cd8688f7c3c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "833b5a7ddf2a10e7": {
+   "verdict": "ok",
+   "note": "author MC replacing the not-a-region item; summary fs-id2169887 'differentiate into the truncus arteriosus, ... sinus venosus, starting about day 22'; distractors day 18 (mesoderm origin), day 20 (figure endocardial-tubes stage), day 28 (septa)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -56958,6 +57303,14 @@
     "result": "agrees"
    }
   },
+  "851e0d669122203d": {
+   "verdict": "ok",
+   "note": "glossary recall: auricle; accept atrial appendage from body: You may also hear them referred to as atrial appendages.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8529c3965f419e85": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -57635,6 +57988,14 @@
    "verdict": "ok",
    "note": "Point plot 1+5i; no computation, matches printed coordinates. | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "86c5951811763968": {
+   "verdict": "ok",
+   "note": "RQ fs-id1305775 key A; fs-id2010682 sympathetic stimulation to venous system increases venous return, EDV, preload.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "86c5d0486f942fe8": {
    "verdict": "ok"
   },
@@ -57760,6 +58121,14 @@
   "871697c2626292dc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "87174420069d8be8": {
+   "verdict": "ok",
+   "note": "RQ fs-id2321229 key B atrial diastole",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -59440,6 +59809,14 @@
    "note": "Review Question fs-id2187777; source solution keys D, the full five-level option, matching options transcribed verbatim in source order. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "8b432ebc564bfb27": {
+   "verdict": "ok",
+   "note": "cloze of Chambers para 3: Eventually, these vessels will lead to the systemic capillaries, where exchange with the tissue fluid and cells of the body occurs.; lead-in Blood pumped into the aorta travels on to its many branches. (no systemic in stem, no accept: learner supplies the qualifier)",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -61947,6 +62324,14 @@
     "result": "agrees"
    }
   },
+  "916f1427c7f090fc": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: multiplechoice keyed third-degree block",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "917075ae3e99e5f4": {
    "verdict": "ok",
    "note": "Parent re-derived after rewording the hint to match the printed options: CNXML review question keyed 'Complementary base pairing creates a very stable structure.' — the section says the complementary pairing and hydrogen bonds make the helix stable; the backbone-as-template, tRNA-pairing, and easy-editing options are not what the section says supports encoding. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -62253,6 +62638,14 @@
   "922e3a878d63b2c7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "92319a6cb99e688b": {
+   "verdict": "ok",
+   "note": "summary fs-id1311841 verbatim; Bainbridge twin accepted (fs-id1716578).",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -63835,6 +64228,14 @@
     "result": "agrees"
    }
   },
+  "95d8d432bf8419ee": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: multiplechoice keyed calcium",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "95dc982aa67a3bf9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64348,6 +64749,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "970db5f7b08b58e8": {
+   "verdict": "ok",
+   "note": "CT model answer = source solution verbatim; checks are its clauses."
   },
   "970dcbfcea9b6651": {
    "verdict": "ok",
@@ -70371,6 +70776,14 @@
    "verdict": "ok",
    "note": "f(x)=x^2/(x^2-1) has a variable denominator -- not a single term to a fixed power and not a finite sum of non-negative-integer-power terms, so neither. Matches CNXML fs-id1165135339598 solution \"Neither\". | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "a505fd613e7ce88d": {
+   "verdict": "ok",
+   "note": "RQ fs-id2367256, source key A mitral; body: The opening between the left atrium and ventricle is guarded by the mitral valve.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a5068226d1289b03": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -72478,6 +72891,14 @@
     "result": "agrees"
    }
   },
+  "aa1d364c54098e61": {
+   "verdict": "ok",
+   "note": "glossary recall: cardiac notch; body fs-id1892589",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aa279e6560660c7f": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -73486,6 +73907,14 @@
     "result": "agrees"
    }
   },
+  "acb7e4ab2a4dd654": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2066721; preload|pre-load|EDV accepted",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "acbb73a7ac61cb57": {
    "verdict": "ok",
    "note": "key-term recall: bacteriocins; printed in § Antimicrobial Peptides: \"AMPs called bacteriocins are produced exogenously by certain members of the resident microbiota within the gastrointestinal tract.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -74024,6 +74453,14 @@
    "note": "m66378 exercise fs-id1975143: keyed C, 'endocrine signaling,' matches the source solution. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "adee5beeedf1d095": {
+   "verdict": "ok",
+   "note": "tbl-ch20_01 (bin 0) / tbl-ch20_02 (bin 1) Effect cells verbatim; each in exactly one table.",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -74959,6 +75396,14 @@
   "b0386cc13a42ebda": {
    "verdict": "ok",
    "note": "parent re-read 2026-09-24 (Microbiology ch14.5-18 re-review): model answer and rubric checked against the module; checks quote module sentences, no new claims"
+  },
+  "b03cf77cd4d6d64e": {
+   "verdict": "ok",
+   "note": "RQ fs-id2118045 key C; fs-id1370577 calcium positive inotropic.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b0449550cc85efcd": {
    "verdict": "ok",
@@ -76668,6 +77113,14 @@
   "b4254b11cb815f0e": {
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
+  },
+  "b427544ccc7d26d0": {
+   "verdict": "ok",
+   "note": "author MC; fs-id2485730 'Initially, all venous blood flows into the sinus venosus'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b438d9d015a470f2": {
    "verdict": "ok",
@@ -78467,6 +78920,14 @@
     "result": "agrees"
    }
   },
+  "b830a91bda94d0df": {
+   "verdict": "ok",
+   "note": "RQ fs-id2627639, source key D; Layers: endothelins secreted by the endothelium of the endocardium; endocardium is not among the backflow structures",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b8322b17bfba300d": {
    "verdict": "ok",
    "note": "source exercise fs-id1172102019532 (unkeyed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -79163,6 +79624,14 @@
    "note": "orchestrator solve (solve-check.mjs) | prior derivation (before the Oct 5 2026 re-review edit): parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $x+3y=6$ represent?)",
    "solved": {
     "by": "fable-solver",
+    "result": "agrees"
+   }
+  },
+  "ba0caf41481594d0": {
+   "verdict": "ok",
+   "note": "RQ fs-id2187635 key B; fs-id1611279; hint cut to the paragraph location (checker ruling).",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -79973,6 +80442,14 @@
     "result": "agrees"
    }
   },
+  "bbe593db38c137a6": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed fascicles",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bbe626709a0efe98": {
    "verdict": "ok",
    "note": "fs-id1617238: keyed option D (diffusion) matches the source solution and the section's own Cell Size prose. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -80335,6 +80812,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "bcaa00eab5008e0d": {
+   "verdict": "ok",
+   "note": "CT fs-id1933630 model answer = solution fs-id2175558 verbatim"
   },
   "bcaa484911fa170a": {
    "verdict": "ok",
@@ -81489,6 +81970,14 @@
     "result": "agrees"
    }
   },
+  "bf7494dd208dd0e9": {
+   "verdict": "ok",
+   "note": "RQ fs-id2002743, source key C; body: two major systemic veins ... return blood to the right atrium",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "bf758a3bfc78ebbe": {
    "verdict": "ok",
    "note": "Review Q fs-idm71000710: Tay-Sachs is a lysosomal storage disease (sphingolipid buildup from a missing lysosomal enzyme), consistent with lysosomes as the cell's digestive/breakdown organelle per this module. Matches keyed A. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -81920,6 +82409,14 @@
    "note": "glossary recall: bulbourethral gland (fs-idm20710592) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
    "solved": {
     "by": "fable-blind-solve",
+    "result": "agrees"
+   }
+  },
+  "c058923c39a6a556": {
+   "verdict": "ok",
+   "note": "RQ fs-id2300602, source key B; Layers: the muscle of the left ventricle is much thicker",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -82480,6 +82977,14 @@
   "c1fa02fdb5a490bf": {
    "verdict": "ok",
    "note": "body cloze from § introduction: \"While there are at least 20 Candida species of clinical importance, C. albicans is the species most commonly responsible for fungal vaginit…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "c1fe5395926b3dda": {
+   "verdict": "ok",
+   "note": "tricuspid: body cloze of fs-id1988682 (closing the tricuspid and mitral valves); replaces the ventricles cloze per parent ruling",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -85179,6 +85684,14 @@
     "result": "agrees"
    }
   },
+  "c87a9b2902d9b108": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed intervals",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c87ab056d78d99f9": {
    "verdict": "ok",
    "note": "source exercise fs-id1172101913252 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -86894,6 +87407,14 @@
    "verdict": "ok",
    "note": "ln2+lnb+(1/2)ln(b+1)-(1/2)ln(b-1); numerically equal to key p1316 #33 form at b=3 to 1e-15"
   },
+  "cc79933b92449b44": {
+   "verdict": "ok",
+   "note": "summary fs-id1448800 sentence verbatim; accept ventricular filling time (fs-id2172526 prints it).",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cc7db5a6f819898f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -86947,6 +87468,14 @@
   },
   "ccaed0f10d431f56": {
    "verdict": "ok"
+  },
+  "ccb56aaabfb9417d": {
+   "verdict": "ok",
+   "note": "glossary fs-id1297024.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ccb78ba7a7bd1f38": {
    "verdict": "ok",
@@ -90884,6 +91413,14 @@
    "verdict": "ok",
    "note": "Microbiology 16.4 source CT selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the global-transportation and source-management sentences and the SARS example) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "d62d7bf4861df730": {
+   "verdict": "ok",
+   "note": "heart failure: body cloze of fs-id2624692",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d6304b424b08af17": {
    "verdict": "ok",
    "note": "author-built from § Disk-Diffusion Method, Check Your Understanding: \"When comparing the activities of two disinfectants against the same microbe, using the disk-diffusion assay, and assuming both are water so…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -92053,6 +92590,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "d8e3a42c6ce35422": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: selfcheck keyed (model answer = source solution)"
   },
   "d8e7772ce31a173e": {
    "verdict": "ok",
@@ -94332,6 +94873,14 @@
     "result": "agrees"
    }
   },
+  "ded23efa4f26eb4f": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed artificial pacemaker",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dedbf63defecfe51": {
    "verdict": "ok",
    "note": "author-built from § summary: \"Giardiasis , cryptosporidiosis , amoebiasis , and cyclosporiasis are intestinal infections caused by protozoans.\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -95898,6 +96447,14 @@
   "e21aab2477cdf818": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e2207962028c90e4": {
+   "verdict": "ok",
+   "note": "RQ fs-id2189685 key A bulbus cordis; fs-id2343117 'The bulbus cordis develops into the right ventricle'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -97733,6 +98290,14 @@
     "result": "agrees"
    }
   },
+  "e66c462fecabefa1": {
+   "verdict": "ok",
+   "note": "glossary recall: marginal arteries; accept marginal|marginal artery|right marginal artery|right marginal arteries (figure 19.6 prints Right marginal artery; -ies plural does not fold)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e66d5333c23f5900": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id1876408/fs-id2025774 (reverse epigenetic changes): question and solution transcribed verbatim as model answer; checkpoints are literal substrings. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -98204,6 +98769,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e7b18b14277af419": {
+   "verdict": "ok",
+   "note": "CT fs-id1351925, solution fs-id2480853 verbatim; 6 checks are its clauses"
   },
   "e7b9ec4dddbf71fb": {
    "verdict": "ok",
@@ -100129,6 +100698,14 @@
     "result": "agrees"
    }
   },
+  "ec9c8861c6f303b4": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: textin keyed Z discs",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "eca0a736e3c2a443": {
    "verdict": "ok",
    "note": "Parent derivation (Oct 3 2026, IA 9.8 re-review): y=x^2+4x+3=(x+1)(x+3), vertex (-2,-1), x-intercepts -3 and -1, y-intercept 3; answer {quadratic:{a:1,b:4,c:3}} and the grid -6..2 by -4..8 contains the vertex and all three intercepts. Source exercise's 'solve graphically' part.",
@@ -100317,6 +100894,14 @@
    "verdict": "ok",
    "note": "Microbiology 20.3 source SA selfcheck; Sep 23 2026 close-out: model answer and rubric re-read against the module (the direct Coombs' test paragraph on newborn jaundice) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "ed13ff518c1ff649": {
+   "verdict": "ok",
+   "note": "RQ fs-id2049139 key B; fs-id2503535: above 160 bpm CO actually decreases.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ed15e8fe94e7d6c8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -100404,6 +100989,14 @@
   "ed4d83e85b357f23": {
    "verdict": "ok",
    "note": "node: Math.tan(5π/8)=-2.4142135623730954, rounds to -2.414; matches CNXML solution -2.414 | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
+  },
+  "ed4f1ca2c9122e51": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2164256 murmur",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "ed55ac47b1b53d9f": {
    "verdict": "ok",
@@ -103582,6 +104175,14 @@
    "verdict": "ok",
    "note": "Domain of any b^x is all reals; (-\\infty,\\infty). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "f4f4e02c73b55c07": {
+   "verdict": "ok",
+   "note": "fs-id1874997 sentence verbatim.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f4f5816c2d367839": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -103881,6 +104482,14 @@
     "result": "agrees"
    }
   },
+  "f59ff3a014e440b1": {
+   "verdict": "ok",
+   "note": "glossary fs-id1932117; body fs-id1369903.",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f5a3abd50ade5c23": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -103940,6 +104549,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f5efc929e4421899": {
+   "verdict": "ok",
+   "note": "re-read against m46664 CNXML and page text: selfcheck keyed (model answer = source solution)"
   },
   "f5f50632e84df6bf": {
    "verdict": "ok",
@@ -106556,6 +107169,14 @@
    "verdict": "ok",
    "note": "Table (0,-4)(3,-1)(6,2)(9,-1)(12,-4)(15,-1)(18,2): amplitude (2-(-4))/2=3, midline (2+(-4))/2=-1, period 12 -> B=pi/6, minimum at x=0 -> -cos form. y=-3cos(pi/6 x)-1 numerically checked against all 7 table points (matches source exercise #5 solution). | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "fbaa2616a78117e2": {
+   "verdict": "ok",
+   "note": "RQ fs-id1883900 key C mesoderm; fs-id2485730 'The heart forms from an embryonic tissue called mesoderm'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "fbac72cf180e625a": {
    "verdict": "ok",
    "note": "source exercise fs-idp162905184 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -108305,6 +108926,14 @@
     "result": "agrees"
    }
   },
+  "ff8ce0450bdd0eb6": {
+   "verdict": "ok",
+   "note": "cloze of Membranes para: consists of two distinct sublayers: the sturdy outer fibrous pericardium and the inner serous pericardium",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ff8d6bb848e01e97": {
    "verdict": "ok"
   },
@@ -108455,6 +109084,14 @@
   "ffcc3838d463513f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ffcdc65ba41f2a51": {
+   "verdict": "ok",
+   "note": "RQ fs-id1985735 printed key D 'cardiogenic tubes' corrected to B 'endocardial tubes' per Part C (erratum 2424, DISCLOSED_DEVIATIONS kind key); fs-id2485730 'referred to as endocardial tubes. The two tubes migrate together and fuse'; hint now positional only (checker fix)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
