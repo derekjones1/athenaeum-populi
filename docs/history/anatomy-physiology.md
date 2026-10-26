@@ -1704,6 +1704,194 @@ the keys gate baseline and the coverage floor. Authors ran 184–300k
 tokens, checkers 111–221k, the claim pass 219k, the verifier 257k, the
 solver 160k, and the Clerks 46–289k.
 
+## Chapter 20 (October 26, 2026)
+
+*The Cardiovascular System: Blood Vessels and Circulation*, the third
+chapter of Unit 4, *Fluids and Transport*: six sections (m46597, m46635,
+m46586, m46603, m46646, m46610; intro m46600), run the day after chapters
+18 and 19 from `docs/briefs/anatomy-physiology/run.md`, with six Opus
+authors launched together, six Opus checkers, one Opus claim pass, one Opus
+alt-errata verifier, a fresh Fable blind solver, and Sonnet Clerks for the
+landing page, run facts, pins, errata draft, and this entry. It has 41
+source exercises (25 Review, 14 Critical Thinking, 2 Interactive Link) and
+44 vendored images (2100–2143), three of them table images (2141, 2142,
+2143) and seven of them flowcharts (2125, 2126, 2128, 2130, 2135, 2137,
+2140). Section 20.5, Circulatory Pathways, is the heaviest section of the
+book: 22 figures, 136 glossary terms, and 13 vessel tables, where 19.1, the
+previous record, had 15 figures and 63 terms. The pages carry 71 Practice
+items (14, 15, 12, 12, 10, 8), 56 of them auto-graded and 15 self-checks,
+and the blind solver agreed on 55 and flagged 1. Errata 2478–2527 (50
+entries): 2 Part C rulings, 18 claim corrections, 1 internal inconsistency
+kept as printed, 1 dead link, 7 alt and title defects, 10 artwork defects,
+2 caption defects, and 9 text defects. The run is committed (Derek: commit
+after every run).
+
+Part C graded neither of the chapter's Interactive Link Questions. 20.3's
+water question and 20.4's podcast question prompt only, and the four
+"Visit this site" notes that ask nothing became plain Interactive Link
+callouts. Two source items were ruled before the wave, with their errata
+numbers reserved. 20.5's Review Question on the path of the axillary and
+brachial arteries was double-keyed, because option B ("becomes the brachial
+artery") is also true; the option was replaced with the module's own
+bifurcation wording at the wrist, a Source note was added, and the
+deviation is recorded as kind `options` (2478). 20.4's Critical Thinking
+model answer said that "release of aldosterone would stimulate the thirst
+mechanism", while the module says angiotensin II stimulates the thirst
+center; the model answer was corrected in place with a Source note and a
+footer clause (2479, the 2378 shape, no deviation entry). 20.2's five
+MathML blocks hold six equations, so they became six KaTeX display lines
+in the Biology 30.5 form. 2141, 2142, and 2143 are table images,
+transcribed in the rule-4 form, and the seven flowcharts take longdescs
+and not tables, since a flowchart has no rows; the verifier confirmed
+every one of Part C's panel and kind readings. 20.1's two tunic and
+property tables, which share their Arteries and Veins columns, yield one
+sortbins, with the members that restate a Review Question's keyed option
+left out. 20.4's blood-flow table is quantities and is transcribed only,
+and 20.5's thirteen Vessel and Description tables are transcribed with no
+sortbins, because a column of prose is not a category. 20.5 has no
+glossary recall items at all: 130 of its 136 definitions restate a table
+row, so the floor was met from body sentences that do not print the key,
+and the Key terms block still lists every definition. The one-word fixes
+were "embryo,the", "kidneys ,", "Pouseille" twice (Poiseuille's), "mmHg"
+twice, and, after the first read, "flight-or-fight" in the body of 20.4
+(the 2143 image keeps the artist's wording) and "intercranial" in a 20.5
+caption.
+
+The checkers found 14 defects and 29 concerns, the six reports together.
+20.1 had three defects: the thoroughfare-channel recall was double-keyed,
+since the glossary's "vascular shunt" fits the stem equally (the item was
+replaced with a body cloze), "vascular tone" was graded wrong on the
+vascular-tone cloze, and the 2101 alt counted four organ networks where the
+drawing sends the aorta to five, the stomach and intestines network hanging
+below the liver's. 20.2 had two: the footer counted five equations where
+the page sets six, and the first Review Question's hint pointed at the
+wrong paragraph. 20.3 had three: a cloze stem printed the very phrase of a
+sortbins member two items above it ("the movement of fluid out of the
+capillary"), the loss-of-fluid cloze rejected "filtration" and "water loss",
+and the footer omitted one swapped source pair. 20.4 had one, verified by
+the parent: the Source note under the corrected model answer restated the
+key of the Review Question directly above it (aldosterone gives only the
+reabsorption of sodium), which the footer-and-note rule now guards. 20.5
+had five: the pulmonary semilunar valve cloze rejected the book's own
+synonyms from 19.1, two source cross-references to the pulmonary-circuit
+figure had been silently retargeted to "the figure above" (the CNXML and
+the PDF both point at Figure 20.23, which draws no arch branches), the
+circle-of-Willis alt miscounted the anterior communicating junction as two
+vessels where the drawing has one (2123), and the longdescs gave Lumbar
+two leader lines where 2131 draws three and left Mediastinal's two
+uncounted on 2132. 20.6 had none, and its concerns were an angioblast
+stem the hemangioblast could also answer, a longdesc that omits unlabeled
+branches, and an alt that said "arms folded" where the drawing raises only
+the fetus's right hand to its chest; the parent verified that last one on
+the image and changed the alt. All were accepted and fixed in a round.
+
+The claim pass raised 20 findings and about 22 suspicions, found no true
+distractor, and left the landing page clean. Eighteen findings were applied
+with Source notes, footer clauses, and decisions entries; one was kept as
+printed and one was reviewed and is not an erratum. Most fell in 20.5's
+vessel catalogue: the vertebral artery and vein pass through the transverse
+foramina and not the vertebral or intervertebral foramen (F7, F8), the
+anterior communicating artery joins the two anterior cerebral arteries (F9)
+and the posterior communicating artery branches from the internal carotid
+(F10), the villi that return cerebrospinal fluid are arachnoid and not
+chorionic (F11), the superior sagittal sinus drains to the internal and
+not the inferior jugular vein (F12), the hemiazygos vein crosses to the
+azygos vein (F16), and the azygos vein joins the superior vena cava at
+about T4 and not T2 (F17); F10, F16, and F17 rest on Gray's 1918, standard
+anatomy that the module itself does not settle. The rest were 20.1's "21
+percent of the venous blood", which is of the blood volume (F1); 20.4's
+angiotensin I that is not yet active (F2), glossary hypertension of 140/90
+against the body's 130/80 (F3), "blood poisoning" removed from the
+septic-shock definition together with that textin's accept (F4), the liver
+dropped from the vasodilation list (F5), and pressor and inotropic agents
+told apart (F6); and 20.5's suspensory ligament of the ovary (F13), the
+femoral region of the thigh (F14), the umbilical veins beside the bladder
+(arteries, F15), and the pulmonary circuit's path (F18). F19, 20.5's
+"approximately 20 percent of blood flow" to an organ against 20.4's table
+(750 of 5,800 mL/min is about 13 percent), stands as printed with a footer
+clause, because the proposed rewrite invents a figure (an
+internal-inconsistency erratum, 2501, no decisions entry). F20, the 20.6
+caption that the ductus venosus links the umbilical vein to the inferior
+vena cava "largely through the liver", was reviewed and is not an erratum:
+it describes the vessel's course, which the drawing shows, where the body
+and the glossary describe its function, bypassing the hepatic sinusoids.
+
+The solver (Fable, 178k tokens) answered 56 items across the six pages,
+agreed on 55, and flagged one: 20.1's nervi vasorum multiple choice, keyed
+"both vasoconstriction and vasodilation", where the glossary's "trigger
+contraction" makes "vasoconstriction" also defensible. The parent
+adjudicated against m46597: the body says both are regulated in part by the
+nervi vasorum, and the glossary is the narrower statement, so the key
+stands. One item moved hash after the solve, 20.4's septic-shock textin,
+whose accept list changed when F4 dropped "blood poisoning"; a fresh
+`solve:emit` diff showed that single move, the solver's answer was remapped
+with a parent note, and the second compare (`ch20b`) read 1 agree. The
+solver's page notes were the underlined "blood plasma" in 20.3's cloze
+source (the source's own emphasis, kept) and defects the claim pass already
+held.
+
+The verifier read 63 entries: 29 confirmed, 2 rejected, 26 not errata, 5
+claim-pass or ruled items listed without a second reading, and the parent's
+panel readings, which all stood. The rejections were 2113ab's source alt
+(its two lettered panels are the drawing and the micrograph, and the
+drawing's insets are the cross-sections) and the alt that 2116 and 2117
+share. Two confirmed findings were new to every earlier agent: 2142's
+title and alt say "blood flow" for what are volume shares, and 2125's
+Superior phrenic cell repeats the intercostal list. The confirmed items
+became the chapter's alt, artwork, caption, and text errata, among them the
+"gas excange" in 2101's artwork, "Antidiretic" in 2117, "andenosine" and
+"hyperhtermia" in 2143, "Vetebrae" in 2125, "Decending genicular" and
+"Median femoral circumflex" in the upper- and lower-limb drawings, the
+posterior lower-limb panel that labels the same vessel both Peroneal and
+Fibular (2129ab and 2130), the "angiotensin-renin-aldosterone" word-order
+slip, the 2133 caption's "left lateral view" over labels reading Right
+transverse sinus and Right subclavian, the "Society of Vascular Surgery" and
+"Bureau of Labor" in 20.1's career box (corrected as one erratum, one-word
+fixes on the page), and 20.2's sentence that lists "contraction, vessel
+length, and viscosity" under cardiac output and blood volume, kept as
+printed with a footer clause. The errata Clerk found two disclosure gaps, where
+errata 2513, 2514, 2517, and 2524 (20.5's four source-alt slips, "This
+diagrams shows" and its kin) and 2527 (20.6's "lining … arise") had no
+footer clause, and the parent added them. The 22-line Reviewed-not-errata
+block groups the content-free source alts in one line and the loosely worded
+but true alts in another, and records the 35 mm option, the 2104
+endothelial-layer label that prints a Review Question's key (a body figure,
+kept), and the 2142 percentages against F1.
+
+The one dead link is `vascsurgery`, the Society for Vascular Surgery page
+on 20.1, whose target answers 404 while the site root answers 200; it is
+un-linked, with a footer clause and erratum 2481. The links that answered 403 to a
+script (`arts1` and `veinsum` at thefreedictionary, the CDC blood-pressure
+page cited in 20.4's References) are bot walls, not dead links, and stay
+linked; `check:external-links` printed 404 for the CDC page, and two parent
+GETs said 403. The other 39 dead links in the corpus belong to earlier
+books.
+
+Lessons written to the playbook (`docs/subjects/anatomy-physiology.md`,
+the Exercises list) and `run.md` (§2): a Source note is read like a stem, so
+its words are grepped against the keys above and below it (20.4); a source
+figure reference that points at the wrong figure is redirected and
+disclosed, never silently reworded, and is filed as an erratum with no
+decisions entry (20.5, the 19.4 `fs-id1611279` shape); a pair of comparison
+tables with the same category columns is one two-way classification and
+yields one sortbins (20.1, as 19.4 did); a vessel-catalogue module's
+glossary mirrors its tables, so no recall item is built from a definition a
+transcribed table prints beside its term (20.5); and a section the size of
+20.5 is still one Opus author, launched first, told to write the page in
+parts and to keep crops in files, at 276k tokens for the first round and
+300k after the checker and claim rounds, with no resume needed.
+
+The ledger merged 71 author records and 57 solve records (56 plus the one
+remap) and found 0 low-confidence provenance. The claim-pass ledger row for
+the chapter is filled, 20 decisions entries were appended, and
+`baseline:update` raised the keys gate baseline from 6,042 to 6,107
+confirmed, the coverage floor from 3,560 to 3,601, and the exercise floor
+from 16,269 to 16,340. The site build passed (6,051 of 20,000 files, 569.3
+MiB), and the final `npm test` ran 11,621 passing and 0 failing. Authors ran
+173–300k tokens (20.6 the lightest, 20.5 the heaviest at 300k), checkers
+135–252k, the claim pass 235k, the verifier 242k, the solver 178k, and the
+Clerks 47–340k. The wall clock was about 3 hours from launch to close-out.
+
 ## Knowledge Check 1 — Unit 1, chapters 1–4 (October 14, 2026)
 
 The first Anatomy and Physiology check, and the first run from

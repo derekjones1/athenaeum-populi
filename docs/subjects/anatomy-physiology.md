@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapter 20 on October 26, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -394,6 +394,27 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
 - **A source file name with parentheses** (`102_Organ_Systems_of_Body(Page1).jpg`)
   is folded to `…-Page1` by `vendor-media`, because Hugo percent-encodes the
   parentheses and the build audit then cannot match the variant file.
+- **A Source note is read like a stem** (20.4): the note under the
+  corrected 70/45 Critical Thinking item said the module "gives aldosterone
+  only the reabsorption of sodium" — the key of the Review Question directly
+  above it — and the checker caught it. A Source note's words are grepped
+  against the keys above and below it exactly as a replacement stem's are
+  *(chapter 20)*.
+- **A source figure reference that points at the wrong figure is redirected
+  and disclosed, never silently reworded** (20.5's two Aortic Arch Branches
+  links to the pulmonary-circuit figure): the page points at the figure that
+  shows the structure, the footer says the source's reference was redirected,
+  the ledger lists it for the verifier, and it is filed as an erratum (the
+  19.4 `fs-id1611279` shape, no decisions entry) *(chapter 20)*.
+- **A pair of comparison tables with the same category columns is one
+  two-way classification and yields ONE sortbins** (20.1's Arteries | Veins
+  tunic and property tables), as 19.4's heart-rate pair did *(chapter 20)*.
+- **A vessel-catalogue module's glossary mirrors its tables** (20.5: 130 of
+  136 definitions restate a table row, 63 word for word): no glossary recall
+  item is built from a definition that a transcribed table on the page
+  prints beside its term; the floor is met from body sentences that do not
+  print the key, and the Key terms block still lists every definition
+  *(chapter 20)*.
 
 The three readings and the blind solve run as
 `docs/briefs/anatomy-physiology/run.md` describes.

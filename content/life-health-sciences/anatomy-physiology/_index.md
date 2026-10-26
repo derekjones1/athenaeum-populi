@@ -115,14 +115,18 @@ reproduction, development, and inheritance.
 - **The Cardiovascular System: The Heart** — heart anatomy, cardiac muscle
   and electrical activity, the cardiac cycle, cardiac physiology, and the
   development of the heart.
+- **The Cardiovascular System: Blood Vessels and Circulation** — the structure
+  and function of blood vessels, blood flow, blood pressure, and resistance,
+  capillary exchange, homeostatic regulation of the vascular system,
+  circulatory pathways, and the development of blood vessels and fetal
+  circulation.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 4: Fluids and Transport** — The Cardiovascular System: Blood
-  Vessels and Circulation; The Lymphatic and Immune System.
+- **Unit 4: Fluids and Transport** — The Lymphatic and Immune System.
 - **Unit 5: Energy, Maintenance, and Environmental Exchange** — The
   Respiratory System; The Digestive System; Metabolism and Nutrition; The
   Urinary System; Fluid, Electrolyte, and Acid-Base Balance.

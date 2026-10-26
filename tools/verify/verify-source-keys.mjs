@@ -894,6 +894,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 2344,
     reason: 'the source distractor "peptide hormones" is a second correct answer to "The gonads produce what class of hormones?" — the module m46670\'s own fs-id1423637 says "the testes produce the peptide hormone inhibin"; the page prints "glycoprotein hormones" in its place (a class m46667 names, given to no gonadal hormone in this book); key "steroid hormones" unchanged',
   },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md',
+    exercise: 'fs-id2107147',
+    kind: 'options',
+    erratum: 2478,
+    reason: 'the source distractor "The brachial artery is the distal branch of the axillary artery." is a second true answer to "Which of the following statements is true?" — the module m46646\'s own fs-id1595346 says the axillary artery "continues into the upper arm, or brachium, and becomes the brachial artery"; the page prints "The brachial artery bifurcates into the radial and ulnar arteries at the wrist." in its place (the same paragraph says the brachial artery bifurcates "As the brachial artery approaches the coronoid fossa"); key "The radial and ulnar arteries join to form the palmar arch." unchanged',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

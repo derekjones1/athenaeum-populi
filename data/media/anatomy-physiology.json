@@ -6824,6 +6824,236 @@
       "caption": "",
       "transparent": false
     },
+    "2100_Arm_with_Bulging_Veins": {
+      "source": "media/2100_Arm_with_Bulging_Veins.jpg",
+      "sourceSha256": "eefbff27313d4c5c5d6a78278a9b0cdd00d09dc6a22ec7f203d6b31e8bc44043",
+      "module": "m46600",
+      "kind": "photo",
+      "width": 2288,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "2100_Arm_with_Bulging_Veins-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 734,
+          "file": "2100_Arm_with_Bulging_Veins-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a forearm with the veins bulging.",
+      "caption": "While most blood vessels are located deep from the surface and are not visible, the superficial veins of the upper limb provide an indication of the extent, prominence, and importance of these structures to the body. (credit: Colin Davis)"
+    },
+    "2101_Blood_Flow_Through_the_Heart": {
+      "source": "media/2101_Blood_Flow_Through_the_Heart.jpg",
+      "sourceSha256": "903de834121aab05836c066e1b1e3fccfcc198d9b30880a2c6e99659a4b06854",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1942,
+      "height": 1317,
+      "variants": [
+        {
+          "width": 800,
+          "height": 542,
+          "file": "2101_Blood_Flow_Through_the_Heart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1085,
+          "file": "2101_Blood_Flow_Through_the_Heart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows how oxygenated and deoxygenated blood flow through the major organs in the body.",
+      "caption": "The pulmonary circuit moves blood from the right side of the heart to the lungs and back to the heart. The systemic circuit moves blood from the left side of the heart to the head and body and returns it to the right side of the heart to repeat the cycle. The arrows indicate the direction of blood flow, and the colors show the relative levels of oxygen concentration."
+    },
+    "2102_Comparison_of_Artery_and_Vein": {
+      "source": "media/2102_Comparison_of_Artery_and_Vein.jpg",
+      "sourceSha256": "e5eb95a44a33131a63b1de01bb8ccd35fde597e379ffa9b5630c0a46d91e6d76",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1536,
+      "height": 2094,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1090,
+          "file": "2102_Comparison_of_Artery_and_Vein-800.webp"
+        },
+        {
+          "width": 1536,
+          "height": 2094,
+          "file": "2102_Comparison_of_Artery_and_Vein-1536.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left panel of this figure shows the ultrastructure of an artery, and the top right panel shows the ultrastructure of a vein. The bottom panel shows a micrograph with the cross sections of an artery and a vein.",
+      "caption": "(a) Arteries and (b) veins share the same general features, but the walls of arteries are much thicker because of the higher pressure of the blood that flows through them. (c) A micrograph shows the relative differences in thickness. LM × 160. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2103_Muscular_and_Elastic_Artery_Arteriole": {
+      "source": "media/2103_Muscular_and_Elastic_Artery_Arteriole.jpg",
+      "sourceSha256": "501c507cd2880e654931a1c075fe53bc1acddbeb43ce406e2c490a4e91ef3758",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 2271,
+      "height": 579,
+      "variants": [
+        {
+          "width": 800,
+          "height": 204,
+          "file": "2103_Muscular_and_Elastic_Artery_Arteriole-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 408,
+          "file": "2103_Muscular_and_Elastic_Artery_Arteriole-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the cross-section of an elastic artery, the middle panel shows the cross section of a muscular artery, and the right panel shows the cross-section of an arteriole.",
+      "caption": "Comparison of the walls of an elastic artery, a muscular artery, and an arteriole is shown. In terms of scale, the diameter of an arteriole is measured in micrometers compared to millimeters for elastic and muscular arteries."
+    },
+    "2104_Three_Major_Capillary_Types": {
+      "source": "media/2104_Three_Major_Capillary_Types.jpg",
+      "sourceSha256": "78489456a03489cc59bafe01ff94ebdfc46ea132653fbc9c933df2c64d9bfa09",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1960,
+      "height": 739,
+      "variants": [
+        {
+          "width": 800,
+          "height": 301,
+          "file": "2104_Three_Major_Capillary_Types-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 603,
+          "file": "2104_Three_Major_Capillary_Types-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the structure of a continuous capillary, the middle panel shows a fenestrated capillary, and the right panel shows a sinusoid capillary.",
+      "caption": "The three major types of capillaries: continuous, fenestrated, and sinusoid."
+    },
+    "2105_Capillary_Bed": {
+      "source": "media/2105_Capillary_Bed.jpg",
+      "sourceSha256": "cd0093b9d67aef993dad802dd8e8d1a7e0648ba47ff2789844064670e7b246c2",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1859,
+      "height": 1099,
+      "variants": [
+        {
+          "width": 800,
+          "height": 473,
+          "file": "2105_Capillary_Bed-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 946,
+          "file": "2105_Capillary_Bed-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows a capillary bed connecting an arteriole and a venule.",
+      "caption": "In a capillary bed, arterioles give rise to metarterioles. Precapillary sphincters located at the junction of a metarteriole with a capillary regulate blood flow. A thoroughfare channel connects the metarteriole to a venule. An arteriovenous anastomosis, which directly connects the arteriole with the venule, is shown at the bottom."
+    },
+    "2106_Large_Medium_Vein_Venule": {
+      "source": "media/2106_Large_Medium_Vein_Venule.jpg",
+      "sourceSha256": "496d595300b1882a4bdc6ef04fbdb84ee519e42efebfc4f1020f15af5ae7cc84",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1314,
+      "height": 1780,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1083,
+          "file": "2106_Large_Medium_Vein_Venule-800.webp"
+        },
+        {
+          "width": 1314,
+          "height": 1780,
+          "file": "2106_Large_Medium_Vein_Venule-1314.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows the cross-section of a large vein, the middle panel shows the cross-section of a medium sized vein, and the bottom panel shows the cross-section of a venule.",
+      "caption": "Many veins have valves to prevent back flow of blood, whereas venules do not. In terms of scale, the diameter of a venule is measured in micrometers compared to millimeters for veins."
+    },
+    "2107_Varicose_Vein": {
+      "source": "media/2107_Varicose_Vein.jpg",
+      "sourceSha256": "514750a9964faa778d976229de6def4eeaccaf272f23ba02dc517820f21ab111",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1083,
+      "height": 1421,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1049,
+          "file": "2107_Varicose_Vein-800.webp"
+        },
+        {
+          "width": 1083,
+          "height": 1421,
+          "file": "2107_Varicose_Vein-1083.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photo shows a person’s leg.",
+      "caption": "Varicose veins are commonly found in the lower limbs. (credit: Thomas Kriese)"
+    },
+    "2108_Capillary_ExchangeN": {
+      "source": "media/2108_Capillary_ExchangeN.jpg",
+      "sourceSha256": "340645db0e0213280e5a1bcb08f4b248a97bd8014bf46c259ae20d78075cd7f9",
+      "module": "m46586",
+      "kind": "photo",
+      "width": 1961,
+      "height": 914,
+      "variants": [
+        {
+          "width": 800,
+          "height": 373,
+          "file": "2108_Capillary_ExchangeN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 745,
+          "file": "2108_Capillary_ExchangeN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the process of fluid exchange in a capillary from the arterial end to the venous end.",
+      "caption": "Net filtration occurs near the arterial end of the capillary since capillary hydrostatic pressure (CHP) is greater than blood colloidal osmotic pressure (BCOP). There is no net movement of fluid near the midpoint since CHP = BCOP. Net reabsorption occurs near the venous end since BCOP is greater than CHP."
+    },
+    "2109_Systemic_Blood_Pressure": {
+      "source": "media/2109_Systemic_Blood_Pressure.jpg",
+      "sourceSha256": "0bb1685f55364eef7d031e43eda19154ce17c13246905fd7de8974238ad7f9a7",
+      "module": "m46635",
+      "kind": "photo",
+      "width": 1979,
+      "height": 1379,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "2109_Systemic_Blood_Pressure-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1115,
+          "file": "2109_Systemic_Blood_Pressure-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows the value of pulse pressure in different types of blood vessels.",
+      "caption": "The graph shows the components of blood pressure throughout the blood vessels, including systolic, diastolic, mean arterial, and pulse pressures."
+    },
     "210_Hydrogen_Bonds_Between_Water_Molecules-01": {
       "source": "media/210_Hydrogen_Bonds_Between_Water_Molecules-01.jpg",
       "sourceSha256": "d1d1183065cb8a7ba0695dec285f357caf55a1dd5d7a82f4ecea1099268312d4",
@@ -6846,6 +7076,231 @@
       "alt": "This figure shows three water molecules and the hydrogen bonds between them.",
       "caption": "Notice that the bonds occur between the weakly positive charge on the hydrogen atoms and the weakly negative charge on the oxygen atoms. Hydrogen bonds are relatively weak, and therefore are indicated with a dotted (rather than a solid) line.",
       "transparent": false
+    },
+    "2110_Pulse_Sites": {
+      "source": "media/2110_Pulse_Sites.jpg",
+      "sourceSha256": "f37317d5322b6f5e7eab6b91e089be952e83ab882d3b125e6ed227ebc4fc01e6",
+      "module": "m46635",
+      "kind": "photo",
+      "width": 684,
+      "height": 1054,
+      "variants": [
+        {
+          "width": 684,
+          "height": 1054,
+          "file": "2110_Pulse_Sites-684.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the pulse points in a woman’s body.",
+      "caption": "The pulse is most readily measured at the radial artery, but can be measured at any of the pulse points shown."
+    },
+    "2111_Blood_Pressure_Graph": {
+      "source": "media/2111_Blood_Pressure_Graph.jpg",
+      "sourceSha256": "b9c276363855b0789427ad72e8be0546bf7c437f9b71f03dc20825bd5babc5d6",
+      "module": "m46635",
+      "kind": "photo",
+      "width": 1648,
+      "height": 1027,
+      "variants": [
+        {
+          "width": 800,
+          "height": 498,
+          "file": "2111_Blood_Pressure_Graph-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 997,
+          "file": "2111_Blood_Pressure_Graph-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows blood pressure as a function of time.",
+      "caption": "When pressure in a sphygmomanometer cuff is released, a clinician can hear the Korotkoff sounds. In this graph, a blood pressure tracing is aligned to a measurement of systolic and diastolic pressures."
+    },
+    "2112_Vessel_Blood_Pressure_Relationships": {
+      "source": "media/2112_Vessel_Blood_Pressure_Relationships.jpg",
+      "sourceSha256": "316a14d94e4ae9211bed8b52905d9eee50ab217607ef967a9a27d2a4ab94001f",
+      "module": "m46635",
+      "kind": "photo",
+      "width": 1992,
+      "height": 1371,
+      "variants": [
+        {
+          "width": 800,
+          "height": 550,
+          "file": "2112_Vessel_Blood_Pressure_Relationships-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1101,
+          "file": "2112_Vessel_Blood_Pressure_Relationships-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows four graphs. The top left graph shows the vessel diameter for different types of blood vessels. The top right panel shows cross-sectional area for different blood vessels. The bottom left panel shows the average blood pressure for different blood vessels, and the bottom right panel shows the velocity of blood flow in different blood vessels.",
+      "caption": "The relationships among blood vessels that can be compared include (a) vessel diameter, (b) total cross-sectional area, (c) average blood pressure, and (d) velocity of blood flow."
+    },
+    "2113ab_Atherosclerosis": {
+      "source": "media/2113ab_Atherosclerosis.jpg",
+      "sourceSha256": "a1b72f553c1c0081bce6590347ca58befe6057ea6a3bfaca07880c97a28d9bfd",
+      "module": "m46635",
+      "kind": "photo",
+      "width": 1965,
+      "height": 1065,
+      "variants": [
+        {
+          "width": 800,
+          "height": 433,
+          "file": "2113ab_Atherosclerosis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 867,
+          "file": "2113ab_Atherosclerosis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the cross-section of a normal and a narrowed artery. The right panel shows a micrograph of an artery with plaque in it.",
+      "caption": "(a) Atherosclerosis can result from plaques formed by the buildup of fatty, calcified deposits in an artery. (b) Plaques can also take other forms, as shown in this micrograph of a coronary artery that has a buildup of connective tissue within the artery wall. LM × 40. (Micrograph provided by the Regents of University of Michigan Medical School © 2012)"
+    },
+    "2114_Skeletal_Muscle_Vein_Pump": {
+      "source": "media/2114_Skeletal_Muscle_Vein_Pump.jpg",
+      "sourceSha256": "bee6b3f3d6a9b6e8b8be74dfce04d56ec4538145375988dd528f8ef7810865ea",
+      "module": "m46635",
+      "kind": "photo",
+      "width": 1332,
+      "height": 1165,
+      "variants": [
+        {
+          "width": 800,
+          "height": 699,
+          "file": "2114_Skeletal_Muscle_Vein_Pump-800.webp"
+        },
+        {
+          "width": 1332,
+          "height": 1165,
+          "file": "2114_Skeletal_Muscle_Vein_Pump-1332.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the structure of a skeletal muscle vein pump when the muscle is relaxed, and the right panel shows the structure of a skeletal muscle vein pump when the muscle is contracted.",
+      "caption": "The contraction of skeletal muscles surrounding a vein compresses the blood and increases the pressure in that area. This action forces blood closer to the heart where venous pressure is lower. Note the importance of the one-way valves to assure that blood flows only in the proper direction."
+    },
+    "2115_Vascular_Homeostasis_Flow_Art": {
+      "source": "media/2115_Vascular_Homeostasis_Flow_Art.jpg",
+      "sourceSha256": "89c4f9a0be4761b405e4dc9f3bb542beebc21941dc0d164c01ea8360a0a88873",
+      "module": "m46603",
+      "kind": "photo",
+      "width": 2263,
+      "height": 2733,
+      "variants": [
+        {
+          "width": 800,
+          "height": 966,
+          "file": "2115_Vascular_Homeostasis_Flow_Art-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1932,
+          "file": "2115_Vascular_Homeostasis_Flow_Art-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the various factors that control the flow of blood. The top panel focuses on autoregulation, and the bottom panel focuses on neural and endocrine mechanisms.",
+      "caption": "Adequate blood flow, blood pressure, distribution, and perfusion involve autoregulatory, neural, and endocrine mechanisms."
+    },
+    "2116_Baroreceptor_Reflex_Flow_Art": {
+      "source": "media/2116_Baroreceptor_Reflex_Flow_Art.jpg",
+      "sourceSha256": "fee81e05df7a52bbb8f005e56853114f9892912e145ccdb8c276eccb7a5c1870",
+      "module": "m46603",
+      "kind": "photo",
+      "width": 2188,
+      "height": 1629,
+      "variants": [
+        {
+          "width": 800,
+          "height": 595,
+          "file": "2116_Baroreceptor_Reflex_Flow_Art-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1191,
+          "file": "2116_Baroreceptor_Reflex_Flow_Art-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows what happens when blood pressure is increased or decreased. The top panel shows the events that take place when blood pressure is increased, and the bottom panel shows the events that take place when blood pressure is decreased.",
+      "caption": "Increased blood pressure results in increased rates of baroreceptor firing, whereas decreased blood pressure results in slower rates of fire, both initiating the homeostatic mechanism to restore blood pressure."
+    },
+    "2117_Renin_Angiotensin_Aldosterone_Pathway": {
+      "source": "media/2117_Renin_Angiotensin_Aldosterone_Pathway.jpg",
+      "sourceSha256": "4a38b7353ee80ad357edfd473f9c3396a6db98076efd6e5aa3eaf6809f2f29e5",
+      "module": "m46603",
+      "kind": "photo",
+      "width": 2222,
+      "height": 949,
+      "variants": [
+        {
+          "width": 800,
+          "height": 341,
+          "file": "2117_Renin_Angiotensin_Aldosterone_Pathway-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 683,
+          "file": "2117_Renin_Angiotensin_Aldosterone_Pathway-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows the action of decreased blood pressure in the short and long term.",
+      "caption": "In the renin-angiotensin-aldosterone mechanism, increasing angiotensin II will stimulate the production of antidiuretic hormone and aldosterone. In addition to renin, the kidneys produce erythropoietin, which stimulates the production of red blood cells, further increasing blood volume."
+    },
+    "2118_Blood_Volume_Loss_and_Homeostasis": {
+      "source": "media/2118_Blood_Volume_Loss_and_Homeostasis.jpg",
+      "sourceSha256": "b3e735db58ae41a6d48db4c113edd84ca96118261558e2a11d466c96db19c100",
+      "module": "m46603",
+      "kind": "photo",
+      "width": 1967,
+      "height": 1036,
+      "variants": [
+        {
+          "width": 800,
+          "height": 421,
+          "file": "2118_Blood_Volume_Loss_and_Homeostasis-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 842,
+          "file": "2118_Blood_Volume_Loss_and_Homeostasis-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the action of decreased blood pressure and volume in the neural and endocrine mechanisms.",
+      "caption": ""
+    },
+    "2119_Pulmonary_Circuit": {
+      "source": "media/2119_Pulmonary_Circuit.jpg",
+      "sourceSha256": "875f6b63bc666dffc265b8ce40dafacf1411a668962bc782433e586068be6d25",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1507,
+      "height": 868,
+      "variants": [
+        {
+          "width": 800,
+          "height": 460,
+          "file": "2119_Pulmonary_Circuit-800.webp"
+        },
+        {
+          "width": 1507,
+          "height": 868,
+          "file": "2119_Pulmonary_Circuit-1507.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the network of blood vessels in the lungs.",
+      "caption": "Blood exiting from the right ventricle flows into the pulmonary trunk, which bifurcates into the two pulmonary arteries. These vessels branch to supply blood to the pulmonary capillaries, where gas exchange occurs within the lung alveoli. Blood returns via the pulmonary veins to the left atrium."
     },
     "211_Three_Fundamental_Chemical_Reactions-01": {
       "source": "media/211_Three_Fundamental_Chemical_Reactions-01.jpg",
@@ -6870,6 +7325,236 @@
       "caption": "The atoms and molecules involved in the three fundamental chemical reactions can be imagined as words.",
       "transparent": false
     },
+    "2120_Major_Systemic_Artery": {
+      "source": "media/2120_Major_Systemic_Artery.jpg",
+      "sourceSha256": "4a54ab3d438a084260b6213e6f447cc66f1d7ca95142dd70a10340668ec515ec",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1404,
+      "height": 2275,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1296,
+          "file": "2120_Major_Systemic_Artery-800.webp"
+        },
+        {
+          "width": 1404,
+          "height": 2275,
+          "file": "2120_Major_Systemic_Artery-1404.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagrams shows the major arteries in the human body.",
+      "caption": "The major systemic arteries shown here deliver oxygenated blood throughout the body."
+    },
+    "2121_Aorta": {
+      "source": "media/2121_Aorta.jpg",
+      "sourceSha256": "8d59daf827ec5605819af260c572e63031d5a5a0f258b3b84c25a4eca13b4f48",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1264,
+      "height": 1347,
+      "variants": [
+        {
+          "width": 800,
+          "height": 852,
+          "file": "2121_Aorta-800.webp"
+        },
+        {
+          "width": 1264,
+          "height": 1347,
+          "file": "2121_Aorta-1264.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the aorta and the major parts are labeled.",
+      "caption": "The aorta has distinct regions, including the ascending aorta, aortic arch, and the descending aorta, which includes the thoracic and abdominal regions."
+    },
+    "2122_Common_Carotid_Artery": {
+      "source": "media/2122_Common_Carotid_Artery.jpg",
+      "sourceSha256": "9866779ec1978db52a10520f0cec0bd86774212a94e651b80c3bb4b413b10058",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1596,
+      "height": 1746,
+      "variants": [
+        {
+          "width": 800,
+          "height": 875,
+          "file": "2122_Common_Carotid_Artery-800.webp"
+        },
+        {
+          "width": 1596,
+          "height": 1746,
+          "file": "2122_Common_Carotid_Artery-1596.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the blood vessels in the head and brain.",
+      "caption": "The common carotid artery gives rise to the external and internal carotid arteries. The external carotid artery remains superficial and gives rise to many arteries of the head. The internal carotid artery first forms the carotid sinus and then reaches the brain via the carotid canal and carotid foramen, emerging into the cranium via the foramen lacerum. The vertebral artery branches from the subclavian artery and passes through the transverse foramen in the cervical vertebrae, entering the base of the skull at the vertebral foramen. The subclavian artery continues toward the arm as the axillary artery."
+    },
+    "2123_Arteries_of_the_Brain": {
+      "source": "media/2123_Arteries_of_the_Brain.jpg",
+      "sourceSha256": "923ca6a39fd50f9095f60ee11063d96169b6030269fbc1109f3932c76507e94f",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1550,
+      "height": 913,
+      "variants": [
+        {
+          "width": 800,
+          "height": 471,
+          "file": "2123_Arteries_of_the_Brain-800.webp"
+        },
+        {
+          "width": 1550,
+          "height": 913,
+          "file": "2123_Arteries_of_the_Brain-1550.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the arteries of the brain.",
+      "caption": "This inferior view shows the network of arteries serving the brain. The structure is referred to as the arterial circle or circle of Willis."
+    },
+    "2124_Thoracic_Abdominal_Arteries": {
+      "source": "media/2124_Thoracic_Abdominal_Arteries.jpg",
+      "sourceSha256": "e0162d0bc54edc96edaa4d966f7b62be14a601487d5564d57fdaf4430eea1798",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1800,
+      "height": 1700,
+      "variants": [
+        {
+          "width": 800,
+          "height": 755,
+          "file": "2124_Thoracic_Abdominal_Arteries-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1511,
+          "file": "2124_Thoracic_Abdominal_Arteries-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the arteries in the thoracic and abdominal cavity.",
+      "caption": "The thoracic aorta gives rise to the arteries of the visceral and parietal branches."
+    },
+    "2125_Thoracic_Abdominal_Arteries_Chart": {
+      "source": "media/2125_Thoracic_Abdominal_Arteries_Chart.jpg",
+      "sourceSha256": "4f7b11dd3fad6737c8c59ed4bcff7f17c92f381556dff27f7358d1401f04dfa9",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1971,
+      "height": 2796,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1135,
+          "file": "2125_Thoracic_Abdominal_Arteries_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2269,
+          "file": "2125_Thoracic_Abdominal_Arteries_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the different arteries in the thoracic and abdominal cavity. The list on the left shows unpaired arteries, and the list on the right shows paired cavities.",
+      "caption": "The flow chart summarizes the distribution of the major branches of the aorta into the thoracic and abdominal regions."
+    },
+    "2126_Iliac_Artery_Branches_Chart": {
+      "source": "media/2126_Iliac_Artery_Branches_Chart.jpg",
+      "sourceSha256": "2416b5b34b02594803d569475b7eb3647185fb557e8274d81aaed28017f3c8fc",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1821,
+      "height": 1496,
+      "variants": [
+        {
+          "width": 800,
+          "height": 657,
+          "file": "2126_Iliac_Artery_Branches_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1314,
+          "file": "2126_Iliac_Artery_Branches_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the different branches into which that the abdominal aorta is divided.",
+      "caption": "The flow chart summarizes the distribution of the major branches of the common iliac arteries into the pelvis and lower limbs. The left side follows a similar pattern to the right."
+    },
+    "2127_Thoracic_Upper_Limb_Arteries": {
+      "source": "media/2127_Thoracic_Upper_Limb_Arteries.jpg",
+      "sourceSha256": "9ffc7b05753c9cbd29780cc2a193c1f90cb61db9405b9889ff965116010acda1",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 869,
+      "height": 1538,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1416,
+          "file": "2127_Thoracic_Upper_Limb_Arteries-800.webp"
+        },
+        {
+          "width": 869,
+          "height": 1538,
+          "file": "2127_Thoracic_Upper_Limb_Arteries-869.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the arteries in the arm.",
+      "caption": "The arteries that supply blood to the arms and hands are extensions of the subclavian arteries."
+    },
+    "2128_Thoracic_Upper_Limb_Arteries_Chart": {
+      "source": "media/2128_Thoracic_Upper_Limb_Arteries_Chart.jpg",
+      "sourceSha256": "ece51343cb23bf666462ec1238c0fa09906278adfa1b75cb7986a8138bdf0e2f",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 2263,
+      "height": 1933,
+      "variants": [
+        {
+          "width": 800,
+          "height": 683,
+          "file": "2128_Thoracic_Upper_Limb_Arteries_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1366,
+          "file": "2128_Thoracic_Upper_Limb_Arteries_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This chart shows the arteries present in the thoracic upper limb.",
+      "caption": "The flow chart summarizes the distribution of the major arteries from the heart into the upper limb."
+    },
+    "2129ab_Lower_Limb_Arteries_Anterior_Posterior": {
+      "source": "media/2129ab_Lower_Limb_Arteries_Anterior_Posterior.jpg",
+      "sourceSha256": "7f9db31fd0c8430fed6b996d11a4d1d6e7a10d331a4416262cc60bb0b2c07126",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 2012,
+      "height": 1781,
+      "variants": [
+        {
+          "width": 800,
+          "height": 708,
+          "file": "2129ab_Lower_Limb_Arteries_Anterior_Posterior-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1416,
+          "file": "2129ab_Lower_Limb_Arteries_Anterior_Posterior-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the anterior view of arteries in the legs, and the right panel shows the posterior view.",
+      "caption": "Major arteries serving the lower limb are shown in anterior and posterior views."
+    },
     "212_Enzymes-01": {
       "source": "media/212_Enzymes-01.jpg",
       "sourceSha256": "1274e2bdd9ec40d6706da9b0bd06b26a1af641222a0d03653922ea966496e25f",
@@ -6893,6 +7578,236 @@
       "caption": "Enzymes decrease the activation energy required for a given chemical reaction to occur. (a) Without an enzyme, the energy input needed for a reaction to begin is high. (b) With the help of an enzyme, less energy is needed for a reaction to begin.",
       "transparent": false
     },
+    "2130_Lower_Limb_Arteries_Chart": {
+      "source": "media/2130_Lower_Limb_Arteries_Chart.jpg",
+      "sourceSha256": "2f8aface2c2ae1937126f018e899dac6ad6977a2ebdca6a690be191fae9798fb",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 2233,
+      "height": 2271,
+      "variants": [
+        {
+          "width": 800,
+          "height": 813,
+          "file": "2130_Lower_Limb_Arteries_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1627,
+          "file": "2130_Lower_Limb_Arteries_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This chart shows the major arteries present in the lower limbs.",
+      "caption": "The flow chart summarizes the distribution of the systemic arteries from the external iliac artery into the lower limb."
+    },
+    "2131_Major_Systematic_Veins": {
+      "source": "media/2131_Major_Systematic_Veins.jpg",
+      "sourceSha256": "116dcc876094dcb5e5f4c8ffcbe7886c5f875e1560555c31646205ca7dfcf535",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1679,
+      "height": 2554,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1217,
+          "file": "2131_Major_Systematic_Veins-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2434,
+          "file": "2131_Major_Systematic_Veins-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the major veins in the human body.",
+      "caption": "The major systemic veins of the body are shown here in an anterior view."
+    },
+    "2132_Thoracic_Abdominal_Veins": {
+      "source": "media/2132_Thoracic_Abdominal_Veins.jpg",
+      "sourceSha256": "90ef0936c2776c3850fcb1542a5ef01dd0d7a94f54c911bdc0a02999b5d1c879",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1817,
+      "height": 1650,
+      "variants": [
+        {
+          "width": 800,
+          "height": 726,
+          "file": "2132_Thoracic_Abdominal_Veins-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1453,
+          "file": "2132_Thoracic_Abdominal_Veins-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the veins present in the thoracic abdominal cavity.",
+      "caption": "Veins of the thoracic and abdominal regions drain blood from the area above the diaphragm, returning it to the right atrium via the superior vena cava."
+    },
+    "2133_Head_and_Neck_Veins": {
+      "source": "media/2133_Head_and_Neck_Veins.jpg",
+      "sourceSha256": "b8c0bfdca85c49795c17289933f08b36d543ad66f83b4c91f8b67e4743ec4fba",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1804,
+      "height": 1750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 776,
+          "file": "2133_Head_and_Neck_Veins-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1552,
+          "file": "2133_Head_and_Neck_Veins-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the veins present in the head and neck.",
+      "caption": "This left lateral view shows the veins of the head and neck, including the intercranial sinuses."
+    },
+    "2134_Thoracic_Upper_Limb_Veins": {
+      "source": "media/2134_Thoracic_Upper_Limb_Veins.jpg",
+      "sourceSha256": "aa894477da120b5ea72c35447ef25d532457809bc79254e606ffa3da54b029ca",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1321,
+      "height": 1496,
+      "variants": [
+        {
+          "width": 800,
+          "height": 906,
+          "file": "2134_Thoracic_Upper_Limb_Veins-800.webp"
+        },
+        {
+          "width": 1321,
+          "height": 1496,
+          "file": "2134_Thoracic_Upper_Limb_Veins-1321.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the veins present in the upper limb.",
+      "caption": "This anterior view shows the veins that drain the upper limb."
+    },
+    "2135_Veins_Draining_into_Superior_Vena_Cava_Chart": {
+      "source": "media/2135_Veins_Draining_into_Superior_Vena_Cava_Chart.jpg",
+      "sourceSha256": "ca75b166fa0dbf5b93fd544c2097c246dd535b7c56195d9faf6e0f876b5db07e",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 2279,
+      "height": 2296,
+      "variants": [
+        {
+          "width": 800,
+          "height": 806,
+          "file": "2135_Veins_Draining_into_Superior_Vena_Cava_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1612,
+          "file": "2135_Veins_Draining_into_Superior_Vena_Cava_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the different veins in the body, and how they are connected to the superior vena cava.",
+      "caption": "The flow chart summarizes the distribution of the veins flowing into the superior vena cava."
+    },
+    "2136ab_Lower_Limb_Veins_Anterior_Posterior": {
+      "source": "media/2136ab_Lower_Limb_Veins_Anterior_Posterior.jpg",
+      "sourceSha256": "a146dc3aae29181cd755a9ba0975aee7498ab6a14a1fb08d23119841101fe950",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1860,
+      "height": 1732,
+      "variants": [
+        {
+          "width": 800,
+          "height": 745,
+          "file": "2136ab_Lower_Limb_Veins_Anterior_Posterior-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1490,
+          "file": "2136ab_Lower_Limb_Veins_Anterior_Posterior-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows the anterior view of veins in the legs, and the right panel shows the posterior view.",
+      "caption": "Anterior and posterior views show the major veins that drain the lower limb into the inferior vena cava."
+    },
+    "2137_Lower_Limb_Veins_Chart": {
+      "source": "media/2137_Lower_Limb_Veins_Chart.jpg",
+      "sourceSha256": "139659292d03f58051be86349d5635e8cd8a811f3050327480aacee0faf24e36",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1838,
+      "height": 2000,
+      "variants": [
+        {
+          "width": 800,
+          "height": 870,
+          "file": "2137_Lower_Limb_Veins_Chart-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1741,
+          "file": "2137_Lower_Limb_Veins_Chart-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This charts shows the veins in the lower limbs, and how they are connected.",
+      "caption": "The flow chart summarizes venous flow from the lower limb."
+    },
+    "2138_Hepatic_Portal_Vein_System": {
+      "source": "media/2138_Hepatic_Portal_Vein_System.jpg",
+      "sourceSha256": "9b454749928054b833b4db3bf0f9869383912b6fc0ef39e2b5178113484b45b1",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1583,
+      "height": 1021,
+      "variants": [
+        {
+          "width": 800,
+          "height": 516,
+          "file": "2138_Hepatic_Portal_Vein_System-800.webp"
+        },
+        {
+          "width": 1583,
+          "height": 1021,
+          "file": "2138_Hepatic_Portal_Vein_System-1583.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the veins in the digestive system.",
+      "caption": "The liver receives blood from the normal systemic circulation via the hepatic artery. It also receives and processes blood from other organs, delivered via the veins of the hepatic portal system. All blood exits the liver via the hepatic vein, which delivers the blood to the inferior vena cava. (Different colors are used to help distinguish among the different vessels in the system.)"
+    },
+    "2139_Fetal_Circulation": {
+      "source": "media/2139_Fetal_Circulation.jpg",
+      "sourceSha256": "7c45d2316241606ed626fa2be68470c060b182267f28e2f1bb2bccc0bf3e236b",
+      "module": "m46610",
+      "kind": "photo",
+      "width": 1954,
+      "height": 2029,
+      "variants": [
+        {
+          "width": 800,
+          "height": 830,
+          "file": "2139_Fetal_Circulation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1661,
+          "file": "2139_Fetal_Circulation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the blood vessels in a fetus.",
+      "caption": "The foramen ovale in the interatrial septum allows blood to flow from the right atrium to the left atrium. The ductus arteriosus is a temporary vessel, connecting the aorta to the pulmonary trunk. The ductus venosus links the umbilical vein to the inferior vena cava largely through the liver."
+    },
     "213_Dehydration_Synthesis_and_Hydrolysis-01": {
       "source": "media/213_Dehydration_Synthesis_and_Hydrolysis-01.jpg",
       "sourceSha256": "cae82c3cdbde6f4b7fa29298ae0f5192f324866f8c6baedd0b50c52ca47f51ab",
@@ -6915,6 +7830,98 @@
       "alt": "The top panel in this figure shows a dehydration-synthesis reaction, and the bottom panel shows a hydrolysis reaction.",
       "caption": "Monomers, the basic units for building larger molecules, form polymers (two or more chemically-bonded monomers). (a) In dehydration synthesis, two monomers are covalently bonded in a reaction in which one gives up a hydroxyl group and the other a hydrogen atom. A molecule of water is released as a byproduct during dehydration reactions. (b) In hydrolysis, the covalent bond between two monomers is split by the addition of a hydrogen atom to one and a hydroxyl group to the other, which requires the contribution of one molecule of water.",
       "transparent": false
+    },
+    "2140_FlowChart_Veins_into_VenaCava": {
+      "source": "media/2140_FlowChart_Veins_into_VenaCava.jpg",
+      "sourceSha256": "76b2f8f70247f9b0fc4d6c6b16d61d8ed7df82f243ad9582b125c8fb16711359",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 2263,
+      "height": 2471,
+      "variants": [
+        {
+          "width": 800,
+          "height": 873,
+          "file": "2140_FlowChart_Veins_into_VenaCava-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1747,
+          "file": "2140_FlowChart_Veins_into_VenaCava-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This chart shows the connection between the different veins and the inferior vena cava.",
+      "caption": "The flow chart summarizes veins that deliver blood to the inferior vena cava."
+    },
+    "2141_CircSyst_vs_OtherSystemsN": {
+      "source": "media/2141_CircSyst_vs_OtherSystemsN.jpg",
+      "sourceSha256": "b819dedbd6d3d0e8f511d876b53be5ce23f3afee9e513f876a6b403a2afa1eb4",
+      "module": "m46646",
+      "kind": "photo",
+      "width": 1870,
+      "height": 2257,
+      "variants": [
+        {
+          "width": 800,
+          "height": 965,
+          "file": "2141_CircSyst_vs_OtherSystemsN-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1931,
+          "file": "2141_CircSyst_vs_OtherSystemsN-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table outlines the role of the circulatory system in the other organ systems in the body.",
+      "caption": ""
+    },
+    "2142_Distribution_of_Blood_Flow": {
+      "source": "media/2142_Distribution_of_Blood_Flow.jpg",
+      "sourceSha256": "3435efc3042e3fc4a19d6d826645ac7f01ccbdb448ac5608b201e7116b3182d1",
+      "module": "m46597",
+      "kind": "photo",
+      "width": 1542,
+      "height": 1425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 739,
+          "file": "2142_Distribution_of_Blood_Flow-800.webp"
+        },
+        {
+          "width": 1542,
+          "height": 1425,
+          "file": "2142_Distribution_of_Blood_Flow-1542.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes the distribution of blood flow. 84 percent of blood flow is systemic circulation, of which 64 percent happens in systemic veins (18 percent in large veins, 21 percent in large venous networks such as liver, bone marrow, and integument, and 25 percent in venules and medium-sized veins); 13 percent happens in systemic arteries (2 percent in arterioles, 5 percent in muscular arteries, 4 percent in elastic arteries, and 2 percent in the aorta); and 7 percent happens in systemic capillaries. 9 percent of blood flow is pulmonary circulation, of which 4 percent happens in pulmonary veins, 2 percent happens in pulmonary capillaries, and 3 percent happens in pulmonary arteries. The remaining 7 percent of blood flow is in the heart.",
+      "caption": ""
+    },
+    "2143_Mechanism_Regulating_Arteries_and_Veins": {
+      "source": "media/2143_Mechanism_Regulating_Arteries_and_Veins.jpg",
+      "sourceSha256": "4623845048f273033c2169d3e91d1e6d8abfdb0761f23cbd1af4ba222e9f399d",
+      "module": "m46603",
+      "kind": "photo",
+      "width": 2183,
+      "height": 2650,
+      "variants": [
+        {
+          "width": 800,
+          "height": 971,
+          "file": "2143_Mechanism_Regulating_Arteries_and_Veins-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1942,
+          "file": "2143_Mechanism_Regulating_Arteries_and_Veins-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table summarizes mechanisms that regulate arteriole smooth muscle and veins. Neural controls are regulated by sympathetic stimulation and parasympathetic. Endocrine controls are regulated by epinephrine, norepinephrine, angiotensin II, ANH (peptide), and ADH. Other factors include decreasing levels of oxygen, decreasing pH, increasing levels of carbon dioxide, increasing levels of potassium ion, increasing levels of prostaglandins, increasing levels of andenosine, increasing levels of NO, increasing levels of lactic acid and other metabolites, increasing levels of endothelins, increasing levels of platelet secretions, increasing hyperhtermia, stretching of vascular wall (myogenic), and increasing levels of histamines from basophils and mast cells.",
+      "caption": ""
     },
     "214_Dissociation_of_Sodium_Chloride_in_Water-01": {
       "source": "media/214_Dissociation_of_Sodium_Chloride_in_Water-01.jpg",

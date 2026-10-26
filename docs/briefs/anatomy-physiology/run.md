@@ -324,6 +324,15 @@ reblanked an under-determined cloze to "ventricles", a word six other stems on
 the page print, and disclosed the leak in the footer — a disclosure cures a
 leak only on an unmovable SOURCE item; an author item is replaced *(chapter
 19)*.
+A Source note is read like a stem: 20.4's note under a corrected Critical
+Thinking model answer restated the key of the Review Question directly above
+it, and the checker caught it — grep a note's words against the neighbouring
+keys as for a replacement stem *(chapter 20)*. A section the size of 20.5
+(22 figures, 136 glossary terms, 13 tables) is still ONE Opus author, launched
+first with a prompt line telling it to write the page in parts under
+`$SP/<unit>-*`, verify after each part, and keep crops in files: 276k tokens
+for the first round and 300k after the checker and claim rounds, no resume
+needed *(chapter 20)*.
 Read every changed `question=` line and every replaced option in the diff
 — the gates do not read prose, and fixes have shipped garbled stems and
 stems that print a neighbour's key above or below — and give the parent's

@@ -4583,6 +4583,250 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2477,
       "rationale": "The heart bulge is a surface feature of the embryo, not of the heart: the module's body (fs-id2058606) says \"the prominent heart bulge that appears on the anterior surface of the embryo\" and its Summary says \"visible as a prominent heart bulge on the surface of the embryo\". The page's Key terms bullet reads \"prominent feature on the anterior surface of the embryo\" with a visible Source note after the Key terms block and a footer sentence. Raised by the chapter 19.5 author and evidenced by the chapter 19 prose claim pass (F21), October 25, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2107147",
+        "fs-id2107149",
+        "fs-id2107150",
+        "fs-id1944370"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2478,
+      "rationale": "The source distractor b \"The brachial artery is the distal branch of the axillary artery.\" is also true for \"Which of the following statements is true?\": the module says the axillary artery's \"majority of the vessel continues into the upper arm, or brachium, and becomes the brachial artery\" (fs-id1595346), and its Arteries Serving the Upper Limbs table calls the brachial artery the \"Continuation of the axillary artery in the brachium\", so b is true as well as the keyed c \"The radial and ulnar arteries join to form the palmar arch.\" The page prints \"The brachial artery bifurcates into the radial and ulnar arteries at the wrist.\" in its place (the same paragraph says the brachial artery bifurcates \"As the brachial artery approaches the coronoid fossa\"), with key C, the other options, and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Found by the run facts' Part C reading and ruled by the orchestrator, October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46603",
+      "sourceElementIds": [
+        "fs-id2044381",
+        "fs-id2041474",
+        "fs-id1589717"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2479,
+      "rationale": "The model answer says \"release of aldosterone would stimulate the thirst mechanism in the hypothalamus\", but the module gives the thirst response to angiotensin II (fs-id1721006: \"Angiotensin II also stimulates the thirst center in the hypothalamus\") and gives aldosterone the reabsorption of sodium (\"Aldosterone increases the reabsorption of sodium into the blood by the kidneys\"); no sentence of the module has aldosterone act on the hypothalamus. The page's model answer and its last rubric checkpoint read \"release of angiotensin II would stimulate the thirst center in the hypothalamus\", with a visible Source note after the self-check and a footer sentence; the keys gate does not flag the solution, so no disclosed-deviation entry exists. Found by the run facts' Part C reading and ruled by the orchestrator, October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/01-structure-and-function-of-blood-vessels.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46597",
+      "sourceElementIds": [
+        "fs-id1312267"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2480,
+      "rationale": "The sentence puts \"approximately 21 percent of the venous blood\" in the venous networks of the liver, bone marrow, and integument, but the table it cites (fig-ch21_01_08) gives percentages of the total blood volume (systemic 84, pulmonary 9, heart 7, summing to 100) with the systemic veins at 64 percent, of which the large venous networks are 21: 21 percent of all blood, about a third of the venous blood. The module's own fs-id2954471 says \"systemic veins contain approximately 64 percent of the blood volume\". The page reads \"approximately 21 percent of the blood volume\" with a visible Source note and a footer sentence. Raised by the 20.1 author and evidenced by the chapter 20 prose claim pass (F1), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46603",
+      "sourceElementIds": [
+        "fs-id2025984"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2488,
+      "rationale": "Angiotensin I is inactive: m46431 (§25.3), figure caption, \"Angiotensin I is not biologically active until converted to angiotensin II by angiotensin-converting enzyme (ACE) from the lungs\", and m46424 (§25.10), ACE \"converts inactive angiotensin I into active angiotensin II\"; the same paragraph goes on to convert angiotensin I into angiotensin II. The page reads \"into angiotensin I, which is not yet active\" in place of \"into its active form—angiotensin I\", with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F2), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46603",
+      "sourceElementIds": [
+        "fs-id1993882"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2489,
+      "rationale": "The sentence lists the liver among the organs that receive selective vasodilation during exercise, but the module's own Systemic Blood Flow table (tbl-ch21_03) gives \"Others (i.e., liver, spleen)\" 600 mL/min at rest and 400 at mild and at maximal exercise, falling while skeletal muscle, heart, and integument rise. The page lists the skeletal muscles, heart, lungs, and integument, with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F5), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46603",
+      "sourceElementIds": [
+        "fs-id1400320",
+        "term-00009"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2490,
+      "rationale": "The vascular shock list item says treatment uses \"medications, called inotropic or pressor agents, which restore tone to the muscles of the vessels\", but inotropic agents act on myocardial contractility, not vessel tone: m46672 (§19.4), \"Factors that increase contractility are described as positive inotropic factors, and those that decrease contractility are described as negative inotropic factors.\" The page reads \"medications called pressor agents, which restore tone to the muscles of the vessels, and inotropic agents, which increase the force of the heart's contractions\", with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F6), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46603",
+      "sourceElementIds": [
+        "fs-id3280622",
+        "fs-id2706284"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2491,
+      "rationale": "The glossary defines hypertension as \"chronic and persistent blood pressure measurements of 140/90 mm Hg or above\", but the module's own body uses the 2017 ACC/AHA thresholds (fs-id2017658: \"The new guidelines list hypertension that should be treated as 130/80 mm Hg\"), and \"140/90\" occurs nowhere else in the module. The page's Key terms bullet reads \"130/80 mm Hg or above\", with a visible Source note after the Key terms block and a footer sentence. Raised by the 20.4 author and evidenced by the chapter 20 prose claim pass (F3), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46603",
+      "sourceElementIds": [
+        "fs-id2925499",
+        "fs-id1396856"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2492,
+      "rationale": "The glossary gives septic shock \"(also, blood poisoning)\", but the module's vascular-shock list item gives \"blood poisoning\" as another name for sepsis (\"sepsis (or septicemia), also called “blood poisoning,” … known as septic shock\"), and its glossary entry for sepsis reads \"(also, septicemia)\". The page's Key terms bullet for septic shock omits the parenthesis, with a visible Source note after the Key terms block and a footer sentence, and the author-written septic-shock recall item accepts \"septic\" only, no longer \"blood poisoning\". Evidenced by the chapter 20 prose claim pass (F4), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2009844",
+        "fig-ch21_05_05"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2500,
+      "rationale": "The body says the vertebral artery \"passes through the vertebral foramen in the cervical vertebrae\" (fs-id2009844) and the caption of fig-ch21_05_05 says it enters \"the base of the skull at the vertebral foramen\" after passing \"through the transverse foramen\", but the vertebral foramen carries the spinal cord (m46352, §7.3: \"The vertebral foramen provides for passage of the spinal cord\") and the artery runs in the transverse foramina and enters the skull through the foramen magnum: the module's own table row and glossary (fs-id3089877) say \"passes through the transverse foramen through the foramen magnum to the brain\", and m46719 (§13.3) has the vertebral arteries protected \"by the transverse foramina of the cervical vertebrae\" and entering the cranium \"through the foramen magnum\". The page reads \"transverse foramina of the cervical vertebrae\" in the body and \"through the foramen magnum\" in the caption, with a visible Source note under each and a footer sentence. Evidenced by the chapter 20 prose claim pass (F7), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id1713551",
+        "tbl-ch21_06",
+        "fs-id1902397",
+        "fs-id2887352"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2502,
+      "rationale": "The body, the Aortic Arch Branches and Brain Circulation table row, and the glossary entry say the posterior communicating artery \"branches from the posterior cerebral artery\", but it runs backward from the internal carotid artery to join the posterior cerebral, which is how the arterial circle links the carotid and basilar supplies; the book is otherwise silent. Gray's Anatomy, 20th U.S. edition (1918), arteries of the brain: \"The posterior communicating artery (a. communicans posterior) runs backward from the internal carotid, and anastomoses with the posterior cerebral, a branch of the basilar.\" The page reads \"branches from the internal carotid artery and joins the posterior cerebral artery, which arises from the basilar artery\" in the body and the matching wording in the table row and the Key terms bullet, with visible Source notes under the paragraph, under the table, and after the Key terms block, and a footer sentence. Evidenced by the chapter 20 prose claim pass (F10), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "tbl-ch21_06",
+        "fs-id2481662",
+        "fs-id2580705"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2503,
+      "rationale": "The table row and the glossary entry call the anterior communicating artery \"an anastomosis of the right and left internal carotid arteries\", but the module's own body says \"The right and left anterior cerebral arteries join together to form an anastomosis called the anterior communicating artery\" (fs-id1713551). The page reads \"anastomosis of the right and left anterior cerebral arteries\" in the table row and the Key terms bullet, with a visible Source note under the table, a note after the Key terms block, and a footer sentence. Evidenced by the chapter 20 prose claim pass (F9), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2178135"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2504,
+      "rationale": "The paragraph says the ovarian artery \"is located within the suspensory ligament of the uterus\", but the ovarian vessels run in the suspensory ligament of the ovary: m46392 (§27.2), fs-id2612682, \"Extending from the mesovarium itself is the suspensory ligament that contains the ovarian blood and lymph vessels.\" The page reads \"the suspensory ligament of the ovary\", with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F13), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2375154"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2505,
+      "rationale": "The paragraph says the external iliac artery \"enters the femoral region of the lower leg\", but the femoral region is the thigh: m45990 (§1.6), \"the femoral region encompassing the thighs … the crural region encompassing the lower leg\". The page reads \"the femoral region of the thigh\", with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F14), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id1965678",
+        "tbl-ch21_11",
+        "fs-id1336779",
+        "fs-id1453426"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2506,
+      "rationale": "The body, the Veins of the Thoracic Region table row, and the glossary entry say the vertebral vein passes \"through the intervertebral foramina in the cervical vertebrae\", but the intervertebral foramina pass the spinal nerves (m46352, §7.3: \"the opening through which a spinal nerve exits from the vertebral column\") and the module's own fs-id977085 says the vertebral veins \"parallel the vertebral arteries and travel through the transverse foramina of the cervical vertebrae\". The page reads \"transverse foramina\" in all three places, with visible Source notes under the paragraph and under the table, a note after the Key terms block, and a footer sentence. Evidenced by the chapter 20 prose claim pass (F8), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2589135",
+        "tbl-ch21_11",
+        "fs-id1917592",
+        "fs-id2219942"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2507,
+      "rationale": "The body, the Veins of the Thoracic Region table row, and the glossary entry say the hemiazygos vein \"enters the brachiocephalic vein via the superior intercostal vein\", but the hemiazygos vein crosses the vertebral column and ends in the azygos vein; the book is otherwise silent. Gray's Anatomy, 20th U.S. edition (1918), the hemiazygos vein: \"around the level of the ninth thoracic vertebra, it passes rightward across the column … behind the aorta, esophagus, and thoracic duct, to end in the azygos vein.\" The page reads that the hemiazygos vein \"crosses the vertebral column to join the azygos vein\" in the body and the matching wording in the table row and the Key terms bullet, with visible Source notes under the paragraph and under the table, a note after the Key terms block, and a footer sentence. Evidenced by the chapter 20 prose claim pass (F16), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2111270"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2508,
+      "rationale": "The paragraph says the azygos vein flows into the superior vena cava \"at approximately the level of T2\", but it arches over the root of the right lung to end in the superior vena cava at about the level of the fourth thoracic vertebra (Gray's Anatomy, 20th U.S. edition, 1918; Standring, Gray's Anatomy, 40th edition, 2008: \"At the level of T4 vertebrae, it arches over the root of the right lung … to join the superior vena cava\"); the book is otherwise silent. The page reads \"approximately the level of T4\", with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F17), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id3004294",
+        "tbl-ch21_13",
+        "fs-id2951993",
+        "fs-id2018203"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2509,
+      "rationale": "The body, the Major Veins of the Brain table row, and the glossary entry for the superior sagittal sinus say the sinuses lead back to \"the inferior jugular vein\", but there is no inferior jugular vein and the module's own fs-id977085 routes the transverse sinuses into \"the sigmoid sinuses that pass through the jugular foramen and into the internal jugular vein\". The page reads \"internal jugular vein\" in all three places, with visible Source notes under the paragraph and under the table, a note after the Key terms block, and a footer sentence. Evidenced by the chapter 20 prose claim pass (F12), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id977085"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2510,
+      "rationale": "The paragraph says cerebrospinal fluid is reabsorbed \"via the chorionic villi (arachnoid granulations)\", but chorionic villi belong to the placenta (m46319, §28.2) and the structures that return cerebrospinal fluid to the blood are the arachnoid villi: m46719 (§13.3), \"The CSF is then reabsorbed into the blood at the arachnoid granulations, where the arachnoid membrane emerges into the dural sinuses.\" The page reads \"arachnoid villi (arachnoid granulations)\", with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F11), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2059503"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2511,
+      "rationale": "The paragraph says the internal iliac vein forms from smaller veins \"including the umbilical veins that run on either side of the bladder\", but there is one umbilical vein, which runs to the liver, and the paired vessels beside the bladder are the umbilical arteries: m46610 (§20.6), fs-id3282364, \"Emerging from the placenta is the umbilical vein … Two umbilical arteries carry oxygen-depleted fetal blood … Remnants of the umbilical arteries remain in the adult\", and its glossary calls the umbilical vein a \"single vessel\". The page drops the clause, with a visible Source note and a footer sentence. Evidenced by the chapter 20 prose claim pass (F15), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46646",
+      "sourceElementIds": [
+        "fs-id2698364",
+        "fs-id1546337"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2512,
+      "rationale": "The glossary says the pulmonary circuit runs \"from the heart, through the body, and back to the lungs\", but the module's own Pulmonary Circulation paragraph (fs-id2459158) has the right ventricle pump blood \"to the lungs for gas exchange. This system of vessels is referred to as the pulmonary circuit\", and m46597 (§20.1), fig-ch21_01_01 caption, says \"The pulmonary circuit moves blood from the right side of the heart to the lungs and back to the heart.\" The page's Key terms bullet reads \"from the heart, through the lungs, and back to the heart\", with a visible Source note after the Key terms block and a footer sentence. Evidenced by the chapter 20 prose claim pass (F18), October 26, 2026."
     }
   ]
 }

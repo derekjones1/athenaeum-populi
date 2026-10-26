@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 19,
-      "mappedSections": 110,
+      "localChapters": 20,
+      "mappedSections": 116,
       "units": [
         {
           "index": 1,
@@ -1241,6 +1241,60 @@
       "moduleId": "m46673",
       "sourceTitle": "Development of the Heart",
       "moduleSha256": "47881acdc6063cec7284bba31d88e1c4d0160e450dc26c6db5470dddb9e759b1"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/01-structure-and-function-of-blood-vessels.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "20.1",
+      "moduleId": "m46597",
+      "sourceTitle": "Structure and Function of Blood Vessels",
+      "moduleSha256": "e2741387fdd56f2613cf2c1eab565d60a7fd64a3819dc376bf812be63ffc63cc"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/02-blood-flow-blood-pressure-and-resistance.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "20.2",
+      "moduleId": "m46635",
+      "sourceTitle": "Blood Flow, Blood Pressure, and Resistance",
+      "moduleSha256": "19cca0ece547a52a8e5f2b22e592d37a53a2bd6d27011344c40da502779f9aca"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/03-capillary-exchange.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "20.3",
+      "moduleId": "m46586",
+      "sourceTitle": "Capillary Exchange",
+      "moduleSha256": "340c7e5f98748d8dc066bb3133f979a7b706d273ccbc180aa66c1d53419c0b12"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/04-homeostatic-regulation-of-the-vascular-system.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "20.4",
+      "moduleId": "m46603",
+      "sourceTitle": "Homeostatic Regulation of the Vascular System",
+      "moduleSha256": "42f56427c5f5925685db4596ff68029197bf54cb47d45e46eec362dc6d562c35"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/05-circulatory-pathways.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "20.5",
+      "moduleId": "m46646",
+      "sourceTitle": "Circulatory Pathways",
+      "moduleSha256": "f457ffa10ab53e023d37d661f3ee74f6719c67b815d6f01bcdcae94b5332adf1"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/20-the-cardiovascular-system-blood-vessels-and-circulation/06-development-of-blood-vessels-and-fetal-circulation.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "20.6",
+      "moduleId": "m46610",
+      "sourceTitle": "Development of Blood Vessels and Fetal Circulation",
+      "moduleSha256": "3f6d08ba3feb8dab01103c7ddc125b2f7761d2a06ed37365fe0204fa383297bb"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",
