@@ -26,7 +26,11 @@ stem also fit "ciliated epithelium" until the blank moved). The second run, Unit
 and about 45 soft across seven chapters, sweeps 4 hard, the parent read 1
 (a cross-chapter twin), second checker 4 of 40 then 1 of 9 soft, blind solve
 87/87 with 0 alsoDefensible, no errata; the sweep and cross-block lessons
-below come from it.
+below come from it. The third run, Unit 3 (October 25, 2026, 32 sections,
+96 items, "Knowledge Check 3" in the history), measured: checkers 6 hard and
+about 27 soft across six chapters, sweeps 10 hard, eight items replaced and
+two rewritten in place, second checker 6 of 24 failed (all applied by the parent), blind solve 65/65 with
+0 alsoDefensible, no errata, about 2 h 15 min wall.
 
 ## 0. What the runs measured
 
@@ -81,6 +85,22 @@ below come from it.
   nothing new: 4 hard flags on 129 items (a page sortbins bin naming the
   key's root, a page description, a Practice sortbins label plus rubric, a
   sibling section's item re-asked), all missed by the per-chapter checkers.
+- **Checkers and sweeps converge; the sweeps' margin is page-side**
+  (Unit 3, October 25, 2026). The hypovolemia leak was found four times, and
+  17.5 and 17.10 by both the ch17 checker and sweep C, so the sweeps' marginal
+  yield was the sortbins bin and objective heading/description cases (15.4
+  nicotine bin, 17.4 parafollicular heading), the two tells named above.
+- **A feature box sits in its host subsection for the spread rule** (Unit 3,
+  October 25, 2026: 15.4, 13.3). Authors check the CNXML nesting before
+  claiming "three different subsections".
+- **A descriptive key's stem must not paraphrase the name** (Unit 3,
+  October 25, 2026): "double simultaneous stimulation" was blanked in a stem
+  printing "two stimuli … the same position on both sides", which the sweep
+  reads as the key's own roots. Blank a term the sentence names instead.
+- **The second checker reads the neighbours of a replacement** (Unit 3,
+  October 25, 2026). It caught a stem-vs-rubric mismatch (17.10 asked a
+  trigger no clause graded) and an adjacent-item giveaway (17.1's selfcheck
+  printing "within seconds" above a time MC) that no first reader saw.
 
 ## 1. Before the wave
 

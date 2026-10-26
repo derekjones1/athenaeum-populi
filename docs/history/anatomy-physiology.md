@@ -1803,6 +1803,75 @@ two rounds, and a blind Fable solve; the parent read every block.
   123–209k, sweeps 156–182k, second checker 268k over two rounds, solver
   127k, close-out clerk 74k; about 3 h wall.
 
+## Knowledge Check 3 — Unit 3, chapters 12–17 (October 25, 2026)
+
+The third Anatomy and Physiology check, run from
+`docs/briefs/anatomy-physiology/kc-run.md`. `knowledge-check-12-17.md`,
+"Knowledge Check: Unit 3 — Chapters 12–17", weight 20; chapters 18 and 19
+shifted 20→21 and 21→22 (`npm run kc -- weights --write`). 32 sections
+(ch12 5, ch13 4, ch14 3, ch15 4, ch16 5, ch17 11), 96 items: 32
+multiplechoice, 31 textin, 31 selfcheck (every one with a rubric), 2
+sortbins (12.5 neurotransmitter systems, 13.3 CSF spaces). MC key slots on
+the finished page: 3-option items 3/7/5, 4-option items 4/3/4/6.
+
+Run shape: six Opus authors (one per chapter, launched together), six Opus
+checkers (each as its author reported), three Opus reverse-recall sweeps on
+the finished blocks (A ch12/13, B ch14/15/16, C ch17), one Opus second
+checker over the whole replacement set, and one blind Fable solve; the
+parent read every block and applied every one-line fix itself.
+
+- **Checker yield (hard/soft):** ch12 1/4, ch13 0/7, ch14 0/3, ch15 1/4,
+  ch16 1/4, ch17 3/5.
+- **Sweep yield (hard/soft):** A 2/14 (27 items), B 4/16 (35 items), C 4/13
+  (33 items).
+- **Second checker:** 24 read, 18 pass, 6 fail, all six applied by the
+  parent. Trial assembly before it: clean, one `kc leaks` candidate (17.9
+  "beta cell" in the 17.10 rubric, vocabulary, kept).
+- **Replacements** (8 items replaced, from different module sentences, type
+  kept, plus two in-place rewrites — the 12.5 sortbins labels and stem, and
+  the 13.2 tegmentum distractor):
+  - 12.2 BBB selfcheck replaced by astrocyte support.
+  - 12.3 signal-order MC replaced by the first synapse in spinal gray matter.
+  - 13.3 lateral-medulla-stroke selfcheck replaced by the meanings of the meninges' names.
+  - 15.4 nicotine selfcheck replaced by area postrema and emesis.
+  - 16.1 hypovolemia textin replaced by the fusiform gyrus.
+  - 16.4 double-simultaneous-stimulation textin replaced by tactile movement.
+  - 17.1 pancreatic-juice MC replaced by "up to 48 hours".
+  - 17.7 jet-lag selfcheck replaced by the light→SCN→pineal path.
+  - Edits beside them: 12.5 sortbins labels rewritten to the table cells verbatim and the stem widened to "means of elimination"; 13.2 tegmentum distractor "inferior olive" → "colliculi".
+- **Parent one-line fixes (sixteen):** accept lists (12.1 chiasma, 14.2
+  medial geniculate, 16.1 anterior fusiform, 16.5 tandem walking, 17.11 FSH
+  and LH); stems de-causalised or trimmed (13.1, 14.1, 15.4 nicotine before
+  its replacement, 17.1, 17.2, 17.5, 17.7, 17.10); rubric or model-answer
+  cuts (15.2 "This hypovolemia…" sentence, 16.1 clause 1, 17.5 clause 1,
+  17.7 clause 4); option formats (15.4 caffeine singular "receptor", 15.1
+  distractor lengths by the author, 17.1 "within").
+- **The one cross-block leak:** 15.2's orthostatic-hypotension selfcheck
+  printed "blood volume is too low … This hypovolemia" above 16.1's
+  "hypovolemia" cloze; the parent, both chapter checkers and sweep B found
+  it independently; fixed from both sides.
+- **Spread exceptions accepted and ledgered:** 15.4 (area postrema and
+  glaucoma both under Parasympathetic Effects, Broad Autonomic Effects used
+  up by the page) and 17.1 (both graded items under Neural and Endocrine
+  Signaling).
+- **Blind solve:** 65 graded items (32 multiplechoice, 31 textin, 2
+  sortbins) answered cold from the 32 masked section pages by a fresh Fable
+  solver: 65 agree, 0 disagree, 0 flagged, 0 unrecognized, 0 missing, 0
+  unanswered, 0 alsoDefensible, 0 unsure; every note read by the parent,
+  none reporting a page defect. Ledger: 96 provenance notes and 65 solve
+  records merged; `--min-exercises` 16173 → 16269, `--min-replayed` 7714 →
+  7745. Errata: no new source defect was found by any author, checker, sweep
+  or the solver; none filed. Claim findings: none.
+- **Lessons** (the last four bullets of `kc-run.md` §0):
+  - The first checkers and the sweeps converge on the same hard flags (the hypovolemia leak was found four times; 17.5 and 17.10 by both the ch17 checker and sweep C), so the sweeps' marginal yield was the page-side sortbins bin and objective heading/description cases (15.4 nicotine bin, 17.4 parafollicular heading).
+  - A replacement built from a feature box sits in the box's host subsection for the spread rule (15.4, 13.3); authors should check the CNXML nesting before claiming "three different subsections".
+  - A descriptive key's stem must not paraphrase the name: "double simultaneous stimulation" was blanked in a stem printing "two stimuli … the same position on both sides", which the sweep reads as the key's own roots; blank a term the sentence names instead.
+  - The second checker caught a stem-vs-rubric mismatch (17.10 asked a trigger no clause graded) and an adjacent-item giveaway (17.1's selfcheck printing "within seconds" above a time MC) that no first reader saw: it reads the neighbours of a replacement.
+- **Costs:** authors 180k–240k tokens each including fix rounds (ch12 196k,
+  ch13 210k, ch14 180k, ch15 190k, ch16 189k, ch17 240k), checkers
+  101k–146k, sweeps 129k–140k, second checker 236k, solver 469k; about 2 h
+  15 min wall.
+
 ## Examples moved from the playbook (October 13, 2026)
 
 Cut verbatim from `docs/subjects/anatomy-physiology.md`.

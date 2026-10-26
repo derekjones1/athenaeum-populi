@@ -2,7 +2,7 @@
 title: "The Cardiovascular System: Blood"
 description: "The Cardiovascular System: Blood — the functions, composition, and plasma of blood, the production of the formed elements, erythrocytes and hemoglobin, leukocytes and platelets, hemostasis, and ABO and Rh blood typing."
 source_chapter: "18"
-weight: 20
+weight: 21
 ---
 
 {{< mediafigure src="anatomy-physiology/1900_Blood_cells" kind="photo" alt="A grayscale scanning electron micrograph of three blood cells on a dark, finely speckled surface. At left, a large smooth disc with a deep central dimple, its rim seen slightly from above. At upper right, a slightly smaller round cell whose whole surface is covered in short, ruffled projections. Between them, in the lower center of the frame, a much smaller irregular body sends out several thin, branching, tentacle-like extensions, some reaching toward the two larger cells." eager="true" >}}

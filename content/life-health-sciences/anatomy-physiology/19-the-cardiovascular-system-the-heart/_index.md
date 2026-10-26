@@ -2,7 +2,7 @@
 title: "The Cardiovascular System: The Heart"
 description: "The Cardiovascular System: The Heart — heart anatomy and the cardiac circuits, cardiac muscle and the conduction system, the cardiac cycle, cardiac output and the regulation of heart rate, and the development of the fetal heart."
 source_chapter: "19"
-weight: 21
+weight: 22
 ---
 
 {{< mediafigure src="anatomy-physiology/2000_Human_Heart_Photo" kind="photo" alt="A digital illustration of an isolated human heart on a black background, its apex pointing down and to the viewer’s left. The glossy ventricles are peach streaked with yellow fat and threaded with fine red surface vessels. Two wrinkled, purplish-gray auricles sit near the base, one at upper left behind the great vessels and one at right beside a short lavender vessel hanging down. At upper right a lavender vessel and a larger cream-colored vessel rise and end in open cut tubes, the larger one carrying three cut branches on its arch; three more cut vessels open lower right." eager="true" >}}
