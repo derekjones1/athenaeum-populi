@@ -4827,6 +4827,160 @@
       "status": "correct-local-source-defect",
       "errataEntry": 2512,
       "rationale": "The glossary says the pulmonary circuit runs \"from the heart, through the body, and back to the lungs\", but the module's own Pulmonary Circulation paragraph (fs-id2459158) has the right ventricle pump blood \"to the lungs for gas exchange. This system of vessels is referred to as the pulmonary circuit\", and m46597 (§20.1), fig-ch21_01_01 caption, says \"The pulmonary circuit moves blood from the right side of the heart to the lungs and back to the heart.\" The page's Key terms bullet reads \"from the heart, through the lungs, and back to the heart\", with a visible Source note after the Key terms block and a footer sentence. Evidenced by the chapter 20 prose claim pass (F18), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/02-barrier-defenses-and-the-innate-immune-response.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46571",
+      "sourceElementIds": [
+        "fs-id1850767",
+        "fs-id1477759",
+        "fs-id1477760",
+        "fs-id1890710"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2528,
+      "rationale": "The keyed source option d \"microphages\" misspells \"macrophages\", the module's own phagocyte (fs-id2170684: \"A macrophage is an irregularly shaped phagocyte…\", and the glossary defines \"macrophage\"). The page prints \"macrophages\" in option D, with key D and the other options and their order unchanged; the keys gate's disclosed-deviation list records it as kind key, in one entry that also carries erratum 2530 for the same item. No Source note under the item, since a one-word spelling correction does not carry one. Found by the run facts' Part C reading and ruled by the orchestrator, October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/03-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46560",
+      "sourceElementIds": [
+        "fs-id2169042",
+        "fs-id1707473",
+        "fs-id2341162",
+        "fs-id1978216"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2529,
+      "rationale": "The source distractor c \"tolerance.\" is also correct for \"The elimination of self-reactive thymocytes is called ________.\": the module says \"The process of eliminating T cells that might attack the cells of one's own body is referred to as T cell tolerance\" (fs-id1961110), so c is true as well as the keyed b \"negative selection.\" The page prints \"clonal expansion.\" in its place (fs-id2264083: \"This proliferation of T cells is called clonal expansion\"), with key B and the other options and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it as kind options. Found by the 21.3 checker and ruled by the orchestrator, October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/02-barrier-defenses-and-the-innate-immune-response.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46571",
+      "sourceElementIds": [
+        "fs-id1850767",
+        "fs-id1477759",
+        "fs-id1477760",
+        "fs-id1890710"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2530,
+      "rationale": "The source distractor c \"complement\" is also a correct answer to \"Which of the following is not important in the antiviral innate immune response?\": no sentence of m46571 gives complement an antiviral role (its antiviral account names interferons, fs-id2760204, and natural killer cells, fs-id1708655), and m46569 (§21.5, fs-id1853731) says \"Bacteria and fungi are especially susceptible to damage by complement proteins, whereas viruses are taken care of by interferons and cytotoxic T cells\", so complement is a second option that is not important against viruses. The page prints \"antiviral proteins\" in its place (fs-id2760204: infected cells \"induce them to make antiviral proteins\"), with key D, options A and B, and their order unchanged, a visible Source note under the item, and a footer sentence; the keys gate's disclosed-deviation list records it in the one entry kind key shared with erratum 2528. Found by the 21.2 checker and ruled by the orchestrator, October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/01-anatomy-of-the-lymphatic-and-immune-systems.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46563",
+      "sourceElementIds": [
+        "fs-id1257485"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2532,
+      "rationale": "The paragraph calls M (microfold) cells of Peyer's patches \"specialized endothelial cells\", but M cells belong to the intestinal surface epithelium, not to the endothelium that lines vessels; the book's own §21.5 figure (fig-ch22_05_02) draws the M cell among the epithelial cells of the lining, and the literature agrees (Mucosal Immunology 2013, doi:10.1038/mi.2013.30; International Journal of Nanomedicine 2015, doi:10.2147/ijn.s68348: \"M-cells are specialized epithelial cells that are predominantly present in the GALT\"). The page reads \"specialized epithelial cells\" with a visible Source note and a footer sentence. Evidenced by the chapter 21 prose claim pass (F1), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/03-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46560",
+      "sourceElementIds": [
+        "fs-id1961110",
+        "fs-id1893005"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2546,
+      "rationale": "The module has positive selection act on \"double-negative thymocytes\" and has the cells become double positives only \"later\", but thymocytes arrive double negative, become CD4+ CD8+ double positives in the cortex, and undergo positive selection as double positives; the module's own figure of T cell differentiation (fig-ch22_03_04) labels the thymocyte that binds MHC in the Positive selection band \"Thymocyte (CD4+ CD8+)\", and the literature agrees (Trends in Immunology 2020, doi:10.1016/j.it.2020.09.006). The page says the thymocytes arrive in the cortex as double negatives, become double positives there, and undergo positive selection as double positives, the surviving double positives then moving to the junction between the cortex and medulla, with a visible Source note after the negative-selection paragraph and a footer sentence. Evidenced by the chapter 21 prose claim pass (F2), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/03-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46560",
+      "sourceElementIds": [
+        "tbl-ch22_05"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2547,
+      "rationale": "The T cell table gives the Th1 row the pathogen class \"Extracellular\", but Th1 cytokine signals turn on infected macrophages against intracellular bacteria: m46569 (§21.5, fs-id2594946) says \"infected macrophages receiving cytokine signals from Th1 cells turn on special metabolic pathways. Macrophage oxidative metabolism is hostile to intracellular bacteria\", and Th1 cells are associated with protection against intracellular infections (Annals of the New York Academy of Sciences 1995, doi:10.1111/j.1749-6632.1995.tb44445.x). The page prints \"Intracellular\" with a visible Source note directly under the table and a footer sentence. Evidenced by the chapter 21 prose claim pass (F3), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/04-the-adaptive-immune-response-b-lymphocytes-and-antibodies.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46558",
+      "sourceElementIds": [
+        "fs-id1392413"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2552,
+      "rationale": "The paragraph says that of IgM and IgD \"Only IgM is secreted\", but the module's own table of the five antibody classes (fig-ch22_04_02) gives the IgD monomer 1% of the total antibody in serum, and an antibody that makes up 1 percent of serum antibody is secreted. The page reads \"IgM is the main secreted form of the two, however, IgD being secreted only in small amounts (the table below lists it at 1 percent of serum antibody)\" with a visible Source note and a footer sentence. Evidenced by the chapter 21 prose claim pass (F4), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/05-the-immune-response-against-pathogens.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46569",
+      "sourceElementIds": [
+        "fs-id2227440"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2557,
+      "rationale": "The paragraph says vaccinations for diseases that enter through mucous membranes, such as influenza, \"are usually formulated to enhance IgA production\", but the usual influenza vaccine is the inactivated, injected vaccine, which induces little mucosal IgA; only the intranasal live attenuated vaccine induces a strong mucosal response (Cox, Brokstad and Ogra, Scandinavian Journal of Immunology 2004, doi:10.1111/j.0300-9475.2004.01382.x). The page reads \"can be given intranasally to enhance IgA production\" with a visible Source note and a footer sentence. Evidenced by the chapter 21 prose claim pass (F6), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/05-the-immune-response-against-pathogens.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46569",
+      "sourceElementIds": [
+        "fs-id2002997"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2558,
+      "rationale": "The paragraph calls methicillin-resistant Staphylococcus aureus \"essentially untreatable\", but it is resistant to the beta-lactams and is routinely treated, for example with vancomycin, as the Infectious Diseases Society of America's guideline sets out syndrome by syndrome (Clinical Infectious Diseases 2011, doi:10.1093/cid/ciq146). The page reads \"much harder to treat\" with a visible Source note and a footer sentence. Evidenced by the chapter 21 prose claim pass (F7), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/05-the-immune-response-against-pathogens.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46569",
+      "sourceElementIds": [
+        "fs-id2101844"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2559,
+      "rationale": "The paragraph dates the human-pig recombinant H1N1 swine flu outbreak to 2010, but the swine-origin H1N1 virus was identified in April 2009 and the pandemic began that year (Science 2009, doi:10.1126/science.1176225). The page reads \"2009\" with a visible Source note and a footer sentence. Raised by the 21.5 author and evidenced by the chapter 21 prose claim pass (F8), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/06-diseases-associated-with-depressed-or-overactive-immune-responses.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46566",
+      "sourceElementIds": [
+        "fig-ch22_06_01",
+        "fs-id2026306"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2565,
+      "rationale": "The hypersensitivity chart's Type II mechanism (the figure's text, carried in its source alt) says cells are destroyed \"by a cytotoxic T cell with an Fc receptor for the antibody (ADCC)\", and the artwork draws the effector cell labeled \"Cytotoxic T cell\", but antibody-dependent cellular cytotoxicity is carried out mainly by natural killer cells through the Fc receptor CD16, and cytotoxic T cells recognize targets through the T cell receptor and MHC class I (Frontiers in Immunology 2025, doi:10.3389/fimmu.2025.1548292). The page's Markdown transcription of the chart's text grid reads \"a natural killer (NK) cell\" with a visible Source note and a footer sentence; the figure's longdesc keeps the image's wording, marked as printed, and the artwork stays as drawn. Raised by the 21.6 author and evidenced by the chapter 21 prose claim pass (F10), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/06-diseases-associated-with-depressed-or-overactive-immune-responses.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46566",
+      "sourceElementIds": [
+        "fs-id1297203"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2566,
+      "rationale": "The sentence says the poison ivy reaction's \"harshest symptoms\" come from \"the toxicity of its oils\" and are \"not T cell mediated\", but the reaction to urushiol is itself a T cell-mediated type IV hypersensitivity, the rash, vesicles, and bullae being that reaction, and the sentence's own first clause calls it contact sensitivity (Cutis 2022, doi:10.12788/cutis.0649). The page reads \"A much more severe case of contact sensitivity is poison ivy, in which the blistering rash to the plant's oil, urushiol, is itself the T cell-mediated (type IV) reaction.\" with a visible Source note and a footer sentence. Evidenced by the chapter 21 prose claim pass (F11), October 26, 2026."
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/06-diseases-associated-with-depressed-or-overactive-immune-responses.md",
+      "bundle": "anatomy-physiology",
+      "moduleId": "m46566",
+      "sourceElementIds": [
+        "tbl-ch22_07"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 2567,
+      "rationale": "The Autoimmune Diseases table gives Hashimoto's thyroiditis the autoantigen \"Thyroid-stimulating hormone receptor (antibody blocks receptor)\", but the autoantigens that define the disease are thyroid peroxidase and thyroglobulin, and receptor-blocking antibodies occur only in a minority of patients (Autoimmunity Reviews 2014, doi:10.1016/j.autrev.2014.01.007). The page reads \"Thyroid peroxidase and thyroglobulin\" with a visible Source note directly under the table and a footer sentence. Raised by the 21.6 author and evidenced by the chapter 21 prose claim pass (F9), October 26, 2026."
     }
   ]
 }

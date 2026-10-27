@@ -13,7 +13,7 @@ all three before authoring a section (chapter-run authors: the sections
 `docs/briefs/anatomy-physiology/author.md` names).
 
 Written from the **September 22, 2026 scan** of the pinned source; chapter
-1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapter 20 on October 26, 2026.
+1 was authored September 22, 2026 as the pilot, chapter 2 the same day, chapters 3 and 4 on October 13, 2026, chapter 5 on October 14, 2026, chapter 6 on October 15, 2026, chapters 7, 8, and 9 on October 16, 2026, chapters 10 and 11 on October 18, 2026, chapter 12 on October 20, 2026, chapters 13, 14, and 15 on October 21, 2026, and chapters 16 and 17 on October 24, 2026, chapter 18 on October 25, 2026, and chapter 19 the same day, and chapters 20 and 21 on October 26, 2026.
 A rule tagged *(pilot)* or *(chapter N)* came from authoring that chapter;
 the per-chapter record is `docs/history/anatomy-physiology.md`. A
 correction that is not folded back into a rule will be made again.
@@ -58,6 +58,7 @@ the section.
 | 28.7 | m46311 | allele glossary: a locus on a specific *chromosome*, not gene |
 | 11.2 | m46498 | image replaced in place (`1105_Anterior_and_Posterior_Views_of_Muscles.jpg`); CNXML unchanged |
 | 21.3 | m46560 | image replaced in place (`2217_Differentiation_of_T_Cells_Within_the_Thymus.jpg`); CNXML unchanged |
+| 21.1 | m46563 | `fs-id2363485` "this function is taken over by the spleen and liver" — the PDF prints "spleen, lymph nodes, and liver"; the pinned CNXML wins (found October 26, 2026; not in the upstream history audit) |
 | 25.3 | m46429 | image replaced in place (`2611_Blood_Flow_in_the_Nephron.jpg`); CNXML unchanged |
 | 28.1 | m46308 | image replaced in place (`2902_IVF-02.jpg`); CNXML unchanged |
 
@@ -415,6 +416,40 @@ Lessons — baseline rules this book's vocabulary makes easy to break:
   prints beside its term; the floor is met from body sentences that do not
   print the key, and the Key terms block still lists every definition
   *(chapter 20)*.
+- **A keyed option's misspelling is corrected, and then the item is read
+  again for a SECOND true answer** (21.2's "microphages" → "macrophages",
+  kind `key`; the checker then showed "complement" is also "not important
+  in the antiviral innate response" by the book's own 21.5, kind
+  `options`): one exercise can carry two rulings, and the keys gate reads
+  ONE `DISCLOSED_DEVIATIONS` entry per exercise, so the entry names both
+  erratum numbers in its reason *(chapter 21)*.
+- **A claim correction that rewrites a sentence a cloze quotes re-builds
+  the cloze** (21.3's double-positives cloze after the positive-selection
+  correction): the stem must quote the page's corrected text, the key
+  stays, the item re-hashes, and it is re-solved or remapped *(chapter
+  21)*.
+- **Powers of ten are `$10^{14}$` math, never Unicode superscripts**
+  (life-sciences "Numeric exponents are math"): a Part B precedent found in
+  an alt is not a prose precedent, and the lint rejects `10¹⁴` in prose;
+  Part C sent an author the wrong form *(chapter 21)*.
+- **A subject–verb slip, a wrong preposition, or a transposed pair ("lay"
+  for "lie", "appears" for "appear", "opening up them") is a one-word
+  fix** — footer + ledger, no Source note — ruled once per run, not per
+  author (three authors asked on chapter 21) *(chapter 21)*.
+- **A table image's CNXML caption is read before Part C calls it empty**
+  (2228's was not), and a table image that prints no row labels gets
+  author-supplied ones disclosed in the footer ("Name / Mechanism /
+  Examples") *(chapter 21)*.
+- **A mirrored cloze pair is one item too many** (21.4's T cell-dependent
+  / T cell-independent clozes, each the other's answer with a dangling "on
+  the other hand"): keep one, build the other on a different sentence; a
+  pair whose stems each define their own blank (21.3's double-/single-
+  positives) stands, and the blind solve confirms it *(chapter 21)*.
+- **A source key the module never teaches stands on the standard account
+  only when the claim pass does not dispute it** (21.7's "immunity to
+  environmental bacteria"): the hint points at the nearest module sentence,
+  the solver may flag it "not answerable from the page", and the errata
+  file carries a Reviewed-not-errata line saying so *(chapter 21)*.
 
 The three readings and the blind solve run as
 `docs/briefs/anatomy-physiology/run.md` describes.

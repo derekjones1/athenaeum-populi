@@ -181,8 +181,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 28,
       "upstreamSections": 169,
-      "localChapters": 20,
-      "mappedSections": 116,
+      "localChapters": 21,
+      "mappedSections": 123,
       "units": [
         {
           "index": 1,
@@ -1295,6 +1295,69 @@
       "moduleId": "m46610",
       "sourceTitle": "Development of Blood Vessels and Fetal Circulation",
       "moduleSha256": "3f6d08ba3feb8dab01103c7ddc125b2f7761d2a06ed37365fe0204fa383297bb"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/01-anatomy-of-the-lymphatic-and-immune-systems.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.1",
+      "moduleId": "m46563",
+      "sourceTitle": "Anatomy of the Lymphatic and Immune Systems",
+      "moduleSha256": "680f8ba6c490d6552a3ae731982c0d318af3477e4a19d51b252202e10ea6663f"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/02-barrier-defenses-and-the-innate-immune-response.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.2",
+      "moduleId": "m46571",
+      "sourceTitle": "Barrier Defenses and the Innate Immune Response",
+      "moduleSha256": "3a7154f9f3ab3b180ccf4449895bd5ab848c08b5d9e8b6a0dc3825a16d299507"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/03-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.3",
+      "moduleId": "m46560",
+      "sourceTitle": "The Adaptive Immune Response: T lymphocytes and Their Functional Types",
+      "moduleSha256": "007942ac046b10a6b41349baeb754298727615390e851494be0028294172a2cb"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/04-the-adaptive-immune-response-b-lymphocytes-and-antibodies.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.4",
+      "moduleId": "m46558",
+      "sourceTitle": "The Adaptive Immune Response: B-lymphocytes and Antibodies",
+      "moduleSha256": "0fc1776fcac7c947c7db7f3c2e197469b0c8e017b7aca2b5a851a4e2901ccb93"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/05-the-immune-response-against-pathogens.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.5",
+      "moduleId": "m46569",
+      "sourceTitle": "The Immune Response against Pathogens",
+      "moduleSha256": "232f23f3c895b85de0563c7007fae6ccbc3626b004bcd2d6e3416e045a09478e"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/06-diseases-associated-with-depressed-or-overactive-immune-responses.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.6",
+      "moduleId": "m46566",
+      "sourceTitle": "Diseases Associated with Depressed or Overactive Immune Responses",
+      "moduleSha256": "d20805cf1ce76c1339e42e9bcb43e3c6508c05f60055a171ffd27b994d7442cf"
+    },
+    {
+      "localPath": "content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/07-transplantation-and-cancer-immunology.md",
+      "bundle": "anatomy-physiology",
+      "book": "anatomy-physiology",
+      "sourceSection": "21.7",
+      "moduleId": "m46583",
+      "sourceTitle": "Transplantation and Cancer Immunology",
+      "moduleSha256": "4366725d96e8e81acf3d681d8cfa113f414aa6de2c53020e62b74366533b9b47"
     },
     {
       "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",

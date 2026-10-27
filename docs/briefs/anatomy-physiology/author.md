@@ -240,8 +240,8 @@ playbooks. Apply them literally; these are the recurring failures:
 - **`textin`:** unpaired tag; answer 1–4 words; no `$`; the answer in
   neither question nor hint; `accept` is `|`-separated and lists only what
   the grader would otherwise miss (an irregular plural or singular, a
-  module abbreviation, a Latin/English pair the module prints, a hyphen
-  between letters, a British spelling, and a synonym the module itself
+  module abbreviation, a Latin/English pair the module prints, a British
+  spelling, and a synonym the module itself
   equates with the key — "procedural memory is motor memory" makes
   `motor` right for a cloze keyed `procedural`, *chapter 16*). The grader
   folds a regular plural BOTH ways — a plural

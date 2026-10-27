@@ -1704,6 +1704,166 @@ the keys gate baseline and the coverage floor. Authors ran 184–300k
 tokens, checkers 111–221k, the claim pass 219k, the verifier 257k, the
 solver 160k, and the Clerks 46–289k.
 
+## Chapter 21 (October 26, 2026)
+
+*The Lymphatic and Immune System*, the fourth and last chapter of Unit 4,
+*Fluids and Transport*: seven sections (m46563, m46571, m46560, m46558,
+m46569, m46566, m46583; intro m46573), run the same day as chapter 20 from
+`docs/briefs/anatomy-physiology/run.md`, with seven Opus authors launched
+together, seven Opus checkers, one Opus claim pass, one Opus alt-errata
+verifier, a fresh Fable blind solver, and Sonnet Clerks for the landing page,
+run facts, pins, errata draft, and this entry. It has 31 vendored images
+(2200–2231, no 2227): two flowcharts (2204, 2212) and one numbered-step
+drawing with a location column (2217, longdesc), two table images (2221, the
+five immunoglobulin classes, and 2228, the four hypersensitivity types),
+and two graphs (2223, 2225). Section 21.3 carries the one September 8 row,
+the replaced 2217 image, so the vendored drawing is the authority and the
+printed PDF shows the old one. The pages carry 85 author records, 70 of them
+graded and solved. Errata 2528–2576 (49 entries): 3 Part C rulings, 10 claim
+corrections, 1 internal inconsistency kept as printed, 19 alt, artwork,
+caption, and title defects, and 16 text defects. The run is committed at close-out
+(Derek: commit after every run).
+
+Part C graded two of the chapter's Interactive Link Questions and left the
+others prompt-only. 21.1's two ILQs prompt only (the
+`lymphsystem` triad is not in the module, and HIV is never mentioned in it);
+21.2's chemotaxis question is graded, from the lysosome sentence; 21.4's
+immunity question is graded with a rubric that credits either the placenta
+or breastfeeding. Three keys were ruled across the run, with their errata
+numbers reserved as each arose. 21.2's second Review Question keyed
+"microphages" for "macrophages", a one-word key fix recorded as kind `key`
+(2528) with no Source note, since author.md never wants one under a typo and
+the 2383 "myeoblasts" shape is the precedent. The checker then found that
+its distractor "complement" is also a correct "not important" answer, since
+the book's own 21.5 gives complement the bacteria and fungi and gives the
+viruses to interferons and cytotoxic T cells; option C became "antiviral
+proteins", with a Source note, and the item carries one folded
+`DISCLOSED_DEVIATIONS` entry that names both numbers, because the keys gate
+reads only the first entry per exercise (2530). 21.3's Review Question on
+the elimination of self-reactive thymocytes had "tolerance." as a second true
+option (the module calls the process T cell tolerance), so option C became
+"clonal expansion." (kind `options`, 2529), and the Source note's gloss was
+trimmed after it paraphrased the key of the next item. 21.7's natural-antibody
+question stands on the standard account, because the module never explains
+why we have them, and goes to the Reviewed-not-errata block with the lymphoma
+distractor, which is also AIDS-associated outside the book. Part C was wrong
+in three places that the authors caught: the powers of ten are `$10^{14}$`
+math and not Unicode (and the CNXML's 10^14 wins over the PDF's 10^12, not
+logged); 21.6's 2228 caption is not empty; and 21.2's antiviral account
+does not name complement at all. The tables are none of them a sortbins;
+2221 and 2228 are transcribed in the table-image form. The one-word fixes
+were "return it the blood", "are site", "do undergo", "Mycobacteria", and
+"appears to be no" from Part C, then the parent's own on reading the authors'
+reports: "lay" for "lie", "empties" for "empty", "opening them up", and two
+grammar fixes in 21.5's box ("is associated", "causes").
+
+The checkers found 18 defects and 32 concerns, the seven reports together
+(21.1: none and five concerns; 21.7: three and four; 21.5: four and four;
+21.6: four and five; 21.4: one and three; 21.3: four and five; 21.2: two and
+six); the parent counts every concern as a fix. The shapes were a stem that
+prints the root of the recall key above it (21.5's IgA, 21.6's
+co-receptor), an anemia cloze that a learner could answer with the
+erythroblastosis fetalis recall directly over it (reblanked to the placenta
+and IgG), a T cell-dependent and -independent cloze pair that mirror each
+other (the dependent one replaced with an antigen-presenting-cell cloze), a
+cortex multiple choice with two true distractors (rebuilt as a
+"single positives" cloze), three hints that eliminate options (rewritten
+location-only), missing accepts ("foetalis", "constitutively", "effector
+cells", "immunoglobulin A", the hygiene hypothesis), and two figure slips
+the parent verified on the image: 2216's longdesc counted three leaders where
+the drawing has two, and 2228's said "edge-on" for a face-on view. All were
+fixed in a round, with the parent reading every replacement stem.
+
+The claim pass raised 11 findings and 27 suspicions, found three true
+distractors, and left the landing page clean but for two splash-alt
+concerns, both right on re-reading the image (West and Central Africa are
+yellow-orange, and the virions sit on and around the cell), so the landing
+alt was rewritten at 593 characters after a first draft of 626 failed the
+600 cap. Ten findings were applied with Source notes, footer clauses, and
+decisions entries: M cells are epithelial and not endothelial (F1, 2532);
+positive selection acts on double-positive thymocytes, which the module's
+own 2217 labels, and the double-positives cloze was rebuilt on the corrected
+sentence (F2, 2546); the Th1 row's pathogen is intracellular (F3, 2547); IgM
+is the main secreted form and not the only one (F4, 2552); the influenza
+vaccine can be given intranasally to enhance IgA (F6, 2557); MRSA is "much
+harder to treat" and not "essentially untreatable" (F7, 2558); the H1N1
+outbreak was 2009 (F8, 2559); Hashimoto's autoantigens are thyroid
+peroxidase and thyroglobulin (F9, 2567); the ADCC effector is a natural
+killer cell, with the table corrected and the longdesc keeping the image's
+words (F10, 2565); and the poison-ivy rash is itself the T cell-mediated
+reaction to urushiol (F11, 2566). F5, 21.4's "dimeric IgA is the only
+antibody to leave the interior", against 21.5's "IgA (and sometimes IgM)",
+stands as printed with a footer clause (2553, no decisions entry), because
+correcting it would make the IgM option of the mucus Review Question a
+second key, the chapter 19 F7 shape. The three true distractors were the
+cortex multiple choice (already replaced), that IgM option (key stands within
+its module), and the lymphoma option.
+
+The solver (Fable, 153k tokens) answered 70 items across the seven pages,
+agreed on 67, disagreed on 1, and flagged 2; the parent adjudicated all three
+with the key standing. 21.1's tonsils question is first contact, a Part C
+reading; 21.6's recruitment-of-immune-cells question reads on the module's
+sentence that cytokines recruit phagocytes, where "the time it takes for
+this reaction" is the delay; and 21.7's environmental-bacteria key is the
+standard account, where the solver's "not answerable from the page" is fair
+and is noted for Derek. The solver's page note was 21.4's glossary "first
+antibody made blood plasma", already a verifier candidate (2556).
+
+The verifier read 56 entries: 37 confirmed, 5 rejected, and 14 not errata,
+with Part C's figure readings all confirmed. Rejections included 2209's
+"top panel, bottom panel" (panel (a) does sit above panel (b)), 2207's
+afferent and efferent placement (the standard arrangement, rotated), 2212's
+alternative-pathway arrow, 2213's alt, and 21.5's leprosy distractor. The
+confirmed items became the chapter's alt, artwork, caption, title, and
+text errata: the splash's "top panel / bottom panel" for two side-by-side
+panels (2531), 2203's reversed insets (2534), 2201's "enlarged lymph node"
+(2533), the "EM × 660" caption on a light micrograph (2535), the complement
+chart's arrow leaving C5a and its "C3 convertase splits in two" (2542,
+2543), 2214's "Antibody 1–3" labels on three T cells (2548), 2217's
+"CD4⁻ CD8⁻" thymocyte (2549), 2223's caption of two antigens over one drawn
+curve (2554), 2228's Type II heading and ADCC cell (2568), 2229's "one
+hand" over an X-ray of two (2569), 2230's "thedisease" and 2231's
+"Karposi's" (2572, 2574), and, new to every earlier agent, 2225's
+"Anti-HIV antibodies" curve that starts at the top of the axis at time zero
+(2561, which the parent confirmed on the crop). The errata drafter wrote the
+block 2528–2575 and the parent added 2576 ("edema and (swelling)", found by
+the 21.6 author), four footer clauses for the drafter's disclosure gaps
+(21.1, 21.3, 21.6, 21.7), and the 21.5 clause for 2561. The Reviewed-not-errata
+block carries the content-free source alts in one entry, the file-stem
+spellings of 2209, 2223, and 2231, the 21.1 and 21.3 source/PDF differences,
+the Aging box's 60 against the CDC's 65, and the chemotaxis link.
+
+That link, `chemotaxis`, answers 301 and then 200, but at the index of the
+Wisc-Online learning-objects collection and not at the object, so it stays
+linked with link text that names the collection; `check:external-links`
+reported no dead link, and `lymphsystem` (britannica) and `europepmc` answer
+403 to a script, a bot wall, and stay linked. One source/PDF divergence is
+new: 21.1's fs-id2363485 reads "taken over by the spleen and liver" in the
+CNXML and "spleen, lymph nodes, and liver" in the PDF; the history audit does
+not list m46563, so the parent added a row to the playbook's September 8
+table, and the CNXML wins with nothing on the page.
+
+Lessons written to the briefs and the playbook: the grader folds a hyphen
+against a space (`check-text.mjs` line 56), so a hyphenated or spaced
+respelling is never an accept member, which the life-sciences playbook said
+two ways, with its line near 611 rewritten and the line dropped from both
+copies of `author.md`; a Source note under a one-word key typo is not
+written (the 2383 shape); a stem that prints the root of the recall key
+above it is checked against the neighbours as well as the keys; and a Part C
+reading that the author finds wrong is corrected in `run-facts.md` and sent
+to the sibling authors as it arises (the powers of ten, 21.3 to 21.1).
+
+The ledger merged 85 author and 70 solve records and pruned one stranded
+entry (16,424 total, 0 low-confidence provenance), after three stale 21.1
+author entries, whose hints had been rewritten, were remapped by hand. The
+`baseline:update` run raised `min-replayed` from 7,771 to 7,806,
+`min-exercises` from 16,340 to 16,424, `min-confirmed` from 6,107 to 6,186,
+and `min-covered` from 3,601 to 3,651. The site build passed (6,127 of 20,000
+files, 576.5 MiB). Authors ran 182–252k tokens counting their fix rounds
+(21.7 the lightest, 21.1 the heaviest), checkers 144–185k, the claim pass
+224k, the verifier 222k, the solver 153k, and the Clerks 47–251k (landing 52k,
+run facts 251k, pins 47k, errata 219k).
+
 ## Chapter 20 (October 26, 2026)
 
 *The Cardiovascular System: Blood Vessels and Circulation*, the third

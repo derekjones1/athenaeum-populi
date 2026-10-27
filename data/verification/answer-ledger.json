@@ -1519,6 +1519,14 @@
     "result": "agrees"
    }
   },
+  "03154fd417bf39b0": {
+   "verdict": "ok",
+   "note": "source fs-id2293814 key C; body fs-id2459849",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "03171e9e78adbd67": {
    "verdict": "ok",
    "note": "KC 1 1.4 § body Narrow Range of Atmospheric Pressure (fs-id1618558), paragraph fs-id1648023, m45988"
@@ -8045,6 +8053,14 @@
     "result": "agrees"
    }
   },
+  "11d76597b6e1edb6": {
+   "verdict": "ok",
+   "note": "RQ3 fs-id1641348 key C macrophages; red pulp nonspecific cells fs-id2396897",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "11d91dca4bf935fd": {
    "verdict": "ok",
    "note": "Review Question eip-338/eip-79 (m66392): source solution keys option B, 'slightly more mutations than average' — consistent with the section's text that most errors are corrected by proofreading and losing only the exonuclease function leaves other repair mechanisms (mismatch repair, nucleotide excision repair) intact. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -13971,6 +13987,10 @@
     "result": "agrees"
    }
   },
+  "1e77cf1d3dda5e18": {
+   "verdict": "ok",
+   "note": "CT fs-id1900022 solution fs-id1475802 verbatim"
+  },
   "1e7c8acc422e312b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16273,6 +16293,14 @@
   "23ca271498448c02": {
    "verdict": "ok"
   },
+  "23ccf8c3910875c2": {
+   "verdict": "ok",
+   "note": "body fs-id2459849; table tbl-ch22_05 Tc row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "23d37d0c2e167134": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16965,6 +16993,14 @@
     "note": "parent Sep 23 2026: synonym of the key, already graded correct by the accept list/plural fold; key stands"
    }
   },
+  "2573b65980b519e7": {
+   "verdict": "ok",
+   "note": "body cloze, box fs-id1635434 'The hygiene theory is the idea that...'; accept hygiene hypothesis (m46566 names it)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2574ec748e49651e": {
    "verdict": "ok",
    "note": "RQ fs-id1494511 key D craniofacial bone; body fs-id2582077 'Many tissues that are not part of the nervous system also arise from the neural crest, such as craniofacial cartilage and bone'.",
@@ -17022,6 +17058,14 @@
    "note": "multiplechoice, source Review Question fs-id2316761; solution letter A = \"a hug between two people\" (list order: a=hug, b=key/lock, c=peg-toy, d=jigsaw). Corrected during authoring: the first draft mistakenly keyed the jigsaw-pieces option (list item d) before re-checking the raw CNXML solution letter against the list order; the hug option is right because both partners mutually adjust shape, unlike the rigid key/lock and peg/toy options or the pre-matched jigsaw pieces. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "258947585aa16e3a": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2760204: mannose-binding protein and C-reactive protein, made in the liver",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -17275,6 +17319,14 @@
   "25f3f8e2d87437fc": {
    "verdict": "ok",
    "note": "author-built from § Polyacrylamide Gel Electrophoresis, Check Your Understanding: \"On what basis are proteins separated in SDS-PAGE?\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "25f5d893187a103f": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1478541 PRR; accept PRR|pattern recognition (checker)",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -18370,6 +18422,14 @@
   "2893be3c87bc31f7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "2894e9dc403ce1ff": {
+   "verdict": "ok",
+   "note": "glossary germinal centers fs-id2500241; body list fs-id1432326",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -19925,6 +19985,14 @@
     "result": "agrees"
    }
   },
+  "2c296ed56ae20536": {
+   "verdict": "ok",
+   "note": "RQ fs-id1841131 key D lysosomal; fs-id2594946 M. leprae resistant to lysosomal enzymes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2c2eddaf18f03494": {
    "verdict": "ok",
    "note": "Review Question fs-id2641842 / solution fs-id2186884 (answer D, 'p21'). Matches 'Mutated p53 might lose its ability to trigger p21 production... there is no effective block on Cdk activation.' | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -21111,6 +21179,14 @@
    "verdict": "ok",
    "note": "selfcheck (Critical Thinking fs-idm61985408, solution fs-idp62016352) — model answer is the source solution verbatim (italics added for Plasmodium/Anopheles per the module's own emphasis markup). | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "2ecfc1463af09d77": {
+   "verdict": "ok",
+   "note": "glossary naive lymphocyte fs-id2111001; body fs-id1917781",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "2ed6e2dc58105b22": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -21762,6 +21838,14 @@
   "30384ad0ae198d04": {
    "verdict": "ok",
    "note": "REVISED (checker D4): Source exercise fs-id1167662720542 (Short Answer, no source key) reverted from multiplechoice to selfcheck. Answering 'How can human activity lead to eutrophication?' needs § Nitrogen Cycle paragraph 3's two sentences (fs-id1167662374743) assembled — the first sentence only reaches surface runoff, the second only starts from 'fertilizer runoff' — and the former MC's distractors (sulfate reduction, CO2/rivers) were invented rather than drawn from the module. Model answer is both sentences verbatim; all 3 rubric checkpoints are literal clauses of it. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "3044798debf626a0": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id2019048 perforin (glossary wording verbatim)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "3046ee787426b540": {
    "verdict": "ok",
@@ -23156,6 +23240,10 @@
     "result": "agrees"
    }
   },
+  "33ce50bbbdd86f7b": {
+   "verdict": "ok",
+   "note": "CT fs-id2241846 solution fs-id2450689 verbatim; checks are its clauses"
+  },
   "33cf15f856b28c8a": {
    "verdict": "ok",
    "note": "KC 1 3.5 § glossary mitotic spindle (fs-id1448648), body Mitosis and Cytokinesis (fs-id1977749), m46034",
@@ -24414,6 +24502,14 @@
   "369811d7d7c9f158": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "369812b731ab1e5d": {
+   "verdict": "ok",
+   "note": "RQ fs-id2596426 key B opsonization; fixed by fs-id2760204 last sentence",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -28297,6 +28393,14 @@
     "result": "agrees"
    }
   },
+  "3f67a03d42fd9062": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2464332 'controlled equilibrium'; referent added",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "3f6b9ee221a7a29f": {
    "verdict": "ok",
    "note": "Practice #21 (fs-id1165134282176): B=[[3,6,4],[-8,0,12]], D=[[2,-3,12],[9,3,1],[0,8,-10]]; BD computed in Node = [[60,41,2],[-16,120,-216]], row 2 = -16,120,-216. Matches CNXML solution. | carried 2026-10-08 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -28723,6 +28827,14 @@
   "40654e965529bf84": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "406a8b78d41c1290": {
+   "verdict": "ok",
+   "note": "author MC from tbl-ch22_02: Normal flora row, protective aspect 'Prevent pathogens from growing on mucosal surfaces'; distractors are other Site cells",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -29304,6 +29416,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "418e4199d79a3a16": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2270538 'specialized cells known as microfold or M cells'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -32050,6 +32170,14 @@
     "result": "agrees"
    }
   },
+  "47ec3ded965a445f": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2308451 'These co-receptors, which usually bind to chemokines, present another target for anti-HIV drug development' (referent added)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "47f13cb190fe45c9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -32193,6 +32321,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "fable-solver (blind, masked pages)",
+    "result": "agrees"
+   }
+  },
+  "4853ea5d89b5a82b": {
+   "verdict": "ok",
+   "note": "RQ fs-id2105019 key C tuberculosis; fs-id2673661",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -33146,6 +33282,14 @@
   "4a73ff89d9ebaf85": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4a7b9402bc69b2d4": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2227440 sentence 2 'The IgA (and sometimes IgM) antibodies...'; stem cut after \"pathogen\" (no neutralize root); accept + immunoglobulin A",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -34530,6 +34674,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "4d98d4a9433ec41d": {
+   "verdict": "ok",
+   "note": "RQ5 fs-id2573002 key A epinephrine; body fs-id1390362",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "4d9b67bd9b5d7bcc": {
    "verdict": "ok",
    "note": "KC 5 23.1 § General Causes and Modes of Transmission of Urogenital Infections, m58917"
@@ -35065,6 +35217,14 @@
   "4f0538498ea6cfc4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "4f090ac26b2b03bd": {
+   "verdict": "ok",
+   "note": "RQ fs-id1492110 key A; fs-id1837177 names Kaposi's sarcoma as controlled by a healthy immune system, never observed in strong immune systems; HIV link standard account",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -35753,6 +35913,14 @@
   "5070cdec2143309d": {
    "verdict": "ok",
    "note": "KC 3 17.2 § Peptide and Protein Hormones, m46667",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "5076355db1ca340a": {
+   "verdict": "ok",
+   "note": "RQ fs-id2584330 key D; fs-id2229766",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -36498,6 +36666,14 @@
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "52733edff586d74c": {
+   "verdict": "ok",
+   "note": "summary cloze, fs-id1853731 sentence 1; key printed in body (box fs-id1350098 'immunological memory')",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "52758259cbcc2cb4": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-795; model answer is the source solution verbatim (preamble kept), checkpoints are its three clauses. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -37069,6 +37245,14 @@
   "53c0c5158f2e4471": {
    "verdict": "ok",
    "note": "body cloze from § Indirect Fluorescent Antibody Techniques: \"For example, an IFA test for the diagnosis of syphilis uses T. pallidum cells isolated from a lab animal (the bacteria cannot be grown on l…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "53c3150f5cd2c713": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2158747 reblanked on 'IgG antibodies' (checker: 'anemia' blank under-determined); accept immunoglobulin G; IgG printed nowhere else in stems/hints/alt/longdesc; referent added",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -38823,6 +39007,14 @@
     "result": "agrees"
    }
   },
+  "57bed07e11c96b57": {
+   "verdict": "ok",
+   "note": "RQ fs-id2464756 key B mutation; fs-id1932396",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "57bf88ae40fa0bd8": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idm101801968, model answer transcribed verbatim from the solution. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -39255,6 +39447,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "58af5e221c055026": {
+   "verdict": "ok",
+   "note": "CT fs-id1959790, model answer = source solution fs-id1641348 verbatim; each clause in fs-id1392413/fs-id2522080"
   },
   "58b434ce2f2a42bc": {
    "verdict": "ok",
@@ -41056,6 +41252,10 @@
     "result": "agrees"
    }
   },
+  "5c966b5237b61cf6": {
+   "verdict": "ok",
+   "note": "CT2 fs-id1629815 solution fs-id2346449 verbatim"
+  },
   "5ca1e98cbfcee700": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs); re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items) | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -41469,6 +41669,14 @@
   "5da65f57f80070ae": {
    "verdict": "ok",
    "note": "body selfcheck (Antifungal CYU): model answer and both rubric clauses reproduce the module's own sentence (para. 1) verbatim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "5da8ddddd1c34c3f": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2158490 seroconversion sentence",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "5dac8d21750542e7": {
    "verdict": "ok",
@@ -42538,6 +42746,14 @@
   "60568dba048e2dda": {
    "verdict": "ok",
    "note": "source exercise fs-id1167583718663 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "606fcd6ba3b0ffe4": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2025868: ciliated epithelial cells move mucus upwards",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -45390,6 +45606,14 @@
    "note": "source exercise fs-id1167663611699 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "680ead2c796c0762": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2760204 constitutively; accept always|continuously|constantly",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -48500,6 +48724,14 @@
     "result": "agrees"
    }
   },
+  "6fee2c8ce2e285e5": {
+   "verdict": "ok",
+   "note": "glossary fs-id1483881; body fs-id2237988",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "6ff059b94a44f23f": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48667,6 +48899,14 @@
   "705b5a65c0beaa9a": {
    "verdict": "ok"
   },
+  "705c2f19bf25cd1d": {
+   "verdict": "ok",
+   "note": "RQ fs-id1927907 key A NK cells; fs-id2300941 'NK and cytotoxic T cells have complementary activities'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "70641f8ece57de4a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -48758,6 +48998,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "7088e119e0f15a4b": {
+   "verdict": "ok",
+   "note": "CT fs-id1883956, solution fs-id2450246 verbatim; checks are its clauses"
   },
   "709571c12b1d98ec": {
    "verdict": "ok",
@@ -49363,6 +49607,14 @@
   "71bf1e9461cd5f4b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "71cea7114c2b2cbd": {
+   "verdict": "ok",
+   "note": "RQ fs-id1850767 key D macrophages (microphages corrected, 2528); option C complement replaced by module \"antiviral proteins\" (fs-id2760204; 2530) since 21.5 gives viruses to interferons/Tc and m46571 never ties complement to viruses; single correct option now",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -51236,6 +51488,15 @@
     "result": "agrees"
    }
   },
+  "760981d3fff1a74f": {
+   "verdict": "ok",
+   "note": "RQ fs-id1400112 key B as printed; module silent beyond summary 'natural antibodies against mismatched blood'; key stands on the standard account (Part C)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "key stands: immunity to environmental bacteria — the module is silent on the origin of natural anti-A/anti-B antibodies; the source key is the standard account (cross-reactive carbohydrate antigens of gut and environmental bacteria), 'We don't know why' is false in the field; the solver is right that the page does not teach it, which the hint acknowledges by pointing at the summary (parent, Part C ruling, October 26, 2026)"
+   }
+  },
   "760b78a2410468a4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51924,6 +52185,10 @@
   "778d9f6ac98cbcca": {
    "verdict": "ok",
    "note": "Critical Thinking fs-id2338447, model answer is the source solution verbatim (\"Chemical, cellular, tissue, organ, organ system, organism.\"); rubric decomposes it into three word-pairs, no new claim. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged"
+  },
+  "779720d24c92fccd": {
+   "verdict": "ok",
+   "note": "model answer is the source solution fs-id2269348 verbatim; checks are its clauses"
   },
   "7799991c095659f6": {
    "verdict": "ok",
@@ -54332,6 +54597,14 @@
     "result": "agrees"
    }
   },
+  "7ca568ed6f112979": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1961002 last sentence 'Thus, the B cell receives signals ... and acts as a professional antigen-presenting cell in the process'; APC accepted as standard abbreviation",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "7ca9b8190cf4e46a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -54439,6 +54712,14 @@
   "7cdc036bf52557e8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "7ce3564e4bc90690": {
+   "verdict": "ok",
+   "note": "rebuilt on the page’s claim-corrected sentence (claim pass F2): In the cortex, these thymocytes then become double positives that express both CD4 and CD8 markers; figure 2217 labels the positively selected thymocyte CD4+ CD8+; accepts grader-checked",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -55351,6 +55632,14 @@
    "note": "summary-sourced cloze textin from the module's own Section Summary sentence ('growing at an exponential rate'). | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7f22b68458532983": {
+   "verdict": "ok",
+   "note": "RQ3 fs-id2326143 key D; body fs-id2310748 histamine release",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -57842,6 +58131,14 @@
     "result": "agrees"
    }
   },
+  "84cde546f0a3573b": {
+   "verdict": "ok",
+   "note": "body cloze fs-id2025868: saliva rich in lysozyme",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "84d0aec02ef20c59": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
@@ -59592,6 +59889,14 @@
    "verdict": "ok",
    "note": "KC 5 22.2 § Health Care-Associated Pneumonia, m58913"
   },
+  "89210ecc209cc11d": {
+   "verdict": "ok",
+   "note": "glossary recall SCID, definition fs-id2147566; body fs-id1521150",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "892237178d475512": {
    "verdict": "ok",
    "note": "m66438 CT solution fs-id1384512 verbatim ('organic, meaning they contain carbon and are bound to hydrogen'); both CHECKS clauses restate it with no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -59772,6 +60077,15 @@
    "solved": {
     "by": "fable-blind-solver",
     "result": "agrees"
+   }
+  },
+  "8973c86c763240f8": {
+   "verdict": "ok",
+   "note": "RQ2 fs-id2302229 key C; body fs-id2065423 cytokines recruit macrophages, time accounts for delay",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "key stands: recruitment of immune cells — m46566 fs-id? line 49: cytokines 'recruit macrophages and other phagocytes to the site' and 'The time it takes for this reaction to occur accounts for the 24- to 72-hour delay'; the delay is the recruitment, the cytokines are its trigger (parent, October 26, 2026)"
    }
   },
   "8978596e4992eed2": {
@@ -62391,6 +62705,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-id2926746, source solution kept verbatim as the model answer, decomposed into rubric checkpoints of the solution's own words. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "8fd9fcebb6f7fafc": {
+   "verdict": "ok",
+   "note": "RQ fs-id1910429 key B IgA; fs-id1866202 'exocrine gland secretions of the mucous membranes, including mucus'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "8fdc6561f9b1642d": {
    "verdict": "ok",
    "note": "m66518 Critical Thinking fs-idm56506992; model answer is the source solution, lightly punctuated into one clean sentence, no new claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
@@ -63148,6 +63470,14 @@
    "verdict": "ok",
    "note": "fs-id2029871: source solution transcribed verbatim as model answer."
   },
+  "91c43219420db2a7": {
+   "verdict": "ok",
+   "note": "RQ fs-id1753105 key B complement; summary 'Bacteria and fungi are especially susceptible to damage by complement proteins'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "91c4a3128bb1fff0": {
    "verdict": "ok",
    "note": "Glossary recall fs-id1231453; body fs-id1909043 bolds Aerobic respiration; accept cellular respiration (fig-ch10_03_05 panel c label).",
@@ -63448,6 +63778,14 @@
    "note": "source exercise eip-894 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "925fa0e1918628eb": {
+   "verdict": "ok",
+   "note": "body fs-id1431507 first sentence prints the key",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -63852,6 +64190,14 @@
   "935d3822b1d6f88d": {
    "verdict": "ok"
   },
+  "935eebb3d24fdf30": {
+   "verdict": "ok",
+   "note": "RQ fs-id2044987 key C increased blood flow; hint location only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "936a51c21fab53a6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -64080,6 +64426,14 @@
   "93e4fe76efc694a5": {
    "verdict": "ok",
    "note": "fs-id1752391 key D broken bone pierces the skin; verbatim; table Open (or compound) row",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "93e7488f63157d54": {
+   "verdict": "ok",
+   "note": "RQ fs-id2110583 key B polygeny; fs-id2237570 + glossary 'multiple MHC genes'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -69881,6 +70235,14 @@
     "result": "agrees"
    }
   },
+  "a1b9194a5ad19caa": {
+   "verdict": "ok",
+   "note": "RQ4 fs-id2021024 key C rheumatic fever; body fs-id2256343",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "a1ba9632f1dc08aa": {
    "verdict": "ok",
    "note": "Review Question fs-id1986270; source solution keys option A, freshwater organisms take in too much water. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -71440,6 +71802,14 @@
   "a4da30bee364b984": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "a4da6fb2b788bbed": {
+   "verdict": "ok",
+   "note": "RQ1 fs-id1435493 key B macrophage; fs-id1976682 macrophages phagocytic",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -75599,6 +75969,14 @@
    "verdict": "ok",
    "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3 | carried 2026-10-06 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
   },
+  "aea4126c7ff08a76": {
+   "verdict": "ok",
+   "note": "source fs-id2443791 key D; body fs-id2264083",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "aea44134cd4957dc": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -77101,6 +77479,10 @@
     "result": "agrees"
    }
   },
+  "b2583c86700abb61": {
+   "verdict": "ok",
+   "note": "CT fs-id2019845, model answer = source solution fs-id1477373 verbatim; consistent with fs-id1907767/fs-id2919449"
+  },
   "b25b3f97fa19b48c": {
    "verdict": "ok",
    "note": "source exercise fs-id1167660303770 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -78389,6 +78771,14 @@
    "verdict": "ok",
    "note": "Microbiology re-review Sep 24 2026 (ch19–26, KC 01-06, 07-12): parent re-read of the fixer-edited model answer and rubric against the module; every clause is a module sentence or a disclosed cross-section sentence"
   },
+  "b53c01d24e71a682": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1648692 cascade; accept enzymatic cascade|complement cascade",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b53ec3a32470f5cf": {
    "verdict": "ok",
    "note": "source exercise fs-idp67913520 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -78943,6 +79333,14 @@
     "result": "agrees"
    }
   },
+  "b66ea6012e600ee8": {
+   "verdict": "ok",
+   "note": "source fs-id2337856 key B; body fs-id2200448",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "b67113815fab4582": {
    "verdict": "ok",
    "note": "source exercise fs-idp91702432 (options-differ) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -79226,6 +79624,14 @@
   "b72bbc69f0a7e289": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "b72dc56250bc3eb2": {
+   "verdict": "ok",
+   "note": "glossary fs-id2146202; body fs-id2450960",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "b7391cca92ca2b37": {
    "verdict": "ok",
@@ -80124,6 +80530,10 @@
    "verdict": "ok",
    "note": "Source Critical Thinking fs-id1167663915545 (penicillin G, fungroup_img), no upstream key; stays a selfcheck per § What is different §2. Model answer (a) is figure-keyed: the drawing shows two amide linkages (the side-chain amide and the ring amide) and one carboxylic acid group. Model answer (b) uses only § Biologically Significant Functional Groups' own carbonyl sentence ('a carbonyl group ... is present in several classes of organic compounds as part of larger functional groups such as ... carboxylic acids, and amides') plus the functional-group table's own carboxylic-acid formula (carbonyl + hydroxyl) and explicitly stops there because the module never decomposes the amide bond's nitrogen-bearing side; no claim beyond the module is made. | carried Sep 22 2026 (fix wave): re-hashed by a hint/figure-context/reorder/plural-fold accept edit; stem, options, key, and graded forms unchanged | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "b8f63e9a4fc5949b": {
+   "verdict": "ok",
+   "note": "CT1 fs-id2602425 solution fs-id2525095 verbatim"
+  },
   "b8f8939b2f0df5e9": {
    "verdict": "ok",
    "note": "Review Question fs-id1243838; source solution keys option C, 'concentration gradient'. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -80736,6 +81146,14 @@
     "result": "agrees"
    }
   },
+  "ba9eae76f9db2144": {
+   "verdict": "ok",
+   "note": "RQ2 fs-id1932906 key A thoracic duct; fs-id2430517/fs-id1469460: rest of body drains to thoracic duct (hash remapped by the parent after the hint rewrite)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ba9f553181cb8cdc": {
    "verdict": "ok"
   },
@@ -81118,6 +81536,14 @@
   "bb5f9e3aaf4c5d61": {
    "verdict": "ok",
    "note": "glossary recall: ostium (fs-idm44448224) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "bb64540af8ced45b": {
+   "verdict": "ok",
+   "note": "RQ fs-id1491920 key D clonal anergy; fs-id1882242 'not physically deleted, but become unable to function'",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -82407,6 +82833,14 @@
    "verdict": "ok",
    "note": "parent re-read: model answer is source solution eip-951's advantage/disadvantage lists set as sentences; six checkpoints cover its eight bullets | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
   },
+  "be40545c79f8fc98": {
+   "verdict": "ok",
+   "note": "source fs-id2169042 key B; option C tolerance. replaced by module clonal expansion. (fs-id2264083), options deviation erratum 2529; clonal expansion is false for elimination of self-reactive thymocytes",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "be41a2b9e44fa2d6": {
    "verdict": "ok",
    "note": "Computed Math.log10(8500)=3.929419... -> 3.929 to the nearest thousandth; matches CNXML Try It 7 (8,500x case). | carried 2026-10-05 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -82932,6 +83366,14 @@
    "note": "source exercise fs-id1168327875814 (confirmed) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
    "solved": {
     "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bf999d89029e88ec": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1489561 'In peripheral tolerance, functional, mature B cells leave the bone marrow...'",
+   "solved": {
+    "by": "orchestrator-solver",
     "result": "agrees"
    }
   },
@@ -84063,6 +84505,14 @@
     "result": "agrees"
    }
   },
+  "c25d9c322f90c3c4": {
+   "verdict": "ok",
+   "note": "RQ4 fs-id1865619 key D NK; fs-id1698895 first lines of defense against viruses (hash remapped by the parent after the hint rewrite)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "c25e501055a0592b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -84264,6 +84714,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "c2c3e4c762049c51": {
+   "verdict": "ok",
+   "note": "ILQ fs-id1890725 graded selfcheck; model = source solution; fixed by fs-id2443755 (phagosome fuses with a lysosome and its digestive enzymes)"
   },
   "c2c6d896560ae898": {
    "verdict": "ok",
@@ -84656,6 +85110,10 @@
     "result": "agrees"
    }
   },
+  "c3be1989e3b7478d": {
+   "verdict": "ok",
+   "note": "model answer is the source solution fs-id2068457 verbatim; checks are its clauses"
+  },
   "c3be516b8c226837": {
    "verdict": "ok",
    "note": "author-built from § Evidence for Global Climate Change: \"With the beginning of the Industrial Era, atmospheric carbon dioxide began to rise ( ).\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -84960,6 +85418,14 @@
   "c487258fc5264833": {
    "verdict": "ok",
    "note": "m66461 CT exercise fs-id1876170, solution fs-id2197107: model answer matches source verbatim (cooking loses heat to air increasing entropy; driving is inefficient, engine/tire heat, additional entropy). All 4 CHECKS clauses restate the model answer, no added claim. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
+  },
+  "c4882ace8b90d4e8": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1882924 neutralization; body bolds it in fs-id2227440",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "c48866e77a5dc5fb": {
    "verdict": "ok"
@@ -87544,6 +88010,14 @@
     "result": "agrees"
    }
   },
+  "ca691f84311bda68": {
+   "verdict": "ok",
+   "note": "cloze of fs-id2103002 'Some diseases are associated with the MHC genes that an individual expresses' (referent added)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ca6be743280d13f8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -88292,6 +88766,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "cc3c7eb656f39c13": {
+   "verdict": "ok",
+   "note": "CT fs-id1635877 model = source solution verbatim; checks are its clauses"
   },
   "cc3fdfb36fe87246": {
    "verdict": "ok"
@@ -89717,6 +90195,14 @@
    "verdict": "ok",
    "note": "KC 2 7.7 § Glycolysis, m66471 — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | parent re-read 2026-09-24 (Biology re-review ch46–47 + KC 1–17): model answer from the module's own sentences, rubric clauses decompose it with no new claim, no nearby key printed"
   },
+  "cfac37decc00e891": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1374580 chemokine; hint location only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "cfb1a97476d6eb36": {
    "verdict": "ok",
    "note": "21.1 virus first textin: question reworded to avoid repeating 'first'; answer per section prose | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
@@ -90053,6 +90539,10 @@
     "by": "fable-solver-2",
     "result": "agrees"
    }
+  },
+  "d07005ba266d276c": {
+   "verdict": "ok",
+   "note": "CT fs-id1838346, solution fs-id1721022 verbatim; alveolar macrophages and bystander lung damage are the solution's, not the module's (not graded)"
   },
   "d071ddc9f06bc986": {
    "verdict": "ok",
@@ -90947,6 +91437,14 @@
     "result": "agrees"
    }
   },
+  "d2d35c90ee01389b": {
+   "verdict": "ok",
+   "note": "RQ fs-id2170697 key D IgD; fs-id1392413 'no other nonreceptor function for IgD has been discovered'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "d2dc0553926817b3": {
    "verdict": "ok"
   },
@@ -91750,6 +92248,14 @@
   "d499d03d31258679": {
    "verdict": "ok",
    "note": "selfcheck fs-idm112725344 — model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claim. | carried 2026-09-24 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct"
+  },
+  "d49ae3d38777925b": {
+   "verdict": "ok",
+   "note": "glossary recall fs-id1917098 erythroblastosis fetalis; body term-00002; accept 'hemolytic disease of the newborn' from fs-id2158747 apposition; accept also erythroblastosis foetalis (checker fix)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
   },
   "d49decc8487fe8f0": {
    "verdict": "ok",
@@ -94810,6 +95316,14 @@
     "result": "agrees"
    }
   },
+  "dbdf913f2566511c": {
+   "verdict": "ok",
+   "note": "RQ fs-id1401100 key B; module names cyclosporine A as immunosuppressive and rejection as a cytotoxic T cell response; mechanism itself standard account",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "dbe051c5113fbf75": {
    "verdict": "ok",
    "note": "re-read against CNXML m46023 and current page",
@@ -95523,6 +96037,14 @@
   "dddc1e6982abfc51": {
    "verdict": "ok",
    "note": "glossary recall: operator (fs-idm154447904) — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "dddcd0701aa5c331": {
+   "verdict": "ok",
+   "note": "RQ fs-id2919145 key D IgG; fs-id1278918 'the one that crosses the placenta'; table Crosses placenta yes only IgG",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -98386,6 +98908,14 @@
     "result": "agrees"
    }
   },
+  "e44f8e940522ffb1": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1882242 'Central tolerance is the destruction or inactivation...'; key printed in body",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e452059e2baebde7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99711,6 +100241,14 @@
     "note": "key stands: summary says 'help train our immune systems'; the singular was already in accept"
    }
   },
+  "e77995c48ed76f8e": {
+   "verdict": "ok",
+   "note": "RQ fs-id1472037 key A primary response; fs-id2522080 'As the primary response proceeds...class switching'; fs-id1278918 'class switching occurs during primary responses'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e786faaec90a202e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99747,6 +100285,14 @@
     "result": "agrees"
    }
   },
+  "e79c5bb02532ce1f": {
+   "verdict": "ok",
+   "note": "RQ fs-id1386160 key C cold; four characteristics heat, redness, pain, swelling (fs-id1405901)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "e79d217722171eb6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -99778,6 +100324,14 @@
   "e7ac648ef3910fc2": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "e7acce8011508b89": {
+   "verdict": "ok",
+   "note": "body fs-id1918079 first sentence; replaces the cortex MC",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -101352,6 +101906,14 @@
    "verdict": "ok",
    "note": "Matches m66449 exercise fs-idm71000709, solution fs-idm40512364 (bilayer vs. monolayer). Reworded (would be→were, parenthetical→em dash) with no added claim; all five CHECKS clauses restate the solution's amphiphilic/hydrophobic-tail/droplet reasoning. | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct"
   },
+  "ebc824b58bb34900": {
+   "verdict": "ok",
+   "note": "glossary chyle fs-id2017213; body fs-id1605385 prints chyle",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ebc99060aa46df24": {
    "verdict": "ok",
    "note": "author-built from § Water’s Cohesive and Adhesive Properties: \"This pull results from the tendency of water molecules evaporating on the plant's surface to stay connected to water molecules below them,…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs)",
@@ -102437,6 +102999,14 @@
   "ee11e06c01284d05": {
    "verdict": "ok"
   },
+  "ee1b337bf5069849": {
+   "verdict": "ok",
+   "note": "body cloze fs-id1493116 'A T cell-independent antigen usually is in the form of repeated carbohydrate moieties...'",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "ee23026b0293dece": {
    "verdict": "ok",
    "note": "cloze from m46062 fs-id1539274 (opening paragraph): \"These structures embryologically originate from the epidermis and can extend down through the dermis into the hypodermis.\"; accept subcutaneous layer|superficial fascia = 5.1 m46060 fs-id1448861 synonyms; re-read against CNXML",
@@ -103096,6 +103666,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "efe8f8da1294411b": {
+   "verdict": "ok",
+   "note": "ILQ eip-id1472433; source solution 'Breastfeeding...' + module fs-id2023055 placental IgG sentence; table Natural/Passive cell fixes it (run facts Part C)"
   },
   "eff6e91654cf9f28": {
    "verdict": "ok",
@@ -104333,6 +104907,14 @@
     "result": "agrees"
    }
   },
+  "f3027759c301e32f": {
+   "verdict": "ok",
+   "note": "source fs-id1950416 key B; hint now location only",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f3114e9b98847973": {
    "verdict": "ok",
    "note": "carried 2026-09-27 (ledger-carry): re-hashed by a hint/accept edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct",
@@ -104633,6 +105215,10 @@
     "by": "orchestrator-solver",
     "result": "agrees"
    }
+  },
+  "f38d16830b193797": {
+   "verdict": "ok",
+   "note": "CT fs-id1363654 model = source solution verbatim; checks are its clauses"
   },
   "f38d5db8e29fb84d": {
    "verdict": "ok",
@@ -105426,6 +106012,14 @@
   "f530614ba4fa2afd": {
    "verdict": "ok"
   },
+  "f53211c38598946f": {
+   "verdict": "ok",
+   "note": "RQ1 fs-id2158272 key C type III; body fs-id2754852",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
   "f534ccfb60e6cd43": {
    "verdict": "ok",
    "note": "Using the same table: f(3)=8, then g(8)=4, so g(f(3))=4, matching the declared answer. | carried 2026-10-04 (ledger-carry): re-hashed by a hint/accept/answerForm edit; stem, options, key, and dependency unchanged, every previously graded form still graded correct, the key correct under its form"
@@ -106185,6 +106779,15 @@
    "solved": {
     "by": "fable-solver-A",
     "result": "agrees"
+   }
+  },
+  "f71510a74fb28a55": {
+   "verdict": "ok",
+   "note": "RQ5 fs-id1909275 key A tonsils; stands per Part C (pharynx first) (hash remapped by the parent after the hint rewrite)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "adjudicated",
+    "note": "key stands: tonsils — the stem asks which nodule sees food antigens FIRST; the module says the tonsillar crypts 'accumulate all sorts of materials taken into the body through eating and breathing' and the tonsils sit in the pharynx, before the small intestine; Peyer's patches are 'especially important for immune responses against ingested substances' but are not first (parent, Part C ruling, October 26, 2026)"
    }
   },
   "f7175fa479cf85c5": {
@@ -107706,6 +108309,14 @@
   "fa97edf3f64229da": {
    "verdict": "ok",
    "note": "key-term recall: β₂ microglobulin; printed in § Major Histocompatibility Complex Molecules: \"MHC I molecules are composed of a longer α protein chain coupled with a smaller β 2 microglobulin protein, and only the α chain spans the c…\" — provenance backfilled Sep 26 2026 (ledger-provenance.mjs) | carried Sep 23 2026 (sweep close-out): re-hashed by a hint/reorder/accept edit; stem, options, and key unchanged, every previously graded form still graded correct",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "fa9fce760a97ab3e": {
+   "verdict": "ok",
+   "note": "body fs-id2203025 sentence prints the key; accept effector cells grader-checked",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"
@@ -110145,6 +110756,14 @@
   "ffae8be64edd8b2b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator-solver",
+    "result": "agrees"
+   }
+  },
+  "ffaf2160a3654472": {
+   "verdict": "ok",
+   "note": "glossary fs-id811388 meaning; body fs-id2203025",
    "solved": {
     "by": "orchestrator-solver",
     "result": "agrees"

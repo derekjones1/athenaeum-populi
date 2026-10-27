@@ -333,6 +333,14 @@ first with a prompt line telling it to write the page in parts under
 `$SP/<unit>-*`, verify after each part, and keep crops in files: 276k tokens
 for the first round and 300k after the checker and claim rounds, no resume
 needed *(chapter 20)*.
+A checker's "concern" that a hint rules out distractors is a defect to
+apply, not a note (21.1's three hints named the table or the reasoning
+step); and a Part B hedge ("the lint's digit-superscript rule applies")
+is checked against the playbook sentence it names before Part C repeats
+it — chapter 21's Part C sent Unicode `10¹⁴` where the rule says math
+*(chapter 21)*. When a wave's authors each ask the same grammar-slip
+question, rule it once in PARENT-NOTES and send the ruling to every
+author still open *(chapter 21)*.
 Read every changed `question=` line and every replaced option in the diff
 — the gates do not read prose, and fixes have shipped garbled stems and
 stems that print a neighbour's key above or below — and give the parent's

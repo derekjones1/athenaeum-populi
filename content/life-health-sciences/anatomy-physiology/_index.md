@@ -120,13 +120,18 @@ reproduction, development, and inheritance.
   capillary exchange, homeostatic regulation of the vascular system,
   circulatory pathways, and the development of blood vessels and fetal
   circulation.
+- **The Lymphatic and Immune System** — anatomy of the lymphatic and
+  immune systems, barrier defenses and the innate immune response, the
+  adaptive immune response: T lymphocytes and their functional types, the
+  adaptive immune response: B-lymphocytes and antibodies, the immune
+  response against pathogens, diseases associated with depressed or
+  overactive immune responses, and transplantation and cancer immunology.
 
 ## Planned contents
 
 The remaining chapters of Anatomy and Physiology 2e's six units will
 appear in this order:
 
-- **Unit 4: Fluids and Transport** — The Lymphatic and Immune System.
 - **Unit 5: Energy, Maintenance, and Environmental Exchange** — The
   Respiratory System; The Digestive System; Metabolism and Nutrition; The
   Urinary System; Fluid, Electrolyte, and Acid-Base Balance.

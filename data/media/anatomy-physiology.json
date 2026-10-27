@@ -8061,6 +8061,236 @@
       "caption": "Three important polysaccharides are starches, glycogen, and fiber.",
       "transparent": false
     },
+    "2200_The_Worldwide_AIDS_Epidemic": {
+      "source": "media/2200_The_Worldwide_AIDS_Epidemic.jpg",
+      "sourceSha256": "cf23fca1dcbd77522b0263de861bd6f56a4fbfa9b617bf688e63417518f65913",
+      "module": "m46573",
+      "kind": "photo",
+      "width": 1144,
+      "height": 339,
+      "variants": [
+        {
+          "width": 800,
+          "height": 237,
+          "file": "2200_The_Worldwide_AIDS_Epidemic-800.webp"
+        },
+        {
+          "width": 1144,
+          "height": 339,
+          "file": "2200_The_Worldwide_AIDS_Epidemic-1144.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel shows a color-coded world map. The bottom panel shows many viruses on a cell.",
+      "caption": "(a) As of 2008, more than 15 percent of adults were infected with HIV in certain African countries. This grim picture had changed little by 2012. (b) In this scanning electron micrograph, HIV virions (green particles) are budding off the surface of a macrophage (pink structure). (credit b: C. Goldsmith)"
+    },
+    "2201_Anatomy_of_the_Lymphatic_System": {
+      "source": "media/2201_Anatomy_of_the_Lymphatic_System.jpg",
+      "sourceSha256": "dee5f424bdd4faabf935171c897ea949c7fe7958b98b30e82cd4ee433ab4d967",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1678,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1118,
+          "file": "2201_Anatomy_of_the_Lymphatic_System-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1678,
+          "file": "2201_Anatomy_of_the_Lymphatic_System-1200.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel shows a female human body, and the entire lymphatic system is shown. The right panel shows magnified images of the thymus and the lymph node. All the major parts in the lymphatic system are labeled.",
+      "caption": "Lymphatic vessels in the arms and legs convey lymph to the larger lymphatic vessels in the torso."
+    },
+    "2202_Lymphatic_Capillaries": {
+      "source": "media/2202_Lymphatic_Capillaries.jpg",
+      "sourceSha256": "69e1c3af0fecc1a37c7392d5912f33e94ac43d51138d73f0d99dc4ef6183e32f",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 1008,
+      "height": 583,
+      "variants": [
+        {
+          "width": 800,
+          "height": 462,
+          "file": "2202_Lymphatic_Capillaries-800.webp"
+        },
+        {
+          "width": 1008,
+          "height": 583,
+          "file": "2202_Lymphatic_Capillaries-1008.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This image shows the lymph capillaries in the tissue spaces, and a magnified image shows the interstitial fluid and the lymph vessels. The major parts are labeled.",
+      "caption": "Lymphatic capillaries are interlaced with the arterioles and venules of the cardiovascular system. Collagen fibers anchor a lymphatic capillary in the tissue (inset). Interstitial fluid slips through spaces between the overlapping endothelial cells that compose the lymphatic capillary."
+    },
+    "2203_Lymphatic_Trunks_and_Ducts_System": {
+      "source": "media/2203_Lymphatic_Trunks_and_Ducts_System.jpg",
+      "sourceSha256": "41b0f3886055fc7cb16c17d6f40ad587b164ad58a5fb5f72a2b7fccd88d6c2dd",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 870,
+      "height": 678,
+      "variants": [
+        {
+          "width": 800,
+          "height": 623,
+          "file": "2203_Lymphatic_Trunks_and_Ducts_System-800.webp"
+        },
+        {
+          "width": 870,
+          "height": 678,
+          "file": "2203_Lymphatic_Trunks_and_Ducts_System-870.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the lymphatic trunks and the duct system in the human body. Callouts to the left and right show the magnified views of the left and right jugular vein respectively.",
+      "caption": "The thoracic duct drains a much larger portion of the body than does the right lymphatic duct."
+    },
+    "2204_The_Hematopoietic_System_of_the_Bone_Marrow_new": {
+      "source": "media/2204_The_Hematopoietic_System_of_the_Bone_Marrow_new.jpg",
+      "sourceSha256": "4feef457ef5084c8e228557a4d8795d188a56d6cd7f80259178a0c8cc81f5ac5",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 2251,
+      "height": 1828,
+      "variants": [
+        {
+          "width": 800,
+          "height": 649,
+          "file": "2204_The_Hematopoietic_System_of_the_Bone_Marrow_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1299,
+          "file": "2204_The_Hematopoietic_System_of_the_Bone_Marrow_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the steps in which a multipotential hematopoietic stem cell differentiates into the different cell types in blood.",
+      "caption": "All the cells of the immune response as well as of the blood arise by differentiation from hematopoietic stem cells. Platelets are cell fragments involved in the clotting of blood."
+    },
+    "2205_Bone_Marrow": {
+      "source": "media/2205_Bone_Marrow.jpg",
+      "sourceSha256": "cd483ef54f20ff09f255d4d7a897ad2e67f6481963abef3837b5e523d2084a72",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 854,
+      "height": 791,
+      "variants": [
+        {
+          "width": 800,
+          "height": 741,
+          "file": "2205_Bone_Marrow-800.webp"
+        },
+        {
+          "width": 854,
+          "height": 791,
+          "file": "2205_Bone_Marrow-854.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows the bone marrow.",
+      "caption": "Red bone marrow fills the head of the femur, and a spot of yellow bone marrow is visible in the center. The white reference bar is 1 cm."
+    },
+    "2206_The_Location_Structure_and_Histology_of_the_Thymus": {
+      "source": "media/2206_The_Location_Structure_and_Histology_of_the_Thymus.jpg",
+      "sourceSha256": "27a9bbefb1aa81d87afa41bfe14cdd6887c67f12a41bad00373e6ebcf7ca5888",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 1084,
+      "height": 760,
+      "variants": [
+        {
+          "width": 800,
+          "height": 561,
+          "file": "2206_The_Location_Structure_and_Histology_of_the_Thymus-800.webp"
+        },
+        {
+          "width": 1084,
+          "height": 760,
+          "file": "2206_The_Location_Structure_and_Histology_of_the_Thymus-1084.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows the head and chest of a woman and the location of the thymus is marked. The top right panel shows a micrograph of the thymus and the bottom right panel shows a magnified view of the structure of the thymus.",
+      "caption": "The thymus lies above the heart. The trabeculae and lobules, including the darkly staining cortex and the lighter staining medulla of each lobule, are clearly visible in the light micrograph of the thymus of a newborn. LM × 100. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2207_Structure_and_Histology_of_a_Lymph_Node": {
+      "source": "media/2207_Structure_and_Histology_of_a_Lymph_Node.jpg",
+      "sourceSha256": "0c4aba75e9fba881597867955d3260c5404feab3a1e9cb2af010aca5a381d115",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 1093,
+      "height": 407,
+      "variants": [
+        {
+          "width": 800,
+          "height": 298,
+          "file": "2207_Structure_and_Histology_of_a_Lymph_Node-800.webp"
+        },
+        {
+          "width": 1093,
+          "height": 407,
+          "file": "2207_Structure_and_Histology_of_a_Lymph_Node-1093.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows a micrograph of the cross section of a lymph node. The right panel shows the structure of a lymph node.",
+      "caption": "Lymph nodes are masses of lymphatic tissue located along the larger lymph vessels. The micrograph of the lymph nodes shows a germinal center, which consists of rapidly dividing B cells surrounded by a layer of T cells and other accessory cells. LM × 128. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2208_Spleen": {
+      "source": "media/2208_Spleen.jpg",
+      "sourceSha256": "01fd6818d8a293745b7c6632c0bb7ed3a174bb24c3749dd18286fc9969adbcbc",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 1036,
+      "height": 979,
+      "variants": [
+        {
+          "width": 800,
+          "height": 756,
+          "file": "2208_Spleen-800.webp"
+        },
+        {
+          "width": 1036,
+          "height": 979,
+          "file": "2208_Spleen-1036.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top left panel shows the location of the spleen in the human body. The top center panel shows a close up view of the location of the spleen. The top right panel shows the blood vessels and spleen tissue. The bottom panel shows a histological micrograph.",
+      "caption": "(a) The spleen is attached to the stomach. (b) A micrograph of spleen tissue shows the germinal center. The marginal zone is the region between the red pulp and white pulp, which sequesters particulate antigens from the circulation and presents these antigens to lymphocytes in the white pulp. EM × 660. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2209_Location_and_History_of_Tonsils": {
+      "source": "media/2209_Location_and_History_of_Tonsils.jpg",
+      "sourceSha256": "dd5e5efcfd0e6d6f846d2e87f04d475edd8a477ec387490cfda2ac531ef0f1ee",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 910,
+      "height": 1173,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1031,
+          "file": "2209_Location_and_History_of_Tonsils-800.webp"
+        },
+        {
+          "width": 910,
+          "height": 1173,
+          "file": "2209_Location_and_History_of_Tonsils-910.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this image shows the location of the tonsils. All the major parts are labeled. The bottom panel shows the histological micrograph of the tonsils.",
+      "caption": "(a) The pharyngeal tonsil is located on the roof of the posterior superior wall of the nasopharynx. The palatine tonsils lay on each side of the pharynx. (b) A micrograph shows the palatine tonsil tissue. LM × 40. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
     "220_Triglycerides-01": {
       "source": "media/220_Triglycerides-01.jpg",
       "sourceSha256": "8c1bd796c828f46fe08cd827973bd138faf1448794157c82d6d3872031883de2",
@@ -8083,6 +8313,216 @@
       "alt": "This image shows the reaction for the formation of triglycerides.",
       "caption": "Triglycerides are composed of glycerol attached to three fatty acids via dehydration synthesis. Notice that glycerol gives up a hydrogen atom, and the carboxyl groups on the fatty acids each give up a hydroxyl group.",
       "transparent": false
+    },
+    "2210_Mucosa_Associated_Lymphoid_Tissue_-MALT_Nodule": {
+      "source": "media/2210_Mucosa_Associated_Lymphoid_Tissue_(MALT)_Nodule.jpg",
+      "sourceSha256": "3bb57e85eeda82395284583f1b24998032be3232b8743e087681d75b4b3c0177",
+      "module": "m46563",
+      "kind": "photo",
+      "width": 900,
+      "height": 612,
+      "variants": [
+        {
+          "width": 800,
+          "height": 544,
+          "file": "2210_Mucosa_Associated_Lymphoid_Tissue_-MALT_Nodule-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 612,
+          "file": "2210_Mucosa_Associated_Lymphoid_Tissue_-MALT_Nodule-900.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a micrograph of a mucosa associated lymphoid tissue nodule.",
+      "caption": "LM × 40. (Micrograph provided by the Regents of the University of Michigan Medical School © 2012)"
+    },
+    "2211_Cooperation_Between_Innate_and_Immune_Responses": {
+      "source": "media/2211_Cooperation_Between_Innate_and_Immune_Responses.jpg",
+      "sourceSha256": "b5b77e0d46385ca65ddf30633bb42f0eefac1c7b11c576fb08ebc65cd6005b5d",
+      "module": "m46571",
+      "kind": "photo",
+      "width": 1119,
+      "height": 986,
+      "variants": [
+        {
+          "width": 800,
+          "height": 705,
+          "file": "2211_Cooperation_Between_Innate_and_Immune_Responses-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 986,
+          "file": "2211_Cooperation_Between_Innate_and_Immune_Responses-1119.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows a lateral view of a human face in the top left. A magnified callout shows the germinal center of the palatine tonsil. Another magnified view shows how the innate immune system works.",
+      "caption": "The innate immune system enhances adaptive immune responses so they can be more effective."
+    },
+    "2212_Complement_Cascade_and_Function": {
+      "source": "media/2212_Complement_Cascade_and_Function.jpg",
+      "sourceSha256": "3c8ca2304a910f1f69bbd1ca232e972012a4f422ddb0d0a0272c9ee761a1104c",
+      "module": "m46571",
+      "kind": "photo",
+      "width": 1102,
+      "height": 1154,
+      "variants": [
+        {
+          "width": 800,
+          "height": 837,
+          "file": "2212_Complement_Cascade_and_Function-800.webp"
+        },
+        {
+          "width": 1102,
+          "height": 1154,
+          "file": "2212_Complement_Cascade_and_Function-1102.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows an invading pathogen and the series of events that results in the complement cascade and function.",
+      "caption": "The classical pathway, used during adaptive immune responses, occurs when C1 reacts with antibodies that have bound an antigen."
+    },
+    "2213_Inflammatory_Process": {
+      "source": "media/2213_Inflammatory_Process.jpg",
+      "sourceSha256": "8edc4541cb0f26199a3470c063d18e8a8f89378c197ee2b5655b25becb7aafc7",
+      "module": "m46571",
+      "kind": "photo",
+      "width": 675,
+      "height": 743,
+      "variants": [
+        {
+          "width": 675,
+          "height": 743,
+          "file": "2213_Inflammatory_Process-675.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The top panel of this figure shows the mast cells detecting an injury and initiating an inflammatory response. The bottom panel shows the increase in blood flow in response to histamine.",
+      "caption": "Events resulting in warmth, redness, pain, and swelling, as well as the recruitment of phagocytes."
+    },
+    "2214_Antigenic_Determinants": {
+      "source": "media/2214_Antigenic_Determinants.jpg",
+      "sourceSha256": "abd1351cc165d89c521f5813b1b35ac7e33095511e9edf0302000cd76fff361d",
+      "module": "m46560",
+      "kind": "photo",
+      "width": 1658,
+      "height": 1347,
+      "variants": [
+        {
+          "width": 800,
+          "height": 650,
+          "file": "2214_Antigenic_Determinants-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1300,
+          "file": "2214_Antigenic_Determinants-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows three T cells and the antigenic determinants in the center.",
+      "caption": "A typical protein antigen has multiple antigenic determinants, shown by the ability of T cells with three different specificities to bind to different parts of the same antigen."
+    },
+    "2215_Alpha-Beta_T_Cell_Receptor": {
+      "source": "media/2215_Alpha-Beta_T_Cell_Receptor.jpg",
+      "sourceSha256": "9ff5a38a4111c7939b458aeac8aec521543eeedc4dbf727cdf17ce4270ecf740",
+      "module": "m46560",
+      "kind": "photo",
+      "width": 494,
+      "height": 452,
+      "variants": [
+        {
+          "width": 494,
+          "height": 452,
+          "file": "2215_Alpha-Beta_T_Cell_Receptor-494.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the alpha beta T cell receptor in the plasma membrane.",
+      "caption": "Notice the constant and variable regions of each chain, anchored by the transmembrane region."
+    },
+    "2216_Antigen_Processing_and_Presentation": {
+      "source": "media/2216_Antigen_Processing_and_Presentation.jpg",
+      "sourceSha256": "f609c4f20076fddf7d7056d6a875990b1bf04597c06b756197f6178f9c542d53",
+      "module": "m46560",
+      "kind": "photo",
+      "width": 2193,
+      "height": 1780,
+      "variants": [
+        {
+          "width": 800,
+          "height": 649,
+          "file": "2216_Antigen_Processing_and_Presentation-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1298,
+          "file": "2216_Antigen_Processing_and_Presentation-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows how an antigen-presenting cell deals with a pathogen or extracellular antigen. The different steps are shown with text callouts.",
+      "caption": ""
+    },
+    "2217_Differentiation_of_T_Cells_Within_the_Thymus": {
+      "source": "media/2217_Differentiation_of_T_Cells_Within_the_Thymus.jpg",
+      "sourceSha256": "ccfd3d05eb3045c40a9cb3801e2c8dfd94453f4f50a62cb645aa7ccfac594c81",
+      "module": "m46560",
+      "kind": "photo",
+      "width": 2229,
+      "height": 2902,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1041,
+          "file": "2217_Differentiation_of_T_Cells_Within_the_Thymus-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2083,
+          "file": "2217_Differentiation_of_T_Cells_Within_the_Thymus-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This multipart figure shows the different steps in the differentiation of a thymocyte into T cells. For each step of the process, accompanying text details the steps in the process. The right panel of this image shows the location of the different steps in the process.",
+      "caption": "Immature T-cells, called thymocytes, enter the thymus and go through a series of developmental stages that ensures both function and tolerance before they leave and become functional components of the adaptive immune response."
+    },
+    "2218_Clonal_Selection_and_Expansion_of_T_Lymphocytes": {
+      "source": "media/2218_Clonal_Selection_and_Expansion_of_T_Lymphocytes.jpg",
+      "sourceSha256": "24f059f99bae7c81a9f0b1d02d5708788062a0b5f088aa3da7baeb3f58164d27",
+      "module": "m46560",
+      "kind": "photo",
+      "width": 764,
+      "height": 733,
+      "variants": [
+        {
+          "width": 764,
+          "height": 733,
+          "file": "2218_Clonal_Selection_and_Expansion_of_T_Lymphocytes-764.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flowchart shows the process in which a naïve T cell become activated T cells in the left part of the pathway and memory cells in the right part of the pathway.",
+      "caption": "Stem cells differentiate into T cells with specific receptors, called clones. The clones with receptors specific for antigens on the pathogen are selected for and expanded."
+    },
+    "2219_Pathogen_Presentation": {
+      "source": "media/2219_Pathogen_Presentation.jpg",
+      "sourceSha256": "add129a7a874d592d8ca4bc7bca461381bc8ba6cb7d0b16fd6e75e108300ef25",
+      "module": "m46560",
+      "kind": "photo",
+      "width": 732,
+      "height": 760,
+      "variants": [
+        {
+          "width": 732,
+          "height": 760,
+          "file": "2219_Pathogen_Presentation-732.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the different steps in processing an extracellular pathogen.",
+      "caption": "(a) CD4 is associated with helper and regulatory T cells. An extracellular pathogen is processed and presented in the binding cleft of a class II MHC molecule, and this interaction is strengthened by the CD4 molecule. (b) CD8 is associated with cytotoxic T cells. An intracellular pathogen is presented by a class I MHC molecule, and CD8 interacts with it."
     },
     "221_Fatty_Acids_Shapes-01": {
       "source": "media/221_Fatty_Acids_Shapes-01.jpg",
@@ -8107,6 +8547,208 @@
       "caption": "The level of saturation of a fatty acid affects its shape. (a) Saturated fatty acid chains are straight. (b) Unsaturated fatty acid chains are kinked.",
       "transparent": false
     },
+    "2220_Four_Chain_Structure_of_a_Generic_Antibody-IgG2_Structures": {
+      "source": "media/2220_Four_Chain_Structure_of_a_Generic_Antibody-IgG2 Structures.jpg",
+      "sourceSha256": "19828633ede36885c396c5c998100a6b58eabdcb5c5d38f2970a0b4a7ed6f13b",
+      "module": "m46558",
+      "kind": "photo",
+      "width": 970,
+      "height": 386,
+      "variants": [
+        {
+          "width": 800,
+          "height": 318,
+          "file": "2220_Four_Chain_Structure_of_a_Generic_Antibody-IgG2_Structures-800.webp"
+        },
+        {
+          "width": 970,
+          "height": 386,
+          "file": "2220_Four_Chain_Structure_of_a_Generic_Antibody-IgG2_Structures-970.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the four chain structure of a generic antibody.",
+      "caption": "The typical four chain structure of a generic antibody (a) and the corresponding three-dimensional structure of the antibody IgG2 (b). (credit b: modification of work by Tim Vickers)"
+    },
+    "2221_Five_Classes_of_Antibodies_new": {
+      "source": "media/2221_Five_Classes_of_Antibodies_new.jpg",
+      "sourceSha256": "3f94445e001551a453e3f92f4804a4e452fab9307b3052e9562c6ad97c739013",
+      "module": "m46558",
+      "kind": "photo",
+      "width": 2242,
+      "height": 2100,
+      "variants": [
+        {
+          "width": 800,
+          "height": 749,
+          "file": "2221_Five_Classes_of_Antibodies_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1498,
+          "file": "2221_Five_Classes_of_Antibodies_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table shows the five classes of the immunoglobulins. The table shows the molecular weight, number of antigen binding sites, and their function.",
+      "caption": ""
+    },
+    "2222_Clonal_Selection_of_B_Cells": {
+      "source": "media/2222_Clonal_Selection_of_B_Cells.jpg",
+      "sourceSha256": "92b6b4eb09806243f4c91edc33b8ed2c38ba0564e5f890444537c9a95ef2b0fb",
+      "module": "m46558",
+      "kind": "photo",
+      "width": 1117,
+      "height": 1023,
+      "variants": [
+        {
+          "width": 800,
+          "height": 732,
+          "file": "2222_Clonal_Selection_of_B_Cells-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 1023,
+          "file": "2222_Clonal_Selection_of_B_Cells-1117.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This flow chart shows how the clonal selection of B cells takes place. The left panel shows the primary response and the right panel shows the secondary response.",
+      "caption": "During a primary B cell immune response, both antibody-secreting plasma cells and memory B cells are produced. These memory cells lead to the differentiation of more plasma cells and memory B cells during secondary responses."
+    },
+    "2223_Primary_and_Secondary_Antibody_Respons_new": {
+      "source": "media/2223_Primary_and_Secondary_Antibody_Respons_new.jpg",
+      "sourceSha256": "d89b38b3800fad2517cb3b593d94fcde2e6ef4aa1495e3cd73f5e34143958fd4",
+      "module": "m46558",
+      "kind": "photo",
+      "width": 1088,
+      "height": 756,
+      "variants": [
+        {
+          "width": 800,
+          "height": 556,
+          "file": "2223_Primary_and_Secondary_Antibody_Respons_new-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 756,
+          "file": "2223_Primary_and_Secondary_Antibody_Respons_new-1088.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows the antibody concentration as a function of time in primary and secondary response.",
+      "caption": "Antigen A is given once to generate a primary response and later to generate a secondary response. When a different antigen is given for the first time, a new primary response is made."
+    },
+    "2224_T_and_B_Cell_Binding": {
+      "source": "media/2224_T_and_B_Cell_Binding.jpg",
+      "sourceSha256": "804b0bdaee44a4b93c7a76beb41643090448cc0c9071535b30985b8dbf784c76",
+      "module": "m46558",
+      "kind": "photo",
+      "width": 796,
+      "height": 294,
+      "variants": [
+        {
+          "width": 796,
+          "height": 294,
+          "file": "2224_T_and_B_Cell_Binding-796.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the binding of a B cell and a T cell.",
+      "caption": "To elicit a response to a T cell-dependent antigen, the B and T cells must come close together. To become fully activated, the B cell must receive two signals from the native antigen and the T cell’s cytokines."
+    },
+    "2225_HIV_Disease_Progression": {
+      "source": "media/2225_HIV_Disease_Progression.jpg",
+      "sourceSha256": "ec7a1e7c5e9059df7ca38a621c6f5c6306b82036b807c07c85a16a61f48cc4e0",
+      "module": "m46569",
+      "kind": "photo",
+      "width": 1851,
+      "height": 928,
+      "variants": [
+        {
+          "width": 800,
+          "height": 401,
+          "file": "2225_HIV_Disease_Progression-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 802,
+          "file": "2225_HIV_Disease_Progression-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This graph shows the concentration of HIV viral particles in blood over time in years.",
+      "caption": "Seroconversion, the rise of anti-HIV antibody levels and the concomitant decline in measurable virus levels, happens during the first several months of HIV disease. Unfortunately, this antibody response is ineffective at controlling the disease, as seen by the progression of the disease towards AIDS, in which all adaptive immune responses are compromised."
+    },
+    "2226_IgA_Immunity": {
+      "source": "media/2226_IgA_Immunity.jpg",
+      "sourceSha256": "ecf33a33dc810e8579784f627943bbb4e3679fa6cc89807609927b3228d567af",
+      "module": "m46569",
+      "kind": "photo",
+      "width": 1120,
+      "height": 1056,
+      "variants": [
+        {
+          "width": 800,
+          "height": 754,
+          "file": "2226_IgA_Immunity-800.webp"
+        },
+        {
+          "width": 1120,
+          "height": 1056,
+          "file": "2226_IgA_Immunity-1120.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This diagram shows the process in which cells of the small intestine generate IgA immunity.",
+      "caption": "The nasal-associated lymphoid tissue and Peyer’s patches of the small intestine generate IgA immunity. Both use M cells to transport antigen inside the body so that immune responses can be mounted."
+    },
+    "2228_Immune_Hypersensitivity_new": {
+      "source": "media/2228_Immune_Hypersensitivity_new.jpg",
+      "sourceSha256": "9ff9e1a7aa4be4cea256fb72de97ad48d351de96d186918d298ce425ffa6564c",
+      "module": "m46566",
+      "kind": "photo",
+      "width": 4517,
+      "height": 3492,
+      "variants": [
+        {
+          "width": 800,
+          "height": 618,
+          "file": "2228_Immune_Hypersensitivity_new-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1237,
+          "file": "2228_Immune_Hypersensitivity_new-1600.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This table describes different types of hypersensitivity. In Type I (IgE-Mediated Hypersensitivity), IgE is bound to mast cells via its Fc portion. When an allergen binds to these antibodies, crosslinking of IgE induces degranulation. Type I causes localized and systemic anaphylaxis, seasonal allergies including hay fever, food allergies such as those to shellfish and peanuts, hives, and eczema. In Type II (IgG-Mediated Hypersensitivity), cells are destroyed by bound antibody, either by activation of complement or by a cytotoxic T cell with an Fc receptor for the antibody (ADCC). Examples are when red blood cells are destroyed by complement and antibody during a transfusion of mismatched blood types or during erythroblastosis fetalis. In Type III (Immune Complex-Mediated Hypersensitivity), antigen-antibody complexes are deposited in tissues, causing activation of complement, which attracts neutrophils to the site. Most common forms of immune complex disease are seen in glomerulonephritis, rheumatoid arthritis, and systemic lupus erythematosus. In Type IV (Cell-Mediated Hypersensitivity), Th1 cells secrete cytokines, which activate macrophages and cytotoxic T cells and can cause macrophage accumulation at the site. Most common forms are contact dermatitis, tuberculin reaction, and autoimmune diseases such as diabetes mellitus type I, multiple sclerosis, and rheumatoid arthritis.",
+      "caption": "Components of the immune system cause four types of hypersensitivity. Notice that types I–III are B cell mediated, whereas type IV hypersensitivity is exclusively a T cell phenomenon."
+    },
+    "2229_Autoimmune_Disorders_Rheumatoid_Arthritis_and_Lupus": {
+      "source": "media/2229_Autoimmune_Disorders_Rheumatoid_Arthritis_and_Lupus.jpg",
+      "sourceSha256": "4b6bd3398c3ea04884e8892c254414d02ad3d6eb50b96220509049914e01a7f0",
+      "module": "m46566",
+      "kind": "photo",
+      "width": 1500,
+      "height": 666,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "2229_Autoimmune_Disorders_Rheumatoid_Arthritis_and_Lupus-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 666,
+          "file": "2229_Autoimmune_Disorders_Rheumatoid_Arthritis_and_Lupus-1500.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "The left panel of this figure shows an x-ray image of a person’s hand with rheumatoid arthritis, and the right panel of this figure shows a woman’s body with labels showing the different responses in the body when the patient suffers from lupus.",
+      "caption": "(a) Extensive damage to the right hand of a rheumatoid arthritis sufferer is shown in the x-ray. (b) The diagram shows a variety of possible symptoms of systemic lupus erythematosus."
+    },
     "222_Other_Important_Lipids-01": {
       "source": "media/222_Other_Important_Lipids-01.jpg",
       "sourceSha256": "f9a1384d51b52da7dfff5717354ebd63a00715a81a16fcfdaac5649e77883195",
@@ -8129,6 +8771,52 @@
       "alt": "This figure shows the chemical structure of different lipids.",
       "caption": "(a) Phospholipids are composed of two fatty acids, glycerol, and a phosphate group. (b) Sterols are ring-shaped lipids. Shown here is cholesterol. (c) Prostaglandins are derived from unsaturated fatty acids. Prostaglandin E2 (PGE2) includes hydroxyl and carboxyl groups.",
       "transparent": false
+    },
+    "2230_Erythroblastosis_Fetalis": {
+      "source": "media/2230_Erythroblastosis_Fetalis.jpg",
+      "sourceSha256": "440df714a781ed358c30e9b866b01d9ee7a2908404d73d9c2a2a08911ea1ccb9",
+      "module": "m46583",
+      "kind": "photo",
+      "width": 1105,
+      "height": 1009,
+      "variants": [
+        {
+          "width": 800,
+          "height": 730,
+          "file": "2230_Erythroblastosis_Fetalis-800.webp"
+        },
+        {
+          "width": 1105,
+          "height": 1009,
+          "file": "2230_Erythroblastosis_Fetalis-1105.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This figure shows the progression of thedisease called erythroblastosis fetalis. The top panel shows the umbilical artery and vein and the placenta. The center panel shows the response in the immune system of a first Rh+ infant. The bottom panel shows the response in the case of a second exposure for a Rh+ infant.",
+      "caption": "Erythroblastosis fetalis (hemolytic disease of the newborn) is the result of an immune response in an Rh-negative person who has multiple children with an Rh-positive person. During the first birth, fetal blood enters the pregnant person's circulatory system, and anti-Rh antibodies are made. During the gestation of the second child, these antibodies cross the placenta and attack the blood of the fetus. The treatment for this disease is to give the carrier anti-Rh antibodies (RhoGAM) during the first pregnancy to destroy Rh-positive fetal red blood cells from entering their system and causing the anti-Rh antibody response in the first place."
+    },
+    "2231_Kaposis_Sacroma_Lesions": {
+      "source": "media/2231_Kaposis_Sacroma_Lesions.jpg",
+      "sourceSha256": "f60523a03db3d0a4d8aa2d19b6b9681e23da4c2cf32c8444613bccdcbbe29f24",
+      "module": "m46583",
+      "kind": "photo",
+      "width": 1012,
+      "height": 675,
+      "variants": [
+        {
+          "width": 800,
+          "height": 533,
+          "file": "2231_Kaposis_Sacroma_Lesions-800.webp"
+        },
+        {
+          "width": 1012,
+          "height": 675,
+          "file": "2231_Kaposis_Sacroma_Lesions-1012.webp"
+        }
+      ],
+      "transparent": false,
+      "alt": "This photograph shows lesions on the surface of skin.",
+      "caption": "(credit: National Cancer Institute)"
     },
     "223_Structure_of_an_Amino_Acid-01": {
       "source": "media/223_Structure_of_an_Amino_Acid-01.jpg",

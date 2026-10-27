@@ -133,6 +133,20 @@ const shortSolutionWords = (solution) => normalizeWhitespace(solution).split(/\s
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/03-the-adaptive-immune-response-t-lymphocytes-and-their-functional-types.md',
+    exercise: 'fs-id2169042',
+    kind: 'options',
+    erratum: 2529,
+    reason: 'the source distractor C "tolerance." is also correct by the module ("The process of eliminating T cells that might attack the cells of one\'s own body is referred to as T cell tolerance", fs-id1961110) for "The elimination of self-reactive thymocytes is called ________."; the page replaces it with the module\'s "clonal expansion." (fs-id2264083: "This proliferation of T cells is called clonal expansion"); key B "negative selection." and option order unchanged',
+  },
+  {
+    page: 'content/life-health-sciences/anatomy-physiology/21-the-lymphatic-and-immune-system/02-barrier-defenses-and-the-innate-immune-response.md',
+    exercise: 'fs-id1850767',
+    kind: 'key',
+    erratum: 2528,
+    reason: 'two corrections on one item, errata 2528 and 2530 (the gate takes one entry per exercise, so both are folded here under kind key, the keyed text being checked first): 2528 — the keyed source option D "microphages" misspells "macrophages", the module\'s own phagocyte (fs-id2170684), and the page prints "macrophages" (key D unchanged); 2530 — the source distractor C "complement" is also correct, since no sentence of m46571 gives complement an antiviral role and 21.5 (m46569) says "Bacteria and fungi are especially susceptible to damage by complement proteins, whereas viruses are taken care of by interferons and cytotoxic T cells", so the page replaces it with the module\'s "antiviral proteins" (fs-id2760204: infected cells "induce them to make antiviral proteins"); options A, B and option order unchanged',
+  },
+  {
     page: 'content/life-health-sciences/anatomy-physiology/19-the-cardiovascular-system-the-heart/02-cardiac-muscle-and-electrical-activity.md',
     exercise: 'fs-id2481331',
     kind: 'key',

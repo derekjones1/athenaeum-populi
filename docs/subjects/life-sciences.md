@@ -608,9 +608,11 @@ in the core (§3); the rules specific to a term-built item:
 - **What `accept` still has to list**, beyond the grader's folds: a
   Greek or Latin plural's `-um`/`-on`/`-us`/`-is` singular, an `-oes`
   key's `-o` singular, and an `-ex`/`-ix` key's `-ices` plural (`visual
-  association cortices`, Anatomy and Physiology 14.2); a hyphen between
-  letters, which does not fold, so a
-  prefixed key lists its hyphenated spelling (`semi-conservative`); the
+  association cortices`, Anatomy and Physiology 14.2); never a hyphenated
+  or spaced respelling of the key (`T-cell` for `T cell`,
+  `semi-conservative` for `semiconservative`): the grader folds a hyphen to
+  a space, and `verify-section` rejects such a member as a duplicate
+  (Anatomy and Physiology 21.4, October 26, 2026); the
   ASCII formula of a compound the page prints
   in Unicode (`H2O2`); the abbreviated binomial; the correct spelling
   where the source misspells (`phosphorous`); a module synonym (`jumping
